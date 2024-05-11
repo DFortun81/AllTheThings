@@ -19,8 +19,8 @@ local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
 ---@diagnostic disable-next-line: undefined-global
 local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn or IsQuestComplete;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
-local GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, C_Spell_GetSpellName, C_Spell_GetSpellTexture =
-	  GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, C_Spell.GetSpellName, C_Spell.GetSpellTexture;
+local C_Reputation_GetFactionDataByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, C_Spell_GetSpellName, C_Spell_GetSpellTexture =
+	C_Reputation.GetFactionDataByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo, C_Spell.GetSpellName, C_Spell.GetSpellTexture;
 local ALLIANCE_FACTION_ID = Enum.FlightPathFaction.Alliance;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
@@ -1212,7 +1212,7 @@ app.QuestLockCriteriaFunctions = criteriaFuncs;
 local function QuestWithReputationDescription(t)
 	if app.Settings.Collectibles.Reputations then
 		local factionID = t.maxReputation[1];
-		return L.ITEM_GIVES_REP .. (select(1, GetFactionInfoByID(factionID)) or ("Faction #" .. tostring(factionID))) .. "'";
+		return L.ITEM_GIVES_REP .. (select(2, C_Reputation_GetFactionDataByID(factionID)) or ("Faction #" .. tostring(factionID))) .. "'";
 	end
 end
 local function QuestWithReputationCollectibleAsCost(t)
@@ -1454,7 +1454,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		local flag = IsQuestFlaggedCompletedForObject(t);
 		if flag then return flag; end
 		local maxReputation = t.maxReputation;
-		if (select(6, GetFactionInfoByID(maxReputation[1])) or 0) >= maxReputation[2] then
+		if (select(7, C_Reputation_GetFactionDataByID(maxReputation[1])) or 0) >= maxReputation[2] then
 			return t.repeatable and 1 or 2;
 		end
 		if app.Settings.AccountWide.Reputations then

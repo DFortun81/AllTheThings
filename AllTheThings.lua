@@ -39,14 +39,14 @@ BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L.REROLL_RANDOM
 
 local C_Item_GetItemInfoInstant = C_Item.GetItemInfoInstant;
 local C_Item_GetItemInfo = C_Item.GetItemInfo;
--- GetItemCount = C_Item.GetItemCount
+local C_Reputation_GetFactionDataByID = C_Reputation.GetFactionDataByID;
 -- Performance Cache
 local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo;
 local GetAchievementInfo = _G.GetAchievementInfo;
 local GetAchievementLink = _G.GetAchievementLink;
-local GetFactionInfoByID = _G.GetFactionInfoByID;
+-- local GetFactionInfoByID = _G.GetFactionInfoByID;
 ---@diagnostic disable-next-line: deprecated
 -- local GetItemInfo = _G.GetItemInfo;
 ---@diagnostic disable-next-line: deprecated
@@ -2965,7 +2965,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 		-- an item used for a faction which is repeatable
 		if group.itemID and group.factionID and group.repeatable then
-			tinsert(tooltipInfo, { left = L.ITEM_GIVES_REP .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = app.Colors.TooltipDescription });
+			tinsert(tooltipInfo, { left = L.ITEM_GIVES_REP .. (select(2, C_Reputation_GetFactionDataByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = app.Colors.TooltipDescription });
 		end
 		if paramA == "itemID" and paramB == 137642 then
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
@@ -5838,7 +5838,7 @@ local createHeirloom = app.ExtendClass("Item", "Heirloom", "heirloomID", {
 			else
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
 				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
-				if select(15, GetFactionInfoByID(t.factionID)) then
+				if select(15, C_Reputation_GetFactionDataByID(t.factionID)) then
 					ATTAccountWideData.FactionBonus[t.factionID] = 1;
 					return 1;
 				end
@@ -8581,7 +8581,7 @@ RowOnEnter = function (self)
 		-- an item used for a faction which is repeatable
 		if reference.itemID and reference.factionID and reference.repeatable then
 			tinsert(tooltipInfo, {
-				left = L.ITEM_GIVES_REP .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'",
+				left = L.ITEM_GIVES_REP .. (select(2, C_Reputation_GetFactionDataByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'",
 				color = app.Colors.TooltipDescription,
 				wrap = true,
 			});

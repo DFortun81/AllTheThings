@@ -19,7 +19,7 @@ local GetProgressColor = app.Modules.Color.GetProgressColor;
 local Colorize = app.Modules.Color.Colorize;
 
 -- Blizz locals
-local GetFactionInfoByID = GetFactionInfoByID;
+local C_Reputation_GetFactionDataByID = C_Reputation.GetFactionDataByID;
 
 -- Faction API Implementation
 app.AddEventHandler("OnStartup", function()
@@ -109,7 +109,7 @@ for id=1,8,1 do
 end
 local Exalted = StandingByID[8];
 local function GetFactionStanding(reputationPoints)
-	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
+	-- Total earned rep from C_Reputation_GetFactionDataByID is a value AWAY FROM ZERO, not a value within the standing bracket.
 	if reputationPoints then
 		for i=8,1,-1 do
 			local threshold = StandingByID[i].threshold;
@@ -136,13 +136,13 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 		end
 	end,
 	name = function(t)
-		return GetFactionInfoByID(t[KEY]) or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t[KEY]);
+		return select(2, C_Reputation_GetFactionDataByID(t[KEY])) or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t[KEY]);
 	end,
 	description = function(t)
 		if not t.lore then return L.FACTION_SPECIFIC_REP; end
 	end,
 	lore = function(t)
-		return select(2, GetFactionInfoByID(t[KEY]));
+		return select(3, C_Reputation_GetFactionDataByID(t[KEY]));
 	end,
 	icon = function(t)
 		return app.asset("Category_Factions");
@@ -154,7 +154,7 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 			-- If your reputation is higher than the maximum for a different faction, return partial completion.
 			if not app.Settings.AccountWide[SETTING] then
 				local maxReputation = t.maxReputation;
-				if maxReputation and maxReputation[1] ~= t[KEY] and (select(3, GetFactionInfoByID(maxReputation[1])) or 4) >= GetFactionStanding(maxReputation[2]) then
+				if maxReputation and maxReputation[1] ~= t[KEY] and (select(4, C_Reputation_GetFactionDataByID(maxReputation[1])) or 4) >= GetFactionStanding(maxReputation[2]) then
 					return false;
 				end
 			end
@@ -206,17 +206,17 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 		return title;
 	end,
 	reputation = function(t)
-		return select(6, GetFactionInfoByID(t[KEY])) or 0;
+		return select(4, C_Reputation_GetFactionDataByID(t[KEY])) or 0;
 	end,
 	reputationThreshold = function(t)
 		return { GetFactionStanding(t.reputation) };
 	end,
 	ceiling = function(t)
-		local _, _, _, m, ma = GetFactionInfoByID(t[KEY]);
+		local _, _, _, _, m, ma = C_Reputation_GetFactionDataByID(t[KEY]);
 		return ma and m and (ma - m);
 	end,
 	standing = function(t)
-		return select(3, GetFactionInfoByID(t[KEY])) or 1;
+		return select(4, C_Reputation_GetFactionDataByID(t[KEY])) or 1;
 	end,
 	maxstanding = function(t)
 		local minReputation = t.minReputation;

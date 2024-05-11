@@ -9,8 +9,8 @@ local _, app = ...;
 -- Encapsulates the functionality for all filtering logic which is used to check if a given Object meets the applicable filters via User Settings
 
 -- Global locals
-local ipairs, select, pairs, type, GetFactionInfoByID, rawget, wipe
-	= ipairs, select, pairs, type, GetFactionInfoByID, rawget, wipe;
+local ipairs, select, pairs, type, C_Reputation_GetFactionDataByID, rawget, wipe
+	= ipairs, select, pairs, type, C_Reputation.GetFactionDataByID, rawget, wipe;
 
 -- App locals
 local containsAny = app.containsAny;
@@ -152,7 +152,7 @@ function(item)
 	local minReputation = item.minReputation;
 	if minReputation then
 		if ExclusiveFactions[minReputation[1]] then
-			if minReputation[2] > (select(6, GetFactionInfoByID(minReputation[1])) or 0) then
+			if minReputation[2] > (select(7, C_Reputation_GetFactionDataByID(minReputation[1])) or 0) then
 				return false;
 			else
 				return true;
@@ -170,7 +170,7 @@ end);
 -- function(item)
 -- 	local maxReputation = item.maxReputation;
 -- 	if maxReputation then
--- 		if maxReputation[2] > (select(6, GetFactionInfoByID(maxReputation[1])) or 0) then
+-- 		if maxReputation[2] > (select(6, C_Reputation_GetFactionDataByID(maxReputation[1])) or 0) then
 -- 			return false;
 -- 		else
 -- 			return true;

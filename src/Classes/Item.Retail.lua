@@ -10,8 +10,8 @@ local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFla
 -- Global locals
 local ipairs, pairs, rawset, rawget, tinsert, math_floor, select, tonumber, tostring, tremove
 	= ipairs, pairs, rawset, rawget, tinsert, math.floor, select, tonumber, tostring, tremove
-local C_Item_GetItemCount, C_Item_GetItemInfo, C_Item_GetItemInfoInstant, C_Item_GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID, GetFactionInfoByID
-	= C_Item.GetItemCount, C_Item.GetItemInfo, C_Item.GetItemInfoInstant, C_Item.GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID, GetFactionInfoByID
+local C_Item_GetItemCount, C_Item_GetItemInfo, C_Item_GetItemInfoInstant, C_Item_GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID, C_Reputation_GetFactionDataByID
+	= C_Item.GetItemCount, C_Item.GetItemInfo, C_Item.GetItemInfoInstant, C_Item.GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID, C_Reputation.GetFactionDataByID
 
 -- Class locals
 
@@ -428,7 +428,7 @@ local ItemWithFactionBonus = {
 	collected = function(t)
 		local factionID = t.factionID;
 		if ATTAccountWideData.FactionBonus[factionID] then return 1; end
-		if select(15, GetFactionInfoByID(factionID)) then
+		if select(15, C_Reputation_GetFactionDataByID(factionID)) then
 			ATTAccountWideData.FactionBonus[factionID] = 1;
 			return 1;
 		end
