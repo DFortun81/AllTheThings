@@ -41,6 +41,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no objectID since missing loot table
 				},
 			}),
+			o(446101, {	-- Nerubian Offerings
+				["coord"] = { 31.6, 20.7, 2213 },
+				["questID"] = 82720,
+				["g"] = {
+					i(225513),	-- Bloodied Idol
+					i(220236),	-- Sanguineous Sac
+					i(223899),	-- Shadowed Appendage
+				},
+			}),
 			o(446423, {	-- Nest Egg
 				["coord"] = { 50.6, 48.1, AZJ_KAHET },
 				["questID"] = 82726,

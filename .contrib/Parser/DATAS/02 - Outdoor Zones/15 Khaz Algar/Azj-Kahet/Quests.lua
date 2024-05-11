@@ -211,6 +211,51 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(217042),	-- Zev'kall's Pheromone Emitter (QI!)
 				},
 			}),
+			q(78226, {	-- A Most Intriguing Invitation
+				["sourceQuests"] = { 78256 },	-- The General's Consensus
+				["provider"] = { "n", 207471 },	-- Window Arak'nal
+				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+				["g"] = {
+					i(212605),	-- The Vizier's Invitation (QI!)
+				},
+			}),
+			q(78228, {	-- Into a Skittering City
+				["sourceQuests"] = { 78226 },	-- A Most Intriguing Invitation
+				["provider"] = { "n", 211351 },	-- Anduin Wrynn
+				["coord"] = { 67.1, 31.5, 2216 },	-- Nerub'ar Lower
+			}),
+			q(78232, {	-- Rewriting the Rewritten
+				["sourceQuests"] = { 78228 },	-- Into a Skittering City
+				["provider"] = { "n", 211499 },	-- Executor Nizrek
+				["coord"] = { 67.5, 32.5, 2216 },	-- Nerub'ar Lower
+			}),
+			q(78231, {	-- Like a Spider on the Wall
+				["sourceQuests"] = { 78228 },	-- Into a Skittering City
+				["provider"] = { "n", 211351 },	-- Anduin Wrynn
+				["coord"] = { 66.9, 31.9, 2216 },	-- Nerub'ar Lower
+			}),
+			q(78244, {	-- Kahet Hospitality
+				["sourceQuests"] = {
+					78231,	-- Like a Spider on the Wall
+					78232,	-- Rewriting the Rewritten
+				},
+				["provider"] = { "n", 217386 },	-- Anduin Wrynn
+				["coord"] = { 55.3, 46.1, 2213 },	-- Nerub'ar
+				--["maps"] = { xx },	-- I expect there separate mapID for scenario but currently it is same (2213)
+				["g"] = {
+					i(225561),	-- Queensfang Choker
+					i(225562),	-- Swarm-Maven's Amulet
+					i(225563),	-- Threadmaestro's Collar
+				},
+			}),
+			q(78248, {	-- Beginning Anew From Rock Bottom
+				["sourceQuests"] = { 78244 },	-- Kahet Hospitality
+				["provider"] = { "n", 217385 },	-- Alleria Windrunner
+				["coord"] = { 60.7, 71.1, AZJ_KAHET },
+				["g"] = {
+					-- crit 'Plans Within Plans' for achievementID ? (Azj-Kahet)
+				},
+			}),
 			--
 			--	Some side quests at starting area
 			q(79574, {	-- The Second Front
@@ -372,7 +417,95 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 221842 },	-- Alchemist Talbax
 				["coord"] = { 60.1, 57.7, AZJ_KAHET },
 			}),
+			q(81963, {	-- The Fruits of Our Labor
+				["sourceQuests"] = { 81962 },	-- A Nudge in the Right Direction
+				["provider"] = { "n", 221842 },	-- Alchemist Talbax
+				["coord"] = { 60.1, 57.7, AZJ_KAHET },
+			}),
 			-- End of A Silken Thread quest chain
+			-- Some spider quest #1
+			q(82340, {	-- Loss of Limb
+				--["sourceQuests"] = { xx },	-- ? / Unsure when this one pop up, it was out of minimap range :c
+				["provider"] = { "n", 223723 },	-- Mr. Sunflower
+				["coord"] = { 63.3, 37.4, 2216 },	-- Nerub'ar Lower
+			}),
+			q(83057, {	-- Setting Boundaries
+				["sourceQuests"] = { 82340 },	-- Loss of Limb
+				["provider"] = { "n", 223723 },	-- Mr. Sunflower
+				["coord"] = { 55.0, 39.1, 2216 },	-- Nerub'ar Lower
+			}),
+			-- End of some random spider quest #1
+			-- Some spider quest #2
+			q(79630, {	-- Searching the Web
+				--["sourceQuests"] = { xx },	-- ? / Unsure when this one pop up, it was out of minimap range :c
+				["provider"] = { "n", 217356 },	-- Arax'ne
+				["coord"] = { 64.1, 15.9, 2213 },	-- Nerub'ar
+			}),
+			q(79631, {	-- Klaskin's Great Escape
+				["sourceQuests"] = { 79630 },	-- Searching the Web
+				["provider"] = { "n", 217355 },	-- Klaskin
+				["coord"] = { 47.9, 13.2, 2213 },	-- Nerub'ar
+			}),
+			q(80502, {	-- Don't Cry for Me, Azi-Kahet
+				["sourceQuests"] = { 79631 },	-- Klaskin's Great Escape
+				["provider"] = { "n", 220690 },	-- Klaskin
+				["coord"] = { 63.9, 16.3, 2213 },	-- Nerub'ar
+			}),
+			-- End of some random spider quest #2
+			-- Some spider quest #3
+			q(79710, {	-- A Fin of Every Kind
+				--["sourceQuests"] = { 78244 },	-- probably, but unsure
+				["provider"] = { "n", 217565 },	-- Al'kubian
+				["coord"] = { 60.2, 68.7, AZJ_KAHET },
+				["g"] = {
+					i(222921),	-- Mangled Kobyss Innards (QI!)
+					i(224102),	-- Chunked Kobyss Innards (QI!)
+					i(224103),	-- Uncertain Kobyss Innards (QI!)
+					i(224232),	-- Rotting Kobyss Innards (QI!)
+					--
+					i(214504),	-- Familiar-Looking Appendage (QS!) //TODO: figure out if it is locked to this quest or not
+				},
+			}),
+			q(79711, {	-- That's Pretty Gross
+				--["sourceQuests"] = { 79710 },	-- A Fin of Every Kind
+				["provider"] = { "i", 214504 },	-- Familiar-Looking Appendage
+				--["coord"] = { 60.2, 68.7, AZJ_KAHET },
+			}),
+			q(79713, {	-- Moonlight Gutter Swim
+				["sourceQuests"] = {
+					79710,	-- A Fin of Every Kind
+					79711,	-- That's Pretty Gross
+				},
+				["provider"] = { "n", 217565 },	-- Al'kubian
+				["coord"] = { 60.2, 68.6, AZJ_KAHET },
+				["g"] = {
+					i(222926),	-- Leg Chewers' Stomach (QI!)
+					i(222924),	-- Liverseeker's Intestines (QI!)
+				},
+			}),
+			q(79714, {	-- Rescuing the Food
+				["sourceQuests"] = {
+					79710,	-- A Fin of Every Kind
+					79711,	-- That's Pretty Gross
+				},
+				["provider"] = { "n", 217565 },	-- Al'kubian
+				["coord"] = { 60.2, 68.6, AZJ_KAHET },
+				["g"] = {
+					i(223287),	-- Atomized Salien Slime (QI!)
+				},
+			}),
+			q(79715, {	-- Short-Term Slaughter Solutions
+				["sourceQuests"] = {
+					79713,	-- Moonlight Gutter Swim
+					79714,	-- Rescuing the Food
+				},
+				["provider"] = { "n", 217565 },	-- Al'kubian
+				["coord"] = { 60.2, 68.7, AZJ_KAHET },
+				["g"] = {
+					i(222944),	-- Swollen Brain of Gluttony (QI!)
+				},
+			}),
+			-- End of some random spider quest #3
 			--	Bonus Objectives
 			q(81670, {	-- Shattered Silk
 				--["sourceQuests"] = { xx },	-- 
@@ -426,7 +559,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			q(81705, {	-- Monstrous Lasharoth
 				["provider"] = { "n", 216043 },	-- Monstrous Lasharoth
-				["coord"] = 68.9, 72.2, AZJ_KAHET },
+				["coord"] = { 68.9, 72.2, AZJ_KAHET },
+				["g"] = {
+					-- no loot
+				},
+			}),
+			q(81707, {	-- Gutter Carver
+				["provider"] = { "n", 216045 },	-- Gutter Carver
+				["coord"] = { 58.4, 65.0, AZJ_KAHET },
+				["g"] = {
+					-- no loot
+				},
+			}),
+			q(81706, {	-- Bomb Beetle
+				["provider"] = { "n", 216044 },	-- Siegefire Bomber
+				["coord"] = { 60.7, 74.4, AZJ_KAHET },
 				["g"] = {
 					-- no loot
 				},
@@ -440,5 +587,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82067),	-- Click through dialogs with Mad Nerubian (n: 222381 @ 54.8, 25.3), could be some secret related or some kind of lockout for more dialog or just new variation of 'stay a while and listen'.
 	q(82082),	-- after interact with Weathered Shadecaster (n: 222283 @ 70.4, 65.2), same as above, little rp happening.
 	q(81628),	-- triggered during questID 79175 (I Think I'm a Drone Now) when apply Anub'azal's Pheromones
+	q(81625),	-- triggered during questID 78226 (A Most Intriguing Invitation) when apply Azi-Kahel Pheromones
+	q(81623),	-- triggered during questID 78228 (Into a Skittering City) when apply Azi-Kahel Pheromones
+	q(81946),	-- 'Stay awhile and listen' - Anduin Wrynn - druing questID 78231 (Like a Spider on the Wall)
+	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (Beginning Anew From Rock Bottom)
 });
 --]]

@@ -1781,6 +1781,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220380);	-- Pickled Spiderling
 --i(220247);	-- Polishing Powder
 --i(220226);	-- Slime-Coated Membrane
+--i(220296);	-- Thickly Webbed Foot
 --i(220223);	-- Torn Gossamer Scrap
 --i(220272);	-- Torn Manuscript Page
 --i(220295);	-- Unidentified Viscous Substance
