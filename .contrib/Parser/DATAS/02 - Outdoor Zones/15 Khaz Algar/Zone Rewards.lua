@@ -17,7 +17,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		}),
 		filter(LEATHER, {
 			--gray items
-			--i(),
+			i(220315),	-- Distressed Jerkin
+			i(220316),	-- Distressed Boots
+			i(220317),	-- Distressed Grips
+			i(220318),	-- Distressed Visor
+			i(220319),	-- Distressed Breeches
+			i(220320),	-- Distressed Shoulderpads
+			i(220321),	-- Distressed Belt
+			i(220322),	-- Distressed Bracers
 		}),
 		filter(MAIL, {
 			--gray items

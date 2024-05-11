@@ -5,7 +5,440 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(AZJ_KAHET, {
 		n(QUESTS, {
+			-- alpha build data
+			q(xx, {	-- xx
+				["sourceQuests"] = { xx },	-- xx
+				["provider"] = { "n", xxx },	-- xxx
+				["coord"] = { x, y, AZJ_KAHET },
+				["g"] = {
+					i(),	-- 
+				},
+			}),
+			--
+			flaaged as completed after quest tauren throw you into zone
+			q(78630),	-- The Reckoning, could be last quest from Hallowfall?
+			q(82202),	-- hqt, could be alpha specific?
+			--
+			-- Zone story
+			q(78384, {	-- Chasing The Light
+				--["sourceQuests"] = { 78630 },	-- The Reckoning (?)
+				["provider"] = { "n", 211752 },	-- Alleria Windrunner
+				["coord"] = { 32.0, 47.1, AZJ_KAHET },
+				["g"] = {
+					i(211775),	-- Bleached Bones (QI!)
+					i(211774),	-- Crumpled Lion Gauntlet (QI!)
+					i(211783),	-- Scrap of Weathered Fabric (QI!)
+				},
+			}),
+			q(78350, {	-- Heroes Never Die
+				--["sourceQuests"] = { 78630 },	-- The Reckoning (?)
+				["provider"] = { "n", 211699 },	-- Faerin
+				["coord"] = { 32.1, 46.6, AZJ_KAHET },
+				["g"] = {
+					i(225521),	-- Rescued Aeroknight's Vambraces
+				},
+			}),
+			q(78348, {	-- Friends in Low Places
+				["sourceQuests"] = {
+					78384,	-- Chasing The Light
+					78350,	-- Heroes Never Die
+				},
+				["provider"] = { "n", 211699 },	-- Faerin
+				["coord"] = { 34.9, 51.2, AZJ_KAHET },
+			}),
+			q(78353, {	-- Fear the Old Blood
+				["sourceQuests"] = { 78348 },	-- Friends in Low Places
+				["provider"] = { "n", 215944 },	-- Orweyna
+				["coord"] = { 35.4, 59.6, AZJ_KAHET },
+				["g"] = {
+					i(225546),	-- Corrosive Blackblood Ring
+					i(225545),	-- Hissing Blackblood Ring
+				},
+			}),
+			q(78352, {	-- For Naught, So Vial
+				["sourceQuests"] = { 78348 },	-- Friends in Low Places
+				["provider"] = { "n", 215944 },	-- Orweyna
+				["coord"] = { 35.4, 59.6, AZJ_KAHET },
+			}),
+			q(79139, {	-- Alone in the Dark
+				["sourceQuests"] = {
+					78353,	-- Fear the Old Blood
+					78352,	-- For Naught, So Vial
+				},
+				["provider"] = { "n", 215113 },	-- Orweyna
+				["coord"] = { 37.9, 61.3, AZJ_KAHET },
+			}),
+			q(78354, {	-- A Guiding Thread
+				["sourceQuests"] = { 79139 },	-- Alone in the Dark
+				["provider"] = { "n", 216213 },	-- Spindle
+				["coord"] = { 45.7, 60.1, AZJ_KAHET },
+				["g"] = {
+					i(225516),	-- Webweave Stompers
+				},
+			}),
+			q(78393, {	-- A Seeming Respite
+				["sourceQuests"] = { 78354 },	-- A Guiding Thread
+				["provider"] = { "n", 207471 },	-- Widow Arak'nal
+				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+				["g"] = {
+					--	crit 'Friends in the Dark' for achievementID ? (Azj-Kahet)
+				},
+			}),
+			q(78392, {	-- The Tangled Web
+				["sourceQuests"] = { 78354 },	-- A Guiding Thread
+				["provider"] = { "n", 207471 },	-- Widow Arak'nal
+				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+			}),
+			q(78233, {	-- The Weaver's Gift
+				["sourceQuests"] = {
+					78393,	-- A Seeming Respite
+					78352,	-- The Tangled Web
+				},
+				["provider"] = { "n", 207471 },	-- Widow Arak'nal
+				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+			}),
+			q(80399, {	-- Rations and Revelations
+				["sourceQuests"] = { 78233 },	-- The Weaver's Gift
+				["provider"] = { "n", 211409 },	-- Faerin Lothar
+				["coord"] = { 59.6, 25.7, AZJ_KAHET },
+				["g"] = {
+					i(217614),	-- Arathi Rations (QI!)
+				},
+			}),
+			q(78236, {	-- Scrappy Straggler
+				["sourceQuests"] = { 80399 },	-- Rations and Revelations
+				["provider"] = { "n", 211409 },	-- Faerin Lothar
+				["coord"] = { 59.6, 25.7, AZJ_KAHET },
+			}),
+			q(78234, {	-- Force Your Way
+				["sourceQuests"] = { 78236 },	-- Scrappy Straggler
+				["provider"] = { "n", 220051 },	-- Flynn Fairwind
+				["coord"] = { 63.0, 32.9, AZJ_KAHET },
+			}),
+			q(78383, {	-- Strategic Edge
+				["sourceQuests"] = { 78236 },	-- Scrappy Straggler
+				["provider"] = { "n", 220051 },	-- Flynn Fairwind
+				["coord"] = { 63.0, 32.9, AZJ_KAHET },
+				["g"] = {
+					i(211870),	-- Flynn's Blades (QI!)
+					i(221031, {	-- Nerubian Intelligence (QI!)
+						i(212158),	-- Broken Venom Flask (QI!)
+						i(211769),	-- Orders from Siegehold (QI!)
+						i(212159),	-- Vial of Stinky Pheromones (QI!)
+					}),
+					i(225349),	-- Kaheti Confiscated Borers
+					i(225362),	-- Kaheti Confiscated Knife
+					i(225357),	-- Kaheti Confiscated Lantern
+					i(225361),	-- Kaheti Confiscated Staff
+				},
+			}),
+			q(78237, {	-- Let Fly!
+				["sourceQuests"] = {
+					78234,	-- Force Your Way
+					78383,	-- Strategic Edge
+				},
+				["provider"] = { "n", 211444 },	-- Flynn Fairwind
+				--["coord"] = { x, y, AZJ_KAHET },	-- follow player
+			}),
+			q(79625, {	-- Not Quite Dead
+				["sourceQuests"] = { 78237 },	-- Let Fly!
+				["provider"] = { "n", 217330 },	-- Anub'azal
+				["coord"] = { 46.9, 26.2, AZJ_KAHET },
+			}),
+			q(79175, {	-- I Think I'm a Drone Now
+				["sourceQuests"] = { 79625 },	-- Not Quite Dead
+				["provider"] = { "n", 217330 },	-- Anub'azal
+				["coord"] = { 46.9, 26.2, AZJ_KAHET },
+				["g"] = {
+					i(221100),	-- General's Pungent Armor
+				},
+			}),
+			q(78250, {	-- General Admission
+				["sourceQuests"] = { 79175 },	-- I Think I'm a Drone Now
+				["provider"] = { "n", 217330 },	-- Anub'azal
+				["coord"] = { 46.9, 26.2, AZJ_KAHET },
+				["g"] = {
+					i(217165),	-- Zev'kall's Attrition Log (QI!)
+				},
+			}),
+			q(78249, {	-- Specific Personages
+				["sourceQuests"] = { 79175 },	-- I Think I'm a Drone Now
+				["provider"] = { "n", 217330 },	-- Anub'azal
+				["coord"] = { 46.9, 26.2, AZJ_KAHET },
+				["g"] = {
+					i(225549),	-- Cape of the Favored
+					i(225550),	-- Cloak of the Tactician
+					i(225551),	-- Drape of the Heritage Lord
+					i(225552),	-- Shroud of the Whisperer
+				},
+			}),
+			q(78254, {	-- Stolen Influence
+				["sourceQuests"] = {
+					78250,	-- General Admission
+					78249,	-- Specific Personages
+				},
+				["provider"] = { "n", 217330 },	-- Anub'azal
+				["coord"] = { 46.9, 26.2, AZJ_KAHET },
+				["g"] = {
+					i(212528),	-- Zev'kall's Pheromone Emitter (QI!)
+				},
+			}),
+			q(78251, {	-- Dalaran's Most Distressed
+				["sourceQuests"] = {
+					78250,	-- General Admission
+					78249,	-- Specific Personages
+				},
+				["provider"] = { "n", 211399 },	-- Monte Gazlowe
+				["coord"] = { 46.7, 26.2, AZJ_KAHET },
+			}),
+			q(78255, {	-- Just Act Casual
+				["sourceQuests"] = {
+					78251,	-- Dalaran's Most Distressed
+					78254,	-- Stolen Influence
+				},
+				["provider"] = { "n", 215413 },	-- Monte Gazlowe
+				["coord"] = { 48.6, 29.9, AZJ_KAHET },
+				["g"] = {
+					i(225520),	-- Smuggled Nerubian Belt
+				},
+			}),
+			q(78256, {	-- The General's Consensus
+				["sourceQuests"] = { 78255 },	-- Just Act Casual
+				["provider"] = { "n", 215845 },	-- Monte Gazlowe
+				["coord"] = { 52.7, 31.6, AZJ_KAHET },
+				["g"] = {
+					-- crit 'Unraveling the Trapped' for achievementID ? (Azj-Kahet)
+					i(217042),	-- Zev'kall's Pheromone Emitter (QI!)
+				},
+			}),
+			--
+			--	Some side quests at starting area
+			q(79574, {	-- The Second Front
+				--["sourceQuests"] = { 78630 },	-- The Reckoning (?)
+				["provider"] = { "n", 217133 },	-- Kal Smoulderbrow
+				["coord"] = { 32.1, 46.1, AZJ_KAHET },
+				--["isBreadcrumb"] = true,	-- seems like it is
+			}),
+			q(79580, {	-- Offensive Counter
+				["sourceQuests"] = { 79574 },	-- The Second Front
+				["provider"] = { "n", 212076 },	-- General Steelstrike
+				["coord"] = { 30.4, 49.3, AZJ_KAHET },
+			}),
+			q(79579, {	-- That Airspace is Mine(d)!
+				["sourceQuests"] = { 79574 },	-- The Second Front
+				["provider"] = { "n", 212076 },	-- General Steelstrike
+				["coord"] = { 30.4, 49.3, AZJ_KAHET },
+			}),
+			--	End
+			--	The Weaver's Lair
+			q(83321, {	-- Strange Bats
+				["sourceQuests"] = { 78393 },	-- A Seeming Respite (but probably 78352,	-- The Tangled Web also required)
+				["provider"] = { "n", 223754 },	-- Linny Leadlinger
+				["coord"] = { 56.3, 48.1, AZJ_KAHET },
+				--["isBreadcrumb"] = true,
+			}),
+			q(78897, {	-- Boom or Blight
+				--["sourceQuests"] = { 83321 },	-- Strange Bats // this or quest below require this source to pop, otherwise will be 1 quest
+				["provider"] = { "n", 211652 },	-- Greenspeaker Na'layro
+				["coord"] = { 43.9, 47.0, AZJ_KAHET },
+			}),
+			q(78898, {	-- Intention vs Instinct
+				--["sourceQuests"] = { 83321 },	-- Strange Bats
+				["provider"] = { "n", 211652 },	-- Greenspeaker Na'layro
+				["coord"] = { 43.9, 47.0, AZJ_KAHET },
+				["g"] = {
+					i(211412),	-- Singing Stone (QI!)
+				},
+			}),
+			--	End The Weaver's Lair
+			--	The Wormlands popup
+			q(78901, {	-- Heeeelllp!!!
+				--["sourceQuests"] = { 83321 },	-- Strange Bats
+				--["provider"] = { "n", xx },	-- popup in player quest log when entered in area
+				["coord"] = { 43.2, 46.5, AZJ_KAHET },
+			}),
+			q(78902, {	-- Delegated Dig
+				["sourceQuests"] = { 78901 },	-- Heeeelllp!!!
+				["provider"] = { "n", 214168 },	-- Skedgit Cinderbangs
+				["coord"] = { 42.5, 44.4, AZJ_KAHET },
+				["g"] = {
+					i(211415),	-- Sivstone Chunk (QI!)
+				},
+			}),
+			q(79349, {	-- Entrepreneur Inc.
+				["sourceQuests"] = { 78902 },	-- Delegated Dig
+				["provider"] = { "n", 214168 },	-- Skedgit Cinderbangs
+				["coord"] = { 42.5, 44.4, AZJ_KAHET },
+			}),
+			-- End The Wormlands popup
+			-- Faerin's Advance side quest
+			q(79174, {	-- Infested Infestation
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 215349 },	-- Great Hexer Ohodo
+				["coord"] = { 58.1, 26.1, AZJ_KAHET },
+			}),
+			q(79355, {	-- Prisoner Preservation
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 215349 },	-- Great Hexer Ohodo
+				["coord"] = { 58.1, 26.1, AZJ_KAHET },
+			}),
+			q(79356, {	-- Anti-Fungal Firestarter
+				["sourceQuests"] = {
+					79174,	-- Infested Infestation
+					79355,	-- Prisoner Preservation
+				},
+				["provider"] = { "n", 215349 },	-- Great Hexer Ohodo
+				["coord"] = { 58.1, 26.1, AZJ_KAHET },
+				["g"] = {
+					i(212334),	-- Anti-Fungal Fire Bomb (QI!)
+				},
+			}),
+			q(79357, {	-- Removing the Cap
+				["sourceQuests"] = {
+					79174,	-- Infested Infestation
+					79355,	-- Prisoner Preservation
+				},
+				["provider"] = { "n", 215349 },	-- Great Hexer Ohodo
+				["coord"] = { 58.1, 26.1, AZJ_KAHET },
+			}),			
+			-- End Faerin's Advance side quest
+			-- New side quests from The Weaver's Lair
+			q(83324, {	-- A Silken Thread
+				["sourceQuests"] = { 78256 },	-- The General's Consensus
+				["provider"] = { "n", 223754 },	-- Linny Leadlinger
+				["coord"] = { 56.3, 48.1, AZJ_KAHET },
+			}),
+			q(79651, {	-- Trade Partners
+				["sourceQuests"] = { 78256 },	-- The General's Consensus
+				["provider"] = { "n", 223754 },	-- Linny Leadlinger
+				["coord"] = { 56.3, 48.1, AZJ_KAHET },
+			}),
+			-- End of new side quests from The Weaver's Lair
+			-- Monte Gazlowe quest chain
+			q(80558, {	-- Nothing Ventured
+				["sourceQuests"] = { 79651 },	-- Trade Partners
+				["provider"] = { "n", 217029 },	-- Monte Gazlowe
+				["coord"] = { 75.8, 66.8, AZJ_KAHET },
+			}),
+			q(79539, {	-- Electrifying!
+				["sourceQuests"] = { 80558 },	-- Nothing Ventured
+				["provider"] = { "n", 216994 },	-- Jenni Boombuckle
+				["coord"] = { 76.7, 65.8, AZJ_KAHET },
+				["g"] = {
+					i(213629),	-- Debugger Hat (QI!)
+				},
+			}),
+			q(79538, {	-- Smelly Shrubberies
+				["sourceQuests"] = { 80558 },	-- Nothing Ventured
+				["provider"] = { "n", 216996 },	-- Rhubarn
+				["coord"] = { 76.7, 65.9, AZJ_KAHET },
+				["g"] = {
+					i(213514),	-- Smellsage Branch (QI!)
+				},
+			}),
+			q(79540, {	-- The Party's Over
+				["sourceQuests"] = {
+					79539,	-- Electrifying!
+					79538,	-- Smelly Shrubberies
+				},
+				["provider"] = { "n", 217402 },	-- Grigg
+				["coord"] = { 76.7, 66.0, AZJ_KAHET },
+			}),
+			q(79541, {	-- Burn It With Fire
+				["sourceQuests"] = { 79540 },	-- The Party's Over
+				["provider"] = { "n", 217029 },	-- Monte Gazlowe
+				["coord"] = { 76.3, 62.6, AZJ_KAHET },
+				["g"] = {
+					i(219392),	-- Flameflow 7000 (QI!)
+				},
+			}),
+			-- End of Monte Gazlowe quest chain
+			-- A Silken Thread quest chain
+			q(81928, {	-- A Cure for All Problems
+				["sourceQuests"] = { 83324 },	-- A Silken Thread
+				["provider"] = { "n", 221948 },	-- Sum'latha
+				["coord"] = { 52.3, 66.7, AZJ_KAHET },
+			}),
+			q(81959, {	-- Collecting a Concotion
+				["sourceQuests"] = { 81928 },	-- A Cure for All Problems
+				["provider"] = { "n", 221842 },	-- Alchemist Talbax
+				["coord"] = { 60.1, 57.7, AZJ_KAHET },
+				["g"] = {
+					i(221755),	-- Alchemical Potions (QI!)
+				},
+			}),
+			q(81962, {	-- A Nudge in the Right Direction
+				["sourceQuests"] = { 81959 },	-- Collecting a Concotion
+				["provider"] = { "n", 221842 },	-- Alchemist Talbax
+				["coord"] = { 60.1, 57.7, AZJ_KAHET },
+			}),
+			-- End of A Silken Thread quest chain
+			--	Bonus Objectives
+			q(81670, {	-- Shattered Silk
+				--["sourceQuests"] = { xx },	-- 
+				["coord"] = { 72.8, 55.0, AZJ_KAHET },
+			}),
+			--
+			--	Rares / Bonus Objectives / Once per character?
+			--	need to be moved into rares if didn't get bonus objective
+			q(81695, {	-- Abyssal Devourer
+				["provider"] = { "n", 216031 },	-- Abyssal Devourer
+				["coord"] = { 47.4, 43.7, AZJ_KAHET },
+				["g"] = {
+					i(223392),	-- Trousers of Dark Hunger
+				},
+			}),
+			q(xx, {	-- Stronghold Scouts
+				["description"] = "Can be found on their path at this road",
+				["providers"] = {
+					{ "n", 216032 },	-- Khak'ik
+					{ "n", 221032 },	-- Rhak'ik
+				},
+				["coords"] = {
+					{ 45.5, 36.2, AZJ_KAHET },	-- spawn coords
+					{ 45.5, 42.1, AZJ_KAHET },	-- mid route
+					{ 45.5, 47.1, AZJ_KAHET },	-- end point, where they turn back
+				},
+				["g"] = {
+					i(223392),	-- Trousers of Dark Hunger
+				},
+			}),
+			q(81698, {	-- Ahg'zagall
+				["provider"] = { "n", 214151 },	-- Ahg'zagall
+				["coord"] = { 40.0, 47.3, AZJ_KAHET },
+				["g"] = {
+					i(223375),	-- Clattering Chitin Necklace
+				},
+			}),
+			q(81703, {	-- The XT-Minecrusher 8700
+				["provider"] = { "n", 216034 },	-- The XT-Minecrusher 8700
+				["coord"] = { 75.4, 61.0, AZJ_KAHET },
+				["g"] = {
+					-- no loot
+				},
+			}),
+			q(xx, {	-- Kaheti Webspeaker
+				["provider"] = { "n", 216041 },	-- Webspeaker Grik'ik
+				["coord"] = { 61.3, 33.0, AZJ_KAHET },
+				["g"] = {
+					-- no loot
+				},
+			}),
+			q(81705, {	-- Monstrous Lasharoth
+				["provider"] = { "n", 216043 },	-- Monstrous Lasharoth
+				["coord"] = 68.9, 72.2, AZJ_KAHET },
+				["g"] = {
+					-- no loot
+				},
+			}),
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(79658),	-- triggered after turn in questID 78392 (The Tangled Web), probably faction (The Severed Threads) unlock
+	q(82067),	-- Click through dialogs with Mad Nerubian (n: 222381 @ 54.8, 25.3), could be some secret related or some kind of lockout for more dialog or just new variation of 'stay a while and listen'.
+	q(82082),	-- after interact with Weathered Shadecaster (n: 222283 @ 70.4, 65.2), same as above, little rp happening.
+	q(81628),	-- triggered during questID 79175 (I Think I'm a Drone Now) when apply Anub'azal's Pheromones
+});
 --]]
