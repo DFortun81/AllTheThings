@@ -936,6 +936,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 
 							-- auto learns these Drakewatcher Manuscripts
 							i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
+							i(210471, {	-- Flourishing Whimsydrake: Body Armor (DM!)
+								["timeline"] = { ADDED_10_2_7 },	-- maybe since 10.2.0?
+							}),
+							i(207760, {	-- Grotto Netherwing Drake: Armor (DM!)
+								["timeline"] = { ADDED_10_2_7 },	-- maybe since 10.2.0?
+							}),
 							i(197099),	-- Highland Drake: Armor (DM!)
 							i(197357),	-- Renewed Proto-Drake: Armor (DM!)
 							i(197588),	-- Windborne Velocidrake: Armor (DM!)

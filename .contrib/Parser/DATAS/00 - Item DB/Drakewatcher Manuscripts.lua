@@ -423,9 +423,7 @@ i(197393, 69594);	-- Renewed Proto-Drake: White Scales
 i(197616, 69820);	-- Windborne Velocidrake: White Scales
 i(203354, 73845);	-- Winding Slitherdrake: White Scales
 --- NYI ---
-i(210471, 78401);	-- Flourishing Whimsydrake: Body Armor
 i(210478, 78399);	-- Flourishing Whimsydrake: Gold and Pink Armor
-i(207760, 77131);	-- Grotto Netherwing Drake: Armor
 i(207757, 77128);	-- Grotto Netherwing Drake: Purple and Silver Armor
 i(207775, 77146);	-- Grotto Netherwing Drake: Teal Scales
 i(211381, 78878);	-- Grotto Netherwing Drake: Violet Scales
@@ -447,4 +445,6 @@ i(216710, 80014);	-- Highland Drake: Embodiment of the Draconic Gladiator
 ------------------
 -- PATCH 10.2.7 --
 ------------------
+i(210471, 78401);	-- Flourishing Whimsydrake: Body Armor (might be already 10.2.0)
+i(207760, 77131);	-- Grotto Netherwing Drake: Armor (might be already 10.2.0)
 i(213561, 79690);	-- Winding Slitherdrake: Void Scales
