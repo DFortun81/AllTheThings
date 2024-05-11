@@ -2400,6 +2400,7 @@ local TooltipSourceFields = {
 local InitialCachedSearch;
 local SourceLocationSettingsKey = setmetatable({
 	creatureID = "SourceLocations:Creatures",
+	npcID = "SourceLocations:Creatures",
 }, {
 	__index = function(t, key)
 		return "SourceLocations:Things";
@@ -2523,6 +2524,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 				tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
 			end
 			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
+			local working
 			for _,text in ipairs(listing) do
 				for source,replacement in pairs(abbrevs) do
 					text = text:gsub(source, replacement);
@@ -2531,6 +2533,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 				local left, right = DESCRIPTION_SEPARATOR:split(text);
 				tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
 			end
+			return working
 		end
 	end
 end
@@ -2843,7 +2846,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 		if not root then
 			-- app.PrintDebug("Create New Root",paramA,paramB)
-			root = CreateObject({ [paramA] = paramB });
+			root = CreateObject({ [paramA] = paramB, missing = true });
 		end
 		-- If rawLink exists, import it into the root
 		if rawlink then app.ImportRawLink(root, rawlink); end
