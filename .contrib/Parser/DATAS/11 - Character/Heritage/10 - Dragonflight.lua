@@ -572,6 +572,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Draenei|r.",
 			["g"] = {
 				q(78068, {	-- An Artificer's Appeal
+					["provider"] = { "o", 415303 },	-- Magically-Sealed Parcel
+					["coord"] = { 53, 15.5, STORMWIND_CITY },
 					["g"] = {
 						i(210454),	-- Spare Hologem (QI!)
 					},
@@ -581,11 +583,15 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 210340 },	-- Grand Artificer Romuul
 					["coord"] = { 54.8, 79.8, THE_EXODAR },
 					["g"] = {
-						o(408934, {	--	Artificing Tools
+						o_repeated({
 							i(210167),	-- Empyrium Filament (QI!)
+							o(420019),	--	Artificing Tools
+							o(408934),	--	Artificing Tools
 						}),
-						o(420039, {	--	Artificing Tools
+						o_repeated({
 							i(210168),	-- Hyperthermal Soldering Tool (QI!)
+							o(420039),	--	Artificing Tools
+							o(420040),	--	Artificing Tools
 						}),
 					},
 				}),
@@ -651,7 +657,9 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 210588 },	-- Arzaal
 					["coord"] = { 51.9, 75.7, BLOODMYST_ISLE },
 					["g"] = {
-						i(210238),	-- Satyr Totem (QI!)
+						o(408964, {	-- Satyr Totem
+							i(210238),	-- Satyr Totem (QI!)
+						}),
 					},
 				}),
 				q(78079, {	-- Excision
