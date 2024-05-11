@@ -1769,11 +1769,18 @@ i(212341);	-- Twice-Dead Tusk
 i(211798);	-- Un-Raised Bone Fragments
 
 ------------------
--- PATCH 11.0.1 --
+-- PATCH 11.0.0 --
 ------------------
 --i(220287);	-- Acid-Filled Sack
 --i(220277);	-- Carapace Fragment
---i(220244),	-- Oversized Claw
+--i(220249);	-- Chipped Mandible
+--i(220255);	-- Darkened Residue
+--i(220264);	-- Jaw with Barbed Teeth
+--i(220244);	-- Oversized Claw
 --i(220251);	-- Pale Gills
 --i(220380);	-- Pickled Spiderling
+--i(220247);	-- Polishing Powder
+--i(220226);	-- Slime-Coated Membrane
+--i(220223);	-- Torn Gossamer Scrap
 --i(220272);	-- Torn Manuscript Page
+--i(220295);	-- Unidentified Viscous Substance
