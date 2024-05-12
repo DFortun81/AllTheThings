@@ -74,6 +74,11 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			title(518),	-- <Name>, Honorary Historian
 		})),
+
+		-- 10.2.7
+		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+			title(539),	-- Mistrunner (TITLE!)
+		})),
 	}),
 }));
 -- #endif

@@ -638,6 +638,13 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		--10.2.7
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 			ach(40227),	-- Realm First! Mythic Garrosh
+			ach(40226),	-- Realm First! Timerunner
+		})),
+	}),
+	expansion(EXPANSION.TWW, {
+		--11.0.0
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			ach(18830),	-- Level 2
 		})),
 	}),
 }));

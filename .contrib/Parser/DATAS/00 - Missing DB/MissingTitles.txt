@@ -1,5 +1,3 @@
-10.2.7.54171
-title(539),	-- Strategist %s \\ Mistrunner %s
 11.0.0.54311
 title(548),	-- %s, the [PH] Hero
 title(549),	-- Immortal Spelunker %s
