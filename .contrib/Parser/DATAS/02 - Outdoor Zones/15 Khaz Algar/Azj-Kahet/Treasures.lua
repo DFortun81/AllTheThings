@@ -20,18 +20,73 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(224816),	-- Nerubian Almanac
 				},
 			}),
+			--TODO: probably better to move them towards Treads (wrathion like file) in future,
+			-- since for all of them active General is required
+			o(437058, {	-- Forgotten Memorial
+				["coord"] = { 68.5, 82.8, AZJ_KAHET },
+				["questID"] = xx,
+				["g"] = {
+					i(),	--
+				},
+			}),
+			o(437191, {	-- Forgotten Memorial
+				["coord"] = { 60.2, 83.5, AZJ_KAHET },
+				["questID"] = xx,
+				["g"] = {
+					i(),	--
+				},
+			}),
+			o(451595, {	-- Forgotten Memorial
+				["coord"] = { 36.1, 46.7, AZJ_KAHET },
+				["questID"] = xx,
+				["g"] = {
+					i(),	--
+				},
+			}),
 			o(451599, {	-- Forgotten Memorial
 				["coord"] = { 75.1, 68.2, AZJ_KAHET },
 				["questID"] = xx,
 				["g"] = {
-					-- don't knonw how to interact with
+					i(),	--
+				},
+			}),
+			o(451600, {	-- Forgotten Memorial
+				["coord"] = { 74.7, 88.2, AZJ_KAHET },
+				["questID"] = xx,
+				["g"] = {
+					i(),	--
 				},
 			}),
 			o(451601, {	-- Forgotten Memorial
 				["coord"] = { 49.6, 62.6, AZJ_KAHET },
 				["questID"] = xx,
 				["g"] = {
-					-- don't knonw how to interact with
+					i(),	--
+				},
+			}),
+			o(451602, {	-- Forgotten Memorial // 437391 Aspirant's Tribute
+				["coord"] = { 42.7, 34.6, AZJ_KAHET },
+				["questID"] = 81572,
+				["g"] = {
+					i(),	-- // game bricked
+				},
+			}),
+			o(451603, {	-- Forgotten Memorial
+				["coord"] = { 7.8, 25.7, 2213 },	-- Nureb'ar
+				["questID"] = xx,
+				["g"] = {
+					i(),	--
+				},
+			}),
+			o(446404, {	-- Memory Cache
+				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 30x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
+				--however, I'm unsure about amount of stacks since I fly here with 80x but probably it is same as for pets (when you start see void stuff here)
+				["coord"] = { 62.7, 88.7, 2256 },	-- Azj-Kaher Lower
+				["questID"] = 82723,
+				["g"] = {
+					i(223870),	-- Cache Key
+					--
+					i(225544),	-- Mind Slurp (PET!)
 				},
 			}),
 			o(xx, {	-- Missing Scouts Pack
@@ -76,10 +131,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(444800, {	-- Sureki Strongbox
-				["coord"] = { 74.9, 56.3, AZJ_KAHET },
+				["coords"] = {
+					{ 74.9, 56.3, AZJ_KAHET },
+					{ 78.0, 49.3, 2213 },	-- Nerub'ar // more than one spot or have daily lockout because didn't fire qID
+				},
 				["questID"] = xx,
 				["g"] = {
-					-- objectID from nearby report and no questID - bugged
+					-- no questID - bugged
+					-- missing loot table
+				},
+			}),
+			o(446421, {	-- Trapped Trove
+				["coord"] = { 67.4, 74.4, 2213 },	-- Nerub'ar
+				["questID"] = 82727,
+				["g"] = {
 					-- missing loot table
 				},
 			}),

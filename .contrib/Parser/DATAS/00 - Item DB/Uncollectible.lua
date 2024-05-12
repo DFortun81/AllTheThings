@@ -1775,14 +1775,21 @@ i(211798);	-- Un-Raised Bone Fragments
 -- PATCH 11.0.0 --
 ------------------
 --i(220287);	-- Acid-Filled Sack
+--i(220290);	-- Barbed Pincers
 --i(220277);	-- Carapace Fragment
 --i(220249);	-- Chipped Mandible
+--i(220267);	-- Combustible Gland
 --i(220255);	-- Darkened Residue
+--i(220259);	-- Gob of Mucus
+--i(220252);	-- Handful of Smooth Pebbles
+--i(220224);	-- Iridescent Integument
+--i(220380);	-- Immature Spiderling
 --i(220264);	-- Jaw with Barbed Teeth
 --i(220244);	-- Oversized Claw
 --i(220251);	-- Pale Gills
---i(220380);	-- Pickled Spiderling
 --i(220247);	-- Polishing Powder
+--i(220257);	-- Pulsing Pustules
+--i(220261);	-- Pungent Mushroom
 --i(220226);	-- Slime-Coated Membrane
 --i(220296);	-- Thickly Webbed Foot
 --i(220223);	-- Torn Gossamer Scrap

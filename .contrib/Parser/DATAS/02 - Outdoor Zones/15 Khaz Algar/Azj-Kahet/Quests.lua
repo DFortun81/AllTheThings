@@ -506,6 +506,68 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			-- End of some random spider quest #3
+			-- Start of some random spider quest #4
+			q(79119, {	-- It's Rough to Be a Bug!
+				--["sourceQuests"] = { xx },	-- ? // Azi-Kahet Pheromones near them so somewhere after 78226 (A Most Intriguing Invitation) or 78228 (Into a Skittering City)
+				["provider"] = { "n", 214359 },	-- Kish'nal
+				["coord"] = { 74.9, 83.5, AZJ_KAHET },
+			}),
+			q(79114, {	-- Beautification Project
+				["sourceQuests"] = { 79119 },	-- It's Rough to Be a Bug!
+				["provider"] = { "n", 214359 },	-- Kish'nal
+				["coord"] = { 74.9, 83.5, AZJ_KAHET },
+			}),
+			q(79115, {	-- Expert Consultant
+				["sourceQuests"] = { 79114 },	-- Beautification Project
+				["provider"] = { "n", 214356 },	-- Vix'aron
+				["coord"] = { 74.9, 83.7, AZJ_KAHET },
+			}),
+			q(79117, {	-- Bright Young Niffen
+				["sourceQuests"] = { 79115 },	-- Expert Consultant
+				["provider"] = { "n", 215037 },	-- Vetiverian
+				["coord"] = { 76.0, 67.1, AZJ_KAHET },
+			}),
+			q(79118, {	-- Rak-Ush Under New Management
+				["sourceQuests"] = { 79117 },	-- Bright Young Niffen
+				["provider"] = { "n", 215037 },	-- Vetiverian
+				["coord"] = { 76.0, 67.1, AZJ_KAHET },
+			}),
+			q(79120, {	-- Beetle in a Haystack
+				["sourceQuests"] = { 79118 },	-- Rak-Ush Under New Management
+				["provider"] = { "n", 214356 },	-- Vix'aron
+				["coord"] = { 74.0, 82.2, AZJ_KAHET },
+				["g"] = {
+					i(213392),	-- Smoke Grenade (QI!)
+				},
+			}),
+			q(79121, {	-- Bug Test
+				["sourceQuests"] = { 79120 },	-- Beetle in a Haystack
+				["provider"] = { "n", 214359 },	-- Kish'nal
+				["coord"] = { 74.0, 82.0, AZJ_KAHET },
+			}),
+			q(79122, {	-- Scarab Scouting
+				["sourceQuests"] = { 79121 },	-- Bug Test
+				["provider"] = { "n", 214359 },	-- Kish'nal
+				["coord"] = { 74.0, 82.0, AZJ_KAHET },
+			}),
+			q(79123, {	-- Pernament Hire
+				["sourceQuests"] = { 79122 },	-- Scarab Scouting
+				["provider"] = { "n", 214359 },	-- Kish'nal
+				["coord"] = { 74.0, 82.0, AZJ_KAHET },
+			}),
+			-- End of some random spider quest #4
+			-- ZONE DUNGEON QUESTS (80 only)
+			q(83166, {	-- Ara-Kara, the City of Echoes: Harverst's End
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 224733 },	-- Tulumun
+				["coord"] = { 56.7, 46.7, AZJ_KAHET },
+			}),
+			q(83164, {	-- City of Threads: Splice the Splicer
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 224733 },	-- Tulumun
+				["coord"] = { 56.7, 46.7, AZJ_KAHET },
+			}),
+			--
 			--	Bonus Objectives
 			q(81670, {	-- Shattered Silk
 				--["sourceQuests"] = { xx },	-- 
@@ -578,6 +640,32 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
+			q(81700, {	-- Vilewing
+				["description"] = "Fly around assignet coords.",
+				["provider"] = { "n", 216037 },	-- Vilewing
+				["coord"] = { 36.6, 44.3, AZJ_KAHET },
+				["g"] = {
+					i(223388),	-- Vilewing Cap
+				},
+			}),
+			q(81634, {	-- Chitin Hulk
+				["provider"] = { "n", 216038 },	-- Chitin Hulk
+				["coord"] = { 38.3, 44.2, 2213 },	-- Nerub'ar
+				["g"] = {
+					-- no loot
+				},
+			}),
+			q(81707, {	-- Lurking Hunter
+				["description"] = "In cave.",
+				["provider"] = { "n", 216039 },	-- Xishorr
+				["coords"] = {
+					{ 72.3, 57.0, 2216 },	-- Cave entrance
+					{ 68.7, 59.3, 2216 },	-- Rare spot
+				},
+				["g"] = {
+					i(221221),	-- Venomous Lurker's Greathelm (warbound)
+				},
+			}),
 		}),
 	}),
 })));
@@ -586,10 +674,20 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(79658),	-- triggered after turn in questID 78392 (The Tangled Web), probably faction (The Severed Threads) unlock
 	q(82067),	-- Click through dialogs with Mad Nerubian (n: 222381 @ 54.8, 25.3), could be some secret related or some kind of lockout for more dialog or just new variation of 'stay a while and listen'.
 	q(82082),	-- after interact with Weathered Shadecaster (n: 222283 @ 70.4, 65.2), same as above, little rp happening.
+	q(82085),	-- after interact with Neglected Shadecaster (n: 222304 @ 8.6, 30.6, 2213), same as above, little rp happening.
+	q(82079),	-- after interact with Forgotten Shadecaster (n: 222634 @ 77.6, 70.2, 2213), same as above, little rp happening.
 	q(81628),	-- triggered during questID 79175 (I Think I'm a Drone Now) when apply Anub'azal's Pheromones
-	q(81625),	-- triggered during questID 78226 (A Most Intriguing Invitation) when apply Azi-Kahel Pheromones
-	q(81623),	-- triggered during questID 78228 (Into a Skittering City) when apply Azi-Kahel Pheromones
+	q(81625),	-- triggered during questID 78226 (A Most Intriguing Invitation) when apply Azi-Kahet Pheromones
+	q(81623),	-- triggered during questID 78228 (Into a Skittering City) when apply Azi-Kahet Pheromones
 	q(81946),	-- 'Stay awhile and listen' - Anduin Wrynn - druing questID 78231 (Like a Spider on the Wall)
 	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (Beginning Anew From Rock Bottom)
+
+	--
+	-- Probably absolutely not related to zones
+	--
+	q(79573),	-- on hitting first 80s, achievementID 19470 [One Warband Mentor: The War Within], wq unlock?
+	--
+	q(82157),	-- 'Special Assignment: Rise of the Colossals'	/ Thoose two could be some kind of
+	q(82156),	-- 'Special Assignment: When the Deeps Stir'	/ callings or emissary actually?
 });
 --]]
