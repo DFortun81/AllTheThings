@@ -7,7 +7,10 @@ local i = function(itemID)
 end
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 -- Put items between these two bars if you dont want to sort them /Braghe
-
+i(3914);	-- neyman's Backpack \\ Journeyman's Backpack
+-- BFA Minor Visions
+i(169294);	-- Resilient Soul
+i(173888);	-- Shard of Self Sacrifice \\ Lingering Soul
 
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 
