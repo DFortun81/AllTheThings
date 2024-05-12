@@ -5592,7 +5592,6 @@ root(ROOTS.Unsorted, {
 				i(223474),	-- Worgli the Apprehensive (PET!)
 			}),
 			filter(COSMETIC, {
-				i(218105),	-- Loa's Blade-Blessing
 				i(220357),	-- Water Blaster B.L.
 				i(220655),	-- Water Blaster P.K.
 				i(220690),	-- Water Blaster P.R.

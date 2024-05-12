@@ -868,6 +868,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							i(218119),	-- Kevo ya Siti's Mask of Cunning
 							i(218118),	-- Lukou's Mask of Regeneration
 						}),
+						i(218105),	-- Loa's Blade-Blessing (COSMETIC!)
 					},
 				}),
 			},
