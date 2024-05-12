@@ -509,11 +509,10 @@ settings.GetModeString = function(self)
 		local insaneTotalCount, insaneCount = 0, 0;
 		local totalThingCount, thingCount, things = 0, 0, {};
 		for key,_ in pairs(GeneralSettingsBase.__index) do
-			keyPrefix = key:sub(1, 6)
-			if keyPrefix == "Thing:" then
+			keyPrefix, thingName = (":"):split(key)
+			if keyPrefix == "Thing" then
 				totalThingCount = totalThingCount + 1
 				thingActive = settings:Get(key);
-				thingName = key:sub(7);
 				if thingActive then
 					-- Heirloom Upgrades only count when Heirlooms are enabled
 					-- This prevents the heirloom uprades and quests locked from being displayed as a mode.
@@ -528,8 +527,10 @@ settings.GetModeString = function(self)
 				elseif self.RequiredForInsaneMode[thingName] then
 					insaneTotalCount = insaneTotalCount + 1;
 				end
-			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
-				-- TODO: a bit wonky that a disabled Thing with AccountWide checked can make it non-solo...
+			elseif solo and keyPrefix == "AccountWide"
+				and not settings.ForceAccountWide[thingName]
+				and settings:Get(key)
+				and settings:Get("Thing:"..thingName) then
 				solo = false
 			end
 		end
@@ -573,11 +574,10 @@ settings.GetShortModeString = function(self)
 		local insaneTotalCount, insaneCount = 0, 0;
 		local solo = true
 		for key,_ in pairs(GeneralSettingsBase.__index) do
-			keyPrefix = key:sub(1, 6)
-			if keyPrefix == "Thing:" then
+			keyPrefix, thingName = (":"):split(key)
+			if keyPrefix == "Thing" then
 				totalThingCount = totalThingCount + 1
 				thingActive = settings:Get(key);
-				thingName = key:sub(7);
 				if thingActive then
 					-- Heirloom Upgrades only count when Heirlooms are enabled
 					-- This prevents the heirloom uprades and quests locked from being displayed as a mode.
@@ -592,7 +592,10 @@ settings.GetShortModeString = function(self)
 				elseif self.RequiredForInsaneMode[thingName] then
 					insaneTotalCount = insaneTotalCount + 1;
 				end
-			elseif solo and keyPrefix == "Accoun" and settings:Get(key) then
+			elseif solo and keyPrefix == "AccountWide"
+				and not settings.ForceAccountWide[thingName]
+				and settings:Get(key)
+				and settings:Get("Thing:"..thingName) then
 				solo = false
 			end
 		end
