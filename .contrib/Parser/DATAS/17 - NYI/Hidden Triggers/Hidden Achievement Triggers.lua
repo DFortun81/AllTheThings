@@ -3459,6 +3459,17 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(40296),	-- Queen Ansurek kills (Normal Nerub-ar Palace)
 			ach(40297),	-- Queen Ansurek kills (Heroic Nerub-ar Palace)
 			ach(40298),	-- Queen Ansurek kills (Mythic Nerub-ar Palace)
+			ach(20482),	-- The Darkness kills (Normal Darkflame Cleft)
+			ach(20483),	-- The Darkness kills (Heroic Darkflame Cleft)
+			ach(20484),	-- The Darkness kills (Mythic Darkflame Cleft)
+			ach(20485),	-- Ki'katal the Harvester kills (Normal Ara-Kara, City of Echoes)
+			ach(20486),	-- Ki'katal the Harvester kills (Heroic Ara-Kara, City of Echoes)
+			ach(20487),	-- Ki'katal the Harvester kills (Mythic Ara-Kara, City of Echoes) (copy)
+			ach(20488),	-- Valorstones earned
+			ach(20489),	-- Weathered Harbinger Crests earned
+			ach(20490),	-- Carved Harbinger Crests earned
+			ach(20491),	-- Runed Harbinger Crests earned
+			ach(20492),	-- Gilded Harbinger Crests earned
 
 			-- 11.0.0.54361
 			ach(40305),	-- Allied Races: Earthen (Hidden Character Achievement)

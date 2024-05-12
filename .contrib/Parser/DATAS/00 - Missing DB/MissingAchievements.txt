@@ -233,34 +233,9 @@ ach(20471),	-- Siegehold Scuttle Advanced: Gold \\ WW Zone 5 Race 6 Advanced: Go
 ach(20472),	-- Siegehold Scuttle Reverse: Bronze \\ WW Zone 5 Race 6 Reverse: Bronze
 ach(20473),	-- Siegehold Scuttle Reverse: Silver \\ WW Zone 5 Race 6 Reverse: Silver
 ach(20474),	-- Siegehold Scuttle Reverse: Gold \\ WW Zone 5 Race 6 Reverse: Gold
-ach(20482),	-- The Darkness kills (Normal Darkflame Cleft)
-ach(20483),	-- The Darkness kills (Heroic Darkflame Cleft)
-ach(20484),	-- The Darkness kills (Mythic Darkflame Cleft)
-ach(20485),	-- Ki'katal the Harvester kills (Normal Ara-Kara, City of Echoes)
-ach(20486),	-- Ki'katal the Harvester kills (Heroic Ara-Kara, City of Echoes)
-ach(20487),	-- Ki'katal the Harvester kills (Mythic Ara-Kara, City of Echoes) (copy)
-ach(20488),	-- Valorstones earned
-ach(20489),	-- Weathered Harbinger Crests earned
-ach(20490),	-- Carved Harbinger Crests earned
-ach(20491),	-- Runed Harbinger Crests earned
-ach(20492),	-- Gilded Harbinger Crests earned
 ach(20510),	-- What Could it be?
 ach(20511),	-- Gotta Punt em' All
 ach(20512),	-- Herding Cats
-ach(20523),	-- The War Within Keystone Explorer: Season One
-ach(20524),	-- The War Within Keystone Conqueror: Season One
-ach(20525),	-- The War Within Keystone Master: Season One
-ach(20526),	-- The War Within Keystone Hero: Season One
-ach(20579),	-- Keystone Hero: The Rookery
-ach(20580),	-- Keystone Hero: The Stonevault
-ach(20581),	-- Keystone Hero: Priory of the Sacred Flame
-ach(20582),	-- Keystone Hero: City of Threads
-ach(20583),	-- Keystone Hero: Cinderbrew Meadery
-ach(20584),	-- Keystone Hero: Darkflame Cleft
-ach(20585),	-- Keystone Hero: The Dawnbreaker
-ach(20586),	-- Keystone Hero: Ara-Kara, City of Echoes
-ach(20587),	-- Keystone Hero: Siege of Boralus
-ach(20588),	-- Keystone Hero: Grim Batol
 ach(20589),	-- [PH] Hero: The War Within Season 1
 ach(20594),	-- Flamegards Hope
 ach(20595),	-- Sojourner of Isle of Dorn
@@ -268,10 +243,6 @@ ach(20596),	-- Loremaster of Khaz Algar
 ach(20597),	-- United We Stand
 ach(20598),	-- Hallowfall
 ach(40082),	-- Never Enough
-ach(40083),	-- Tour of Duty: Isle of Dorn
-ach(40084),	-- Tour of Duty: The Ringing Deeps
-ach(40085),	-- Tour of Duty: Hallowfall
-ach(40086),	-- Tour of Duty: Azj-Kahet
 ach(40087),	-- Unbound Battle
 ach(40088),	-- A Champion's Tour: The War Within
 ach(40089),	-- Spoiled Goods
@@ -295,22 +266,9 @@ ach(40140),	-- Algari Dungeon Healer \\ Algarian Dungeon Healer
 ach(40141),	-- Algari Dungeon Tank \\ Algarian Dungeon Tank
 ach(40142),	-- Learning to Share
 ach(40145),	-- So Much Sharing
-ach(40146),	-- War Within Superior
-ach(40147),	-- War Within Epic
 ach(40150),	-- Children's Entertainer
 ach(40151),	-- Mereldar Menance
 ach(40152),	-- Flight Glyphs: The Three Shields
-ach(40153),	-- Battle on Khaz Algar
-ach(40154),	-- Aquatic Battler of Khaz Algar
-ach(40155),	-- Beast Battler of Khaz Algar
-ach(40156),	-- Critter Battler of Khaz Algar
-ach(40157),	-- Dragonkin Battler of Khaz Algar
-ach(40158),	-- Elemental Battler of Khaz Algar
-ach(40161),	-- Flying Battler of Khaz Algar
-ach(40162),	-- Humanoid Battler of Khaz Algar
-ach(40163),	-- Magic Battler of Khaz Algar
-ach(40164),	-- Mechanical Battler of Khaz Algar
-ach(40165),	-- Undead Battler of Khaz Algar
 ach(40166),	-- Khaz Algar Glyph Hunter
 ach(40194),	-- Khaz Algar Safari
 ach(40210),	-- Deephaul Ravine Victory

@@ -4,6 +4,9 @@
 root(ROOTS.Character, n(NEW_CHARACTER, {
 	n(ACHIEVEMENTS, {
 		------ Epic ------
+		ach(40147, {	-- War Within Epic
+			["timeline"] = { ADDED_11_0_1_LAUNCH },
+		}),
 		ach(18977, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Epic
 			["sym"] = {{"achievement_criteria"}},
 		})),
@@ -32,6 +35,9 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3_LAUNCH },
 		})),
 		------ Superior ------
+		ach(40146, {	-- War Within Superior
+			["timeline"] = { ADDED_11_0_1_LAUNCH },
+		}),
 		ach(18976, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Superior
 			["sym"] = {{"achievement_criteria"}},
 		})),
