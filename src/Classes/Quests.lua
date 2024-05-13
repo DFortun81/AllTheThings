@@ -369,7 +369,7 @@ else
 				return true;
 			end
 			if t.locked then return app.Settings.AccountWide.Quests; end
-			return not t.repeatable and not t.isBreadcrumb;
+			return not t.repeatable;
 		end
 	end
 end
