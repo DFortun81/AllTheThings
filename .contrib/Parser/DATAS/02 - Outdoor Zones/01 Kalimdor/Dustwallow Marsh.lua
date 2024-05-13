@@ -2917,18 +2917,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(25479, {	-- To New Thalanaar
-					["qg"] = 40345,	-- Thyssiana
-					["altQuests"] = {
-						28503,	-- Hero's Call: Thousand Needles!
-						-- 25479,	-- To New Thalanaar
-						25481,	-- To New Thalanaar
-					},
-					["coord"] = { 41.8, 73.8, DUSTWALLOW_MARSH },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(25478, {	-- To the Summit
 					["qg"] = 40344,	-- Nyse
 					["sourceQuest"] = 28504,	-- Warchief's Command: Thousand Needles!

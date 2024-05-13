@@ -545,8 +545,8 @@ root(ROOTS.Zones, {
 				["lvl"] = 40,
 				["altQuests"] = {
 					-- 28503,	-- Hero's Call: Thousand Needles!
-					25479,	-- To New Thalanaar
-					25481,	-- To New Thalanaar
+					25479,	-- To New Thalanaar [Dustwallow Marsh]
+					25481,	-- To New Thalanaar [Feralas]
 				},
 			}),
 			q(49560, {	-- Hero's Call: Townlong Steppes!

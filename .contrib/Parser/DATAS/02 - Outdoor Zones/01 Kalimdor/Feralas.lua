@@ -1719,8 +1719,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39946,	-- Caryssia Moonhunter
 					["sourceQuests"] = {
 						28503,	-- Hero's Call: Thousand Needles!
-						25479,	-- To New Thalanaar
-						25481,	-- To New Thalanaar
+						25479,	-- To New Thalanaar [Dustwallow Marsh]
+						25481,	-- To New Thalanaar [Feralas]
 					},
 					["coord"] = { 86.1, 45.3, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
@@ -2058,12 +2058,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(25481, {	-- To New Thalanaar
+				q(25479, {	-- To New Thalanaar [Dustwallow Marsh]
+					["qg"] = 40345,	-- Thyssiana
+					["altQuests"] = {
+						28503,	-- Hero's Call: Thousand Needles!
+						-- 25479,	-- To New Thalanaar [Dustwallow Marsh]
+						25481,	-- To New Thalanaar [Feralas]
+					},
+					["coord"] = { 41.8, 73.8, DUSTWALLOW_MARSH },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(25481, {	-- To New Thalanaar [Feralas]
 					["qg"] = 40369,	-- Falfindel Waywarder
 					["altQuests"] = {
 						28503,	-- Hero's Call: Thousand Needles!
-						25479,	-- To New Thalanaar
-						-- 25481,	-- To New Thalanaar
+						25479,	-- To New Thalanaar [Dustwallow Marsh]
+						-- 25481,	-- To New Thalanaar [Feralas]
 					},
 					["coord"] = { 77.2, 56.5, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
