@@ -2684,7 +2684,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214157),	-- Eternal Blossom Bindings
 						},
 					}),
-					i(215242, {	-- Ensemble: Vestments of the Haunted Forest (Heroic)
+					i(215244, {	-- Ensemble: Vestments of the Haunted Forest (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
 							i(214182),	-- Pants of the Haunted Forest

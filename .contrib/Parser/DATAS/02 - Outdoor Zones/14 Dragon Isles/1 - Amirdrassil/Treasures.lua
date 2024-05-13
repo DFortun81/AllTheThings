@@ -6,13 +6,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 		n(TREASURES, {
 			o(421180, {	-- Kaldorei Backpack
 				["coord"] = { 52.5, 17.7, AMIRDRASSIL },
-				["questID"] = {
+				["questID"] =
 					-- #if BEFORE 10.2.6
 					79494,
 					-- #else
 					82825,
 					-- #endif
-				},
 				["lockCriteria"] = { 1, "sourceID", 195171 },
 				["g"] = {
 					i(213005),	-- Blue Kaldorei Backpack
@@ -20,13 +19,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			o(421183, {	-- Kaldorei Bag
 				["coord"] = { 55.33, 64.28, AMIRDRASSIL },
-				["questID"] = {
+				["questID"] =
 					-- #if BEFORE 10.2.6
 					79472,
 					-- #else
 					82821,
 					-- #endif
-				},
 				["lockCriteria"] = { 1, "sourceID", 195176 },
 				["g"] = {
 					i(213010),	-- Blue Kaldorei Pouch
@@ -34,13 +32,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			o(421338, {	-- Kaldorei Bag
 				["coord"] = { 48.3, 76.4, AMIRDRASSIL },
-				["questID"] = {
+				["questID"] =
 					-- #if BEFORE 10.2.6
 					79493,
 					-- #else
 					82824,
 					-- #endif
-				},
 				["lockCriteria"] = { 1, "sourceID", 195175 },
 				["g"] = {
 					i(213009),	-- Violet Kaldorei Pouch
@@ -48,13 +45,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			o(421179, {	-- Kaldorei Bedroll
 				["coord"] = { 54.7, 77.2, AMIRDRASSIL },
-				["questID"] = {
+				["questID"] =
 					-- #if BEFORE 10.2.6
 					79473,
 					-- #else
 					82822,
 					-- #endif
-				},
 				["lockCriteria"] = { 1, "sourceID", 195169 },
 				["g"] = {
 					i(213003),	-- Blue Kaldorei Bedroll
@@ -62,13 +58,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			o(421181, {	-- Kaldorei Dagger
 				["coord"] = { 31.3, 16.1, AMIRDRASSIL },
-				["questID"] = {
+				["questID"] =
 					-- #if BEFORE 10.2.6
 					79496,
 					-- #else
 					82826,
 					-- #endif
-				},
 				["lockCriteria"] = { 1, "sourceID", 195174 },
 				["g"] = {
 					i(213008),	-- Kaldorei Bow Carver
@@ -76,13 +71,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			o(421339, {	-- Kaldorei Horn
 				["coord"] = { 58.5, 51.9, AMIRDRASSIL },
-				["questID"] = {
+				["questID"] =
 					-- #if BEFORE 10.2.6
 					79498,
 					-- #else
 					82828,
 					-- #endif
-				},
 				["lockCriteria"] = { 1, "sourceID", 195172 },
 				["g"] = {
 					i(213006),	-- Night Elven Horn
@@ -90,13 +84,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			o(421182, {	-- Kaldorei Horn
 				["coord"] = { 49.1, 70.3, AMIRDRASSIL },
-				["questID"] = {
+				["questID"] =
 					-- #if BEFORE 10.2.6
 					79497,
 					-- #else
 					82827,
 					-- #endif
-				},
 				["lockCriteria"] = { 1, "sourceID", 195173 },
 				["g"] = {
 					i(213007),	-- Night Elven Signal
@@ -104,13 +97,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			o(421555, {	-- Kaldorei Moon Bow
 				["coord"] = { 29.0, 28.9, AMIRDRASSIL },
-				["questID"] = {
+				["questID"] =
 					-- #if BEFORE 10.2.6
 					79520,
 					-- #else
 					82831,
 					-- #endif
-				},
 				["lockCriteria"] = { 1, "sourceID", 195215 },
 				["g"] = {
 					i(213160),	-- Kaldorei Moon Bow
@@ -118,13 +110,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			o(421184, {	-- Kaldorei Shield
 				["coord"] = { 47.9, 56.9, AMIRDRASSIL },
-				["questID"] = {
+				["questID"] =
 					-- #if BEFORE 10.2.6
 					79499,
 					-- #else
 					82829,
 					-- #endif
-				},
 				["lockCriteria"] = { 1, "sourceID", 195177 },
 				["g"] = {
 					i(213011),	-- Night Elven Shield
@@ -132,13 +123,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			o(421185, {	-- Kaldorei Spear
 				["coord"] = { 53.5, 55.7, AMIRDRASSIL },
-				["questID"] = {
+				["questID"] =
 					-- #if BEFORE 10.2.6
 					79490,
 					-- #else
 					82823,
 					-- #endif
-				},
 				["lockCriteria"] = { 1, "sourceID", 195178 },
 				["g"] = {
 					i(213012),	-- Night Elven Spear
@@ -146,13 +136,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 			}),
 			o(421186, {	-- Kaldorei Spyglass
 				["coord"] = { 51.9, 5.9, AMIRDRASSIL },
-				["questID"] = {
+				["questID"] =
 					-- #if BEFORE 10.2.6
 					79500,
 					-- #else
 					82830,
 					-- #endif
-				},
 				["lockCriteria"] = { 1, "sourceID", 195179 },
 				["g"] = {
 					i(213013),	-- Kaldorei Sentinel's Spyglass
