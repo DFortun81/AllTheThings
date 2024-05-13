@@ -23,21 +23,81 @@ end
 
 root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	i(210814),	-- Artisan's Acuity
-	--[[
 	prof(ALCHEMY, {
+		--[[
 		filter(CONSUMABLES, {
 		}),
+		--]]
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ALCHEMY,
 		},{
+			-- Alchemy Essentials
+			FirstCraft(81132, 433087);	-- Formulated Courage
+			--FirstCraft(QuestID, 430345);	-- Meticulous Experimentation
+			FirstCraft(81090, 430315);	-- Thaumaturgy
+			--FirstCraft(QuestID, 427174);	-- Wild Experimentation
+			-- Reagents
+			FirstCraft(81129, 432204);	-- Harmonious Horticulture
+			-- Basic Concoctions
+			FirstCraft(81095, 430590);	-- Algari Healing Potion
+			FirstCraft(81096, 430591);	-- Algari Mana Potion
+			--FirstCraft(QuestID, 430592);	-- Cavedweller's Delight
+			--FirstCraft(QuestID, 430593);	-- Slumbering Soul Serum
+			-- Potions
+			FirstCraft(81101, 430596);	-- Agonizing Potion
+			FirstCraft(81100, 430595);	-- Draught of Shocking Revelations
+			FirstCraft(81099, 430594);	-- Draught of Silent Footfalls
+			FirstCraft(81103, 430598);	-- Frontline Potion
+			FirstCraft(81105, 430600);	-- Potion of the Reborn Cheetah
+			--FirstCraft(QuestID, 430597);	-- Potion of Unwavering Focus
+			FirstCraft(81104, 430599);	-- Tempered Potion
+			-- Flasks
+			FirstCraft(81110, 430605);	-- Flask of Alchemical Chaos
+			--FirstCraft(QuestID, 430612);	-- Flask of Saving Graces
+			--FirstCraft(QuestID, 430604);	-- Flask of Tempered Mastery
+			--FirstCraft(QuestID, 430603);	-- Flask of Tempered Versatility
+			FirstCraft(81106, 430601);	-- Flask of Tempered Aggression
+			--FirstCraft(QuestID, 430602);	-- Flask of Tempered Swiftness
+			-- Vicious Flasks
+			--FirstCraft(QuestID, 430607);	-- Vicious Flask of Classical Spirits
+			--FirstCraft(QuestID, 430608);	-- Vicious Flask of Honor
+			--FirstCraft(QuestID, 430610);	-- Vicious Flask of Manifested Fury
+			--FirstCraft(QuestID, 430611);	-- Vicious Flask of Wrecking Ball
+			-- Phials
+			FirstCraft(81121, 430617);	-- Phial of Bountiful Seasons
+			FirstCraft(81120, 430616);	-- Phial of Enhanced Ambidextry
+			--FirstCraft(QuestID, 430614);	-- Phial of Focused Inspiration
+			FirstCraft(81119, 430615);	-- Phial of Truesight
+			-- Transmutations
+			--FirstCraft(QuestID, 449938);	-- Gleaming Chaos
+			FirstCraft(81128, 430624);	-- Gleaming Glory
+			FirstCraft(81142, 449573);	-- Mercurial Coalescence
+			FirstCraft(81143, 449574);	-- Ominous Coalescence
+			FirstCraft(81144, 449575);	-- Volatile Coalescence
+			FirstCraft(81122, 430618);	-- Mercurial Blessings
+			FirstCraft(81140, 449571);	-- Mercurial Herbs
+			FirstCraft(81123, 430619);	-- Mercurial Storms
+			FirstCraft(81126, 430622);	-- Ominous Call
+			--FirstCraft(QuestID, 430623);	-- Ominous Gloom
+			FirstCraft(81141, 449572);	-- Ominous Herbs
+			FirstCraft(81125, 430621);	-- Volatile Stone
+			FirstCraft(81124, 430620);	-- Volatile Weaving
+			-- Alchemist Stones
+			--FirstCraft(QuestID, 427185);	-- Algari Alchemist Stone
+			-- Cuauldrons
+			FirstCraft(81130, 432962);	-- Algari Flask Cauldron
+			FirstCraft(81131, 432963);	-- Algari Potion Cauldron
 		})),
+		--[[
 		filter(MISC, {
 		}),
 		filter(REAGENTS, {
 		}),
 		filter(TRINKET_F, {
 		}),
+		--]]
 	}),
+	--[[
 	prof(BLACKSMITHING, {
 		n(ARMOR, {
 		}),
@@ -304,9 +364,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	--]]
 })));
 
---[[
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, {
+		prof(ALCHEMY, {
+			q(82473),	-- Transmutation 15/30
+			q(82474),	-- Transmutation 30/30
+
+			-- Unsure what are these
+			--q(82388),	-- Together with First Craft of Algari Mana Potion
+			--q(81898),	-- Together with First Craft of Flask of Alchemical Chaos
+
+			--q(78604),	-- Randomly when crafting Wild Experimentation
+			--q(81090),	-- Randomly when crafting Wild Experimentation
+						-- Randomly when crafting Thaumaturgy
+		}),
 	}),
 });
---]]
