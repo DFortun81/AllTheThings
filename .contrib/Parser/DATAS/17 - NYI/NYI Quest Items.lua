@@ -262,7 +262,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(191669),	-- Engraved Tusk
 			i(194426),	-- Enriched Soil
 			i(191308),	-- Envenomed Spear
-			i(200119),	-- Everblazing Fireheart
 			i(192496),	-- Exhumed Hunter's Spear
 			i(193839),	-- Explosive Ash
 			i(194564),	-- Extra-Delicious Riverbeast Meat
