@@ -672,10 +672,12 @@ root(ROOTS.Character, n(createHeader({
 					["minReputation"] = { FACTION_GUILD, FRIENDLY },
 				}),
 			}),
+			-- #if AFTER 5.0.4
 			ach(6626, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Working Better as a Team
+			-- #endif
 				i(69888, {	-- Burnished Legplates of Might
 					["minReputation"] = { FACTION_GUILD, HONORED },
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
+					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122264, {	-- Burnished Legplates of Might
 					["minReputation"] = { FACTION_GUILD, HONORED },
@@ -683,7 +685,7 @@ root(ROOTS.Character, n(createHeader({
 				}),
 				i(62025, {	-- Mystical Kilt of Elements
 					["minReputation"] = { FACTION_GUILD, HONORED },
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
+					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122253, {	-- Mystical Kilt of Elements
 					["minReputation"] = { FACTION_GUILD, HONORED },
@@ -691,7 +693,7 @@ root(ROOTS.Character, n(createHeader({
 				}),
 				i(62023, {	-- Polished Legplates of Valor
 					["minReputation"] = { FACTION_GUILD, HONORED },
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
+					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122251, {	-- Polished Legplates of Valor
 					["minReputation"] = { FACTION_GUILD, HONORED },
@@ -699,7 +701,7 @@ root(ROOTS.Character, n(createHeader({
 				}),
 				i(62027, {	-- Preened Wildfeather Leggings
 					["minReputation"] = { FACTION_GUILD, HONORED },
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
+					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122255, {	-- Preened Wildfeather Leggings
 					["minReputation"] = { FACTION_GUILD, HONORED },
@@ -711,7 +713,7 @@ root(ROOTS.Character, n(createHeader({
 				}),
 				i(62026, {	-- Stained Shadowcraft Pants
 					["minReputation"] = { FACTION_GUILD, HONORED },
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
+					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122254, {	-- Stained Shadowcraft Pants
 					["minReputation"] = { FACTION_GUILD, HONORED },
@@ -719,7 +721,7 @@ root(ROOTS.Character, n(createHeader({
 				}),
 				i(62024, {	-- Tarnished Leggings of Destruction
 					["minReputation"] = { FACTION_GUILD, HONORED },
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
+					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122252, {	-- Tarnished Leggings of Destruction
 					["minReputation"] = { FACTION_GUILD, HONORED },
@@ -727,13 +729,15 @@ root(ROOTS.Character, n(createHeader({
 				}),
 				i(62029, {	-- Tattered Dreadmist Leggings
 					["minReputation"] = { FACTION_GUILD, HONORED },
-					["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
+					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122256, {	-- Tattered Dreadmist Leggings
 					["minReputation"] = { FACTION_GUILD, HONORED },
 					["timeline"] = { ADDED_6_1_0 },
 				}),
+			-- #if AFTER 5.0.4
 			})),
+			-- #endif
 		},
 	}),
 })));
