@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			pet(xx, {	-- Shadowy Oozeling (PET!)
-				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 30x Unseeming Shift debuff to see this pet",
+				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see this pet",
 				["coord"] = { 63.6, 88.1, 2256 },
 			}),
 			pet(xx, {	-- Verdant Scootlefish (PET!)
@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			pet(xx, {	-- Voidling Ooze (PET!)
-				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 30x Unseeming Shift debuff to see this pet",
+				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see this pet",
 				["coord"] = { 56.4, 48.3, 2256 },
 			}),
 			--

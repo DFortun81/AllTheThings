@@ -25,6 +25,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(224784),	-- Pinnacle Cache
 					},
 				})),
+				petbattle(q(82297, {	-- One Hungry Worm
+					["coord"] = { 53.9, 37.0, AZJ_KAHET },
+					["g"] = {
+						i(224784),	-- Pinnacle Cache
+					},
+				})),
 				--
 				--move into separate file
 				q(80592, {	-- Pact with Threads Attached

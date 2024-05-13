@@ -29,7 +29,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- bugged, interactable but didn't summon enemy
 				},
 			}),
-			o(437191, {	-- Forgotten Memorial // 437194 Aspirant's Tribute
+			o(437194, {	-- Aspirant's Tribute
+				["provider"] = { "o", 437191 },	-- Forgotten Memorial
 				["coord"] = { 60.2, 83.5, AZJ_KAHET },
 				["questID"] = 81467,
 				["g"] = {
@@ -40,7 +41,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 36.1, 46.7, AZJ_KAHET },
 				["questID"] = xx,
 				["g"] = {
-					i(),	--
+					-- bugged, uninteractable.
+				},
+			}),
+			o(451596, {	-- Forgotten Memorial
+				["coord"] = { 41.2, 46.1, AZJ_KAHET },
+				["questID"] = xx,
+				["g"] = {
+					-- bugged, uninteractable.
 				},
 			}),
 			o(451599, {	-- Forgotten Memorial
@@ -64,7 +72,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- bugged, uninteractable.
 				},
 			}),
-			o(451602, {	-- Forgotten Memorial // 437391 Aspirant's Tribute
+			o(437391, {	-- Aspirant's Tribute
+				["provider"] = { "o", 451602 },	-- Forgotten Memorial
 				["coord"] = { 42.7, 34.6, AZJ_KAHET },
 				["questID"] = 81572,
 				["g"] = {
@@ -75,12 +84,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 7.8, 25.7, 2213 },	-- Nureb'ar
 				["questID"] = xx,
 				["g"] = {
-					i(),	--
+					-- bugged, uninteractable.
 				},
 			}),
 			o(446404, {	-- Memory Cache
-				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 30x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
-				--however, I'm unsure about amount of stacks since I fly here with 80x but probably it is same as for pets (when you start see void stuff here)
+				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
 				["coord"] = { 62.7, 88.7, 2256 },	-- Azj-Kaher Lower
 				["questID"] = 82723,
 				["g"] = {
@@ -89,7 +97,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(225544),	-- Mind Slurp (PET!)
 				},
 			}),
-			o(xx, {	-- Missing Scouts Pack
+			o(446140, {	-- Missing Scouts Pack
 				["coord"] = { 40.7, 42.1, AZJ_KAHET },
 				["questID"] = 82722,
 				["g"] = {

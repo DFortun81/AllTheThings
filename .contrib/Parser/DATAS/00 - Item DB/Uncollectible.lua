@@ -1794,6 +1794,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220247);	-- Polishing Powder
 --i(220257);	-- Pulsing Pustules
 --i(220261);	-- Pungent Mushroom
+--i(220288);	-- Quivering Tail
 --i(220226);	-- Slime-Coated Membrane
 --i(220296);	-- Thickly Webbed Foot
 --i(220223);	-- Torn Gossamer Scrap

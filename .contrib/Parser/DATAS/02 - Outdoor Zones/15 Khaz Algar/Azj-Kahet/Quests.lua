@@ -587,6 +587,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(81670, {	-- Shattered Silk
 				["coord"] = { 72.8, 55.0, AZJ_KAHET },
 			}),
+			q(xx, {	-- Radiant Echo
+				["provider"] = { "n", 222165 },	-- Radiant Echo
+				["coord"] = { 21.1, 45.5, 2213 },
+			}),
 			--this is probably with General only and probably need to move out of here?
 			q(81491, {	-- Armaments: Arbalests
 				["isDaily"] = true,	
@@ -613,6 +617,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 224166 },	-- Eirzay
 				["coord"] = { 36.1, 50.2, 2213 },
 			}),
+			q(81489, {	Bounty: Zorikal the Patron
+				["isDaily"] = true,	
+				["provider"] = { "n", 224167 },	-- Eirzay
+				["coord"] = { 15.6, 45.9, 2213 },
+			}),
 			q(81475, {	-- Breaking the Phalanx: Royal Appointments
 				["isDaily"] = true,	
 				["provider"] = { "n", 224161 },	-- Eirzay
@@ -632,6 +641,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["isDaily"] = true,	
 				["provider"] = { "n", 224176 },	-- Eirzay
 				["coord"] = { 63.8, 26.3, 2216 },	-- bugged, 2 npc in exactly same place
+			}),
+			q(81478, {	-- Relics of War: The Ruptired Lake
+				["isDaily"] = true,	
+				["provider"] = { "n", 224173 },	-- Eirzay
+				["coord"] = { 39.5, 53.0, AZJ_KAHET },
+				["g"] = {
+					i(219415),	-- Bloodied Insignia (QI!)
+				},
 			}),
 			q(81493, {	-- Relics of War: The Salien Gutter Conflict
 				["isDaily"] = true,	
@@ -755,12 +772,13 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82644),	-- 'Listen to the rumor' from Eirzay (n: 224170 @ 58.1, 39.3, 2216), start questID 81477 (Armaments: Weaponry)
 	q(82643),	-- 'Listen to the rumor' from Eirzay (n: 224168 @ 48.6, 50.5, 2216), start questID 81490 (Bounty: Balaxir the Bully)
 	q(82616),	-- 'Listen to the rumor' from Eirzay (n: 224166 @ 36.1, 50.2, 2213), start questID 81476 (Bounty: Goliath)
+	q(82581),	-- 'Listen to the rumor' from Eirzay (n: 224167 @ 15.6, 45.9, 2213), start questID 81489 (Bounty: Zorikal the Patron)
 	q(82640),	-- 'Listen to the rumor' from Eirzay (n: 224161 @ 43.0, 47.1, 2213), start questID 81475 (Breaking the Phalanx: Royal Appointments)
 	q(82642),	-- 'Listen to the rumor' from Eirzay (n: 224163 @ 27.7, 57.8, 2213), start questID 81488 (Breaking the Phalanx: Sages)
 	q(82641),	-- 'Listen to the rumor' from Eirzay (n: 224162 @ 30.6, 42.6, 2213), start questID 81487 (Breaking the Phalanx: Venomblades)
 	q(82649),	-- 'Listen to the rumor' from Eirzay (n: 224176 @ 63.8, 26.3, 2216), start questID 81494 (Relics of War: Rak-Ahat)
+	q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
 	q(82648),	-- 'Listen to the rumor' from Eirzay (n: 224174 @ 63.8, 26.3, 2216), start questID 81493 (Relics of War: The Salien Gutter Conflict)
-
 	--
 	-- Probably absolutely not related to zones
 	--
