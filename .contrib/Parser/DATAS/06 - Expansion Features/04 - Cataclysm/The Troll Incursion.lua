@@ -250,22 +250,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["coord"] = { 50.3, 21.7, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
 				}),
-				q(29156, {	-- The Troll Incursion
-					-- Hero's Call Board
+				heroscall(q(29156, {	-- The Troll Incursion
 					["timeline"] = { ADDED_4_1_0, REMOVED_7_0_3 },
+					["maps"] = { DARNASSUS, IRONFORGE, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-				}),
-				q(29157, {	-- The Zandalari Menace
-					-- Warchief's Command Board
+				})),
+				warchiefscommand(q(29157, {	-- The Zandalari Menace
 					["timeline"] = { ADDED_4_1_0, REMOVED_7_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-				}),
+				})),
 				q(29158, {	-- The Zandalar Representative
 					["qg"] = 52654,	-- Bwemba
-					["timeline"] = { ADDED_4_1_0, REMOVED_7_0_3 },
 					["coord"] = { 25.96, 29.32, STORMWIND_CITY },
+					["timeline"] = { ADDED_4_1_0, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),

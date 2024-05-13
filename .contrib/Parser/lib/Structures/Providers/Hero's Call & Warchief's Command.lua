@@ -39,6 +39,10 @@ local helper = function(boards, t)	-- Assigns board provider data based on the m
 				table.remove(maps, i);
 			end
 		end
+		if #maps == 0 then
+			t.maps = nil;
+			maps = nil;
+		end
 	end
 	-- #endif
 	if not maps or #maps == 0 then
