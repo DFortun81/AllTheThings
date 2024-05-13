@@ -75,6 +75,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if NOT ANYCLASSIC
+			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(207320, {	-- Hero's Call Board
 				["coords"] = {
 					{ 26.5, 70.2, IRONFORGE },
@@ -84,6 +86,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
 			}),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(BLACKSMITHING, {
 					n(4258, {	-- Bengus Deepforge <Artisan Blacksmith>

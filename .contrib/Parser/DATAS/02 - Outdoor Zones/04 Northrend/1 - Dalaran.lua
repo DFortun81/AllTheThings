@@ -1402,6 +1402,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 72.1, 45.7, NORTHREND_DALARAN },
 					}),
 				}),
+				-- #if NOT ANYCLASSIC
+				-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 				o(208316, {	-- Hero's Call Board
 					["coords"] = {
 						{ 25.9, 43.1, NORTHREND_DALARAN },
@@ -1412,6 +1414,7 @@ root(ROOTS.Zones, {
 					["sym"] = HEROS_CALL_BOARD_SYMLINK,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #endif
 				n(PROFESSIONS, {
 					prof(ALCHEMY, {
 						n(28703, {	-- Linzy Blackbolt <Alchemy Trainer>
@@ -4835,6 +4838,8 @@ root(ROOTS.Zones, {
 					}),
 					-- #endif
 				}),
+				-- #if NOT ANYCLASSIC
+				-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 				o(208317, {	-- Warchief's Command Board
 					["coords"] = {
 						{ 48.7, 39.6, NORTHREND_DALARAN },
@@ -4844,6 +4849,7 @@ root(ROOTS.Zones, {
 					["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 					["races"] = HORDE_ONLY,
 				}),
+				-- #endif
 			},
 		}),
 	})),

@@ -97,6 +97,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			-- #if NOT ANYCLASSIC
+			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(207321, {	-- Hero's Call Board
 				["coords"] = {
 					{ 29.6, 48.4, DARNASSUS },
@@ -107,6 +109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
 			}),
+			-- #endif
 			-- #if AFTER 4.0.1.12984
 			n(PROFESSIONS, {
 				prof(FISHING, {

@@ -1458,12 +1458,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if NOT ANYCLASSIC
+			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(207323, {	-- Warchief's Command Board
 				["coord"] = { 42.6, 57.4, THUNDER_BLUFF },
 				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 				["races"] = HORDE_ONLY,
 			}),
+			-- #endif
 		},
 	}),
 }));

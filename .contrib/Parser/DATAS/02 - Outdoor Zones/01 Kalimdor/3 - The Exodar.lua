@@ -47,12 +47,15 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if NOT ANYCLASSIC
+			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(207322, {	-- Hero's Call Board
 				["coord"] = { 55.5, 47.9, THE_EXODAR },
 				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
 			}),
+			-- #endif
 			n(QUESTS, {
 				q(10356, {	-- A Donation of Mageweave
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>

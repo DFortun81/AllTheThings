@@ -2204,6 +2204,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}},
 				}),
 			}),
+			-- #if NOT ANYCLASSIC
+			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(207324, {	-- Warchief's Command Board
 				["coords"] = {
 					{ 44.0, 35.4, UNDERCITY },
@@ -2214,6 +2216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 				["races"] = HORDE_ONLY,
 			}),
+			-- #endif
 		},
 	}),
 }));

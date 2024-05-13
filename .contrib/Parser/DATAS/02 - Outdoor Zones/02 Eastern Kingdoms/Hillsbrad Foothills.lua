@@ -3636,6 +3636,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 			}),
 			-- #endif
+			-- #if NOT ANYCLASSIC
+			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(207279, {	-- Warchief's Command Board
 				["coords"] = {
 					{ 56.6, 47.0, HILLSBRAD_FOOTHILLS },
@@ -3645,6 +3647,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 				["races"] = HORDE_ONLY,
 			}),
+			-- #endif
 			n(ZONE_DROPS, {
 				-- #if AFTER CATA
 				i(3711, {	-- Belamoore's Research Journal

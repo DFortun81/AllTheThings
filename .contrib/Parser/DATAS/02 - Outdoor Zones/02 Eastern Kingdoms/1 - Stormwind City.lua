@@ -83,6 +83,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if NOT ANYCLASSIC
+			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(206111, {	-- Hero's Call Board
 				["provider"] = { "o", 206294 },	-- Hero's Call Board
 				["coords"] = {
@@ -98,6 +100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
 			}),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(5499, {	-- Lilyssia Nightbreeze <Alchemy Trainer>
