@@ -4182,13 +4182,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25048, {	-- Seaside Salvage (A)
 					["qg"] = 38535,	-- Kelsey Steelspark
+					["sourceQuest"] = 27446,	-- Tanaris is Calling [A]
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24906, {	-- Seaside Salvage (H)
 					["qg"] = 38534,	-- Megs Dreadshredder
-					["sourceQuest"] = 27447,	-- Tanaris is Calling
+					["sourceQuest"] = 27447,	-- Tanaris is Calling [H]
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,

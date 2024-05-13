@@ -1970,7 +1970,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				q(25487, {	-- The Grimtotem are Coming
+				q(25486, {	-- The Grimtotem are Coming [H]
+					["qg"] = 39946,	-- Caryssia Moonhunter
+					["sourceQuests"] = {
+						28503,	-- Hero's Call: Thousand Needles!
+						25479,	-- To New Thalanaar [Dustwallow Marsh]
+						25481,	-- To New Thalanaar [Feralas]
+					},
+					["coord"] = { 86.1, 45.3, FERALAS },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(25487, {	-- The Grimtotem are Coming [H]
 					["qg"] = 39895,	-- Kanati Greycloud
 					["sourceQuests"] = {
 						25356,	-- To the Summit (Feralas)
@@ -2114,12 +2125,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(27275, {	-- Together Again
-					["qg"] = 41444,	-- Brienna Starglow
-					["sourceQuest"] = 25871,	-- Save the Sentinel
-					["coord"] = { 46.8, 56.0, THOUSAND_NEEDLES },
+				q(25479, {	-- To New Thalanaar [Dustwallow Marsh]
+					["qg"] = 40345,	-- Thyssiana
+					["altQuests"] = {
+						28503,	-- Hero's Call: Thousand Needles!
+						-- 25479,	-- To New Thalanaar [Dustwallow Marsh]
+						25481,	-- To New Thalanaar [Feralas]
+					},
+					["coord"] = { 41.8, 73.8, DUSTWALLOW_MARSH },
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { FERALAS },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(25481, {	-- To New Thalanaar [Feralas]
+					["qg"] = 40369,	-- Falfindel Waywarder
+					["altQuests"] = {
+						28503,	-- Hero's Call: Thousand Needles!
+						25479,	-- To New Thalanaar [Dustwallow Marsh]
+						-- 25481,	-- To New Thalanaar [Feralas]
+					},
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(25478, {	-- To the Summit [Dustwallow Marsh]
+					["qg"] = 40344,	-- Nyse
+					["sourceQuest"] = 28504,	-- Warchief's Command: Thousand Needles!
+					["coord"] = { 41.8, 73.8, DUSTWALLOW_MARSH },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,	-- for "The Grimtotem are Coming"
+				}),
+				q(25356, {	-- To the Summit [Feralas]
+					["qg"] = 39893,	-- Jawn Highmesa
+					["sourceQuest"] = 28504,	-- Warchief's Command: Thousand Needles!
+					["coord"] = { 74.6, 42.8, FERALAS },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(28143, {	-- To the Withering
 					-- (confirmed 2022-08-18, alliance, 51)
@@ -2132,7 +2177,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.9, 60.6, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				q(27276, {	-- Together Again
+				q(27275, {	-- Together Again [A]
+					["qg"] = 41444,	-- Brienna Starglow
+					["sourceQuest"] = 25871,	-- Save the Sentinel
+					["coord"] = { 46.8, 56.0, THOUSAND_NEEDLES },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27276, {	-- Together Again [H]
 					["qg"] = 41421,	-- Rau Cliffrunner
 					["sourceQuest"] = 25872,	-- The Brave and the Bold
 					["coord"] = { 46.7, 55.9, THOUSAND_NEEDLES },

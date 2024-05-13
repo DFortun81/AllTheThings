@@ -1715,17 +1715,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(25486, {	-- The Grimtotem are Coming
-					["qg"] = 39946,	-- Caryssia Moonhunter
-					["sourceQuests"] = {
-						28503,	-- Hero's Call: Thousand Needles!
-						25479,	-- To New Thalanaar [Dustwallow Marsh]
-						25481,	-- To New Thalanaar [Feralas]
-					},
-					["coord"] = { 86.1, 45.3, FERALAS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(2982, {	-- The High Wilderness
 					["qg"] = 7900,	-- Angelas Moonbreeze
 					["coord"] = { 31.8, 45.6, FERALAS },
@@ -2058,41 +2047,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(25479, {	-- To New Thalanaar [Dustwallow Marsh]
-					["qg"] = 40345,	-- Thyssiana
-					["altQuests"] = {
-						28503,	-- Hero's Call: Thousand Needles!
-						-- 25479,	-- To New Thalanaar [Dustwallow Marsh]
-						25481,	-- To New Thalanaar [Feralas]
-					},
-					["coord"] = { 41.8, 73.8, DUSTWALLOW_MARSH },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(25481, {	-- To New Thalanaar [Feralas]
-					["qg"] = 40369,	-- Falfindel Waywarder
-					["altQuests"] = {
-						28503,	-- Hero's Call: Thousand Needles!
-						25479,	-- To New Thalanaar [Dustwallow Marsh]
-						-- 25481,	-- To New Thalanaar [Feralas]
-					},
-					["coord"] = { 77.2, 56.5, FERALAS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(25386, {	-- To Stonemaul Hold
 					["qg"] = 39377,	-- Konu Runetotem
 					["sourceQuest"] = 25250,	-- Sealing the Dream
 					["coord"] = { 41.3, 15.4, FERALAS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(25356, {	-- To the Summit
-					["qg"] = 39893,	-- Jawn Highmesa
-					["sourceQuest"] = 28504,	-- Warchief's Command: Thousand Needles!
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
