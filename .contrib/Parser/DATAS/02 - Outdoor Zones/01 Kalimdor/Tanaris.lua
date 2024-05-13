@@ -3148,6 +3148,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38927,	-- Mazoga
 					["coord"] = { 42.2, 23.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/6 Fistful of Blood
+							["provider"] = { "i", 52064 },	-- Fistful of Blood
+							["crs"] = {
+								5645,	-- Sandfury Hideskinner
+								5646,	-- Sandfury Axe Thrower
+								5647,	-- Sandfury Firecaller
+							},
+						}),
+					},
 				}),
 				q(25103, {	-- Bootlegger Outpost
 					["qg"] = 38703,	-- Megs Dreadshredder
