@@ -2,7 +2,7 @@ local appName, app = ...
 
 -- Temporarily attach the settings menu's locales to L.
 local appL = app.L;
-local L = setmetatable(appL.SETTINGS_MENU, {
+setmetatable(appL.SETTINGS_MENU, {
 	__index = function(t, key)
 		local str = appL[key];
 		if str then
@@ -119,7 +119,7 @@ if app.GameBuildVersion >= 90000 then
 				end
 			end
 		end
-		
+
 		return
 		-- Hiding BoE's
 		self:Get("Hide:BoEs")

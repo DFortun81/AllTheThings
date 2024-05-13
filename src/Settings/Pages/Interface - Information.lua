@@ -1015,7 +1015,7 @@ settings.RefreshActiveInformationTypes = function()
 	table.sort(SortedInformationTypesByName, SortInformationTypesByLocalizedName);
 	RefreshActiveInformationTypes();
 
-	local last, lowest = nil, nil
+	local last
 	local split1 = math.ceil(#SortedInformationTypesByName / 3)
 	local split2 = 2 * split1
 	for idNo,informationType in ipairs(SortedInformationTypesByName) do
@@ -1027,7 +1027,6 @@ settings.RefreshActiveInformationTypes = function()
 		-- Column 2
 		elseif idNo > split1 then
 			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
-			lowest = last;
 			split1 = 999
 		-- Column 3
 		elseif idNo >= split2 then

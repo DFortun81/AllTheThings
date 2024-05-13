@@ -72,7 +72,7 @@ ClassicPhasesLabel:SetText("|CFFAAFFAAClassic Phases|r");
 ClassicPhasesLabel:Show();
 
 -- Classic Phases
-local last, xoffset, yoffset, spacing, vspacing = ClassicPhasesLabel, 0, -4, 8, 1;
+local last, yoffset, spacing, vspacing = ClassicPhasesLabel, -4, 8, 1;
 for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, 0, -vspacing }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, spacing, -vspacing }, { 1502, spacing }, { 1503, spacing }, { 1504, spacing }, { 16, 0, -vspacing }, { 1601, spacing, -vspacing }, { 1602, spacing }, { 1603, 0, -vspacing }, { 1604, 0, -vspacing }, { 1605, 0, -vspacing }, { 1606, spacing, -vspacing }, { 1607, spacing }, { 1608, spacing }, { 1609, spacing }, }) do
 	local u = o[1];
 	yoffset = o[3] or 6;
@@ -93,7 +93,7 @@ TBCPhasesLabel:SetJustifyH("LEFT");
 TBCPhasesLabel:SetText("|CFFAAFFAATBC Phases|r");
 TBCPhasesLabel:Show();
 
-last, xoffset, yoffset = TBCPhasesLabel, 0, -4;
+last, yoffset = TBCPhasesLabel, -4;
 for i,o in ipairs({ { 17, 0, 0 }, {1701, spacing, -vspacing }, { 18, 0, -vspacing }, {1801, spacing, -vspacing }, { 1802, spacing }, { 19, 0, -vspacing }, { 1901, spacing, -vspacing }, { 1902, spacing }, { 20, 0, -vspacing }, { 21, 0 }, {2101, spacing, -vspacing }, { 2102, spacing }, { 2103, spacing }, { 2104, spacing }, { 2105, spacing }, { 2106, spacing }, { 2107, spacing }, { 1601, spacing, -vspacing }, }) do
 	local u = o[1];
 	yoffset = o[3] or 6;
@@ -114,7 +114,7 @@ WrathPhasesLabel:SetJustifyH("LEFT");
 WrathPhasesLabel:SetText("|CFFAAFFAAWrath Phases|r");
 WrathPhasesLabel:Show();
 
-last, xoffset, yoffset = WrathPhasesLabel, 0, -4;
+last, yoffset = WrathPhasesLabel, -4;
 for i,o in ipairs({ { 30, 0, 0 }, {3001, spacing, -vspacing }, { 31, 0, -vspacing }, {3101, spacing, -vspacing }, { 32, 0, -vspacing }, { 33, 0 }, {3301, spacing, -vspacing }, {3302, spacing }, {3303, spacing }, {3304, spacing }, }) do
 	local u = o[1];
 	yoffset = o[3] or 6;
@@ -135,7 +135,7 @@ CataclysmPhasesLabel:SetJustifyH("LEFT");
 CataclysmPhasesLabel:SetText("|CFFAAFFAACataclysm Phases|r");
 CataclysmPhasesLabel:Show();
 
-last, xoffset, yoffset = CataclysmPhasesLabel, 0, -4;
+last, yoffset = CataclysmPhasesLabel, -4;
 for i,o in ipairs({ { 40, 0, 0 }, { 41, 0, -vspacing }, { 42, 0, -vspacing }, { 43, 0, -vspacing }, }) do
 	local u = o[1];
 	yoffset = o[3] or 6;

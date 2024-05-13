@@ -413,7 +413,6 @@ child:CreateTrackingCheckbox("REPUTATIONS", "Reputations", true)
 local accwideCheckboxTitles =
 child:CreateAccountWideCheckbox("TITLES", "Titles")
 	:AlignBelow(accwideCheckboxReputations)
-local checkboxTitles =
 child:CreateTrackingCheckbox("TITLES", "Titles", true)
 	:AlignAfter(accwideCheckboxTitles)
 
@@ -527,7 +526,7 @@ if app.IsClassic then
 	app.AddEventHandler("OnPlayerLevelUp", function()
 		if settings:Get("Filter:ByLevel") then
 			settings:Refresh();
-			
+
 			-- TODO: Investigate if this is necessary of if the above code handles that.
 			app:RefreshDataCompletely("PLAYER_LEVEL_UP");
 		end

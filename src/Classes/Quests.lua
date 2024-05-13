@@ -953,7 +953,7 @@ else
 end
 
 -- World Quest Support Lib
-local C_QuestLog_GetQuestTagInfo, GetWorldQuestIcon, IsWorldQuest = C_QuestLog.GetQuestTagInfo, nil, nil;
+local C_QuestLog_GetQuestTagInfo, GetWorldQuestIcon = C_QuestLog.GetQuestTagInfo, nil
 if C_QuestLog_GetQuestTagInfo then
 	local TagType = Enum.QuestTagType;
 	local WorldQuestTypeIcons = setmetatable({
@@ -985,19 +985,10 @@ if C_QuestLog_GetQuestTagInfo then
 		end
 		return DefaultWorldQuestIcon;
 	end
-	IsWorldQuest = function(t)
-		local info = C_QuestLog_GetQuestTagInfo(t.questID);
-		if info and info.worldQuestType then
-			return true;
-		else
-			return false;
-		end
-	end;
 else
 	GetWorldQuestIcon = function(t)
 		return DefaultWorldQuestIcon;
 	end
-	IsWorldQuest = app.ReturnFalse;
 end
 
 -- Breadcrumb Checking
