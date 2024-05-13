@@ -1319,6 +1319,15 @@ root(ROOTS.Zones, {
 						["coord"] = { 21.0, 64.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
+					q(12511, {	-- The Hills Have Us
+						["qg"] = 27317,	-- Gryphon Commander Urik
+						-- #if AFTER 6.2.0
+						["altQuests"] = { 39207 },	-- Hero's Call: Grizzly Hills!
+						-- #endif
+						["coord"] = { 77.1, 50.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
 					q(12415, {	-- The Horse Hollerer
 						["qg"] = 26944,	-- Soulok Stormfury
 						["coord"] = { 65.0, 47.8, GRIZZLY_HILLS },

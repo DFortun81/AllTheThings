@@ -801,9 +801,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12046,	-- Soft Packaging
 					}),
 					q(12052, {	-- Harp on This!
-						["coord"] = { 54.4, 23.6, DRAGONBLIGHT },
 						["qg"] = 26647,	-- Narf
 						["sourceQuest"] = 12047,	-- Something That Doesn't Melt
+						["coord"] = { 54.4, 23.6, DRAGONBLIGHT },
 						["groups"] = {
 							i(38097),	-- Experimental Utility Belt
 							i(37947),	-- Miraculous Waistwarming Band
@@ -812,16 +812,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12416, {	-- Heated Battle (A)
-						["coord"] = { 52.2, 50.0, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27506,	-- Ceristrasz
 						["sourceQuest"] = 12460,	-- Report to the Ruby Dragonshrine
+						["coord"] = { 52.2, 50.0, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12448, {	-- Heated Battle (H)
-						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27763,	-- Vargastrasz
 						["sourceQuest"] = 12461,	-- Report to the Ruby Dragonshrine
+						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
 					q(12174, {	-- High Commander Halford Wyrmbane
 						["coord"] = { 29.2, 55.4, DRAGONBLIGHT },
@@ -1320,7 +1320,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuests"] = {
-							12439,	-- A Distrurbance in The Weset
+							12439,	-- A Disturbance in The West
 							-- #if AFTER 6.2.0.19953
 							39204,	-- Hero's Call: Dragonblight!
 							-- #endif
@@ -1840,12 +1840,6 @@ root(ROOTS.Zones, {
 						},
 						["isBreadcrumb"] = true,
 					}),
-					q(12511, {	-- The Hills Have Us
-						["coord"] = { 77.1, 50.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 27317,	-- Gryphon Commander Urik
-						["isBreadcrumb"] = true,
-					}),
 					q(12224, {	-- The Kor'kron Vanguard!
 						["coord"] = { 38.1, 46.3, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
@@ -2246,9 +2240,12 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(11995, {	-- Your Presence is Required at Stars' Rest
+						["qg"] = 26440,	-- Emissary Skyhaven
+						-- #if AFTER 6.2.0
+						["altQuests"] = { 39204 },	-- Hero's Call: Dragonblight!
+						-- #endif
 						["coord"] = { 48.0, 74.9, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26440,	-- Emissary Skyhaven
 						["isBreadcrumb"] = true,
 					}),
 				}),

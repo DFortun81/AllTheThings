@@ -2159,8 +2159,10 @@ root(ROOTS.Zones, {
 						["qg"] = 55789,	-- Rell Nightwind
 						["sourceQuests"] = {
 							29547,	-- The King's Command
+							-- #if AFTER 7.3.5
 							49556,	-- Hero's Call: Jade Forest!
 							49866,	-- To Pandaria!
+							-- #endif
 						},
 						["coord"] = { 78.9, 39.7, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,

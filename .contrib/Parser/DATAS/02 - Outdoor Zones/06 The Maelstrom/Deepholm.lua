@@ -950,12 +950,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(27203, {	-- The Maelstrom
-						["isBreadcrumb"] = true,
-						["lvl"] = 82,
-						["coords"] = {
-							{ 50.4, 38.2, ORGRIMMAR },	-- Farseer Krogar
-							{ 74.4, 18.8, STORMWIND_CITY },	-- Naraat the Earthspeaker
-						},
 						["providers"] = {
 							{ "n", 45224 },	-- Farseer Krogar
 							{ "n", 45226 },	-- Naraat the Earthspeaker
@@ -968,6 +962,12 @@ root(ROOTS.Zones, {
 							27722, -- Warchief's Command: Deepholm!
 							27727, -- Hero's Call: Deepholm!
 						},
+						["coords"] = {
+							{ 50.4, 38.2, ORGRIMMAR },	-- Farseer Krogar
+							{ 74.4, 18.8, STORMWIND_CITY },	-- Naraat the Earthspeaker
+						},
+						["isBreadcrumb"] = true,
+						["lvl"] = 82,
 					}),
 					q(27938, {	-- The Middle Fragment
 						["lvl"] = 82,
