@@ -1403,6 +1403,16 @@ root(ROOTS.Zones, {
 						["provider"] = { "i", 83767 },	-- Krosh's Back
 						["crs"] = { 56833 },	-- Krosh
 					}),
+					q(32018, {	-- His Name Was... Stormstout
+						["provider"] = { "n", 56774 },	-- Bolo
+						["coord"] = { 45.7, 43.9, THE_JADE_FOREST },
+						["isBreadcrumb"] = true,
+					}),
+					q(38935, {	-- His Name Was... Stormstout - appears to be an unused version of this quest added in Warlords of Draenor?
+						["description"] = "This breadcrumb can only be picked up from the Adventure Guide (shift+J).",
+						["isBreadcrumb"] = true,
+						["lvl"] = 15,
+					}),
 					q(30053, {	-- Hop Hunting
 						["sourceQuests"] = { 30046 },	-- Chen's Resolution
 						["coord"] = { 55.9, 49.4, VALLEY_OF_THE_FOUR_WINDS },

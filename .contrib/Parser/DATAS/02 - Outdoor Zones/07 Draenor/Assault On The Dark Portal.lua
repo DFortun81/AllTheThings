@@ -81,11 +81,11 @@ root(ROOTS.Zones, {
 					}),
 					q(35933, {	-- Azeroth's Last Stand
 						["provider"] = { "n", 78558 },	-- Archmage Khadgar
-						["coord"] = { 54.7, 48.2, 577 },
 						["sourceQuests"] = {
 							36881,	-- The Dark Portal (A)
 							34398,	-- The Dark Portal (H)
 						},
+						["coord"] = { 54.7, 48.2, 577 },
 					}),
 					q(34422, {	-- Blaze of Glory
 						["provider"] = { "n", 78559 },	-- Archmage Khadgar

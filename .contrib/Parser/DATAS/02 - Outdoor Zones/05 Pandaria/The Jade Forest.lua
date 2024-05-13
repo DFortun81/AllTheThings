@@ -1398,11 +1398,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.1, 80.6, THE_JADE_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(32018, {	-- His Name Was... Stormstout
-						["isBreadcrumb"] = true,
-						["provider"] = { "n", 56774 },	-- Bolo
-						["coord"] = { 45.7, 43.9, THE_JADE_FOREST },
-					}),
 					q(29556, {	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
 						["sourceQuests"] = { 31745 },	-- Onward and Inward
 						["provider"] = { "n", 66292 },	-- Sky Admiral Rogers

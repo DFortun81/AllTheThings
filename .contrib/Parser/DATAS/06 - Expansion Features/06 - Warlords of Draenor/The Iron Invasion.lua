@@ -490,6 +490,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				q(36881, {	-- The Dark Portal / Warlords of Draenor: The Dark Portal [9.0.1]
 					["qg"] = 78423,	-- Archmage Khadgar
 					["coord"] = { 54.9, 50.4, BLASTED_LANDS },
+					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
+					["timeline"] = { ADDED_6_0_2 },
+					["lvl"] = 90,
+				}),
+				q(34398, {	-- The Dark Portal / Warlords of Draenor: The Dark Portal [9.0.1]
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
+					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
 					["timeline"] = { ADDED_6_0_2 },
 					["lvl"] = 90,
 				}),
@@ -556,6 +564,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 				q(36881, {	-- Warlords of Draenor: The Dark Portal [9.0.1] / The Dark Portal
 					["qg"] = 78423,	-- Archmage Khadgar
 					["coord"] = { 54.9, 50.4, BLASTED_LANDS },
+					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
+					["timeline"] = { ADDED_6_0_2 },
+					["lvl"] = 90,
+				}),
+				q(34398, {	-- Warlords of Draenor: The Dark Portal [9.0.1] / The Dark Portal
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
+					["description"] = "If you want to do the Blasted Lands questline before going to Draenor, abandon this quest after taking the portal to Blasted Lands.",
 					["timeline"] = { ADDED_6_0_2 },
 					["lvl"] = 90,
 				}),
