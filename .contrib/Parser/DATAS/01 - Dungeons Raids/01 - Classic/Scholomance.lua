@@ -737,13 +737,13 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	}),
 	n(TREASURES, {
 		o(403567, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Cracked Argent Dawn Commission
-			["description"] = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.",
+			["description"] = "Can be found at the top of the southwest bone pile in Rattlegore's room. From the Great Ossuary, you can drop down from the southwest hole leading to Rattlegore's room and look down, it's a small object on the pile.\n\nThis is not visible if your character already has an Argent Dawn Commission or a Rune/Seal of the Dawn!",
 			["groups"] = {
 				i(206372),	-- Cracked Argent Dawn Commission
 			},
 		})),
 		o(405388, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {		-- Familiar Journal
-			["description"] = "The Familiar Journal itself can be found in the Viewing Room of Old Scholomance, on a bookshelf near the mini-boss Marduk Blackpool. All you have to do is pick up the book, and the toy is yours! It's as simple as that.",
+			["description"] = "The Familiar Journal itself can be found in the Viewing Room of Old Scholomance, on the second bookshelf from the left wall, near the mini-boss Marduk Blackpool. All you have to do is pick up the book, and the toy is yours! It's as simple as that.",
 			["groups"] = {
 				i(208096),	-- Familiar Journal (TOY!)
 			},
@@ -1215,6 +1215,42 @@ table.insert(SCHOLOMANCE_GROUPS, n(createHeader({
 }));
 -- #endif
 
+table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
+	n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+		o(403552, {	-- Eva's Femur
+			["description"] = "To start unlocking old Scholomance, you must first do a normal run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.",
+			["sourceQuests"] = { 76248 },	-- Eva Sarkhoff
+			["groups"] = {
+				i(206364),	-- Eva's Femur
+			},
+		}),
+		o(403498, {	-- Eva's Journal
+			["description"] = "Located in new Scholomance, on a bookshelf in the Viewing Room (the room right before Darkmaster Gandling), to the right of the entrance of the corridor that leads to Darkmaster Gandling. The book is very hard to see and click, hidden behind other books on the middle shelf. The book is noticeably brighter than other books in the shelf.\n\nLook at the back of the bookshelf.",
+			["sourceQuests"] = { 76248 },	-- Eva Sarkhoff
+			["groups"] = {
+				i(206346, {	-- Eva's Journal
+					["description"] = "Use at 69.7, 71.7 outside the Scholomance Dungeon",
+				}),
+			},
+		}),
+	})),
+	n(206014, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Eva Sarkhoff
+		["description"] = "Go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (Upper level, South (center) room).\nAt the South-East area of the room, use the Krastinov's Bag of Horrors toy to spawn Eva, then click off the buff so you can talk with her.\nShe will give you the Inert Spectral Essence.",
+		["provider"] = {"i",88566},	-- Krastinov's Bag of Horrors
+		["questID"] = 76248,
+		["groups"] = {
+			i(206365),	-- Inert Spectral Essence
+			i(13544, {	-- Spectral Essence
+				["questID"] = 76250,
+				["cost"] = {
+					{ "i", 20520, 3 },	-- 3x Dark Rune
+					{ "i", 12808, 5 },	-- 5x Essence of Undeath
+					{ "i", 206365, 1 },	-- 1x Inert Spectral Essence
+				},
+			}),
+		},
+	})),
+}))
 table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 	n(QUESTS, sharedData({["modID"] = 0},{
 		q(28756, {	-- Aberrations of Bone
@@ -1245,22 +1281,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 			["qg"] = 64562,	-- Talking Skull
 			["timeline"] = { ADDED_5_0_4 },
 			["lvl"] = 38,
-		}),
-	})),
-	n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-		o(403552, {	-- Eva's Femur
-			["description"] = "To start unlocking old Scholomance, you must first do a normal run of the MoP-Revamped Scholomance all the way to the final boss, Darkmaster Gandling. Once you complete the run, you must go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room, you will be able to loot the first item of the secret, Eva's Femur.",
-			["sourceQuests"] = { 76250 },	-- Spectral Essence
-			["groups"] = {
-				i(206364),	-- Eva's Femur
-			},
-		}),
-		o(403498, {	-- Eva's Journal
-			["description"] = "Located in new Scholomance, on a bookshelf in the Viewing Room (the room right before Darkmaster Gandling), to the right of the entrance of the corridor that leads to Darkmaster Gandling. The book is very hard to see and click, hidden behind other books on the middle shelf. The book is noticeable brighter than other books in the shelf.",
-			["sourceQuests"] = { 76250 },	-- Spectral Essence
-			["groups"] = {
-				i(206346),	-- Eva's Journal
-			},
 		}),
 	})),
 	n(ZONE_DROPS, {
@@ -1361,21 +1381,6 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 			i(88355),	-- Searing Words
 		},
 	}),
-	n(206014, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Eva Sarkhoff
-		["description"] = "Go to the room that used to be Doctor Theolen Krastinov's room in the original Scholomance (top center room), and at the top left portion of the room. Use the Krastinov's Bag of Horrors toy to spawn Eva's & then click off the buff so you can talk with Eva. She will give you the Inert Spectral Essence.",
-		["questID"] = 76248,
-		["groups"] = {
-			i(206365),	-- Inert Spectral Essence
-			i(13544, {	-- Spectral Essence
-				["questID"] = 76250,
-				["cost"] = {
-					{ "i", 20520, 3 },	-- 3x Dark Rune
-					{ "i", 12808, 5 },	-- 5x Essence of Undeath
-					{ "i", 206365, 1 },	-- 1x Inert Spectral Essence
-				},
-			}),
-		},
-	})),
 }));
 table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.HEROIC, {
 	["timeline"] = { ADDED_5_0_4 },

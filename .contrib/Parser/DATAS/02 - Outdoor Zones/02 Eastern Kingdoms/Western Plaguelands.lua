@@ -3037,6 +3037,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(11936, {	-- Artist Renfray
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					-- #IF AFTER 10.1.5
+					["provider"] = {"i",13544},	-- Spectral Essence
+					-- #ENDIF
 					["coord"] = { 65.8, 75.4, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206358, {	-- Imported Candle
@@ -3046,6 +3049,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(11316, {	-- Joseph Dirte
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					-- #IF AFTER 10.1.5
+					["provider"] = {"i",13544},	-- Spectral Essence
+					-- #ENDIF
 					["coord"] = { 68.0, 74.8, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206354, {	-- Stinky Candle
@@ -3067,6 +3073,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(11286, {	-- Magistrate Marduke
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					-- #IF AFTER 10.1.5
+					["provider"] = {"i",13544},	-- Spectral Essence
+					-- #ENDIF
 					["coord"] = { 70.5, 74.0, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206357, {	-- Authentic Andorhal Candle
@@ -3090,6 +3099,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(11285, {	-- Rory
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					-- #IF AFTER 10.1.5
+					["provider"] = {"i",13544},	-- Spectral Essence
+					-- #ENDIF
 					["coord"] = { 63.4, 75.6, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206355, {	-- Tobacco-Filled Candle
@@ -3099,6 +3111,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(11283, {	-- Sammy
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					-- #IF AFTER 10.1.5
+					["provider"] = {"i",13544},	-- Spectral Essence
+					-- #ENDIF
 					["coord"] = { 69.1, 78.7, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206356, {	-- Ghost-Warding Candle
