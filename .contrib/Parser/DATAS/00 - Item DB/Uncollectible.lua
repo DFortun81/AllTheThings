@@ -8,6 +8,10 @@ end
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 -- Put items between these two bars if you dont want to sort them /Braghe
 i(3914);	-- neyman's Backpack \\ Journeyman's Backpack
+i(180786);	-- Empty Binding
+-- Legion
+i(147348);	-- Bulky Armor Set \\ y Armor Set
+i(147349);	-- Spiked Armor Set \\ ed Armor Set
 -- BFA Minor Visions
 i(169294);	-- Resilient Soul
 i(173888);	-- Shard of Self Sacrifice \\ Lingering Soul

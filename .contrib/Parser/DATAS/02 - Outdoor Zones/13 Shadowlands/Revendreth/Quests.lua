@@ -316,7 +316,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					["provider"] = { "n", 157199 },	-- Stonehead
 					["coord"] = { 38.9, 66.0, REVENDRETH },
 					["g"] = {
-						i(171343),	-- Blank Parchment (QI!)
+						o(354075, {	-- Blank Parchment
+							i(171343),	-- Blank Parchment (QI!)
+						}),
 						i(171345),	-- Forged Letter of Condemnation (QI!)
 						i(171344),	-- Venthyr Calligraphy Set (QI!)
 					},

@@ -506,7 +506,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(180421),	-- Emberfall
 			i(183841),	-- Emergency Flare
 			i(181796),	-- Emergency Supplies Key
-			i(180786),	-- Empty Binding
 			i(180738),	-- Enchanter's Journal
 			i(180739),	-- Engineer's Journal
 			i(175043),	-- Entangling Vortex
