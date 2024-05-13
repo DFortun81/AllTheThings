@@ -562,10 +562,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 35,
 			}),
-			q(28562, {	-- Hero's Call: Westfall!
-				["isBreadcrumb"] = true,
-				["lvl"] = 10,
-			}),
 			q(28565, {	-- Hero's Call: Wetlands!
 				["isBreadcrumb"] = true,
 				["lvl"] = 20,

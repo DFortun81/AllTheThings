@@ -477,7 +477,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
-				q(26378, {	-- Hero's Call: Westfall!
+				q(26378, {	-- Hero's Call: Westfall! (Elwynn Forest)
 					["qgs"] = {
 						963,	-- Deputy Rainer
 						240,	-- Marshal Dughan
@@ -496,6 +496,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				heroscall(q(28562, {	-- Hero's Call: Westfall!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					["lvl"] = { 9, 20 },	-- Cataclysm, you need to be between level 9 and 20. (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
+					-- #endif
+				})),
 				q(26266, {	-- Hope for the People
 					["providers"] = {
 						{ "n", 235 },	-- Salma Saldean
@@ -760,7 +768,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26209, {	-- Murder Was The Case That They Gave Me
 					["qg"] = 42308,	-- Lieutenant Horatio Laine
-					["sourceQuest"] = 28562,	-- Hero's Call: Westfall!
+					["sourceQuests"] = {
+						26378,	-- Hero's Call: Westfall! (Elwynn Forest)
+						28562,	-- Hero's Call: Westfall!
+					},
 					["coord"] = { 60.1, 19.4, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
