@@ -84,10 +84,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, {
-    q(80190),   -- Triggers on getting Achievement 20206
-	--
-	q(82249),	-- Triggers during questID 80077 (Sins of the Sister), when you choose option #1 (allow)
-	q(82250),	-- Triggers during questID 80077 (Sins of the Sister), when you choose option #2 (deny)
-	q(82320),	-- Triggers during questID 80077 (Sins of the Sister), when you choose option #3 (let Malfurion decide)
-});
+
+root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
+	m(AMIRDRASSIL, {
+		q(80190, {["timeline"] = { ADDED_10_2_5 }}),	-- Triggers on getting Achievement 20206
+		q(82249, {["timeline"] = { ADDED_10_2_7 }}),	-- Triggers during 'Sins of the Sister' (questID 80077) when you choose option #1 (allow)
+		q(82250, {["timeline"] = { ADDED_10_2_7 }}),	-- Triggers during 'Sins of the Sister' (questID 80077) when you choose option #2 (deny)
+		q(82320, {["timeline"] = { ADDED_10_2_7 }}),	-- Triggers during 'Sins of the Sister' (questID 80077) when you choose option #3 (let Malfurion decide)
+	}),
+}));
