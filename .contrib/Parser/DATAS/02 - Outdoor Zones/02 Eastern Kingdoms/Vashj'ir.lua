@@ -868,6 +868,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 39.0, 32.0, 201 },
 							["races"] = HORDE_ONLY,
 						}),
+						q(14482, {	-- Call of Duty
+							["qg"] = 36799,	-- Recruiter Burns
+							["sourceQuests"] = {
+								14481,	-- Into The Abyss
+								27724,	-- Hero's Call: Vashj'ir!
+								28827,	-- To the Depths
+							},
+							["coord"] = { 27.4, 24.2, STORMWIND_CITY },
+							["timeline"] = { ADDED_4_0_3 },
+							["races"] = ALLIANCE_ONLY,
+						}),
 						q(25602, {	-- Can't Start a Fire Without a Spark
 							["qg"] = 39884,	-- Captain Samir
 							["sourceQuest"] = 25598,	-- Ain't Too Proud to Beg

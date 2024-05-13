@@ -1115,17 +1115,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(14482, {	-- Call of Duty
-					["qg"] = 36799,	-- Recruiter Burns
-					["sourceQuests"] = {
-						14481,	-- Into The Abyss
-						27724,	-- Hero's Call: Vashj'ir!
-						28827,	-- To the Depths
-					},
-					["coord"] = { 27.4, 24.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(60891, {	-- Cataclysm: Onward to Adventure in the Eastern Kingdoms
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, STORMWIND_CITY },
