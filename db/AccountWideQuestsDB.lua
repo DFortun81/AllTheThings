@@ -803,6 +803,7 @@ select(2, ...).AccountWideQuestsDB = {
 	[76191] = true,
 	[76192] = true,
 	[76193] = true,
+	[76249] = true,	-- Memories of Scholomance
 	[76573] = true,
 	[76574] = true,
 	[76575] = true,
