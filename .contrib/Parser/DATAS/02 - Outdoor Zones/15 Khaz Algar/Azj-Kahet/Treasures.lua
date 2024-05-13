@@ -26,14 +26,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 68.5, 82.8, AZJ_KAHET },
 				["questID"] = xx,
 				["g"] = {
-					i(),	--
+					-- bugged, interactable but didn't summon enemy
 				},
 			}),
-			o(437191, {	-- Forgotten Memorial
+			o(437191, {	-- Forgotten Memorial // 437194 Aspirant's Tribute
 				["coord"] = { 60.2, 83.5, AZJ_KAHET },
-				["questID"] = xx,
+				["questID"] = 81467,
 				["g"] = {
-					i(),	--
+					-- all items is from df as placeholder
 				},
 			}),
 			o(451595, {	-- Forgotten Memorial
@@ -47,28 +47,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 75.1, 68.2, AZJ_KAHET },
 				["questID"] = xx,
 				["g"] = {
-					i(),	--
+					-- bugged, uninteractable.
 				},
 			}),
 			o(451600, {	-- Forgotten Memorial
 				["coord"] = { 74.7, 88.2, AZJ_KAHET },
 				["questID"] = xx,
 				["g"] = {
-					i(),	--
+					-- bugged, uninteractable.
 				},
 			}),
 			o(451601, {	-- Forgotten Memorial
 				["coord"] = { 49.6, 62.6, AZJ_KAHET },
 				["questID"] = xx,
 				["g"] = {
-					i(),	--
+					-- bugged, uninteractable.
 				},
 			}),
 			o(451602, {	-- Forgotten Memorial // 437391 Aspirant's Tribute
 				["coord"] = { 42.7, 34.6, AZJ_KAHET },
 				["questID"] = 81572,
 				["g"] = {
-					i(),	-- // game bricked
+					-- all items is from df as placeholder
 				},
 			}),
 			o(451603, {	-- Forgotten Memorial

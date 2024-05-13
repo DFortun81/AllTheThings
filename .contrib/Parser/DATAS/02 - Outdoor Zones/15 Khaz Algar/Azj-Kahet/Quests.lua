@@ -556,6 +556,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 74.0, 82.0, AZJ_KAHET },
 			}),
 			-- End of some random spider quest #4
+			-- Start of some random spider quest #5
+			q(83177, {	-- Socialized Medicine
+				--["sourceQuests"] = { xx },	-- // somewhere after 78226 (A Most Intriguing Invitation) or 78228 (Into a Skittering City)?
+				["provider"] = { "n", 208782 },	-- Executor Nizrek
+				["coord"] = { 52.9, 46.2, 2213 },
+				["g"] = {
+					i(224799),	-- Nizrek's potion (QI!)
+				},
+			}),
+			q(83178, {	-- Ascended Assassin
+				["sourceQuests"] = { 83177 },	-- Socialized Medicine
+				["provider"] = { "n", 208782 },	-- Executor Nizrek
+				["coord"] = { 52.9, 46.2, 2213 },
+			}),
+			-- End of some random spider quest #5
 			-- ZONE DUNGEON QUESTS (80 only)
 			q(83166, {	-- Ara-Kara, the City of Echoes: Harverst's End
 				--["sourceQuests"] = { xx },	-- ?
@@ -570,8 +585,61 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--
 			--	Bonus Objectives
 			q(81670, {	-- Shattered Silk
-				--["sourceQuests"] = { xx },	-- 
 				["coord"] = { 72.8, 55.0, AZJ_KAHET },
+			}),
+			--this is probably with General only and probably need to move out of here?
+			q(81491, {	-- Armaments: Arbalests
+				["isDaily"] = true,	
+				["provider"] = { "n", 224171 },	-- Eirzay
+				["coord"] = { 63.0, 38.1, 2216 },
+			}),
+			q(81492, {	-- Armaments: Smithing Tools
+				["isDaily"] = true,	
+				["provider"] = { "n", 224172 },	-- Eirzay
+				["coord"] = { 48.4, 60.7, AZJ_KAHET },
+			}),
+			q(81477, {	-- Armaments: Weaponry
+				["isDaily"] = true,	
+				["provider"] = { "n", 224170 },	-- Eirzay
+				["coord"] = { 58.1, 39.3, 2216 },
+			}),
+			q(81490, {	-- Bounty: Balaxir the Bully
+				["isDaily"] = true,
+				["provider"] = { "n", 224168 },	-- Eirzay
+				["coord"] = { 48.6, 50.5, 2216 },
+			}),
+			q(81476, {	-- Bounty: Goliath
+				["isDaily"] = true,	
+				["provider"] = { "n", 224166 },	-- Eirzay
+				["coord"] = { 36.1, 50.2, 2213 },
+			}),
+			q(81475, {	-- Breaking the Phalanx: Royal Appointments
+				["isDaily"] = true,	
+				["provider"] = { "n", 224161 },	-- Eirzay
+				["coord"] = { 43.0, 47.1, 2213 },
+			}),
+			q(81488, {	-- Breaking the Phalanx: Sages
+				["isDaily"] = true,	
+				["provider"] = { "n", 224163 },	-- Eirzay
+				["coord"] = { 27.7, 57.8, 2213 },
+			}),
+			q(81487, {	-- Breaking the Phalanx: Venomblades
+				["isDaily"] = true,	
+				["provider"] = { "n", 224162 },	-- Eirzay
+				["coord"] = { 30.6, 42.6, 2213 },
+			}),
+			q(81494, {	-- Relics of War: Rak-Ahat
+				["isDaily"] = true,	
+				["provider"] = { "n", 224176 },	-- Eirzay
+				["coord"] = { 63.8, 26.3, 2216 },	-- bugged, 2 npc in exactly same place
+			}),
+			q(81493, {	-- Relics of War: The Salien Gutter Conflict
+				["isDaily"] = true,	
+				["provider"] = { "n", 224174 },	-- Eirzay
+				["coord"] = { 63.8, 26.3, 2216 },	-- bugged, 2 npc in exactly same place
+				["g"] = {
+					i(219429),	-- Pristine Kobyss Spear (QI!)
+				},
 			}),
 			--
 			--	Rares / Bonus Objectives / Once per character?
@@ -681,6 +749,17 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(81623),	-- triggered during questID 78228 (Into a Skittering City) when apply Azi-Kahet Pheromones
 	q(81946),	-- 'Stay awhile and listen' - Anduin Wrynn - druing questID 78231 (Like a Spider on the Wall)
 	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (Beginning Anew From Rock Bottom)
+	-- Probably only viable if General choosen (and gonna need to move it into separate file with their stuff)
+	q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
+	q(82646),	-- 'Listen to the rumor' from Eirzay (n: 224172 @ 48.4, 60.7), start questID 81492 (Armaments: Smithing Tools)
+	q(82644),	-- 'Listen to the rumor' from Eirzay (n: 224170 @ 58.1, 39.3, 2216), start questID 81477 (Armaments: Weaponry)
+	q(82643),	-- 'Listen to the rumor' from Eirzay (n: 224168 @ 48.6, 50.5, 2216), start questID 81490 (Bounty: Balaxir the Bully)
+	q(82616),	-- 'Listen to the rumor' from Eirzay (n: 224166 @ 36.1, 50.2, 2213), start questID 81476 (Bounty: Goliath)
+	q(82640),	-- 'Listen to the rumor' from Eirzay (n: 224161 @ 43.0, 47.1, 2213), start questID 81475 (Breaking the Phalanx: Royal Appointments)
+	q(82642),	-- 'Listen to the rumor' from Eirzay (n: 224163 @ 27.7, 57.8, 2213), start questID 81488 (Breaking the Phalanx: Sages)
+	q(82641),	-- 'Listen to the rumor' from Eirzay (n: 224162 @ 30.6, 42.6, 2213), start questID 81487 (Breaking the Phalanx: Venomblades)
+	q(82649),	-- 'Listen to the rumor' from Eirzay (n: 224176 @ 63.8, 26.3, 2216), start questID 81494 (Relics of War: Rak-Ahat)
+	q(82648),	-- 'Listen to the rumor' from Eirzay (n: 224174 @ 63.8, 26.3, 2216), start questID 81493 (Relics of War: The Salien Gutter Conflict)
 
 	--
 	-- Probably absolutely not related to zones
