@@ -99,6 +99,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70883, {	-- A Hand In Cultivation
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["lockCriteria"] = {5,
+							"sourceID", 182169,	-- Dragon Garden Fork
+							"sourceID", 182173,	-- Dragon Garden Hand Shovel
+							"sourceID", 182171,	-- Dragon Garden Hoe
+							"sourceID", 182172,	-- Dragon Garden Rake
+							"sourceID", 182174,	-- Dragon Garden Shovel
+						},
 						["g"] = {
 							i(199647),	-- Dragon Garden Fork
 							i(199653),	-- Dragon Garden Hand Shovel
