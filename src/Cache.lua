@@ -984,7 +984,9 @@ local function SearchForObject(field, id, require, allowMultiple)
 	local results = (#keyMatch > 0 and keyMatch) or (#fieldMatch > 0 and fieldMatch) or (#match > 0 and match) or app.EmptyTable
 	-- if only 1 or no result, no point to try filtering
 	if #results <= 1 then return allowMultiple and results or results[1] end
-	results = GetFilteredResults(results)
+	-- try out accessibility sort on multiple results instead of filtering
+	app.Sort(results, app.SortDefaults.Accessibility)
+	-- results = GetFilteredResults(results)
 	return allowMultiple and results or results[1]
 end
 
