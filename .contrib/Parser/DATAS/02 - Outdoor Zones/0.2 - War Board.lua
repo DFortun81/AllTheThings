@@ -427,17 +427,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 58,
 			}),
-			q(28563, {	-- Hero's Call: Redridge Mountains!
-				["isBreadcrumb"] = true,
-				["lvl"] = 15,
-				["g"] = {
-					i(60688),	-- Parker's Yardstick
-					i(60690),	-- Doody Boots
-					i(60689),	-- Belt of Unsolvable Problems
-					i(60691),	-- Unfortunate Treads
-					i(131517),	-- Doody Shoes
-				},
-			}),
 			q(28582, {	-- Hero's Call: Searing Gorge!
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,

@@ -162,7 +162,7 @@ local ALL_HEROS_CALL_QUESTS = {
 	-- #endif
 	28673,	-- Hero's Call: Blasted Lands!
 	28559,	-- Hero's Call: Bloodmyst Isle
-	28709,	-- Hero's Call: Borean Tundra!
+	28709,	-- Hero's Call: Borean Tundra! [7.3.5+] / Hero's Call: Northrend!
 	28666,	-- Hero's Call: Burning Steppes!
 	28490,	-- Hero's Call: Darkshore!
 	27727,	-- Hero's Call: Deepholm!

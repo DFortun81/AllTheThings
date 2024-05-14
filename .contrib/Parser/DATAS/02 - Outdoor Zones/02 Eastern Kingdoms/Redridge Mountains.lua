@@ -508,7 +508,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26365, {	-- Hero's Call: Redridge Mountains!
+				q(26365, {	-- Hero's Call: Redridge Mountains! (From NPCs)
 					["providers"] = {
 						-- #if AFTER 7.0.3
 						{ "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
@@ -527,12 +527,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
 						{ 56.3, 47.6, WESTFALL },	-- Captain Danuvin
 					},
-					["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
+					["description"] = "This quest seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 11),
-					["g"] = {
+					["groups"] = {
 						i(60689, {	-- Belt of Unsolvable Problems
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -550,6 +550,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				heroscall(q(28563, {	-- Hero's Call: Redridge Mountains!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 14. (Confirmed by Hurieve, Crieve's Level 14 Hunter.)
+					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 30, 20 is based on Wowpedia info)
+					["lvl"] = { 14, 20 },
+					-- #endif
+					["groups"] = {
+						i(60689, {	-- Belt of Unsolvable Problems
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(60690, {	-- Doody Boots
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(131517, {	-- Doody Shoes
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+						i(60688, {	-- Parker's Yardstick
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(60691, {	-- Unfortunate Treads
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+					},
+				})),
 				q(3741, {	-- Hilary's Necklace
 					["qg"] = 8965,	-- Shawn
 					["coord"] = { 29.3, 53.4, REDRIDGE_MOUNTAINS },
@@ -1186,7 +1213,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26503, {	-- Still Assessing the Threat
 					["qg"] = 464,	-- Watch Captain Parker
-					["sourceQuest"] = 26365,	-- Hero's Call: Redridge Mountains!
+					["sourceQuests"] = {
+						26365,	-- Hero's Call: Redridge Mountains! (From NPCs)
+						28563,	-- Hero's Call: Redridge Mountains!
+					},
 					["coord"] = { 15.3, 64.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
