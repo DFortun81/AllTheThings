@@ -1022,6 +1022,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				heroscall(q(28531, {    -- Hero's Call: Desolace! (breadcrumb quest for 14384, not available if 25938 is completed) (max level 33)
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 34 (TODO: Test max level between 32 and 37, 34 is based on Wowpedia info)
+					["lvl"] = { 29, 34 },
+					-- #endif
+				})),
 				q(14378, {	-- Hunting Brendol
 					["qg"] = 36329,	-- Thargad
 					["sourceQuests"] = {

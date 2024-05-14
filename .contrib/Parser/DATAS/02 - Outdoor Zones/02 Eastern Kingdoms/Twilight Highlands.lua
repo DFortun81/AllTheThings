@@ -1106,6 +1106,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27639,	-- Just You and Garona (Lady Cozwynn)
 					},
 				}),
+				heroscall(q(28716, {	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 84,
+				})),
 				q(28594, {	-- Highbank, Crybank
 					["qg"] = 49378,	-- Patch
 					["coord"] = { 81.5, 80.1, TWILIGHT_HIGHLANDS },
@@ -2170,6 +2176,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
+				}),
+				q(28238, {	-- Twilight Shores (1/2)
+					["qgs"] = {
+						1750,	-- Grand Admiral Jes-Tereth
+						29611,	-- King Varian Wrynn
+						107574,	-- Anduin Wrynn
+					},
+					["sourceQuest"] = 28716,	-- Hero's Call: Twilight Highlands!
+					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(28832, {	-- Twilight Shores (2/2)
+					["qg"] = 44806,	-- Fargo Flintlocke
+					["sourceQuest"] = 28238,	-- Twilight Shores (1/2)
+					["coord"] = { 26.2, 47.2, STORMWIND_CITY },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27662, {	-- Unbinding
 					["sourceQuests"] = { 27657, 27658 },	-- Help From the Earthcaller (A/H)

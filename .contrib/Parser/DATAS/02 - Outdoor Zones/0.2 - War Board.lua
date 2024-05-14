@@ -22,15 +22,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(29390, {	-- Guardians of Hyjal: Call of the Ancients
-				["isBreadcrumb"] = true,
-				["lvl"] = 85,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(29388, {	-- Guardians of Hyjal: Firelands Invasion!
-				["isBreadcrumb"] = true,
-				["lvl"] = 85,
-			}),
 			q(29612, {	-- The Art of War
 				["description"] = "Players who have completed Vashj'ir will receive this version of The Art of War.",
 			}),
@@ -54,9 +45,6 @@ root(ROOTS.Zones, {
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(28572, {	-- Warchief's Command: Arathi Highlands!
-				["isBreadcrumb"] = true,
 			}),
 			q(28493, {	-- Warchief's Command: Ashenvale!
 				["isBreadcrumb"] = true,
@@ -299,15 +287,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = lvlsquish(80, 80, 30),
 			}),
-			q(29391, {	-- Guardians of Hyjal: Call of the Ancients
-				["isBreadcrumb"] = true,
-				["lvl"] = 85,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(29387, {	-- Guardians of Hyjal: Firelands Invasion!
-				["isBreadcrumb"] = true,
-				["lvl"] = 85,
-			}),
 			q(28573, {	-- Hero's Call: Arathi Highlands!
 				["isBreadcrumb"] = true,
 				["lvl"] = 25,
@@ -320,23 +299,9 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
 			}),
-			q(28709, {	-- Hero's Call: Borean Tundra!
-				["timeline"] = { ADDED_4_0_3 },
-				["isBreadcrumb"] = true,
-				["lvl"] = 58,
-			}),
 			q(28666, {	-- Hero's Call: Burning Steppes!
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
-			}),
-			q(27727, {	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
-				["isBreadcrumb"] = true,
-				["lvl"] = 82,
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(28531, {	-- Hero's Call: Desolace! (breadcrumb quest for 14384, not available if 25938 is completed) (max level 33)
-				["isBreadcrumb"] = true,
-				["lvl"] = 30,
 			}),
 			q(28564, {	-- Hero's Call: Duskwood!
 				["isBreadcrumb"] = true,
@@ -358,12 +323,7 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 35,
 			}),
-			q(27726, {	-- Hero's Call: Mount Hyjal! (max level 100)
-				["isBreadcrumb"] = true,
-			}),
-			q(29386, {	-- Hero's Call: Mount Hyjal!
-				["u"] = REMOVED_FROM_GAME,	-- triggers when turning in #27726
-			}),
+			
 			q(28699, {	-- Hero's Call: Northern Stranglethorn!
 				["maps"] = { NORTHERN_STRANGLETHORN },
 				["isBreadcrumb"] = true,
@@ -421,14 +381,6 @@ root(ROOTS.Zones, {
 					25479,	-- To New Thalanaar [Dustwallow Marsh]
 					25481,	-- To New Thalanaar [Feralas]
 				},
-			}),
-			q(28716, {	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
-				["isBreadcrumb"] = true,
-				["lvl"] = 84,
-			}),
-			q(28558, {	-- Hero's Call: Uldum!
-				["isBreadcrumb"] = true,
-				["lvl"] = 83,
 			}),
 			q(28525, {	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
 				["isBreadcrumb"] = true,

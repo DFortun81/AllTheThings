@@ -652,12 +652,42 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
 					["sourceQuest"] = 25494,	-- A Champion's Collar
 				}),
+				heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
+					["timeline"] = { ADDED_4_2_0 },
+					["isBreadcrumb"] = true,
+					["lvl"] = 85,
+					["u"] = REMOVED_FROM_GAME,
+				})),
+				warchiefscommand(q(29390, {	-- Guardians of Hyjal: Call of the Ancients (H)
+					["timeline"] = { ADDED_4_2_0 },
+					["isBreadcrumb"] = true,
+					["lvl"] = 85,
+					["u"] = REMOVED_FROM_GAME,
+				})),
+				heroscall(q(29387, {	-- Guardians of Hyjal: Firelands Invasion! (A)
+					["timeline"] = { ADDED_4_2_0 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 85,
+				})),
+				warchiefscommand(q(29388, {	-- Guardians of Hyjal: Firelands Invasion! (H)
+					["timeline"] = { ADDED_4_2_0 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 85,
+				})),
 				q(29389, {	-- Guardians of Hyjal: Firelands Invasion!
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-					["lvl"] = 85,
+					["sourceQuests"] = {
+						25372,	-- Aessina's Miracle
+						-- #if AFTER 4.2.0
+						29391,	-- Guardians of Hyjal: Call of the Ancients (A)
+						29390,	-- Guardians of Hyjal: Call of the Ancients (H)
+						-- #endif
+					},
 					["coord"] = { 19.5, 37.8, MOUNT_HYJAL },
-					["sourceQuest"] = 25372,	-- Aessina's Miracle
 					["isBreadcrumb"] = true,
+					["lvl"] = 85,
 				}),
 				q(25255, {	-- Harrying the Hunters
 					["qg"] = 39429,	-- Oomla Whitehorn
@@ -673,6 +703,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39858,	-- Archdruid Hamuul Runetotem
 					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
 					["sourceQuest"] = 25493,	-- Fresh Bait
+				}),
+				heroscall(q(27726, {	-- Hero's Call: Mount Hyjal! (max level 100)
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 80,
+				})),
+				q(29386, {	-- Hero's Call: Mount Hyjal!
+					-- @Darkal: This might be an HQT
+					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in #27726
 				}),
 				q(25270, {	-- Howling Mad
 					["qg"] = 39432,	-- Takrik Ragehowl
@@ -863,9 +903,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(29145, {	-- Opening the Door
 					["qg"] = 52669,	-- Matoclaw
-					["lvl"] = 85,
+					-- #if AFTER 4.2.0
+					["sourceQuests"] = {
+						29387,	-- Guardians of Hyjal: Firelands Invasion! (A)
+						29388,	-- Guardians of Hyjal: Firelands Invasion! (H)
+						29389,	-- Guardians of Hyjal: Firelands Invasion! (both)
+					},
+					-- #endif
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["sourceQuest"] = 29389,	-- Guardians of Hyjal: Firelands Invasion!
+					["lvl"] = 85,
 				}),
 				q(29164, {	-- Perfecting Your Howl
 					["qg"] = 52669,	-- Matoclaw

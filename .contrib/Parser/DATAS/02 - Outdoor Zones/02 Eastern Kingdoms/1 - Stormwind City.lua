@@ -3862,24 +3862,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(28238, {	-- Twilight Shores (1/2)
-					["qgs"] = {
-						1750,	-- Grand Admiral Jes-Tereth
-						29611,	-- King Varian Wrynn
-						107574,	-- Anduin Wrynn
-					},
-					["sourceQuest"] = 28716,	-- Hero's Call: Twilight Highlands!
-					["coord"] = { 85.6, 31.8, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28832, {	-- Twilight Shores (2/2)
-					["qg"] = 44806,	-- Fargo Flintlocke
-					["sourceQuest"] = 28238,	-- Twilight Shores (1/2)
-					["coord"] = { 26.2, 47.2, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(47222, {	-- Two If By Sea
 					["qg"] = 121754,	-- Vereesa Windrunner
 					["sourceQuests"] = {

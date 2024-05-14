@@ -997,6 +997,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 38.8, 26.7, 201 },
 							["races"] = HORDE_ONLY,
 						}),
+						heroscall(q(27724, {	-- Hero's Call: Vashj'ir!
+							["timeline"] = { ADDED_4_0_3 },
+							["isBreadcrumb"] = true,
+							["lvl"] = 80,
+						})),
 						q(25883, {	-- How Disarming
 							["provider"] = { "o", 203301 },	-- Naga Tridents
 							["sourceQuest"] = 25887,	-- Wake of Destruction

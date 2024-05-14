@@ -795,7 +795,7 @@ root(ROOTS.Zones, {
 					q(11672, {	-- Enlistment Day
 						["qg"] = 25307,	-- Recruitment Officer Blythe
 						-- #if AFTER 4.0.3.13277
-						["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra!
+						["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra! [7.3.5+] / Hero's Call: Northrend!
 						-- #endif
 						["coord"] = { 57.8, 67.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
@@ -1064,6 +1064,15 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
 						["sourceQuest"] = 11864,	-- A Mission Statement
 					}),
+					heroscall(q(28709, {	-- Hero's Call: Borean Tundra! [7.3.5+] / Hero's Call: Northrend!
+						["timeline"] = { ADDED_4_0_3 },
+						["isBreadcrumb"] = true,
+						-- #if BEFORE 7.3.5
+						-- Cataclysm: Minimum is level 68. (TODO: Confirm this.)
+						-- Cataclysm: Maximum is level 78 (TODO: Test max level between 74 and 79, 78 is based on Wowpedia info)
+						["lvl"] = { 68, 78 },
+						-- #endif
+					})),
 					q(11660, {	-- Horn of the Ancient Mariner
 						["qg"] = 25476,	-- Waltor of Pal'ea
 						["coord"] = { 32.3, 54.2, BOREAN_TUNDRA },

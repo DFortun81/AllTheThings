@@ -581,7 +581,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26022, {	-- First Blood
 					["qg"] = 41949,	-- Dark Ranger Alina
-					["sourceQuest"] = 28572,	-- Warchief's Command: Arathi Highlands!
+					["sourceQuests"] = {
+						28572,	-- Warchief's Command: Arathi Highlands! (Undercity, Silvermoon City)
+						28619,	-- Warchief's Command: Arathi Highlands! (Hillsbrad)
+					},
 					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1909,12 +1912,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(28619, {	-- Warchief's Command: Arathi Highlands!
-					["provider"] = { "o", 207279 },	-- Warchief's Command Board
-					["coord"] = { 56.5, 47.1, HILLSBRAD_FOOTHILLS },
+				warchiefscommand(q(28572, {	-- Warchief's Command: Arathi Highlands! (Undercity, Silvermoon City)
 					["timeline"] = { ADDED_4_0_1 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },
 					["races"] = HORDE_ONLY,
-				}),
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 26 and 35, 30 is based on Wowpedia info)
+					["lvl"] = { 24, 30 },
+					-- #endif
+				})),
+				warchiefscommand(q(28619, {	-- Warchief's Command: Arathi Highlands! (Hillsbrad)
+					["timeline"] = { ADDED_4_0_1 },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 26 and 35, 30 is based on Wowpedia info)
+					["lvl"] = { 24, 30 },
+					-- #endif
+				})),
 				q(691, {	-- Worth Its Weight in Gold
 					["qg"] = 2788,	-- Apprentice Kryten
 					["sourceQuest"] = 690,	-- Malin's Request (1/2)

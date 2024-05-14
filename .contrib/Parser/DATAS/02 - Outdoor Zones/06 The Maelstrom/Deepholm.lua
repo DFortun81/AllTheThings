@@ -524,6 +524,12 @@ root(ROOTS.Zones, {
 							i(61430),	-- Stonebound Legplates
 						},
 					}),
+					heroscall(q(27727, {	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
+						["timeline"] = { ADDED_4_0_3 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 82,
+					})),
 					q(26315, {	-- Imposing Confrontation
 						["lvl"] = 82,
 						["qg"] = 42731,	-- Earthmender Norsala

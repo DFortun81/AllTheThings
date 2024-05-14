@@ -464,6 +464,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65831),	-- Pharoah's Burial Spaulders
 					},
 				}),
+				heroscall(q(28558, {	-- Hero's Call: Uldum!
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 83,
+				})),
 				q(28404, {	-- I'll Do It By Hand
 					["qg"] = 48558,	-- Harrison Jones
 					["coord"] = { 38.9, 23.2, ULDUM },
