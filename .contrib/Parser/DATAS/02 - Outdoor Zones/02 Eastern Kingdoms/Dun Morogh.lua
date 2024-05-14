@@ -3633,6 +3633,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.8, 47.1, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Use Ultrasafe Personnel Launcher to deploy to Frostmane Retreat
+							["provider"] = { "n", 41398 },	-- Ultrasafe Personnel Launcher
+							["coord"] = { 56.8, 46.6, DUN_MOROGH },
+						}),
+					},
 				}),
 				q(28868, {	-- The View from Down Here
 					["qg"] = 50601,	-- Snevik the Blade
