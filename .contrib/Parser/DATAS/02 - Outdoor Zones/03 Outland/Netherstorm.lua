@@ -2124,7 +2124,7 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO, i(33804, {	-- Schematic: Adamantite Arrow Maker (RECIPE!)
 						["cr"] = 19707,	-- Sunfury Archer
-						["timeline"] = { ADDED_2_3_0 },
+						["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 }, -- Changes to uncollectible scrap item in Cata
 					})),
 					i(23808, {	-- Schematic: Khorium Scope (RECIPE!)
 						["cr"] = 20207,	-- Sunfury Bowman
