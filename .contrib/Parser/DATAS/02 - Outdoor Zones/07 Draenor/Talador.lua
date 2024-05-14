@@ -803,7 +803,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							34681,	-- It's a Matter of Strategy (rokhan)
 							36953,	-- It's a Matter of Strategy (board)
+							-- #if AFTER 7.3.5
 							49547,	-- Warchief's Command: Talador!
+							-- #endif
 						},
 					}),
 					q(33761, {	-- Barum's Notes
@@ -1857,6 +1859,12 @@ root(ROOTS.Zones, {
 							i(112536),	-- Talador Sentinel Belt
 						},
 					}),
+					warchiefscommand(q(49547, {	-- Warchief's Command: Talador!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 94,
+					})),
 					q(34351, {	-- We Must Construct Additional Pylons
 						["provider"] = { "n", 77737 },	-- Soulbinder Tuulani
 						["coord"] = { 68.4, 19.3, 536 },

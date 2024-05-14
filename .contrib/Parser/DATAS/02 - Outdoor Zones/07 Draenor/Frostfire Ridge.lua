@@ -203,40 +203,42 @@ root(ROOTS.Zones, {
 					}),
 					q(33815, {	-- A Song of Frost and Fire
 						["provider"] = { "n", 76411 },	-- Farseer Drek'Thar
-						["coord"] = { 40.7, 67.0, FROSTFIRE_RIDGE },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
+							-- #if AFTER 7.3.5
 							49545,	-- Warchief's Command: Frostfire Ridge!
+							-- #endif
 							33868,	-- The Home of the Frostwolves
 						},
+						["coord"] = { 40.7, 67.0, FROSTFIRE_RIDGE },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34280, {	-- All is Revealed
 						["provider"] = { "n", 72874 },	-- Archmage Khadgar
+						["sourceQuest"] = 34230,	-- Eye Need That
 						["coord"] = { 31.7, 11.8, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34230,	-- Eye Need That
 					}),
 					q(36132, {	-- Anglin' In Our Garrison
 						["provider"] = { "n", 79896 },	-- Mokugg Lagerpounder
-						["coord"] = { 55.7, 75.3, FROSTFIRE_RIDGE },
-						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 36131,	-- Proving Your Worth
+						["coord"] = { 55.7, 75.3, FROSTFIRE_RIDGE },
 						["requireSkill"] = FISHING,
+						["races"] = HORDE_ONLY,
 						["g"] = {
 							garrisonBuilding(64),	-- Fishing Shack
 						},
 					}),
 					q(33344, {	-- Armed and Dangerous
 						["provider"] = { "n", 75186 },	-- Thrall
+						["sourceQuest"] = 33410,	-- The Butcher of Bladespire
 						["coord"] = { 70.7, 78.5, 527 },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 33410,	-- The Butcher of Bladespire
 					}),
 					q(32804, {	-- Articles of the Fallen
 						["provider"] = { "n", 74223 },	-- Kal'gor the Honorable
+						["sourceQuest"] = 32791,	-- Let the Hunt Begin!
 						["coord"] = { 46.3, 32.0, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 32791,	-- Let the Hunt Begin!
 					}),
 					q(34321, {	-- Ashes of the Past
 						["provider"] = { "n", 77998 },	-- Molthron
@@ -244,20 +246,20 @@ root(ROOTS.Zones, {
 					}),
 					q(34070, {	-- At the End of Your Rope
 						["provider"] = { "n", 77210 },	-- Scout Ruk'Gan
-						["coord"] = { 82.6, 69.8, FROSTFIRE_RIDGE },
-						["races"] = HORDE_ONLY,
 						["sourceQuests"] = {
 							34067,	-- A Collection of Coils
 							34264,	-- A Collection of Coils
 							34069,	-- Getting the Points
 							34093,	-- Getting the Points
 						},
+						["coord"] = { 82.6, 69.8, FROSTFIRE_RIDGE },
+						["races"] = HORDE_ONLY,
 					}),
 					q(35106, {	-- Avenge and Reclaim
-						["sourceQuests"] = { 35104 },	-- The Apprentice
-						["requireSkill"] = ALCHEMY,
 						["provider"] = { "n", 81210 },	-- Ang'kra
+						["sourceQuests"] = { 35104 },	-- The Apprentice
 						["coord"] = { 37.8, 47.4, FROSTFIRE_RIDGE },
+						["requireSkill"] = ALCHEMY,
 						["races"] = HORDE_ONLY,
 						["g"] = appendGroups(DRAENOR_ALCHEMY, {
 							i(111812),	-- Alchemy Lab, lvl 1
@@ -265,43 +267,43 @@ root(ROOTS.Zones, {
 					}),
 					q(33473, {	-- Back to Bladespire Citadel
 						["provider"] = { "n", 74272 },	-- Farseer Drek'Thar
+						["sourceQuest"] = 33470,	-- Pool of Visions
 						["coord"] = { 16.7, 57.8, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 33470,	-- Pool of Visions
 					}),
 					q(34375, {	-- Back to Work
-						["coord"] = { 51.2, 39.6, FROSTWALL },
-						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 78466 },	-- Gazlowe
 						["sourceQuest"] = 34364,	-- For the Horde!
+						["coord"] = { 51.2, 39.6, FROSTWALL },
+						["races"] = HORDE_ONLY,
 					}),
 					q(34729, {	-- Blood Oath of Na'Shra
 						["provider"] = { "n", 76452 },	-- Weaponsmith Na'Shra
+						["sourceQuest"] = 33838,	-- Smeltcraft
 						["coord"] = { 64.7, 39.8, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 33838,	-- Smeltcraft
 						["g"] = {
 							follower(179),	-- Weaponsmith Na'Shra
 						},
 					}),
 					q(34073, {	-- Burn Them Down
 						["provider"] = { "n", 77210 },	-- Scout Ruk'Gan
+						["sourceQuest"] = 34072,	-- Tar Get of Opportunity
 						["coord"] = { 82.6, 69.8, FROSTFIRE_RIDGE },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 34072,	-- Tar Get of Opportunity
 					}),
 					q(36457, {	-- Bypassing Security
 						["provider"] = { "n", 85439 },	-- Raleigh Puule
-						["coord"] = { 21.0, 56.0, FROSTFIRE_RIDGE },
-						["races"] = HORDE_ONLY,
-						["requireSkill"] = INSCRIPTION,
 						["sourceQuest"] = 36435,	-- Unintelligible Intelligence
+						["coord"] = { 21.0, 56.0, FROSTFIRE_RIDGE },
+						["requireSkill"] = INSCRIPTION,
+						["races"] = HORDE_ONLY,
 					}),
 					q(36516, {	-- Cut 'Em Out!
-						["requireSkill"] = LEATHERWORKING,
-						["sourceQuests"] = { 36505 },	-- A Warrior's Shroud
 						["provider"] = { "n", 85751 },	-- Gaoda Hidecleaver
+						["sourceQuests"] = { 36505 },	-- A Warrior's Shroud
 						["coord"] = { 20.6, 60.2, FROSTFIRE_RIDGE },
+						["requireSkill"] = LEATHERWORKING,
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							DRAENOR_LEATHERWORKING,
@@ -311,9 +313,9 @@ root(ROOTS.Zones, {
 					}),
 					q(33546, {	-- Deeds Left Undone
 						["provider"] = { "n", 74273 },	-- Durotan
+						["sourceQuest"] = 33526,	-- These Colors Don't Run
 						["coord"] = { 43.5, 23.2, 526 },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 33526,	-- These Colors Don't Run
 					}),
 					q(35341, {	-- Defection of Gronnstalker Rokash
 						["provider"] = { "n", 79229 },	-- Gronnstalker Rokash
@@ -1147,6 +1149,20 @@ root(ROOTS.Zones, {
 							i(110687),	-- Ogre Belly Chain Link
 						},
 					}),
+					warchiefscommand(q(49545, {	-- Warchief's Command: Frostfire Ridge!
+						-- Share Quest = 'You have completed that quest'
+						-- Party Sync + Share Quest = 'You have completed that quest'
+						-- Party Sync + WoD Chromie Time + Share Quest = 'You have completed that quest'
+						-- If anyone actually has a verifed way of obtaining this quest on a character which has already established their Garrison, please update this
+						["description"] = "Currently no verified way to actually obtain this quest on a character which has established their Garrison.\n\nOther characters will be able to obtain this Quest from the Warboard after completion of 'The Home of the Frostwolves' (33868) if completing the Tanaan intro quests, or possibly from the Warboard during WoD Chromie Time.",
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						-- It's reported you can somehow find this quest on the Warboard simply by being in WoD Chromie Time, but this was not the case for a new lvl 10
+						-- Taking the initial quest to the Dark Portal, then returning to Orgrimmar to access the Warboard also did not help
+						-- Additionally, it can be shared to a character who has not established their Garrison without any known pre-requisites being completed
+						["isBreadcrumb"] = true,
+						["DisablePartySync"] = true,
+					})),
 					q(36207, {	-- Waruk the Frostforger
 						["provider"] = { "n", 78989 },	-- Axe-Shaper Kugra
 						["races"] = HORDE_ONLY,

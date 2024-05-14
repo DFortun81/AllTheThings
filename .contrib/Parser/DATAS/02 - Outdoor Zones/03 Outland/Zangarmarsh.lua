@@ -1782,6 +1782,11 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					warchiefscommand(q(39180, {	-- Warchief's Command: Zangarmarsh!
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(9778, {	-- Warden Hamoot
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["coord"] = { 78.4, 62.0, ZANGARMARSH },

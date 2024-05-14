@@ -1879,9 +1879,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11510,	-- "Scoodles"
 					}),
 					q(11167, {	-- The New Plague
+						["qg"] = 24126,	-- Apothecary Lysander
+						-- #if AFTER 7.3.5
+						["sourceQuest"] = 49533,	-- Warchief's Command: Howling Fjord!
+						-- #endif
 						["coord"] = { 78.5, 28.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24126,	-- Apothecary Lysander
 						["groups"] = {
 							i(35832),	-- Blauvelt's Special Occasion Gloves
 							i(35834),	-- Nimblefinger Scaled Gloves
@@ -2124,6 +2127,11 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["qg"] = 23780,	-- High Executor Anselm
 					}),
+					warchiefscommand(q(49533, {	-- Warchief's Command: Howling Fjord!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(11310, {	-- Warning: Some Assembly Required
 						["coord"] = { 53.6, 65.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,

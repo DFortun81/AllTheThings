@@ -1247,7 +1247,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							9797,	-- Reinforcements for Garadar
 							-- #if AFTER 6.2.0.19953
-							39196,	-- Warchief's Command: Nagrand!
+							39196,	-- Warchief's Command: Nagrand! (Outland)
 							-- #endif
 						},
 						["coord"] = { 55.6, 37.6, NAGRAND },
@@ -1548,6 +1548,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.2, 36.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 					}),
+					warchiefscommand(q(39196, {	-- Warchief's Command: Nagrand! (Outland)
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(10101, {	-- When Spirits Speak
 						["qg"] = 18687,	-- Mother Kashur
 						["sourceQuest"] = 10085,	-- A Visit With The Ancestors

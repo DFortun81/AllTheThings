@@ -1678,17 +1678,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31255, {	-- The Road to Kun-Lai
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
-						["qgs"] = {
-							63778,	-- Messenger Grummle
-						},
+						["qg"] = 63778,	-- Messenger Grummle
+						-- #if AFTER 7.3.5
+						["sourceQuest"] = 49541,	-- Warchief's Command: Kun-Lai Summit!
+						-- #endif
 						["coords"] = {
 							{ 70.0, 23.6, VALLEY_OF_THE_FOUR_WINDS },
 							{ 41.7, 29.9, KRASARANG_WILDS },
 					--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
 							{ 45.7, 43.8, THE_JADE_FOREST },
 						},
+						["races"] = HORDE_ONLY,
 					}),
 					q(38936, {	-- The Road to Kun-Lai (Adventure guide)
 						["isBreadcrumb"] = true,
@@ -1884,6 +1884,12 @@ root(ROOTS.Zones, {
 							i(88071),	-- Wallwatcher Cap
 						},
 					}),
+					warchiefscommand(q(49541, {	-- Warchief's Command: Kun-Lai Summit!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 82,
+					})),
 					q(30512, {	-- Westwind Rest
 						["coord"] = { 71.5, 93.0, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,

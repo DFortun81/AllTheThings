@@ -1982,6 +1982,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 18.3, 31.2, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56714 },	-- Master Bruised Paw
 					}),
+					warchiefscommand(q(49539, {	-- Warchief's Command: Valley of the Four Winds!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 81,
+					})),
 					q(30267, {	-- Watery Woes
 						["coord"] = { 61.0, 32.9, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 58736 },	-- Gladecaster Lang

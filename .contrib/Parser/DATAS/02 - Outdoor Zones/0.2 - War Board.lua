@@ -22,30 +22,25 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(29612, {	-- The Art of War
-				["description"] = "Players who have completed Vashj'ir will receive this version of The Art of War.",
-			}),
-			q(29611, {	-- The Art of War
-				["description"] = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
-			}),
 			
 			q(28790, {	-- A Personal Summons (Vashj'ir Starter Quest)
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			q(49817, {	-- To Northrend! (Horde)
+			warchiefscommand(q(49817, {	-- To Northrend! (Horde)
 				["timeline"] = { ADDED_7_3_5 },
+				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["lvl"] = 60,
 				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(49852, {	-- To Pandaria! (Horde)
+			})),
+			warchiefscommand(q(49852, {	-- To Pandaria! (Horde)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
 				["timeline"] = { ADDED_7_3_5 },
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
-			}),
+			})),
 			q(28493, {	-- Warchief's Command: Ashenvale!
 				["isBreadcrumb"] = true,
 			}),
@@ -56,10 +51,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 			}),
 			q(28711, {	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
-				["isBreadcrumb"] = true,
-			}),
-			q(39198, {	-- Warchief's Command: Blade's Edge Mountains!
-				["timeline"] = { ADDED_6_2_0 },
 				["isBreadcrumb"] = true,
 			}),
 			q(28671, {	-- Warchief's Command: Blasted Lands!
@@ -75,15 +66,6 @@ root(ROOTS.Zones, {
 			q(28548, {	-- Warchief's Command: Desolace!
 				["isBreadcrumb"] = true,
 			}),
-			q(39203, {	-- Warchief's Command: Dragonblight!
-				["timeline"] = { ADDED_6_2_0 },
-				["isBreadcrumb"] = true,
-			}),
-			q(49543, {	-- Warchief's Command: Dread Wastes!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-				["races"] = HORDE_ONLY,
-			}),
 			q(28554, {	-- Warchief's Command: Dustwallow Marsh!
 				["isBreadcrumb"] = true,
 			}),
@@ -96,71 +78,16 @@ root(ROOTS.Zones, {
 			q(28510, {	-- Warchief's Command: Feralas!
 				["isBreadcrumb"] = true,
 			}),
-			q(49545, {	-- Warchief's Command: Frostfire Ridge!
-				-- Share Quest = 'You have completed that quest'
-				-- Party Sync + Share Quest = 'You have completed that quest'
-				-- Party Sync + WoD Chromie Time + Share Quest = 'You have completed that quest'
-				-- If anyone actually has a verifed way of obtaining this quest on a character which has already established their Garrison, please update this
-				["description"] = "Currently no verified way to actually obtain this quest on a character which has established their Garrison.\n\nOther characters will be able to obtain this Quest from the Warboard after completion of 'The Home of the Frostwolves' (33868) if completing the Tanaan intro quests, or possibly from the Warboard during WoD Chromie Time.",
-				["timeline"] = { ADDED_7_3_5 },
-				-- It's reported you can somehow find this quest on the Warboard simply by being in WoD Chromie Time, but this was not the case for a new lvl 10
-				-- Taking the initial quest to the Dark Portal, then returning to Orgrimmar to access the Warboard also did not help
-				-- Additionally, it can be shared to a character who has not established their Garrison without any known pre-requisites being completed
-				["isBreadcrumb"] = true,
-				["DisablePartySync"] = true,
-			}),
-			q(39206, {	-- Warchief's Command: Grizzly Hills!
-				["timeline"] = { ADDED_6_2_0 },
-				["isBreadcrumb"] = true,
-			}),
 			q(28560, {	-- Warchief's Command: Ghostlands!
 				["isBreadcrumb"] = true,
 				["description"] = "Flagged complete when completing |cffffffffMissing in the Ghostlands|r [9144].",
 			}),
-			q(49546, {	-- Warchief's Command: Gorgrond!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-			}),
 			q(28571, {	-- Warchief's Command: Hillsbrad Foothills!
 				["isBreadcrumb"] = true,
-			}),
-			q(49533, {	-- Warchief's Command: Howling Fjord!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-			}),
-			q(49537, {	-- Warchief's Command: Icecrown!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-			}),
-			q(49538, {	-- Warchief's Command: Jade Forest!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-			}),
-			q(49540, {	-- Warchief's Command: Krasarang Wilds!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-				["races"] = HORDE_ONLY,
-			}),
-			q(49541, {	-- Warchief's Command: Kun-Lai Summit!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-				["lvl"] = 82,
 			}),
 			q(27721, {	-- Warchief's Command: Mount Hyjal!
 				["isBreadcrumb"] = true,
 				["races"] = HORDE_ONLY,
-			}),
-			q(49549, {	-- Warchief's Command: Nagrand! (Draenor)
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-			}),
-			q(39196, {	-- Warchief's Command: Nagrand! (Outland)
-				["timeline"] = { ADDED_6_2_0 },
-				["isBreadcrumb"] = true,
-			}),
-			q(39201, {	-- Warchief's Command: Netherstorm!
-				["timeline"] = { ADDED_6_2_0 },
-				["isBreadcrumb"] = true,
 			}),
 			q(28494, {	-- Warchief's Command: Northern Barrens!
 				["isBreadcrumb"] = true,
@@ -175,14 +102,6 @@ root(ROOTS.Zones, {
 			q(28581, {	-- Warchief's Command: Searing Gorge!
 				["isBreadcrumb"] = true,
 			}),
-			q(49532, {	-- Warchief's Command: Shadowmoon Valley!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-			}),
-			q(49535, {	-- Warchief's Command: Sholazar Basin!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-			}),
 			q(28527, {	-- Warchief's Command: Silithus!
 				["isBreadcrumb"] = true,
 			}),
@@ -192,33 +111,15 @@ root(ROOTS.Zones, {
 			q(28549, {	-- Warchief's Command: Southern Barrens!
 				["isBreadcrumb"] = true,
 			}),
-			q(49548, {	-- Warchief's Command: Spires of Arak!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-				["lvl"] = 96,
-			}),
-			q(49536, {	-- Warchief's Command: Storm Peaks!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-			}),
 			q(28532, {	-- Warchief's Command: Stonetalon Mountains!
 				["isBreadcrumb"] = true,
 			}),
 			q(28677, {	-- Warchief's Command: Swamp of Sorrows!
 				["isBreadcrumb"] = true,
 			}),
-			q(49547, {	-- Warchief's Command: Talador!
-				["timeline"] = { ADDED_7_3_5 },
-				["isBreadcrumb"] = true,
-				["lvl"] = 94,
-			}),
 			q(28509, {	-- Warchief's Command: Tanaris!
 				["isBreadcrumb"] = true,
 				["timeline"] = { ADDED_4_0_3, REMOVED_10_2_6 },	-- possibly earlier, but currently unable to be obtained
-			}),
-			q(39182, {	-- Warchief's Command: Terokkar Forest!
-				["timeline"] = { ADDED_6_2_0 },
-				["isBreadcrumb"] = true,
 			}),
 			q(28704, {	-- Warchief's Command: The Cape of Stranglethorn!
 				["isBreadcrumb"] = true,
@@ -229,12 +130,6 @@ root(ROOTS.Zones, {
 			q(28504, {	-- Warchief's Command: Thousand Needles!
 				["isBreadcrumb"] = true,
 			}),
-			q(49542, {	-- Warchief's Command: Townlong Steppes!
-				["timeline"] = { ADDED_7_3_5 },
-				["races"] = HORDE_ONLY,
-				["isBreadcrumb"] = true,
-				["lvl"] = 83,
-			}),
 			q(28717, {	-- Warchief's Command: Twilight Highlands!
 				["isBreadcrumb"] = true,
 			}),
@@ -244,12 +139,6 @@ root(ROOTS.Zones, {
 			q(28526, {	-- Warchief's Command: Un'Goro Crater!
 				["isBreadcrumb"] = true,
 			}),
-			q(49539, {	-- Warchief's Command: Valley of the Four Winds!
-				["timeline"] = { ADDED_7_3_5 },
-				["races"] = HORDE_ONLY,
-				["isBreadcrumb"] = true,
-				["lvl"] = 81,
-			}),
 			q(27718, {	-- Warchief's Command: Vashj'ir!
 				["isBreadcrumb"] = true,
 			}),
@@ -257,14 +146,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 			}),
 			q(28545, {	-- Warchief's Command: Winterspring!
-				["isBreadcrumb"] = true,
-			}),
-			q(39180, {	-- Warchief's Command: Zangarmarsh!
-				["timeline"] = { ADDED_6_2_0 },
-				["isBreadcrumb"] = true,
-			}),
-			q(49534, {	-- Warchief's Command: Zul'Drak!
-				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 			}),
 		},
@@ -280,13 +161,6 @@ root(ROOTS.Zones, {
 	},{
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["g"] = {
-			q(28825, {	-- A Personal Summons (Vashj'ir Starter Quest)
-				["qg"] = 45226,	-- Naraat the Earthspeaker
-				["coord"] = { 74.6, 18.8, STORMWIND_CITY },
-				["timeline"] = { ADDED_4_0_1, REMOVED_8_3_0 },
-				["isBreadcrumb"] = true,
-				["lvl"] = lvlsquish(80, 80, 30),
-			}),
 			q(28573, {	-- Hero's Call: Arathi Highlands!
 				["isBreadcrumb"] = true,
 				["lvl"] = 25,
@@ -401,6 +275,13 @@ root(ROOTS.Zones, {
 			
 			--
 			
+			q(28825, {	-- A Personal Summons (Vashj'ir Starter Quest)
+				["qg"] = 45226,	-- Naraat the Earthspeaker
+				["coord"] = { 74.6, 18.8, STORMWIND_CITY },
+				["timeline"] = { ADDED_4_0_1, REMOVED_8_3_0 },
+				["isBreadcrumb"] = true,
+				["lvl"] = lvlsquish(80, 80, 30),
+			}),
 			q(49846, {	-- Wars on Two Fronts [Cataclysm]
 				["provider"] = { "i", 156477 },	-- Special Duty Assignments
 				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",

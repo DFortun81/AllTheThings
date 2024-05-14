@@ -1146,6 +1146,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
 						["qg"] = 28032,	-- Debaar
 					}),
+					warchiefscommand(q(49535, {	-- Warchief's Command: Sholazar Basin!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(12660, {	-- Weapons of Destruction
 						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 						["qg"] = 27801,	-- Avatar of Freya

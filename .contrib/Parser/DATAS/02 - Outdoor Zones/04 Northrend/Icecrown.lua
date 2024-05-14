@@ -2171,6 +2171,11 @@ root(ROOTS.Zones, {
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuest"] = 13239,	-- Volatility
 					}),
+					warchiefscommand(q(49537, {	-- Warchief's Command: Icecrown!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(13381, {	-- Watts My Target
 						["qg"] = 32444,	-- Kibli Killohertz
 						["coord"] = { 54.0, 42.8, ICECROWN },

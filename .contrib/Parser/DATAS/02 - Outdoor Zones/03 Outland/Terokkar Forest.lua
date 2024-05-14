@@ -1237,6 +1237,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.8, 45.3, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
+					warchiefscommand(q(39182, {	-- Warchief's Command: Terokkar Forest!
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(10791, {	-- Welcoming the Wolf Spirit
 						["qg"] = 18384,	-- Malukaz
 						["coord"] = { 50.2, 46.4, TEROKKAR_FOREST },

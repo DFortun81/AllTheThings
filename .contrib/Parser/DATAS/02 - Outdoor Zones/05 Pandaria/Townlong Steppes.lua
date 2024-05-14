@@ -1124,6 +1124,12 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["provider"] = { "n", 63009 },	-- Master Snowdrift
 					}),
+					warchiefscommand(q(49542, {	-- Warchief's Command: Townlong Steppes!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 83,
+					})),
 					q(30827, {	-- What Lies Beneath
 						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
 						["provider"] = { "n", 60864 },	-- Yalia Sagewhisper

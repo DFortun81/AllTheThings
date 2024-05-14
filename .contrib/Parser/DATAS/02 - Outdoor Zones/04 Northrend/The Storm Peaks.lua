@@ -1500,6 +1500,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
 						["sourceQuest"] = 13009,	-- A New Beginning
 					}),
+					warchiefscommand(q(49536, {	-- Warchief's Command: Storm Peaks!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(12862, {	-- When All Else Fails (A)
 						["qg"] = 29428,	-- Ricket
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },

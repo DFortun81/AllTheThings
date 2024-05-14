@@ -1570,6 +1570,11 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
+					warchiefscommand(q(39198, {	-- Warchief's Command: Blade's Edge Mountains!
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(10609, {	-- What Came First, the Drake or the Egg?
 						["qg"] = 21110,	-- Fizit "Doc" Clocktock
 						["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },

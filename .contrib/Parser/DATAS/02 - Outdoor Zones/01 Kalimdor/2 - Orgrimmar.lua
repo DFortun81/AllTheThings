@@ -563,18 +563,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(31853, {	-- All Aboard!
-					["qg"] = 54870,	-- General Nazgrim
-					["sourceQuests"] = {
-						29611,	-- The Art of War
-						29612,	-- The Art of War
-						49852,	-- To Pandaria!
-						49538,	-- Warchief's Command: Jade Forest!
-					},
-					["coord"] = { 48.6, 70.8, ORGRIMMAR },
-					["timeline"] = { ADDED_5_0_4 },
-					["races"] = HORDE_ONLY,
-				}),
+				
 				q(27277, {	-- An Audience with Ureda
 					["qgs"] = {
 						3047,	-- Archmage Shymm <Mage Trainer>

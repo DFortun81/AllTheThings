@@ -1178,6 +1178,11 @@ root(ROOTS.Zones, {
 							i(30294),	-- Red Pointy Hat
 						},
 					}),
+					warchiefscommand(q(39201, {	-- Warchief's Command: Netherstorm!
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(10237, {	-- Warn Area 52!
 						["qg"] = 19728,	-- Mama Wheeler
 						["coord"] = { 46.6, 56.5, NETHERSTORM },

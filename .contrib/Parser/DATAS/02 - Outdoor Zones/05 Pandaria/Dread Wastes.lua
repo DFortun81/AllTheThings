@@ -1337,6 +1337,11 @@ root(ROOTS.Zones, {
 							i(84018),	-- Coldbite Legguards
 						},
 					}),
+					warchiefscommand(q(49543, {	-- Warchief's Command: Dread Wastes!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(31502, {	-- Wing Clip
 						["isDaily"] = true,
 						["sourceQuest"] = 31606,	-- The Dissector Wakens

@@ -1577,6 +1577,11 @@ root(ROOTS.Zones, {
 							i(38753),	-- Hoarder's Necklace
 						},
 					}),
+					warchiefscommand(q(39206, {	-- Warchief's Command: Grizzly Hills!
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(12131, {	-- We Have the Power (A)
 						["qg"] = 26883,	-- Raegar Breakbrow
 						["sourceQuest"] = 12130,	-- Why Fabricate When You Can Appropriate

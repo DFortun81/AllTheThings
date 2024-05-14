@@ -2034,7 +2034,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							34867,	-- The Secrets of Gorgrond
 							35557,	-- The Secrets of Gorgrond
+							-- #if AFTER 7.3.5
 							49546,	-- Warchief's Command: Gorgrond!
+							-- #endif
 						},
 					}),
 					q(35645, {	-- The Secret of the Fungus (A)
@@ -2246,11 +2248,16 @@ root(ROOTS.Zones, {
 							i(112611),	-- Wildwood Wrangler Monnion
 						},
 					}),
+					warchiefscommand(q(49546, {	-- Warchief's Command: Gorgrond!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(35487, {	-- We Burn the Dead
 						["provider"] = { "n", 82274 },	-- Cutter
+						["sourceQuest"] = 35430,	-- Cutter
 						["coord"] = { 43.7, 84.0, GORGROND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35430,	-- Cutter
 					}),
 					q(33548, {	-- We Die Laughing
 						["provider"] = { "n", 76987 },	-- Kaz the Shrieker

@@ -1491,7 +1491,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							34794,	-- Taking the Fight to Nagrand
 							36952,	-- Taking the Fight to Nagrand
-							49549,	-- Warchief's Command: Nagrand!
+							-- #if AFTER 7.3.5
+							49549,	-- Warchief's Command: Nagrand! (Draenor)
+							-- #endif
 						},
 					}),
 					q(34598, {	-- The Missing Caravan
@@ -1701,6 +1703,11 @@ root(ROOTS.Zones, {
 						},
 						["provider"] = {"o",230303},	-- Bounty Board
 					}),
+					warchiefscommand(q(49549, {	-- Warchief's Command: Nagrand! (Draenor)
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(36273, {	-- Whacking Weeds
 						["provider"] = { "n", 84632 },	-- Marybelle Walsh
 						["coord"] = { 77.4, 47.3, DRAENOR_NAGRAND },

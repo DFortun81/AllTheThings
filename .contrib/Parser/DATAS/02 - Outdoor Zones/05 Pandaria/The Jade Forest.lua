@@ -869,6 +869,20 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					q(31853, {	-- All Aboard!
+						["qg"] = 54870,	-- General Nazgrim
+						["sourceQuests"] = {
+							29611,	-- The Art of War (Nobody)
+							29612,	-- The Art of War (Veteran)
+							-- #if AFTER 7.3.5
+							49852,	-- To Pandaria!
+							49538,	-- Warchief's Command: Jade Forest!
+							-- #endif
+						},
+						["coord"] = { 48.6, 70.8, ORGRIMMAR },
+						["timeline"] = { ADDED_5_0_4 },
+						["races"] = HORDE_ONLY,
+					}),
 					q(29925, {	-- All We Can Spare
 					--	TODO: does this also require finishing all the other dawn's blossom quests?  is the overall criteria required or just 'the jade witch'?
 						["sourceQuests"] = { 29723 },	-- The Jade Witch
@@ -2028,6 +2042,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.8, 32.6, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
+					warchiefscommand(q(29611, {	-- The Art of War (Nobody)
+						["description"] = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
+						["races"] = HORDE_ONLY,
+					})),
+					warchiefscommand(q(29612, {	-- The Art of War (Veteran)
+						["description"] = "Players who have completed Vashj'ir will receive this version of The Art of War.",
+						["races"] = HORDE_ONLY,
+					})),
 					q(29933, {	-- The Bees' Knees
 						["minReputation"] = { 1228, FRIENDLY },
 						["sourceQuests"] = { 29879 },	-- Swallowed Whole
@@ -2424,12 +2446,17 @@ root(ROOTS.Zones, {
 						["coord"] = { 47.4, 37.0, THE_JADE_FOREST },
 						["lvl"] = 90,
 					}),
+					warchiefscommand(q(49538, {	-- Warchief's Command: Jade Forest!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(31230, {	-- Welcome to Dawn's Blossom
+						["provider"] = { "n", 56348 },	-- Toya
 						["sourceQuests"] = {
 							30015,	-- Dawn's Blossom (Horde)
 							29922,	-- In Search of Wisdom (Alliance)
 						},
-						["provider"] = { "n", 56348 },	-- Toya
 						["coord"] = { 47.1, 46.1, THE_JADE_FOREST },
 					}),
 					q(31734, {	-- Welcome Wagons

@@ -1085,6 +1085,11 @@ root(ROOTS.Zones, {
 							i(44736),	-- Sword of Heartwrenching Slaughter
 						},
 					}),
+					warchiefscommand(q(49534, {	-- Warchief's Command: Zul'Drak!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(12707, {	-- Wooly Justice
 						["coord"] = { 59.1, 56.2, ZULDRAK },
 						["qg"] = 28484,	-- Scalper Ahunae

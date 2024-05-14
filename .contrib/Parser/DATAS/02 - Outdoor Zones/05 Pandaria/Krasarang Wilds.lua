@@ -2591,6 +2591,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 45.6, 39.5, KRASARANG_WILDS },
 					}),
 
+					warchiefscommand(q(49540, {	-- Warchief's Command: Krasarang Wilds!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 
 					q(30360, {	-- Warn Stoneplow (A)
 						["isBreadcrumb"] = true,

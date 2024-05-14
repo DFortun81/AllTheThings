@@ -1934,6 +1934,11 @@ root(ROOTS.Zones, {
 							i(31115),	-- Uvuros Plated Spaulders
 						},
 					}),
+					warchiefscommand(q(49532, {	-- Warchief's Command: Shadowmoon Valley!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(10577, {	-- What Illidan Wants, Illidan Gets...
 						["qg"] = 21293,	-- Borak, Son of Oronok
 						["sourceQuest"] = 10576,	-- The Shadowmoon Shuffle
