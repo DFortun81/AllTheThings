@@ -20,25 +20,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
-						crit(1, {	-- The Legend of Stalvan
+						crit(38344, {	-- The Legend of Stalvan
 							["sourceQuest"] = 26674,	-- Mistmantle's Revenge
 						}),
-						crit(2, {	-- Morbent Fel
+						crit(38345, {	-- Morbent Fel
 							["sourceQuest"] = 26754,	-- Morbent's Bane
 						}),
-						crit(3, {	-- A Hermit's Errand
+						crit(38347, {	-- A Hermit's Errand
 							["sourceQuest"] = 26727,	-- The Embalmer's Revenge
 						}),
-						crit(4, {	-- Mor'ladim
+						crit(38346, {	-- Mor'ladim
 							["sourceQuest"] = 26797,	-- A Daughter's Love
 						}),
-						crit(5, {	-- Citizens of Darkshire
-							["sourceQuests"] = {
-								26686,	-- Bones That Walk
-								26623,	-- Dusky Crab Cakes
-								26620,	-- Seasoned Wolf Kabobs
-								26691,	-- Worgen in the Woods
-							},
+						crit(38348, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26686,	-- Bones That Walk
+						}),
+						crit(38349, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26691,	-- Worgen in the Woods
+						}),
+						crit(38350, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26620,	-- Seasoned Wolf Kabobs
+						}),
+						crit(38351, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26623,	-- Dusky Crab Cakes
 						}),
 					},
 					-- #else
@@ -61,25 +65,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
-						crit(1, {	-- The Legend of Stalvan
+						crit(38344, {	-- The Legend of Stalvan
 							["sourceQuest"] = 26674,	-- Mistmantle's Revenge
 						}),
-						crit(2, {	-- Morbent Fel
+						crit(38345, {	-- Morbent Fel
 							["sourceQuest"] = 26754,	-- Morbent's Bane
 						}),
-						crit(3, {	-- A Hermit's Errand
+						crit(38347, {	-- A Hermit's Errand
 							["sourceQuest"] = 26727,	-- The Embalmer's Revenge
 						}),
-						crit(4, {	-- Mor'ladim
+						crit(38346, {	-- Mor'ladim
 							["sourceQuest"] = 26797,	-- A Daughter's Love
 						}),
-						crit(5, {	-- Citizens of Darkshire
-							["sourceQuests"] = {
-								26686,	-- Bones That Walk
-								26623,	-- Dusky Crab Cakes
-								26620,	-- Seasoned Wolf Kabobs
-								26691,	-- Worgen in the Woods
-							},
+						crit(38348, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26686,	-- Bones That Walk
+						}),
+						crit(38349, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26691,	-- Worgen in the Woods
+						}),
+						crit(38350, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26620,	-- Seasoned Wolf Kabobs
+						}),
+						crit(38351, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26623,	-- Dusky Crab Cakes
 						}),
 					},
 					-- #else
