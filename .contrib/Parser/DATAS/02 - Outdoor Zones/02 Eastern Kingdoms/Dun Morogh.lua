@@ -2959,10 +2959,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #if AFTER CATA
 						objective(1, {	-- 0/8 Gyromechanic Gear
 							["provider"] = { "i", 3084 },	-- Gyromechanic Gear
-							["crs"] = {
-								8503,	-- Gibblewilt
-								1211,	-- Leper Gnome
-							},
+							["cr"] = 41146,	-- Frostmane Scavenger
 						}),
 						-- #else
 						objective(1, {	-- 0/8 Restabilization Cog
