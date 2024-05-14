@@ -336,10 +336,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
 			}),
-			q(28490, {	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
-				["isBreadcrumb"] = true,
-				["lvl"] = 10,
-			}),
 			q(27727, {	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
 				["isBreadcrumb"] = true,
 				["lvl"] = 82,

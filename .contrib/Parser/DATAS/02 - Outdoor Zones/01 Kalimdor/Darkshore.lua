@@ -1032,6 +1032,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
+				heroscall(q(28490, {	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS },	-- Only found in Darnassus in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
+					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
+					["lvl"] = { 9, 20 },
+					-- #endif
+				})),
 				-- #if AFTER TBC
 				q(1135, {	-- Highperch Venom
 					-- This quest was moved to Darkshore after TBC Prepatch.
