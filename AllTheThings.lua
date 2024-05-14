@@ -11536,6 +11536,7 @@ customWindowUpdates.Random = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
+			local searchCache = {}
 
 			local function SearchRecursively(group, field, temp, func)
 				if group.visible and not (group.saved or group.collected) then
