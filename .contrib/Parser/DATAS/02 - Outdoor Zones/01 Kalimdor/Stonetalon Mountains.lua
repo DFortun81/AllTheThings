@@ -1290,6 +1290,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				heroscall(q(28539, {	-- Hero's Call: Stonetalon Mountains!  (max level 28)
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 27 and 35, 30 is based on Wowpedia info)
+					["lvl"] = { 24, 30 },
+					-- #endif
+				})),
 				q(25935, {	-- Hungry Pups
 					["qg"] = 41638,	-- Houndmaster Jonathan
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
@@ -2441,6 +2451,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				q(13913, {	-- They Took Our Gnomes
+					["qg"] = 34354,	-- Huntress Jalin
+					["sourceQuest"] = 28539,	-- Hero's Call: Stonetalon Mountains!
+					["coord"] = { 35.0, 71.5, ASHENVALE },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(25806, {	-- They Put the Assass in... Never Mind
 					["qg"] = 41277,	-- Lieutenant Paulson
 					["sourceQuest"] = 25793,	-- The Deep Reaches
@@ -2663,6 +2680,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				-- #endif
+				q(25607, {	-- Ze Gnomecorder
+					["qg"] = 40895,	-- Professor Xakxak Gyromate
+					["coord"] = { 35.3, 71.1, ASHENVALE },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(1483, {	-- Ziz Fizziks
 					["qg"] = 3442,	-- Sputtervalve
 					["coord"] = { 62.98, 37.21, THE_BARRENS },

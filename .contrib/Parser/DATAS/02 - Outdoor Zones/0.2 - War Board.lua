@@ -457,10 +457,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 96,
 			}),
-			q(28539, {	-- Hero's Call: Stonetalon Mountains!  (max level 28)
-				["isBreadcrumb"] = true,
-				["lvl"] = 20,
-			}),
 			q(49554, {	-- Hero's Call: Storm Peaks!
 				["isBreadcrumb"] = true,
 				["lvl"] = 67,

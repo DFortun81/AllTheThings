@@ -1321,7 +1321,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 19. (TOCO: Confirm this.)
+					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
 					-- Cataclysm: Maximum is level 25 (TODO: Test max level between 22 and 32, 25 is based on Wowpedia info)
 					["lvl"] = { 19, 25 },
 					-- #endif
@@ -3021,13 +3021,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(13913, {	-- They Took Our Gnomes
-					["qg"] = 34354,	-- Huntress Jalin
-					["sourceQuest"] = 28539,	-- Hero's Call: Stonetalon Mountains!
-					["coord"] = { 35.0, 71.5, ASHENVALE },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(13980, {	-- They're Out There!
 					["qg"] = 34596,	-- Foreman Jinx
 					["sourceQuest"] = 13977,	-- Mass Production
@@ -3389,12 +3382,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 13868,	-- Corrupting Influence?
 					["coord"] = { 36.6, 49.5, ASHENVALE },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(25607, {	-- Ze Gnomecorder
-					["qg"] = 40895,	-- Professor Xakxak Gyromate
-					["coord"] = { 35.3, 71.1, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
