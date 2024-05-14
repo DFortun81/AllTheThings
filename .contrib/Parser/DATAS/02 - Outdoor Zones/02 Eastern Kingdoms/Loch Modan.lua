@@ -800,6 +800,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				heroscall(q(28567, {	-- Hero's Call: Loch Modan!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE },	-- Only found in Ironforge in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
+					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
+					["lvl"] = { 9, 20 },
+					-- #endif
+				})),
 				-- #if BEFORE 4.0.3
 				q(6387, {	-- Honor Students
 					["providers"] = {

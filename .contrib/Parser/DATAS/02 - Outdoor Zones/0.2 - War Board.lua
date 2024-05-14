@@ -408,10 +408,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 82,
 			}),
-			q(28567, {	-- Hero's Call: Loch Modan!
-				["isBreadcrumb"] = true,
-				["lvl"] = 10,
-			}),
 			q(27726, {	-- Hero's Call: Mount Hyjal! (max level 100)
 				["isBreadcrumb"] = true,
 			}),
