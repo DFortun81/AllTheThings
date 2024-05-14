@@ -1316,6 +1316,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				heroscall(q(28492, {	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 19. (TOCO: Confirm this.)
+					-- Cataclysm: Maximum is level 25 (TODO: Test max level between 22 and 32, 25 is based on Wowpedia info)
+					["lvl"] = { 19, 25 },
+					-- #endif
+				})),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, q(78575, {	-- Hirzek
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>

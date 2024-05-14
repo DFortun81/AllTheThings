@@ -306,10 +306,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 25,
 			}),
-			q(28492, {	-- Hero's Call: Ashenvale! (breadcrumb quest for 13594, not available if 26408 is completed) (max level 23)
-				["isBreadcrumb"] = true,
-				["lvl"] = 15,
-			}),
 			q(28579, {	-- Hero's Call: Badlands!
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
