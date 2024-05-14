@@ -1841,6 +1841,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(947, {  -- Rohh the Silent
 					-- #if AFTER CATA
 					["coord"] = { 68.0, 35.6, REDRIDGE_MOUNTAINS },
+					["description"] = "This is a stealthed mob. You can target it with the macro '/tar Rohh'.",
 					-- #else
 					["coords"] = {
 						{ 76.0, 29.4, REDRIDGE_MOUNTAINS },

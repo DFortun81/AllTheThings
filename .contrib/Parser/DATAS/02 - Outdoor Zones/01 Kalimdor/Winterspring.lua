@@ -273,11 +273,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			petbattles({
-				n(66466, {	-- Stone Cold Trixxy <Grand Master Pet Tamer>
-					["coord"] = { 65.6, 64.6, WINTERSPRING },
-				}),
-			}),
 			n(QUESTS, {
 				q(29037, {	-- 'Borrowing' From the Winterfall
 					["providers"] = {
