@@ -518,6 +518,19 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				q(9625, {	-- Elekks Are Serious Business
+					["qg"] = 17584,	-- Torallius the Pack Handler
+					["sourceQuest"] = 9623,	-- Coming of Age
+					-- #if AFTER CATA
+					["altQuests"] = { 28559 },	-- Hero's Call: Bloodmyst Isle!
+					["coord"] = { 81.5, 51.5, THE_EXODAR },
+					-- #else
+					["coord"] = { 35.3, 43.1, AZUREMYST_ISLE },
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,	-- TODO: Double check this is actually a breadcrumb. If you finish Alien Predators, does this diappear? [Not required for Alien Predators, Discord 2023-07-29]
+					["lvl"] = lvlsquish(10, 10, 1),
+				}),
 				q(9683, {	-- Ending the Bloodcurse
 					["qg"] = 17712,	-- Captain Edward Hanes
 					["sourceQuest"] = 9682,	-- The Hopeless Ones...
@@ -621,6 +634,16 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
 				}),
+				heroscall(q(28559, {	-- Hero's Call: Bloodmyst Isle
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { THE_EXODAR },	-- Only found in The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
+					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
+					["lvl"] = { 9, 20 },
+					-- #endif
+				})),
 				q(9700, {	-- I Shoot Magic Into the Darkness
 					["qg"] = 17684,	-- Vindicator Boros
 					["sourceQuest"] = 9699,	-- Truth or Fiction

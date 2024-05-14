@@ -322,11 +322,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
 			}),
-			q(28559, {	-- Hero's Call: Bloodmyst Isle
-				["isBreadcrumb"] = true,
-				["description"] = "Obtained from the Adventure Guide while in Cataclysm Chromie Time.",
-				["lvl"] = 10,
-			}),
 			q(28709, {	-- Hero's Call: Borean Tundra!
 				["timeline"] = { ADDED_4_0_3 },
 				["isBreadcrumb"] = true,

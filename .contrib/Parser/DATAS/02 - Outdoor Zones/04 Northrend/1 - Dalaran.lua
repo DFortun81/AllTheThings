@@ -1792,6 +1792,10 @@ root(ROOTS.Zones, {
 							{ "o", 208317 },	-- Warchief's Command Board
 							{ "i",  68809 },	-- Veteran's Hearthstone
 						},
+						["coords"] = {
+							{ 48.7, 39.6, NORTHREND_DALARAN },
+							{ 59.2, 27.4, NORTHREND_DALARAN },
+						},
 						-- #if BEFORE 6.2.0
 						["description"] = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
 						-- #endif
@@ -1803,6 +1807,11 @@ root(ROOTS.Zones, {
 						["providers"] = {
 							{ "o", 208316 },	-- Hero's Call Board
 							{ "i",  68808 },	-- Hero's Hearthstone
+						},
+						["coords"] = {
+							{ 25.9, 43.1, NORTHREND_DALARAN },
+							{ 47.8, 41.2, NORTHREND_DALARAN },
+							{ 37.8, 63.8, NORTHREND_DALARAN },
 						},
 						-- #if BEFORE 6.2.0
 						["description"] = "If you have your hearthstone set to Dalaran, this quest will be available to you.",

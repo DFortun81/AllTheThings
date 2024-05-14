@@ -501,7 +501,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
-					["lvl"] = { 9, 20 },	-- Cataclysm, you need to be between level 9 and 20. (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
+					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
+					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
+					["lvl"] = { 9, 20 },
 					-- #endif
 				})),
 				q(26266, {	-- Hope for the People

@@ -1030,19 +1030,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
 				}),
-				q(9625, {	-- Elekks Are Serious Business
-					["qg"] = 17584,	-- Torallius the Pack Handler
-					["sourceQuest"] = 9623,	-- Coming of Age
-					-- #if AFTER CATA
-					["altQuests"] = { 28559 },	-- Hero's Call: Bloodmyst Isle!
-					["coord"] = { 81.5, 51.5, THE_EXODAR },
-					-- #else
-					["coord"] = { 35.3, 43.1, AZUREMYST_ISLE },
-					-- #endif
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,	-- TODO: Double check this is actually a breadcrumb. If you finish Alien Predators, does this diappear? [Not required for Alien Predators, Discord 2023-07-29]
-					["lvl"] = lvlsquish(10, 10, 1),
-				}),
 				q(9453, {	-- Find Acteon!
 					["qg"] = 17101,	-- Diktynna
 					["sourceQuest"] = 9452,	-- Red Snapper - Very Tasty!
