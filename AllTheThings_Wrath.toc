@@ -72,6 +72,7 @@ db\Wrath\LocalizationDB.lua
 # db\Wrath\en_auto.lua
 # db\Wrath\ReagentsDB.lua
 db\Presets.lua
+db\AccountWideQuestsDB.lua
 
 # Load object class templates
 src\Classes\base.lua

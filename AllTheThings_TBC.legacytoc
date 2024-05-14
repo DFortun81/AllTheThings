@@ -72,6 +72,7 @@ db\TBC\LocalizationDB.lua
 # db\TBC\en_auto.lua
 # db\TBC\ReagentsDB.lua
 db\Presets.lu
+db\AccountWideQuestsDB.lua
 
 # Load object class templates
 src\Classes\base.lua

@@ -72,6 +72,7 @@ db\Classic\LocalizationDB.lua
 # db\Classic\en_auto.lua
 # db\Classic\ReagentsDB.lua
 db\Presets.lua
+db\AccountWideQuestsDB.lua
 
 # Load object class templates
 src\Classes\base.lua
