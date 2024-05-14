@@ -1383,7 +1383,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						844,	-- Plainstrider Menace
 					},
 					["coord"] = { 46.76, 60.22, MULGORE },
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = { REMOVED_7_3_5 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
