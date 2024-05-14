@@ -3873,13 +3873,10 @@ app.CreateHeader = app.CreateClass("AutomaticHeader", "autoID", {
 						return o;
 					end
 				end
-				t.result = cache[1];
-				return cache[1];
-			else
-				cache = CloneClassInstance({[typ] = t.autoID,key = typ});
-				t.result = cache;
-				return cache;
 			end
+			cache = CloneClassInstance({[typ] = t.autoID,key = typ});
+			t.result = cache;
+			return cache;
 		else
 			local cache = AlternateDataTypes[t.type];
 			if cache then
