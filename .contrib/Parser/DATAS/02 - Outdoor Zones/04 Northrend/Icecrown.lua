@@ -834,6 +834,11 @@ root(ROOTS.Zones, {
 						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuest"] = 13144,	-- Killing Two Scourge With One Skeleton
 					}),
+					heroscall(q(49555, {	-- Hero's Call: Icecrown!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 67,
+					})),
 					q(13036, {	-- Honor Above All Else
 						["coord"] = { 87.5, 75.8, ICECROWN },
 						["qg"] = 28179,	-- Highlord Tirion Fordring
@@ -1324,6 +1329,22 @@ root(ROOTS.Zones, {
 							i(43889),	-- Hulking Abomination Hide Cloak
 							i(43884),	-- Amulet of the Malefic Necromancer
 						},
+					}),
+					q(13418, {	-- Preparations for War [A]
+						["qg"] = 31081,	-- Officer Van Rossem
+						-- #if AFTER 7.3.5.25632
+						["sourceQuest"] = 49555,	-- Hero's Call: Icecrown!
+						-- #endif
+						["coord"] = { 67.7, 47.2, NORTHREND_DALARAN },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13419, {	-- Preparations for War [H]
+						["qg"] = 31085,	-- Sky-Reaver Klum
+						-- #if AFTER 7.3.5.25632
+						["sourceQuest"] = 49537,	-- Warchief's Command: Icecrown!
+						-- #endif
+						["coord"] = { 69.4, 40.7, NORTHREND_DALARAN },
+						["races"] = HORDE_ONLY,
 					}),
 					q(13220, {	-- Putting Olakin Back Together Again
 						["coord"] = { 35.3, 66.3, ICECROWN },

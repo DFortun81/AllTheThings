@@ -726,6 +726,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10910,	-- Death's Door
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
+					heroscall(q(39199, {	-- Hero's Call: Blade's Edge Mountains!
+						["timeline"] = { ADDED_6_2_0 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 65,
+					})),
 					q(10865, {	-- Inform Leoroxx!
 						["qg"] = 22312,	-- Spiritcaller Dohgar
 						["sourceQuest"] = 10859,	-- Gather the Orbs

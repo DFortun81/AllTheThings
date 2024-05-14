@@ -3374,6 +3374,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
+				warchiefscommand(q(43926, {	-- The Legion Returns
+					["timeline"] = { ADDED_7_0_3 },
+					["isBreadcrumb"] = true,
+					["lvl"] = 98,
+				})),
 				q(39801, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {	-- The Splintered Fleet
 					["sourceQuest"] = 39698,	-- Making the Rounds
 					["lvl"] = 98,

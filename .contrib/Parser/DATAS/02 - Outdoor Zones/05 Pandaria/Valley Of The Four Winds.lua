@@ -1255,8 +1255,10 @@ root(ROOTS.Zones, {
 							32018,	-- His Name Was... Stormstout
 							32019,	-- They Call Him... Stormstout
 							38935,	-- His Name Was... Stormstout
+							-- #if AFTER 7.3.5
 							49539,	-- Warchief's Command: Valley of the Four Winds!
 							49557,	-- Hero's Call: Valley of the Four Winds!
+							-- #endif
 						},
 						["coord"] = { 86.0, 22.2, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56133 },	-- Chen Stormstout
@@ -1403,6 +1405,12 @@ root(ROOTS.Zones, {
 						["provider"] = { "i", 83767 },	-- Krosh's Back
 						["crs"] = { 56833 },	-- Krosh
 					}),
+					heroscall(q(49557, {	-- Hero's Call: Valley of the Four Winds!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 81,
+					})),
 					q(32018, {	-- His Name Was... Stormstout
 						["provider"] = { "n", 56774 },	-- Bolo
 						["coord"] = { 45.7, 43.9, THE_JADE_FOREST },

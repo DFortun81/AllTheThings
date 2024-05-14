@@ -285,6 +285,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					["timeline"] = { ADDED_6_0_2 },
 					["races"] = HORDE_ONLY,
 				}),
+				warchiefscommand(q(36499, {	-- Iron Horde Invasion (LEGACY - pre WoD)
+					["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				})),
+				heroscall(q(36498, {	-- Iron Horde Invasion
+					["timeline"] = { ADDED_6_0_2, REMOVED_6_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				})),
 				{	-- Lunatic Lieutenants
 					["allianceQuestData"] = q(35486, {	-- Lunatic Lieutenants [A]
 						["qg"] = 84929,	-- Vindicator Maraad

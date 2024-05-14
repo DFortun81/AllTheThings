@@ -903,15 +903,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11228, {	-- Hell Has Frozen Over...
+						["qg"] = 23547,	-- Macalroy
+						-- #if AFTER 7.3.5
+						["sourceQuest"] = 49551,	-- Hero's Call: Howling Fjord!
+						-- #endif
 						["coord"] = { 60.7, 62.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23547,	-- Macalroy
 					}),
 					q(12566, {	-- Help for Camp Winterhoof
 						["coord"] = { 71.4, 39.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["qg"] = 28314,	-- Longrunner Nanik
 					}),
+					heroscall(q(49551, {	-- Hero's Call: Howling Fjord!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 58,
+					})),
 					q(12298, {	-- High Commander Halford Wyrmbane
 						["qg"] = 23859,	-- Greer Orehammer
 						["sourceQuest"] = 12297,	-- Of Traitors and Treason

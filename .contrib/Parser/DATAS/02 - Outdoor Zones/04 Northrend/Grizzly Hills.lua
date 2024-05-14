@@ -683,6 +683,13 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12007,	-- Sacrifices Must be Made
 						["coord"] = { 17.4, 36.3, GRIZZLY_HILLS },
 					}),
+					heroscall(q(39207, {	-- Hero's Call: Grizzly Hills!
+						["altQuests"] = { 12511 },	-- The Hills Have Us
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 63,
+					})),
 					q(12158, {	-- Hollowstone Mine
 						["qg"] = 26212,	-- Captain Gryan Stoutmantle
 						["sourceQuests"] = {

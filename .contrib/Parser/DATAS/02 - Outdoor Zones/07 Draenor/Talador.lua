@@ -790,7 +790,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							34676,	-- The Critical Path (board)
 							37183,	-- The Critical Path (bodrick grey)
+							-- #if AFTER 7.3.5
 							49565,	-- Hero's Call: Talador!
+							-- #endif
 							36495,	-- News From Talador
 						},
 					}),
@@ -1051,6 +1053,11 @@ root(ROOTS.Zones, {
 							i(113023),	-- Foolproof Targeting Mechanism
 						},
 					}),
+					heroscall(q(49565, {	-- Hero's Call: Talador!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 94,
+					})),
 					q(34163, {	-- Hiding in the Shadows
 						["provider"] = {"o",227737},	-- Shadow Council Communicator
 						["coord"] = { 37.2, 79.3, TALADOR },

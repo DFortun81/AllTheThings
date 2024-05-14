@@ -470,7 +470,9 @@ root(ROOTS.Zones, {
 					q(34582, {	-- Finding a Foothold
 						["sourceQuests"] = {
 							34575,	-- Step Three: Prophet!
-							49562	-- Hero's Call: Shadowmoon Valley!
+							-- #if AFTER 7.3.5
+							49562	-- Hero's Call: Shadowmoon Valley! (Draenor)
+							-- #endif
 						},
 						["sourceQuestNumRequired"] = 1,
 						["coord"] = { 26.9, 8.00, DRAENOR_SHADOWMOON_VALLEY },
@@ -611,6 +613,12 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 77417 },	-- Image of Archmage Khadgar
 					}),
+					heroscall(q(49562, {	-- Hero's Call: Shadowmoon Valley! (Draenor)
+						["description"] = "Abandon quest 'Step Three: Prophet!' after the 'Assault on the Dark Portal' scenario and visit a Hero's Call Board to pick this quest up.",
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 90,
+					})),
 					q(36269, {	-- Hexcloth
 						["requireSkill"] = TAILORING,
 						["sourceQuests"] = { 36266 },	-- The Clothes on Their Backs

@@ -466,6 +466,11 @@ root(ROOTS.Zones, {
 							i(39841),	-- Ancestral Girdle
 						},
 					}),
+					heroscall(q(49552, {	-- Hero's Call: Zul'Drak!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 64,
+					})),
 					q(12709, {	-- Hexed Caches
 						["coord"] = { 59.9, 57.9, ZULDRAK },
 						["qg"] = 28527,	-- Chronicler To'kini

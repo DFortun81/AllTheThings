@@ -1752,6 +1752,11 @@ root(ROOTS.Zones, {
 							i(112605),	-- Wildwood Wrangler Leggings
 						},
 					}),
+					heroscall(q(49564, {	-- Hero's Call: Gorgrond!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 92,
+					})),
 					q(34279, {	-- I Am Blook
 						["provider"] = { "n", 78030 },	-- Blook
 						["coord"] = { 41.3, 91.5, GORGROND },
@@ -2276,7 +2281,9 @@ root(ROOTS.Zones, {
 							33533,	-- The Secrets of Gorgrond
 							35556,	-- The Secrets of Gorgrond
 							36632,	-- The Secrets of Gorgrond
+							-- #if AFTER 7.3.5
 							49564,	-- Hero's Call: Gorgrond!
+							-- #endif
 						},
 					}),
 					q(35151, {	-- Your Base, Your Choice

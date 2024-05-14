@@ -17,8 +17,9 @@ root(ROOTS.Zones, {
 		["g"] = {
 			q(49851, {	-- Cataclysm First Responder (Horde)
 				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
-				["isBreadcrumb"] = true,
+				["timeline"] = { ADDED_7_3_5 },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(29390, {	-- Guardians of Hyjal: Call of the Ancients
@@ -30,30 +31,28 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 85,
 			}),
-			un(REMOVED_FROM_GAME, q(36499)),	-- Iron Horde Invasion (LEGACY - pre WoD)
 			q(29612, {	-- The Art of War
 				["description"] = "Players who have completed Vashj'ir will receive this version of The Art of War.",
 			}),
 			q(29611, {	-- The Art of War
 				["description"] = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
 			}),
-			q(43926, {	-- The Legion Returns
-				["isBreadcrumb"] = true,
-				["lvl"] = 98,
-			}),
+			
 			q(28790, {	-- A Personal Summons (Vashj'ir Starter Quest)
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49817, {	-- To Northrend! (Horde)
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 				["lvl"] = 60,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49852, {	-- To Pandaria! (Horde)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Pandaria)
-				["isBreadcrumb"] = true,
+				["timeline"] = { ADDED_7_3_5 },
 				["races"] = HORDE_ONLY,
+				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(28572, {	-- Warchief's Command: Arathi Highlands!
@@ -68,10 +67,11 @@ root(ROOTS.Zones, {
 			q(28580, {	-- Warchief's Command: Badlands!
 				["isBreadcrumb"] = true,
 			}),
-			q(28711, {	-- Warchief's Command: Borean Tundra!
+			q(28711, {	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
 				["isBreadcrumb"] = true,
 			}),
 			q(39198, {	-- Warchief's Command: Blade's Edge Mountains!
+				["timeline"] = { ADDED_6_2_0 },
 				["isBreadcrumb"] = true,
 			}),
 			q(28671, {	-- Warchief's Command: Blasted Lands!
@@ -88,11 +88,11 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 			}),
 			q(39203, {	-- Warchief's Command: Dragonblight!
+				["timeline"] = { ADDED_6_2_0 },
 				["isBreadcrumb"] = true,
 			}),
 			q(49543, {	-- Warchief's Command: Dread Wastes!
-				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
-				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 				["races"] = HORDE_ONLY,
 			}),
@@ -114,6 +114,7 @@ root(ROOTS.Zones, {
 				-- Party Sync + WoD Chromie Time + Share Quest = 'You have completed that quest'
 				-- If anyone actually has a verifed way of obtaining this quest on a character which has already established their Garrison, please update this
 				["description"] = "Currently no verified way to actually obtain this quest on a character which has established their Garrison.\n\nOther characters will be able to obtain this Quest from the Warboard after completion of 'The Home of the Frostwolves' (33868) if completing the Tanaan intro quests, or possibly from the Warboard during WoD Chromie Time.",
+				["timeline"] = { ADDED_7_3_5 },
 				-- It's reported you can somehow find this quest on the Warboard simply by being in WoD Chromie Time, but this was not the case for a new lvl 10
 				-- Taking the initial quest to the Dark Portal, then returning to Orgrimmar to access the Warboard also did not help
 				-- Additionally, it can be shared to a character who has not established their Garrison without any known pre-requisites being completed
@@ -121,40 +122,39 @@ root(ROOTS.Zones, {
 				["DisablePartySync"] = true,
 			}),
 			q(39206, {	-- Warchief's Command: Grizzly Hills!
+				["timeline"] = { ADDED_6_2_0 },
 				["isBreadcrumb"] = true,
-				["altQuests"] = {
-					12487,	-- To Conquest Hold, But Be Careful!
-					12488,	-- The High Executor Needs You
-				},
 			}),
 			q(28560, {	-- Warchief's Command: Ghostlands!
 				["isBreadcrumb"] = true,
 				["description"] = "Flagged complete when completing |cffffffffMissing in the Ghostlands|r [9144].",
 			}),
 			q(49546, {	-- Warchief's Command: Gorgrond!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 			}),
 			q(28571, {	-- Warchief's Command: Hillsbrad Foothills!
 				["isBreadcrumb"] = true,
 			}),
 			q(49533, {	-- Warchief's Command: Howling Fjord!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 			}),
 			q(49537, {	-- Warchief's Command: Icecrown!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 			}),
 			q(49538, {	-- Warchief's Command: Jade Forest!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 			}),
 			q(49540, {	-- Warchief's Command: Krasarang Wilds!
-				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
-				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 				["races"] = HORDE_ONLY,
 			}),
 			q(49541, {	-- Warchief's Command: Kun-Lai Summit!
-				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
-				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 				["lvl"] = 82,
 			}),
@@ -163,12 +163,15 @@ root(ROOTS.Zones, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(49549, {	-- Warchief's Command: Nagrand! (Draenor)
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 			}),
 			q(39196, {	-- Warchief's Command: Nagrand! (Outland)
+				["timeline"] = { ADDED_6_2_0 },
 				["isBreadcrumb"] = true,
 			}),
 			q(39201, {	-- Warchief's Command: Netherstorm!
+				["timeline"] = { ADDED_6_2_0 },
 				["isBreadcrumb"] = true,
 			}),
 			q(28494, {	-- Warchief's Command: Northern Barrens!
@@ -178,9 +181,6 @@ root(ROOTS.Zones, {
 			q(28688, {	-- Warchief's Command: Northern Stranglethorn Vale!
 				["isBreadcrumb"] = true,
 			}),
-			-- q(???, {	-- Warchief's Command: Northrend! Doesn't exist?
-			-- 	["isBreadcrumb"] = true,
-			-- }),
 			q(28705, {	-- Warchief's Command: Outland!
 				["isBreadcrumb"] = true,
 			}),
@@ -188,9 +188,11 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 			}),
 			q(49532, {	-- Warchief's Command: Shadowmoon Valley!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 			}),
 			q(49535, {	-- Warchief's Command: Sholazar Basin!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 			}),
 			q(28527, {	-- Warchief's Command: Silithus!
@@ -203,10 +205,12 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 			}),
 			q(49548, {	-- Warchief's Command: Spires of Arak!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 				["lvl"] = 96,
 			}),
 			q(49536, {	-- Warchief's Command: Storm Peaks!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 			}),
 			q(28532, {	-- Warchief's Command: Stonetalon Mountains!
@@ -216,6 +220,7 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 			}),
 			q(49547, {	-- Warchief's Command: Talador!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 				["lvl"] = 94,
 			}),
@@ -224,6 +229,7 @@ root(ROOTS.Zones, {
 				["timeline"] = { ADDED_4_0_3, REMOVED_10_2_6 },	-- possibly earlier, but currently unable to be obtained
 			}),
 			q(39182, {	-- Warchief's Command: Terokkar Forest!
+				["timeline"] = { ADDED_6_2_0 },
 				["isBreadcrumb"] = true,
 			}),
 			q(28704, {	-- Warchief's Command: The Cape of Stranglethorn!
@@ -236,11 +242,10 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 			}),
 			q(49542, {	-- Warchief's Command: Townlong Steppes!
-				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
-				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
+				["timeline"] = { ADDED_7_3_5 },
+				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["lvl"] = 83,
-				["races"] = HORDE_ONLY,
 			}),
 			q(28717, {	-- Warchief's Command: Twilight Highlands!
 				["isBreadcrumb"] = true,
@@ -252,11 +257,10 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 			}),
 			q(49539, {	-- Warchief's Command: Valley of the Four Winds!
-				-- May technically be 37186 (HQT), but this triggers from Jade Forest turn-in also
-				["sourceQuest"] = 49538,	-- Warchief's Command: Jade Forest!
+				["timeline"] = { ADDED_7_3_5 },
+				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 				["lvl"] = 81,
-				["races"] = HORDE_ONLY,
 			}),
 			q(27718, {	-- Warchief's Command: Vashj'ir!
 				["isBreadcrumb"] = true,
@@ -268,9 +272,11 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 			}),
 			q(39180, {	-- Warchief's Command: Zangarmarsh!
+				["timeline"] = { ADDED_6_2_0 },
 				["isBreadcrumb"] = true,
 			}),
 			q(49534, {	-- Warchief's Command: Zul'Drak!
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 			}),
 		},
@@ -310,10 +316,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
 			}),
-			q(39199, {	-- Hero's Call: Blade's Edge Mountains!
-				["isBreadcrumb"] = true,
-				["lvl"] = 65,
-			}),
 			q(28673, {	-- Hero's Call: Blasted Lands!
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
@@ -336,15 +338,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 30,
 			}),
-			q(39204, {	-- Hero's Call: Dragonblight!
-				["isBreadcrumb"] = true,
-				["lvl"] = 61,
-			}),
-			q(49561, {	-- Hero's Call: Dread Wastes!
-				["isBreadcrumb"] = true,
-				["lvl"] = 84,
-				["races"] = ALLIANCE_ONLY,
-			}),
 			q(28564, {	-- Hero's Call: Duskwood!
 				["isBreadcrumb"] = true,
 				["lvl"] = 20
@@ -365,54 +358,11 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 35,
 			}),
-			q(49564, {	-- Hero's Call: Gorgrond!
-				["isBreadcrumb"] = true,
-				["lvl"] = 92,
-			}),
-			q(39207, {	-- Hero's Call: Grizzly Hills!
-				["isBreadcrumb"] = true,
-				["lvl"] = 63,
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(49551, {	-- Hero's Call: Howling Fjord!
-				["isBreadcrumb"] = true,
-				["lvl"] = 58,
-			}),
-			q(49555, {	-- Hero's Call: Icecrown!
-				["isBreadcrumb"] = true,
-				["lvl"] = 67,
-			}),
-			q(49556, {	-- Hero's Call: Jade Forest!
-				["isBreadcrumb"] = true,
-				["lvl"] = 80,
-			}),
-			q(49558, {	-- Hero's Call: Krasarang Wilds!
-				["isBreadcrumb"] = true,
-				["lvl"] = 81,
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(49559, {	-- Hero's Call: Kun-Lai Summit!
-				["isBreadcrumb"] = true,
-				["lvl"] = 82,
-			}),
 			q(27726, {	-- Hero's Call: Mount Hyjal! (max level 100)
 				["isBreadcrumb"] = true,
 			}),
 			q(29386, {	-- Hero's Call: Mount Hyjal!
 				["u"] = REMOVED_FROM_GAME,	-- triggers when turning in #27726
-			}),
-			q(39197, {	-- Hero's Call: Nagrand! (Outland)
-				["isBreadcrumb"] = true,
-				["lvl"] = 64,
-			}),
-			q(49567, {	-- Hero's Call: Nagrand! (Draenor)
-				["isBreadcrumb"] = true,
-				["lvl"] = 98,
-			}),
-			q(39202, {	-- Hero's Call: Netherstorm!
-				["maps"] = { NETHERSTORM },
-				["isBreadcrumb"] = true,
-				["lvl"] = 67,
 			}),
 			q(28699, {	-- Hero's Call: Northern Stranglethorn!
 				["maps"] = { NORTHERN_STRANGLETHORN },
@@ -427,19 +377,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
 			}),
-			q(49550, {	-- Hero's Call: Shadowmoon Valley! (Outland)
-				["isBreadcrumb"] = true,
-				["lvl"] = 67,
-			}),
-			q(49562, {	-- Hero's Call: Shadowmoon Valley! (Draenor)
-				["isBreadcrumb"] = true,
-				["lvl"] = 90,
-				["description"] = "Abandon quest 'Step Three: Prophet!' after the 'Assault on the Dark Portal' scenario and visit a Hero's Call Board to pick this quest up.",
-			}),
-			q(49553, {	-- Hero's Call: Sholazar Basin!
-				["isBreadcrumb"] = true,
-				["lvl"] = 66,
-			}),
 			q(28528, {	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
@@ -453,29 +390,13 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 25,
 			}),
-			q(49566, {	-- Hero's Call: Spires of Arak!
-				["isBreadcrumb"] = true,
-				["lvl"] = 96,
-			}),
-			q(49554, {	-- Hero's Call: Storm Peaks!
-				["isBreadcrumb"] = true,
-				["lvl"] = 67,
-			}),
 			q(28675, {	-- Hero's Call: Swamp of Sorrows!
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
 			}),
-			q(49565, {	-- Hero's Call: Talador!
-				["isBreadcrumb"] = true,
-				["lvl"] = 94,
-			}),
 			q(28507, {	-- Hero's Call: Tanaris! (breadcrumb quest for 25048, not available if 27446 is completed) (max level 48)
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
-			}),
-			q(39188, {	-- Hero's Call: Terokkar Forest!
-				["isBreadcrumb"] = true,
-				["lvl"] = 62,
 			}),
 			q(28702, {	-- Hero's Call: The Cape of Stranglethorn!
 				["isBreadcrumb"] = true,
@@ -487,6 +408,7 @@ root(ROOTS.Zones, {
 				["lvl"] = 30,
 			}),
 			q(38931, {	-- Hero's Call: The Hinterlands!
+				["timeline"] = { CREATED_6_2_0 },
 				["isBreadcrumb"] = true,
 				["lvl"] = 30,
 				["u"] = REMOVED_FROM_GAME,
@@ -500,11 +422,6 @@ root(ROOTS.Zones, {
 					25481,	-- To New Thalanaar [Feralas]
 				},
 			}),
-			q(49560, {	-- Hero's Call: Townlong Steppes!
-				["isBreadcrumb"] = true,
-				["lvl"] = 83,
-				["races"] = ALLIANCE_ONLY,
-			}),
 			q(28716, {	-- Hero's Call: Twilight Highlands! (breadcrumb quest for 26960) (max level 93)
 				["isBreadcrumb"] = true,
 				["lvl"] = 84,
@@ -516,15 +433,6 @@ root(ROOTS.Zones, {
 			q(28525, {	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
-			}),
-			q(49557, {	-- Hero's Call: Valley of the Four Winds!
-				["isBreadcrumb"] = true,
-				["lvl"] = 81,
-				["races"] = ALLIANCE_ONLY,
-			}),
-			q(27724, {	-- Hero's Call: Vashj'ir!
-				["isBreadcrumb"] = true,
-				["lvl"] = 80,
 			}),
 			q(28576, {	-- Hero's Call: Western Plaguelands!
 				["isBreadcrumb"] = true,
@@ -538,55 +446,44 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
 			}),
-			q(39181, {	-- Hero's Call: Zangarmarsh!
-				["isBreadcrumb"] = true,
-				["lvl"] = 60,
-			}),
-			q(49552, {	-- Hero's Call: Zul'Drak!
-				["isBreadcrumb"] = true,
-				["lvl"] = 64,
-			}),
-			q(36498, {	-- Iron Horde Invasion
-				["isBreadcrumb"] = true,
-				["u"] = REMOVED_FROM_GAME,
-			}),
+			
 			--
-			q(40519, {	-- The Legion Returns (Alliance)
-				["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-				["coord"] = { 56.3, 17.3, STORMWIND_CITY },
-				["races"] = ALLIANCE_ONLY,
-				["isBreadcrumb"] = true,
-			}),
+			
 			q(49846, {	-- Wars on Two Fronts [Cataclysm]
-				["isBreadcrumb"] = true,
-				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["provider"] = { "i", 156477 },	-- Special Duty Assignments
+				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
+				["timeline"] = { ADDED_7_3_5 },
+				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 				-- The same item is used to start Cataclysm or Pandaria content (your choice).
 				-- Received 49846 on Alliance Warlock when I hit 80, so it isn't the Horde version item as a previous comment speculated. - slumber
 			}),
 			q(49865, {	-- Cataclysm First Responder (Alliance)
-				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
+				["sourceQuest"] = 49846,	-- War on Two Fronts (Cataclysm)
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49864, {	-- Wars on Two Fronts (Cataclysm or Pandaria)
-				["isBreadcrumb"] = true,
-				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
 				["provider"] = { "i", 156477 },	-- Special Duty Assignments
+				["description"] = "The Special Duty Assignments will automatically pop up when you reach level 80.  You can use them to progress either to Cataclysm or Pandaria.",
+				["timeline"] = { ADDED_7_3_5 },
+				["isBreadcrumb"] = true,
 				["lvl"] = 80,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49863, {	-- To Northrend! (Alliance)
+				["timeline"] = { ADDED_7_3_5 },
 				["isBreadcrumb"] = true,
 				["lvl"] = 60,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49866, {	-- To Pandaria! (Alliance)
 				["sourceQuests"] = { 49864 },	-- Wars on Two Fronts (Cataclysm or Pandaria)
-				["isBreadcrumb"] = true,
+				["timeline"] = { ADDED_7_3_5 },
 				["races"] = ALLIANCE_ONLY,
+				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 		},

@@ -700,6 +700,11 @@ root(ROOTS.Zones, {
 							i(28168),	-- Insignia of the Mag'hari Hero
 						},
 					}),
+					heroscall(q(39197, {	-- Hero's Call: Nagrand! (Outland)
+						["timeline"] = { ADDED_6_2_0 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 64,
+					})),
 					q(10109, {	-- I Must Have Them!
 						["qg"] = 19035,	-- Wazat
 						["coord"] = { 61.6, 67.0, NAGRAND },
@@ -791,6 +796,9 @@ root(ROOTS.Zones, {
 					}),
 					q(10476, {	-- Fierce Enemies
 						["qg"] = 18408,	-- Warden Moi'bff Jill
+						-- #if AFTER 6.2.0
+						["sourceQuest"] = 39197,	-- Hero's Call: Nagrand! (Outland)
+						-- #endif
 						["coord"] = { 54.8, 70.8, NAGRAND },
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["races"] = ALLIANCE_ONLY,

@@ -941,6 +941,11 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 61495 },	-- Elder Shu
 						["sourceQuest"] = 30935,	-- Fisherman's Tale
 					}),
+					heroscall(q(49559, {	-- Hero's Call: Kun-Lai Summit!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 82,
+					})),
 					q(30460, {	-- Hit Medicine
 						["coord"] = { 71.5, 92.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59077 },	-- Apothecary Cheng
@@ -1662,7 +1667,9 @@ root(ROOTS.Zones, {
 					}),
 					q(31254, {	-- The Road to Kun-Lai
 						["races"] = ALLIANCE_ONLY,
+						-- #if AFTER 7.3.5
 						["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
+						-- #endif
 						["qgs"] = {
 							63778,	-- Messenger Grummle
 						},

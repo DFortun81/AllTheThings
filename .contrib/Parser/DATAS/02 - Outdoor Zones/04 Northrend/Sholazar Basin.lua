@@ -745,6 +745,11 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					heroscall(q(49553, {	-- Hero's Call: Sholazar Basin!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 66,
+					})),
 					q(12577, {	-- Home Time!
 						["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
 						["qg"] = 28114,	-- Mistcaller Soon-gan
@@ -1137,6 +1142,10 @@ root(ROOTS.Zones, {
 						["qg"] = 28214,	-- Goregek the Gorilla Hunter
 						["sourceQuest"] = 12528,	-- Playing Along
 					}),
+					q(12524, {	-- Venture Co. Misadventure
+						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
+						["qg"] = 28032,	-- Debaar
+					}),
 					q(12660, {	-- Weapons of Destruction
 						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 						["qg"] = 27801,	-- Avatar of Freya
@@ -1153,9 +1162,15 @@ root(ROOTS.Zones, {
 							12521,	-- Where in the World is Hemet Nesingwary?
 						},
 					}),
-					q(12524, {	-- Venture Co. Misadventure
-						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
-						["qg"] = 28032,	-- Debaar
+					q(12521, {	-- Where in the World is Hemet Nesingwary?
+						["qg"] = 28160,	-- Achmage Pentarus
+						-- #if AFTER 7.3.5.25600
+						["sourceQuests"] = {
+							49553,	-- Hero's Call: Sholazar Basin!
+							49535,	-- Warchief's Command: Sholazar Basin!
+						},
+						-- #endif
+						["coord"] = { 68.5, 42.0, NORTHREND_DALARAN },
 					}),
 					q(12525, {	-- Wipe That Grin Off His Face
 						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },

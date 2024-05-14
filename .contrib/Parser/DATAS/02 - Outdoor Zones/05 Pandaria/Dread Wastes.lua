@@ -579,11 +579,15 @@ root(ROOTS.Zones, {
 							31895,	-- Better Off Dread
 							31000,	-- Dread Space
 							31886,	-- Dread Space
+							-- #if AFTER 7.3.5
 							49561,	-- Hero's Call: Dread Wastes!
+							-- #endif
 							31390,	-- The Klaxxi (A)
 							31391,	-- The Klaxxi (H)
 							31656,	-- The Threat in the South
+							-- #if AFTER 7.3.5
 							49543,	-- Warchief's Command: Dread Wastes!
+							-- #endif
 						},
 					}),
 					q(31398, {	-- Falling to Pieces
@@ -703,6 +707,12 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 155707 },	-- Taoshi
 						["sourceQuest"] = 56617,	-- A Unified Swarm
 					}),
+					heroscall(q(49561, {	-- Hero's Call: Dread Wastes!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 84,
+					})),
 					q(31071, {	-- I Bring Us Great Shame
 						["coord"] = { 51.1, 11.1, DREAD_WASTES },
 						["provider"] = { "n", 62859 },	-- Thirsty Missho

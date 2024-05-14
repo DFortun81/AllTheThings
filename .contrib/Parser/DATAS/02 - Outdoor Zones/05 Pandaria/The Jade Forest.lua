@@ -1398,6 +1398,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.1, 80.6, THE_JADE_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
+					heroscall(q(49556, {	-- Hero's Call: Jade Forest!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 80,
+					})),
 					q(29556, {	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
 						["sourceQuests"] = { 31745 },	-- Onward and Inward
 						["provider"] = { "n", 66292 },	-- Sky Admiral Rogers

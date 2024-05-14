@@ -811,16 +811,6 @@ root(ROOTS.Zones, {
 									recipe(53056),	-- Kungaloosh (RECIPE!)
 								},
 							}),
-							q(12853, {	-- Luxurious Getaway!
-								["qg"] = 30490,	-- Rin Duoctane
-								-- #if AFTER 7.3.5.25600
-								["sourceQuests"] = {
-									49554,	-- Hero's Call: Storm Peaks!
-									49536,	-- Warchief's Command: Storm Peaks!
-								},
-								-- #endif
-								["coord"] = { 31.2, 49.6, NORTHREND_THE_UNDERBELLY },
-							}),
 							q(13845, {	-- Sealed Vial of Poison
 								["providers"] = {
 									{ "i", 46004 },	-- Sealed Vial of Poison
@@ -1898,22 +1888,6 @@ root(ROOTS.Zones, {
 							}),
 						},
 					})),
-					q(13418, {	-- Preparations for War [A]
-						["qg"] = 31081,	-- Officer Van Rossem
-						-- #if AFTER 7.3.5.25632
-						["sourceQuest"] = 49555,	-- Hero's Call: Icecrown!
-						-- #endif
-						["coord"] = { 67.7, 47.2, NORTHREND_DALARAN },
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(13419, {	-- Preparations for War [H]
-						["qg"] = 31085,	-- Sky-Reaver Klum
-						-- #if AFTER 7.3.5.25632
-						["sourceQuest"] = 49537,	-- Warchief's Command: Icecrown!
-						-- #endif
-						["coord"] = { 69.4, 40.7, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-					}),
 					q(13254, {	-- Proof of Demise: Anub'arak
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
@@ -2576,16 +2550,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							currency(81),	-- Epicurean's Award 5x
 						},
-					}),
-					q(12521, {	-- Where in the World is Hemet Nesingwary?
-						["qg"] = 28160,	-- Achmage Pentarus
-						-- #if AFTER 7.3.5.25600
-						["sourceQuests"] = {
-							49553,	-- Hero's Call: Sholazar Basin!
-							49535,	-- Warchief's Command: Sholazar Basin!
-						},
-						-- #endif
-						["coord"] = { 68.5, 42.0, NORTHREND_DALARAN },
 					}),
 					q(14160, {	-- Writ of Merit
 						["provider"] = { "i", 47246 },	-- Writ of Merit

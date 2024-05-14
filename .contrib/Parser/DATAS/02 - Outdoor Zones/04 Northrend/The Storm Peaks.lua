@@ -816,6 +816,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.1, 65.7, THE_STORM_PEAKS },
 						["sourceQuest"] = 12972,	-- You'll Need a Bear
 					}),
+					heroscall(q(49554, {	-- Hero's Call: Storm Peaks!
+						["timeline"] = { ADDED_7_3_5 },
+						["maps"] = { NORTHREND_DALARAN, NORTHREND_THE_UNDERBELLY },
+						["isBreadcrumb"] = true,
+						["lvl"] = 67,
+					})),
 					q(12991, {	-- Hit Them Where it Hurts
 						["qg"] = 30152,	-- Bruor Ironbane
 						["coord"] = { 31.2, 38.1, THE_STORM_PEAKS },
@@ -893,6 +899,17 @@ root(ROOTS.Zones, {
 							i(42814),	-- Broken Chastity Belt
 							i(42833),	-- Jawbreakers
 						},
+					}),
+					q(12853, {	-- Luxurious Getaway!
+						["qg"] = 30490,	-- Rin Duoctane
+						-- #if AFTER 7.3.5.25600
+						["sourceQuests"] = {
+							49554,	-- Hero's Call: Storm Peaks!
+							49536,	-- Warchief's Command: Storm Peaks!
+						},
+						-- #endif
+						["coord"] = { 31.2, 49.6, NORTHREND_THE_UNDERBELLY },
+						["maps"] = { NORTHREND_DALARAN },
 					}),
 					q(13422, {	-- Maintaining Discipline
 						["qg"] = 29796,	-- Gretta the Arbiter

@@ -823,6 +823,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 					}),
+					heroscall(q(39204, {	-- Hero's Call: Dragonblight!
+						["altQuests"] = { 11995 },	-- Your Presence is Required at Stars' Rest
+						["timeline"] = { ADDED_6_2_0 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 61,
+					})),
 					q(12174, {	-- High Commander Halford Wyrmbane
 						["coord"] = { 29.2, 55.4, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,

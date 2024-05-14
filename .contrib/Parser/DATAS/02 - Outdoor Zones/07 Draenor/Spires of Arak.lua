@@ -831,6 +831,11 @@ root(ROOTS.Zones, {
 							i(114718),	-- Skysinger Boots
 						},
 					}),
+					heroscall(q(49566, {	-- Hero's Call: Spires of Arak!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 96,
+					})),
 					q(34656, {  -- Hidden in Plain Sight
 						["sourceQuests"] = { 34655 },	-- The Shadows of Skettis
 						["coord"] = { 43.6, 12.9, SPIRES_OF_ARAK },

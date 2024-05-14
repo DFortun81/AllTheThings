@@ -440,7 +440,7 @@ root(ROOTS.Zones, {
 							11043,	-- Building a Better Gryphon
 							11044,	-- Visions of Destruction
 							-- #if AFTER 7.3.5.25600
-							49550,	-- Hero's Call: Shadowmoon Valley!
+							49550,	-- Hero's Call: Shadowmoon Valley! (Outland)
 							-- #endif
 						},
 						["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
@@ -913,6 +913,11 @@ root(ROOTS.Zones, {
 							i(30719),	-- Spectrecles
 						},
 					}),
+					heroscall(q(49550, {	-- Hero's Call: Shadowmoon Valley! (Outland)
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 67,
+					})),
 					q(10621, {	-- Illidari Bane-Shard (A)
 						["provider"] = { "i", 30756 },	-- Illidari Bane-Shard (A)
 						["races"] = ALLIANCE_ONLY,

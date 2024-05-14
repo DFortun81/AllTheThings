@@ -762,6 +762,11 @@ root(ROOTS.Zones, {
 							i(25949),	-- Gloves of the Afterlife
 						},
 					}),
+					heroscall(q(39188, {	-- Hero's Call: Terokkar Forest!
+						["timeline"] = { ADDED_6_2_0 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 62,
+					})),
 					q(10227, {	-- I See Dead Draenei -- aa
 						["qg"] = 19697,	-- Ha'lei
 						["coord"] = { 35.0, 65.0, TEROKKAR_FOREST },

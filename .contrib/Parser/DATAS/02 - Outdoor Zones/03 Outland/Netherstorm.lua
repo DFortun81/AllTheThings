@@ -786,6 +786,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10206,	-- Pick Your Part
 						["isBreadcrumb"] = true,
 					}),
+					heroscall(q(39202, {	-- Hero's Call: Netherstorm!
+						["timeline"] = { ADDED_6_2_0 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 67,
+					})),
 					q(10293, {	-- Hitting the Motherlode
 						["qg"] = 20067,	-- Zuben Elgenubi
 						["coord"] = { 44.1, 36.0, NETHERSTORM },

@@ -811,6 +811,11 @@ root(ROOTS.Zones, {
 							i(25611),	-- The Witch Doctor's Wraps
 						},
 					}),
+					heroscall(q(39181, {	-- Hero's Call: Zangarmarsh!
+						["timeline"] = { ADDED_6_2_0 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 60,
+					})),
 					q(9784, {	-- Identify Plant Parts
 						["qg"] = 17909,	-- Lauranna Thar'well
 						["sourceQuest"] = 9802,	-- Plants of Zangarmarsh

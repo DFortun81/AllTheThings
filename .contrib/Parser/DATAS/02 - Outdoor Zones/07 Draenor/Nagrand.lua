@@ -792,6 +792,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 75.0, 22.7, DRAENOR_NAGRAND },
 						["sourceQuest"] = 34894,	-- A Rare Bloom
 					}),
+					heroscall(q(49567, {	-- Hero's Call: Nagrand! (Draenor)
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 98,
+					})),
 					q(34915, {	-- I Help Ya Kill Dem
 						["provider"] = { "n", 80429 },	-- Shadow Hunter Kajassa
 						["coord"] = { 68.5, 64.5, DRAENOR_NAGRAND },
@@ -1474,7 +1479,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							34674,	-- Taking the Fight to Nagrand
 							37184,	-- Taking the Fight to Nagrand
-							49567,	-- Hero's Call: Nagrand!
+							-- #if AFTER 7.3.5
+							49567,	-- Hero's Call: Nagrand! (Draenor)
+							-- #endif
 						},
 					}),
 					q(34795, {	-- The Might of the Warsong

@@ -3115,6 +3115,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["groups"] = JEWELCRAFTING_AWARD_GROUPS,
 				}),
+				heroscall(q(40519, {	-- The Legion Returns (Alliance)
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.3, 17.3, STORMWIND_CITY },
+					["timeline"] = { ADDED_7_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				})),
 				q(1274, {	-- The Missing Diplomat (1/17)
 					["qg"] = 4982,	-- Thomas <Altar Boy>
 					["coords"] = {

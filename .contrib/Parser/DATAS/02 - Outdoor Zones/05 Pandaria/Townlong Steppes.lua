@@ -174,8 +174,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
 						["provider"] = { "n", 60688 },	-- Taran Zhu
 						["sourceQuests"] = {
+							-- #if AFTER 7.3.5
 							49560,	-- Hero's Call: Townlong Steppes!
 							49542,	-- Warchief's Command: Townlong Steppes!
+							-- #endif
 							31386,	-- The Shado-Pan Offensive (A)
 							31388,	-- The Shado-Pan Offensive (H)
 							30768,	-- My Husband...
@@ -416,6 +418,12 @@ root(ROOTS.Zones, {
 							i(88584),	-- Totem of Harmony (TOY!)
 						},
 					}),
+					heroscall(q(49560, {	-- Hero's Call: Townlong Steppes!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 83,
+					})),
 					q(30980, {	-- Heroes of the Shado-Pan
 						["coord"] = { 53.9, 86.9, TOWNLONG_STEPPES },
 						["provider"] = { "n", 62786 },	-- Hawkmaster Nurong

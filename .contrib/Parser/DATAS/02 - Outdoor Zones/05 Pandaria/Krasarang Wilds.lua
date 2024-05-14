@@ -1992,7 +1992,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 62.6, 20.0, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
+					
+					heroscall(q(49558, {	-- Hero's Call: Krasarang Wilds!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 81,
+					})),
 
 					q(30376, {	-- Hope Springs Eternal
 						["isBreadcrumb"] = true,
@@ -2623,8 +2629,10 @@ root(ROOTS.Zones, {
 					q(30079, {	-- What's Eating Zhu's Watch?
 						["sourceQuests"] = {
 							29873,	-- Ken-Ken
+							-- #if AFTER 7.3.5
 							49540,	-- Warchief's Command: Krasarang Wilds!
 							49558,	-- Hero's Call: Krasarang Wilds!
+							-- #endif
 						},
 						["provider"] = { "n", 56115 },	-- Ken-Ken
 						["coord"] = { 80.2, 1.02, KRASARANG_WILDS },
