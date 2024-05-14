@@ -42,11 +42,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["description"] = "When you have both the ward and holy water, head to the entrance of the Crusader's Cathedral, but don't enter there - Instead, use your Ward of Naxxramas and turn to the left. If done correctly, you will see a Dread Ward of Naxxramas right next to the gates there, Once you find the Dread Ward, toss your  Stratholme Holy Water in it.\n\nIf done correctly, you will receive a zone-wide yell, and a debuff called  Sleight of Hand. Once you get this debuff, you have 5 minutes to run all the way to the Undead side of Stratholme, to the gate to the left of the Necropolis where Lord Aurius Rivendare is located. You MUST kill Lord Aurius Rivendare to open the gate. If you arrive in time, a Hand of Naxxramas NPC will be there, and you will be able to use your Argent Dawn Commission to burn it to a crisp.",
 					["sourceQuests"] = { 76257 },	-- Darkmaster's Scourgestone
 					["questID"] = 76261,
+					["maps"] = { 318 },	-- Stratholme - Undead
 					["cost"] = {
 						{ "i", 12846, 1 },	-- 1x Argent Dawn Commission
 						{ "i", 13180, 1 },	-- 1x Stratholme Holy Water
 						{ "i", 206377, 1 },	-- 1x Ward of Naxxramas
-					}
+					},
 				}),
 				n(16116, {	-- Archmage Angela Dosantos
 					["description"] = "Talk to Archmage after defeating Hand of Naxxramas",
@@ -195,7 +196,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						{ "i", 20520, 3 },		-- 3x Dark Rune
 						{ "i", 33042, 1 },		-- 1x Black Coffee
 						{ "i", 13180, 2 },		-- 2x Stratholme Holy Water
-						{ "i", 206473, 1 },		-- 1x Makeshift Grappling Hook
 					},
 					["g"] = {
 						i(206615),	-- Desecrated Cloth Bracers

@@ -804,6 +804,7 @@ select(2, ...).AccountWideQuestsDB = {
 	[76192] = true,
 	[76193] = true,
 	[76249] = true,	-- Memories of Scholomance
+	[76307] = true,	-- Makeshift Grappling Hook [206473]
 	[76573] = true,
 	[76574] = true,
 	[76575] = true,

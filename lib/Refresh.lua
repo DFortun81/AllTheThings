@@ -158,7 +158,6 @@ local function CacheAccountWideMiscQuests(accountWideData)
 		70941,	-- Fishing Holes [DF Iskaaran Fishing]
 		74576,	-- Restored Hakkari Bijou [Zul'Gurub]
 		76390,	-- Inconvenience Fee [Naxxramas]
-		76307,	-- Makeshift Grappling Hook [206473]
 
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
