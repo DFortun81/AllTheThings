@@ -161,10 +161,6 @@ root(ROOTS.Zones, {
 	},{
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["g"] = {
-			q(28573, {	-- Hero's Call: Arathi Highlands!
-				["isBreadcrumb"] = true,
-				["lvl"] = 25,
-			}),
 			q(28579, {	-- Hero's Call: Badlands!
 				["isBreadcrumb"] = true,
 				["lvl"] = 40,
