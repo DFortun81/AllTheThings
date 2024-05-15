@@ -179,17 +179,72 @@ TBC_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = {
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264479, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Engineering
 	n(ARMOR, {
-		applyclassicphase(TBC_PHASE_TWO, r(41317, {["timeline"] = {ADDED_2_1_0}})),	-- Deathblow X11 Goggles
-		applyclassicphase(TBC_PHASE_TWO, r(41320, {["timeline"] = {ADDED_2_1_0}})),	-- Destruction Holo-gogs
-		applyclassicphase(TBC_PHASE_TWO, r(40274, {["timeline"] = {ADDED_2_1_0}})),	-- Furious Gizmatic Goggles
-		applyclassicphase(TBC_PHASE_TWO, r(41315, {["timeline"] = {ADDED_2_1_0}})),	-- Gadgetstorm Goggles
-		applyclassicphase(TBC_PHASE_TWO, r(41311, {["timeline"] = {ADDED_2_1_0}})),	-- Justicebringer 2000 Specs
-		applyclassicphase(TBC_PHASE_TWO, r(41316, {["timeline"] = {ADDED_2_1_0}})),	-- Living Replicator Specs
-		applyclassicphase(TBC_PHASE_TWO, r(41319, {["timeline"] = {ADDED_2_1_0}})),	-- Magnified Moon Specs
-		applyclassicphase(TBC_PHASE_TWO, r(41321, {["timeline"] = {ADDED_2_1_0}})),	-- Powerheal 4000 Lens
-		applyclassicphase(TBC_PHASE_TWO, r(41314, {["timeline"] = {ADDED_2_1_0}})),	-- Surestrike Goggles v2.0
-		applyclassicphase(TBC_PHASE_TWO, r(41312, {["timeline"] = {ADDED_2_1_0}})),	-- Tankatronic Goggles
-		applyclassicphase(TBC_PHASE_TWO, r(41318, {["timeline"] = {ADDED_2_1_0}})),	-- Wonderheal XT40 Shades
+		applyclassicphase(TBC_PHASE_TWO, r(41317, {	-- Deathblow X11 Goggles
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { ROGUE, MONK, DRUID },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41320, {	-- Destruction Holo-gogs
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { PRIEST, MAGE, WARLOCK },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(40274, {	-- Furious Gizmatic Goggles
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41315, {	-- Gadgetstorm Goggles
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { SHAMAN },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41311, {	-- Justicebringer 2000 Specs
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { PALADIN },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41316, {	-- Living Replicator Specs
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { SHAMAN },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41319, {	-- Magnified Moon Specs
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { DRUID },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41321, {	-- Powerheal 4000 Lens
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { PRIEST },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41314, {	-- Surestrike Goggles v2.0
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { HUNTER, SHAMAN },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41312, {	-- Tankatronic Goggles
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41318, {	-- Wonderheal XT40 Shades
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { DRUID },
+			-- #endif
+		})),
 	}),
 	filter(MISC, {
 		r(30311),	-- Adamantite Grenade
