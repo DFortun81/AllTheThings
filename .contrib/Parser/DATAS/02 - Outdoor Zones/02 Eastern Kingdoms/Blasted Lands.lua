@@ -217,19 +217,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(25684, {	-- Attune the Bloodstone (A)
-					["qg"] = 7506,	-- Bloodmage Lynnore
-					["sourceQuest"] = 25683,	-- The Dreadmaul Furnace
-					["coord"] = { 39.2, 36.2, BLASTED_LANDS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
-				q(26158, {	-- Attune the Bloodstone (H)
+				q(26158, {	-- Attune the Bloodstone (A)
 					["qg"] = 42298,	-- Kasim Sharim
 					["sourceQuest"] = 26157,	-- Kasim Sharim
 					["coord"] = { 62.4, 25.8, BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Use internal Bloodstone Teleporter
+							["provider"] = { "o", 203753 },	-- Bloodstone Teleporter
+							["coord"] = { 63.23, 25.93, BLASTED_LANDS },
+						}),
+						objective(2, {	-- Use external Bloodstone Teleporter
+							["provider"] = { "o", 203752 },	-- Bloodstone Teleporter
+							["coord"] = { 61.5, 29.9, BLASTED_LANDS },
+						}),
+					},
+				}),
+				q(25684, {	-- Attune the Bloodstone (H)
+					["qg"] = 7506,	-- Bloodmage Lynnore
+					["sourceQuest"] = 25683,	-- The Dreadmaul Furnace
+					["coord"] = { 39.2, 36.2, BLASTED_LANDS },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Use internal Bloodstone Teleporter
+							["provider"] = { "o", 203181 },	-- Bloodstone Teleporter
+							["coord"] = { 39.3, 35.7, BLASTED_LANDS },
+						}),
+						objective(2, {	-- Use external Bloodstone Teleporter
+							["provider"] = { "o", 203180 },	-- Bloodstone Teleporter
+							["coord"] = { 41.6, 31.9, BLASTED_LANDS },
+						}),
+					},
 				}),
 				q(28857, {	-- Blasted Lands: The Other Side of the World (A)
 					["qg"] = 11118,	-- Innkeeper Vizzie
@@ -1000,8 +1020,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Loramus resurrected
 							["providers"] = {
-								{ "n", 41193 },	-- Loramus' Body
-								{ "i", 56032 },	-- Loramus' Body
+								{ "n",  41193 },	-- Loramus' Body
+								{ "i",  56032 },	-- Loramus' Body
+								{ "o", 203196 },	-- Blood Altar
 							},
 							["coord"] = { 37.0, 28.6, BLASTED_LANDS },
 						}),
@@ -1067,9 +1088,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Amulet of Allistarj
-							["provider"] = { "i", 10755 },	-- Amulet of Allistarj
-							["coord"] = { 61, 26, BLASTED_LANDS },
-							["cr"] = 7666,	-- Archmage Allistarj
+							["providers"] = {
+								{ "i",  10755 },	-- Amulet of Allistarj
+								{ "o", 203229 },	-- Allistarjian Vault
+							},
+							["coord"] = { 61.6, 26.9, BLASTED_LANDS },
 						}),
 					},
 				},
@@ -1081,7 +1104,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Amulet of Grol
-							["provider"] = { "i", 10753 },	-- Amulet of Grol
+							["providers"] = {
+								{ "i",  10753 },	-- Amulet of Grol
+								{ "o", 203230 },	-- Head of Grol
+								{ "i",  56007 },	-- Broken Amulet
+							},
 							["coord"] = { 71.0, 35.4, BLASTED_LANDS },
 							["cr"] = 41267,	-- Spirit of Grol
 						}),
@@ -1107,7 +1134,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Amulet of Grol
-							["provider"] = { "i", 10753 },	-- Amulet of Grol
+							["providers"] = {
+								{ "i",  10753 },	-- Amulet of Grol
+								{ "o", 203230 },	-- Head of Grol
+								{ "i",  56007 },	-- Broken Amulet
+							},
 							["coord"] = { 71.0, 35.4, BLASTED_LANDS },
 							["cr"] = 41267,	-- Spirit of Grol
 						}),
@@ -1486,6 +1517,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(59395, {	-- Netherwane Cloak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						i(59392, {	-- Rogue Star
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
 					},
 				}),
 				q(25695, {	-- Watching Our Back (H)
@@ -1507,6 +1541,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(59431, {	-- Harmless Bracers
 							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(59430, {	-- Rogue Star
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 						}),
 					},
 				}),
