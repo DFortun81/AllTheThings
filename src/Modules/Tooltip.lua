@@ -173,21 +173,23 @@ else
 								closestInstance = searchResult;
 							end
 						end
+						if closestInstance then
+							tinsert(objects, {
+								objectID = objectID,
+								distance = closestDistance,
+								AccessibilityScore = closestInstance.AccessibilityScore + closestDistance
+							});
+							closestInstance = nil;
+							closestDistance = 999999;
+						end
 					end
-				end
-				if closestInstance then
-					tinsert(objects, {
-						objectID = objectID,
-						distance = closestDistance,
-						AccessibilityScore = closestInstance.AccessibilityScore + (closestInstance.distance or 99999) + closestDistance
-					});
 				end
 			end
 			if #objects > 0 then
 				app.Sort(objects, app.SortDefaults.Accessibility);
 				--[[
 				for i,o in ipairs(objects) do
-					print(i, o.objectID, o.AccessibilityScore);
+					print(i, o.objectID, o.AccessibilityScore, o.distance);
 				end
 				]]--
 				return objects[1].objectID;
