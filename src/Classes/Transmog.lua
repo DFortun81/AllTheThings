@@ -671,9 +671,12 @@ do
 end
 
 -- External Functionality
-app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
+app.AddSourceInformation = function(sourceID, info, group)
 	local sourceInfo = sourceID and C_TransmogCollection_GetSourceInfo(sourceID);
 	if sourceInfo then
+		local sourceGroup = group
+		-- app.PrintDebug("ASI",app:SearchLink(group))
+		-- app.PrintGroup(group)
 		local working = false;
 		local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable;
 		if #allVisualSources < 1 or not contains(allVisualSources, sourceID) then

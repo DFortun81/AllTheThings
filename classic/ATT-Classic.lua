@@ -1443,11 +1443,12 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	
 	if isTopLevelSearch then
 		-- Add various extra field info if enabled in settings
-		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group, itemString);
+		group.itemString = itemString
+		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group);
 		if group.working then working = true; end
 	end
-	
-	if app.AddSourceInformation(group.sourceID, tooltipInfo, group, group) then
+
+	if app.AddSourceInformation(group.sourceID, tooltipInfo, group) then
 		working = true;
 	end
 	

@@ -986,12 +986,10 @@ app.ProcessInformationTypes = function(tooltipInfo, reference)
 		informationType:Process(reference, tooltipInfo);
 	end
 end
-app.ProcessInformationTypesForExternalTooltips = function(tooltipInfo, reference, itemString)
-	reference.itemString = itemString;
+app.ProcessInformationTypesForExternalTooltips = function(tooltipInfo, reference)
 	for _,informationType in ipairs(app.ActiveRowReference and ActiveInformationTypes or ActiveInformationTypesForExternalTooltips) do
 		informationType:Process(reference, tooltipInfo);
 	end
-	reference.itemString = nil;
 end
 
 local function OnClickForInformationCheckBox(self)

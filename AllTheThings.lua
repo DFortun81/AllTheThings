@@ -2406,7 +2406,7 @@ local SourceLocationSettingsKey = setmetatable({
 		return "SourceLocations:Things";
 	end
 });
-local UnobtainableTexture = "|T" .. app.asset("status-unobtainable.blp") .. ":0|t";
+local UnobtainableTexture = " |T" .. app.asset("status-unobtainable.blp") .. ":0|t";
 local function HasCost(group, idType, id)
 	-- check if the group has a cost which includes the given parameters
 	if group.cost and type(group.cost) == "table" then
@@ -2449,92 +2449,126 @@ local function GetRelativeDifficulty(group, difficultyID)
 	end
 end
 
+local GetRawField = app.GetRawField
+local SourceSearcher = setmetatable({
+	itemID = function(field, id)
+		local results = GetRawField(field, id)
+		local costResults = GetRawField("itemIDAsCost", id)
+		if results or costResults then return ArrayAppend({}, results, costResults) end
+		local baseItemID = GetItemIDAndModID(id)
+		results = GetRawField(field, baseItemID)
+		costResults = GetRawField("itemIDAsCost", baseItemID)
+		if results or costResults then return ArrayAppend({}, results, costResults) end
+	end,
+	currencyID = function(field, id)
+		local results = GetRawField(field, id)
+		local costResults = GetRawField("currencyIDAsCost", id)
+		if results or costResults then return ArrayAppend({}, results, costResults) end
+	end
+},{
+	__index = function(t, field)
+		return GetRawField
+	end
+})
+
 local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	-- Create a list of sources
 	-- app.PrintDebug("SourceLocations",paramA,SourceLocationSettingsKey[paramA])
-	if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
-		local temp, text, parent = {}, nil, nil;
-		local unfiltered, right = {}, nil;
-		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
-		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
-		local FilterSettings, FilterUnobtainable, FilterCharacter, FirstParent
-			= app.RecursiveGroupRequirementsFilter, app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
-		local abbrevs = L.ABBREVIATIONS;
-		local sourcesToShow
-		-- paramB is the modItemID for itemID searches, so we may have to fallback to the base itemID if nothing sourced for the modItemID
-		local allReferences = app.GetRawField(paramA, paramB) or (paramA == "itemID" and app.GetRawField(paramA, GetItemIDAndModID(paramB))) or app.EmptyTable
-		-- app.PrintDebug("Sources count",#allReferences,paramA,paramB)
-		for _,j in ipairs(allReferences) do
-			parent = j.parent;
-			-- app.PrintDebug("source:",app:SearchLink(j),parent and parent.parent,showCompleted or not app.IsComplete(j),not HasCost(j, paramA, paramB))
-			if parent and parent.parent
-				and (showCompleted or not app.IsComplete(j))
-				and not HasCost(j, paramA, paramB)
-			then
-				text = app.GenerateSourcePathForTooltip(parent);
-				-- app.PrintDebug("SourceLocation",text,FilterUnobtainable(j),FilterSettings(parent),FilterCharacter(parent))
-				if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
-					-- doesn't meet current unobtainable filters from the Thing itself
-					if not FilterUnobtainable(j) then
-						tinsert(unfiltered, { text, UnobtainableTexture });
+	if not app.ThingKeys[paramA] then return end
+	local settings = app.Settings
+	if not settings:GetTooltipSetting("SourceLocations") or not settings:GetTooltipSetting(SourceLocationSettingsKey[paramA]) then return end
+
+	local text, parent, right
+	local character, unavailable, unobtainable = {}, {}, {}
+	local showUnsorted = settings:GetTooltipSetting("SourceLocations:Unsorted");
+	local showCompleted = settings:GetTooltipSetting("SourceLocations:Completed");
+	local FilterSettings, FilterUnobtainable, FilterCharacter, FirstParent
+		= app.RecursiveGroupRequirementsFilter, app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
+	local abbrevs = L.ABBREVIATIONS;
+	local sourcesToShow
+	-- paramB is the modItemID for itemID searches, so we may have to fallback to the base itemID if nothing sourced for the modItemID
+	-- TODO: Rings from raid showing all difficulties, need fallback matching for items... modItemID, modID, itemID
+	local allReferences = SourceSearcher[paramA](paramA,paramB) or app.EmptyTable
+	-- app.PrintDebug("Sources count",#allReferences,paramA,paramB,GetItemIDAndModID(paramB))
+	for _,j in ipairs(allReferences) do
+		parent = j.parent;
+		-- app.PrintDebug("source:",app:SearchLink(j),parent and parent.parent,showCompleted or not app.IsComplete(j),not HasCost(j, paramA, paramB))
+		if parent and parent.parent
+			and (showCompleted or not app.IsComplete(j))
+			and not HasCost(j, paramA, paramB)
+		then
+			text = app.GenerateSourcePathForTooltip(parent);
+			-- app.PrintDebug("SourceLocation",text,FilterUnobtainable(j),FilterSettings(parent),FilterCharacter(parent))
+			if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
+				-- doesn't meet current unobtainable filters from the Thing itself
+				if not FilterUnobtainable(j) then
+					unobtainable[#unobtainable + 1] = text..UnobtainableTexture
+				else
+					-- something user would currently see in a list or not
+					sourcesToShow = FilterSettings(parent) and character or unavailable
+					-- from obtainable, different character source
+					if not FilterCharacter(parent) then
+						sourcesToShow[#sourcesToShow + 1] = text.." |TInterface\\FriendsFrame\\StatusIcon-Away:0|t"
 					else
-						-- something user would currently see in a list or not
-						sourcesToShow = FilterSettings(parent) and temp or unfiltered
-						-- from obtainable, different character source
-						if not FilterCharacter(parent) then
-							tinsert(sourcesToShow, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+						-- check if this needs a status icon even though it's being shown
+						right = GetUnobtainableTexture(FirstParent(j, "e") or FirstParent(j, "u") or j)
+							or (j.rwp and app.asset("status-prerequisites"))
+						if right then
+							sourcesToShow[#sourcesToShow + 1] = text.." |T" .. right .. ":0|t"
 						else
-							-- check if this needs an unobtainable icon even though it's being shown
-							right = GetUnobtainableTexture(FirstParent(j, "e") or FirstParent(j, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
-							tinsert(sourcesToShow, { text, right and ("|T" .. right .. ":0|t") });
+							sourcesToShow[#sourcesToShow + 1] = text
 						end
 					end
 				end
 			end
 		end
-		-- app.PrintDebug("Sources count",#temp,#unfiltered)
-		-- if in Debug or no sources visible, add any unfiltered sources
-		if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
-			for _,data in ipairs(unfiltered) do
-				tinsert(temp, data);
+	end
+	-- app.PrintDebug("Sources count",#character,#unobtainable)
+	-- if in Debug, add any unobtainable & unavailable sources
+	if app.MODE_DEBUG then
+		-- app.PrintDebug("+unavailable",#unavailable,"+unobtainable",#unobtainable)
+		app.ArrayAppend(character, unavailable, unobtainable)
+	elseif #character == 0 and not (paramA == "creatureID" or paramA == "encounterID") then
+		-- no sources available to the character, add any unavailable/unobtainable sources
+		if #unavailable > 0 then
+			-- app.PrintDebug("+unavailable",#unavailable)
+			app.ArrayAppend(character, unavailable)
+		elseif #unobtainable > 0 then
+			-- app.PrintDebug("+unobtainable",#unobtainable)
+			app.ArrayAppend(character, unobtainable)
+		end
+	end
+	if #character > 0 then
+		local listing = {};
+		local maximum = settings:GetTooltipSetting("Locations");
+		local count = 0;
+		app.Sort(character, app.SortDefaults.Strings);
+		for _,text in ipairs(character) do
+			-- since the strings are sorted, we only need to add ones that are not equal to the previously-added one
+			-- instead of checking all existing strings
+			if listing[#listing] ~= text then
+				count = count + 1;
+				if count <= maximum then
+					listing[#listing + 1] = text
+					-- app.PrintDebug("add source",text)
+				end
+			-- else app.PrintDebug("exclude source by last match",text)
 			end
 		end
-		if #temp > 0 then
-			local listing = {};
-			local maximum = app.Settings:GetTooltipSetting("Locations");
-			local count = 0;
-			app.Sort(temp, app.SortDefaults.IndexOneStrings);
-			for _,data in ipairs(temp) do
-				text = data[1];
-				right = data[2];
-				if right and right:len() > 0 then
-					-- app.PrintDebug("text adj",text,"++",right)
-					text = text .. " " .. right;
-				end
-				if not contains(listing, text) then
-					count = count + 1;
-					if count <= maximum then
-						tinsert(listing, text);
-						-- app.PrintDebug("add source",text)
-					end
-				-- else app.PrintDebug("exclude source by contains",text)
-				end
-			end
-			if count > maximum then
-				tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
-			end
-			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
-			local working
-			for _,text in ipairs(listing) do
-				for source,replacement in pairs(abbrevs) do
-					text = text:gsub(source, replacement);
-				end
-				if not working and IsRetrieving(text) then working = true; end
-				local left, right = DESCRIPTION_SEPARATOR:split(text);
-				tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
-			end
-			return working
+		if count > maximum then
+			listing[#listing + 1] = (L.AND_OTHER_SOURCES):format(count - maximum)
 		end
+		local wrap = settings:GetTooltipSetting("SourceLocations:Wrapping");
+		local working
+		for _,text in ipairs(listing) do
+			for source,replacement in pairs(abbrevs) do
+				text = text:gsub(source, replacement);
+			end
+			if not working and IsRetrieving(text) then working = true; end
+			local left, right = DESCRIPTION_SEPARATOR:split(text);
+			tooltipInfo[#tooltipInfo + 1] = { left = left, right = right, wrap = wrap }
+		end
+		return working
 	end
 end
 app.AddSourceLinesForTooltip = AddSourceLinesForTooltip
@@ -2684,62 +2718,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		itemID = GetItemIDAndModID(paramB) or paramB;
 	end
 
-	-- Determine if this tooltip needs more work the next time it refreshes.
-	local working, tooltipInfo = false, {};
-
-	if isTopLevelSearch then
-		AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
-
-		-- Shared Appearances and Stuff
-		if itemID then
-			-- Merge the source group for all matching Sources of the search results
-			local sourceGroup;
-			for i,j in ipairs(group.g or group) do
-				-- app.PrintDebug("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
-				if sourceID and GroupMatchesParams(j, "sourceID", sourceID) then
-					-- app.PrintDebug("sourceID match",sourceID)
-					if sourceGroup then app.MergeProperties(sourceGroup, j)
-					else sourceGroup = app.__CreateObject(j); end
-				elseif GroupMatchesParams(j, paramA, paramB) then
-					-- app.PrintDebug("exact match",paramA,paramB)
-					if sourceGroup then app.MergeProperties(sourceGroup, j, true)
-					else sourceGroup = app.__CreateObject(j); end
-				elseif GroupMatchesParams(j, paramA, paramB, true) then
-					-- app.PrintDebug("match",paramA,paramB)
-					if sourceGroup then app.MergeProperties(sourceGroup, j, true)
-					else sourceGroup = app.__CreateObject(j); end
-				end
-			end
-
-			if not sourceGroup then sourceGroup = {}; end
-			-- Show the unobtainable source text, if necessary.
-			if sourceGroup.key then
-				-- Acquire the SourceID if it hadn't been determined yet.
-				if not sourceID and sourceGroup.link then
-					sourceID = app.GetSourceID(sourceGroup.link) or sourceGroup.sourceID;
-				end
-			else
-				sourceGroup.missing = true;
-			end
-
-			if app.AddSourceInformation(sourceID, tooltipInfo, group, sourceGroup) then
-				working = true;
-			end
-
-			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
-				local specs = GetFixedItemSpecInfo(itemID);
-				-- specs is already filtered/sorted to only current class
-				if specs and #specs > 0 then
-					tinsert(tooltipInfo, { right = GetSpecsString(specs, true, true) });
-				elseif sourceID then
-					tinsert(tooltipInfo, { right = L.NOT_AVAILABLE_IN_PL });
-				end
-			end
-
-			app.AddArtifactRelicInformation(itemID, rawlink, tooltipInfo, group);
-		end
-	end
-
 	-- Create clones of the search results
 	if not group.g then
 		-- Clone all the groups so that things don't get modified in the Source
@@ -2853,8 +2831,11 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- Ensure the param values are consistent with the new root object values (basically only affects creatureID)
 		paramA, paramB = root.key, root[root.key];
 		-- Special Case for itemID, need to use the modItemID for accuracy in item matching
-		if paramA == "itemID" or paramA == "sourceID" then
-			paramB = root.modItemID or paramB;
+		if root.itemID then
+			if paramA ~= "sourceID" then
+				paramA = "itemID"
+				paramB = root.modItemID or paramB
+			end
 			-- if our item root has a bonusID, then we will rely on upgrade module to provide any upgrade
 			-- raw groups with 'up' will never be sourced with a bonusID
 			local bonusID = root.bonusID
@@ -2921,7 +2902,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 
 		-- app.PrintDebug(group.g and #group.g,"Merge total");
-		-- app.PrintDebug("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
+		-- app.PrintDebug("Final Group",group.key,group[group.key],group.collectible,group.collected,app:SearchLink(group.sourceParent));
 		-- app.PrintDebug("Group Type",group.__type)
 
 		-- Special cases
@@ -2955,10 +2936,44 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	elseif #group.g == 0 then
 		group.g = nil;
 	end
+
+	-- Determine if this tooltip needs more work the next time it refreshes.
+	local working
 	group.working = nil;
+	group.itemString = itemString
 
 	if isTopLevelSearch then
+		-- needs tooltip if it's just a regular cached group search skip level... don't bother populating until actually needing to show into a tooltip
+		-- TODO: all of this tooltip data should be moved into Information Types
+		-- then no tooltip information will be generated within the cache search and only within tooltip
+		-- scope when required
+
+		--- Start of tooltip code migration
+		local tooltipInfo = {}
 		-- Add various text to the group now that it has been consolidated from all sources
+		if AddSourceLinesForTooltip(tooltipInfo, paramA, paramB) then
+			working = true
+		end
+
+		-- Shared Appearances and Stuff
+		if itemID then
+			if app.AddSourceInformation(sourceID, tooltipInfo, group) then
+				working = true;
+			end
+
+			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
+				local specs = GetFixedItemSpecInfo(itemID);
+				-- specs is already filtered/sorted to only current class
+				if specs and #specs > 0 then
+					tinsert(tooltipInfo, { right = GetSpecsString(specs, true, true) });
+				elseif sourceID then
+					tinsert(tooltipInfo, { right = L.NOT_AVAILABLE_IN_PL });
+				end
+			end
+
+			app.AddArtifactRelicInformation(itemID, rawlink, tooltipInfo, group);
+		end
+
 		if group.isLimited then
 			tinsert(tooltipInfo, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
 		end
@@ -3125,6 +3140,19 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 		end
 
+		-- Add various extra field info if enabled in settings
+		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group)
+
+		-- If there was any informational text generated, then attach that info.
+		if #tooltipInfo > 0 then
+			group.tooltipInfo = tooltipInfo
+			for i,item in ipairs(tooltipInfo) do
+				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color) end
+			end
+		end
+
+		--- End of tooltip code migration
+
 		group.isBaseSearchResult = true;
 
 		-- app.PrintDebug("TopLevelSearch",working and "WORKING" or "DONE",group.text or (group.key and group.key .. group[group.key]),group)
@@ -3132,17 +3160,8 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- Track if the result is not finished processing
 		if isTopLevelSearch then InitialCachedSearch = nil; end
 
-		-- Add various extra field info if enabled in settings
-		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group, itemString)
 		if group.working then working = true; end
-
-		-- If there was any informational text generated, then attach that info.
-		if #tooltipInfo > 0 then
-			group.tooltipInfo = tooltipInfo;
-			for i,item in ipairs(tooltipInfo) do
-				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
-			end
-		end
+		group.working = working
 	end
 
 	return group, working;
