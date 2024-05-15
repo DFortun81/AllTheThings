@@ -3,6 +3,16 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
+		ach(20596, {	-- Loremaster of Khaz Algar
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				20118,	-- The Isle of Dorn
+				19560,	-- The Ringing Deeps
+				20598,	-- Hallowfall
+				19559,	-- Azj-Kahet
+				20595,	-- Sojourner of Isle of Dorn
+			}},
+		}),
 		petbattle(ach(40153, {	-- Battle on Khaz Algar
 			-- TODO
 			-- crit(x, {	-- x

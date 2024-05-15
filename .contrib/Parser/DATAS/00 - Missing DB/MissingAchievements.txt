@@ -12,11 +12,8 @@ ach(19476),	-- Four Warband Mentors: The War Within
 ach(19477),	-- Five Warband Mentors: The War Within
 ach(19489),	-- Class Connoisseur
 ach(19515),	-- Algari Master of Many \\ Algarian Master of Many
-ach(19559),	-- Azj-Kahet
-ach(19560),	-- The Ringing Deeps
 ach(19704),	-- Overflowing Algari Flasks \\ Overflowing Algarian Flasks
 ach(19716),	-- Plentiful Algari Potions \\ Plentiful Algarian Potions
-ach(20118),	-- The Isle of Dorn
 ach(20255),	-- Dornogal Drift: Bronze \\ WW Zone 1 Race 1: Bronze
 ach(20256),	-- Dornogal Drift: Silver \\ WW Zone 1 Race 1: Silver
 ach(20257),	-- Dornogal Drift: Gold \\ WW Zone 1 Race 1: Gold
@@ -238,10 +235,7 @@ ach(20511),	-- Gotta Punt em' All
 ach(20512),	-- Herding Cats
 ach(20589),	-- [PH] Hero: The War Within Season 1
 ach(20594),	-- Flamegards Hope
-ach(20595),	-- Sojourner of Isle of Dorn
-ach(20596),	-- Loremaster of Khaz Algar
 ach(20597),	-- United We Stand
-ach(20598),	-- Hallowfall
 ach(40082),	-- Never Enough
 ach(40087),	-- Unbound Battle
 ach(40088),	-- A Champion's Tour: The War Within
