@@ -230,6 +230,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27773,	-- Step Three: Prophet
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						i(64596, {	-- Dream Pendant
 							["timeline"] = { ADDED_4_0_3 },
@@ -627,6 +628,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27694,	-- Pool of Tears
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 				}),
 				q(9440, {	-- Little Morsels
 					["qg"] = 17109,	-- Cersei Dusksinger
@@ -907,6 +909,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27869,	-- The Dragon and the Temple
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/ (10 [TBC] / 5 [WRATH]) Atal'ai Artifact
 							["providers"] = {
@@ -1040,6 +1043,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27704,	-- Legends of the Sunken Temple
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Priestess Udum'bra slain
 							["provider"] = { "n", 46424 },	-- Priestess Udum'bra
@@ -1051,6 +1055,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27768,	-- Step Two: The Bloodletter
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Jammal'an the Prophet slain
 							["provider"] = { "n", 46656 },	-- Jammal'an the Prophet
@@ -1062,6 +1067,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27705,	-- Step One: The Priestess
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Gomora the Bloodletter slain
 							["provider"] = { "n", 46623 },	-- Gomora the Bloodletter
@@ -1157,6 +1163,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["isBreadcrumb"] = true,
 				}),
 				q(1421, {	-- The Lost Caravan
@@ -1402,6 +1409,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1410,6 +1418,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
