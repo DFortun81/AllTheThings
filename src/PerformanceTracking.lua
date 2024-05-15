@@ -11,7 +11,7 @@ local appName, app = ...;
 local unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table_concat, rawset, setmetatable, getmetatable, tostring
 	= unpack, GetTimePreciseSec, pairs, ipairs, type, tinsert, table.concat, rawset, setmetatable, getmetatable, tostring
 
-local debug = true
+local debug = false
 print("Perf:Loading:debug:",debug)
 local print = function(...)
 	if debug then print(...) end
@@ -28,6 +28,7 @@ local keyMeta = {
 };
 local performance = setmetatable({}, {
 	__index = function(t, scopeName)
+		if not scopeName then return end
 		local scope = setmetatable({__scope=scopeName}, keyMeta);
 		rawset(t, scopeName, scope);
 		return scope;
@@ -37,6 +38,13 @@ local performance = setmetatable({}, {
 app.__perf = performance;
 
 scopes.__new = function(t, scope) scopes[t] = performance[scope] return scopes[t] end
+-- scopes.__new = function(t, scope)
+-- 	local perfScope = performance[scope]
+-- 	if perfScope then
+-- 		scopes[t] = perfScope
+-- 	end
+-- 	return perfScope or scopes[t]
+-- end
 
 app.PrintPerf = function()
 	local blob, line = {}, {};
@@ -79,22 +87,22 @@ local function GetPerfForScope(t, scope)
 	return scopes[t] or (scope and scopes.__new(t, scope)) or nil
 end
 
-local function perf_replace_function(func, name)
+local function perf_replace_function(func, key, scope)
 	if type(func) ~= "function" then return func end
-	local perf = GetPerfForScope(func)
-	if not perf then
-		print("Perf.F.NOPERF:",func)
+	local perfScope = GetPerfForScope(func, scope or tostring(func))
+	if not perfScope then
+		print("Perf.F.NOPERF:",func,key,scope)
 		return func
 	end
 
 	-- Perf capture of func calls
-	local typePerf = perf[name];
-	-- print("Perf.F:",perf.__scope,name)
+	local typePerf = perfScope[key];
+	-- print("Perf.F:",perfScope.__scope,key)
 	return function(...)
 		local now = GetTimePreciseSec();
-		-- if app.IsReady then print(now,perf.__scope,name,">",...) end
+		-- if app.IsReady then print(now,perfScope.__scope,key,">",...) end
 		local res = {func(...)};
-		-- print(now,perf.__scope,name,"<")
+		-- print(now,perfScope.__scope,key,"<")
 		typePerf.time = typePerf.time + (GetTimePreciseSec() - now);
 		typePerf.count = typePerf.count + 1;
 		return unpack(res);
@@ -103,10 +111,30 @@ end
 
 -- Returns the Function wrapped in a performance capture function.
 -- NOTE: The Caller must replace the original reference
-local function CaptureFunction(func, name, scope)
-	GetPerfForScope(func, scope or name or tostring(func))
+local function CaptureFunction(func, key, scope)
+	-- GetPerfForScope(func, scope or tostring(func))
 
-	return perf_replace_function(func, name);
+	-- return perf_replace_function(func, key, scope);
+
+	if type(func) ~= "function" then return func end
+	local perfScope = GetPerfForScope(func, scope or tostring(func))
+	if not perfScope then
+		print("Perf.F.NOPERF:",func,key,scope)
+		return func
+	end
+
+	-- Perf capture of func calls
+	local typePerf = perfScope[key];
+	-- print("Perf.F:",perfScope.__scope,key)
+	return function(...)
+		local now = GetTimePreciseSec();
+		-- if app.IsReady then print(now,perfScope.__scope,key,">",...) end
+		local res = {func(...)};
+		-- print(now,perfScope.__scope,key,"<")
+		typePerf.time = typePerf.time + (GetTimePreciseSec() - now);
+		typePerf.count = typePerf.count + 1;
+		return unpack(res);
+	end
 end
 
 local function CaptureTable(table, scope)
@@ -131,8 +159,8 @@ end
 
 local perf_meta_capture
 local function AutoCaptureTable(t, scope)
-	if IgnorePerf(t) then return t end
-	local perf = GetPerfForScope(t, scope or "NOSCOPE")
+	if IgnorePerf(t, scope) then return t end
+	local perf = GetPerfForScope(t, scope or tostring(t))
 
 	-- setup the captured table for auto-tacking
 	local mt = getmetatable(t)
@@ -158,8 +186,7 @@ perf_meta_capture = {
 			return
 		end
 
-		local perf = GetPerfForScope(t, "NOSCOPE")
-		local scope = perf.__scope
+		local scope = (GetPerfForScope(t) or GetPerfForScope(t, "NOSCOPE")).__scope
 		if type(val) == "table" then
 			local tscope = scope.."."..key
 			local pt = CaptureTable(val, tscope)
