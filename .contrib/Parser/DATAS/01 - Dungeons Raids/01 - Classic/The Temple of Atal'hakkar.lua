@@ -353,7 +353,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Avatar of Hakkar slain
-							["provider"] = { "n", 8443 },	-- Avatar of Hakkar
+							["providers"] = {
+								{ "n", 8443 },	-- Avatar of Hakkar
+								{ "n", 8440 },	-- Shade of Hakkar
+							},
 							["cost"] = { { "i", 10465, 1 } },	-- Egg of Hakkar
 						}),
 					},
@@ -711,7 +714,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			e(457, {	-- Avatar of Hakkar
-				["creatureID"] = 8443,
+				["crs"] = {
+					8443,	-- Avatar of Hakkar
+					8440,	-- Shade of Hakkar
+				},
 				-- #if AFTER 4.0.3
 				["description"] = "There is now a skull pile that you can click on in order to summon the boss.",
 				-- #else
