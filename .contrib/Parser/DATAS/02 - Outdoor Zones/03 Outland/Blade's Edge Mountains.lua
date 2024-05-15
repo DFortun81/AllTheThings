@@ -146,7 +146,7 @@ root(ROOTS.Zones, {
 							["description"] = "Found in a fairly large area around the coord, above the road.",
 						}),
 						pet(637, {	-- Skittering Cavern Crawler (PET!)
-							["description"] = "Found only in the two caves that connect Blade's Edge to Zangarmarsh.",
+							["description"] = "Found in the two caves that connect Blade's Edge to Zangarmarsh, and as secondary pet in the zone.",
 						}),
 					},
 				}),
