@@ -1784,19 +1784,27 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220249);	-- Chipped Mandible
 --i(220267);	-- Combustible Gland
 --i(220255);	-- Darkened Residue
+--i(225795);	-- Dented Pocketwatch
+--i(225792);	-- Elegant Pedipalp Wrappings
 --i(220259);	-- Gob of Mucus
+--i(225790);	-- Half-Painted Pewter Spider
 --i(220252);	-- Handful of Smooth Pebbles
 --i(220224);	-- Iridescent Integument
 --i(220380);	-- Immature Spiderling
+--i(225791);	-- Jar of Alchemical Solvent
 --i(220264);	-- Jaw with Barbed Teeth
+--i(220234);	-- Leaden Vial
 --i(220244);	-- Oversized Claw
 --i(220251);	-- Pale Gills
+--i(225787);	-- Pheromone-Covered Missive
 --i(220247);	-- Polishing Powder
 --i(220257);	-- Pulsing Pustules
 --i(220261);	-- Pungent Mushroom
 --i(220288);	-- Quivering Tail
 --i(220226);	-- Slime-Coated Membrane
+--i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
 --i(220296);	-- Thickly Webbed Foot
 --i(220223);	-- Torn Gossamer Scrap
 --i(220272);	-- Torn Manuscript Page
 --i(220295);	-- Unidentified Viscous Substance
+--i(220270);	-- Vile Catalyst

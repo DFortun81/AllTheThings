@@ -16,6 +16,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						-- i(199192),	-- as reward there currently old bag
 					},
 				}),
+				q(81827, {	-- Skyrider Racing - The Weaver's Wing
+					-- Note: Normal - qID 80279 / Advanced - 80285 / Reverse - 80291
+					["coord"] = { 53.7, 41.2, AZJ_KAHET },
+					["g"] = {
+						-- i(199192),	-- as reward there currently old bag
+					},
+				}),
 				q(82481, {	-- Enforcer Extermination
 					["coord"] = { 56.1, 58.4, AZJ_KAHET },
 				}),
@@ -31,11 +38,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(224784),	-- Pinnacle Cache
 					},
 				})),
-				--
-				--move into separate file
-				q(80592, {	-- Pact with Threads Attached
-					["coord"] = { 57.7, 47.0, AZJ_KAHET },
-				}),
 			}),
 		}),
 	}),
@@ -43,11 +45,37 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 
 root(ROOTS.HiddenQuestTriggers, {
 	-- figure out stuff, probably gonna need same stuff as for wrathion
+	--move into separate file
+	q(80592, {	-- Pact with Threads Attached (now turn in quest, instead of wq)
+		["provider"] = { "n", 220867 },	-- Y'tekhi
+		["coord"] = { 57.7, 47.0, AZJ_KAHET },
+	}),
 	q(80545),	-- picked up 'The General' 0/2500
 	q(80671, {	-- Blade of the General
 		["isWeekly"] = true,
-		["provider"] = { "n", 220867 },	-- Y'tekhi // also pop up after you choose one of 3
+		["provider"] = { "n", 220867 },	-- Y'tekhi // also pop up after you choose 1 of 3
 		["coord"] = { 57.7, 46.9, AZJ_KAHET },
+		["g"] = {
+			i(225572),	-- The General's War Chest
+		},
+	}),
+	q(80546),	-- picked up 'The Vizier' 0/2500
+	q(80672, {	-- Hand of the Vizier
+		["isWeekly"] = true,
+		["provider"] = { "n", 220867 },	-- Y'tekhi // also pop up after you choose 1 of 3
+		["coord"] = { 57.7, 46.9, AZJ_KAHET },
+		["g"] = {
+			i(225573),	-- The Vizier's Capital
+		},
+	}),
+	q(80544),	-- picked up 'The Weaver' 0/2500
+	q(80670, {	-- Eyes of the Weaver
+		["isWeekly"] = true,
+		["provider"] = { "n", 220867 },	-- Y'tekhi // also pop up after you choose 1 of 3
+		["coord"] = { 57.7, 46.9, AZJ_KAHET },
+		["g"] = {
+			i(225571),	-- The Weaver's Gratuity
+		},
 	}),
 });
 --]]

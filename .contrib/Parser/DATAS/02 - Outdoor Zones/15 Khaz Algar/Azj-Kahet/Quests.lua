@@ -256,6 +256,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- crit 'Plans Within Plans' for achievementID ? (Azj-Kahet)
 				},
 			}),
+			-- this is potentially main story quest but they pop in next build (when all zones become available)
+			-- in player journal treater as The War Withing Campaign
+			q(79197, {	-- Surface Bound
+				["sourceQuests"] = { 78248 },	-- Beginning Anew From Rock Bottom / TODO: unsure
+				["provider"] = { "n", 219252 },	-- Alleria Windrunner
+				["coord"] = { 56.2, 48.5, AZJ_KAHET },
+			}),
 			--
 			--	Some side quests at starting area
 			q(79574, {	-- The Second Front
@@ -659,6 +666,49 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			--
+			--this is probably with Weaver only and probably need to move out of here?
+			q(81471, {	-- Dropping Eaves: Saving the Past
+				["isDaily"] = true,	
+				["provider"] = { "n", 224195 },	-- Ru'murh
+				["coord"] = { 73.3, 50.9, 2213 },
+				["g"] = {
+					i(219347),	-- Kaheti Etching (QI!)
+				},
+			}),
+			q(81470, {	-- Dropping Eaves: Thieving Weave
+				["isDaily"] = true,	
+				["provider"] = { "n", 224194 },	-- Ru'murh
+				["coord"] = { 70.3, 31.8, 2213 },
+				["g"] = {
+					i(219344),	-- Immaculate Spidersilk (QI!)
+				},
+			}),
+			q(81472, {	-- Information Control: Ansurek's Truth
+				["isDaily"] = true,	
+				["provider"] = { "n", 224197 },	-- Ru'murh
+				["coord"] = { 39.8, 26.6, 2213 },
+			}),
+			q(81483, {	-- Infiltration: Production Blocker
+				["isDaily"] = true,	
+				["provider"] = { "n", 224199 },	-- Ru'murh
+				["coord"] = { 45.6, 51.0, 2216 },
+			}),
+			q(81504, {	-- Infiltration: Hidden Figures
+				["isDaily"] = true,	
+				["provider"] = { "n", 224201 },	-- Ru'murh
+				["coord"] = { 76.2, 47.4, AZJ_KAHET },
+				["g"] = {
+					i(219358),	-- Bundle of Coded Silks (QI!)
+				},
+			}),
+			--
+			--this is probably with Vizier only and probably need to move out of here?
+			q(81480, {	-- Wild Reagents: Maddening Deep // unable to finish it, broken
+				["isDaily"] = true,	
+				["provider"] = { "n", 224180 },	-- Ghos'opp
+				["coord"] = { 48.4, 61.9, AZJ_KAHET },
+			}),
+			--
 			--	Rares / Bonus Objectives / Once per character?
 			--	need to be moved into rares if didn't get bonus objective
 			q(81695, {	-- Abyssal Devourer
@@ -694,7 +744,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 216034 },	-- The XT-Minecrusher 8700
 				["coord"] = { 75.4, 61.0, AZJ_KAHET },
 				["g"] = {
-					-- no loot
+					i(216034),	-- Steam-Powered Wristwatch
 				},
 			}),
 			q(xx, {	-- Kaheti Webspeaker
@@ -715,7 +765,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 216045 },	-- Gutter Carver
 				["coord"] = { 58.4, 65.0, AZJ_KAHET },
 				["g"] = {
-					-- no loot
+					i(221243),	-- Slippers of Delirium
 				},
 			}),
 			q(81706, {	-- Bomb Beetle
@@ -748,7 +798,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					{ 68.7, 59.3, 2216 },	-- Rare spot
 				},
 				["g"] = {
-					i(221221),	-- Venomous Lurker's Greathelm (warbound)
+					i(221221),	-- Venomous Lurker's Greathelm
+				},
+			}),
+			q(81702, {	-- Kaheti Silk Hauler
+				["description"] = "Patrol on road",
+				["provider"] = { "n", 221327 },	-- Kaheti Silk Hauler
+				["coords"] = {
+					{ 60.8, 38.1, AZJ_KAHET },	-- Start
+					{ 62.7, 43.6, AZJ_KAHET },	-- Mid
+					{ 68.7, 54.8, AZJ_KAHET },	-- End
+				},
+				["g"] = {
+					-- no loot
+				},
+			}),
+			q(81704, {	-- Cha'tak
+				["provider"] = { "n", 216042 },	-- Cha'tak
+				["coord"] = { 70.0, 27.7, AZJ_KAHET },
+				["g"] = {
+					-- no loot
 				},
 			}),
 		}),
@@ -758,6 +827,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 root(ROOTS.HiddenQuestTriggers, {
 	q(79658),	-- triggered after turn in questID 78392 (The Tangled Web), probably faction (The Severed Threads) unlock
 	q(82067),	-- Click through dialogs with Mad Nerubian (n: 222381 @ 54.8, 25.3), could be some secret related or some kind of lockout for more dialog or just new variation of 'stay a while and listen'.
+	q(82069),	-- Click through dialogs with Kah'reht (n: 222369 @ 74.3, 38.5), same as above, little rp dialog.
 	q(82082),	-- after interact with Weathered Shadecaster (n: 222283 @ 70.4, 65.2), same as above, little rp happening.
 	q(82085),	-- after interact with Neglected Shadecaster (n: 222304 @ 8.6, 30.6, 2213), same as above, little rp happening.
 	q(82079),	-- after interact with Forgotten Shadecaster (n: 222634 @ 77.6, 70.2, 2213), same as above, little rp happening.
@@ -779,7 +849,14 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82649),	-- 'Listen to the rumor' from Eirzay (n: 224176 @ 63.8, 26.3, 2216), start questID 81494 (Relics of War: Rak-Ahat)
 	q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
 	q(82648),	-- 'Listen to the rumor' from Eirzay (n: 224174 @ 63.8, 26.3, 2216), start questID 81493 (Relics of War: The Salien Gutter Conflict)
-	--
+	-- if Weaver was choosen
+	--q(82581),	-- 'Investiage the scene' from Ru'murh (n: 224194 @ 70.3, 31.8, 2213), start questID 81470 (Dropping Eaves: Thieving Weave) // same hqt as for general, could be cross shared lockout?
+	--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past) // same hqt as for general, could be cross shared lockout?
+	--q(82645),	-- 'Consider the missive' from Ru'murh (n: 224197 @ 39.8, 26.6, 2213), start questID 81472 (Information Control: Ansurek's Truth) // same hqt as for general, could be cross shared lockout?
+	--q(82647),	-- 'Consider the missive' from Ru'murh (n: 224199 @ 45.6, 51.0, 2216), start questID 81483 (Infiltration: Production Blocker) // same hqt as for general, could be cross shared lockout?
+	--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224201 @ 76.2, 47.4), start questID 81504 (Infiltration: Hidden Figures) // same hqt as for general, could be cross shared lockout?
+	-- if Vizier was choosen
+	--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID 81480 (Wild Reagents: Maddening Deep) // same hqt as for general, could be cross shared lockout?
 	-- Probably absolutely not related to zones
 	--
 	q(79573),	-- on hitting first 80s, achievementID 19470 [One Warband Mentor: The War Within], wq unlock?

@@ -51,6 +51,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- bugged, uninteractable.
 				},
 			}),
+			o(451597, {	-- Forgotten Memorial
+				["coord"] = { 63.1, 18.3, AZJ_KAHET },
+				["questID"] = xx,
+				["g"] = {
+					-- bugged, uninteractable.
+				},
+			}),
 			o(451599, {	-- Forgotten Memorial
 				["coord"] = { 75.1, 68.2, AZJ_KAHET },
 				["questID"] = xx,
@@ -88,7 +95,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(446404, {	-- Memory Cache
-				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
+				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 5x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
 				["coord"] = { 62.7, 88.7, 2256 },	-- Azj-Kaher Lower
 				["questID"] = 82723,
 				["g"] = {
@@ -138,15 +145,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(224441),	-- Weavercloth Bandage++
 				},
 			}),
+			o(444844, {	-- Stashed Loot
+				["coords"] = {
+					{ 26.2, 54.1, AZJ_KAHET },
+					{ 75.2, 61.2, AZJ_KAHET },
+				},
+				--["questID"] = xx,	-- missing qID
+				["g"] = {
+					-- some random gray and crafting reagent
+				},
+			}),
 			o(444800, {	-- Sureki Strongbox
 				["coords"] = {
 					{ 74.9, 56.3, AZJ_KAHET },
 					{ 78.0, 49.3, 2213 },	-- Nerub'ar // more than one spot or have daily lockout because didn't fire qID
+					{ 76.3, 43.4, AZJ_KAHET },
+					{ 73.5, 45.2, AZJ_KAHET },
 				},
-				["questID"] = xx,
+				["questID"] = xx,	-- missing qtID
 				["g"] = {
-					-- no questID - bugged
-					-- missing loot table
+					-- crafting reagent and gray item
 				},
 			}),
 			o(446421, {	-- Trapped Trove
@@ -154,6 +172,94 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 82727,
 				["g"] = {
 					-- missing loot table
+				},
+			}),
+			-- The Weaver Treasures, didn't fire questID - repeatable?
+			o(445277, {	-- Threadspun Cache
+				["coords"] = {
+					{ 52.7, 35.4, AZJ_KAHET },
+					{ 37.9, 44.0, AZJ_KAHET },
+				},
+				["g"] = {
+					i(220504),	-- Deep-Dweller's Orb of the Harmonious
+				},
+			}),
+			o(444797, {	-- Threadspun Cache
+				["coords"] = {
+					{ 36.9, 41.7, AZJ_KAHET },
+					{ 51.1, 54.5, AZJ_KAHET },
+					{ 64.8, 29.9, AZJ_KAHET },
+				},
+				["g"] = {
+					-- some crafting reagent and gray item
+				},
+			}),
+			o(454340, {	-- Thimble's Cache
+				["description"] = "Interact with Thimble and follow him to reveal cache",
+				["providers"] = { "n", 224893 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 82859,
+				["coords"] = {
+					{ 31.6, 47.3, AZJ_KAHET },	-- Thimble (a bit bugged player can see vignette/different version of him during his pathway but they are uninteractable)
+					{ 32.1, 43.5, AZJ_KAHET },	-- cache spot
+				},
+				["g"] = {
+					c(3056),	-- Kej
+				},
+			}),
+			o(434527, {	-- Thimble's Cache
+				["description"] = "Interact with Thimble and follow him to reveal cache",
+				["providers"] = { "n", 226528 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 82856,
+				["coords"] = {
+					{ 54.1, 57.0, AZJ_KAHET },	-- Thimble
+					{ 53.8, 56.8, AZJ_KAHET },	-- cache spot
+				},
+				["g"] = {
+					c(3056),	-- Kej
+				},
+			}),
+			o(454342, {	-- Thimble's Cache
+				["description"] = "Interact with Thimble and follow him to reveal cache",
+				["providers"] = { "n", 224895 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 82862,
+				["coords"] = {
+					{ 75.2, 48.3, 2213 },	-- Thimble
+					{ 73.6, 29.0, 2213 },	-- cache spot
+				},
+				["g"] = {
+					c(3056),	-- Kej
+				},
+			}),
+			o(454337, {	-- Thimble's Cache
+				["description"] = "Interact with Thimble and follow him to reveal cache",
+				["providers"] = { "n", 224891 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 82858,
+				["coords"] = {
+					{ 69.9, 82.8, 2213 },	-- Thimble
+					{ 63.9, 85.7, 2213 },	-- cache spot
+				},
+				["g"] = {
+					c(3056),	-- Kej
+				},
+			}),
+			o(454331, {	-- Thimble's Cache
+				["description"] = "Interact with Thimble and follow him to reveal cache",
+				["providers"] = { "n", 224888 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 82855,
+				["coords"] = {
+					{ 72.9, 43.9, AZJ_KAHET },	-- Thimble
+					{ 74.5, 43.0, AZJ_KAHET },	-- cache spot
+				},
+				["g"] = {
+					c(3056),	-- Kej
+				},
+			}),
+			o(446420, {	-- "Weaving Supplies"
+				[providers] = { "o", 452708 },	-- "Weaving Supplies" // probably need to be switched
+				["questID"] = xx,
+				["coord"] = { 77.3, 39.0, AZJ_KAHET },
+				["g"] = {
+					-- didn't find a way to open
 				},
 			}),
 		}),
