@@ -5,42 +5,130 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(HALLOWFALL, {
 		n(TREASURES, {
-			o(xx, {	-- Arathi Treasure Hoard
-				["coord"] = { x, y, HALLOWFALL },	-- possible have more than one spot or zone specific repeatable?
-				["questID"] = xx,
+			o(444798, {	-- Arathi Treasure Hoard
+				["coords"] = {	-- have more than one spot or zone specific repeatable?
+					{ 53.6, 63.0, HALLOWFALL },
+					{ 53.7, 65.5, HALLOWFALL },
+					{ 49.5, 66.2, HALLOWFALL },
+					{ 49.7, 70.1, HALLOWFALL },
+					{ 44.1, 66.3, HALLOWFALL },
+					{ 42.1, 63.7, HALLOWFALL },
+					{ 38.7, 61.6, HALLOWFALL },
+					{ 38.1, 56.4, HALLOWFALL },
+					{ 28.0, 49.4, HALLOWFALL },
+					{ 34.0, 47.7, HALLOWFALL },
+					{ 49.6, 31.4, HALLOWFALL },
+					--well, to be fair, I'm not sure that there really a point for all coords
+				},
+				--["questID"] = xx,
 				["g"] = {
-					-- unable to loot anything / bugged
+					i(206350),	- Radiant Remnant
 				},
 			}),
-			o(xx, {	-- Illuminated Footlocker
+			o(444801, {	-- Brimming Arathi Treasure Hoard
+				["coords"] = {	-- have more than one spot or zone specific repeatable?
+					{ 53.6, 63.0, HALLOWFALL },
+				},
+				--["questID"] = xx,
+				["g"] = {
+					--
+				},
+			}),
+			--o(444804, {	-- Concentrated Shadow
+			--	["description"] = "You will able to see it only when crystal in zone is purple",
+			--	["coord"] = { 57.0, 69.7, HALLOWFALL },
+			--	["questID"] = xx,
+			--	["g"] = {
+			--		-- despawn at moment when I fill this data, I'm not really sure what deal with it now
+			--	},
+			--}),
+			o(453374, {	-- Dark Ritual
+				["description"] = "In cave",	-- I'm unsure this is treasure, rather rare.
+				["provider"] = { "o", 453359 },	-- Dark Ritual (vignette)
+				["coord"] = { 59.5, 59.7, HALLOWFALL },
+				["questID"] = 83284,
+				["g"] = {
+					i(225693),	-- Shadowed Essence
+				},
+			}),
+			o(453167, {	-- Disturbed Lyns Treasure
+				["description"] = "Bring Caesper Meaty Haunch and follow him, he will digup treasure for you",
+				["provider"] = { "n", 225948 },	-- Caesper
+				["coords"] = {
+					{ 41.8, 58.3, HALLOWFALL },	-- Caesper
+					{ 42.1, 59.0, HALLOWFALL },	-- Disturbed Lyns Treasure
+				}.
+				["questID"] = 83263,
+				["g"] = {
+					i(225592),	-- Exquisitely Eviscerated Muscle
+					i(225639),	-- Recipe: Exquisitely Eviscerated Muscle (RECIPE!)
+				},
+			}),
+			o(437302, {	-- Fisherman's Pouch
+				["coord"] = { 56.1, 14.6, HALLOWFALL },
+				["questID"] = 81518,
+			}),
+			o(437211, {	-- Illuminated Footlocker
 				["description"] = "Catch lightning orbs in highlighted zones 5 times to loot this chest",
-				["coord"] = { x, y, HALLOWFALL },
-				["questID"] = xx,
+				["coord"] = { 58.4, 27.2, HALLOWFALL },
+				["questID"] = 81468,
 				["g"] = {
-					i(),	-- Cave Spelunker's Torch (TOY!)
+					i(224552),	-- Cave Spelunker's Torch (TOY!)
 				},
 			}),
-			o(xx, {	-- Jewel of the Cliffs
-				["coord"] = { x, y, HALLOWFALL },
-				["questID"] = xx,
+			o(441606, {	-- Jewel of the Cliffs
+				["coord"] = { 55.8, 69.5, HALLOWFALL },
+				["questID"] = 81971,
 				["g"] = {
-					i(xx, {	-- Massive Sapphire Chunk
-						i(),	-- Stunning Sapphire x3
+					i(224580, {	-- Massive Sapphire Chunk
+						i(212508),	-- Stunning Sapphire x3
 					}),
 				},
 			}),
-			o(xx, {	-- Kobyss Ritual Cache
-				["coord"] = { x, y, HALLOWFALL },	-- possible have more than one spot or zone specific repeatable?
-				["questID"] = xx,
+			o(444802, {	-- Kobyss Ritual Cache
+				["coords"] = {	-- possible have more than one spot or zone specific repeatable?
+					{ 35.0, 52.1, HALLOWFALL },
+					{ 29.2, 56.2, HALLOWFALL },
+					{ 28.9, 62.1, HALLOWFALL },
+					{ 24.1, 52.4, HALLOWFALL },
+					{ 29.7, 46.0, HALLOWFALL },
+					{ 51.0, 28.4, HALLOWFALL },
+					-- Same as for Arathi Treasure Hoard
+				},
+				--["questID"] = xx,
 				["g"] = {
 					-- unable to loot anything / bugged
 				},
 			}),
-			o(xx, {	-- Lost Memento
-				["coord"] = { x, y, HALLOWFALL },
-				["questID"] = xx,
+			o(441638, {	-- Lost Memento
+				["coord"] = { 50.1, 13.8, HALLOWFALL },
+				["questID"] = 81978,
 				["g"] = {
-					i(),	-- Lightbearer's Pendant (warbound)
+					i(224575),	-- Lightbearer's Pendant (warbound)
+				},
+			}),
+			o(453283, {	-- Smuggler's Treasure
+				["description"] = "Fly down to dead body and loot key",
+				["coord"] = { 55.1, 51.9, HALLOWFALL },
+				["questID"] = 83273,
+				["g"] = {
+					i(225335),	-- Smuggler's Key
+					--
+					i(225256),	-- PH_2
+				},
+			}),
+			o(453749, {	-- Palawltar's Codex of Dimensional Structure
+				["coord"] = { 48.7, 64.7, HALLOWFALL },
+				["questID"] = 83309,
+				["g"] = {
+					i(225216),	-- Palawltar's Codex of Dimensional Structure [book]
+				},
+			}),
+			o(453751, {	-- Care and Feeding of the Imperial Lynx
+				["coord"] = { 69.4, 44.0, HALLOWFALL },
+				["questID"] = 83310,
+				["g"] = {
+					i(225207),	-- Care and Feeding of the Imperial Lynx [book]
 				},
 			}),
 		}),

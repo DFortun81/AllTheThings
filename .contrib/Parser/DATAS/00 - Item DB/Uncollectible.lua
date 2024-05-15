@@ -1780,20 +1780,27 @@ i(211798);	-- Un-Raised Bone Fragments
 ------------------
 --i(220287);	-- Acid-Filled Sack
 --i(220290);	-- Barbed Pincers
+--i(225801);	-- Braided Seaweed Bangle
 --i(220277);	-- Carapace Fragment
 --i(220249);	-- Chipped Mandible
+--i(220256);	-- Clump of Rotting Detritus
 --i(220267);	-- Combustible Gland
+--i(225804);	-- Crumpled Patrol Assignment
 --i(220255);	-- Darkened Residue
 --i(225795);	-- Dented Pocketwatch
+--i(220271);	-- Downy Clump
 --i(225792);	-- Elegant Pedipalp Wrappings
+--i(225814);	-- Feather-on-a-Stick
 --i(220259);	-- Gob of Mucus
 --i(225790);	-- Half-Painted Pewter Spider
+--i(220279);	-- Handful of Polished Scales
 --i(220252);	-- Handful of Smooth Pebbles
 --i(220224);	-- Iridescent Integument
 --i(220380);	-- Immature Spiderling
 --i(225791);	-- Jar of Alchemical Solvent
 --i(220264);	-- Jaw with Barbed Teeth
 --i(220234);	-- Leaden Vial
+--i(225803);	-- Lynx Tag Collar
 --i(220244);	-- Oversized Claw
 --i(220251);	-- Pale Gills
 --i(225787);	-- Pheromone-Covered Missive
@@ -1801,10 +1808,16 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220257);	-- Pulsing Pustules
 --i(220261);	-- Pungent Mushroom
 --i(220288);	-- Quivering Tail
+--i(225807);	-- Rune-Carved Bone
+--i(220266);	-- Sharpened Digging Claws
 --i(220226);	-- Slime-Coated Membrane
+--i(225810);	-- Smoked Visor
+--i(220268);	-- Spiraled Horn
 --i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
 --i(220296);	-- Thickly Webbed Foot
 --i(220223);	-- Torn Gossamer Scrap
 --i(220272);	-- Torn Manuscript Page
+--i(220282);	-- Tuft of Whiskers
 --i(220295);	-- Unidentified Viscous Substance
 --i(220270);	-- Vile Catalyst
+--i(225802);	-- Well-Worn Darning Needle

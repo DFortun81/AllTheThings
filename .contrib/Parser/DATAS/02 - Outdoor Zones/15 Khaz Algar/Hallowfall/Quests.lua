@@ -386,17 +386,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			-- End of orphan kid quest
 			-- General Steelstrike quests in city
-			q(xx, {	-- The Brothers Braunpyke
+			q(82628, {	-- The Brothers Braunpyke
 				--breadcrumbs?
 				--["sourceQuests"] = { xx },	-- TODO: figure out when they become available
-				["provider"] = { "n", xxx },	-- General Steelstrike
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 215335 },	-- General Steelstrike
+				["coord"] = { 40.5, 50.8, HALLOWFALL },
 			}),
-			q(xx, {	-- The Last Mage
+			q(80175, {	-- The Last Mage
 				--breadcrumbs?
 				--["sourceQuests"] = { xx },	-- TODO: figure out when they become available
-				["provider"] = { "n", xxx },	-- General Steelstrike
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 215335 },	-- General Steelstrike
+				["coord"] = { 40.5, 50.8, HALLOWFALL },
+			}),
+			q(83322, {	-- The Dawnbreaker: The Christening
+				--dungeon quest?
+				--["sourceQuests"] = { xx },	-- TODO: figure out when they become available
+				["provider"] = { "n", 215335 },	-- General Steelstrike
+				["coord"] = { 40.5, 50.8, HALLOWFALL },
 			}),
 			-- Brothers Braunpyke quest chain start
 			q(xx, {	-- Stave Them Off
@@ -466,7 +472,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- Start Last Mage quest chain
 			q(xx, {	-- Arcane Trickles
 				["sourceQuests"] = { xx },	-- The Last Mage
-				["provider"] = { "n", xxx },	-- Wenren Althal
+				["provider"] = { "n", 219135 },	-- Wenren Althal
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
 					i(217269),	-- Arcane Suffused Organ (QI!)
@@ -500,9 +506,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 
 			--
 			--	Bonus Objectives during quests
-			q(xx, {	-- Release the Beasts
-				["sourceQuests"] = { xx },	-- Tricks of the Dark OR Fish Are Food, Not Friends
-				["coord"] = { x, y, HALLOWFALL },
+			q(81568, {	-- Release the Beasts
+				--["sourceQuests"] = { xx },	-- Tricks of the Dark OR Fish Are Food, Not Friends
+				["coord"] = { 55.2, 26.8, HALLOWFALL },
 				["g"] = {
 					i(217352),	-- Gasping Fish (QI!) // or could be also drop during Tricks of the Dark AND/OR Fish Are Food, Not Friends
 				},
@@ -510,31 +516,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--
 			--	Rares / Bonus Objectives
 			--	need to be moved into rares if didn't get bonus objective
-			q(xx, {	-- 
-				["provider"] = { "n", xxx },	-- Deepfiend Azellix
-				["coord"] = { x, y, HALLOWFALL },
+			q(xx, {	-- Deepfiend Azellix // didn't fire 
+				["provider"] = { "n", 218458 },	-- Deepfiend Azellix
+				["coord"] = { 72.1, 64.3, HALLOWFALL },
 				["g"] = {
 					-- no loot
 				},
 			}),
 			q(xx, {	-- Radiant Echo
-				["provider"] = { "n", xxx },	-- Radiant Echo
-				["coord"] = { x, y, HALLOWFALL },	-- found 2 spots
+				["provider"] = { "n", 222165 },	-- Worldsoul Memory
+				["coord"] = { 60.7, 67.5, HALLOWFALL },	-- found 2 spots
 				["costs"] = { "i", xx, x },	-- Radiant Chords x?
 				["g"] = {
 					-- unable to start it
 				},
 			}),
-			q(xx, {	-- 
-				["provider"] = { "n", xxx },	-- The Taskmaker
-				["coord"] = { x, y, HALLOWFALL },
+			q(80009, {	-- The Taskmaker
+				["provider"] = { "n", 218444 },	-- The Taskmaker
+				["coord"] = { 56.4, 69.0, HALLOWFALL },
 				["g"] = {
 					-- no loot
 				},
 			}),
-			q(xx, {	-- 
-				["provider"] = { "n", xxx },	-- Ixlorb the Spinner
-				["coord"] = { x, y, HALLOWFALL },
+			q(xx, {	-- Ixlorb the Spinner // didn't fire 
+				["provider"] = { "n", 218426 },	-- Ixlorb the Spinner
+				["coord"] = { 57.0, 64.4, HALLOWFALL },
 				["g"] = {
 					-- no loot
 				},
@@ -546,23 +552,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223382),	-- Murkshade Grips
 				},
 			}),
-			q(xx, {	-- 
-				["provider"] = { "n", xxx },	-- The Perchfather
-				["coord"] = { x, y, HALLOWFALL },
+			q(81791, {	-- The Perchfather // I'm unsure if this is right quest, since there daily reset happens at same time
+				["provider"] = { "n", 221648 },	-- The Perchfather
+				["coord"] = { 44.0, 16.4, HALLOWFALL },
 				["g"] = {
-					i(220271),	-- Downy Clump (trash item, possible just rng)
+					-- no loot
 				},
 			}),
-			q(xx, {	-- 
-				["provider"] = { "n", xxx },	-- Strenght of Beledar
-				["coord"] = { x, y, HALLOWFALL },
+			q(81849, {	-- Strenght of Beledar
+				["provider"] = { "n", 221690 },	-- Strenght of Beledar
+				["coord"] = { 42.7, 31.3, HALLOWFALL },
 				["g"] = {
-					i(220266),	-- Sharpened Digging Claws (trash item, possible just rng)
+					-- no loot
 				},
 			}),
-			q(xx, {	-- 
-				["provider"] = { "n", xxx },	-- Grimslice (vignette name is Ragefin Champion)
-				["coord"] = { x, y, HALLOWFALL },
+			q(xx, {	-- Grimslice // didn't fire
+				["description"] = "Walking around park and can be killed by random ally npcs in area",
+				["provider"] = { "n", 221551 },	-- Grimslice
+				["coord"] = { 35.0, 50.4, HALLOWFALL },
 				["g"] = {
 					-- no loot
 				},
@@ -574,19 +581,51 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
-			q(xx, {	-- 
-				["provider"] = { "n", xxx },	-- Pride of Beledar
-				["coord"] = { x, y, HALLOWFALL },
+			q(81882, {	-- Pride of Beledar
+				["provider"] = { "n", 221786 },	-- Pride of Beledar
+				["coord"] = { 57.3, 48.6, HALLOWFALL },
 				["g"] = {
 					i(223007),	-- Lance of Beledar's Pride (warbound)
-					i(220268),	-- Spiraled Horn (trash item, possible just rng)
 				},
 			}),
-			q(xx, {	-- 
-				["provider"] = { "n", xxx },	-- Sir Alastair Purefire
-				["coord"] = { x, y, HALLOWFALL },
+			q(81853, {	-- Sir Alastair Purefire
+				["provider"] = { "n", 221708 },	-- Sir Alastair Purefire
+				["coord"] = { 35.9, 35.5, HALLOWFALL },
 				["g"] = {
 					i(221245),	-- Righteous Path Treads (warbound)
+				},
+			}),
+			q(81756, {	-- Feral Denmother
+				["provider"] = { "n", 221534 },	-- Lytfang the Lost
+				["coord"] = { 23.0, 59.2, HALLOWFALL },
+				["g"] = {
+					
+				},
+			}),
+			q(81836, {	-- Horror of the Shallows
+				["description"] = "Swimming near coast",
+				["provider"] = { "n", 221668 },	-- Horror of the Shallows
+				["coords"] = {
+					{ 28.3, 44.3, HALLOWFALL },
+					{ 25.4, 46.4, HALLOWFALL },
+				},
+				["g"] = {
+					i(221255),	-- Sharpened Scalepiercer
+				},
+			}),
+			q(79271, {	-- Sloshmuck
+				["provider"] = { "n", 215805 },	-- Sloshmuck
+				["coord"] = { 73.4, 52.4, HALLOWFALL },
+				["g"] = {
+					i(221255),	-- Sharpened Scalepiercer
+				},
+			}),
+			q(xx, {	-- Dark Ritual
+				["description"] = "In cave",
+				["provider"] = { "o", 453359 },	-- 
+				["coord"] = { 59.5, 59.7, HALLOWFALL },
+				["g"] = {
+					i(),	-- Shadowed Essence
 				},
 			}),
 		}),
@@ -619,6 +658,15 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(),	--
 	q(),	--
 	-- 
-
+	q(80068),	-- [DNT] Infirmary Tracker, fire near Caesper (n: 225948 @ 41.8, 58.3) and Ryfus Sacredpyr (n: 221630  @ 40.0, 51.1)
+	--n: 221630 Ryfus Sacredpyr @ 40.0, 51.1
+	-- Question 1
+	q(83300),	-- 3rd option (something with cosmos related) / other option didn't fire any hqt
+	-- Question 2
+	q(83301),	-- 3rd option (Patience and respect) / require either Disturbed Lyns Treasure or Care and Feeding of the Imperial Lynx being flagged (otherwise this option won't be here)
+	-- Question 3
+	q(),	-- 3rd option / unknown requirements
+	--
+	q(82063),	-- A Worn Down Book @ 25.1, 53.7
 });
 --]]
