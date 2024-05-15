@@ -244,6 +244,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27214, {	-- A Disturbing Development
 					["qg"] = 23951,	-- Lieutenant Aden
+					-- CRIEVE NOTE: If someone completed the original quest chain pre-Cata, they are unable to pick this quest up.
+					["altQuests"] = { 11137 },	-- Defias in Dustwallow?
 					["sourceQuest"] = 27213,	-- The End of the Deserters
 					["coord"] = { 65.1, 47.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
@@ -439,6 +441,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.5, 72.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/8 Wyrmtail
+							["providers"] = {
+								{ "i",  33175 },	-- Wyrmtail
+								{ "o", 186463 },	-- Wyrmtail
+							},
+						}),
 						i(33235, {	-- Journeyman's Epaulets
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -3047,7 +3055,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(27412, {	-- WANTED: Goreclaw the Ravenous
-					["provider"] = { "o", 186426 },	-- Wanted Poster (Goreclaw)
+					["provider"] = { "o", 186426 },	-- Wanted Poster
 					["coord"] = { 41.7, 73.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
