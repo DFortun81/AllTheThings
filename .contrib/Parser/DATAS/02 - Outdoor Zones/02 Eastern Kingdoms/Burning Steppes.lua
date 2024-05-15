@@ -1858,22 +1858,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(28569, {	-- The Bogpaddle Bullet (A)
-					["qg"] = 9177,	-- Oralius
-					["coord"] = { 71.8, 68.0, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(40, 40, 15),
-				}),
-				q(28570, {	-- The Bogpaddle Bullet (H)
-					["qg"] = 10260,	-- Kibler
-					["coord"] = { 54.9, 22.6, BURNING_STEPPES },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(40, 40, 15),
-				}),
 				{	-- The Kodocaller's Horn
 					["allianceQuestData"] = q(28252, {	-- The Kodocaller's Horn (A)
 						["sourceQuest"] = 28245,	-- Grunt Work (A)
