@@ -262,7 +262,6 @@ ach(40150),	-- Children's Entertainer
 ach(40151),	-- Mereldar Menance
 ach(40152),	-- Flight Glyphs: The Three Shields
 ach(40166),	-- Khaz Algar Glyph Hunter
-ach(40194),	-- Khaz Algar Safari
 ach(40210),	-- Deephaul Ravine Victory
 ach(40211),	-- Deephaul Ravine Veteran
 ach(40215),	-- Deephaul Ravine Perfection

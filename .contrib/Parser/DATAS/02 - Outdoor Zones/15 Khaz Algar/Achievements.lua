@@ -89,5 +89,131 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- 	["coord"] = { x, y, map },
 			-- }),
 		})),
+		petbattle(ach(40194, {	-- Khaz Algar Safari
+			crit(67292, {	-- Chitin Burrower
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67293, {	-- Arachnoid Hatchling
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67294, {	-- Fallowspark Glowfly
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67295, {	-- Azure Flickerfly
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67296, {	-- Vibrant Glowfly
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67297, {	-- Aubergine Scootlefish
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67298, {	-- Verdant Scootlefish
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67299, {	-- Voidling Ooze
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67300, {	-- Shadowy Oozeling
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67301, {	-- Common Ploughworm
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67302, {	-- Ebon Ploughworm
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67303, {	-- Greenlands Chicken
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67304, {	-- Arathi Chicken
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67305, {	-- Meek Bloodlasher
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67306, {	-- Ghostcap Menace
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67307, {	-- Winged Arachnoid
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67308, {	-- Vile Bloodtick
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67309, {	-- Magmashell Crawler
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67317, {	-- Bedrock Stonecharger
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67310, {	-- Mossy Snail
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67311, {	-- Subterranean Dartwog
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67312, {	-- Troglofrog
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67313, {	-- Fragrant Stonelamb
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67314, {	-- Sandstone Mosswool
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67315, {	-- Shale Mosswool
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67316, {	-- Umbral Amalgam
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67318, {	-- Cobalt Ramolith
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67319, {	-- Granite Ramolith
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(67320, {	-- Alabaster Stonecharger
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(68269, {	-- Snuffling
+				-- TODO
+				--["crs"] = { x },
+			}),
+			crit(68270, {	-- Cinderhoney Emberstinger
+				-- TODO
+				--["crs"] = { x },
+			}),
+		})),
 	}),
 })));
