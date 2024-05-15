@@ -4,13 +4,11 @@ ach(19409),	-- Working Underground
 ach(19410),	-- Algari Master of All \\ Algarian Master of All
 ach(19414),	-- Algari Cook \\ Algarian Cook
 ach(19415),	-- Algari Fisherman \\ Algarian Fisherman
-ach(19459),	-- Level 80
 ach(19460),	-- Two Warband Mentors: The War Within
 ach(19470),	-- One Warband Mentor: The War Within
 ach(19475),	-- Three Warband Mentors: The War Within
 ach(19476),	-- Four Warband Mentors: The War Within
 ach(19477),	-- Five Warband Mentors: The War Within
-ach(19489),	-- Class Connoisseur
 ach(19515),	-- Algari Master of Many \\ Algarian Master of Many
 ach(19704),	-- Overflowing Algari Flasks \\ Overflowing Algarian Flasks
 ach(19716),	-- Plentiful Algari Potions \\ Plentiful Algarian Potions

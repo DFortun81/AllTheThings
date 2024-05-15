@@ -70,6 +70,24 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_4_0_1 },
 			["rank"] = 5,
 		})),
+		ach(19489, {	-- Class Connoisseur
+			["timeline"] = { ADDED_11_0_1_LAUNCH },
+			["g"] = {
+				crit(55223),	-- Druid
+				crit(55224),	-- Hunter
+				crit(64623),	-- Mage
+				crit(64625),	-- Paladin
+				crit(64626),	-- Priest
+				crit(64627),	-- Rogue
+				crit(64628),	-- Shaman
+				crit(64629),	-- Warlock
+				crit(64630),	-- Warrior
+				crit(64631),	-- Death Knight
+				crit(64624),	-- Monk
+				crit(55225),	-- Demon Hunter
+				crit(64622),	-- Evoker
+			},
+		}),
 		ach(7380, {	-- Double Agent
 			["timeline"] = { ADDED_5_0_4 },
 		}),
@@ -140,6 +158,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_2_0_1 },
 			["rank"] = 3,
 		})),
+		ach(19459, {["timeline"] = { ADDED_11_0_1_LAUNCH }}),	-- Level 80
 		ach(15805, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),	-- Level 70
 		ach(14783, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 60
 		ach(14782, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 50
