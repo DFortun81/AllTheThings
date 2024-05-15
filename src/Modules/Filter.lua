@@ -483,9 +483,10 @@ local function RecursiveDirectGroupRequirementsFilter(group)
 end
 app.RecursiveDirectGroupRequirementsFilter = RecursiveDirectGroupRequirementsFilter;
 local function RecursiveUnobtainableFilter(group)
+	local Unobtainable, Event = AccountFilters.Unobtainable or NoFilter, AccountFilters.Event or NoFilter
 	while group do
 		---@diagnostic disable-next-line: redundant-parameter
-		if not ((AccountFilters.Unobtainable or NoFilter)(group) and (AccountFilters.Event or NoFilter)(group)) then return; end
+		if not (Unobtainable(group) and Event(group)) then return; end
 		group = group.parent;
 	end
 	return true;
