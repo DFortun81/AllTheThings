@@ -147,7 +147,6 @@ local DefaultFields = {
 				score = score + 1;
 			end
 		end
-		score = score + (t.distance or 99999);
 		t.AccessibilityScore = score;
 		return score;
 	end

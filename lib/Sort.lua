@@ -35,6 +35,9 @@ local function toLowerString(value)
 	---@diagnostic disable-next-line: undefined-field
 	return tostring(value):lower();
 end
+local function calculateAccessibility(source)
+	return source.AccessibilityScore or 10000000;
+end
 local function defaultComparison(a,b)
 	-- If either object doesn't exist
 	if a then
@@ -266,6 +269,9 @@ app.SortDefaults = setmetatable({
 			return calculateSourceQuestDepth(a, sortA) < calculateSourceQuestDepth(b, sortB);
 		end
 		return sortA < sortB;
+	end,
+	Accessibility = function(a, b)
+		return calculateAccessibility(a) < calculateAccessibility(b);
 	end,
 	name = function(a,b)
 		-- If either object doesn't exist

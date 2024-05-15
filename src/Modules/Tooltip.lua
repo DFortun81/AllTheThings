@@ -179,7 +179,7 @@ else
 					tinsert(objects, {
 						objectID = objectID,
 						distance = closestDistance,
-						AccessibilityScore = closestInstance.AccessibilityScore + closestDistance
+						AccessibilityScore = closestInstance.AccessibilityScore + (closestInstance.distance or 99999) + closestDistance
 					});
 				end
 			end

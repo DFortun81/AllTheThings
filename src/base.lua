@@ -212,14 +212,6 @@ app.RaceIndex = type(raceIndex) == "table" and raceIndex[factionGroup] or raceIn
 app.RaceID = raceID;
 app.Race = race;
 
--- Accessibility Sorting
-local function calculateAccessibility(source)
-	return source.AccessibilityScore or 10000000;
-end
-app.SortDefaults.Accessibility = function(a, b)
-	return calculateAccessibility(a) < calculateAccessibility(b);
-end
-
 -- Whether ATT should ignore saving data experienced during the play session
 app.IgnoreDataCaching = function()
 	-- This function currently returns false on Tournament realms. Very good. >_<
