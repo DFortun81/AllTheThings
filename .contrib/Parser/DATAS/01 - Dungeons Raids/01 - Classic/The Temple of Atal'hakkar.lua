@@ -719,8 +719,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					8440,	-- Shade of Hakkar
 				},
 				-- #if AFTER 4.0.3
-				["description"] = "There is now a skull pile that you can click on in order to summon the boss.",
 				["provider"] = { "o", 208321 },	-- Shrine of the Soulflayer
+				["description"] = "There is now a skull pile that you can click on in order to summon the boss.",
 				-- #else
 				["description"] = "Requires the use of the Egg of Hakkar or Yeh'kinya's Scroll to summon.\n\nOnce you start the fight, the room will fill with a variety of mobs. You need to kill the 4 Wind Serpents that appear, and loot the blood off of them, and use it to douse one of the fires in each corner of the room.\n\nEvery time you douse a fire, a dragonkin will walk in and start channeling a spell on Hakkar. Do not let them complete this channel.\n\nThe boss spawns after all 4 flames are doused.",
 				["cost"] = {
