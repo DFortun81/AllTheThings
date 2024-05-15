@@ -302,6 +302,7 @@ HeaderAssignments = {
 	["SOD - Soul Brokers"] = -1000378,
 	["SOD - Wild Polymorph"] = -1000377,
 	["Soulshape Forms"] = -1000090,
+	["Source IDs"] = -1000904,
 	["Sourceless"] = -1000272,
 	["South"] = -1000002,
 	["Speak to Brother Romulus"] = -1000198,
@@ -422,4 +423,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000902;
+NextHeaderID = -1000905;

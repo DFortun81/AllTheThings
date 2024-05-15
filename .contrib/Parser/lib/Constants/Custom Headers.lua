@@ -64,6 +64,7 @@ EXPANSION_PRELAUNCH = -520;
 
 -- NYI
 TRADING_POST_NYI = -11111;
+SOURCEID = -11112;
 --------------------------
 --     T H E  E N D     --
 --------------------------
