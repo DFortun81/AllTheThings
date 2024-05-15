@@ -784,6 +784,7 @@ for key, value in pairs({
 		[-10072] = "Interface\\Icons\\ability_deathwing_assualtaspects",			-- N'Zoth Assault
 	-- NYI
 		[-11111] = app.asset("Category_TradingPost"),						-- Trading Post NYI
+		[-11112] = "Interface\\Icons\\Inv_misc_questionmark",				-- Source IDs NYI
 	};
 	["HEADER_NAMES"] = {
 	-- Class Trial
@@ -963,7 +964,8 @@ for key, value in pairs({
 		[-10072] = "N'Zoth Assault",
 
 	-- NYI
-		[-11111] = "TradingPost",												-- Trading Post NYI
+		[-11111] = "Trading Post",												-- Trading Post NYI
+		[-11112] = "Source IDs",												-- Source IDs NYI
 	};
 
 	-- Module Localizations
