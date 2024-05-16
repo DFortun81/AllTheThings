@@ -690,7 +690,7 @@ local InformationTypes = {
 		GetValue = app.GameBuildVersion >= 30000 and GetValueForInformationType or function(t, reference)
 			local value = GetValueForInformationType(t, reference);
 			if value then
-				if reference.sourceQuest or reference.sourceQuests then
+				if reference.sourceQuests then
 					AppendInformationTextEntry({
 						left = L.ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO,
 						wrap = true,
