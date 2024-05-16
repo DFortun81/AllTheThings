@@ -980,7 +980,7 @@ local function RowOnEnter(self)
 					local bestMatch = nil;
 					for j,sa in ipairs(sas) do
 						if sa.achievementID == sourceAchievementID then
-							if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sa) and not sa.saved) then
+							if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sa) and not sa.collected) then
 								bestMatch = sa;
 							end
 						end
@@ -1004,7 +1004,7 @@ local function RowOnEnter(self)
 				if prereq.isGuild then text = text .. " (" .. GUILD .. ")"; end
 				tinsert(tooltipInfo, {
 					left = text,
-					right = GetCompletionIcon(prereq.saved),
+					right = GetCompletionIcon(prereq.collected),
 				});
 			end
 		end
