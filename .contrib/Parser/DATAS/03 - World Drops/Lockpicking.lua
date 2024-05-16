@@ -150,8 +150,10 @@ root(ROOTS.WorldDrops, {
 					2163,   -- Shadowblade
 					12044,  -- Arctic Pendant
 					12014,  -- Arctic Ring
-					21953,  -- Design Emerald Owl
-					21949,  -- Design Ruby Serpent
+					-- #if AFTER TBC
+					21953,  -- Design: Emerald Owl
+					21949,  -- Design: Ruby Serpent
+					-- #endif
 					12057,  -- Dragonscale Band
 					12046,  -- Jungle Necklace
 					12002,  -- Marble Circle
@@ -279,8 +281,10 @@ root(ROOTS.WorldDrops, {
 			i(4638,  {	-- Reinforced Steel Lockbox
 				["sym"] = { {
 					"select", "itemID",
+					-- #if AFTER TBC
 					21947,   -- Design: Gem Studded Band
 					21945,   -- Design: The Aquamarine Ward
+					-- #endif
 					16215,   -- Formula: Enchant Boots - Greater Stamina (RECIPE!)
 					11225,   -- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 					16218,   -- Formula: Enchant Bracer - Superior Versatility / CLASSIC: Formula: Enchant Bracer - Superior Spirit (RECIPE!)
@@ -397,9 +401,11 @@ root(ROOTS.WorldDrops, {
 					"select", "itemID",
 					11974,  -- Aquamarine Ring
 					12043,  -- Desert Choker
+					-- #if AFTER TBC
 					21947,  -- Design: Gem Studded Band
 					21945,  -- Design: The Aquamarine Ward
 					21944,  -- Design: Truesilver Boar
+					-- #endif
 					7552,   -- Falcon's Hook
 					12011,  -- Forest Loop
 					11225,  -- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
