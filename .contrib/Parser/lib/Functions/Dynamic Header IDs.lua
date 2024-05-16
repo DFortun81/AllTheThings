@@ -170,6 +170,7 @@ HeaderAssignments = {
 	["Great Odyn and the Firelord"] = -1000317,
 	["Group Finder"] = -1000023,
 	["Guild"] = -1000094,
+	["Guild Vendors"] = -1000905,
 	["Hallow's End"] = -1000217,
 	["Halls of Gold and Glory"] = -1000319,
 	["Hands"] = -1000065,
@@ -423,4 +424,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000905;
+NextHeaderID = -1000906;

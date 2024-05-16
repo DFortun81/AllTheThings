@@ -602,7 +602,7 @@ localize(L.HEADER_NAMES, {
 	[-1000036] = WARDROBE_SETS,
 	[-1000037] = SPECIAL,
 	[-1000038] = "Treasures",
-	[-1000039] = BATTLE_PET_SOURCE_3,
+	[-1000039] = TUTORIAL_TITLE20,
 	[-1000042] = WORLD.." "..RAID_BOSSES,
 	[-1000044] = ZONE.." "..BATTLE_PET_SOURCE_1,
 	[-1000048] = "Dragons of Nightmare",
@@ -747,6 +747,7 @@ localize(L.HEADER_NAMES, {
 	[-1000863] = PVP_RATED_BATTLEGROUND,
 	[-1000870] = "The Troll Incursion",
 	[-1000872] = "Plunderstorm",
+	[-1000905] = GUILD .. " " .. TUTORIAL_TITLE20,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -959,6 +960,7 @@ localize(L.HEADER_ICONS, {
 	[-1000863] = "Interface/Icons/INV_BannerPVP_03",
 	[-1000870] = "135727",
 	[-1000872] = "133168",
+	[-1000905] = _.asset("Interface_Vendor"),
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -14725,6 +14727,7 @@ localize(L.HEADER_NAMES, {
 	[-1000013] = "常规商人物品",
 	[-1000017] = "掉落",
 	[-1000019] = "勘探",
+	[-1000039] = "商人",
 	[-1000048] = "梦魇之龙",
 	[-1000055] = "限时事件",
 	[-1000056] = "一箱",
@@ -14785,6 +14788,7 @@ localize(L.HEADER_NAMES, {
 	[-1000861] = select(2, GetAchievementInfo(6124)).."：第10赛季",
 	[-1000862] = "灾变角斗士：第11赛季",
 	[-1000870] = "巨魔来袭",
+	[-1000905] = GUILD .. "商人",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

@@ -246,49 +246,69 @@ root(ROOTS.Character, n(createHeader({
 		}),
 		faction(FACTION_GUILD),
 	}),
-	n(VENDORS, {
-		["coords"] = {
-			{ 48.4, 75.5, ORGRIMMAR },	-- Goram
-			{ 69.8, 43.7, UNDERCITY },	-- Kim Horn
-			-- #if AFTER 8.0.1
-			{ 56.8, 88.6, ORGRIMMAR },	-- Kim Horn
-			-- #endif
-			{ 78.3, 85.2, SILVERMOON_CITY },	-- Larissia
-			{ 52.5, 54.9, NORTHREND_DALARAN },	-- Mirla Silverblaze
-			{ 53.6, 69.6, THE_EXODAR },	-- Nuri
-			-- #if AFTER 8.0.1
-			{ 70.2, 14.7, BORALUS },	-- Perry Charlton
-			-- #endif
-			{ 37.1, 63.3, THUNDER_BLUFF },	-- Randah Songhorn
-			{ 58.7, 46.4, SHATTRATH_CITY },	-- Riha
-			{ 64.1, 77.0, STORMWIND_CITY },	-- Shay Pressler
-			{ 36.3, 85.7, IRONFORGE },	-- Steeg Haskell
-			{ 64.7, 37.6, DARNASSUS },	-- Velia Moonbow
-			-- #if AFTER 8.0.1
-			{ 58.0, 43.6, THE_GREAT_SEAL },	-- Ulla Skycloven [Dazar'alor]
-			-- #endif
+	n(createHeader({
+		readable = "Guild Vendors",
+		icon = [[~_.asset("Interface_Vendor")]],
+		text = {
+			en = [[~GUILD .. " " .. TUTORIAL_TITLE20]],
+			cn = [[~GUILD .. "商人"]],	-- String in GlobalStrings.lua means slightly different thing in zhCN so translating it manually
 		},
-		["crs"] = {
-			46572,	-- Goram (Orgrimmar)
-			51496,	-- Kim Horn (Undercity)
-			-- #if AFTER 8.0.1
-			142856,	-- Kim Horn (Orgrimmar)
-			-- #endif
-			51502,	-- Larissia (Silvermoon)
-			51512,	-- Mirla Silverblaze (Dalaran)
-			51501,	-- Nuri (The Exodar)
-			-- #if AFTER 8.0.1
-			142086,	-- Perry Charlton (Boralus)
-			-- #endif
-			51503,	-- Randah Songhorn (Thunder Bluff)
-			52268,	-- Riha (Shattrath)
-			46602,	-- Shay Pressler (Stormwind)
-			51495,	-- Steeg Haskell (Ironforge)
-			51504,	-- Velia Moonbow (Darnassus)
-			-- #if AFTER 8.0.1
-			142185,	-- Ulla Skycloven (Dazar'alor)
-			-- #endif
+	}), {
+		["allianceQuestData"] = {
+			["coords"] = {
+				{ 52.5, 54.9, NORTHREND_DALARAN },	-- Mirla Silverblaze
+				{ 53.6, 69.6, THE_EXODAR },	-- Nuri
+				-- #if AFTER 8.0.1
+				{ 70.2, 14.7, BORALUS },	-- Perry Charlton
+				-- #endif
+				{ 58.7, 46.4, SHATTRATH_CITY },	-- Riha
+				{ 64.1, 77.0, STORMWIND_CITY },	-- Shay Pressler
+				{ 36.3, 85.7, IRONFORGE },	-- Steeg Haskell
+				{ 64.7, 37.6, DARNASSUS },	-- Velia Moonbow
+			},
+			["crs"] = {
+				51512,	-- Mirla Silverblaze (Dalaran)
+				51501,	-- Nuri (The Exodar)
+				-- #if AFTER 8.0.1
+				142086,	-- Perry Charlton (Boralus)
+				-- #endif
+				52268,	-- Riha (Shattrath)
+				46602,	-- Shay Pressler (Stormwind)
+				51495,	-- Steeg Haskell (Ironforge)
+				51504,	-- Velia Moonbow (Darnassus)
+			},
 		},
+		["hordeQuestData"] = {
+			["coords"] = {
+				{ 48.4, 75.5, ORGRIMMAR },	-- Goram
+				{ 69.8, 43.7, UNDERCITY },	-- Kim Horn
+				-- #if AFTER 8.0.1
+				{ 56.8, 88.6, ORGRIMMAR },	-- Kim Horn
+				-- #endif
+				{ 78.3, 85.2, SILVERMOON_CITY },	-- Larissia
+				{ 52.5, 54.9, NORTHREND_DALARAN },	-- Mirla Silverblaze
+				{ 37.1, 63.3, THUNDER_BLUFF },	-- Randah Songhorn
+				{ 58.7, 46.4, SHATTRATH_CITY },	-- Riha
+				-- #if AFTER 8.0.1
+				{ 58.0, 43.6, THE_GREAT_SEAL },	-- Ulla Skycloven [Dazar'alor]
+				-- #endif
+			},
+			["crs"] = {
+				46572,	-- Goram (Orgrimmar)
+				51496,	-- Kim Horn (Undercity)
+				-- #if AFTER 8.0.1
+				142856,	-- Kim Horn (Orgrimmar)
+				-- #endif
+				51502,	-- Larissia (Silvermoon)
+				51512,	-- Mirla Silverblaze (Dalaran)
+				51503,	-- Randah Songhorn (Thunder Bluff)
+				52268,	-- Riha (Shattrath)
+				-- #if AFTER 8.0.1
+				142185,	-- Ulla Skycloven (Dazar'alor)
+				-- #endif
+			},
+		},
+		["OnInit"] = [[function(t) _.ResolveQuestData(t); return t; end]],
 		["g"] = {
 			i(69209, {	-- Illustrious Guild Tabard
 				["minReputation"] = { FACTION_GUILD, FRIENDLY },
