@@ -77,6 +77,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(217905),	-- Timerunner's Draught of Health
 			i(217904),	-- Timerunner's Draught of Power
 			i(217902),	-- Timerunner's Vial
+			i(221509),	-- Timerunner's Weaponry
 		}),
 		filter(GEMS, {
 			------ Uncommon Gem ------
@@ -118,6 +119,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(211105),	-- Perfect Sustaining Emerald
 			i(211101),	-- Perfect Swift Opal
 			i(220373),	-- Perfect Versatile Diamond
+		}),
+		filter(ONE_HANDED_MACES, {
+			i(224079),	-- Timerunner's Mace
+		}),
+		filter(SHIELDS, {
+			i(224078),	-- Timerunner's Shield
+		}),
+		filter(STAVES, {
+			i(224081),	-- Timerunner's Staff
 		}),
 		filter(TRINKET_F, {
 			------ Tinker ------

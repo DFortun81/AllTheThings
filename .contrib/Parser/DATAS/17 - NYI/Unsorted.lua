@@ -6322,14 +6322,10 @@ root(ROOTS.Unsorted, {
 					i(224075),	-- Timerunner's Greatsword
 					i(224076),	-- Timerunner's Bow
 					i(224077),	-- Timerunner's Dagger
-					i(224078),	-- Timerunner's Shield
-					i(224079),	-- Timerunner's Mace
 					i(224080),	-- Timerunner's Sword
-					i(224081),	-- Timerunner's Staff
 					i(224120),	-- Timerunner's Gem Box
 					i(220763),	-- Bonus Experience
 					i(220764),	-- Bonus Experience
-					i(221509),	-- Timerunner's Weaponry
 				}),
 				filter(QUEST_ITEMS, {
 					i(217174),	-- Bronze
