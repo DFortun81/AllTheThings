@@ -708,7 +708,6 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36682),	-- Seduced Blade
 			i(36672),	-- Strange Dagger
 			i(36481),	-- Trapper Knife
-			i(43613),	-- The Dusk Blade
 			i(36475),	-- Seal Shortblade
 			i(36674),	-- Old Tooth
 			i(36671),	-- Ominous Dagger
@@ -895,7 +894,6 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(36527),	-- Blackened Blade
 			i(36528),	-- Skeleton's Sword
 			i(37807),	-- Lydia's Sharpened Swordbreaker
-			i(43611),	-- Krol Cleaver
 			i(44311),	-- Avool's Sword of Jin
 			i(36519, {	-- Moonlit Katana
 				["timeline"] = { ADDED_3_0_2, REMOVED_6_0_2, ADDED_10_0_7 }, -- Maybe never removed, have to check in WoD Classic

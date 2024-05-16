@@ -14,6 +14,17 @@ root(ROOTS.WorldDrops, {
 				-- #endif
 			}),
 			expansion(EXPANSION.WRATH, {
+				category(227, {	-- Weapons
+					i(43611, {	-- Krol Cleaver
+						["timeline"] = { ADDED_3_0_2 },
+					}),
+					i(43612, {	-- Spineslicer
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+					}),
+					i(43613, {	-- The Dusk Blade
+						["timeline"] = { ADDED_3_0_2 },
+					}),
+				}),
 				filter(TOYS, {
 					i(36863, {	-- Decahedral Dwarven Dice (TOY!)
 						["description"] = "Can be pickpocketed from Northrend humanoids.",

@@ -627,12 +627,10 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		}),
 		-- #if BEFORE MOP
 		filter(THROWN, {
-			--[[
 			-- TODO: https://www.wowhead.com/cata/items/weapons/thrown?filter=166;4;0#items;0+1+20
-			i(, {	-- 
-				["timeline"] = { REMOVED_5_0_4 },
+			i(55472, {	-- Angerfang Knives
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
-			]]--
 		}),
 		-- #endif
 	}),

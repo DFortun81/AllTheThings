@@ -534,6 +534,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 55.5, 72.8, 204 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								i(59634, {	-- Beak of the Merciless One
+									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+								}),
 								i(59632),	-- Riptide Legguards
 								i(59633),	-- Severed Visionary Tentacle
 							},
@@ -544,6 +547,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 51.4, 60.7, 204 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
+								i(59631, {	-- Beak of the Merciless One
+									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+								}),
 								i(59629),	-- Riptide Legguards
 								i(59630),	-- Severed Visionary Tentacle
 							},

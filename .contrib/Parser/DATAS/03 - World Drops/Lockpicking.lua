@@ -262,6 +262,7 @@ root(ROOTS.WorldDrops, {
 				["sym"] = { {
 					"select", "itemID",
 					43611,  -- Krol Cleaver
+					43612,  -- Spineslicer
 					43613,  -- The Dusk Blade
 				}},
 			}),

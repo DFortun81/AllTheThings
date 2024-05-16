@@ -129,8 +129,10 @@ root(ROOTS.PVP, applyclassicphase(WRATH_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbl
 						i(42343),	-- Savage Gladiator's Spellblade
 						i(42388),	-- Savage Gladiator's Staff
 						i(42448),	-- Savage Gladiator's Touch of Defeat
-						-- #if ANYCLASSIC
-						i(42444),	-- Savage Gladiator's War Edge (Throw Wep)
+						-- #if BEFORE MOP
+						i(42444, {	-- Savage Gladiator's War Edge (Throw Wep)
+							["timeline"] = { REMOVED_5_0_4 },
+						}),
 						-- #endif
 						i(44415),	-- Savage Gladiator's War Staff
 					}),

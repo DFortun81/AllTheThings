@@ -1949,6 +1949,7 @@ _.ObjectNames = {
 	[178204] = "Warsong Axe Shipment",
 	[178224] = "Dire Pool",
 	[178227] = "Murgut's Totem Basket",
+	[178247] = "Naga Brazier",
 	[178553] = "Hive'Ashi Pod",
 	[178609] = "Holiday Snow",
 	[179485] = "Broken Trap",

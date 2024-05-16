@@ -785,9 +785,6 @@ root(ROOTS.NeverImplemented, {
 	n(WEAPONS, {
 		expansion(EXPANSION.WRATH, {
 			n(SEASON_DEADLY, {
-				-- #if NOT ANYCLASSIC
-				i(42444),	-- Savage Gladiator's War Edge (Throw Wep)
-				-- #endif
 				i(42523),	-- Savage Gladiator's Endgame
 				i(42529),	-- Savage Gladiator's Reprieve
 				i(42535),	-- Savage Gladiator's Grimoire
