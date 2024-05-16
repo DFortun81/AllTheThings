@@ -6309,8 +6309,6 @@ root(ROOTS.Unsorted, {
 					i(219219),	-- Timerunner's Starter Kit
 					i(219220),	-- Catch Up Thread
 					i(219222),	-- Time-Lost Artifact
-					i(223908),	-- Minor Bronze Cache
-					i(223909),	-- Lesser Bronze Cache
 					i(223910),	-- Bronze Cache
 					i(223911),	-- Greater Bronze Cache
 					i(223953),	-- Timerunner's Parting Pack

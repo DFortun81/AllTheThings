@@ -3214,7 +3214,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				["g"] = {
 					i(223908, {	-- Minor Bronze Cache
 						currency(BRONZE),
-					})
+					}),
+					i(223909, {	-- Lesser Bronze Cache
+						currency(BRONZE),
+					}),
 				},
 			}, {
 				q(80448, {	-- A Fresh Scene
