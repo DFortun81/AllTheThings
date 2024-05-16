@@ -87,6 +87,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29570, {	-- Rescuing the Expedition
 					["qg"] = 54675,	-- Watcher Jhang
+					["sourceQuest"] = 29571,	-- Defending the Wilds
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(61, 61, 10),
 					["groups"] = {
