@@ -17,7 +17,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 		q(80504),   -- triggers a bit after character was created for wow remix (druid, ne) (spellID - 441562 / [DNT] Flag Quest) / Same for Braghe / Same for Myrhial
 		q(79439),	-- Triggers after 79438 (Goodbyes Are Hard When You Live Forever) and mop intro cinematic (spellID - 433399 / [DNT] Tutorial Complete)
-		--q(80318),	-- Triggers after 31732 (Unleash Hell) (A)
+		q(80318),	-- Triggers after 31732 (Unleash Hell) (A) / 31765 Paint it Red! (H)
 		q(80451),	-- Extract Gem Override (spellID 436522)
 		q(80452),	-- Unraveling Sands Override (spellID 436525)
 		--q(81575),	-- after turn in qID 31735 (The Right Tool For The Job) or level up to 12 (possible unlock for qID 81638 (Home Is Where the Hearthstone Is or qID 80012 (Dragonriding))
