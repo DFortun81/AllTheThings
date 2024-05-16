@@ -3031,21 +3031,19 @@ root(ROOTS.Zones, {
 						["requireSkill"] = TAILORING,
 						["groups"] = {
 							recipe(56017, {	-- Deathchill Cloak
+								["sourceAchievements"] = {
+									41,		-- Loremaster of Northrend (A)
+									-- #if BEFORE 5.0.4
+									1360,	-- Loremaster of Northrend (H)
+									-- #endif
+								},
 								["description"] = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
 								["requireSkill"] = TAILORING,
-								["sym"] = {
-									-- #IF ANYCLASSIC
-									{ "select", "achievementID", 1360 },	-- Loremaster of Northrend
-									-- #ELSE
-									{ "select", "achievementID", 41 },	-- Loremaster of Northrend
-									-- #ENDIF
-									{ "pop" }
-								},
 							}),
 							recipe(56016, {	-- Wispcloak
+								["sourceAchievement"] = 1288,	-- Northrend Dungeonmaster
 								["description"] = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
 								["requireSkill"] = TAILORING,
-								["sym"] = {{ "select", "achievementID", 1288 },{ "pop" }},	-- Northrend Dungeonmaster
 							}),
 						},
 					}),
