@@ -653,12 +653,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25494,	-- A Champion's Collar
 				}),
 				heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
+					["description"] = "Only available to players who have not quested through Mount Hyjal.",
 					["timeline"] = { ADDED_4_2_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 85,
 					["u"] = REMOVED_FROM_GAME,
 				})),
 				warchiefscommand(q(29390, {	-- Guardians of Hyjal: Call of the Ancients (H)
+					["description"] = "Only available to players who have not quested through Mount Hyjal.",
 					["timeline"] = { ADDED_4_2_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 85,
@@ -1754,7 +1756,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						cl(HUNTER, {
 							i(73000),	-- Beastsoul Rifle
-							un(REMOVED_FROM_GAME, i(73001)),	-- Beastsoul Spear (missing on the vendor implementation)
+							--i(73001),	-- Beastsoul Spear (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
 							i(72913),	-- Beastsoul Helm
 							i(72915),	-- Beastsoul Spaulders
 							i(73146),	-- Beastsoul Choker

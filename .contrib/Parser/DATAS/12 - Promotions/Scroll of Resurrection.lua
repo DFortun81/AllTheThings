@@ -96,7 +96,7 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 		}),
 		cl(HUNTER, {
 			i(73000),	-- Beastsoul Rifle
-			un(REMOVED_FROM_GAME, i(73001)),	-- Beastsoul Spear (missing on the vendor implementation)
+			i(73001),	-- Beastsoul Spear
 			i(72913),	-- Beastsoul Helm
 			i(72915),	-- Beastsoul Spaulders
 			i(73146),	-- Beastsoul Choker
