@@ -113,8 +113,13 @@ root(ROOTS.WorldDrops, {
 			i(63349, {	-- Flame-Scarred Junkbox
 				["timeline"] = { ADDED_4_0_1 },
 				["groups"] = {
-					i(68163),	-- The Twilight Blade
 					i(68161),	-- Krol Decapitator
+					-- #if BEFORE MOP
+					i(68162, {	-- Spinerender
+						["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					}),
+					-- #endif
+					i(68163),	-- The Twilight Blade
 				},
 			}),
 			i(43622, {	-- Froststeel Lockbox
@@ -259,12 +264,17 @@ root(ROOTS.WorldDrops, {
 			}),
 			i(43575, {	-- Reinforced Junkbox
 				["timeline"] = { ADDED_3_0_2 },
-				["sym"] = { {
-					"select", "itemID",
-					43611,  -- Krol Cleaver
-					43612,  -- Spineslicer
-					43613,  -- The Dusk Blade
-				}},
+				["groups"] = {
+					i(43611, {	-- Krol Cleaver
+						["timeline"] = { ADDED_3_0_2 },
+					}),
+					i(43612, {	-- Spineslicer
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+					}),
+					i(43613, {	-- The Dusk Blade
+						["timeline"] = { ADDED_3_0_2 },
+					}),
+				},
 			}),
 			i(4638,  {	-- Reinforced Steel Lockbox
 				["sym"] = { {
@@ -370,12 +380,17 @@ root(ROOTS.WorldDrops, {
 					12026,  -- Quicksilver Pendant
 					14499,  -- Quicksilver Ring
 					12056,  -- Ring Of The Heavens
-					-- #if BEFORE MOP
-					34622,  -- Spinesever	-- ["timeline"] = { REMOVED_5_0_4 },
-					-- #endif
 					12045,  -- Swamp Pendant
 					12027   -- Vermilion Necklace
 				}},
+				-- #if BEFORE MOP
+				["groups"] = {
+					-- CRIEVE NOTE: This is the ONLY valid source, please don't remove.
+					i(34622, {	-- Spinesever
+						["timeline"] = { ADDED_2_3_0, REMOVED_5_0_4 },
+					}),
+				},
+				-- #endif
 			}),
 			i(16884, {	-- Sturdy Junkbox
 				["sym"] = { {

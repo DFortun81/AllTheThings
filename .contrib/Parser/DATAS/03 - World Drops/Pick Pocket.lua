@@ -6,34 +6,14 @@ root(ROOTS.WorldDrops, {
 	header(HEADERS.Spell, 921, {	-- Pick Pocket
 		["description"] = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
 		["groups"] = {
+			-- #if NOT ANYCLASSIC
 			expansion(EXPANSION.CLASSIC, {
-				-- #if NOT ANYCLASSIC
 				i(6150, {	-- A Frayed Knot
 					["description"] = "Can be pickpocketed from Classic humanoids.",
-				}),
-				-- #endif
-			}),
-			-- #if BEFORE MOP
-			expansion(EXPANSION.TBC, {
-				category(227, {	-- Weapons
-					i(34622, {	-- Spinesever
-						["timeline"] = { ADDED_2_3_0, REMOVED_5_0_4 },
-					}),
 				}),
 			}),
 			-- #endif
 			expansion(EXPANSION.WRATH, {
-				category(227, {	-- Weapons
-					i(43611, {	-- Krol Cleaver
-						["timeline"] = { ADDED_3_0_2 },
-					}),
-					i(43612, {	-- Spineslicer
-						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
-					}),
-					i(43613, {	-- The Dusk Blade
-						["timeline"] = { ADDED_3_0_2 },
-					}),
-				}),
 				filter(TOYS, {
 					i(36863, {	-- Decahedral Dwarven Dice (TOY!)
 						["description"] = "Can be pickpocketed from Northrend humanoids.",
