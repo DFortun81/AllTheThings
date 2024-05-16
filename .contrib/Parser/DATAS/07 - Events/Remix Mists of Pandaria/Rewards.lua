@@ -1,6 +1,15 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
+local CLOAK_OF_INFINITE_BONUSIDS = function()
+	local cloaks = {};
+	for bonusID=10973,11028,1 do
+		table.insert(cloaks, i(210333, {	-- Cloak of Infinite Potential
+			["bonusID"] = bonusID,
+		}));
+	end
+	return cloaks;
+end
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	n(REWARDS, {
 		i(211279, {	-- Cache of Infinite Treasure
@@ -50,6 +59,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		i(219278),	-- Infinite Thread of Speed
 		i(219275),	-- Infinite Thread of Stamina
 		i(219281),	-- Infinite Thread of Versatility
+		filter(CLOAKS, CLOAK_OF_INFINITE_BONUSIDS()),
 		filter(CONSUMABLES, {
 			i(217925),	-- Bottle of Bees
 			i(217926),	-- Bottle of Dead Bees

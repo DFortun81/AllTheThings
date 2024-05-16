@@ -206,7 +206,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["provider"] = { "n", 216594 },	-- Moratari
 					["coord"] = { 25.7, 51.6, TIMELESS_ISLE },
 					["g"] = {
-						i(210333),	-- Cloak of Infinite Potential
+						i(210333, {	-- Cloak of Infinite Potential
+							["bonusID"] = 10972,
+						}),
 						i(215438),	-- Chronobadge (QI!)
 						i(215442),	-- Cloak of Infinite Potential (QI)
 					},
