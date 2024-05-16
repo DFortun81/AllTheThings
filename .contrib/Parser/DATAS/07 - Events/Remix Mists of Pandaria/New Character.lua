@@ -20,8 +20,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(80318),	-- Triggers after 31732 (Unleash Hell) (A) / 31765 Paint it Red! (H)
 		q(80451),	-- Extract Gem Override (spellID 436522)
 		q(80452),	-- Unraveling Sands Override (spellID 436525)
-		--q(81575),	-- after turn in qID 31735 (The Right Tool For The Job) or level up to 12 (possible unlock for qID 81638 (Home Is Where the Hearthstone Is or qID 80012 (Dragonriding))
-		--q(81576),	-- after turn in qID 31735 (The Right Tool For The Job) or level up to 12 (possible unlock for qID 81638 (Home Is Where the Hearthstone Is or qID 80012 (Dragonriding))
+		q(81575),	-- after turn in qID 31735 (The Right Tool For The Job) / 31772 (Priorities! (H)) or level up to 12 (possible unlock for qID 81638 (Home Is Where the Hearthstone Is or qID 80012 (Dragonriding))
+		q(81576),	-- after turn in qID 31735 (The Right Tool For The Job) / 31772 (Priorities! (H)) or level up to 12 (possible unlock for qID 81638 (Home Is Where the Hearthstone Is or qID 80012 (Dragonriding))
 		--q(81577),	-- shortly after turn in qID 31739 (Priorities! (A)) or level up to 13
 		--q(81578),	-- shortly after turn in qID 31739 (Priorities! (A)) or level up to 13
 		--q(81579),	-- shortly after turn in qID 31744 (Unfair Trade) or level up to 14 /Jade Temple or level up
