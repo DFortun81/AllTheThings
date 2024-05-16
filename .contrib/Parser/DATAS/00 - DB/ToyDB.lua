@@ -10,13 +10,13 @@ end
 -----------------
 -- TBC Classic --
 i(184871);	-- Dark Portal
--- #if BEFORE MOP
+-- #if ANYCLASSIC
 i(38233);	-- Path of Illidan
 -- #endif
 
 -- Wrath Classic --
--- #if BEFORE MOP
-i(40110);	-- Haunted Momento	-- TODO: It would be neat if Retail ATT could detect items manually in your inventory as toys you should keep
+-- #if ANYCLASSIC
+i(40110);	-- Haunted Momento (Should be a toy...)
 -- #endif
 i(198647);	-- Fishspeaker's Lucky Lure
 -- #if ANYCLASSIC
@@ -28,6 +28,9 @@ i(38506);	-- Don Carlos' Famous Hat -- With ICC Patch of Wrath Classic, they mad
 -----------------
 i(18984);	-- Dimensional Ripper - Everlook
 i(21540);	-- Elune's Lantern
+-- #if ANYCLASSIC
+i(6948);	-- Hearthstone (Should be a toy...)
+-- #endif
 i(1973);	-- Orb of Deception
 i(13379);	-- Piccolo of the Flaming Fire
 i(17716);	-- Snowmaster 9000
@@ -42,6 +45,9 @@ i(215449);	-- World Shrinker
 -----------------
 -- PATCH 2.0.1 --
 -----------------
+-- #if ANYCLASSIC
+i(31337);	-- Orb of the Blackwhelp (Should be a toy...)
+-- #endif
 -- #if BEFORE 7.0.3
 i(30847);	-- X-52 Rocket Helmet
 -- #endif
@@ -53,6 +59,9 @@ i(23767);	-- Crashin' Thrashin' Robot
 i(30542);	-- Dimensional Ripper - Area 52
 i(30690);	-- Power Converter
 i(30544);	-- Ultrasafe Transporter: Toshley's Station
+-- #if ANYCLASSIC
+i(23821);	-- Zapthrottle Mote Extractor (Should be a toy...)
+-- #endif
 
 -----------------
 -- PATCH 2.1.0 --
@@ -95,6 +104,9 @@ i(38301);	-- D.I.S.C.O.
 -- PATCH 2.4.3 --
 -----------------
 i(37710);	-- Crashin' Thrashin' Racer Controller
+-- #if ANYCLASSIC
+i(37863);	-- Direbrew's Remote (Should be a toy...)
+-- #endif
 
 -----------------
 -- PATCH 3.0.3 --
@@ -137,6 +149,9 @@ i(45057);	-- Wind-Up Train Wrecker
 -- PATCH 3.2.0 --
 -----------------
 i(46843);	-- Argent Crusader's Banner
+-- #if ANYCLASSIC
+i(49040);	-- Jeeves (Should be a toy...)
+-- #endif
 i(46780);	-- Ogre Pinata
 i(48933);	-- Wormhole Generator: Northrend
 
@@ -152,6 +167,9 @@ i(50471);	-- The Heartbreaker
 -----------------
 i(54343);	-- Blue Crashin' Thrashin' Racer Controller
 i(54212);	-- Instant Statue Pedestal
+-- #if ANYCLASSIC
+i(52251);	-- Jaina's Locket (Should be a toy...)
+-- #endif
 i(52201);	-- Muradin's Favor
 i(52253);	-- Sylvanas' Music Box
 i(54438);	-- Tiny Blue Ragdoll

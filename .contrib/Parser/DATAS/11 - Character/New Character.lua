@@ -1767,6 +1767,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 	})),
 	-- #endif
+	i(6948),	-- Hearthstone
 }));
 
 root(ROOTS.HiddenQuestTriggers, n(NEW_CHARACTER, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {

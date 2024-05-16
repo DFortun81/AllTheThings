@@ -560,10 +560,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		filter(TOYS, {
 			i(40768),	-- MOLL-E (TOY!)
 			-- #if ANYCLASSIC
-			applyclassicphase(WRATH_PHASE_THREE, i(49040, {	-- Jeeves [Why isn't this a toy?!]
-				["type"] = "toyID",
-				["f"] = TOYS,
-			})),
+			applyclassicphase(WRATH_PHASE_THREE, i(49040)),	-- Jeeves [Why isn't this a toy?!]
 			-- #endif
 			i(48933, {["timeline"] = {ADDED_3_2_0}}),	-- Wormhole Generator: Northrend (TOY!)
 		}),
