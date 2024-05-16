@@ -971,6 +971,44 @@ local function RowOnEnter(self)
 			end
 		end
 	end
+	if reference.sourceAchievements and (isDebugMode or not reference.collected) then
+		local currentMapID, prereqs, bc = app.CurrentMapID, {}, {};
+		for i,sourceAchievementID in ipairs(reference.sourceAchievements) do
+			if sourceAchievementID > 0 and (isDebugMode or not ATTAccountWideData.Achievements[sourceAchievementID]) then
+				local sas = SearchForField("achievementID", sourceAchievementID);
+				if #sas > 0 then
+					local bestMatch = nil;
+					for j,sa in ipairs(sas) do
+						if sa.achievementID == sourceAchievementID then
+							if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sa) and not sa.saved) then
+								bestMatch = sa;
+							end
+						end
+					end
+					if bestMatch then
+						tinsert(prereqs, bestMatch);
+					end
+				else
+					tinsert(prereqs, app.CreateAchievement(sourceAchievementID));
+				end
+			end
+		end
+
+		if prereqs and #prereqs > 0 then
+			tinsert(tooltipInfo, {
+				left = "This has an incomplete prerequisite achievement that you need to complete first.",
+				wrap = true,
+			});
+			for i,prereq in ipairs(prereqs) do
+				local text = "   " .. prereq.achievementID .. ": " .. (prereq.text or RETRIEVING_DATA);
+				if prereq.isGuild then text = text .. " (" .. GUILD .. ")"; end
+				tinsert(tooltipInfo, {
+					left = text,
+					right = GetCompletionIcon(prereq.saved),
+				});
+			end
+		end
+	end
 	if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
 		if reference.g then
 			-- If we're at the Auction House

@@ -64,6 +64,9 @@ root(ROOTS.Character, n(createHeader({
 		ach(5265),	-- The Daily Grind
 		-- PLAYER VS. PLAYER
 			-- GENERAL --
+		ach(5031, {	-- Horde Slayer
+			["races"] = ALLIANCE_ONLY,
+		}),
 		ach(5171),	-- Blood Elf Slayer*
 		ach(5194),	-- City Attacker [H]
 		ach(5195),	-- City Attacker [A]
@@ -554,6 +557,7 @@ root(ROOTS.Character, n(createHeader({
 					["minReputation"] = { FACTION_GUILD, HONORED },
 				}),
 			})),
+			--[[
 			ach(5031, {	-- Horde Slayer
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -562,6 +566,12 @@ root(ROOTS.Character, n(createHeader({
 						["races"] = ALLIANCE_ONLY,
 					}),
 				},
+			}),
+			]]--
+			i(65361, {	-- Guild Page [A] (PET!)
+				["sourceAchievement"] = 5031,	-- Horde Slayer
+				["minReputation"] = { FACTION_GUILD, HONORED },
+				["races"] = ALLIANCE_ONLY,
 			}),
 			ach(5035, {	-- Master Crafter
 				i(65360, {	-- Cloak of Coordination

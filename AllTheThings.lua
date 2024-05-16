@@ -7626,6 +7626,24 @@ local StoreWindowPosition = function(self)
 		end
 	end
 end
+-- Adds ATT information about the list of Achievements into the provided tooltip
+local function AddAchievementInfoToTooltip(info, achievements, reference)
+	if achievements then
+		local text, mapID;
+		for _,ach in ipairs(achievements) do
+			text = ach.text;
+			if not text then
+				text = RETRIEVING_DATA;
+				reference.working = true;
+			end
+			text = GetCompletionIcon(ach.saved) .. " [" .. ach.achievementID .. "] " .. text;
+			if ach.isGuild then text = text .. " (" .. GUILD .. ")"; end
+			tinsert(info, {
+				left = text
+			});
+		end
+	end
+end
 -- Adds ATT information about the list of Quests into the provided tooltip
 local function AddQuestInfoToTooltip(info, quests, reference)
 	if quests then
@@ -8716,6 +8734,35 @@ RowOnEnter = function (self)
 				left = L.BREADCRUMBS_WARNING,
 			});
 			AddQuestInfoToTooltip(tooltipInfo, bc, reference);
+		end
+	end
+	if reference.sourceAchievements and (not reference.collected or isDebugMode) then
+		local prereqs, sas = {};
+		for i,sourceAchievementID in ipairs(reference.sourceAchievements) do
+			if sourceAchievementID > 0 and (isDebugMode or not ATTAccountWideData.Achievements[sourceAchievementID]) then
+				sas = SearchForField("achievementID", sourceAchievementID);
+				if #sas > 0 then
+					bestMatch = nil;
+					for j,sa in ipairs(sas) do
+						if sa.achievementID == sourceAchievementID then
+							if isDebugMode or (not sa.saved and app.GroupFilter(sa)) then
+								bestMatch = sa;
+							end
+						end
+					end
+					if bestMatch then
+						tinsert(prereqs, bestMatch);
+					end
+				else
+					tinsert(prereqs, app.CreateAchievement(sourceAchievementID));
+				end
+			end
+		end
+		if prereqs and #prereqs > 0 then
+			tinsert(tooltipInfo, {
+				left = "This has an incomplete prerequisite achievement that you need to complete first.",
+			});
+			AddAchievementInfoToTooltip(tooltipInfo, prereqs, reference);
 		end
 	end
 
