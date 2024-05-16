@@ -36,6 +36,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				},
 			}),
 		}),
+		n(WEAPONS, {
+			filter(ONE_HANDED_MACES, {
+				i(215752),	-- Ced's Basher
+			}),
+		}),
 		n(ARMOR, {
 			filter(CLOTH, {
 				i(213657),	-- Brewmoon Crown

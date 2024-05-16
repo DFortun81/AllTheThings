@@ -6611,7 +6611,6 @@ root(ROOTS.Unsorted, {
 					i(215749),	-- Ordo Basher
 					i(215750),	-- Ook Breaker
 					i(215751),	-- Porter's Mace
-					i(215752),	-- Ced's Basher
 					i(215753),	-- Gao's Kegbreaker
 					i(215754),	-- Jol'Grum's Mace
 					i(215755),	-- Je'lyu, Scepter of the Serpent
