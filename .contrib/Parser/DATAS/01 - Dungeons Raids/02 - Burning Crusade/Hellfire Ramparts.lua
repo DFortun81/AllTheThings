@@ -12,82 +12,71 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		["lvl"] = lvlsquish(57, 57, 10),
 		["groups"] = {
 			n(QUESTS, {
-				q(9587,  {	-- Dark Tidings [Alliance]
-					["provider"] = { "i", 23890 },	-- Ominous Letter
+				{	-- Dark Tidings
+					["allianceQuestData"] = q(9587, {	-- Dark Tidings (A)
+						["provider"] = { "i", 23890 },	-- Ominous Letter
+					}),
+					["hordeQuestData"] = q(9588, {	-- Dark Tidings (H)
+						["provider"] = { "i", 23892 },	-- Ominous Letter
+					}),
 					["timeline"] = { REMOVED_4_3_0 },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
-				}),
-				q(9588,  {	-- Dark Tidings [Horde]
-					["provider"] = { "i", 23892 },	-- Ominous Letter
-					["timeline"] = { REMOVED_4_3_0 },
-					["maps"] = { HELLFIRE_PENINSULA },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
-				}),
-				q(29529, {	-- Demons in the Citadel [Alliance]
-					["qg"] = 54603,	-- Advance Scout Chadwick
+				},
+				{	-- Demons in the Citadel
+					["allianceQuestData"] = q(29529, {	-- Demons in the Citadel (A)
+						["qg"] = 54603,	-- Advance Scout Chadwick
+					}),
+					["hordeQuestData"] = q(29530, {	-- Demons in the Citadel (H)
+						["qg"] = 54606,	-- Stone Guard Stok'ton
+					}),
 					["timeline"] = { ADDED_4_3_0 },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Omor's Hoof
 							["provider"] = { "i", 23886 },	-- Omor's Hoof
 						}),
 					},
-				}),
-				q(29530, {	-- Demons in the Citadel [Horde]
-					["qg"] = 54606,	-- Stone Guard Stok'ton
+				},
+				{	-- Hitting Them Where It Hurts
+					["allianceQuestData"] = q(29594, {	-- Hitting Them Where It Hurts (A)
+						["qg"] = 54603,	-- Advance Scout Chadwick
+					}),
+					["hordeQuestData"] = q(29593, {	-- Hitting Them Where It Hurts (H)
+						["qg"] = 54606,	-- Stone Guard Stok'ton
+					}),
 					["timeline"] = { ADDED_4_3_0 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(57, 57, 10),
-					["groups"] = {
-						objective(1, {	-- 0/1 Omor's Hoof
-							["provider"] = { "i", 23886 },	-- Omor's Hoof
-						}),
-					},
-				}),
-				q(29594, {	-- Hitting Them Where It Hurts [Alliance]
-					["qg"] = 54603,	-- Advance Scout Chadwick
-					["timeline"] = { ADDED_4_3_0 },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
 						objective(1, {	-- 0/3 Hellfire Supplies
-							["provider"] = { "i", 72160 },	-- Hellfire Supplies
+							["providers"] = {
+								{ "i",  72160 },	-- Hellfire Supplies
+								{ "o", 209347 },	-- Hellfire Supplies
+								{ "o", 209348 },	-- Hellfire Supplies
+							},
 						}),
 					},
-				}),
-				q(29593, {	-- Hitting Them Where It Hurts [Horde]
-					["qg"] = 54606,	-- Stone Guard Stok'ton
+				},
+				{	-- Invading the Citadel
+					["allianceQuestData"] = q(29543, {	-- Invading the Citadel (A)
+						["qg"] = 19309,	-- Sergeant Altumus
+						["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
+					}),
+					["hordeQuestData"] = q(29542, {	-- Invading the Citadel (H)
+						["qg"] = 19256,	-- Sergeant Shatterskull
+						["coord"] = { 58.0, 41.2, HELLFIRE_PENINSULA },
+					}),
 					["timeline"] = { ADDED_4_3_0 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(57, 57, 10),
-					["groups"] = {
-						objective(1, {	-- 0/3 Hellfire Supplies
-							["provider"] = { "i", 72160 },	-- Hellfire Supplies
-						}),
-					},
-				}),
-				q(29543, {	-- Invading the Citadel [Alliance]
-					["qg"] = 19309,	-- Sergeant Altumus
-					["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
-					["timeline"] = { ADDED_4_3_0 },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
-				}),
-				q(29542, {	-- Invading the Citadel [Horde]
-					["qg"] = 19256,	-- Sergeant Shatterskull
-					["coord"] = { 58.0, 41.2, HELLFIRE_PENINSULA },
+				},
+				{	-- War on the Ramparts
+					["allianceQuestData"] = q(29528, {	-- War on the Ramparts (A)
+						["qg"] = 54603,	-- Advance Scout Chadwick
+					}),
+					["hordeQuestData"] = q(29527, {	-- War on the Ramparts (H)
+						["qg"] = 54606,	-- Stone Guard Stok'ton
+					}),
 					["timeline"] = { ADDED_4_3_0 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
-				}),
-				q(29528, {	-- War on the Ramparts [Alliance]
-					["qg"] = 54603,	-- Advance Scout Chadwick
-					["timeline"] = { ADDED_4_3_0 },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(57, 57, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Gargolmar's Hand
@@ -101,31 +90,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(25716),	-- Handguards of Precision
 						i(25717),	-- Sure-Step Boots
 					},
-				}),
-				q(29527, {	-- War on the Ramparts [Horde]
-					["qg"] = 54606,	-- Stone Guard Stok'ton
-					["timeline"] = { ADDED_4_3_0 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(57, 57, 10),
-					["groups"] = {
-						objective(1, {	-- 0/1 Gargolmar's Hand
-							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
-						}),
-						objective(2, {	-- 0/1 Nazan's Head
-							["provider"] = { "i", 23901 },	-- Nazan's Head
-						}),
-						i(25715),	-- Jade Warrior Pauldrons
-						i(25718),	-- Mantle of Magical Might
-						i(25716),	-- Handguards of Precision
-						i(25717),	-- Sure-Step Boots
-					},
-				}),
-				q(9575,  {	-- Weaken the Ramparts [Alliance]
-					["qg"] = 17557,	-- Lieutenant Chadwick
-					["sourceQuest"] = 10142,	-- The Path of Anguish
-					["coord"] = { 56.7, 66.3, HELLFIRE_PENINSULA },
+				},
+				{	-- Weaken the Ramparts
+					["allianceQuestData"] = q(9575, {	-- Weaken the Ramparts (A)
+						["qg"] = 17557,	-- Lieutenant Chadwick
+						["sourceQuest"] = 10142,	-- The Path of Anguish
+						["coord"] = { 56.7, 66.3, HELLFIRE_PENINSULA },
+					}),
+					["hordeQuestData"] = q(9572, {	-- Weaken the Ramparts (H)
+						["qg"] = 17493,	-- Stone Guard Stok'ton
+						["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
+						["coord"] = { 55.2, 36.0, HELLFIRE_PENINSULA },
+					}),
 					["timeline"] = { REMOVED_4_3_0 },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(59, 59, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Gargolmar's Hand
@@ -142,30 +119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(25716),	-- Handguards of Precision
 						i(25717),	-- Sure-Step Boots
 					},
-				}),
-				q(9572,  {	-- Weaken the Ramparts [Horde]
-					["qg"] = 17493,	-- Stone Guard Stok'ton
-					["sourceQuest"] = 10124,	-- Forward Base: Reaver's Fall
-					["coord"] = { 55.2, 36.0, HELLFIRE_PENINSULA },
-					["timeline"] = { REMOVED_4_3_0 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(59, 59, 10),
-					["groups"] = {
-						objective(1, {	-- 0/1 Gargolmar's Hand
-							["provider"] = { "i", 23881 },	-- Gargolmar's Hand
-						}),
-						objective(2, {	-- 0/1 Omor's Hoof
-							["provider"] = { "i", 23886 },	-- Omor's Hoof
-						}),
-						objective(3, {	-- 0/1 Nazan's Head
-							["provider"] = { "i", 23901 },	-- Nazan's Head
-						}),
-						i(25715),	-- Jade Warrior Pauldrons
-						i(25718),	-- Mantle of Magical Might
-						i(25716),	-- Handguards of Precision
-						i(25717),	-- Sure-Step Boots
-					},
-				}),
+				},
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(527, {	-- Watchkeeper Gargolmar
