@@ -29,7 +29,7 @@ EVENTS = {
 
 	-- FOMO
 	PLUNDERSTORM = 446916,	-- This is a fake eventID. (Crieve made this up!) ((Pinchy the Plunderer spellID!))
-	REMIX_MOP = 1514;
+	REMIX_MOP = 1525;
 
 	-- Dragonriding Cups
 	-- Note: These need to all be referenced in src\Modules\Events.lua

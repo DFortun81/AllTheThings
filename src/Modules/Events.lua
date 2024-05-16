@@ -27,6 +27,7 @@ if GetCVar("portal") == "EU" then
 	remapping[1063] = 1056; -- EU WoD Timewalking
 	remapping[1265] = 1263;	-- EU Legion Timewalking
 	remapping[1398] = 1396;	-- EU Secrets of Azeroth
+	remapping[1514] = 1525;	-- EU Remix: Mists of Pandaria
 elseif GetCVar("portal") == "KO" then
 	remapping[1399] = 1396;	-- KO Secrets of Azeroth
 end

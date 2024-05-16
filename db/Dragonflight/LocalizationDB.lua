@@ -1070,6 +1070,7 @@ localize(L.HEADER_EVENTS, {
 	[-1000366] = 1382,
 	[-1000368] = 1271,
 	[-1000872] = 446916,
+	[-1000873] = 1525,
 });
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(446916, {
