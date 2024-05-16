@@ -703,9 +703,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							-- #else
 							["coord"] = { 36.6, 61.6, TIRISFAL_GLADES },
 							-- #endif
-							-- #if AFTER 10.1.7
-							["description"] = "Requires to use a Weapon Chain to permanently unlock the weapon transmog (or a hotfix by blizzard).",
-							-- #endif
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1916,	-- Stephen Bhartec
 						}),
