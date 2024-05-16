@@ -24,14 +24,14 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 			filter(THROWN, {	-- TODO
 				-- #if NOT ANYCLASSIC
 				-- The Burning Crusade
-				i(29212),	-- Balanced Stone Dirk
+				-- CRIEVE NOTE: This one is actually NYI, as far as I can tell:
+				i(28408),	-- Broken Silver Star
+				
+				-- CRIEVE NOTE: The following are common vendor items:
 				i(25872),	-- Balanced Throwing Dagger
 				i(29014),	-- Blacksteel Throwing Dagger
-				i(28408),	-- Broken Silver Star
 				i(25861),	-- Crude Throwing Axe
 				i(25875),	-- Deadly Throwing Axe
-				i(25878),	-- Dusksteel Throwing Knife
-				i(28319),	-- Gladiator's War Edge
 				i(25876),	-- Gleaming Throwing Axe
 				i(29009),	-- Heavy Throwing Dagger
 				i(29013),	-- Jagged Throwing Axe
@@ -39,19 +39,10 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(25874),	-- Large Throwing Knife
 				i(28979),	-- Light Throwing Knife
 				i(29008),	-- Sharp Throwing Axe
-				i(32378),	-- Silver Star
-				i(34622),	-- Spinesever
 				i(29007),	-- Weighted Throwing Axe
 				i(29010),	-- Wicked Throwing Dagger
 
-				-- Wrath of the Lich King
-				i(44644),	-- Dalaran Dart
-				i(40007),	-- Forsaken Throwing Knife
-				i(39995),	-- Tuskarr Javelin
-				i(37028),	-- Condor-Bone Star
-
 				-- Cataclysm
-				i(67467),	-- Vicious Gladiator's War Edge
 				i(63798),	-- Winged Axe
 				i(78369),	-- Razor Saronite Chip
 				i(71593),	-- Giantslicer
@@ -108,7 +99,6 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(70232),	-- Ruthless Gladiator's War Edge
 				i(70233),	-- Ruthless Gladiator's Hatchet
 				i(73445),	-- Cataclysmic Gladiator's War Edge
-				i(61347),	-- Vicious Gladiator's War Edge
 				-- #endif
 			})
 		}),

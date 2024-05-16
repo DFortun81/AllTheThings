@@ -2376,6 +2376,15 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					n(27185, {	-- Kuk'uq <Spearcrafter>
+						["coord"] = { 49.4, 75.2, DRAGONBLIGHT },
+						["groups"] = {
+							i(39987),	-- Tuskarr Fishing Spear
+							i(39995, {	-- Tuskarr Javelin
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
+						},
+					}),
 					n(27054, {	-- Modoru <Reagents & Enchanting Supplies>
 						["coord"] = { 28.8, 55.8, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,

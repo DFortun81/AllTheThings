@@ -2304,6 +2304,9 @@ root(ROOTS.Zones, {
 							i(40005),	-- Forsaken Blade
 							i(40004),	-- Forsaken Greatsword
 							i(40006),	-- Forsaken Sword
+							i(40007, {	-- Forsaken Throwing Knife
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
 						},
 					}),
 					n(30431, {	-- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>

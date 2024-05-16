@@ -613,7 +613,9 @@ root(ROOTS.Zones, {
 							i(25494),	-- Totemic Staff
 							i(25495),	-- Wolfrider's Dagger
 							-- #if BEFORE MOP
-							i(29212),	-- Balanced Stone Dirk
+							i(29212, {	-- Balanced Stone Dirk
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
 							-- #endif
 						},
 					})),

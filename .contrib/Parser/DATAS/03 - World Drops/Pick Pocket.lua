@@ -13,6 +13,15 @@ root(ROOTS.WorldDrops, {
 				}),
 				-- #endif
 			}),
+			-- #if BEFORE MOP
+			expansion(EXPANSION.TBC, {
+				category(227, {	-- Weapons
+					i(34622, {	-- Spinesever
+						["timeline"] = { ADDED_2_3_0, REMOVED_5_0_4 },
+					}),
+				}),
+			}),
+			-- #endif
 			expansion(EXPANSION.WRATH, {
 				category(227, {	-- Weapons
 					i(43611, {	-- Krol Cleaver

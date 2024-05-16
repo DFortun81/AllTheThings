@@ -2284,6 +2284,15 @@ root(ROOTS.Zones, {
 							-- These 6 items could be symlinked to 6 more vendors
 						},
 					}),
+					n(27151, {	-- Deniigi <Spearcrafter>
+						["coord"] = { 25.6, 57.6, HOWLING_FJORD },
+						["groups"] = {
+							i(39987),	-- Tuskarr Fishing Spear
+							i(39995, {	-- Tuskarr Javelin
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
+						},
+					}),
 					n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
 						["coord"] = { 59.6, 63.8, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
@@ -2312,6 +2321,9 @@ root(ROOTS.Zones, {
 							i(40005),	-- Forsaken Blade
 							i(40004),	-- Forsaken Greatsword
 							i(40006),	-- Forsaken Sword
+							i(40007, {	-- Forsaken Throwing Knife
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
 						},
 					}),
 					n(32774, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Sebastian Crane <Horde Expedition Quartermaster>

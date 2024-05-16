@@ -821,6 +821,9 @@ root(ROOTS.Zones, {
 							i(37399),	-- Floodplain Shoulderpads
 							i(37212),	-- Transborean Wraps
 							i(37422),	-- Westrift Wristguards
+							i(37028, {	-- Condor-Bone Star
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
 						},
 					}),
 					q(11683, {	-- Fallen Necropolis
@@ -2576,6 +2579,15 @@ root(ROOTS.Zones, {
 							i(25533),	-- Swift Purple Wind Rider (MOUNT!)
 							i(25477),	-- Swift Red Wind Rider (MOUNT!)
 							i(25474),	-- Tawny Wind Rider (MOUNT!)
+						},
+					}),
+					n(27188, {	-- Tonraq <Spearcrafter>
+						["coord"] = { 77.8, 52.2, BOREAN_TUNDRA },
+						["groups"] = {
+							i(39987),	-- Tuskarr Fishing Spear
+							i(39995, {	-- Tuskarr Javelin
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
 						},
 					}),
 				}),
