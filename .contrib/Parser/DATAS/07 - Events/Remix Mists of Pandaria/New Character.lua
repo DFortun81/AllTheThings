@@ -24,8 +24,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(81576),	-- after turn in qID 31735 (The Right Tool For The Job) / qID 31772 (Priorities! (H)) or level up to 12 (possible unlock for qID 81638 (Home Is Where the Hearthstone Is or qID 80012 (Dragonriding))
 		q(81577),	-- shortly after turn in qID 31739 (Priorities! (A)) / qID 31774 Seeking Zin'Jun or level up to 13
 		q(81578),	-- shortly after turn in qID 31739 (Priorities! (A)) / qID 31774 Seeking Zin'Jun  or level up to 13
-		--q(81579),	-- shortly after turn in qID 31744 (Unfair Trade) or level up to 14 /Jade Temple or level up
-		--q(81580),	-- shortly after turn in qID 31744 (Unfair Trade) or level up to 14 /Jade Temple or level up
+		q(81579),	-- shortly after turn in qID 31744 (Unfair Trade) / qID 29804 Seein' Red or level up to 14
+		q(81580),	-- shortly after turn in qID 31744 (Unfair Trade) / qID 29804 Seein' Red or level up to 14
 		--q(81581),	-- shortly after turn in qID 29759 (Kung Din) or level up to 16 /Scarlet or level up
 		--q(81582),	-- shortly after turn in qID 29759 (Kung Din) or level up to 16 /Scarlet or level up
 		--q(81583),	-- levelup to 17 or crit (The Waterspeaking Ceremony) for achievement 19882 probably level
