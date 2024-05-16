@@ -6609,7 +6609,6 @@ root(ROOTS.Unsorted, {
 					i(215744),	-- Cloudfall Scepter
 					i(215745),	-- Wasteland Basher
 					i(215746),	-- Bearheart's Basher
-					i(215747),	-- Mace of the Rikkitun
 					i(215748),	-- Fireblaze Mace
 					i(215749),	-- Ordo Basher
 					i(215750),	-- Ook Breaker

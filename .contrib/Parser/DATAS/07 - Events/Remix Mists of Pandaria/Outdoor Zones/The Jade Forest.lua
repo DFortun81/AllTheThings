@@ -159,6 +159,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(ONE_HANDED_MACES, {
+					i(215747),	-- Mace of the Rikkitun
+				}),
 				filter(CLOTH, {
 					i(213668),	-- Spirit-Waker's Bracers
 					i(213667),	-- Spirit-Waker's Cord
