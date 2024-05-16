@@ -241,6 +241,82 @@ root(ROOTS.Character, n(createHeader({
 		ach(7444, {	-- Scenario Challenges
 			["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 		}),
+		
+		-- Copy+Pasted from the Vendor list. Adjust as desired.
+		ach(4989),	-- A Class Act
+		ach(5422),	-- A Daily Routine
+		ach(5179, {	-- Alliance Slayer
+			["races"] = HORDE_ONLY,
+		}),
+		ach(5024),	-- Better Leveling Through Chemistry
+		ach(6634, {	-- Challenge Conquerors: Gold - Guild Edition
+			["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
+		}),
+		ach(9651, {	-- Challenge Warlords: Gold - Guild Edition
+			-- #if AFTER 7.0.3
+			["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.",
+			-- #endif
+			["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
+		}),
+		ach(5144),	-- Critter Kill Squad
+		applyclassicphase(CATA_PHASE_THREE, ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
+			["timeline"] = { ADDED_4_2_0 },
+		})),
+		ach(5143),	-- Guild Cataclysm Dungeon Hero
+		ach(9388, {	-- Guild Draenor Dungeon Hero
+			["timeline"] = { ADDED_6_0_2 },
+		}),
+		ach(4988),	-- Guild Glory of the Cataclysm Raider
+		ach(9669, {	-- Guild Glory of the Draenor Raider
+			["timeline"] = { ADDED_6_0_2 },
+		}),
+		ach(6682, {	-- Guild Glory of the Pandaria Raider
+			["timeline"] = { ADDED_5_0_4 },
+		}),
+		-- #if NOT ANYCLASSIC
+		ach(4943),	-- Guild Level 5
+		ach(4944),	-- Guild Level 10
+		ach(4945),	-- Guild Level 15
+		ach(4946),	-- Guild Level 20
+		ach(4912),	-- Guild Level 25 [A]
+		ach(5492),	-- Guild Level 25 [H]
+		-- #endif
+		ach(6681, {	-- Guild Pandaren Dungeon Hero
+			["timeline"] = { ADDED_5_0_4 },
+		}),
+		ach(5035),	-- Master Crafter
+		ach(5465),	-- Mix Master
+		ach(6644, {	-- Pandaren Embassy [A]
+			["timeline"] = { ADDED_5_0_4 },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		ach(6664, {	-- Pandaren Embassy [H]
+			["timeline"] = { ADDED_5_0_4 },
+			["races"] = HORDE_ONLY,
+		}),
+		ach(5201),	-- Profit Sharing
+		ach(7448, {	-- Scenario Roundup [A]
+			["timeline"] = { ADDED_5_0_4 },
+			["races"] = ALLIANCE_ONLY,
+		}),
+		ach(7449, {	-- Scenario Roundup [H]
+			["timeline"] = { ADDED_5_0_4 },
+			["races"] = HORDE_ONLY,
+		}),
+		ach(5467),	-- Set the Oven to "Cataclysmic"
+		ach(5152),	-- Stay Classy [A]
+		ach(5158),	-- Stay Classy [H]
+		ach(5036),	-- That's a Lot of Bait
+		ach(5812, {	-- United Nations [A]
+			["races"] = ALLIANCE_ONLY,
+		}),
+		ach(5892, {	-- United Nations [H]
+			["races"] = HORDE_ONLY,
+		}),
+		ach(4860),	-- Working as a Team
+		ach(6626, {	-- Working Better as a Team
+			["timeline"] = { ADDED_5_0_4 },
+		}),
 	}),
 	n(FACTIONS, {
 		faction(1169, {	-- Guild
@@ -312,462 +388,449 @@ root(ROOTS.Character, n(createHeader({
 			},
 		},
 		["OnInit"] = [[function(t) _.ResolveQuestData(t); return t; end]],
-		["g"] = {
-			i(69209, {	-- Illustrious Guild Tabard
-				["minReputation"] = { FACTION_GUILD, FRIENDLY },
-				["timeline"] = { ADDED_4_1_0 },
-			}),
-			i(69210, {	-- Renowned Guild Tabard
-				["minReputation"] = { FACTION_GUILD, HONORED },
-				["timeline"] = { ADDED_4_1_0 },
-			}),
-			ach(4989, {	-- A Class Act
-				i(63352, {	-- Shroud of Cooperation
-					["minReputation"] = { FACTION_GUILD, HONORED },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				i(63353, {	-- Shroud of Cooperation
-					["minReputation"] = { FACTION_GUILD, HONORED },
-					["races"] = HORDE_ONLY
-				}),
-			}),
-			ach(5422, {	-- A Daily Routine
-				i(64399, {	-- Battle Standard of Coordination [A]
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				i(64402, {	-- Battle Standard of Coordination [H]
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
-					["races"] = HORDE_ONLY,
-				}),
-			}),
-			ach(5179, {	-- Alliance Slayer
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(65362, {	-- Guild Page [H] (PET!)
-						["minReputation"] = { FACTION_GUILD, HONORED },
-						["races"] = HORDE_ONLY,
-					}),
-				},
-			}),
-			ach(5024, {	-- Better Leveling Through Chemistry
-				i(65498, {	-- Recipe: Big Cauldron of Battle (RECIPE!)
-					["minReputation"] = { FACTION_GUILD, HONORED },
-				}),
-			}),
-			ach(6634, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 } }, {	-- Challenge Conquerors: Gold - Guild Edition
-				i(85513, {	-- Thundering Serpent Hatchling (PET!)
-					["minReputation"] = { FACTION_GUILD, REVERED },
-				}),
-			})),
-			ach(9651, {	-- Challenge Warlords: Gold - Guild Edition
-				["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.",
-				["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
-				["g"] = {
-					i(114968, {	-- Deathwatch Hatchling (PET!)
-						["minReputation"] = { FACTION_GUILD, REVERED },
-					}),
-				},
-			}),
-			ach(5144, {	-- Critter Kill Squad
-				i(63398, {	-- Armadillo Pup (PET!)
-					["minReputation"] = { FACTION_GUILD, REVERED },
-				}),
-			}),
-			applyclassicphase(CATA_PHASE_THREE, ach(5840, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
-				i(71033, {	-- Lil' Tarecgosa (PET!)
-					["minReputation"] = { FACTION_GUILD, EXALTED },
-				}),
-			}))),
-			ach(5143, {	-- Guild Cataclysm Dungeon Hero*
-				i(64398, {	-- Standard of Unity [A]
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				i(64401, {	-- Standard of Unity [H]
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
-					["races"] = HORDE_ONLY,
-				}),
-			}),
-			ach(9388, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {	-- Guild Draenor Dungeon Hero*
-				i(120352, {	-- Garrison Guild Banners
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
-				}),
-			})),
-			ach(4988, {	-- Guild Glory of the Cataclysm Raider
-				i(63125, {	-- Dark Phoenix (MOUNT!)
-					["minReputation"] = { FACTION_GUILD, EXALTED },
-				}),
-			}),
-			ach(9669, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {	-- Guild Glory of the Draenor Raider
-				i(116666, {	-- Blacksteel Battleboar (MOUNT!)
-					["minReputation"] = { FACTION_GUILD, EXALTED },
-				}),
-			})),
-			ach(6682, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Guild Glory of the Pandaria Raider
-				i(85666, {	-- Thundering Jade Cloud Serpent (MOUNT!)
-					["minReputation"] = { FACTION_GUILD, EXALTED },
-				}),
-			})),
-			-- #if NOT ANYCLASSIC
-			ach(4943, {	-- Guild Level 5 // Guild Reputation: Neutral
-			-- #endif
-				i(62286, {	-- Guild Vault Voucher (7th Slot)
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
-				}),
-			-- #if NOT ANYCLASSIC
-			}),
-			ach(4944, {	-- Guild Level 10 // Guild Reputation: Friendly
-			-- #endif
+		["groups"] = bubbleDownClassicRep(FACTION_GUILD, {
+			{	-- Neutral
+			},
+			{	-- Friendly
 				i(62040, {	-- Ancient Bloodmoon Cloak
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4944,	-- Guild Level 10
+					-- #endif
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122262, {	-- Ancient Bloodmoon Cloak
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4944,	-- Guild Level 10
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(62039, {	-- Inherited Cape of the Black Baron
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4944,	-- Guild Level 10
+					-- #endif
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122261, {	-- Inherited Cape of the Black Baron
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4944,	-- Guild Level 10
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(69892, {	-- Ripped Sandstorm Cloak
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4944,	-- Guild Level 10
+					-- #endif
 					["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 				}),
 				i(122266, {	-- Ripped Sandstorm Cloak
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4944,	-- Guild Level 10
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(62038, {	-- Worn Stoneskin Gargoyle Cape
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4944,	-- Guild Level 10
+					-- #endif
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122260, {	-- Worn Stoneskin Gargoyle Cape
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4944,	-- Guild Level 10
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
-			-- #if NOT ANYCLASSIC
-			}),
-			ach(4945, {	-- Guild Level 15 // Guild Reputation: Honored
-			-- #endif
-				i(63206, {	-- Wrap of Unity [A]
+				i(63359, {	-- Banner of Cooperation [A]
+					["sourceAchievement"] = 4860,	-- Working as a Team
 					["races"] = ALLIANCE_ONLY,
-					["minReputation"] = { FACTION_GUILD, HONORED },
 				}),
-				i(63207, {	-- Wrap of Unity [H]
+				i(64400, {	-- Banner of Cooperation [H]
+					["sourceAchievement"] = 4860,	-- Working as a Team
 					["races"] = HORDE_ONLY,
-					["minReputation"] = { FACTION_GUILD, HONORED },
 				}),
-			-- #if NOT ANYCLASSIC
-			}),
-			ach(4946, {	-- Guild Level 20 // Guild Reputation: Honored
-			-- #endif
+				i(64399, {	-- Battle Standard of Coordination [A]
+					["sourceAchievement"] = 5422,	-- A Daily Routine
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(64402, {	-- Battle Standard of Coordination [H]
+					["sourceAchievement"] = 5422,	-- A Daily Routine
+					["races"] = HORDE_ONLY,
+				}),
+				i(120352, {	-- Garrison Guild Banners
+					["sourceAchievement"] = 9388,	-- Guild Draenor Dungeon Hero
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				i(62286, {	-- Guild Vault Voucher (7th Slot)
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4943,	-- Guild Level 5
+					-- #endif
+				}),
+				i(69209, {	-- Illustrious Guild Tabard
+					["timeline"] = { ADDED_4_1_0 },
+				}),
+				i(64398, {	-- Standard of Unity [A]
+					["sourceAchievement"] = 5143,	-- Guild Cataclysm Dungeon Hero
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(64401, {	-- Standard of Unity [H]
+					["sourceAchievement"] = 5143,	-- Guild Cataclysm Dungeon Hero
+					["races"] = HORDE_ONLY,
+				}),
+			},
+			{	-- Honored
 				i(69887, {	-- Burnished Helm of Might
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 				}),
 				i(122263, {	-- Burnished Helm of Might
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(61936, {	-- Mystical Coif of Elements
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122247, {	-- Mystical Coif of Elements
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(61931, {	-- Polished Helm of Valor
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122245, {	-- Polished Helm of Valor
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(61942, {	-- Preened Tribal War Feathers
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122249, {	-- Preened Tribal War Feathers
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(127012, {	-- Pristine Lightforge Helm
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(61937, {	-- Stained Shadowcraft Cap
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122248, {	-- Stained Shadowcraft Cap
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(61935, {	-- Tarnished Raging Berserker's Helm
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122246, {	-- Tarnished Raging Berserker's Helm
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(61958, {	-- Tattered Dreadmist Mask
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122250, {	-- Tattered Dreadmist Mask
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4946,	-- Guild Level 20
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
-			-- #if NOT ANYCLASSIC
-			}),
-			ach(4912, {	-- Guild Level 25 [A] // Guild Reputation: Exalted
-			-- #endif
-				i(62298, {	-- Golden King (MOUNT!)
-					["minReputation"] = { FACTION_GUILD, EXALTED },
-					["races"] = ALLIANCE_ONLY,
-				}),
-			-- #if NOT ANYCLASSIC
-			}),
-			ach(5492, {	-- Guild Level 25 [H] // Guild Reputation: Exalted
-			-- #endif
-				i(67107, {	-- Kor'kron Annihilator (MOUNT!)
-					["minReputation"] = { FACTION_GUILD, EXALTED },
-					["races"] = HORDE_ONLY,
-				}),
-			-- #if NOT ANYCLASSIC
-			}),
-			-- #endif
-			ach(6681, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Guild Pandaren Dungeon Hero
-				i(89190, {	-- Tailored Initiate's Shirt
-					["minReputation"] = { FACTION_GUILD, HONORED },
-				}),
-				i(89192, {	-- Tailored Memeber's Shirt
-					["minReputation"] = { FACTION_GUILD, HONORED },
-				}),
-				i(89194, {	-- Tailored Officer's Shirt
-					["minReputation"] = { FACTION_GUILD, HONORED },
-				}),
-			})),
-			--[[
-			ach(5031, {	-- Horde Slayer
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					i(65361, {	-- Guild Page [A] (PET!)
-						["minReputation"] = { FACTION_GUILD, HONORED },
-						["races"] = ALLIANCE_ONLY,
-					}),
-				},
-			}),
-			]]--
-			i(65361, {	-- Guild Page [A] (PET!)
-				["sourceAchievement"] = 5031,	-- Horde Slayer
-				["minReputation"] = { FACTION_GUILD, HONORED },
-				["races"] = ALLIANCE_ONLY,
-			}),
-			ach(5035, {	-- Master Crafter
-				i(65360, {	-- Cloak of Coordination
-					["minReputation"] = { FACTION_GUILD, REVERED },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				i(65274, {	-- Cloak of Coordination
-					["minReputation"] = { FACTION_GUILD, REVERED },
-					["races"] = HORDE_ONLY,
-				}),
-			}),
-			ach(5465, {	-- Mix Master
-				i(65435, {	-- Recipe: Cauldron of Battle (RECIPE!)
-					["minReputation"] = { FACTION_GUILD, HONORED },
-				}),
-			}),
-			ach(6644, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Pandaren Embassy [A]
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					i(89191, {	-- Artisan Initiate's Shirt
-						["minReputation"] = { FACTION_GUILD, EXALTED },
-					}),
-					i(89193, {	-- Artisan Member's Shirt
-						["minReputation"] = { FACTION_GUILD, EXALTED },
-					}),
-					i(89195, {	-- Artisan Officer's Shirt
-						["minReputation"] = { FACTION_GUILD, EXALTED },
-					}),
-				},
-			})),
-			ach(6664, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Pandaren Embassy [H]
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(89191, {	-- Artisan Initiate's Shirt
-						["minReputation"] = { FACTION_GUILD, EXALTED },
-					}),
-					i(89193, {	-- Artisan Member's Shirt
-						["minReputation"] = { FACTION_GUILD, EXALTED },
-					}),
-					i(89195, {	-- Artisan Officer's Shirt
-						["minReputation"] = { FACTION_GUILD, EXALTED },
-					}),
-				},
-			})),
-			ach(5201, {	-- Profit Sharing
-				i(65363, {	-- Guild Herald [A] (PET!)
-					["races"] = ALLIANCE_ONLY,
-					["minReputation"] = { FACTION_GUILD, REVERED },
-				}),
-				i(65364, {	-- Guild Herald [H] (PET!)
-					["races"] = HORDE_ONLY,
-					["minReputation"] = { FACTION_GUILD, REVERED },
-				}),
-			}),
-			ach(7448, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Scenario Roundup [A]
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					i(85508, {	-- Initiate's Shirt
-						["minReputation"] = { FACTION_GUILD, HONORED },
-					}),
-					i(85509, {	-- Member's Shirt
-						["minReputation"] = { FACTION_GUILD, HONORED },
-					}),
-					i(85510, {	-- Officer's Shirt
-						["minReputation"] = { FACTION_GUILD, HONORED },
-					}),
-				},
-			})),
-			ach(7449, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Scenario Roundup [H]
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(85508, {	-- Initiate's Shirt
-						["minReputation"] = { FACTION_GUILD, HONORED },
-					}),
-					i(85509, {	-- Member's Shirt
-						["minReputation"] = { FACTION_GUILD, HONORED },
-					}),
-					i(85510, {	-- Officer's Shirt
-						["minReputation"] = { FACTION_GUILD, HONORED },
-					}),
-				},
-			})),
-			ach(5467, {	-- Set the Oven to "Cataclysmic"
-				i(62799, {	-- Recipe: Broiled Dragon Feast (RECIPE!)
-					["minReputation"] = { FACTION_GUILD, HONORED },
-				}),
-			}),
-			ach(5152, {	-- Stay Classy [A]*
-				i(68136, {	-- Guild Vault Voucher (8th Slot) [A]
-					["minReputation"] = { FACTION_GUILD, HONORED },
-					["races"] = ALLIANCE_ONLY,
-				}),
-			}),
-			ach(5158, {	-- Stay Classy [H]*
-				i(62287, {	-- Guild Vault Voucher (8th Slot) [H]
-					["minReputation"] = { FACTION_GUILD, HONORED },
-					["races"] = HORDE_ONLY,
-				}),
-			}),
-			ach(5036, {	-- That's a Lot of Bait
-				i(62800, {	-- Recipe: Seafood Magnifique Feast (RECIPE!)
-					["minReputation"] = { FACTION_GUILD, HONORED },
-				}),
-			}),
-			ach(5812, {	-- United Nations [A]
-				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					i(63138, {	-- Dark Phoenix Hatchling (PET!)
-						["minReputation"] = { FACTION_GUILD, EXALTED },
-					}),
-				},
-			}),
-			ach(5892, {	-- United Nations [H]
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					i(63138, {	-- Dark Phoenix Hatchling (PET!)
-						["minReputation"] = { FACTION_GUILD, EXALTED },
-					}),
-				},
-			}),
-			ach(4860, {	-- Working as a Team
-				i(63359, {	-- Banner of Cooperation [A]
-					["races"] = ALLIANCE_ONLY,
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
-				}),
-				i(64400, {	-- Banner of Cooperation [H]
-					["races"] = HORDE_ONLY,
-					["minReputation"] = { FACTION_GUILD, FRIENDLY },
-				}),
-			}),
-			-- #if AFTER 5.0.4
-			ach(6626, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {	-- Working Better as a Team
-			-- #endif
 				i(69888, {	-- Burnished Legplates of Might
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122264, {	-- Burnished Legplates of Might
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(62025, {	-- Mystical Kilt of Elements
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122253, {	-- Mystical Kilt of Elements
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(62023, {	-- Polished Legplates of Valor
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122251, {	-- Polished Legplates of Valor
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(62027, {	-- Preened Wildfeather Leggings
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122255, {	-- Preened Wildfeather Leggings
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(127011, {	-- Pristine Lightforged Legplates
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(62026, {	-- Stained Shadowcraft Pants
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122254, {	-- Stained Shadowcraft Pants
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(62024, {	-- Tarnished Leggings of Destruction
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122252, {	-- Tarnished Leggings of Destruction
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(62029, {	-- Tattered Dreadmist Leggings
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { CREATED_4_1_0, ADDED_5_0_4, REMOVED_6_1_0 },
 				}),
 				i(122256, {	-- Tattered Dreadmist Leggings
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					-- #if AFTER 5.0.4
+					["sourceAchievement"] = 6626,	-- Working Better as a Team
+					-- #endif
 					["timeline"] = { ADDED_6_1_0 },
 				}),
-			-- #if AFTER 5.0.4
-			})),
-			-- #endif
-		},
+				i(65361, {	-- Guild Page [A] (PET!)
+					["sourceAchievement"] = 5031,	-- Horde Slayer
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(65362, {	-- Guild Page [H] (PET!)
+					["sourceAchievement"] = 5179,	-- Alliance Slayer
+					["races"] = HORDE_ONLY,
+				}),
+				i(68136, {	-- Guild Vault Voucher (8th Slot) [A]
+					["sourceAchievement"] = 5152,	-- Stay Classy [A]
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(62287, {	-- Guild Vault Voucher (8th Slot) [H]
+					["sourceAchievement"] = 5158,	-- Stay Classy [H]
+					["races"] = HORDE_ONLY,
+				}),
+				i(65498, {	-- Recipe: Big Cauldron of Battle (RECIPE!)
+					["sourceAchievement"] = 5024,	-- Better Leveling Through Chemistry
+				}),
+				i(62799, {	-- Recipe: Broiled Dragon Feast (RECIPE!)
+					["sourceAchievement"] = 5467,	-- Set the Oven to "Cataclysmic"
+				}),
+				i(65435, {	-- Recipe: Cauldron of Battle (RECIPE!)
+					["sourceAchievement"] = 5465,	-- Mix Master
+				}),
+				i(62800, {	-- Recipe: Seafood Magnifique Feast (RECIPE!)
+					["sourceAchievement"] = 5036,	-- That's a Lot of Bait
+				}),
+				i(69210, {	-- Renowned Guild Tabard
+					["timeline"] = { ADDED_4_1_0 },
+				}),
+				i(63352, {	-- Shroud of Cooperation [A]
+					["sourceAchievement"] = 4989,	-- A Class Act
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(63353, {	-- Shroud of Cooperation [H]
+					["sourceAchievement"] = 4989,	-- A Class Act
+					["races"] = HORDE_ONLY
+				}),
+				i(85508, {	-- Initiate's Shirt
+					["sourceAchievements"] = {
+						7448,	-- Scenario Roundup [A]
+						7449,	-- Scenario Roundup [H]
+					},
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				i(89190, {	-- Tailored Initiate's Shirt
+					["sourceAchievement"] = 6681,	-- Guild Pandaren Dungeon Hero
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				i(85509, {	-- Member's Shirt
+					["sourceAchievements"] = {
+						7448,	-- Scenario Roundup [A]
+						7449,	-- Scenario Roundup [H]
+					},
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				i(89192, {	-- Tailored Member's Shirt
+					["sourceAchievement"] = 6681,	-- Guild Pandaren Dungeon Hero
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				i(85510, {	-- Officer's Shirt
+					["sourceAchievements"] = {
+						7448,	-- Scenario Roundup [A]
+						7449,	-- Scenario Roundup [H]
+					},
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				i(89194, {	-- Tailored Officer's Shirt
+					["sourceAchievement"] = 6681,	-- Guild Pandaren Dungeon Hero
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				i(63206, {	-- Wrap of Unity [A]
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4945,	-- Guild Level 15
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(63207, {	-- Wrap of Unity [H]
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4945,	-- Guild Level 15
+					-- #endif
+					["races"] = HORDE_ONLY,
+				}),
+			},
+			{	-- Revered
+				i(65360, {	-- Cloak of Coordination [A]
+					["sourceAchievement"] = 5035,	-- Master Crafter
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(65274, {	-- Cloak of Coordination [H]
+					["sourceAchievement"] = 5035,	-- Master Crafter
+					["races"] = HORDE_ONLY,
+				}),
+				i(63398, {	-- Armadillo Pup (PET!)
+					["sourceAchievement"] = 5144,	-- Critter Kill Squad
+				}),
+				i(114968, {	-- Deathwatch Hatchling (PET!)
+					["sourceAchievement"] = 9651,	-- Challenge Warlords: Gold - Guild Edition
+					-- #if AFTER 7.0.3
+					["description"] = "Achievement no longer obtainable. You will need to find a guild that already has it to buy Deathwatch Hatchling.",
+					-- #endif
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				i(65363, {	-- Guild Herald [A] (PET!)
+					["sourceAchievement"] = 5201,	-- Profit Sharing
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(65364, {	-- Guild Herald [H] (PET!)
+					["sourceAchievement"] = 5201,	-- Profit Sharing
+					["races"] = HORDE_ONLY,
+				}),
+				i(85513, {	-- Thundering Serpent Hatchling (PET!)
+					["sourceAchievement"] = 6634,	-- Challenge Conquerors: Gold - Guild Edition
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+			},
+			{	-- Exalted
+				i(89191, {	-- Artisan Initiate's Shirt
+					["sourceAchievements"] = {
+						6644,	-- Pandaren Embassy [A]
+						6664,	-- Pandaren Embassy [H]
+					},
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				i(89193, {	-- Artisan Member's Shirt
+					["sourceAchievements"] = {
+						6644,	-- Pandaren Embassy [A]
+						6664,	-- Pandaren Embassy [H]
+					},
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				i(89195, {	-- Artisan Officer's Shirt
+					["sourceAchievements"] = {
+						6644,	-- Pandaren Embassy [A]
+						6664,	-- Pandaren Embassy [H]
+					},
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+				i(116666, {	-- Blacksteel Battleboar (MOUNT!)
+					["sourceAchievement"] = 9669,	-- Guild Glory of the Draenor Raider
+					["timeline"] = { ADDED_6_0_2 },
+				}),
+				i(63125, {	-- Dark Phoenix (MOUNT!)
+					["sourceAchievement"] = 4988,	-- Guild Glory of the Cataclysm Raider
+				}),
+				i(63138, {	-- Dark Phoenix Hatchling (PET!)
+					["sourceAchievements"] = {
+						5812,	-- United Nations [A]
+						5892,	-- United Nations [H]
+					},
+				}),
+				i(62298, {	-- Golden King (MOUNT!)
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 4912,	-- Guild Level 25 [A]
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(67107, {	-- Kor'kron Annihilator (MOUNT!)
+					-- #if NOT ANYCLASSIC
+					["sourceAchievement"] = 5492,	-- Guild Level 25 [H]
+					-- #endif
+					["races"] = HORDE_ONLY,
+				}),
+				applyclassicphase(CATA_PHASE_THREE, i(71033, {	-- Lil' Tarecgosa (PET!)
+					["sourceAchievement"] = 5840,	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
+					["timeline"] = { ADDED_4_2_0 },
+				})),
+				i(85666, {	-- Thundering Jade Cloud Serpent (MOUNT!)
+					["sourceAchievement"] = 6682,	-- Guild Glory of the Pandaria Raider
+					["timeline"] = { ADDED_5_0_4 },
+				}),
+			},
+		}),
 	}),
 })));

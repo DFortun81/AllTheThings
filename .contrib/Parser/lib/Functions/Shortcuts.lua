@@ -298,6 +298,23 @@ bubbleDownRep = function(rep, group)
 	end
 	return t;
 end
+local classicRepsMap = {
+	NEUTRAL,
+	FRIENDLY,
+	HONORED,
+	REVERED,
+	EXALTED
+};
+bubbleDownClassicRep = function(rep, group)
+	local t = {};
+	for i,groups in ipairs(group) do
+		groups = bubbleDown({["minReputation"] = {rep, classicRepsMap[i]}}, groups)
+		for j,o in ipairs(groups) do
+			table.insert(t, o);
+		end
+	end
+	return t;
+end
 run = function(method, t)
 	if t then
 		if t.g or t.groups then
