@@ -135,6 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						12461,	-- Death Talon Overseer
 					},
 				}),
+				i(19183),	-- Hourglass Sand
 				i(19439, {	-- Interlaced Shadow Jerkin
 					["crs"] = {
 						12460,	-- Death Talon Wyrmguard
