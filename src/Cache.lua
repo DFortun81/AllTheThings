@@ -590,6 +590,11 @@ local fieldConverters = {
 			CacheField(group, "sourceQuestID", value[i]);
 		end
 	end,
+	["sourceAchievements"] = function(group, value)
+		for i=1,#value,1 do
+			CacheField(group, "sourceAchievementID", value[i]);
+		end
+	end,
 
 	-- Localization Helpers
 	["zone-artIDs"] = function(group, value)

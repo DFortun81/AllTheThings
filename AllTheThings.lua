@@ -4936,6 +4936,7 @@ app.CreateGuildAchievement = function(id, t)
 	-- TODO: Proper Class Extension Maybe? I think the Achievement class doesn't use a Class Constructor yet, but when it does, do this too.
 	t = app.CreateAchievement(id, t);
 	t.collectible = false;
+	t.isGuild = true;
 	return t;
 end
 
@@ -5146,6 +5147,7 @@ app.CreateGuildAchievementCriteria = function(id, t)
 	-- TODO: Proper Class Extension Maybe? I think the Achievement class doesn't use a Class Constructor yet, but when it does, do this too.
 	t = app.CreateAchievementCriteria(id, t);
 	t.collectible = false;
+	t.isGuild = true;
 	return t;
 end
 
