@@ -6904,7 +6904,6 @@ root(ROOTS.Unsorted, {
 					i(216419),	-- Hozen Knife
 					i(216421),	-- Pandaren Mace
 					i(216422),	-- Pandaren Smasher
-					i(216423),	-- Pandaren Basher
 					i(216424),	-- Pandaren Breaker
 					i(216425),	-- Acid-Spine Bonebreaker
 					i(216426),	-- Acid-Spine Bonebreaker

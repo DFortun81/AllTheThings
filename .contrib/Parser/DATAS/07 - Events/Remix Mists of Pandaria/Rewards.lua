@@ -121,6 +121,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(220373),	-- Perfect Versatile Diamond
 		}),
 		filter(ONE_HANDED_MACES, {
+			i(216423),	-- Pandaren Basher
 			i(224079),	-- Timerunner's Mace
 		}),
 		filter(SHIELDS, {
