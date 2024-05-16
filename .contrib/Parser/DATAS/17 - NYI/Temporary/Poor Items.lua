@@ -2790,8 +2790,6 @@ root(ROOTS.NeverImplemented, {
 				filter(THROWN, {
 					i(66347),	-- Archaic Throwing Daggers
 					i(66346),	-- Archaic Throwing Stars
-					i(78558),	-- Darting Chakram
-					i(78638),	-- Darting Chakram
 					i(73794),	-- Monster - Thrown, 1H PVPCataclysmS3 C 01 - Blue
 					i(73793),	-- Monster - Thrown, 1H PVPCataclysmS3 C 01 - Default
 					i(73795),	-- Monster - Thrown, 1H PVPCataclysmS3 C 01 - Green
@@ -2813,13 +2811,9 @@ root(ROOTS.NeverImplemented, {
 					i(66200),	-- Timeworn Throwing Stars
 					i(66639),	-- Translucent Throwing Daggers
 					i(66638),	-- Translucent Throwing Stars
-					i(78557),	-- Unexpected Backup
-					i(78636),	-- Unexpected Backup
 					i(58987),	-- UNUSED - Sneaky Devil's Throwing Knives
 					i(66786),	-- Well Repaired Throwing Daggers
 					i(66785),	-- Well Repaired Throwing Stars
-					i(78559),	-- Windslicer Boomerang
-					i(78637),	-- Windslicer Boomerang
 				}),
 				filter(WANDS, {
 					i(60967),	-- Monster - BWDRaid D01

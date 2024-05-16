@@ -610,6 +610,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(67221, {	-- Breastplate of the Poetic Orc
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(67228, {	-- Jadrag's Slicers
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(28535, {	-- Descendants of the High Elves

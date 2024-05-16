@@ -1481,6 +1481,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(57310),	-- Impressive Greaves
 						i(57309),	-- Chestplate of Exceptional Expectations
+						-- #if BEFORE MOP
+						i(57311, {	-- Firetail Dart
+							["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(25321, {	-- Twilight Captivity
@@ -1908,7 +1913,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						cl(ROGUE, {
 							i(72995),	-- Shadowstalking Dagger
-							un(REMOVED_FROM_GAME, i(72996)),	-- Shadowstalking Shiv (missing on the vendor implementation)
+							--i(72996),	-- Shadowstalking Shiv (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
 							i(72997),	-- Shadowstalking Sword
 							i(72667),	-- Shadowstalking Hood
 							i(72669),	-- Shadowstalking Shoulders

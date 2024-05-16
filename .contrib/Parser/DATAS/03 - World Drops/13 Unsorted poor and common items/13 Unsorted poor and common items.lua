@@ -43,62 +43,39 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(29010),	-- Wicked Throwing Dagger
 
 				-- Cataclysm
-				i(63798),	-- Winged Axe
-				i(78369),	-- Razor Saronite Chip
-				i(71593),	-- Giantslicer
-				i(71592),	-- Deflecting Star
-				i(71154),	-- Giantslicer
-				i(71152),	-- Morningstar Shard
-				i(68162),	-- Spinerender
-				i(67466),	-- Vicious Gladiator's Hatchet
-				i(67228),	-- Jadrag's Slicers
-				i(65695),	-- Sludge-Caked Throwing Knives
-				i(64551),	-- Winky's Star
-				i(63795),	-- Garona's Spare Star
-				i(61401),	-- Rigid Colossus Fragment
-				i(57311),	-- Firetail Dart
-				i(56001),	-- Slashing Thorns
-				i(77213),	-- Razor Saronite Chip
-				i(77085),	-- Unexpected Backup
-				i(73358),	-- Valiant Knives of Battle
-				i(71568),	-- Morningstar Shard
-				i(71218),	-- Deflecting Star
+				-- PVP Gear (TODO)
+				i(64759),	-- Bloodthirsty Gladiator's Hatchet
+				i(64871),	-- Bloodthirsty Gladiator's War Edge
 				i(70198),	-- Ruthless Gladiator's War Edge
 				i(70197),	-- Ruthless Gladiator's Hatchet
-				i(64759),	-- Bloodthirsty Gladiator's Hatchet
-				i(57441),	-- Shutter Uppers
-				i(55470),	-- Razorwind Knives
-				i(49258),	-- Light Throwing Tusk
-				i(73359),	-- Valiant Knives of Stoicism
-				i(73357),	-- Shadowstalking Knives
-				i(69597),	-- Zulian Throwing Axe
-				i(65321),	-- Stars of Felwood
-				i(64871),	-- Bloodthirsty Gladiator's War Edge
-				i(63208),	-- Glassweb Spider Fangs
-				i(55478),	-- Rustmaul Knives
-				i(55477),	-- Irontree Knives
-				i(55476),	-- Bladefist Knives
-				i(55475),	-- Mardenholde Knives
-				i(55473),	-- Nethergarde Knives
-				i(55471),	-- Steelspark Knives
-				i(77087),	-- Darting Chakram
-				i(77086),	-- Windslicer Boomerang
-				i(66010),	-- Star of the Fool
-				i(55474),	-- Splinterspear Knives
-				i(25877),	-- Master's Throwing Dagger
-				i(73412),	-- Cataclysmic Gladiator's War Edge
-				i(64555),	-- Kibler's Fetch Toy
-				i(56420),	-- Slashing Thorns
-				i(78374),	-- Razor Saronite Chip
-				i(73438),	-- Cataclysmic Gladiator's Hatchet
-				i(49257),	-- Seashell Throwing Axe
-				i(76155),	-- Thorns of the Dying Day
-				i(68608),	-- Dragonwreck Throwing Axe
-				i(73471),	-- Cataclysmic Gladiator's Hatchet
-				i(61348),	-- Vicious Gladiator's Hatchet
 				i(70232),	-- Ruthless Gladiator's War Edge
 				i(70233),	-- Ruthless Gladiator's Hatchet
+				i(61348),	-- Vicious Gladiator's Hatchet
+				i(67466),	-- Vicious Gladiator's Hatchet
+				i(73438),	-- Cataclysmic Gladiator's Hatchet
+				i(73412),	-- Cataclysmic Gladiator's War Edge
+				i(73471),	-- Cataclysmic Gladiator's Hatchet
 				i(73445),	-- Cataclysmic Gladiator's War Edge
+				
+				-- CRIEVE NOTE: Vendor item from the Lost Isles (Brett "Coins" McQuid)
+				i(49258),	-- Light Throwing Tusk
+				i(49257),	-- Seashell Throwing Axe
+				
+				-- Regular vendor throwing weapons
+				i(25877),	-- Master's Throwing Dagger
+				
+				-- These are probably raid drops...
+				i(78558),	-- Darting Chakram
+				i(78638),	-- Darting Chakram
+				i(77213),	-- Razor Saronite Chip
+				i(78369),	-- Razor Saronite Chip
+				i(78374),	-- Razor Saronite Chip
+				i(77085),	-- Unexpected Backup
+				i(78557),	-- Unexpected Backup
+				i(78636),	-- Unexpected Backup
+				i(77086),	-- Windslicer Boomerang
+				i(78559),	-- Windslicer Boomerang
+				i(78637),	-- Windslicer Boomerang
 				-- #endif
 			})
 		}),

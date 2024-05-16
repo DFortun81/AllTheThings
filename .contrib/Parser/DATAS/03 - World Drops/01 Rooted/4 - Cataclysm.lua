@@ -631,6 +631,30 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 			i(55472, {	-- Angerfang Knives
 				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 			}),
+			i(55476, {	-- Bladefist Knives
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(55477, {	-- Irontree Knives
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(55475, {	-- Mardenholde Knives
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(55473, {	-- Nethergarde Knives
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(55470, {	-- Razorwind Knives
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(55478, {	-- Rustmaul Knives
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(55474, {	-- Splinterspear Knives
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(55471, {	-- Steelspark Knives
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
 		}),
 		-- #endif
 	}),

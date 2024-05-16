@@ -430,6 +430,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				i(68972),	-- Apparatus of Khaz'goroth
 				i(71359),	-- Chelley's Sterilized Scalpel
 				i(70929),	-- Firebound Gorget
+				-- #if BEFORE MOP
+				i(71154, {	-- Giantslicer
+					["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+				}),
+				-- #endif
 				i(71365),	-- Hide-Bound Chains
 				i(71366),	-- Lava Bolt Crossbow
 				i(71362),	-- Obsidium Cleaver
@@ -707,12 +712,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 										{ "i", 71359, 1 },	-- Chelley's Sterilized Scalpel
 									},
 								}),
+								-- #if BEFORE MOP
+								i(71592, {	-- Deflecting Star
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71218, 1 },	-- Deflecting Star
+									},
+									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+								}),
+								-- #endif
 								i(71563, {	-- Firebound Gorget
 									["cost"] = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
 										{ "i", 70929, 1 },	-- Firebound Gorget
 									},
 								}),
+								-- #if BEFORE MOP
+								i(71593, {	-- Giantslicer
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71154, 1 },	-- Giantslicer
+									},
+									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+								}),
+								-- #endif
 								i(71561, {	-- Hide-Bound Chains
 									["cost"] = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
@@ -725,6 +748,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 										{ "i", 71366, 1 },	-- Lava Bolt Crossbow
 									},
 								}),
+								-- #if BEFORE MOP
+								i(71568, {	-- Morningstar Shard
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71152, 1 },	-- Morningstar Shard
+									},
+									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+								}),
+								-- #endif
 								i(71562, {	-- Obsidium Cleaver
 									["cost"] = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone

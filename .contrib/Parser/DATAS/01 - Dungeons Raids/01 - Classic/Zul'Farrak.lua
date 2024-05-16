@@ -33,9 +33,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65929),	-- Bildewhizzle's Armbands
 						i(65978),	-- Electrified Leggings
 						i(65999),	-- Pauldrons of Zul'Farrak
+						-- #if BEFORE MOP
 						i(66010, {	-- Star of the Fool
 							["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 						}),
+						-- #endif
 					},
 				}),
 				q(27076, {	-- Breaking and Entering

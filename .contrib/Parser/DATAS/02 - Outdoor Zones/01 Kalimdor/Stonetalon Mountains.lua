@@ -2167,6 +2167,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57442, {	-- Mine Sealer's Ring
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(57441, {	-- Shutter Uppers
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(26048, {	-- Spare Parts Up In Here!

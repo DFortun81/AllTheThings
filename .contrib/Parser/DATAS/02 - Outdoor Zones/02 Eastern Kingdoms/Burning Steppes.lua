@@ -1511,6 +1511,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(64556, {	-- Petting Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(64555, {	-- Kibler's Fetch Toy
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 						i(66080, {	-- Tiny Flamefly (PET!)
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1697,6 +1702,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(64552, {	-- Belly Rubbers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(64551, {	-- Winky's Star
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 						i(66080, {	-- Tiny Flamefly (PET!)
 							["timeline"] = { ADDED_4_0_3 },
 						}),

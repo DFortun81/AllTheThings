@@ -1456,6 +1456,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(131692, {	-- Sludge Guard Mail Vest
 							["timeline"] = { ADDED_7_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(65695, {	-- Sludge-Caked Throwing Knives
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				-- #if AFTER CATA

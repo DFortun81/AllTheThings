@@ -163,6 +163,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(63209, {	-- Glassweb Robes
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(63208, {	-- Glassweb Spider Fangs
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(3201, {	-- At Last!

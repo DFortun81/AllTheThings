@@ -650,11 +650,21 @@ TIER_TWELVE_COMMON_GROUPS = {
 	i(70937),	-- Bracers of Regal Force
 	i(71210),	-- Crystalline Brimstone Ring
 	i(70940),	-- Deflecting Brimstone Band
+	-- #if BEFORE MOP
+	i(71218, {	-- Deflecting Star
+		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(71265),	-- Emberflame Bracers
 	i(71214),	-- Firemind Pendant
 	i(71266),	-- Firesoul Wristguards
 	i(71130),	-- Flamebinder Bracers
 	i(71261),	-- Gigantiform Bracers
+	-- #if BEFORE MOP
+	i(71152, {	-- Morningstar Shard
+		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(71129),	-- Necklace of Smoke Signals
 	i(71150),	-- Scorchvine Wand
 	i(71208),	-- Serrated Brimstone Signet

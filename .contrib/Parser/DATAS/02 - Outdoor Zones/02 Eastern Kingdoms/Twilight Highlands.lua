@@ -942,13 +942,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(63797),	-- Eye of Despair
 						i(63796),	-- Dark-Eye Ring
+						-- #if BEFORE MOP
+						i(63798, {	-- Winged Axe
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(27955, {	-- Eye Spy (H)
 					["qg"] = 46323,	-- Garona Halforcen
+					["sourceQuest"] = 27954,	-- The Eyes Have It
 					["coord"] = { 53.2, 42.7, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27954,	-- The Eyes Have It
+					["groups"] = {
+						i(63794),	-- Eye of Reversal
+						i(63793),	-- Shard-Heart Ring
+						-- #if BEFORE MOP
+						i(63795, {	-- Garona's Spare Star
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
+					},
 				}),
 				q(27508, {	-- Far from the Nest
 					["sourceQuest"] = 27564,	-- In Defense of the Redoubt

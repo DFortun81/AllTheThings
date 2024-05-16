@@ -1259,6 +1259,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65302, {	-- Farlus' Staff
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(65321, {	-- Stars of Felwood
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(5085, {	-- Mystery Goo

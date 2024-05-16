@@ -905,12 +905,17 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26247,	-- Diplomacy First
 					}),
 					q(27932, {	-- The Axe of Earthly Sundering
-						["lvl"] = 82,
 						["qg"] = 47195,	-- Slate Quicksand
-						["coord"] = { 30.6, 77.8, DEEPHOLM },
 						["sourceQuest"] = 27931,	-- The Quaking Fields
+						["coord"] = { 30.6, 77.8, DEEPHOLM },
+						["lvl"] = 82,
 						["groups"] = {
 							i(61400),	-- Size-Cutting Bracers
+							-- #if BEFORE MOP
+							i(61401, {	-- Rigid Colossus Fragment
+								["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
+							-- #endif
 						},
 					}),
 					q(26971, {	-- The Binding
