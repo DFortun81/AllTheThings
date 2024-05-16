@@ -397,35 +397,35 @@ root(ROOTS.Character, n(createHeader({
 			ach(4944, {	-- Guild Level 10 // Guild Reputation: Friendly
 			-- #endif
 				i(62040, {	-- Ancient Bloodmoon Cloak
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					["minReputation"] = { FACTION_GUILD, FRIENDLY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122262, {	-- Ancient Bloodmoon Cloak
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					["minReputation"] = { FACTION_GUILD, FRIENDLY },
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(62039, {	-- Inherited Cape of the Black Baron
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					["minReputation"] = { FACTION_GUILD, FRIENDLY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122261, {	-- Inherited Cape of the Black Baron
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					["minReputation"] = { FACTION_GUILD, FRIENDLY },
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(69892, {	-- Ripped Sandstorm Cloak
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					["minReputation"] = { FACTION_GUILD, FRIENDLY },
 					["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 				}),
 				i(122266, {	-- Ripped Sandstorm Cloak
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					["minReputation"] = { FACTION_GUILD, FRIENDLY },
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 				i(62038, {	-- Worn Stoneskin Gargoyle Cape
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					["minReputation"] = { FACTION_GUILD, FRIENDLY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_6_1_0 },
 				}),
 				i(122260, {	-- Worn Stoneskin Gargoyle Cape
-					["minReputation"] = { FACTION_GUILD, HONORED },
+					["minReputation"] = { FACTION_GUILD, FRIENDLY },
 					["timeline"] = { ADDED_6_1_0 },
 				}),
 			-- #if NOT ANYCLASSIC
@@ -442,7 +442,7 @@ root(ROOTS.Character, n(createHeader({
 				}),
 			-- #if NOT ANYCLASSIC
 			}),
-			ach(4946, {	-- Guild Level 20 // Guild Reputation: Revered
+			ach(4946, {	-- Guild Level 20 // Guild Reputation: Honored
 			-- #endif
 				i(69887, {	-- Burnished Helm of Might
 					["minReputation"] = { FACTION_GUILD, HONORED },
