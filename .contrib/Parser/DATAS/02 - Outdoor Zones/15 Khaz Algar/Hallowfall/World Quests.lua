@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82041, {	-- Beledar's Blessing
 					["coord"] = { 24.3, 60.9, HALLOWFALL },
 				}),
+				q(82088, {	-- Kobyss Kibosh
+					["coord"] = { 35.4, 54.7, HALLOWFALL },
+				}),
 				q(82582, {	-- Mired in Shadow
 					["coord"] = { 74.8, 50.3, HALLOWFALL },
 				}),

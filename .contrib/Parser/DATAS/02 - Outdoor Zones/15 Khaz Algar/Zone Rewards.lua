@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			i(220338),	-- Begrimed Vambraces
 		}),
 		filter(TRINKET_F, {
-			--i(),	-- 
+			i(224665),	-- Gem-Studded Pendant of the Aurora // Unsure if it is zone specific (Hallowfall) or generic xpac rewards
 		}),
 		n(WEAPONS, {
 			--i(),	-- 

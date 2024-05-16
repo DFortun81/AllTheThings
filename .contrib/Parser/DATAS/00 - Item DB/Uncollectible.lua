@@ -1782,16 +1782,20 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220290);	-- Barbed Pincers
 --i(225801);	-- Braided Seaweed Bangle
 --i(220277);	-- Carapace Fragment
+--i(220281);	-- Charged Fragments
 --i(220249);	-- Chipped Mandible
+--i(225815);	-- Chipped Opal Signet Ring
 --i(220256);	-- Clump of Rotting Detritus
 --i(220267);	-- Combustible Gland
 --i(225804);	-- Crumpled Patrol Assignment
 --i(220255);	-- Darkened Residue
+--i(225813);	-- Darkened Ritual Stone
 --i(225795);	-- Dented Pocketwatch
 --i(220271);	-- Downy Clump
 --i(225792);	-- Elegant Pedipalp Wrappings
 --i(225814);	-- Feather-on-a-Stick
 --i(220259);	-- Gob of Mucus
+--i(220509);	-- Gossamer Web
 --i(225790);	-- Half-Painted Pewter Spider
 --i(220279);	-- Handful of Polished Scales
 --i(220252);	-- Handful of Smooth Pebbles
@@ -1805,14 +1809,18 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220251);	-- Pale Gills
 --i(225787);	-- Pheromone-Covered Missive
 --i(220247);	-- Polishing Powder
+--i(220258);	-- Rotting Bones
 --i(220257);	-- Pulsing Pustules
 --i(220261);	-- Pungent Mushroom
 --i(220288);	-- Quivering Tail
+--i(220362);	-- Ragged Rope
 --i(225807);	-- Rune-Carved Bone
 --i(220266);	-- Sharpened Digging Claws
+--i(220361);	-- Sharpened Steel Implement
 --i(220226);	-- Slime-Coated Membrane
 --i(225810);	-- Smoked Visor
 --i(220268);	-- Spiraled Horn
+--i(220363);	-- Straw-Stuffed Hat
 --i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
 --i(220296);	-- Thickly Webbed Foot
 --i(220223);	-- Torn Gossamer Scrap

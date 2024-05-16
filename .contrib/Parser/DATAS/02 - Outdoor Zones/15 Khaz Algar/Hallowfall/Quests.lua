@@ -268,36 +268,36 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			-- Zone quest story end
 			-- Some wierd fish side quest chain
-			q(xx, {	-- Gasping Plea
-				--["sourceQuests"] = { xx },	-- ??
+			q(80312, {	-- Gasping Plea
+				--["sourceQuests"] = { 81568 },	-- Release the Beasts // technically it is bonus objective, as source, but not really.
 				["provider"] = { "i", 217352 },	-- Gasping Fish (QI!)
-				["coord"] = { x, y, HALLOWFALL },
+				--["coord"] = { x, y, HALLOWFALL },	-- any place, since item
 			}),
-			q(xx, {	-- Tidal Charms
-				["sourceQuests"] = { xx },	-- Gasping Plea
-				["provider"] = { "n", xxx },	-- Peculiar Fish
-				["coord"] = { x, y, HALLOWFALL },
+			q(80313, {	-- Tidal Charms
+				["sourceQuests"] = { 80312 },	-- Gasping Plea
+				["provider"] = { "n", 219430 },	-- Peculiar Fish
+				["coord"] = { 54.5, 25.3, HALLOWFALL },
 				["g"] = {
 					i(217709),	-- Sunless Shard (QI!)
 				},
 			}),
-			q(xx, {	-- Voices from the Deep
-				["sourceQuests"] = { xx },	-- Gasping Plea
-				["provider"] = { "n", xxx },	-- Peculiar Fish
-				["coord"] = { x, y, HALLOWFALL },
+			q(80314, {	-- Voices from the Deep
+				["sourceQuests"] = { 80312 },	-- Gasping Plea
+				["provider"] = { "n", 219430 },	-- Peculiar Fish
+				["coord"] = { 54.5, 25.3, HALLOWFALL },
 			}),
-			q(xx, {	-- Alluring Offer
+			q(80315, {	-- Alluring Offer
 				["sourceQuests"] = {
-					xx,	-- Tidal Charms
-					xx,	-- Voices from the Deep	
+					80313,	-- Tidal Charms
+					80314,	-- Voices from the Deep	
 				 },
-				["provider"] = { "n", xxx },	-- Peculiar Fish
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 219430 },	-- Peculiar Fish
+				["coord"] = { 54.5, 25.3, HALLOWFALL },
 			}),
-			q(xx, {	-- Return to the Sea
-				["sourceQuests"] = { xx },	-- Alluring Offer
-				["provider"] = { "n", xxx },	-- Peculiar Fish
-				["coord"] = { x, y, HALLOWFALL },
+			q(80316, {	-- Return to the Sea
+				["sourceQuests"] = { 80315 },	-- Alluring Offer
+				["provider"] = { "n", 219430 },	-- Peculiar Fish
+				["coord"] = { 54.5, 25.3, HALLOWFALL },
 				["g"] = {
 					i(217816),	-- Rehydated Fish (QI!)
 				},
@@ -405,68 +405,68 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 40.5, 50.8, HALLOWFALL },
 			}),
 			-- Brothers Braunpyke quest chain start
-			q(xx, {	-- Stave Them Off
-				["sourceQuests"] = { xx },	-- The Brothers Braunpyke
-				["provider"] = { "n", xxx },	-- Sir Theleon Braunpyke
-				["coord"] = { x, y, HALLOWFALL },
+			q(79642, {	-- Stave Them Off
+				["sourceQuests"] = { 82628 },	-- The Brothers Braunpyke
+				["provider"] = { "n", 217426 },	-- Sir Theleon Braunpyke
+				["coord"] = { 31.0, 55.6, HALLOWFALL },
 			}),
-			q(xx, {	-- Wipe Away Their Smiles
-				["sourceQuests"] = { xx },	-- The Brothers Braunpyke
-				["provider"] = { "n", xxx },	-- Baron Sybaestan Braunpyke
-				["coord"] = { x, y, HALLOWFALL },
+			q(79641, {	-- Wipe Away Their Smiles
+				["sourceQuests"] = { 82628 },	-- The Brothers Braunpyke
+				["provider"] = { "n", 217424 },	-- Baron Sybaestan Braunpyke
+				["coord"] = { 30.9, 55.6, HALLOWFALL },
 				["g"] = {
 					i(219211),	-- Darkwater Tooth (QI!)
 				},
 			}),
-			q(xx, {	-- Dreaded Dreadfang
+			q(79643, {	-- Dreaded Dreadfang
 				["sourceQuests"] = {
-					xx,	-- Stave Them Off
-					xx,	-- Wipe Away Their Smiles
+					79642,	-- Stave Them Off
+					79641,	-- Wipe Away Their Smiles
 				},
-				["provider"] = { "n", xxx },	-- Baron Sybaestan Braunpyke
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 221492 },	-- Baron Sybaestan Braunpyke
+				--["coord"] = { x, y, HALLOWFALL },	-- follow player
 			}),
-			q(xx, {	-- Go to The Priory
-				["sourceQuests"] = { xx },	-- Dreaded Dreadfang
-				["provider"] = { "n", xxx },	-- Baron Sybaestan Braunpyke
-				["coord"] = { x, y, HALLOWFALL },
+			q(79644, {	-- Go to The Priory
+				["sourceQuests"] = { 79643 },	-- Dreaded Dreadfang
+				["provider"] = { "n", 217424 },	-- Baron Sybaestan Braunpyke
+				["coord"] = { 29.1, 61.8, HALLOWFALL },
 			}),
-			q(xx, {	-- Memorial Wine
-				["sourceQuests"] = { xx },	-- Go to The Priory
-				["provider"] = { "n", xxx },	-- Sister Etna Blayze
-				["coord"] = { x, y, HALLOWFALL },
+			q(79646, {	-- Memorial Wine
+				["sourceQuests"] = { 79644 },	-- Go to The Priory
+				["provider"] = { "n", 217398 },	-- Sister Etna Blayze
+				["coord"] = { 40.5, 35.0, HALLOWFALL },
 			}),
-			q(xx, {	-- Sweet-sting Infestation
-				["sourceQuests"] = { xx },	-- Go to The Priory
-				["provider"] = { "n", xxx },	-- Sister Etna Blayze
-				["coord"] = { x, y, HALLOWFALL },
+			q(79645, {	-- Sweet-sting Infestation
+				["sourceQuests"] = { 79644 },	-- Go to The Priory
+				["provider"] = { "n", 217398 },	-- Sister Etna Blayze
+				["coord"] = { 40.5, 35.0, HALLOWFALL },
 				["g"] = {
 					i(218113),	-- Wasp Venom (QI!)
 				},
 			}),
-			q(xx, {	-- Burning Reflections
+			q(79647, {	-- Burning Reflections
 				["sourceQuests"] = {
-					xx,	-- Memorial Wine
-					xx,	-- Sweet-sting Infestation
+					79646,	-- Memorial Wine
+					79645,	-- Sweet-sting Infestation
 				},
-				["provider"] = { "n", xxx },	-- Sister Etna Blayze
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 217398 },	-- Sister Etna Blayze
+				["coord"] = { 40.5, 35.0, HALLOWFALL },
 			}),
-			q(xx, {	-- Missing Somebody
-				["sourceQuests"] = { xx },	-- Burning Reflections
-				["provider"] = { "n", xxx },	-- Sister Etna Blayze
-				["coord"] = { x, y, HALLOWFALL },
+			q(79648, {	-- Missing Somebody
+				["sourceQuests"] = { 79647 },	-- Burning Reflections
+				["provider"] = { "n", 217398 },	-- Sister Etna Blayze
+				["coord"] = { 39.6, 37.2, HALLOWFALL },
 			}),
-			q(xx, {	-- Sacred Flame Inquisition
-				["sourceQuests"] = { xx },	-- Missing Somebody
-				["provider"] = { "n", xxx },	-- Sister Etna Blayze
-				["coord"] = { x, y, HALLOWFALL },
+			q(79649, {	-- Sacred Flame Inquisition
+				["sourceQuests"] = { 79648 },	-- Missing Somebody
+				["provider"] = { "n", 217398 },	-- Sister Etna Blayze
+				["coord"] = { 39.6, 37.2, HALLOWFALL },
 			}),
-			q(xx, {	-- Priory of the Sacred Flame: A Brother's Grief
+			q(79649, {	-- Priory of the Sacred Flame: A Brother's Grief
 				--dungeon quest
-				["sourceQuests"] = { xx },	-- Sacred Flame Inquisition
-				["provider"] = { "n", xxx },	-- Sister Etna Blayze
-				["coord"] = { x, y, HALLOWFALL },
+				["sourceQuests"] = { 79649 },	-- Sacred Flame Inquisition
+				["provider"] = { "n", 217398 },	-- Sister Etna Blayze
+				["coord"] = { 40.3, 34.9, HALLOWFALL },
 			}),
 			-- End of Brothers Braunpyke quest chain (but I'm not sure if dungeon quest is last in chain)
 			-- Start Last Mage quest chain
@@ -505,13 +505,114 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 
 			--
-			--	Bonus Objectives during quests
+			--	Bonus Objectives
 			q(81568, {	-- Release the Beasts
 				--["sourceQuests"] = { xx },	-- Tricks of the Dark OR Fish Are Food, Not Friends
 				["coord"] = { 55.2, 26.8, HALLOWFALL },
 				["g"] = {
-					i(217352),	-- Gasping Fish (QI!) // or could be also drop during Tricks of the Dark AND/OR Fish Are Food, Not Friends
+					i(217352),	-- Gasping Fish (QI!)
 				},
+			}),
+			q(79471, {	-- Bleak Sand
+				--["sourceQuests"] = { xx },	-- After flare up keyflame
+				["isWeekly"] = true,
+				["coord"] = { 61.6, 12.8, HALLOWFALL },
+				["g"] = {
+					i(211073),	-- Sentry Flare (QI!)
+				},
+			}),
+			q(79470, {	-- Water of War
+				--["sourceQuests"] = { xx },	-- After Flare up keyflame
+				["isWeekly"] = true,
+				["coord"] = { 62.6, 17.0, HALLOWFALL },
+				["g"] = {
+					i(211073),	-- Sentry Flare (QI!)
+				},
+			}),
+			q(78657, {	-- The Midnight Sentry
+				--["sourceQuests"] = { xx },	-- After Flare up Torchlight Mine Keyflame
+				["isWeekly"] = true,
+				["coord"] = { 63.9, 19.6, HALLOWFALL },
+				["g"] = {
+					i(211073),	-- Sentry Flare (QI!)
+				},
+			}),
+			q(79380, {	-- Bog Beast Banishment
+				--["sourceQuests"] = { xx },	-- After Flare up Stillstone Pond Keyflame
+				["isWeekly"] = true,
+				["coord"] = { 66.5, 24.0, HALLOWFALL },
+			}),
+			q(76338, {	-- A Better Cabbage Smacker
+				--["sourceQuests"] = { xx },	-- After Flare up Whirring Field Keyflame
+				["isWeekly"] = true,
+				["coord"] = { 65.0, 29.3, HALLOWFALL },
+				["g"] = {
+					i(206519),	-- Cleanbrass Bolts (QI!)
+					i(206518),	-- Gyro-Optic Spring (QI!)
+				},
+			}),
+			--
+			q(80004, {	-- Crab Grab
+				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near 
+				--["isWeekly"] = true,	-- ?
+				["provider"] = { "o", 424347 },	-- Empty Crab Cage
+				["coord"] = { 61.5, 17.4, HALLOWFALL },
+				["g"] = {
+					i(216693),	-- Shadowtide Crab (QI!)
+				},
+			}),
+			q(76169, {	-- Glow in the Dark
+				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Torchlight Mine Keyflame
+				--["isWeekly"] = true,	-- ?
+				["provider"] = { "n", 212419 },	-- Attica Whiskervale
+				["coord"] = { 64.5, 18.8, HALLOWFALL },
+				["g"] = {
+					i(219198),	-- Attica's Cave Torch (QI!)
+					i(206203),	-- Dauntless Draught (QI!)
+					i(217342),	-- Dauntless Draught
+				},
+			}),
+			q(78656, {	-- Hose It Down
+				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Stillstone Pond Keyflame
+				--["isWeekly"] = true,	-- ?
+				["provider"] = { "n", 215956 },	-- Taerry Bligestone
+				["coord"] = { 65.8, 24.4, HALLOWFALL },
+				["g"] = {
+					i(211942),	-- Water Hose (QI!)
+				},
+			}),
+			q(79158, {	-- Seeds of Salvation
+				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Whirring Field Keyflame
+				--["isWeekly"] = true,	-- ?
+				["provider"] = { "n", 206441 },	-- Auebry Irongear
+				["coord"] = { 65.2, 28.1, HALLOWFALL },
+				["g"] = {
+					i(211947),	-- Harvest Seed Supply (QI!)
+				},
+			}),
+			q(76997, {	-- Lost in Shadows
+				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Whirring Field Keyflame
+				--["isWeekly"] = true,	-- ?
+				["provider"] = { "n", 208186 },	-- Yorbvas Flintstrike
+				["coord"] = { 64.6, 30.7, HALLOWFALL },
+				["g"] = {
+					i(211872),	-- Patrol Torch (QI!)
+				},
+			}),
+			q(xx, {	-- Supply the Effort
+				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Light's Blooming Keyflame
+				--["isWeekly"] = true,	-- ?
+				["provider"] = { "n", 206150 },	-- Erol Ellimoore
+				["coord"] = { 63.2, 29.4, HALLOWFALL },
+				["g"] = {
+					--i(211872),	-- Patrol Torch (QI!)
+				},
+			}),
+			--
+			q(79222, {	-- Shadow-Hardened Mainspring
+				["provider"] = { "i", 212330 },	-- Shadow-Hardened Mainspring
+				--["coord"] = { 65.2, 28.1, HALLOWFALL },	-- since item
+				-- unsure if it is currently can be looted from this zone only
 			}),
 			--
 			--	Rares / Bonus Objectives
@@ -620,10 +721,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
-			q(xx, {	-- Dark Ritual
-				["description"] = "In cave",
-				["provider"] = { "o", 453359 },	-- 
-				["coord"] = { 59.5, 59.7, HALLOWFALL },
+			q(xx, {	-- Radiant-Twisted Mycelium
+				["provider"] = { "n", 214905 },	-- Radiant-Twisted Mycelium
+				["coord"] = { 62.6, 19.7, HALLOWFALL },	-- ~~
 				["g"] = {
 					i(),	-- Shadowed Essence
 				},
@@ -668,5 +768,19 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(),	-- 3rd option / unknown requirements
 	--
 	q(82063),	-- A Worn Down Book @ 25.1, 53.7
+	--
+	q(80005),	-- Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
+	q(78472),	-- Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
+	q(79295),	-- Hose 'Em Down - Activate, after flare up lesser keyflame @ 65.8, 24.4
+	q(76599),	-- Right Between Gyro-Optics - Activate, after flare up lesser keyflame @ 65.4, 28.1
+	q(78452),	-- Reinforcements - Activate, after flare up lesser keyflame @ 64.6, 30.6
+	q(79383),	-- Web of Manipulation - Activate, after flare up lesser keyflame @ 63.3, 29.4
+	q(80337),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 66.1, 16.6
+	q(80347),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.7, 16.5
+	q(80342),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.4, 16.7
+	q(80344),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 64.2, 16.4
+	q(80339),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 66.4, 15.0
+	q(80548),	-- pop after I grab Radiant Remnant from ground in cave during qID 76338 (A Better Cabbage Smacker) @ 64.8, 28.9
+	q(79212),	-- not sure why it pop near Defender of the Flame quest chain?
 });
 --]]

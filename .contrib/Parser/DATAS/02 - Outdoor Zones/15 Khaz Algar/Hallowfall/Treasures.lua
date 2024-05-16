@@ -34,14 +34,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--
 				},
 			}),
-			--o(444804, {	-- Concentrated Shadow
-			--	["description"] = "You will able to see it only when crystal in zone is purple",
-			--	["coord"] = { 57.0, 69.7, HALLOWFALL },
-			--	["questID"] = xx,
-			--	["g"] = {
-			--		-- despawn at moment when I fill this data, I'm not really sure what deal with it now
-			--	},
-			--}),
+			o(444804, {	-- Concentrated Shadow
+				["description"] = "Spawn only when crystal in zone is purple",
+				["coords"] = {
+					{ 57.0, 69.7, HALLOWFALL },
+					{ 49.0, 36.5, HALLOWFALL },
+					{ 52.2, 29.4, HALLOWFALL },
+				},
+				--["questID"] = xx,
+				["g"] = {
+					-- some crafting reagents and gray item
+				},
+			}),
 			o(453374, {	-- Dark Ritual
 				["description"] = "In cave",	-- I'm unsure this is treasure, rather rare.
 				["provider"] = { "o", 453359 },	-- Dark Ritual (vignette)
@@ -62,6 +66,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["g"] = {
 					i(225592),	-- Exquisitely Eviscerated Muscle
 					i(225639),	-- Recipe: Exquisitely Eviscerated Muscle (RECIPE!)
+				},
+			}),
+			o(xx, {	-- Faded Supply Chest
+				["coord"] = { 61.8, 17.4, HALLOWFALL },
+				["questID"] = xx,
+				["g"] = {
+					-- didn't find key for it and missing vignette
 				},
 			}),
 			o(437302, {	-- Fisherman's Pouch
@@ -97,7 +108,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 				--["questID"] = xx,
 				["g"] = {
-					-- unable to loot anything / bugged
+					-- crafting reagents and gray items
 				},
 			}),
 			o(441638, {	-- Lost Memento
