@@ -938,6 +938,14 @@ settings.ToggleFactionMode = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetFactionMode(not self:Get("FactionMode"));
 end
+settings.SetMainOnlyMode = function(self, mainOnly)
+	self:Set("MainOnly", mainOnly);
+	self:SetCompletionistMode(self:Get("Completionist"));
+end
+settings.ToggleMainOnlyMode = function(self)
+	self:ForceRefreshFromToggle();
+	self:SetMainOnlyMode(not self:Get("MainOnly"));
+end
 settings.SetCompletedThings = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
 	self:Set("Show:CollectedThings", checked);
