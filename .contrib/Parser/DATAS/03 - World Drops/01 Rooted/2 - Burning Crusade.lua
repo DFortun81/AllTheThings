@@ -906,46 +906,46 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		-- #if BEFORE MOP
 		filter(THROWN, {
 			i(28535, {	-- Amani Throwing Axe
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28540, {	-- Arakkoa Talon-Axe
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28544, {	-- Assassin's Shuriken
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28531, {	-- Barbed Shrike
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28543, {	-- Dreghood Throwing Axe
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28534, {	-- Fel Tipped Dart
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28538, {	-- Forked Shuriken
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28542, {	-- Heartseeker Knives
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28536, {	-- Jagged Guillotine
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28539, {	-- Razor-Edged Boomerang
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28541, {	-- Sawshrike
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28532, {	-- Silver Throwing Knifes
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28537, {	-- Wildhammer Throwing Axe
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28533, {	-- Wooden Boomerang
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 		}),
 		-- #endif

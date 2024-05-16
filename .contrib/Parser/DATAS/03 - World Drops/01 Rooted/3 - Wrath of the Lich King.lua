@@ -942,46 +942,46 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 		-- #if BEFORE MOP
 		filter(THROWN, {
 			i(36723, {	-- Clawed Shuriken
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36721, {	-- Dragon's Teeth
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36720, {	-- Flying Knives
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36711, {	-- Forsaken Edge
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36724, {	-- Frozen Throwing Blades
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36712, {	-- Howling Throwing Knives
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36719, {	-- Hunter's Scout
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36718, {	-- Nexus Shrike
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36722, {	-- Pyramid Throwing Star
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36713, {	-- Reaching Star
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36715, {	-- Runed Shuriken (TODO: May have never been implemented according to wowpedia)
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36716, {	-- Threatening Darts
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36714, {	-- Tuskarr's Piercers
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(36717, {	-- Venture Co. Throwing Axe
-				["timeline"] = { REMOVED_5_0_4, },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 		}),
 		-- #endif
