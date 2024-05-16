@@ -331,6 +331,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78376),	-- Sporebeard Gauntlets
 							i(78385),	-- Girdle of Shattered Stone
 							i(78386),	-- Pillarfoot Greaves
+							-- #if BEFORE MOP
+							i(78374, {	-- Razor Saronite Chip
+								["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+							}),
+							-- #endif
 						})),
 						cr(55308, e(324, {	-- Warlord Zon'ozz
 							i(78399),	-- Finger of Zon'ozz
@@ -616,6 +621,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(77269),	-- Sporebeard Gauntlets
 						i(77266),	-- Girdle of Shattered Stone
 						i(77265),	-- Pillarfoot Greaves
+						-- #if BEFORE MOP
+						i(77213, {	-- Razor Saronite Chip
+							["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					})),
 					cr(55308, e(324, {	-- Warlord Zon'ozz
 						i(78183),	-- Gauntlets of the Corrupted Conqueror
@@ -763,6 +773,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(78362),	-- Sporebeard Gauntlets
 						i(78370),	-- Girdle of Shattered Stone
 						i(78361),	-- Pillarfoot Greaves
+						-- #if BEFORE MOP
+						i(78369, {	-- Razor Saronite Chip
+							["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					})),
 					cr(55308, e(324, {	-- Warlord Zon'ozz
 						ach(6110),	-- Heroic: Warlord Zon'ozz

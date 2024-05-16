@@ -1069,8 +1069,18 @@ TIER_THIRTEEN_COMMON_GROUPS = {
 	i(77179),	-- Tentacular Belt
 	i(77157),	-- The Hands of Gilly
 	i(77089),	-- Threadlinked Chain
+	-- #if BEFORE MOP
+	i(77085, {	-- Unexpected Backup
+		["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(77187),	-- Vestal's Irrepressible Girdle
 	i(77155),	-- Visage of Petrification
+	-- #if BEFORE MOP
+	i(77086, {	-- Windslicer Boomerang
+		["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(77151),	-- Wolfdream Circlet
 	i(77096),	-- Woundlicker Cover
 	i(77150),	-- Zeherah's Dragonskull Crown

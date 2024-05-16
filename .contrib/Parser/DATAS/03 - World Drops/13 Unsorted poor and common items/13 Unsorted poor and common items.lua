@@ -43,7 +43,7 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				i(29010),	-- Wicked Throwing Dagger
 
 				-- Cataclysm
-				-- PVP Gear (TODO)
+				-- PVP Gear (TODO: These exist in the PVP file currently, but are missing timeline data.)
 				i(64759),	-- Bloodthirsty Gladiator's Hatchet
 				i(64871),	-- Bloodthirsty Gladiator's War Edge
 				i(70198),	-- Ruthless Gladiator's War Edge
@@ -64,18 +64,13 @@ root(ROOTS.WorldDrops, bubbleDown({ ["timeline"] = ADDED_10_0_5, ["description"]
 				-- Regular vendor throwing weapons
 				i(25877),	-- Master's Throwing Dagger
 				
-				-- These are probably raid drops...
-				i(78558),	-- Darting Chakram
-				i(78638),	-- Darting Chakram
-				i(77213),	-- Razor Saronite Chip
-				i(78369),	-- Razor Saronite Chip
-				i(78374),	-- Razor Saronite Chip
-				i(77085),	-- Unexpected Backup
-				i(78557),	-- Unexpected Backup
-				i(78636),	-- Unexpected Backup
-				i(77086),	-- Windslicer Boomerang
-				i(78559),	-- Windslicer Boomerang
-				i(78637),	-- Windslicer Boomerang
+				-- These are all Heroic/Raid Finder versions of Valor Point Vendor items that never were implemented?
+				i(78558),	-- Darting Chakram [Heroic - NYI]
+				i(78638),	-- Darting Chakram [Raid Finder - NYI]
+				i(78557),	-- Unexpected Backup [Heroic - NYI]
+				i(78636),	-- Unexpected Backup [Raid Finder - NYI]
+				i(78559),	-- Windslicer Boomerang [Heroic - NYI]
+				i(78637),	-- Windslicer Boomerang [Raid Finder - NYI]
 				-- #endif
 			})
 		}),
