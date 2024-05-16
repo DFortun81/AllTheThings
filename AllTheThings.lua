@@ -5781,10 +5781,12 @@ local createHeirloom = app.ExtendClass("Item", "Heirloom", "heirloomID", {
 	g = function(t)
 		-- unlocking the heirloom is the only thing contained in the heirloom
 		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
-			t.g = { CreateHeirloomUnlock(t.itemID, {
+			local unlock = CreateHeirloomUnlock(t.itemID, {
 				e = t.e,
 				u = t.u
-			}) };
+			});
+			unlock.parent = t;
+			t.g = { unlock };
 			return t.g;
 		end
 	end

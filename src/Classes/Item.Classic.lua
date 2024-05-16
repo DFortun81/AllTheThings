@@ -503,7 +503,9 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 		--t.b = 2;	-- Heirlooms are always BoA
 
 		-- unlocking the heirloom is the only thing contained in the heirloom
-		t.g = { CreateHeirloomUnlock(id, { e = t.e, u = t.u }); }
+		local unlock = CreateHeirloomUnlock(id, { e = t.e, u = t.u });
+		unlock.parent = t;
+		t.g = { unlock }
 		tinsert(heirloomIDs, id);
 		return t;
 	end
