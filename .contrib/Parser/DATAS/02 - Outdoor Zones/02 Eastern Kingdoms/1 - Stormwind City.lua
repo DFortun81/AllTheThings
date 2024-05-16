@@ -5863,37 +5863,53 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #endif
-				-- #if AFTER 10.0.5
 				n(1295, {	-- Lara Moore <Leather Armor Merchant>
-					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 62.2, 67.6, STORMWIND_CITY },
+						-- #else
+						{ 54.8, 55.6, STORMWIND_CITY },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
-						i(236),	-- Cured Leather Armor
+					["groups"] = {
+						i(236),		-- Cured Leather Armor
 						i(1849),	-- Cured Leather Belt
-						i(238),	-- Cured Leather Boots
+						i(238),		-- Cured Leather Boots
 						i(1850),	-- Cured Leather Bracers
-						i(239),	-- Cured Leather Gloves
-						i(237),	-- Cured Leather Pants
-						i(48),	-- Footpads Pants
-						i(47),	-- Footpads Shoes
-						i(58234),	-- Footpads Vest
-						i(6124),	-- Novices Pants
-						i(6123),	-- Novices Robe
+						i(239),		-- Cured Leather Gloves
+						i(237),		-- Cured Leather Pants
+						-- #if AFTER 10.0.5
+						i(48, {	-- Footpads Pants
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(47, {	-- Footpads Shoes
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(58234, {	-- Footpads Vest
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(6124, {	-- Novices Pants
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(6123, {	-- Novices Robe
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						-- #endif
 						i(1839),	-- Rough Leather Belt
-						i(796),	-- Rough Leather Boots
+						i(796),		-- Rough Leather Boots
 						i(1840),	-- Rough Leather Bracers
-						i(797),	-- Rough Leather Gloves
-						i(798),	-- Rough Leather Pants
-						i(799),	-- Rough Leather Vest
+						i(797),		-- Rough Leather Gloves
+						i(798),		-- Rough Leather Pants
+						i(799),		-- Rough Leather Vest
 						i(1843),	-- Tanned Leather Belt
-						i(843),	-- Tanned Leather Boots
+						i(843),		-- Tanned Leather Boots
 						i(1844),	-- Tanned Leather Bracers
-						i(844),	-- Tanned Leather Gloves
-						i(846),	-- Tanned Leather Jerkin
-						i(845),	-- Tanned Leather Pants
-					}),
+						i(844),		-- Tanned Leather Gloves
+						i(846),		-- Tanned Leather Jerkin
+						i(845),		-- Tanned Leather Pants
+					},
 				}),
-				-- #endif
 				-- #if AFTER 8.0.1
 				n(4730, {	-- Lelanai <Saber Handler>
 					["description"] = "Appears in Stormwind after War of Thorns.",

@@ -3534,7 +3534,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["classes"] = { MAGE },
 						}),
 						i(16525, {	-- Legionnaire's Chain Breastplate
-							["classes"] = {HUNTER },
+							["classes"] = { HUNTER },
 						}),
 						i(22874, {	-- Legionnaire's Chain Hauberk
 							["classes"] = { HUNTER },
@@ -3939,42 +3939,70 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
-				-- #if AFTER 10.0.5
 				n(3321, {	-- Morgum <Leather Armor Merchant>
-					["coord"] = { 60.0, 55.6, ORGRIMMAR },
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 60.0, 55.6, ORGRIMMAR },
+						-- #else
+						{ 56.0, 73.2, ORGRIMMAR },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
-					["groups"] = sharedData({ ["timeline"] = { ADDED_10_0_5 } }, {
+					["groups"] = {
 						i(2371),	-- Battered Leather Belt
 						i(2373),	-- Battered Leather Boots
 						i(2374),	-- Battered Leather Bracers
 						i(2375),	-- Battered Leather Gloves
 						i(2370),	-- Battered Leather Harness
 						i(2372),	-- Battered Leather Pants
-						i(236),	-- Cured Leather Armor
+						i(236),		-- Cured Leather Armor
 						i(1849),	-- Cured Leather Belt
-						i(238),	-- Cured Leather Boots
+						i(238),		-- Cured Leather Boots
 						i(1850),	-- Cured Leather Bracers
-						i(239),	-- Cured Leather Gloves
-						i(237),	-- Cured Leather Pants
-						i(20896),	-- Lookouts Pants
-						i(20898),	-- Lookouts Shoes
-						i(58238),	-- Lookouts Vest
-						i(6124),	-- Novices Pants
-						i(6139),	-- Novices Robe
-						i(153),	-- Primitive Kilt
-						i(6135),	-- Primitive Kilt
+						i(239),		-- Cured Leather Gloves
+						i(237),		-- Cured Leather Pants
+						-- #if AFTER 10.0.5
+						i(20896, {	-- Lookouts Pants
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(20898, {	-- Lookouts Shoes
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(58238, {	-- Lookouts Vest
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(6124, {	-- Novices Pants
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(6139, {	-- Novices Robe
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(153, {	-- Primitive Kilt
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(6135, {	-- Primitive Kilt
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						-- #endif
 						i(1843),	-- Tanned Leather Belt
-						i(843),	-- Tanned Leather Boots
+						i(843),		-- Tanned Leather Boots
 						i(1844),	-- Tanned Leather Bracers
-						i(844),	-- Tanned Leather Gloves
-						i(846),	-- Tanned Leather Jerkin
-						i(845),	-- Tanned Leather Pants
-						i(121),	-- Thug Boots
-						i(120),	-- Thug Pants
-						i(58246),	-- Thug Vest
-					}),
+						i(844),		-- Tanned Leather Gloves
+						i(846),		-- Tanned Leather Jerkin
+						i(845),		-- Tanned Leather Pants
+						-- #if AFTER 10.0.5
+						i(121, {	-- Thug Boots
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(120, {	-- Thug Pants
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						i(58246, {	-- Thug Vest
+							["timeline"] = { ADDED_10_0_5 }
+						}),
+						-- #endif
+					},
 				}),
-				-- #endif
 				n(46718, {	-- Moraka
 					["coord"] = { 55.8, 55.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
