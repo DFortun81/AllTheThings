@@ -641,6 +641,7 @@ namespace ATT
                     case "c":
                     case "specs":
                     case "races":
+                    case "sourceAchievements":
                     case "sourceQuests":
                     case "altQuests":
                         {
@@ -907,6 +908,7 @@ namespace ATT
                     case "c":
                     case "e":
                     case "specs":
+                    case "sourceAchievements":
                     case "sourceQuests":
                     case "altQuests":
                     case "repeatable":

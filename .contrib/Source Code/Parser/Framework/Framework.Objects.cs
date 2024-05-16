@@ -1498,6 +1498,7 @@ end");
                         case "hqd":
                         case "altQuestID":
                         case "altQuests":
+                        case "sourceAchievements":
                         case "sourceQuests":
                         case "isBounty":
                         case "isLimited":
@@ -1914,6 +1915,19 @@ end");
                         }
 
                     // Integer -> Integer-Array Data Type conversion
+                    case "sourceAchievement":
+                        {
+                            try
+                            {
+                                // Convert a single sourceAchievement to a sourceAchievements list.
+                                Merge(item, "sourceAchievements", Convert.ToInt64(value));
+                            }
+                            catch
+                            {
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
+                            }
+                            break;
+                        }
                     case "sourceQuest":
                         {
                             try
@@ -1971,6 +1985,7 @@ end");
                     case "c":
                     case "specs":
                     case "difficulties":
+                    case "sourceAchievements":
                     case "sourceQuests":
                     case "altQuests":
                     case "races":

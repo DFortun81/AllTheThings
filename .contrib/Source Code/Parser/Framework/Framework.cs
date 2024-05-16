@@ -744,6 +744,7 @@ namespace ATT
                     case "c":
                     case "specs":
                     case "races":
+                    case "sourceAchievements":
                     case "sourceQuests":
                     case "altQuests":
                     case "customCollect":
@@ -1204,6 +1205,11 @@ namespace ATT
                         return "modIDs";
                     }
 
+                case "sourceAchievements":
+                    {
+                        return "sourceAchievements";
+                    }
+
                 case "sourceQuests":
                 case "sourceQuestID":
                 case "sourceQuestIDs":
@@ -1371,6 +1377,7 @@ namespace ATT
                 case "setID":
                 case "skipFill":
                 case "sort":
+                case "sourceAchievement":
                 case "sourceQuest":
                 case "sourceText":
                 case "style":
