@@ -16,6 +16,11 @@ root(ROOTS.WorldDrops, {
 				}),
 			}),
 			expansion(EXPANSION.WRATH, {
+				i(37674, {	-- An Unopened Tome of Advice
+					["description"] = "If only they would have read this.",
+					["coord"] = { 47.8, 49.4, DRAGONBLIGHT },
+					["cr"] = 27539,	-- Frigid Necromancer <Cult of the Damned>
+				}),
 				filter(TOYS, {
 					i(36863, {	-- Decahedral Dwarven Dice (TOY!)
 						["description"] = "Can be pickpocketed from Northrend humanoids.",
