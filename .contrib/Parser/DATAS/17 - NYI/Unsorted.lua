@@ -6256,38 +6256,6 @@ root(ROOTS.Unsorted, {
 					}),
 				}),
 				filter(COSMETIC, {
-					filter(MAIL, {
-						i(215291),	-- Ensemble: Battlegear of the Saurok Stalker
-						i(215292),	-- Ensemble: Battlegear of the Saurok Stalker
-						i(215293),	-- Ensemble: Battlegear of the Saurok Stalker
-					}),
-					i(215192),	-- Ensemble: Regalia of the Chromatic Hydra
-					i(215193),	-- Ensemble: Regalia of the Chromatic Hydra
-					i(215194),	-- Ensemble: Regalia of the Chromatic Hydra
-					i(215201),	-- Ensemble: Regalia of the Exorcist
-					i(215202),	-- Ensemble: Regalia of the Exorcist
-					i(215203),	-- Ensemble: Regalia of the Exorcist
-					i(215210),	-- Ensemble: Regalia of the Thousandfold Hells
-					i(215211),	-- Ensemble: Regalia of the Thousandfold Hells
-					i(215212),	-- Ensemble: Regalia of the Thousandfold Hells
-					i(215244),	-- Ensemble: Vestments of the Haunted Forest
-					i(215245),	-- Ensemble: Vestments of the Haunted Forest
-					i(215246),	-- Ensemble: Vestments of the Haunted Forest
-					i(215253),	-- Ensemble: Fire-Charm Vestments
-					i(215254),	-- Ensemble: Fire-Charm Vestments
-					i(215255),	-- Ensemble: Fire-Charm Vestments
-					i(215263),	-- Ensemble: Nine-Tail Battlegear
-					i(215264),	-- Ensemble: Nine-Tail Battlegear
-					i(215265),	-- Ensemble: Nine-Tail Battlegear
-					i(215323),	-- Ensemble: Battleplate of the All-Consuming Maw
-					i(215324),	-- Ensemble: Battleplate of the All-Consuming Maw
-					i(215325),	-- Ensemble: Battleplate of the All-Consuming Maw
-					i(215332),	-- Ensemble: Battlegear of the Lightning Emperor
-					i(215333),	-- Ensemble: Battlegear of the Lightning Emperor
-					i(215334),	-- Ensemble: Battlegear of the Lightning Emperor
-					i(215342),	-- Ensemble: Battleplate of the Last Mogu
-					i(215343),	-- Ensemble: Battleplate of the Last Mogu
-					i(215344),	-- Ensemble: Battleplate of the Last Mogu
 					i(215074),	-- REUSE
 					i(215085),	-- REUSE
 					i(215092),	-- REUSE
