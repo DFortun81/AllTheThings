@@ -159,6 +159,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(DAGGERS, {
+					i(216418),	-- Hozen Dagger
+				}),
 				filter(ONE_HANDED_AXES, {
 					i(215487),	-- Hozen Waraxe
 				}),

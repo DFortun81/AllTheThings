@@ -6834,7 +6834,6 @@ root(ROOTS.Unsorted, {
 					i(216415),	-- Iron Qon's Knife
 					i(216416),	-- Hozen Blade
 					i(216417),	-- Hozen Shanker
-					i(216418),	-- Hozen Dagger
 					i(216419),	-- Hozen Knife
 					i(216421),	-- Pandaren Mace
 					i(216422),	-- Pandaren Smasher
