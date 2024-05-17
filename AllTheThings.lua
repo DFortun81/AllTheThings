@@ -14801,6 +14801,7 @@ SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList.AllTheThingsHARVESTER = function(cmd)
 	app.print("Force Debug Mode");
+	app.Debugging = true
 	app.Settings:ForceRefreshFromToggle();
 	app.Settings:SetDebugMode(true);
 	app.SetCustomWindowParam("list", "reset", true);
