@@ -7301,7 +7301,6 @@ root(ROOTS.Unsorted, {
 
 				i(210893),	-- Timerunner's Slippers
 				i(210904),	-- Timerunner's Spaulders
-				i(210339),	-- Timerunner's Staff
 				i(211388),	-- Timerunner's Starter Kit
 				i(210890),	-- Timerunner's Tunic
 				i(210886),	-- Timerunner's Warboots
