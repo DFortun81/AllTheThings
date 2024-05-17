@@ -10,6 +10,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+				petbattle(q(82293, {	-- The Power of Friendship
+					["coord"] = { 61.6, 37.6, THE_RINGING_DEEPS },
+				})),
+				q(82256, {	-- Capturing the Cataract's Creatures
+					["coord"] = { 52.9, 47.8, THE_RINGING_DEEPS },
+				}),
+				q(81750, {	-- Cloud Farming
+					["coord"] = { 55.2, 71.3, THE_RINGING_DEEPS },
+				}),
+				q(82580, {	-- Courier Mission: Ore Recovery
+					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
+				}),
+				q(81807, {	-- Skyrider Racing - Earthenworks Weave
+					-- normal - 80237 / advanced - 80244 / reversed - 80250
+					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
+				}),
+				--
+				q(83229, {	-- Special Assignment: When the Deeps Stir
+					["coord"] = { 52.9, 14.7, THE_RINGING_DEEPS },
+				}),
 			}),
 		}),
 	}),

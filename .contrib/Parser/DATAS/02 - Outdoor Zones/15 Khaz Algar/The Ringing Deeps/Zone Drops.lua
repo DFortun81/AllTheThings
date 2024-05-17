@@ -5,6 +5,7 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(THE_RINGING_DEEPS, {
 		n(ZONE_DROPS, {
+			i(212493),	-- Odd Glob of Wax // objectID 419696 (Waxy Lump)
 		}),
 	}),
 })));

@@ -993,6 +993,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(),	-- 3rd option / unknown requirements
 	--
 	q(82063),	-- A Worn Down Book @ 25.1, 53.7
+	q(82064),	-- A Weathered Tome @ 78.2, 40.3
 	--
 	q(80005),	-- Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
 	q(78472),	-- Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7

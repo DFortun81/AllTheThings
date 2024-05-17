@@ -862,6 +862,5 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(79573),	-- on hitting first 80s, achievementID 19470 [One Warband Mentor: The War Within], wq unlock?
 	--
 	q(82157),	-- 'Special Assignment: Rise of the Colossals'	/ Thoose two could be some kind of
-	q(82156),	-- 'Special Assignment: When the Deeps Stir'	/ callings or emissary actually?
 });
 --]]

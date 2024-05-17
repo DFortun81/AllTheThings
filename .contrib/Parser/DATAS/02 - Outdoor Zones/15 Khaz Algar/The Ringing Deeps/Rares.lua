@@ -9,6 +9,13 @@ end
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(THE_RINGING_DEEPS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
+			n(xx, {	-- xx
+				["questID"] = xx,
+				["coord"] = { x, y, THE_RINGING_DEEPS },
+				["g"] = {
+					i(),	-- 
+				},
+			}),
 		})),
 	}),
 })));

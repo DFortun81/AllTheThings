@@ -26,6 +26,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82481, {	-- Enforcer Extermination
 					["coord"] = { 56.1, 58.4, AZJ_KAHET },
 				}),
+				q(79722, {	-- Gutter Work (could be only up if Vizier was choosen?)
+					["coord"] = { 57.5, 71.1, AZJ_KAHET },
+					["g"] = {
+						i(224102),	-- Chunked Kobyss Innards (QI!)
+						i(222921),	-- Mangled Kobyss Innards (QI!)
+						i(224103),	-- Uncertain Kobyss Innards (QI!)
+					},
+				}),
 				petbattle(q(82295, {	-- Ziriak
 					["coord"] = { 61.3, 37.0, 2216 },
 					["g"] = {

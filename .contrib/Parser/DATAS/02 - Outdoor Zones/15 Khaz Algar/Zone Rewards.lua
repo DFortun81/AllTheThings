@@ -49,11 +49,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			i(220338),	-- Begrimed Vambraces
 		}),
 		filter(TRINKET_F, {
-			i(224665),	-- Gem-Studded Pendant of the Aurora // Unsure if it is zone specific (Hallowfall) or generic xpac rewards
+			i(224665),	-- Gem-Studded Pendant // Unsure if it is zone specific (Hallowfall) or generic xpac rewards
 		}),
 		n(WEAPONS, {
-			--i(),	-- 
+			i(224707),	-- Ancient Forged Spear // unsure if it zone specific (Azj-Kahet) or genereic xpac reward
 		}),
+		--
+		i(224784, {	-- Pinnacle Cache
+			--I'm currently placing it here since it can be obtained in different zone
+			--On first opening I recieve:
+			--i(224172), -- Restored Coffer Key
+			--i(224677), -- Lockstitch Headgear // same - unsure if it is locked by zone (The Ringing Deeps) where I loot it or not
+			--hqt - 83280, possibly related to key but dunno
+		}),
+
 	}),
 })));
 ]]--

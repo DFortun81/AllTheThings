@@ -1787,6 +1787,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(225815);	-- Chipped Opal Signet Ring
 --i(220256);	-- Clump of Rotting Detritus
 --i(220267);	-- Combustible Gland
+--i(225827);	-- Cracked Pickaxe
 --i(225804);	-- Crumpled Patrol Assignment
 --i(220255);	-- Darkened Residue
 --i(225813);	-- Darkened Ritual Stone
@@ -1800,13 +1801,18 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(225790);	-- Half-Painted Pewter Spider
 --i(220279);	-- Handful of Polished Scales
 --i(220252);	-- Handful of Smooth Pebbles
+--i(220275);	-- Indigo Shard
+--i(220253);	-- Inert Dust
 --i(132184);	-- Intact Shimmering Scale // Alex: I bug reported this item drop in TWW on alpha due to wierd itemID range
 --i(220224);	-- Iridescent Integument
 --i(220380);	-- Immature Spiderling
+--i(225830);	-- Irreparably Bent Spoon
 --i(225791);	-- Jar of Alchemical Solvent
 --i(220264);	-- Jaw with Barbed Teeth
 --i(220234);	-- Leaden Vial
+--i(225820);	-- Lovingly Worn Chisel
 --i(225803);	-- Lynx Tag Collar
+--i(225850);	-- Moldy Rations
 --i(220219);	-- Mound of Night Soil
 --i(220244);	-- Oversized Claw
 --i(220251);	-- Pale Gills
@@ -1828,6 +1834,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220363);	-- Straw-Stuffed Hat
 --i(220292);	-- Stretched Wing
 --i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
+--i(225852);	-- The Foolhardy's Guide to Survival
 --i(220296);	-- Thickly Webbed Foot
 --i(220223);	-- Torn Gossamer Scrap
 --i(220272);	-- Torn Manuscript Page
