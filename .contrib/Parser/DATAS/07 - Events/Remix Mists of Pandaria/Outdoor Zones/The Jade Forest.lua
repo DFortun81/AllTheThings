@@ -159,6 +159,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(ONE_HANDED_AXES, {
+					i(215487),	-- Hozen Waraxe
+				}),
 				filter(ONE_HANDED_MACES, {
 					i(215747),	-- Mace of the Rikkitun
 				}),

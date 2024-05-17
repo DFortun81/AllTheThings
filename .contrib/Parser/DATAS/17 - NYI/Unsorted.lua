@@ -6346,7 +6346,6 @@ root(ROOTS.Unsorted, {
 					i(215484),	-- Boggeo's Ceremonial Axe
 					i(215485),	-- Shomi's Hatchet
 					i(215486),	-- Jinyu Waraxe
-					i(215487),	-- Hozen Waraxe
 					i(215488),	-- Mountainscaler Hatchet
 					i(215489),	-- Wasteland Hacker
 					i(215490),	-- Snowdrift Battleaxe
