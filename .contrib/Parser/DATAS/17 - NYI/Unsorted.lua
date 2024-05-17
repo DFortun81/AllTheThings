@@ -6711,7 +6711,6 @@ root(ROOTS.Unsorted, {
 					i(215860),	-- Wasteland Staff
 					i(215861),	-- Instructor's Spire
 					i(215862),	-- Engraved Spire
-					i(215863),	-- Torch of Midnight
 					i(215864),	-- Torch of Dawn
 					i(215865),	-- Fogspeaker Conduit
 					i(215866),	-- Staff of Focus
