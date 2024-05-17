@@ -66,14 +66,36 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(206150, {	-- Erol Ellimoore
 				["coord"] = { 63.2, 29.4, HALLOWFALL },
 				["g"] = {
-					i(219148, {	-- Lynx Leash
+					i(224813, {	-- Big Cat Whistle (require Renown 12 with Hallowfall Arathi)
 						["cost"] = { "i", 206350, 5 },	-- Radiant Remnant x5
 					}),
-					i(225253, {	-- Spare Harvest Torch
-						["cost"] = { "i", 206350, 2 },	-- Radiant Remnant x2
+					i(212329, {	-- Lynx Leash
+						["cost"] = { "i", 206350, 1 },	-- Radiant Remnant x1
 					}),
-					i(224815, {	-- Big Cat Whistle (require Renown 12 with Hallowfall Arathi)
+					i(207591, {	-- Spare Harvest Torch
+						["cost"] = { "i", 206350, 1 },	-- Radiant Remnant x1
+					}),
+				},
+			}),
+			n(206533, {	-- Chef Dinaire
+				["coord"] = { 64.5, 31.1, HALLOWFALL },
+				["g"] = {
+					i(206670, {	-- Darkroot Grippers
 						["cost"] = { "i", 206350, 5 },	-- Radiant Remnant x5
+					}),
+				},
+			}),
+			n(214428, {	-- Seraphine Seedheart
+				["coord"] = { 63.7, 33.9, HALLOWFALL },
+				["g"] = {
+					i(224256, {	-- Bag of Angry Fungus
+						["cost"] = { "i", 206350, 3 },	-- Radiant Remnant x3
+					}),
+					i(218042, {	-- Remy Controller
+						["cost"] = { "i", 206350, 3 },	-- Radiant Remnant x3
+					}),
+					i(224811, {	-- Sugar Shrooms (require Renown 12 with Hallowfall Arathi)
+						["cost"] = { "i", 206350, 1 },	-- Radiant Remnant x1
 					}),
 				},
 			}),

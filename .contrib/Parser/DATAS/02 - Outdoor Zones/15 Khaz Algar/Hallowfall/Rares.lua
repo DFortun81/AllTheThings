@@ -26,9 +26,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			n(220771, {	-- Murkspike
-				--was walking around northest keyflame
+				--was walking around Bleak Sand Keyflame
 				["questID"] = 82565,
 				["coord"] = { 62.4, 13.3, HALLOWFALL },
+				["g"] = {
+					-- no loot
+				},
+			}),
+			n(207780, {	-- Finclaw Bloodtide
+				["providers"] = { "n", 220492 },	-- same name / vignette for crab
+				--was walking around Faded Shore Keyflame
+				--["questID"] = xx,	-- missing qID after kill
+				--["coord"] = { 61.9, 17.1, HALLOWFALL },
 				["g"] = {
 					-- no loot
 				},
@@ -59,8 +68,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			n(206184, {	-- Deathpetal
 				--was walking near Fungal Field Keyflame
-				--["questID"] = 82561,
-				--["coord"] = { 66.7, 24.1, HALLOWFALL },
+				["questID"] = 82559,
+				["coord"] = { 63.8, 32.0, HALLOWFALL },
+				["g"] = {
+					-- no loot
+				},
+			}),
+			n(206203, {	-- Deathpetal
+				--was walking near Light's Blooming  Keyflame
+				--["questID"] = xx,	-- missing qID after kill
+				["coord"] = { 63.5, 28.5, HALLOWFALL },
+				["g"] = {
+					-- no loot
+				},
+			}),
+			n(207826, {	-- Ravageant
+				["questID"] = 82566,
+				["coord"] = { 59.8, 21.4, HALLOWFALL },
 				["g"] = {
 					-- no loot
 				},

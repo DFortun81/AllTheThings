@@ -1793,27 +1793,32 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(225795);	-- Dented Pocketwatch
 --i(220271);	-- Downy Clump
 --i(225792);	-- Elegant Pedipalp Wrappings
+--i(220355);	-- Enlarged Ear
 --i(225814);	-- Feather-on-a-Stick
 --i(220259);	-- Gob of Mucus
 --i(220509);	-- Gossamer Web
 --i(225790);	-- Half-Painted Pewter Spider
 --i(220279);	-- Handful of Polished Scales
 --i(220252);	-- Handful of Smooth Pebbles
+--i(132184);	-- Intact Shimmering Scale // Alex: I bug reported this item drop in TWW on alpha due to wierd itemID range
 --i(220224);	-- Iridescent Integument
 --i(220380);	-- Immature Spiderling
 --i(225791);	-- Jar of Alchemical Solvent
 --i(220264);	-- Jaw with Barbed Teeth
 --i(220234);	-- Leaden Vial
 --i(225803);	-- Lynx Tag Collar
+--i(220219);	-- Mound of Night Soil
 --i(220244);	-- Oversized Claw
 --i(220251);	-- Pale Gills
 --i(225787);	-- Pheromone-Covered Missive
+--i(220283);	-- Pileus Puff
 --i(220247);	-- Polishing Powder
 --i(220258);	-- Rotting Bones
 --i(220257);	-- Pulsing Pustules
 --i(220261);	-- Pungent Mushroom
 --i(220288);	-- Quivering Tail
 --i(220362);	-- Ragged Rope
+--i(132183);	-- Razor Tooth // Alex: I bug reported this item drop in TWW on alpha due to wierd itemID range
 --i(225807);	-- Rune-Carved Bone
 --i(220266);	-- Sharpened Digging Claws
 --i(220361);	-- Sharpened Steel Implement
@@ -1821,6 +1826,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(225810);	-- Smoked Visor
 --i(220268);	-- Spiraled Horn
 --i(220363);	-- Straw-Stuffed Hat
+--i(220292);	-- Stretched Wing
 --i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
 --i(220296);	-- Thickly Webbed Foot
 --i(220223);	-- Torn Gossamer Scrap

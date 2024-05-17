@@ -79,6 +79,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 56.1, 14.6, HALLOWFALL },
 				["questID"] = 81518,
 			}),
+			o(417057, {	-- Hallowfall Farm Supply
+				["coord"] = { 63.2, 29.5, HALLOWFALL },
+				["questID"] = 79191,
+				["g"] = {
+					-- was only radiamt remnant as loot
+				},
+			}),
 			o(437211, {	-- Illuminated Footlocker
 				["description"] = "Catch lightning orbs in highlighted zones 5 times to loot this chest",
 				["coord"] = { 58.4, 27.2, HALLOWFALL },
@@ -126,6 +133,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(225335),	-- Smuggler's Key
 					--
 					i(225256),	-- PH_2
+				},
+			}),
+			o(419695, {	-- Spore-Covered Coffer
+				["coord"] = { 76.8, 53.8, HALLOWFALL },
+				["questID"] = 79275,
+				["g"] = {
+					-- crafting reagents
 				},
 			}),
 			o(453749, {	-- Palawltar's Codex of Dimensional Structure
