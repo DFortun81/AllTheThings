@@ -1117,6 +1117,11 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 55521 },	-- Rivett Clutchpop
 						["coord"] = { 31.1, 21.5, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							o(214962, {	-- Requisitioned Firework Launcher
+								i(89163),	-- Requisitioned Firework Launcher (QI!)
+							}),
+						},
 					}),
 					q(29552, {	-- Critical Condition
 						["sourceQuests"] = {
@@ -1140,6 +1145,12 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 55403 },	-- Zin'Jun
 						["coord"] = { 31.1, 17.5, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(74160),	-- Zin'Jun's Rifle (QI!)
+							i(74161),	-- Zin'Jun's Left Eye (QI!)
+							i(74162),	-- Zin'Jun's Right Eye (QI!)
+							i(74163),	-- Snuff's Corpse (QI!)
+						},
 					}),
 					q(30015, {	-- Dawn's Blossom
 						["sourceQuests"] = { 29967 },	-- Boom Goes the Doonamite!
@@ -1245,6 +1256,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 66190 },	-- General Nazgrim
 						["coord"] = { 31.6, 11.3, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(89605),	-- Nazgrim's Flare Gun (QI!)
+						},
 					}),
 					q(29639, {	-- Flying Colors (Instructor Xann)
 						["sourceQuests"] = {
@@ -2118,6 +2132,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 66646 },	-- General Nazgrim
 						["coord"] = { 34.7, 10.6, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(89769),	-- Nazgrim's Flare Gun (QI!)
+						},
 					}),
 					q(29620, {	-- The Great Banquet
 						["sourceQuests"] = { 29619 },	-- A Courteous Guest

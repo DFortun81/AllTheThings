@@ -7239,7 +7239,6 @@ root(ROOTS.Unsorted, {
 					i(208556),	-- Flicker Blossom
 				}),
 				n(WEAPONS, {
-					i(210342),	-- Bataari Hacker
 					i(210641),	-- Bo-Ris, Spear of Night
 					i(210337),	-- Faded Forest Hatchet
 					i(211151),	-- Fran's Repeater
