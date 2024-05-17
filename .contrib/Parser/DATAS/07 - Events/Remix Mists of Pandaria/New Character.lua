@@ -3,12 +3,11 @@
 -----------------------------------------------------
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	n(NEW_CHARACTER, {
-		cl(SHAMAN, {
+		cl(HUNTER, {
 			i(210267),	-- Jade Guardian's Chain Armor
 			i(210277),	-- Jade Guardian's Leggings
 			i(210269),	-- Jade Guardian's Sabatons
-			i(210344),	-- Timerunner's Mace
-			i(210636),	-- Timerunner's Shield
+			i(210639),	-- Timerunner's Bow
 		}),
 		cl(MONK, {
 			i(210344),	-- Timerunner's Mace
@@ -17,6 +16,25 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(210278),	-- Thunderpaw Breeches
 			i(210339),	-- Timerunner's Staff
 			i(208496),	-- Thunderpaw Tunic
+		}),
+		cl(PRIEST, {
+			i(210276),	-- Spirit-Waker Leggings
+			i(208494),	-- Spirit-Waker Robe
+			i(210268),	-- Spirit-Waker Treads
+			i(210339),	-- Timerunner's Staff
+		}),
+		cl(SHAMAN, {
+			i(210267),	-- Jade Guardian's Chain Armor
+			i(210277),	-- Jade Guardian's Leggings
+			i(210269),	-- Jade Guardian's Sabatons
+			i(210344),	-- Timerunner's Mace
+			i(210636),	-- Timerunner's Shield
+		}),
+		cl(WARRIOR, {
+			i(208473),	-- Greenstone Boots
+			i(208470),	-- Greenstone Breastplate
+			i(210275),	-- Greenstone Legguards
+			i(210642),	-- Timerunner's Greatsword
 		}),
 	}),
 }))));

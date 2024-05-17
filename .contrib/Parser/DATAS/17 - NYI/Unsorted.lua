@@ -7144,10 +7144,7 @@ root(ROOTS.Unsorted, {
 					i(210284),	-- Spirit-Waker Cord
 					i(210272),	-- Spirit-Waker Crown
 					i(208493),	-- Spirit-Waker Gloves
-					i(210276),	-- Spirit-Waker Leggings
 					i(210281),	-- Spirit-Waker Mantle
-					i(208494),	-- Spirit-Waker Robe
-					i(210268),	-- Spirit-Waker Treads
 					i(210287),	-- Spirit-Waker Wristwraps
 				}),
 				filter(FINGER_F, {
@@ -7216,13 +7213,10 @@ root(ROOTS.Unsorted, {
 					i(211347),	-- Scarab's Shell
 				}),
 				filter(PLATE, {
-					i(208473),	-- Greenstone Boots
 					i(210288),	-- Greenstone Bracers
-					i(208470),	-- Greenstone Breastplate
 					i(208472),	-- Greenstone Gauntlets
 					i(210283),	-- Greenstone Girdle
 					i(210266),	-- Greenstone Helm
-					i(210275),	-- Greenstone Legguards
 					i(210280),	-- Greenstone Shoulders
 					i(210308),	-- Sentinel's Belt
 					i(208471),	-- Sentinel's Chestpiece
@@ -7271,7 +7265,6 @@ root(ROOTS.Unsorted, {
 				i(210914),	-- Timerunner's Bands
 				i(210911),	-- Timerunner's Belt
 				i(210895),	-- Timerunner's Boots
-				i(210639),	-- Timerunner's Bow
 				i(210915),	-- Timerunner's Bracers
 				i(210884),	-- Timerunner's Breastplate
 				i(210903),	-- Timerunner's Breeches
@@ -7284,7 +7277,6 @@ root(ROOTS.Unsorted, {
 				i(210885),	-- Timerunner's Gauntlets
 				i(210908),	-- Timerunner's Girdle
 				i(210887),	-- Timerunner's Gloves
-				i(210642),	-- Timerunner's Greatsword
 				i(210896),	-- Timerunner's Grips
 				i(210888),	-- Timerunner's Handwraps
 				i(210899),	-- Timerunner's Helm
