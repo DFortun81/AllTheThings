@@ -10,6 +10,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(210344),	-- Timerunner's Mace
 			i(210636),	-- Timerunner's Shield
 		}),
+		cl(MONK, {
+			i(210344),	-- Timerunner's Mace
+			i(210340),	-- Timerunner's Sword
+			i(210270),	-- Thunderpaw Boots
+			i(210278),	-- Thunderpaw Breeches
+			i(208496),	-- Thunderpaw Tunic
+		}),
 	}),
 }))));
 

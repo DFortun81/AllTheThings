@@ -7172,13 +7172,10 @@ root(ROOTS.Unsorted, {
 					i(210611),	-- Spiderhide Shoulderpads
 					i(210613),	-- Spiderhide Wristguards
 					i(210286),	-- Thunderpaw Belt
-					i(210270),	-- Thunderpaw Boots
 					i(210290),	-- Thunderpaw Bracers
-					i(210278),	-- Thunderpaw Breeches
 					i(208492),	-- Thunderpaw Gloves
 					i(210274),	-- Thunderpaw Helm
 					i(210279),	-- Thunderpaw Spaulders
-					i(208496),	-- Thunderpaw Tunic
 				}),
 				filter(MAIL, {
 					i(210314),	-- Dawnwatcher's Bands
@@ -7306,7 +7303,6 @@ root(ROOTS.Unsorted, {
 				i(210904),	-- Timerunner's Spaulders
 				i(210339),	-- Timerunner's Staff
 				i(211388),	-- Timerunner's Starter Kit
-				i(210340),	-- Timerunner's Sword
 				i(210890),	-- Timerunner's Tunic
 				i(210886),	-- Timerunner's Warboots
 				i(210891),	-- Timerunner's Warhelm
