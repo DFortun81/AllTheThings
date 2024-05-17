@@ -165,6 +165,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				filter(ONE_HANDED_MACES, {
 					i(215747),	-- Mace of the Rikkitun
 				}),
+				filter(FIST_WEAPONS, {
+					i(211163),	-- Hidden Pass Knuckles
+				}),
 				filter(STAVES, {
 					i(215863),	-- Torch of Midnight
 				}),

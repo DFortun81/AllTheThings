@@ -7238,7 +7238,6 @@ root(ROOTS.Unsorted, {
 					i(211151),	-- Fran's Repeater
 					i(210343),	-- Gar'tok, Might of the Faithful
 					i(211160),	-- Greatsword of the Iron Legion
-					i(211163),	-- Hidden Pass Knuckles
 					i(210640),	-- Icon of Hope
 					i(211162),	-- Klaxxi Longsword
 					i(210336),	-- Kor'kron Heavy Rifle
