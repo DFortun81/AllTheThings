@@ -6431,7 +6431,6 @@ root(ROOTS.Unsorted, {
 					i(215580),	-- Rik'kal's Bloody Blade
 					i(215581),	-- Blade of the Seven Stars
 					i(215582),	-- Blade of the Seven Stars
-					i(215583),	-- Blade of the Seven Stars
 					i(215584),	-- Blade of the Seven Stars
 					i(215585),	-- Regail's Fulminating Blade
 					i(215586),	-- Regail's Fulminating Blade
@@ -6939,7 +6938,6 @@ root(ROOTS.Unsorted, {
 					i(216480),	-- Pandaren Greatblade
 					i(216481),	-- Pandaren Greatsword
 					i(216482),	-- Pandaren Windblade
-					i(216529),	-- Protection of the Emperor
 					i(216530),	-- Protection of the Emperor
 					i(216531),	-- Protection of the Emperor
 					i(216532),	-- Protection of the Emperor

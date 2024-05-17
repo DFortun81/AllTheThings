@@ -10,6 +10,16 @@ TIER_14_RAIDS = createHeader({
 });
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	n(TIER_14_RAIDS, {
+		n(WEAPONS, {
+			d(DIFFICULTY.RAID.NORMAL, {
+				filter(DAGGERS, {
+					i(215583),	-- Blade of the Seven Stars
+				}),
+				filter(SHIELDS, {
+					i(216529),	-- Protection of the Emperor
+				}),
+			},
+		}),
 		n(ARMOR, {
 			d(DIFFICULTY.RAID.LFR, {
 				filter(CLOTH, {
