@@ -1036,6 +1036,10 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56406 },	-- Rivett Clutchpop
 						["coord"] = { 27.2, 50.7, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(76260),	-- Exploded Slicky (QI!)
+							i(76262),	-- Gut Bomb (QI!)
+						},
 					}),
 					q(29967, {	-- Boom Goes the Doonamite!
 						["sourceQuests"] = { 29968 },	-- Green-ish Energy
@@ -1358,6 +1362,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56406 },	-- Rivett Clutchpop
 						["coord"] = { 28.2, 47.7, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(76225),	-- Fistful of Bird Guts (QI!)
+						},
 					}),
 					q(30484, {	-- Gauging Our Progress
 						["sourceQuests"] = {
@@ -1504,6 +1511,7 @@ root(ROOTS.Zones, {
 							i(80765),	-- Friendly Gift Band
 							i(80766),	-- Band of Flair
 							i(80767),	-- Band of Finding
+							i(76305),	-- Hellscream's Fist Signal Flare (QI!)
 						},
 					}),
 					q(30502, {	-- Jaded Heart
@@ -2001,6 +2009,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56358 },	-- Eekle Eekle
 						["coord"] = { 27.0, 50.8, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(76420),	-- Snapper Steak (QI!)
+						},
 					}),
 					q(29748, {	-- Simulacrumble
 						["sourceQuests"] = { 29745 },	-- The Sprites' Plight
@@ -2079,6 +2090,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56351 },	-- Bo Bo
 						["coord"] = { 25.8, 37.9, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(76173),	-- Bug Leg (QI!)
+						},
 					}),
 					q(31737, {	-- The Cost of War
 						["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
@@ -2521,6 +2535,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.1, 38.9, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							i(85784),	-- Alliance Service Medallion (QI!)
 							i(88701),	-- Wikket Cape
 							i(88702),	-- Wikket Cloak
 							i(88703),	-- Wikket Wrap

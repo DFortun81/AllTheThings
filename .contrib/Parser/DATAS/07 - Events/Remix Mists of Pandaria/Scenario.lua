@@ -40,6 +40,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			filter(ONE_HANDED_MACES, {
 				i(215752),	-- Ced's Basher
 			}),
+			filter(STAVES, {
+				i(215885),	-- Teachings of Shaohao
+			}),
 		}),
 		n(ARMOR, {
 			filter(CLOTH, {

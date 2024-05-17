@@ -6709,7 +6709,6 @@ root(ROOTS.Unsorted, {
 					i(215856),	-- Jin'ya, Orb of the Watercaller
 					i(215857),	-- Jin'ya, Orb of the Watercaller
 					i(215858),	-- Diviner's Staff
-					i(215859),	-- Faded Forest Staff
 					i(215860),	-- Wasteland Staff
 					i(215861),	-- Instructor's Spire
 					i(215862),	-- Engraved Spire
@@ -6734,7 +6733,6 @@ root(ROOTS.Unsorted, {
 					i(215882),	-- Lorewalker's Staff
 					i(215883),	-- Greatstaff of the Path
 					i(215884),	-- Firedancer's Staff
-					i(215885),	-- Teachings of Shaohao
 					i(215886),	-- Soulwood Spire
 					i(215887),	-- Soulwood Spire
 					i(215888),	-- Soulwood Spire
@@ -6943,7 +6941,6 @@ root(ROOTS.Unsorted, {
 					i(216468),	-- Suen-Wo, Spire of the Rising Sun
 					i(216469),	-- Suen-Wo, Spire of the Rising Sun
 					i(216470),	-- Tian Monastery Spire
-					i(216471),	-- Tian Monastery Channel
 					i(216472),	-- Tian Monastery Conduit
 					i(216473),	-- Tian Monastery Staff
 					i(216474),	-- Temple Trainee's Sword

@@ -148,7 +148,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		}),
 		filter(STAVES, {
 			i(215871),	-- Amberweaver's Conduit
+			i(215859),	-- Faded Forest Staff
 			i(224081),	-- Timerunner's Staff
+			i(216471),	-- Tian Monastery Channel
 		}),
 		filter(TRINKET_F, {
 			------ Tinker ------
