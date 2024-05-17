@@ -40,6 +40,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			filter(ONE_HANDED_MACES, {
 				i(215752),	-- Ced's Basher
 			}),
+			filter(TWO_HANDED_MACES, {
+				i(215786),	-- Lerah's Maul
+			}),
 			filter(STAVES, {
 				i(215885),	-- Teachings of Shaohao
 			}),
@@ -64,6 +67,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(214055),	-- Brushstalker Leggings
 				i(214054),	-- Brushstalker Shoulderpads
 				i(214059),	-- Brushstalker Tunic
+			}),
+			filter(MAIL, {
+				i(214420),	-- Waterburst Breastplate
+				i(214421),	-- Waterburst Footguards
+				i(214424),	-- Waterburst Girdle
+				i(214423),	-- Waterburst Grips
+				i(214422),	-- Waterburst Helmet
+				i(214426),	-- Waterburst Legwraps
+				i(214425),	-- Waterburst Mantle
+				i(214419),	-- Waterburst Wristguards
 			}),
 		}),
 		-- Scenario Maps

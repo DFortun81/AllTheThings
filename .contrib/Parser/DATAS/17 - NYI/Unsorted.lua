@@ -6000,16 +6000,6 @@ root(ROOTS.Unsorted, {
 						i(214412),	-- Mogu Lord's Pauldrons
 						i(214416),	-- Mogu Lord's Sabatons
 
-						------ Mogu Lord's Regalia (Jade) ------
-						i(214420),	-- Waterburst Breastplate
-						i(214421),	-- Waterburst Footguards
-						i(214424),	-- Waterburst Girdle
-						i(214423),	-- Waterburst Grips
-						i(214422),	-- Waterburst Helmet
-						i(214426),	-- Waterburst Legwraps
-						i(214425),	-- Waterburst Mantle
-						i(214419),	-- Waterburst Wristguards
-
 						------ Trailseeker's Laminar Armor (Gold) ------
 						i(214476),	-- Trailseeker's Armbands
 						i(214470),	-- Trailseeker's Chain
@@ -6641,7 +6631,6 @@ root(ROOTS.Unsorted, {
 					i(215783),	-- Shado-Pan Maul
 					i(215784),	-- Taran Zhu's Bonebreaker
 					i(215785),	-- Fangcracker Maul
-					i(215786),	-- Lerah's Maul
 					i(215787),	-- Kazra'jin's Maul
 					i(215788),	-- Kazra'jin's Maul
 					i(215789),	-- Kazra'jin's Maul
