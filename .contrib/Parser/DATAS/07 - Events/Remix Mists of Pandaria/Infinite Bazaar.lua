@@ -2570,6 +2570,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(217925, {	-- Bottle of Bees
 					["cost"] = {{"c", BRONZE, 20}},
 				}),
+				i(44922, {	-- Glyph of Stars
+					["cost"] = {{"c", BRONZE, 5}},
+				}),
 				i(217930, {	-- Nostwin's Voucher
 					["cost"] = {{"c", BRONZE, 20}},
 				}),

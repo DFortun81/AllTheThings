@@ -1322,6 +1322,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 55180 },	-- Shademaster Kiryn
 						["coord"] = { 28.1, 24.8, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(74621),	-- Viscous Chlorophyll (QI!)
+						},
 					}),
 					q(31742, {	-- Fractured Forces
 						["sourceQuests"] = {
@@ -1623,6 +1626,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 55521 },	-- Rivett Clutchpop
 						["coord"] = { 28.1, 24.7, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(84157),	-- Rivett's Rocket Jumpers (QI!)
+						},
 					}),
 					q(29743, {	-- Monstrosity
 						["sourceQuests"] = { 31774 },	-- Seeking Zin'jun
@@ -1687,6 +1693,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56313 },	-- Tooki Tooki
 						["coord"] = { 26.2, 37.3, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(85507),	-- Alliance Orders (QI!)
+						},
 					}),
 					q(30002, {	-- Pages of History
 						["sourceQuests"] = { 29998 },	-- The Librarian's Quandry
@@ -2370,6 +2379,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 62923 },	-- Empty Package
 						["coord"] = { 22.8, 30.5, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] ={
+							i(74623),	-- Emergency Supplies (QI!)
+						},
 					}),
 					q(29617, {	-- Tian Monastery
 						["isBreadcrumb"] = true,

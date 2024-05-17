@@ -147,6 +147,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(224078),	-- Timerunner's Shield
 		}),
 		filter(STAVES, {
+			i(215871),	-- Amberweaver's Conduit
 			i(224081),	-- Timerunner's Staff
 		}),
 		filter(TRINKET_F, {

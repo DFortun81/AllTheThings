@@ -6721,7 +6721,6 @@ root(ROOTS.Unsorted, {
 					i(215868),	-- Monastic Staff
 					i(215869),	-- Waterweaver's Staff
 					i(215870),	-- Amberweaver's Rod
-					i(215871),	-- Amberweaver's Conduit
 					i(215872),	-- Amberweaver's Spire
 					i(215873),	-- Amberweaver's Staff
 					i(215874),	-- Staff of Iron Will
