@@ -6317,10 +6317,8 @@ root(ROOTS.Unsorted, {
 					i(224010),	-- Survivalist's Purified Water
 					i(224021),	-- Survivalist's Healing Potion
 					i(224022),	-- Survivalist's Mana Potion
-					i(224075),	-- Timerunner's Greatsword
 					i(224076),	-- Timerunner's Bow
 					i(224077),	-- Timerunner's Dagger
-					i(224080),	-- Timerunner's Sword
 					i(224120),	-- Timerunner's Gem Box
 					i(220763),	-- Bonus Experience
 					i(220764),	-- Bonus Experience
