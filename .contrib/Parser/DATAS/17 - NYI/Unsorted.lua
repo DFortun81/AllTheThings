@@ -5990,16 +5990,6 @@ root(ROOTS.Unsorted, {
 						i(220989),	-- Fire-Charm Jacket
 					}),
 					filter(MAIL, {
-						------ Mogu Lord's Regalia (Gold) ------
-						i(214418),	-- Mogu Lord's Armbands
-						i(214413),	-- Mogu Lord's Chain
-						i(214417),	-- Mogu Lord's Chestguard
-						i(214414),	-- Mogu Lord's Gloves
-						i(214415),	-- Mogu Lord's Headguard
-						i(214411),	-- Mogu Lord's Legguards
-						i(214412),	-- Mogu Lord's Pauldrons
-						i(214416),	-- Mogu Lord's Sabatons
-
 						------ Trailseeker's Laminar Armor (Gold) ------
 						i(214476),	-- Trailseeker's Armbands
 						i(214470),	-- Trailseeker's Chain
@@ -6677,7 +6667,6 @@ root(ROOTS.Unsorted, {
 					i(215872),	-- Amberweaver's Spire
 					i(215873),	-- Amberweaver's Staff
 					i(215874),	-- Staff of Iron Will
-					i(215875),	-- Staff of Stolen Hope
 					i(215876),	-- Mistdancer's Rod
 					i(215877),	-- Cloudscorcher Staff
 					i(215878),	-- Springrain Spire
@@ -6936,7 +6925,6 @@ root(ROOTS.Unsorted, {
 					i(216558),	-- Shield of the Fallen General
 					i(216559),	-- Steelskin, Qiang's Bulwark
 					i(216560),	-- Steelskin, Qiang's Bulwark
-					i(216561),	-- Steelskin, Qiang's Bulwark
 					i(216562),	-- Steelskin, Qiang's Bulwark
 					i(216563),	-- Gaze of the Ancient
 					i(216564),	-- Gaze of the Ancient

@@ -17,6 +17,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				filter(SHIELDS, {
 					i(216529),	-- Protection of the Emperor
+					i(216561),	-- Steelskin, Qiang's Bulwark
 				}),
 			}),
 		}),

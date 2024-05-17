@@ -63,6 +63,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
+				filter(STAVES, {
+					i(215875),	-- Staff of Stolen Hope
+				}),
 				filter(LEATHER, {
 					i(214035),	-- Mogubreaker Bindings
 					i(214039),	-- Mogubreaker Cover
@@ -72,6 +75,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214037),	-- Mogubreaker Spaulders
 					i(214042),	-- Mogubreaker Vest
 					i(214036),	-- Mogubreaker Waistband
+				}),
+				filter(MAIL, {
+					i(214418),	-- Mogu Lord's Armbands
+					i(214413),	-- Mogu Lord's Chain
+					i(214417),	-- Mogu Lord's Chestguard
+					i(214414),	-- Mogu Lord's Gloves
+					i(214415),	-- Mogu Lord's Headguard
+					i(214411),	-- Mogu Lord's Legguards
+					i(214412),	-- Mogu Lord's Pauldrons
+					i(214416),	-- Mogu Lord's Sabatons
 				}),
 			}),
 		}),
