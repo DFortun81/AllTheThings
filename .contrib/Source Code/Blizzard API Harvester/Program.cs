@@ -52,6 +52,8 @@ namespace ATT
         static int API_ExpectedThrottle { get; set; } = API_ThrottleSecond;
         static string RawDirectoryFormat { get; set; }
         static string RawAPICallFormat { get; set; }
+        static int MinItemID { get; set; } = 1;
+        static int MinQuestID { get; set; } = 1;
         static int MaxItemID { get; set; } = 185000;
         static int MaxQuestID { get; set; } = 60000;
         static bool WaitForAPI { get; set; }
@@ -149,7 +151,7 @@ namespace ATT
             {
                 InitItems();
                 // begin item harvest from API
-                Console.WriteLine("Harvesting Items starting at " + MaxItemID.ToString());
+                Console.WriteLine($"Harvesting Items thru {MaxItemID} : {MinItemID}");
                 HarvestItems();
             }
 
@@ -160,7 +162,7 @@ namespace ATT
             {
                 InitQuests();
                 // begin quest harvest from API
-                Console.WriteLine("Harvesting Quests starting at " + MaxQuestID.ToString());
+                Console.WriteLine($"Harvesting Quests thru {MaxQuestID} : {MinQuestID}");
                 HarvestQuests();
             }
 
@@ -267,9 +269,14 @@ namespace ATT
             // Create the output folder for raw data results.
             var rawDataDirectory = Directory.CreateDirectory("RAW/items." + DateStamp);
             int existingRaw = rawDataDirectory.GetFiles("*.raw").Length;
-            var MaxItemIDFileName = "MaxItemID.txt";
-            if (File.Exists(MaxItemIDFileName)) MaxItemID = int.Parse(File.ReadAllText(MaxItemIDFileName));
-            else File.WriteAllText(MaxItemIDFileName, MaxItemID.ToString());
+            var ItemIDsFileName = "ItemIDs.txt";
+            if (File.Exists(ItemIDsFileName))
+            {
+                int[] itemIDs = File.ReadAllText(ItemIDsFileName).Split(new[] { ',' }).Select(s => int.Parse(s)).ToArray();
+                MinItemID = itemIDs[0];
+                MaxItemID = itemIDs[1];
+            }
+            else File.WriteAllText(ItemIDsFileName, $"{MinItemID},{MaxItemID}");
             if (MaxItemID - existingRaw > 36000)
                 API_ExpectedThrottle = API_ThrottleHour;
             RawDirectoryFormat = rawDataDirectory.FullName + "/{0}.raw";
@@ -282,11 +289,15 @@ namespace ATT
             // Create the output folder for raw data results.
             var rawDataDirectory = Directory.CreateDirectory("RAW/quests." + DateStamp);
             int existingRaw = rawDataDirectory.GetFiles("*.raw").Length;
-            var MaxQuestIDFileName = "MaxQuestID.txt";
-            if (File.Exists(MaxQuestIDFileName)) MaxQuestID = int.Parse(File.ReadAllText(MaxQuestIDFileName));
-            else File.WriteAllText(MaxQuestIDFileName, MaxQuestID.ToString());
-            if (MaxQuestID - existingRaw > 36000)
-                API_ExpectedThrottle = API_ThrottleHour;
+            var QuestIDsFileName = "QuestIDs.txt";
+            if (File.Exists(QuestIDsFileName))
+            {
+                int[] questIDs = File.ReadAllText(QuestIDsFileName).Split(new[] { ',' }).Select(s => int.Parse(s)).ToArray();
+                MinQuestID = questIDs[0];
+                MaxQuestID = questIDs[1];
+            }
+            else File.WriteAllText(QuestIDsFileName, $"{MinItemID},{MaxItemID}");
+            API_ExpectedThrottle = API_ThrottleHour;
             RawDirectoryFormat = rawDataDirectory.FullName + "/{0}.raw";
         }
 
@@ -506,7 +517,7 @@ namespace ATT
             InitClient();
             RawAPICallFormat = API_CALL_ITEM + API_KEY;
             int i = MaxItemID;
-            while (i > 0)
+            while (i >= MinItemID)
             {
                 if (!string.IsNullOrEmpty(Error))
                     i = 0;
@@ -530,7 +541,7 @@ namespace ATT
             InitClient();
             RawAPICallFormat = API_CALL_QUEST + API_KEY;
             int i = MaxQuestID;
-            while (i > 0)
+            while (i >= MinQuestID)
             {
                 if (!string.IsNullOrEmpty(Error))
                     i = 0;
