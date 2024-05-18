@@ -2,6 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 local BRONZE = 2778;
+local BONES_OF_MANNOROTH = 224461;
 INFINITE_BAZARR = createHeader({
 	readable = "Infinite Bazaar",
 	icon = "298656",
@@ -2822,6 +2823,81 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(219027, {	-- Pythagorus <Heroic and Mythic Raid Apparel>
+				-- Heirlooms
+				i(104409, {	-- Hellscream's Barrier
+					["cost"] = {
+						{ "c", BRONZE, 8000 },
+						{ "i", BONES_OF_MANNOROTH, 2 }
+					},
+				}),
+				i(104404, {	-- Hellscream's Cleaver
+					["cost"] = {
+						{ "c", BRONZE, 8000 },
+						{ "i", BONES_OF_MANNOROTH, 2 }
+					},
+				}),
+				i(104405, {	-- Hellscream's Decapitator
+					["cost"] = {
+						{ "c", BRONZE, 8000 },
+						{ "i", BONES_OF_MANNOROTH, 2 }
+					},
+				}),
+				i(104401, {	-- Hellscream's Doomblade
+					["cost"] = {
+						{ "c", BRONZE, 8000 },
+						{ "i", BONES_OF_MANNOROTH, 2 }
+					},
+				}),
+				i(104403, {	-- Hellscream's Pig Sticker
+					["cost"] = {
+						{ "c", BRONZE, 8000 },
+						{ "i", BONES_OF_MANNOROTH, 2 }
+					},
+				}),
+				i(104400, {	-- Hellscream's Razor
+					["cost"] = {
+						{ "c", BRONZE, 8000 },
+						{ "i", BONES_OF_MANNOROTH, 2 }
+					},
+				}),
+				i(104407, {	-- Hellscream's Shield Wall
+					["cost"] = {
+						{ "c", BRONZE, 8000 },
+						{ "i", BONES_OF_MANNOROTH, 2 }
+					},
+				}),
+				i(104408, {	-- Hellscream's Tome of Destruction
+					["cost"] = {
+						{ "c", BRONZE, 8000 },
+						{ "i", BONES_OF_MANNOROTH, 2 }
+					},
+				}),
+				i(104406, {	-- Hellscream's War Staff
+					["cost"] = {
+						{ "c", BRONZE, 8000 },
+						{ "i", BONES_OF_MANNOROTH, 2 }
+					},
+				}),
+				i(104399, {	-- Hellscream's Warbow
+					["cost"] = {
+						{ "c", BRONZE, 8000 },
+						{ "i", BONES_OF_MANNOROTH, 2 }
+					},
+				}),
+				i(104402, {	-- Hellscream's Warmace
+					["cost"] = {
+						{ "c", BRONZE, 8000 },
+						{ "i", BONES_OF_MANNOROTH, 2 }
+					},
+				}),
+				-- Cosmetics
+				i(224459, {	-- Tusks of Mannoroth
+					["cost"] = {
+						{ "c", BRONZE, 38500 },
+						{ "i", BONES_OF_MANNOROTH, 20 }
+					},
+				}),
+				-- Classes
 				cl(DEATHKNIGHT, {
 					i(215322, {	-- Ensemble: Plate of the Lost Catacomb (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},

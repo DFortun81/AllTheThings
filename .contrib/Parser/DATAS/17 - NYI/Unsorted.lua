@@ -6975,8 +6975,6 @@ root(ROOTS.Unsorted, {
 			i(224374),	-- Reins of the Thundering Ruby Cloud Serpent
 			i(224407),	-- Bonus Experience
 			i(224408),	-- Bonus Experience
-			i(224459),	-- Tusks of Mannoroth
-			i(224461),	-- Bones of Mannoroth
 			i(210582),	-- Jadaar's Memory Stone
 			i(210583),	-- Kuros's Memory Stone
 			i(210585),	-- Aesom's Memory Stone

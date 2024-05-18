@@ -556,6 +556,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				e(869, {	-- Garrosh Hellscream
 					["crs"] = { 71865 },	-- Garrosh Hellscream
+					["g"] = {
+						i(224461),	-- Bones of Mannoroth
+					}
 				}),
 			}),
 			d(DIFFICULTY.RAID.HEROIC, {
@@ -729,6 +732,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				e(869, {	-- Garrosh Hellscream
 					["crs"] = { 71865 },	-- Garrosh Hellscream
+					["g"] = {
+						i(224461),	-- Bones of Mannoroth
+					}
 				}),
 			}),
 			d(DIFFICULTY.RAID.MYTHIC, {
@@ -902,6 +908,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				e(869, {	-- Garrosh Hellscream
 					["crs"] = { 71865 },	-- Garrosh Hellscream
+					["g"] = {
+						i(224461),	-- Bones of Mannoroth
+					}
 				}),
 			}),
 		},
