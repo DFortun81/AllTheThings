@@ -6406,7 +6406,6 @@ root(ROOTS.Unsorted, {
 					i(215610),	-- Dreadpriest's Dagger
 					i(215611),	-- Lightdrinker Dagger
 					i(215612),	-- Yaungol Shanker
-					i(215613),	-- Mogu Lord's Blade
 					i(215614),	-- Klaxxi Slicer
 					i(215615),	-- Amber Blade
 					i(215616),	-- Pandaren Warknife

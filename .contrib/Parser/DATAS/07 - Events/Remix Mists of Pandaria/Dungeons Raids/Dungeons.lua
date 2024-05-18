@@ -30,8 +30,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 		}),
 		n(WEAPONS, {
-			i(215806),	-- Ghostheart Warspear
-			i(215954),	-- Kor'dok's Sword
+			filter(DAGGERS, {
+				i(215613),	-- Mogu Lord's Blade
+			}),
+			filter(ONE_HANDED_SWORDS, {
+				i(215954),	-- Kor'dok's Sword
+			}),
+			filter(POLEARMS, {
+				i(215806),	-- Ghostheart Warspear
+			}),
+			filter(STAVES, {
+				i(215875),	-- Staff of Stolen Hope
+			}),
 		}),
 		n(ARMOR, {
 			d(DIFFICULTY.DUNGEON.NORMAL, {
@@ -67,9 +77,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
-				filter(STAVES, {
-					i(215875),	-- Staff of Stolen Hope
-				}),
 				filter(LEATHER, {
 					i(214035),	-- Mogubreaker Bindings
 					i(214039),	-- Mogubreaker Cover
