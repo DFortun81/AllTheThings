@@ -6279,7 +6279,6 @@ root(ROOTS.Unsorted, {
 					i(215479),	-- Korven's Crescent
 					i(215480),	-- Korven's Crescent
 					i(215481),	-- Elegion, the Star Cleaver
-					i(215482),	-- Elegion, the Star Cleaver
 					i(215483),	-- Elegion, the Star Cleaver
 					i(215484),	-- Boggeo's Ceremonial Axe
 					i(215486),	-- Jinyu Waraxe
