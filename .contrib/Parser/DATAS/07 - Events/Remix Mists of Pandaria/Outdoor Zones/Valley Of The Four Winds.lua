@@ -74,6 +74,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214105),	-- Mistdancer Treads
 					i(214107),	-- Mistdancer Wraps
 				}),
+				filter(MAIL, {
+					i(214476),	-- Trailseeker's Armbands
+					i(214470),	-- Trailseeker's Chain
+					i(214475),	-- Trailseeker's Chestguard
+					i(214471),	-- Trailseeker's Gloves
+					i(214472),	-- Trailseeker's Headguard
+					i(214467),	-- Trailseeker's Legguards
+					i(214468),	-- Trailseeker's Pauldrons
+					i(214474),	-- Trailseeker's Sabatons
+				}),
 			}),
 		},
 	}),

@@ -5990,16 +5990,6 @@ root(ROOTS.Unsorted, {
 						i(220989),	-- Fire-Charm Jacket
 					}),
 					filter(MAIL, {
-						------ Trailseeker's Laminar Armor (Gold) ------
-						i(214476),	-- Trailseeker's Armbands
-						i(214470),	-- Trailseeker's Chain
-						i(214475),	-- Trailseeker's Chestguard
-						i(214471),	-- Trailseeker's Gloves
-						i(214472),	-- Trailseeker's Headguard
-						i(214467),	-- Trailseeker's Legguards
-						i(214468),	-- Trailseeker's Pauldrons
-						i(214474),	-- Trailseeker's Sabatons
-
 						------ Trailseeker's Laminar Armor (Green) ------
 						i(214480),	-- Peakscaler Breastplate
 						i(214481),	-- Peakscaler Footguards
