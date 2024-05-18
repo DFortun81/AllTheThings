@@ -1795,7 +1795,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214020),	-- Shado-Pan Belt
 						i(214022),	-- Shado-Pan Trousers
 						i(214025),	-- Shado-Pan Sandals
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(214023),	-- Shado-Pan Headguard
 					--]]
@@ -1841,7 +1841,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(105741),	-- Kor'kron Dark Shaman Belt
 						i(105746),	-- Kor'kron Dark Shaman Kilt
 						i(105742),	-- Kor'kron Dark Shaman Treads
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(214450),	-- Dark Shaman Footguards
 						i(214447),	-- Dark Shaman Girdle
@@ -1864,7 +1864,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(89569),	-- Brown Belt of Humbling Gravity
 						i(215096),	-- Leggings of Precarious Balance
 						i(215095),	-- Slippers of Precarious Balance
-					--[[--[[Not needed for unlock
+					--[[--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(215094),	-- Belt of Precarious Balance
 					--]]
@@ -1880,7 +1880,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(89562),	-- Green Belt of Hushed Wisdom
 						i(215099),	-- Leggings of Hushed Wisdom
 						i(215100),	-- Slippers of Hushed Wisdom
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(215101),	-- Belt of Hushed Wisdom
 					--]]
@@ -1906,7 +1906,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(220998),	-- Shirt of Humbling Gravity
 						i(215107),	-- Leggings of Humbling Gravity
 						i(215108),	-- Slippers of Humbling Gravity
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- Contains Removed!
 						i(215109),	-- Belt of Humbling Gravity
 					--]]
@@ -1923,7 +1923,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(74569),	-- Unmarred Waistband
 						i(74581),	-- Soft Britches
 						i(74584),	-- Summer Shoes
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(214128),	-- Tian Monastery Belt
 						i(214126),	-- Tian Monastery Boots
@@ -1943,7 +1943,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(131914),	-- Links of Grieving
 						i(74601),	-- Ceremonial Leggings
 						i(74607),	-- Boots of Courage
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(214135),	-- Tian Monastery Bindings
 						i(214133),	-- Tian Monastery Footguards
@@ -1965,7 +1965,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(73218),	-- Initiate's Belt
 						i(73228),	-- Initiate's Britches
 						i(131906),	-- Initiate's Boots
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(214140),	-- Tian Monastery Cinch
 						i(214139),	-- Tian Monastery Handguards
@@ -1986,7 +1986,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(73219),	-- Initiate's Belt
 						i(73229),	-- Initiate's Legguards
 						i(73253),	-- Initiate's Sabatons
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(214540),	-- Sun Pearl Armbands
 						i(214536),	-- Sun Pearl Chain
@@ -2007,7 +2007,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(74570),	-- Unmarred Belt
 						i(74582),	-- Comfortable Greaves
 						i(74585),	-- Dancing Boots
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(214542),	-- Sun Pearl Breastplate
 						i(214543),	-- Sun Pearl Footguards
@@ -2029,7 +2029,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(98614),	-- Gorge Stalker Belt
 						i(98605),	-- Gorge Stalker Legplates
 						i(214550),	-- Sun Pearl Boots
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(214548),	-- Sun Pearl Belt
 						i(214552),	-- Sun Pearl Bracers
@@ -2048,7 +2048,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(74568),	-- Unmarred Cord
 						i(74580),	-- Homespun Leggings
 						i(74583),	-- Silk Shoes
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(215079),	-- Nightsky Bands
 						i(215078),	-- Nightsky Belt
@@ -2070,7 +2070,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(74597),	-- Cord of Grieving
 						i(74603),	-- Survival Leggings
 						i(215082),	-- Slippers of Wisdom
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(215080),	-- Bands of Wisdom
 						i(215081),	-- Belt of Wisdom
@@ -2090,7 +2090,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(73217),	-- Initiate's Rope Belt
 						i(73227),	-- Initiate's Leggings
 						i(73230),	-- Initiate's Slippers
-					--[[Not needed for unlock
+					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 					-- TODO: Symlink
 						i(215087),	-- Serene Bands
 						i(215088),	-- Serene Belt
@@ -2114,7 +2114,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(82659),	-- Mountainscaler Satin Cord
 							i(82641),	-- Mountainscaler Satin Leggings
 							i(82650),	-- Mountainscaler Satin Treads
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- TODO: Symlink
 							i(213668),	-- Spirit-Waker's Bracers
 							i(213667),	-- Spirit-Waker's Cord
@@ -2140,7 +2140,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(82536),	-- Mindbender Cord
 							i(82518),	-- Mindbender Trousers
 							i(84518),	-- Kafa Satin Treads
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(213671),	-- Mindbender Amice
 							i(213670),	-- Mindbender Belt
@@ -2165,7 +2165,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(84032),	-- Dreadspinner Cord
 							i(84014),	-- Dreadspinner Trousers
 							i(88118),	-- Dreadspinner Shoes
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(213680),	-- Scrollkeeper Crown
 							i(213682),	-- Scrollkeeper Mantle
@@ -2190,7 +2190,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(81489),	-- Angkhal Cord
 							i(81471),	-- Angkhal Trousers
 							i(88039),	-- Angkhal Shoes
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(213700),	-- Silkmaster's Bracers
 							i(213699),	-- Silkmaster's Cord
@@ -2215,7 +2215,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(80731),	-- Ambermist Cord
 							i(80713),	-- Ambermist Leggings
 							i(80722),	-- Ambermist Treads
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- TODO: Symlink
 							i(213687),	-- Mistwalker's Amice
 							i(213686),	-- Mistwalker's Belt
@@ -2240,7 +2240,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(81025),	-- Cagebreaker's Satin Cord
 							i(81606),	-- Faded Forest Satin Leggings
 							i(81615),	-- Faded Forest Satin Treads
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(213706),	-- Shaded Wood Crown
 							i(213704),	-- Shaded Wood Mantle
@@ -2265,7 +2265,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(89062),	-- Klaxxi Lash of the Orator
 							i(90721),	-- Cournith Waterstrider's Silken Finery
 							i(88878),	-- Void Flame Slippers
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- TODO: Symlink
 							i(213987),	-- Cloudscorcher's Bracers
 							i(213988),	-- Cloudscorcher's Cord
@@ -2290,7 +2290,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(89973),	-- Galaxyfire Girdle
 							i(90725),	-- Gaarn's Leggings of Infestation
 							i(90911),	-- Furyheart Treads
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- TODO: Symlink
 							i(214000),	-- Amaranthine Amice
 							i(214001),	-- Amaranthine Belt
@@ -2317,7 +2317,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(101811),	-- Cloudscorcher Belt
 							i(101814),	-- Cloudscorcher Leggings
 							i(101816),	-- Cloudscorcher Sandals
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- TODO: Symlink
 							i(214007),	-- Crown of the Dynast
 							i(214008),	-- Gloves of the Dynast
@@ -2333,107 +2333,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				filter(LEATHER, {
-					i(215229, {	-- Ensemble: Mistveil Leathers (Black)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- Contains Removed!
-							i(214095),	-- Mistveil Cap
-							i(214097),	-- Mistveil Cinch
-							i(214096),	-- Mistveil Handguards
-							i(214093),	-- Mistveil Jerkin
-							i(214098),	-- Mistveil Mantle
-							i(214099),	-- Mistveil Pants
-							i(214094),	-- Mistveil Treads
-							i(214092),	-- Mistveil Wraps
-						},
-					}),
-					i(215230, {	-- Ensemble: Mistveil Leathers (Brown)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- Contains Removed!
-							i(214086),	-- Springrain Belt
-							i(214089),	-- Springrain Boots
-							i(214091),	-- Springrain Bracers
-							i(214087),	-- Springrain Gloves
-							i(214088),	-- Springrain Helm
-							i(214084),	-- Springrain Leggings
-							i(214085),	-- Springrain Shoulderpads
-							i(214090),	-- Springrain Tunic
-						},
-					}),
-					i(215231, {	-- Ensemble: Mistveil Leathers (Crimson)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- Contains Removed!
-							i(214108),	-- Riverblade Bindings
-							i(214111),	-- Riverblade Cover
-							i(214110),	-- Riverblade Footguards
-							i(214112),	-- Riverblade Grips
-							i(214115),	-- Riverblade Legguards
-							i(214114),	-- Riverblade Spaulders
-							i(214109),	-- Riverblade Vest
-							i(214113),	-- Riverblade Waistband
-						},
-					}),
-					i(215232, {	-- Ensemble: Mistveil Leathers (Indigo)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- TODO: Symlink
-							i(214120),	-- Swampthresher Cap
-							i(214118),	-- Swampthresher Cinch
-							i(214119),	-- Swampthresher Handguards
-							i(214122),	-- Swampthresher Jerkin
-							i(214117),	-- Swampthresher Mantle
-							i(214116),	-- Swampthresher Pants
-							i(214121),	-- Swampthresher Treads
-							i(214123),	-- Swampthresher Wraps
-						},
-					}),
-					i(215269, {	-- Ensemble: Snowdrift Battlegear (Blue)
-						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
-						-- TODO: Symlink
-							i(214381),	-- Cranefeather Belt
-							i(214384),	-- Cranefeather Boots
-							i(214386),	-- Cranefeather Bracers
-							i(214382),	-- Cranefeather Gloves
-							i(214383),	-- Cranefeather Helm
-							i(214379),	-- Cranefeather Leggings
-							i(214380),	-- Cranefeather Shoulderpads
-							i(214385),	-- Cranefeather Tunic
-						},
-					}),
-					i(215270, {	-- Ensemble: Snowdrift Battlegear (Brown)
-						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
-						-- TODO: Symlink
-							i(214387),	-- Snowdrift Bindings
-							i(214390),	-- Snowdrift Cover
-							i(214389),	-- Snowdrift Footguards
-							i(214391),	-- Snowdrift Grips
-							i(214394),	-- Snowdrift Legguards
-							i(214393),	-- Snowdrift Spaulders
-							i(214388),	-- Snowdrift Vest
-							i(214392),	-- Snowdrift Waistband
-						},
-					}),
-					i(215271, {	-- Ensemble: Snowdrift Battlegear (Red)
-						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
-						-- TODO: Symlink
-							i(214399),	-- Wildblood Cap
-							i(214397),	-- Wildblood Cinch
-							i(214398),	-- Wildblood Handguards
-							i(214401),	-- Wildblood Jerkin
-							i(214396),	-- Wildblood Mantle
-							i(214395),	-- Wildblood Pants
-							i(214400),	-- Wildblood Treads
-							i(214402),	-- Wildblood Wraps
-						},
-					}),
 					i(215225, {	-- Ensemble: Thunderpaw Battlegear (Dark)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(83988),	-- Ghost Fox Helm
+							i(83997),	-- Ghost Fox Spaulders
+							i(84006),	-- Ghost Fox Tunic
+							i(84051),	-- Ghost Fox Armwraps
+							i(84042),	-- Ghost Fox Gloves
+							i(84033),	-- Ghost Fox Belt
+							i(84015),	-- Ghost Fox Legguards
+							i(84024),	-- Ghost Fox Boots
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214067),	-- Ghost Fox Bindings
 							i(214063),	-- Ghost Fox Cover
@@ -2443,11 +2355,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214065),	-- Ghost Fox Spaulders
 							i(214060),	-- Ghost Fox Vest
 							i(214066),	-- Ghost Fox Waistband
+						--]]
 						},
 					}),
 					i(215226, {	-- Ensemble: Thunderpaw Battlegear (Light)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(83159),	-- Wasteland Hide Helm
+							i(83168),	-- Wasteland Hide Spaulders
+							i(83177),	-- Wasteland Hide Tunic
+							i(83222),	-- Wasteland Hide Bindings
+							i(83213),	-- Wasteland Hide Gloves
+							i(83204),	-- Wasteland Hide Belt
+							i(83186),	-- Wasteland Hide Legguards
+							i(83195),	-- Wasteland Hide Footguards
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214104),	-- Mistdancer Cap
 							i(214102),	-- Mistdancer Cinch
@@ -2457,11 +2380,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214100),	-- Mistdancer Pants
 							i(214105),	-- Mistdancer Treads
 							i(214107),	-- Mistdancer Wraps
+						--]]
 						},
 					}),
 					i(215227, {	-- Ensemble: Thunderpaw Battlegear (Original)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(88078),	-- Mushan Hide Cap
+							i(84510),	-- Kafa Hide Spaulders
+							i(82506),	-- Mushan Hide Tunic
+							i(82551),	-- Mushan Hide Bindings
+							i(82542),	-- Mushan Hide Gloves
+							i(82533),	-- Mushan Hide Belt
+							i(82515),	-- Mushan Hide Legguards
+							i(84519),	-- Kafa Hide Footguards
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214069),	-- Thunderpaw Belt
 							i(214074),	-- Thunderpaw Boots
@@ -2471,11 +2405,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214071),	-- Thunderpaw Leggings
 							i(214070),	-- Thunderpaw Shoulderpads
 							i(214075),	-- Thunderpaw Tunic
+						--]]
 						},
 					}),
 					i(215228, {	-- Ensemble: Thunderpaw Battlegear (Red)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(84588),	-- Farwatch Hide Helm
+							i(88094),	-- Mistlurker Pauldrons
+							i(84597),	-- Farwatch Hide Robes
+							i(83708),	-- Mistlurker Bindings
+							i(83699),	-- Mistlurker Gloves
+							i(83690),	-- Mistlurker Belt
+							i(83672),	-- Mistlurker Legguards
+							i(83681),	-- Mistlurker Footguards
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- TODO: Symlink
 							i(214076),	-- Farwatch Bindings
 							i(214077),	-- Farwatch Vest
@@ -2485,6 +2430,182 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214081),	-- Farwatch Waistband
 							i(214082),	-- Farwatch Spaulders
 							i(214083),	-- Farwatch Legguards
+						--]]
+						},
+					}),
+					i(215229, {	-- Ensemble: Mistveil Leathers (Black)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(80687),	-- Blackthicket Helm
+							i(80696),	-- Blackthicket Spaulders
+							i(80705),	-- Blackthicket Robes
+							i(88697),	-- Bamboo Leaf Bindings
+							i(84244),	-- Bamboo Leaf Gloves
+							i(80732),	-- Blackthicket Belt
+							i(80714),	-- Blackthicket Legguards
+							i(80723),	-- Blackthicket Footguards
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
+						-- Contains Removed!
+							i(214095),	-- Mistveil Cap
+							i(214097),	-- Mistveil Cinch
+							i(214096),	-- Mistveil Handguards
+							i(214093),	-- Mistveil Jerkin
+							i(214098),	-- Mistveil Mantle
+							i(214099),	-- Mistveil Pants
+							i(214094),	-- Mistveil Treads
+							i(214092),	-- Mistveil Wraps
+						--]]
+						},
+					}),
+					i(215230, {	-- Ensemble: Mistveil Leathers (Brown)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(81580),	-- Faded Forest Hide Helm
+							i(81589),	-- Faded Forest Hide Spaulders
+							i(81598),	-- Faded Forest Hide Robes
+							i(81643),	-- Faded Forest Hide Bindings
+							i(81634),	-- Faded Forest Hide Gloves
+							i(81026),	-- Cagebreaker's Hide Belt
+							i(81607),	-- Faded Forest Hide Legguards
+							i(81616),	-- Faded Forest Hide Footguards
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
+						-- Contains Removed!
+							i(214086),	-- Springrain Belt
+							i(214089),	-- Springrain Boots
+							i(214091),	-- Springrain Bracers
+							i(214087),	-- Springrain Gloves
+							i(214088),	-- Springrain Helm
+							i(214084),	-- Springrain Leggings
+							i(214085),	-- Springrain Shoulderpads
+							i(214090),	-- Springrain Tunic
+						--]]
+						},
+					}),
+					i(215231, {	-- Ensemble: Mistveil Leathers (Crimson)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(81441),	-- Morbreath Helm
+							i(81450),	-- Morbreath Spaulder
+							i(81459),	-- Morbreath Robes
+							i(81504),	-- Morbreath Bindings
+							i(81495),	-- Morbreath Gloves
+							i(81486),	-- Morbreath Belt
+							i(84321),	-- Hemet's Hide Legguards
+							i(81477),	-- Morbreath Footguards
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
+						-- Contains Removed!
+							i(214108),	-- Riverblade Bindings
+							i(214111),	-- Riverblade Cover
+							i(214110),	-- Riverblade Footguards
+							i(214112),	-- Riverblade Grips
+							i(214115),	-- Riverblade Legguards
+							i(214114),	-- Riverblade Spaulders
+							i(214109),	-- Riverblade Vest
+							i(214113),	-- Riverblade Waistband
+						--]]
+						},
+					}),
+					i(215232, {	-- Ensemble: Mistveil Leathers (Indigo)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(82615),	-- Mountainscaler Hide Helm
+							i(82624),	-- Mountainscaler Hide Spaulders
+							i(82633),	-- Mountainscaler Hide Robes
+							i(82678),	-- Mountainscaler Hide Bindings
+							i(826698),	-- Mountainscaler Hide Gloves
+							i(82660),	-- Mountainscaler Hide Belt
+							i(82642),	-- Mountainscaler Hide Legguards
+							i(82651),	-- Mountainscaler Hide Footguards
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
+						-- TODO: Symlink
+							i(214120),	-- Swampthresher Cap
+							i(214118),	-- Swampthresher Cinch
+							i(214119),	-- Swampthresher Handguards
+							i(214122),	-- Swampthresher Jerkin
+							i(214117),	-- Swampthresher Mantle
+							i(214116),	-- Swampthresher Pants
+							i(214121),	-- Swampthresher Treads
+							i(214123),	-- Swampthresher Wraps
+						--]]
+						},
+					}),
+					i(215269, {	-- Ensemble: Snowdrift Battlegear (Blue)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(101866),	-- Cranefeather Hood
+							i(101868),	-- Cranefeather Shoulders
+							i(101867),	-- Cranefeather Jerkin
+							i(101862),	-- Cranefeather Bindings
+							i(101865),	-- Cranefeather Gloves
+							i(101869),	-- Cranefeather Waistband
+							i(101864),	-- Cranefeather Britches
+							i(101863),	-- Cranefeather Boots
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
+						-- TODO: Symlink
+							i(214381),	-- Cranefeather Belt
+							i(214384),	-- Cranefeather Boots
+							i(214386),	-- Cranefeather Bracers
+							i(214382),	-- Cranefeather Gloves
+							i(214383),	-- Cranefeather Helm
+							i(214379),	-- Cranefeather Leggings
+							i(214380),	-- Cranefeather Shoulderpads
+							i(214385),	-- Cranefeather Tunic
+						--]]
+						},
+					}),
+					i(215270, {	-- Ensemble: Snowdrift Battlegear (Brown)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(86757),	-- Hood of Cursed Dreams
+							i(86039),	-- Spaulders of the Divided Mind
+							i(89432),	-- Mistfall Robes
+							i(86127),	-- Bracers of Dark Thought
+							i(88743),	-- Ogo's Elder Gloves
+							i(89061),	-- Klaxxi Lash of the Harbinger
+							i(89660),	-- Brambleguard Leggings
+							i(90914),	-- Boots of Raging Haze
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
+						-- TODO: Symlink
+							i(214387),	-- Snowdrift Bindings
+							i(214390),	-- Snowdrift Cover
+							i(214389),	-- Snowdrift Footguards
+							i(214391),	-- Snowdrift Grips
+							i(214394),	-- Snowdrift Legguards
+							i(214393),	-- Snowdrift Spaulders
+							i(214388),	-- Snowdrift Vest
+							i(214392),	-- Snowdrift Waistband
+						--]]
+						},
+					}),
+					i(215271, {	-- Ensemble: Snowdrift Battlegear (Red)
+						["cost"] = {{"c", BRONZE, 2000}},
+						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(86804),	-- Crown of Opoortunistic Strikes
+							i(89341),	-- Imperion Spaulders
+							i(86795),	-- Chestguard of Total Annihilation
+							i(89818),	-- Bracers of Violent Meditation
+							i(144045),	-- Fingers of the Loneliest Monk
+							i(89060),	-- Klaxxi Lash of the Borrower
+							i(89090),	-- Dreadsworn Slayer Legs
+							i(88868),	-- Tukka-Tuk's Hairy Boots
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
+						-- TODO: Symlink
+							i(214399),	-- Wildblood Cap
+							i(214397),	-- Wildblood Cinch
+							i(214398),	-- Wildblood Handguards
+							i(214401),	-- Wildblood Jerkin
+							i(214396),	-- Wildblood Mantle
+							i(214395),	-- Wildblood Pants
+							i(214400),	-- Wildblood Treads
+							i(214402),	-- Wildblood Wraps
+						--]]
 						},
 					}),
 				}),
@@ -2657,7 +2778,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(101792),	-- Cliffbreaker Girdle
 							i(101794),	-- Cliffbreaker Legplates
 							i(101797),	-- Cliffbreaker Sabatons
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- TODO: Symlink
 							i(215042),	-- Cliffbreaker Armguards
 							i(215045),	-- Cliffbreaker Chestguard
@@ -2682,7 +2803,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(86785),	-- Girdle of Delirious Visions
 							i(144059),	-- Ambersmith Legplates
 							i(88865),	-- Bramblestaff Boots
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- TODO: Symlink
 							i(215055),	-- Everbright Bracers
 							i(215052),	-- Everbright Breastplate
@@ -2707,7 +2828,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(89056),	-- Klaxxi Lash of the Consumer
 							i(89093),	-- Kovok's Riven Legguards
 							i(90910),	-- Mindfire Sollerets
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- TODO: Symlink
 							i(215060),	-- Gatecrasher Battleplate
 							i(215059),	-- Gatecrasher Gauntlets
@@ -2732,7 +2853,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(89055),	-- Klaxxi Lash of the Rescinder
 							i(86803),	-- Jangi-xi's Devastating Legplates
 							i(90912),	-- Angerforged Stompers
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- TODO: Symlink
 							i(215071),	-- Cragchewer Armguards
 							i(215068),	-- Cragchewer Chestguard
@@ -2757,7 +2878,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(82234),	-- Highpeak Girdle
 							i(82236),	-- Highpeak Legplates
 							i(82238),	-- Highpeak Sabatons
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214791),	-- Highpeak Bracers
 							i(214792),	-- Highpeak Breastplate
@@ -2782,7 +2903,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(84035),	-- Bladesworn Girdle
 							i(84017),	-- Bladesworn Legguards
 							i(88115),	-- Bladesworn Shoes
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214793),	-- Bladesworn Battleplate
 							i(214798),	-- Bladesworn Greatbelt
@@ -2807,7 +2928,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(83211),	-- Wasteland Armored Girdle
 							i(83193),	-- Wasteland Armored Legguards
 							i(83202),	-- Wasteland Armored Warboots
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214807),	-- Shan'ze Armguards
 							i(214808),	-- Shan'ze Chestguard
@@ -2832,7 +2953,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(87331),	-- Girdle of the Broken Seal
 							i(82517),	-- Serenity Legplates
 							i(84526),	-- Kafa Armored Warboots
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214810),	-- Wallwatcher Bracers
 							i(214809),	-- Wallwatcher Breastplate
@@ -2857,7 +2978,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(81493),	-- Dojani Girdle
 							i(81475),	-- Dojani Legguards
 							i(88035),	-- Dojani SHoes
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214762),	-- Spiritguard's Bracers
 							i(214761),	-- Spiritguard's Breastplate
@@ -2907,7 +3028,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(80734),	-- Glass Lake Clasp
 							i(80716),	-- Glass Lake Legplates
 							i(80725),	-- Glass Lake Greaves
-						--[[Not needed for unlock
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214778),	-- Steel Sentinel's Armguards
 							i(214777),	-- Steel Sentinel's Chestguard
