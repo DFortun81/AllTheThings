@@ -646,6 +646,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(89441),	-- Greenstone Girdle
 							i(87593),	-- Gan Shi Warlord Legguards
 							i(89437),	-- Greenstone Sabatons
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214743),	-- Greenstone Bracers
 							i(214744),	-- Greenstone Breastplate
@@ -655,6 +656,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214737),	-- Greenstone Legguards
 							i(214738),	-- Greenstone Pauldrons
 							i(214742),	-- Greenstone Sabatons
+						--]]
 						},
 					}),
 					i(215311, {	-- Ensemble: Swarmbreaker's Battleplate (Light)
@@ -669,6 +671,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(82958),	-- Contender's Spirit Belt
 							i(82955),	-- Contender's Spirit Legplates
 							i(143989),	-- Barreldodger Boots
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214745),	-- Yaungolian Battleplate
 							i(214750),	-- Yaungolian Greatbelt
@@ -678,13 +681,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214751),	-- Yaungolian Spaulders
 							i(214746),	-- Yaungolian Vambraces
 							i(214747),	-- Yaungolian Warboots
+						--]]
 						},
 					}),
 					i(215312, {	-- Ensemble: Swarmbreaker's Battleplate (Original)
 						["cost"] = {{"c", BRONZE, 2500}},
 						["g"] = {
-							i(144116),	-- Binding of Broken Dreams [Lucetia learned with ensemble 05/17/24] [TotJS N/H Sha of Doubt]
-							i(82947),	-- Contender's Revenant Legplates [Lucetia learned with ensemble 05/17/24] [Original Source: MoP BS]
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(82943),	-- Contender's Revenant Helm
+							i(143980),	-- Acid-Scarred Spaulders
+							i(87629),	-- Chestplate of Manifest Dread
+							i(144184),	-- Bracers of the Fallen Crusader
+							i(82946),	-- Contender's Revenant Gauntlets
+							i(144116),	-- Binding of Broken Dreams
+							i(82947),	-- Contender's Revenant Legplates
+							i(143997),	-- Anchoring Sabatons
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 						-- Contains Removed!
 							i(214759),	-- Swarmbreaker's Armguards
 							i(214760),	-- Swarmbreaker's Chestguard
@@ -694,6 +706,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214754),	-- Swarmbreaker's Shoulderguards
 							i(214755),	-- Swarmbreaker's Waistguard
 							i(214757),	-- Swarmbreaker's Warhelm
+						--]]
 						},
 					}),
 				}),
