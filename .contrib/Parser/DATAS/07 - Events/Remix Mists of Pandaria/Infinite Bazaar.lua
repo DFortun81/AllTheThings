@@ -1770,54 +1770,60 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(219025, {	-- Larah Treebender <World Apparel>
 				i(215219, {	-- Ensemble: Guise of the Shado-Pan (Dark)
 					["cost"] = {{"c", BRONZE, 2500}},
+					["description"] = "All appearances are MoP: Remix exclusive.",
 					["g"] = {
-						i(214018),	-- Shado-Pan Bracers
-						i(214012),	-- Shado-Pan Footwraps
-						i(214013),	-- Shado-Pan Handwraps
 						i(214014),	-- Shado-Pan Hat
-						i(214015),	-- Shado-Pan Pants
-						i(214017),	-- Shado-Pan Sash
 						i(214016),	-- Shado-Pan Shoulderguards
 						i(214011),	-- Shado-Pan Tunic
+						i(214018),	-- Shado-Pan Bracers
+						i(214013),	-- Shado-Pan Handwraps
+						i(214017),	-- Shado-Pan Sash
+						i(214015),	-- Shado-Pan Pants
+						i(214012),	-- Shado-Pan Footwraps
 					},
 				}),
 				i(215220, {	-- Ensemble: Guise of the Shado-Pan (Original)
 					["cost"] = {{"c", BRONZE, 2500}},
 					["g"] = {
-					-- TODO: Symlink
-						i(214019),	-- Shado-Pan Armbands
-						i(214020),	-- Shado-Pan Belt
-						i(214024),	-- Shado-Pan Gloves
-						i(214023),	-- Shado-Pan Headguard
-						i(214026),	-- Shado-Pan Jerkin
+					-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+					-- Shado-Pan Headguard is the only item that doesn't initially unlock with the ensemble instead the Replica helm does.
+						i(90845),	-- Replica Shado-Pan Helmet
 						i(214021),	-- Shado-Pan Mantle
-						i(214025),	-- Shado-Pan Sandals
+						i(214026),	-- Shado-Pan Jerkin
+						i(214019),	-- Shado-Pan Armbands
+						i(214024),	-- Shado-Pan Gloves
+						i(214020),	-- Shado-Pan Belt
 						i(214022),	-- Shado-Pan Trousers
+						i(214025),	-- Shado-Pan Sandals
+					-- TODO: Symlink
+						i(214023),	-- Shado-Pan Headguard
 					},
 				}),
 				i(215275, {	-- Ensemble: Kor'kron Shaman Vestments (Cool)
 					["cost"] = {{"c", BRONZE, 2500}},
+					["description"] = "All appearances are MoP: Remix exclusive.",
 					["g"] = {
-						i(214429),	-- Kor'kron Binder's Belt
-						i(214432),	-- Kor'kron Binder's Boots
+						i(214431),	-- Kor'kron Binder's Helm
+						i(214428),	-- Kor'kron Binder's Spaulders
+						i(214433),	-- Kor'kron Binder's Hauberk
 						i(214434),	-- Kor'kron Binder's Bracers
 						i(214430),	-- Kor'kron Binder's Gauntlets
-						i(214433),	-- Kor'kron Binder's Hauberk
-						i(214431),	-- Kor'kron Binder's Helm
+						i(214429),	-- Kor'kron Binder's Belt
 						i(214427),	-- Kor'kron Binder's Leggings
-						i(214428),	-- Kor'kron Binder's Spaulders
+						i(214432),	-- Kor'kron Binder's Boots
 					},
 				}),
 				i(215276, {	-- Ensemble: Kor'kron Shaman Vestments (Warm)
 					["cost"] = {{"c", BRONZE, 2500}},
+					["description"] = "All appearances are MoP: Remix exclusive.",
 					["g"] = {
-						i(214437),	-- Armbands of Twisted Elements
-						i(214442),	-- Chain of Twisted Elements
-						i(214438),	-- Chestguard of Twisted Elements
-						i(214441),	-- Gloves of Twisted Elements
 						i(214440),	-- Headguard of Twisted Elements
-						i(214444),	-- Legguards of Twisted Elements
 						i(214443),	-- Pauldrons of Twisted Elements
+						i(214438),	-- Chestguard of Twisted Elements
+						i(214437),	-- Armbands of Twisted Elements
+						i(214441),	-- Gloves of Twisted Elements
+						i(214442),	-- Chain of Twisted Elements
+						i(214444),	-- Legguards of Twisted Elements
 						i(214439),	-- Sabatons of Twisted Elements
 					},
 				}),
@@ -1847,44 +1853,53 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215352, {	-- Ensemble: Robes of Quiet Reflection (Brown)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-					-- TODO: Symlink
-						i(215094),	-- Belt of Precarious Balance
-						i(215096),	-- Leggings of Precarious Balance
+					-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+					-- Belt of Precarious Balance is the only item that doesn't initially unlock with the ensemble instead a Monk quest item does.
 						i(215097),	-- Robe of Precarious Balance
 						i(220995),	-- Shirt of Precarious Balance
+						i(89569),	-- Brown Belt of Humbling Gravity
+						i(215096),	-- Leggings of Precarious Balance
 						i(215095),	-- Slippers of Precarious Balance
+					-- TODO: Symlink
+						i(215094),	-- Belt of Precarious Balance
 					},
 				}),
 				i(215353, {	-- Ensemble: Robes of Quiet Reflection (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-					-- TODO: Symlink
-						i(215101),	-- Belt of Hushed Wisdom
-						i(215099),	-- Leggings of Hushed Wisdom
+					-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+					-- Belt of Hushed Wisdom is the only item that doesn't initially unlock with the ensemble instead a Monk quest item does.
 						i(215098),	-- Robe of Hushed Wisdom
 						i(220996),	-- Shirt of Hushed Wisdom
+						i(89562),	-- Green Belt of Hushed Wisdom
+						i(215099),	-- Leggings of Hushed Wisdom
 						i(215100),	-- Slippers of Hushed Wisdom
+					-- TODO: Symlink
+						i(215101),	-- Belt of Hushed Wisdom
 					},
 				}),
 				i(215354, {	-- Ensemble: Robes of Quiet Reflection (Red)
 					["cost"] = {{"c", BRONZE, 1250}},
+					["description"] = "All appearances are MoP: Remix exclusive.",
 					["g"] = {
-						i(215105),	-- Belt of Quiet Reflection
-						i(215103),	-- Leggings of Quiet Reflection
 						i(215102),	-- Robe of Quiet Reflection
 						i(220997),	-- Shirt of Quiet Reflection
+						i(215105),	-- Belt of Quiet Reflection
+						i(215103),	-- Leggings of Quiet Reflection
 						i(215104),	-- Slippers of Quiet Reflection
 					},
 				}),
 				i(215355, {	-- Ensemble: Robes of Quiet Reflection (Yellow)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-					-- Contains Removed!
-						i(215109),	-- Belt of Humbling Gravity
-						i(215107),	-- Leggings of Humbling Gravity
+					-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+					-- Belt of Humbling Gravity is the only item that doesn't initially unlock with the ensemble instead a Monk quest item does.
 						i(215106),	-- Robe of Humbling Gravity
 						i(220998),	-- Shirt of Humbling Gravity
+						i(215107),	-- Leggings of Humbling Gravity
 						i(215108),	-- Slippers of Humbling Gravity
+					-- Contains Removed!
+						i(215109),	-- Belt of Humbling Gravity
 					},
 				}),
 				i(215285, {	-- Ensemble: Sun Pearl Clothing (Green)
