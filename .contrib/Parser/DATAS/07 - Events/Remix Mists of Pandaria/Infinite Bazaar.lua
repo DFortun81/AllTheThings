@@ -1795,8 +1795,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214020),	-- Shado-Pan Belt
 						i(214022),	-- Shado-Pan Trousers
 						i(214025),	-- Shado-Pan Sandals
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(214023),	-- Shado-Pan Headguard
+					--]]
 					},
 				}),
 				i(215275, {	-- Ensemble: Kor'kron Shaman Vestments (Cool)
@@ -1839,6 +1841,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(105741),	-- Kor'kron Dark Shaman Belt
 						i(105746),	-- Kor'kron Dark Shaman Kilt
 						i(105742),	-- Kor'kron Dark Shaman Treads
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(214450),	-- Dark Shaman Footguards
 						i(214447),	-- Dark Shaman Girdle
@@ -1848,6 +1851,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214446),	-- Dark Shaman Mantle
 						i(214451),	-- Dark Shaman Vest
 						i(214452),	-- Dark Shaman Wristguards
+					--]]
 					},
 				}),
 				i(215352, {	-- Ensemble: Robes of Quiet Reflection (Brown)
@@ -1860,8 +1864,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(89569),	-- Brown Belt of Humbling Gravity
 						i(215096),	-- Leggings of Precarious Balance
 						i(215095),	-- Slippers of Precarious Balance
+					--[[--[[Not needed for unlock
 					-- TODO: Symlink
 						i(215094),	-- Belt of Precarious Balance
+					--]]
 					},
 				}),
 				i(215353, {	-- Ensemble: Robes of Quiet Reflection (Green)
@@ -1874,8 +1880,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(89562),	-- Green Belt of Hushed Wisdom
 						i(215099),	-- Leggings of Hushed Wisdom
 						i(215100),	-- Slippers of Hushed Wisdom
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(215101),	-- Belt of Hushed Wisdom
+					--]]
 					},
 				}),
 				i(215354, {	-- Ensemble: Robes of Quiet Reflection (Red)
@@ -1898,8 +1906,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(220998),	-- Shirt of Humbling Gravity
 						i(215107),	-- Leggings of Humbling Gravity
 						i(215108),	-- Slippers of Humbling Gravity
+					--[[Not needed for unlock
 					-- Contains Removed!
 						i(215109),	-- Belt of Humbling Gravity
+					--]]
 					},
 				}),
 				i(215238, {	-- Ensemble: Tian Monastery Clothing (Blue)
@@ -1913,12 +1923,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(74569),	-- Unmarred Waistband
 						i(74581),	-- Soft Britches
 						i(74584),	-- Summer Shoes
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(214128),	-- Tian Monastery Belt
 						i(214126),	-- Tian Monastery Boots
 						i(214127),	-- Tian Monastery Gloves
 						i(214129),	-- Tian Monastery Leggings
 						i(214125),	-- Tian Monastery Tunic
+					--]]
 					},
 				}),
 				i(215239, {	-- Ensemble: Tian Monastery Clothing (Red)
@@ -1931,6 +1943,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(131914),	-- Links of Grieving
 						i(74601),	-- Ceremonial Leggings
 						i(74607),	-- Boots of Courage
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(214135),	-- Tian Monastery Bindings
 						i(214133),	-- Tian Monastery Footguards
@@ -1938,7 +1951,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214130),	-- Tian Monastery Legguards
 						i(214134),	-- Tian Monastery Vest
 						i(214131),	-- Tian Monastery Waistband
+					--]]
 					},
+					
 				}),
 				i(215240, {	-- Ensemble: Tian Monastery Clothing (White)
 					["cost"] = {{"c", BRONZE, 1250}},
@@ -1950,6 +1965,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(73218),	-- Initiate's Belt
 						i(73228),	-- Initiate's Britches
 						i(131906),	-- Initiate's Boots
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(214140),	-- Tian Monastery Cinch
 						i(214139),	-- Tian Monastery Handguards
@@ -1957,6 +1973,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214141),	-- Tian Monastery Pants
 						i(214138),	-- Tian Monastery Treads
 						i(214136),	-- Tian Monastery Wraps
+					--]]
 					},
 				}),
 				i(215285, {	-- Ensemble: Sun Pearl Clothing (Green)
@@ -1969,6 +1986,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(73219),	-- Initiate's Belt
 						i(73229),	-- Initiate's Legguards
 						i(73253),	-- Initiate's Sabatons
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(214540),	-- Sun Pearl Armbands
 						i(214536),	-- Sun Pearl Chain
@@ -1976,6 +1994,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214537),	-- Sun Pearl Gloves
 						i(214535),	-- Sun Pearl Legguards
 						i(214538),	-- Sun Pearl Sabatons
+					--]]
 					},
 				}),
 				i(215286, {	-- Ensemble: Sun Pearl Clothing (Red)
@@ -1988,6 +2007,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(74570),	-- Unmarred Belt
 						i(74582),	-- Comfortable Greaves
 						i(74585),	-- Dancing Boots
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(214542),	-- Sun Pearl Breastplate
 						i(214543),	-- Sun Pearl Footguards
@@ -1995,6 +2015,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214544),	-- Sun Pearl Grips
 						i(214546),	-- Sun Pearl Legwraps
 						i(214541),	-- Sun Pearl Wristguards
+					--]]
 					},
 				}),
 				i(215287, {	-- Ensemble: Sun Pearl Clothing (Yellow)
@@ -2008,11 +2029,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(98614),	-- Gorge Stalker Belt
 						i(98605),	-- Gorge Stalker Legplates
 						i(214550),	-- Sun Pearl Boots
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(214548),	-- Sun Pearl Belt
 						i(214552),	-- Sun Pearl Bracers
 						i(214549),	-- Sun Pearl Gauntlets
 						i(214547),	-- Sun Pearl Leggings
+					--]]
 					},
 				}),
 				i(215356, {	-- Ensemble: Vestments of Serenity (Blue)
@@ -2025,6 +2048,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(74568),	-- Unmarred Cord
 						i(74580),	-- Homespun Leggings
 						i(74583),	-- Silk Shoes
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(215079),	-- Nightsky Bands
 						i(215078),	-- Nightsky Belt
@@ -2032,6 +2056,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215076),	-- Nightsky Leggings
 						i(215073),	-- Nightsky Robe
 						i(215077),	-- Nightsky Slippers
+					--]]
 					},
 				}),
 				i(215357, {	-- Ensemble: Vestments of Serenity (Green)
@@ -2045,12 +2070,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(74597),	-- Cord of Grieving
 						i(74603),	-- Survival Leggings
 						i(215082),	-- Slippers of Wisdom
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(215080),	-- Bands of Wisdom
 						i(215081),	-- Belt of Wisdom
 						i(215084),	-- Gloves of Wisdom
 						i(215083),	-- Leggings of Wisdom
 						i(215086),	-- Robe of Wisdom
+					--]]
 					},
 				}),
 				i(215358, {	-- Ensemble: Vestments of Serenity (White)
@@ -2063,6 +2090,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(73217),	-- Initiate's Rope Belt
 						i(73227),	-- Initiate's Leggings
 						i(73230),	-- Initiate's Slippers
+					--[[Not needed for unlock
 					-- TODO: Symlink
 						i(215087),	-- Serene Bands
 						i(215088),	-- Serene Belt
@@ -2070,6 +2098,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215090),	-- Serene Leggings
 						i(215093),	-- Serene Robe
 						i(215089),	-- Serene Slippers
+					--]]
 					},
 				}),
 				filter(CLOTH, {
@@ -2085,6 +2114,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(82659),	-- Mountainscaler Satin Cord
 							i(82641),	-- Mountainscaler Satin Leggings
 							i(82650),	-- Mountainscaler Satin Treads
+						--[[Not needed for unlock
 						-- TODO: Symlink
 							i(213668),	-- Spirit-Waker's Bracers
 							i(213667),	-- Spirit-Waker's Cord
@@ -2094,6 +2124,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213661),	-- Spirit-Waker's Robe
 							i(213662),	-- Spirit-Waker's Sandals
 							i(213666),	-- Spirit-Waker's Shoulderpads
+						--]]
 						},
 					}),
 					i(215184, {	-- Ensemble: Spirit-Waker's Vestments (Green)
@@ -2109,6 +2140,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(82536),	-- Mindbender Cord
 							i(82518),	-- Mindbender Trousers
 							i(84518),	-- Kafa Satin Treads
+						--[[Not needed for unlock
 						-- Contains Removed!
 							i(213671),	-- Mindbender Amice
 							i(213670),	-- Mindbender Belt
@@ -2118,6 +2150,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213672),	-- Mindbender Pants
 							i(213676),	-- Mindbender Raiment
 							i(213675),	-- Mindbender Treads
+						--]]
 						},
 					}),
 					i(215185, {	-- Ensemble: Spirit-Waker's Vestments (Red)
@@ -2132,6 +2165,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(84032),	-- Dreadspinner Cord
 							i(84014),	-- Dreadspinner Trousers
 							i(88118),	-- Dreadspinner Shoes
+						--[[Not needed for unlock
 						-- Contains Removed!
 							i(213680),	-- Scrollkeeper Crown
 							i(213682),	-- Scrollkeeper Mantle
@@ -2141,6 +2175,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213681),	-- Scrollkeeper Trousers
 							i(213677),	-- Scrollkeeper Vestment
 							i(213684),	-- Scrollkeeper Wristwraps
+						--]]
 						},
 					}),
 					i(215186, {	-- Ensemble: Mistwalker's Vestments (Blue)
@@ -2155,6 +2190,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(81489),	-- Angkhal Cord
 							i(81471),	-- Angkhal Trousers
 							i(88039),	-- Angkhal Shoes
+						--[[Not needed for unlock
 						-- Contains Removed!
 							i(213700),	-- Silkmaster's Bracers
 							i(213699),	-- Silkmaster's Cord
@@ -2164,6 +2200,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213693),	-- Silkmaster's Robe
 							i(213694),	-- Silkmaster's Sandals
 							i(213698),	-- Silkmaster's Shoulderpads
+						--]]
 						},
 					}),
 					i(215187, {	-- Ensemble: Mistwalker's Vestments (Original)
@@ -2178,6 +2215,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(80731),	-- Ambermist Cord
 							i(80713),	-- Ambermist Leggings
 							i(80722),	-- Ambermist Treads
+						--[[Not needed for unlock
 						-- TODO: Symlink
 							i(213687),	-- Mistwalker's Amice
 							i(213686),	-- Mistwalker's Belt
@@ -2187,6 +2225,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213688),	-- Mistwalker's Pants
 							i(213692),	-- Mistwalker's Raiment
 							i(213691),	-- Mistwalker's Treads
+						--]]
 						},
 					}),
 					i(215188, {	-- Ensemble: Mistwalker's Vestments (White)
@@ -2201,6 +2240,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(81025),	-- Cagebreaker's Satin Cord
 							i(81606),	-- Faded Forest Satin Leggings
 							i(81615),	-- Faded Forest Satin Treads
+						--[[Not needed for unlock
 						-- Contains Removed!
 							i(213706),	-- Shaded Wood Crown
 							i(213704),	-- Shaded Wood Mantle
@@ -2210,6 +2250,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213705),	-- Shaded Wood Trousers
 							i(213710),	-- Shaded Wood Vestment
 							i(213702),	-- Shaded Wood Wristwraps
+						--]]
 						},
 					}),
 					i(215216, {	-- Ensemble: Vestments of the Eternal Dynasty (Black)
@@ -2224,6 +2265,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(89062),	-- Klaxxi Lash of the Orator
 							i(90721),	-- Cournith Waterstrider's Silken Finery
 							i(88878),	-- Void Flame Slippers
+						--[[Not needed for unlock
 						-- TODO: Symlink
 							i(213987),	-- Cloudscorcher's Bracers
 							i(213988),	-- Cloudscorcher's Cord
@@ -2233,6 +2275,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213994),	-- Cloudscorcher's Robe
 							i(213993),	-- Cloudscorcher's Sandals
 							i(213989),	-- Cloudscorcher's Shoulderpads
+						--]]
 						},
 					}),
 					i(215217, {	-- Ensemble: Vestments of the Eternal Dynasty (Blue)
@@ -2247,6 +2290,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(89973),	-- Galaxyfire Girdle
 							i(90725),	-- Gaarn's Leggings of Infestation
 							i(90911),	-- Furyheart Treads
+						--[[Not needed for unlock
 						-- TODO: Symlink
 							i(214000),	-- Amaranthine Amice
 							i(214001),	-- Amaranthine Belt
@@ -2257,6 +2301,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213995),	-- Amaranthine Raiment
 							i(220979),	-- Amaranthine Shirt
 							i(213996),	-- Amaranthine Treads
+						--]]
 						},
 					}),
 					i(215218, {	-- Ensemble: Vestments of the Eternal Dynasty (Yellow)
@@ -2272,6 +2317,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(101811),	-- Cloudscorcher Belt
 							i(101814),	-- Cloudscorcher Leggings
 							i(101816),	-- Cloudscorcher Sandals
+						--[[Not needed for unlock
 						-- TODO: Symlink
 							i(214007),	-- Crown of the Dynast
 							i(214008),	-- Gloves of the Dynast
@@ -2282,6 +2328,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(220980),	-- Vest of the Dynast
 							i(214010),	-- Vestment of the Dynast
 							i(214003),	-- Wristwraps of the Dynast
+						--]]
 						},
 					}),
 				}),
@@ -2610,6 +2657,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(101792),	-- Cliffbreaker Girdle
 							i(101794),	-- Cliffbreaker Legplates
 							i(101797),	-- Cliffbreaker Sabatons
+						--[[Not needed for unlock
 						-- TODO: Symlink
 							i(215042),	-- Cliffbreaker Armguards
 							i(215045),	-- Cliffbreaker Chestguard
@@ -2619,6 +2667,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215047),	-- Cliffbreaker Shoulderguards
 							i(215048),	-- Cliffbreaker Waistguard
 							i(215044),	-- Cliffbreaker Warhelm
+						--]]
 						},
 					}),
 					i(215349, {	-- Ensemble: Gatecrasher's Battleplate (Blue)
@@ -2633,6 +2682,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(86785),	-- Girdle of Delirious Visions
 							i(144059),	-- Ambersmith Legplates
 							i(88865),	-- Bramblestaff Boots
+						--[[Not needed for unlock
 						-- TODO: Symlink
 							i(215055),	-- Everbright Bracers
 							i(215052),	-- Everbright Breastplate
@@ -2642,6 +2692,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215054),	-- Everbright Legguards
 							i(215050),	-- Everbright Pauldrons
 							i(215056),	-- Everbright Sabatons
+						--]]
 						},
 					}),
 					i(215350, {	-- Ensemble: Gatecrasher's Battleplate (Green)
@@ -2656,6 +2707,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(89056),	-- Klaxxi Lash of the Consumer
 							i(89093),	-- Kovok's Riven Legguards
 							i(90910),	-- Mindfire Sollerets
+						--[[Not needed for unlock
 						-- TODO: Symlink
 							i(215060),	-- Gatecrasher Battleplate
 							i(215059),	-- Gatecrasher Gauntlets
@@ -2665,6 +2717,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215058),	-- Gatecrasher Spaulders
 							i(215063),	-- Gatecrasher Vambraces
 							i(215064),	-- Gatecrasher Warboots
+						--]]
 						},
 					}),
 					i(215351, {	-- Ensemble: Gatecrasher's Battleplate (Red)
@@ -2679,6 +2732,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(89055),	-- Klaxxi Lash of the Rescinder
 							i(86803),	-- Jangi-xi's Devastating Legplates
 							i(90912),	-- Angerforged Stompers
+						--[[Not needed for unlock
 						-- TODO: Symlink
 							i(215071),	-- Cragchewer Armguards
 							i(215068),	-- Cragchewer Chestguard
@@ -2688,6 +2742,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215066),	-- Cragchewer Shoulderguards
 							i(215065),	-- Cragchewer Waistguard
 							i(215069),	-- Cragchewer Warhelm
+						--]]
 						},
 					}),
 					i(215316, {	-- Ensemble: Shan'ze Warplate (Green)
@@ -2702,6 +2757,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(82234),	-- Highpeak Girdle
 							i(82236),	-- Highpeak Legplates
 							i(82238),	-- Highpeak Sabatons
+						--[[Not needed for unlock
 						-- Contains Removed!
 							i(214791),	-- Highpeak Bracers
 							i(214792),	-- Highpeak Breastplate
@@ -2711,6 +2767,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214785),	-- Highpeak Legguards
 							i(214786),	-- Highpeak Pauldrons
 							i(214790),	-- Highpeak Sabatons
+						--]]
 						},
 					}),
 					i(215317, {	-- Ensemble: Shan'ze Warplate (Purple)
@@ -2725,6 +2782,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(84035),	-- Bladesworn Girdle
 							i(84017),	-- Bladesworn Legguards
 							i(88115),	-- Bladesworn Shoes
+						--[[Not needed for unlock
 						-- Contains Removed!
 							i(214793),	-- Bladesworn Battleplate
 							i(214798),	-- Bladesworn Greatbelt
@@ -2734,6 +2792,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214799),	-- Bladesworn Spaulders
 							i(214794),	-- Bladesworn Vambraces
 							i(214795),	-- Bladesworn Warboots
+						--]]
 						},
 					}),
 					i(215318, {	-- Ensemble: Shan'ze Warplate (Red)
@@ -2748,6 +2807,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(83211),	-- Wasteland Armored Girdle
 							i(83193),	-- Wasteland Armored Legguards
 							i(83202),	-- Wasteland Armored Warboots
+						--[[Not needed for unlock
 						-- Contains Removed!
 							i(214807),	-- Shan'ze Armguards
 							i(214808),	-- Shan'ze Chestguard
@@ -2757,6 +2817,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214802),	-- Shan'ze Shoulderguards
 							i(214803),	-- Shan'ze Waistguard
 							i(214805),	-- Shan'ze Warhelm
+						--]]
 						},
 					}),
 					i(215319, {	-- Ensemble: Shan'ze Warplate (Yellow)
@@ -2771,6 +2832,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(87331),	-- Girdle of the Broken Seal
 							i(82517),	-- Serenity Legplates
 							i(84526),	-- Kafa Armored Warboots
+						--[[Not needed for unlock
 						-- Contains Removed!
 							i(214810),	-- Wallwatcher Bracers
 							i(214809),	-- Wallwatcher Breastplate
@@ -2780,6 +2842,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214816),	-- Wallwatcher Legguards
 							i(214815),	-- Wallwatcher Pauldrons
 							i(214811),	-- Wallwatcher Sabatons
+						--]]
 						},
 					}),
 					i(215313, {	-- Ensemble: Spiritguard's Warplate (Blue)
@@ -2794,6 +2857,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(81493),	-- Dojani Girdle
 							i(81475),	-- Dojani Legguards
 							i(88035),	-- Dojani SHoes
+						--[[Not needed for unlock
 						-- Contains Removed!
 							i(214762),	-- Spiritguard's Bracers
 							i(214761),	-- Spiritguard's Breastplate
@@ -2803,6 +2867,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214768),	-- Spiritguard's Legguards
 							i(214767),	-- Spiritguard's Pauldrons
 							i(214763),	-- Spiritguard's Sabatons
+						--]]
 						},
 					}),
 					i(215314, {	-- Ensemble: Spiritguard's Warplate (Gold)
@@ -2817,6 +2882,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(81029),	-- Cagebreaker's Armored Girdle
 							i(81614),	-- Faded Forest Armored Legguards
 							i(81623),	-- Faded Forest Armored Warboots
+						--[[
 						-- Contains Removed!
 							i(214776),	-- Sunsoul Battleplate
 							i(214771),	-- Sunsoul Greatbelt
@@ -2826,6 +2892,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214770),	-- Sunsoul Spaulders
 							i(214775),	-- Sunsoul Vambraces
 							i(214774),	-- Sunsoul Warboots
+						--]]
 						},
 					}),
 					i(215315, {	-- Ensemble: Spiritguard's Warplate (Silver)
@@ -2840,6 +2907,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(80734),	-- Glass Lake Clasp
 							i(80716),	-- Glass Lake Legplates
 							i(80725),	-- Glass Lake Greaves
+						--[[Not needed for unlock
 						-- Contains Removed!
 							i(214778),	-- Steel Sentinel's Armguards
 							i(214777),	-- Steel Sentinel's Chestguard
@@ -2849,6 +2917,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214783),	-- Steel Sentinel's Shoulderguards
 							i(214782),	-- Steel Sentinel's Waistguard
 							i(214780),	-- Steel Sentinel's Warhelm
+						--]]
 						},
 					}),
 				}),
