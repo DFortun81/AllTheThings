@@ -698,7 +698,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 			}),
-			n(219028, {	-- Durus <Normal Raid Apparel>
+			n(225269, {	-- Durus <Normal Raid Apparel>
+				-- Note original n(219028 listing in case there are actually multiple
 				cl(DEATHKNIGHT, {
 					i(215321, {	-- Ensemble: Plate of the Lost Catacomb (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
@@ -1301,7 +1302,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 			}),
-			n(220618, {	-- Grandmaster Jakkus <Class Apparel>
+			n(220895, {	-- Grandmaster Jakkus <Class Apparel>
+				-- Note original n(220618 listing in case there are actually multiple
 				cl(DEATHKNIGHT, {
 					i(217824, {	-- Arsenal: Webbed Soulforged Weaponry
 						["classes"] = DEATHKNIGHT,
