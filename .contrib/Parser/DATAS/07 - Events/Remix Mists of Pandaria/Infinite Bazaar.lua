@@ -636,6 +636,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215310, {	-- Ensemble: Swarmbreaker's Battleplate (Dark)
 						["cost"] = {{"c", BRONZE, 2500}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(89440),	-- Greenstone Helm
+							i(89438),	-- Greenstone Pauldrons
+							i(143967),	-- Breastplate of Wracking Souls
+							i(144088),	-- Bubble-Breaker Bracers
+							i(144151),	-- Axebreaker Gauntlets
+							i(89441),	-- Greenstone Girdle
+							i(87593),	-- Gan Shi Warlord Legguards
+							i(89437),	-- Greenstone Sabatons
 						-- Contains Removed!
 							i(214743),	-- Greenstone Bracers
 							i(214744),	-- Greenstone Breastplate
@@ -650,6 +659,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215311, {	-- Ensemble: Swarmbreaker's Battleplate (Light)
 						["cost"] = {{"c", BRONZE, 2500}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(87612),	-- Ancient Krasari Helm
+							i(82952),	-- Contender's Spirit Shoulders
+							i(87381),	-- Coldforge Carapace
+							i(87348),	-- Bracers of Inner Knowledge
+							i(82954),	-- Contender's Spirit Gauntlets
+							i(82958),	-- Contender's Spirit Belt
+							i(82955),	-- Contender's Spirit Legplates
+							i(143989),	-- Barreldodger Boots
 						-- Contains Removed!
 							i(214745),	-- Yaungolian Battleplate
 							i(214750),	-- Yaungolian Greatbelt
@@ -2423,6 +2441,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215349, {	-- Ensemble: Gatecrasher's Battleplate (Blue)
 						["cost"] = {{"c", BRONZE, 2000}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(89821),	-- Crown of Keening Stars
+							i(89347),	-- Paleblade Shoulderguards
+							i(89423),	-- Battleguard of Guo-Lai
+							i(86027),	-- Bindings of Ancient Spirits
+							i(144047),	-- Gauntlets of Jade Sutras
+							i(86785),	-- Girdle of Delirious Visions
+							i(144059),	-- Ambersmith Legplates
+							i(88865),	-- Bramblestaff Boots
 						-- TODO: Symlink
 							i(215055),	-- Everbright Bracers
 							i(215052),	-- Everbright Breastplate
@@ -2437,7 +2464,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215350, {	-- Ensemble: Gatecrasher's Battleplate (Green)
 						["cost"] = {{"c", BRONZE, 2000}},
 						["g"] = {
-							i(89976),	-- Chestguard of Eternal Vigilance [Lucetia learned with ensemble 05/17/24] [Original Source: MSV LFR]
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(89216),	-- Yi's Least Favorite Helmet
+							i(86080),	-- Shoulderguards of the Unflanked
+							i(89976),	-- Chestguard of Eternal Vigilance
+							i(88880),	-- Battle Shadow Bracers
+							i(88746),	-- Gloves of the Overwhelming Swarm
+							i(89056),	-- Klaxxi Lash of the Consumer
+							i(89093),	-- Kovok's Riven Legguards
+							i(90910),	-- Mindfire Sollerets
 						-- TODO: Symlink
 							i(215060),	-- Gatecrasher Battleplate
 							i(215059),	-- Gatecrasher Gauntlets
@@ -2452,8 +2487,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215351, {	-- Ensemble: Gatecrasher's Battleplate (Red)
 						["cost"] = {{"c", BRONZE, 2000}},
 						["g"] = {
-							i(82976),	-- Ghost Reaver's Gauntlets [Lucetia learned with ensemble 05/17/24] [Original Source: MoP BS]
-							i(89817),	-- Bonded Soul Bracers [Lucetia learned with ensemble 05/17/24] [Original Source: MSV 10M/25M]
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(86752),	-- Nullification Greathelm
+							i(89345),	-- Stonetoe Spaulders
+							i(86779),	-- Breastplate of the Kings' Guard
+							i(89817),	-- Bonded Soul Bracers
+							i(82976),	-- Ghost Reaver's Gauntlets
+							i(89055),	-- Klaxxi Lash of the Rescinder
+							i(86803),	-- Jangi-xi's Devastating Legplates
+							i(90912),	-- Angerforged Stompers
 						-- TODO: Symlink
 							i(215071),	-- Cragchewer Armguards
 							i(215068),	-- Cragchewer Chestguard
@@ -2468,6 +2510,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215316, {	-- Ensemble: Shan'ze Warplate (Green)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(82235),	-- Highpeak Helm
+							i(82237),	-- Highpeak Pauldrons
+							i(82232),	-- Highpeak Breastplate
+							i(82240),	-- Highpeak Vambraces
+							i(82233),	-- Highpeak Gauntlets
+							i(82234),	-- Highpeak Girdle
+							i(82236),	-- Highpeak Legplates
+							i(82238),	-- Highpeak Sabatons
 						-- Contains Removed!
 							i(214791),	-- Highpeak Bracers
 							i(214792),	-- Highpeak Breastplate
@@ -2482,6 +2533,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215317, {	-- Ensemble: Shan'ze Warplate (Purple)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(83990),	-- Bladesworn Helm
+							i(83656),	-- Goldtalon Spaulders
+							i(84008),	-- Bladesworn Chestpiece
+							i(84053),	-- Bladesworn Armplates
+							i(84044),	-- Bladesworn Gauntlets
+							i(84035),	-- Bladesworn Girdle
+							i(84017),	-- Bladesworn Legguards
+							i(88115),	-- Bladesworn Shoes
 						-- Contains Removed!
 							i(214793),	-- Bladesworn Battleplate
 							i(214798),	-- Bladesworn Greatbelt
