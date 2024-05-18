@@ -2399,15 +2399,28 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215348, {	-- Ensemble: Gatecrasher's Battleplate (Black)
 						["cost"] = {{"c", BRONZE, 2000}},
 						["g"] = {
-						-- TODO: Symlink
-							i(215042),	-- Cliffbreaker Armguards
-							i(215045),	-- Cliffbreaker Chestguard
-							i(215041),	-- Cliffbreaker Greatboots
-							i(215043),	-- Cliffbreaker Greaves
-							i(215046),	-- Cliffbreaker Handguards
-							i(215047),	-- Cliffbreaker Shoulderguards
-							i(215048),	-- Cliffbreaker Waistguard
-							i(215044),	-- Cliffbreaker Warhelm
+							i(101793),	-- Cliffbreaker Helm
+							i(101796),	-- Cliffbreaker Pauldrons [Lucetia learned with ensemble 05/17/24] [Original Source: Timeless Isle]
+							i(101789),	-- Cliffbreaker Breastplate
+							i(101799),	-- Cliffbreaker Vambraces
+							i(101791),	-- Cliffbreaker Gauntlets
+							i(101792),	-- Cliffbreaker Girdle
+							i(101794),	-- Cliffbreaker Legplates
+							i(101797),	-- Cliffbreaker Sabatons
+							
+							--I suspect these are world drops only and do not actually come from ensemble based on testing.
+							--Commenting out for now unless we can get further confirmation.
+							--[[
+							-- TODO: Symlink
+								i(215042),	-- Cliffbreaker Armguards
+								i(215045),	-- Cliffbreaker Chestguard
+								i(215041),	-- Cliffbreaker Greatboots
+								i(215043),	-- Cliffbreaker Greaves
+								i(215046),	-- Cliffbreaker Handguards
+								i(215047),	-- Cliffbreaker Shoulderguards
+								i(215048),	-- Cliffbreaker Waistguard
+								i(215044),	-- Cliffbreaker Warhelm
+							--]]
 						},
 					}),
 					i(215349, {	-- Ensemble: Gatecrasher's Battleplate (Blue)
@@ -2426,7 +2439,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					i(215350, {	-- Ensemble: Gatecrasher's Battleplate (Green)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["questID"] = 79896,	-- So we know we learned it in-game.
 						["g"] = {
 							i(89976),	-- Chestguard of Eternal Vigilance [Lucetia learned with ensemble 05/17/24] [Original Source: MSV LFR]
 						-- TODO: Symlink
@@ -2442,7 +2454,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					i(215351, {	-- Ensemble: Gatecrasher's Battleplate (Red)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["questID"] = 79897,	-- So we know we learned it in-game.
 						["g"] = {
 							i(82976),	-- Ghost Reaver's Gauntlets [Lucetia learned with ensemble 05/17/24] [Original Source: MoP BS]
 							i(89817),	-- Bonded Soul Bracers [Lucetia learned with ensemble 05/17/24] [Original Source: MSV 10M/25M]
