@@ -1902,62 +1902,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215109),	-- Belt of Humbling Gravity
 					},
 				}),
-				i(215285, {	-- Ensemble: Sun Pearl Clothing (Green)
-					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
-					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
-						i(73226),	-- Initiate's Breastplate
-						i(73216),	-- Initiate's Armguards
-						i(73222),	-- Initiate's Gauntlets
-						i(73219),	-- Initiate's Belt
-						i(73229),	-- Initiate's Legguards
-						i(73253),	-- Initiate's Sabatons
-					-- TODO: Symlink
-						i(214540),	-- Sun Pearl Armbands
-						i(214536),	-- Sun Pearl Chain
-						i(214539),	-- Sun Pearl Chestguard
-						i(214537),	-- Sun Pearl Gloves
-						i(214535),	-- Sun Pearl Legguards
-						i(214538),	-- Sun Pearl Sabatons
-					},
-				}),
-				i(215286, {	-- Ensemble: Sun Pearl Clothing (Red)
-					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
-					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
-						i(74573),	-- Glistening Breastplate
-						i(74576),	-- Sun Pearl Bracers
-						i(74579),	-- Gauntlets of Earth and Water
-						i(74570),	-- Unmarred Belt
-						i(74582),	-- Comfortable Greaves
-						i(74585),	-- Dancing Boots
-					-- TODO: Symlink
-						i(214542),	-- Sun Pearl Breastplate
-						i(214543),	-- Sun Pearl Footguards
-						i(214545),	-- Sun Pearl Girdle
-						i(214544),	-- Sun Pearl Grips
-						i(214546),	-- Sun Pearl Legwraps
-						i(214541),	-- Sun Pearl Wristguards
-					},
-				}),
-				i(215287, {	-- Ensemble: Sun Pearl Clothing (Yellow)
-					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
-					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
-					-- Sun Pearl Hauberk / Boots are the main part of this set unlike other ensembles were they are secondary ID's. So moved them with the "required" pieces to unlock
-						i(214551),	-- Sun Pearl Hauberk
-						i(74596),	-- Unvarnished Vambraces
-						i(74605),	-- Gauntlets of Mercy
-						i(98614),	-- Gorge Stalker Belt
-						i(98605),	-- Gorge Stalker Legplates
-						i(214550),	-- Sun Pearl Boots
-					-- TODO: Symlink
-						i(214548),	-- Sun Pearl Belt
-						i(214552),	-- Sun Pearl Bracers
-						i(214549),	-- Sun Pearl Gauntlets
-						i(214547),	-- Sun Pearl Leggings
-					},
-				}),
 				i(215238, {	-- Ensemble: Tian Monastery Clothing (Blue)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
@@ -2013,6 +1957,62 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214141),	-- Tian Monastery Pants
 						i(214138),	-- Tian Monastery Treads
 						i(214136),	-- Tian Monastery Wraps
+					},
+				}),
+				i(215285, {	-- Ensemble: Sun Pearl Clothing (Green)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+						i(73226),	-- Initiate's Breastplate
+						i(73216),	-- Initiate's Armguards
+						i(73222),	-- Initiate's Gauntlets
+						i(73219),	-- Initiate's Belt
+						i(73229),	-- Initiate's Legguards
+						i(73253),	-- Initiate's Sabatons
+					-- TODO: Symlink
+						i(214540),	-- Sun Pearl Armbands
+						i(214536),	-- Sun Pearl Chain
+						i(214539),	-- Sun Pearl Chestguard
+						i(214537),	-- Sun Pearl Gloves
+						i(214535),	-- Sun Pearl Legguards
+						i(214538),	-- Sun Pearl Sabatons
+					},
+				}),
+				i(215286, {	-- Ensemble: Sun Pearl Clothing (Red)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+						i(74573),	-- Glistening Breastplate
+						i(74576),	-- Sun Pearl Bracers
+						i(74579),	-- Gauntlets of Earth and Water
+						i(74570),	-- Unmarred Belt
+						i(74582),	-- Comfortable Greaves
+						i(74585),	-- Dancing Boots
+					-- TODO: Symlink
+						i(214542),	-- Sun Pearl Breastplate
+						i(214543),	-- Sun Pearl Footguards
+						i(214545),	-- Sun Pearl Girdle
+						i(214544),	-- Sun Pearl Grips
+						i(214546),	-- Sun Pearl Legwraps
+						i(214541),	-- Sun Pearl Wristguards
+					},
+				}),
+				i(215287, {	-- Ensemble: Sun Pearl Clothing (Yellow)
+					["cost"] = {{"c", BRONZE, 1250}},
+					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+					-- Sun Pearl Hauberk / Boots are the main part of this set unlike other ensembles were they are secondary ID's. So moved them with the "required" pieces to unlock
+						i(214551),	-- Sun Pearl Hauberk
+						i(74596),	-- Unvarnished Vambraces
+						i(74605),	-- Gauntlets of Mercy
+						i(98614),	-- Gorge Stalker Belt
+						i(98605),	-- Gorge Stalker Legplates
+						i(214550),	-- Sun Pearl Boots
+					-- TODO: Symlink
+						i(214548),	-- Sun Pearl Belt
+						i(214552),	-- Sun Pearl Bracers
+						i(214549),	-- Sun Pearl Gauntlets
+						i(214547),	-- Sun Pearl Leggings
 					},
 				}),
 				i(215356, {	-- Ensemble: Vestments of Serenity (Blue)
@@ -2073,51 +2073,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 				filter(CLOTH, {
-					i(215186, {	-- Ensemble: Mistwalker's Vestments (Blue)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- Contains Removed!
-							i(213700),	-- Silkmaster's Bracers
-							i(213699),	-- Silkmaster's Cord
-							i(213695),	-- Silkmaster's Gloves
-							i(213696),	-- Silkmaster's Hood
-							i(213697),	-- Silkmaster's Leggings
-							i(213693),	-- Silkmaster's Robe
-							i(213694),	-- Silkmaster's Sandals
-							i(213698),	-- Silkmaster's Shoulderpads
-						},
-					}),
-					i(215187, {	-- Ensemble: Mistwalker's Vestments (Original)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- TODO: Symlink
-							i(213687),	-- Mistwalker's Amice
-							i(213686),	-- Mistwalker's Belt
-							i(213689),	-- Mistwalker's Cowl
-							i(213685),	-- Mistwalker's Cuffs
-							i(213690),	-- Mistwalker's Handwraps
-							i(213688),	-- Mistwalker's Pants
-							i(213692),	-- Mistwalker's Raiment
-							i(213691),	-- Mistwalker's Treads
-						},
-					}),
-					i(215188, {	-- Ensemble: Mistwalker's Vestments (White)
-						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
-						-- Contains Removed!
-							i(213706),	-- Shaded Wood Crown
-							i(213704),	-- Shaded Wood Mantle
-							i(213707),	-- Shaded Wood Mitts
-							i(213703),	-- Shaded Wood Sash
-							i(213708),	-- Shaded Wood Slippers
-							i(213705),	-- Shaded Wood Trousers
-							i(213710),	-- Shaded Wood Vestment
-							i(213702),	-- Shaded Wood Wristwraps
-						},
-					}),
 					i(215183, {	-- Ensemble: Spirit-Waker's Vestments (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(82614),	-- Mountainscaler Satin Hood
+							i(83171),	-- Wasteland Silk Amice
+							i(82632),	-- Mountainscaler Satin Robe
+							i(82677),	-- Mountainscaler Satin Cuffs
+							i(82668),	-- Mountainscaler Satin Gloves
+							i(82659),	-- Mountainscaler Satin Cord
+							i(82641),	-- Mountainscaler Satin Leggings
+							i(82650),	-- Mountainscaler Satin Treads
 						-- TODO: Symlink
 							i(213668),	-- Spirit-Waker's Bracers
 							i(213667),	-- Spirit-Waker's Cord
@@ -2132,6 +2099,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215184, {	-- Ensemble: Spirit-Waker's Vestments (Green)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(82491),	-- Mindbender Cowl
+							i(82398),	-- Windwool Shoulders
+							i(82509),	-- Mindbender Robe
+							i(82399),	-- Windwool Tunic
+							i(82554),	-- Mindbender Cuffs
+							i(82545),	-- Mindbender Handguards
+							i(82536),	-- Mindbender Cord
+							i(82518),	-- Mindbender Trousers
+							i(84518),	-- Kafa Satin Treads
 						-- Contains Removed!
 							i(213671),	-- Mindbender Amice
 							i(213670),	-- Mindbender Belt
@@ -2145,7 +2122,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					i(215185, {	-- Ensemble: Spirit-Waker's Vestments (Red)
 						["cost"] = {{"c", BRONZE, 750}},
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 						["g"] = {
+							i(83987),	-- Dreadspinner Cowl
+							i(83657),	-- Swampwalker Amice
+							i(84005),	-- Dreadspinner Robe
+							i(84050),	-- Dreadspinner Cuffs
+							i(84041),	-- Dreadspinner Handguards
+							i(84032),	-- Dreadspinner Cord
+							i(84014),	-- Dreadspinner Trousers
+							i(88118),	-- Dreadspinner Shoes
 						-- Contains Removed!
 							i(213680),	-- Scrollkeeper Crown
 							i(213682),	-- Scrollkeeper Mantle
@@ -2157,9 +2143,87 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213684),	-- Scrollkeeper Wristwraps
 						},
 					}),
+					i(215186, {	-- Ensemble: Mistwalker's Vestments (Blue)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(81444),	-- Angkhal Cowl
+							i(81453),	-- Angkhal Amice
+							i(81462),	-- Angkhal Robe
+							i(81507),	-- Angkhal Cuffs
+							i(81498),	-- Angkhal Handguards
+							i(81489),	-- Angkhal Cord
+							i(81471),	-- Angkhal Trousers
+							i(88039),	-- Angkhal Shoes
+						-- Contains Removed!
+							i(213700),	-- Silkmaster's Bracers
+							i(213699),	-- Silkmaster's Cord
+							i(213695),	-- Silkmaster's Gloves
+							i(213696),	-- Silkmaster's Hood
+							i(213697),	-- Silkmaster's Leggings
+							i(213693),	-- Silkmaster's Robe
+							i(213694),	-- Silkmaster's Sandals
+							i(213698),	-- Silkmaster's Shoulderpads
+						},
+					}),
+					i(215187, {	-- Ensemble: Mistwalker's Vestments (Original)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(80686),	-- Ambermist Hood
+							i(80695),	-- Ambermist Mantle
+							i(80704),	-- Ambermist Robe
+							i(80749),	-- Ambermist Cuffs
+							i(80740),	-- Ambermist Gloves
+							i(80731),	-- Ambermist Cord
+							i(80713),	-- Ambermist Leggings
+							i(80722),	-- Ambermist Treads
+						-- TODO: Symlink
+							i(213687),	-- Mistwalker's Amice
+							i(213686),	-- Mistwalker's Belt
+							i(213689),	-- Mistwalker's Cowl
+							i(213685),	-- Mistwalker's Cuffs
+							i(213690),	-- Mistwalker's Handwraps
+							i(213688),	-- Mistwalker's Pants
+							i(213692),	-- Mistwalker's Raiment
+							i(213691),	-- Mistwalker's Treads
+						},
+					}),
+					i(215188, {	-- Ensemble: Mistwalker's Vestments (White)
+						["cost"] = {{"c", BRONZE, 750}},
+						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(81579),	-- Faded Forest Satin Hood
+							i(81588),	-- Faded Forest Satin Mantle
+							i(81597),	-- Faded Forest Satin Robe
+							i(81642),	-- Faded Forest Satin Cuffs
+							i(81633),	-- Faded Forest Satin Gloves
+							i(81025),	-- Cagebreaker's Satin Cord
+							i(81606),	-- Faded Forest Satin Leggings
+							i(81615),	-- Faded Forest Satin Treads
+						-- Contains Removed!
+							i(213706),	-- Shaded Wood Crown
+							i(213704),	-- Shaded Wood Mantle
+							i(213707),	-- Shaded Wood Mitts
+							i(213703),	-- Shaded Wood Sash
+							i(213708),	-- Shaded Wood Slippers
+							i(213705),	-- Shaded Wood Trousers
+							i(213710),	-- Shaded Wood Vestment
+							i(213702),	-- Shaded Wood Wristwraps
+						},
+					}),
 					i(215216, {	-- Ensemble: Vestments of the Eternal Dynasty (Black)
 						["cost"] = {{"c", BRONZE, 2000}},
 						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(89337),	-- Firecracker Corona
+							i(144060),	-- Mantle of the Golden Sun
+							i(86758),	-- Imperial Ghostbinder's Robes
+							i(88893),	-- Minh's Beaten Bracers
+							i(89768),	-- Claws of Amethyst
+							i(89062),	-- Klaxxi Lash of the Orator
+							i(90721),	-- Cournith Waterstrider's Silken Finery
+							i(88878),	-- Void Flame Slippers
 						-- TODO: Symlink
 							i(213987),	-- Cloudscorcher's Bracers
 							i(213988),	-- Cloudscorcher's Cord
@@ -2174,6 +2238,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215217, {	-- Ensemble: Vestments of the Eternal Dynasty (Blue)
 						["cost"] = {{"c", BRONZE, 2000}},
 						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(86788),	-- Hood of Blind Eyes
+							i(89339),	-- Tenderheart Spaulders
+							i(89672),	-- Robe of Quiet Meditation
+							i(89642),	-- Bracers of Eternal Resolve
+							i(89650),	-- Emperor's Riding Gloves
+							i(89973),	-- Galaxyfire Girdle
+							i(90725),	-- Gaarn's Leggings of Infestation
+							i(90911),	-- Furyheart Treads
 						-- TODO: Symlink
 							i(214000),	-- Amaranthine Amice
 							i(214001),	-- Amaranthine Belt
@@ -2189,6 +2262,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215218, {	-- Ensemble: Vestments of the Eternal Dynasty (Yellow)
 						["cost"] = {{"c", BRONZE, 2000}},
 						["g"] = {
+						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
+							i(86129),	-- Hood of Blind Eyes
+							i(101817),	-- Cloudscorcher Shoulderpads
+							i(101815),	-- Cloudscorcher Robe
+							i(220980),	-- Vest of the Dynast
+							i(101818),	-- Cloudscorcher Wristwraps
+							i(101813),	-- Cloudscorcher Handwraps
+							i(101811),	-- Cloudscorcher Belt
+							i(101814),	-- Cloudscorcher Leggings
+							i(101816),	-- Cloudscorcher Sandals
 						-- TODO: Symlink
 							i(214007),	-- Crown of the Dynast
 							i(214008),	-- Gloves of the Dynast
