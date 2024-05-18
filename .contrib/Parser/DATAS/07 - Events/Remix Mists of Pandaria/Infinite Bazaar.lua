@@ -1811,6 +1811,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215277, {	-- Ensemble: Kor'kron Shaman Vestments (Yellow)
 					["cost"] = {{"c", BRONZE, 2500}},
 					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+						i(105745),	-- Kor'kron Dark Shaman Cowl
+						i(105747),	-- Kor'kron Dark Shaman Shoulder
+						i(105743),	-- Kor'kron Dark Shaman Vestment
+						i(105748),	-- Kor'kron Dark Shaman Bracers
+						i(105744),	-- Kor'kron Dark Shaman Gloves
+						i(105741),	-- Kor'kron Dark Shaman Belt
+						i(105746),	-- Kor'kron Dark Shaman Kilt
+						i(105742),	-- Kor'kron Dark Shaman Treads
 					-- TODO: Symlink
 						i(214450),	-- Dark Shaman Footguards
 						i(214447),	-- Dark Shaman Girdle
