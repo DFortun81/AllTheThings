@@ -664,6 +664,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215312, {	-- Ensemble: Swarmbreaker's Battleplate (Original)
 						["cost"] = {{"c", BRONZE, 2500}},
 						["g"] = {
+							i(144116),	-- Binding of Broken Dreams [Lucetia learned with ensemble 05/17/24] [TotJS N/H Sha of Doubt]
+							i(82947),	-- Contender's Revenant Legplates [Lucetia learned with ensemble 05/17/24] [Original Source: MoP BS]
 						-- Contains Removed!
 							i(214759),	-- Swarmbreaker's Armguards
 							i(214760),	-- Swarmbreaker's Chestguard
@@ -2407,7 +2409,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(101792),	-- Cliffbreaker Girdle
 							i(101794),	-- Cliffbreaker Legplates
 							i(101797),	-- Cliffbreaker Sabatons
-							
 						-- TODO: Symlink
 							i(215042),	-- Cliffbreaker Armguards
 							i(215045),	-- Cliffbreaker Chestguard
