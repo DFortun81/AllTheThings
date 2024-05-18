@@ -58,8 +58,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19872, {	-- The Jade Forest
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
-						19882,	-- Campaign: The Jade Forest [A]
-						19883,	-- Campaign: The Jade Forest [H]
 						20008,	-- Looking For Group: The Jade Forest
 						19912,	-- Order of the Cloud Serpent
 						19962,	-- Tour The Jade Forest

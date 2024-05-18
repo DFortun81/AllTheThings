@@ -29,6 +29,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				},
 			}),
 		}),
+		n(WEAPONS, {
+			i(215806),	-- Ghostheart Warspear
+			i(215954),	-- Kor'dok's Sword
+		}),
 		n(ARMOR, {
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				filter(CLOTH, {

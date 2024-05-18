@@ -139,6 +139,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		}),
 		filter(ONE_HANDED_SWORDS, {
 			i(224080),	-- Timerunner's Sword
+			i(215946),	-- Valiant's Honorblade
 		}),
 		filter(TWO_HANDED_SWORDS, {
 			i(224075),	-- Timerunner's Greatsword

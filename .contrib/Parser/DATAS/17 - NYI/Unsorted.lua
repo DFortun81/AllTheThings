@@ -6607,7 +6607,6 @@ root(ROOTS.Unsorted, {
 					i(215803),	-- Dragonguard's Glaive
 					i(215804),	-- Wallwatcher's Partisan
 					i(215805),	-- Serpentguard Spear
-					i(215806),	-- Ghostheart Warspear
 					i(215807),	-- Ritter's Spear
 					i(215808),	-- Yak-Herder's Longspear
 					i(215809),	-- Yaungol Warspear
@@ -6736,7 +6735,6 @@ root(ROOTS.Unsorted, {
 					i(215943),	-- Wasteland Scimitar
 					i(215944),	-- Harmonious Scimitar
 					i(215945),	-- Binan Scimitar
-					i(215946),	-- Valiant's Honorblade
 					i(215947),	-- Inkgill Sword
 					i(215948),	-- Darkhide Sword
 					i(215949),	-- Crane Temple Sword
@@ -6744,7 +6742,6 @@ root(ROOTS.Unsorted, {
 					i(215951),	-- Sha-Blighted Sword
 					i(215952),	-- Fear's Bite
 					i(215953),	-- Siege Captain's Blade
-					i(215954),	-- Kor'dok's Sword
 					i(215955),	-- Zakai's Swarmslicer
 					i(215956),	-- Ook's Hozen Cutter
 					i(215957),	-- Tian Monastery Saber

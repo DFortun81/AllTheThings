@@ -1086,6 +1086,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56339 },	-- General Nazgrim
 						["coord"] = { 30.2, 53.1, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(76336),	-- Nazgrim's Grog (QI!)
+						},
 					}),
 					q(29926, {	-- Calamity Jade
 						["sourceQuests"] = { 29928 },	-- I Have No Jade and I Must Scream
@@ -1424,6 +1427,11 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56406 },	-- Rivett Clutchpop
 						["coord"] = { 30.7, 52.2, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							o(209903, {	-- Green Branch
+								i(76333),	-- Greeen Branch (QI!)
+							}),
+						},
 					}),
 					q(29626, {	-- Groundskeeper Wu
 						["sourceQuests"] = { 29620 },	-- The Great Banquet
@@ -1826,6 +1834,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
 						["coord"] = { 55.3, 45.3, THE_JADE_FOREST },
 						["g"] = {
+							i(75221),	-- Wasp Stinger
 							i(80713),	-- Ambermist Leggings
 							i(80714),	-- Blackthicket Legguards
 							i(80715),	-- Jade Witch Legguards
@@ -2258,6 +2267,11 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 						["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 						["coord"] = { 54.8, 45.3, THE_JADE_FOREST },
+						["groups"] = {
+							o(209836, {	-- Freshly Fallen Petals
+								i(75219),	-- Freshly Fallen Petal (QI!)
+							}),
+						},
 					}),
 					q(29999, {	-- The Rider's Bind
 						["sourceQuests"] = { 29932 },	-- The Temple of the Jade Serpent
@@ -2370,6 +2384,11 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 						["provider"] = { "n", 59178 },	-- Lo Wanderbrew
 						["coord"] = { 46.6, 45.3, THE_JADE_FOREST },
+						["groups"] = {
+							o(209951, {	-- Silk Patch
+								i(75023),	-- Pristine Silk Strand
+							}),
+						},
 					}),
 					q(29752, {	-- The Wayward Dead
 						["sourceQuests"] = { 29749 },	-- An Urgent Plea
