@@ -70,6 +70,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				filter(TWO_HANDED_MACES, {
 					i(215781),	-- Sumprush Maul
 				}),
+				filter(SHIELDS, {
+					i(216568),	-- Yaungol Bulwark
+				}),
 				filter(STAVES, {
 					i(215870),	-- Amberweaver's Rod
 					i(215867),	-- Diviner's Spire

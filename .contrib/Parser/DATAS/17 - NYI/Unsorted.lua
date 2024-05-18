@@ -6913,7 +6913,6 @@ root(ROOTS.Unsorted, {
 					i(216565),	-- Gaze of the Ancient
 					i(216566),	-- Gaze of the Ancient
 					i(216567),	-- Dreadwood Bulwark
-					i(216568),	-- Yaungol Bulwark
 					i(216569),	-- Deflector of Orbiss
 					i(216571),	-- Tian Deflector
 					i(216572),	-- Shomi's Barrier
