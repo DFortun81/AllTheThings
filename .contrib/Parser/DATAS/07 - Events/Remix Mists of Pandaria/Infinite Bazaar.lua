@@ -2556,6 +2556,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215318, {	-- Ensemble: Shan'ze Warplate (Red)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(83166),	-- Wasteland Armored Helm
+							i(83175),	-- Wasteland Armored Shoulders
+							i(83184),	-- Wasteland Armored Chestpiece
+							i(83229),	-- Wasteland Armored Bracers
+							i(83220),	-- Wasteland Armored Gauntlets
+							i(83211),	-- Wasteland Armored Girdle
+							i(83193),	-- Wasteland Armored Legguards
+							i(83202),	-- Wasteland Armored Warboots
 						-- Contains Removed!
 							i(214807),	-- Shan'ze Armguards
 							i(214808),	-- Shan'ze Chestguard
@@ -2570,6 +2579,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215319, {	-- Ensemble: Shan'ze Warplate (Yellow)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(87322),	-- Helm of Enmity
+							i(84517),	-- Kafa Armored Shoulders
+							i(82508),	-- Serenity Chestguard
+							i(82553),	-- Serenity Bracers
+							i(82544),	-- Serenity Gloves
+							i(87331),	-- Girdle of the Broken Seal
+							i(82517),	-- Serenity Legplates
+							i(84526),	-- Kafa Armored Warboots
 						-- Contains Removed!
 							i(214810),	-- Wallwatcher Bracers
 							i(214809),	-- Wallwatcher Breastplate
@@ -2584,6 +2602,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215313, {	-- Ensemble: Spiritguard's Warplate (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(81448),	-- Dojani Helm
+							i(81457),	-- Dojani Shoulders
+							i(81466),	-- Dojani Chestpiece
+							i(81511),	-- Dojani Bracers
+							i(81502),	-- Dojani Gauntlets
+							i(81493),	-- Dojani Girdle
+							i(81475),	-- Dojani Legguards
+							i(88035),	-- Dojani SHoes
 						-- Contains Removed!
 							i(214762),	-- Spiritguard's Bracers
 							i(214761),	-- Spiritguard's Breastplate
@@ -2598,6 +2625,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215314, {	-- Ensemble: Spiritguard's Warplate (Gold)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(81587),	-- Faded Forest Armored Helm
+							i(81596),	-- Faded Forest Armored Shoulders
+							i(81605),	-- Faded Forest Armored Chestpiece
+							i(81650),	-- Faded Forest Armored Bracers
+							i(81641),	-- Faded Forest Armored Gauntlets
+							i(81029),	-- Cagebreaker's Armored Girdle
+							i(81614),	-- Faded Forest Armored Legguards
+							i(81623),	-- Faded Forest Armored Warboots
 						-- Contains Removed!
 							i(214776),	-- Sunsoul Battleplate
 							i(214771),	-- Sunsoul Greatbelt
@@ -2612,6 +2648,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215315, {	-- Ensemble: Spiritguard's Warplate (Silver)
 						["cost"] = {{"c", BRONZE, 750}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(80689),	-- Glass Lake Headcover
+							i(80698),	-- Glass Lake Spaulders
+							i(80707),	-- Glass Lake Chestguard
+							i(87349),	-- Armplates of Martial Artistry
+							i(84250),	-- Bamboo Leaf Gauntlets
+							i(80734),	-- Glass Lake Clasp
+							i(80716),	-- Glass Lake Legplates
+							i(80725),	-- Glass Lake Greaves
 						-- Contains Removed!
 							i(214778),	-- Steel Sentinel's Armguards
 							i(214777),	-- Steel Sentinel's Chestguard
