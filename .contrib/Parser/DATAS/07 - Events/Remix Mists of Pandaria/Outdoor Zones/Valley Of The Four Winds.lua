@@ -64,6 +64,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(TWO_HANDED_MACES, {
+					i(215781),	-- Sumprush Maul
+				}),
 				filter(LEATHER, {
 					i(214104),	-- Mistdancer Cap
 					i(214102),	-- Mistdancer Cinch

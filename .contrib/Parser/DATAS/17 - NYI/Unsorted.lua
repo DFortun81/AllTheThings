@@ -6573,7 +6573,6 @@ root(ROOTS.Unsorted, {
 					i(215778),	-- Gar'tok, Might of the Faithful
 					i(215779),	-- Gar'tok, Might of the Faithful
 					i(215780),	-- Hatred's Warmace
-					i(215781),	-- Sumprush Maul
 					i(215782),	-- Wasteland Maul
 					i(215783),	-- Shado-Pan Maul
 					i(215784),	-- Taran Zhu's Bonebreaker
