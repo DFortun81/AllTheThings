@@ -2408,19 +2408,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(101794),	-- Cliffbreaker Legplates
 							i(101797),	-- Cliffbreaker Sabatons
 							
-							--I suspect these are world drops only and do not actually come from ensemble based on testing.
-							--Commenting out for now unless we can get further confirmation.
-							--[[
-							-- TODO: Symlink
-								i(215042),	-- Cliffbreaker Armguards
-								i(215045),	-- Cliffbreaker Chestguard
-								i(215041),	-- Cliffbreaker Greatboots
-								i(215043),	-- Cliffbreaker Greaves
-								i(215046),	-- Cliffbreaker Handguards
-								i(215047),	-- Cliffbreaker Shoulderguards
-								i(215048),	-- Cliffbreaker Waistguard
-								i(215044),	-- Cliffbreaker Warhelm
-							--]]
+						-- TODO: Symlink
+							i(215042),	-- Cliffbreaker Armguards
+							i(215045),	-- Cliffbreaker Chestguard
+							i(215041),	-- Cliffbreaker Greatboots
+							i(215043),	-- Cliffbreaker Greaves
+							i(215046),	-- Cliffbreaker Handguards
+							i(215047),	-- Cliffbreaker Shoulderguards
+							i(215048),	-- Cliffbreaker Waistguard
+							i(215044),	-- Cliffbreaker Warhelm
 						},
 					}),
 					i(215349, {	-- Ensemble: Gatecrasher's Battleplate (Blue)
