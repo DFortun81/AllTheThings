@@ -6294,7 +6294,6 @@ root(ROOTS.Unsorted, {
 					i(215496),	-- Yaungol Axe
 					i(215497),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215498),	-- Kura-Kura, Kazra'jin's Headtaker
-					i(215499),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215500),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215501),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215502),	-- Xal'atoh, Malformed Image of Gorehowl
@@ -6577,7 +6576,6 @@ root(ROOTS.Unsorted, {
 					i(215784),	-- Taran Zhu's Bonebreaker
 					i(215785),	-- Fangcracker Maul
 					i(215787),	-- Kazra'jin's Maul
-					i(215788),	-- Kazra'jin's Maul
 					i(215789),	-- Kazra'jin's Maul
 					i(215790),	-- Kazra'jin's Maul
 					i(215791),	-- Bo-Ris, Spear of Night
@@ -6859,7 +6857,6 @@ root(ROOTS.Unsorted, {
 					i(216461),	-- Caduceus of Pure Moods
 					i(216462),	-- Dinomancer's Spire
 					i(216463),	-- Dinomancer's Spire
-					i(216464),	-- Dinomancer's Spire
 					i(216465),	-- Dinomancer's Spire
 					i(216466),	-- Suen-Wo, Spire of the Rising Sun
 					i(216467),	-- Suen-Wo, Spire of the Rising Sun

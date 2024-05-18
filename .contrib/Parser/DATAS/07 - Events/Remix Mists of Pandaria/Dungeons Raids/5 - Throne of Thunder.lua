@@ -315,6 +315,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			d(DIFFICULTY.RAID.NORMAL, {
 				n(ARMOR, {
+					filter(ONE_HANDED_AXES, {
+						i(215499),	-- Kura-Kura, Kazra'jin's Headtaker
+					}),
+					filter(STAVES, {
+						i(216464),	-- Dinomancer's Spire
+					}),
+					filter(TWO_HANDED_MACES, {
+						i(215788),	-- Kazra'jin's Maul
+					}),
 					filter(CLOTH, {
 						-- MAGE
 						i(213803),	-- Raiment of the Chromatic Hydra
