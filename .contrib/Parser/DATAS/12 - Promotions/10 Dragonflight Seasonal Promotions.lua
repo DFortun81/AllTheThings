@@ -169,7 +169,7 @@ root(ROOTS.Promotions, {
 			}),
 			i(79744, {	-- Eye of the Legion (PET!)
 				["description"] = "Obtained through watching select Twitch Streamers with Drops enabled for at least 4 hours between May 16, 10:00 a.m. & May 30, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_REMIX },
+				["timeline"] = { ADDED_REMIX, "removed 10.2.7.99999" },
 			}),
 		},
 	}),
