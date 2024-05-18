@@ -2426,7 +2426,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					i(215350, {	-- Ensemble: Gatecrasher's Battleplate (Green)
 						["cost"] = {{"c", BRONZE, 2000}},
+						["questID"] = 79896,	-- So we know we learned it in-game.
 						["g"] = {
+							i(89976),	-- Chestguard of Eternal Vigilance [Lucetia learned with ensemble 05/17/24] [Original Source: MSV LFR]
 						-- TODO: Symlink
 							i(215060),	-- Gatecrasher Battleplate
 							i(215059),	-- Gatecrasher Gauntlets
@@ -2442,8 +2444,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						["cost"] = {{"c", BRONZE, 2000}},
 						["questID"] = 79897,	-- So we know we learned it in-game.
 						["g"] = {
-							i(82976),	-- Ghost Reaver's Gauntlets [Lucetia learned with ensemble 05/17/24]
-							i(89817),	-- Bonded Soul Bracers [Lucetia learned with ensemble 05/17/24]
+							i(82976),	-- Ghost Reaver's Gauntlets [Lucetia learned with ensemble 05/17/24] [Original Source: MoP BS]
+							i(89817),	-- Bonded Soul Bracers [Lucetia learned with ensemble 05/17/24] [Original Source: MSV 10M/25M]
 						-- TODO: Symlink
 							i(215071),	-- Cragchewer Armguards
 							i(215068),	-- Cragchewer Chestguard
