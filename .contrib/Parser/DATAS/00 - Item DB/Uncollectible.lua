@@ -1781,6 +1781,11 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220287);	-- Acid-Filled Sack
 --i(220290);	-- Barbed Pincers
 --i(225801);	-- Braided Seaweed Bangle
+--i(225716);	-- Brax's Favorite Cog
+--i(225709);	-- Brax's Left Shoe
+--i(225710);	-- Brax's Other Hat
+--i(225715);	-- Brax's To-Do List
+--i(225718);	-- Brax's Toothpick
 --i(220277);	-- Carapace Fragment
 --i(220281);	-- Charged Fragments
 --i(220249);	-- Chipped Mandible
@@ -1825,6 +1830,8 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220288);	-- Quivering Tail
 --i(220362);	-- Ragged Rope
 --i(132183);	-- Razor Tooth // Alex: I bug reported this item drop in TWW on alpha due to wierd itemID range
+--i(220242);	-- Razored Tail-Blade
+--i(220297);	-- Rock-Encrusted Plates
 --i(225807);	-- Rune-Carved Bone
 --i(220266);	-- Sharpened Digging Claws
 --i(220361);	-- Sharpened Steel Implement

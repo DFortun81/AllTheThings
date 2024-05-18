@@ -12,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			e(xx, {	-- Orta, the Broken Mountain
 				["crs"] = { 221067 },
 				["coord"] = { 18.3, 33.1, 2213 },	-- Nerub'ar
-				["questID"] = xx,
+				--["questID"] = xx,
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
@@ -21,6 +21,23 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 			q(xx, {	-- Orta, the Broken Mountain (WQ)
 				["coord"] = { 18.3, 33.1, 2213 },	-- Nerub'ar
+				["isWorldQuest"] = true,
+				["sym"] = {
+					{"select","encounterID",xx,},{"pop"},	-- Original WB
+				},
+			}),
+			e(xx, {	-- Aggregation of Horrors
+				["crs"] = { 220999 },
+				["coord"] = { 64.8, 87.0, THE_RINGING_DEEPS },
+				--["questID"] = xx,
+				["g"] = sharedData({
+					["modID"] = 3,
+				},{
+					i(),	--
+				}),
+			}),
+			q(82653, {	-- Aggregation of Horrors (WQ)
+				["coord"] = { 64.8, 87.0, THE_RINGING_DEEPS },
 				["isWorldQuest"] = true,
 				["sym"] = {
 					{"select","encounterID",xx,},{"pop"},	-- Original WB

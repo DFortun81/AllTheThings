@@ -594,9 +594,46 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(81670, {	-- Shattered Silk
 				["coord"] = { 72.8, 55.0, AZJ_KAHET },
 			}),
-			q(xx, {	-- Radiant Echo
-				["provider"] = { "n", 222165 },	-- Radiant Echo
+			q(82286, {	-- Worldsoul Memory: Old Gods Forsaken
+				--thing supposed to be repeatable and probably gonna be need to move as expansion feature?
+				["provider"] = { "n", 222165 },	-- Worldsoul Memory (vignette -- Radiant Echo)
 				["coord"] = { 21.1, 45.5, 2213 },
+				["g"] = {
+					--I'm currently unsure if rares are spot/mode/zone specific
+					--loot is just gold from npcs
+					--no qids uppon kill and all of them have same npcID
+					--this was rotation of 'rares' for this event and then start spawning again
+					--so it was Vin'ris > Yoh'nath > Spin'za > Queen >  Vil'vim > Vin'ris (timer is out)
+					n(222628, {	-- Vin'ris The Corruptor
+						["coord"] = { 21.5, 43.4, 2213 },
+					}),
+					i(220693),	-- Coffer Key Shard
+				},
+			}),
+			q(82285, {	-- Worldsoul Memory: Old Gods Forsaken
+				--thing supposed to be repeatable and probably gonna be need to move as expansion feature?
+				["provider"] = { "n", 222165 },	-- Worldsoul Memory (vignette -- Radiant Echo)
+				["coord"] = { 65.2, 56.1, AZJ_KAHET },
+				["g"] = {
+					--I'm currently unsure if rares are spot/mode/zone specific
+					--Shard of Gorribal > Heartsear > Azerite Manifistation > Dregblood and Soulboil >  Windowcore 
+					n(222620, {	-- Shard of Gorribal
+						["coord"] = { 67.0, 54.6, AZJ_KAHET },
+					}),
+					n(222667, {	-- Heartsear
+						--["coord"] = { 67.0, 54.6, AZJ_KAHET },
+					}),
+					n(222670, {	-- Azerite Manifistation
+						--["coord"] = { 67.0, 54.6, AZJ_KAHET },
+					}),
+					n(222658, {	-- Dregblood and Soulboil (Dregbile)
+						--["coord"] = { 67.0, 54.6, AZJ_KAHET },
+					}),
+					n(222671, {	-- Windowcore
+						--["coord"] = { 67.0, 54.6, AZJ_KAHET },
+					}),
+					i(220693),	-- Coffer Key Shard
+				},
 			}),
 			--this is probably with General only and probably need to move out of here?
 			q(81491, {	-- Armaments: Arbalests

@@ -29,35 +29,35 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- crafting reagents and gray item
 				},
 			}),
-			o(433773, {	--Buried Treasire
+			o(433773, {	-- Buried Treasire
 				["coord"] = { 50.8, 52.4, THE_RINGING_DEEPS },
 				["questID"] = 80488,
 				["g"] = {
 					i(217959),	-- Incomplete Painting (gray)
 				},
 			}),
-			o(433774, {	--Buried Treasure
+			o(433774, {	-- Buried Treasure
 				["coord"] = { 50.7, 52.5, THE_RINGING_DEEPS },
 				["questID"] = 80489,
 				["g"] = {
 					i(217969),	-- Bomb Debris (gray)
 				},
 			}),
-			o(433757, {	--Buried Treasure
+			o(433757, {	-- Buried Treasure
 				["coord"] = { 50.7, 53.0, THE_RINGING_DEEPS },
 				["questID"] = 80487,
 				["g"] = {
 					i(217958),	-- Used Socks (gray)
 				},
 			}),
-			o(433776, {	--Buried Treasure
+			o(433776, {	-- Buried Treasure
 				["coord"] = { 50.4, 52.8, THE_RINGING_DEEPS },
 				["questID"] = 80490,
 				["g"] = {
 					i(217962),	-- Dud Bomb (gray)
 				},
 			}),
-			o(433733, {	--Forgotten Treasure
+			o(433733, {	-- Forgotten Treasure
 				["description"] = "Key to this chest can be found in nearest Buried Treasure",
 				["coord"] = { 50.5, 53.5, THE_RINGING_DEEPS },
 				["questID"] = 80485,
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(224783),	-- Sovereign's Finery Chest (TOY!)
 				},
 			}),
-			o(446151, {	--Dislodged Blockage
+			o(446151, {	-- Dislodged Blockage
 				["providers"] = { "o", 446100 },	-- Blocked Intake (vignette)
 				["coord"] = { 48.2, 48.9, THE_RINGING_DEEPS },
 				["questID"] = 82820,
@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(221548),	-- Blightbud (PET!)
 				},
 			}),
-			o(444004, {	--Waterlogged Refuse
+			o(444004, {	-- Waterlogged Refuse
 				["coord"] = { 66.2, 33.4, THE_RINGING_DEEPS },
 				["questID"] = 83030,
 				["g"] = {
@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(213255),	-- Wax Canary
 				},
 			}),
-			o(445403, {	--Scary Dark Chest
+			o(445403, {	-- Scary Dark Chest
 				--you can lit up candle near it but I didn't find a pattern to open it
 				["coord"] = { 58.9, 30.3, THE_RINGING_DEEPS },
 				--["questID"] = x,
@@ -94,16 +94,45 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(),	--
 				},
 			}),
-			o(444071, {	--Cursed Pickaxe
+			o(444071, {	-- Cursed Pickaxe
 				["coord"] = { 63.1, 63.1, THE_RINGING_DEEPS },
 				["questID"] = 82230,
 				["g"] = {
 					i(224837),	--Cursed Pickaxe
 				},
 			}),
-			o(446341, {	--Dusty Prospector's Chest
+			o(446341, {	-- Dusty Prospector's Chest
 				["coord"] = { 49.0, 31.6, THE_RINGING_DEEPS },
 				--["questID"] = x,
+			}),
+			o(420053, {	-- Webbed Knapsack
+				["coord"] = { 68.9, 38.8, THE_RINGING_DEEPS },
+				["questID"] = 79308,
+				["g"] = {
+					--gray items
+					i(213251),	-- Big Gold Nugget
+					i(213253),	-- Gilded Candle
+					i(213251),	-- Cinderbee Wax Jar
+					i(213250),	-- Cracked Gem
+					i(213257),	-- Shovel
+					i(213252),	-- Stolen Earthen Contraption
+					i(213255),	-- Wax Canary
+					i(213256),	-- Wax Spoon
+				},
+			}),
+			o(444115, {	-- Discarded Toolbox
+				["coord"] = { 45.5, 17.5, THE_RINGING_DEEPS },
+				["questID"] = 82239,
+				["g"] = {
+					i(224644),	-- Lava-Forged Cogwheel
+				},
+			}),
+			o(444087, {	-- Munderut's Forgotten Stash
+				["coord"] = { 55.4, 13.8, THE_RINGING_DEEPS },
+				["questID"] = 82235,
+				["g"] = {
+					-- crafting reagents (gems)
+				},
 			}),
 		}),
 	}),

@@ -6,29 +6,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 	m(HALLOWFALL, {
 		n(TREASURES, {
 			o(444798, {	-- Arathi Treasure Hoard
-				["coords"] = {	-- have more than one spot or zone specific repeatable?
-					{ 53.6, 63.0, HALLOWFALL },
-					{ 53.7, 65.5, HALLOWFALL },
-					{ 49.5, 66.2, HALLOWFALL },
-					{ 49.7, 70.1, HALLOWFALL },
-					{ 44.1, 66.3, HALLOWFALL },
-					{ 42.1, 63.7, HALLOWFALL },
-					{ 38.7, 61.6, HALLOWFALL },
-					{ 38.1, 56.4, HALLOWFALL },
-					{ 28.0, 49.4, HALLOWFALL },
-					{ 34.0, 47.7, HALLOWFALL },
-					{ 49.6, 31.4, HALLOWFALL },
-					--well, to be fair, I'm not sure that there really a point for all coords
-				},
+				["maps"] = { HALLOWFALL },
 				--["questID"] = xx,
 				["g"] = {
 					i(206350),	- Radiant Remnant
 				},
 			}),
-			o(444801, {	-- Brimming Arathi Treasure Hoard
-				["coords"] = {	-- have more than one spot or zone specific repeatable?
-					{ 53.6, 63.0, HALLOWFALL },
-				},
+			o(444801, {	-- Brimming Arathi Treasure Hoard // not sure what about brimming stuff
+				["coord"] = { 53.6, 63.0, HALLOWFALL },
 				--["questID"] = xx,
 				["g"] = {
 					--
@@ -36,11 +21,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			o(444804, {	-- Concentrated Shadow
 				["description"] = "Spawn only when crystal in zone is purple",
-				["coords"] = {
-					{ 57.0, 69.7, HALLOWFALL },
-					{ 49.0, 36.5, HALLOWFALL },
-					{ 52.2, 29.4, HALLOWFALL },
-				},
+				["maps"] = { HALLOWFALL },
 				--["questID"] = xx,
 				["g"] = {
 					-- some crafting reagents and gray item
@@ -83,7 +64,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 63.2, 29.5, HALLOWFALL },
 				["questID"] = 79191,
 				["g"] = {
-					-- was only radiamt remnant as loot
+					-- was only radiant remnant as loot
 				},
 			}),
 			o(437211, {	-- Illuminated Footlocker
@@ -104,15 +85,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(444802, {	-- Kobyss Ritual Cache
-				["coords"] = {	-- possible have more than one spot or zone specific repeatable?
-					{ 35.0, 52.1, HALLOWFALL },
-					{ 29.2, 56.2, HALLOWFALL },
-					{ 28.9, 62.1, HALLOWFALL },
-					{ 24.1, 52.4, HALLOWFALL },
-					{ 29.7, 46.0, HALLOWFALL },
-					{ 51.0, 28.4, HALLOWFALL },
-					-- Same as for Arathi Treasure Hoard
-				},
+				["maps"] = { HALLOWFALL },
 				--["questID"] = xx,
 				["g"] = {
 					-- crafting reagents and gray items
@@ -154,6 +127,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 83310,
 				["g"] = {
 					i(225207),	-- Care and Feeding of the Imperial Lynx [book]
+				},
+			}),
+			o(441611, {	-- Windswept Satchel
+				["coord"] = { 30.2, 38.8, HALLOWFALL },
+				["questID"] = 81972,
+				["g"] = {
+					i(224578),	-- Arathor Courier's Satchel
 				},
 			}),
 		}),

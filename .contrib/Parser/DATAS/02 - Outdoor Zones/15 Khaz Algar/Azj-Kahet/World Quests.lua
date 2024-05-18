@@ -23,6 +23,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						-- i(199192),	-- as reward there currently old bag
 					},
 				}),
+				q(81829, {	-- Skyrider Racing - Pit Plunge
+					-- Note: Normal - qID 80281 / Advanced - 80287 / Reverse - 80293
+					["coord"] = { 27.0, 52.3, AZJ_KAHET },
+				}),
+				q(82536, {	-- Exfiltration Operation
+					["coord"] = { 62.5, 72.0, 2213 },
+				}),
 				q(82481, {	-- Enforcer Extermination
 					["coord"] = { 56.1, 58.4, AZJ_KAHET },
 				}),

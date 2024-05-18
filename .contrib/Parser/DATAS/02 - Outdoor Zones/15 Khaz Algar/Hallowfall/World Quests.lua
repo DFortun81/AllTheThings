@@ -35,6 +35,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- normal - 80260 / advanced - 80269 / reversed - 80275
 					["coord"] = { 39.0, 61.4, HALLOWFALL },
 				}),
+				q(81816, {	-- Skyrider Racing - Tenir's Traversal
+					-- normal - 80257 / advanced - 80266 / reversed - 80272
+					["coord"] = { 59.2, 68.9, HALLOWFALL },
+				}),
+				q(82588, {	-- Spore Ender
+					["coord"] = { 60.2, 62.2, HALLOWFALL },
+					["g"] = {
+						i(225655),	-- Fragrant Mirespores (QI!)
+					},
+				}),
 				q(76586, {	-- Spreading The Light
 					["coord"] = { 55.3, 14.5, HALLOWFALL },	-- should be other from actual quest report popup
 				}),

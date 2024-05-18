@@ -13,6 +13,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				petbattle(q(82293, {	-- The Power of Friendship
 					["coord"] = { 61.6, 37.6, THE_RINGING_DEEPS },
 				})),
+				petbattle(q(82300, {	-- Major Malfunction
+					["coord"] = { 66.9, 58.1, THE_RINGING_DEEPS },
+				})),
+				q(82523, {	-- Candle Kingbreaker
+					["coord"] = { 64.3, 33.6, THE_RINGING_DEEPS },
+				}),
 				q(82256, {	-- Capturing the Cataract's Creatures
 					["coord"] = { 52.9, 47.8, THE_RINGING_DEEPS },
 				}),
@@ -25,6 +31,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(81807, {	-- Skyrider Racing - Earthenworks Weave
 					-- normal - 80237 / advanced - 80244 / reversed - 80250
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
+				}),
+				q(81812, {	-- Skyrider Racing - Taelloch Twist
+					-- normal - 80242 / advanced - 80248 / reversed - 80254
+					["coord"] = { 66.6, 68.7, THE_RINGING_DEEPS },
 				}),
 				--
 				q(83229, {	-- Special Assignment: When the Deeps Stir

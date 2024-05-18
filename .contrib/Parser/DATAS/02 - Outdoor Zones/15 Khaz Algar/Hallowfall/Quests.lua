@@ -863,12 +863,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
-			q(xx, {	-- Radiant Echo
-				["provider"] = { "n", 222165 },	-- Worldsoul Memory
-				["coord"] = { 60.7, 67.5, HALLOWFALL },	-- found 2 spots
-				["costs"] = { "i", xx, x },	-- Radiant Chords x?
+			q(82164, {	-- Worldsoul Memory: Reign of The Old Gods
+				["provider"] = { "n", 222165 },	-- Worldsoul Memory (vignette - Radiant Echo)
+				["coord"] = { 60.7, 67.5, HALLOWFALL },
 				["g"] = {
-					-- unable to start it
+					-- Aqu'yinra > Venox > Yor'sith > S'toth the Insatiable > Bor'zal the Lurking > repeat
+					n(222605),	-- Aqu'yinra
+					n(222640),	-- First Blade Grimskarn // actual npc name Venox
+					n(222632),	-- Yor'sith
+					n(222629),	-- S'toth the Insatiable
+					n(222611),	-- Bor'zal the Lurking
+				},
+			}),
+			q(82207, {	-- Worldsoul Memory: Descendants of Distant Waters
+				["provider"] = { "n", 222165 },	-- Worldsoul Memory (vignette - Radiant Echo)
+				["coord"] = { 46.8, 23.4, HALLOWFALL },
+				["g"] = {
+					-- Hand of Azshara > Gurl The Feaster > Utmoth the Tidetwister > Ankoan Champion Utaari > Zaniga The Tracker > repeat
+					n(222661),	-- Hand of Azshara
+					n(222655),	-- Gurl The Feaster
+					n(222627),	-- Utmoth the Tidetwister
+					n(222637),	-- Ankoan Champion Utaari
+					n(222639),	-- Zaniga The Tracker
+					--
+					i(225218, {	-- Echoing Fragment: Hallowfall
+						--crit for achievementID 40314 Fragments of Memories, probably goona need to move this qid into hqts
+						["questID"] = 83249
+					}),
 				},
 			}),
 			q(80009, {	-- The Taskmaker
@@ -1011,5 +1032,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(80548),	-- pop after I grab Radiant Remnant from ground during qID 76338 (A Better Cabbage Smacker) @ 64.8, 28.9
 	q(80583),	-- pop after I grab Radiant Remnant from ground during qID 78590 (Cutting Edge) @ 64.0, 31.7
 	q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time
+	--
+	q(82158)	-- Special Assignment: Lynx Rescue / unlock tracker
 });
 --]]
