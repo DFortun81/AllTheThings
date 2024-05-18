@@ -985,6 +985,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215332, {	-- Ensemble: Battlegear of the Lightning Emperor (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(94264),	-- Haunted Steel Headcover
+							i(95069),	-- Reconstructed Holy Shoulderplates
+							i(94989),	-- Lei Shen's Grounded Carapace
+							i(95130),	-- Softscar Armplates
+							i(94924),	-- Iceshatter Gauntlets
+							i(95213),	-- Abandoned Zandalari Greatbelt
+							i(94956),	-- Matter-Swapped Legplates
+							i(96088),	-- Ice-Scored Treads
+							-- Original Listings we had
 							i(214921),	-- Lightning Emperor's Greatboots
 							i(214922),	-- Lightning Emperor's Armguards
 							i(214923),	-- Lightning Emperor's Greaves
@@ -1686,9 +1696,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(219013, {	-- Horos <Rare Collections>
+				--[[ Removed between PTR -> Live
 				i(89205, {	-- Mini Mana Bomb
 					["cost"] = {{"c", BRONZE, 50000}},
 				}),
+				--]]
 				------ Still Obtainable ------
 				i(86589, {	-- Ai-Li's Skymirror
 					["cost"] = {{"c", BRONZE, 4950}},
