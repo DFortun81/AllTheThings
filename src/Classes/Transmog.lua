@@ -317,7 +317,7 @@ local function CompletionistItemCollectionHelper(sourceID, oldState)
 				-- This is okay since items of this type share their appearance regardless of the power of the item.
 				local name, link = GetItemInfo(sourceInfo.itemID);
 
-				app.print(L.ITEM_ID_ADDED_MISSING:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
+				app.print(L.ITEM_ID_ADDED_MISSING:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, app.Version));
 
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
 				app.Audio:PlayReportSound();
@@ -364,7 +364,7 @@ local function UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				-- This is okay since items of this type share their appearance regardless of the power of the item.
 				local name, link = GetItemInfo(sourceInfo.itemID);
 
-				app.print(L[newCollected and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"]:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned));
+				app.print(L[newCollected and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"]:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned, app.Version));
 
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
 				app.Audio:PlayReportSound();
