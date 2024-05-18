@@ -1640,6 +1640,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 56.52, 7.45, THE_BARRENS },
 					-- #endif
+					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(13, 13, 5),
 					["groups"] = {
 						objective(1, {	-- 0/1 Ignition Key
