@@ -1877,6 +1877,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215285, {	-- Ensemble: Sun Pearl Clothing (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+						i(73226),	-- Initiate's Breastplate
+						i(73216),	-- Initiate's Armguards
+						i(73222),	-- Initiate's Gauntlets
+						i(73219),	-- Initiate's Belt
+						i(73229),	-- Initiate's Legguards
+						i(73253),	-- Initiate's Sabatons
 					-- TODO: Symlink
 						i(214540),	-- Sun Pearl Armbands
 						i(214536),	-- Sun Pearl Chain
@@ -1889,6 +1896,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215286, {	-- Ensemble: Sun Pearl Clothing (Red)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+						i(74573),	-- Glistening Breastplate
+						i(74576),	-- Sun Pearl Bracers
+						i(74579),	-- Gauntlets of Earth and Water
+						i(74570),	-- Unmarred Belt
+						i(74582),	-- Comfortable Greaves
+						i(74585),	-- Dancing Boots
 					-- TODO: Symlink
 						i(214542),	-- Sun Pearl Breastplate
 						i(214543),	-- Sun Pearl Footguards
@@ -1901,22 +1915,35 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215287, {	-- Ensemble: Sun Pearl Clothing (Yellow)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+					-- Sun Pearl Hauberk / Boots are the main part of this set unlike other ensembles were they are secondary ID's. So moved them with the "required" pieces to unlock
+						i(214551),	-- Sun Pearl Hauberk
+						i(74596),	-- Unvarnished Vambraces
+						i(74605),	-- Gauntlets of Mercy
+						i(98614),	-- Gorge Stalker Belt
+						i(98605),	-- Gorge Stalker Legplates
+						i(214550),	-- Sun Pearl Boots
 					-- TODO: Symlink
 						i(214548),	-- Sun Pearl Belt
-						i(214550),	-- Sun Pearl Boots
 						i(214552),	-- Sun Pearl Bracers
 						i(214549),	-- Sun Pearl Gauntlets
-						i(214551),	-- Sun Pearl Hauberk
 						i(214547),	-- Sun Pearl Leggings
 					},
 				}),
 				i(215238, {	-- Ensemble: Tian Monastery Clothing (Blue)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-						-- TODO: Symlink
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+					-- Tian Monastery Bracers are the main part of this set unlike other ensembles were they are secondary ID's. So moved them with the "required" pieces to unlock
+						i(74575),	-- Sun Pearl Vest
+						i(214124),	-- Tian Monastery Bracers
+						i(74572),	-- Gloves of Splashing Water
+						i(74569),	-- Unmarred Waistband
+						i(74581),	-- Soft Britches
+						i(74584),	-- Summer Shoes
+					-- TODO: Symlink
 						i(214128),	-- Tian Monastery Belt
 						i(214126),	-- Tian Monastery Boots
-						i(214124),	-- Tian Monastery Bracers
 						i(214127),	-- Tian Monastery Gloves
 						i(214129),	-- Tian Monastery Leggings
 						i(214125),	-- Tian Monastery Tunic
@@ -1925,6 +1952,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215239, {	-- Ensemble: Tian Monastery Clothing (Red)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+						i(131916),	-- Empathetic Mail
+						i(74578),	-- Bindings of the Earth Spirit
+						i(74595),	-- Gloves of Verity
+						i(131914),	-- Links of Grieving
+						i(74601),	-- Ceremonial Leggings
+						i(74607),	-- Boots of Courage
 					-- TODO: Symlink
 						i(214135),	-- Tian Monastery Bindings
 						i(214133),	-- Tian Monastery Footguards
@@ -1937,6 +1971,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215240, {	-- Ensemble: Tian Monastery Clothing (White)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+						i(131904),	-- Initiate's Chestpiece
+						i(73215),	-- Initiate's Bracers
+						i(131903),	-- Initiate's Grips
+						i(73218),	-- Initiate's Belt
+						i(73228),	-- Initiate's Britches
+						i(131906),	-- Initiate's Boots
 					-- TODO: Symlink
 						i(214140),	-- Tian Monastery Cinch
 						i(214139),	-- Tian Monastery Handguards
@@ -1949,6 +1990,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215356, {	-- Ensemble: Vestments of Serenity (Blue)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+						i(74577),	-- Robes of the Water Spirit
+						i(74571),	-- Playful Wristbands
+						i(74574),	-- Sun Pearl Gloves
+						i(74568),	-- Unmarred Cord
+						i(74580),	-- Homespun Leggings
+						i(74583),	-- Silk Shoes
 					-- TODO: Symlink
 						i(215079),	-- Nightsky Bands
 						i(215078),	-- Nightsky Belt
@@ -1961,18 +2009,32 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215357, {	-- Ensemble: Vestments of Serenity (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+					-- Slippers of Wisdom are the main part of this set unlike other ensembles were they are secondary ID's. So moved them with the "required" pieces to unlock
+						i(74606),	-- Protector's Robes
+						i(74600),	-- Healer's Wristwraps
+						i(74594),	-- Gloves of Wisdom
+						i(74597),	-- Cord of Grieving
+						i(74603),	-- Survival Leggings
+						i(215082),	-- Slippers of Wisdom
 					-- TODO: Symlink
 						i(215080),	-- Bands of Wisdom
 						i(215081),	-- Belt of Wisdom
 						i(215084),	-- Gloves of Wisdom
 						i(215083),	-- Leggings of Wisdom
 						i(215086),	-- Robe of Wisdom
-						i(215082),	-- Slippers of Wisdom
 					},
 				}),
 				i(215358, {	-- Ensemble: Vestments of Serenity (White)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
+					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+						i(73224),	-- Initiate's Robes
+						i(73214),	-- Initiate's Wristwraps
+						i(73220),	-- Initiate's Gloves
+						i(73217),	-- Initiate's Rope Belt
+						i(73227),	-- Initiate's Leggings
+						i(73230),	-- Initiate's Slippers
 					-- TODO: Symlink
 						i(215087),	-- Serene Bands
 						i(215088),	-- Serene Belt
@@ -2428,8 +2490,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215348, {	-- Ensemble: Gatecrasher's Battleplate (Black)
 						["cost"] = {{"c", BRONZE, 2000}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(101793),	-- Cliffbreaker Helm
-							i(101796),	-- Cliffbreaker Pauldrons [Lucetia learned with ensemble 05/17/24] [Original Source: Timeless Isle]
+							i(101796),	-- Cliffbreaker Pauldrons
 							i(101789),	-- Cliffbreaker Breastplate
 							i(101799),	-- Cliffbreaker Vambraces
 							i(101791),	-- Cliffbreaker Gauntlets
