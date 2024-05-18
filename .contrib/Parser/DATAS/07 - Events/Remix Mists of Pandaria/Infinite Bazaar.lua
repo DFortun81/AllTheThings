@@ -2440,7 +2440,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					i(215351, {	-- Ensemble: Gatecrasher's Battleplate (Red)
 						["cost"] = {{"c", BRONZE, 2000}},
+						["questID"] = 79897,	-- So we know we learned it in-game.
 						["g"] = {
+							i(82976),	-- Ghost Reaver's Gauntlets [Lucetia learned with ensemble 05/17/24]
+							i(89817),	-- Bonded Soul Bracers [Lucetia learned with ensemble 05/17/24]
 						-- TODO: Symlink
 							i(215071),	-- Cragchewer Armguards
 							i(215068),	-- Cragchewer Chestguard
