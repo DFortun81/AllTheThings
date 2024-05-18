@@ -6282,7 +6282,6 @@ root(ROOTS.Unsorted, {
 					i(215482),	-- Elegion, the Star Cleaver
 					i(215483),	-- Elegion, the Star Cleaver
 					i(215484),	-- Boggeo's Ceremonial Axe
-					i(215485),	-- Shomi's Hatchet
 					i(215486),	-- Jinyu Waraxe
 					i(215488),	-- Mountainscaler Hatchet
 					i(215489),	-- Wasteland Hacker
@@ -6648,10 +6647,8 @@ root(ROOTS.Unsorted, {
 					i(215864),	-- Torch of Dawn
 					i(215865),	-- Fogspeaker Conduit
 					i(215866),	-- Staff of Focus
-					i(215867),	-- Diviner's Spire
 					i(215868),	-- Monastic Staff
 					i(215869),	-- Waterweaver's Staff
-					i(215870),	-- Amberweaver's Rod
 					i(215872),	-- Amberweaver's Spire
 					i(215873),	-- Amberweaver's Staff
 					i(215874),	-- Staff of Iron Will

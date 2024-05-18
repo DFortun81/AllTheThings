@@ -64,8 +64,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(ONE_HANDED_AXES, {
+					i(215485),	-- Shomi's Hatchet
+				}),
 				filter(TWO_HANDED_MACES, {
 					i(215781),	-- Sumprush Maul
+				}),
+				filter(STAVES, {
+					i(215870),	-- Amberweaver's Rod
+					i(215867),	-- Diviner's Spire
 				}),
 				filter(LEATHER, {
 					i(214104),	-- Mistdancer Cap
