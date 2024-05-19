@@ -1016,13 +1016,19 @@ local function CheckForUnknownSourceID(link)
 		return
 	end
 
-	-- TODO: clean out this table by removing known sourceIDs eventually
 	-- TODO: add information type to show character which has the item
 	app.SetAccountCached("SourceItemsOnCharacter",sourceID,app.GUID)
 	-- app.PrintDebug("Unlearned SourceID!",sourceID,link)
 	return
 end
+local function ClearIfMyGuid(id, val)
+	if val == app.GUID then
+		return nil
+	end
+	return val
+end
 local function CheckForBoundSourceItems()
+	app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)
 	app.ScanInventory(CheckForUnknownSourceID)
 end
 app.AddEventHandler("OnStartup", function()
