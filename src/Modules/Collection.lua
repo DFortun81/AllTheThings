@@ -145,6 +145,10 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	local function SetCached(field, id, state)
 		currentCharacter[field][id] = state
 	end
+	-- Assigns the cached status for this Account for a given field ID without causing any related events
+	local function SetAccountCached(field, id, state)
+		accountWideData[field][id] = state
+	end
 	-- Returns the tracked status for this Account for a given field ID
 	local function IsAccountTracked(field, id, setting)
 		return accountWide[setting or field] and accountWideData[field][id] or nil
@@ -152,7 +156,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	-- Allows directly saving a cached state for a table of ids for a given field at the Account level
 	-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
 	local function SetBatchAccountCached(field, ids, state)
-		-- app.PrintDebug("SBC:A",field,state)
+		-- app.PrintDebug("SBAC:A",field,state)
 		local container = accountWideData[field]
 		for id,_ in pairs(ids) do
 			container[id] = state
@@ -232,6 +236,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	end
 	app.SetAccountCollected = SetAccountCollected;
 	app.SetCached = SetCached
+	app.SetAccountCached = SetAccountCached
 	app.SetCollected = SetCollected;
 	app.IsCached = IsCached
 	app.IsAccountCached = IsAccountCached

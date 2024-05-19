@@ -577,7 +577,11 @@ local function GetSavedText(state)
 end
 local function GetCollectibleIcon(data, iconOnly)
 	if data.collectible then
-		return iconOnly and GetCollectionIcon(data.collected) or GetCollectionText(data.collected);
+		local collected = data.collected
+		if not collected and data.collectedwarband then
+			return iconOnly and L["COLLECTED_WARBAND_ICON"] or L["COLLECTED_WARBAND"];
+		end
+		return iconOnly and GetCollectionIcon(collected) or GetCollectionText(collected);
 	end
 end
 local function GetTrackableIcon(data, iconOnly, forSaved)

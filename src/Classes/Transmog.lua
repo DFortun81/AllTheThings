@@ -642,6 +642,10 @@ do
 		saved = function(t)
 			return app.IsAccountCached("Sources", t.sourceID) == 1
 		end,
+		collectedwarband = app.IsClassic and app.EmptyFunction or
+		function(t)
+			return app.IsAccountCached("SourceItemsOnCharacter", t.sourceID)
+		end,
 		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
 		["itemID"] = function(t)
 			if t.__autolink then return; end
@@ -1000,10 +1004,35 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		app.WipeSearchCache();
 	end
 end
+
+local function CheckForUnknownSourceID(link)
+	local sourceID = GetSourceID(link)
+	if not sourceID then
+		-- app.PrintDebug("No SourceID",link)
+		return
+	end
+	if app.IsAccountCached("Sources", sourceID) then
+		-- app.PrintDebug("Learned SourceID",sourceID,link)
+		return
+	end
+
+	-- TODO: clean out this table by removing known sourceIDs eventually
+	-- TODO: add information type to show character which has the item
+	app.SetAccountCached("SourceItemsOnCharacter",sourceID,app.GUID)
+	-- app.PrintDebug("Unlearned SourceID!",sourceID,link)
+	return
+end
+local function CheckForBoundSourceItems()
+	app.ScanInventory(CheckForUnknownSourceID)
+end
 app.AddEventHandler("OnStartup", function()
 	-- TODO: app.AddEventRegistration
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
+
+	if app.IsRetail then
+		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 5)
+	end
 
 	local conversions = app.Settings.InformationTypeConversionMethods;
 	conversions.sourceID = function(sourceID)
@@ -1016,7 +1045,15 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	ATTAccountWideData = accountWideData
 	if not accountWideData.Sources then accountWideData.Sources = {}; end
 	AccountSources = ATTAccountWideData.Sources
+
+	if not accountWideData.SourceItemsOnCharacter then accountWideData.SourceItemsOnCharacter = {}; end
 end);
+
+if app.IsRetail then
+	app.AddEventRegistration("BANKFRAME_OPENED", function()
+		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
+	end)
+end
 
 -- Extend the Filter Module to include ItemSource
 app.Modules.Filter.Set.ItemSource = function(useUnique, useMainOnly)

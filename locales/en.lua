@@ -516,7 +516,8 @@ for key, value in pairs({
 	["SAVED"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Saved|r";	-- Acquired the colors and icon from CanIMogIt.
 	["COST_ICON"] = "|T" .. app.asset("Currency") .. ":0|t";
 	["COST_TEXT"] = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
-	-- TODO @DeadSerious: NEED GOOD UPGRADE ICON
+	["COLLECTED_WARBAND_ICON"] = "|T" .. app.asset("known_circle_yellow") .. ":0|t";
+	["COLLECTED_WARBAND"] = "|T" .. app.asset("known_circle_yellow") .. ":0|t |cfff0e341Future Warband Collected|r";
 	["UPGRADE_ICON"] = "|T" .. app.asset("Interface_Upgrade") .. ":0|t";
 	["UPGRADE_TEXT"] = "|T" .. app.asset("Interface_Upgrade") .. ":0|t |cff62e37e"..UPGRADE.."|r";
 	["REAGENT_ICON"] = "|T" .. app.asset("Interface_Reagent") .. ":0|t";

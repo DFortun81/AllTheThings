@@ -16,6 +16,7 @@ local RETRIEVING_DATA = RETRIEVING_DATA
 -- Module locals
 local RetrievingTexts = {
 	[""] = true,
+	["[]"] = true,
 	-- not sure Classic builds have all of these strings
 	[RETRIEVING_DATA or "Retrieving data"] = true,
 	[RETRIEVING_INVITE_LIST or "Retrieving invite list"] = true,
