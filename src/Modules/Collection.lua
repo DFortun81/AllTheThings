@@ -149,13 +149,11 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	local function SetAccountCached(field, id, state)
 		accountWideData[field][id] = state
 	end
-	-- Assigns the cached status for this Account for a given field by running a check function against each id/value saved
+	-- Assigns the cached status for this Account for a given field by running a check function against a given cache container
 	local function SetAccountCachedByCheck(field, check)
 		-- app.PrintDebug("SACBC",field,check)
 		local container = accountWideData[field]
-		for id,val in pairs(container) do
-			container[id] = check(id,val)
-		end
+		check(container)
 	end
 	-- Returns the tracked status for this Account for a given field ID
 	local function IsAccountTracked(field, id, setting)

@@ -1021,14 +1021,15 @@ local function CheckForUnknownSourceID(link)
 	-- app.PrintDebug("Unlearned SourceID!",sourceID,link)
 	return
 end
-local function ClearIfMyGuid(id, val)
-	if val == app.GUID then
-		return nil
+local function ClearIfMyGuid(container)
+	local guid = app.GUID
+	for id,val in pairs(container) do
+		if val == guid then
+			container[id] = nil
+		end
 	end
-	return val
 end
 local function CheckForBoundSourceItems()
-	app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)
 	app.ScanInventory(CheckForUnknownSourceID)
 end
 app.AddEventHandler("OnStartup", function()
@@ -1057,6 +1058,7 @@ end);
 
 if app.IsRetail then
 	app.AddEventRegistration("BANKFRAME_OPENED", function()
+		app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)
 		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
 	end)
 end
