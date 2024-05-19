@@ -68,12 +68,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(REWARDS, {
 				filter(HELD_IN_OFF_HAND, {
+					i(215676),	-- Hopebringer's Lantern
 					i(216441),	-- Pandaren Manual
 				}),
 				filter(ONE_HANDED_AXES, {
 					i(215485),	-- Shomi's Hatchet
 				}),
 				filter(ONE_HANDED_SWORDS, {
+					i(215941),	-- Faded Forest Sword
 					i(216476),	-- Temple Trainee's Edge
 				}),
 				filter(TWO_HANDED_MACES, {

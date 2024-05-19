@@ -6225,8 +6225,6 @@ root(ROOTS.Unsorted, {
 					i(219219),	-- Timerunner's Starter Kit
 					i(219220),	-- Catch Up Thread
 					i(219222),	-- Time-Lost Artifact
-					i(223910),	-- Bronze Cache
-					i(223911),	-- Greater Bronze Cache
 					i(223953),	-- Timerunner's Parting Pack
 					i(224003),	-- Cup of Nearly Infinite Kafa
 					i(224009),	-- Survivalist's Biscuit
@@ -6438,7 +6436,6 @@ root(ROOTS.Unsorted, {
 					i(215673),	-- Zephyrcall Censer
 					i(215674),	-- Zephyrcall Censer
 					i(215675),	-- Wakener's Lantern
-					i(215676),	-- Hopebringer's Lantern
 					i(215677),	-- Jinyu's Light
 					i(215678),	-- Grummle Lantern
 					i(215680),	-- Hope's Effigy
@@ -6660,7 +6657,6 @@ root(ROOTS.Unsorted, {
 					i(215938),	-- Cloudfall Edge
 					i(215939),	-- Mogu Aspirant's Blade
 					i(215940),	-- Halcyon Blade
-					i(215941),	-- Faded Forest Sword
 					i(215943),	-- Wasteland Scimitar
 					i(215944),	-- Harmonious Scimitar
 					i(215945),	-- Binan Scimitar

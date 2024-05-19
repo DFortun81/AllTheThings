@@ -628,8 +628,12 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				},
 			}),
 			o(213650, {	-- Virmen Treasure Cache
+				["description"] = "Has a respawn timer of approx 7 minutes.",
 				["questID"] = 31405,
-				["coord"] = { 23.2, 30.8, VALLEY_OF_THE_FOUR_WINDS },
+				["coords"] = {
+					{ 23.2, 30.8, VALLEY_OF_THE_FOUR_WINDS },
+					{ 23.8, 28.4, VALLEY_OF_THE_FOUR_WINDS },
+				},
 			}),
 		}),
 		petbattle(ach(6606,  {	-- Taming Pandaria

@@ -476,7 +476,7 @@ localize(L.HEADER_NAMES, {
 	[-1000036] = WARDROBE_SETS,
 	[-1000037] = SPECIAL,
 	[-1000038] = "Treasures",
-	[-1000039] = BATTLE_PET_SOURCE_3,
+	[-1000039] = TUTORIAL_TITLE20,
 	[-1000040] = "Weapon Master",
 	[-1000042] = WORLD.." "..RAID_BOSSES,
 	[-1000044] = ZONE.." "..BATTLE_PET_SOURCE_1,
@@ -11364,6 +11364,7 @@ if simplifiedLocale == "zh" then
 localize(L.HEADER_NAMES, {
 	[-1000013] = "常规商人物品",
 	[-1000019] = "勘探",
+	[-1000039] = "商人",
 	[-1000040] = "武器大师",
 	[-1000048] = "梦魇之龙",
 	[-1000055] = "限时事件",

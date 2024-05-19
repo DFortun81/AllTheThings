@@ -1168,6 +1168,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 78.2, 32.8, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56312 },	-- Shang Thunderfoot
 						["g"] = {
+							i(75208),	-- Rancher's Lariat (QI!)
 							i(81824),	-- Hawk Feather Band
 							i(81825),	-- Lariat Loop
 							i(81826),	-- Shepherd's Loop
@@ -1325,7 +1326,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 68.9, 43.3, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56138 },	-- Li Li
 						["g"] = {
-							i(88376),	-- Orange Painted Turnip
+							i(76370),	-- Orange-Painted Turnip (QI!)
+							i(88376),	-- Orange Painted Turnip (TOY!)
 						},
 					}),
 					q(30049, {	-- Doesn't Hold Water
@@ -1402,6 +1404,13 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 52.7, 62.9, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 57211 },	-- Grainlord Kai
+						["groups"] = {
+							o_repeated({
+								i(77033),	-- Sack of Grain (QI!)
+								o(210001),	-- Stolen Malt Sack
+								o(210002),	-- Stolen Barley Sack
+							}),
+						},
 					}),
 					q(29919, {	-- Great Minds Drink Alike
 						["sourceQuests"] = { 29918 },	-- A Lesson in Bravery
@@ -1549,6 +1558,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 68.7, 43.1, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56474 },	-- Mudmug
 						["g"] = {
+							i(76362),	-- Mudmug's Vial (QI!)
+							o(209921, {	-- Muddy Water
+								i(76356),	-- Stoppered Vial of Muddy Water (QI!)
+							}),
 							i(81778),	-- Silkmaster's Satin Treads
 							i(81779),	-- Sunsoaked Footguards
 							i(81780),	-- Huangtze Scale Sabatons
@@ -1962,6 +1975,11 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 68.7, 43.2, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56474 },	-- Mudmug
+						["groups"] = {
+							o(211696, {	-- Stolen Sack of Hops
+								i(76337),	-- Stolen Sack of Hops (QI!)
+							}),
+						},
 					}),
 					q(31937, {	-- "Thunder King" Pest Repellers
 						["sourceQuests"] = { 30523 },	-- Growing the Farm II: The Broken Wagon
@@ -2062,6 +2080,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 68.9, 43.3, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56138 },	-- Li Li
 						["g"] = {
+							o(209907, {	-- Meadow Marigold
+								i(76334),	-- Meadow Marigold (QI!)
+							}),
+							i(76335),	-- Vial of Animal Blood (QI!)
 							i(88377),	-- Turnip Paint "Gun" (TOY!)
 						},
 					}),

@@ -15,6 +15,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		i(211279, {	-- Cache of Infinite Treasure
 			i(210526),	-- Unraveling Tunic (QI!)
 		}),
+		
+		i(223910),	-- Bronze Cache
+		i(223911),	-- Greater Bronze Cache
 
 		------ Common Thread ------
 		i(210984),	-- Thread of Critical Strike
