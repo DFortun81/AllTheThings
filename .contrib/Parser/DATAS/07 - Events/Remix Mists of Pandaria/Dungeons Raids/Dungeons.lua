@@ -33,6 +33,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			filter(DAGGERS, {
 				i(215613),	-- Mogu Lord's Blade
 			}),
+			filter(FIST_WEAPONS, {
+				i(215645),	-- Tian Handblade
+			}),
 			filter(ONE_HANDED_SWORDS, {
 				i(215954),	-- Kor'dok's Sword
 			}),
@@ -40,6 +43,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215806),	-- Ghostheart Warspear
 			}),
 			filter(STAVES, {
+				i(215879),	-- Mountainsage Spire
 				i(215875),	-- Staff of Stolen Hope
 			}),
 		}),

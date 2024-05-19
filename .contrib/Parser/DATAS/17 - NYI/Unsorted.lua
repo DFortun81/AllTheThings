@@ -5956,10 +5956,8 @@ root(ROOTS.Unsorted, {
 					}),
 					filter(LEATHER, {
 						------ Mogubreaker Battlegear (Red) ------
-						i(214047),	-- Tidesplitter Cap
 						i(214050),	-- Tidesplitter Cinch
 						i(214046),	-- Tidesplitter Handguards
-						i(214044),	-- Tidesplitter Jerkin
 						i(214049),	-- Tidesplitter Mantle
 						i(214048),	-- Tidesplitter Pants
 						i(214045),	-- Tidesplitter Treads
@@ -6436,7 +6434,6 @@ root(ROOTS.Unsorted, {
 					i(215642),	-- Fangs of Despair
 					i(215643),	-- Klaxxi Pincers
 					i(215644),	-- Amber Claw
-					i(215645),	-- Tian Handblade
 					i(215646),	-- Claw of the Fallen Temple
 					i(215647),	-- Ka'eng, Fang of Shadow
 					i(215648),	-- Ner'onok's Katar
@@ -6520,14 +6517,12 @@ root(ROOTS.Unsorted, {
 					i(215727),	-- Galvanized Stormcrusher
 					i(215728),	-- Galvanized Stormcrusher
 					i(215729),	-- Galvanized Stormcrusher
-					i(215730),	-- Galvanized Stormcrusher
 					i(215731),	-- Tihan, Scepter of the Sleeper
 					i(215732),	-- Tihan, Scepter of the Sleeper
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215734),	-- Kri'tak, Scepter of the Swarm
 					i(215735),	-- Kri'tak, Scepter of the Swarm
 					i(215736),	-- Kri'tak, Scepter of the Swarm
-					i(215737),	-- Kri'tak, Scepter of the Swarm
 					i(215738),	-- Grummle Mace
 					i(215739),	-- Shomi's Scepter
 					i(215740),	-- Jinyu Bonebreaker
@@ -6625,10 +6620,8 @@ root(ROOTS.Unsorted, {
 					i(215844),	-- Waterspeaker's Staff
 					i(215845),	-- Waterspeaker's Staff
 					i(215846),	-- Waterspeaker's Staff
-					i(215847),	-- Fearspeaker's Warstaff
 					i(215848),	-- Fearspeaker's Warstaff
 					i(215849),	-- Fearspeaker's Warstaff
-					i(215850),	-- Fearspeaker's Warstaff
 					i(215851),	-- Gao-Rei, Staff of the Protector
 					i(215852),	-- Gao-Rei, Staff of the Protector
 					i(215853),	-- Gao-Rei, Staff of the Protector
@@ -6651,9 +6644,7 @@ root(ROOTS.Unsorted, {
 					i(215876),	-- Mistdancer's Rod
 					i(215877),	-- Cloudscorcher Staff
 					i(215878),	-- Springrain Spire
-					i(215879),	-- Mountainsage Spire
 					i(215880),	-- Darkstaff of Ruin
-					i(215881),	-- Gustspinner's Staff
 					i(215882),	-- Lorewalker's Staff
 					i(215883),	-- Greatstaff of the Path
 					i(215884),	-- Firedancer's Staff
@@ -6696,14 +6687,12 @@ root(ROOTS.Unsorted, {
 					i(215922),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
 					i(215924),	-- Shao-Tien Saber
-					i(215925),	-- Scimitar of Seven Stars
 					i(215926),	-- Scimitar of Seven Stars
 					i(215927),	-- Scimitar of Seven Stars
 					i(215928),	-- Scimitar of Seven Stars
 					i(215929),	-- Kilrak, Fangs of Terror
 					i(215930),	-- Kilrak, Fangs of Terror
 					i(215931),	-- Kilrak, Fangs of Terror
-					i(215932),	-- Kilrak, Fangs of Terror
 					i(215933),	-- Loshan, Fear Incarnate
 					i(215934),	-- Loshan, Fear Incarnate
 					i(215935),	-- Loshan, Fear Incarnate

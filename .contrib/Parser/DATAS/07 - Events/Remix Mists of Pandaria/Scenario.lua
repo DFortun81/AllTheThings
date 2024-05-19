@@ -44,6 +44,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215786),	-- Lerah's Maul
 			}),
 			filter(STAVES, {
+				i(215881),	-- Gustspinner's Staff
 				i(215885),	-- Teachings of Shaohao
 			}),
 		}),
@@ -67,6 +68,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(214055),	-- Brushstalker Leggings
 				i(214054),	-- Brushstalker Shoulderpads
 				i(214059),	-- Brushstalker Tunic
+				i(214047),	-- Tidesplitter Cap
+				i(214044),	-- Tidesplitter Jerkin
 			}),
 			filter(MAIL, {
 				i(214420),	-- Waterburst Breastplate

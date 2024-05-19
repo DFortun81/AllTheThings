@@ -18,9 +18,21 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				filter(ONE_HANDED_AXES, {
 					i(215482),	-- Elegion, the Star Cleaver
 				}),
+				filter(ONE_HANDED_MACES, {
+					i(215730),	-- Galvanized Stormcrusher
+					i(215737),	-- Kri'tak, Scepter of the Swarm
+				}),
+				filter(ONE_HANDED_SWORDS, {
+					i(215932),	-- Kilrak, Fangs of Terror
+					i(215925),	-- Scimitar of Seven Stars
+				}),
 				filter(SHIELDS, {
 					i(216529),	-- Protection of the Emperor
 					i(216561),	-- Steelskin, Qiang's Bulwark
+				}),
+				filter(STAVES, {
+					i(215847),	-- Fearspeaker's Warstaff
+					i(215850),	-- Fearspeaker's Warstaff
 				}),
 			}),
 		}),

@@ -106,11 +106,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(45, {	-- Nethergarde Keep, Blasted Lands
 					["cr"] = 8609,	-- Alexandra Constantine <Gryphon Master>
-					-- #if AFTER CATA
-					["coord"] = { 61.2, 21.6, BLASTED_LANDS },
-					-- #else
-					["coord"] = { 65.6, 24.4, BLASTED_LANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.2, 21.6, BLASTED_LANDS },
+						-- #else
+						{ 65.6, 24.4, BLASTED_LANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(603, {	-- Sunveil Excursion, Blasted Lands
@@ -1759,21 +1761,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(8299, {	-- Spiteflayer
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 63.4, 33.0, BLASTED_LANDS },
 						{ 60.0, 34.2, BLASTED_LANDS },
 						{ 59.0, 38.2, BLASTED_LANDS },
 						{ 61.4, 40.6, BLASTED_LANDS },
 						{ 64.4, 38.0, BLASTED_LANDS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 60.8, 35.2, BLASTED_LANDS },
 						{ 59.2, 40.6, BLASTED_LANDS },
 						{ 60.0, 46.8, BLASTED_LANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(7846, {	-- Teremus the Devourer
 					-- #if AFTER CATA
@@ -1815,11 +1815,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(VENDORS, {
 				-- #if AFTER TBC
 				n(3546, {	-- Bernie Heisten <Food & Drink>
-					-- #if BEFORE CATA
-					["coord"] = { 63.5, 17.0, BLASTED_LANDS },
-					-- #else
-					["coord"] = { 59.4, 14.9, BLASTED_LANDS },
-					-- #endif
+					["coords"] = {
+						-- #if BEFORE CATA
+						{ 63.5, 17.0, BLASTED_LANDS },
+						-- #else
+						{ 59.4, 14.9, BLASTED_LANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(23848, {	-- Nethergarde Bitter
@@ -1830,11 +1832,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(8178, {	-- Nina Lightbrew <Alchemy Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 62.4, 16.0, BLASTED_LANDS },
-					-- #else
-					["coord"] = { 66.8, 18.6, BLASTED_LANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 62.4, 16.0, BLASTED_LANDS },
+						-- #else
+						{ 66.8, 18.6, BLASTED_LANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(9300, {	-- Recipe: Elixir of Demonslaying (RECIPE!)

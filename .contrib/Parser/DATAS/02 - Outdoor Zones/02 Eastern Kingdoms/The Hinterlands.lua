@@ -1908,32 +1908,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				n(8215, {	-- Grimungous
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 71.6, 62.6, THE_HINTERLANDS },
 						{ 73.8, 55.8, THE_HINTERLANDS },
 						{ 78.6, 50.8, THE_HINTERLANDS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 63.8, 48.4, THE_HINTERLANDS },
 						{ 68.2, 50.2, THE_HINTERLANDS },
 						{ 62.8, 55.0, THE_HINTERLANDS },
 						{ 70.2, 59.8, THE_HINTERLANDS },
 						{ 74.6, 50.0, THE_HINTERLANDS },
 						{ 75.0, 56.0, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8213, {	-- Ironback
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 80.2, 58.2, THE_HINTERLANDS },
 						{ 81.0, 55.4, THE_HINTERLANDS },
 						{ 79.4, 56.6, THE_HINTERLANDS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 82.2, 44.8, THE_HINTERLANDS },
 						{ 81.6, 48.8, THE_HINTERLANDS },
 						{ 79.8, 61.2, THE_HINTERLANDS },
@@ -1942,33 +1938,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 76.8, 81.0, THE_HINTERLANDS },
 						{ 75.0, 88.8, THE_HINTERLANDS },
 						{ 73.4, 91.4, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8214, {	-- Jalinde Summerdrake
-					-- #if AFTER CATA
-					["coord"] = { 34.6, 55.2, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 34.6, 55.2, THE_HINTERLANDS },
+						-- #else
 						{ 27.8, 44.0, THE_HINTERLANDS },
 						{ 28.6, 46.6, THE_HINTERLANDS },
 						{ 31.6, 49.6, THE_HINTERLANDS },
 						{ 31.2, 43.6, THE_HINTERLANDS },
 						{ 32.8, 44.6, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
 				n(8217, {	-- Mith'rethis the Enchanter
-					-- #if AFTER CATA
-					["coord"] = { 64.8, 81.6, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.8, 81.6, THE_HINTERLANDS },
+						-- #else
 						{ 58.8, 71.2, THE_HINTERLANDS },
 						{ 59.8, 77.4, THE_HINTERLANDS },
 						{ 66.8, 80.2, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(17050, {	-- Chan's Imperial Robes
 							["timeline"] = { REMOVED_4_0_3, ADDED_9_0_1 },
@@ -1976,16 +1972,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(8211, {	-- Old Cliff Jumper
-					-- #if AFTER CATA
-					["coord"] = { 13.6, 53.8, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 13.6, 53.8, THE_HINTERLANDS },
+						-- #else
 						{ 17.0, 54.6, THE_HINTERLANDS },
 						{ 19.0, 50.6, THE_HINTERLANDS },
 						{ 30.6, 49.4, THE_HINTERLANDS },
 						{ 22.6, 52.4, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(107617, {	-- Ol' Muddle
 					["description"] = "This rare wanders the eastern portion of the zone, coords provide general areas to look for this rare.",
@@ -2007,66 +2003,64 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(8210, {	-- Razortalon
-					-- #if AFTER CATA
-					["coord"] = { 66.2, 53.6, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 66.2, 53.6, THE_HINTERLANDS },
+						-- #else
 						{ 27.0, 54.8, THE_HINTERLANDS },
 						{ 27.0, 66.0, THE_HINTERLANDS },
 						{ 37.8, 44.2, THE_HINTERLANDS },
 						{ 36.8, 51.2, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8216, {	-- Retherokk the Berserker
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 47.6, 66.4, THE_HINTERLANDS },
 						{ 48.6, 68.4, THE_HINTERLANDS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 44.6, 67.4, THE_HINTERLANDS },
 						{ 46.8, 70.2, THE_HINTERLANDS },
 						{ 46.4, 64.6, THE_HINTERLANDS },
 						{ 51.2, 65.6, THE_HINTERLANDS },
 						{ 50.4, 60.4, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8212, {	-- The Reak
-					-- #if AFTER CATA
-					["coord"] = { 57.5, 42.6, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.5, 42.6, THE_HINTERLANDS },
+						-- #else
 						{ 46.8, 40.4, THE_HINTERLANDS },
 						{ 49.4, 53.0, THE_HINTERLANDS },
 						{ 58.0, 41.6, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8218, {	-- Witherheart the Stalker
-					-- #if AFTER CATA
-					["coord"] = { 39.8, 66.6, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 39.8, 66.6, THE_HINTERLANDS },
+						-- #else
 						{ 34.2, 68.4, THE_HINTERLANDS },
 						{ 31.4, 73.0, THE_HINTERLANDS },
 						{ 34.0, 75.6, THE_HINTERLANDS },
 						{ 35.0, 74.0, THE_HINTERLANDS },
 						{ 33.8, 73.2, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8219, {	-- Zul'arek Hatefowler
-					-- #if AFTER CATA
-					["coord"] = { 24.8, 65.6, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 24.8, 65.6, THE_HINTERLANDS },
+						-- #else
 						{ 24.2, 57.4, THE_HINTERLANDS },
 						{ 32.8, 57.6, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 			}),
 			n(VENDORS, {
@@ -2093,11 +2087,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(8161, {	-- Harggan <Blacksmithing Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 13.6, 44.8, THE_HINTERLANDS },
-					-- #else
-					["coord"] = { 13.4, 44.1, THE_HINTERLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 13.6, 44.8, THE_HINTERLANDS },
+						-- #else
+						{ 13.4, 44.1, THE_HINTERLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7995, {	-- Plans: Mithril Scale Bracers (RECIPE!)

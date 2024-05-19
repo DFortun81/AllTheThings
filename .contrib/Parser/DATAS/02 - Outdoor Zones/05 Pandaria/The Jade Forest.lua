@@ -888,6 +888,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29723 },	-- The Jade Witch
 						["provider"] = { "n", 56348 },	-- Toya
 						["coord"] = { 47.1, 46.1, THE_JADE_FOREST },
+						["groups"] = {
+							i(76483),	-- Scavenged Jade (QI!)
+						},
 					}),
 					q(29576, {	-- An Air of Worry
 						["isBreadcrumb"] = true,
@@ -1473,6 +1476,11 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29925 },	-- All We Can Spare
 						["provider"] = { "n", 56346 },	-- Foreman Mann
 						["coord"] = { 50.9, 27.0, THE_JADE_FOREST },
+						["groups"] = {
+							o(209863, {	-- Chunk of Jade
+								i(76209),	-- Chunk of Jade (QI!)
+							}),
+						},
 					}),
 					q(31134, {	-- If These Stones Could Speak
 						["sourceQuests"] = { 31132 },	-- A Mile in my Shoes
@@ -2330,6 +2338,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29932 },	-- The Temple of the Jade Serpent
 						["provider"] = { "n", 56782 },	-- Elder Sage Rain-Zhu
 						["coord"] = { 58.1, 58.6, THE_JADE_FOREST },
+						["groups"] = {
+							i(76725),	-- Scryer's Staff (QI!)
+						},
 					}),
 					q(31303, {	-- The Seal is Broken
 						["sourceQuests"] = {
