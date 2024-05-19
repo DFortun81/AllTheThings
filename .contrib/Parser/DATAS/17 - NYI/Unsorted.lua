@@ -6413,7 +6413,6 @@ root(ROOTS.Unsorted, {
 					i(215650),	-- Pandaren Claw
 					i(215651),	-- Pandaren Fist
 					i(215652),	-- Amun-Thoth, Sul's Spiritrender
-					i(215653),	-- Amun-Thoth, Sul's Spiritrender
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
 					i(215655),	-- Amun-Thoth, Sul's Spiritrender
 					i(215656),	-- Hozen Fetish
@@ -6736,7 +6735,6 @@ root(ROOTS.Unsorted, {
 					i(216024),	-- Pandaren Hewer
 					i(216025),	-- Pandaren Cleaver
 					i(216400),	-- Tia-Tia, the Spinning Star
-					i(216401),	-- Tia-Tia, the Spinning Star
 					i(216402),	-- Tia-Tia, the Spinning Star
 					i(216403),	-- Tia-Tia, the Spinning Star
 					i(216404),	-- Blade of the Sanguine Ritual
@@ -6758,7 +6756,6 @@ root(ROOTS.Unsorted, {
 					i(216422),	-- Pandaren Smasher
 					i(216424),	-- Pandaren Breaker
 					i(216425),	-- Acid-Spine Bonebreaker
-					i(216426),	-- Acid-Spine Bonebreaker
 					i(216427),	-- Acid-Spine Bonebreaker
 					i(216428),	-- Torall, the Emperor's Scepter
 					i(216429),	-- Torall, the Emperor's Scepter
@@ -6862,7 +6859,6 @@ root(ROOTS.Unsorted, {
 					i(216587),	-- Shield of the Gloaming
 					i(216588),	-- Shield of the Gloaming
 					i(216589),	-- Tortos' Shell
-					i(216590),	-- Tortos' Shell
 					i(216591),	-- Tortos' Shell
 					i(216592),	-- Tortos' Shell
 					i(216593),	-- Bulwark of Twinned Despair

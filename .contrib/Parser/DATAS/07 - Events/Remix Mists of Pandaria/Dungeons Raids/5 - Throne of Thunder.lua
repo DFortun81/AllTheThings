@@ -315,8 +315,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			d(DIFFICULTY.RAID.NORMAL, {
 				n(WEAPONS, {
+					filter(FIST_WEAPONS, {
+						i(215653),	-- Amun-Thoth, Sul's Spiritrender
+						i(216401),	-- Tia-Tia, the Spinning Star
+					}),
 					filter(ONE_HANDED_AXES, {
 						i(215499),	-- Kura-Kura, Kazra'jin's Headtaker
+					}),
+					filter(ONE_HANDED_MACES, {
+						i(216426),	-- Acid-Spine Bonebreaker
+					}),
+					filter(SHIELDS, {
+						i(216590),	-- Tortos' Shell
 					}),
 					filter(STAVES, {
 						i(216464),	-- Dinomancer's Spire
