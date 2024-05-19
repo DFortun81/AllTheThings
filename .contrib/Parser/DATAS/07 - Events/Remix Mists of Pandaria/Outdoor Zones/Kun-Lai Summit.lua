@@ -86,6 +86,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(DAGGERS, {
+					i(210335),	-- Shado-Pan Dagger
+				}),
+				filter(HELD_IN_OFF_HAND, {
+					i(215681),	-- Crane's Beak Effigy
+				}),
+				filter(STAVES, {
+					i(215869),	-- Waterweaver's Staff
+				}),
 				filter(LEATHER, {
 					i(214095),	-- Mistveil Cap
 					i(214097),	-- Mistveil Cinch

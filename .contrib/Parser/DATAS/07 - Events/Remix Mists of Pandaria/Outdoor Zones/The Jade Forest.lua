@@ -159,6 +159,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(REWARDS, {
 				filter(DAGGERS, {
 					i(216418),	-- Hozen Dagger
+					i(215595),	-- Saltscale Shanker
+					i(215601),	-- Spike of the Rikkitun
+				}),
+				filter(HELD_IN_OFF_HAND, {
+					i(216438),	-- Pandaren Manuscript
 				}),
 				filter(ONE_HANDED_AXES, {
 					i(215487),	-- Hozen Waraxe
@@ -167,11 +172,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215747),	-- Mace of the Rikkitun
 				}),
 				filter(FIST_WEAPONS, {
+					i(215641),	-- Claws of the Wakener
 					i(211163),	-- Hidden Pass Knuckles
 				}),
 				filter(STAVES, {
+					i(215871),	-- Amberweaver's Conduit
+					i(215679),	-- Golden Crane Rod
 					i(215866),	-- Staff of Focus
+					i(216471),	-- Tian Monastery Channel
 					i(215863),	-- Torch of Midnight
+				}),
+				filter(TWO_HANDED_MACES, {
+					i(215780), -- Hatred's Warmace
 				}),
 				filter(CLOTH, {
 					i(213668),	-- Spirit-Waker's Bracers

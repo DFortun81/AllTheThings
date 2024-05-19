@@ -230,6 +230,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(ONE_HANDED_MACES, {
+					i(215776),	-- Zeeg's Ancient Kegbreaker
+				}),
 				filter(LEATHER, {
 					i(214387),	-- Snowdrift Bindings
 					i(214390),	-- Snowdrift Cover

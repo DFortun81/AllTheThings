@@ -6385,13 +6385,11 @@ root(ROOTS.Unsorted, {
 					i(215592),	-- Soulsever
 					i(215593),	-- Soulsever
 					i(215594),	-- Warbringer's Blade
-					i(215595),	-- Saltscale Shanker
 					i(215596),	-- Jadestone Dagger
 					i(215597),	-- Mushan Slicer
 					i(215598),	-- Regal Slicer
 					i(215599),	-- Mountainscaler Slicer
 					i(215600),	-- Grummle Shortblade
-					i(215601),	-- Spike of the Rikkitun
 					i(215602),	-- Spiritbound Stabber
 					i(215603),	-- Sha-Warped Slicer
 					i(215604),	-- Mogu Severer
@@ -6466,9 +6464,7 @@ root(ROOTS.Unsorted, {
 					i(215676),	-- Hopebringer's Lantern
 					i(215677),	-- Jinyu's Light
 					i(215678),	-- Grummle Lantern
-					i(215679),	-- Golden Crane Rod
 					i(215680),	-- Hope's Effigy
-					i(215681),	-- Crane's Beak Effigy
 					i(215682),	-- Swarmkeeper's Channel
 					i(215684),	-- Mantid Tuning Fork
 					i(215685),	-- Klaxxi Channeling Fork
@@ -6528,7 +6524,6 @@ root(ROOTS.Unsorted, {
 					i(215741),	-- Bloodseeker's Bonebreaker
 					i(215742),	-- Faded Forest Crusher
 					i(215743),	-- Sunsoul Smasher
-					i(215744),	-- Cloudfall Scepter
 					i(215745),	-- Wasteland Basher
 					i(215746),	-- Bearheart's Basher
 					i(215748),	-- Fireblaze Mace
@@ -6558,11 +6553,9 @@ root(ROOTS.Unsorted, {
 					i(215773),	-- Zeeg's Ancient Kegbreaker
 					i(215774),	-- Zeeg's Ancient Kegbreaker
 					i(215775),	-- Zeeg's Ancient Kegbreaker
-					i(215776),	-- Zeeg's Ancient Kegbreaker
 					i(215777),	-- Gar'tok, Might of the Faithful
 					i(215778),	-- Gar'tok, Might of the Faithful
 					i(215779),	-- Gar'tok, Might of the Faithful
-					i(215780),	-- Hatred's Warmace
 					i(215782),	-- Wasteland Maul
 					i(215783),	-- Shado-Pan Maul
 					i(215784),	-- Taran Zhu's Bonebreaker
@@ -6635,7 +6628,6 @@ root(ROOTS.Unsorted, {
 					i(215864),	-- Torch of Dawn
 					i(215865),	-- Fogspeaker Conduit
 					i(215868),	-- Monastic Staff
-					i(215869),	-- Waterweaver's Staff
 					i(215872),	-- Amberweaver's Spire
 					i(215873),	-- Amberweaver's Staff
 					i(215874),	-- Staff of Iron Will
@@ -6814,10 +6806,8 @@ root(ROOTS.Unsorted, {
 					i(216435),	-- Hammer of the Dawn
 					i(216436),	-- Hammer of the Dawn
 					i(216437),	-- Hammer of the Dawn
-					i(216438),	-- Pandaren Manuscript
 					i(216439),	-- Pandaren Book
 					i(216440),	-- Pandaren Tome
-					i(216441),	-- Pandaren Manual
 					i(216442),	-- Pandaren Decorative Fan
 					i(216443),	-- Pandaren Ornate Fan
 					i(216444),	-- Pandaren Ritual Fan
@@ -7145,7 +7135,6 @@ root(ROOTS.Unsorted, {
 					i(210643),	-- Mistspinner's Channel
 					i(210638),	-- Mushan Hewer
 					i(211149),	-- Rikkitun Warbow
-					i(210335),	-- Shado-Pan Dagger
 					i(210634),	-- Shield of the Wakener
 					i(211161),	-- Sphere of Immerseus
 					i(210338),	-- Spire of Supremacy
