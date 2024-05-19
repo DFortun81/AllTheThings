@@ -6874,7 +6874,6 @@ root(ROOTS.Unsorted, {
 					i(216578),	-- Impervious Bulwark
 					i(216579),	-- Shield of the Devourer
 					i(216580),	-- Skyrider's Shield
-					i(216581),	-- Deflector of the Protectorate
 					i(216582),	-- Bulwark of the Protectorate
 					i(216583),	-- Shield of the Protectorate
 					i(216584),	-- Barrier of the Protectorate

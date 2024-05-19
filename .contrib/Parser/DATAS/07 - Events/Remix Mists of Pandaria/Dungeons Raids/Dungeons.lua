@@ -48,6 +48,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			filter(POLEARMS, {
 				i(215806),	-- Ghostheart Warspear
 			}),
+			filter(SHIELDS, {
+				i(216581),	-- Deflector of the Protectorate
+			}),
 			filter(STAVES, {
 				i(215879),	-- Mountainsage Spire
 				i(215878),	-- Springrain Spire
