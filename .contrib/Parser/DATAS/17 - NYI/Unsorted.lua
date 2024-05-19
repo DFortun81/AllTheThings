@@ -6844,7 +6844,6 @@ root(ROOTS.Unsorted, {
 					i(216559),	-- Steelskin, Qiang's Bulwark
 					i(216560),	-- Steelskin, Qiang's Bulwark
 					i(216562),	-- Steelskin, Qiang's Bulwark
-					i(216563),	-- Gaze of the Ancient
 					i(216564),	-- Gaze of the Ancient
 					i(216565),	-- Gaze of the Ancient
 					i(216566),	-- Gaze of the Ancient

@@ -35,6 +35,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215925),	-- Scimitar of Seven Stars
 				}),
 				filter(SHIELDS, {
+					i(216563),	-- Gaze of the Ancient
 					i(216529),	-- Protection of the Emperor
 					i(216561),	-- Steelskin, Qiang's Bulwark
 				}),
