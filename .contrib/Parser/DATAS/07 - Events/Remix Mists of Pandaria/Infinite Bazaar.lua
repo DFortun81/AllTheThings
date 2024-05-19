@@ -1881,26 +1881,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215277, {	-- Ensemble: Kor'kron Shaman Vestments (Yellow)
 					["cost"] = {{"c", BRONZE, 2500}},
 					["g"] = {
-					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
-						i(105745),	-- Kor'kron Dark Shaman Cowl
-						i(105747),	-- Kor'kron Dark Shaman Shoulder
-						i(105743),	-- Kor'kron Dark Shaman Vestment
-						i(105748),	-- Kor'kron Dark Shaman Bracers
-						i(105744),	-- Kor'kron Dark Shaman Gloves
-						i(105741),	-- Kor'kron Dark Shaman Belt
-						i(105746),	-- Kor'kron Dark Shaman Kilt
-						i(105742),	-- Kor'kron Dark Shaman Treads
-					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
-					-- TODO: Symlink
-						i(214450),	-- Dark Shaman Footguards
-						i(214447),	-- Dark Shaman Girdle
-						i(214448),	-- Dark Shaman Grips
+					-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(214449),	-- Dark Shaman Helmet
-						i(214445),	-- Dark Shaman Legwraps
 						i(214446),	-- Dark Shaman Mantle
 						i(214451),	-- Dark Shaman Vest
 						i(214452),	-- Dark Shaman Wristguards
-					--]]
+						i(214448),	-- Dark Shaman Grips
+						i(214447),	-- Dark Shaman Girdle
+						i(214445),	-- Dark Shaman Legwraps
+						i(214450),	-- Dark Shaman Footguards
 					},
 				}),
 				i(215352, {	-- Ensemble: Robes of Quiet Reflection (Brown)
