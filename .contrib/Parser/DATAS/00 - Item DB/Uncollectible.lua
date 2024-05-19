@@ -1798,6 +1798,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(225813);	-- Darkened Ritual Stone
 --i(225795);	-- Dented Pocketwatch
 --i(220271);	-- Downy Clump
+--i(225836);	-- Drained Elemental Mote
 --i(225792);	-- Elegant Pedipalp Wrappings
 --i(220355);	-- Enlarged Ear
 --i(225814);	-- Feather-on-a-Stick

@@ -257,7 +257,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			-- this is potentially main story quest but they pop in next build (when all zones become available)
-			-- in player journal treater as The War Withing Campaign
+			-- in player journal treated as The War Withing Campaign
 			q(79197, {	-- Surface Bound
 				["sourceQuests"] = { 78248 },	-- Beginning Anew From Rock Bottom / TODO: unsure
 				["provider"] = { "n", 219252 },	-- Alleria Windrunner

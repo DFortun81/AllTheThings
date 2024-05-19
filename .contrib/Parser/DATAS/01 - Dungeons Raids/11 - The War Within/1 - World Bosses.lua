@@ -43,6 +43,23 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					{"select","encounterID",xx,},{"pop"},	-- Original WB
 				},
 			}),
+			e(xx, {	-- Kordac // missing from wb journal list
+				["crs"] = { 221084 },
+				["coord"] = { 48.8, 61.9, ISLE_OF_DORN },
+				--["questID"] = xx,
+				["g"] = sharedData({
+					["modID"] = 3,
+				},{
+					i(),	--
+				}),
+			}),
+			q(81630, {	-- Activation Protocol (WQ)
+				["coord"] = { 48.8, 61.9, ISLE_OF_DORN },
+				["isWorldQuest"] = true,
+				["sym"] = {
+					{"select","encounterID",xx,},{"pop"},	-- Original WB
+				},
+			}),
 		}),
 	}),
 })));

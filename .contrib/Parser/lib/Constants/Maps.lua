@@ -519,8 +519,8 @@ ZARALEK_CAVERN = 2133;
 
 -- The War Within
 AZJ_KAHET = 2255;
-DORNOGAL = 2328;	-- Migth be wrong
+DORNOGAL = 2339;	-- 2328?
 HALLOWFALL = 2215;
-ISLE_OF_DORN = 2248;	-- Migth be wrong
+ISLE_OF_DORN = 2248;
 KHAZ_ALGAR = 2274;	-- Migth be wrong
 THE_RINGING_DEEPS = 2214;

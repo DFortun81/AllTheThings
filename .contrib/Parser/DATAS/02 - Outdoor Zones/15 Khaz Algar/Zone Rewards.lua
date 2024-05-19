@@ -4,6 +4,11 @@
 --[[
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ZONE_REWARDS, {
+		filter(BACK, {
+			--- wqs gear green/blue (move to zone reward if needed)
+			-- Isle of Dorn
+			i(224663),	-- Gem-Woven Shawl
+		}),
 		filter(CLOTH, {
 			--gray items
 			i(220307),	-- Moth-Ridden Robe
@@ -60,7 +65,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--On first opening I recieve:
 			--i(224172), -- Restored Coffer Key
 			--i(224677), -- Lockstitch Headgear // same - unsure if it is locked by zone (The Ringing Deeps) where I loot it or not
-			--hqt - 83280, possibly related to key but dunno
+			--hqt - 83280, possibly related to key but dunno (1st cache)
+			--hqt - 83281, possibly related to key but dunno (2nd cache)
 		}),
 
 	}),
