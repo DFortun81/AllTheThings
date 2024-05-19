@@ -6253,8 +6253,7 @@ root(ROOTS.Unsorted, {
 					i(224010),	-- Survivalist's Purified Water
 					i(224021),	-- Survivalist's Healing Potion
 					i(224022),	-- Survivalist's Mana Potion
-					i(224076),	-- Timerunner's Bow
-					i(224077),	-- Timerunner's Dagger
+
 					i(224120),	-- Timerunner's Gem Box
 					i(220763),	-- Bonus Experience
 					i(220764),	-- Bonus Experience
@@ -6326,7 +6325,6 @@ root(ROOTS.Unsorted, {
 					i(215532),	-- Mogu Warbow
 					i(215533),	-- Marista Longbow
 					i(215534),	-- Shado-Pan Longbow
-					i(215535),	-- Featherdraw Warbow
 					i(215536),	-- Ennadee's Longbow
 					i(215537),	-- Dawnwatcher's Warbow
 					i(215538),	-- Tempestuous Shortbow
@@ -6487,8 +6485,6 @@ root(ROOTS.Unsorted, {
 					i(215702),	-- Howling Rifle
 					i(215703),	-- Pandaren Rifle
 					i(215704),	-- Mantid Firebelcher
-					i(215705),	-- Penate's Pistol
-					i(215706),	-- Klaxxi Ambershot
 					i(215707),	-- Yan-Zhu's Rifle
 					i(215708),	-- Roar of the Quillen
 					i(215709),	-- Roar of the Quillen
@@ -6914,7 +6910,6 @@ root(ROOTS.Unsorted, {
 					i(216599),	-- Eyes of the Doomed
 					i(216600),	-- Eyes of the Doomed
 					i(216601),	-- Eyes of the Doomed
-					i(216611),	-- Seawatch Speargun
 					i(216612),	-- Seawatch Launcher
 					i(216613),	-- Seawatch Repeater
 					i(216614),	-- Seawatch Crossbow

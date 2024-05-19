@@ -30,11 +30,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 		}),
 		n(WEAPONS, {
+			filter(BOWS, {
+				i(215535),	-- Featherdraw Warbow
+			}),
 			filter(DAGGERS, {
 				i(215613),	-- Mogu Lord's Blade
 			}),
 			filter(FIST_WEAPONS, {
 				i(215645),	-- Tian Handblade
+			}),
+			filter(GUNS, {
+				i(215705),	-- Penate's Pistol
 			}),
 			filter(ONE_HANDED_SWORDS, {
 				i(215954),	-- Kor'dok's Sword

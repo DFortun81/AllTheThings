@@ -157,6 +157,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(CROSSBOWS, {
+					i(216611),	-- Seawatch Speargun
+				}),
 				filter(DAGGERS, {
 					i(216418),	-- Hozen Dagger
 					i(215595),	-- Saltscale Shanker
@@ -177,6 +180,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				filter(STAVES, {
 					i(215871),	-- Amberweaver's Conduit
+					i(215859),	-- Faded Forest Staff
 					i(215679),	-- Golden Crane Rod
 					i(215866),	-- Staff of Focus
 					i(216471),	-- Tian Monastery Channel

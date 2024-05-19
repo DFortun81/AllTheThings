@@ -1315,6 +1315,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 			}),
+			n(213661, {	-- Erus <Scrapper>
+				i(224076),	-- Timerunner's Bow
+				i(224077),	-- Timerunner's Dagger
+				i(224075),	-- Timerunner's Greatsword
+				i(224079),	-- Timerunner's Mace
+				i(224078),	-- Timerunner's Shield
+				i(224081),	-- Timerunner's Staff
+				i(224080),	-- Timerunner's Sword
+			}),
 			n(220895, {	-- Grandmaster Jakkus <Class Apparel>
 				-- Note original n(220618 listing in case there are actually multiple
 				cl(DEATHKNIGHT, {
@@ -1968,7 +1977,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214131),	-- Tian Monastery Waistband
 					--]]
 					},
-					
+
 				}),
 				i(215240, {	-- Ensemble: Tian Monastery Clothing (White)
 					["cost"] = {{"c", BRONZE, 1250}},

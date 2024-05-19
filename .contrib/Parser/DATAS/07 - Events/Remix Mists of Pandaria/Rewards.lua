@@ -130,33 +130,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(211101),	-- Perfect Swift Opal
 			i(220373),	-- Perfect Versatile Diamond
 		}),
-		filter(ONE_HANDED_AXES, {
-			-- TODO: sort into correct zone
-			--i(210342),	-- Bataari Hacker
-		}),
-		filter(ONE_HANDED_MACES, {
-			-- TODO: sort into correct zone
-			--i(216423),	-- Pandaren Basher
-			i(224079),	-- Timerunner's Mace
-		}),
-		filter(ONE_HANDED_SWORDS, {
-			-- TODO: sort into correct zone
-			--i(215949),	-- Crane Temple Sword
-			--i(215942),	-- Swordmistress' Edge
-			--i(224080),	-- Timerunner's Sword
-			--i(215946),	-- Valiant's Honorblade
-		}),
-		filter(TWO_HANDED_SWORDS, {
-			i(224075),	-- Timerunner's Greatsword
-		}),
-		filter(SHIELDS, {
-			i(224078),	-- Timerunner's Shield
-		}),
-		filter(STAVES, {
-			-- TODO: sort into correct zone
-			--i(215859),	-- Faded Forest Staff
-			i(224081),	-- Timerunner's Staff
-		}),
 		filter(TRINKET_F, {
 			------ Tinker ------
 			i(219801),	-- Ankh of Reincarnation

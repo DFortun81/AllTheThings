@@ -36,6 +36,40 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(210275),	-- Greenstone Legguards
 			i(210642),	-- Timerunner's Greatsword
 		}),
+		n(REWARDS, {
+			-- These items are in the box you get when you make a new character. Their IDs are different than the starter gear that is on you!
+			filter(ONE_HANDED_AXES, {
+				-- TODO: sort into correct zone
+				--i(210342),	-- Bataari Hacker
+			}),
+			filter(ONE_HANDED_MACES, {
+				-- TODO: sort into correct zone
+				--i(216423),	-- Pandaren Basher
+				i(224079),	-- Timerunner's Mace
+			}),
+			filter(ONE_HANDED_SWORDS, {
+				-- TODO: sort into correct zone
+				--i(215949),	-- Crane Temple Sword
+				--i(215942),	-- Swordmistress' Edge
+				--i(215946),	-- Valiant's Honorblade
+				i(224080),	-- Timerunner's Sword
+			}),
+			filter(BOWS, {
+				i(224076),	-- Timerunner's Bow
+			}),
+			filter(DAGGERS, {
+				i(224077),	-- Timerunner's Dagger
+			}),
+			filter(TWO_HANDED_SWORDS, {
+				i(224075),	-- Timerunner's Greatsword
+			}),
+			filter(SHIELDS, {
+				i(224078),	-- Timerunner's Shield
+			}),
+			filter(STAVES, {
+				i(224081),	-- Timerunner's Staff
+			}),
+		}),
 	}),
 }))));
 

@@ -37,15 +37,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 		}),
 		n(WEAPONS, {
+			filter(GUNS, {
+				i(215706),	-- Klaxxi Ambershot
+			}),
 			filter(ONE_HANDED_MACES, {
 				i(215752),	-- Ced's Basher
-			}),
-			filter(TWO_HANDED_MACES, {
-				i(215786),	-- Lerah's Maul
 			}),
 			filter(STAVES, {
 				i(215881),	-- Gustspinner's Staff
 				i(215885),	-- Teachings of Shaohao
+			}),
+			filter(TWO_HANDED_MACES, {
+				i(215786),	-- Lerah's Maul
 			}),
 		}),
 		n(ARMOR, {

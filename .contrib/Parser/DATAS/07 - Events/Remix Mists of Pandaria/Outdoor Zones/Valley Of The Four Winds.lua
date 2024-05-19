@@ -63,6 +63,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 			}),
+			n(QUESTS, {
+				q(81564),	-- The Story of Noodles
+			}),
 			n(REWARDS, {
 				filter(HELD_IN_OFF_HAND, {
 					i(216441),	-- Pandaren Manual
