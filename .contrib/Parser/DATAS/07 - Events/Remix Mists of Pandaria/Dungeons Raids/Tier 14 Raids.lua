@@ -42,6 +42,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				filter(STAVES, {
 					i(215847),	-- Fearspeaker's Warstaff
 					i(215850),	-- Fearspeaker's Warstaff
+					i(215732),	-- Tihan, Scepter of the Sleeper
 				}),
 			}),
 		}),

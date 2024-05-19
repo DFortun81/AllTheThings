@@ -6488,7 +6488,6 @@ root(ROOTS.Unsorted, {
 					i(215728),	-- Galvanized Stormcrusher
 					i(215729),	-- Galvanized Stormcrusher
 					i(215731),	-- Tihan, Scepter of the Sleeper
-					i(215732),	-- Tihan, Scepter of the Sleeper
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215734),	-- Kri'tak, Scepter of the Swarm
 					i(215735),	-- Kri'tak, Scepter of the Swarm
