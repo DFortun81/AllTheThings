@@ -209,6 +209,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				filter(ONE_HANDED_AXES, {
 					i(216023),	-- Pandaren Hacker
 				}),
+				filter(ONE_HANDED_MACES, {
+					i(215742),	-- Faded Forest Crusher
+				}),
 				filter(STAVES, {
 					i(215858),	-- Diviner's Staff
 				}),
