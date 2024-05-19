@@ -172,11 +172,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215487),	-- Hozen Waraxe
 				}),
 				filter(ONE_HANDED_MACES, {
+					i(216423),	-- Pandaren Basher
 					i(215747),	-- Mace of the Rikkitun
+				}),
+				filter(ONE_HANDED_SWORDS, {
+					i(215949),	-- Crane Temple Sword
 				}),
 				filter(FIST_WEAPONS, {
 					i(215641),	-- Claws of the Wakener
 					i(211163),	-- Hidden Pass Knuckles
+				}),
+				filter(SHIELDS, {
+					i(216542),	-- Pandaren Protector
 				}),
 				filter(STAVES, {
 					i(215871),	-- Amberweaver's Conduit

@@ -6617,7 +6617,6 @@ root(ROOTS.Unsorted, {
 					i(215855),	-- Jin'ya, Orb of the Watercaller
 					i(215856),	-- Jin'ya, Orb of the Watercaller
 					i(215857),	-- Jin'ya, Orb of the Watercaller
-					i(215858),	-- Diviner's Staff
 					i(215860),	-- Wasteland Staff
 					i(215861),	-- Instructor's Spire
 					i(215862),	-- Engraved Spire
@@ -6629,7 +6628,6 @@ root(ROOTS.Unsorted, {
 					i(215874),	-- Staff of Iron Will
 					i(215876),	-- Mistdancer's Rod
 					i(215877),	-- Cloudscorcher Staff
-					i(215878),	-- Springrain Spire
 					i(215880),	-- Darkstaff of Ruin
 					i(215882),	-- Lorewalker's Staff
 					i(215883),	-- Greatstaff of the Path
@@ -6720,7 +6718,6 @@ root(ROOTS.Unsorted, {
 					i(215975),	-- Starslicer
 					i(215976),	-- Starslicer
 					i(215977),	-- Starslicer
-					i(215978),	-- Starslicer
 					i(215979),	-- Faded Forest Falchion
 					i(215980),	-- Binan Falchion
 					i(215981),	-- Red Crane Greatsword
@@ -6765,7 +6762,6 @@ root(ROOTS.Unsorted, {
 					i(216020),	-- Stormbreaker's Waraxe
 					i(216021),	-- Pandaren Hatchet
 					i(216022),	-- Pandaren Axe
-					i(216023),	-- Pandaren Hacker
 					i(216024),	-- Pandaren Hewer
 					i(216025),	-- Pandaren Cleaver
 					i(216400),	-- Tia-Tia, the Spinning Star
@@ -6854,7 +6850,6 @@ root(ROOTS.Unsorted, {
 					i(216539),	-- Mogu Lord's Barrier
 					i(216540),	-- Mogu Lord's Shield
 					i(216541),	-- Pandaren Barrier
-					i(216542),	-- Pandaren Protector
 					i(216543),	-- Pandaren Bulwark
 					i(216544),	-- Pandaren Shield
 					i(216545),	-- Pandaren Deflector

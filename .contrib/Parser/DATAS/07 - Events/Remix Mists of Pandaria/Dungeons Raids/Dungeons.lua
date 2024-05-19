@@ -50,6 +50,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			filter(STAVES, {
 				i(215879),	-- Mountainsage Spire
+				i(215878),	-- Springrain Spire
 				i(215875),	-- Staff of Stolen Hope
 			}),
 		}),

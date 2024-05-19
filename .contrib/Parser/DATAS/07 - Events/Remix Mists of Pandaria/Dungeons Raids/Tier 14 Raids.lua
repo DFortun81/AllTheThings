@@ -11,6 +11,11 @@ TIER_14_RAIDS = createHeader({
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	n(TIER_14_RAIDS, {
 		n(WEAPONS, {
+			d(DIFFICULTY.RAID.LFR, {
+				filter(TWO_HANDED_SWORDS, {
+					i(215978),	-- Starslicer
+				}),
+			}),
 			d(DIFFICULTY.RAID.NORMAL, {
 				filter(DAGGERS, {
 					i(215583),	-- Blade of the Seven Stars

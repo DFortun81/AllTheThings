@@ -206,6 +206,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(ONE_HANDED_AXES, {
+					i(216023),	-- Pandaren Hacker
+				}),
+				filter(STAVES, {
+					i(215858),	-- Diviner's Staff
+				}),
 				filter(LEATHER, {
 					i(214069),	-- Thunderpaw Belt
 					i(214074),	-- Thunderpaw Boots
