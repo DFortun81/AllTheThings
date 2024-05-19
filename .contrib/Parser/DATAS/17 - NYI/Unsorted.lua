@@ -6600,7 +6600,6 @@ root(ROOTS.Unsorted, {
 					i(215864),	-- Torch of Dawn
 					i(215865),	-- Fogspeaker Conduit
 					i(215868),	-- Monastic Staff
-					i(215872),	-- Amberweaver's Spire
 					i(215873),	-- Amberweaver's Staff
 					i(215874),	-- Staff of Iron Will
 					i(215876),	-- Mistdancer's Rod
@@ -7101,7 +7100,6 @@ root(ROOTS.Unsorted, {
 					i(210643),	-- Mistspinner's Channel
 					i(210638),	-- Mushan Hewer
 					i(211149),	-- Rikkitun Warbow
-					i(210634),	-- Shield of the Wakener
 					i(211161),	-- Sphere of Immerseus
 					i(210338),	-- Spire of Supremacy
 					i(210341),	-- Staff of Corrupted Waters

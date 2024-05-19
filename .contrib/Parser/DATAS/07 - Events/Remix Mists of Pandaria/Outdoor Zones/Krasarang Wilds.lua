@@ -215,7 +215,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				filter(ONE_HANDED_MACES, {
 					i(215742),	-- Faded Forest Crusher
 				}),
+				filter(SHIELDS, {
+					i(210634),	-- Shield of the Wakener
+				}),
 				filter(STAVES, {
+					i(215872),	-- Amberweaver's Spire
 					i(215858),	-- Diviner's Staff
 				}),
 				filter(LEATHER, {
