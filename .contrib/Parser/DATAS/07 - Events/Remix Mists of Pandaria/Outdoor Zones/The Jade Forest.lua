@@ -169,6 +169,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216438),	-- Pandaren Manuscript
 				}),
 				filter(ONE_HANDED_AXES, {
+					i(210342),	-- Bataari Hacker
 					i(215487),	-- Hozen Waraxe
 				}),
 				filter(ONE_HANDED_MACES, {

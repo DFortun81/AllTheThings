@@ -39,8 +39,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		n(REWARDS, {
 			-- These items are in the box you get when you make a new character. Their IDs are different than the starter gear that is on you!
 			filter(ONE_HANDED_AXES, {
-				-- TODO: sort into correct zone
-				--i(210342),	-- Bataari Hacker
 			}),
 			filter(ONE_HANDED_MACES, {
 				i(224079),	-- Timerunner's Mace
