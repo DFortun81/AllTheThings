@@ -1000,15 +1000,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215332, {	-- Ensemble: Battlegear of the Lightning Emperor (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
-							i(94264),	-- Haunted Steel Headcover
-							i(95069),	-- Reconstructed Holy Shoulderplates
-							i(94989),	-- Lei Shen's Grounded Carapace
-							i(95130),	-- Softscar Armplates
-							i(94924),	-- Iceshatter Gauntlets
-							i(95213),	-- Abandoned Zandalari Greatbelt
-							i(94956),	-- Matter-Swapped Legplates
-							i(96088),	-- Ice-Scored Treads
+						-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(94809),	-- Crown of Potentiated Birth
+							i(94950),	-- Spaulders of Primordial Growth
+							i(94734),	-- Ionized Yojamban Carapace
+							i(94952),	-- Bonemender Bracers
+							i(94787),	-- Tortos' Shellseizers
+							i(95085),	-- Waistplate of Channeled Mending
+							i(94930),	-- Legplates of Re-Emergence
+							i(95216),	-- Vaultwalker Sabatons
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 							-- Original Listings we had
 							i(214921),	-- Lightning Emperor's Greatboots
 							i(214922),	-- Lightning Emperor's Armguards
@@ -1034,6 +1035,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(96294),	-- Lightning Emperor's Faceguard
 							i(96295),	-- Lightning Emperor's Legguards
 							i(96296),	-- Lightning Emperor's Shoulderguards
+						--]]
 						},
 					}),
 					i(215337, {	-- Ensemble: Vestments of Winged Triumph (Normal)
