@@ -68,6 +68,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214380),	-- Cranefeather Shoulderpads
 					i(214385),	-- Cranefeather Tunic
 				}),
+				filter(MAIL, {
+					i(214712),	-- Nightwatcher's Armbands
+					i(214707),	-- Nightwatcher's Chain
+					i(214711),	-- Nightwatcher's Chestguard
+					i(214708),	-- Nightwatcher's Gloves
+					i(214709),	-- Nightwatcher's Headguard
+					i(214705),	-- Nightwatcher's Legguards
+					i(214706),	-- Nightwatcher's Pauldrons
+					i(214710),	-- Nightwatcher's Sabatons
+				}),
 			}),
 		},
 	}),

@@ -6028,16 +6028,6 @@ root(ROOTS.Unsorted, {
 						i(214534),	-- Reedstalker Leggings
 						i(214533),	-- Reedstalker Spaulders
 
-						------ Jade Guardian's Regalia (Blue) ------
-						i(214712),	-- Nightwatcher's Armbands
-						i(214707),	-- Nightwatcher's Chain
-						i(214711),	-- Nightwatcher's Chestguard
-						i(214708),	-- Nightwatcher's Gloves
-						i(214709),	-- Nightwatcher's Headguard
-						i(214705),	-- Nightwatcher's Legguards
-						i(214706),	-- Nightwatcher's Pauldrons
-						i(214710),	-- Nightwatcher's Sabatons
-
 						------ Jade Guardian's Regalia (Brown) ------
 						i(214714),	-- Stonefang Breastplate
 						i(214715),	-- Stonefang Footguards
