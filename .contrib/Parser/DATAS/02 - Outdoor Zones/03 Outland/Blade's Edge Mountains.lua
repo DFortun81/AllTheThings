@@ -143,7 +143,7 @@ root(ROOTS.Zones, {
 						}),
 						pet(528, {	-- Scalded Basilisk Hatchling (PET!)
 							["coord"] = { 72.8, 20.6, BLADES_EDGE_MOUNTAINS },
-							["description"] = "Found in a fairly large area around the coord, above the road.",
+							["description"] = "Found in a fairly large area around Skald, the volcanic area in northeast before the road slopes downwards towards Netherstorm.",
 						}),
 						pet(637, {	-- Skittering Cavern Crawler (PET!)
 							["description"] = "Found in the two caves that connect Blade's Edge to Zangarmarsh, and as secondary pet in the zone.",
