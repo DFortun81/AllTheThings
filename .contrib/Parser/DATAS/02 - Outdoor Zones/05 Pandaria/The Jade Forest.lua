@@ -772,6 +772,11 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29618 },	-- The High Elder
 						["provider"] = { "n", 54913 },	-- Lin Tenderpaw
 						["coord"] = { 44.9, 24.9, THE_JADE_FOREST },
+						["groups"] = {
+							o(209436, {	-- Ripe Orange
+								i(72589),	-- Ripe Orange (QI!)
+							}),
+						},
 					}),
 					q(29756, {	-- A Humble Offering
 						["sourceQuests"] = {
@@ -781,6 +786,11 @@ root(ROOTS.Zones, {
 						},
 						["provider"] = { "n", 55614 },	-- Pei-Zhi
 						["coord"] = { 44.2, 15.0, THE_JADE_FOREST },
+						["groups"] = {
+							o(209825, {	-- Tidemist Cap
+								i(75214),	-- Tidemist Cap (QI!)
+							}),
+						},
 					}),
 					q(31132, {	-- A Mile in My Shoes
 						["sourceQuests"] = { 31121 },	-- Stay a While, and Listen
@@ -803,11 +813,23 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29626 },	-- Groundskeeper Wu
 						["provider"] = { "n", 54915 },	-- Groundskeeper Wu
 						["coord"] = { 41.6, 23.6, THE_JADE_FOREST },
+						["groups"] = {
+							i(72954),	-- Black Walnut Extract (QI!)
+							i(72979),	-- Triple-Bittered Ale (QI!)
+							o(209462, {	-- Rattan Switch
+								i(72926),	-- Rattan Switch (QI!)
+							}),
+						},
 					}),
 					q(29629, {	-- A Steady Hand
 						["sourceQuests"] = { 29627 },	-- A Proper Weapon
 						["provider"] = { "n", 54915 },	-- Groundskeeper Wu
 						["coord"] = { 41.6, 23.7, THE_JADE_FOREST },
+						["groups"] = {
+							o(209550, {	-- Blushleaf Cluster
+								i(73193),	-- Blushleaf Extract (QI!)
+							}),
+						},
 					}),
 					q(29628, {	-- A Strong Back
 						["sourceQuests"] = { 29627 },	-- A Proper Weapon
@@ -928,6 +950,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 55480 },	-- Pei-Zhi
 						["coord"] = { 44.2, 14.9, THE_JADE_FOREST },
 						["g"] = {
+							i(74258),	-- Staff of Pei-Zhi (QI!)
 							i(84261),	-- Axe of Sacrifice
 							i(84262),	-- Spirit Crusher
 							i(84263),	-- Spiritsage's Protector
@@ -1003,6 +1026,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29750 },	-- Vessels of the Spirit
 						["provider"] = { "n", 55614 },	-- Pei-Zhi
 						["coord"] = { 44.2, 15.0, THE_JADE_FOREST },
+						["groups"] = {
+							i(74808),	-- Spirit Bottles (QI!)
+						},
 					}),
 					q(29632, {	-- Becoming Battle-Ready
 						["sourceQuests"] = { 29620 },	-- The Great Banquet
@@ -1592,6 +1618,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 59377 },	-- Lorewalker Cho
 						["coord"] = { 28.2, 46.7, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(80071),	-- Cho Family Heirloom (QI!)
+						},
 					}),
 					q(29822, {	-- Lay of the Land
 						["sourceQuests"] = {
@@ -1711,6 +1740,13 @@ root(ROOTS.Zones, {
 					q(29580, {	-- Orchard-Supplied Hardware
 						["provider"] = { "n", 54854 },	-- Gentle Mother Hanae
 						["coord"] = { 43.2, 76.0, THE_JADE_FOREST },
+						["groups"] = {
+							o_repeated({
+								i(72133),	-- Orchard Tool (QI!)
+								o(209344),
+								o(209345),
+							}),
+						},
 					}),
 					q(29935, {	-- Orders are Orders
 						["sourceQuests"] = { 29879 },	-- Swallowed Whole
@@ -1887,6 +1923,17 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29749 },	-- An Urgent Plea
 						["provider"] = { "n", 55614 },	-- Pei-Zhi
 						["coord"] = { 44.2, 15.0, THE_JADE_FOREST },
+						["groups"] = {
+							o(209700, {	-- Chipped Ritual Bowl
+								i(74760),	-- Chipped Ritual Bowl (QI!)
+							}),
+							o(209699, {	-- Jade Cong
+								i(74762),	-- Jade Cong (QI!)
+							}),
+							o(209701, {	-- Pungent Ritual Candle
+								i(74761),	-- Pungent Ritual Candle (QI!)
+							}),
+						},
 					}),
 					q(29885, {	-- Road Rations
 						["sourceQuests"] = { 29562 },	-- Jailbreak
@@ -2058,6 +2105,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 54854 },	-- Gentle Mother Hanae
 						["coord"] = { 43.2, 76.0, THE_JADE_FOREST },
 						["g"] = {
+							i(72578),	-- Nectarbreeze Cider (QI!)
 							i(84243),	-- Bamboo Fiber Gloves
 							i(84244),	-- Bamboo Leaf Gloves
 							i(84245),	-- Jade Witch Handguards
@@ -2311,6 +2359,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 54918 },	-- Instructor Myang
 						["coord"] = { 38.9, 24.0, THE_JADE_FOREST },
 						["g"] = {
+							i(73369),	-- Monastery Fireworks (QI!)
 							i(84251),	-- Staff of Inner Focus
 							i(84252),	-- Instructor's Staff
 							i(84253),	-- Tian Monastic Staff
@@ -2397,7 +2446,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.6, 45.3, THE_JADE_FOREST },
 						["groups"] = {
 							o(209951, {	-- Silk Patch
-								i(75023),	-- Pristine Silk Strand
+								i(75023),	-- Pristine Silk Strand (QI!)
 							}),
 						},
 					}),
@@ -2405,6 +2454,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29749 },	-- An Urgent Plea
 						["provider"] = { "n", 55614 },	-- Pei-Zhi
 						["coord"] = { 44.2, 15.0, THE_JADE_FOREST },
+						["groups"] = {
+							i(74771),	-- Staff of Pei-Zhi (QI!)
+						},
 					}),
 					q(29555, {	-- The White Pawn
 						["sourceQuests"] = { 31745 },	-- Onward and Inward
@@ -2513,6 +2565,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29749 },	-- An Urgent Plea
 						["provider"] = { "n", 55614 },	-- Pei-Zhi
 						["coord"] = { 44.2, 15.0, THE_JADE_FOREST },
+						["groups"] = {
+							i(74763),	-- Spirit Bottle (QI!)
+						},
 					}),
 					q(31613, {	-- Volatile Greenstone Brew
 						["provider"] = { "n", 62321 },	-- Brewmaster Tzu

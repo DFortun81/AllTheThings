@@ -170,6 +170,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(211163),	-- Hidden Pass Knuckles
 				}),
 				filter(STAVES, {
+					i(215866),	-- Staff of Focus
 					i(215863),	-- Torch of Midnight
 				}),
 				filter(CLOTH, {

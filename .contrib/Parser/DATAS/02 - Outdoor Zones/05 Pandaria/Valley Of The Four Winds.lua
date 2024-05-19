@@ -1182,6 +1182,9 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 75.2, 24.1, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56205 },	-- Liang Thunderfoot
+						["groups"] = {
+							i(76100),	-- Wayward Lamb (QI!)
+						},
 					}),
 					q(29877, {	-- A Poor Grasp of the Basics
 						["sourceQuests"] = { 29907 },	-- Chen and Li Li
@@ -1228,6 +1231,11 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29912 },	-- The Fabular Miss Fanny
 						["coord"] = { 75.2, 24.0, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56205 },	-- Liang Thunderfoot
+						["groups"] = {	
+							i(75271),	-- Jian (QI!)
+							i(75272),	-- Ling (QI!)
+							i(75273),	-- Smelly (QI!)
+						},
 					}),
 					q(30172, {	-- Barreling Along
 						["sourceQuests"] = { 30051 },	-- The Great Water Hunt
@@ -1596,6 +1604,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29940 },	-- Taking a Crop
 						["coord"] = { 81.4, 24.9, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56207 },	-- Ang Thunderfoot
+						["groups"] = {
+							i(76110),	-- Crate of Fresh Produce (QI!)
+						},
 					}),
 					q(29910, {	-- Rampaging Rodents
 						["sourceQuests"] = { 29909 },	-- Low Turnip Turnout
@@ -1713,6 +1724,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 81.4, 24.9, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56207 },	-- Ang Thunderfoot
 						["g"] = {
+							o(209891, {	-- Stolen Turnip
+								i(76297),	-- Stolen Turnip (QI!)
+							}),
+							o(209892, {	-- Stolen Watermelon
+								i(76298),	-- Stolen Watermelon (QI!)
+							}),
 							i(81796),	-- Silkmaster's Satin Gloves
 							i(81797),	-- Sunsoaked Gloves
 							i(81798),	-- Huangtze Scale Gauntlets
@@ -1767,6 +1784,17 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29911 },	-- Practically Perfect Produce
 						["coord"] = { 83.7, 21.0, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56204 },	-- Pang Thunderfoot
+						["groups"] = {
+							o(209844, {	-- Ang's Giant Pink Turnip
+								i(75259),	-- Ang's Giant Pink Turnip (QI!)
+							}),
+							o(209843, {	-- Ang's Summer Watermelon
+								i(75258),	-- Ang's Summer Watermelon (QI!)
+							}),
+							o(209842, {	-- Pang's Extra-Spicy Tofu
+								i(75256),	-- Pang's Extra-Spicy Tofu (QI!)
+							}),
+						},
 					}),
 					q(30076, {	-- The Fanciest Water
 						["sourceQuests"] = { 30074 },	-- Knocking on the Door
@@ -1848,6 +1876,8 @@ root(ROOTS.Zones, {
 						["coord"] = { 75.2, 24.0, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56205 },	-- Liang Thunderfoot
 						["g"] = {
+							i(75275),	-- Mushan Shoulder Steak (QI!)
+							i(75276),	-- Turtle Meat Scrap (QI!)
 							i(88018),	-- Thunderfoot Heavy Cap
 							i(88017),	-- Sunsong Armored Cap
 							i(88016),	-- Paoquan Burnished Cap

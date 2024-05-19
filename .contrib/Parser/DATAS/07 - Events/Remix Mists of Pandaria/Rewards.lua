@@ -130,6 +130,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(211101),	-- Perfect Swift Opal
 			i(220373),	-- Perfect Versatile Diamond
 		}),
+		filter(FIST_WEAPONS, {
+			i(215641),	-- Claws of the Wakener
+		}),
 		filter(ONE_HANDED_AXES, {
 			i(210342),	-- Bataari Hacker
 		}),
@@ -138,6 +141,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(224079),	-- Timerunner's Mace
 		}),
 		filter(ONE_HANDED_SWORDS, {
+			i(215949),	-- Crane Temple Sword
+			i(215942),	-- Swordmistress' Edge
 			i(224080),	-- Timerunner's Sword
 			i(215946),	-- Valiant's Honorblade
 		}),

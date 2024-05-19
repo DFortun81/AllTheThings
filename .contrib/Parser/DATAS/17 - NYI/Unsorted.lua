@@ -6430,7 +6430,6 @@ root(ROOTS.Unsorted, {
 					i(215638),	-- Fist of Shek'zeer
 					i(215639),	-- Mist Shaman's Knuckles
 					i(215640),	-- Barbs of the Rikkitun
-					i(215641),	-- Claws of the Wakener
 					i(215642),	-- Fangs of Despair
 					i(215643),	-- Klaxxi Pincers
 					i(215644),	-- Amber Claw
@@ -6635,7 +6634,6 @@ root(ROOTS.Unsorted, {
 					i(215862),	-- Engraved Spire
 					i(215864),	-- Torch of Dawn
 					i(215865),	-- Fogspeaker Conduit
-					i(215866),	-- Staff of Focus
 					i(215868),	-- Monastic Staff
 					i(215869),	-- Waterweaver's Staff
 					i(215872),	-- Amberweaver's Spire
@@ -6702,13 +6700,11 @@ root(ROOTS.Unsorted, {
 					i(215939),	-- Mogu Aspirant's Blade
 					i(215940),	-- Halcyon Blade
 					i(215941),	-- Faded Forest Sword
-					i(215942),	-- Swordmistress' Edge
 					i(215943),	-- Wasteland Scimitar
 					i(215944),	-- Harmonious Scimitar
 					i(215945),	-- Binan Scimitar
 					i(215947),	-- Inkgill Sword
 					i(215948),	-- Darkhide Sword
-					i(215949),	-- Crane Temple Sword
 					i(215950),	-- Mei's Sword
 					i(215951),	-- Sha-Blighted Sword
 					i(215952),	-- Fear's Bite
@@ -6854,7 +6850,6 @@ root(ROOTS.Unsorted, {
 					i(216473),	-- Tian Monastery Staff
 					i(216474),	-- Temple Trainee's Sword
 					i(216475),	-- Temple Trainee's Blade
-					i(216476),	-- Temple Trainee's Edge
 					i(216477),	-- Temple Trainee's Scimitar
 					i(216478),	-- Pandaren Flamberge
 					i(216479),	-- Pandaren Waveblade

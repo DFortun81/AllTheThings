@@ -67,6 +67,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				filter(ONE_HANDED_AXES, {
 					i(215485),	-- Shomi's Hatchet
 				}),
+				filter(ONE_HANDED_SWORDS, {
+					i(216476),	-- Temple Trainee's Edge
+				}),
 				filter(TWO_HANDED_MACES, {
 					i(215781),	-- Sumprush Maul
 				}),
