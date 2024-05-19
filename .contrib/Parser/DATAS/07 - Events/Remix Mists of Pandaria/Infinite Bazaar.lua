@@ -3475,6 +3475,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215331, {	-- Ensemble: White Tiger Battlegear (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/18/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(87155),	-- Casque of Expelled Corruption
+							i(87078),	-- Spaulders of the Emperor's Rage
+							i(86952),	-- Chestplate of the Forbidden Tower
+							i(87043),	-- Bindings of Ancient Spirits
+							i(86973),	-- Grasps of Panic
+							i(87056),	-- Girdle of Delirious Visions
+							i(87031),	-- Legplates of Sagacious Shadows
+							i(87021),	-- Heavenly Jade Greatboots
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 							i(214905),	-- White Tiger Sabatons
 							i(214906),	-- White Tiger Bracers
 							i(214907),	-- White Tiger Legguards
@@ -3483,12 +3493,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214910),	-- White Tiger Gauntlets
 							i(214911),	-- White Tiger Pauldrons
 							i(214912),	-- White Tiger Girdle
+						--]]
 						},
 					}),
 					i(215333, {	-- Ensemble: Battlegear of the Lightning Emperor (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+						-- Note: Lucetia learned with ensemble 05/18/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(96467),	-- Crown of Potentiated Birth
 							i(96511),	-- Spaulders of Primordial Growth
 							i(95036),	-- Nova-Binder Breastplate
@@ -3529,7 +3540,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
-						-- The actual tier pieces might be non-set pieces instead, but this was best I could find so far.
 							i(112496, { ["modID"] = 6, }),	-- Gaze of Echoing Despair
 							i(112774, { ["modID"] = 6, }),	-- Shoulderplates of Gushing Geysers
 							i(112823, { ["modID"] = 6, }),	-- Terrorguard Chestpiece
