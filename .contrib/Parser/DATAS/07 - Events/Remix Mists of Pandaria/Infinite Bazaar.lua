@@ -1039,6 +1039,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215337, {	-- Ensemble: Vestments of Winged Triumph (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(105804),	-- Aladya's Spiritfire Greathelm
+							i(105802),	-- Yaungol Deathcult Shoulderguards
+							i(105775),	-- Gleaming Eye Spellplate
+							i(112704, { ["modID"] = 3, }),	-- Arcsmasher Bracers
+							i(112495, { ["modID"] = 3, }),	-- Grips of the Fallen Council
+							i(112846, { ["modID"] = 3, }),	-- Plate Belt of the War-Healer
+							i(105756),	-- Poxleitner's Leggings of Lights
+							i(112752, { ["modID"] = 3, }),	-- Borer Drill Boots
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 							-- Contains Removed!
 							i(214953),	-- Sabatons of Winged Triumph
 							i(214954),	-- Bracers of Winged Triumph
@@ -1048,6 +1058,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214958),	-- Gauntlets of Winged Triumph
 							i(214959),	-- Pauldrons of Winged Triumph
 							i(214960),	-- Girdle of Winged Triumph
+						--]]
 						},
 					}),
 				}),
@@ -3571,7 +3582,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				--]]
 				cl(PRIEST, {
 					i(215200, {	-- Ensemble: Guardian Serpent Regalia (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
