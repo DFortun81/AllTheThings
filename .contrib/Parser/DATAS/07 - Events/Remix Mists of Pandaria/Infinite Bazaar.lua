@@ -3488,6 +3488,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215333, {	-- Ensemble: Battlegear of the Lightning Emperor (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(96467),	-- Crown of Potentiated Birth
+							i(96511),	-- Spaulders of Primordial Growth
+							i(95036),	-- Nova-Binder Breastplate
+							i(96408),	-- Armplates of the Vanquished Abomination
+							i(96441),	-- Tortos' Shellseizers
+							i(96440),	-- Refreshing Abalone Girdle
+							i(95024),	-- Time-Lost Greaves
+							i(95010),	-- Hypersensitive Sollerets
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 							i(214929),	-- Lightning Emperor's Girdle
 							i(214930),	-- Lightning Emperor's Pauldrons
 							i(214931),	-- Lightning Emperor's Gauntlets
@@ -3512,6 +3522,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(97038),	-- Lightning Emperor's Faceguard
 							i(97039),	-- Lightning Emperor's Legguards
 							i(97040),	-- Lightning Emperor's Shoulderguards
+							--]]
 						},
 					}),
 					i(215336, {	-- Ensemble: Vestments of Winged Triumph (Mythic)
@@ -3519,21 +3530,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						["g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						-- The actual tier pieces might be non-set pieces instead, but this was best I could find so far.
-							i(99370),	-- Faceguard of Winged Triumph
-							i(112774, {	-- Shoulderplates of Gushing Geysers
-								["modID"] = 6,
-							}),
-							i(112704, {	-- Arcsmasher Bracers
-								["modID"] = 6,
-							}),
-							i(99369),	-- Handguards of Winged Triumph
-							i(112846, {	-- Plate Belt of the War-Healer
-								["modID"] = 6,
-							}),
-							i(99371),	-- Legguards of Winged Triumph
-							i(112752, {	-- Bore Drill Boots
-								["modID"] = 6,
-							}),	
+							i(112496, { ["modID"] = 6, }),	-- Gaze of Echoing Despair
+							i(112774, { ["modID"] = 6, }),	-- Shoulderplates of Gushing Geysers
+							i(112823, { ["modID"] = 6, }),	-- Terrorguard Chestpiece
+							i(112704, { ["modID"] = 6, }),	-- Arcsmasher Bracers
+							i(112495, { ["modID"] = 6, }),	-- Grips of the Fallen Council
+							i(112846, { ["modID"] = 6, }),	-- Plate Belt of the War-Healer
+							i(112728, { ["modID"] = 6, }),	-- Windfire Legplates
+							i(112752, { ["modID"] = 6, }),	-- Bore Drill Boots
 						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 							-- Contains Removed!
 							i(214945),	-- Waistguard of Winged Triumph
@@ -3548,6 +3552,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
+				--]]
 				cl(PRIEST, {
 					i(215200, {	-- Ensemble: Guardian Serpent Regalia (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
