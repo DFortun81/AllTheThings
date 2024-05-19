@@ -12,6 +12,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 	n(TIER_14_RAIDS, {
 		n(WEAPONS, {
 			d(DIFFICULTY.RAID.LFR, {
+				filter(STAVES, {
+					i(215843),	-- Waterspeaker's Staff
+				}),
 				filter(TWO_HANDED_SWORDS, {
 					i(215978),	-- Starslicer
 				}),

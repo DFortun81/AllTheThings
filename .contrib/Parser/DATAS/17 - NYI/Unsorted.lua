@@ -6594,7 +6594,6 @@ root(ROOTS.Unsorted, {
 					i(215840),	-- Brazier of the Eternal Empire
 					i(215841),	-- Brazier of the Eternal Empire
 					i(215842),	-- Brazier of the Eternal Empire
-					i(215843),	-- Waterspeaker's Staff
 					i(215844),	-- Waterspeaker's Staff
 					i(215845),	-- Waterspeaker's Staff
 					i(215846),	-- Waterspeaker's Staff
