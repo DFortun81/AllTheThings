@@ -987,6 +987,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215329, {	-- Ensemble: White Tiger Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+							i(86318),	-- Casque of Expelled Corruption
+							i(85344),	-- White Tiger Mantle
+							i(86158),	-- Chestplate of the Forbidden Tower
+							i(86188),	-- Inlaid Cricket Bracers
+							i(86179),	-- Grasps of Panic
+							i(86383),	-- Mender's Girdle of Endless Spring
+							i(85345),	-- White Tiger Greaves
+							i(86329),	-- Sollerets of Instability
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
+							-- Original Listings we had
 							i(214889),	-- White Tiger Battleplate
 							i(214890),	-- White Tiger Vambraces
 							i(214891),	-- White Tiger Warboots
@@ -995,6 +1006,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214894),	-- White Tiger Greatbelt
 							i(214895),	-- White Tiger Spaulders
 							i(214896),	-- White Tiger Legplates
+						--]]
 						},
 					}),
 					i(215332, {	-- Ensemble: Battlegear of the Lightning Emperor (Normal)
