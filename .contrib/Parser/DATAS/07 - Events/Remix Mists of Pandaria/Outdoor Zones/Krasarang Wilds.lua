@@ -206,6 +206,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(FIST_WEAPONS, {
+					i(215643),	-- Klaxxi Pincers
+				}),
 				filter(ONE_HANDED_AXES, {
 					i(216023),	-- Pandaren Hacker
 				}),

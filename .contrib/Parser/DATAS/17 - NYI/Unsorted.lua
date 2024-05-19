@@ -6417,7 +6417,6 @@ root(ROOTS.Unsorted, {
 					i(215639),	-- Mist Shaman's Knuckles
 					i(215640),	-- Barbs of the Rikkitun
 					i(215642),	-- Fangs of Despair
-					i(215643),	-- Klaxxi Pincers
 					i(215644),	-- Amber Claw
 					i(215646),	-- Claw of the Fallen Temple
 					i(215647),	-- Ka'eng, Fang of Shadow
