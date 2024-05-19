@@ -2090,64 +2090,37 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215356, {	-- Ensemble: Vestments of Serenity (Blue)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
-						i(74577),	-- Robes of the Water Spirit
-						i(74571),	-- Playful Wristbands
-						i(74574),	-- Sun Pearl Gloves
-						i(74568),	-- Unmarred Cord
-						i(74580),	-- Homespun Leggings
-						i(74583),	-- Silk Shoes
-					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
-					-- TODO: Symlink
-						i(215079),	-- Nightsky Bands
-						i(215078),	-- Nightsky Belt
-						i(215075),	-- Nightsky Gloves
-						i(215076),	-- Nightsky Leggings
+					-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(215073),	-- Nightsky Robe
+						i(215079),	-- Nightsky Bands
+						i(215075),	-- Nightsky Gloves
+						i(215078),	-- Nightsky Belt
+						i(215076),	-- Nightsky Leggings
 						i(215077),	-- Nightsky Slippers
-					--]]
 					},
 				}),
 				i(215357, {	-- Ensemble: Vestments of Serenity (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
-					-- Slippers of Wisdom are the main part of this set unlike other ensembles were they are secondary ID's. So moved them with the "required" pieces to unlock
-						i(74606),	-- Protector's Robes
-						i(74600),	-- Healer's Wristwraps
-						i(74594),	-- Gloves of Wisdom
-						i(74597),	-- Cord of Grieving
-						i(74603),	-- Survival Leggings
-						i(215082),	-- Slippers of Wisdom
-					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
-					-- TODO: Symlink
-						i(215080),	-- Bands of Wisdom
-						i(215081),	-- Belt of Wisdom
-						i(215084),	-- Gloves of Wisdom
-						i(215083),	-- Leggings of Wisdom
+					-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(215086),	-- Robe of Wisdom
-					--]]
+						i(215080),	-- Bands of Wisdom
+						i(215084),	-- Gloves of Wisdom
+						i(215081),	-- Belt of Wisdom
+						i(215083),	-- Leggings of Wisdom
+						i(215082),	-- Slippers of Wisdom
 					},
 				}),
 				i(215358, {	-- Ensemble: Vestments of Serenity (White)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["g"] = {
-					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
-						i(73224),	-- Initiate's Robes
-						i(73214),	-- Initiate's Wristwraps
-						i(73220),	-- Initiate's Gloves
-						i(73217),	-- Initiate's Rope Belt
-						i(73227),	-- Initiate's Leggings
-						i(73230),	-- Initiate's Slippers
-					--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
-					-- TODO: Symlink
-						i(215087),	-- Serene Bands
-						i(215088),	-- Serene Belt
-						i(215091),	-- Serene Gloves
-						i(215090),	-- Serene Leggings
+					-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(215093),	-- Serene Robe
+						i(215087),	-- Serene Bands
+						i(215091),	-- Serene Gloves
+						i(215088),	-- Serene Belt
+						i(215090),	-- Serene Leggings
 						i(215089),	-- Serene Slippers
-					--]]
 					},
 				}),
 				filter(CLOTH, {
