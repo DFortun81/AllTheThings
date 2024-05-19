@@ -222,6 +222,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214070),	-- Thunderpaw Shoulderpads
 					i(214075),	-- Thunderpaw Tunic
 				}),
+				filter(MAIL, {
+					i(214480),	-- Peakscaler Breastplate
+					i(214481),	-- Peakscaler Footguards
+					i(214484),	-- Peakscaler Girdle
+					i(214483),	-- Peakscaler Grips
+					i(214482),	-- Peakscaler Helmet
+					i(214486),	-- Peakscaler Legwraps
+					i(214485),	-- Peakscaler Mantle
+					i(214479),	-- Peakscaler Wristguards
+				}),
 			}),
 		},
 	}),

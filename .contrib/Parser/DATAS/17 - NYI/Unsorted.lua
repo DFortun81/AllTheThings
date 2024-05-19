@@ -5988,16 +5988,6 @@ root(ROOTS.Unsorted, {
 						i(220989),	-- Fire-Charm Jacket
 					}),
 					filter(MAIL, {
-						------ Trailseeker's Laminar Armor (Green) ------
-						i(214480),	-- Peakscaler Breastplate
-						i(214481),	-- Peakscaler Footguards
-						i(214484),	-- Peakscaler Girdle
-						i(214483),	-- Peakscaler Grips
-						i(214482),	-- Peakscaler Helmet
-						i(214486),	-- Peakscaler Legwraps
-						i(214485),	-- Peakscaler Mantle
-						i(214479),	-- Peakscaler Wristguards
-
 						------ Trailseeker's Laminar Armor (White) ------
 						i(214492),	-- Jade Guardian's Belt
 						i(214496),	-- Jade Guardian's Boots
