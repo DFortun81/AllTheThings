@@ -3517,6 +3517,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215336, {	-- Ensemble: Vestments of Winged Triumph (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
+						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
+						-- The actual tier pieces might be non-set pieces instead, but this was best I could find so far.
+							i(99370),	-- Faceguard of Winged Triumph
+							i(112774, {	-- Shoulderplates of Gushing Geysers
+								["modID"] = 6,
+							}),
+							i(112704, {	-- Arcsmasher Bracers
+								["modID"] = 6,
+							}),
+							i(99369),	-- Handguards of Winged Triumph
+							i(112846, {	-- Plate Belt of the War-Healer
+								["modID"] = 6,
+							}),
+							i(99371),	-- Legguards of Winged Triumph
+							i(112752, {	-- Bore Drill Boots
+								["modID"] = 6,
+							}),	
+						--[[Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 							-- Contains Removed!
 							i(214945),	-- Waistguard of Winged Triumph
 							i(214946),	-- Shoulderguards of Winged Triumph
@@ -3526,6 +3544,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214950),	-- Greaves of Winged Triumph
 							i(214951),	-- Armguards of Winged Triumph
 							i(214952),	-- Greatboots of Winged Triumph
+						--]]
 						},
 					}),
 				}),
