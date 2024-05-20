@@ -2143,9 +2143,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						["g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(82491),	-- Mindbender Cowl
-							i(82398),	-- Windwool Shoulders
+							i(82500),	-- Mindbender Amice
 							i(82509),	-- Mindbender Robe
-							i(82399),	-- Windwool Tunic
 							i(82554),	-- Mindbender Cuffs
 							i(82545),	-- Mindbender Handguards
 							i(82536),	-- Mindbender Cord
