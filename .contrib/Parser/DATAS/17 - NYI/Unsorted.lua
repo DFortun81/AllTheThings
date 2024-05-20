@@ -6244,7 +6244,6 @@ root(ROOTS.Unsorted, {
 					i(215480),	-- Korven's Crescent
 					i(215481),	-- Elegion, the Star Cleaver
 					i(215483),	-- Elegion, the Star Cleaver
-					i(215484),	-- Boggeo's Ceremonial Axe
 					i(215486),	-- Jinyu Waraxe
 					i(215488),	-- Mountainscaler Hatchet
 					i(215489),	-- Wasteland Hacker
@@ -6733,7 +6732,6 @@ root(ROOTS.Unsorted, {
 					i(216417),	-- Hozen Shanker
 					i(216419),	-- Hozen Knife
 					i(216421),	-- Pandaren Mace
-					i(216422),	-- Pandaren Smasher
 					i(216424),	-- Pandaren Breaker
 					i(216425),	-- Acid-Spine Bonebreaker
 					i(216427),	-- Acid-Spine Bonebreaker

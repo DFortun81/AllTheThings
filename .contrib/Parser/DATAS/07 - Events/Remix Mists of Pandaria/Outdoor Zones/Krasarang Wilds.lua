@@ -210,10 +210,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215643),	-- Klaxxi Pincers
 				}),
 				filter(ONE_HANDED_AXES, {
+					i(215484),	-- Boggeo's Ceremonial Axe
 					i(216023),	-- Pandaren Hacker
 				}),
 				filter(ONE_HANDED_MACES, {
 					i(215742),	-- Faded Forest Crusher
+					i(216422),	-- Pandaren Smasher
 				}),
 				filter(SHIELDS, {
 					i(210634),	-- Shield of the Wakener
