@@ -772,7 +772,7 @@ root(ROOTS.Character, n(createHeader({
 				}),
 				i(85513, {	-- Thundering Serpent Hatchling (PET!)
 					["sourceAchievement"] = 6634,	-- Challenge Conquerors: Gold - Guild Edition
-					["timeline"] = { ADDED_5_0_4 },
+					["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 				}),
 			},
 			{	-- Exalted
