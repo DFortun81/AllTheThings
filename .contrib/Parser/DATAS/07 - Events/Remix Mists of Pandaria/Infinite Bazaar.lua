@@ -20,7 +20,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		},
 		["g"] = {
 			n(219031, {	-- Aeonicus <Raid Finder Apparel>
-				cl(DEATHKNIGHT, {
+				clWithoutLock(DEATHKNIGHT, {
 					i(215320, {	-- Ensemble: Plate of the Lost Catacomb (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -62,7 +62,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(DRUID, {
+				clWithoutLock(DRUID, {
 					i(215241, {	-- Ensemble: Vestments of the Eternal Blossom (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -104,7 +104,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(HUNTER, {
+				clWithoutLock(HUNTER, {
 					i(215289, {	-- Ensemble: Yaungol Slayer Battlegear (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -146,7 +146,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(MAGE, {
+				clWithoutLock(MAGE, {
 					i(215189, {	-- Ensemble: Regalia of the Burning Scroll (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -188,7 +188,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(MONK, {
+				clWithoutLock(MONK, {
 					i(215252, {	-- Ensemble: Vestments of the Red Crane (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -230,7 +230,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(PALADIN, {
+				clWithoutLock(PALADIN, {
 					i(215330, {	-- Ensemble: White Tiger Battlegear (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -272,7 +272,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(PRIEST, {
+				clWithoutLock(PRIEST, {
 					i(215199, {	-- Ensemble: Guardian Serpent Regalia (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -314,7 +314,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(ROGUE, {
+				clWithoutLock(ROGUE, {
 					i(215261, {	-- Ensemble: Battlegear of the Thousandfold Blades (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -356,7 +356,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(SHAMAN, {
+				clWithoutLock(SHAMAN, {
 					i(215298, {	-- Ensemble: Regalia of the Firebird (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -401,7 +401,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(WARLOCK, {
+				clWithoutLock(WARLOCK, {
 					i(215208, {	-- Ensemble: Sha Skin Regalia (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -443,7 +443,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(WARRIOR, {
+				clWithoutLock(WARRIOR, {
 					i(215339, {	-- Ensemble: Battleplate of Resounding Rings (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -713,7 +713,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(225269, {	-- Durus <Normal Raid Apparel>
 				-- Note original n(219028 listing in case there are actually multiple
-				cl(DEATHKNIGHT, {
+				clWithoutLock(DEATHKNIGHT, {
 					i(215321, {	-- Ensemble: Plate of the Lost Catacomb (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -766,7 +766,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(DRUID, {
+				clWithoutLock(DRUID, {
 					i(215243, {	-- Ensemble: Vestments of the Eternal Blossom (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -829,7 +829,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(HUNTER, {
+				clWithoutLock(HUNTER, {
 					i(215288, {	-- Ensemble: Yaungol Slayer Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -877,7 +877,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(MAGE, {
+				clWithoutLock(MAGE, {
 					i(215191, {	-- Ensemble: Regalia of the Burning Scroll (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -925,7 +925,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(MONK, {
+				clWithoutLock(MONK, {
 					i(215251, {	-- Ensemble: Vestments of the Red Crane (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -983,7 +983,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(PALADIN, {
+				clWithoutLock(PALADIN, {
 					i(215329, {	-- Ensemble: White Tiger Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -1076,7 +1076,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(PRIEST, {
+				clWithoutLock(PRIEST, {
 					i(215198, {	-- Ensemble: Guardian Serpent Regalia (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -1129,7 +1129,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(ROGUE, {
+				clWithoutLock(ROGUE, {
 					i(215260, {	-- Ensemble: Battlegear of the Thousandfold Blades (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -1177,7 +1177,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(SHAMAN, {
+				clWithoutLock(SHAMAN, {
 					i(215297, {	-- Ensemble: Regalia of the Firebird (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -1238,7 +1238,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(WARLOCK, {
+				clWithoutLock(WARLOCK, {
 					i(215209, {	-- Ensemble: Sha Skin Regalia (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -1286,7 +1286,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(WARRIOR, {
+				clWithoutLock(WARRIOR, {
 					i(215338, {	-- Ensemble: Battleplate of Resounding Rings (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -1351,7 +1351,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(220895, {	-- Grandmaster Jakkus <Class Apparel>
 				-- Note original n(220618 listing in case there are actually multiple
-				cl(DEATHKNIGHT, {
+				clWithoutLock(DEATHKNIGHT, {
 					i(217824, {	-- Arsenal: Webbed Soulforged Weaponry
 						["classes"] = DEATHKNIGHT,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1371,7 +1371,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(DEMONHUNTER, {
+				clWithoutLock(DEMONHUNTER, {
 					i(217828, {	-- Arsenal: Aldrachi Blasphemer's Glaives
 						["classes"] = DEMONHUNTER,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1390,7 +1390,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(DRUID, {
+				clWithoutLock(DRUID, {
 					i(217829, {	-- Arsenal: Ela'lothen's Blessings of Rebirth
 						["classes"] = DRUID,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1411,7 +1411,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(EVOKER, {
+				clWithoutLock(EVOKER, {
 					i(217821, {	-- Arsenal: Treasure of the Gold Hoarder
 						["classes"] = EVOKER,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1431,7 +1431,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(HUNTER, {
+				clWithoutLock(HUNTER, {
 					i(217820, {	-- Arsenal: Dreadsquall Hunter's Preference
 						["classes"] = HUNTER,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1451,7 +1451,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(MAGE, {
+				clWithoutLock(MAGE, {
 					i(217823, {	-- Arsenal: Sin'dorei Magister's Enchantment
 						["classes"] = MAGE,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1471,7 +1471,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(MONK, {
+				clWithoutLock(MONK, {
 					i(217827, {	-- Arsenal: Shado-Pan Watcher Arsenal
 						["classes"] = MONK,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1491,7 +1491,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(PALADIN, {
+				clWithoutLock(PALADIN, {
 					i(217832, {	-- Arsenal: Armaments of the Holy Avenger
 						["classes"] = PALADIN,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1511,7 +1511,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(PRIEST, {
+				clWithoutLock(PRIEST, {
 					i(217831, {	-- Arsenal: Secrets of the Abyssal Cult
 						["classes"] = PRIEST,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1531,7 +1531,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(ROGUE, {
+				clWithoutLock(ROGUE, {
 					i(217830, {	-- Arsenal: Igneous Onyx Blades
 						["classes"] = ROGUE,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1551,7 +1551,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(SHAMAN, {
+				clWithoutLock(SHAMAN, {
 					i(217819, {	-- Arsenal: Tools of Krag'wa's Disciple
 						["classes"] = SHAMAN,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1571,7 +1571,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(WARLOCK, {
+				clWithoutLock(WARLOCK, {
 					i(217826, {	-- Arsenal: Instruments of Temptation's Call
 						["classes"] = WARLOCK,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -1591,7 +1591,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(WARRIOR, {
+				clWithoutLock(WARRIOR, {
 					i(217825, {	-- Arsenal: Fanatical Champion's Aggression
 						["classes"] = WARRIOR,
 						["cost"] = {{"c", BRONZE, 3000}},
@@ -3197,7 +3197,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 				-- Classes
-				cl(DEATHKNIGHT, {
+				clWithoutLock(DEATHKNIGHT, {
 					i(215322, {	-- Ensemble: Plate of the Lost Catacomb (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -3250,7 +3250,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(DRUID, {
+				clWithoutLock(DRUID, {
 					i(215242, {	-- Ensemble: Vestments of the Eternal Blossom (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -3313,7 +3313,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(HUNTER, {
+				clWithoutLock(HUNTER, {
 					i(215290, {	-- Ensemble: Yaungol Slayer Battlegear (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -3361,7 +3361,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(MAGE, {
+				clWithoutLock(MAGE, {
 					i(215190, {	-- Ensemble: Regalia of the Burning Scroll (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -3409,7 +3409,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(MONK, {
+				clWithoutLock(MONK, {
 					i(215250, {	-- Ensemble: Vestments of the Red Crane (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -3467,7 +3467,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(PALADIN, {
+				clWithoutLock(PALADIN, {
 					i(215331, {	-- Ensemble: White Tiger Battlegear (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -3558,7 +3558,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(PRIEST, {
+				clWithoutLock(PRIEST, {
 					i(215200, {	-- Ensemble: Guardian Serpent Regalia (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -3611,7 +3611,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(ROGUE, {
+				clWithoutLock(ROGUE, {
 					i(215262, {	-- Ensemble: Battlegear of the Thousandfold Blades (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -3659,7 +3659,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(SHAMAN, {
+				clWithoutLock(SHAMAN, {
 					i(215299, {	-- Ensemble: Regalia of the Firebird (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -3720,7 +3720,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(WARLOCK, {
+				clWithoutLock(WARLOCK, {
 					i(215207, {	-- Ensemble: Sha Skin Regalia (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
@@ -3768,7 +3768,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						},
 					}),
 				}),
-				cl(WARRIOR, {
+				clWithoutLock(WARRIOR, {
 					i(215340, {	-- Ensemble: Battleplate of Resounding Rings (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
