@@ -967,7 +967,7 @@ root(ROOTS.Zones, {
 					}),
 					q(10798, {	-- Pay the Baron a Visit
 						["qg"] = 22149,	-- Commander Haephus Stonewall
-						["sourceQuest"] = 10795,	-- Favor of the Gronn
+						["sourceQuest"] = 10797,	-- Favor of the Gronn
 						["coord"] = { 62.0, 38.0, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
