@@ -42,6 +42,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			filter(GUNS, {
 				i(215705),	-- Penate's Pistol
 			}),
+			filter(ONE_HANDED_MACES, {
+				i(215755),	-- Je'lyu, Scepter of the Serpent
+				i(215751),	-- Porter's Mace
+			}),
 			filter(ONE_HANDED_SWORDS, {
 				i(215954),	-- Kor'dok's Sword
 			}),
@@ -49,12 +53,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215806),	-- Ghostheart Warspear
 			}),
 			filter(SHIELDS, {
+				i(216582),	-- Bulwark of the Protectorate
 				i(216581),	-- Deflector of the Protectorate
 			}),
 			filter(STAVES, {
+				i(215882),	-- Lorewalker's Staff
 				i(215879),	-- Mountainsage Spire
 				i(215878),	-- Springrain Spire
 				i(215875),	-- Staff of Stolen Hope
+			}),
+			filter(TWO_HANDED_MACES, {
+				i(215784),	-- Taran Zhu's Bonebreaker
 			}),
 		}),
 		n(ARMOR, {

@@ -6496,10 +6496,8 @@ root(ROOTS.Unsorted, {
 					i(215748),	-- Fireblaze Mace
 					i(215749),	-- Ordo Basher
 					i(215750),	-- Ook Breaker
-					i(215751),	-- Porter's Mace
 					i(215753),	-- Gao's Kegbreaker
 					i(215754),	-- Jol'Grum's Mace
-					i(215755),	-- Je'lyu, Scepter of the Serpent
 					i(215756),	-- Klaxxi Smasher
 					i(215757),	-- Carapace Crusher
 					i(215758),	-- Saurok Scepter
@@ -6525,7 +6523,6 @@ root(ROOTS.Unsorted, {
 					i(215779),	-- Gar'tok, Might of the Faithful
 					i(215782),	-- Wasteland Maul
 					i(215783),	-- Shado-Pan Maul
-					i(215784),	-- Taran Zhu's Bonebreaker
 					i(215785),	-- Fangcracker Maul
 					i(215787),	-- Kazra'jin's Maul
 					i(215789),	-- Kazra'jin's Maul
@@ -6598,7 +6595,6 @@ root(ROOTS.Unsorted, {
 					i(215876),	-- Mistdancer's Rod
 					i(215877),	-- Cloudscorcher Staff
 					i(215880),	-- Darkstaff of Ruin
-					i(215882),	-- Lorewalker's Staff
 					i(215883),	-- Greatstaff of the Path
 					i(215884),	-- Firedancer's Staff
 					i(215886),	-- Soulwood Spire
@@ -6848,7 +6844,6 @@ root(ROOTS.Unsorted, {
 					i(216578),	-- Impervious Bulwark
 					i(216579),	-- Shield of the Devourer
 					i(216580),	-- Skyrider's Shield
-					i(216582),	-- Bulwark of the Protectorate
 					i(216583),	-- Shield of the Protectorate
 					i(216584),	-- Barrier of the Protectorate
 					i(216585),	-- Shield of the Gloaming
