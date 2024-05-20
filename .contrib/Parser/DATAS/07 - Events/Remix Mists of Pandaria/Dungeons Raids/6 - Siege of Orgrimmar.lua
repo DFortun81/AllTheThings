@@ -205,6 +205,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			d(DIFFICULTY.RAID.LFR, {
+				n(WEAPONS, {
+					filter(STAVES, {
+						i(215835),	-- Drakebinder's Spire
+						i(215830),	-- Rod of the Megantholithic Apparatus
+					}),
+				}),
 				n(ARMOR, {
 					filter(CLOTH, {
 						-- MAGE

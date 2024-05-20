@@ -6548,12 +6548,10 @@ root(ROOTS.Unsorted, {
 					i(215827),	-- Rod of the Megantholithic Apparatus
 					i(215828),	-- Rod of the Megantholithic Apparatus
 					i(215829),	-- Rod of the Megantholithic Apparatus
-					i(215830),	-- Rod of the Megantholithic Apparatus
 					i(215831),	-- Pride's Gaze
 					i(215832),	-- Pride's Gaze
 					i(215833),	-- Pride's Gaze
 					i(215834),	-- Pride's Gaze
-					i(215835),	-- Drakebinder's Spire
 					i(215836),	-- Drakebinder's Spire
 					i(215837),	-- Drakebinder's Spire
 					i(215838),	-- Drakebinder's Spire
