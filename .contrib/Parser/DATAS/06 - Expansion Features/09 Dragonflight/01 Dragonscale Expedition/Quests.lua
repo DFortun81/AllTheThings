@@ -179,6 +179,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70335, {	-- Simple Excavation Tools
 						["provider"] = { "n", 188265 },	-- Rae'ana
 						["coord"] = { 47.9, 82.1, THE_WAKING_SHORES },
+						["lockCriteria"] = {3,
+							"sourceID", 181697,	-- Excavator's Mallet
+							"sourceID", 181773,	-- Excavator's Punch
+							"sourceID", 182255,	-- Excavator's Trowel
+						},
 						["g"] = {
 							i(198387),	-- Excavator's Mallet
 							i(198717),	-- Excavator's Punch
