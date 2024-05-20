@@ -81,6 +81,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					--["sourceQuests"] = { 79440 },	-- Recalling the War (need to confirm)
 					["provider"] = { "n", 65907 },	-- Jiayi Applebloom
 					["coord"] = { 44.8, 84.4, THE_JADE_FOREST },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(80012, {	-- Dragonriding
 					["sourceQuests"] = { 79440 },	-- Recalling the War
