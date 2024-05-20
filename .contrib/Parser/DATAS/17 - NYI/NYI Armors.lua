@@ -1219,6 +1219,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			expansion(EXPANSION.BFA, 0.1, {
 				i(153397),	-- Salt Starched Shawl
 				i(154968),	-- Drape of the Golden City
+				i(155091),	-- Thovas-Explorer's Cape
 				i(155384),	-- Singed Skycaller Drape
 				i(156755),	-- Drape of Revengeance
 				i(158500),	-- Salt Starched Shawl

@@ -94,7 +94,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(158253),	-- Freebooter Pantaloons
 					i(158252),	-- Outrigger Pants
 					i(158250),	-- Sea Raider's Legguards
-					i(155091),	-- Thovas-Explorer's Cape
 					i(161246, {	-- Zanchuli Woolies (confirmed)
 						["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
 					}),
