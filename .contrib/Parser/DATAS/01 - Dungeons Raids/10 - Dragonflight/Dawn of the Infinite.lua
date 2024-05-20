@@ -1010,7 +1010,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
-					ach(18705, {	-- Defender of the Timeways
+					ach(18705, bubbleDown({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Defender of the Timeways
 						title(514),	-- <Name> of the Infinite
 						crit(60810, {	-- Chronikar
 							["_encounter"] = { 2521, DIFFICULTY.DUNGEON.MYTHIC },
@@ -1037,7 +1037,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						crit(60817, {	-- Chrono-Lord Deios and the Infinite Dragonflight
 							["_encounter"] = { 2538, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
-					}),
+					})),
 					ach(18706, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Put That Thing Back Where It Came From
 						i(208490, {	-- Ensemble: Infinite Acolyte's Regalia
 							i(208519),	-- Infinite Soldier's Bracers
@@ -1135,7 +1135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			-- #else
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				n(ACHIEVEMENTS, {
-					ach(18705, {	-- Defender of the Timeways
+					ach(18705,bubbleDown({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Defender of the Timeways
 						title(514),	-- <Name> of the Infinite
 						crit(60810, {	-- Chronikar
 							["_encounter"] = { 2521, DIFFICULTY.DUNGEON.MYTHIC },
@@ -1162,7 +1162,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						crit(60817, {	-- Chrono-Lord Deios and the Infinite Dragonflight
 							["_encounter"] = { 2538, DIFFICULTY.DUNGEON.MYTHIC },
 						}),
-					}),
+					})),
 					ach(18706, bubbleDown({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 } }, {	-- Put That Thing Back Where It Came From
 						i(208490, {	-- Ensemble: Infinite Acolyte's Regalia
 							i(208519),	-- Infinite Soldier's Bracers
