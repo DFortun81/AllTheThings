@@ -146,6 +146,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70887, {	-- Feeling Freedom
 						["provider"] = { "n", 185561 },	-- Kaestrasz
 						["coord"] = { 46.8, 78.8, VALDRAKKEN },
+						["lockCriteria"] = {4,
+							"questID", 69215,	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
+							"questID", 69203,	-- Cliffside Wylderdrake: Plated Brow (DM!)
+							"questID", 69172,	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
+							"questID", 69177,	-- Cliffside Wylderdrake: Split Head Horns (DM!)
+						},
 						["g"] = {
 							i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
 								["timeline"] = { ADDED_10_0_7 },
