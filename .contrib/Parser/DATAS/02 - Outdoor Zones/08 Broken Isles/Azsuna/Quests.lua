@@ -802,6 +802,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 					["coord"] = { 55.6, 43.2, AZSUNA },
 				}),
 				q(37963, {	-- Those Beyond Redemption
+					["timeline"] = { REMOVED_8_0_1 },	-- Wowhead / Github -- Replaced with WorldQuest?
 					["coord"] = { 57.6, 15.6, AZSUNA },
 				}),
 				q(37779, {	-- Tip the Scales
