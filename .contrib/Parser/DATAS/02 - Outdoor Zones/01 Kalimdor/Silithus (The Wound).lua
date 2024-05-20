@@ -1097,10 +1097,11 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 				}),
 				q(50229, {	-- A Wee Bit O' Cloth
 					["provider"] = { "o", 280948 },	-- Twilight Outhouse
-					["sourceQuests"] = {
-						50358,	-- Desert Research (A)
-						50372,	-- Desert Research (H)
-					},
+					-- TODO: Find proper SourceQuest
+					-- ["sourceQuests"] = {
+					-- 50358,	-- Desert Research (H)
+					-- 50372,	-- Desert Research (A)
+					-- },
 					["coord"] = { 29.6, 69.6, SILITHUS },
 				}),
 				q(50372, {	-- Desert Research (A)
