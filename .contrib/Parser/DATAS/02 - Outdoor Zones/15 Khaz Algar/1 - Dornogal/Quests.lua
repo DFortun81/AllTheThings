@@ -117,11 +117,20 @@
 				["coord"] = { 49.9, 49.3, DORNOGAL },
 			}),
 			-- end
+			-- Delves: Khaz Algar Research // move it to delves expansion feature, I guess?
+			q(82706, {	-- Delves: Khaz Algar Research
+				--["sourceQuests"] = { x },	-- ?
+				["isWeekly"] = true,
+				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+				["coord"] = { 47.4, 44.44, DORNOGAL },
+			}),
+
 		}),
 	}),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(79326),	-- after turn in questID 82153 (Embassies and Envoys), probably related to title for name or server side script that 'phase' npc in alliance room
+	q(80538),	-- after turn in questID 79525 (Report to the Councilward)
 });
 ]]--

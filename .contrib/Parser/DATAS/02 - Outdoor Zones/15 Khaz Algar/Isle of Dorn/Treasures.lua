@@ -65,6 +65,39 @@
 					-- few flowers
 				},
 			}),
+			o(xx, {	-- ? // possibly move to special?
+				--["description"] = "Interact with Lost Mosswool 3 times to spawn this treasure",
+				--["questID"] = x,
+				["coord"] = { 37.7, 62.9, ISLE_OF_DORN },
+				["g"] = {
+					n(223104, {	-- Lionel
+						["description"] = "Interact with fish and throw it into water",
+						["questID"] = 82212,	-- Weak Lionfish
+						["coord"] = { 37.7, 62.9, ISLE_OF_DORN },
+					}),
+					n(223143, {	-- Lionel
+						["description"] = "Give fish 'a good meal'",	-- idk
+						--["questID"] = x,	-- Weak Lionfish
+						["coord"] = { 37.8, 62.8, ISLE_OF_DORN },
+					}),
+				},
+			}),
+			o(x, {	-- U'llort the Self-Exalted
+				--[description] = "",	-- TODO: Require Boskroot cap
+				--["questID"] = x,
+				["coord"] = { 54.8, 69.8, ISLE_OF_DORN },
+				["g"] = {
+					--
+				},
+			}),
+			o(446473, {	-- Herb-Infused Brew
+				--vignette and actual object have different names, probably have other objectID
+				["questID"] = 82714,
+				["coord"] = { 56.3, 64.2, ISLE_OF_DORN },
+				["g"] = {
+					i(224263),	-- Infused Cinderbrew
+				},
+			}),
 		}),
 	}),
 })));

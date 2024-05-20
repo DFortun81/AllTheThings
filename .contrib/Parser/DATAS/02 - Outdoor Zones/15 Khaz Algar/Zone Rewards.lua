@@ -65,6 +65,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--On first opening I recieve:
 			--i(224172), -- Restored Coffer Key
 			--i(224677), -- Lockstitch Headgear // same - unsure if it is locked by zone (The Ringing Deeps) where I loot it or not
+			--i(225653),	-- Siphoning Lightbrand // Isle of Dorn zone reward
 			--hqt - 83280, possibly related to key but dunno (1st cache)
 			--hqt - 83281, possibly related to key but dunno (2nd cache)
 		}),

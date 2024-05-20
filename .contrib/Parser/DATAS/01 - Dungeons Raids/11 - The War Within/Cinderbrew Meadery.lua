@@ -4,8 +4,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1272, {	-- Cinderbrew Meadery
 		--["coord"] = { X, Y, ISLE_OF_DORN },
-		--["maps"] = {
-		--},
+		--["maps"] = { 2335 },
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2586, {	-- Brew Master Aldryr
