@@ -5958,7 +5958,6 @@ root(ROOTS.Unsorted, {
 						------ Mogubreaker Battlegear (Red) ------
 						i(214050),	-- Tidesplitter Cinch
 						i(214046),	-- Tidesplitter Handguards
-						i(214049),	-- Tidesplitter Mantle
 						i(214048),	-- Tidesplitter Pants
 						i(214045),	-- Tidesplitter Treads
 						i(214051),	-- Tidesplitter Wraps
@@ -6404,7 +6403,6 @@ root(ROOTS.Unsorted, {
 					i(215638),	-- Fist of Shek'zeer
 					i(215639),	-- Mist Shaman's Knuckles
 					i(215640),	-- Barbs of the Rikkitun
-					i(215642),	-- Fangs of Despair
 					i(215644),	-- Amber Claw
 					i(215646),	-- Claw of the Fallen Temple
 					i(215647),	-- Ka'eng, Fang of Shadow
@@ -6661,7 +6659,6 @@ root(ROOTS.Unsorted, {
 					i(215945),	-- Binan Scimitar
 					i(215947),	-- Inkgill Sword
 					i(215948),	-- Darkhide Sword
-					i(215950),	-- Mei's Sword
 					i(215951),	-- Sha-Blighted Sword
 					i(215952),	-- Fear's Bite
 					i(215953),	-- Siege Captain's Blade

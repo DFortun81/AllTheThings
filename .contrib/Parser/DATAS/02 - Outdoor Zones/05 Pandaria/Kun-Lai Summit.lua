@@ -1689,6 +1689,9 @@ root(ROOTS.Zones, {
 							{ 45.7, 43.8, THE_JADE_FOREST },
 						},
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(85694),	-- A Missive from Lorewalker Cho (QI!)
+						},
 					}),
 					q(38936, {	-- The Road to Kun-Lai (Adventure guide)
 						["isBreadcrumb"] = true,

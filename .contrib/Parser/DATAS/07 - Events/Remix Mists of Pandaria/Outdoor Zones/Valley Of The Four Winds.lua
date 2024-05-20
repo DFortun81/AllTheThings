@@ -67,6 +67,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				q(81564),	-- The Story of Noodles
 			}),
 			n(REWARDS, {
+				filter(FIST_WEAPONS, {
+					i(215642),	-- Fangs of Despair
+				}),
 				filter(HELD_IN_OFF_HAND, {
 					i(215676),	-- Hopebringer's Lantern
 					i(216441),	-- Pandaren Manual
@@ -76,6 +79,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				filter(ONE_HANDED_SWORDS, {
 					i(215941),	-- Faded Forest Sword
+					i(215950),	-- Mei's Sword
 					i(216476),	-- Temple Trainee's Edge
 				}),
 				filter(TWO_HANDED_MACES, {

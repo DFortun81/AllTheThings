@@ -73,6 +73,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(214059),	-- Brushstalker Tunic
 				i(214047),	-- Tidesplitter Cap
 				i(214044),	-- Tidesplitter Jerkin
+				i(214049),	-- Tidesplitter Mantle
 			}),
 			filter(MAIL, {
 				i(214420),	-- Waterburst Breastplate

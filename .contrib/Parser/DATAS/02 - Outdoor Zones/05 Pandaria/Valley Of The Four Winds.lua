@@ -1384,6 +1384,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 48.3, 33.4, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 62377 },	-- Gardener Fran
 						["g"] = {
+							i(77281),	-- Fran's Watering Can (QI!)
 							i(81844),	-- Gardener's Sickle
 							i(81845),	-- Gardener's Wand
 							i(81846),	-- Fran's Spear
