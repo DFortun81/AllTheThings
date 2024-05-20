@@ -5987,16 +5987,6 @@ root(ROOTS.Unsorted, {
 						i(220989),	-- Fire-Charm Jacket
 					}),
 					filter(MAIL, {
-						------ Trailseeker's Laminar Armor (White) ------
-						i(214492),	-- Jade Guardian's Belt
-						i(214496),	-- Jade Guardian's Boots
-						i(214498),	-- Jade Guardian's Bracers
-						i(214493),	-- Jade Guardian's Gauntlets
-						i(214497),	-- Jade Guardian's Hauberk
-						i(214495),	-- Jade Guardian's Helm
-						i(214489),	-- Jade Guardian's Leggings
-						i(214491),	-- Jade Guardian's Spaulders
-
 						------ Dawnwatcher's Scale Armor (Blue) ------
 						i(214507),	-- Dawnwatcher's Armbands
 						i(214513),	-- Dawnwatcher's Chain
@@ -6359,7 +6349,6 @@ root(ROOTS.Unsorted, {
 					i(215591),	-- Soulsever
 					i(215592),	-- Soulsever
 					i(215593),	-- Soulsever
-					i(215594),	-- Warbringer's Blade
 					i(215596),	-- Jadestone Dagger
 					i(215597),	-- Mushan Slicer
 					i(215598),	-- Regal Slicer
