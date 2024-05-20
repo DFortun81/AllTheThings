@@ -664,6 +664,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72328, {	-- Out Ferocious, Armored Steeds
 						["provider"] = { "n", 186462 },	-- Tatto
 						["coord"] = { 13.8, 49.7, THE_AZURE_SPAN },
+						["lockCriteria"] = {2,
+							"spellID", 376910,	-- Brown War Ottuk (MOUNT!)
+							"spellID", 376913,	-- Yellow War Ottuk (MOUNT!)
+						},
 						["g"] = {
 							i(201426),	-- Brown War Ottuk (MOUNT!)
 							i(201425),	-- Yellow War Ottuk (MOUNT!)
