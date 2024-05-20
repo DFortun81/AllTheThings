@@ -41,11 +41,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2938),	-- Sleeping Gorge
 				exploration(2561),	-- The Vice
 			}),
-			petbattles({
-				n(66522, {	-- Lydia Accoste <Grand Master Pet Tamer>
-					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
-				}),
-			}),
 			-- #if AFTER 7.0.3.21796
 			n(QUESTS, {
 				q(44154, {	-- The Rite of the Executioner
