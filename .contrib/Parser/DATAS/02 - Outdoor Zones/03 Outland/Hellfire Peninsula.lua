@@ -690,7 +690,7 @@ root(ROOTS.Zones, {
 					q(9472, {	-- Arelion's Mistress
 						["qg"] = 16793,	-- Magistrix Carinda
 						["sourceQuests"] = {
-							9483,	-- Life's Finer Pleasures
+							-- 9483,	-- Life's Finer Pleasures
 							10287,	-- The Mistress Revealed
 						},
 						["coord"] = { 26.3, 60.3, HELLFIRE_PENINSULA },
