@@ -1331,7 +1331,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(25955, {	-- A Better Vantage (H)
 							["qg"] = 40916,	-- Captain Vilethorn
-							["sourceQuest"] = 25595,	-- Something Edible
+							["sourceQuests"] = {
+								25595,	-- Something Edible
+								25593,	-- Shelled Salvation
+							},
 							["coord"] = { 51.1, 62.9, 205 },
 							["races"] = HORDE_ONLY,
 						}),
@@ -1508,7 +1511,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(25952, {	-- Caught Off-Guard (H)
 							["qg"] = 40916,	-- Captain Vilethorn
-							["sourceQuest"] = 25595,	-- Something Edible
+							["sourceQuests"] = {
+								25595,	-- Something Edible
+								25593,	-- Shelled Salvation
+							},
 							["coord"] = { 51.1, 62.9, 205 },
 							["races"] = HORDE_ONLY,
 						}),
@@ -2015,7 +2021,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(25953, {	-- Swift Approach (H)
 							["qg"] = 40917,	-- Legionnaire Nazgrim
-							["sourceQuest"] = 25595,	-- Something Edible (definitely required)
+							["sourceQuests"] = {
+								25595,	-- Something Edible
+								25593,	-- Shelled Salvation
+							},
 							["coord"] = { 51.2, 63.0, 205 },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
