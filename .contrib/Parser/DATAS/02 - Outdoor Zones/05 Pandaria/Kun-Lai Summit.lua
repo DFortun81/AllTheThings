@@ -1489,7 +1489,11 @@ root(ROOTS.Zones, {
 					q(30665, {	-- The Defense of Shado-Pan Fallback
 						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60161 },	-- Shado-Master Chong
-						["sourceQuest"] = 30457,	-- Call Out Their Leader
+						["sourceQuests"] = {
+							30459,	-- All of the Arrows
+							30457,	-- Call Out Their Leader
+							30460,	-- Hit Medicine
+						},
 					}),
 					q(30855, {	-- The Fall of Shai Hu
 						["coord"] = { 74.9, 88.5, KUN_LAI_SUMMIT },
