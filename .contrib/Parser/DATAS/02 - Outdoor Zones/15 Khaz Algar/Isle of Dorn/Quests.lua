@@ -414,6 +414,76 @@
 					--c(2897),	-- Council of Dornogal Commendation, one-time Warbound bonus
 				},
 			}),
+			--
+			q(78291, {	-- Power Predators
+				["sourceQuests"] = { 78289 },	-- To Rambleshire
+				["provider"] = { "n", 211740 },	-- Rooktender Lufsela
+				["coord"] = { 62.5, 29.3, ISLE_OF_DORN },
+			}),
+			q(78290, {	-- Sleepy Sheep
+				["sourceQuests"] = { 78289 },	-- To Rambleshire
+				["provider"] = { "n", 211740 },	-- Rooktender Lufsela
+				["coord"] = { 62.5, 29.3, ISLE_OF_DORN },
+				["g"] = {
+					i(210489),	-- Lodestone (QI!)
+					i(211459),	-- Energized Lodestone (QI!)
+				},
+			}),
+			q(78292, {	-- Lost Lord of the Storm
+				["sourceQuests"] = {
+					78291,	-- Power Predators
+					78290,	-- Sleepy Sheep
+				},
+				["provider"] = { "n", 209918 },	-- Head Rancher Stenspor
+				["coord"] = { 60.4, 26.2, ISLE_OF_DORN },
+			}),
+			q(78293, {	-- Their Moss, Our Gain
+				["sourceQuests"] = { 78292 },	-- Lost Lord of the Storm
+				["provider"] = { "n", 209918 },	-- Head Rancher Stenspor
+				["coord"] = { 59.3, 27.6, ISLE_OF_DORN },
+				["g"] = {
+					i(211858),	-- Electrified Mosswool (QI!)
+				},
+			}),
+			q(78294, {	-- Thunderhead Butt
+				["sourceQuests"] = { 78293 },	-- Their Moss, Our Gain
+				["provider"] = { "n", 211740 },	-- Rooktender Lufsela
+				["coord"] = { 59.3, 27.6, ISLE_OF_DORN },
+				["g"] = {
+					--crit 'Lost Lord of the Storm' for achievementID 20595 (Sojourner of Isle of Dorn)
+					--c(2897), x500 Council of Dornogal Commendation, one-time Warband bonus
+					--c(2897), x150 Council of Dornogal Commendation, one-time Warband bonus
+				},
+			}),
+			-- The Proscenium // probably gonna need to separate header for event in expansion feature?
+			q(82775, {	-- Quickchange Artist (turn in here too and despawn after turn in?)
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 215748 },	-- Wendeline
+				["coord"] = { 57.0, 53.8, ISLE_OF_DORN },
+			}),
+			q(79150, {	-- Thespians at the Proscenium
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 214296 },	-- Stage Manager Huberta
+				["coord"] = { 56.5, 52.8, ISLE_OF_DORN },
+			}),
+			q(79282, {	-- The Grand Debut
+				["sourceQuests"] = { 79150 },	-- Thespians at the Proscenium
+				["provider"] = { "n", 214296 },	-- Stage Manager Huberta
+				["coord"] = { 56.5, 52.8, ISLE_OF_DORN },
+			}),
+			q(83240, {	-- The Theater Troupe
+				--["sourceQuests"] = { x },	-- ?
+				["isWeekly"] = true,
+				["provider"] = { "n", 214296 },	-- Stage Manager Huberta
+				["coord"] = { 56.5, 52.8, ISLE_OF_DORN },
+				["g"] = {
+					-- public event progress bar reward
+					i(217011),	-- Amateur Actor's Chest
+					-- public event boss in the end
+					n(221071),	-- Overseer Roskarrag
+				},
+			}),
+			--
 			-- Bonus Objective
 			--	Rares / Bonus Objectives / Once per character?
 			--	need to be moved into rares if didn't get bonus objective

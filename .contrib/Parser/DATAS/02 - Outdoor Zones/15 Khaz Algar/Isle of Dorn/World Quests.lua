@@ -10,6 +10,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				DF_ACCOUNT_CAMPAIGN_QUEST,
 			},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+				petbattle(q(82292, {	-- Rock Collector
+					["coord"] = { 34.9, 85.6, ISLE_OF_DORN },
+				})),
+				petbattle(q(82291, {	-- Robot Rumble
+					--["coord"] = { x, y, ISLE_OF_DORN },	-- painful to go there without flying
+				})),
 				q(82658, {	-- Drop and Go
 					--["coord"] = { 45.2, 65.0, ISLE_OF_DORN },	-- could be wrong, all Isle of Dorn missing quest zone highlights
 					["g"] = {

@@ -637,17 +637,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			--this is probably with General only and probably need to move out of here?
 			q(81491, {	-- Armaments: Arbalests
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224171 },	-- Eirzay
 				["coord"] = { 63.0, 38.1, 2216 },
 			}),
 			q(81492, {	-- Armaments: Smithing Tools
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224172 },	-- Eirzay
 				["coord"] = { 48.4, 60.7, AZJ_KAHET },
 			}),
 			q(81477, {	-- Armaments: Weaponry
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224170 },	-- Eirzay
 				["coord"] = { 58.1, 39.3, 2216 },
 			}),
@@ -657,37 +657,37 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 48.6, 50.5, 2216 },
 			}),
 			q(81476, {	-- Bounty: Goliath
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224166 },	-- Eirzay
 				["coord"] = { 36.1, 50.2, 2213 },
 			}),
 			q(81489, {	Bounty: Zorikal the Patron
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224167 },	-- Eirzay
 				["coord"] = { 15.6, 45.9, 2213 },
 			}),
 			q(81475, {	-- Breaking the Phalanx: Royal Appointments
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224161 },	-- Eirzay
 				["coord"] = { 43.0, 47.1, 2213 },
 			}),
 			q(81488, {	-- Breaking the Phalanx: Sages
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224163 },	-- Eirzay
 				["coord"] = { 27.7, 57.8, 2213 },
 			}),
 			q(81487, {	-- Breaking the Phalanx: Venomblades
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224162 },	-- Eirzay
 				["coord"] = { 30.6, 42.6, 2213 },
 			}),
 			q(81494, {	-- Relics of War: Rak-Ahat
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224176 },	-- Eirzay
 				["coord"] = { 63.8, 26.3, 2216 },	-- bugged, 2 npc in exactly same place
 			}),
 			q(81478, {	-- Relics of War: The Ruptired Lake
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224173 },	-- Eirzay
 				["coord"] = { 39.5, 53.0, AZJ_KAHET },
 				["g"] = {
@@ -695,7 +695,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			q(81493, {	-- Relics of War: The Salien Gutter Conflict
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224174 },	-- Eirzay
 				["coord"] = { 63.8, 26.3, 2216 },	-- bugged, 2 npc in exactly same place
 				["g"] = {
@@ -705,7 +705,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--
 			--this is probably with Weaver only and probably need to move out of here?
 			q(81471, {	-- Dropping Eaves: Saving the Past
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224195 },	-- Ru'murh
 				["coord"] = { 73.3, 50.9, 2213 },
 				["g"] = {
@@ -713,7 +713,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			q(81470, {	-- Dropping Eaves: Thieving Weave
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224194 },	-- Ru'murh
 				["coord"] = { 70.3, 31.8, 2213 },
 				["g"] = {
@@ -721,17 +721,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			q(81472, {	-- Information Control: Ansurek's Truth
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224197 },	-- Ru'murh
 				["coord"] = { 39.8, 26.6, 2213 },
 			}),
 			q(81483, {	-- Infiltration: Production Blocker
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224199 },	-- Ru'murh
 				["coord"] = { 45.6, 51.0, 2216 },
 			}),
 			q(81504, {	-- Infiltration: Hidden Figures
-				["isDaily"] = true,	
+				["isDaily"] = true,
 				["provider"] = { "n", 224201 },	-- Ru'murh
 				["coord"] = { 76.2, 47.4, AZJ_KAHET },
 				["g"] = {
@@ -740,10 +740,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			--
 			--this is probably with Vizier only and probably need to move out of here?
-			q(81480, {	-- Wild Reagents: Maddening Deep // unable to finish it, broken
-				["isDaily"] = true,	
+			q(81480, {	-- Wild Reagents: Maddening Deep
+				["isDaily"] = true,
 				["provider"] = { "n", 224180 },	-- Ghos'opp
 				["coord"] = { 48.4, 61.9, AZJ_KAHET },
+				["g"] = {
+					i(219228),	-- Fetid Slime Sac (QI!)
+				},
 			}),
 			--
 			--	Rares / Bonus Objectives / Once per character?

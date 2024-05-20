@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82041, {	-- Beledar's Blessing
 					["coord"] = { 24.3, 60.9, HALLOWFALL },
 				}),
+				q(82583, {	-- Igniting the Fire Within
+					["coord"] = { 55.2, 32.7, HALLOWFALL },
+				}),
 				q(82088, {	-- Kobyss Kibosh
 					["coord"] = { 35.4, 54.7, HALLOWFALL },
 				}),
@@ -30,6 +33,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["g"] = {
 						i(219357),	-- Shipyard Tools (QI!)
 					},
+				}),
+				q(82197, {	-- Reserve Rumpus
+					["coord"] = { 42.0, 52.2, HALLOWFALL },
 				}),
 				q(81822, {	-- Skyrider Racing - Mereldar Meander
 					-- normal - 80260 / advanced - 80269 / reversed - 80275

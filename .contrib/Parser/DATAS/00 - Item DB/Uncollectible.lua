@@ -1849,5 +1849,6 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220272);	-- Torn Manuscript Page
 --i(220282);	-- Tuft of Whiskers
 --i(220295);	-- Unidentified Viscous Substance
+--i(220289);	-- Venomous Stinger
 --i(220270);	-- Vile Catalyst
 --i(225802);	-- Well-Worn Darning Needle

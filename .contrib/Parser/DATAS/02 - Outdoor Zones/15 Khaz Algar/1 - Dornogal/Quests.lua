@@ -117,6 +117,12 @@
 				["coord"] = { 49.9, 49.3, DORNOGAL },
 			}),
 			-- end
+			-- To Rambleshire (again, it wasn't here before, I'm not going insane right?)
+			q(78289, {	-- To Rumbleshire
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 214352 },	-- Rooktender Otwin
+				["coord"] = { 32.8, 33.6, DORNOGAL },
+			}),
 			-- Delves: Khaz Algar Research // move it to delves expansion feature, I guess?
 			q(82706, {	-- Delves: Khaz Algar Research
 				--["sourceQuests"] = { x },	-- ?
