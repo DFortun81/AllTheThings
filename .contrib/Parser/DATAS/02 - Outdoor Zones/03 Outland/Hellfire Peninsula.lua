@@ -2409,7 +2409,10 @@ root(ROOTS.Zones, {
 					}),
 					q(9400, {	-- The Assassin
 						["qg"] = 3230,	-- Nazgrel
-						["sourceQuest"] = 10087,	-- Burn It Up... For the Horde!
+						["sourceQuests"] = {
+							10087,	-- Burn It Up... For the Horde!
+							10124,	-- Forward Base: Reaver's Fall
+						},
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
