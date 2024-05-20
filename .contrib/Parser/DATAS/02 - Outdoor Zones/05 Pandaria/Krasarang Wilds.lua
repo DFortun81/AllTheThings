@@ -2603,6 +2603,7 @@ root(ROOTS.Zones, {
 							30174,	-- For Family
 							30273,	-- In the House of the Red Crane
 							30117,	-- Stoneplow Thirsts
+							30445,	-- The Waters of Youth
 							29990,	-- Training and Discipline
 						--	TODO: may also require the following quests:
 						--	29581,	-- The Golden Dream

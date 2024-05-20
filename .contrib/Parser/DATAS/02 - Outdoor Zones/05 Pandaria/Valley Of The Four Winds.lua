@@ -1951,7 +1951,6 @@ root(ROOTS.Zones, {
 							30376,	-- Hope Springs Eternal (breadcrumb, neutral)
 							30360,	-- Warn Stoneplow (breadcrumb, A)
 							30241,	-- Warn Stoneplow (breadcrumb, H)
-							30174,	-- For Family
 							30273,	-- In the House of the Red Crane
 							30117,	-- Stoneplow Thirsts
 							29990,	-- Training and Discipline
