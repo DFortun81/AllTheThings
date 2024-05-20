@@ -1005,41 +1005,10 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 	end
 end
 
-local function CheckForUnknownSourceID(link)
-	local sourceID = GetSourceID(link)
-	if not sourceID then
-		-- app.PrintDebug("No SourceID",link)
-		return
-	end
-	if app.IsAccountCached("Sources", sourceID) then
-		-- app.PrintDebug("Learned SourceID",sourceID,link)
-		return
-	end
-
-	-- TODO: add information type to show character which has the item
-	app.SetAccountCached("SourceItemsOnCharacter",sourceID,app.GUID)
-	-- app.PrintDebug("Unlearned SourceID!",sourceID,link)
-	return
-end
-local function ClearIfMyGuid(container)
-	local guid = app.GUID
-	for id,val in pairs(container) do
-		if val == guid then
-			container[id] = nil
-		end
-	end
-end
-local function CheckForBoundSourceItems()
-	app.ScanInventory(CheckForUnknownSourceID)
-end
 app.AddEventHandler("OnStartup", function()
 	-- TODO: app.AddEventRegistration
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
-
-	if app.IsRetail then
-		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 5)
-	end
 
 	local conversions = app.Settings.InformationTypeConversionMethods;
 	conversions.sourceID = function(sourceID)
@@ -1057,6 +1026,43 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 end);
 
 if app.IsRetail then
+	local function CheckForUnknownSourceID(link)
+		local sourceID = GetSourceID(link)
+		if not sourceID then
+			-- app.PrintDebug("No SourceID",link)
+			return
+		end
+		if app.IsAccountCached("Sources", sourceID) then
+			-- app.PrintDebug("Learned SourceID",sourceID,link)
+			return
+		end
+		-- if wrong class then won't be learned (probably)
+		local item = app.SearchForObject("sourceID", sourceID, "field")
+		if item.nmc or item.nmr then
+			-- app.PrintDebug("Wrong class/race SourceID",sourceID,link)
+			return
+		end
+
+		-- TODO: add information type to show character which has the item
+		app.SetAccountCached("SourceItemsOnCharacter",sourceID,app.GUID)
+		-- app.PrintDebug("Unlearned SourceID!",sourceID,link)
+		return
+	end
+	local function ClearIfMyGuid(container)
+		local guid = app.GUID
+		for id,val in pairs(container) do
+			if val == guid then
+				container[id] = nil
+			end
+		end
+	end
+	local function CheckForBoundSourceItems()
+		app.ScanInventory(CheckForUnknownSourceID)
+	end
+
+	app.AddEventHandler("OnStartup", function()
+		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 5)
+	end);
 	app.AddEventRegistration("BANKFRAME_OPENED", function()
 		app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)
 		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
