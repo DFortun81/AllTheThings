@@ -1,13 +1,6 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-DUNGEONS = createHeader({
-	readable = "Dungeons",
-	icon = [[~_.asset("Category_D&R")]],
-	text = {
-		en = "Dungeons",
-	},
-});
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	n(DUNGEONS, {
 		n(ACHIEVEMENTS, {
