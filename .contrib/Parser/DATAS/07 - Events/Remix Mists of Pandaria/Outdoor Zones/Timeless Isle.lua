@@ -250,6 +250,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					i(215746),	-- Bearheart's Basher
+					i(215793),	-- Bo-Ris
+					i(215948),	-- Darkhide Sword
+					i(215952),	-- Fear's Bite
 					i(216535),	-- Ironwood Bulwark
 					i(215486),	-- Jinyu Waraxe
 					i(215603),	-- Sha-Warped Slicer
