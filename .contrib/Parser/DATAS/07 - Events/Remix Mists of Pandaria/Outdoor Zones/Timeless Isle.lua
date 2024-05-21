@@ -249,6 +249,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214402),	-- Wildblood Wraps
 				}),
 				n(WEAPONS, {
+					i(215746),	-- Bearheart's Basher
+					i(216535),	-- Ironwood Bulwark
+					i(215486),	-- Jinyu Waraxe
+					i(215603),	-- Sha-Warped Slicer
+					i(215889),	-- Soulwood Spire
+					i(215515),	-- Wallwatcher's Greataxe
 					i(215776),	-- Zeeg's Ancient Kegbreaker
 				}),
 			}),

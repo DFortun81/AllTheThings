@@ -6190,7 +6190,6 @@ root(ROOTS.Unsorted, {
 					i(215480),	-- Korven's Crescent
 					i(215481),	-- Elegion, the Star Cleaver
 					i(215483),	-- Elegion, the Star Cleaver
-					i(215486),	-- Jinyu Waraxe
 					i(215489),	-- Wasteland Hacker
 					i(215490),	-- Snowdrift Battleaxe
 					i(215491),	-- Dubious Waraxe
@@ -6215,7 +6214,6 @@ root(ROOTS.Unsorted, {
 					i(215512),	-- Wallwatcher's Poleaxe
 					i(215513),	-- Wallwatcher's Axe
 					i(215514),	-- Wallwatcher's Longaxe
-					i(215515),	-- Wallwatcher's Greataxe
 					i(215516),	-- Uroe, Harbinger of Fear
 					i(215517),	-- Uroe, Harbinger of Fear
 					i(215518),	-- Uroe, Harbinger of Fear
@@ -6296,7 +6294,6 @@ root(ROOTS.Unsorted, {
 					i(215599),	-- Mountainscaler Slicer
 					i(215600),	-- Grummle Shortblade
 					i(215602),	-- Spiritbound Stabber
-					i(215603),	-- Sha-Warped Slicer
 					i(215604),	-- Mogu Severer
 					i(215605),	-- Ravenclaw Dagger
 					i(215606),	-- Firescribe Slicer
@@ -6406,21 +6403,17 @@ root(ROOTS.Unsorted, {
 					i(215724),	-- Siegecrafter's Forge Drill
 					i(215725),	-- Siegecrafter's Forge Drill
 					i(215726),	-- Siegecrafter's Forge Drill
-
 					i(215728),	-- Galvanized Stormcrusher
 					i(215729),	-- Galvanized Stormcrusher
 					i(215731),	-- Tihan, Scepter of the Sleeper
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215734),	-- Kri'tak, Scepter of the Swarm
-
 					i(215736),	-- Kri'tak, Scepter of the Swarm
-
 					i(215739),	-- Shomi's Scepter
 					i(215740),	-- Jinyu Bonebreaker
 					i(215741),	-- Bloodseeker's Bonebreaker
 					i(215743),	-- Sunsoul Smasher
 					i(215745),	-- Wasteland Basher
-					i(215746),	-- Bearheart's Basher
 					i(215748),	-- Fireblaze Mace
 					i(215749),	-- Ordo Basher
 					i(215753),	-- Gao's Kegbreaker
@@ -6517,7 +6510,6 @@ root(ROOTS.Unsorted, {
 					i(215886),	-- Soulwood Spire
 					i(215887),	-- Soulwood Spire
 					i(215888),	-- Soulwood Spire
-					i(215889),	-- Soulwood Spire
 					i(215890),	-- Hopespreader's Staff
 					i(215891),	-- Staff of Hidden Knowledge
 					i(215892),	-- Staff of the Black Ox
@@ -6709,7 +6701,6 @@ root(ROOTS.Unsorted, {
 					i(216475),	-- Temple Trainee's Blade
 					i(216477),	-- Temple Trainee's Scimitar
 					i(216478),	-- Pandaren Flamberge
-
 					i(216480),	-- Pandaren Greatblade
 					i(216481),	-- Pandaren Greatsword
 					i(216482),	-- Pandaren Windblade
@@ -6718,7 +6709,6 @@ root(ROOTS.Unsorted, {
 					i(216532),	-- Protection of the Emperor
 					i(216533),	-- Ironwood Shield
 					i(216534),	-- Ironwood Deflector
-					i(216535),	-- Ironwood Bulwark
 					i(216536),	-- Ironwood Barrier
 					i(216537),	-- Mogu Lord's Deflector
 					i(216538),	-- Mogu Lord's Bulwark
