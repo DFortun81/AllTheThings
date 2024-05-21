@@ -22,43 +22,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				},
 			}),
 		}),
-		n(WEAPONS, {
-			filter(BOWS, {
-				i(215535),	-- Featherdraw Warbow
-			}),
-			filter(DAGGERS, {
-				i(215613),	-- Mogu Lord's Blade
-			}),
-			filter(FIST_WEAPONS, {
-				i(215645),	-- Tian Handblade
-			}),
-			filter(GUNS, {
-				i(215705),	-- Penate's Pistol
-			}),
-			filter(ONE_HANDED_MACES, {
-				i(215755),	-- Je'lyu, Scepter of the Serpent
-				i(215751),	-- Porter's Mace
-			}),
-			filter(ONE_HANDED_SWORDS, {
-				i(215954),	-- Kor'dok's Sword
-			}),
-			filter(POLEARMS, {
-				i(215806),	-- Ghostheart Warspear
-			}),
-			filter(SHIELDS, {
-				i(216582),	-- Bulwark of the Protectorate
-				i(216581),	-- Deflector of the Protectorate
-			}),
-			filter(STAVES, {
-				i(215882),	-- Lorewalker's Staff
-				i(215879),	-- Mountainsage Spire
-				i(215878),	-- Springrain Spire
-				i(215875),	-- Staff of Stolen Hope
-			}),
-			filter(TWO_HANDED_MACES, {
-				i(215784),	-- Taran Zhu's Bonebreaker
-			}),
-		}),
 		n(ARMOR, {
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				filter(CLOTH, {
@@ -114,6 +77,23 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214416),	-- Mogu Lord's Sabatons
 				}),
 			}),
+		}),
+		n(WEAPONS, {
+			i(216582),	-- Bulwark of the Protectorate
+			i(216581),	-- Deflector of the Protectorate
+			i(215535),	-- Featherdraw Warbow
+			i(215806),	-- Ghostheart Warspear
+			i(215755),	-- Je'lyu, Scepter of the Serpent
+			i(215954),	-- Kor'dok's Sword
+			i(215882),	-- Lorewalker's Staff
+			i(215613),	-- Mogu Lord's Blade
+			i(215879),	-- Mountainsage Spire
+			i(215705),	-- Penate's Pistol
+			i(215751),	-- Porter's Mace
+			i(215878),	-- Springrain Spire
+			i(215875),	-- Staff of Stolen Hope
+			i(215784),	-- Taran Zhu's Bonebreaker
+			i(215645),	-- Tian Handblade
 		}),
 		inst(303, {	-- Gate of the Setting Sun
 			["coord"] = { 15.8, 74.8, VALE_OF_ETERNAL_BLOSSOMS },
