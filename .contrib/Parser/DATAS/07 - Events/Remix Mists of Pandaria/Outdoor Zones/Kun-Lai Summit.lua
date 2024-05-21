@@ -86,15 +86,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-				filter(DAGGERS, {
-					i(210335),	-- Shado-Pan Dagger
-				}),
-				filter(HELD_IN_OFF_HAND, {
-					i(215681),	-- Crane's Beak Effigy
-				}),
-				filter(STAVES, {
-					i(215869),	-- Waterweaver's Staff
-				}),
 				filter(LEATHER, {
 					i(214095),	-- Mistveil Cap
 					i(214097),	-- Mistveil Cinch
@@ -104,6 +95,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214099),	-- Mistveil Pants
 					i(214094),	-- Mistveil Treads
 					i(214092),	-- Mistveil Wraps
+				}),
+				filter(MAIL, {
+					i(214507),	-- Dawnwatcher's Armbands
+					i(214513),	-- Dawnwatcher's Chain
+					i(214508),	-- Dawnwatcher's Chestguard
+					i(214511),	-- Dawnwatcher's Gloves
+					i(214510),	-- Dawnwatcher's Headguard
+					i(214515),	-- Dawnwatcher's Legguards
+					i(214514),	-- Dawnwatcher's Pauldrons
+					i(214509),	-- Dawnwatcher's Sabatons
+				}),
+				n(WEAPONS, {
+					i(215644),	-- Amber Claw
+					i(215681),	-- Crane's Beak Effigy
+					i(210335),	-- Shado-Pan Dagger
+					i(215869),	-- Waterweaver's Staff
 				}),
 			}),
 		},

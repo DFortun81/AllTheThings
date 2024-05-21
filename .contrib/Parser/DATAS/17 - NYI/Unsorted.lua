@@ -5971,16 +5971,6 @@ root(ROOTS.Unsorted, {
 						i(220989),	-- Fire-Charm Jacket
 					}),
 					filter(MAIL, {
-						------ Dawnwatcher's Scale Armor (Blue) ------
-						i(214507),	-- Dawnwatcher's Armbands
-						i(214513),	-- Dawnwatcher's Chain
-						i(214508),	-- Dawnwatcher's Chestguard
-						i(214511),	-- Dawnwatcher's Gloves
-						i(214510),	-- Dawnwatcher's Headguard
-						i(214515),	-- Dawnwatcher's Legguards
-						i(214514),	-- Dawnwatcher's Pauldrons
-						i(214509),	-- Dawnwatcher's Sabatons
-
 						------ Dawnwatcher's Scale Armor (Purple) ------
 						i(214525),	-- Streamspeaker Breastplate
 						i(214524),	-- Streamspeaker Footguards
@@ -6377,7 +6367,6 @@ root(ROOTS.Unsorted, {
 					i(215638),	-- Fist of Shek'zeer
 					i(215639),	-- Mist Shaman's Knuckles
 					i(215640),	-- Barbs of the Rikkitun
-					i(215644),	-- Amber Claw
 					i(215646),	-- Claw of the Fallen Temple
 					i(215647),	-- Ka'eng, Fang of Shadow
 					i(215648),	-- Ner'onok's Katar

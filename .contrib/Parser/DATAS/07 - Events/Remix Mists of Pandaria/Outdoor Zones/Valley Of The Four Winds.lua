@@ -67,32 +67,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				q(81564),	-- The Story of Noodles
 			}),
 			n(REWARDS, {
-				filter(FIST_WEAPONS, {
-					i(215642),	-- Fangs of Despair
-				}),
-				filter(HELD_IN_OFF_HAND, {
-					i(215676),	-- Hopebringer's Lantern
-					i(216441),	-- Pandaren Manual
-				}),
-				filter(ONE_HANDED_AXES, {
-					i(215485),	-- Shomi's Hatchet
-				}),
-				filter(ONE_HANDED_SWORDS, {
-					i(215941),	-- Faded Forest Sword
-					i(215950),	-- Mei's Sword
-					i(216476),	-- Temple Trainee's Edge
-				}),
-				filter(TWO_HANDED_MACES, {
-					i(215744),	-- Cloudfall Scepter
-					i(215781),	-- Sumprush Maul
-				}),
-				filter(SHIELDS, {
-					i(216568),	-- Yaungol Bulwark
-				}),
-				filter(STAVES, {
-					i(215870),	-- Amberweaver's Rod
-					i(215867),	-- Diviner's Spire
-				}),
 				filter(LEATHER, {
 					i(214104),	-- Mistdancer Cap
 					i(214102),	-- Mistdancer Cinch
@@ -112,6 +86,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214467),	-- Trailseeker's Legguards
 					i(214468),	-- Trailseeker's Pauldrons
 					i(214474),	-- Trailseeker's Sabatons
+				}),
+				n(WEAPONS, {
+					i(215870),	-- Amberweaver's Rod
+					i(215744),	-- Cloudfall Scepter
+					i(215867),	-- Diviner's Spire
+					i(215941),	-- Faded Forest Sword
+					i(215642),	-- Fangs of Despair
+					i(215676),	-- Hopebringer's Lantern
+					i(215950),	-- Mei's Sword
+					i(216441),	-- Pandaren Manual
+					i(215485),	-- Shomi's Hatchet
+					i(215781),	-- Sumprush Maul
+					i(216476),	-- Temple Trainee's Edge
+					i(216568),	-- Yaungol Bulwark
 				}),
 			}),
 		},

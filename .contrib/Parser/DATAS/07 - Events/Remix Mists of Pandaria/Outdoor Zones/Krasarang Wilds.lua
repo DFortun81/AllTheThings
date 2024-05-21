@@ -206,24 +206,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-				filter(FIST_WEAPONS, {
-					i(215643),	-- Klaxxi Pincers
-				}),
-				filter(ONE_HANDED_AXES, {
-					i(215484),	-- Boggeo's Ceremonial Axe
-					i(216023),	-- Pandaren Hacker
-				}),
-				filter(ONE_HANDED_MACES, {
-					i(215742),	-- Faded Forest Crusher
-					i(216422),	-- Pandaren Smasher
-				}),
-				filter(SHIELDS, {
-					i(210634),	-- Shield of the Wakener
-				}),
-				filter(STAVES, {
-					i(215872),	-- Amberweaver's Spire
-					i(215858),	-- Diviner's Staff
-				}),
 				filter(LEATHER, {
 					i(214069),	-- Thunderpaw Belt
 					i(214074),	-- Thunderpaw Boots
@@ -243,6 +225,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214486),	-- Peakscaler Legwraps
 					i(214485),	-- Peakscaler Mantle
 					i(214479),	-- Peakscaler Wristguards
+				}),
+				n(WEAPONS, {
+					i(215872),	-- Amberweaver's Spire
+					i(215484),	-- Boggeo's Ceremonial Axe
+					i(215858),	-- Diviner's Staff
+					i(215742),	-- Faded Forest Crusher
+					i(215643),	-- Klaxxi Pincers
+					i(216023),	-- Pandaren Hacker
+					i(216422),	-- Pandaren Smasher
+					i(210634),	-- Shield of the Wakener
 				}),
 			}),
 		},

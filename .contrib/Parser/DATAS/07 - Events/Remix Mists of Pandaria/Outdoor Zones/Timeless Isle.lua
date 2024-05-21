@@ -230,9 +230,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-				filter(ONE_HANDED_MACES, {
-					i(215776),	-- Zeeg's Ancient Kegbreaker
-				}),
 				filter(LEATHER, {
 					i(214387),	-- Snowdrift Bindings
 					i(214390),	-- Snowdrift Cover
@@ -250,6 +247,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214395),	-- Wildblood Pants
 					i(214400),	-- Wildblood Treads
 					i(214402),	-- Wildblood Wraps
+				}),
+				n(WEAPONS, {
+					i(215776),	-- Zeeg's Ancient Kegbreaker
 				}),
 			}),
 		},
