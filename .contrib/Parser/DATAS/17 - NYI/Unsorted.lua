@@ -5971,16 +5971,6 @@ root(ROOTS.Unsorted, {
 						i(220989),	-- Fire-Charm Jacket
 					}),
 					filter(MAIL, {
-						------ Dawnwatcher's Scale Armor (Purple) ------
-						i(214525),	-- Streamspeaker Breastplate
-						i(214524),	-- Streamspeaker Footguards
-						i(214521),	-- Streamspeaker Girdle
-						i(214522),	-- Streamspeaker Grips
-						i(214523),	-- Streamspeaker Helmet
-						i(214519),	-- Streamspeaker Legwraps
-						i(214520),	-- Streamspeaker Mantle
-						i(214526),	-- Streamspeaker Wristguards
-
 						------ Dawnwatcher's Scale Armor (Blue) ------
 						i(214532),	-- Reedstalker Belt
 						i(214529),	-- Reedstalker Boots
