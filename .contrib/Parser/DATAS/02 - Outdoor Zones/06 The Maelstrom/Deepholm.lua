@@ -313,11 +313,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(27123, {	-- Deepholm, Realm of Earth
-						["lvl"] = 82,
 						["qg"] = 45042,	-- Thrall
 						["sourceQuest"] = 27203,	-- The Maelstrom
-						["isBreadcrumb"] = true,
 						["maps"] = { 276 },	-- The Maelstrom
+						["isBreadcrumb"] = true,
+						["lvl"] = 82,
 					}),
 					q(26869, {	-- Depth of the Depths
 						["qg"] = 42467,	-- Diamant the Patient
@@ -977,6 +977,7 @@ root(ROOTS.Zones, {
 							{ 50.4, 38.2, ORGRIMMAR },	-- Farseer Krogar
 							{ 74.4, 18.8, STORMWIND_CITY },	-- Naraat the Earthspeaker
 						},
+						["maps"] = { 276 },	-- The Maelstrom
 						["isBreadcrumb"] = true,
 						["lvl"] = 82,
 					}),
