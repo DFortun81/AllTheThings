@@ -314,27 +314,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			d(DIFFICULTY.RAID.NORMAL, {
-				n(WEAPONS, {
-					filter(FIST_WEAPONS, {
-						i(215653),	-- Amun-Thoth, Sul's Spiritrender
-						i(216401),	-- Tia-Tia, the Spinning Star
-					}),
-					filter(ONE_HANDED_AXES, {
-						i(215499),	-- Kura-Kura, Kazra'jin's Headtaker
-					}),
-					filter(ONE_HANDED_MACES, {
-						i(216426),	-- Acid-Spine Bonebreaker
-					}),
-					filter(SHIELDS, {
-						i(216590),	-- Tortos' Shell
-					}),
-					filter(STAVES, {
-						i(216464),	-- Dinomancer's Spire
-					}),
-					filter(TWO_HANDED_MACES, {
-						i(215788),	-- Kazra'jin's Maul
-					}),
-				}),
 				n(ARMOR, {
 					filter(CLOTH, {
 						-- MAGE
@@ -444,6 +423,25 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215007),	-- Pauldrons of the Last Mogu
 						i(215008),	-- Girdle of the Last Mogu
 					}),
+				}),
+				n(WEAPONS, {
+					i(216426),	-- Acid-Spine Bonebreaker
+					i(215653),	-- Amun-Thoth, Sul's Spiritrender
+					i(216596),	-- Bulwark of Twinned Despair
+					i(216464),	-- Dinomancer's Spire
+					i(215906),	-- Do-tharak, the Foebreaker
+					i(215770),	-- Jerthud, Hand of the Savior
+					i(215788),	-- Kazra'jin's Maul
+					i(215499),	-- Kura-Kura, Kazra'jin's Headtaker
+					i(215767),	-- Mace of Dark Animus
+					i(216015),	-- Shellsplitter Battleaxe
+					i(216587),	-- Shield of the Gloaming
+					i(215966),	-- Soulblade of the Storm
+					i(216018),	-- Stormbreaker's Waraxe
+					i(216401),	-- Tia-Tia, the Spinning Star
+					i(216590),	-- Tortos' Shell
+					i(215774),	-- Zeeg's Ancient Kegbreaker
+					i(215992),	-- Zerat, Soulburner's Greatsword
 				}),
 				e(827, {	-- Jin'rokh the Breaker
 					["crs"] = { 69465 },	-- Jin'rokh the Breaker

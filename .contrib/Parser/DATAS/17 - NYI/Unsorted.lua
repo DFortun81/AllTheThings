@@ -5940,28 +5940,12 @@ root(ROOTS.Unsorted, {
 						i(214010),	-- Vestment of the Dynast
 						i(214003),	-- Wristwraps of the Dynast
 
-
-						i(220966),	-- Shirt of the Chronomancer
-						i(220973),	-- Chronomancer Shirt
-						i(220974),	-- Chronomancer Vest
-
 						i(220975),	-- Sha-Skin Shirt
-
 						i(220976),	-- Shirt of the Thousandfold Hells
 						i(220977),	-- Vest of the Thousandfold Hells
-
 						i(220978),	-- Shirt of the Horned Nightmare
-
-
 					}),
 					filter(LEATHER, {
-						------ Mogubreaker Battlegear (Red) ------
-						i(214050),	-- Tidesplitter Cinch
-						i(214046),	-- Tidesplitter Handguards
-						i(214048),	-- Tidesplitter Pants
-						i(214045),	-- Tidesplitter Treads
-						i(214051),	-- Tidesplitter Wraps
-
 						------ Thunderpaw Battlegear (Red) ------
 						i(214076),	-- Farwatch Bindings
 						i(214077),	-- Farwatch Vest
@@ -6262,7 +6246,7 @@ root(ROOTS.Unsorted, {
 					i(215503),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215504),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215505),	-- Shin'ka, the Tyrant's Greataxe
-					i(215506),	-- Shin'ka, the Tyrant's Greataxe
+
 					i(215507),	-- Shin'ka, the Tyrant's Greataxe
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
 					i(215509),	-- Bloodseeker's Greataxe
@@ -6466,15 +6450,15 @@ root(ROOTS.Unsorted, {
 					i(215724),	-- Siegecrafter's Forge Drill
 					i(215725),	-- Siegecrafter's Forge Drill
 					i(215726),	-- Siegecrafter's Forge Drill
-					i(215727),	-- Galvanized Stormcrusher
+
 					i(215728),	-- Galvanized Stormcrusher
 					i(215729),	-- Galvanized Stormcrusher
 					i(215731),	-- Tihan, Scepter of the Sleeper
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215734),	-- Kri'tak, Scepter of the Swarm
-					i(215735),	-- Kri'tak, Scepter of the Swarm
+
 					i(215736),	-- Kri'tak, Scepter of the Swarm
-					i(215738),	-- Grummle Mace
+
 					i(215739),	-- Shomi's Scepter
 					i(215740),	-- Jinyu Bonebreaker
 					i(215741),	-- Bloodseeker's Bonebreaker
@@ -6483,7 +6467,8 @@ root(ROOTS.Unsorted, {
 					i(215746),	-- Bearheart's Basher
 					i(215748),	-- Fireblaze Mace
 					i(215749),	-- Ordo Basher
-					i(215750),	-- Ook Breaker
+
+
 					i(215753),	-- Gao's Kegbreaker
 					i(215754),	-- Jol'Grum's Mace
 					i(215756),	-- Klaxxi Smasher
@@ -6497,14 +6482,14 @@ root(ROOTS.Unsorted, {
 					i(215764),	-- Hozen Mace
 					i(215765),	-- Mace of Dark Animus
 					i(215766),	-- Mace of Dark Animus
-					i(215767),	-- Mace of Dark Animus
+
 					i(215768),	-- Mace of Dark Animus
 					i(215769),	-- Jerthud, Hand of the Savior
-					i(215770),	-- Jerthud, Hand of the Savior
+
 					i(215771),	-- Jerthud, Hand of the Savior
 					i(215772),	-- Jerthud, Hand of the Savior
 					i(215773),	-- Zeeg's Ancient Kegbreaker
-					i(215774),	-- Zeeg's Ancient Kegbreaker
+
 					i(215775),	-- Zeeg's Ancient Kegbreaker
 					i(215777),	-- Gar'tok, Might of the Faithful
 					i(215778),	-- Gar'tok, Might of the Faithful
@@ -6523,11 +6508,11 @@ root(ROOTS.Unsorted, {
 					i(215796),	-- Halberd of Inner Darkness
 					i(215797),	-- Halberd of Inner Darkness
 					i(215798),	-- Qiang's Unbreakable Polearm
-					i(215799),	-- Qiang's Unbreakable Polearm
+
 					i(215800),	-- Qiang's Unbreakable Polearm
 					i(215801),	-- Qiang's Unbreakable Polearm
 					i(215802),	-- Spear of Feral Rage
-					i(215803),	-- Dragonguard's Glaive
+
 					i(215804),	-- Wallwatcher's Partisan
 					i(215805),	-- Serpentguard Spear
 					i(215807),	-- Ritter's Spear
@@ -6603,7 +6588,7 @@ root(ROOTS.Unsorted, {
 					i(215903),	-- Klaxxi Sword
 					i(215904),	-- Klaxxi Shortsword
 					i(215905),	-- Do-tharak, the Foebreaker
-					i(215906),	-- Do-tharak, the Foebreaker
+
 					i(215907),	-- Do-tharak, the Foebreaker
 					i(215908),	-- Do-tharak, the Foebreaker
 					i(215909),	-- Xifeng, Longblade of the Guardian
@@ -6622,7 +6607,7 @@ root(ROOTS.Unsorted, {
 					i(215922),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
 					i(215924),	-- Shao-Tien Saber
-					i(215926),	-- Scimitar of Seven Stars
+
 					i(215927),	-- Scimitar of Seven Stars
 					i(215928),	-- Scimitar of Seven Stars
 					i(215929),	-- Kilrak, Fangs of Terror
@@ -6630,10 +6615,10 @@ root(ROOTS.Unsorted, {
 					i(215931),	-- Kilrak, Fangs of Terror
 					i(215933),	-- Loshan, Fear Incarnate
 					i(215934),	-- Loshan, Fear Incarnate
-					i(215935),	-- Loshan, Fear Incarnate
+
 					i(215936),	-- Loshan, Fear Incarnate
 					i(215937),	-- Imperial Wind Blade
-					i(215938),	-- Cloudfall Edge
+
 					i(215939),	-- Mogu Aspirant's Blade
 					i(215940),	-- Halcyon Blade
 					i(215943),	-- Wasteland Scimitar
@@ -6655,7 +6640,7 @@ root(ROOTS.Unsorted, {
 					i(215963),	-- Qon's Iron Decree
 					i(215964),	-- Qon's Iron Decree
 					i(215965),	-- Soulblade of the Storm
-					i(215966),	-- Soulblade of the Storm
+
 					i(215967),	-- Soulblade of the Storm
 					i(215968),	-- Greatsword of the Iron Legion
 					i(215969),	-- Greatsword of the Iron Legion
@@ -6668,7 +6653,7 @@ root(ROOTS.Unsorted, {
 					i(215976),	-- Starslicer
 					i(215977),	-- Starslicer
 					i(215979),	-- Faded Forest Falchion
-					i(215980),	-- Binan Falchion
+
 					i(215981),	-- Red Crane Greatsword
 					i(215982),	-- Marista Greatsword
 					i(215983),	-- Jade Grand Falchion
@@ -6680,7 +6665,7 @@ root(ROOTS.Unsorted, {
 					i(215989),	-- Jinyu Flamberge
 					i(215990),	-- Zerat, Soulburner's Greatsword
 					i(215991),	-- Zerat, Soulburner's Greatsword
-					i(215992),	-- Zerat, Soulburner's Greatsword
+
 					i(215993),	-- Zerat, Soulburner's Greatsword
 					i(215994),	-- Mistspinner's Channel
 					i(215995),	-- Mistspinner's Channel
@@ -6703,10 +6688,10 @@ root(ROOTS.Unsorted, {
 					i(216012),	-- Venomlord's Skull Wand
 					i(216013),	-- Shellsplitter Battleaxe
 					i(216014),	-- Shellsplitter Battleaxe
-					i(216015),	-- Shellsplitter Battleaxe
+
 					i(216016),	-- Shellsplitter Battleaxe
 					i(216017),	-- Stormbreaker's Waraxe
-					i(216018),	-- Stormbreaker's Waraxe
+
 					i(216019),	-- Stormbreaker's Waraxe
 					i(216020),	-- Stormbreaker's Waraxe
 					i(216021),	-- Pandaren Hatchet
@@ -6780,7 +6765,7 @@ root(ROOTS.Unsorted, {
 					i(216475),	-- Temple Trainee's Blade
 					i(216477),	-- Temple Trainee's Scimitar
 					i(216478),	-- Pandaren Flamberge
-					i(216479),	-- Pandaren Waveblade
+
 					i(216480),	-- Pandaren Greatblade
 					i(216481),	-- Pandaren Greatsword
 					i(216482),	-- Pandaren Windblade
@@ -6833,7 +6818,7 @@ root(ROOTS.Unsorted, {
 					i(216584),	-- Barrier of the Protectorate
 					i(216585),	-- Shield of the Gloaming
 					i(216586),	-- Shield of the Gloaming
-					i(216587),	-- Shield of the Gloaming
+
 					i(216588),	-- Shield of the Gloaming
 					i(216589),	-- Tortos' Shell
 					i(216591),	-- Tortos' Shell
@@ -6841,7 +6826,7 @@ root(ROOTS.Unsorted, {
 					i(216593),	-- Bulwark of Twinned Despair
 					i(216594),	-- Bulwark of Twinned Despair
 					i(216595),	-- Bulwark of Twinned Despair
-					i(216596),	-- Bulwark of Twinned Despair
+
 					i(216597),	-- Eyes of the Doomed
 					i(216598),	-- Eyes of the Doomed
 					i(216599),	-- Eyes of the Doomed

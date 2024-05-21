@@ -148,7 +148,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["provider"] = { "n", 222186 },	-- Nostwin
 					["coord"] = { 45.8, 84.7, THE_JADE_FOREST },	-- missing horde coords
 					["g"] = {
-						i(217930), -- Nostwin's Voucher
+						i(217930),	-- Nostwin's Voucher
 					},
 				}),
 				q(78894, {	-- Infinite Growth
@@ -158,75 +158,65 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
-				filter(CROSSBOWS, {
-					i(216611),	-- Seawatch Speargun
+				n(ARMOR, {
+					filter(CLOTH, {
+						i(213668),	-- Spirit-Waker's Bracers
+						i(213667),	-- Spirit-Waker's Cord
+						i(213663),	-- Spirit-Waker's Gloves
+						i(213664),	-- Spirit-Waker's Hood
+						i(213665),	-- Spirit-Waker's Leggings
+						i(213661),	-- Spirit-Waker's Robe
+						i(213662),	-- Spirit-Waker's Sandals
+						i(213666),	-- Spirit-Waker's Shoulderpads
+					}),
+					filter(LEATHER, {
+						i(214067),	-- Ghost Fox Bindings
+						i(214063),	-- Ghost Fox Cover
+						i(214061),	-- Ghost Fox Footguards
+						i(214062),	-- Ghost Fox Grips
+						i(214064),	-- Ghost Fox Legguards
+						i(214065),	-- Ghost Fox Spaulders
+						i(214060),	-- Ghost Fox Vest
+						i(214066),	-- Ghost Fox Waistband
+					}),
+					filter(MAIL, {
+						i(214460),	-- Windreaver's Belt
+						i(214457),	-- Windreaver's Boots
+						i(214454),	-- Windreaver's Bracers
+						i(214459),	-- Windreaver's Gauntlets
+						i(214456),	-- Windreaver's Hauberk
+						i(214458),	-- Windreaver's Helm
+						i(214463),	-- Windreaver's Leggings
+						i(214461),	-- Windreaver's Spaulders
+					}),
 				}),
-				filter(DAGGERS, {
-					i(216418),	-- Hozen Dagger
-					i(215595),	-- Saltscale Shanker
-					i(215601),	-- Spike of the Rikkitun
-				}),
-				filter(HELD_IN_OFF_HAND, {
-					i(216438),	-- Pandaren Manuscript
-				}),
-				filter(ONE_HANDED_AXES, {
-					i(210342),	-- Bataari Hacker
-					i(215487),	-- Hozen Waraxe
-				}),
-				filter(ONE_HANDED_MACES, {
-					i(216423),	-- Pandaren Basher
-					i(215747),	-- Mace of the Rikkitun
-				}),
-				filter(ONE_HANDED_SWORDS, {
-					i(215949),	-- Crane Temple Sword
-				}),
-				filter(FIST_WEAPONS, {
-					i(215641),	-- Claws of the Wakener
-					i(211163),	-- Hidden Pass Knuckles
-				}),
-				filter(SHIELDS, {
-					i(216542),	-- Pandaren Protector
-				}),
-				filter(STAVES, {
+				n(WEAPONS, {
 					i(215871),	-- Amberweaver's Conduit
+					i(210342),	-- Bataari Hacker
+					i(215980),	-- Binan Falchion
+					i(215641),	-- Claws of the Wakener
+					i(215938),	-- Cloudfall Edge
+					i(215949),	-- Crane Temple Sword
+					i(215803),	-- Dragonguard's Glaive
 					i(215859),	-- Faded Forest Staff
 					i(215679),	-- Golden Crane Rod
+					i(215738),	-- Grummle Mace
+					i(215780),	-- Hatred's Warmace
+					i(211163),	-- Hidden Pass Knuckles
+					i(216418),	-- Hozen Dagger
+					i(215487),	-- Hozen Waraxe
+					i(215747),	-- Mace of the Rikkitun
+					i(215750),	-- Ook Breaker
+					i(216423),	-- Pandaren Basher
+					i(216438),	-- Pandaren Manuscript
+					i(216542),	-- Pandaren Protector
+					i(216479),	-- Pandaren Waveblade
+					i(215595),	-- Saltscale Shanker
+					i(216611),	-- Seawatch Speargun
+					i(215601),	-- Spike of the Rikkitun
 					i(215866),	-- Staff of Focus
 					i(216471),	-- Tian Monastery Channel
 					i(215863),	-- Torch of Midnight
-				}),
-				filter(TWO_HANDED_MACES, {
-					i(215780), -- Hatred's Warmace
-				}),
-				filter(CLOTH, {
-					i(213668),	-- Spirit-Waker's Bracers
-					i(213667),	-- Spirit-Waker's Cord
-					i(213663),	-- Spirit-Waker's Gloves
-					i(213664),	-- Spirit-Waker's Hood
-					i(213665),	-- Spirit-Waker's Leggings
-					i(213661),	-- Spirit-Waker's Robe
-					i(213662),	-- Spirit-Waker's Sandals
-					i(213666),	-- Spirit-Waker's Shoulderpads
-				}),
-				filter(LEATHER, {
-					i(214067),	-- Ghost Fox Bindings
-					i(214063),	-- Ghost Fox Cover
-					i(214061),	-- Ghost Fox Footguards
-					i(214062),	-- Ghost Fox Grips
-					i(214064),	-- Ghost Fox Legguards
-					i(214065),	-- Ghost Fox Spaulders
-					i(214060),	-- Ghost Fox Vest
-					i(214066),	-- Ghost Fox Waistband
-				}),
-				filter(MAIL, {
-					i(214460),	-- Windreaver's Belt
-					i(214457),	-- Windreaver's Boots
-					i(214454),	-- Windreaver's Bracers
-					i(214459),	-- Windreaver's Gauntlets
-					i(214456),	-- Windreaver's Hauberk
-					i(214458),	-- Windreaver's Helm
-					i(214463),	-- Windreaver's Leggings
-					i(214461),	-- Windreaver's Spaulders
 				}),
 			}),
 		},

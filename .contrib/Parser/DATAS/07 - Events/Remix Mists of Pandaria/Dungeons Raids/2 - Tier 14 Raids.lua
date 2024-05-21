@@ -10,44 +10,8 @@ TIER_14_RAIDS = createHeader({
 });
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
 	n(TIER_14_RAIDS, {
-		n(WEAPONS, {
-			d(DIFFICULTY.RAID.LFR, {
-				filter(STAVES, {
-					i(215843),	-- Waterspeaker's Staff
-				}),
-				filter(TWO_HANDED_SWORDS, {
-					i(215978),	-- Starslicer
-				}),
-			}),
-			d(DIFFICULTY.RAID.NORMAL, {
-				filter(DAGGERS, {
-					i(215583),	-- Blade of the Seven Stars
-				}),
-				filter(ONE_HANDED_AXES, {
-					i(215482),	-- Elegion, the Star Cleaver
-				}),
-				filter(ONE_HANDED_MACES, {
-					i(215730),	-- Galvanized Stormcrusher
-					i(215737),	-- Kri'tak, Scepter of the Swarm
-				}),
-				filter(ONE_HANDED_SWORDS, {
-					i(215932),	-- Kilrak, Fangs of Terror
-					i(215925),	-- Scimitar of Seven Stars
-				}),
-				filter(SHIELDS, {
-					i(216563),	-- Gaze of the Ancient
-					i(216529),	-- Protection of the Emperor
-					i(216561),	-- Steelskin, Qiang's Bulwark
-				}),
-				filter(STAVES, {
-					i(215847),	-- Fearspeaker's Warstaff
-					i(215850),	-- Fearspeaker's Warstaff
-					i(215732),	-- Tihan, Scepter of the Sleeper
-				}),
-			}),
-		}),
-		n(ARMOR, {
-			d(DIFFICULTY.RAID.LFR, {
+		d(DIFFICULTY.RAID.LFR, {
+			n(ARMOR, {
 				filter(CLOTH, {
 					-- MAGE
 					i(213711),	-- Robe of the Burning Scroll
@@ -156,7 +120,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214976),	-- Waistguard of Resounding Rings
 				}),
 			}),
-			d(DIFFICULTY.RAID.NORMAL, {
+			n(WEAPONS, {
+				i(215727),	-- Galvanized Stormcrusher
+				i(215735),	-- Kri'tak, Scepter of the Swarm
+				i(215935),	-- Loshan, Fear Incarnate
+				i(215799),	-- Qiang's Unbreakable Polearm
+				i(215926),	-- Scimitar of Seven Stars
+				i(215978),	-- Starslicer
+				i(215843),	-- Waterspeaker's Staff
+			}),
+		}),
+		d(DIFFICULTY.RAID.NORMAL, {
+			n(ARMOR, {
 				filter(CLOTH, {
 					-- MAGE
 					i(213727),	-- Vestment of the Burning Scroll
@@ -266,7 +241,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214968),	-- Warboots of Resounding Rings
 				}),
 			}),
-			d(DIFFICULTY.RAID.HEROIC, {
+			n(WEAPONS, {
+				i(215583),	-- Blade of the Seven Stars
+				i(215482),	-- Elegion, the Star Cleaver
+				i(215847),	-- Fearspeaker's Warstaff
+				i(215850),	-- Fearspeaker's Warstaff
+				i(215730),	-- Galvanized Stormcrusher
+				i(216563),	-- Gaze of the Ancient
+				i(215932),	-- Kilrak, Fangs of Terror
+				i(215737),	-- Kri'tak, Scepter of the Swarm
+				i(216529),	-- Protection of the Emperor
+				i(215925),	-- Scimitar of Seven Stars
+				i(215506),	-- Shin'ka, the Tyrant's Greataxe
+				i(216561),	-- Steelskin, Qiang's Bulwark
+				i(215732),	-- Tihan, Scepter of the Sleeper
+			}),
+		}),
+		d(DIFFICULTY.RAID.HEROIC, {
+			n(ARMOR, {
 				filter(CLOTH, {
 					-- MAGE
 					i(213719),	-- Cuffs of the Burning Scroll
@@ -375,6 +367,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214983),	-- Bracers of Resounding Rings
 					i(214984),	-- Sabatons of Resounding Rings
 				}),
+			}),
+			n(WEAPONS, {
 			}),
 		}),
 		inst(317, {	-- Mogu'shan Vaults

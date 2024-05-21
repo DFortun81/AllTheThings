@@ -74,9 +74,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(214055),	-- Brushstalker Leggings
 				i(214054),	-- Brushstalker Shoulderpads
 				i(214059),	-- Brushstalker Tunic
+				-- Is This Heroic ScenarioS?? /Braghe
 				i(214047),	-- Tidesplitter Cap
+				i(214050),	-- Tidesplitter Cinch
+				i(214046),	-- Tidesplitter Handguards
 				i(214044),	-- Tidesplitter Jerkin
 				i(214049),	-- Tidesplitter Mantle
+				i(214048),	-- Tidesplitter Pants
+				i(214045),	-- Tidesplitter Treads
+				i(214051),	-- Tidesplitter Wraps
 			}),
 			filter(MAIL, {
 				i(214420),	-- Waterburst Breastplate
@@ -87,6 +93,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(214426),	-- Waterburst Legwraps
 				i(214425),	-- Waterburst Mantle
 				i(214419),	-- Waterburst Wristguards
+				-- Is This Heroic ScenarioS?? /Braghe
 				i(214492),	-- Jade Guardian's Belt
 				i(214496),	-- Jade Guardian's Boots
 				i(214498),	-- Jade Guardian's Bracers
