@@ -21735,3 +21735,21 @@
 226125@@@Mind Slurp
 226199@@@Rainbow Trout
 226219@@@Water Stalker [DNT]
+11.0.0.54675
+225355@@@Archmage Aethas Sunreaver
+226265@@@Drone Abductor
+226317@@@Energy
+226318@@@Energy
+226319@@@Energy
+226432@@@Generic Bunny
+226476@@@Dark Field
+226521@@@Archmage Drenden
+226650@@@High Exarch Turalyon
+226656@@@Lady Liadrin
+226759@@@Dawn
+226763@@@Naleidea Rivergleam
+226773@@@Zekvir
+226790@@@Infernal Fragment
+226837@@@Dagran Thaurissan II
+226871@@@Archmage Aethas Sunreaver
+226895@@@Archmage Aethas Sunreaver

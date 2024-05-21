@@ -730,3 +730,6 @@
 559@@@Forged Legend %s
 11.0.0.54605
 560@@@%s Ascension Breaker
+11.0.0.54675
+561@@@%s, Famed Slayer of Ansurek
+562@@@%s, Slayer of the Deeps

@@ -14868,3 +14868,86 @@
 40461@@@Companion Level 60
 40462@@@50 Delves Completed
 40463@@@100 Delves Completed
+11.0.0.54675
+40250@@@The First Echo
+40251@@@Many Echoes
+40252@@@A Series of Echoes
+40262@@@Cowabunga
+40445@@@Sporesweeper
+40446@@@I TAKE Candle!
+40450@@@Buddy System II
+40451@@@Buddy System III
+40452@@@Just Keep Swimming
+40453@@@Spider Senses
+40454@@@Daystormer
+40455@@@Buddy System I
+40456@@@Buddy System IV
+40457@@@Buddy System V
+40458@@@Rare Finding
+40459@@@I've Got a Flying Machine!
+40460@@@Delve Deep
+40461@@@Buddy System VI
+40462@@@Delve Deeper
+40463@@@Delve Deepest
+40464@@@Bounty Master
+40465@@@Unbound Bounty
+40466@@@Unbound Glory
+40467@@@Unbound Glory
+40468@@@Unbound Glory
+40469@@@I'm Bringing Nerub-ack
+40472@@@Battle Mender: The War Within Season 1
+40473@@@Not So Quick Fix
+40475@@@To All the Slimes I Love
+40476@@@10 Algari Seekerthread
+40480@@@20 Algari Seekerthread
+40484@@@30 Algari Seekerthread
+40485@@@40 Algari Seekerthread
+40487@@@50 Algari Seekerthread
+40488@@@60 Algari Seekerthread
+40489@@@70 Algari Seekerthread
+40490@@@80 Algari Seekerthread
+40491@@@90 Algari Seekerthread
+40492@@@100 Algari Seekerthread
+40494@@@10 Algari Anglerthread
+40495@@@20 Algari Anglerthread
+40496@@@60 Algari Anglerthread
+40497@@@30 Algari Anglerthread
+40498@@@70 Algari Anglerthread
+40499@@@40 Algari Anglerthread
+40500@@@80 Algari Anglerthread
+40501@@@100 Algari Anglerthread
+40502@@@50 Algari Anglerthread
+40503@@@90 Algari Anglerthread
+40504@@@Rocked to Sleep
+40505@@@Fate of the Kirin Tor
+40506@@@No Stone Unturned
+40507@@@Hanging Tight
+40509@@@Awakening The Machine: Wave 10
+40510@@@One Ping Only
+40511@@@Rare Within
+40512@@@War Within: Tier 3
+40514@@@War Within: Tier 4
+40515@@@War Within: Tier 5
+40516@@@War Within: Tier 6
+40517@@@War Within: Tier 7
+40518@@@War Within: Tier 8
+40519@@@War Within: Tier 9
+40520@@@War Within: Tier 10
+40521@@@War Within: Tier 11
+40523@@@On Brand
+40524@@@Good Deed Delver
+40525@@@Fungal Folly Stories
+40526@@@Kriegval's Rest Stories
+40527@@@Earthcrawl Mines Stories
+40528@@@The Waterworks Stories
+40529@@@The Dread Pit Stories
+40530@@@Nightfall Sanctum Stories
+40531@@@Mycomancer Cavern Stories
+40532@@@The Sinkhole Stories
+40533@@@Skittering Breach Stories
+40534@@@The Underkeep Stories
+40535@@@Tak-Rethan Abyss Stories
+40536@@@The Spiral Weave Stories
+40537@@@Delve Loremaster: War Within
+40538@@@Brann Development
+40539@@@The Derby Dash

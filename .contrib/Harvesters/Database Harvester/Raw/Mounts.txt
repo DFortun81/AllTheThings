@@ -1938,3 +1938,7 @@
 449325@@@Vicious Flying Nerubian
 449415@@@Slatestone Ramolith
 449466@@@Forged Gladiator's Fel Bat
+11.0.0.54675
+447190@@@Shadowed Swarmite
+448941@@@Beledar's Spawn
+449416@@@Ebonhide Ramolith
