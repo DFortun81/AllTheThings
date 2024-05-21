@@ -8,6 +8,7 @@ end
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 -- Put items between these two bars if you dont want to sort them /Braghe
 i(3914);	-- neyman's Backpack \\ Journeyman's Backpack
+i(55403);	-- ldar Amulet \\ Mereldar Amulet -- (Dropped in Zul'Gurub)
 i(180786);	-- Empty Binding
 -- Legion
 i(147348);	-- Bulky Armor Set \\ y Armor Set
