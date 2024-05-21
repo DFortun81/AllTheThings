@@ -6214,6 +6214,8 @@ root(ROOTS.Unsorted, {
 					i(213173),	-- Thread of Power
 				}),
 				n(WEAPONS, {
+					i(215942),	-- Swordmistress' Edge
+					i(215946),	-- Valiant's Honorblade
 					i(215469),	-- Haromm's Frozen Battleaxe
 					i(215470),	-- Haromm's Frozen Battleaxe
 					i(215471),	-- Haromm's Frozen Battleaxe

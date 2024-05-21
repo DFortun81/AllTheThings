@@ -44,9 +44,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(224079),	-- Timerunner's Mace
 			}),
 			filter(ONE_HANDED_SWORDS, {
-				-- TODO: sort into correct zone
-				--i(215942),	-- Swordmistress' Edge
-				--i(215946),	-- Valiant's Honorblade
 				i(224080),	-- Timerunner's Sword
 			}),
 			filter(BOWS, {
