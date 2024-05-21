@@ -109,6 +109,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					i(215644),	-- Amber Claw
 					i(215681),	-- Crane's Beak Effigy
+					i(215488),	-- Mountainscaler Hatchet
+					i(215597),	-- Mushan Slicer
 					i(210335),	-- Shado-Pan Dagger
 					i(215869),	-- Waterweaver's Staff
 				}),

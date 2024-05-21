@@ -6221,7 +6221,6 @@ root(ROOTS.Unsorted, {
 					i(215481),	-- Elegion, the Star Cleaver
 					i(215483),	-- Elegion, the Star Cleaver
 					i(215486),	-- Jinyu Waraxe
-					i(215488),	-- Mountainscaler Hatchet
 					i(215489),	-- Wasteland Hacker
 					i(215490),	-- Snowdrift Battleaxe
 					i(215491),	-- Dubious Waraxe
@@ -6238,7 +6237,6 @@ root(ROOTS.Unsorted, {
 					i(215503),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215504),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215505),	-- Shin'ka, the Tyrant's Greataxe
-
 					i(215507),	-- Shin'ka, the Tyrant's Greataxe
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
 					i(215509),	-- Bloodseeker's Greataxe
@@ -6325,7 +6323,6 @@ root(ROOTS.Unsorted, {
 					i(215592),	-- Soulsever
 					i(215593),	-- Soulsever
 					i(215596),	-- Jadestone Dagger
-					i(215597),	-- Mushan Slicer
 					i(215598),	-- Regal Slicer
 					i(215599),	-- Mountainscaler Slicer
 					i(215600),	-- Grummle Shortblade
