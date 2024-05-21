@@ -1038,6 +1038,10 @@ if app.IsRetail then
 		end
 		-- if wrong class then won't be learned (probably)
 		local item = app.SearchForObject("sourceID", sourceID, "field")
+		if item.b ~= 1 then
+			-- app.PrintDebug("Non-bound SourceID",sourceID,link)
+			return
+		end
 		if item.nmc or item.nmr then
 			-- app.PrintDebug("Wrong class/race SourceID",sourceID,link)
 			return
