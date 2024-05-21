@@ -3948,6 +3948,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						13695,	-- A Valiant Of Undercity
 					},
 					["coord"] = { 76.5, 24.6, ICECROWN },
+					["_drop"] = { "races" },
 					["races"] = exclude({ ORC, GOBLIN, PANDAREN_HORDE, NIGHTBORNE, HIGHMOUNTAIN_TAUREN, ZANDALARI, VULPERA, MAGHAR, DRACTHYR_HORDE }, HORDE_ONLY),
 				}),
 				q(13708, {	-- Valiant Of Sen'jin
