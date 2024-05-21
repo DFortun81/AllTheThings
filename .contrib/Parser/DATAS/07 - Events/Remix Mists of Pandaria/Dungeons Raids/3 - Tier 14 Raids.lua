@@ -8,7 +8,7 @@ TIER_14_RAIDS = createHeader({
 		en = "Tier 14 Raids",
 	},
 });
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(RAIDS, {
 		n(TIER_14_RAIDS, {
 			d(DIFFICULTY.RAID.LFR, {

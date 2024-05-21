@@ -10,7 +10,7 @@ local CLOAK_OF_INFINITE_BONUSIDS = function()
 	end
 	return cloaks;
 end
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(REWARDS, {
 		i(211279, {	-- Cache of Infinite Treasure
 			i(210526),	-- Unraveling Tunic (QI!)
@@ -210,7 +210,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 }))));
 
 root(ROOTS.HiddenQuestTriggers, {
-	n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
+	n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 		-- Ensembles
 		q(80464),	-- Ensemble: Aldrachi Blasphemer's Flames
 		q(80466),	-- Ensemble: Aldrachi Blasphemer's Flames

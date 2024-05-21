@@ -480,12 +480,12 @@ REMOVED_10_2_6 = "removed 10.2.6.53840";				-- Dragonflight 10.2.6 Launch on Mar
 CREATED_10_2_6_SEASON_FOUR = "created 10.2.6.54358";	-- Dragonflight 10.2.6 Season Four Launch on April 23rd, 2024
 ADDED_10_2_6_SEASON_FOUR = "added 10.2.6.54358";		-- Dragonflight 10.2.6 Season Four Launch on April 23rd, 2024
 REMOVED_10_2_6_SEASON_FOUR = "removed 10.2.6.54358";	-- Dragonflight 10.2.6 Season Four Launch on April 23rd, 2024
-REMOVED_PLUNDERSTORM = "removed 10.2.6.54499"			-- Plunderstorm Ended on April 30th, 2024
+REMOVED_PLUNDERSTORM_END = "removed 10.2.6.54499"		-- Plunderstorm Ended on April 30th, 2024
 CREATED_10_2_7 = "created 10.2.7.54577";				-- Dragonflight 10.2.7 Launch on May 7th, 2024
 ADDED_10_2_7 = "added 10.2.7.54577";					-- Dragonflight 10.2.7 Launch on May 7th, 2024
 REMOVED_10_2_7 = "removed 10.2.7.54577";				-- Dragonflight 10.2.7 Launch on May 7th, 2024
-ADDED_REMIX = "added 10.2.7.54736"				        -- Dragonflight 10.2.7 MoP Remix Launch on May 16th, 2024
-REMOVED_REMIX = "removed 11.0.0";						-- PlaceHolder Until we know
+ADDED_MOP_REMIX = "added 10.2.7.54736"				    -- Dragonflight 10.2.7 MoP Remix Launch on May 16th, 2024
+REMOVED_MOP_REMIX_END = "removed 11.0.0";				-- PlaceHolder Until we know
 
 --------------------
 -- THE WAR WITHIN --

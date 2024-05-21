@@ -23,7 +23,7 @@ PLUNDERSTORM = createHeader({
 	},
 });
 -- #if NOT ANYCLASSIC
-root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 	n(PLUNDERSTORM, {
 		n(ACHIEVEMENTS, {
 			ach(20509),	-- Plunderking
@@ -198,7 +198,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_
 -- #endif
 
 root(ROOTS.HiddenQuestTriggers, {
-	n(PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM } }, {
+	n(PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 		q(80110),	-- First WQ of the Day
 		q(80436),	-- Purchasing Pirate's Booty -- Once per account lockout
 		q(65247),	-- Triggeres randomly anytime doing Plunderstorm
