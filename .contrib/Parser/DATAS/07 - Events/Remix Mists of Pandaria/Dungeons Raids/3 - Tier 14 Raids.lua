@@ -370,6 +370,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				n(WEAPONS, {
+					i(215800),	-- Qiang's Unbreakable Polearm
 				}),
 			}),
 			inst(317, {	-- Mogu'shan Vaults

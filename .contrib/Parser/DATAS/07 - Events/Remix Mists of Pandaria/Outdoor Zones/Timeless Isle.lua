@@ -230,6 +230,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(REWARDS, {
+				filter(CLOTH, {
+					i(214000),	-- Amaranthine Amice
+					i(214001),	-- Amaranthine Belt
+					i(213998),	-- Amaranthine Cowl
+					i(214002),	-- Amaranthine Cuffs
+					i(213997),	-- Amaranthine Handwraps
+					i(213999),	-- Amaranthine Pants
+					i(213995),	-- Amaranthine Raiment
+					i(220979),	-- Amaranthine Shirt
+					i(213996),	-- Amaranthine Treads
+				}),
 				filter(LEATHER, {
 					i(214387),	-- Snowdrift Bindings
 					i(214390),	-- Snowdrift Cover
