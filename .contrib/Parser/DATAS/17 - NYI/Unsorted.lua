@@ -5971,16 +5971,6 @@ root(ROOTS.Unsorted, {
 						i(220989),	-- Fire-Charm Jacket
 					}),
 					filter(MAIL, {
-						------ Dawnwatcher's Scale Armor (Blue) ------
-						i(214532),	-- Reedstalker Belt
-						i(214529),	-- Reedstalker Boots
-						i(214527),	-- Reedstalker Bracers
-						i(214531),	-- Reedstalker Gauntlets
-						i(214528),	-- Reedstalker Hauberk
-						i(214530),	-- Reedstalker Helm
-						i(214534),	-- Reedstalker Leggings
-						i(214533),	-- Reedstalker Spaulders
-
 						------ Jade Guardian's Regalia (Yellow) ------
 						i(214729),	-- Jade Guardian's Armbands
 						i(214730),	-- Jade Guardian's Breastplate
@@ -6190,7 +6180,6 @@ root(ROOTS.Unsorted, {
 					i(215480),	-- Korven's Crescent
 					i(215481),	-- Elegion, the Star Cleaver
 					i(215483),	-- Elegion, the Star Cleaver
-					i(215489),	-- Wasteland Hacker
 					i(215490),	-- Snowdrift Battleaxe
 					i(215491),	-- Dubious Waraxe
 					i(215492),	-- Axe of Iron Might
@@ -6208,7 +6197,6 @@ root(ROOTS.Unsorted, {
 					i(215505),	-- Shin'ka, the Tyrant's Greataxe
 					i(215507),	-- Shin'ka, the Tyrant's Greataxe
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
-					i(215509),	-- Bloodseeker's Greataxe
 					i(215510),	-- Warbringer's Chopper
 					i(215511),	-- Jadestone Greataxe
 					i(215512),	-- Wallwatcher's Poleaxe
@@ -6289,10 +6277,7 @@ root(ROOTS.Unsorted, {
 					i(215591),	-- Soulsever
 					i(215592),	-- Soulsever
 					i(215593),	-- Soulsever
-					i(215596),	-- Jadestone Dagger
-					i(215598),	-- Regal Slicer
 					i(215599),	-- Mountainscaler Slicer
-					i(215600),	-- Grummle Shortblade
 					i(215602),	-- Spiritbound Stabber
 					i(215604),	-- Mogu Severer
 					i(215605),	-- Ravenclaw Dagger
@@ -6306,7 +6291,6 @@ root(ROOTS.Unsorted, {
 					i(215614),	-- Klaxxi Slicer
 					i(215615),	-- Amber Blade
 					i(215616),	-- Pandaren Warknife
-					i(215617),	-- Pandaren Stabber
 					i(215618),	-- Pandaren Triblade
 					i(215619),	-- Pandaren Sai
 					i(215620),	-- Imperial Dagger
@@ -6328,12 +6312,10 @@ root(ROOTS.Unsorted, {
 					i(215636),	-- Fist of Shek'zeer
 					i(215637),	-- Fist of Shek'zeer
 					i(215638),	-- Fist of Shek'zeer
-					i(215639),	-- Mist Shaman's Knuckles
 					i(215640),	-- Barbs of the Rikkitun
 					i(215646),	-- Claw of the Fallen Temple
 					i(215647),	-- Ka'eng, Fang of Shadow
 					i(215648),	-- Ner'onok's Katar
-					i(215649),	-- Pandaren Striker
 					i(215650),	-- Pandaren Claw
 					i(215652),	-- Amun-Thoth, Sul's Spiritrender
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
@@ -6423,7 +6405,6 @@ root(ROOTS.Unsorted, {
 					i(215758),	-- Saurok Scepter
 					i(215759),	-- Saurok Mace
 					i(215760),	-- Saurok Breaker
-					i(215762),	-- Hozen Smasher
 					i(215764),	-- Hozen Mace
 					i(215765),	-- Mace of Dark Animus
 					i(215766),	-- Mace of Dark Animus
@@ -6495,7 +6476,6 @@ root(ROOTS.Unsorted, {
 					i(215855),	-- Jin'ya, Orb of the Watercaller
 					i(215856),	-- Jin'ya, Orb of the Watercaller
 					i(215857),	-- Jin'ya, Orb of the Watercaller
-					i(215860),	-- Wasteland Staff
 					i(215862),	-- Engraved Spire
 					i(215864),	-- Torch of Dawn
 					i(215865),	-- Fogspeaker Conduit
@@ -6511,7 +6491,6 @@ root(ROOTS.Unsorted, {
 					i(215887),	-- Soulwood Spire
 					i(215888),	-- Soulwood Spire
 					i(215890),	-- Hopespreader's Staff
-					i(215891),	-- Staff of Hidden Knowledge
 					i(215892),	-- Staff of the Black Ox
 					i(215893),	-- Pilgrim's Staff
 					i(215894),	-- Jinyu Conduit
@@ -6695,7 +6674,6 @@ root(ROOTS.Unsorted, {
 					i(216468),	-- Suen-Wo, Spire of the Rising Sun
 					i(216469),	-- Suen-Wo, Spire of the Rising Sun
 					i(216470),	-- Tian Monastery Spire
-					i(216472),	-- Tian Monastery Conduit
 					i(216473),	-- Tian Monastery Staff
 					i(216474),	-- Temple Trainee's Sword
 					i(216475),	-- Temple Trainee's Blade
@@ -6711,7 +6689,6 @@ root(ROOTS.Unsorted, {
 					i(216534),	-- Ironwood Deflector
 					i(216536),	-- Ironwood Barrier
 					i(216537),	-- Mogu Lord's Deflector
-					i(216538),	-- Mogu Lord's Bulwark
 					i(216539),	-- Mogu Lord's Barrier
 					i(216540),	-- Mogu Lord's Shield
 					i(216541),	-- Pandaren Barrier
@@ -6985,7 +6962,6 @@ root(ROOTS.Unsorted, {
 					i(211161),	-- Sphere of Immerseus
 					i(210338),	-- Spire of Supremacy
 					i(210341),	-- Staff of Corrupted Waters
-					i(210635),	-- Streamtalker Shield
 				}),
 				i(210906),	-- Timerunner's Amice
 				i(210523),	-- Timerunner's Amulet

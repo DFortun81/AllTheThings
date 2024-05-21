@@ -61,6 +61,30 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214109),	-- Riverblade Vest
 					i(214113),	-- Riverblade Waistband
 				}),
+				filter(MAIL, {
+					i(214532),	-- Reedstalker Belt
+					i(214529),	-- Reedstalker Boots
+					i(214527),	-- Reedstalker Bracers
+					i(214531),	-- Reedstalker Gauntlets
+					i(214528),	-- Reedstalker Hauberk
+					i(214530),	-- Reedstalker Helm
+					i(214534),	-- Reedstalker Leggings
+					i(214533),	-- Reedstalker Spaulders
+				}),
+				n(WEAPONs, {
+					i(215509),	-- Bloodseeker's Greataxe
+					i(215600),	-- Grummle Shortblade
+					i(215762),	-- Hozen Smasher
+					i(215596),	-- Jadestone Dagger
+					i(215639),	-- Mist Shaman's Knuckles
+					i(216538),	-- Mogu Lord's Bulwark
+					i(215617),	-- Pandaren Stabber
+					i(215649),	-- Pandaren Striker
+					i(215598),	-- Regal Slicer
+					i(215891),	-- Staff of Hidden Knowledge
+					i(210635),	-- Streamtalker Shield
+					i(215860),	-- Wasteland Staff
+				}),
 			}),
 		},
 	}),

@@ -235,6 +235,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216023),	-- Pandaren Hacker
 					i(216422),	-- Pandaren Smasher
 					i(210634),	-- Shield of the Wakener
+					i(215489),	-- Wasteland Hacker
 				}),
 			}),
 		},
