@@ -290,6 +290,7 @@ root(ROOTS.Zones, {
 						}),
 						crit(23976, {	-- Cranegnasher
 							["_quests"] = { 32967 },
+							["_noautomation"] = true,	-- blizz dat aputs this for NPC 73854 which must be fake...
 						}),
 						crit(23977, {	-- Rattleskew
 							["_npcs"] = { 72048 },
@@ -1675,6 +1676,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coords"] = {
 							{ 43.8, 43.8, TIMELESS_ISLE },
+							{ 41.1, 37.6, TIMELESS_ISLE },
 							{ 35.2, 41.8, TIMELESS_ISLE },
 							{ 29.6, 45.8, TIMELESS_ISLE },
 							{ 31.6, 58.8, TIMELESS_ISLE },
