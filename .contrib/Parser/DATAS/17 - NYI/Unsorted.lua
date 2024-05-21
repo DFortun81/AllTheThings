@@ -5981,26 +5981,6 @@ root(ROOTS.Unsorted, {
 						i(214534),	-- Reedstalker Leggings
 						i(214533),	-- Reedstalker Spaulders
 
-						------ Jade Guardian's Regalia (Brown) ------
-						i(214714),	-- Stonefang Breastplate
-						i(214715),	-- Stonefang Footguards
-						i(214718),	-- Stonefang Girdle
-						i(214717),	-- Stonefang Grips
-						i(214716),	-- Stonefang Helmet
-						i(214720),	-- Stonefang Legwraps
-						i(214719),	-- Stonefang Mantle
-						i(214713),	-- Stonefang Wristguards
-
-						------ Jade Guardian's Regalia (Red) ------
-						i(214723),	-- Crimsonscale Belt
-						i(214726),	-- Crimsonscale Boots
-						i(214728),	-- Crimsonscale Bracers
-						i(214724),	-- Crimsonscale Gauntlets
-						i(214727),	-- Crimsonscale Hauberk
-						i(214725),	-- Crimsonscale Helm
-						i(214721),	-- Crimsonscale Leggings
-						i(214722),	-- Crimsonscale Spaulders
-
 						------ Jade Guardian's Regalia (Yellow) ------
 						i(214729),	-- Jade Guardian's Armbands
 						i(214730),	-- Jade Guardian's Breastplate
@@ -6308,7 +6288,6 @@ root(ROOTS.Unsorted, {
 					i(215587),	-- Regail's Fulminating Blade
 					i(215588),	-- Regail's Fulminating Blade
 					i(215589),	-- Soulsever
-					i(215590),	-- Shomi's Shanker
 					i(215591),	-- Soulsever
 					i(215592),	-- Soulsever
 					i(215593),	-- Soulsever
@@ -6359,7 +6338,6 @@ root(ROOTS.Unsorted, {
 					i(215648),	-- Ner'onok's Katar
 					i(215649),	-- Pandaren Striker
 					i(215650),	-- Pandaren Claw
-					i(215651),	-- Pandaren Fist
 					i(215652),	-- Amun-Thoth, Sul's Spiritrender
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
 					i(215655),	-- Amun-Thoth, Sul's Spiritrender
@@ -6445,8 +6423,6 @@ root(ROOTS.Unsorted, {
 					i(215746),	-- Bearheart's Basher
 					i(215748),	-- Fireblaze Mace
 					i(215749),	-- Ordo Basher
-
-
 					i(215753),	-- Gao's Kegbreaker
 					i(215754),	-- Jol'Grum's Mace
 					i(215756),	-- Klaxxi Smasher
@@ -6454,20 +6430,15 @@ root(ROOTS.Unsorted, {
 					i(215758),	-- Saurok Scepter
 					i(215759),	-- Saurok Mace
 					i(215760),	-- Saurok Breaker
-					i(215761),	-- Saurok Smasher
 					i(215762),	-- Hozen Smasher
-					i(215763),	-- Hozen Basher
 					i(215764),	-- Hozen Mace
 					i(215765),	-- Mace of Dark Animus
 					i(215766),	-- Mace of Dark Animus
-
 					i(215768),	-- Mace of Dark Animus
 					i(215769),	-- Jerthud, Hand of the Savior
-
 					i(215771),	-- Jerthud, Hand of the Savior
 					i(215772),	-- Jerthud, Hand of the Savior
 					i(215773),	-- Zeeg's Ancient Kegbreaker
-
 					i(215775),	-- Zeeg's Ancient Kegbreaker
 					i(215777),	-- Gar'tok, Might of the Faithful
 					i(215778),	-- Gar'tok, Might of the Faithful
@@ -6486,11 +6457,9 @@ root(ROOTS.Unsorted, {
 					i(215796),	-- Halberd of Inner Darkness
 					i(215797),	-- Halberd of Inner Darkness
 					i(215798),	-- Qiang's Unbreakable Polearm
-
 					i(215800),	-- Qiang's Unbreakable Polearm
 					i(215801),	-- Qiang's Unbreakable Polearm
 					i(215802),	-- Spear of Feral Rage
-
 					i(215804),	-- Wallwatcher's Partisan
 					i(215805),	-- Serpentguard Spear
 					i(215807),	-- Ritter's Spear
@@ -6534,7 +6503,6 @@ root(ROOTS.Unsorted, {
 					i(215856),	-- Jin'ya, Orb of the Watercaller
 					i(215857),	-- Jin'ya, Orb of the Watercaller
 					i(215860),	-- Wasteland Staff
-					i(215861),	-- Instructor's Spire
 					i(215862),	-- Engraved Spire
 					i(215864),	-- Torch of Dawn
 					i(215865),	-- Fogspeaker Conduit
@@ -6557,7 +6525,6 @@ root(ROOTS.Unsorted, {
 					i(215894),	-- Jinyu Conduit
 					i(215895),	-- Jinyu Rod
 					i(215896),	-- Jinyu Spire
-					i(215897),	-- Jinyu Staff
 					i(215898),	-- Jalak's Spirit Staff
 					i(215899),	-- Jalak's Spirit Staff
 					i(215900),	-- Jalak's Spirit Staff
@@ -6566,7 +6533,6 @@ root(ROOTS.Unsorted, {
 					i(215903),	-- Klaxxi Sword
 					i(215904),	-- Klaxxi Shortsword
 					i(215905),	-- Do-tharak, the Foebreaker
-
 					i(215907),	-- Do-tharak, the Foebreaker
 					i(215908),	-- Do-tharak, the Foebreaker
 					i(215909),	-- Xifeng, Longblade of the Guardian
@@ -6796,20 +6762,16 @@ root(ROOTS.Unsorted, {
 					i(216584),	-- Barrier of the Protectorate
 					i(216585),	-- Shield of the Gloaming
 					i(216586),	-- Shield of the Gloaming
-
 					i(216588),	-- Shield of the Gloaming
 					i(216589),	-- Tortos' Shell
 					i(216591),	-- Tortos' Shell
 					i(216592),	-- Tortos' Shell
 					i(216593),	-- Bulwark of Twinned Despair
 					i(216594),	-- Bulwark of Twinned Despair
-					i(216595),	-- Bulwark of Twinned Despair
-
 					i(216597),	-- Eyes of the Doomed
 					i(216598),	-- Eyes of the Doomed
 					i(216599),	-- Eyes of the Doomed
 					i(216600),	-- Eyes of the Doomed
-					i(216601),	-- Eyes of the Doomed
 					i(216612),	-- Seawatch Launcher
 					i(216613),	-- Seawatch Repeater
 					i(216614),	-- Seawatch Crossbow

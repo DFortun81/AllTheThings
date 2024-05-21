@@ -211,6 +211,31 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214121),	-- Swampthresher Treads
 					i(214123),	-- Swampthresher Wraps
 				}),
+				filter(MAIL, {
+					i(214714),	-- Stonefang Breastplate
+					i(214715),	-- Stonefang Footguards
+					i(214718),	-- Stonefang Girdle
+					i(214717),	-- Stonefang Grips
+					i(214716),	-- Stonefang Helmet
+					i(214720),	-- Stonefang Legwraps
+					i(214719),	-- Stonefang Mantle
+					i(214713),	-- Stonefang Wristguards
+					i(214723),	-- Crimsonscale Belt
+					i(214726),	-- Crimsonscale Boots
+					i(214728),	-- Crimsonscale Bracers
+					i(214724),	-- Crimsonscale Gauntlets
+					i(214727),	-- Crimsonscale Hauberk
+					i(214725),	-- Crimsonscale Helm
+					i(214721),	-- Crimsonscale Leggings
+					i(214722),	-- Crimsonscale Spaulders
+				}),
+				n(WEAPONS, {
+					i(216595),	-- Bulwark of Twinned Despair
+					i(216601),	-- Eyes of the Doomed
+					i(215861),	-- Instructor's Spire
+					i(215897),	-- Jinyu Staff
+					i(215761),	-- Saurok Smasher
+				})
 			}),
 		},
 	}),

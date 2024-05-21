@@ -78,6 +78,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214706),	-- Nightwatcher's Pauldrons
 					i(214710),	-- Nightwatcher's Sabatons
 				}),
+				n(WEAPONS, {
+					i(215651),	-- Pandaren Fist
+				}),
 			}),
 		},
 	}),

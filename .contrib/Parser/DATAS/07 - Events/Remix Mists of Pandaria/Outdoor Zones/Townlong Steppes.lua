@@ -85,6 +85,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214520),	-- Streamspeaker Mantle
 					i(214526),	-- Streamspeaker Wristguards
 				}),
+				n(WEAPONS, {
+					i(215763),	-- Hozen Basher
+					i(215590),	-- Shomi's Shanker
+				}),
 			}),
 		},
 	}),
