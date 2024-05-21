@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 			}),
 			prof(INSCRIPTION, {
 				n(130901, {	-- Chronicler Grazzul <Inscription Trainer>
-					["coord"] = { 42.4, 39.6, THE_GREAT_SEAL },
+					["coord"] = { 42.3, 39.7, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = appendGroups(BFA_INSCRIPTION, {
 						r(265809),	-- Zandalari Inscription

@@ -3767,7 +3767,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			q(49943, {	-- Drawing Blood [H]
 				["description"] = "This quest chain requires 150 skill in Zandalari Inscription.",
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
-				["coord"] = { 42.2, 39.6, DAZARALOR },
+				["coord"] = { 42.3, 39.7, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
@@ -3781,7 +3781,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			q(49944, {	-- Turn to Drust [H]
 				["sourceQuests"] = { 49943 },	-- Drawing Blood [H]
 				["provider"] = { "n", 130901 },	-- Chronicler Grazzul
-				["coord"] = { 42.2, 39.6, DAZARALOR },
+				["coord"] = { 42.3, 39.7, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
 			}),
