@@ -6397,7 +6397,6 @@ root(ROOTS.Unsorted, {
 					i(215743),	-- Sunsoul Smasher
 					i(215745),	-- Wasteland Basher
 					i(215748),	-- Fireblaze Mace
-					i(215749),	-- Ordo Basher
 					i(215753),	-- Gao's Kegbreaker
 					i(215754),	-- Jol'Grum's Mace
 					i(215756),	-- Klaxxi Smasher
