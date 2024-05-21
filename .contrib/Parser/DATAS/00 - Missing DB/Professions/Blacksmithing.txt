@@ -76,14 +76,14 @@ r(450279),	-- Artisan Leatherworker's Knife
 r(450280),	-- Artisan Leatherworker's Toolset
 r(450281),	-- Artisan Blacksmith's Hammer
 r(450282),	-- Artisan Blacksmith's Toolbox
-r(450283),	-- Earthen Master's Arsenal
+r(450283),	-- Earthen Master's Hammer \\ Earthen Master's Arsenal
 r(450284),	-- Forged Framework
 r(450285),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
 r(450286),	-- Ironclaw Razorstone \\ Reinforced Handle
 r(450287),	-- Ironclaw Weightstone \\ Seasoned Skillet
 r(450288),	-- Adjustable Framework \\ Webbed Fishing Line
 r(450289),	-- Tempered Framework \\ Weighted Lure
-r(450290),	-- Earthen Master's Hammer
+r(450290),	-- Core Framework \\ Earthen Master's Hammer
 r(450291),	-- Coreforged Repair Hammer
 r(450292),	-- Coreforged Skeleton Key
 11.0.0.54521
@@ -172,14 +172,14 @@ r(450279),	-- Artisan Leatherworker's Knife
 r(450280),	-- Artisan Leatherworker's Toolset
 r(450281),	-- Artisan Blacksmith's Hammer
 r(450282),	-- Artisan Blacksmith's Toolbox
-r(450283),	-- Earthen Master's Arsenal
+r(450283),	-- Earthen Master's Hammer \\ Earthen Master's Arsenal
 r(450284),	-- Forged Framework
 r(450285),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
 r(450286),	-- Ironclaw Razorstone \\ Reinforced Handle
 r(450287),	-- Ironclaw Weightstone \\ Seasoned Skillet
 r(450288),	-- Adjustable Framework \\ Webbed Fishing Line
 r(450289),	-- Tempered Framework \\ Weighted Lure
-r(450290),	-- Earthen Master's Hammer
+r(450290),	-- Core Framework \\ Earthen Master's Hammer
 r(450291),	-- Coreforged Repair Hammer
 r(450292),	-- Coreforged Skeleton Key
 11.0.0.54521

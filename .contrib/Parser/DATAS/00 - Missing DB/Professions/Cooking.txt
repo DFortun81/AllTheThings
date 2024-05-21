@@ -26,7 +26,7 @@ r(445104),	-- Sizzling Honey Roast
 r(445105),	-- Mycobloom Risotto
 r(445106),	-- Stuffed Cave Peppers
 r(445107),	-- Angler's Delight
-r(445108),	-- Emperor's Bounty
+r(445108),	-- Beledar's Bounty \\ Emperor's Bounty
 r(445109),	-- Empress' Farewell
 r(445110),	-- Jester's Board
 r(445111),	-- Outsider's Provisions
@@ -42,12 +42,12 @@ r(445120),	-- Hearty Meals
 r(445127),	-- Fresh Fillet
 r(445477),	-- Luminous Lemonade
 r(445478),	-- Blessing Blossom Tea
-r(445479),	-- Warm Honey Water
+r(445479),	-- Cinder Nectar \\ Warm Honey Water
 r(445480),	-- Pep-In-Your-Step
-r(445481),	-- Eclipse Eclair
+r(445481),	-- Tasty Pocket Tart \\ Eclipse Eclair
 r(445482),	-- Rockslide Shake
-r(445483),	-- Olive Oil Ice Cream
-r(445484),	-- A Sweet Treat
+r(445483),	-- Sticky Sweet Treat \\ Olive Oil Ice Cream
+r(445484),	-- Melted Candlebar \\ A Sweet Treat
 
 
 
@@ -82,7 +82,7 @@ r(445104),	-- Sizzling Honey Roast
 r(445105),	-- Mycobloom Risotto
 r(445106),	-- Stuffed Cave Peppers
 r(445107),	-- Angler's Delight
-r(445108),	-- Emperor's Bounty
+r(445108),	-- Beledar's Bounty \\ Emperor's Bounty
 r(445109),	-- Empress' Farewell
 r(445110),	-- Jester's Board
 r(445111),	-- Outsider's Provisions
@@ -98,9 +98,9 @@ r(445120),	-- Hearty Meals
 r(445127),	-- Fresh Fillet
 r(445477),	-- Luminous Lemonade
 r(445478),	-- Blessing Blossom Tea
-r(445479),	-- Warm Honey Water
+r(445479),	-- Cinder Nectar \\ Warm Honey Water
 r(445480),	-- Pep-In-Your-Step
-r(445481),	-- Eclipse Eclair
+r(445481),	-- Tasty Pocket Tart \\ Eclipse Eclair
 r(445482),	-- Rockslide Shake
-r(445483),	-- Olive Oil Ice Cream
-r(445484),	-- A Sweet Treat
+r(445483),	-- Sticky Sweet Treat \\ Olive Oil Ice Cream
+r(445484),	-- Melted Candlebar \\ A Sweet Treat

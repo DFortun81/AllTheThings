@@ -10,3 +10,6 @@ title(558),	-- Forged Gladiator %s
 title(559),	-- Forged Legend %s
 11.0.0.54605
 title(560),	-- %s Ascension Breaker
+11.0.0.54675
+title(561),	-- %s, Famed Slayer of Ansurek
+title(562),	-- %s, Slayer of the Deeps

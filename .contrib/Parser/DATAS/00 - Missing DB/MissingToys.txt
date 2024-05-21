@@ -6,7 +6,7 @@ i(215147),	-- Beautification Iris
 i(216665),	-- Warband Bank Distance Inhibitor
 i(216887),	--
 i(218310),	-- Box of Puntables
-i(219387),	--
+i(219387),	-- Barrel of Fireworks
 i(221966),	-- Wormhole Generator: Khaz Algar
 i(223312),	-- Trusty Hat
 11.0.0.54361
@@ -19,12 +19,16 @@ i(224554),	-- Silver Linin' Scepter
 i(224585),	-- Hanna's Locket
 11.0.0.54521
 i(224643),	-- Pet-Sized Candle
-i(224783),	-- Sovereign Finery Chest
+i(224783),	-- Sovereign's Finery Chest \\ Sovereign Finery Chest
 i(224809),	-- Earthen Plumber's Pipe
 11.0.0.54605
 i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
 i(225347),	-- Web-Vandal's Spinning Wheel
 i(225547),	-- Toxic Victory
+11.0.0.54675
+i(225641),	-- Illusive Kobyss Lure
+i(225659),	-- Arathor Book Collection
+i(225910),	-- Pileus Delight
 
 
 
@@ -39,7 +43,7 @@ i(215147),	-- Beautification Iris
 i(216665),	-- Warband Bank Distance Inhibitor
 i(216887),	--
 i(218310),	-- Box of Puntables
-i(219387),	--
+i(219387),	-- Barrel of Fireworks
 i(221966),	-- Wormhole Generator: Khaz Algar
 i(223312),	-- Trusty Hat
 11.0.0.54361
@@ -52,9 +56,13 @@ i(224554),	-- Silver Linin' Scepter
 i(224585),	-- Hanna's Locket
 11.0.0.54521
 i(224643),	-- Pet-Sized Candle
-i(224783),	-- Sovereign Finery Chest
+i(224783),	-- Sovereign's Finery Chest \\ Sovereign Finery Chest
 i(224809),	-- Earthen Plumber's Pipe
 11.0.0.54605
 i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
 i(225347),	-- Web-Vandal's Spinning Wheel
 i(225547),	-- Toxic Victory
+11.0.0.54675
+i(225641),	-- Illusive Kobyss Lure
+i(225659),	-- Arathor Book Collection
+i(225910),	-- Pileus Delight

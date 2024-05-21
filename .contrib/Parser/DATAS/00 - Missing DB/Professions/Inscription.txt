@@ -687,10 +687,10 @@ r(444212),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Firefla
 r(444213),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
 r(444214),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
 r(444215),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-r(444217),	-- Contract: Earthen
-r(444218),	-- Contract: Arathor
-r(444219),	-- Contract: Nerubian
-r(444220),	-- Contract: Artisan
+r(444217),	-- Contract: Assembly of the Deeps \\ Contract: Earthen
+r(444218),	-- Contract: Hallowfall Arathi \\ Contract: Arathor
+r(444219),	-- Contract: The Severed Threads \\ Contract: Nerubian
+r(444220),	-- Contract: Artisan's Consortium, Khaz Algar Branch \\ Contract: Artisan
 r(444221),	-- Shadow Ink \\ Sable Ink
 r(444222),	-- Apricate Ink
 r(444223),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
@@ -766,10 +766,10 @@ r(444212),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Firefla
 r(444213),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
 r(444214),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
 r(444215),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-r(444217),	-- Contract: Earthen
-r(444218),	-- Contract: Arathor
-r(444219),	-- Contract: Nerubian
-r(444220),	-- Contract: Artisan
+r(444217),	-- Contract: Assembly of the Deeps \\ Contract: Earthen
+r(444218),	-- Contract: Hallowfall Arathi \\ Contract: Arathor
+r(444219),	-- Contract: The Severed Threads \\ Contract: Nerubian
+r(444220),	-- Contract: Artisan's Consortium, Khaz Algar Branch \\ Contract: Artisan
 r(444221),	-- Shadow Ink \\ Sable Ink
 r(444222),	-- Apricate Ink
 r(444223),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering

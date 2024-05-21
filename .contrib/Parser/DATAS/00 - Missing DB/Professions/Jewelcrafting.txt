@@ -1153,14 +1153,14 @@ r(435338),	-- Algari Emerald Prism \\ Emerald Prism
 r(435339),	-- Algari Ruby Prism \\ Ruby Prism
 r(435369),	-- Algari Onyx Prism \\ Onyx Prism
 r(435370),	-- Algari Sapphire Prism \\ Sapphire Prism
-r(435371),	-- Jewelcrafting T1 Helm
-r(435372),	-- Jewelcrafting T2 Helm
-r(435373),	-- Enchanting T1 Focus
-r(435374),	-- Enchanting T2 Focus
+r(435371),	-- Radiant Loupes \\ Jewelcrafting T1 Helm
+r(435372),	-- Extravagant Loupes \\ Jewelcrafting T2 Helm
+r(435373),	-- Incanter's Shard \\ Enchanting T1 Focus
+r(435374),	-- Enchanter's Crystal \\ Enchanting T2 Focus
 r(435375),	-- Right-Handed Magnifying Glass
-r(435376),	-- Inscription T2 Magnifying Glass
-r(435377),	-- Inscription T1 Glasses
-r(435378),	-- Inscription T2 Glasses
+r(435376),	-- Forger's Font Inspector \\ Inscription T2 Magnifying Glass
+r(435377),	-- Storyteller's Glasses \\ Inscription T1 Glasses
+r(435378),	-- Novelist's Specs \\ Inscription T2 Glasses
 r(435379),	-- Malleable Band
 r(435380),	-- Malleable Pendant
 r(435382),	-- Binding of Binding
@@ -2338,14 +2338,14 @@ r(435338),	-- Algari Emerald Prism \\ Emerald Prism
 r(435339),	-- Algari Ruby Prism \\ Ruby Prism
 r(435369),	-- Algari Onyx Prism \\ Onyx Prism
 r(435370),	-- Algari Sapphire Prism \\ Sapphire Prism
-r(435371),	-- Jewelcrafting T1 Helm
-r(435372),	-- Jewelcrafting T2 Helm
-r(435373),	-- Enchanting T1 Focus
-r(435374),	-- Enchanting T2 Focus
+r(435371),	-- Radiant Loupes \\ Jewelcrafting T1 Helm
+r(435372),	-- Extravagant Loupes \\ Jewelcrafting T2 Helm
+r(435373),	-- Incanter's Shard \\ Enchanting T1 Focus
+r(435374),	-- Enchanter's Crystal \\ Enchanting T2 Focus
 r(435375),	-- Right-Handed Magnifying Glass
-r(435376),	-- Inscription T2 Magnifying Glass
-r(435377),	-- Inscription T1 Glasses
-r(435378),	-- Inscription T2 Glasses
+r(435376),	-- Forger's Font Inspector \\ Inscription T2 Magnifying Glass
+r(435377),	-- Storyteller's Glasses \\ Inscription T1 Glasses
+r(435378),	-- Novelist's Specs \\ Inscription T2 Glasses
 r(435379),	-- Malleable Band
 r(435380),	-- Malleable Pendant
 r(435382),	-- Binding of Binding

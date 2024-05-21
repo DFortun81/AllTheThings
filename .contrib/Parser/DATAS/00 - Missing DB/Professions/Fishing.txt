@@ -12,13 +12,13 @@ r(444793),	-- Dornish Pike
 r(444794),	-- Roaring Anglerseeker
 r(444795),	-- Arathor Hammerfish
 r(444796),	-- Regal Dottyback
-r(444797),	-- Azj-Kahet Slum Shark
+r(444797),	-- Kaheti Slum Shark \\ Azj-Kahet Slum Shark
 r(444798),	-- Pale Huskfish
 r(444799),	-- Sanguine Dogfish
 r(444800),	-- Spiked Sea Raven
 r(444801),	-- Queen's Lurefish
 r(444802),	-- Cursed Ghoulfish
-r(444803),	-- Kah, King of the Deep
+r(444803),	-- Awoken Coelecanth \\ Kah, King of the Deep
 
 
 
@@ -39,10 +39,10 @@ r(444793),	-- Dornish Pike
 r(444794),	-- Roaring Anglerseeker
 r(444795),	-- Arathor Hammerfish
 r(444796),	-- Regal Dottyback
-r(444797),	-- Azj-Kahet Slum Shark
+r(444797),	-- Kaheti Slum Shark \\ Azj-Kahet Slum Shark
 r(444798),	-- Pale Huskfish
 r(444799),	-- Sanguine Dogfish
 r(444800),	-- Spiked Sea Raven
 r(444801),	-- Queen's Lurefish
 r(444802),	-- Cursed Ghoulfish
-r(444803),	-- Kah, King of the Deep
+r(444803),	-- Awoken Coelecanth \\ Kah, King of the Deep

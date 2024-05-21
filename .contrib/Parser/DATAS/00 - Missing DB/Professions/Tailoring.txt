@@ -236,17 +236,17 @@ r(75265),	-- Otherworldly Bag
 r(75266),	-- Spiritmend Cowl
 r(75267),	-- Spiritmend Robe
 r(75268),	-- Hyjal Expedition Bag
-r(75269),	-- Vicious Fireweave Belt
-r(75270),	-- Vicious Embersilk Bracers
+r(75269),	-- Fireweave Belt \\ Vicious Fireweave Belt
+r(75270),	-- Emberfire Bracers \\ Vicious Embersilk Bracers
 r(75287),	--
-r(75290),	-- Vicious Fireweave Bracers
-r(75291),	-- Vicious Embersilk Shoulders
-r(75292),	-- Vicious Fireweave Shoulders
-r(75293),	-- Vicious Embersilk Belt
-r(75294),	-- Vicious Fireweave Boots
-r(75295),	-- Vicious Embersilk Gloves
-r(75296),	-- Vicious Fireweave Gloves
-r(75297),	-- Vicious Embersilk Boots
+r(75290),	-- Fireweave Bracers \\ Vicious Fireweave Bracers
+r(75291),	-- Emberfire Shoulders \\ Vicious Embersilk Shoulders
+r(75292),	-- Fireweave Shoulders \\ Vicious Fireweave Shoulders
+r(75293),	-- Emberfire Belt \\ Vicious Embersilk Belt
+r(75294),	-- Fireweave Boots \\ Vicious Fireweave Boots
+r(75295),	-- Emberfire Gloves \\ Vicious Embersilk Gloves
+r(75296),	-- Fireweave Gloves \\ Vicious Fireweave Gloves
+r(75297),	-- Emberfire Boots \\ Vicious Embersilk Boots
 4.3.4.15595
 r(94743),	-- Dream of Destruction
 r(99537),	-- Vicious Embersilk Cape
@@ -526,7 +526,7 @@ r(438895),	-- Vicious Competitor's Cloth Tunic
 r(438896),	-- Vicious Competitor's Cloth Sash
 r(438897),	-- Vicious Competitor's Cloth Cloak
 r(446926),	-- Unraveling
-r(446927),	-- Duskcloth Bolt \\ Duskthread Bolt
+r(446927),	-- Duskweave Bolt \\ Duskcloth Bolt \\ Duskthread Bolt
 r(446928),	-- Dawnweave Bolt \\ Dawnthread Bolt
 r(446929),	-- Weavercloth Bolt
 r(446930),	-- Grips of the Woven Dawn
@@ -574,22 +574,22 @@ r(446971),	-- Artisan Fishing Cap
 r(446972),	-- Artisan Enchanter's Hat
 r(446973),	-- Artisan Alchemist's Robe
 r(446974),	-- Artisan's Chef's Hat
-r(446975),	-- Venerated Robes of the Eclipse
+r(446975),	-- Artisan Tailor's Coat \\ Venerated Robes of the Eclipse
 r(446976),	-- Weavercloth Bag
-r(446977),	-- Dawnthread Bag
+r(446977),	-- Dawnweave Reagent Bag \\ Dawnthread Bag
 r(446978),	-- Weavercloth Reagent Bag
-r(446979),	-- Duskthread Bag
+r(446979),	-- Duskweave Bag \\ Duskthread Bag
 r(446980),	-- Satchel of the Long Day
 r(446981),	-- Satchel of the Long Night
-r(446982),	-- Alchemy Bag
-r(446983),	-- Blacksmithing Bag
+r(446982),	-- Concoctor's Clutch \\ Alchemy Bag
+r(446983),	-- Ignition Satchel \\ Blacksmithing Bag
 r(446984),	-- Leatherworking Bag
 r(446985),	-- Enchanting Bag
-r(446986),	-- Engineering Bag
-r(446987),	-- Inscription Bag
+r(446986),	-- Prodigy's Scrapbag \\ Engineering Bag
+r(446987),	-- Darkmoon Duffle \\ Inscription Bag
 r(446988),	-- Herbalism Bag
 r(446989),	-- Mining Bag
-r(446990),	-- Jewelcrafting Bag
+r(446990),	-- Jeweler's Purse \\ Jewelcrafting Bag
 r(446991),	-- Dawnthread Lining
 r(446992),	-- Duskthread Lining
 r(446993),	-- Reinforced Wrap Kit
@@ -604,7 +604,7 @@ r(447001),	-- Daybreak Spellthread
 r(447002),	-- Weavercloth Bandage
 11.0.0.54521
 r(454397),	-- Exquisite Weavercloth Bolt
-r(454431),	-- Exquisite Algari Satchel
+r(454431),	-- The Severed Satchel \\ Exquisite Algari Satchel
 
 
 
@@ -904,7 +904,7 @@ r(438895),	-- Vicious Competitor's Cloth Tunic
 r(438896),	-- Vicious Competitor's Cloth Sash
 r(438897),	-- Vicious Competitor's Cloth Cloak
 r(446926),	-- Unraveling
-r(446927),	-- Duskcloth Bolt \\ Duskthread Bolt
+r(446927),	-- Duskweave Bolt \\ Duskcloth Bolt \\ Duskthread Bolt
 r(446928),	-- Dawnweave Bolt \\ Dawnthread Bolt
 r(446929),	-- Weavercloth Bolt
 r(446930),	-- Grips of the Woven Dawn
@@ -952,22 +952,22 @@ r(446971),	-- Artisan Fishing Cap
 r(446972),	-- Artisan Enchanter's Hat
 r(446973),	-- Artisan Alchemist's Robe
 r(446974),	-- Artisan's Chef's Hat
-r(446975),	-- Venerated Robes of the Eclipse
+r(446975),	-- Artisan Tailor's Coat \\ Venerated Robes of the Eclipse
 r(446976),	-- Weavercloth Bag
-r(446977),	-- Dawnthread Bag
+r(446977),	-- Dawnweave Reagent Bag \\ Dawnthread Bag
 r(446978),	-- Weavercloth Reagent Bag
-r(446979),	-- Duskthread Bag
+r(446979),	-- Duskweave Bag \\ Duskthread Bag
 r(446980),	-- Satchel of the Long Day
 r(446981),	-- Satchel of the Long Night
-r(446982),	-- Alchemy Bag
-r(446983),	-- Blacksmithing Bag
+r(446982),	-- Concoctor's Clutch \\ Alchemy Bag
+r(446983),	-- Ignition Satchel \\ Blacksmithing Bag
 r(446984),	-- Leatherworking Bag
 r(446985),	-- Enchanting Bag
-r(446986),	-- Engineering Bag
-r(446987),	-- Inscription Bag
+r(446986),	-- Prodigy's Scrapbag \\ Engineering Bag
+r(446987),	-- Darkmoon Duffle \\ Inscription Bag
 r(446988),	-- Herbalism Bag
 r(446989),	-- Mining Bag
-r(446990),	-- Jewelcrafting Bag
+r(446990),	-- Jeweler's Purse \\ Jewelcrafting Bag
 r(446991),	-- Dawnthread Lining
 r(446992),	-- Duskthread Lining
 r(446993),	-- Reinforced Wrap Kit
@@ -982,4 +982,4 @@ r(447001),	-- Daybreak Spellthread
 r(447002),	-- Weavercloth Bandage
 11.0.0.54521
 r(454397),	-- Exquisite Weavercloth Bolt
-r(454431),	-- Exquisite Algari Satchel
+r(454431),	-- The Severed Satchel \\ Exquisite Algari Satchel
