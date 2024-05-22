@@ -316,6 +316,21 @@ local function GetEventTimeString(d)
 	return "??";
 end
 
+-- Timerunning Seasons
+local GetTimerunningSeason;
+local PlayerGetTimerunningSeasonID = PlayerGetTimerunningSeasonID;
+if PlayerGetTimerunningSeasonID then
+	-- Timerunning API is available.
+	local timerunningSeasons = L.EVENT_TIMERUNNING_SEASONS;
+	GetTimerunningSeason = function()
+		local seasonID = PlayerGetTimerunningSeasonID();
+		if seasonID then return timerunningSeasons[seasonID]; end
+	end
+else
+	-- Timerunning API is not available.
+	GetTimerunningSeason = app.EmptyFunction;
+end
+
 -- Event API Implementation
 -- Access via AllTheThings.Modules.Events
 local events = {};
@@ -339,6 +354,7 @@ end;
 events.SetEventNextSchedule = function(eventID, nextEvent)
 	NextEventSchedule[eventID] = nextEvent;
 end;
+events.GetTimerunningSeason = GetTimerunningSeason;
 events.GetUpcomingEventLeeway = function()
 	return UpcomingEventLeeway;
 end;

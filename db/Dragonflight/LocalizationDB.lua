@@ -1072,6 +1072,10 @@ localize(L.HEADER_EVENTS, {
 	[-1000872] = 446916,
 	[-1000873] = 1525,
 });
+localize(L.EVENT_TIMERUNNING_SEASONS, {
+	[1] = 1525,
+});
+
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(446916, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=19,["weekday"]=3,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=30,["weekday"]=3,["year"]=2024})

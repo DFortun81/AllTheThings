@@ -2419,6 +2419,7 @@ namespace ATT
                     var eventIDs = new Dictionary<long, long>();
                     var eventRemaps = new Dictionary<long, long>();
                     var eventSchedules = new Dictionary<long, string>();
+                    var timerunningSeasonIDs = new Dictionary<long, long>();
                     var icons = new Dictionary<long, string>();
                     var constants = new Dictionary<string, long>();
                     var localizationForText = new Dictionary<string, Dictionary<long, string>>();
@@ -2446,6 +2447,10 @@ namespace ATT
                                     if (header.TryGetValue("eventSchedule", out value))
                                     {
                                         eventSchedules[eventID] = value.ToString();
+                                    }
+                                    if (header.TryGetValue("timerunningSeasonID", out value))
+                                    {
+                                        timerunningSeasonIDs[eventID] = Convert.ToInt64(value);
                                     }
                                 }
                                 if (header.TryGetValue("icon", out value))
@@ -2646,6 +2651,15 @@ namespace ATT
                         foreach (var pair in eventRemaps)
                         {
                             ExportObjectKeyValue(builder, pair.Key, pair.Value).AppendLine();
+                        }
+                        builder.AppendLine("});").AppendLine();
+                    }
+                    if (timerunningSeasonIDs.Any())
+                    {
+                        builder.AppendLine("localize(L.EVENT_TIMERUNNING_SEASONS, {");
+                        foreach (var pair in timerunningSeasonIDs)
+                        {
+                            ExportObjectKeyValue(builder, pair.Value, pair.Key).AppendLine();
                         }
                         builder.AppendLine("});").AppendLine();
                     }

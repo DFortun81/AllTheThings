@@ -12,6 +12,7 @@ local L = setmetatable({
 	
 	-- These are populated by the LocalizationDB.
 	EVENT_REMAPPING = {};
+	EVENT_TIMERUNNING_SEASONS = {};
 	HEADER_DESCRIPTIONS = {};
 	HEADER_EVENTS = {};
 	HEADER_ICONS = {};
