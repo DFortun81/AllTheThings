@@ -5982,17 +5982,6 @@ root(ROOTS.Unsorted, {
 						i(214731),	-- Jade Guardian's Sabatons
 					}),
 					filter(PLATE, {
-
-						------ Swarmbreaker's Battleplate (Original) ------
-						i(214759),	-- Swarmbreaker's Armguards
-						i(214760),	-- Swarmbreaker's Chestguard
-						i(214756),	-- Swarmbreaker's Grasp
-						i(214758),	-- Swarmbreaker's Greatboots
-						i(214753),	-- Swarmbreaker's Greaves
-						i(214754),	-- Swarmbreaker's Shoulderguards
-						i(214755),	-- Swarmbreaker's Waistguard
-						i(214757),	-- Swarmbreaker's Warhelm
-
 						------ Spiritguard's Warplate (Gold) ------
 						i(214776),	-- Sunsoul Battleplate
 						i(214771),	-- Sunsoul Greatbelt

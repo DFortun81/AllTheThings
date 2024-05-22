@@ -103,6 +103,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(214489),	-- Jade Guardian's Leggings
 				i(214491),	-- Jade Guardian's Spaulders
 			}),
+			filter(PLATE, {
+				i(214759),	-- Swarmbreaker's Armguards
+				i(214760),	-- Swarmbreaker's Chestguard
+				i(214756),	-- Swarmbreaker's Grasp
+				i(214758),	-- Swarmbreaker's Greatboots
+				i(214753),	-- Swarmbreaker's Greaves
+				i(214754),	-- Swarmbreaker's Shoulderguards
+				i(214755),	-- Swarmbreaker's Waistguard
+				i(214757),	-- Swarmbreaker's Warhelm
+			}),
 		}),
 		-- Scenario Maps
 		m(447, {	-- A Brewing Storm
