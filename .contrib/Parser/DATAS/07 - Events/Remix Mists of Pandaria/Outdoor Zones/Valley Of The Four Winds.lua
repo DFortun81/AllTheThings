@@ -64,7 +64,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(QUESTS, {
-				q(81564),	-- The Story of Noodles
+				q(81564, {	-- The Story of Noodles
+					["provider"] = { "n", 220895 },	-- Grandmaster Jakkus <Class Apparel>
+					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
+				}),
 			}),
 			n(REWARDS, {
 				filter(LEATHER, {

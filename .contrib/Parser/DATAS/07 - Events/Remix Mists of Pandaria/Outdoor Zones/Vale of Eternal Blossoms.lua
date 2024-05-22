@@ -80,6 +80,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					i(215651),	-- Pandaren Fist
+					filter(ONE_HANDED_SWORDS, {
+						i(215943),	-- Wasteland Scimitar
+					}),
 				}),
 			}),
 		},

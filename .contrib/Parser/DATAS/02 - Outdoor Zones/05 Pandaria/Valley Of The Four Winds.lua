@@ -1922,6 +1922,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 52.7, 63.0, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 57211 },	-- Grainlord Kai
 						["g"] = {
+							i(77034),	-- Malted Cave Barley (QI!)
 							i(81787),	-- Silkmaster's Satin Cord
 							i(81788),	-- Sunsoaked Belt
 							i(81789),	-- Huangtze Scale Waistguard

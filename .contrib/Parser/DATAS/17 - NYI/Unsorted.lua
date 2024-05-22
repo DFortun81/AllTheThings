@@ -6535,7 +6535,6 @@ root(ROOTS.Unsorted, {
 
 					i(215939),	-- Mogu Aspirant's Blade
 					i(215940),	-- Halcyon Blade
-					i(215943),	-- Wasteland Scimitar
 					i(215944),	-- Harmonious Scimitar
 					i(215945),	-- Binan Scimitar
 					i(215947),	-- Inkgill Sword
