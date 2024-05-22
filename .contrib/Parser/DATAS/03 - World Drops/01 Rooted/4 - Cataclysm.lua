@@ -689,6 +689,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		i(67040),	-- Amulet of the Howling Watch
 		i(67138),	-- Buc-Zakai Choker
 		i(67130),	-- Dorian's Lost Necklace
+		i(55403),	-- Mereldar Amulet
 		i(55401),	-- Mirkfallon Amulet
 		i(55398),	-- Moonbrook Amulet
 		i(55402),	-- Nethander Amulet
