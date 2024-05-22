@@ -230,6 +230,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214722),	-- Crimsonscale Spaulders
 				}),
 				n(WEAPONS, {
+					i(215741),	-- Bloodseeker's Bonebreaker
 					i(216595),	-- Bulwark of Twinned Despair
 					i(216601),	-- Eyes of the Doomed
 					i(215861),	-- Instructor's Spire

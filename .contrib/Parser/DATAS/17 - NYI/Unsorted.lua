@@ -6352,7 +6352,6 @@ root(ROOTS.Unsorted, {
 					i(215736),	-- Kri'tak, Scepter of the Swarm
 					i(215739),	-- Shomi's Scepter
 					i(215740),	-- Jinyu Bonebreaker
-					i(215741),	-- Bloodseeker's Bonebreaker
 					i(215743),	-- Sunsoul Smasher
 					i(215745),	-- Wasteland Basher
 					i(215748),	-- Fireblaze Mace
