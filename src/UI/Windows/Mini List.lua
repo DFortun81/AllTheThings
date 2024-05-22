@@ -78,86 +78,95 @@ local CachedMapData = setmetatable({}, {
 				MergeObject(headers[headerID].g, o);
 			end
 			
+			-- If there's a timerunning event going on...
+			local timerunningSeasonEventID = GetTimerunningSeasonEventID();
+			if timerunningSeasonEventID and app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
+				local refined = {};
+				for _,j in ipairs(results) do
+					if GetRelativeValue(j, "e") == timerunningSeasonEventID then
+						tinsert(refined, j);
+					end
+				end
+				results = refined;
+			end
+			
 			local header = {};
 			header.mapID = mapID;
 			header.g = groups;
-			local timerunningSeasonEventID = GetTimerunningSeasonEventID();
 			for i, group in ipairs(results) do
-				if not timerunningSeasonEventID or (GetRelativeValue(group, "e") == timerunningSeasonEventID) then
-					local clone = {};
-					for key,value in pairs(group) do
-						if key == "maps" then
-							local maps = {};
-							for i,mapID in ipairs(value) do
-								tinsert(maps, mapID);
-							end
-							clone[key] = maps;
-						elseif key == "g" then
-							local g = {};
-							for i,o in ipairs(value) do
-								o = CloneReference(o);
-								ExpandGroupsRecursively(o, false);
-								tinsert(g, o);
-							end
-							clone[key] = g;
+				local clone = {};
+				for key,value in pairs(group) do
+					if key == "maps" then
+						local maps = {};
+						for i,mapID in ipairs(value) do
+							tinsert(maps, mapID);
+						end
+						clone[key] = maps;
+					elseif key == "g" then
+						local g = {};
+						for i,o in ipairs(value) do
+							o = CloneReference(o);
+							ExpandGroupsRecursively(o, false);
+							tinsert(g, o);
+						end
+						clone[key] = g;
+					else
+						clone[key] = value;
+					end
+				end
+				local c = GetRelativeValue(group, "c");
+				if c then clone.c = c; end
+				local r = GetRelativeValue(group, "r");
+				if r then clone.r = r; end
+				local lvl = GetRelativeValue(group, "lvl");
+				if lvl then clone.lvl = lvl; end
+				setmetatable(clone, getmetatable(group));
+
+				local key = group.key;
+				if (key == "mapID" or key == "instanceID") or ((key == "headerID" or key == "npcID") and (group.maps and (mapID < 0 and contains(group.maps, mapID)))) then
+					header.key = key;
+					header[key] = group[key];
+					MergeObject({header}, clone);
+				elseif key == "criteriaID" then
+					clone.achievementID = group.achievementID;
+					MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
+				elseif key == "achievementID" then
+					MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
+				elseif key == "questID" then
+					MergeIntoHeader(app.HeaderConstants.QUESTS, clone);
+				elseif key == "factionID" then
+					MergeIntoHeader(app.HeaderConstants.FACTIONS, clone);
+				elseif key == "explorationID" then
+					MergeIntoHeader(app.HeaderConstants.EXPLORATION, clone);
+				elseif key == "flightPathID" then
+					MergeIntoHeader(app.HeaderConstants.FLIGHT_PATHS, clone);
+				elseif key == "itemID" or key == "spellID" then
+					if GetRelativeField(group, "headerID", app.HeaderConstants.ZONE_DROPS) then
+						MergeIntoHeader(app.HeaderConstants.ZONE_DROPS, clone);
+					else
+						local requireSkill = GetRelativeValue(group, "requireSkill");
+						if requireSkill then
+							MergeObject(groups, app.CreateProfession(requireSkill, { g = { clone } }));
 						else
-							clone[key] = value;
+							local headerID = GetRelativeValue(group, "headerID");
+							if headerID then
+								MergeIntoHeader(headerID, clone);
+							else
+								MergeObject(groups, clone);
+							end
 						end
 					end
-					local c = GetRelativeValue(group, "c");
-					if c then clone.c = c; end
-					local r = GetRelativeValue(group, "r");
-					if r then clone.r = r; end
-					local lvl = GetRelativeValue(group, "lvl");
-					if lvl then clone.lvl = lvl; end
-					setmetatable(clone, getmetatable(group));
-
-					local key = group.key;
-					if (key == "mapID" or key == "instanceID") or ((key == "headerID" or key == "npcID") and (group.maps and (mapID < 0 and contains(group.maps, mapID)))) then
-						header.key = key;
-						header[key] = group[key];
-						MergeObject({header}, clone);
-					elseif key == "criteriaID" then
-						clone.achievementID = group.achievementID;
-						MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
-					elseif key == "achievementID" then
-						MergeIntoHeader(app.HeaderConstants.ACHIEVEMENTS, clone);
-					elseif key == "questID" then
-						MergeIntoHeader(app.HeaderConstants.QUESTS, clone);
-					elseif key == "factionID" then
-						MergeIntoHeader(app.HeaderConstants.FACTIONS, clone);
-					elseif key == "explorationID" then
-						MergeIntoHeader(app.HeaderConstants.EXPLORATION, clone);
-					elseif key == "flightPathID" then
-						MergeIntoHeader(app.HeaderConstants.FLIGHT_PATHS, clone);
-					elseif key == "itemID" or key == "spellID" then
-						if GetRelativeField(group, "headerID", app.HeaderConstants.ZONE_DROPS) then
-							MergeIntoHeader(app.HeaderConstants.ZONE_DROPS, clone);
-						else
-							local requireSkill = GetRelativeValue(group, "requireSkill");
-							if requireSkill then
-								MergeObject(groups, app.CreateProfession(requireSkill, { g = { clone } }));
-							else
-								local headerID = GetRelativeValue(group, "headerID");
-								if headerID then
-									MergeIntoHeader(headerID, clone);
-								else
-									MergeObject(groups, clone);
-								end
-							end
+				elseif key == "headerID" then
+					MergeObject(groups, clone);
+				else
+					local headerID = GetRelativeValue(group, "headerID");
+					if headerID then
+						MergeIntoHeader(headerID, clone);
+						if group.parent and group.parent.isRaid then
+							headers[headerID].isRaid = true;
 						end
-					elseif key == "headerID" then
-						MergeObject(groups, clone);
 					else
-						local headerID = GetRelativeValue(group, "headerID");
-						if headerID then
-							MergeIntoHeader(headerID, clone);
-							if group.parent and group.parent.isRaid then
-								headers[headerID].isRaid = true;
-							end
-						else
-							MergeObject(groups, clone);
-						end
+						MergeObject(groups, clone);
 					end
 				end
 			end

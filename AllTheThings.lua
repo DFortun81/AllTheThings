@@ -10695,7 +10695,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			
 			-- If there's a timerunning event going on...
 			local timerunningSeasonEventID = GetTimerunningSeasonEventID();
-			if timerunningSeasonEventID then
+			if timerunningSeasonEventID and app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
 				local refined = {};
 				for _,j in ipairs(results) do
 					if GetRelativeValue(j, "e") == timerunningSeasonEventID then
