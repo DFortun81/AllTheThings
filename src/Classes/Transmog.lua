@@ -40,7 +40,7 @@ local C_TransmogCollection_GetAppearanceSourceInfo, C_TransmogCollection_GetAllA
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance
 	= C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
-local ATTAccountWideData, AccountSources
+local ATTAccountWideData, AccountSources, CharacterData
 
 -- Inventory Slot Harvester
 local SlotByInventoryType = setmetatable({}, {
@@ -1023,6 +1023,9 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	AccountSources = ATTAccountWideData.Sources
 
 	if not accountWideData.SourceItemsOnCharacter then accountWideData.SourceItemsOnCharacter = {}; end
+
+	-- saved var global will exist at this point
+	CharacterData = ATTCharacterData
 end);
 
 if app.IsRetail then
@@ -1052,13 +1055,20 @@ if app.IsRetail then
 		-- app.PrintDebug("Unlearned SourceID!",sourceID,link)
 		return
 	end
-	local function ClearIfMyGuid(container)
-		local guid = app.GUID
+	local CheckValue
+	local function ClearIfValue(container, check)
 		for id,val in pairs(container) do
-			if val == guid then
+			if val == check then
 				container[id] = nil
 			end
 		end
+	end
+	local function ClearIfMyGuid(container)
+		local guid = app.GUID
+		ClearIfValue(container, guid)
+	end
+	local function ClearIfCheckValue(container)
+		ClearIfValue(container, CheckValue)
 	end
 	local function CheckForBoundSourceItems()
 		app.ScanInventory(CheckForUnknownSourceID)
@@ -1066,6 +1076,23 @@ if app.IsRetail then
 
 	app.AddEventHandler("OnStartup", function()
 		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 5)
+		-- Add information type once ATT starts up
+		app.Settings.CreateInformationType("collectedwarband", { priority = 11001, HideCheckBox = true, ForceActive = true,
+			Process = function(t, reference, tooltipInfo)
+				local collectedGuid = t:GetValue(reference)
+				if not collectedGuid then return end
+				local charData = CharacterData[collectedGuid]
+				if not charData then
+					app.print("Removing 'collectedwarband' for unknown player Guid!",collectedGuid)
+					CheckValue = collectedGuid
+					app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfCheckValue)
+					CheckValue = nil
+					return
+				end
+				local charName = charData.text or UNKNOWN
+				tinsert(tooltipInfo, { right = L.BOUND_ON:format(charName)});
+			end
+		});
 	end);
 	app.AddEventRegistration("BANKFRAME_OPENED", function()
 		app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)

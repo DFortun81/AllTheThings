@@ -33,6 +33,7 @@ for key, value in pairs({
 	["TOM_TOM_NOT_FOUND"] = "You must have TomTom installed to plot coordinates.";
 	["FLIGHT_PATHS"] = "Flight Paths";
 	["KNOWN_BY"] = "Known by %s";
+	["BOUND_ON"] = "Bound on %s |T" .. app.asset("known_circle_yellow") .. ":0|t";
 	["REQUIRES"] = "Requires";
 
 	["PLEASE_REPORT_MESSAGE"] = "Please report this to the ATT Discord in #retail-errors! Thanks!";
