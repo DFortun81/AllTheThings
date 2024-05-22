@@ -9,6 +9,7 @@ local L = app.L;
 
 local AssignChildren, CloneClassInstance, GetRelativeValue = app.AssignChildren, app.CloneClassInstance, app.GetRelativeValue;
 local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject;
+local GetTimerunningSeasonEventID = app.Modules.Events.GetTimerunningSeason;
 
 -- Abbreviations
 L.ABBREVIATIONS[L.UNSORTED .. " %> " .. L.UNSORTED] = "|T" .. app.asset("WindowIcon_Unsorted") .. ":0|t " .. L.SHORTTITLE .. " %> " .. L.UNSORTED;
@@ -10690,12 +10691,25 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		self.Rebuild = function(self)
 			-- app.PrintDebug("Rebuild",self.mapID);
 			local currentMaps, mapID = {}, self.mapID
+			results = SearchForField("mapID", mapID);
+			
+			-- If there's a timerunning event going on...
+			local timerunningSeasonEventID = GetTimerunningSeasonEventID();
+			if timerunningSeasonEventID then
+				local refined = {};
+				for _,j in ipairs(results) do
+					if GetRelativeValue(j, "e") == timerunningSeasonEventID then
+						tinsert(refined, j);
+					end
+				end
+				results = refined;
+			end
 
 			-- Reset the minilist Runner before building new data
 			self:GetRunner().Reset()
 
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups or are under Unsorted
-			results = CleanInheritingGroups(SearchForField("mapID", mapID), "sourceIgnored");
+			results = CleanInheritingGroups(results, "sourceIgnored");
 			-- app.PrintDebug("Rebuild#",#results);
 			if results and #results > 0 then
 				-- I tend to like this way of finding sub-maps, but it does mean we rely on Blizzard and get whatever maps they happen to claim
