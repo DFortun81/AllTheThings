@@ -5982,16 +5982,6 @@ root(ROOTS.Unsorted, {
 						i(214731),	-- Jade Guardian's Sabatons
 					}),
 					filter(PLATE, {
-						------ Spiritguard's Warplate (Gold) ------
-						i(214776),	-- Sunsoul Battleplate
-						i(214771),	-- Sunsoul Greatbelt
-						i(214773),	-- Sunsoul Greathelm
-						i(214772),	-- Sunsoul Handguards
-						i(214769),	-- Sunsoul Legplates
-						i(214770),	-- Sunsoul Spaulders
-						i(214775),	-- Sunsoul Vambraces
-						i(214774),	-- Sunsoul Warboots
-
 						------ Spiritguard's Warplate (Silver) ------
 						i(214778),	-- Steel Sentinel's Armguards
 						i(214777),	-- Steel Sentinel's Chestguard
@@ -6124,7 +6114,6 @@ root(ROOTS.Unsorted, {
 					i(213173),	-- Thread of Power
 				}),
 				n(WEAPONS, {
-					i(215942),	-- Swordmistress' Edge
 					i(215946),	-- Valiant's Honorblade
 					i(215469),	-- Haromm's Frozen Battleaxe
 					i(215470),	-- Haromm's Frozen Battleaxe
@@ -6560,7 +6549,6 @@ root(ROOTS.Unsorted, {
 					i(216021),	-- Pandaren Hatchet
 					i(216022),	-- Pandaren Axe
 					i(216024),	-- Pandaren Hewer
-					i(216025),	-- Pandaren Cleaver
 					i(216400),	-- Tia-Tia, the Spinning Star
 					i(216402),	-- Tia-Tia, the Spinning Star
 					i(216403),	-- Tia-Tia, the Spinning Star
@@ -6896,7 +6884,6 @@ root(ROOTS.Unsorted, {
 				}),
 				n(WEAPONS, {
 					i(210641),	-- Bo-Ris, Spear of Night
-					i(210337),	-- Faded Forest Hatchet
 					i(211151),	-- Fran's Repeater
 					i(210343),	-- Gar'tok, Might of the Faithful
 					i(211160),	-- Greatsword of the Iron Legion
@@ -6904,7 +6891,6 @@ root(ROOTS.Unsorted, {
 					i(211162),	-- Klaxxi Longsword
 					i(210336),	-- Kor'kron Heavy Rifle
 					i(210643),	-- Mistspinner's Channel
-					i(210638),	-- Mushan Hewer
 					i(211149),	-- Rikkitun Warbow
 					i(211161),	-- Sphere of Immerseus
 					i(210338),	-- Spire of Supremacy

@@ -90,14 +90,26 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214468),	-- Trailseeker's Pauldrons
 					i(214474),	-- Trailseeker's Sabatons
 				}),
+				filter(PLATE, {
+					i(214776),	-- Sunsoul Battleplate
+					i(214771),	-- Sunsoul Greatbelt
+					i(214773),	-- Sunsoul Greathelm
+					i(214772),	-- Sunsoul Handguards
+					i(214769),	-- Sunsoul Legplates
+					i(214770),	-- Sunsoul Spaulders
+					i(214775),	-- Sunsoul Vambraces
+					i(214774),	-- Sunsoul Warboots
+				}),
 				n(WEAPONS, {
 					i(215870),	-- Amberweaver's Rod
 					i(215744),	-- Cloudfall Scepter
 					i(215867),	-- Diviner's Spire
+					i(210337),	-- Faded Forest Hatchet
 					i(215941),	-- Faded Forest Sword
 					i(215642),	-- Fangs of Despair
 					i(215676),	-- Hopebringer's Lantern
 					i(215950),	-- Mei's Sword
+					i(216025),	-- Pandaren Cleaver
 					i(216441),	-- Pandaren Manual
 					i(215485),	-- Shomi's Hatchet
 					i(215781),	-- Sumprush Maul

@@ -216,6 +216,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216418),	-- Hozen Dagger
 					i(215487),	-- Hozen Waraxe
 					i(215747),	-- Mace of the Rikkitun
+					i(210638),	-- Mushan Hewer
 					i(215750),	-- Ook Breaker
 					i(216423),	-- Pandaren Basher
 					i(216438),	-- Pandaren Manuscript
@@ -225,6 +226,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216611),	-- Seawatch Speargun
 					i(215601),	-- Spike of the Rikkitun
 					i(215866),	-- Staff of Focus
+					i(215942),	-- Swordmistress' Edge
 					i(216471),	-- Tian Monastery Channel
 					i(215863),	-- Torch of Midnight
 				}),
