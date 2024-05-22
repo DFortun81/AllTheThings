@@ -6135,7 +6135,6 @@ root(ROOTS.Unsorted, {
 					i(215475),	-- Malkorok's Headtaker
 					i(215476),	-- Malkorok's Headtaker
 					i(215477),	-- Korven's Crescent
-					i(215478),	-- Korven's Crescent
 					i(215479),	-- Korven's Crescent
 					i(215480),	-- Korven's Crescent
 					i(215481),	-- Elegion, the Star Cleaver
@@ -6214,7 +6213,6 @@ root(ROOTS.Unsorted, {
 					i(215567),	-- Jinyu Poker
 					i(215568),	-- Jinyu Dagger
 					i(215569),	-- Norushen's Dagger
-					i(215570),	-- Norushen's Dagger
 					i(215571),	-- Norushen's Dagger
 					i(215572),	-- Norushen's Dagger
 					i(215573),	-- Nazgrim's Shanker
@@ -6329,7 +6327,6 @@ root(ROOTS.Unsorted, {
 					i(215709),	-- Roar of the Quillen
 					i(215710),	-- Roar of the Quillen
 					i(215711),	-- Roar of the Quillen
-					i(215712),	-- Sphere of Immerseus
 					i(215713),	-- Sphere of Immerseus
 					i(215714),	-- Sphere of Immerseus
 					i(215715),	-- Kardris' Scepter
@@ -6409,7 +6406,6 @@ root(ROOTS.Unsorted, {
 					i(215828),	-- Rod of the Megantholithic Apparatus
 					i(215829),	-- Rod of the Megantholithic Apparatus
 					i(215831),	-- Pride's Gaze
-					i(215832),	-- Pride's Gaze
 					i(215833),	-- Pride's Gaze
 					i(215834),	-- Pride's Gaze
 					i(215836),	-- Drakebinder's Spire
@@ -6648,7 +6644,6 @@ root(ROOTS.Unsorted, {
 					i(216544),	-- Pandaren Shield
 					i(216545),	-- Pandaren Deflector
 					i(216546),	-- Visage of Dread
-					i(216547),	-- Visage of Dread
 					i(216548),	-- Visage of Dread
 					i(216550),	-- Visage of Dread
 					i(216551),	-- Norushen's Tower Shield

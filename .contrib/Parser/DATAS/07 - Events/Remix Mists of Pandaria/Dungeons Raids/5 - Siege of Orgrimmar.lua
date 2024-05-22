@@ -206,12 +206,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.LFR, {
-					n(WEAPONS, {
-						filter(STAVES, {
-							i(215835),	-- Drakebinder's Spire
-							i(215830),	-- Rod of the Megantholithic Apparatus
-						}),
-					}),
 					n(ARMOR, {
 						filter(CLOTH, {
 							-- MAGE
@@ -321,6 +315,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215031),	-- Bracers of the Prehistoric Marauder
 							i(215032),	-- Sabatons of the Prehistoric Marauder
 						}),
+					}),
+					n(WEAPONS, {
+						i(215835),	-- Drakebinder's Spire
+						i(215830),	-- Rod of the Megantholithic Apparatus
 					}),
 					header(HEADERS.Achievement, 8458, {	-- Vale of Eternal Sorrows
 						e(852, {	-- Immerseus
@@ -503,6 +501,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215039),	-- Vambraces of the Prehistoric Marauder
 							i(215040),	-- Warboots of the Prehistoric Marauder
 						}),
+					}),
+					n(WEAPONS, {
+						i(215478),	-- Korven's Crescent
+						i(215570),	-- Norushen's Dagger
+						i(215832),	-- Pride's Gaze
+						i(215712),	-- Sphere of Immerseus
+						i(216547),	-- Visage of Dread
 					}),
 					e(852, {	-- Immerseus
 						["crs"] = { 71543 },	-- Immerseus
