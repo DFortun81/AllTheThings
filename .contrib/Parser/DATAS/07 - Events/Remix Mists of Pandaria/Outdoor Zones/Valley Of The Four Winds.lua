@@ -110,6 +110,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215676),	-- Hopebringer's Lantern
 					i(215950),	-- Mei's Sword
 					i(216025),	-- Pandaren Cleaver
+					i(216545),	-- Pandaren Deflector
 					i(216441),	-- Pandaren Manual
 					i(215485),	-- Shomi's Hatchet
 					i(215781),	-- Sumprush Maul

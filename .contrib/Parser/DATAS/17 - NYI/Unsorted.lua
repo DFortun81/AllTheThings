@@ -6145,7 +6145,6 @@ root(ROOTS.Unsorted, {
 					i(215507),	-- Shin'ka, the Tyrant's Greataxe
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
 					i(215510),	-- Warbringer's Chopper
-					i(215511),	-- Jadestone Greataxe
 					i(215512),	-- Wallwatcher's Poleaxe
 					i(215513),	-- Wallwatcher's Axe
 					i(215514),	-- Wallwatcher's Longaxe
@@ -6416,7 +6415,6 @@ root(ROOTS.Unsorted, {
 					i(215855),	-- Jin'ya, Orb of the Watercaller
 					i(215856),	-- Jin'ya, Orb of the Watercaller
 					i(215857),	-- Jin'ya, Orb of the Watercaller
-					i(215862),	-- Engraved Spire
 					i(215864),	-- Torch of Dawn
 					i(215865),	-- Fogspeaker Conduit
 					i(215868),	-- Monastic Staff
@@ -6630,7 +6628,6 @@ root(ROOTS.Unsorted, {
 					i(216541),	-- Pandaren Barrier
 					i(216543),	-- Pandaren Bulwark
 					i(216544),	-- Pandaren Shield
-					i(216545),	-- Pandaren Deflector
 					i(216546),	-- Visage of Dread
 					i(216548),	-- Visage of Dread
 					i(216550),	-- Visage of Dread

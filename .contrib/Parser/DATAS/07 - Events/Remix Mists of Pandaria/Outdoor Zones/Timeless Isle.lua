@@ -265,6 +265,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215948),	-- Darkhide Sword
 					i(215952),	-- Fear's Bite
 					i(216535),	-- Ironwood Bulwark
+					i(215511),	-- Jadestone Greataxe
 					i(215486),	-- Jinyu Waraxe
 					i(215603),	-- Sha-Warped Slicer
 					i(215889),	-- Soulwood Spire
