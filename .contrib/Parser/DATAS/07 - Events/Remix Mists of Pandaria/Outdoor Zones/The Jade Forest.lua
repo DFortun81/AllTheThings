@@ -189,6 +189,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214463),	-- Windreaver's Leggings
 						i(214461),	-- Windreaver's Spaulders
 					}),
+					filter(PLATE, {
+						i(214762),	-- Spiritguard's Bracers
+						i(214761),	-- Spiritguard's Breastplate
+						i(214765),	-- Spiritguard's Gauntlets
+						i(214766),	-- Spiritguard's Girdle
+						i(214764),	-- Spiritguard's Helm
+						i(214768),	-- Spiritguard's Legguards
+						i(214767),	-- Spiritguard's Pauldrons
+						i(214763),	-- Spiritguard's Sabatons
+					}),
 				}),
 				n(WEAPONS, {
 					i(215871),	-- Amberweaver's Conduit

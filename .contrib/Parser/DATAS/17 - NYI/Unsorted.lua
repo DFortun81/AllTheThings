@@ -6012,16 +6012,6 @@ root(ROOTS.Unsorted, {
 						i(214755),	-- Swarmbreaker's Waistguard
 						i(214757),	-- Swarmbreaker's Warhelm
 
-						------ Spiritguard's Warplate (Blue) ------
-						i(214762),	-- Spiritguard's Bracers
-						i(214761),	-- Spiritguard's Breastplate
-						i(214765),	-- Spiritguard's Gauntlets
-						i(214766),	-- Spiritguard's Girdle
-						i(214764),	-- Spiritguard's Helm
-						i(214768),	-- Spiritguard's Legguards
-						i(214767),	-- Spiritguard's Pauldrons
-						i(214763),	-- Spiritguard's Sabatons
-
 						------ Spiritguard's Warplate (Gold) ------
 						i(214776),	-- Sunsoul Battleplate
 						i(214771),	-- Sunsoul Greatbelt
