@@ -6245,7 +6245,6 @@ root(ROOTS.Unsorted, {
 					i(215634),	-- Gara'kal, Claw of the Spiritbinder
 					i(215635),	-- Gara'kal, Claw of the Spiritbinder
 					i(215636),	-- Fist of Shek'zeer
-					i(215637),	-- Fist of Shek'zeer
 					i(215638),	-- Fist of Shek'zeer
 					i(215640),	-- Barbs of the Rikkitun
 					i(215646),	-- Claw of the Fallen Temple
@@ -6393,10 +6392,8 @@ root(ROOTS.Unsorted, {
 					i(215840),	-- Brazier of the Eternal Empire
 					i(215841),	-- Brazier of the Eternal Empire
 					i(215842),	-- Brazier of the Eternal Empire
-					i(215844),	-- Waterspeaker's Staff
 					i(215845),	-- Waterspeaker's Staff
 					i(215846),	-- Waterspeaker's Staff
-					i(215848),	-- Fearspeaker's Warstaff
 					i(215849),	-- Fearspeaker's Warstaff
 					i(215851),	-- Gao-Rei, Staff of the Protector
 					i(215852),	-- Gao-Rei, Staff of the Protector

@@ -246,6 +246,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215583),	-- Blade of the Seven Stars
 					i(215482),	-- Elegion, the Star Cleaver
 					i(215847),	-- Fearspeaker's Warstaff
+					i(215848),	-- Fearspeaker's Warstaff
 					i(215850),	-- Fearspeaker's Warstaff
 					i(215730),	-- Galvanized Stormcrusher
 					i(216563),	-- Gaze of the Ancient
@@ -256,6 +257,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215506),	-- Shin'ka, the Tyrant's Greataxe
 					i(216561),	-- Steelskin, Qiang's Bulwark
 					i(215732),	-- Tihan, Scepter of the Sleeper
+					i(215637),	-- Fist of Shek'zeer
+					i(215844),	-- Waterspeaker's Staff
 				}),
 			}),
 			d(DIFFICULTY.RAID.HEROIC, {
