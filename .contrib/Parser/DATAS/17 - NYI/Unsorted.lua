@@ -5982,15 +5982,6 @@ root(ROOTS.Unsorted, {
 						i(214731),	-- Jade Guardian's Sabatons
 					}),
 					filter(PLATE, {
-						------ Swarmbreaker's Battleplate (Dark) ------
-						i(214743),	-- Greenstone Bracers
-						i(214744),	-- Greenstone Breastplate
-						i(214740),	-- Greenstone Gauntlets
-						i(214739),	-- Greenstone Girdle
-						i(214741),	-- Greenstone Helm
-						i(214737),	-- Greenstone Legguards
-						i(214738),	-- Greenstone Pauldrons
-						i(214742),	-- Greenstone Sabatons
 
 						------ Swarmbreaker's Battleplate (Original) ------
 						i(214759),	-- Swarmbreaker's Armguards
@@ -6396,7 +6387,6 @@ root(ROOTS.Unsorted, {
 					i(215778),	-- Gar'tok, Might of the Faithful
 					i(215779),	-- Gar'tok, Might of the Faithful
 					i(215782),	-- Wasteland Maul
-					i(215783),	-- Shado-Pan Maul
 					i(215785),	-- Fangcracker Maul
 					i(215787),	-- Kazra'jin's Maul
 					i(215789),	-- Kazra'jin's Maul
@@ -6549,7 +6539,6 @@ root(ROOTS.Unsorted, {
 					i(215981),	-- Red Crane Greatsword
 					i(215982),	-- Marista Greatsword
 					i(215983),	-- Jade Grand Falchion
-					i(215984),	-- Bjam's Greatsword
 					i(215985),	-- Satay's Greatsword
 					i(215986),	-- Blade of Broken Chains
 					i(215987),	-- Jinyu Greatblade

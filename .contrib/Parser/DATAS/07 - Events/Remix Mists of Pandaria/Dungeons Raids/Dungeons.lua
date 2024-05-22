@@ -54,6 +54,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214410),	-- Stormbrew Leggings
 					i(214409),	-- Stormbrew Spaulders
 				}),
+				filter(PLATE, {
+					i(214743),	-- Greenstone Bracers
+					i(214744),	-- Greenstone Breastplate
+					i(214740),	-- Greenstone Gauntlets
+					i(214739),	-- Greenstone Girdle
+					i(214741),	-- Greenstone Helm
+					i(214737),	-- Greenstone Legguards
+					i(214738),	-- Greenstone Pauldrons
+					i(214742),	-- Greenstone Sabatons
+				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				filter(LEATHER, {
@@ -89,6 +99,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 		}),
 		n(WEAPONS, {
+			i(215984),	-- Bjam's Greatsword
 			i(216582),	-- Bulwark of the Protectorate
 			i(216581),	-- Deflector of the Protectorate
 			i(215491),	-- Dubious Waraxe
@@ -101,6 +112,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215879),	-- Mountainsage Spire
 			i(215705),	-- Penate's Pistol
 			i(215751),	-- Porter's Mace
+			i(215783),	-- Shado-Pan Maul
 			i(215878),	-- Springrain Spire
 			i(215875),	-- Staff of Stolen Hope
 			i(215784),	-- Taran Zhu's Bonebreaker
