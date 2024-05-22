@@ -5992,16 +5992,6 @@ root(ROOTS.Unsorted, {
 						i(214738),	-- Greenstone Pauldrons
 						i(214742),	-- Greenstone Sabatons
 
-						------ Swarmbreaker's Battleplate (Light) ------
-						i(214745),	-- Yaungolian Battleplate
-						i(214750),	-- Yaungolian Greatbelt
-						i(214748),	-- Yaungolian Greathelm
-						i(214749),	-- Yaungolian Handguards
-						i(214752),	-- Yaungolian Legplates
-						i(214751),	-- Yaungolian Spaulders
-						i(214746),	-- Yaungolian Vambraces
-						i(214747),	-- Yaungolian Warboots
-
 						------ Swarmbreaker's Battleplate (Original) ------
 						i(214759),	-- Swarmbreaker's Armguards
 						i(214760),	-- Swarmbreaker's Chestguard

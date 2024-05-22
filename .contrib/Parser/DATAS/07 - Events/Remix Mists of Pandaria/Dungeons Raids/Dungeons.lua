@@ -76,6 +76,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214412),	-- Mogu Lord's Pauldrons
 					i(214416),	-- Mogu Lord's Sabatons
 				}),
+				filter(PLATE, {
+					i(214745),	-- Yaungolian Battleplate
+					i(214750),	-- Yaungolian Greatbelt
+					i(214748),	-- Yaungolian Greathelm
+					i(214749),	-- Yaungolian Handguards
+					i(214752),	-- Yaungolian Legplates
+					i(214751),	-- Yaungolian Spaulders
+					i(214746),	-- Yaungolian Vambraces
+					i(214747),	-- Yaungolian Warboots
+				}),
 			}),
 		}),
 		n(WEAPONS, {
