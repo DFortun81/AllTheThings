@@ -1098,6 +1098,7 @@ if app.IsRetail then
 		app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)
 		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
 	end)
+	app.AddEventHandler("OnRefreshCollectionsDone", CheckForBoundSourceItems)
 end
 
 -- Extend the Filter Module to include ItemSource
