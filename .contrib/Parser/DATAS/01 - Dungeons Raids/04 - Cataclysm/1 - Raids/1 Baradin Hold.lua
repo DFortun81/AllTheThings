@@ -5,7 +5,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 	applyclassicphase(CATA_PHASE_ONE, inst(75, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {	-- Baradin Hold
 		["mapID"] = 282,
-		["coord"] = { 46.1, 47.9, 244 },
+		["coord"] = { 46.1, 47.9, TOL_BARAD },
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
 		["lvl"] = 85,

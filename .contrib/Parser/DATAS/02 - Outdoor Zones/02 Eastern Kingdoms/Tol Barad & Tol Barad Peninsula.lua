@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
-	m(245, {	-- Tol Barad Peninsula
+	m(TOL_BARAD_PENINSULA, {
 		["description"] = "Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",
 		["icon"] = 409548,	-- achievement_zone_tolbarad
 		["groups"] = {
@@ -397,9 +397,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					["crs"] = { 47676 },	-- Baradin Fox
 				}),
 			}),
-			m(244, {	-- Tol Barad
+			m(TOL_BARAD, {
 				["description"] = "Tol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.",
 				["icon"] = "Interface\\Icons\\achievement_bg_winwsg",
+				-- #if ANYCLASSIC
+				["maps"] = { 244 },
+				-- #endif
 				["groups"] = {
 					pvp(n(ACHIEVEMENTS, {	-- pvp map
 						a(ach(5489,	{ -- Master of Tol Barad (A)

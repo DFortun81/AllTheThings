@@ -595,7 +595,7 @@ root(ROOTS.Zones, {
 					}),
 					crit(16215,  {	-- Baradin Fox Kit (Tol Barad)
 						["provider"] = { "n", 48630 },	-- Baradin Fox Kit
-						["coord"] = { 44, 26, 244 },
+						["coord"] = { 44, 26, TOL_BARAD },
 					}),
 					crit(16216,  {	-- Grotto Vole (Mount Hyjal)
 						["provider"] = { "n", 50419 },	-- Grotto Vole
@@ -627,7 +627,7 @@ root(ROOTS.Zones, {
 					}),
 					crit(16223, {	-- Sassy Cat (Tol Barad)
 						["provider"] = { "n", 47682 },	-- Sassy Cat
-						["coord"] = { 72, 38, 245 },
+						["coord"] = { 72, 38, TOL_BARAD_PENINSULA },
 					}),
 					crit(16224, {	-- Sea Cucumber (Shimmering Expanse, Abyssal Depths)
 						["provider"] = { "n", 48802 },	-- Sea Cucumber
@@ -635,7 +635,7 @@ root(ROOTS.Zones, {
 					}),
 					crit(16225, {	-- Wharf Rat (Tol Barad Peninsula, The Cape of Stranglethorn
 						["provider"] = { "n", 47667 },	-- Wharf Rat
-						["coord"] = { 27, 40, 245 },
+						["coord"] = { 27, 40, TOL_BARAD_PENINSULA },
 					}),
 					crit(16226, {	-- Yellow-Bellied Marmot (Twilight Highlands)
 						["provider"] = { "n", 48683 },	-- Yellow-Bellied Marmot
