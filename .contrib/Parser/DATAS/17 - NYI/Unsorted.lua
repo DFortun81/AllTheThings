@@ -5982,16 +5982,6 @@ root(ROOTS.Unsorted, {
 						i(214731),	-- Jade Guardian's Sabatons
 					}),
 					filter(PLATE, {
-						------ Shan'ze Warplate (Green) ------
-						i(214791),	-- Highpeak Bracers
-						i(214792),	-- Highpeak Breastplate
-						i(214788),	-- Highpeak Gauntlets
-						i(214787),	-- Highpeak Girdle
-						i(214789),	-- Highpeak Helm
-						i(214785),	-- Highpeak Legguards
-						i(214786),	-- Highpeak Pauldrons
-						i(214790),	-- Highpeak Sabatons
-
 						------ Shan'ze Warplate (Purple) ------
 						i(214793),	-- Bladesworn Battleplate
 						i(214798),	-- Bladesworn Greatbelt

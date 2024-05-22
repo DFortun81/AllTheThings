@@ -106,6 +106,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214514),	-- Dawnwatcher's Pauldrons
 					i(214509),	-- Dawnwatcher's Sabatons
 				}),
+				filter(PLATE, {
+					i(214791),	-- Highpeak Bracers
+					i(214792),	-- Highpeak Breastplate
+					i(214788),	-- Highpeak Gauntlets
+					i(214787),	-- Highpeak Girdle
+					i(214789),	-- Highpeak Helm
+					i(214785),	-- Highpeak Legguards
+					i(214786),	-- Highpeak Pauldrons
+					i(214790),	-- Highpeak Sabatons
+				}),
 				n(WEAPONS, {
 					i(215644),	-- Amber Claw
 					i(215681),	-- Crane's Beak Effigy
