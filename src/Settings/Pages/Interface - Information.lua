@@ -883,9 +883,108 @@ local InformationTypes = {
 	});
 };
 settings.InformationTypes = InformationTypes;
+
+local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
+local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {}, nil, nil;
+local function SortInformationTypesByLocalizedName(a,b)
+	return a.textLower < b.textLower;
+end
+local function SortInformationTypesByPriority(a,b)
+	priorityA = a.priority;
+	priorityB = b.priority;
+	if priorityA == priorityB then
+		return a.textLower < b.textLower;
+	else
+		return priorityA < priorityB;
+	end
+end
+local function RefreshActiveInformationTypes()
+	wipe(ActiveInformationTypesForExternalTooltips);
+	wipe(ActiveInformationTypes);
+
+	for _,informationType in ipairs(SortedInformationTypes) do
+		if settings:GetTooltipSetting(informationType.informationTypeID) or informationType.ForceActive then
+			if informationType.IsStandaloneProperty then
+				ActiveInformationTypes[#ActiveInformationTypes + 1] = informationType;
+				if informationType.ShouldDisplayInExternalTooltips then
+					ActiveInformationTypesForExternalTooltips[#ActiveInformationTypesForExternalTooltips + 1] = informationType;
+				end
+			end
+		end
+	end
+
+	-- Insert the Post Processor
+	ActiveInformationTypesForExternalTooltips[#ActiveInformationTypesForExternalTooltips + 1] = PostProcessor;
+	ActiveInformationTypes[#ActiveInformationTypes + 1] = PostProcessor;
+end
+local function SortInformationTypes()
+	wipe(SortedInformationTypes);
+	wipe(SortedInformationTypesByName);
+	for i,informationType in ipairs(InformationTypes) do
+		SortedInformationTypes[#SortedInformationTypes + 1] = informationType;
+		if not (informationType.ForceActive or informationType.HideCheckBox) then
+			SortedInformationTypesByName[#SortedInformationTypesByName + 1] = informationType;
+		end
+	end
+	table.sort(SortedInformationTypes, SortInformationTypesByPriority);
+	table.sort(SortedInformationTypesByName, SortInformationTypesByLocalizedName);
+end
+
+app.ProcessInformationTypes = function(tooltipInfo, reference)
+	for _,informationType in ipairs(ActiveInformationTypes) do
+		informationType:Process(reference, tooltipInfo);
+	end
+end
+app.ProcessInformationTypesForExternalTooltips = function(tooltipInfo, reference)
+	for _,informationType in ipairs(app.ActiveRowReference and ActiveInformationTypes or ActiveInformationTypesForExternalTooltips) do
+		informationType:Process(reference, tooltipInfo);
+	end
+end
+
+local function OnClickForInformationCheckBox(self)
+	settings:SetTooltipSetting(self.informationTypeID, self:GetChecked())
+	RefreshActiveInformationTypes()
+	settings:Refresh()
+end
+local function OnRefreshForInformationCheckBox(self)
+	self:SetChecked(settings:GetTooltipSetting(self.informationTypeID))
+end
+settings.RefreshActiveInformationTypes = function()
+	SortInformationTypes()
+	RefreshActiveInformationTypes();
+
+	local last
+	local split1 = math.ceil(#SortedInformationTypesByName / 3)
+	local split2 = 2 * split1
+	for idNo,informationType in ipairs(SortedInformationTypesByName) do
+		local filter = child:CreateCheckBox(informationType.text, OnRefreshForInformationCheckBox, OnClickForInformationCheckBox)
+		filter.informationTypeID = informationType.informationTypeID;
+		-- Column 1
+		if idNo == 1 then
+			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
+		-- Column 2
+		elseif idNo > split1 then
+			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
+			split1 = 999
+		-- Column 3
+		elseif idNo >= split2 then
+			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 425, 0)
+			split2 = 999
+		else
+			filter:AlignBelow(last)
+		end
+		last = filter
+	end
+end
+
+local function SetupInformationTypes()
+	SortInformationTypes()
+	RefreshActiveInformationTypes()
+end
 settings.CreateInformationType = function(key, t)
 	local informationType = CreateInformationType(key, t);
 	tinsert(InformationTypes, informationType);
+	app.CallbackHandlers.DelayedCallback(SetupInformationTypes, 2)
 	return informationType;
 end
 
@@ -946,93 +1045,3 @@ settings.CreateInformationType("modItemID", {
 	text = "DEBUG: modItemID",
 	HideCheckBox = not app.Debugging,
 })
-
-local ActiveInformationTypes, ActiveInformationTypesForExternalTooltips = {}, {};
-local SortedInformationTypes, SortedInformationTypesByName, priorityA, priorityB = {}, {}, nil, nil;
-local function SortInformationTypesByLocalizedName(a,b)
-	return a.textLower < b.textLower;
-end
-local function SortInformationTypesByPriority(a,b)
-	priorityA = a.priority;
-	priorityB = b.priority;
-	if priorityA == priorityB then
-		return a.textLower < b.textLower;
-	else
-		return priorityA < priorityB;
-	end
-end
-local function RefreshActiveInformationTypes()
-	wipe(ActiveInformationTypesForExternalTooltips);
-	wipe(ActiveInformationTypes);
-
-	for _,informationType in ipairs(SortedInformationTypes) do
-		if settings:GetTooltipSetting(informationType.informationTypeID) or informationType.ForceActive then
-			if informationType.IsStandaloneProperty then
-				ActiveInformationTypes[#ActiveInformationTypes + 1] = informationType;
-				if informationType.ShouldDisplayInExternalTooltips then
-					ActiveInformationTypesForExternalTooltips[#ActiveInformationTypesForExternalTooltips + 1] = informationType;
-				end
-			end
-		end
-	end
-
-	-- Insert the Post Processor
-	ActiveInformationTypesForExternalTooltips[#ActiveInformationTypesForExternalTooltips + 1] = PostProcessor;
-	ActiveInformationTypes[#ActiveInformationTypes + 1] = PostProcessor;
-end
-
-app.ProcessInformationTypes = function(tooltipInfo, reference)
-	for _,informationType in ipairs(ActiveInformationTypes) do
-		informationType:Process(reference, tooltipInfo);
-	end
-end
-app.ProcessInformationTypesForExternalTooltips = function(tooltipInfo, reference)
-	for _,informationType in ipairs(app.ActiveRowReference and ActiveInformationTypes or ActiveInformationTypesForExternalTooltips) do
-		informationType:Process(reference, tooltipInfo);
-	end
-end
-
-local function OnClickForInformationCheckBox(self)
-	settings:SetTooltipSetting(self.informationTypeID, self:GetChecked())
-	RefreshActiveInformationTypes()
-	settings:Refresh()
-end
-local function OnRefreshForInformationCheckBox(self)
-	self:SetChecked(settings:GetTooltipSetting(self.informationTypeID))
-end
-settings.RefreshActiveInformationTypes = function()
-	wipe(SortedInformationTypes);
-	wipe(SortedInformationTypesByName);
-	for i,informationType in ipairs(InformationTypes) do
-		SortedInformationTypes[#SortedInformationTypes + 1] = informationType;
-		if not (informationType.ForceActive or informationType.HideCheckBox) then
-			SortedInformationTypesByName[#SortedInformationTypesByName + 1] = informationType;
-		end
-	end
-	table.sort(SortedInformationTypes, SortInformationTypesByPriority);
-	table.sort(SortedInformationTypesByName, SortInformationTypesByLocalizedName);
-	RefreshActiveInformationTypes();
-
-	local last
-	local split1 = math.ceil(#SortedInformationTypesByName / 3)
-	local split2 = 2 * split1
-	for idNo,informationType in ipairs(SortedInformationTypesByName) do
-		local filter = child:CreateCheckBox(informationType.text, OnRefreshForInformationCheckBox, OnClickForInformationCheckBox)
-		filter.informationTypeID = informationType.informationTypeID;
-		-- Column 1
-		if idNo == 1 then
-			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", -2, 0)
-		-- Column 2
-		elseif idNo > split1 then
-			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 212, 0)
-			split1 = 999
-		-- Column 3
-		elseif idNo >= split2 then
-			filter:SetPoint("TOPLEFT", headerAdditionalInformation, "BOTTOMLEFT", 425, 0)
-			split2 = 999
-		else
-			filter:AlignBelow(last)
-		end
-		last = filter
-	end
-end
