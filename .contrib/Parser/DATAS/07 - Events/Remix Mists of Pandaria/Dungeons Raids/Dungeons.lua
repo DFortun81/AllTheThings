@@ -227,7 +227,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		inst(246, {	-- Scholomance
 			["coord"] = { 69.07, 72.96, WESTERN_PLAGUELANDS },
 			["maps"] = {
-				477, 478, 479,
+				SCHOLOMANCE, 477, 478, 479,
 			},
 			["g"] = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {
