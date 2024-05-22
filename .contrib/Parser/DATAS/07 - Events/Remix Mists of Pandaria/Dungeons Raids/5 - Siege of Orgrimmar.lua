@@ -579,183 +579,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(ARMOR, {
 						filter(CLOTH, {
 							-- MAGE
-							i(213835),	-- Chronomancer Vestment
-							i(213836),	-- Chronomancer Slippers
-							i(213837),	-- Chronomancer Mitts
-							i(213838),	-- Chronomancer Crown
-							i(213839),	-- Chronomancer Trousers
-							i(213840),	-- Chronomancer Mantle
-							i(213841),	-- Chronomancer Sash
-							i(213842),	-- Chronomancer Wristwraps
-							i(220974),	-- Chronomancer Vest
-							-- PRIEST
-							i(213907),	-- Wristwraps of the Ternion Glory
-							i(213908),	-- Sash of the Ternion Glory
-							i(213909),	-- Mantle of the Ternion Glory
-							i(213910),	-- Trousers of the Ternion Glory
-							i(213911),	-- Crown of the Ternion Glory
-							i(213912),	-- Mitts of the Ternion Glory
-							i(213913),	-- Slippers of the Ternion Glory
-							i(213914),	-- Vestment of the Ternion Glory
-							-- WARLOCK
-							i(213979),	-- Vestment of the Horned Nightmare
-							i(213980),	-- Slippers of the Horned Nightmare
-							i(213981),	-- Mitts of the Horned Nightmare
-							i(213982),	-- Crown of the Horned Nightmare
-							i(213983),	-- Trousers of the Horned Nightmare
-							i(213984),	-- Mantle of the Horned Nightmare
-							i(213985),	-- Sash of the Horned Nightmare
-							i(213986),	-- Wristwraps of the Horned Nightmare
-						}),
-						filter(LEATHER, {
-							-- DRUID
-							i(214206),	-- Wraps of the Shattered Vale
-							i(214207),	-- Jerkin of the Shattered Vale
-							i(214208),	-- Treads of the Shattered Vale
-							i(214209),	-- Cap of the Shattered Vale
-							i(214210),	-- Handguards of the Shattered Vale
-							i(214211),	-- Cinch of the Shattered Vale
-							i(214212),	-- Mantle of the Shattered Vale
-							i(214213),	-- Pants of the Shattered Vale
-							-- MONK
-							i(214291),	-- Bindings of Seven Sacred Seals
-							i(214292),	-- Vest of Seven Sacred Seals
-							i(214293),	-- Footguards of Seven Sacred Seals
-							i(214294),	-- Cover of Seven Sacred Seals
-							i(214295),	-- Grips of Seven Sacred Seals
-							i(214296),	-- Waistband of Seven Sacred Seals
-							i(214297),	-- Spaulders of Seven Sacred Seals
-							i(214298),	-- Legguards of Seven Sacred Seals
-							-- ROGUE
-							i(214355),	-- Bracers of the Barbed Assassin
-							i(214356),	-- Tunic of the Barbed Assassin
-							i(214357),	-- Boots of the Barbed Assassin
-							i(214358),	-- Helm of the Barbed Assassin
-							i(214359),	-- Gloves of the Barbed Assassin
-							i(214360),	-- Belt of the Barbed Assassin
-							i(214361),	-- Shoulderpads of the Barbed Assassin
-							i(214362),	-- Leggings of the Barbed Assassin
-						}),
-						filter(MAIL, {
-							-- HUNTER
-							i(214606), -- Legguards of the Unblinking Vigil
-							i(214607), -- Pauldrons of the Unblinking Vigil
-							i(214608), -- Chain of the Unblinking Vigil
-							i(214610), -- Gloves of the Unblinking Vigil
-							i(214611), -- Headguard of the Unblinking Vigil
-							i(214612), -- Sabatons of the Unblinking Vigil
-							i(214613), -- Chestguard of the Unblinking Vigil
-							i(214614), -- Armbands of the Unblinking Vigil
-							-- SHAMAN
-							i(214681),	-- Armbands of Celestial Harmony
-							i(214686),	-- Chain of Celestial Harmony
-							i(214682),	-- Chestguard of Celestial Harmony
-							i(214685),	-- Gloves of Celestial Harmony
-							i(214684),	-- Headguard of Celestial Harmony
-							i(214688),	-- Legguards of Celestial Harmony
-							i(214687),	-- Pauldrons of Celestial Harmony
-							i(214683),	-- Sabatons of Celestial Harmony
-						}),
-						filter(PLATE, {
-							-- DEATH KNIGHT
-							i(214865),	-- Legplates of Cyclopean Dread
-							i(214866),	-- Spaulders of Cyclopean Dread
-							i(214867),	-- Greatbelt of Cyclopean Dread
-							i(214868),	-- Handguards of Cyclopean Dread
-							i(214869),	-- Greathelm of Cyclopean Dread
-							i(214870),	-- Warboots of Cyclopean Dread
-							i(214871),	-- Vambraces of Cyclopean Dread
-							i(214872),	-- Battleplate of Cyclopean Dread
-							-- PALADIN
-							i(214953),	-- Sabatons of Winged Triumph
-							i(214954),	-- Bracers of Winged Triumph
-							i(214955),	-- Legguards of Winged Triumph
-							i(214956),	-- Helm of Winged Triumph
-							i(214957),	-- Breastplate of Winged Triumph
-							i(214958),	-- Gauntlets of Winged Triumph
-							i(214959),	-- Pauldrons of Winged Triumph
-							i(214960),	-- Girdle of Winged Triumph
-							-- WARRIOR
-							i(215033),	-- Greatbelt of the Prehistoric Marauder
-							i(215034),	-- Spaulders of the Prehistoric Marauder
-							i(215035),	-- Gauntlets of the Prehistoric Marauder
-							i(215036),	-- Battleplate of the Prehistoric Marauder
-							i(215037),	-- Greathelm of the Prehistoric Marauder
-							i(215038),	-- Legplates of the Prehistoric Marauder
-							i(215039),	-- Vambraces of the Prehistoric Marauder
-							i(215040),	-- Warboots of the Prehistoric Marauder
-						}),
-					}),
-					e(852, {	-- Immerseus
-						["crs"] = { 71543 },	-- Immerseus
-					}),
-					e(849, {	-- The Fallen Protectors
-						["crs"] = {
-							71479,	-- He Softfoot [The Fallen Protectors]
-							71475,	-- Rook Stonetoe [The Fallen Protectors]
-							71480,	-- Sun Tenderheart [The Fallen Protectors]
-						},
-					}),
-					e(866, {	-- Norushen
-						["crs"] = {
-							71965,	-- Norushen
-							72276,	-- Amalgam of Corruption
-						},
-					}),
-					e(867, {	-- Sha of Pride
-						["crs"] = { 71734 },	-- Sha of Pride
-					}),
-					e(881, {	-- Galakras
-						["crs"] = { 72249 },	-- Galakras
-					}),
-					e(864, {	-- Iron Juggernaut
-						["crs"] = { 71466 },	-- Iron Juggernaut
-					}),
-					e(856, {	-- Kor'kron Dark Shaman
-						["crs"] = {
-							71466,	-- Earthbreaker Haromm
-							71858,	-- Wavebinder Kardris
-						},
-					}),
-					e(850, {	-- General Nazgrim
-						["crs"] = { 71515 },	-- General Nazgrim
-					}),
-					e(846, {	-- Malkorok
-						["crs"] = { 71454 },	-- Malkorok
-					}),
-					e(870, {	-- Spoils of Pandaria
-						["crs"] = { 71889 },	-- Secured Stockpile of Pandaren Spoils
-					}),
-					e(851, {	-- Thok the Bloodthirsty
-						["crs"] = { 71529 },	-- Thok the Bloodthirsty
-					}),
-					e(865, {	-- Siegecrafter Blackfuse
-						["crs"] = { 71504 },	-- Siegecrafter Blackfuse
-					}),
-					e(853, {	-- Paragons of the Klaxxi
-						["crs"] = {
-							71153,	-- Hisek the Swarmkeeper
-							71160,	-- Iyyokuk the Lucid
-							71154,	-- Ka'roz the Locust
-							71156,	-- Kaz'tik the Manipulator
-							71161,	-- Kil'ruk the Wind-Reaver
-							71155,	-- Korven the Prime
-							71157,	-- Xaril the Poisoned Mind
-							71158,	-- Rik'kal the Dissector
-							71152,	-- Skeer the Bloodseeker
-						},
-					}),
-					e(869, {	-- Garrosh Hellscream
-						["crs"] = { 71865 },	-- Garrosh Hellscream
-						["g"] = {
-							i(224461),	-- Bones of Mannoroth
-						}
-					}),
-				}),
-				d(DIFFICULTY.RAID.MYTHIC, {
-					n(ARMOR, {
-						filter(CLOTH, {
-							-- MAGE
 							i(213819),	-- Chronomancer Robe
 							i(213820),	-- Chronomancer Sandals
 							i(213821),	-- Chronomancer Gloves
@@ -861,6 +684,208 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215022),	-- Handguards of the Prehistoric Marauder
 							i(215023),	-- Shoulderguards of the Prehistoric Marauder
 							i(215024),	-- Waistguard of the Prehistoric Marauder
+						}),
+					}),
+					n(WEAPONS, {
+						i(215919),	-- Arcweaver Spellbladewwwww
+						i(215837),	-- Drake
+						i(215778),	-- Gar'tok Might of the FaithFul
+						i(215973),	-- Greatsword of Fallen Pride
+						i(215796),	-- Halberd of Inner Darkness
+						i(215471),	-- Haromm's Frozen Battle Axe
+						i(215526),	-- Hisek's Longbow
+						i(215717),	-- Kardi's Scepter
+						i(215915),	-- Kil'ruk's Hateful Blade
+						i(215665),	-- Lucky Cricket Cage
+						i(215479),	-- Korven's Crestcent
+						i(215719),	-- Mace of the Old Ones
+						i(215475),	-- Malkorok's Headtaker
+						i(215995),	-- Mistspinner's Channel
+						i(216552),	-- Noreshen Tower Shield
+						i(215829),	-- Rod of the Megantholithic Apparatus
+						i(215669),	-- Sha-Touched Globule
+						i(215819),	-- Staff of Corrupted Waters
+						i(215825),	-- Spire of Supreamcy
+						i(215833),	-- Pride's Gaze
+						i(215661),	-- Prophecies of Y'shaarj
+						i(215630),	-- Softfoot's Iron Claw
+						i(215503),	-- Xal'atoh
+					}),
+					e(852, {	-- Immerseus
+						["crs"] = { 71543 },	-- Immerseus
+					}),
+					e(849, {	-- The Fallen Protectors
+						["crs"] = {
+							71479,	-- He Softfoot [The Fallen Protectors]
+							71475,	-- Rook Stonetoe [The Fallen Protectors]
+							71480,	-- Sun Tenderheart [The Fallen Protectors]
+						},
+					}),
+					e(866, {	-- Norushen
+						["crs"] = {
+							71965,	-- Norushen
+							72276,	-- Amalgam of Corruption
+						},
+					}),
+					e(867, {	-- Sha of Pride
+						["crs"] = { 71734 },	-- Sha of Pride
+					}),
+					e(881, {	-- Galakras
+						["crs"] = { 72249 },	-- Galakras
+					}),
+					e(864, {	-- Iron Juggernaut
+						["crs"] = { 71466 },	-- Iron Juggernaut
+					}),
+					e(856, {	-- Kor'kron Dark Shaman
+						["crs"] = {
+							71466,	-- Earthbreaker Haromm
+							71858,	-- Wavebinder Kardris
+						},
+					}),
+					e(850, {	-- General Nazgrim
+						["crs"] = { 71515 },	-- General Nazgrim
+					}),
+					e(846, {	-- Malkorok
+						["crs"] = { 71454 },	-- Malkorok
+					}),
+					e(870, {	-- Spoils of Pandaria
+						["crs"] = { 71889 },	-- Secured Stockpile of Pandaren Spoils
+					}),
+					e(851, {	-- Thok the Bloodthirsty
+						["crs"] = { 71529 },	-- Thok the Bloodthirsty
+					}),
+					e(865, {	-- Siegecrafter Blackfuse
+						["crs"] = { 71504 },	-- Siegecrafter Blackfuse
+					}),
+					e(853, {	-- Paragons of the Klaxxi
+						["crs"] = {
+							71153,	-- Hisek the Swarmkeeper
+							71160,	-- Iyyokuk the Lucid
+							71154,	-- Ka'roz the Locust
+							71156,	-- Kaz'tik the Manipulator
+							71161,	-- Kil'ruk the Wind-Reaver
+							71155,	-- Korven the Prime
+							71157,	-- Xaril the Poisoned Mind
+							71158,	-- Rik'kal the Dissector
+							71152,	-- Skeer the Bloodseeker
+						},
+					}),
+					e(869, {	-- Garrosh Hellscream
+						["crs"] = { 71865 },	-- Garrosh Hellscream
+						["g"] = {
+							i(224461),	-- Bones of Mannoroth
+						}
+					}),
+				}),
+				d(DIFFICULTY.RAID.MYTHIC, {
+					n(ARMOR, {
+						filter(CLOTH, {
+							-- MAGE
+							i(213835),	-- Chronomancer Vestment
+							i(213836),	-- Chronomancer Slippers
+							i(213837),	-- Chronomancer Mitts
+							i(213838),	-- Chronomancer Crown
+							i(213839),	-- Chronomancer Trousers
+							i(213840),	-- Chronomancer Mantle
+							i(213841),	-- Chronomancer Sash
+							i(213842),	-- Chronomancer Wristwraps
+							i(220974),	-- Chronomancer Vest
+							-- PRIEST
+							i(213907),	-- Wristwraps of the Ternion Glory
+							i(213908),	-- Sash of the Ternion Glory
+							i(213909),	-- Mantle of the Ternion Glory
+							i(213910),	-- Trousers of the Ternion Glory
+							i(213911),	-- Crown of the Ternion Glory
+							i(213912),	-- Mitts of the Ternion Glory
+							i(213913),	-- Slippers of the Ternion Glory
+							i(213914),	-- Vestment of the Ternion Glory
+							-- WARLOCK
+							i(213979),	-- Vestment of the Horned Nightmare
+							i(213980),	-- Slippers of the Horned Nightmare
+							i(213981),	-- Mitts of the Horned Nightmare
+							i(213982),	-- Crown of the Horned Nightmare
+							i(213983),	-- Trousers of the Horned Nightmare
+							i(213984),	-- Mantle of the Horned Nightmare
+							i(213985),	-- Sash of the Horned Nightmare
+							i(213986),	-- Wristwraps of the Horned Nightmare
+						}),
+						filter(LEATHER, {
+							-- DRUID
+							i(214206),	-- Wraps of the Shattered Vale
+							i(214207),	-- Jerkin of the Shattered Vale
+							i(214208),	-- Treads of the Shattered Vale
+							i(214209),	-- Cap of the Shattered Vale
+							i(214210),	-- Handguards of the Shattered Vale
+							i(214211),	-- Cinch of the Shattered Vale
+							i(214212),	-- Mantle of the Shattered Vale
+							i(214213),	-- Pants of the Shattered Vale
+							-- MONK
+							i(214291),	-- Bindings of Seven Sacred Seals
+							i(214292),	-- Vest of Seven Sacred Seals
+							i(214293),	-- Footguards of Seven Sacred Seals
+							i(214294),	-- Cover of Seven Sacred Seals
+							i(214295),	-- Grips of Seven Sacred Seals
+							i(214296),	-- Waistband of Seven Sacred Seals
+							i(214297),	-- Spaulders of Seven Sacred Seals
+							i(214298),	-- Legguards of Seven Sacred Seals
+							-- ROGUE
+							i(214355),	-- Bracers of the Barbed Assassin
+							i(214356),	-- Tunic of the Barbed Assassin
+							i(214357),	-- Boots of the Barbed Assassin
+							i(214358),	-- Helm of the Barbed Assassin
+							i(214359),	-- Gloves of the Barbed Assassin
+							i(214360),	-- Belt of the Barbed Assassin
+							i(214361),	-- Shoulderpads of the Barbed Assassin
+							i(214362),	-- Leggings of the Barbed Assassin
+						}),
+						filter(MAIL, {
+							-- HUNTER
+							i(214606), -- Legguards of the Unblinking Vigil
+							i(214607), -- Pauldrons of the Unblinking Vigil
+							i(214608), -- Chain of the Unblinking Vigil
+							i(214610), -- Gloves of the Unblinking Vigil
+							i(214611), -- Headguard of the Unblinking Vigil
+							i(214612), -- Sabatons of the Unblinking Vigil
+							i(214613), -- Chestguard of the Unblinking Vigil
+							i(214614), -- Armbands of the Unblinking Vigil
+							-- SHAMAN
+							i(214681),	-- Armbands of Celestial Harmony
+							i(214686),	-- Chain of Celestial Harmony
+							i(214682),	-- Chestguard of Celestial Harmony
+							i(214685),	-- Gloves of Celestial Harmony
+							i(214684),	-- Headguard of Celestial Harmony
+							i(214688),	-- Legguards of Celestial Harmony
+							i(214687),	-- Pauldrons of Celestial Harmony
+							i(214683),	-- Sabatons of Celestial Harmony
+						}),
+						filter(PLATE, {
+							-- DEATH KNIGHT
+							i(214865),	-- Legplates of Cyclopean Dread
+							i(214866),	-- Spaulders of Cyclopean Dread
+							i(214867),	-- Greatbelt of Cyclopean Dread
+							i(214868),	-- Handguards of Cyclopean Dread
+							i(214869),	-- Greathelm of Cyclopean Dread
+							i(214870),	-- Warboots of Cyclopean Dread
+							i(214871),	-- Vambraces of Cyclopean Dread
+							i(214872),	-- Battleplate of Cyclopean Dread
+							-- PALADIN
+							i(214953),	-- Sabatons of Winged Triumph
+							i(214954),	-- Bracers of Winged Triumph
+							i(214955),	-- Legguards of Winged Triumph
+							i(214956),	-- Helm of Winged Triumph
+							i(214957),	-- Breastplate of Winged Triumph
+							i(214958),	-- Gauntlets of Winged Triumph
+							i(214959),	-- Pauldrons of Winged Triumph
+							i(214960),	-- Girdle of Winged Triumph
+							-- WARRIOR
+							i(215033),	-- Greatbelt of the Prehistoric Marauder
+							i(215034),	-- Spaulders of the Prehistoric Marauder
+							i(215035),	-- Gauntlets of the Prehistoric Marauder
+							i(215036),	-- Battleplate of the Prehistoric Marauder
+							i(215037),	-- Greathelm of the Prehistoric Marauder
+							i(215038),	-- Legplates of the Prehistoric Marauder
+							i(215039),	-- Vambraces of the Prehistoric Marauder
+							i(215040),	-- Warboots of the Prehistoric Marauder
 						}),
 					}),
 					e(852, {	-- Immerseus
