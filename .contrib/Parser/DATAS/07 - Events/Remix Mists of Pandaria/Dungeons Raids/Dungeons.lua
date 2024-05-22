@@ -81,6 +81,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		n(WEAPONS, {
 			i(216582),	-- Bulwark of the Protectorate
 			i(216581),	-- Deflector of the Protectorate
+			i(215491),	-- Dubious Waraxe
 			i(215535),	-- Featherdraw Warbow
 			i(215806),	-- Ghostheart Warspear
 			i(215755),	-- Je'lyu, Scepter of the Serpent
