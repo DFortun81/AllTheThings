@@ -6392,7 +6392,6 @@ root(ROOTS.Unsorted, {
 					i(215802),	-- Spear of Feral Rage
 					i(215804),	-- Wallwatcher's Partisan
 					i(215805),	-- Serpentguard Spear
-					i(215807),	-- Ritter's Spear
 					i(215808),	-- Yak-Herder's Longspear
 					i(215809),	-- Yaungol Warspear
 					i(215810),	-- Warspear of Xuen
@@ -6526,7 +6525,6 @@ root(ROOTS.Unsorted, {
 
 					i(215981),	-- Red Crane Greatsword
 					i(215982),	-- Marista Greatsword
-					i(215983),	-- Jade Grand Falchion
 					i(215985),	-- Satay's Greatsword
 					i(215986),	-- Blade of Broken Chains
 					i(215987),	-- Jinyu Greatblade
