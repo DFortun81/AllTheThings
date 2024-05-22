@@ -71,6 +71,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214534),	-- Reedstalker Leggings
 					i(214533),	-- Reedstalker Spaulders
 				}),
+				filter(PLATE, {
+					i(214807),	-- Shan'ze Armguards
+					i(214808),	-- Shan'ze Chestguard
+					i(214804),	-- Shan'ze Grasp
+					i(214806),	-- Shan'ze Greatboots
+					i(214801),	-- Shan'ze Greaves
+					i(214802),	-- Shan'ze Shoulderguards
+					i(214803),	-- Shan'ze Waistguard
+					i(214805),	-- Shan'ze Warhelm
+				}),
 				n(WEAPONs, {
 					i(215509),	-- Bloodseeker's Greataxe
 					i(215600),	-- Grummle Shortblade

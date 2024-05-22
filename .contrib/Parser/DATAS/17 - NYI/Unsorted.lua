@@ -6002,16 +6002,6 @@ root(ROOTS.Unsorted, {
 						i(214794),	-- Bladesworn Vambraces
 						i(214795),	-- Bladesworn Warboots
 
-						------ Shan'ze Warplate (Red) ------
-						i(214807),	-- Shan'ze Armguards
-						i(214808),	-- Shan'ze Chestguard
-						i(214804),	-- Shan'ze Grasp
-						i(214806),	-- Shan'ze Greatboots
-						i(214801),	-- Shan'ze Greaves
-						i(214802),	-- Shan'ze Shoulderguards
-						i(214803),	-- Shan'ze Waistguard
-						i(214805),	-- Shan'ze Warhelm
-
 						------ Shan'ze Warplate (Yellow) ------
 						i(214810),	-- Wallwatcher Bracers
 						i(214809),	-- Wallwatcher Breastplate
