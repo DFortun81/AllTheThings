@@ -2102,6 +2102,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215089),	-- Serene Slippers
 					},
 				}),
+				i(226127, {	-- Recruit's Shirt (White)
+					["cost"] = {{"c", BRONZE, 5}},
+				}),
 				filter(CLOTH, {
 					i(215183, {	-- Ensemble: Spirit-Waker's Vestments (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
