@@ -5982,16 +5982,6 @@ root(ROOTS.Unsorted, {
 						i(214731),	-- Jade Guardian's Sabatons
 					}),
 					filter(PLATE, {
-						------ Spiritguard's Warplate (Silver) ------
-						i(214778),	-- Steel Sentinel's Armguards
-						i(214777),	-- Steel Sentinel's Chestguard
-						i(214781),	-- Steel Sentinel's Grasp
-						i(214779),	-- Steel Sentinel's Greatboots
-						i(214784),	-- Steel Sentinel's Greaves
-						i(214783),	-- Steel Sentinel's Shoulderguards
-						i(214782),	-- Steel Sentinel's Waistguard
-						i(214780),	-- Steel Sentinel's Warhelm
-
 						------ Shan'ze Warplate (Green) ------
 						i(214791),	-- Highpeak Bracers
 						i(214792),	-- Highpeak Breastplate

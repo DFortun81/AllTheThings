@@ -226,6 +226,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214485),	-- Peakscaler Mantle
 					i(214479),	-- Peakscaler Wristguards
 				}),
+				filter(PLATE, {
+					i(214778),	-- Steel Sentinel's Armguards
+					i(214777),	-- Steel Sentinel's Chestguard
+					i(214781),	-- Steel Sentinel's Grasp
+					i(214779),	-- Steel Sentinel's Greatboots
+					i(214784),	-- Steel Sentinel's Greaves
+					i(214783),	-- Steel Sentinel's Shoulderguards
+					i(214782),	-- Steel Sentinel's Waistguard
+					i(214780),	-- Steel Sentinel's Warhelm
+				}),
 				n(WEAPONS, {
 					i(215872),	-- Amberweaver's Spire
 					i(215484),	-- Boggeo's Ceremonial Axe
