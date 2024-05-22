@@ -689,6 +689,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(WEAPONS, {
 						i(215919),	-- Arcweaver Spellbladewwwww
 						i(215837),	-- Drake
+						i(215552),	-- Death Lotus Repeater
 						i(215778),	-- Gar'tok Might of the FaithFul
 						i(215973),	-- Greatsword of Fallen Pride
 						i(215796),	-- Halberd of Inner Darkness
