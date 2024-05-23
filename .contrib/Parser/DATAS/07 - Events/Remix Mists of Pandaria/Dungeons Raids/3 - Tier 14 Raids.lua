@@ -122,11 +122,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				n(WEAPONS, {
+					i(210641),	-- Bo-Ris, Spear of Night
 					i(215727),	-- Galvanized Stormcrusher
+					i(211160),	-- Greatsword of the Iron Legion
 					i(215735),	-- Kri'tak, Scepter of the Swarm
 					i(215935),	-- Loshan, Fear Incarnate
 					i(215799),	-- Qiang's Unbreakable Polearm
 					i(215926),	-- Scimitar of Seven Stars
+					i(215975),	-- Starslicer // lfr terrace or hof 1st wing
 					i(215978),	-- Starslicer
 					i(215843),	-- Waterspeaker's Staff
 				}),

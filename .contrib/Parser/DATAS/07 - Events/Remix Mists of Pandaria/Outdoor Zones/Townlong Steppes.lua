@@ -85,9 +85,21 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214520),	-- Streamspeaker Mantle
 					i(214526),	-- Streamspeaker Wristguards
 				}),
+				filter(PLATE, {
+					i(214793),	-- Bladesworn Battleplate
+					i(214798),	-- Bladesworn Greatbelt
+					i(214796),	-- Bladesworn Greathelm
+					i(214797),	-- Bladesworn Handguards
+					i(214800),	-- Bladesworn Legplates
+					i(214799),	-- Bladesworn Spaulders
+					i(214794),	-- Bladesworn Vambraces
+					i(214795),	-- Bladesworn Warboots
+				}),
 				n(WEAPONS, {
 					i(215763),	-- Hozen Basher
+					i(215987),	-- Jinyu Greatblade
 					i(215590),	-- Shomi's Shanker
+					i(215957),	-- Tian Monastery Saber
 				}),
 			}),
 		},

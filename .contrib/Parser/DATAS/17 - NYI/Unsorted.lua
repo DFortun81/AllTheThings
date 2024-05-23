@@ -5982,16 +5982,6 @@ root(ROOTS.Unsorted, {
 						i(214731),	-- Jade Guardian's Sabatons
 					}),
 					filter(PLATE, {
-						------ Shan'ze Warplate (Purple) ------
-						i(214793),	-- Bladesworn Battleplate
-						i(214798),	-- Bladesworn Greatbelt
-						i(214796),	-- Bladesworn Greathelm
-						i(214797),	-- Bladesworn Handguards
-						i(214800),	-- Bladesworn Legplates
-						i(214799),	-- Bladesworn Spaulders
-						i(214794),	-- Bladesworn Vambraces
-						i(214795),	-- Bladesworn Warboots
-
 						------ Shan'ze Warplate (Yellow) ------
 						i(214810),	-- Wallwatcher Bracers
 						i(214809),	-- Wallwatcher Breastplate
@@ -6450,7 +6440,6 @@ root(ROOTS.Unsorted, {
 					i(215953),	-- Siege Captain's Blade
 					i(215955),	-- Zakai's Swarmslicer
 					i(215956),	-- Ook's Hozen Cutter
-					i(215957),	-- Tian Monastery Saber
 					i(215958),	-- Tian Monastery Edge
 					i(215959),	-- Tian Monastery Sword
 					i(215960),	-- Tian Monastery Scimitar
@@ -6468,7 +6457,6 @@ root(ROOTS.Unsorted, {
 					i(215972),	-- Greatsword of Fallen Pride
 					i(215973),	-- Greatsword of Fallen Pride
 					i(215974),	-- Greatsword of Fallen Pride
-					i(215975),	-- Starslicer
 					i(215976),	-- Starslicer
 					i(215977),	-- Starslicer
 					i(215979),	-- Faded Forest Falchion
@@ -6477,7 +6465,6 @@ root(ROOTS.Unsorted, {
 					i(215982),	-- Marista Greatsword
 					i(215985),	-- Satay's Greatsword
 					i(215986),	-- Blade of Broken Chains
-					i(215987),	-- Jinyu Greatblade
 					i(215988),	-- Jinyu Greatsword
 					i(215989),	-- Jinyu Flamberge
 					i(215990),	-- Zerat, Soulburner's Greatsword
@@ -6847,10 +6834,8 @@ root(ROOTS.Unsorted, {
 					i(208556),	-- Flicker Blossom
 				}),
 				n(WEAPONS, {
-					i(210641),	-- Bo-Ris, Spear of Night
 					i(211151),	-- Fran's Repeater
 					i(210343),	-- Gar'tok, Might of the Faithful
-					i(211160),	-- Greatsword of the Iron Legion
 					i(210640),	-- Icon of Hope
 					i(211162),	-- Klaxxi Longsword
 					i(210336),	-- Kor'kron Heavy Rifle
