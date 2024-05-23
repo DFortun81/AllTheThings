@@ -6038,7 +6038,6 @@ root(ROOTS.Unsorted, {
 					i(215481),	-- Elegion, the Star Cleaver
 					i(215483),	-- Elegion, the Star Cleaver
 					i(215490),	-- Snowdrift Battleaxe
-					i(215492),	-- Axe of Iron Might
 					i(215493),	-- Scalebreaker Battleaxe
 					i(215494),	-- Yaungol Cleaver
 					i(215495),	-- Yaungol Hatchet

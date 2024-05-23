@@ -107,24 +107,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(WEAPONS, {
-				filter(DAGGERS, {
-					i(215607),	-- Ceremonial Spike (maybe hc only?)
-					i(215594),	-- Warbringer's Blade
-				}),
-				filter(GUNS, {
-					i(215706),	-- Klaxxi Ambershot
-				}),
-				filter(ONE_HANDED_MACES, {
-					i(215757),	-- Carapace Crusher (maybe hc only?)
-					i(215752),	-- Ced's Basher
-				}),
-				filter(STAVES, {
-					i(215881),	-- Gustspinner's Staff
-					i(215885),	-- Teachings of Shaohao
-				}),
-				filter(TWO_HANDED_MACES, {
-					i(215786),	-- Lerah's Maul
-				}),
+				i(215492),	-- Axe of Iron Might (normal scenario, drop)
+				i(215757),	-- Carapace Crusher (maybe hc only?)
+				i(215752),	-- Ced's Basher
+				i(215607),	-- Ceremonial Spike (maybe hc only?)
+				i(215881),	-- Gustspinner's Staff
+				i(215706),	-- Klaxxi Ambershot
+				i(215786),	-- Lerah's Maul
+				i(215885),	-- Teachings of Shaohao
+				i(215594),	-- Warbringer's Blade
 			}),
 		}),
 		-- Scenario Maps
