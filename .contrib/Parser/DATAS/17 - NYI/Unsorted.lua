@@ -5878,15 +5878,6 @@ root(ROOTS.Unsorted, {
 						i(213677),	-- Scrollkeeper Vestment
 						i(213684),	-- Scrollkeeper Wristwraps
 
-						------ Mistwalker's Vestment (Blue) ------
-						i(213700),	-- Silkmaster's Bracers
-						i(213699),	-- Silkmaster's Cord
-						i(213695),	-- Silkmaster's Gloves
-						i(213696),	-- Silkmaster's Hood
-						i(213697),	-- Silkmaster's Leggings
-						i(213694),	-- Silkmaster's Sandals
-						i(213698),	-- Silkmaster's Shoulderpads
-
 						------ Mistwalker's Vestment (Original) ------
 						i(213687),	-- Mistwalker's Amice
 						i(213686),	-- Mistwalker's Belt

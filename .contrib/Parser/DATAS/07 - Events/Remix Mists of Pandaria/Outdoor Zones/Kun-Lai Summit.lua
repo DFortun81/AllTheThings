@@ -87,7 +87,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(ZONE_REWARDS, {
 				filter(CLOTH, {
+					i(213700),	-- Silkmaster's Bracers
+					i(213699),	-- Silkmaster's Cord
+					i(213695),	-- Silkmaster's Gloves
+					i(213696),	-- Silkmaster's Hood
+					i(213697),	-- Silkmaster's Leggings
 					i(213693),	-- Silkmaster's Robe
+					i(213694),	-- Silkmaster's Sandals
+					i(213698),	-- Silkmaster's Shoulderpads
 				}),
 				filter(LEATHER, {
 					i(214095),	-- Mistveil Cap
