@@ -5972,16 +5972,6 @@ root(ROOTS.Unsorted, {
 						i(214731),	-- Jade Guardian's Sabatons
 					}),
 					filter(PLATE, {
-						------ Shan'ze Warplate (Yellow) ------
-						i(214810),	-- Wallwatcher Bracers
-						i(214809),	-- Wallwatcher Breastplate
-						i(214813),	-- Wallwatcher Gauntlets
-						i(214814),	-- Wallwatcher Girdle
-						i(214812),	-- Wallwatcher Helm
-						i(214816),	-- Wallwatcher Legguards
-						i(214815),	-- Wallwatcher Pauldrons
-						i(214811),	-- Wallwatcher Sabatons
-
 						------ Gatecrasher Battleplate (Black) ------
 						i(215042),	-- Cliffbreaker Armguards
 						i(215045),	-- Cliffbreaker Chestguard
@@ -5991,26 +5981,6 @@ root(ROOTS.Unsorted, {
 						i(215047),	-- Cliffbreaker Shoulderguards
 						i(215048),	-- Cliffbreaker Waistguard
 						i(215044),	-- Cliffbreaker Warhelm
-
-						------ Gatecrasher Battleplate (Blue) ------
-						i(215055),	-- Everbright Bracers
-						i(215052),	-- Everbright Breastplate
-						i(215049),	-- Everbright Girdle
-						i(215051),	-- Everbright Grasp
-						i(215053),	-- Everbright Helm
-						i(215054),	-- Everbright Legguards
-						i(215050),	-- Everbright Pauldrons
-						i(215056),	-- Everbright Sabatons
-
-						------ Gatecrasher Battleplate (Green) ------
-						i(215060),	-- Gatecrasher Battleplate
-						i(215059),	-- Gatecrasher Gauntlets
-						i(215057),	-- Gatecrasher Greatbelt
-						i(215061),	-- Gatecrasher Greathelm
-						i(215062),	-- Gatecrasher Legplates
-						i(215058),	-- Gatecrasher Spaulders
-						i(215063),	-- Gatecrasher Vambraces
-						i(215064),	-- Gatecrasher Warboots
 
 						------ Gatecrasher Battleplate (Red) ------
 						i(215071),	-- Cragchewer Armguards
@@ -6321,7 +6291,6 @@ root(ROOTS.Unsorted, {
 					i(215801),	-- Qiang's Unbreakable Polearm
 					i(215802),	-- Spear of Feral Rage
 					i(215804),	-- Wallwatcher's Partisan
-					i(215805),	-- Serpentguard Spear
 					i(215808),	-- Yak-Herder's Longspear
 					i(215809),	-- Yaungol Warspear
 					i(215810),	-- Warspear of Xuen
@@ -6446,7 +6415,6 @@ root(ROOTS.Unsorted, {
 					i(215979),	-- Faded Forest Falchion
 
 					i(215981),	-- Red Crane Greatsword
-					i(215982),	-- Marista Greatsword
 					i(215985),	-- Satay's Greatsword
 					i(215986),	-- Blade of Broken Chains
 					i(215988),	-- Jinyu Greatsword

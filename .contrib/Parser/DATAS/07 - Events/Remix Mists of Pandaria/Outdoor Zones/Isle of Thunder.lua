@@ -200,6 +200,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			n(QUESTS, {
+				q(80443, {	-- Aid the Kirin Tor Offensive [A]
+					["isDaily"] = true,
+					["provider"] = { "n", 67933 },	-- Vereesa Windrunner
+					["coord"] = { 63.2, 72.1, ISLE_OF_THUNDER },
+				}),
+				q(81749, {	-- Aid the Kirin Tor Offensive [A]
+					["isDaily"] = true,
+					["provider"] = { "n", 67933 },	-- Vereesa Windrunner
+					["coord"] = { 63.2, 72.1, ISLE_OF_THUNDER },
+				}),
+			}),
 			n(ZONE_REWARDS, {
 				filter(LEATHER, {
 					i(214120),	-- Swampthresher Cap
@@ -229,13 +241,42 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214721),	-- Crimsonscale Leggings
 					i(214722),	-- Crimsonscale Spaulders
 				}),
+				filter(PLATE, {
+					i(215055),	-- Everbright Bracers
+					i(215052),	-- Everbright Breastplate
+					i(215049),	-- Everbright Girdle
+					i(215051),	-- Everbright Grasp
+					i(215053),	-- Everbright Helm
+					i(215054),	-- Everbright Legguards
+					i(215050),	-- Everbright Pauldrons
+					i(215056),	-- Everbright Sabatons
+					i(215060),	-- Gatecrasher Battleplate
+					i(215059),	-- Gatecrasher Gauntlets
+					i(215057),	-- Gatecrasher Greatbelt
+					i(215061),	-- Gatecrasher Greathelm
+					i(215062),	-- Gatecrasher Legplates
+					i(215058),	-- Gatecrasher Spaulders
+					i(215063),	-- Gatecrasher Vambraces
+					i(215064),	-- Gatecrasher Warboots
+					i(214810),	-- Wallwatcher Bracers
+					i(214809),	-- Wallwatcher Breastplate
+					i(214813),	-- Wallwatcher Gauntlets
+					i(214814),	-- Wallwatcher Girdle
+					i(214812),	-- Wallwatcher Helm
+					i(214816),	-- Wallwatcher Legguards
+					i(214815),	-- Wallwatcher Pauldrons
+					i(214811),	-- Wallwatcher Sabatons
+				}),
 				n(WEAPONS, {
+					i(215746),	-- Bearheart's Basher // double up from Timeless Isle
 					i(215741),	-- Bloodseeker's Bonebreaker
 					i(216595),	-- Bulwark of Twinned Despair
 					i(216601),	-- Eyes of the Doomed
 					i(215861),	-- Instructor's Spire
 					i(215897),	-- Jinyu Staff
+					i(215982),	-- Marista Greatsword
 					i(215761),	-- Saurok Smasher
+					i(215805),	-- Serpentguard Spear
 				})
 			}),
 		},
