@@ -5814,7 +5814,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PVP, {
 				-- This is all broken as of 10.2.7. Currently added a placeholder data to the SL PvP vendor.
-				i(223639),	-- Unburied Aspirant's Cloak Rack
 				i(223769),	-- Eternal Aspirant's Cape
 				-- HQTs
 				q(82343),	-- Ensemble: Unburied Aspirant's Cloak Rack
