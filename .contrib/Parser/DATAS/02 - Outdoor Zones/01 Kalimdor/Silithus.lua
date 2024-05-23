@@ -2230,7 +2230,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(20515, {	-- Abyssal Scepter
-							["timeline"] = { REMOVED_4_0_3, DELETED_7_1_5 },
+							["timeline"] = { REMOVED_4_0_3 },
 							["crs"] = {
 								15205,	-- Baron Kazum <Abyssal High Council>
 								15204,	-- High Marshal Whirlaxis <Abyssal High Council>
