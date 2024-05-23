@@ -276,19 +276,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, LEATHER, 185128),
+							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, LEATHER),
 						}),
 						i(201858, {	-- Ensemble: Unchained Aspirant's Mail Armor
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, MAIL, 185205),
+							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, MAIL),
 						}),
 						i(201857, {	-- Ensemble: Unchained Aspirant's Plate Armor
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, PLATE, 185240),
+							["sym"] = SymPvPFilter(SEASON_UNCHAINED, PVP_ASPIRANT, PLATE),
 						}),
 						i(201878, {	-- Arsenal: Sinful Aspirant's Weapons
 							["cost"] = { { "i", MOH, 80 } },
@@ -305,19 +305,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["classes"] = LEATHER_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, LEATHER, 175851),
+							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, LEATHER),
 						}),
 						i(201866, {	-- Ensemble: Sinful Aspirant's Mail Armor
 							["classes"] = MAIL_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, MAIL, 178265),
+							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, MAIL),
 						}),
 						i(201865, {	-- Ensemble: Sinful Aspirant's Plate Armor
 							["classes"] = PLATE_CLASSES,
 							["cost"] = { { "i", MOH, 12 } },
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
-							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, PLATE, 178301),
+							["sym"] = SymPvPFilter(SEASON_SINFUL, PVP_ASPIRANT, PLATE),
 						}),
 						filter(TRINKET_F, sharedData({ ["timeline"] = { ADDED_9_2_5 } }, {
 							i(192388),	-- Eternal Aspirant's Insignia of Alacrity
