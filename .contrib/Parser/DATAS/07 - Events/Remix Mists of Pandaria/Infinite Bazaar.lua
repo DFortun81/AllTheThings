@@ -206,14 +206,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215255, {	-- Ensemble: Fire-Charm Vestments (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214259),	-- Fire-Charm Bracers
-							i(214260),	-- Fire-Charm Tunic
-							i(214261),	-- Fire-Charm Boots
-							i(214262),	-- Fire-Charm Helm
-							i(214263),	-- Fire-Charm Gloves
-							i(214264),	-- Fire-Charm Belt
-							i(214265),	-- Fire-Charm Shoulderpads
-							i(214266),	-- Fire-Charm Leggings
+							i(214267),	-- Fire-Charm Legguards
+							i(214268),	-- Fire-Charm Spaulders
+							i(214269),	-- Fire-Charm Waistband
+							i(214270),	-- Fire-Charm Grips
+							i(214271),	-- Fire-Charm Cover
+							i(214272),	-- Fire-Charm Footguards
+							i(214273),	-- Fire-Charm Vest
+							i(214274),	-- Fire-Charm Bindings
 						},
 					}),
 					i(215256, {	-- Ensemble: Vestments of the Seven Sacred Seals (LFR)
@@ -332,14 +332,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215264, {	-- Ensemble: Nine-Tail Battlegear (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214331),	-- Nine-Tailed Leggings
-							i(214332),	-- Nine-Tailed Shoulderpads
-							i(214333),	-- Nine-Tailed Belt
-							i(214334),	-- Nine-Tailed Gloves
-							i(214335),	-- Nine-Tailed Helm
-							i(214336),	-- Nine-Tailed Boots
-							i(214337),	-- Nine-Tailed Tunic
-							i(214338),	-- Nine-Tailed Bracers
+							i(214339),	-- Nine-Tailed Bindings
+							i(214340),	-- Nine-Tailed Vest
+							i(214341),	-- Nine-Tailed Footguards
+							i(214342),	-- Nine-Tailed Cover
+							i(214343),	-- Nine-Tailed Grips
+							i(214344),	-- Nine-Tailed Waistband
+							i(214345),	-- Nine-Tailed Spaulders
+							i(214346),	-- Nine-Tailed Legguards
 						},
 					}),
 					i(215267, {	-- Ensemble: Barbed Assassin Battlegear (LFR)
@@ -781,14 +781,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215246, {	-- Ensemble: Vestments of the Haunted Forest (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214174),	-- Bindings of the Haunted Forest
-							i(214175),	-- Vest of the Haunted Forest
-							i(214176),	-- Footguards of the Haunted Forest
-							i(214177),	-- Cover of the Haunted Forest
-							i(214178),	-- Grips of the Haunted Forest
-							i(214179),	-- Waistband of the Haunted Forest
-							i(214180),	-- Spaulders of the Haunted Forest
-							i(214181),	-- Legguards of the Haunted Forest
+							i(214182),	-- Pants of the Haunted Forest
+							i(214183),	-- Mantle of the Haunted Forest
+							i(214184),	-- Cinch of the Haunted Forest
+							i(214185),	-- Handguards of the Haunted Forest
+							i(214186),	-- Cap of the Haunted Forest
+							i(214187),	-- Treads of the Haunted Forest
+							i(214188),	-- Jerkin of the Haunted Forest
+							i(214189),	-- Wraps of the Haunted Forest
 							-- NYI --
 							i(96207),	-- Raiment of the Haunted Forest
 							i(96208),	-- Grips of the Haunted Forest
@@ -941,14 +941,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215253, {	-- Ensemble: Fire-Charm Vestments (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214267),	-- Fire-Charm Legguards
-							i(214268),	-- Fire-Charm Spaulders
-							i(214269),	-- Fire-Charm Waistband
-							i(214270),	-- Fire-Charm Grips
-							i(214271),	-- Fire-Charm Cover
-							i(214272),	-- Fire-Charm Footguards
-							i(214273),	-- Fire-Charm Vest
-							i(214274),	-- Fire-Charm Bindings
+							i(214259),	-- Fire-Charm Bracers
+							i(214260),	-- Fire-Charm Tunic
+							i(214261),	-- Fire-Charm Boots
+							i(214262),	-- Fire-Charm Helm
+							i(214263),	-- Fire-Charm Gloves
+							i(214264),	-- Fire-Charm Belt
+							i(214265),	-- Fire-Charm Shoulderpads
+							i(214266),	-- Fire-Charm Leggings
 							-- NYI --
 							i(96267),	-- Fire-Charm Tunic
 							i(96268),	-- Fire-Charm Grips
@@ -1144,14 +1144,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215263, {	-- Ensemble: Nine-Tail Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214339),	-- Nine-Tailed Bindings
-							i(214340),	-- Nine-Tailed Vest
-							i(214341),	-- Nine-Tailed Footguards
-							i(214342),	-- Nine-Tailed Cover
-							i(214343),	-- Nine-Tailed Grips
-							i(214344),	-- Nine-Tailed Waistband
-							i(214345),	-- Nine-Tailed Spaulders
-							i(214346),	-- Nine-Tailed Legguards
+							i(214331),	-- Nine-Tailed Leggings
+							i(214332),	-- Nine-Tailed Shoulderpads
+							i(214333),	-- Nine-Tailed Belt
+							i(214334),	-- Nine-Tailed Gloves
+							i(214335),	-- Nine-Tailed Helm
+							i(214336),	-- Nine-Tailed Boots
+							i(214337),	-- Nine-Tailed Tunic
+							i(214338),	-- Nine-Tailed Bracers
 							-- NYI --
 							i(96307),	-- Nine-Tailed Tunic
 							i(96308),	-- Nine-Tailed Gloves
@@ -3259,14 +3259,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215244, {	-- Ensemble: Vestments of the Haunted Forest (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214182),	-- Pants of the Haunted Forest
-							i(214183),	-- Mantle of the Haunted Forest
-							i(214184),	-- Cinch of the Haunted Forest
-							i(214185),	-- Handguards of the Haunted Forest
-							i(214186),	-- Cap of the Haunted Forest
-							i(214187),	-- Treads of the Haunted Forest
-							i(214188),	-- Jerkin of the Haunted Forest
-							i(214189),	-- Wraps of the Haunted Forest
+							i(214174),	-- Bindings of the Haunted Forest
+							i(214175),	-- Vest of the Haunted Forest
+							i(214176),	-- Footguards of the Haunted Forest
+							i(214177),	-- Cover of the Haunted Forest
+							i(214178),	-- Grips of the Haunted Forest
+							i(214179),	-- Waistband of the Haunted Forest
+							i(214180),	-- Spaulders of the Haunted Forest
+							i(214181),	-- Legguards of the Haunted Forest
 							-- NYI --
 							i(96951),	-- Raiment of the Haunted Forest
 							i(96952),	-- Grips of the Haunted Forest

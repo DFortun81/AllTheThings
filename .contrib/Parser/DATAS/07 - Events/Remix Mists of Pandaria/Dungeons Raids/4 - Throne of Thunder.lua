@@ -188,14 +188,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214273),	-- Fire-Charm Vest
 							i(214274),	-- Fire-Charm Bindings
 							-- ROGUE
-							i(214331),	-- Nine-Tailed Leggings
-							i(214332),	-- Nine-Tailed Shoulderpads
-							i(214333),	-- Nine-Tailed Belt
-							i(214334),	-- Nine-Tailed Gloves
-							i(214335),	-- Nine-Tailed Helm
-							i(214336),	-- Nine-Tailed Boots
-							i(214337),	-- Nine-Tailed Tunic
-							i(214338),	-- Nine-Tailed Bracers
+							i(214339),	-- Nine-Tailed Bindings
+							i(214340),	-- Nine-Tailed Vest
+							i(214341),	-- Nine-Tailed Footguards
+							i(214342),	-- Nine-Tailed Cover
+							i(214343),	-- Nine-Tailed Grips
+							i(214344),	-- Nine-Tailed Waistband
+							i(214345),	-- Nine-Tailed Spaulders
+							i(214346),	-- Nine-Tailed Legguards
 						}),
 						filter(MAIL, {
 							-- HUNTER
@@ -365,14 +365,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214265),	-- Fire-Charm Shoulderpads
 							i(214266),	-- Fire-Charm Leggings
 							-- ROGUE
-							i(214339),	-- Nine-Tailed Bindings
-							i(214340),	-- Nine-Tailed Vest
-							i(214341),	-- Nine-Tailed Footguards
-							i(214342),	-- Nine-Tailed Cover
-							i(214343),	-- Nine-Tailed Grips
-							i(214344),	-- Nine-Tailed Waistband
-							i(214345),	-- Nine-Tailed Spaulders
-							i(214346),	-- Nine-Tailed Legguards
+							i(214331),	-- Nine-Tailed Leggings
+							i(214332),	-- Nine-Tailed Shoulderpads
+							i(214333),	-- Nine-Tailed Belt
+							i(214334),	-- Nine-Tailed Gloves
+							i(214335),	-- Nine-Tailed Helm
+							i(214336),	-- Nine-Tailed Boots
+							i(214337),	-- Nine-Tailed Tunic
+							i(214338),	-- Nine-Tailed Bracers
 						}),
 						filter(MAIL, {
 							-- HUNTER
