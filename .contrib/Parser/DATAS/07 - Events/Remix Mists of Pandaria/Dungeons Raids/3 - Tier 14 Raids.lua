@@ -256,10 +256,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215637),	-- Fist of Shek'zeer
 					i(215730),	-- Galvanized Stormcrusher
 					i(216563),	-- Gaze of the Ancient
+					i(215633),	-- Gara'kal, Claw of the Spiritbinder
+					i(215852),	-- Gao-Rei, Staff of the Protector
 					i(215698),	-- Grand Imperial Rifle
 					i(215932),	-- Kilrak, Fangs of Terror
+					i(215735),	-- Kri'tak, Scepter of the Swarm (confirmed 23.05.2024)
 					i(215737),	-- Kri'tak, Scepter of the Swarm
 					i(216529),	-- Protection of the Emperor
+					i(215799),	-- Qiang's Unbreakable Polearm
 					i(215586),	-- Regail's Fulminating Blade
 					i(215925),	-- Scimitar of Seven Stars
 					i(215506),	-- Shin'ka, the Tyrant's Greataxe
@@ -381,7 +385,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				n(WEAPONS, {
+					i(215792),	-- Bo-Ris, Spear of Night
+					i(215841),	-- Brazier of the Eternal Empire
+					i(215907),	-- Dotharak, the Foebreaker
+					i(215483),	-- Elegion, the Star Cleaver
+					i(215849),	-- Fearspeaker's Warstaff
+					i(215638),	-- Fist of Shek'zeer
+					i(215729),	-- Galvanized Stormcrusher
+					i(215634),	-- Gara'kal, Claw of the Spiribinder
+					i(215835),	-- Gao-Rei, Staff of the Protector
+					i(215969),	-- Greatsword of the Iron Legion
+					i(215931),	-- Kilrak, Fangs of Terror
+					i(215736),	-- Kri'tak, Scepter of the Swarm
+					i(215933),	-- Loshan, Fear Incarnate
 					i(215800),	-- Qiang's Unbreakable Polearm
+					i(215927),	-- Scimitar of Seven Stars
+					i(215977),	-- Star Slicer (Unique!)
+					i(216559),	-- Steelskin, Qiang's Bulwark
+					i(215999),	-- Torch of the Starkspark
 				}),
 			}),
 			inst(317, {	-- Mogu'shan Vaults
