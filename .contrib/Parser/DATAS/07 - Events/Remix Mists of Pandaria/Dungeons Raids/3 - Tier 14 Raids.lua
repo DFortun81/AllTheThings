@@ -130,11 +130,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215930),	-- Kilrak, Fangs of Terror (HoF LFR)
 					i(215735),	-- Kri'tak, Scepter of the Swarm
 					i(215935),	-- Loshan, Fear Incarnate
+					i(215798),	-- Qiang's Unbreakable Polearm (HoF LFR)
 					i(215799),	-- Qiang's Unbreakable Polearm
 					i(215588),	-- Regail's Fulminating Blade (HoF LFR)
 					i(215926),	-- Scimitar of Seven Stars
+					i(215505),	-- Shin'ka, the Tyrant's Greataxe
 					i(215593),	-- Soulsever (HoF LFR)
-					i(215975),	-- Starslicer // lfr terrace or hof 1st wing
+					i(215975),	-- Starslicer (Terrace LFR or HoF LFR 1st wing)
 					i(215978),	-- Starslicer
 					i(215695),	-- Taoren, the Malignant (MSV LFR)
 					i(215696),	-- Taoren, the Malignant (HoF LFR)

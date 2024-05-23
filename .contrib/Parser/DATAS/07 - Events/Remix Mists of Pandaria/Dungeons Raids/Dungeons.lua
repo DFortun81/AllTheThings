@@ -120,6 +120,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215875),	-- Staff of Stolen Hope
 			i(215784),	-- Taran Zhu's Bonebreaker
 			i(215645),	-- Tian Handblade
+			i(215514),	-- Wallwatcher's Longaxe (was from dungeon daily quest)
 			i(215612),	-- Yaungol Shanker
 		}),
 		inst(303, {	-- Gate of the Setting Sun

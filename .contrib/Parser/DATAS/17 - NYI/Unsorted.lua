@@ -6048,13 +6048,11 @@ root(ROOTS.Unsorted, {
 					i(215502),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215503),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215504),	-- Xal'atoh, Malformed Image of Gorehowl
-					i(215505),	-- Shin'ka, the Tyrant's Greataxe
 					i(215507),	-- Shin'ka, the Tyrant's Greataxe
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
 					i(215510),	-- Warbringer's Chopper
 					i(215512),	-- Wallwatcher's Poleaxe
 					i(215513),	-- Wallwatcher's Axe
-					i(215514),	-- Wallwatcher's Longaxe
 					i(215516),	-- Uroe, Harbinger of Fear
 					i(215517),	-- Uroe, Harbinger of Fear
 					i(215519),	-- Uroe, Harbinger of Fear
