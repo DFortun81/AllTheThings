@@ -259,14 +259,43 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214400),	-- Wildblood Treads
 					i(214402),	-- Wildblood Wraps
 				}),
+				filter(PLATE, {
+					i(215055),	-- Everbright Bracers
+					i(215052),	-- Everbright Breastplate
+					i(215049),	-- Everbright Girdle
+					i(215051),	-- Everbright Grasp
+					i(215053),	-- Everbright Helm
+					i(215054),	-- Everbright Legguards
+					i(215050),	-- Everbright Pauldrons
+					i(215056),	-- Everbright Sabatons
+					i(215060),	-- Gatecrasher Battleplate
+					i(215059),	-- Gatecrasher Gauntlets
+					i(215057),	-- Gatecrasher Greatbelt
+					i(215061),	-- Gatecrasher Greathelm
+					i(215062),	-- Gatecrasher Legplates
+					i(215058),	-- Gatecrasher Spaulders
+					i(215063),	-- Gatecrasher Vambraces
+					i(215064),	-- Gatecrasher Warboots
+					i(214810),	-- Wallwatcher Bracers
+					i(214809),	-- Wallwatcher Breastplate
+					i(214813),	-- Wallwatcher Gauntlets
+					i(214814),	-- Wallwatcher Girdle
+					i(214812),	-- Wallwatcher Helm
+					i(214816),	-- Wallwatcher Legguards
+					i(214815),	-- Wallwatcher Pauldrons
+					i(214811),	-- Wallwatcher Sabatons
+				}),
 				n(WEAPONS, {
 					i(215746),	-- Bearheart's Basher
 					i(215793),	-- Bo-Ris
 					i(215948),	-- Darkhide Sword
 					i(215952),	-- Fear's Bite
+					i(215970),	-- Greatsword of the Iron Legion
 					i(216535),	-- Ironwood Bulwark
 					i(215511),	-- Jadestone Greataxe
+					i(215772),	-- Jerthud, Hand of the Savior
 					i(215486),	-- Jinyu Waraxe
+					i(215805),	-- Serpentguard Spear (double up from Isle of Thunder)
 					i(215603),	-- Sha-Warped Slicer
 					i(215889),	-- Soulwood Spire
 					i(215515),	-- Wallwatcher's Greataxe

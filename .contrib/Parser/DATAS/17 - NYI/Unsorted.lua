@@ -6240,7 +6240,6 @@ root(ROOTS.Unsorted, {
 					i(215768),	-- Mace of Dark Animus
 					i(215769),	-- Jerthud, Hand of the Savior
 					i(215771),	-- Jerthud, Hand of the Savior
-					i(215772),	-- Jerthud, Hand of the Savior
 					i(215773),	-- Zeeg's Ancient Kegbreaker
 					i(215775),	-- Zeeg's Ancient Kegbreaker
 					i(215777),	-- Gar'tok, Might of the Faithful
@@ -6362,7 +6361,6 @@ root(ROOTS.Unsorted, {
 					i(215965),	-- Soulblade of the Storm
 					i(215967),	-- Soulblade of the Storm
 					i(215968),	-- Greatsword of the Iron Legion
-					i(215970),	-- Greatsword of the Iron Legion
 					i(215971),	-- Greatsword of Fallen Pride
 					i(215972),	-- Greatsword of Fallen Pride
 					i(215973),	-- Greatsword of Fallen Pride
