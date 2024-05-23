@@ -179,14 +179,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214172),	-- Tunic of the Haunted Forest
 							i(214173),	-- Bracers of the Haunted Forest
 							-- MONK
-							i(214259),	-- Fire-Charm Bracers
-							i(214260),	-- Fire-Charm Tunic
-							i(214261),	-- Fire-Charm Boots
-							i(214262),	-- Fire-Charm Helm
-							i(214263),	-- Fire-Charm Gloves
-							i(214264),	-- Fire-Charm Belt
-							i(214265),	-- Fire-Charm Shoulderpads
-							i(214266),	-- Fire-Charm Leggings
+							i(214267),	-- Fire-Charm Legguards
+							i(214268),	-- Fire-Charm Spaulders
+							i(214269),	-- Fire-Charm Waistband
+							i(214270),	-- Fire-Charm Grips
+							i(214271),	-- Fire-Charm Cover
+							i(214272),	-- Fire-Charm Footguards
+							i(214273),	-- Fire-Charm Vest
+							i(214274),	-- Fire-Charm Bindings
 							-- ROGUE
 							i(214331),	-- Nine-Tailed Leggings
 							i(214332),	-- Nine-Tailed Shoulderpads
@@ -347,23 +347,23 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 						filter(LEATHER, {
 							-- DRUID
-							i(214174),	-- Bindings of the Haunted Forest
-							i(214175),	-- Vest of the Haunted Forest
-							i(214176),	-- Footguards of the Haunted Forest
-							i(214177),	-- Cover of the Haunted Forest
-							i(214178),	-- Grips of the Haunted Forest
-							i(214179),	-- Waistband of the Haunted Forest
-							i(214180),	-- Spaulders of the Haunted Forest
-							i(214181),	-- Legguards of the Haunted Forest
+							i(214182),	-- Pants of the Haunted Forest
+							i(214183),	-- Mantle of the Haunted Forest
+							i(214184),	-- Cinch of the Haunted Forest
+							i(214185),	-- Handguards of the Haunted Forest
+							i(214186),	-- Cap of the Haunted Forest
+							i(214187),	-- Treads of the Haunted Forest
+							i(214188),	-- Jerkin of the Haunted Forest
+							i(214189),	-- Wraps of the Haunted Forest
 							-- MONK
-							i(214267),	-- Fire-Charm Legguards
-							i(214268),	-- Fire-Charm Spaulders
-							i(214269),	-- Fire-Charm Waistband
-							i(214270),	-- Fire-Charm Grips
-							i(214271),	-- Fire-Charm Cover
-							i(214272),	-- Fire-Charm Footguards
-							i(214273),	-- Fire-Charm Vest
-							i(214274),	-- Fire-Charm Bindings
+							i(214259),	-- Fire-Charm Bracers
+							i(214260),	-- Fire-Charm Tunic
+							i(214261),	-- Fire-Charm Boots
+							i(214262),	-- Fire-Charm Helm
+							i(214263),	-- Fire-Charm Gloves
+							i(214264),	-- Fire-Charm Belt
+							i(214265),	-- Fire-Charm Shoulderpads
+							i(214266),	-- Fire-Charm Leggings
 							-- ROGUE
 							i(214339),	-- Nine-Tailed Bindings
 							i(214340),	-- Nine-Tailed Vest
@@ -536,14 +536,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 						filter(LEATHER, {
 							-- DRUID
-							i(214182),	-- Pants of the Haunted Forest
-							i(214183),	-- Mantle of the Haunted Forest
-							i(214184),	-- Cinch of the Haunted Forest
-							i(214185),	-- Handguards of the Haunted Forest
-							i(214186),	-- Cap of the Haunted Forest
-							i(214187),	-- Treads of the Haunted Forest
-							i(214188),	-- Jerkin of the Haunted Forest
-							i(214189),	-- Wraps of the Haunted Forest
+							i(214174),	-- Bindings of the Haunted Forest
+							i(214175),	-- Vest of the Haunted Forest
+							i(214176),	-- Footguards of the Haunted Forest
+							i(214177),	-- Cover of the Haunted Forest
+							i(214178),	-- Grips of the Haunted Forest
+							i(214179),	-- Waistband of the Haunted Forest
+							i(214180),	-- Spaulders of the Haunted Forest
+							i(214181),	-- Legguards of the Haunted Forest
 							-- MONK
 							i(214275),	-- Fire-Charm Wraps
 							i(214276),	-- Fire-Charm Jerkin
