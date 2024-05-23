@@ -8,9 +8,104 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(ACHIEVEMENTS, {
 				ach(19882, {	-- Campaign: The Jade Forest [A]
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						crit(67207),	-- Nectarbreeze Orchard
+						crit(67211),	-- Greenstone Quarry
+						crit(67217),	-- The Waterspeaking Ceremony
+						crit(67218),	-- The Battle for the Forest
+						crit(67219),	-- Overcoming Doubt
+						crit(67220),	-- Paw'don Village
+						crit(67221),	-- The White Pawn
+						crit(67222),	-- The Temple of the Jade Serpent
+						crit(67223),	-- Terrace of Ten Thunders
+						crit(67208, {	-- Tian Monastery
+							["_noautomation"] = true,
+							["_quests"] = { 29646 },	-- Flying Colors (Groundskeeper Wu)
+						}),
+						crit(67209, {	-- Tian Monastery
+							["_noautomation"] = true,
+							["_quests"] = { 29647 },	-- Flying Colors (Instructor Myang)
+						}),
+						crit(67210, {	-- Tian Monastery
+							["_noautomation"] = true,
+							["_quests"] = { 29639 },	-- Flying Colors (Instructor Xann)
+						}),
+						crit(67212, {	-- Dawn's Blossom
+							["_noautomation"] = true,
+							["_quests"] = { 29882 },	-- Quill of Stingers
+						}),
+						crit(67213, {	-- Dawn's Blossom
+							["_noautomation"] = true,
+							["_quests"] = { 29920 },	-- Getting Permission
+						}),
+						crit(67214, {	-- Dawn's Blossom
+							["_noautomation"] = true,
+							["_quests"] = { 29881 },	-- The Perfect Color
+						}),
+						crit(67215, {	-- Dawn's Blossom
+							["_noautomation"] = true,
+							["_quests"] = { 29865 },	-- The Silkwood Road
+						}),
+						crit(67216, {	-- Dawn's Blossom
+							["_noautomation"] = true,
+							["_quests"] = { 29723 },	-- The Jade Witch
+						}),
+						crit(67224, {	-- Pearlfin Village
+							["_noautomation"] = true,
+							["_quests"] = { 29906 },	-- Carp Diem
+						}),
+						crit(67225, {	-- Pearlfin Village
+							["_noautomation"] = true,
+							["_quests"] = { 29905 },	-- Let Them Burn
+						}),
+					},
 				}),
 				ach(19883, {	-- Campaign: The Jade Forest [H]
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						crit(67222),	-- The Temple of the Jade Serpent
+						crit(67211),	-- Greenstone Quarry
+						crit(67226),	-- First Contact
+						crit(67227),	-- The Remains of Hellscream's Fist
+						crit(67228),	-- Overcoming Doubt
+						crit(67229),	-- Grookin Hill
+						crit(67223),	-- Terrace of Ten Thunders
+						crit(67207),	-- Nectarbreeze Orchard
+						crit(67230),	-- The Battle for the Forest
+						crit(67231),	-- Strange Bedfellows
+						crit(67208, {	-- Tian Monastery
+							["_noautomation"] = true,
+							["_quests"] = { 29646 },	-- Flying Colors (Groundskeeper Wu)
+						}),
+						crit(67209, {	-- Tian Monastery
+							["_noautomation"] = true,
+							["_quests"] = { 29647 },	-- Flying Colors (Instructor Myang)
+						}),
+						crit(67210, {	-- Tian Monastery
+							["_noautomation"] = true,
+							["_quests"] = { 29639 },	-- Flying Colors (Instructor Xann)
+						}),
+						crit(67212, {	-- Dawn's Blossom
+							["_noautomation"] = true,
+							["_quests"] = { 29882 },	-- Quill of Stingers
+						}),
+						crit(67213, {	-- Dawn's Blossom
+							["_noautomation"] = true,
+							["_quests"] = { 29920 },	-- Getting Permission
+						}),
+						crit(67214, {	-- Dawn's Blossom
+							["_noautomation"] = true,
+							["_quests"] = { 29881 },	-- The Perfect Color
+						}),
+						crit(67215, {	-- Dawn's Blossom
+							["_noautomation"] = true,
+							["_quests"] = { 29865 },	-- The Silkwood Road
+						}),
+						crit(67216, {	-- Dawn's Blossom
+							["_noautomation"] = true,
+							["_quests"] = { 29723 },	-- The Jade Witch
+						}),
+					},
 				}),
 				ach(19993),		-- Elusive Foes: The Jade Forest
 				ach(20026, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Jade Forest
