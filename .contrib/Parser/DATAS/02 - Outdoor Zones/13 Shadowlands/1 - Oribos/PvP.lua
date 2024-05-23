@@ -324,6 +324,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							i(192412),	-- Eternal Aspirant's Medallion
 							i(192414),	-- Eternal Aspirant's Sigil of Adaptation
 						})),
+						i(223639, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Aspirant's Cloak Rack
+							["cost"] = { { "i", MOH, 1 } },	-- Placeholder cost?
+							["description"] = "|Cffff0000This Ensemble is currently broken and gives nothing when used.|r",
+						})),
 						header(HEADERS.Achievement, SEASON_ETERNAL, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
 							["icon"] = "Interface\\Icons\\inv_shadebeastmount_orange",
 							["g"] = {
