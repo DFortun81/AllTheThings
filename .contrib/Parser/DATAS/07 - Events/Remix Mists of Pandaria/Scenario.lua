@@ -36,82 +36,86 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				},
 			}),
 		}),
-		n(WEAPONS, {
-			filter(DAGGERS, {
-				i(215594),	-- Warbringer's Blade
+		n(SCENARIO_COMPLETION, {
+			n(ARMOR, {
+				filter(CLOTH, {
+					i(213657),	-- Brewmoon Crown
+					i(213655),	-- Brewmoon Mantle
+					i(213658),	-- Brewmoon Mitts
+					i(213654),	-- Brewmoon Sash
+					i(213659),	-- Brewmoon Slippers
+					i(213656),	-- Brewmoon Trousers
+					i(213660),	-- Brewmoon Vestment
+					i(213653),	-- Brewmoon Wristwraps
+				}),
+				filter(LEATHER, {
+					i(214053),	-- Brushstalker Belt
+					i(214058),	-- Brushstalker Boots
+					i(214052),	-- Brushstalker Bracers
+					i(214057),	-- Brushstalker Gloves
+					i(214056),	-- Brushstalker Helm
+					i(214055),	-- Brushstalker Leggings
+					i(214054),	-- Brushstalker Shoulderpads
+					i(214059),	-- Brushstalker Tunic
+					-- Is This Heroic ScenarioS?? /Braghe
+					i(214047),	-- Tidesplitter Cap
+					i(214050),	-- Tidesplitter Cinch
+					i(214046),	-- Tidesplitter Handguards
+					i(214044),	-- Tidesplitter Jerkin
+					i(214049),	-- Tidesplitter Mantle
+					i(214048),	-- Tidesplitter Pants
+					i(214045),	-- Tidesplitter Treads
+					i(214051),	-- Tidesplitter Wraps
+				}),
+				filter(MAIL, {
+					i(214420),	-- Waterburst Breastplate
+					i(214421),	-- Waterburst Footguards
+					i(214424),	-- Waterburst Girdle
+					i(214423),	-- Waterburst Grips
+					i(214422),	-- Waterburst Helmet
+					i(214426),	-- Waterburst Legwraps
+					i(214425),	-- Waterburst Mantle
+					i(214419),	-- Waterburst Wristguards
+					-- Is This Heroic ScenarioS?? /Braghe
+					i(214492),	-- Jade Guardian's Belt
+					i(214496),	-- Jade Guardian's Boots
+					i(214498),	-- Jade Guardian's Bracers
+					i(214493),	-- Jade Guardian's Gauntlets
+					i(214497),	-- Jade Guardian's Hauberk
+					i(214495),	-- Jade Guardian's Helm
+					i(214489),	-- Jade Guardian's Leggings
+					i(214491),	-- Jade Guardian's Spaulders
+				}),
+				filter(PLATE, {
+					i(214759),	-- Swarmbreaker's Armguards
+					i(214760),	-- Swarmbreaker's Chestguard
+					i(214756),	-- Swarmbreaker's Grasp
+					i(214758),	-- Swarmbreaker's Greatboots
+					i(214753),	-- Swarmbreaker's Greaves
+					i(214754),	-- Swarmbreaker's Shoulderguards
+					i(214755),	-- Swarmbreaker's Waistguard
+					i(214757),	-- Swarmbreaker's Warhelm
+				}),
 			}),
-			filter(GUNS, {
-				i(215706),	-- Klaxxi Ambershot
-			}),
-			filter(ONE_HANDED_MACES, {
-				i(215752),	-- Ced's Basher
-			}),
-			filter(STAVES, {
-				i(215881),	-- Gustspinner's Staff
-				i(215885),	-- Teachings of Shaohao
-			}),
-			filter(TWO_HANDED_MACES, {
-				i(215786),	-- Lerah's Maul
-			}),
-		}),
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(213657),	-- Brewmoon Crown
-				i(213655),	-- Brewmoon Mantle
-				i(213658),	-- Brewmoon Mitts
-				i(213654),	-- Brewmoon Sash
-				i(213659),	-- Brewmoon Slippers
-				i(213656),	-- Brewmoon Trousers
-				i(213660),	-- Brewmoon Vestment
-				i(213653),	-- Brewmoon Wristwraps
-			}),
-			filter(LEATHER, {
-				i(214053),	-- Brushstalker Belt
-				i(214058),	-- Brushstalker Boots
-				i(214052),	-- Brushstalker Bracers
-				i(214057),	-- Brushstalker Gloves
-				i(214056),	-- Brushstalker Helm
-				i(214055),	-- Brushstalker Leggings
-				i(214054),	-- Brushstalker Shoulderpads
-				i(214059),	-- Brushstalker Tunic
-				-- Is This Heroic ScenarioS?? /Braghe
-				i(214047),	-- Tidesplitter Cap
-				i(214050),	-- Tidesplitter Cinch
-				i(214046),	-- Tidesplitter Handguards
-				i(214044),	-- Tidesplitter Jerkin
-				i(214049),	-- Tidesplitter Mantle
-				i(214048),	-- Tidesplitter Pants
-				i(214045),	-- Tidesplitter Treads
-				i(214051),	-- Tidesplitter Wraps
-			}),
-			filter(MAIL, {
-				i(214420),	-- Waterburst Breastplate
-				i(214421),	-- Waterburst Footguards
-				i(214424),	-- Waterburst Girdle
-				i(214423),	-- Waterburst Grips
-				i(214422),	-- Waterburst Helmet
-				i(214426),	-- Waterburst Legwraps
-				i(214425),	-- Waterburst Mantle
-				i(214419),	-- Waterburst Wristguards
-				-- Is This Heroic ScenarioS?? /Braghe
-				i(214492),	-- Jade Guardian's Belt
-				i(214496),	-- Jade Guardian's Boots
-				i(214498),	-- Jade Guardian's Bracers
-				i(214493),	-- Jade Guardian's Gauntlets
-				i(214497),	-- Jade Guardian's Hauberk
-				i(214495),	-- Jade Guardian's Helm
-				i(214489),	-- Jade Guardian's Leggings
-				i(214491),	-- Jade Guardian's Spaulders
-			}),
-			filter(PLATE, {
-				i(214759),	-- Swarmbreaker's Armguards
-				i(214760),	-- Swarmbreaker's Chestguard
-				i(214756),	-- Swarmbreaker's Grasp
-				i(214758),	-- Swarmbreaker's Greatboots
-				i(214753),	-- Swarmbreaker's Greaves
-				i(214754),	-- Swarmbreaker's Shoulderguards
-				i(214755),	-- Swarmbreaker's Waistguard
-				i(214757),	-- Swarmbreaker's Warhelm
+			n(WEAPONS, {
+				filter(DAGGERS, {
+					i(215607),	-- Ceremonial Spike (maybe hc only?)
+					i(215594),	-- Warbringer's Blade
+				}),
+				filter(GUNS, {
+					i(215706),	-- Klaxxi Ambershot
+				}),
+				filter(ONE_HANDED_MACES, {
+					i(215757),	-- Carapace Crusher (maybe hc only?)
+					i(215752),	-- Ced's Basher
+				}),
+				filter(STAVES, {
+					i(215881),	-- Gustspinner's Staff
+					i(215885),	-- Teachings of Shaohao
+				}),
+				filter(TWO_HANDED_MACES, {
+					i(215786),	-- Lerah's Maul
+				}),
 			}),
 		}),
 		-- Scenario Maps
