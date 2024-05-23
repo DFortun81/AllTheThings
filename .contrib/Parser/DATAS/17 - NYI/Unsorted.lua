@@ -6057,7 +6057,6 @@ root(ROOTS.Unsorted, {
 					i(215514),	-- Wallwatcher's Longaxe
 					i(215516),	-- Uroe, Harbinger of Fear
 					i(215517),	-- Uroe, Harbinger of Fear
-					i(215518),	-- Uroe, Harbinger of Fear
 					i(215519),	-- Uroe, Harbinger of Fear
 					i(215520),	-- Dagryn's Longbow
 					i(215521),	-- Dagryn's Longbow
@@ -6191,7 +6190,6 @@ root(ROOTS.Unsorted, {
 					i(215685),	-- Klaxxi Channeling Fork
 					i(215686),	-- Eye of the Hydra
 					i(215687),	-- Eye of the Hydra
-					i(215688),	-- Eye of the Hydra
 					i(215689),	-- Eye of the Hydra
 					i(215690),	-- Kor'kron Heavy Rifle
 					i(215691),	-- Kor'kron Heavy Rifle
@@ -6227,7 +6225,6 @@ root(ROOTS.Unsorted, {
 					i(215729),	-- Galvanized Stormcrusher
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215734),	-- Kri'tak, Scepter of the Swarm
-					i(215736),	-- Kri'tak, Scepter of the Swarm
 					i(215739),	-- Shomi's Scepter
 					i(215743),	-- Sunsoul Smasher
 					i(215745),	-- Wasteland Basher
@@ -6342,11 +6339,8 @@ root(ROOTS.Unsorted, {
 					i(215922),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
 					i(215924),	-- Shao-Tien Saber
-					i(215927),	-- Scimitar of Seven Stars
 					i(215928),	-- Scimitar of Seven Stars
 					i(215929),	-- Kilrak, Fangs of Terror
-					i(215931),	-- Kilrak, Fangs of Terror
-					i(215933),	-- Loshan, Fear Incarnate
 					i(215934),	-- Loshan, Fear Incarnate
 					i(215936),	-- Loshan, Fear Incarnate
 					i(215937),	-- Imperial Wind Blade
@@ -6370,14 +6364,12 @@ root(ROOTS.Unsorted, {
 					i(215965),	-- Soulblade of the Storm
 					i(215967),	-- Soulblade of the Storm
 					i(215968),	-- Greatsword of the Iron Legion
-					i(215969),	-- Greatsword of the Iron Legion
 					i(215970),	-- Greatsword of the Iron Legion
 					i(215971),	-- Greatsword of Fallen Pride
 					i(215972),	-- Greatsword of Fallen Pride
 					i(215973),	-- Greatsword of Fallen Pride
 					i(215974),	-- Greatsword of Fallen Pride
 					i(215976),	-- Starslicer
-					i(215977),	-- Starslicer
 					i(215979),	-- Faded Forest Falchion
 					i(215981),	-- Red Crane Greatsword
 					i(215985),	-- Satay's Greatsword
@@ -6392,7 +6384,6 @@ root(ROOTS.Unsorted, {
 					i(215996),	-- Mistspinner's Channel
 					i(215997),	-- Torch of the Starspark
 					i(215998),	-- Torch of the Starspark
-					i(215999),	-- Torch of the Starspark
 					i(216000),	-- Torch of the Starspark
 					i(216001),	-- Mountainsage Rod
 					i(216002),	-- Grummle Rod
@@ -6443,7 +6434,6 @@ root(ROOTS.Unsorted, {
 					i(216431),	-- Torall, the Emperor's Scepter
 					i(216432),	-- Acid-Spine Bonebreaker
 					i(216434),	-- Hammer of the Dawn
-					i(216435),	-- Hammer of the Dawn
 					i(216436),	-- Hammer of the Dawn
 					i(216437),	-- Hammer of the Dawn
 					i(216439),	-- Pandaren Book
@@ -6506,7 +6496,6 @@ root(ROOTS.Unsorted, {
 					i(216556),	-- Shield of the Fallen General
 					i(216557),	-- Shield of the Fallen General
 					i(216558),	-- Shield of the Fallen General
-					i(216559),	-- Steelskin, Qiang's Bulwark
 					i(216560),	-- Steelskin, Qiang's Bulwark
 					i(216562),	-- Steelskin, Qiang's Bulwark
 					i(216564),	-- Gaze of the Ancient
