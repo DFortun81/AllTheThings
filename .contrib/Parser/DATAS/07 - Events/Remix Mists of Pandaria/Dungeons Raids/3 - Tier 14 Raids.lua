@@ -247,20 +247,25 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					i(215583),	-- Blade of the Seven Stars
+					i(215791),	-- Bo-Ris, Spear of Night
+					i(215840),	-- Brazier of the Eternal Empire
 					i(215482),	-- Elegion, the Star Cleaver
 					i(215847),	-- Fearspeaker's Warstaff
 					i(215848),	-- Fearspeaker's Warstaff
 					i(215850),	-- Fearspeaker's Warstaff
+					i(215637),	-- Fist of Shek'zeer
 					i(215730),	-- Galvanized Stormcrusher
 					i(216563),	-- Gaze of the Ancient
+					i(215698),	-- Grand Imperial Rifle
 					i(215932),	-- Kilrak, Fangs of Terror
 					i(215737),	-- Kri'tak, Scepter of the Swarm
 					i(216529),	-- Protection of the Emperor
+					i(215586),	-- Regail's Fulminating Blade
 					i(215925),	-- Scimitar of Seven Stars
 					i(215506),	-- Shin'ka, the Tyrant's Greataxe
+					i(215592),	-- Soulsever
 					i(216561),	-- Steelskin, Qiang's Bulwark
 					i(215732),	-- Tihan, Scepter of the Sleeper
-					i(215637),	-- Fist of Shek'zeer
 					i(215844),	-- Waterspeaker's Staff
 				}),
 			}),

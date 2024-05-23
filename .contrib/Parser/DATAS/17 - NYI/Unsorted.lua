@@ -5884,7 +5884,6 @@ root(ROOTS.Unsorted, {
 						i(213695),	-- Silkmaster's Gloves
 						i(213696),	-- Silkmaster's Hood
 						i(213697),	-- Silkmaster's Leggings
-						i(213693),	-- Silkmaster's Robe
 						i(213694),	-- Silkmaster's Sandals
 						i(213698),	-- Silkmaster's Shoulderpads
 
@@ -6175,12 +6174,10 @@ root(ROOTS.Unsorted, {
 					i(215582),	-- Blade of the Seven Stars
 					i(215584),	-- Blade of the Seven Stars
 					i(215585),	-- Regail's Fulminating Blade
-					i(215586),	-- Regail's Fulminating Blade
 					i(215587),	-- Regail's Fulminating Blade
 					i(215588),	-- Regail's Fulminating Blade
 					i(215589),	-- Soulsever
 					i(215591),	-- Soulsever
-					i(215592),	-- Soulsever
 					i(215593),	-- Soulsever
 					i(215599),	-- Mountainscaler Slicer
 					i(215602),	-- Spiritbound Stabber
@@ -6262,7 +6259,6 @@ root(ROOTS.Unsorted, {
 					i(215695),	-- Taoren, the Malignant
 					i(215696),	-- Taoren, the Malignant
 					i(215697),	-- Grand Imperial Rifle
-					i(215698),	-- Grand Imperial Rifle
 					i(215699),	-- Grand Imperial Rifle
 					i(215700),	-- Trailseeker Longrifle
 					i(215701),	-- Jadewatch Rifle
@@ -6323,7 +6319,6 @@ root(ROOTS.Unsorted, {
 					i(215787),	-- Kazra'jin's Maul
 					i(215789),	-- Kazra'jin's Maul
 					i(215790),	-- Kazra'jin's Maul
-					i(215791),	-- Bo-Ris, Spear of Night
 					i(215792),	-- Bo-Ris, Spear of Night
 					i(215793),	-- Bo-Ris, Spear of Night
 					i(215794),	-- Halberd of Inner Darkness
@@ -6359,7 +6354,6 @@ root(ROOTS.Unsorted, {
 					i(215837),	-- Drakebinder's Spire
 					i(215838),	-- Drakebinder's Spire
 					i(215839),	-- Brazier of the Eternal Empire
-					i(215840),	-- Brazier of the Eternal Empire
 					i(215841),	-- Brazier of the Eternal Empire
 					i(215842),	-- Brazier of the Eternal Empire
 					i(215845),	-- Waterspeaker's Staff
@@ -6375,7 +6369,6 @@ root(ROOTS.Unsorted, {
 					i(215864),	-- Torch of Dawn
 					i(215865),	-- Fogspeaker Conduit
 					i(215868),	-- Monastic Staff
-					i(215873),	-- Amberweaver's Staff
 					i(215874),	-- Staff of Iron Will
 					i(215876),	-- Mistdancer's Rod
 					i(215877),	-- Cloudscorcher Staff
