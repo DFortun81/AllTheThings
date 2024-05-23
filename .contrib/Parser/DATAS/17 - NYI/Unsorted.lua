@@ -6529,7 +6529,6 @@ root(ROOTS.Unsorted, {
 					i(216536),	-- Ironwood Barrier
 					i(216537),	-- Mogu Lord's Deflector
 					i(216539),	-- Mogu Lord's Barrier
-					i(216540),	-- Mogu Lord's Shield
 					i(216541),	-- Pandaren Barrier
 					i(216543),	-- Pandaren Bulwark
 					i(216544),	-- Pandaren Shield
