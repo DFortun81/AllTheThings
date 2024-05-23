@@ -6341,7 +6341,6 @@ root(ROOTS.Unsorted, {
 					i(215890),	-- Hopespreader's Staff
 					i(215892),	-- Staff of the Black Ox
 					i(215893),	-- Pilgrim's Staff
-					i(215894),	-- Jinyu Conduit
 					i(215895),	-- Jinyu Rod
 					i(215896),	-- Jinyu Spire
 					i(215898),	-- Jalak's Spirit Staff

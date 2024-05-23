@@ -98,6 +98,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					i(215980),	-- Binan Falchion // double up from Jade Forest
 					i(215763),	-- Hozen Basher
+					i(215894),	-- Jinyu Conduit
 					i(215987),	-- Jinyu Greatblade
 					i(215590),	-- Shomi's Shanker
 					i(215957),	-- Tian Monastery Saber
