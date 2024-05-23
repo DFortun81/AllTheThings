@@ -428,19 +428,25 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(WEAPONS, {
 						i(216426),	-- Acid-Spine Bonebreaker
 						i(215653),	-- Amun-Thoth, Sul's Spiritrender
+						i(216405),	-- Blade of the Sanguine Ritual
 						i(216596),	-- Bulwark of Twinned Despair
 						i(216464),	-- Dinomancer's Spire
 						i(215906),	-- Do-tharak, the Foebreaker
+						i(215688),	-- Eye of the Hydra
+						i(216435),	-- Hammer of the Dawn
 						i(215770),	-- Jerthud, Hand of the Savior
 						i(215788),	-- Kazra'jin's Maul
 						i(215499),	-- Kura-Kura, Kazra'jin's Headtaker
 						i(215767),	-- Mace of Dark Animus
+						i(215812),	-- Shan-Dun, Breaker of Courage
 						i(216015),	-- Shellsplitter Battleaxe
 						i(216587),	-- Shield of the Gloaming
 						i(215966),	-- Soulblade of the Storm
 						i(216018),	-- Stormbreaker's Waraxe
 						i(216401),	-- Tia-Tia, the Spinning Star
+						i(216429),	-- Torall, the Emperor's Scepter
 						i(216590),	-- Tortos' Shell
+						i(215518),	-- Uroe, Harbringer of Fear
 						i(215774),	-- Zeeg's Ancient Kegbreaker
 						i(215992),	-- Zerat, Soulburner's Greatsword
 					}),
