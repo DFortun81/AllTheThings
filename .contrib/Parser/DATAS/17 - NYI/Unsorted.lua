@@ -5960,17 +5960,6 @@ root(ROOTS.Unsorted, {
 						i(220988),	-- Fire-Charm Vestments
 						i(220989),	-- Fire-Charm Jacket
 					}),
-					filter(MAIL, {
-						------ Jade Guardian's Regalia (Yellow) ------
-						i(214729),	-- Jade Guardian's Armbands
-						i(214730),	-- Jade Guardian's Breastplate
-						i(214734),	-- Jade Guardian's Chain
-						i(214733),	-- Jade Guardian's Gloves
-						i(214732),	-- Jade Guardian's Helmet
-						i(214736),	-- Jade Guardian's Legguards
-						i(214735),	-- Jade Guardian's Pauldrons
-						i(214731),	-- Jade Guardian's Sabatons
-					}),
 					filter(PLATE, {
 						------ Gatecrasher Battleplate (Black) ------
 						i(215042),	-- Cliffbreaker Armguards
