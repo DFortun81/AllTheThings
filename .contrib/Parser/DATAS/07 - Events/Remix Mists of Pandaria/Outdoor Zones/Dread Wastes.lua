@@ -50,7 +50,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}},
 				}),
 			}),
-			n(REWARDS, {
+			n(ZONE_REWARDS, {
 				filter(LEATHER, {
 					i(214108),	-- Riverblade Bindings
 					i(214111),	-- Riverblade Cover

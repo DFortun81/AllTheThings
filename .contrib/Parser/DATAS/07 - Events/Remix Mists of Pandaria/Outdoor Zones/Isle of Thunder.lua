@@ -200,7 +200,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			n(REWARDS, {
+			n(ZONE_REWARDS, {
 				filter(LEATHER, {
 					i(214120),	-- Swampthresher Cap
 					i(214118),	-- Swampthresher Cinch

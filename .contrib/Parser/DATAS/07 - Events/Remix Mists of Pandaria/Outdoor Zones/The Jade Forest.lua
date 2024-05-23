@@ -252,7 +252,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
 				}),
 			}),
-			n(REWARDS, {
+			n(ZONE_REWARDS, {
 				n(ARMOR, {
 					filter(CLOTH, {
 						i(213668),	-- Spirit-Waker's Bracers

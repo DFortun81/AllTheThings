@@ -69,7 +69,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
 				}),
 			}),
-			n(REWARDS, {
+			n(ZONE_REWARDS, {
 				filter(LEATHER, {
 					i(214104),	-- Mistdancer Cap
 					i(214102),	-- Mistdancer Cinch

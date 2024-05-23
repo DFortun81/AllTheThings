@@ -9,7 +9,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(ACHIEVEMENTS, {
 
 			}),
-			n(REWARDS, {
+			n(ZONE_REWARDS, {
 
 			}),
 		},

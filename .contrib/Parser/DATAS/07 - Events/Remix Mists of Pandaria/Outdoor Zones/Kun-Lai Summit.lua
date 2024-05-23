@@ -85,7 +85,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}},
 				}),
 			}),
-			n(REWARDS, {
+			n(ZONE_REWARDS, {
 				filter(CLOTH, {
 					i(213693),	-- Silkmaster's Robe
 				}),

@@ -64,7 +64,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 			}),
-			n(REWARDS, {
+			n(ZONE_REWARDS, {
 				filter(LEATHER, {
 					i(214086),	-- Springrain Belt
 					i(214089),	-- Springrain Boots
