@@ -109,16 +109,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215755),	-- Je'lyu, Scepter of the Serpent
 			i(215954),	-- Kor'dok's Sword
 			i(215882),	-- Lorewalker's Staff
+			i(215704),	-- Mantid Firebelcher
 			i(215613),	-- Mogu Lord's Blade
 			i(215879),	-- Mountainsage Spire
 			i(215705),	-- Penate's Pistol
-			i(215751),	-- Porter's Mace
+			i(215751),	-- Porter's Mace (also drops on normal scenario?)
 			i(215807),	-- Ritter's Spear
 			i(215783),	-- Shado-Pan Maul
 			i(215878),	-- Springrain Spire
 			i(215875),	-- Staff of Stolen Hope
 			i(215784),	-- Taran Zhu's Bonebreaker
 			i(215645),	-- Tian Handblade
+			i(215612),	-- Yaungol Shanker
 		}),
 		inst(303, {	-- Gate of the Setting Sun
 			["coord"] = { 15.8, 74.8, VALE_OF_ETERNAL_BLOSSOMS },

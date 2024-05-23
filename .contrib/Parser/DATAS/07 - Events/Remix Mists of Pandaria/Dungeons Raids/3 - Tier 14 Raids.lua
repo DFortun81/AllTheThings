@@ -122,15 +122,23 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				n(WEAPONS, {
+					i(215793),	-- Bo-Ris, Spear of Night (HoF LFR / timeless isle)
 					i(210641),	-- Bo-Ris, Spear of Night
+					i(215481),	-- Elegion, the Star Cleaver (ToES LFR)
 					i(215727),	-- Galvanized Stormcrusher
 					i(211160),	-- Greatsword of the Iron Legion
+					i(215930),	-- Kilrak, Fangs of Terror (HoF LFR)
 					i(215735),	-- Kri'tak, Scepter of the Swarm
 					i(215935),	-- Loshan, Fear Incarnate
 					i(215799),	-- Qiang's Unbreakable Polearm
+					i(215588),	-- Regail's Fulminating Blade (HoF LFR)
 					i(215926),	-- Scimitar of Seven Stars
+					i(215593),	-- Soulsever (HoF LFR)
 					i(215975),	-- Starslicer // lfr terrace or hof 1st wing
 					i(215978),	-- Starslicer
+					i(215695),	-- Taoren, the Malignant (MSV LFR)
+					i(215696),	-- Taoren, the Malignant (HoF LFR)
+					i(215731),	-- Tihan, Scepter of the Sleeper (MSV LFR)
 					i(215843),	-- Waterspeaker's Staff
 				}),
 			}),

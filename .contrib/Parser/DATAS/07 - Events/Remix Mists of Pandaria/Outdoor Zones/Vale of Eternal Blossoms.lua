@@ -79,7 +79,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214710),	-- Nightwatcher's Sabatons
 				}),
 				n(WEAPONS, {
+					i(215947),	-- Inkgill Sword
+					i(215740),	-- Jinyu Bonebreaker
+					i(215532),	-- Mogu Warbow
 					i(215651),	-- Pandaren Fist
+					i(215892),	-- Staff of the Black Ox
 					i(215943),	-- Wasteland Scimitar
 				}),
 			}),

@@ -128,7 +128,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					i(215644),	-- Amber Claw
-					i(215873),	-- Amberweaver's Staff
+					i(215873),	-- Amberweaver's Staff (also dropped on isle of thunder & timeless isle)
 					i(215681),	-- Crane's Beak Effigy
 					i(215862),	-- Engraved Spire
 					i(215488),	-- Mountainscaler Hatchet

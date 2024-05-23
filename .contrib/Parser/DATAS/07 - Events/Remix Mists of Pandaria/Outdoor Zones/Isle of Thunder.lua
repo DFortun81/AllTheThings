@@ -275,8 +275,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215861),	-- Instructor's Spire
 					i(215897),	-- Jinyu Staff
 					i(215982),	-- Marista Greatsword
+					i(215549),	-- Miracoran, the Dissonant Chord
 					i(216540),	-- Mogu Lord's Shield
-					i(215761),	-- Saurok Smasher
+					i(215761),	-- Saurok Smasher (also drops on timeless isle)
 					i(215805),	-- Serpentguard Spear
 				})
 			}),
