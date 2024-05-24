@@ -6017,9 +6017,7 @@ root(ROOTS.Unsorted, {
 					i(215470),	-- Haromm's Frozen Battleaxe
 					i(215471),	-- Haromm's Frozen Battleaxe
 					i(215472),	-- Haromm's Frozen Battleaxe
-					i(215473),	-- Malkorok's Headtaker
 					i(215474),	-- Malkorok's Headtaker
-					i(215475),	-- Malkorok's Headtaker
 					i(215476),	-- Malkorok's Headtaker
 					i(215477),	-- Korven's Crescent
 					i(215479),	-- Korven's Crescent

@@ -259,6 +259,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214400),	-- Wildblood Treads
 					i(214402),	-- Wildblood Wraps
 				}),
+				filter(MAIL, {
+					i(214714),	-- Stonefang Breastplate
+					i(214715),	-- Stonefang Footguards
+					i(214718),	-- Stonefang Girdle
+					i(214717),	-- Stonefang Grips
+					i(214716),	-- Stonefang Helmet
+					i(214720),	-- Stonefang Legwraps
+					i(214719),	-- Stonefang Mantle
+					i(214713),	-- Stonefang Wristguards
+				}),
 				filter(PLATE, {
 					i(215055),	-- Everbright Bracers
 					i(215052),	-- Everbright Breastplate

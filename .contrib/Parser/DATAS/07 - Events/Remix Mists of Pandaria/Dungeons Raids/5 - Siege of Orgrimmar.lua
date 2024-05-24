@@ -318,6 +318,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					n(WEAPONS, {
 						i(215835),	-- Drakebinder's Spire
+						i(215473),	-- Malkorok's Headtaker
 						i(215830),	-- Rod of the Megantholithic Apparatus
 					}),
 					header(HEADERS.Achievement, 8458, {	-- Vale of Eternal Sorrows
