@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "CSVCleaner/1.0.0": {
+        "dependencies": {
+          "Csv": "2.0.93"
+        },
+        "runtime": {
+          "CSVCleaner.dll": {}
+        }
+      },
+      "Csv/2.0.93": {
+        "runtime": {
+          "lib/netcoreapp3.1/Csv.dll": {
+            "assemblyVersion": "2.0.93.0",
+            "fileVersion": "2.0.93.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CSVCleaner/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Csv/2.0.93": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3KD+VCDn1yKZFrGgi7KS8BxqfpFbX3Pfz+jqHq6a1A/V9HvSmn3VazlSLdOu6Whiopso3lcUhgL4qkalBgIz1Q==",
+      "path": "csv/2.0.93",
+      "hashPath": "csv.2.0.93.nupkg.sha512"
+    }
+  }
+}
