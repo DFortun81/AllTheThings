@@ -769,16 +769,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 54.7, 33.0, ULDUM },
 				}),
 				crit(17692, {	-- Vashj'ir, Darkbreak Cove
-					["coord"] = { 54.7, 72.2, 203 },
+					["coord"] = { 54.7, 72.2, VASHJIR },
 				}),
 				crit(17693, {	-- Vashj'ir, Deepmist Grotto
-					["coord"] = { 63.4, 60.2, 203 },
+					["coord"] = { 63.4, 60.2, VASHJIR },
 				}),
 				crit(17694, {	-- Vashj'ir, Silver Tide Hollow
-					["coord"] = { 49.2, 41.9, 203 },
+					["coord"] = { 49.2, 41.9, VASHJIR },
 				}),
 				crit(17695, {	-- Vashj'ir, Tranquil Wash
-					["coord"] = { 49.7, 57.4, 203 },
+					["coord"] = { 49.7, 57.4, VASHJIR },
 				}),
 			},
 			]]--
@@ -817,16 +817,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["coord"] = { 54.7, 33.0, ULDUM },
 				}),
 				crit(17693, {	-- Vashj'ir, Deepmist Grotto
-					["coord"] = { 63.4, 60.2, 203 },
+					["coord"] = { 63.4, 60.2, VASHJIR },
 				}),
 				crit(17714, {	-- Vashj'ir, Legion's Rest
-					["coord"] = { 51.5, 62.5, 203 },
+					["coord"] = { 51.5, 62.5, VASHJIR },
 				}),
 				crit(17694, {	-- Vashj'ir, Silver Tide Hollow
-					["coord"] = { 49.2, 41.9, 203 },
+					["coord"] = { 49.2, 41.9, VASHJIR },
 				}),
 				crit(17717, {	-- Vashj'ir, Tenebrous Cavern
-					["coord"] = { 51.3, 60.6, 203 },
+					["coord"] = { 51.3, 60.6, VASHJIR },
 				}),
 			},
 			]]--
@@ -3858,11 +3858,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(28981, {	-- Candy Bucket — Vashj'ir, Deepmist Grotto, Neutral
-					["coord"] = { 63.4, 60.2, 203 },
+					["coord"] = { 63.4, 60.2, VASHJIR },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(28982, {	-- Candy Bucket — Vashj'ir, Silver Tide Hollow, Neutral
-					["coord"] = { 49.2, 41.9, 203 },
+					["coord"] = { 49.2, 41.9, VASHJIR },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(12400, {	-- Candy Bucket — Winterspring, Everlook, Neutral
@@ -4335,11 +4335,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(28985, {	-- Candy Bucket — Vashj'ir, Darkbreak Cove, Alliance
-					["coord"] = { 54.7, 72.2, 203 },
+					["coord"] = { 54.7, 72.2, VASHJIR },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(28983, {	-- Candy Bucket — Vashj'ir, Tranquil Wash, Alliance
-					["coord"] = { 49.7, 57.4, 203 },
+					["coord"] = { 49.7, 57.4, VASHJIR },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(28988, {	-- Candy Bucket — Western Plaguelands, Chillwind Camp, Alliance
@@ -4692,11 +4692,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["timeline"] = { ADDED_5_0_4 },
 				}),
 				q(28984, {	-- Candy Bucket — Vashj'ir, Legion's Rest, Horde
-					["coord"] = { 51.5, 62.5, 203 },
+					["coord"] = { 51.5, 62.5, VASHJIR },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(28986, {	-- Candy Bucket — Vashj'ir, Tenebrous Cavern, Horde
-					["coord"] = { 51.3, 60.6, 203 },
+					["coord"] = { 51.3, 60.6, VASHJIR },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(28987, {	-- Candy Bucket — Western Plaguelands, Andorhal, Horde

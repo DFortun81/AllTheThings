@@ -1683,7 +1683,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			}),
 			q(29031, {	-- Honor the Flame — Vashj'ir
 				["qg"] = 51697,	-- Vashj'ir Flame Guardian
-				["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
+				["coord"] = { 49.4, 42.0, VASHJIR_SHIMMERING_EXPANSE },
 				["timeline"] = { ADDED_4_0_1 },
 			}),
 			q(75650, {	-- Honor the Flame — Zaralek Cavern

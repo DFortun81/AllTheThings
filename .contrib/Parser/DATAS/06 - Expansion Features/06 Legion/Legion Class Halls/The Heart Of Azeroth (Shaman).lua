@@ -140,12 +140,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 						q(43645, {	-- Wavespeaker's Trail
 							["sourceQuests"] = { 43644 },	-- To the Deeps
 							["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
-							["coord"] = { 43.6, 63.2, 205 },	-- Shimmering Expanse
+							["coord"] = { 43.6, 63.2, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(40341, {	-- Throne of the Tides: Azshara's Power
 							["sourceQuests"] = { 43645 },	-- Wavespeaker's Trail
 							["provider"] = { "n", 96530 },	-- Erunak Stonespeaker
-							["coord"] = { 43.6, 63.2, 205 },	-- Shimmering Expanse
+							["coord"] = { 43.6, 63.2, VASHJIR_SHIMMERING_EXPANSE },
 							["maps"] = { 742, 743 },	-- Abyssal Maw (Scenario Map)
 							["g"] = {
 								artifact(116),	-- Sharas'dal, Scepter of Tides

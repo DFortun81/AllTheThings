@@ -636,7 +636,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(29738, {	-- Moonlance the Elder
 			["qg"] = 55228,	-- Elder Moonlance
-			["coord"] = { 57.2, 86.1, 205 },
+			["coord"] = { 57.2, 86.1, VASHJIR_SHIMMERING_EXPANSE },
 			["timeline"] = { ADDED_4_3_0 },
 			["isYearly"] = true,
 		}),

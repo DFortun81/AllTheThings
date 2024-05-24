@@ -83,11 +83,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			n(50009, {	-- Mobus
 				["coords"] = {	-- Vashj'ir (Abyssal Depths)
-					{ 63.4, 32.6, 204 },
-					{ 65.8, 20.4, 204 },
-					{ 71.8, 18.4, 204 },
-					{ 75.6, 36.6, 204 },
-					{ 77.0, 25.4, 204 },
+					{ 63.4, 32.6, VASHJIR_ABYSSAL_DEPTHS },
+					{ 65.8, 20.4, VASHJIR_ABYSSAL_DEPTHS },
+					{ 71.8, 18.4, VASHJIR_ABYSSAL_DEPTHS },
+					{ 75.6, 36.6, VASHJIR_ABYSSAL_DEPTHS },
+					{ 77.0, 25.4, VASHJIR_ABYSSAL_DEPTHS },
 				},
 				["isRaid"] = true,
 				["groups"] = {

@@ -625,7 +625,7 @@ root(ROOTS.Zones, {
 					}),
 					crit(16222,  {	-- Rockchewer Whelk (Shimmering Expanse)
 						["provider"] = { "n", 48848 },	-- Rockchewer Whelk
-						["coord"] = { 54, 41, 205 },
+						["coord"] = { 54, 41, VASHJIR_SHIMMERING_EXPANSE },
 					}),
 					crit(16223, {	-- Sassy Cat (Tol Barad)
 						["provider"] = { "n", 47682 },	-- Sassy Cat
@@ -633,7 +633,7 @@ root(ROOTS.Zones, {
 					}),
 					crit(16224, {	-- Sea Cucumber (Shimmering Expanse, Abyssal Depths)
 						["provider"] = { "n", 48802 },	-- Sea Cucumber
-						["coord"] = { 54, 41, 205 },
+						["coord"] = { 54, 41, VASHJIR_SHIMMERING_EXPANSE },
 					}),
 					crit(16225, {	-- Wharf Rat (Tol Barad Peninsula, The Cape of Stranglethorn
 						["provider"] = { "n", 47667 },	-- Wharf Rat
