@@ -6349,7 +6349,6 @@ root(ROOTS.Unsorted, {
 					i(216019),	-- Stormbreaker's Waraxe
 					i(216020),	-- Stormbreaker's Waraxe
 					i(216021),	-- Pandaren Hatchet
-					i(216022),	-- Pandaren Axe
 					i(216024),	-- Pandaren Hewer
 					i(216400),	-- Tia-Tia, the Spinning Star
 					i(216402),	-- Tia-Tia, the Spinning Star
