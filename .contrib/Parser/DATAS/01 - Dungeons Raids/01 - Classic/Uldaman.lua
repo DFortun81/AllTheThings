@@ -455,6 +455,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				q(2280, {	-- The Platinum Discs (2/3) [Both]
 					["provider"] = { "i", 6064 },	-- Miniature Platinum Discs
 					["lvl"] = lvlsquish(40, 40, 15),
+					["groups"] = {
+						i(65921, {	-- Durdin's Hammer
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(65947, {	-- Platinum Sword
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(65971, {	-- Band of Uldaman
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+					},
 				}),
 				-- #endif
 				q(2439, {	-- The Platinum Discs (3/3) [Alliance]
