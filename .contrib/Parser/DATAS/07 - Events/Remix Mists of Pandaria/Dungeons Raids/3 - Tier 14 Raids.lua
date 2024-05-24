@@ -124,23 +124,32 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					i(215793),	-- Bo-Ris, Spear of Night (HoF LFR / timeless isle)
 					i(210641),	-- Bo-Ris, Spear of Night
+					i(215842),	-- Brazier of the Eternal Empire (HoF LFR)
 					i(215481),	-- Elegion, the Star Cleaver (ToES LFR)
+					i(215636),	-- Fist of Shek'zeer (HoF LFR)
 					i(215727),	-- Galvanized Stormcrusher
+					i(215632),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
+					i(215635),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
+					i(215851),	-- Gao-Rei, Staff of the Protector (HoF LFR)
 					i(211160),	-- Greatsword of the Iron Legion
+					i(215857),	-- Jin'ya, Orb of the Watercaller (HoF LFR)
 					i(215930),	-- Kilrak, Fangs of Terror (HoF LFR)
 					i(215735),	-- Kri'tak, Scepter of the Swarm
 					i(215935),	-- Loshan, Fear Incarnate
 					i(215798),	-- Qiang's Unbreakable Polearm (HoF LFR)
 					i(215799),	-- Qiang's Unbreakable Polearm
+					i(215801),	-- Qiang's Unbreakable Polearm (HoF LFR)
 					i(215588),	-- Regail's Fulminating Blade (HoF LFR)
 					i(215926),	-- Scimitar of Seven Stars
 					i(215505),	-- Shin'ka, the Tyrant's Greataxe
 					i(215593),	-- Soulsever (HoF LFR)
 					i(215975),	-- Starslicer (Terrace LFR or HoF LFR 1st wing)
 					i(215978),	-- Starslicer
+					i(215693),	-- Taoren, the Malignant (HoF LFR)
 					i(215695),	-- Taoren, the Malignant (MSV LFR)
 					i(215696),	-- Taoren, the Malignant (HoF LFR)
 					i(215731),	-- Tihan, Scepter of the Sleeper (MSV LFR)
+					i(216000),	-- Torch of the Starspark (HoF LFR)
 					i(215843),	-- Waterspeaker's Staff
 				}),
 			}),

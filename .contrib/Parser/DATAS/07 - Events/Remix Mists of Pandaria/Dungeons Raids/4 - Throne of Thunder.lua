@@ -248,6 +248,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215000),	-- Greatboots of the Last Mogu
 						}),
 					}),
+					n(WEAPONS, {
+						i(215652),	-- Amun-Thoth, Sul's Spiritrender
+						i(216461),	-- Caduceus of Pure Moods
+						i(216463),	-- Dinomancer's Spire
+						i(216409),	-- Fyn's Dagger
+						i(216412),	-- Iron Qon's Knife
+						i(215899),	-- Jalak's Spirit Staff
+						i(215766),	-- Mace of Dark Animus
+						i(215625),	-- Megaera's Fang
+						i(215627),	-- Megaera's Fang
+						i(215965),	-- Soulblade of the Storm
+						i(215886),	-- Soulwood Spire
+						i(216466),	-- Suen-Wo, Spire of the Rising Sun
+						i(216403),	-- Tia-Tia, the Spinning Star
+						i(216428),	-- Torall, the Emperor's Scepter
+						i(215545),	-- Tortoiseshell Longbow
+						i(215964),	-- Qon's Iron Decree
+					}),
 					header(HEADERS.Achievement, 8069, {	-- Last Stand of the Zandalari
 						e(827, {	-- Jin'rokh the Breaker
 							["crs"] = { 69465 },	-- Jin'rokh the Breaker

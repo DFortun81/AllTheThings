@@ -6068,7 +6068,6 @@ root(ROOTS.Unsorted, {
 					i(215542),	-- Tortoiseshell Longbow
 					i(215543),	-- Tortoiseshell Longbow
 					i(215544),	-- Tortoiseshell Longbow
-					i(215545),	-- Tortoiseshell Longbow
 					i(215546),	-- Miracoran, the Dissonant Chord
 					i(215547),	-- Miracoran, the Dissonant Chord
 					i(215548),	-- Miracoran, the Dissonant Chord
@@ -6129,24 +6128,18 @@ root(ROOTS.Unsorted, {
 					i(215622),	-- Imperial Longknife
 					i(215623),	-- Imperial Shortblade
 					i(215624),	-- Megaera's Fang
-					i(215625),	-- Megaera's Fang
 					i(215626),	-- Megaera's Fang
-					i(215627),	-- Megaera's Fang
 					i(215628),	-- Softfoot's Iron Claw
 					i(215629),	-- Softfoot's Iron Claw
 					i(215630),	-- Softfoot's Iron Claw
 					i(215631),	-- Softfoot's Iron Claw
-					i(215632),	-- Gara'kal, Claw of the Spiritbinder
 					i(215633),	-- Gara'kal, Claw of the Spiritbinder
 					i(215634),	-- Gara'kal, Claw of the Spiritbinder
-					i(215635),	-- Gara'kal, Claw of the Spiritbinder
-					i(215636),	-- Fist of Shek'zeer
 					i(215638),	-- Fist of Shek'zeer
 					i(215640),	-- Barbs of the Rikkitun
 					i(215646),	-- Claw of the Fallen Temple
 					i(215647),	-- Ka'eng, Fang of Shadow
 					i(215650),	-- Pandaren Claw
-					i(215652),	-- Amun-Thoth, Sul's Spiritrender
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
 					i(215655),	-- Amun-Thoth, Sul's Spiritrender
 					i(215656),	-- Hozen Fetish
@@ -6181,7 +6174,6 @@ root(ROOTS.Unsorted, {
 					i(215690),	-- Kor'kron Heavy Rifle
 					i(215691),	-- Kor'kron Heavy Rifle
 					i(215692),	-- Kor'kron Heavy Rifle
-					i(215693),	-- Taoren, the Malignant
 					i(215694),	-- Taoren, the Malignant
 					i(215697),	-- Grand Imperial Rifle
 					i(215699),	-- Grand Imperial Rifle
@@ -6224,7 +6216,6 @@ root(ROOTS.Unsorted, {
 					i(215760),	-- Saurok Breaker
 					i(215764),	-- Hozen Mace
 					i(215765),	-- Mace of Dark Animus
-					i(215766),	-- Mace of Dark Animus
 					i(215768),	-- Mace of Dark Animus
 					i(215769),	-- Jerthud, Hand of the Savior
 					i(215771),	-- Jerthud, Hand of the Savior
@@ -6244,7 +6235,6 @@ root(ROOTS.Unsorted, {
 					i(215797),	-- Halberd of Inner Darkness
 					i(215798),	-- Qiang's Unbreakable Polearm
 					i(215800),	-- Qiang's Unbreakable Polearm
-					i(215801),	-- Qiang's Unbreakable Polearm
 					i(215802),	-- Spear of Feral Rage
 					i(215804),	-- Wallwatcher's Partisan
 					i(215808),	-- Yak-Herder's Longspear
@@ -6271,17 +6261,14 @@ root(ROOTS.Unsorted, {
 					i(215838),	-- Drakebinder's Spire
 					i(215839),	-- Brazier of the Eternal Empire
 					i(215841),	-- Brazier of the Eternal Empire
-					i(215842),	-- Brazier of the Eternal Empire
 					i(215845),	-- Waterspeaker's Staff
 					i(215846),	-- Waterspeaker's Staff
 					i(215849),	-- Fearspeaker's Warstaff
-					i(215851),	-- Gao-Rei, Staff of the Protector
 					i(215852),	-- Gao-Rei, Staff of the Protector
 					i(215853),	-- Gao-Rei, Staff of the Protector
 					i(215854),	-- Jin'ya, Orb of the Watercaller
 					i(215855),	-- Jin'ya, Orb of the Watercaller
 					i(215856),	-- Jin'ya, Orb of the Watercaller
-					i(215857),	-- Jin'ya, Orb of the Watercaller
 					i(215864),	-- Torch of Dawn
 					i(215865),	-- Fogspeaker Conduit
 					i(215868),	-- Monastic Staff
@@ -6291,7 +6278,6 @@ root(ROOTS.Unsorted, {
 					i(215880),	-- Darkstaff of Ruin
 					i(215883),	-- Greatstaff of the Path
 					i(215884),	-- Firedancer's Staff
-					i(215886),	-- Soulwood Spire
 					i(215887),	-- Soulwood Spire
 					i(215888),	-- Soulwood Spire
 					i(215890),	-- Hopespreader's Staff
@@ -6299,7 +6285,6 @@ root(ROOTS.Unsorted, {
 					i(215895),	-- Jinyu Rod
 					i(215896),	-- Jinyu Spire
 					i(215898),	-- Jalak's Spirit Staff
-					i(215899),	-- Jalak's Spirit Staff
 					i(215900),	-- Jalak's Spirit Staff
 					i(215901),	-- Jalak's Spirit Staff
 					i(215902),	-- Klaxxi Scimitar
@@ -6337,7 +6322,6 @@ root(ROOTS.Unsorted, {
 					i(215951),	-- Sha-Blighted Sword
 					i(215952),	-- Fear's Bite
 					i(215953),	-- Siege Captain's Blade
-					i(215955),	-- Zakai's Swarmslicer
 					i(215956),	-- Ook's Hozen Cutter
 					i(215958),	-- Tian Monastery Edge
 					i(215959),	-- Tian Monastery Sword
@@ -6345,8 +6329,6 @@ root(ROOTS.Unsorted, {
 					i(215961),	-- Qon's Iron Decree
 					i(215962),	-- Qon's Iron Decree
 					i(215963),	-- Qon's Iron Decree
-					i(215964),	-- Qon's Iron Decree
-					i(215965),	-- Soulblade of the Storm
 					i(215967),	-- Soulblade of the Storm
 					i(215968),	-- Greatsword of the Iron Legion
 					i(215971),	-- Greatsword of Fallen Pride
@@ -6368,7 +6350,6 @@ root(ROOTS.Unsorted, {
 					i(215996),	-- Mistspinner's Channel
 					i(215997),	-- Torch of the Starspark
 					i(215998),	-- Torch of the Starspark
-					i(216000),	-- Torch of the Starspark
 					i(216001),	-- Mountainsage Rod
 					i(216002),	-- Grummle Rod
 					i(216003),	-- Waterweaver's Wand
@@ -6392,16 +6373,13 @@ root(ROOTS.Unsorted, {
 					i(216024),	-- Pandaren Hewer
 					i(216400),	-- Tia-Tia, the Spinning Star
 					i(216402),	-- Tia-Tia, the Spinning Star
-					i(216403),	-- Tia-Tia, the Spinning Star
 					i(216404),	-- Blade of the Sanguine Ritual
 					i(216405),	-- Blade of the Sanguine Ritual
 					i(216406),	-- Blade of the Sanguine Ritual
 					i(216407),	-- Blade of the Sanguine Ritual
 					i(216408),	-- Fyn's Dagger
-					i(216409),	-- Fyn's Dagger
 					i(216410),	-- Fyn's Dagger
 					i(216411),	-- Fyn's Dagger
-					i(216412),	-- Iron Qon's Knife
 					i(216413),	-- Iron Qon's Knife
 					i(216414),	-- Iron Qon's Knife
 					i(216415),	-- Iron Qon's Knife
@@ -6412,7 +6390,6 @@ root(ROOTS.Unsorted, {
 					i(216424),	-- Pandaren Breaker
 					i(216425),	-- Acid-Spine Bonebreaker
 					i(216427),	-- Acid-Spine Bonebreaker
-					i(216428),	-- Torall, the Emperor's Scepter
 					i(216429),	-- Torall, the Emperor's Scepter
 					i(216430),	-- Torall, the Emperor's Scepter
 					i(216431),	-- Torall, the Emperor's Scepter
@@ -6441,11 +6418,8 @@ root(ROOTS.Unsorted, {
 					i(216458),	-- Caduceus of Pure Moods
 					i(216459),	-- Caduceus of Pure Moods
 					i(216460),	-- Caduceus of Pure Moods
-					i(216461),	-- Caduceus of Pure Moods
 					i(216462),	-- Dinomancer's Spire
-					i(216463),	-- Dinomancer's Spire
 					i(216465),	-- Dinomancer's Spire
-					i(216466),	-- Suen-Wo, Spire of the Rising Sun
 					i(216467),	-- Suen-Wo, Spire of the Rising Sun
 					i(216468),	-- Suen-Wo, Spire of the Rising Sun
 					i(216469),	-- Suen-Wo, Spire of the Rising Sun
