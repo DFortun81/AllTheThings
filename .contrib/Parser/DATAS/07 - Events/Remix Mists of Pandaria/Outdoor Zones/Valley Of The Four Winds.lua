@@ -118,6 +118,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216545),	-- Pandaren Deflector
 					i(216441),	-- Pandaren Manual
 					i(215485),	-- Shomi's Hatchet
+					i(215739),	-- Shomi's Scepter
 					i(215781),	-- Sumprush Maul
 					i(216476),	-- Temple Trainee's Edge
 					i(216472),	-- Tian Monastery Conduit

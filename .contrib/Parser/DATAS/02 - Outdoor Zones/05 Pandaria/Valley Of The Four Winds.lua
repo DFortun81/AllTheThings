@@ -1222,6 +1222,17 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29987 },	-- Unyielding Fists: Trial of Wood
 						["coord"] = { 18.3, 31.3, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56714 },	-- Master Bruised Paw
+						["groups"] = {
+							o(209953, {	-- Emperor Tern Egg 
+								i(76501),	-- Emperor Tern Egg (QI!)
+							}),
+							o(209954, {	-- Whitefisher Crane Egg
+								i(76503),	-- Whitefisher Crane Egg (QI!)
+							}),
+							o(209955, {	-- Hornbill Strider Egg
+								i(76516),	-- Hornbill Strider Egg (QI!)
+							}),
+						},
 					}),
 					q(29577, {	-- Ashyo's Vision
 						["sourceQuests"] = { 29871 },	-- Clever Ashyo
@@ -1714,6 +1725,9 @@ root(ROOTS.Zones, {
 					--	["isBreadcrumb"] = true,	-- the cutscene didn't trigger until i turned this quest in, nor did the availability of the "warn stoneplow"/"hope springs eternal" breadcrumbs in krasarang, which leads me to believe it's *not* a breadcrumb?
 						["provider"] = { "n", 61026 },	-- Emmi
 						["coord"] = { 36.2, 68.4, VALLEY_OF_THE_FOUR_WINDS },
+						["groups"] = {
+							i(81393),	-- Chen's Full Keg (QI!)
+						},
 					}),
 					q(30055, {	-- Stormstout's Hops
 						["sourceQuests"] = {
@@ -1764,6 +1778,11 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29984 },	-- Unyielding Fists: Trial of Bamboo
 						["coord"] = { 18.1, 31.1, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56111 },	-- Lin Tenderpaw
+						["groups"] = {
+							o(209952, {	-- Jademoon
+								i(76499),	-- Jademoon Leaf (QI!)
+							}),
+						},
 					}),
 					q(31670, {	-- That Dangling Carrot
 						["isDaily"] = true,
@@ -1814,6 +1833,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 30074 },	-- Knocking on the Door
 						["coord"] = { 32.3, 68.3, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56474 },	-- Mudmug
+						["groups"] = {
+							i(77471),	-- Spritewater Essence (QI!)
+						},
 					}),
 					q(30056, {	-- The Farmer's Daughter
 						["sourceQuests"] = { 30046 },	-- Chen's Resolution

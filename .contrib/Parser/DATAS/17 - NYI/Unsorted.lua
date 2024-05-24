@@ -6212,7 +6212,6 @@ root(ROOTS.Unsorted, {
 					i(215729),	-- Galvanized Stormcrusher
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215734),	-- Kri'tak, Scepter of the Swarm
-					i(215739),	-- Shomi's Scepter
 					i(215743),	-- Sunsoul Smasher
 					i(215745),	-- Wasteland Basher
 					i(215748),	-- Fireblaze Mace
@@ -6720,7 +6719,6 @@ root(ROOTS.Unsorted, {
 					i(208556),	-- Flicker Blossom
 				}),
 				n(WEAPONS, {
-					i(211151),	-- Fran's Repeater
 					i(210343),	-- Gar'tok, Might of the Faithful
 					i(210640),	-- Icon of Hope
 					i(211162),	-- Klaxxi Longsword
