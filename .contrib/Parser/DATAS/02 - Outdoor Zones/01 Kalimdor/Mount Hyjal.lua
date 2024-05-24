@@ -148,18 +148,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(616, {	-- Gates of Sothann
+					["cr"] = 43549,	-- Althera <Flight Master>
 					["coord"] = { 71.6, 75.3, MOUNT_HYJAL },
 				}),
 				fp(558, {	-- Grove of Aessina
+					["crs"] = {
+						41860,	-- Elizil Wintermoth <Flight Master>
+						53783,	-- Elizil Wintermoth <Flight Master>
+					},
 					["coord"] = { 19.6, 36.3, MOUNT_HYJAL },
 				}),
 				fp(559, {	-- Nordrassil
+					["cr"] = 41861,	-- Fayran Elthas <Flight Master>
 					["coord"] = { 62.1, 21.5, MOUNT_HYJAL },
 				}),
 				fp(781, {	-- Sanctuary of Malorne
+					["crs"] = {
+						54392,	-- Ranela Featherglen <Flight Master>
+						54393,	-- Ranela Featherglen <Flight Master>
+					},
 					["coord"] = { 27.7, 63.6, MOUNT_HYJAL },
 				}),
 				fp(557, {	-- Shrine of Aviana
+					["crs"] = {
+						43481,	-- Dinorae Swiftfeather <Flight Master>
+						50084,	-- Dinorae Swiftfeather <Flight Master>
+						-- #if AFTER 7.2.0
+						119843,	-- Dinorae Swiftfeather <Flight Master>
+						-- #endif
+					},
 					["coord"] = { 41.1, 42.5, MOUNT_HYJAL },
 				}),
 			}),
