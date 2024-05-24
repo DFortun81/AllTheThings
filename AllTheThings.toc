@@ -86,6 +86,7 @@ src\Classes\Quests.lua
 src\Classes\Item.Retail.lua
 # src\Classes\Item.Classic.lua
 src\Classes\Encounter.lua
+src\Classes\Ensemble.lua
 src\Classes\Expansion.lua
 src\Classes\Maps.lua
 src\Classes\Mount.lua
