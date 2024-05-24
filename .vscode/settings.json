@@ -560,7 +560,8 @@
         "BATTLEGROUNDS",
         "BALANCE",
         "PROFESSION_EQUIPMENT",
-        "ADD"
+        "ADD",
+        "GUILD"
     ],
     "Lua.diagnostics.disable": [
         "duplicate-index"

@@ -953,7 +953,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		})),
 
 		-- 5.2.0
-		-- #if BEFORE 10.2.7
 		expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { CREATED_5_2_0 } }, {
 			-- Throne of Thunder (Thunderforged & Heroic Thunderforged)
 			cl(DEATHKNIGHT, {
@@ -1209,7 +1208,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(96367), -- Shoulderguards of the Last Mogu
 			}),
 		})),
-		-- #endif
 
 		-- 5.3.0
 		expansion(EXPANSION.MOP, 3.0, bubbleDown({ ["timeline"] = { CREATED_5_3_0 } }, {
