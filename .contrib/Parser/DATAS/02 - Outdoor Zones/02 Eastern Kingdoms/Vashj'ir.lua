@@ -177,10 +177,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					n(FLIGHT_PATHS, {
 						fp(524, {	-- Daybreak Cove, Vashj'ir
+							["cr"] = 40866,	-- Swift Seahorse <Flight Master>
 							["coord"] = { 56.8, 75.4, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						fp(526, {	-- Tenebrous Cavern, Vashj'ir
+							["cr"] = 40873,	-- Swift Seahorse <Flight Master>
 							["coord"] = { 53.8, 59.6, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 						}),
@@ -748,16 +750,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					n(FLIGHT_PATHS, {
 						fp(607, {	-- Sandy Beach, Vashj'ir
+							["cr"] = 43287,	-- Swift Seahorse <Flight Master>
 							["description"] = "Underwater.",
 							["coord"] = { 42.4, 66.2, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						fp(609, {	-- Sandy Beach, Vashj'ir
+							["cr"] = 43216,	-- Swift Seahorse <Flight Master>
 							["description"] = "Underwater.",
 							["coord"] = { 49.2, 87.8, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 						}),
 						fp(521, {	-- Smuggler's Scar, Vashj'ir
+							["cr"] = 40852,	-- Swift Seahorse <Flight Master>
 							["coord"] = { 56.2, 31.0, VASHJIR_KELPTHAR_FOREST },
 						}),
 					}),
@@ -1287,42 +1292,51 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					}),
 					n(FLIGHT_PATHS, {
 						fp(525, {	-- Legion's Rest, Vashj'ir
+							["cr"] = 40871,	-- Swift Seahorse <Flight Master>
 							["coord"] = { 50.8, 63.4, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						fp(606, {	-- Sandy Beach, Vashj'ir (Alliance - Flight Master)
+							["cr"] = 43290,	-- Francis Greene <Gryphon Master>
 							["coord"] = { 57.0, 17.0, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						fp(608, {	-- Sandy Beach, Vashj'ir (Horde - Flight Master)
+							["cr"] = 43220,	-- Briglar <Flight Master>
 							["coord"] = { 61.0, 28.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						fp(522, {	-- Silver Tide Hollow, Vashj'ir
-							["coord"] = { 49.4, 41.2, VASHJIR_SHIMMERING_EXPANSE },
+							["cr"] = 40851,	-- Swift Seahorse <Flight Master>
+							["coord"] = { 49.6, 41.2, VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						fp(610, {	-- Stygian Bounty, Vashj'ir (Horde - Flight Master)
-							["coord"] = { 64.8, 68.0, VASHJIR_SHIMMERING_EXPANSE },
+							["cr"] = 43225,	-- Brogdul <Flight Master>
 							["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
+							["coord"] = { 64.8, 68.0, VASHJIR },
 							["races"] = HORDE_ONLY,
 						}),
 						fp(612, {	-- Stygian Bounty, Vashj'ir (Horde - Seahorse)
-							["coord"] = { 49.4, 65.6, VASHJIR_SHIMMERING_EXPANSE },
+							["cr"] = 43293,	-- Swift Seahorse <Flight Master>
 							["sourceQuest"] = 26135,	-- Visions of the Past: Rise from the Deep
+							["coord"] = { 49.4, 65.6, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = HORDE_ONLY,
 						}),
 						fp(523, {	-- Tranquil Wash Hollow, Vashj'ir
+							["cr"] = 40867,	-- Swift Seahorse <Flight Master>
 							["coord"] = { 48.6, 57.4, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						fp(605, {	-- Voldrin's Hold, Vashj'ir (Alliance - Flight Master)
-							["coord"] = { 69.4, 75.2, VASHJIR_SHIMMERING_EXPANSE },
+							["cr"] = 43295,	-- Salty McTavish <Gryphon Master>
 							["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
+							["coord"] = { 69.4, 75.2, VASHJIR },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						fp(611, {	-- Voldrin's Hold, Vashj'ir (Alliance - Seahorse)
-							["coord"] = { 57.0, 75.2, VASHJIR_SHIMMERING_EXPANSE },
+							["cr"] = 43289,	-- Swift Seahorse <Flight Master>
 							["sourceQuest"] = 25626,	-- Visions of the Past: Rise from the Deep
+							["coord"] = { 57.0, 75.2, VASHJIR_SHIMMERING_EXPANSE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
