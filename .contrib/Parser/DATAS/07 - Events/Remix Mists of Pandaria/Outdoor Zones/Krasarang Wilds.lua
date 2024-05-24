@@ -277,12 +277,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215484),	-- Boggeo's Ceremonial Axe
 					i(215858),	-- Diviner's Staff
 					i(215742),	-- Faded Forest Crusher
+					i(216417),	-- Hozen Shanker
+					i(215740),	-- Jinyu Bonebreaker
 					i(215643),	-- Klaxxi Pincers
 					i(215532),	-- Mogu Warbow
 					i(215749),	-- Ordo Basher
 					i(216023),	-- Pandaren Hacker
 					i(216422),	-- Pandaren Smasher
 					i(210634),	-- Shield of the Wakener
+					i(215802),	-- Spear of Feral Rage
+					i(215602),	-- Spiritbound Stabber
 					i(215489),	-- Wasteland Hacker
 				}),
 			}),

@@ -6108,7 +6108,6 @@ root(ROOTS.Unsorted, {
 					i(215589),	-- Soulsever
 					i(215591),	-- Soulsever
 					i(215599),	-- Mountainscaler Slicer
-					i(215602),	-- Spiritbound Stabber
 					i(215606),	-- Firescribe Slicer
 					i(215607),	-- Ceremonial Spike
 					i(215608),	-- Tolakesh, Horn of Niuzao
@@ -6225,7 +6224,6 @@ root(ROOTS.Unsorted, {
 					i(215797),	-- Halberd of Inner Darkness
 					i(215798),	-- Qiang's Unbreakable Polearm
 					i(215800),	-- Qiang's Unbreakable Polearm
-					i(215802),	-- Spear of Feral Rage
 					i(215804),	-- Wallwatcher's Partisan
 					i(215808),	-- Yak-Herder's Longspear
 					i(215809),	-- Yaungol Warspear
@@ -6368,7 +6366,6 @@ root(ROOTS.Unsorted, {
 					i(216414),	-- Iron Qon's Knife
 					i(216415),	-- Iron Qon's Knife
 					i(216416),	-- Hozen Blade
-					i(216417),	-- Hozen Shanker
 					i(216419),	-- Hozen Knife
 					i(216421),	-- Pandaren Mace
 					i(216424),	-- Pandaren Breaker
@@ -6466,7 +6463,6 @@ root(ROOTS.Unsorted, {
 					i(216597),	-- Eyes of the Doomed
 					i(216598),	-- Eyes of the Doomed
 					i(216599),	-- Eyes of the Doomed
-					i(216600),	-- Eyes of the Doomed
 					i(216612),	-- Seawatch Launcher
 					i(216613),	-- Seawatch Repeater
 					i(216614),	-- Seawatch Crossbow

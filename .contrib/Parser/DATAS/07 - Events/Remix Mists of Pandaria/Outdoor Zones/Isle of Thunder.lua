@@ -272,12 +272,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215746),	-- Bearheart's Basher
 					i(215741),	-- Bloodseeker's Bonebreaker
 					i(216595),	-- Bulwark of Twinned Despair
+					i(216600),	-- Eyes of the Doomed
 					i(216601),	-- Eyes of the Doomed
+					i(215623),	-- Imperial Shortblade
 					i(215861),	-- Instructor's Spire
 					i(215897),	-- Jinyu Staff
 					i(215982),	-- Marista Greatsword
 					i(215549),	-- Miracoran, the Dissonant Chord
 					i(216540),	-- Mogu Lord's Shield
+					i(215597),	-- Mushan Slicer
 					i(215761),	-- Saurok Smasher
 					i(215805),	-- Serpentguard Spear
 				})
