@@ -1,3 +1,3 @@
 
 REM Anytime a 'cleanable' CSV is updated, make sure to run this batch file before committing!
-"..\..\..\..\Source Code\CSVCleaner\bin\Release\net8.0\CSVCleaner.exe" "SpellEffect.10.2.7.54762.csv" "SpellEffect.regex"
+".\Release\net8.0\CSVCleaner.exe" "SpellEffect.10.2.7.54762.csv" "SpellEffect.regex"

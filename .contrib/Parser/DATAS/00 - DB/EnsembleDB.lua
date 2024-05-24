@@ -13,3 +13,10 @@ Ensemble-ItemID
 						ItemModifiedAppearanceID => SourceID
 
 -- ]]
+
+-- Don't need an ensembleDB just to map a type. Can use a new shortcut instead: iensemble()
+
+-- local Items = ItemDBConditional;
+-- local i = function(itemID)
+-- 	Items[itemID] = { type = "ensembleID" };
+-- end
