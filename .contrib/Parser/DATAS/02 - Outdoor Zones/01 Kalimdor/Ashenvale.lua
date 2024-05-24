@@ -3588,6 +3588,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 11.6, 35.2, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER 7.3.5
+					-- CRIEVE NOTE: Check this in MOP Classic.
 					["groups"] = {
 						i(4778, {	-- Heavy Spiked Mace
 							["isLimited"] = true,
@@ -3596,6 +3598,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 					},
+					-- #endif
 				}),
 				n(3954, {	-- Dalria <Trade Goods>
 					["coord"] = { 35.0, 52.0, ASHENVALE },
