@@ -1,6 +1,6 @@
 REMIX_MOP = createHeader({
 	readable = "Remix: Mists of Pandaria",
-	icon = "Interface\\Icons\\achievement_character_pandaren_female",
+	icon = _.asset("Category_Remix"),
 	eventID = EVENTS.REMIX_MOP,
 	timerunningSeasonID = 1,
 	text = {
