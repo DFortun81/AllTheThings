@@ -108,13 +108,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215806),	-- Ghostheart Warspear
 				i(215983),	-- Jade Grand Falchion
 				i(215755),	-- Je'lyu, Scepter of the Serpent
+				i(215754),	-- Jol'Grum's Mace
 				i(215954),	-- Kor'dok's Sword
 				i(215882),	-- Lorewalker's Staff
 				i(215704),	-- Mantid Firebelcher
 				i(215613),	-- Mogu Lord's Blade
+				i(215604),	-- Mogu Severer
 				i(215879),	-- Mountainsage Spire
 				i(215705),	-- Penate's Pistol
 				i(215751),	-- Porter's Mace
+				i(215605),	-- Ravenclaw Dagger
 				i(215807),	-- Ritter's Spear
 				i(215783),	-- Shado-Pan Maul
 				i(215878),	-- Springrain Spire

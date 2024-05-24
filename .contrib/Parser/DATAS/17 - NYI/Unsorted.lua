@@ -6109,8 +6109,6 @@ root(ROOTS.Unsorted, {
 					i(215591),	-- Soulsever
 					i(215599),	-- Mountainscaler Slicer
 					i(215602),	-- Spiritbound Stabber
-					i(215604),	-- Mogu Severer
-					i(215605),	-- Ravenclaw Dagger
 					i(215606),	-- Firescribe Slicer
 					i(215607),	-- Ceremonial Spike
 					i(215608),	-- Tolakesh, Horn of Niuzao
@@ -6202,7 +6200,6 @@ root(ROOTS.Unsorted, {
 					i(215743),	-- Sunsoul Smasher
 					i(215748),	-- Fireblaze Mace
 					i(215753),	-- Gao's Kegbreaker
-					i(215754),	-- Jol'Grum's Mace
 					i(215756),	-- Klaxxi Smasher
 					i(215757),	-- Carapace Crusher
 					i(215758),	-- Saurok Scepter
