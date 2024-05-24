@@ -132,12 +132,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(653, {	-- Oasis of Vir'sar
+					["cr"] = 48274,	-- Jock Lindsey <Flight Master>
 					["coord"] = { 26.6, 8.2, ULDUM },
 				}),
 				fp(652, {	-- Ramkahen
+					["cr"] = 48275,	-- Kurzel <Flight Master>
 					["coord"] = { 56.2, 33.6, ULDUM },
 				}),
 				fp(674, {	-- Schnottz's Landing
+					["cr"] = 48273,	-- Evax Oilspark <Flight Master>
 					["coord"] = { 22.2, 64.8, ULDUM },
 				}),
 			}),
