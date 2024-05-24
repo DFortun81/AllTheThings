@@ -251,6 +251,25 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["provider"] = { "n", 213664 },	-- Momentus
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
 				}),
+				q(83775, {	-- Infinite Growth II
+					["lvl"] = { 50 },
+					["sourceQuests"] = { 78894 },	-- Infinite Growth
+					["provider"] = { "n", 213664 },	-- Momentus
+					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
+				}),
+				q(83776, {	-- Infinite Growth III
+					["lvl"] = { 60 },
+					["sourceQuests"] = { 83775 },	-- Infinite Growth II
+					["provider"] = { "n", 213664 },	-- Momentus
+					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
+				}),
+				q(83777, {	-- Infinite Growth IV
+					["lvl"] = { 70 },
+					["sourceQuests"] = { 83776 },	-- Infinite Growth III
+					["provider"] = { "n", 213664 },	-- Momentus
+					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
+				}),
+
 			}),
 			n(ZONE_REWARDS, {
 				n(ARMOR, {
