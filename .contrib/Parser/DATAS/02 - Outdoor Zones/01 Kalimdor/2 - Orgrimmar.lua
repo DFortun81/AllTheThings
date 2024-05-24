@@ -1683,6 +1683,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.4, 38.2, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Peered into the Waters of Farseeing
+							["provider"] = { "o", 207416 },	-- Waters of Farseeing
+							["coord"] = { 50.9, 37.8, ORGRIMMAR },
+						}),
+					},
 				}),
 				q(31013, {	-- The Horde Way
 					["qg"] = 39605,	-- Garrosh Hellscream

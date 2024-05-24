@@ -521,7 +521,7 @@ GLYPH_OF_DEATH_GRIP = r(57213, {	-- Glyph of Death Grip
 });
 GLYPH_OF_DEATH_STRIKE = r(59340, {	-- Glyph of Death Strike
 	["name"] = "Glyph of Death Strike",
-	["timeline"] = { ADDED_3_0_2, DELETED_4_0_1 },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_DEATHS_EMBRACE = r(57215, {	-- Glyph of Death's Embrace
 	["name"] = "Glyph of Death's Embrace",

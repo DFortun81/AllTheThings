@@ -847,10 +847,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						q(25949, {	-- Blood and Thunder!
-							["providers"] = {
-								{ "n", 41750 },	-- Legionnaire Nazgrim
-								{ "n", 41769 },	-- Legionnaire Nazgrim
-								{ "n", 41793 },	-- Legionnaire Nazgrim
+							["qgs"] = {
+								41750,	-- Legionnaire Nazgrim
+								41769,	-- Legionnaire Nazgrim
+								41793,	-- Legionnaire Nazgrim
 							},
 							["sourceQuest"] = 25948,	-- Bring It On!
 							["coord"] = { 39.0, 32.0, VASHJIR_KELPTHAR_FOREST },

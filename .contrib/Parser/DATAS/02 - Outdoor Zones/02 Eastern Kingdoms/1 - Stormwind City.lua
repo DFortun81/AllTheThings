@@ -3054,6 +3054,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["groups"] = {
+						objective(1, {	-- Peered into the Waters of Farseeing
+							["provider"] = { "o", 207416 },	-- Waters of Farseeing
+							["coord"] = { 74.3, 19.5, STORMWIND_CITY },
+						}),
+					},
 				}),
 				q(40517, {	-- The Fallen Lion
 					["qg"] = 100395,	-- Genn Greymane
