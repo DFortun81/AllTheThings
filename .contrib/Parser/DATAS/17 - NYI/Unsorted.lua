@@ -5969,16 +5969,6 @@ root(ROOTS.Unsorted, {
 						i(215047),	-- Cliffbreaker Shoulderguards
 						i(215048),	-- Cliffbreaker Waistguard
 						i(215044),	-- Cliffbreaker Warhelm
-
-						------ Gatecrasher Battleplate (Red) ------
-						i(215071),	-- Cragchewer Armguards
-						i(215068),	-- Cragchewer Chestguard
-						i(215072),	-- Cragchewer Greatboots
-						i(215070),	-- Cragchewer Greaves
-						i(215067),	-- Cragchewer Handguards
-						i(215066),	-- Cragchewer Shoulderguards
-						i(215065),	-- Cragchewer Waistguard
-						i(215069),	-- Cragchewer Warhelm
 						cl(WARRIOR, {
 							------ Source: MSV/HOF/TOES ------
 							-- Probably NYI set?

@@ -78,6 +78,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214706),	-- Nightwatcher's Pauldrons
 					i(214710),	-- Nightwatcher's Sabatons
 				}),
+				filter(PLATE, {
+					i(215071),	-- Cragchewer Armguards
+					i(215068),	-- Cragchewer Chestguard
+					i(215072),	-- Cragchewer Greatboots
+					i(215070),	-- Cragchewer Greaves
+					i(215067),	-- Cragchewer Handguards
+					i(215066),	-- Cragchewer Shoulderguards
+					i(215065),	-- Cragchewer Waistguard
+					i(215069),	-- Cragchewer Warhelm
+				}),
 				n(WEAPONS, {
 					i(215947),	-- Inkgill Sword
 					i(215740),	-- Jinyu Bonebreaker
