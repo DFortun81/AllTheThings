@@ -503,10 +503,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					n(WEAPONS, {
+						i(215777),	-- Gar'tok, Might of the Faithful
 						i(215478),	-- Korven's Crescent
+						i(215664),	-- Lucky Cricket Cage
+						i(215721),	-- Mace of the Old Ones
 						i(215570),	-- Norushen's Dagger
 						i(215832),	-- Pride's Gaze
+						i(215828),	-- Rod of the Megantholithic Apparatus
 						i(215712),	-- Sphere of Immerseus
+						i(215823),	-- Spire of Supremacy
+						i(215818),	-- Staff of Corrupted Waters
 						i(216547),	-- Visage of Dread
 					}),
 					e(852, {	-- Immerseus

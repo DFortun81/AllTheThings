@@ -113,14 +113,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215613),	-- Mogu Lord's Blade
 			i(215879),	-- Mountainsage Spire
 			i(215705),	-- Penate's Pistol
-			i(215751),	-- Porter's Mace (also drops on normal scenario?)
+			i(215751),	-- Porter's Mace
 			i(215807),	-- Ritter's Spear
 			i(215783),	-- Shado-Pan Maul
 			i(215878),	-- Springrain Spire
 			i(215875),	-- Staff of Stolen Hope
 			i(215784),	-- Taran Zhu's Bonebreaker
 			i(215645),	-- Tian Handblade
-			i(215514),	-- Wallwatcher's Longaxe (was from dungeon daily quest)
+			i(215514),	-- Wallwatcher's Longaxe
 			i(215612),	-- Yaungol Shanker
 			i(215955),	-- Zakai's Swarmslicer
 		}),

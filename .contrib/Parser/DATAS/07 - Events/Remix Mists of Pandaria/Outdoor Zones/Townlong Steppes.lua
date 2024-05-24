@@ -96,7 +96,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214795),	-- Bladesworn Warboots
 				}),
 				n(WEAPONS, {
-					i(215980),	-- Binan Falchion // double up from Jade Forest
+					i(215871),	-- Amberweaver's Conduit
+					i(215980),	-- Binan Falchion
 					i(215763),	-- Hozen Basher
 					i(215894),	-- Jinyu Conduit
 					i(215987),	-- Jinyu Greatblade

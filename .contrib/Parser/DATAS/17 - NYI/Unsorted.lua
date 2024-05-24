@@ -6080,7 +6080,6 @@ root(ROOTS.Unsorted, {
 					i(215556),	-- Crossbow of Forgotten Glory
 					i(215557),	-- Crossbow of Forgotten Glory
 					i(215558),	-- Cloudbender's Crossbow
-					i(215559),	-- Mountainscaler Speargun
 					i(215560),	-- Faded Forest Launcher
 					i(215561),	-- Durumu's Gaze
 					i(215562),	-- Durumu's Gaze
@@ -6126,7 +6125,6 @@ root(ROOTS.Unsorted, {
 					i(215620),	-- Imperial Dagger
 					i(215621),	-- Imperial Warknife
 					i(215622),	-- Imperial Longknife
-					i(215623),	-- Imperial Shortblade
 					i(215624),	-- Megaera's Fang
 					i(215626),	-- Megaera's Fang
 					i(215628),	-- Softfoot's Iron Claw
@@ -6150,7 +6148,6 @@ root(ROOTS.Unsorted, {
 					i(215661),	-- Prophecies of Y'Shaarj
 					i(215662),	-- Prophecies of Y'Shaarj
 					i(215663),	-- Lucky Cricket Cage
-					i(215664),	-- Lucky Cricket Cage
 					i(215665),	-- Lucky Cricket Cage
 					i(215666),	-- Lucky Cricket Cage
 					i(215667),	-- Sha-Touched Globule
@@ -6194,8 +6191,6 @@ root(ROOTS.Unsorted, {
 					i(215718),	-- Kardris' Scepter
 					i(215719),	-- Mace of the Old Ones
 					i(215720),	-- Mace of the Old Ones
-					i(215721),	-- Mace of the Old Ones
-					i(215722),	-- Mace of the Old Ones
 					i(215723),	-- Siegecrafter's Forge Drill
 					i(215724),	-- Siegecrafter's Forge Drill
 					i(215725),	-- Siegecrafter's Forge Drill
@@ -6205,7 +6200,6 @@ root(ROOTS.Unsorted, {
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215734),	-- Kri'tak, Scepter of the Swarm
 					i(215743),	-- Sunsoul Smasher
-					i(215745),	-- Wasteland Basher
 					i(215748),	-- Fireblaze Mace
 					i(215753),	-- Gao's Kegbreaker
 					i(215754),	-- Jol'Grum's Mace
@@ -6221,7 +6215,6 @@ root(ROOTS.Unsorted, {
 					i(215771),	-- Jerthud, Hand of the Savior
 					i(215773),	-- Zeeg's Ancient Kegbreaker
 					i(215775),	-- Zeeg's Ancient Kegbreaker
-					i(215777),	-- Gar'tok, Might of the Faithful
 					i(215778),	-- Gar'tok, Might of the Faithful
 					i(215779),	-- Gar'tok, Might of the Faithful
 					i(215782),	-- Wasteland Maul
@@ -6244,15 +6237,11 @@ root(ROOTS.Unsorted, {
 					i(215812),	-- Shan-Dun, Breaker of Courage
 					i(215813),	-- Shan-Dun, Breaker of Courage
 					i(215814),	-- Shan-Dun, Breaker of Courage
-					i(215818),	-- Staff of Corrupted Waters
 					i(215819),	-- Staff of Corrupted Waters
 					i(215821),	-- Staff of Corrupted Waters
-					i(215823),	-- Spire of Supremacy
 					i(215825),	-- Spire of Supremacy
 					i(215826),	-- Spire of Supremacy
 					i(215827),	-- Rod of the Megantholithic Apparatus
-					i(215828),	-- Rod of the Megantholithic Apparatus
-					i(215829),	-- Rod of the Megantholithic Apparatus
 					i(215831),	-- Pride's Gaze
 					i(215833),	-- Pride's Gaze
 					i(215834),	-- Pride's Gaze
@@ -6281,7 +6270,6 @@ root(ROOTS.Unsorted, {
 					i(215887),	-- Soulwood Spire
 					i(215888),	-- Soulwood Spire
 					i(215890),	-- Hopespreader's Staff
-					i(215893),	-- Pilgrim's Staff
 					i(215895),	-- Jinyu Rod
 					i(215896),	-- Jinyu Spire
 					i(215898),	-- Jalak's Spirit Staff
@@ -6292,7 +6280,6 @@ root(ROOTS.Unsorted, {
 					i(215904),	-- Klaxxi Shortsword
 					i(215905),	-- Do-tharak, the Foebreaker
 					i(215907),	-- Do-tharak, the Foebreaker
-					i(215908),	-- Do-tharak, the Foebreaker
 					i(215909),	-- Xifeng, Longblade of the Guardian
 					i(215910),	-- Xifeng, Longblade of the Guardian
 					i(215911),	-- Xifeng, Longblade of the Guardian
@@ -6466,7 +6453,6 @@ root(ROOTS.Unsorted, {
 					i(216573),	-- Spiritsage's Barrier
 					i(216574),	-- Flamecaller's Bulwark
 					i(216575),	-- Darkhide Shield
-					i(216576),	-- Wasteland Deflector
 					i(216577),	-- Sutiru's Shield
 					i(216578),	-- Impervious Bulwark
 					i(216579),	-- Shield of the Devourer
@@ -6728,13 +6714,11 @@ root(ROOTS.Unsorted, {
 				i(210901),	-- Timerunner's Leggings
 				i(210902),	-- Timerunner's Legguards
 				i(210900),	-- Timerunner's Legplates
-
 				i(210907),	-- Timerunner's Monnion
 				i(210905),	-- Timerunner's Pauldrons
 				i(210889),	-- Timerunner's Robe
 				i(210894),	-- Timerunner's Sabatons
 				i(210909),	-- Timerunner's Sash
-
 				i(210893),	-- Timerunner's Slippers
 				i(210904),	-- Timerunner's Spaulders
 				i(211388),	-- Timerunner's Starter Kit

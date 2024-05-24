@@ -296,7 +296,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				n(WEAPONS, {
-					i(215871),	-- Amberweaver's Conduit (also dropped from a box from the celestials in Townlong Steppes)
+					i(215871),	-- Amberweaver's Conduit
 					i(210342),	-- Bataari Hacker
 					i(215980),	-- Binan Falchion
 					i(215641),	-- Claws of the Wakener

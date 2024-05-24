@@ -122,7 +122,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				n(WEAPONS, {
-					i(215793),	-- Bo-Ris, Spear of Night (HoF LFR / timeless isle)
+					i(215793),	-- Bo-Ris, Spear of Night (HoF LFR)
 					i(210641),	-- Bo-Ris, Spear of Night
 					i(215842),	-- Brazier of the Eternal Empire (HoF LFR)
 					i(215481),	-- Elegion, the Star Cleaver (ToES LFR)

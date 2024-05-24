@@ -268,7 +268,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214811),	-- Wallwatcher Sabatons
 				}),
 				n(WEAPONS, {
-					i(215746),	-- Bearheart's Basher // double up from Timeless Isle
+					i(215873),	-- Amberweaver's Staff
+					i(215746),	-- Bearheart's Basher
 					i(215741),	-- Bloodseeker's Bonebreaker
 					i(216595),	-- Bulwark of Twinned Despair
 					i(216601),	-- Eyes of the Doomed
@@ -277,7 +278,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215982),	-- Marista Greatsword
 					i(215549),	-- Miracoran, the Dissonant Chord
 					i(216540),	-- Mogu Lord's Shield
-					i(215761),	-- Saurok Smasher (also drops on timeless isle)
+					i(215761),	-- Saurok Smasher
 					i(215805),	-- Serpentguard Spear
 				})
 			}),

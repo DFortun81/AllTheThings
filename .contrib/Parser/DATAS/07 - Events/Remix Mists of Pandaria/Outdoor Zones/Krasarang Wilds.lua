@@ -278,6 +278,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215858),	-- Diviner's Staff
 					i(215742),	-- Faded Forest Crusher
 					i(215643),	-- Klaxxi Pincers
+					i(215532),	-- Mogu Warbow
 					i(215749),	-- Ordo Basher
 					i(216023),	-- Pandaren Hacker
 					i(216422),	-- Pandaren Smasher

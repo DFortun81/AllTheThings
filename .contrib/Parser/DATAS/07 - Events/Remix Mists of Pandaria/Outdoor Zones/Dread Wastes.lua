@@ -81,7 +81,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214803),	-- Shan'ze Waistguard
 					i(214805),	-- Shan'ze Warhelm
 				}),
-				n(WEAPONs, {
+				n(WEAPONS, {
 					i(215509),	-- Bloodseeker's Greataxe
 					i(215600),	-- Grummle Shortblade
 					i(215762),	-- Hozen Smasher

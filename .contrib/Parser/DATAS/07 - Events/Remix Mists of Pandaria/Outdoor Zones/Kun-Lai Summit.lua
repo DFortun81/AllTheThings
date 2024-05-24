@@ -128,13 +128,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					i(215644),	-- Amber Claw
-					i(215873),	-- Amberweaver's Staff (also dropped on isle of thunder & timeless isle)
+					i(215873),	-- Amberweaver's Staff
 					i(215681),	-- Crane's Beak Effigy
 					i(215862),	-- Engraved Spire
-					i(211151),	-- Fran's Repeater (Sha of Anger)
+					i(211151),	-- Fran's Repeater
 					i(215488),	-- Mountainscaler Hatchet
 					i(215597),	-- Mushan Slicer
-					i(215805),	-- Serpentguard Spear (Sha of Anger / Timeless Isle / Isle of Thunder)
+					i(215805),	-- Serpentguard Spear
 					i(210335),	-- Shado-Pan Dagger
 					i(215869),	-- Waterweaver's Staff
 				}),
