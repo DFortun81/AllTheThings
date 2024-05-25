@@ -2564,6 +2564,10 @@ GLYPH_OF_THE_TIDESKIPPER = r(276088, {	-- Glyph of the Tideskipper
 	["name"] = "Glyph of the Tideskipper",
 	["timeline"] = { ADDED_8_0_1 },
 });
+GLYPH_OF_THE_TREANT = r(95215, {	-- Glyph of the Treant
+	["name"] = "Glyph of the Treant",
+	["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
+});
 GLYPH_OF_THE_TRIDENT = r(225543, {	-- Glyph of the Trident
 	["name"] = "Glyph of the Trident",
 	["timeline"] = { ADDED_7_0_3 },
@@ -3001,6 +3005,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_THE_SUN,
 		GLYPH_OF_THE_SWIFT_CHAMELEON,
 		GLYPH_OF_THE_TIDESKIPPER,
+		GLYPH_OF_THE_TREANT,
 		GLYPH_OF_THE_WILD_AND_CHARM_WOODLAND_CREATURE,
 		GLYPH_OF_THORNS,
 		GLYPH_OF_TIGERS_FURY_AND_CAT_FORM,
@@ -3647,6 +3652,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_SUBJUGATE_DEMON_AND_ENSLAVE_DEMON,
 				GLYPH_OF_THE_PACK_AND_ASPECT_OF_THE_PACK,
 				GLYPH_OF_THE_PENGUIN,
+				GLYPH_OF_THE_TREANT,
 				GLYPH_OF_THE_WILD_AND_CHARM_WOODLAND_CREATURE,
 				GLYPH_OF_THE_WISE_AND_FIRE_FROM_THE_HEAVENS,
 				GLYPH_OF_THORNS,
@@ -3925,6 +3931,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_IMMOLATION_TRAP_AND_EXPLOSIVE_TRAP,
 				GLYPH_OF_SAFE_FALL,
 				GLYPH_OF_SENSE_UNDEAD_AND_TRUTH_AND_SEAL_OF_BLOOD,
+				GLYPH_OF_THE_TREANT,	-- Deleted 7.0.3
 			}),
 		}),
 		spell(165467, {	-- Research: Ink of Dreams
