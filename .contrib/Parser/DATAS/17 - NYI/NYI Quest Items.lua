@@ -425,5 +425,10 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(212155),	-- Hearthstone Invitation Letter
 			i(212156),	-- Hearthstone Invitation Letter
 		})),
+
+		-- 10.2.7
+		expansion(EXPANSION.DF, 2.7, bubbleDown({ ["timeline"] = { CREATED_10_2_7 } }, {
+			i(213173),	-- Thread of Power
+		})),
 	}),
 }));

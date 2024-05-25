@@ -345,6 +345,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215776),	-- Zeeg's Ancient Kegbreaker
 				}),
 			}),
+			n(VENDORS, {
+				n(73306, {	-- Mistweaver Ku <Lost Treasures of Shaohao>
+					["coord"] = { 42.6, 54.6, TIMELESS_ISLE },
+					["g"] = {
+						i(219222, {	-- Time-Lost Artifact
+							["cost"] = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
+						}),
+					},
+				}),
+			}),
 		},
 	}),
 }))));

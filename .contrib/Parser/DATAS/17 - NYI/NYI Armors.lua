@@ -2582,6 +2582,13 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					}),
 				}),
 			})),
+
+			-- 10.2.7
+			expansion(EXPANSION.DF, 2.7, bubbleDown({ ["timeline"] = { CREATED_10_2_7 } }, {
+				i(215074),	-- REUSE
+				i(215085),	-- REUSE
+				i(215092),	-- REUSE
+			})),
 		}),
 		filter(LEATHER, {
 			-- 10.0.0

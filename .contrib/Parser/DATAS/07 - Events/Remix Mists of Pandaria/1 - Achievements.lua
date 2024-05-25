@@ -29,4 +29,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(208555),	-- Timerunner's Idol
 		}),
 	}),
+	n(64227, {	-- Frozen Trail Packer
+		["coords"] = {
+			{ 37.4, 77.9, KUN_LAI_SUMMIT },	-- Cave entrance
+			{ 35.2, 76.4, KUN_LAI_SUMMIT },
+		},
+		["g"] = {
+			i(224003, {	-- Cup of Nearly Infinite Kafa
+				--["questID"] = 31304,
+			}),
+		},
+	}),
 }))));

@@ -140,6 +140,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215955),	-- Zakai's Swarmslicer
 			}),
 		}),
+		n(REWARDS, {
+			i(220764),	-- Bonus Experience
+		}),
 		inst(303, {	-- Gate of the Setting Sun
 			["coord"] = { 15.8, 74.8, VALE_OF_ETERNAL_BLOSSOMS },
 			["maps"] = {

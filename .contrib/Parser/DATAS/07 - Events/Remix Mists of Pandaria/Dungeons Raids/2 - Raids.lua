@@ -28,5 +28,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				},
 			}),
 		}),
+		n(REWARDS, {
+			i(220763),	-- Bonus Experience
+		}),
 	}),
 }))));

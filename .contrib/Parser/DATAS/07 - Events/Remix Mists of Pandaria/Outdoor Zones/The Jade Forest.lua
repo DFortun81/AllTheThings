@@ -237,6 +237,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				q(78893, {	-- A Scrap of Bronze
 					["sourceQuests"] = { 79440 },	-- Recalling the War
 					["provider"] = { "i", 210526 },	-- Unraveling Tunic (QI!)
+					["g"] = {
+						i(217174),	-- Bronze (QI!)
+					},
 				}),
 				q(81976, {	-- Bazaar, Isn't It?
 					--["sourceQuests"] = { xx },	-- TODO: some of level up/turn in HQTs?

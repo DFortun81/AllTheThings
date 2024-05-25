@@ -5868,32 +5868,18 @@ root(ROOTS.Unsorted, {
 						i(220989),	-- Fire-Charm Jacket
 					}),
 				}),
-				filter(COSMETIC, {
-					i(215074),	-- REUSE
-					i(215085),	-- REUSE
-					i(215092),	-- REUSE
-				}),
 				filter(MISC, {
 					i(211932),	-- Cache of Infinite Treasure
 					i(216638),	-- Timerunner's Intro Kit
 					i(219218),	-- Timerunner's Starter Kit
 					i(219219),	-- Timerunner's Starter Kit
 					i(219220),	-- Catch Up Thread
-					i(219222),	-- Time-Lost Artifact
 					i(223953),	-- Timerunner's Parting Pack
-					i(224003),	-- Cup of Nearly Infinite Kafa
 					i(224009),	-- Survivalist's Biscuit
 					i(224010),	-- Survivalist's Purified Water
 					i(224021),	-- Survivalist's Healing Potion
 					i(224022),	-- Survivalist's Mana Potion
-
 					i(224120),	-- Timerunner's Gem Box
-					i(220763),	-- Bonus Experience
-					i(220764),	-- Bonus Experience
-				}),
-				filter(QUEST_ITEMS, {
-					i(217174),	-- Bronze
-					i(213173),	-- Thread of Power
 				}),
 				inst(362, {	-- Throne of Thunder
 					------ UNKNOWN SOURCES! ------
