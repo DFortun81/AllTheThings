@@ -2402,7 +2402,7 @@ GLYPH_OF_THE_HEADHUNTER = r(225540, {	-- Glyph of the Headhunter
 });
 GLYPH_OF_THE_HEAVENS = r(124466, {	-- Glyph of the Heavens
 	["name"] = "Glyph of the Heavens",
-	["timeline"] = { ADDED_4_0_3 },
+	["timeline"] = { ADDED_5_0_4 },
 });
 GLYPH_OF_THE_HOOK = r(225541, {	-- Glyph of the Hook
 	["name"] = "Glyph of the Hook",
