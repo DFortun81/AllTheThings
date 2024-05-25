@@ -509,6 +509,10 @@ GLYPH_OF_DARK_DEPTHS = r(304030, {	-- Glyph of the Dark Depths
 	["name"] = "Glyph of the Dark Depths",
 	["timeline"] = { ADDED_8_2_0 },
 });
+GLYPH_OF_DARK_SUCCOR = r(96284, {	-- Glyph of Dark Succor
+	["name"] = "Glyph of Dark Succor",
+	["timeline"] = { ADDED_4_0_3, DELETED_6_0_2 },
+});
 GLYPH_OF_DASH = r(59315, {	-- Glyph of Dash
 	["name"] = "Glyph of Dash",
 	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
@@ -529,7 +533,7 @@ GLYPH_OF_DEATH_COIL_AND_NIGHTMARES = r(57261, {	-- Glyph of Death Coil / Glyph o
 	-- #if AFTER 5.0.4
 	["name"] = "Glyph of Nightmares",
 	-- #else
-	["name"] = "Glyph of Death Coil",
+	["name"] = "Glyph of Death Coil (Warlock)",
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
@@ -540,6 +544,14 @@ GLYPH_OF_DEATH_GRIP = r(57213, {	-- Glyph of Death Grip
 GLYPH_OF_DEATH_STRIKE = r(59340, {	-- Glyph of Death Strike
 	["name"] = "Glyph of Death Strike",
 	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
+});
+GLYPH_OF_DEATH_WISH_AND_RECKLESSNESS = r(94405, {	-- Glyph of Death Wish / Glyph of Recklessness [MOP+]
+	-- #if AFTER MOP
+	["name"] = "Glyph of Recklessness",
+	-- #else
+	["name"] = "Glyph of Death Wish",
+	-- #endif
+	["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
 });
 GLYPH_OF_DEATHS_EMBRACE = r(57215, {	-- Glyph of Death's Embrace
 	["name"] = "Glyph of Death's Embrace",
@@ -822,6 +834,14 @@ GLYPH_OF_FELHUNTER_AND_DEMON_TRAINING = r(57264, {	-- Glyph of Felhunter / Glyph
 	["name"] = "Glyph of Felhunter",
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
+});
+GLYPH_OF_FERAL_CHARGE_AND_THE_PREDATOR = r(94404, {	-- Glyph of Feral Charge / Glyph of the Predator [MOP+]
+	-- #if AFTER MOP
+	["name"] = "Glyph of the Predator",
+	-- #else
+	["name"] = "Glyph of Feral Charge",
+	-- #endif
+	["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
 });
 GLYPH_OF_FERAL_SPIRIT = r(64288, {	-- Glyph of Feral Spirit
 	["name"] = "Glyph of Feral Spirit",
@@ -1301,6 +1321,14 @@ GLYPH_OF_INSPIRED_HYMNS = r(148278, {	-- Glyph of Inspired Hymns
 	["name"] = "Glyph of Inspired Hymns",
 	["timeline"] = { ADDED_5_4_0 },
 });
+GLYPH_OF_INTERCEPT_AND_BULL_RUSH = r(94406, {	-- Glyph of Intercept / Glyph of Bull Rush [MOP+]
+	-- #if AFTER MOP
+	["name"] = "Glyph of Bull Rush",
+	-- #else
+	["name"] = "Glyph of Intercept",
+	-- #endif
+	["timeline"] = { ADDED_4_0_3, DELETED_6_0_2 },
+});
 GLYPH_OF_INTERVENE_AND_BLITZ = r(57159, {	-- Glyph of Intervene / Glyph of Blitz [5.0.4+]
 	-- #if AFTER 5.0.4
 	["name"] = "Glyph of Blitz",
@@ -1344,6 +1372,14 @@ GLYPH_OF_KILROGG = r(58340, {	-- Glyph of Kilrogg / Glyph of Eye of Kilrogg [CAT
 	["name"] = "Glyph of Kilrogg",
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
+});
+GLYPH_OF_LACERATE_AND_FAE_SILENCE = r(94402, {	-- Glyph of Lacerate / Glyph of Fae Silence [MOP+]
+	-- #if AFTER MOP
+	["name"] = "Glyph of Fae Silence",
+	-- #else
+	["name"] = "Glyph of Lacerate",
+	-- #endif
+	["timeline"] = { ADDED_4_0_3, DELETED_6_0_2 },
 });
 GLYPH_OF_LAST_STAND = r(57166, {	-- Glyph of Last Stand
 	["name"] = "Glyph of Last Stand",
@@ -2871,6 +2907,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_DANCING_RUNE_WEAPON,
 		GLYPH_OF_DARK_COMMAND,
 		GLYPH_OF_DARK_DEATH_AND_DEATH_COIL,
+		GLYPH_OF_DARK_SUCCOR,
 		GLYPH_OF_DEATH_AND_DECAY,
 		GLYPH_OF_DEATH_GRIP,
 		GLYPH_OF_DEATH_STRIKE,
@@ -2927,6 +2964,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_DASH,
 		GLYPH_OF_ENTANGLING_ROOTS,
 		GLYPH_OF_FAERIE_FIRE,
+		GLYPH_OF_FERAL_CHARGE_AND_THE_PREDATOR,
 		GLYPH_OF_FOCUS_AND_THE_MASTER_SHAPESHIFTER,
 		GLYPH_OF_FRENZIED_REGENERATION,
 		GLYPH_OF_GROWL_AND_SOLAR_BEAM_AND_OMENS,
@@ -2934,6 +2972,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_HURRICANE,
 		GLYPH_OF_INNERVATE,
 		GLYPH_OF_INSECT_SWARM_AND_THE_ORCA,
+		GLYPH_OF_LACERATE_AND_FAE_SILENCE,
 		GLYPH_OF_LIFEBLOOM_AND_EFFLORESCENCE,
 		GLYPH_OF_MANGLE_AND_THE_STAG,
 		GLYPH_OF_MAUL,
@@ -3327,6 +3366,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_CLEAVING_AND_HINDERING_STRIKES,
 		GLYPH_OF_COMMAND_AND_THUNDER_STRIKE,
 		GLYPH_OF_CROW_FEAST_AND_HAWK_FEAST,
+		GLYPH_OF_DEATH_WISH_AND_RECKLESSNESS,
 		GLYPH_OF_DEVASTATE_AND_HEAVY_REPERCUSSIONS,
 		GLYPH_OF_EMBER_SHARDS,
 		GLYPH_OF_ENDURING_VICTORY_AND_MIGHTY_VICTORY,
@@ -3335,6 +3375,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_FALLING_THUNDER,
 		GLYPH_OF_HAMSTRING_AND_PIERCING_HOWL_AND_RUDE_INTERRUPTION,
 		GLYPH_OF_HEROIC_STRIKE_AND_HEROIC_THROW_AND_GAG_ORDER,
+		GLYPH_OF_INTERCEPT_AND_BULL_RUSH,
 		GLYPH_OF_INTERVENE_AND_BLITZ,
 		GLYPH_OF_LAST_STAND,
 		GLYPH_OF_MOCKING_BLOW_AND_GUSHING_WOUND,
