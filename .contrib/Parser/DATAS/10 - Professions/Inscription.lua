@@ -281,9 +281,15 @@ GLYPH_OF_BLOOD_TAP_AND_THE_GEIST = r(57209, {	-- Glyph of Blood Tap / Glyph of t
 	-- #endif
 	["timeline"] = { ADDED_3_0_2 },
 });
-GLYPH_OF_BLOODRAGE = r(58343, {	-- Glyph of Bloodrage
+GLYPH_OF_BLOODRAGE_AND_BERSERKER_RAGE_AND_BLOODCURDLING_SHOUT = r(58343, {	-- Glyph of Bloodrage / Glyph of Berserker Rage [CATA+] / Glyph of Bloodcurdling Shout [MOP+]
+	-- #if AFTER MOP
+	["name"] = "Glyph of Bloodcurdling Shout",
+	-- #elseif AFTER CATA
+	["name"] = "Glyph of Berserker Rage",
+	-- #else
 	["name"] = "Glyph of Bloodrage",
-	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
+	-- #endif
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_BLOODTHIRST_AND_BLOODY_HEALING = r(57153, {	-- Glyph of Bloodthirst / Glyph of Bloody Healing [CATA+]
 	-- #if AFTER CATA
@@ -1094,7 +1100,7 @@ GLYPH_OF_HEMORRHAGE = r(57126, {	-- Glyph of Hemorrhage
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_HEROIC_STRIKE_AND_HEROIC_THROW_AND_GAG_ORDER = r(57158, {	-- Glyph of Heroic Strike / Glyph of Heroic Throw [CATA+] / Glyph of Gag Order [MOP+]
-	-- #if AFTER CATA
+	-- #if AFTER MOP
 	["name"] = "Glyph of Gag Order",
 	-- #elseif AFTER CATA
 	["name"] = "Glyph of Heroic Throw",
@@ -3314,7 +3320,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_BATTLE_AND_MYSTIC_SHOUT,
 		GLYPH_OF_BLADESTORM_AND_WHIRLWIND_AND_WIND_AND_THUNDER,
 		GLYPH_OF_BLOCKING_AND_SHIELD_SLAM,
-		GLYPH_OF_BLOODRAGE,
+		GLYPH_OF_BLOODRAGE_AND_BERSERKER_RAGE_AND_BLOODCURDLING_SHOUT,
 		GLYPH_OF_BLOODTHIRST_AND_BLOODY_HEALING,
 		GLYPH_OF_BURNING_ANGER,
 		GLYPH_OF_CHARGE_AND_LONG_CHARGE,
@@ -3555,7 +3561,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_BLESSING_OF_MIGHT_AND_THE_MOUNTED_KING,
 				GLYPH_OF_BLESSING_OF_WISDOM_AND_INSIGHT_AND_WINGED_VENGEANCE,
 				GLYPH_OF_BLOOD_TAP_AND_THE_GEIST,
-				GLYPH_OF_BLOODRAGE,
+				GLYPH_OF_BLOODRAGE_AND_BERSERKER_RAGE_AND_BLOODCURDLING_SHOUT,
 				GLYPH_OF_BLURRED_SPEED,
 				GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON,
 				GLYPH_OF_CHARGE_AND_LONG_CHARGE,
@@ -3633,7 +3639,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_BLESSING_OF_WISDOM_AND_INSIGHT_AND_WINGED_VENGEANCE,	-- Check this one, notes say moved to Research: Midnight Ink?
 				-- #endif
 				-- GLYPH_OF_BLOOD_TAP_AND_THE_GEIST, (Missing?) Check this one, notes say moved to Research: Lion's Ink?
-				GLYPH_OF_BLOODRAGE,
+				GLYPH_OF_BLOODRAGE_AND_BERSERKER_RAGE_AND_BLOODCURDLING_SHOUT,
 				GLYPH_OF_BLURRED_SPEED,
 				-- #if BEFORE MOP
 				GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON,	-- Check this one, notes say moved to Research: Blackfallow Ink?
