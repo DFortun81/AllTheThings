@@ -2064,7 +2064,7 @@ GLYPH_OF_SHADOWY_FRIENDS = r(126800, {	-- Glyph of Shadowy Friends
 -- #if ANYCLASSIC
 GLYPH_OF_SHATTERING_THROW = applyclassicphase(WRATH_PHASE_THREE, r(414814, {	-- Glyph of Shattering Throw
 	["name"] = "Glyph of Shattering Throw",
-	["timeline"] = { ADDED_3_0_2 },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 }));
 -- #endif
 GLYPH_OF_SHIELD_OF_RIGHTEOUSNESS_AND_ALABASTER_SHIELD = r(64308, {	-- Glyph of Shield of Righteousness / Glyph of Shield of the Righteous [CATA+] / Glyph of the Alabaster Shield [5.0.4+]
