@@ -2550,6 +2550,14 @@ GLYPH_OF_THUNDERSTORM = r(57253, {	-- Glyph of Thunderstorm
 	["name"] = "Glyph of Thunderstorm",
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
+GLYPH_OF_TIGERS_FURY_AND_CAT_FORM = r(94401, {	-- Glyph of Tiger's Fury [CATA] / Glyph of Cat Form [MOP]
+	-- #if AFTER MOP
+	["name"] = "Glyph of Cat Form",
+	-- #else
+	["name"] = "Glyph of Tiger's Fury",
+	-- #endif
+	["timeline"] = { ADDED_4_0_3, DELETED_6_0_2 },
+});
 GLYPH_OF_TOTEM_OF_WRATH_AND_SHAMANISTIC_RAGE = r(64262, {	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage [CATA+]
 	-- #if AFTER CATA
 	["name"] = "Glyph of Shamanistic Rage",
@@ -2900,6 +2908,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_THE_TIDESKIPPER,
 		GLYPH_OF_THE_WILD_AND_CHARM_WOODLAND_CREATURE,
 		GLYPH_OF_THORNS,
+		GLYPH_OF_TIGERS_FURY_AND_CAT_FORM,
 		GLYPH_OF_TWILIGHT_BLOOM,
 		GLYPH_OF_TYPHOON_AND_STARS,
 		GLYPH_OF_UNBURDENED_REBIRTH_AND_BLOOMING,
