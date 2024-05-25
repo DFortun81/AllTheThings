@@ -123,6 +123,8 @@ local DefaultFields = {
     ["upgradeTotal"] = returnZero,
 	["progress"] = returnZero,
     ["total"] = returnZero,
+	-- anything without an icon ends up with weird spacing in lists
+	icon = function(t) return QUESTION_MARK_ICON end,
 	["AccessibilityScore"] = function(t)
 		local score = 0;
 		if GetRelativeValue(t, "nmr") then
