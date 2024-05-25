@@ -299,7 +299,7 @@ GLYPH_OF_BONE_SHIELD_AND_ICEBOUND_FORTITUDE = r(57210, {	-- Glyph of Bone Shield
 });
 GLYPH_OF_BURNING_ANGER = r(112430, {	-- Glyph of Burning Anger
 	["name"] = "Glyph of Burning Anger",
-	["timeline"] = { ADDED_4_0_3 },
+	["timeline"] = { ADDED_5_0_4 },
 });
 GLYPH_OF_BURNOUT = r(225548, {	-- Glyph of Burnout
 	["name"] = "Glyph of Burnout",
