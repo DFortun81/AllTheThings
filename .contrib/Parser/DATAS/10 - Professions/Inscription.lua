@@ -698,7 +698,11 @@ GLYPH_OF_EVOCATION = r(56974, {	-- Glyph of Evocation
 	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_EXECUTION_AND_BLOODTHIRST = r(57156, {	-- Glyph of Execution / Glyph of Bloodthirst [CATA+]
+	-- #if AFTER CATA
+	["name"] = "Glyph of Bloodthirst",
+	-- #else
 	["name"] = "Glyph of Execution",
+	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_EXORCISM_AND_BLINDING_LIGHT = r(57025, {	-- Glyph of Exorcism / Glyph of Blinding Light [MOP+]
@@ -1089,9 +1093,15 @@ GLYPH_OF_HEMORRHAGE = r(57126, {	-- Glyph of Hemorrhage
 	["name"] = "Glyph of Hemorrhage",
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_HEROIC_STRIKE = r(57158, {	-- Glyph of Heroic Strike
+GLYPH_OF_HEROIC_STRIKE_AND_HEROIC_THROW_AND_GAG_ORDER = r(57158, {	-- Glyph of Heroic Strike / Glyph of Heroic Throw [CATA+] / Glyph of Gag Order [MOP+]
+	-- #if AFTER CATA
+	["name"] = "Glyph of Gag Order",
+	-- #elseif AFTER CATA
+	["name"] = "Glyph of Heroic Throw",
+	-- #else
 	["name"] = "Glyph of Heroic Strike",
-	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
+	-- #endif
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_HEX = r(64316, {	-- Glyph of Hex
 	["name"] = "Glyph of Hex",
@@ -3318,7 +3328,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_EXECUTION_AND_BLOODTHIRST,
 		GLYPH_OF_FALLING_THUNDER,
 		GLYPH_OF_HAMSTRING_AND_PIERCING_HOWL_AND_RUDE_INTERRUPTION,
-		GLYPH_OF_HEROIC_STRIKE,
+		GLYPH_OF_HEROIC_STRIKE_AND_HEROIC_THROW_AND_GAG_ORDER,
 		GLYPH_OF_INTERVENE_AND_BLITZ,
 		GLYPH_OF_LAST_STAND,
 		GLYPH_OF_MOCKING_BLOW_AND_GUSHING_WOUND,
