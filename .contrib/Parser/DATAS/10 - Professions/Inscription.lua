@@ -4187,6 +4187,11 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		r(86008, {	-- Inscription (Cata)
 			["collectible"] = false,	-- the profession itself is not a recipe
 		});
+		cat(105, {	-- Clear Mind
+			r(92027, {	-- Dust of Disappearance
+				["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
+			}),
+		}),
 		cat(785, {	-- Inks
 			r(86004),	-- Blackfallow Ink
 			r(86005),	-- Inferno Ink
