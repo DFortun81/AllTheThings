@@ -405,7 +405,100 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				d(DIFFICULTY.RAID.HEROIC, {
 					n(ARMOR, {
+						filter(CLOTH, {
+							-- MAGE
+							i(213794),	-- Bracers of the Chromatic Hydra
+							i(213795),	-- Cord of the Chromatic Hydra
+							i(213797),	-- Shoulderpads of the Chromatic Hydra
+							i(213798),	-- Leggings of the Chromatic Hydra
+							i(213799),	-- Hood of the Chromatic Hydra
+							i(213800),	-- Gloves of the Chromatic Hydra
+							i(213801),	-- Sandals of the Chromatic Hydra
+							i(213802),	-- Robe of the Chromatic Hydra
+							-- WARLOCK
+							i(213947),	-- Raiment of the Thousandfold Hells
+							i(213948),	-- Treads of the Thousandfold Hells
+							i(213949),	-- Handwraps of the Thousandfold Hells
+							i(213950),	-- Cowl of the Thousandfold Hells
+							i(213951),	-- Pants of the Thousandfold Hells
+							i(213952),	-- Amice of the Thousandfold Hells
+							i(213953),	-- Belt of the Thousandfold Hells
+							i(213954),	-- Cuffs of the Thousandfold Hells
+						}),
+						filter(LEATHER, {
+							-- DRUID
+							i(214166),	-- Leggings of the Haunted Forest
+							i(214167),	-- Shoulderpads of the Haunted Forest
+							i(214168),	-- Belt of the Haunted Forest
+							i(214169),	-- Gloves of the Haunted Forest
+							i(214170),	-- Helm of the Haunted Forest
+							i(214171),	-- Boots of the Haunted Forest
+							i(214172),	-- Tunic of the Haunted Forest
+							i(214173),	-- Bracers of the Haunted Forest
+							-- MONK
+							i(214267),	-- Fire-Charm Legguards
+							i(214268),	-- Fire-Charm Spaulders
+							i(214269),	-- Fire-Charm Waistband
+							i(214270),	-- Fire-Charm Grips
+							i(214271),	-- Fire-Charm Cover
+							i(214272),	-- Fire-Charm Footguards
+							i(214273),	-- Fire-Charm Vest
+							i(214274),	-- Fire-Charm Bindings
+							-- ROGUE
+							i(214347),	-- Nine-Tailed Pants
+							i(214348),	-- Nine-Tailed Mantle
+							i(214349),	-- Nine-Tailed Cinch
+							i(214350),	-- Nine-Tailed Handguards
+							i(214351),	-- Nine-Tailed Cap
+							i(214352),	-- Nine-Tailed Treads
+							i(214353),	-- Nine-Tailed Jerkin
+							i(214354),	-- Nine-Tailed Wraps
+						}),
+						filter(MAIL, {
+							-- HUNTER
+							i(214578),	-- Saurok Stalker's Armbands
+							i(214579),	-- Saurok Stalker's Chestguard
+							i(214580),	-- Saurok Stalker's Sabatons
+							i(214582),	-- Saurok Stalker's Headguard
+							i(214583),	-- Saurok Stalker's Gloves
+							i(214584),	-- Saurok Stalker's Chain
+							i(214585),	-- Saurok Stalker's Pauldrons
+							i(214586),	-- Saurok Stalker's Legguards
+							-- SHAMAN
+							i(214666),	-- Breastplate of the Witch Doctor
+							i(214667),	-- Footguards of the Witch Doctor
+							i(214670),	-- Girdle of the Witch Doctor
+							i(214669),	-- Grips of the Witch Doctor
+							i(214668),	-- Helmet of the Witch Doctor
+							i(214672),	-- Legwraps of the Witch Doctor
+							i(214671),	-- Mantle of the Witch Doctor
+							i(220993),	-- Tunic of the Witch Doctor
+							i(214665),	-- Wristguards of the Witch Doctor
+						}),
+						filter(PLATE, {
+							-- DEATH KNIGHT
+							i(214841),	-- Battleplate of the All-Consuming Maw
+							i(214842),	-- Vambraces of the All-Consuming Maw
+							i(214843),	-- Warboots of the All-Consuming Maw
+							i(214844),	-- Greathelm of the All-Consuming Maw
+							i(214845),	-- Handguards of the All-Consuming Maw
+							i(214846),	-- Greatbelt of the All-Consuming Maw
+							i(214847),	-- Spaulders of the All-Consuming Maw
+							i(214848),	-- Legplates of the All-Consuming Maw
+							-- PALADIN
+							i(214921),	-- Lightning Emperor's Greatboots
+							i(214922),	-- Lightning Emperor's Armguards
+							i(214923),	-- Lightning Emperor's Greaves
+							i(214924),	-- Lightning Emperor's Warhelm
+							i(214925),	-- Lightning Emperor's Chestguard
+							i(214926),	-- Lightning Emperor's Grasp
+							i(214927),	-- Lightning Emperor's Shoulderguards
+							i(214928),	-- Lightning Emperor's Waistguard
+						}),
 					}),
+					n(WEAPONS, {
+						i(216468),	-- Suen-Wo, Spire of the Rising Sun
+					}),	
 					e(827, {	-- Jin'rokh the Breaker
 						["crs"] = { 69465 },	-- Jin'rokh the Breaker
 					}),
