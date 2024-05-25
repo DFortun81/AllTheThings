@@ -3609,6 +3609,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				-- This list was pulled from WoWHead for Wrath Classic. (65 listed, as of 4/15/2023)
 				GLYPH_OF_AQUATIC_FORM,
 				GLYPH_OF_ARCANE_INTELLECT_AND_THE_PORCUPINE,
+				GLYPH_OF_ARMORS,
 				GLYPH_OF_ASTRAL_RECALL,
 				GLYPH_OF_BATTLE_AND_MYSTIC_SHOUT,
 				GLYPH_OF_BLAST_WAVE,
