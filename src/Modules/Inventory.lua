@@ -36,7 +36,7 @@ local Handler
 
 local function RunHandlerWhenLinkAvailable(bag, slot)
 	local iteminfo = C_Container_GetContainerItemInfo(bag,slot)
-	if not IsRetrieving(iteminfo.itemName) then
+	if not IsRetrieving(iteminfo and iteminfo.itemName) then
 		Handler(iteminfo.hyperlink)
 		return
 	end
