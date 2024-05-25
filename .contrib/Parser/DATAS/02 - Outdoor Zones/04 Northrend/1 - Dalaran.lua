@@ -3811,11 +3811,11 @@ root(ROOTS.Zones, {
 					n(28723, {	-- Larana Drome <Inscription Supplies>
 						["coord"] = { 41.8, 36.8, NORTHREND_DALARAN },
 						["groups"] = {
-							i(50166, {	-- Technique: Glyph of Eternal Water
-								["timeline"] = { DELETED_4_0_1 },
+							i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
+								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
-							i(50168, {	-- Technique: Glyph of Quick Decay
-								["timeline"] = { DELETED_4_0_1 },
+							i(50168, {	-- Technique: Glyph of Quick Decay / Technique: Glyph of Lash of Pain [CATA+] / Technique: Glyph of Everlasting Affliction [5.0.4+] / Glyph of Eternal Resolve [5.4.0+]
+								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
 							i(50167, {	-- Technique: Glyph of Rapid Rejuvenation
 								["timeline"] = { DELETED_4_0_1 },

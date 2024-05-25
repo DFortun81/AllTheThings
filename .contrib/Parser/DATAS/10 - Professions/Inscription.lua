@@ -653,9 +653,15 @@ GLYPH_OF_ENTANGLING_ROOTS = r(48121, {	-- Glyph of Entangling Roots
 	["name"] = "Glyph of Entangling Roots",
 	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
-GLYPH_OF_ETERNAL_WATER = r(71101, {	-- Glyph of Eternal Water
+GLYPH_OF_ETERNAL_WATER_AND_MANA_SHIELD_AND_COUNTERSPELL = r(71101, {	-- Glyph of Eternal Water / Glyph of Mana Shield [CATA+] / Glyph of Counterspell [MOP+]
+	-- #if AFTER MOP
+	["name"] = "Glyph of Counterspell",
+	-- #elseif AFTER CATA
+	["name"] = "Glyph of Mana Shield",
+	-- #else
 	["name"] = "Glyph of Eternal Water",
-	["timeline"] = { ADDED_3_3_0, DELETED_4_0_1 },	-- With the new talent system, the Mage's Water Elemental has become a permanent pet by default. As a result, this glyph has been deleted completely.
+	-- #endif
+	["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 });
 GLYPH_OF_EVASION = r(57119, {	-- Glyph of Evasion
 	["name"] = "Glyph of Evasion",
@@ -2984,7 +2990,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_DALARAN_BRILLIANCE,
 		GLYPH_OF_DARK_DEPTHS,
 		GLYPH_OF_DEEP_FREEZE_AND_WATER_ELEMENTAL,
-		GLYPH_OF_ETERNAL_WATER,
+		GLYPH_OF_ETERNAL_WATER_AND_MANA_SHIELD_AND_COUNTERSPELL,
 		GLYPH_OF_EVAPORATION,
 		GLYPH_OF_EVOCATION,
 		GLYPH_OF_FIRE_BLAST,

@@ -3276,13 +3276,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					-- #endif
-					-- #if BEFORE 4.0.1
+					-- #if BEFORE 7.0.3
 					n(30734, {	-- Jezebel Bican <Inscription Supplies>
 						["coord"] = { 54.0, 65.6, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(50166, {	-- Technique: Glyph of Eternal Water
-								["timeline"] = { DELETED_4_0_1 },
+							i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
+								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
 						},
 					}),
@@ -3297,13 +3297,13 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = JEWELCRAFTING_PATTERNS,
 					}),
-					-- #if BEFORE 4.0.1
+					-- #if BEFORE 7.0.3
 					n(30735, {	-- Kul Inkspiller <Inscription Supplies>
 						["coord"] = { 52.4, 36.0, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(50166, {	-- Technique: Glyph of Eternal Water
-								["timeline"] = { DELETED_4_0_1 },
+							i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
+								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
 						},
 					}),
