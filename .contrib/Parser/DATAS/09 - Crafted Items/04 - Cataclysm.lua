@@ -446,6 +446,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(INSCRIPTION, {
+		i(62237, {	-- Adventurer's Journal
+			-- #if CATA
+			["description"] = [[Using this item will provide you with a temporary 1-hour buff. This buff is random, and only applies if you are below level 85.
+
+Learning by Example - Quest experience increased by 10%.
+The Great Hunt - Damage against beasts increased by 15%
+Terrain Expert - Movement speed increased by %15. This does not stack with other movement speed increasing effects.
+Living Forever - Chance to heal yourself when dealing damage to an enemy.
+Deadly Drive - Damage against humanoids increased by 15%.
+Dragonsbane - Damage against Dragonkin increased by 15%.
+Mechanical Aptitude - Damage against Mechanicals increased by 15%.
+Kneecapper - Damage against Giants increased by 15%.
+Fire and Water - Damage against Elementals increased by 15%.
+28 Chapters Later - Damage against Undead increased by 15%]];
+			-- #endif
+			["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+		}),
 		-- #if AFTER WOD
 		spell(165466, {	-- Research: Blackfallow Ink
 			r(64260, {["timeline"]={ADDED_3_1_0}}),	-- Glyph of Mutilate / Glyph of Disguise[MOP+]

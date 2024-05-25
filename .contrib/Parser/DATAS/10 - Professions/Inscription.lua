@@ -4192,6 +4192,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(86005),	-- Inferno Ink
 		}),
 		cat(787, {	-- Scrolls & Research
+			r(89367, {	-- Adventurer's Journal
+				["timeline"] = { DELETED_5_0_4 },
+			}),
 			r(165466, {["timeline"]={ADDED_6_0_2}}),	-- Research: Blackfallow Ink*
 			r(85785),	-- Runescroll of Fortitude II*
 			r(89370),	-- Scroll of Agility IX*
