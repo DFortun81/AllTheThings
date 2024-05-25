@@ -329,9 +329,13 @@ GLYPH_OF_CHAOS_BOLT = r(64294, {	-- Glyph of Chaos Bolt
 	["name"] = "Glyph of Chaos Bolt",
 	["timeline"] = { ADDED_3_1_0, DELETED_5_0_4 },
 });
-GLYPH_OF_CHARGE = r(58344, {	-- Glyph of Charge
+GLYPH_OF_CHARGE_AND_LONG_CHARGE = r(58344, {	-- Glyph of Charge / Glyph of Long Charge [CATA+]
+	-- #if AFTER CATA
+	["name"] = "Glyph of Long Charge",
+	-- #else
 	["name"] = "Glyph of Charge",
-	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
+	-- #endif
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_CHIMERA_SHOT = r(64271, {	-- Glyph of Chimera Shot
 	["name"] = "Glyph of Chimera Shot",
@@ -3276,7 +3280,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_BLOODRAGE,
 		GLYPH_OF_BLOODTHIRST_AND_BLOODY_HEALING,
 		GLYPH_OF_BURNING_ANGER,
-		GLYPH_OF_CHARGE,
+		GLYPH_OF_CHARGE_AND_LONG_CHARGE,
 		GLYPH_OF_CLEAVING_AND_HINDERING_STRIKES,
 		GLYPH_OF_COMMAND_AND_THUNDER_STRIKE,
 		GLYPH_OF_CROW_FEAST_AND_HAWK_FEAST,
@@ -4321,7 +4325,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_BLOODRAGE,
 				GLYPH_OF_BLURRED_SPEED,
 				GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON,
-				GLYPH_OF_CHARGE,
+				GLYPH_OF_CHARGE_AND_LONG_CHARGE,
 				GLYPH_OF_COMMAND_AND_THUNDER_STRIKE,
 				GLYPH_OF_CORPSE_EXPLOSION_AND_PATH_OF_FROST,
 				GLYPH_OF_CURSE_OF_EXHAUSTION,
@@ -4401,7 +4405,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				-- #if BEFORE MOP
 				GLYPH_OF_CHALLENGING_ROAR_AND_THE_URSOL_CHAMELEON,	-- Check this one, notes say moved to Research: Blackfallow Ink?
 				-- #endif
-				GLYPH_OF_CHARGE,
+				GLYPH_OF_CHARGE_AND_LONG_CHARGE,
 				GLYPH_OF_COMMAND_AND_THUNDER_STRIKE,
 				GLYPH_OF_CORPSE_EXPLOSION_AND_PATH_OF_FROST,
 				GLYPH_OF_CURSE_OF_EXHAUSTION,
