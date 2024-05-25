@@ -715,6 +715,10 @@ GLYPH_OF_FADE = r(57184, {	-- Glyph of Fade
 	["name"] = "Glyph of Fade",
 	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
+GLYPH_OF_FAERIE_FIRE = r(94403, {	-- Glyph of Faerie Fire
+	["name"] = "Glyph of Faerie Fire",
+	["timeline"] = { ADDED_4_0_3, DELETED_6_0_2 },
+});
 GLYPH_OF_FADING_AND_SHADOW_RAVENS = r(58317, {	-- Glyph of Fading / Glyph of Shadow Ravens [MOP+]
 	-- #if AFTER MOP
 	["name"] = "Glyph of Shadow Ravens",
@@ -2862,6 +2866,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_CLAW_AND_FEROCIOUS_BITE,
 		GLYPH_OF_DASH,
 		GLYPH_OF_ENTANGLING_ROOTS,
+		GLYPH_OF_FAERIE_FIRE,
 		GLYPH_OF_FOCUS_AND_THE_MASTER_SHAPESHIFTER,
 		GLYPH_OF_FRENZIED_REGENERATION,
 		GLYPH_OF_GROWL_AND_SOLAR_BEAM_AND_OMENS,
