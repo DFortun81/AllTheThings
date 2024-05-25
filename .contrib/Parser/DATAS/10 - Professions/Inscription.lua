@@ -4224,11 +4224,19 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(86616),	-- Book of Blood
 			r(86642),	-- Divine Companion
 			r(86641),	-- Dungeoneering Guide
-			r(86648),	-- Key to the Planes
+			r(86648, {	-- Key to the Planes
+				["timeline"] = { ADDED_5_0_4 },
+			}),
 			r(86640),	-- Lord Rottington's Pressed Wisp Book
-			r(86652),	-- Rosethorn Staff
-			r(86649),	-- Runed Staff
-			r(86653),	-- Silver Inlaid Staff
+			r(86652, {	-- Rosethorn Staff
+				["timeline"] = { ADDED_5_0_4 },
+			}),
+			r(86649, {	-- Runed Staff
+				["timeline"] = { ADDED_5_0_4 },
+			}),
+			r(86653, {	-- Silver Inlaid Staff
+				["timeline"] = { ADDED_5_0_4 },
+			}),
 		}),
 		cat(791, {	-- Quest
 			r(89244, {	-- Forged Documents
@@ -4243,17 +4251,20 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			r(86647, {	-- Etched Horn
 				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
+			r(86648, {	-- Manual to the Planes / Key to the Planes [5.0.4+]
+				["timeline"] = { ADDED_4_0_3 },
+			}),
 			r(86650, {	-- Notched Jawbone
 				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
-			r(86649, {	-- Runed Dragonscale
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			r(86649, {	-- Runed Dragonscale / Runed Staff [5.0.4+]
+				["timeline"] = { ADDED_4_0_3 },
 			}),
-			r(86653, {	-- Silver Inlaid Leaf
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			r(86653, {	-- Silver Inlaid Leaf / Silver Inlaid Staff [5.0.4+]
+				["timeline"] = { ADDED_4_0_3 },
 			}),
-			r(86652, {	-- Tattooed Eyeball
-				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			r(86652, {	-- Tattooed Eyeball / Rosethorn Staff [5.0.4+]
+				["timeline"] = { ADDED_4_0_3 },
 			}),
 			r(99547, {	-- Vicious Charm of Triumph
 				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },

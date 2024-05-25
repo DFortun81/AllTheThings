@@ -593,6 +593,9 @@ Fire and Water - Damage against Elementals increased by 15%.
 			i(62240, {	-- Etched Horn
 				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
+			i(62241, {	-- Manual to the Planes
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
 			i(62243, {	-- Notched Jawbone
 				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 			}),
