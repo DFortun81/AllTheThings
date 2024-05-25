@@ -2668,6 +2668,10 @@ GLYPH_OF_VANISH_AND_POISONS = r(58328, {	-- Glyph of Vanish / Glyph of Poisons [
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
+GLYPH_OF_VANISH = r(94711, {	-- Glyph of Vanish
+	["name"] = "Glyph of Vanish",
+	["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
+});
 GLYPH_OF_VICTORY_RUSH = r(57170, {	-- Glyph of Victory Rush
 	["name"] = "Glyph of Victory Rush",
 	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
@@ -3189,6 +3193,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_SLICE_AND_DICE_AND_SHIV,
 		GLYPH_OF_SPRINT,
 		GLYPH_OF_TRICKS_OF_THE_TRADE,
+		GLYPH_OF_VANISH,
 		GLYPH_OF_VANISH_AND_POISONS,
 		GLYPH_OF_VIGOR_AND_KICK,
 	}),
@@ -4304,6 +4309,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_THUNDER,
 				GLYPH_OF_TRICKS_OF_THE_TRADE,
 				GLYPH_OF_UNHOLY_BLIGHT,
+				GLYPH_OF_VANISH,
 				GLYPH_OF_VIGILANCE_AND_FURIOUS_SUNDERING_AND_VICTORIOUS_THROW,
 				GLYPH_OF_WILD_GROWTH,
 				-- #else
