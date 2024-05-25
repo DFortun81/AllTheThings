@@ -85,7 +85,7 @@ GLYPH_OF_ARCANE_BLAST = r(56991, {	-- Glyph of Arcane Blast
 });
 GLYPH_OF_ARCANE_EXPLOSION = r(56968, {	-- Glyph of Arcane Explosion
 	["name"] = "Glyph of Arcane Explosion",
-	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
+	["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1, ADDED_5_0_4, DELETED_7_0_3 },
 });
 GLYPH_OF_ARCANE_INTELLECT_AND_THE_PORCUPINE = r(58303, {	-- Glyph of Arcane Intellect / Glyph of the Porcupine [MOP+]
 	-- #if AFTER MOP
