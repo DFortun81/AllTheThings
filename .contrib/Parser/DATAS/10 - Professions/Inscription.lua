@@ -2720,6 +2720,14 @@ GLYPH_OF_UNHOLY_BLIGHT = r(64299, {	-- Glyph of Unholy Blight
 	["name"] = "Glyph of Unholy Blight",
 	["timeline"] = { ADDED_3_1_0, DELETED_4_0_1 },
 });
+GLYPH_OF_UNLEASHED_LIGHTNING_AND_LIGHTNING_SHIELD = r(101057, {	-- Glyph of Unleashed Lightning / Glyph of Lightning Shield [5.3.0+]
+	-- #if AFTER 5.3.0
+	["name"] = "Glyph of Lightning Shield",
+	-- #else
+	["name"] = "Glyph of Unleashed Lightning",
+	-- #endif
+	["timeline"] = { ADDED_4_2_0, DELETED_6_0_2 },
+});
 GLYPH_OF_UNSTABLE_AFFLICTION = r(57276, {	-- Glyph of Unstable Affliction
 	["name"] = "Glyph of Unstable Affliction",
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
@@ -3307,6 +3315,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_THUNDER,
 		GLYPH_OF_THUNDERSTORM,
 		GLYPH_OF_TOTEM_OF_WRATH_AND_SHAMANISTIC_RAGE,
+		GLYPH_OF_UNLEASHED_LIGHTNING_AND_LIGHTNING_SHIELD,
 		GLYPH_OF_WATER_BREATHING_AND_HEALING_STORM,
 		GLYPH_OF_WATER_MASTERY_AND_WATER_SHIELD,
 		GLYPH_OF_WATER_SHIELD_AND_THE_ARCTIC_WOLF_AND_THE_SPECTRAL_WOLF,
@@ -3850,6 +3859,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_TAUNT,
 				GLYPH_OF_THE_BEAST_AND_TRAP_LAUNCHER_AND_MARKED_FOR_DEATH_AND_LIBERATION,
 				GLYPH_OF_TRUESHOT_AURA_AND_KILL_COMMAND_AND_MEND_PET,
+				GLYPH_OF_UNLEASHED_LIGHTNING_AND_LIGHTNING_SHIELD,
 				GLYPH_OF_UNSTABLE_AFFLICTION,
 				GLYPH_OF_VICTORY_RUSH,
 				GLYPH_OF_VIGOR_AND_KICK,
