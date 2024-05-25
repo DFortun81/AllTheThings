@@ -697,9 +697,9 @@ GLYPH_OF_EVOCATION = r(56974, {	-- Glyph of Evocation
 	["name"] = "Glyph of Evocation",
 	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
-GLYPH_OF_EXECUTION = r(57156, {	-- Glyph of Execution
+GLYPH_OF_EXECUTION_AND_BLOODTHIRST = r(57156, {	-- Glyph of Execution / Glyph of Bloodthirst [CATA+]
 	["name"] = "Glyph of Execution",
-	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
+	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
 GLYPH_OF_EXORCISM_AND_BLINDING_LIGHT = r(57025, {	-- Glyph of Exorcism / Glyph of Blinding Light [MOP+]
 	-- #if AFTER MOP
@@ -3315,7 +3315,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_EMBER_SHARDS,
 		GLYPH_OF_ENDURING_VICTORY_AND_MIGHTY_VICTORY,
 		GLYPH_OF_ENRAGED_REGENERATION_AND_INTIMIDATING_SHOUT,
-		GLYPH_OF_EXECUTION,
+		GLYPH_OF_EXECUTION_AND_BLOODTHIRST,
 		GLYPH_OF_FALLING_THUNDER,
 		GLYPH_OF_HAMSTRING_AND_PIERCING_HOWL_AND_RUDE_INTERRUPTION,
 		GLYPH_OF_HEROIC_STRIKE,
