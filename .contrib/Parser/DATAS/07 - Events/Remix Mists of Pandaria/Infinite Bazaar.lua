@@ -1183,6 +1183,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214968),	-- Warboots of Resounding Rings
 						},
 					}),
+					i(215341, {	-- Ensemble: Battleplate of Resounding Rings (New Appearances)
+						["cost"] = {{"c", BRONZE, 5000}},
+						["g"] = {
+							i(214985),	-- Warboots of Resounding Rings
+							i(214986),	-- Vambraces of Resounding Rings
+							i(214987),	-- Legplates of Resounding Rings
+							i(214988),	-- Greathelm of Resounding Rings
+							i(214989),	-- Battleplate of Resounding Rings
+							i(214990),	-- Gauntlets of Resounding Rings
+							i(214991),	-- Spaulders of Resounding Rings
+							i(214992),	-- Greatbelt of Resounding Rings
+						},
+					}),
 					i(215344, {	-- Ensemble: Battleplate of the Last Mogu (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {

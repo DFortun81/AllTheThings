@@ -213,7 +213,33 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(ZONE_REWARDS, {
+				filter(CLOTH, {
+					i(214000),	-- Amaranthine Amice
+					i(214001),	-- Amaranthine Belt
+					i(213998),	-- Amaranthine Cowl
+					i(214002),	-- Amaranthine Cuffs
+					i(213997),	-- Amaranthine Handwraps
+					i(213999),	-- Amaranthine Pants
+					i(213995),	-- Amaranthine Raiment
+					i(213996),	-- Amaranthine Treads
+					i(214007),	-- Crown of the Dynast
+					i(214008),	-- Gloves of the Dynast
+					i(214006),	-- Leggings of the Dynast
+					i(214005),	-- Mantle of the Dynast
+					i(214004),	-- Sash of the Dynast
+					i(214009),	-- Slippers of the Dynast
+					i(220980),	-- Vest of the Dynast
+					i(214003),	-- Wristwraps of the Dynast
+				}),
 				filter(LEATHER, {
+					i(214387),	-- Snowdrift Bindings
+					i(214390),	-- Snowdrift Cover
+					i(214389),	-- Snowdrift Footguards
+					i(214391),	-- Snowdrift Grips
+					i(214394),	-- Snowdrift Legguards
+					i(214393),	-- Snowdrift Spaulders
+					i(214388),	-- Snowdrift Vest
+					i(214392),	-- Snowdrift Waistband
 					i(214120),	-- Swampthresher Cap
 					i(214118),	-- Swampthresher Cinch
 					i(214119),	-- Swampthresher Handguards
@@ -222,6 +248,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214116),	-- Swampthresher Pants
 					i(214121),	-- Swampthresher Treads
 					i(214123),	-- Swampthresher Wraps
+					i(214399),	-- Wildblood Cap
+					i(214397),	-- Wildblood Cinch
+					i(214398),	-- Wildblood Handguards
+					i(214401),	-- Wildblood Jerkin
+					i(214396),	-- Wildblood Mantle
+					i(214395),	-- Wildblood Pants
+					i(214400),	-- Wildblood Treads
+					i(214402),	-- Wildblood Wraps
 				}),
 				filter(MAIL, {
 					i(214714),	-- Stonefang Breastplate

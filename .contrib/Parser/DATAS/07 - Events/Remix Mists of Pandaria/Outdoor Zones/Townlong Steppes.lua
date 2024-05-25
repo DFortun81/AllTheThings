@@ -65,6 +65,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(ZONE_REWARDS, {
+				filter(CLOTH, {
+					i(213687),	-- Mistwalker's Amice
+					i(213686),	-- Mistwalker's Belt
+					i(213689),	-- Mistwalker's Cowl
+					i(213685),	-- Mistwalker's Cuffs
+					i(213690),	-- Mistwalker's Handwraps
+					i(213688),	-- Mistwalker's Pants
+					i(213692),	-- Mistwalker's Raiment
+					i(213691),	-- Mistwalker's Treads
+				}),
 				filter(LEATHER, {
 					i(214086),	-- Springrain Belt
 					i(214089),	-- Springrain Boots

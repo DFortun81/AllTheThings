@@ -66,6 +66,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
+				filter(CLOTH, {
+					i(213647),	-- Windwhisper Amice
+					i(213646),	-- Windwhisper Belt
+					i(213649),	-- Windwhisper Cowl
+					i(213645),	-- Windwhisper Cuffs
+					i(213650),	-- Windwhisper Handwraps
+					i(213648),	-- Windwhisper Pants
+					i(213652),	-- Windwhisper Raiment
+					i(213651),	-- Windwhisper Treads
+				}),
 				filter(LEATHER, {
 					i(214035),	-- Mogubreaker Bindings
 					i(214039),	-- Mogubreaker Cover

@@ -5838,113 +5838,22 @@ root(ROOTS.Unsorted, {
 			n(SPECIAL, {	-- Timerunning
 				n(ARMOR, {
 					filter(CLOTH, {
-						------ These Are Weird ------
+						------ NYI? ------
 						i(220967),	-- Spirit-Waker Shirt
 						i(220968),	-- Scrollkeeper Shirt
 						i(220969),	-- Passionsilk Vests
 						i(220970),	-- Mindbender Shirt
 						i(220971),	-- Mistwalker's Shirt
 						i(220972),	-- Shaded Wood Vest
-
-						------ Breezebinder's Vestment (Purple) ------
-						i(213647),	-- Windwhisper Amice
-						i(213646),	-- Windwhisper Belt
-						i(213649),	-- Windwhisper Cowl
-						i(213645),	-- Windwhisper Cuffs
-						i(213650),	-- Windwhisper Handwraps
-						i(213648),	-- Windwhisper Pants
-						i(213652),	-- Windwhisper Raiment
-						i(213651),	-- Windwhisper Treads
-
-						------ Spirit-Waker's Vestment (Green) ------
-						i(213671),	-- Mindbender Amice
-						i(213670),	-- Mindbender Belt
-						i(213673),	-- Mindbender Cowl
-						i(213669),	-- Mindbender Cuffs
-						i(213674),	-- Mindbender Handwraps
-						i(213672),	-- Mindbender Pants
-						i(213676),	-- Mindbender Raiment
-						i(213675),	-- Mindbender Treads
-
-						------ Spirit-Waker's Vestment (Red) ------
-						i(213680),	-- Scrollkeeper Crown
-						i(213682),	-- Scrollkeeper Mantle
-						i(213679),	-- Scrollkeeper Mitts
-						i(213683),	-- Scrollkeeper Sash
-						i(213678),	-- Scrollkeeper Slippers
-						i(213681),	-- Scrollkeeper Trousers
-						i(213677),	-- Scrollkeeper Vestment
-						i(213684),	-- Scrollkeeper Wristwraps
-
-						------ Mistwalker's Vestment (Original) ------
-						i(213687),	-- Mistwalker's Amice
-						i(213686),	-- Mistwalker's Belt
-						i(213689),	-- Mistwalker's Cowl
-						i(213685),	-- Mistwalker's Cuffs
-						i(213690),	-- Mistwalker's Handwraps
-						i(213688),	-- Mistwalker's Pants
-						i(213692),	-- Mistwalker's Raiment
-						i(213691),	-- Mistwalker's Treads
-
-						------ Mistwalker's Vestment (White) ------
-						i(213706),	-- Shaded Wood Crown
-						i(213704),	-- Shaded Wood Mantle
-						i(213707),	-- Shaded Wood Mitts
-						i(213703),	-- Shaded Wood Sash
-						i(213708),	-- Shaded Wood Slippers
-						i(213705),	-- Shaded Wood Trousers
-						i(213710),	-- Shaded Wood Vestment
-						i(213702),	-- Shaded Wood Wristwraps
-
-						------ Vestments of the Eternal Dynasty (Black) ------
-						i(213987),	-- Cloudscorcher's Bracers
-						i(213988),	-- Cloudscorcher's Cord
-						i(213992),	-- Cloudscorcher's Gloves
-						i(213991),	-- Cloudscorcher's Hood
-						i(213990),	-- Cloudscorcher's Leggings
-						i(213994),	-- Cloudscorcher's Robe
-						i(213993),	-- Cloudscorcher's Sandals
-						i(213989),	-- Cloudscorcher's Shoulderpads
-
-						------ Vestments of the Eternal Dynasty (Blue) ------
-						i(214000),	-- Amaranthine Amice
-						i(214001),	-- Amaranthine Belt
-						i(213998),	-- Amaranthine Cowl
-						i(214002),	-- Amaranthine Cuffs
-						i(213997),	-- Amaranthine Handwraps
-						i(213999),	-- Amaranthine Pants
-						i(213995),	-- Amaranthine Raiment
 						i(220979),	-- Amaranthine Shirt
-						i(213996),	-- Amaranthine Treads
-
-						------ Vestments of the Eternal Dynasty (Yellow) ------
-						i(214007),	-- Crown of the Dynast
-						i(214008),	-- Gloves of the Dynast
-						i(214006),	-- Leggings of the Dynast
-						i(214005),	-- Mantle of the Dynast
-						i(214004),	-- Sash of the Dynast
-						i(214009),	-- Slippers of the Dynast
-						i(220980),	-- Vest of the Dynast
 						i(214010),	-- Vestment of the Dynast
-						i(214003),	-- Wristwraps of the Dynast
-
 						i(220975),	-- Sha-Skin Shirt
 						i(220976),	-- Shirt of the Thousandfold Hells
 						i(220977),	-- Vest of the Thousandfold Hells
 						i(220978),	-- Shirt of the Horned Nightmare
 					}),
 					filter(LEATHER, {
-						------ Thunderpaw Battlegear (Red) ------
-						i(214076),	-- Farwatch Bindings
-						i(214077),	-- Farwatch Vest
-						i(214078),	-- Farwatch Footguards
-						i(214079),	-- Farwatch Cover
-						i(214080),	-- Farwatch Grips
-						i(214081),	-- Farwatch Waistband
-						i(214082),	-- Farwatch Spaulders
-						i(214083),	-- Farwatch Legguards
-
-
+						------ NYI? ------
 						i(220981),	-- Eternal Blossom Tunic
 
 						i(220982),	-- Vest of the Haunted Forest
@@ -5957,30 +5866,6 @@ root(ROOTS.Unsorted, {
 						i(220987),	-- Fire-Charm Tunic
 						i(220988),	-- Fire-Charm Vestments
 						i(220989),	-- Fire-Charm Jacket
-					}),
-					filter(PLATE, {
-						------ Gatecrasher Battleplate (Black) ------
-						i(215042),	-- Cliffbreaker Armguards
-						i(215045),	-- Cliffbreaker Chestguard
-						i(215041),	-- Cliffbreaker Greatboots
-						i(215043),	-- Cliffbreaker Greaves
-						i(215046),	-- Cliffbreaker Handguards
-						i(215047),	-- Cliffbreaker Shoulderguards
-						i(215048),	-- Cliffbreaker Waistguard
-						i(215044),	-- Cliffbreaker Warhelm
-						cl(WARRIOR, {
-							------ Source: MSV/HOF/TOES ------
-							-- Probably NYI set?
-							i(215341),	-- Ensemble: Battleplate of Resounding Rings
-							i(214985),	-- Warboots of Resounding Rings
-							i(214986),	-- Vambraces of Resounding Rings
-							i(214987),	-- Legplates of Resounding Rings
-							i(214988),	-- Greathelm of Resounding Rings
-							i(214989),	-- Battleplate of Resounding Rings
-							i(214990),	-- Gauntlets of Resounding Rings
-							i(214991),	-- Spaulders of Resounding Rings
-							i(214992),	-- Greatbelt of Resounding Rings
-						}),
 					}),
 				}),
 				filter(COSMETIC, {

@@ -51,6 +51,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(ZONE_REWARDS, {
+				filter(CLOTH, {
+					i(213706),	-- Shaded Wood Crown
+					i(213704),	-- Shaded Wood Mantle
+					i(213707),	-- Shaded Wood Mitts
+					i(213703),	-- Shaded Wood Sash
+					i(213708),	-- Shaded Wood Slippers
+					i(213705),	-- Shaded Wood Trousers
+					i(213710),	-- Shaded Wood Vestment
+					i(213702),	-- Shaded Wood Wristwraps
+				}),
 				filter(LEATHER, {
 					i(214108),	-- Riverblade Bindings
 					i(214111),	-- Riverblade Cover

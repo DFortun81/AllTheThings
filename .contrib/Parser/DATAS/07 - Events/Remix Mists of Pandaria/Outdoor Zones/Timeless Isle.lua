@@ -238,8 +238,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(213997),	-- Amaranthine Handwraps
 					i(213999),	-- Amaranthine Pants
 					i(213995),	-- Amaranthine Raiment
-					i(220979),	-- Amaranthine Shirt
 					i(213996),	-- Amaranthine Treads
+					i(214007),	-- Crown of the Dynast
+					i(214008),	-- Gloves of the Dynast
+					i(214006),	-- Leggings of the Dynast
+					i(214005),	-- Mantle of the Dynast
+					i(214004),	-- Sash of the Dynast
+					i(214009),	-- Slippers of the Dynast
+					i(220980),	-- Vest of the Dynast
+					i(214003),	-- Wristwraps of the Dynast
 				}),
 				filter(LEATHER, {
 					i(214387),	-- Snowdrift Bindings
@@ -250,6 +257,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214393),	-- Snowdrift Spaulders
 					i(214388),	-- Snowdrift Vest
 					i(214392),	-- Snowdrift Waistband
+					i(214120),	-- Swampthresher Cap
+					i(214118),	-- Swampthresher Cinch
+					i(214119),	-- Swampthresher Handguards
+					i(214122),	-- Swampthresher Jerkin
+					i(214117),	-- Swampthresher Mantle
+					i(214116),	-- Swampthresher Pants
+					i(214121),	-- Swampthresher Treads
+					i(214123),	-- Swampthresher Wraps
 					i(214399),	-- Wildblood Cap
 					i(214397),	-- Wildblood Cinch
 					i(214398),	-- Wildblood Handguards
@@ -268,6 +283,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214720),	-- Stonefang Legwraps
 					i(214719),	-- Stonefang Mantle
 					i(214713),	-- Stonefang Wristguards
+					i(214723),	-- Crimsonscale Belt
+					i(214726),	-- Crimsonscale Boots
+					i(214728),	-- Crimsonscale Bracers
+					i(214724),	-- Crimsonscale Gauntlets
+					i(214727),	-- Crimsonscale Hauberk
+					i(214725),	-- Crimsonscale Helm
+					i(214721),	-- Crimsonscale Leggings
+					i(214722),	-- Crimsonscale Spaulders
 				}),
 				filter(PLATE, {
 					i(215055),	-- Everbright Bracers

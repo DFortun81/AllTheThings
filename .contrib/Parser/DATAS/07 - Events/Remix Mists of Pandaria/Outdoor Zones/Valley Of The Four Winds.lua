@@ -75,6 +75,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(ZONE_REWARDS, {
+				filter(CLOTH, {
+					i(213671),	-- Mindbender Amice
+					i(213670),	-- Mindbender Belt
+					i(213673),	-- Mindbender Cowl
+					i(213669),	-- Mindbender Cuffs
+					i(213674),	-- Mindbender Handwraps
+					i(213672),	-- Mindbender Pants
+					i(213676),	-- Mindbender Raiment
+					i(213675),	-- Mindbender Treads
+				}),
 				filter(LEATHER, {
 					i(214104),	-- Mistdancer Cap
 					i(214102),	-- Mistdancer Cinch

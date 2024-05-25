@@ -242,6 +242,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(ZONE_REWARDS, {
+				filter(CLOTH, {
+					i(213680),	-- Scrollkeeper Crown
+					i(213682),	-- Scrollkeeper Mantle
+					i(213679),	-- Scrollkeeper Mitts
+					i(213683),	-- Scrollkeeper Sash
+					i(213678),	-- Scrollkeeper Slippers
+					i(213681),	-- Scrollkeeper Trousers
+					i(213677),	-- Scrollkeeper Vestment
+					i(213684),	-- Scrollkeeper Wristwraps
+				}),
 				filter(LEATHER, {
 					i(214069),	-- Thunderpaw Belt
 					i(214074),	-- Thunderpaw Boots

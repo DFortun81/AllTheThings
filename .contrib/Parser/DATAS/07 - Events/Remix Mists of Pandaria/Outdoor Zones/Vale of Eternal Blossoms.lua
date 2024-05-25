@@ -58,6 +58,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(ZONE_REWARDS, {
+				filter(CLOTH, {
+					i(213987),	-- Cloudscorcher's Bracers
+					i(213988),	-- Cloudscorcher's Cord
+					i(213992),	-- Cloudscorcher's Gloves
+					i(213991),	-- Cloudscorcher's Hood
+					i(213990),	-- Cloudscorcher's Leggings
+					i(213994),	-- Cloudscorcher's Robe
+					i(213993),	-- Cloudscorcher's Sandals
+					i(213989),	-- Cloudscorcher's Shoulderpads
+				}),
 				filter(LEATHER, {
 					i(214381),	-- Cranefeather Belt
 					i(214384),	-- Cranefeather Boots
@@ -87,6 +97,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214710),	-- Nightwatcher's Sabatons
 				}),
 				filter(PLATE, {
+					i(215042),	-- Cliffbreaker Armguards
+					i(215045),	-- Cliffbreaker Chestguard
+					i(215041),	-- Cliffbreaker Greatboots
+					i(215043),	-- Cliffbreaker Greaves
+					i(215046),	-- Cliffbreaker Handguards
+					i(215047),	-- Cliffbreaker Shoulderguards
+					i(215048),	-- Cliffbreaker Waistguard
+					i(215044),	-- Cliffbreaker Warhelm
 					i(215071),	-- Cragchewer Armguards
 					i(215068),	-- Cragchewer Chestguard
 					i(215072),	-- Cragchewer Greatboots
