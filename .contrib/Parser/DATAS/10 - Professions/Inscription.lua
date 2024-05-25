@@ -921,6 +921,14 @@ GLYPH_OF_FROST_ARMOR_AND_CONJURING_AND_CONJURE_FAMILIAR = r(58306, {	-- Glyph of
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
+GLYPH_OF_FROST_ARMOR_AND_ARMORS = r(98398, {	-- Glyph of Frost Armor / Glyph of Armors [MOP+]
+	-- #if AFTER MOP
+	["name"] = "Glyph of Armors",
+	-- #else
+	["name"] = "Glyph of Frost Armor",
+	-- #endif
+	["timeline"] = { ADDED_4_0_3, DELETED_6_0_2 },
+});
 GLYPH_OF_FROST_NOVA = r(56976, {	-- Glyph of Frost Nova
 	["name"] = "Glyph of Frost Nova",
 	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
@@ -3006,6 +3014,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_FIRE_BLAST,
 		GLYPH_OF_FIRE_WARD,
 		GLYPH_OF_FIREBALL_AND_COMBUSTION,
+		GLYPH_OF_FROST_ARMOR_AND_ARMORS,
 		GLYPH_OF_FROST_ARMOR_AND_CONJURING_AND_CONJURE_FAMILIAR,
 		GLYPH_OF_FROST_NOVA,
 		GLYPH_OF_FROST_WARD_AND_THE_MONKEY,
@@ -4513,6 +4522,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_FIRE_BLAST,
 				GLYPH_OF_FIRE_ELEMENTAL_TOTEM,
 				GLYPH_OF_FIREBALL_AND_COMBUSTION,
+				GLYPH_OF_FROST_ARMOR_AND_ARMORS,	-- Added with Cataclysm (2024-05-24)
 				GLYPH_OF_FROSTBOLT,
 				GLYPH_OF_FROSTFIRE_BOLT,
 				GLYPH_OF_GHOSTLY_STRIKE_AND_DETECTION,
