@@ -6195,7 +6195,6 @@ root(ROOTS.Unsorted, {
 					i(215577),	-- Rik'kal's Bloody Blade
 					i(215578),	-- Rik'kal's Bloody Blade
 					i(215579),	-- Rik'kal's Bloody Blade
-					i(215580),	-- Rik'kal's Bloody Blade
 					i(215581),	-- Blade of the Seven Stars
 					i(215582),	-- Blade of the Seven Stars
 					i(215584),	-- Blade of the Seven Stars
@@ -6277,17 +6276,14 @@ root(ROOTS.Unsorted, {
 					i(215710),	-- Roar of the Quillen
 					i(215711),	-- Roar of the Quillen
 					i(215713),	-- Sphere of Immerseus
-					i(215714),	-- Sphere of Immerseus
 					i(215715),	-- Kardris' Scepter
 					i(215716),	-- Kardris' Scepter
 					i(215717),	-- Kardris' Scepter
-					i(215718),	-- Kardris' Scepter
 					i(215719),	-- Mace of the Old Ones
 					i(215720),	-- Mace of the Old Ones
 					i(215723),	-- Siegecrafter's Forge Drill
 					i(215724),	-- Siegecrafter's Forge Drill
 					i(215725),	-- Siegecrafter's Forge Drill
-					i(215726),	-- Siegecrafter's Forge Drill
 					i(215728),	-- Galvanized Stormcrusher
 					i(215729),	-- Galvanized Stormcrusher
 					i(215733),	-- Tihan, Scepter of the Sleeper
@@ -6307,7 +6303,6 @@ root(ROOTS.Unsorted, {
 					i(215771),	-- Jerthud, Hand of the Savior
 					i(215775),	-- Zeeg's Ancient Kegbreaker
 					i(215778),	-- Gar'tok, Might of the Faithful
-					i(215779),	-- Gar'tok, Might of the Faithful
 					i(215782),	-- Wasteland Maul
 					i(215785),	-- Fangcracker Maul
 					i(215787),	-- Kazra'jin's Maul
@@ -6328,13 +6323,11 @@ root(ROOTS.Unsorted, {
 					i(215813),	-- Shan-Dun, Breaker of Courage
 					i(215814),	-- Shan-Dun, Breaker of Courage
 					i(215819),	-- Staff of Corrupted Waters
-					i(215821),	-- Staff of Corrupted Waters
 					i(215825),	-- Spire of Supremacy
 					i(215826),	-- Spire of Supremacy
 					i(215827),	-- Rod of the Megantholithic Apparatus
 					i(215831),	-- Pride's Gaze
 					i(215833),	-- Pride's Gaze
-					i(215834),	-- Pride's Gaze
 					i(215836),	-- Drakebinder's Spire
 					i(215837),	-- Drakebinder's Spire
 					i(215838),	-- Drakebinder's Spire
@@ -6380,7 +6373,6 @@ root(ROOTS.Unsorted, {
 					i(215917),	-- Arcweaver Spellblade
 					i(215918),	-- Arcweaver Spellblade
 					i(215919),	-- Arcweaver Spellblade
-					i(215920),	-- Arcweaver Spellblade
 					i(215921),	-- Shao-Tien Saber
 					i(215922),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
@@ -6527,7 +6519,6 @@ root(ROOTS.Unsorted, {
 					i(216555),	-- Shield of the Fallen General
 					i(216556),	-- Shield of the Fallen General
 					i(216557),	-- Shield of the Fallen General
-					i(216558),	-- Shield of the Fallen General
 					i(216560),	-- Steelskin, Qiang's Bulwark
 					i(216562),	-- Steelskin, Qiang's Bulwark
 					i(216564),	-- Gaze of the Ancient

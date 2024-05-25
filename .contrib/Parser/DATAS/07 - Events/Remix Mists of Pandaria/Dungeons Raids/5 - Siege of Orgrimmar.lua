@@ -896,6 +896,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215040),	-- Warboots of the Prehistoric Marauder
 						}),
 					}),
+					n(WEAPONS, {
+						i(215920),	-- Arcweaver Spellblade
+						i(215779),	-- Gar'tok, Might of the Faithful
+						i(215718),	-- Kardris' Scepter
+						i(215834),	-- Pride's Gaze
+						i(215580),	-- Rik'kal's Bloody Blade
+						i(215726),	-- Siegecrafter's Forge Drill
+						i(216558),	-- Shield of the Fallen General
+						i(215821),	-- Staff of Corrupted Waters
+						i(215714),	-- Sphere of Immerseus
+					}),
 					e(852, {	-- Immerseus
 						["crs"] = { 71543 },	-- Immerseus
 					}),
