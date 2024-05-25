@@ -5845,8 +5845,233 @@ root(ROOTS.Unsorted, {
 						i(220970),	-- Mindbender Shirt
 						i(220971),	-- Mistwalker's Shirt
 						i(220972),	-- Shaded Wood Vest
-
+							filter(CLOTH, {
+								-- PRIEST
+								i(213875),	-- Cuffs of the Exorcist
+								i(213876),	-- Belt of the Exorcist
+								i(213877),	-- Amice of the Exorcist
+								i(213878),	-- Pants of the Exorcist
+								i(213879),	-- Cowl of the Exorcist
+								i(213880),	-- Handwraps of the Exorcist
+								i(213881),	-- Treads of the Exorcist
+								i(213882),	-- Raiment of the Exorcist
+								-- WARLOCK
+								i(213947),	-- Raiment of the Thousandfold Hells
+								i(213948),	-- Treads of the Thousandfold Hells
+								i(213949),	-- Handwraps of the Thousandfold Hells
+								i(213950),	-- Cowl of the Thousandfold Hells
+								i(213951),	-- Pants of the Thousandfold Hells
+								i(213952),	-- Amice of the Thousandfold Hells
+								i(213953),	-- Belt of the Thousandfold Hells
+								i(213954),	-- Cuffs of the Thousandfold Hells
+							}),
+							filter(LEATHER, {
+								-- DRUID
+								i(214182),	-- Pants of the Haunted Forest
+								i(214183),	-- Mantle of the Haunted Forest
+								i(214184),	-- Cinch of the Haunted Forest
+								i(214185),	-- Handguards of the Haunted Forest
+								i(214186),	-- Cap of the Haunted Forest
+								i(214187),	-- Treads of the Haunted Forest
+								i(214188),	-- Jerkin of the Haunted Forest
+								i(214189),	-- Wraps of the Haunted Forest
+								-- MONK
+								i(214259),	-- Fire-Charm Bracers
+								i(214260),	-- Fire-Charm Tunic
+								i(214261),	-- Fire-Charm Boots
+								i(214262),	-- Fire-Charm Helm
+								i(214263),	-- Fire-Charm Gloves
+								i(214264),	-- Fire-Charm Belt
+								i(214265),	-- Fire-Charm Shoulderpads
+								i(214266),	-- Fire-Charm Leggings
+								-- ROGUE
+								i(214331),	-- Nine-Tailed Leggings
+								i(214332),	-- Nine-Tailed Shoulderpads
+								i(214333),	-- Nine-Tailed Belt
+								i(214334),	-- Nine-Tailed Gloves
+								i(214335),	-- Nine-Tailed Helm
+								i(214336),	-- Nine-Tailed Boots
+								i(214337),	-- Nine-Tailed Tunic
+								i(214338),	-- Nine-Tailed Bracers
+							}),
+							filter(MAIL, {
+								-- HUNTER
+								i(214587),	-- Saurok Stalker's Legwraps
+								i(214588),	-- Saurok Stalker's Mantle
+								i(214589),	-- Saurok Stalker's Girdle
+								i(214590),	-- Saurok Stalker's Grips
+								i(214591),	-- Saurok Stalker's Helmet
+								i(214592),	-- Saurok Stalker's Footguards
+								i(214593),	-- Saurok Stalker's Breastplate
+								i(214594),	-- Saurok Stalker's Wristguards
+								-- SHAMAN
+								i(214664),	-- Armbands of the Witch Doctor
+								i(214659),	-- Chain of the Witch Doctor
+								i(214660),	-- Gloves of the Witch Doctor
+								i(214661),	-- Headguard of the Witch Doctor
+								i(214657),	-- Legguards of the Witch Doctor
+								i(214658),	-- Pauldrons of the Witch Doctor
+								i(214663),	-- Robeguard of the Witch Doctor
+								i(214662),	-- Sabatons of the Witch Doctor
+								i(220992),	-- Shirt of the Witch Doctor
+							}),
+							filter(PLATE, {
+								-- PALADIN
+								i(214921),	-- Lightning Emperor's Greatboots
+								i(214922),	-- Lightning Emperor's Armguards
+								i(214923),	-- Lightning Emperor's Greaves
+								i(214924),	-- Lightning Emperor's Warhelm
+								i(214925),	-- Lightning Emperor's Chestguard
+								i(214926),	-- Lightning Emperor's Grasp
+								i(214927),	-- Lightning Emperor's Shoulderguards
+								i(214928),	-- Lightning Emperor's Waistguard
+							}),
+						
 						------ UNKNOWN SOURCES! ------
+							filter(CLOTH, {
+							-- MAGE
+							i(213811),	-- Wristwraps of the Chromatic Hydra
+							i(213812),	-- Sash of the Chromatic Hydra
+							i(213813),	-- Mantle of the Chromatic Hydra
+							i(213814),	-- Trousers of the Chromatic Hydra
+							i(213815),	-- Crown of the Chromatic Hydra
+							i(213816),	-- Mitts of the Chromatic Hydra
+							i(213817),	-- Slippers of the Chromatic Hydra
+							i(213818),	-- Vestment of the Chromatic Hydra
+							-- PRIEST
+							i(213883),	-- Vestment of the Exorcist
+							i(213884),	-- Slippers of the Exorcist
+							i(213885),	-- Mitts of the Exorcist
+							i(213886),	-- Crown of the Exorcist
+							i(213887),	-- Trousers of the Exorcist
+							i(213888),	-- Mantle of the Exorcist
+							i(213889),	-- Sash of the Exorcist
+							i(213890),	-- Wristwraps of the Exorcist
+							-- WARLOCK
+							i(213955),	-- Wristwraps of the Thousandfold Hells
+							i(213956),	-- Sash of the Thousandfold Hells
+							i(213957),	-- Mantle of the Thousandfold Hells
+							i(213958),	-- Trousers of the Thousandfold Hells
+							i(213959),	-- Crown of the Thousandfold Hells
+							i(213960),	-- Mitts of the Thousandfold Hells
+							i(213961),	-- Slippers of the Thousandfold Hells
+							i(213962),	-- Vestment of the Thousandfold Hells
+						}),
+						filter(LEATHER, {
+							-- DRUID
+							i(214174),	-- Bindings of the Haunted Forest
+							i(214175),	-- Vest of the Haunted Forest
+							i(214176),	-- Footguards of the Haunted Forest
+							i(214177),	-- Cover of the Haunted Forest
+							i(214178),	-- Grips of the Haunted Forest
+							i(214179),	-- Waistband of the Haunted Forest
+							i(214180),	-- Spaulders of the Haunted Forest
+							i(214181),	-- Legguards of the Haunted Forest
+							-- ROGUE
+							i(214347),	-- Nine-Tailed Pants
+							i(214348),	-- Nine-Tailed Mantle
+							i(214349),	-- Nine-Tailed Cinch
+							i(214350),	-- Nine-Tailed Handguards
+							i(214351),	-- Nine-Tailed Cap
+							i(214352),	-- Nine-Tailed Treads
+							i(214353),	-- Nine-Tailed Jerkin
+							i(214354),	-- Nine-Tailed Wraps
+						}),
+						filter(MAIL, {
+							-- SHAMAN
+							i(214666),	-- Breastplate of the Witch Doctor
+							i(214667),	-- Footguards of the Witch Doctor
+							i(214670),	-- Girdle of the Witch Doctor
+							i(214669),	-- Grips of the Witch Doctor
+							i(214668),	-- Helmet of the Witch Doctor
+							i(214672),	-- Legwraps of the Witch Doctor
+							i(214671),	-- Mantle of the Witch Doctor
+							i(220993),	-- Tunic of the Witch Doctor
+							i(214665),	-- Wristguards of the Witch Doctor
+						}),
+						filter(PLATE, {
+							-- DEATH KNIGHT
+							i(214857),	-- Breastplate of the All-Consuming Maw
+							i(214858),	-- Bracers of the All-Consuming Maw
+							i(214859),	-- Sabatons of the All-Consuming Maw
+							i(214860),	-- Helm of the All-Consuming Maw
+							i(214861),	-- Gauntlets of the All-Consuming Maw
+							i(214862),	-- Girdle of the All-Consuming Maw
+							i(214863),	-- Pauldrons of the All-Consuming Maw
+							i(214864),	-- Legguards of the All-Consuming Maw
+							-- WARRIOR
+							i(215009),	-- Greatbelt of the Last Mogu
+							i(215010),	-- Spaulders of the Last Mogu
+							i(215011),	-- Gauntlets of the Last Mogu
+							i(215012),	-- Battleplate of the Last Mogu
+							i(215013),	-- Greathelm of the Last Mogu
+							i(215014),	-- Legplates of the Last Mogu
+							i(215015),	-- Vambraces of the Last Mogu
+							i(215016),	-- Warboots of the Last Mogu
+						}),
+							-- MAGE
+							i(213794),	-- Bracers of the Chromatic Hydra
+							i(213795),	-- Cord of the Chromatic Hydra
+							i(213797),	-- Shoulderpads of the Chromatic Hydra
+							i(213798),	-- Leggings of the Chromatic Hydra
+							i(213799),	-- Hood of the Chromatic Hydra
+							i(213800),	-- Gloves of the Chromatic Hydra
+							i(213801),	-- Sandals of the Chromatic Hydra
+							i(213802),	-- Robe of the Chromatic Hydra
+							-- DRUID
+							i(214166),	-- Leggings of the Haunted Forest
+							i(214167),	-- Shoulderpads of the Haunted Forest
+							i(214168),	-- Belt of the Haunted Forest
+							i(214169),	-- Gloves of the Haunted Forest
+							i(214170),	-- Helm of the Haunted Forest
+							i(214171),	-- Boots of the Haunted Forest
+							i(214172),	-- Tunic of the Haunted Forest
+							i(214173),	-- Bracers of the Haunted Forest
+							-- MONK
+							i(214267),	-- Fire-Charm Legguards
+							i(214268),	-- Fire-Charm Spaulders
+							i(214269),	-- Fire-Charm Waistband
+							i(214270),	-- Fire-Charm Grips
+							i(214271),	-- Fire-Charm Cover
+							i(214272),	-- Fire-Charm Footguards
+							i(214273),	-- Fire-Charm Vest
+							i(214274),	-- Fire-Charm Bindings
+							-- HUNTER
+							i(214578),	-- Saurok Stalker's Armbands
+							i(214579),	-- Saurok Stalker's Chestguard
+							i(214580),	-- Saurok Stalker's Sabatons
+							i(214582),	-- Saurok Stalker's Headguard
+							i(214583),	-- Saurok Stalker's Gloves
+							i(214584),	-- Saurok Stalker's Chain
+							i(214585),	-- Saurok Stalker's Pauldrons
+							i(214586),	-- Saurok Stalker's Legguards
+							-- DEATH KNIGHT
+							i(214841),	-- Battleplate of the All-Consuming Maw
+							i(214842),	-- Vambraces of the All-Consuming Maw
+							i(214843),	-- Warboots of the All-Consuming Maw
+							i(214844),	-- Greathelm of the All-Consuming Maw
+							i(214845),	-- Handguards of the All-Consuming Maw
+							i(214846),	-- Greatbelt of the All-Consuming Maw
+							i(214847),	-- Spaulders of the All-Consuming Maw
+							i(214848),	-- Legplates of the All-Consuming Maw
+							-- PALADIN
+							i(214913),	-- Lightning Emperor's Greatbelt
+							i(214914),	-- Lightning Emperor's Spaulders
+							i(214915),	-- Lightning Emperor's Handguards
+							i(214916),	-- Lightning Emperor's Battleplate
+							i(214917),	-- Lightning Emperor's Greathelm
+							i(214918),	-- Lightning Emperor's Legplates
+							i(214919),	-- Lightning Emperor's Vambraces
+							i(214920),	-- Lightning Emperor's Warboots
+							-- WARRIOR
+							i(214993),	-- Waistguard of the Last Mogu
+							i(214994),	-- Shoulderguards of the Last Mogu
+							i(214995),	-- Handguards of the Last Mogu
+							i(214996),	-- Chestguard of the Last Mogu
+							i(214997),	-- Warhelm of the Last Mogu
+							i(214998),	-- Greaves of the Last Mogu
+							i(214999),	-- Armguards of the Last Mogu
+							i(215000),	-- Greatboots of the Last Mogu
 						------ Breezebinder's Vestment (Purple) ------
 						i(213647),	-- Windwhisper Amice
 						i(213646),	-- Windwhisper Belt
@@ -6063,7 +6288,6 @@ root(ROOTS.Unsorted, {
 					i(215539),	-- Jinyu Longbow
 					i(215540),	-- Jinyu Shortbow
 					i(215541),	-- Jinyu Warbow
-					i(215542),	-- Tortoiseshell Longbow
 					i(215543),	-- Tortoiseshell Longbow
 					i(215544),	-- Tortoiseshell Longbow
 					i(215546),	-- Miracoran, the Dissonant Chord
