@@ -1738,7 +1738,7 @@ GLYPH_OF_REBIRTH = r(56953, {	-- Glyph of Rebirth
 -- #if ANYCLASSIC
 GLYPH_OF_RECKONING = applyclassicphase(WRATH_PHASE_TWO, r(405005, {	-- Glyph of Reckoning
 	["name"] = "Glyph of Reckoning",
-	["timeline"] = { ADDED_3_0_2 },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 }));
 -- #endif
 GLYPH_OF_REGROWTH = r(56954, {	-- Glyph of Regrowth
