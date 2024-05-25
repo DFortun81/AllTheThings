@@ -4238,6 +4238,34 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["races"] = HORDE_ONLY,
 			}),
 		}),
+		-- #if BEFORE 5.0.4
+		n(RELICS, {
+			r(86647, {	-- Etched Horn
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			r(86650, {	-- Notched Jawbone
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			r(86649, {	-- Runed Dragonscale
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			r(86653, {	-- Silver Inlaid Leaf
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			r(86652, {	-- Tattooed Eyeball
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			r(99547, {	-- Vicious Charm of Triumph
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			r(99548, {	-- Vicious Eyeball of Dominance
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			r(99549, {	-- Vicious Jawbone of Conquest
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+		}),
+		-- #endif
 		cat(792, {	-- Toys
 			r(86646),	-- Origami Beetle*
 			r(86645),	-- Origami Rock*

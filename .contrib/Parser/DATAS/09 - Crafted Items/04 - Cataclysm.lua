@@ -588,6 +588,34 @@ Fire and Water - Damage against Elementals increased by 15%.
 			i(62234),	-- Dungeoneering Guide
 			i(62233),	-- Lord Rottington's Pressed Wisp Book
 		}),
+		-- #if BEFORE 5.0.4
+		n(RELICS, {
+			i(62240, {	-- Etched Horn
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62243, {	-- Notched Jawbone
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62242, {	-- Runed Dragonscale
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62245, {	-- Silver Inlaid Leaf
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62244, {	-- Tattooed Eyeball
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(75079, {	-- Vicious Charm of Triumph
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(75066, {	-- Vicious Eyeball of Dominance
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(75069, {	-- Vicious Jawbone of Conquest
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+		}),
+		-- #endif
 		-- #if AFTER 5.0.1
 		filter(STAVES, {
 			i(87565, {	-- Key to the Planes
