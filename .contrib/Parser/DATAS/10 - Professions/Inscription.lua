@@ -1578,7 +1578,7 @@ GLYPH_OF_OBLITERATE_AND_ENDURING_INFECTION = r(57220, {	-- Glyph of Obliterate /
 -- #if ANYCLASSIC
 GLYPH_OF_OMEN_OF_CLARITY = applyclassicphase(WRATH_PHASE_THREE, r(413897, {	-- Glyph of Omen of Clarity
 	["name"] = "Glyph of Omen of Clarity",
-	["timeline"] = { ADDED_3_0_2 },
+	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
 }));
 -- #endif
 GLYPH_OF_OVERPOWER_AND_DIE_BY_THE_SWORD = r(57161, {	-- Glyph of Overpower / Glyph of Die by the Sword [5.2.0+]
