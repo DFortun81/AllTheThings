@@ -6207,7 +6207,6 @@ root(ROOTS.Unsorted, {
 					i(215768),	-- Mace of Dark Animus
 					i(215769),	-- Jerthud, Hand of the Savior
 					i(215771),	-- Jerthud, Hand of the Savior
-					i(215773),	-- Zeeg's Ancient Kegbreaker
 					i(215775),	-- Zeeg's Ancient Kegbreaker
 					i(215778),	-- Gar'tok, Might of the Faithful
 					i(215779),	-- Gar'tok, Might of the Faithful

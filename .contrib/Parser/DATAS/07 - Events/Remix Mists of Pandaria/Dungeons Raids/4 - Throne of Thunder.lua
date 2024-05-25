@@ -265,6 +265,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216428),	-- Torall, the Emperor's Scepter
 						i(215545),	-- Tortoiseshell Longbow
 						i(215964),	-- Qon's Iron Decree
+						i(215773),	-- Zeeg's Ancient Kegbreaker
 					}),
 					header(HEADERS.Achievement, 8069, {	-- Last Stand of the Zandalari
 						e(827, {	-- Jin'rokh the Breaker
