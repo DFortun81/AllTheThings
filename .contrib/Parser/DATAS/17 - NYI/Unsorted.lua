@@ -6186,12 +6186,10 @@ root(ROOTS.Unsorted, {
 					i(215567),	-- Jinyu Poker
 					i(215568),	-- Jinyu Dagger
 					i(215569),	-- Norushen's Dagger
-					i(215571),	-- Norushen's Dagger
 					i(215572),	-- Norushen's Dagger
 					i(215573),	-- Nazgrim's Shanker
 					i(215574),	-- Nazgrim's Shanker
 					i(215575),	-- Nazgrim's Shanker
-					i(215576),	-- Nazgrim's Shanker
 					i(215577),	-- Rik'kal's Bloody Blade
 					i(215578),	-- Rik'kal's Bloody Blade
 					i(215579),	-- Rik'kal's Bloody Blade
@@ -6241,7 +6239,6 @@ root(ROOTS.Unsorted, {
 					i(215662),	-- Prophecies of Y'Shaarj
 					i(215663),	-- Lucky Cricket Cage
 					i(215665),	-- Lucky Cricket Cage
-					i(215666),	-- Lucky Cricket Cage
 					i(215667),	-- Sha-Touched Globule
 					i(215668),	-- Sha-Touched Globule
 					i(215669),	-- Sha-Touched Globule
@@ -6311,7 +6308,6 @@ root(ROOTS.Unsorted, {
 					i(215794),	-- Halberd of Inner Darkness
 					i(215795),	-- Halberd of Inner Darkness
 					i(215796),	-- Halberd of Inner Darkness
-					i(215797),	-- Halberd of Inner Darkness
 					i(215798),	-- Qiang's Unbreakable Polearm
 					i(215800),	-- Qiang's Unbreakable Polearm
 					i(215804),	-- Wallwatcher's Partisan
@@ -6330,7 +6326,6 @@ root(ROOTS.Unsorted, {
 					i(215833),	-- Pride's Gaze
 					i(215836),	-- Drakebinder's Spire
 					i(215837),	-- Drakebinder's Spire
-					i(215838),	-- Drakebinder's Spire
 					i(215839),	-- Brazier of the Eternal Empire
 					i(215841),	-- Brazier of the Eternal Empire
 					i(215845),	-- Waterspeaker's Staff

@@ -898,8 +898,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					n(WEAPONS, {
 						i(215920),	-- Arcweaver Spellblade
+						i(215838),	-- Drakebinder's Spire
 						i(215779),	-- Gar'tok, Might of the Faithful
+						i(215797),	-- Halberd of Inner Darkness
 						i(215718),	-- Kardris' Scepter
+						i(215666),	-- Lucky Cricket Cage
+						i(215722),	-- Mace of the Old Ones
+						i(215576),	-- Nazgrim's Shanker
+						i(215571),	-- Norushen's Dagger
 						i(215834),	-- Pride's Gaze
 						i(215580),	-- Rik'kal's Bloody Blade
 						i(215726),	-- Siegecrafter's Forge Drill
