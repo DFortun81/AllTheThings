@@ -229,6 +229,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			i(89196, {	-- Theramore Tabard
+				["races"] = ALLIANCE_ONLY,
+				["description"] = "Granted to Alliance players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great."
+			}),
+			i(89205, {	-- Mini Mana Bomb Toy (TOY!)
+				["races"] = HORDE_ONLY,
+				["description"] = "Granted to Horde players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great."
+			}),
 		}),
 		m(450, {	-- Unga Ingoo
 			n(ACHIEVEMENTS, {
