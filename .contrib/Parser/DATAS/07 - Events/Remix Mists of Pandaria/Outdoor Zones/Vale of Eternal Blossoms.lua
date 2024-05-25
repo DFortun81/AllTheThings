@@ -67,6 +67,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214379),	-- Cranefeather Leggings
 					i(214380),	-- Cranefeather Shoulderpads
 					i(214385),	-- Cranefeather Tunic
+					i(214076),	-- Farwatch Bindings
+					i(214077),	-- Farwatch Vest
+					i(214078),	-- Farwatch Footguards
+					i(214079),	-- Farwatch Cover
+					i(214080),	-- Farwatch Grips
+					i(214081),	-- Farwatch Waistband
+					i(214082),	-- Farwatch Spaulders
+					i(214083),	-- Farwatch Legguards
 				}),
 				filter(MAIL, {
 					i(214712),	-- Nightwatcher's Armbands
