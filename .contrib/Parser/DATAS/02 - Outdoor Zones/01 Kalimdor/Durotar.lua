@@ -3493,14 +3493,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				q(28816, {	-- To the Depths
-					["qg"] = 45244,	-- Farseer Krogar
-					["sourceQuest"] = 28805,	-- The Eye of the Storm
-					["coord"] = { 50.4, 38.2, ORGRIMMAR },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				-- #if NOT ANYCLASSIC
 				q(5660, {	-- Touch of Weakness [Durotar]
 					["qg"] = 3706,	-- Tai'jin <Priest Trainer>

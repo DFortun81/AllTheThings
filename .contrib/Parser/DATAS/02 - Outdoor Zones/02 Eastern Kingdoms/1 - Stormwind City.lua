@@ -3838,14 +3838,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 				}),
-				q(28827, {	-- To the Depths
-					["qg"] = 45226,	-- Naraat the Earthspeaker
-					["sourceQuest"] = 28826,	-- The Eye of the Storm
-					["coord"] = { 74.4, 18.8, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(1449, {	-- To The Hinterlands
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["sourceQuest"] = 1448,	-- In Search of The Temple

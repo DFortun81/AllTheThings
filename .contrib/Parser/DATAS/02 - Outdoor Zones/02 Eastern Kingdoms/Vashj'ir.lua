@@ -1196,6 +1196,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(59810),	-- Captain Taylor's Chopper
 							},
 						}),
+						q(28827, {	-- To the Depths (A)
+							["qg"] = 45226,	-- Naraat the Earthspeaker
+							["sourceQuest"] = 28826,	-- The Eye of the Storm
+							["coord"] = { 74.4, 18.8, STORMWIND_CITY },
+							["timeline"] = { ADDED_4_0_3 },
+							["races"] = ALLIANCE_ONLY,
+							["isBreadcrumb"] = true,
+						}),
+						q(28816, {	-- To the Depths (H)
+							["qg"] = 45244,	-- Farseer Krogar
+							["sourceQuest"] = 28805,	-- The Eye of the Storm
+							["coord"] = { 50.4, 38.2, ORGRIMMAR },
+							["timeline"] = { ADDED_4_0_3 },
+							["maps"] = { DUROTAR },
+							["races"] = HORDE_ONLY,
+							["isBreadcrumb"] = true,
+						}),
 						q(25546, {	-- Traveling on Our Stomachs (A)
 							["qg"] = 39887,	-- Captain Taylor
 							["sourceQuest"] = 25405,	-- Rest For the Weary
