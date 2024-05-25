@@ -583,9 +583,15 @@ GLYPH_OF_DIVINE_PLEA = r(64305, {	-- Glyph of Divine Plea
 	["name"] = "Glyph of Divine Plea",
 	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
-GLYPH_OF_DIVINE_STORM = r(64279, {	-- Glyph of Divine Storm
+GLYPH_OF_DIVINE_STORM_AND_TEMPLARS_VERDICT = r(64279, {	-- Glyph of Divine Storm / Glyph of Templar's Verdict [CATA+] / Glyph of Divine Storm [MOP+]
+	-- #if AFTER MOP
 	["name"] = "Glyph of Divine Storm",
-	["timeline"] = { ADDED_3_1_0, DELETED_4_0_1 },
+	-- #elseif AFTER CATA
+	["name"] = "Glyph of Templar's Verdict",
+	-- #else
+	["name"] = "Glyph of Divine Storm",
+	-- #endif
+	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
 GLYPH_OF_DIVINITY = r(57031, {	-- Glyph of Divinity
 	["name"] = "Glyph of Divinity",
@@ -1005,7 +1011,7 @@ GLYPH_OF_HAMMER_OF_WRATH_AND_TEMPLARS_VERDICT = r(57028, {	-- Glyph of Hammer of
 	-- #else
 	["name"] = "Glyph of Hammer of Wrath",
 	-- #endif
-	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
+	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_HAMSTRING_AND_PIERCING_HOWL_AND_RUDE_INTERRUPTION = r(57157, {	-- Glyph of Hamstring / Glyph of Piercing Howl [CATA+] / Glyph of Rude Interruption [5.0.4+]
 	-- #if AFTER 5.0.4
@@ -3032,7 +3038,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_CONSECRATION,
 		GLYPH_OF_CRUSADER_STRIKE_AND_AVENGING_WRATH,
 		GLYPH_OF_DIVINE_PLEA,
-		GLYPH_OF_DIVINE_STORM,
+		GLYPH_OF_DIVINE_STORM_AND_TEMPLARS_VERDICT,
 		GLYPH_OF_DIVINITY,
 		GLYPH_OF_EXORCISM_AND_BLINDING_LIGHT,
 		GLYPH_OF_FLASH_OF_LIGHT_AND_WORD_OF_GLORY,
@@ -4222,7 +4228,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_DEMONIC_CIRCLE,
 				GLYPH_OF_DISPERSION,
 				GLYPH_OF_DIVINE_PLEA,
-				GLYPH_OF_DIVINE_STORM,
+				GLYPH_OF_DIVINE_STORM_AND_TEMPLARS_VERDICT,
 				GLYPH_OF_EXPLOSIVE_SHOT_AND_TRANQUILIZING_SHOT,
 				GLYPH_OF_EXPLOSIVE_TRAP_AND_MASTERS_CALL,
 				GLYPH_OF_FAN_OF_KNIVES_AND_DEADLY_MOMENTUM,
