@@ -1009,12 +1009,8 @@ GLYPH_OF_HAMMER_OF_THE_RIGHTEOUS = r(64278, {	-- Glyph of Hammer of the Righteou
 	["name"] = "Glyph of Hammer of the Righteous",
 	["timeline"] = { ADDED_3_1_0, DELETED_7_0_3 },
 });
-GLYPH_OF_HAMMER_OF_WRATH_AND_TEMPLARS_VERDICT = r(57028, {	-- Glyph of Hammer of Wrath / Glyph of Templar's Verdict [CATA+]
-	-- #if AFTER CATA
-	["name"] = "Glyph of Templar's Verdict",
-	-- #else
+GLYPH_OF_HAMMER_OF_WRATH = r(57028, {	-- Glyph of Hammer of Wrath
 	["name"] = "Glyph of Hammer of Wrath",
-	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_5_0_4 },
 });
 GLYPH_OF_HAMSTRING_AND_PIERCING_HOWL_AND_RUDE_INTERRUPTION = r(57157, {	-- Glyph of Hamstring / Glyph of Piercing Howl [CATA+] / Glyph of Rude Interruption [5.0.4+]
@@ -3049,7 +3045,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_FLASH_OF_LIGHT_AND_WORD_OF_GLORY,
 		GLYPH_OF_HAMMER_OF_JUSTICE_AND_HOLY_WRATH,
 		GLYPH_OF_HAMMER_OF_THE_RIGHTEOUS,
-		GLYPH_OF_HAMMER_OF_WRATH_AND_TEMPLARS_VERDICT,
+		GLYPH_OF_HAMMER_OF_WRATH,
 		GLYPH_OF_HOLY_LIGHT_AND_DIVINE_FAVOR_AND_ILLUMINATION,
 		GLYPH_OF_HOLY_SHOCK,
 		GLYPH_OF_HOLY_WRATH_AND_DENOUNCE,
@@ -4496,7 +4492,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_FROSTFIRE_BOLT,
 				GLYPH_OF_GHOSTLY_STRIKE_AND_DETECTION,
 				GLYPH_OF_GROWL_AND_SOLAR_BEAM_AND_OMENS,
-				GLYPH_OF_HAMMER_OF_WRATH_AND_TEMPLARS_VERDICT,
+				GLYPH_OF_HAMMER_OF_WRATH,
 				GLYPH_OF_HEALING_WAVE,
 				GLYPH_OF_HEART_STRIKE_AND_UNHOLY_FRENZY,
 				GLYPH_OF_HEMORRHAGE,
