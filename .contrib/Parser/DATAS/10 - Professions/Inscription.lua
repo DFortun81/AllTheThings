@@ -1479,6 +1479,14 @@ GLYPH_OF_LIVING_BOMB_AND_SLOW = r(64275, {	-- Glyph of Living Bomb / Glyph of Sl
 	-- #endif
 	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
 });
+GLYPH_OF_LIVING_BOMB_AND_INFERNO_BLAST = r(94000, {	-- Glyph of Living Bomb / Glyph of Inferno Blast [MOP+]
+	-- #if AFTER MOP
+	["name"] = "Glyph of Inferno Blast",
+	-- #else
+	["name"] = "Glyph of Living Bomb",
+	-- #endif
+	["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
+});
 GLYPH_OF_MAGE_ARMOR_AND_MANA_GEM = r(56984, {	-- Glyph of Mage Armor / Glyph of Mana Gem [5.0.4+]
 	-- #if AFTER 5.0.4
 	["name"] = "Glyph of Mana Gem",
@@ -3114,6 +3122,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_INVISIBILITY_AND_RAPID_DISPLACEMENT,
 		GLYPH_OF_LAVISH_SERVINGS,
 		GLYPH_OF_LIVING_BOMB_AND_SLOW,
+		GLYPH_OF_LIVING_BOMB_AND_INFERNO_BLAST,
 		GLYPH_OF_MAGE_ARMOR_AND_MANA_GEM,
 		GLYPH_OF_MANA_GEM,
 		GLYPH_OF_MIRROR_IMAGE,
@@ -3830,6 +3839,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_LAVA_AND_LAVA_BURST_AND_SPIRIT_WALK,
 				GLYPH_OF_LIFEBLOOM_AND_EFFLORESCENCE,
 				GLYPH_OF_LIGHTWELL,
+				GLYPH_OF_LIVING_BOMB_AND_INFERNO_BLAST,
 				GLYPH_OF_MANA_TIDE_TOTEM_AND_GROUNDING_TOTEM,
 				GLYPH_OF_MANGLE_AND_THE_STAG,
 				GLYPH_OF_MASS_DISPEL,
