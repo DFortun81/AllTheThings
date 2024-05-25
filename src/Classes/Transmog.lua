@@ -630,12 +630,12 @@ do
 		end
 	end
 
-	-- At this time an appearance must be associated with an item. (TODO: Maybe not?)
+	-- An appearance must be associated with an item since the Item link is displayed in Transmog UI
 	local createItemWithAppearance = app.ExtendClass("Item", "ItemWithAppearance", "sourceID", {
-		["collectible"] = function(t)
+		collectible = function(t)
 			return app.Settings.Collectibles.Transmog;
 		end,
-		["collected"] = function(t)
+		collected = function(t)
 			return AccountSources[t.sourceID];
 		end,
 		trackable = app.ReturnTrue,
@@ -647,7 +647,7 @@ do
 			return app.IsAccountCached("SourceItemsOnCharacter", t.sourceID)
 		end,
 		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
-		["itemID"] = function(t)
+		itemID = function(t)
 			if t.__autolink then return; end
 			-- async generation of the proper Item Link
 			-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
