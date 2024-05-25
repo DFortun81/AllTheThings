@@ -415,6 +415,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213800),	-- Gloves of the Chromatic Hydra
 							i(213801),	-- Sandals of the Chromatic Hydra
 							i(213802),	-- Robe of the Chromatic Hydra
+							-- PRIEST
+							i(213883),	-- Vestment of the Exorcist
+							i(213884),	-- Slippers of the Exorcist
+							i(213885),	-- Mitts of the Exorcist
+							i(213886),	-- Crown of the Exorcist
+							i(213887),	-- Trousers of the Exorcist
+							i(213888),	-- Mantle of the Exorcist
+							i(213889),	-- Sash of the Exorcist
+							i(213890),	-- Wristwraps of the Exorcist
 							-- WARLOCK
 							i(213947),	-- Raiment of the Thousandfold Hells
 							i(213948),	-- Treads of the Thousandfold Hells

@@ -5914,16 +5914,6 @@ root(ROOTS.Unsorted, {
 						i(213881),	-- Treads of the Exorcist
 						i(213882),	-- Raiment of the Exorcist
 
-						-- PRIEST
-						i(213883),	-- Vestment of the Exorcist
-						i(213884),	-- Slippers of the Exorcist
-						i(213885),	-- Mitts of the Exorcist
-						i(213886),	-- Crown of the Exorcist
-						i(213887),	-- Trousers of the Exorcist
-						i(213888),	-- Mantle of the Exorcist
-						i(213889),	-- Sash of the Exorcist
-						i(213890),	-- Wristwraps of the Exorcist
-
 						-- WARLOCK
 						i(213947),	-- Raiment of the Thousandfold Hells
 						i(213948),	-- Treads of the Thousandfold Hells
