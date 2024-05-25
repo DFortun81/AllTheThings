@@ -1594,6 +1594,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 16.0, 82.5, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 58421 },	-- Hemet Nesingwary
 						["g"] = {
+							i(79058),	-- Darkhide's Head (QI!)
 							i(81854),	-- Mushan Chopper
 							i(81855),	-- Darkhide Blade
 							i(81856),	-- Safari Defender
@@ -2017,6 +2018,9 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 16.1, 82.6, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 58422 },	-- Hemet Nesingwary Jr.
+						["groups"] = {
+							i(79059),	-- Intact Tortoise Shell (QI!)
+						},
 					}),
 					q(29990, {	-- Training and Discipline
 						["sourceQuests"] = { 29989 },	-- Unyielding Fists: Trial of Stone

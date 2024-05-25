@@ -6254,7 +6254,6 @@ root(ROOTS.Unsorted, {
 					i(215864),	-- Torch of Dawn
 					i(215865),	-- Fogspeaker Conduit
 					i(215868),	-- Monastic Staff
-					i(215874),	-- Staff of Iron Will
 					i(215876),	-- Mistdancer's Rod
 					i(215877),	-- Cloudscorcher Staff
 					i(215880),	-- Darkstaff of Ruin

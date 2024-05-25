@@ -121,6 +121,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215807),	-- Ritter's Spear
 				i(215783),	-- Shado-Pan Maul
 				i(215878),	-- Springrain Spire
+				i(215874),	-- Staff of Iron Will
 				i(215875),	-- Staff of Stolen Hope
 				i(215784),	-- Taran Zhu's Bonebreaker
 				i(215645),	-- Tian Handblade

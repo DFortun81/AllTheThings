@@ -55,8 +55,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19875, {	-- Kun-Lai Summit
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
-						19887,	-- Campaign: Kun-Lai Summit [A]
-						19888,	-- Campaign: Kun-Lai Summit [H]
+						-- 19887,	-- Campaign: Kun-Lai Summit [A]
+						-- 19888,	-- Campaign: Kun-Lai Summit [H]
 						20011,	-- Looking For Group: Kun-Lai Summit
 						19965,	-- Tour Kun-Lai Summit
 					}},
