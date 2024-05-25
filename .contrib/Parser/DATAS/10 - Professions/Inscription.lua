@@ -1945,9 +1945,15 @@ GLYPH_OF_SEAL_OF_WISDOM_AND_LIGHT_OF_DAWN = r(57035, {	-- Glyph of Seal of Wisdo
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_6_0_2 },
 });
-GLYPH_OF_SEARING_PAIN = r(57270, {	-- Glyph of Searing Pain
+GLYPH_OF_SEARING_PAIN_AND_SOUL_SWAP_AND_HAVOC = r(57270, {	-- Glyph of Searing Pain / Glyph of Soul Swap [CATA+] / Glyph of Havoc [MOP+]
+	-- #if AFTER MOP
+	["name"] = "Glyph of Havoc",
+	-- #elseif AFTER CATA
+	["name"] = "Glyph of Soul Swap",
+	-- #else
 	["name"] = "Glyph of Searing Pain",
-	["timeline"] = { ADDED_3_0_2, DELETED_4_0_3 },
+	-- #endif
+	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
 GLYPH_OF_SENSE_UNDEAD_AND_TRUTH_AND_SEAL_OF_BLOOD = r(58315, {	-- Glyph of Sense Undead / Glyph of Truth [CATA] / Glyph of Seal of Blood [MOP+]
 	-- #if AFTER MOP
@@ -3242,7 +3248,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_LIFE_TAP,
 		GLYPH_OF_METAMORPHOSIS_AND_DEMON_HUNTING,
 		GLYPH_OF_QUICK_DECAY_AND_LASH_OF_PAIN_AND_EVERLASTING_AFFLICTION_AND_ETERNAL_RESOLVE,
-		GLYPH_OF_SEARING_PAIN,
+		GLYPH_OF_SEARING_PAIN_AND_SOUL_SWAP_AND_HAVOC,
 		GLYPH_OF_SHADOW_BOLT,
 		GLYPH_OF_SHADOWBURN,
 		GLYPH_OF_SHADOWFLAME_AND_UNENDING_RESOLVE,

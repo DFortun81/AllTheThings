@@ -412,7 +412,7 @@ root(ROOTS.WorldDrops, {
 					11204,  -- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
 					11973,  -- Hematite Link
 					11987,  -- Iridium Circle
-					11999,  -- Lodestone  Hoop
+					11999,  -- Lodestone Hoop
 					12031,  -- Lodestone Necklace
 					12042,  -- Marsh Chain
 					12012,  -- Marsh Ring
