@@ -2057,7 +2057,7 @@ GLYPH_OF_SHADOWFLAME_AND_UNENDING_RESOLVE = r(64311, {	-- Glyph of Shadowflame /
 });
 GLYPH_OF_SHADOWY_FRIENDS = r(126800, {	-- Glyph of Shadowy Friends
 	["name"] = "Glyph of Shadowy Friends",
-	["timeline"] = { ADDED_4_0_3 },
+	["timeline"] = { ADDED_5_0_4 },
 });
 -- #if ANYCLASSIC
 GLYPH_OF_SHATTERING_THROW = applyclassicphase(WRATH_PHASE_THREE, r(414814, {	-- Glyph of Shattering Throw
