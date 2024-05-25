@@ -517,6 +517,9 @@ Fire and Water - Damage against Elementals increased by 15%.
 				i(62018),    -- Seven of Waves
 				i(62019),    -- Eight of Waves
 			}),
+			i(60838, {	-- Mysterious Fortune Card
+				["timeline"] = { ADDED_4_0_3 },
+			}),
 		}),
 		filter(HELD_IN_OFF_HAND, {
 			i(62236),	-- Battle Tome
