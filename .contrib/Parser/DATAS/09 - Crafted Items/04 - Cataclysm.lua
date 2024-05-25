@@ -519,6 +519,66 @@ Fire and Water - Damage against Elementals increased by 15%.
 			}),
 			i(60838, {	-- Mysterious Fortune Card
 				["timeline"] = { ADDED_4_0_3 },
+				["groups"] = {
+					i(60839),	-- Fortune Card
+					i(60840),	-- Fortune Card
+					i(60841),	-- Fortune Card
+					i(60842),	-- Fortune Card
+					i(60843),	-- Fortune Card
+					i(60844),	-- Fortune Card
+					i(60845),	-- Fortune Card
+					i(62246),	-- Fortune Card
+					i(62247),	-- Fortune Card
+					i(62552),	-- Fortune Card
+					i(62553),	-- Fortune Card
+					i(62554),	-- Fortune Card
+					i(62555),	-- Fortune Card
+					i(62556),	-- Fortune Card
+					i(62557),	-- Fortune Card
+					i(62558),	-- Fortune Card
+					i(62559),	-- Fortune Card
+					i(62560),	-- Fortune Card
+					i(62561),	-- Fortune Card
+					i(62562),	-- Fortune Card
+					i(62563),	-- Fortune Card
+					i(62564),	-- Fortune Card
+					i(62565),	-- Fortune Card
+					i(62566),	-- Fortune Card
+					i(62567),	-- Fortune Card
+					i(62568),	-- Fortune Card
+					i(62569),	-- Fortune Card
+					i(62570),	-- Fortune Card
+					i(62571),	-- Fortune Card
+					i(62572),	-- Fortune Card
+					i(62573),	-- Fortune Card
+					i(62574),	-- Fortune Card
+					i(62575),	-- Fortune Card
+					i(62576),	-- Fortune Card
+					i(62577),	-- Fortune Card
+					i(62578),	-- Fortune Card
+					i(62579),	-- Fortune Card
+					i(62580),	-- Fortune Card
+					i(62581),	-- Fortune Card
+					i(62582),	-- Fortune Card
+					i(62583),	-- Fortune Card
+					i(62584),	-- Fortune Card
+					i(62585),	-- Fortune Card
+					i(62586),	-- Fortune Card
+					i(62587),	-- Fortune Card
+					i(62588),	-- Fortune Card
+					i(62589),	-- Fortune Card
+					i(62590),	-- Fortune Card
+					i(62591),	-- Fortune Card
+					i(62598),	-- Fortune Card
+					i(62599),	-- Fortune Card
+					i(62600),	-- Fortune Card
+					i(62601),	-- Fortune Card
+					i(62602),	-- Fortune Card
+					i(62603),	-- Fortune Card
+					i(62604),	-- Fortune Card
+					i(62605),	-- Fortune Card
+					i(62606),	-- Fortune Card
+				},
 			}),
 		}),
 		filter(HELD_IN_OFF_HAND, {
