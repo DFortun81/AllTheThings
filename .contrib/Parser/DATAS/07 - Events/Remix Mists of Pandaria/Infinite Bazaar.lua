@@ -37,14 +37,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215324, {	-- Ensemble: Battleplate of the All-Consuming Maw (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214841),	-- Battleplate of the All-Consuming Maw
-							i(214842),	-- Vambraces of the All-Consuming Maw
-							i(214843),	-- Warboots of the All-Consuming Maw
-							i(214844),	-- Greathelm of the All-Consuming Maw
-							i(214845),	-- Handguards of the All-Consuming Maw
-							i(214846),	-- Greatbelt of the All-Consuming Maw
-							i(214847),	-- Spaulders of the All-Consuming Maw
-							i(214848),	-- Legplates of the All-Consuming Maw
+							i(214849),	-- Greaves of the All-Consuming Maw
+							i(214850),	-- Shoulderguards of the All-Consuming Maw
+							i(214851),	-- Waistguard of the All-Consuming Maw
+							i(214852),	-- Grasp of the All-Consuming Maw
+							i(214853),	-- Warhelm of the All-Consuming Maw
+							i(214854),	-- Greatboots of the All-Consuming Maw
+							i(214855),	-- Armguards of the All-Consuming Maw
+							i(214856),	-- Chestguard of the All-Consuming Maw
 						},
 					}),
 					i(215327, {	-- Ensemble: Battleplate of Cyclopean Dread (LFR)
@@ -79,14 +79,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215245, {	-- Ensemble: Vestments of the Haunted Forest (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214166),	-- Leggings of the Haunted Forest
-							i(214167),	-- Shoulderpads of the Haunted Forest
-							i(214168),	-- Belt of the Haunted Forest
-							i(214169),	-- Gloves of the Haunted Forest
-							i(214170),	-- Helm of the Haunted Forest
-							i(214171),	-- Boots of the Haunted Forest
-							i(214172),	-- Tunic of the Haunted Forest
-							i(214173),	-- Bracers of the Haunted Forest
+							i(214174),	-- Bindings of the Haunted Forest
+							i(214175),	-- Vest of the Haunted Forest
+							i(214176),	-- Footguards of the Haunted Forest
+							i(214177),	-- Cover of the Haunted Forest
+							i(214178),	-- Grips of the Haunted Forest
+							i(214179),	-- Waistband of the Haunted Forest
+							i(214180),	-- Spaulders of the Haunted Forest
+							i(214181),	-- Legguards of the Haunted Forest
 						},
 					}),
 					i(215247, {	-- Ensemble: Vestments of the Shattered Vale (LFR)
@@ -121,14 +121,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215293, {	-- Ensemble: Battlegear of the Saurok Stalker (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214578),	-- Saurok Stalker's Armbands
-							i(214579),	-- Saurok Stalker's Chestguard
-							i(214580),	-- Saurok Stalker's Sabatons
-							i(214582),	-- Saurok Stalker's Headguard
-							i(214583),	-- Saurok Stalker's Gloves
-							i(214584),	-- Saurok Stalker's Chain
-							i(214585),	-- Saurok Stalker's Pauldrons
-							i(214586),	-- Saurok Stalker's Legguards
+							i(214596),	-- Saurok Stalker's Bracers
+							i(214598),	-- Saurok Stalker's Hauberk
+							i(214599),	-- Saurok Stalker's Boots
+							i(214600),	-- Saurok Stalker's Helm
+							i(214601),	-- Saurok Stalker's Gauntlets
+							i(214602),	-- Saurok Stalker's Belt
+							i(214603),	-- Saurok Stalker's Spaulders
+							i(214604),	-- Saurok Stalker's Leggings
 						},
 					}),
 					i(215295, {	-- Ensemble: Battlegear of the Unblinking Vigil (LFR)
@@ -163,14 +163,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215193, {	-- Ensemble: Regalia of the Chromatic Hydra (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(213794),	-- Bracers of the Chromatic Hydra
-							i(213795),	-- Cord of the Chromatic Hydra
-							i(213797),	-- Shoulderpads of the Chromatic Hydra
-							i(213798),	-- Leggings of the Chromatic Hydra
-							i(213799),	-- Hood of the Chromatic Hydra
-							i(213800),	-- Gloves of the Chromatic Hydra
-							i(213801),	-- Sandals of the Chromatic Hydra
-							i(213802),	-- Robe of the Chromatic Hydra
+							i(213803),	-- Raiment of the Chromatic Hydra
+							i(213804),	-- Treads of the Chromatic Hydra
+							i(213805),	-- Handwraps of the Chromatic Hydra
+							i(213806),	-- Cowl of the Chromatic Hydra
+							i(213807),	-- Pants of the Chromatic Hydra
+							i(213808),	-- Amice of the Chromatic Hydra
+							i(213809),	-- Belt of the Chromatic Hydra
+							i(213810),	-- Cuffs of the Chromatic Hydra
 						},
 					}),
 					i(215196, {	-- Ensemble: Chronomancer Regalia (LFR)
@@ -206,14 +206,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215255, {	-- Ensemble: Fire-Charm Vestments (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214267),	-- Fire-Charm Legguards
-							i(214268),	-- Fire-Charm Spaulders
-							i(214269),	-- Fire-Charm Waistband
-							i(214270),	-- Fire-Charm Grips
-							i(214271),	-- Fire-Charm Cover
-							i(214272),	-- Fire-Charm Footguards
-							i(214273),	-- Fire-Charm Vest
-							i(214274),	-- Fire-Charm Bindings
+							i(214275),	-- Fire-Charm Wraps
+							i(214276),	-- Fire-Charm Jerkin
+							i(214277),	-- Fire-Charm Treads
+							i(214278),	-- Fire-Charm Cap
+							i(214279),	-- Fire-Charm Handguards
+							i(214280),	-- Fire-Charm Cinch
+							i(214281),	-- Fire-Charm Mantle
+							i(214282),	-- Fire-Charm Pants
 						},
 					}),
 					i(215256, {	-- Ensemble: Vestments of the Seven Sacred Seals (LFR)
@@ -248,14 +248,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215334, {	-- Ensemble: Battlegear of the Lightning Emperor (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214913),	-- Lightning Emperor's Greatbelt
-							i(214914),	-- Lightning Emperor's Spaulders
-							i(214915),	-- Lightning Emperor's Handguards
-							i(214916),	-- Lightning Emperor's Battleplate
-							i(214917),	-- Lightning Emperor's Greathelm
-							i(214918),	-- Lightning Emperor's Legplates
-							i(214919),	-- Lightning Emperor's Vambraces
-							i(214920),	-- Lightning Emperor's Warboots
+							i(214929),	-- Lightning Emperor's Girdle
+							i(214930),	-- Lightning Emperor's Pauldrons
+							i(214931),	-- Lightning Emperor's Gauntlets
+							i(214932),	-- Lightning Emperor's Breastplate
+							i(214933),	-- Lightning Emperor's Helm
+							i(214934),	-- Lightning Emperor's Legguards
+							i(214935),	-- Lightning Emperor's Bracers
+							i(214936),	-- Lightning Emperor's Sabatons
 						},
 					}),
 					i(215335, {	-- Ensemble: Vestments of Winged Triumph (LFR)
@@ -461,14 +461,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215343, {	-- Ensemble: Battleplate of the Last Mogu (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214993),	-- Waistguard of the Last Mogu
-							i(214994),	-- Shoulderguards of the Last Mogu
-							i(214995),	-- Handguards of the Last Mogu
-							i(214996),	-- Chestguard of the Last Mogu
-							i(214997),	-- Warhelm of the Last Mogu
-							i(214998),	-- Greaves of the Last Mogu
-							i(214999),	-- Armguards of the Last Mogu
-							i(215000),	-- Greatboots of the Last Mogu
+							i(215001),	-- Sabatons of the Last Mogu
+							i(215002),	-- Bracers of the Last Mogu
+							i(215003),	-- Legguards of the Last Mogu
+							i(215004),	-- Helm of the Last Mogu
+							i(215005),	-- Breastplate of the Last Mogu
+							i(215006),	-- Grasp of the Last Mogu
+							i(215007),	-- Pauldrons of the Last Mogu
+							i(215008),	-- Girdle of the Last Mogu
 						},
 					}),
 					i(215346, {	-- Ensemble: Battleplate of the Prehistoric Marauder (LFR)
@@ -728,14 +728,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215325, {	-- Ensemble: Battleplate of the All-Consuming Maw (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214849),	-- Greaves of the All-Consuming Maw
-							i(214850),	-- Shoulderguards of the All-Consuming Maw
-							i(214851),	-- Waistguard of the All-Consuming Maw
-							i(214852),	-- Grasp of the All-Consuming Maw
-							i(214853),	-- Warhelm of the All-Consuming Maw
-							i(214854),	-- Greatboots of the All-Consuming Maw
-							i(214855),	-- Armguards of the All-Consuming Maw
-							i(214856),	-- Chestguard of the All-Consuming Maw
+							i(214857),	-- Breastplate of the All-Consuming Maw
+							i(214858),	-- Bracers of the All-Consuming Maw
+							i(214859),	-- Sabatons of the All-Consuming Maw
+							i(214860),	-- Helm of the All-Consuming Maw
+							i(214861),	-- Gauntlets of the All-Consuming Maw
+							i(214862),	-- Girdle of the All-Consuming Maw
+							i(214863),	-- Pauldrons of the All-Consuming Maw
+							i(214864),	-- Legguards of the All-Consuming Maw
 						},
 					}),
 					i(215326, {	-- Ensemble: Battleplate of Cyclopean Dread (Normal)
@@ -854,14 +854,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215194, {	-- Ensemble: Regalia of the Chromatic Hydra (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(213803),	-- Raiment of the Chromatic Hydra
-							i(213804),	-- Treads of the Chromatic Hydra
-							i(213805),	-- Handwraps of the Chromatic Hydra
-							i(213806),	-- Cowl of the Chromatic Hydra
-							i(213807),	-- Pants of the Chromatic Hydra
-							i(213808),	-- Amice of the Chromatic Hydra
-							i(213809),	-- Belt of the Chromatic Hydra
-							i(213810),	-- Cuffs of the Chromatic Hydra
+							i(213811),	-- Wristwraps of the Chromatic Hydra
+							i(213812),	-- Sash of the Chromatic Hydra
+							i(213813),	-- Mantle of the Chromatic Hydra
+							i(213814),	-- Trousers of the Chromatic Hydra
+							i(213815),	-- Crown of the Chromatic Hydra
+							i(213816),	-- Mitts of the Chromatic Hydra
+							i(213817),	-- Slippers of the Chromatic Hydra
+							i(213818),	-- Vestment of the Chromatic Hydra
 						},
 					}),
 					i(215197, {	-- Ensemble: Chronomancer Regalia (Normal)
@@ -961,14 +961,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(95216),	-- Vaultwalker Sabatons
 						--Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
 							-- Original Listings we had
-							i(214921),	-- Lightning Emperor's Greatboots
-							i(214922),	-- Lightning Emperor's Armguards
-							i(214923),	-- Lightning Emperor's Greaves
-							i(214924),	-- Lightning Emperor's Warhelm
-							i(214925),	-- Lightning Emperor's Chestguard
-							i(214926),	-- Lightning Emperor's Grasp
-							i(214927),	-- Lightning Emperor's Shoulderguards
-							i(214928),	-- Lightning Emperor's Waistguard
+							i(214913),	-- Lightning Emperor's Greatbelt
+							i(214914),	-- Lightning Emperor's Spaulders
+							i(214915),	-- Lightning Emperor's Handguards
+							i(214916),	-- Lightning Emperor's Battleplate
+							i(214917),	-- Lightning Emperor's Greathelm
+							i(214918),	-- Lightning Emperor's Legplates
+							i(214919),	-- Lightning Emperor's Vambraces
+							i(214920),	-- Lightning Emperor's Warboots
 						--]]
 						},
 					}),
@@ -1144,14 +1144,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215212, {	-- Ensemble: Regalia of the Thousandfold Hells (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(213947),	-- Raiment of the Thousandfold Hells
-							i(213948),	-- Treads of the Thousandfold Hells
-							i(213949),	-- Handwraps of the Thousandfold Hells
-							i(213950),	-- Cowl of the Thousandfold Hells
-							i(213951),	-- Pants of the Thousandfold Hells
-							i(213952),	-- Amice of the Thousandfold Hells
-							i(213953),	-- Belt of the Thousandfold Hells
-							i(213954),	-- Cuffs of the Thousandfold Hells
+							i(213955),	-- Wristwraps of the Thousandfold Hells
+							i(213956),	-- Sash of the Thousandfold Hells
+							i(213957),	-- Mantle of the Thousandfold Hells
+							i(213958),	-- Trousers of the Thousandfold Hells
+							i(213959),	-- Crown of the Thousandfold Hells
+							i(213960),	-- Mitts of the Thousandfold Hells
+							i(213961),	-- Slippers of the Thousandfold Hells
+							i(213962),	-- Vestment of the Thousandfold Hells
 						},
 					}),
 					i(215215, {	-- Ensemble: Regalia of the Horned Nightmare (Normal)
@@ -1186,14 +1186,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215344, {	-- Ensemble: Battleplate of the Last Mogu (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(215001),	-- Sabatons of the Last Mogu
-							i(215002),	-- Bracers of the Last Mogu
-							i(215003),	-- Legguards of the Last Mogu
-							i(215004),	-- Helm of the Last Mogu
-							i(215005),	-- Breastplate of the Last Mogu
-							i(215006),	-- Grasp of the Last Mogu
-							i(215007),	-- Pauldrons of the Last Mogu
-							i(215008),	-- Girdle of the Last Mogu
+							i(215009),	-- Greatbelt of the Last Mogu
+							i(215010),	-- Spaulders of the Last Mogu
+							i(215011),	-- Gauntlets of the Last Mogu
+							i(215012),	-- Battleplate of the Last Mogu
+							i(215013),	-- Greathelm of the Last Mogu
+							i(215014),	-- Legplates of the Last Mogu
+							i(215015),	-- Vambraces of the Last Mogu
+							i(215016),	-- Warboots of the Last Mogu
 						},
 					}),
 					i(215347, {	-- Ensemble: Battleplate of the Prehistoric Marauder (Normal)
@@ -3080,14 +3080,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215323, {	-- Ensemble: Battleplate of the All-Consuming Maw (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214857),	-- Breastplate of the All-Consuming Maw
-							i(214858),	-- Bracers of the All-Consuming Maw
-							i(214859),	-- Sabatons of the All-Consuming Maw
-							i(214860),	-- Helm of the All-Consuming Maw
-							i(214861),	-- Gauntlets of the All-Consuming Maw
-							i(214862),	-- Girdle of the All-Consuming Maw
-							i(214863),	-- Pauldrons of the All-Consuming Maw
-							i(214864),	-- Legguards of the All-Consuming Maw
+							i(214841),	-- Battleplate of the All-Consuming Maw
+							i(214842),	-- Vambraces of the All-Consuming Maw
+							i(214843),	-- Warboots of the All-Consuming Maw
+							i(214844),	-- Greathelm of the All-Consuming Maw
+							i(214845),	-- Handguards of the All-Consuming Maw
+							i(214846),	-- Greatbelt of the All-Consuming Maw
+							i(214847),	-- Spaulders of the All-Consuming Maw
+							i(214848),	-- Legplates of the All-Consuming Maw
 						},
 					}),
 					i(215328, {	-- Ensemble: Battleplate of Cyclopean Dread (Mythic)
@@ -3122,14 +3122,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215244, {	-- Ensemble: Vestments of the Haunted Forest (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214174),	-- Bindings of the Haunted Forest
-							i(214175),	-- Vest of the Haunted Forest
-							i(214176),	-- Footguards of the Haunted Forest
-							i(214177),	-- Cover of the Haunted Forest
-							i(214178),	-- Grips of the Haunted Forest
-							i(214179),	-- Waistband of the Haunted Forest
-							i(214180),	-- Spaulders of the Haunted Forest
-							i(214181),	-- Legguards of the Haunted Forest
+							i(214166),	-- Leggings of the Haunted Forest
+							i(214167),	-- Shoulderpads of the Haunted Forest
+							i(214168),	-- Belt of the Haunted Forest
+							i(214169),	-- Gloves of the Haunted Forest
+							i(214170),	-- Helm of the Haunted Forest
+							i(214171),	-- Boots of the Haunted Forest
+							i(214172),	-- Tunic of the Haunted Forest
+							i(214173),	-- Bracers of the Haunted Forest
 						},
 					}),
 					i(215248, {	-- Ensemble: Vestments of the Shattered Vale (Mythic)
@@ -3164,14 +3164,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215291, {	-- Ensemble: Battlegear of the Saurok Stalker (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214596),	-- Saurok Stalker's Bracers
-							i(214598),	-- Saurok Stalker's Hauberk
-							i(214599),	-- Saurok Stalker's Boots
-							i(214600),	-- Saurok Stalker's Helm
-							i(214601),	-- Saurok Stalker's Gauntlets
-							i(214602),	-- Saurok Stalker's Belt
-							i(214603),	-- Saurok Stalker's Spaulders
-							i(214604),	-- Saurok Stalker's Leggings
+							i(214578),	-- Saurok Stalker's Armbands
+							i(214579),	-- Saurok Stalker's Chestguard
+							i(214580),	-- Saurok Stalker's Sabatons
+							i(214582),	-- Saurok Stalker's Headguard
+							i(214583),	-- Saurok Stalker's Gloves
+							i(214584),	-- Saurok Stalker's Chain
+							i(214585),	-- Saurok Stalker's Pauldrons
+							i(214586),	-- Saurok Stalker's Legguards
 						},
 					}),
 					i(215296, {	-- Ensemble: Battlegear of the Unblinking Vigil (Mythic)
@@ -3206,14 +3206,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215192, {	-- Ensemble: Regalia of the Chromatic Hydra (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(213811),	-- Wristwraps of the Chromatic Hydra
-							i(213812),	-- Sash of the Chromatic Hydra
-							i(213813),	-- Mantle of the Chromatic Hydra
-							i(213814),	-- Trousers of the Chromatic Hydra
-							i(213815),	-- Crown of the Chromatic Hydra
-							i(213816),	-- Mitts of the Chromatic Hydra
-							i(213817),	-- Slippers of the Chromatic Hydra
-							i(213818),	-- Vestment of the Chromatic Hydra
+							i(213794),	-- Bracers of the Chromatic Hydra
+							i(213795),	-- Cord of the Chromatic Hydra
+							i(213797),	-- Shoulderpads of the Chromatic Hydra
+							i(213798),	-- Leggings of the Chromatic Hydra
+							i(213799),	-- Hood of the Chromatic Hydra
+							i(213800),	-- Gloves of the Chromatic Hydra
+							i(213801),	-- Sandals of the Chromatic Hydra
+							i(213802),	-- Robe of the Chromatic Hydra
 						},
 					}),
 					i(215195, {	-- Ensemble: Chronomancer Regalia (Mythic)
@@ -3249,14 +3249,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215254, {	-- Ensemble: Fire-Charm Vestments (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(214275),	-- Fire-Charm Wraps
-							i(214276),	-- Fire-Charm Jerkin
-							i(214277),	-- Fire-Charm Treads
-							i(214278),	-- Fire-Charm Cap
-							i(214279),	-- Fire-Charm Handguards
-							i(214280),	-- Fire-Charm Cinch
-							i(214281),	-- Fire-Charm Mantle
-							i(214282),	-- Fire-Charm Pants
+							i(214267),	-- Fire-Charm Legguards
+							i(214268),	-- Fire-Charm Spaulders
+							i(214269),	-- Fire-Charm Waistband
+							i(214270),	-- Fire-Charm Grips
+							i(214271),	-- Fire-Charm Cover
+							i(214272),	-- Fire-Charm Footguards
+							i(214273),	-- Fire-Charm Vest
+							i(214274),	-- Fire-Charm Bindings
 						},
 					}),
 					i(215259, {	-- Ensemble: Vestments of the Seven Sacred Seals (Mythic)
@@ -3312,14 +3312,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(95024),	-- Time-Lost Greaves
 							i(95010),	-- Hypersensitive Sollerets
 						--Note: These items are not required to check and see if the ensemble is locked for learning.  The above items determine if you can use the ensemble or not.  So commenting out for now but leaving the reference in case we change it.
-							i(214929),	-- Lightning Emperor's Girdle
-							i(214930),	-- Lightning Emperor's Pauldrons
-							i(214931),	-- Lightning Emperor's Gauntlets
-							i(214932),	-- Lightning Emperor's Breastplate
-							i(214933),	-- Lightning Emperor's Helm
-							i(214934),	-- Lightning Emperor's Legguards
-							i(214935),	-- Lightning Emperor's Bracers
-							i(214936),	-- Lightning Emperor's Sabatons
+							i(214921),	-- Lightning Emperor's Greatboots
+							i(214922),	-- Lightning Emperor's Armguards
+							i(214923),	-- Lightning Emperor's Greaves
+							i(214924),	-- Lightning Emperor's Warhelm
+							i(214925),	-- Lightning Emperor's Chestguard
+							i(214926),	-- Lightning Emperor's Grasp
+							i(214927),	-- Lightning Emperor's Shoulderguards
+							i(214928),	-- Lightning Emperor's Waistguard
 							--]]
 						},
 					}),
@@ -3495,14 +3495,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215211, {	-- Ensemble: Regalia of the Thousandfold Hells (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(213955),	-- Wristwraps of the Thousandfold Hells
-							i(213956),	-- Sash of the Thousandfold Hells
-							i(213957),	-- Mantle of the Thousandfold Hells
-							i(213958),	-- Trousers of the Thousandfold Hells
-							i(213959),	-- Crown of the Thousandfold Hells
-							i(213960),	-- Mitts of the Thousandfold Hells
-							i(213961),	-- Slippers of the Thousandfold Hells
-							i(213962),	-- Vestment of the Thousandfold Hells
+							i(213947),	-- Raiment of the Thousandfold Hells
+							i(213948),	-- Treads of the Thousandfold Hells
+							i(213949),	-- Handwraps of the Thousandfold Hells
+							i(213950),	-- Cowl of the Thousandfold Hells
+							i(213951),	-- Pants of the Thousandfold Hells
+							i(213952),	-- Amice of the Thousandfold Hells
+							i(213953),	-- Belt of the Thousandfold Hells
+							i(213954),	-- Cuffs of the Thousandfold Hells
 						},
 					}),
 					i(215213, {	-- Ensemble: Regalia of the Horned Nightmare (Mythic)
@@ -3537,14 +3537,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215342, {	-- Ensemble: Battleplate of the Last Mogu (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
 						["g"] = {
-							i(215009),	-- Greatbelt of the Last Mogu
-							i(215010),	-- Spaulders of the Last Mogu
-							i(215011),	-- Gauntlets of the Last Mogu
-							i(215012),	-- Battleplate of the Last Mogu
-							i(215013),	-- Greathelm of the Last Mogu
-							i(215014),	-- Legplates of the Last Mogu
-							i(215015),	-- Vambraces of the Last Mogu
-							i(215016),	-- Warboots of the Last Mogu
+							i(214993),	-- Waistguard of the Last Mogu
+							i(214994),	-- Shoulderguards of the Last Mogu
+							i(214995),	-- Handguards of the Last Mogu
+							i(214996),	-- Chestguard of the Last Mogu
+							i(214997),	-- Warhelm of the Last Mogu
+							i(214998),	-- Greaves of the Last Mogu
+							i(214999),	-- Armguards of the Last Mogu
+							i(215000),	-- Greatboots of the Last Mogu
 						},
 					}),
 					i(215345, {	-- Ensemble: Battleplate of the Prehistoric Marauder (Mythic)
