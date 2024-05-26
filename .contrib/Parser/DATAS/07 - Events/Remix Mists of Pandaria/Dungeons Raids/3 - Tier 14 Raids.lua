@@ -839,7 +839,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							e(742, {	-- Tsulong
 								["crs"] = { 62442 },	-- Tsulong
 								["groups"] = {
-									i(215978),	-- Starslicer (Blue Quality)
+									i(215978),	-- Starslicer (Blue Quality) (Alex: green have same itemID and was looted in HoF LFR 2nd wing)
 								},
 							}),
 							e(729, {	-- Lei Shi

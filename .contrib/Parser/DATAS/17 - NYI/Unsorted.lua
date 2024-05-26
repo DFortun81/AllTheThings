@@ -6119,7 +6119,6 @@ root(ROOTS.Unsorted, {
 					i(215480),	-- Korven's Crescent
 					i(215490),	-- Snowdrift Battleaxe
 					i(215494),	-- Yaungol Cleaver
-					i(215495),	-- Yaungol Hatchet
 					i(215496),	-- Yaungol Axe
 					i(215497),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215498),	-- Kura-Kura, Kazra'jin's Headtaker
@@ -6127,7 +6126,6 @@ root(ROOTS.Unsorted, {
 					i(215501),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215504),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
-					i(215510),	-- Warbringer's Chopper
 					i(215512),	-- Wallwatcher's Poleaxe
 					i(215513),	-- Wallwatcher's Axe
 					i(215517),	-- Uroe, Harbinger of Fear
@@ -6298,7 +6296,6 @@ root(ROOTS.Unsorted, {
 					i(215974),	-- Greatsword of Fallen Pride
 
 					i(215981),	-- Red Crane Greatsword
-					i(215985),	-- Satay's Greatsword
 					i(215986),	-- Blade of Broken Chains
 					i(215988),	-- Jinyu Greatsword
 					i(215989),	-- Jinyu Flamberge

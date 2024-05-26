@@ -114,6 +114,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215758),	-- Saurok Scepter
 					i(215590),	-- Shomi's Shanker
 					i(215957),	-- Tian Monastery Saber
+					i(215495),	-- Yaungol Hatchet
 				}),
 			}),
 		},
