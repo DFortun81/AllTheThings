@@ -107,6 +107,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(WEAPONS, {
+				-- TODO: Normal / heroic split? Can weapons drop or are they only in boxes?
 				i(215492),	-- Axe of Iron Might (normal scenario, drop)
 				i(215757),	-- Carapace Crusher (maybe hc only?)
 				i(215752),	-- Ced's Basher
@@ -116,10 +117,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215706),	-- Klaxxi Ambershot
 				i(215786),	-- Lerah's Maul
 				i(215648),	-- Ner'onok's Katar (hc scenario)
+				i(215956),	-- Ook's Hozen Cutter (hc scenario)
 				i(215739),	-- Shomi's Scepter (hc scenario)
 				i(216580),	-- Skyrider's Shield (hc scenario)
 				i(215885),	-- Teachings of Shaohao
+				i(215538),	-- Tempestuous Shortbow (hc scenario)
 				i(215594),	-- Warbringer's Blade
+				i(215808),	-- Yak-Herder's Longspear (normal scenario)
+				i(215707),	-- Yan-Zhu's Rifle (hc scenario)
 			}),
 		}),
 		-- Scenario Maps

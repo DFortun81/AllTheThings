@@ -119,6 +119,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215870),	-- Amberweaver's Rod
 					i(215744),	-- Cloudfall Scepter
 					i(215867),	-- Diviner's Spire
+					i(215979),	-- Faded Forest Falchion
 					i(210337),	-- Faded Forest Hatchet
 					i(215941),	-- Faded Forest Sword
 					i(215642),	-- Fangs of Despair
@@ -128,6 +129,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216025),	-- Pandaren Cleaver
 					i(216545),	-- Pandaren Deflector
 					i(216441),	-- Pandaren Manual
+					i(215598),	-- Regal Slicer
 					i(215485),	-- Shomi's Hatchet
 					i(215739),	-- Shomi's Scepter
 					i(215781),	-- Sumprush Maul

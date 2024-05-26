@@ -125,18 +125,27 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					------------------------------------------------------------------------
 					-- Blue Quality LFR Weapons can only come from Caches (Tsulong, Lei Shi)
 					-- Maybe Bugged, Maybe shared with Normal
+					-- Yuni on Discord: i(215727) gotten as normal drop, previously reported as LFR (currently sourced in both spots)
 					------------------------------------------------------------------------
+					i(215582),	-- Blade of the Seven Stars (ToES LFR)
+					i(215584),	-- Blade of the Seven Stars (MSV LFR)
 					i(215793),	-- Bo-Ris, Spear of Night (HoF LFR)
 					i(210641),	-- Bo-Ris, Spear of Night
+					i(215839),	-- Brazier of the Eternal Empire (MSV LFR)
 					i(215842),	-- Brazier of the Eternal Empire (HoF LFR)
+					i(215905),	-- Do-tharak, the Foebreaker (MSV LFR)
 					i(215481),	-- Elegion, the Star Cleaver (ToES LFR)
+					i(215528),	-- Fang Kung, Emperor's Legacy (MSV LFR / HoF LFR)
+					i(215531),	-- Fang Kung, Emperor's Legacy (MSV LFR / HoF LFR)
 					i(215636),	-- Fist of Shek'zeer (HoF LFR)
 					i(215727),	-- Galvanized Stormcrusher
 					i(215632),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
 					i(215635),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
-					i(215851),	-- Gao-Rei, Staff of the Protector (HoF LFR)
+					i(215851),	-- Gao-Rei, Staff of the Protector (MSV LFR / HoF LFR)
+					i(215697),	-- Grand Imperial Rifle (HoF LFR)
 					i(211160),	-- Greatsword of the Iron Legion
-					i(215857),	-- Jin'ya, Orb of the Watercaller (HoF LFR)
+					i(215854),	-- Jin'ya, Orb of the Watercaller (MSV LFR)
+					i(215857),	-- Jin'ya, Orb of the Watercaller (MSV LFR / HoF LFR)
 					i(215930),	-- Kilrak, Fangs of Terror (HoF LFR)
 					i(215735),	-- Kri'tak, Scepter of the Swarm
 					i(215935),	-- Loshan, Fear Incarnate
@@ -145,6 +154,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215801),	-- Qiang's Unbreakable Polearm (HoF LFR)
 					i(215588),	-- Regail's Fulminating Blade (HoF LFR)
 					i(215926),	-- Scimitar of Seven Stars
+					i(215928),	-- Scimitar of Seven Stars (MSV LFR)
 					i(215505),	-- Shin'ka, the Tyrant's Greataxe
 					i(215593),	-- Soulsever (HoF LFR)
 					i(215975),	-- Starslicer (Terrace LFR or HoF LFR 1st wing)
@@ -277,23 +287,31 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215848),	-- Fearspeaker's Warstaff
 					i(215850),	-- Fearspeaker's Warstaff
 					i(215637),	-- Fist of Shek'zeer
+					i(215727),	-- Galvanized Stormcrusher
 					i(215730),	-- Galvanized Stormcrusher
 					i(216563),	-- Gaze of the Ancient
 					i(215633),	-- Gara'kal, Claw of the Spiritbinder
 					i(215852),	-- Gao-Rei, Staff of the Protector
 					i(215698),	-- Grand Imperial Rifle
+					i(216413),	-- Iron Qon's Knife
+					i(215900),	-- Jalak's Spirit Staff
+					i(215855),	-- Jin'ya, Orb of the Watercaller
 					i(215932),	-- Kilrak, Fangs of Terror
 					i(215735),	-- Kri'tak, Scepter of the Swarm (confirmed 23.05.2024)
 					i(215737),	-- Kri'tak, Scepter of the Swarm (Alex: was also looted in MSV LFR 1st wing)
+					i(215626),	-- Megaera's Fang
 					i(216529),	-- Protection of the Emperor
 					i(215799),	-- Qiang's Unbreakable Polearm
 					i(215586),	-- Regail's Fulminating Blade
 					i(215925),	-- Scimitar of Seven Stars
 					i(215506),	-- Shin'ka, the Tyrant's Greataxe
 					i(215592),	-- Soulsever
+					i(215887),	-- Soulwood Spire
+					i(216447),	-- Sphere of Arcing Lightning
 					i(216561),	-- Steelskin, Qiang's Bulwark
 					i(215732),	-- Tihan, Scepter of the Sleeper
 					i(215844),	-- Waterspeaker's Staff
+					i(215672),	-- Zephyrcall Censer
 				}),
 			}),
 			d(DIFFICULTY.RAID.HEROIC, {
@@ -412,12 +430,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215841),	-- Brazier of the Eternal Empire
 					i(215907),	-- Dotharak, the Foebreaker
 					i(215483),	-- Elegion, the Star Cleaver
+					i(215530),	-- Fang Kung, Emperor's Legacy
 					i(215849),	-- Fearspeaker's Warstaff
 					i(215638),	-- Fist of Shek'zeer
 					i(215729),	-- Galvanized Stormcrusher
 					i(215634),	-- Gara'kal, Claw of the Spiribinder
 					i(215835),	-- Gao-Rei, Staff of the Protector
 					i(215969),	-- Greatsword of the Iron Legion
+					i(215789),	-- Kazra'jin's Maul
 					i(215931),	-- Kilrak, Fangs of Terror
 					i(215736),	-- Kri'tak, Scepter of the Swarm
 					i(215933),	-- Loshan, Fear Incarnate
@@ -426,7 +446,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215507),	-- Shin'ka, the Tyrant's Greataxe
 					i(215977),	-- Star Slicer (Unique!)
 					i(216559),	-- Steelskin, Qiang's Bulwark
+					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215999),	-- Torch of the Starkspark
+					i(215516),	-- Uroe, Harbinger of Fear
+					i(215990),	-- Zerat, Soulburner's Greatsword
 				}),
 			}),
 			inst(317, {	-- Mogu'shan Vaults

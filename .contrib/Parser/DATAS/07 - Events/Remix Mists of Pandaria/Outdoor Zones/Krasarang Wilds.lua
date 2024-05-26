@@ -287,6 +287,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215484),	-- Boggeo's Ceremonial Axe
 					i(215858),	-- Diviner's Staff
 					i(215742),	-- Faded Forest Crusher
+					i(215702),	-- Howling Rifle
 					i(216417),	-- Hozen Shanker
 					i(215740),	-- Jinyu Bonebreaker
 					i(215643),	-- Klaxxi Pincers

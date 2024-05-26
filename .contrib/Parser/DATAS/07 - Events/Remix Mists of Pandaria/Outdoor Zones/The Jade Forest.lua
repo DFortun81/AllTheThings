@@ -322,6 +322,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(210342),	-- Bataari Hacker
 					i(215980),	-- Binan Falchion
 					i(215641),	-- Claws of the Wakener
+					i(215558),	-- Cloudbender's Crossbow
 					i(215938),	-- Cloudfall Edge
 					i(215949),	-- Crane Temple Sword
 					i(215803),	-- Dragonguard's Glaive
@@ -331,6 +332,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215780),	-- Hatred's Warmace
 					i(211163),	-- Hidden Pass Knuckles
 					i(216418),	-- Hozen Dagger
+					i(215658),	-- Hozen Effigy
 					i(215487),	-- Hozen Waraxe
 					i(215747),	-- Mace of the Rikkitun
 					i(210638),	-- Mushan Hewer
@@ -339,6 +341,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216438),	-- Pandaren Manuscript
 					i(216542),	-- Pandaren Protector
 					i(216479),	-- Pandaren Waveblade
+					i(211149),	-- Rikkitun Warbow
 					i(215595),	-- Saltscale Shanker
 					i(216611),	-- Seawatch Speargun
 					i(215601),	-- Spike of the Rikkitun
@@ -347,6 +350,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215942),	-- Swordmistress' Edge
 					i(216471),	-- Tian Monastery Channel
 					i(215863),	-- Torch of Midnight
+					i(215700),	-- Trailseeker Longrifle
 				}),
 			}),
 		},

@@ -118,6 +118,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215536),	-- Ennadee's Longbow
 			i(215535),	-- Featherdraw Warbow
 			i(215806),	-- Ghostheart Warspear
+			i(215883),	-- Greatstaff of the Path
+			i(216578),	-- Impervious Bulwark
 			i(215983),	-- Jade Grand Falchion
 			i(215755),	-- Je'lyu, Scepter of the Serpent
 			i(215754),	-- Jol'Grum's Mace

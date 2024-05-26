@@ -318,8 +318,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 					n(WEAPONS, {
 						i(215835),	-- Drakebinder's Spire
+						i(215663),	-- Lucky Cricket Cage
 						i(215473),	-- Malkorok's Headtaker
+						i(215573),	-- Nazgrim's Shanker
+						i(215659),	-- Prophecies of Y'Shaarj
 						i(215830),	-- Rod of the Megantholithic Apparatus
+						i(215667),	-- Sha-Touched Globule
+						i(211161),	-- Sphere of Immerseus
+						i(210338),	-- Spire of Supremacy
 					}),
 					header(HEADERS.Achievement, 8458, {	-- Vale of Eternal Sorrows
 						e(852, {	-- Immerseus
@@ -504,17 +510,26 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					n(WEAPONS, {
+						i(215918),	-- Arcweaver Spellblade
+						i(215836),	-- Drakebinder's Spire
 						i(215777),	-- Gar'tok, Might of the Faithful
+						i(215795),	-- Halberd of Inner Darkness
+						i(215470),	-- Haromm's Frozen Battleaxe
+						i(215716),	-- Kardris' Scepter
 						i(215478),	-- Korven's Crescent
 						i(215664),	-- Lucky Cricket Cage
 						i(215721),	-- Mace of the Old Ones
 						i(215570),	-- Norushen's Dagger
 						i(215832),	-- Pride's Gaze
 						i(215828),	-- Rod of the Megantholithic Apparatus
+						i(215668),	-- Sha-Touched Globule
+						i(215724),	-- Siegecrafter's Forge Drill
+						i(215629),	-- Softfoot's Iron Claw
 						i(215712),	-- Sphere of Immerseus
 						i(215823),	-- Spire of Supremacy
 						i(215818),	-- Staff of Corrupted Waters
 						i(216547),	-- Visage of Dread
+						i(215502),	-- Xal'atoh, Malformed Image of Gorehowl
 					}),
 					e(852, {	-- Immerseus
 						["crs"] = { 71543 },	-- Immerseus
@@ -712,12 +727,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216552),	-- Noreshen Tower Shield
 						i(215829),	-- Rod of the Megantholithic Apparatus
 						i(215669),	-- Sha-Touched Globule
+						i(215725),	-- Siegecrafter's Forge Drill
 						i(215819),	-- Staff of Corrupted Waters
+						i(215713),	-- Sphere of Immerseus
 						i(215825),	-- Spire of Supreamcy
 						i(215833),	-- Pride's Gaze
 						i(215661),	-- Prophecies of Y'shaarj
 						i(215630),	-- Softfoot's Iron Claw
-						i(215503),	-- Xal'atoh
+						i(215503),	-- Xal'atoh, Malformed Image of Gorehowl
 					}),
 					e(852, {	-- Immerseus
 						["crs"] = { 71543 },	-- Immerseus

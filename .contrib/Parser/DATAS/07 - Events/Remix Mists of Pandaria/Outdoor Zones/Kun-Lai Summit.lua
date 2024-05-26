@@ -135,10 +135,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215488),	-- Mountainscaler Hatchet
 					i(215597),	-- Mushan Slicer
 					i(216022),	-- Pandaren Axe
+					i(216544),	-- Pandaren Shield
 					i(215805),	-- Serpentguard Spear
 					i(210335),	-- Shado-Pan Dagger
 					i(215603),	-- Sha-Warped Slicer
 					i(215869),	-- Waterweaver's Staff
+					i(215809),	-- Yaungol Warspear
 				}),
 			}),
 		},

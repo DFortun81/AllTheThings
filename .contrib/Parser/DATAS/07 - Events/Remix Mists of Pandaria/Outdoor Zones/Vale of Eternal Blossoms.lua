@@ -115,6 +115,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215069),	-- Cragchewer Warhelm
 				}),
 				n(WEAPONS, {
+					i(215865),	-- Fogspeaker Conduit
 					i(215947),	-- Inkgill Sword
 					i(215740),	-- Jinyu Bonebreaker
 					i(215532),	-- Mogu Warbow
