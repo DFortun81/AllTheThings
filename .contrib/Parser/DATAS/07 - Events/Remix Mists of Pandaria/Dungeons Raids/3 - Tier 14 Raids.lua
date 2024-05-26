@@ -165,8 +165,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215505),	-- Shin'ka, the Tyrant's Greataxe
 					i(215591),	-- Soulsever (MSV LFR)
 					i(215593),	-- Soulsever (HoF LFR)
-					i(215976),	-- Starslicer
 					i(215975),	-- Starslicer (Terrace LFR or HoF LFR 1st wing)
+					i(215976),	-- Starslicer
+					i(215978),	-- Starslicer (Gold: Blue Quality / Lei Shi & Tsulong => So ToES LFR?) (Alex: green have same itemID and was looted in HoF LFR 2nd wing)
 					i(215693),	-- Taoren, the Malignant (HoF LFR)
 					i(215695),	-- Taoren, the Malignant (MSV LFR)
 					i(215696),	-- Taoren, the Malignant (HoF LFR)
@@ -839,15 +840,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							}),
 							e(742, {	-- Tsulong
 								["crs"] = { 62442 },	-- Tsulong
-								["groups"] = {
-									i(215978),	-- Starslicer (Blue Quality) (Alex: green have same itemID and was looted in HoF LFR 2nd wing)
-								},
 							}),
 							e(729, {	-- Lei Shi
 								["crs"] = { 62983 },	-- Lei Shi
-								["groups"] = {
-									i(215978),	-- Starslicer (Blue Quality)
-								},
 							}),
 							e(709, {	-- Sha of Fear
 								["crs"] = { 60999 },	-- Sha of Fear
