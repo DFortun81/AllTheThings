@@ -554,16 +554,28 @@ app.SetSkipLevel = function(level)
 end
 
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
-local SkipFillingPurchasesLevelByItemID = {
-	[137642] = 2,	-- Mark of Honor
-	[21100] = 1,	-- Coin of Ancestry
-	[23247] = 1,	-- Burning Blossom
-	[49927] = 1,	-- Love Token
+local SkipPurchases = {
+	itemID = {
+		[137642] = 2,	-- Mark of Honor
+		[21100] = 1,	-- Coin of Ancestry
+		[23247] = 1,	-- Burning Blossom
+		[49927] = 1,	-- Love Token
+	},
+	currencyID = {
+		[2778] = 2,		-- Bronze
+	},
 }
-app.ShouldFillPurchasesForItemID = function(itemID)
-	local reqSkipLevel = itemID and SkipFillingPurchasesLevelByItemID[itemID];
-	if reqSkipLevel and CurrentSkipLevel < reqSkipLevel then
-		return false;
+app.ShouldFillPurchases = function(group)
+	local val
+	for key,values in pairs(SkipPurchases) do
+		val = group[key]
+		if val then
+			val = values[val]
+			if not val then return true end
+			if CurrentSkipLevel < val then
+				return false;
+			end
+		end
 	end
 	return true;
 end

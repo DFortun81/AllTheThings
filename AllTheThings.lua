@@ -3227,7 +3227,7 @@ end
 -- Determines searches required for costs using this group
 local function DeterminePurchaseGroups(group, FillData)
 	-- do not fill purchases on certain items, can skip the skip though based on a level
-	if not app.ShouldFillPurchasesForItemID(group.itemID) then return end
+	if not app.ShouldFillPurchases(group) then return end
 
 	local collectibles = group.costCollectibles;
 	if collectibles and #collectibles > 0 then
@@ -10692,7 +10692,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			-- app.PrintDebug("Rebuild",self.mapID);
 			local currentMaps, mapID = {}, self.mapID
 			results = SearchForField("mapID", mapID);
-			
+
 			-- If there's a timerunning event going on...
 			local timerunningSeasonEventID = GetTimerunningSeasonEventID();
 			if timerunningSeasonEventID and app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
