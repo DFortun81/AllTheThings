@@ -323,6 +323,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215732),	-- Tihan, Scepter of the Sleeper
 					i(215844),	-- Waterspeaker's Staff
 					i(215672),	-- Zephyrcall Censer
+					i(215674),	-- Zephyrcall Censer (MSV LFR 1st wing)
 				}),
 			})),
 			d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["modID"] = 0 }, {

@@ -6201,7 +6201,6 @@ root(ROOTS.Unsorted, {
 					i(215662),	-- Prophecies of Y'Shaarj
 					i(215670),	-- Sha-Touched Globule
 					i(215673),	-- Zephyrcall Censer
-					i(215674),	-- Zephyrcall Censer
 					i(215675),	-- Wakener's Lantern
 					i(215677),	-- Jinyu's Light
 					i(215678),	-- Grummle Lantern
