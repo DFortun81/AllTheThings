@@ -5902,7 +5902,6 @@ root(ROOTS.Unsorted, {
 						i(213799),	-- Hood of the Chromatic Hydra
 						i(213800),	-- Gloves of the Chromatic Hydra
 						i(213801),	-- Sandals of the Chromatic Hydra
-						i(213802),	-- Robe of the Chromatic Hydra
 
 						-- PRIEST
 						i(213875),	-- Cuffs of the Exorcist
@@ -6191,7 +6190,6 @@ root(ROOTS.Unsorted, {
 					i(215628),	-- Softfoot's Iron Claw
 					i(215631),	-- Softfoot's Iron Claw
 					i(215640),	-- Barbs of the Rikkitun
-					i(215647),	-- Ka'eng, Fang of Shadow
 					i(215650),	-- Pandaren Claw
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
 					i(215655),	-- Amun-Thoth, Sul's Spiritrender
@@ -6216,7 +6214,6 @@ root(ROOTS.Unsorted, {
 					i(215694),	-- Taoren, the Malignant
 					i(215699),	-- Grand Imperial Rifle
 					i(215701),	-- Jadewatch Rifle
-					i(215703),	-- Pandaren Rifle
 					i(215708),	-- Roar of the Quillen
 					i(215709),	-- Roar of the Quillen
 					i(215710),	-- Roar of the Quillen
@@ -6224,8 +6221,6 @@ root(ROOTS.Unsorted, {
 					i(215715),	-- Kardris' Scepter
 					i(215720),	-- Mace of the Old Ones
 					i(215723),	-- Siegecrafter's Forge Drill
-
-
 					i(215753),	-- Gao's Kegbreaker
 					i(215756),	-- Klaxxi Smasher
 					i(215759),	-- Saurok Mace
@@ -6284,7 +6279,6 @@ root(ROOTS.Unsorted, {
 					i(215953),	-- Siege Captain's Blade
 					i(215958),	-- Tian Monastery Edge
 					i(215959),	-- Tian Monastery Sword
-					i(215960),	-- Tian Monastery Scimitar
 					i(215961),	-- Qon's Iron Decree
 					i(215962),	-- Qon's Iron Decree
 					i(215963),	-- Qon's Iron Decree
@@ -6293,7 +6287,6 @@ root(ROOTS.Unsorted, {
 					i(215971),	-- Greatsword of Fallen Pride
 					i(215972),	-- Greatsword of Fallen Pride
 					i(215974),	-- Greatsword of Fallen Pride
-
 					i(215981),	-- Red Crane Greatsword
 					i(215986),	-- Blade of Broken Chains
 					i(215988),	-- Jinyu Greatsword
@@ -6301,7 +6294,6 @@ root(ROOTS.Unsorted, {
 					i(215991),	-- Zerat, Soulburner's Greatsword
 					i(215993),	-- Zerat, Soulburner's Greatsword
 					i(215994),	-- Mistspinner's Channel
-
 					i(215996),	-- Mistspinner's Channel
 					i(215998),	-- Torch of the Starspark
 					i(216001),	-- Mountainsage Rod
