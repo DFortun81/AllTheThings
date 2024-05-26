@@ -827,6 +827,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 14.1, 76.9, VALE_OF_ETERNAL_BLOSSOMS },
 						["provider"] = { "n", 62112 },	-- Bowmistress Li
 						["g"] = {
+							i(82807),	-- Shado-Pan Dragon Gun (QI!)
 							i(84037),	-- Motherseed Gloves
 							i(84038),	-- Sapfly Gloves
 							i(84039),	-- Withered Wood Gauntlets

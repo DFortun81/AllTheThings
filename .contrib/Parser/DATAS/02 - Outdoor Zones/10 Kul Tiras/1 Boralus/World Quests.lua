@@ -217,6 +217,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 73.21, 11.01, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["groups"] = {
+					i(157540),	-- Battered S.E.L.F.I.E. Camera (QI!)
+				},
 			}),
 			q(50792, {	-- Taking Bribes
 				["lvl"] = 120,

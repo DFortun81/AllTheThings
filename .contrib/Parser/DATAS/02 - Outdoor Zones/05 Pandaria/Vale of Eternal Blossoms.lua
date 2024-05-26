@@ -461,6 +461,9 @@ root(ROOTS.Zones, {
 							37188,	-- A Flash of Bronze...	(NYI)
 							37194,	-- A Flash of Bronze...	(NYI)
 						},
+						["groups"] = {
+							i(104110),	-- Curious Bronze Timepiece (QI!)
+						},
 					}),
 					q(30635, {	-- Killing the Quilen
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },

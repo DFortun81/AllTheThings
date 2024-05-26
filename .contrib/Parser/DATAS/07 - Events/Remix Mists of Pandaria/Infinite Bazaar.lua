@@ -1613,6 +1613,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(104253, {	-- Kor'kron Juggernaut (MOUNT!)
 					["cost"] = {{"c", BRONZE, 38500}},
 				}),
+				i(224374, {	-- Reins of the Thundering Ruby Cloud Serpent (MOUNT!)
+					["cost"] = {{"c", BRONZE, 38500}},
+				}),
 				i(94229, {	-- Slate Primordial Direhorn (MOUNT!)
 					["cost"] = {{"c", BRONZE, 38500}},
 				}),
