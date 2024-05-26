@@ -138,7 +138,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					ach(19921),		-- Shado-Pan Assault
 				}),
 				d(DIFFICULTY.RAID.LFR, {
-					n(ARMOR, {
+					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
 						filter(CLOTH, {
 							-- MAGE
 							i(213803),	-- Raiment of the Chromatic Hydra
@@ -229,8 +229,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215007),	-- Pauldrons of the Last Mogu
 							i(215008),	-- Girdle of the Last Mogu
 						}),
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(215652),	-- Amun-Thoth, Sul's Spiritrender
 						i(216461),	-- Caduceus of Pure Moods
 						i(216463),	-- Dinomancer's Spire
@@ -249,7 +249,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215545),	-- Tortoiseshell Longbow
 						i(215964),	-- Qon's Iron Decree
 						i(215773),	-- Zeeg's Ancient Kegbreaker
-					}),
+					})),
 					header(HEADERS.Achievement, 8069, {	-- Last Stand of the Zandalari
 						e(827, {	-- Jin'rokh the Breaker
 							["crs"] = { 69465 },	-- Jin'rokh the Breaker
@@ -317,9 +317,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.NORMAL, {
-					n(ARMOR, {
-					}),
-					n(WEAPONS, {
+					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
+					})),
+					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(216426),	-- Acid-Spine Bonebreaker
 						i(215653),	-- Amun-Thoth, Sul's Spiritrender
 						i(216405),	-- Blade of the Sanguine Ritual
@@ -348,7 +348,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215518),	-- Uroe, Harbringer of Fear
 						i(215774),	-- Zeeg's Ancient Kegbreaker
 						i(215992),	-- Zerat, Soulburner's Greatsword
-					}),
+					})),
 					e(827, {	-- Jin'rokh the Breaker
 						["crs"] = { 69465 },	-- Jin'rokh the Breaker
 					}),
@@ -409,7 +409,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.HEROIC, {
-					n(ARMOR, {
+					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
 						filter(CLOTH, {
 							-- MAGE
 							i(213794),	-- Bracers of the Chromatic Hydra
@@ -509,10 +509,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214927),	-- Lightning Emperor's Shoulderguards
 							i(214928),	-- Lightning Emperor's Waistguard
 						}),
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(216468),	-- Suen-Wo, Spire of the Rising Sun
-					}),
+					})),
 					e(827, {	-- Jin'rokh the Breaker
 						["crs"] = { 69465 },	-- Jin'rokh the Breaker
 					}),

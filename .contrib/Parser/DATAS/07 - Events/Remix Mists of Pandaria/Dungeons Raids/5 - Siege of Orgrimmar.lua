@@ -206,7 +206,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.LFR, {
-					n(ARMOR, {
+					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
 						filter(CLOTH, {
 							-- MAGE
 							i(213827),	-- Chronomancer Cuffs
@@ -315,8 +315,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215031),	-- Bracers of the Prehistoric Marauder
 							i(215032),	-- Sabatons of the Prehistoric Marauder
 						}),
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(215835),	-- Drakebinder's Spire
 						i(215663),	-- Lucky Cricket Cage
 						i(215473),	-- Malkorok's Headtaker
@@ -326,7 +326,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215667),	-- Sha-Touched Globule
 						i(211161),	-- Sphere of Immerseus
 						i(210338),	-- Spire of Supremacy
-					}),
+					})),
 					header(HEADERS.Achievement, 8458, {	-- Vale of Eternal Sorrows
 						e(852, {	-- Immerseus
 							["crs"] = { 71543 },	-- Immerseus
@@ -399,7 +399,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.NORMAL, {
-					n(ARMOR, {
+					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
 						filter(CLOTH, {
 							-- MAGE
 							i(213835),	-- Chronomancer Vestment
@@ -508,8 +508,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215039),	-- Vambraces of the Prehistoric Marauder
 							i(215040),	-- Warboots of the Prehistoric Marauder
 						}),
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(215918),	-- Arcweaver Spellblade
 						i(215836),	-- Drakebinder's Spire
 						i(215777),	-- Gar'tok, Might of the Faithful
@@ -530,7 +530,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215818),	-- Staff of Corrupted Waters
 						i(216547),	-- Visage of Dread
 						i(215502),	-- Xal'atoh, Malformed Image of Gorehowl
-					}),
+					})),
 					e(852, {	-- Immerseus
 						["crs"] = { 71543 },	-- Immerseus
 					}),
@@ -598,7 +598,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.HEROIC, {
-					n(ARMOR, {
+					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
 						filter(CLOTH, {
 							-- MAGE
 							i(213819),	-- Chronomancer Robe
@@ -707,8 +707,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215023),	-- Shoulderguards of the Prehistoric Marauder
 							i(215024),	-- Waistguard of the Prehistoric Marauder
 						}),
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(215919),	-- Arcweaver Spellblade
 						i(215837),	-- Drakebinder's Spire
 						i(215552),	-- Death Lotus Repeater
@@ -735,7 +735,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215661),	-- Prophecies of Y'shaarj
 						i(215630),	-- Softfoot's Iron Claw
 						i(215503),	-- Xal'atoh, Malformed Image of Gorehowl
-					}),
+					})),
 					e(852, {	-- Immerseus
 						["crs"] = { 71543 },	-- Immerseus
 					}),
@@ -803,7 +803,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				d(DIFFICULTY.RAID.MYTHIC, {
-					n(ARMOR, {
+					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
 						filter(CLOTH, {
 							-- MAGE
 							i(213835),	-- Chronomancer Vestment
@@ -912,8 +912,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215039),	-- Vambraces of the Prehistoric Marauder
 							i(215040),	-- Warboots of the Prehistoric Marauder
 						}),
-					}),
-					n(WEAPONS, {
+					})),
+					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(215920),	-- Arcweaver Spellblade
 						i(215838),	-- Drakebinder's Spire
 						i(215779),	-- Gar'tok, Might of the Faithful
@@ -929,7 +929,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216558),	-- Shield of the Fallen General
 						i(215821),	-- Staff of Corrupted Waters
 						i(215714),	-- Sphere of Immerseus
-					}),
+					})),
 					e(852, {	-- Immerseus
 						["crs"] = { 71543 },	-- Immerseus
 					}),
