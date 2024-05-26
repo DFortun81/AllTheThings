@@ -6134,7 +6134,6 @@ root(ROOTS.Unsorted, {
 					i(215502),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215503),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215504),	-- Xal'atoh, Malformed Image of Gorehowl
-					i(215507),	-- Shin'ka, the Tyrant's Greataxe
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
 					i(215510),	-- Warbringer's Chopper
 					i(215512),	-- Wallwatcher's Poleaxe

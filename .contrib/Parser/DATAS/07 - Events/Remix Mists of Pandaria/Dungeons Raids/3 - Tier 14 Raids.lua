@@ -423,6 +423,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215933),	-- Loshan, Fear Incarnate
 					i(215800),	-- Qiang's Unbreakable Polearm
 					i(215927),	-- Scimitar of Seven Stars
+					i(215507),	-- Shin'ka, the Tyrant's Greataxe
 					i(215977),	-- Star Slicer (Unique!)
 					i(216559),	-- Steelskin, Qiang's Bulwark
 					i(215999),	-- Torch of the Starkspark
