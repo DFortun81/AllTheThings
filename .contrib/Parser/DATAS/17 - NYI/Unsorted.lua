@@ -6252,7 +6252,6 @@ root(ROOTS.Unsorted, {
 					i(215678),	-- Grummle Lantern
 					i(215680),	-- Hope's Effigy
 					i(215682),	-- Swarmkeeper's Channel
-					i(215684),	-- Mantid Tuning Fork
 					i(215685),	-- Klaxxi Channeling Fork
 					i(215686),	-- Eye of the Hydra
 					i(215687),	-- Eye of the Hydra
@@ -6285,7 +6284,6 @@ root(ROOTS.Unsorted, {
 					i(215729),	-- Galvanized Stormcrusher
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215734),	-- Kri'tak, Scepter of the Swarm
-					i(215743),	-- Sunsoul Smasher
 					i(215748),	-- Fireblaze Mace
 					i(215753),	-- Gao's Kegbreaker
 					i(215756),	-- Klaxxi Smasher
@@ -6343,7 +6341,6 @@ root(ROOTS.Unsorted, {
 					i(215877),	-- Cloudscorcher Staff
 					i(215880),	-- Darkstaff of Ruin
 					i(215883),	-- Greatstaff of the Path
-					i(215884),	-- Firedancer's Staff
 					i(215887),	-- Soulwood Spire
 					i(215888),	-- Soulwood Spire
 					i(215890),	-- Hopespreader's Staff
@@ -6411,7 +6408,6 @@ root(ROOTS.Unsorted, {
 					i(215994),	-- Mistspinner's Channel
 					i(215995),	-- Mistspinner's Channel
 					i(215996),	-- Mistspinner's Channel
-					i(215997),	-- Torch of the Starspark
 					i(215998),	-- Torch of the Starspark
 					i(216001),	-- Mountainsage Rod
 					i(216002),	-- Grummle Rod

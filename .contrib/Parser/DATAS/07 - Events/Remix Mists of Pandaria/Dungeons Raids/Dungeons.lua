@@ -122,6 +122,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215954),	-- Kor'dok's Sword
 				i(215882),	-- Lorewalker's Staff
 				i(215704),	-- Mantid Firebelcher
+				i(215684),	-- Mantid Tuning Fork
 				i(215613),	-- Mogu Lord's Blade
 				i(215604),	-- Mogu Severer
 				i(215879),	-- Mountainsage Spire

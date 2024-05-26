@@ -343,6 +343,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216611),	-- Seawatch Speargun
 					i(215601),	-- Spike of the Rikkitun
 					i(215866),	-- Staff of Focus
+					i(215743),	-- Sunsoul Smasher
 					i(215942),	-- Swordmistress' Edge
 					i(216471),	-- Tian Monastery Channel
 					i(215863),	-- Torch of Midnight

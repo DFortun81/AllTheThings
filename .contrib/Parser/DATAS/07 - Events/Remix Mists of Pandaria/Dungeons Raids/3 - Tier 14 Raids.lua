@@ -152,6 +152,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215695),	-- Taoren, the Malignant (MSV LFR)
 					i(215696),	-- Taoren, the Malignant (HoF LFR)
 					i(215731),	-- Tihan, Scepter of the Sleeper (MSV LFR)
+					i(215997),	-- Torch of the Starspark (MSV LFR (1st wing))
 					i(216000),	-- Torch of the Starspark (HoF LFR)
 					i(215843),	-- Waterspeaker's Staff
 				}),
@@ -283,7 +284,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215698),	-- Grand Imperial Rifle
 					i(215932),	-- Kilrak, Fangs of Terror
 					i(215735),	-- Kri'tak, Scepter of the Swarm (confirmed 23.05.2024)
-					i(215737),	-- Kri'tak, Scepter of the Swarm
+					i(215737),	-- Kri'tak, Scepter of the Swarm (Alex: was also looted in MSV LFR 1st wing)
 					i(216529),	-- Protection of the Emperor
 					i(215799),	-- Qiang's Unbreakable Polearm
 					i(215586),	-- Regail's Fulminating Blade
