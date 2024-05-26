@@ -6114,12 +6114,10 @@ root(ROOTS.Unsorted, {
 					i(215946),	-- Valiant's Honorblade
 					i(215469),	-- Haromm's Frozen Battleaxe
 					i(215472),	-- Haromm's Frozen Battleaxe
-					i(215474),	-- Malkorok's Headtaker
 					i(215476),	-- Malkorok's Headtaker
 					i(215477),	-- Korven's Crescent
 					i(215480),	-- Korven's Crescent
 					i(215490),	-- Snowdrift Battleaxe
-					i(215493),	-- Scalebreaker Battleaxe
 					i(215494),	-- Yaungol Cleaver
 					i(215495),	-- Yaungol Hatchet
 					i(215496),	-- Yaungol Axe
@@ -6140,7 +6138,6 @@ root(ROOTS.Unsorted, {
 					i(215523),	-- Dagryn's Longbow
 					i(215524),	-- Hisek's Longbow
 					i(215525),	-- Hisek's Longbow
-					i(215526),	-- Hisek's Longbow
 					i(215527),	-- Hisek's Longbow
 					i(215529),	-- Fang Kung, Emperor's Legacy
 					i(215533),	-- Marista Longbow
@@ -6155,7 +6152,6 @@ root(ROOTS.Unsorted, {
 					i(215548),	-- Miracoran, the Dissonant Chord
 					i(215550),	-- Miracoran, the Dissonant Chord
 					i(215551),	-- Death Lotus Repeater
-					i(215552),	-- Death Lotus Repeater
 					i(215553),	-- Death Lotus Repeater
 					i(215554),	-- Death Lotus Repeater
 					i(215555),	-- Crossbow of Forgotten Glory
@@ -6231,8 +6227,8 @@ root(ROOTS.Unsorted, {
 					i(215715),	-- Kardris' Scepter
 					i(215720),	-- Mace of the Old Ones
 					i(215723),	-- Siegecrafter's Forge Drill
-					i(215734),	-- Kri'tak, Scepter of the Swarm
-					i(215748),	-- Fireblaze Mace
+
+
 					i(215753),	-- Gao's Kegbreaker
 					i(215756),	-- Klaxxi Smasher
 					i(215759),	-- Saurok Mace
@@ -6248,11 +6244,9 @@ root(ROOTS.Unsorted, {
 					i(215787),	-- Kazra'jin's Maul
 					i(215790),	-- Kazra'jin's Maul
 					i(215794),	-- Halberd of Inner Darkness
-					i(215798),	-- Qiang's Unbreakable Polearm
 					i(215804),	-- Wallwatcher's Partisan
 					i(215810),	-- Warspear of Xuen
 					i(215811),	-- Shan-Dun, Breaker of Courage
-					i(215812),	-- Shan-Dun, Breaker of Courage
 					i(215813),	-- Shan-Dun, Breaker of Courage
 					i(215814),	-- Shan-Dun, Breaker of Courage
 					i(215826),	-- Spire of Supremacy
@@ -6279,22 +6273,17 @@ root(ROOTS.Unsorted, {
 					i(215912),	-- Xifeng, Longblade of the Guardian
 					i(215913),	-- Kil'ruk's Hateful Blade
 					i(215914),	-- Kil'ruk's Hateful Blade
-					i(215915),	-- Kil'ruk's Hateful Blade
 					i(215916),	-- Kil'ruk's Hateful Blade
 					i(215917),	-- Arcweaver Spellblade
-					i(215919),	-- Arcweaver Spellblade
 					i(215921),	-- Shao-Tien Saber
 					i(215922),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
 					i(215924),	-- Shao-Tien Saber
-					i(215929),	-- Kilrak, Fangs of Terror
 					i(215937),	-- Imperial Wind Blade
 					i(215939),	-- Mogu Aspirant's Blade
 					i(215940),	-- Halcyon Blade
 					i(215945),	-- Binan Scimitar
-					i(215948),	-- Darkhide Sword
 					i(215951),	-- Sha-Blighted Sword
-					i(215952),	-- Fear's Bite
 					i(215953),	-- Siege Captain's Blade
 					i(215958),	-- Tian Monastery Edge
 					i(215959),	-- Tian Monastery Sword
@@ -6307,7 +6296,7 @@ root(ROOTS.Unsorted, {
 					i(215971),	-- Greatsword of Fallen Pride
 					i(215972),	-- Greatsword of Fallen Pride
 					i(215974),	-- Greatsword of Fallen Pride
-					i(215976),	-- Starslicer
+
 					i(215981),	-- Red Crane Greatsword
 					i(215985),	-- Satay's Greatsword
 					i(215986),	-- Blade of Broken Chains
@@ -6316,7 +6305,7 @@ root(ROOTS.Unsorted, {
 					i(215991),	-- Zerat, Soulburner's Greatsword
 					i(215993),	-- Zerat, Soulburner's Greatsword
 					i(215994),	-- Mistspinner's Channel
-					i(215995),	-- Mistspinner's Channel
+
 					i(215996),	-- Mistspinner's Channel
 					i(215998),	-- Torch of the Starspark
 					i(216001),	-- Mountainsage Rod

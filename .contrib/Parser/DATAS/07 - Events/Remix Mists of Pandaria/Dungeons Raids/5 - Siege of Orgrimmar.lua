@@ -519,6 +519,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215478),	-- Korven's Crescent
 						i(215664),	-- Lucky Cricket Cage
 						i(215721),	-- Mace of the Old Ones
+						i(215474),	-- Malkorok's Headtaker
 						i(215570),	-- Norushen's Dagger
 						i(215832),	-- Pride's Gaze
 						i(215828),	-- Rod of the Megantholithic Apparatus

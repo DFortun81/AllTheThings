@@ -117,6 +117,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215491),	-- Dubious Waraxe
 			i(215536),	-- Ennadee's Longbow
 			i(215535),	-- Featherdraw Warbow
+			i(215748),	-- Fireblaze Mace
 			i(215806),	-- Ghostheart Warspear
 			i(215883),	-- Greatstaff of the Path
 			i(216578),	-- Impervious Bulwark
@@ -134,6 +135,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215751),	-- Porter's Mace
 			i(215605),	-- Ravenclaw Dagger
 			i(215807),	-- Ritter's Spear
+			i(215493),	-- Scalebreaker Battleaxe
 			i(215609),	-- Sha-Touched Shanker
 			i(215783),	-- Shado-Pan Maul
 			i(216006),	-- Skullcap Wand
