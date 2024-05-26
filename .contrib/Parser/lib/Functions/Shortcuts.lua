@@ -519,6 +519,10 @@ spiritshard = function(cost, item)						-- Assign a Chef's Award or Epicurean's 
 	-- #endif
 	return item;
 end
+tolbaradcommendation = function(cost, item)				-- Assign a Tol Barad Commendation cost to an item with proper timeline requirements.
+	applycost(item, { "c", 391, cost });	-- Tol Barad Commendation
+	return item;
+end
 vicioussaddle = function(item)							-- Assign a Vicious Saddle cost to an item with proper timeline requirements.
 	-- #if AFTER 5.4.0.17153
 	applycost(item, { "i", 103533, 1 });	-- Vicious Saddle

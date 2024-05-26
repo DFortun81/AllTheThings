@@ -237,159 +237,97 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 			n(VENDORS, {
 				n(48531, {	-- Pogg <Hellscream's Reach Quartermaster>
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(65176, {	-- Baradin Grunt's Talisman
-							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
-						}),
-						i(62454, {	-- Blade of the Fearless
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(62456, {	-- Dagger of Restless Nights
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(68740, {	-- Darkheart Hacker
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(90898, {	-- Fox Kit (PET!)
-							["cost"] = { { "c", 391, 200 }, },	-- 200x Tol Barad Commendation
-						}),
-						i(68774, {	-- Greater Inscription of Vicious Agility
-							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
-						}),
-						i(68772, {	-- Greater Inscription of Vicious Intellect
-							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
-						}),
-						i(68773, {	-- Greater Inscription of Vicious Strength
-							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
-						}),
-						i(63518, {	-- Hellscream's Reach Commendation
-							["races"] = HORDE_ONLY,
-							["cost"] = { { "c", 391, 10 }, },	-- 10x Tol Barad Commendation
-						}),
-						i(63378, {	-- Hellscream's Reach Tabard
-							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
-						}),
-						i(62464, {	-- Impatience of Youth
-							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
-						}),
-						i(62458, {	-- Insidious Staff
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(62467, {	-- Mandala of Stirring Patterns
-							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
-						}),
-						i(62466, {	-- Mirror of Broken Images
-							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
-						}),
-						i(62457, {	-- Ravening Slicer
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(65356, {	-- Drake of the West Wind (H) (MOUNT!)
-							["cost"] = { { "c", 391, 200 }, },	-- 200x Tol Barad Commendation
-						}),
-						i(64999, {	-- Spectral Wolf (MOUNT!)
-							["cost"] = { { "c", 391, 165 }, },	-- 165x Tol Barad Commendation
-						}),
-						i(64996, {	-- Rustberg Gull (PET!)
-							["cost"] = { { "c", 391, 50 }, },	-- 50x Tol Barad Commendation
-						}),
-						i(62459, {	-- Shimmering Morningstar
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(62460, {	-- Sky Piercer
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(62455, {	-- Spear of Trailing Shadows
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(62465, {	-- Stump of Time
-							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
-						}),
-						i(64997, {	-- Tol Barad Searchlight (TOY!)
-							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
-						}),
-						i(62463, {	-- Unsolvable Riddle
-							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
-						}),
-					},
+					["groups"] = bubbleDownClassicRep(1178, {	-- Hellscream's Reach
+						{	-- Neutral
+							tolbaradcommendation(80, i(68774)),	-- Greater Inscription of Vicious Agility
+							tolbaradcommendation(80, i(68772)),	-- Greater Inscription of Vicious Intellect
+							tolbaradcommendation(80, i(68773)),	-- Greater Inscription of Vicious Strength
+						},
+						{	-- Friendly
+							tolbaradcommendation(10, i(63518, {	-- Hellscream's Reach Commendation
+								["races"] = HORDE_ONLY,
+							})),
+							tolbaradcommendation(5, i(64995)),	-- Hellscream's Reach Bandage
+							tolbaradcommendation(2, i(64994)),	-- Hellscream's Reach Healing Potion
+							tolbaradcommendation(2, i(64993)),	-- Hellscream's Reach Mana Potion
+						},
+						{	-- Honored
+							tolbaradcommendation(50, i(64996)),	-- Rustberg Gull (PET!)
+							tolbaradcommendation(40, i(64997)),	-- Tol Barad Searchlight (TOY!)
+							tolbaradcommendation(40, i(63378)),	-- Hellscream's Reach Tabard
+							tolbaradcommendation(40, i(65176)),	-- Baradin Grunt's Talisman
+						},
+						{	-- Revered
+							tolbaradcommendation(50, i(63376)),	-- Hellscream's Reach Battle Standard
+							tolbaradcommendation(85, i(62454)),	-- Blade of the Fearless
+							tolbaradcommendation(85, i(62456)),	-- Dagger of Restless Nights
+							tolbaradcommendation(85, i(68740)),	-- Darkheart Hacker
+							tolbaradcommendation(85, i(62458)),	-- Insidious Staff
+							tolbaradcommendation(85, i(62457)),	-- Ravening Slicer
+							tolbaradcommendation(85, i(62459)),	-- Shimmering Morningstar
+							tolbaradcommendation(85, i(62460)),	-- Sky Piercer
+							tolbaradcommendation(85, i(62455)),	-- Spear of Trailing Shadows
+						},
+						{	-- Exalted
+							tolbaradcommendation(200, i(65356)),	-- Drake of the West Wind (H) (MOUNT!)
+							tolbaradcommendation(165, i(64999)),	-- Spectral Wolf (MOUNT!)
+							tolbaradcommendation(200, i(90898, {	-- Fox Kit (PET!)
+								["timeline"] = { ADDED_5_0_4 },
+							})),
+							tolbaradcommendation(125, i(62464)),	-- Impatience of Youth
+							tolbaradcommendation(125, i(62467)),	-- Mandala of Stirring Patterns
+							tolbaradcommendation(125, i(62466)),	-- Mirror of Broken Images
+							tolbaradcommendation(125, i(62465)),	-- Stump of Time
+							tolbaradcommendation(125, i(62463)),	-- Unsolvable Riddle
+						},
+					}),
 				}),
 				n(47328, {	-- Quartermaster Brazie <Baradin's Wardens Quartermaster>
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(65175, {	-- Baradin Footman's Tags
-							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
-						}),
-						i(63517, {	-- Baradin's Wardens Commendation
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = { { "c", 391, 10 }, },	-- 10x Tol Barad Commendation
-						}),
-						i(63379, {	-- Baradin's Warden's Tabard
-							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
-						}),
-						i(62473, {	-- Blade of the Fearless
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(62475, {	-- Dagger of Restless Nights
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(68739, {	-- Darkheart Hacker
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(90897, {	-- Fox Kit (PET!)
-							["cost"] = { { "c", 391, 200 }, },	-- 200x Tol Barad Commendation
-						}),
-						i(68774, {	-- Greater Inscription of Vicious Agility
-							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
-						}),
-						i(68772, {	-- Greater Inscription of Vicious Intellect
-							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
-						}),
-						i(68773, {	-- Greater Inscription of Vicious Strength
-							["cost"] = { { "c", 391, 80 }, },	-- 80x Tol Barad Commendation
-						}),
-						i(62469, {	-- Impatience of Youth
-							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
-						}),
-						i(62477, {	-- Insidious Staff
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(62472, {	-- Mandala of Stirring Patterns
-							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
-						}),
-						i(62471, {	-- Mirror of Broken Images
-							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
-						}),
-						i(62476, {	-- Ravening Slicer
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(63039, {	-- Drake of the West Wind (A) (MOUNT!)
-							["cost"] = { { "c", 391, 200 }, },	-- 200x Tol Barad Commendation
-						}),
-						i(64998, {	-- Spectral Steed (MOUNT!)
-							["cost"] = { { "c", 391, 165 }, },	-- 165x Tol Barad Commendation
-						}),
-						i(63355, {	-- Rustberg Gull (PET!)
-							["cost"] = { { "c", 391, 50 }, },	-- 50x Tol Barad Commendation
-						}),
-						i(62478, {	-- Shimmering Morningstar
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(62479, {	-- Sky Piercer
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(62474, {	-- Spear of Trailing Shadows
-							["cost"] = { { "c", 391, 85 }, },	-- 85x Tol Barad Commendation
-						}),
-						i(62470, {	-- Stump of Time
-							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
-						}),
-						i(63141, {	-- Tol Barad Searchlight (TOY!)
-							["cost"] = { { "c", 391, 40 }, },	-- 40x Tol Barad Commendation
-						}),
-						i(62468, {	-- Unsolvable Riddle
-							["cost"] = { { "c", 391, 125 }, },	-- 125x Tol Barad Commendation
-						}),
-					},
+					["groups"] = bubbleDownClassicRep(1177, {	-- Baradin's Wardens
+						{	-- Neutral
+							tolbaradcommendation(80, i(68774)),	-- Greater Inscription of Vicious Agility
+							tolbaradcommendation(80, i(68772)),	-- Greater Inscription of Vicious Intellect
+							tolbaradcommendation(80, i(68773)),	-- Greater Inscription of Vicious Strength
+						},
+						{	-- Friendly
+							tolbaradcommendation(10, i(63517, {	-- Baradin's Wardens Commendation
+								["races"] = ALLIANCE_ONLY,
+							})),
+							tolbaradcommendation(5, i(63391)),	-- Baradin's Wardens Bandage
+							tolbaradcommendation(2, i(63144)),	-- Baradin's Wardens Healing Potion
+							tolbaradcommendation(2, i(63145)),	-- Baradin's Wardens Mana Potion
+						},
+						{	-- Honored
+							tolbaradcommendation(50, i(63355)),	-- Rustberg Gull (PET!)
+							tolbaradcommendation(40, i(63141)),	-- Tol Barad Searchlight (TOY!)
+							tolbaradcommendation(40, i(63379)),	-- Baradin's Warden's Tabard
+							tolbaradcommendation(40, i(65175)),	-- Baradin Footman's Tags
+						},
+						{	-- Revered
+							tolbaradcommendation(50, i(63377)),	-- Baradin's Wardens Battle Standard
+							tolbaradcommendation(85, i(62473)),	-- Blade of the Fearless
+							tolbaradcommendation(85, i(62475)),	-- Dagger of Restless Nights
+							tolbaradcommendation(85, i(68739)),	-- Darkheart Hacker
+							tolbaradcommendation(85, i(62477)),	-- Insidious Staff
+							tolbaradcommendation(85, i(62476)),	-- Ravening Slicer
+							tolbaradcommendation(85, i(62478)),	-- Shimmering Morningstar
+							tolbaradcommendation(85, i(62479)),	-- Sky Piercer
+							tolbaradcommendation(85, i(62474)),	-- Spear of Trailing Shadows
+						},
+						{	-- Exalted
+							tolbaradcommendation(200, i(63039)),	-- Drake of the West Wind (A) (MOUNT!)
+							tolbaradcommendation(165, i(64998)),	-- Spectral Steed (MOUNT!)
+							tolbaradcommendation(200, i(90897, {	-- Fox Kit (PET!)
+								["timeline"] = { ADDED_5_0_4 },
+							})),
+							tolbaradcommendation(125, i(62469)),	-- Impatience of Youth
+							tolbaradcommendation(125, i(62472)),	-- Mandala of Stirring Patterns
+							tolbaradcommendation(125, i(62471)),	-- Mirror of Broken Images
+							tolbaradcommendation(125, i(62470)),	-- Stump of Time
+							tolbaradcommendation(125, i(62468)),	-- Unsolvable Riddle
+						},
+					}),
 				}),
 			}),
 			n(ZONE_DROPS, {
@@ -570,11 +508,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 						}),
 					})),
 					n(REWARDS, {
-						["groups"] = {
-							currency(391, {	-- Tol Barad Commendation
-								["description"] = "These are rewarded by completing Tol Barad daily quests.",
-							}),
-						},
+						currency(391, {	-- Tol Barad Commendation
+							["description"] = "These are rewarded by completing Tol Barad daily quests.",
+						}),
 					}),
 				},
 			}),
