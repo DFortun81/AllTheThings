@@ -13,6 +13,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					19950,	-- Heart of Fear
 					19947,	-- Mogu'shan Vaults
 				}},
+				["g"] = {
+					i(210523),	-- Timerunner's Amulet
+				},
 			}),
 			ach(20007, {	-- Heroic: Pandaria Raids
 				-- Meta Achievement

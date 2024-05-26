@@ -6270,7 +6270,6 @@ root(ROOTS.Unsorted, {
 					i(215868),	-- Monastic Staff
 					i(215876),	-- Mistdancer's Rod
 					i(215877),	-- Cloudscorcher Staff
-					i(215880),	-- Darkstaff of Ruin
 					i(215888),	-- Soulwood Spire
 					i(215890),	-- Hopespreader's Staff
 					i(215896),	-- Jinyu Spire
@@ -6659,7 +6658,6 @@ root(ROOTS.Unsorted, {
 					i(210341),	-- Staff of Corrupted Waters
 				}),
 				i(210906),	-- Timerunner's Amice
-				i(210523),	-- Timerunner's Amulet
 				i(210913),	-- Timerunner's Armplates
 				i(210914),	-- Timerunner's Bands
 				i(210911),	-- Timerunner's Belt
