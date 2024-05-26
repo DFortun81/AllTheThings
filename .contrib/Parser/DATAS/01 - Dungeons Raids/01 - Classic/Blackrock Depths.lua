@@ -2271,95 +2271,48 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			n(VENDORS, {
-				n(12944, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
-					applyclassicphase(PHASE_THREE, i(19449, {	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					applyclassicphase(PHASE_THREE, i(19448, {	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					})),
-					applyclassicphase(PHASE_THREE, i(19444, {	-- Formula: Enchant Weapon - Strength (RECIPE!)
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					})),
-					i(17025, {	-- Pattern: Black Dragonscale Boots (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					}),
-					applyclassicphase(PHASE_THREE, i(19331, {	-- Pattern: Chromatic Gauntlets (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					applyclassicphase(PHASE_THREE, i(19332, {	-- Pattern: Corehound Belt (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					i(17022, {	-- Pattern: Corehound Boots (RECIPE!)
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					}),
-					i(17018, {	-- Pattern: Flarecore Gloves
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					}),
-					applyclassicphase(PHASE_THREE, i(19220, {	-- Pattern: Flarecore Leggings
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					i(17017, {	-- Pattern: Flarecore Mantle
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					}),
-					applyclassicphase(PHASE_THREE, i(19219, {	-- Pattern: Flarecore Robe
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					})),
-					applyclassicphase(PHASE_THREE, i(19330, {	-- Pattern: Lava Belt (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					})),
-					applyclassicphase(PHASE_THREE, i(19333, {	-- Pattern: Molten Belt (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					i(17023, {	-- Pattern: Molten Helm (RECIPE!)
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					}),
-					applyclassicphase(PHASE_THREE, i(19208, {	-- Plans: Black Amnesty (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					applyclassicphase(PHASE_THREE, i(19209, {	-- Plans: Blackfury (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					applyclassicphase(PHASE_THREE, i(19211, {	-- Plans: Blackguard (RECIPE!)
-						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					})),
-					applyclassicphase(PHASE_FOUR, i(20040, {	-- Plans: Dark Iron Boots (RECIPE!)
-						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					})),
-					i(17051, {	-- Plans: Dark Iron Bracers (RECIPE!)
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					}),
-					i(17060, {	-- Plans: Dark Iron Destroyer (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					}),
-					applyclassicphase(PHASE_THREE, i(19207, {	-- Plans: Dark Iron Gauntlets (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					applyclassicphase(PHASE_THREE, i(19206, {	-- Plans: Dark Iron Helm (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					})),
-					i(17052, {	-- Plans: Dark Iron Leggings (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					}),
-					i(17059, {	-- Plans: Dark Iron Reaver (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					}),
-					applyclassicphase(PHASE_THREE, i(19210, {	-- Plans: Ebon Hand (RECIPE!)
-						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					})),
-					i(17049, {	-- Plans: Fiery Chain Girdle (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					}),
-					i(17053, {	-- Plans: Fiery Chain Shoulders (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					}),
-					applyclassicphase(PHASE_THREE, i(19212, {	-- Plans: Nightfall (RECIPE!)
-						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					})),
-					applyclassicphase(PHASE_FIVE, i(20761, {	-- Recipe: Transmute Elemental Fire (RECIPE!)
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					})),
-				}),
+				n(12944, bubbleDownClassicRep(59, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
+					{	-- Neutral
+						
+					},
+					{	-- Friendly
+						applyclassicphase(PHASE_THREE, i(19444)),	-- Formula: Enchant Weapon - Strength (RECIPE!)
+						i(17022),	-- Pattern: Corehound Boots (RECIPE!)
+						i(17018),	-- Pattern: Flarecore Gloves
+						i(17023),	-- Pattern: Molten Helm (RECIPE!)
+						i(17051),	-- Plans: Dark Iron Bracers (RECIPE!)
+						applyclassicphase(PHASE_FIVE, i(20761)),	-- Recipe: Transmute Elemental Fire (RECIPE!)
+					},
+					{	-- Honored
+						applyclassicphase(PHASE_THREE, i(19448)),	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
+						i(17025),	-- Pattern: Black Dragonscale Boots (RECIPE!)
+						i(17017),	-- Pattern: Flarecore Mantle
+						applyclassicphase(PHASE_THREE, i(19219)),	-- Pattern: Flarecore Robe
+						applyclassicphase(PHASE_THREE, i(19330)),	-- Pattern: Lava Belt (RECIPE!)
+						i(17060),	-- Plans: Dark Iron Destroyer (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19206)),	-- Plans: Dark Iron Helm (RECIPE!)
+						i(17059),	-- Plans: Dark Iron Reaver (RECIPE!)
+						i(17049),	-- Plans: Fiery Chain Girdle (RECIPE!)
+					},
+					{	-- Revered
+						applyclassicphase(PHASE_THREE, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19331)),	-- Pattern: Chromatic Gauntlets (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19332)),	-- Pattern: Corehound Belt (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19220)),	-- Pattern: Flarecore Leggings
+						applyclassicphase(PHASE_THREE, i(19333)),	-- Pattern: Molten Belt (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19208)),	-- Plans: Black Amnesty (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19209)),	-- Plans: Blackfury (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19207)),	-- Plans: Dark Iron Gauntlets (RECIPE!)
+						i(17052),	-- Plans: Dark Iron Leggings (RECIPE!)
+						i(17053),	-- Plans: Fiery Chain Shoulders (RECIPE!)
+					},
+					{	-- Exalted
+						applyclassicphase(PHASE_THREE, i(19211)),	-- Plans: Blackguard (RECIPE!)
+						applyclassicphase(PHASE_FOUR,  i(20040)),	-- Plans: Dark Iron Boots (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19210)),	-- Plans: Ebon Hand (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19212)),	-- Plans: Nightfall (RECIPE!)
+					},
+				})),
 				n(9499, {	-- Plugger Spazzring
 					i(15759),	-- Pattern: Black Dragonscale Breastplate (RECIPE!)
 					i(13483),	-- Recipe: Transmute Fire to Earth (RECIPE!)
