@@ -6178,10 +6178,8 @@ root(ROOTS.Unsorted, {
 					i(215578),	-- Rik'kal's Bloody Blade
 					i(215579),	-- Rik'kal's Bloody Blade
 					i(215581),	-- Blade of the Seven Stars
-					i(215585),	-- Regail's Fulminating Blade
 					i(215587),	-- Regail's Fulminating Blade
 					i(215589),	-- Soulsever
-					i(215591),	-- Soulsever
 					i(215599),	-- Mountainscaler Slicer
 					i(215606),	-- Firescribe Slicer
 					i(215607),	-- Ceremonial Spike
@@ -6208,7 +6206,6 @@ root(ROOTS.Unsorted, {
 					i(215660),	-- Prophecies of Y'Shaarj
 					i(215662),	-- Prophecies of Y'Shaarj
 					i(215670),	-- Sha-Touched Globule
-					i(215671),	-- Zephyrcall Censer
 					i(215673),	-- Zephyrcall Censer
 					i(215674),	-- Zephyrcall Censer
 					i(215675),	-- Wakener's Lantern
@@ -6234,7 +6231,6 @@ root(ROOTS.Unsorted, {
 					i(215715),	-- Kardris' Scepter
 					i(215720),	-- Mace of the Old Ones
 					i(215723),	-- Siegecrafter's Forge Drill
-					i(215728),	-- Galvanized Stormcrusher
 					i(215734),	-- Kri'tak, Scepter of the Swarm
 					i(215748),	-- Fireblaze Mace
 					i(215753),	-- Gao's Kegbreaker
@@ -6263,7 +6259,6 @@ root(ROOTS.Unsorted, {
 					i(215827),	-- Rod of the Megantholithic Apparatus
 					i(215831),	-- Pride's Gaze
 					i(215845),	-- Waterspeaker's Staff
-					i(215846),	-- Waterspeaker's Staff
 					i(215853),	-- Gao-Rei, Staff of the Protector
 					i(215856),	-- Jin'ya, Orb of the Watercaller
 					i(215864),	-- Torch of Dawn
@@ -6293,7 +6288,6 @@ root(ROOTS.Unsorted, {
 					i(215923),	-- Shao-Tien Saber
 					i(215924),	-- Shao-Tien Saber
 					i(215929),	-- Kilrak, Fangs of Terror
-					i(215934),	-- Loshan, Fear Incarnate
 					i(215936),	-- Loshan, Fear Incarnate
 					i(215937),	-- Imperial Wind Blade
 					i(215939),	-- Mogu Aspirant's Blade
@@ -6420,7 +6414,6 @@ root(ROOTS.Unsorted, {
 					i(216562),	-- Steelskin, Qiang's Bulwark
 					i(216564),	-- Gaze of the Ancient
 					i(216565),	-- Gaze of the Ancient
-					i(216566),	-- Gaze of the Ancient
 					i(216567),	-- Dreadwood Bulwark
 					i(216569),	-- Deflector of Orbiss
 					i(216571),	-- Tian Deflector

@@ -139,9 +139,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215531),	-- Fang Kung, Emperor's Legacy (MSV LFR / HoF LFR)
 					i(215636),	-- Fist of Shek'zeer (HoF LFR)
 					i(215727),	-- Galvanized Stormcrusher
+					i(215728),	-- Galvanized Stormcrusher (MSV LFR)
 					i(215632),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
 					i(215635),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
 					i(215851),	-- Gao-Rei, Staff of the Protector (MSV LFR / HoF LFR)
+					i(216566),	-- Gaze of the Ancient (MSV LFR)
 					i(215697),	-- Grand Imperial Rifle (HoF LFR)
 					i(211160),	-- Greatsword of the Iron Legion
 					i(215854),	-- Jin'ya, Orb of the Watercaller (MSV LFR)
@@ -152,10 +154,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215798),	-- Qiang's Unbreakable Polearm (HoF LFR)
 					i(215799),	-- Qiang's Unbreakable Polearm
 					i(215801),	-- Qiang's Unbreakable Polearm (HoF LFR)
+					i(215585),	-- Regail's Fulminating Blade (MSV LFR)
+					i(215934),	-- Loshan, Fear Incarnate (MSV LFR)
 					i(215588),	-- Regail's Fulminating Blade (HoF LFR)
 					i(215926),	-- Scimitar of Seven Stars
 					i(215928),	-- Scimitar of Seven Stars (MSV LFR)
 					i(215505),	-- Shin'ka, the Tyrant's Greataxe
+					i(215591),	-- Soulsever (MSV LFR)
 					i(215593),	-- Soulsever (HoF LFR)
 					i(215975),	-- Starslicer (Terrace LFR or HoF LFR 1st wing)
 					i(215693),	-- Taoren, the Malignant (HoF LFR)
@@ -165,6 +170,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215997),	-- Torch of the Starspark (MSV LFR (1st wing))
 					i(216000),	-- Torch of the Starspark (HoF LFR)
 					i(215843),	-- Waterspeaker's Staff
+					i(215846),	-- Waterspeaker's Staff (MSV LFR)
+					i(215671),	-- Zephyrcall Censer (MSV LFR)
 				}),
 			}),
 			d(DIFFICULTY.RAID.NORMAL, {
