@@ -1297,10 +1297,6 @@ GLYPH_OF_INCINERATE_AND_HAND_OF_GULDAN = r(57257, {	-- Glyph of Incinerate / Gly
 	-- #endif
 	["timeline"] = { ADDED_3_0_2, DELETED_7_0_3 },
 });
-GLYPH_OF_INFERNO_BLAST = r(94000, {	-- Glyph of Inferno Blast
-	["name"] = "Glyph of Inferno Blast",
-	["timeline"] = { ADDED_5_2_0, DELETED_7_0_3 },
-});
 GLYPH_OF_INNER_FIRE = r(57188, {	-- Glyph of Inner Fire
 	["name"] = "Glyph of Inner Fire",
 	["timeline"] = { ADDED_3_1_0, DELETED_6_0_2 },
@@ -3118,7 +3114,6 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_ICE_BLOCK,
 		GLYPH_OF_ICE_LANCE_AND_SPLITTING_ICE,
 		GLYPH_OF_ICY_VEINS_AND_CONE_OF_COLD,
-		GLYPH_OF_INFERNO_BLAST,
 		GLYPH_OF_INVISIBILITY_AND_RAPID_DISPLACEMENT,
 		GLYPH_OF_LAVISH_SERVINGS,
 		GLYPH_OF_LIVING_BOMB_AND_SLOW,
@@ -3921,9 +3916,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_HEMORRHAGE,	-- Deleted 7.0.3
 				GLYPH_OF_HYMN_OF_HOPE_AND_DIVINE_ACCURACY_AND_MIND_SPIKE,	-- Deleted 7.0.3
 				GLYPH_OF_ICY_TOUCH,	-- Deleted 7.0.3
-				GLYPH_OF_INFERNO_BLAST,	-- Deleted 7.0.3
 				GLYPH_OF_KILROGG,	-- Deleted 7.0.3 [NOTE: This one might be incorrect, double check this later.]
 				GLYPH_OF_LIGHTNING_SHIELD_AND_THE_LAKESTRIDER,	-- Deleted 7.0.3
+				GLYPH_OF_LIVING_BOMB_AND_INFERNO_BLAST,	-- Deleted 7.0.3
 				GLYPH_OF_MANGLE_AND_THE_STAG,	-- Deleted 7.0.3
 				GLYPH_OF_OBLITERATE_AND_ENDURING_INFECTION,	-- Deleted 7.0.3
 				GLYPH_OF_PAIN_SUPPRESSION_AND_DESPERATION_AND_BINDING_HEAL,	-- Deleted 7.0.3
