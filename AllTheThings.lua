@@ -2358,38 +2358,38 @@ end
 
 do
 local ContainsLimit, ContainsExceeded;
-local function BuildContainsInfo(item, entries, indent, layer)
-	local g = item and item.g;
-	if g then
-		local Indicator = app.GetIndicatorIcon;
-		for _,group in ipairs(g) do
-			-- If there's progress to display, then let's summarize a bit better.
-			if group.visible then
-				-- Count it, but don't actually add it to entries if it meets the limit
-				if #entries >= ContainsLimit then
-					ContainsExceeded = ContainsExceeded + 1;
-				else
-					-- Insert into the display.
-					-- app.PrintDebug("INCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
-					local o = { group = group, right = GetProgressTextForRow(group) };
-					local indicator = Indicator(group);
-					o.prefix = indicator and (indent:sub(4) .. "|T" .. indicator .. ":0|t ") or indent;
-					tinsert(entries, o);
-				end
+local Indicator = app.GetIndicatorIcon;
+local MaxLayer = 4
+local Indents = {
+	"  ",
+}
+for i=2,MaxLayer do
+	Indents[i] = Indents[i-1].."  "
+end
+local function BuildContainsInfo(subgroups, entries, indent, layer)
+	if not subgroups or #subgroups == 0 then return end
 
-				-- Only go down one more level.
-				if layer < 4
-					-- if there are sub groups
-					and group.g and #group.g > 0
-					-- not for things with a parent unless the parent has no difficultyID
-					-- and (not group.parent or not group.parent.difficultyID)
-					-- not sure what situation this logic was expecting to prevent... bosses within difficulties it seems, which isn't wanted...
-					then
-					BuildContainsInfo(group, entries, indent .. "  ", layer + 1);
-				end
-				-- else
-				-- 	app.PrintDebug("EXCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
+	for _,group in ipairs(subgroups) do
+		-- If there's progress to display, then let's summarize a bit better.
+		if group.visible then
+			-- Count it, but don't actually add it to entries if it meets the limit
+			if #entries >= ContainsLimit then
+				ContainsExceeded = ContainsExceeded + 1;
+			else
+				-- Insert into the display.
+				-- app.PrintDebug("INCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
+				local o = { group = group, right = GetProgressTextForRow(group) };
+				local indicator = Indicator(group);
+				o.prefix = indicator and (Indents[indent]:sub(3) .. "|T" .. indicator .. ":0|t ") or Indents[indent]
+				entries[#entries + 1] = o
 			end
+
+			-- Only go down one more level.
+			if layer < MaxLayer then
+				BuildContainsInfo(group.g, entries, indent + 1, layer + 1);
+			end
+			-- else
+			-- 	app.PrintDebug("EXCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
 		end
 	end
 end
@@ -3011,7 +3011,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			-- app.Debugging = "CONTAINS-"..group.hash;
 			ContainsLimit = app.Settings:GetTooltipSetting("ContainsCount") or 25;
 			ContainsExceeded = 0;
-			BuildContainsInfo(group, entries, "  ", app.noDepth and 99 or 1);
+			BuildContainsInfo(group.g, entries, 1, 1)
 			-- app.Debugging = nil;
 			-- app.PrintDebug(entries and #entries,"contains entries")
 			if #entries > 0 then
