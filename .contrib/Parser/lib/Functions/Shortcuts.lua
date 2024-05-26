@@ -955,6 +955,11 @@ iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which 
 	i.up = (tonumber(modID) or 0) + ((tonumber(bonusID) or 0) / 10000);
 	return i;
 end
+iensemble = function(itemID, t)
+	local i = i(itemID, t);
+	i.type = "ensembleID"
+	return i
+end
 iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (specified by ModID/BonusID)
 	local i = i(itemID, t);
 	if modID and modID ~= 0 then
