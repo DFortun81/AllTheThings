@@ -6155,7 +6155,6 @@ root(ROOTS.Unsorted, {
 					i(215531),	-- Fang Kung, Emperor's Legacy
 					i(215533),	-- Marista Longbow
 					i(215534),	-- Shado-Pan Longbow
-					i(215536),	-- Ennadee's Longbow
 					i(215537),	-- Dawnwatcher's Warbow
 					i(215538),	-- Tempestuous Shortbow
 					i(215539),	-- Jinyu Longbow
@@ -6202,8 +6201,6 @@ root(ROOTS.Unsorted, {
 					i(215599),	-- Mountainscaler Slicer
 					i(215606),	-- Firescribe Slicer
 					i(215607),	-- Ceremonial Spike
-					i(215608),	-- Tolakesh, Horn of Niuzao
-					i(215609),	-- Sha-Touched Shanker
 					i(215610),	-- Dreadpriest's Dagger
 					i(215611),	-- Lightdrinker Dagger
 					i(215614),	-- Klaxxi Slicer
@@ -6224,7 +6221,6 @@ root(ROOTS.Unsorted, {
 					i(215634),	-- Gara'kal, Claw of the Spiritbinder
 					i(215638),	-- Fist of Shek'zeer
 					i(215640),	-- Barbs of the Rikkitun
-					i(215646),	-- Claw of the Fallen Temple
 					i(215647),	-- Ka'eng, Fang of Shadow
 					i(215650),	-- Pandaren Claw
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
@@ -6413,7 +6409,6 @@ root(ROOTS.Unsorted, {
 					i(216003),	-- Waterweaver's Wand
 					i(216004),	-- Blazecaster's Wand
 					i(216005),	-- Wand of Spiritweaving
-					i(216006),	-- Skullcap Wand
 					i(216007),	-- Deathspeaker Channel
 					i(216008),	-- Necromantic Channel
 					i(216009),	-- Venomlord's Skull Wand
@@ -6769,7 +6764,6 @@ root(ROOTS.Unsorted, {
 				i(210892),	-- Timerunner's Chestguard
 				i(210525),	-- Timerunner's Cloak
 				i(210898),	-- Timerunner's Coif
-				i(210637),	-- Timerunner's Dagger
 				i(210885),	-- Timerunner's Gauntlets
 				i(210908),	-- Timerunner's Girdle
 				i(210887),	-- Timerunner's Gloves

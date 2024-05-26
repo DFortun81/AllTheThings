@@ -112,8 +112,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			-- Weapons can also come from dungeon completion crates
 			i(215984),	-- Bjam's Greatsword
 			i(216582),	-- Bulwark of the Protectorate
+			i(215646),	-- Claw of the Fallen Temple
 			i(216581),	-- Deflector of the Protectorate
 			i(215491),	-- Dubious Waraxe
+			i(215536),	-- Ennadee's Longbow
 			i(215535),	-- Featherdraw Warbow
 			i(215806),	-- Ghostheart Warspear
 			i(215983),	-- Jade Grand Falchion
@@ -130,13 +132,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215751),	-- Porter's Mace
 			i(215605),	-- Ravenclaw Dagger
 			i(215807),	-- Ritter's Spear
+			i(215609),	-- Sha-Touched Shanker
 			i(215783),	-- Shado-Pan Maul
+			i(216006),	-- Skullcap Wand
 			i(215802),	-- Spear of Feral Rage
 			i(215878),	-- Springrain Spire
 			i(215874),	-- Staff of Iron Will
 			i(215875),	-- Staff of Stolen Hope
 			i(215784),	-- Taran Zhu's Bonebreaker
 			i(215645),	-- Tian Handblade
+			i(215608),	-- Tolakesh, Horn of Niuzao
 			i(215514),	-- Wallwatcher's Longaxe
 			i(215612),	-- Yaungol Shanker
 			i(215955),	-- Zakai's Swarmslicer
