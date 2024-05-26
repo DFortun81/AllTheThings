@@ -6113,14 +6113,11 @@ root(ROOTS.Unsorted, {
 				n(WEAPONS, {
 					i(215946),	-- Valiant's Honorblade
 					i(215469),	-- Haromm's Frozen Battleaxe
-					i(215471),	-- Haromm's Frozen Battleaxe
 					i(215472),	-- Haromm's Frozen Battleaxe
 					i(215474),	-- Malkorok's Headtaker
 					i(215476),	-- Malkorok's Headtaker
 					i(215477),	-- Korven's Crescent
-					i(215479),	-- Korven's Crescent
 					i(215480),	-- Korven's Crescent
-					i(215483),	-- Elegion, the Star Cleaver
 					i(215490),	-- Snowdrift Battleaxe
 					i(215493),	-- Scalebreaker Battleaxe
 					i(215494),	-- Yaungol Cleaver
@@ -6201,9 +6198,6 @@ root(ROOTS.Unsorted, {
 					i(215624),	-- Megaera's Fang
 					i(215628),	-- Softfoot's Iron Claw
 					i(215631),	-- Softfoot's Iron Claw
-					i(215633),	-- Gara'kal, Claw of the Spiritbinder
-					i(215634),	-- Gara'kal, Claw of the Spiritbinder
-					i(215638),	-- Fist of Shek'zeer
 					i(215640),	-- Barbs of the Rikkitun
 					i(215647),	-- Ka'eng, Fang of Shadow
 					i(215650),	-- Pandaren Claw
@@ -6212,10 +6206,7 @@ root(ROOTS.Unsorted, {
 					i(215656),	-- Hozen Fetish
 					i(215657),	-- Hozen Conduit
 					i(215660),	-- Prophecies of Y'Shaarj
-					i(215661),	-- Prophecies of Y'Shaarj
 					i(215662),	-- Prophecies of Y'Shaarj
-					i(215665),	-- Lucky Cricket Cage
-					i(215669),	-- Sha-Touched Globule
 					i(215670),	-- Sha-Touched Globule
 					i(215671),	-- Zephyrcall Censer
 					i(215673),	-- Zephyrcall Censer
@@ -6241,17 +6232,13 @@ root(ROOTS.Unsorted, {
 					i(215710),	-- Roar of the Quillen
 					i(215711),	-- Roar of the Quillen
 					i(215715),	-- Kardris' Scepter
-					i(215717),	-- Kardris' Scepter
-					i(215719),	-- Mace of the Old Ones
 					i(215720),	-- Mace of the Old Ones
 					i(215723),	-- Siegecrafter's Forge Drill
 					i(215728),	-- Galvanized Stormcrusher
-					i(215729),	-- Galvanized Stormcrusher
 					i(215734),	-- Kri'tak, Scepter of the Swarm
 					i(215748),	-- Fireblaze Mace
 					i(215753),	-- Gao's Kegbreaker
 					i(215756),	-- Klaxxi Smasher
-					i(215757),	-- Carapace Crusher
 					i(215759),	-- Saurok Mace
 					i(215760),	-- Saurok Breaker
 					i(215764),	-- Hozen Mace
@@ -6275,12 +6262,8 @@ root(ROOTS.Unsorted, {
 					i(215826),	-- Spire of Supremacy
 					i(215827),	-- Rod of the Megantholithic Apparatus
 					i(215831),	-- Pride's Gaze
-					i(215833),	-- Pride's Gaze
-					i(215841),	-- Brazier of the Eternal Empire
 					i(215845),	-- Waterspeaker's Staff
 					i(215846),	-- Waterspeaker's Staff
-					i(215849),	-- Fearspeaker's Warstaff
-					i(215852),	-- Gao-Rei, Staff of the Protector
 					i(215853),	-- Gao-Rei, Staff of the Protector
 					i(215856),	-- Jin'ya, Orb of the Watercaller
 					i(215864),	-- Torch of Dawn
@@ -6406,7 +6389,6 @@ root(ROOTS.Unsorted, {
 					i(216460),	-- Caduceus of Pure Moods
 					i(216462),	-- Dinomancer's Spire
 					i(216465),	-- Dinomancer's Spire
-					i(216468),	-- Suen-Wo, Spire of the Rising Sun
 					i(216469),	-- Suen-Wo, Spire of the Rising Sun
 					i(216470),	-- Tian Monastery Spire
 					i(216473),	-- Tian Monastery Staff
@@ -6430,7 +6412,6 @@ root(ROOTS.Unsorted, {
 					i(216546),	-- Visage of Dread
 					i(216548),	-- Visage of Dread
 					i(216550),	-- Visage of Dread
-					i(216552),	-- Norushen's Tower Shield
 					i(216553),	-- Norushen's Tower Shield
 					i(216554),	-- Norushen's Tower Shield
 					i(216555),	-- Shield of the Fallen General
