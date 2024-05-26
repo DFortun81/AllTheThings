@@ -6288,7 +6288,6 @@ root(ROOTS.Unsorted, {
 					i(215923),	-- Shao-Tien Saber
 					i(215924),	-- Shao-Tien Saber
 					i(215929),	-- Kilrak, Fangs of Terror
-					i(215936),	-- Loshan, Fear Incarnate
 					i(215937),	-- Imperial Wind Blade
 					i(215939),	-- Mogu Aspirant's Blade
 					i(215940),	-- Halcyon Blade

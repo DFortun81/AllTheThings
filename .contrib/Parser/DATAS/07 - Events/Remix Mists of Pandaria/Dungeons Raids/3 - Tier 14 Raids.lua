@@ -151,6 +151,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215930),	-- Kilrak, Fangs of Terror (HoF LFR)
 					i(215735),	-- Kri'tak, Scepter of the Swarm
 					i(215935),	-- Loshan, Fear Incarnate
+					i(215936),	-- Loshan, Fear Incarnate (MSV LFR)
 					i(215798),	-- Qiang's Unbreakable Polearm (HoF LFR)
 					i(215799),	-- Qiang's Unbreakable Polearm
 					i(215801),	-- Qiang's Unbreakable Polearm (HoF LFR)
