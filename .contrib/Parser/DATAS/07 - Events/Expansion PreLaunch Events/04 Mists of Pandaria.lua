@@ -80,24 +80,28 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					["groups"] = {
 						i(89196, {	-- Theramore Tabard
 							["OnUpdate"] = [[function(t)
-								if _.CurrentCharacter.Achievements[7467] then
-									t.u = nil;
-									t.rwp = 50004;
-								else
-									t.u = ]] .. REMOVED_FROM_GAME .. [[;
-									t.rwp = nil;
+								if not t.e then
+									if _.CurrentCharacter.Achievements[7467] then
+										t.u = nil;
+										t.rwp = 50004;
+									else
+										t.u = ]] .. REMOVED_FROM_GAME .. [[;
+										t.rwp = nil;
+									end
 								end
 							end]],
 							["races"] = ALLIANCE_ONLY,
 						}),
 						i(89205, {	-- Mini Mana Bomb Toy (TOY!)
 							["OnUpdate"] = [[function(t)
-								if _.CurrentCharacter.Achievements[7468] then
-									t.u = nil;
-									t.rwp = 50004;
-								else
-									t.u = ]] .. REMOVED_FROM_GAME .. [[;
-									t.rwp = nil;
+								if not t.e then
+									if _.CurrentCharacter.Achievements[7468] then
+										t.u = nil;
+										t.rwp = 50004;
+									else
+										t.u = ]] .. REMOVED_FROM_GAME .. [[;
+										t.rwp = nil;
+									end
 								end
 							end]],
 							["races"] = HORDE_ONLY,
