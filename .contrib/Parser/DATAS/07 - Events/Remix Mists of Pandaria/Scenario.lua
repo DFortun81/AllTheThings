@@ -115,14 +115,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215752),	-- Ced's Basher
 				i(215607),	-- Ceremonial Spike (maybe hc only?)
 				i(215880),	-- Darkstaff of Ruin (normal scenario)
+				i(215537),	-- Dawnwatcher's Warbow
 				i(215884),	-- Firedancer's Staff
 				i(215881),	-- Gustspinner's Staff
+				i(215647),	-- Ka'eng, Fang of Shadow
 				i(215706),	-- Klaxxi Ambershot
 				i(215786),	-- Lerah's Maul
 				i(215648),	-- Ner'onok's Katar (hc scenario)
 				i(215956),	-- Ook's Hozen Cutter (hc scenario)
 				i(215985),	-- Satay's Greatsword
 				i(215739),	-- Shomi's Scepter (hc scenario)
+				i(215953),	-- Siege Captain's Blade
 				i(216580),	-- Skyrider's Shield (hc scenario)
 				i(215885),	-- Teachings of Shaohao
 				i(215538),	-- Tempestuous Shortbow (hc scenario)

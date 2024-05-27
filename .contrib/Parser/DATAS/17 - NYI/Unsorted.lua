@@ -6040,7 +6040,6 @@ root(ROOTS.Unsorted, {
 					i(215529),	-- Fang Kung, Emperor's Legacy
 					i(215533),	-- Marista Longbow
 					i(215534),	-- Shado-Pan Longbow
-					i(215537),	-- Dawnwatcher's Warbow
 					i(215539),	-- Jinyu Longbow
 					i(215540),	-- Jinyu Shortbow
 					i(215541),	-- Jinyu Warbow
@@ -6155,7 +6154,6 @@ root(ROOTS.Unsorted, {
 					i(215940),	-- Halcyon Blade
 					i(215945),	-- Binan Scimitar
 					i(215951),	-- Sha-Blighted Sword
-					i(215953),	-- Siege Captain's Blade
 					i(215958),	-- Tian Monastery Edge
 					i(215959),	-- Tian Monastery Sword
 					i(215961),	-- Qon's Iron Decree
