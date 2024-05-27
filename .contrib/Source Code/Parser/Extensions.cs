@@ -259,6 +259,19 @@ namespace ATT
         }
 
         /// <summary>
+        /// Returns all KVPs within the dictionary which meet the provided <paramref name="check"/>
+        /// </summary>
+        public static IEnumerable<KeyValuePair<TKey, TValue>> GetAllKvps<TKey, TValue>(this IEnumerable<KeyValuePair<TKey, TValue>> kvps, Func<TValue, bool> check)
+        {
+            if (check == null || kvps == null || !kvps.Any())
+                yield break;
+
+            foreach (KeyValuePair<TKey, TValue> kvp in kvps)
+                if (check(kvp.Value))
+                    yield return kvp;
+        }
+
+        /// <summary>
         /// Performs the expected .Contains logic for the provided object on a list containing objects,
         /// but attempts to verify matching objects even when there are slightly different underlying Types
         /// and passes-out the proper Typed-value if it is found in the List
@@ -344,6 +357,24 @@ namespace ATT
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// Returns true if any of the <paramref name="groups"/> match the <paramref name="check"/> function
+        /// </summary>
+        /// <param name="groups"></param>
+        /// <returns></returns>
+        public static bool AnyMatchingGroup<T>(this List<T> groups, Func<IDictionary<string, object>, bool> check)
+        {
+            if (groups == null || groups.Count == 0) return false;
+
+            foreach (IDictionary<string, object> data in groups.AsTypedEnumerable<IDictionary<string, object>>())
+            {
+                if (check(data))
+                    return true;
+            }
+
+            return false;
         }
 
         /// <summary>

@@ -1902,6 +1902,7 @@ end");
                     case "awp":
                     case "id":
                     case "uid":
+                    case "tmogSetID":
                         {
                             try
                             {

@@ -821,43 +821,43 @@ namespace ATT
             // CriteriaTree creates parent mapping one-time
             if (type == nameof(CriteriaTree))
             {
-                IDictionary<long, IDBType> criteriaTreeDb = TypeDB[type];
-                Dictionary<long, IDBType> criteriaTreeParents = new Dictionary<long, IDBType>();
-                TypeDB[nameof(CriteriaTree) + nameof(TypeCollection<CriteriaTree>)] = criteriaTreeParents;
-
-                foreach (CriteriaTree criteriaTree in criteriaTreeDb.Values.AsTypedEnumerable<CriteriaTree>())
-                {
-                    if (criteriaTree.Parent != 0)
-                    {
-                        if (!(criteriaTreeParents.TryGetValue(criteriaTree.Parent, out IDBType criteriaChildren) &&
-                            criteriaChildren is TypeCollection<CriteriaTree> childrenTrees))
-                        {
-                            criteriaTreeParents[criteriaTree.Parent] = childrenTrees = new TypeCollection<CriteriaTree>();
-                        }
-
-                        childrenTrees.Collection.Add(criteriaTree);
-                    }
-                }
+                CollectObjectsByValue<CriteriaTree>(type, (se) => se.Parent);
             }
             // ModifierTree creates parent mapping one-time
             if (type == nameof(ModifierTree))
             {
-                IDictionary<long, IDBType> modifierTreeDb = TypeDB[type];
-                Dictionary<long, IDBType> modifierTreeParents = new Dictionary<long, IDBType>();
-                TypeDB[nameof(ModifierTree) + nameof(TypeCollection<ModifierTree>)] = modifierTreeParents;
+                CollectObjectsByValue<ModifierTree>(type, (se) => se.Parent);
+            }
+            // SpellEffect creates SpellID mapping one-time
+            if (type == nameof(SpellEffect))
+            {
+                CollectObjectsByValue<SpellEffect>(type, (se) => se.SpellID);
+            }
+            // TransmogSetItem creates TransmogSetID mapping one-time
+            if (type == nameof(TransmogSetItem))
+            {
+                CollectObjectsByValue<TransmogSetItem>(type, (se) => se.TransmogSetID);
+            }
+        }
 
-                foreach (ModifierTree modifierTree in modifierTreeDb.Values.AsTypedEnumerable<ModifierTree>())
+        private static void CollectObjectsByValue<T>(string type, Func<T, long> valueFunc)
+            where T : IDBType
+        {
+            IDictionary<long, IDBType> db = TypeDB[type];
+            Dictionary<long, IDBType> group = new Dictionary<long, IDBType>();
+            TypeDB[type + nameof(TypeCollection<T>)] = group;
+
+            foreach (T obj in db.Values.AsTypedEnumerable<T>())
+            {
+                long groupID = valueFunc(obj);
+                if (groupID != 0)
                 {
-                    if (modifierTree.Parent != 0)
+                    if (!(group.TryGetValue(groupID, out IDBType groupDB) && groupDB is TypeCollection<T> groupCollection))
                     {
-                        if (!(modifierTreeParents.TryGetValue(modifierTree.Parent, out IDBType modifierChildren) &&
-                            modifierChildren is TypeCollection<ModifierTree> childrenTrees))
-                        {
-                            modifierTreeParents[modifierTree.Parent] = childrenTrees = new TypeCollection<ModifierTree>();
-                        }
-
-                        childrenTrees.Collection.Add(modifierTree);
+                        group[groupID] = groupCollection = new TypeCollection<T>();
                     }
+
+                    groupCollection.Collection.Add(obj);
                 }
             }
         }

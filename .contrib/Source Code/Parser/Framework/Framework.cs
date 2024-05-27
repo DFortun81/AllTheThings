@@ -196,6 +196,7 @@ namespace ATT
             { "questID", new Dictionary<long, List<IDictionary<string, object>>>() },
             { "recipeID", new Dictionary<long, List<IDictionary<string, object>>>() },
             { "spellID", new Dictionary<long, List<IDictionary<string, object>>>() },
+            { "sourceID", new Dictionary<long, List<IDictionary<string, object>>>() },
         };
 
         // TODO: clean all these separate collections into the above
