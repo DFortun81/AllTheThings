@@ -134,13 +134,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216569),	-- Deflector of Orbiss
 					i(215862),	-- Engraved Spire
 					i(211151),	-- Fran's Repeater
+					i(216419),	-- Hozen Knife
 					i(215861),	-- Instructor's Spire (quest reward)
 					i(215488),	-- Mountainscaler Hatchet
+					i(215982),	-- Marista Greatsword
 					i(215597),	-- Mushan Slicer
 					i(216022),	-- Pandaren Axe
+					i(216424),	-- Pandaren Breaker -- Not 100% sure if I got it from here, its a mace after all.
 					i(216543),	-- Pandaren Bulwark
 					i(216445),	-- Pandaren Ceremonial Fan
 					i(216021),	-- Pandaren Hatchet
+					i(216421),	-- Pandaren Mace
 					i(216544),	-- Pandaren Shield
 					i(216482),	-- Pandaren Windblade
 					i(216440),	-- Pandaren Tome
@@ -149,6 +153,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(210335),	-- Shado-Pan Dagger
 					i(215603),	-- Sha-Warped Slicer
 					i(216473),	-- Tian Monastery Staff
+					i(216477),	-- Temple Trainee's Scimitar
 					i(215869),	-- Waterweaver's Staff
 					i(215809),	-- Yaungol Warspear
 				}),

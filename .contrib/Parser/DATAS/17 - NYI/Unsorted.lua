@@ -6165,9 +6165,6 @@ root(ROOTS.Unsorted, {
 					i(216414),	-- Iron Qon's Knife
 					i(216415),	-- Iron Qon's Knife
 					i(216416),	-- Hozen Blade
-					i(216419),	-- Hozen Knife
-					i(216421),	-- Pandaren Mace
-					i(216424),	-- Pandaren Breaker
 					i(216425),	-- Acid-Spine Bonebreaker
 					i(216427),	-- Acid-Spine Bonebreaker
 					i(216430),	-- Torall, the Emperor's Scepter
@@ -6197,7 +6194,6 @@ root(ROOTS.Unsorted, {
 					i(216470),	-- Tian Monastery Spire
 					i(216474),	-- Temple Trainee's Sword
 					i(216475),	-- Temple Trainee's Blade
-					i(216477),	-- Temple Trainee's Scimitar
 					i(216478),	-- Pandaren Flamberge
 					i(216480),	-- Pandaren Greatblade
 					i(216481),	-- Pandaren Greatsword
