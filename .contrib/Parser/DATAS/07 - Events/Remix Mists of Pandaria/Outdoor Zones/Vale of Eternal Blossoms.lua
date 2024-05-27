@@ -125,6 +125,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215651),	-- Pandaren Fist
 					i(215802),	-- Spear of Feral Rage
 					i(215892),	-- Staff of the Black Ox
+					i(215514),	-- Wallwatcher's Longaxe
 					i(215782),	-- Wasteland Maul
 					i(215943),	-- Wasteland Scimitar
 				}),
