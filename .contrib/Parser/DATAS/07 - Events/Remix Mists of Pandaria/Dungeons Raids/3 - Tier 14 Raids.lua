@@ -127,7 +127,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					-- Maybe Bugged, Maybe shared with Normal
 					-- Yuni on Discord: i(215727) gotten as normal drop, previously reported as LFR (currently sourced in both spots)
 					------------------------------------------------------------------------
-					i(215582),	-- Blade of the Seven Stars (ToES LFR)
+					i(215582),	-- Blade of the Seven Stars (HoF LFR (1st wing) / ToES LFR)
 					i(215584),	-- Blade of the Seven Stars (MSV LFR)
 					i(215793),	-- Bo-Ris, Spear of Night (HoF LFR)
 					i(210641),	-- Bo-Ris, Spear of Night
@@ -139,6 +139,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215481),	-- Elegion, the Star Cleaver (ToES LFR)
 					i(215528),	-- Fang Kung, Emperor's Legacy (MSV LFR / HoF LFR)
 					i(215531),	-- Fang Kung, Emperor's Legacy (MSV LFR / HoF LFR)
+					i(215847),	-- Fearspeaker's Warstaff (MSV LFR 2nd wing)
 					i(215636),	-- Fist of Shek'zeer (HoF LFR)
 					i(215727),	-- Galvanized Stormcrusher
 					i(215728),	-- Galvanized Stormcrusher (MSV LFR)
@@ -154,12 +155,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215929),	-- Kilrak, Fangs of Terror
 					i(215734),	-- Kri'tak, Scepter of the Swarm
 					i(215735),	-- Kri'tak, Scepter of the Swarm
+					i(215737),	-- Kri'tak, Scepter of the Swarm (MSV LFR 1st wing)
 					i(215935),	-- Loshan, Fear Incarnate
 					i(215936),	-- Loshan, Fear Incarnate (MSV LFR)
 					i(215798),	-- Qiang's Unbreakable Polearm (HoF LFR)
 					i(215799),	-- Qiang's Unbreakable Polearm
 					i(215801),	-- Qiang's Unbreakable Polearm (HoF LFR)
-					i(215585),	-- Regail's Fulminating Blade (MSV LFR)
+					i(215585),	-- Regail's Fulminating Blade (MSV LFR / ToES LFR)
 					i(215934),	-- Loshan, Fear Incarnate (MSV LFR)
 					i(216438),	-- Pandaren Manuscript (MSV LFR -> possible wildcard drop)
 					i(215588),	-- Regail's Fulminating Blade (HoF LFR)
@@ -176,10 +178,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215696),	-- Taoren, the Malignant (HoF LFR)
 					i(215731),	-- Tihan, Scepter of the Sleeper (MSV LFR)
 					i(215997),	-- Torch of the Starspark (MSV LFR (1st wing))
-					i(216000),	-- Torch of the Starspark (HoF LFR)
+					i(216000),	-- Torch of the Starspark (MSV LFR (1st wing) / HoF LFR)
 					i(215843),	-- Waterspeaker's Staff
 					i(215846),	-- Waterspeaker's Staff (MSV LFR)
-					i(215671),	-- Zephyrcall Censer (MSV LFR)
+					i(215671),	-- Zephyrcall Censer (MSV LFR / HoF LFR (2nd wing))
+					i(215674),	-- Zephyrcall Censer (MSV LFR (1st wing))
 				}),
 			})),
 			d(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["modID"] = 0 }, {
@@ -299,7 +302,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215840),	-- Brazier of the Eternal Empire
 					i(215556),	-- Crossbow of Forgotten Glory
 					i(215482),	-- Elegion, the Star Cleaver
-					i(215847),	-- Fearspeaker's Warstaff
+					i(215847),	-- Fearspeaker's Warstaff (Alex: double up into LFR, MSV LFR 2nd wing)
 					i(215848),	-- Fearspeaker's Warstaff
 					i(215850),	-- Fearspeaker's Warstaff
 					i(215637),	-- Fist of Shek'zeer
@@ -314,7 +317,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215855),	-- Jin'ya, Orb of the Watercaller
 					i(215932),	-- Kilrak, Fangs of Terror
 					i(215735),	-- Kri'tak, Scepter of the Swarm (confirmed 23.05.2024)
-					i(215737),	-- Kri'tak, Scepter of the Swarm (Alex: was also looted in MSV LFR 1st wing)
+					i(215737),	-- Kri'tak, Scepter of the Swarm (Alex: double up into LFR, MSV LFR 1st wing)
 					i(215626),	-- Megaera's Fang
 					i(216529),	-- Protection of the Emperor
 					i(215799),	-- Qiang's Unbreakable Polearm
@@ -329,7 +332,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215732),	-- Tihan, Scepter of the Sleeper
 					i(215844),	-- Waterspeaker's Staff
 					i(215672),	-- Zephyrcall Censer
-					i(215674),	-- Zephyrcall Censer (MSV LFR 1st wing)
 				}),
 			})),
 			d(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["modID"] = 0 }, {
