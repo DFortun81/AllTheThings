@@ -6196,7 +6196,6 @@ root(ROOTS.Unsorted, {
 					i(216465),	-- Dinomancer's Spire
 					i(216469),	-- Suen-Wo, Spire of the Rising Sun
 					i(216470),	-- Tian Monastery Spire
-					i(216473),	-- Tian Monastery Staff
 					i(216474),	-- Temple Trainee's Sword
 					i(216475),	-- Temple Trainee's Blade
 					i(216477),	-- Temple Trainee's Scimitar
@@ -6226,7 +6225,6 @@ root(ROOTS.Unsorted, {
 					i(216564),	-- Gaze of the Ancient
 					i(216565),	-- Gaze of the Ancient
 					i(216567),	-- Dreadwood Bulwark
-					i(216569),	-- Deflector of Orbiss
 					i(216571),	-- Tian Deflector
 					i(216572),	-- Shomi's Barrier
 					i(216573),	-- Spiritsage's Barrier

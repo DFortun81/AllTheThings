@@ -130,6 +130,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215644),	-- Amber Claw
 					i(215873),	-- Amberweaver's Staff
 					i(215681),	-- Crane's Beak Effigy
+					i(215948),	-- Darkhide Sword
+					i(216569),	-- Deflector of Orbiss
 					i(215862),	-- Engraved Spire
 					i(211151),	-- Fran's Repeater
 					i(215861),	-- Instructor's Spire (quest reward)
@@ -144,6 +146,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215805),	-- Serpentguard Spear
 					i(210335),	-- Shado-Pan Dagger
 					i(215603),	-- Sha-Warped Slicer
+					i(216473),	-- Tian Monastery Staff
 					i(215869),	-- Waterweaver's Staff
 					i(215809),	-- Yaungol Warspear
 				}),
