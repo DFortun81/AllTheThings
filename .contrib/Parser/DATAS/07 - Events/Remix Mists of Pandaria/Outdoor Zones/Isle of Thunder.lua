@@ -317,8 +317,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215549),	-- Miracoran, the Dissonant Chord
 					i(216540),	-- Mogu Lord's Shield
 					i(215597),	-- Mushan Slicer
+					i(215893),	-- Pilgrim's Staff
 					i(215761),	-- Saurok Smasher
+					i(215603),	-- Sha-Warped Slicer
 					i(215805),	-- Serpentguard Spear
+					i(215745),	-- Wasteland Basher
 				})
 			}),
 		},
