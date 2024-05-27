@@ -244,6 +244,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216461),	-- Caduceus of Pure Moods
 						i(216463),	-- Dinomancer's Spire
 						i(215561),	-- Durumu's Gaze
+						i(215564),	-- Durumu's Gaze
 						i(215689),	-- Eye of the Hydra
 						i(216409),	-- Fyn's Dagger
 						i(216412),	-- Iron Qon's Knife
@@ -519,10 +520,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214926),	-- Lightning Emperor's Grasp
 							i(214927),	-- Lightning Emperor's Shoulderguards
 							i(214928),	-- Lightning Emperor's Waistguard
+							-- WARRIOR
+							i(214993),	-- Waistguard of the Last Mogu
+							i(214994),	-- Shoulderguards of the Last Mogu
+							i(214995),	-- Handguards of the Last Mogu
+							i(214996),	-- Chestguard of the Last Mogu
+							i(214997),	-- Warhelm of the Last Mogu
+							i(214998),	-- Greaves of the Last Mogu
+							i(214999),	-- Armguards of the Last Mogu
+							i(215000),	-- Greatboots of the Last Mogu
 						}),
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+						i(215771),	-- Jerthud, Hand of the Savior
+						i(216436),	-- Hammer of the Dawn
 						i(215548),	-- Miracoran, the Dissonant Chord
+						i(216013),	-- Shellsplitter Battleaxe
 						i(216468),	-- Suen-Wo, Spire of the Rising Sun
 						i(215544),	-- Tortoiseshell Longbow
 					})),

@@ -5991,17 +5991,6 @@ root(ROOTS.Unsorted, {
 						i(214919),	-- Lightning Emperor's Vambraces
 						i(214920),	-- Lightning Emperor's Warboots
 
-
-						-- WARRIOR
-						i(214993),	-- Waistguard of the Last Mogu
-						i(214994),	-- Shoulderguards of the Last Mogu
-						i(214995),	-- Handguards of the Last Mogu
-						i(214996),	-- Chestguard of the Last Mogu
-						i(214997),	-- Warhelm of the Last Mogu
-						i(214998),	-- Greaves of the Last Mogu
-						i(214999),	-- Armguards of the Last Mogu
-						i(215000),	-- Greatboots of the Last Mogu
-
 						-- WARRIOR
 						i(215009),	-- Greatbelt of the Last Mogu
 						i(215010),	-- Spaulders of the Last Mogu
@@ -6048,12 +6037,9 @@ root(ROOTS.Unsorted, {
 					i(215550),	-- Miracoran, the Dissonant Chord
 					i(215553),	-- Death Lotus Repeater
 					i(215554),	-- Death Lotus Repeater
-					i(215556),	-- Crossbow of Forgotten Glory
 					i(215557),	-- Crossbow of Forgotten Glory
-					i(215560),	-- Faded Forest Launcher
 					i(215562),	-- Durumu's Gaze
 					i(215563),	-- Durumu's Gaze
-					i(215564),	-- Durumu's Gaze
 					i(215565),	-- Jinyu Slasher
 					i(215566),	-- Jinyu Blade
 					i(215567),	-- Jinyu Poker
@@ -6065,7 +6051,6 @@ root(ROOTS.Unsorted, {
 					i(215578),	-- Rik'kal's Bloody Blade
 					i(215579),	-- Rik'kal's Bloody Blade
 					i(215581),	-- Blade of the Seven Stars
-					i(215587),	-- Regail's Fulminating Blade
 					i(215599),	-- Mountainscaler Slicer
 					i(215606),	-- Firescribe Slicer
 					i(215607),	-- Ceremonial Spike
@@ -6096,7 +6081,6 @@ root(ROOTS.Unsorted, {
 					i(215690),	-- Kor'kron Heavy Rifle
 					i(215691),	-- Kor'kron Heavy Rifle
 					i(215692),	-- Kor'kron Heavy Rifle
-					i(215694),	-- Taoren, the Malignant
 					i(215699),	-- Grand Imperial Rifle
 					i(215701),	-- Jadewatch Rifle
 					i(215708),	-- Roar of the Quillen
@@ -6113,7 +6097,6 @@ root(ROOTS.Unsorted, {
 					i(215765),	-- Mace of Dark Animus
 					i(215768),	-- Mace of Dark Animus
 					i(215769),	-- Jerthud, Hand of the Savior
-					i(215771),	-- Jerthud, Hand of the Savior
 					i(215775),	-- Zeeg's Ancient Kegbreaker
 					i(215785),	-- Fangcracker Maul
 					i(215787),	-- Kazra'jin's Maul
@@ -6125,9 +6108,7 @@ root(ROOTS.Unsorted, {
 					i(215814),	-- Shan-Dun, Breaker of Courage
 					i(215826),	-- Spire of Supremacy
 					i(215827),	-- Rod of the Megantholithic Apparatus
-					i(215845),	-- Waterspeaker's Staff
 					i(215853),	-- Gao-Rei, Staff of the Protector
-					i(215856),	-- Jin'ya, Orb of the Watercaller
 					i(215864),	-- Torch of Dawn
 					i(215868),	-- Monastic Staff
 					i(215876),	-- Mistdancer's Rod
@@ -6162,7 +6143,6 @@ root(ROOTS.Unsorted, {
 					i(215967),	-- Soulblade of the Storm
 					i(215968),	-- Greatsword of the Iron Legion
 					i(215971),	-- Greatsword of Fallen Pride
-					i(215981),	-- Red Crane Greatsword
 					i(215988),	-- Jinyu Greatsword
 					i(215991),	-- Zerat, Soulburner's Greatsword
 					i(215993),	-- Zerat, Soulburner's Greatsword
@@ -6180,7 +6160,6 @@ root(ROOTS.Unsorted, {
 					i(216010),	-- Venomlord's Skull Wand
 					i(216011),	-- Venomlord's Skull Wand
 					i(216012),	-- Venomlord's Skull Wand
-					i(216013),	-- Shellsplitter Battleaxe
 					i(216014),	-- Shellsplitter Battleaxe
 					i(216016),	-- Shellsplitter Battleaxe
 					i(216017),	-- Stormbreaker's Waraxe
@@ -6208,7 +6187,6 @@ root(ROOTS.Unsorted, {
 					i(216431),	-- Torall, the Emperor's Scepter
 					i(216432),	-- Acid-Spine Bonebreaker
 					i(216434),	-- Hammer of the Dawn
-					i(216436),	-- Hammer of the Dawn
 					i(216437),	-- Hammer of the Dawn
 					i(216439),	-- Pandaren Book
 					i(216442),	-- Pandaren Decorative Fan

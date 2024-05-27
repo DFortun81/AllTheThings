@@ -297,6 +297,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215583),	-- Blade of the Seven Stars
 					i(215791),	-- Bo-Ris, Spear of Night
 					i(215840),	-- Brazier of the Eternal Empire
+					i(215556),	-- Crossbow of Forgotten Glory
 					i(215482),	-- Elegion, the Star Cleaver
 					i(215847),	-- Fearspeaker's Warstaff
 					i(215848),	-- Fearspeaker's Warstaff
@@ -324,6 +325,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215887),	-- Soulwood Spire
 					i(216447),	-- Sphere of Arcing Lightning
 					i(216561),	-- Steelskin, Qiang's Bulwark
+					i(215694),	-- Taoren, the Malignant
 					i(215732),	-- Tihan, Scepter of the Sleeper
 					i(215844),	-- Waterspeaker's Staff
 					i(215672),	-- Zephyrcall Censer
@@ -452,11 +454,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215729),	-- Galvanized Stormcrusher
 					i(215634),	-- Gara'kal, Claw of the Spiribinder
 					i(215969),	-- Greatsword of the Iron Legion
+					i(215856),	-- Jin'ya, Orb of the Watercaller
 					i(215789),	-- Kazra'jin's Maul
 					i(215931),	-- Kilrak, Fangs of Terror
 					i(215736),	-- Kri'tak, Scepter of the Swarm
 					i(215933),	-- Loshan, Fear Incarnate
 					i(215800),	-- Qiang's Unbreakable Polearm
+					i(215587),	-- Regail's Fulminating Blade
 					i(215927),	-- Scimitar of Seven Stars
 					i(215507),	-- Shin'ka, the Tyrant's Greataxe
 					i(215589),	-- Soulsever (HoF HC)
@@ -465,6 +469,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215999),	-- Torch of the Starkspark
 					i(215516),	-- Uroe, Harbinger of Fear
+					i(215845),	-- Waterspeaker's Staff
 					i(215673),	-- Zephyrcall Censer (HoF HC)
 					i(215990),	-- Zerat, Soulburner's Greatsword
 				}),

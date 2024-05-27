@@ -132,6 +132,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215681),	-- Crane's Beak Effigy
 					i(215862),	-- Engraved Spire
 					i(211151),	-- Fran's Repeater
+					i(215861),	-- Instructor's Spire (quest reward)
 					i(215488),	-- Mountainscaler Hatchet
 					i(215597),	-- Mushan Slicer
 					i(216022),	-- Pandaren Axe

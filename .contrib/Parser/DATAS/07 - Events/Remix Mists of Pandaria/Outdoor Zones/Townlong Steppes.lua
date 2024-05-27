@@ -107,8 +107,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					i(215871),	-- Amberweaver's Conduit
+					i(215870),	-- Amberweaver's Rod (drop)
 					i(215980),	-- Binan Falchion
+					i(215803),	-- Dragonguard's Glaive (drop)
 					i(215763),	-- Hozen Basher
+					i(215772),	-- Jerthud, Hand of the Savior (either here or dread wastes)
 					i(215894),	-- Jinyu Conduit
 					i(215987),	-- Jinyu Greatblade
 					i(215758),	-- Saurok Scepter

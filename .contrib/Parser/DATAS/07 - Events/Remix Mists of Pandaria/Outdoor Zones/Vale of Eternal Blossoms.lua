@@ -115,6 +115,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215069),	-- Cragchewer Warhelm
 				}),
 				n(WEAPONS, {
+					i(215742),	-- Faded Forest Crusher (drop)
 					i(215865),	-- Fogspeaker Conduit
 					i(215764),	-- Hozen Mace
 					i(215621),	-- Imperial Warknife (could be from ToT LFR or SoO LFR)
@@ -123,6 +124,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215989),	-- Jinyu Flamberge
 					i(215532),	-- Mogu Warbow
 					i(215651),	-- Pandaren Fist
+					i(215981),	-- Red Crane Greatsword
 					i(215802),	-- Spear of Feral Rage
 					i(215892),	-- Staff of the Black Ox
 					i(215514),	-- Wallwatcher's Longaxe

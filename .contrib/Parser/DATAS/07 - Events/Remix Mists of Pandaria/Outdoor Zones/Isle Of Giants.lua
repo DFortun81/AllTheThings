@@ -95,6 +95,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214811),	-- Wallwatcher Sabatons
 				}),
 				n(WEAPONS, {
+					-- Most likely also shares with isle of thunder + timeless isle
+					i(216601),	-- Eyes of the Doomed
 					i(215703),	-- Pandaren Rifle
 					i(215960),	-- Tian Monastery Scimitar
 				}),

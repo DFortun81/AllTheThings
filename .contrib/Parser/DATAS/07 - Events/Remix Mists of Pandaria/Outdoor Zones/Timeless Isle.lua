@@ -326,6 +326,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215948),	-- Darkhide Sword
 					i(215908),	-- Do-tharak, the Foebreaker
 					i(215862),	-- Engraved Spire
+					i(215560),	-- Faded Forest Launcher
 					i(215952),	-- Fear's Bite
 					i(215970),	-- Greatsword of the Iron Legion
 					i(215944),	-- Harmonious Scimitar
@@ -333,6 +334,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216535),	-- Ironwood Bulwark
 					i(215511),	-- Jadestone Greataxe
 					i(215772),	-- Jerthud, Hand of the Savior
+					i(215897),	-- Jinyu Staff (confirmed by Yuni)
 					i(215486),	-- Jinyu Waraxe
 					i(215722),	-- Mace of the Old Ones
 					i(216540),	-- Mogu Lord's Shield
@@ -352,7 +354,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216601),	-- Eyes of the Doomed
 					i(215940),	-- Halcyon Blade
 					i(215861),	-- Instructor's Spire
-					i(215897),	-- Jinyu Staff
 					i(215982),	-- Marista Greatsword
 					i(215549),	-- Miracoran, the Dissonant Chord
 					i(215597),	-- Mushan Slicer
