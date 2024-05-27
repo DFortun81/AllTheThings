@@ -314,6 +314,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215623),	-- Imperial Shortblade
 					i(215861),	-- Instructor's Spire
 					i(215897),	-- Jinyu Staff
+					i(215772),	-- Jerthud, Hand of the Savior
 					i(215982),	-- Marista Greatsword
 					i(215549),	-- Miracoran, the Dissonant Chord
 					i(216540),	-- Mogu Lord's Shield
