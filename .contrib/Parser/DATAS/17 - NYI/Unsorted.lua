@@ -6192,7 +6192,6 @@ root(ROOTS.Unsorted, {
 					i(216442),	-- Pandaren Decorative Fan
 					i(216443),	-- Pandaren Ornate Fan
 					i(216444),	-- Pandaren Ritual Fan
-					i(216445),	-- Pandaren Ceremonial Fan
 					i(216446),	-- Sphere of Arcing Lightning
 					i(216448),	-- Sphere of Arcing Lightning
 					i(216449),	-- Sphere of Arcing Lightning
