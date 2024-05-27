@@ -5925,17 +5925,6 @@ root(ROOTS.Unsorted, {
 						i(214188),	-- Jerkin of the Haunted Forest
 						i(214189),	-- Wraps of the Haunted Forest
 
-						-- DRUID
-						i(214174),	-- Bindings of the Haunted Forest
-						i(214175),	-- Vest of the Haunted Forest
-						i(214176),	-- Footguards of the Haunted Forest
-						i(214177),	-- Cover of the Haunted Forest
-						i(214178),	-- Grips of the Haunted Forest
-						i(214179),	-- Waistband of the Haunted Forest
-						i(214180),	-- Spaulders of the Haunted Forest
-						i(214181),	-- Legguards of the Haunted Forest
-
-
 						-- MONK
 						i(214259),	-- Fire-Charm Bracers
 						i(214260),	-- Fire-Charm Tunic
@@ -6030,14 +6019,12 @@ root(ROOTS.Unsorted, {
 					i(215472),	-- Haromm's Frozen Battleaxe
 					i(215476),	-- Malkorok's Headtaker
 					i(215477),	-- Korven's Crescent
-					i(215480),	-- Korven's Crescent
 					i(215494),	-- Yaungol Cleaver
 					i(215496),	-- Yaungol Axe
 					i(215497),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215498),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215500),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215501),	-- Xal'atoh, Malformed Image of Gorehowl
-					i(215504),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
 					i(215512),	-- Wallwatcher's Poleaxe
 					i(215513),	-- Wallwatcher's Axe
@@ -6059,12 +6046,9 @@ root(ROOTS.Unsorted, {
 					i(215541),	-- Jinyu Warbow
 					i(215546),	-- Miracoran, the Dissonant Chord
 					i(215547),	-- Miracoran, the Dissonant Chord
-					i(215548),	-- Miracoran, the Dissonant Chord
 					i(215550),	-- Miracoran, the Dissonant Chord
-					i(215551),	-- Death Lotus Repeater
 					i(215553),	-- Death Lotus Repeater
 					i(215554),	-- Death Lotus Repeater
-					i(215555),	-- Crossbow of Forgotten Glory
 					i(215556),	-- Crossbow of Forgotten Glory
 					i(215557),	-- Crossbow of Forgotten Glory
 					i(215560),	-- Faded Forest Launcher
@@ -6079,7 +6063,6 @@ root(ROOTS.Unsorted, {
 					i(215572),	-- Norushen's Dagger
 					i(215574),	-- Nazgrim's Shanker
 					i(215575),	-- Nazgrim's Shanker
-					i(215577),	-- Rik'kal's Bloody Blade
 					i(215578),	-- Rik'kal's Bloody Blade
 					i(215579),	-- Rik'kal's Bloody Blade
 					i(215581),	-- Blade of the Seven Stars
@@ -6093,17 +6076,13 @@ root(ROOTS.Unsorted, {
 					i(215615),	-- Amber Blade
 					i(215616),	-- Pandaren Warknife
 					i(215618),	-- Pandaren Triblade
-					i(215619),	-- Pandaren Sai
-					i(215621),	-- Imperial Warknife
 					i(215622),	-- Imperial Longknife
 					i(215624),	-- Megaera's Fang
-					i(215628),	-- Softfoot's Iron Claw
 					i(215631),	-- Softfoot's Iron Claw
 					i(215640),	-- Barbs of the Rikkitun
 					i(215650),	-- Pandaren Claw
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
 					i(215655),	-- Amun-Thoth, Sul's Spiritrender
-					i(215656),	-- Hozen Fetish
 					i(215657),	-- Hozen Conduit
 					i(215662),	-- Prophecies of Y'Shaarj
 					i(215670),	-- Sha-Touched Globule
@@ -6115,7 +6094,6 @@ root(ROOTS.Unsorted, {
 					i(215685),	-- Klaxxi Channeling Fork
 					i(215686),	-- Eye of the Hydra
 					i(215687),	-- Eye of the Hydra
-					i(215689),	-- Eye of the Hydra
 					i(215690),	-- Kor'kron Heavy Rifle
 					i(215691),	-- Kor'kron Heavy Rifle
 					i(215692),	-- Kor'kron Heavy Rifle
@@ -6142,14 +6120,12 @@ root(ROOTS.Unsorted, {
 					i(215787),	-- Kazra'jin's Maul
 					i(215790),	-- Kazra'jin's Maul
 					i(215794),	-- Halberd of Inner Darkness
-					i(215804),	-- Wallwatcher's Partisan
 					i(215810),	-- Warspear of Xuen
 					i(215811),	-- Shan-Dun, Breaker of Courage
 					i(215813),	-- Shan-Dun, Breaker of Courage
 					i(215814),	-- Shan-Dun, Breaker of Courage
 					i(215826),	-- Spire of Supremacy
 					i(215827),	-- Rod of the Megantholithic Apparatus
-					i(215831),	-- Pride's Gaze
 					i(215845),	-- Waterspeaker's Staff
 					i(215853),	-- Gao-Rei, Staff of the Protector
 					i(215856),	-- Jin'ya, Orb of the Watercaller
@@ -6165,14 +6141,12 @@ root(ROOTS.Unsorted, {
 					i(215902),	-- Klaxxi Scimitar
 					i(215903),	-- Klaxxi Sword
 					i(215904),	-- Klaxxi Shortsword
-					i(215909),	-- Xifeng, Longblade of the Guardian
 					i(215910),	-- Xifeng, Longblade of the Guardian
 					i(215911),	-- Xifeng, Longblade of the Guardian
 					i(215912),	-- Xifeng, Longblade of the Guardian
 					i(215913),	-- Kil'ruk's Hateful Blade
 					i(215914),	-- Kil'ruk's Hateful Blade
 					i(215916),	-- Kil'ruk's Hateful Blade
-					i(215917),	-- Arcweaver Spellblade
 					i(215921),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
 					i(215924),	-- Shao-Tien Saber
@@ -6190,7 +6164,6 @@ root(ROOTS.Unsorted, {
 					i(215967),	-- Soulblade of the Storm
 					i(215968),	-- Greatsword of the Iron Legion
 					i(215971),	-- Greatsword of Fallen Pride
-					i(215974),	-- Greatsword of Fallen Pride
 					i(215981),	-- Red Crane Greatsword
 					i(215988),	-- Jinyu Greatsword
 					i(215991),	-- Zerat, Soulburner's Greatsword
@@ -6257,7 +6230,6 @@ root(ROOTS.Unsorted, {
 					i(216457),	-- Pandaren Standard
 					i(216458),	-- Caduceus of Pure Moods
 					i(216460),	-- Caduceus of Pure Moods
-					i(216462),	-- Dinomancer's Spire
 					i(216465),	-- Dinomancer's Spire
 					i(216469),	-- Suen-Wo, Spire of the Rising Sun
 					i(216470),	-- Tian Monastery Spire
@@ -6312,7 +6284,6 @@ root(ROOTS.Unsorted, {
 					i(216599),	-- Eyes of the Doomed
 					i(216612),	-- Seawatch Launcher
 					i(216613),	-- Seawatch Repeater
-					i(216614),	-- Seawatch Crossbow
 				}),
 			}),
 			filter(TOYS, {
@@ -6523,7 +6494,6 @@ root(ROOTS.Unsorted, {
 					i(211162),	-- Klaxxi Longsword
 					i(210336),	-- Kor'kron Heavy Rifle
 					i(210643),	-- Mistspinner's Channel
-					i(210341),	-- Staff of Corrupted Waters
 				}),
 				i(210906),	-- Timerunner's Amice
 				i(210913),	-- Timerunner's Armplates

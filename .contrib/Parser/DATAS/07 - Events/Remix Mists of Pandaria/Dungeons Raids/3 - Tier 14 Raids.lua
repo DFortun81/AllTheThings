@@ -131,8 +131,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215584),	-- Blade of the Seven Stars (MSV LFR)
 					i(215793),	-- Bo-Ris, Spear of Night (HoF LFR)
 					i(210641),	-- Bo-Ris, Spear of Night
-					i(215839),	-- Brazier of the Eternal Empire (MSV LFR)
+					i(215839),	-- Brazier of the Eternal Empire (MSV LFR / ToES LFR)
 					i(215842),	-- Brazier of the Eternal Empire (HoF LFR)
+					i(215555),	-- Crossbow of Forgotten Glory (ToES LFR)
+					i(216462),	-- Dinomancer's Spire (HoF LFR)
 					i(215905),	-- Do-tharak, the Foebreaker (MSV LFR)
 					i(215481),	-- Elegion, the Star Cleaver (ToES LFR)
 					i(215528),	-- Fang Kung, Emperor's Legacy (MSV LFR / HoF LFR)
@@ -146,7 +148,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216566),	-- Gaze of the Ancient (MSV LFR)
 					i(215697),	-- Grand Imperial Rifle (HoF LFR)
 					i(211160),	-- Greatsword of the Iron Legion
-					i(215854),	-- Jin'ya, Orb of the Watercaller (MSV LFR)
+					i(215854),	-- Jin'ya, Orb of the Watercaller (MSV LFR / HoF LFR)
 					i(215857),	-- Jin'ya, Orb of the Watercaller (MSV LFR / HoF LFR)
 					i(215930),	-- Kilrak, Fangs of Terror (HoF LFR)
 					i(215929),	-- Kilrak, Fangs of Terror
@@ -159,6 +161,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215801),	-- Qiang's Unbreakable Polearm (HoF LFR)
 					i(215585),	-- Regail's Fulminating Blade (MSV LFR)
 					i(215934),	-- Loshan, Fear Incarnate (MSV LFR)
+					i(216438),	-- Pandaren Manuscript (MSV LFR -> possible wildcard drop)
 					i(215588),	-- Regail's Fulminating Blade (HoF LFR)
 					i(215926),	-- Scimitar of Seven Stars
 					i(215928),	-- Scimitar of Seven Stars (MSV LFR)

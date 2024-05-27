@@ -160,6 +160,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213946),	-- Robe of the Thousandfold Hells
 						}),
 						filter(LEATHER, {
+							-- DRUID
+							i(214174),	-- Bindings of the Haunted Forest
+							i(214175),	-- Vest of the Haunted Forest
+							i(214176),	-- Footguards of the Haunted Forest
+							i(214177),	-- Cover of the Haunted Forest
+							i(214178),	-- Grips of the Haunted Forest
+							i(214179),	-- Waistband of the Haunted Forest
+							i(214180),	-- Spaulders of the Haunted Forest
+							i(214181),	-- Legguards of the Haunted Forest
 							-- MONK
 							i(214275),	-- Fire-Charm Wraps
 							i(214276),	-- Fire-Charm Jerkin
@@ -235,6 +244,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216461),	-- Caduceus of Pure Moods
 						i(216463),	-- Dinomancer's Spire
 						i(215561),	-- Durumu's Gaze
+						i(215689),	-- Eye of the Hydra
 						i(216409),	-- Fyn's Dagger
 						i(216412),	-- Iron Qon's Knife
 						i(215899),	-- Jalak's Spirit Staff
@@ -512,6 +522,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+						i(215548),	-- Miracoran, the Dissonant Chord
 						i(216468),	-- Suen-Wo, Spire of the Rising Sun
 						i(215544),	-- Tortoiseshell Longbow
 					})),

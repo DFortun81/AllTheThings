@@ -117,6 +117,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					i(215865),	-- Fogspeaker Conduit
 					i(215764),	-- Hozen Mace
+					i(215621),	-- Imperial Warknife (could be from ToT LFR or SoO LFR)
 					i(215947),	-- Inkgill Sword
 					i(215740),	-- Jinyu Bonebreaker
 					i(215989),	-- Jinyu Flamberge

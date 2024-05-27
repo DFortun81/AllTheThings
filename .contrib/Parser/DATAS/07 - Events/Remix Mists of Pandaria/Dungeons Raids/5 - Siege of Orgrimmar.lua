@@ -317,15 +317,22 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+						i(215917),	-- Arcweaver Spellblade
+						i(215551),	-- Death Lotus Repeater
 						i(215835),	-- Drakebinder's Spire
 						i(215663),	-- Lucky Cricket Cage
 						i(215473),	-- Malkorok's Headtaker
 						i(215573),	-- Nazgrim's Shanker
+						i(215831),	-- Pride's Gaze
 						i(215659),	-- Prophecies of Y'Shaarj
+						i(215577),	-- Rik'kal's Bloody Blade
 						i(215830),	-- Rod of the Megantholithic Apparatus
 						i(215667),	-- Sha-Touched Globule
+						i(215628),	-- Softfoot's Iron Claw
 						i(211161),	-- Sphere of Immerseus
 						i(210338),	-- Spire of Supremacy
+						i(210341),	-- Staff of Corrupted Waters
+						i(215909),	-- Xifeng, Longblade of the Guardian
 					})),
 					header(HEADERS.Achievement, 8458, {	-- Vale of Eternal Sorrows
 						e(852, {	-- Immerseus
@@ -921,8 +928,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215920),	-- Arcweaver Spellblade
 						i(215838),	-- Drakebinder's Spire
 						i(215779),	-- Gar'tok, Might of the Faithful
+						i(215974),	-- Greatsword of Fallen Pride
 						i(215797),	-- Halberd of Inner Darkness
 						i(215718),	-- Kardris' Scepter
+						i(215480),	-- Korven's Crescent
 						i(215666),	-- Lucky Cricket Cage
 						i(215722),	-- Mace of the Old Ones
 						i(215576),	-- Nazgrim's Shanker
@@ -933,6 +942,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216558),	-- Shield of the Fallen General
 						i(215821),	-- Staff of Corrupted Waters
 						i(215714),	-- Sphere of Immerseus
+						i(215504),	-- Xal'atoh, Malformed Image of Gorehowl
 					})),
 					e(852, {	-- Immerseus
 						["crs"] = { 71543 },	-- Immerseus

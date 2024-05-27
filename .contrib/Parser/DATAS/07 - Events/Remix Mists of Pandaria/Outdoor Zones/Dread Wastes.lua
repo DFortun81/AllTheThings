@@ -94,6 +94,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					i(215509),	-- Bloodseeker's Greataxe
 					i(215600),	-- Grummle Shortblade
+					i(215656),	-- Hozen Fetish
 					i(215762),	-- Hozen Smasher
 					i(215596),	-- Jadestone Dagger
 					i(215895),	-- Jinyu Rod

@@ -213,9 +213,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(219878),	-- Tireless Spirit
 			i(220117),	-- Ward of Salvation
 		}),
-		filter(WEAPONS, {
-			-- These are sometimes found in dungeon/raid/scenario daily reward boxes. It's possible a better home exists for them? Gathering them here for now. Some zones already have other "imperial" named rewards too. Might be an everywhere thing?
+		n(WEAPONS, {
+			-- These are sometimes found in dungeon/raid/scenario daily reward boxes. It is possible a better home exists for them? Gathering them here for now. Some zones already have other imperial named rewards too. Might be an everywhere thing?
 			i(215620),	-- Imperial Dagger
+			i(215745),	-- Wasteland Basher
 		}),
 	}),
 }))));
