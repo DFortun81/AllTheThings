@@ -139,10 +139,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215609),	-- Sha-Touched Shanker
 			i(215783),	-- Shado-Pan Maul
 			i(216006),	-- Skullcap Wand
+			i(215490),	-- Snowdrift Battleaxe (Temple of the Jade Serpent normal, dungeon quest cache)
 			i(215802),	-- Spear of Feral Rage
 			i(215878),	-- Springrain Spire
 			i(215874),	-- Staff of Iron Will
 			i(215875),	-- Staff of Stolen Hope
+			i(216577),	-- Sutiru's Shield (Temple of the Jade Serpent normal)
 			i(215784),	-- Taran Zhu's Bonebreaker
 			i(215645),	-- Tian Handblade
 			i(215608),	-- Tolakesh, Horn of Niuzao

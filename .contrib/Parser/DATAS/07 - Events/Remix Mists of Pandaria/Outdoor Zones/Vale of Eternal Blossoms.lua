@@ -116,11 +116,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					i(215865),	-- Fogspeaker Conduit
+					i(215764),	-- Hozen Mace
 					i(215947),	-- Inkgill Sword
 					i(215740),	-- Jinyu Bonebreaker
 					i(215989),	-- Jinyu Flamberge
 					i(215532),	-- Mogu Warbow
 					i(215651),	-- Pandaren Fist
+					i(215802),	-- Spear of Feral Rage
 					i(215892),	-- Staff of the Black Ox
 					i(215782),	-- Wasteland Maul
 					i(215943),	-- Wasteland Scimitar

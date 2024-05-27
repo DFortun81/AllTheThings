@@ -457,11 +457,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215800),	-- Qiang's Unbreakable Polearm
 					i(215927),	-- Scimitar of Seven Stars
 					i(215507),	-- Shin'ka, the Tyrant's Greataxe
+					i(215589),	-- Soulsever (HoF HC)
 					i(215977),	-- Star Slicer (Unique!)
 					i(216559),	-- Steelskin, Qiang's Bulwark
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215999),	-- Torch of the Starkspark
 					i(215516),	-- Uroe, Harbinger of Fear
+					i(215673),	-- Zephyrcall Censer (HoF HC)
 					i(215990),	-- Zerat, Soulburner's Greatsword
 				}),
 			})),

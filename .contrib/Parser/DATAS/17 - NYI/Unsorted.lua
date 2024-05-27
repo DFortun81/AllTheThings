@@ -6031,7 +6031,6 @@ root(ROOTS.Unsorted, {
 					i(215476),	-- Malkorok's Headtaker
 					i(215477),	-- Korven's Crescent
 					i(215480),	-- Korven's Crescent
-					i(215490),	-- Snowdrift Battleaxe
 					i(215494),	-- Yaungol Cleaver
 					i(215496),	-- Yaungol Axe
 					i(215497),	-- Kura-Kura, Kazra'jin's Headtaker
@@ -6058,7 +6057,6 @@ root(ROOTS.Unsorted, {
 					i(215539),	-- Jinyu Longbow
 					i(215540),	-- Jinyu Shortbow
 					i(215541),	-- Jinyu Warbow
-					i(215544),	-- Tortoiseshell Longbow
 					i(215546),	-- Miracoran, the Dissonant Chord
 					i(215547),	-- Miracoran, the Dissonant Chord
 					i(215548),	-- Miracoran, the Dissonant Chord
@@ -6070,7 +6068,6 @@ root(ROOTS.Unsorted, {
 					i(215556),	-- Crossbow of Forgotten Glory
 					i(215557),	-- Crossbow of Forgotten Glory
 					i(215560),	-- Faded Forest Launcher
-					i(215561),	-- Durumu's Gaze
 					i(215562),	-- Durumu's Gaze
 					i(215563),	-- Durumu's Gaze
 					i(215564),	-- Durumu's Gaze
@@ -6087,7 +6084,6 @@ root(ROOTS.Unsorted, {
 					i(215579),	-- Rik'kal's Bloody Blade
 					i(215581),	-- Blade of the Seven Stars
 					i(215587),	-- Regail's Fulminating Blade
-					i(215589),	-- Soulsever
 					i(215599),	-- Mountainscaler Slicer
 					i(215606),	-- Firescribe Slicer
 					i(215607),	-- Ceremonial Spike
@@ -6098,7 +6094,6 @@ root(ROOTS.Unsorted, {
 					i(215616),	-- Pandaren Warknife
 					i(215618),	-- Pandaren Triblade
 					i(215619),	-- Pandaren Sai
-					i(215620),	-- Imperial Dagger
 					i(215621),	-- Imperial Warknife
 					i(215622),	-- Imperial Longknife
 					i(215624),	-- Megaera's Fang
@@ -6110,10 +6105,8 @@ root(ROOTS.Unsorted, {
 					i(215655),	-- Amun-Thoth, Sul's Spiritrender
 					i(215656),	-- Hozen Fetish
 					i(215657),	-- Hozen Conduit
-					i(215660),	-- Prophecies of Y'Shaarj
 					i(215662),	-- Prophecies of Y'Shaarj
 					i(215670),	-- Sha-Touched Globule
-					i(215673),	-- Zephyrcall Censer
 					i(215675),	-- Wakener's Lantern
 					i(215677),	-- Jinyu's Light
 					i(215678),	-- Grummle Lantern
@@ -6140,7 +6133,6 @@ root(ROOTS.Unsorted, {
 					i(215756),	-- Klaxxi Smasher
 					i(215759),	-- Saurok Mace
 					i(215760),	-- Saurok Breaker
-					i(215764),	-- Hozen Mace
 					i(215765),	-- Mace of Dark Animus
 					i(215768),	-- Mace of Dark Animus
 					i(215769),	-- Jerthud, Hand of the Savior
@@ -6182,7 +6174,6 @@ root(ROOTS.Unsorted, {
 					i(215916),	-- Kil'ruk's Hateful Blade
 					i(215917),	-- Arcweaver Spellblade
 					i(215921),	-- Shao-Tien Saber
-					i(215922),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
 					i(215924),	-- Shao-Tien Saber
 					i(215937),	-- Imperial Wind Blade
@@ -6199,7 +6190,6 @@ root(ROOTS.Unsorted, {
 					i(215967),	-- Soulblade of the Storm
 					i(215968),	-- Greatsword of the Iron Legion
 					i(215971),	-- Greatsword of Fallen Pride
-					i(215972),	-- Greatsword of Fallen Pride
 					i(215974),	-- Greatsword of Fallen Pride
 					i(215981),	-- Red Crane Greatsword
 					i(215988),	-- Jinyu Greatsword
@@ -6250,7 +6240,6 @@ root(ROOTS.Unsorted, {
 					i(216436),	-- Hammer of the Dawn
 					i(216437),	-- Hammer of the Dawn
 					i(216439),	-- Pandaren Book
-					i(216440),	-- Pandaren Tome
 					i(216442),	-- Pandaren Decorative Fan
 					i(216443),	-- Pandaren Ornate Fan
 					i(216444),	-- Pandaren Ritual Fan
@@ -6289,7 +6278,6 @@ root(ROOTS.Unsorted, {
 					i(216537),	-- Mogu Lord's Deflector
 					i(216539),	-- Mogu Lord's Barrier
 					i(216541),	-- Pandaren Barrier
-					i(216543),	-- Pandaren Bulwark
 					i(216546),	-- Visage of Dread
 					i(216548),	-- Visage of Dread
 					i(216550),	-- Visage of Dread
@@ -6309,7 +6297,6 @@ root(ROOTS.Unsorted, {
 					i(216573),	-- Spiritsage's Barrier
 					i(216574),	-- Flamecaller's Bulwark
 					i(216575),	-- Darkhide Shield
-					i(216577),	-- Sutiru's Shield
 					i(216579),	-- Shield of the Devourer
 					i(216583),	-- Shield of the Protectorate
 					i(216584),	-- Barrier of the Protectorate

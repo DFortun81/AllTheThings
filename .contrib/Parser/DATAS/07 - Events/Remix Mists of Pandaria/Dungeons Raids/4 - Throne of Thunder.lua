@@ -234,6 +234,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215652),	-- Amun-Thoth, Sul's Spiritrender
 						i(216461),	-- Caduceus of Pure Moods
 						i(216463),	-- Dinomancer's Spire
+						i(215561),	-- Durumu's Gaze
 						i(216409),	-- Fyn's Dagger
 						i(216412),	-- Iron Qon's Knife
 						i(215899),	-- Jalak's Spirit Staff
@@ -512,6 +513,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(216468),	-- Suen-Wo, Spire of the Rising Sun
+						i(215544),	-- Tortoiseshell Longbow
 					})),
 					e(827, {	-- Jin'rokh the Breaker
 						["crs"] = { 69465 },	-- Jin'rokh the Breaker
