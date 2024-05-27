@@ -344,6 +344,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215745),	-- Wasteland Basher
 					i(216576),	-- Wasteland Deflector
 					i(215776),	-- Zeeg's Ancient Kegbreaker
+					-- Unconfirmed, but looks like timeless isle <> isle of thunder share everything, just like armor
+					i(215741),	-- Bloodseeker's Bonebreaker
+					i(216595),	-- Bulwark of Twinned Despair
+					i(216600),	-- Eyes of the Doomed
+					i(216601),	-- Eyes of the Doomed
+					i(215940),	-- Halcyon Blade
+					i(215861),	-- Instructor's Spire
+					i(215897),	-- Jinyu Staff
+					i(215982),	-- Marista Greatsword
+					i(215549),	-- Miracoran, the Dissonant Chord
+					i(215597),	-- Mushan Slicer
+					i(215619),	-- Pandaren Sai
 				}),
 			}),
 			n(VENDORS, {

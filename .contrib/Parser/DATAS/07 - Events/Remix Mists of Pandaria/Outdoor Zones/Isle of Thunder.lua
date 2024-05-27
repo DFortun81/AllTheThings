@@ -324,7 +324,21 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215761),	-- Saurok Smasher
 					i(215603),	-- Sha-Warped Slicer
 					i(215805),	-- Serpentguard Spear
+					i(215889),	-- Soulwood Spire
+					i(215515),	-- Wallwatcher's Greataxe
 					i(215745),	-- Wasteland Basher
+					-- Unconfirmed, but looks like timeless isle <> isle of thunder share everything, just like armor
+					i(215948),	-- Darkhide Sword
+					i(215908),	-- Do-tharak, the Foebreaker
+					i(215952),	-- Fear's Bite
+					i(215970),	-- Greatsword of the Iron Legion
+					i(215944),	-- Harmonious Scimitar
+					i(216535),	-- Ironwood Bulwark
+					i(215486),	-- Jinyu Waraxe
+					i(215722),	-- Mace of the Old Ones
+					i(216540),	-- Mogu Lord's Shield
+					i(216576),	-- Wasteland Deflector
+					i(215776),	-- Zeeg's Ancient Kegbreaker
 				})
 			}),
 		},
