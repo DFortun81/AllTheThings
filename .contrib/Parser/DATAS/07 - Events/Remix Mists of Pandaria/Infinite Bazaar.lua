@@ -21,9 +21,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["g"] = {
 			n(219031, {	-- Aeonicus <Raid Finder Apparel>
 				clWithoutLock(DEATHKNIGHT, {
-					i(215320, {	-- Ensemble: Plate of the Lost Catacomb (LFR)
+					iensemble(215320, { -- Ensemble: Plate of the Lost Catacomb (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214817),	-- Legplates of the Lost Catacomb
 							i(214818),	-- Spaulders of the Lost Catacomb
 							i(214819),	-- Greatbelt of the Lost Catacomb
@@ -34,9 +34,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214824),	-- Battleplate of the Lost Catacomb
 						},
 					}),
-					i(215324, {	-- Ensemble: Battleplate of the All-Consuming Maw (LFR)
+					iensemble(215324, { -- Ensemble: Battleplate of the All-Consuming Maw (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214849),	-- Greaves of the All-Consuming Maw
 							i(214850),	-- Shoulderguards of the All-Consuming Maw
 							i(214851),	-- Waistguard of the All-Consuming Maw
@@ -47,9 +47,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214856),	-- Chestguard of the All-Consuming Maw
 						},
 					}),
-					i(215327, {	-- Ensemble: Battleplate of Cyclopean Dread (LFR)
+					iensemble(215327, { -- Ensemble: Battleplate of Cyclopean Dread (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214873),	-- Chestguard of Cyclopean Dread
 							i(214874),	-- Armguards of Cyclopean Dread
@@ -63,9 +63,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(DRUID, {
-					i(215241, {	-- Ensemble: Vestments of the Eternal Blossom (LFR)
+					iensemble(215241, { -- Ensemble: Vestments of the Eternal Blossom (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214142),	-- Eternal Blossom Bracers
 							i(214143),	-- Eternal Blossom Tunic
 							i(214144),	-- Eternal Blossom Boots
@@ -76,9 +76,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214149),	-- Eternal Blossom Leggings
 						},
 					}),
-					i(215245, {	-- Ensemble: Vestments of the Haunted Forest (LFR)
+					iensemble(215245, { -- Ensemble: Vestments of the Haunted Forest (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214174),	-- Bindings of the Haunted Forest
 							i(214175),	-- Vest of the Haunted Forest
 							i(214176),	-- Footguards of the Haunted Forest
@@ -89,9 +89,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214181),	-- Legguards of the Haunted Forest
 						},
 					}),
-					i(215247, {	-- Ensemble: Vestments of the Shattered Vale (LFR)
+					iensemble(215247, { -- Ensemble: Vestments of the Shattered Vale (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214190),	-- Bracers of the Shattered Vale
 							i(214191),	-- Tunic of the Shattered Vale
@@ -105,9 +105,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(HUNTER, {
-					i(215289, {	-- Ensemble: Yaungol Slayer Battlegear (LFR)
+					iensemble(215289, { -- Ensemble: Yaungol Slayer Battlegear (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214562),	-- Yaungol Slayer's Wristguards
 							i(214563),	-- Yaungol Slayer's Breastplate
 							i(214564),	-- Yaungol Slayer's Footguards
@@ -118,9 +118,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214569),	-- Yaungol Slayer's Legwraps
 						},
 					}),
-					i(215293, {	-- Ensemble: Battlegear of the Saurok Stalker (LFR)
+					iensemble(215293, { -- Ensemble: Battlegear of the Saurok Stalker (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214596),	-- Saurok Stalker's Bracers
 							i(214598),	-- Saurok Stalker's Hauberk
 							i(214599),	-- Saurok Stalker's Boots
@@ -131,9 +131,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214604),	-- Saurok Stalker's Leggings
 						},
 					}),
-					i(215295, {	-- Ensemble: Battlegear of the Unblinking Vigil (LFR)
+					iensemble(215295, { -- Ensemble: Battlegear of the Unblinking Vigil (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214617),	-- Wristguards of the Unblinking Vigil
 							i(214618),	-- Breastplate of the Unblinking Vigil
@@ -147,9 +147,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(MAGE, {
-					i(215189, {	-- Ensemble: Regalia of the Burning Scroll (LFR)
+					iensemble(215189, { -- Ensemble: Regalia of the Burning Scroll (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213711),	-- Robe of the Burning Scroll
 							i(213712),	-- Sandals of the Burning Scroll
 							i(213713),	-- Gloves of the Burning Scroll
@@ -160,9 +160,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213718),	-- Bracers of the Burning Scroll
 						},
 					}),
-					i(215193, {	-- Ensemble: Regalia of the Chromatic Hydra (LFR)
+					iensemble(215193, { -- Ensemble: Regalia of the Chromatic Hydra (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213803),	-- Raiment of the Chromatic Hydra
 							i(213804),	-- Treads of the Chromatic Hydra
 							i(213805),	-- Handwraps of the Chromatic Hydra
@@ -173,9 +173,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213810),	-- Cuffs of the Chromatic Hydra
 						},
 					}),
-					i(215196, {	-- Ensemble: Chronomancer Regalia (LFR)
+					iensemble(215196, { -- Ensemble: Chronomancer Regalia (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(220973),	-- Chronomancer Shirt
 							i(213827),	-- Chronomancer Cuffs
@@ -190,9 +190,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(MONK, {
-					i(215252, {	-- Ensemble: Vestments of the Red Crane (LFR)
+					iensemble(215252, { -- Ensemble: Vestments of the Red Crane (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214251),	-- Red Crane Pants
 							i(214252),	-- Red Crane Mantle
 							i(214253),	-- Red Crane Cinch
@@ -203,9 +203,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214258),	-- Red Crane Wraps
 						},
 					}),
-					i(215255, {	-- Ensemble: Fire-Charm Vestments (LFR)
+					iensemble(215255, { -- Ensemble: Fire-Charm Vestments (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214275),	-- Fire-Charm Wraps
 							i(214276),	-- Fire-Charm Jerkin
 							i(214277),	-- Fire-Charm Treads
@@ -216,9 +216,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214282),	-- Fire-Charm Pants
 						},
 					}),
-					i(215256, {	-- Ensemble: Vestments of the Seven Sacred Seals (LFR)
+					iensemble(215256, { -- Ensemble: Vestments of the Seven Sacred Seals (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214283),	-- Leggings of Seven Sacred Seals
 							i(214284),	-- Shoulderpads of Seven Sacred Seals
@@ -232,9 +232,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(PALADIN, {
-					i(215330, {	-- Ensemble: White Tiger Battlegear (LFR)
+					iensemble(215330, { -- Ensemble: White Tiger Battlegear (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214897),	-- White Tiger Greaves
 							i(214898),	-- White Tiger Shoulderguards
 							i(214899),	-- White Tiger Waistguard
@@ -245,9 +245,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214904),	-- White Tiger Chestguard
 						},
 					}),
-					i(215334, {	-- Ensemble: Battlegear of the Lightning Emperor (LFR)
+					iensemble(215334, { -- Ensemble: Battlegear of the Lightning Emperor (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214929),	-- Lightning Emperor's Girdle
 							i(214930),	-- Lightning Emperor's Pauldrons
 							i(214931),	-- Lightning Emperor's Gauntlets
@@ -258,9 +258,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214936),	-- Lightning Emperor's Sabatons
 						},
 					}),
-					i(215335, {	-- Ensemble: Vestments of Winged Triumph (LFR)
+					iensemble(215335, { -- Ensemble: Vestments of Winged Triumph (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214937),	-- Warboots of Winged Triumph
 							i(214938),	-- Vambraces of Winged Triumph
@@ -274,9 +274,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(PRIEST, {
-					i(215199, {	-- Ensemble: Guardian Serpent Regalia (LFR)
+					iensemble(215199, { -- Ensemble: Guardian Serpent Regalia (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213851),	-- Guardian Serpent Raiment
 							i(213852),	-- Guardian Serpent Treads
 							i(213853),	-- Guardian Serpent Handwraps
@@ -287,9 +287,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213858),	-- Guardian Serpent Cuffs
 						},
 					}),
-					i(215201, {	-- Ensemble: Regalia of the Exorcist (LFR)
+					iensemble(215201, { -- Ensemble: Regalia of the Exorcist (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213867),	-- Robe of the Exorcist
 							i(213868),	-- Sandals of the Exorcist
 							i(213869),	-- Gloves of the Exorcist
@@ -300,9 +300,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213874),	-- Bracers of the Exorcist
 						},
 					}),
-					i(215204, {	-- Ensemble: Regalia of Ternion Glory (LFR)
+					iensemble(215204, { -- Ensemble: Regalia of Ternion Glory (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(213891),	-- Bracers of the Ternion Glory
 							i(213892),	-- Cord of the Ternion Glory
@@ -316,9 +316,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(ROGUE, {
-					i(215261, {	-- Ensemble: Battlegear of the Thousandfold Blades (LFR)
+					iensemble(215261, { -- Ensemble: Battlegear of the Thousandfold Blades (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214315),	-- Legguards of the Thousandfold Blades
 							i(214316),	-- Spaulders of the Thousandfold Blades
 							i(214317),	-- Waistband of the Thousandfold Blades
@@ -329,9 +329,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214322),	-- Bindings of the Thousandfold Blades
 						},
 					}),
-					i(215264, {	-- Ensemble: Nine-Tail Battlegear (LFR)
+					iensemble(215264, { -- Ensemble: Nine-Tail Battlegear (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214339),	-- Nine-Tailed Bindings
 							i(214340),	-- Nine-Tailed Vest
 							i(214341),	-- Nine-Tailed Footguards
@@ -342,9 +342,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214346),	-- Nine-Tailed Legguards
 						},
 					}),
-					i(215267, {	-- Ensemble: Barbed Assassin Battlegear (LFR)
+					iensemble(215267, { -- Ensemble: Barbed Assassin Battlegear (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214363),	-- Legguards of the Barbed Assassin
 							i(214364),	-- Spaulders of the Barbed Assassin
@@ -358,9 +358,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(SHAMAN, {
-					i(215298, {	-- Ensemble: Regalia of the Firebird (LFR)
+					iensemble(215298, { -- Ensemble: Regalia of the Firebird (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214647),	-- Firebird's Breastplate
 							i(214646),	-- Firebird's Footguards
@@ -372,9 +372,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214648),	-- Firebird's Wristguards
 						},
 					}),
-					i(215302, {	-- Ensemble: Regalia of the Witch Doctor (LFR)
+					iensemble(215302, { -- Ensemble: Regalia of the Witch Doctor (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214675),	-- Belt of the Witch Doctor
 							i(214678),	-- Boots of the Witch Doctor
@@ -387,9 +387,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214674),	-- Spaulders of the Witch Doctor
 						},
 					}),
-					i(215304, {	-- Ensemble: Regalia of Celestial Harmony (LFR)
+					iensemble(215304, { -- Ensemble: Regalia of Celestial Harmony (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214695),	-- Breastplate of Celestial Harmony
 							i(214694),	-- Footguards of Celestial Harmony
@@ -403,9 +403,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(WARLOCK, {
-					i(215208, {	-- Ensemble: Sha Skin Regalia (LFR)
+					iensemble(215208, { -- Ensemble: Sha Skin Regalia (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213923),	-- Sha-Skin Cuffs
 							i(213924),	-- Sha-Skin Belt
 							i(213925),	-- Sha-Skin Amice
@@ -416,9 +416,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213930),	-- Sha-Skin Raiment
 						},
 					}),
-					i(215210, {	-- Ensemble: Regalia of the Thousandfold Hells (LFR)
+					iensemble(215210, { -- Ensemble: Regalia of the Thousandfold Hells (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213939),	-- Bracers of the Thousandfold Hells
 							i(213940),	-- Cord of the Thousandfold Hells
 							i(213941),	-- Shoulderpads of the Thousandfold Hells
@@ -429,9 +429,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213946),	-- Robe of the Thousandfold Hells
 						},
 					}),
-					i(215214, {	-- Ensemble: Regalia of the Horned Nightmare (LFR)
+					iensemble(215214, { -- Ensemble: Regalia of the Horned Nightmare (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(213971),	-- Cuffs of the Horned Nightmare
 							i(213972),	-- Belt of the Horned Nightmare
@@ -445,9 +445,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(WARRIOR, {
-					i(215339, {	-- Ensemble: Battleplate of Resounding Rings (LFR)
+					iensemble(215339, { -- Ensemble: Battleplate of Resounding Rings (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214969),	-- Greatboots of Resounding Rings
 							i(214970),	-- Armguards of Resounding Rings
 							i(214971),	-- Greaves of Resounding Rings
@@ -458,9 +458,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214976),	-- Waistguard of Resounding Rings
 						},
 					}),
-					i(215343, {	-- Ensemble: Battleplate of the Last Mogu (LFR)
+					iensemble(215343, { -- Ensemble: Battleplate of the Last Mogu (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(215001),	-- Sabatons of the Last Mogu
 							i(215002),	-- Bracers of the Last Mogu
 							i(215003),	-- Legguards of the Last Mogu
@@ -471,9 +471,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215008),	-- Girdle of the Last Mogu
 						},
 					}),
-					i(215346, {	-- Ensemble: Battleplate of the Prehistoric Marauder (LFR)
+					iensemble(215346, { -- Ensemble: Battleplate of the Prehistoric Marauder (LFR)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(215025),	-- Girdle of the Prehistoric Marauder
 							i(215026),	-- Pauldrons of the Prehistoric Marauder
@@ -489,9 +489,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(219030, {	-- Arturos <Dungeon Apparel>
 				filter(CLOTH, {
-					i(215176, {	-- Ensemble: Breezebinder's Vestments (Original)
+					iensemble(215176, { -- Ensemble: Breezebinder's Vestments (Original)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(213644),	-- Breezebinder's Bracers
 							i(213643),	-- Breezebinder's Cord
@@ -503,9 +503,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213642),	-- Breezebinder's Shoulderpads
 						},
 					}),
-					i(215181, {	-- Ensemble: Breezebinder's Vestments (Purple)
+					iensemble(215181, { -- Ensemble: Breezebinder's Vestments (Purple)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(213647),	-- Windwhisper Amice
 							i(213646),	-- Windwhisper Belt
@@ -517,9 +517,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213651),	-- Windwhisper Treads
 						},
 					}),
-					i(215182, {	-- Ensemble: Breezebinder's Vestments (Red)
+					iensemble(215182, { -- Ensemble: Breezebinder's Vestments (Red)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(213657),	-- Brewmoon Crown
 							i(213655),	-- Brewmoon Mantle
@@ -533,9 +533,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				filter(LEATHER, {
-					i(215221, {	-- Ensemble: Mogubreaker Battlegear (Black)
+					iensemble(215221, { -- Ensemble: Mogubreaker Battlegear (Black)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214033),	-- Nimbletoe Belt
 							i(214028),	-- Nimbletoe Boots
@@ -547,9 +547,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214027),	-- Nimbletoe Tunic
 						},
 					}),
-					i(215222, {	-- Ensemble: Mogubreaker Battlegear (Original)
+					iensemble(215222, { -- Ensemble: Mogubreaker Battlegear (Original)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214035),	-- Mogubreaker Bindings
 							i(214039),	-- Mogubreaker Cover
@@ -561,9 +561,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214036),	-- Mogubreaker Waistband
 						},
 					}),
-					i(215223, {	-- Ensemble: Mogubreaker Battlegear (Red)
+					iensemble(215223, { -- Ensemble: Mogubreaker Battlegear (Red)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214047),	-- Tidesplitter Cap
 							i(214050),	-- Tidesplitter Cinch
@@ -575,9 +575,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214051),	-- Tidesplitter Wraps
 						},
 					}),
-					i(215224, {	-- Ensemble: Mogubreaker Battlegear (Yellow)
+					iensemble(215224, { -- Ensemble: Mogubreaker Battlegear (Yellow)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214053),	-- Brushstalker Belt
 							i(214058),	-- Brushstalker Boots
@@ -591,9 +591,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				filter(MAIL, {
-					i(215272, {	-- Ensemble: Mogu Lord's Regalia (Black)
+					iensemble(215272, { -- Ensemble: Mogu Lord's Regalia (Black)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214408),	-- Stormbrew Belt
 							i(214405),	-- Stormbrew Boots
@@ -605,9 +605,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214409),	-- Stormbrew Spaulders
 						},
 					}),
-					i(215273, {	-- Ensemble: Mogu Lord's Regalia (Gold)
+					iensemble(215273, { -- Ensemble: Mogu Lord's Regalia (Gold)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214418),	-- Mogu Lord's Armbands
 							i(214413),	-- Mogu Lord's Chain
@@ -619,9 +619,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214416),	-- Mogu Lord's Sabatons
 						},
 					}),
-					i(215274, {	-- Ensemble: Mogu Lord's Regalia (Jade)
+					iensemble(215274, { -- Ensemble: Mogu Lord's Regalia (Jade)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214420),	-- Waterburst Breastplate
 							i(214421),	-- Waterburst Footguards
@@ -635,9 +635,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				filter(PLATE, {
-					i(215310, {	-- Ensemble: Swarmbreaker's Battleplate (Dark)
+					iensemble(215310, { -- Ensemble: Swarmbreaker's Battleplate (Dark)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(89440),	-- Greenstone Helm
 							i(89438),	-- Greenstone Pauldrons
@@ -659,9 +659,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214742),	-- Greenstone Sabatons
 						},
 					}),
-					i(215311, {	-- Ensemble: Swarmbreaker's Battleplate (Light)
+					iensemble(215311, { -- Ensemble: Swarmbreaker's Battleplate (Light)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(87612),	-- Ancient Krasari Helm
 							i(82952),	-- Contender's Spirit Shoulders
@@ -683,9 +683,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214747),	-- Yaungolian Warboots
 						},
 					}),
-					i(215312, {	-- Ensemble: Swarmbreaker's Battleplate (Original)
+					iensemble(215312, { -- Ensemble: Swarmbreaker's Battleplate (Original)
 						["cost"] = {{"c", BRONZE, 2500}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(82943),	-- Contender's Revenant Helm
 							i(143980),	-- Acid-Scarred Spaulders
@@ -712,9 +712,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(225269, {	-- Durus <Normal Raid Apparel>
 				-- Note original n(219028 listing in case there are actually multiple
 				clWithoutLock(DEATHKNIGHT, {
-					i(215321, {	-- Ensemble: Plate of the Lost Catacomb (Normal)
+					iensemble(215321, { -- Ensemble: Plate of the Lost Catacomb (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214825),	-- Chestguard of the Lost Catacomb
 							i(214826),	-- Armguards of the Lost Catacomb
 							i(214827),	-- Greatboots of the Lost Catacomb
@@ -725,9 +725,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214832),	-- Greaves of the Lost Catacomb
 						},
 					}),
-					i(215325, {	-- Ensemble: Battleplate of the All-Consuming Maw (Normal)
+					iensemble(215325, { -- Ensemble: Battleplate of the All-Consuming Maw (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214857),	-- Breastplate of the All-Consuming Maw
 							i(214858),	-- Bracers of the All-Consuming Maw
 							i(214859),	-- Sabatons of the All-Consuming Maw
@@ -738,9 +738,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214864),	-- Legguards of the All-Consuming Maw
 						},
 					}),
-					i(215326, {	-- Ensemble: Battleplate of Cyclopean Dread (Normal)
+					iensemble(215326, { -- Ensemble: Battleplate of Cyclopean Dread (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214865),	-- Legplates of Cyclopean Dread
 							i(214866),	-- Spaulders of Cyclopean Dread
@@ -754,9 +754,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(DRUID, {
-					i(215243, {	-- Ensemble: Vestments of the Eternal Blossom (Normal)
+					iensemble(215243, { -- Ensemble: Vestments of the Eternal Blossom (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214158),	-- Eternal Blossom Wraps
 							i(214159),	-- Eternal Blossom Jerkin
 							i(214160),	-- Eternal Blossom Treads
@@ -767,9 +767,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214165),	-- Eternal Blossom Pants
 						},
 					}),
-					i(215246, {	-- Ensemble: Vestments of the Haunted Forest (Normal)
+					iensemble(215246, { -- Ensemble: Vestments of the Haunted Forest (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214182),	-- Pants of the Haunted Forest
 							i(214183),	-- Mantle of the Haunted Forest
 							i(214184),	-- Cinch of the Haunted Forest
@@ -780,9 +780,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214189),	-- Wraps of the Haunted Forest
 						},
 					}),
-					i(215249, {	-- Ensemble: Vestments of the Shattered Vale (Normal)
+					iensemble(215249, { -- Ensemble: Vestments of the Shattered Vale (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214206),	-- Wraps of the Shattered Vale
 							i(214207),	-- Jerkin of the Shattered Vale
@@ -796,9 +796,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(HUNTER, {
-					i(215288, {	-- Ensemble: Yaungol Slayer Battlegear (Normal)
+					iensemble(215288, { -- Ensemble: Yaungol Slayer Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214553),	-- Yaungol Slayer's Legguards
 							i(214554),	-- Yaungol Slayer's Pauldrons
 							i(214555),	-- Yaungol Slayer's Chain
@@ -809,9 +809,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214560),	-- Yaungol Slayer's Armbands
 						},
 					}),
-					i(215292, {	-- Ensemble: Battlegear of the Saurok Stalker (Normal)
+					iensemble(215292, { -- Ensemble: Battlegear of the Saurok Stalker (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214587),	-- Saurok Stalker's Legwraps
 							i(214588),	-- Saurok Stalker's Mantle
 							i(214589),	-- Saurok Stalker's Girdle
@@ -822,9 +822,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214594),	-- Saurok Stalker's Wristguards
 						},
 					}),
-					i(215294, {	-- Ensemble: Battlegear of the Unblinking Vigil (Normal)
+					iensemble(215294, { -- Ensemble: Battlegear of the Unblinking Vigil (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214606),	-- Legguards of the Unblinking Vigil
 							i(214607),	-- Pauldrons of the Unblinking Vigil
@@ -838,9 +838,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(MAGE, {
-					i(215191, {	-- Ensemble: Regalia of the Burning Scroll (Normal)
+					iensemble(215191, { -- Ensemble: Regalia of the Burning Scroll (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213727),	-- Vestment of the Burning Scroll
 							i(213728),	-- Slippers of the Burning Scroll
 							i(213729),	-- Mitts of the Burning Scroll
@@ -851,9 +851,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213734),	-- Wristwraps of the Burning Scroll
 						},
 					}),
-					i(215194, {	-- Ensemble: Regalia of the Chromatic Hydra (Normal)
+					iensemble(215194, { -- Ensemble: Regalia of the Chromatic Hydra (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213811),	-- Wristwraps of the Chromatic Hydra
 							i(213812),	-- Sash of the Chromatic Hydra
 							i(213813),	-- Mantle of the Chromatic Hydra
@@ -864,9 +864,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213818),	-- Vestment of the Chromatic Hydra
 						},
 					}),
-					i(215197, {	-- Ensemble: Chronomancer Regalia (Normal)
+					iensemble(215197, { -- Ensemble: Chronomancer Regalia (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(213835),	-- Chronomancer Vestment
 							i(213836),	-- Chronomancer Slippers
@@ -881,9 +881,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(MONK, {
-					i(215251, {	-- Ensemble: Vestments of the Red Crane (Normal)
+					iensemble(215251, { -- Ensemble: Vestments of the Red Crane (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214243),	-- Red Crane Bindings
 							i(214244),	-- Red Crane Vest
 							i(214245),	-- Red Crane Footguards
@@ -894,9 +894,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214250),	-- Red Crane Legguards
 						},
 					}),
-					i(215253, {	-- Ensemble: Fire-Charm Vestments (Normal)
+					iensemble(215253, { -- Ensemble: Fire-Charm Vestments (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214259),	-- Fire-Charm Bracers
 							i(214260),	-- Fire-Charm Tunic
 							i(214261),	-- Fire-Charm Boots
@@ -907,9 +907,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214266),	-- Fire-Charm Leggings
 						},
 					}),
-					i(215258, {	-- Ensemble: Vestments of the Seven Sacred Seals (Normal)
+					iensemble(215258, { -- Ensemble: Vestments of the Seven Sacred Seals (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214291),	-- Bindings of Seven Sacred Seals
 							i(214292),	-- Vest of Seven Sacred Seals
@@ -923,9 +923,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(PALADIN, {
-					i(215329, {	-- Ensemble: White Tiger Battlegear (Normal)
+					iensemble(215329, { -- Ensemble: White Tiger Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(86318),	-- Casque of Expelled Corruption
 							i(85344),	-- White Tiger Mantle
@@ -947,9 +947,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214896),	-- White Tiger Legplates
 						},
 					}),
-					i(215332, {	-- Ensemble: Battlegear of the Lightning Emperor (Normal)
+					iensemble(215332, { -- Ensemble: Battlegear of the Lightning Emperor (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(94809),	-- Crown of Potentiated Birth
 							i(94950),	-- Spaulders of Primordial Growth
@@ -972,9 +972,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215337, {	-- Ensemble: Vestments of Winged Triumph (Normal)
+					iensemble(215337, { -- Ensemble: Vestments of Winged Triumph (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(105804),	-- Aladya's Spiritfire Greathelm
 							i(105802),	-- Yaungol Deathcult Shoulderguards
@@ -999,9 +999,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(PRIEST, {
-					i(215198, {	-- Ensemble: Guardian Serpent Regalia (Normal)
+					iensemble(215198, { -- Ensemble: Guardian Serpent Regalia (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213843),	-- Guardian Serpent Bracers
 							i(213844),	-- Guardian Serpent Cord
 							i(213845),	-- Guardian Serpent Shoulderpads
@@ -1012,9 +1012,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213850),	-- Guardian Serpent Robe
 						},
 					}),
-					i(215202, {	-- Ensemble: Regalia of the Exorcist (Normal)
+					iensemble(215202, { -- Ensemble: Regalia of the Exorcist (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213875),	-- Cuffs of the Exorcist
 							i(213876),	-- Belt of the Exorcist
 							i(213877),	-- Amice of the Exorcist
@@ -1025,9 +1025,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213882),	-- Raiment of the Exorcist
 						},
 					}),
-					i(215206, {	-- Ensemble: Regalia of Ternion Glory (Normal)
+					iensemble(215206, { -- Ensemble: Regalia of Ternion Glory (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(213907),	-- Wristwraps of the Ternion Glory
 							i(213908),	-- Sash of the Ternion Glory
@@ -1041,9 +1041,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(ROGUE, {
-					i(215260, {	-- Ensemble: Battlegear of the Thousandfold Blades (Normal)
+					iensemble(215260, { -- Ensemble: Battlegear of the Thousandfold Blades (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214307),	-- Bracers of the Thousandfold Blades
 							i(214308),	-- Tunic of the Thousandfold Blades
 							i(214309),	-- Boots of the Thousandfold Blades
@@ -1054,9 +1054,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214314),	-- Leggings of the Thousandfold Blades
 						},
 					}),
-					i(215263, {	-- Ensemble: Nine-Tail Battlegear (Normal)
+					iensemble(215263, { -- Ensemble: Nine-Tail Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214331),	-- Nine-Tailed Leggings
 							i(214332),	-- Nine-Tailed Shoulderpads
 							i(214333),	-- Nine-Tailed Belt
@@ -1067,9 +1067,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214338),	-- Nine-Tailed Bracers
 						},
 					}),
-					i(215266, {	-- Ensemble: Barbed Assassin Battlegear (Normal)
+					iensemble(215266, { -- Ensemble: Barbed Assassin Battlegear (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214355),	-- Bracers of the Barbed Assassin
 							i(214356),	-- Tunic of the Barbed Assassin
@@ -1083,9 +1083,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(SHAMAN, {
-					i(215297, {	-- Ensemble: Regalia of the Firebird (Normal)
+					iensemble(215297, { -- Ensemble: Regalia of the Firebird (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214633),	-- Firebird's Armbands
 							i(214638),	-- Firebird's Chain
@@ -1098,9 +1098,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(220990),	-- Firebird's Shirt
 						},
 					}),
-					i(215300, {	-- Ensemble: Regalia of the Witch Doctor (Normal)
+					iensemble(215300, { -- Ensemble: Regalia of the Witch Doctor (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214664),	-- Armbands of the Witch Doctor
 							i(214659),	-- Chain of the Witch Doctor
 							i(214660),	-- Gloves of the Witch Doctor
@@ -1112,9 +1112,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(220992),	-- Shirt of the Witch Doctor
 						},
 					}),
-					i(215303, {	-- Ensemble: Regalia of Celestial Harmony (Normal)
+					iensemble(215303, { -- Ensemble: Regalia of Celestial Harmony (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214681),	-- Armbands of Celestial Harmony
 							i(214686),	-- Chain of Celestial Harmony
@@ -1128,9 +1128,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(WARLOCK, {
-					i(215209, {	-- Ensemble: Sha Skin Regalia (Normal)
+					iensemble(215209, { -- Ensemble: Sha Skin Regalia (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213931),	-- Sha-Skin Vestment
 							i(213932),	-- Sha-Skin Slippers
 							i(213933),	-- Sha-Skin Mitts
@@ -1141,9 +1141,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213938),	-- Sha-Skin Wristwraps
 						},
 					}),
-					i(215212, {	-- Ensemble: Regalia of the Thousandfold Hells (Normal)
+					iensemble(215212, { -- Ensemble: Regalia of the Thousandfold Hells (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213955),	-- Wristwraps of the Thousandfold Hells
 							i(213956),	-- Sash of the Thousandfold Hells
 							i(213957),	-- Mantle of the Thousandfold Hells
@@ -1154,9 +1154,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213962),	-- Vestment of the Thousandfold Hells
 						},
 					}),
-					i(215215, {	-- Ensemble: Regalia of the Horned Nightmare (Normal)
+					iensemble(215215, { -- Ensemble: Regalia of the Horned Nightmare (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(213979),	-- Vestment of the Horned Nightmare
 							i(213980),	-- Slippers of the Horned Nightmare
@@ -1170,9 +1170,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(WARRIOR, {
-					i(215338, {	-- Ensemble: Battleplate of Resounding Rings (Normal)
+					iensemble(215338, { -- Ensemble: Battleplate of Resounding Rings (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214961),	-- Greatbelt of Resounding Rings
 							i(214962),	-- Spaulders of Resounding Rings
 							i(214963),	-- Handguards of Resounding Rings
@@ -1196,9 +1196,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214992),	-- Greatbelt of Resounding Rings
 						},
 					}),
-					i(215344, {	-- Ensemble: Battleplate of the Last Mogu (Normal)
+					iensemble(215344, { -- Ensemble: Battleplate of the Last Mogu (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(215009),	-- Greatbelt of the Last Mogu
 							i(215010),	-- Spaulders of the Last Mogu
 							i(215011),	-- Gauntlets of the Last Mogu
@@ -1209,9 +1209,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215016),	-- Warboots of the Last Mogu
 						},
 					}),
-					i(215347, {	-- Ensemble: Battleplate of the Prehistoric Marauder (Normal)
+					iensemble(215347, { -- Ensemble: Battleplate of the Prehistoric Marauder (Normal)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(215033),	-- Greatbelt of the Prehistoric Marauder
 							i(215034),	-- Spaulders of the Prehistoric Marauder
@@ -1238,19 +1238,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				["crs"] = { 220618 }, 	-- Grandmaster Jakkus <Class Apparel>
 				["g"] = {
 					clWithoutLock(DEATHKNIGHT, {
-						i(217824, {	-- Arsenal: Webbed Soulforged Weaponry
+						iensemble(217824, { -- Arsenal: Webbed Soulforged Weaponry
 							["classes"] = DEATHKNIGHT,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217768),	-- Webbed Soulforged Devourer
 								i(217767),	-- Webbed Soulforged Eviscerator
 								i(217766),	-- Webbed Soulforged Greataxe
 							},
 						}),
-						i(217837, {	-- Ensemble: Webbed Soulforged Exoskeleton
+						iensemble(217837, { -- Ensemble: Webbed Soulforged Exoskeleton
 							["classes"] = DEATHKNIGHT,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217765),	-- Webbed Soulforged Girdle
 								i(217763),	-- Webbed Soulforged Headguard
 								i(217764),	-- Webbed Soulforged Spaulders
@@ -1258,18 +1258,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(DEMONHUNTER, {
-						i(217828, {	-- Arsenal: Aldrachi Blasphemer's Glaives
+						iensemble(217828, { -- Arsenal: Aldrachi Blasphemer's Glaives
 							["classes"] = DEMONHUNTER,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217773),	-- Aldrachi Blasphemer's Warglaive
 								i(217772),	-- Aldrachi Blasphemer's Wingglaive
 							},
 						}),
-						i(217842, {	-- Ensemble: Aldrachi Blasphemer's Flames
+						iensemble(217842, { -- Ensemble: Aldrachi Blasphemer's Flames
 							["classes"] = DEMONHUNTER,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217769),	-- Aldrachi Blasphemer's Horns
 								i(217770),	-- Aldrachi Blasphemer's Mantle
 								i(217771),	-- Aldrachi Blasphemer's Shard
@@ -1277,20 +1277,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(DRUID, {
-						i(217829, {	-- Arsenal: Ela'lothen's Blessings of Rebirth
+						iensemble(217829, { -- Arsenal: Ela'lothen's Blessings of Rebirth
 							["classes"] = DRUID,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217759),	-- Ela'lothen's Blade of Rebirth
 								i(217760),	-- Ela'lothen's Claws of Rebirth
 								i(217761),	-- Ela'lothen's Crescent of Rebirth
 								i(217762),	-- Ela'lothen's Jewel of Rebirth
 							},
 						}),
-						i(217843, {	-- Ensemble: Ela'lothen's Vestment of Rebirth
+						iensemble(217843, { -- Ensemble: Ela'lothen's Vestment of Rebirth
 							["classes"] = DRUID,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217758),	-- Ela'lothen's Fangs of Rebirth
 								i(217756),	-- Ela'lothen's Helm of Rebirth
 								i(217757),	-- Ela'lothen's Spaulders of Rebirth
@@ -1298,19 +1298,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(EVOKER, {
-						i(217821, {	-- Arsenal: Treasure of the Gold Hoarder
+						iensemble(217821, { -- Arsenal: Treasure of the Gold Hoarder
 							["classes"] = EVOKER,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217802),	-- Flames of the Gold Hoarder
 								i(217801),	-- Flight of the Gold Hoarder
 								i(217803),	-- Saber of the Gold Hoarder
 							},
 						}),
-						i(217835, {	-- Ensemble: Scales of the Gold Hoarder
+						iensemble(217835, { -- Ensemble: Scales of the Gold Hoarder
 							["classes"] = EVOKER,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217798),	-- Horns of the Gold Hoarder
 								i(217800),	-- Sash of the Gold Hoarder
 								i(217799),	-- Shoulderguards of the Gold Hoarder
@@ -1318,10 +1318,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(HUNTER, {
-						i(217820, {	-- Arsenal: Dreadsquall Hunter's Preference
+						iensemble(217820, { -- Arsenal: Dreadsquall Hunter's Preference
 							["classes"] = HUNTER,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217815),	-- Dreadsquall Hunter's Harpooner
 								i(217814),	-- Dreadsquall Hunter's Pride
 								i(217813),	-- Dreadsquall Hunter's Serrator
@@ -1330,7 +1330,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(217834, {	--  Ensemble: Dreadsquall Hunter's Camouflage
 							["classes"] = HUNTER,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217811),	-- Dreadsquall Hunter's Ammunition
 								i(217810),	-- Dreadsquall Hunter's Beak
 								i(217812),	-- Dreadsquall Hunter's Crest
@@ -1338,19 +1338,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(MAGE, {
-						i(217823, {	-- Arsenal: Sin'dorei Magister's Enchantment
+						iensemble(217823, { -- Arsenal: Sin'dorei Magister's Enchantment
 							["classes"] = MAGE,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217797),	-- Sin'dorei Magister's Scepter
 								i(217795),	-- Sin'dorei Magister's Scimitar
 								i(217796),	-- Sin'dorei Magister's Shard
 							},
 						}),
-						i(217836, {	-- Ensemble: Sin'dorei Magister's Regalia
+						iensemble(217836, { -- Ensemble: Sin'dorei Magister's Regalia
 							["classes"] = MAGE,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217794),	-- Sin'dorei Magister's Belt
 								i(217793),	-- Sin'dorei Magister's Epaulets
 								i(217792),	-- Sin'dorei Magister's Orbs
@@ -1358,10 +1358,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(MONK, {
-						i(217827, {	-- Arsenal: Shado-Pan Watcher Arsenal
+						iensemble(217827, { -- Arsenal: Shado-Pan Watcher Arsenal
 							["classes"] = MONK,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217784),	-- Shado-Pan Watcher Bloom
 								i(217783),	-- Shado-Pan Watcher Fan
 								i(217785),	-- Shado-Pan Watcher Keg
@@ -1370,7 +1370,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(217841, {	-- Ensemble: Shado-Pan Watcher Guise
 							["classes"] = MONK,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217782),	-- Shado-Pan Watcher Cord
 								i(217780),	-- Shado-Pan Watcher Kabuto
 								i(217781),	-- Shado-Pan Watcher Pauldrons
@@ -1378,19 +1378,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(PALADIN, {
-						i(217832, {	-- Arsenal: Armaments of the Holy Avenger
+						iensemble(217832, { -- Arsenal: Armaments of the Holy Avenger
 							["classes"] = PALADIN,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217743),	-- Club of the Holy Avenger
 								i(217742),	-- Hammer of the Holy Avenger
 								i(217741),	-- Kite of the Holy Avenger
 							},
 						}),
-						i(217846, {	-- Ensemble: Plate of the Holy Avenger
+						iensemble(217846, { -- Ensemble: Plate of the Holy Avenger
 							["classes"] = PALADIN,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217738),	-- Helm of the Holy Avenger
 								i(217739),	-- Shoulderguards of the Holy Avenger
 								i(217740),	-- Cinch of the Holy Avenger
@@ -1398,19 +1398,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(PRIEST, {
-						i(217831, {	-- Arsenal: Secrets of the Abyssal Cult
+						iensemble(217831, { -- Arsenal: Secrets of the Abyssal Cult
 							["classes"] = PRIEST,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217744),	-- Libram of the Abyssal Cult
 								i(217745),	-- Scepter of the Abyssal Cult
 								i(217746),	-- Staff of the Abyssal Cult
 							},
 						}),
-						i(217845, {	-- Ensemble: Silks of the Abyssal Cult
+						iensemble(217845, { -- Ensemble: Silks of the Abyssal Cult
 							["classes"] = PRIEST,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217750),	-- Hood of the Abyssal Cult
 								i(217751),	-- Mantle of the Abyssal Cult
 								i(217752),	-- Sash of the Abyssal Cult
@@ -1418,19 +1418,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(ROGUE, {
-						i(217830, {	-- Arsenal: Igneous Onyx Blades
+						iensemble(217830, { -- Arsenal: Igneous Onyx Blades
 							["classes"] = ROGUE,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217748),	-- Igneous Onyx Impaler
 								i(217747),	-- Igneous Onyx Serrated Edge
 								i(217749),	-- Igneous Onyx Shortblade
 							},
 						}),
-						i(217844, {	-- Ensemble: Igneous Onyx Uniform
+						iensemble(217844, { -- Ensemble: Igneous Onyx Uniform
 							["classes"] = ROGUE,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217755),	-- Igneous Onyx Buckle
 								i(217753),	-- Igneous Onyx Cowl
 								i(217754),	-- Igneous Onyx Pauldrons
@@ -1438,19 +1438,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(SHAMAN, {
-						i(217819, {	-- Arsenal: Tools of Krag'wa's Disciple
+						iensemble(217819, { -- Arsenal: Tools of Krag'wa's Disciple
 							["classes"] = SHAMAN,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217808),	-- Hatchet of Krag'wa's Disciple
 								i(217807),	-- Safeguard of Krag'wa's Disciple
 								i(217809),	-- Talons of Krag'wa's Disciple
 							},
 						}),
-						i(217833, {	-- Ensemble: Imminence of Krag'wa's Disciple
+						iensemble(217833, { -- Ensemble: Imminence of Krag'wa's Disciple
 							["classes"] = SHAMAN,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217804),	-- Headdress of Krag'wa's Disciple
 								i(217805),	-- Idols of Krag'wa's Disciple
 								i(217806),	-- Vines of Krag'wa's Disciple
@@ -1458,19 +1458,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(WARLOCK, {
-						i(217826, {	-- Arsenal: Instruments of Temptation's Call
+						iensemble(217826, { -- Arsenal: Instruments of Temptation's Call
 							["classes"] = WARLOCK,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["g"] = {
+							["_g"] = {
 								i(217791),	-- Caduceus of Temptation's Call
 								i(217790),	-- Effigy of Temptation's Call
 								i(217789),	-- Flayer of Temptation's Call
 							},
 						}),
-						i(217839, {	-- Ensemble: Jewels of Temptation's Call
+						iensemble(217839, { -- Ensemble: Jewels of Temptation's Call
 							["classes"] = WARLOCK,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["g"] = {
+							["_g"] = {
 								i(217788),	-- Chains of Temptation's Call
 								i(217786),	-- Voice of Temptation's Call
 								i(217787),	-- Wings of Temptation's Call
@@ -1478,7 +1478,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 					clWithoutLock(WARRIOR, {
-						i(217825, {	-- Arsenal: Fanatical Champion's Aggression
+						iensemble(217825, { -- Arsenal: Fanatical Champion's Aggression
 							["classes"] = WARRIOR,
 							["cost"] = {{"c", BRONZE, 3000}},
 							["groups"] = {
@@ -1487,7 +1487,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 								i(217777),	-- Fanatical Champion's Thorns
 							},
 						}),
-						i(217838, {	-- Ensemble: Fanatical Champion's Trophies
+						iensemble(217838, { -- Ensemble: Fanatical Champion's Trophies
 							["classes"] = WARRIOR,
 							["cost"] = {{"c", BRONZE, 4000}},
 							["groups"] = {
@@ -1702,10 +1702,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(219025, {	-- Larah Treebender <World Apparel>
-				i(215219, {	-- Ensemble: Guise of the Shado-Pan (Dark)
+				iensemble(215219, { -- Ensemble: Guise of the Shado-Pan (Dark)
 					["cost"] = {{"c", BRONZE, 2500}},
 					["description"] = "All appearances are MoP: Remix exclusive.",
-					["g"] = {
+					["_g"] = {
 						i(214018), -- Shado-Pan Bracers
 						i(214012), -- Shado-Pan Footwraps
 						i(214013), -- Shado-Pan Handwraps
@@ -1716,12 +1716,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214011), -- Shado-Pan Tunic
 					},
 				}),
-				i(215220, {	-- Ensemble: Guise of the Shado-Pan (Original)
+				iensemble(215220, { -- Ensemble: Guise of the Shado-Pan (Original)
 					["cost"] = {{"c", BRONZE, 2500}},
 					["sym"] = {
 						{"select", "itemID", 90845 },	-- Replica Shado-Pan Helmet
 					},
-					["g"] = {
+					["_g"] = {
 						i(214019), -- Shado-Pan Armbands
 						i(214020), -- Shado-Pan Belt
 						i(214024), -- Shado-Pan Gloves
@@ -1732,10 +1732,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214022), -- Shado-Pan Trousers
 					},
 				}),
-				i(215275, {	-- Ensemble: Kor'kron Shaman Vestments (Cool)
+				iensemble(215275, { -- Ensemble: Kor'kron Shaman Vestments (Cool)
 					["cost"] = {{"c", BRONZE, 2500}},
 					["description"] = "All appearances are MoP: Remix exclusive.",
-					["g"] = {
+					["_g"] = {
 						i(214429), -- Kor'kron Binder's Belt
 						i(214432), -- Kor'kron Binder's Boots
 						i(214434), -- Kor'kron Binder's Bracers
@@ -1746,10 +1746,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214428), -- Kor'kron Binder's Spaulders
 					},
 				}),
-				i(215276, {	-- Ensemble: Kor'kron Shaman Vestments (Warm)
+				iensemble(215276, { -- Ensemble: Kor'kron Shaman Vestments (Warm)
 					["cost"] = {{"c", BRONZE, 2500}},
 					["description"] = "All appearances are MoP: Remix exclusive.",
-					["g"] = {
+					["_g"] = {
 						i(214437), -- Armbands of Twisted Elements
 						i(214442), -- Chain of Twisted Elements
 						i(214438), -- Chestguard of Twisted Elements
@@ -1760,9 +1760,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214439), -- Sabatons of Twisted Elements
 					},
 				}),
-				i(215277, {	-- Ensemble: Kor'kron Shaman Vestments (Yellow)
+				iensemble(215277, { -- Ensemble: Kor'kron Shaman Vestments (Yellow)
 					["cost"] = {{"c", BRONZE, 2500}},
-					["g"] = {
+					["_g"] = {
 					-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(214450), -- Dark Shaman Footguards
 						i(214447), -- Dark Shaman Girdle
@@ -1774,9 +1774,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214452), -- Dark Shaman Wristguards
 					},
 				}),
-				i(215352, {	-- Ensemble: Robes of Quiet Reflection (Brown)
+				iensemble(215352, { -- Ensemble: Robes of Quiet Reflection (Brown)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 					-- Belt of Precarious Balance is the only item that doesn't initially unlock with the ensemble instead a Monk quest item does.
 						i(215097),	-- Robe of Precarious Balance
@@ -1790,9 +1790,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					--]]
 					},
 				}),
-				i(215353, {	-- Ensemble: Robes of Quiet Reflection (Green)
+				iensemble(215353, { -- Ensemble: Robes of Quiet Reflection (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 					-- Belt of Hushed Wisdom is the only item that doesn't initially unlock with the ensemble instead a Monk quest item does.
 						i(215098),	-- Robe of Hushed Wisdom
@@ -1806,10 +1806,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					--]]
 					},
 				}),
-				i(215354, {	-- Ensemble: Robes of Quiet Reflection (Red)
+				iensemble(215354, { -- Ensemble: Robes of Quiet Reflection (Red)
 					["cost"] = {{"c", BRONZE, 1250}},
 					["description"] = "All appearances are MoP: Remix exclusive.",
-					["g"] = {
+					["_g"] = {
 						i(215102),	-- Robe of Quiet Reflection
 						i(220997),	-- Shirt of Quiet Reflection
 						i(215105),	-- Belt of Quiet Reflection
@@ -1817,9 +1817,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215104),	-- Slippers of Quiet Reflection
 					},
 				}),
-				i(215355, {	-- Ensemble: Robes of Quiet Reflection (Yellow)
+				iensemble(215355, { -- Ensemble: Robes of Quiet Reflection (Yellow)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 					-- Belt of Humbling Gravity is the only item that doesn't initially unlock with the ensemble instead a Monk quest item does.
 					-- I tried it 2024-05-21 /Braghe it got me the item
@@ -1830,9 +1830,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215109),	-- Belt of Humbling Gravity
 					},
 				}),
-				i(215238, {	-- Ensemble: Tian Monastery Clothing (Blue)
+				iensemble(215238, { -- Ensemble: Tian Monastery Clothing (Blue)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 					-- Tian Monastery Bracers are the main part of this set unlike other ensembles were they are secondary ID's. So moved them with the "required" pieces to unlock
 						i(74575),	-- Sun Pearl Vest
@@ -1851,9 +1851,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					--]]
 					},
 				}),
-				i(215239, {	-- Ensemble: Tian Monastery Clothing (Red)
+				iensemble(215239, { -- Ensemble: Tian Monastery Clothing (Red)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(131916),	-- Empathetic Mail
 						i(74578),	-- Bindings of the Earth Spirit
@@ -1873,9 +1873,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 
 				}),
-				i(215240, {	-- Ensemble: Tian Monastery Clothing (White)
+				iensemble(215240, { -- Ensemble: Tian Monastery Clothing (White)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(131904),	-- Initiate's Chestpiece
 						i(73215),	-- Initiate's Bracers
@@ -1894,9 +1894,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					--]]
 					},
 				}),
-				i(215285, {	-- Ensemble: Sun Pearl Clothing (Green)
+				iensemble(215285, { -- Ensemble: Sun Pearl Clothing (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(73226),	-- Initiate's Breastplate
 						i(73216),	-- Initiate's Armguards
@@ -1915,9 +1915,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					--]]
 					},
 				}),
-				i(215286, {	-- Ensemble: Sun Pearl Clothing (Red)
+				iensemble(215286, { -- Ensemble: Sun Pearl Clothing (Red)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(74573),	-- Glistening Breastplate
 						i(74576),	-- Sun Pearl Bracers
@@ -1936,9 +1936,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					--]]
 					},
 				}),
-				i(215287, {	-- Ensemble: Sun Pearl Clothing (Yellow)
+				iensemble(215287, { -- Ensemble: Sun Pearl Clothing (Yellow)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 					-- Sun Pearl Hauberk / Boots are the main part of this set unlike other ensembles were they are secondary ID's. So moved them with the "required" pieces to unlock
 						i(214551),	-- Sun Pearl Hauberk
@@ -1956,9 +1956,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					--]]
 					},
 				}),
-				i(215356, {	-- Ensemble: Vestments of Serenity (Blue)
+				iensemble(215356, { -- Ensemble: Vestments of Serenity (Blue)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(215073),	-- Nightsky Robe
 						i(215079),	-- Nightsky Bands
@@ -1968,9 +1968,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215077),	-- Nightsky Slippers
 					},
 				}),
-				i(215357, {	-- Ensemble: Vestments of Serenity (Green)
+				iensemble(215357, { -- Ensemble: Vestments of Serenity (Green)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(215086),	-- Robe of Wisdom
 						i(215080),	-- Bands of Wisdom
@@ -1980,9 +1980,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215082),	-- Slippers of Wisdom
 					},
 				}),
-				i(215358, {	-- Ensemble: Vestments of Serenity (White)
+				iensemble(215358, { -- Ensemble: Vestments of Serenity (White)
 					["cost"] = {{"c", BRONZE, 1250}},
-					["g"] = {
+					["_g"] = {
 					-- Note: Lucetia learned with ensemble 05/19/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 						i(215093),	-- Serene Robe
 						i(215087),	-- Serene Bands
@@ -1996,9 +1996,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["cost"] = {{"c", BRONZE, 5}},
 				}),
 				filter(CLOTH, {
-					i(215183, {	-- Ensemble: Spirit-Waker's Vestments (Blue)
+					iensemble(215183, { -- Ensemble: Spirit-Waker's Vestments (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(82614),	-- Mountainscaler Satin Hood
 							i(83171),	-- Wasteland Silk Amice
@@ -2021,9 +2021,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215184, {	-- Ensemble: Spirit-Waker's Vestments (Green)
+					iensemble(215184, { -- Ensemble: Spirit-Waker's Vestments (Green)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(82491),	-- Mindbender Cowl
 							i(82500),	-- Mindbender Amice
@@ -2046,10 +2046,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215185, {	-- Ensemble: Spirit-Waker's Vestments (Red)
+					iensemble(215185, { -- Ensemble: Spirit-Waker's Vestments (Red)
 						["cost"] = {{"c", BRONZE, 750}},
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
-						["g"] = {
+						["_g"] = {
 							i(83987),	-- Dreadspinner Cowl
 							i(83657),	-- Swampwalker Amice
 							i(84005),	-- Dreadspinner Robe
@@ -2071,9 +2071,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215186, {	-- Ensemble: Mistwalker's Vestments (Blue)
+					iensemble(215186, { -- Ensemble: Mistwalker's Vestments (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(81444),	-- Angkhal Cowl
 							i(81453),	-- Angkhal Amice
@@ -2096,9 +2096,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215187, {	-- Ensemble: Mistwalker's Vestments (Original)
+					iensemble(215187, { -- Ensemble: Mistwalker's Vestments (Original)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(80686),	-- Ambermist Hood
 							i(80695),	-- Ambermist Mantle
@@ -2121,9 +2121,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215188, {	-- Ensemble: Mistwalker's Vestments (White)
+					iensemble(215188, { -- Ensemble: Mistwalker's Vestments (White)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(81579),	-- Faded Forest Satin Hood
 							i(81588),	-- Faded Forest Satin Mantle
@@ -2146,9 +2146,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215216, {	-- Ensemble: Vestments of the Eternal Dynasty (Black)
+					iensemble(215216, { -- Ensemble: Vestments of the Eternal Dynasty (Black)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(89337),	-- Firecracker Corona
 							i(144060),	-- Mantle of the Golden Sun
@@ -2171,9 +2171,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215217, {	-- Ensemble: Vestments of the Eternal Dynasty (Blue)
+					iensemble(215217, { -- Ensemble: Vestments of the Eternal Dynasty (Blue)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(86788),	-- Hood of Blind Eyes
 							i(89339),	-- Tenderheart Spaulders
@@ -2197,9 +2197,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215218, {	-- Ensemble: Vestments of the Eternal Dynasty (Yellow)
+					iensemble(215218, { -- Ensemble: Vestments of the Eternal Dynasty (Yellow)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(86129),	-- Hood of Blind Eyes
 							i(101817),	-- Cloudscorcher Shoulderpads
@@ -2226,9 +2226,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				filter(LEATHER, {
-					i(215225, {	-- Ensemble: Thunderpaw Battlegear (Dark)
+					iensemble(215225, { -- Ensemble: Thunderpaw Battlegear (Dark)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(83988),	-- Ghost Fox Helm
 							i(83997),	-- Ghost Fox Spaulders
@@ -2251,9 +2251,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215226, {	-- Ensemble: Thunderpaw Battlegear (Light)
+					iensemble(215226, { -- Ensemble: Thunderpaw Battlegear (Light)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(83159),	-- Wasteland Hide Helm
 							i(83168),	-- Wasteland Hide Spaulders
@@ -2276,9 +2276,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215227, {	-- Ensemble: Thunderpaw Battlegear (Original)
+					iensemble(215227, { -- Ensemble: Thunderpaw Battlegear (Original)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(88078),	-- Mushan Hide Cap
 							i(84510),	-- Kafa Hide Spaulders
@@ -2301,9 +2301,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215228, {	-- Ensemble: Thunderpaw Battlegear (Red)
+					iensemble(215228, { -- Ensemble: Thunderpaw Battlegear (Red)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(84588),	-- Farwatch Hide Helm
 							i(88094),	-- Mistlurker Pauldrons
@@ -2326,9 +2326,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215229, {	-- Ensemble: Mistveil Leathers (Black)
+					iensemble(215229, { -- Ensemble: Mistveil Leathers (Black)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(80687),	-- Blackthicket Helm
 							i(80696),	-- Blackthicket Spaulders
@@ -2351,9 +2351,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215230, {	-- Ensemble: Mistveil Leathers (Brown)
+					iensemble(215230, { -- Ensemble: Mistveil Leathers (Brown)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(81580),	-- Faded Forest Hide Helm
 							i(81589),	-- Faded Forest Hide Spaulders
@@ -2376,9 +2376,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215231, {	-- Ensemble: Mistveil Leathers (Crimson)
+					iensemble(215231, { -- Ensemble: Mistveil Leathers (Crimson)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(81441),	-- Morbreath Helm
 							i(81450),	-- Morbreath Spaulder
@@ -2401,9 +2401,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215232, {	-- Ensemble: Mistveil Leathers (Indigo)
+					iensemble(215232, { -- Ensemble: Mistveil Leathers (Indigo)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(82615),	-- Mountainscaler Hide Helm
 							i(82624),	-- Mountainscaler Hide Spaulders
@@ -2426,9 +2426,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215269, {	-- Ensemble: Snowdrift Battlegear (Blue)
+					iensemble(215269, { -- Ensemble: Snowdrift Battlegear (Blue)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(101866),	-- Cranefeather Hood
 							i(101868),	-- Cranefeather Shoulders
@@ -2451,9 +2451,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215270, {	-- Ensemble: Snowdrift Battlegear (Brown)
+					iensemble(215270, { -- Ensemble: Snowdrift Battlegear (Brown)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(86757),	-- Hood of Cursed Dreams
 							i(86039),	-- Spaulders of the Divided Mind
@@ -2476,9 +2476,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215271, {	-- Ensemble: Snowdrift Battlegear (Red)
+					iensemble(215271, { -- Ensemble: Snowdrift Battlegear (Red)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: These seem to be the ones that determine if you can learn the ensemble or not.
 							i(86804),	-- Crown of Opoortunistic Strikes
 							i(89341),	-- Imperion Spaulders
@@ -2503,9 +2503,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				filter(MAIL, {
-					i(215282, {	-- Ensemble: Dawnwatcher's Scale Armor (Blue)
+					iensemble(215282, { -- Ensemble: Dawnwatcher's Scale Armor (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214507),	-- Dawnwatcher's Armbands
 							i(214513),	-- Dawnwatcher's Chain
@@ -2517,9 +2517,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214509),	-- Dawnwatcher's Sabatons
 						},
 					}),
-					i(215283, {	-- Ensemble: Dawnwatcher's Scale Armor (Purple)
+					iensemble(215283, { -- Ensemble: Dawnwatcher's Scale Armor (Purple)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214525),	-- Streamspeaker Breastplate
 							i(214524),	-- Streamspeaker Footguards
@@ -2531,9 +2531,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214526),	-- Streamspeaker Wristguards
 						},
 					}),
-					i(215284, {	-- Ensemble: Dawnwatcher's Scale Armor (Blue)
+					iensemble(215284, { -- Ensemble: Dawnwatcher's Scale Armor (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214532),	-- Reedstalker Belt
 							i(214529),	-- Reedstalker Boots
@@ -2545,9 +2545,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214533),	-- Reedstalker Spaulders
 						},
 					}),
-					i(215306, {	-- Ensemble: Jade Guardian's Regalia (Blue)
+					iensemble(215306, { -- Ensemble: Jade Guardian's Regalia (Blue)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214712),	-- Nightwatcher's Armbands
 							i(214707),	-- Nightwatcher's Chain
@@ -2559,9 +2559,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214710),	-- Nightwatcher's Sabatons
 						},
 					}),
-					i(215307, {	-- Ensemble: Jade Guardian's Regalia (Brown)
+					iensemble(215307, { -- Ensemble: Jade Guardian's Regalia (Brown)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214714),	-- Stonefang Breastplate
 							i(214715),	-- Stonefang Footguards
@@ -2573,9 +2573,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214713),	-- Stonefang Wristguards
 						},
 					}),
-					i(215308, {	-- Ensemble: Jade Guardian's Regalia (Red)
+					iensemble(215308, { -- Ensemble: Jade Guardian's Regalia (Red)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214723),	-- Crimsonscale Belt
 							i(214726),	-- Crimsonscale Boots
@@ -2587,9 +2587,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214722),	-- Crimsonscale Spaulders
 						},
 					}),
-					i(215309, {	-- Ensemble: Jade Guardian's Regalia (Yellow)
+					iensemble(215309, { -- Ensemble: Jade Guardian's Regalia (Yellow)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214729),	-- Jade Guardian's Armbands
 							i(214730),	-- Jade Guardian's Breastplate
@@ -2601,9 +2601,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214731),	-- Jade Guardian's Sabatons
 						},
 					}),
-					i(215278, {	-- Ensemble: Trailseeker's Laminar Armor (Black)
+					iensemble(215278, { -- Ensemble: Trailseeker's Laminar Armor (Black)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214460),	-- Windreaver's Belt
 							i(214457),	-- Windreaver's Boots
@@ -2615,9 +2615,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214461),	-- Windreaver's Spaulders
 						},
 					}),
-					i(215279, {	-- Ensemble: Trailseeker's Laminar Armor (Gold)
+					iensemble(215279, { -- Ensemble: Trailseeker's Laminar Armor (Gold)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214476),	-- Trailseeker's Armbands
 							i(214470),	-- Trailseeker's Chain
@@ -2629,9 +2629,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214474),	-- Trailseeker's Sabatons
 						},
 					}),
-					i(215280, {	-- Ensemble: Trailseeker's Laminar Armor (Green)
+					iensemble(215280, { -- Ensemble: Trailseeker's Laminar Armor (Green)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214480),	-- Peakscaler Breastplate
 							i(214481),	-- Peakscaler Footguards
@@ -2643,9 +2643,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214479),	-- Peakscaler Wristguards
 						},
 					}),
-					i(215281, {	-- Ensemble: Trailseeker's Laminar Armor (White)
+					iensemble(215281, { -- Ensemble: Trailseeker's Laminar Armor (White)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214492),	-- Jade Guardian's Belt
 							i(214496),	-- Jade Guardian's Boots
@@ -2659,9 +2659,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				filter(PLATE, {
-					i(215348, {	-- Ensemble: Gatecrasher's Battleplate (Black)
+					iensemble(215348, { -- Ensemble: Gatecrasher's Battleplate (Black)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(101793),	-- Cliffbreaker Helm
 							i(101796),	-- Cliffbreaker Pauldrons
@@ -2684,9 +2684,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215349, {	-- Ensemble: Gatecrasher's Battleplate (Blue)
+					iensemble(215349, { -- Ensemble: Gatecrasher's Battleplate (Blue)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(89821),	-- Crown of Keening Stars
 							i(89347),	-- Paleblade Shoulderguards
@@ -2709,9 +2709,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215350, {	-- Ensemble: Gatecrasher's Battleplate (Green)
+					iensemble(215350, { -- Ensemble: Gatecrasher's Battleplate (Green)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(89216),	-- Yi's Least Favorite Helmet
 							i(86080),	-- Shoulderguards of the Unflanked
@@ -2734,9 +2734,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215351, {	-- Ensemble: Gatecrasher's Battleplate (Red)
+					iensemble(215351, { -- Ensemble: Gatecrasher's Battleplate (Red)
 						["cost"] = {{"c", BRONZE, 2000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(86752),	-- Nullification Greathelm
 							i(89345),	-- Stonetoe Spaulders
@@ -2759,9 +2759,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215316, {	-- Ensemble: Shan'ze Warplate (Green)
+					iensemble(215316, { -- Ensemble: Shan'ze Warplate (Green)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(82235),	-- Highpeak Helm
 							i(82237),	-- Highpeak Pauldrons
@@ -2784,9 +2784,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215317, {	-- Ensemble: Shan'ze Warplate (Purple)
+					iensemble(215317, { -- Ensemble: Shan'ze Warplate (Purple)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(83990),	-- Bladesworn Helm
 							i(83656),	-- Goldtalon Spaulders
@@ -2809,9 +2809,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215318, {	-- Ensemble: Shan'ze Warplate (Red)
+					iensemble(215318, { -- Ensemble: Shan'ze Warplate (Red)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(83166),	-- Wasteland Armored Helm
 							i(83175),	-- Wasteland Armored Shoulders
@@ -2834,9 +2834,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215319, {	-- Ensemble: Shan'ze Warplate (Yellow)
+					iensemble(215319, { -- Ensemble: Shan'ze Warplate (Yellow)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(87322),	-- Helm of Enmity
 							i(84517),	-- Kafa Armored Shoulders
@@ -2859,9 +2859,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215313, {	-- Ensemble: Spiritguard's Warplate (Blue)
+					iensemble(215313, { -- Ensemble: Spiritguard's Warplate (Blue)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(81448),	-- Dojani Helm
 							i(81457),	-- Dojani Shoulders
@@ -2884,9 +2884,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215314, {	-- Ensemble: Spiritguard's Warplate (Gold)
+					iensemble(215314, { -- Ensemble: Spiritguard's Warplate (Gold)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(81587),	-- Faded Forest Armored Helm
 							i(81596),	-- Faded Forest Armored Shoulders
@@ -2909,9 +2909,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215315, {	-- Ensemble: Spiritguard's Warplate (Silver)
+					iensemble(215315, { -- Ensemble: Spiritguard's Warplate (Silver)
 						["cost"] = {{"c", BRONZE, 750}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(80689),	-- Glass Lake Headcover
 							i(80698),	-- Glass Lake Spaulders
@@ -3080,9 +3080,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				-- Classes
 				clWithoutLock(DEATHKNIGHT, {
-					i(215322, {	-- Ensemble: Plate of the Lost Catacomb (Heroic)
+					iensemble(215322, { -- Ensemble: Plate of the Lost Catacomb (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214833),	-- Legguards of the Lost Catacomb
 							i(214834),	-- Pauldrons of the Lost Catacomb
 							i(214835),	-- Girdle of the Lost Catacomb
@@ -3093,9 +3093,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214840),	-- Breastplate of the Lost Catacomb
 						},
 					}),
-					i(215323, {	-- Ensemble: Battleplate of the All-Consuming Maw (Heroic)
+					iensemble(215323, { -- Ensemble: Battleplate of the All-Consuming Maw (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214841),	-- Battleplate of the All-Consuming Maw
 							i(214842),	-- Vambraces of the All-Consuming Maw
 							i(214843),	-- Warboots of the All-Consuming Maw
@@ -3106,9 +3106,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214848),	-- Legplates of the All-Consuming Maw
 						},
 					}),
-					i(215328, {	-- Ensemble: Battleplate of Cyclopean Dread (Mythic)
+					iensemble(215328, { -- Ensemble: Battleplate of Cyclopean Dread (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214881),	-- Legguards of Cyclopean Dread
 							i(214882),	-- Pauldrons of Cyclopean Dread
@@ -3122,9 +3122,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(DRUID, {
-					i(215242, {	-- Ensemble: Vestments of the Eternal Blossom (Heroic)
+					iensemble(215242, { -- Ensemble: Vestments of the Eternal Blossom (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214150),	-- Eternal Blossom Legguards
 							i(214151),	-- Eternal Blossom Spaulders
 							i(214152),	-- Eternal Blossom Waistband
@@ -3135,9 +3135,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214157),	-- Eternal Blossom Bindings
 						},
 					}),
-					i(215244, {	-- Ensemble: Vestments of the Haunted Forest (Heroic)
+					iensemble(215244, { -- Ensemble: Vestments of the Haunted Forest (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214166),	-- Leggings of the Haunted Forest
 							i(214167),	-- Shoulderpads of the Haunted Forest
 							i(214168),	-- Belt of the Haunted Forest
@@ -3148,9 +3148,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214173),	-- Bracers of the Haunted Forest
 						},
 					}),
-					i(215248, {	-- Ensemble: Vestments of the Shattered Vale (Mythic)
+					iensemble(215248, { -- Ensemble: Vestments of the Shattered Vale (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214198),	-- Legguards of the Shattered Vale
 							i(214199),	-- Spaulders of the Shattered Vale
@@ -3164,9 +3164,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(HUNTER, {
-					i(215290, {	-- Ensemble: Yaungol Slayer Battlegear (Heroic)
+					iensemble(215290, { -- Ensemble: Yaungol Slayer Battlegear (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214570),	-- Yaungol Slayer's Leggings
 							i(214571),	-- Yaungol Slayer's Spaulders
 							i(214572),	-- Yaungol Slayer's Belt
@@ -3177,9 +3177,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214577),	-- Yaungol Slayer's Bracers
 						},
 					}),
-					i(215291, {	-- Ensemble: Battlegear of the Saurok Stalker (Heroic)
+					iensemble(215291, { -- Ensemble: Battlegear of the Saurok Stalker (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214578),	-- Saurok Stalker's Armbands
 							i(214579),	-- Saurok Stalker's Chestguard
 							i(214580),	-- Saurok Stalker's Sabatons
@@ -3190,9 +3190,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214586),	-- Saurok Stalker's Legguards
 						},
 					}),
-					i(215296, {	-- Ensemble: Battlegear of the Unblinking Vigil (Mythic)
+					iensemble(215296, { -- Ensemble: Battlegear of the Unblinking Vigil (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214625),	-- Leggings of the Unblinking Vigil
 							i(214626),	-- Spaulders of the Unblinking Vigil
@@ -3206,9 +3206,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(MAGE, {
-					i(215190, {	-- Ensemble: Regalia of the Burning Scroll (Heroic)
+					iensemble(215190, { -- Ensemble: Regalia of the Burning Scroll (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213719),	-- Cuffs of the Burning Scroll
 							i(213720),	-- Belt of the Burning Scroll
 							i(213721),	-- Amice of the Burning Scroll
@@ -3219,9 +3219,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213726),	-- Raiment of the Burning Scroll
 						},
 					}),
-					i(215192, {	-- Ensemble: Regalia of the Chromatic Hydra (Heroic)
+					iensemble(215192, { -- Ensemble: Regalia of the Chromatic Hydra (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213794),	-- Bracers of the Chromatic Hydra
 							i(213795),	-- Cord of the Chromatic Hydra
 							i(213797),	-- Shoulderpads of the Chromatic Hydra
@@ -3232,9 +3232,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213802),	-- Robe of the Chromatic Hydra
 						},
 					}),
-					i(215195, {	-- Ensemble: Chronomancer Regalia (Mythic)
+					iensemble(215195, { -- Ensemble: Chronomancer Regalia (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(220966),	-- Shirt of the Chronomancer
 							i(213819),	-- Chronomancer Robe
@@ -3249,9 +3249,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(MONK, {
-					i(215250, {	-- Ensemble: Vestments of the Red Crane (Heroic)
+					iensemble(215250, { -- Ensemble: Vestments of the Red Crane (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214215),	-- Red Crane Leggings
 							i(214216),	-- Red Crane Shoulderpads
 							i(214217),	-- Red Crane Belt
@@ -3262,9 +3262,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214222),	-- Red Crane Bracers
 						},
 					}),
-					i(215254, {	-- Ensemble: Fire-Charm Vestments (Heroic)
+					iensemble(215254, { -- Ensemble: Fire-Charm Vestments (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214267),	-- Fire-Charm Legguards
 							i(214268),	-- Fire-Charm Spaulders
 							i(214269),	-- Fire-Charm Waistband
@@ -3275,9 +3275,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214274),	-- Fire-Charm Bindings
 						},
 					}),
-					i(215259, {	-- Ensemble: Vestments of the Seven Sacred Seals (Mythic)
+					iensemble(215259, { -- Ensemble: Vestments of the Seven Sacred Seals (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214299),	-- Pants of Seven Sacred Seals
 							i(214300),	-- Mantle of Seven Sacred Seals
@@ -3291,9 +3291,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(PALADIN, {
-					i(215331, {	-- Ensemble: White Tiger Battlegear (Heroic)
+					iensemble(215331, { -- Ensemble: White Tiger Battlegear (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/18/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(87155),	-- Casque of Expelled Corruption
 							i(87078),	-- Spaulders of the Emperor's Rage
@@ -3315,9 +3315,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						--]]
 						},
 					}),
-					i(215333, {	-- Ensemble: Battlegear of the Lightning Emperor (Heroic)
+					iensemble(215333, { -- Ensemble: Battlegear of the Lightning Emperor (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/18/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(96467),	-- Crown of Potentiated Birth
 							i(96511),	-- Spaulders of Primordial Growth
@@ -3339,9 +3339,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							--]]
 						},
 					}),
-					i(215336, {	-- Ensemble: Vestments of Winged Triumph (Mythic)
+					iensemble(215336, { -- Ensemble: Vestments of Winged Triumph (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- Note: Lucetia learned with ensemble 05/17/24.  These seem to be the ones that determine if you can learn the ensemble or not.
 							i(112496, { ["modID"] = 6, }),	-- Gaze of Echoing Despair
 							i(112774, { ["modID"] = 6, }),	-- Shoulderplates of Gushing Geysers
@@ -3366,9 +3366,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(PRIEST, {
-					i(215200, {	-- Ensemble: Guardian Serpent Regalia (Heroic)
+					iensemble(215200, { -- Ensemble: Guardian Serpent Regalia (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213859),	-- Guardian Serpent Wristwraps
 							i(213860),	-- Guardian Serpent Sash
 							i(213861),	-- Guardian Serpent Mantle
@@ -3379,9 +3379,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213866),	-- Guardian Serpent Vestment
 						},
 					}),
-					i(215203, {	-- Ensemble: Regalia of the Exorcist (Heroic)
+					iensemble(215203, { -- Ensemble: Regalia of the Exorcist (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213883),	-- Vestment of the Exorcist
 							i(213884),	-- Slippers of the Exorcist
 							i(213885),	-- Mitts of the Exorcist
@@ -3392,9 +3392,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213890),	-- Wristwraps of the Exorcist
 						},
 					}),
-					i(215205, {	-- Ensemble: Regalia of Ternion Glory (Mythic)
+					iensemble(215205, { -- Ensemble: Regalia of Ternion Glory (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(213899),	-- Raiment of the Ternion Glory
 							i(213900),	-- Treads of the Ternion Glory
@@ -3408,9 +3408,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(ROGUE, {
-					i(215262, {	-- Ensemble: Battlegear of the Thousandfold Blades (Heroic)
+					iensemble(215262, { -- Ensemble: Battlegear of the Thousandfold Blades (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214323),	-- Wraps of the Thousandfold Blades
 							i(214324),	-- Jerkin of the Thousandfold Blades
 							i(214325),	-- Treads of the Thousandfold Blades
@@ -3421,9 +3421,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214330),	-- Pants of the Thousandfold Blades
 						},
 					}),
-					i(215265, {	-- Ensemble: Nine-Tail Battlegear (Heroic)
+					iensemble(215265, { -- Ensemble: Nine-Tail Battlegear (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214347),	-- Nine-Tailed Pants
 							i(214348),	-- Nine-Tailed Mantle
 							i(214349),	-- Nine-Tailed Cinch
@@ -3434,9 +3434,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214354),	-- Nine-Tailed Wraps
 						},
 					}),
-					i(215268, {	-- Ensemble: Barbed Assassin Battlegear (Mythic)
+					iensemble(215268, { -- Ensemble: Barbed Assassin Battlegear (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(214371),	-- Wraps of the Barbed Assassin
 							i(214372),	-- Jerkin of the Barbed Assassin
@@ -3450,9 +3450,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(SHAMAN, {
-					i(215299, {	-- Ensemble: Regalia of the Firebird (Heroic)
+					iensemble(215299, { -- Ensemble: Regalia of the Firebird (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- TODO: Symlink
 							i(214654),	-- Firebird's Belt
 							i(214651),	-- Firebird's Boots
@@ -3465,9 +3465,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214655),	-- Firebird's Spaulders
 						},
 					}),
-					i(215301, {	-- Ensemble: Regalia of the Witch Doctor (Heroic)
+					iensemble(215301, { -- Ensemble: Regalia of the Witch Doctor (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214666),	-- Breastplate of the Witch Doctor
 							i(214667),	-- Footguards of the Witch Doctor
 							i(214670),	-- Girdle of the Witch Doctor
@@ -3479,9 +3479,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214665),	-- Wristguards of the Witch Doctor
 						},
 					}),
-					i(215305, {	-- Ensemble: Regalia of Celestial Harmony (Mythic)
+					iensemble(215305, { -- Ensemble: Regalia of Celestial Harmony (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 						-- Contains Removed!
 							i(214702),	-- Belt of Celestial Harmony
 							i(214699),	-- Boots of Celestial Harmony
@@ -3495,9 +3495,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(WARLOCK, {
-					i(215207, {	-- Ensemble: Sha Skin Regalia (Heroic)
+					iensemble(215207, { -- Ensemble: Sha Skin Regalia (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213915),	-- Sha-Skin Robe
 							i(213916),	-- Sha-Skin Sandals
 							i(213917),	-- Sha-Skin Gloves
@@ -3508,9 +3508,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213922),	-- Sha-Skin Bracers
 						},
 					}),
-					i(215211, {	-- Ensemble: Regalia of the Thousandfold Hells (Heroic)
+					iensemble(215211, { -- Ensemble: Regalia of the Thousandfold Hells (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(213947),	-- Raiment of the Thousandfold Hells
 							i(213948),	-- Treads of the Thousandfold Hells
 							i(213949),	-- Handwraps of the Thousandfold Hells
@@ -3521,9 +3521,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213954),	-- Cuffs of the Thousandfold Hells
 						},
 					}),
-					i(215213, {	-- Ensemble: Regalia of the Horned Nightmare (Mythic)
+					iensemble(215213, { -- Ensemble: Regalia of the Horned Nightmare (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(213963),	-- Robe of the Horned Nightmare
 							i(213964),	-- Sandals of the Horned Nightmare
@@ -3537,9 +3537,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				clWithoutLock(WARRIOR, {
-					i(215340, {	-- Ensemble: Battleplate of Resounding Rings (Heroic)
+					iensemble(215340, { -- Ensemble: Battleplate of Resounding Rings (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214977),	-- Girdle of Resounding Rings
 							i(214978),	-- Pauldrons of Resounding Rings
 							i(214979),	-- Crushers of Resounding Rings
@@ -3550,9 +3550,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214984),	-- Sabatons of Resounding Rings
 						},
 					}),
-					i(215342, {	-- Ensemble: Battleplate of the Last Mogu (Heroic)
+					iensemble(215342, { -- Ensemble: Battleplate of the Last Mogu (Heroic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214993),	-- Waistguard of the Last Mogu
 							i(214994),	-- Shoulderguards of the Last Mogu
 							i(214995),	-- Handguards of the Last Mogu
@@ -3563,9 +3563,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215000),	-- Greatboots of the Last Mogu
 						},
 					}),
-					i(215345, {	-- Ensemble: Battleplate of the Prehistoric Marauder (Mythic)
+					iensemble(215345, { -- Ensemble: Battleplate of the Prehistoric Marauder (Mythic)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							-- Contains Removed!
 							i(215017),	-- Greatboots of the Prehistoric Marauder
 							i(215018),	-- Armguards of the Prehistoric Marauder
