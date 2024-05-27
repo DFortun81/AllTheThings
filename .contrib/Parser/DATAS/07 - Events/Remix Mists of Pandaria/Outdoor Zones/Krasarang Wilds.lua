@@ -158,12 +158,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							}),
 						}),
 						cl(MONK, {
-							i(217841, {	-- Shado-Pan Watcher Guise
+							i(217841, {	-- Ensemble: Shado-Pan Watcher Guise
 								["classes"] = MONK,
 								["g"] = {
-									i(217784),	-- Shado-Pan Watcher Bloom
-									i(217783),	-- Shado-Pan Watcher Fan
-									i(217785),	-- Shado-Pan Watcher Keg
+									i(217782),	-- Shado-Pan Watcher Cord
+									i(217780),	-- Shado-Pan Watcher Kabuto
+									i(217781),	-- Shado-Pan Watcher Pauldrons
 								},
 							}),
 						}),
