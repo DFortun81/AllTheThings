@@ -311,6 +311,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216600),	-- Eyes of the Doomed
 					i(216601),	-- Eyes of the Doomed
 					i(215862),	-- Engraved Spire
+					i(215970),	-- Greatsword of the Iron Legion
 					i(215940),	-- Halcyon Blade
 					i(215623),	-- Imperial Shortblade
 					i(215861),	-- Instructor's Spire
@@ -332,7 +333,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215948),	-- Darkhide Sword
 					i(215908),	-- Do-tharak, the Foebreaker
 					i(215952),	-- Fear's Bite
-					i(215970),	-- Greatsword of the Iron Legion
 					i(215944),	-- Harmonious Scimitar
 					i(216535),	-- Ironwood Bulwark
 					i(215486),	-- Jinyu Waraxe
@@ -340,6 +340,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216540),	-- Mogu Lord's Shield
 					i(216576),	-- Wasteland Deflector
 					i(215776),	-- Zeeg's Ancient Kegbreaker
+					-- Confirmed, but not sure if shared with Timeless
+					i(215869),	-- Waterweaver's Staff
 				})
 			}),
 		},
