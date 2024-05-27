@@ -5990,16 +5990,6 @@ root(ROOTS.Unsorted, {
 						i(214918),	-- Lightning Emperor's Legplates
 						i(214919),	-- Lightning Emperor's Vambraces
 						i(214920),	-- Lightning Emperor's Warboots
-
-						-- WARRIOR
-						i(215009),	-- Greatbelt of the Last Mogu
-						i(215010),	-- Spaulders of the Last Mogu
-						i(215011),	-- Gauntlets of the Last Mogu
-						i(215012),	-- Battleplate of the Last Mogu
-						i(215013),	-- Greathelm of the Last Mogu
-						i(215014),	-- Legplates of the Last Mogu
-						i(215015),	-- Vambraces of the Last Mogu
-						i(215016),	-- Warboots of the Last Mogu
 					}),
 				}),
 				n(WEAPONS, {
@@ -6048,7 +6038,6 @@ root(ROOTS.Unsorted, {
 					i(215572),	-- Norushen's Dagger
 					i(215574),	-- Nazgrim's Shanker
 					i(215575),	-- Nazgrim's Shanker
-					i(215578),	-- Rik'kal's Bloody Blade
 					i(215579),	-- Rik'kal's Bloody Blade
 					i(215581),	-- Blade of the Seven Stars
 					i(215599),	-- Mountainscaler Slicer
@@ -6115,7 +6104,6 @@ root(ROOTS.Unsorted, {
 					i(215877),	-- Cloudscorcher Staff
 					i(215888),	-- Soulwood Spire
 					i(215890),	-- Hopespreader's Staff
-					i(215896),	-- Jinyu Spire
 					i(215898),	-- Jalak's Spirit Staff
 					i(215901),	-- Jalak's Spirit Staff
 					i(215902),	-- Klaxxi Scimitar

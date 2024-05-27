@@ -138,7 +138,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215947),	-- Inkgill Sword
 					i(215740),	-- Jinyu Bonebreaker
 					i(215989),	-- Jinyu Flamberge
+					i(215539),	-- Jinyu Longbow (daily dungeon)
+					i(215896),	-- Jinyu Spire (drop)
 					i(215532),	-- Mogu Warbow
+					i(215749),	-- Ordo Basher (drop)
 					i(215651),	-- Pandaren Fist
 					i(215981),	-- Red Crane Greatsword
 					i(215802),	-- Spear of Feral Rage

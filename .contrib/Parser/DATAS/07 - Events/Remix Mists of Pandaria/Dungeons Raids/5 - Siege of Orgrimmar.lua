@@ -531,6 +531,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215570),	-- Norushen's Dagger
 						i(215832),	-- Pride's Gaze
 						i(215660),	-- Prophecies of Y'Shaarj
+						i(215578),	-- Rik'kal's Bloody Blade
 						i(215828),	-- Rod of the Megantholithic Apparatus
 						i(215668),	-- Sha-Touched Globule
 						i(215922),	-- Shao-Tien Saber

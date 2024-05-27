@@ -330,6 +330,23 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				d(DIFFICULTY.RAID.NORMAL, {
 					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
+						filter(CLOTH, {
+						}),
+						filter(LEATHER, {
+						}),
+						filter(MAIL, {
+						}),
+						filter(PLATE, {
+							-- WARRIOR
+							i(215009),	-- Greatbelt of the Last Mogu
+							i(215010),	-- Spaulders of the Last Mogu
+							i(215011),	-- Gauntlets of the Last Mogu
+							i(215012),	-- Battleplate of the Last Mogu
+							i(215013),	-- Greathelm of the Last Mogu
+							i(215014),	-- Legplates of the Last Mogu
+							i(215015),	-- Vambraces of the Last Mogu
+							i(215016),	-- Warboots of the Last Mogu
+						}),
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(216426),	-- Acid-Spine Bonebreaker
