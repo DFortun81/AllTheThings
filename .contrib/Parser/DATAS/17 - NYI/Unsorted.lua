@@ -6153,7 +6153,6 @@ root(ROOTS.Unsorted, {
 					i(216017),	-- Stormbreaker's Waraxe
 					i(216019),	-- Stormbreaker's Waraxe
 					i(216020),	-- Stormbreaker's Waraxe
-					i(216021),	-- Pandaren Hatchet
 					i(216024),	-- Pandaren Hewer
 					i(216400),	-- Tia-Tia, the Spinning Star
 					i(216402),	-- Tia-Tia, the Spinning Star
@@ -6202,7 +6201,6 @@ root(ROOTS.Unsorted, {
 					i(216478),	-- Pandaren Flamberge
 					i(216480),	-- Pandaren Greatblade
 					i(216481),	-- Pandaren Greatsword
-					i(216482),	-- Pandaren Windblade
 					i(216530),	-- Protection of the Emperor
 					i(216531),	-- Protection of the Emperor
 					i(216532),	-- Protection of the Emperor

@@ -139,8 +139,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215597),	-- Mushan Slicer
 					i(216022),	-- Pandaren Axe
 					i(216543),	-- Pandaren Bulwark
-					i(216544),	-- Pandaren Shield
 					i(216445),	-- Pandaren Ceremonial Fan
+					i(216021),	-- Pandaren Hatchet
+					i(216544),	-- Pandaren Shield
+					i(216482),	-- Pandaren Windblade
 					i(216440),	-- Pandaren Tome
 					i(216614),	-- Seawatch Crossbow
 					i(215805),	-- Serpentguard Spear
