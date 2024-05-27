@@ -1183,9 +1183,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214968),	-- Warboots of Resounding Rings
 						},
 					}),
-					i(215341, {	-- Ensemble: Battleplate of Resounding Rings (New Appearances)
+					iensemble(215341, { -- Ensemble: Battleplate of Resounding Rings (New Appearances)
 						["cost"] = {{"c", BRONZE, 5000}},
-						["g"] = {
+						["_g"] = {
 							i(214985),	-- Warboots of Resounding Rings
 							i(214986),	-- Vambraces of Resounding Rings
 							i(214987),	-- Legplates of Resounding Rings
@@ -1367,7 +1367,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 								i(217785),	-- Shado-Pan Watcher Keg
 							},
 						}),
-						i(217841, {	-- Ensemble: Shado-Pan Watcher Guise
+						iensemble(217841, { -- Ensemble: Shado-Pan Watcher Guise
 							["classes"] = MONK,
 							["cost"] = {{"c", BRONZE, 4000}},
 							["_g"] = {
