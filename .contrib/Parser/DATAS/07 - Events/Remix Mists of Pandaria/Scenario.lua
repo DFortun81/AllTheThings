@@ -107,8 +107,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(WEAPONS, {
-				-- TODO: Normal / heroic split? Can weapons drop or are they only in boxes?
+				-- TODO: Normal / heroic split needed? Can weapons drop or are they only in boxes?
+				-- TODO: Is it only the final boss who has drops or are there intermediate drops too?
 				i(215492),	-- Axe of Iron Might (normal scenario, drop)
+				i(215986),	-- Blade of Broken Chains (heroic scenario, final boss drop)
 				i(215757),	-- Carapace Crusher (maybe hc only?)
 				i(215752),	-- Ced's Basher
 				i(215607),	-- Ceremonial Spike (maybe hc only?)

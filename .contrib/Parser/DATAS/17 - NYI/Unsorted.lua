@@ -6146,7 +6146,6 @@ root(ROOTS.Unsorted, {
 					i(215769),	-- Jerthud, Hand of the Savior
 					i(215771),	-- Jerthud, Hand of the Savior
 					i(215775),	-- Zeeg's Ancient Kegbreaker
-					i(215782),	-- Wasteland Maul
 					i(215785),	-- Fangcracker Maul
 					i(215787),	-- Kazra'jin's Maul
 					i(215790),	-- Kazra'jin's Maul
@@ -6203,9 +6202,7 @@ root(ROOTS.Unsorted, {
 					i(215972),	-- Greatsword of Fallen Pride
 					i(215974),	-- Greatsword of Fallen Pride
 					i(215981),	-- Red Crane Greatsword
-					i(215986),	-- Blade of Broken Chains
 					i(215988),	-- Jinyu Greatsword
-					i(215989),	-- Jinyu Flamberge
 					i(215991),	-- Zerat, Soulburner's Greatsword
 					i(215993),	-- Zerat, Soulburner's Greatsword
 					i(215994),	-- Mistspinner's Channel
