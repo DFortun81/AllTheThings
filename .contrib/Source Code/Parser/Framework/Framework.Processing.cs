@@ -1031,6 +1031,11 @@ namespace ATT
                 data.Remove(key);
             }
 
+            if (data.ContainsKey("_unsorted") && TryGetSOURCED(data, out var _))
+            {
+                LogDebugWarn($"Unsorted data has also been Sourced", data);
+            }
+
             CaptureDebugDBData(data);
 
             return true;
@@ -1203,6 +1208,23 @@ namespace ATT
             {
                 sources = objectSources;
                 return true;
+            }
+
+            sources = default;
+            return false;
+        }
+
+        private static bool TryGetSOURCED(IDictionary<string, object> data, out List<IDictionary<string, object>> sources)
+        {
+            foreach (KeyValuePair<string, object> field in data)
+            {
+                if (SOURCED.TryGetValue(field.Key, out Dictionary<long, List<IDictionary<string, object>>> fieldSources)
+                    && field.Value is long id && id > 0
+                    && fieldSources.TryGetValue(id, out List<IDictionary<string, object>> objectSources))
+                {
+                    sources = objectSources;
+                    return true;
+                }
             }
 
             sources = default;
