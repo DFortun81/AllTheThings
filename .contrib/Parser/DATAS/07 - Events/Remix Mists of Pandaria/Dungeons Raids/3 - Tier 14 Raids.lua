@@ -451,7 +451,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215638),	-- Fist of Shek'zeer
 					i(215729),	-- Galvanized Stormcrusher
 					i(215634),	-- Gara'kal, Claw of the Spiribinder
-					i(215835),	-- Gao-Rei, Staff of the Protector
 					i(215969),	-- Greatsword of the Iron Legion
 					i(215789),	-- Kazra'jin's Maul
 					i(215931),	-- Kilrak, Fangs of Terror
