@@ -309,6 +309,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216595),	-- Bulwark of Twinned Despair
 					i(216600),	-- Eyes of the Doomed
 					i(216601),	-- Eyes of the Doomed
+					i(215862),	-- Engraved Spire
 					i(215940),	-- Halcyon Blade
 					i(215623),	-- Imperial Shortblade
 					i(215861),	-- Instructor's Spire
