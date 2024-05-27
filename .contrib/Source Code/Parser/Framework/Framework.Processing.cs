@@ -1038,7 +1038,7 @@ namespace ATT
 
         private static bool EnsembleCleanup(IDictionary<string, object> data)
         {
-            if (!data.TryGetValue("ensembleID", out string ensembleID)) return true;
+            if (!data.TryGetValue("ensembleID", out long ensembleID)) return true;
 
             if (!data.TryGetValue("_sourceIDs", out List<long> sourceIDs)) return true;
 
@@ -1211,6 +1211,8 @@ namespace ATT
 
         private static void CaptureForSOURCED(IDictionary<string, object> data, string field, object idObj)
         {
+            if (ProcessingUnsortedCategory) return;
+
             if (SOURCED.TryGetValue(field, out Dictionary<long, List<IDictionary<string, object>>> fieldSources) && idObj is long id && id > 0)
             {
                 if (!fieldSources.TryGetValue(id, out List<IDictionary<string, object>> sources))
@@ -1223,6 +1225,8 @@ namespace ATT
 
         private static void CaptureForSOURCED(IDictionary<string, object> data)
         {
+            if (ProcessingUnsortedCategory) return;
+
             foreach (var kvp in SOURCED)
             {
                 if (data.TryGetValue(kvp.Key, out long id) && id > 0)
