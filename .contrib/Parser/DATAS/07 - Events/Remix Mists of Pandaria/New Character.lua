@@ -9,11 +9,23 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(210275),	-- Greenstone Legguards
 			i(210340),	-- Timerunner's Sword
 		}),
+		cl(DEMONHUNTER, {
+			-- TODO
+		}),
+		cl(DRUID, {
+			-- TODO
+		}),
+		cl(EVOKER, {
+			-- TODO
+		}),
 		cl(HUNTER, {
 			i(210267),	-- Jade Guardian's Chain Armor
 			i(210277),	-- Jade Guardian's Leggings
 			i(210269),	-- Jade Guardian's Sabatons
 			i(210639),	-- Timerunner's Bow
+		}),
+		cl(MAGE, {
+			-- TODO
 		}),
 		cl(MONK, {
 			i(210344),	-- Timerunner's Mace
@@ -22,6 +34,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(210278),	-- Thunderpaw Breeches
 			i(210339),	-- Timerunner's Staff
 			i(208496),	-- Thunderpaw Tunic
+		}),
+		cl(PALADIN, {
+			-- TODO
 		}),
 		cl(PRIEST, {
 			i(210276),	-- Spirit-Waker Leggings
@@ -49,10 +64,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(210275),	-- Greenstone Legguards
 			i(210642),	-- Timerunner's Greatsword
 		}),
+		cl(WARLOCK, {
+			-- TODO
+		}),
 		n(REWARDS, {
 			["description"] = "These items are in the box you get when you make a new character. Their IDs are different than the starter gear that is on you!",
 			["groups"] = {
+				-- TODO: The users would benefit from knowing what class to make to access these rewards. Description could be used to clarify this easily.
 				filter(ONE_HANDED_AXES, {
+					-- TODO probably
 				}),
 				filter(ONE_HANDED_MACES, {
 					i(224079),	-- Timerunner's Mace
