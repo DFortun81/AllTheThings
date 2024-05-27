@@ -76,24 +76,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214426),	-- Waterburst Legwraps
 					i(214425),	-- Waterburst Mantle
 					i(214419),	-- Waterburst Wristguards
-					-- Is This Heroic ScenarioS?? /Braghe
-					i(214492),	-- Jade Guardian's Belt
-					i(214496),	-- Jade Guardian's Boots
-					i(214498),	-- Jade Guardian's Bracers
-					i(214493),	-- Jade Guardian's Gauntlets
-					i(214497),	-- Jade Guardian's Hauberk
-					i(214495),	-- Jade Guardian's Helm
-					i(214489),	-- Jade Guardian's Leggings
-					i(214491),	-- Jade Guardian's Spaulders
-					-- Scenario reward box?
-					i(214729),	-- Jade Guardian's Armbands
-					i(214730),	-- Jade Guardian's Breastplate
-					i(214734),	-- Jade Guardian's Chain
-					i(214733),	-- Jade Guardian's Gloves
-					i(214732),	-- Jade Guardian's Helmet
-					i(214736),	-- Jade Guardian's Legguards
-					i(214735),	-- Jade Guardian's Pauldrons
-					i(214731),	-- Jade Guardian's Sabatons
 				}),
 				filter(PLATE, {
 					i(214759),	-- Swarmbreaker's Armguards
