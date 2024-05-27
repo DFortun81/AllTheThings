@@ -408,7 +408,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214654),	-- Firebird's Belt
 						i(214651),	-- Firebird's Boots
 						i(214649),	-- Firebird's Bracers
-						i(220991),	-- Firebird's Cuirass
+						--i(220991),	-- Firebird's Cuirass	-- Put a note here if you got it, seems like a bugged item
 						i(214653),	-- Firebird's Gauntlets
 						i(214650),	-- Firebird's Hauberk
 						i(214652),	-- Firebird's Helm

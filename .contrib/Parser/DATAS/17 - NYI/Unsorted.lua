@@ -5968,6 +5968,8 @@ root(ROOTS.Unsorted, {
 						i(214663),	-- Robeguard of the Witch Doctor
 						i(214662),	-- Sabatons of the Witch Doctor
 						i(220992),	-- Shirt of the Witch Doctor
+						
+						i(220991),	-- Firebird's Cuirass
 
 					}),
 					filter(PLATE, {
