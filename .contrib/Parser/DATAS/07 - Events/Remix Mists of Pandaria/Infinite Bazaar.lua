@@ -1481,7 +1481,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						iensemble(217825, { -- Arsenal: Fanatical Champion's Aggression
 							["classes"] = WARRIOR,
 							["cost"] = {{"c", BRONZE, 3000}},
-							["groups"] = {
+							["_g"] = {
 								i(217779),	-- Fanatical Champion's Disemboweler
 								i(217778),	-- Fanatical Champion's Gladius
 								i(217777),	-- Fanatical Champion's Thorns
@@ -1490,7 +1490,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						iensemble(217838, { -- Ensemble: Fanatical Champion's Trophies
 							["classes"] = WARRIOR,
 							["cost"] = {{"c", BRONZE, 4000}},
-							["groups"] = {
+							["_g"] = {
 								i(217776),	-- Fanatical Champion's Belt
 								i(217775),	-- Fanatical Champion's Tusks
 								i(217774),	-- Fanatical Champion's Vision

@@ -5964,7 +5964,6 @@ root(ROOTS.Unsorted, {
 					i(215699),	-- Grand Imperial Rifle
 					i(215701),	-- Jadewatch Rifle
 					i(215708),	-- Roar of the Quillen
-					i(215709),	-- Roar of the Quillen
 					i(215710),	-- Roar of the Quillen
 					i(215711),	-- Roar of the Quillen
 					i(215715),	-- Kardris' Scepter
@@ -6031,7 +6030,6 @@ root(ROOTS.Unsorted, {
 					i(216002),	-- Grummle Rod
 					i(216003),	-- Waterweaver's Wand
 					i(216004),	-- Blazecaster's Wand
-					i(216005),	-- Wand of Spiritweaving
 					i(216008),	-- Necromantic Channel
 					i(216009),	-- Venomlord's Skull Wand
 					i(216010),	-- Venomlord's Skull Wand
@@ -6049,7 +6047,6 @@ root(ROOTS.Unsorted, {
 					i(216406),	-- Blade of the Sanguine Ritual
 					i(216407),	-- Blade of the Sanguine Ritual
 					i(216408),	-- Fyn's Dagger
-					i(216410),	-- Fyn's Dagger
 					i(216411),	-- Fyn's Dagger
 					i(216414),	-- Iron Qon's Knife
 					i(216415),	-- Iron Qon's Knife

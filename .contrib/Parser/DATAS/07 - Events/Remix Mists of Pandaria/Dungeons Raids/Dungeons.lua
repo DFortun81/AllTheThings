@@ -149,6 +149,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215645),	-- Tian Handblade
 			i(215608),	-- Tolakesh, Horn of Niuzao
 			i(215514),	-- Wallwatcher's Longaxe
+			i(216005),	-- Wand of Spiritweaving
 			i(215612),	-- Yaungol Shanker
 			i(215955),	-- Zakai's Swarmslicer
 		}),

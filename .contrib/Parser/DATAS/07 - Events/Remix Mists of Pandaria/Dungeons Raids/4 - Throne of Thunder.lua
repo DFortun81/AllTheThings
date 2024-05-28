@@ -460,6 +460,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215906),	-- Do-tharak, the Foebreaker
 						i(215688),	-- Eye of the Hydra
 						i(216598),	-- Eyes of the Doomed
+						i(216410),	-- Fyn's Dagger
 						i(216435),	-- Hammer of the Dawn
 						i(215770),	-- Jerthud, Hand of the Savior
 						i(215788),	-- Kazra'jin's Maul
@@ -467,6 +468,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215767),	-- Mace of Dark Animus
 						i(215547),	-- Miracoran, the Dissonant Chord
 						i(216551),	-- Norushen's Tower Shield
+						i(215709),	-- Roar of the Quillen
 						i(215812),	-- Shan-Dun, Breaker of Courage
 						i(216015),	-- Shellsplitter Battleaxe
 						i(216587),	-- Shield of the Gloaming
