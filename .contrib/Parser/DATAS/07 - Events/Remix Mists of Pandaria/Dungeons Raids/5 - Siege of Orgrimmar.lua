@@ -518,6 +518,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(215918),	-- Arcweaver Spellblade
+						i(215554),	-- Death Lotus Repeater
 						i(215836),	-- Drakebinder's Spire
 						i(215777),	-- Gar'tok, Might of the Faithful
 						i(215972),	-- Greatsword of Fallen Pride

@@ -57,7 +57,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214055),	-- Brushstalker Leggings
 					i(214054),	-- Brushstalker Shoulderpads
 					i(214059),	-- Brushstalker Tunic
-					-- Is This Heroic ScenarioS?? /Braghe
 					i(214047),	-- Tidesplitter Cap
 					i(214050),	-- Tidesplitter Cinch
 					i(214046),	-- Tidesplitter Handguards
@@ -89,8 +88,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(WEAPONS, {
-				-- TODO: Normal / heroic split needed? Can weapons drop or are they only in boxes?
-				-- TODO: Is it only the final boss who has drops or are there intermediate drops too?
 				i(215492),	-- Axe of Iron Might (normal scenario, drop)
 				i(215986),	-- Blade of Broken Chains (heroic scenario, final boss drop)
 				i(215757),	-- Carapace Crusher (maybe hc only?)
@@ -99,6 +96,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215880),	-- Darkstaff of Ruin (normal scenario)
 				i(215537),	-- Dawnwatcher's Warbow
 				i(216007),	-- Deathspeaker Channel
+				i(215785),	-- Fangcracker Maul
 				i(215884),	-- Firedancer's Staff
 				i(215881),	-- Gustspinner's Staff
 				i(215647),	-- Ka'eng, Fang of Shadow

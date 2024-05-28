@@ -5885,116 +5885,6 @@ root(ROOTS.Unsorted, {
 					i(224022),	-- Survivalist's Mana Potion
 					i(224120),	-- Timerunner's Gem Box
 				}),
-				inst(362, {	-- Throne of Thunder
-					------ UNKNOWN SOURCES! ------
-					filter(CLOTH, {
-						-- MAGE
-						i(213811),	-- Wristwraps of the Chromatic Hydra
-						i(213812),	-- Sash of the Chromatic Hydra
-						i(213813),	-- Mantle of the Chromatic Hydra
-						i(213814),	-- Trousers of the Chromatic Hydra
-						i(213815),	-- Crown of the Chromatic Hydra
-						i(213816),	-- Mitts of the Chromatic Hydra
-						i(213817),	-- Slippers of the Chromatic Hydra
-						i(213818),	-- Vestment of the Chromatic Hydra
-
-						-- PRIEST
-						i(213875),	-- Cuffs of the Exorcist
-						i(213876),	-- Belt of the Exorcist
-						i(213877),	-- Amice of the Exorcist
-						i(213878),	-- Pants of the Exorcist
-						i(213879),	-- Cowl of the Exorcist
-						i(213880),	-- Handwraps of the Exorcist
-						i(213881),	-- Treads of the Exorcist
-						i(213882),	-- Raiment of the Exorcist
-
-						-- WARLOCK
-						i(213955),	-- Wristwraps of the Thousandfold Hells
-						i(213956),	-- Sash of the Thousandfold Hells
-						i(213957),	-- Mantle of the Thousandfold Hells
-						i(213958),	-- Trousers of the Thousandfold Hells
-						i(213959),	-- Crown of the Thousandfold Hells
-						i(213960),	-- Mitts of the Thousandfold Hells
-						i(213961),	-- Slippers of the Thousandfold Hells
-						i(213962),	-- Vestment of the Thousandfold Hells
-					}),
-					filter(LEATHER, {
-						-- DRUID
-						i(214182),	-- Pants of the Haunted Forest
-						i(214183),	-- Mantle of the Haunted Forest
-						i(214184),	-- Cinch of the Haunted Forest
-						i(214185),	-- Handguards of the Haunted Forest
-						i(214186),	-- Cap of the Haunted Forest
-						i(214187),	-- Treads of the Haunted Forest
-						i(214188),	-- Jerkin of the Haunted Forest
-						i(214189),	-- Wraps of the Haunted Forest
-
-						-- MONK
-						i(214259),	-- Fire-Charm Bracers
-						i(214260),	-- Fire-Charm Tunic
-						i(214261),	-- Fire-Charm Boots
-						i(214262),	-- Fire-Charm Helm
-						i(214263),	-- Fire-Charm Gloves
-						i(214264),	-- Fire-Charm Belt
-						i(214265),	-- Fire-Charm Shoulderpads
-						i(214266),	-- Fire-Charm Leggings
-
-
-						-- ROGUE
-						i(214331),	-- Nine-Tailed Leggings
-						i(214332),	-- Nine-Tailed Shoulderpads
-						i(214333),	-- Nine-Tailed Belt
-						i(214334),	-- Nine-Tailed Gloves
-						i(214335),	-- Nine-Tailed Helm
-						i(214336),	-- Nine-Tailed Boots
-						i(214337),	-- Nine-Tailed Tunic
-						i(214338),	-- Nine-Tailed Bracers
-					}),
-					filter(MAIL, {
-						-- HUNTER
-						i(214587),	-- Saurok Stalker's Legwraps
-						i(214588),	-- Saurok Stalker's Mantle
-						i(214589),	-- Saurok Stalker's Girdle
-						i(214590),	-- Saurok Stalker's Grips
-						i(214591),	-- Saurok Stalker's Helmet
-						i(214592),	-- Saurok Stalker's Footguards
-						i(214593),	-- Saurok Stalker's Breastplate
-						i(214594),	-- Saurok Stalker's Wristguards
-
-
-						-- SHAMAN
-						i(214664),	-- Armbands of the Witch Doctor
-						i(214659),	-- Chain of the Witch Doctor
-						i(214660),	-- Gloves of the Witch Doctor
-						i(214661),	-- Headguard of the Witch Doctor
-						i(214657),	-- Legguards of the Witch Doctor
-						i(214658),	-- Pauldrons of the Witch Doctor
-						i(214663),	-- Robeguard of the Witch Doctor
-						i(214662),	-- Sabatons of the Witch Doctor
-						i(220992),	-- Shirt of the Witch Doctor
-					}),
-					filter(PLATE, {
-						-- DEATH KNIGHT
-						i(214857),	-- Breastplate of the All-Consuming Maw
-						i(214858),	-- Bracers of the All-Consuming Maw
-						i(214859),	-- Sabatons of the All-Consuming Maw
-						i(214860),	-- Helm of the All-Consuming Maw
-						i(214861),	-- Gauntlets of the All-Consuming Maw
-						i(214862),	-- Girdle of the All-Consuming Maw
-						i(214863),	-- Pauldrons of the All-Consuming Maw
-						i(214864),	-- Legguards of the All-Consuming Maw
-
-						-- PALADIN
-						i(214913),	-- Lightning Emperor's Greatbelt
-						i(214914),	-- Lightning Emperor's Spaulders
-						i(214915),	-- Lightning Emperor's Handguards
-						i(214916),	-- Lightning Emperor's Battleplate
-						i(214917),	-- Lightning Emperor's Greathelm
-						i(214918),	-- Lightning Emperor's Legplates
-						i(214919),	-- Lightning Emperor's Vambraces
-						i(214920),	-- Lightning Emperor's Warboots
-					}),
-				}),
 				n(WEAPONS, {
 					i(215946),	-- Valiant's Honorblade
 					i(215469),	-- Haromm's Frozen Battleaxe
@@ -6026,10 +5916,8 @@ root(ROOTS.Unsorted, {
 					i(215540),	-- Jinyu Shortbow
 					i(215541),	-- Jinyu Warbow
 					i(215546),	-- Miracoran, the Dissonant Chord
-					i(215547),	-- Miracoran, the Dissonant Chord
 					i(215550),	-- Miracoran, the Dissonant Chord
 					i(215553),	-- Death Lotus Repeater
-					i(215554),	-- Death Lotus Repeater
 					i(215557),	-- Crossbow of Forgotten Glory
 					i(215562),	-- Durumu's Gaze
 					i(215563),	-- Durumu's Gaze
@@ -6090,7 +5978,6 @@ root(ROOTS.Unsorted, {
 					i(215768),	-- Mace of Dark Animus
 					i(215769),	-- Jerthud, Hand of the Savior
 					i(215775),	-- Zeeg's Ancient Kegbreaker
-					i(215785),	-- Fangcracker Maul
 					i(215787),	-- Kazra'jin's Maul
 					i(215790),	-- Kazra'jin's Maul
 					i(215794),	-- Halberd of Inner Darkness
