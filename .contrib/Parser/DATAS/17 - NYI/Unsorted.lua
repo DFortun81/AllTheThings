@@ -5955,7 +5955,6 @@ root(ROOTS.Unsorted, {
 					i(215678),	-- Grummle Lantern
 					i(215680),	-- Hope's Effigy
 					i(215682),	-- Swarmkeeper's Channel
-					i(215685),	-- Klaxxi Channeling Fork
 					i(215686),	-- Eye of the Hydra
 					i(215687),	-- Eye of the Hydra
 					i(215690),	-- Kor'kron Heavy Rifle

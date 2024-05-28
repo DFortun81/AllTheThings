@@ -101,6 +101,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215881),	-- Gustspinner's Staff
 				i(215647),	-- Ka'eng, Fang of Shadow
 				i(215706),	-- Klaxxi Ambershot
+				i(215685),	-- Klaxxi Channeling Fork
 				i(215786),	-- Lerah's Maul
 				i(215648),	-- Ner'onok's Katar (hc scenario)
 				i(215956),	-- Ook's Hozen Cutter (hc scenario)
