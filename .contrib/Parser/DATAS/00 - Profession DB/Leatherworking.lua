@@ -1450,6 +1450,7 @@ i(0, 194697);		-- Warhide Shoulderguard [Rank 1]
 i(0, 194705);		-- Warhide Shoulderguard [Rank 2]
 --- ITEM ---
 i(137908, 194751);	-- Battlebound Armbands [Rank 3]
+i(137901, 194744);	-- Battlebound Girdle [Rank 2]
 i(137913, 194756);	-- Battlebound Girdle [Rank 3]
 i(137911, 194754);	-- Battlebound Grips [Rank 3]
 i(137915, 194758);	-- Battlebound Hauberk [Rank 3]
@@ -1507,6 +1508,7 @@ i(137920, 194763);	-- Gravenscale Warhelm [Rank 2]
 i(137928, 194771);	-- Gravenscale Warhelm [Rank 3]
 i(137935, 194779);	-- Leather Love Seat
 i(137934, 194778);	-- Leather Pet Leash
+i(137869, 194704);	-- Warhide Belt [Rank 2]
 i(137881, 194716);	-- Warhide Belt [Rank 3]
 i(137876, 194711);	-- Warhide Bindings [Rank 3]
 i(137880, 194715);	-- Warhide Footpads [Rank 3]
@@ -1539,7 +1541,6 @@ i(0, 196387);		-- Shaved Felhide
 i(0, 196425);		-- Stonehide Boot Base
 i(0, 196383);		-- Stonehide Leather Vamp
 i(137900, 0);		-- Battlebound Armbands [Rank 2]
-i(137901, 0);		-- Battlebound Girdle [Rank 2]
 i(137905, 0);		-- Battlebound Grips [Rank 2]
 i(137907, 0);		-- Battlebound Hauberk [Rank 2]
 i(137903, 0);		-- Battlebound Leggings [Rank 2]
@@ -1552,7 +1553,6 @@ i(140636, 0);		-- Dreadleather Bindings [Rank 1]
 i(140644, 0);		-- Gravenscale Armbands [Rank 1]
 i(137933, 0);		-- Leather Pet Bed
 i(137952, 0);		-- Stonehide Leather Barding
-i(137869, 0);		-- Warhide Belt [Rank 2]
 i(137868, 0);		-- Warhide Bindings [Rank 2]
 i(137874, 0);		-- Warhide Footpads [Rank 2]
 i(137873, 0);		-- Warhide Gloves [Rank 2]

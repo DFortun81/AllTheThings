@@ -5838,7 +5838,7 @@ root(ROOTS.Unsorted, {
 			n(SPECIAL, {	-- Timerunning
 				n(ARMOR, {
 					filter(CLOTH, {
-						------ NYI? ------
+						------ NYI or only in Ensembles ------
 						i(220967),	-- Spirit-Waker Shirt
 						i(220968),	-- Scrollkeeper Shirt
 						i(220969),	-- Passionsilk Vests
@@ -5853,7 +5853,7 @@ root(ROOTS.Unsorted, {
 						i(220978),	-- Shirt of the Horned Nightmare
 					}),
 					filter(LEATHER, {
-						------ NYI? ------
+						------ NYI or only in Ensembles ------
 						i(220981),	-- Eternal Blossom Tunic
 
 						i(220982),	-- Vest of the Haunted Forest
@@ -5867,6 +5867,10 @@ root(ROOTS.Unsorted, {
 						i(220988),	-- Fire-Charm Vestments
 						i(220989),	-- Fire-Charm Jacket
 					}),
+					filter(MAIL, {
+						------ NYI or only in Ensembles ------
+						i(220991),	-- Firebird's Cuirass
+					})
 				}),
 				filter(MISC, {
 					i(211932),	-- Cache of Infinite Treasure
@@ -5968,9 +5972,6 @@ root(ROOTS.Unsorted, {
 						i(214663),	-- Robeguard of the Witch Doctor
 						i(214662),	-- Sabatons of the Witch Doctor
 						i(220992),	-- Shirt of the Witch Doctor
-						
-						i(220991),	-- Firebird's Cuirass
-
 					}),
 					filter(PLATE, {
 						-- DEATH KNIGHT

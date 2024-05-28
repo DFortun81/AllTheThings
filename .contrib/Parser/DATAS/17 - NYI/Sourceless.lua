@@ -32,7 +32,11 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		n(ARMOR, {
 			filter(CLOTH, {
 				-- Loads on Wowhead & ingame
+				--i(155465),	-- Wickerwoven Cord
+				--i(158588),	-- Wickerwoven Walkers
 				i(158603),	-- Wickerwoven Handwraps
+				--i(158619),	-- Wickerwoven Waistband
+				--i(158631),	-- Wickerwoven Bindings
 				i(160197),	-- Wickerwoven Pantaloons
 
 				-- Loads on Wowhead but not ingame
@@ -60,7 +64,11 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(155475),	-- Crone-Seeker's Chestguard
 				i(155478),	-- Crone-Seeker's Skullguard
 				i(155480),	-- Crone-Seeker's Spaulders
+				--i(155481),	-- Crone-Seeker's Chain
+				--i(158590),	-- Crone-Seeker's Striders
 				i(158605),	-- Crone-Seeker's Grips
+				--i(158621),	-- Crone-Seeker's Cincture
+				--i(158633),	-- Crone-Seeker's Bindings
 				i(160199),	-- Crone-Seeker's Leggings
 				i(160864),	-- Crone-Seeker's Pauldrons
 				i(160868),	-- Crone-Seeker's Coif
@@ -69,20 +77,30 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(155483),	-- Waycrest Militia Chestplate
 				i(155486),	-- Waycrest Militia Warhelm
 				i(155488),	-- Waycrest Militia Shoulderplates
+				--i(155489),	-- Waycrest Militia Belt
+				--i(158591),	-- Waycrest Militia Footguards
 				i(158606),	-- Waycrest Militia Gloves
+				--i(158622),	-- Waycrest Militia Buckle
+				--i(158634),	-- Waycrest Militia Wristguards
 				i(160200),	-- Waycrest Militia Pants
 				i(160865),	-- Waycrest Militia Shoulderplates
 				i(160869),	-- Waycrest Militia Greathelm
 			}),
 		}),
+		n(WEAPONS, {
+			--i(161296),	-- Autumnvale Hunting Rifle
+		}),
 
 		-- Stormsong
 		n(ARMOR, {
 			filter(CLOTH, {
+				--i(158696),	-- Tidespeaker Mitts
+				--i(158704),	-- Tidespeaker Legwraps
 				i(160233),	-- Tidespeaker Wrap
 				i(160234),	-- Tidespeaker Headpiece
 				i(160235),	-- Tidespeaker Shoulderpads
 				i(160372),	-- Tidespeaker Cinch
+				--i(160385),	-- Tidespeaker Bracers
 				i(160873),	-- Tidespeaker Crown
 				i(160881),	-- Tidespeaker Robes
 			}),
@@ -99,6 +117,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 			}),
 			filter(MAIL, {
 				i(158697),	-- Stormchaser Grips
+				--i(158705),	-- Stormchaser Links
 				i(160239),	-- Stormchaser Chestguard
 				i(160240),	-- Stormchaser Skullcover
 				i(160241),	-- Stormchaser Spaulders
@@ -108,10 +127,13 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(160883),	-- Stormchaser Hauberk
 			}),
 			filter(PLATE, {
+				--i(158695),	-- Dread Corsair Handguards
+				--i(158703),	-- Dread Corsair Chausses
 				i(160242),	-- Dread Corsair Chestguard
 				i(160243),	-- Dread Corsair Helmet
 				i(160244),	-- Dread Corsair Spaulders
 				i(160381),	-- Dread Corsair Clasp
+				--i(160394),	-- Dread Corsair Shackles
 				i(160876),	-- Dread Corsair Warhelm
 				i(160884),	-- Dread Corsair Chestplate
 			}),
@@ -132,6 +154,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(160078),	-- Navigator's Pantaloons
 				i(160088),	-- Navigator's Mittens
 				i(160854),	-- Navigator's Amice
+				--i(160891),	-- Navigator's Vestments
 			}),
 			filter(LEATHER, {
 				i(155047),	-- Freebooter Belt
@@ -165,6 +188,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(160076),	-- Sea Raider's Headgear
 				i(160077),	-- Sea Raider's Shoulderplates
 				i(160081),	-- Sea Raider's Pants
+				--i(160091),	-- Sea Raider's Grips
 				i(160857),	-- Sea Raider's Pauldrons
 				i(160894),	-- Sea Raider's Chestplate
 			}),
@@ -210,6 +234,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		-- Nazmir
 		n(ARMOR, {
 			filter(CLOTH, {
+				--i(155316),	-- Loa Speaker's Treads
 				i(159019),	-- Loa Speaker's Handguards
 				i(159022),	-- Loa Speaker's Crest
 				i(159032),	-- Loa Speaker's Mantle
@@ -217,8 +242,11 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(159058),	-- Loa Speaker's Britches
 				i(159061),	-- Loa Speaker's Garment
 				i(159064),	-- Loa Speaker's Amice
+				--i(159067),	-- Loa Speaker's Waistwrap
+				--i(159070),	-- Loa Speaker's Cuffs
 			}),
 			filter(LEATHER, {
+				--i(155318),	-- Ritual Flayer's Boots
 				i(159017),	-- Ritual Flayer's Handwraps
 				i(159024),	-- Ritual Flayer's Guise
 				i(159030),	-- Ritual Flayer's Shoulderpads
@@ -226,6 +254,8 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(159056),	-- Ritual Flayer's Helm
 				i(159060),	-- Ritual Flayer's Leggings
 				i(159062),	-- Ritual Flayer's Mantle
+				--i(159069),	-- Ritual Flayer's Cord
+				--i(159073),	-- Ritual Flayer's Bracers
 			}),
 			filter(MAIL, {
 				i(155317),	-- Death-Pledged Sabatons
@@ -235,6 +265,8 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(159043),	-- Death-Pledged Chainmail
 				i(159055),	-- Death-Pledged Headpiece
 				i(159065),	-- Death-Pledged Spaulders
+				--i(159068),	-- Death-Pledged Waistguard
+				--i(159072),	-- Death-Pledged Armguards
 			}),
 			filter(PLATE, {
 				i(159018),	-- Nazmani Warplate Crushers
@@ -260,6 +292,8 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(161255),	-- Lastwind Cowl
 				i(161259),	-- Lastwind Amice
 				i(161264),	-- Lastwind Raiment
+				--i(161276),	-- Lastwind Legguards
+				--i(161280),	-- Lastwind Shoes
 			}),
 			filter(LEATHER, {
 				i(161156),	-- Scorching Sands Guise
@@ -276,6 +310,8 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(161257),	-- Resilient Outcast's Warhelm
 				i(161261),	-- Resilient Outcast's Mantle
 				i(161266),	-- Resilient Outcast's Chestguard
+				--i(161278),	-- Resilient Outcast's Leggings
+				--i(161282),	-- Resilient Outcast's Footguards
 			}),
 			filter(PLATE, {
 				i(161154),	-- Exiled Veteran's Headguard
@@ -284,6 +320,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(161262),	-- Exiled Veteran's Shoulderguards
 				i(161267),	-- Exiled Veteran's Chestplate
 				i(161279),	-- Exiled Veteran's Greaves
+				--i(161283),	-- Exiled Veteran's Sabatons
 			}),
 		}),
 		n(WEAPONS, {
@@ -295,22 +332,29 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		-- Zuldazar
 		n(ARMOR, {
 			filter(CLOTH, {
+				--i(158657),	-- Zanchuli Shoes
 				i(158663),	-- Zanchuli Grasps
+				--i(158675),	-- Zanchuli Bracelets
 				i(161144),	-- Zanchuli Vestments
 				i(161149),	-- Zanchuli Shoulderpads
 				i(161224),	-- Zanchuli Hood
 				i(161228),	-- Zanchuli Amice
 				i(161232),	-- Zanchuli Robes
+				--i(161236),	-- Zanchuli Bracers
+				--i(161242),	-- Zanchuli Belt
+				--i(161246),	-- Zanchuli Woolies
 				i(161248),	-- Zanchuli Pantaloons
 			}),
 			filter(LEATHER, {
 				i(158655),	-- Jambani Boots
 				i(158665),	-- Jambani Grasps
+				--i(158672),	-- Jambani Bracers
 				i(161145),	-- Jambani Tunic
 				i(161151),	-- Jambani Mantle
 				i(161225),	-- Jambani Guise
 				i(161229),	-- Jambani Shoulderguards
 				i(161233),	-- Jambani Chestpiece
+				--i(161237),	-- Jambani Bands
 				i(161243),	-- Jambani Cincture
 				i(161249),	-- Jambani Britches
 				i(161250),	-- Jambani Leggings
@@ -330,11 +374,17 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 				i(161252),	-- Torcalin Pants
 			}),
 			filter(PLATE, {
+				--i(158658),	-- Rastari Greatboots
+				--i(158664),	-- Rastari Grips
+				--i(158674),	-- Rastari Wristwraps
 				i(161147),	-- Rastari Chestguard
 				i(161150),	-- Rastari Spaulders
 				i(161227),	-- Rastari Greathelm
 				i(161231),	-- Rastari Shoulderplates
 				i(161235),	-- Rastari Chestplate
+				--i(161239),	-- Rastari Armbands
+				--i(161245),	-- Rastari Cincture
+				--i(161253),	-- Rastari Greaves
 				i(161254),	-- Rastari Pants
 			}),
 		}),

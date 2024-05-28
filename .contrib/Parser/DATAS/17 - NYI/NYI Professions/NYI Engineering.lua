@@ -27,6 +27,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(37589),	-- Hyper-Powered Mote Extractor
 				}),
 			}),
+			expansion(EXPANSION.WOD, {
+				-- 6.0.2
+				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					i(109168, {	-- Shrediron's Shredder
+						["bonusID"] = 585,
+					}),
+				})),
+			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
 				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
