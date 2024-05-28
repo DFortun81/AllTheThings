@@ -1433,6 +1433,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 		}),
 	})),
 	-- Pet Tamers (This section is work in progress - Danny Donkey)
+	-- Old World tamers:
 	-- Lvl 2
 	n(64330, {	-- Julia Stevens <Aspiring Pet Tamer>
 		["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
@@ -1551,6 +1552,27 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 	}),
 	n(66466, {	-- Stone Cold Trixxy <Grand Master Pet Tamer>
 		["coord"] = { 65.6, 64.6, WINTERSPRING },
-		["description"] = "Trixxy's pets are level 19 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets like Mechanical Pandaren Dragonling.",
+		["description"] = "Trixxy's pets are level 19 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	-- Outland tamers:
+	-- Lvl 20
+	n(66550, {	-- Nicki Tinytech <Master Pet Tamer>
+		["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
+		["description"] = "Nicki's pets are level 20 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	-- Lvl 21
+	n(66551, {	-- Ras'an <Master Pet Tamer>
+		["coord"] = { 17.2, 50.6, ZANGARMARSH },
+		["description"] = "Ras'an's pets are level 21 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	-- Lvl 22
+	n(66552, {	-- Narrok <Master Pet Tamer>
+		["coord"] = { 61.0, 49.4, NAGRAND },
+		["description"] = "Narrok's pets are level 22 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	-- Lvl 23
+	n(66553, {	-- Morulu The Elder <Master Pet Tamer>
+		["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
+		["description"] = "Morulu's pets are level 23 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Aquatic - see above.\n3. Aquatic - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
 	}),
 })));

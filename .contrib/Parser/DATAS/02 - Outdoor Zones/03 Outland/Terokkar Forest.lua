@@ -272,7 +272,7 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(514, {	-- Flayer Youngling (PET!)
-							["description"] = "Found in Razorthorn Rise on the border of Hellfire and Terokkar.",
+							["description"] = "Found in Razorthorn Rise, on the mountain range between Hellfire Peninsula and Terokkar Forest. Flying is required.",
 						}),
 						pet(517),	-- Warpstalker Hatchling (PET!)
 					},

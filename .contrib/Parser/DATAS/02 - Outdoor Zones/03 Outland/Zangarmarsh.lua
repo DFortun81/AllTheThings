@@ -332,11 +332,6 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				petbattles({
-					n(66551, {	-- Ras'an <Master Pet Tamer>
-						["coord"] = { 17.2, 50.6, ZANGARMARSH },
-					}),
-				}),
 				n(PROFESSIONS, {
 					n(18911, {	-- Juno Dufrain <Fishing Trainer>
 						["coord"] = { 78.0, 66.0, ZANGARMARSH },

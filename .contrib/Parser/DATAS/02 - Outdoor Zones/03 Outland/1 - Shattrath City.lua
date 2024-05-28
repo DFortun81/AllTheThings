@@ -690,11 +690,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.08, 41.12, SHATTRATH_CITY },
 					}),
 				}),
-				petbattles({
-					n(66553, {	-- Morulu The Elder <Master Pet Tamer>
-						["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
-					}),
-				}),
 				n(PROFESSIONS, {
 					prof(BLACKSMITHING, {
 						n(20124, {	-- Kradu Grimblade <Weaponsmith Trainer>

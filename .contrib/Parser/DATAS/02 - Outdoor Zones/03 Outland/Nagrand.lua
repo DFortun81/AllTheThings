@@ -377,11 +377,6 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				petbattles({
-					n(66552, {	-- Narrok <Master Pet Tamer>
-						["coord"] = { 61.0, 49.4, NAGRAND },
-					}),
-				}),
 				n(QUESTS, {
 					q(11042, {	-- A Mystifying Vision
 						["qg"] = 23268,	-- Seer Jovar

@@ -389,11 +389,6 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				petbattles({
-					n(66550, {	-- Nicki Tinytech <Master Pet Tamer>
-						["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
-					}),
-				}),
 				n(PROFESSIONS, {
 					prof(ALCHEMY, {
 						["crs"] = {
