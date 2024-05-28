@@ -64,6 +64,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 			}),
+			n(QUESTS, {
+				q(80430, {	-- Aid the August Celestials
+					["isDaily"] = true,
+					["provider"] = { "n", 61584 },	-- Sentinel Commander Qipan
+					["coord"] = { 39.3, 62.0, TOWNLONG_STEPPES },
+				}),
+				q(80426, {	-- Aid the Shado-Pan
+					["isDaily"] = true,
+					["provider"] = { "n", 63009 },	-- Master Snowdrift
+					["coord"] = { 49.3, 70.6, TOWNLONG_STEPPES },
+				}),
+			}),
 			n(ZONE_REWARDS, {
 				filter(CLOTH, {
 					i(213687),	-- Mistwalker's Amice

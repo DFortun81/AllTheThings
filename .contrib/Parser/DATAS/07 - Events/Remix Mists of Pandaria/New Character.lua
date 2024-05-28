@@ -117,5 +117,11 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(81582),	-- shortly after turn in qID 29759 (Kung Din) or level up to 16 /Scarlet or level up / Level 16 in scenario
 		q(81583),	-- levelup to 17 or crit (The Waterspeaking Ceremony) for achievement 19882 probably level / Level 17
 		q(81584),	-- late for level up 18 or after qID 29888 (Seek Out the Lorewalker) probably level / Level 18
+		--
+		q(81659,{["isDaily"]=true,}),	-- after turn in questID 80320 (Aid the Klaxxi)
+		q(81664,{["isDaily"]=true,}),	-- after turn in questID 80441 (Aid the Order of the Cloud Serpent)
+		q(81662,{["isDaily"]=true,}),	-- after turn in questID 80429 (Aid the August Celestials) or questID 80430 (Aid the August Celestials)
+		q(81658,{["isDaily"]=true,}),	-- after turn in questID 80427 (Aid the Golden Lotus)
+		q(81660,{["isDaily"]=true,}),	-- after turn in questID 80426 (Aid the Shado-Pan)
 	})),
 });

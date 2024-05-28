@@ -57,6 +57,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 			}),
+			n(QUESTS, {
+				q(80427, {	-- Aid the Golden Lotus
+					["isDaily"] = true,
+					["provider"] = { "n", 58919 },	-- Anji Autumnlight
+					["coord"] = { 21.3, 71.7, VALE_OF_ETERNAL_BLOSSOMS },
+				}),
+			}),
 			n(ZONE_REWARDS, {
 				filter(CLOTH, {
 					i(213987),	-- Cloudscorcher's Bracers

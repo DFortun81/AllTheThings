@@ -272,7 +272,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["provider"] = { "n", 213664 },	-- Momentus
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
 				}),
-
+				-- daily turn in
+				q(80441, {	-- Aid the Order of the Cloud Serpent
+					["isDaily"] = true,
+					["provider"] = { "n", 58564 },	-- Elder Anli
+					["coord"] = { 57.6, 44.9, THE_JADE_FOREST },
+				}),
+				q(80429, {	-- Aid the August Celestials
+					["isDaily"] = true,
+					["provider"] = { "n", 57319 },	-- Elder Sage Storm-Sing
+					["coord"] = { 53.8, 61.9, THE_JADE_FOREST },
+				}),
 			}),
 			n(ZONE_REWARDS, {
 				n(ARMOR, {
