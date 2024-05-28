@@ -111,7 +111,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215980),	-- Binan Falchion
 					i(215803),	-- Dragonguard's Glaive (drop)
 					i(215763),	-- Hozen Basher
-					i(215772),	-- Jerthud, Hand of the Savior (either here or dread wastes)
+					i(215621),	-- Imperial Warknife
 					i(215894),	-- Jinyu Conduit
 					i(215987),	-- Jinyu Greatblade
 					i(215758),	-- Saurok Scepter

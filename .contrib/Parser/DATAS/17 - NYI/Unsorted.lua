@@ -5999,7 +5999,6 @@ root(ROOTS.Unsorted, {
 					i(215903),	-- Klaxxi Sword
 					i(215904),	-- Klaxxi Shortsword
 					i(215910),	-- Xifeng, Longblade of the Guardian
-					i(215911),	-- Xifeng, Longblade of the Guardian
 					i(215912),	-- Xifeng, Longblade of the Guardian
 					i(215913),	-- Kil'ruk's Hateful Blade
 					i(215914),	-- Kil'ruk's Hateful Blade

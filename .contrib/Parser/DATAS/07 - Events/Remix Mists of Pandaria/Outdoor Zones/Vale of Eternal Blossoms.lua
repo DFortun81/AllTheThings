@@ -134,11 +134,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215742),	-- Faded Forest Crusher (drop)
 					i(215865),	-- Fogspeaker Conduit
 					i(215764),	-- Hozen Mace
-					i(215621),	-- Imperial Warknife (could be from ToT LFR or SoO LFR)
+					i(215620),	-- Imperial Dagger
 					i(215947),	-- Inkgill Sword
 					i(215740),	-- Jinyu Bonebreaker
 					i(215989),	-- Jinyu Flamberge
-					i(215539),	-- Jinyu Longbow (daily dungeon)
+					i(215539),	-- Jinyu Longbow
 					i(215896),	-- Jinyu Spire (drop)
 					i(215532),	-- Mogu Warbow
 					i(215749),	-- Ordo Basher (drop)
