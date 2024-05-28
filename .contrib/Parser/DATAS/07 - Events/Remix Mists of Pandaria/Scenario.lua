@@ -98,6 +98,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215607),	-- Ceremonial Spike (maybe hc only?)
 				i(215880),	-- Darkstaff of Ruin (normal scenario)
 				i(215537),	-- Dawnwatcher's Warbow
+				i(216007),	-- Deathspeaker Channel
 				i(215884),	-- Firedancer's Staff
 				i(215881),	-- Gustspinner's Staff
 				i(215647),	-- Ka'eng, Fang of Shadow

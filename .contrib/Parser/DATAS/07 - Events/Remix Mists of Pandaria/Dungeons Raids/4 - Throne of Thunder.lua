@@ -140,6 +140,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				d(DIFFICULTY.RAID.LFR, {
 					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
 						filter(CLOTH, {
+							-- PRIEST
+							--i(213876),	-- Belt of the Exorcist
+							--i(213874),	-- Bracers of the Exorcist
+							--i(213873),	-- Cord of the Exorcist
+							--i(213875),	-- Cuffs of the Exorcist
+							--i(213869),	-- Gloves of the Exorcist
+							i(213870),	-- Hood of the Exorcist
+							--i(213871),	-- Leggings of the Exorcist
+							i(213868),	-- Sandals of the Exorcist
+							i(213872),	-- Shoulderpads of the Exorcist
 							-- MAGE
 							i(213803),	-- Raiment of the Chromatic Hydra
 							i(213804),	-- Treads of the Chromatic Hydra
@@ -257,10 +267,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216466),	-- Suen-Wo, Spire of the Rising Sun
 						i(216403),	-- Tia-Tia, the Spinning Star
 						i(216428),	-- Torall, the Emperor's Scepter
+						i(216431),	-- Torall, the Emperor's Scepter (ToT LFR (1st wing))
 						i(215542),	-- Tortoiseshell Longbow (Sisters)
 						i(215545),	-- Tortoiseshell Longbow
 						i(215964),	-- Qon's Iron Decree
-						i(215773),	-- Zeeg's Ancient Kegbreaker
+						i(215773),	-- Zeeg's Ancient Kegbreaker (ToT LFR (2nd wing))
 					})),
 					header(HEADERS.Achievement, 8069, {	-- Last Stand of the Zandalari
 						e(827, {	-- Jin'rokh the Breaker

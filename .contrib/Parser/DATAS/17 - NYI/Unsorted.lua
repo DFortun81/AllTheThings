@@ -6144,7 +6144,6 @@ root(ROOTS.Unsorted, {
 					i(216003),	-- Waterweaver's Wand
 					i(216004),	-- Blazecaster's Wand
 					i(216005),	-- Wand of Spiritweaving
-					i(216007),	-- Deathspeaker Channel
 					i(216008),	-- Necromantic Channel
 					i(216009),	-- Venomlord's Skull Wand
 					i(216010),	-- Venomlord's Skull Wand
@@ -6170,7 +6169,6 @@ root(ROOTS.Unsorted, {
 					i(216425),	-- Acid-Spine Bonebreaker
 					i(216427),	-- Acid-Spine Bonebreaker
 					i(216430),	-- Torall, the Emperor's Scepter
-					i(216431),	-- Torall, the Emperor's Scepter
 					i(216432),	-- Acid-Spine Bonebreaker
 					i(216434),	-- Hammer of the Dawn
 					i(216437),	-- Hammer of the Dawn
