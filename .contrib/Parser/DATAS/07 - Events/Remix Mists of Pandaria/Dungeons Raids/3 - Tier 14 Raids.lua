@@ -312,17 +312,21 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215633),	-- Gara'kal, Claw of the Spiritbinder
 					i(215852),	-- Gao-Rei, Staff of the Protector
 					i(215698),	-- Grand Imperial Rifle
+					i(215968),	-- Greatsword of the Iron Legion
 					i(216413),	-- Iron Qon's Knife
 					i(215900),	-- Jalak's Spirit Staff
 					i(215855),	-- Jin'ya, Orb of the Watercaller
+					i(215929),	-- Kilrak, Fangs of Terror (MSV normal)
 					i(215932),	-- Kilrak, Fangs of Terror
 					i(215735),	-- Kri'tak, Scepter of the Swarm (confirmed 23.05.2024)
 					i(215737),	-- Kri'tak, Scepter of the Swarm (Alex: double up into LFR, MSV LFR 1st wing)
+					i(215935),	-- Loshan, Fear Incarnate (MSV normal)
 					i(215626),	-- Megaera's Fang
 					i(216529),	-- Protection of the Emperor
 					i(215799),	-- Qiang's Unbreakable Polearm
 					i(215586),	-- Regail's Fulminating Blade
 					i(215925),	-- Scimitar of Seven Stars
+					i(215926),	-- Scimitar of Seven Stars (MSV normal)
 					i(215506),	-- Shin'ka, the Tyrant's Greataxe
 					i(215592),	-- Soulsever
 					i(215887),	-- Soulwood Spire
@@ -331,6 +335,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216561),	-- Steelskin, Qiang's Bulwark
 					i(215694),	-- Taoren, the Malignant
 					i(215732),	-- Tihan, Scepter of the Sleeper
+					i(215998),	-- Torch of the Starspark (MSV normal)
 					i(215844),	-- Waterspeaker's Staff
 					i(215672),	-- Zephyrcall Censer
 				}),
@@ -447,6 +452,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				n(WEAPONS, {
+					i(215581),	-- Blade of the Seven Stars
 					i(215792),	-- Bo-Ris, Spear of Night
 					i(215841),	-- Brazier of the Eternal Empire
 					i(215907),	-- Dotharak, the Foebreaker

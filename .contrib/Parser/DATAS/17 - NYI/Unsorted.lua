@@ -5889,7 +5889,6 @@ root(ROOTS.Unsorted, {
 					i(215946),	-- Valiant's Honorblade
 					i(215469),	-- Haromm's Frozen Battleaxe
 					i(215472),	-- Haromm's Frozen Battleaxe
-					i(215476),	-- Malkorok's Headtaker
 					i(215477),	-- Korven's Crescent
 					i(215494),	-- Yaungol Cleaver
 					i(215496),	-- Yaungol Axe
@@ -5898,22 +5897,17 @@ root(ROOTS.Unsorted, {
 					i(215500),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215501),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
-					i(215512),	-- Wallwatcher's Poleaxe
 					i(215513),	-- Wallwatcher's Axe
 					i(215517),	-- Uroe, Harbinger of Fear
 					i(215519),	-- Uroe, Harbinger of Fear
 					i(215520),	-- Dagryn's Longbow
 					i(215521),	-- Dagryn's Longbow
-					i(215522),	-- Dagryn's Longbow
 					i(215523),	-- Dagryn's Longbow
-					i(215524),	-- Hisek's Longbow
 					i(215525),	-- Hisek's Longbow
-					i(215527),	-- Hisek's Longbow
 					i(215529),	-- Fang Kung, Emperor's Legacy
 					i(215533),	-- Marista Longbow
 					i(215534),	-- Shado-Pan Longbow
 					i(215539),	-- Jinyu Longbow
-					i(215540),	-- Jinyu Shortbow
 					i(215541),	-- Jinyu Warbow
 					i(215546),	-- Miracoran, the Dissonant Chord
 					i(215550),	-- Miracoran, the Dissonant Chord
@@ -5927,10 +5921,7 @@ root(ROOTS.Unsorted, {
 					i(215568),	-- Jinyu Dagger
 					i(215569),	-- Norushen's Dagger
 					i(215572),	-- Norushen's Dagger
-					i(215574),	-- Nazgrim's Shanker
 					i(215575),	-- Nazgrim's Shanker
-					i(215579),	-- Rik'kal's Bloody Blade
-					i(215581),	-- Blade of the Seven Stars
 					i(215599),	-- Mountainscaler Slicer
 					i(215606),	-- Firescribe Slicer
 					i(215607),	-- Ceremonial Spike
@@ -5945,20 +5936,16 @@ root(ROOTS.Unsorted, {
 					i(215640),	-- Barbs of the Rikkitun
 					i(215650),	-- Pandaren Claw
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
-					i(215655),	-- Amun-Thoth, Sul's Spiritrender
 					i(215657),	-- Hozen Conduit
-					i(215662),	-- Prophecies of Y'Shaarj
 					i(215670),	-- Sha-Touched Globule
 					i(215675),	-- Wakener's Lantern
 					i(215677),	-- Jinyu's Light
 					i(215678),	-- Grummle Lantern
 					i(215680),	-- Hope's Effigy
-					i(215682),	-- Swarmkeeper's Channel
 					i(215686),	-- Eye of the Hydra
 					i(215687),	-- Eye of the Hydra
 					i(215690),	-- Kor'kron Heavy Rifle
 					i(215691),	-- Kor'kron Heavy Rifle
-					i(215692),	-- Kor'kron Heavy Rifle
 					i(215699),	-- Grand Imperial Rifle
 					i(215701),	-- Jadewatch Rifle
 					i(215708),	-- Roar of the Quillen
@@ -5970,7 +5957,6 @@ root(ROOTS.Unsorted, {
 					i(215753),	-- Gao's Kegbreaker
 					i(215756),	-- Klaxxi Smasher
 					i(215759),	-- Saurok Mace
-					i(215760),	-- Saurok Breaker
 					i(215765),	-- Mace of Dark Animus
 					i(215768),	-- Mace of Dark Animus
 					i(215769),	-- Jerthud, Hand of the Savior
@@ -5983,30 +5969,23 @@ root(ROOTS.Unsorted, {
 					i(215813),	-- Shan-Dun, Breaker of Courage
 					i(215814),	-- Shan-Dun, Breaker of Courage
 					i(215826),	-- Spire of Supremacy
-					i(215827),	-- Rod of the Megantholithic Apparatus
 					i(215853),	-- Gao-Rei, Staff of the Protector
 					i(215864),	-- Torch of Dawn
 					i(215868),	-- Monastic Staff
-					i(215876),	-- Mistdancer's Rod
 					i(215877),	-- Cloudscorcher Staff
 					i(215888),	-- Soulwood Spire
-					i(215890),	-- Hopespreader's Staff
 					i(215898),	-- Jalak's Spirit Staff
 					i(215901),	-- Jalak's Spirit Staff
 					i(215902),	-- Klaxxi Scimitar
 					i(215903),	-- Klaxxi Sword
 					i(215904),	-- Klaxxi Shortsword
-					i(215910),	-- Xifeng, Longblade of the Guardian
-					i(215912),	-- Xifeng, Longblade of the Guardian
 					i(215913),	-- Kil'ruk's Hateful Blade
 					i(215914),	-- Kil'ruk's Hateful Blade
 					i(215916),	-- Kil'ruk's Hateful Blade
 					i(215921),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
-					i(215924),	-- Shao-Tien Saber
 					i(215937),	-- Imperial Wind Blade
 					i(215939),	-- Mogu Aspirant's Blade
-					i(215940),	-- Halcyon Blade
 					i(215945),	-- Binan Scimitar
 					i(215951),	-- Sha-Blighted Sword
 					i(215958),	-- Tian Monastery Edge
@@ -6015,14 +5994,10 @@ root(ROOTS.Unsorted, {
 					i(215962),	-- Qon's Iron Decree
 					i(215963),	-- Qon's Iron Decree
 					i(215967),	-- Soulblade of the Storm
-					i(215968),	-- Greatsword of the Iron Legion
 					i(215971),	-- Greatsword of Fallen Pride
 					i(215988),	-- Jinyu Greatsword
 					i(215991),	-- Zerat, Soulburner's Greatsword
 					i(215993),	-- Zerat, Soulburner's Greatsword
-					i(215994),	-- Mistspinner's Channel
-					i(215996),	-- Mistspinner's Channel
-					i(215998),	-- Torch of the Starspark
 					i(216001),	-- Mountainsage Rod
 					i(216002),	-- Grummle Rod
 					i(216003),	-- Waterweaver's Wand
@@ -6048,7 +6023,6 @@ root(ROOTS.Unsorted, {
 					i(216414),	-- Iron Qon's Knife
 					i(216415),	-- Iron Qon's Knife
 					i(216416),	-- Hozen Blade
-					i(216425),	-- Acid-Spine Bonebreaker
 					i(216427),	-- Acid-Spine Bonebreaker
 					i(216430),	-- Torall, the Emperor's Scepter
 					i(216432),	-- Acid-Spine Bonebreaker
@@ -6056,7 +6030,6 @@ root(ROOTS.Unsorted, {
 					i(216437),	-- Hammer of the Dawn
 					i(216439),	-- Pandaren Book
 					i(216442),	-- Pandaren Decorative Fan
-					i(216443),	-- Pandaren Ornate Fan
 					i(216444),	-- Pandaren Ritual Fan
 					i(216446),	-- Sphere of Arcing Lightning
 					i(216448),	-- Sphere of Arcing Lightning
@@ -6084,13 +6057,11 @@ root(ROOTS.Unsorted, {
 					i(216532),	-- Protection of the Emperor
 					i(216533),	-- Ironwood Shield
 					i(216534),	-- Ironwood Deflector
-					i(216536),	-- Ironwood Barrier
 					i(216537),	-- Mogu Lord's Deflector
 					i(216539),	-- Mogu Lord's Barrier
 					i(216541),	-- Pandaren Barrier
 					i(216546),	-- Visage of Dread
 					i(216548),	-- Visage of Dread
-					i(216550),	-- Visage of Dread
 					i(216553),	-- Norushen's Tower Shield
 					i(216554),	-- Norushen's Tower Shield
 					i(216555),	-- Shield of the Fallen General
@@ -6325,10 +6296,7 @@ root(ROOTS.Unsorted, {
 					i(208556),	-- Flicker Blossom
 				}),
 				n(WEAPONS, {
-					i(210343),	-- Gar'tok, Might of the Faithful
-					i(210640),	-- Icon of Hope
 					i(211162),	-- Klaxxi Longsword
-					i(210336),	-- Kor'kron Heavy Rifle
 					i(210643),	-- Mistspinner's Channel
 				}),
 				i(210906),	-- Timerunner's Amice

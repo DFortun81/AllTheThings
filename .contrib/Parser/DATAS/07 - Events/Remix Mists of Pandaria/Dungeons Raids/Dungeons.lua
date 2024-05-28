@@ -128,7 +128,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215882),	-- Lorewalker's Staff
 			i(215704),	-- Mantid Firebelcher
 			i(215684),	-- Mantid Tuning Fork
-			i(215613),	-- Mogu Lord's Blade
+			i(215613),	-- Mogu Lord's Blade (Gate heroic)
 			i(215604),	-- Mogu Severer
 			i(215879),	-- Mountainsage Spire
 			i(215705),	-- Penate's Pistol
@@ -145,11 +145,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215874),	-- Staff of Iron Will
 			i(215875),	-- Staff of Stolen Hope
 			i(216577),	-- Sutiru's Shield (Temple of the Jade Serpent normal)
+			i(215682),	-- Swarmkeeper's Channel (Scholo normal drop)
 			i(215784),	-- Taran Zhu's Bonebreaker
 			i(215645),	-- Tian Handblade
 			i(215608),	-- Tolakesh, Horn of Niuzao
 			i(215514),	-- Wallwatcher's Longaxe
-			i(216005),	-- Wand of Spiritweaving
+			i(216005),	-- Wand of Spiritweaving (Stormstout Brewery normal drop)
 			i(215612),	-- Yaungol Shanker
 			i(215955),	-- Zakai's Swarmslicer
 		}),

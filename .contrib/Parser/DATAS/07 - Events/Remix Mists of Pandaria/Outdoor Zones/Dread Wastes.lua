@@ -107,6 +107,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215596),	-- Jadestone Dagger
 					i(215772),	-- Jerthud, Hand of the Savior (either here or townlong)
 					i(215895),	-- Jinyu Rod
+					i(216536),	-- Ironwood Barrier
 					i(215639),	-- Mist Shaman's Knuckles
 					i(216538),	-- Mogu Lord's Bulwark
 					i(215617),	-- Pandaren Stabber

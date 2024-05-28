@@ -250,7 +250,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+						i(216425),	-- Acid-Spine Bonebreaker
 						i(215652),	-- Amun-Thoth, Sul's Spiritrender
+						i(215655),	-- Amun-Thoth, Sul's Spiritrender
 						i(216461),	-- Caduceus of Pure Moods
 						i(216463),	-- Dinomancer's Spire
 						i(215561),	-- Durumu's Gaze

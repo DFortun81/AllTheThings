@@ -320,12 +320,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215917),	-- Arcweaver Spellblade
 						i(215551),	-- Death Lotus Repeater
 						i(215835),	-- Drakebinder's Spire
+						i(210343),	-- Gar'tok, Might of the Faithful
+						i(215524),	-- Hisek's Longbow
+						i(210336),	-- Kor'kron Heavy Rifle
 						i(215663),	-- Lucky Cricket Cage
 						i(215473),	-- Malkorok's Headtaker
 						i(215573),	-- Nazgrim's Shanker
 						i(215831),	-- Pride's Gaze
 						i(215659),	-- Prophecies of Y'Shaarj
 						i(215577),	-- Rik'kal's Bloody Blade
+						i(215827),	-- Rod of the Megantholithic Apparatus
 						i(215830),	-- Rod of the Megantholithic Apparatus
 						i(215667),	-- Sha-Touched Globule
 						i(215628),	-- Softfoot's Iron Claw
@@ -529,6 +533,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215664),	-- Lucky Cricket Cage
 						i(215721),	-- Mace of the Old Ones
 						i(215474),	-- Malkorok's Headtaker
+						i(215994),	-- Mistspinner's Channel
+						i(215574),	-- Nazgrim's Shanker
 						i(215570),	-- Norushen's Dagger
 						i(215832),	-- Pride's Gaze
 						i(215660),	-- Prophecies of Y'Shaarj
@@ -544,6 +550,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215818),	-- Staff of Corrupted Waters
 						i(216547),	-- Visage of Dread
 						i(215502),	-- Xal'atoh, Malformed Image of Gorehowl
+						i(215910),	-- Xifeng, Longblade of the Guardian
 					})),
 					e(852, {	-- Immerseus
 						["crs"] = { 71543 },	-- Immerseus
@@ -724,8 +731,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(215919),	-- Arcweaver Spellblade
-						i(215837),	-- Drakebinder's Spire
+						i(215522),	-- Dagryn's Longbow
 						i(215552),	-- Death Lotus Repeater
+						i(215837),	-- Drakebinder's Spire
 						i(215778),	-- Gar'tok Might of the FaithFul
 						i(215973),	-- Greatsword of Fallen Pride
 						i(215796),	-- Halberd of Inner Darkness
@@ -739,6 +747,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215475),	-- Malkorok's Headtaker
 						i(215995),	-- Mistspinner's Channel
 						i(216552),	-- Noreshen Tower Shield
+						i(215579),	-- Rik'kal's Bloody Blade
 						i(215829),	-- Rod of the Megantholithic Apparatus
 						i(215669),	-- Sha-Touched Globule
 						i(215725),	-- Siegecrafter's Forge Drill
@@ -934,19 +943,27 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215779),	-- Gar'tok, Might of the Faithful
 						i(215974),	-- Greatsword of Fallen Pride
 						i(215797),	-- Halberd of Inner Darkness
+						i(215527),	-- Hisek's Longbow
 						i(215718),	-- Kardris' Scepter
+						i(215692),	-- Kor'kron Heavy Rifle
 						i(215480),	-- Korven's Crescent
 						i(215666),	-- Lucky Cricket Cage
 						i(215722),	-- Mace of the Old Ones
+						i(215476),	-- Malkorok's Headtaker
+						i(215996),	-- Mistspinner's Channel
 						i(215576),	-- Nazgrim's Shanker
 						i(215571),	-- Norushen's Dagger
 						i(215834),	-- Pride's Gaze
+						i(215662),	-- Prophecies of Y'Shaarj
 						i(215580),	-- Rik'kal's Bloody Blade
+						i(215924),	-- Shao-Tien Saber
 						i(215726),	-- Siegecrafter's Forge Drill
 						i(216558),	-- Shield of the Fallen General
 						i(215821),	-- Staff of Corrupted Waters
 						i(215714),	-- Sphere of Immerseus
+						i(216550),	-- Visage of Dread
 						i(215504),	-- Xal'atoh, Malformed Image of Gorehowl
+						i(215912),	-- Xifeng, Longblade of the Guardian
 					})),
 					e(852, {	-- Immerseus
 						["crs"] = { 71543 },	-- Immerseus

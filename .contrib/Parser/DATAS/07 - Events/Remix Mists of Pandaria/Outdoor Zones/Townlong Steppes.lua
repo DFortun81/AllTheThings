@@ -121,14 +121,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215871),	-- Amberweaver's Conduit
 					i(215870),	-- Amberweaver's Rod (drop)
 					i(215980),	-- Binan Falchion
+					i(215558),	-- Cloudbender's Crossbow (chest)
 					i(215803),	-- Dragonguard's Glaive (drop)
+					i(215890),	-- Hopespreader's Staff (drop)
 					i(215763),	-- Hozen Basher
 					i(215621),	-- Imperial Warknife
 					i(215894),	-- Jinyu Conduit
 					i(215987),	-- Jinyu Greatblade
+					i(215540),	-- Jinyu Shortbow (chest)
 					i(215758),	-- Saurok Scepter
+					i(215866),	-- Staff of Focus (drop)
 					i(215590),	-- Shomi's Shanker
 					i(215957),	-- Tian Monastery Saber
+					i(215700),	-- Trailseeker Longrifle (chest)
+					i(215512),	-- Wallwatcher's Poleaxe
 					i(215495),	-- Yaungol Hatchet
 				}),
 			}),

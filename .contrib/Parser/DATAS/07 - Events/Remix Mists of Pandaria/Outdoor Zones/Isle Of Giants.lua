@@ -97,6 +97,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					-- Most likely also shares with isle of thunder + timeless isle
 					i(216601),	-- Eyes of the Doomed
+					i(215772),	-- Jerthud, Hand of the Savior
 					i(215703),	-- Pandaren Rifle
 					i(215960),	-- Tian Monastery Scimitar
 				}),
