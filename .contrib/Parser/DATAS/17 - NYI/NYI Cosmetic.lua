@@ -124,7 +124,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				------ Tidecaller's Set ------
 				i(190700),	-- Tidecaller's Boots
 				i(190432),	-- Tidecaller's Bracers
-				i(190806),	-- Tidecaller's Cinch
 				i(190440),	-- Tidecaller's Crown
 				i(190067),	-- Tidecaller's Grips
 				i(190072),	-- Tidecaller's Hauberk

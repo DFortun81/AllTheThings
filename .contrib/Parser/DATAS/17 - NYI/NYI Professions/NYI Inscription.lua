@@ -227,7 +227,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(146383),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
 			})),
 		}),
-		i(169550),	-- REUSE ME [MTMM]
 	}),
 }));
 -- #endif

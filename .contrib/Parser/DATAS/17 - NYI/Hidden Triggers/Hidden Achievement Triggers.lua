@@ -2595,9 +2595,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(16881),	-- <DNT> Dragonscale Expedition Rank 13 (Character)
 			ach(16882),	-- <DNT> Dragonscale Expedition Rank 14 (Account)
 			ach(16883),	-- <DNT> Dragonscale Expedition Rank 14 (Character)
+			-- #if BEFORE 10.2.0
 			ach(16884, {	-- <DNT> Dragonscale Expedition Rank 15 (Account)
 				["timeline"] = { REMOVED_10_2_0 },
 			}),
+			-- #endif
 			ach(16885),	-- <DNT> Dragonscale Expedition Rank 15 (Character)
 			ach(16886),	-- <DNT> Dragonscale Expedition Rank 16 (Account)
 			ach(16887),	-- <DNT> Dragonscale Expedition Rank 16 (Character)
@@ -2657,9 +2659,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(16941),	-- <DNT> Iskaara Tuskarr Rank 13 (Character)
 			ach(16942),	-- <DNT> Iskaara Tuskarr Rank 14 (Account)
 			ach(16943),	-- <DNT> Iskaara Tuskarr Rank 14 (Character)
+			-- #if BEFORE 10.2.0
 			ach(16944, {	-- <DNT> Iskaara Tuskarr Rank 15 (Account)
 				["timeline"] = { REMOVED_10_2_0 },
 			}),
+			-- #endif
 			ach(16945),	-- <DNT> Iskaara Tuskarr Rank 15 (Character)
 			ach(16946),	-- <DNT> Iskaara Tuskarr Rank 16 (Account)
 			ach(16947),	-- <DNT> Iskaara Tuskarr Rank 16 (Character)
@@ -2709,9 +2713,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(16991),	-- <DNT> Valdrakken Accord Rank 13 (Character)
 			ach(16992),	-- <DNT> Valdrakken Accord Rank 14 (Account)
 			ach(16993),	-- <DNT> Valdrakken Accord Rank 14 (Character)
+			-- #if BEFORE 10.2.0
 			ach(16994, {	-- <DNT> Valdrakken Accord Rank 15 (Account)
 				["timeline"] = { REMOVED_10_2_0 },
 			}),
+			-- #endif
 			ach(16995),	-- <DNT> Valdrakken Accord Rank 15 (Character)
 			ach(16996),	-- <DNT> Valdrakken Accord Rank 16 (Account)
 			ach(16997),	-- <DNT> Valdrakken Accord Rank 16 (Character)
@@ -2781,9 +2787,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(17061),	-- <DNT> Maruuk Centaur Rank 13 (Character)
 			ach(17062),	-- <DNT> Maruuk Centaur Rank 14 (Account)
 			ach(17063),	-- <DNT> Maruuk Centaur Rank 14 (Character)
+			-- #if BEFORE 10.2.0
 			ach(17064, {	-- <DNT> Maruuk Centaur Rank 15 (Account)
 				["timeline"] = { REMOVED_10_2_0 },
 			}),
+			-- #endif
 			ach(17065),	-- <DNT> Maruuk Centaur Rank 15 (Character)
 			ach(17066),	-- <DNT> Maruuk Centaur Rank 16 (Account)
 			ach(17067),	-- <DNT> Maruuk Centaur Rank 16 (Character)
@@ -2882,9 +2890,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(17753),	-- <DNT> Loamm Niffen Rank 12 (Account) \\ <DNT> Loamm Niffen Rank 12
 			ach(17754),	-- <DNT> Loamm Niffen Rank 13 (Account) \\ <DNT> Loamm Niffen Rank 13
 			ach(17755),	-- <DNT> Loamm Niffen Rank 14 (Account) \\ <DNT> Loamm Niffen Rank 14
+			-- #if BEFORE 10.2.0
 			ach(17756, {	-- <DNT> Loamm Niffen Rank 15 (Account) \\ <DNT> Loamm Niffen Rank 15
 				["timeline"] = { REMOVED_10_2_0 },
 			}),
+			-- #endif
 			ach(17757),	-- <DNT> Loamm Niffen Rank 16 (Account) \\ <DNT> Loamm Niffen Rank 16
 			ach(17758),	-- <DNT> Loamm Niffen Rank 17 (Account) \\ <DNT> Loamm Niffen Rank 17
 			ach(17759),	-- <DNT> Loamm Niffen Rank 18 (Account) \\ <DNT> Loamm Niffen Rank 18

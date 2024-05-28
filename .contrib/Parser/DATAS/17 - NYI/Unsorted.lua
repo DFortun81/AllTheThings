@@ -6728,7 +6728,6 @@ root(ROOTS.Unsorted, {
 				i(178463),	-- Bestial Epigraph
 				i(182249),	-- Bindings of Fleshcrafting
 				i(172889),	-- Blackthorn Antidote
-				i(177837),	-- Bloodtusk Skull
 				i(173700),	-- Bonebinder Zal's Key
 				i(179317),	-- Bonemetal
 				i(173380),	-- Book of the Unspeakable
@@ -6748,7 +6747,6 @@ root(ROOTS.Unsorted, {
 				i(136851),	-- Commander Domitille's Helm
 				i(180785),	-- Condensed Essence
 				i(178142),	-- Condensed Stygia
-				i(174233),	-- Construct Field Plan
 				i(178875),	-- Corpsehound Whistle
 				i(175839),	-- Corrupted Anima
 				i(167209),	-- Crude Map
@@ -6823,7 +6821,6 @@ root(ROOTS.Unsorted, {
 				i(172220),	-- Mirror Fragment
 				i(180800),	-- Misshapen Cypher of Relocation
 				i(180262),	-- Missing Eye
-				i(183725),	-- Moth Net
 				i(173899),	-- Mysterious Hooks
 				i(178729),	-- Necromancy Focus
 				i(171146),	-- Necrotic Deathward
