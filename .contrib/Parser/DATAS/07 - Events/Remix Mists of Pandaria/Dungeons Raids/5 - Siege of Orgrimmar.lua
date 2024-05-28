@@ -536,6 +536,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215828),	-- Rod of the Megantholithic Apparatus
 						i(215668),	-- Sha-Touched Globule
 						i(215922),	-- Shao-Tien Saber
+						i(216556),	-- Shield of the Fallen General
 						i(215724),	-- Siegecrafter's Forge Drill
 						i(215629),	-- Softfoot's Iron Claw
 						i(215712),	-- Sphere of Immerseus
