@@ -5937,7 +5937,6 @@ root(ROOTS.Unsorted, {
 					i(215610),	-- Dreadpriest's Dagger
 					i(215611),	-- Lightdrinker Dagger
 					i(215614),	-- Klaxxi Slicer
-					i(215615),	-- Amber Blade
 					i(215616),	-- Pandaren Warknife
 					i(215618),	-- Pandaren Triblade
 					i(215622),	-- Imperial Longknife

@@ -327,6 +327,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215592),	-- Soulsever
 					i(215887),	-- Soulwood Spire
 					i(216447),	-- Sphere of Arcing Lightning
+					i(215976),	-- Starslicer (HoF normal)
 					i(216561),	-- Steelskin, Qiang's Bulwark
 					i(215694),	-- Taoren, the Malignant
 					i(215732),	-- Tihan, Scepter of the Sleeper

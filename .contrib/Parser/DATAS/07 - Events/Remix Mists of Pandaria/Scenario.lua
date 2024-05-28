@@ -88,6 +88,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(WEAPONS, {
+				i(215615),	-- Amber Blade (scenario cache)
 				i(215492),	-- Axe of Iron Might (normal scenario, drop)
 				i(215986),	-- Blade of Broken Chains (heroic scenario, final boss drop)
 				i(215757),	-- Carapace Crusher (maybe hc only?)
