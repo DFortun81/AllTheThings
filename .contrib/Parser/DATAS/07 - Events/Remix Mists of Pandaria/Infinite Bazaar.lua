@@ -1327,7 +1327,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 								i(217813),	-- Dreadsquall Hunter's Serrator
 							},
 						}),
-						i(217834, {	--  Ensemble: Dreadsquall Hunter's Camouflage
+						iensemble(217834, {	--  Ensemble: Dreadsquall Hunter's Camouflage
 							["classes"] = HUNTER,
 							["cost"] = {{"c", BRONZE, 4000}},
 							["_g"] = {
