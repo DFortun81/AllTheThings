@@ -134,6 +134,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216569),	-- Deflector of Orbiss
 					i(215862),	-- Engraved Spire
 					i(211151),	-- Fran's Repeater
+					i(215940),	-- Halcyon Blade
 					i(216419),	-- Hozen Knife
 					i(215861),	-- Instructor's Spire (quest reward)
 					i(215488),	-- Mountainscaler Hatchet

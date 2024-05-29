@@ -944,6 +944,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215779),	-- Gar'tok, Might of the Faithful
 						i(215974),	-- Greatsword of Fallen Pride
 						i(215797),	-- Halberd of Inner Darkness
+						i(215472),	-- Haromm's Frozen Battleaxe
 						i(215527),	-- Hisek's Longbow
 						i(215718),	-- Kardris' Scepter
 						i(215692),	-- Kor'kron Heavy Rifle
