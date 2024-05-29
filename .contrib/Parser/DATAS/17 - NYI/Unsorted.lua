@@ -5890,7 +5890,6 @@ root(ROOTS.Unsorted, {
 					i(215469),	-- Haromm's Frozen Battleaxe
 					i(215472),	-- Haromm's Frozen Battleaxe
 					i(215477),	-- Korven's Crescent
-					i(215494),	-- Yaungol Cleaver
 					i(215496),	-- Yaungol Axe
 					i(215497),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215498),	-- Kura-Kura, Kazra'jin's Headtaker
@@ -5991,7 +5990,7 @@ root(ROOTS.Unsorted, {
 					i(215958),	-- Tian Monastery Edge
 					i(215959),	-- Tian Monastery Sword
 					i(215961),	-- Qon's Iron Decree
-					i(215962),	-- Qon's Iron Decree
+
 					i(215963),	-- Qon's Iron Decree
 					i(215967),	-- Soulblade of the Storm
 					i(215971),	-- Greatsword of Fallen Pride
@@ -6052,7 +6051,6 @@ root(ROOTS.Unsorted, {
 					i(216478),	-- Pandaren Flamberge
 					i(216480),	-- Pandaren Greatblade
 					i(216481),	-- Pandaren Greatsword
-					i(216530),	-- Protection of the Emperor
 					i(216531),	-- Protection of the Emperor
 					i(216532),	-- Protection of the Emperor
 					i(216533),	-- Ironwood Shield
@@ -6068,7 +6066,7 @@ root(ROOTS.Unsorted, {
 					i(216557),	-- Shield of the Fallen General
 					i(216560),	-- Steelskin, Qiang's Bulwark
 					i(216562),	-- Steelskin, Qiang's Bulwark
-					i(216564),	-- Gaze of the Ancient
+
 					i(216565),	-- Gaze of the Ancient
 					i(216567),	-- Dreadwood Bulwark
 					i(216571),	-- Tian Deflector

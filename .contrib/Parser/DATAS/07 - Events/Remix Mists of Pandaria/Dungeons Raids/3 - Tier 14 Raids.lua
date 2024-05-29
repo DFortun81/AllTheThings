@@ -147,6 +147,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215635),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
 					i(215851),	-- Gao-Rei, Staff of the Protector (MSV LFR / HoF LFR)
 					i(216566),	-- Gaze of the Ancient (MSV LFR)
+					i(216564),	-- Gaze of the Ancient
 					i(215697),	-- Grand Imperial Rifle (HoF LFR)
 					i(211160),	-- Greatsword of the Iron Legion
 					i(215854),	-- Jin'ya, Orb of the Watercaller (MSV LFR / HoF LFR)

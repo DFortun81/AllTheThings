@@ -536,6 +536,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215994),	-- Mistspinner's Channel
 						i(215574),	-- Nazgrim's Shanker
 						i(215570),	-- Norushen's Dagger
+						i(216551),	-- Norushen's Tower Shield
 						i(215832),	-- Pride's Gaze
 						i(215660),	-- Prophecies of Y'Shaarj
 						i(215578),	-- Rik'kal's Bloody Blade

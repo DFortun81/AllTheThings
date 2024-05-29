@@ -159,6 +159,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215514),	-- Wallwatcher's Longaxe
 					i(215782),	-- Wasteland Maul
 					i(215943),	-- Wasteland Scimitar
+					i(215494),	-- Yaungol Cleaver
 				}),
 			}),
 		},

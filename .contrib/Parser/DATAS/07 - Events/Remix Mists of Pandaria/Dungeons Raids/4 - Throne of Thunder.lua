@@ -469,7 +469,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215499),	-- Kura-Kura, Kazra'jin's Headtaker
 						i(215767),	-- Mace of Dark Animus
 						i(215547),	-- Miracoran, the Dissonant Chord
-						i(216551),	-- Norushen's Tower Shield
+						i(215962),	-- Qon's Iron Decree
 						i(215709),	-- Roar of the Quillen
 						i(215812),	-- Shan-Dun, Breaker of Courage
 						i(216015),	-- Shellsplitter Battleaxe
