@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser.csproj", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Item DB Compiler", "..\Item DB Compiler\Item DB Compiler.csproj", "{5BC33C43-A046-4716-AD91-1CB1DEDCB5AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVCleaner", "..\CSVCleaner\CSVCleaner.csproj", "{97F33281-E45C-4940-9275-987C16854C2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVCleaner", "..\CSVCleaner\CSVCleaner.csproj", "{97F33281-E45C-4940-9275-987C16854C2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

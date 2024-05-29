@@ -29,12 +29,13 @@ end
 local function GetCurrentMapID()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
 	app.RealMapID = originalMapID
+	-- app.PrintDebug("RealMapID",originalMapID)
 	if originalMapID then
 		local remap = app.MapRemapping[originalMapID];
 		if not remap then return originalMapID; end
 
 		-- local info = C_Map_GetMapInfo(originalMapID);
-		--print("GetCurrentMapID (original): ", originalMapID, info and info.name, not not remap);
+		-- app.PrintDebug("GetCurrentMapID (original): ", originalMapID, info and info.name, not not remap);
 
 		local substitutions = remap.artIDs;
 		if substitutions then
@@ -67,7 +68,7 @@ local function GetCurrentMapID()
 			for areaID,mapID in pairs(substitutions) do
 				local info = C_Map_GetAreaInfo(areaID);
 				if info and zoneTexts[info] then
-					--print(" SUBBED (areaID): ", areaID, info, mapID);
+					-- app.PrintDebug(" SUBBED (areaID): ", areaID, info, mapID);
 					return mapID;
 				end
 			end
@@ -95,7 +96,7 @@ local function GetCurrentMapID()
 		if substitutions then
 			for name,mapID in pairs(substitutions) do
 				if zoneTexts[name] then
-					--print(" SUBBED (name): ", name, info, mapID);
+					-- app.PrintDebug(" SUBBED (name): ", name, info, mapID);
 					return mapID;
 				end
 			end
@@ -120,7 +121,7 @@ local function GetCurrentMapID()
 						end
 					end
 					if closestMapID then
-						--print(" SUBBED (closest): ", closestMapID);
+						-- app.PrintDebug(" SUBBED (closest): ", closestMapID);
 						return closestMapID;
 					end
 				end
@@ -146,7 +147,7 @@ local function GetCurrentMapID()
 				for areaID,mapID in pairs(substitutions) do
 					local info = C_Map_GetAreaInfo(areaID);
 					if info and zoneTexts[info] then
-						--print(" SUBBED (areaID): ", areaID, info, mapID);
+						-- app.PrintDebug(" SUBBED (areaID): ", areaID, info, mapID);
 						return mapID;
 					end
 				end
@@ -155,7 +156,7 @@ local function GetCurrentMapID()
 			if substitutions then
 				for name,mapID in pairs(substitutions) do
 					if zoneTexts[name] then
-						--print(" SUBBED (name): ", name, info, mapID);
+						-- app.PrintDebug(" SUBBED (name): ", name, info, mapID);
 						return mapID;
 					end
 				end
@@ -175,11 +176,11 @@ local function GetMapName(mapID)
 		return "Map ID #???";
 	end
 end
-local UpdateLocationCoroutine;
+local UpdateLocation
 if app.GameBuildVersion < 30000 then
 	-- Before Wrath Classic we didn't have mapIDs in the world proper, so ATT had to make a guess.
 	-- This relied on the map name and stuff.
-	UpdateLocationCoroutine = function()
+	local UpdateLocationCoroutine = function()
 		-- Wait a second, will ya? The position detection is BAD.
 		for i=1,30,1 do coroutine.yield(); end
 
@@ -196,14 +197,18 @@ if app.GameBuildVersion < 30000 then
 			app.HandleEvent("OnCurrentMapIDChanged");
 		end
 	end
+	UpdateLocation = function()
+		app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
+	end
 else
+	local Callback, DelayedCallback = app.CallbackHandlers.Callback, app.CallbackHandlers.DelayedCallback
 	-- After Wrath Classic you don't need to wait for a bit before checking.
-	UpdateLocationCoroutine = function()
+	local function RawUpdateLocation()
 		-- Acquire the new map ID.
-		local mapID = GetCurrentMapID();
-		while not mapID do
-			coroutine.yield();
-			mapID = GetCurrentMapID();
+		local mapID = GetCurrentMapID() or 0
+		if mapID == 0 then
+			Callback(RawUpdateLocation)
+			return
 		end
 		if CurrentMapID ~= mapID then
 			CurrentMapID = mapID;
@@ -212,12 +217,15 @@ else
 			app.HandleEvent("OnCurrentMapIDChanged");
 		end
 	end
-end
-local function UpdateLocation()
-	app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
+	-- Some of these location events trigger tons of times all at once
+	UpdateLocation = function()
+		DelayedCallback(RawUpdateLocation, 0.25)
+	end
 end
 app.AddEventHandler("OnReady", UpdateLocation);
 app.AddEventRegistration("NEW_WMO_CHUNK", UpdateLocation);
+app.AddEventRegistration("WAYPOINT_UPDATE", UpdateLocation);
+app.AddEventRegistration("SCENARIO_UPDATE", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED_INDOORS", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED_NEW_AREA", UpdateLocation);
@@ -836,7 +844,7 @@ local function RefreshSavesCallback()
 		AfterCombatCallback(RefreshSavesCallback);
 		return;
 	end
-	
+
 	-- Make sure there's info available to check save data
 	local saves = GetNumSavedInstances();
 	if saves and saves < 1 then

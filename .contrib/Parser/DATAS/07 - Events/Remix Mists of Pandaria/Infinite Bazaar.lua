@@ -16,7 +16,10 @@ INFINITE_BAZARR = createHeader({
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(INFINITE_BAZARR, {
 		["coords"] = {
+			{ 42.8, 27.5, THE_JADE_FOREST },
+			{ 69.6, 53.1, KUN_LAI_SUMMIT },
 			{ 26.0, 49.0, 391 },	-- Shrine of Two Moons
+			{ 72.0, 47.2, 393 },	-- Shrine of Seven Stars
 		},
 		["g"] = {
 			n(219031, {	-- Aeonicus <Raid Finder Apparel>

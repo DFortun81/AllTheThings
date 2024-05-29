@@ -656,10 +656,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+						i(216432),	-- Acid-Spine Bonebreaker
 						i(215771),	-- Jerthud, Hand of the Savior
+						i(216408),	-- Fyn's Dagger
 						i(216436),	-- Hammer of the Dawn
+						i(215497),	-- Kura-Kura, Kazra'jin's Headtaker
 						i(215548),	-- Miracoran, the Dissonant Chord
+						i(215963),	-- Qon's Iron Decree
 						i(216013),	-- Shellsplitter Battleaxe
+						i(215967),	-- Soulblade of the Storm
+						i(215888),	-- Soulwood Spire
 						i(216468),	-- Suen-Wo, Spire of the Rising Sun
 						i(215544),	-- Tortoiseshell Longbow
 					})),

@@ -59,7 +59,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(QUESTS, {
 				q(80427, {	-- Aid the Golden Lotus
-					["isDaily"] = true,
+					["repeatable"] = true,
 					["provider"] = { "n", 58919 },	-- Anji Autumnlight
 					["coord"] = { 21.3, 71.7, VALE_OF_ETERNAL_BLOSSOMS },
 				}),
@@ -141,6 +141,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215872),	-- Amberweaver's Spire (drop)
 					i(215742),	-- Faded Forest Crusher (drop)
 					i(215865),	-- Fogspeaker Conduit
+					i(215658),	-- Hozen Effigy
 					i(215764),	-- Hozen Mace
 					i(215620),	-- Imperial Dagger
 					i(215947),	-- Inkgill Sword
@@ -148,9 +149,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215989),	-- Jinyu Flamberge
 					i(215539),	-- Jinyu Longbow
 					i(215896),	-- Jinyu Spire (drop)
+					i(215643),	-- Klaxxi Pincers (drop)
 					i(215532),	-- Mogu Warbow
 					i(215749),	-- Ordo Basher (drop)
 					i(215651),	-- Pandaren Fist
+					i(215618),	-- Pandaren Triblade
 					i(215981),	-- Red Crane Greatsword
 					i(215760),	-- Saurok Breaker
 					i(215802),	-- Spear of Feral Rage

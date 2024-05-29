@@ -5847,30 +5847,11 @@ root(ROOTS.Unsorted, {
 						i(220972),	-- Shaded Wood Vest
 						i(220979),	-- Amaranthine Shirt
 						i(214010),	-- Vestment of the Dynast
-						i(220975),	-- Sha-Skin Shirt
-						i(220976),	-- Shirt of the Thousandfold Hells
-						i(220977),	-- Vest of the Thousandfold Hells
-						i(220978),	-- Shirt of the Horned Nightmare
 					}),
 					filter(LEATHER, {
 						------ NYI or only in Ensembles ------
-						i(220981),	-- Eternal Blossom Tunic
-
-						i(220982),	-- Vest of the Haunted Forest
-						i(220983),	-- Vest of the Haunted Forest
-
-						i(220984),	-- Tunic of the Shattered Vale
 						i(220985),	-- Vest of the Shattered Vale
-						i(220986),	-- Vest of the Shattered Vale
-
-						i(220987),	-- Fire-Charm Tunic
-						i(220988),	-- Fire-Charm Vestments
-						i(220989),	-- Fire-Charm Jacket
 					}),
-					filter(MAIL, {
-						------ NYI or only in Ensembles ------
-						i(220991),	-- Firebird's Cuirass
-					})
 				}),
 				filter(MISC, {
 					i(211932),	-- Cache of Infinite Treasure
@@ -5888,10 +5869,8 @@ root(ROOTS.Unsorted, {
 				n(WEAPONS, {
 					i(215946),	-- Valiant's Honorblade
 					i(215469),	-- Haromm's Frozen Battleaxe
-					i(215472),	-- Haromm's Frozen Battleaxe
 					i(215477),	-- Korven's Crescent
 					i(215496),	-- Yaungol Axe
-					i(215497),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215498),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215500),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215501),	-- Xal'atoh, Malformed Image of Gorehowl
@@ -5903,7 +5882,6 @@ root(ROOTS.Unsorted, {
 					i(215521),	-- Dagryn's Longbow
 					i(215523),	-- Dagryn's Longbow
 					i(215525),	-- Hisek's Longbow
-					i(215529),	-- Fang Kung, Emperor's Legacy
 					i(215533),	-- Marista Longbow
 					i(215534),	-- Shado-Pan Longbow
 					i(215539),	-- Jinyu Longbow
@@ -5928,7 +5906,6 @@ root(ROOTS.Unsorted, {
 					i(215611),	-- Lightdrinker Dagger
 					i(215614),	-- Klaxxi Slicer
 					i(215616),	-- Pandaren Warknife
-					i(215618),	-- Pandaren Triblade
 					i(215622),	-- Imperial Longknife
 					i(215624),	-- Megaera's Fang
 					i(215631),	-- Softfoot's Iron Claw
@@ -5970,9 +5947,7 @@ root(ROOTS.Unsorted, {
 					i(215826),	-- Spire of Supremacy
 					i(215853),	-- Gao-Rei, Staff of the Protector
 					i(215864),	-- Torch of Dawn
-					i(215868),	-- Monastic Staff
 					i(215877),	-- Cloudscorcher Staff
-					i(215888),	-- Soulwood Spire
 					i(215898),	-- Jalak's Spirit Staff
 					i(215901),	-- Jalak's Spirit Staff
 					i(215902),	-- Klaxxi Scimitar
@@ -5990,9 +5965,6 @@ root(ROOTS.Unsorted, {
 					i(215958),	-- Tian Monastery Edge
 					i(215959),	-- Tian Monastery Sword
 					i(215961),	-- Qon's Iron Decree
-
-					i(215963),	-- Qon's Iron Decree
-					i(215967),	-- Soulblade of the Storm
 					i(215971),	-- Greatsword of Fallen Pride
 					i(215988),	-- Jinyu Greatsword
 					i(215991),	-- Zerat, Soulburner's Greatsword
@@ -6017,14 +5989,12 @@ root(ROOTS.Unsorted, {
 					i(216404),	-- Blade of the Sanguine Ritual
 					i(216406),	-- Blade of the Sanguine Ritual
 					i(216407),	-- Blade of the Sanguine Ritual
-					i(216408),	-- Fyn's Dagger
 					i(216411),	-- Fyn's Dagger
 					i(216414),	-- Iron Qon's Knife
 					i(216415),	-- Iron Qon's Knife
 					i(216416),	-- Hozen Blade
 					i(216427),	-- Acid-Spine Bonebreaker
 					i(216430),	-- Torall, the Emperor's Scepter
-					i(216432),	-- Acid-Spine Bonebreaker
 					i(216434),	-- Hammer of the Dawn
 					i(216437),	-- Hammer of the Dawn
 					i(216439),	-- Pandaren Book
@@ -6064,9 +6034,7 @@ root(ROOTS.Unsorted, {
 					i(216554),	-- Norushen's Tower Shield
 					i(216555),	-- Shield of the Fallen General
 					i(216557),	-- Shield of the Fallen General
-					i(216560),	-- Steelskin, Qiang's Bulwark
 					i(216562),	-- Steelskin, Qiang's Bulwark
-
 					i(216565),	-- Gaze of the Ancient
 					i(216567),	-- Dreadwood Bulwark
 					i(216571),	-- Tian Deflector

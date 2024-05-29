@@ -10612,7 +10612,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 	if not self.initialized then
 		force = true;
 		self.initialized = true;
-		self.openedOnLogin = false;
 		self.CurrentMaps = {};
 		self.mapID = -1;
 		local IsInInstance = IsInInstance
@@ -10688,30 +10687,40 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		(function()
 		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID, isInInstance;
 		local rootGroups, mapGroups = {}, {};
+		local TimerunningSeasonEventID
+		local function OnlyTimerunning(group)
+			return GetRelativeValue(group, "e") == TimerunningSeasonEventID
+		end
+		local function NotTimerunning(group)
+			local e = GetRelativeValue(group, "e")
+			return not e or e ~= TimerunningSeasonEventID
+		end
 		self.Rebuild = function(self)
 			-- app.PrintDebug("Rebuild",self.mapID);
 			local currentMaps, mapID = {}, self.mapID
-			results = SearchForField("mapID", mapID);
-
-			-- If there's a timerunning event going on...
-			local timerunningSeasonEventID = GetTimerunningSeasonEventID();
-			if timerunningSeasonEventID and app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
-				local refined = {};
-				for _,j in ipairs(results) do
-					if GetRelativeValue(j, "e") == timerunningSeasonEventID then
-						tinsert(refined, j);
-					end
-				end
-				results = refined;
-			end
 
 			-- Reset the minilist Runner before building new data
 			self:GetRunner().Reset()
 
 			-- Get all results for this map, without any results that have been cloned into Source Ignored groups or are under Unsorted
-			results = CleanInheritingGroups(results, "sourceIgnored");
+			results = CleanInheritingGroups(SearchForField("mapID", mapID), "sourceIgnored");
 			-- app.PrintDebug("Rebuild#",#results);
 			if results and #results > 0 then
+
+				-- If there's a timerunning event going on...
+				if app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
+					TimerunningSeasonEventID = GetTimerunningSeasonEventID();
+					local refined = {};
+					local Refiner = TimerunningSeasonEventID and OnlyTimerunning or NotTimerunning
+					-- app.PrintDebug(TimerunningSeasonEventID and "ONLYTIMERUNNING" or "NOTTIMERUNNING")
+					for _,j in ipairs(results) do
+						if Refiner(j) then
+							refined[#refined + 1] = j
+						end
+					end
+					results = refined;
+				end
+
 				-- I tend to like this way of finding sub-maps, but it does mean we rely on Blizzard and get whatever maps they happen to claim
 				-- are children of a given map... sometimes has weird results like scenarios during quests being considered children in
 				-- other zones. Since it can give us special top-level maps (Anniversary AV) also as children of other top-level maps (Hillsbarad)
@@ -10945,7 +10954,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 						end
 					end
 					-- only report for mapIDs which actually exist
-					print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
+					print("No data found for this Location ", app.GetMapName(mapID), " [", mapID, "]");
 					print("Path: ", mapPath);
 					app.report();
 				end
@@ -10972,37 +10981,13 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			-- app.PrintDebugPrior("RB-Done")
 			return true;
 		end
-		end)();
-		local function OpenMiniList(id, show)
-			-- app.PrintDebug("OpenMiniList",id,show);
-			-- Determine whether or not to forcibly reshow the mini list.
-			local self = app:GetWindow("CurrentInstance");
-			if not self:IsVisible() then
-				if app.Settings:GetTooltipSetting("Auto:MiniList") then
-					if not self.openedOnLogin and not show then
-						self.openedOnLogin = true;
-						show = true;
-					end
-				else
-					self.openedOnLogin = false;
-				end
-				if show then self:SetVisible(true); end
-			end
-
-			-- Cache that we're in the current map ID.
-			-- app.PrintDebug("new map",show);
-			self.mapID = id;
-			-- force update when showing the minilist
-			Callback(self.Update, self);
-		end
+		end)()
 		self.RefreshLocation = function(show)
 			-- Acquire the new map ID.
 			local mapID = app.CurrentMapID;
 			-- app.PrintDebug("RefreshLocation",mapID)
-			if not mapID then
-				AfterCombatCallback(self.RefreshLocation);
-				return;
-			end
+			-- can't really do anything about this from here anymore
+			if not mapID then return end
 			-- don't auto-load minimap to anything higher than a 'Zone' if we are in an instance, unless it has no parent?
 			if IsInInstance() then
 				local mapInfo = app.CurrentMapInfo;
@@ -11011,10 +10996,18 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 					return;
 				end
 			end
-			OpenMiniList(mapID, show);
+
+			-- Cache that we're in the current map ID.
+			-- app.PrintDebug("new map");
+			self.mapID = mapID;
+			if show then
+				self:SetVisible(true)
+			end
+			-- force update when showing the minilist
+			Callback(self.Update, self);
 		end
 		local function LocationTrigger(forceNewMap)
-			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
+			if app.InWorld and app.IsReady and self:IsVisible() then
 				-- app.PrintDebug("LocationTrigger-Callback")
 				if forceNewMap then
 					-- this allows minilist to rebuild itself
@@ -11023,15 +11016,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				AfterCombatOrDelayedCallback(self.RefreshLocation, 0.25);
 			end
 		end
-		app.OpenMiniList = OpenMiniList;
 		app.LocationTrigger = LocationTrigger;
-		self:SetScript("OnEvent", function(self, e, ...)
-			-- app.PrintDebug("LocationTrigger",e,...);
-			LocationTrigger();
-		end);
-		self:RegisterEvent("NEW_WMO_CHUNK");
-		self:RegisterEvent("WAYPOINT_UPDATE");
-		self:RegisterEvent("SCENARIO_UPDATE");
 		app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger);
 	end
 	if self:IsVisible() then
