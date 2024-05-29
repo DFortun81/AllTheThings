@@ -217,7 +217,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213832),	-- Chronomancer Handwraps
 							i(213833),	-- Chronomancer Treads
 							i(213834),	-- Chronomancer Raiment
-							i(220973),	-- Chronomancer Shirt
 							-- PRIEST
 							i(213891),	-- Bracers of the Ternion Glory
 							i(213892),	-- Cord of the Ternion Glory
@@ -421,7 +420,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213840),	-- Chronomancer Mantle
 							i(213841),	-- Chronomancer Sash
 							i(213842),	-- Chronomancer Wristwraps
-							i(220974),	-- Chronomancer Vest (Telar on Discord: this item refuses to drop)
 							-- PRIEST
 							i(213907),	-- Wristwraps of the Ternion Glory
 							i(213908),	-- Sash of the Ternion Glory
@@ -631,7 +629,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213824),	-- Chronomancer Shoulderpads
 							i(213825),	-- Chronomancer Cord
 							i(213826),	-- Chronomancer Bracers
-							i(220966),	-- Shirt of the Chronomancer
 							-- PRIEST
 							i(213899),	-- Raiment of the Ternion Glory
 							i(213900),	-- Treads of the Ternion Glory
@@ -839,7 +836,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213840),	-- Chronomancer Mantle
 							i(213841),	-- Chronomancer Sash
 							i(213842),	-- Chronomancer Wristwraps
-							i(220974),	-- Chronomancer Vest
 							-- PRIEST
 							i(213907),	-- Wristwraps of the Ternion Glory
 							i(213908),	-- Sash of the Ternion Glory

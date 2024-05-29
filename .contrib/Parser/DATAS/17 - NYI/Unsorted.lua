@@ -5847,30 +5847,11 @@ root(ROOTS.Unsorted, {
 						i(220972),	-- Shaded Wood Vest
 						i(220979),	-- Amaranthine Shirt
 						i(214010),	-- Vestment of the Dynast
-						i(220975),	-- Sha-Skin Shirt
-						i(220976),	-- Shirt of the Thousandfold Hells
-						i(220977),	-- Vest of the Thousandfold Hells
-						i(220978),	-- Shirt of the Horned Nightmare
 					}),
 					filter(LEATHER, {
 						------ NYI or only in Ensembles ------
-						i(220981),	-- Eternal Blossom Tunic
-
-						i(220982),	-- Vest of the Haunted Forest
-						i(220983),	-- Vest of the Haunted Forest
-
-						i(220984),	-- Tunic of the Shattered Vale
 						i(220985),	-- Vest of the Shattered Vale
-						i(220986),	-- Vest of the Shattered Vale
-
-						i(220987),	-- Fire-Charm Tunic
-						i(220988),	-- Fire-Charm Vestments
-						i(220989),	-- Fire-Charm Jacket
 					}),
-					filter(MAIL, {
-						------ NYI or only in Ensembles ------
-						i(220991),	-- Firebird's Cuirass
-					})
 				}),
 				filter(MISC, {
 					i(211932),	-- Cache of Infinite Treasure
@@ -5901,7 +5882,6 @@ root(ROOTS.Unsorted, {
 					i(215521),	-- Dagryn's Longbow
 					i(215523),	-- Dagryn's Longbow
 					i(215525),	-- Hisek's Longbow
-					i(215529),	-- Fang Kung, Emperor's Legacy
 					i(215533),	-- Marista Longbow
 					i(215534),	-- Shado-Pan Longbow
 					i(215539),	-- Jinyu Longbow

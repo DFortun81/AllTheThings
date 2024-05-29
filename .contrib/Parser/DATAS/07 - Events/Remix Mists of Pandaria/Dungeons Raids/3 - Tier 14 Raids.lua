@@ -275,7 +275,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 								i(214639),	-- Firebird's Pauldrons
 								i(214634),	-- Firebird's Robeguard
 								i(214635),	-- Firebird's Sabatons
-								i(220990),	-- Firebird's Shirt (Telar on Discord: this item refuses to drop)
 							}),
 							filter(PLATE, {
 								-- DEATH KNIGHT
@@ -313,6 +312,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215840),	-- Brazier of the Eternal Empire
 							i(215556),	-- Crossbow of Forgotten Glory
 							i(215482),	-- Elegion, the Star Cleaver
+							i(215529),	-- Fang Kung, Emperor's Legacy
 							i(215847),	-- Fearspeaker's Warstaff (Alex: double up into LFR, MSV LFR 2nd wing)
 							i(215848),	-- Fearspeaker's Warstaff
 							i(215850),	-- Fearspeaker's Warstaff
@@ -425,7 +425,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 								i(214654),	-- Firebird's Belt
 								i(214651),	-- Firebird's Boots
 								i(214649),	-- Firebird's Bracers
-								--i(220991),	-- Firebird's Cuirass	-- Put a note here if you got it, seems like a bugged item
 								i(214653),	-- Firebird's Gauntlets
 								i(214650),	-- Firebird's Hauberk
 								i(214652),	-- Firebird's Helm
