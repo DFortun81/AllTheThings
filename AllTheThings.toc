@@ -106,7 +106,6 @@ src\Classes\CharacterUnlock.lua
 
 # Item Sub-Classes
 src\Classes\Toys.lua
-#src\Classes\Ensembles.lua
 
 # Expansion specific source files
 src\Expansions\Warlords.lua

@@ -1154,6 +1154,7 @@ namespace ATT
             foreach (IDictionary<string, object> source in rawSources)
             {
                 Objects.Merge(data, "g", source);
+                Items.MarkItemAsReferenced(source);
             }
 
             if (symlinkSources.Count == 0) return true;
@@ -2627,23 +2628,34 @@ namespace ATT
             if (!providers.TryConvert(out List<object> providersList))
                 return;
 
-            for (int i = providersList.Count - 1; i >= 0; i--)
+            //if (data.TryGetValue("questID", out long questID) && questID == 13614)
+            //{
+
+            //}
+
+            bool hasNpcProvider = false;
+            if (data.ContainsKey("qgs"))
+            {
+                hasNpcProvider = true;
+            }
+
+            int i = 0;
+            while (i < providersList.Count)
             {
                 var provider = providersList[i];
-                if (!provider.TryConvert(out List<object> providerList) || providerList.Count != 2)
+                if (!provider.TryConvert(out List<object> providerList) || providerList.Count != 2
+                    || (!providerList[0].TryConvert(out string pType))
+                    || (!providerList[1].TryConvert(out decimal pID)))
+                {
+                    i++;
                     continue;
-
-                if (!providerList[0].TryConvert(out string pType))
-                    continue;
-
-                if (!providerList[1].TryConvert(out decimal pID))
-                    continue;
+                }
 
                 // validate that the referenced ID exists in this version of the addon
                 switch (pType)
                 {
                     case "i":
-                        if (Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
+                        if (hasNpcProvider || Program.PreProcessorTags.ContainsKey("ANYCLASSIC"))
                         {
                             // if the provider is an item, we want that item to be listed as having been referenced to keep it out of Unsorted
                             Items.MarkItemAsReferenced(pID);
@@ -2652,6 +2664,8 @@ namespace ATT
                         {
                             var item = Items.GetNull(pID);
                             // Crieve doesn't want this. Sometimes the only valid source is the provider, which is fine for quest items.
+                            // Quest Items which specifically are listed AFTER an NPC provider will now be considered referenced
+                            // Actual Quest-providing Items should still have a valid Source
                             if (item == null || !Items.IsItemReferenced(pID))
                             {
                                 // The item isn't Sourced in Retail version
@@ -2662,12 +2676,14 @@ namespace ATT
                             {
                                 // The item was classified as never being implemented
                                 LogDebug($"INFO: Removed NYI 'provider-item' {pID}", data);
+                                i--;
                                 providersList.RemoveAt(i);
                             }
                         }
                         break;
                     case "n":
                         NPCS_WITH_REFERENCES[(long)pID] = true;
+                        hasNpcProvider = true;
                         MarkCustomHeaderAsRequired((long)pID);
                         break;
                     case "o":
@@ -2679,6 +2695,7 @@ namespace ATT
                         LogError($"Invalid Data Value: provider-type {pType}", data);
                         break;
                 }
+                i++;
             }
         }
 
