@@ -6034,9 +6034,7 @@ root(ROOTS.Unsorted, {
 					i(216554),	-- Norushen's Tower Shield
 					i(216555),	-- Shield of the Fallen General
 					i(216557),	-- Shield of the Fallen General
-					i(216560),	-- Steelskin, Qiang's Bulwark
 					i(216562),	-- Steelskin, Qiang's Bulwark
-
 					i(216565),	-- Gaze of the Ancient
 					i(216567),	-- Dreadwood Bulwark
 					i(216571),	-- Tian Deflector
