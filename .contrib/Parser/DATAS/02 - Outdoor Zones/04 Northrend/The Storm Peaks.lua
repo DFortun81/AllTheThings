@@ -763,7 +763,7 @@ root(ROOTS.Zones, {
 							i(42830),	-- Ring of Jokkum
 						},
 					}),
-					q(13001, {	-- Forging Hodir's Spear
+					q(13001, {	-- Raising Hodir's Spear
 						["qg"] = 30252,	-- Lorekeeper Randvir
 						["coord"] = { 64.8, 59.1, THE_STORM_PEAKS },
 						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
