@@ -324,17 +324,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215741),	-- Bloodseeker's Bonebreaker
 					i(216595),	-- Bulwark of Twinned Despair
 					i(215681),	-- Crane's Beak Effigy
+					i(215948),	-- Darkhide Sword
+					i(215908),	-- Do-tharak, the Foebreaker
 					i(216600),	-- Eyes of the Doomed
 					i(216601),	-- Eyes of the Doomed
 					i(215862),	-- Engraved Spire
+					i(215952),	-- Fear's Bite
 					i(215970),	-- Greatsword of the Iron Legion
 					i(215940),	-- Halcyon Blade
+					i(215944),	-- Harmonious Scimitar
 					i(215623),	-- Imperial Shortblade
 					i(215861),	-- Instructor's Spire
-					i(215897),	-- Jinyu Staff
+					i(216535),	-- Ironwood Bulwark
 					i(215772),	-- Jerthud, Hand of the Savior
+					i(215897),	-- Jinyu Staff
+					i(215486),	-- Jinyu Waraxe
 					i(215982),	-- Marista Greatsword
 					i(215549),	-- Miracoran, the Dissonant Chord
+					i(215550),	-- Miracoran, the Dissonant Chord (chest)
 					i(216540),	-- Mogu Lord's Shield
 					i(215597),	-- Mushan Slicer
 					i(215619),	-- Pandaren Sai
@@ -346,19 +353,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215889),	-- Soulwood Spire
 					i(215515),	-- Wallwatcher's Greataxe
 					i(215745),	-- Wasteland Basher
-					-- Unconfirmed, but looks like timeless isle <> isle of thunder share everything, just like armor
-					i(215948),	-- Darkhide Sword
-					i(215908),	-- Do-tharak, the Foebreaker
-					i(215952),	-- Fear's Bite
-					i(215944),	-- Harmonious Scimitar
-					i(216535),	-- Ironwood Bulwark
-					i(215486),	-- Jinyu Waraxe
-					i(215722),	-- Mace of the Old Ones
-					i(216540),	-- Mogu Lord's Shield
 					i(216576),	-- Wasteland Deflector
-					i(215776),	-- Zeeg's Ancient Kegbreaker
-					-- Confirmed, but not sure if shared with Timeless
 					i(215869),	-- Waterweaver's Staff
+					i(215776),	-- Zeeg's Ancient Kegbreaker
 				})
 			}),
 		},

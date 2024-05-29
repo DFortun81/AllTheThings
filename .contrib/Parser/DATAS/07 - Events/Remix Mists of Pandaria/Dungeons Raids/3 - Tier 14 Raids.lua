@@ -146,7 +146,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(210641),	-- Bo-Ris, Spear of Night
 					i(215839),	-- Brazier of the Eternal Empire (MSV LFR / ToES LFR)
 					i(215842),	-- Brazier of the Eternal Empire (HoF LFR)
-					i(215555),	-- Crossbow of Forgotten Glory (ToES LFR)
+					i(215555),	-- Crossbow of Forgotten Glory (HoF LFR / ToES LFR)
 					i(216462),	-- Dinomancer's Spire (HoF LFR)
 					i(215905),	-- Do-tharak, the Foebreaker (MSV LFR)
 					i(215481),	-- Elegion, the Star Cleaver (ToES LFR)
@@ -469,13 +469,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215581),	-- Blade of the Seven Stars
 					i(215792),	-- Bo-Ris, Spear of Night
 					i(215841),	-- Brazier of the Eternal Empire
+					i(215557),	-- Crossbow of Forgotten Glory (MSV HC)
 					i(215907),	-- Dotharak, the Foebreaker
 					i(215483),	-- Elegion, the Star Cleaver
 					i(215530),	-- Fang Kung, Emperor's Legacy
 					i(215849),	-- Fearspeaker's Warstaff
 					i(215638),	-- Fist of Shek'zeer
 					i(215729),	-- Galvanized Stormcrusher
+					i(215853),	-- Gao-Rei, Staff of the Protector
 					i(215634),	-- Gara'kal, Claw of the Spiribinder
+					i(216565),	-- Gaze of the Ancient (MSV HC)
 					i(215969),	-- Greatsword of the Iron Legion
 					i(215856),	-- Jin'ya, Orb of the Watercaller
 					i(215789),	-- Kazra'jin's Maul
@@ -492,8 +495,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215999),	-- Torch of the Starkspark
 					i(215516),	-- Uroe, Harbinger of Fear
-					i(215845),	-- Waterspeaker's Staff
-					i(215673),	-- Zephyrcall Censer (HoF HC)
+					i(215845),	-- Waterspeaker's Staff (MSV HC)
+					i(215673),	-- Zephyrcall Censer (MSV HC / HoF HC)
 					i(215990),	-- Zerat, Soulburner's Greatsword
 				}),
 			})),

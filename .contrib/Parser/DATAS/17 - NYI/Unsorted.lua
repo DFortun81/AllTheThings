@@ -5869,27 +5869,20 @@ root(ROOTS.Unsorted, {
 				n(WEAPONS, {
 					i(215946),	-- Valiant's Honorblade
 					i(215469),	-- Haromm's Frozen Battleaxe
-					i(215477),	-- Korven's Crescent
 					i(215496),	-- Yaungol Axe
 					i(215498),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215500),	-- Kura-Kura, Kazra'jin's Headtaker
-					i(215501),	-- Xal'atoh, Malformed Image of Gorehowl
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
 					i(215513),	-- Wallwatcher's Axe
 					i(215517),	-- Uroe, Harbinger of Fear
-					i(215519),	-- Uroe, Harbinger of Fear
-					i(215520),	-- Dagryn's Longbow
 					i(215521),	-- Dagryn's Longbow
 					i(215523),	-- Dagryn's Longbow
 					i(215525),	-- Hisek's Longbow
 					i(215533),	-- Marista Longbow
 					i(215534),	-- Shado-Pan Longbow
 					i(215539),	-- Jinyu Longbow
-					i(215541),	-- Jinyu Warbow
 					i(215546),	-- Miracoran, the Dissonant Chord
-					i(215550),	-- Miracoran, the Dissonant Chord
 					i(215553),	-- Death Lotus Repeater
-					i(215557),	-- Crossbow of Forgotten Glory
 					i(215562),	-- Durumu's Gaze
 					i(215563),	-- Durumu's Gaze
 					i(215565),	-- Jinyu Slasher
@@ -5908,12 +5901,10 @@ root(ROOTS.Unsorted, {
 					i(215616),	-- Pandaren Warknife
 					i(215622),	-- Imperial Longknife
 					i(215624),	-- Megaera's Fang
-					i(215631),	-- Softfoot's Iron Claw
 					i(215640),	-- Barbs of the Rikkitun
 					i(215650),	-- Pandaren Claw
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
 					i(215657),	-- Hozen Conduit
-					i(215670),	-- Sha-Touched Globule
 					i(215675),	-- Wakener's Lantern
 					i(215677),	-- Jinyu's Light
 					i(215678),	-- Grummle Lantern
@@ -5927,9 +5918,8 @@ root(ROOTS.Unsorted, {
 					i(215708),	-- Roar of the Quillen
 					i(215710),	-- Roar of the Quillen
 					i(215711),	-- Roar of the Quillen
-					i(215715),	-- Kardris' Scepter
 					i(215720),	-- Mace of the Old Ones
-					i(215723),	-- Siegecrafter's Forge Drill
+					i(215722),	-- Mace of the Old Ones
 					i(215753),	-- Gao's Kegbreaker
 					i(215756),	-- Klaxxi Smasher
 					i(215759),	-- Saurok Mace
@@ -5938,35 +5928,25 @@ root(ROOTS.Unsorted, {
 					i(215769),	-- Jerthud, Hand of the Savior
 					i(215775),	-- Zeeg's Ancient Kegbreaker
 					i(215787),	-- Kazra'jin's Maul
-					i(215790),	-- Kazra'jin's Maul
 					i(215794),	-- Halberd of Inner Darkness
 					i(215810),	-- Warspear of Xuen
-					i(215811),	-- Shan-Dun, Breaker of Courage
 					i(215813),	-- Shan-Dun, Breaker of Courage
 					i(215814),	-- Shan-Dun, Breaker of Courage
-					i(215826),	-- Spire of Supremacy
-					i(215853),	-- Gao-Rei, Staff of the Protector
 					i(215864),	-- Torch of Dawn
 					i(215877),	-- Cloudscorcher Staff
-					i(215898),	-- Jalak's Spirit Staff
 					i(215901),	-- Jalak's Spirit Staff
 					i(215902),	-- Klaxxi Scimitar
 					i(215903),	-- Klaxxi Sword
 					i(215904),	-- Klaxxi Shortsword
-					i(215913),	-- Kil'ruk's Hateful Blade
 					i(215914),	-- Kil'ruk's Hateful Blade
-					i(215916),	-- Kil'ruk's Hateful Blade
 					i(215921),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
 					i(215937),	-- Imperial Wind Blade
 					i(215939),	-- Mogu Aspirant's Blade
-					i(215945),	-- Binan Scimitar
 					i(215951),	-- Sha-Blighted Sword
 					i(215958),	-- Tian Monastery Edge
-					i(215959),	-- Tian Monastery Sword
 					i(215961),	-- Qon's Iron Decree
 					i(215971),	-- Greatsword of Fallen Pride
-					i(215988),	-- Jinyu Greatsword
 					i(215991),	-- Zerat, Soulburner's Greatsword
 					i(215993),	-- Zerat, Soulburner's Greatsword
 					i(216001),	-- Mountainsage Rod
@@ -5984,18 +5964,13 @@ root(ROOTS.Unsorted, {
 					i(216019),	-- Stormbreaker's Waraxe
 					i(216020),	-- Stormbreaker's Waraxe
 					i(216024),	-- Pandaren Hewer
-					i(216400),	-- Tia-Tia, the Spinning Star
 					i(216402),	-- Tia-Tia, the Spinning Star
-					i(216404),	-- Blade of the Sanguine Ritual
-					i(216406),	-- Blade of the Sanguine Ritual
 					i(216407),	-- Blade of the Sanguine Ritual
 					i(216411),	-- Fyn's Dagger
-					i(216414),	-- Iron Qon's Knife
 					i(216415),	-- Iron Qon's Knife
 					i(216416),	-- Hozen Blade
 					i(216427),	-- Acid-Spine Bonebreaker
 					i(216430),	-- Torall, the Emperor's Scepter
-					i(216434),	-- Hammer of the Dawn
 					i(216437),	-- Hammer of the Dawn
 					i(216439),	-- Pandaren Book
 					i(216442),	-- Pandaren Decorative Fan
@@ -6011,7 +5986,6 @@ root(ROOTS.Unsorted, {
 					i(216455),	-- Pandaren Spire
 					i(216456),	-- Pandaren Staff
 					i(216457),	-- Pandaren Standard
-					i(216458),	-- Caduceus of Pure Moods
 					i(216460),	-- Caduceus of Pure Moods
 					i(216465),	-- Dinomancer's Spire
 					i(216469),	-- Suen-Wo, Spire of the Rising Sun
@@ -6035,9 +6009,7 @@ root(ROOTS.Unsorted, {
 					i(216555),	-- Shield of the Fallen General
 					i(216557),	-- Shield of the Fallen General
 					i(216562),	-- Steelskin, Qiang's Bulwark
-					i(216565),	-- Gaze of the Ancient
 					i(216567),	-- Dreadwood Bulwark
-					i(216571),	-- Tian Deflector
 					i(216572),	-- Shomi's Barrier
 					i(216573),	-- Spiritsage's Barrier
 					i(216574),	-- Flamecaller's Bulwark

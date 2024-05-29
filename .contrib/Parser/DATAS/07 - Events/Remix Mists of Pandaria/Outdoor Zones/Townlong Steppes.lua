@@ -134,6 +134,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215590),	-- Shomi's Shanker
 					i(215957),	-- Tian Monastery Saber
 					i(215700),	-- Trailseeker Longrifle (chest)
+					i(215519),	-- Uroe, Harbinger of Fear (chest)
 					i(215512),	-- Wallwatcher's Poleaxe
 					i(215495),	-- Yaungol Hatchet
 				}),

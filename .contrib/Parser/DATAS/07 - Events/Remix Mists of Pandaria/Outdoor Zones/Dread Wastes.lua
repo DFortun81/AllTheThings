@@ -99,6 +99,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214805),	-- Shan'ze Warhelm
 				}),
 				n(WEAPONS, {
+					i(215945),	-- Binan Scimitar
 					i(215509),	-- Bloodseeker's Greataxe
 					i(215867),	-- Diviner's Spire
 					i(215600),	-- Grummle Shortblade
@@ -106,6 +107,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215762),	-- Hozen Smasher
 					i(215596),	-- Jadestone Dagger
 					i(215772),	-- Jerthud, Hand of the Savior (either here or townlong)
+					i(215541),	-- Jinyu Warbow (chest)
+					i(215988),	-- Jinyu Greatsword
 					i(215895),	-- Jinyu Rod
 					i(216536),	-- Ironwood Barrier
 					i(215639),	-- Mist Shaman's Knuckles

@@ -95,7 +95,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214811),	-- Wallwatcher Sabatons
 				}),
 				n(WEAPONS, {
-					-- Most likely also shares with isle of thunder + timeless isle
 					i(216601),	-- Eyes of the Doomed
 					i(215772),	-- Jerthud, Hand of the Savior
 					i(215703),	-- Pandaren Rifle

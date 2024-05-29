@@ -126,6 +126,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215676),	-- Hopebringer's Lantern
 					i(210640),	-- Icon of Hope
 					i(215950),	-- Mei's Sword
+					i(215639),	-- Mist Shaman's Knuckles (drop)
 					i(215559),	-- Mountainscaler Speargun
 					i(216025),	-- Pandaren Cleaver
 					i(216545),	-- Pandaren Deflector

@@ -354,6 +354,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(211149),	-- Rikkitun Warbow
 					i(215595),	-- Saltscale Shanker
 					i(216611),	-- Seawatch Speargun
+					i(215590),	-- Shomi's Shanker (August Celestials reward box)
 					i(215601),	-- Spike of the Rikkitun
 					i(215866),	-- Staff of Focus
 					i(215743),	-- Sunsoul Smasher

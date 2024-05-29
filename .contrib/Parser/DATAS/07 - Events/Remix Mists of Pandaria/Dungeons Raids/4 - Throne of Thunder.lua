@@ -253,20 +253,26 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216425),	-- Acid-Spine Bonebreaker
 						i(215652),	-- Amun-Thoth, Sul's Spiritrender
 						i(215655),	-- Amun-Thoth, Sul's Spiritrender
+						i(216404),	-- Blade of the Sanguine Ritual
+						i(216458),	-- Caduceus of Pure Moods
 						i(216461),	-- Caduceus of Pure Moods
 						i(216463),	-- Dinomancer's Spire
 						i(215561),	-- Durumu's Gaze
 						i(215564),	-- Durumu's Gaze
 						i(215689),	-- Eye of the Hydra
 						i(216409),	-- Fyn's Dagger
+						i(216434),	-- Hammer of the Dawn
 						i(216412),	-- Iron Qon's Knife
 						i(215899),	-- Jalak's Spirit Staff
+						i(215790),	-- Kazra'jin's Maul
 						i(215766),	-- Mace of Dark Animus
 						i(215625),	-- Megaera's Fang
 						i(215627),	-- Megaera's Fang
+						i(215811),	-- Shan-Dun, Breaker of Courage
 						i(215965),	-- Soulblade of the Storm
 						i(215886),	-- Soulwood Spire
 						i(216466),	-- Suen-Wo, Spire of the Rising Sun
+						i(216400),	-- Tia-Tia, the Spinning Star
 						i(216403),	-- Tia-Tia, the Spinning Star
 						i(216428),	-- Torall, the Emperor's Scepter
 						i(216431),	-- Torall, the Emperor's Scepter (ToT LFR (1st wing))
@@ -657,9 +663,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(216432),	-- Acid-Spine Bonebreaker
+						i(216406),	-- Blade of the Sanguine Ritual
 						i(215771),	-- Jerthud, Hand of the Savior
 						i(216408),	-- Fyn's Dagger
 						i(216436),	-- Hammer of the Dawn
+						i(216414),	-- Iron Qon's Knife
+						i(215898),	-- Jalak's Spirit Staff
 						i(215497),	-- Kura-Kura, Kazra'jin's Headtaker
 						i(215548),	-- Miracoran, the Dissonant Chord
 						i(215963),	-- Qon's Iron Decree

@@ -317,11 +317,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(215917),	-- Arcweaver Spellblade
+						i(215520),	-- Dagryn's Longbow
 						i(215551),	-- Death Lotus Repeater
 						i(215835),	-- Drakebinder's Spire
 						i(210343),	-- Gar'tok, Might of the Faithful
 						i(215524),	-- Hisek's Longbow
+						i(215715),	-- Kardris' Scepter
+						i(215913),	-- Kil'ruk's Hateful Blade
 						i(210336),	-- Kor'kron Heavy Rifle
+						i(215477),	-- Korven's Crescent
 						i(215663),	-- Lucky Cricket Cage
 						i(215473),	-- Malkorok's Headtaker
 						i(215573),	-- Nazgrim's Shanker
@@ -331,10 +335,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215827),	-- Rod of the Megantholithic Apparatus
 						i(215830),	-- Rod of the Megantholithic Apparatus
 						i(215667),	-- Sha-Touched Globule
+						i(215723),	-- Siegecrafter's Forge Drill
 						i(215628),	-- Softfoot's Iron Claw
 						i(211161),	-- Sphere of Immerseus
 						i(210338),	-- Spire of Supremacy
 						i(210341),	-- Staff of Corrupted Waters
+						i(215501),	-- Xal'atoh, Malformed Image of Gorehowl
 						i(215909),	-- Xifeng, Longblade of the Guardian
 					})),
 					header(HEADERS.Achievement, 8458, {	-- Vale of Eternal Sorrows
@@ -943,6 +949,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215472),	-- Haromm's Frozen Battleaxe
 						i(215527),	-- Hisek's Longbow
 						i(215718),	-- Kardris' Scepter
+						i(215916),	-- Kil'ruk's Hateful Blade
 						i(215692),	-- Kor'kron Heavy Rifle
 						i(215480),	-- Korven's Crescent
 						i(215666),	-- Lucky Cricket Cage
@@ -954,9 +961,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215834),	-- Pride's Gaze
 						i(215662),	-- Prophecies of Y'Shaarj
 						i(215580),	-- Rik'kal's Bloody Blade
+						i(215670),	-- Sha-Touched Globule
 						i(215924),	-- Shao-Tien Saber
 						i(215726),	-- Siegecrafter's Forge Drill
 						i(216558),	-- Shield of the Fallen General
+						i(215631),	-- Softfoot's Iron Claw
+						i(215826),	-- Spire of Supremacy
 						i(215821),	-- Staff of Corrupted Waters
 						i(215714),	-- Sphere of Immerseus
 						i(216550),	-- Visage of Dread
