@@ -262,6 +262,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215689),	-- Eye of the Hydra
 						i(216409),	-- Fyn's Dagger
 						i(216434),	-- Hammer of the Dawn
+						i(216437),	-- Hammer of the Dawn
 						i(216412),	-- Iron Qon's Knife
 						i(215899),	-- Jalak's Spirit Staff
 						i(215790),	-- Kazra'jin's Maul

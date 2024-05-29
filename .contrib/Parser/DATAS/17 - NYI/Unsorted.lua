@@ -5970,7 +5970,6 @@ root(ROOTS.Unsorted, {
 					i(216416),	-- Hozen Blade
 					i(216427),	-- Acid-Spine Bonebreaker
 					i(216430),	-- Torall, the Emperor's Scepter
-					i(216437),	-- Hammer of the Dawn
 					i(216439),	-- Pandaren Book
 					i(216442),	-- Pandaren Decorative Fan
 					i(216444),	-- Pandaren Ritual Fan
