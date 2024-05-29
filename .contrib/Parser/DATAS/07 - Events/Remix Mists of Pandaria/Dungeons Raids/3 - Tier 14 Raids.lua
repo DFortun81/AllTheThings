@@ -265,7 +265,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(214639),	-- Firebird's Pauldrons
 						i(214634),	-- Firebird's Robeguard
 						i(214635),	-- Firebird's Sabatons
-						i(220990),	-- Firebird's Shirt
+						i(220990),	-- Firebird's Shirt (Telar on Discord: this item refuses to drop)
 					}),
 					filter(PLATE, {
 						-- DEATH KNIGHT

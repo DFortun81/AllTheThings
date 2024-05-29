@@ -421,7 +421,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213840),	-- Chronomancer Mantle
 							i(213841),	-- Chronomancer Sash
 							i(213842),	-- Chronomancer Wristwraps
-							i(220974),	-- Chronomancer Vest
+							i(220974),	-- Chronomancer Vest (Telar on Discord: this item refuses to drop)
 							-- PRIEST
 							i(213907),	-- Wristwraps of the Ternion Glory
 							i(213908),	-- Sash of the Ternion Glory
