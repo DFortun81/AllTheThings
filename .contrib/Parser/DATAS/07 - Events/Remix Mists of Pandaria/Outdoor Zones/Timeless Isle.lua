@@ -342,7 +342,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215772),	-- Jerthud, Hand of the Savior
 					i(215897),	-- Jinyu Staff (confirmed by Yuni)
 					i(215486),	-- Jinyu Waraxe
-					i(215722),	-- Mace of the Old Ones
 					i(215982),	-- Marista Greatsword
 					i(215549),	-- Miracoran, the Dissonant Chord
 					i(216540),	-- Mogu Lord's Shield
