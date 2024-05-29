@@ -203,21 +203,25 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(QUESTS, {
 				q(80443, {	-- Aid the Kirin Tor Offensive [A]
 					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 67933 },	-- Vereesa Windrunner
 					["coord"] = { 63.2, 72.1, ISLE_OF_THUNDER },
 				}),
 				q(81749, {	-- Aid the Kirin Tor Offensive [A]
 					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 67933 },	-- Vereesa Windrunner
 					["coord"] = { 63.2, 72.1, ISLE_OF_THUNDER },
 				}),
 				q(80442, {	-- Aid the Sunreavers Onslaught [H]
 					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 70520 },	-- Halduron Brightwing
 					["coord"] = { 32.5, 35.5, ISLE_OF_THUNDER },
 				}),
-				q(81749, {	-- Aid the Sunreavers Onslaught [H]
+				q(81748, {	-- Aid the Sunreavers Onslaught [H]
 					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 70520 },	-- Halduron Brightwing
 					["coord"] = { 32.5, 35.5, ISLE_OF_THUNDER },
 				}),
