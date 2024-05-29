@@ -118,6 +118,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215598),	-- Regal Slicer
 					i(215891),	-- Staff of Hidden Knowledge
 					i(210635),	-- Streamtalker Shield
+					i(215958),	-- Tian Monastery Edge
 					i(215860),	-- Wasteland Staff
 				}),
 			}),

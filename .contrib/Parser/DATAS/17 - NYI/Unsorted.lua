@@ -5944,7 +5944,6 @@ root(ROOTS.Unsorted, {
 					i(215937),	-- Imperial Wind Blade
 					i(215939),	-- Mogu Aspirant's Blade
 					i(215951),	-- Sha-Blighted Sword
-					i(215958),	-- Tian Monastery Edge
 					i(215961),	-- Qon's Iron Decree
 					i(215971),	-- Greatsword of Fallen Pride
 					i(215991),	-- Zerat, Soulburner's Greatsword
