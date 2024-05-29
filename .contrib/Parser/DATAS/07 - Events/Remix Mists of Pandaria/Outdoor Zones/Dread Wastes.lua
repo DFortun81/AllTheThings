@@ -52,7 +52,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(QUESTS, {
 				q(80320, {	-- Aid the Klaxxi
-					["isDaily"] = true,
+					["repeatable"] = true,
 					["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 					["coord"] = { 54.9, 35.8, DREAD_WASTES },
 				}),
