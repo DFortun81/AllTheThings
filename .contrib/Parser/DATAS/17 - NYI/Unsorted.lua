@@ -5895,7 +5895,6 @@ root(ROOTS.Unsorted, {
 					i(215606),	-- Firescribe Slicer
 					i(215607),	-- Ceremonial Spike
 					i(215610),	-- Dreadpriest's Dagger
-					i(215611),	-- Lightdrinker Dagger
 					i(215614),	-- Klaxxi Slicer
 					i(215616),	-- Pandaren Warknife
 					i(215622),	-- Imperial Longknife
