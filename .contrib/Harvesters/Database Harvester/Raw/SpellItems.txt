@@ -12143,3 +12143,7 @@
 7538@@@Dornogal Buckle|A:Professions-ChatIcon-Quality-Tier1:20:20|a
 7539@@@Dornogal Buckle|A:Professions-ChatIcon-Quality-Tier1:20:20|a
 7540@@@Dornogal Buckle A:Professions-ChatIcon-Quality-Tier1:20:20|a
+11.0.0.54935
+7496@@@Oil of Deep Toxins |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7497@@@Oil of Deep Toxins |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7498@@@Oil of Deep Toxins |A:Professions-ChatIcon-Quality-Tier3:20:20|a

@@ -1952,3 +1952,15 @@
 449325@@@Vicious Skyflayer
 451486@@@Sureki Skyrazor
 451491@@@Ascendant Skyrazor
+11.0.0.54935
+447910@@@[PH] Mount - Shalehorn (Brown) (Copper Saddle) (Player Mount)
+447911@@@[PH] Mount - Shalehorn (Crimson) (Dark Saddle) (Player Mount)
+447912@@@[PH] Mount - Shalehorn (Ivory) (Silver Saddle) (Player Mount)
+447913@@@[PH] Mount - Shalehorn (Yellow) (White Saddle) (Player Mount)
+448188@@@Machine Defense Unit 1-11
+452779@@@Ivory Goliathus
+457650@@@Plunderlord's Golden Crocolisk
+457654@@@Plunderlord's Radiant Crocolisk
+457656@@@Plunderlord's Midnight Crocolisk
+457659@@@Plunderlord's Weathered Crocolisk
+458335@@@Diamond Mechsuit

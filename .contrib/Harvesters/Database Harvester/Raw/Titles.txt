@@ -735,3 +735,8 @@
 562@@@%s, Slayer of the Deeps
 11.0.0.54774
 563@@@Deephauler %s
+11.0.0.54935
+564@@@Machine Whisperer %s
+565@@@Honorary Councilmember %s
+566@@@Lamplighter %s
+567@@@Thread-Spinner %s

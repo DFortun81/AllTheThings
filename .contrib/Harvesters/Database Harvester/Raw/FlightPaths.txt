@@ -2719,3 +2719,12 @@
 2964@@@Quest Path 9786: 11.0 Z2 - Campaign - Ch 3 - Dark Iron From Above - Boss Flyover - (LWB)
 11.0.0.54605
 2967@@@Quest Path 9870: 11.0 Raid - Nerubian - Zone - Thread Elevator - 04 Taxi Path 01 - TJS
+11.0.0.54935
+2933@@@Grand Rampart
+2934@@@The Pulsing Pit
+2935@@@Terrace of Majesty
+2936@@@The Swaying Span (One-way)
+2937@@@The Narthex
+2938@@@The Swaying Span
+2970@@@Tranquil Strand, Isle of Dorn
+2971@@@The Pulsing Pit (One-way)

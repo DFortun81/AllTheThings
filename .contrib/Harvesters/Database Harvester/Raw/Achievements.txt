@@ -15004,3 +15004,103 @@
 40620@@@Back to the Wall
 40621@@@The Rookery
 40622@@@Biblo Archivist
+11.0.0.54935
+20487@@@Ki'katal the Harvester kills (Mythic Ara-Kara, City of Echoes)
+20594@@@Flamegard's Hope
+20597@@@The War Within
+40152@@@Skyriding Glyphs: The Three Shields
+40166@@@Isle of Dorn Glyph Hunter
+40512@@@War Within Delves: Tier 2
+40514@@@War Within Delves: Tier 3
+40515@@@War Within Delves: Tier 4
+40516@@@War Within Delves: Tier 5
+40517@@@War Within Delves: Tier 6
+40518@@@War Within Delves: Tier 7
+40519@@@War Within Delves: Tier 8
+40520@@@War Within Delves: Tier 9
+40521@@@War Within Delves: Tier 10
+40623@@@I Only Need One Trip
+40624@@@Itsy Bitsy Spider
+40625@@@The Missing Lynx
+40628@@@Notable Machines
+40629@@@Bookworm
+40630@@@For the Collective
+40631@@@War Within Delves: Tier 1
+40632@@@No Harm Ever Came From Reading A Book
+40633@@@The Unseeming
+40634@@@You Can't Hang With Us
+40635@@@Branntastic
+40636@@@Sojourner of Azj-Kahet
+40637@@@Heroic: The Rookery
+40642@@@Mythic: The Rookery
+40643@@@The Stonevault
+40644@@@Heroic: The Stonevault
+40648@@@Mythic: The Stonevault
+40652@@@Goldie Baronbottom kills (Normal Cinderbrew Meadery)
+40653@@@Goldie Baronbottom kills (Heroic Cinderbrew Meadery)
+40654@@@Goldie Baronbottom kills (Mythic Cinderbrew Meadery)
+40657@@@Prioress Murrapray kills (Normal Priory of the Sacred Flame)
+40658@@@Prioress Murrapray kills (Heroic Priory of the Sacred Flame)
+40659@@@Prioress Murrapray kills (Mythic Priory of the Sacred Flame)
+40660@@@The War Within Season 1: Spelunker Supreme
+40662@@@It's Not Much, But It's Honest Work
+40663@@@Skyriding Glyphs: Dhar Oztan
+40664@@@Skyriding Glyphs: Storm's Watch
+40665@@@Skyriding Glyphs: Dhar Durgaz
+40666@@@Skyriding Glyphs: Sunken Shield
+40667@@@Skyriding Glyphs: Thul Medran
+40668@@@Skyriding Glyphs: Thunderhead Peak
+40669@@@Skyriding Glyphs: Cinderbrew Meadery
+40670@@@Skyriding Glyphs: Mourning Rise
+40671@@@Skyriding Glyphs: Ironwold
+40672@@@Skyriding Glyphs: Gundargaz
+40673@@@Skyriding Glyphs: The Stonevault Exterior
+40674@@@Skyriding Glyphs: The Lost Mines
+40675@@@Skyriding Glyphs: Chittering Den
+40676@@@Skyriding Glyphs: The Rumbling Wastes
+40677@@@Skyriding Glyphs: The Living Grotto
+40678@@@Skyriding Glyphs: Abyssal Excavation
+40679@@@Skyriding Glyphs: Taelloch Mine
+40680@@@Skyriding Glyphs: The Waterworks
+40681@@@Skyriding Glyphs: The Fangs
+40682@@@Skyriding Glyphs: Sina's Yearning
+40683@@@Skyriding Glyphs: Sanguine Grasps
+40684@@@Skyriding Glyphs: Dunelle's Kindness
+40685@@@Skyriding Glyphs: Bleak Sand
+40686@@@Skyriding Glyphs: Mereldar
+40687@@@Skyriding Glyphs: Priory of the Sacred Flame
+40688@@@Skyriding Glyphs: Fortune's Fall
+40689@@@Skyriding Glyphs: Velhan's Claim
+40690@@@Skyriding Glyphs: Tenir's Ascent
+40691@@@Skyriding Glyphs: Arathi's End
+40692@@@Skyriding Glyphs: Siegehold
+40693@@@Skyriding Glyphs: Ruptured Lake
+40694@@@Skyriding Glyphs: Eye of Ansurek
+40695@@@Skyriding Glyphs: Old Sacrificial Pit
+40696@@@Skyriding Glyphs: Deepwalker Pass
+40697@@@Skyriding Glyphs: The Maddening Deep
+40698@@@Skyriding Glyphs: Rak-Ush
+40699@@@Skyriding Glyphs: Silken Ward
+40700@@@Skyriding Glyphs: Trickling Abyss
+40701@@@Skyriding Glyphs: Untamed Valley
+40702@@@Khaz Algar Glyph Hunter
+40703@@@The Ringing Deeps Glyph Hunter
+40704@@@Hallowfall Glyph Hunter
+40705@@@Azj-Kahet Glyph Hunter
+40706@@@Izo, the Grand Splicer kills (Normal City of Threads)
+40709@@@Izo, the Grand Splicer kills (Heroic City of Threads)
+40710@@@Izo, the Grand Splicer kills (Mythic City of Threads)
+40711@@@Rasha'nan kills (Normal The Dawnbreaker)
+40714@@@Rasha'nan kills (Heroic The Dawnbreaker)
+40715@@@Rasha'nan kills (Mythic The Dawnbreaker)
+40716@@@Voidstone Monstrosity kills (Normal The Rookery)
+40717@@@Voidstone Monstrosity kills (Heroic The Rookery)
+40718@@@Voidstone Monstrosity kills (Mythic The Rookery)
+40719@@@Void Speaker Eirich (Normal The Stonevault)
+40721@@@Void Speaker Eirich (Heroic The Stonevault)
+40722@@@Void Speaker Eirich (Mythic The Stonevault)
+40723@@@[PH] 11.0 Mythic VFX Unlock
+40724@@@Treasures of the Ringing Deeps
+40725@@@War Within Delves: Endgame
+40726@@@War Within Delves: Tier 11
+40727@@@Skittershaw Spin

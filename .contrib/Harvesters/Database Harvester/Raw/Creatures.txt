@@ -21762,3 +21762,45 @@
 227226@@@Y'tekhi
 227228@@@Lilian Voss
 227297@@@Duke Velhan
+11.0.0.54935
+212742@@@Moira Thaurissan
+217825@@@Magni Bronzebeard
+222532@@@Bouncer
+223558@@@Skyriding Glyph
+223560@@@Tracker Skyriding Glyph
+225585@@@Widow Arak'nai
+226131@@@Thimble
+226132@@@Ru'murh
+226133@@@Swift
+226134@@@Bobbin
+226135@@@Heddle
+226136@@@Treadle
+226414@@@Stolen Skiff
+226577@@@Convoy Leader
+226596@@@Convoy Protector
+226600@@@Chitin Commander
+226601@@@Skitterling
+226602@@@Skitterling Leader
+227414@@@Claudius
+227451@@@Archmage Aethas Sunreaver
+227465@@@Guts
+227466@@@Arathi Aeroknight
+227488@@@Kirin Tor Guardian
+227492@@@Brann Bronzebeard
+227496@@@Strange Chest
+227497@@@Image of Zekvir
+227502@@@Kirin Tor Guardian
+227530@@@Delve Credit
+227551@@@Delve Credit
+227588@@@Captain Fareeya
+227600@@@Meesk the Venomtongue
+227601@@@Spindle
+227675@@@Delver's Guide
+227720@@@Sound Stalker - 11.0 Scenario - Theater Troupe - Audience
+227722@@@Xal'atath
+227723@@@Invisible Stalker
+227748@@@Vicious Skyrazor
+227758@@@Alleria Windrunner
+227762@@@Kirin Tor Portal Mage
+227766@@@Kirin Tor Portal Mage
+227776@@@Kordac Invisible Stalker
