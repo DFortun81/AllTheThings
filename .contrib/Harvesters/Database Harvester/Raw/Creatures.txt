@@ -218,11 +218,12 @@
 211025@@@Lil' Wrathion
 3.4.3.54261
 222858@@@Pinchy the Plunderer
+3.4.3.54948
+211012@@@Cypress
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
 4.4.0.54377
-211012@@@Cypress
 4.4.0.54500
 34278@@@Withers
 42177@@@Blue Mini Jouster
