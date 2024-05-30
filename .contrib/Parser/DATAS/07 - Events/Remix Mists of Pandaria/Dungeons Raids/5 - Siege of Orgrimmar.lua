@@ -321,6 +321,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215551),	-- Death Lotus Repeater
 						i(215835),	-- Drakebinder's Spire
 						i(210343),	-- Gar'tok, Might of the Faithful
+						i(215971),	-- Greatsword of Fallen Pride
+						i(215469),	-- Haromm's Frozen Battleaxe
 						i(215524),	-- Hisek's Longbow
 						i(215715),	-- Kardris' Scepter
 						i(215913),	-- Kil'ruk's Hateful Blade
@@ -329,6 +331,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215663),	-- Lucky Cricket Cage
 						i(215473),	-- Malkorok's Headtaker
 						i(215573),	-- Nazgrim's Shanker
+						i(215572),	-- Norushen's Dagger
 						i(215831),	-- Pride's Gaze
 						i(215659),	-- Prophecies of Y'Shaarj
 						i(215577),	-- Rik'kal's Bloody Blade

@@ -129,6 +129,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215894),	-- Jinyu Conduit
 					i(215987),	-- Jinyu Greatblade
 					i(215540),	-- Jinyu Shortbow (chest)
+					i(215650),	-- Pandaren Claw (drop)
 					i(215758),	-- Saurok Scepter
 					i(215866),	-- Staff of Focus (drop)
 					i(215590),	-- Shomi's Shanker

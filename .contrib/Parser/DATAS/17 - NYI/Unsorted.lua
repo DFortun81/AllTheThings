@@ -5868,11 +5868,8 @@ root(ROOTS.Unsorted, {
 				}),
 				n(WEAPONS, {
 					i(215946),	-- Valiant's Honorblade
-					i(215469),	-- Haromm's Frozen Battleaxe
-					i(215498),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215500),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
-					i(215513),	-- Wallwatcher's Axe
 					i(215517),	-- Uroe, Harbinger of Fear
 					i(215521),	-- Dagryn's Longbow
 					i(215523),	-- Dagryn's Longbow
@@ -5888,7 +5885,6 @@ root(ROOTS.Unsorted, {
 					i(215567),	-- Jinyu Poker
 					i(215568),	-- Jinyu Dagger
 					i(215569),	-- Norushen's Dagger
-					i(215572),	-- Norushen's Dagger
 					i(215575),	-- Nazgrim's Shanker
 					i(215599),	-- Mountainscaler Slicer
 					i(215606),	-- Firescribe Slicer
@@ -5897,12 +5893,10 @@ root(ROOTS.Unsorted, {
 					i(215614),	-- Klaxxi Slicer
 					i(215616),	-- Pandaren Warknife
 					i(215622),	-- Imperial Longknife
-					i(215650),	-- Pandaren Claw
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
 					i(215657),	-- Hozen Conduit
 					i(215675),	-- Wakener's Lantern
 					i(215677),	-- Jinyu's Light
-					i(215678),	-- Grummle Lantern
 					i(215680),	-- Hope's Effigy
 					i(215686),	-- Eye of the Hydra
 					i(215687),	-- Eye of the Hydra
@@ -5910,18 +5904,13 @@ root(ROOTS.Unsorted, {
 					i(215691),	-- Kor'kron Heavy Rifle
 					i(215699),	-- Grand Imperial Rifle
 					i(215701),	-- Jadewatch Rifle
-					i(215708),	-- Roar of the Quillen
 					i(215710),	-- Roar of the Quillen
 					i(215711),	-- Roar of the Quillen
 					i(215720),	-- Mace of the Old Ones
 					i(215722),	-- Mace of the Old Ones
 					i(215753),	-- Gao's Kegbreaker
 					i(215756),	-- Klaxxi Smasher
-					i(215759),	-- Saurok Mace
-					i(215765),	-- Mace of Dark Animus
 					i(215768),	-- Mace of Dark Animus
-					i(215769),	-- Jerthud, Hand of the Savior
-					i(215775),	-- Zeeg's Ancient Kegbreaker
 					i(215787),	-- Kazra'jin's Maul
 					i(215794),	-- Halberd of Inner Darkness
 					i(215810),	-- Warspear of Xuen
@@ -5935,11 +5924,8 @@ root(ROOTS.Unsorted, {
 					i(215921),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
 					i(215937),	-- Imperial Wind Blade
-					i(215939),	-- Mogu Aspirant's Blade
 					i(215951),	-- Sha-Blighted Sword
 					i(215961),	-- Qon's Iron Decree
-					i(215971),	-- Greatsword of Fallen Pride
-					i(215991),	-- Zerat, Soulburner's Greatsword
 					i(215993),	-- Zerat, Soulburner's Greatsword
 					i(216001),	-- Mountainsage Rod
 					i(216002),	-- Grummle Rod
@@ -5955,19 +5941,14 @@ root(ROOTS.Unsorted, {
 					i(216019),	-- Stormbreaker's Waraxe
 					i(216020),	-- Stormbreaker's Waraxe
 					i(216024),	-- Pandaren Hewer
-					i(216402),	-- Tia-Tia, the Spinning Star
 					i(216407),	-- Blade of the Sanguine Ritual
 					i(216411),	-- Fyn's Dagger
 					i(216415),	-- Iron Qon's Knife
 					i(216416),	-- Hozen Blade
 					i(216427),	-- Acid-Spine Bonebreaker
-					i(216430),	-- Torall, the Emperor's Scepter
 					i(216439),	-- Pandaren Book
 					i(216442),	-- Pandaren Decorative Fan
 					i(216444),	-- Pandaren Ritual Fan
-					i(216446),	-- Sphere of Arcing Lightning
-					i(216448),	-- Sphere of Arcing Lightning
-					i(216449),	-- Sphere of Arcing Lightning
 					i(216450),	-- Staff of the Monkey King
 					i(216451),	-- Quarterstaff of the Monkey King
 					i(216452),	-- Longstaff of the Monkey King
@@ -5976,8 +5957,6 @@ root(ROOTS.Unsorted, {
 					i(216455),	-- Pandaren Spire
 					i(216456),	-- Pandaren Staff
 					i(216457),	-- Pandaren Standard
-					i(216460),	-- Caduceus of Pure Moods
-					i(216465),	-- Dinomancer's Spire
 					i(216469),	-- Suen-Wo, Spire of the Rising Sun
 					i(216470),	-- Tian Monastery Spire
 					i(216474),	-- Temple Trainee's Sword

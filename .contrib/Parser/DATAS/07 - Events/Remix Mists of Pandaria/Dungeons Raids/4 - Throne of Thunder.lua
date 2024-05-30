@@ -265,15 +265,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216437),	-- Hammer of the Dawn
 						i(216412),	-- Iron Qon's Knife
 						i(215899),	-- Jalak's Spirit Staff
+						i(215769),	-- Jerthud, Hand of the Savior
 						i(215790),	-- Kazra'jin's Maul
+						i(215498),	-- Kura-Kura, Kazra'jin's Headtaker
 						i(215766),	-- Mace of Dark Animus
 						i(215625),	-- Megaera's Fang
 						i(215627),	-- Megaera's Fang
+						i(215708),	-- Roar of the Quillen
 						i(215811),	-- Shan-Dun, Breaker of Courage
 						i(215814),	-- Shan-Dun, Breaker of Courage
 						i(216016),	-- Shellsplitter Battleaxe
 						i(215965),	-- Soulblade of the Storm
 						i(215886),	-- Soulwood Spire
+						i(216446),	-- Sphere of Arcing Lightning
+						i(216449),	-- Sphere of Arcing Lightning
 						i(216466),	-- Suen-Wo, Spire of the Rising Sun
 						i(216400),	-- Tia-Tia, the Spinning Star
 						i(216403),	-- Tia-Tia, the Spinning Star
@@ -283,6 +288,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215545),	-- Tortoiseshell Longbow
 						i(215964),	-- Qon's Iron Decree
 						i(215773),	-- Zeeg's Ancient Kegbreaker (ToT LFR (2nd wing))
+						i(215991),	-- Zerat, Soulburner's Greatsword
 					})),
 					header(HEADERS.Achievement, 8069, {	-- Last Stand of the Zandalari
 						e(827, {	-- Jin'rokh the Breaker
@@ -671,12 +677,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(216432),	-- Acid-Spine Bonebreaker
 						i(216406),	-- Blade of the Sanguine Ritual
+						i(216460),	-- Caduceus of Pure Moods
+						i(216465),	-- Dinomancer's Spire
 						i(215771),	-- Jerthud, Hand of the Savior
 						i(216408),	-- Fyn's Dagger
 						i(216436),	-- Hammer of the Dawn
 						i(216414),	-- Iron Qon's Knife
 						i(215898),	-- Jalak's Spirit Staff
 						i(215497),	-- Kura-Kura, Kazra'jin's Headtaker
+						i(215765),	-- Mace of Dark Animus
 						i(215624),	-- Megaera's Fang
 						i(215548),	-- Miracoran, the Dissonant Chord
 						i(215963),	-- Qon's Iron Decree
@@ -684,8 +693,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216013),	-- Shellsplitter Battleaxe
 						i(215967),	-- Soulblade of the Storm
 						i(215888),	-- Soulwood Spire
+						i(216448),	-- Sphere of Arcing Lightning
 						i(216468),	-- Suen-Wo, Spire of the Rising Sun
+						i(216402),	-- Tia-Tia, the Spinning Star
+						i(216430),	-- Torall, the Emperor's Scepter
 						i(215544),	-- Tortoiseshell Longbow
+						i(215775),	-- Zeeg's Ancient Kegbreaker
 					})),
 					e(827, {	-- Jin'rokh the Breaker
 						["crs"] = { 69465 },	-- Jin'rokh the Breaker

@@ -141,7 +141,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215982),	-- Marista Greatsword
 					i(215597),	-- Mushan Slicer
 					i(216022),	-- Pandaren Axe
-					i(216424),	-- Pandaren Breaker -- Not 100% sure if I got it from here, its a mace after all.
+					i(216424),	-- Pandaren Breaker
 					i(216543),	-- Pandaren Bulwark
 					i(216445),	-- Pandaren Ceremonial Fan
 					i(216021),	-- Pandaren Hatchet

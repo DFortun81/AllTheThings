@@ -117,6 +117,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					i(215870),	-- Amberweaver's Rod
+					i(215945),	-- Binan Scimitar
 					i(215744),	-- Cloudfall Scepter
 					i(215867),	-- Diviner's Spire
 					i(215979),	-- Faded Forest Falchion
@@ -128,6 +129,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215950),	-- Mei's Sword
 					i(215639),	-- Mist Shaman's Knuckles (drop)
 					i(215559),	-- Mountainscaler Speargun
+					i(216424),	-- Pandaren Breaker
 					i(216025),	-- Pandaren Cleaver
 					i(216545),	-- Pandaren Deflector
 					i(216441),	-- Pandaren Manual
