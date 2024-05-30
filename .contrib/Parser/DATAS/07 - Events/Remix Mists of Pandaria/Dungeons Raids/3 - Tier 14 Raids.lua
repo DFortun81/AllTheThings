@@ -328,7 +328,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215852),	-- Gao-Rei, Staff of the Protector
 					i(215698),	-- Grand Imperial Rifle
 					i(215968),	-- Greatsword of the Iron Legion
-					i(216413),	-- Iron Qon's Knife
 					i(215900),	-- Jalak's Spirit Staff
 					i(215855),	-- Jin'ya, Orb of the Watercaller
 					i(215929),	-- Kilrak, Fangs of Terror (MSV normal)
@@ -336,7 +335,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215735),	-- Kri'tak, Scepter of the Swarm (confirmed 23.05.2024)
 					i(215737),	-- Kri'tak, Scepter of the Swarm (Alex: double up into LFR, MSV LFR 1st wing)
 					i(215935),	-- Loshan, Fear Incarnate (MSV normal)
-					i(215626),	-- Megaera's Fang
 					i(216529),	-- Protection of the Emperor
 					i(215799),	-- Qiang's Unbreakable Polearm
 					i(215586),	-- Regail's Fulminating Blade
@@ -345,7 +343,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215506),	-- Shin'ka, the Tyrant's Greataxe
 					i(215592),	-- Soulsever
 					i(215887),	-- Soulwood Spire
-					i(216447),	-- Sphere of Arcing Lightning
 					i(215976),	-- Starslicer (HoF normal)
 					i(216561),	-- Steelskin, Qiang's Bulwark
 					i(215694),	-- Taoren, the Malignant

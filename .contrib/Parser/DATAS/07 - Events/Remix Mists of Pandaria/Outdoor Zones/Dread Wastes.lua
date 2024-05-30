@@ -101,7 +101,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					i(215945),	-- Binan Scimitar
 					i(215509),	-- Bloodseeker's Greataxe
+					i(216575),	-- Darkhide Shield
 					i(215867),	-- Diviner's Spire
+					i(210337),	-- Faded Forest Hatchet
 					i(215600),	-- Grummle Shortblade
 					i(215656),	-- Hozen Fetish
 					i(215762),	-- Hozen Smasher
@@ -120,6 +122,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(210635),	-- Streamtalker Shield
 					i(215958),	-- Tian Monastery Edge
 					i(215860),	-- Wasteland Staff
+					i(215496),	-- Yaungol Axe
 				}),
 			}),
 		},

@@ -270,6 +270,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215625),	-- Megaera's Fang
 						i(215627),	-- Megaera's Fang
 						i(215811),	-- Shan-Dun, Breaker of Courage
+						i(215814),	-- Shan-Dun, Breaker of Courage
+						i(216016),	-- Shellsplitter Battleaxe
 						i(215965),	-- Soulblade of the Storm
 						i(215886),	-- Soulwood Spire
 						i(216466),	-- Suen-Wo, Spire of the Rising Sun
@@ -471,10 +473,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216598),	-- Eyes of the Doomed
 						i(216410),	-- Fyn's Dagger
 						i(216435),	-- Hammer of the Dawn
+						i(216413),	-- Iron Qon's Knife
 						i(215770),	-- Jerthud, Hand of the Savior
 						i(215788),	-- Kazra'jin's Maul
 						i(215499),	-- Kura-Kura, Kazra'jin's Headtaker
 						i(215767),	-- Mace of Dark Animus
+						i(215626),	-- Megaera's Fang
 						i(215547),	-- Miracoran, the Dissonant Chord
 						i(215962),	-- Qon's Iron Decree
 						i(215709),	-- Roar of the Quillen
@@ -482,6 +486,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216015),	-- Shellsplitter Battleaxe
 						i(216587),	-- Shield of the Gloaming
 						i(215966),	-- Soulblade of the Storm
+						i(216447),	-- Sphere of Arcing Lightning
 						i(216018),	-- Stormbreaker's Waraxe
 						i(216467),	-- Suen-Wo, Spire of the Rising Sun
 						i(216401),	-- Tia-Tia, the Spinning Star
@@ -671,8 +676,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216414),	-- Iron Qon's Knife
 						i(215898),	-- Jalak's Spirit Staff
 						i(215497),	-- Kura-Kura, Kazra'jin's Headtaker
+						i(215624),	-- Megaera's Fang
 						i(215548),	-- Miracoran, the Dissonant Chord
 						i(215963),	-- Qon's Iron Decree
+						i(215813),	-- Shan-Dun, Breaker of Courage
 						i(216013),	-- Shellsplitter Battleaxe
 						i(215967),	-- Soulblade of the Storm
 						i(215888),	-- Soulwood Spire

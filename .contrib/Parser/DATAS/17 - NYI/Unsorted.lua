@@ -5869,7 +5869,6 @@ root(ROOTS.Unsorted, {
 				n(WEAPONS, {
 					i(215946),	-- Valiant's Honorblade
 					i(215469),	-- Haromm's Frozen Battleaxe
-					i(215496),	-- Yaungol Axe
 					i(215498),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215500),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
@@ -5900,7 +5899,6 @@ root(ROOTS.Unsorted, {
 					i(215614),	-- Klaxxi Slicer
 					i(215616),	-- Pandaren Warknife
 					i(215622),	-- Imperial Longknife
-					i(215624),	-- Megaera's Fang
 					i(215640),	-- Barbs of the Rikkitun
 					i(215650),	-- Pandaren Claw
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
@@ -5930,8 +5928,6 @@ root(ROOTS.Unsorted, {
 					i(215787),	-- Kazra'jin's Maul
 					i(215794),	-- Halberd of Inner Darkness
 					i(215810),	-- Warspear of Xuen
-					i(215813),	-- Shan-Dun, Breaker of Courage
-					i(215814),	-- Shan-Dun, Breaker of Courage
 					i(215864),	-- Torch of Dawn
 					i(215877),	-- Cloudscorcher Staff
 					i(215901),	-- Jalak's Spirit Staff
@@ -5958,7 +5954,6 @@ root(ROOTS.Unsorted, {
 					i(216011),	-- Venomlord's Skull Wand
 					i(216012),	-- Venomlord's Skull Wand
 					i(216014),	-- Shellsplitter Battleaxe
-					i(216016),	-- Shellsplitter Battleaxe
 					i(216017),	-- Stormbreaker's Waraxe
 					i(216019),	-- Stormbreaker's Waraxe
 					i(216020),	-- Stormbreaker's Waraxe
@@ -5989,7 +5984,6 @@ root(ROOTS.Unsorted, {
 					i(216469),	-- Suen-Wo, Spire of the Rising Sun
 					i(216470),	-- Tian Monastery Spire
 					i(216474),	-- Temple Trainee's Sword
-					i(216475),	-- Temple Trainee's Blade
 					i(216478),	-- Pandaren Flamberge
 					i(216480),	-- Pandaren Greatblade
 					i(216481),	-- Pandaren Greatsword
@@ -6011,7 +6005,6 @@ root(ROOTS.Unsorted, {
 					i(216572),	-- Shomi's Barrier
 					i(216573),	-- Spiritsage's Barrier
 					i(216574),	-- Flamecaller's Bulwark
-					i(216575),	-- Darkhide Shield
 					i(216579),	-- Shield of the Devourer
 					i(216583),	-- Shield of the Protectorate
 					i(216584),	-- Barrier of the Protectorate
