@@ -5852,6 +5852,10 @@ root(ROOTS.Unsorted, {
 						------ NYI or only in Ensembles ------
 						i(220985),	-- Vest of the Shattered Vale
 					}),
+					filter(MAIL, {
+						------ NYI or only in Ensembles ------
+						i(220992),	-- Shirt of the Witch Doctor
+					}),
 				}),
 				filter(MISC, {
 					i(211932),	-- Cache of Infinite Treasure

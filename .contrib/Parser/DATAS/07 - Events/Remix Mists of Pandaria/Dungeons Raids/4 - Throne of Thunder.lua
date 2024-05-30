@@ -435,7 +435,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214658),	-- Pauldrons of the Witch Doctor
 							i(214663),	-- Robeguard of the Witch Doctor
 							i(214662),	-- Sabatons of the Witch Doctor
-							i(220992),	-- Shirt of the Witch Doctor
 						}),
 						filter(PLATE, {
 							-- DEATH KNIGHT
