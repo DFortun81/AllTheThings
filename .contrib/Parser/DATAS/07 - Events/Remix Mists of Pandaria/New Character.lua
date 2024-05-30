@@ -13,7 +13,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			-- TODO
 		}),
 		cl(DRUID, {
-			-- TODO
+			i(210270),	-- Thunderpaw Boots
+			i(210278),	-- Thunderpaw Breeches
+			i(210339),	-- Timerunner's Staff
+			i(208496),	-- Thunderpaw Tunic
 		}),
 		cl(EVOKER, {
 			-- TODO
@@ -25,7 +28,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(210639),	-- Timerunner's Bow
 		}),
 		cl(MAGE, {
-			-- TODO
+			i(210276),	-- Spirit-Waker Leggings
+			i(208494),	-- Spirit-Waker Robe
+			i(210268),	-- Spirit-Waker Treads
+			i(210339),	-- Timerunner's Staff
 		}),
 		cl(MONK, {
 			i(210344),	-- Timerunner's Mace
@@ -36,7 +42,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(208496),	-- Thunderpaw Tunic
 		}),
 		cl(PALADIN, {
-			-- TODO
+			i(208473),	-- Greenstone Boots
+			i(208470),	-- Greenstone Breastplate
+			i(210275),	-- Greenstone Legguards
+			i(210642),	-- Timerunner's Greatsword
 		}),
 		cl(PRIEST, {
 			i(210276),	-- Spirit-Waker Leggings
