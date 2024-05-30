@@ -14951,3 +14951,56 @@
 40537@@@Delve Loremaster: War Within
 40538@@@Brann Development
 40539@@@The Derby Dash
+11.0.0.54774
+40151@@@Mereldar Menace
+40215@@@Deepwind Ravine Shutout
+40542@@@Smelling History
+40543@@@<DNT> Patient 1 - Mereldar Infirmary
+40544@@@<DNT> Patient 2 - Mereldar Infirmary
+40545@@@<DNT> Patient 3 - Mereldar Infirmary
+40547@@@<DNT> Patient 4 - Mereldar Infirmary
+40548@@@<DNT> Patient 5 - Mereldar Infirmary
+40549@@@<DNT> Patient 6 - Mereldar Infirmary
+40550@@@<DNT> Patient 7 - Mereldar Infirmary
+40569@@@Nothing Boring About Borean (char specific hidden copy)
+40570@@@I've Toured the Fjord (char specific hidden copy)
+40571@@@Icecrown: The Final Goal (char specific hidden copy)
+40572@@@To Hellfire and Back (char specific hidden copy)
+40573@@@Shadow of the Betrayer (char specific hidden copy)
+40574@@@To Hellfire and Back (char specific hidden copy)
+40575@@@I've Toured the Fjord (char specific hidden copy)
+40576@@@Nothing Boring About Borean (char specific hidden copy)
+40577@@@Mighty Roamin' Krasaranger (char specific hidden copy)
+40578@@@Mighty Roamin' Krasaranger (char specific hidden copy)
+40579@@@That's Val'sharah Folks! (char specific hidden copy)
+40580@@@Azsuna Matata (char specific hidden copy)
+40581@@@Vrykul Story, Bro (char specific hidden copy)
+40582@@@Breaching the Tomb (char specific hidden copy)
+40583@@@You Are Now Prepared! (char specific hidden copy)
+40584@@@A Sound Plan (char specific hidden copy)
+40585@@@Super Size Snuffling
+40586@@@Awakening The Machine: Wave 20
+40587@@@Awakening The Machine: Wave 30
+40588@@@Awakening The Machine: Wave 40
+40589@@@Awakening The Machine: Wave 50
+40590@@@Priory of the Sacred Flame
+40591@@@Khaz Algar Diplomat
+40592@@@Heroic: Priory of the Sacred Flame
+40596@@@Mythic: Priory of the Sacred Flame
+40599@@@The Dawnbreaker
+40601@@@Heroic: The Dawnbreaker
+40604@@@Mythic: The Dawnbreaker
+40606@@@Flat Earthen
+40607@@@Wandering in the Ravine
+40608@@@Running in the Ravine
+40612@@@Sprinting in the Ravine
+40613@@@Resilient Runner
+40614@@@Gobblin' with Glublurp
+40615@@@Unexpected Arrival
+40616@@@Unexpected Arrivals
+40617@@@Deepholla
+40618@@@Lost and Found
+40619@@@Mine Poppin'
+40620@@@Back to the Wall
+40621@@@The Rookery
+40622@@@Biblo Archivist

@@ -733,3 +733,5 @@
 11.0.0.54675
 561@@@%s, Famed Slayer of Ansurek
 562@@@%s, Slayer of the Deeps
+11.0.0.54774
+563@@@Deephauler %s

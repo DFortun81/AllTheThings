@@ -1943,3 +1943,12 @@
 447190@@@Shadowed Swarmite
 448941@@@Beledar's Spawn
 449416@@@Ebonhide Ramolith
+11.0.0.54774
+441324@@@Remembered Golden Gryphon
+441325@@@Remembered Wind Rider
+447160@@@Raging Cinderbee
+447405@@@Vicious Skyflayer
+449258@@@Ol' Mole Rufus
+449325@@@Vicious Skyflayer
+451486@@@Sureki Skyrazor
+451491@@@Ascendant Skyrazor

@@ -21754,3 +21754,11 @@
 226837@@@Dagran Thaurissan II
 226871@@@Archmage Aethas Sunreaver
 226895@@@Archmage Aethas Sunreaver
+11.0.0.54774
+227136@@@Brann Bronzebeard
+227164@@@MiniZep
+227200@@@Archmage Modera
+227225@@@Xal'atath
+227226@@@Y'tekhi
+227228@@@Lilian Voss
+227297@@@Duke Velhan
