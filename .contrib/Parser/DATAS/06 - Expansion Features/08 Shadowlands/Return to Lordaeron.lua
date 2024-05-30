@@ -5,7 +5,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 	header(HEADERS.Achievement, 15579, {	-- Return to Lordaeron
 		q(65656, {	-- Call to Lordaeron
 			["provider"] = { "n", 173386 },	-- Calia Menethil
-			["coord"] = { 41.2, 69.3, ORIBOS },
+			["coords"] = {
+				{ 41.2, 69.3, ORIBOS },
+				{ 50.6, 75.5, ORGRIMMAR },
+			},
 			["races"] = HORDE_ONLY,
 		}),
 		q(65655, {	-- Eyes of the Wolf
