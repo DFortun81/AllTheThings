@@ -6778,11 +6778,13 @@ local function SetGroupVisibility(parent, group)
 		forceShowParent = visible;
 	end
 	-- Apply the visibility to the group
-	if visible then group.visible = true; end
-	-- source ignored group which is determined to be visible should ensure the parent is also visible
-	if not forceShowParent and visible and group.sourceIgnored then
-		forceShowParent = true;
-		-- app.PrintDebug("SGV:ForceParent",parent.text,"via Source Ignored",group.text)
+	if visible then
+		group.visible = true;
+		-- source ignored group which is determined to be visible should ensure the parent is also visible
+		if not forceShowParent and group.sourceIgnored then
+			forceShowParent = true;
+			-- app.PrintDebug("SGV:ForceParent",parent.text,"via Source Ignored",group.text)
+		end
 	end
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
@@ -6829,11 +6831,13 @@ local function SetThingVisibility(parent, group)
 		forceShowParent = visible;
 	end
 	-- Apply the visibility to the group
-	if visible then group.visible = true; end
-	-- source ignored group which is determined to be visible should ensure the parent is also visible
-	if not forceShowParent and visible and group.sourceIgnored then
-		forceShowParent = true;
-		-- if debug then print("SGV:ForceParent",parent.text,"via Source Ignored",group.text) end
+	if visible then
+		group.visible = true;
+		-- source ignored group which is determined to be visible should ensure the parent is also visible
+		if not forceShowParent and group.sourceIgnored then
+			forceShowParent = true;
+			-- app.PrintDebug("STV:ForceParent",parent.text,"via Source Ignored",group.text)
+		end
 	end
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
