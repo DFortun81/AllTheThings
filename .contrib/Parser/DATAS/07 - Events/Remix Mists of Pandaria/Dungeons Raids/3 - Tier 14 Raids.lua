@@ -482,6 +482,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215931),	-- Kilrak, Fangs of Terror
 					i(215736),	-- Kri'tak, Scepter of the Swarm
 					i(215933),	-- Loshan, Fear Incarnate
+					i(216532),	-- Protection of the Emperor
 					i(215800),	-- Qiang's Unbreakable Polearm
 					i(215587),	-- Regail's Fulminating Blade
 					i(215927),	-- Scimitar of Seven Stars

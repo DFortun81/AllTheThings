@@ -764,6 +764,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215833),	-- Pride's Gaze
 						i(215661),	-- Prophecies of Y'shaarj
 						i(215630),	-- Softfoot's Iron Claw
+						i(216548),	-- Visage of Dread
 						i(215503),	-- Xal'atoh, Malformed Image of Gorehowl
 						i(215911),	-- Xifeng, Longblade of the Guardian
 					})),

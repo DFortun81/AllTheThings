@@ -5963,15 +5963,14 @@ root(ROOTS.Unsorted, {
 					i(216478),	-- Pandaren Flamberge
 					i(216480),	-- Pandaren Greatblade
 					i(216481),	-- Pandaren Greatsword
+					i(216530),	-- Protection of the Emperor
 					i(216531),	-- Protection of the Emperor
-					i(216532),	-- Protection of the Emperor
 					i(216533),	-- Ironwood Shield
 					i(216534),	-- Ironwood Deflector
 					i(216537),	-- Mogu Lord's Deflector
 					i(216539),	-- Mogu Lord's Barrier
 					i(216541),	-- Pandaren Barrier
 					i(216546),	-- Visage of Dread
-					i(216548),	-- Visage of Dread
 					i(216553),	-- Norushen's Tower Shield
 					i(216554),	-- Norushen's Tower Shield
 					i(216555),	-- Shield of the Fallen General
