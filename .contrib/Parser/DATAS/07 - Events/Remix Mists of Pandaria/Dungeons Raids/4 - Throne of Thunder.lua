@@ -20,124 +20,124 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(ACHIEVEMENTS, {
 					ach(19955, {	-- Raid Finder: Throne of Thunder
 						crit(65724, {	-- Jin'rokh the Breaker
-							["_encounter"] = { 827, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 827, DIFFICULTY.RAID.FINDER },
 						}),
 						crit(65725, {	-- Horridon
-							["_encounter"] = { 819, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 819, DIFFICULTY.RAID.FINDER },
 						}),
 						crit(65726, {	-- Council of Elders
-							["_encounter"] = { 816, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 816, DIFFICULTY.RAID.FINDER },
 						}),
 						crit(65727, {	-- Tortos
-							["_encounter"] = { 825, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 825, DIFFICULTY.RAID.FINDER },
 						}),
 						crit(65728, {	-- Megaera
-							["_encounter"] = { 821, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 821, DIFFICULTY.RAID.FINDER },
 						}),
 						crit(65729, {	-- Ji-Kun
-							["_encounter"] = { 828, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 828, DIFFICULTY.RAID.FINDER },
 						}),
 						crit(65730, {	-- Durumu the Forgotten
-							["_encounter"] = { 818, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 818, DIFFICULTY.RAID.FINDER },
 						}),
 						crit(65731, {	-- Primordius
-							["_encounter"] = { 820, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 820, DIFFICULTY.RAID.FINDER },
 						}),
 						crit(65732, {	-- Dark Animus
-							["_encounter"] = { 824, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 824, DIFFICULTY.RAID.FINDER },
 						}),
 						crit(65733, {	-- Iron Qon
-							["_encounter"] = { 817, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 817, DIFFICULTY.RAID.FINDER },
 						}),
 						crit(65734, {	-- Twin Empyreans
-							["_encounter"] = { 829, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 829, DIFFICULTY.RAID.FINDER },
 						}),
 						crit(65735, {	-- Lei Shen
-							["_encounter"] = { 832, DIFFICULTY.RAID.LFR },
+							["_encounter"] = { 832, DIFFICULTY.RAID.FINDER },
 						}),
 					}),
 					ach(19956, {	-- Throne of Thunder
 						crit(65736, {	-- Jin'rokh the Breaker
-							["_encounter"] = { 827, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 827, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 						crit(65737, {	-- Horridon
-							["_encounter"] = { 819, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 819, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 						crit(65738, {	-- Council of Elders
-							["_encounter"] = { 816, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 816, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 						crit(65739, {	-- Tortos
-							["_encounter"] = { 825, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 825, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 						crit(65740, {	-- Megaera
-							["_encounter"] = { 821, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 821, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 						crit(65741, {	-- Ji-Kun
-							["_encounter"] = { 828, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 828, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 						crit(65742, {	-- Durumu the Forgotten
-							["_encounter"] = { 818, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 818, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 						crit(65743, {	-- Primordius
-							["_encounter"] = { 820, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 820, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 						crit(65744, {	-- Dark Animus
-							["_encounter"] = { 824, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 824, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 						crit(65745, {	-- Iron Qon
-							["_encounter"] = { 817, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 817, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 						crit(65746, {	-- Twin Empyreans
-							["_encounter"] = { 829, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 829, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 						crit(65747, {	-- Lei Shen
-							["_encounter"] = { 832, DIFFICULTY.RAID.NORMAL },
+							["_encounter"] = { 832, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 						}),
 					}),
 					ach(19957, {	-- Heroic: Throne of Thunder
 						crit(65748, {	-- Jin'rokh the Breaker
-							["_encounter"] = { 827, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 827, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65749, {	-- Horridon
-							["_encounter"] = { 819, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 819, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65750, {	-- Council of Elders
-							["_encounter"] = { 816, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 816, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65751, {	-- Tortos
-							["_encounter"] = { 825, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 825, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65752, {	-- Megaera
-							["_encounter"] = { 821, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 821, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65753, {	-- Ji-Kun
-							["_encounter"] = { 828, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 828, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65754, {	-- Durumu the Forgotten
-							["_encounter"] = { 818, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 818, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65755, {	-- Primordius
-							["_encounter"] = { 820, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 820, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65756, {	-- Dark Animus
-							["_encounter"] = { 824, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 824, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65757, {	-- Iron Qon
-							["_encounter"] = { 817, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 817, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65758, {	-- Twin Empyreans
-							["_encounter"] = { 829, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 829, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65759, {	-- Lei Shen
-							["_encounter"] = { 832, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 832, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 						crit(65760, {	-- Ra-den
-							["_encounter"] = { 831, DIFFICULTY.RAID.HEROIC },
+							["_encounter"] = { 831, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 						}),
 					}),
 					ach(19921),		-- Shado-Pan Assault
 				}),
-				d(DIFFICULTY.RAID.LFR, {
+				d(DIFFICULTY.RAID.FINDER, {
 					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
 						filter(CLOTH, {
 							-- PRIEST
@@ -350,7 +350,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}),
 				}),
-				d(DIFFICULTY.RAID.NORMAL, {
+				d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
 						filter(CLOTH, {
 							-- MAGE
@@ -556,7 +556,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						["crs"] = { 68397 },	-- Lei Shen
 					}),
 				}),
-				d(DIFFICULTY.RAID.HEROIC, {
+				d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
 						filter(CLOTH, {
 							-- MAGE

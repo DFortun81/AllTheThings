@@ -24,7 +24,7 @@ end
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(RAIDS, {
 		n(TIER_14_RAIDS, {
-			mapped(DIFFICULTY.RAID.LFR, bubbleDown({ ["modID"] = 0 }, {
+			mapped(DIFFICULTY.RAID.FINDER, bubbleDown({ ["modID"] = 0 }, {
 				n(ARMOR, {
 					filter(CLOTH, {
 						-- MAGE
@@ -200,7 +200,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215674),	-- Zephyrcall Censer (MSV LFR (1st wing))
 				}),
 			})),
-			mapped(DIFFICULTY.RAID.NORMAL, bubbleDown({ ["modID"] = 0 }, {
+			mapped(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, bubbleDown({ ["modID"] = 0 }, {
 				n(ARMOR, {
 					filter(CLOTH, {
 						-- MAGE
@@ -352,7 +352,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215672),	-- Zephyrcall Censer
 				}),
 			})),
-			mapped(DIFFICULTY.RAID.HEROIC, bubbleDown({ ["modID"] = 0 }, {
+			mapped(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, bubbleDown({ ["modID"] = 0 }, {
 				n(ARMOR, {
 					filter(CLOTH, {
 						-- MAGE
@@ -509,66 +509,66 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(ACHIEVEMENTS, {
 						ach(19946, {	-- Raid Finder: Mogu'shan Vaults
 							crit(65677, {	-- The Stone Guard
-								["_encounter"] = { 679, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 679, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65678, {	-- Feng the Accursed
-								["_encounter"] = { 689, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 689, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65679, {	-- Gara'jal the Spiritbinder
-								["_encounter"] = { 682, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 682, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65681, {	-- The Spirit Kings
-								["_encounter"] = { 687, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 687, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65680, {	-- Elegon
-								["_encounter"] = { 726, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 726, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65682, {	-- Will of the Emperor
-								["_encounter"] = { 677, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 677, DIFFICULTY.RAID.FINDER },
 							}),
 						}),
 						ach(19947, {	-- Mogu'shan Vaults
 							crit(65683, {	-- The Stone Guard
-								["_encounter"] = { 679, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 679, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65684, {	-- Feng the Accursed
-								["_encounter"] = { 689, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 689, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65685, {	-- Gara'jal the Spiritbinder
-								["_encounter"] = { 682, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 682, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65686, {	-- The Spirit Kings
-								["_encounter"] = { 687, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 687, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65687, {	-- Elegon
-								["_encounter"] = { 726, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 726, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65688, {	-- Will of the Emperor
-								["_encounter"] = { 677, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 677, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 						}),
 						ach(19948, {	-- Heroic: Mogu'shan Vaults
 							crit(65689, {	-- The Stone Guard
-								["_encounter"] = { 679, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 679, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65690, {	-- Feng the Accursed
-								["_encounter"] = { 689, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 689, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65691, {	-- Gara'jal the Spiritbinder
-								["_encounter"] = { 682, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 682, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65692, {	-- The Spirit Kings
-								["_encounter"] = { 687, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 687, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65693, {	-- Elegon
-								["_encounter"] = { 726, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 726, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65694, {	-- Will of the Emperor
-								["_encounter"] = { 677, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 677, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 						}),
 					}),
-					d(DIFFICULTY.RAID.LFR, {
+					d(DIFFICULTY.RAID.FINDER, {
 						header(HEADERS.Achievement, 6458, {	-- Guardians of Mogu'shan
 							e(679, {	-- The Stone Guard
 								["crs"] = {
@@ -605,7 +605,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							}),
 						}),
 					}),
-					d(DIFFICULTY.RAID.NORMAL, {
+					d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 						e(679, {	-- The Stone Guard
 							["crs"] = {
 								60047,	-- Amethyst Guardian
@@ -638,7 +638,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							},
 						}),
 					}),
-					d(DIFFICULTY.RAID.HEROIC, {
+					d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 						e(679, {	-- The Stone Guard
 							["crs"] = {
 								60047,	-- Amethyst Guardian
@@ -684,66 +684,66 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(ACHIEVEMENTS, {
 						ach(19949, {	-- Raid Finder: Heart of Fear
 							crit(65696, {	-- Imperial Vizier Zor'lok
-								["_encounter"] = { 745, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 745, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65695, {	-- Blade Lord Ta'yak
-								["_encounter"] = { 744, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 744, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65697, {	-- Garalon
-								["_encounter"] = { 713, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 713, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65698, {	-- Wind Lord Mel'jarak
-								["_encounter"] = { 741, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 741, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65699, {	-- Amber-Shaper Un'sok
-								["_encounter"] = { 737, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 737, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65700, {	-- Grand Empress Shek'zeer
-								["_encounter"] = { 743, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 743, DIFFICULTY.RAID.FINDER },
 							}),
 						}),
 						ach(19950, {	-- Heart of Fear
 							crit(65703, {	-- Imperial Vizier Zor'lok
-								["_encounter"] = { 745, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 745, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65706, {	-- Blade Lord Ta'yak
-								["_encounter"] = { 744, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 744, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65705, {	-- Garalon
-								["_encounter"] = { 713, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 713, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65702, {	-- Wind Lord Mel'jarak
-								["_encounter"] = { 741, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 741, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65701, {	-- Amber-Shaper Un'sok
-								["_encounter"] = { 737, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 737, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65704, {	-- Grand Empress Shek'zeer
-								["_encounter"] = { 743, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 743, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 						}),
 						ach(19951, {	-- Heroic: Heart of Fear
 							crit(65707, {	-- Imperial Vizier Zor'lok
-								["_encounter"] = { 745, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 745, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65708, {	-- Blade Lord Ta'yak
-								["_encounter"] = { 744, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 744, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65709, {	-- Garalon
-								["_encounter"] = { 713, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 713, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65710, {	-- Wind Lord Mel'jarak
-								["_encounter"] = { 741, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 741, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65711, {	-- Amber-Shaper Un'sok
-								["_encounter"] = { 737, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 737, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65712, {	-- Grand Empress Shek'zeer
-								["_encounter"] = { 743, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 743, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 						}),
 					}),
-					d(DIFFICULTY.RAID.LFR, {
+					d(DIFFICULTY.RAID.FINDER, {
 						header(HEADERS.Achievement, 6718, {	-- The Dread Approach
 							e(745, {	-- Imperial Vizier Zor'lok
 								["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
@@ -770,7 +770,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							}),
 						}),
 					}),
-					d(DIFFICULTY.RAID.NORMAL, {
+					d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 						e(745, {	-- Imperial Vizier Zor'lok
 							["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
 						}),
@@ -790,7 +790,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							["crs"] = { 62837 },	-- Grand Empress Shek'zeer
 						}),
 					}),
-					d(DIFFICULTY.RAID.HEROIC, {
+					d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 						e(745, {	-- Imperial Vizier Zor'lok
 							["crs"] = { 62980 },	-- Imperial Vizier Zor'lok
 						}),
@@ -820,48 +820,48 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(ACHIEVEMENTS, {
 						ach(19952, {	-- Raid Finder: Terrace of Endless Spring
 							crit(65713, {	-- Protectors of the Endless
-								["_encounter"] = { 683, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 683, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65714, {	-- Tsulong
-								["_encounter"] = { 742, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 742, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65715, {	-- Lei Shi
-								["_encounter"] = { 729, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 729, DIFFICULTY.RAID.FINDER },
 							}),
 							crit(65716, {	-- Sha of Fear
-								["_encounter"] = { 709, DIFFICULTY.RAID.LFR },
+								["_encounter"] = { 709, DIFFICULTY.RAID.FINDER },
 							}),
 						}),
 						ach(19953, {	-- Terrace of Endless Spring
 							crit(65717, {	-- Protectors of the Endless
-								["_encounter"] = { 683, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 683, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65718, {	-- Tsulong
-								["_encounter"] = { 742, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 742, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65719, {	-- Lei Shi
-								["_encounter"] = { 729, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 729, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 							crit(65720, {	-- Sha of Fear
-								["_encounter"] = { 709, DIFFICULTY.RAID.NORMAL },
+								["_encounter"] = { 709, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL },
 							}),
 						}),
 						ach(19954, {	-- Heroic: Terrace of Endless Spring
 							crit(65717, {	-- Protectors of the Endless
-								["_encounter"] = { 683, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 683, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65721, {	-- Tsulong
-								["_encounter"] = { 742, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 742, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65722, {	-- Lei Shi
-								["_encounter"] = { 729, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 729, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 							crit(65723, {	-- Sha of Fear
-								["_encounter"] = { 709, DIFFICULTY.RAID.HEROIC },
+								["_encounter"] = { 709, DIFFICULTY.LEGACY_RAID.MULTI.HEROIC },
 							}),
 						}),
 					}),
-					d(DIFFICULTY.RAID.LFR, {
+					d(DIFFICULTY.RAID.FINDER, {
 						header(HEADERS.Achievement, 6689, {	-- Terrace of Endless Spring
 							e(683, {	-- Protectors of the Endless
 								["crs"] = {
@@ -881,7 +881,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							}),
 						}),
 					}),
-					d(DIFFICULTY.RAID.NORMAL, {
+					d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL, {
 						e(683, {	-- Protectors of the Endless
 							["crs"] = {
 								60583,	-- Protector Kaolan
@@ -899,7 +899,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							["crs"] = { 60999 },	-- Sha of Fear
 						}),
 					}),
-					d(DIFFICULTY.RAID.HEROIC, {
+					d(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, {
 						e(683, {	-- Protectors of the Endless
 							["crs"] = {
 								60583,	-- Protector Kaolan
