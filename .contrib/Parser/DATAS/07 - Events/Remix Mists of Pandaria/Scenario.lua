@@ -138,7 +138,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215885),	-- Teachings of Shaohao
 				i(215538),	-- Tempestuous Shortbow (hc scenario)
 				i(215594),	-- Warbringer's Blade
-				i(215510),	-- Warbringer's Chopper (unsure if it is was hc scenario and daily box)
 				i(215808),	-- Yak-Herder's Longspear (normal scenario)
 				i(215707),	-- Yan-Zhu's Rifle (hc scenario)
 			}),

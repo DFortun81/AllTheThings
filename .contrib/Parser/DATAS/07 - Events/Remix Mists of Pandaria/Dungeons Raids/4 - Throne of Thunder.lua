@@ -690,6 +690,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215963),	-- Qon's Iron Decree
 						i(215813),	-- Shan-Dun, Breaker of Courage
 						i(216013),	-- Shellsplitter Battleaxe
+						i(216585),	-- Shield of the Gloaming
 						i(215967),	-- Soulblade of the Storm
 						i(215888),	-- Soulwood Spire
 						i(216448),	-- Sphere of Arcing Lightning

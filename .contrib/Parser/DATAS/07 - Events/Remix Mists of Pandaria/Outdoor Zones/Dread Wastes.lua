@@ -109,6 +109,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215656),	-- Hozen Fetish
 					i(215762),	-- Hozen Smasher
 					i(215596),	-- Jadestone Dagger
+					i(215701),	-- Jadewatch Rifle (chest)
 					i(215772),	-- Jerthud, Hand of the Savior (either here or townlong)
 					i(215541),	-- Jinyu Warbow (chest)
 					i(215988),	-- Jinyu Greatsword

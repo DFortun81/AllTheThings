@@ -348,6 +348,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(210638),	-- Mushan Hewer
 					i(215750),	-- Ook Breaker
 					i(216423),	-- Pandaren Basher
+					i(216024),	-- Pandaren Hewer
 					i(216438),	-- Pandaren Manuscript
 					i(216542),	-- Pandaren Protector
 					i(216479),	-- Pandaren Waveblade

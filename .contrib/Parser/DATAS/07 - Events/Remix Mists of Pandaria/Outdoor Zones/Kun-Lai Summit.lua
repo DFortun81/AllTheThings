@@ -147,6 +147,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216021),	-- Pandaren Hatchet
 					i(216421),	-- Pandaren Mace
 					i(216544),	-- Pandaren Shield
+					i(216479),	-- Pandaren Waveblade
 					i(216482),	-- Pandaren Windblade
 					i(216440),	-- Pandaren Tome
 					i(216614),	-- Seawatch Crossbow

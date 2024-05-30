@@ -146,6 +146,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215658),	-- Hozen Effigy
 					i(215764),	-- Hozen Mace
 					i(215620),	-- Imperial Dagger
+					i(215937),	-- Imperial Wind Blade
 					i(215947),	-- Inkgill Sword
 					i(215740),	-- Jinyu Bonebreaker
 					i(215989),	-- Jinyu Flamberge
@@ -158,12 +159,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215618),	-- Pandaren Triblade
 					i(215981),	-- Red Crane Greatsword
 					i(215760),	-- Saurok Breaker
+					i(215951),	-- Sha-Blighted Sword
 					i(215802),	-- Spear of Feral Rage
 					i(215602),	-- Spiritbound Stabber
 					i(215892),	-- Staff of the Black Ox
 					i(216571),	-- Tian Deflector
 					i(215959),	-- Tian Monastery Sword (drop)
 					i(215514),	-- Wallwatcher's Longaxe
+					i(215804),	-- Wallwatcher's Partisan (drop)
+					i(215510),	-- Warbringer's Chopper
 					i(215782),	-- Wasteland Maul
 					i(215943),	-- Wasteland Scimitar
 					i(215494),	-- Yaungol Cleaver

@@ -5875,9 +5875,7 @@ root(ROOTS.Unsorted, {
 					i(215500),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
 					i(215517),	-- Uroe, Harbinger of Fear
-					i(215521),	-- Dagryn's Longbow
 					i(215523),	-- Dagryn's Longbow
-					i(215525),	-- Hisek's Longbow
 					i(215533),	-- Marista Longbow
 					i(215534),	-- Shado-Pan Longbow
 					i(215539),	-- Jinyu Longbow
@@ -5904,13 +5902,9 @@ root(ROOTS.Unsorted, {
 					i(215680),	-- Hope's Effigy
 					i(215686),	-- Eye of the Hydra
 					i(215687),	-- Eye of the Hydra
-					i(215690),	-- Kor'kron Heavy Rifle
-					i(215691),	-- Kor'kron Heavy Rifle
 					i(215699),	-- Grand Imperial Rifle
-					i(215701),	-- Jadewatch Rifle
 					i(215710),	-- Roar of the Quillen
 					i(215711),	-- Roar of the Quillen
-					i(215720),	-- Mace of the Old Ones
 					i(215722),	-- Mace of the Old Ones
 					i(215753),	-- Gao's Kegbreaker
 					i(215756),	-- Klaxxi Smasher
@@ -5927,8 +5921,6 @@ root(ROOTS.Unsorted, {
 					i(215914),	-- Kil'ruk's Hateful Blade
 					i(215921),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
-					i(215937),	-- Imperial Wind Blade
-					i(215951),	-- Sha-Blighted Sword
 					i(215961),	-- Qon's Iron Decree
 					i(215993),	-- Zerat, Soulburner's Greatsword
 					i(216001),	-- Mountainsage Rod
@@ -5944,7 +5936,6 @@ root(ROOTS.Unsorted, {
 					i(216017),	-- Stormbreaker's Waraxe
 					i(216019),	-- Stormbreaker's Waraxe
 					i(216020),	-- Stormbreaker's Waraxe
-					i(216024),	-- Pandaren Hewer
 					i(216407),	-- Blade of the Sanguine Ritual
 					i(216411),	-- Fyn's Dagger
 					i(216415),	-- Iron Qon's Knife
@@ -5973,7 +5964,6 @@ root(ROOTS.Unsorted, {
 					i(216534),	-- Ironwood Deflector
 					i(216537),	-- Mogu Lord's Deflector
 					i(216539),	-- Mogu Lord's Barrier
-					i(216541),	-- Pandaren Barrier
 					i(216546),	-- Visage of Dread
 					i(216553),	-- Norushen's Tower Shield
 					i(216554),	-- Norushen's Tower Shield
@@ -5987,7 +5977,6 @@ root(ROOTS.Unsorted, {
 					i(216579),	-- Shield of the Devourer
 					i(216583),	-- Shield of the Protectorate
 					i(216584),	-- Barrier of the Protectorate
-					i(216585),	-- Shield of the Gloaming
 					i(216586),	-- Shield of the Gloaming
 					i(216588),	-- Shield of the Gloaming
 					i(216589),	-- Tortos' Shell

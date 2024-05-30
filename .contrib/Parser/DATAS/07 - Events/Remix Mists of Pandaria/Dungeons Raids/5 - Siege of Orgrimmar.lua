@@ -329,6 +329,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(210336),	-- Kor'kron Heavy Rifle
 						i(215477),	-- Korven's Crescent
 						i(215663),	-- Lucky Cricket Cage
+						i(215720),	-- Mace of the Old Ones
 						i(215473),	-- Malkorok's Headtaker
 						i(215573),	-- Nazgrim's Shanker
 						i(215572),	-- Norushen's Dagger
@@ -529,13 +530,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(215918),	-- Arcweaver Spellblade
+						i(215521),	-- Dagryn's Longbow
 						i(215554),	-- Death Lotus Repeater
 						i(215836),	-- Drakebinder's Spire
 						i(215777),	-- Gar'tok, Might of the Faithful
 						i(215972),	-- Greatsword of Fallen Pride
 						i(215795),	-- Halberd of Inner Darkness
 						i(215470),	-- Haromm's Frozen Battleaxe
+						i(215525),	-- Hisek's Longbow
 						i(215716),	-- Kardris' Scepter
+						i(215690),	-- Kor'kron Heavy Rifle
 						i(215478),	-- Korven's Crescent
 						i(215664),	-- Lucky Cricket Cage
 						i(215721),	-- Mace of the Old Ones
@@ -748,6 +752,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215526),	-- Hisek's Longbow
 						i(215717),	-- Kardi's Scepter
 						i(215915),	-- Kil'ruk's Hateful Blade
+						i(215691),	-- Kor'kron Heavy Rifle
 						i(215665),	-- Lucky Cricket Cage
 						i(215479),	-- Korven's Crestcent
 						i(215719),	-- Mace of the Old Ones
