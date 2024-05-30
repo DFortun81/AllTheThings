@@ -104,6 +104,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			o(446341, {	-- Dusty Prospector's Chest
 				["coord"] = { 49.0, 31.6, THE_RINGING_DEEPS },
 				--["questID"] = x,
+				--["cost"] = {
+				--	{ "i", xx, 1 },	-- Rought Deepdiamond Shard
+				--	{ "i", xx, 1 },	-- Rought Deepemerald Shard
+				--	{ "i", xx, 1 },	-- Rought Deepamethyst Shard
+				--	{ "i", xx, 1 },	-- Rought Deepruby Shard
+				--	{ "i", xx, 1 },	-- Rought Deeptopaz Shard
+				--},
+				--["g"] = {
+				--	i(),	-- 
+				--},
 			}),
 			o(420053, {	-- Webbed Knapsack
 				["coord"] = { 68.9, 38.8, THE_RINGING_DEEPS },

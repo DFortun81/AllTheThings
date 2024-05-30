@@ -19,6 +19,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82041, {	-- Beledar's Blessing
 					["coord"] = { 24.3, 60.9, HALLOWFALL },
 				}),
+				q(82259, {	-- Honoring Our Fallen
+					["coord"] = { 71.8, 61.0, HALLOWFALL },
+					["g"] = {
+						i(213191),	-- Arathi Tinderbox (QI!)
+					},
+				}),
 				q(82583, {	-- Igniting the Fire Within
 					["coord"] = { 55.2, 32.7, HALLOWFALL },
 				}),
@@ -52,6 +58,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(81822, {	-- Skyrider Racing - Mereldar Meander
 					-- normal - 80260 / advanced - 80269 / reversed - 80275
 					["coord"] = { 39.0, 61.4, HALLOWFALL },
+				}),
+				q(81819, {	-- Skyrider Racing - Stillstone Slalom
+					-- normal - 80259 / advanced - 80268 / reversed - 80274
+					["coord"] = { 60.4, 26.0, HALLOWFALL },
 				}),
 				q(81816, {	-- Skyrider Racing - Tenir's Traversal
 					-- normal - 80257 / advanced - 80266 / reversed - 80272

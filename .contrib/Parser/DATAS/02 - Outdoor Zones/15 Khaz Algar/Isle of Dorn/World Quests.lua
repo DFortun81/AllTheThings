@@ -39,10 +39,27 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82237, {	-- Rising the Falls
 					["coord"] = { 56.8, 42.5, ISLE_OF_DORN },
 				}),
+				q(80295, {	-- Rocks, Water and Elemental Fodder
+					--["coord"] = { 73.6, 55.1, ISLE_OF_DORN },	-- need proper coords from popup, cause wq area can be started @ 71.3, 46.4
+					["g"] = {
+						i(217343),	-- Living Coalesced Silt (QI!)
+					},
+				}),
+				q(81803, {	-- Skyrider Racing - Basin Bypass
+					-- normal - ? / advanced - ? / reversed - ?
+					--["coord"] = { 53.0, 67.7, ISLE_OF_DORN },
+				}),
 				q(81799, {	-- Skyrider Racing - Dornogal Drift
 					-- normal - 80219 / advanced - 80225 / reversed - 80231
-					["coord"] = { 43.5, 11.7, DORNOGAL },	-- probably gonna need to move out of here, but it is probably gonna be one?
+					["coord"] = { 43.5, 11.7, DORNOGAL },	-- probably gonna need to move out of here
 				}),
+				q(81675, {	-- Water the Sheep
+					["coord"] = { 58.4, 28.0, DORNOGAL },	-- probably gonna need to move out of here
+					["g"] = {
+						i(219525),	-- Globe of Nourishment (QI!)
+					},
+				}),
+				--
 				q(82355, {	-- Special Assignment: Cinderbee Surge
 					["coord"] = { 71.3, 40.7, ISLE_OF_DORN },
 				}),

@@ -30,6 +30,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			i(220320),	-- Distressed Shoulderpads
 			i(220321),	-- Distressed Belt
 			i(220322),	-- Distressed Bracers
+			--wq gear?
+			i(224681),	-- Lockstitch Bindings // hallowfall
+			i(224676),	-- Lockstitch Grips // isle of dorn
+			i(224677),	-- Lockstitch Headgear // from Pinnacle Cache which was looted in The Ringing Deeps
 		}),
 		filter(MAIL, {
 			--gray items
@@ -63,8 +67,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		i(224784, {	-- Pinnacle Cache
 			--I'm currently placing it here since it can be obtained in different zone
 			--On first opening I recieve:
-			--i(224172), -- Restored Coffer Key
-			--i(224677), -- Lockstitch Headgear // same - unsure if it is locked by zone (The Ringing Deeps) where I loot it or not
+			--i(224172),	-- Restored Coffer Key
 			--i(225653),	-- Siphoning Lightbrand // Isle of Dorn zone reward
 			--hqt - 83280, possibly related to key but dunno (1st cache)
 			--hqt - 83281, possibly related to key but dunno (2nd cache)
