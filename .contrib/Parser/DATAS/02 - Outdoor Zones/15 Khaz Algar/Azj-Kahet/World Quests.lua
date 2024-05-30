@@ -34,13 +34,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- normal - 80278 / advanced - 80284 / reverse - 80290
 					["coord"] = { 76.6, 81.0, AZJ_KAHET },
 				}),
-				q(81827, {	-- Skyrider Racing - The Weaver's Wing
-					-- normal - 80279 / advanced - 80285 / reverse - 80291
-					["coord"] = { 53.7, 41.2, AZJ_KAHET },
-				}),
 				q(81829, {	-- Skyrider Racing - Pit Plunge
 					-- normal - 80281 / advanced - 80287 / reverse - 80293
 					["coord"] = { 27.0, 52.3, AZJ_KAHET },
+				}),
+				q(81831, {	-- Skyrider Racing - Siegehold Scuttle
+					-- normal - 80282 / advanced - 80288 / reverse - 80294
+					["coord"] = { 42.0, 37.5, AZJ_KAHET },
+				}),
+				q(81827, {	-- Skyrider Racing - The Weaver's Wing
+					-- normal - 80279 / advanced - 80285 / reverse - 80291
+					["coord"] = { 53.7, 41.2, AZJ_KAHET },
 				}),
 				q(79959, {	-- Taking It To Go
 					["coord"] = { 78.0, 77.7, AZJ_KAHET },

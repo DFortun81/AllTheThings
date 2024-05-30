@@ -3,15 +3,15 @@
 -----------------------------------------------------
 --[[
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
-	inst(XXXX, {	-- Ara-Kara, City of Echoes
-		["coord"] = { X, Y, AZJ_KAHET },
+	inst(1271, {	-- Ara-Kara, City of Echoes
+		--["coord"] = { X, Y, AZJ_KAHET },
 		["maps"] = {
 		--	2216,	-- it is using same mapID as outdoor
 		},
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
-				e(x, {	-- Avanoxx
-					--["crs"] = {  },
+				e(2583, {	-- Avanoxx
+					["crs"] = { 213179 },
 					["g"] = {
 						i(221150),	-- Arachnoid Soulcleaver
 						i(221151),	-- Devourer's Gauntlets
@@ -20,8 +20,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219314),	-- Ara-Kara Sacbrood
 					},
 				}),
-				e(x, {	-- Anub'zekt
-					--["crs"] = {  },
+				e(2584, {	-- Anub'zekt
+					["crs"] = { 215405 },
 					["g"] = {
 						i(221156),	-- Cryptbound Headpiece
 						i(221155),	-- Swarm Monarch's Spaulders
@@ -31,8 +31,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219316),	-- Ceaseless Swarmgland
 					},
 				}),
-				e(x, {	-- Ki'katal the Harvester
-					--["crs"] = {  },
+				e(2585, {	-- Ki'katal the Harvester
+					["crs"] = { 215407 },
 					["g"] = {
 						i(221159),	-- Harvester's Interdiction
 						i(221160),	-- Blight Hunter's Scalpelglaive

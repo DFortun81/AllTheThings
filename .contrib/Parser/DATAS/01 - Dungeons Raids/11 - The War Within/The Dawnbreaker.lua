@@ -3,14 +3,14 @@
 -----------------------------------------------------
 --[[
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
-	inst(XXXX, {	-- The Dawnbreaker
-		["coord"] = { X, Y, HALLOWFALL },
+	inst(1270, {	-- The Dawnbreaker
+		--["coord"] = { X, Y, HALLOWFALL },
 		["maps"] = {
 			2215,	-- same as outdoor
 		},
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
-				e(x, {	-- Speaker Shadowcrown
+				e(2580, {	-- Speaker Shadowcrown
 					["crs"] = {  },
 					["g"] = {
 						i(221132),	-- Overflowing Umbral Pail
@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219311),	-- Void Pactstone
 					},
 				}),
-				e(x, {	-- Anub'ikkaj
+				e(2581, {	-- Anub'ikkaj
 					--["crs"] = {  },
 					["g"] = {
 						i(221137),	-- Black Shepherd's Guisarme
@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219312),	-- Empowering Crystal of Anub'ikkaj
 					},
 				}),
-				e(x, {	-- Rasha'nan
+				e(2593, {	-- Rasha'nan
 					--["crs"] = {  },
 					["g"] = {
 						i(221145),	-- Shipwrecker's Bludgeon

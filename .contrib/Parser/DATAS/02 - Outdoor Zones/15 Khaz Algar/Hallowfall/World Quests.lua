@@ -28,6 +28,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82582, {	-- Mired in Shadow
 					["coord"] = { 74.8, 50.3, HALLOWFALL },
 				}),
+				q(82120, {	-- Pool Cleaner
+					["coord"] = { 51.1, 50.9, HALLOWFALL },
+					--["g"] = {
+					--	i(225559),	-- Hungering Shimmerfin // unsure if it is just rng from mob in this area or only during wq?
+					--},
+				}),
 				q(81620, {	-- Recovery Job
 					["coord"] = { 56.0, 67.1, HALLOWFALL },
 					["g"] = {
@@ -36,6 +42,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 				q(82197, {	-- Reserve Rumpus
 					["coord"] = { 42.0, 52.2, HALLOWFALL },
+				}),
+				q(82258, {	-- Sieging Siege Weapons
+					["coord"] = { 56.8, 66.2, HALLOWFALL },
+					["g"] = {
+						i(213630),	-- Keg of Black Powder (QI!)
+					},
 				}),
 				q(81822, {	-- Skyrider Racing - Mereldar Meander
 					-- normal - 80260 / advanced - 80269 / reversed - 80275

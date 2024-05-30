@@ -3,15 +3,15 @@
 -----------------------------------------------------
 --[[
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
-	inst(XXXX, {	-- Priory of the Sacred Flame
-		["coord"] = { X, Y, HALLOWFALL },
+	inst(1267, {	-- Priory of the Sacred Flame
+		--["coord"] = { X, Y, HALLOWFALL },
 		["maps"] = {
 			2308,	-- Sanctified Grounds
-			2309,	-- Priory of the Sacred Flame (unconfirmed)
+			2309,	-- Priory of the Sacred Flame
 		},
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
-				e(x, {	-- Captain Dailcry
+				e(2571, {	-- Captain Dailcry
 					["crs"] = { 207946 },
 					["g"] = {
 						i(221116),	-- Glorious Defender's Poleaxe
@@ -23,7 +23,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219308),	-- Signet of the Priory
 					},
 				}),
-				e(x, {	-- Baron Braunpyke
+				e(2570, {	-- Baron Braunpyke
 					--["crs"] = {  },
 					["g"] = {
 						i(221122),	-- Hand of Beledar
@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219309),	-- Tome of Light's Devotion
 					},
 				}),
-				e(x, {	-- Prioress Murrpray
+				e(2573, {	-- Prioress Murrpray
 					--["crs"] = {  },
 					["g"] = {
 						i(221127),	-- Emberbrand Zweihander

@@ -4,15 +4,14 @@
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1268, {	-- The Rookery
 		--["coord"] = { X, Y, ISLE_OF_DORN },
-		--["maps"] = {
-		--	2315,	-- The Rookery Landing
-		--	2316,	-- Storm's Roost
-		--	should be more but I didn't manage to solo it throught
+		["maps"] = {
+			2315,	-- The Rookery Landing
+			2316,	-- Storm's Roost
 		--	2317,	-- Storm Rookery (unconfirmed)
 		--	2318,	-- Stormrider Barracks (unconfirmed)
-		--	2319,	-- Crashing Storm Hall (unconfirmed)
-		--	2320,	-- Abandoned Mines (unconfirmed)
-		--},
+			2319,	-- Crashing Storm Hall
+			2320,	-- Abandoned Mines
+		},
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2566, {	-- Kyrioss

@@ -3,12 +3,12 @@
 -----------------------------------------------------
 --[[
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
-	inst(XXXX, {	-- Darkflame Cleft
-		["coord"] = { X, Y, THE_RINGING_DEEPS },
+	inst(1210, {	-- Darkflame Cleft
+		--["coord"] = { X, Y, THE_RINGING_DEEPS },
 		["maps"] = { 2303 },
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
-				e(x, {	-- Ol' Waxbeard
+				e(2569, {	-- Ol' Waxbeard
 					--["crs"] = {  },
 					["g"] = {
 						i(221096),	-- Rail Rider's Bisecter
@@ -18,7 +18,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219304),	-- Conductor's Wax Whistle
 					},
 				}),
-				e(x, {	-- Blazikon
+				e(2559, {	-- Blazikon
 					--["crs"] = {  },
 					["g"] = {
 						i(221100),	-- Waxsteel Greathelm
@@ -29,7 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219305),	-- Carved Blazikon Wax
 					},
 				}),
-				e(x, {	-- The Candle King
+				e(2560, {	-- The Candle King
 					--["crs"] = {  },
 					["g"] = {
 						i(221105),	-- Dark Zone Headtaker
@@ -40,7 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219306),	-- Burin of the Candle King
 					},
 				}),
-				e(x, {	-- The Darkness
+				e(2561, {	-- The Darkness
 					--["crs"] = {  },
 					["g"] = {
 						i(221111),	-- Poleaxe of Somber Fate

@@ -3,15 +3,15 @@
 -----------------------------------------------------
 --[[
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
-	inst(XXXX, {	-- City of Threads
-		["coord"] = { X, Y, AZJ_KAHET },
+	inst(1274, {	-- City of Threads
+		--["coord"] = { X, Y, AZJ_KAHET },
 		["maps"] = {
-		--	2343,	-- City of Threads
-		--	2344,	-- The Transformatory (unconfirmed)
+			2343,	-- City of Threads
+			2344,	-- The Transformatory
 		},
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
-				e(x, {	-- Orator Krix'vizk
+				e(2594, {	-- Orator Krix'vizk
 					--["crs"] = {  },
 					["g"] = {
 						i(221166),	-- Krix'vizk's Speech Rod
@@ -22,7 +22,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219318),	-- Oppressive Orator's Larynx
 					},
 				}),
-				e(x, {	-- Fangs of the Queen
+				e(2595, {	-- Fangs of the Queen
 					--["crs"] = {  },
 					["g"] = {
 						i(221171),	-- Kingslayer's Frostfang
@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219319),	-- Twin Fang Instruments
 					},
 				}),
-				e(x, {	-- The Coaglamation
+				e(2600, {	-- The Coaglamation
 					--["crs"] = {  },
 					["g"] = {
 						i(221177),	-- Old-Blood Hielaman
@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219320),	-- Viscous Coaglam
 					},
 				}),
-				e(x, {	-- Izo, the Grand Splicer
+				e(2596, {	-- Izo, the Grand Splicer
 					--["crs"] = {  },
 					["g"] = {
 						i(221184),	-- Surgical Heartstopper

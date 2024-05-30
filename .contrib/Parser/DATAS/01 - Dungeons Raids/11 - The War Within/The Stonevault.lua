@@ -3,12 +3,12 @@
 -----------------------------------------------------
 --[[
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
-	inst(XXXX, {	-- The Stonevault
-		["coord"] = { X, Y, THE_RINGING_DEEPS },
+	inst(1269, {	-- The Stonevault
+		--["coord"] = { X, Y, THE_RINGING_DEEPS },
 		["maps"] = { 2341 },
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
-				e(x, {	-- E.D.N.A.
+				e(2572, {	-- E.D.N.A.
 					--["crs"] = {  },
 					["g"] = {
 						i(221078),	-- Endoskeletal Polecrank
@@ -20,7 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219315),	-- Refracting Aggression Module
 					},
 				}),
-				e(x, {	-- Skarmorak
+				e(2579, {	-- Skarmorak
 					--["crs"] = {  },
 					["g"] = {
 						i(221083),	-- Wardbreaker of the Fractured
@@ -32,7 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219300),	-- Skarmorak Shard
 					},
 				}),
-				e(x, {	-- Forge Speakers
+				e(2590, {	-- Master Machinists Brokk and Dorlita
 					--["crs"] = {  },
 					["g"] = {
 						i(221085),	-- Melodious Iron Songspire
@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219302),	-- Scrapsinger's Symphony
 					},
 				}),
-				e(x, {	-- High Speaker Eirich
+				e(2582, {	-- Void Speaker Eirich
 					--["crs"] = {  },
 					["g"] = {
 						i(221091),	-- Cutting-Edge Sermon
