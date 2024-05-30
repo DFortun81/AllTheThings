@@ -5898,7 +5898,6 @@ root(ROOTS.Unsorted, {
 					i(215614),	-- Klaxxi Slicer
 					i(215616),	-- Pandaren Warknife
 					i(215622),	-- Imperial Longknife
-					i(215640),	-- Barbs of the Rikkitun
 					i(215650),	-- Pandaren Claw
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
 					i(215657),	-- Hozen Conduit

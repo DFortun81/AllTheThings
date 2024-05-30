@@ -284,6 +284,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					i(215872),	-- Amberweaver's Spire
+					i(215640),	-- Barbs of the Rikkitun
 					i(215484),	-- Boggeo's Ceremonial Axe
 					i(215858),	-- Diviner's Staff
 					i(215742),	-- Faded Forest Crusher
