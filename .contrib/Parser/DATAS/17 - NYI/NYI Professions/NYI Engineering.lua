@@ -25,7 +25,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 3.x.x
 				n(P3xx, {
 					i(37589),	-- Hyper-Powered Mote Extractor
+					i(48945),	-- Gnomish Thinking Cap
 				}),
+			}),
+			expansion(EXPANSION.MOP, {
+				-- 5.0.4
+				expansion(EXPANSION.MOP, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+					i(81143),	-- Avanced Deepdive Helmet
+				})),
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2

@@ -469,6 +469,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216459),	-- Caduceus of Pure Moods
 						i(216464),	-- Dinomancer's Spire
 						i(215906),	-- Do-tharak, the Foebreaker
+						i(215562),	-- Durumu's Gaze
 						i(215688),	-- Eye of the Hydra
 						i(216598),	-- Eyes of the Doomed
 						i(216410),	-- Fyn's Dagger

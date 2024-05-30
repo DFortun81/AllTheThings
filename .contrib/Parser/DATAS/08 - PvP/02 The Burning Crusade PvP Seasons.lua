@@ -1112,12 +1112,10 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						i(28383, {	-- General's Plate Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						-- #if AFTER 4.0.1.12941
 						i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							["timeline"] = { CREATED_2_0_1, ADDED_4_0_1, REMOVED_5_0_4, ADDED_6_0_2 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4, ADDED_6_0_2 },
 						}),
-						-- #endif
 						i(32993, {	-- General's Ringmail Sabatons
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
@@ -3688,18 +3686,4 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46660),	-- Merciless Gladiator's Arsenal
 	}),
 });
--- #endif
--- #if AFTER TBC
--- #if ANYCLASSIC
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.TBC, {
-		-- #if BEFORE 4.0.1.12941
-		i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
-			["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-			["timeline"] = { CREATED_2_0_1, ADDED_4_0_1, REMOVED_5_0_4, ADDED_6_0_2 },
-		}),
-		-- #endif
-	}),
-});
--- #endif
 -- #endif

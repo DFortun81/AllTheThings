@@ -2370,11 +2370,3 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
-
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		expansion(EXPANSION.CATA, {
-			q(14231),	-- Useless quest record
-		}),
-	}),
-});

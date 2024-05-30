@@ -2153,14 +2153,3 @@ local COMMON_ENCHANTING_RECIPES = {
 	i(22307),	-- Pattern: Enchanted Mageweave Pouch
 };
 appendGroups(COMMON_ENCHANTING_RECIPES, ASARNAN_MALIJ_GROUPS);
-
--- #if AFTER TBC
--- These quests never made it in.
-root(ROOTS.NeverImplemented, {
-	n(ARMOR, {
-		i(134012, {	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
-			["timeline"] = { REMOVED_7_0_3 },
-		}),
-	}),
-});
--- #endif

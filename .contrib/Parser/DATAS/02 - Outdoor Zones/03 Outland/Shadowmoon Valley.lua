@@ -2326,16 +2326,3 @@ root(ROOTS.Zones, {
 		})),
 	})),
 });
-
--- #if AFTER TBC
--- These quests never made it in.
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		-- #if BEFORE WRATH
-		q(10871),	-- BETA Ally of the Netherwing
-		q(10872),	-- BETA Zuluhed the Whacked
-		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
-		-- #endif
-	}),
-});
--- #endif

@@ -66,19 +66,3 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
-
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.SL, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(179587),	-- Drust Mask
-				i(179588),	-- Drust Mask
-				i(179589),	-- Drust Mask
-				i(179590),	-- Drust Mask
-				i(179591),	-- Drust Mask
-				i(179592),	-- Drust Mask
-				i(179595),	-- Drust Mask
-			}),
-		}),
-	}),
-});

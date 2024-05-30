@@ -5,6 +5,13 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(INSCRIPTION, {
 		n(CRAFTABLES, {
+			expansion(EXPANSION.MOP, {
+				-- 5.2.0
+				expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { CREATED_5_2_0 } }, {
+					i(93440),	-- Crafted Dreadful Gladiator's Endgame
+					i(93450),	-- Crafted Dreadful Gladiator's Reprieve
+				})),
+			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
 				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {

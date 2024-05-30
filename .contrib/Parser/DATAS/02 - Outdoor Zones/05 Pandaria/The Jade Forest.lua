@@ -3313,10 +3313,5 @@ root(ROOTS.NeverImplemented, {
 				i(80964),	-- Scavenger's Insignia
 			}),
 		}),
-		n(WEAPONS, {
-			i(80982),	-- Scavenger's Shield
-			i(80985),	-- Scavenger's Barrier
-			i(80981),	-- Scavenged Rotor Blade
-		}),
 	}),
 });

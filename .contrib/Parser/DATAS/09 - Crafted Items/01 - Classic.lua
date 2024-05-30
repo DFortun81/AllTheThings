@@ -3065,19 +3065,3 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 	}),
 }));
-root(ROOTS.NeverImplemented, {
-	n(PROFESSIONS, {
-		prof(TAILORING, {
-			expansion(EXPANSION.CLASSIC, {
-				i(7027),	-- Boots of Darkness
-				i(6243),	-- Green Woolen Robe
-				i(10039),	-- Stormcloth Boots
-				i(10011),	-- Stormcloth Gloves
-				i(10032),	-- Stormcloth Headband
-				i(10010),	-- Stormcloth Pants
-				i(10038),	-- Stormcloth Shoulders
-				i(10020),	-- Stormcloth Vest
-			}),
-		}),
-	}),
-});

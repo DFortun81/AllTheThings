@@ -293,7 +293,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 7.3.5
 						i(43281),	-- Edge of Oblivion (7.3.5 - Used to be only Heroic Mode)
 						i(44191, {	-- Ice-Rimed Chopper (7.3.5 - Used to be only Heroic Mode)
-							["timeline"] = { CREATED_3_0_2, ADDED_6_2_0 },
+							["timeline"] = { ADDED_6_2_0 },
 						}),
 						i(43280),	-- Faceguard of the Hammer Clan (7.3.5 - Used to be only Heroic Mode)
 						i(43282),	-- Shadowseeker's Pendant (7.3.5 - Used to be only Heroic Mode)
@@ -392,11 +392,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["groups"] = {
 							ach(2056),	-- Volunteer Work
 							i(43281),	-- Edge of Oblivion
-							-- #if AFTER 6.2.0
 							i(44191, {	-- Ice-Rimed Chopper
-								["timeline"] = { CREATED_3_0_2, ADDED_6_2_0 },
+								["timeline"] = { ADDED_6_2_0 },
 							}),
-							-- #endif
 							i(43280),	-- Faceguard of the Hammer Clan
 							i(43282),	-- Shadowseeker's Pendant
 							-- #if AFTER 7.3.5
@@ -452,15 +450,5 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(35490),	-- Ahn'kahet: The Old Kingdom Reward Quest - Heroic completion
 		q(35493),	-- Ahn'kahet: The Old Kingdom Bonus Reward - kill Amanitar (Heroic only)
 	}),
-});
--- #endif
-
--- #if AFTER 4.3.0.14732
-root(ROOTS.NeverImplemented, {
-	-- #if BEFORE 6.2.0
-	i(44191, {	-- Ice-Rimed Chopper
-		["timeline"] = { CREATED_3_0_2, ADDED_6_2_0 },
-	}),
-	-- #endif
 });
 -- #endif

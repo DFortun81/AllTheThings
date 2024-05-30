@@ -4,6 +4,30 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(JEWELCRAFTING, {
 		n(CRAFTABLES, {
+			expansion(EXPANSION.TBC, {
+				-- 2.1.3
+				expansion(EXPANSION.TBC, 1.3, bubbleDown({ ["timeline"] = { CREATED_2_1_3 } }, {
+					i(21793),	-- Arcanite Sword Pendant
+					i(21780),	-- Blood Crown
+					i(20956),	-- Silver Rose Pendant
+				})),
+			}),
+			expansion(EXPANSION.CATA, {
+				-- 4.0.1
+				expansion(EXPANSION.CATA, 0.1, bubbleDown({ ["timeline"] = { CREATED_4_0_1 } }, {
+					i(52107),	-- Resolute Hessonite
+					i(52150),	-- Perfect Resolute Hessonite
+					i(52092),	-- Mystic Alicite
+					i(52165),	-- Perfect Mystic Alicite
+				})),
+			}),
+			expansion(EXPANSION.MOP, {
+				-- 5.2.0
+				expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { CREATED_5_2_0 } }, {
+					i(93597),	-- Crafted Dreadful Gladiator's Fleshslicer
+					i(93599),	-- Crafted Dreadful Gladiator's Slasher
+				})),
+			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
 				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {

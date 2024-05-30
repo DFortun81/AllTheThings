@@ -3617,18 +3617,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(42538),	-- Siegecrafter Blackfuse for Hunters attempting/receiving "Blackfuse's Power Core" (138097)
 	}),
 });
-
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.MOP, {
-		m(556, {	-- Siege of Orgrimmar
-			i(104986),	-- Unrepentant Heels
-			i(102312),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Agi DPS Trinket (5)
-			i(102313),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Hit Trinket (5)
-			i(102314),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Versatility Trinket (5)
-			i(102315),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Str DPS Trinket (5)
-			i(102316),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Tank Trinket (5)
-			i(103897),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Str Tank Ring
-			i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
-		}),
-	}),
-});

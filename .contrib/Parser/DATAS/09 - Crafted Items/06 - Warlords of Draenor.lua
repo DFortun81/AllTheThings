@@ -903,13 +903,3 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, {
-	n(PROFESSIONS, {
-		prof(TAILORING, {
-			expansion(EXPANSION.WOD, {
-				i(114833),	-- Miniature Flying Carpet
-				i(118052),	-- Murloc Chew Toy
-			}),
-		}),
-	}),
-});

@@ -783,6 +783,21 @@ root(ROOTS.NeverImplemented, {
 		i(120273),	-- High Warlord's Razor
 	}),
 	n(WEAPONS, {
+		expansion(EXPANSION.TBC, {
+			-- 2.0.1
+			expansion(EXPANSION.TBC, 0.1, bubbleDown({ ["timeline"] = { CREATED_2_0_1 } }, {
+				-- #if BEFORE 4.0.1
+				i(30491),	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
+				-- #endif
+			})),
+
+			-- 2.4.2
+			expansion(EXPANSION.TBC, 4.2, bubbleDown({ ["timeline"] = { CREATED_2_4_2 } }, {
+				-- #if BEFORE 3.0.2
+				i(38579),	-- Venomous Tome
+				-- #endif
+			})),
+		}),
 		expansion(EXPANSION.WRATH, {
 			n(SEASON_DEADLY, {
 				i(42523),	-- Savage Gladiator's Endgame
@@ -800,6 +815,13 @@ root(ROOTS.NeverImplemented, {
 				i(42595),	-- Savage Gladiator's Totem of the Third Wind
 				-- #endif
 			}),
+
+			-- 3.0.2
+			expansion(EXPANSION.WRATH, 0.2, bubbleDown({ ["timeline"] = { CREATED_3_0_2 } }, {
+				-- #if BEFORE 6.2.0
+				i(44191),	-- Ice-Rimed Chopper
+				-- #endif
+			})),
 		}),
 		expansion(EXPANSION.CATA, {
 			n(SEASON_VICIOUS, {
@@ -840,6 +862,14 @@ root(ROOTS.NeverImplemented, {
 			--
 			i(54554),	-- Bejeweled Ship's Wheel
 			i(54553),	-- Kliklak's Fearsome Greatsword
+		}),
+		expansion(EXPANSION.MOP, {
+			i(84085),	-- Dreadwaste Meditation Staff
+			i(84086),	-- Dreadwaste Diviner's Rod
+			i(84527),	-- Hidden Pass Meditation Staff
+			i(80982),	-- Scavenger's Shield
+			i(80985),	-- Scavenger's Barrier
+			i(80981),	-- Scavenged Rotor Blade
 		}),
 		expansion(EXPANSION.WOD, {
 			n(SEASON_PRIMAL, {
@@ -996,6 +1026,37 @@ root(ROOTS.NeverImplemented, {
 			i(159510),	-- Wintersail Strikers
 		}),
 		expansion(EXPANSION.SL, {
+			header(HEADERS.Achievement, SEASON_SINFUL, {
+				i(183432),	-- Sinful Aspirant's Reaver
+				i(178469),	-- Sinful Aspirant's Bow
+				i(178671),	-- Sinful Aspirant's Broadsword
+				i(178672),	-- Sinful Aspirant's Bulwark
+				i(178674),	-- Sinful Aspirant's Glaive
+				i(178477),	-- Sinful Aspirant's Shield
+				i(178491),	-- Sinful Aspirant's Warshield
+				i(178397),	-- Sinful Gladiator's Aegis
+				i(175998),	-- Sinful Gladiator's Axe
+				i(183403),	-- Sinful Gladiator's Battlehammer
+				i(176000),	-- Sinful Gladiator's Blade
+				i(178390),	-- Sinful Gladiator's Dagger
+				i(176008),	-- Sinful Gladiator's Focus
+				i(178398),	-- Sinful Gladiator's Goblet
+				i(175999),	-- Sinful Gladiator's Greatbow
+				i(183406),	-- Sinful Gladiator's Greatmaul
+				i(178392),	-- Sinful Gladiator's Halberd
+				i(178388),	-- Sinful Gladiator's Handaxe
+				i(183405),	-- Sinful Gladiator's Mageblade
+				i(176002),	-- Sinful Gladiator's Polearm
+				i(178389),	-- Sinful Gladiator's Recurve
+				i(178394),	-- Sinful Gladiator's Saber
+				i(176007),	-- Sinful Gladiator's Shield
+				i(178399),	-- Sinful Gladiator's Slicer
+				i(183404),	-- Sinful Gladiator's Spellblade
+				i(176003),	-- Sinful Gladiator's Spellstaff
+				i(178393),	-- Sinful Gladiator's Spire
+				i(176004),	-- Sinful Gladiator's Sword
+				i(176009),	-- Sinful Gladiator's Warglaive
+			}),
 			inst(1193, {	-- Sanctum of Domination
 				i(181374),	-- Sylvanas Shadowlands Bow
 			}),
@@ -1003,6 +1064,99 @@ root(ROOTS.NeverImplemented, {
 			i(180152),	-- Drust 2H Axe
 			--
 			i(189780),	-- <DNT> 9.2 Raid - Sepulcher of the First Ones - Boss 01 - Solitary Guardian - Shield
+			--
+			i(176017),	-- Ardenweald Quest 2H Mace
+			i(176018),	-- Ardenweald Quest 2H Mace
+			i(176019),	-- Ardenweald Quest 2H Mace
+			i(176020),	-- Ardenweald Quest 2H Mace
+			i(176021),	-- Ardenweald Quest 2H Mace
+			i(176047),	-- Ardenweald Quest Warglaives
+			i(176048),	-- Ardenweald Quest Warglaives
+			i(176049),	-- Ardenweald Quest Warglaives
+			i(176050),	-- Ardenweald Quest Warglaives
+			i(176051),	-- Ardenweald Quest Warglaives
+			i(176037),	-- Ardenweald Quest Shield
+			i(176038),	-- Ardenweald Quest Shield
+			i(176039),	-- Ardenweald Quest Shield
+			i(176040),	-- Ardenweald Quest Shield
+			i(176041),	-- Ardenweald Quest Shield
+			i(176027),	-- Ardenweald Quest Polearm
+			i(176028),	-- Ardenweald Quest Polearm
+			i(176029),	-- Ardenweald Quest Polearm
+			i(176030),	-- Ardenweald Quest Polearm
+			i(176031),	-- Ardenweald Quest Polearm
+			i(176022),	-- Ardenweald Quest Bow
+			i(176023),	-- Ardenweald Quest Bow
+			i(176024),	-- Ardenweald Quest Bow
+			i(176025),	-- Ardenweald Quest Bow
+			i(176026),	-- Ardenweald Quest Bow
+			i(176032),	-- Ardenweald Quest Sword
+			i(176033),	-- Ardenweald Quest Sword
+			i(176034),	-- Ardenweald Quest Sword
+			i(176035),	-- Ardenweald Quest Sword
+			i(176036),	-- Ardenweald Quest Sword
+			i(176012),	-- Ardenweald Quest Mace
+			i(176013),	-- Ardenweald Quest Mace
+			i(176014),	-- Ardenweald Quest Mace
+			i(176015),	-- Ardenweald Quest Mace
+			i(176016),	-- Ardenweald Quest Mace
+			i(179503),	-- Ardenweald Quest Dagger
+			i(179504),	-- Ardenweald Quest Dagger
+			i(179505),	-- Ardenweald Quest Dagger
+			i(179506),	-- Ardenweald Quest Dagger
+			i(179507),	-- Ardenweald Quest Dagger
+			i(176042),	-- Ardenweald Quest Offhand
+			i(176043),	-- Ardenweald Quest Offhand
+			i(176044),	-- Ardenweald Quest Offhand
+			i(176045),	-- Ardenweald Quest Offhand
+			i(176046),	-- Ardenweald Quest Offhand
+			i(176841),	-- Ardenweald Quest Staff
+			i(176842),	-- Ardenweald Quest Staff
+			i(176843),	-- Ardenweald Quest Staff
+			i(176844),	-- Ardenweald Quest Staff
+			i(178117),	-- Ardenweald NPC Staff
+			i(178118),	-- Ardenweald NPC Staff
+			--
+			i(184471),	-- Guidenote Dagger
+			i(184529),	-- Elysian Ceremonial Dagger
+			i(184532),	-- Silver-Edged Elysian Dirk
+			i(184528),	-- Elysian Guillotine Claws
+			i(184531),	-- Elysian Battle Hammer
+			i(184533),	-- Elysian Forgelite's Hammer
+			i(184527),	-- Elysian Watcher's Bell
+			i(184524),	-- Elysian Twinbladed Glaive
+			i(184525),	-- Elysian Pointed Hoplon
+			i(184526),	-- Elysian Phalanx Dory
+			i(179735),	-- 9.0 Monster - Bastion - Weapon - Polearm AGI (But is a sword)
+			i(184530),	-- Greatsword of the Elysian Guard
+			i(184523),	-- Elysian Ironbolt Gastraphetes
+			i(179007),	-- 9.0 Monster - Bastion - Weapon - Dark
+			--
+			i(183086),	-- Battle Tested Warglaive
+			i(183077),	-- Battle Tested Shank
+			i(183088),	-- Battle Tested Dagger
+			i(183078),	-- Battle Tested Basher
+			i(183079),	-- Battle Tested Stave
+			i(183090),	-- Battle Tested Staff
+			i(183080),	-- Battle Tested Shortsword
+			i(183087),	-- Battle Tested Longsword
+			i(183089),	-- Battle Tested Spellblade
+			i(183081),	-- Battle Tested Crossbow
+			i(183082),	-- Battle Tested Wand
+			i(183083),	-- Battle Tested Greatsword
+			i(183084),	-- Battle Tested Bulwark
+			i(183085),	-- Battle Tested Tome
+			--
+			i(184325),	-- Sinfall Quickblade
+			i(184514),	-- Sinfall Spellbinder's Kris
+			i(184330),	-- Sinfall Enchanted Elixir Bottle
+			i(184327),	-- Sinfall Redeemer's Morningstar
+			i(184323),	-- Sinfall Wing-Glaive
+			i(184329),	-- Sinfall Kite Shield
+			i(184321),	-- Sinfall Skirmisher's Poleaxe
+			i(184328),	-- Sinfall Defender's Halberd
+			i(184324),	-- Sinfall Fencer's Rapier
+			i(184322),	-- Sinfall Blunderbus
 		}),
 	}),
 });

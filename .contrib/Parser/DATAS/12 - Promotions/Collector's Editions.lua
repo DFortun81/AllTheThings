@@ -778,15 +778,3 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 })));
-
--- #if AFTER 4.3.0
--- #if BEFORE 5.0.4
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.CATA, {
-		i(76062, {	-- Fetish Shaman (PET!)
-			["timeline"] = { CREATED_4_3_0, ADDED_5_0_4 },
-		}),
-	}),
-});
--- #endif
--- #endif

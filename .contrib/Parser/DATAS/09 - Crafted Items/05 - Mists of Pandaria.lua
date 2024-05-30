@@ -1455,24 +1455,3 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, {
-	n(PROFESSIONS, {
-		prof(ENGINEERING, {
-			expansion(EXPANSION.MOP, {
-				i(81143),	-- Avanced Deepdive Helmet (Mop Beta Only)
-			}),
-		}),
-		prof(INSCRIPTION, {
-			expansion(EXPANSION.MOP, {
-				i(93440),	-- Crafted Dreadful Gladiator's Endgame
-				i(93450),	-- Crafted Dreadful Gladiator's Reprieve
-			}),
-		}),
-		prof(JEWELCRAFTING, {
-			expansion(EXPANSION.MOP, {
-				i(93597),	-- Crafted Dreadful Gladiator's Fleshslicer
-				i(93599),	-- Crafted Dreadful Gladiator's Slasher
-			}),
-		}),
-	}),
-});

@@ -1133,17 +1133,3 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, {
-	n(PROFESSIONS, {
-		prof(ENGINEERING, {
-			expansion(EXPANSION.WRATH, {
-				i(48945),	-- Gnomish Thinking Cap (Mind Amplification Disk was added for it)
-			}),
-		}),
-		prof(LEATHERWORKING, {
-			expansion(EXPANSION.WRATH, {
-				i(38378)	-- Wyrmscale Leg Armor
-			}),
-		}),
-	}),
-});

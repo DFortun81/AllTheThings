@@ -18,6 +18,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(39707),	-- Verdant Tundra Cap
 					i(39708),	-- Verdant Tundra Shoulderpads
 				})),
+
+				-- 3.x.x
+				n(P3xx, {
+					i(38378)	-- Wyrmscale Leg Armor
+				}),
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1

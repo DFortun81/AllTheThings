@@ -525,6 +525,11 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(10292, { ["name"] = "More Power!", }),
 			q(10404, { ["name"] = "Against the Legion", }),
 			q(10844, { ["name"] = "Forge Camp: Anger", }),
+			-- #if BEFORE WRATH
+			q(10871),	-- Ally of the Netherwing
+			q(11052),	-- Akama's Promise
+			q(10872),	-- Zuluhed the Whacked
+			-- #endif
 		}),
 	}),
 	expansion(EXPANSION.WRATH, {
@@ -695,6 +700,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		q(28752),	-- Unstoppable Onslaught
 		q(29170),	-- UNUSED
 		q(29171),	-- UNUSED
+		q(14231),	-- Useless quest record
 		q(28255),	-- Vhat's Next?
 		q(27289),	-- Vimes's Report
 		q(25742),	-- What? This Old Thing?

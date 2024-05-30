@@ -1124,57 +1124,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	}),
 })));
 
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.SL, {
-		n(ARMOR, {
-			filter(CLOTH, {
-				i(175608),	-- Pure Aspirant's Robe
-				i(175620),	-- Pure Aspirant's Hood
-				i(175629),	-- Pure Aspirant's Mantle
-				i(175632),	-- Pure Aspirant's Cord
-				i(178958),	-- Pure Aspirant's Handwraps
-			}),
-			filter(LEATHER, {
-				i(175611),	-- Courageous Aspirant's Vest
-				i(175622),	-- Courageous Aspirant's Helm
-				i(175627),	-- Courageous Aspirant's Spaulders
-				i(175634),	-- Courageous Aspirant's Belt
-				i(178956),	-- Courageous Aspirant's Mitts
-			}),
-			filter(MAIL, {
-				i(175610),	-- Humble Aspirant's Vest
-				i(175621),	-- Humble Aspirant's Helm
-				i(175630),	-- Humble Aspirant's Monnion
-				i(175633),	-- Humble Aspirant's Belt
-				i(178959),	-- Humble Aspirant's Handguards
-			}),
-			filter(PLATE, {
-				i(175607),	-- Judicious Aspirant's Helm
-				i(175609),	-- Judicious Aspirant's Chestplate
-				i(175628),	-- Judicious Aspirant's Shoulders
-				i(175631),	-- Judicious Aspirant's Girdle
-				i(178957),	-- Judicious Aspirant's Gloves
-			}),
-		}),
-		n(WEAPONS, {
-			i(184471),	-- Guidenote Dagger
-			i(184529),	-- Elysian Ceremonial Dagger
-			i(184532),	-- Silver-Edged Elysian Dirk
-			i(184528),	-- Elysian Guillotine Claws
-			i(184531),	-- Elysian Battle Hammer
-			i(184533),	-- Elysian Forgelite's Hammer
-			i(184527),	-- Elysian Watcher's Bell
-			i(184524),	-- Elysian Twinbladed Glaive
-			i(184525),	-- Elysian Pointed Hoplon
-			i(184526),	-- Elysian Phalanx Dory
-			i(179735),	-- 9.0 Monster - Bastion - Weapon - Polearm AGI (But is a sword)
-			i(184530),	-- Greatsword of the Elysian Guard
-			i(184523),	-- Elysian Ironbolt Gastraphetes
-			i(179007),	-- 9.0 Monster - Bastion - Weapon - Dark
-		}),
-	}),
-});
-
 root(ROOTS.HiddenQuestTriggers, {
 	q(60625),	-- Triggerd when looting chest at 41,67
 });

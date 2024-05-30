@@ -3176,8 +3176,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				cl(DEATHKNIGHT, {
 					cl(DEATHKNIGHT, UNHOLY, {
 						i(177287),	-- Heart-Lesion Blade
+						i(177429),	-- Heart-Lesion Helm
 						i(177289),	-- Heart-Lesion Pendant
+						i(177431),	-- Heart-Lesion Pauldrons
 						i(177288),	-- Heart-Lesion Cloak of Battle
+						i(177426),	-- Heart-Lesion Breastplate
 						i(177433),	-- Heart-Lesion Vambraces
 						i(177428),	-- Heart-Lesion Gauntlets
 						i(177432),	-- Heart-Lesion Girdle
@@ -3191,6 +3194,8 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(DEATHKNIGHT, BLOOD, {
 						i(177295),	-- Heart-Lesion Amulet
 						i(177294),	-- Heart-Lesion Cloak of Stoicism
+						i(177438),	-- Heart-Lesion Shoulderguards
+						i(177434),	-- Heart-Lesion Chestguard
 						i(177440),	-- Heart-Lesion Armguards
 						i(177436),	-- Heart-Lesion Handguards
 						i(177439),	-- Heart-Lesion Waistband
@@ -3205,8 +3210,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				cl(DEMONHUNTER, {
 					cl(DEMONHUNTER, HAVOC, {
 						i(177581),	-- Illidari Warglaive
+						i(177569),	-- Illidari Blindfold
 						i(177579),	-- Illidari Chain
+						i(177567),	-- Illidari Shoulders
 						i(177580),	-- Illidari Drape
+						i(177571),	-- Illidari Robe
 						i(177572),	-- Illidari Bracers
 						i(177570),	-- Illidari Gloves
 						i(177574),	-- Illidari Belt
@@ -3221,8 +3229,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				cl(DRUID, {
 					cl(DRUID, BALANCE, {
 						i(177306),	-- Springrain Stave
+						i(177444),	-- Springrain Headpiece
 						i(177321),	-- Springrain Choker
+						i(177446),	-- Springrain Spaulders
 						i(177319),	-- Springrain Cloak of Destruction
+						i(177441),	-- Springrain Tunic
 						i(177448),	-- Springrain Bracers
 						i(177443),	-- Springrain Grips
 						i(177447),	-- Springrain Belt
@@ -3235,8 +3246,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					cl(DRUID, FERAL, {
 						i(177312),	-- Springrain Spear
+						i(177452),	-- Springrain Helm
 						i(177301),	-- Springrain Choker
+						i(177454),	-- Springrain Pauldrons
 						i(177300),	-- Springrain Cloak of Rage
+						i(177449),	-- Springrain Vest
 						i(177456),	-- Springrain Cuffs
 						i(177451),	-- Springrain Handguards
 						i(177455),	-- Springrain Cord
@@ -3256,8 +3270,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(177325),	-- Springrain Stone of Durability
 					}),
 					cl(DRUID, RESTORATION, {
+						i(177460),	-- Springrain Hood
 						i(177307),	-- Springrain Medallion
+						i(177462),	-- Springrain Shoulders
 						i(177313),	-- Springrain Cloak of Wisdom
+						i(177457),	-- Springrain Jerkin
 						i(177464),	-- Springrain Bindings
 						i(177459),	-- Springrain Gloves
 						i(177463),	-- Springrain Waistband
@@ -3273,8 +3290,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(HUNTER, BEAST_MASTERY, {
 						i(177332),	-- Trailseeker Shotgun
 						i(177333),	-- Trailseeker Spear
+						i(177468),	-- Trailseeker Helm
 						i(177327),	-- Trailseeker Choker
+						i(177470),	-- Trailseeker Spaulders
 						i(177326),	-- Trailseeker Cloak of Rage
+						i(177465),	-- Trailseeker Vest
 						i(177472),	-- Trailseeker Bracers
 						i(177467),	-- Trailseeker Gauntlets
 						i(177471),	-- Trailseeker Belt
@@ -3289,8 +3309,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				cl(MAGE, {
 					cl(MAGE, FROST, {
 						i(177340),	-- Mountainsage Staff
+						i(177475),	-- Mountainsage Hood
 						i(177334),	-- Mountainsage Medallion
+						i(177478),	-- Mountainsage Shoulderpads
 						i(177339),	-- Mountainsage Cloak of Destruction
+						i(177477),	-- Mountainsage Robe
 						i(177480),	-- Mountainsage Wristwraps
 						i(177474),	-- Mountainsage Handwraps
 						i(177479),	-- Mountainsage Cord
@@ -3310,12 +3333,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(177343),	-- Mistdancer Ring of Stoicism
 						i(177346),	-- Mistdancer Defender Idol
 						i(177344),	-- Mistdancer Defender Stone
-
 					}),
 					cl(MONK, MISTWEAVER, {
 						i(177353),	-- Mistdancer Staff
+						i(177491),	-- Mistdancer Hood
 						i(177349),	-- Mistdancer Necklace
+						i(177493),	-- Mistdancer Shoulders
 						i(177347),	-- Mistdancer Cloak of Wisdom
+						i(177496),	-- Mistdancer Jerkin
 						i(177495),	-- Mistdancer Bindings
 						i(177490),	-- Mistdancer Gloves
 						i(177494),	-- Mistdancer Waistband
@@ -3328,8 +3353,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					cl(MONK, WINDWALKER, {
 						i(177354),	-- Mistdancer Sword
+						i(177484),	-- Mistdancer Helm
 						i(177356),	-- Mistdancer Choker
+						i(177486),	-- Mistdancer Pauldrons
 						i(177360),	-- Mistdancer Cloak of Rage
+						i(177481),	-- Mistdancer Vest
 						i(177488),	-- Mistdancer Cuffs
 						i(177483),	-- Mistdancer Handguards
 						i(177487),	-- Mistdancer Cord
@@ -3346,8 +3374,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(177367),	-- Sunsoul Scepter
 						i(180716),	-- Sunsoul Scepter
 						i(180717),	-- Sunsoul Shield
+						i(177508),	-- Sunsoul Headpiece
 						i(177362),	-- Sunsoul Necklace
+						i(177510),	-- Sunsoul Spaulders
 						i(177361),	-- Sunsoul Cloak of Wisdom
+						i(177505),	-- Sunsoul Breastplate
 						i(177512),	-- Sunsoul Armplates
 						i(177507),	-- Sunsoul Gloves
 						i(177511),	-- Sunsoul Belt
@@ -3361,8 +3392,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(PALADIN, PROTECTION, {
 						i(177368),	-- Sunsoul Sword
 						i(177369),	-- Sunsoul Bulwark
+						i(177516),	-- Sunsoul Faceguard
 						i(177378),	-- Sunsoul Amulet
+						i(177518),	-- Sunsoul Shoulderguards
 						i(177377),	-- Sunsoul Cloak of Stoicism
+						i(177513),	-- Sunsoul Chestguard
 						i(177520),	-- Sunsoul Armguards
 						i(177515),	-- Sunsoul Handguards
 						i(177519),	-- Sunsoul Waistband
@@ -3375,8 +3409,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					cl(PALADIN, RETRIBUTION, {
 						i(177370),	-- Sunsoul Warmaul
+						i(177500),	-- Sunsoul Helm
 						i(177372),	-- Sunsoul Pendant
+						i(177502),	-- Sunsoul Pauldrons
 						i(177371),	-- Sunsoul Cloak of Battle
+						i(177497),	-- Sunsoul Battleplate
 						i(177504),	-- Sunsoul Vambraces
 						i(177499),	-- Sunsoul Gauntlets
 						i(177503),	-- Sunsoul Girdle
@@ -3391,8 +3428,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				cl(PRIEST, {
 					cl(PRIEST, DISCIPLINE, {
 						i(177394),	-- Communal Staff
+						i(177523),	-- Communal Hood
 						i(177383),	-- Communal Medallion
+						i(177526),	-- Communal Shoulderpads
 						i(177388),	-- Communal Cloak of Wisdom
+						i(177525),	-- Communal Vestments
 						i(177528),	-- Communal Wristwraps
 						i(177522),	-- Communal Handwraps
 						i(177527),	-- Communal Cord
@@ -3406,6 +3446,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(PRIEST, SHADOW, {
 						i(177389),	-- Communal Necklace
 						i(177395),	-- Communal Cloak of Destruction
+						i(177532),	-- Communal Robe
 						i(177534),	-- Communal Bindings
 						i(177530),	-- Communal Gloves
 						i(177533),	-- Communal Sash
@@ -3422,8 +3463,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(177402),	-- Lightdrinker Dagger
 						i(177403),	-- Lightdrinker Shiv
 						i(177404),	-- Lightdrinker Sword
+						i(177538),	-- Lightdrinker Hood
 						i(177397),	-- Lightdrinker Choker
+						i(177540),	-- Lightdrinker Shoulders
 						i(177396),	-- Lightdrinker Cloak of Rage
+						i(177535),	-- Lightdrinker Jerkin
 						i(177542),	-- Lightdrinker Bindings
 						i(177537),	-- Lightdrinker Gloves
 						i(177541),	-- Lightdrinker Waistband
@@ -3439,8 +3483,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(SHAMAN, ELEMENTAL, {
 						i(177417),	-- Streamtalker Aegis
 						i(177416),	-- Streamtalker Claws
+						i(177546),	-- Streamtalker Coif
 						i(177411),	-- Streamtalker Medallion
+						i(177548),	-- Streamtalker Pauldrons
 						i(177425),	-- Streamtalker Cloak of Destruction
+						i(177543),	-- Streamtalker Tunic
 						i(177550),	-- Streamtalker Armbands
 						i(177545),	-- Streamtalker Gloves
 						i(177549),	-- Streamtalker Belt
@@ -3453,8 +3500,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					cl(SHAMAN, ENHANCEMENT, {
 						i(177418),	-- Streamtalker Talons
+						i(177554),	-- Streamtalker Helm
 						i(177406),	-- Streamtalker Choker
+						i(177556),	-- Streamtalker Shoulderguards
 						i(177405),	-- Streamtalker Cloak of Rage
+						i(177551),	-- Streamtalker Chestguard
 						i(177558),	-- Streamtalker Armguard
 						i(177553),	-- Streamtalker Handguards
 						i(177557),	-- Streamtalker Waistguard
@@ -3466,8 +3516,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(177410),	-- Streamtalker Stone of Rage
 					}),
 					cl(SHAMAN, RESTORATION, {
+						i(177562),	-- Streamtalker Cowl
 						i(177420),	-- Streamtalker Necklace
+						i(177564),	-- Streamtalker Spaulders
 						i(177419),	-- Streamtalker Cloak of Wisdom
+						i(177559),	-- Streamtalker Vest
 						i(177566),	-- Streamtalker Bracers
 						i(177561),	-- Streamtalker Grips
 						i(177565),	-- Streamtalker Girdle
@@ -3482,8 +3535,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				cl(WARLOCK, {
 					cl(WARLOCK, AFFLICTION, {
 						i(177589),	-- Felsoul Staff
+						i(177608),	-- Felsoul Cowl
 						i(177583),	-- Felsoul Medallion
+						i(177611),	-- Felsoul Shoulderpads
 						i(177588),	-- Felsoul Cloak of Destruction
+						i(177610),	-- Felsoul Robe
 						i(177613),	-- Felsoul Wristwraps
 						i(177607),	-- Felsoul Handwraps
 						i(177612),	-- Felsoul Cord
@@ -3500,7 +3556,9 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(177590),	-- Oathsworn Greataxe
 						i(177591),	-- Oathsworn Headchopper
 						i(177604),	-- Oathsworn Pendant
+						i(177619),	-- Oathsworn Pauldrons
 						i(177605),	-- Oathsworn Cloak of Battle
+						i(177614),	-- Oathsworn Breastplate
 						i(177621),	-- Oathsworn Vambraces
 						i(177616),	-- Oathsworn Gauntlets
 						i(177620),	-- Oathsworn Girdle
@@ -3514,8 +3572,11 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					cl(WARRIOR, PROTECTION, {
 						i(177592),	-- Oathsworn Axe
 						i(177593),	-- Oathsworn Bulwark
+						i(177617),	-- Oathsworn Helm
 						i(177595),	-- Oathsworn Amulet
+						i(177626),	-- Oathsworn Shoulderguards
 						i(177594),	-- Oathsworn Cloak of Stoicism
+						i(177622),	-- Oathsworn Chestguard
 						i(177628),	-- Oathsworn Armguards
 						i(177624),	-- Oathsworn Handguards
 						i(177627),	-- Oathsworn Waistband
@@ -3723,6 +3784,90 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(180558),	-- Doomblade Spaulders
 				}),
 			}),
+			header(HEADERS.Achievement, SEASON_SINFUL, {
+				filter(CLOAKS, {
+					i(180425),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 02
+					i(180426),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 03
+					i(180427),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 04
+					i(180428),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 05
+				}),
+				filter(CLOTH, {
+					i(178266),	-- Sinful Aspirant's Silk Gown
+					i(178271),	-- Sinful Aspirant's Silk Footwraps
+					i(178276),	-- Sinful Aspirant's Silk Handwraps
+					i(178278),	-- Sinful Aspirant's Silk Cover
+					i(178282),	-- Sinful Aspirant's Silk Legwraps
+					i(178287),	-- Sinful Aspirant's Silk Shawl
+					i(178290),	-- Sinful Aspirant's Silk Belt
+					i(178294),	-- Sinful Aspirant's Silk Bindings
+					i(178302),	-- Sinful Aspirant's Silk Vestiment
+					i(178307),	-- Sinful Aspirant's Silk Slippers
+					i(178312),	-- Sinful Aspirant's Silk Grasps
+					i(178314),	-- Sinful Aspirant's Silk Visage
+					i(178318),	-- Sinful Aspirant's Silk Britches
+					i(178323),	-- Sinful Aspirant's Silk Shoulderpads
+					i(178326),	-- Sinful Aspirant's Silk Cincture
+					i(178330),	-- Sinful Aspirant's Silk Armbands
+				}),
+				filter(LEATHER, {
+					i(178269),	-- Sinful Aspirant's Leather Tunic
+					i(178273),	-- Sinful Aspirant's Leather Footpads
+					i(178274),	-- Sinful Aspirant's Leather Grips
+					i(178280),	-- Sinful Aspirant's Leather Mask
+					i(178284),	-- Sinful Aspirant's Leather Leggings
+					i(178285),	-- Sinful Aspirant's Leather Mantle
+					i(178292),	-- Sinful Aspirant's Leather Cord
+					i(178297),	-- Sinful Aspirant's Leather Armguards
+					i(178309),	-- Sinful Aspirant's Leather Treads
+					i(178310),	-- Sinful Aspirant's Leather Handguards
+					i(178316),	-- Sinful Aspirant's Leather Headguard
+					i(178320),	-- Sinful Aspirant's Leather Britches
+					i(178321),	-- Sinful Aspirant's Leather Shoulderpads
+					i(178328),	-- Sinful Aspirant's Leather Loop
+					i(178333),	-- Sinful Aspirant's Leather Cuffs
+				}),
+				filter(MAIL, {
+					i(178268),	-- Sinful Aspirant's Chain Tunic
+					i(178272),	-- Sinful Aspirant's Chain Stompers
+					i(178277),	-- Sinful Aspirant's Chain Handguards
+					i(178279),	-- Sinful Aspirant's Chain Headguard
+					i(178283),	-- Sinful Aspirant's Chain Wargreaves
+					i(178288),	-- Sinful Aspirant's Chain Shoulderguards
+					i(178291),	-- Sinful Aspirant's Chain Clasp
+					i(178296),	-- Sinful Aspirant's Chain Bracer
+					i(178308),	-- Sinful Aspirant's Chain Footguards
+					i(178313),	-- Sinful Aspirant's Chain Grips
+					i(178315),	-- Sinful Aspirant's Chain Helmet
+					i(178319),	-- Sinful Aspirant's Chain Breeches
+					i(178324),	-- Sinful Aspirant's Chain Monnion
+					i(178327),	-- Sinful Aspirant's Chain Buckle
+					i(178332),	-- Sinful Aspirant's Chain Coils
+				}),
+				filter(PLATE, {
+					i(178264),	-- Sinful Aspirant's Plate Headguard
+					i(178267),	-- Sinful Aspirant's Plate Armor
+					i(178270),	-- Sinful Aspirant's Plate Stompers
+					i(178275),	-- Sinful Aspirant's Plate Handguards
+					i(178281),	-- Sinful Aspirant's Plate Wargreaves
+					i(178286),	-- Sinful Aspirant's Plate Pauldrons
+					i(178289),	-- Sinful Aspirant's Plate Greatbelt
+					i(178295),	-- Sinful Aspirant's Plate Armguards
+					i(178300),	-- Sinful Aspirant's Plate Greathelm
+					i(178303),	-- Sinful Aspirant's Plate Chestguard
+					i(178306),	-- Sinful Aspirant's Plate Sabatons
+					i(178311),	-- Sinful Aspirant's Plate Gloves
+					i(178317),	-- Sinful Aspirant's Plate Legplates
+					i(178322),	-- Sinful Aspirant's Plate Shoulderplates
+					i(178325),	-- Sinful Aspirant's Plate Vambraces
+					i(178331),	-- Sinful Aspirant's Plate Chain
+				}),
+				filter(TABARDS, {
+					i(180432),	-- 9.0 PvP - PvP Reward - Tabard - 2
+					i(180433),	-- 9.0 PvP - PvP Reward - Tabard - 3
+					i(180434),	-- 9.0 PvP - PvP Reward - Tabard - 4
+					i(180435),	-- 9.0 PvP - PvP Reward - Tabard - 5
+				}),
+			}),
 			n(VENTHYR, {
 				filter(CLOTH, {
 					i(179466),	-- 9.0 Covenant - Revendreth - Cloth - Head
@@ -3821,6 +3966,224 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(177112),	-- Honorbound Centurion's Greaves
 					}),
 				}),
+			}),
+			filter(CLOTH, {
+				-- Bastion
+				i(175608),	-- Pure Aspirant's Robe
+				i(175620),	-- Pure Aspirant's Hood
+				i(175629),	-- Pure Aspirant's Mantle
+				i(175632),	-- Pure Aspirant's Cord
+				i(178958),	-- Pure Aspirant's Handwraps
+				-- Madralxxus
+				i(175512),	-- Corpse-Stitcher's Raiment
+				i(175528),	-- Corpse-Stitcher's Trousers
+				-- Oribos
+				i(179489),	-- Oribos Quest Cloth Chest
+				i(179490),	-- Oribos Quest Cloth Chest
+				i(179612),	-- Oribos Quest Cloth Cloak
+				i(175682),	-- Oribos Quest Cloth Feet
+				i(175686),	-- Oribos Quest Cloth Hand
+				i(175688),	-- Oribos Quest Cloth Head
+				i(175691),	-- Oribos Quest Cloth Legs
+				i(175679),	-- Oribos Quest Cloth Robe
+				i(175695),	-- Oribos Quest Cloth Shoulder
+				i(175697),	-- Oribos Quest Cloth Waist
+				i(175700),	-- Oribos Quest Cloth Wrist
+				-- Ravendreth
+				i(175420),	-- Slippers of Pained Absolution
+				i(175490),	-- Gloves of Pained Absolution
+				i(175501),	-- Shoulders of Pained Absolution
+				i(178074),	-- Cover of Pained Absolution
+				-- PvP?
+				i(178439),	-- zzzRated - Cloth Cord
+				i(178425),	-- zzzRated - Cloth Gloves
+				i(178427),	-- zzzRated - Cloth Hood
+				i(178431),	-- zzzRated - Cloth Leggings
+				i(178436),	-- zzzRated - Cloth Mantle
+				i(178415),	-- zzzRated - Cloth Robe
+				i(178420),	-- zzzRated - Cloth Treads
+				i(178443),	-- zzzRated - Cloth Wristwraps
+				-- Unknown
+				i(181111),	-- Soulbreaker Drape
+				i(181105),	-- Soulbreaker Handwraps
+				i(181106),	-- Soulbreaker Hood
+				i(181107),	-- Soulbreaker Leggings
+				i(181108),	-- Soulbreaker Mantle
+				i(181109),	-- Soulbreaker Sash
+				i(181104),	-- Soulbreaker Slippers
+				i(181103),	-- Soulbreaker Vestments
+				i(181110),	-- Soulbreaker Wraps
+			}),
+			filter(LEATHER, {
+				-- Bastion
+				i(175611),	-- Courageous Aspirant's Vest
+				i(175622),	-- Courageous Aspirant's Helm
+				i(175627),	-- Courageous Aspirant's Spaulders
+				i(175634),	-- Courageous Aspirant's Belt
+				i(178956),	-- Courageous Aspirant's Mitts
+				-- Maldraxxus
+				i(175515),	-- Deceitful Agent's Tunic
+				i(175530),	-- Deceitful Agent's Legwraps
+				-- Oribos
+				i(175681),	-- Oribos Quest Leather Chest
+				i(179614),	-- Oribos Quest Leather Cloak
+				i(179617),	-- Oribos Quest Leather Cloak
+				i(175684),	-- Oribos Quest Leather Feet
+				i(175685),	-- Oribos Quest Leather Hand
+				i(175690),	-- Oribos Quest Leather Head
+				i(175693),	-- Oribos Quest Leather Legs
+				i(175694),	-- Oribos Quest Leather Shoulder
+				i(175699),	-- Oribos Quest Leather Waist
+				i(175702),	-- Oribos Quest Leather Wrist
+				-- Ravendreth
+				i(175422),	-- Nightcloaked Boots
+				i(175488),	-- Nightcloaked Grips
+				i(175499),	-- Nightcloaked Shoulderpads
+				i(178076),	-- Nightcloaked Cover
+				-- PvP?
+				i(178441),	-- zzzRated - Leather Belt
+				i(178422),	-- zzzRated - Leather Boots
+				i(178433),	-- zzzRated - Leather Breeches
+				i(178423),	-- zzzRated - Leather Gloves
+				i(178429),	-- zzzRated - Leather Helm
+				i(178434),	-- zzzRated - Leather Spaulders
+				i(178418),	-- zzzRated - Leather Vest
+				i(178446),	-- zzzRated - Leather Wristwraps
+				-- Unknown
+				i(181037),	-- Death Shroud Belt
+				i(181038),	-- Death Shroud Bindings
+				i(181032),	-- Death Shroud Boots
+				i(181035),	-- Death Shroud Breeches
+				i(181039),	-- Death Shroud Cloak
+				i(181033),	-- Death Shroud Gloves
+				i(181034),	-- Death Shroud Hood
+				i(181036),	-- Death Shroud Spaulders
+				i(181031),	-- Death Shroud Vest
+			}),
+			filter(MAIL, {
+				-- Ardenweald
+				i(179830),	-- Ardenweald Covenant Mail Chest
+				i(179861),	-- Ardenweald Covenant Mail Chest
+				i(179853),	-- Ardenweald Covenant Mail Chest
+				i(179845),	-- Ardenweald Covenant Mail Chest
+				i(179860),	-- Ardenweald Covenant Mail Feet
+				i(179831),	-- Ardenweald Covenant Mail Feet
+				i(179852),	-- Ardenweald Covenant Mail Feet
+				i(179844),	-- Ardenweald Covenant Mail Feet
+				i(179851),	-- Ardenweald Covenant Mail Hand
+				i(179832),	-- Ardenweald Covenant Mail Hand
+				i(179843),	-- Ardenweald Covenant Mail Hand
+				i(179859),	-- Ardenweald Covenant Mail Hand
+				i(179850),	-- Ardenweald Covenant Mail Head
+				i(179842),	-- Ardenweald Covenant Mail Head
+				i(179833),	-- Ardenweald Covenant Mail Head
+				i(179858),	-- Ardenweald Covenant Mail Head
+				i(179841),	-- Ardenweald Covenant Mail Legs
+				i(179834),	-- Ardenweald Covenant Mail Legs
+				i(179857),	-- Ardenweald Covenant Mail Legs
+				i(179849),	-- Ardenweald Covenant Mail Legs
+				i(179840),	-- Ardenweald Covenant Mail Shoulder
+				i(179835),	-- Ardenweald Covenant Mail Shoulder
+				i(179856),	-- Ardenweald Covenant Mail Shoulder
+				i(179848),	-- Ardenweald Covenant Mail Shoulder
+				i(179855),	-- Ardenweald Covenant Mail Waist
+				i(179836),	-- Ardenweald Covenant Mail Waist
+				i(179847),	-- Ardenweald Covenant Mail Waist
+				i(179839),	-- Ardenweald Covenant Mail Waist
+				i(179854),	-- Ardenweald Covenant Mail Wrist
+				i(179846),	-- Ardenweald Covenant Mail Wrist
+				i(179837),	-- Ardenweald Covenant Mail Wrist
+				i(179838),	-- Ardenweald Covenant Mail Wrist
+				-- Bastion
+				i(175610),	-- Humble Aspirant's Vest
+				i(175621),	-- Humble Aspirant's Helm
+				i(175630),	-- Humble Aspirant's Monnion
+				i(175633),	-- Humble Aspirant's Belt
+				i(178959),	-- Humble Aspirant's Handguards
+				-- Maldraxxus
+				i(175514),	-- Flesh Architect's Hauberk
+				i(175529),	-- Flesh Architect's Greaves
+				-- Oribos
+				i(175680),	-- Oribos Quest Mail Chest
+				i(179615),	-- Oribos Quest Mail Cloak
+				i(179618),	-- Oribos Quest Mail Cloak
+				i(175683),	-- Oribos Quest Mail Feet
+				i(175687),	-- Oribos Quest Mail Hand
+				i(175689),	-- Oribos Quest Mail Head
+				i(175692),	-- Oribos Quest Mail Legs
+				i(175696),	-- Oribos Quest Mail Shoulder
+				i(175698),	-- Oribos Quest Mail Waist
+				i(175701),	-- Oribos Quest Mail Wrist
+				-- Ravendreth
+				i(175421),	-- Soul Hunter's Sabatons
+				i(175491),	-- Soul Hunter's Grips
+				i(175502),	-- Soul Hunter's Mantle
+				i(178075),	-- Soul Hunter's Cover
+				-- PvP?
+				i(178440),	-- zzzRated - Mail Belt
+				i(178426),	-- zzzRated - Mail Gauntlets
+				i(178428),	-- zzzRated - Mail Helm
+				i(178432),	-- zzzRated - Mail Leggings
+				i(178437),	-- zzzRated - Mail Monnion
+				i(178421),	-- zzzRated - Mail Sabatons
+				i(178417),	-- zzzRated - Mail Vest
+				i(178445),	-- zzzRated - Mail Wristwraps
+				-- Unknown
+				i(181136),	-- Fearstalker's Belt
+				i(181137),	-- Fearstalker's Bracers
+				i(181138),	-- Fearstalker's Cloak
+				i(181132),	-- Fearstalker's Gauntlets
+				i(181130),	-- Fearstalker's Hauberk
+				i(181133),	-- Fearstalker's Helm
+				i(181134),	-- Fearstalker's Leggings
+				i(181135),	-- Fearstalker's Monnion
+				i(181131),	-- Fearstalker's Sabatons
+			}),
+			filter(PLATE, {
+				-- Bastion
+				i(175607),	-- Judicious Aspirant's Helm
+				i(175609),	-- Judicious Aspirant's Chestplate
+				i(175628),	-- Judicious Aspirant's Shoulders
+				i(175631),	-- Judicious Aspirant's Girdle
+				i(178957),	-- Judicious Aspirant's Gloves
+				-- Maldraxxus
+				i(175513),	-- Cruel Executioner's Breastplate
+				i(175527),	-- Cruel Executioner's Greaves
+				-- Oribos
+				i(175640),	-- Oribos Quest Plate Chest
+				i(179616),	-- Oribos Quest Plate Cloak
+				i(179619),	-- Oribos Quest Plate Cloak
+				i(175641),	-- Oribos Quest Plate Feet
+				i(175642),	-- Oribos Quest Plate Hand
+				i(175639),	-- Oribos Quest Plate Head
+				i(175643),	-- Oribos Quest Plate Legs
+				i(175644),	-- Oribos Quest Plate Shoulder
+				i(175645),	-- Oribos Quest Plate Waist
+				i(175646),	-- Oribos Quest Plate Wrist
+				-- Ravendreth
+				i(175419),	-- Stoneforged Greatboots
+				i(175489),	-- Stoneforged Gauntlets
+				i(175500),	-- Stoneforged Shoulderguards
+				i(178073),	-- Stoneforged Helm
+				-- PvP?
+				i(178416),	-- zzzRated - Plate Chestplate
+				i(178424),	-- zzzRated - Plate Gauntlets
+				i(178438),	-- zzzRated - Plate Girdle
+				i(178413),	-- zzzRated - Plate Helm
+				i(178430),	-- zzzRated - Plate Legguards
+				i(178435),	-- zzzRated - Plate Shoulders
+				i(178419),	-- zzzRated - Plate Warboots
+				i(178444),	-- zzzRated - Plate Wristwraps
+				-- Unknown
+				i(180996),	-- Dread Sentinel's Chestplate
+				i(181003),	-- Dread Sentinel's Cloak
+				i(181001),	-- Dread Sentinel's Girdle
+				i(180997),	-- Dread Sentinel's Greatboots
+				i(180998),	-- Dread Sentinel's Grips
+				i(180995),	-- Dread Sentinel's Headgear
+				i(180999),	-- Dread Sentinel's Legguards
+				i(181000),	-- Dread Sentinel's Spaulders
+				i(181002),	-- Dread Sentinel's Vambraces
 			}),
 		})),
 

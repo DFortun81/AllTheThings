@@ -155,6 +155,40 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(92563),	-- The Eye of the Storm
 		})),
 
+		-- 5.2.0
+		expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { CREATED_5_2_0 } }, {
+			i(96194),	-- Chest of the Crackling Vanquisher
+			i(96195),	-- Chest of the Crackling Conqueror
+			i(96196),	-- Chest of the Crackling Protector
+			i(96227),	-- Gauntlets of the Crackling Vanquisher
+			i(96228),	-- Gauntlets of the Crackling Conqueror
+			i(96229),	-- Gauntlets of the Crackling Protector
+			i(96251),	-- Helm of the Crackling Vanquisher
+			i(96252),	-- Helm of the Crackling Conqueror
+			i(96253),	-- Helm of the Crackling Protector
+			i(96259),	-- Leggings of the Crackling Vanquisher
+			i(96260),	-- Leggings of the Crackling Conqueror
+			i(96261),	-- Leggings of the Crackling Protector
+			i(96327),	-- Shoulders of the Crackling Vanquisher
+			i(96328),	-- Shoulders of the Crackling Conqueror
+			i(96329),	-- Shoulders of the Crackling Protector
+			i(96938),	-- Chest of the Crackling Vanquisher
+			i(96939),	-- Chest of the Crackling Conqueror
+			i(96940),	-- Chest of the Crackling Protector
+			i(96971),	-- Gauntlets of the Crackling Vanquisher
+			i(96972),	-- Gauntlets of the Crackling Conqueror
+			i(96973),	-- Gauntlets of the Crackling Protector
+			i(96995),	-- Helm of the Crackling Vanquisher
+			i(96996),	-- Helm of the Crackling Conqueror
+			i(96997),	-- Helm of the Crackling Protector
+			i(97003),	-- Leggings of the Crackling Vanquisher
+			i(97004),	-- Leggings of the Crackling Conqueror
+			i(97005),	-- Leggings of the Crackling Protector
+			i(97071),	-- Shoulders of the Crackling Vanquisher
+			i(97072),	-- Shoulders of the Crackling Conqueror
+			i(97073),	-- Shoulders of the Crackling Protector
+		})),
+
 		-- 5.3.0
 		expansion(EXPANSION.MOP, 3.0, bubbleDown({ ["timeline"] = { CREATED_5_3_0 } }, {
 			i(98001),	-- Saurok Collection

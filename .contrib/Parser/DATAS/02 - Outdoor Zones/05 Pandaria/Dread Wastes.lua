@@ -1620,11 +1620,3 @@ root(ROOTS.HiddenQuestTriggers,{
 		q(31997),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 03 - Speed King
 	}),
 });
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.MOP, {
-		n(WEAPONS, {
-			i(84085),	-- Dreadwaste Meditation Staff
-			i(84086),	-- Dreadwaste Diviner's Rod
-		}),
-	}),
-});

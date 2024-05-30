@@ -6360,7 +6360,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(4565),	-- Simple Dagger
 						i(38579, {	-- Venomous Tome
-							["timeline"] = { CREATED_2_4_2, ADDED_3_0_2 },
+							["timeline"] = { ADDED_3_0_2 },
 							["isLimited"] = true,
 						}),
 					},
@@ -7042,14 +7042,6 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(53645),	-- triggered during 'Molten Core' (53342) when porting to Molten Core
 			q(59255),	-- completed when turning in 'Fame Waits for Gnome One' (58708)
 		}),
-	}),
-});
--- #endif
-
--- #if BEFORE WRATH
-root(ROOTS.NeverImplemented, {
-	i(38579, {	-- Venomous Tome
-		["timeline"] = { CREATED_2_4_2, ADDED_3_0_2 },
 	}),
 });
 -- #endif

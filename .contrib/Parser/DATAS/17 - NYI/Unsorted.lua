@@ -5882,7 +5882,6 @@ root(ROOTS.Unsorted, {
 					i(215539),	-- Jinyu Longbow
 					i(215546),	-- Miracoran, the Dissonant Chord
 					i(215553),	-- Death Lotus Repeater
-					i(215562),	-- Durumu's Gaze
 					i(215563),	-- Durumu's Gaze
 					i(215565),	-- Jinyu Slasher
 					i(215566),	-- Jinyu Blade

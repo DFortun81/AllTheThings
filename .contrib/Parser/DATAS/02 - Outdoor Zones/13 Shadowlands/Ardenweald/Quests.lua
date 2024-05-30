@@ -1035,34 +1035,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	}),
 })));
 
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.SL, {
-		n(WEAPONS, {
-			i(176012),	-- Ardenweald Quest Mace
-			i(176013),	-- Ardenweald Quest Mace
-			i(176014),	-- Ardenweald Quest Mace
-			i(176015),	-- Ardenweald Quest Mace
-			i(176016),	-- Ardenweald Quest Mace
-			i(179503),	-- Ardenweald Quest Dagger
-			i(179504),	-- Ardenweald Quest Dagger
-			i(179505),	-- Ardenweald Quest Dagger
-			i(179506),	-- Ardenweald Quest Dagger
-			i(179507),	-- Ardenweald Quest Dagger
-			i(176042),	-- Ardenweald Quest Offhand
-			i(176043),	-- Ardenweald Quest Offhand
-			i(176044),	-- Ardenweald Quest Offhand
-			i(176045),	-- Ardenweald Quest Offhand
-			i(176046),	-- Ardenweald Quest Offhand
-			i(176841),	-- Ardenweald Quest Staff
-			i(176842),	-- Ardenweald Quest Staff
-			i(176843),	-- Ardenweald Quest Staff
-			i(176844),	-- Ardenweald Quest Staff
-			i(178117),	-- Ardenweald NPC Staff
-			i(178118),	-- Ardenweald NPC Staff
-		}),
-	}),
-});
-
 root(ROOTS.HiddenQuestTriggers, {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {

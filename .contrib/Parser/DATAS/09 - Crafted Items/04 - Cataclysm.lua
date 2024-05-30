@@ -1009,15 +1009,3 @@ Fire and Water - Damage against Elementals increased by 15%.
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, {
-	n(PROFESSIONS, {
-		prof(JEWELCRAFTING, {
-			expansion(EXPANSION.CATA, {
-				i(52107),	-- Resolute Hessonite
-				i(52150),	-- Perfect Resolute Hessonite
-				i(52092),	-- Mystic Alicite
-				i(52165),	-- Perfect Mystic Alicite
-			}),
-		}),
-	}),
-});

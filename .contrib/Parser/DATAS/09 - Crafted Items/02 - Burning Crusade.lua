@@ -1238,24 +1238,3 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, {
-	n(PROFESSIONS, {
-		prof(JEWELCRAFTING, {
-			expansion(EXPANSION.TBC, {
-				i(21793),	-- Arcanite Sword Pendant
-				i(21780),	-- Blood Crown
-				i(20956),	-- Silver Rose Pendant
-			}),
-		}),
-		prof(TAILORING, {
-			expansion(EXPANSION.TBC, {
-				i(30464),	-- Lifeblood Bracers
-				i(30463),	-- Lifeblood Belt
-				i(30465),	-- Lifeblood Leggings
-				i(30460),	-- Netherflame Belt
-				i(30461),	-- Netherflame Boots
-				i(30459),	-- Netherflame Robe
-			}),
-		}),
-	}),
-});
