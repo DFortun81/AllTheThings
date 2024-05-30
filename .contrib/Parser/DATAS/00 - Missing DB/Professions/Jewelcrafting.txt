@@ -1140,8 +1140,8 @@ r(435324),	-- Engraved Gemcutter
 r(435325),	-- Decorative Lens
 r(435326),	-- Marbled Stone
 r(435327),	-- Inverted Prism
-r(435329),	-- Inscription Finishing Reagent
-r(435330),	-- Engineering Finishing Reagent
+r(435329),	-- Sifted Cave Sand \\ Inscription Finishing Reagent
+r(435330),	-- Ominous Energy Crystal \\ Engineering Finishing Reagent
 r(435331),	-- Elemental Focusing Lens
 r(435332),	-- Prismatic Null Stone
 r(435333),	-- Captured Starlight
@@ -2325,8 +2325,8 @@ r(435324),	-- Engraved Gemcutter
 r(435325),	-- Decorative Lens
 r(435326),	-- Marbled Stone
 r(435327),	-- Inverted Prism
-r(435329),	-- Inscription Finishing Reagent
-r(435330),	-- Engineering Finishing Reagent
+r(435329),	-- Sifted Cave Sand \\ Inscription Finishing Reagent
+r(435330),	-- Ominous Energy Crystal \\ Engineering Finishing Reagent
 r(435331),	-- Elemental Focusing Lens
 r(435332),	-- Prismatic Null Stone
 r(435333),	-- Captured Starlight

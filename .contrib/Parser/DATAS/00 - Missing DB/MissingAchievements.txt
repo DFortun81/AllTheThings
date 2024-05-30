@@ -292,7 +292,7 @@ ach(20483),	-- The Darkness kills (Heroic Darkflame Cleft)
 ach(20484),	-- The Darkness kills (Mythic Darkflame Cleft)
 ach(20485),	-- Ki'katal the Harvester kills (Normal Ara-Kara, City of Echoes)
 ach(20486),	-- Ki'katal the Harvester kills (Heroic Ara-Kara, City of Echoes)
-ach(20487),	-- Ki'katal the Harvester kills (Mythic Ara-Kara, City of Echoes) (copy)
+ach(20487),	-- Ki'katal the Harvester kills (Mythic Ara-Kara, City of Echoes) \\ Ki'katal the Harvester kills (Mythic Ara-Kara, City of Echoes) (copy)
 ach(20488),	-- Valorstones earned
 ach(20489),	-- Weathered Harbinger Crests earned
 ach(20490),	-- Carved Harbinger Crests earned
@@ -316,10 +316,10 @@ ach(20586),	-- Keystone Hero: Ara-Kara, City of Echoes
 ach(20587),	-- Keystone Hero: Siege of Boralus
 ach(20588),	-- Keystone Hero: Grim Batol
 ach(20589),	-- [PH] Hero: The War Within Season 1
-ach(20594),	-- Flamegards Hope
+ach(20594),	-- Flamegard's Hope \\ Flamegards Hope
 ach(20595),	-- Sojourner of Isle of Dorn
 ach(20596),	-- Loremaster of Khaz Algar
-ach(20597),	-- United We Stand
+ach(20597),	-- The War Within \\ United We Stand
 ach(20598),	-- Hallowfall
 ach(39919),	-- Might of Dragonblight (char specific hidden copy)
 ach(39920),	-- The Empire of Zul'Drak (char specific hidden copy)
@@ -491,8 +491,8 @@ ach(40141),	-- Algari Dungeon Tank \\ Algarian Dungeon Tank
 ach(40142),	-- Learning to Share
 ach(40145),	-- So Much Sharing
 ach(40150),	-- Children's Entertainer
-ach(40151),	-- Mereldar Menance
-ach(40152),	-- Flight Glyphs: The Three Shields
+ach(40151),	-- Mereldar Menace \\ Mereldar Menance
+ach(40152),	-- Skyriding Glyphs: The Three Shields \\ Flight Glyphs: The Three Shields
 ach(40153),	-- Battle on Khaz Algar
 ach(40154),	-- Aquatic Battler of Khaz Algar
 ach(40155),	-- Beast Battler of Khaz Algar
@@ -504,7 +504,7 @@ ach(40162),	-- Humanoid Battler of Khaz Algar
 ach(40163),	-- Magic Battler of Khaz Algar
 ach(40164),	-- Mechanical Battler of Khaz Algar
 ach(40165),	-- Undead Battler of Khaz Algar
-ach(40166),	-- Khaz Algar Glyph Hunter
+ach(40166),	-- Isle of Dorn Glyph Hunter \\ Khaz Algar Glyph Hunter
 ach(40172),	-- Dynamic Flight Power 1
 ach(40173),	-- Dynamic Flight Power 2
 ach(40174),	-- Dynamic Flight Power 3
@@ -536,7 +536,7 @@ ach(40201),	-- Rated Battleground Blitz won
 ach(40202),	-- Rated Battleground Blitz won the most
 ach(40210),	-- Deephaul Ravine Victory
 ach(40211),	-- Deephaul Ravine Veteran
-ach(40215),	-- Deephaul Ravine Perfection
+ach(40215),	-- Deepwind Ravine Shutout \\ Deephaul Ravine Perfection
 ach(40216),	-- Deephaul Ravine Expedience
 ach(40217),	-- Battleground Blitzer
 ach(40219),	-- Battleground Blitzest
@@ -757,15 +757,15 @@ ach(40507),	-- Hanging Tight
 ach(40509),	-- Awakening The Machine: Wave 10
 ach(40510),	-- One Ping Only
 ach(40511),	-- Rare Within
-ach(40512),	-- War Within: Tier 3
-ach(40514),	-- War Within: Tier 4
-ach(40515),	-- War Within: Tier 5
-ach(40516),	-- War Within: Tier 6
-ach(40517),	-- War Within: Tier 7
-ach(40518),	-- War Within: Tier 8
-ach(40519),	-- War Within: Tier 9
-ach(40520),	-- War Within: Tier 10
-ach(40521),	-- War Within: Tier 11
+ach(40512),	-- War Within Delves: Tier 2 \\ War Within: Tier 3
+ach(40514),	-- War Within Delves: Tier 3 \\ War Within: Tier 4
+ach(40515),	-- War Within Delves: Tier 4 \\ War Within: Tier 5
+ach(40516),	-- War Within Delves: Tier 5 \\ War Within: Tier 6
+ach(40517),	-- War Within Delves: Tier 6 \\ War Within: Tier 7
+ach(40518),	-- War Within Delves: Tier 7 \\ War Within: Tier 8
+ach(40519),	-- War Within Delves: Tier 8 \\ War Within: Tier 9
+ach(40520),	-- War Within Delves: Tier 9 \\ War Within: Tier 10
+ach(40521),	-- War Within Delves: Tier 10 \\ War Within: Tier 11
 ach(40523),	-- On Brand
 ach(40524),	-- Good Deed Delver
 ach(40525),	-- Fungal Folly Stories
@@ -783,3 +783,140 @@ ach(40536),	-- The Spiral Weave Stories
 ach(40537),	-- Delve Loremaster: War Within
 ach(40538),	-- Brann Development
 ach(40539),	-- The Derby Dash
+11.0.0.54774
+ach(40542),	-- Smelling History
+ach(40543),	-- <DNT> Patient 1 - Mereldar Infirmary
+ach(40544),	-- <DNT> Patient 2 - Mereldar Infirmary
+ach(40545),	-- <DNT> Patient 3 - Mereldar Infirmary
+ach(40547),	-- <DNT> Patient 4 - Mereldar Infirmary
+ach(40548),	-- <DNT> Patient 5 - Mereldar Infirmary
+ach(40549),	-- <DNT> Patient 6 - Mereldar Infirmary
+ach(40550),	-- <DNT> Patient 7 - Mereldar Infirmary
+ach(40569),	-- Nothing Boring About Borean (char specific hidden copy)
+ach(40570),	-- I've Toured the Fjord (char specific hidden copy)
+ach(40571),	-- Icecrown: The Final Goal (char specific hidden copy)
+ach(40572),	-- To Hellfire and Back (char specific hidden copy)
+ach(40573),	-- Shadow of the Betrayer (char specific hidden copy)
+ach(40574),	-- To Hellfire and Back (char specific hidden copy)
+ach(40575),	-- I've Toured the Fjord (char specific hidden copy)
+ach(40576),	-- Nothing Boring About Borean (char specific hidden copy)
+ach(40577),	-- Mighty Roamin' Krasaranger (char specific hidden copy)
+ach(40578),	-- Mighty Roamin' Krasaranger (char specific hidden copy)
+ach(40579),	-- That's Val'sharah Folks! (char specific hidden copy)
+ach(40580),	-- Azsuna Matata (char specific hidden copy)
+ach(40581),	-- Vrykul Story, Bro (char specific hidden copy)
+ach(40582),	-- Breaching the Tomb (char specific hidden copy)
+ach(40583),	-- You Are Now Prepared! (char specific hidden copy)
+ach(40584),	-- A Sound Plan (char specific hidden copy)
+ach(40585),	-- Super Size Snuffling
+ach(40586),	-- Awakening The Machine: Wave 20
+ach(40587),	-- Awakening The Machine: Wave 30
+ach(40588),	-- Awakening The Machine: Wave 40
+ach(40589),	-- Awakening The Machine: Wave 50
+ach(40590),	-- Priory of the Sacred Flame
+ach(40591),	-- Khaz Algar Diplomat
+ach(40592),	-- Heroic: Priory of the Sacred Flame
+ach(40596),	-- Mythic: Priory of the Sacred Flame
+ach(40599),	-- The Dawnbreaker
+ach(40601),	-- Heroic: The Dawnbreaker
+ach(40604),	-- Mythic: The Dawnbreaker
+ach(40606),	-- Flat Earthen
+ach(40607),	-- Wandering in the Ravine
+ach(40608),	-- Running in the Ravine
+ach(40612),	-- Sprinting in the Ravine
+ach(40613),	-- Resilient Runner
+ach(40614),	-- Gobblin' with Glublurp
+ach(40615),	-- Unexpected Arrival
+ach(40616),	-- Unexpected Arrivals
+ach(40617),	-- Deepholla
+ach(40618),	-- Lost and Found
+ach(40619),	-- Mine Poppin'
+ach(40620),	-- Back to the Wall
+ach(40621),	-- The Rookery
+ach(40622),	-- Biblo Archivist
+11.0.0.54935
+ach(40623),	-- I Only Need One Trip
+ach(40624),	-- Itsy Bitsy Spider
+ach(40625),	-- The Missing Lynx
+ach(40628),	-- Notable Machines
+ach(40629),	-- Bookworm
+ach(40630),	-- For the Collective
+ach(40631),	-- War Within Delves: Tier 1
+ach(40632),	-- No Harm Ever Came From Reading A Book
+ach(40633),	-- The Unseeming
+ach(40634),	-- You Can't Hang With Us
+ach(40635),	-- Branntastic
+ach(40636),	-- Sojourner of Azj-Kahet
+ach(40637),	-- Heroic: The Rookery
+ach(40642),	-- Mythic: The Rookery
+ach(40643),	-- The Stonevault
+ach(40644),	-- Heroic: The Stonevault
+ach(40648),	-- Mythic: The Stonevault
+ach(40652),	-- Goldie Baronbottom kills (Normal Cinderbrew Meadery)
+ach(40653),	-- Goldie Baronbottom kills (Heroic Cinderbrew Meadery)
+ach(40654),	-- Goldie Baronbottom kills (Mythic Cinderbrew Meadery)
+ach(40657),	-- Prioress Murrapray kills (Normal Priory of the Sacred Flame)
+ach(40658),	-- Prioress Murrapray kills (Heroic Priory of the Sacred Flame)
+ach(40659),	-- Prioress Murrapray kills (Mythic Priory of the Sacred Flame)
+ach(40660),	-- The War Within Season 1: Spelunker Supreme
+ach(40662),	-- It's Not Much, But It's Honest Work
+ach(40663),	-- Skyriding Glyphs: Dhar Oztan
+ach(40664),	-- Skyriding Glyphs: Storm's Watch
+ach(40665),	-- Skyriding Glyphs: Dhar Durgaz
+ach(40666),	-- Skyriding Glyphs: Sunken Shield
+ach(40667),	-- Skyriding Glyphs: Thul Medran
+ach(40668),	-- Skyriding Glyphs: Thunderhead Peak
+ach(40669),	-- Skyriding Glyphs: Cinderbrew Meadery
+ach(40670),	-- Skyriding Glyphs: Mourning Rise
+ach(40671),	-- Skyriding Glyphs: Ironwold
+ach(40672),	-- Skyriding Glyphs: Gundargaz
+ach(40673),	-- Skyriding Glyphs: The Stonevault Exterior
+ach(40674),	-- Skyriding Glyphs: The Lost Mines
+ach(40675),	-- Skyriding Glyphs: Chittering Den
+ach(40676),	-- Skyriding Glyphs: The Rumbling Wastes
+ach(40677),	-- Skyriding Glyphs: The Living Grotto
+ach(40678),	-- Skyriding Glyphs: Abyssal Excavation
+ach(40679),	-- Skyriding Glyphs: Taelloch Mine
+ach(40680),	-- Skyriding Glyphs: The Waterworks
+ach(40681),	-- Skyriding Glyphs: The Fangs
+ach(40682),	-- Skyriding Glyphs: Sina's Yearning
+ach(40683),	-- Skyriding Glyphs: Sanguine Grasps
+ach(40684),	-- Skyriding Glyphs: Dunelle's Kindness
+ach(40685),	-- Skyriding Glyphs: Bleak Sand
+ach(40686),	-- Skyriding Glyphs: Mereldar
+ach(40687),	-- Skyriding Glyphs: Priory of the Sacred Flame
+ach(40688),	-- Skyriding Glyphs: Fortune's Fall
+ach(40689),	-- Skyriding Glyphs: Velhan's Claim
+ach(40690),	-- Skyriding Glyphs: Tenir's Ascent
+ach(40691),	-- Skyriding Glyphs: Arathi's End
+ach(40692),	-- Skyriding Glyphs: Siegehold
+ach(40693),	-- Skyriding Glyphs: Ruptured Lake
+ach(40694),	-- Skyriding Glyphs: Eye of Ansurek
+ach(40695),	-- Skyriding Glyphs: Old Sacrificial Pit
+ach(40696),	-- Skyriding Glyphs: Deepwalker Pass
+ach(40697),	-- Skyriding Glyphs: The Maddening Deep
+ach(40698),	-- Skyriding Glyphs: Rak-Ush
+ach(40699),	-- Skyriding Glyphs: Silken Ward
+ach(40700),	-- Skyriding Glyphs: Trickling Abyss
+ach(40701),	-- Skyriding Glyphs: Untamed Valley
+ach(40702),	-- Khaz Algar Glyph Hunter
+ach(40703),	-- The Ringing Deeps Glyph Hunter
+ach(40704),	-- Hallowfall Glyph Hunter
+ach(40705),	-- Azj-Kahet Glyph Hunter
+ach(40706),	-- Izo, the Grand Splicer kills (Normal City of Threads)
+ach(40709),	-- Izo, the Grand Splicer kills (Heroic City of Threads)
+ach(40710),	-- Izo, the Grand Splicer kills (Mythic City of Threads)
+ach(40711),	-- Rasha'nan kills (Normal The Dawnbreaker)
+ach(40714),	-- Rasha'nan kills (Heroic The Dawnbreaker)
+ach(40715),	-- Rasha'nan kills (Mythic The Dawnbreaker)
+ach(40716),	-- Voidstone Monstrosity kills (Normal The Rookery)
+ach(40717),	-- Voidstone Monstrosity kills (Heroic The Rookery)
+ach(40718),	-- Voidstone Monstrosity kills (Mythic The Rookery)
+ach(40719),	-- Void Speaker Eirich (Normal The Stonevault)
+ach(40721),	-- Void Speaker Eirich (Heroic The Stonevault)
+ach(40722),	-- Void Speaker Eirich (Mythic The Stonevault)
+ach(40723),	-- [PH] 11.0 Mythic VFX Unlock
+ach(40724),	-- Treasures of the Ringing Deeps
+ach(40725),	-- War Within Delves: Endgame
+ach(40726),	-- War Within Delves: Tier 11
+ach(40727),	-- Skittershaw Spin

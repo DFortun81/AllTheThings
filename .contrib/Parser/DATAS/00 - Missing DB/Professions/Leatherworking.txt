@@ -3,22 +3,22 @@ r(451706),	-- Screaming Chain Pauldrons
 11.0.0.54311
 r(423340),	-- Khaz Algar Leatherworking
 r(425142),	-- Recraft Equipment
-r(438898),	-- Vicious Competitor's Leather Boots
-r(438899),	-- Vicious Competitor's Leather Chestpiece
-r(438900),	-- Vicious Competitor's Leather Mask
-r(438901),	-- Vicious Competitor's Leather Shoulderpads
-r(438902),	-- Vicious Competitor's Leather Belt
-r(438903),	-- Vicious Competitor's Leather Trousers
-r(438904),	-- Vicious Competitor's Leather Gloves
-r(438905),	-- Vicious Competitor's Leather Wristwraps
-r(438906),	-- Vicious Competitor's Chain Treads
-r(438907),	-- Vicious Competitor's Chain Chainmail
-r(438908),	-- Vicious Competitor's Chain Cowl
-r(438909),	-- Vicious Competitor's Chain Epaulets
-r(438910),	-- Vicious Competitor's Chain Girdle
-r(438911),	-- Vicious Competitor's Chain Leggings
-r(438912),	-- Vicious Competitor's Chain Gauntlets
-r(438913),	-- Vicious Competitor's Chain Cuffs
+r(438898),	-- Algari Competitor's Leather Boots \\ Vicious Competitor's Leather Boots
+r(438899),	-- Algari Competitor's Leather Chestpiece \\ Vicious Competitor's Leather Chestpiece
+r(438900),	-- Algari Competitor's Leather Mask \\ Vicious Competitor's Leather Mask
+r(438901),	-- Algari Competitor's Leather Shoulderpads \\ Vicious Competitor's Leather Shoulderpads
+r(438902),	-- Algari Competitor's Leather Belt \\ Vicious Competitor's Leather Belt
+r(438903),	-- Algari Competitor's Leather Trousers \\ Vicious Competitor's Leather Trousers
+r(438904),	-- Algari Competitor's Leather Gloves \\ Vicious Competitor's Leather Gloves
+r(438905),	-- Algari Competitor's Leather Wristwraps \\ Vicious Competitor's Leather Wristwraps
+r(438906),	-- Algari Competitor's Chain Treads \\ Vicious Competitor's Chain Treads
+r(438907),	-- Algari Competitor's Chain Chainmail \\ Vicious Competitor's Chain Chainmail
+r(438908),	-- Algari Competitor's Chain Cowl \\ Vicious Competitor's Chain Cowl
+r(438909),	-- Algari Competitor's Chain Epaulets \\ Vicious Competitor's Chain Epaulets
+r(438910),	-- Algari Competitor's Chain Girdle \\ Vicious Competitor's Chain Girdle
+r(438911),	-- Algari Competitor's Chain Leggings \\ Vicious Competitor's Chain Leggings
+r(438912),	-- Algari Competitor's Chain Gauntlets \\ Vicious Competitor's Chain Gauntlets
+r(438913),	-- Algari Competitor's Chain Cuffs \\ Vicious Competitor's Chain Cuffs
 r(441051),	-- Rune-Branded Tunic
 r(441052),	-- Rune-Branded Kickers
 r(441053),	-- Rune-Branded Grasps
@@ -102,22 +102,22 @@ r(451706),	-- Screaming Chain Pauldrons
 11.0.0.54311
 r(423340),	-- Khaz Algar Leatherworking
 r(425142),	-- Recraft Equipment
-r(438898),	-- Vicious Competitor's Leather Boots
-r(438899),	-- Vicious Competitor's Leather Chestpiece
-r(438900),	-- Vicious Competitor's Leather Mask
-r(438901),	-- Vicious Competitor's Leather Shoulderpads
-r(438902),	-- Vicious Competitor's Leather Belt
-r(438903),	-- Vicious Competitor's Leather Trousers
-r(438904),	-- Vicious Competitor's Leather Gloves
-r(438905),	-- Vicious Competitor's Leather Wristwraps
-r(438906),	-- Vicious Competitor's Chain Treads
-r(438907),	-- Vicious Competitor's Chain Chainmail
-r(438908),	-- Vicious Competitor's Chain Cowl
-r(438909),	-- Vicious Competitor's Chain Epaulets
-r(438910),	-- Vicious Competitor's Chain Girdle
-r(438911),	-- Vicious Competitor's Chain Leggings
-r(438912),	-- Vicious Competitor's Chain Gauntlets
-r(438913),	-- Vicious Competitor's Chain Cuffs
+r(438898),	-- Algari Competitor's Leather Boots \\ Vicious Competitor's Leather Boots
+r(438899),	-- Algari Competitor's Leather Chestpiece \\ Vicious Competitor's Leather Chestpiece
+r(438900),	-- Algari Competitor's Leather Mask \\ Vicious Competitor's Leather Mask
+r(438901),	-- Algari Competitor's Leather Shoulderpads \\ Vicious Competitor's Leather Shoulderpads
+r(438902),	-- Algari Competitor's Leather Belt \\ Vicious Competitor's Leather Belt
+r(438903),	-- Algari Competitor's Leather Trousers \\ Vicious Competitor's Leather Trousers
+r(438904),	-- Algari Competitor's Leather Gloves \\ Vicious Competitor's Leather Gloves
+r(438905),	-- Algari Competitor's Leather Wristwraps \\ Vicious Competitor's Leather Wristwraps
+r(438906),	-- Algari Competitor's Chain Treads \\ Vicious Competitor's Chain Treads
+r(438907),	-- Algari Competitor's Chain Chainmail \\ Vicious Competitor's Chain Chainmail
+r(438908),	-- Algari Competitor's Chain Cowl \\ Vicious Competitor's Chain Cowl
+r(438909),	-- Algari Competitor's Chain Epaulets \\ Vicious Competitor's Chain Epaulets
+r(438910),	-- Algari Competitor's Chain Girdle \\ Vicious Competitor's Chain Girdle
+r(438911),	-- Algari Competitor's Chain Leggings \\ Vicious Competitor's Chain Leggings
+r(438912),	-- Algari Competitor's Chain Gauntlets \\ Vicious Competitor's Chain Gauntlets
+r(438913),	-- Algari Competitor's Chain Cuffs \\ Vicious Competitor's Chain Cuffs
 r(441051),	-- Rune-Branded Tunic
 r(441052),	-- Rune-Branded Kickers
 r(441053),	-- Rune-Branded Grasps

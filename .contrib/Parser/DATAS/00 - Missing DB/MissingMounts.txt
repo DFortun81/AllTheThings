@@ -1,4 +1,4 @@
-4.4.0.54377
+3.4.3.54948
 mount(440915),	-- Auspicious Arborwyrm
 11.0.0.54311
 mount(405623),	-- Armadillo Roller
@@ -9,7 +9,7 @@ mount(447057),	-- Smoldering Cinderbee
 mount(447149),	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
 mount(447151),	-- [PH] Firebee Mount (Black Skin, Copper Saddle)
 mount(447156),	-- [PH] Firebee Mount (White Skin, White Saddle)
-mount(447160),	-- [PH] Firebee Mount (Red Skin, Dark Saddle)
+mount(447160),	-- Raging Cinderbee \\ [PH] Firebee Mount (Red Skin, Dark Saddle)
 mount(447161),	-- [PH] Firefly2Mount (Yellow)
 mount(447173),	-- [PH] Firefly2Mount (Green)
 mount(447176),	-- Cyan Glowmite \\ [PH] Firefly2Mount (Blue)
@@ -20,19 +20,19 @@ mount(447190),	-- Shadowed Swarmite \\ [PH] FlyingNerubian2 Mount (Black Body, P
 mount(447195),	-- [PH] FlyingNerubian2 Mount (Purple Body, Red Saddle)
 mount(447213),	-- Alunira
 mount(447214),	-- [PH] Gryphon_Air_Mount (White Skin, Gold Saddle)
-mount(447405),	-- Vicious Flying Nerubian \\ [PH] Vicious Flying Nerubian (Horde)
+mount(447405),	-- Vicious Skyflayer \\ Vicious Flying Nerubian \\ [PH] Vicious Flying Nerubian (Horde)
 mount(447466),	-- [PH] MoleMount (Pink Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
 mount(447898),	-- [PH] Mount - Unicorn Moose (Blue) (Gold Saddle) (Player Mount)
-mount(447910),	-- [PH] Mount - Unicorn Moose (Brown) (Copper Saddle) (Player Mount)
-mount(447911),	-- [PH] Mount - Unicorn Moose (Crimson) (Dark Saddle) (Player Mount)
-mount(447912),	-- [PH] Mount - Unicorn Moose (Ivory) (Silver Saddle) (Player Mount)
-mount(447913),	-- [PH] Mount - Unicorn Moose (Yellow) (White Saddle) (Player Mount)
+mount(447910),	-- [PH] Mount - Shalehorn (Brown) (Copper Saddle) (Player Mount) \\ [PH] Mount - Unicorn Moose (Brown) (Copper Saddle) (Player Mount)
+mount(447911),	-- [PH] Mount - Shalehorn (Crimson) (Dark Saddle) (Player Mount) \\ [PH] Mount - Unicorn Moose (Crimson) (Dark Saddle) (Player Mount)
+mount(447912),	-- [PH] Mount - Shalehorn (Ivory) (Silver Saddle) (Player Mount) \\ [PH] Mount - Unicorn Moose (Ivory) (Silver Saddle) (Player Mount)
+mount(447913),	-- [PH] Mount - Shalehorn (Yellow) (White Saddle) (Player Mount) \\ [PH] Mount - Unicorn Moose (Yellow) (White Saddle) (Player Mount)
 mount(447938),	-- [PH] CaveBorerWormMount (Blue Skin, Purple Saddle)
 mount(447956),	-- [PH] CaveBorerWormMount (Forest Skin, Blue Saddle)
 mount(447957),	-- Ferocious Jawcrawler \\ [PH] CaveBorerWormMount (Brown Skin, Orange Saddle)
 mount(447958),	-- [PH] CaveBorerWormMount (Nocturne Skin, Red Saddle)
 mount(448186),	-- Crowd Pummeler 2-30
-mount(448188),	-- [PH] DwarvenMechBoss - (Bronze)
+mount(448188),	-- Machine Defense Unit 1-11 \\ [PH] DwarvenMechBoss - (Bronze)
 mount(448265),	-- [PH] Firebee Blue Variant
 mount(448680),	-- [PH] SpiderUnderground (Red)
 mount(448682),	-- [PH] SpiderUnderground (Green)
@@ -46,14 +46,14 @@ mount(448979),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
 mount(448980),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
 mount(448981),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
 mount(448984),	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
-mount(449258),	-- [PH] MoleMount (Dark Skin, Black Saddle, Teeth Rodent, Nose Star)
+mount(449258),	-- Ol' Mole Rufus \\ [PH] MoleMount (Dark Skin, Black Saddle, Teeth Rodent, Nose Star)
 mount(449260),	-- [PH] MoleMount (Gray Skin, Purple Saddle, Teeth Tusks, Nose Base)
 mount(449264),	-- Wick \\ [PH] MoleMount (Brown Skin, Red Saddle, Teeth Tusks, Nose Pointed)
 mount(449265),	-- [PH] MoleMountBasic (Yellow Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
 mount(449269),	-- Crimson Mudnose \\ [PH] MoleMountBasic (Light Skin, Red Saddle, Teeth Rodent, Nose Pointed)
 mount(449271),	-- [PH] MoleMountBasic (Blue Skin, Purple Saddle, Teeth Tusks, Nose Base)
 mount(449283),	-- [PH] MoleMountBasic (Green Skin, Black Saddle, Teeth Tusks, Nose Star)
-mount(449325),	-- Vicious Flying Nerubian \\ [PH] Vicious Flying Nerubian (Alliance)
+mount(449325),	-- Vicious Skyflayer \\ Vicious Flying Nerubian \\ [PH] Vicious Flying Nerubian (Alliance)
 mount(449415),	-- Slatestone Ramolith \\ [PH] Proto Ram Earthen (Grey Skin, Grand Horns, Gold Saddle)
 mount(449416),	-- Ebonhide Ramolith \\ [PH] Proto Ram Earthen (Black Skin, Grand Horns, Silver Saddle)
 mount(449418),	-- Shale Ramolith \\ [PH] Proto Ram Earthen (Blue Skin, Grand Horns, Copper Saddle)
@@ -61,25 +61,34 @@ mount(449419),	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle)
 mount(449421),	-- [PH] Proto Ram Earthen (Sand Skin, Grand Horns, Dark Saddle)
 mount(449465),	-- [PH] Silver Armored Fel Bat Gladiator Mount
 mount(449466),	-- Forged Gladiator's Fel Bat \\ [PH] Gold Armored Fel Bat Gladiator Mount
-mount(451486),	-- [PH] NerubianWarbeastMount (Blue)
+mount(451486),	-- Sureki Skyrazor \\ [PH] NerubianWarbeastMount (Blue)
 mount(451487),	-- [PH] NerubianWarbeastMount (Cyan)
 mount(451488),	-- [PH] NerubianWarbeastMount (Orange)
 mount(451489),	-- [PH] NerubianWarbeastMount (Dark)
-mount(451491),	-- [PH] NerubianWarbeastMount (White)
+mount(451491),	-- Ascendant Skyrazor \\ [PH] NerubianWarbeastMount (White)
 11.0.0.54361
 mount(452768),	-- [PH] NerubianBeetleLargeMount (Blue)
 mount(452777),	-- [PH] NerubianBeetleLargeMount (Green)
-mount(452779),	-- [PH] NerubianBeetleLargeMount (Tan)
+mount(452779),	-- Ivory Goliathus \\ [PH] NerubianBeetleLargeMount (Tan)
 mount(452780),	-- [PH] NerubianBeetleLargeMount (Purple)
 11.0.0.54521
 mount(453785),	-- Earthen Judicator's Ramolith
+11.0.0.54774
+mount(441324),	-- Remembered Golden Gryphon
+mount(441325),	-- Remembered Wind Rider
+11.0.0.54935
+mount(457650),	-- Plunderlord's Golden Crocolisk
+mount(457654),	-- Plunderlord's Radiant Crocolisk
+mount(457656),	-- Plunderlord's Midnight Crocolisk
+mount(457659),	-- Plunderlord's Weathered Crocolisk
+mount(458335),	-- Diamond Mechsuit
 
 
 
 
 Missing in MountDB.lua
 
-4.4.0.54377
+3.4.3.54948
 mount(440915),	-- Auspicious Arborwyrm
 11.0.0.54311
 mount(405623),	-- Armadillo Roller
@@ -90,7 +99,7 @@ mount(447057),	-- Smoldering Cinderbee
 mount(447149),	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
 mount(447151),	-- [PH] Firebee Mount (Black Skin, Copper Saddle)
 mount(447156),	-- [PH] Firebee Mount (White Skin, White Saddle)
-mount(447160),	-- [PH] Firebee Mount (Red Skin, Dark Saddle)
+mount(447160),	-- Raging Cinderbee \\ [PH] Firebee Mount (Red Skin, Dark Saddle)
 mount(447161),	-- [PH] Firefly2Mount (Yellow)
 mount(447173),	-- [PH] Firefly2Mount (Green)
 mount(447176),	-- Cyan Glowmite \\ [PH] Firefly2Mount (Blue)
@@ -101,19 +110,19 @@ mount(447190),	-- Shadowed Swarmite \\ [PH] FlyingNerubian2 Mount (Black Body, P
 mount(447195),	-- [PH] FlyingNerubian2 Mount (Purple Body, Red Saddle)
 mount(447213),	-- Alunira
 mount(447214),	-- [PH] Gryphon_Air_Mount (White Skin, Gold Saddle)
-mount(447405),	-- Vicious Flying Nerubian \\ [PH] Vicious Flying Nerubian (Horde)
+mount(447405),	-- Vicious Skyflayer \\ Vicious Flying Nerubian \\ [PH] Vicious Flying Nerubian (Horde)
 mount(447466),	-- [PH] MoleMount (Pink Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
 mount(447898),	-- [PH] Mount - Unicorn Moose (Blue) (Gold Saddle) (Player Mount)
-mount(447910),	-- [PH] Mount - Unicorn Moose (Brown) (Copper Saddle) (Player Mount)
-mount(447911),	-- [PH] Mount - Unicorn Moose (Crimson) (Dark Saddle) (Player Mount)
-mount(447912),	-- [PH] Mount - Unicorn Moose (Ivory) (Silver Saddle) (Player Mount)
-mount(447913),	-- [PH] Mount - Unicorn Moose (Yellow) (White Saddle) (Player Mount)
+mount(447910),	-- [PH] Mount - Shalehorn (Brown) (Copper Saddle) (Player Mount) \\ [PH] Mount - Unicorn Moose (Brown) (Copper Saddle) (Player Mount)
+mount(447911),	-- [PH] Mount - Shalehorn (Crimson) (Dark Saddle) (Player Mount) \\ [PH] Mount - Unicorn Moose (Crimson) (Dark Saddle) (Player Mount)
+mount(447912),	-- [PH] Mount - Shalehorn (Ivory) (Silver Saddle) (Player Mount) \\ [PH] Mount - Unicorn Moose (Ivory) (Silver Saddle) (Player Mount)
+mount(447913),	-- [PH] Mount - Shalehorn (Yellow) (White Saddle) (Player Mount) \\ [PH] Mount - Unicorn Moose (Yellow) (White Saddle) (Player Mount)
 mount(447938),	-- [PH] CaveBorerWormMount (Blue Skin, Purple Saddle)
 mount(447956),	-- [PH] CaveBorerWormMount (Forest Skin, Blue Saddle)
 mount(447957),	-- Ferocious Jawcrawler \\ [PH] CaveBorerWormMount (Brown Skin, Orange Saddle)
 mount(447958),	-- [PH] CaveBorerWormMount (Nocturne Skin, Red Saddle)
 mount(448186),	-- Crowd Pummeler 2-30
-mount(448188),	-- [PH] DwarvenMechBoss - (Bronze)
+mount(448188),	-- Machine Defense Unit 1-11 \\ [PH] DwarvenMechBoss - (Bronze)
 mount(448265),	-- [PH] Firebee Blue Variant
 mount(448680),	-- [PH] SpiderUnderground (Red)
 mount(448682),	-- [PH] SpiderUnderground (Green)
@@ -127,14 +136,14 @@ mount(448979),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
 mount(448980),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
 mount(448981),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
 mount(448984),	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
-mount(449258),	-- [PH] MoleMount (Dark Skin, Black Saddle, Teeth Rodent, Nose Star)
+mount(449258),	-- Ol' Mole Rufus \\ [PH] MoleMount (Dark Skin, Black Saddle, Teeth Rodent, Nose Star)
 mount(449260),	-- [PH] MoleMount (Gray Skin, Purple Saddle, Teeth Tusks, Nose Base)
 mount(449264),	-- Wick \\ [PH] MoleMount (Brown Skin, Red Saddle, Teeth Tusks, Nose Pointed)
 mount(449265),	-- [PH] MoleMountBasic (Yellow Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
 mount(449269),	-- Crimson Mudnose \\ [PH] MoleMountBasic (Light Skin, Red Saddle, Teeth Rodent, Nose Pointed)
 mount(449271),	-- [PH] MoleMountBasic (Blue Skin, Purple Saddle, Teeth Tusks, Nose Base)
 mount(449283),	-- [PH] MoleMountBasic (Green Skin, Black Saddle, Teeth Tusks, Nose Star)
-mount(449325),	-- Vicious Flying Nerubian \\ [PH] Vicious Flying Nerubian (Alliance)
+mount(449325),	-- Vicious Skyflayer \\ Vicious Flying Nerubian \\ [PH] Vicious Flying Nerubian (Alliance)
 mount(449415),	-- Slatestone Ramolith \\ [PH] Proto Ram Earthen (Grey Skin, Grand Horns, Gold Saddle)
 mount(449416),	-- Ebonhide Ramolith \\ [PH] Proto Ram Earthen (Black Skin, Grand Horns, Silver Saddle)
 mount(449418),	-- Shale Ramolith \\ [PH] Proto Ram Earthen (Blue Skin, Grand Horns, Copper Saddle)
@@ -142,15 +151,24 @@ mount(449419),	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle)
 mount(449421),	-- [PH] Proto Ram Earthen (Sand Skin, Grand Horns, Dark Saddle)
 mount(449465),	-- [PH] Silver Armored Fel Bat Gladiator Mount
 mount(449466),	-- Forged Gladiator's Fel Bat \\ [PH] Gold Armored Fel Bat Gladiator Mount
-mount(451486),	-- [PH] NerubianWarbeastMount (Blue)
+mount(451486),	-- Sureki Skyrazor \\ [PH] NerubianWarbeastMount (Blue)
 mount(451487),	-- [PH] NerubianWarbeastMount (Cyan)
 mount(451488),	-- [PH] NerubianWarbeastMount (Orange)
 mount(451489),	-- [PH] NerubianWarbeastMount (Dark)
-mount(451491),	-- [PH] NerubianWarbeastMount (White)
+mount(451491),	-- Ascendant Skyrazor \\ [PH] NerubianWarbeastMount (White)
 11.0.0.54361
 mount(452768),	-- [PH] NerubianBeetleLargeMount (Blue)
 mount(452777),	-- [PH] NerubianBeetleLargeMount (Green)
-mount(452779),	-- [PH] NerubianBeetleLargeMount (Tan)
+mount(452779),	-- Ivory Goliathus \\ [PH] NerubianBeetleLargeMount (Tan)
 mount(452780),	-- [PH] NerubianBeetleLargeMount (Purple)
 11.0.0.54521
 mount(453785),	-- Earthen Judicator's Ramolith
+11.0.0.54774
+mount(441324),	-- Remembered Golden Gryphon
+mount(441325),	-- Remembered Wind Rider
+11.0.0.54935
+mount(457650),	-- Plunderlord's Golden Crocolisk
+mount(457654),	-- Plunderlord's Radiant Crocolisk
+mount(457656),	-- Plunderlord's Midnight Crocolisk
+mount(457659),	-- Plunderlord's Weathered Crocolisk
+mount(458335),	-- Diamond Mechsuit

@@ -516,15 +516,15 @@ r(330261),	-- Relic of the Past V
 11.0.0.54311
 r(423343),	-- Khaz Algar Tailoring
 r(425143),	-- Recraft Equipment
-r(438889),	-- Vicious Competitor's Cloth Leggings
-r(438890),	-- Vicious Competitor's Cloth Shoulderpads
-r(438891),	-- Vicious Competitor's Cloth Treads
-r(438892),	-- Vicious Competitor's Cloth Bands
-r(438893),	-- Vicious Competitor's Cloth Hood
-r(438894),	-- Vicious Competitor's Cloth Gloves
-r(438895),	-- Vicious Competitor's Cloth Tunic
-r(438896),	-- Vicious Competitor's Cloth Sash
-r(438897),	-- Vicious Competitor's Cloth Cloak
+r(438889),	-- Algari Competitor's Cloth Leggings \\ Vicious Competitor's Cloth Leggings
+r(438890),	-- Algari Competitor's Cloth Shoulderpads \\ Vicious Competitor's Cloth Shoulderpads
+r(438891),	-- Algari Competitor's Cloth Treads \\ Vicious Competitor's Cloth Treads
+r(438892),	-- Algari Competitor's Cloth Bands \\ Vicious Competitor's Cloth Bands
+r(438893),	-- Algari Competitor's Cloth Hood \\ Vicious Competitor's Cloth Hood
+r(438894),	-- Algari Competitor's Cloth Gloves \\ Vicious Competitor's Cloth Gloves
+r(438895),	-- Algari Competitor's Cloth Tunic \\ Vicious Competitor's Cloth Tunic
+r(438896),	-- Algari Competitor's Cloth Sash \\ Vicious Competitor's Cloth Sash
+r(438897),	-- Algari Competitor's Cloth Cloak \\ Vicious Competitor's Cloth Cloak
 r(446926),	-- Unraveling
 r(446927),	-- Duskweave Bolt \\ Duskcloth Bolt \\ Duskthread Bolt
 r(446928),	-- Dawnweave Bolt \\ Dawnthread Bolt
@@ -583,12 +583,12 @@ r(446980),	-- Satchel of the Long Day
 r(446981),	-- Satchel of the Long Night
 r(446982),	-- Concoctor's Clutch \\ Alchemy Bag
 r(446983),	-- Ignition Satchel \\ Blacksmithing Bag
-r(446984),	-- Leatherworking Bag
+r(446984),	-- Hideshaper's Workbag \\ Leatherworking Bag
 r(446985),	-- Enchanting Bag
-r(446986),	-- Prodigy's Scrapbag \\ Engineering Bag
+r(446986),	-- Prodigy's Toolbox \\ Prodigy's Scrapbag \\ Engineering Bag
 r(446987),	-- Darkmoon Duffle \\ Inscription Bag
-r(446988),	-- Herbalism Bag
-r(446989),	-- Mining Bag
+r(446988),	-- Gardener's Seed Satchel \\ Herbalism Bag
+r(446989),	-- Excavator's Haversack \\ Mining Bag
 r(446990),	-- Jeweler's Purse \\ Jewelcrafting Bag
 r(446991),	-- Dawnthread Lining
 r(446992),	-- Duskthread Lining
@@ -605,6 +605,9 @@ r(447002),	-- Weavercloth Bandage
 11.0.0.54521
 r(454397),	-- Exquisite Weavercloth Bolt
 r(454431),	-- The Severed Satchel \\ Exquisite Algari Satchel
+11.0.0.54774
+r(447888),	-- Hideseeker's Tote \\ Skinning Bag \\ Jewelcrafting Bag
+r(456706),	-- Algari Weaverline
 
 
 
@@ -894,15 +897,15 @@ r(267202),	-- Deep Sea Bandage
 11.0.0.54311
 r(423343),	-- Khaz Algar Tailoring
 r(425143),	-- Recraft Equipment
-r(438889),	-- Vicious Competitor's Cloth Leggings
-r(438890),	-- Vicious Competitor's Cloth Shoulderpads
-r(438891),	-- Vicious Competitor's Cloth Treads
-r(438892),	-- Vicious Competitor's Cloth Bands
-r(438893),	-- Vicious Competitor's Cloth Hood
-r(438894),	-- Vicious Competitor's Cloth Gloves
-r(438895),	-- Vicious Competitor's Cloth Tunic
-r(438896),	-- Vicious Competitor's Cloth Sash
-r(438897),	-- Vicious Competitor's Cloth Cloak
+r(438889),	-- Algari Competitor's Cloth Leggings \\ Vicious Competitor's Cloth Leggings
+r(438890),	-- Algari Competitor's Cloth Shoulderpads \\ Vicious Competitor's Cloth Shoulderpads
+r(438891),	-- Algari Competitor's Cloth Treads \\ Vicious Competitor's Cloth Treads
+r(438892),	-- Algari Competitor's Cloth Bands \\ Vicious Competitor's Cloth Bands
+r(438893),	-- Algari Competitor's Cloth Hood \\ Vicious Competitor's Cloth Hood
+r(438894),	-- Algari Competitor's Cloth Gloves \\ Vicious Competitor's Cloth Gloves
+r(438895),	-- Algari Competitor's Cloth Tunic \\ Vicious Competitor's Cloth Tunic
+r(438896),	-- Algari Competitor's Cloth Sash \\ Vicious Competitor's Cloth Sash
+r(438897),	-- Algari Competitor's Cloth Cloak \\ Vicious Competitor's Cloth Cloak
 r(446926),	-- Unraveling
 r(446927),	-- Duskweave Bolt \\ Duskcloth Bolt \\ Duskthread Bolt
 r(446928),	-- Dawnweave Bolt \\ Dawnthread Bolt
@@ -961,12 +964,12 @@ r(446980),	-- Satchel of the Long Day
 r(446981),	-- Satchel of the Long Night
 r(446982),	-- Concoctor's Clutch \\ Alchemy Bag
 r(446983),	-- Ignition Satchel \\ Blacksmithing Bag
-r(446984),	-- Leatherworking Bag
+r(446984),	-- Hideshaper's Workbag \\ Leatherworking Bag
 r(446985),	-- Enchanting Bag
-r(446986),	-- Prodigy's Scrapbag \\ Engineering Bag
+r(446986),	-- Prodigy's Toolbox \\ Prodigy's Scrapbag \\ Engineering Bag
 r(446987),	-- Darkmoon Duffle \\ Inscription Bag
-r(446988),	-- Herbalism Bag
-r(446989),	-- Mining Bag
+r(446988),	-- Gardener's Seed Satchel \\ Herbalism Bag
+r(446989),	-- Excavator's Haversack \\ Mining Bag
 r(446990),	-- Jeweler's Purse \\ Jewelcrafting Bag
 r(446991),	-- Dawnthread Lining
 r(446992),	-- Duskthread Lining
@@ -983,3 +986,6 @@ r(447002),	-- Weavercloth Bandage
 11.0.0.54521
 r(454397),	-- Exquisite Weavercloth Bolt
 r(454431),	-- The Severed Satchel \\ Exquisite Algari Satchel
+11.0.0.54774
+r(447888),	-- Hideseeker's Tote \\ Skinning Bag \\ Jewelcrafting Bag
+r(456706),	-- Algari Weaverline

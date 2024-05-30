@@ -1,23 +1,23 @@
 11.0.0.54311
 r(423335),	-- Khaz Algar Engineering
 r(425139),	-- Recraft Equipment
-r(438922),	-- Vicious Competitor's Cloth Goggles
-r(438923),	-- Vicious Competitor's Leather Goggles
-r(438924),	-- Vicious Competitor's Mail Goggles
-r(438925),	-- Vicious Competitor's Plate Goggles
-r(438926),	-- Vicious Competitor's Cloth Bracers
-r(438927),	-- Vicious Competitor's Leather Bracers
-r(438928),	-- Vicious Competitor's Mail Bracers
-r(438929),	-- Vicious Competitor's Plate Bracers
+r(438922),	-- Algari Competitor's Cloth Goggles \\ Vicious Competitor's Cloth Goggles
+r(438923),	-- Algari Competitor's Leather Goggles \\ Vicious Competitor's Leather Goggles
+r(438924),	-- Algari Competitor's Mail Goggles \\ Vicious Competitor's Mail Goggles
+r(438925),	-- Algari Competitor's Plate Goggles \\ Vicious Competitor's Plate Goggles
+r(438926),	-- Algari Competitor's Cloth Bracers \\ Vicious Competitor's Cloth Bracers
+r(438927),	-- Algari Competitor's Leather Bracers \\ Vicious Competitor's Leather Bracers
+r(438928),	-- Algari Competitor's Mail Bracers \\ Vicious Competitor's Mail Bracers
+r(438929),	-- Algari Competitor's Plate Bracers \\ Vicious Competitor's Plate Bracers
 r(443570),	-- Stonebound Lantern
 r(447310),	-- Scour Through Scrap
 r(447311),	-- Pilfer Through Parts
 r(447312),	-- Invent
 r(447313),	-- Disassemble Invention
-r(447314),	-- ENG - Cloth Goggles [DNT]
-r(447315),	-- ENG - Leather Goggles [DNT]
-r(447316),	-- ENG - Mail Goggles [DNT]
-r(447317),	-- ENG - Plate Goggles [DNT]
+r(447314),	-- Studious Brilliance Expeditor \\ ENG - Cloth Goggles [DNT]
+r(447315),	-- Overclocked Idea Generator \\ ENG - Leather Goggles [DNT]
+r(447316),	-- Supercharged Thought Enhancer \\ ENG - Mail Goggles [DNT]
+r(447317),	-- Dangerous Distraction Inhibitor \\ ENG - Plate Goggles [DNT]
 r(447318),	-- Blasting Bracers
 r(447319),	-- Venting Vambraces
 r(447320),	-- Whirring Wristwraps
@@ -76,6 +76,14 @@ r(447372),	-- Wormhole Generator: Khaz Algar
 r(447373),	-- Crowd Pummeler 2-30
 11.0.0.54361
 r(447374),	-- Box o' Booms \\ PH Engineering Recipe
+11.0.0.54605
+r(455005),	-- Algari Competitor's Rifle \\ Vicious Competitor's Rifle
+11.0.0.54675
+r(447375),	-- Acolyte's Goggles \\ Cloth Leveling Goggles (DNT) \\ PH Engineering Recipe
+r(447376),	-- Spelunker's Goggles \\ Leather Leveling Goggles (DNT) \\ PH Engineering Recipe
+r(447377),	-- Tracker's Goggles \\ Mail Leveling Goggles (DNT) \\ PH Engineering Recipe
+r(447378),	-- Dredger's Goggles \\ Plate Leveling Goggles (DNT) \\ PH Engineering Recipe
+r(447379),	-- 4UT0-41M3R \\ Leveling Gun (DNT) \\ PH Engineering Recipe
 
 
 
@@ -85,23 +93,23 @@ Missing in Engineering.lua
 11.0.0.54311
 r(423335),	-- Khaz Algar Engineering
 r(425139),	-- Recraft Equipment
-r(438922),	-- Vicious Competitor's Cloth Goggles
-r(438923),	-- Vicious Competitor's Leather Goggles
-r(438924),	-- Vicious Competitor's Mail Goggles
-r(438925),	-- Vicious Competitor's Plate Goggles
-r(438926),	-- Vicious Competitor's Cloth Bracers
-r(438927),	-- Vicious Competitor's Leather Bracers
-r(438928),	-- Vicious Competitor's Mail Bracers
-r(438929),	-- Vicious Competitor's Plate Bracers
+r(438922),	-- Algari Competitor's Cloth Goggles \\ Vicious Competitor's Cloth Goggles
+r(438923),	-- Algari Competitor's Leather Goggles \\ Vicious Competitor's Leather Goggles
+r(438924),	-- Algari Competitor's Mail Goggles \\ Vicious Competitor's Mail Goggles
+r(438925),	-- Algari Competitor's Plate Goggles \\ Vicious Competitor's Plate Goggles
+r(438926),	-- Algari Competitor's Cloth Bracers \\ Vicious Competitor's Cloth Bracers
+r(438927),	-- Algari Competitor's Leather Bracers \\ Vicious Competitor's Leather Bracers
+r(438928),	-- Algari Competitor's Mail Bracers \\ Vicious Competitor's Mail Bracers
+r(438929),	-- Algari Competitor's Plate Bracers \\ Vicious Competitor's Plate Bracers
 r(443570),	-- Stonebound Lantern
 r(447310),	-- Scour Through Scrap
 r(447311),	-- Pilfer Through Parts
 r(447312),	-- Invent
 r(447313),	-- Disassemble Invention
-r(447314),	-- ENG - Cloth Goggles [DNT]
-r(447315),	-- ENG - Leather Goggles [DNT]
-r(447316),	-- ENG - Mail Goggles [DNT]
-r(447317),	-- ENG - Plate Goggles [DNT]
+r(447314),	-- Studious Brilliance Expeditor \\ ENG - Cloth Goggles [DNT]
+r(447315),	-- Overclocked Idea Generator \\ ENG - Leather Goggles [DNT]
+r(447316),	-- Supercharged Thought Enhancer \\ ENG - Mail Goggles [DNT]
+r(447317),	-- Dangerous Distraction Inhibitor \\ ENG - Plate Goggles [DNT]
 r(447318),	-- Blasting Bracers
 r(447319),	-- Venting Vambraces
 r(447320),	-- Whirring Wristwraps
@@ -160,3 +168,11 @@ r(447372),	-- Wormhole Generator: Khaz Algar
 r(447373),	-- Crowd Pummeler 2-30
 11.0.0.54361
 r(447374),	-- Box o' Booms \\ PH Engineering Recipe
+11.0.0.54605
+r(455005),	-- Algari Competitor's Rifle \\ Vicious Competitor's Rifle
+11.0.0.54675
+r(447375),	-- Acolyte's Goggles \\ Cloth Leveling Goggles (DNT) \\ PH Engineering Recipe
+r(447376),	-- Spelunker's Goggles \\ Leather Leveling Goggles (DNT) \\ PH Engineering Recipe
+r(447377),	-- Tracker's Goggles \\ Mail Leveling Goggles (DNT) \\ PH Engineering Recipe
+r(447378),	-- Dredger's Goggles \\ Plate Leveling Goggles (DNT) \\ PH Engineering Recipe
+r(447379),	-- 4UT0-41M3R \\ Leveling Gun (DNT) \\ PH Engineering Recipe

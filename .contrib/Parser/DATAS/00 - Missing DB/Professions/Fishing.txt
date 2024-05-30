@@ -19,6 +19,19 @@ r(444800),	-- Spiked Sea Raven
 r(444801),	-- Queen's Lurefish
 r(444802),	-- Cursed Ghoulfish
 r(444803),	-- Awoken Coelecanth \\ Kah, King of the Deep
+11.0.0.54605
+r(454441),	-- Becoming an Algari Angler
+r(454442),	-- Fishing Skill and You
+r(454443),	-- Quiet River Bass
+11.0.0.54675
+r(456150),	-- What is an Algari Weaverline?
+r(456152),	-- Seekerthread
+r(456154),	-- Anglerthread
+r(456180),	-- Mereldar Fishing Derby
+r(456588),	-- Isle of Dorn
+r(456589),	-- The Ringing Deeps
+r(456590),	-- Hallowfall
+r(456591),	-- Azj-Kahet
 
 
 
@@ -46,3 +59,16 @@ r(444800),	-- Spiked Sea Raven
 r(444801),	-- Queen's Lurefish
 r(444802),	-- Cursed Ghoulfish
 r(444803),	-- Awoken Coelecanth \\ Kah, King of the Deep
+11.0.0.54605
+r(454441),	-- Becoming an Algari Angler
+r(454442),	-- Fishing Skill and You
+r(454443),	-- Quiet River Bass
+11.0.0.54675
+r(456150),	-- What is an Algari Weaverline?
+r(456152),	-- Seekerthread
+r(456154),	-- Anglerthread
+r(456180),	-- Mereldar Fishing Derby
+r(456588),	-- Isle of Dorn
+r(456589),	-- The Ringing Deeps
+r(456590),	-- Hallowfall
+r(456591),	-- Azj-Kahet

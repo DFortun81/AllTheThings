@@ -15,7 +15,7 @@ r(445093),	-- Tender Twilight Jerky
 r(445094),	-- Zesty Nibblers
 r(445095),	-- Fiery Fish Sticks
 r(445096),	-- Ginger Glazed Fillet
-r(445097),	-- Salty Fish Pie
+r(445097),	-- Salty Dog \\ Salty Fish Pie
 r(445098),	-- Deepfin Patty
 r(445099),	-- Sweet and Spicy Soup
 r(445100),	-- The Sushi Special
@@ -48,6 +48,16 @@ r(445481),	-- Tasty Pocket Tart \\ Eclipse Eclair
 r(445482),	-- Rockslide Shake
 r(445483),	-- Sticky Sweet Treat \\ Olive Oil Ice Cream
 r(445484),	-- Melted Candlebar \\ A Sweet Treat
+11.0.0.54675
+r(447869),	-- Fine Egg Powder
+r(447870),	-- Everything-On-A-Stick
+r(447871),	-- Protein Slurp
+r(447872),	-- Spongey Scramble
+r(447873),	-- Secret Sauce
+r(447874),	-- Little Buddy Biscuits
+r(447875),	-- Azj-Kahet Special
+r(447876),	-- Ghoulfish Delight
+r(455424),	-- Exquisitely Eviscerated Muscle
 
 
 
@@ -71,7 +81,7 @@ r(445093),	-- Tender Twilight Jerky
 r(445094),	-- Zesty Nibblers
 r(445095),	-- Fiery Fish Sticks
 r(445096),	-- Ginger Glazed Fillet
-r(445097),	-- Salty Fish Pie
+r(445097),	-- Salty Dog \\ Salty Fish Pie
 r(445098),	-- Deepfin Patty
 r(445099),	-- Sweet and Spicy Soup
 r(445100),	-- The Sushi Special
@@ -104,3 +114,13 @@ r(445481),	-- Tasty Pocket Tart \\ Eclipse Eclair
 r(445482),	-- Rockslide Shake
 r(445483),	-- Sticky Sweet Treat \\ Olive Oil Ice Cream
 r(445484),	-- Melted Candlebar \\ A Sweet Treat
+11.0.0.54675
+r(447869),	-- Fine Egg Powder
+r(447870),	-- Everything-On-A-Stick
+r(447871),	-- Protein Slurp
+r(447872),	-- Spongey Scramble
+r(447873),	-- Secret Sauce
+r(447874),	-- Little Buddy Biscuits
+r(447875),	-- Azj-Kahet Special
+r(447876),	-- Ghoulfish Delight
+r(455424),	-- Exquisitely Eviscerated Muscle

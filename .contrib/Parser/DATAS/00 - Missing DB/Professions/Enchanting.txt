@@ -30,7 +30,7 @@ r(445342),	-- Gleeful Glamour - Kul Tiran
 r(445343),	-- Gleeful Glamour - Lightforged Draenei
 r(445344),	-- Whisper of Silken Avoidance \\ Whisper of Avoidance
 r(445345),	-- Gleeful Glamour - Zandalari Troll
-r(445346),	-- Oil of Deepening Shadows
+r(445346),	-- Oil of Deep Toxins \\ Oil of Deepening Shadows
 r(445347),	-- Enchanted Runed Harbinger Crest
 r(445348),	-- Whisper of Silken Leech \\ Whisper of Leech
 r(445349),	-- Radiant Versatility
@@ -88,6 +88,8 @@ r(445401),	-- Illusory Adornment: Radiance
 r(445402),	-- Gleeful Glamour - Dwarf
 r(445403),	-- Authority of Fiery Resolve
 r(445466),	-- Shatter Essence
+11.0.0.54675
+r(455970),	-- Disenchant
 
 
 
@@ -126,7 +128,7 @@ r(445342),	-- Gleeful Glamour - Kul Tiran
 r(445343),	-- Gleeful Glamour - Lightforged Draenei
 r(445344),	-- Whisper of Silken Avoidance \\ Whisper of Avoidance
 r(445345),	-- Gleeful Glamour - Zandalari Troll
-r(445346),	-- Oil of Deepening Shadows
+r(445346),	-- Oil of Deep Toxins \\ Oil of Deepening Shadows
 r(445347),	-- Enchanted Runed Harbinger Crest
 r(445348),	-- Whisper of Silken Leech \\ Whisper of Leech
 r(445349),	-- Radiant Versatility
@@ -184,3 +186,5 @@ r(445401),	-- Illusory Adornment: Radiance
 r(445402),	-- Gleeful Glamour - Dwarf
 r(445403),	-- Authority of Fiery Resolve
 r(445466),	-- Shatter Essence
+11.0.0.54675
+r(455970),	-- Disenchant

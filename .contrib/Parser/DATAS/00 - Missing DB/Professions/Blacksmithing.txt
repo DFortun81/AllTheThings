@@ -1,14 +1,14 @@
 11.0.0.54311
 r(423332),	-- Khaz Algar Blacksmithing
 r(425136),	-- Recraft Equipment
-r(438914),	-- Vicious Competitor's Plate Breastplate
-r(438915),	-- Vicious Competitor's Plate Sabatons
-r(438916),	-- Vicious Competitor's Plate Gauntlets
-r(438917),	-- Vicious Competitor's Plate Helm
-r(438918),	-- Vicious Competitor's Plate Greaves
-r(438919),	-- Vicious Competitor's Plate Pauldrons
-r(438920),	-- Vicious Competitor's Plate Waistguard
-r(438921),	-- Vicious Competitor's Plate Armguards
+r(438914),	-- Algari Competitor's Plate Breastplate \\ Vicious Competitor's Plate Breastplate
+r(438915),	-- Algari Competitor's Plate Sabatons \\ Vicious Competitor's Plate Sabatons
+r(438916),	-- Algari Competitor's Plate Gauntlets \\ Vicious Competitor's Plate Gauntlets
+r(438917),	-- Algari Competitor's Plate Helm \\ Vicious Competitor's Plate Helm
+r(438918),	-- Algari Competitor's Plate Greaves \\ Vicious Competitor's Plate Greaves
+r(438919),	-- Algari Competitor's Plate Pauldrons \\ Vicious Competitor's Plate Pauldrons
+r(438920),	-- Algari Competitor's Plate Waistguard \\ Vicious Competitor's Plate Waistguard
+r(438921),	-- Algari Competitor's Plate Armguards \\ Vicious Competitor's Plate Armguards
 r(450216),	-- Core Alloy
 r(450217),	-- Charged Alloy
 r(450218),	-- Sanctified Alloy
@@ -39,7 +39,7 @@ r(450242),	-- Charged Slicer
 r(450243),	-- Echoing Impact \\ Echoing Impact Seal
 r(450244),	-- Burning Binding \\ Arathor Armor Patch
 r(450245),	-- Sanctified Steps \\ Crystal Gazer's Gauntlets
-r(450246),	-- Lightwatcher's Visor
+r(450246),	-- Beledar's Bulwark \\ Lightwatcher's Visor
 r(450247),	-- Echoing Truncheon
 r(450248),	-- Entangling Cutlass
 r(450249),	-- Haunting Void
@@ -88,6 +88,15 @@ r(450291),	-- Coreforged Repair Hammer
 r(450292),	-- Coreforged Skeleton Key
 11.0.0.54521
 r(453727),	-- Everburning Ignition
+11.0.0.54605
+r(454997),	-- Algari Competitor's Splitter \\ Vicious Competitor's Splitter
+r(454998),	-- Algari Competitor's Dagger \\ Vicious Competitor's Dagger
+r(454999),	-- Algari Competitor's Scepter \\ Vicious Competitor's Scepter
+r(455000),	-- Algari Competitor's Shield \\ Vicious Competitor's Shield
+r(455001),	-- Algari Competitor's Axe \\ Vicious Competitor's Axe
+r(455002),	-- Algari Competitor's Sickle \\ Vicious Competitor's Sickle
+r(455003),	-- Algari Competitor's Greatsword \\ Vicious Competitor's Greatsword
+r(455004),	-- Algari Competitor's Sword \\ Vicious Competitor's Sword
 
 
 
@@ -97,14 +106,14 @@ Missing in Blacksmithing.lua
 11.0.0.54311
 r(423332),	-- Khaz Algar Blacksmithing
 r(425136),	-- Recraft Equipment
-r(438914),	-- Vicious Competitor's Plate Breastplate
-r(438915),	-- Vicious Competitor's Plate Sabatons
-r(438916),	-- Vicious Competitor's Plate Gauntlets
-r(438917),	-- Vicious Competitor's Plate Helm
-r(438918),	-- Vicious Competitor's Plate Greaves
-r(438919),	-- Vicious Competitor's Plate Pauldrons
-r(438920),	-- Vicious Competitor's Plate Waistguard
-r(438921),	-- Vicious Competitor's Plate Armguards
+r(438914),	-- Algari Competitor's Plate Breastplate \\ Vicious Competitor's Plate Breastplate
+r(438915),	-- Algari Competitor's Plate Sabatons \\ Vicious Competitor's Plate Sabatons
+r(438916),	-- Algari Competitor's Plate Gauntlets \\ Vicious Competitor's Plate Gauntlets
+r(438917),	-- Algari Competitor's Plate Helm \\ Vicious Competitor's Plate Helm
+r(438918),	-- Algari Competitor's Plate Greaves \\ Vicious Competitor's Plate Greaves
+r(438919),	-- Algari Competitor's Plate Pauldrons \\ Vicious Competitor's Plate Pauldrons
+r(438920),	-- Algari Competitor's Plate Waistguard \\ Vicious Competitor's Plate Waistguard
+r(438921),	-- Algari Competitor's Plate Armguards \\ Vicious Competitor's Plate Armguards
 r(450216),	-- Core Alloy
 r(450217),	-- Charged Alloy
 r(450218),	-- Sanctified Alloy
@@ -135,7 +144,7 @@ r(450242),	-- Charged Slicer
 r(450243),	-- Echoing Impact \\ Echoing Impact Seal
 r(450244),	-- Burning Binding \\ Arathor Armor Patch
 r(450245),	-- Sanctified Steps \\ Crystal Gazer's Gauntlets
-r(450246),	-- Lightwatcher's Visor
+r(450246),	-- Beledar's Bulwark \\ Lightwatcher's Visor
 r(450247),	-- Echoing Truncheon
 r(450248),	-- Entangling Cutlass
 r(450249),	-- Haunting Void
@@ -184,3 +193,12 @@ r(450291),	-- Coreforged Repair Hammer
 r(450292),	-- Coreforged Skeleton Key
 11.0.0.54521
 r(453727),	-- Everburning Ignition
+11.0.0.54605
+r(454997),	-- Algari Competitor's Splitter \\ Vicious Competitor's Splitter
+r(454998),	-- Algari Competitor's Dagger \\ Vicious Competitor's Dagger
+r(454999),	-- Algari Competitor's Scepter \\ Vicious Competitor's Scepter
+r(455000),	-- Algari Competitor's Shield \\ Vicious Competitor's Shield
+r(455001),	-- Algari Competitor's Axe \\ Vicious Competitor's Axe
+r(455002),	-- Algari Competitor's Sickle \\ Vicious Competitor's Sickle
+r(455003),	-- Algari Competitor's Greatsword \\ Vicious Competitor's Greatsword
+r(455004),	-- Algari Competitor's Sword \\ Vicious Competitor's Sword

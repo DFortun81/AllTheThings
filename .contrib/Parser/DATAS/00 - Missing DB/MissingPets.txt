@@ -32,7 +32,7 @@ pet(4483),	-- Vile Bloodtick
 pet(4484),	-- Frenzied Bloodtick
 pet(4485),	-- Mossy Snail
 pet(4488),	-- Haywire Servobot
-pet(4489),	-- Obsidian Weave-rat
+pet(4489),	-- Bouncer \\ Obsidian Weave-rat
 pet(4490),	-- Fuzzy
 pet(4491),	-- Jump Jump
 pet(4492),	-- Fringe
@@ -123,6 +123,8 @@ pet(4597),	--
 pet(4598),	--
 11.0.0.54605
 pet(4599),	-- Mind Slurp
+11.0.0.54935
+pet(4602),	-- Claudius
 
 
 
@@ -163,7 +165,7 @@ pet(4483),	-- Vile Bloodtick
 pet(4484),	-- Frenzied Bloodtick
 pet(4485),	-- Mossy Snail
 pet(4488),	-- Haywire Servobot
-pet(4489),	-- Obsidian Weave-rat
+pet(4489),	-- Bouncer \\ Obsidian Weave-rat
 pet(4490),	-- Fuzzy
 pet(4491),	-- Jump Jump
 pet(4492),	-- Fringe
@@ -254,3 +256,5 @@ pet(4597),	--
 pet(4598),	--
 11.0.0.54605
 pet(4599),	-- Mind Slurp
+11.0.0.54935
+pet(4602),	-- Claudius
