@@ -331,7 +331,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215852),	-- Gao-Rei, Staff of the Protector
 					i(215698),	-- Grand Imperial Rifle
 					i(215968),	-- Greatsword of the Iron Legion
-					i(215900),	-- Jalak's Spirit Staff
 					i(215855),	-- Jin'ya, Orb of the Watercaller
 					i(215929),	-- Kilrak, Fangs of Terror (MSV normal)
 					i(215932),	-- Kilrak, Fangs of Terror
@@ -493,6 +492,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215589),	-- Soulsever (HoF HC)
 					i(215977),	-- Star Slicer (Unique!)
 					i(216559),	-- Steelskin, Qiang's Bulwark
+					i(215695),	-- Taoren, the Malignant (MSV HC)
 					i(215733),	-- Tihan, Scepter of the Sleeper
 					i(215999),	-- Torch of the Starkspark
 					i(215516),	-- Uroe, Harbinger of Fear

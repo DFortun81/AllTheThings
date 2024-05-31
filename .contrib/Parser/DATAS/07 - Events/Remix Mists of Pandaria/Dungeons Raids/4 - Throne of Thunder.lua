@@ -499,6 +499,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216410),	-- Fyn's Dagger
 						i(216435),	-- Hammer of the Dawn
 						i(216413),	-- Iron Qon's Knife
+						i(215900),	-- Jalak's Spirit Staff
 						i(215770),	-- Jerthud, Hand of the Savior
 						i(215788),	-- Kazra'jin's Maul
 						i(215499),	-- Kura-Kura, Kazra'jin's Headtaker
