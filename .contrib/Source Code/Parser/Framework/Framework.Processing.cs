@@ -1155,6 +1155,8 @@ namespace ATT
             {
                 Objects.Merge(data, "g", source);
                 Items.MarkItemAsReferenced(source);
+                // Capture references to specified Debug DB keys for Debug output
+                CaptureDebugDBData(source);
             }
 
             if (symlinkSources.Count == 0) return true;
