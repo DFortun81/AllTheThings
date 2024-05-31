@@ -5890,7 +5890,6 @@ root(ROOTS.Unsorted, {
 					i(215616),	-- Pandaren Warknife
 					i(215622),	-- Imperial Longknife
 					i(215677),	-- Jinyu's Light
-					i(215686),	-- Eye of the Hydra
 					i(215687),	-- Eye of the Hydra
 					i(215699),	-- Grand Imperial Rifle
 					i(215710),	-- Roar of the Quillen

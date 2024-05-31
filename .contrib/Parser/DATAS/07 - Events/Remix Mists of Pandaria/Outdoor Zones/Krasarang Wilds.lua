@@ -294,6 +294,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215740),	-- Jinyu Bonebreaker
 					i(215643),	-- Klaxxi Pincers
 					i(215532),	-- Mogu Warbow
+					i(215868),	-- Monastic Staff
 					i(215749),	-- Ordo Basher
 					i(216541),	-- Pandaren Barrier
 					i(216023),	-- Pandaren Hacker
