@@ -332,6 +332,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215663),	-- Lucky Cricket Cage
 						i(215720),	-- Mace of the Old Ones
 						i(215473),	-- Malkorok's Headtaker
+						i(210643),	-- Mistspinner's Channel
 						i(215573),	-- Nazgrim's Shanker
 						i(215572),	-- Norushen's Dagger
 						i(216554),	-- Norushen's Tower Shield

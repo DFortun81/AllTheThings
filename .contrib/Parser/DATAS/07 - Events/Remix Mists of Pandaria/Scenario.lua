@@ -121,6 +121,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215647),	-- Ka'eng, Fang of Shadow
 					i(215706),	-- Klaxxi Ambershot
 					i(215685),	-- Klaxxi Channeling Fork
+					i(215614),	-- Klaxxi Slicer
 					i(215876),	-- Mistdancer's Rod
 					i(215985),	-- Satay's Greatsword
 					i(215953),	-- Siege Captain's Blade

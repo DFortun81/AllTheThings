@@ -126,16 +126,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215679),	-- Golden Crane Rod (august celestials cache)
 					i(215890),	-- Hopespreader's Staff (drop)
 					i(215763),	-- Hozen Basher
+					i(215657),	-- Hozen Conduit
 					i(215621),	-- Imperial Warknife
 					i(216533),	-- Ironwood Shield
 					i(215894),	-- Jinyu Conduit
 					i(215987),	-- Jinyu Greatblade
 					i(215540),	-- Jinyu Shortbow (chest)
+					i(215747),	-- Mace of the Rikkitun
 					i(215650),	-- Pandaren Claw (drop)
 					i(215758),	-- Saurok Scepter
-					i(215866),	-- Staff of Focus (drop)
 					i(215590),	-- Shomi's Shanker
+					i(215866),	-- Staff of Focus (drop)
+					i(215743),	-- Sunsoul Smasher
 					i(215957),	-- Tian Monastery Saber
+					i(215863),	-- Torch of Midnight
 					i(215700),	-- Trailseeker Longrifle (chest)
 					i(215675),	-- Wakener's Lantern
 					i(215512),	-- Wallwatcher's Poleaxe

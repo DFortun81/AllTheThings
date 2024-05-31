@@ -703,6 +703,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216436),	-- Hammer of the Dawn
 						i(216414),	-- Iron Qon's Knife
 						i(215898),	-- Jalak's Spirit Staff
+						i(215789),	-- Kazra'jin's Maul
 						i(215497),	-- Kura-Kura, Kazra'jin's Headtaker
 						i(215765),	-- Mace of Dark Animus
 						i(215624),	-- Megaera's Fang
@@ -718,6 +719,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216402),	-- Tia-Tia, the Spinning Star
 						i(216430),	-- Torall, the Emperor's Scepter
 						i(215544),	-- Tortoiseshell Longbow
+						i(216009),	-- Venomlord's Skull Wand
 						i(215775),	-- Zeeg's Ancient Kegbreaker
 					})),
 					e(827, {	-- Jin'rokh the Breaker

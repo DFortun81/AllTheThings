@@ -5887,11 +5887,9 @@ root(ROOTS.Unsorted, {
 					i(215606),	-- Firescribe Slicer
 					i(215607),	-- Ceremonial Spike
 					i(215610),	-- Dreadpriest's Dagger
-					i(215614),	-- Klaxxi Slicer
 					i(215616),	-- Pandaren Warknife
 					i(215622),	-- Imperial Longknife
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
-					i(215657),	-- Hozen Conduit
 					i(215677),	-- Jinyu's Light
 					i(215686),	-- Eye of the Hydra
 					i(215687),	-- Eye of the Hydra
@@ -5911,7 +5909,6 @@ root(ROOTS.Unsorted, {
 					i(216002),	-- Grummle Rod
 					i(216003),	-- Waterweaver's Wand
 					i(216008),	-- Necromantic Channel
-					i(216009),	-- Venomlord's Skull Wand
 					i(216011),	-- Venomlord's Skull Wand
 					i(216012),	-- Venomlord's Skull Wand
 					i(216019),	-- Stormbreaker's Waraxe
@@ -6160,7 +6157,6 @@ root(ROOTS.Unsorted, {
 				}),
 				n(WEAPONS, {
 					i(211162),	-- Klaxxi Longsword
-					i(210643),	-- Mistspinner's Channel
 				}),
 				i(210906),	-- Timerunner's Amice
 				i(210913),	-- Timerunner's Armplates

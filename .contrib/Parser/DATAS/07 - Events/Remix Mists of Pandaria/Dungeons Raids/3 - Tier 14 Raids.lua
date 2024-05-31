@@ -480,7 +480,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216565),	-- Gaze of the Ancient (MSV HC)
 					i(215969),	-- Greatsword of the Iron Legion
 					i(215856),	-- Jin'ya, Orb of the Watercaller
-					i(215789),	-- Kazra'jin's Maul
 					i(215931),	-- Kilrak, Fangs of Terror
 					i(215736),	-- Kri'tak, Scepter of the Swarm
 					i(215933),	-- Loshan, Fear Incarnate
