@@ -109,39 +109,43 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214757),	-- Swarmbreaker's Warhelm
 				}),
 			}),
-			n(WEAPONS, {
-				i(215615),	-- Amber Blade (scenario cache)
-				i(215492),	-- Axe of Iron Might (normal scenario, drop)
-				i(215986),	-- Blade of Broken Chains (heroic scenario, final boss drop)
-				i(215757),	-- Carapace Crusher (maybe hc only?)
-				i(215752),	-- Ced's Basher
-				i(215607),	-- Ceremonial Spike (maybe hc only?)
-				i(215880),	-- Darkstaff of Ruin (normal scenario)
-				i(215537),	-- Dawnwatcher's Warbow
-				i(216007),	-- Deathspeaker Channel
-				i(215785),	-- Fangcracker Maul
-				i(215884),	-- Firedancer's Staff
-				i(215753),	-- Gao's Kegbreaker (hc scenario cache)
-				i(215881),	-- Gustspinner's Staff
-				i(215647),	-- Ka'eng, Fang of Shadow
-				i(215706),	-- Klaxxi Ambershot
-				i(215685),	-- Klaxxi Channeling Fork
-				i(215786),	-- Lerah's Maul
-				i(215611),	-- Lightdrinker Dagger (hc scenario cache)
-				i(215876),	-- Mistdancer's Rod (normal scenario)
-				i(215868),	-- Monastic Staff (normal scenario)
-				i(215648),	-- Ner'onok's Katar (hc scenario)
-				i(215956),	-- Ook's Hozen Cutter (hc scenario)
-				i(215985),	-- Satay's Greatsword
-				i(215493),	-- Scalebreaker Battleaxe
-				i(215953),	-- Siege Captain's Blade
-				i(216580),	-- Skyrider's Shield (hc scenario)
-				i(215885),	-- Teachings of Shaohao
-				i(215538),	-- Tempestuous Shortbow (hc scenario)
-				i(215594),	-- Warbringer's Blade
-				i(215808),	-- Yak-Herder's Longspear (normal scenario)
-				i(215707),	-- Yan-Zhu's Rifle (hc scenario)
-				i(215809),	-- Yaungol Warspear
+			d(DIFFICULTY.DUNGEON.NORMAL, {
+				n(WEAPONS, {
+					i(215492),	-- Axe of Iron Might
+					i(215752),	-- Ced's Basher
+					i(215880),	-- Darkstaff of Ruin
+					i(215537),	-- Dawnwatcher's Warbow
+					i(216007),	-- Deathspeaker Channel
+					i(215785),	-- Fangcracker Maul
+					i(215884),	-- Firedancer's Staff
+					i(215647),	-- Ka'eng, Fang of Shadow
+					i(215706),	-- Klaxxi Ambershot
+					i(215685),	-- Klaxxi Channeling Fork
+					i(215876),	-- Mistdancer's Rod
+					i(215985),	-- Satay's Greatsword
+					i(215953),	-- Siege Captain's Blade
+					i(215808),	-- Yak-Herder's Longspear
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.HEROIC, {
+				n(WEAPONS, {
+					i(215615),	-- Amber Blade
+					i(215986),	-- Blade of Broken Chains
+					i(215757),	-- Carapace Crusher
+					i(215607),	-- Ceremonial Spike
+					i(215753),	-- Gao's Kegbreaker
+					i(215881),	-- Gustspinner's Staff
+					i(215786),	-- Lerah's Maul
+					i(215611),	-- Lightdrinker Dagger
+					i(215648),	-- Ner'onok's Katar
+					i(215956),	-- Ook's Hozen Cutter
+					i(215493),	-- Scalebreaker Battleaxe
+					i(216580),	-- Skyrider's Shield
+					i(215885),	-- Teachings of Shaohao
+					i(215538),	-- Tempestuous Shortbow
+					i(215707),	-- Yan-Zhu's Rifle
+					i(215809),	-- Yaungol Warspear
+				}),
 			}),
 		}),
 		-- Scenario Maps
