@@ -55,8 +55,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				},
 			}),
 		}),
-		mapped(ARMOR, {
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+		d(DIFFICULTY.DUNGEON.NORMAL, {
+			mapped(ARMOR, {
 				filter(CLOTH, {
 					i(213644),	-- Breezebinder's Bracers
 					i(213643),	-- Breezebinder's Cord
@@ -98,7 +98,31 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214742),	-- Greenstone Sabatons
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			mapped(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+				i(215984),	-- Bjam's Greatsword
+				i(216581),	-- Deflector of the Protectorate
+				i(215535),	-- Featherdraw Warbow
+				i(215806),	-- Ghostheart Warspear
+				i(215883),	-- Greatstaff of the Path
+				i(215754),	-- Jol'Grum's Mace
+				i(215954),	-- Kor'dok's Sword
+				i(215604),	-- Mogu Severer
+				i(215879),	-- Mountainsage Spire
+				i(215750),	-- Ook Breaker
+				i(215705),	-- Penate's Pistol
+				i(215609),	-- Sha-Touched Shanker
+				i(215783),	-- Shado-Pan Maul
+				i(215490),	-- Snowdrift Battleaxe
+				i(215874),	-- Staff of Iron Will
+				i(216577),	-- Sutiru's Shield
+				i(215682),	-- Swarmkeeper's Channel
+				i(215645),	-- Tian Handblade
+				i(216005),	-- Wand of Spiritweaving
+				i(215612),	-- Yaungol Shanker
+			})),
+		}),
+		d(DIFFICULTY.DUNGEON.HEROIC, {
+			mapped(ARMOR, {
 				filter(CLOTH, {
 					i(213647),	-- Windwhisper Amice
 					i(213646),	-- Windwhisper Belt
@@ -140,53 +164,28 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214747),	-- Yaungolian Warboots
 				}),
 			}),
-		}),
-		mapped(WEAPONS, {
-			-- Weapons can also come from dungeon completion crates
-			i(215984),	-- Bjam's Greatsword
-			i(216582),	-- Bulwark of the Protectorate
-			i(215646),	-- Claw of the Fallen Temple
-			i(216581),	-- Deflector of the Protectorate
-			i(215491),	-- Dubious Waraxe
-			i(215536),	-- Ennadee's Longbow
-			i(215535),	-- Featherdraw Warbow
-			i(215748),	-- Fireblaze Mace
-			i(215806),	-- Ghostheart Warspear
-			i(215883),	-- Greatstaff of the Path
-			i(216578),	-- Impervious Bulwark
-			i(215983),	-- Jade Grand Falchion
-			i(215755),	-- Je'lyu, Scepter of the Serpent
-			i(215754),	-- Jol'Grum's Mace
-			i(215954),	-- Kor'dok's Sword
-			i(215882),	-- Lorewalker's Staff
-			i(215704),	-- Mantid Firebelcher
-			i(215684),	-- Mantid Tuning Fork
-			i(215613),	-- Mogu Lord's Blade (Gate heroic)
-			i(215604),	-- Mogu Severer
-			i(215879),	-- Mountainsage Spire
-			i(215750),	-- Ook Breaker (normal)
-			i(215705),	-- Penate's Pistol
-			i(215751),	-- Porter's Mace
-			i(215605),	-- Ravenclaw Dagger
-			i(215807),	-- Ritter's Spear
-			i(215493),	-- Scalebreaker Battleaxe
-			i(215609),	-- Sha-Touched Shanker
-			i(215783),	-- Shado-Pan Maul
-			i(216006),	-- Skullcap Wand
-			i(215490),	-- Snowdrift Battleaxe (Temple of the Jade Serpent normal, dungeon quest cache)
-			i(215802),	-- Spear of Feral Rage
-			i(215878),	-- Springrain Spire
-			i(215874),	-- Staff of Iron Will
-			i(215875),	-- Staff of Stolen Hope
-			i(216577),	-- Sutiru's Shield (Temple of the Jade Serpent normal)
-			i(215682),	-- Swarmkeeper's Channel (Scholo normal drop)
-			i(215784),	-- Taran Zhu's Bonebreaker
-			i(215645),	-- Tian Handblade
-			i(215608),	-- Tolakesh, Horn of Niuzao
-			i(215514),	-- Wallwatcher's Longaxe
-			i(216005),	-- Wand of Spiritweaving (Stormstout Brewery normal drop)
-			i(215612),	-- Yaungol Shanker
-			i(215955),	-- Zakai's Swarmslicer
+			mapped(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+				i(216582),	-- Bulwark of the Protectorate
+				i(215646),	-- Claw of the Fallen Temple
+				i(215491),	-- Dubious Waraxe
+				i(215536),	-- Ennadee's Longbow
+				i(216578),	-- Impervious Bulwark
+				i(215983),	-- Jade Grand Falchion
+				i(215755),	-- Je'lyu, Scepter of the Serpent
+				i(215882),	-- Lorewalker's Staff
+				i(215704),	-- Mantid Firebelcher
+				i(215684),	-- Mantid Tuning Fork
+				i(215613),	-- Mogu Lord's Blade
+				i(215751),	-- Porter's Mace
+				i(215605),	-- Ravenclaw Dagger
+				i(215807),	-- Ritter's Spear
+				i(216006),	-- Skullcap Wand
+				i(215878),	-- Springrain Spire
+				i(215875),	-- Staff of Stolen Hope
+				i(215784),	-- Taran Zhu's Bonebreaker
+				i(215608),	-- Tolakesh, Horn of Niuzao
+				i(215955),	-- Zakai's Swarmslicer
+			})),
 		}),
 		mapped(REWARDS, {
 			i(220764),	-- Bonus Experience

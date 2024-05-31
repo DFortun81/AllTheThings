@@ -124,6 +124,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(210337),	-- Faded Forest Hatchet
 					i(215941),	-- Faded Forest Sword
 					i(215642),	-- Fangs of Despair
+					i(215748),	-- Fireblaze Mace
 					i(215676),	-- Hopebringer's Lantern
 					i(210640),	-- Icon of Hope
 					i(215533),	-- Marista Longbow

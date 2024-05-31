@@ -133,6 +133,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215648),	-- Ner'onok's Katar (hc scenario)
 				i(215956),	-- Ook's Hozen Cutter (hc scenario)
 				i(215985),	-- Satay's Greatsword
+				i(215493),	-- Scalebreaker Battleaxe
 				i(215953),	-- Siege Captain's Blade
 				i(216580),	-- Skyrider's Shield (hc scenario)
 				i(215885),	-- Teachings of Shaohao
