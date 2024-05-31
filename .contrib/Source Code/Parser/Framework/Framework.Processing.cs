@@ -1031,9 +1031,17 @@ namespace ATT
                 data.Remove(key);
             }
 
-            if (data.ContainsKey("_unsorted") && TryGetSOURCED(data, out var _))
+            if (data.ContainsKey("_unsorted"))
             {
-                LogDebugWarn($"Unsorted data has also been Sourced", data);
+                foreach(var sourcedListByKey in GetAllMatchingSOURCED(data))
+                {
+                    var sourcedData = Objects.FindMatchingData(sourcedListByKey.AsTypedEnumerable<object>(), data);
+                    if (sourcedData != null)
+                    {
+                        LogDebugWarn($"Unsorted data has also been Sourced", data);
+                        break;
+                    }
+                }
             }
 
             CaptureDebugDBData(data);
@@ -1217,7 +1225,7 @@ namespace ATT
             return false;
         }
 
-        private static bool TryGetSOURCED(IDictionary<string, object> data, out List<IDictionary<string, object>> sources)
+        private static IEnumerable<List<IDictionary<string, object>>> GetAllMatchingSOURCED(IDictionary<string, object> data)
         {
             foreach (KeyValuePair<string, object> field in data)
             {
@@ -1225,13 +1233,9 @@ namespace ATT
                     && field.Value is long id && id > 0
                     && fieldSources.TryGetValue(id, out List<IDictionary<string, object>> objectSources))
                 {
-                    sources = objectSources;
-                    return true;
+                    yield return objectSources;
                 }
             }
-
-            sources = default;
-            return false;
         }
 
         private static void CaptureForSOURCED(IDictionary<string, object> data, string field, object idObj)

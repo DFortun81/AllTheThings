@@ -2607,7 +2607,7 @@ end");
             /// <summary>
             /// Attempts to find a matching 'data' object in the container based on the data that needs to merge
             /// </summary>
-            private static IDictionary<string, object> FindMatchingData(List<object> container, IDictionary<string, object> data2)
+            public static IDictionary<string, object> FindMatchingData(IEnumerable<object> container, IDictionary<string, object> data2)
             {
                 // if the data is explicitly defined as not to merge
                 if (data2.TryGetValue("nomerge", out bool nomerge) && nomerge)
