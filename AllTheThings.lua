@@ -2928,8 +2928,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if method ~= app.EmptyFunction then
 			-- Fill up the group
 			app.FillGroups(group);
-			-- Sort by the heirarchy of the group
-			app.Sort(group.g, app.SortDefaults.Hierarchy, true);
 		end
 
 		-- Only need to build/update groups from the top level
@@ -3006,6 +3004,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 
 		if group.g and app.Settings:GetTooltipSetting("SummarizeThings") then
+			-- Sort by the heirarchy of the group
+			if not working then
+				app.Sort(group.g, app.SortDefaults.Hierarchy, true);
+			end
 			-- app.PrintDebug("SummarizeThings",group.hash,group.g and #group.g)
 			local entries = {};
 			-- app.Debugging = "CONTAINS-"..group.hash;

@@ -194,9 +194,9 @@ app.SortDefaults = setmetatable({
 			return false;
 		end
 		local acomp, bcomp;
-		acomp = a.g and #a.g or 0;
-		bcomp = b.g and #b.g or 0;
-		return acomp < bcomp;
+		acomp = a.g
+		bcomp = b.g
+		return (acomp and #acomp or 0) < (bcomp and #bcomp or 0);
 	end,
 	-- Sorts objects first by how many total collectibles they contain
 	Total = function(a,b)

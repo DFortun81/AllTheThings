@@ -5,5 +5,8 @@ local _, app = ...
 
 app.CreateEnsemble = app.ExtendClass("Item", "EnsembleItem", "itemID", {
 	IsClassIsolated = true,
-	itemID = function(t) return t.ensembleID end
+	itemID = function(t) return t.ensembleID end,
+	nextUpgrade = app.EmptyFunction,
+	isUpgrade = app.EmptyFunction,
+	costCollectibles = app.EmptyFunction
 })
