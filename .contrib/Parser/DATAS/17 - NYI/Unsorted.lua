@@ -5851,6 +5851,8 @@ root(ROOTS.Unsorted, {
 					filter(LEATHER, {
 						------ NYI or only in Ensembles ------
 						i(220985),	-- Vest of the Shattered Vale
+						-- Bugged?
+						i(214377),	-- Mantle of the Barbed Assassin
 					}),
 					filter(MAIL, {
 						------ NYI or only in Ensembles ------

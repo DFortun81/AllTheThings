@@ -687,7 +687,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214374),	-- Cap of the Barbed Assassin
 							i(214375),	-- Handguards of the Barbed Assassin
 							i(214376),	-- Cinch of the Barbed Assassin
-							i(214377),	-- Mantle of the Barbed Assassin
+							-- Bugged
+							--i(214377),	-- Mantle of the Barbed Assassin
 							i(214378),	-- Pants of the Barbed Assassin
 						}),
 						filter(MAIL, {
