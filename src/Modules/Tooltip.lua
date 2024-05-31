@@ -567,7 +567,7 @@ local SkipPurchases = {
 		[49927] = 1,	-- Love Token
 	},
 	currencyID = {
-		[2778] = 1.5,		-- Bronze
+		[2778] = 2,		-- Bronze
 	},
 }
 app.ShouldFillPurchases = function(group, FillData)
