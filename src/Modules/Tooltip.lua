@@ -555,6 +555,11 @@ end
 
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
 local SkipPurchases = {
+	-- 0 	- (default, never skipped)
+	-- 1 	- (tooltip, skipped unless within tooltip/popout)
+	-- 1.5	- (tooltip root, skipped unless tooltip root or within popout)
+	-- 2 	- (popout, skipped unless within popout)
+	-- 2.5 	- (popout root, skipped unless root of popout)
 	itemID = {
 		[137642] = 2,	-- Mark of Honor
 		[21100] = 1,	-- Coin of Ancestry
@@ -562,17 +567,17 @@ local SkipPurchases = {
 		[49927] = 1,	-- Love Token
 	},
 	currencyID = {
-		[2778] = 2,		-- Bronze
+		[2778] = 1.5,		-- Bronze
 	},
 }
-app.ShouldFillPurchases = function(group)
+app.ShouldFillPurchases = function(group, FillData)
 	local val
 	for key,values in pairs(SkipPurchases) do
 		val = group[key]
 		if val then
 			val = values[val]
 			if not val then return true end
-			if CurrentSkipLevel < val then
+			if CurrentSkipLevel < val - (group == FillData.Root and 0.5 or 0) then
 				return false;
 			end
 		end

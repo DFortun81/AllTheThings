@@ -3227,7 +3227,7 @@ end
 -- Determines searches required for costs using this group
 local function DeterminePurchaseGroups(group, FillData)
 	-- do not fill purchases on certain items, can skip the skip though based on a level
-	if not app.ShouldFillPurchases(group) then return end
+	if not app.ShouldFillPurchases(group, FillData) then return end
 
 	local collectibles = group.costCollectibles;
 	if collectibles and #collectibles > 0 then
@@ -3558,7 +3558,8 @@ app.FillGroups = function(group)
 		CraftedItems = {},
 		InWindow = groupWindow and true or nil,
 		NestNPCData = app.Settings:GetTooltipSetting("NPCData:Nested"),
-		SkipLevel = app.GetSkipLevel()
+		SkipLevel = app.GetSkipLevel(),
+		Root = group
 	};
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
