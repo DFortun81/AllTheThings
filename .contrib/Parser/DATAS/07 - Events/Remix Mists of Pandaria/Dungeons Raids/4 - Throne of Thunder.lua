@@ -251,9 +251,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(216425),	-- Acid-Spine Bonebreaker
+						i(216427),	-- Acid-Spine Bonebreaker
 						i(215652),	-- Amun-Thoth, Sul's Spiritrender
 						i(215655),	-- Amun-Thoth, Sul's Spiritrender
 						i(216404),	-- Blade of the Sanguine Ritual
+						i(216407),	-- Blade of the Sanguine Ritual
 						i(216458),	-- Caduceus of Pure Moods
 						i(216461),	-- Caduceus of Pure Moods
 						i(216463),	-- Dinomancer's Spire
@@ -261,31 +263,48 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215564),	-- Durumu's Gaze
 						i(215689),	-- Eye of the Hydra
 						i(216409),	-- Fyn's Dagger
+						i(216411),	-- Fyn's Dagger
 						i(216434),	-- Hammer of the Dawn
 						i(216437),	-- Hammer of the Dawn
 						i(216412),	-- Iron Qon's Knife
+						i(216415),	-- Iron Qon's Knife
 						i(215899),	-- Jalak's Spirit Staff
+						i(215901),	-- Jalak's Spirit Staff
 						i(215769),	-- Jerthud, Hand of the Savior
+						i(215787),	-- Kazra'jin's Maul
 						i(215790),	-- Kazra'jin's Maul
 						i(215498),	-- Kura-Kura, Kazra'jin's Headtaker
+						i(215500),	-- Kura-Kura, Kazra'jin's Headtaker
 						i(215766),	-- Mace of Dark Animus
+						i(215768),	-- Mace of Dark Animus
 						i(215625),	-- Megaera's Fang
 						i(215627),	-- Megaera's Fang
+						i(215546),	-- Miracoran, the Dissonant Chord
 						i(215708),	-- Roar of the Quillen
+						i(215711),	-- Roar of the Quillen
 						i(215811),	-- Shan-Dun, Breaker of Courage
 						i(215814),	-- Shan-Dun, Breaker of Courage
 						i(216016),	-- Shellsplitter Battleaxe
+						i(216588),	-- Shield of the Gloaming
 						i(215965),	-- Soulblade of the Storm
 						i(215886),	-- Soulwood Spire
+						i(216014),	-- Shellsplitter Battleaxe
 						i(216446),	-- Sphere of Arcing Lightning
 						i(216449),	-- Sphere of Arcing Lightning
+						i(216017),	-- Stormbreaker's Waraxe
+						i(216020),	-- Stormbreaker's Waraxe
 						i(216466),	-- Suen-Wo, Spire of the Rising Sun
+						i(216469),	-- Suen-Wo, Spire of the Rising Sun
 						i(216400),	-- Tia-Tia, the Spinning Star
 						i(216403),	-- Tia-Tia, the Spinning Star
 						i(216428),	-- Torall, the Emperor's Scepter
 						i(216431),	-- Torall, the Emperor's Scepter (ToT LFR (1st wing))
 						i(215542),	-- Tortoiseshell Longbow (Sisters)
 						i(215545),	-- Tortoiseshell Longbow
+						i(215517),	-- Uroe, Harbinger of Fear
+						i(215519),	-- Uroe, Harbinger of Fear
+						i(216010),	-- Venomlord's Skull Wand
+						i(215961),	-- Qon's Iron Decree
 						i(215964),	-- Qon's Iron Decree
 						i(215773),	-- Zeeg's Ancient Kegbreaker (ToT LFR (2nd wing))
 						i(215991),	-- Zerat, Soulburner's Greatsword

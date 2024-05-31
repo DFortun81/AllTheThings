@@ -5846,7 +5846,6 @@ root(ROOTS.Unsorted, {
 						i(220971),	-- Mistwalker's Shirt
 						i(220972),	-- Shaded Wood Vest
 						i(220979),	-- Amaranthine Shirt
-						i(214010),	-- Vestment of the Dynast
 					}),
 					filter(LEATHER, {
 						------ NYI or only in Ensembles ------
@@ -5873,15 +5872,9 @@ root(ROOTS.Unsorted, {
 					i(224120),	-- Timerunner's Gem Box
 				}),
 				n(WEAPONS, {
-					i(215946),	-- Valiant's Honorblade
-					i(215500),	-- Kura-Kura, Kazra'jin's Headtaker
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
-					i(215517),	-- Uroe, Harbinger of Fear
 					i(215523),	-- Dagryn's Longbow
-					i(215533),	-- Marista Longbow
-					i(215534),	-- Shado-Pan Longbow
 					i(215539),	-- Jinyu Longbow
-					i(215546),	-- Miracoran, the Dissonant Chord
 					i(215553),	-- Death Lotus Repeater
 					i(215563),	-- Durumu's Gaze
 					i(215565),	-- Jinyu Slasher
@@ -5899,52 +5892,31 @@ root(ROOTS.Unsorted, {
 					i(215622),	-- Imperial Longknife
 					i(215654),	-- Amun-Thoth, Sul's Spiritrender
 					i(215657),	-- Hozen Conduit
-					i(215675),	-- Wakener's Lantern
 					i(215677),	-- Jinyu's Light
-					i(215680),	-- Hope's Effigy
 					i(215686),	-- Eye of the Hydra
 					i(215687),	-- Eye of the Hydra
 					i(215699),	-- Grand Imperial Rifle
 					i(215710),	-- Roar of the Quillen
-					i(215711),	-- Roar of the Quillen
 					i(215722),	-- Mace of the Old Ones
-					i(215753),	-- Gao's Kegbreaker
 					i(215756),	-- Klaxxi Smasher
-					i(215768),	-- Mace of Dark Animus
-					i(215787),	-- Kazra'jin's Maul
-					i(215794),	-- Halberd of Inner Darkness
 					i(215810),	-- Warspear of Xuen
-					i(215864),	-- Torch of Dawn
 					i(215877),	-- Cloudscorcher Staff
-					i(215901),	-- Jalak's Spirit Staff
 					i(215902),	-- Klaxxi Scimitar
 					i(215903),	-- Klaxxi Sword
 					i(215904),	-- Klaxxi Shortsword
 					i(215914),	-- Kil'ruk's Hateful Blade
-					i(215921),	-- Shao-Tien Saber
 					i(215923),	-- Shao-Tien Saber
-					i(215961),	-- Qon's Iron Decree
 					i(215993),	-- Zerat, Soulburner's Greatsword
 					i(216001),	-- Mountainsage Rod
 					i(216002),	-- Grummle Rod
 					i(216003),	-- Waterweaver's Wand
-					i(216004),	-- Blazecaster's Wand
 					i(216008),	-- Necromantic Channel
 					i(216009),	-- Venomlord's Skull Wand
-					i(216010),	-- Venomlord's Skull Wand
 					i(216011),	-- Venomlord's Skull Wand
 					i(216012),	-- Venomlord's Skull Wand
-					i(216014),	-- Shellsplitter Battleaxe
-					i(216017),	-- Stormbreaker's Waraxe
 					i(216019),	-- Stormbreaker's Waraxe
-					i(216020),	-- Stormbreaker's Waraxe
-					i(216407),	-- Blade of the Sanguine Ritual
-					i(216411),	-- Fyn's Dagger
-					i(216415),	-- Iron Qon's Knife
 					i(216416),	-- Hozen Blade
-					i(216427),	-- Acid-Spine Bonebreaker
 					i(216439),	-- Pandaren Book
-					i(216442),	-- Pandaren Decorative Fan
 					i(216444),	-- Pandaren Ritual Fan
 					i(216450),	-- Staff of the Monkey King
 					i(216451),	-- Quarterstaff of the Monkey King
@@ -5954,33 +5926,26 @@ root(ROOTS.Unsorted, {
 					i(216455),	-- Pandaren Spire
 					i(216456),	-- Pandaren Staff
 					i(216457),	-- Pandaren Standard
-					i(216469),	-- Suen-Wo, Spire of the Rising Sun
-					i(216470),	-- Tian Monastery Spire
 					i(216474),	-- Temple Trainee's Sword
 					i(216478),	-- Pandaren Flamberge
 					i(216480),	-- Pandaren Greatblade
 					i(216481),	-- Pandaren Greatsword
 					i(216530),	-- Protection of the Emperor
-					i(216531),	-- Protection of the Emperor
-					i(216533),	-- Ironwood Shield
 					i(216534),	-- Ironwood Deflector
 					i(216537),	-- Mogu Lord's Deflector
 					i(216539),	-- Mogu Lord's Barrier
 					i(216546),	-- Visage of Dread
 					i(216553),	-- Norushen's Tower Shield
-					i(216554),	-- Norushen's Tower Shield
 					i(216555),	-- Shield of the Fallen General
 					i(216557),	-- Shield of the Fallen General
 					i(216562),	-- Steelskin, Qiang's Bulwark
 					i(216567),	-- Dreadwood Bulwark
 					i(216572),	-- Shomi's Barrier
-					i(216573),	-- Spiritsage's Barrier
 					i(216574),	-- Flamecaller's Bulwark
 					i(216579),	-- Shield of the Devourer
 					i(216583),	-- Shield of the Protectorate
 					i(216584),	-- Barrier of the Protectorate
 					i(216586),	-- Shield of the Gloaming
-					i(216588),	-- Shield of the Gloaming
 					i(216589),	-- Tortos' Shell
 					i(216591),	-- Tortos' Shell
 					i(216592),	-- Tortos' Shell
@@ -5988,7 +5953,6 @@ root(ROOTS.Unsorted, {
 					i(216594),	-- Bulwark of Twinned Despair
 					i(216597),	-- Eyes of the Doomed
 					i(216599),	-- Eyes of the Doomed
-					i(216612),	-- Seawatch Launcher
 					i(216613),	-- Seawatch Repeater
 				}),
 			}),

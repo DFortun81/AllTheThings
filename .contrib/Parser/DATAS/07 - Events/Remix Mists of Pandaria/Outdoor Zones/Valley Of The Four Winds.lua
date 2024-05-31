@@ -126,6 +126,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215642),	-- Fangs of Despair
 					i(215676),	-- Hopebringer's Lantern
 					i(210640),	-- Icon of Hope
+					i(215533),	-- Marista Longbow
 					i(215950),	-- Mei's Sword
 					i(215639),	-- Mist Shaman's Knuckles (drop)
 					i(215559),	-- Mountainscaler Speargun
@@ -135,6 +136,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216441),	-- Pandaren Manual
 					i(216443),	-- Pandaren Ornate Fan (drop)
 					i(215598),	-- Regal Slicer
+					i(216612),	-- Seawatch Launcher
 					i(215485),	-- Shomi's Hatchet
 					i(215739),	-- Shomi's Scepter
 					i(215781),	-- Sumprush Maul

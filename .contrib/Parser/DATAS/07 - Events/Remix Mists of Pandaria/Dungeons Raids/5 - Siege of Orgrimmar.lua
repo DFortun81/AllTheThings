@@ -322,6 +322,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215835),	-- Drakebinder's Spire
 						i(210343),	-- Gar'tok, Might of the Faithful
 						i(215971),	-- Greatsword of Fallen Pride
+						i(215794),	-- Halberd of Inner Darkness
 						i(215469),	-- Haromm's Frozen Battleaxe
 						i(215524),	-- Hisek's Longbow
 						i(215715),	-- Kardris' Scepter
@@ -333,12 +334,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215473),	-- Malkorok's Headtaker
 						i(215573),	-- Nazgrim's Shanker
 						i(215572),	-- Norushen's Dagger
+						i(216554),	-- Norushen's Tower Shield
 						i(215831),	-- Pride's Gaze
 						i(215659),	-- Prophecies of Y'Shaarj
 						i(215577),	-- Rik'kal's Bloody Blade
 						i(215827),	-- Rod of the Megantholithic Apparatus
 						i(215830),	-- Rod of the Megantholithic Apparatus
 						i(215667),	-- Sha-Touched Globule
+						i(215921),	-- Shao-Tien Saber
 						i(215723),	-- Siegecrafter's Forge Drill
 						i(215628),	-- Softfoot's Iron Claw
 						i(211161),	-- Sphere of Immerseus

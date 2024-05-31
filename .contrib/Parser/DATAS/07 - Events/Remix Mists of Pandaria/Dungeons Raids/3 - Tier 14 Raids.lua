@@ -156,6 +156,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215636),	-- Fist of Shek'zeer (HoF LFR)
 					i(215727),	-- Galvanized Stormcrusher
 					i(215728),	-- Galvanized Stormcrusher (MSV LFR)
+					i(215730),	-- Galvanized Stormcrusher (HoF LFR)
 					i(215632),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
 					i(215635),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
 					i(215851),	-- Gao-Rei, Staff of the Protector (MSV LFR / HoF LFR)
@@ -167,18 +168,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215857),	-- Jin'ya, Orb of the Watercaller (MSV LFR / HoF LFR)
 					i(215930),	-- Kilrak, Fangs of Terror (HoF LFR)
 					i(215929),	-- Kilrak, Fangs of Terror
+					i(215932),	-- Kilrak, Fangs of Terror (MSV LFR)
 					i(215734),	-- Kri'tak, Scepter of the Swarm
 					i(215735),	-- Kri'tak, Scepter of the Swarm
 					i(215737),	-- Kri'tak, Scepter of the Swarm (MSV LFR 1st wing)
+					i(215934),	-- Loshan, Fear Incarnate (MSV LFR)
 					i(215935),	-- Loshan, Fear Incarnate
 					i(215936),	-- Loshan, Fear Incarnate (MSV LFR)
+					i(216531),	-- Protection of the Emperor (MSV LFR)
 					i(215798),	-- Qiang's Unbreakable Polearm (HoF LFR)
 					i(215799),	-- Qiang's Unbreakable Polearm
 					i(215801),	-- Qiang's Unbreakable Polearm (HoF LFR)
 					i(215585),	-- Regail's Fulminating Blade (MSV LFR / ToES LFR)
-					i(215934),	-- Loshan, Fear Incarnate (MSV LFR)
-					i(216438),	-- Pandaren Manuscript (MSV LFR -> possible wildcard drop)
 					i(215588),	-- Regail's Fulminating Blade (HoF LFR)
+					i(215925),	-- Scimitar of Seven Stars (ToeS LFR)
 					i(215926),	-- Scimitar of Seven Stars
 					i(215928),	-- Scimitar of Seven Stars (MSV LFR)
 					i(215505),	-- Shin'ka, the Tyrant's Greataxe

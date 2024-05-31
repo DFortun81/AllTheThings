@@ -146,6 +146,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216445),	-- Pandaren Ceremonial Fan
 					i(216021),	-- Pandaren Hatchet
 					i(216421),	-- Pandaren Mace
+					i(215703),	-- Pandaren Rifle
 					i(216544),	-- Pandaren Shield
 					i(216479),	-- Pandaren Waveblade
 					i(216482),	-- Pandaren Windblade
@@ -153,11 +154,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216614),	-- Seawatch Crossbow
 					i(215805),	-- Serpentguard Spear
 					i(210335),	-- Shado-Pan Dagger
+					i(215534),	-- Shado-Pan Longbow
 					i(215603),	-- Sha-Warped Slicer
 					i(216473),	-- Tian Monastery Staff
 					i(216477),	-- Temple Trainee's Scimitar
 					i(215869),	-- Waterweaver's Staff
-					i(215809),	-- Yaungol Warspear
 				}),
 			}),
 		},

@@ -164,6 +164,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(215613),	-- Mogu Lord's Blade (Gate heroic)
 			i(215604),	-- Mogu Severer
 			i(215879),	-- Mountainsage Spire
+			i(215750),	-- Ook Breaker (normal)
 			i(215705),	-- Penate's Pistol
 			i(215751),	-- Porter's Mace
 			i(215605),	-- Ravenclaw Dagger

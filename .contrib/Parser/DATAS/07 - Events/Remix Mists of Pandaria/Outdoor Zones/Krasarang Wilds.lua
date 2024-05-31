@@ -301,6 +301,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(210634),	-- Shield of the Wakener
 					i(215802),	-- Spear of Feral Rage
 					i(215602),	-- Spiritbound Stabber
+					i(216571),	-- Tian Deflector
+					i(216470),	-- Tian Monastery Spire
 					i(215489),	-- Wasteland Hacker
 					i(215782),	-- Wasteland Maul
 				}),

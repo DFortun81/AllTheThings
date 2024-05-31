@@ -139,9 +139,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					i(215872),	-- Amberweaver's Spire (drop)
+					i(215640),	-- Barbs of the Rikkitun (drop)
 					i(215858),	-- Diviner's Staff (drop)
 					i(215742),	-- Faded Forest Crusher (drop)
 					i(215865),	-- Fogspeaker Conduit
+					i(215680),	-- Hope's Effigy
 					i(215702),	-- Howling Rifle (drop)
 					i(215658),	-- Hozen Effigy
 					i(215764),	-- Hozen Mace
@@ -159,9 +161,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215618),	-- Pandaren Triblade
 					i(215981),	-- Red Crane Greatsword
 					i(215760),	-- Saurok Breaker
-					i(215951),	-- Sha-Blighted Sword
+					i(215951),	-- Sha-Blighted Sword (drop)
 					i(215802),	-- Spear of Feral Rage
 					i(215602),	-- Spiritbound Stabber
+					i(216573),	-- Spiritsage's Barrier (drop)
 					i(215892),	-- Staff of the Black Ox
 					i(216571),	-- Tian Deflector
 					i(215959),	-- Tian Monastery Sword (drop)

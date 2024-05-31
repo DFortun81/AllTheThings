@@ -323,8 +323,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215873),	-- Amberweaver's Staff
 					i(215746),	-- Bearheart's Basher
 					i(215793),	-- Bo-Ris, Spear of Night
+					i(216004),	-- Blazecaster's Wand
 					i(215741),	-- Bloodseeker's Bonebreaker
 					i(216595),	-- Bulwark of Twinned Despair
+					i(215681),	-- Crane's Beak Effigy
 					i(215948),	-- Darkhide Sword
 					i(215908),	-- Do-tharak, the Foebreaker
 					i(215862),	-- Engraved Spire

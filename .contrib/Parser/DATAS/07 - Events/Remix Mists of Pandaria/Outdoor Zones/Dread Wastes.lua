@@ -104,6 +104,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216575),	-- Darkhide Shield
 					i(215867),	-- Diviner's Spire
 					i(210337),	-- Faded Forest Hatchet
+					i(215941),	-- Faded Forest Sword
 					i(215642),	-- Fangs of Despair
 					i(215600),	-- Grummle Shortblade
 					i(215656),	-- Hozen Fetish
@@ -115,6 +116,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215988),	-- Jinyu Greatsword
 					i(215895),	-- Jinyu Rod
 					i(216536),	-- Ironwood Barrier
+					i(215950),	-- Mei's Sword
 					i(215639),	-- Mist Shaman's Knuckles
 					i(215939),	-- Mogu Aspirant's Blade
 					i(216538),	-- Mogu Lord's Bulwark
@@ -122,12 +124,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215649),	-- Pandaren Striker
 					i(215598),	-- Regal Slicer
 					i(215759),	-- Saurok Mace
+					i(215739),	-- Shomi's Scepter
 					i(215891),	-- Staff of Hidden Knowledge
 					i(210635),	-- Streamtalker Shield
 					i(215958),	-- Tian Monastery Edge
+					i(215864),	-- Torch of Dawn (drop)
 					i(215513),	-- Wallwatcher's Axe
 					i(215860),	-- Wasteland Staff
 					i(215496),	-- Yaungol Axe
+					i(216568),	-- Yaungol Bulwark
 				}),
 			}),
 		},

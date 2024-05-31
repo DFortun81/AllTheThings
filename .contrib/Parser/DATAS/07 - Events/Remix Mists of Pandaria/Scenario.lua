@@ -121,6 +121,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(216007),	-- Deathspeaker Channel
 				i(215785),	-- Fangcracker Maul
 				i(215884),	-- Firedancer's Staff
+				i(215753),	-- Gao's Kegbreaker (hc scenario cache)
 				i(215881),	-- Gustspinner's Staff
 				i(215647),	-- Ka'eng, Fang of Shadow
 				i(215706),	-- Klaxxi Ambershot
@@ -132,7 +133,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215648),	-- Ner'onok's Katar (hc scenario)
 				i(215956),	-- Ook's Hozen Cutter (hc scenario)
 				i(215985),	-- Satay's Greatsword
-				i(215739),	-- Shomi's Scepter (hc scenario)
 				i(215953),	-- Siege Captain's Blade
 				i(216580),	-- Skyrider's Shield (hc scenario)
 				i(215885),	-- Teachings of Shaohao
@@ -140,6 +140,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(215594),	-- Warbringer's Blade
 				i(215808),	-- Yak-Herder's Longspear (normal scenario)
 				i(215707),	-- Yan-Zhu's Rifle (hc scenario)
+				i(215809),	-- Yaungol Warspear
 			}),
 		}),
 		-- Scenario Maps
