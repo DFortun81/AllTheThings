@@ -695,7 +695,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(216432),	-- Acid-Spine Bonebreaker
+						i(215654),	-- Amun-Thoth, Sul's Spiritrender
 						i(216406),	-- Blade of the Sanguine Ritual
+						i(216594),	-- Bulwark of Twinned Despair
 						i(216460),	-- Caduceus of Pure Moods
 						i(216465),	-- Dinomancer's Spire
 						i(215771),	-- Jerthud, Hand of the Savior
@@ -715,6 +717,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215967),	-- Soulblade of the Storm
 						i(215888),	-- Soulwood Spire
 						i(216448),	-- Sphere of Arcing Lightning
+						i(216019),	-- Stormbreaker's Waraxe
 						i(216468),	-- Suen-Wo, Spire of the Rising Sun
 						i(216402),	-- Tia-Tia, the Spinning Star
 						i(216430),	-- Torall, the Emperor's Scepter

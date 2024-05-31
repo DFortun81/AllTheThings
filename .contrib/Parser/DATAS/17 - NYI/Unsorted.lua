@@ -5889,7 +5889,6 @@ root(ROOTS.Unsorted, {
 					i(215610),	-- Dreadpriest's Dagger
 					i(215616),	-- Pandaren Warknife
 					i(215622),	-- Imperial Longknife
-					i(215654),	-- Amun-Thoth, Sul's Spiritrender
 					i(215677),	-- Jinyu's Light
 					i(215686),	-- Eye of the Hydra
 					i(215687),	-- Eye of the Hydra
@@ -5911,7 +5910,6 @@ root(ROOTS.Unsorted, {
 					i(216008),	-- Necromantic Channel
 					i(216011),	-- Venomlord's Skull Wand
 					i(216012),	-- Venomlord's Skull Wand
-					i(216019),	-- Stormbreaker's Waraxe
 					i(216416),	-- Hozen Blade
 					i(216439),	-- Pandaren Book
 					i(216444),	-- Pandaren Ritual Fan
@@ -5947,7 +5945,6 @@ root(ROOTS.Unsorted, {
 					i(216591),	-- Tortos' Shell
 					i(216592),	-- Tortos' Shell
 					i(216593),	-- Bulwark of Twinned Despair
-					i(216594),	-- Bulwark of Twinned Despair
 					i(216597),	-- Eyes of the Doomed
 					i(216599),	-- Eyes of the Doomed
 					i(216613),	-- Seawatch Repeater
