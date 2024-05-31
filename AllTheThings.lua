@@ -11010,18 +11010,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			-- force update when showing the minilist
 			Callback(self.Update, self);
 		end
-		local function LocationTrigger(forceNewMap)
-			if app.InWorld and app.IsReady and self:IsVisible() then
-				-- app.PrintDebug("LocationTrigger-Callback")
-				if forceNewMap then
-					-- this allows minilist to rebuild itself
-					wipe(self.CurrentMaps)
-				end
-				AfterCombatOrDelayedCallback(self.RefreshLocation, 0.25);
-			end
-		end
-		app.LocationTrigger = LocationTrigger;
-		app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger);
 	end
 	if self:IsVisible() then
 		-- Update the mapID into the data for external reference in case not rebuilding
