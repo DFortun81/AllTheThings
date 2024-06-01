@@ -495,11 +495,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216559),	-- Steelskin, Qiang's Bulwark
 					i(215695),	-- Taoren, the Malignant (MSV HC)
 					i(215733),	-- Tihan, Scepter of the Sleeper
-					i(215999),	-- Torch of the Starkspark
-					i(215516),	-- Uroe, Harbinger of Fear
+					i(215999),	-- Torch of the Starspark
 					i(215845),	-- Waterspeaker's Staff (MSV HC)
 					i(215673),	-- Zephyrcall Censer (MSV HC / HoF HC)
-					i(215990),	-- Zerat, Soulburner's Greatsword
 				}),
 			})),
 			inst(317, {	-- Mogu'shan Vaults

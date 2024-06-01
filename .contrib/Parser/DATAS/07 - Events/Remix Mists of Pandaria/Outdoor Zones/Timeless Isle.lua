@@ -358,8 +358,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215761),	-- Saurok Smasher
 					i(215805),	-- Serpentguard Spear
 					i(210335),	-- Shado-Pan Dagger
+					i(215534),	-- Shado-Pan Longbow (wowhead)
 					i(215603),	-- Sha-Warped Slicer
 					i(215889),	-- Soulwood Spire
+					i(215960),	-- Tian Monastery Scimitar (wowhead)
 					i(215515),	-- Wallwatcher's Greataxe
 					i(215745),	-- Wasteland Basher
 					i(216576),	-- Wasteland Deflector

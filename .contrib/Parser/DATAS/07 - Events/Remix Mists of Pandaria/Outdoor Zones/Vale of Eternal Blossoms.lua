@@ -175,7 +175,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216571),	-- Tian Deflector
 					i(215959),	-- Tian Monastery Sword (drop)
 					i(215514),	-- Wallwatcher's Longaxe
-					i(215804),	-- Wallwatcher's Partisan (drop)
+					--i(215804),	-- Wallwatcher's Partisan (drop, not on wowhead)
 					i(215510),	-- Warbringer's Chopper
 					i(215594),	-- Warbringer's Blade
 					i(215489),	-- Wasteland Hacker

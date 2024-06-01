@@ -520,7 +520,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216429),	-- Torall, the Emperor's Scepter
 						i(215543),	-- Tortoiseshell Longbow
 						i(216590),	-- Tortos' Shell
-						i(215518),	-- Uroe, Harbringer of Fear
+						i(215518),	-- Uroe, Harbinger of Fear
 						i(216011),	-- Venomlord's Skull Wand
 						i(215774),	-- Zeeg's Ancient Kegbreaker
 						i(215992),	-- Zerat, Soulburner's Greatsword
@@ -725,8 +725,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216402),	-- Tia-Tia, the Spinning Star
 						i(216430),	-- Torall, the Emperor's Scepter
 						i(215544),	-- Tortoiseshell Longbow
+						i(215516),	-- Uroe, Harbinger of Fear
 						i(216009),	-- Venomlord's Skull Wand
 						i(215775),	-- Zeeg's Ancient Kegbreaker
+						i(215990),	-- Zerat, Soulburner's Greatsword
 					})),
 					e(827, {	-- Jin'rokh the Breaker
 						["crs"] = { 69465 },	-- Jin'rokh the Breaker

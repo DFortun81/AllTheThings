@@ -123,7 +123,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215619),	-- Pandaren Sai (wowhead)
 					i(215893),	-- Pilgrim's Staff (wowhead)
 					i(216530),	-- Protection of the Emperor (wowhead)
+					i(215761),	-- Saurok Smasher (wowhead)
+					i(215805),	-- Serpentguard Spear (wowhead)
+					i(215603),	-- Sha-Warped Slicer (wowhead)
+					i(215534),	-- Shado-Pan Longbow (wowhead)
+					i(215889),	-- Soulwood Spire (wowhead)
 					i(215960),	-- Tian Monastery Scimitar
+					i(215515),	-- Wallwatcher's Greataxe (wowhead)
+					i(215745),	-- Wasteland Basher (wowhead)
+					i(215869),	-- Waterweaver's Staff (wowhead)
+					i(215776),	-- Zeeg's Ancient Kegbreaker (wowhead)
 				}),
 			}),
 		},

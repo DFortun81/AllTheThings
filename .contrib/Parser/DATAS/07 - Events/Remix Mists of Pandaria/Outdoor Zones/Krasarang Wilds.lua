@@ -316,9 +316,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216474),	-- Temple Trainee's Sword (drop)
 					i(216571),	-- Tian Deflector
 					i(216470),	-- Tian Monastery Spire
+					i(215594),	-- Warbringer's Blade (wowhead)
 					i(215510),	-- Warbringer's Chopper (drop)
 					i(215489),	-- Wasteland Hacker
 					i(215782),	-- Wasteland Maul
+					i(215943),	-- Wasteland Scimitar (wowhead)
 					i(216003),	-- Waterweaver's Wand (wowhead)
 				}),
 			}),

@@ -151,11 +151,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215758),	-- Saurok Scepter
 					i(216572),	-- Shomi's Barrier (wowhead)
 					i(215590),	-- Shomi's Shanker
+					i(215601),	-- Spike of the Rikkitun (wowhead)
 					i(215866),	-- Staff of Focus (drop)
 					i(215743),	-- Sunsoul Smasher
+					i(215942),	-- Swordmistress' Edge (wowhead)
 					i(215957),	-- Tian Monastery Saber
 					i(215863),	-- Torch of Midnight
 					i(215700),	-- Trailseeker Longrifle (chest)
+					i(215946),	-- Valiant's Honorblade (wowhead)
 					i(215675),	-- Wakener's Lantern
 					i(215512),	-- Wallwatcher's Poleaxe
 					i(215495),	-- Yaungol Hatchet

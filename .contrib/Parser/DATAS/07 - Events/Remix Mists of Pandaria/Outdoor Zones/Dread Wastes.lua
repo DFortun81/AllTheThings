@@ -133,7 +133,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215649),	-- Pandaren Striker
 					i(215598),	-- Regal Slicer
 					i(215759),	-- Saurok Mace
+					i(215485),	-- Shomi's Hatchet (wowhead)
 					i(215739),	-- Shomi's Scepter
+					i(215781),	-- Sumprush Maul (wowhead)
 					i(215891),	-- Staff of Hidden Knowledge
 					i(210635),	-- Streamtalker Shield
 					i(215958),	-- Tian Monastery Edge
