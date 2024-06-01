@@ -5853,10 +5853,6 @@ root(ROOTS.Unsorted, {
 						-- Only in Ensemble?
 						i(214377),	-- Mantle of the Barbed Assassin
 					}),
-					filter(MAIL, {
-						------ NYI or only in Ensembles ------
-						i(220992),	-- Shirt of the Witch Doctor
-					}),
 				}),
 				filter(MISC, {
 					i(211932),	-- Cache of Infinite Treasure

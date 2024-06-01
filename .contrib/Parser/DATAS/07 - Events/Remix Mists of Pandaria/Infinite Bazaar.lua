@@ -1654,6 +1654,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				["crs"] = { 217051 }, 	-- Horos <Rare Collections>
 			}),
 			n(219013, {	-- Horos <Rare Collections>
+				------ Unobtainables ------
+				i(89205, {	-- Mini Mana Bomb Toy (TOY!)
+					["cost"] = {{"c", BRONZE, 500}},
+					["races"] = HORDE_ONLY,
+				}),
+				i(89196, {	-- Theramore Tabard
+					["cost"] = {{"c", BRONZE, 500}},
+					["races"] = ALLIANCE_ONLY,
+				}),
+
 				------ Still Obtainable ------
 				i(86589, {	-- Ai-Li's Skymirror
 					["cost"] = {{"c", BRONZE, 4950}},

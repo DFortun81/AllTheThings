@@ -79,6 +79,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 					["timeline"] = { ADDED_5_0_4 },
 					["groups"] = {
 						i(89196, {	-- Theramore Tabard
+							-- #if BEFORE 10.2.7
+							-- #if AFTER TWW
 							["OnUpdate"] = [[function(t)
 								if not t.e then
 									if _.CurrentCharacter.Achievements[7467] then
@@ -90,9 +92,13 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 									end
 								end
 							end]],
+							-- #endif
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
 						}),
 						i(89205, {	-- Mini Mana Bomb Toy (TOY!)
+							-- #if BEFORE 10.2.7
+							-- #if AFTER TWW
 							["OnUpdate"] = [[function(t)
 								if not t.e then
 									if _.CurrentCharacter.Achievements[7468] then
@@ -104,6 +110,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, {
 									end
 								end
 							end]],
+							-- #endif
+							-- #endif
 							["races"] = HORDE_ONLY,
 						}),
 					},
