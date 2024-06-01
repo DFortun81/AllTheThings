@@ -56,6 +56,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			i(220335),	-- Begrimed Legguards
 			i(220337),	-- Begrimed Greatbelt
 			i(220338),	-- Begrimed Vambraces
+			--wqs gear
+			i(224693),	-- Sedimentary Helm // The Ringing Deeps
 		}),
 		filter(TRINKET_F, {
 			i(224665),	-- Gem-Studded Pendant // Unsure if it is zone specific (Hallowfall) or generic xpac rewards

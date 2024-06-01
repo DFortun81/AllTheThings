@@ -16,6 +16,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				petbattle(q(82300, {	-- Major Malfunction
 					["coord"] = { 66.9, 58.1, THE_RINGING_DEEPS },
 				})),
+				q(82552, {	-- All Worked Up	// could be bonus objective
+					["coord"] = { 47.0, 20.5, THE_RINGING_DEEPS },	--but need more accurate coords from popup (big wq area)
+				}),
 				q(82523, {	-- Candle Kingbreaker
 					["coord"] = { 64.3, 33.6, THE_RINGING_DEEPS },
 				}),
@@ -36,6 +39,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["g"] = {
 						i(219468),	-- Mining Tools (QI!)
 					},
+				}),
+				q(83101, {	-- Reaching for Resources
+					["coord"] = { 55.2, 50.8, THE_RINGING_DEEPS },
+				}),
+				q(81811, {	-- Skyrider Racing - Cataract River Cruise
+					-- normal - 80240 / advanced - 80247 / reversed - 80253
+					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 				}),
 				q(81807, {	-- Skyrider Racing - Earthenworks Weave
 					-- normal - 80237 / advanced - 80244 / reversed - 80250

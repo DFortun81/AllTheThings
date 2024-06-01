@@ -1035,5 +1035,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time
 	--
 	q(82158)	-- Special Assignment: Lynx Rescue / unlock tracker
+	q(82161)	-- Special Assignment: Bombs from Behind / unlock tracker
 });
 --]]
