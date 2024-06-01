@@ -117,7 +117,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					i(215870),	-- Amberweaver's Rod
+					i(215980),	-- Binan Falchion (wowhead)
 					i(215945),	-- Binan Scimitar
+					i(215509),	-- Bloodseeker's Greataxe (wowhead)
 					i(215744),	-- Cloudfall Scepter
 					i(215867),	-- Diviner's Spire
 					i(215979),	-- Faded Forest Falchion

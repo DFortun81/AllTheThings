@@ -99,6 +99,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214805),	-- Shan'ze Warhelm
 				}),
 				n(WEAPONS, {
+					i(215870),	-- Amberweaver's Rod (wowhead)
+					i(215980),	-- Binan Falchion (wowhead)
 					i(215945),	-- Binan Scimitar
 					i(215509),	-- Bloodseeker's Greataxe
 					i(216575),	-- Darkhide Shield

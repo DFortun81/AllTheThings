@@ -320,9 +320,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214811),	-- Wallwatcher Sabatons
 				}),
 				n(WEAPONS, {
+					i(215644),	-- Amber Claw (wowhead)
 					i(215873),	-- Amberweaver's Staff
 					i(215746),	-- Bearheart's Basher
-					i(215793),	-- Bo-Ris, Spear of Night
+					i(215793),	-- Bo-Ris, Spear of Night (wowhead)
 					i(216004),	-- Blazecaster's Wand
 					i(215741),	-- Bloodseeker's Bonebreaker
 					i(216595),	-- Bulwark of Twinned Despair

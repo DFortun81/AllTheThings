@@ -96,6 +96,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214811),	-- Wallwatcher Sabatons
 				}),
 				n(WEAPONS, {
+					i(215644),	-- Amber Claw (wowhead)
+					i(215873),	-- Amberweaver's Staff (wowhead)
+					i(215746),	-- Bearheart's Basher (wowhead)
+					i(216004),	-- Blazecaster's Wand (wowhead)
+					i(215741),	-- Bloodseeker's Bonebreaker (wowhead)
+					i(215793),	-- Bo-Ris, Spear of Night (wowhead)
 					i(216601),	-- Eyes of the Doomed
 					i(215772),	-- Jerthud, Hand of the Savior
 					i(215703),	-- Pandaren Rifle

@@ -330,7 +330,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					i(215871),	-- Amberweaver's Conduit
 					i(210342),	-- Bataari Hacker
-					i(215980),	-- Binan Falchion
+					i(215980),	-- Binan Falchion (not listed on wowhead for this zone)
 					i(215641),	-- Claws of the Wakener
 					i(215558),	-- Cloudbender's Crossbow
 					i(215938),	-- Cloudfall Edge

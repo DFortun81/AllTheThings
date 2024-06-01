@@ -129,6 +129,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					i(215644),	-- Amber Claw
 					i(215873),	-- Amberweaver's Staff
+					i(215746),	-- Bearheart's Basher (wowhead)
+					i(216004),	-- Blazecaster's Wand (wowhead)
+					i(215741),	-- Bloodseeker's Bonebreaker (wowhead)
 					i(215681),	-- Crane's Beak Effigy
 					i(215948),	-- Darkhide Sword
 					i(216569),	-- Deflector of Orbiss
