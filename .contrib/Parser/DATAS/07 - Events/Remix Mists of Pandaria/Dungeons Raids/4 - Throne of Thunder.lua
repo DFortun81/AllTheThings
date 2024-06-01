@@ -212,7 +212,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214675),	-- Belt of the Witch Doctor
 							i(214678),	-- Boots of the Witch Doctor
 							i(214680),	-- Bracers of the Witch Doctor
-							i(220994),	-- Chainmail of the Witch Doctor
 							i(214676),	-- Gauntlets of the Witch Doctor
 							i(214679),	-- Hauberk of the Witch Doctor
 							i(214677),	-- Helm of the Witch Doctor
@@ -663,7 +662,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214668),	-- Helmet of the Witch Doctor
 							i(214672),	-- Legwraps of the Witch Doctor
 							i(214671),	-- Mantle of the Witch Doctor
-							i(220993),	-- Tunic of the Witch Doctor
 							i(214665),	-- Wristguards of the Witch Doctor
 						}),
 						filter(PLATE, {
