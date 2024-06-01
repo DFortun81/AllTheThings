@@ -602,5 +602,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	--
 	q(82157),	-- 'Special Assignment: Rise of the Colossals'	/ unlocking quest
 	q(82146),	-- 'Special Assignment: Cinderbree Surge'	/ unlocking quest
+	q(83069),	-- 'Special Assignment: Titanic Resurgence'	/ unlocking quest
 });
 ]]--

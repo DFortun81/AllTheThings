@@ -1789,6 +1789,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220277);	-- Carapace Fragment
 --i(220281);	-- Charged Fragments
 --i(220249);	-- Chipped Mandible
+--i(220254);	-- Chipped Molars
 --i(225815);	-- Chipped Opal Signet Ring
 --i(220256);	-- Clump of Rotting Detritus
 --i(220267);	-- Combustible Gland

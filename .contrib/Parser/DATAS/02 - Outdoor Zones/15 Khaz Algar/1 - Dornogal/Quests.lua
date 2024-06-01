@@ -71,11 +71,16 @@
 				["coord"] = { 46.7, 48.8, DORNOGAL },
 			}),
 			-- end
-			-- Dungeon quest
+			-- Dungeon quest, seems like once per week in different dungeon, but didn't have (w) mark in-game?
 			q(83458, {	-- Priory of the Sacred Flame
 				--["sourceQuests"] = { x },	-- ?
 				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 44.7, 47.2, DORNOGAL },
+				["coord"] = { 44.7, 47.2, DORNOGAL },	-- probably moved in new builds
+			}),
+			q(83465, {	-- Ara-Kara, City of Echoes
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 226623 },	-- Biergoth
+				["coord"] = { 46.7, 48.3, DORNOGAL },
 			}),
 			-- end
 			-- How Scandalous! (not sure when this one pop, but I think it wasn't here when I runing first time around here)
@@ -128,9 +133,61 @@
 				--["sourceQuests"] = { x },	-- ?
 				["isWeekly"] = true,
 				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
-				["coord"] = { 47.4, 44.44, DORNOGAL },
+				["coord"] = { 47.4, 44.4, DORNOGAL },
 			}),
-
+			q(82678, {	-- Archives: The First Disk
+				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
+				["coord"] = { 46.3, 49.3, DORNOGAL },
+				["g"] = {
+					c(3029),	-- Treasure Trove Key (x2)
+				},
+			}),
+			-- Weekly Events area?
+			q(83366, {	-- The World Awaits
+				["isWeekly"] = true,
+				["provider"] = { "n", 226919 },	-- Archivist Frithrun
+				["coord"] = { 46.5, 49.3, DORNOGAL },
+			}),
+			--
+			--This one is wrapper for other quests? Probably also will be fired after turn in 'actual' quests
+			--q(xx, {	-- The Call of the Worldsoul
+			--	["isWeekly"] = true,
+			--	["provider"] = { "n", 223875 },	-- Faerin Lothar
+			--	["coord"] = { 46.1, 49.6, DORNOGAL },
+			--}),
+			--actual quests from npc, could be more than this quests per week? new ATA like?
+			q(82452, {	-- Worldsoul: World Quests
+				["isWeekly"] = true,
+				["provider"] = { "n", 223875 },	-- Faerin Lothar
+				["coord"] = { 46.1, 49.6, DORNOGAL },
+				["g"] = {
+					c(3029),	-- Treasure Trove Key (x2)
+				},
+			}),
+			q(82483, {	-- Worldsoul: Spreading the Light
+				["isWeekly"] = true,
+				["provider"] = { "n", 223875 },	-- Faerin Lothar
+				["coord"] = { 46.1, 49.6, DORNOGAL },
+				["g"] = {
+					c(3029),	-- Treasure Trove Key (x2)
+				},
+			}),
+			q(82488, {	-- Worldsoul: Darkflame Cleft
+				["isWeekly"] = true,
+				["provider"] = { "n", 223875 },	-- Faerin Lothar
+				["coord"] = { 46.1, 49.6, DORNOGAL },
+				["g"] = {
+					c(3029),	-- Treasure Trove Key (x2)
+				},
+			}),
+			q(82512, {	-- Worldsoul: World Boss
+				["isWeekly"] = true,
+				["provider"] = { "n", 223875 },	-- Faerin Lothar
+				["coord"] = { 46.1, 49.6, DORNOGAL },
+				["g"] = {
+					c(3029),	-- Treasure Trove Key (x2)
+				},
+			}),
 		}),
 	}),
 })));
