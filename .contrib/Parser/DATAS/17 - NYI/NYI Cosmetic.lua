@@ -304,7 +304,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(210848),	-- Trader's Midnight Sarong
 				i(210859),	-- Trader's Plum Sarong
 				i(210862),	-- Trader's Snowy Sarong
-				i(210863),	-- Trader's Sunny Sarong
 			}),
 			n(WEAPONS, {
 				i(190875),	-- Chilled Touch of the Condemned
@@ -325,14 +324,12 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190090),	-- Dessicated Bouquet
 				i(212627),	-- Dueler's Azure Shoulder Cape
 				i(212622),	-- Dueler's Camo Shoulder Cape
-				i(212619),	-- Dueler's Carrot Shoulder Cape
 				i(212617),	-- Dueler's Crimson Shoulder Cape
 				i(212624),	-- Dueler's Deep Shoulder Cape
 				i(212620),	-- Dueler's Faded Shoulder Cape
 				i(212625),	-- Dueler's Grassy Shoulder Cape
 				i(212618),	-- Dueler's Plum Shoulder Cape
 				i(212615),	-- Dueler's Snowy Shoulder Cape
-				i(212614),	-- Dueler's Sunny Shoulder Cape
 				i(190893),	-- Jeweled Valkyrion Cape
 				i(190688),	-- Silvered Helm of Righteousness
 				i(212705),	-- Spring Reveler's Cornsilk Attire
@@ -384,10 +381,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190908),	-- Devourer's Skullscythe
 				i(213073),	-- Faded Floral Staff
 				i(190816),	-- Forgehand's "Stable" Fuel Cell
-				i(190849),	-- Forgemaster's Gavel
 				i(213107),	-- Gladiator's Ragged Greatsword
 				i(213106),	-- Gladiator's Serrated Greatsword
-				i(190860),	-- Initiate's Bo
 				i(213077),	-- Lavender Bow-quet
 				i(190822),	-- Mo'arg Enforcer's Halberd
 				i(213076),	-- Orchid Bow-quet

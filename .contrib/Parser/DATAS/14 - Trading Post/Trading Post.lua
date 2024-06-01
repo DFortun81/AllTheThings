@@ -1830,7 +1830,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 10.2.7.99999" } }, {
+		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_7 } }, { -- 10.2.7.54904
 			n(MONTHLY_REWARD, {
 				i(212613),	-- Wings of the Amber Monarch
 			}),
@@ -1947,6 +1947,118 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190844, {	-- Valarjar Champion's Greatsword
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+			}),
+		})),
+		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.99999" } }, {
+			n(MONTHLY_REWARD, {
+				i(220692),	-- X-treme Water Blaster Display (TOY!)
+			}),
+			filter(BATTLE_PETS, {
+				i(223145, {	-- Marrlok (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+			}),
+			filter(MOUNTS, {
+				i(221814, {	-- Pearlescent Goblin Wave Shredder (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 700}},
+				}),
+				i(23720, {	-- Riding Turtle (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 700}},
+				}),
+			}),
+			filter(TOYS, {
+				i(218112, {	-- Colorful Beach Chair (TOY!)
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(212524, {	-- Delicate Crimson Parasol (TOY!)
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+			}),
+			filter(COSMETIC, {
+				iensemble(223004, {	-- Arsenal: Blazing Felfire Armaments
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				iensemble(221542, {	-- Ensemble: Sunny Tropical Beachwear
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				iensemble(222961, {	-- Ensemble: Sunny Tropical Swimwear
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				i(220357, {	-- Water Blaster B.L.
+					["cost"] = {{"c", TRADERS_TENDER, 330}},
+				}),
+				i(221529, {	-- Tropical Sunrise Mrgl Floater
+					["cost"] = {{"c", TRADERS_TENDER, 220}},
+				}),
+				i(221834, {	-- Tropical Sunrise Sunshade
+					["cost"] = {{"c", TRADERS_TENDER, 220}},
+				}),
+				i(221829, {	-- Tropical Sunrise Halter Top
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(221525, {	-- Tropical Sunrise Shirt
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(221830, {	-- Tropical Sunrise Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(221526, {	-- Tropical Sunrise Trunks
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(221794, { -- Classic Carrot Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190849, { -- Forgemaster's Gavel
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(210863, { -- Trader's Sunny Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(212619, { -- Dueler's Carrot Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(212614, { -- Dueler's Sunny Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(221809, { -- Churning Sands Treads
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(221810, { -- Churning Sands Gloves
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(190860, { -- Initiate's Bo
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(221831, { -- Tropical Sunrise Beads
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(221832, { -- Tropical Sunrise Airy Sandals
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(221833, { -- Tropical Sunrise Sash
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(221527, { -- Tropical Sunrise Wristwraps
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(221528, { -- Tropical Sunrise Sandals
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(190689, {	-- Corrupted Bladefist
+					["cost"] = {{"c", TRADERS_TENDER, 525}},
+				}),
+				i(210866, {	-- Blademaster's Suntouched Stones
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				iensemble(202178, {	-- Ensemble: Vagabond's Carrot Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(202179, {	-- Ensemble: Wanderer's Carrot Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190205, {	-- Sharpened Shank
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
 				}),
 			}),
 		})),
@@ -2259,7 +2371,6 @@ root(ROOTS.NeverImplemented, {
 					i(210848),	-- Trader's Midnight Sarong
 					i(210859),	-- Trader's Plum Sarong
 					i(210862),	-- Trader's Snowy Sarong
-					i(210863),	-- Trader's Sunny Sarong
 				}),
 				n(WEAPONS, {
 					i(190875),	-- Chilled Touch of the Condemned
@@ -2276,14 +2387,12 @@ root(ROOTS.NeverImplemented, {
 					i(190090),	-- Dessicated Bouquet
 					i(212627),	-- Dueler's Azure Shoulder Cape
 					i(212622),	-- Dueler's Camo Shoulder Cape
-					i(212619),	-- Dueler's Carrot Shoulder Cape
 					i(212617),	-- Dueler's Crimson Shoulder Cape
 					i(212624),	-- Dueler's Deep Shoulder Cape
 					i(212620),	-- Dueler's Faded Shoulder Cape
 					i(212625),	-- Dueler's Grassy Shoulder Cape
 					i(212618),	-- Dueler's Plum Shoulder Cape
 					i(212615),	-- Dueler's Snowy Shoulder Cape
-					i(212614),	-- Dueler's Sunny Shoulder Cape
 					i(190893),	-- Jeweled Valkyrion Cape
 					i(190688),	-- Silvered Helm of Righteousness
 					i(212705),	-- Spring Reveler's Cornsilk Attire
@@ -2335,10 +2444,8 @@ root(ROOTS.NeverImplemented, {
 					i(190908),	-- Devourer's Skullscythe
 					i(213073),	-- Faded Floral Staff
 					i(190816),	-- Forgehand's "Stable" Fuel Cell
-					i(190849),	-- Forgemaster's Gavel
 					i(213107),	-- Gladiator's Ragged Greatsword
 					i(213106),	-- Gladiator's Serrated Greatsword
-					i(190860),	-- Initiate's Bo
 					i(213077),	-- Lavender Bow-quet
 					i(190822),	-- Mo'arg Enforcer's Halberd
 					i(213076),	-- Orchid Bow-quet

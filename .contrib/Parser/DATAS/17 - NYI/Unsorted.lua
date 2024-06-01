@@ -5587,12 +5587,10 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(224576),	-- Lil' Flameo (PET!)
 				i(223499),	-- Lil' Manny (PET!)
-				i(223145),	-- Marrlok (PET!)
 				i(223339),	-- Trishi (PET!)
 				i(223474),	-- Worgli the Apprehensive (PET!)
 			}),
 			filter(COSMETIC, {
-				i(220357),	-- Water Blaster B.L.
 				i(220655),	-- Water Blaster P.K.
 				i(220690),	-- Water Blaster P.R.
 				i(220691),	-- Water Blaster Y.L.
@@ -5655,59 +5653,29 @@ root(ROOTS.Unsorted, {
 				i(221522),	-- Black Tropical Wristwraps
 				i(221523),	-- Black Tropical Sandals
 				i(221524),	-- Black Tropical Floater
-				i(221525),	-- Blue Tropical Shirt
-				i(221526),	-- Blue Tropical Trunks
-				i(221527),	-- Blue Tropical Wristwraps
-				i(221528),	-- Blue Tropical Sandals
-				i(221529),	-- Blue Tropical Floater
 				i(221530),	-- Pink Tropical Shirt
 				i(221531),	-- Pink Tropical Trunks
 				i(221532),	-- Pink Tropical Wristwraps
 				i(221533),	-- Pink Tropical Sandals
 				i(221534),	-- Pink Tropical Floater
-				i(221535),	-- Yellow Tropical Shirt
-				i(221536),	-- Yellow Tropical Trunks
-				i(221537),	-- Yellow Tropical Wristwraps
-				i(221538),	-- Yellow Tropical Sandals
-				i(221539),	-- Yellow Tropical Floater
 				i(221540),	-- Ensemble: Black Tropical
 				i(221541),	-- Ensemble: Blue Tropical
-				i(221542),	-- Ensemble: Yellow Tropical
 				i(221543),	-- Ensemble: Pink Tropical
-				i(221794),	-- Classic Carrot Tabard
-				i(221809),	-- Churning Sands Treads
-				i(221810),	-- Churning Sands Gloves
 				i(221822),	-- Black Tropical Halter Top
 				i(221824),	-- Black Tropical Skirt
 				i(221825),	-- Black Tropical Beads
 				i(221826),	-- Black Tropical Airy Sandals
 				i(221827),	-- Black Tropical Sash
 				i(221828),	-- Black Tropical Sunshade
-				i(221829),	-- Blue Tropical Halter Top
-				i(221830),	-- Blue Tropical Skirt
-				i(221831),	-- Blue Tropical Beads
-				i(221832),	-- Blue Tropical Airy Sandals
-				i(221833),	-- Blue Tropical Sash
-				i(221834),	-- Blue Tropical Sunshade
 				i(221835),	-- Pink Tropical Halter Top
 				i(221836),	-- Pink Tropical Skirt
 				i(221837),	-- Pink Tropical Beads
 				i(221838),	-- Pink Tropical Airy Sandals
 				i(221839),	-- Pink Tropical Sash
 				i(221840),	-- Pink Tropical Sunshade
-				i(221841),	-- Yellow Tropical Halter Top
-				i(221842),	-- Yellow Tropical Skirt
-				i(221843),	-- Yellow Tropical Beads
-				i(221844),	-- Yellow Tropical Airy Sandals
-				i(221845),	-- Yellow Tropical Sash
-				i(221846),	-- Yellow Tropical Sunshade
 				i(221847),	-- Ensemble: Black Tropical Swimwear
 				i(222959),	-- Ensemble: Blue Tropical Swimwear
 				i(222960),	-- Ensemble: Pink Tropical Swimwear
-				i(222961),	-- Ensemble: Yellow Tropical Swimwear
-				i(223002),	-- Blazing Felfire Splitblade
-				i(223003),	-- Blazing Felfire Bulwark
-				i(223004),	-- Arsenal: Blazing Felfire Armaments
 				i(223165),	-- Vengeful Crusader's Helm
 				i(223166),	-- Deepsea Treasure Pack
 				i(223170),	-- Classic Deep Tabard
@@ -5798,7 +5766,6 @@ root(ROOTS.Unsorted, {
 				i(223482),	-- Set Keystone Level: 9
 			}),
 			filter(MOUNTS, {
-				i(221814),	-- Pearlescent Goblin Wave Shredder (MOUNT!) [Trading Post?]
 				i(224574),	-- Savage Ebony Battle Turtle (MOUNT!) [Trading Post?]
 				i(223471),	-- [PH] Alliance Wolf Mount Purple (MOUNT!)
 				i(223470),	-- [PH] Alliance Wolf Mount Red (MOUNT!)
@@ -5908,8 +5875,6 @@ root(ROOTS.Unsorted, {
 				}),
 			}),
 			filter(TOYS, {
-				i(218112),	-- Colorful Beach Chair (TOY!) [Trading Post?]
-				i(220692),	-- X-treme Water Blaster Display (TOY!) [Trading Post?]
 			}),
 			i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (DM!)
 			i(224270),	-- Tattered Technique: Certificate of Ownership
