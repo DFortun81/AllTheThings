@@ -144,8 +144,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215540),	-- Jinyu Shortbow (chest)
 					i(215747),	-- Mace of the Rikkitun
 					i(216537),	-- Mogu Lord's Deflector (wowhead)
+					i(216001),	-- Mountainsage Rod (wowhead)
 					i(215650),	-- Pandaren Claw (drop)
 					i(215616),	-- Pandaren Warknife (wowhead)
+					i(215595),	-- Saltscale Shanker (wowhead)
 					i(215758),	-- Saurok Scepter
 					i(216572),	-- Shomi's Barrier (wowhead)
 					i(215590),	-- Shomi's Shanker

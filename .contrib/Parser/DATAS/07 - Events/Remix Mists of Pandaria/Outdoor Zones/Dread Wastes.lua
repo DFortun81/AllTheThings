@@ -118,15 +118,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215622),	-- Imperial Longknife (wowhead)
 					i(215596),	-- Jadestone Dagger
 					i(215701),	-- Jadewatch Rifle (chest)
-					i(215772),	-- Jerthud, Hand of the Savior (either here or townlong)
+					i(215772),	-- Jerthud, Hand of the Savior
 					i(215541),	-- Jinyu Warbow (chest)
 					i(215988),	-- Jinyu Greatsword
 					i(215895),	-- Jinyu Rod
 					i(216536),	-- Ironwood Barrier
+					i(215533),	-- Marista Longbow (wowhead)
 					i(215950),	-- Mei's Sword
 					i(215639),	-- Mist Shaman's Knuckles
 					i(215939),	-- Mogu Aspirant's Blade
 					i(216538),	-- Mogu Lord's Bulwark
+					i(215559),	-- Mountainscaler Speargun (wowhead)
 					i(215617),	-- Pandaren Stabber
 					i(215649),	-- Pandaren Striker
 					i(215598),	-- Regal Slicer

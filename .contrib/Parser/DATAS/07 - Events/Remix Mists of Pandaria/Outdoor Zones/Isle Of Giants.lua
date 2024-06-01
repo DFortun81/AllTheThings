@@ -110,8 +110,18 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215944),	-- Harmonious Scimitar (wowhead)
 					i(215623),	-- Imperial Shortblade (wowhead)
 					i(215861),	-- Instructor's Spire (wowhead)
+					i(215511),	-- Jadestone Greataxe (wowhead)
 					i(215772),	-- Jerthud, Hand of the Savior
+					i(215897),	-- Jinyu Staff (wowhead)
+					i(215486),	-- Jinyu Waraxe (wowhead)
+					i(215982),	-- Marista Greatsword (wowhead)
+					i(215549),	-- Miracoran, the Dissonant Chord (wowhead)
+					i(215550),	-- Miracoran, the Dissonant Chord (wowhead)
+					i(215488),	-- Mountainscaler Hatchet (wowhead)
+					i(215597),	-- Mushan Slicer (wowhead)
 					i(215703),	-- Pandaren Rifle
+					i(215619),	-- Pandaren Sai (wowhead)
+					i(215893),	-- Pilgrim's Staff (wowhead)
 					i(216530),	-- Protection of the Emperor (wowhead)
 					i(215960),	-- Tian Monastery Scimitar
 				}),

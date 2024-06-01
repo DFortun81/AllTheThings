@@ -133,9 +133,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216416),	-- Hozen Blade (wowhead)
 					i(210640),	-- Icon of Hope
 					i(215596),	-- Jadestone Dagger (wowhead)
+					i(215701),	-- Jadewatch Rifle (wowhead)
 					i(215533),	-- Marista Longbow
 					i(215950),	-- Mei's Sword
 					i(215639),	-- Mist Shaman's Knuckles (drop)
+					i(215939),	-- Mogu Aspirant's Blade (wowhead)
 					i(215559),	-- Mountainscaler Speargun
 					i(216424),	-- Pandaren Breaker
 					i(216025),	-- Pandaren Cleaver

@@ -339,6 +339,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215623),	-- Imperial Shortblade
 					i(215861),	-- Instructor's Spire
 					i(216535),	-- Ironwood Bulwark
+					i(215511),	-- Jadestone Greataxe (wowhead)
 					i(215772),	-- Jerthud, Hand of the Savior
 					i(215897),	-- Jinyu Staff
 					i(215486),	-- Jinyu Waraxe
@@ -346,7 +347,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215549),	-- Miracoran, the Dissonant Chord
 					i(215550),	-- Miracoran, the Dissonant Chord (chest)
 					i(216540),	-- Mogu Lord's Shield
+					i(215488),	-- Mountainscaler Hatchet (wowhead)
 					i(215597),	-- Mushan Slicer
+					i(215703),	-- Pandaren Rifle (wowhead)
 					i(215619),	-- Pandaren Sai
 					i(215893),	-- Pilgrim's Staff
 					i(216530),	-- Protection of the Emperor (wowhead)

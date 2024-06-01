@@ -343,12 +343,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216535),	-- Ironwood Bulwark
 					i(215511),	-- Jadestone Greataxe
 					i(215772),	-- Jerthud, Hand of the Savior
-					i(215897),	-- Jinyu Staff (confirmed by Yuni)
+					i(215897),	-- Jinyu Staff
 					i(215486),	-- Jinyu Waraxe
 					i(215982),	-- Marista Greatsword
 					i(215549),	-- Miracoran, the Dissonant Chord
+					i(215550),	-- Miracoran, the Dissonant Chord (wowhead)
 					i(216540),	-- Mogu Lord's Shield
+					i(215488),	-- Mountainscaler Hatchet (wowhead)
 					i(215597),	-- Mushan Slicer
+					i(215703),	-- Pandaren Rifle (wowhead)
 					i(215619),	-- Pandaren Sai
 					i(215893),	-- Pilgrim's Staff
 					i(216530),	-- Protection of the Emperor (wowhead)

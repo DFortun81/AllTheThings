@@ -142,12 +142,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215944),	-- Harmonious Scimitar (wowhead)
 					i(216419),	-- Hozen Knife
 					i(215861),	-- Instructor's Spire (quest reward)
+					i(215511),	-- Jadestone Greataxe (wowhead)
 					i(215486),	-- Jinyu Waraxe
 					i(215488),	-- Mountainscaler Hatchet
 					i(215982),	-- Marista Greatsword
 					i(215597),	-- Mushan Slicer
 					i(216022),	-- Pandaren Axe
-					i(216424),	-- Pandaren Breaker
+					--i(216424),	-- Pandaren Breaker (not on wowhead)
 					i(216543),	-- Pandaren Bulwark
 					i(216445),	-- Pandaren Ceremonial Fan
 					i(216021),	-- Pandaren Hatchet

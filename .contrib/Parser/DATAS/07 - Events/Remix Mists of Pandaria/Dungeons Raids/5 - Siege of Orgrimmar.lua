@@ -761,11 +761,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215796),	-- Halberd of Inner Darkness
 						i(215471),	-- Haromm's Frozen Battleaxe
 						i(215526),	-- Hisek's Longbow
-						i(215717),	-- Kardi's Scepter
+						i(215717),	-- Kardris' Scepter
 						i(215915),	-- Kil'ruk's Hateful Blade
 						i(215691),	-- Kor'kron Heavy Rifle
 						i(215665),	-- Lucky Cricket Cage
-						i(215479),	-- Korven's Crestcent
+						i(215479),	-- Korven's Crescent
 						i(215719),	-- Mace of the Old Ones
 						i(215475),	-- Malkorok's Headtaker
 						i(215995),	-- Mistspinner's Channel
