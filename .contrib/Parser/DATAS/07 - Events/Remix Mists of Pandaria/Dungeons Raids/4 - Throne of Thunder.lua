@@ -308,6 +308,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216010),	-- Venomlord's Skull Wand
 						i(215961),	-- Qon's Iron Decree
 						i(215964),	-- Qon's Iron Decree
+						i(216589),	-- Tortos' Shell
 						i(215773),	-- Zeeg's Ancient Kegbreaker (ToT LFR (2nd wing))
 						i(215991),	-- Zerat, Soulburner's Greatsword
 					})),
@@ -494,7 +495,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216596),	-- Bulwark of Twinned Despair
 						i(216459),	-- Caduceus of Pure Moods
 						i(216464),	-- Dinomancer's Spire
-						i(215906),	-- Do-tharak, the Foebreaker
 						i(215562),	-- Durumu's Gaze
 						i(215688),	-- Eye of the Hydra
 						i(216598),	-- Eyes of the Doomed

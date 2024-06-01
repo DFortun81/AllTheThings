@@ -105,6 +105,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215509),	-- Bloodseeker's Greataxe
 					i(216575),	-- Darkhide Shield
 					i(215867),	-- Diviner's Spire
+					i(215979),	-- Faded Forest Falchion
 					i(210337),	-- Faded Forest Hatchet
 					i(215941),	-- Faded Forest Sword
 					i(215642),	-- Fangs of Despair
@@ -135,6 +136,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215958),	-- Tian Monastery Edge
 					i(215864),	-- Torch of Dawn (drop)
 					i(215513),	-- Wallwatcher's Axe
+					i(215804),	-- Wallwatcher's Partisan (drop)
 					i(215860),	-- Wasteland Staff
 					i(215496),	-- Yaungol Axe
 					i(216568),	-- Yaungol Bulwark

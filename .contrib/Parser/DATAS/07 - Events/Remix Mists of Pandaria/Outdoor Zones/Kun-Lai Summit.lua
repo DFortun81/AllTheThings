@@ -162,6 +162,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215603),	-- Sha-Warped Slicer
 					i(216473),	-- Tian Monastery Staff
 					i(216477),	-- Temple Trainee's Scimitar
+					i(216576),	-- Wasteland Deflector
 					i(215869),	-- Waterweaver's Staff
 				}),
 			}),

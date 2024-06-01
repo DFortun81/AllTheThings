@@ -319,6 +319,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215791),	-- Bo-Ris, Spear of Night
 					i(215840),	-- Brazier of the Eternal Empire
 					i(215556),	-- Crossbow of Forgotten Glory
+					i(215906),	-- Do-tharak, the Foebreaker
 					i(215482),	-- Elegion, the Star Cleaver
 					i(215529),	-- Fang Kung, Emperor's Legacy
 					i(215847),	-- Fearspeaker's Warstaff (Alex: double up into LFR, MSV LFR 2nd wing)

@@ -149,6 +149,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216476),	-- Temple Trainee's Edge
 					i(216472),	-- Tian Monastery Conduit
 					i(215804),	-- Wallwatcher's Partisan (scenario daily box opened on this map)
+					i(215860),	-- Wasteland Staff
 					i(216568),	-- Yaungol Bulwark
 				}),
 			}),

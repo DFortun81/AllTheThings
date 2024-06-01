@@ -5867,7 +5867,6 @@ root(ROOTS.Unsorted, {
 					i(216557),	-- Shield of the Fallen General
 					i(216562),	-- Steelskin, Qiang's Bulwark
 					i(216586),	-- Shield of the Gloaming
-					i(216589),	-- Tortos' Shell
 					i(216591),	-- Tortos' Shell
 					i(216593),	-- Bulwark of Twinned Despair
 					i(216597),	-- Eyes of the Doomed

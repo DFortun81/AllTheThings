@@ -120,11 +120,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					i(215871),	-- Amberweaver's Conduit
 					i(215870),	-- Amberweaver's Rod (drop)
+					i(210342),	-- Bataari Hacker (drop)
 					i(215980),	-- Binan Falchion (not listed on wowhead for this zone)
 					i(215558),	-- Cloudbender's Crossbow (chest)
 					i(215803),	-- Dragonguard's Glaive (drop)
 					i(216574),	-- Flamecaller's Bulwark (wowhead)
 					i(215679),	-- Golden Crane Rod (august celestials cache)
+					i(215780),	-- Hatred's Warmace (drop)
 					i(215890),	-- Hopespreader's Staff (drop)
 					i(215763),	-- Hozen Basher
 					i(215657),	-- Hozen Conduit

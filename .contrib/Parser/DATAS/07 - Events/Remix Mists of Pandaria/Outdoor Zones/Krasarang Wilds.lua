@@ -291,6 +291,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215865),	-- Fogspeaker Conduit
 					i(215702),	-- Howling Rifle
 					i(216417),	-- Hozen Shanker
+					i(215937),	-- Imperial Wind Blade (drop)
 					i(215740),	-- Jinyu Bonebreaker
 					i(215643),	-- Klaxxi Pincers
 					i(215532),	-- Mogu Warbow
@@ -303,13 +304,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216023),	-- Pandaren Hacker
 					i(216444),	-- Pandaren Ritual Fan
 					i(216422),	-- Pandaren Smasher
+					i(215951),	-- Sha-Blighted Sword (drop)
 					i(210634),	-- Shield of the Wakener
 					i(216613),	-- Seawatch Repeater (wowhead)
 					i(215802),	-- Spear of Feral Rage
 					i(215602),	-- Spiritbound Stabber
-					i(216474),	-- Temple Trainee's Sword
+					i(216573),	-- Spiritsage's Barrier (drop)
+					i(216474),	-- Temple Trainee's Sword (drop)
 					i(216571),	-- Tian Deflector
 					i(216470),	-- Tian Monastery Spire
+					i(215510),	-- Warbringer's Chopper (drop)
 					i(215489),	-- Wasteland Hacker
 					i(215782),	-- Wasteland Maul
 					i(216003),	-- Waterweaver's Wand (wowhead)
