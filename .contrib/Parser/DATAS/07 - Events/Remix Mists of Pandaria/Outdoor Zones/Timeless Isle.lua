@@ -353,6 +353,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215893),	-- Pilgrim's Staff
 					i(215761),	-- Saurok Smasher
 					i(215805),	-- Serpentguard Spear
+					i(210335),	-- Shado-Pan Dagger
 					i(215603),	-- Sha-Warped Slicer
 					i(215889),	-- Soulwood Spire
 					i(215515),	-- Wallwatcher's Greataxe

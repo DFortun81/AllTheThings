@@ -343,11 +343,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215830),	-- Rod of the Megantholithic Apparatus
 						i(215667),	-- Sha-Touched Globule
 						i(215921),	-- Shao-Tien Saber
+						i(216555),	-- Shield of the Fallen General
 						i(215723),	-- Siegecrafter's Forge Drill
 						i(215628),	-- Softfoot's Iron Claw
 						i(211161),	-- Sphere of Immerseus
 						i(210338),	-- Spire of Supremacy
 						i(210341),	-- Staff of Corrupted Waters
+						i(216546),	-- Visage of Dread
 						i(215501),	-- Xal'atoh, Malformed Image of Gorehowl
 						i(215909),	-- Xifeng, Longblade of the Guardian
 					})),

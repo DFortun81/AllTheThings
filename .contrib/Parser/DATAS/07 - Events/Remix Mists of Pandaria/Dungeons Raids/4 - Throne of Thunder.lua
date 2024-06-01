@@ -261,6 +261,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216463),	-- Dinomancer's Spire
 						i(215561),	-- Durumu's Gaze
 						i(215564),	-- Durumu's Gaze
+						i(215687),	-- Eye of the Hydra
 						i(215689),	-- Eye of the Hydra
 						i(216409),	-- Fyn's Dagger
 						i(216411),	-- Fyn's Dagger
@@ -301,6 +302,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216431),	-- Torall, the Emperor's Scepter (ToT LFR (1st wing))
 						i(215542),	-- Tortoiseshell Longbow (Sisters)
 						i(215545),	-- Tortoiseshell Longbow
+						i(216592),	-- Tortos' Shell
 						i(215517),	-- Uroe, Harbinger of Fear
 						i(215519),	-- Uroe, Harbinger of Fear
 						i(216010),	-- Venomlord's Skull Wand
@@ -520,6 +522,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215543),	-- Tortoiseshell Longbow
 						i(216590),	-- Tortos' Shell
 						i(215518),	-- Uroe, Harbringer of Fear
+						i(216011),	-- Venomlord's Skull Wand
 						i(215774),	-- Zeeg's Ancient Kegbreaker
 						i(215992),	-- Zerat, Soulburner's Greatsword
 					})),

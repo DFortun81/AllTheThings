@@ -349,9 +349,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215619),	-- Pandaren Sai
 					i(215893),	-- Pilgrim's Staff
 					i(215761),	-- Saurok Smasher
+					i(210335),	-- Shado-Pan Dagger
 					i(215603),	-- Sha-Warped Slicer
 					i(215805),	-- Serpentguard Spear
 					i(215889),	-- Soulwood Spire
+					i(215960),	-- Tian Monastery Scimitar
 					i(215515),	-- Wallwatcher's Greataxe
 					i(215745),	-- Wasteland Basher
 					i(216576),	-- Wasteland Deflector

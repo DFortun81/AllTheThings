@@ -297,11 +297,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215868),	-- Monastic Staff
 					i(215749),	-- Ordo Basher
 					i(216541),	-- Pandaren Barrier
+					i(216481),	-- Pandaren Greatsword
 					i(216023),	-- Pandaren Hacker
+					i(216444),	-- Pandaren Ritual Fan
 					i(216422),	-- Pandaren Smasher
 					i(210634),	-- Shield of the Wakener
 					i(215802),	-- Spear of Feral Rage
 					i(215602),	-- Spiritbound Stabber
+					i(216474),	-- Temple Trainee's Sword
 					i(216571),	-- Tian Deflector
 					i(216470),	-- Tian Monastery Spire
 					i(215489),	-- Wasteland Hacker

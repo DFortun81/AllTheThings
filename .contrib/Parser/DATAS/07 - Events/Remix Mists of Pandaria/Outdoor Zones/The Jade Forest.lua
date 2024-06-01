@@ -336,6 +336,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215938),	-- Cloudfall Edge
 					i(215949),	-- Crane Temple Sword
 					i(215803),	-- Dragonguard's Glaive
+					i(216567),	-- Dreadwood Bulwark
 					i(215859),	-- Faded Forest Staff
 					i(215679),	-- Golden Crane Rod
 					i(215738),	-- Grummle Mace
@@ -345,6 +346,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215658),	-- Hozen Effigy
 					i(215487),	-- Hozen Waraxe
 					i(215747),	-- Mace of the Rikkitun
+					i(216001),	-- Mountainsage Rod
 					i(210638),	-- Mushan Hewer
 					i(216423),	-- Pandaren Basher
 					i(216442),	-- Pandaren Decorative Fan

@@ -152,9 +152,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215947),	-- Inkgill Sword
 					i(215740),	-- Jinyu Bonebreaker
 					i(215989),	-- Jinyu Flamberge
+					i(215677),	-- Jinyu's Light
 					i(215539),	-- Jinyu Longbow
 					i(215896),	-- Jinyu Spire (drop)
 					i(215643),	-- Klaxxi Pincers (drop)
+					i(216539),	-- Mogu Lord's Barrier
 					i(215532),	-- Mogu Warbow
 					i(215868),	-- Monastic Staff
 					i(215749),	-- Ordo Basher (drop)
@@ -173,6 +175,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215804),	-- Wallwatcher's Partisan (drop)
 					i(215510),	-- Warbringer's Chopper
 					i(215594),	-- Warbringer's Blade
+					i(215489),	-- Wasteland Hacker
 					i(215782),	-- Wasteland Maul
 					i(215943),	-- Wasteland Scimitar
 					i(215494),	-- Yaungol Cleaver

@@ -5885,12 +5885,9 @@ root(ROOTS.Unsorted, {
 					i(215610),	-- Dreadpriest's Dagger
 					i(215616),	-- Pandaren Warknife
 					i(215622),	-- Imperial Longknife
-					i(215677),	-- Jinyu's Light
-					i(215687),	-- Eye of the Hydra
 					i(215699),	-- Grand Imperial Rifle
 					i(215710),	-- Roar of the Quillen
 					i(215722),	-- Mace of the Old Ones
-					i(215756),	-- Klaxxi Smasher
 					i(215810),	-- Warspear of Xuen
 					i(215877),	-- Cloudscorcher Staff
 					i(215902),	-- Klaxxi Scimitar
@@ -5899,15 +5896,12 @@ root(ROOTS.Unsorted, {
 					i(215914),	-- Kil'ruk's Hateful Blade
 					i(215923),	-- Shao-Tien Saber
 					i(215993),	-- Zerat, Soulburner's Greatsword
-					i(216001),	-- Mountainsage Rod
 					i(216002),	-- Grummle Rod
 					i(216003),	-- Waterweaver's Wand
 					i(216008),	-- Necromantic Channel
-					i(216011),	-- Venomlord's Skull Wand
 					i(216012),	-- Venomlord's Skull Wand
 					i(216416),	-- Hozen Blade
 					i(216439),	-- Pandaren Book
-					i(216444),	-- Pandaren Ritual Fan
 					i(216450),	-- Staff of the Monkey King
 					i(216451),	-- Quarterstaff of the Monkey King
 					i(216452),	-- Longstaff of the Monkey King
@@ -5916,20 +5910,14 @@ root(ROOTS.Unsorted, {
 					i(216455),	-- Pandaren Spire
 					i(216456),	-- Pandaren Staff
 					i(216457),	-- Pandaren Standard
-					i(216474),	-- Temple Trainee's Sword
 					i(216478),	-- Pandaren Flamberge
 					i(216480),	-- Pandaren Greatblade
-					i(216481),	-- Pandaren Greatsword
 					i(216530),	-- Protection of the Emperor
 					i(216534),	-- Ironwood Deflector
 					i(216537),	-- Mogu Lord's Deflector
-					i(216539),	-- Mogu Lord's Barrier
-					i(216546),	-- Visage of Dread
 					i(216553),	-- Norushen's Tower Shield
-					i(216555),	-- Shield of the Fallen General
 					i(216557),	-- Shield of the Fallen General
 					i(216562),	-- Steelskin, Qiang's Bulwark
-					i(216567),	-- Dreadwood Bulwark
 					i(216572),	-- Shomi's Barrier
 					i(216574),	-- Flamecaller's Bulwark
 					i(216579),	-- Shield of the Devourer
@@ -5938,7 +5926,6 @@ root(ROOTS.Unsorted, {
 					i(216586),	-- Shield of the Gloaming
 					i(216589),	-- Tortos' Shell
 					i(216591),	-- Tortos' Shell
-					i(216592),	-- Tortos' Shell
 					i(216593),	-- Bulwark of Twinned Despair
 					i(216597),	-- Eyes of the Doomed
 					i(216599),	-- Eyes of the Doomed

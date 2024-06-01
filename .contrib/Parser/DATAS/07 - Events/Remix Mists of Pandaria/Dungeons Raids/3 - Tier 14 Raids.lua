@@ -153,6 +153,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215528),	-- Fang Kung, Emperor's Legacy (MSV LFR / HoF LFR)
 					i(215531),	-- Fang Kung, Emperor's Legacy (MSV LFR / HoF LFR)
 					i(215847),	-- Fearspeaker's Warstaff (MSV LFR 2nd wing)
+					i(215850),	-- Fearspeaker's Warstaff (ToES LFR)
 					i(215636),	-- Fist of Shek'zeer (HoF LFR)
 					i(215727),	-- Galvanized Stormcrusher
 					i(215728),	-- Galvanized Stormcrusher (MSV LFR)
