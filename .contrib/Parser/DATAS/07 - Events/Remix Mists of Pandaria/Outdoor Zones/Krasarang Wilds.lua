@@ -48,7 +48,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					}
 				}),
-				ach(19891),		-- Campaign: Landfall
+				ach(19891, {		-- Campaign: Landfall
+					crit(65829, {
+						["_noautomation"] = true,
+						["_quests"] = { 32401 },	-- Breath of Darkest Shadow (A)
+					}),
+					crit(65830, {
+						["_noautomation"] = true,
+						["_quests"] = { 32399 },	-- Breath of Darkest Shadow (H)
+					}),
+				}),
 				ach(19918, {	-- Dominance Offensive [H]
 					["races"] = HORDE_ONLY,
 				}),
