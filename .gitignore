@@ -1,4 +1,6 @@
 .contrib/.builds/
+.contrib/.source/Spell Learned At/bin/
+.contrib/.tools/log.txt
 .contrib/Harvesters/RAW/
 .contrib/Harvesters/*.json
 .contrib/Parser/Parser.exe.config
@@ -6,6 +8,9 @@
 .contrib/Parser/Parser V2.exe.config
 .contrib/Parser/Parser V2.pdb
 .contrib/Debugging/
+.contrib/Harvesters/DBs/
+.contrib/Harvesters/*.log
+.contrib/Harvesters/*.bat
 .contrib/Harvesters/System.Net.Http.Formatting.xml
 .contrib/Harvesters/Blizzard API Harvester.pdb
 .contrib/Harvesters/Blizzard API Harvester.exe.config
@@ -18,27 +23,21 @@
 .contrib/Source Code/Parser/packages/
 .contrib/Harvesters/API.key
 .contrib/Parser/ATT.pdb
+.contrib/Parser/*.txt
 .contrib/Source Code/Blizzard API Harvester/bin/
 .contrib/Source Code/Classic Item Detector/bin/
-contrib/
 AllTheThings.iml
 .idea/workspace.xml
 .idea/modules.xml
 .idea/misc.xml
 .idea/inspectionProfiles/profiles_settings.xml
 icon.png
+log.txt
+*.log
 *.user
 .vs/
 obj/
 **/desktop.ini
 *.bak
-.contrib/.source/ATT Sync Tool/bin/x86/Debug/log.txt
-.contrib/Harvesters/DBs/
-.contrib/Harvesters/*.log
-.contrib/Harvesters/*.bat
 __pycache__
-.contrib/Parser/localizedObjects.txt
-.contrib/.tools/log.txt
 .venv
-.contrib/Parser/*.txt
-.contrib/.source/Spell Learned At/bin/

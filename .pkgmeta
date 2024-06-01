@@ -9,8 +9,9 @@ ignore: # Files and directories beginning with a dot (such as .git) are automati
   - _config.yml
   - setup.cfg
   - link_att.bat
-  - ptr_db
   - Link ATT to WoW.bat
+  - AllTheThings_Beta.legacytoc
+  - AllTheThings_PTR.legacytoc
 
 required-dependencies:
 
