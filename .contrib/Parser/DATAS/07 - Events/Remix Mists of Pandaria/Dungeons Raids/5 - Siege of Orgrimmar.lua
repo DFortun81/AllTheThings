@@ -868,15 +868,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213912),	-- Mitts of the Ternion Glory
 							i(213913),	-- Slippers of the Ternion Glory
 							i(213914),	-- Vestment of the Ternion Glory
-							-- PRIEST (shared with HC)
-							i(213899),	-- Raiment of the Ternion Glory
-							i(213900),	-- Treads of the Ternion Glory
-							i(213901),	-- Handwraps of the Ternion Glory
-							i(213902),	-- Cowl of the Ternion Glory
-							i(213903),	-- Pants of the Ternion Glory
-							i(213904),	-- Amice of the Ternion Glory
-							i(213905),	-- Belt of the Ternion Glory
-							i(213906),	-- Cuffs of the Ternion Glory
 							-- WARLOCK
 							i(213979),	-- Vestment of the Horned Nightmare
 							i(213980),	-- Slippers of the Horned Nightmare
@@ -886,6 +877,33 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213984),	-- Mantle of the Horned Nightmare
 							i(213985),	-- Sash of the Horned Nightmare
 							i(213986),	-- Wristwraps of the Horned Nightmare
+							-- MAGE (shared with HC)
+							i(213819),	-- Chronomancer Robe
+							i(213820),	-- Chronomancer Sandals
+							i(213821),	-- Chronomancer Gloves
+							i(213822),	-- Chronomancer Hood
+							i(213823),	-- Chronomancer Leggings
+							i(213824),	-- Chronomancer Shoulderpads
+							i(213825),	-- Chronomancer Cord
+							i(213826),	-- Chronomancer Bracers
+							-- PRIEST (shared with HC)
+							i(213899),	-- Raiment of the Ternion Glory
+							i(213900),	-- Treads of the Ternion Glory
+							i(213901),	-- Handwraps of the Ternion Glory
+							i(213902),	-- Cowl of the Ternion Glory
+							i(213903),	-- Pants of the Ternion Glory
+							i(213904),	-- Amice of the Ternion Glory
+							i(213905),	-- Belt of the Ternion Glory
+							i(213906),	-- Cuffs of the Ternion Glory
+							-- WARLOCK (shared with HC)
+							i(213963),	-- Robe of the Horned Nightmare
+							i(213964),	-- Sandals of the Horned Nightmare
+							i(213965),	-- Gloves of the Horned Nightmare
+							i(213966),	-- Hood of the Horned Nightmare
+							i(213967),	-- Leggings of the Horned Nightmare
+							i(213968),	-- Shoulderpads of the Horned Nightmare
+							i(213969),	-- Cord of the Horned Nightmare
+							i(213970),	-- Bracers of the Horned Nightmare
 						}),
 						filter(LEATHER, {
 							-- DRUID
@@ -915,6 +933,34 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214360),	-- Belt of the Barbed Assassin
 							i(214361),	-- Shoulderpads of the Barbed Assassin
 							i(214362),	-- Leggings of the Barbed Assassin
+							-- DRUID (shared with HC)
+							i(214198),	-- Legguards of the Shattered Vale
+							i(214199),	-- Spaulders of the Shattered Vale
+							i(214200),	-- Waistband of the Shattered Vale
+							i(214201),	-- Grips of the Shattered Vale
+							i(214202),	-- Cover of the Shattered Vale
+							i(214203),	-- Footguards of the Shattered Vale
+							i(214204),	-- Vest of the Shattered Vale
+							i(214205),	-- Bindings of the Shattered Vale
+							-- MONK (shared with HC)
+							i(214299),	-- Pants of Seven Sacred Seals
+							i(214300),	-- Mantle of Seven Sacred Seals
+							i(214301),	-- Cinch of Seven Sacred Seals
+							i(214302),	-- Handguards of Seven Sacred Seals
+							i(214303),	-- Cap of Seven Sacred Seals
+							i(214304),	-- Treads of Seven Sacred Seals
+							i(214305),	-- Jerkin of Seven Sacred Seals
+							i(214306),	-- Wraps of Seven Sacred Seals
+							-- ROGUE (shared with HC)
+							i(214371),	-- Wraps of the Barbed Assassin
+							i(214372),	-- Jerkin of the Barbed Assassin
+							i(214373),	-- Treads of the Barbed Assassin
+							i(214374),	-- Cap of the Barbed Assassin
+							i(214375),	-- Handguards of the Barbed Assassin
+							i(214376),	-- Cinch of the Barbed Assassin
+							-- Bugged
+							--i(214377),	-- Mantle of the Barbed Assassin
+							i(214378),	-- Pants of the Barbed Assassin
 						}),
 						filter(MAIL, {
 							-- HUNTER
@@ -935,6 +981,24 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214688),	-- Legguards of Celestial Harmony
 							i(214687),	-- Pauldrons of Celestial Harmony
 							i(214683),	-- Sabatons of Celestial Harmony
+							-- HUNTER (shared with HC)
+							i(214625), -- Leggings of the Unblinking Vigil
+							i(214626), -- Spaulders of the Unblinking Vigil
+							i(214627), -- Belt of the Unblinking Vigil
+							i(214628), -- Gauntlets of the Unblinking Vigil
+							i(214629), -- Helm of the Unblinking Vigil
+							i(214630), -- Boots of the Unblinking Vigil
+							i(214631), -- Hauberk of the Unblinking Vigil
+							i(214632), -- Bracers of the Unblinking Vigil
+							-- SHAMAN (shared with HC)
+							i(214702),	-- Belt of Celestial Harmony
+							i(214699),	-- Boots of Celestial Harmony
+							i(214697),	-- Bracers of Celestial Harmony
+							i(214701),	-- Gauntlets of Celestial Harmony
+							i(214698),	-- Hauberk of Celestial Harmony
+							i(214700),	-- Helm of Celestial Harmony
+							i(214704),	-- Leggings of Celestial Harmony
+							i(214703),	-- Spaulders of Celestial Harmony
 						}),
 						filter(PLATE, {
 							-- DEATH KNIGHT
@@ -964,6 +1028,33 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(215038),	-- Legplates of the Prehistoric Marauder
 							i(215039),	-- Vambraces of the Prehistoric Marauder
 							i(215040),	-- Warboots of the Prehistoric Marauder
+							-- DEATH KNIGHT (shared with HC)
+							i(214881),	-- Legguards of Cyclopean Dread
+							i(214882),	-- Pauldrons of Cyclopean Dread
+							i(214883),	-- Girdle of Cyclopean Dread
+							i(214884),	-- Gauntlets of Cyclopean Dread
+							i(214885),	-- Helm of Cyclopean Dread
+							i(214886),	-- Sabatons of Cyclopean Dread
+							i(214887),	-- Bracers of Cyclopean Dread
+							i(214888),	-- Breastplate of Cyclopean Dread
+							-- PALADIN (shared with HC)
+							i(214945),	-- Waistguard of Winged Triumph
+							i(214946),	-- Shoulderguards of Winged Triumph
+							i(214947),	-- Grasp of Winged Triumph
+							i(214948),	-- Chestguard of Winged Triumph
+							i(214949),	-- Warhelm of Winged Triumph
+							i(214950),	-- Greaves of Winged Triumph
+							i(214951),	-- Armguards of Winged Triumph
+							i(214952),	-- Greatboots of Winged Triumph
+							-- WARRIOR (shared with HC)
+							i(215017),	-- Greatboots of the Prehistoric Marauder
+							i(215018),	-- Armguards of the Prehistoric Marauder
+							i(215019),	-- Greaves of the Prehistoric Marauder
+							i(215020),	-- Warhelm of the Prehistoric Marauder
+							i(215021),	-- Chestguard of the Prehistoric Marauder
+							i(215022),	-- Handguards of the Prehistoric Marauder
+							i(215023),	-- Shoulderguards of the Prehistoric Marauder
+							i(215024),	-- Waistguard of the Prehistoric Marauder
 						}),
 					})),
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
