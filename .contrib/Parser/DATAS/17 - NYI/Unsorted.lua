@@ -5845,7 +5845,6 @@ root(ROOTS.Unsorted, {
 					i(215569),	-- Norushen's Dagger
 					i(215575),	-- Nazgrim's Shanker
 					i(215699),	-- Grand Imperial Rifle
-					i(215710),	-- Roar of the Quillen
 					i(215810),	-- Warspear of Xuen
 					i(215902),	-- Klaxxi Scimitar
 					i(215903),	-- Klaxxi Sword

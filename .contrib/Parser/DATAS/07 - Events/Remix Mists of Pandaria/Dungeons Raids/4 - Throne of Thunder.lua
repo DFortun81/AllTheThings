@@ -713,6 +713,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215624),	-- Megaera's Fang
 						i(215548),	-- Miracoran, the Dissonant Chord
 						i(215963),	-- Qon's Iron Decree
+						i(215710),	-- Roar of the Quillen
 						i(215813),	-- Shan-Dun, Breaker of Courage
 						i(216013),	-- Shellsplitter Battleaxe
 						i(216585),	-- Shield of the Gloaming
