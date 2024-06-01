@@ -128,9 +128,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215642),	-- Fangs of Despair
 					i(215748),	-- Fireblaze Mace
 					i(216002),	-- Grummle Rod (wowhead)
+					i(215600),	-- Grummle Shortblade (wowhead)
 					i(215676),	-- Hopebringer's Lantern
 					i(216416),	-- Hozen Blade (wowhead)
 					i(210640),	-- Icon of Hope
+					i(215596),	-- Jadestone Dagger (wowhead)
 					i(215533),	-- Marista Longbow
 					i(215950),	-- Mei's Sword
 					i(215639),	-- Mist Shaman's Knuckles (drop)

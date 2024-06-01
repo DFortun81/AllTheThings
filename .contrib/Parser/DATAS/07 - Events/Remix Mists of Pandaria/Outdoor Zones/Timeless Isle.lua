@@ -333,7 +333,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215862),	-- Engraved Spire
 					i(216600),	-- Eyes of the Doomed
 					i(216601),	-- Eyes of the Doomed
-					i(215560),	-- Faded Forest Launcher
 					i(215952),	-- Fear's Bite
 					i(215970),	-- Greatsword of the Iron Legion
 					i(215678),	-- Grummle Lantern

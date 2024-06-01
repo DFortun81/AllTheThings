@@ -143,6 +143,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215484),	-- Boggeo's Ceremonial Axe (wowhead)
 					i(215858),	-- Diviner's Staff (drop)
 					i(215742),	-- Faded Forest Crusher (drop)
+					i(215560),	-- Faded Forest Launcher (wowhead)
 					i(215865),	-- Fogspeaker Conduit
 					i(215680),	-- Hope's Effigy
 					i(215702),	-- Howling Rifle (drop)

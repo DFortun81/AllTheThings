@@ -102,8 +102,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216004),	-- Blazecaster's Wand (wowhead)
 					i(215741),	-- Bloodseeker's Bonebreaker (wowhead)
 					i(215793),	-- Bo-Ris, Spear of Night (wowhead)
+					i(215948),	-- Darkhide Sword (wowhead)
 					i(215862),	-- Engraved Spire
 					i(216601),	-- Eyes of the Doomed
+					i(215952),	-- Fear's Bite (wowhead)
+					i(215940),	-- Halcyon Blade (wowhead)
+					i(215944),	-- Harmonious Scimitar (wowhead)
+					i(215623),	-- Imperial Shortblade (wowhead)
+					i(215861),	-- Instructor's Spire (wowhead)
 					i(215772),	-- Jerthud, Hand of the Savior
 					i(215703),	-- Pandaren Rifle
 					i(216530),	-- Protection of the Emperor (wowhead)

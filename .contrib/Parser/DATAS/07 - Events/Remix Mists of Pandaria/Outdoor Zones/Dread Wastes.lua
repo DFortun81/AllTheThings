@@ -103,6 +103,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215980),	-- Binan Falchion (wowhead)
 					i(215945),	-- Binan Scimitar
 					i(215509),	-- Bloodseeker's Greataxe
+					i(215744),	-- Cloudfall Scepter (wowhead)
 					i(216575),	-- Darkhide Shield
 					i(215867),	-- Diviner's Spire
 					i(215979),	-- Faded Forest Falchion

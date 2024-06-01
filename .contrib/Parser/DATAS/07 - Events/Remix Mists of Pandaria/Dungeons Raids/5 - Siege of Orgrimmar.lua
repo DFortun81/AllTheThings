@@ -759,7 +759,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215778),	-- Gar'tok Might of the FaithFul
 						i(215973),	-- Greatsword of Fallen Pride
 						i(215796),	-- Halberd of Inner Darkness
-						i(215471),	-- Haromm's Frozen Battle Axe
+						i(215471),	-- Haromm's Frozen Battleaxe
 						i(215526),	-- Hisek's Longbow
 						i(215717),	-- Kardi's Scepter
 						i(215915),	-- Kil'ruk's Hateful Blade
