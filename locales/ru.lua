@@ -31,6 +31,7 @@ local L = app.L;
 	L.REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C, чтобы скопировать многострочный отчёт в буфер обмена)";
 	L.NOT_AVAILABLE_IN_PL = "Недоступно в Персональной добыче.";
 	L.MARKS_OF_HONOR_DESC = "Почётные знаки должны быть рассмотрены во всплывающем окне, чтобы видеть всё их 'Содержимое'.\n(Введите '/att' в чат и затем "..SHIFT_KEY_TEXT.." клик для ссылки на предмет)\n\n|cFFfe040fПосле покупки и использования Набора может потребоваться полностью выйти из игры и вручную обновить коллекцию (в таком порядке),\nчтобы корректно зарегистрировать все предметы.|r";
+	--TODO: L.MOP_REMIX_BRONZE = "Bronze must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the currency)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
 	L.ITEM_GIVES_REP = "Улучшает Репутацию с '";
 	L.COST = "Стоимость";
 	L.COST_DESC = "Содержит визуальную справку о предметах, необходимых для покупки или получения данной Штучки";
