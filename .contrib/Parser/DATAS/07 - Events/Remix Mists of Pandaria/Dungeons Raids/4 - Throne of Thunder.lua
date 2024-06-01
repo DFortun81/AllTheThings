@@ -141,13 +141,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(ARMOR, bubbleDown({ ["modID"] = 0 }, {
 						filter(CLOTH, {
 							-- PRIEST
-							--i(213876),	-- Belt of the Exorcist
-							i(213874),	-- Bracers of the Exorcist (confirmed on discord)
-							i(213873),	-- Cord of the Exorcist (confirmed on discord)
-							--i(213875),	-- Cuffs of the Exorcist
-							i(213869),	-- Gloves of the Exorcist (confirmed on discord)
+							i(213874),	-- Bracers of the Exorcist
+							i(213873),	-- Cord of the Exorcist
+							i(213875),	-- Cuffs of the Exorcist
+							i(213869),	-- Gloves of the Exorcist
 							i(213870),	-- Hood of the Exorcist
-							--i(213871),	-- Leggings of the Exorcist
+							i(213871),	-- Leggings of the Exorcist
 							i(213868),	-- Sandals of the Exorcist
 							i(213872),	-- Shoulderpads of the Exorcist
 							-- MAGE
