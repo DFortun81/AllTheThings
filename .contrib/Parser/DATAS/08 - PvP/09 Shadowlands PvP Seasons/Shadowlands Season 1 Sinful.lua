@@ -7,7 +7,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 	},{
 		["icon"] = "Interface\\Icons\\inv_shadebeastmount",
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
 				ach(14685),		-- Combatant: Shadowlands Season 1
 				ach(14686),		-- Challenger: Shadowlands Season 1
 				ach(14687),		-- Rival: Shadowlands Season 1
@@ -34,10 +34,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				}),
 				-- Fashion
 				ach(14831, {	-- I Live, I Die, I Queue Again
-					["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH }
+					["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0, ADDED_10_0_2_LAUNCH }
 				}),
 			})),
-			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
+			filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 } }, {
 				i(184014, {	-- Vicious War Spider [A] (MOUNT!)
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -48,7 +48,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			n(PVP_ASPIRANT, {
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
-					["g"] = bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
+					["g"] = bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 } }, {
 						iensemble(201878, {	-- Arsenal: Sinful Aspirant's Weapons
 							["cost"] = {{"i", MOH, 80}},
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
@@ -290,9 +290,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
-					["coord"] = { 36.0, 58.6, ORIBOS },
-					["g"] = bubbleDown({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 } }, {
+				n(168011, {	-- Zo'sorg <Master of Conflict>
+					["coord"] = { 35.0, 57.6, ORIBOS },
+					["g"] = bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 } }, {
 						iensemble(201882, {	-- Arsenal: Sinful Gladiator's Ardenweald Weapons
 							["cost"] = {{"i", MOH, 80}},
 							["timeline"] = { ADDED_10_0_2_LAUNCH },
@@ -754,8 +754,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					}),
 				}),
 			}),
-			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 }, ["modID"] = 45 }, {
-				filter(CLOAKS, {
+			n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_9_1_0 }, ["modID"] = 45 }, {
+				filter(BACK_F, {
 					i(175888),	-- Sinful Gladiator's Cloak
 					i(178353),	-- Sinful Gladiator's Drape
 					i(184311),	-- Sinful Gladiator's Greatcloak
@@ -854,7 +854,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				n(WEAPONS, {
 					n(KYRIAN, sharedData({["customCollect"] = { "SL_COV_KYR" }}, {
 						i(177851),	-- Sinful Gladiator's Ceremonial Sword
-						--i(177866)),	-- Sinful Gladiator's Chalice (Not ingame // Shared with Normal Pvp Gear // Gold 16.04.2021)
 						i(184549),	-- Sinful Gladiator's Dory
 						i(177846),	-- Sinful Gladiator's Gladius
 						i(180313),	-- Sinful Gladiator's Greatmallet
@@ -869,7 +868,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 						i(184547),	-- Sinful Gladiator's Xiphos
 					})),
 					n(NECROLORD, sharedData({["customCollect"] = { "SL_COV_NEC" }}, {
-						-- TODO: this covenant only has 12 items listed, venthyr+kyrian have 14.  do they just have 2 fewer?
 						i(183446),	-- Sinful Gladiator's Cleaver
 						i(183439),	-- Sinful Gladiator's Crystal
 						i(183449),	-- Sinful Gladiator's Gavel
@@ -884,7 +882,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 						i(183441),	-- Sinful Gladiator's Warglaive
 					})),
 					n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {
-						-- TODO: this covenant only has 12 items listed, venthyr+kyrian have 14.  do they just have 2 fewer?
 						i(179543),	-- Sinful Gladiator's Bludgeon
 						i(179609),	-- Sinful Gladiator's Bulwark
 						i(180261),	-- Sinful Gladiator's Edge
