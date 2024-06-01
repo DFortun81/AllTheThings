@@ -868,6 +868,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(213912),	-- Mitts of the Ternion Glory
 							i(213913),	-- Slippers of the Ternion Glory
 							i(213914),	-- Vestment of the Ternion Glory
+							-- PRIEST (shared with HC)
+							i(213899),	-- Raiment of the Ternion Glory
+							i(213900),	-- Treads of the Ternion Glory
+							i(213901),	-- Handwraps of the Ternion Glory
+							i(213902),	-- Cowl of the Ternion Glory
+							i(213903),	-- Pants of the Ternion Glory
+							i(213904),	-- Amice of the Ternion Glory
+							i(213905),	-- Belt of the Ternion Glory
+							i(213906),	-- Cuffs of the Ternion Glory
 							-- WARLOCK
 							i(213979),	-- Vestment of the Horned Nightmare
 							i(213980),	-- Slippers of the Horned Nightmare
