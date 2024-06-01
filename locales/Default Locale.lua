@@ -9,7 +9,7 @@ local L = setmetatable({
 	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
-	
+
 	-- These are populated by the LocalizationDB.
 	EVENT_REMAPPING = {};
 	EVENT_TIMERUNNING_SEASONS = {};
@@ -19,10 +19,10 @@ local L = setmetatable({
 	HEADER_LORE = {};
 	HEADER_NAMES = {};
 	QUEST_NAMES = {};
-	
+
 	-- If there is a name provided in the table above, it will prefer that name association.
 	MAP_ID_TO_ZONE_TEXT = {};
-	
+
 	-- Binding Localizations
 	TOGGLE_ACCOUNT_MODE = "Toggle Account Mode";
 	TOGGLE_COMPLETIONIST_MODE = "Toggle Completionist Mode";
@@ -42,15 +42,17 @@ local L = setmetatable({
 	TOGGLE_RANDOM = "Toggle ATT Random";
 	REROLL_RANDOM = "Reroll the Random Selection";
 	MODULES = "Modules";
-	
+
 	-- Features
 	NEARBY = "Nearby:";
-	
+
 	-- Tooltips
 	AND_OTHER_SOURCES = "And %s other sources...";
 	FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.." click) to properly be collected.";
+	RELOG_REQUIRED = "After using this, it is typically required to logout & login to collect all the items correctly on the game servers.";
 	RACE_LOCKED = "Race Locked";
-	
+	ENSEMBLE_LEARNED = "This Ensemble has already been used by one of your Characters";
+
 	-- Windows
 	HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers";
 	HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "These are Achievements which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
@@ -61,7 +63,7 @@ local L = setmetatable({
 	UNSORTED = "Unsorted";
 	UNSORTED_DESC = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
 	UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
-	
+
 	-- Crieve tested all professions in non-english locales and the following skills were not detected without these.
 	SPELL_NAME_TO_SPELL_ID = {
 		-- Riding
@@ -85,11 +87,11 @@ local L = setmetatable({
 		["약초채집"] = 2366,
 		["草药学"] = 2366,
 		["草藥學"] = 2366,
-		
+
 		-- French (Classic Era)
 		["Ingénierie"] = 4036,    -- Engineering
 		["Secourisme"] = 3273,    -- First Aid
-		
+
 		-- Spanish (Classic Era)
 		["Costura"] = 3908,	-- Tailoring
 		["Marroquinería"] = 2108,    -- Leatherworking
@@ -110,7 +112,7 @@ L.SETTINGS_MENU = {
 	-- Common Header
 		SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
 		SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by "..SHIFT_KEY_TEXT.." clicking on an ATT window.";
-		
+
 	-- About Page
 		ABOUT_PAGE = "About";
 		ABOUT_TOP = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
@@ -128,7 +130,7 @@ L.SETTINGS_MENU = {
 		TWITCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
 		WAGO_BUTTON_LABEL = "Wago.io";
 		WAGO_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
-	
+
 	-- General Page
 		DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
 		DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
@@ -146,7 +148,7 @@ L.SETTINGS_MENU = {
 		ONLY_RWP = "Only RWP";
 		ONLY_RWP_TOOLTIP = "Enable this option to only track transmog that get removed from the game in the future. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.";
 		UNOFFICIAL_SUPPORT_TOOLTIP = "NOTE: At this time, official support is not provided by WoW's API, but ATT can track items or quest completion to make it functional in the addon.";
-		
+
 		-- General Content
 		GENERAL_CONTENT = "General Content";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Show All Trackable Things";
@@ -171,7 +173,7 @@ L.SETTINGS_MENU = {
 		SHOW_PVP_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.";
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "All Learnable Quest Rewards";
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
-		
+
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Account-Wide|R by default.";
 		TRACK_ACC_WIDE = app.ccColors.Account .. "Track Account-Wide|R";
@@ -210,7 +212,7 @@ L.SETTINGS_MENU = {
 		TITLES_CHECKBOX_TOOLTIP = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
 		TOYS_CHECKBOX = TOY_BOX;
 		TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!";
-		
+
 		-- Expansion Things
 		EXPANSION_THINGS_LABEL = "Expansion Things";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Azerite Essences";
@@ -225,11 +227,11 @@ L.SETTINGS_MENU = {
 		RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Runecarving Powers.";
 		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conduits";
 		SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Conduits.";
-		
+
 		-- TODO: Crieve doesn't think this one is necessary, going to investigate later. (A lot of these things could be classified as non-profession recipes, when the profession checkboxes are added, this could be a simple "Character" checkbox in that context instead of a new class)
 		CHARACTERUNLOCKS_CHECKBOX = "Character Unlocks";
 		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Enable this option to track Character Unlocks. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
-		
+
 		-- Account-Wide Checkboxes
 		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Achievement tracking is usually Account-Wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
 		ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
@@ -246,8 +248,8 @@ L.SETTINGS_MENU = {
 		ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "Reputations are now tracked Account-Wide in Blizzard's database for achievements, so turning this on may be a good idea.";
 		ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Enable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
 		ACCOUNT_WIDE_TITLES_TOOLTIP = "Most titles are tracked Account-Wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
-		
-	
+
+
 	-- General: Filters Page
 		ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
@@ -257,10 +259,10 @@ L.SETTINGS_MENU = {
 		ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once.";
 		UNCHECK_ALL_BUTTON = NONE;
 		UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all options at once.";
-	
+
 	-- General: Phases Page
 	-- Classic Only, fully dynamic from within parser.
-	
+
 	-- General: Unobtainables Page
 		UNOBTAINABLES_PAGE = "Unobtainables";
 		UNOBTAINABLE_LABEL = "Unobtainable Content";
@@ -269,7 +271,7 @@ L.SETTINGS_MENU = {
 		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 		-- AVAILABILITY_CONDITIONS [These are defined in a different section]
 		-- CUSTOM_COLLECTS_REASONS [These are defined in a different section]
-	
+
 	-- Interface Page
 		INTERFACE_PAGE = UIOPTIONS_MENU;
 		TOOLTIP_LABEL = "Tooltips";
@@ -328,7 +330,7 @@ L.SETTINGS_MENU = {
 		FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 		WITH_WRAPPING_CHECKBOX = "Allow Wrapping";
 		WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.";
-		
+
 		BEHAVIOR_LABEL = "List Behavior";
 		MAIN_LIST_SLIDER_LABEL = "Main List Scale";
 		MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
@@ -365,7 +367,7 @@ L.SETTINGS_MENU = {
 		DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
 		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Applied when Generated|r";
 		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
-	
+
 	-- Interface: Accessibility Page
 		ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
 		ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
@@ -381,7 +383,7 @@ L.SETTINGS_MENU = {
 		RESET_TOOLTIP = "Revert to default settings.";
 		CLASS_BORDER = "Use Class Color For Border";
 		CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
-	
+
 	-- Interface: Information Page
 		ACHIEVEMENT_ID = "Achievement ID";
 		ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
@@ -389,10 +391,10 @@ L.SETTINGS_MENU = {
 		READDED_WITH_PATCH_CLASSIC_FORMAT = "This gets readded with patch %s";
 		REMOVED_WITH_PATCH_CLASSIC_FORMAT = "This gets removed with patch %s";
 		WAS_ADDED_WITH_PATCH_CLASSIC_FORMAT = "This was added with patch %s";
-	
+
 	-- Features Page
 		FEATURES_PAGE = FEATURES_LABEL;
-	
+
 	-- Features: Audio Page
 		CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
 		AUDIO_CHANNEL = "Audio Channel";
@@ -410,7 +412,7 @@ L.SETTINGS_MENU = {
 		WARN_REMOVED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
 		SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
 		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
-	
+
 	-- Features: Reporting Page
 		REPORTING_LABEL = "Reporting";
 		REPORT_COLLECTED_THINGS_CHECKBOX = "Report Collected Things";
@@ -437,18 +439,18 @@ L.SETTINGS_MENU = {
 		REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to flash the taskbar when nearby content is detected.";
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Play a Sound Effect";
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to also play a notification sound effect when nearby content is detected.";
-	
+
 	-- Features: Sync Page
 	-- Retail Only, deprecated.
 		SYNC_PAGE = "Sync";
 		ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
 		AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
 		AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
-	
+
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
 		WINDOWS_PAGE = "Windows";
-	
+
 	-- Profiles Page
 		PROFILES_PAGE = "Profiles";
 		PROFILE = "Profile";
