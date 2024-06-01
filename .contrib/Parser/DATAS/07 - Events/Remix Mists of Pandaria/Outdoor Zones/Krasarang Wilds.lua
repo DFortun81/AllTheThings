@@ -295,13 +295,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215643),	-- Klaxxi Pincers
 					i(215532),	-- Mogu Warbow
 					i(215868),	-- Monastic Staff
+					i(215599),	-- Mountainscaler Slicer (wowhead)
 					i(215749),	-- Ordo Basher
 					i(216541),	-- Pandaren Barrier
+					i(216439),	-- Pandaren Book (wowhead)
 					i(216481),	-- Pandaren Greatsword
 					i(216023),	-- Pandaren Hacker
 					i(216444),	-- Pandaren Ritual Fan
 					i(216422),	-- Pandaren Smasher
 					i(210634),	-- Shield of the Wakener
+					i(216613),	-- Seawatch Repeater (wowhead)
 					i(215802),	-- Spear of Feral Rage
 					i(215602),	-- Spiritbound Stabber
 					i(216474),	-- Temple Trainee's Sword
@@ -309,6 +312,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216470),	-- Tian Monastery Spire
 					i(215489),	-- Wasteland Hacker
 					i(215782),	-- Wasteland Maul
+					i(216003),	-- Waterweaver's Wand (wowhead)
 				}),
 			}),
 		},

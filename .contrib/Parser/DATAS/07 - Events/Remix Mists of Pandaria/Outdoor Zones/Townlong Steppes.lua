@@ -123,18 +123,23 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215980),	-- Binan Falchion (not listed on wowhead for this zone)
 					i(215558),	-- Cloudbender's Crossbow (chest)
 					i(215803),	-- Dragonguard's Glaive (drop)
+					i(216574),	-- Flamecaller's Bulwark (wowhead)
 					i(215679),	-- Golden Crane Rod (august celestials cache)
 					i(215890),	-- Hopespreader's Staff (drop)
 					i(215763),	-- Hozen Basher
 					i(215657),	-- Hozen Conduit
 					i(215621),	-- Imperial Warknife
+					i(216534),	-- Ironwood Deflector (wowhead)
 					i(216533),	-- Ironwood Shield
 					i(215894),	-- Jinyu Conduit
 					i(215987),	-- Jinyu Greatblade
 					i(215540),	-- Jinyu Shortbow (chest)
 					i(215747),	-- Mace of the Rikkitun
+					i(216537),	-- Mogu Lord's Deflector (wowhead)
 					i(215650),	-- Pandaren Claw (drop)
+					i(215616),	-- Pandaren Warknife (wowhead)
 					i(215758),	-- Saurok Scepter
+					i(216572),	-- Shomi's Barrier (wowhead)
 					i(215590),	-- Shomi's Shanker
 					i(215866),	-- Staff of Focus (drop)
 					i(215743),	-- Sunsoul Smasher

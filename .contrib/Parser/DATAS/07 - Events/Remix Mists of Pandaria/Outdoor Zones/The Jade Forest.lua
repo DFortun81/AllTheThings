@@ -338,6 +338,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215803),	-- Dragonguard's Glaive
 					i(216567),	-- Dreadwood Bulwark
 					i(215859),	-- Faded Forest Staff
+					i(216574),	-- Flamecaller's Bulwark (wowhead)
 					i(215679),	-- Golden Crane Rod
 					i(215738),	-- Grummle Mace
 					i(215780),	-- Hatred's Warmace
@@ -357,6 +358,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(211149),	-- Rikkitun Warbow
 					i(215595),	-- Saltscale Shanker
 					i(216611),	-- Seawatch Speargun
+					i(216572),	-- Shomi's Barrier (wowhead)
 					i(215590),	-- Shomi's Shanker (August Celestials reward box)
 					i(215601),	-- Spike of the Rikkitun
 					i(215866),	-- Staff of Focus

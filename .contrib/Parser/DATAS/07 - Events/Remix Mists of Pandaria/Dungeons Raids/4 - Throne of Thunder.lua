@@ -703,6 +703,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216594),	-- Bulwark of Twinned Despair
 						i(216460),	-- Caduceus of Pure Moods
 						i(216465),	-- Dinomancer's Spire
+						i(215563),	-- Durumu's Gaze (wowhead)
 						i(215686),	-- Eye of the Hydra
 						i(215771),	-- Jerthud, Hand of the Savior
 						i(216408),	-- Fyn's Dagger

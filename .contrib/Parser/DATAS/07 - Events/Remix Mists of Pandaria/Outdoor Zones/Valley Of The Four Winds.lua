@@ -127,7 +127,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215941),	-- Faded Forest Sword
 					i(215642),	-- Fangs of Despair
 					i(215748),	-- Fireblaze Mace
+					i(216002),	-- Grummle Rod (wowhead)
 					i(215676),	-- Hopebringer's Lantern
+					i(216416),	-- Hozen Blade (wowhead)
 					i(210640),	-- Icon of Hope
 					i(215533),	-- Marista Longbow
 					i(215950),	-- Mei's Sword
@@ -136,6 +138,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216424),	-- Pandaren Breaker
 					i(216025),	-- Pandaren Cleaver
 					i(216545),	-- Pandaren Deflector
+					i(216480),	-- Pandaren Greatblade (wowhead)
 					i(216441),	-- Pandaren Manual
 					i(216443),	-- Pandaren Ornate Fan (drop)
 					i(215598),	-- Regal Slicer

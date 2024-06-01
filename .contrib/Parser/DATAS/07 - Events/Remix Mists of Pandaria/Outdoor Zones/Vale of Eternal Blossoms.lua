@@ -160,6 +160,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216539),	-- Mogu Lord's Barrier
 					i(215532),	-- Mogu Warbow
 					i(215868),	-- Monastic Staff
+					i(215599),	-- Mountainscaler Slicer (wowhead)
 					i(215749),	-- Ordo Basher (drop)
 					i(215651),	-- Pandaren Fist
 					i(215618),	-- Pandaren Triblade
@@ -179,6 +180,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215489),	-- Wasteland Hacker
 					i(215782),	-- Wasteland Maul
 					i(215943),	-- Wasteland Scimitar
+					i(216003),	-- Waterweaver's Wand (wowhead)
 					i(215494),	-- Yaungol Cleaver
 				}),
 			}),

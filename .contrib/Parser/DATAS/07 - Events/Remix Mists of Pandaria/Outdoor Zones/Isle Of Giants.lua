@@ -105,6 +105,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216601),	-- Eyes of the Doomed
 					i(215772),	-- Jerthud, Hand of the Savior
 					i(215703),	-- Pandaren Rifle
+					i(216530),	-- Protection of the Emperor (wowhead)
 					i(215960),	-- Tian Monastery Scimitar
 				}),
 			}),

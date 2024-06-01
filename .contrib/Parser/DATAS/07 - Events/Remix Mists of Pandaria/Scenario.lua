@@ -116,8 +116,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215880),	-- Darkstaff of Ruin
 					i(215537),	-- Dawnwatcher's Warbow
 					i(216007),	-- Deathspeaker Channel
+					i(215610),	-- Dreadpriest's Dagger (wowhead)
 					i(215785),	-- Fangcracker Maul
 					i(215884),	-- Firedancer's Staff
+					i(215606),	-- Firescribe Slicer (wowhead)
 					i(215647),	-- Ka'eng, Fang of Shadow
 					i(215706),	-- Klaxxi Ambershot
 					i(215685),	-- Klaxxi Channeling Fork
@@ -125,6 +127,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215756),	-- Klaxxi Smasher
 					i(215876),	-- Mistdancer's Rod
 					i(215985),	-- Satay's Greatsword
+					i(216579),	-- Shield of the Devourer (wowhead)
+					i(216583),	-- Shield of the Protectorate (wowhead)
 					i(215953),	-- Siege Captain's Blade
 					i(215808),	-- Yak-Herder's Longspear
 				}),
@@ -132,13 +136,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			d(DIFFICULTY.DUNGEON.HEROIC, bubbleDown({ ["modID"] = 0 }, {
 				n(WEAPONS, {
 					i(215615),	-- Amber Blade
+					i(216584),	-- Barrier of the Protectorate (wowhead)
 					i(215986),	-- Blade of Broken Chains
 					i(215757),	-- Carapace Crusher
 					i(215607),	-- Ceremonial Spike
+					i(215877),	-- Cloudscorcher Staff (wowhead)
 					i(215753),	-- Gao's Kegbreaker
 					i(215881),	-- Gustspinner's Staff
 					i(215786),	-- Lerah's Maul
 					i(215611),	-- Lightdrinker Dagger
+					i(216008),	-- Necromantic Channel (wowhead)
 					i(215648),	-- Ner'onok's Katar
 					i(215956),	-- Ook's Hozen Cutter
 					i(215493),	-- Scalebreaker Battleaxe

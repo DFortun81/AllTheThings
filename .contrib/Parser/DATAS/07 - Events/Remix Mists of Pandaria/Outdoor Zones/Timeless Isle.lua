@@ -352,6 +352,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215597),	-- Mushan Slicer
 					i(215619),	-- Pandaren Sai
 					i(215893),	-- Pilgrim's Staff
+					i(216530),	-- Protection of the Emperor (wowhead)
 					i(215761),	-- Saurok Smasher
 					i(215805),	-- Serpentguard Spear
 					i(210335),	-- Shado-Pan Dagger

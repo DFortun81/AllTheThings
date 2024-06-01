@@ -5870,38 +5870,23 @@ root(ROOTS.Unsorted, {
 				n(WEAPONS, {
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
 					i(215523),	-- Dagryn's Longbow
-					i(215539),	-- Jinyu Longbow
 					i(215553),	-- Death Lotus Repeater
-					i(215563),	-- Durumu's Gaze
 					i(215565),	-- Jinyu Slasher
 					i(215566),	-- Jinyu Blade
 					i(215567),	-- Jinyu Poker
 					i(215568),	-- Jinyu Dagger
 					i(215569),	-- Norushen's Dagger
 					i(215575),	-- Nazgrim's Shanker
-					i(215599),	-- Mountainscaler Slicer
-					i(215606),	-- Firescribe Slicer
-					i(215607),	-- Ceremonial Spike
-					i(215610),	-- Dreadpriest's Dagger
-					i(215616),	-- Pandaren Warknife
-					i(215622),	-- Imperial Longknife
 					i(215699),	-- Grand Imperial Rifle
 					i(215710),	-- Roar of the Quillen
 					i(215722),	-- Mace of the Old Ones
 					i(215810),	-- Warspear of Xuen
-					i(215877),	-- Cloudscorcher Staff
 					i(215902),	-- Klaxxi Scimitar
 					i(215903),	-- Klaxxi Sword
 					i(215904),	-- Klaxxi Shortsword
-					i(215914),	-- Kil'ruk's Hateful Blade
 					i(215923),	-- Shao-Tien Saber
 					i(215993),	-- Zerat, Soulburner's Greatsword
-					i(216002),	-- Grummle Rod
-					i(216003),	-- Waterweaver's Wand
-					i(216008),	-- Necromantic Channel
 					i(216012),	-- Venomlord's Skull Wand
-					i(216416),	-- Hozen Blade
-					i(216439),	-- Pandaren Book
 					i(216450),	-- Staff of the Monkey King
 					i(216451),	-- Quarterstaff of the Monkey King
 					i(216452),	-- Longstaff of the Monkey King
@@ -5911,25 +5896,15 @@ root(ROOTS.Unsorted, {
 					i(216456),	-- Pandaren Staff
 					i(216457),	-- Pandaren Standard
 					i(216478),	-- Pandaren Flamberge
-					i(216480),	-- Pandaren Greatblade
-					i(216530),	-- Protection of the Emperor
-					i(216534),	-- Ironwood Deflector
-					i(216537),	-- Mogu Lord's Deflector
 					i(216553),	-- Norushen's Tower Shield
 					i(216557),	-- Shield of the Fallen General
 					i(216562),	-- Steelskin, Qiang's Bulwark
-					i(216572),	-- Shomi's Barrier
-					i(216574),	-- Flamecaller's Bulwark
-					i(216579),	-- Shield of the Devourer
-					i(216583),	-- Shield of the Protectorate
-					i(216584),	-- Barrier of the Protectorate
 					i(216586),	-- Shield of the Gloaming
 					i(216589),	-- Tortos' Shell
 					i(216591),	-- Tortos' Shell
 					i(216593),	-- Bulwark of Twinned Despair
 					i(216597),	-- Eyes of the Doomed
 					i(216599),	-- Eyes of the Doomed
-					i(216613),	-- Seawatch Repeater
 				}),
 			}),
 			filter(TOYS, {

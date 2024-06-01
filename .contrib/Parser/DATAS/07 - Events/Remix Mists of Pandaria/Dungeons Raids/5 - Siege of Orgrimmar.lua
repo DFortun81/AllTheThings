@@ -545,6 +545,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215470),	-- Haromm's Frozen Battleaxe
 						i(215525),	-- Hisek's Longbow
 						i(215716),	-- Kardris' Scepter
+						i(215914),	-- Kil'ruk's Hateful Blade (wowhead)
 						i(215690),	-- Kor'kron Heavy Rifle
 						i(215478),	-- Korven's Crescent
 						i(215664),	-- Lucky Cricket Cage
