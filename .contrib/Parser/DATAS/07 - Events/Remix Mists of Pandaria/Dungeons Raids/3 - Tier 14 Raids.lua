@@ -191,7 +191,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215978),	-- Starslicer (Gold: Blue Quality / Lei Shi & Tsulong => So ToES LFR?) (Alex: green have same itemID and was looted in HoF LFR 2nd wing)
 					i(216560),	-- Steelskin, Qiang's Bulwark (MSV LFR)
 					i(215693),	-- Taoren, the Malignant (HoF LFR)
-					i(215695),	-- Taoren, the Malignant (MSV LFR) (wowhead: HC only drop)
 					i(215696),	-- Taoren, the Malignant (HoF LFR)
 					i(215731),	-- Tihan, Scepter of the Sleeper (MSV LFR)
 					i(215997),	-- Torch of the Starspark (MSV LFR (1st wing))
