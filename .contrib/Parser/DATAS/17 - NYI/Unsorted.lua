@@ -5861,7 +5861,6 @@ root(ROOTS.Unsorted, {
 					i(216457),	-- Pandaren Standard
 					i(216478),	-- Pandaren Flamberge
 					i(216553),	-- Norushen's Tower Shield
-					i(216557),	-- Shield of the Fallen General
 					i(216562),	-- Steelskin, Qiang's Bulwark
 					i(216586),	-- Shield of the Gloaming
 					i(216593),	-- Bulwark of Twinned Despair

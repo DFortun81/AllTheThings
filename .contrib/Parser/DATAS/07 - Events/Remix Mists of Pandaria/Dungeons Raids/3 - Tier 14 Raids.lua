@@ -157,7 +157,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215636),	-- Fist of Shek'zeer (HoF LFR)
 					i(215727),	-- Galvanized Stormcrusher (wowhead: normal only drop)
 					i(215728),	-- Galvanized Stormcrusher (MSV LFR)
-					i(215730),	-- Galvanized Stormcrusher (HoF LFR)
+					i(215730),	-- Galvanized Stormcrusher (HoF LFR / ToES LFR)
 					i(215632),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
 					i(215635),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
 					i(215851),	-- Gao-Rei, Staff of the Protector (MSV LFR / HoF LFR)
