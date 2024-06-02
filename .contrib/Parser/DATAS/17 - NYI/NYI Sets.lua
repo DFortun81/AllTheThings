@@ -6819,14 +6819,62 @@ root(ROOTS.NeverImplemented, n(SETS, {
 
 		-- 10.1.5
 		expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
-			i(207967),	-- 10.1.5 Time Rifts - Cloth Bronze Sets - Capture Media
-			i(207971),	-- 10.1.5 Time Rifts - Cloth Infinite Sets - Capture Media
-			i(207966),	-- 10.1.5 Time Rifts - Leather Bronze Sets - Capture Media
-			i(207970),	-- 10.1.5 Time Rifts - Leather Infinite Sets - Capture Media
-			i(207965),	-- 10.1.5 Time Rifts - Mail Bronze Sets - Capture Media
-			i(207969),	-- 10.1.5 Time Rifts - Mail Infinite Sets - Capture Media
-			i(207961),	-- 10.1.5 Time Rifts - Plate Bronze Sets - Capture Media
-			i(207968),	-- 10.1.5 Time Rifts - Plate Infinite Sets - Capture Media
+			filter(CLOTH, {
+				i(207967),	-- 10.1.5 Time Rifts - Cloth Bronze Sets - Capture Media
+				i(207971),	-- 10.1.5 Time Rifts - Cloth Infinite Sets - Capture Media
+				i(207899, {["sourceID"] = 188983 }),	-- Mega Dungeon Bronze Cloth Bindings
+				i(207832, {["sourceID"] = 188916 }),	-- Mega Dungeon Bronze Cloth Breeches
+				i(207831, {["sourceID"] = 188915 }),	-- Mega Dungeon Bronze Cloth Hood
+				i(207894, {["sourceID"] = 188978 }),	-- Mega Dungeon Bronze Cloth Mitts
+				i(207829, {["sourceID"] = 188913 }),	-- Mega Dungeon Bronze Cloth Wrap
+				i(207929, {["sourceID"] = 189013 }),	-- Mega Dungeon Infinite Cloth Mantle
+				i(207860, {["sourceID"] = 188944 }),	-- Mega Dungeon Infinite Cloth Robes
+				i(207930, {["sourceID"] = 189014 }),	-- Mega Dungeon Infinite Cloth Sash
+				i(207825, {["sourceID"] = 188911 }),	-- Mega Dungeon Infinite Cloth Slippers
+				i(207861, {["sourceID"] = 188945 }),	-- Mega Dungeon Infinite Cloth Wrap
+			}),
+			filter(LEATHER, {
+				i(207966),	-- 10.1.5 Time Rifts - Leather Bronze Sets - Capture Media
+				i(207970),	-- 10.1.5 Time Rifts - Leather Infinite Sets - Capture Media
+				i(207843, {["sourceID"] = 188927 }),	-- Mega Dungeon Bronze Leather Bracers
+				i(207842, {["sourceID"] = 188926 }),	-- Mega Dungeon Bronze Leather Cinch
+				i(207840, {["sourceID"] = 188924 }),	-- Mega Dungeon Bronze Leather Cowl
+				i(207837, {["sourceID"] = 188921 }),	-- Mega Dungeon Bronze Leather Drape
+				i(207905, {["sourceID"] = 188989 }),	-- Mega Dungeon Bronze Leather Spaulders
+				i(207869, {["sourceID"] = 188953 }),	-- Mega Dungeon Infinite Leather Cloak
+				i(207935, {["sourceID"] = 189019 }),	-- Mega Dungeon Infinite Leather Gloves
+				i(207868, {["sourceID"] = 188952 }),	-- Mega Dungeon Infinite Leather Raiment
+				i(207960, {["sourceID"] = 189043 }),	-- Mega Dungeon Infinite Leather Tassets
+				i(207870, {["sourceID"] = 188954 }),	-- Mega Dungeon Infinite Leather Treads
+			}),
+			filter(MAIL, {
+				i(207965),	-- 10.1.5 Time Rifts - Mail Bronze Sets - Capture Media
+				i(207969),	-- 10.1.5 Time Rifts - Mail Infinite Sets - Capture Media
+				i(207844, {["sourceID"] = 188928 }),	-- Mega Dungeon Bronze Mail Chainmail
+				i(207914, {["sourceID"] = 188998 }),	-- Mega Dungeon Bronze Mail Cinch
+				i(207845, {["sourceID"] = 188929 }),	-- Mega Dungeon Bronze Mail Drape
+				i(207913, {["sourceID"] = 188997 }),	-- Mega Dungeon Bronze Mail Spaulders
+				i(207846, {["sourceID"] = 188930 }),	-- Mega Dungeon Bronze Mail Striders
+				i(207947, {["sourceID"] = 189031 }),	-- Mega Dungeon Infinite Mail Bracers
+				i(207880, {["sourceID"] = 188964 }),	-- Mega Dungeon Infinite Mail Cowl
+				i(207941, {["sourceID"] = 189025 }),	-- Mega Dungeon Infinite Mail Drape
+				i(207879, {["sourceID"] = 188963 }),	-- Mega Dungeon Infinite Mail Gauntlets
+				i(207958, {["sourceID"] = 189041 }),	-- Mega Dungeon Infinite Mail Tassets
+			}),
+			filter(PLATE, {
+				i(207961),	-- 10.1.5 Time Rifts - Plate Bronze Sets - Capture Media
+				i(207968),	-- 10.1.5 Time Rifts - Plate Infinite Sets - Capture Media
+				i(207917, {["sourceID"] = 189001 }),	-- Mega Dungeon Bronze Plate Cape
+				i(207916, {["sourceID"] = 189000 }),	-- Mega Dungeon Bronze Plate Chestplate
+				i(207855, {["sourceID"] = 188939 }),	-- Mega Dungeon Bronze Plate Crushers
+				i(207818, {["sourceID"] = 188905 }),	-- Mega Dungeon Bronze Plate Greaves
+				i(207854, {["sourceID"] = 188938 }),	-- Mega Dungeon Bronze Plate Stompers
+				i(207949, {["sourceID"] = 189033 }),	-- Mega Dungeon Infinite Plate Cape
+				i(207954, {["sourceID"] = 189038 }),	-- Mega Dungeon Infinite Plate Girdle
+				i(207952, {["sourceID"] = 189036 }),	-- Mega Dungeon Infinite Plate Greathelm
+				i(207953, {["sourceID"] = 189037 }),	-- Mega Dungeon Infinite Plate Pauldrons
+				i(207891, {["sourceID"] = 188975 }),	-- Mega Dungeon Infinite Plate Vambraces
+			}),
 		})),
 
 		-- 10.1.7

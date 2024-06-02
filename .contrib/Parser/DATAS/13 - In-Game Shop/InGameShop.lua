@@ -518,6 +518,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(217027),	-- Gladiator's Ragged Shoulderpads
 			i(217022),	-- Gladiator's Ragged Treads
 		})),
+		i(223485,	-- Ensemble: Green Snugglefin Murloc Romper
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
+			i(221006),	-- Angry Green Snugglefin Murloc Hood
+			i(221002),	-- Green Snugglefin Murloc Pullover
+			i(221003),	-- Green Snugglefin Murloc Slippers
+			i(221004),	-- Green Snugglefin Murloc Mittens
+			i(221005),	-- Green Snugglefin Murloc Sweatpants
+			i(221478),	-- Green Snugglefin Murloc Backpack
+			i(221007),	-- Happy Green Snugglefin Murloc Hood
+		})),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737

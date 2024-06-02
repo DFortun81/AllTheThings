@@ -2953,50 +2953,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 
 		-- 10.1.5
 		expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
-			i(207899),	-- Mega Dungeon Bronze Cloth Bindings
-			i(207832),	-- Mega Dungeon Bronze Cloth Breeches
-			i(207831),	-- Mega Dungeon Bronze Cloth Hood
-			i(207894),	-- Mega Dungeon Bronze Cloth Mitts
-			i(207829),	-- Mega Dungeon Bronze Cloth Wrap
-			i(207843),	-- Mega Dungeon Bronze Leather Bracers
-			i(207842),	-- Mega Dungeon Bronze Leather Cinch
-			i(207840),	-- Mega Dungeon Bronze Leather Cowl
-			i(207837),	-- Mega Dungeon Bronze Leather Drape
-			i(207905),	-- Mega Dungeon Bronze Leather Spaulders
-			i(207844),	-- Mega Dungeon Bronze Mail Chainmail
-			i(207914),	-- Mega Dungeon Bronze Mail Cinch
-			i(207845),	-- Mega Dungeon Bronze Mail Drape
-			i(207913),	-- Mega Dungeon Bronze Mail Spaulders
-			i(207846),	-- Mega Dungeon Bronze Mail Striders
-			i(207917),	-- Mega Dungeon Bronze Plate Cape
-			i(207916),	-- Mega Dungeon Bronze Plate Chestplate
-			i(207855),	-- Mega Dungeon Bronze Plate Crushers
-			i(207818),	-- Mega Dungeon Bronze Plate Greaves
-			i(207854),	-- Mega Dungeon Bronze Plate Stompers
-			i(207929),	-- Mega Dungeon Infinite Cloth Mantle
-			i(207860),	-- Mega Dungeon Infinite Cloth Robes
-			i(207930),	-- Mega Dungeon Infinite Cloth Sash
-			i(207825),	-- Mega Dungeon Infinite Cloth Slippers
-			i(207861),	-- Mega Dungeon Infinite Cloth Wrap
-			i(207869),	-- Mega Dungeon Infinite Leather Cloak
-			i(207935),	-- Mega Dungeon Infinite Leather Gloves
-			i(207868),	-- Mega Dungeon Infinite Leather Raiment
-			i(207960),	-- Mega Dungeon Infinite Leather Tassets
-			i(207870),	-- Mega Dungeon Infinite Leather Treads
-			i(207947),	-- Mega Dungeon Infinite Mail Bracers
-			i(207880),	-- Mega Dungeon Infinite Mail Cowl
-			i(207941),	-- Mega Dungeon Infinite Mail Drape
-			i(207879),	-- Mega Dungeon Infinite Mail Gauntlets
-			i(207958),	-- Mega Dungeon Infinite Mail Tassets
-			i(207949),	-- Mega Dungeon Infinite Plate Cape
-			i(207954),	-- Mega Dungeon Infinite Plate Girdle
-			i(207952),	-- Mega Dungeon Infinite Plate Greathelm
-			i(207953),	-- Mega Dungeon Infinite Plate Pauldrons
-			i(207891),	-- Mega Dungeon Infinite Plate Vambraces
-		})),
-
-		-- 10.1.5
-		expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			i(208988),	-- Band of the Petrified Pumpkin [Hallow's End]
 			i(208991),	-- Seal of Ghoulish Glee [Hallow's End]
 			i(208986),	-- The Horseman's Horrific Hood [Hallow's End]
