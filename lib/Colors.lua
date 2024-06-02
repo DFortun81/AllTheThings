@@ -20,6 +20,7 @@ app.Colors = {
 	ChatLink = "ff149bfd",
 	TooltipDescription = "ff66ccff",
 	TooltipLore = "ff42a7eb",
+	TooltipWarning = "fffe040f",
 	DefaultDifficulty = "ff1eff00",
 	RemovedWithPatch = "ffFEC1C0",	-- General channel color
 	AddedWithPatch = "ffC0fEC1",	-- Triad permutation of General channel color
