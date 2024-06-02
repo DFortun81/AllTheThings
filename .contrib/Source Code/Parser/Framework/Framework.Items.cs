@@ -998,34 +998,16 @@ namespace ATT
             /// <summary>
             /// Merge Item information from the specific ItemID into the data
             /// </summary>
-            /// <param name="specificItemID"></param>
-            /// <param name="data"></param>
             private static void MergeInto(decimal specificItemID, IDictionary<string, object> data)
             {
                 // First merge generic Item info into the data
                 var item = GetNull(specificItemID);
                 if (item == null)
                 {
-                    // If we couldn't find the exact item information, let's see if we should merge the object anyways based on the filter.
-                    // Recipes should always merge since they discard their mod/bonus IDs. TODO: Investigate if other filter IDs should as well?
-                    long truncatedItemID = (long)specificItemID;
-                    item = GetNull(truncatedItemID);
-                    if (item == null)
+                    if (!data.ContainsKey("_generated"))
                     {
-                        // Report that the specific item is missing.
+                        // Report that the specific, non-generated item is missing.
                         Log($"Could not find item #{specificItemID} in the database", data);
-                        return;
-                    }
-                    else if (!(item.ContainsKey("recipeID") || (item.TryGetValue("f", out long f) && f == 200)))
-                    {
-                        // If the item is NOT a recipe, then yeah, return immediately.
-                        Log($"Could not find non-recipe item #{specificItemID} in the database", data);
-                        return;
-                    }
-                    else
-                    {
-                        // Yeah, it's a recipe. Merge that shit! Fuck your modID/bonusID shenanigans!
-                        MergeInto(truncatedItemID, item, data);
                     }
                 }
                 else
@@ -1144,7 +1126,7 @@ namespace ATT
                     // If there's only one sourceID, then assign it. Probably some dumb missing modID or something.
                     // Definitely report these assignments since they're likely wrong and require harvesting to fix
 #pragma warning disable CS0162 // Unreachable code detected
-                    if (DoSpammyDebugLogging) LogWarn($"Item:{sourceIDKey} (WATERFALL-GUESS) ==> s:{sourceID}",data);
+                    if (DoSpammyDebugLogging) LogWarn($"Item:{sourceIDKey} (WATERFALL-GUESS) ==> s:{sourceID}", data);
 #pragma warning restore CS0162 // Unreachable code detected
                     data["sourceID"] = sourceID;
                     CaptureForSOURCED(data, "sourceID", sourceID);
@@ -1159,7 +1141,7 @@ namespace ATT
                 if (data.ContainsKey("itemID") || (!data.TryGetValue("sourceID", out long sourceID))) return;
 
                 decimal itemID = 0;
-                foreach(KeyValuePair<decimal, long> matchedItemID in SOURCES.GetAllKvps(s => s == sourceID))
+                foreach (KeyValuePair<decimal, long> matchedItemID in SOURCES.GetAllKvps(s => s == sourceID))
                 {
                     // minimum itemID is typically the cleanest match
                     if (itemID == 0 || itemID > matchedItemID.Key)

@@ -767,11 +767,14 @@ d = function(id, t)										-- Create a DIFFICULTY Object
 		local db = DifficultyDB[difficultyID];
 		if db then
 			if db.simplify then
+				-- must preserve the multi-difficultyID for parser, since changing the difficultyID secretly
+				-- inside a shortcut function is anything but 'simple'
+				-- TODO: clean this up and make it Parser logic instead to change the id values
+				t._multiDifficultyID = difficultyID
 				difficultyID = ids[1];
-				local difficulties,count = {},1;
+				local difficulties = {}
 				for i=2,#ids,1 do
-					difficulties[count] = ids[i];
-					count = count + 1;
+					difficulties[#difficulties + 1] = ids[i];
 				end
 				t.difficultyID = difficultyID;
 				t.difficulties = difficulties;

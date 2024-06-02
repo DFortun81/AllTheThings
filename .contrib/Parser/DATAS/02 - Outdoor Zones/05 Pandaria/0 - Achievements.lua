@@ -782,7 +782,7 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 				["_encounter"] = { 691 },
 			}),
 			crit(19913, {	-- Sha of Fear
-				["_encounter"] = { 709, DIFFICULTY.DUNGEON.NORMAL },
+				["_encounter"] = { 709, DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC },
 			}),
 		}),
 		ach(6858, {	-- What Is Worth Fighting For

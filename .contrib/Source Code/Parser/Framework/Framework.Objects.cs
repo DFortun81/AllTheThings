@@ -1903,6 +1903,7 @@ end");
                     case "id":
                     case "uid":
                     case "tmogSetID":
+                    case "_multiDifficultyID":
                         {
                             try
                             {

@@ -501,7 +501,7 @@ namespace ATT
                 bool restoreDifficulty = false;
                 var previousDifficultyRoot = DifficultyRoot;
                 var previousDifficulty = NestedDifficultyID;
-                if (data.TryGetValue("difficultyID", out long nestedDiffID) && nestedDiffID != NestedDifficultyID)
+                if ((data.TryGetValue("_multiDifficultyID", out long nestedDiffID) || data.TryGetValue("difficultyID", out nestedDiffID)) && nestedDiffID != NestedDifficultyID)
                 {
                     DifficultyRoot = data;
                     NestedDifficultyID = nestedDiffID;
@@ -646,11 +646,15 @@ namespace ATT
                     case Objects.Filters.Recipe:
                         // switch any existing spellID to recipeID
                         var item = Items.GetNull(data);
-                        if (item != null && item.TryGetValue("spellID", out long spellID) && item.TryGetValue("itemID", out long recipeItemID))
+                        if (item != null && item.TryGetValue("spellID", out long spellID) && item.TryGetValue("itemID", out long _))
                         {
-                            // remove the spellID if existing
+                            // remove the spellID/modID/bonusID if existing
                             item.Remove("spellID");
                             data.Remove("spellID");
+                            item.Remove("modID");
+                            data.Remove("modID");
+                            item.Remove("bonusID");
+                            data.Remove("bonusID");
                             // set the recipeID in the item dictionary so it will merge back in later
                             item["recipeID"] = spellID;
                         }
@@ -1033,7 +1037,7 @@ namespace ATT
 
             if (data.ContainsKey("_unsorted"))
             {
-                foreach(var sourcedListByKey in GetAllMatchingSOURCED(data))
+                foreach (var sourcedListByKey in GetAllMatchingSOURCED(data))
                 {
                     var sourcedData = Objects.FindMatchingData(sourcedListByKey.AsTypedEnumerable<object>(), data);
                     if (sourcedData != null)
@@ -1079,6 +1083,7 @@ namespace ATT
                         LogWarn($"Ensemble {ensembleID} sourcing SourceID {sourceID} which is not associated with a TransmogSetItem", data);
                         source = new TransmogSetItem { ItemModifiedAppearanceID = sourceID }.AsData();
                     }
+                    source["_generated"] = true;
                     Items.DetermineItemID(source);
                     // since we may determine an itemID for this data after the ConditionalMerge phase
                     // we need to apply that logic to this data specifically as well
@@ -1513,7 +1518,7 @@ namespace ATT
                 return;
 
             // Hash the Encounter for MergeIntos if needed
-            data["_encounterHash"] = encounterID + NestedDifficultyID / 100M;
+            data["_encounterHash"] = GetEncounterHash(encounterID, NestedDifficultyID);
 
             // Clean up Encounters which only have a single npcID assigned via 'crs'
             if (!data.ContainsKey("npcID") && data.TryGetValue("crs", out List<object> crs) && crs.Count == 1 && crs[0].TryConvert(out long crID))
@@ -2495,8 +2500,7 @@ namespace ATT
                 int encIndex = 0;
                 while (encIndex < encounterListData.Count)
                 {
-                    decimal encounterHash = Convert.ToDecimal(encounterListData[encIndex])
-                        + (encounterListData.Count > 1 ? Convert.ToDecimal(encounterListData[encIndex + 1]) : 0M) / 100M;
+                    decimal encounterHash = GetEncounterHash(encounterListData[encIndex], encounterListData.Count > 1 ? encounterListData[encIndex + 1] : 0);
                     DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
                     encIndex += 2;
                 }
@@ -3481,6 +3485,12 @@ namespace ATT
                         // handle other types of duplication sources if necessary
                 }
             }
+        }
+
+        private static decimal GetEncounterHash(long encounterID, long difficultyID)
+        {
+            // expecting difficultyID to be a positive, 100-999 value
+            return encounterID + difficultyID / 1000M;
         }
 
         private static bool TryGetTypeDBObject<T>(long id, out T data)
