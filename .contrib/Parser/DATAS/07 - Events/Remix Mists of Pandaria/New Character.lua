@@ -132,5 +132,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(81662,{["isDaily"]=true,}),	-- after turn in questID 80429 (Aid the August Celestials) or questID 80430 (Aid the August Celestials)
 		q(81658,{["isDaily"]=true,}),	-- after turn in questID 80427 (Aid the Golden Lotus)
 		q(81660,{["isDaily"]=true,}),	-- after turn in questID 80426 (Aid the Shado-Pan)
+		q(81663,{["isDaily"]=true,}),	-- after turn in questID 80439 (Aid the Alliance)
 	})),
 });

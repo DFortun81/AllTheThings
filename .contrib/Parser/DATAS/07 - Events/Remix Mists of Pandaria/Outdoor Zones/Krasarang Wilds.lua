@@ -251,6 +251,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(QUESTS, {
+				q(80439, {	-- Aid the Alliance
+					["provider"] = { "n", 67940 },	-- Admiral Taylor
+					["coord"] = { 89.5, 32.5, KRASARANG_WILDS },
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+				}),
 				q(80438, {	-- Aid the Horde
 					["sourceQuest"] = 32108,	-- Domination Point (H)
 					["provider"] = { "n", 67939 },	-- General Nazgrim
