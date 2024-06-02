@@ -340,7 +340,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215659),	-- Prophecies of Y'Shaarj
 						i(215577),	-- Rik'kal's Bloody Blade
 						i(215827),	-- Rod of the Megantholithic Apparatus
-						i(215830),	-- Rod of the Megantholithic Apparatus
 						i(215667),	-- Sha-Touched Globule
 						i(215921),	-- Shao-Tien Saber
 						i(216555),	-- Shield of the Fallen General
@@ -1083,6 +1082,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215834),	-- Pride's Gaze
 						i(215662),	-- Prophecies of Y'Shaarj
 						i(215580),	-- Rik'kal's Bloody Blade
+						i(215830),	-- Rod of the Megantholithic Apparatus
 						i(215670),	-- Sha-Touched Globule
 						i(215924),	-- Shao-Tien Saber
 						i(215726),	-- Siegecrafter's Forge Drill
