@@ -250,6 +250,16 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}},
 				}),
 			}),
+			n(QUESTS, {
+				q(80438, {	-- Aid the Horde
+					["sourceQuest"] = 32108,	-- Domination Point (H)
+					["provider"] = { "n", 67939 },	-- General Nazgrim
+					["coord"] = { 10.3, 53.7, KRASARANG_WILDS },
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
+				}),
+			}),
 			n(ZONE_REWARDS, {
 				filter(CLOTH, {
 					i(213680),	-- Scrollkeeper Crown
@@ -334,5 +344,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 		},
+	}),
+}))));
+root(ROOTS.HiddenQuestTriggers, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+	expansion(EXPANSION.DF, {
+		q(81663),	-- Spellid:443752, after first turnin of quest 80438 (extra rewards)
 	}),
 }))));

@@ -344,6 +344,9 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 									["coord"] = { 9.05, 51.2, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(92019),	-- The Bilgewater Molotov (QI!)
+									},
 								}),
 								q(32329, {	-- Get My Results!
 									["minReputation"] = { 1375, REVERED+2700 },
