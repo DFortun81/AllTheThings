@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82041, {	-- Beledar's Blessing
 					["coord"] = { 24.3, 60.9, HALLOWFALL },
 				}),
+				q(82133, {	-- Documenting: Field Manual Edition
+					["coord"] = { 39.9, 74.7, HALLOWFALL },
+				}),
 				q(82259, {	-- Honoring Our Fallen
 					["coord"] = { 71.8, 61.0, HALLOWFALL },
 					["g"] = {

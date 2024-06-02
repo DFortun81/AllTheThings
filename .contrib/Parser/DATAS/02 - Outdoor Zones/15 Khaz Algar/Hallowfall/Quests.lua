@@ -874,7 +874,81 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 214019 },	-- Aegor Irynbawnd
 				["coord"] = { 49.2, 41.1, HALLOWFALL },
 			}),
-
+			q(78688, {	-- Cage, Match
+				["sourceQuests"] = { 78686 },	-- Lights Out
+				["provider"] = { "n", 213613 },	-- Aemyra Acton
+				["coord"] = { 50.0, 20.8, HALLOWFALL },
+				["g"] = {
+					i(211945),	-- Torch of Holy Flame (QI!)
+				},
+			}),
+			q(78689, {	-- If it Leads, it Bleeds
+				["sourceQuests"] = { 78686 },	-- Lights Out
+				["provider"] = { "n", 213614 },	-- Taenar Strongoth
+				["coord"] = { 49.9, 20.9, HALLOWFALL },
+			}),
+			q(78690, {	-- Situational Awareness
+				["sourceQuests"] = {
+					78688,	-- Cage, Match
+					78689,	-- If it Leads, it Bleeds
+				},
+				["provider"] = { "n", 213613 },	-- Aemyra Acton
+				["coord"] = { 45.8, 13.1, HALLOWFALL },
+			}),
+			q(78693, {	-- Spears for Fears
+				["sourceQuests"] = { 78690 },	-- Situational Awareness
+				["provider"] = { "n", 213613 },	-- Aemyra Acton
+				["coord"] = { 50.0, 20.8, HALLOWFALL },
+				["g"] = {
+					i(211948),	-- Kobyss Spear (QI!)
+				},
+			}),
+			q(78964, {	-- Reclaiming Velhan's Claim
+				["sourceQuests"] = { 78690 },	-- Situational Awareness
+				["provider"] = { "n", 213614 },	-- Taenar Strongoth
+				["coord"] = { 45.7, 13.1, HALLOWFALL },
+			}),
+			q(78692, {	-- Teach a Man to Fish
+				["sourceQuests"] = {
+					78964,	-- Reclaiming Velhan's Claim
+					78693,	-- Spears for Fears
+				},
+				["provider"] = { "n", 213613 },	-- Aemyra Acton
+				["coord"] = { 50.0, 20.8, HALLOWFALL },
+			}),
+			q(78692, {	-- Teach a Man to Fish
+				["sourceQuests"] = {
+					78964,	-- Reclaiming Velhan's Claim
+					78693,	-- Spears for Fears
+				},
+				["provider"] = { "n", 213613 },	-- Aemyra Acton
+				["coord"] = { 50.0, 20.8, HALLOWFALL },
+			}),
+			q(78687, {	-- Crash Recovery
+				["sourceQuests"] = { 78692 },	-- Teach a Man to Fish
+				["provider"] = { "n", 213614 },	-- Taenar Strongoth
+				["coord"] = { 45.7, 13.1, HALLOWFALL },
+				["g"] = {
+					i(212317),	-- Recovered Tinderbox (QI!)
+				},
+			}),
+			q(78691, {	-- The One that Got Away
+				["sourceQuests"] = { 78692 },	-- Teach a Man to Fish
+				["provider"] = { "n", 213787 },	-- Duke Velhan
+				["coord"] = { 45.8, 13.0, HALLOWFALL },
+			}),
+			q(78695, {	-- Lamp Lit
+				["sourceQuests"] = {
+					78687,	-- Crash Recovery
+					78691,	-- The One that Got Away
+				},
+				["provider"] = { "n", 213614 },	-- Taenar Strongoth
+				["coord"] = { 45.7, 13.1, HALLOWFALL },
+				["g"] = {
+					i(225944),	-- Sturdy Arathi Censer (COSMETIC!)
+					--c(2899),	-- Hallowfall Arathi Commendation, this is one-time Warbound bonus
+				},
+			}),
 			-- zone drop quest
 			q(79222, {	-- Shadow-Hardened Mainspring
 				["provider"] = { "i", 212330 },	-- Shadow-Hardened Mainspring
