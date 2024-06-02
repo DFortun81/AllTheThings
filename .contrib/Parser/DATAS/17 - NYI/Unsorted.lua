@@ -5849,7 +5849,6 @@ root(ROOTS.Unsorted, {
 					i(215902),	-- Klaxxi Scimitar
 					i(215903),	-- Klaxxi Sword
 					i(215904),	-- Klaxxi Shortsword
-					i(215923),	-- Shao-Tien Saber
 					i(215993),	-- Zerat, Soulburner's Greatsword
 					i(216012),	-- Venomlord's Skull Wand
 					i(216450),	-- Staff of the Monkey King
@@ -5865,7 +5864,6 @@ root(ROOTS.Unsorted, {
 					i(216557),	-- Shield of the Fallen General
 					i(216562),	-- Steelskin, Qiang's Bulwark
 					i(216586),	-- Shield of the Gloaming
-					i(216591),	-- Tortos' Shell
 					i(216593),	-- Bulwark of Twinned Despair
 					i(216597),	-- Eyes of the Doomed
 					i(216599),	-- Eyes of the Doomed

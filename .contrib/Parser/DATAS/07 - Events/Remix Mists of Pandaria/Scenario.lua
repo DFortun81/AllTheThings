@@ -128,7 +128,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215876),	-- Mistdancer's Rod
 					i(215985),	-- Satay's Greatsword
 					i(216579),	-- Shield of the Devourer (wowhead)
-					i(216583),	-- Shield of the Protectorate (wowhead)
+					i(216583),	-- Shield of the Protectorate
 					i(215953),	-- Siege Captain's Blade
 					i(215808),	-- Yak-Herder's Longspear
 				}),
@@ -136,7 +136,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			d(DIFFICULTY.DUNGEON.HEROIC, bubbleDown({ ["modID"] = 0 }, {
 				n(WEAPONS, {
 					i(215615),	-- Amber Blade
-					i(216584),	-- Barrier of the Protectorate (wowhead)
+					i(216584),	-- Barrier of the Protectorate
 					i(215986),	-- Blade of Broken Chains
 					i(215757),	-- Carapace Crusher
 					i(215607),	-- Ceremonial Spike

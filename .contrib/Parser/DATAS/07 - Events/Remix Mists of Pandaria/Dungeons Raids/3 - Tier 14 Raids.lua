@@ -147,7 +147,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215839),	-- Brazier of the Eternal Empire (MSV LFR / ToES LFR)
 					i(215842),	-- Brazier of the Eternal Empire (HoF LFR)
 					i(215555),	-- Crossbow of Forgotten Glory (HoF LFR / ToES LFR)
-					i(216462),	-- Dinomancer's Spire (HoF LFR)
+					i(216462),	-- Dinomancer's Spire (HoF LFR -> wrong? rest is in ToT, no wowhead data yet)
 					i(215905),	-- Do-tharak, the Foebreaker (MSV LFR)
 					i(215481),	-- Elegion, the Star Cleaver (ToES LFR)
 					i(215528),	-- Fang Kung, Emperor's Legacy (MSV LFR / HoF LFR)
@@ -471,7 +471,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215792),	-- Bo-Ris, Spear of Night
 					i(215841),	-- Brazier of the Eternal Empire
 					i(215557),	-- Crossbow of Forgotten Glory (MSV HC)
-					i(215906),	-- Do-tharak, the Foebreaker
+					i(215907),	-- Do-tharak, the Foebreaker
 					i(215483),	-- Elegion, the Star Cleaver
 					i(215530),	-- Fang Kung, Emperor's Legacy
 					i(215849),	-- Fearspeaker's Warstaff

@@ -216,6 +216,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 							i(214677),	-- Helm of the Witch Doctor
 							i(214673),	-- Leggings of the Witch Doctor
 							i(214674),	-- Spaulders of the Witch Doctor
+							-- Wtf?
+							i(213867),	-- Robe of the Exorcist (dropped for Myrhial as shaman)
 						}),
 						filter(PLATE, {
 							-- DEATH KNIGHT
@@ -256,6 +258,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216407),	-- Blade of the Sanguine Ritual
 						i(216458),	-- Caduceus of Pure Moods
 						i(216461),	-- Caduceus of Pure Moods
+						i(216462),	-- Dinomancer's Spire
 						i(216463),	-- Dinomancer's Spire
 						i(215561),	-- Durumu's Gaze
 						i(215564),	-- Durumu's Gaze
@@ -725,6 +728,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216402),	-- Tia-Tia, the Spinning Star
 						i(216430),	-- Torall, the Emperor's Scepter
 						i(215544),	-- Tortoiseshell Longbow
+						i(216591),	-- Tortos' Shell
 						i(215516),	-- Uroe, Harbinger of Fear
 						i(216009),	-- Venomlord's Skull Wand
 						i(215775),	-- Zeeg's Ancient Kegbreaker

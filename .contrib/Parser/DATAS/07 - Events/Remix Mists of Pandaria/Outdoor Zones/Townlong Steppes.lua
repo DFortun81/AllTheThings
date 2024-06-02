@@ -127,7 +127,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215938),	-- Cloudfall Edge (wowhead)
 					i(215949),	-- Crane Temple Sword (wowhead)
 					i(215803),	-- Dragonguard's Glaive (drop)
-					i(215859),	-- Faded Forest Staff (wowhead)
+					i(215859),	-- Faded Forest Staff
 					i(216574),	-- Flamecaller's Bulwark (wowhead)
 					i(215679),	-- Golden Crane Rod (august celestials cache)
 					i(215738),	-- Grummle Mace (wowhead)

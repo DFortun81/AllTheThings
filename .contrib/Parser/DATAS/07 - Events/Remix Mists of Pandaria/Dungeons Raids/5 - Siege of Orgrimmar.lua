@@ -773,6 +773,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215579),	-- Rik'kal's Bloody Blade
 						i(215829),	-- Rod of the Megantholithic Apparatus
 						i(215669),	-- Sha-Touched Globule
+						i(215923),	-- Shao-Tien Saber
 						i(215725),	-- Siegecrafter's Forge Drill
 						i(215819),	-- Staff of Corrupted Waters
 						i(215713),	-- Sphere of Immerseus
