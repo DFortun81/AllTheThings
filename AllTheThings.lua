@@ -3004,7 +3004,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 		if paramA == "currencyID" and paramB == 2778 then
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				tinsert(tooltipInfo, 1, { left = L.MOP_REMIX_BRONZE, color = app.Colors.SourceIgnored });
+				tinsert(tooltipInfo, 1, { left = L.MOP_REMIX_BRONZE_DESC, color = app.Colors.SourceIgnored });
 			end
 		end
 
