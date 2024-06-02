@@ -373,7 +373,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 				}),
 			}),
 			n(PVP_GLADIATOR, {
-				n(CLASSES,{
+				n(CLASSES, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_0, REMOVED_9_2_5 } }, {
 					["description"] = "Can only be obtained from the Great Vault/Creation Catalyst. The Appearances are gained at 1800 raiting.",
 					["g"] = bubbleDown({ ["bonusID"] = 7897 }, {
 						cl(DEATHKNIGHT, {
@@ -509,7 +509,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							i(188943),	-- Vambraces of the Infinite Infantry
 						}),
 					}),
-				}),
+				})),
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
 					["g"] = bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
