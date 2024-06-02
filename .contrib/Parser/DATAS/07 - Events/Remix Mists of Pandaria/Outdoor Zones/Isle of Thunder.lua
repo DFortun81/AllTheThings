@@ -360,6 +360,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215534),	-- Shado-Pan Longbow (wowhead)
 					i(215889),	-- Soulwood Spire
 					i(215960),	-- Tian Monastery Scimitar
+					i(215864),	-- Torch of Dawn (drop)
 					i(215515),	-- Wallwatcher's Greataxe
 					i(215745),	-- Wasteland Basher
 					i(216576),	-- Wasteland Deflector
