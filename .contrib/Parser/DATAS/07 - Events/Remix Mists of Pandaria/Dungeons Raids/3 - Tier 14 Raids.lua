@@ -136,8 +136,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				n(WEAPONS, {
 					------------------------------------------------------------------------
-					-- Blue Quality LFR Weapons can only come from Caches (Tsulong, Lei Shi)
-					-- Maybe Bugged, Maybe shared with Normal -> wowhead seems to have normal only for some weapons of which we atm have 3 same name listed
 					-- Yuni on Discord: i(215727) gotten as normal drop, previously reported as LFR (currently sourced in both spots)
 					------------------------------------------------------------------------
 					i(215582),	-- Blade of the Seven Stars (HoF LFR (1st wing) / ToES LFR)
@@ -189,7 +187,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215591),	-- Soulsever (MSV LFR)
 					i(215593),	-- Soulsever (HoF LFR)
 					i(215975),	-- Starslicer (Terrace LFR or HoF LFR 1st wing)
-					i(215976),	-- Starslicer (wowhead: normal only drop)
+					--i(215976),	-- Starslicer (wowhead: normal only drop) Pretty sure its Normal Only. ~Gold 2nd June
 					i(215978),	-- Starslicer (Gold: Blue Quality / Lei Shi & Tsulong => So ToES LFR?) (Alex: green have same itemID and was looted in HoF LFR 2nd wing)
 					i(216560),	-- Steelskin, Qiang's Bulwark (MSV LFR)
 					i(215693),	-- Taoren, the Malignant (HoF LFR)
