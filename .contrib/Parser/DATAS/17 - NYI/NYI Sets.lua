@@ -3792,6 +3792,17 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(180428),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 05
 				}),
 				filter(CLOTH, {
+					i(178302, {["sourceID"] = 111219 }),	-- Sinful Aspirant's Silk Vestiment
+					i(178307, {["sourceID"] = 111224 }),	-- Sinful Aspirant's Silk Slippers
+					i(178312, {["sourceID"] = 111229 }),	-- Sinful Aspirant's Silk Grasps
+					i(178314, {["sourceID"] = 111231 }),	-- Sinful Aspirant's Silk Visage
+					i(178318, {["sourceID"] = 111235 }),	-- Sinful Aspirant's Silk Britches
+					i(178323, {["sourceID"] = 111240 }),	-- Sinful Aspirant's Silk Shoulderpads
+					i(178326, {["sourceID"] = 111243 }),	-- Sinful Aspirant's Silk Cincture
+					i(178330, {["sourceID"] = 111246 }),	-- Sinful Aspirant's Silk Armbands
+
+					-- These were added into Ensemble: Sinful Aspirant's Cloth Armor
+					-- #if BEFORE DF
 					i(178266),	-- Sinful Aspirant's Silk Gown
 					i(178271),	-- Sinful Aspirant's Silk Footwraps
 					i(178276),	-- Sinful Aspirant's Silk Handwraps
@@ -3800,16 +3811,20 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(178287),	-- Sinful Aspirant's Silk Shawl
 					i(178290),	-- Sinful Aspirant's Silk Belt
 					i(178294),	-- Sinful Aspirant's Silk Bindings
-					i(178302),	-- Sinful Aspirant's Silk Vestiment
-					i(178307),	-- Sinful Aspirant's Silk Slippers
-					i(178312),	-- Sinful Aspirant's Silk Grasps
-					i(178314),	-- Sinful Aspirant's Silk Visage
-					i(178318),	-- Sinful Aspirant's Silk Britches
-					i(178323),	-- Sinful Aspirant's Silk Shoulderpads
-					i(178326),	-- Sinful Aspirant's Silk Cincture
-					i(178330),	-- Sinful Aspirant's Silk Armbands
+					-- #endif
 				}),
 				filter(LEATHER, {
+					i(178305, {["sourceID"] = 111222 }),	-- Sinful Aspirant's Leather Jerkin
+					i(178309, {["sourceID"] = 111226 }),	-- Sinful Aspirant's Leather Treads
+					i(178310, {["sourceID"] = 111227 }),	-- Sinful Aspirant's Leather Handguards
+					i(178316, {["sourceID"] = 111233 }),	-- Sinful Aspirant's Leather Headguard
+					i(178320, {["sourceID"] = 111237 }),	-- Sinful Aspirant's Leather Britches
+					i(178321, {["sourceID"] = 111238 }),	-- Sinful Aspirant's Leather Shoulderpads
+					i(178328, {["sourceID"] = 111245 }),	-- Sinful Aspirant's Leather Loop
+					i(178333, {["sourceID"] = 111249 }),	-- Sinful Aspirant's Leather Cuffs
+
+					-- These were added into Ensemble: Sinful Aspirant's Leather Armor
+					-- #if BEFORE DF
 					i(178269),	-- Sinful Aspirant's Leather Tunic
 					i(178273),	-- Sinful Aspirant's Leather Footpads
 					i(178274),	-- Sinful Aspirant's Leather Grips
@@ -3818,15 +3833,20 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(178285),	-- Sinful Aspirant's Leather Mantle
 					i(178292),	-- Sinful Aspirant's Leather Cord
 					i(178297),	-- Sinful Aspirant's Leather Armguards
-					i(178309),	-- Sinful Aspirant's Leather Treads
-					i(178310),	-- Sinful Aspirant's Leather Handguards
-					i(178316),	-- Sinful Aspirant's Leather Headguard
-					i(178320),	-- Sinful Aspirant's Leather Britches
-					i(178321),	-- Sinful Aspirant's Leather Shoulderpads
-					i(178328),	-- Sinful Aspirant's Leather Loop
-					i(178333),	-- Sinful Aspirant's Leather Cuffs
+					-- #endif
 				}),
 				filter(MAIL, {
+					i(178304, {["sourceID"] = 111221 }),	-- Sinful Aspirant's Chain Hauberk
+					i(178308, {["sourceID"] = 111225 }),	-- Sinful Aspirant's Chain Footguards
+					i(178313, {["sourceID"] = 111230 }),	-- Sinful Aspirant's Chain Grips
+					i(178315, {["sourceID"] = 111232 }),	-- Sinful Aspirant's Chain Helmet
+					i(178319, {["sourceID"] = 111236 }),	-- Sinful Aspirant's Chain Breeches
+					i(178324, {["sourceID"] = 111241 }),	-- Sinful Aspirant's Chain Monnion
+					i(178327, {["sourceID"] = 111244 }),	-- Sinful Aspirant's Chain Buckle
+					i(178332, {["sourceID"] = 111248 }),	-- Sinful Aspirant's Chain Coils
+
+					-- These were added into Ensemble: Sinful Aspirant's Mail Armor
+					-- #if BEFORE DF
 					i(178268),	-- Sinful Aspirant's Chain Tunic
 					i(178272),	-- Sinful Aspirant's Chain Stompers
 					i(178277),	-- Sinful Aspirant's Chain Handguards
@@ -3835,15 +3855,20 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(178288),	-- Sinful Aspirant's Chain Shoulderguards
 					i(178291),	-- Sinful Aspirant's Chain Clasp
 					i(178296),	-- Sinful Aspirant's Chain Bracer
-					i(178308),	-- Sinful Aspirant's Chain Footguards
-					i(178313),	-- Sinful Aspirant's Chain Grips
-					i(178315),	-- Sinful Aspirant's Chain Helmet
-					i(178319),	-- Sinful Aspirant's Chain Breeches
-					i(178324),	-- Sinful Aspirant's Chain Monnion
-					i(178327),	-- Sinful Aspirant's Chain Buckle
-					i(178332),	-- Sinful Aspirant's Chain Coils
+					-- #endif
 				}),
 				filter(PLATE, {
+					i(178300, {["sourceID"] = 111217 }),	-- Sinful Aspirant's Plate Greathelm
+					i(178303, {["sourceID"] = 111220 }),	-- Sinful Aspirant's Plate Chestguard
+					i(178306, {["sourceID"] = 111223 }),	-- Sinful Aspirant's Plate Sabatons
+					i(178311, {["sourceID"] = 111228 }),	-- Sinful Aspirant's Plate Gloves
+					i(178317, {["sourceID"] = 111234 }),	-- Sinful Aspirant's Plate Legplates
+					i(178322, {["sourceID"] = 111239 }),	-- Sinful Aspirant's Plate Shoulderplates
+					i(178325, {["sourceID"] = 111242 }),	-- Sinful Aspirant's Plate Vambraces
+					i(178331, {["sourceID"] = 111247 }),	-- Sinful Aspirant's Plate Chain
+
+					-- These were added into Ensemble: Sinful Aspirant's Plate Armor
+					-- #if BEFORE DF
 					i(178264),	-- Sinful Aspirant's Plate Headguard
 					i(178267),	-- Sinful Aspirant's Plate Armor
 					i(178270),	-- Sinful Aspirant's Plate Stompers
@@ -3852,14 +3877,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(178286),	-- Sinful Aspirant's Plate Pauldrons
 					i(178289),	-- Sinful Aspirant's Plate Greatbelt
 					i(178295),	-- Sinful Aspirant's Plate Armguards
-					i(178300),	-- Sinful Aspirant's Plate Greathelm
-					i(178303),	-- Sinful Aspirant's Plate Chestguard
-					i(178306),	-- Sinful Aspirant's Plate Sabatons
-					i(178311),	-- Sinful Aspirant's Plate Gloves
-					i(178317),	-- Sinful Aspirant's Plate Legplates
-					i(178322),	-- Sinful Aspirant's Plate Shoulderplates
-					i(178325),	-- Sinful Aspirant's Plate Vambraces
-					i(178331),	-- Sinful Aspirant's Plate Chain
+					-- #endif
 				}),
 				filter(TABARDS, {
 					i(180432),	-- 9.0 PvP - PvP Reward - Tabard - 2
