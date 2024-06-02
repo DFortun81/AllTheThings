@@ -304,6 +304,9 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68025 },	-- Thrall
 									["coord"] = { 38.2, 46.4, ECHO_ISLES },
 									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(92510),	-- Vol'jin's Hearthstone (QI!)
+									},
 								}),
 								q(32123, {	-- Death on Two Legs
 									["sourceQuests"] = { 32108 },	-- Domination Point
@@ -337,6 +340,9 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68023 },	-- Vol'jin
 									["coord"] = { 71.6, 93.1, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(92510),	-- Vol'jin's Hearthstone (QI!)
+									},
 								}),
 								q(32235, {	-- Flash! Aaaaaahhhh!
 									["sourceQuests"] = { 32108 },	-- Domination Point
@@ -427,12 +433,20 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68370 },	-- Lor'themar Theron
 									["coord"] = { 53.8, 49.1, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(92801),	-- Korune Orders (QI!)
+										i(92802),	-- Legacy of the Korune (QI!)
+										i(92803),	-- Sealed Korune Artifact (QI!)
+									},
 								}),
 								q(32368, {	-- Memory Wine
 									["sourceQuests"] = { 32448 },	-- Ties with the Past
 									["provider"] = { "n", 68287 },	-- Baine Bloodhoof
 									["coord"] = { 60.3, 55.2, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(92756),	-- Memory Wine (QI!)
+									},
 								}),
 								q(32197, {	-- Mystery Meatloaf
 									["sourceQuests"] = { 32108 },	-- Domination Point
@@ -473,6 +487,9 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 67866 },	-- Chen Stormstout
 									["coord"] = { 71.6, 93.1, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(92499),	-- Sturdy Needle (QI!)
+									},
 								}),
 								q(32256, {	-- Rise Of An Empire
 									["minReputation"] = { 1375, FRIENDLY+950 },
@@ -543,12 +560,18 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68025 },	-- Thrall
 									["coord"] = { 38.4, 46.6, VALLEY_OF_TRIALS },
 									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(92510),	-- Vol'jin's Hearthstone (QI!)
+									},
 								}),
 								q(32244, {	-- The Korune
 									["sourceQuests"] = { 32190 },	-- To Mogujia
 									["provider"] = { "n", 67603 },	-- Fanlyr Silverthorn
 									["coord"] = { 57.1, 78.6, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(92072),	-- Korune Codex (QI!)
+									},
 								}),
 								q(32363, {	-- The Kun-Lai Expedition
 									["minReputation"] = { 1375, REVERED+6650 },
@@ -595,6 +618,9 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68586 },	-- Grand Magister Rommath
 									["coord"] = { 50.9, 48.0, 501 },
 									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(93124),	-- Tear of the Sin'dorei (QI!)
+									},
 								}),
 								q(32408, {	-- The Silver Covenant's Stronghold
 									["sourceQuests"] = { 32406 },	-- A Tactical Assault
@@ -628,6 +654,9 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 68287 },	-- Baine Bloodhoof
 									["coord"] = { 60.3, 55.2, KUN_LAI_SUMMIT },
 									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(93212),	-- Spirit Essence of Varatus (QI!)
+									},
 								}),
 								q(32190, {	-- To Mogujia
 									["minReputation"] = { 1375, HONORED+2850 },
@@ -673,6 +702,9 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 67834 },	-- Fanlyr Silverthorn
 									["coord"] = { 20.9, 15.7, VALE_OF_ETERNAL_BLOSSOMS },
 									["races"] = HORDE_ONLY,
+									["groups"] = {
+										i(92425),	-- Ancient Korune Tablet (QI!)
+									},
 								}),
 								q(32222, {	-- Wanted: Chief Engineer Cogwrench
 									["sourceQuests"] = { 32108 },	-- Domination Point
