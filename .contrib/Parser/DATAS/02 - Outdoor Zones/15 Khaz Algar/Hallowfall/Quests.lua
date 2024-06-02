@@ -16,252 +16,264 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			--
 			-- looks like it is main story quest in zone
-			q(xx, {	-- Where The Light Touches
-				["sourceQuests"] = { xx },	-- xx // get thrown here via special alpha npc in stormwind
-				["provider"] = { "n", xxx },	-- Faerin
-				["coord"] = { x, y, HALLOWFALL },
+			--Hallowfall START
+			q(78658, {	-- The Hallowed Path
+				--can be started without finishing (achievement) zone?
+				["sourceQuests"] = { 79354 },	-- The Machine Speakers (unsure)
+				["provider"] = { "n", 213983 },	-- Anduin Wrynn
+				["coord"] = { 47.1, 32.2, THE_RINGING_DEEPS },
 			}),
-			q(xx, {	-- Tunnel Trouble
-				["sourceQuests"] = { xx },	-- Where The Light Touches
-				["provider"] = { "n", xxx },	-- Great Kyron
-				["coord"] = { x, y, HALLOWFALL },
+			--
+			q(78659, {	-- Where The Light Touches
+				["sourceQuests"] = { 78658 },	-- The Hallowed Path
+				["provider"] = { "n", 213116 },	-- Faerin
+				["coord"] = { 68.4, 45.1, HALLOWFALL },
 			}),
-			q(xx, {	-- Igniting Hope
-				["sourceQuests"] = { xx },	-- Where The Light Touches
-				["provider"] = { "n", xxx },	-- Faerin
-				["coord"] = { x, y, HALLOWFALL },
+			q(78665, {	-- Tunnel Trouble
+				["sourceQuests"] = { 78659 },	-- Where The Light Touches
+				["provider"] = { "n", 224310 },	-- Great Kyron
+				["coord"] = { 71.6, 57.6, HALLOWFALL },
+			}),
+			q(79999, {	-- Igniting Hope
+				["sourceQuests"] = { 78659 },	-- Where The Light Touches
+				["provider"] = { "n", 213116 },	-- Faerin
+				["coord"] = { 71.6, 57.6, HALLOWFALL },
 				["g"] = {
 					i(216669),	-- Shattered Remnants (QI!)
 				},
 			}),
-			q(xx, {	-- The Only Good Spider
-				["sourceQuests"] = { xx },	-- Tunnel Trouble
-				["provider"] = { "n", xxx },	-- Great Kyron
-				["coord"] = { x, y, HALLOWFALL },
+			q(78666, {	-- The Only Good Spider
+				["sourceQuests"] = { 78665 },	-- Tunnel Trouble
+				["provider"] = { "n", 224310 },	-- Great Kyron
+				["coord"] = { 70,1, 61.3, HALLOWFALL },
 			}),
-			q(xx, {	-- Rekindled Memories
-				["sourceQuests"] = { xx },	-- Igniting Hope (it is up for while you can turn in Igniting Hope but not up while not turn in state)
-				["provider"] = { "n", xxx },	-- Faerin
-				["coord"] = { x, y, HALLOWFALL },
+			q(78667, {	-- Rekindled Memories
+				--["sourceQuests"] = { xx },	-- Igniting Hope // require The Only Good Spider in quest log to pick this up
+				["provider"] = { "n", 213116 },	-- Faerin
+				["coord"] = { 70.1, 61.0, HALLOWFALL },
 				["g"] = {
 					i(213191),	-- Arathi Tinderbox (QI!)
+					i(220110),	-- Greaves of Sina's Stalwarts
 					i(220108),	-- Helm of Sina's Stalwarts
 				},
 			}),
-			q(xx, {	-- Rally on the Dawnbreaker
+			q(78668, {	-- Rally on the Dawnbreaker
 				["sourceQuests"] = { 
-					xx,	--	Rekindled Memories
-					xx,	--	The Only Good Spider
+					78667,	--	Rekindled Memories
+					78666,	--	The Only Good Spider
 				},
-				["provider"] = { "n", xxx },	-- Faerin
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 213116 },	-- Faerin
+				["coord"] = { 70.1, 61.0, HALLOWFALL },
 			}),
-			q(xx, {	-- Siege Weapon Sabotage
-				["sourceQuests"] = { xx },	-- Rally on the Dawnbreaker
-				["provider"] = { "n", xxx },	-- Faerin
-				["coord"] = { x, y, HALLOWFALL },
+			q(78670, {	-- Siege Weapon Sabotage
+				["sourceQuests"] = { 78668 },	-- Rally on the Dawnbreaker
+				["provider"] = { "n", 224945 },	-- Faerin
+				["coord"] = { 57.5, 64.4, HALLOWFALL },
 				["g"] = {
 					i(213630),	-- Keg of Black Powder (QI!)
 				},
 			}),
-			q(xx, {	-- For Their Eyes Only
-				["sourceQuests"] = { xx },	-- Rally on the Dawnbreaker
-				["provider"] = { "n", xxx },	-- Great Kyron
-				["coord"] = { x, y, HALLOWFALL },
+			q(78669, {	-- For Their Eyes Only
+				["sourceQuests"] = { 78668 },	-- Rally on the Dawnbreaker
+				["provider"] = { "n", 224946 },	-- Great Kyron
+				["coord"] = { 57.5, 64.4, HALLOWFALL },
 				["g"] = {
 					i(216658),	-- Sureki Shadecaster (QI!)
-					i(216659),	-- Sureki Shadecaster (QI!) // one item was with different word in description
-					i(216660),	-- Sureki Shadecaster (QI!) // so there could be 3 different itemIDs with same name
+					i(216659),	-- Sureki Shadecaster (QI!)
+					i(216660),	-- Sureki Shadecaster (QI!)
 				},
 			}),
-			q(xx, {	-- Zero out Xerosh
+			q(82836, {	-- Zero out Xerosh
 				["sourceQuests"] = { 
-					xx,	--	For Their Eyes Only
-					xx,	--	Siege Weapon Sabotage
+					78669,	--	For Their Eyes Only
+					78670,	--	Siege Weapon Sabotage
 				},
-				["provider"] = { "n", xxx },	-- Anduin Wrynn
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 213120 },	-- Anduin Wrynn
+				["coord"] = { 57.5, 64.3, HALLOWFALL },
 			}),
-			q(xx, {	-- The Light of the Dawntower
-				["sourceQuests"] = { xx },	-- Zero out Xerosh
-				["provider"] = { "n", xxx },	-- Anduin Wrynn
-				["coord"] = { x, y, HALLOWFALL },
+			q(78671, {	-- The Light of the Dawntower
+				["sourceQuests"] = { 82836 },	-- Zero out Xerosh
+				["provider"] = { "n", 213120 },	-- Anduin Wrynn
+				["coord"] = { 56.9, 68.3, HALLOWFALL },
 				["g"] = {
-					--	crit 'The Guilding Star' for achievement 'Hallowfall'
+					--crit 'The Guilding Star' for achievement 'Hallowfall'
 					i(220111),	-- Tower-Keeper's Grips
-					-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
+					i(220114),	-- Tower-Keeper's Waistguard
+					--c(2899),	-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
 			}),
-			q(xx, {	-- A Lamplighter's Duty
-				["sourceQuests"] = { xx },	-- The Light of the Dawntower
-				["provider"] = { "n", xxx },	-- Faerin
-				["coord"] = { x, y, HALLOWFALL },
+			q(78672, {	-- A Lamplighter's Duty
+				["sourceQuests"] = { 78671 },	-- The Light of the Dawntower
+				["provider"] = { "n", 213116 },	-- Faerin
+				["coord"] = { 54.1, 64.7, HALLOWFALL },
 			}),
-			q(xx, {	-- Tricks of the Dark
-				["sourceQuests"] = { xx },	-- A Lamplighter's Duty
-				["provider"] = { "n", xxx },	-- Faerin
-				["coord"] = { x, y, HALLOWFALL },
+			q(78929, {	-- Tricks of the Dark
+				["sourceQuests"] = { 78672 },	-- A Lamplighter's Duty
+				["provider"] = { "n", 214378 },	-- Faerin
+				["coord"] = { 53.9, 31.4, HALLOWFALL },
 			}),
-			q(xx, {	-- Fish Are Food, Not Friends
-				["sourceQuests"] = { xx },	-- A Lamplighter's Duty
-				["provider"] = { "n", xxx },	-- General Steelstrike
-				["coord"] = { x, y, HALLOWFALL },
+			q(78932, {	-- Fickle Fiendish Fish
+				["sourceQuests"] = { 78672 },	-- A Lamplighter's Duty
+				["provider"] = { "n", 214376 },	-- General Steelstrike
+				["coord"] = { 53.9, 31.5, HALLOWFALL },
 			}),
-			q(xx, {	-- Blades of the Arathi
+			q(78934, {	-- Blades of the Arathi
 				["sourceQuests"] = {
-					xx,	-- Fish Are Food, Not Friends
-					xx,	-- Tricks of the Dark
+					78932,	-- Fickle Fiendish Fish
+					78929,	-- Tricks of the Dark
 				},
-				["provider"] = { "n", xxx },	-- Faerin
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 214378 },	-- Faerin
+				["coord"] = { 53.9, 30.7, HALLOWFALL },
 				["g"] = {
-					i(220507),	-- Lamplighter's Torch (COSMETIC!) [but bind to Warbound]
-					i(220508),	-- Lamplighter's Unlit Torch (COSMETIC!) [but bind to Warbound]
+					i(220507),	-- Lamplighter's Torch (COSMETIC!)
+					i(220508),	-- Lamplighter's Unlit Torch (COSMETIC!)
 				},
 			}),
-			q(xx, {	-- Something FIshy
+			q(78936, {	-- Something FIshy
 				["sourceQuests"] = {
-					xx,	-- Fish Are Food, Not Friends	-- I'm currently unsure if this quest pop during Blades of the Arathi
-					xx,	-- Tricks of the Dark			-- or this two quest, need more data
+					78932,	-- Fickle Fiendish Fish	-- I'm currently unsure if this quest pop during Blades of the Arathi
+					78929,	-- Tricks of the Dark	-- or this two quest, need more data
 				},
-				["provider"] = { "n", xxx },	-- General Steelstrike
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 214376 },	-- General Steelstrike
+				["coord"] = { 55.2, 32.7, HALLOWFALL },
 			}),
-			q(xx, {	-- Shadow Upon Shadow
+			q(78937, {	-- Shadow Upon Shadow
 				["sourceQuests"] = {
-					xx,	-- Blades of the Arathi
-					xx,	-- Something FIshy
+					78934,	-- Blades of the Arathi
+					78936,	-- Something FIshy
 				},
-				["provider"] = { "n", xxx },	-- Faerin
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 221100 },	-- Faerin
+				["coord"] = { 55.1, 32.7, HALLOWFALL },
 			}),
-			q(xx, {	-- The Darkened Flame
-				["sourceQuests"] = { xx },	-- Shadow Upon Shadow
-				["provider"] = { "n", xxx },	-- Alleria Windrunner
-				["coord"] = { x, y, HALLOWFALL },
+			q(78939, {	-- The Darkened Flame
+				["sourceQuests"] = { 78937 },	-- Shadow Upon Shadow
+				["provider"] = { "n", 214405 },	-- Alleria Windrunner
+				["coord"] = { 55.8, 41.3, HALLOWFALL },
 			}),
-			q(xx, {	-- Ever Deeper Shadow
-				["sourceQuests"] = { xx },	-- The Darkened Flame
-				["provider"] = { "n", xxx },	-- Faerin Lothar
-				["coord"] = { x, y, HALLOWFALL },
+			q(78951, {	-- Ever Deeper Shadow
+				["sourceQuests"] = { 78939 },	-- The Darkened Flame
+				["provider"] = { "n", 214404 },	-- Faerin Lothar
+				["coord"] = { 56.2, 42.0, HALLOWFALL },
 			}),
-			q(xx, {	-- The Final Resistance
-				["sourceQuests"] = { xx },	-- Ever Deeper Shadow
-				["provider"] = { "n", xxx },	-- Faerin Lothar
-				["coord"] = { x, y, HALLOWFALL },	-- possible other mapID since in caverns
+			q(78952, {	-- The Final Resistance
+				["sourceQuests"] = { 78951 },	-- Ever Deeper Shadow
+				["provider"] = { "n", 214413 },	-- Faerin Lothar
+				["coord"] = { 55.8, 40.5, HALLOWFALL },
 			}),
-			q(xx, {	-- The Light at the End of the Tunnel
-				["sourceQuests"] = { xx },	-- Ever Deeper Shadow
-				["provider"] = { "n", xxx },	-- Faerin Lothar
-				["coord"] = { x, y, HALLOWFALL },	-- possible other mapID since in caverns
+			q(81690, {	-- The Light at the End of the Tunnel
+				["sourceQuests"] = { 78952 },	-- Ever Deeper Shadow
+				["provider"] = { "n", 221733 },	-- Faerin Lothar
+				["coord"] = { 55.1, 40.2, HALLOWFALL },
 			}),
-			q(xx, {	-- Restore the Flame
-				["sourceQuests"] = { xx },	-- The Light at the End of the Tunnel
-				["provider"] = { "n", xxx },	-- Faerin Lothar
-				["coord"] = { x, y, HALLOWFALL },
+			q(78954, {	-- Restore the Flame
+				["sourceQuests"] = { 81690 },	-- The Light at the End of the Tunnel
+				["provider"] = { "n", 221733 },	-- Faerin Lothar
+				["coord"] = { 55.8, 43.4, HALLOWFALL },
 				["g"] = {
 					--	crit 'Gathering Shadows' for achievement 'Hallowfall'
 					i(220125),	-- Lamplighter's Epaulets
+					i(220127),	-- Lamplighter's Sabatons
 					-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
 			}),
-			q(xx, {	-- To Mereldar
-				["sourceQuests"] = { xx },	-- Restore the Flame
-				["provider"] = { "n", xxx },	-- Faerin Lothar
-				["coord"] = { x, y, HALLOWFALL },
+			q(78607, {	-- To Mereldar
+				["sourceQuests"] = { 78954 },	-- Restore the Flame
+				["provider"] = { "n", 214404 },	-- Faerin Lothar
+				["coord"] = { 56.2, 42.0, HALLOWFALL },
 			}),
-			q(xx, {	-- The Bastion of Hallowfall
-				["sourceQuests"] = { xx },	-- To Mereldar
-				["provider"] = { "n", xxx },	-- General Steelstrike
-				["coord"] = { x, y, HALLOWFALL },
+			q(78613, {	-- The Bastion of Hallowfall
+				["sourceQuests"] = { 78607 },	-- To Mereldar
+				["provider"] = { "n", 213108 },	-- General Steelstrike
+				["coord"] = { 43.4, 48.6, HALLOWFALL },
 				["g"] = {
-					i(),	-- A Round of Drinks (QI!)
+					i(217708),	-- A Round of Drinks (QI!)
 				},
 			}),
-			q(xx, {	-- Nightwatch
-				["sourceQuests"] = { xx },	-- The Bastion of Hallowfall
-				["provider"] = { "n", xxx },	-- Alleria Windrunner
-				["coord"] = { x, y, HALLOWFALL },
+			q(79297, {	-- Nightwatch
+				["sourceQuests"] = { 78613 },	-- The Bastion of Hallowfall
+				["provider"] = { "n", 218182 },	-- Alleria Windrunner
+				["coord"] = { 42.8, 55.7, HALLOWFALL },
 				["g"] = {
-					i(),	-- Order of Night Propaganda (QI!)
-					i(),	-- Order of Night Propaganda (QI!)
-					i(),	-- Order of Night Propaganda (QI!)
+					i(217995),	-- Order of Night Propaganda (QI!)
+					i(217993),	-- Order of Night Propaganda (QI!)
+					--i(),	-- Order of Night Propaganda (QI!) // wasn't able to find third version in new build
 					-- possibly more?
 				},
 			}),
-			q(xx, {	-- Spar Day
-				["sourceQuests"] = { xx },	-- Nightwatch
-				["provider"] = { "n", xxx },	-- General Steelstrike
-				["coord"] = { x, y, HALLOWFALL },
+			q(78626, {	-- Spar Day
+				["sourceQuests"] = { 79297 },	-- Nightwatch
+				["provider"] = { "n", 213108 },	-- General Steelstrike
+				["coord"] = { 41.3, 53.0, HALLOWFALL },
 			}),
-			q(xx, {	-- Mereldar's Light
-				["sourceQuests"] = { xx },	-- Spar Day
-				["provider"] = { "n", xxx },	-- General Steelstrike
-				["coord"] = { x, y, HALLOWFALL },
+			q(78614, {	-- Mereldar's Light
+				["sourceQuests"] = { 78626 },	-- Spar Day
+				["provider"] = { "n", 213108 },	-- General Steelstrike
+				["coord"] = { 41.3, 53.0, HALLOWFALL },
 			}),
-			q(xx, {	-- The Bell Tolls
-				["sourceQuests"] = { xx },	-- Mereldar's Light
-				["provider"] = { "n", xxx },	-- Faerin Lothar
-				["coord"] = { x, y, HALLOWFALL },
+			q(78615, {	-- The Bell Tolls
+				["sourceQuests"] = { 78614 },	-- Mereldar's Light
+				["provider"] = { "n", 220124 },	-- Faerin Lothar
+				["coord"] = { 41.7, 55.5, HALLOWFALL },
 			}),
-			q(xx, {	-- Crossroads of Twilight
-				["sourceQuests"] = { xx },	-- The Bell Tolls
-				["provider"] = { "n", xxx },	-- General Steelstrike
-				["coord"] = { x, y, HALLOWFALL },
+			q(78620, {	-- Crossroads of Twilight
+				["sourceQuests"] = { 78615 },	-- The Bell Tolls
+				["provider"] = { "n", 213108 },	-- General Steelstrike
+				["coord"] = { 41.1, 54.8, HALLOWFALL },
 			}),
-			q(xx, {	-- The Shadow Rising
-				["sourceQuests"] = { xx },	-- The Bell Tolls
-				["provider"] = { "n", xxx },	-- Alleria Windrunner
-				["coord"] = { x, y, HALLOWFALL },
+			q(78621, {	-- The Shadow Rising
+				["sourceQuests"] = { 78615 },	-- The Bell Tolls
+				["provider"] = { "n", 214402 },	-- Alleria Windrunner
+				["coord"] = { 41.1, 54.7, HALLOWFALL },
 			}),
-			q(xx, {	-- A Candle in the Dark
+			q(78624, {	-- A Candle in the Dark
 				["sourceQuests"] = {
-					xx,	-- Crossroads of Twilight
-					xx,	-- The Shadow Rising
+					78620,	-- Crossroads of Twilight
+					78621,	-- The Shadow Rising
 				},
-				["provider"] = { "n", xxx },	-- TODO: I didn't look.
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 213108 },	-- General Steelstrike
+				["coord"] = { 34.1, 54.7, HALLOWFALL },
 				["g"] = {
 					i(220133),	-- Flameguard's Band
 				},
 			}),
-			q(xx, {	-- Consecrated Cleanup
-				["sourceQuests"] = { xx },	-- A Candle in the Dark
-				["provider"] = { "n", xxx },	-- General Steelstrike
-				["coord"] = { x, y, HALLOWFALL },
+			q(79089, {	-- Consecrated Cleanup
+				["sourceQuests"] = { 78624 },	-- A Candle in the Dark
+				["provider"] = { "n", 225188 },	-- General Steelstrike
+				["coord"] = { 33.6, 54.6, HALLOWFALL },
 			}),
-			q(xx, {	-- The Flame Still Burns
-				["sourceQuests"] = { xx },	-- A Candle in the Dark
-				["provider"] = { "n", xxx },	-- Faerin Lothar
-				["coord"] = { x, y, HALLOWFALL },
+			q(80049, {	-- The Flame Still Burns
+				["sourceQuests"] = { 78624 },	-- A Candle in the Dark
+				["provider"] = { "n", 213107 },	-- Faerin Lothar
+				["coord"] = { 33.6, 54.8, HALLOWFALL },
 			}),
-			q(xx, {	-- The Final Front
+			q(78627, {	-- The Final Front
 				["sourceQuests"] = {
-					xx,	-- Consecrated Cleanup
-					xx,	-- The Flame Still Burns
+					79089,	-- Consecrated Cleanup
+					80049,	-- The Flame Still Burns
 				},
-				["provider"] = { "n", xxx },	-- General Steelstrike
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 225188 },	-- General Steelstrike
+				["coord"] = { 33.6, 54.6, HALLOWFALL },
 			}),
-			q(xx, {	-- Running on Reservers
-				["sourceQuests"] = { xx },	-- The Final Front
-				["provider"] = { "n", xxx },	-- Faerin Lothar
-				["coord"] = { x, y, HALLOWFALL },
+			q(78629, {	-- Running on Reservers
+				["sourceQuests"] = { 78627 },	-- The Final Front
+				["provider"] = { "n", 213107 },	-- Faerin Lothar
+				["coord"] = { 39.0, 71.6, HALLOWFALL },
 			}),
-			q(xx, {	-- Trapdoor Sprung
-				["sourceQuests"] = { xx },	-- The Final Front
-				["provider"] = { "n", xxx },	-- General Steelstrike
-				["coord"] = { x, y, HALLOWFALL },
+			q(78628, {	-- Trapdoor Sprung
+				["sourceQuests"] = { 78627 },	-- The Final Front
+				["provider"] = { "n", 213108 },	-- General Steelstrike
+				["coord"] = { 39.0, 71.6, HALLOWFALL },
 			}),
-			q(xx, {	-- The Reckoning
+			q(78630, {	-- The Reckoning
 				["sourceQuests"] = {
-					xx,	-- Running on Reservers
-					xx,	-- Trapdoor Sprung
+					78629,	-- Running on Reservers
+					78628,	-- Trapdoor Sprung
 				},
-				["provider"] = { "n", xxx },	-- Faerin Lothar
-				["coord"] = { x, y, HALLOWFALL },
+				["provider"] = { "n", 213107 },	-- Faerin Lothar
+				["coord"] = { 38.8, 81.5, HALLOWFALL },
 				["g"] = {
 					-- crit 'Hope in Solidarity' for achievement 'Hallowfall'.
+					i(220132),	-- Breastplate of the Reckoning's Vengeance
 					i(220129),	-- Breeches of the Reckoning's Vengeance
 					-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
@@ -511,7 +523,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--
 			--	Bonus Objectives
 			q(81568, {	-- Release the Beasts
-				--["sourceQuests"] = { xx },	-- Tricks of the Dark OR Fish Are Food, Not Friends
+				--["sourceQuests"] = { xx },	-- Tricks of the Dark OR Fickle Fiendish Fish
 				["coord"] = { 55.2, 26.8, HALLOWFALL },
 				["g"] = {
 					i(217352),	-- Gasping Fish (QI!)
@@ -847,6 +859,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			--
+			--Delves?
+			q(83767, {	-- DELVER'S CALL: The Sinkhole
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "o", 455704 },	-- DELVER'S CALL: The Sinkhole
+				["coord"] = { 48.7, 39.5, HALLOWFALL },
+				["g"] = {
+					--c(2815),	-- 100x Resonance Crystals
+				},
+			}),
+			--new sides
+			q(78686, {	-- Lights Out
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 214019 },	-- Aegor Irynbawnd
+				["coord"] = { 49.2, 41.1, HALLOWFALL },
+			}),
+
 			-- zone drop quest
 			q(79222, {	-- Shadow-Hardened Mainspring
 				["provider"] = { "i", 212330 },	-- Shadow-Hardened Mainspring
@@ -993,11 +1021,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(xx),	-- Stay a while and listen - Anduin Wrynn, during questID ? (Blades of the Arathi)
-	q(xx),	-- Stay a while and listen - Alleria Windrunner, during questID ? (Nightwatch)
-	q(xx),	-- Stay a while and listen - Faerin Lothar, during questID ? (Nightwatch)
-	q(xx),	-- Stay a while and listen - General Steelstrike, after turn in questID ? (Spar Day)
-	q(xx),	-- Stay a while and listen - Faerin Lothar, after turn in questID ? (The Flame Still Burns)
+	q(83614),	-- triggered after turn in questID 78658 (The Hallowed Path) (faction unlock?)
+	q(81594),	-- triggered after turn in questID 78932 (Fickle Fiendish Fish) (could be rp unlock for 'Stay a while and listen' Faerin during Blades of the Arathi? Activation of this dialog didn't fire any quest)
+	q(79971),	-- Stay a while and listen - Alleria Windrunner, during questID 79971 (Nightwatch)
+	q(79706),	-- Stay a while and listen - Faerin Lothar, during questID 79971 (Nightwatch)
+	q(81636),	-- Stay a while and listen - General Steelstrike, after turn in questID 78626 (Spar Day)
+	q(81631),	-- Stay a while and listen - Faerin Lothar, after pick up questID 80049 (The Flame Still Burns)
 	--
 	q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
 	--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
@@ -1011,7 +1040,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Question 2
 	q(83301),	-- 3rd option (Patience and respect) / require either Disturbed Lyns Treasure or Care and Feeding of the Imperial Lynx being flagged (otherwise this option won't be here)
 	-- Question 3
-	q(),	-- 3rd option / unknown requirements
+	--q(),	-- 3rd option / unknown requirements
 	--
 	q(82063),	-- A Worn Down Book @ 25.1, 53.7
 	q(82064),	-- A Weathered Tome @ 78.2, 40.3

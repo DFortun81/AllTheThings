@@ -1803,6 +1803,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220255);	-- Darkened Residue
 --i(225813);	-- Darkened Ritual Stone
 --i(225795);	-- Dented Pocketwatch
+--i(220229);	-- Dormant Core
 --i(220271);	-- Downy Clump
 --i(225836);	-- Drained Elemental Mote
 --i(225792);	-- Elegant Pedipalp Wrappings
@@ -1836,6 +1837,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220258);	-- Rotting Bones
 --i(220257);	-- Pulsing Pustules
 --i(220261);	-- Pungent Mushroom
+--i(220228);	-- Quartz Growth
 --i(220288);	-- Quivering Tail
 --i(220362);	-- Ragged Rope
 --i(132183);	-- Razor Tooth // Alex: I bug reported this item drop in TWW on alpha due to wierd itemID range
@@ -1845,6 +1847,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(225807);	-- Rune-Carved Bone
 --i(220266);	-- Sharpened Digging Claws
 --i(220361);	-- Sharpened Steel Implement
+--i(220231);	-- Skiatic Vessel
 --i(220299);	-- Sleek Beak
 --i(220226);	-- Slime-Coated Membrane
 --i(225810);	-- Smoked Visor

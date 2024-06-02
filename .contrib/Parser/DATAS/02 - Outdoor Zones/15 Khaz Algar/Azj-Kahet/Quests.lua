@@ -15,13 +15,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			--
-			flaaged as completed after quest tauren throw you into zone
-			q(78630),	-- The Reckoning, could be last quest from Hallowfall?
-			q(82202),	-- hqt, could be alpha specific?
+			--q(82202),	-- hqt, could be alpha specific?
 			--
 			-- Zone story
 			q(78384, {	-- Chasing The Light
-				--["sourceQuests"] = { 78630 },	-- The Reckoning (?)
+				["sourceQuests"] = { 78630 },	-- The Reckoning // but quest was up without turn in (could be due to alt thing)
 				["provider"] = { "n", 211752 },	-- Alleria Windrunner
 				["coord"] = { 32.0, 47.1, AZJ_KAHET },
 				["g"] = {
@@ -31,7 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			q(78350, {	-- Heroes Never Die
-				--["sourceQuests"] = { 78630 },	-- The Reckoning (?)
+				["sourceQuests"] = { 78630 },	-- The Reckoning // quest was up without turn in
 				["provider"] = { "n", 211699 },	-- Faerin
 				["coord"] = { 32.1, 46.6, AZJ_KAHET },
 				["g"] = {

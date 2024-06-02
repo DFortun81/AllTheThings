@@ -21,6 +21,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 				q(82523, {	-- Candle Kingbreaker
 					["coord"] = { 64.3, 33.6, THE_RINGING_DEEPS },
+					["g"] = {
+						i(223896),	-- Liberated Scrap (QI!)
+					},
 				}),
 				q(82256, {	-- Capturing the Cataract's Creatures
 					["coord"] = { 52.9, 47.8, THE_RINGING_DEEPS },

@@ -30,6 +30,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 				q(82088, {	-- Kobyss Kibosh
 					["coord"] = { 35.4, 54.7, HALLOWFALL },
+					--["g"] = {
+					--	i(225560),	-- Ragefin Necrostaff // unsure if it is just rng from mob in this area or only during wq?
+					--},
 				}),
 				q(82582, {	-- Mired in Shadow
 					["coord"] = { 74.8, 50.3, HALLOWFALL },
@@ -54,6 +57,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["g"] = {
 						i(213630),	-- Keg of Black Powder (QI!)
 					},
+				}),
+				q(81815, {	-- Skyrider Racing - Dunelle's Detour
+					-- normal - 80256 / advanced - 80265 / reversed - 80271
+					["coord"] = { 72.8, 38.4, HALLOWFALL },
 				}),
 				q(81822, {	-- Skyrider Racing - Mereldar Meander
 					-- normal - 80260 / advanced - 80269 / reversed - 80275

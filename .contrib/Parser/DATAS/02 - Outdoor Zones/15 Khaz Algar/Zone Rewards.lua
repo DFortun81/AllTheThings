@@ -57,10 +57,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			i(220337),	-- Begrimed Greatbelt
 			i(220338),	-- Begrimed Vambraces
 			--wqs gear
+			i(224697),	-- Sedimentary Armplates // The Ringing Deeps
 			i(224693),	-- Sedimentary Helm // The Ringing Deeps
 		}),
 		filter(TRINKET_F, {
-			i(224665),	-- Gem-Studded Pendant // Unsure if it is zone specific (Hallowfall) or generic xpac rewards
+			i(224665),	-- Gem-Studded Pendant // Unsure if it is zone specific (Hallowfall) or generic xpac rewards, neck
+			i(224660),	-- Gem-Studded Band // Isle of Dorn, ring
+			i(225649),	-- Quickwick Candlestick // Hallowfall, trinket
+			i(225647),	-- Shining Arathor Insignia // Hallowfall, trinket, received instead of trinket above from WQs
+			i(225654),	-- Rapid Evolution Serum // Hallowfall, trinket
 		}),
 		n(WEAPONS, {
 			i(224707),	-- Ancient Forged Spear // unsure if it zone specific (Azj-Kahet) or genereic xpac reward

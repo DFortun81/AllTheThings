@@ -197,11 +197,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 218714 },	-- Moira Thaurissan
 				["coord"] = { 47.1, 33.2, THE_RINGING_DEEPS },
 			}),
-			q(79683, {	-- Home is Where the Candle Is // could be Renown 2 or side quest?
-				["sourceQuests"] = { 80082 },	-- Back to Gundargaz
-				["provider"] = { "n", 222803 },	-- Skitter
-				["coord"] = { 47.1, 33.33, THE_RINGING_DEEPS },
-			}),
 			q(78685, {	-- The Tunnel's End
 				["sourceQuests"] = { 80079 },	-- A Wrench in the Works
 				["provider"] = { "n", 218715 },	-- Speaker Brinthe
@@ -394,13 +389,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["g"] = {
 					i(224449),	-- Fearbreaker's Echo
 				},
-			}),
-			--Hallowfall START
-			q(78658, {	-- The Hallowed Path
-				--can be started without finishing (achievement) zone?
-				["sourceQuests"] = { 79354 },	-- The Machine Speakers (unsure)
-				["provider"] = { "n", 213983 },	-- Anduin Wrynn
-				["coord"] = { 47.1, 32.2, THE_RINGING_DEEPS },
 			}),
 			--
 			--
@@ -750,6 +738,220 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(219379),	-- Brax's Brass Knuckle
 				},
 			}),
+			--new one
+			q(78562, {	-- Discarded and Broken
+				["sourceQuests"] = { 78838 },	-- Cogs in the Machine
+				["provider"] = { "n", 212695 },	-- Machinist Kittrin
+				["coord"] = { 48.2, 33.4, THE_RINGING_DEEPS },
+				["g"] = {
+					i(210732),	-- Machinist's Calipers (QI!)
+					i(210733),	-- Machinist's Gauge (QI!)
+					i(210734),	-- Machinist's Wrench (QI!)
+				},
+			}),
+			q(78563, {	-- The Weight of a World
+				["sourceQuests"] = { 78562 },	-- Discarded and Broken
+				["provider"] = { "n", 212695 },	-- Machinist Kittrin
+				["coord"] = { 48.2, 33.4, THE_RINGING_DEEPS },
+				["g"] = {
+					i(210740),	-- Machinist's Calibrated Weight (QI!)
+				},
+			}),
+			q(78564, {	-- Reforged Purpose
+				["sourceQuests"] = { 78563 },	-- The Weight of a World
+				["provider"] = { "n", 212695 },	-- Machinist Kittrin
+				["coord"] = { 48.2, 33.4, THE_RINGING_DEEPS },
+				["g"] = {
+					i(210740),	-- Machinist's Calibrated Weight (QI!)
+				},
+			}),
+			q(78900, {	-- On Cold, Dark Wings
+				["sourceQuests"] = { 78838 },	-- Cogs in the Machine
+				["provider"] = { "n", 213869 },	-- Watcher Toki
+				["coord"] = { 48.0, 34.8, THE_RINGING_DEEPS },
+			}),
+			-- Kobolds quests
+			q(82946, {	-- Rollin' Down In the Deeps
+				["isDaily"] = true,
+				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// yet I'm unsure
+				["provider"] = { "n", 216164 },	-- Gnawbles
+				["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
+				["g"] = {
+					--c(2902),	-- The Assembly of the Deeps Commendation, this is one-time Warband bonus
+				},
+			}),
+			q(79343, {	-- Everyday I'm Snufflin'
+				["isDaily"] = true,
+				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// renown 2?
+				["provider"] = { "n", 216164 },	-- Gnawbles
+				["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
+			}),
+			q(79683, {	-- Home is Where the Candle Is
+				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// but could be renown?
+				["provider"] = { "n", 222803 },	-- Skitter
+				["coord"] = { 47.1, 33.3, THE_RINGING_DEEPS },
+			}),
+			q(81999, {	-- New Home, New Candle!
+				--["sourceQuests"] = { 80082 },	-- Back to Gundargaz
+				["provider"] = { "n", 216567 },	-- Janky
+				["coord"] = { 47.8, 35.4, THE_RINGING_DEEPS },
+			}),
+			q(79552, {	-- Hot Wax
+				["sourceQuests"] = { 81999 },	-- New Home, New Candle!
+				["provider"] = { "n", 219674 },	-- Janky
+				["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+				["g"] = {
+					i(216670),	-- Fire Bee Wax (QI!)
+				},
+			}),
+			q(79998, {	-- Mite Not Right
+				["sourceQuests"] = { 81999 },	-- New Home, New Candle!
+				["provider"] = { "n", 219674 },	-- Janky
+				["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+			}),
+			q(80000, {	-- Beebiter
+				["sourceQuests"] = {
+					79552,	-- How Wax
+					79998,	-- Mite Not Right
+				},
+				["provider"] = { "n", 219674 },	-- Janky
+				["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+			}),
+			q(80202, {	-- Hot Pollenate-o
+				["sourceQuests"] = {
+					79552,	-- How Wax
+					79998,	-- Mite Not Right
+				},
+				["provider"] = { "n", 219674 },	-- Janky
+				["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+			}),
+			q(79565, {	-- Janky Candles
+				["sourceQuests"] = {
+					80000,	-- Beebiter
+					80202,	-- Hot Pollenate-o
+				},
+				["provider"] = { "n", 219674 },	-- Janky
+				["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+				["g"] = {
+					i(224262),	-- Begrudgingly Poured Cinderbrew (QI!)
+					i(224253),	-- Elementally Active Coal (QI!)
+					i(217395),	-- Freshly Smithed Tools (QI!)
+					i(216681),	-- Merchant Stall Parts (QI!)
+					i(220163),	-- [PH] Cinder Bee (PET!) (TODO: placeholder)
+				},
+			}),
+			q(80058, {	-- Kobold Kleanup
+				--["sourceQuests"] = { 80082 },	-- Back to Gundargaz
+				["provider"] = { "n", 216568 },	-- Fourman Grimes
+				["coord"] = { 47.8, 35.4, THE_RINGING_DEEPS },
+			}),
+			q(79556, {	-- On the Job Training
+				["sourceQuests"] = { 80058 },	-- Kobold Kleanup
+				["provider"] = { "n", 217131 },	-- Fourman Grimes
+				["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
+			}),
+			q(79680, {	-- Pipe Patching
+				["sourceQuests"] = { 79556 },	-- On the Job Training
+				["provider"] = { "n", 217131 },	-- Fourman Grimes
+				["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
+			}),
+			q(79681, {	-- Plumber Power
+				["sourceQuests"] = { 79556 },	-- On the Job Training
+				["provider"] = { "n", 217131 },	-- Fourman Grimes
+				["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
+			}),
+			q(79682, {	-- Critical Pressure!
+				["sourceQuests"] = {
+					79680,	-- Pipe Patching
+					79681,	-- Plumber Power
+				},
+				["provider"] = { "n", 217131 },	-- Fourman Grimes
+				["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
+				["g"] = {
+					i(220162),	-- [PH] Toy, Pipe Toy (TOY!) (TODO: but not really, atm)
+					--c(2902),	-- The Assembly of the Deeps Commendation, one-time Warband bonus
+				},
+			}),
+			q(79504, {	-- Dripsy Forgot Her Candle
+				--["sourceQuests"] = { 80082 },	-- Back to Gundargaz
+				["provider"] = { "n", 216438 },	-- Granny Scribbles
+				["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
+				--["maps"] = { x },	-- could be scenario mapID but it is not here?
+				["g"] = {
+					i(217997),	-- Shiny Rock (QI!)
+					i(217998),	-- Sweetmeat (QI!)
+				},
+			}),
+			q(79505, {	-- Chomps and the Cave-In
+				["sourceQuests"] = { 79504 },	-- Dripsy Forgot Her Candle
+				["provider"] = { "n", 216438 },	-- Granny Scribbles
+				["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
+				--["maps"] = { x },	-- could be scenario mapID
+			}),
+			q(79507, {	-- The Day the Stoneheads Came
+				["sourceQuests"] = { 79505 },	-- Chomps and the Cave-In
+				["provider"] = { "n", 216438 },	-- Granny Scribbles
+				["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
+				--["maps"] = { x },	-- could be scenario mapID
+				["g"] = {
+					i(224403),	-- Heirloom Wax (QI!)
+					i(224402),	-- Krafting Tools (QI!)
+					i(224401),	-- Run Far Food (QI!)
+					i(224400),	-- See Where Running Candles (QI!)
+					i(218249),	-- Softsnout's Favorite Shovel (QI!)
+				},
+			}),
+			q(79508, {	-- Mipsy Mole-Rider
+				["sourceQuests"] = { 79507 },	-- The Day the Stoneheads Came
+				["provider"] = { "n", 216438 },	-- Granny Scribbles
+				["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
+				--["maps"] = { x },	-- could be scenario mapID
+			}),
+			q(79510, {	-- The Wickless Candle
+				["sourceQuests"] = { 79508 },	-- Mipsy Mole-Rider
+				["provider"] = { "n", 216438 },	-- Granny Scribbles
+				["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
+				--["maps"] = { x },	-- could be scenario mapID
+				["g"] = {
+					i(219224),	-- Prooftelling Flower (QI!)
+					--c(2902),	-- The Assembly of the Deeps Commendation, this is one-time Warband bonus
+				},
+			}),
+			-- Delves?
+			q(83766, {	-- DELVER'S CALL: Dread Pit
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 227477 },	-- Brann Bronzebeard
+				["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
+				["g"] = {
+					--c(2815),	-- x100 Resonance Crystals
+				},
+			}),
+			-- Area where Janky quest leads (New Home, New Candle)
+			q(82952, {	-- An Opportunity to Relax
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 224966 },	-- Mindi Maxlof
+				["coord"] = { 53.8, 43.8, THE_RINGING_DEEPS },
+				["g"] = {
+					i(224417),	-- Stack of Flyers (QI!)
+				},
+			}),
+			q(82956, {	-- To Opportunity Point
+				["sourceQuests"] = { 82952 },	-- An Opportunity to Relax
+				["provider"] = { "n", 224966 },	-- Mindi Maxlof
+				["coord"] = { 53.8, 43.8, THE_RINGING_DEEPS },
+				["g"] = {
+					i(224551),	-- Drink Voucher (QI!)
+				},
+			}),
+			q(82195, {	-- Rust and Redemption
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "o", 443532 },	-- Rusted Lever
+				["coord"] = { 53.3, 44.6, THE_RINGING_DEEPS },
+				["g"] = {
+					i(221970),	-- Pure Crawler Extract (QI!)
+				},
+			}),
+			--
 			-- Bonus Objectives
 			q(82615, {	-- Reclaiming the Waterworks
 				["coord"] = { 44.7, 44.5, THE_RINGING_DEEPS },
