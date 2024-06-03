@@ -101,6 +101,7 @@ HeaderAssignments = {
 	["Deadly Gladiator"] = -1000131,
 	["December"] = -1000160,
 	["Defeat a Lieutenant"] = -1000191,
+	["Delves"] = -1000907,
 	["Demon Trainer"] = -1000015,
 	["Detention Block"] = -1000169,
 	["Diablo 20th Anniversary"] = -1000365,
@@ -425,4 +426,4 @@ HeaderAssignments = {
 	["Zone Drops"] = -1000044,
 	["Zone Rewards"] = -1000045,
 };
-NextHeaderID = -1000907;
+NextHeaderID = -1000908;

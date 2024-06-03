@@ -9552,13 +9552,12 @@ function app:GetDataCache()
 	db.g = app.Categories.Instances;
 	db.icon = app.asset("Category_D&R");
 	tinsert(g, db);
-
+	
 	-- Delves
 	if app.Categories.Delves then
-		db = app.CreateRawText("Delves"); -- TODO: Add localized name for Delves
-		db.g = app.Categories.Delves;
-		db.icon = "Interface\\Icons\\Inv_misc_questionmark"	-- TODO: Add Delves icon
-		tinsert(g, db);
+		tinsert(g, app.CreateNPC(app.HeaderConstants.DELVES, {
+			g = app.Categories.Delves,
+		}));
 	end
 
 	-- Zones
