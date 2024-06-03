@@ -5858,7 +5858,6 @@ root(ROOTS.Unsorted, {
 					i(216457),	-- Pandaren Standard
 					i(216478),	-- Pandaren Flamberge
 					i(216553),	-- Norushen's Tower Shield
-					i(216593),	-- Bulwark of Twinned Despair
 					i(216597),	-- Eyes of the Doomed
 				}),
 			}),

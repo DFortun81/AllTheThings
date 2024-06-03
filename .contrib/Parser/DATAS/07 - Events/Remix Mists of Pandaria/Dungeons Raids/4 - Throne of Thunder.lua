@@ -256,6 +256,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215655),	-- Amun-Thoth, Sul's Spiritrender
 						i(216404),	-- Blade of the Sanguine Ritual
 						i(216407),	-- Blade of the Sanguine Ritual
+						i(216593),	-- Bulwark of Twinned Despair
 						i(216458),	-- Caduceus of Pure Moods
 						i(216461),	-- Caduceus of Pure Moods
 						i(216462),	-- Dinomancer's Spire
@@ -518,6 +519,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216015),	-- Shellsplitter Battleaxe
 						i(216587),	-- Shield of the Gloaming
 						i(215966),	-- Soulblade of the Storm
+						i(215887),	-- Soulwood Spire
 						i(216447),	-- Sphere of Arcing Lightning
 						i(216018),	-- Stormbreaker's Waraxe
 						i(216467),	-- Suen-Wo, Spire of the Rising Sun

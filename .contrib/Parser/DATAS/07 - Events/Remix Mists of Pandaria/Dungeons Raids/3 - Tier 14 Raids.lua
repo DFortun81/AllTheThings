@@ -162,22 +162,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215854),	-- Jin'ya, Orb of the Watercaller (MSV LFR / HoF LFR)
 					i(215857),	-- Jin'ya, Orb of the Watercaller (MSV LFR / HoF LFR)
 					i(215930),	-- Kilrak, Fangs of Terror (HoF LFR)
-					i(215929),	-- Kilrak, Fangs of Terror (wowhead: normal only drop)
 					i(215932),	-- Kilrak, Fangs of Terror (MSV LFR)
 					i(215734),	-- Kri'tak, Scepter of the Swarm
-					i(215735),	-- Kri'tak, Scepter of the Swarm (wowhead: normal only drop)
 					i(215737),	-- Kri'tak, Scepter of the Swarm (MSV LFR 1st wing)
 					i(215934),	-- Loshan, Fear Incarnate (MSV LFR)
-					i(215935),	-- Loshan, Fear Incarnate (wowhead: normal only drop)
 					i(215936),	-- Loshan, Fear Incarnate (MSV LFR)
 					i(216531),	-- Protection of the Emperor (MSV LFR)
 					i(215798),	-- Qiang's Unbreakable Polearm (HoF LFR)
-					i(215799),	-- Qiang's Unbreakable Polearm (wowhead: normal only drop)
 					i(215801),	-- Qiang's Unbreakable Polearm (HoF LFR)
 					i(215585),	-- Regail's Fulminating Blade (MSV LFR / ToES LFR)
 					i(215588),	-- Regail's Fulminating Blade (HoF LFR)
 					i(215925),	-- Scimitar of Seven Stars (ToeS LFR)
-					i(215926),	-- Scimitar of Seven Stars (wowhead: normal only drop)
 					i(215928),	-- Scimitar of Seven Stars (MSV LFR)
 					i(215505),	-- Shin'ka, the Tyrant's Greataxe
 					i(215591),	-- Soulsever (MSV LFR)
@@ -308,42 +303,37 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				n(WEAPONS, {
-					i(215583),	-- Blade of the Seven Stars (wowhead confirmed)
-					i(215791),	-- Bo-Ris, Spear of Night (wowhead confirmed)
-					i(215840),	-- Brazier of the Eternal Empire (wowhead confirmed)
-					i(215556),	-- Crossbow of Forgotten Glory (wowhead confirmed)
-					i(215906),	-- Do-tharak, the Foebreaker (wowhead confirmed)
-					i(215482),	-- Elegion, the Star Cleaver (wowhead confirmed)
-					i(215529),	-- Fang Kung, Emperor's Legacy (wowhead confirmed)
-					i(215847),	-- Fearspeaker's Warstaff (Alex: double up into LFR, MSV LFR 2nd wing) (not on wowhead)
-					i(215848),	-- Fearspeaker's Warstaff (wowhead confirmed) (player confirmed)
-					i(215637),	-- Fist of Shek'zeer (wowhead confirmed)
-					i(215727),	-- Galvanized Stormcrusher (wowhead confirmed) (player confirmed)
+					i(215583),	-- Blade of the Seven Stars
+					i(215791),	-- Bo-Ris, Spear of Night
+					i(215840),	-- Brazier of the Eternal Empire (player confirmed)
+					i(215556),	-- Crossbow of Forgotten Glory
+					i(215906),	-- Do-tharak, the Foebreaker (player confirmed)
+					i(215482),	-- Elegion, the Star Cleaver
+					i(215529),	-- Fang Kung, Emperor's Legacy
+					i(215848),	-- Fearspeaker's Warstaff (player confirmed)
+					i(215637),	-- Fist of Shek'zeer
+					i(215727),	-- Galvanized Stormcrusher (player confirmed)
 					i(216563),	-- Gaze of the Ancient (not on wowhead)
-					i(215633),	-- Gara'kal, Claw of the Spiritbinder (wowhead confirmed)
-					i(215852),	-- Gao-Rei, Staff of the Protector (wowhead confirmed)
-					i(215968),	-- Greatsword of the Iron Legion (wowhead confirmed)
-					i(215855),	-- Jin'ya, Orb of the Watercaller (wowhead confirmed)
-					i(215929),	-- Kilrak, Fangs of Terror (MSV normal) (wowhead confirmed)
-					i(215932),	-- Kilrak, Fangs of Terror (not on wowhead)
-					i(215735),	-- Kri'tak, Scepter of the Swarm (confirmed 23.05.2024) (wowhead confirmed)
-					i(215737),	-- Kri'tak, Scepter of the Swarm (Alex: double up into LFR, MSV LFR 1st wing) (not on wowhead)
-					i(215935),	-- Loshan, Fear Incarnate (MSV normal) (wowhead confirmed)
-					i(216529),	-- Protection of the Emperor (wowhead confirmed)
-					i(215799),	-- Qiang's Unbreakable Polearm (wowhead confirmed)
-					i(215586),	-- Regail's Fulminating Blade (wowhead confirmed)
-					i(215925),	-- Scimitar of Seven Stars (not on wowhead)
-					i(215926),	-- Scimitar of Seven Stars (MSV normal) (wowhead confirmed)
-					i(215506),	-- Shin'ka, the Tyrant's Greataxe (wowhead confirmed)
-					i(215592),	-- Soulsever (wowhead confirmed)
-					i(215887),	-- Soulwood Spire (wowhead confirmed)
-					i(215976),	-- Starslicer (HoF normal) (wowhead confirmed)
-					i(216561),	-- Steelskin, Qiang's Bulwark (wowhead confirmed)
-					i(215694),	-- Taoren, the Malignant (wowhead confirmed)
-					i(215732),	-- Tihan, Scepter of the Sleeper (wowhead confirmed)
-					i(215998),	-- Torch of the Starspark (MSV normal) (wowhead confirmed)
-					i(215844),	-- Waterspeaker's Staff (wowhead confirmed)
-					i(215672),	-- Zephyrcall Censer (wowhead confirmed)
+					i(215633),	-- Gara'kal, Claw of the Spiritbinder
+					i(215852),	-- Gao-Rei, Staff of the Protector (player confirmed)
+					i(215968),	-- Greatsword of the Iron Legion
+					i(215855),	-- Jin'ya, Orb of the Watercaller
+					i(215929),	-- Kilrak, Fangs of Terror (MSV normal)
+					i(215735),	-- Kri'tak, Scepter of the Swarm (confirmed 23.05.2024)
+					i(215935),	-- Loshan, Fear Incarnate (MSV normal)
+					i(216529),	-- Protection of the Emperor
+					i(215799),	-- Qiang's Unbreakable Polearm (player confirmed)
+					i(215586),	-- Regail's Fulminating Blade
+					i(215926),	-- Scimitar of Seven Stars (MSV normal)
+					i(215506),	-- Shin'ka, the Tyrant's Greataxe (player confirmed)
+					i(215592),	-- Soulsever
+					i(215976),	-- Starslicer (HoF normal) (player confirmed)
+					i(216561),	-- Steelskin, Qiang's Bulwark
+					i(215694),	-- Taoren, the Malignant
+					i(215732),	-- Tihan, Scepter of the Sleeper
+					i(215998),	-- Torch of the Starspark (MSV normal)
+					i(215844),	-- Waterspeaker's Staff
+					i(215672),	-- Zephyrcall Censer (player confirmed)
 				}),
 			})),
 			mapped(DIFFICULTY.LEGACY_RAID.MULTI.HEROIC, bubbleDown({ ["modID"] = 0 }, {
