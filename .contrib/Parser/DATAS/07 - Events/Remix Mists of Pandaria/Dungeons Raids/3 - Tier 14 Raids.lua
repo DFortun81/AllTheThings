@@ -142,7 +142,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215839),	-- Brazier of the Eternal Empire (MSV LFR / ToES LFR)
 					i(215842),	-- Brazier of the Eternal Empire (HoF LFR)
 					i(215555),	-- Crossbow of Forgotten Glory (HoF LFR / ToES LFR)
-					i(216462),	-- Dinomancer's Spire (HoF LFR -> wrong? rest is in ToT, no wowhead data yet)
 					i(215905),	-- Do-tharak, the Foebreaker (MSV LFR)
 					i(215481),	-- Elegion, the Star Cleaver (ToES LFR)
 					i(215528),	-- Fang Kung, Emperor's Legacy (MSV LFR / HoF LFR)
