@@ -5,12 +5,11 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(AZJ_KAHET, {
 		n(TREASURES, {
-			o(xx, {	-- Concealed Contraband
-				["provider"] = { "n", xx },	-- probably will have other id for vignette (web cocoon)
+			o(446419, {	-- Concealed Contraband
 				["coord"] = { 36.3, 63.9, AZJ_KAHET },
 				["questID"] = 82525,
 				["g"] = {
-					-- no objectID since missing loot table
+					-- reps for all 3 zone 'assistant' and some trash items
 				},
 			}),
 			o(446097, {	-- Disturbed Soil
@@ -124,7 +123,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 50.6, 48.1, AZJ_KAHET },
 				["questID"] = 82726,
 				["g"] = {
-					i(222966),	-- Spinner (PET!)
+					i(221760),	-- Bonedrinker (PET!)
+					--i(222966),	-- Spinner (PET!) // not here anymore?
 				},
 			}),
 			o(446135, {	-- Niffen Stash

@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 	m(AZJ_KAHET, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(216049, {	-- Black BLood Slime
+				--seems like not here?
 				["questID"] = 82035,
 				["coord"] = { 64.7, 88.8, 2256 },	-- Azj-Kahet Lower
 				["g"] = {

@@ -34,6 +34,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 32.1, 46.6, AZJ_KAHET },
 				["g"] = {
 					i(225521),	-- Rescued Aeroknight's Vambraces
+					i(225530),	-- Rescued Aeroknight's Helmet
 				},
 			}),
 			q(78348, {	-- Friends in Low Places
@@ -71,21 +72,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 216213 },	-- Spindle
 				["coord"] = { 45.7, 60.1, AZJ_KAHET },
 				["g"] = {
+					i(225533),	-- Webweave Grips
 					i(225516),	-- Webweave Stompers
-				},
-			}),
-			q(78393, {	-- A Seeming Respite
-				["sourceQuests"] = { 78354 },	-- A Guiding Thread
-				["provider"] = { "n", 207471 },	-- Widow Arak'nal
-				["coord"] = { 56.2, 48.2, AZJ_KAHET },
-				["g"] = {
-					--	crit 'Friends in the Dark' for achievementID ? (Azj-Kahet)
 				},
 			}),
 			q(78392, {	-- The Tangled Web
 				["sourceQuests"] = { 78354 },	-- A Guiding Thread
 				["provider"] = { "n", 207471 },	-- Widow Arak'nal
 				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+			}),
+			q(78393, {	-- A Seeming Respite
+				["sourceQuests"] = { 78354 },	-- A Guiding Thread
+				["provider"] = { "n", 207471 },	-- Widow Arak'nal
+				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+				["g"] = {
+					--crit 'Friends in the Dark' for achievementID ? (Azj-Kahet)
+					--c(3002),	-- The Weaver's Commendation
+				},
 			}),
 			q(78233, {	-- The Weaver's Gift
 				["sourceQuests"] = {
@@ -110,12 +113,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			q(78234, {	-- Force Your Way
 				["sourceQuests"] = { 78236 },	-- Scrappy Straggler
-				["provider"] = { "n", 220051 },	-- Flynn Fairwind
+				["providers"] = {
+					{ "n", 220051 },	-- Flynn Fairwind
+					{ "n", 211444 },	-- Flynn Fairwind
+				},
 				["coord"] = { 63.0, 32.9, AZJ_KAHET },
 			}),
 			q(78383, {	-- Strategic Edge
 				["sourceQuests"] = { 78236 },	-- Scrappy Straggler
-				["provider"] = { "n", 220051 },	-- Flynn Fairwind
+				["providers"] = {
+					{ "n", 220051 },	-- Flynn Fairwind
+					{ "n", 211444 },	-- Flynn Fairwind
+				},
 				["coord"] = { 63.0, 32.9, AZJ_KAHET },
 				["g"] = {
 					i(211870),	-- Flynn's Blades (QI!)
@@ -125,8 +134,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(212159),	-- Vial of Stinky Pheromones (QI!)
 					}),
 					i(225349),	-- Kaheti Confiscated Borers
+					i(225358),	-- Kaheti Confiscated Buckler
+					i(225360),	-- Kaheti Confiscated Hatchet
 					i(225362),	-- Kaheti Confiscated Knife
 					i(225357),	-- Kaheti Confiscated Lantern
+					i(225353),	-- Kaheti Confiscated Spade
 					i(225361),	-- Kaheti Confiscated Staff
 				},
 			}),
@@ -148,7 +160,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 217330 },	-- Anub'azal
 				["coord"] = { 46.9, 26.2, AZJ_KAHET },
 				["g"] = {
-					i(221100),	-- General's Pungent Armor
+					--i(221100),	-- General's Pungent Armor // it is now different itemID
+					i(225535),	-- General's Pungent Mantle
 				},
 			}),
 			q(78250, {	-- General Admission
@@ -198,6 +211,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 48.6, 29.9, AZJ_KAHET },
 				["g"] = {
 					i(225520),	-- Smuggled Nerubian Belt
+					i(225537),	-- Smuggled Nerubian Cuffs
 				},
 			}),
 			q(78256, {	-- The General's Consensus
@@ -226,6 +240,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["sourceQuests"] = { 78228 },	-- Into a Skittering City
 				["provider"] = { "n", 211499 },	-- Executor Nizrek
 				["coord"] = { 67.5, 32.5, 2216 },	-- Nerub'ar Lower
+				["g"] = {
+					i(225970),	-- Nizrek's Holographic Manipulator
+				},
 			}),
 			q(78231, {	-- Like a Spider on the Wall
 				["sourceQuests"] = { 78228 },	-- Into a Skittering City
@@ -273,11 +290,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["sourceQuests"] = { 79574 },	-- The Second Front
 				["provider"] = { "n", 212076 },	-- General Steelstrike
 				["coord"] = { 30.4, 49.3, AZJ_KAHET },
+				["g"] = {
+					--c(3003),	-- The General's Commendation
+				},
 			}),
 			q(79579, {	-- That Airspace is Mine(d)!
 				["sourceQuests"] = { 79574 },	-- The Second Front
 				["provider"] = { "n", 212076 },	-- General Steelstrike
 				["coord"] = { 30.4, 49.3, AZJ_KAHET },
+				["g"] = {
+					--crit 'The Second Front' for achievementID 40636 (Sojourner of Azj-Kahet)
+				},
 			}),
 			--	End
 			--	The Weaver's Lair
@@ -350,6 +373,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 				["provider"] = { "n", 215349 },	-- Great Hexer Ohodo
 				["coord"] = { 58.1, 26.1, AZJ_KAHET },
+				["g"] = {
+					--crit 'Pillar-nest Vosh for achievementID 40636 (Sojourner of Azj-Kahet)
+				},
 			}),			
 			-- End Faerin's Advance side quest
 			-- New side quests from The Weaver's Lair
@@ -588,6 +614,154 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 56.7, 46.7, AZJ_KAHET },
 			}),
 			--
+			-- Seems like new stuff
+			q(83716, {	-- Beneath the Roots
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 211409 },	-- Faerin Lothar
+				["coord"] = { 59.6, 25.7, AZJ_KAHET },
+			}),
+			q(83628, {	-- Tense Recovery
+				["sourceQuests"] = { 83716 },	-- Beneath the Roots
+				["provider"] = { "n", 227222 },	-- Ysabel Gleamgaard
+				["coord"] = { 26.8, 55.9, AZJ_KAHET },
+			}),
+			q(83629, {	-- Ancient Respite
+				["sourceQuests"] = { 83628 },	-- Tense Recovery
+				["provider"] = { "n", 227224 },	-- Goehi
+				["coord"] = { 27.1, 45.3, AZJ_KAHET },
+			}),
+			q(83632, {	-- Rings of Memory
+				["sourceQuests"] = { 83629 },	-- Ancient Respite
+				["provider"] = { "n", 227224 },	-- Goehi
+				["coord"] = { 27.1, 45.3, AZJ_KAHET },
+				["g"] = {
+					i(225973),	-- Goehi's Root (QI!)
+				},
+			}),
+			q(83639, {	-- Open Communications
+				["sourceQuests"] = { 83632 },	-- Rings of Memory
+				["provider"] = { "n", 215724 },	-- Ney'leia
+				["coord"] = { 26.3, 56.8, AZJ_KAHET },
+				["g"] = {
+					--crit 'The Wild Camp' for achievementID 40636 (Sojourner of Azj-Kahet)
+				},
+			}),
+			--
+			q(83306, {	-- Where the Wild Things Camp
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 211409 },	-- Faerin Lothar
+				["coord"] = { 59.6, 25.7, AZJ_KAHET },
+			}),
+			q(80564, {	-- Field Research
+				["sourceQuests"] = { 83306 },	-- Where the Wild Things Camp
+				["provider"] = { "n", 220595 },	-- Orweyna
+				["coord"] = { 46.1, 68.9, AZJ_KAHET },
+			}),
+			q(80563, {	-- Tool of Attunement
+				["sourceQuests"] = { 83306 },	-- Where the Wild Things Camp // require Field Research in quest log
+				["provider"] = { "n", 220595 },	-- Orweyna
+				["coord"] = { 46.1, 68.9, AZJ_KAHET },
+				["g"] = {
+					i(218188),	-- Tuning Crystal (QI!)
+				},
+			}),
+			q(82143, {	-- The Path of Dissonance
+				["sourceQuests"] = {
+					80564,	-- Field Research
+					80563,	-- Tool of Attunement
+				},
+				["provider"] = { "n", 226672 },	-- Orweyna
+				["coord"] = { 50.4, 63.2, AZJ_KAHET },	-- but probably could be 2 more, depending on order of quest before?
+			}),
+			q(80565, {	-- Resounding Repercussions
+				["sourceQuests"] = { 82143 },	-- The Path of Dissonance
+				["provider"] = { "n", 220603 },	-- Orweyna
+				["coord"] = { 60.1, 66.5, AZJ_KAHET },
+			}),
+			q(80566, {	-- Enemies Around
+				["sourceQuests"] = { 80565 },	-- Resounding Repercussions
+				["provider"] = { "n", 220608 },	-- Hannan
+				["coord"] = { 61.9, 65.4, AZJ_KAHET },
+			}),
+			q(80567, {	-- Song of Restoring
+				["sourceQuests"] = { 80566 },	-- Enemies Around
+				["provider"] = { "n", 223285 },	-- Orweyna
+				["coord"] = { 60.0, 66.6, AZJ_KAHET },
+			}),
+			q(80568, {	-- Leave No Trace
+				["sourceQuests"] = { 80567 },	-- Song of Restoring
+				["provider"] = { "n", 223286 },	-- Hannan
+				["coord"] = { 60.0, 66.7, AZJ_KAHET },
+				["g"] = {
+					i(223322),	-- Hannan's Scythe (QI!)
+				},
+			}),
+			q(80571, {	-- Decipher the Cacophony
+				["sourceQuests"] = { 80568 },	-- Leave No Trace
+				["provider"] = { "n", 220610 },	-- Orweyna
+				["coord"] = { 62.5, 80.6, 2256 },
+				["g"] = {
+					i(221776),	-- Discordant Essence (QI!)
+				},
+			}),
+			q(80570, {	-- Staunch the Flow
+				["sourceQuests"] = { 80568 },	-- Leave No Trace
+				["provider"] = { "n", 220610 },	-- Orweyna
+				["coord"] = { 62.5, 80.6, 2256 },
+			}),
+			q(80572, {	-- Discordant Measure
+				["sourceQuests"] = {
+					80571,	-- Staunch the Flow
+					80570,	-- Decipher the Cacophony
+				},
+				["provider"] = { "n", 220610 },	-- Orweyna
+				["coord"] = { 62.5, 80.6, 2256 },
+				["g"] = {
+					i(225696),	-- Corrupted Heart (QI!)
+					i(225698),	-- Root Sliver (QI!)
+					i(225697),	-- Sightless Eye (QI!)
+					i(226165),	-- Unseemly Agate Choker
+				},
+			}),
+			q(80569, {	-- Harmonious Approach
+				["sourceQuests"] = {
+					80571,	-- Staunch the Flow
+					80570,	-- Decipher the Cacophony
+				},
+				["provider"] = { "n", 227158 },	-- Hannan
+				["coord"] = { 62.5, 80.5, 2256 },
+			}),
+			--
+			q(83616, {	-- The Entrenched
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 222136 },	-- Teth
+				["coord"] = { 69.1, 52.0, AZJ_KAHET },
+			}),
+			q(81667, {	-- The Upstart
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 222136 },	-- Teth
+				["coord"] = { 69.1, 52.0, AZJ_KAHET },
+			}),
+			--
+			-- Delves
+			q(83771, {	-- DELVER'S CALL: Tak-Rethan Abyss
+				["provider"] = { "o", 455720 },	-- DELVER'S CALL: Tak-Rethan Abyss
+				["coord"] = { 57.2, 45.3, AZJ_KAHET },
+			}),
+			q(83770, {	-- DELVER'S CALL: Spiral Weave
+				["provider"] = { "n", 211721 },	-- Sir Jonathan Trueheart
+				["coord"] = { 59.2, 25.1, AZJ_KAHET },
+			}),
+			--Zone Drop quest?
+			q(80378, {	-- A Light of the Dark
+				["provider"] = { "i", 217390 },	-- Coagulated Black Blood Clot
+				["maps"] = { AZJ_KAHET },
+				["g"] = {
+					i(217391),	-- Coagulated Black Blood (QI!)
+					i(220161),	-- [PH] Toy, Black Blood Candle (TOY!) (TODO: but not really)
+				},
+			}),
+			--
 			--	Bonus Objectives
 			q(81670, {	-- Shattered Silk
 				["coord"] = { 72.8, 55.0, AZJ_KAHET },
@@ -753,6 +927,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 216031 },	-- Abyssal Devourer
 				["coord"] = { 47.4, 43.7, AZJ_KAHET },
 				["g"] = {
+					i(223389),	-- Legplates of Dark Hunger
 					i(223392),	-- Trousers of Dark Hunger
 				},
 			}),
@@ -819,6 +994,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 36.6, 44.3, AZJ_KAHET },
 				["g"] = {
 					i(223388),	-- Vilewing Cap
+					i(223405),	-- Vilewing Visor
 				},
 			}),
 			q(81634, {	-- Chitin Hulk
@@ -863,7 +1039,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(79658),	-- triggered after turn in questID 78392 (The Tangled Web), probably faction (The Severed Threads) unlock
+	--q(79658),	-- triggered after turn in questID 78392 (The Tangled Web), probably faction (The Severed Threads) unlock
+	q(81597),	-- triggered after turn in questID 78393 (A Seeming Respite), probably faction (The Severed Threads) unlock (changed due to attaching with other questID?)
 	q(82067),	-- Click through dialogs with Mad Nerubian (n: 222381 @ 54.8, 25.3), could be some secret related or some kind of lockout for more dialog or just new variation of 'stay a while and listen'.
 	q(82069),	-- Click through dialogs with Kah'reht (n: 222369 @ 74.3, 38.5), same as above, little rp dialog.
 	q(82082),	-- after interact with Weathered Shadecaster (n: 222283 @ 70.4, 65.2), same as above, little rp happening.
@@ -874,6 +1051,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(81623),	-- triggered during questID 78228 (Into a Skittering City) when apply Azi-Kahet Pheromones
 	q(81946),	-- 'Stay awhile and listen' - Anduin Wrynn - druing questID 78231 (Like a Spider on the Wall)
 	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (Beginning Anew From Rock Bottom)
+	q(81605),	-- triggered after turn in questID 78248 (Beginning Anew From Rock Bottom) // could be related to Renown 4?
 	-- Probably only viable if General choosen (and gonna need to move it into separate file with their stuff)
 	q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
 	q(82646),	-- 'Listen to the rumor' from Eirzay (n: 224172 @ 48.4, 60.7), start questID 81492 (Armaments: Smithing Tools)

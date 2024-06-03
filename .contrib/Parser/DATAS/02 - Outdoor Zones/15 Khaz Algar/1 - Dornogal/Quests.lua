@@ -29,19 +29,31 @@
 				["provider"] = { "n", 216168 },	-- Lady Jaina Proudmoore
 				["coord"] = { 35.9, 81.5, DORNOGAL },
 				["g"] = {
+					i(223549),	-- Algari Greatsword
+					i(223564),	-- Algari Short Axe
 					i(223546),	-- Algari Spear
 				},
 			}),
+			--q(79328, {	-- Embassies and Envoys // [H?]
+			--	["sourceQuests"] = { 79333 },	-- The Fleet Arrives
+			--	["provider"] = { "n", xx },	-- xx
+			--	["coord"] = { x, y, DORNOGAL },
+			--	["g"] = {
+			--		i(223549),	-- Algari Greatsword
+			--		i(223564),	-- Algari Short Axe
+			--		i(223546),	-- Algari Spear
+			--	},
+			--}),
 			q(83271, {	-- There's Always Another Secret
 				["sourceQuests"] = {
 					82153,	-- Embassies and Envoys
-					xx,	-- horde quest?
+					--xx,	-- horde quest? 79328?
 				},
 				["sourceQuestNumRequired"] = 1,
 				["provider"] = { "n", 214917 },	-- Moira Thaurissan
 				["coord"] = { 31.8, 59.4, DORNOGAL },
 			}),
-			-- end of main story due to quest above is bugged (there is no quest npc)
+			-- end of main story due to quest above is bugged (there is quest npcs phased out)
 			-- renown quests can be turned in @ 39.1, 24.3, in additional to their zone specific area.
 			-- Vaskarn
 			q(82042, {	-- The Better Part of Valorstones
@@ -193,7 +205,8 @@
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(79326),	-- after turn in questID 82153 (Embassies and Envoys), probably related to title for name or server side script that 'phase' npc in alliance room
+	--q(79326),	-- after turn in questID 82153 (Embassies and Envoys), probably related to title for name or server side script that 'phase' npc in alliance room
+	--^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
 	q(80538),	-- after turn in questID 79525 (Report to the Councilward)
 });
 ]]--

@@ -1848,6 +1848,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(225807);	-- Rune-Carved Bone
 --i(220266);	-- Sharpened Digging Claws
 --i(220361);	-- Sharpened Steel Implement
+--i(220237);	-- Shining Amethyst Cluster
 --i(220231);	-- Skiatic Vessel
 --i(220299);	-- Sleek Beak
 --i(220226);	-- Slime-Coated Membrane
