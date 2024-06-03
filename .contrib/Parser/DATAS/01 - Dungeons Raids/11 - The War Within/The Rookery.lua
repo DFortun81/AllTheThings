@@ -7,8 +7,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 		["maps"] = {
 			2315,	-- The Rookery Landing
 			2316,	-- Storm's Roost
-		--	2317,	-- Storm Rookery (unconfirmed)
-		--	2318,	-- Stormrider Barracks (unconfirmed)
+			2317,	-- Storm Rookery
+			2318,	-- Stormrider Barracks
 			2319,	-- Crashing Storm Hall
 			2320,	-- Abandoned Mines
 		},
@@ -27,7 +27,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2567, {	-- Stormguard Gorren
-					--["crs"] = {  },
+					["crs"] = { 207205 },
 					["g"] = {
 						i(221038),	-- Crashing Thunderhammer
 						i(221039),	-- Ireborne Stormbow
@@ -40,7 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2568, {	-- Voidstone Monstrosity
-					--["crs"] = {  },
+					["crs"] = { 207207 },
 					["g"] = {
 						i(221046),	-- Behemoth Kneebender
 						i(221044),	-- Shadowskean of the Colossus

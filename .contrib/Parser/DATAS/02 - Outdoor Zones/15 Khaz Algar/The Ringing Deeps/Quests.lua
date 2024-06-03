@@ -18,11 +18,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--q(78546),	-- flagged from quest tauren when dropping you here
 			--q(82200),	-- flagged from quest tauren when dropping you here
 			--Zone story quests
+			-- The Ringing Deeps START
 			q(80434, {	-- Into the Deeps
-				--["sourceQuests"] = { xx },	-- xx
-				--["provider"] = { "n", xxx },	-- xxx
-				--["coord"] = { x, y, THE_RINGING_DEEPS },
+				["sourceQuests"] = { 78544 },	-- Bring the Thunder // when 78545 in your quest log, quest already here and available before turn in Return to the Coreway
+				["provider"] = { "n", 217887 },	-- Noira Thaurissan
+				["coord"] = { 32.0, 59.8, DORNOGAL },
 			}),
+			--
 			q(78555, {	-- Underground and Overhelmed
 				["sourceQuests"] = { 80434 },	-- Into the Deeps
 				["provider"] = { "n", 212592 },	-- Speaker Brinthe
@@ -1054,7 +1056,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(83613),	-- triggered after turn in questID 80434 (Into the Deeps) (could be some alpha only things?)
+	q(83613),	-- triggered after turn in questID 80434 (Into the Deeps) (could be some alpha only things?) // triggered on new character again
 	q(79635),	-- after turn in questID 80082 (Back to Gundargaz), faction 'The Assembly of the Deeps' unlocked
 	--
 	q(82052),	-- interact with Submerged Sign (o: 441563 @ 51.5, 72.4)

@@ -6,8 +6,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 	n(ZONE_REWARDS, {
 		filter(BACK, {
 			--- wqs gear green/blue (move to zone reward if needed)
-			-- Isle of Dorn
-			i(224663),	-- Gem-Woven Shawl
+			i(224664),	-- Gem-Woven Cloak // Hallowfall
+			i(224663),	-- Gem-Woven Shawl // Isle of Dorn
 		}),
 		filter(CLOTH, {
 			--gray items
@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			i(220312),	-- Moth-Ridden Stole
 			i(220313),	-- Moth-Ridden Waistwrap
 			i(220314),	-- Moth-Ridden Armlets
+			-- wq gear
+			i(224669),	-- Alighted Cowl	// The Ringing Deeps
+			i(224673),	-- Alighted Cuffs	// The Ringing Deeps
 		}),
 		filter(LEATHER, {
 			--gray items
@@ -30,7 +33,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			i(220320),	-- Distressed Shoulderpads
 			i(220321),	-- Distressed Belt
 			i(220322),	-- Distressed Bracers
-			--wq gear?
+			--wq gear
 			i(224681),	-- Lockstitch Bindings // hallowfall
 			i(224676),	-- Lockstitch Grips // isle of dorn
 			i(224677),	-- Lockstitch Headgear // from Pinnacle Cache which was looted in The Ringing Deeps

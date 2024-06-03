@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82234, {	-- A Floral Flair for Every Ram
 					["coord"] = { 40.2, 80.4, ISLE_OF_DORN },
 				}),
+				q(82448 {	-- Book It to the Library
+					["coord"] = { 25.5, 59.1, ISLE_OF_DORN },
+				}),
 				q(82658, {	-- Drop and Go
 					--["coord"] = { 45.2, 65.0, ISLE_OF_DORN },	-- could be wrong, all Isle of Dorn missing quest zone highlights
 					["g"] = {
@@ -50,6 +53,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(81799, {	-- Skyrider Racing - Dornogal Drift
 					-- normal - 80219 / advanced - 80225 / reversed - 80231
 					["coord"] = { 43.5, 11.7, DORNOGAL },	-- probably gonna need to move out of here
+				}),
+				q(81805, {	-- Skyrider Racing - Thunderhead Trail
+					-- normal - 80223 / advanced - 80229 / reversed - 80235
+					["coord"] = { 58.6, 21.1, ISLE_OF_DORN },
 				}),
 				q(81621, {	-- Tunnels Be Gone!
 					--also pop as bonus objective (and didn't show on map, but fall as world quest in quest tracker)

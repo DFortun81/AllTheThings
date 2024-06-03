@@ -1802,6 +1802,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(217167);	-- Crusty Chalice
 --i(220255);	-- Darkened Residue
 --i(225813);	-- Darkened Ritual Stone
+--i(220280);	-- Dense Five-Pound Stone
 --i(225795);	-- Dented Pocketwatch
 --i(220229);	-- Dormant Core
 --i(220271);	-- Downy Clump
@@ -1860,6 +1861,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220223);	-- Torn Gossamer Scrap
 --i(220272);	-- Torn Manuscript Page
 --i(220282);	-- Tuft of Whiskers
+--i(223893);	-- Uncharged Feather
 --i(220295);	-- Unidentified Viscous Substance
 --i(225828);	-- Unrefined Dense Ore
 --i(220289);	-- Venomous Stinger
