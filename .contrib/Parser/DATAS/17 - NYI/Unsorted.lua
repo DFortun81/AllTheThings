@@ -5836,7 +5836,6 @@ root(ROOTS.Unsorted, {
 				}),
 				n(WEAPONS, {
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
-					i(215523),	-- Dagryn's Longbow
 					i(215553),	-- Death Lotus Repeater
 					i(215565),	-- Jinyu Slasher
 					i(215566),	-- Jinyu Blade
@@ -5849,8 +5848,6 @@ root(ROOTS.Unsorted, {
 					i(215902),	-- Klaxxi Scimitar
 					i(215903),	-- Klaxxi Sword
 					i(215904),	-- Klaxxi Shortsword
-					i(215993),	-- Zerat, Soulburner's Greatsword
-					i(216012),	-- Venomlord's Skull Wand
 					i(216450),	-- Staff of the Monkey King
 					i(216451),	-- Quarterstaff of the Monkey King
 					i(216452),	-- Longstaff of the Monkey King
@@ -5861,11 +5858,8 @@ root(ROOTS.Unsorted, {
 					i(216457),	-- Pandaren Standard
 					i(216478),	-- Pandaren Flamberge
 					i(216553),	-- Norushen's Tower Shield
-					i(216562),	-- Steelskin, Qiang's Bulwark
-					i(216586),	-- Shield of the Gloaming
 					i(216593),	-- Bulwark of Twinned Despair
 					i(216597),	-- Eyes of the Doomed
-					i(216599),	-- Eyes of the Doomed
 				}),
 			}),
 			filter(TOYS, {

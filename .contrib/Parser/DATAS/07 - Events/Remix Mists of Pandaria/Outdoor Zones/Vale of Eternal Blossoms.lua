@@ -152,6 +152,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215620),	-- Imperial Dagger
 					i(215937),	-- Imperial Wind Blade
 					i(215947),	-- Inkgill Sword
+					i(216533),	-- Ironwood Shield (drop)
 					i(215740),	-- Jinyu Bonebreaker
 					i(215989),	-- Jinyu Flamberge
 					i(215677),	-- Jinyu's Light
@@ -174,6 +175,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215892),	-- Staff of the Black Ox
 					i(216571),	-- Tian Deflector
 					i(215959),	-- Tian Monastery Sword (drop)
+					i(215675),	-- Wakener's Lantern (quest cache)
 					i(215514),	-- Wallwatcher's Longaxe
 					--i(215804),	-- Wallwatcher's Partisan (drop, not on wowhead)
 					i(215510),	-- Warbringer's Chopper

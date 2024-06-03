@@ -135,9 +135,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				n(WEAPONS, {
-					------------------------------------------------------------------------
-					-- Yuni on Discord: i(215727) gotten as normal drop, previously reported as LFR (currently sourced in both spots)
-					------------------------------------------------------------------------
 					i(215582),	-- Blade of the Seven Stars (HoF LFR (1st wing) / ToES LFR)
 					i(215584),	-- Blade of the Seven Stars (MSV LFR)
 					i(215793),	-- Bo-Ris, Spear of Night (HoF LFR)
@@ -153,7 +150,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215847),	-- Fearspeaker's Warstaff (MSV LFR 2nd wing)
 					i(215850),	-- Fearspeaker's Warstaff (ToES LFR)
 					i(215636),	-- Fist of Shek'zeer (HoF LFR)
-					i(215727),	-- Galvanized Stormcrusher (wowhead: normal only drop)
 					i(215728),	-- Galvanized Stormcrusher (MSV LFR)
 					i(215730),	-- Galvanized Stormcrusher (HoF LFR / ToES LFR)
 					i(215632),	-- Gara'kal, Claw of the Spiritbinder (HoF LFR)
@@ -187,9 +183,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215591),	-- Soulsever (MSV LFR)
 					i(215593),	-- Soulsever (HoF LFR)
 					i(215975),	-- Starslicer (Terrace LFR or HoF LFR 1st wing)
-					--i(215976),	-- Starslicer (wowhead: normal only drop) Pretty sure its Normal Only. ~Gold 2nd June
 					i(215978),	-- Starslicer (Gold: Blue Quality / Lei Shi & Tsulong => So ToES LFR?) (Alex: green have same itemID and was looted in HoF LFR 2nd wing)
 					i(216560),	-- Steelskin, Qiang's Bulwark (MSV LFR)
+					i(216562),	-- Steelskin, Qiang's Bulwark (MSV LFR)
 					i(215693),	-- Taoren, the Malignant (HoF LFR)
 					i(215696),	-- Taoren, the Malignant (HoF LFR)
 					i(215731),	-- Tihan, Scepter of the Sleeper (MSV LFR)
@@ -320,11 +316,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215482),	-- Elegion, the Star Cleaver (wowhead confirmed)
 					i(215529),	-- Fang Kung, Emperor's Legacy (wowhead confirmed)
 					i(215847),	-- Fearspeaker's Warstaff (Alex: double up into LFR, MSV LFR 2nd wing) (not on wowhead)
-					i(215848),	-- Fearspeaker's Warstaff (wowhead confirmed)
-					i(215850),	-- Fearspeaker's Warstaff (not on wowhead)
+					i(215848),	-- Fearspeaker's Warstaff (wowhead confirmed) (player confirmed)
 					i(215637),	-- Fist of Shek'zeer (wowhead confirmed)
-					i(215727),	-- Galvanized Stormcrusher (wowhead confirmed)
-					i(215730),	-- Galvanized Stormcrusher (not on wowhead)
+					i(215727),	-- Galvanized Stormcrusher (wowhead confirmed) (player confirmed)
 					i(216563),	-- Gaze of the Ancient (not on wowhead)
 					i(215633),	-- Gara'kal, Claw of the Spiritbinder (wowhead confirmed)
 					i(215852),	-- Gao-Rei, Staff of the Protector (wowhead confirmed)

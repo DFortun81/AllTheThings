@@ -287,6 +287,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215811),	-- Shan-Dun, Breaker of Courage
 						i(215814),	-- Shan-Dun, Breaker of Courage
 						i(216016),	-- Shellsplitter Battleaxe
+						i(216586),	-- Shield of the Gloaming
 						i(216588),	-- Shield of the Gloaming
 						i(215965),	-- Soulblade of the Storm
 						i(215886),	-- Soulwood Spire
@@ -307,11 +308,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215517),	-- Uroe, Harbinger of Fear
 						i(215519),	-- Uroe, Harbinger of Fear
 						i(216010),	-- Venomlord's Skull Wand
+						i(216012),	-- Venomlord's Skull Wand
 						i(215961),	-- Qon's Iron Decree
 						i(215964),	-- Qon's Iron Decree
 						i(216589),	-- Tortos' Shell
 						i(215773),	-- Zeeg's Ancient Kegbreaker (ToT LFR (2nd wing))
 						i(215991),	-- Zerat, Soulburner's Greatsword
+						i(215993),	-- Zerat, Soulburner's Greatsword
 					})),
 					header(HEADERS.Achievement, 8069, {	-- Last Stand of the Zandalari
 						e(827, {	-- Jin'rokh the Breaker
@@ -705,6 +708,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(216465),	-- Dinomancer's Spire
 						i(215563),	-- Durumu's Gaze (wowhead)
 						i(215686),	-- Eye of the Hydra
+						i(216599),	-- Eyes of the Doomed
 						i(215771),	-- Jerthud, Hand of the Savior
 						i(216408),	-- Fyn's Dagger
 						i(216436),	-- Hammer of the Dawn
