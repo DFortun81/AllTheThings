@@ -1039,44 +1039,61 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	--q(79658),	-- triggered after turn in questID 78392 (The Tangled Web), probably faction (The Severed Threads) unlock
-	q(81597),	-- triggered after turn in questID 78393 (A Seeming Respite), probably faction (The Severed Threads) unlock (changed due to attaching with other questID?)
-	q(82067),	-- Click through dialogs with Mad Nerubian (n: 222381 @ 54.8, 25.3), could be some secret related or some kind of lockout for more dialog or just new variation of 'stay a while and listen'.
-	q(82069),	-- Click through dialogs with Kah'reht (n: 222369 @ 74.3, 38.5), same as above, little rp dialog.
-	q(82082),	-- after interact with Weathered Shadecaster (n: 222283 @ 70.4, 65.2), same as above, little rp happening.
-	q(82085),	-- after interact with Neglected Shadecaster (n: 222304 @ 8.6, 30.6, 2213), same as above, little rp happening.
-	q(82079),	-- after interact with Forgotten Shadecaster (n: 222634 @ 77.6, 70.2, 2213), same as above, little rp happening.
+	q(79658),	-- [DNT] The Severed Threads Renown Unlock (spellID 448677)
+	-- Pheromones (spellID 444927 - [DNT] Set Faction Reputation) - ?
 	q(81628),	-- triggered during questID 79175 (I Think I'm a Drone Now) when apply Anub'azal's Pheromones
 	q(81625),	-- triggered during questID 78226 (A Most Intriguing Invitation) when apply Azi-Kahet Pheromones
 	q(81623),	-- triggered during questID 78228 (Into a Skittering City) when apply Azi-Kahet Pheromones
+	-- Dialogs
 	q(81946),	-- 'Stay awhile and listen' - Anduin Wrynn - druing questID 78231 (Like a Spider on the Wall)
 	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (Beginning Anew From Rock Bottom)
-	q(81605),	-- triggered after turn in questID 78248 (Beginning Anew From Rock Bottom) // could be related to Renown 4?
-	-- Probably only viable if General choosen (and gonna need to move it into separate file with their stuff)
-	q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
-	q(82646),	-- 'Listen to the rumor' from Eirzay (n: 224172 @ 48.4, 60.7), start questID 81492 (Armaments: Smithing Tools)
-	q(82644),	-- 'Listen to the rumor' from Eirzay (n: 224170 @ 58.1, 39.3, 2216), start questID 81477 (Armaments: Weaponry)
-	q(82643),	-- 'Listen to the rumor' from Eirzay (n: 224168 @ 48.6, 50.5, 2216), start questID 81490 (Bounty: Balaxir the Bully)
-	q(82616),	-- 'Listen to the rumor' from Eirzay (n: 224166 @ 36.1, 50.2, 2213), start questID 81476 (Bounty: Goliath)
-	q(82581),	-- 'Listen to the rumor' from Eirzay (n: 224167 @ 15.6, 45.9, 2213), start questID 81489 (Bounty: Zorikal the Patron)
-	q(82640),	-- 'Listen to the rumor' from Eirzay (n: 224161 @ 43.0, 47.1, 2213), start questID 81475 (Breaking the Phalanx: Royal Appointments)
-	q(82642),	-- 'Listen to the rumor' from Eirzay (n: 224163 @ 27.7, 57.8, 2213), start questID 81488 (Breaking the Phalanx: Sages)
-	q(82641),	-- 'Listen to the rumor' from Eirzay (n: 224162 @ 30.6, 42.6, 2213), start questID 81487 (Breaking the Phalanx: Venomblades)
-	q(82649),	-- 'Listen to the rumor' from Eirzay (n: 224176 @ 63.8, 26.3, 2216), start questID 81494 (Relics of War: Rak-Ahat)
-	q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
-	q(82648),	-- 'Listen to the rumor' from Eirzay (n: 224174 @ 63.8, 26.3, 2216), start questID 81493 (Relics of War: The Salien Gutter Conflict)
-	-- if Weaver was choosen
-	--q(82581),	-- 'Investiage the scene' from Ru'murh (n: 224194 @ 70.3, 31.8, 2213), start questID 81470 (Dropping Eaves: Thieving Weave) // same hqt as for general, could be cross shared lockout?
-	--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past) // same hqt as for general, could be cross shared lockout?
-	--q(82645),	-- 'Consider the missive' from Ru'murh (n: 224197 @ 39.8, 26.6, 2213), start questID 81472 (Information Control: Ansurek's Truth) // same hqt as for general, could be cross shared lockout?
-	--q(82647),	-- 'Consider the missive' from Ru'murh (n: 224199 @ 45.6, 51.0, 2216), start questID 81483 (Infiltration: Production Blocker) // same hqt as for general, could be cross shared lockout?
-	--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224201 @ 76.2, 47.4), start questID 81504 (Infiltration: Hidden Figures) // same hqt as for general, could be cross shared lockout?
-	-- if Vizier was choosen
-	--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID 81480 (Wild Reagents: Maddening Deep) // same hqt as for general, could be cross shared lockout?
-	-- Probably absolutely not related to zones
+	-- Reps with zone dudes, probably gonna need to move into expansion feature?
+	q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
+	q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
+	-- better move to treasure or they was broken and only supposed to be up with specific zone dude?
+	q(82067),	-- Mad Nerubian (n: 222381 @ 54.8, 25.3) (spellID 446507)
+	q(82069),	-- Azjol-Nerub Survivor (n: 222369 (Kah'reht) @ 74.3, 38.5) (spellID 446539)
+	q(82082),	-- Shadecaster: Anub'arak (n: 222283 (Weathered Shadecaster) @ 70.4, 65.2) (spellID 446638)
+	q(82085),	-- Shadecaster: Nefferess (n: 222304 (Neglected Shadecaster) @ 8.6, 30.6, 2213) (spellID 446647)
+	q(82079),	-- Shadecaster: Nefferess (n: 222634 (Forgotten Shadecaster) @ 77.6, 70.2, 2213) (spellID 446614)
+	--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
+	q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
+	q(82646),	-- pop questIDs: 81492 (General), 81499 (?), 81506 (?)
+	q(82644),	-- pop questIDs: 81477 (General), 81473 (?), 81481 (?)
+	q(82643),	-- pop questIDs: 81490 (General), 81498 (Vizier), 81471 (Weaver)
+	q(82616),	-- pop questIDs: 81476 (General), 81480 (Vizier), 80573 (Weaver)
+	q(82581),	-- pop questIDs: 81489 (General), 81497 (Vizier), 81470 (Weaver)
+	q(82640),	-- pop questIDs: 81475 (General), 81555 (?), 81496 (?)
+	q(82642),	-- pop questIDs: 81488 (General), 81500 (?), 81479 (?)
+	q(82641),	-- pop questIDs: 81487 (General), 81484 (?), 81495 (?)
+	q(82649),	-- pop questIDs: 81494 (General), 81502 (Vizier), 81504 (Weaver)
+	q(82647),	-- pop questIDs: 81478 (General), 81482 (Vizier), 81483 (Weaver)
+	q(82648),	-- pop questIDs: 81493 (General), 81503 (?), 81501 (?)
+	-- General
+	--q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
+	--q(82646),	-- 'Listen to the rumor' from Eirzay (n: 224172 @ 48.4, 60.7), start questID 81492 (Armaments: Smithing Tools)
+	--q(82644),	-- 'Listen to the rumor' from Eirzay (n: 224170 @ 58.1, 39.3, 2216), start questID 81477 (Armaments: Weaponry)
+	--q(82643),	-- 'Listen to the rumor' from Eirzay (n: 224168 @ 48.6, 50.5, 2216), start questID 81490 (Bounty: Balaxir the Bully)
+	--q(82616),	-- 'Listen to the rumor' from Eirzay (n: 224166 @ 36.1, 50.2, 2213), start questID 81476 (Bounty: Goliath)
+	--q(82581),	-- 'Listen to the rumor' from Eirzay (n: 224167 @ 15.6, 45.9, 2213), start questID 81489 (Bounty: Zorikal the Patron)
+	--q(82640),	-- 'Listen to the rumor' from Eirzay (n: 224161 @ 43.0, 47.1, 2213), start questID 81475 (Breaking the Phalanx: Royal Appointments)
+	--q(82642),	-- 'Listen to the rumor' from Eirzay (n: 224163 @ 27.7, 57.8, 2213), start questID 81488 (Breaking the Phalanx: Sages)
+	--q(82641),	-- 'Listen to the rumor' from Eirzay (n: 224162 @ 30.6, 42.6, 2213), start questID 81487 (Breaking the Phalanx: Venomblades)
+	--q(82649),	-- 'Listen to the rumor' from Eirzay (n: 224176 @ 63.8, 26.3, 2216), start questID 81494 (Relics of War: Rak-Ahat)
+	--q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
+	--q(82648),	-- 'Listen to the rumor' from Eirzay (n: 224174 @ 63.8, 26.3, 2216), start questID 81493 (Relics of War: The Salien Gutter Conflict)
+	-- Weaver
+	--q(82581),	-- 'Investiage the scene' from Ru'murh (n: 224194 @ 70.3, 31.8, 2213), start questID 81470 (Dropping Eaves: Thieving Weave)
+	--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
+	--q(82645),	-- 'Consider the missive' from Ru'murh (n: 224197 @ 39.8, 26.6, 2213), start questID 81472 (Information Control: Ansurek's Truth)
+	--q(82647),	-- 'Consider the missive' from Ru'murh (n: 224199 @ 45.6, 51.0, 2216), start questID 81483 (Infiltration: Production Blocker)
+	--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224201 @ 76.2, 47.4), start questID 81504 (Infiltration: Hidden Figures)
+	-- Missing 5 more quest data/givers
+	-- Vizier
+	--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID 81480 (Wild Reagents: Maddening Deep)
+	-- Missing 11 total quest data/givers, 81505 81498 81497 81502 81482 (and 5 more)
 	--
-	q(79573),	-- on hitting first 80s, achievementID 19470 [One Warband Mentor: The War Within], wq unlock?
-	--
-	q(82157),	-- 'Special Assignment: Rise of the Colossals'	/ Thoose two could be some kind of
+	-- On first leveled character on alpha (when wasn't all zone unlocked)
+	q(79573),	-- Adventure Mode (spellID 434027) & Unlock Content Scaling (spellID 434024) (last one probably for alpha only?)
 });
 --]]

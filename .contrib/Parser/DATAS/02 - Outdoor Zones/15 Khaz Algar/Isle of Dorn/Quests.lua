@@ -875,15 +875,16 @@
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(83622),	-- triggered when you break free out of rocks during questID 78529 (Violet Impact)
-	q(79629),	-- triggered after turn in questID 78536 (Impossible Odds) / faction unlock?
-	--
-	--q(x),	-- Korgran's Request (o: 453725 @ 57.5, 42.3) // in case Blizzard forget to add questID to this
+	-- During questing
+	q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
+	q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
+	-- Side quests
+	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
+	-- Pseudo-treasure / Lore?
 	q(82287),	-- interact with Titan Console @ 82.4, 24.7 (o: 441231)
-	q(81571),	-- rp right after turn in questID 78999 (Heart of a Hero)
-	--
-	q(82157),	-- 'Special Assignment: Rise of the Colossals'	/ unlocking quest
-	q(82146),	-- 'Special Assignment: Cinderbree Surge'	/ unlocking quest
-	q(83069),	-- 'Special Assignment: Titanic Resurgence'	/ unlocking quest
+	-- Special Assignment unlocks tracker
+	q(82157),	-- Special Assignment: Rise of the Colossals
+	q(82146),	-- Special Assignment: Cinderbree Surge
+	q(83069),	-- Special Assignment: Titanic Resurgence
 });
 ]]--

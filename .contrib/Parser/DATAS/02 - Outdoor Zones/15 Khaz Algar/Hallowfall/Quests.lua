@@ -1095,18 +1095,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(83614),	-- triggered after turn in questID 78658 (The Hallowed Path) (faction unlock?)
-	q(81594),	-- triggered after turn in questID 78932 (Fickle Fiendish Fish) (could be rp unlock for 'Stay a while and listen' Faerin during Blades of the Arathi? Activation of this dialog didn't fire any quest)
+	-- During questing
+	q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
+	q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
+	q(81594),	-- [DNT] Complete Tracking Quest (spellID 443002), after turn in questID 78932 (Fickle Fiendish Fish) (could be rp unlock for 'Stay a while and listen' Faerin during Blades of the Arathi? Activation of this dialog didn't fire any quest)
 	q(79971),	-- Stay a while and listen - Alleria Windrunner, during questID 79971 (Nightwatch)
 	q(79706),	-- Stay a while and listen - Faerin Lothar, during questID 79971 (Nightwatch)
 	q(81636),	-- Stay a while and listen - General Steelstrike, after turn in questID 78626 (Spar Day)
 	q(81631),	-- Stay a while and listen - Faerin Lothar, after pick up questID 80049 (The Flame Still Burns)
-	--
-	q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
+	-- 
+	q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid 
 	--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
 	-- 
-	q(82749),	-- triggered after turn in questID 80678 (Time Lost)
-	--
+	q(82749),	-- triggered after turn in questID 80678 (Time Lost) (spellID 452551 - Flag Timer)
+	-- Some dude with question, which require you to loot something in world?
 	q(80068),	-- [DNT] Infirmary Tracker, fire near Caesper (n: 225948 @ 41.8, 58.3) and Ryfus Sacredpyr (n: 221630  @ 40.0, 51.1)
 	--n: 221630 Ryfus Sacredpyr @ 40.0, 51.1
 	-- Question 1
@@ -1115,11 +1117,11 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83301),	-- 3rd option (Patience and respect) / require either Disturbed Lyns Treasure or Care and Feeding of the Imperial Lynx being flagged (otherwise this option won't be here)
 	-- Question 3
 	--q(),	-- 3rd option / unknown requirements
-	--
-	q(82063),	-- A Worn Down Book @ 25.1, 53.7
-	q(82064),	-- A Weathered Tome @ 78.2, 40.3
-	q(82061),	-- Captain's Chest @ 25.7, 38.5
-	--
+	-- Pseudo-treasures / Lore?
+	q(82063),	-- Worn-Down Journal (spellID 446429) // A Worn Down Book @ 25.1, 53.7
+	q(82064),	-- A Weathered Tome (spellID 446439) @ 78.2, 40.3
+	q(82061),	-- Last Flight of The Soundness (spellID 446423) // Captain's Chest @ 25.7, 38.5
+	-- Keyflames
 	q(80005),	-- Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
 	q(78472),	-- Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
 	q(79295),	-- Hose 'Em Down - Activate, after flare up lesser keyflame @ 65.8, 24.4
@@ -1128,6 +1130,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(79383),	-- Web of Manipulation - Activate, after flare up lesser keyflame @ 63.3, 29.4
 	q(78466),	-- Shadows of Flavor - Activate, after flare up lesser keyflame @ 64.4, 30.9
 	q(78458),	-- Harvest Havoc - Activator, after flare up lesser keyflame @ 63.6, 33.6
+	-- Radiant Remnants
 	q(80337),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 66.1, 16.6
 	q(80347),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.7, 16.5
 	q(80342),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.4, 16.7
@@ -1136,8 +1139,8 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(80548),	-- pop after I grab Radiant Remnant from ground during qID 76338 (A Better Cabbage Smacker) @ 64.8, 28.9
 	q(80583),	-- pop after I grab Radiant Remnant from ground during qID 78590 (Cutting Edge) @ 64.0, 31.7
 	q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time
-	--
-	q(82158)	-- Special Assignment: Lynx Rescue / unlock tracker
-	q(82161)	-- Special Assignment: Bombs from Behind / unlock tracker
+	-- Special Assignment unclocks tracker
+	q(82158)	-- Special Assignment: Lynx Rescue
+	q(82161)	-- Special Assignment: Bombs from Behind
 });
 --]]

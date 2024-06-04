@@ -24,9 +24,10 @@
 					--spell(434027),	-- Adventure Mode
 				},
 			}),
-			q(82153, {	-- Embassies and Envoys // [A?]
+			q(82153, {	-- Embassies and Envoys [A]
 				["sourceQuests"] = { 79333 },	-- The Fleet Arrives
 				["provider"] = { "n", 216168 },	-- Lady Jaina Proudmoore
+				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 35.9, 81.5, DORNOGAL },
 				["g"] = {
 					i(223549),	-- Algari Greatsword
@@ -34,9 +35,10 @@
 					i(223546),	-- Algari Spear
 				},
 			}),
-			--q(79328, {	-- Embassies and Envoys // [H?]
+			--q(79328, {	-- Embassies and Envoys [H]
 			--	["sourceQuests"] = { 79333 },	-- The Fleet Arrives
 			--	["provider"] = { "n", xx },	-- xx
+			--	["races"] = HORDE_ONLY,
 			--	["coord"] = { x, y, DORNOGAL },
 			--	["g"] = {
 			--		i(223549),	-- Algari Greatsword
@@ -205,8 +207,8 @@
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	--q(79326),	-- after turn in questID 82153 (Embassies and Envoys), probably related to title for name or server side script that 'phase' npc in alliance room
+	--q(79326),	-- after turn in questID 82153 (Embassies and Envoys), [DNT] Push RP Event (spellID 362105)
 	--^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
-	q(80538),	-- after turn in questID 79525 (Report to the Councilward)
+	q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
 });
 ]]--

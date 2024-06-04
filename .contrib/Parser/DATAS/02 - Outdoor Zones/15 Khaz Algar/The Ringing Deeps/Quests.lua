@@ -1056,18 +1056,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(83613),	-- triggered after turn in questID 80434 (Into the Deeps) (could be some alpha only things?) // triggered on new character again
-	q(79635),	-- after turn in questID 80082 (Back to Gundargaz), faction 'The Assembly of the Deeps' unlocked
-	--
-	q(82052),	-- interact with Submerged Sign (o: 441563 @ 51.5, 72.4)
-	q(82053),	-- interact with Wax-Drenched Sign (o: 441555 @ 50.2, 58.3)
-	q(82054),	-- interact with Kobold Warning Sign (o: 441578 @ 64.9, 56.2)
-	q(82051),	-- interact with Warning: Collapsed Tunnel (o: 441577 @ 71.4, 42.4)
-	--
-	q(82156),	-- 'Special Assignment: When the Deeps Stir'	/ callings or emissary actually
-	-- marked as completed when unlocked
-	--q(82957),	-- 'Thanks for the Wax' accepted every time when you fly in zone
-	--
+	-- During questing
+	q(83613),	-- [DNT] Zone 2 Bread Crumb Completed Organically (spellID 456929), after turn in questID 80434 (Into the Deeps)
+	q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
 	q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
+	-- Pseudo-trasure / Lore?
+	q(82052),	-- Submerged Sign (spellID 446371) (o: 441563 @ 51.5, 72.4)
+	q(82053),	-- Wax-Drenched Sign (spellID 446377) (o: 441555 @ 50.2, 58.3)
+	q(82054),	-- Worn-Down Sign (spellID 446380) (o: 441578 (Kobold Warning Sign) @ 64.9, 56.2)
+	q(82051),	-- Collapsed Tunnel (spellID 446353) (o: 441577 (Warning: Collapsed Tunnel) @ 71.4, 42.4)
+	-- Special Assignment unlocks tracker
+	q(82156),	-- 'Special Assignment: When the Deeps Stir'	/ callings or emissary actually
+	-- ?
+	--q(82957),	-- 'Thanks for the Wax' accepted every time when you fly in zone
 });
 --]]
