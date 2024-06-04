@@ -86,6 +86,9 @@ local function DefineToggleFilter(name, filterGroup, filter)
 		RawCharacterFilters[name] = filter;
 	end
 end
+api.DefineToggleFilter = function(name, filterScope, filter)
+	DefineToggleFilter(name, filterScope == "A" and AccountFilters or CharacterFilters, filter)
+end
 
 -- Whether the group has a binding designation, which means it basically cannot be moved to another Character
 local function FilterBind(group)
@@ -390,7 +393,7 @@ end
 
 -- Filter Combinations
 local function PrintExclusionCause(name, o)
-	app.PrintDebug("FilterExclude",name,o.hash,o.link or o.name)
+	app.PrintDebug("F-EX",name,o.hash,o.link or o.name)
 end
 local function SettingsAccountFilters(o)
 	for name,filter in pairs(AccountFilters) do
@@ -557,6 +560,50 @@ end)
 app.AddEventHandler("OnRecalculate_NewSettings", function()
 	CacheSettingsData();
 end)
+
+-- Maybe need something like this eventually? This hasn't been tested or utilized much
+-- local PreviousFilters = {}
+-- -- Returns the set of Filter names which are currently enabled
+-- api.GetFilterSet = function(filters)
+-- 	local Get = api.Get
+-- 	wipe(PreviousFilters)
+-- 	for name,_ in pairs(api.Filters) do
+-- 		PreviousFilters[name] = Get[name]() or nil
+-- 	end
+-- 	app.PrintDebug("ALL FILTERS GET")
+-- 	return PreviousFilters
+-- end
+-- -- Expects being provided with a table of Filter names for which Filters should be activated
+-- -- If nothing is provided, then the previous filters are re-enabled
+-- -- Ideally used for allowing a swap of filters for processing a specific ATT window
+-- api.SwapFilterSet = function(filters)
+-- 	if not filters and not PreviousFilters then return end
+-- 	local Get = api.Get
+-- 	local Set = api.Set
+-- 	if PreviousFilters then
+-- 		for name,_ in pairs(api.Filters) do
+-- 			Set[name]()
+-- 		end
+-- 		app.PrintDebug("ALL FILTERS OFF")
+-- 		for _,name in pairs(PreviousFilters) do
+-- 			app.PrintDebug("PREV FILTER ON:",name)
+-- 			Set[name](true)
+-- 		end
+-- 		wipe(PreviousFilters)
+-- 	end
+-- 	if filters then
+-- 		PreviousFilters = filters
+-- 		for name,_ in pairs(api.Filters) do
+-- 			PreviousFilters[name] = Get[name]() or nil
+-- 			Set[name]()
+-- 			app.PrintDebug("ALL FILTERS SWAPPED")
+-- 		end
+-- 		for _,name in pairs(filters) do
+-- 			app.PrintDebug("SWAP FILTER ON:",name)
+-- 			Set[name](true)
+-- 		end
+-- 	end
+-- end
 
 -- temp sanity debug logging
 -- for name,setFilter in pairs(api.Set) do
