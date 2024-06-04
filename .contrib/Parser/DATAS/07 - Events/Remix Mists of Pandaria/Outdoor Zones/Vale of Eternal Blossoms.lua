@@ -169,6 +169,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215981),	-- Red Crane Greatsword
 					i(215760),	-- Saurok Breaker
 					i(215951),	-- Sha-Blighted Sword (drop)
+					i(210634),	-- Shield of the Wakener (drop)
 					i(215802),	-- Spear of Feral Rage
 					i(215602),	-- Spiritbound Stabber
 					i(216573),	-- Spiritsage's Barrier (drop)
