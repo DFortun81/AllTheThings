@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--Hallowfall START
 			q(78658, {	-- The Hallowed Path
 				--can be started without finishing (achievement) zone?
-				["sourceQuests"] = { 79354 },	-- The Machine Speakers (unsure)
+				["sourceQuests"] = { 81689 },	-- Orientation: Gundargaz
 				["provider"] = { "n", 213983 },	-- Anduin Wrynn
 				["coord"] = { 47.1, 32.2, THE_RINGING_DEEPS },
 			}),

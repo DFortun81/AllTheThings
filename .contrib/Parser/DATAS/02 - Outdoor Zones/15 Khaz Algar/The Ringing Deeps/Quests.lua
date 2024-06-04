@@ -124,6 +124,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 212519 },	-- Speaker Brinthe
 				["coord"] = { 57.7, 29.1, THE_RINGING_DEEPS },
 				["g"] = {
+					i(219014),	-- Vengeful Fire Spirit
 					i(218307),	-- Wildfire Wick
 				},
 			}),
@@ -179,10 +180,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["g"] = {
 					i(210882),	-- Candle Crown (QI!)
 					i(212575),	-- The Candle Keys (QI!)
-					i(219461),	-- Earthen Traveler's Gavel
-					i(219457),	-- Earthen Traveler's Saber
 					i(219466),	-- Earthen Traveler's Chopper
 					i(219462),	-- Earthen Traveler's Claymore
+					i(219461),	-- Earthen Traveler's Gavel
+					i(219457),	-- Earthen Traveler's Saber
+					i(219459),	-- Earthen Traveler's Staff
 				},
 			}),
 			q(80082, {	-- Back to Gundargaz
@@ -782,6 +784,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--c(2902),	-- The Assembly of the Deeps Commendation, this is one-time Warband bonus
 				},
 			}),
+			q(83333, {	-- Gearing Up for Trouble
+				["isDaily"] = true,
+				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// yet I'm unsure
+				["provider"] = { "n", 216164 },	-- Gnawbles
+				["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
+				["g"] = {
+					i(226273),	-- Awakened Mechanical Cache
+					i(220693),	-- Coffer Key Shard
+				},
+			}),
 			q(79343, {	-- Everyday I'm Snufflin'
 				["isDaily"] = true,
 				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// renown 2?
@@ -919,9 +931,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--c(2902),	-- The Assembly of the Deeps Commendation, this is one-time Warband bonus
 				},
 			}),
-			-- Delves?
+			-- Delves
 			q(83766, {	-- DELVER'S CALL: Dread Pit
-				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 227477 },	-- Brann Bronzebeard
+				["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
+				["g"] = {
+					--c(2815),	-- x100 Resonance Crystals
+				},
+			}),
+			q(83749, {	-- Delves: The Waterworks
 				["provider"] = { "n", 227477 },	-- Brann Bronzebeard
 				["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
 				["g"] = {
@@ -953,10 +971,64 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(221970),	-- Pure Crawler Extract (QI!)
 				},
 			}),
+			-- ?
+			q(78877, {	-- Bless These Homes
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 213875 },	-- Speaker Jurlax
+				["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+			}),
+			--
+			q(79148, {	-- The Nibelgaz Refinery
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 215208 },	-- Orsenth
+				["coord"] = { 51.0, 14.9, THE_RINGING_DEEPS },
+				["g"] = {
+					i(218356),	-- Healing Clay (QI!)
+				},
+			}),
+			q(79149, {	-- Rampage in the Refinery
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 215234 },	-- Ferdagor
+				["coord"] = { 51.4, 14.3, THE_RINGING_DEEPS },
+			}),
+			q(79679, {	-- Muddled Mind in the Mine
+				["sourceQuests"] = {
+					79149.	-- Rampage in the Refinery
+					79148.	-- The Nibelgaz Refinery
+				},
+				["provider"] = { "n", 215208 },	-- Orsenth
+				["coord"] = { 51.0, 14.9, THE_RINGING_DEEPS },
+			}),
+			q(79193, {	-- Spinning Spore Spines
+				["sourceQuests"] = { 79679 },	-- Muddled Mind in the Mine
+				["provider"] = { "n", 215209 },	-- Munderut
+				["coord"] = { 52.8, 8.8, THE_RINGING_DEEPS },
+				["g"] = {
+					i(212529),	-- Spore Spines (QI!)
+				},
+			}),
+			q(79194, {	-- To the Source
+				["sourceQuests"] = { 79193 },	-- Spinning Spore Spines
+				["provider"] = { "n", 217474 },	-- Keldaz
+				["coord"] = { 51.1, 14.8, THE_RINGING_DEEPS },
+			}),
+			q(79944, {	-- Raging Rifts	// bugged, can't progress it
+				["sourceQuests"] = { 79194 },	-- To the Source
+				["provider"] = { "n", 223000 },	-- Keldaz
+				["coord"] = { 55.3, 11.1, THE_RINGING_DEEPS },
+			}),
+			q(79327, {	-- The Glittering Shard
+				["sourceQuests"] = { 79194 },	-- To the Source (TODO: need to clarify it, not sure)
+				["provider"] = { "i", 212595 },	-- Glittering Shard
+				["maps"] = { THE_RINGING_DEEPS },
+			}),
 			--
 			-- Bonus Objectives
 			q(82615, {	-- Reclaiming the Waterworks
 				["coord"] = { 44.7, 44.5, THE_RINGING_DEEPS },
+				["g"] = {
+					i(223888),	-- Unstable Dynamite (QI!)
+				},
 			}),
 			q(79257, {	-- Grotto Grievances
 				["coord"] = { 54.6, 71.2, THE_RINGING_DEEPS },
@@ -990,6 +1062,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 57.0, 54.7, THE_RINGING_DEEPS },
 				["g"] = {
 					i(223404),	--Corrupted Earthen Cuffs
+					i(223401),	-- Corrupted Earthen Wristwraps
 				},
 			}),
 			q(x, {	-- Candleflyer Captain // didn't fire
@@ -1013,6 +1086,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 42.8, 35.1, THE_RINGING_DEEPS },
 				["g"] = {
 					i(223355),	-- Waterskipper's Leggings
+					i(223353),	-- Waterskipper's Trousers
 				},
 			}),
 			q(80507, {	-- Terror of the Forge
@@ -1069,5 +1143,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82156),	-- 'Special Assignment: When the Deeps Stir'	/ callings or emissary actually
 	-- ?
 	--q(82957),	-- 'Thanks for the Wax' accepted every time when you fly in zone
+	q(83475),	-- Repair Water Console @ 45.3, 46.4
 });
 --]]

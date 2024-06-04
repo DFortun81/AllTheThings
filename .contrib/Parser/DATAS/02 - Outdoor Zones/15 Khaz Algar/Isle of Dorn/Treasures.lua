@@ -105,6 +105,22 @@
 				--	?
 				--},
 			}),
+			o(444137, {	-- Thak's Treasure
+				["coord"] = { 33.3, 41.9, ISLE_OF_DORN },
+				["questID"] = 82246,
+				["g"] = {
+					n(223227, {	-- One-Eyed Thak
+						["coord"] = { 34.6, 43.5, ISLE_OF_DORN },
+						["questID"] = 82245,	-- Friendly Thak
+					}),
+					n(223247, {	-- One-Eyed Thak
+						["coord"] = { 33.2, 41.9, ISLE_OF_DORN },
+						--["questID"] = 82245,	-- Friendly Thak, flag as completed
+					}),
+					--
+					--some rep and two jc gems
+				},
+			}),
 		}),
 	}),
 })));

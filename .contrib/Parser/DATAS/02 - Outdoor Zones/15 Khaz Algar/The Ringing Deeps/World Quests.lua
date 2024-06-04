@@ -64,6 +64,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(83028, {	-- Thieving Snufflers
 					["coord"] = { 53.7, 34.9, THE_RINGING_DEEPS },
 				}),
+				q(82519, {	-- You Go Take Candle
+					["coord"] = { 58.8, 24.9, THE_RINGING_DEEPS },
+				}),
 				--
 				q(83229, {	-- Special Assignment: When the Deeps Stir
 					["coord"] = { 52.9, 14.7, THE_RINGING_DEEPS },

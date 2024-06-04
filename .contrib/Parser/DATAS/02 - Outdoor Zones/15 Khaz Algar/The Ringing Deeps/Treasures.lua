@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(221548),	-- Blightbud (PET!)
 				},
 			}),
-			o(444004, {	-- Waterlogged Refuse
+			o(455890, {	-- Waterlogged Refuse	-- 444004?
 				["coord"] = { 66.2, 33.4, THE_RINGING_DEEPS },
 				["questID"] = 83030,
 				["g"] = {
@@ -87,11 +87,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(445403, {	-- Scary Dark Chest
-				--you can lit up candle near it but I didn't find a pattern to open it
+				["description"] = "Lit up all candles",
 				["coord"] = { 58.9, 30.3, THE_RINGING_DEEPS },
-				--["questID"] = x,
+				["questID"] = 82818,
 				["g"] = {
-					i(),	--
+					i(224439),	--Oop'lajax (PET!)
 				},
 			}),
 			o(444071, {	-- Cursed Pickaxe

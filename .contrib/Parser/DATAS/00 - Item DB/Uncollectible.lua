@@ -1788,6 +1788,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(225710);	-- Brax's Other Hat
 --i(225715);	-- Brax's To-Do List
 --i(225718);	-- Brax's Toothpick
+--i(217171);	-- CANDLE KING DIARY
 --i(220277);	-- Carapace Fragment
 --i(220281);	-- Charged Fragments
 --i(220249);	-- Chipped Mandible
@@ -1830,6 +1831,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(225803);	-- Lynx Tag Collar
 --i(225850);	-- Moldy Rations
 --i(220219);	-- Mound of Night Soil
+--i(217162);	-- Necklace of Kobold Teeth
 --i(220244);	-- Oversized Claw
 --i(220251);	-- Pale Gills
 --i(225787);	-- Pheromone-Covered Missive
@@ -1837,6 +1839,7 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220247);	-- Polishing Powder
 --i(220258);	-- Rotting Bones
 --i(220257);	-- Pulsing Pustules
+--i(220230);	-- Punctured Intestine
 --i(220261);	-- Pungent Mushroom
 --i(220228);	-- Quartz Growth
 --i(220288);	-- Quivering Tail
@@ -1868,3 +1871,4 @@ i(211798);	-- Un-Raised Bone Fragments
 --i(220289);	-- Venomous Stinger
 --i(220270);	-- Vile Catalyst
 --i(225802);	-- Well-Worn Darning Needle
+--i(217163);	-- Well Worn Doll

@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		filter(BACK, {
 			--- wqs gear green/blue (move to zone reward if needed)
 			i(224664),	-- Gem-Woven Cloak // Hallowfall
-			i(224663),	-- Gem-Woven Shawl // Isle of Dorn
+			i(224663),	-- Gem-Woven Shawl // Isle of Dorn, The Ringing Deeps
 		}),
 		filter(CLOTH, {
 			--gray items
