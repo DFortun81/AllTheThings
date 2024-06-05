@@ -73,6 +73,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
 					["_drop"] = { "g" },
 				}),
+				q(81565, {	-- Another Round of Noodles
+					["isDaily"] = true,
+					["provider"] = { "n", 220895 },	-- Grandmaster Jakkus <Class Apparel>
+					["coord"] = { 53.2, 51.4, VALLEY_OF_THE_FOUR_WINDS },
+					["_drop"] = { "g" },
+				}),
 			}),
 			n(ZONE_REWARDS, {
 				filter(CLOTH, {

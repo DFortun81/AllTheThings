@@ -114,6 +114,7 @@ _.HeaderConstants = {
 	CRAFTED_ITEMS = -1000014,
 	DARKMOON_FAIRE_HEADER = -1000201,
 	DAY_OF_THE_DEAD_HEADER = -1000207,
+	DELVES = -1000907,
 	DISCOVERY = -1000016,
 	DRAGONRIDING_CUP_HEADER = -1000208,
 	DROPS = -1000017,
@@ -559,6 +560,7 @@ localize(L.HEADER_NAMES, {
 	[-1000900] = "Lost Area",
 	[-1000901] = "Corrupted Area",
 	[-1000905] = GUILD .. " " .. TUTORIAL_TITLE20,
+	[-1000907] = "Delves",
 	[-1000908] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-1000909] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
@@ -646,6 +648,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000869] = "If you are phased into the Invasion Blasted Lands and need to go to the pre-Invasion Blasted Lands, then you need to speak with Zidormi, who is standing on a small hill near the entrance of the zone from Swamp of Sorrows.",
 	[-1000872] = "Get swept away in the Plunderstorm— a fun, new, limited-time, pirate-themed event of prodigious proportions lasting the next several weeks. Scour the map and try to be the last pirate standing while dashing across the Arathi Highlands to find abilities, upgrades, and loot to plunder just to survive!\n\nTo Play: Login to Retail WoW and select 'Plunderstorm' from the Game Mode on the top left of your Character Select screen.",
 	[-1000875] = "The Infinite Bazaar has multiple locations.",
+	[-1000907] = "This is a test description!!!",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1027,6 +1030,7 @@ localize(L.HEADER_ICONS, {
 	[-1000900] = "Interface/Icons/spell_priest_psyfiend",
 	[-1000901] = "Interface/Icons/spell_shadow_shadowmend",
 	[-1000905] = _.asset("Interface_Vendor"),
+	[-1000907] = "Interface/Icons/Inv_misc_questionmark",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
