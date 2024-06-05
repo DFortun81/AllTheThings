@@ -127,6 +127,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215945),	-- Binan Scimitar
 					i(215509),	-- Bloodseeker's Greataxe (wowhead)
 					i(215744),	-- Cloudfall Scepter
+					i(216575),	-- Darkhide Shield
 					i(215867),	-- Diviner's Spire
 					i(215979),	-- Faded Forest Falchion
 					i(210337),	-- Faded Forest Hatchet
