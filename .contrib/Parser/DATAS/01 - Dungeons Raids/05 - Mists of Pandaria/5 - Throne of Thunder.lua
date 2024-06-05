@@ -817,18 +817,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
 						}),
 						ach(8090, {	-- A Complete Circuit
-							crit(22797, {	-- Static Shock Conduit Disabled First
-								["_noautomation"] = true,
-							}),
-							crit(22996, {	-- Diffusion Chain Conduit Disabled First
-								["_noautomation"] = true,
-							}),
-							crit(22997, {	-- Overcharge Conduit Disabled First
-								["_noautomation"] = true,
-							}),
-							crit(22998, {	-- Bouncing Bolt Conduit Disabled First
-								["_noautomation"] = true,
-							}),
+							crit(22797),	-- Static Shock Conduit Disabled First
+							crit(22996),	-- Diffusion Chain Conduit Disabled First
+							crit(22997),	-- Overcharge Conduit Disabled First
+							crit(22998),	-- Bouncing Bolt Conduit Disabled First
 						}),
 					},
 				}),

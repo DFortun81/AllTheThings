@@ -1738,11 +1738,11 @@ namespace ATT
                 }
             }
 
+            // don't automate any achievement which is specifically listed under a Difficulty
+            if (NestedDifficultyID != 0) return;
+
             // data marked with noautomation shouldn't incorporate more than this
-            if (data.TryGetValue("_noautomation", out bool noautomation) && noautomation)
-            {
-                return;
-            }
+            if (data.TryGetValue("_noautomation", out bool noautomation) && noautomation) return;
 
             // Classic can't trust Retail data for Achievements because Blizzard
             if (!Program.PreProcessorTags.ContainsKey("RETAIL")) return;
@@ -1750,14 +1750,10 @@ namespace ATT
             // only incorporate achievement criteria which is under a header or another achievement
             if (CurrentParentGroup.HasValue &&
                 CurrentParentGroup.Value.Key != "npcID" &&
-                CurrentParentGroup.Value.Key != "achID")
-            {
-                return;
-            }
+                CurrentParentGroup.Value.Key != "achID") return;
 
             // don't incorporate criteria if the achievement is listed under an NPC group
-            if (CurrentParentGroup.Value.Key == "npcID" && CurrentParentGroup.Value.Value.TryConvert(out long id) && id > 0)
-                return;
+            if (CurrentParentGroup.Value.Key == "npcID" && CurrentParentGroup.Value.Value.TryConvert(out long id) && id > 0) return;
 
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
             if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&

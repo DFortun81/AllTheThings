@@ -393,13 +393,16 @@ namespace ATT
             builder.AppendLine("_.Categories={");
             foreach (var pair in categories)
             {
-                builder.Append(pair.Key).AppendLine("={");
-                foreach (var group in pair.Value)
+                if (pair.Value.Count > 0)
                 {
-                    ExportCompressedLua(builder, group);
-                    builder.Append(",");
+                    builder.Append(pair.Key).AppendLine("={");
+                    foreach (var group in pair.Value)
+                    {
+                        ExportCompressedLua(builder, group);
+                        builder.Append(",");
+                    }
+                    builder.Remove(builder.Length - 1, 1).AppendLine("};");
                 }
-                builder.Remove(builder.Length - 1, 1).AppendLine("};");
             }
             builder.AppendLine("};");
 
