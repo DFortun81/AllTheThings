@@ -396,6 +396,9 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["coord"] = { 53.4, 40.1, DRUSTVAR },
 				["sourceQuestNumRequired"] = 1,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(164979),	-- Bundle of Hard Wood (QI!)
+				},
 			}),
 			q(53997, {	-- The Sixth Sense
 				["sourceQuests"] = { 53996 },	-- Pick Up Sticks
@@ -414,6 +417,9 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["provider"] = { "n", 146091 },	-- Sef Iwen
 				["coord"] = { 55.3, 46.1, DRUSTVAR },
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(164985),	-- Durable Spider Silk (QI!)
+				},
 			}),
 			q(54000, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Beat Goes On
 				["sourceQuests"] = { 53999 },	-- Exhumed
@@ -421,6 +427,8 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["coord"] = { 63.0, 59.4, DRUSTVAR },
 				["g"] = {
 					r(284415, {["u"]=TRAINING}),	-- Enchant Runic Power Core
+					i(165023),	-- Runic Power Core (QI!)
+					i(165022),	-- Smooth River Stone (QI!)
 				},
 			})),
 			q(54001, {	-- We're Going In

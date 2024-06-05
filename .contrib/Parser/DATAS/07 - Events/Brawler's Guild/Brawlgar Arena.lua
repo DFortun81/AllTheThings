@@ -221,12 +221,18 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["sourceQuest"] = 53920,	-- A Favor for Your Ol' Pal Buxdoggle
 				["coord"] = { 49.2, 68.0, 503 },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164941),	-- Huge Pile of Legitimately-Earned Brawler's Gold (QI!)
+				},
 			}),
 			q(53922, {	-- Evidence Packet: Pit Boss Buxdoggle
 				["qg"] = 145582,	-- Sharisanda
 				["sourceQuest"] = 53921,	-- The Pit Boss's Debts
 				["coord"] = { 48.8, 79.8, 503 },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164962),	-- Evidence Packet: Pit Boss Buxdoggle (QI!)
+				},
 			}),
 			q(53923, {	-- Undercover Agent: Stone Guard Mollivox
 				["qg"] = 145581,	-- Commander Arlu Ravenhide
@@ -240,12 +246,18 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
 				["coord"] = { 37.4, 33.0, 503 },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164928),	-- Soul Splinter (QI!)
+				},
 			}),
 			q(53925, {	-- Super Soul Splinters
 				["qg"] = 145691,	-- Shadowmaster Skrizzik
 				["sourceQuest"] = 53924,	-- Soul Splinters
 				["coord"] = { 37.4, 33.0, 503 },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164929),	-- Super Soul Splinter (QI!)
+				},
 			}),
 			q(53926, {	-- Cause for Concern
 				["sourceQuest"] = 53925,	-- Super Soul Splinters
@@ -256,18 +268,27 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["sourceQuest"] = 53926,	-- Cause for Concern
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164937),	-- 13-Tooth Gogglegear (QI!)
+				},
 			}),
 			q(53928, {	-- The Mollivox Goggle Experiment
 				["qg"] = 145583,	-- Stone Guard Mollivox
 				["sourceQuest"] = 53927,	-- The Precious 13-Tooth Gogglegear
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164943),	-- Mollivox's Goggles (QI!)
+				},
 			}),
 			q(53929, {	-- Evidence Packet: Shadowmaster Skrizzik
 				["qg"] = 145583,	-- Stone Guard Mollivox
 				["sourceQuest"] = 53928,	-- The Mollivox Goggle Experiment
 				["coord"] = { 50.0, 12.4, 503 },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164963),	-- Evidence Packet: Shadowmaster Skrizzik (QI!)
+				},
 			}),
 			q(53930, {	-- Undercover Agent: Nugg Lumbo
 				["qg"] = 145581,	-- Commander Arlu Ravenhide
@@ -288,12 +309,18 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 				["sourceQuest"] = 53931,	-- Flaunt It If You Got It
 				["coord"] = { 31.2, 54.0, 503 },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164947),	-- Brawl'gar Arena Sign (QI!)
+				},
 			}),
 			q(53932, {	-- Evidence Packet: Libbiara Blightrunner
 				["qg"] = 145584,	-- Nugg Lumbo
 				["sourceQuest"] = 53952,	-- Simply Dying of Boredom
 				["coord"] = { 29.8, 50.0, 503 },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164964),	-- Evidence Packet: Libbiara Blightrunner (QI!)
+				},
 			}),
 			q(53933, {	-- The Brawl'gar Trial
 				["qg"] = 145581,	-- Commander Arlu Ravenhide

@@ -4271,7 +4271,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 62.1, 45.3, TANARIS },
 					["timeline"] = { ADDED_8_1_5 },
-					["lvl"] = 120,
+					["lvl"] = 50,
+					["g"] = {
+						i(167232),	-- Mechanical Parts (QI!)
+					},
 				}),
 				q(8366, {	-- Southsea Shakedown
 					["qg"] = 7882,	-- Security Chief Bilgewhizzle

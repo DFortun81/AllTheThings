@@ -148,6 +148,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						q(54447, {	-- A Shady Character
 							["pvp"] = true,
 							["pb"] = true,
+							["g"] = {
+								i(166244),	-- Token of Shadiness (QI!)
+							},
 						}),
 					},
 				})),

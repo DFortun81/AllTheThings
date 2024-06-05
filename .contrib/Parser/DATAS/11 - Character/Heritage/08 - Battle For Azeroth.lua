@@ -151,6 +151,9 @@ root(ROOTS.Character, n(HERITAGE, {
 					["sourceQuest"] = 53844,	-- Recruiting the Furnace Master
 					["provider"] = { "n", 145462 },	-- Brann Bronzebeard
 					["coord"] = { 35.0, 48.8, LOCH_MODAN },
+					["g"] = {
+						i(164960),	-- Remnant of the Earthen Ritual (QI!)
+					},
 				}),
 				q(53845, {	-- Forging the Armor
 					["sourceQuest"] = 53842,	-- Earthen Blessing

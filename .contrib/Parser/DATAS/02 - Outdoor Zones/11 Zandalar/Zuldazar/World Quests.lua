@@ -122,11 +122,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(54298, {	-- Gravity Matters (Faction Assault WQ)
 				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(165878),	-- X-52 Delevitator (QI!)
+				},
 			}),
 			q(50874),	-- Hakbi the Risen
 			q(54162, {	-- Hard Landing (Faction Assault WQ)
 				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(165877),	-- BOOM-O-MATIC 9000 (QI!)
+				},
 			}),
 			q(53327, {	-- Hardened Monelite
 				["requireSkill"] = MINING,
@@ -378,6 +384,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(54701, {	-- Wrath of the Ravasaur (Faction Assault WQ)
 				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(166441),	-- Void Elf Head (QI!)
+				},
 			}),
 			q(51824, {	-- You're Grounded
 				["races"] = ALLIANCE_ONLY,

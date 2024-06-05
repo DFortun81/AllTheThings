@@ -297,6 +297,9 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["coord"] = { 76.6, 11.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167231),	-- Delormi's Synchronous Thread (QI!)
+				},
 			}),
 			q(53940, {	-- A Stitch in Time [H]
 				["sourceQuests"] = { 53938 },	-- A Friend in Needle [H]
@@ -304,6 +307,9 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["coord"] = { 43.5, 34.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167231),	-- Delormi's Synchronous Thread (QI!)
+				},
 			}),
 			q(55177, {	-- Tearing at the Seams [A]
 				["sourceQuests"] = { 53807 },	-- A Stitch in Time [A]
@@ -355,6 +361,9 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
 				["coord"] = { 64.2, 69.5, SURAMAR },
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167231),	-- Delormi's Synchronous Thread (QI!)
+				},
 			}),
 			q(53868, {	-- Saving Nine
 				["sourceQuests"] = { 55214 },	-- Seam Stress

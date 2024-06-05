@@ -573,6 +573,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				{ "i", 127842, 1 },	-- 1xInfernal Alchemist Stone
 			},
 			["groups"] = {
+				i(164379),	-- Bound Infernal Alchemist Stone (QI!)
 				i(151706),	-- Recipe: Astral Alchemist Stone [Rank 1] (RECIPE!)
 			},
 		})),

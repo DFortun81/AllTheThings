@@ -480,10 +480,13 @@ root(ROOTS.Zones, m(BROKEN_ISLES, {
 			}),
 			q(54120, {	-- To Orgrimmar
 				["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
-				["lvl"] = 120,
+				["lvl"] = 50,
 				["coord"] = { 62.3, 30.4, BROKEN_SHORE },
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 53778 },	-- Where He Fell
+				["g"] = {
+					i(165371),	-- The Glaive of Vol'jin (QI!)
+				},
 			}),
 			q(46509, {	-- Tomb Raidering
 				["sourceQuests"] = { 46501 },	-- Grave Robbin'

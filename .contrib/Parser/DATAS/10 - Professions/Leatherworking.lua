@@ -902,6 +902,10 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["coord"] = { 42.6, 60.6, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167550),	-- Avarice's Chest Key (QI!)
+					i(167541),	-- Rare Hides (QI!)
+				},
 			}),
 			q(55218, {	-- Sheza's Prized Leather
 				["sourceQuests"] = { 55217 },	-- Repaying the Life Debt
@@ -909,6 +913,10 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["coord"] = { 69.7, 26.7, THUNDER_BLUFF },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167541),	-- Rare Hides (QI!)
+					i(167673),	-- Verd's Chest Key (QI!)
+				},
 			}),
 			q(55231, {	-- The Other Ghostdancer
 				["sourceQuests"] = { 55228 },	-- The Audition [A]
@@ -930,6 +938,9 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["coord"] = { 53.6, 54.4, VALSHARAH },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167542),	-- Brilliant Azure Scales (QI!)
+				},
 			}),
 			q(55220, {	-- Bass Fishing
 				["sourceQuests"] = { 55219 },	-- Dropping by the Base
@@ -937,6 +948,9 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["coord"] = { 54.9, 77.9, 750 },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167543),	-- Brilliant Golden Scales (QI!)
+				},
 			}),
 			q(55233, {	-- Picking Bones [A]
 				["sourceQuests"] = { 55228 },	-- The Audition [A]
@@ -944,6 +958,9 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["coord"] = { 69.6, 29.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167549),	-- Unwaning Bones (QI!)
+				},
 			}),
 			q(55221, {	-- Picking Bones [H]
 				["sourceQuests"] = { 55216 },	-- The Audition [H]
@@ -951,6 +968,9 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["coord"] = { 53.4, 92.5, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(165231),	-- Unwaning Bones (QI!)
+				},
 			}),
 			q(55234, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Make Some Noise [A]
 				["sourceQuests"] = {

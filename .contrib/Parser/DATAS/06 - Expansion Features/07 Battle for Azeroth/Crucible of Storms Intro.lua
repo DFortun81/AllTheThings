@@ -85,6 +85,9 @@ root(ROOTS.ExpansionFeatures, {
 				["coord"] = { 40.4, 36.4, STORMSONG_VALLEY },
 				["provider"] = { "n", 135793 },	-- Collector Kojo
 				["classes"] = exclude(PRIEST, ALL_CLASSES),
+				["g"] = {
+					i(164761),	-- Xal'atath, Blade of the Black Empire (QI!)
+				},
 			}),
 			q(54174, {	-- Orders from Azshara
 				["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
@@ -92,6 +95,9 @@ root(ROOTS.ExpansionFeatures, {
 				["coord"] = { 71.4, 30.2, ZULDAZAR },
 				["provider"] = { "n", 134345 },	-- Collector Kojo
 				["classes"] = exclude(PRIEST, ALL_CLASSES),
+				["g"] = {
+					i(164761),	-- Xal'atath, Blade of the Black Empire (QI!)
+				},
 			}),
 			q(54265, {	-- Orders from Azshara
 				["sourceQuests"] = { 54172 },	-- The Azsharan Medallion
@@ -152,6 +158,10 @@ root(ROOTS.ExpansionFeatures, {
 				},
 				["provider"] = { "n", 144773 },	-- Xal'atath
 				["coord"] = { 20.0, 35.8, DRUSTVAR },
+				["g"] = {
+					i(164976),	-- Skeleton Key (QI!)
+					i(164763),	-- Trident of Deep Ocean (QI!)
+				},
 			}),
 			q(53762, {	-- The Tempest Crown
 				["sourceQuests"] = { 53761 },	-- The Pirate's Treasure
@@ -185,6 +195,9 @@ root(ROOTS.ExpansionFeatures, {
 					{ 78.0, 36.7, ZULDAZAR },
 					{ 34.2, 31.8, STORMSONG_VALLEY },
 				},
+				["g"] = {
+					i(164911),	-- Void Stone (QI!)
+				},
 			}),
 			q(54058, {	-- Unintended Consequences [Priest]
 				["sourceQuests"] = { 54114 },	-- Every Little Death Helps [Priest]
@@ -192,6 +205,9 @@ root(ROOTS.ExpansionFeatures, {
 				["coords"] = {
 					{ 78.0, 36.7, ZULDAZAR },
 					{ 34.2, 31.8, STORMSONG_VALLEY },
+				},
+				["g"] = {
+					i(164911),	-- Void Stone (QI!)
 				},
 			}),
 		}),

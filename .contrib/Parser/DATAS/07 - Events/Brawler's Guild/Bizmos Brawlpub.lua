@@ -217,11 +217,17 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				["cost"] = { { "i", 164935, 1 }, },	-- Challenge Card: Lord Sylysthrel
 				["sourceQuest"] = 55006,	-- A Favor for Your Old Chum Winifred
 				["coord"] = { 63.3, 40.6, 500 },
+				["g"] = {
+					i(164941),	-- Huge Pile of Legitimately-Earned Brawler's Gold (QI!)
+				},
 			}),
 			q(55008, {	-- Evidence Packet: Lord Winifred Browne
 				["qg"] = 150314,	-- Ann Dennyson
 				["sourceQuest"] = 55007,	-- Lord Browne's Debts
 				["coord"] = { 68.0, 36.6, 500 },
+				["g"] = {
+					i(167034),	-- Evidence Packet: Lord Winifred Browne (QI!)
+				},
 			}),
 			q(55009, {	-- Undercover Agent: Saralara Fizzlesprang
 				["qg"] = 150313,	-- Commander Daalo
@@ -233,12 +239,18 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				["sourceQuest"] = 55009,	-- Undercover Agent: Saralara Fizzlesprang
 				["coord"] = { 68.0, 24.8, 500 },
 				["description"] = "You can save previously earned Brawler's Purses and open them while on this quest - Each Brawler's Purse gives 10 - 12 Soul Splinters, so you will need 9 - 10 Brawler's Purses to complete this quest.",
+				["g"] = {
+					i(164928),	-- Soul Splinter (QI!)
+				},
 			}),
 			q(55011, {	-- Super Soul Splinters
 				["qg"] = 150317,	-- Shadowmaster O'Flannerty
 				["sourceQuest"] = 55010,	-- Soul Splinters
 				["coord"] = { 68.0, 24.8, 500 },
 				["description"] = "You can save previously earned Rumbler's Purses and open them while on this quest - Each Rumbler's Purse gives 1 Super Soul Splinter, so you will need 3 Rumbler's Purses to complete this quest.",
+				["g"] = {
+					i(164929),	-- Super Soul Splinter (QI!)
+				},
 			}),
 			q(55012, {	-- Cause for Concern
 				["sourceQuest"] = 55011,	-- Super Soul Splinters
@@ -248,16 +260,25 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				["cost"] = { { "i", 94178, 1 }, },	-- Challenge Card: G.G. Engineering
 				["sourceQuest"] = 55012,	-- Cause for Concern
 				["coord"] = { 44.4, 34.6, 500 },
+				["g"] = {
+					i(164937),	-- 13-Tooth Gogglegear (QI!)
+				},
 			}),
 			q(55014, {	-- The Fizzlesprang Goggle Experiment
 				["qg"] = 150315,	-- Saralara Fizzlesprang
 				["sourceQuest"] = 55013,	-- The Precious 13-Tooth Gogglegear
 				["coord"] = { 44.4, 34.6, 500 },
+				["g"] = {
+					i(167033),	-- Saralara's Goggles (QI!)
+				},
 			}),
 			q(55015, {	-- Evidence Packet: Shadowmaster O'Flannerty
 				["qg"] = 150315,	-- Saralara Fizzlesprang
 				["sourceQuest"] = 55014,	-- The Fizzlesprang Goggle Experiment
 				["coord"] = { 44.4, 34.6, 500 },
+				["g"] = {
+					i(167035),	-- Evidence Packet: Shadowmaster O'Flannerty (QI!)
+				},
 			}),
 			q(55016, {	-- Undercover Agent: Silent Jussho
 				["qg"] = 150313,	-- Commander Daalo
@@ -279,11 +300,17 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				["qg"] = 70722,	-- Grant Lazarby
 				["sourceQuest"] = 55017,	-- Flaunt It If You Got It
 				["coord"] = { 33.1, 64.3, 500 },
+				["g"] = {
+					i(167038),	-- Bizmo's Brawlpub Sign (QI!)
+				},
 			}),
 			q(55019, {	-- Evidence Packet: Grant Lazarby
 				["qg"] = 150316,	-- Silent Jussho
 				["sourceQuest"] = 55018,	-- Simply Dying of Boredom
 				["coord"] = { 30.3, 87.7, 500 },
+				["g"] = {
+					i(167036),	-- Evidence Packet: Grant Lazarby (QI!)
+				},
 			}),
 			q(55020, {	-- The Brawlpub Trial
 				["qg"] = 150313,	-- Commander Daalo

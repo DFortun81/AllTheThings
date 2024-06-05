@@ -248,6 +248,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(54308, {	-- Mine Your Business (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(165889),	-- Blackpowder Ore (QI!)
+				},
 			}),
 			q(54266, {	-- Mortar Master Zapfritz (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
@@ -389,6 +392,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51982, {	-- Storm's Rage (Faction Assault WQ)
 				["provider"] = { "n", 135800 },	-- Sister Lilyana <Storm's Wake Emissary>
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(166459),	-- Xibek's Key (QI!)
+				},
 			}),
 			q(52380, {	-- Supplies Needed: Frenzied Fangtooth
 				["races"] = ALLIANCE_ONLY,
@@ -448,6 +454,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53983, {	-- Wet Work: Fort Knight (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164731),	-- Enchanted Shroud (QI!)
+				},
 			}),
 			q(52299, {	-- Whiplash
 				["g"] = {

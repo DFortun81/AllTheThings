@@ -230,6 +230,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 121706 },	-- Beastlord L'kala
 				["coord"] = { 66.8, 42.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(167545),	-- L'kala's Offering (QI!)
+				},
 			}),
 			q(48317, {	-- A Nose for Magic
 				["sourceQuests"] = {
@@ -274,6 +277,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 151257 },	-- Torcali
 				["coord"] = { 68.2, 29.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(167546),	-- Blessed Offering (QI!)
+				},
 			}),
 			q(49289, {	-- A Special Stone
 				["sourceQuests"] = {
@@ -1488,6 +1494,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 67.6, 72.8, ZANCHUL_HALL_OF_THE_HIGH_PRIESTS },
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 53775 },	-- Shades of Disruption
+				["g"] = {
+					i(165401),	-- The Glaive of Vol'jin (QI!)
+				},
 			}),
 			q(55798, {	-- Wander Not Alone
 				["sourceQuests"] = { 55797 },	-- The Direhorn Mother's Fury
@@ -1563,6 +1572,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = {
 					51521,	-- The True Leader of Zandalar
 					54165,	-- The Return of Derek Proudmoore
+				},
+				["g"] = {
+					i(164944),	-- The Bloodied Glaive of Vol'jin (QI!)
 				},
 			}),
 			q(50940, {	-- Wisdom of the Wingless

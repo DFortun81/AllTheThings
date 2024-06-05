@@ -279,6 +279,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 150515 },	-- Cyrus Crestfall
 				["coord"] = { 58.6, 70.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(166462),	-- Letter from the Lord Admiral (QI!)
+				},
 			}),
 			q(54721, {	-- I'm Too Old for This Ship
 				["sourceQuests"] = { 54708 },	-- Home, Home on the Range
@@ -318,6 +321,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 148870 },	-- Dorian Atwater
 				["coord"] = { 67.1, 12.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(166675),	-- Algerson Lumber Sample (QI!)
+				},
 			}),
 			q(54730, {	-- Gorak Tul's Influence
 				["sourceQuests"] = { 54728 },	-- This Lumber is Haunted
@@ -348,6 +354,12 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 150885 },	-- Wicker Beast
 				["coord"] = { 36.5, 28.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(167174),	-- Gnawed Bone (QI!)
+					i(167173),	-- Squeaky Toy (QI!)
+					i(167168),	-- Storehouse Key (QI!)
+					i(167172),	-- Worn Collar (QI!)
+				},
 			}),
 			q(54733, {	-- Make it Wright
 				["sourceQuests"] = { 55136 },	-- Her Dog Days Are Over
@@ -367,6 +379,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 					{ 33.0, 30.4, DRUSTVAR },
 				},
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(167199),	-- Dorian's Ore Shipment (QI!)
+					i(166674),	-- Hastily Scrawled Note (QI!)
+					i(167200),	-- Purified Lumber Sample (QI!)
+				},
 			}),
 			q(54735, {	-- A Worthy Crew
 				["sourceQuests"] = { 54734 },	-- Summons from Dorian

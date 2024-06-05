@@ -27,6 +27,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 110,
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
+				["g"] = {
+					i(164742),	-- Crawler Mine Parts (QI!)
+				},
 			}),
 			q(51579, {	-- Dark Ranger Clea
 				["lvl"] = 120,
@@ -47,6 +50,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 110,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["g"] = {
+					i(165841),	-- Bot Scrambler (QI!)
+				},
 			}),
 			q(53704, {	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
 				["lvl"] = 110,

@@ -23,9 +23,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51095),	-- Ashmane
 			q(54245, {	-- Azerite Altercation (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(164767),	-- Unrefined Azerite Shard (QI!)
+				},
 			}),
 			q(54246, {	-- Azerite Altercation (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164767),	-- Unrefined Azerite Shard (QI!)
+				},
 			}),
 			q(52849),	-- Azerite Empowerment
 			q(51185),	-- Azerite Empowerment
@@ -41,12 +47,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sym"] = {{"select","objectID",
 					311903,	-- Loose Parts (A)
 				}},
+				["g"] = {
+					i(165852),	-- Alkalescent Salt (QI!)
+				},
 			}),
 			q(54273, {	-- Battle Bots (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
 				["sym"] = {{"select","objectID",
 					311902,	-- Loose Parts (H)
 				}},
+				["g"] = {
+					i(165852),	-- Alkalescent Salt (QI!)
+				},
 			}),
 			q(51641),	-- Beachhead
 			q(54609, {	-- Beastlord Drakara (Faction Assault WQ)
@@ -102,6 +114,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(54189, {	-- Desert Crawl (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164742),	-- Crawler Mine Parts (QI!)
+				},
 			}),
 			q(52878, {	-- Desert Survivors
 				["provider"] = { "n", 142054 },	-- Kusa
@@ -245,6 +260,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51122),	-- Scorpox
 			q(54188, {	-- Scrambled Bots (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(165841),	-- Bot Scrambler (QI!)
+				},
 			}),
 			q(51629),	-- Shell Game
 			q(54555, {	-- Siege O' Matic 9000 (Faction Assault WQ)
@@ -286,6 +304,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(55303),	-- The Cycle of Life
 			q(54154, {	-- The Hills Have Spies (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(165942),	-- Gallywix's Getaway Pack (QI!)
+					i(165656),	-- Spy Gear (QI!)
+				},
 			}),
 			q(51963, {	-- The Wrath of Vorrik
 				["races"] = ALLIANCE_ONLY,

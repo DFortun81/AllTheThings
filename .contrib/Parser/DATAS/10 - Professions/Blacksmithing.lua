@@ -766,6 +766,9 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "n", 133796 },	-- Therazane
 				["coord"] = { 27.5, 50.8, DEEPHOLM },
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167021),	-- Khaz'gorian Anvil (QI!)
+				},
 			}),
 			q(50275, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Anvil's Away [A]
 				["sourceQuests"] = { 50288 },	-- Therazane's Choice

@@ -429,6 +429,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["isDaily"] = true,
 				["g"] = {
 					i(169221),	-- Chief's Key (QI!)
+					i(169222),	-- Murloc Treasure (QI!)
 				},
 			}),
 			q(55103, {	-- Ideas Can Come from Anywhere
@@ -459,7 +460,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 71.5, 38.7, MECHAGON },
 				["sourceQuest"] = 55696,	-- Test Drive
 				["g"] = {
-					i(168305),	-- Powercore Schematics
+					i(168305),	-- Powercore Schematics (QI!)
 				},
 			}),
 			q(56305, {	-- Let's Fish!
@@ -633,6 +634,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 154335 },	-- Dread Captain DeMeza
 				["coord"] = { 71.7, 38.8, MECHAGON },
 				["isDaily"] = true,
+				["g"] = {
+					i(169164),	-- Father's Bones (QI!)
+					i(169166),	-- Father's Clothes (QI!)
+					i(169165),	-- Father's Sword (QI!)
+				},
 			}),
 			q(55528, {	-- Playtime's Over
 				["provider"] = { "n", 151006 },	-- Rocket-Chief Fuselage

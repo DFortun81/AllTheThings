@@ -187,6 +187,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(54839, {	-- Rightfully Ours (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(166726),	-- Alliance Supplies (QI!)
+				},
 			}),
 			q(50676),	-- River Toll
 			q(54135, {	-- Romp in the Swamp (Faction Assault WQ)

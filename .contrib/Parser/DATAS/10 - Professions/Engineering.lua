@@ -918,6 +918,9 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(164770),	-- Faithless Lightning Rod (QI!)
+				},
 			}),
 			q(53806, {	-- Heavy is the Head
 				["sourceQuests"] = {

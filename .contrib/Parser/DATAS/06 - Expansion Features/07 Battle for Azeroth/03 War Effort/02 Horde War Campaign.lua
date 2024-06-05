@@ -836,12 +836,18 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 134711 },	-- Lady Sylvanas Windrunner
 							["coord"] = { 48.4, 71.4, ORGRIMMAR },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(164778),	-- Abyssal Scepter (QI!)
+							},
 						}),
 						q(53851, {	-- Our War Continues
 							["sourceQuests"] = { 53003 },	-- A Cycle of Hatred
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(164778),	-- Abyssal Scepter (QI!)
+							},
 						}),
 						q(53852, {	-- Azerite Denied
 							["sourceQuests"] = {
@@ -851,12 +857,18 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, ZULDAZAR },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(164778),	-- Abyssal Scepter (QI!)
+							},
 						}),
 						q(53856, {	-- The Fury of the Horde
 							["sourceQuests"] = { 53852 },	-- Azerite Denied
 							["provider"] = { "n", 145422 },	-- Rexxar
 							["coord"] = { 47.5, 21.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(164778),	-- Abyssal Scepter (QI!)
+							},
 						}),
 						q(53879, {	-- Cleaning Out the Estate
 							["sourceQuests"] = { 53856 },	-- The Fury of the Horde
@@ -875,6 +887,11 @@ root(ROOTS.ExpansionFeatures,
 							},
 							["coord"] = { 48.9, 25.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(164778),	-- Abyssal Scepter (QI!)
+								i(164917),	-- Azerite Bomb Cluster (QI!)
+								i(165225),	-- Azerite Rifle (QI!)
+							},
 						}),
 						q(53913, {	-- With Honor
 							["sourceQuests"] = {
@@ -914,6 +931,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 145751 },	-- Trade Prince Gallywix
 							["coord"] = { 36.2, 72.0, ZULDAZAR },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(166309),	-- Azerite Vacuumizer (QI!)
+							},
 						}),
 						q(54124, {	-- Avoiding Lawsuits 101
 							["sourceQuests"] = { 53941 },	-- A Mech for a Goblin
@@ -965,6 +985,10 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "i", 164987 },	-- Alliance Battle Plans
 							["races"] = HORDE_ONLY,
 							["maps"] = { TIRAGARDE_SOUND },
+							["g"] = {
+								i(164987),	-- Alliance Battle Plans (QI!)
+								i(164989),	-- Mekkatorque's Battle Plans (QI!)
+							},
 						}),
 						q(54028, {	-- Mech versus Airship
 							["sourceQuests"] = {
@@ -993,18 +1017,28 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 147088 },	-- Arcanist Valtrois
 							["coord"] = { 82.9, 49.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(165702),	-- Shard of Vesara (QI!)
+							},
 						}),
 						q(54176, {	-- Be More Uniform
 							["sourceQuests"] = { 54121 },	-- Breaking Out Ashvane
 							["provider"] = { "n", 147088 },	-- Arcanist Valtrois
 							["coord"] = { 82.9, 49.5, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(165697),	-- Captain's Overcoat (QI!)
+								i(165698),	-- Proudmoore Equipment (QI!)
+							},
 						}),
 						q(54177, {	-- A Brilliant Distraction
 							["sourceQuests"] = { 54121 },	-- Breaking Out Ashvane
 							["provider"] = { "n", 146931 },	-- Rexxar
 							["coord"] = { 83.0, 49.6, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(165690),	-- Volatile Azerite (QI!)
+							},
 						}),
 						q(54178, {	-- Catching a Ride
 							["sourceQuests"] = {
@@ -1092,6 +1126,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 147155 },	-- Patch
 							["coord"] = { 50.3, 78.4, NAZMIR },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(165710),	-- A.F.M.O.D. Part (QI!)
+							},
 						}),
 						q(54213, {	-- It's Alive!
 							["sourceQuests"] = {
@@ -1213,6 +1250,11 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 149842 },	-- Baine Bloodhoof
 							["coord"] = { 85.8, 45.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(167073),	-- Apothecary's Key (QI!)
+								i(167074),	-- Captain's Key (QI!)
+								i(167072),	-- Navigator's Key (QI!)
+							},
 						}),
 						q(54997, {	-- Dead in the Water
 							["sourceQuests"] = { 54958 },	-- Ships in the Night
@@ -1235,6 +1277,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 150311 },	-- Thomas Zelling
 							["coord"] = { 76.3, 42.7, DUSTWALLOW_MARSH },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(167228),	-- Charm of Returning (QI!)
+							},
 						}),
 						q(55034, {	-- Under False Colors (Sylvanas Version)
 							["sourceQuests"] = {
@@ -1245,6 +1290,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 150311 },	-- Thomas Zelling
 							["coord"] = { 76.3, 42.7, DUSTWALLOW_MARSH },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(167228),	-- Charm of Returning (QI!)
+							},
 						}),
 						-- The Warfang Event (Baine's imprisoning)
 						q(55047, {	-- Securing Warfang Hold
@@ -1269,6 +1317,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 150690 },	-- Boss Mida
 							["coord"] = { 51.0, 32.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(167078),	-- Electronic Mayhem Projector (QI!)
+							},
 						}),
 						q(55049, {	-- Communication Breakdown
 							["sourceQuests"] = {

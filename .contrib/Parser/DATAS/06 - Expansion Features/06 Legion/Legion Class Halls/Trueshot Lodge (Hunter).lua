@@ -815,12 +815,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 						["provider"] = { "n", 149736 },	-- Image of Mimiron
 						["coord"] = { 37.5, 46.5, THE_STORM_PEAKS },
 						["timeline"] = { ADDED_8_1_5 },
+						["g"] = {
+							i(166895),	-- Thunderspark (QI!)
+						},
 					}),
 					q(54917, {	-- Paid in Blood
 						["sourceQuest"] = 54916,	-- The Huntsman's Creed
 						["provider"] = { "n", 149870 },	-- Grif Wildheart
 						["coord"] = { 33.6, 58.6, THE_STORM_PEAKS },
 						["timeline"] = { ADDED_8_1_5 },
+						["g"] = {
+							i(167061),	-- Thunderspark (QI!)
+						},
 					}),
 					q(54918, {	-- Spark of Imagination
 						["sourceQuest"] = 54917,	-- Paid in Blood
