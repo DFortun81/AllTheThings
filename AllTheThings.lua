@@ -10958,7 +10958,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				self.ScrollBar:SetValue(1);
 			else
 				-- If we don't have any data cached for this mapID and it exists in game, report it to the chat window.
-				local mapID = mapID;
 				self.CurrentMaps = {[mapID]=true};
 				local mapInfo = C_Map_GetMapInfo(mapID);
 				if mapInfo then
@@ -10974,6 +10973,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 						end
 					end
 					-- only report for mapIDs which actually exist
+					mapID = self.mapID
 					print("No data found for this Location ", app.GetMapName(mapID), " [", mapID, "]");
 					print("Path: ", mapPath);
 					app.report();
