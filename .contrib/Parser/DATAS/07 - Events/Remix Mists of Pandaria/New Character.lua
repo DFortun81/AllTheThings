@@ -10,7 +10,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(210340),	-- Timerunner's Sword
 		}),
 		cl(DEMONHUNTER, {
-			-- TODO
+			i(208496),	-- Thunderpaw Tunic
+			i(210278),	-- Thunderpaw Breeches
+			i(210270),	-- Thunderpaw Boots
+			i(210340),	-- Timerunner's Sword
 		}),
 		cl(DRUID, {
 			i(210270),	-- Thunderpaw Boots
