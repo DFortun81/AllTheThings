@@ -88,7 +88,10 @@ end
 
 -- Spell APIs
 if not GetSpellInfo then
-	lib.GetSpellName = C_Spell.GetSpellName;
+	local C_Spell_GetSpellName = C_Spell.GetSpellName;
+	lib.GetSpellName = function(spell)
+		return spell and C_Spell_GetSpellName(spell);
+	end;
 	lib.GetSpellIcon = C_Spell.GetSpellTexture;
 	lib.GetSpellLink = C_Spell.GetSpellLink;
 else
