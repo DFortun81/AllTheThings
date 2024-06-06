@@ -18,8 +18,18 @@ local ATTAccountWideData
 local GetProgressColor = app.Modules.Color.GetProgressColor;
 local Colorize = app.Modules.Color.Colorize;
 
--- Blizz locals
+-- Temporary Helper functions
 local GetFactionInfoByID = GetFactionInfoByID;
+local GetFactionName;
+if not GetFactionInfoByID then
+	local C_Reputation = C_Reputation;
+	GetFactionName = function(factionID)
+		local factionData = C_Reputation.GetFactionDataByID(factionID);
+		return factionData and factionData.name;
+	end
+else
+	GetFactionName = function(factionID) return select(1, GetFactionInfoByID(factionID)); end
+end
 
 -- Faction API Implementation
 app.AddEventHandler("OnStartup", function()
@@ -109,7 +119,7 @@ for id=1,8,1 do
 end
 local Exalted = StandingByID[8];
 local function GetFactionStanding(reputationPoints)
-	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
+	-- Total earned rep is a value AWAY FROM ZERO, not a value within the standing bracket.
 	if reputationPoints then
 		for i=8,1,-1 do
 			local threshold = StandingByID[i].threshold;
@@ -136,7 +146,7 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 		end
 	end,
 	name = function(t)
-		return GetFactionInfoByID(t[KEY]) or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t[KEY]);
+		return GetFactionName(t[KEY]) or (t.creatureID and app.NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t[KEY]);
 	end,
 	description = function(t)
 		if not t.lore then return L.FACTION_SPECIFIC_REP; end

@@ -19,8 +19,8 @@ local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted;
 ---@diagnostic disable-next-line: undefined-global
 local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn or IsQuestComplete;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
-local GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo =
-	  GetFactionInfoByID, GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo;
+local GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo =
+	  GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo;
 local ALLIANCE_FACTION_ID = Enum.FlightPathFaction.Alliance;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
@@ -28,6 +28,17 @@ local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 local GetSpellInfo = GetSpellInfo;
 local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
 local GetSpellIcon = (GetSpellInfo and (function(spellID) return select(3, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellTexture;
+local GetFactionInfoByID = GetFactionInfoByID;
+local GetFactionName;
+if not GetFactionInfoByID then
+	local C_Reputation = C_Reputation;
+	GetFactionName = function(factionID)
+		local factionData = C_Reputation.GetFactionDataByID(factionID);
+		return factionData and factionData.name;
+	end
+else
+	GetFactionName = function(factionID) return select(1, GetFactionInfoByID(factionID)); end
+end
 
 -- Class locals
 local LastQuestTurnedIn, MostRecentQuestTurnIns;
@@ -1234,7 +1245,7 @@ app.QuestLockCriteriaFunctions = criteriaFuncs;
 local function QuestWithReputationDescription(t)
 	if app.Settings.Collectibles.Reputations then
 		local factionID = t.maxReputation[1];
-		return L.ITEM_GIVES_REP .. (select(1, GetFactionInfoByID(factionID)) or ("Faction #" .. tostring(factionID))) .. "'";
+		return L.ITEM_GIVES_REP .. (GetFactionName(factionID) or ("Faction #" .. tostring(factionID))) .. "'";
 	end
 end
 local function QuestWithReputationCollectibleAsCost(t)

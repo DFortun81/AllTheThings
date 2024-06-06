@@ -39,30 +39,44 @@ BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L.TOGGLE_RANDOM
 BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L.REROLL_RANDOM
 
 -- Performance Cache
+local print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, type, math_floor
+	= print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, type, math.floor
+
+-- Global WoW API Cache
 local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo;
 local GetAchievementInfo = _G.GetAchievementInfo;
 local GetAchievementLink = _G.GetAchievementLink;
-local GetFactionInfoByID = _G.GetFactionInfoByID;
 ---@diagnostic disable-next-line: deprecated
 local GetItemInfo = _G.GetItemInfo;
 ---@diagnostic disable-next-line: deprecated
 local GetItemInfoInstant = _G.GetItemInfoInstant;
 local InCombatLockdown = _G.InCombatLockdown;
-local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
-local print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
-		GetTimePreciseSec, type, math_floor
-	= print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
-		GetTimePreciseSec, type, math.floor
----@class ATTGameTooltip: GameTooltip
-local GameTooltip = GameTooltip;
-local ATTAccountWideData;
+local GetTimePreciseSec = GetTimePreciseSec
+
 
 -- Temporary Helper functions
 local GetSpellInfo = GetSpellInfo;
 local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
 local GetSpellIcon = (GetSpellInfo and (function(spellID) return select(3, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellIcon;
+local GetFactionInfoByID = GetFactionInfoByID;
+local GetFactionName, GetFactionBonusReputation;
+if not GetFactionInfoByID then
+	local C_Reputation = C_Reputation;
+	GetFactionName = function(factionID)
+		local factionData = C_Reputation.GetFactionDataByID(factionID);
+		return factionData and factionData.name;
+	end
+	GetFactionBonusReputation = function(factionID)
+		return false;
+	end
+else
+	GetFactionName = function(factionID) return select(1, GetFactionInfoByID(factionID)); end
+	GetFactionBonusReputation = function(factionID)
+		return select(15, GetFactionInfoByID(factionID));
+	end
+end
 
 local C_TradeSkillUI = C_TradeSkillUI;
 local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
@@ -71,6 +85,8 @@ local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkill
 local function GetCategoryIDs()
 	return { C_TradeSkillUI_GetCategories() };
 end
+---@class ATTGameTooltip: GameTooltip
+local GameTooltip = GameTooltip;
 
 -- App & Module locals
 local ArrayAppend, constructor = app.ArrayAppend, app.constructor;
@@ -80,6 +96,8 @@ local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResult
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 local TryColorizeName = app.TryColorizeName;
+local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
+local ATTAccountWideData;
 
 -- Color Lib
 local GetProgressColor = app.Modules.Color.GetProgressColor;
@@ -2999,7 +3017,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 		-- an item used for a faction which is repeatable
 		if group.itemID and group.factionID and group.repeatable then
-			tinsert(tooltipInfo, { left = L.ITEM_GIVES_REP .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = app.Colors.TooltipDescription });
+			tinsert(tooltipInfo, { left = L.ITEM_GIVES_REP .. (GetFactionName(group.factionID) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = app.Colors.TooltipDescription });
 		end
 		if paramA == "itemID" and paramB == 137642 then
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
@@ -5784,7 +5802,7 @@ local createHeirloom = app.ExtendClass("Item", "Heirloom", "heirloomID", {
 			else
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
 				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
-				if select(15, GetFactionInfoByID(t.factionID)) then
+				if GetFactionBonusReputation(t.factionID) then
 					ATTAccountWideData.FactionBonus[t.factionID] = 1;
 					return 1;
 				end
@@ -8558,7 +8576,7 @@ RowOnEnter = function (self)
 		-- an item used for a faction which is repeatable
 		if reference.itemID and reference.factionID and reference.repeatable then
 			tinsert(tooltipInfo, {
-				left = L.ITEM_GIVES_REP .. (select(1, GetFactionInfoByID(reference.factionID)) or ("Faction #" .. tostring(reference.factionID))) .. "'",
+				left = L.ITEM_GIVES_REP .. (GetFactionName(reference.factionID) or ("Faction #" .. tostring(reference.factionID))) .. "'",
 				color = app.Colors.TooltipDescription,
 				wrap = true,
 			});

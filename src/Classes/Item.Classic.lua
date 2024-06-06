@@ -8,6 +8,20 @@ local ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type, Get
 local C_QuestLog_IsOnQuest
 	= C_QuestLog.IsOnQuest;
 
+-- Temporary helper functions
+local GetFactionInfoByID = GetFactionInfoByID;
+local GetFactionBonusReputation;
+if not GetFactionInfoByID then
+	local C_Reputation = C_Reputation;
+	GetFactionBonusReputation = function(factionID)
+		return false;
+	end
+else
+	GetFactionBonusReputation = function(factionID)
+		return select(15, GetFactionInfoByID(factionID));
+	end
+end
+
 -- App locals
 local AssignChildren, GetRelativeValue, IsQuestFlaggedCompletedForObject, NestObject, SearchForField, SearchForFieldContainer
 	= app.AssignChildren, app.GetRelativeValue, app.IsQuestFlaggedCompletedForObject, app.NestObject, app.SearchForField, app.SearchForFieldContainer;
@@ -488,7 +502,7 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 			else
 				-- This is used for the Grand Commendations unlocking Bonus Reputation
 				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
-				if select(15, GetFactionInfoByID(t.factionID)) then
+				if GetFactionBonusReputation(t.factionID) then
 					ATTAccountWideData.FactionBonus[t.factionID] = 1;
 					return 1;
 				end
