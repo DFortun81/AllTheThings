@@ -27,6 +27,21 @@ WOWAPI_GetItemClassInfo = function(a,b)
 	return "GetItemClassInfo(" .. a .. ")";
 	-- #endif
 end
+WOWAPI_GetItemSubClassInfo = function(a,b)
+	if a and b then
+		-- #if AFTER TWW
+		return "C_Item.GetItemSubClassInfo(" .. a .. "," .. b .. ")";
+		-- #else
+		return "GetItemSubClassInfo(" .. a .. "," .. b .. ")";
+		-- #endif
+	else
+		-- #if AFTER TWW
+		return "C_Item.GetItemSubClassInfo(" .. a .. ")";
+		-- #else
+		return "GetItemSubClassInfo(" .. a .. ")";
+		-- #endif
+	end
+end
 
 
 FUNCTION_TEMPLATES = {
