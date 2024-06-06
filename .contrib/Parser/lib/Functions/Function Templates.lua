@@ -20,6 +20,13 @@ WOWAPI_GetSpellName = function(spellID)
 	return "GetSpellInfo(" .. spellID .. ")";
 	-- #endif
 end
+WOWAPI_GetItemClassInfo = function(a,b)
+	-- #if AFTER TWW
+	return "C_Item.GetItemClassInfo(" .. a .. ")";
+	-- #else
+	return "GetItemClassInfo(" .. a .. ")";
+	-- #endif
+end
 
 
 FUNCTION_TEMPLATES = {

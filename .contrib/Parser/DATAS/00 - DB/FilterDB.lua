@@ -339,7 +339,7 @@ for filterID,filterData in pairs({
 		icon = [[~_.asset("Interface_Zone_drop")]],
 		constant = "REAGENTS",
 		text = {
-			en = [[~GetItemClassInfo(5)]],
+			en = WOWAPI_GetItemClassInfo(5),
 		},
 	},
 	[57] = {
@@ -394,7 +394,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/inv_misc_gem_ruby_02",
 		constant = "GEMS",
 		text = {
-			en = [[~GetItemClassInfo(3)]],
+			en = WOWAPI_GetItemClassInfo(3),
 		},
 	},
 	
@@ -489,7 +489,7 @@ for filterID,filterData in pairs({
 		icon = "Interface/Icons/Inv_glyph_minorwarrior",
 		constant = "GLYPHS",
 		text = {
-			en = [[~GetItemClassInfo(16)]],
+			en = WOWAPI_GetItemClassInfo(16),
 		},
 	},
 	[112] = {
