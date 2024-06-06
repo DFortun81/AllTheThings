@@ -17,10 +17,10 @@ SEASON_MERCILESS = createHeader({
 		ko = "무자비한 검투사: Season 2",
 		cn = "残酷角斗士：第1赛季",
 		-- #else
-		en = [[~select(2, GetAchievementInfo(418))..": Season 2"]],
-		fr = [[~select(2, GetAchievementInfo(418))..": Saison 2"]],
-		ru = [[~select(2, GetAchievementInfo(418))..": Сезон 2"]],
-		cn = [[~select(2, GetAchievementInfo(418)).."：第2赛季"]],
+		en = WOWAPI_GetAchievementName(418).. [[..": Season 2"]],
+		fr = WOWAPI_GetAchievementName(418).. [[..": Saison 2"]],
+		ru = WOWAPI_GetAchievementName(418).. [[..": Сезон 2"]],
+		cn = WOWAPI_GetAchievementName(418).. [[.."：第2赛季"]],
 		-- #endif
 	},
 });

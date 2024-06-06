@@ -17,10 +17,10 @@ SEASON_BRUTAL = createHeader({
 		ko = "야만적인 검투사: Season 4",
 		cn = "野蛮角斗士：第3赛季",
 		-- #else
-		en = [[~select(2, GetAchievementInfo(420))..": Season 4"]],
-		fr = [[~select(2, GetAchievementInfo(420))..": Saison 4"]],
-		ru = [[~select(2, GetAchievementInfo(420))..": Сезон 4"]],
-		cn = [[~select(2, GetAchievementInfo(420)).."：第4赛季"]],
+		en = WOWAPI_GetAchievementName(420).. [[..": Season 4"]],
+		fr = WOWAPI_GetAchievementName(420).. [[..": Saison 4"]],
+		ru = WOWAPI_GetAchievementName(420).. [[..": Сезон 4"]],
+		cn = WOWAPI_GetAchievementName(420).. [[.."：第4赛季"]],
 		-- #endif
 	},
 });

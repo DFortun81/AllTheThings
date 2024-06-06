@@ -24,7 +24,7 @@ WOW_ANNIVERSARY_FOUR = createHeader({
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
 	--eventID = ,	--
 	text = {
-		en = [[~select(2,GetAchievementInfo(2398))]],
+		en = WOWAPI_GetAchievementName(2398),
 	},
 });
 WOW_ANNIVERSARY_FIVE = createHeader({
@@ -32,7 +32,7 @@ WOW_ANNIVERSARY_FIVE = createHeader({
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
 	--eventID = ,	--
 	text = {
-		en = [[~select(2,GetAchievementInfo(4400))]],
+		en = WOWAPI_GetAchievementName(4400),
 	},
 });
 WOW_ANNIVERSARY_SIX = createHeader({
@@ -40,7 +40,7 @@ WOW_ANNIVERSARY_SIX = createHeader({
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
 	--eventID = ,	--
 	text = {
-		en = [[~select(2,GetAchievementInfo(5512))]],
+		en = WOWAPI_GetAchievementName(5512),
 	},
 });
 WOW_ANNIVERSARY_SEVEN = createHeader({
@@ -48,7 +48,7 @@ WOW_ANNIVERSARY_SEVEN = createHeader({
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
 	--eventID = ,	--
 	text = {
-		en = [[~select(2,GetAchievementInfo(5863))]],
+		en = WOWAPI_GetAchievementName(5863),
 	},
 });
 WOW_ANNIVERSARY_EIGHT = createHeader({
@@ -56,7 +56,7 @@ WOW_ANNIVERSARY_EIGHT = createHeader({
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
 	--eventID = ,	--
 	text = {
-		en = [[~select(2,GetAchievementInfo(6131))]],
+		en = WOWAPI_GetAchievementName(6131),
 	},
 });
 WOW_ANNIVERSARY_NINE = createHeader({
@@ -64,7 +64,7 @@ WOW_ANNIVERSARY_NINE = createHeader({
 	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
 	--eventID = ,	--
 	text = {
-		en = [[~select(2,GetAchievementInfo(7853))]],
+		en = WOWAPI_GetAchievementName(7853),
 	},
 });
 WOW_ANNIVERSARY_TEN = createHeader({
@@ -77,7 +77,7 @@ WOW_ANNIVERSARY_TEN = createHeader({
 		2015, 01, 05,	-- 01/05/2015
 	},
 	text = {
-		en = [[~select(2,GetAchievementInfo(8820))]],
+		en = WOWAPI_GetAchievementName(8820),
 	},
 });
 WOW_ANNIVERSARY_ELEVEN = createHeader({
@@ -90,7 +90,7 @@ WOW_ANNIVERSARY_ELEVEN = createHeader({
 		2015, 11, 30,	-- 11/30/2015
 	},
 	text = {
-		en = [[~select(2,GetAchievementInfo(10058))]],
+		en = WOWAPI_GetAchievementName(10058),
 	},
 });
 WOW_ANNIVERSARY_TWELVE = createHeader({
@@ -103,7 +103,7 @@ WOW_ANNIVERSARY_TWELVE = createHeader({
 		2016, 11, 30,	-- 11/30/2016
 	},
 	text = {
-		en = [[~select(2,GetAchievementInfo(10741))]],
+		en = WOWAPI_GetAchievementName(10741),
 	},
 });
 WOW_ANNIVERSARY_THIRTEEN = createHeader({
@@ -116,7 +116,7 @@ WOW_ANNIVERSARY_THIRTEEN = createHeader({
 		2017, 11, 30,	-- 11/30/2017
 	},
 	text = {
-		en = [[~select(2,GetAchievementInfo(11848))]],
+		en = WOWAPI_GetAchievementName(11848),
 	},
 });
 WOW_ANNIVERSARY_FOURTEEN = createHeader({
@@ -129,7 +129,7 @@ WOW_ANNIVERSARY_FOURTEEN = createHeader({
 		2018, 11, 30,	-- 11/30/2018
 	},
 	text = {
-		en = [[~select(2,GetAchievementInfo(12827))]],
+		en = WOWAPI_GetAchievementName(12827),
 	},
 });
 WOW_ANNIVERSARY_FIFTEEN = createHeader({
@@ -142,7 +142,7 @@ WOW_ANNIVERSARY_FIFTEEN = createHeader({
 		2020, 01, 7,	-- 01/07/2020
 	},
 	text = {
-		en = [[~select(2,GetAchievementInfo(13917))]],
+		en = WOWAPI_GetAchievementName(13917),
 	},
 });
 WOW_ANNIVERSARY_SIXTEEN = createHeader({
@@ -155,7 +155,7 @@ WOW_ANNIVERSARY_SIXTEEN = createHeader({
 		2020, 11, 22,	-- 11/22/2020
 	},
 	text = {
-		en = [[~select(2,GetAchievementInfo(14271))]],
+		en = WOWAPI_GetAchievementName(14271),
 	},
 });
 WOW_ANNIVERSARY_SEVENTEEN = createHeader({
@@ -168,7 +168,7 @@ WOW_ANNIVERSARY_SEVENTEEN = createHeader({
 		2021, 12, 06,	-- 12/06/2021
 	},
 	text = {
-		en = [[~select(2,GetAchievementInfo(14942))]],
+		en = WOWAPI_GetAchievementName(14942),
 	},
 });
 WOW_ANNIVERSARY_EIGHTEEN = createHeader({
@@ -181,7 +181,7 @@ WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 		2022, 11, 27,	-- 11/27/2022
 	},
 	text = {
-		en = [[~select(2,GetAchievementInfo(15218))]],
+		en = WOWAPI_GetAchievementName(15218),
 	},
 });
 WOW_ANNIVERSARY_NINETEEN = createHeader({
@@ -194,7 +194,7 @@ WOW_ANNIVERSARY_NINETEEN = createHeader({
 		2022, 12, 7,	-- 12/07/2022
 	},
 	text = {
-		en = [[~select(2,GetAchievementInfo(18702))]],
+		en = WOWAPI_GetAchievementName(18702),
 	},
 });
 

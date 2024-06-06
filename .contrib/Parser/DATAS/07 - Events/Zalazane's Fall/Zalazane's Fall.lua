@@ -5,7 +5,7 @@ ZALAZANES_FALL = createHeader({
 	readable = "Zalazane's Fall",
 	icon = "Interface\\Icons\\inv_misc_tournaments_banner_troll",
 	text = {
-		en = [[~select(2, GetAchievementInfo(4790))]],
+		en = WOWAPI_GetAchievementName(4790),
 	},
 	description = {
 		en = "Zalazane's Fall (also referred to as the Battle to reclaim the Echo Isles) was the final push by Vol'jin and the Darkspear tribe to retake the Echo Isles from the clutches of the evil Zalazane. It was a culminating event for the Horde to occur before the release of the next expansion, Cataclysm. Furthermore, all troll characters created after the liberation of the Echo Isles now have their new starting point there.",

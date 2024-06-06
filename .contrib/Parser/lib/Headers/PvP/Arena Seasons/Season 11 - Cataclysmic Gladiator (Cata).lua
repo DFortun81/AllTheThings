@@ -3,10 +3,10 @@ SEASON_CATACLYSMIC = createHeader({
 	icon = 236235,
 	text = {
 		-- #if AFTER 5.0.1
-		en = [[~select(2, GetAchievementInfo(6938))..": Season 11"]],
-		fr = [[~select(2, GetAchievementInfo(6938))..": Saison 11"]],
-		ru = [[~select(2, GetAchievementInfo(6938))..": Сезон 11"]],
-		cn = [[~select(2, GetAchievementInfo(6938)).."：第11赛季"]],
+		en = WOWAPI_GetAchievementName(6938).. [[..": Season 11"]],
+		fr = WOWAPI_GetAchievementName(6938).. [[..": Saison 11"]],
+		ru = WOWAPI_GetAchievementName(6938).. [[..": Сезон 11"]],
+		cn = WOWAPI_GetAchievementName(6938).. [[.."：第11赛季"]],
 		-- #else
 		en = "Cataclysmic Gladiator: Season 11",
 		es = "Gladiador cataclísmico: Season 11",

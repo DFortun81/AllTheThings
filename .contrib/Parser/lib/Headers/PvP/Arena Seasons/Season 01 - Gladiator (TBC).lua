@@ -16,10 +16,10 @@ SEASON_GLADIATOR = createHeader({
 		ko = "검투사: Season 1",
 		cn = "角斗士：第1赛季",
 		-- #else
-		en = [[~select(2, GetAchievementInfo(2091))..": Season 1"]],
-		fr = [[~select(2, GetAchievementInfo(2091))..": Saison 1"]],
-		ru = [[~select(2, GetAchievementInfo(2091))..": Сезон 1"]],
-		cn = [[~select(2, GetAchievementInfo(2091)).."：第1赛季"]],
+		en = WOWAPI_GetAchievementName(2091).. [[..": Season 1"]],
+		fr = WOWAPI_GetAchievementName(2091).. [[..": Saison 1"]],
+		ru = WOWAPI_GetAchievementName(2091).. [[..": Сезон 1"]],
+		cn = WOWAPI_GetAchievementName(2091).. [[.."：第1赛季"]],
 		-- #endif
 	},
 });

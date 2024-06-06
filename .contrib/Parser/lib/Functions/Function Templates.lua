@@ -42,6 +42,9 @@ WOWAPI_GetItemSubClassInfo = function(a,b)
 		-- #endif
 	end
 end
+WOWAPI_GetAchievementName = function(achievementID)
+	return "select(2, GetAchievementInfo(" .. achievementID .. "))";
+end
 
 
 FUNCTION_TEMPLATES = {

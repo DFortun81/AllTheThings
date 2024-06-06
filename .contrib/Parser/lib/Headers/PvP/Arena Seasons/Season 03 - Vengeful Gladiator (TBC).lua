@@ -17,10 +17,10 @@ SEASON_VENGEFUL = createHeader({
 		ko = "복수심에 불타는 검투사: Season 3",
 		cn = "复仇角斗士：第3赛季",
 		-- #else
-		en = [[~select(2, GetAchievementInfo(419))..": Season 3"]],
-		fr = [[~select(2, GetAchievementInfo(419))..": Saison 3"]],
-		ru = [[~select(2, GetAchievementInfo(419))..": Сезон 3"]],
-		cn = [[~select(2, GetAchievementInfo(419)).."：第3赛季"]],
+		en = WOWAPI_GetAchievementName(419).. [[..": Season 3"]],
+		fr = WOWAPI_GetAchievementName(419).. [[..": Saison 3"]],
+		ru = WOWAPI_GetAchievementName(419).. [[..": Сезон 3"]],
+		cn = WOWAPI_GetAchievementName(419).. [[.."：第3赛季"]],
 		-- #endif
 	},
 });

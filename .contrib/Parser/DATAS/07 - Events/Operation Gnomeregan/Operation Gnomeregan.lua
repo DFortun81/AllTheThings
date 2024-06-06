@@ -5,7 +5,7 @@ OPERATION_GNOMEREGAN = createHeader({
 	readable = "Operation: Gnomeregan",
 	icon = "Interface\\Icons\\inv_misc_tournaments_symbol_gnome",
 	text = {
-		en = [[~select(2, GetAchievementInfo(4786))]],
+		en = WOWAPI_GetAchievementName(4786),
 	},
 	description = {
 		en = "Operation: Gnomeregan was the name of Gelbin Mekkatorque's plan for the retaking of the surface of Gnomeregan. Only Alliance players between level 75 and 80 were able to serve during the operation, but lower level players helped by motivating other gnomes or by turning in items.",
