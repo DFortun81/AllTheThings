@@ -40,4 +40,25 @@ FUNCTION_TEMPLATES = {
 		end]],
 		-- #endif
 	};
+	OnInit = {
+		-- function unmarks the removed from game flag for folks with the brazier.
+		BrazierAccess = [[function(t)
+			if GetItemCount(22057, true) > 0 then
+				t.u = nil;
+				for i,o in ipairs(t.g) do
+					if o.u and o.u == 11 then
+						o.u = nil;
+					end
+				end
+			else
+				t.u = 11;
+				for i,o in ipairs(t.g) do
+					if not o.u then
+						o.u = 11;
+					end
+				end
+			end
+			return t;
+		end]],
+	};
 };

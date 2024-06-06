@@ -993,24 +993,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		},
 		-- #if AFTER 10.1.5
 		-- This init function unmarks the removed from game flag for folks with the brazier.
-		["OnInit"] = [[function(t)
-			if GetItemCount(22057, true) > 0 then
-				t.u = nil;
-				for i,o in ipairs(t.g) do
-					if o.u and o.u == 11 then
-						o.u = nil;
-					end
-				end
-			else
-				t.u = 11;
-				for i,o in ipairs(t.g) do
-					if not o.u then
-						o.u = 11;
-					end
-				end
-			end
-			return t;
-		end]],
+		["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
 		-- #endif
 		["groups"] = {
 			i(22332),	-- Blade of Necromancy

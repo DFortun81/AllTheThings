@@ -2449,25 +2449,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["u"] = 11,
 					-- #endif
 					-- #if AFTER 4.0.3
-					-- This init function unmarks the removed from game flag for folks with the banner.
-					["OnInit"] = [[function(t)
-						if GetItemCount(21986, true) > 0 then
-							t.u = nil;
-							for i,o in ipairs(t.g) do
-								if o.u and o.u == 11 then
-									o.u = nil;
-								end
-							end
-						else
-							t.u = 11;
-							for i,o in ipairs(t.g) do
-								if not o.u then
-									o.u = 11;
-								end
-							end
-						end
-						return t;
-					end]],
+					-- This init function unmarks the removed from game flag for folks with the brazier.
+					["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
 					-- #endif
 					["groups"] = bubbleDown({
 						["timeline"] = { REMOVED_4_0_3 },

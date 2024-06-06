@@ -1433,24 +1433,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				},
 				-- #if AFTER 4.0.3
 				-- This init function unmarks the removed from game flag for folks with the brazier.
-				["OnInit"] = [[function(t)
-					if GetItemCount(22057, true) > 0 then
-						t.u = nil;
-						for i,o in ipairs(t.g) do
-							if o.u and o.u == 11 then
-								o.u = nil;
-							end
-						end
-					else
-						t.u = 11;
-						for i,o in ipairs(t.g) do
-							if not o.u then
-								o.u = 11;
-							end
-						end
-					end
-					return t;
-				end]],
+				["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
 				-- #endif
 				["groups"] = {
 					objective(2, {	-- 0/1 Left Piece of Lord Valthalak's Amulet
