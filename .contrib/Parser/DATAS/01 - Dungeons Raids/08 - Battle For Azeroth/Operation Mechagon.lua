@@ -20,7 +20,7 @@ MECHAGON_WORKSHOP = createHeader({
 	readable = "Workshop",
 	icon = "Interface\\Icons\\inv_misc_key_06",
 	text = {
-		en = [[~GetSpellInfo(251998)]],
+		en = WOWAPI_GetSpellName(251998),
 	},
 });
 root(ROOTS.Instances, expansion(EXPANSION.BFA, {

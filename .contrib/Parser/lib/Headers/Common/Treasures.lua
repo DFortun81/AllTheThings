@@ -9,7 +9,7 @@ TREASURES = createHeader({
 		-- #if ANYCLASSIC
 		en = "Treasures",
 		-- #else
-		en = [[~GetSpellInfo(225652).." "..GetSpellInfo(168498)]],	-- Treasure Chest, there wasn't a close translation.
+		en = WOWAPI_GetSpellName(225652) .. [[.." "..]] .. WOWAPI_GetSpellName(168498),	-- Treasure Chest, there wasn't a close translation.
 		-- #endif
 		ru = "Сундук с сокровищами",
 	},

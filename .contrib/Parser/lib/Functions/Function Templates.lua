@@ -13,6 +13,15 @@ WOWAPI_GetSpellCooldown = function(spellID)
 	return "GetSpellCooldown(" .. spellID .. ")";
 	-- #endif
 end
+WOWAPI_GetSpellName = function(spellID)
+	-- #if AFTER TWW
+	return "C_Spell.GetSpellName(" .. spellID .. ")";
+	-- #else
+	return "GetSpellInfo(" .. spellID .. ")";
+	-- #endif
+end
+
+
 FUNCTION_TEMPLATES = {
 	OnTooltip = {
 		-- #if BEFORE CATA

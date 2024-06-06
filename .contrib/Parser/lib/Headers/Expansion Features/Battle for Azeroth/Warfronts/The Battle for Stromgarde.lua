@@ -3,6 +3,6 @@ WARFRONT_BATTLE_FOR_STROMGARDE = createHeader({
 	icon = "Interface\\Icons\\achievement_zone_arathihighlands_01",
 	constant = "WARFRONT_BATTLE_FOR_STROMGARDE",
 	text = {
-		en = [[~GetSpellInfo(279443)]],
+		en = WOWAPI_GetSpellName(279443),
 	},
 });
