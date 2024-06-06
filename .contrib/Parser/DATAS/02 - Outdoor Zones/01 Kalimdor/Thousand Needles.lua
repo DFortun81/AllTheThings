@@ -112,19 +112,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2237),	-- Whitereach Post
 				exploration(2303),	-- Windbreak Canyon
 				-- #endif
-				--[[
-				exploration(486),	-- Galak Hold
-				exploration(2238),	-- Gornia
-				exploration(3037),	-- Ironstone Camp
-				exploration(2240),	-- Mirage Raceway
-				exploration(487),	-- Roguefeather Den
-				exploration(1557),	-- Splithoof Hold
-				exploration(3039),	-- Tahonda Ruins
-				exploration(479),	-- The Rustmaul Dig Site
-				exploration(488),	-- The Weathered Nook
-				exploration(3038),	-- Weazel's Crater
-				exploration(2239),	-- Zane's Eye Crater
-				]]
 			}),
 			n(FLIGHT_PATHS, {
 				fp(513, {	-- Fizzle & Pozzik's Speedbarge, Thousand Needles
@@ -171,7 +158,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9431, {	-- A Different Approach
 					["qg"] = 17093,	-- Magistrix Elosai
 					["coord"] = { 46.0, 50.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -185,7 +172,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10941,	-- Wizlo Bearingshiner
 					["sourceQuest"] = 9431,	-- A Different Approach
 					["coord"] = { 21.4, 32.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["groups"] = {
@@ -276,9 +263,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 24,
 					["groups"] = {
 						objective(1, {	-- 0/1 Arikara Serpent Skin
-							["provider"] = { "i", 12925 },	-- Arikara Serpent Skin
+							["providers"] = {
+								{ "i",  12925 },	-- Arikara Serpent Skin
+								{ "o", 175944 },	-- Sacred Fire of Life
+								{ "i",  12785 },	-- Incendia Powder
+							},
 							["coord"] = { 37.7, 56.1, THOUSAND_NEEDLES },
-							["cost"] = {{ "i", 12785, 1 }},	-- Incendia Powder
 							["cr"] = 10882,	-- Arikara <Vengeance>
 						}),
 						i(15464, {	-- Brute Hammer
@@ -450,7 +440,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131434, {	-- Lovely Gloves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -486,7 +476,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131435, {	-- Pirate Sinker's Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -666,7 +656,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131432, {	-- Driver's Chain Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -690,7 +680,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131433, {	-- Driver's Chain Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1092,22 +1082,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Secret Note #1
 							["providers"] = {
-								{ "i", 12765 },	-- Secret Note #1
-								{ "o", 176344 },	-- Document Chest
+								{ "i",  12765 },	-- Secret Note #1
+								{ "o", 176344 },	-- Document Chest #1
 							},
 							["coord"] = { 32, 33, THOUSAND_NEEDLES },
 						}),
 						objective(2, {	-- 0/1 Secret Note #2
 							["providers"] = {
-								{ "i", 12766 },	-- Secret Note #2
-								{ "o", 176344 },	-- Document Chest
+								{ "i",  12766 },	-- Secret Note #2
+								{ "o", 190483 },	-- Document Chest #2
 							},
 							["coord"] = { 34, 39, THOUSAND_NEEDLES },
 						}),
 						objective(3, {	-- 0/1 Secret Note #3
 							["providers"] = {
-								{ "i", 12768 },	-- Secret Note #3
-								{ "o", 176344 },	-- Document Chest
+								{ "i",  12768 },	-- Secret Note #3
+								{ "o", 190484 },	-- Document Chest #3
 							},
 							["coord"] = { 39, 41, THOUSAND_NEEDLES },
 						}),
@@ -1245,7 +1235,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157025, {	-- Windserpent Fang
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(63643, {	-- Ring of the Subduer
 							["timeline"] = { ADDED_4_0_3 },
@@ -1644,7 +1634,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157019, {	-- Lakota's Gavel
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1739,7 +1729,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 25,
 					["groups"] = {
 						objective(1, {	-- 0/1 Grenka's Claw
-							["provider"] = { "i", 5843 },	-- Grenka's Claw
+							["providers"] = {
+								{ "i", 5843 },	-- Grenka's Claw
+								{ "o", 20447 },	-- Harpy Foodstuffs
+								{ "i", 5845 },	-- Flank of Meat
+							},
 							["coord"] = { 26, 55.4, THOUSAND_NEEDLES },
 							["cr"] = 4490,	-- Grenka Bloodscreech
 						}),
@@ -1835,7 +1829,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 9433,	-- A Dip in the Moonwell
 					["coord"] = { 21.4, 32.4, THOUSAND_NEEDLES },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 				}),
@@ -1976,7 +1970,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				q(25487, {	-- The Grimtotem are Coming
+				q(25486, {	-- The Grimtotem are Coming [H]
+					["qg"] = 39946,	-- Caryssia Moonhunter
+					["sourceQuests"] = {
+						28503,	-- Hero's Call: Thousand Needles!
+						25479,	-- To New Thalanaar [Dustwallow Marsh]
+						25481,	-- To New Thalanaar [Feralas]
+					},
+					["coord"] = { 86.1, 45.3, FERALAS },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(25487, {	-- The Grimtotem are Coming [H]
 					["qg"] = 39895,	-- Kanati Greycloud
 					["sourceQuests"] = {
 						25356,	-- To the Summit (Feralas)
@@ -2120,12 +2125,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(27275, {	-- Together Again
-					["qg"] = 41444,	-- Brienna Starglow
-					["sourceQuest"] = 25871,	-- Save the Sentinel
-					["coord"] = { 46.8, 56.0, THOUSAND_NEEDLES },
+				q(25479, {	-- To New Thalanaar [Dustwallow Marsh]
+					["qg"] = 40345,	-- Thyssiana
+					["altQuests"] = {
+						28503,	-- Hero's Call: Thousand Needles!
+						-- 25479,	-- To New Thalanaar [Dustwallow Marsh]
+						25481,	-- To New Thalanaar [Feralas]
+					},
+					["coord"] = { 41.8, 73.8, DUSTWALLOW_MARSH },
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { FERALAS },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(25481, {	-- To New Thalanaar [Feralas]
+					["qg"] = 40369,	-- Falfindel Waywarder
+					["altQuests"] = {
+						28503,	-- Hero's Call: Thousand Needles!
+						25479,	-- To New Thalanaar [Dustwallow Marsh]
+						-- 25481,	-- To New Thalanaar [Feralas]
+					},
+					["coord"] = { 77.2, 56.5, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(25478, {	-- To the Summit [Dustwallow Marsh]
+					["qg"] = 40344,	-- Nyse
+					["sourceQuest"] = 28504,	-- Warchief's Command: Thousand Needles!
+					["coord"] = { 41.8, 73.8, DUSTWALLOW_MARSH },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,	-- for "The Grimtotem are Coming"
+				}),
+				q(25356, {	-- To the Summit [Feralas]
+					["qg"] = 39893,	-- Jawn Highmesa
+					["sourceQuest"] = 28504,	-- Warchief's Command: Thousand Needles!
+					["coord"] = { 74.6, 42.8, FERALAS },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(28143, {	-- To the Withering
 					-- (confirmed 2022-08-18, alliance, 51)
@@ -2138,7 +2177,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.9, 60.6, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				q(27276, {	-- Together Again
+				q(27275, {	-- Together Again [A]
+					["qg"] = 41444,	-- Brienna Starglow
+					["sourceQuest"] = 25871,	-- Save the Sentinel
+					["coord"] = { 46.8, 56.0, THOUSAND_NEEDLES },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27276, {	-- Together Again [H]
 					["qg"] = 41421,	-- Rau Cliffrunner
 					["sourceQuest"] = 25872,	-- The Brave and the Bold
 					["coord"] = { 46.7, 55.9, THOUSAND_NEEDLES },
@@ -2174,7 +2220,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131431, {	-- Maloof's Spare Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2271,10 +2317,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157017, {	-- Deep-Sea Retrieval Hook
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157018, {	-- Oversized Mixing Agitator
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2556,7 +2602,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20970, {	-- Design: Pendant of the Agate Shield
-							["timeline"] = { "added 2.0.1", "removed 4.1.0" },	-- Moved to Trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_1_0 },	-- Moved to Trainer
 							["isLimited"] = true,
 						}),
 						i(5973, {	-- Pattern: Barbaric Leggings (RECIPE!)
@@ -2638,10 +2684,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(1493, {	-- Heavy Marauder Scimitar
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 15.09.2023
 					["crs"] = {
-						-- #if BEFORE 4.0.3
-						4099,	-- Galak Marauder
-						-- #elseif AFTER 10.1.7
+						-- #if AFTER 10.1.7
 						40062,	-- Galak Mauler
+						-- #else
+						4099,	-- Galak Marauder
 						-- #endif
 					},
 					["coords"] = {

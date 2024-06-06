@@ -62,7 +62,7 @@ namespace ATT
 
         static StringBuilder ExportStringValue(StringBuilder builder, string value)
         {
-            value = value.Replace("\n", "\\n").Replace("\r", "\\r");
+            value = value.Replace("\n", "\\n").Replace("\r", "\\r").Replace("\"", "\\\"").Replace("\\\\\"", "\\\"");
             if (value.StartsWith("~"))
             {
                 return builder.Append(value.Substring(1));

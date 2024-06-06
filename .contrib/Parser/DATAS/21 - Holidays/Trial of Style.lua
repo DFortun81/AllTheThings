@@ -12,7 +12,7 @@ TRIAL_OF_STYLE_HEADER = createHeader({
 	},
 });
 local TRIAL_OF_STYLE_TOKEN = 151134;
-root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, bubbleDownSelf({ ["timeline"] = { "added 7.2.5" } }, {
+root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {
 	["zone-text-areaID"] = 8712,
 	["groups"] = {
 		n(SCENARIO_COMPLETION, {
@@ -106,7 +106,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				i(157573, {	-- Ensemble: Mindwrack Raiment
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = CLOTH_CLASSES,
-					["timeline"] = { "added 7.3.5" },
+					["timeline"] = { ADDED_7_3_5 },
 					["g"] = {
 						i(156914),	-- Mindwrack Cowl
 						i(156912),	-- Mindwrack Shoulderpads
@@ -121,7 +121,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				i(157574, {	-- Ensemble: Tundraspite Armor
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = LEATHER_CLASSES,
-					["timeline"] = { "added 7.3.5" },
+					["timeline"] = { ADDED_7_3_5 },
 					["g"] = {
 						i(156906),	-- Tundraspite Helm
 						i(156904),	-- Tundraspite Mantle
@@ -136,7 +136,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				i(157576, {	-- Ensemble: Crimson Sentinel Garb
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = MAIL_CLASSES,
-					["timeline"] = { "added 7.3.5" },
+					["timeline"] = { ADDED_7_3_5 },
 					["g"] = {
 						i(156898),	-- Crimson Sentinel Cap
 						i(156896),	-- Crimson Sentinel Shoulderplates
@@ -151,7 +151,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				i(157577, {	-- Ensemble: Goldspine Plate
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = PLATE_CLASSES,
-					["timeline"] = { "added 7.3.5" },
+					["timeline"] = { ADDED_7_3_5 },
 					["g"] = {
 						i(156890),	-- Goldspine Helm
 						i(156888),	-- Goldspine Pauldrons
@@ -165,28 +165,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				}),
 				i(156862, {	-- Trial of Style Dance Floor
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 100 }, },
-					["timeline"] = { "added 7.3.5" },
+					["timeline"] = { ADDED_7_3_5 },
 				}),
 				i(156864, {	-- Trial of Style Flames
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 100 }, },
-					["timeline"] = { "added 7.3.5" },
+					["timeline"] = { ADDED_7_3_5 },
 				}),
 				i(156863, {	-- Trial of Style Spotlight
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 100 }, },
-					["timeline"] = { "added 7.3.5" },
+					["timeline"] = { ADDED_7_3_5 },
 				}),
 
 				-- SEASON 3 --
 				i(164378, {	-- Letter from an Admirer
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 100 }, },
-					["timeline"] = { "added 8.0.1" },
+					["timeline"] = { ADDED_8_0_1 },
 				}),
 
 				-- SEASON 4 --
 				i(168058, {	-- Ensemble: Tranquil Spiritbind Regalia
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = CLOTH_CLASSES,
-					["timeline"] = { "added 8.1.5" },
+					["timeline"] = { ADDED_8_1_5 },
 					["g"] = {
 						i(168107),	-- Tranquil Spiritbind Cowl
 						i(168109),	-- Tranquil Spiritbind Shoulderpads
@@ -201,7 +201,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				i(168059, {	-- Ensemble: Restless Dreambound Battlegear
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = LEATHER_CLASSES,
-					["timeline"] = { "added 8.1.5" },
+					["timeline"] = { ADDED_8_1_5 },
 					["g"] = {
 						i(168087),	-- Restless Dreambound Helm
 						i(168089),	-- Restless Dreambound Mantle
@@ -216,7 +216,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				i(168060, {	-- Ensemble: Chainmail of the Timeless Hunt
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = MAIL_CLASSES,
-					["timeline"] = { "added 8.1.5" },
+					["timeline"] = { ADDED_8_1_5 },
 					["g"] = {
 						i(168078),	-- Headguard of the Timeless Hunt
 						i(168080),	-- Mantle of the Timeless Hunt
@@ -231,7 +231,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 				i(168061, {	-- Ensemble: Amaranthine Path Armor
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = PLATE_CLASSES,
-					["timeline"] = { "added 8.1.5" },
+					["timeline"] = { ADDED_8_1_5 },
 					["g"] = {
 						i(168070),	-- Amaranthine Path Helm
 						i(168072),	-- Amaranthine Path Pauldrons

@@ -1318,7 +1318,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						ach(10850, {	-- Mythic: Gul'dan
-							title(342),	-- Title: %, Vengeance Incarnate
+							title(342),	-- <Name>, Vengeance Incarnate
 						}),
 						i(137575),	-- Hellfire Infernal (MOUNT!)
 						i(143564, {	-- Leggings of the Foreseen Conqueror [Demon Hunter, Paladin, Priest, Warlock]

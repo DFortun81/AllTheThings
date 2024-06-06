@@ -69,7 +69,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 					["provider"] = { "n", 64085 },	-- Cullen Hammerbrow
 					["coord"] = { 71.27, 50.52, 393 },
 					["requireSkill"] = BLACKSMITHING,
-					["timeline"] = { "removed 8.0" },	-- no longer available due to the profession level changes
+					["timeline"] = { REMOVED_8_0_1 },	-- no longer available due to the profession level changes
 				}),
 				--[[
 				q(31390, {	-- The Klaxxi

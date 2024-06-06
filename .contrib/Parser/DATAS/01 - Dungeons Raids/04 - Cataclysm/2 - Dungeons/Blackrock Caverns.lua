@@ -30,6 +30,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28737,	-- What Is This Place?
 				}),
+				q(28732, {	-- This Can Only Mean One Thing...
+					["qg"] = 49444,	-- Pip Quickwit
+					["coord"] = { 42.6, 28.1, MOUNT_HYJAL },
+					["isBreadcrumb"] = true,
+				}),
 				q(28735, {	-- To the Chamber of Incineration!
 					["qg"] = 49476,	-- Pip Quickwit
 					["sourceQuest"] = 28732,	-- This Can Only Mean One Thing...

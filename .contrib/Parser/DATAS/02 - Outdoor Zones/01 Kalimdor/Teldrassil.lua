@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(SOD_PHASE_ONE, q(77568, {	-- A Hunter's Strength
 							["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
 							["coord"] = { 58.6, 40.6, TELDRASSIL },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { HUNTER },
 							["races"] = { NIGHTELF },
 							["lvl"] = 2,
@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(SOD_PHASE_ONE, q(77575, {	-- Amidst the Shadowed Webs
 							["qg"] = 3593,	-- Alyissia <Warrior Trainer>
 							["coord"] = { 59.6, 38.4, TELDRASSIL },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR },
 							["races"] = { NIGHTELF },
 							["lvl"] = 2,
@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["sourceQuest"] = 28714,	-- Fel Moss Corruption
 							["coord"] = { 45.8, 73.0, SHADOWGLEN },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF, WORGEN },
 							["classes"] = { MONK },
 						}),
@@ -182,7 +182,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { ROGUE },
 						}),
@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { HUNTER },
 						}),
@@ -217,7 +217,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(5399),	-- Tracking Boots
 								i(11190),	-- Viny Gloves
 								i(131816, {	-- Moss-Encrusted Chain Pants
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -237,7 +237,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
 						}),
@@ -309,7 +309,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(26949, {	-- Learning the Word
 							["qg"] = 3595,	-- Shanda
 							["coord"] = { 47.6, 59.6, SHADOWGLEN },
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { PRIEST },
 						}),
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(SOD_PHASE_ONE, q(77574, {	-- Meditation on Elune
 							["qg"] = 3595,	-- Shanda <Priest Trainer>
 							["coord"] = { 59.2, 40.4, TELDRASSIL },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PRIEST },
 							["races"] = { NIGHTELF },
 							["lvl"] = 2,
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(4907),	-- Woodland Tunic
 								i(11189),	-- Woodland Robes
 								i(131705, {	-- Woodland Chainmail
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -361,7 +361,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(SOD_PHASE_ONE, q(77571, {	-- Relics of the Kaldorei
 							["qg"] = 3597,	-- Mardant Strongoak <Druid Trainer>
 							["coord"] = { 58.6, 40.4, TELDRASSIL },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { DRUID },
 							["races"] = { NIGHTELF },
 							["lvl"] = 2,
@@ -403,7 +403,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(SOD_PHASE_ONE, q(77573, {	-- Second-Story Work
 							["qg"] = 3594,	-- Frahun Shadewhisper <Rogue Trainer>
 							["coord"] = { 59.6, 38.6, TELDRASSIL },
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { ROGUE },
 							["races"] = { NIGHTELF },
 							["lvl"] = 2,
@@ -443,7 +443,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { NIGHTELF, WORGEN },
 							["classes"] = { WARRIOR },
 						}),
@@ -475,7 +475,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						q(31169, {	-- The Art of the Monk
 							["qg"] = 63331,	-- Laoxi
 							["coord"] = { 48.6, 52.8, SHADOWGLEN },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["races"] = { NIGHTELF, WORGEN },
 							["classes"] = { MONK },
 						}),
@@ -487,7 +487,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["groups"] = {
 								i(5394),	-- Archery Training Gloves
 								i(131815, {	-- Glen Culler's Grips
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(11187),	-- Stemleaf Bracers
 							},
@@ -573,7 +573,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["sourceQuest"] = 457,	-- The Balance of Nature (2/2)
 							["coord"] = { 58.6, 44.2, TELDRASSIL },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["races"] = { NIGHTELF },
 							["classes"] = { DRUID },
 						}),
@@ -587,7 +587,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(5405),	-- Draped Cloak
 								i(6058),	-- Blackened Leather Belt
 								i(131704, {	-- Web Covered Mail Belt
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -639,7 +639,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								i(5393),	-- Thistlewood Staff
 								i(5586),	-- Thistlewood Blade
 								i(12447, {	-- Thistlewood Bow
-									["timeline"] = { "removed 1.7.0" },
+									["timeline"] = { REMOVED_1_7_0 },
 								}),
 							},
 						}),
@@ -682,12 +682,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(264),	-- The Oracle Glade
 				exploration(266),	-- Wellspring Lake
 				exploration(265),	-- Wellspring River
-				--[[
-				exploration(256),	-- Aldrassil
-				exploration(262),	-- Ban'ethil Barrow Den
-				exploration(258),	-- Fel Rock
-				exploration(2322),	-- The Veiled Sea
-				]]
 			}),
 			n(FLIGHT_PATHS, {
 				fp(456, {	-- Dolanaar, Teldrassil
@@ -712,7 +706,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(208749, {	-- Gnarlpine Stash Key
 						["coord"] = { 41.6, 77.6, TELDRASSIL },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							2011,	-- Gnarlpine Augur
@@ -721,7 +715,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208605, {	-- Teldrassil Treasure Map
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cost"] = {
 							{ "i", 208604, 1 },	-- Bottom-Left Map Piece
@@ -732,7 +726,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208604, {	-- Bottom-Left Map Piece
 						["coord"] = { 52.6, 49.6, TELDRASSIL },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							2005,	-- Vicious Grell
@@ -743,7 +737,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208603, {	-- Bottom-Right Map Piece
 						["coord"] = { 36.8, 37.6, TELDRASSIL },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							2019,	-- Bloodfeather Fury
@@ -756,7 +750,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208602, {	-- Top-Left Map Piece
 						["coord"] = { 46.6, 52.4, TELDRASSIL },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							2010,	-- Gnarlpine Defender
@@ -769,7 +763,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(208601, {	-- Top-Right Map Piece
 						["coord"] = { 60.0, 64.4, TELDRASSIL },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							2022,	-- Timberling
@@ -801,7 +795,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						209872,	-- Syllart
 					},
 					["coord"] = { 55.6, 59.8, TELDRASSIL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN, WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -942,7 +936,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9598),	-- Sleeping Robes
 						i(18957),	-- Brushwood Blade
 						i(9602, {	-- Brushwood Blade
-							["timeline"] = { "removed 1.11.1.7272" },
+							["timeline"] = { REMOVED_1_11_1 },
 							["collectible"] = false,	-- CRIEVE NOTE: This item doesn't have a sourceID, it is 100% invalid.
 							-- If anything, it should match the sourceID of the other item by that name. (7540)
 							-- However, since Classic deals with itemID based tracking, it would not track correctly anyways.
@@ -1115,7 +1109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5593),	-- Crag Buckler
 						i(131230, {	-- Cloudsbreak Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5618, {	-- Scout's Cloak
 							-- #if ANYCLASSIC
@@ -1134,7 +1128,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(5605),	-- Pruning Knife
 						i(157016, {	-- Gnarled Gavel
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1467,7 +1461,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(131229, {	-- Shackled Cuffs
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1584,7 +1578,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131210, {	-- Gritroot Cinch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(9599),	-- Barkmail Leggings
 						i(9603, {	-- Gritroot Staff
@@ -1667,7 +1661,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(131821, {	-- Uncorrupted Gloves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(49546, {	-- Revitalizing Wristguards
 							["timeline"] = { ADDED_4_0_3 },
@@ -1682,7 +1676,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131822, {	-- Trousers of Turning Fortune
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1703,12 +1697,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131861, {	-- Graccy Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5595),	-- Thicket Hammer
 						i(5596),	-- Ashwood Bow
 						i(156992, {	-- Carved Ashwood Stick
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1821,7 +1815,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5419),	-- Feral Bracers
 						i(131228, {	-- Feral Wristguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(2571),	-- Viny Wrappings
 						i(54867, {	-- Swiftroot Boots
@@ -1848,7 +1842,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131211, {	-- Thornroot Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(54870, {	-- Thornroot Cord
 							["timeline"] = { ADDED_4_0_3 },
@@ -2121,7 +2115,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(204937, {	-- Adventurer's Spirit
 					["provider"] = { "n", 204827 },	-- Adventurer's Remains
 					["coord"] = { 33.6, 35.6, TELDRASSIL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(210589, {	-- Echo of the Ancestors
 							["classes"] = { SHAMAN },
@@ -2151,7 +2145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407734, {	-- Gnarlpine Cache
 					["coord"] = { 45.0, 61.4, TELDRASSIL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(205940, {	-- Memory of a Dark Purpose
 							["classes"] = { PRIEST },
@@ -2177,7 +2171,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 407352 },	-- Gnarlpine Stash
 					["cost"] = {{ "i", 208749, 1 }},	-- Gnarlpine Stash Key
 					["coord"] = { 37.9, 82.5, TELDRASSIL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400081),	-- Engrave Pants - Between the Eyes
@@ -2187,7 +2181,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 386675 },	-- Buried Treasure
 					["coord"] = { 55.3, 90.8, TELDRASSIL },
 					["cost"] = {{ "i", 208605, 1 }},	-- Teldrassil Treasure Map
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400095),	-- Engrave Chest - Quick Draw
@@ -2332,7 +2326,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(203990, {	-- Rune of Mutilation
 					["coord"] = { 51.6, 51.6, TELDRASSIL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["cr"] = 2038,	-- Lord Melenas
 					["groups"] = {
@@ -2341,7 +2335,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208610, {	-- Severed Owl Head
 					["coord"] = { 40.6, 53.6, TELDRASSIL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						1996,	-- Strigid Screecher
@@ -2350,7 +2344,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208612, {	-- Severed Spider Head
 					["coord"] = { 59.8, 59.0, TELDRASSIL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						1998,	-- Webwood Lurker
@@ -2359,7 +2353,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208611, {	-- Severed Tiger Head
 					["coord"] = { 40.4, 60.0, TELDRASSIL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						2042,	-- Nightsaber
@@ -2367,7 +2361,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208608, {	-- Teldrassil Bird Meat
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["crs"] = {
 						1995,	-- Strigid Owl

@@ -92,7 +92,7 @@ root(ROOTS.ExpansionFeatures,
 							147970,	-- Mrggrmarr
 							147758,	-- Onu
 							149664,	-- Orwell Stevenson
-							149659,	-- Orwell Stevenson 
+							149659,	-- Orwell Stevenson
 							148103,	-- Sapper Odette
 							149665,	-- Scalefiend
 							149663,	-- Shadowclaw
@@ -108,7 +108,7 @@ root(ROOTS.ExpansionFeatures,
 								["description"] = "Appearances from:\nDarkshore Rares/Treasures\nNormal Warfront Completion\nNormal Warfront Quest\nHeroic Warfront Quest",
 								["g"] = {
 									-- Alliance
-									i(164966, { ["timeline"] = { "created 8.1.0.28724" }}),	-- Glade Warden's Glaive
+									i(164966, { ["timeline"] = { CREATED_8_1_0 }}),	-- Glade Warden's Glaive
 									i(166898),	-- Sentinel's Blade
 									i(165628),	-- Sentinel's Branch
 									i(165637),	-- Sentinel's Bulwark
@@ -579,10 +579,25 @@ root(ROOTS.ExpansionFeatures,
 						q(54840),	-- Agathe Wyrmwood
 						q(54825),	-- Alash'anir (A)
 						q(54823),	-- Aman (A)
-						q(54678),	-- Anything We Can Salvage (A)
+						q(54678, {	-- Anything We Can Salvage (A)
+							["groups"] = {
+								o_repeated({
+									i(166287),	-- Silver Dawning Salvage (QI!)
+									o(313446),	-- Silver Dawning Salvage
+									o(313447),	-- Silver Dawning Salvage
+									o(313448),	-- Silver Dawning Salvage
+								}),
+							},
+						}),
 						q(54821),	-- Athrikus Narassin (A)
 						q(54677),	-- Back to the Depths (A)
-						q(54856),	-- Bilgewater Bandits (A)
+						q(54856, {	-- Bilgewater Bandits (A)
+							["groups"] = {
+								o(316792, {	-- Pilfered Iron Ore
+									i(166475),	-- Pilfered Iron Ore (QI!)
+								}),
+							},
+						}),
 						q(54784),	-- Blackwood Liberation (A)
 						q(54837),	-- Burninator Mark V
 						q(54836),	-- Commander Drald (A)
@@ -604,7 +619,11 @@ root(ROOTS.ExpansionFeatures,
 						q(54830),	-- Mrggr'marr (A)
 						q(54841),	-- Orwell Stevenson (A)
 						q(54668),	-- Out of Their Mine (A)
-						q(54674),	-- Prisoners of the Darkscale (A)
+						q(54674, {	-- Prisoners of the Darkscale (A)
+							["g"] = {
+								i(166273),	-- Darkscale Key (QI!)
+							},
+						}),
 						q(54672),	-- Rituals of Twilight (A)
 						q(54833),	-- Scalefiend (A)
 						q(54676),	-- Shards of Narassin (A)
@@ -624,7 +643,11 @@ root(ROOTS.ExpansionFeatures,
 						q(54497),	-- A Dangerous Combination (H)
 						q(54797),	-- Alash'anir (H)
 						q(54795),	-- Aman (H)
-						q(54531),	-- Anything We Can Salvage (H)
+						q(54531, {	-- Anything We Can Salvage (H)
+							["g"] = {
+								i(166287),	-- Silver Dawning Salvage (QI!)
+							},
+						}),
 						q(54809),	-- Athil Dewfire (H)
 						q(54793),	-- Athrikus Narassin (H)
 						q(54528),	-- Back to the Depths (H)
@@ -646,7 +669,11 @@ root(ROOTS.ExpansionFeatures,
 						q(54798),	-- Madfeather (H)
 						q(54802),	-- Mrggr'marr (H)
 						q(54792),	-- Onu (H)
-						q(54514),	-- Prisoners of the Darkscale (H)
+						q(54514, {	-- Prisoners of the Darkscale (H)
+							["g"] = {
+								i(166273),	-- Darkscale Key (QI!)
+							},
+						}),
 						q(54499),	-- Rituals of Twilight (H)
 						q(54807),	-- Sapper Odette (H)
 						q(54805),	-- Scalefiend (H)
@@ -955,7 +982,11 @@ root(ROOTS.ExpansionFeatures,
 									["coord"] = { 51.4, 56.2, 1203 },
 									["sourceQuest"] = 54652,	-- The War Chest (H)
 									["races"] = HORDE_ONLY,
-									["lvl"] = 120,
+									["lvl"] = 50,
+									["g"] = {
+										i(166387),	-- Freshly-Harvested Wood (QI!)
+										i(166713),	-- Sturdy Axe (QI!)
+									},
 								}),
 								q(54656, {	-- Darkshore Recruits (H)
 									["provider"] = { "n", 148479 },	-- Dark Ranger Velonara
@@ -1006,6 +1037,7 @@ root(ROOTS.ExpansionFeatures,
 									["lvl"] = 120,
 									["g"] = {
 										spell(281872),	-- Flight Master's Whistle Upgrade: Warfronts
+										i(166389),	-- Crankshot's Note (QI!)
 									},
 								}),
 							}),

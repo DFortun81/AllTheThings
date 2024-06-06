@@ -351,11 +351,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 122134,	-- Makkaw <Moonkin Festival>
 					["coord"] = { 45.4, 62.0, MOONGLADE },
 					["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
-					["timeline"] = { "added 7.2.5.23959" },
+					["timeline"] = { ADDED_7_2_5 },
 					["isYearly"] = true,
 					["groups"] = {
-						title(358, {	-- %s, Adventuring Instructor
-							["timeline"] = { "added 7.2.5.23959" },
+						title(358, {	-- <Name>, Adventuring Instructor
+							["timeline"] = { ADDED_7_2_5 },
 							["collectible"] = false,
 						}),
 					},
@@ -363,7 +363,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10955, {	-- Morthis Whisperwing
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>
 					["coord"] = { 52.5, 40.6, MOONGLADE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["lvl"] = 70,
 				})),
@@ -371,7 +371,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 22834,	-- Clintar Dreamwalker
 					["sourceQuest"] = 10964,	-- Waking the Sleeper
 					["coord"] = { 75.5, 67.0, MOONGLADE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["lvl"] = 70,
 				})),
@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 10965,	-- No Mere Dream
 					["coord"] = { 72.5, 63.3, MOONGLADE },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["maps"] = { ZANGARMARSH },
 					["classes"] = { DRUID },
 					["lvl"] = 70,
@@ -608,7 +608,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78229, {	-- Trial of The Owls
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>
 					["coord"] = { 52.4, 40.4, MOONGLADE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = {
 						{ "i", 210044, 1 },	-- Symbol of the First Owl
 						{ "i", 210043, 1 },	-- Symbol of the Second Owl
@@ -724,20 +724,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.6, 33.2, MOONGLADE },
 					["groups"] = {
 						i(14488, {	-- Pattern: Runecloth Boots
-							["timeline"] = { "removed 2.0.1" },	-- Learned from trainer, recipe removed.
+							["timeline"] = { REMOVED_2_0_1 },	-- Learned from trainer, recipe removed.
 							-- #if BEFORE 2.0.1
 							["isLimited"] = true
 							-- #endif
 						}),
 						i(14472, {	-- Pattern: Runecloth Cloak
-							["timeline"] = { "removed 6.0.1" },	-- Learned from trainer, recipe removed.
+							["timeline"] = { REMOVED_6_0_2 },	-- Learned from trainer, recipe removed.
 							-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
 							-- #if BEFORE 6.0.1
 							["isLimited"] = true
 							-- #endif
 						}),
 						i(14469, {	-- Pattern: Runecloth Robe
-							["timeline"] = { "removed 6.0.1" },	-- Learned from trainer, recipe removed.
+							["timeline"] = { REMOVED_6_0_2 },	-- Learned from trainer, recipe removed.
 							-- NOTE: Not sure what patch, it's apparently still sold well into MOP. Will check back in future Classic versions.
 							-- #if BEFORE 6.0.1
 							["isLimited"] = true
@@ -783,16 +783,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(16243, {	-- Formula: Runed Arcanite Rod
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(136849, {	-- Nature's Beacon (TOY!)
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(14483, {	-- Pattern: Felcloth Pants
 							["isLimited"] = true,
 						}),
 						i(141041, {	-- Technique: Glyph of the Forest Path (RECIPE!)
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(136795, {	-- Tome of the Wilds: Charm Woodland Creature (CI!)
 							["timeline"] = { ADDED_7_0_3_LAUNCH },

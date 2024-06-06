@@ -200,32 +200,32 @@ WOW_ANNIVERSARY_NINETEEN = createHeader({
 
 root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, {
 	-- Stuff that's completely gone.
-	n(WOW_ANNIVERSARY_FOUR, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, "removed 3.1.0" } }, {
+	n(WOW_ANNIVERSARY_FOUR, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, REMOVED_3_1_0 } }, {
 		ach(2398),	-- 4th Anniversary
 		i(44819),	-- Baby Blizzard Bear (PET!)
 	})),
-	n(WOW_ANNIVERSARY_FIVE, bubbleDownSelf({ ["timeline"] = { ADDED_3_2_2, "removed 3.3.2" } }, {
+	n(WOW_ANNIVERSARY_FIVE, bubbleDownSelf({ ["timeline"] = { ADDED_3_2_2, REMOVED_3_3_2 } }, {
 		ach(4400),	-- 5th Anniversary
 		i(49362),	-- Onyxian Whelpling
 	})),
-	n(WOW_ANNIVERSARY_SIX, bubbleDownSelf({ ["timeline"] = { "added 4.0.1", "removed 4.2.2" } }, {
+	n(WOW_ANNIVERSARY_SIX, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_4_2_2 } }, {
 		ach(5512),	-- 6th Anniversary
 	})),
-	n(WOW_ANNIVERSARY_SEVEN, bubbleDownSelf({ ["timeline"] = { "added 4.2.2", "removed 4.3" } }, {
+	n(WOW_ANNIVERSARY_SEVEN, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_2, REMOVED_4_3_0 } }, {
 		ach(5863),	-- 7th Anniversary
 		i(71134),	-- Celebration Package
 	})),
-	n(WOW_ANNIVERSARY_EIGHT, bubbleDownSelf({ ["timeline"] = { "added 4.3.0", REMOVED_5_1_0 } }, {
+	n(WOW_ANNIVERSARY_EIGHT, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_1_0 } }, {
 		ach(6131),	-- 8th Anniversary
 		i(71134),	-- Celebration Package
 	})),
-	n(WOW_ANNIVERSARY_NINE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, "removed 6.0.1.18125" } }, {
+	n(WOW_ANNIVERSARY_NINE, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 } }, {
 		ach(7853),	-- 9th Anniversary
 		n(MAILBOX, {
 			i(90918),	-- Celebration Package
 		}),
 	})),
-	n(WOW_ANNIVERSARY_TEN, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, "removed 6.2.0.19953" } },{
+	n(WOW_ANNIVERSARY_TEN, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2, REMOVED_6_2_0 } },{
 		ach(8820, {	-- 10th Anniversary
 			i(115301),	-- Molten Corgi (PET!)
 		}),
@@ -259,7 +259,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			},
 		}),
 	})),
-	n(WOW_ANNIVERSARY_ELEVEN, bubbleDownSelf({ ["timeline"] = { "added 6.2.0.19953", "removed 6.2.0.19953" } },{
+	n(WOW_ANNIVERSARY_ELEVEN, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0, REMOVED_6_2_0 } },{
 		ach(10058),	-- 11th Anniversary
 		n(MAILBOX, {
 			i(128513, {	-- Anniversary Gift
@@ -274,7 +274,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_TWELVE, bubbleDown({ ["timeline"] = { "added 7.0.3.21414", "removed 7.2.5.23910" } },{
+	n(WOW_ANNIVERSARY_TWELVE, bubbleDown({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_2_5 } },{
 		ach(10741),	-- 12th Anniversary
 		n(MAILBOX, {
 			i(139284, {	-- Anniversary Gift
@@ -298,7 +298,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_THIRTEEN, bubbleDown({ ["timeline"] = { "added 7.2.5.23910", "removed 7.2.5.23910" } },{
+	n(WOW_ANNIVERSARY_THIRTEEN, bubbleDown({ ["timeline"] = { ADDED_7_2_5, REMOVED_7_2_5 } },{
 		ach(11848),	-- 13th Anniversary
 		n(MAILBOX, {
 			i(147876, {	-- Anniversary Gift
@@ -324,7 +324,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_FOURTEEN, bubbleDown({ ["timeline"] = { "added 8.0.1.27326", "removed 8.2.5.31958" } },{
+	n(WOW_ANNIVERSARY_FOURTEEN, bubbleDown({ ["timeline"] = { ADDED_8_0_1, REMOVED_8_2_5 } },{
 		ach(12827),	-- 14th Anniversary
 		n(MAILBOX, {
 			i(162637, {	-- Anniversary Gift
@@ -336,7 +336,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_FIFTEEN, bubbleDown({ ["timeline"] = { "added 8.2.5.31958", "removed 9.0.1.36216" } },{
+	n(WOW_ANNIVERSARY_FIFTEEN, bubbleDown({ ["timeline"] = { ADDED_8_2_5, REMOVED_9_0_1 } },{
 		ach(13917),	-- 15th Anniversary
 		n(157113, {	-- Chromie
 			--	inst(2235, {	-- doesn't show up in-game
@@ -734,7 +734,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 									["races"] = ALLIANCE_ONLY,
 								}),
 								i(142085, {	-- Nerubian Swarmer (PET!)
-									["timeline"] = { "added 7.1.0.22731" },
+									["timeline"] = { ADDED_7_1_0 },
 								}),
 							},
 						}),
@@ -913,7 +913,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_SIXTEEN, bubbleDown({ ["timeline"] = { "added 9.0.1.36216", "removed 9.0.1.36216" } },{
+	n(WOW_ANNIVERSARY_SIXTEEN, bubbleDown({ ["timeline"] = { ADDED_9_0_1, REMOVED_9_0_1 } },{
 		ach(14271),	-- 16th Anniversary
 		n(MAILBOX, {
 			i(178513, {	-- Anniversary Gift
@@ -923,7 +923,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDown({ ["timeline"] = { "added 9.1.5.41031", "removed 9.1.5.41359" } }, {
+	n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDown({ ["timeline"] = { ADDED_9_1_5, REMOVED_9_1_5 } }, {
 		ach(14942),	-- WoW's 17th Anniversary
 		n(MAILBOX, {
 			i(185906, {	-- Anniversary Gift
@@ -933,7 +933,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDown({ ["timeline"] = { "added 10.0.0.46455", "removed 10.0.2.46879" } }, {
+	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDown({ ["timeline"] = { ADDED_10_0_0, REMOVED_10_0_2_LAUNCH } }, {
 		ach(15218),	-- WoW's 18th Anniversary
 		n(MAILBOX, {
 			i(187710, {	-- Anniversary Gift
@@ -945,7 +945,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	})),
 
 	-- Stuff that's still in the game
-	n(WOW_ANNIVERSARY_TWELVE, bubbleDownSelf({ ["timeline"] = { "added 7.0.3.21414" } },{
+	n(WOW_ANNIVERSARY_TWELVE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } },{
 		n(QUESTS, {
 			-- Correct answers is in the bottom
 			q(43461, {	-- A Time to Reflect
@@ -1012,7 +1012,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_THIRTEEN, bubbleDownSelf({ ["timeline"] = { "added 7.2.5.23910" } },{
+	n(WOW_ANNIVERSARY_THIRTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } },{
 		n(QUESTS, {
 			q(47253, {	-- The Originals [Alliance]
 				["qg"] = 110034,	-- Historian Llore
@@ -1193,7 +1193,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_FOURTEEN, bubbleDownSelf({ ["timeline"] = { "added 8.0.1.27326" } },{
+	n(WOW_ANNIVERSARY_FOURTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } },{
 		n(VENDORS, {
 			n(110035, {	-- Historian Jupa [Horde]
 				["coord"] = { 36.6, 74.6, ORGRIMMAR },
@@ -1215,7 +1215,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_FIFTEEN, bubbleDownSelf({ ["timeline"] = { "added 8.2.5.31958" } },{
+	n(WOW_ANNIVERSARY_FIFTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } },{
 		m(1537, {	-- Alterac Valley
 			["icon"] = 236711,	-- Alterac Valley
 			["groups"] = {
@@ -1949,7 +1949,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_SIXTEEN, bubbleDownSelf({ ["timeline"] = { "added 9.0.1.36216" } },{
+	n(WOW_ANNIVERSARY_SIXTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } },{
 		n(VENDORS, {
 			n(158061, {	-- Historian Ma'di
 				["coord"] = { 50.7, 41.1, CAVERNS_OF_TIME },
@@ -1961,7 +1961,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDownSelf({ ["timeline"] = { "added 9.1.5.41031" } },{
+	n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } },{
 		n(QUESTS, {
 			q(60215, {	-- Doomwalkin' Has Come Knockin'
 				["qg"] = 157113,	-- Chromie
@@ -1991,10 +1991,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				},
 				["groups"] = {
 					i(208572, {	-- Azure Worldchiller (MOUNT!)
-						["timeline"] = { "added 10.2.0.52148" }
+						["timeline"] = { ADDED_10_2_0 }
 					}),
 					i(186469, {	-- Illidari Doomhawk (MOUNT!)
-						["timeline"] = { "removed 10.2.0.52148" }
+						["timeline"] = { REMOVED_10_2_0 }
 					}),
 					i(186501);	-- Doomwalker Trophy Stand (TOY!)
 					i(186506),	-- Akama's Edge
@@ -2015,9 +2015,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 		}),
 	})),
-	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDownSelf({ ["timeline"] = { "added 10.0.0.46455" } },{
+	n(WOW_ANNIVERSARY_EIGHTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } },{
 	})),
-	n(WOW_ANNIVERSARY_NINETEEN, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52148" } },{
+	n(WOW_ANNIVERSARY_NINETEEN, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } },{
 		ach(18702),	-- WoW's 19th Anniversary
 		n(MAILBOX, {
 			i(208211, {	-- Anniversary Gift

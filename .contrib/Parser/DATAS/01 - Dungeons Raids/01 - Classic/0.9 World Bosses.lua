@@ -142,7 +142,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 			}))),
-			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { "removed 2.0.1" } }, n(12397, {	-- Lord Kazzak / Highlord Kruul
+			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { REMOVED_2_0_1 } }, n(12397, {	-- Lord Kazzak / Highlord Kruul
 				["coord"] = { 36.6, 75.8, BLASTED_LANDS },
 				["crs"] = { 18338 },	-- Highlord Kruul
 				["modelScale"] = 6.0,

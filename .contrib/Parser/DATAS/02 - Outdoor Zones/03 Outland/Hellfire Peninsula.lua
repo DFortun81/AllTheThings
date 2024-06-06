@@ -45,23 +45,23 @@ local JEWELCRAFTING_PATTERNS = {
 local VENDOR_GEMS = {
 	i(28458),	-- Bold Tourmaline (Both)
 	i(28462, {	-- Bright Tourmaline (TBC) / Delicate Tourmaline (Cata+)
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}),
 	i(28459),	-- Delicate Tourmaline (Both)
 	i(28461),	-- Runed Tourmaline (TBC) / Brilliant Tourmaline (Cata+)
 	i(28460, {	-- Teardrop Tourmaline (TBC) / Brilliant Tourmaline (Cata+)
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}),
 	i(28465, {	-- Lustrous Zircon (TBC) / Sparkling Zircon (Cata+)
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}),
 	i(28463),	-- Solid Zircon (Both)
 	i(28464),	-- Sparkling Zircon (Both)
 	i(28466, {	-- Brilliant Amber (TBC) / Brilliant Tourmaline (Cata+)
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}),
 	i(28469, {	-- Gleaming Amber (TBC) / Smooth Amber (Cata+)
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 	}),
 	i(28468),	-- Rigid Amber (Both)
 	i(28467),	-- Smooth Amber (Both)
@@ -74,7 +74,7 @@ bubbleDown({ ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
 -- #endif
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(HELLFIRE_PENINSULA, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(HELLFIRE_PENINSULA, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Hellfire Peninsula is intended to be the first questing zone players hit after passing through The Dark Portal. It is a scorched zone, the site of many former battles and the massacre of the Draenei. Players are introduced early on to the threat of the Burning Legion at The Legion Front, further learning about Magtheridon's creation of the corrupted Fel Orcs and the sacrifices made in past battles on Draenor. Players also begin to learn about Draenic and Orcish culture in quest hubs in the western peninsula.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_hellfirepeninsula_01",
@@ -389,11 +389,6 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				petbattles({
-					n(66550, {	-- Nicki Tinytech <Master Pet Tamer>
-						["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
-					}),
-				}),
 				n(PROFESSIONS, {
 					prof(ALCHEMY, {
 						["crs"] = {
@@ -441,6 +436,17 @@ root(ROOTS.Zones, {
 							{ 52.5, 36.0, HELLFIRE_PENINSULA },
 						},
 						["groups"] = TBC_ENCHANTING,
+					}),
+					prof(ENGINEERING, {
+						["crs"] = {
+							18775,	-- Lebowski <Engineering Trainer> (A)
+							18752,	-- Zebig <Engineering Trainer> (H)
+						},
+						["coords"] = {
+							{ 55.6, 65.6, HELLFIRE_PENINSULA },
+							{ 54.8, 38.6, HELLFIRE_PENINSULA },
+						},
+						["groups"] = TBC_ENGINEERING,
 					}),
 					prof(HERBALISM, {
 						["crs"] = {
@@ -602,7 +608,9 @@ root(ROOTS.Zones, {
 							i(25494),	-- Totemic Staff
 							i(25495),	-- Wolfrider's Dagger
 							-- #if BEFORE MOP
-							i(29212),	-- Balanced Stone Dirk
+							i(29212, {	-- Balanced Stone Dirk
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
 							-- #endif
 						},
 					})),
@@ -677,7 +685,7 @@ root(ROOTS.Zones, {
 					q(9472, {	-- Arelion's Mistress
 						["qg"] = 16793,	-- Magistrix Carinda
 						["sourceQuests"] = {
-							9483,	-- Life's Finer Pleasures
+							-- 9483,	-- Life's Finer Pleasures
 							10287,	-- The Mistress Revealed
 						},
 						["coord"] = { 26.3, 60.3, HELLFIRE_PENINSULA },
@@ -958,13 +966,13 @@ root(ROOTS.Zones, {
 							i(28063),	-- Survivalist's Wand
 							-- #if BEFORE MOP
 							i(28064, {	-- Idol of the Wild
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(28065, {	-- Libram of Wracking
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(28066, {	-- Totem of Lightning
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -2396,7 +2404,10 @@ root(ROOTS.Zones, {
 					}),
 					q(9400, {	-- The Assassin
 						["qg"] = 3230,	-- Nazgrel
-						["sourceQuest"] = 10291,	-- Report to Nazgrel
+						["sourceQuests"] = {
+							10087,	-- Burn It Up... For the Horde!
+							10124,	-- Forward Base: Reaver's Fall
+						},
 						["coord"] = { 55.0, 35.9, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -2793,7 +2804,7 @@ root(ROOTS.Zones, {
 					q(10119, {	-- Through the Dark Portal [Alliance]
 						["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
 						["coord"] = { 54.7, 50.5, BLASTED_LANDS },
-						["timeline"] = { "removed 6.0.3" },
+						["timeline"] = { REMOVED_6_0_3 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -2801,21 +2812,21 @@ root(ROOTS.Zones, {
 					q(9407, {	-- Through the Dark Portal [Horde]
 						["qg"] = 19254,	-- Warlord Dar'toon
 						["coord"] = { 54.4, 50.5, BLASTED_LANDS },
-						["timeline"] = { "removed 6.0.3" },
+						["timeline"] = { REMOVED_6_0_3 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(49862, {	-- To Outland! [Alliance]
 						["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
-						["timeline"] = { "added 7.3.5.25600", REMOVED_9_0_1 },
+						["timeline"] = { ADDED_7_3_5, REMOVED_9_0_1 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
 					}),
 					q(49816, {	-- To Outland! [Horde]
 						["description"] = "Breadcrumb quest when you first step in Outland. You will not be able to get it if you visited Outland before this quest was implemented.",
-						["timeline"] = { "added 7.3.5.25600", REMOVED_9_0_1 },
+						["timeline"] = { ADDED_7_3_5, REMOVED_9_0_1 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(58, 58, 10),
@@ -3133,7 +3144,7 @@ root(ROOTS.Zones, {
 							}),
 							i(63697, {	-- Bold Blood Garnet
 								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
-								["timeline"] = { "added 4.0.1.12941" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(27777, {	-- Brilliant Blood Garnet (Cata+) / Stark Blood Garnet (TBC)
 								["cost"] = { { "i", 24581, 10 }, },	-- 10x Mark of Thrallmar
@@ -3260,13 +3271,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					-- #endif
-					-- #if BEFORE 4.0.1
+					-- #if BEFORE 7.0.3
 					n(30734, {	-- Jezebel Bican <Inscription Supplies>
 						["coord"] = { 54.0, 65.6, NORTHREND_DALARAN },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(50166, {	-- Technique: Glyph of Eternal Water
-								["timeline"] = { "deleted 4.0.1" },
+							i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
+								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
 						},
 					}),
@@ -3281,13 +3292,13 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = JEWELCRAFTING_PATTERNS,
 					}),
-					-- #if BEFORE 4.0.1
+					-- #if BEFORE 7.0.3
 					n(30735, {	-- Kul Inkspiller <Inscription Supplies>
 						["coord"] = { 52.4, 36.0, NORTHREND_DALARAN },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(50166, {	-- Technique: Glyph of Eternal Water
-								["timeline"] = { "deleted 4.0.1" },
+							i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
+								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
 						},
 					}),
@@ -3296,10 +3307,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.6, 65.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
-							i(23803, {	-- Schematic: Cogspinner Goggles
+							i(23803, {	-- Schematic: Cogspinner Goggles (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
+							i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -3310,7 +3321,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(23999),	-- Honor Hold Tabard
 							i(30622, {	-- Flamewrought Key
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								["races"] = ALLIANCE_ONLY,
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
@@ -3333,13 +3344,13 @@ root(ROOTS.Zones, {
 								-- #endif
 							}),
 							i(32883, {	-- Felbane Slugs
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29196, {	-- Glyph of Fire Warding
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(29189, {	-- Glyph of Renewal
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(29153),	-- Blade of the Archmage
 							applyclassicphase(TBC_PHASE_TWO, i(35476)),	-- Crusader's Ornamented Spaulders
@@ -3352,7 +3363,7 @@ root(ROOTS.Zones, {
 							i(25825),	-- Footman's Longsword
 							i(22531),	-- Formula: Enchant Bracer - Superior Healing (RECIPE!)
 							i(22547),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
-							i(33150, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
+							i(33150, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
 							i(29166),	-- Hellforged Halberd
 							i(29156),	-- Honor's Call
 							applyclassicphase(TBC_PHASE_TWO, i(35470)),	-- Kodohide Spaulders
@@ -3392,10 +3403,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.1, 81.4, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
-							i(23807, {	-- Schematic: Adamantite Scope
+							i(23807, {	-- Schematic: Adamantite Scope (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23803, {	-- Schematic: Cogspinner Goggles
+							i(23803, {	-- Schematic: Cogspinner Goggles (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -3406,7 +3417,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(24004),	-- Thrallmar Tabard
 							i(30637, {	-- Flamewrought Key
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								["races"] = HORDE_ONLY,
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
@@ -3429,13 +3440,13 @@ root(ROOTS.Zones, {
 								-- #endif
 							}),
 							i(29197, {	-- Glyph of Fire Warding
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(29190, {	-- Glyph of Renewal
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(32882, {	-- Hellfire Shot
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29168),	-- Ancestral Band
 							i(29167),	-- Blackened Spear
@@ -3449,7 +3460,7 @@ root(ROOTS.Zones, {
 							i(25824),	-- Farseer's Band
 							i(24000),	-- Formula: Enchant Bracer - Superior Healing (RECIPE!)
 							i(24003),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
-							i(33151, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
+							i(33151, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
 							i(25823),	-- Grunt's Waraxe
 							applyclassicphase(TBC_PHASE_TWO, i(35364)),	-- Kodohide Spaulders
 							i(29152),	-- Marksman's Bow
@@ -3489,7 +3500,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(25847, {	-- Plans: Eternium Rod (RECIPE!)
-								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 							}),
 							i(23638, {	-- Plans: Lesser Ward of Shielding (RECIPE!)
 								["isLimited"] = true,
@@ -3530,7 +3541,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(25848, {	-- Formula: Runed Adamantite Rod (RECIPE!)
-								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -3543,7 +3554,7 @@ root(ROOTS.Zones, {
 							}),
 							i(63696, {	-- Bold Blood Garnet
 								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
-								["timeline"] = { "added 4.0.1.12941" },
+								["timeline"] = { ADDED_4_0_1 },
 							}),
 							i(27812, {	-- Brilliant Blood Garnet (Cata+) / Stark Blood Garnet (TBC)
 								["cost"] = { { "i", 24579, 10 }, },	-- 10x Mark of Honor Hold
@@ -3636,3 +3647,4 @@ appendGroups({
 root(ROOTS.HiddenQuestTriggers, {
 	q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in quest 10124 & 10143
 });
+-- #endif

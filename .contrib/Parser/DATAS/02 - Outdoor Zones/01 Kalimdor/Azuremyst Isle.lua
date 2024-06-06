@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_azuremystisle_01",
 		-- #endif
-		["timeline"] = { "added 2.0.1.6180" },
+		["timeline"] = { ADDED_2_0_1 },
 		["groups"] = {
 			m(AMMEN_VALE, {
 				["lore"] = "Ammen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape.",
@@ -101,8 +101,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(4, 4, 1),
 						}),
 						q(9450, {	-- Call of Earth (2/3)
@@ -114,8 +114,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 71.3, 39.1, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(4, 4, 1),
 							["groups"] = {
 								objective(1, {	-- 0/4 Restless Spirit of Earth slain
@@ -135,8 +135,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 71.3, 39.1, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
+							["races"] = { DRAENEI },
 							["lvl"] = 4,
 							-- #if BEFORE 4.0.3
 							["groups"] = {
@@ -155,9 +155,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { MAGE },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9294, {	-- Healing the Lake
@@ -192,8 +192,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { HUNTER },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9303, {	-- Inoculation [Original]
@@ -224,7 +224,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							["description"] = "This quest is given if you pick it up before getting or turning in the quest |cFFFFD700Vindicator Aldar|r.",
 							["coord"] = { 50.6, 48.7, AMMEN_VALE },
-							["timeline"] = { "added 6.0.2.18816" },
+							["timeline"] = { ADDED_6_0_2 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- Nestlewood Owlkin inoculated
@@ -240,9 +240,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9290, {	-- Mage Training
@@ -253,14 +253,14 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { MAGE },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(31172, {	-- Monk Training
-							["races"] = { DRAENEI },
 							["classes"] = { MONK },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["races"] = { DRAENEI },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						}),
 						q(9287, {	-- Paladin Training
 							["qg"] = 16501,	-- Aurelon
@@ -270,8 +270,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { PALADIN },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9291, {	-- Priest Training
@@ -282,8 +282,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { PRIEST },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(26969, {	-- Primal Strike
@@ -293,9 +293,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { SHAMAN },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9280, {	-- Replenishing the Healing Crystals
@@ -368,8 +368,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9305, {	-- Spare Parts
@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["qg"] = 17071,	-- Technician Zhanaa
 							["sourceQuest"] = 10302,	-- Volatile Mutations
 							["coord"] = { 50.5, 47.9, AMMEN_VALE },
-							["timeline"] = { "added 6.0.2.18833" },
+							["timeline"] = { ADDED_6_0_2 },
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
 								objective(1, {	-- 0/4 Emitter Spare Part
@@ -434,9 +434,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { HUNTER },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(10303, {	-- The Blood Elves
@@ -484,9 +484,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9309, {	-- The Missing Scout
@@ -503,7 +503,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						q(31173, {	-- The Tiger Palm
 							["qg"] = 63335,	-- Mojo Stormstout
 							["coord"] = { 50.6, 48.6, AMMEN_VALE },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 							["classes"] = { MONK },
 							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -577,8 +577,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { REMOVED_4_0_3 },
-							["races"] = { DRAENEI },
 							["classes"] = { WARRIOR },
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 						q(9293, {	-- What Must Be Done...
@@ -614,9 +614,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { WARRIOR },
-							["races"] = ALLIANCE_ONLY,
+							["races"] = { DRAENEI },
 							["lvl"] = lvlsquish(3, 3, 1),
 						}),
 					}),
@@ -1029,19 +1029,6 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["cost"] = { { "i", 23899, 1 } },	-- Traitor's Communication
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
-				}),
-				q(9625, {	-- Elekks Are Serious Business
-					["qg"] = 17584,	-- Torallius the Pack Handler
-					["sourceQuest"] = 9623,	-- Coming of Age
-					-- #if AFTER CATA
-					["altQuests"] = { 28559 },	-- Hero's Call: Bloodmyst Isle!
-					["coord"] = { 81.5, 51.5, THE_EXODAR },
-					-- #else
-					["coord"] = { 35.3, 43.1, AZUREMYST_ISLE },
-					-- #endif
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,	-- TODO: Double check this is actually a breadcrumb. If you finish Alien Predators, does this diappear? [Not required for Alien Predators, Discord 2023-07-29]
-					["lvl"] = lvlsquish(10, 10, 1),
 				}),
 				q(9453, {	-- Find Acteon!
 					["qg"] = 17101,	-- Diktynna

@@ -150,7 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(29850, {	-- Corrupt Constructs
 					["qg"] = 55835,	-- Kaldir Ironbane
 					["coord"] = { 35.6, 35.2, HALLS_OF_STONE },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(75, 75, 20),
 				}),
 				q(13207, {	-- Halls of Stone
@@ -167,7 +167,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(29848, {	-- The Forlorn Watcher
 					["qg"] = 55835,	-- Kaldir Ironbane
 					["coord"] = { 35.6, 35.2, HALLS_OF_STONE },
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(75, 75, 20),
 				}),
 			}),
@@ -224,7 +224,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(35677),	-- Cosmos Vestments
 						i(35675),	-- Linked Armor of the Sphere
 						i(157564, {	-- Marbled Bracers
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						-- #if AFTER 7.3.5
 						i(37656),	-- Raging Construct Bands (7.3.5 - Used to be only Heroic Mode)
@@ -269,7 +269,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						}),
 					}),
 					-- #endif
@@ -317,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(35675),	-- Linked Armor of the Sphere (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(157564, {	-- Marbled Bracers
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37656),	-- Raging Construct Bands
 							-- #if AFTER 7.3.5

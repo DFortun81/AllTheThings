@@ -6,7 +6,7 @@ profession(LEATHERWORKING, {
 			5144,	-- Elemental Leatherworking [Alliance]
 			5146,	-- Elemental Leatherworking [Horde]
 		},
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 		["groups"] = {
 			-- #if AFTER TBC
 			{
@@ -16,14 +16,14 @@ profession(LEATHERWORKING, {
 					-- #if BEFORE CATA
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Primalstorm Breastplate",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 36077,
 						["requireSkill"] = 10658,
 					}),
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Primalstrike Vest",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35589,
 						["requireSkill"] = 10658,
 					}),
@@ -35,7 +35,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Primalstrike Bracers",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35591,
 						["requireSkill"] = 10658,
 					}),
@@ -47,7 +47,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Primalstrike Belt",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35590,
 						["requireSkill"] = 10658,
 					}),
@@ -94,7 +94,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Stormshroud Shoulders",
-						["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1" },
+						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
 						["recipeID"] = 19090,
 						["requireSkill"] = 10658,
 					},
@@ -111,13 +111,13 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					{
 						["name"] = "Living Breastplate",
-						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						["recipeID"] = 19095,
 						["requireSkill"] = 10658,
 					},
 					{
 						["name"] = "Stormshroud Armor",
-						["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1" },
+						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
 						["recipeID"] = 19079,
 						["requireSkill"] = 10658,
 					},
@@ -139,7 +139,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Stormshroud Gloves",
-						["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1" },
+						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
 						["recipeID"] = 26279,
 						["requireSkill"] = 10658,
 					},
@@ -162,7 +162,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					{
 						["name"] = "Living Leggings",
-						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						["recipeID"] = 19078,
 						["requireSkill"] = 10658,
 					},
@@ -173,7 +173,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Volcanic Leggings",
-						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						["recipeID"] = 19059,
 						["requireSkill"] = 10658,
 					},

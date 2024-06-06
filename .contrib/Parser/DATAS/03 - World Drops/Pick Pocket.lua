@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
--- #if AFTER WRATH
 root(ROOTS.WorldDrops, {
 	header(HEADERS.Spell, 921, {	-- Pick Pocket
 		["description"] = "A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",
@@ -12,8 +11,16 @@ root(ROOTS.WorldDrops, {
 					["description"] = "Can be pickpocketed from Classic humanoids.",
 				}),
 				-- #endif
+				i(5373, {	-- Lucky Charm
+					["description"] = "While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!",
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
+				i(37674, {	-- An Unopened Tome of Advice
+					["description"] = "If only they would have read this.",
+					["coord"] = { 47.8, 49.4, DRAGONBLIGHT },
+					["cr"] = 27539,	-- Frigid Necromancer <Cult of the Damned>
+				}),
 				filter(TOYS, {
 					i(36863, {	-- Decahedral Dwarven Dice (TOY!)
 						["description"] = "Can be pickpocketed from Northrend humanoids.",
@@ -31,7 +38,7 @@ root(ROOTS.WorldDrops, {
 				filter(TOYS, {
 					i(63269, {	-- Loaded Gnomish Dice (TOY!)
 						["description"] = "Can be pickpocketed from Cataclysm humanoids.",
-						["timeline"] = { "added 4.0.1.12941" },
+						["timeline"] = { ADDED_4_0_1 },
 						["_drop"] = { "f" },	-- Drop Consumable
 					}),
 				}),
@@ -93,4 +100,3 @@ root(ROOTS.WorldDrops, {
 		},
 	}),
 });
--- #endif

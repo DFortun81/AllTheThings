@@ -7,7 +7,14 @@ local i = function(itemID)
 end
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 -- Put items between these two bars if you dont want to sort them /Braghe
-
+i(3914);	-- neyman's Backpack \\ Journeyman's Backpack
+i(180786);	-- Empty Binding
+-- Legion
+i(147348);	-- Bulky Armor Set \\ y Armor Set
+i(147349);	-- Spiked Armor Set \\ ed Armor Set
+-- BFA Minor Visions
+i(169294);	-- Resilient Soul
+i(173888);	-- Shard of Self Sacrifice \\ Lingering Soul
 
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 
@@ -17,7 +24,6 @@ i(5956);	-- Blacksmith Hammer
 i(85663);	-- Herbalist's Spade
 i(2901);	-- Mining Pick
 i(7005);	-- Skinning Knife
-i(23820);	-- Critter Enlarger
 i(139786);	-- Ancient Mana Crystal
 i(103644);	-- Blessed Bandage
 i(23123);	-- Blessed Wizard Oil
@@ -1340,6 +1346,7 @@ i(194537);	-- Fiddle with Draconium Fabric Cutters
 i(194538);	-- Fiddle with Khaz'gorite Fabric Cutters
 i(192693);	-- First Heads Horn
 i(202034);	-- Flame of Remembrance
+i(197861);	-- Fleeting Philosopher's Stone
 i(201427);	-- Fleeting Sands
 i(202063);	-- Flopping Tilapia
 i(192653);	-- Floppy Molten Ear
@@ -1755,3 +1762,113 @@ i(213214);	-- Woven Lavareed Basket
 -- PATCH 10.2.6 --
 ------------------
 i(221779);	-- Bent Card
+
+------------------
+-- PATCH 10.2.7 --
+------------------
+i(212346);	-- Failed Gurubashi Tribute
+i(212345);	-- Hunted Hakkari Blood
+i(211695);	-- Jagged Crystallized Eye
+i(212352);	-- Mosh'Ogg Totem
+i(211694);	-- Oozing Felfang
+i(211692);	-- Tainted Patch of Hide
+i(212341);	-- Twice-Dead Tusk
+i(211798);	-- Un-Raised Bone Fragments
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+--i(220287);	-- Acid-Filled Sack
+--i(217170);	-- Backup Candles
+--i(220290);	-- Barbed Pincers
+--i(220291);	-- Bioluminescent Thorax
+--i(225801);	-- Braided Seaweed Bangle
+--i(225716);	-- Brax's Favorite Cog
+--i(225709);	-- Brax's Left Shoe
+--i(225710);	-- Brax's Other Hat
+--i(225715);	-- Brax's To-Do List
+--i(225718);	-- Brax's Toothpick
+--i(217171);	-- CANDLE KING DIARY
+--i(220277);	-- Carapace Fragment
+--i(220281);	-- Charged Fragments
+--i(220249);	-- Chipped Mandible
+--i(220254);	-- Chipped Molars
+--i(225815);	-- Chipped Opal Signet Ring
+--i(217168);	-- Chocolate Coins
+--i(217169);	-- Cloak of Beards
+--i(220256);	-- Clump of Rotting Detritus
+--i(220267);	-- Combustible Gland
+--i(225827);	-- Cracked Pickaxe
+--i(225804);	-- Crumpled Patrol Assignment
+--i(217167);	-- Crusty Chalice
+--i(220255);	-- Darkened Residue
+--i(225813);	-- Darkened Ritual Stone
+--i(220280);	-- Dense Five-Pound Stone
+--i(225795);	-- Dented Pocketwatch
+--i(220229);	-- Dormant Core
+--i(220271);	-- Downy Clump
+--i(225836);	-- Drained Elemental Mote
+--i(225792);	-- Elegant Pedipalp Wrappings
+--i(220355);	-- Enlarged Ear
+--i(225814);	-- Feather-on-a-Stick
+--i(220302);	-- Fractured Casing
+--i(220259);	-- Gob of Mucus
+--i(220509);	-- Gossamer Web
+--i(225790);	-- Half-Painted Pewter Spider
+--i(220279);	-- Handful of Polished Scales
+--i(220252);	-- Handful of Smooth Pebbles
+--i(220246);	-- Humming Power Core
+--i(220275);	-- Indigo Shard
+--i(220253);	-- Inert Dust
+--i(132184);	-- Intact Shimmering Scale // Alex: I bug reported this item drop in TWW on alpha due to wierd itemID range
+--i(220224);	-- Iridescent Integument
+--i(220380);	-- Immature Spiderling
+--i(225830);	-- Irreparably Bent Spoon
+--i(225791);	-- Jar of Alchemical Solvent
+--i(220264);	-- Jaw with Barbed Teeth
+--i(220234);	-- Leaden Vial
+--i(225820);	-- Lovingly Worn Chisel
+--i(225803);	-- Lynx Tag Collar
+--i(225850);	-- Moldy Rations
+--i(220219);	-- Mound of Night Soil
+--i(217162);	-- Necklace of Kobold Teeth
+--i(220244);	-- Oversized Claw
+--i(220251);	-- Pale Gills
+--i(225787);	-- Pheromone-Covered Missive
+--i(220283);	-- Pileus Puff
+--i(220247);	-- Polishing Powder
+--i(220258);	-- Rotting Bones
+--i(220257);	-- Pulsing Pustules
+--i(220230);	-- Punctured Intestine
+--i(220261);	-- Pungent Mushroom
+--i(220228);	-- Quartz Growth
+--i(220288);	-- Quivering Tail
+--i(220362);	-- Ragged Rope
+--i(132183);	-- Razor Tooth // Alex: I bug reported this item drop in TWW on alpha due to wierd itemID range
+--i(220242);	-- Razored Tail-Blade
+--i(220297);	-- Rock-Encrusted Plates
+--i(217164);	-- Royal Nailpicker
+--i(225807);	-- Rune-Carved Bone
+--i(220266);	-- Sharpened Digging Claws
+--i(220361);	-- Sharpened Steel Implement
+--i(220237);	-- Shining Amethyst Cluster
+--i(220231);	-- Skiatic Vessel
+--i(220299);	-- Sleek Beak
+--i(220226);	-- Slime-Coated Membrane
+--i(225810);	-- Smoked Visor
+--i(220268);	-- Spiraled Horn
+--i(220363);	-- Straw-Stuffed Hat
+--i(220292);	-- Stretched Wing
+--i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
+--i(225852);	-- The Foolhardy's Guide to Survival
+--i(220296);	-- Thickly Webbed Foot
+--i(220223);	-- Torn Gossamer Scrap
+--i(220272);	-- Torn Manuscript Page
+--i(220282);	-- Tuft of Whiskers
+--i(223893);	-- Uncharged Feather
+--i(220295);	-- Unidentified Viscous Substance
+--i(225828);	-- Unrefined Dense Ore
+--i(220289);	-- Venomous Stinger
+--i(220270);	-- Vile Catalyst
+--i(225802);	-- Well-Worn Darning Needle
+--i(217163);	-- Well Worn Doll

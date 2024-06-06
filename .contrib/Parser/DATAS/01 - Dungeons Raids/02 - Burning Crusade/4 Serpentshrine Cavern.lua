@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				i(30022),	-- Pendant of the Perilous
 				-- #if BEFORE MOP
 				i(30025, {	-- Serpentshrine Shuriken
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 				}),
 				-- #endif
 				i(30027),	-- Boots of Courage Unending
@@ -60,7 +60,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				i(32897),	-- Mark of the Illidari
 				-- #if BEFORE MOP
 				i(30023, {	-- Totem of the Maelstrom
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 				}),
 				-- #endif
 			}),
@@ -72,7 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(97553, {	-- Tainted Waveling (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(30049),	-- Fathomstone
 					i(30048),	-- Brighthelm of Justice
@@ -91,7 +91,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					i(30629),	-- Scarab of Displacement
 					i(30051, {	-- Idol of the Crescent Goddess
 						["classes"] = { DRUID },
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 				},
 			}),
@@ -121,7 +121,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 						["classes"] = { PRIEST },
 					}),
 					i(30063, {	-- Libram of Absolute Truth
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 						["classes"] = { PALADIN },
 					}),
 				},
@@ -172,7 +172,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				["creatureID"] = 21213,
 				["groups"] = {
 					i(97552, {	-- Tideskipper (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(30082),	-- Talon of Azshara
 					i(30080),	-- Luminescent Rod of the Naaru
@@ -203,7 +203,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(97554, {	-- Coilfang Stalker (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(30242, {	-- Helm of the Vanquished Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },

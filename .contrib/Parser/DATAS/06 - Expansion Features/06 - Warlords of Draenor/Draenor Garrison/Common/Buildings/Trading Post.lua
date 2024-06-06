@@ -135,7 +135,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 								},
 							}),
 							i(119166, {	-- Contract: Cacklebone
-								["cost"] = 50000000,	-- 5,000x
+								["cost"] = 50000000,	-- 5,000g
 								["g"] = {
 									follower(458),	-- Cacklebone
 								},

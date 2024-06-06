@@ -495,15 +495,33 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 69433 },	-- Magistrix Saia
 								}),
 								q(32276, {	-- Tear Down This Wall! (H)
+									["groups"] = {
+										objective(1, {	-- Obtain Heavy Explosives
+											["providers"] = {
+												{ "o", 218196 },	-- Heavy Explosives
+												{ "i", 93962 },	-- Heavy Explosives
+											},
+											["coord"] = { 48.4, 51, ISLE_OF_THUNDER },
+										}),
+									},
 								}),
-								q(32212, {	-- The Assault on Zeb'tula
-								}),
-								q(32279, {	-- The Fall of Shan Bu (H)
+								q(32212, {	-- The Assault on Zeb'tula (H)
 								}),
 								q(32277, {	-- To the Skies! (H)
 								}),
-								q(32278, {	-- Decisive Action
-							}),
+								q(32278, {	-- Decisive Action (H)
+									["sourceQuest"] = 32277,	-- To the Skies (H)
+									["provider"] = { "n", 70297},	-- Taoshi
+									["coord"] = { 32.8, 32.6, ISLE_OF_THUNDER },
+									["groups"] = {
+										i(94918),	-- Gatekeeper's Orb (QI!)
+									},
+								}),
+								q(32279, {	-- The Fall of Shan Bu (H)
+									["sourceQuest"] = 32278,	-- Decisive Action (H)
+									["provider"] = { "n", 67990},	-- Lor'themar Theron
+									["coord"] = { 32.5, 35.5, ISLE_OF_THUNDER },
+								}),
 							})),
 							-- Weekly
 							n(QUESTS, sharedData({
@@ -779,7 +797,7 @@ root(ROOTS.Zones, {
 							["description"] = "You will need 3 stones to summon special rares at their specific spawn points.",
 						}),
 						i(97268, {	-- Tome of Valor
-							["timeline"] = { "added 5.2", "removed 5.3" },
+							["timeline"] = { ADDED_5_2_0, REMOVED_5_3_0 },
 						}),
 					})),
 					n(70000, {	-- Al'tabim the All-Seeing

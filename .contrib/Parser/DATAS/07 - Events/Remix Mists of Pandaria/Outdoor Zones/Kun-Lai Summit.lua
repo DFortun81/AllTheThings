@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(KUN_LAI_SUMMIT, {
 		["icon"] = "Interface\\Icons\\achievement_zone_kunlaisummit",
 		["g"] = {
@@ -12,9 +12,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19888, {	-- Campaign: Kun-Lai Summit [H]
 					["races"] = HORDE_ONLY,
 				}),
-				ach(19996, {	-- Elusive Foes: Kun-Lai Summit
-					["sym"] = {{ "achievement_criteria" }},
-				}),
+				ach(19996),		-- Elusive Foes: Kun-Lai Summit
 				ach(20029, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Kun-Lai Summit
 					crit(65970),	-- Binan Village
 					crit(65971),	-- Firebough Nook
@@ -57,8 +55,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				ach(19875, {	-- Kun-Lai Summit
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
-						19887,	-- Campaign: Kun-Lai Summit [A]
-						19888,	-- Campaign: Kun-Lai Summit [H]
+						-- 19887,	-- Campaign: Kun-Lai Summit [A]
+						-- 19888,	-- Campaign: Kun-Lai Summit [H]
 						20011,	-- Looking For Group: Kun-Lai Summit
 						19965,	-- Tour Kun-Lai Summit
 					}},
@@ -87,7 +85,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}},
 				}),
 			}),
-			n(REWARDS, {
+			n(ZONE_REWARDS, {
+				filter(CLOTH, {
+					i(213700),	-- Silkmaster's Bracers
+					i(213699),	-- Silkmaster's Cord
+					i(213695),	-- Silkmaster's Gloves
+					i(213696),	-- Silkmaster's Hood
+					i(213697),	-- Silkmaster's Leggings
+					i(213693),	-- Silkmaster's Robe
+					i(213694),	-- Silkmaster's Sandals
+					i(213698),	-- Silkmaster's Shoulderpads
+				}),
 				filter(LEATHER, {
 					i(214095),	-- Mistveil Cap
 					i(214097),	-- Mistveil Cinch
@@ -97,6 +105,69 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214099),	-- Mistveil Pants
 					i(214094),	-- Mistveil Treads
 					i(214092),	-- Mistveil Wraps
+				}),
+				filter(MAIL, {
+					i(214507),	-- Dawnwatcher's Armbands
+					i(214513),	-- Dawnwatcher's Chain
+					i(214508),	-- Dawnwatcher's Chestguard
+					i(214511),	-- Dawnwatcher's Gloves
+					i(214510),	-- Dawnwatcher's Headguard
+					i(214515),	-- Dawnwatcher's Legguards
+					i(214514),	-- Dawnwatcher's Pauldrons
+					i(214509),	-- Dawnwatcher's Sabatons
+				}),
+				filter(PLATE, {
+					i(214791),	-- Highpeak Bracers
+					i(214792),	-- Highpeak Breastplate
+					i(214788),	-- Highpeak Gauntlets
+					i(214787),	-- Highpeak Girdle
+					i(214789),	-- Highpeak Helm
+					i(214785),	-- Highpeak Legguards
+					i(214786),	-- Highpeak Pauldrons
+					i(214790),	-- Highpeak Sabatons
+				}),
+				n(WEAPONS, {
+					i(215644),	-- Amber Claw
+					i(215873),	-- Amberweaver's Staff
+					i(215746),	-- Bearheart's Basher (wowhead)
+					i(216004),	-- Blazecaster's Wand (wowhead)
+					i(215741),	-- Bloodseeker's Bonebreaker (wowhead)
+					i(215681),	-- Crane's Beak Effigy
+					i(215948),	-- Darkhide Sword
+					i(216569),	-- Deflector of Orbiss
+					i(215862),	-- Engraved Spire
+					i(215952),	-- Fear's Bite (wowhead)
+					i(211151),	-- Fran's Repeater
+					i(215940),	-- Halcyon Blade
+					i(215944),	-- Harmonious Scimitar (wowhead)
+					i(216419),	-- Hozen Knife
+					i(215861),	-- Instructor's Spire (quest reward)
+					i(215511),	-- Jadestone Greataxe (wowhead)
+					i(215486),	-- Jinyu Waraxe
+					i(215488),	-- Mountainscaler Hatchet
+					i(215982),	-- Marista Greatsword
+					i(215597),	-- Mushan Slicer
+					i(216022),	-- Pandaren Axe
+					--i(216424),	-- Pandaren Breaker (not on wowhead)
+					i(216543),	-- Pandaren Bulwark
+					i(216445),	-- Pandaren Ceremonial Fan
+					i(216021),	-- Pandaren Hatchet
+					i(216421),	-- Pandaren Mace
+					i(215703),	-- Pandaren Rifle
+					i(216544),	-- Pandaren Shield
+					i(216479),	-- Pandaren Waveblade
+					i(216482),	-- Pandaren Windblade
+					i(216440),	-- Pandaren Tome
+					i(216614),	-- Seawatch Crossbow
+					i(215805),	-- Serpentguard Spear
+					i(210335),	-- Shado-Pan Dagger
+					i(215534),	-- Shado-Pan Longbow
+					i(215603),	-- Sha-Warped Slicer
+					i(216473),	-- Tian Monastery Staff
+					i(216477),	-- Temple Trainee's Scimitar
+					i(215745),	-- Wasteland Basher (wowhead)
+					i(216576),	-- Wasteland Deflector
+					i(215869),	-- Waterweaver's Staff
 				}),
 			}),
 		},

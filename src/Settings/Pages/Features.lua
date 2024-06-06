@@ -157,6 +157,18 @@ end)
 checkboxAutomaticallyOpenMiniList:SetATTTooltip(L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP)
 checkboxAutomaticallyOpenMiniList:AlignBelow(checkboxAutomaticallyOpenMainList)
 
+local checkboxFilterMiniListTimerunning = child:CreateCheckBox(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX,
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Filter:MiniList:Timerunning"))
+end,
+function(self)
+	settings:SetTooltipSetting("Filter:MiniList:Timerunning", self:GetChecked())
+	app.LocationTrigger(true)
+end)
+checkboxFilterMiniListTimerunning:SetATTTooltip(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP)
+checkboxFilterMiniListTimerunning:AlignBelow(checkboxAutomaticallyOpenMiniList, 1)
+checkboxFilterMiniListTimerunning:MarkAsWIP();
+
 checkboxAutomaticallyOpenBountyList = child:CreateCheckBox(L.AUTO_BOUNTY_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Auto:BountyList"))
@@ -165,7 +177,7 @@ function(self)
 	settings:SetTooltipSetting("Auto:BountyList", self:GetChecked())
 end)
 checkboxAutomaticallyOpenBountyList:SetATTTooltip(L.AUTO_BOUNTY_CHECKBOX_TOOLTIP)
-checkboxAutomaticallyOpenBountyList:AlignBelow(checkboxAutomaticallyOpenMiniList)
+checkboxAutomaticallyOpenBountyList:AlignBelow(checkboxFilterMiniListTimerunning, -1)
 end
 
 local checkboxAutomaticallyOpenProfessionList = child:CreateCheckBox(L.AUTO_PROF_LIST_CHECKBOX,

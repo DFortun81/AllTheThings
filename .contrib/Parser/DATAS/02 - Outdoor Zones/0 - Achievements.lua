@@ -102,7 +102,7 @@ root(ROOTS.Zones, {
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				title(98),	-- Ambassador %
+				title(98),	-- Ambassador <Name>
 			}),
 		})),
 		applyclassicphase(PHASE_ONE, achWithReps(762, {	-- Ambassador of the Horde
@@ -122,10 +122,10 @@ root(ROOTS.Zones, {
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				title(98),	-- Ambassador %
+				title(98),	-- Ambassador <Name>
 			}),
 		})),
-		petbattle(ach(9069, bubbleDownSelf({ ["timeline"] = { "added 6.0.1.18471" }, }, {	-- An Awfully Big Adventure
+		petbattle(ach(9069, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 }, }, {	-- An Awfully Big Adventure
 			["provider"] = { "i", 113216 },	-- Elekk Plushie
 			["groups"] = {
 				i(120121),	-- Trunks (PET!)
@@ -321,7 +321,7 @@ root(ROOTS.Zones, {
 			}},
 			["timeline"] = { ADDED_4_0_3 },
 		})),
-		ach(9924, bubbleDownSelf({ ["timeline"] = { "added 6.1.0" }, }, {	-- Field Photographer
+		ach(9924, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 }, }, {	-- Field Photographer
 			title(307),	-- Field Photographer <Name>
 			crit(27865),	-- Onyxia's Lair
 			crit(27863),	-- The Frozen Throne
@@ -409,7 +409,7 @@ root(ROOTS.Zones, {
 			}},
 			["timeline"] = { ADDED_4_0_3 },
 		})),
-		ach(13512, bubbleDownSelf({ ["timeline"] = { "added 8.1.5" }, }, {	-- Master Calligrapher
+		ach(13512, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }, }, {	-- Master Calligrapher
 			crit(44853, {	-- Master of Calligraphy - Circle
 				["_quests"] = {
 					55340,	-- Calligraphy [A]
@@ -529,7 +529,7 @@ root(ROOTS.Zones, {
 			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				title(48),	-- % the Diplomat
+				title(48),	-- <Name> the Diplomat
 			}),
 		})),
 		applyclassicphase(TBC_PHASE_ONE, achWithReps(943, { 941, 970, 576 }, {	-- The Diplomat
@@ -539,7 +539,7 @@ root(ROOTS.Zones, {
 			["maps"] = { FELWOOD, ZANGARMARSH, NAGRAND },
 			["races"] = HORDE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
-				title(48),	-- % the Diplomat
+				title(48),	-- <Name> the Diplomat
 			}),
 		})),
 		ach(4958, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
@@ -548,7 +548,7 @@ root(ROOTS.Zones, {
 			crit(13918),	-- Crucible of Carnage in Twilight Highlands
 		})),
 		ach(5794, {	-- Time Flies When You're Having Fun
-			["timeline"] = { "added 4.2.0" },
+			["timeline"] = { ADDED_4_2_0 },
 		}),
 		applyclassicphase(WRATH_PHASE_ONE, ach(1681, {	-- The Loremaster (A)
 			["sym"] = {{"meta_achievement",
@@ -557,7 +557,7 @@ root(ROOTS.Zones, {
 				1262,	-- Loremaster of Outland (A)
 				41,		-- Loremaster of Northrend (A)
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4.16016" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster <Name>
@@ -571,7 +571,7 @@ root(ROOTS.Zones, {
 				1274,	-- Loremaster of Outland (H)
 				1360,	-- Loremaster of Northrend (H)
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4.16016" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster <Name>
@@ -593,7 +593,7 @@ root(ROOTS.Zones, {
 				13294,	-- Loremaster of Zandalar (H)
 				14280,	-- Loremaster of Shadowlands
 			}},
-			["timeline"] = { "added 5.0.4.16016" },
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				title(93),		-- Loremaster <Name>
 				i(43300),		-- Loremaster's Colors

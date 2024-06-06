@@ -73,7 +73,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				["creatureID"] = 19514,
 				["groups"] = {
 					i(97557, {	-- Phoenix Hawk Hatchling (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(29949),	-- Arcanite Steam-Pistol
 					i(29948),	-- Claw of the Phoenix
@@ -98,7 +98,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				["creatureID"] = 19516,
 				["groups"] = {
 					i(97555, {	-- Pocket Reaver (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(30248, {	-- Pauldrons of the Vanquished Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },
@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 				["creatureID"] = 18805,
 				["groups"] = {
 					i(97556, {	-- Lesser Voidcaller (PET!)
-						["timeline"] = { "added 5.3.0.16758" },
+						["timeline"] = { ADDED_5_3_0 },
 					}),
 					i(29981),	-- Ethereum Life-Staff
 					i(29962),	-- Heartrazor
@@ -191,11 +191,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					i(29997),	-- Band of the Ranger-General
 					i(30320, {	-- Bundle of Nether Spikes
 						["description"] = "Contains 6 stacks of Nether Spike arrows.",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["cr"] = 21268,	-- Netherstrand Longbow
 						["groups"] = {
 							i(30319, {	-- Nether Spike
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),

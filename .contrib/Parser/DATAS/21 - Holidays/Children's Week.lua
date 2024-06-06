@@ -23,7 +23,7 @@ CHILDRENS_WEEK_HEADER = createHeader({
 });
 -- TODO: Add vendors for Tigule's Strawberry Ice Cream (7228)
 local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
-	["timeline"] = { "added 6.0.1.18566" },
+	["timeline"] = { ADDED_6_0_2 },
 	["groups"] = {
 	},
 	["sym"] = {{"select","itemID",
@@ -39,45 +39,45 @@ local PET_CARE_PACKAGE = i(116202, {	-- Pet Care Package
 	}},
 	--[[
 		i(103786, {	-- "Dapper Gentleman" Costume
-			["timeline"] = { "added 5.4.0.17169" },
+			["timeline"] = { ADDED_5_4_0 },
 		}),
 		i(103795, {	-- "Dread Pirate" Costume
-			["timeline"] = { "added 5.4.0.17169" },
+			["timeline"] = { ADDED_5_4_0 },
 		}),
 		i(103789, {	-- "Little Princess" Costume
-			["timeline"] = { "added 5.4.0.17169" },
+			["timeline"] = { ADDED_5_4_0 },
 		}),
 		i(103797, {	-- Big Pink Bow
-			["timeline"] = { "added 5.4.0.17169" },
+			["timeline"] = { ADDED_5_4_0 },
 		}),
 		i(92741, {	-- Flawless Battle-Stone
 			["timeline"] = { ADDED_5_1_0 },
 		}),
 		i(98112, {	-- Lesser Pet Treat
-			["timeline"] = { "added 5.3.0.16758" },
+			["timeline"] = { ADDED_5_3_0 },
 		}),
 		i(89906, {	-- Magical Mini-Treat
-			["timeline"] = { "added 5.0.4.15913" },
+			["timeline"] = { ADDED_5_0_4 },
 		}),
 		i(71153, {	-- Magical Pet Biscuit
-			["timeline"] = { "added 4.2.0.14333" },
+			["timeline"] = { ADDED_4_2_0 },
 		}),
 		i(98114, {	-- Pet Treat
-			["timeline"] = { "added 5.3.0.16758" },
+			["timeline"] = { ADDED_5_3_0 },
 		}),--]]
 });
 local BACK_AT_THE_OUTLAND_ORPHANAGE_GROUPS = {
 	i(32616, {	-- Egbert (PET!)
-		["timeline"] = { "added 2.1.0.6692" },
+		["timeline"] = { ADDED_2_1_0 },
 	}),
 	i(32622, {	-- Peanut (PET!)
-		["timeline"] = { "added 2.1.0.6692" },
+		["timeline"] = { ADDED_2_1_0 },
 	}),
 	i(69648, {	-- Legs (PET!)
-		["timeline"] = { "added 4.1.0.13726" },
+		["timeline"] = { ADDED_4_1_0 },
 	}),
 	i(32617, {	-- Willy (PET!)
-		["timeline"] = { "added 2.1.0.6692" },
+		["timeline"] = { ADDED_2_1_0 },
 	}),
 	PET_CARE_PACKAGE,
 };
@@ -99,16 +99,16 @@ local RETURN_TO_THE_BFA_ORPHANAGE_GROUPS = {
 };
 local WARDEN_OF_THE_GROUPS = {
 	i(23007, {	-- Mr. Wiggles (PET!)
-		["timeline"] = { "added 1.11.1.5462" },
+		["timeline"] = { ADDED_1_11_1 },
 	}),
 	i(23015, {	-- Whiskers the Rat (PET!)
-		["timeline"] = { "added 1.11.1.5462" },
+		["timeline"] = { ADDED_1_11_1 },
 	}),
 	i(66073, {	-- Scooter the Snail (PET!)
 		["timeline"] = { ADDED_4_0_3 },
 	}),
 	i(23002, {	-- Speedy (PET!)
-		["timeline"] = { "added 1.11.1.5462" },
+		["timeline"] = { ADDED_1_11_1 },
 	}),
 	PET_CARE_PACKAGE,
 	i(23022),	-- Curmudgeon's Payoff
@@ -134,8 +134,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["timeline"] = { ADDED_3_0_2 },
 			["groups"] = {
 				--title_gendered(105, 104),	-- Patron / Matron
-				title_female(104),	-- Matron %s
-				title_male(105),	-- Patron %s
+				title_female(104),	-- Matron <Name>
+				title_male(105),	-- Patron <Name>
 			},
 		}),
 		ach(1792, {	-- Aw, Isn't It Cute?
@@ -303,12 +303,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22818 },	-- Draenei Orphan
 			},
 			["sourceQuest"] = 10943,	-- Children's Week
-			["coord"] = { 88.56, 50.23, HELLFIRE_PENINSULA },
-			["timeline"] = { "added 2.0.1" },
-			["maps"] = { SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_1 },
+			["maps"] = { SHATTRATH_CITY, HELLFIRE_PENINSULA },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- Dornaa taken to the Dark Portal
+					["provider"] = { "n", 23170 },	-- Alliance Soldier
+					["coord"] = { 88.56, 50.23, HELLFIRE_PENINSULA },
+				}),
+			},
 		}),
 		q(10951, {	-- A Trip to the Dark Portal [Horde - Blood Elf]
 			["providers"] = {
@@ -316,12 +321,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22817 },	-- Blood Elf Orphan
 			},
 			["sourceQuest"] = 10942,	-- Children's Week
-			["coord"] = { 88.56, 50.23, HELLFIRE_PENINSULA },
-			["timeline"] = { "added 2.0.1" },
-			["maps"] = { SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_1 },
+			["maps"] = { SHATTRATH_CITY, HELLFIRE_PENINSULA },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- Salandria taken to the Dark Portal
+					["provider"] = { "n", 23171 },	-- Horde Soldier
+					["coord"] = { 88.56, 50.23, HELLFIRE_PENINSULA },
+				}),
+			},
 		}),
 		q(13937, {	-- A Trip To The Wonderworks [Neutral - Oracles]
 			["providers"] = {
@@ -333,21 +343,33 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				13954,	-- The Dragon Queen
 			},
 			["timeline"] = { ADDED_3_0_2 },
-			-- #if AFTER 7.0.3.22290
-			["coords"] = {
-				{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
-				{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
+			["maps"] = {
+				NORTHREND_DALARAN,
+				-- #if AFTER 7.0.3.22290
+				LEGION_DALARAN,
+				625,
+				-- #endif
 			},
-			["crs"] = {
-				29478,	-- Jeppetto Joybuzz
-				96483,	-- Jeppetto Joybuzz
-			},
-			-- #else
-			["coord"] = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
-			["cr"] = 29478,	-- Jeppetto Joybuzz
-			-- #endif
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Throw Small Paper Zeppelin to Roo
+					["provider"] = { "i", 46693 },	-- Small Paper Zeppelin (QI!)
+					-- #if AFTER 7.0.3.22290
+					["coords"] = {
+						{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
+						{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
+					},
+					["crs"] = {
+						29478,	-- Jeppetto Joybuzz
+						96483,	-- Jeppetto Joybuzz
+					},
+					-- #else
+					["coord"] = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
+					["cr"] = 29478,	-- Jeppetto Joybuzz
+					-- #endif
+				}),
+			},
 		}),
 		q(13938, {	-- A Trip To The Wonderworks [Neutral - Wolvar]
 			["providers"] = {
@@ -359,21 +381,33 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				13957,	-- The Mighty Hemet Nesingwary
 			},
 			["timeline"] = { ADDED_3_0_2 },
-			-- #if AFTER 7.0.3.22290
-			["coords"] = {
-				{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
-				{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
+			["maps"] = {
+				NORTHREND_DALARAN,
+				-- #if AFTER 7.0.3.22290
+				LEGION_DALARAN,
+				625,
+				-- #endif
 			},
-			["crs"] = {
-				29478,	-- Jeppetto Joybuzz
-				96483,	-- Jeppetto Joybuzz
-			},
-			-- #else
-			["coord"] = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
-			["cr"] = 29478,	-- Jeppetto Joybuzz
-			-- #endif
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Throw Small Paper Zeppelin to Kekek
+					["provider"] = { "i", 46693 },	-- Small Paper Zeppelin (QI!)
+					-- #if AFTER 7.0.3.22290
+					["coords"] = {
+						{ 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
+						{ 43.61, 45.13, 625 },	-- Jepetto Joybuzz
+					},
+					["crs"] = {
+						29478,	-- Jeppetto Joybuzz
+						96483,	-- Jeppetto Joybuzz
+					},
+					-- #else
+					["coord"] = { 44.86, 45.57, NORTHREND_DALARAN },	-- Jepetto Joybuzz
+					["cr"] = 29478,	-- Jeppetto Joybuzz
+					-- #endif
+				}),
+			},
 		}),
 		q(171, {	-- A Warden of the Alliance [Alliance - Human - FINAL]
 			["providers"] = {
@@ -452,30 +486,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22818 },	-- Draenei Orphan
 			},
 			["sourceQuest"] = 10943,	-- Children's Week
-			["coords"] = {
-				{ 44.17, 58.84, TEROKKAR_FOREST },	-- Path to Ring
-				{ 40.76, 60.39, TEROKKAR_FOREST },	-- Tunnel Exit
-				{ 43.11, 63.94, TEROKKAR_FOREST },	-- Tunnel Exit
-				{ 39.57, 64.41, TEROKKAR_FOREST },	-- Dornaa taken to Ring of Observance
-			},
-			["timeline"] = { "added 2.0.1" },
-			["maps"] = { SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_1 },
+			["maps"] = { SHATTRATH_CITY, TEROKKAR_FOREST },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- Dornaa taken to Ring of Observance
+					["provider"] = { "n", 23133 },	-- Alliance Adventurer
+					["coord"] = { 39.57, 64.41, TEROKKAR_FOREST },
+				}),
+			},
 		}),
 		q(10966, {	-- Back to the Orphanage [Alliance - Draenei - FINAL]
 			["providers"] = {
 				{ "i", 31881 },	-- Draenei Orphan Whistle
 				{ "n", 22818 },	-- Draenei Orphan
+				{ "n", 22819 },	-- Orphan Matron Mercy
 			},
-			["cr"] = 22819,	-- Orphan Matron Mercy
 			["sourceQuests"] = {
 				10968,	-- Call on the Farseer
 				10962,	-- Time to Visit the Caverns [Alliance - Draenei]
 			},
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -485,6 +519,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["providers"] = {
 				{ "i", 31880 },	-- Blood Elf Orphan Whistle
 				{ "n", 22817 },	-- Blood Elf Orphan
+				{ "n", 22819 },	-- Orphan Matron Mercy
 			},
 			["sourceQuests"] = {
 				-- #if AFTER 2.4.0
@@ -495,7 +530,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				10963,	-- Time to Visit the Caverns [Horde - Blood Elf]
 			},
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -505,11 +540,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["providers"] = {
 				{ "i", 46397 },	-- Oracle Orphan Whistle
 				{ "n", 33533 },	-- Oracle Orphan
+				{ "n", 34365 },	-- Orphan Matron Aria
 			},
-			["sourceQuest"] = 13937,	-- A Trip To The Wonderworks
+			["sourceQuest"] = 13937,	-- A Trip To The Wonderworks [Neutral - Oracles]
 			["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 			["timeline"] = { ADDED_3_0_2 },
-			["cr"] = 34365,	-- Orphan Matron Aria
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
 			["groups"] = {
@@ -524,8 +559,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["providers"] = {
 				{ "i", 46396 },	-- Wolvar Orphan Whistle
 				{ "n", 33532 },	-- Wolvar Orphan
+				{ "n", 34365 },	-- Orphan Matron Aria
 			},
-			["sourceQuest"] = 13938,	-- A Trip To The Wonderworks
+			["sourceQuest"] = 13938,	-- A Trip To The Wonderworks [Neutral - Wolvar]
 			["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
 			["timeline"] = { ADDED_3_0_2 },
 			["isYearly"] = true,
@@ -548,12 +584,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				53862,	-- The Squid Shrine [Alliance - Kul Tiran]
 				53861,	-- Yo Ho, Yo Ho! [Alliance - Kul Tiran]
 			},
-			["coord"] = { 36.25, 51.08, DRUSTVAR },	-- Birdfeather's Statue
-			["timeline"] = { "added 8.0.1" },
-			["maps"] = { BORALUS },
+			["timeline"] = { ADDED_8_0_1 },
+			["maps"] = { BORALUS, DRUSTVAR },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				objective(1, {	-- Visit Arom's Stand
+					--["provider"] = { "n",  },	-- Inquisitor Notley (not sure what the NPC ID is)
+					["coord"] = { 36.25, 51.08, DRUSTVAR },	-- Birdfeather's Statue
+				}),
+			},
 		}),
 		q(925, {	-- Cairne's Hoofprint [Horde - Orc] (removed)
 			["providers"] = {
@@ -565,7 +606,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				911,	-- Gateway to the Frontier [Horde - Orc] (removed)
 				1800,	-- Lordaeron Throne Room [Horde - Orc] (removed)
 			},
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { THUNDER_BLUFF },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -584,21 +625,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22818 },	-- Draenei Orphan
 			},
 			["sourceQuest"] = 10956,	-- The Seat of the Naaru
-			["coords"] = {
-				{ 27.10, 29.86, THE_EXODAR },	-- Path to Farseer Nobundo
-				{ 30.67, 27.87, THE_EXODAR },	-- Visit Farseer Nobundo
-				{ 31.30, 27.65, THE_EXODAR },	-- Speak to Farseer Nobundo
-			},
-			["timeline"] = { "added 2.0.1" },
-			["maps"] = { SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_1 },
+			["maps"] = { SHATTRATH_CITY, THE_EXODAR },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- Dornaa taken to Farseer Nobundo
+					["provider"] = { "n", 17204 },	-- Farseer Nobundo <Shaman Trainer>
+					["coords"] = {
+						{ 27.10, 29.86, THE_EXODAR },	-- Path to Farseer Nobundo
+						{ 30.67, 27.87, THE_EXODAR },	-- Visit Farseer Nobundo
+						{ 31.30, 27.65, THE_EXODAR },	-- Speak to Farseer Nobundo
+					},
+				}),
+			},
 		}),
 		q(10943, {	-- Children's Week [Alliance - Draenei - START]
 			["qg"] = 22819,	-- Orphan Matron Mercy
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
@@ -623,12 +669,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["lvl"] = lvlsquish(10, 10, 10),
 		}),
 		q(53811, {	-- Children's Week [Alliance - Kul Tiran - START]
-			["qg"] = 145291,	-- Oprhan Matron Westerson
+			["qg"] = 145291,	-- Orphan Matron Westerson
 			["coords"] = {
-				{ 47.77, 39.37, BORALUS },	-- Path to Oprhan Matron Westerson
+				{ 47.77, 39.37, BORALUS },	-- Path to Orphan Matron Westerson
 				{ 48.01, 40.28, BORALUS },	-- Orphan Matron Westerson
 			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
@@ -636,13 +682,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 		q(10942, {	-- Children's Week [Horde - Blood Elf - START]
 			["qg"] = 22819,	-- Orphan Matron Mercy
 			["coord"] = { 75.08, 47.87, SHATTRATH_CITY },
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
 		}),
 		q(172, {	-- Children's Week [Horde - Orc - START]
-
 			["providers"] = {
 				-- #if AFTER CATA
 				{ "n", 51989 },	-- Orphan Matron Battlewall
@@ -672,7 +717,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 53.46, 84.91, DAZARALOR },	-- Entrance to Hall of Castes
 				{ 54.64, 84.61, DAZARALOR },	-- Caretaker Padae
 			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
@@ -687,15 +732,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["coords"] = {
-				{ 57.71, 53.27, WESTFALL },	-- Rental Chopper
-				{ 57.78, 53.06, WESTFALL },	-- Rental Chopper
-			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				objective(1, {	-- Chopper Tour of the Raging Chasm
+					["provider"] = { "n", 52189 },	-- Rental Chopper
+					["coords"] = {
+						{ 57.71, 53.27, WESTFALL },	-- Rental Chopper
+						{ 57.78, 53.06, WESTFALL },	-- Rental Chopper
+					},
+				}),
+			},
 		}),
 		q(910, {	-- Down at the Docks [Horde - Orc] (removed)
 			["providers"] = {
@@ -703,15 +753,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { THE_BARRENS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the docks of Ratchet in the Barrens.
+					["provider"] = { "n", 9558 },	-- Grimble <Shipmaster>
 					["coord"] = { 63, 38, THE_BARRENS },
-					["cr"] = 9558,	-- Grimble <Shipmaster>
 				}),
 			},
 		}),
@@ -721,7 +771,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { THE_BARRENS },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -738,15 +788,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22817 },	-- Blood Elf Orphan
 			},
 			["sourceQuest"] = 10942,	-- Children's Week
-			["coords"] = {
-				{ 19.43, 51.31, ZANGARMARSH },	-- Salandria taken to Sporeggar
-				{ 19.28, 51.34, ZANGARMARSH },	-- Speak to Hch'uu
-			},
-			["timeline"] = { "added 2.0.1" },
-			["maps"] = { SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_1 },
+			["maps"] = { SHATTRATH_CITY, ZANGARMARSH },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- Salandria taken to Sporeggar
+					["provider"] = { "n", 22823 },	-- Hch'uu
+					["coords"] = {
+						{ 19.43, 51.31, ZANGARMARSH },	-- Salandria taken to Sporeggar
+						{ 19.28, 51.34, ZANGARMARSH },	-- Speak to Hch'uu
+					},
+				}),
+			},
 		}),
 		q(13930, {	-- Home Of The Bear-Men [Neutral - Wolvar]
 			["providers"] = {
@@ -754,15 +809,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 33532 },	-- Wolvar Orphan
 			},
 			["sourceQuest"] = 13927,	-- Little Orphan Kekek Of The Wolvar
-			["coords"] = {
-				{ 52.93, 44.93, GRIZZLY_HILLS },	-- Path to Grizzlemaw
-				{ 51.69, 40.74, GRIZZLY_HILLS },	-- Kekek taken to Grizzlemaw
-				{ 50.71, 42.75, GRIZZLY_HILLS },	-- Kekek taken to Grizzlemaw
-			},
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			["maps"] = { NORTHREND_DALARAN, GRIZZLY_HILLS },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Kekek taken to visit Grizzlemaw
+					["coords"] = {
+						{ 52.93, 44.93, GRIZZLY_HILLS },	-- Path to Grizzlemaw
+						{ 51.69, 40.74, GRIZZLY_HILLS },	-- Kekek taken to Grizzlemaw
+						{ 50.71, 42.75, GRIZZLY_HILLS },	-- Kekek taken to Grizzlemaw
+					},
+				}),
+			},
 		}),
 		q(53969, {	-- Hunting For Gold [Horde - Zandalari]
 			["providers"] = {
@@ -774,16 +833,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				53967,	-- The Frogmarsh
 				53968,	-- The Shifting Pack
 			},
-			["coord"] = { 28.91, 88.76, VOLDUN },	-- The Golden Isle
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 				DAZARALOR,
+				VOLDUN,
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				objective(1, {	-- Visit the Golden Isle
+					["coord"] = { 28.91, 88.76, VOLDUN },
+				}),
+			},
 		}),
 		q(558, {	-- Jaina's Autograph [Alliance - Human] (removed)
 			["providers"] = {
@@ -795,7 +859,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				1479,	-- The Bough of the Eternals [Alliance - Human] (removed)
 				1558,	-- The Stonewrought Dam [Alliance - Human] (removed)
 			},
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { DUSTWALLOW_MARSH },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -814,15 +878,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 22818 },	-- Draenei Orphan
 			},
 			["sourceQuest"] = 10943,	-- Children's Week
-			["coords"] = {
-				{ 31.44, 57.46, NAGRAND },	-- Dornaa taken to Aeris Landing
-				{ 31.49, 57.61, NAGRAND },	-- Speak to Jheel
-			},
-			["timeline"] = { "added 2.0.1" },
-			["maps"] = { SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_1 },
+			["maps"] = { SHATTRATH_CITY, NAGRAND },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- Dornaa taken to Aeris Landing
+					["provider"] = { "n", 22836 },	-- Jheel
+					["coords"] = {
+						{ 31.44, 57.46, NAGRAND },	-- Dornaa taken to Aeris Landing
+						{ 31.49, 57.61, NAGRAND },	-- Speak to Jheel
+					},
+				}),
+			},
 		}),
 		q(29117, {	-- Let's Go Fly a Kite [Alliance - Human]
 			["providers"] = {
@@ -838,30 +907,37 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				-- #endif
 				29106,	-- The Biggest Diamond Ever! [Alliance - Human]
 			},
-			["coords"] = {
-				{ 56.31, 68.45, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 56.67, 66.57, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 56.75, 70.04, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 57.19, 71.63, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 57.57, 65.42, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 57.63, 73.23, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 58.07, 74.83, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 58.44, 64.31, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 58.51, 76.42, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 59.12, 77.98, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 59.44, 63.31, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 60.44, 62.44, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 61.21, 61.78, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 62.31, 61.34, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 63.44, 61.05, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 64.62, 61.54, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 65.63, 62.99, STORMWIND_CITY },	-- Craggle Wobbletop Path
-				{ 66.61, 64.43, STORMWIND_CITY },	-- Craggle Wobbletop Path
-			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
+			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				objective(1, {	-- Fly Dragon Kites with your orphan
+					["provider"] = { "i", 68890 },	-- Dragon Kite 2-Pack
+					["coords"] = {
+						{ 56.31, 68.45, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 56.67, 66.57, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 56.75, 70.04, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 57.19, 71.63, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 57.57, 65.42, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 57.63, 73.23, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 58.07, 74.83, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 58.44, 64.31, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 58.51, 76.42, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 59.12, 77.98, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 59.44, 63.31, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 60.44, 62.44, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 61.21, 61.78, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 62.31, 61.34, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 63.44, 61.05, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 64.62, 61.54, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 65.63, 62.99, STORMWIND_CITY },	-- Craggle Wobbletop Path
+						{ 66.61, 64.43, STORMWIND_CITY },	-- Craggle Wobbletop Path
+					},
+					["cr"] = 52358,	-- Craggle Wobbletop <Toys and Novelties>
+				}),
+			},
 		}),
 		q(29190, {	-- Let's Go Fly a Kite [Horde - Orc]
 			["providers"] = {
@@ -877,40 +953,55 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				-- #endif
 				29176,	-- The Fallen Chieftain [Horde - Orc]
 			},
-			["coords"] = {
-				{ 57.13, 51.12, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 57.24, 52.54, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 57.87, 54.21, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.08, 51.11, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.29, 62.41, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.34, 62.93, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.48, 55.55, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.67, 62.27, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.78, 53.61, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.79, 50.93, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.81, 57.61, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.85, 58.67, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 58.86, 60.16, ORGRIMMAR },	-- Blax Bottlerocket Path
-				{ 59.32, 51.86, ORGRIMMAR },	-- Blax Bottlerocket Path
-			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
+				ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				objective(1, {	-- Fly Dragon Kites with your orphan
+					["provider"] = { "i", 69231 },	-- Dragon Kite 2-Pack
+					["coords"] = {
+						{ 57.13, 51.12, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 57.24, 52.54, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 57.87, 54.21, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.08, 51.11, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.29, 62.41, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.34, 62.93, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.48, 55.55, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.67, 62.27, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.78, 53.61, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.79, 50.93, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.81, 57.61, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.85, 58.67, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 58.86, 60.16, ORGRIMMAR },	-- Blax Bottlerocket Path
+						{ 59.32, 51.86, ORGRIMMAR },	-- Blax Bottlerocket Path
+					},
+					["cr"] = 52809,	-- Blax Bottlerocket <Toys and Novelties>
+				}),
+			},
 		}),
 		q(13927, {	-- Little Orphan Kekek Of The Wolvar [Neutral - Wolvar - START]
-			["qg"] = 34365,	-- Orphan Matron Aria
-			["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
+			["providers"] = {
+				{ "n", 34365 },	-- Orphan Matron Aria
+				{ "i", 46396 },	-- Wolvar Orphan Whistle
+				{ "n", 33532 },	-- Wolvar Orphan
+			},
+			["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },
 			["timeline"] = { ADDED_3_0_2 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
 		}),
 		q(13926, {	-- Little Orphan Roo Of The Oracles [Neutral - Oracles - START]
-			["qg"] = 34365,	-- Orphan Matron Aria
-			["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },	-- Orphan Matron Aria
+			["providers"] = {
+				{ "n", 34365 },	-- Orphan Matron Aria
+				{ "i", 46397 },	-- Oracle Orphan Whistle
+				{ "n", 33533 },	-- Oracle Orphan
+			},
+			["coord"] = { 49.37, 63.26, NORTHREND_DALARAN },
 			["timeline"] = { ADDED_3_0_2 },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
@@ -921,20 +1012,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 145463 },	-- Casteless Zandalari
 			},
 			["sourceQuest"] = 53965,	-- Children's Week
-			["coords"] = {
-				{ 65.77, 45.01, 865 },	-- Path Starts to Pteroor Rise
-				{ 70.54, 49.11, 865 },	-- Pterror Rise
-			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				ZULDAZAR,
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 				DAZARALOR,
+				865,
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				objective(1, {	-- Visit Pterror Rise
+					["coords"] = {
+						{ 65.77, 45.01, 865 },	-- Path Starts to Pteroor Rise
+						{ 70.54, 49.11, 865 },	-- Pterror Rise
+					},
+				}),
+			},
 		}),
 		q(1800, {	-- Lordaeron Throne Room [Horde - Orc] (removed)
 			["providers"] = {
@@ -942,7 +1038,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { UNDERCITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -959,12 +1055,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["coord"] = { 44.1, 79.9, DARNASSUS },
-			["timeline"] = { "added 4.0.1", "removed 8.0.1" },
-			["maps"] = { STORMWIND_CITY },
+			["timeline"] = { ADDED_4_0_1, REMOVED_8_0_1 },
+			["maps"] = { STORMWIND_CITY, DARNASSUS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				objective(1, {	-- Visit Malfurion Stormrage with your orphan
+					["provider"] = { "n", 43845 },	-- Malfurion Stormrage
+					["coord"] = { 44.1, 79.9, DARNASSUS },
+				}),
+			},
 		}),
 		q(13956, {	-- Meeting a Great One [Neutral - Oracles]
 			["providers"] = {
@@ -972,19 +1073,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 33533 },	-- Oracle Orphan
 			},
 			["sourceQuests"] = {
-				13951,	-- Playmates!
+				13950,	-- Playmates! [Neutral - Oracles]
 				13929,	-- The Biggest Tree Ever!
-				13934,	-- The Bronze Dragonshrine
-			},
-			["coords"] = {
-				{ 40.01, 82.05, SHOLAZAR_BASIN },	-- Waygate Entrance
-				{ 40.66, 84.18, SHOLAZAR_BASIN },	-- Waygate Entrance
-				{ 47.56, 09.17, UNGORO_CRATER },	-- The Etymidian
+				13933,	-- The Bronze Dragonshrine [Neutral - Oracles]
 			},
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			["maps"] = { NORTHREND_DALARAN, SHOLAZAR_BASIN, UNGORO_CRATER },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Roo taken to visit The Etymidian
+					["provider"] = { "n", 28092 },	-- The Etymidian
+					["coords"] = {
+						{ 40.01, 82.05, SHOLAZAR_BASIN },	-- Waygate Entrance
+						{ 40.66, 84.18, SHOLAZAR_BASIN },	-- Waygate Entrance
+						{ 47.56, 09.17, UNGORO_CRATER },	-- The Etymidian
+					},
+				}),
+			},
 		}),
 		q(11975, {	-- Now, When I Grow Up... [Horde - Blood Elf]
 			["providers"] = {
@@ -996,12 +1102,23 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				10945,	-- Hch'uu and the Mushroom People
 				10953,	-- Visit the Throne of the Elements
 			},
-			["coord"] = { 76.61, 81.23, SILVERMOON_CITY },
-			["timeline"] = { "added 2.4.0" },
-			["maps"] = { SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_4_0 },
+			["maps"] = { SHATTRATH_CITY, SILVERMOON_CITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- Take Salandria to visit the Elite Tauren Chieftain in Silvermoon City.
+					["providers"] = {
+						{ "n", 25151 },	-- Samuro <The Tauren Chieftains>
+						{ "n", 25152 },	-- Sig Nicious <The Tauren Chieftains>
+						{ "n", 25148 },	-- Bergrisst <The Tauren Chieftains>
+						{ "n", 25150 },	-- Mai'Kyl <The Tauren Chieftains>
+						{ "n", 25149 },	-- Chief Thunder-Skins <The Tauren Chieftains>
+					},
+					["coord"] = { 76.61, 81.23, SILVERMOON_CITY },
+				}),
+			},
 		}),
 		q(54130, {	-- Our New Friends [Alliance - Human]
 			["providers"] = {
@@ -1009,11 +1126,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["coord"] = { 53.28, 15.25, STORMWIND_CITY },	-- Stormwind Embassy
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
+			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				objective(1, {	-- Visit the Stormwind Embassy with your orphan
+					["coord"] = { 53.28, 15.25, STORMWIND_CITY },	-- Stormwind Embassy
+				}),
+			},
 		}),
 		q(13950, {	-- Playmates! [Neutral - Oracles]
 			["providers"] = {
@@ -1021,15 +1143,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 33533 },	-- Oracle Orphan
 			},
 			["sourceQuest"] = 13926,	-- Little Orphan Roo Of The Oracles
-			["coords"] = {
-				{ 43.87, 12.06, BOREAN_TUNDRA },	-- Path starts
-				{ 42.06, 11.26, BOREAN_TUNDRA },	-- Path branches
-				{ 42.68, 12.61, BOREAN_TUNDRA },	-- Roo visits Winterfin
-			},
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			["maps"] = { NORTHREND_DALARAN, BOREAN_TUNDRA },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Roo taken to visit Winterfin Retreat
+					["provider"] = { "n", 34489 },	-- Winterfin Playmate
+					["coords"] = {
+						{ 43.87, 12.06, BOREAN_TUNDRA },	-- Path starts
+						{ 42.06, 11.26, BOREAN_TUNDRA },	-- Path branches
+						{ 42.68, 12.61, BOREAN_TUNDRA },	-- Roo visits Winterfin
+					},
+				}),
+			},
 		}),
 		q(13951, {	-- Playmates! [Neutral - Wolvar]
 			["providers"] = {
@@ -1037,23 +1164,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 33532 },	-- Wolvar Orphan
 			},
 			["sourceQuest"] = 13927,	-- Little Orphan Kekek Of The Wolvar
-			["coord"] = { 46.38, 67.79, DRAGONBLIGHT },	-- Kekek taken to Snowfall Glade
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			["maps"] = { NORTHREND_DALARAN, DRAGONBLIGHT },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Kekek taken to visit Snowfall Glade
+					["provider"] = { "n", 34490 },	-- Snowfall Glade Playmate
+					["coord"] = { 46.38, 67.79, DRAGONBLIGHT },	-- Kekek taken to Snowfall Glade
+				}),
+			},
 		}),
 		q(53971, {	-- Return to the Hall of Castes [Horde - Zandalari - FINAL]
 			["providers"] = {
 				{ "i", 164965 },	-- Casteless Zandalari Whistle
 				{ "n", 145463 },	-- Casteless Zandalari
+				{ "n", 131346 },	-- Caretaker Padae
 			},
 			["sourceQuests"] = {
 				53969,	-- Hunting for Gold
 				53970,	-- The Sethrak Queen
 			},
 			["coord"] = { 54.64, 84.61, DAZARALOR },	-- Caretaker Padae
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
@@ -1067,13 +1200,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			["providers"] = {
 				{ "i", 164772 },	-- Kul Tiran Orphan Whistle
 				{ "n", 145394 },	-- Liam
+				{ "n", 145291 },	-- Orphan Matron Westerson
 			},
 			["sourceQuests"] = {
 				53863,	-- Bird Friends
 				53864,	-- Shapeshifters
 			},
 			["coord"] = { 48.01, 40.28, BORALUS },	-- Orphan Matron Westerson
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
@@ -1085,15 +1219,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["coord"] = { 50.71, 73.94, AZSHARA },	-- Redhound Two-Seater
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
 				ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
+				AZSHARA,
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				objective(1, {	-- Take Your Orphan to Ride the Rocketway
+					["provider"] = { "n", 52585 },	-- Redhound Two-Seater
+					["coord"] = { 50.71, 73.94, AZSHARA },
+				}),
+			},
 		}),
 		q(53864, {	-- Shapeshifters [Alliance - Kul Tiran]
 			["providers"] = {
@@ -1105,16 +1245,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				53862,	-- The Squid Shrine [Alliance - Kul Tiran]
 				53861,	-- Yo Ho, Yo Ho! [Alliance - Kul Tiran]
 			},
-			["coords"] = {
-				{ 45.94, 39.06, DRUSTVAR },	-- Path to Ulfar's Den Starts
-				{ 46.32, 43.86, DRUSTVAR },	-- Continue the path to Ulfar's Den
-				{ 46.32, 44.53, DRUSTVAR },	-- Ulfar's Den
-			},
-			["timeline"] = { "added 8.0.1" },
-			["maps"] = { BORALUS },
+			["timeline"] = { ADDED_8_0_1 },
+			["maps"] = { BORALUS, DRUSTVAR },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				objective(1, {	-- Visit Ulfar's Den
+					--["provider"] = { "n", 141159 },	-- Ulfar (not sure what the NPC ID is)
+					["coords"] = {
+						{ 45.94, 39.06, DRUSTVAR },	-- Path to Ulfar's Den Starts
+						{ 46.32, 43.86, DRUSTVAR },	-- Continue the path to Ulfar's Den
+						{ 46.32, 44.53, DRUSTVAR },	-- Ulfar's Den
+					},
+				}),
+			},
 		}),
 		q(1687, {	-- Spooky Lighthouse [Alliance - Human] (removed)
 			["providers"] = {
@@ -1122,13 +1267,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { WESTFALL },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
 			["groups"] = {
 				objective(1, {	-- Go to the Westfall Lighthouse.
+					["provider"] = { "n", 392 },	-- Captain Grayson
 					["coord"] = { 29, 86, WESTFALL },
 				}),
 			},
@@ -1139,14 +1285,18 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["coord"] = { 39.68, 78.68, ORGRIMMAR },	-- Orgimmar Embassy
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				86,	-- Orgrimmar: The Drag
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				objective(1, {	-- Visit the Orgrimmar Embassy with your orphan
+					["coord"] = { 39.68, 78.68, ORGRIMMAR },	-- Orgimmar Embassy
+				}),
+			},
 		}),
 		q(29167, {	-- The Banshee Queen [Horde - Orc] (removed)
 			["providers"] = {
@@ -1154,15 +1304,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["coord"] = { 57.5, 91.1, UNDERCITY },
-			["timeline"] = { "added 4.0.1", "removed 8.0.1" },
+			["timeline"] = { ADDED_4_0_1, REMOVED_8_0_1 },
 			["maps"] = {
 				ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
+				UNDERCITY,
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				objective(1, {	-- Meeting with Lady Sylvanas Windrunner
+					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
+					["coord"] = { 57.5, 91.1, UNDERCITY },
+				}),
+			},
 		}),
 		q(29106, {	-- The Biggest Diamond Ever! [Alliance - Human]
 			["providers"] = {
@@ -1170,16 +1326,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["coords"] = {
-				{ 44.61, 49.40, IRONFORGE },	-- The High Seat [Leads to tunnel]
-				{ 44.76, 52.25, IRONFORGE },	-- Path to Old Ironforge
-				{ 37.43, 54.32, 1361 },	-- Magni [Old Ironforge]
-			},
-			["timeline"] = { "added 4.0.1" },
-			["maps"] = { STORMWIND_CITY },
+			["timeline"] = { ADDED_4_0_1 },
+			["maps"] = { STORMWIND_CITY, IRONFORGE, 1361 },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				objective(1, {	-- Visit King Magni in Old Ironforge
+					["provider"] = { "n", 2918 },	-- Advisor Belgrum
+					["coords"] = {
+						{ 44.61, 49.40, IRONFORGE },	-- The High Seat [Leads to tunnel]
+						{ 44.76, 52.25, IRONFORGE },	-- Path to Old Ironforge
+						{ 37.43, 54.32, 1361 },	-- Magni [Old Ironforge]
+					},
+				}),
+			},
 		}),
 		q(13929, {	-- The Biggest Tree Ever! [Neutral - Oracles]
 			["providers"] = {
@@ -1187,15 +1348,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 33533 },	-- Oracle Orphan
 			},
 			["sourceQuest"] = 13926,	-- Little Orphan Roo Of The Oracles
-			["coords"] = {
-				{ 52.93, 44.93, GRIZZLY_HILLS },	-- Path to Grizzlemaw
-				{ 51.69, 40.74, GRIZZLY_HILLS },	-- Roo taken to Grizzlemaw
-				{ 50.71, 42.75, GRIZZLY_HILLS },	-- Roo taken to Grizzlemaw
-			},
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			["maps"] = { NORTHREND_DALARAN, GRIZZLY_HILLS },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Roo taken to visit Grizzlemaw
+					["coords"] = {
+						{ 52.93, 44.93, GRIZZLY_HILLS },	-- Path to Grizzlemaw
+						{ 51.69, 40.74, GRIZZLY_HILLS },	-- Roo taken to Grizzlemaw
+						{ 50.71, 42.75, GRIZZLY_HILLS },	-- Roo taken to Grizzlemaw
+					},
+				}),
+			},
 		}),
 		q(1479, {	-- The Bough of the Eternals [Alliance - Human] (removed)
 			["providers"] = {
@@ -1203,7 +1368,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { DARNASSUS },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1220,14 +1385,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 33533 },	-- Oracle Orphan
 			},
 			["sourceQuest"] = 13926,	-- Little Orphan Roo Of The Oracles
-			["coords"] = {
-				{ 69.66, 46.25, DRAGONBLIGHT },	-- Path Starts
-				{ 71.25, 40.81, DRAGONBLIGHT },	-- Roo taken to Bronze Dragonshrine
-			},
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			["maps"] = { NORTHREND_DALARAN, DRAGONBLIGHT },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Roo taken to visit Bronze Dragonshrine
+					["provider"] = { "n", 34386 },	-- High-Oracle Soo-roo
+					["coords"] = {
+						{ 69.66, 46.25, DRAGONBLIGHT },	-- Path Starts
+						{ 71.25, 40.81, DRAGONBLIGHT },	-- Roo taken to Bronze Dragonshrine
+					},
+				}),
+			},
 		}),
 		q(13934, {	-- The Bronze Dragonshrine [Neutral - Wolvar]
 			["providers"] = {
@@ -1235,14 +1405,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 33532 },	-- Wolvar Orphan
 			},
 			["sourceQuest"] = 13927,	-- Little Orphan Kekek Of The Wolvar
-			["coords"] = {
-				{ 69.66, 46.25, DRAGONBLIGHT },	-- Path Starts
-				{ 71.25, 40.81, DRAGONBLIGHT },	-- Roo taken to Bronze Dragonshrine
-			},
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			["maps"] = { NORTHREND_DALARAN, DRAGONBLIGHT },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	--Kekek taken to visit Bronze Dragonshrine
+					["provider"] = { "n", 34387 },	-- Elder Kekek
+					["coords"] = {
+						{ 69.66, 46.25, DRAGONBLIGHT },	-- Path Starts
+						{ 71.25, 40.81, DRAGONBLIGHT },	-- Kekek taken to Bronze Dragonshrine
+					},
+				}),
+			},
 		}),
 		q(13954, {	-- The Dragon Queen [Neutral - Oracles]
 			["providers"] = {
@@ -1250,15 +1425,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 33533 },	-- Oracle Orphan
 			},
 			["sourceQuests"] = {
-				13951,	-- Playmates!
+				13950,	-- Playmates! [Neutral - Oracles]
 				13929,	-- The Biggest Tree Ever!
-				13934,	-- The Bronze Dragonshrine
+				13933,	-- The Bronze Dragonshrine [Neutral - Oracles]
 			},
-			["coord"] = { 59.81, 54.45, DRAGONBLIGHT },	-- Meet Alexstraza
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			["maps"] = { NORTHREND_DALARAN, DRAGONBLIGHT },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Roo taken to visit Alexstrasza the Life-Binder
+					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder <Queen of the Dragons>
+					["coord"] = { 59.81, 54.45, DRAGONBLIGHT },
+				}),
+			},
 		}),
 		q(13955, {	-- The Dragon Queen [Neutral - Wolvar]
 			["providers"] = {
@@ -1267,14 +1447,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuests"] = {
 				13930,	-- Home Of The Bear-Men
-				13951,	-- Playmates!
-				13934,	-- The Bronze Dragonshrine
+				13951,	-- Playmates! [Neutral - Wolvar]
+				13934,	-- The Bronze Dragonshrine [Neutral - Wolvar]
 			},
-			["coord"] = { 59.81, 54.45, DRAGONBLIGHT },	-- Meet Alexstraza
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			["maps"] = { NORTHREND_DALARAN, DRAGONBLIGHT },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Kekek taken to visit Alexstrasza the Life-Binder
+					["provider"] = { "n", 26917 },	-- Alexstrasza the Life-Binder <Queen of the Dragons>
+					["coord"] = { 59.81, 54.45, DRAGONBLIGHT },
+				}),
+			},
 		}),
 		q(29176, {	-- The Fallen Chieftain [Horde - Orc]
 			["providers"] = {
@@ -1282,16 +1467,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14444 },	-- Orcish Orphan
 			},
 			["sourceQuest"] = 172,	-- Children's Week [Horde - Orc]
-			["coord"] = { 60.74, 22.92, MULGORE },	-- Fallen Chieftain
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
 				ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
 				THUNDER_BLUFF,
+				MULGORE,
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),
+			["groups"] = {
+				objective(1, {	-- Take Your Orphan to Visit Red Rocks
+					["provider"] = { "n", 52805 },	-- Spirit of Cairne
+					["coord"] = { 60.74, 22.92, MULGORE },
+				}),
+			},
 		}),
 		q(53967, {	-- The Frogmarsh [Horde - Zandalari]
 			["providers"] = {
@@ -1299,19 +1490,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 145463 },	-- Casteless Zandalari
 			},
 			["sourceQuest"] = 53965,	-- Children's Week
-			["coords"] = {
-				{ 71.18, 49.19, NAZMIR },	-- Path Starts
-				{ 73.26, 53.42, NAZMIR },	-- The Frogmarsh
-			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 				DAZARALOR,
+				NAZMIR,
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				objective(1, {	-- Visit Krag'wa's Burrow
+					--["provider"] = { "n", 131093 },	-- Krag'wa (not sure what the NPC ID is)
+					["coords"] = {
+						{ 71.18, 49.19, NAZMIR },	-- Path Starts
+						{ 73.26, 53.42, NAZMIR },	-- The Frogmarsh
+					},
+				}),
+			},
 		}),
 		q(13957, {	-- The Mighty Hemet Nesingwary [Neutral - Wolvar]
 			["providers"] = {
@@ -1320,14 +1517,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 			},
 			["sourceQuests"] = {
 				13930,	-- Home Of The Bear-Men
-				13951,	-- Playmates!
-				13934,	-- The Bronze Dragonshrine
+				13951,	-- Playmates! [Neutral - Wolvar]
+				13934,	-- The Bronze Dragonshrine [Neutral - Wolvar]
 			},
-			["coord"] = { 27.11, 58.73, SHOLAZAR_BASIN },	-- Meet Hemest Nesingwary
 			["timeline"] = { ADDED_3_0_2 },
-			["maps"] = { NORTHREND_DALARAN },
+			["maps"] = { NORTHREND_DALARAN, SHOLAZAR_BASIN },
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(72, 72, 10),
+			["groups"] = {
+				objective(1, {	-- Kekek taken to visit Hemet Nesingwary
+					["provider"] = { "n", 27986 },	-- Hemet Nesingwary
+					["coord"] = { 27.11, 58.73, SHOLAZAR_BASIN },
+				}),
+			},
 		}),
 		q(53859, {	-- The Mountain Folk [Alliance - Kul Tiran]
 			["providers"] = {
@@ -1335,12 +1537,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 145394 },	-- Liam
 			},
 			["sourceQuest"] = 53811,	-- Children's Week [Alliance - Kul Tiran]
-			["coord"] = { 42.47, 22.71, TIRAGARDE_SOUND },	-- Mountain Folk
-			["timeline"] = { "added 8.0.1" },
-			["maps"] = { BORALUS },
+			["timeline"] = { ADDED_8_0_1 },
+			["maps"] = { BORALUS, TIRAGARDE_SOUND },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				objective(1, {	-- Visit the Roughnecks
+					["provider"] = { "n", 129003 },	-- Tagart
+					["coord"] = { 42.47, 22.71, TIRAGARDE_SOUND },
+				}),
+			},
 		}),
 		q(10956, {	-- The Seat of the Naaru [Alliance - Draenei]
 			["providers"] = {
@@ -1352,15 +1559,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				10952,	-- A Trip to the Dark Portal
 				10954,	-- Jheel is at Aeris Landing!
 			},
-			["coords"] = {
-				{ 56.87, 40.77, THE_EXODAR },	-- Seat of the Naaru
-				{ 58.04, 41.50, THE_EXODAR },	-- Speak to O'ros
-			},
-			["timeline"] = { "added 2.0.1" },
-			["maps"] = { SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_1 },
+			["maps"] = { SHATTRATH_CITY, THE_EXODAR },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- Dornaa taken to the Seat of the Naaru
+					["provider"] = { "n", 17538 },	-- O'ros
+					["coords"] = {
+						{ 56.87, 40.77, THE_EXODAR },	-- Seat of the Naaru
+						{ 58.04, 41.50, THE_EXODAR },	-- Speak to O'ros
+					},
+				}),
+			},
 		}),
 		q(53970, {	-- The Sethrak Queen [Horde - Zandalari]
 			["providers"] = {
@@ -1372,20 +1584,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				53967,	-- The Frogmarsh
 				53968,	-- The Shifting Pack
 			},
-			["coords"] = {
-				{ 27.01, 53.15, VOLDUN },	-- Path to Sanctuary of the Devoted
-				{ 27.02, 51.98, VOLDUN },	-- Path to Sanctuary of the Devoted
-				{ 26.77, 52.57, VOLDUN },	-- Sanctuary of the Devoted
-			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 				DAZARALOR,
+				VOLDUN,
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				objective(1, {	-- Visit Terrace of the Devoted
+					["provider"] = { "n", 129588 },	-- Vorrik
+					["coords"] = {
+						{ 27.01, 53.15, VOLDUN },	-- Path to Sanctuary of the Devoted
+						{ 27.02, 51.98, VOLDUN },	-- Path to Sanctuary of the Devoted
+						{ 26.77, 52.57, VOLDUN },	-- Sanctuary of the Devoted
+					},
+				}),
+			},
 		}),
 		q(53968, {	-- The Shifting Pack [Horde - Zandalari]
 			["providers"] = {
@@ -1393,19 +1611,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 145463 },	-- Casteless Zandalari
 			},
 			["sourceQuest"] = 53965,	-- Children's Week
-			["coords"] = {
-				{ 49.39, 31.22, ZULDAZAR },	-- Path Starts
-				{ 48.69, 31.76, ZULDAZAR },	-- Lair of Gonk
-			},
-			["timeline"] = { "added 8.0.1" },
+			["timeline"] = { ADDED_8_0_1 },
 			["maps"] = {
 				THE_GREAT_SEAL,	-- Dazar'alor
 				HALL_OF_CHRONICLERS,	-- Hall of Chroniclers
 				DAZARALOR,
+				ZULDAZAR,
 			},
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				objective(1, {	-- Visit Lair of Gonk
+					--["provider"] = { "n", 139649 },	-- Gonk (not sure what the NPC ID is)
+					["coords"] = {
+						{ 49.39, 31.22, ZULDAZAR },	-- Path Starts
+						{ 48.69, 31.76, ZULDAZAR },	-- Lair of Gonk
+					},
+				}),
+			},
 		}),
 		q(1558, {	-- The Stonewrought Dam [Alliance - Human] (removed)
 			["providers"] = {
@@ -1413,7 +1637,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 14305 },	-- Human Orphan
 			},
 			["sourceQuest"] = 1468,	-- Children's Week [Alliance - Human]
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { LOCH_MODAN },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1430,12 +1654,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 145394 },	-- Liam
 			},
 			["sourceQuest"] = 53811,	-- Children's Week [Alliance - Kul Tiran]
-			["coord"] = { 72.57, 49.94, STORMSONG_VALLEY },	-- Shrine of the Storm View
-			["timeline"] = { "added 8.0.1" },
-			["maps"] = { BORALUS },
+			["timeline"] = { ADDED_8_0_1 },
+			["maps"] = { BORALUS, STORMSONG_VALLEY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				objective(1, {	-- Visit Shrine of the Storm
+					--["provider"] = { "n",  },	-- Brother Pike (not sure what the NPC ID is)
+					["coord"] = { 72.57, 49.94, STORMSONG_VALLEY },
+				}),
+			},
 		}),
 		q(10962, {	-- Time to Visit the Caverns [Alliance - Draenei]
 			["providers"] = {
@@ -1447,16 +1676,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				10952,	-- A Trip to the Dark Portal
 				10954,	-- Jheel is at Aeris Landing!
 			},
-			["coords"] = {
-				{ 53.29, 55.35, CAVERNS_OF_TIME },	-- Salandria taken to Caverns of Time
-				{ 39.94, 77.39, CAVERNS_OF_TIME },	-- Toy Dragon
-				{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
-			},
-			["timeline"] = { "added 2.0.1" },
-			["maps"] = { TANARIS, SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_1 },
+			["maps"] = { TANARIS, SHATTRATH_CITY, CAVERNS_OF_TIME },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- 0/1 Toy Dragon
+					["provider"] = { "i", 31951 },	-- Toy Dragon
+					["coord"] = { 39.94, 77.39, CAVERNS_OF_TIME },
+					["cr"] = 21643,	-- Alurmi <Keepers of Time Quartermaster>
+				}),
+				objective(2, {	-- Dornaa taken to the Caverns of Time
+					["provider"] = { "n", 19934 },	-- Zaladormu
+					["coords"] = {
+						{ 53.29, 55.35, CAVERNS_OF_TIME },	-- Dornaa taken to Caverns of Time
+						{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
+					},
+				}),
+			},
 		}),
 		q(10963, {	-- Time to Visit the Caverns [Horde - Blood Elf]
 			["providers"] = {
@@ -1468,35 +1706,46 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				10945,	-- Hch'uu and the Mushroom People
 				10953,	-- Visit the Throne of the Elements
 			},
-			["coords"] = {
-				{ 53.29, 55.35, CAVERNS_OF_TIME },	-- Salandria taken to Caverns of Time
-				{ 39.94, 77.39, CAVERNS_OF_TIME },	-- Toy Dragon
-				{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
-			},
-			["timeline"] = { "added 2.0.1" },
-			["maps"] = { TANARIS, SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_1 },
+			["maps"] = { TANARIS, SHATTRATH_CITY, CAVERNS_OF_TIME },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- 0/1 Toy Dragon
+					["provider"] = { "i", 31951 },	-- Toy Dragon
+					["coord"] = { 39.94, 77.39, CAVERNS_OF_TIME },
+					["cr"] = 21643,	-- Alurmi <Keepers of Time Quartermaster>
+				}),
+				objective(2, {	-- Salandria taken to the Caverns of Time
+					["provider"] = { "n", 19934 },	-- Zaladormu
+					["coords"] = {
+						{ 53.29, 55.35, CAVERNS_OF_TIME },	-- Salandria taken to Caverns of Time
+						{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
+					},
+				}),
+			},
 		}),
 		q(10953, {	-- Visit the Throne of the Elements [Horde - Blood Elf]
 			["providers"] = {
 				{ "i", 31880 },	-- Blood Elf Orphan Whistle
 				{ "n", 22817 },	-- Blood Elf Orphan
 			},
-			["crs"] = {
-				18072,	-- Elementalist Sharvak
-			},
 			["sourceQuest"] = 10942,	-- Children's Week
-			["coords"] = {
-				{ 60.39, 23.36, NAGRAND },	-- Salandria taken to the Throne of Elements
-				{ 60.65, 22.11, NAGRAND },	-- Speak to Elementalist Sharvak
-			},
-			["timeline"] = { "added 2.0.1" },
-			["maps"] = { SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_1 },
+			["maps"] = { SHATTRATH_CITY, NAGRAND },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- Salandria taken to the Throne of the Elements
+					["provider"] = { "n", 18072 },	-- Elementalist Sharvak
+					["coords"] = {
+						{ 60.39, 23.36, NAGRAND },	-- Salandria taken to the Throne of Elements
+						{ 60.65, 22.11, NAGRAND },	-- Speak to Elementalist Sharvak
+					},
+				}),
+			},
 		}),
 		q(10960, {	-- When I Grow Up... [Horde - Blood Elf]
 			["providers"] = {
@@ -1508,12 +1757,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				10945,	-- Hch'uu and the Mushroom People [Horde - Blood Elf]
 				10953,	-- Visit the Throne of the Elements [Horde - Blood Elf]
 			},
-			["coord"] = { 76.61, 81.23, SILVERMOON_CITY },
-			["timeline"] = { "added 2.0.1", "removed 2.4.0" },
-			["maps"] = { SHATTRATH_CITY },
+			["timeline"] = { ADDED_2_0_1, REMOVED_2_4_0 },
+			["maps"] = { SHATTRATH_CITY, SILVERMOON_CITY },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(60, 60, 10),
+			["groups"] = {
+				objective(1, {	-- Salandria taken to the paladin trainers in Silvermoon City
+					["provider"] = { "n", 17076 },	-- Lady Liadrin <Blood Knight Matriarch>
+					["coord"] = { 76.61, 81.23, SILVERMOON_CITY },
+				}),
+			},
 		}),
 		q(53861, {	-- Yo Ho, Yo Ho! [Alliance - Kul Tiran]
 			["providers"] = {
@@ -1521,12 +1775,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ "n", 145394 },	-- Liam
 			},
 			["sourceQuest"] = 53811,	-- Children's Week [Alliance - Kul Tiran]
-			["coord"] = { 79.83, 82.51, TIRAGARDE_SOUND },	-- Meet with Pirates
-			["timeline"] = { "added 8.0.1" },
-			["maps"] = { BORALUS },
+			["timeline"] = { ADDED_8_0_1 },
+			["maps"] = { BORALUS, TIRAGARDE_SOUND },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(110, 110, 10),
+			["groups"] = {
+				objective(1, {	-- Visit Freehold
+					["provider"] = { "n", 128700 },	-- Irontide Recruiter <Irontide Raiders>
+					["coord"] = { 79.83, 82.51, TIRAGARDE_SOUND },
+				}),
+			},
 		}),
 		q(4822, {	-- You Scream, I Scream... [Alliance - Human] (removed)
 			["providers"] = {
@@ -1538,7 +1797,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				1479,	-- The Bough of the Eternals [Alliance - Human] (removed)
 				1558,	-- The Stonewrought Dam [Alliance - Human] (removed)
 			},
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1565,7 +1824,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				-- #endif
 				29106,	-- The Biggest Diamond Ever! [Alliance - Human]
 			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
 			["isYearly"] = true,
@@ -1594,7 +1853,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				911,	-- Gateway to the Frontier [Horde - Orc] (removed)
 				1800,	-- Lordaeron Throne Room [Horde - Orc] (removed)
 			},
-			["timeline"] = { ADDED_1_4_0, "removed 4.0.1" },
+			["timeline"] = { ADDED_1_4_0, REMOVED_4_0_1 },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isYearly"] = true,
@@ -1621,7 +1880,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				-- #endif
 				29176,	-- The Fallen Chieftain [Horde - Orc]
 			},
-			["timeline"] = { "added 4.0.1" },
+			["timeline"] = { ADDED_4_0_1 },
 			["maps"] = {
 				ORGRIMMAR,
 				86,	-- Orgrimmar: The Drag
@@ -1657,17 +1916,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 58.86, 60.16, ORGRIMMAR },	-- Blax Bottlerocket Path
 				{ 59.32, 51.86, ORGRIMMAR },	-- Blax Bottlerocket Path
 			},
-			["timeline"] = { "added 4.1.0.13682" },
+			["timeline"] = { ADDED_4_1_0 },
 			["maps"] = {
 				86,	-- Ogrimmar: The Drag
 			},
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 				})),
 				applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 				})),
 			},
 		}),
@@ -1692,14 +1951,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 				{ 65.63, 62.99, STORMWIND_CITY },
 				{ 66.61, 64.43, STORMWIND_CITY },
 			},
-			["timeline"] = { "added 4.1.0.13682" },
+			["timeline"] = { ADDED_4_1_0 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				applyevent(EVENTS.CHILDRENS_WEEK, i(69895, {	-- Green Balloon (TOY!)
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 				})),
 				applyevent(EVENTS.CHILDRENS_WEEK, i(69896, {	-- Yellow Balloon (TOY!)
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 				})),
 			},
 		}),
@@ -1709,9 +1968,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.CHILDRENS_WEEK, n(CHILDRENS_WEEK_HEADER, 
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(55376, {	-- completing Hunting for Gold (53969)
-		["timeline"] = { "added 8.0.1" },
+		["timeline"] = { ADDED_8_0_1 },
 	}),
 	q(55377, {	-- completing Hunting for Gold (53969)
-		["timeline"] = { "added 8.0.1" },
+		["timeline"] = { ADDED_8_0_1 },
 	}),
 });

@@ -73,21 +73,25 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		i(87399, {["timeline"] = {ADDED_5_0_4}}),	-- Restored Artifact
 		i(64397),	-- Tol'vir Hieroglyphic
 		currency(ARCH_CURRENCY_TOLVIR, {
-			i(64657, {	-- Canopic Jar
-				i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
-			}),
-			i(64652),	-- Castle of Sand
-			i(64653),	-- Cat Statue with Emerald Eyes
-			i(60847),	-- Crawling Claw (PET!)
-			i(64656),	-- Engraved Scimitar Hilt
-			i(64881),	-- Pendant of the Scarab Storm (TOY!)
-			i(64904),	-- Ring of the Boy Emperor
-			i(64885),	-- Scimitar of the Sirocco
-			i(64658),	-- Sketch of a Desert Palace
-			i(64654),	-- Soapstone Scarab Necklace
-			i(64880),	-- Staff of Ammunae
-			i(64655),	-- Tiny Oasis Mosaic
-			i(64883),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
+			["provider"] = { "o", 207190 },	-- Tol'vir Archaeology Find
+			["maps"] = { ULDUM },
+			["groups"] = {
+				i(64657, {	-- Canopic Jar
+					i(67538),	-- Recipe: Vial of the Sands (RECIPE!)
+				}),
+				i(64652),	-- Castle of Sand
+				i(64653),	-- Cat Statue with Emerald Eyes
+				i(60847),	-- Crawling Claw (PET!)
+				i(64656),	-- Engraved Scimitar Hilt
+				i(64881),	-- Pendant of the Scarab Storm (TOY!)
+				i(64904),	-- Ring of the Boy Emperor
+				i(64885),	-- Scimitar of the Sirocco
+				i(64658),	-- Sketch of a Desert Palace
+				i(64654),	-- Soapstone Scarab Necklace
+				i(64880),	-- Staff of Ammunae
+				i(64655),	-- Tiny Oasis Mosaic
+				i(64883),	-- Ultramarine Qiraji Battle Tank (MOUNT!)
+			},
 		}),
 	}),
 	prof(BLACKSMITHING, {
@@ -337,49 +341,61 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(ENGINEERING, {
-		filter(CONSUMABLES, {
-			i(59594),	-- Gnomish X-Ray Scope
-			i(60223),	-- High-Powered Bolt Gun
-			i(70139),	-- Flintlocke's Woodchucker
+		n(DISCOVERY, {
+			r(84425),	-- Cardboard Assassin
+			r(84427),	-- Grounded Plasma Shield
+			r(84424),	-- Invisibility Field
+			r(82200),	-- Spinal Healing Injector
 		}),
 		n(ARMOR, {
-			-- Head
-			i(59455),	-- Agile Bio-Optic Killshades*
+			i(59455),	-- Agile Bio-Optic Killshades
 			i(60222),	-- Authentic Jr. Engineer Goggles
-			i(59453),	-- Camouflage Bio-Optic Killshades*
-			i(59456),	-- Deadly Bio-Optic Killshades*
-			i(59458),	-- Energized Bio-Optic Killshades*
-			i(59449),	-- Lightweight Bio-Optic Killshades*
-			i(59359),	-- Reinforced Bio-Optic Killshades*
-			i(59448),	-- Specialized Bio-Optic Killshades*
-			-- Trinkets
-			i(60403),	-- Elementium Dragonling*
-		}),
-		filter(BAGS, {
-			i(60217),	-- Elementium Toolbox*
-			i(60218),	-- Lure Master Tackle Box*
-		}),
-		filter(CONSUMABLES, {
-			i(67494, {	-- Electrostatic Condenser
-				["collectible"] = false,
-			}),
-			i(59595),	-- R19 Threatfinder
-			i(59596),	-- Safety Catch Removal Kit
+			i(59453),	-- Camouflage Bio-Optic Killshades
+			i(59456),	-- Deadly Bio-Optic Killshades
+			i(59458),	-- Energized Bio-Optic Killshades
+			i(59449),	-- Lightweight Bio-Optic Killshades
+			i(59359),	-- Reinforced Bio-Optic Killshades
+			i(59448),	-- Specialized Bio-Optic Killshades
 		}),
 		filter(BATTLE_PETS, {
 			i(60216),	-- De-Weaponized Mechanical Companion (PET!)
 			i(59597),	-- Personal World Destroyer (PET!)
 		}),
+		filter(MISC, {
+			i(63396),	-- Big Daddy
+			i(67494, {	-- Electrostatic Condenser
+				["collectible"] = false,
+			}),
+			i(60217),	-- Elementium Toolbox
+			applyclassicphase(CATA_PHASE_THREE, i(70139, {["timeline"] = {ADDED_4_2_0}})),	-- Flintlocke's Woodchucker
+			i(60858),	-- Goblin Barbecue
+			i(68049),	-- Heat-Treated Spinning Lure
+			i(60223),	-- High-Powered Bolt Gun
+			i(60218),	-- Lure Master Tackle Box
+			i(60853),	-- Volatile Seaforium Blastpack
+		}),
+		filter(REAGENTS, {
+			i(67749),	-- Electrified Ether
+			i(60224),	-- Handful of Obsidium Bolts
+		}),
 		filter(TOYS, {
 			i(40727),	-- Gnomish Gravity Well (TOY!)
 			i(60854),	-- Loot-A-Rang (TOY!)
 		}),
+		filter(TRINKET_F, {
+			i(60403),	-- Elementium Dragonling
+		}),
 		n(WEAPONS, {
-			i(71077),	-- Extreme-Impact Hole Puncher*
-			i(59598),	-- Finely-Tuned Throat Needler*
-			i(59367),	-- Kickback 5000*
-			i(59364),	-- Overpowered Chicken Splitter*
-			i(59599),	-- Volatile Thunderstick*
+			applyclassicphase(CATA_PHASE_THREE, i(71077, {["timeline"] = {ADDED_4_2_0}})),	-- Extreme-Impact Hole Puncher
+			i(59598),	-- Finely-Tuned Throat Needler
+			i(59367),	-- Kickback 5000
+			i(59364),	-- Overpowered Chicken Splitter
+			i(59599),	-- Volatile Thunderstick
+		}),
+		n(WEAPON_ENCHANTMENTS, {
+			i(59594),	-- Gnomish X-Ray Scope
+			i(59595),	-- R19 Threatfinder
+			i(59596),	-- Safety Catch Removal Kit
 		}),
 	}),
 	-- #if BEFORE 8.0.1
@@ -430,20 +446,37 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(INSCRIPTION, {
+		i(62237, {	-- Adventurer's Journal
+			-- #if CATA
+			["description"] = [[Using this item will provide you with a temporary 1-hour buff. This buff is random, and only applies if you are below level 85.
+
+Learning by Example - Quest experience increased by 10%.
+The Great Hunt - Damage against beasts increased by 15%
+Terrain Expert - Movement speed increased by %15. This does not stack with other movement speed increasing effects.
+Living Forever - Chance to heal yourself when dealing damage to an enemy.
+Deadly Drive - Damage against humanoids increased by 15%.
+Dragonsbane - Damage against Dragonkin increased by 15%.
+Mechanical Aptitude - Damage against Mechanicals increased by 15%.
+Kneecapper - Damage against Giants increased by 15%.
+Fire and Water - Damage against Elementals increased by 15%.
+28 Chapters Later - Damage against Undead increased by 15%]];
+			-- #endif
+			["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+		}),
 		-- #if AFTER WOD
 		spell(165466, {	-- Research: Blackfallow Ink
 			r(64260, {["timeline"]={ADDED_3_1_0}}),	-- Glyph of Mutilate / Glyph of Disguise[MOP+]
-			r(64262, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
+			r(64262, {["timeline"]={ADDED_3_1_0,REMOVED_7_0_3}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
 		}),
 		-- #endif
 		filter(GLYPHS, {
 			-- #if AFTER WOD
-			i(43335, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
-			i(43390, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Drain Soul / Glyph of Soul Consumption[MOP+]
+			i(43335, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of the Wild / Glyph of Charm Woodland Creature[MOP+]
+			i(43390, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Drain Soul / Glyph of Soul Consumption[MOP+]
 			i(43334, {["timeline"]={ADDED_3_0_2}}),		-- Glyph of Challenging Roar / Glyph of the Ursol Chameleon[MOP+]
-			i(41540, {["timeline"]={ADDED_3_0_2,"removed 7.0.3"}}),	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash[3.0.3+]
+			i(41540, {["timeline"]={ADDED_3_0_2,REMOVED_7_0_3}}),	-- Glyph of Strength of Earth Totem / Glyph of Lava Lash[3.0.3+]
 			i(45768, {["timeline"]={ADDED_3_1_0}}),	-- Glyph of Mutilate / Glyph of Disguise[MOP+]
-			i(45776, {["timeline"]={ADDED_3_1_0,"removed 7.0.3"}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
+			i(45776, {["timeline"]={ADDED_3_1_0,REMOVED_7_0_3}}),	-- Glyph of Totem of Wrath / Glyph of Shamanistic Rage[CATA+]
 			-- #endif
 		}),
 		category(106, {	-- Tarot Cards
@@ -484,6 +517,69 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				i(62018),    -- Seven of Waves
 				i(62019),    -- Eight of Waves
 			}),
+			i(60838, {	-- Mysterious Fortune Card
+				["timeline"] = { ADDED_4_0_3 },
+				["groups"] = {
+					i(60839),	-- Fortune Card
+					i(60840),	-- Fortune Card
+					i(60841),	-- Fortune Card
+					i(60842),	-- Fortune Card
+					i(60843),	-- Fortune Card
+					i(60844),	-- Fortune Card
+					i(60845),	-- Fortune Card
+					i(62246),	-- Fortune Card
+					i(62247),	-- Fortune Card
+					i(62552),	-- Fortune Card
+					i(62553),	-- Fortune Card
+					i(62554),	-- Fortune Card
+					i(62555),	-- Fortune Card
+					i(62556),	-- Fortune Card
+					i(62557),	-- Fortune Card
+					i(62558),	-- Fortune Card
+					i(62559),	-- Fortune Card
+					i(62560),	-- Fortune Card
+					i(62561),	-- Fortune Card
+					i(62562),	-- Fortune Card
+					i(62563),	-- Fortune Card
+					i(62564),	-- Fortune Card
+					i(62565),	-- Fortune Card
+					i(62566),	-- Fortune Card
+					i(62567),	-- Fortune Card
+					i(62568),	-- Fortune Card
+					i(62569),	-- Fortune Card
+					i(62570),	-- Fortune Card
+					i(62571),	-- Fortune Card
+					i(62572),	-- Fortune Card
+					i(62573),	-- Fortune Card
+					i(62574),	-- Fortune Card
+					i(62575),	-- Fortune Card
+					i(62576),	-- Fortune Card
+					i(62577),	-- Fortune Card
+					i(62578),	-- Fortune Card
+					i(62579),	-- Fortune Card
+					i(62580),	-- Fortune Card
+					i(62581),	-- Fortune Card
+					i(62582),	-- Fortune Card
+					i(62583),	-- Fortune Card
+					i(62584),	-- Fortune Card
+					i(62585),	-- Fortune Card
+					i(62586),	-- Fortune Card
+					i(62587),	-- Fortune Card
+					i(62588),	-- Fortune Card
+					i(62589),	-- Fortune Card
+					i(62590),	-- Fortune Card
+					i(62591),	-- Fortune Card
+					i(62598),	-- Fortune Card
+					i(62599),	-- Fortune Card
+					i(62600),	-- Fortune Card
+					i(62601),	-- Fortune Card
+					i(62602),	-- Fortune Card
+					i(62603),	-- Fortune Card
+					i(62604),	-- Fortune Card
+					i(62605),	-- Fortune Card
+					i(62606),	-- Fortune Card
+				},
+			}),
 		}),
 		filter(HELD_IN_OFF_HAND, {
 			i(62236),	-- Battle Tome
@@ -492,19 +588,50 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(62234),	-- Dungeoneering Guide
 			i(62233),	-- Lord Rottington's Pressed Wisp Book
 		}),
+		-- #if BEFORE 5.0.4
+		n(RELICS, {
+			i(62240, {	-- Etched Horn
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62241, {	-- Manual to the Planes
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62243, {	-- Notched Jawbone
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62242, {	-- Runed Dragonscale
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62245, {	-- Silver Inlaid Leaf
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(62244, {	-- Tattooed Eyeball
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(75079, {	-- Vicious Charm of Triumph
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(75066, {	-- Vicious Eyeball of Dominance
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+			i(75069, {	-- Vicious Jawbone of Conquest
+				["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
+			}),
+		}),
+		-- #endif
 		-- #if AFTER 5.0.1
 		filter(STAVES, {
 			i(87565, {	-- Key to the Planes
-				["timeline"] = { "added 5.0.1" },
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 			i(87562, {	-- Rosethorn Staff
-				["timeline"] = { "added 5.0.1" },
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 			i(87566, {	-- Runed Staff
-				["timeline"] = { "added 5.0.1" },
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 			i(87561, {	-- Silver Inlaid Staff
-				["timeline"] = { "added 5.0.1" },
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 		}),
 		-- #endif
@@ -882,15 +1009,3 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, {
-	n(PROFESSIONS, {
-		prof(JEWELCRAFTING, {
-			expansion(EXPANSION.CATA, {
-				i(52107),	-- Resolute Hessonite
-				i(52150),	-- Perfect Resolute Hessonite
-				i(52092),	-- Mystic Alicite
-				i(52165),	-- Perfect Mystic Alicite
-			}),
-		}),
-	}),
-});

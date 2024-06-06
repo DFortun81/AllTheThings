@@ -293,7 +293,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				petbattles({ "added 6.0.1" }, {
+				petbattles({ ADDED_6_0_2 }, {
 					n(83837, {	-- Cymre Brightblade <Grand Master Pet Tamer>
 						["coord"] = { 51.0, 70.6, GORGROND },
 					}),
@@ -1752,6 +1752,11 @@ root(ROOTS.Zones, {
 							i(112605),	-- Wildwood Wrangler Leggings
 						},
 					}),
+					heroscall(q(49564, {	-- Hero's Call: Gorgrond!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 92,
+					})),
 					q(34279, {	-- I Am Blook
 						["provider"] = { "n", 78030 },	-- Blook
 						["coord"] = { 41.3, 91.5, GORGROND },
@@ -2029,7 +2034,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							34867,	-- The Secrets of Gorgrond
 							35557,	-- The Secrets of Gorgrond
+							-- #if AFTER 7.3.5
 							49546,	-- Warchief's Command: Gorgrond!
+							-- #endif
 						},
 					}),
 					q(35645, {	-- The Secret of the Fungus (A)
@@ -2241,11 +2248,16 @@ root(ROOTS.Zones, {
 							i(112611),	-- Wildwood Wrangler Monnion
 						},
 					}),
+					warchiefscommand(q(49546, {	-- Warchief's Command: Gorgrond!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(35487, {	-- We Burn the Dead
 						["provider"] = { "n", 82274 },	-- Cutter
+						["sourceQuest"] = 35430,	-- Cutter
 						["coord"] = { 43.7, 84.0, GORGROND },
 						["races"] = HORDE_ONLY,
-						["sourceQuest"] = 35430,	-- Cutter
 					}),
 					q(33548, {	-- We Die Laughing
 						["provider"] = { "n", 76987 },	-- Kaz the Shrieker
@@ -2276,7 +2288,9 @@ root(ROOTS.Zones, {
 							33533,	-- The Secrets of Gorgrond
 							35556,	-- The Secrets of Gorgrond
 							36632,	-- The Secrets of Gorgrond
+							-- #if AFTER 7.3.5
 							49564,	-- Hero's Call: Gorgrond!
+							-- #endif
 						},
 					}),
 					q(35151, {	-- Your Base, Your Choice

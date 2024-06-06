@@ -3,6 +3,7 @@ local appName, app = ...;
 local contains, containsValue = app.contains, app.containsValue;
 local AssignChildren, CloneReference, ExpandGroupsRecursively, GetRelativeField, GetRelativeValue, MergeObject, SearchForField
 	= app.AssignChildren, app.CloneReference, app.ExpandGroupsRecursively, app.GetRelativeField, app.GetRelativeValue, app.MergeObject, app.SearchForField;
+local GetTimerunningSeasonEventID = app.Modules.Events.GetTimerunningSeason;
 
 -- Global locals
 local ipairs, pairs, tinsert, getmetatable, setmetatable, tostring =
@@ -76,7 +77,19 @@ local CachedMapData = setmetatable({}, {
 			local function MergeIntoHeader(headerID, o)
 				MergeObject(headers[headerID].g, o);
 			end
-
+			
+			-- If there's a timerunning event going on...
+			local timerunningSeasonEventID = GetTimerunningSeasonEventID();
+			if timerunningSeasonEventID and app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
+				local refined = {};
+				for _,j in ipairs(results) do
+					if GetRelativeValue(j, "e") == timerunningSeasonEventID then
+						tinsert(refined, j);
+					end
+				end
+				results = refined;
+			end
+			
 			local header = {};
 			header.mapID = mapID;
 			header.g = groups;

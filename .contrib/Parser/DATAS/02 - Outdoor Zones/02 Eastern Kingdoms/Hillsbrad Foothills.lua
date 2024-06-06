@@ -172,10 +172,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE CATA
 				exploration(295),	-- Western Strand
 				-- #endif
-				--[[
-				exploration(2397),	-- The Great Sea
-				exploration(1057),	-- Thoradin's Wall
-				]]--
 			}),
 			-- #if AFTER CATA
 			n(FACTIONS, {
@@ -200,13 +196,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(667, {	-- Ruins of Southshore, Hillsbrad
 					["cr"] = 47644,	-- Darla Harris <Bat Handler>
 					["coord"] = { 49.0, 66.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(668, {	-- Southpoint Gate, Hillsbrad
 					["cr"] = 47655,	-- Pamela Stutzka <Bat Handler>
 					["coord"] = { 29.0, 64.4, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(14, {	-- Southshore, Hillsbrad
@@ -239,14 +235,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28344,	-- Can You Smell What the Lok'tar is Cooking?
 					},
 					["coord"] = { 49.5, 74.4, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28237, {	-- A Blight Upon the Land
 					["qg"] = 48020,	-- Master Apothecary Lydon
 					["sourceQuest"] = 28235,	-- Burnside Must Fall
 					["coord"] = { 36.5, 58.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Warden Stillwater
@@ -268,7 +264,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28495, {	-- A Fighting Chance
 					["qg"] = 17092,	-- Advisor Duskingdawn
 					["coord"] = { 56.7, 47.4, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Hill Fawn "saved"
@@ -282,7 +278,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28635, {	-- A Haunting in Hillsbrad
 					["qg"] = 49243,	-- Captain Jekyll
 					["coord"] = { 59.9, 63.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- Search Dun Garok for Evidence of a Haunting.
@@ -300,7 +296,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28196,	-- The Battle for Hillsbrad
 					},
 					["coord"] = { 36.1, 61.1, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
@@ -338,13 +334,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48545,	-- High Warlord Cromush
 					["sourceQuest"] = 28400,	-- Heroes of the Horde!
 					["coord"] = { 57.0, 46.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28329, {	-- Angry Scrubbing Bubbles
 					["qg"] = 48319,	-- Angry Blight Slime
 					["coord"] = { 48.8, 71.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/5 Angry Blight Slime slain
@@ -408,7 +404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28733, {	-- Basic Botany
 					["qg"] = 49687,	-- Brazie the Botanist
 					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(527, {	-- Battle of Hillsbrad (1/7)
 					["qg"] = 2215,	-- High Executor Darthalia
@@ -542,7 +538,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 541,	-- Battle of Hillsbrad (6/7)
 					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "removed 3.3.0" },
+					-- #if BEFORE 4.0.3
+					-- #if AFTER 3.3.0
+					["description"] = "This version of the quest is given to players that have not completed the wrath gate yet.",
+					-- #endif
+					-- #endif
+					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
@@ -568,6 +569,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 541,	-- Battle of Hillsbrad (6/7)
 					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					-- #if BEFORE 4.0.3
+					-- #if AFTER 3.3.0
+					["description"] = "This version of the quest is given to players that have completed the wrath gate.",
+					-- #endif
+					-- #endif
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -660,7 +666,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131699, {	-- Headland Belt
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -671,7 +677,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28230,	-- Protocol
 					},
 					["coord"] = { 38.5, 57.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Magistrate Burnside slain
@@ -695,7 +701,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28146, {	-- Coastal Delicacies!
 					["qg"] = 47551,	-- Spider-Handler Sarus
 					["coord"] = { 33.2, 73.6, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Murlocs fed to Hungry Mine Spider
@@ -944,10 +950,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131700, {	-- Phantom Chain Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131701, {	-- Bracers of Deceit
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -971,14 +977,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 47681,	-- Dumass
 					["sourceQuest"] = 28096,	-- Welcome to the Machine
 					["coord"] = { 36.6, 70.1, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28197, {	-- Discretion is Key
 					["qg"] = 47781,	-- Warden Stillwater
 					["sourceQuest"] = 28192,	-- No One Here Gets Out Alive
 					["coord"] = { 36.1, 61.1, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Citizen Wilkes slain
@@ -990,13 +996,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 38.0, 63.0, HILLSBRAD_FOOTHILLS },
 						}),
 						i(65694, {	-- Clerk Whitesteed's Cloak
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(65672, {	-- Crossbow of the Twice-Slain
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(65712, {	-- Citizen Wilkes' Ring
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -1004,7 +1010,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48021,	-- Johnny Awesome
 					["sourceQuest"] = 28209,	-- Freedom for Lydon
 					["coord"] = { 40.2, 59.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Blacksmith Verringtan slain
@@ -1012,16 +1018,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 38.2, 56.4, HILLSBRAD_FOOTHILLS },
 						}),
 						i(65714, {	-- "Jenny's" Gloves
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(65696, {	-- Awesome Boots
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(65674, {	-- Star Pony Leggings
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(131693, {	-- Amazing Chain Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1029,7 +1035,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 206944 },	-- Shovel
 					["sourceQuest"] = 28192,	-- No One Here Gets Out Alive
 					["coord"] = { 39.7, 63.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/15 Human Seedling "saved"
@@ -1039,7 +1045,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(65667, {	-- Shovel of Mercy
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),
@@ -1079,7 +1085,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28620, {	-- Eastpoint Tower
 					["qg"] = 2229,	-- Krusk
 					["coord"] = { 57.6, 46.9, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1130,7 +1136,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				q(509, {	-- Elixir of Agony (1/5)
 					["qg"] = 2216,	-- Apothecary Lydon
+					-- #if BEFORE WRATH
 					["sourceQuest"] = 502,	-- Elixir of Pain (2/2)
+					-- #endif
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1231,7 +1239,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(501, {	-- Elixir of Pain (1/2)
 					["qg"] = 2216,	-- Apothecary Lydon
+					-- #if BEFORE WRATH
 					["sourceQuest"] = 499,	-- Elixir of Suffering (2/2)
+					-- #endif
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1394,13 +1404,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49687,	-- Brazie the Botanist
 					["sourceQuest"] = 28733,	-- Basic Botany
 					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28199, {	-- For Science!
 					["qg"] = 47899,	-- Flesh-Shaper Arnauld
 					["sourceQuest"] = 28192,	-- No One Here Gets Out Alive
 					["coord"] = { 36.3, 60.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Flesh Sample
@@ -1430,7 +1440,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 47900,	-- Master Apothecary Lydon
 					["sourceQuest"] = 28206,	-- Little Girl Lost
 					["coord"] = { 40.3, 59.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lydon's Cage Key
@@ -1438,14 +1448,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 48017,	-- Infected Sludge Guard
 						}),
 						i(65713, {	-- Monstrous Shield
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(65673, {	-- Aberrant Vest
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(131692, {	-- Sludge Guard Mail Vest
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(65695, {	-- Sludge-Caked Throwing Knives
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				-- #if AFTER CATA
@@ -1465,13 +1480,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49687,	-- Brazie the Botanist
 					["sourceQuest"] = 28617,	-- Flower Power
 					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				q(28114, {	-- Glorious Harvest
 					["qg"] = 47432,	-- Apothecary Underhill
 					["sourceQuest"] = 28096,	-- Welcome to the Machine
 					["coord"] = { 29.2, 64.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/60 Creeper Egg
@@ -1491,7 +1506,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131689, {	-- Web Encased Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1515,7 +1530,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28325, {	-- Green Living
 					["qg"] = 2391,	-- Serge Hinott
 					["coord"] = { 49.0, 66.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Used Blight Canister
@@ -1531,7 +1546,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28332, {	-- Helcular's Command
 					["qg"] = 48129,	-- Helcular
 					["coord"] = { 49.1, 66.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/15 Bloodfang Forsaken Hunter slain
@@ -1594,7 +1609,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28331, {	-- Helcular's Rod Giveth...
 					["qg"] = 48129,	-- Helcular
 					["coord"] = { 49.1, 66.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Dark Ranger empowered
@@ -1612,7 +1627,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48503,	-- Kingslayer Orkus <Red Like My Rage>
 					["sourceQuest"] = 28397,	-- They Will Never Expect This...
 					["coord"] = { 25.4, 88.4, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Alliance Battle Plans
@@ -1633,10 +1648,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131696, {	-- Pauldrons of the Hero
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131697, {	-- Gauntlets of the Hero
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1664,7 +1679,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 47554,	-- Captain Keyton
 					["sourceQuest"] = 28111,	-- Trouble at Azurelode
 					["coord"] = { 33.2, 73.5, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Hillsbrad Human Captured
@@ -1685,7 +1700,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131690, {	-- Web Coated Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1810,12 +1825,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(20086, {	-- Dusksteel Throwing Knife [Classic] / Broken Dusksteel Throwing Knife [TBC]
 							["timeline"] = {
-								"added 1.11.1.5462",
-								"removed 2.0.1.5678"
+								ADDED_1_11_1,
+								REMOVED_2_0_1
 							},
 						}),
 						i(25878, {	-- Dusksteel Throwing Knife [TBC]
-							["timeline"] = { "added 2.1.0.6692", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_1_0, REMOVED_5_0_4 },
 						}),
 					},
 				}),
@@ -1824,7 +1839,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48218,	-- Kingslayer Orkus <Red Like My Rage>
 					["sourceQuest"] = 28348,	-- Stormpike Rendezvous
 					["coord"] = { 50.0, 74.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Mudsnout Blossoms
@@ -1844,7 +1859,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131695, {	-- Orkus' Riding Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1852,7 +1867,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49687,	-- Brazie the Botanist
 					["sourceQuest"] = 28747,	-- Someone Setup the Pumpkin Bomb
 					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						i(65689, {	-- Brazie's Plant Light
 							["timeline"] = { ADDED_4_0_3 },
@@ -1861,7 +1876,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131894, {	-- Botanist's Chain Pants
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(66067, {	-- Singing Sunflower (PET!)
 							["timeline"] = { ADDED_4_0_3 },
@@ -1903,7 +1918,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28196,	-- The Battle for Hillsbrad
 					},
 					["coord"] = { 36.1, 61.1, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #endif
@@ -1940,7 +1955,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9435, {	-- Missing Crystals
 					["qg"] = 17218,	-- Huraan
 					["coord"] = { 51.0, 58.7, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["groups"] = {
@@ -1955,7 +1970,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28154, {	-- Muckgill's Flipper or Something...
 					["provider"] = { "i", 63090 },	-- Muckgill's Flipper
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["cr"] = 47759,	-- Muckgill
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -1966,7 +1981,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131691, {	-- Keyton's Mail Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1977,7 +1992,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28096,	-- Welcome to the Machine
 					},
 					["coord"] = { 36.1, 61.1, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if AFTER CATA
@@ -2008,7 +2023,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 47432,	-- Apothecary Underhill
 					["sourceQuest"] = 28096,	-- Welcome to the Machine
 					["coord"] = { 29.2, 64.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Infested Bear slain
@@ -2018,7 +2033,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(28356, {	-- Preemptive Strike
 					["provider"] = { "i", 63686 },	-- Daggerspine Attack Plans
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["crs"] = {
 						2370,	-- Daggerspine Screamer
 						2369,	-- Daggerspine Shorehunter
@@ -2113,7 +2128,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48020,	-- Master Apothecary Lydon
 					["sourceQuest"] = 28209,	-- Freedom for Lydon
 					["coord"] = { 40.2, 59.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 The Ray-Getz-Kalaba Monstrosity slain
@@ -2136,7 +2151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9425, {	-- Report to Tarren Mill
 					["qg"] = 16287,	-- Ambassador Sunsorrow
 					["coord"] = { 57.6, 90.8, UNDERCITY },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { BLOODELF },
 				}),
 				q(542, {	-- Return to Milton
@@ -2201,7 +2216,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131703, {	-- Foreboding Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2209,7 +2224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49687,	-- Brazie the Botanist
 					["sourceQuest"] = 28744,	-- Ghouls Hate My Grains
 					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				{	-- Soothing Turtle Bisque
 					["allianceQuestData"] = q(555, {	-- Soothing Turtle Bisque (A)
@@ -2373,7 +2388,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131702, {	-- Nuke Resistant Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2381,7 +2396,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48218,	-- Kingslayer Orkus <Red Like My Rage>
 					["sourceQuest"] = 28345,	-- *Gurgle* HELP! *Gurgle*
 					["coord"] = { 50.0, 74.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if AFTER CATA
@@ -2420,7 +2435,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2391,	-- Serge Hinott
 					["sourceQuest"] = 28251,	-- Trouble at Southshore
 					["coord"] = { 49.0, 66.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/250 Blight Sample taken
@@ -2486,7 +2501,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49687,	-- Brazie the Botanist
 					["sourceQuest"] = 28748,	-- Lawn of the Dead
 					["coord"] = { 33.5, 49.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["isDaily"] = true,
 				}),
 				q(28355, {	-- Terrible Little Creatures
@@ -2495,7 +2510,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2373,	-- Mudsnout Shaman
 					},
 					["coord"] = { 58.5, 73.9, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/10 Mudsnout Gnoll or Shaman slain
@@ -2509,7 +2524,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28196, {	-- The Battle for Hillsbrad
 					["provider"] = { "i", 63250 },	-- The Battle for Hillsbrad
 					["coord"] = { 37.6, 63.7, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["cr"] = 47789,	-- Clerk Horrace Whitesteed
 					["races"] = HORDE_ONLY,
 					-- TODO: does this always drop or is it only available after "No One Here Gets Out Alive" ?
@@ -2518,7 +2533,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(495, {	-- The Crown of Will (1/5) (Alterac Mountains)
 					["qg"] = 2227,	-- Sharlindra
 					["coord"] = { 57.60, 93.84, UNDERCITY },
-					["timeline"] = { "removed 5.0.2" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2714,7 +2729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131698, {	-- Bel'varil's Chain Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2778,7 +2793,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48218,	-- Kingslayer Orkus <Red Like My Rage>
 					["sourceQuest"] = 28354,	-- Kasha Will Fly Again
 					["coord"] = { 50.0, 74.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if AFTER CATA
@@ -2802,7 +2817,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48470,	-- Kingslayer Orkus <Red Like My Rage>
 					["sourceQuest"] = 28375,	-- The Road to Purgation
 					["coord"] = { 29.2, 83.8, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/8 Stormpike Dwarf slain
@@ -2819,7 +2834,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28144, {	-- Thieving Little Monsters!
 					["qg"] = 47554,	-- Captain Keyton
 					["coord"] = { 33.2, 73.5, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Forsaken Camp "Supplies"
@@ -2841,7 +2856,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28330, {	-- Trail of Filth
 					["sourceQuest"] = 28329,	-- Angry Scrubbing Bubbles
 					["coord"] = { 48.8, 71.2, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Chet the Slime-Breeder slain
@@ -2858,7 +2873,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131694, {	-- Slime Resistant Bracer
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2866,7 +2881,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2215,	-- High Executor Darthalia
 					["sourceQuest"] = 28096,	-- Welcome to the Machine
 					["coord"] = { 29.2, 63.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -2874,7 +2889,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 47900,	-- Master Apothecary Lydon
 					["sourceQuest"] = 28237,	-- A Blight Upon the Land
 					["coord"] = { 36.6, 61.1, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -2885,7 +2900,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28144,	-- Thieving Little Monsters
 					},
 					["coord"] = { 33.2, 73.5, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -2959,7 +2974,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 28089,	-- Warchief's Command: Hillsbrad Foothills!
 					["coord"] = { 29.2, 63.3, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- First Quest Dispensed
@@ -2981,7 +2996,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131688, {	-- Winning Mail Gloves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3009,7 +3024,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(28485, {	-- Yetimus the Yeti Lord
 					["qg"] = 2418,	-- Deathguard Samsa
 					["coord"] = { 57.1, 45.5, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Yetimus' Twisted Horn
@@ -3098,7 +3113,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(47010, {	-- Indigos
 					["coord"] = { 31.6, 40.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				-- #if AFTER CATA
 				n(14281, {	-- Jimmy the Bleeder (Alterac Mountains)
@@ -3207,7 +3222,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if AFTER CATA
 						i(3053, {	-- Humbert's Chestpiece
-							["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },	-- Maybe was never removed. Not sure. Pre Cata source is Dun Garok Mountaineer (Zone Drop).
+							["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },	-- Maybe was never removed. Not sure. Pre Cata source is Dun Garok Mountaineer (Zone Drop).
 						}),
 						-- #endif
 					},
@@ -3245,7 +3260,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20971, {	-- Design: Heavy Iron Knuckles
-							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },	-- Learned by trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(5788, {	-- Pattern: Thick Murloc Armor (RECIPE!)
@@ -3284,7 +3299,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(47712, {	-- Harland Waldek <Weaponsmith>
 					["coord"] = { 28.8, 64.0, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4817, {	-- Blessed Claymore
@@ -3378,6 +3393,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				n(2357, {	-- Merideth Carlson <Horse Breeder>
 					["coord"] = { 52.2, 55.4, HILLSBRAD_FOOTHILLS },
+
+					-- Available to Humans without faction requirements.
+					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. HUMAN .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -3396,15 +3420,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring
-							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },	-- Learned by trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(20971, {	-- Design: Heavy Iron Knuckles
-							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },	-- Learned by trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
-							["timeline"] = { "removed 4.1.0" },	-- Learned by trainer
+							["timeline"] = { REMOVED_4_1_0 },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						-- #if BEFORE 4.0.3
@@ -3511,7 +3535,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { ROGUE },
 					["groups"] = {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "added 1.3.0", REMOVED_6_0_2, ADDED_7_1_0 },
+							["timeline"] = { ADDED_1_3_0, REMOVED_6_0_2, ADDED_7_1_0 },
 						}),
 					},
 				}),
@@ -3612,20 +3636,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 36.91, 76.14, HILLSBRAD_FOOTHILLS },
 						{ 54.43, 82.01, HILLSBRAD_FOOTHILLS },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 				})),
 			}),
 			-- #endif
+			-- #if NOT ANYCLASSIC
+			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(207279, {	-- Warchief's Command Board
 				["coords"] = {
 					{ 56.6, 47.0, HILLSBRAD_FOOTHILLS },
 					{ 59.9, 63.5, HILLSBRAD_FOOTHILLS },
 				},
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 				["races"] = HORDE_ONLY,
 			}),
+			-- #endif
 			n(ZONE_DROPS, {
 				-- #if AFTER CATA
 				i(3711, {	-- Belamoore's Research Journal
@@ -3633,7 +3660,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2415,	-- Warden Belamoore
 				}),
 				i(8491, {	-- Black Tabby Cat (PET!)
-					["timeline"] = { "added 1.11.1.5462" },
+					["timeline"] = { ADDED_1_11_1 },
 				}),
 				i(1280, {	-- Cloaked Hood
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -3712,7 +3739,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if BEFORE CATA
 				i(3053, {	-- Humbert's Chestpiece
-					["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },	-- Maybe was never removed. Not sure. Current retail source is Tamra Stormpike (Rare).
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },	-- Maybe was never removed. Not sure. Current retail source is Tamra Stormpike (Rare).
 					["crs"] = {
 						2344,	-- Dun Garok Mountaineer
 						14275,	-- Tamra Stormpike

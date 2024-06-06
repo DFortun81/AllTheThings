@@ -23,7 +23,7 @@ root(ROOTS.Zones, {
 			["lore"] = "A true enigma, the Timeless Isle has drifted in and out of Pandaria's mists for thousands of years. Here, time has no meaning, and the sun neither rises nor sets. Its unique characteristics have brought the Isle under the scrutiny of the bronze dragonflight, pandaren explorers, and the black dragon Wrathion.",
 			["icon"] = "Interface\\Icons\\inv_pet_scorchedstone",
 			["maps"] = { 555 },	-- Cavern of Lost Spirits
-			["timeline"] = { "added 5.4.0" },
+			["timeline"] = { ADDED_5_4_0 },
 			["groups"] = {
 				petbattle(m(571, {	-- Celestial Tournament
 					["icon"] = "Interface/Icons/inv_misc_trinketpanda_07",
@@ -290,6 +290,7 @@ root(ROOTS.Zones, {
 						}),
 						crit(23976, {	-- Cranegnasher
 							["_quests"] = { 32967 },
+							["_noautomation"] = true,	-- blizz dat aputs this for NPC 73854 which must be fake...
 						}),
 						crit(23977, {	-- Rattleskew
 							["_npcs"] = { 72048 },
@@ -1675,6 +1676,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["coords"] = {
 							{ 43.8, 43.8, TIMELESS_ISLE },
+							{ 41.1, 37.6, TIMELESS_ISLE },
 							{ 35.2, 41.8, TIMELESS_ISLE },
 							{ 29.6, 45.8, TIMELESS_ISLE },
 							{ 31.6, 58.8, TIMELESS_ISLE },

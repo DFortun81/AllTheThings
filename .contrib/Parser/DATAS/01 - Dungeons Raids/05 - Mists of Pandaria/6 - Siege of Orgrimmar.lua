@@ -58,7 +58,7 @@ local OLD_DIFFICULTIES_BUBBLE_DOWN_FILTER = function(t)
 	return t.itemID or t.ignoreBonus or t.achievementID;
 end
 local OLD_DIFFICULTIES_BUBBLE_DOWN_CONTENTS = {
-	["timeline"] = { "added 5.4.0", "removed 6.0.2" },
+	["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2 },
 };
 local function oldD(id, groups)
 	return bubbleDownFiltered(OLD_DIFFICULTIES_BUBBLE_DOWN_CONTENTS, OLD_DIFFICULTIES_BUBBLE_DOWN_FILTER, n(id, {
@@ -2143,7 +2143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 						i(112747),	-- Laser-Slice Signet
 						i(112729),	-- Juggernaut's Focusing Crystal
 						i(140783, {	-- Predictive Combat Operations Databank
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					})),
 					cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
@@ -2544,7 +2544,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
 					i(140783, {	-- Predictive Combat Operations Databank
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
@@ -2951,7 +2951,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
 					i(140783, {	-- Predictive Combat Operations Databank
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
@@ -3361,7 +3361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, {
 					i(112747),	-- Laser-Slice Signet
 					i(112729),	-- Juggernaut's Focusing Crystal
 					i(140783, {	-- Predictive Combat Operations Databank
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				})),
 				cr(71859, e(856, {	-- Kor'kron Dark Shaman (Earthbreaker Haromm)
@@ -3615,20 +3615,5 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.LEGION, {
 		q(42509),	-- Iron Juggernaut for Hunters attempting/receiving "Pile of Juggernaut Parts" (137654)
 		q(42538),	-- Siegecrafter Blackfuse for Hunters attempting/receiving "Blackfuse's Power Core" (138097)
-	}),
-});
-
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.MOP, {
-		m(556, {	-- Siege of Orgrimmar
-			i(104986),	-- Unrepentant Heels
-			i(102312),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Agi DPS Trinket (5)
-			i(102313),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Hit Trinket (5)
-			i(102314),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Versatility Trinket (5)
-			i(102315),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Str DPS Trinket (5)
-			i(102316),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Tank Trinket (5)
-			i(103897),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Str Tank Ring
-			i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
-		}),
 	}),
 });

@@ -1,6 +1,6 @@
 -- #if ANYCLASSIC
 profession(ENGINEERING, {
-	prof(20219, {	-- Gnomish Engineering
+	prof(GNOMISH_ENGINEERING, {
 		["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
 		["sourceQuests"] = {
 			3641,	-- Show Your Work
@@ -15,7 +15,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					applyclassicphase(WRATH_PHASE_FOUR, {
 						["name"] = "Iceblade Arrow",
-						["timeline"] = { ADDED_3_3_0, "deleted 4.0.1" },
+						["timeline"] = { ADDED_3_3_0, DELETED_4_0_1 },
 						["recipeID"] = 72953,
 					}),
 				},
@@ -44,7 +44,7 @@ profession(ENGINEERING, {
 					},
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Gnomish Flame Turret",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30568,
 					}),
 					{
@@ -66,7 +66,7 @@ profession(ENGINEERING, {
 					},
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Gnomish Poultryizer",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30569,
 					}),
 					{
@@ -86,7 +86,7 @@ profession(ENGINEERING, {
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Nigh-Invulnerability Belt",
-						["timeline"] = { "added 2.1.0.6655" },
+						["timeline"] = { ADDED_2_1_0 },
 						["recipeID"] = 30570,
 					}),
 					{
@@ -95,7 +95,7 @@ profession(ENGINEERING, {
 					},
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Ultrasafe Transporter - Toshley's Station",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 36955,
 					}),
 					{
@@ -110,7 +110,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Gnomish Battle Goggles",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30575,
 					}),
 					{
@@ -119,7 +119,7 @@ profession(ENGINEERING, {
 					},
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Gnomish Power Goggles",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30574,
 					}),
 					{
@@ -136,7 +136,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					{
 						["name"] = "Geosynchronous World Spinner",
-						["timeline"] = { "added 5.0.1.15699" },
+						["timeline"] = { ADDED_5_0_4 },
 						["recipeID"] = 127139,
 					},
 				},

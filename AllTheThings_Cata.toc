@@ -8,7 +8,7 @@
 ## X-Interface: 40400
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
-## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsAD, AllTheThingsSettings, AllTheThingsAuctionData, AllTheThingsDebugData, ATTClassicSettings, ATTClassicAuctionData
+## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsAD, AllTheThingsSettings, AllTheThingsAuctionData, AllTheThingsDebugData, ATTClassicSettings, ATTClassicAuctionData, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter, ATTClassicSettingsPerCharacter
 ## AddonCompartmentFunc: AllTheThings_MinimapButtonOnClick
 ## AddonCompartmentFuncOnEnter: AllTheThings_MinimapButtonOnEnter
@@ -22,7 +22,7 @@ db\RaceDB.lua
 lib\Debugging.lua
 lib\Print.lua
 lib\EventRegistration.lua
-# lib\Runner.lua
+lib\Runner.lua
 lib\Colors.lua
 lib\Sort.lua
 lib\Table.lua
@@ -41,15 +41,15 @@ lib\Audio.lua
 # Load localization modules
 locales\Default Locale.lua
 # locales\en.lua
-# locales\es.lua
-# locales\de.lua
-# locales\fr.lua
-# locales\it.lua
-# locales\ko.lua
-# locales\pt.lua
-# locales\ru.lua
-# locales\cn.lua
 classic\locales.lua
+locales\es.lua
+locales\de.lua
+locales\fr.lua
+locales\it.lua
+locales\ko.lua
+locales\pt.lua
+locales\ru.lua
+locales\cn.lua
 
 # Search Cache
 src\Cache.lua
@@ -72,6 +72,7 @@ db\Cata\LocalizationDB.lua
 # db\Cata\en_auto.lua
 # db\Cata\ReagentsDB.lua
 db\Presets.lua
+db\AccountWideQuestsDB.lua
 
 # Load object class templates
 src\Classes\base.lua
@@ -98,6 +99,10 @@ src\Classes\Title.lua
 src\Classes\Transmog.lua
 # src\Classes\CharacterUnlock.lua
 
+# Item Sub-Classes
+src\Classes\Toys.lua
+#src\Classes\Ensembles.lua
+
 # Expansion specific source files
 src\Expansions\Warlords.lua
 src\Expansions\Legion.lua
@@ -114,9 +119,6 @@ classic\ATT-Classic.lua
 src\UI\Game Tooltip.lua
 src\UI\Minimap Button.lua
 src\UI\World Map Button.lua
-
-# Once Item Class is added above, move this there.
-src\Classes\Toys.lua
 
 # Window Logic Overhaul
 src\UI\Shared Window Logic.lua

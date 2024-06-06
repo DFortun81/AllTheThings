@@ -5,7 +5,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 	applyclassicphase(CATA_PHASE_ONE, inst(65, {	-- Throne of the Tides
 		["mapID"] = 322,
 		["maps"] = { 323 },
-		["coord"] = { 71.00, 29.00, 204 },	-- Abyssal Depths, Vashj'ir
+		["coord"] = { 71.00, 29.00, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
 		["groups"] = {
 			n(QUESTS, {
 				q(28834, {	-- Rescue the Earthspeaker!

@@ -163,6 +163,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60585),	-- Spriggan Riot
 			q(60476, {	-- Spriggan Size Me!
 				["g"] = {
+					o(352182, {	-- Spriggan-Sized Polearm
+						i(178908),	-- Spriggan-Sized Polearm (QI!)
+					}),
+					o(352181, {	-- Spriggan-Sized Wand
+						i(178907),	-- Spriggan-Sized Wand (QI!)
+					}),
+					i(178909),	-- Spriggan-Sized Staff (QI!)
 					i(178903),	-- Spriggan-Sized Weaponry (QI!)
 				},
 			}),

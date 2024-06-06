@@ -43,7 +43,7 @@ local OnTooltipForMaghar = [[function(t, tooltipInfo)
 end]];
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(NAGRAND, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(NAGRAND, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Nagrand is a peaceful lush zone in Outland with grassy areas and floating islands in the sky. It is home to the Kurenai and Mag'har factions. The Horde especially have an interesting time because the final questchain covers Thrall and his true identity. Other sidequests involve slaughtering more animals for Hemet Nesingwary and learning about demon hunters and fel dangers.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_nagrand_01",
@@ -377,11 +377,6 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				petbattles({
-					n(66552, {	-- Narrok <Master Pet Tamer>
-						["coord"] = { 61.0, 49.4, NAGRAND },
-					}),
-				}),
 				n(QUESTS, {
 					q(11042, {	-- A Mystifying Vision
 						["qg"] = 23268,	-- Seer Jovar
@@ -690,7 +685,7 @@ root(ROOTS.Zones, {
 					}),
 					q(10212, {	-- Hero of the Mag'har
 						["qg"] = 4949,	-- Thrall
-						["timeline"] = { "removed 4.0.1.13287" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(28173),	-- Mag'hari Huntsman's Leggings
@@ -700,6 +695,11 @@ root(ROOTS.Zones, {
 							i(28168),	-- Insignia of the Mag'hari Hero
 						},
 					}),
+					heroscall(q(39197, {	-- Hero's Call: Nagrand! (Outland)
+						["timeline"] = { ADDED_6_2_0 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 64,
+					})),
 					q(10109, {	-- I Must Have Them!
 						["qg"] = 19035,	-- Wazat
 						["coord"] = { 61.6, 67.0, NAGRAND },
@@ -791,6 +791,9 @@ root(ROOTS.Zones, {
 					}),
 					q(10476, {	-- Fierce Enemies
 						["qg"] = 18408,	-- Warden Moi'bff Jill
+						-- #if AFTER 6.2.0
+						["sourceQuest"] = 39197,	-- Hero's Call: Nagrand! (Outland)
+						-- #endif
 						["coord"] = { 54.8, 70.8, NAGRAND },
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 						["races"] = ALLIANCE_ONLY,
@@ -969,31 +972,24 @@ root(ROOTS.Zones, {
 							i(25565),	-- Spaulders of the Ring
 						},
 					}),
-					q(9871, {	-- Murkblood Invaders (A)
-						["provider"] = { "i", 24559 },	-- Murkblood Invasion Plans (Alliance Version)
+					{
+						["allianceQuestData"] = q(9871, {	-- Murkblood Invaders (A)
+							["provider"] = { "i", 24559 },	-- Murkblood Invasion Plans (QI!)
+						}),
+						["hordeQuestData"] = q(9872, {	-- Murkblood Invaders (H)
+							["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (QI!)
+						}),
 						["coord"] = { 33.9, 58.0, NAGRAND },
 						["crs"] = { 18238 },	-- Murkblood Invader
-						["races"] = ALLIANCE_ONLY,
 						-- #if AFTER 9.0.2
 						-- confirmed on a lvl 53, no party sync
 						-- ["lockCriteria"] = { 1, "lvl", 50 },
 						-- #endif
+						-- Shadowbrooks - Discord report that evokers can get the quest at level 62?
 						-- #if AFTER 10.0.2
-						["lockCriteria"] = { 1, "lvl", 60 },	-- Seems level-locked again in DF
+						-- ["lockCriteria"] = { 1, "lvl", 60 },	-- Seems level-locked again in DF
 						-- #endif
-					}),
-					q(9872, {	-- Murkblood Invaders (H)
-						["provider"] = { "i", 24558 },	-- Murkblood Invasion Plans (Horde Version)
-						["coord"] = { 33.9, 58.0, NAGRAND },
-						["crs"] = { 18238 },	-- Murkblood Invader
-						["races"] = HORDE_ONLY,
-						-- #if AFTER 9.0.2
-						-- ["lockCriteria"] = { 1, "lvl", 50 },
-						-- #endif
-						-- #if AFTER 10.0.2
-						["lockCriteria"] = { 1, "lvl", 60 },	-- Seems level-locked again in DF
-						-- #endif
-					}),
+					},
 					q(9867, {	-- Murkblood Leaders..
 						["qg"] = 18068,	-- Farseer Margadesh <The Lightning Sons>
 						["coord"] = { 54.6, 39.8, NAGRAND },
@@ -1225,7 +1221,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10988,	-- The Raven Stones
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
@@ -1246,7 +1242,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							9797,	-- Reinforcements for Garadar
 							-- #if AFTER 6.2.0.19953
-							39196,	-- Warchief's Command: Nagrand!
+							39196,	-- Warchief's Command: Nagrand! (Outland)
 							-- #endif
 						},
 						["coord"] = { 55.6, 37.6, NAGRAND },
@@ -1298,7 +1294,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10987,	-- To Catch A Sparrowhawk
 						["coord"] = { 20.6, 35.7, NAGRAND },
 						["maps"] = { TEROKKAR_FOREST },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32315, 1 },	-- Cenarion Sparrowhawk Whistle (Provided)
@@ -1417,16 +1413,16 @@ root(ROOTS.Zones, {
 							i(25639),	-- Hemet's Elekk Gun
 							-- #if BEFORE MOP
 							i(29211, {	-- Fitz's Throwing Axe
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(25644, {	-- Blessed Book of Nagrand
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(25643, {	-- Harold's Rejuvenating Broach
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(25645, {	-- Totem of the Plains
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -1455,14 +1451,14 @@ root(ROOTS.Zones, {
 					q(10175, {	-- Thrall, Son of Durotan
 						["qg"] = 18141,	-- Greatmother Geyah
 						["sourceQuest"] = 10172,	-- There Is No Hope
-						["timeline"] = { "removed 4.0.1.13287" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["races"] = HORDE_ONLY,
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SWIFTFLIGHTFORM, q(10987, {	-- To Catch A Sparrowhawk
 						["qg"] = 22981,	-- Watcher Elaira
 						["sourceQuest"] = 10986,	-- Eyes in the Sky
 						["coord"] = { 20.6, 35.7, NAGRAND },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32321, 1 },	-- Sparrowhawk Net (Provided)
@@ -1547,6 +1543,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.2, 36.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 					}),
+					warchiefscommand(q(39196, {	-- Warchief's Command: Nagrand! (Outland)
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(10101, {	-- When Spirits Speak
 						["qg"] = 18687,	-- Mother Kashur
 						["sourceQuest"] = 10085,	-- A Visit With The Ancestors
@@ -1632,7 +1633,7 @@ root(ROOTS.Zones, {
 				-- #if AFTER LEGION
 				n(SPECIAL, {
 					n(121086, {	-- Shawn
-						["timeline"] = { "added 7.2.0.23530" },
+						["timeline"] = { ADDED_7_2_0 },
 						["coord"] = { 21.6, 53.4, NAGRAND },
 						["groups"] = {
 							i(147433),	-- Glowing Diamond Ring
@@ -1658,7 +1659,7 @@ root(ROOTS.Zones, {
 							}),
 							-- #if BEFORE MOP
 							i(30599, {	-- Avenging Blades
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(30597, {	-- Halaani Claymore
@@ -1685,10 +1686,10 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(30612, {	-- Halaani Grimshot
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(30611, {	-- Halaani Razorshaft
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),
@@ -1721,7 +1722,7 @@ root(ROOTS.Zones, {
 							}),
 							-- #if BEFORE MOP
 							i(30568, {	-- The Sharp Cookie
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(28915, {	-- Dark Riding Talbuk (MOUNT!)
@@ -1740,30 +1741,30 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					n(18072, {	-- Elementalist Sharvak <The Earthen Ring>
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 						["coord"] = { 60.6, 22.1, NAGRAND },
 						["groups"] = {
 							i(136934, {	-- Raging Elemental Stone (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 							i(136935, {	-- Tadpole Cloudseeder (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 							i(141059, {	-- Technique: Glyph of Flickering (RECIPE!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 								["requireSkill"] = INSCRIPTION,
 							}),
 							i(136938, {	-- Tome of Hex: Compy (CI!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(136937, {	-- Vol'jin's Serpent Totem (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 							i(138490, {	-- Waterspeaker's Totem (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 								["classes"] = { SHAMAN },
 							}),
 						},
@@ -1831,7 +1832,7 @@ root(ROOTS.Zones, {
 							i(23150),	-- Design: Thick Golden Draenite [TBC] / Design: Subtle Golden Draenite [Cata+]
 							-- #endif
 							i(28274),	-- Formula: Enchant Cloak - PvP Power / TBC: Formula: Enchant Cloak - Spell Penetration (RECIPE!)
-							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={"added 2.1.0"}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
+							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={ADDED_2_1_0}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
@@ -1845,9 +1846,9 @@ root(ROOTS.Zones, {
 							i(25733),	-- Pattern: Fel Leather Boots (RECIPE!)
 							i(25732),	-- Pattern: Fel Leather Gloves (RECIPE!)
 							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
-							i(23874),	-- Schematic: Elemental Seaforium Charge
+							i(23874),	-- Schematic: Elemental Seaforium Charge (RECIPE!)
 							i(29118, {	-- Smuggler's Ammo Pouch
-								["timeline"] = { "removed 4.0.1.12941" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29117),	-- Stormspire Vest
 						},
@@ -1859,7 +1860,7 @@ root(ROOTS.Zones, {
 							i(29145),	-- Band of Ancestral Spirits
 							i(29139),	-- Ceremonial Cover
 							i(29143, {	-- Clefthoof Hide Quiver
-								["timeline"] = { "removed 4.0.1.12941" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29135),	-- Earthcaller's Headdress
 							i(29137),	-- Hellscream's Will
@@ -2099,10 +2100,10 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(30612, {	-- Halaani Grimshot
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(30611, {	-- Halaani Razorshaft
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),
@@ -2142,7 +2143,7 @@ root(ROOTS.Zones, {
 							i(31836),	-- White Riding Talbuk (A) (MOUNT!)
 							i(29231),	-- White War Talbuk (A) (MOUNT!)
 							i(29144, {	-- Worg Hide Quiver
-								["timeline"] = { "removed 4.0.1.12941" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),

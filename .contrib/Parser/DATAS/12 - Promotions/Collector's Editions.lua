@@ -247,13 +247,13 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 						["timeline"] = { ADDED_3_0_2 },
 					}),
 					i(13584, {	-- Mini Diablo (PET!)
-						["timeline"] = { "added 1.11.1.5462" },
+						["timeline"] = { ADDED_1_11_1 },
 					}),
 					i(13583, {	-- Panda Cub (PET!)
-						["timeline"] = { "added 1.11.1.5462" },
+						["timeline"] = { ADDED_1_11_1 },
 					}),
 					i(13582, {	-- Zergling (PET!)
-						["timeline"] = { "added 1.11.1.5462" },
+						["timeline"] = { ADDED_1_11_1 },
 					}),
 				},
 			}),
@@ -324,7 +324,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, "removed 3.4.3.51943" } }, {
+	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_2_5_4_A, REMOVED_4_0_1 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Heroic Upgrade Edition of Wrath of the Lich King Classic.",
 			["questID"] = 70449,	-- Elite Northrend Expedition Supplies [Heroic]
@@ -365,7 +365,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		}),
 	})),
 	-- #else
-	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.1.7.51972" } }, {
+	n(WOTLK_CLASSIC_NORTHREND_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
 		n(EPIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",
 			["g"] = {
@@ -382,16 +382,64 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 	-- #if ANYCLASSIC
-	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2, "removed 4.0.1" } }, {
+	n(CATA_CLASSIC_BLAZING_UPGRADE, bubbleDownSelf({ ["timeline"] = { ADDED_3_4_0, REMOVED_4_4_0 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Blazing Heroic Edition.",
 			["g"] = {
 				mount(423869),	-- Avatar of Flame (MOUNT!)
 				i(209945),	-- Lil' Wrathion (PET!)
-
-				-- Later
-				-- Twilight's Hammer Regalia Transmog Set
-				-- Town-In-A-Box Starter Set Toy
+				
+				-- Twilight's Hammer Regalia Transmog Set (Added with Cataclysm)
+				i(224380, {	-- Twilight's Hammer Regalia Helmet
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220352,
+					["f"] = CLOTH,
+				}),
+				i(224383, {	-- Twilight's Hammer Regalia Shoulders
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220355,
+					["f"] = CLOTH,
+				}),
+				i(224382, {	-- Twilight's Hammer Regalia Robe
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220354,
+					["f"] = CLOTH,
+				}),
+				i(224378, {	-- Twilight's Hammer Regalia Tunic
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220350,
+					["f"] = CLOTH,
+				}),
+				i(224377, {	-- Twilight's Hammer Regalia Bracer
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220349,
+					["f"] = CLOTH,
+				}),
+				i(224379, {	-- Twilight's Hammer Regalia Gloves
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220351,
+					["f"] = CLOTH,
+				}),
+				i(224375, {	-- Twilight's Hammer Regalia Belt
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220347,
+					["f"] = CLOTH,
+				}),
+				i(224381, {	-- Twilight's Hammer Regalia Kilt
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220353,
+					["f"] = CLOTH,
+				}),
+				i(224376, {	-- Twilight's Hammer Regalia Boots
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+					["sourceID"] = 220348,
+					["f"] = CLOTH,
+				}),
+				
+				-- Town-In-A-Box Starter Set Toy (Added with Cataclysm)
+				i(216893, {	-- Goblin Town-in-a-Box
+					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
+				}),
 			},
 		}),
 	})),
@@ -458,6 +506,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 						["timeline"] = { ADDED_8_3_7 },	-- Still availble to players that have the mount, able to share quest with others etc.
 						["description"] = "You need to purchase Shadowlands Heroic Edition to spawn the questgiver from the guiding orb on the back of Ensorcelled Everwyrm.",
 						["groups"] = {
+							i(172954),	-- Echo of Mortality (QI!)
 							i(172075),	-- Eternal Traveler's Guise
 							i(172076),	-- Eternal Traveler's Spaulders
 							i(172078),	-- Eternal Traveler's Cloak
@@ -481,7 +530,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			},
 		}),
 	})),
-	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.1.7.51972" } }, {
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_1_7 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",
 			["g"] = {
@@ -493,7 +542,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 				mount(359843),	-- Tangled Dreamweaver (MOUNT!)
 				ach(17314),	-- Heroic Edition: Tangled Dreamweaver
 				ach(17305, {	-- Trading Post: Dragonflight
-					["timeline"] = { ADDED_10_0_5, "removed 10.2.0" },
+					["timeline"] = { ADDED_10_0_5, REMOVED_10_2_0 },
 				}),
 			},
 		}),
@@ -510,7 +559,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			},
 		}),
 	})),
-	n(THE_WAR_WITHIN_TEMPORARY, bubbleDownSelf({ ["timeline"] = { "added 10.1.7.51972" } }, {
+	n(THE_WAR_WITHIN_TEMPORARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		n(HEROIC_EDITION, {
 			["description"] = "These rewards were made available to anyone who purchased The War Within Heroic Edition.",
 			["g"] = {
@@ -679,7 +728,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			}),
 		},
 	})),
-	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({ ["timeline"] = { "added 5.4.2.17585" } }, {
+	n(DIABLO_III_REAPER_OF_SOULS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_2 } }, {
 		["description"] = "These rewards are available to anyone who purchases Diablo 3: Reaper of Souls Collection.",
 		["groups"] = {
 			ach(8795),	-- Collector's Edition: Treasure Goblin
@@ -729,15 +778,3 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 })));
-
--- #if AFTER 4.3.0
--- #if BEFORE 5.0.4
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.CATA, {
-		i(76062, {	-- Fetish Shaman (PET!)
-			["timeline"] = { "created 4.3.0", ADDED_5_0_4 },
-		}),
-	}),
-});
--- #endif
--- #endif

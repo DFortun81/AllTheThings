@@ -211,7 +211,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["creatureID"] = 27654,	-- Drakos the Interrogator
 					["groups"] = {
 						i(157562, {	-- Rod of Aggressive Questioning
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(36944),	-- Lifeblade of Belgaristrasz
 						-- #if AFTER 7.3.5
@@ -311,7 +311,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						}),
 					}),
 					-- #endif
@@ -319,7 +319,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["creatureID"] = 27654,	-- Drakos the Interrogator
 						["groups"] = {
 							i(157562, {	-- Rod of Aggressive Questioning
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							-- #if AFTER 7.3.5
 							i(36944),	-- Lifeblade of Belgaristrasz (7.3.5 - Used to be only Normal Mode)

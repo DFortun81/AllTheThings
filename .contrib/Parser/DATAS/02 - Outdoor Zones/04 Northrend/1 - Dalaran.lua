@@ -3,23 +3,23 @@
 ---------------------------------------------------
 local EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS = {
 	emot(1, i(44711, {	-- Argent Crusade Commendation Badge
-		["timeline"] = { "deleted 6.0.2" },
+		["timeline"] = { DELETED_6_0_2 },
 	})),
 	emot(1, i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-		["timeline"] = { "deleted 6.0.2" },
+		["timeline"] = { DELETED_6_0_2 },
 	})),
 	emot(1, i(43950, {	-- Kirin Tor Commendation Badge
-		["timeline"] = { "deleted 6.0.2" },
+		["timeline"] = { DELETED_6_0_2 },
 	})),
 	emot(1, i(49702, {	-- Sons of Hodir Commendation Badge
-		["timeline"] = { "deleted 6.0.2" },
+		["timeline"] = { DELETED_6_0_2 },
 	})),
 	emot(1, i(44710, {	-- Wyrmrest Commendation Badge
-		["timeline"] = { "deleted 6.0.2" },
+		["timeline"] = { DELETED_6_0_2 },
 	})),
 	emot(35, i(47732)),	-- Band of the Invoker
 	emot(25, i(47660, {	-- Blades of the Sable Cross
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emot(35, i(47729)),	-- Bloodshed Band
 	emot(25, i(47658)),	-- Brimstone Igniter
@@ -109,40 +109,40 @@ local EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS = {
 	emot(50, i(47735)),	-- Glyph of Indomitability
 	emot(35, i(47733)),	-- Heartmender Circle
 	emoc(25, i(47671, {	-- Idol of Flaring Growth
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47670, {	-- Idol of Lunar Fury
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47668, {	-- Idol of Mutilation
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47664, {	-- Libram of Defiance
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47661, {	-- Libram of Valiance
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47662, {	-- Libram of Veracity
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emot(50, i(47734)),	-- Mark of Supremacy
 	emot(50, i(48722)),	-- Shard of the Crystal Heart
 	emoc(25, i(47672, {	-- Sigil of Insolence
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47673, {	-- Sigil of Virulence
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emot(50, i(48724)),	-- Talisman of Resurgence
 	emoc(25, i(47665, {	-- Totem of Calming Tides
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47666, {	-- Totem of Electrifying Wind
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(25, i(47667, {	-- Totem of Quaking Earth
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 };
 local EMBLEM_OF_TRIUMPH_QUARTERMASTER_A_GROUPS = appendGroups(EMBLEM_OF_TRIUMPH_QUARTERMASTER_GROUPS, {
@@ -288,13 +288,13 @@ local EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS = {
 	emoc(28, i(45836)),	-- Gloves of Unerring Aim
 	emoc(28, i(45839)),	-- Grips of the Secret Grove
 	emoc(19, i(45509, {	-- Idol of the Corruptor
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45270, {	-- Idol of the Crying Wind
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(46138, {	-- Idol of the Flourishing Life
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(39, i(45844)),	-- Leggings of the Tireless Sentry
 	emoc(39, i(45845)),	-- Leggings of the Weary Mystic
@@ -303,33 +303,33 @@ local EMBLEM_OF_CONQUEST_QUARTERMASTER_GROUPS = {
 	emoc(39, i(45841)),	-- Legplates of the Violet Champion
 	emoc(39, i(45848)),	-- Legwraps of the Master Conjurer
 	emoc(19, i(45510, {	-- Libram of Discord
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45436, {	-- Libram of the Resolute
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45145, {	-- Libram of the Sacred Shield
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(18, i(45087)),	-- Runed Orb
 	emoc(28, i(45831)),	-- Sash of Potent Incantations
 	emoc(19, i(45821)),	-- Shard of the Crystal Forest
 	emoc(28, i(45825)),	-- Shieldwarder Girdle
 	emoc(19, i(45144, {	-- Sigil of Deflection
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45254, {	-- Sigil of the Vengeful Heart
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45819)),	-- Spiked Battleguard Choker
 	emoc(19, i(45114, {	-- Steamcaller's Totem
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45255, {	-- Thunderfall Totem
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(19, i(45169, {	-- Totem of the Dancing Flame
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoc(28, i(45840)),	-- Touch of the Occult
 	emoc(39, i(45847)),	-- Wildstrider Legguards
@@ -341,7 +341,7 @@ local EMBLEM_OF_FROST_QUARTERMASTER_GROUPS = {
 	emof(60, i(50996)),	-- Belt of Omission
 	emof(60, i(50994)),	-- Belt of Petrified Ivy
 	emof(30, i(50458, {	-- Bizuri's Totem of Shattered Ice
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(60, i(50980)),	-- Blizzard Keeper's Mitts
 	emof(95, i(50965)),	-- Castle Breaker's Battleplate
@@ -360,22 +360,22 @@ local EMBLEM_OF_FROST_QUARTERMASTER_GROUPS = {
 	emof(60, i(50981)),	-- Gloves of the Great Horned Owl
 	emof(60, i(50355)),	-- Herkuml War Token
 	emof(30, i(50454, {	-- Idol of the Black Willow
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50456, {	-- Idol of the Crying Moon
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50457, {	-- Idol of the Lunar Eclipse
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50460, {	-- Libram of Blinding Light
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50461, {	-- Libram of the Eternal Tower
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50455, {	-- Libram of Three Truths
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(60, i(50989)),	-- Lich Killer's Lanyard
 	emof(60, i(50979)),	-- Logsplitters
@@ -471,19 +471,19 @@ local EMBLEM_OF_FROST_QUARTERMASTER_GROUPS = {
 	emof(50, i(50466)),	-- Sentinel's Winter Cloak
 	emof(95, i(50972)),	-- Shadow Seeker's Tunic
 	emof(30, i(50474, {	-- Shrapnel Star
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50462, {	-- Sigil of the Bone Gryphon
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50459, {	-- Sigil of the Hanged Man
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50463, {	-- Totem of the Avalanche
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(30, i(50464, {	-- Totem of the Surging Sea
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emof(60, i(50995)),	-- Vengeful Noose
 	emof(60, i(50991)),	-- Verdigris Chain Belt
@@ -507,27 +507,27 @@ local EMBLEM_OF_HEROISM_QUARTERMASTER_GROUPS = {
 	emoh(50, i(40703)),	-- Grasscutter
 	emoh(25, i(40699)),	-- Handbook of Obscure Remedies
 	emoh(15, i(40711, {	-- Idol of Lush Moss
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40712, {	-- Idol of Steadfast Renewal
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40713, {	-- Idol of the Ravenous Beast
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(40, i(40694)),	-- Jorach's Crocolisk Skin Belt
 	emoh(25, i(40681)),	-- Lattice Choker of Light
 	emoh(15, i(40707, {	-- Libram of Obstruction
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40706, {	-- Libram of Reciprocation
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40705, {	-- Libram of Renewal
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(40, i(40691)),	-- Magroth's Meditative Cincture
 	emoh(40, i(40684)),	-- Mirror of Truth
@@ -617,21 +617,21 @@ local EMBLEM_OF_HEROISM_QUARTERMASTER_GROUPS = {
 	i(41313),	-- Savage Gladiator's Wyrmhide Robes
 	i(41278),	-- Savage Gladiator's Wyrmhide Spaulders
 	emoh(15, i(40715, {	-- Sigil of Haunted Dreams
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40714, {	-- Sigil of the Unfaltering Knight
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(40, i(40682)),	-- Sundial of the Exiled
 	emoh(40, i(40685)),	-- The Egg of Mortal Essence
 	emoh(15, i(40709, {	-- Totem of Forest Growth
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40710, {	-- Totem of Splintering
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(15, i(40708, {	-- Totem of the Elemental Plane
-		["timeline"] = { "removed 5.0.4" },
+		["timeline"] = { REMOVED_5_0_4 },
 	})),
 	emoh(40, i(40683)),	-- Valor Medal of the First War
 	emoh(40, i(40688)),	-- Verdungo's Barbarian Cord
@@ -811,16 +811,6 @@ root(ROOTS.Zones, {
 									recipe(53056),	-- Kungaloosh (RECIPE!)
 								},
 							}),
-							q(12853, {	-- Luxurious Getaway!
-								["qg"] = 30490,	-- Rin Duoctane
-								-- #if AFTER 7.3.5.25600
-								["sourceQuests"] = {
-									49554,	-- Hero's Call: Storm Peaks!
-									49536,	-- Warchief's Command: Storm Peaks!
-								},
-								-- #endif
-								["coord"] = { 31.2, 49.6, NORTHREND_THE_UNDERBELLY },
-							}),
 							q(13845, {	-- Sealed Vial of Poison
 								["providers"] = {
 									{ "i", 46004 },	-- Sealed Vial of Poison
@@ -849,19 +839,19 @@ root(ROOTS.Zones, {
 							n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 								["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
 								["coord"] = { 47.0, 28.1, NORTHREND_THE_UNDERBELLY },
-								["timeline"] = { "added 7.0.3.22290" },
+								["timeline"] = { ADDED_7_0_3 },
 								["groups"] = {
 									i(136803, {	-- Dirty Tricks, Vol 1: Detection (CI!)
-										["timeline"] = { "added 7.0.3.22248" },
+										["timeline"] = { ADDED_7_0_3 },
 									}),
 									i(136927, {	-- Scarlet Confessional Book (TOY!)
-										["timeline"] = { "added 7.0.3.22248" },
+										["timeline"] = { ADDED_7_0_3 },
 									}),
 									i(141056, {	-- Technique: Glyph of Burnout (RECIPE!)
-										["timeline"] = { "added 7.0.3.22248" },
+										["timeline"] = { ADDED_7_0_3 },
 									}),
 									i(136972, {	-- Tome of Hex: Cockroach (CI!)
-										["timeline"] = { "added 7.0.3.22248" },
+										["timeline"] = { ADDED_7_0_3 },
 									}),
 								},
 							}),
@@ -889,7 +879,7 @@ root(ROOTS.Zones, {
 									emof(60, i(50982)),	-- Cat Burglar's Grips
 									i(44652),	-- Dalaran Dagger
 									i(44644, {	-- Dalaran Dart
-										["timeline"] = { "removed 5.0.4" },
+										["timeline"] = { REMOVED_5_0_4 },
 									}),
 									i(44641),	-- Dalaran Knuckles
 									emoc(28, i(45838)),	-- Gloves of the Blind Stalker
@@ -898,7 +888,7 @@ root(ROOTS.Zones, {
 									emoh(40, i(40694)),	-- Jorach's Crocolisk Skin Belt
 									emoc(39, i(45846)),	-- Leggings of Wavering Shadow
 									emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-										["timeline"] = { "removed 5.0.4" },
+										["timeline"] = { REMOVED_5_0_4 },
 									})),
 									emoh(50, i(40704)),	-- Pride
 									emov(40, i(40749)),	-- Rainey's Chewed Boots
@@ -921,21 +911,21 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 7.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_CATACLYSMIC, PVP_GLADIATOR },{"merge"},},	-- Cataclysmic Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 4.3.0", "removed 7.0.1" },
+								["timeline"] = { ADDED_4_3_0, REMOVED_7_0_3 },
 							})),
 							applyclassicphase(CATA_PHASE_THREE, n(52541, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},},	-- Ruthless Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 4.2.0.14333", "removed 4.3.0" },
+								["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 },
 							})),
 							applyclassicphase(CATA_PHASE_ONE, n(40211, {	-- Nargle Lashcord <Glorious Conquest Quartermaster>
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},},	-- Vicious Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_4_0_3, "removed 4.2.0.14333" },
+								["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 },
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, n(33936, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S8 Vendor // Wrathful Gladiator: Season 8 Gladiator Gear
 								["coord"] = { 58.7, 59.0, NORTHREND_THE_UNDERBELLY },
@@ -1050,21 +1040,21 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 5.2.0.16577
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_RUTHLESS, PVP_GLADIATOR },{"merge"},},	-- Ruthless Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 4.3.0", REMOVED_5_2_0 },
+								["timeline"] = { ADDED_4_3_0, REMOVED_5_2_0 },
 							})),
 							applyclassicphase(CATA_PHASE_THREE, n(52534, {	-- Zom Bocom <Honor Quartermaster>
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_GLADIATOR },{"merge"},},	-- Vicious Gladiator's Set
 								-- #endif
-								["timeline"] = { "added 4.2.0.14333", "removed 4.3.0" },
+								["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 },
 							})),
 							applyclassicphase(CATA_PHASE_ONE, n(40205, {	-- Zom Bocom <Honor Quartermaster>
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
 								-- #if BEFORE 5.0.1
 								["sym"] = {{"sub", "pvp_gear_base", EXPANSION.CATA, SEASON_VICIOUS, PVP_HONOR },{"merge"},},	-- Bloodthirsty Gladiator's Set
 								-- #endif
-								["timeline"] = { ADDED_4_0_3, "removed 4.2.0.14333" },
+								["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 },
 							})),
 							applyclassicphase(WRATH_PHASE_FOUR, n(33938, {	-- Zom Bocom <Apprentice Arena Vendor> // Original S8 Vendor // Furious Gladiator: Season 8 Honor Gear
 								["coord"] = { 59.1, 59.6, NORTHREND_THE_UNDERBELLY },
@@ -1235,55 +1225,55 @@ root(ROOTS.Zones, {
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
 					},  {
-						["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						["groups"] = {
 							crit(7309, {	-- Proof of Demise: Anub'arak
 								["_quests"] = { 13254 },	-- Proof of Demise: Anub'arak
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7311, {	-- Proof of Demise: Cyanigosa
 								["_quests"] = { 13256 },	-- Proof of Demise: Cyanigosa
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7305, {	-- Proof of Demise: Gal'darah
 								["_quests"] = { 13250 },	-- Proof of Demise: Gal'darah
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7310, {	-- Proof of Demise: Herald Volazj
 								["_quests"] = { 13255 },	-- Proof of Demise: Herald Volazj
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7300, {	-- Proof of Demise: Ingvar the Plunderer
 								["_quests"] = { 13245 },	-- Proof of Demise: Ingvar the Plunderer
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7301, {	-- Proof of Demise: Keristrasza
 								["_quests"] = { 13246 },	-- Proof of Demise: Keristrasza
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7303, {	-- Proof of Demise: King Ymiron
 								["_quests"] = { 13248 },	-- Proof of Demise: King Ymiron
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7302, {	-- Proof of Demise: Ley-Guardian Eregos
 								["_quests"] = { 13247 },	-- Proof of Demise: Ley-Guardian Eregos
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7308, {	-- Proof of Demise: Loken
 								["_quests"] = { 13253 },	-- Proof of Demise: Loken
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7306, {	-- Proof of Demise: Mal'Ganis
 								["_quests"] = { 13251 },	-- Proof of Demise: Mal'Ganis
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7307, {	-- Proof of Demise: Sjonnir The Ironshaper
 								["_quests"] = { 13252 },	-- Proof of Demise: Sjonnir The Ironshaper
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7304, {	-- Proof of Demise: The Prophet Tharon'ja
 								["_quests"] = { 13249 },	-- Proof of Demise: The Prophet Tharon'ja
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 						},
 					})),
@@ -1312,23 +1302,23 @@ root(ROOTS.Zones, {
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
 					}, {
-						["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						["groups"] = {
 							crit(7296, {	-- Timear Foresees Centrifuge Constructs in your Future!
 								["_quests"] = { 13240 },	-- Timear Foresees Centrifuge Constructs in your Future!
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7298, {	-- Timear Foresees Infinite Agents in your Future!
 								["_quests"] = { 13243 },	-- Timear Foresees Infinite Agents in your Future!
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7299, {	-- Timear Foresees Titanium Vanguards in your Future!
 								["_quests"] = { 13244 },	-- Timear Foresees Titanium Vanguards in your Future!
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 							crit(7297, {	-- Timear Foresees Ymirjar Berserkers in your Future!
 								["_quests"] = { 13241 },	-- Timear Foresees Ymirjar Berserkers in your Future!
-								["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+								["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 							}),
 						},
 					})),
@@ -1375,14 +1365,26 @@ root(ROOTS.Zones, {
 					}),
 					o(193402, {	-- Rusted Prisoner's Footlocker
 						["coord"] = { 64.5, 73.8, NORTHREND_DALARAN },
-						["cost"] = {{ "i", 43650, 1 }},	-- Rusty Prison Key
+						["cost"] = {
+							-- #if AFTER 5.2.0
+							{ "i", 93738, 1 },	-- Rusty Prison Key
+							-- #else
+							{ "i", 43650, 1 },	-- Rusty Prison Key
+							-- #endif
+						},
+						["timeline"] = { ADDED_3_0_1, REMOVED_4_0_3, ADDED_5_2_0 },
 						["groups"] = {
 							i(37891),	-- Cast Iron Shackles
 							i(37890),	-- Chain Gang Legguards
 							i(37889),	-- Prison Manifest
 						},
 					}),
-					i(43650),	-- Rusty Prison Key
+					i(93738, {	-- Rusty Prison Key
+						["timeline"] = { ADDED_5_2_0 },
+					}),
+					i(43650, {	-- Rusty Prison Key
+						["timeline"] = { ADDED_3_0_1, REMOVED_4_0_3 },
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(310, {	-- Dalaran
@@ -1390,16 +1392,19 @@ root(ROOTS.Zones, {
 						["coord"] = { 72.1, 45.7, NORTHREND_DALARAN },
 					}),
 				}),
+				-- #if NOT ANYCLASSIC
+				-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 				o(208316, {	-- Hero's Call Board
 					["coords"] = {
 						{ 25.9, 43.1, NORTHREND_DALARAN },
 						{ 47.8, 41.2, NORTHREND_DALARAN },
 						{ 37.8, 63.8, NORTHREND_DALARAN },
 					},
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 					["sym"] = HEROS_CALL_BOARD_SYMLINK,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #endif
 				n(PROFESSIONS, {
 					prof(ALCHEMY, {
 						n(28703, {	-- Linzy Blackbolt <Alchemy Trainer>
@@ -1436,6 +1441,12 @@ root(ROOTS.Zones, {
 						n(28693, {	-- Enchanter Nalthanis <Enchanting Trainer>
 							["coord"] = { 39.4, 41.2, NORTHREND_DALARAN },
 							["groups"] = WRATH_ENCHANTING,
+						}),
+					}),
+					prof(ENGINEERING, {
+						n(28697, {	-- Timofey Oshenko <Engineering Trainer>
+							["coord"] = { 38.8, 25.8, NORTHREND_DALARAN },
+							["groups"] = WRATH_ENGINEERING,
 						}),
 					}),
 					prof(FIRST_AID, {
@@ -1476,7 +1487,7 @@ root(ROOTS.Zones, {
 							{ "i", 49335 },	-- Daros' Journal
 						},
 						["coord"] = { 36.4, 61.0, NORTHREND_DALARAN },
-						["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },	-- This was a pre-introduction quest for Night Elf Mages in Cataclysm.
+						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },	-- This was a pre-introduction quest for Night Elf Mages in Cataclysm.
 						["maps"] = { DARNASSUS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = 71,
@@ -1490,7 +1501,7 @@ root(ROOTS.Zones, {
 							{ 59.7, 63.2, HOWLING_FJORD },	-- Pricilla Winterwind
 							{ 58.9, 68.2, BOREAN_TUNDRA },	-- Tomas Riverwell
 						},
-						["timeline"] = { "added 4.3.0.14732" },
+						["timeline"] = { ADDED_4_3_0 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,	-- Gold said this gets invalidated by something, but idk what.
 					}),
@@ -1666,7 +1677,7 @@ root(ROOTS.Zones, {
 							{ 79.0, 29.7, HOWLING_FJORD },	-- Adeline Chambers
 							{ 40.3, 51.3, BOREAN_TUNDRA },	-- Turida Coldwind
 						},
-						["timeline"] = { "added 4.3.0.14732" },
+						["timeline"] = { ADDED_4_3_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24587, {	-- Ignis the Furnace Master Must Die!
@@ -1767,16 +1778,37 @@ root(ROOTS.Zones, {
 						},
 					})),
 					q(29073, {	-- Make Haste to Orgrimmar!
-						["provider"] = { "o", 208317 },	-- Warchief's Command Board
-						["timeline"] = { "added 4.0.6.13596", "removed 6.2.0" },
+						["providers"] = {
+							{ "o", 208317 },	-- Warchief's Command Board
+							{ "i",  68809 },	-- Veteran's Hearthstone
+						},
+						["coords"] = {
+							{ 48.7, 39.6, NORTHREND_DALARAN },
+							{ 59.2, 27.4, NORTHREND_DALARAN },
+						},
+						-- #if BEFORE 6.2.0
+						["description"] = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
+						-- #endif
+						["timeline"] = { ADDED_4_0_6, REMOVED_6_2_0 },
 						["races"] = HORDE_ONLY,
-						["isBreadcrumb"] = true,
+						["lvl"] = 80,
 					}),
 					q(29071, {	-- Make Haste to Stormwind!
-						["provider"] = { "o", 208316 },	-- Hero's Call Board
-						["timeline"] = { "added 4.0.6.13596", "removed 6.2.0" },
+						["providers"] = {
+							{ "o", 208316 },	-- Hero's Call Board
+							{ "i",  68808 },	-- Hero's Hearthstone
+						},
+						["coords"] = {
+							{ 25.9, 43.1, NORTHREND_DALARAN },
+							{ 47.8, 41.2, NORTHREND_DALARAN },
+							{ 37.8, 63.8, NORTHREND_DALARAN },
+						},
+						-- #if BEFORE 6.2.0
+						["description"] = "If you have your hearthstone set to Dalaran, this quest will be available to you.",
+						-- #endif
+						["timeline"] = { ADDED_4_0_6, REMOVED_6_2_0 },
 						["races"] = ALLIANCE_ONLY,
-						["isBreadcrumb"] = true,
+						["lvl"] = 80,
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24584, {	-- Malygos Must Die!
 						["qg"] = 20735,	-- Archmage Lan'dalock
@@ -1856,22 +1888,6 @@ root(ROOTS.Zones, {
 							}),
 						},
 					})),
-					q(13418, {	-- Preparations for War [A]
-						["qg"] = 31081,	-- Officer Van Rossem
-						-- #if AFTER 7.3.5.25632
-						["sourceQuest"] = 49555,	-- Hero's Call: Icecrown!
-						-- #endif
-						["coord"] = { 67.7, 47.2, NORTHREND_DALARAN },
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(13419, {	-- Preparations for War [H]
-						["qg"] = 31085,	-- Sky-Reaver Klum
-						-- #if AFTER 7.3.5.25632
-						["sourceQuest"] = 49537,	-- Warchief's Command: Icecrown!
-						-- #endif
-						["coord"] = { 69.4, 40.7, NORTHREND_DALARAN },
-						["races"] = HORDE_ONLY,
-					}),
 					q(13254, {	-- Proof of Demise: Anub'arak
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
@@ -1879,7 +1895,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3 },
 						["isDaily"] = true,
 						["groups"] = {
@@ -1895,7 +1911,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_VIOLET_HOLD_WRATH },
 						["isDaily"] = true,
 						["groups"] = {
@@ -1911,7 +1927,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { GUNDRAK, GUNDRAK_FLOOR2 },
 						["isDaily"] = true,
 						["groups"] = {
@@ -1927,7 +1943,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { AHNKAHET_THE_OLD_KINGDOM },
 						["isDaily"] = true,
 						["groups"] = {
@@ -1943,7 +1959,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { UTGARDE_KEEP, UTGARDE_KEEP_FLOOR2, UTGARDE_KEEP_FLOOR3 },
 						["isDaily"] = true,
 						["groups"] = {
@@ -1959,7 +1975,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_NEXUS },
 						["isDaily"] = true,
 						["groups"] = {
@@ -1975,7 +1991,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 						["isDaily"] = true,
 						["groups"] = {
@@ -1991,7 +2007,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 						["isDaily"] = true,
 						["groups"] = {
@@ -2007,7 +2023,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
 						["isDaily"] = true,
 						["groups"] = {
@@ -2023,7 +2039,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
 						["isDaily"] = true,
 						["groups"] = {
@@ -2039,7 +2055,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { HALLS_OF_STONE },
 						["isDaily"] = true,
 						["groups"] = {
@@ -2063,7 +2079,7 @@ root(ROOTS.Zones, {
 							end
 						end]],
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { TRIAL_OF_THE_CHAMPION },
 						["isDaily"] = true,
 						["groups"] = {
@@ -2079,7 +2095,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { DRAKTHARON_KEEP, DRAKTHARON_KEEP_FLOOR2 },
 						["isDaily"] = true,
 						["groups"] = {
@@ -2096,7 +2112,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE 4.0.1
 						["description"] = "The quest item can also drop from any of the new Icecrown Heroic Dungeons.",
 						-- #endif
-						["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },
+						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 						["maps"] = {
 							AHNKAHET_THE_OLD_KINGDOM,
 							AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,
@@ -2129,7 +2145,7 @@ root(ROOTS.Zones, {
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
 						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
-						["timeline"] = { ADDED_3_3_0, "removed 4.0.1" },
+						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 						["maps"] = {
 							AHNKAHET_THE_OLD_KINGDOM,
 							AZJOL_NERUB, AZJOL_NERUB_FLOOR2, AZJOL_NERUB_FLOOR3,
@@ -2328,10 +2344,10 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(39209, {	-- Sholazar Basin -- Adventure Guide
-						["timeline"] = { "added 6.2.0.19934", "removed 7.0.1" },	-- TODO: Find out the patch this was removed, if at all.
+						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(39212, {	-- Sholazar Basin -- Adventure Guide
-						["timeline"] = { "added 6.2.0.19934", "removed 7.0.1" },	-- TODO: Find out the patch this was removed, if at all.
+						["timeline"] = { ADDED_6_2_0, REMOVED_7_0_3 },	-- TODO: Find out the patch this was removed, if at all.
 					}),
 					q(13830, {	-- The Ghostfish
 						["qg"] = 28742,	-- Marcia Chase
@@ -2386,7 +2402,7 @@ root(ROOTS.Zones, {
 					}),
 					q(39210, {	-- The Magical Kingdom of Dalaran (Adventure Guide)
 						["description"] = "Can be acquired through the Adventure Guide.",
-						["timeline"] = { "added 6.2.0.19934" },
+						["timeline"] = { ADDED_6_2_0 },
 						["isBreadcrumb"] = true,
 					}),
 					q(13240, {	-- Timear Foresees Centrifuge Constructs in your Future!
@@ -2396,7 +2412,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_OCULUS, THE_OCULUS_FLOOR2, THE_OCULUS_FLOOR3, THE_OCULUS_FLOOR4, THE_OCULUS_FLOOR5 },
 						["isDaily"] = true,
 						["lvl"] = 78,
@@ -2405,19 +2421,19 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 27641 },	-- Centrifuge Construct
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 						},
 					}),
@@ -2428,7 +2444,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { THE_CULLING_OF_STRATHOLME, THE_CULLING_OF_STRATHOLME_FLOOR2 },
 						["isDaily"] = true,
 						["lvl"] = 78,
@@ -2437,19 +2453,19 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 27744 },	-- Infinite Agent
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 						},
 					}),
@@ -2460,7 +2476,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { HALLS_OF_LIGHTNING, HALLS_OF_LIGHTNING_FLOOR2 },
 						["isDaily"] = true,
 						["lvl"] = 78,
@@ -2469,19 +2485,19 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 28838 },	-- Titanium Vanguard
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 						},
 					}),
@@ -2492,7 +2508,7 @@ root(ROOTS.Zones, {
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { UTGARDE_PINNACLE, UTGARDE_PINNACLE_FLOOR2 },
 						["isDaily"] = true,
 						["lvl"] = 78,
@@ -2501,19 +2517,19 @@ root(ROOTS.Zones, {
 								["provider"] = { "n", 26696 },	-- Ymirjar Berserker
 							}),
 							i(44711, {	-- Argent Crusade Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44713, {	-- Ebon Blade Commendation Badge [BOP]
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(43950, {	-- Kirin Tor Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(49702, {	-- Sons of Hodir Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 							i(44710, {	-- Wyrmrest Commendation Badge
-								["timeline"] = { "deleted 6.0.2" },
+								["timeline"] = { DELETED_6_0_2 },
 							}),
 						},
 					}),
@@ -2535,19 +2551,9 @@ root(ROOTS.Zones, {
 							currency(81),	-- Epicurean's Award 5x
 						},
 					}),
-					q(12521, {	-- Where in the World is Hemet Nesingwary?
-						["qg"] = 28160,	-- Achmage Pentarus
-						-- #if AFTER 7.3.5.25600
-						["sourceQuests"] = {
-							49553,	-- Hero's Call: Sholazar Basin!
-							49535,	-- Warchief's Command: Sholazar Basin!
-						},
-						-- #endif
-						["coord"] = { 68.5, 42.0, NORTHREND_DALARAN },
-					}),
 					q(14160, {	-- Writ of Merit
 						["provider"] = { "i", 47246 },	-- Writ of Merit
-						["timeline"] = { ADDED_3_2_0, "removed 3.2.1" },	-- This was a one-time ever quest sent out to JCs during 3.2.0 when they changed Dragon's Eyes.
+						["timeline"] = { ADDED_3_2_0, REMOVED_3_2_2 },	-- This was a one-time ever quest sent out to JCs during 3.2.0 when they changed Dragon's Eyes.
 						["requireSkill"] = JEWELCRAFTING,
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, q(24588, {	-- XT-002 Deconstructor Must Die!
@@ -2761,7 +2767,9 @@ root(ROOTS.Zones, {
 							siderealessence(25, i(45877)),	-- The Boreal Guard
 							siderealessence(25, i(45449)),	-- The Masticator
 							siderealessence(38, i(46033)),	-- Tortured Earth
-							siderealessence(15, i(45296)),	-- Twirling Blades
+							siderealessence(15, i(45296, {	-- Twirling Blades
+								["timeline"] = { REMOVED_5_0_4 },
+							})),
 							siderealessence(25, i(46036)),	-- Void Sabre
 							siderealessence(15, i(45447)),	-- Watchful Eye of Fate
 							siderealessence(32, i(46049)),	-- Zodiac Leggings
@@ -2805,15 +2813,15 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(50368, {	-- Arcanum of Burning Mysteries
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44159, {	-- Arcanum of Burning Mysteries
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44141, {	-- Arcanum of the Flame's Soul
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44182),	-- Boots of Twinkling Stars
@@ -2840,13 +2848,13 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(44652),	-- Dalaran Dagger
 							i(44644, {	-- Dalaran Dart
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(44641),	-- Dalaran Knuckles
 							emoh(50, i(40704)),	-- Pride
 							emoh(50, i(40702)),	-- Rolfsen's Ripper
 							emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 						},
 					}),
@@ -2891,91 +2899,91 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.0, 53.6, NORTHREND_DALARAN },
 						["groups"] = {
 							emoh(40, i(42944, {	-- Balanced Heartseeker
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(65, i(42943, {	-- Bloodied Arcanite Reaper
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							i(69893, {	-- Bloodsoaked Skullforge Reaver
-								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
 							i(69889, {	-- Burnished Breastplate of Might
-								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
 							i(69890, {	-- Burnished Pauldrons of Might
-								["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 							}),
 							i(79131, {	-- Burnished Warden Staff
-								["timeline"] = { "added 5.0.1.15464", "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
 							}),
 							emoh(40, i(42950, {	-- Champion Herod's Shoulder
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48677, {	-- Champion's Deathdealer Breastplate
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(65, i(42946, {	-- Charmed Ancient Bone Bow
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(50, i(42948, {	-- Devout Aurastone Hammer
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(65, i(42947, {	-- Dignified Headmaster's Charge
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(50, i(42992, {	-- Discerning Eye of the Beast
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							i(93902, {	-- Flamescarred Draconian Deflector
-								["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							i(93904, {	-- Musty Tome of the Lost
-								["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 							emoh(40, i(42951, {	-- Mystical Pauldrons of Elements
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48683, {	-- Mystical Vest of Elements
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48685, {	-- Polished Breastplate of Valor
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(42949, {	-- Polished Spaulders of Valor
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48687, {	-- Preened Ironfeather Breastplate
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(42984, {	-- Preened Ironfeather Shoulders
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(65, i(48718, {	-- Repurposed Lava Dredger
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(42952, {	-- Stained Shadowcraft Spaulders
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48689, {	-- Stained Shadowcraft Tunic
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(50, i(42991, {	-- Swift Hand of Justice
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(42985, {	-- Tattered Dreadmist Mantle
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48691, {	-- Tattered Dreadmist Robe
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							emoh(40, i(48716, {	-- Venerable Mass of McGowan
-								["timeline"] = { "removed 6.1.0.19445" },
+								["timeline"] = { REMOVED_6_1_0 },
 							})),
 							i(93903, {	-- Weathered Observer's Shield
-								["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+								["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 							}),
 						},
 					}),
@@ -2987,7 +2995,7 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_3_3_0 },
 							}),
 							i(129826, {	-- Nursery Spider (PET!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(48120, {	-- Obsidian Hatchling (PET!)
 								["timeline"] = { ADDED_3_2_0 },
@@ -3002,8 +3010,9 @@ root(ROOTS.Zones, {
 							i(136782, {	-- Fireworks Instruction Manual (CI!)
 								["timeline"] = { ADDED_7_0_3_LAUNCH },
 							}),
-							i(23817, {	-- Schematic: Titanium Toolbox
+							i(23817, {	-- Schematic: Titanium Toolbox (RECIPE!)
 								["isLimited"] = true,
+								["timeline"] = { ADDED_3_0_8 },
 							}),
 						},
 					}),
@@ -3022,21 +3031,19 @@ root(ROOTS.Zones, {
 						["requireSkill"] = TAILORING,
 						["groups"] = {
 							recipe(56017, {	-- Deathchill Cloak
+								["sourceAchievements"] = {
+									41,		-- Loremaster of Northrend (A)
+									-- #if BEFORE 5.0.4
+									1360,	-- Loremaster of Northrend (H)
+									-- #endif
+								},
 								["description"] = "In order to learn this recipe, you must have the Loremaster of Northrend achievement completed.",
 								["requireSkill"] = TAILORING,
-								["sym"] = {
-									-- #IF ANYCLASSIC
-									{ "select", "achievementID", 1360 },	-- Loremaster of Northrend
-									-- #ELSE
-									{ "select", "achievementID", 41 },	-- Loremaster of Northrend
-									-- #ENDIF
-									{ "pop" }
-								},
 							}),
 							recipe(56016, {	-- Wispcloak
+								["sourceAchievement"] = 1288,	-- Northrend Dungeonmaster
 								["description"] = "In order to learn this recipe, you must have the Northrend Dungeonmaster achievement completed.",
 								["requireSkill"] = TAILORING,
-								["sym"] = {{ "select", "achievementID", 1288 },{ "pop" }},	-- Northrend Dungeonmaster
 							}),
 						},
 					}),
@@ -3063,13 +3070,13 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_9_2_5 },
 							}),
 							i(104324, {	-- Foot Ball (TOY!)
-								["timeline"] = { "added 5.4.0.17227" },
+								["timeline"] = { ADDED_5_4_0 },
 							}),
 							i(137663, {	-- Soft Foam Sword (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(104323, {	-- The Swineskin (TOY!)
-								["timeline"] = { "added 5.4.0.17227" },
+								["timeline"] = { ADDED_5_4_0 },
 							}),
 							i(54438, {	-- Tiny Blue Ragdoll (TOY!)
 								["timeline"] = { ADDED_3_3_3 },
@@ -3295,10 +3302,10 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							epicurean(100, i(46349, {	-- Chef's Hat
-								["timeline"] = { "deleted 7.0.3.22248" },
+								["timeline"] = { DELETED_7_0_3 },
 							})),
 							epicurean(100, i(134020, {	-- Chef's Hat (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
 							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)
@@ -3647,7 +3654,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(49177, {	-- Tome of Cold Weather Flight
 								["recipeID"] = 54197,	-- Cold Weather Flight
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 								["cost"] = {{ "g", 10000000 }},	-- 1000g
 							}),
 						},
@@ -3689,39 +3696,39 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.0, 51.8, NORTHREND_DALARAN },
 						["groups"] = {
 							emot(25, i(47660, {	-- Blades of the Sable Cross
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							emot(25, i(47659, {	-- Crimson Star
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							i(32883, {	-- Felbane Slugs
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							i(32882, {	-- Hellfire Shot
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 								["races"] = HORDE_ONLY,
 							}),
 							emoh(15, i(40716, {	-- Lillehoff's Winged Blades
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(34582, {	-- Mysterious Shell
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							emof(30, i(50474, {	-- Shrapnel Star
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31737, {	-- Timeless Arrow
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31735, {	-- Timeless Shell
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							i(31949, {	-- Warden's Arrow
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),
@@ -3804,14 +3811,14 @@ root(ROOTS.Zones, {
 					n(28723, {	-- Larana Drome <Inscription Supplies>
 						["coord"] = { 41.8, 36.8, NORTHREND_DALARAN },
 						["groups"] = {
-							i(50166, {	-- Technique: Glyph of Eternal Water
-								["timeline"] = { "deleted 4.0.1" },
+							i(50166, {	-- Technique: Glyph of Eternal Water / Technique: Glyph of Mana Shield [CATA+] / Technique: Glyph of Counterspell [MOP+]
+								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
-							i(50168, {	-- Technique: Glyph of Quick Decay
-								["timeline"] = { "deleted 4.0.1" },
+							i(50168, {	-- Technique: Glyph of Quick Decay / Technique: Glyph of Lash of Pain [CATA+] / Technique: Glyph of Everlasting Affliction [5.0.4+] / Glyph of Eternal Resolve [5.4.0+]
+								["timeline"] = { ADDED_3_3_0, DELETED_7_0_3 },
 							}),
 							i(50167, {	-- Technique: Glyph of Rapid Rejuvenation
-								["timeline"] = { "deleted 4.0.1" },
+								["timeline"] = { DELETED_4_0_1 },
 							}),
 						},
 					}),
@@ -3948,10 +3955,10 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							epicurean(100, i(46349, {	-- Chef's Hat
-								["timeline"] = { "deleted 7.0.3.22248" },
+								["timeline"] = { DELETED_7_0_3 },
 							})),
 							epicurean(100, i(134020, {	-- Chef's Hat (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
 							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)
@@ -3986,7 +3993,7 @@ root(ROOTS.Zones, {
 					}),
 					n(29529, {	-- Ninsianna <Relics>
 						["description"] = "If you /dance with her, she will say Not bad, though some additional schooling wouldn't hurt! Here, watch my hips... like so! and start dancing.",
-						["groups"] = bubbleDown({ ["timeline"] = { "removed 5.0.4" } }, {
+						["groups"] = bubbleDown({ ["timeline"] = { REMOVED_5_0_4 } }, {
 							emof(30, i(50458)),	-- Bizuri's Totem of Shattered Ice
 							emov(25, i(40342)),	-- Idol of Awakening
 							emot(25, i(47671)),	-- Idol of Flaring Growth
@@ -4804,15 +4811,18 @@ root(ROOTS.Zones, {
 					}),
 					-- #endif
 				}),
+				-- #if NOT ANYCLASSIC
+				-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 				o(208317, {	-- Warchief's Command Board
 					["coords"] = {
 						{ 48.7, 39.6, NORTHREND_DALARAN },
 						{ 59.2, 27.4, NORTHREND_DALARAN },
 					},
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 					["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 					["races"] = HORDE_ONLY,
 				}),
+				-- #endif
 			},
 		}),
 	})),

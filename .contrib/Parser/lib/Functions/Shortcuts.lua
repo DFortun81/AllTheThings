@@ -298,6 +298,23 @@ bubbleDownRep = function(rep, group)
 	end
 	return t;
 end
+local classicRepsMap = {
+	NEUTRAL,
+	FRIENDLY,
+	HONORED,
+	REVERED,
+	EXALTED
+};
+bubbleDownClassicRep = function(rep, group)
+	local t = {};
+	for i,groups in ipairs(group) do
+		groups = bubbleDown({["minReputation"] = {rep, classicRepsMap[i]}}, groups)
+		for j,o in ipairs(groups) do
+			table.insert(t, o);
+		end
+	end
+	return t;
+end
 run = function(method, t)
 	if t then
 		if t.g or t.groups then
@@ -492,6 +509,18 @@ siderealessence = function(cost, item)					-- Assign a Sidereal Essence (Defense
 	-- #if ANYCLASSIC
 	applycost(item, { "c", SIDEREAL_ESSENCE, cost });
 	-- #endif
+	return item;
+end
+spiritshard = function(cost, item)						-- Assign a Chef's Award or Epicurean's Award cost to an item. (based on patch)
+	-- #if AFTER 8.0.1
+	applycost(item, { "c", 1704, cost });	-- Spirit Shard (currency)
+	-- #else
+	applycost(item, { "i", 28558, cost });	-- Spirit Shard (item)
+	-- #endif
+	return item;
+end
+tolbaradcommendation = function(cost, item)				-- Assign a Tol Barad Commendation cost to an item with proper timeline requirements.
+	applycost(item, { "c", 391, cost });	-- Tol Barad Commendation
 	return item;
 end
 vicioussaddle = function(item)							-- Assign a Vicious Saddle cost to an item with proper timeline requirements.
@@ -738,11 +767,14 @@ d = function(id, t)										-- Create a DIFFICULTY Object
 		local db = DifficultyDB[difficultyID];
 		if db then
 			if db.simplify then
+				-- must preserve the multi-difficultyID for parser, since changing the difficultyID secretly
+				-- inside a shortcut function is anything but 'simple'
+				-- TODO: clean this up and make it Parser logic instead to change the id values
+				t._multiDifficultyID = difficultyID
 				difficultyID = ids[1];
-				local difficulties,count = {},1;
+				local difficulties = {}
 				for i=2,#ids,1 do
-					difficulties[count] = ids[i];
-					count = count + 1;
+					difficulties[#difficulties + 1] = ids[i];
 				end
 				t.difficultyID = difficultyID;
 				t.difficulties = difficulties;
@@ -825,6 +857,12 @@ e = function(id, t)										-- Create an ENCOUNTER Object (Post-Wrath)
 	end
 end
 -- #endif
+elitepvp = function(t)									-- Flag all nested content as requiring Elite PvP gameplay
+	return bubbleDown({
+		["pvp"] = true,
+		["u"] = ELITE_PVP_REQUIREMENT,					-- CRIEVE NOTE: This currently uses the same filter as our other filters. This should probably be changed to act like the PVP filter or make "pvp" a 2 or something.
+	}, t);
+end
 expansion = function(id, patch, t)							-- Create an EXPANSION Object
 	-- patch is optional
 	if not t then
@@ -920,6 +958,11 @@ iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which 
 	i.up = (tonumber(modID) or 0) + ((tonumber(bonusID) or 0) / 10000);
 	return i;
 end
+iensemble = function(itemID, t)
+	local i = i(itemID, t);
+	i.type = "ensembleID"
+	return i
+end
 iexact = function(itemID, modID, bonusID, t)			-- Create an exact ITEM Object (specified by ModID/BonusID)
 	local i = i(itemID, t);
 	if modID and modID ~= 0 then
@@ -984,7 +1027,7 @@ molemachine = function(questID, name, t)				-- Create a MOLE MACHINE Quest Objec
 			t.icon = "Interface\\Icons\\ability_racial_molemachine";
 		end
 		if not t.timeline then
-			t.timeline = { "added 8.0.1.27326" };
+			t.timeline = { ADDED_8_0_1 };
 		end
 		-- TODO: Do we really need the location as a description if its in each zone?
 		-- CRIEVE NOTE: Perhaps make an areaID-based class that can do header things?
@@ -1037,14 +1080,21 @@ o_repeated = function(t, o)								-- Create a group which represents the shared
 		-- include o as a separate array so we can list the shared contents/objects separately for easier data application
 		t = { g = appendAllGroups(t, o) };
 	end
+	t.type = "AsGenericObjectContainer"
 	if t.groups or t.g then
 		for i,group in ipairs(t.groups or t.g) do
 			-- first existing objectID value of the sub-groups will be used to show the localized name in-game instead of creating a new custom category as well
 			if group.objectID and not t.objectID then
 				-- is it really this simple
-				return struct("objectID", group.objectID, t);
+				t = struct("objectID", group.objectID, t);
+				break
 			end
 		end
+		-- Now we want the children of these generic groups to be 'special' since they require 'special' logic in the addon
+		for i,group in ipairs(t.groups or t.g) do
+			group.type = "AsSubGenericObject"
+		end
+		return t
 	end
 	print("Could not find a group with an objectID value");
 end

@@ -57,7 +57,7 @@ root(ROOTS.WorldEvents, n(THE_SILITHYST_MUST_FLOW,
 					{ 33.3, 51.1, SILITHUS },
 					-- #endif
 				},
-				["timeline"] = { "removed 7.2.0" },
+				["timeline"] = { REMOVED_7_2_0 },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = lvlsquish(53, 53, 15),
 				-- #if ANYCLASSIC
@@ -83,7 +83,7 @@ root(ROOTS.WorldEvents, n(THE_SILITHYST_MUST_FLOW,
 					{ 50.8, 69.5, SILITHUS },
 					-- #endif
 				},
-				["timeline"] = { "removed 7.2.0" },
+				["timeline"] = { REMOVED_7_2_0 },
 				["races"] = HORDE_ONLY,
 				["lvl"] = lvlsquish(53, 53, 15),
 				-- #if ANYCLASSIC

@@ -238,11 +238,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2242),	-- The Hidden Grove
 				exploration(2243),	-- Timbermaw Post
 				exploration(2244),	-- Winterfall Village
-				--[[
-				exploration(2254),	-- Ban'Thallow Barrow Den
-				exploration(3139),	-- Moon Horror Den
-				exploration(2252),	-- The Ruins of Kel'Theril
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(577, {	-- Everlook
@@ -276,11 +271,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.4, 36.4, WINTERSPRING },
 					-- #endif
 					["races"] = HORDE_ONLY,
-				}),
-			}),
-			petbattles({
-				n(66466, {	-- Stone Cold Trixxy <Grand Master Pet Tamer>
-					["coord"] = { 65.6, 64.6, WINTERSPRING },
 				}),
 			}),
 			n(QUESTS, {
@@ -463,11 +453,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(44952, {	-- Blackrock Depths: Jewel of the Depths
 					["qg"] = 11184,	-- Wixxrak
 					["coord"] = { 60.2, 50.2, WINTERSPRING },
-					["timeline"] = { "added 7.1.5.23038" },
+					["timeline"] = { ADDED_7_1_5 },
 					["requireSkill"] = 2477,	-- Classic Blacksmithing
 					["groups"] = {
 						i(142357, {	-- Plans: Dawn's Edge (RECIPE!)
-							["timeline"] = { "added 7.1.5.23038" },
+							["timeline"] = { ADDED_7_1_5 },
 						}),
 					},
 				}),
@@ -620,6 +610,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(67221, {	-- Breastplate of the Poetic Orc
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(67228, {	-- Jadrag's Slicers
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(28535, {	-- Descendants of the High Elves
@@ -1035,7 +1030,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157021, {	-- Staff of Haunted Memory
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(67211, {	-- Orb of Kel'theril
 							["timeline"] = { ADDED_4_0_3 },
@@ -1804,10 +1799,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(13158),	-- Words of the High Chief
 						i(34424, {	-- Power of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(34423, {	-- Strength of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 					},
 				}),
@@ -1821,10 +1816,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(13158),	-- Words of the High Chief
 						i(34424, {	-- Power of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 						i(34423, {	-- Strength of the High Chief
-							["timeline"] = { "added 2.3.0.7382" },
+							["timeline"] = { ADDED_2_3_0 },
 						}),
 					},
 				}),
@@ -2071,14 +2066,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if BEFORE 3.1.0
 			prof(SKINNING, {
 				i(15423, {	-- Chimera Leather
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					["crs"] = {
 						10807,	-- Brumeran
 						7449,	-- Chillwind Ravager
 					},
 				}),
 				i(15422, {	-- Frostsaber Leather
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					["crs"] = {
 						7431,	-- Frostsaber
 						7430,	-- Frostsaber Cub
@@ -2126,10 +2121,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(52830, {	-- Michelle De Rum <Pet Collector>
 					["coord"] = { 59.8, 51.6, WINTERSPRING },
-					["timeline"] = { "added 4.1.0.13682" },
+					["timeline"] = { ADDED_4_1_0 },
 					["groups"] = {
 						i(69239, {	-- Winterspring Cub (PET!)
-							["timeline"] = { "added 4.1.0.13682" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 					},
 				}),
@@ -2141,7 +2136,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(21957, {	-- Design: Necklace of the Diamond Tower
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 						i(16221, {	-- Formula: Enchant Chest - Major Health (RECIPE!)
@@ -2155,7 +2150,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(14481, {	-- Pattern: Runecloth Gloves
-							["timeline"] = { "removed 2.0.1" },	-- Moved to Trainers
+							["timeline"] = { REMOVED_2_0_1 },	-- Moved to Trainers
 							-- #if BEFORE TBC
 							["isLimited"] = true,
 							-- #endif
@@ -2211,7 +2206,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(142357, {	-- Plans: Dawn's Edge (RECIPE!)
-							["timeline"] = { "added 7.1.5.23360" },
+							["timeline"] = { ADDED_7_1_5 },
 						}),
 					},
 				}),
@@ -2225,8 +2220,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16050, {	-- Schematic: Delicate Arcanite Converter (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(32381, {	-- Schematic: Fused Wiring
-							["timeline"] = { "added 2.1.0", "removed 5.0.4" },
+						i(32381, {	-- Schematic: Fused Wiring (RECIPE!)
+							["timeline"] = { ADDED_2_1_0, REMOVED_5_0_4 },
 							-- #if BEFORE 5.0.4
 							["isLimited"] = true,
 							-- #endif
@@ -2256,14 +2251,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(14742, {	-- Zap Farflinger <Unbalanced Engineer>
 					["description"] = "Goblin Engineers can speak to Zap to learn the recipe.",
-					["requireSkill"] = 20222,	-- Goblin Engineering
+					["requireSkill"] = GOBLIN_ENGINEERING,
 					-- #if AFTER CATA
 					["coord"] = { 59.6, 49.8, WINTERSPRING },
 					-- #else
 					["coord"] = { 61.2, 37.6, WINTERSPRING },
 					-- #endif
 					["groups"] = {
-						recipe(23486),	-- Dimensional Ripper - Everlook
+						r(23486),	-- Dimensional Ripper - Everlook
 					},
 				}),
 			}),
@@ -2271,7 +2266,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if AFTER CATA
 				-- Originally a zone drop of Azshara, was moved to Winterspring after.
 				i(34535, {	-- Azure Whelpling (PET!)
-					["timeline"] = { "added 2.3.0.7485" },
+					["timeline"] = { ADDED_2_3_0 },
 				}),
 				-- #endif
 				i(12434, {	-- Chillwind E'ko
@@ -2347,7 +2342,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(15761, {	-- Pattern: Frostsaber Gloves (RECIPE!)
 					["cr"] = 7441,	-- Winterfall Totemic
-					["timeline"] = { "removed 7.3.5", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 41.6, 42.8, WINTERSPRING },
@@ -2362,7 +2357,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(15747, {	-- Pattern: Frostsaber Leggings (RECIPE!)
 					["cr"] = 7440,	-- Winterfall Den Watcher
-					["timeline"] = { "removed 7.3.5", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 68.0, 35.6, WINTERSPRING },
@@ -2379,7 +2374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				i(15779, {	-- Pattern: Frostsaber Tunic (RECIPE!)
 					["cr"] = 7438,	-- Winterfall Ursa
-					["timeline"] = { "removed 7.3.5", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["timeline"] = { REMOVED_7_3_5, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					-- #if BEFORE 4.0.3
 					["coords"] = {
 						{ 69.6, 38.2, WINTERSPRING },

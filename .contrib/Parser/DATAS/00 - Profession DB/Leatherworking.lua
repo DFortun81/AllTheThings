@@ -336,6 +336,7 @@ i(18518, 22927, nil, TRIBAL);	-- Hide of the Wild
 i(15760, 19086, nil, TRIBAL);	-- Ironfeather Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15735, 19062, nil, TRIBAL);	-- Ironfeather Shoulders
 i(15742, 19068, nil, TRIBAL);	-- Warbear Harness
+i(20253, 19068, nil, TRIBAL);	-- Warbear Harness
 i(15754, 19080, nil, TRIBAL);	-- Warbear Woolies [REMOVED: 1.11.1, See new version]
 i(20254, 19080, nil, TRIBAL);	-- Warbear Woolies
 -- #else
@@ -357,6 +358,7 @@ i(18518, 22927);	-- Hide of the Wild
 i(15760, 19086);	-- Ironfeather Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15735, 19062);	-- Ironfeather Shoulders
 i(15742, 19068);	-- Warbear Harness
+i(20253, 19068);	-- Warbear Harness
 i(15754, 19080);	-- Warbear Woolies [REMOVED: 1.11.1, See new version]
 i(20254, 19080);	-- Warbear Woolies
 -- #endif
@@ -459,7 +461,8 @@ i(29218, 32503);	-- Netherfury Boots [A]
 i(25743, 32503);	-- Netherfury Boots [H]
 i(29219, 32502);	-- Netherfury Leggings [A]
 i(25742, 32502);	-- Netherfury Leggings [H]
-i(30444, 35530);	-- Reinforced Mining Bag
+i(30444, 35530);	-- Reinforced Mining Bag [A]
+i(29664, 35530);	-- Reinforced Mining Bag [H]
 i(25725, 32461);	-- Riding Crop
 i(29669, 35520);	-- Shadow Armor Kit [REMOVED: 5.0.4]
 i(25729, 32487);	-- Stylin' Adventure Hat
@@ -533,7 +536,9 @@ i(32429, 39997);	-- Boots of Shackled Souls
 i(30307, 36358);	-- Boots of the Crimson Hawk
 i(30306, 36357);	-- Boots of Utter Darkness
 i(32744, 41156);	-- Bracers of Renewed Life
-i(0, 40000);		-- Bracers of Shackled Souls [Multiple recipes uses this ID, See later one]
+-- #if BEFORE 3.0.3
+i(32430, 40000);		-- Bracers of Shackled Souls [Multiple recipes uses this ID, See later one]
+-- #endif
 i(32431, 40001);	-- Greaves of Shackled Souls
 i(30308, 36359);	-- Hurricane Boots
 i(32750, 41163);	-- Living Earth Bindings
@@ -691,7 +696,10 @@ i(0, 60665);	-- Seafoam Gauntlets
 i(0, 60651);	-- Virulent Spaulders
 i(0, 60669);	-- Wildscale Breastplate
 --- ITEM ---
-i(0, 52733);		-- Bracers of Shackled Souls [Multiple recipes uses this ID]
+-- #if AFTER 3.0.3
+i(0, 40000);			-- Bracers of Shackled Souls [Multiple recipes uses this ID, See later one]
+i(32430, 52733);		-- Bracers of Shackled Souls [Multiple recipes uses this ID]
+-- #endif
 i(44511, 60645);	-- Dragonscale Ammo Pouch [REMOVED: 4.0.1]
 i(44553, 60761);	-- Earthgiving Boots
 i(44552, 60760);	-- Earthgiving Legguards
@@ -1442,6 +1450,7 @@ i(0, 194697);		-- Warhide Shoulderguard [Rank 1]
 i(0, 194705);		-- Warhide Shoulderguard [Rank 2]
 --- ITEM ---
 i(137908, 194751);	-- Battlebound Armbands [Rank 3]
+i(137901, 194744);	-- Battlebound Girdle [Rank 2]
 i(137913, 194756);	-- Battlebound Girdle [Rank 3]
 i(137911, 194754);	-- Battlebound Grips [Rank 3]
 i(137915, 194758);	-- Battlebound Hauberk [Rank 3]
@@ -1499,6 +1508,7 @@ i(137920, 194763);	-- Gravenscale Warhelm [Rank 2]
 i(137928, 194771);	-- Gravenscale Warhelm [Rank 3]
 i(137935, 194779);	-- Leather Love Seat
 i(137934, 194778);	-- Leather Pet Leash
+i(137869, 194704);	-- Warhide Belt [Rank 2]
 i(137881, 194716);	-- Warhide Belt [Rank 3]
 i(137876, 194711);	-- Warhide Bindings [Rank 3]
 i(137880, 194715);	-- Warhide Footpads [Rank 3]
@@ -1531,7 +1541,6 @@ i(0, 196387);		-- Shaved Felhide
 i(0, 196425);		-- Stonehide Boot Base
 i(0, 196383);		-- Stonehide Leather Vamp
 i(137900, 0);		-- Battlebound Armbands [Rank 2]
-i(137901, 0);		-- Battlebound Girdle [Rank 2]
 i(137905, 0);		-- Battlebound Grips [Rank 2]
 i(137907, 0);		-- Battlebound Hauberk [Rank 2]
 i(137903, 0);		-- Battlebound Leggings [Rank 2]
@@ -1544,7 +1553,6 @@ i(140636, 0);		-- Dreadleather Bindings [Rank 1]
 i(140644, 0);		-- Gravenscale Armbands [Rank 1]
 i(137933, 0);		-- Leather Pet Bed
 i(137952, 0);		-- Stonehide Leather Barding
-i(137869, 0);		-- Warhide Belt [Rank 2]
 i(137868, 0);		-- Warhide Bindings [Rank 2]
 i(137874, 0);		-- Warhide Footpads [Rank 2]
 i(137873, 0);		-- Warhide Gloves [Rank 2]

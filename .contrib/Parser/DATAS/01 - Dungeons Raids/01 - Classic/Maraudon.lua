@@ -103,11 +103,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65992),	-- Pauldrons of the Promise
 						i(65919),	-- Zaetar's Gloves
 						i(131681, {	-- Leggings of Flourishing Vigor
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(65969),	-- Leggings of the Verdant Oasis
 						i(131682, {	-- Boots of Endless Vitality
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(65945),	-- Sandals of Glorious Life
 					},
@@ -328,7 +328,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["creatureID"] = 12258,
 						["groups"] = {
 							i(132562, {	-- Leaf-Scale Pauldrons
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(17749),	-- Phytoskin Spaulders
 							i(151451, {	-- Strip-Thorn Gauntlets
@@ -337,7 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(17750),	-- Chloromesh Girdle
 							i(17751),	-- Brusslehide Leggings
 							i(132563, {	-- Chloro-Stained Britches
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(17748),	-- Vinerot Sandals
 						},
@@ -398,7 +398,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["groups"] = {
 							i(17738),	-- Claw of Celebras
 							i(132561, {	-- Corrupted Keeper's Band
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(17740),	-- Soothsayer's Headdress
 							i(17739),	-- Grovekeeper's Drape
@@ -441,7 +441,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(17728),	-- Albino Crocscale Boots
 							i(132564, {	-- Albino Crocscale Waders
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),

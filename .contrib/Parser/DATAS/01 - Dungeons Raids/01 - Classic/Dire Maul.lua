@@ -77,6 +77,13 @@ local CAPITAL_GARDENS_MAPS = {
 	237,	-- Court of the Highborne
 	238,	-- Prison of Immol'Thar
 };
+local ALL_DIREMAUL_MAPS = {
+	239,	-- Warpwood Quarter (main)
+	235,	-- Gordok Commons (main)
+	236,	-- Capital Gardens (main)
+	237,	-- Court of the Highborne
+	238,	-- Prison of Immol'Thar
+};
 -- #if BEFORE 4.0.3
 local OnTooltipForShendralar = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
@@ -1029,52 +1036,49 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
-					-- #if AFTER LEGION
-					["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
-					-- #else
-					["lore"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.",
-					["description"] = "This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
-					-- #endif
-				}),
-				i(12662),	-- Demonic Rune
-				i(18640),	-- Happy Fun Rock
-				i(18333, {	-- Libram of Focus
-					-- #if AFTER 4.0.3
-					["description"] = "This still drops despite being completely worthless.",
-					-- #endif
-				}),
-				i(18334, {	-- Libram of Protection
-					-- #if AFTER 4.0.3
-					["description"] = "This still drops despite being completely worthless.",
-					-- #endif
-				}),
-				i(18332, {	-- Libram of Rapidity
-					-- #if AFTER 4.0.3
-					["description"] = "This still drops despite being completely worthless.",
-					-- #endif
-				}),
-				applyclassicphase(PHASE_FIVE, i(21982, {	-- Ogre Warbeads
-					["timeline"] = { REMOVED_4_0_3 },
-					-- #if BEFORE 4.0.3
-					["crs"] = {
-						11441,	-- Gordok Brute
-						14351,	-- Gordok Bushwacker
-						11445,	-- Gordok Captain
-						11440,	-- Gordok Enforcer
-						11444,	-- Gordok Mage-Lord
-						11442,	-- Gordok Mauler
-						11443,	-- Gordok Ogre-Mage
-						11450,	-- Gordok Reaver
-						11448,	-- Gordok Warlock
-					},
-					-- #endif
-				})),
+				["maps"] = ALL_DIREMAUL_MAPS,
+				["groups"] = {
+					i(12662),	-- Demonic Rune
+					i(18640),	-- Happy Fun Rock
+					i(18333, {	-- Libram of Focus
+						-- #if AFTER 4.0.3
+						["description"] = "This still drops despite being completely worthless.",
+						-- #endif
+					}),
+					i(18334, {	-- Libram of Protection
+						-- #if AFTER 4.0.3
+						["description"] = "This still drops despite being completely worthless.",
+						-- #endif
+					}),
+					i(18332, {	-- Libram of Rapidity
+						-- #if AFTER 4.0.3
+						["description"] = "This still drops despite being completely worthless.",
+						-- #endif
+					}),
+					applyclassicphase(PHASE_FIVE, i(21982, {	-- Ogre Warbeads
+						["timeline"] = { REMOVED_4_0_3 },
+						-- #if BEFORE 4.0.3
+						["crs"] = {
+							11441,	-- Gordok Brute
+							14351,	-- Gordok Bushwacker
+							11445,	-- Gordok Captain
+							11440,	-- Gordok Enforcer
+							11444,	-- Gordok Mage-Lord
+							11442,	-- Gordok Mauler
+							11443,	-- Gordok Ogre-Mage
+							11450,	-- Gordok Reaver
+							11448,	-- Gordok Warlock
+						},
+						-- #endif
+					})),
+				},
 			}),
 			n(COMMON_BOSS_DROPS, {
+				["provider"] = { "o", 179547 },	-- A Dusty Tome
 				-- #if BEFORE 4.0.3
 				["description"] = "The following items can drop from any boss in Dire Maul and also from Dusty Tomes on the ground.",
 				-- #endif
+				["maps"] = ALL_DIREMAUL_MAPS,
 				["groups"] = {
 					i(18357, {	-- Codex of Defense
 						["timeline"] = { REMOVED_4_0_3 },
@@ -1092,7 +1096,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					i(18401, {	-- Nostro's Compendium of Dragon Slaying
-						["timeline"] = { "removed 3.2.2" },
+						["timeline"] = { REMOVED_3_2_2 },
 					}),
 					i(18358, {	-- The Arcanist's Cookbook
 						["timeline"] = { REMOVED_4_0_3 },
@@ -1105,6 +1109,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					}),
 					i(18359, {	-- The Light and How to Swing It
 						["timeline"] = { REMOVED_4_0_3 },
+					}),
+				},
+			}),
+			o(179547, {	-- A Dusty Tome
+				["maps"] = ALL_DIREMAUL_MAPS,
+				["groups"] = {
+					i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
+						-- #if BEFORE 7.0.3
+						["lore"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.",
+						["description"] = "This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
+						-- #else
+						["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.  This can be found in various places throughout all the wings of Dire Maul.\n\n North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\n East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\n West: By the southern generator in Immol'thar's room.",
+						-- #endif
 					}),
 				},
 			}),
@@ -1272,10 +1289,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(22304),	-- Ironweave Gloves
 							i(22472),	-- Boots of Ferocity
 							i(22401, {	-- Libram of Hope
-								["timeline"] = { "deleted 5.0.4" },
+								["timeline"] = { DELETED_5_0_4 },
 							}),
 							i(22345, {	-- Totem of Rebirth
-								["timeline"] = { "deleted 5.0.4" },
+								["timeline"] = { DELETED_5_0_4 },
 							}),
 						},
 					}
@@ -1399,7 +1416,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18497),	-- Sublime Wristguards
 							-- #endif
 							i(18268, {	-- Gordok Inner Door Key
-								["timeline"] = { "deleted 4.0.3" },
+								["timeline"] = { DELETED_4_0_3 },
 							}),
 						},
 					}),
@@ -1428,12 +1445,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #else
 						["description"] = "Avoid him and loot his chest for a key to open the door.",
 						["groups"] = {
-							i(18266),	-- Gordok Courtyard Key
+							i(18266, {	-- Gordok Courtyard Key
+								["provider"] = { "o", 179516 },	-- Fengus's Chest
+							}),
 						},
 						-- #endif
 					}),
 					e(414, {	-- Guard Slip'kik
 						["creatureID"] = 14323,
+						["provider"] = { "o", 179485 },	-- Broken Trap
 						["description"] = "Trap him using the Broken Trap.",
 						-- #if AFTER 4.0.3
 						["sourceQuest"] = 27118,	-- A Broken Trap
@@ -1533,7 +1553,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18522),	-- Band of the Ogre King
 							applyclassicphase(PHASE_THREE, i(19258)),	-- Ace of Warlords
 							i(18780, {	-- Top Half of Advanced Armorsmithing: Volume I
-								["timeline"] = { "deleted 4.0.3" },
+								["timeline"] = { DELETED_4_0_3 },
 							}),
 						},
 					}),
@@ -1710,7 +1730,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18370),	-- Vigilance Charm
 							applyclassicphase(TBC_PHASE_ONE, i(24345, {	-- Book of Cower IV
 								["spellID"] = 31709,	-- Cower IV
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 								["classes"] = { DRUID },
 								["rank"] = 4,
 							})),
@@ -1746,6 +1766,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["creatureID"] = 11486,
 						["groups"] = {
 							i(18336, {	-- Gauntlet of Gordok Might
+								["provider"] = { "o", 179545 },	-- The Prince's Chest
 								["description"] = "In the corner of the room that the Prince is in, next to the bookshelves, there is a small chest on the ground that contains the gauntlet. You must kill the Prince in order for the chest to be interactable.",
 							}),
 							i(18392),	-- Distracting Dagger

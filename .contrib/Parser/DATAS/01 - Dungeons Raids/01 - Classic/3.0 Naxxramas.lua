@@ -1899,7 +1899,7 @@ applyclassicphase(PHASE_SIX,
 						["groups"] = {
 							n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
 								["lore"] = "Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
-								["timeline"] = { "added 1.11.1.7272" },
+								["timeline"] = { ADDED_1_11_1 },
 								["groups"] = {
 									i(22719, {	-- Omarion's Handbook
 										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
@@ -1989,7 +1989,7 @@ applyclassicphase(PHASE_SIX,
 									i(22350),	-- Desecrated Tunic
 									i(13262, {	-- Ashbringer
 										["lore"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
-										["timeline"] = { "created 1.11.1.7318" },
+										["timeline"] = { CREATED_1_11_1 },
 										["collectible"] = false,
 									}),
 									i(22691),	-- Corrupted Ashbringer
@@ -2060,7 +2060,7 @@ applyclassicphase(PHASE_SIX,
 										-- #if BEFORE TBC
 										["description"] = "These were made available after the TBC Prepatch.",
 										-- #endif
-										["timeline"] = { "created 1.11.1.5462", "added 2.0.1.6180", REMOVED_3_0_2 },
+										["timeline"] = { CREATED_1_11_1, ADDED_2_0_1, REMOVED_3_0_2 },
 									}),
 									i(23047),	-- Eye of the Dead
 									i(23040),	-- Glyph of Deflection

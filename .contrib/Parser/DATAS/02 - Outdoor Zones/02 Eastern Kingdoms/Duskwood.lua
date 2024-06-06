@@ -15,30 +15,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(4907, {	-- Duskwood Quests
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
-						crit(1, {	-- The Legend of Stalvan
+						crit(38344, {	-- The Legend of Stalvan
 							["sourceQuest"] = 26674,	-- Mistmantle's Revenge
 						}),
-						crit(2, {	-- Morbent Fel
+						crit(38345, {	-- Morbent Fel
 							["sourceQuest"] = 26754,	-- Morbent's Bane
 						}),
-						crit(3, {	-- A Hermit's Errand
+						crit(38347, {	-- A Hermit's Errand
 							["sourceQuest"] = 26727,	-- The Embalmer's Revenge
 						}),
-						crit(4, {	-- Mor'ladim
+						crit(38346, {	-- Mor'ladim
 							["sourceQuest"] = 26797,	-- A Daughter's Love
 						}),
-						crit(5, {	-- Citizens of Darkshire
-							["sourceQuests"] = {
-								26686,	-- Bones That Walk
-								26623,	-- Dusky Crab Cakes
-								26620,	-- Seasoned Wolf Kabobs
-								26691,	-- Worgen in the Woods
-							},
+						crit(38348, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26686,	-- Bones That Walk
+						}),
+						crit(38349, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26691,	-- Worgen in the Woods
+						}),
+						crit(38350, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26620,	-- Seasoned Wolf Kabobs
+						}),
+						crit(38351, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26623,	-- Dusky Crab Cakes
 						}),
 					},
 					-- #else
@@ -56,30 +60,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(12430, {	-- Duskwood Quests
-					["timeline"] = { "added 7.3.5.25727" },
+					["timeline"] = { ADDED_7_3_5 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if ANYCLASSIC
 					-- #if AFTER MOP
 					["groups"] = {
-						crit(1, {	-- The Legend of Stalvan
+						crit(38344, {	-- The Legend of Stalvan
 							["sourceQuest"] = 26674,	-- Mistmantle's Revenge
 						}),
-						crit(2, {	-- Morbent Fel
+						crit(38345, {	-- Morbent Fel
 							["sourceQuest"] = 26754,	-- Morbent's Bane
 						}),
-						crit(3, {	-- A Hermit's Errand
+						crit(38347, {	-- A Hermit's Errand
 							["sourceQuest"] = 26727,	-- The Embalmer's Revenge
 						}),
-						crit(4, {	-- Mor'ladim
+						crit(38346, {	-- Mor'ladim
 							["sourceQuest"] = 26797,	-- A Daughter's Love
 						}),
-						crit(5, {	-- Citizens of Darkshire
-							["sourceQuests"] = {
-								26686,	-- Bones That Walk
-								26623,	-- Dusky Crab Cakes
-								26620,	-- Seasoned Wolf Kabobs
-								26691,	-- Worgen in the Woods
-							},
+						crit(38348, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26686,	-- Bones That Walk
+						}),
+						crit(38349, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26691,	-- Worgen in the Woods
+						}),
+						crit(38350, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26620,	-- Seasoned Wolf Kabobs
+						}),
+						crit(38351, {	-- Citizens of Darkshire
+							["sourceQuest"] = 26623,	-- Dusky Crab Cakes
 						}),
 					},
 					-- #else
@@ -133,13 +141,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(121),	-- Tranquil Gardens Cemetery
 				exploration(856),	-- Twilight Grove
 				exploration(93),	-- Vul'Gol Ogre Mound
-				--[[
-				exploration(2098),	-- Dawning Wood Catacombs
-				exploration(2161),	-- Roland's Doom
-				exploration(32),	-- The Cemetary
-				exploration(244),	-- The Whipple Estate
-				exploration(13),	-- The World Tree
-				]]--
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(FACTIONS, {
@@ -155,7 +156,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(622, {	-- Raven Hill, Duskwood
 					["cr"] = 43697,	-- John Shelby <Gryphon Master>
 					["coord"] = { 21.0, 56.6, DUSKWOOD },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -165,7 +166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(210250, {	-- Engraved Gold Ring
 						["coord"] = { 23.3, 72.8, DUSKWOOD },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							215,	-- Defias Night Runner
@@ -196,6 +197,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["providers"] = {
 						{ "n", 576 },	-- Watcher Ladimore
 						{ "i", 2162 },	-- Sarah's Ring
+						{ "o", 61 },	-- A Weathered Grave
 					},
 					["sourceQuest"] = 229,	-- The Daughter Who Lived
 					["coord"] = { 73.6, 46.8, DUSKWOOD },
@@ -212,6 +214,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["providers"] = {
 						{ "n", 576 },	-- Watcher Ladimore
 						{ "i", 2162 },	-- Sarah's Ring
+						{ "o", 61 },	-- A Weathered Grave
 					},
 					["sourceQuest"] = 26796,	-- The Daughter Who Lived
 					["coord"] = { 73.6, 46.8, DUSKWOOD },
@@ -219,10 +222,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(156955, {	-- Reconditioned Archeus
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(156954, {	-- Refurbished Archeus
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(60937, {	-- Restored Archeus
 							["timeline"] = { ADDED_4_0_3 },
@@ -246,13 +249,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157003, {	-- Corpseweed Hewer
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(60924, {	-- Corpseweed Sickle
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131587, {	-- Fess' Chain Apron
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60925, {	-- Festering Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -320,7 +323,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131604, {	-- Raven Hill Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60935, {	-- Raven Hill Sands
 							["timeline"] = { ADDED_4_0_3 },
@@ -355,7 +358,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 203 },	-- Skeletal Mage
 						}),
 						i(131581, {	-- Night Watcher's Mail
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60941, {	-- Shoulderwraps of Honor
 							["timeline"] = { ADDED_4_0_3 },
@@ -423,7 +426,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131580, {	-- Cosmologist's Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60908, {	-- Stargazer's Pantaloons
 							["timeline"] = { ADDED_4_0_3 },
@@ -458,7 +461,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131597, {	-- Curse Breaker's Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60929, {	-- Moon Shriek Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -499,7 +502,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131574, {	-- Drifter's Cinch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60898, {	-- Ghost Hair Band
 							["timeline"] = { ADDED_4_0_3 },
@@ -739,7 +742,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131579, {	-- Retired Linked Pants
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60904, {	-- Ring of the Fool
 							["timeline"] = { ADDED_4_0_3 },
@@ -826,7 +829,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131578, {	-- Despondent Spirit Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60918, {	-- Slippers of the Crescent Moon
 							["timeline"] = { ADDED_4_0_3 },
@@ -916,7 +919,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131596, {	-- Yorgen's Mitts
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1144,7 +1147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- 0/1 Muddy Journal Pages
 							["providers"] = {
 								{ "i",    938 },	-- Muddy Journal Pages
-								{ "n", 204591 },	-- Muddy Journal Page
+								{ "o", 204591 },	-- Muddy Journal Page
 							},
 							["coord"] = { 73.7, 79.1, DUSKWOOD },
 						}),
@@ -1152,10 +1155,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156975, {	-- Exorcist's Dagger
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157002, {	-- Exorcist's Crossbow
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(60914, {	-- Exorcist's Wand
 							["timeline"] = { ADDED_4_0_3 },
@@ -1164,7 +1167,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131577, {	-- The Clerk's Chain
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1301,7 +1304,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131600, {	-- Ghoul-Slayer Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60921, {	-- Sister Elsington's Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -1722,19 +1725,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "i",  59357 },	-- A Slashed Bundle of Letters
 								{ "o", 204462 },	-- Pile of Scraps
 							},
-							["coord"] = { 61.2, 40.4, DUSKWOOD },
+							["coord"] = { 61.22, 40.51, DUSKWOOD },
 						}),
 						i(60911, {	-- Archivist's Lighter
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156973, {	-- Archivist's Staff
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(156974, {	-- Archivist's Walking Stick
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(131575, {	-- Brightwood Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60912, {	-- Cragwood Clutches
 							["timeline"] = { ADDED_4_0_3 },
@@ -1847,7 +1850,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9429, {	-- Travel to Darkshire
 					["qg"] = 17103,	-- Emissary Taluun
 					["coord"] = { 78.2, 18.2, STORMWIND_CITY },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["lvl"] = 18,
 				}),
@@ -1934,7 +1937,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131564, {	-- Night Watch Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(1127),	-- Flash Bundle
 					},
@@ -2033,7 +2036,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131582, {	-- Callous Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2275,7 +2278,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210251, {	-- Engraved Silver Ring
 					--["provider"] = { "o",  },	-- Small Chest at Tranquil Gardens Cemetery South of Darkshire (TODO: Find ObjectID)
 					["coord"] = { 81, 71, DUSKWOOD },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210252, {	-- Rune of Shiving
@@ -2286,7 +2289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["description"] = "With both rings, /kneel in front of the statue in the middle of Raven Hill Cemetary.",
 					["coord"] = { 19.9, 45.5, DUSKWOOD },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424988),	-- Engrave Gloves - Shiv
@@ -2772,7 +2775,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(210043, {	-- Symbol of the Second Owl
 					["coord"] = { 65.2, 27.8, DUSKWOOD },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["cr"] = 211200,	-- Agon
 				})),

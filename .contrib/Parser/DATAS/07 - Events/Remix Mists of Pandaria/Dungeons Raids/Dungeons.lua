@@ -1,16 +1,42 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-DUNGEONS = createHeader({
-	readable = "Dungeons",
-	--icon = "",
-	text = {
-		en = "Dungeons",
-	},
-});
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
+local MAPS = {
+	437,	-- Gate of the Setting Sun
+	438,	-- Gate Watch Tower
+	453,	-- The Crimson Assembly Hall
+	454,	-- Vaults of Kings Past
+	455,	-- Throne of Ancient Conquerors
+	431, 	-- Scarlet Halls
+	432, 	-- Scarlet Halls
+	SCARLET_MONASTERY,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
+	436,	-- Scarlet Monasatery: Crusader's Chapel (Last two bosses)
+	SCHOLOMANCE,
+	477, 	-- Scholomance
+	478, 	-- Scholomance
+	479,	-- Scholomance
+	443,	-- Shado-Pan Monastery
+	444,	-- Cloudstrike Dojo
+	445,	-- Snowdrift Dojo
+	446,	-- Sealed Chambers
+	457,	-- Siege of Niuzao Temple
+	458,	-- The Hollowed Out Tree
+	459,	-- Upper Tree Ring
+	439,	-- Grain Cellar
+	440,	-- Stormstout Brewhall
+	441,	-- The Great Wheel
+	442,	-- The Tasting Room
+	429,	-- Temple of the Jade Serpent
+	430,	-- The Scrollkeeper's Sanctum
+}
+local mapped = function(id, t)
+	local o = n(id ,t)
+	o.maps = MAPS
+	return o
+end
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(DUNGEONS, {
-		n(ACHIEVEMENTS, {
+		mapped(ACHIEVEMENTS, {
 			ach(20005, {	-- Heroic: Pandaria Dungeons
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -29,8 +55,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				},
 			}),
 		}),
-		n(ARMOR, {
-			d(DIFFICULTY.DUNGEON.NORMAL, {
+		d(DIFFICULTY.DUNGEON.NORMAL, {
+			mapped(ARMOR, {
 				filter(CLOTH, {
 					i(213644),	-- Breezebinder's Bracers
 					i(213643),	-- Breezebinder's Cord
@@ -61,8 +87,52 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214410),	-- Stormbrew Leggings
 					i(214409),	-- Stormbrew Spaulders
 				}),
+				filter(PLATE, {
+					i(214743),	-- Greenstone Bracers
+					i(214744),	-- Greenstone Breastplate
+					i(214740),	-- Greenstone Gauntlets
+					i(214739),	-- Greenstone Girdle
+					i(214741),	-- Greenstone Helm
+					i(214737),	-- Greenstone Legguards
+					i(214738),	-- Greenstone Pauldrons
+					i(214742),	-- Greenstone Sabatons
+				}),
 			}),
-			d(DIFFICULTY.DUNGEON.HEROIC, {
+			mapped(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+				i(215984),	-- Bjam's Greatsword
+				i(216581),	-- Deflector of the Protectorate
+				i(215535),	-- Featherdraw Warbow
+				i(215806),	-- Ghostheart Warspear
+				i(215883),	-- Greatstaff of the Path
+				i(215754),	-- Jol'Grum's Mace
+				i(215954),	-- Kor'dok's Sword
+				i(215604),	-- Mogu Severer
+				i(215879),	-- Mountainsage Spire
+				i(215750),	-- Ook Breaker
+				i(215705),	-- Penate's Pistol
+				i(215609),	-- Sha-Touched Shanker
+				i(215783),	-- Shado-Pan Maul
+				i(215490),	-- Snowdrift Battleaxe
+				i(215874),	-- Staff of Iron Will
+				i(216577),	-- Sutiru's Shield
+				i(215682),	-- Swarmkeeper's Channel
+				i(215645),	-- Tian Handblade
+				i(216005),	-- Wand of Spiritweaving
+				i(215612),	-- Yaungol Shanker
+			})),
+		}),
+		d(DIFFICULTY.DUNGEON.HEROIC, {
+			mapped(ARMOR, {
+				filter(CLOTH, {
+					i(213647),	-- Windwhisper Amice
+					i(213646),	-- Windwhisper Belt
+					i(213649),	-- Windwhisper Cowl
+					i(213645),	-- Windwhisper Cuffs
+					i(213650),	-- Windwhisper Handwraps
+					i(213648),	-- Windwhisper Pants
+					i(213652),	-- Windwhisper Raiment
+					i(213651),	-- Windwhisper Treads
+				}),
 				filter(LEATHER, {
 					i(214035),	-- Mogubreaker Bindings
 					i(214039),	-- Mogubreaker Cover
@@ -73,7 +143,52 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214042),	-- Mogubreaker Vest
 					i(214036),	-- Mogubreaker Waistband
 				}),
+				filter(MAIL, {
+					i(214418),	-- Mogu Lord's Armbands
+					i(214413),	-- Mogu Lord's Chain
+					i(214417),	-- Mogu Lord's Chestguard
+					i(214414),	-- Mogu Lord's Gloves
+					i(214415),	-- Mogu Lord's Headguard
+					i(214411),	-- Mogu Lord's Legguards
+					i(214412),	-- Mogu Lord's Pauldrons
+					i(214416),	-- Mogu Lord's Sabatons
+				}),
+				filter(PLATE, {
+					i(214745),	-- Yaungolian Battleplate
+					i(214750),	-- Yaungolian Greatbelt
+					i(214748),	-- Yaungolian Greathelm
+					i(214749),	-- Yaungolian Handguards
+					i(214752),	-- Yaungolian Legplates
+					i(214751),	-- Yaungolian Spaulders
+					i(214746),	-- Yaungolian Vambraces
+					i(214747),	-- Yaungolian Warboots
+				}),
 			}),
+			mapped(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
+				i(216582),	-- Bulwark of the Protectorate
+				i(215646),	-- Claw of the Fallen Temple
+				i(215491),	-- Dubious Waraxe
+				i(215536),	-- Ennadee's Longbow
+				i(216578),	-- Impervious Bulwark
+				i(215983),	-- Jade Grand Falchion
+				i(215755),	-- Je'lyu, Scepter of the Serpent
+				i(215882),	-- Lorewalker's Staff
+				i(215704),	-- Mantid Firebelcher
+				i(215684),	-- Mantid Tuning Fork
+				i(215613),	-- Mogu Lord's Blade
+				i(215751),	-- Porter's Mace
+				i(215605),	-- Ravenclaw Dagger
+				i(215807),	-- Ritter's Spear
+				i(216006),	-- Skullcap Wand
+				i(215878),	-- Springrain Spire
+				i(215875),	-- Staff of Stolen Hope
+				i(215784),	-- Taran Zhu's Bonebreaker
+				i(215608),	-- Tolakesh, Horn of Niuzao
+				i(215955),	-- Zakai's Swarmslicer
+			})),
+		}),
+		mapped(REWARDS, {
+			i(220764),	-- Bonus Experience
 		}),
 		inst(303, {	-- Gate of the Setting Sun
 			["coord"] = { 15.8, 74.8, VALE_OF_ETERNAL_BLOSSOMS },
@@ -182,7 +297,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		inst(246, {	-- Scholomance
 			["coord"] = { 69.07, 72.96, WESTERN_PLAGUELANDS },
 			["maps"] = {
-				477, 478, 479,
+				SCHOLOMANCE, 477, 478, 479,
 			},
 			["g"] = {
 				d(DIFFICULTY.DUNGEON.NORMAL, {

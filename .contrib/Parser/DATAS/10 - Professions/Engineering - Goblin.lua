@@ -1,6 +1,6 @@
 -- #if ANYCLASSIC
 profession(ENGINEERING, {
-	prof(20222, {	-- Goblin Engineering
+	prof(GOBLIN_ENGINEERING, {
 		["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
 		["sourceQuest"] = 3639,	-- Show Your Work
 		["groups"] = {
@@ -12,7 +12,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					applyclassicphase(WRATH_PHASE_FOUR, {
 						["name"] = "Shatter Rounds",
-						["timeline"] = { ADDED_3_3_0, "deleted 4.0.1" },
+						["timeline"] = { ADDED_3_3_0, DELETED_4_0_1 },
 						["recipeID"] = 72952,
 					}),
 				},
@@ -24,7 +24,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Dimensional Ripper - Area 52",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 36954,
 					}),
 					{
@@ -43,7 +43,7 @@ profession(ENGINEERING, {
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Goblin Rocket Launcher",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30563,
 					}),
 					{
@@ -66,7 +66,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					{
 						["name"] = "Big Daddy",
-						["timeline"] = { "added 4.0.1.12941" },
+						["timeline"] = { ADDED_4_0_1 },
 						["recipeID"] = 95707,
 					},
 					{
@@ -92,7 +92,7 @@ profession(ENGINEERING, {
 					},
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Super Sapper Charge",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30560,
 					}),
 					{
@@ -101,12 +101,12 @@ profession(ENGINEERING, {
 					},
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "The Bigger One",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30558,
 					}),
 					{
 						["name"] = "The Mortar: Reloaded",
-						["timeline"] = { "deleted 4.0.1" },
+						["timeline"] = { DELETED_4_0_1 },
 						["recipeID"] = 13240,
 					},
 				},
@@ -117,12 +117,12 @@ profession(ENGINEERING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Foreman's Enchanted Helmet",
-						["timeline"] = { "added 2.1.0.6692" },
+						["timeline"] = { ADDED_2_1_0 },
 						["recipeID"] = 30565,
 					}),
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Foreman's Reinforced Helmet",
-						["timeline"] = { "added 2.0.1.6180" },
+						["timeline"] = { ADDED_2_0_1 },
 						["recipeID"] = 30566,
 					}),
 					{
@@ -146,7 +146,7 @@ profession(ENGINEERING, {
 				["groups"] = {
 					{
 						["name"] = "Depleted-Kyparium Rocket",
-						["timeline"] = { "added 5.0.1.15699" },
+						["timeline"] = { ADDED_5_0_4 },
 						["recipeID"] = 127138,
 					},
 				},

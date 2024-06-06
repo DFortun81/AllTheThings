@@ -114,13 +114,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(226),	-- The Skittering Dark
 				exploration(227),	-- Valgan's Field
-				--[[
-				exploration(926),	-- Bucklebree Farm
-				exploration(235),	-- Fenris Keep
-				exploration(1338),	-- Lordamere Lake
-				exploration(306),	-- South Tide's Run
-				exploration(2398),	-- The Great Sea
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(645, {	-- Forsaken High Command, Silverpine Forest
@@ -138,7 +131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(654, {	-- The Forsaken Front, Silverpine Forest
 					["cr"] = 46552,	-- Steven Stutzka <Bat Handler>
 					["coord"] = { 50.8, 63.6, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(10, {	-- The Sepulcher, Silverpine Forest
@@ -218,7 +211,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/1 Berard's Journal
-							["provider"] = { "i", 3255 },	-- Berard's Journal
+							["providers"] = {
+								{ "i", 3255 },	-- Berard's Journal
+								{ "o", 1594 },	-- Berard's Bookshelf
+							},
 							["coord"] = { 43.0, 73.3, SILVERPINE_FOREST },
 						}),
 					},
@@ -285,7 +281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131678, {	-- Inconspicuous Footguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -323,7 +319,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 9,
 					["groups"] = {
 						objective(1, {	-- 0/1 Remedy of Arugal
-							["provider"] = { "i", 3155 },	-- Remedy of Arugal
+							["providers"] = {
+								{ "i", 3155 },	-- Remedy of Arugal
+								{ "o", 1571 },	-- Dusty Spellbooks
+							},
 							["coord"] = { 52.8, 28.4, SILVERPINE_FOREST },
 						}),
 					},
@@ -471,7 +470,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131680, {	-- Belt of Absolute Allegiance
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62896, {	-- Belt of Beginnings
 							["timeline"] = { ADDED_4_0_3 },
@@ -538,7 +537,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131640, {	-- Rear Guard Bands
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62851, {	-- Rear Guard Britches
 							["timeline"] = { ADDED_4_0_3 },
@@ -583,7 +582,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(131679, {	-- Better, Stronger, Faster Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62887, {	-- Bracers of the Million Gold Man
 							["timeline"] = { ADDED_4_0_3 },
@@ -621,7 +620,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131660, {	-- Cord of the Sepulcher
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62847, {	-- Sea Dog Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -657,7 +656,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(131629, {	-- Maggot-Ridden Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62835, {	-- Maggot-Ridden Leggings
 							["timeline"] = { ADDED_4_0_3 },
@@ -794,7 +793,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131652, {	-- Trousers of Desperate Measures
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62856, {	-- Underestimated Crossbow
 							["timeline"] = { ADDED_4_0_3 },
@@ -1112,7 +1111,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131636, {	-- Steel Thunder Chestbrace
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1238,7 +1237,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131661, {	-- Treads of Red Waters
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1341,7 +1340,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131634, {	-- Grasps of the Survivor
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62831, {	-- Treads of the Survivor
 							["timeline"] = { ADDED_4_0_3 },
@@ -1445,7 +1444,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(47003, {	-- Bolgaff <The Mad Hunter>
 					["coord"] = { 48.8, 25.4, SILVERPINE_FOREST },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(50814, {	-- Corpsefeeder
 					["coord"] = { 49.2, 68.2, SILVERPINE_FOREST },
@@ -1459,7 +1458,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if BEFORE 4.0.3
 						i(8491, {	-- Black Tabby Cat (PET!)
-							["timeline"] = { "added 1.11.1.5462" },
+							["timeline"] = { ADDED_1_11_1 },
 							["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item. If you were to sell this item on the Neutral AH you might be able to fetch a pretty penny to collectors.",
 						}),
 						-- #endif
@@ -1481,7 +1480,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { SHAMAN },
 					["groups"] = {
 						i(208758, {	-- Earthen Rune
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { SHAMAN },
 							["groups"] = {
 								recipe(410107),	-- Engrave Pants - Way of Earth
@@ -1585,14 +1584,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 48.4, 23.0, SILVERPINE_FOREST },
 						{ 49.4, 35.2, SILVERPINE_FOREST },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(46981, {	-- Nightlash
 					["coords"] = {
 						{ 53.0, 28.0, SILVERPINE_FOREST },
 						{ 52.4, 25.2, SILVERPINE_FOREST },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(12432, {  -- Old Vicejaw
 					["coords"] = {
@@ -1618,9 +1617,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				-- #if BEFORE 4.0.3
+				-- #if BEFORE 10.1.7
 				n(1944, {	-- Rot Hide Bruiser
-					-- Added to Tirisfall in 10.1.7
+					-- Moved to Tirisfall in 10.1.7
 					["coord"] = { 67.6, 24.4, SILVERPINE_FOREST },
 					["timeline"] = { REMOVED_4_0_3 },
 					["groups"] = {
@@ -1663,7 +1662,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(212753, {	-- Tortured Soul
 					["provider"] = { "i", 210713 },	-- Tortured Soul
 					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["groups"] = {
 						i(208744, {	-- Rune of Shadowbolts
@@ -1680,7 +1679,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_ONE, n(212809, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Wailing Spirit
+				applyclassicphase(SOD_PHASE_ONE, n(212809, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {	-- Wailing Spirit
 					["coord"] = { 60.2, 74.4, SILVERPINE_FOREST },
 					["groups"] = {
 						i(205905, {	-- Memory of a Devout Champion
@@ -1702,7 +1701,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
 					["provider"] = { "o", 411674 },	-- Prophecy of a King's Demise
 					["coord"] = { 65.8, 23.5, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["groups"] = {
 						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
@@ -1712,7 +1711,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 409131 },	-- Rusty Chest
 					["description"] = "You will need to use Sprint to make the jump to the platform.",
 					["coord"] = { 45.2, 67.2, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424984),	-- Engrave Gloves - Saber Slash
@@ -1950,20 +1949,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210696, {	-- Rot Bane
 					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
 					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["cr"] = 212598,	-- Recke Grinnes
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210253, {	-- Rot Totem
 					["coord"] = { 45.6, 22.6, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { SHAMAN },
 					["cr"] = 1773,	-- Rot Hide Mystic
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208778, {	-- Rune of Quick Strike
 					["provider"] = { "i", 210696 },	-- Rot Bane
 					["coord"] = { 66.2, 31.0, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["crs"] = {
 						1943,	-- Raging Rot Hide
@@ -1978,7 +1977,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
 					["coord"] = { 50.8, 61.6, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["cr"] = 1867,	-- Dalaran Apprentice
@@ -1994,7 +1993,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210713, {	-- Tortured Soul
 					["description"] = "Use Life Tap in a safe area to summon the Tortured Soul.",
 					["coord"] = { 59.4, 70.8, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						1974,	-- Ravenclaw Drudger
@@ -2004,7 +2003,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(210195, {	-- Unbalanced Idol
 					["coord"] = { 52.8, 27.4, SILVERPINE_FOREST },
 					["description"] = "Moon: Cast Moonfire a lot.\nEmerald Dream: Cast Healing Touch (Rank 1) a lot.\nWild: Shapeshift a lot.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["crs"] = {
 						1769,	-- Moonrage Whitescalp

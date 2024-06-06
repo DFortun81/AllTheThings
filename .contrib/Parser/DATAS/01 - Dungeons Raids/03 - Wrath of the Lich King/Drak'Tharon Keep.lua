@@ -166,7 +166,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						{ "i", 35797 },	-- Drakuru's Elixir
 					},
 					["altQuests"] = { 12238 },	-- Cleansing Drak'Tharon
-					["timeline"] = { "added 4.3.0.14890" },
+					["timeline"] = { ADDED_4_3_0 },
 					["cost"] = { { "i", 38303, 5 } },	-- Enduring Mojo
 					["lvl"] = lvlsquish(73, 73, 15),
 					["groups"] = {
@@ -201,7 +201,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29828, {	-- What the Scourge Dred
 					["qg"] = 26664,	-- Kurzel
-					["timeline"] = { "added 4.3.0.14890" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 King Dred's Tooth
@@ -273,7 +273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #endif
 						i(35631),	-- Crystal Pendant of Warding
 						i(157558, {	-- Shoddily Stitched Shoulderguards
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						-- #if AFTER 7.3.5
 						i(37722),	-- Breastplate of Undeath (7.3.5 - Used to be only Heroic Mode)
@@ -297,7 +297,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(37725),	-- Savage Wound Wrap (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
 						i(157561, {	-- Dino-Toothed Waistguard
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(35635),	-- Stable Master's Breeches
 						-- #if AFTER 7.3.5
@@ -348,7 +348,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						}),
 					}),
 					-- #endif
@@ -381,7 +381,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #if AFTER 7.3.5
 							i(35631),	-- Crystal Pendant of Warding (7.3.5 - Used to be only Normal Mode)
 							i(157558, {	-- Shoddily Stitched Shoulderguards
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							-- #endif
 							i(37722),	-- Breastplate of Undeath
@@ -405,7 +405,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37724),	-- Handler's Arm Strap
 							i(37725),	-- Savage Wound Wrap
 							i(157561, {	-- Dino-Toothed Waistguard
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							-- #if AFTER 7.3.5
 							i(35635),	-- Stable Master's Breeches (7.3.5 - Used to be only Normal Mode)
@@ -420,7 +420,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								["timeline"] = { ADDED_4_0_3 },
 							}),
 							i(41795, {	-- Design: Timeless Twilight Opal [CATA+] / Design: Timeless Forest Emerald
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(37733),	-- Mojo Masked Crusher
 							-- #if AFTER 7.3.5

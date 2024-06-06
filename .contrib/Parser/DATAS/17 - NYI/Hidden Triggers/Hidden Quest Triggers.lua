@@ -21,9 +21,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	-------------------
 	expansion(EXPANSION.TBC, {
 		--	QUESTING / LEVELING
-		-- #if BEFORE WRATH
+		-- #if BEFORE CATA
 		-- This got repurposed into an actual quest with Cata.
-		q(8329, { ["timeline"] = { "created 2.0.1" }, }),-- Warrior Training, Triggered by a Blood Elf Rogue after completing [lq:9392<8325 on Wrath Classic]
+		q(8329),-- Warrior Training, Triggered by a Blood Elf Rogue after completing [lq:9392<8325 on Wrath Classic]
 		-- #endif
 		q(11518),	-- Sunwell Daily Portal Flag
 		q(11522),	-- Triggers with Rediscovering Your Roots (11521)
@@ -48,6 +48,10 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(12452),	-- Dragonblight - triggers when turning in "The Fate of the Ruby Dragonshrine". duplicate version of a quest during early development
 		q(12693),	-- Sholazar Basin - Wolvar Faction Choice Tracker
 		q(12694),	-- Sholazar Basin - Oracle Faction Choice Tracker
+		-- #if BEFORE CATA
+		q(14438),	-- Sharing the Land (triggeres with 'Sharing the Land' questID 745)
+		q(14439),	-- Journey into Thunder Bluff (triggeres with 'Journey into Thunder Bluff' questID 775)
+		-- #endif
 
 		-- Riding
 		q(14185),	-- FLAG: Riding Trainer Advertisement (40)

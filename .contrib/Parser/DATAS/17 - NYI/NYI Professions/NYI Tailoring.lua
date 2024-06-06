@@ -4,6 +4,43 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(TAILORING, {
 		n(CRAFTABLES, {
+			expansion(EXPANSION.CLASSIC, {
+				i(7027),	-- Boots of Darkness
+				i(6243),	-- Green Woolen Robe
+				i(10039),	-- Stormcloth Boots
+				i(10011),	-- Stormcloth Gloves
+				i(10032),	-- Stormcloth Headband
+				i(10010),	-- Stormcloth Pants
+				i(10038),	-- Stormcloth Shoulders
+				i(10020),	-- Stormcloth Vest
+			}),
+			expansion(EXPANSION.TBC, {
+				-- 2.1.3
+				expansion(EXPANSION.TBC, 1.3, bubbleDown({ ["timeline"] = { CREATED_2_1_3 } }, {
+					i(30464),	-- Lifeblood Bracers
+					i(30463),	-- Lifeblood Belt
+					i(30465),	-- Lifeblood Leggings
+					i(30460),	-- Netherflame Belt
+					i(30461),	-- Netherflame Boots
+					i(30459),	-- Netherflame Robe
+				})),
+			}),
+			expansion(EXPANSION.WOD, {
+				-- 6.0.2
+				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					i(114833),	-- Miniature Flying Carpet
+					i(118052),	-- Murloc Chew Toy
+				})),
+			}),
+			expansion(EXPANSION.BFA, {
+				-- 8.0.1
+				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+					i(154698),	-- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
+					i(154701),	-- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
+					i(161988),	-- Tidespray Linen Cloak of the Feather
+					i(161991),	-- Tidespray Linen Cloak of Resilience
+				})),
+			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
 				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
@@ -196,7 +233,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.1
-			expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = {"created 6.0.1"} }, {
+			expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_6_0_2} }, {
 				i(114867),	-- Pattern: Miniature Flying Carpet - NYI
 				r(168851),	-- Miniature Flying Carpet
 				i(114872),	-- Pattern: Greater Hexweave Essence
@@ -207,14 +244,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {CREATED_7_0_3} }, {
 				i(137981),	-- Pattern: Silkweave Cloak
 				i(151746),	-- Pattern: Lightweave Breeches
 			})),
 		}),
 		expansion(EXPANSION.BFA, {
 			-- 8.0.1
-			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = {"created 8.0.1"} }, {
+			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_8_0_1} }, {
 				i(162424),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
 				i(162770),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
 				i(162426),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
@@ -225,7 +262,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		expansion(EXPANSION.SL, {
 			-- 9.0.1
-			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {"created 9.0.1"} }, {
+			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_9_0_1} }, {
 				i(183871),	-- [DNT][REUSE ME] Pattern: Crafter's Mark III
 			})),
 		}),

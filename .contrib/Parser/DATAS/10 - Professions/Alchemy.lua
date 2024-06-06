@@ -573,6 +573,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				{ "i", 127842, 1 },	-- 1xInfernal Alchemist Stone
 			},
 			["groups"] = {
+				i(164379),	-- Bound Infernal Alchemist Stone (QI!)
 				i(151706),	-- Recipe: Astral Alchemist Stone [Rank 1] (RECIPE!)
 			},
 		})),
@@ -1096,7 +1097,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Gurubashi Mojo Madness",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 24266
 				}),
 			}
@@ -1132,7 +1133,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Arcane Protection Potion",
-					["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "timewalking 9.1.0" },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1.0" },
 					["recipeID"] = 17577
 				},
 				applyclassicphase(PHASE_FOUR, {
@@ -1146,7 +1147,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Frost Protection Potion",
-					["timeline"] = { "added 1.11.1.5462", REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 17575
 				},
 				{
@@ -1155,7 +1156,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Holy Protection Potion",
-					["timeline"] = { "created 1.11.1.5462" },	-- Never Implemented
+					["timeline"] = { CREATED_1_11_1 },	-- Never Implemented
 					["recipeID"] = 17579,
 				},
 				{
@@ -1168,7 +1169,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Shadow Protection Potion",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 17578
 				},
 				{
@@ -1222,7 +1223,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				-- #endif
 				{
 					["name"] = "Magic Resistance Potion",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 11453
 				},
 				{
@@ -1272,7 +1273,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Minor Magic Resistance Potion",
-					["timeline"] = { "deleted 5.0.4" },
+					["timeline"] = { DELETED_5_0_4 },
 					["recipeID"] = 3172
 				},
 				{
@@ -1420,7 +1421,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				applyclassicphase(PHASE_FIVE, {
 					["name"] = "Elixir of Greater Firepower",
-					["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },
+					["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },
 					["recipeID"] = 26277
 				}),
 				{
@@ -1476,7 +1477,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Elixir of the Mongoose",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 17571
 				},
 				{
@@ -1489,7 +1490,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Elixir of Waterwalking",	-- See later in SoD TBC if this is true
-					["timeline"] = { "added 2.4.0", "deleted 3.0.1" },
+					["timeline"] = { ADDED_2_4_0, DELETED_3_0_2 },
 					["recipeID"] = 11447,
 				},
 				{
@@ -1541,12 +1542,12 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 			["groups"] = {
 				{
 					["name"] = "Alchemist's Flask",
-					["timeline"] = { "added 5.0.4.15890" },
+					["timeline"] = { ADDED_5_0_4 },
 					["recipeID"] = 114786
 				},
 				{
 					["name"] = "Flask of Chromatic Resistance",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 17638,
 				},
 				{
@@ -1920,7 +1921,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
 					["name"] = "Flask of Chromatic Wonder",
-					["timeline"] = { "removed 5.0.1.20000" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 42736
 				}),
 				{
@@ -2248,7 +2249,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Flask of the North",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 67025
 				},
 				{
@@ -2257,7 +2258,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Lesser Flask of Resistance",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 62213
 				},
 			}
@@ -2810,7 +2811,7 @@ itemrecipe("Recipe: Fel Regeneration Potion", 31681, 38962, TBC_PHASE_ONE);
 itemrecipe("Recipe: Fel Mana Potion", 31682, 38961, TBC_PHASE_ONE);
 itemrecipe("Recipe: Earthen Elixir", 32070, 39637, TBC_PHASE_ONE);
 itemrecipe("Recipe: Elixir of Ironskin", 32071, 39639, TBC_PHASE_ONE);
-itemrecipe("Recipe: Flask of Chromatic Wonder", 33209, 42736, TBC_PHASE_THREE, "removed 5.0.1.20000");
+itemrecipe("Recipe: Flask of Chromatic Wonder", 33209, 42736, TBC_PHASE_THREE, REMOVED_5_0_4);
 
 itemrecipe("Recipe: Elixir of Empowerment", 35294, 28578, TBC_PHASE_FIVE, true);
 itemrecipe("Recipe: Haste Potion", 35295, 28564, TBC_PHASE_FIVE, true);

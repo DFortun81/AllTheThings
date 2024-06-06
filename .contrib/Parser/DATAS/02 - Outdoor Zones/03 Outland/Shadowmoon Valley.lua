@@ -9,7 +9,7 @@ local OnTooltipForNetherwing = [[function(t, tooltipInfo)
 end]];
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(SHADOWMOON_VALLEY, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(SHADOWMOON_VALLEY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Shadowmoon Valley is a fel-infused zone intended for level 25-30 players in southeastern Outland. Illidan Stormrage resides there in the Black Temple, as well as Maiev Shadowsong, held captive there by the Broken. There are several elite areas that document the destruction of the Burning Legion, as well as Illidan's methods of training demon hunters.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_shadowmoon",
@@ -166,9 +166,6 @@ root(ROOTS.Zones, {
 						["OnTooltip"] = OnTooltipForNetherwing,
 					})),
 				}),
-				prof(FISHING, {
-					i(34867),	-- Monstrous Felblood Snapper
-				}),
 				n(FLIGHT_PATHS, {
 					fp(140, {	-- Altar of Sha'tar, Shadowmoon Valley
 						["cr"] = 19581,	-- Maddix <Flight Master>
@@ -193,21 +190,40 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				prof(HERBALISM, {
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32468)),	-- Netherdust Pollen
-				}),
-				prof(MINING, {
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32464)),	-- Nethercite Ore
-				}),
 				petbattles({
 					n(66557, {	-- Bloodknight Antari <Grand Master Pet Tamer>
 						["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 					}),
 				}),
-				prof(SKINNING, {
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32470)),	-- Nethermine Flayer Hide
+				n(PROFESSIONS, {
+					prof(ENGINEERING, {
+						["crs"] = {
+							24868,	-- Niobe Whizzlespark <Engineering Trainer>
+							25099,	-- Jonathan Garrett <Engineering Trainer>
+						},
+						["coords"] = {
+							{ 36.6, 55.0, SHADOWMOON_VALLEY },
+							{ 29.2, 28.6, SHADOWMOON_VALLEY },
+						},
+						["g"] = sharedData({ ["timeline"] = { ADDED_2_3_0 } }, {
+							r(44155),	-- Flying Machine
+							r(44157),	-- Turbo-Charged Flying Machine
+						}),
+					}),
+					prof(FISHING, {
+						i(34867),	-- Monstrous Felblood Snapper
+					}),
+					prof(HERBALISM, {
+						applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
+						applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32468)),	-- Netherdust Pollen
+					}),
+					prof(MINING, {
+						applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
+						applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32464)),	-- Nethercite Ore
+					}),
+					prof(SKINNING, {
+						applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32470)),	-- Nethermine Flayer Hide
+					}),
 				}),
 				n(QUESTS, {
 					q(10642, {	-- A Ghost in the Machine
@@ -424,7 +440,7 @@ root(ROOTS.Zones, {
 							11043,	-- Building a Better Gryphon
 							11044,	-- Visions of Destruction
 							-- #if AFTER 7.3.5.25600
-							49550,	-- Hero's Call: Shadowmoon Valley!
+							49550,	-- Hero's Call: Shadowmoon Valley! (Outland)
 							-- #endif
 						},
 						["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
@@ -897,6 +913,11 @@ root(ROOTS.Zones, {
 							i(30719),	-- Spectrecles
 						},
 					}),
+					heroscall(q(49550, {	-- Hero's Call: Shadowmoon Valley! (Outland)
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 67,
+					})),
 					q(10621, {	-- Illidari Bane-Shard (A)
 						["provider"] = { "i", 30756 },	-- Illidari Bane-Shard (A)
 						["races"] = ALLIANCE_ONLY,
@@ -1109,13 +1130,13 @@ root(ROOTS.Zones, {
 							i(30924),	-- Gloves of the High Magus
 							-- #if BEFORE MOP
 							i(31025, {	-- Idol of the Avenger
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(31033, {	-- Libram of Righteous Power
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(31031, {	-- Stormfury Totem
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -1433,7 +1454,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11047, {	-- The Apprentice's Request
 						["qg"] = 23280,	-- Agadai
-						["coord"] = { 52.0, 54.4, NAGRAND },
+						["coord"] = { 52.0, 54.4, BLADES_EDGE_MOUNTAINS },
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
@@ -1913,6 +1934,11 @@ root(ROOTS.Zones, {
 							i(31115),	-- Uvuros Plated Spaulders
 						},
 					}),
+					warchiefscommand(q(49532, {	-- Warchief's Command: Shadowmoon Valley!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(10577, {	-- What Illidan Wants, Illidan Gets...
 						["qg"] = 21293,	-- Borak, Son of Oronok
 						["sourceQuest"] = 10576,	-- The Shadowmoon Shuffle
@@ -2047,7 +2073,7 @@ root(ROOTS.Zones, {
 							30758,	-- Aldor Guardian Rifle
 						}},
 						["groups"] = {
-							i(23807, {	-- Schematic: Adamantite Scope
+							i(23807, {	-- Schematic: Adamantite Scope (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},
@@ -2153,7 +2179,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(25847, {	-- Plans: Eternium Rod (RECIPE!)
-								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 							}),
 							i(23638, {	-- Plans: Lesser Ward of Shielding (RECIPE!)
 								["isLimited"] = true,
@@ -2169,7 +2195,7 @@ root(ROOTS.Zones, {
 						["crs"] = { 19826 },  -- Dark Conclave Shadowmancer
 					}),
 					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance (RECIPE!)
-						["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 						["cr"] = 19796,	-- Eclipsion Archmage
 					}),
 					i(30756, {	-- Illidari Bane-Shard (A)
@@ -2205,7 +2231,7 @@ root(ROOTS.Zones, {
 							21061,	-- Enraged Fire Spirit
 							21059,	-- Enraged Water Spirit
 						},
-						["timeline"] = { "added 2.2.0" },
+						["timeline"] = { ADDED_2_2_0 },
 					}),
 					i(31239, {	-- Primed Key Mold
 						["coord"] = { 67.6, 36.2, SHADOWMOON_VALLEY },
@@ -2251,7 +2277,7 @@ root(ROOTS.Zones, {
 					i(22924, {	-- Recipe: Major Shadow Protection Potion (RECIPE!)
 						["crs"] = { 21302 },	-- Shadow Council Warlock
 					}),
-					i(23806, {	-- Schematic: Hyper-Vision Goggles
+					i(23806, {	-- Schematic: Hyper-Vision Goggles (RECIPE!)
 						["crs"] = { 19755 },	-- Mo'arg Weaponsmith
 					}),
 					i(32724, {	-- Sludge-Covered Object (The Great Murkblood Revolt)
@@ -2270,19 +2296,8 @@ root(ROOTS.Zones, {
 							{ 51.6, 64.0, SHADOWMOON_VALLEY },
 						},
 					}),
-					o(240622, {	-- Warden's Scroll Case
-						["description"] = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",
-						["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
-						["timeline"] = { ADDED_6_1_0 },
-						["modelScale"] = .5,
-						["groups"] = {
-							i(122228, {	-- Music Roll: The Black Temple
-								["timeline"] = { ADDED_6_1_0 },
-							}),
-						},
-					}),
 					i(140784, {	-- Fel Piston Stabilizer
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 						["crs"] = {
 							17711,	-- Doomwalker
 							22859,	-- Shadowhoof Summoner
@@ -2297,20 +2312,17 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				n(TREASURES, {
+					o(240622, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {	-- Warden's Scroll Case
+						["description"] = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",
+						["coord"] = { 57.3, 47.1, SHADOWMOON_VALLEY },
+						["modelScale"] = .5,
+						["groups"] = {
+							i(122228), 	-- Music Roll: The Black Temple
+						},
+					})),
+				})
 			},
 		})),
 	})),
 });
-
--- #if AFTER TBC
--- These quests never made it in.
-root(ROOTS.NeverImplemented, {
-	n(QUESTS, {
-		-- #if BEFORE WRATH
-		q(10871),	-- BETA Ally of the Netherwing
-		q(10872),	-- BETA Zuluhed the Whacked
-		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
-		-- #endif
-	}),
-});
--- #endif

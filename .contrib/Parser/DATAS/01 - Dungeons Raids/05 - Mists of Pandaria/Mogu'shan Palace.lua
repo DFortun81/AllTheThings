@@ -30,6 +30,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					["provider"] = { "n", 64432 },	-- Sinan the Dreamer
 					["coord"] = { 38.8, 81.8, 455 },
 					["g"] = {
+						i(86476),	-- Lantern of the Sorcerer King (QI!)
+						i(86477),	-- Mad King Meng's Balance (QI!)
+						i(86478),	-- Qiang's "The Science of War" (QI!)
+						i(86479),	-- Subetai's Bow of the Swift (QI!)
 						i(87346),	-- Armbands of the Reawakened
 						i(87349),	-- Armplates of Martial Artistry
 						i(87345),	-- Bindings of Impeccable Strategy

@@ -134,14 +134,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				exploration(1076),	-- Webwinder Path
 				exploration(461),	-- Windshear Crag
-				--[[
-				exploration(636),	-- Blackwolf River
-				exploration(3157),	-- Boulderslide Cavern
-				exploration(463),	-- Cragpool Lake
-				exploration(468),	-- The Talon Den
-				exploration(466),	-- Valley of the Bloodfuries
-				exploration(2160),	-- Windshear Mine
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(360, {	-- Cliffwalker Post, Stonetalon Mountains
@@ -217,7 +209,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(210187, {	-- Venture Co. Work Order
 						["coord"] = { 67.2, 52.2, STONETALON_MOUNTAINS },
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["crs"] = {
 							3988,	-- Venture Co. Operator
@@ -408,7 +400,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131447, {	-- Basecamp Breeches
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -448,7 +440,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131464, {	-- Tunic of Ashes
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -508,7 +500,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131463, {	-- Saurboz's Handwraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -567,7 +559,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131879, {	-- Fisherman's Links
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -596,7 +588,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131471, {	-- Anara's Cord
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -656,7 +648,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131881, {	-- Barus' Armbands
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -709,7 +701,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131457, {	-- Brood-Killer Amice
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -930,7 +922,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131449, {	-- Valen's Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57465, {	-- Ambassador's Amulet
 							["timeline"] = { ADDED_4_0_3 },
@@ -1237,7 +1229,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, q(78270, {	-- Goblin Lockpicks
 					["qg"] = 4086,	-- Veenix <Venture Co. Merchant>
 					["coord"] = { 58.2, 51.6, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { SILVERPINE_FOREST, SHADOWFANG_KEEP },
 					["lockCriteria"] = { 1, "spellID", 400080 },	-- Engrave Chest - Deadly Brew
 					["classes"] = { ROGUE },
@@ -1298,6 +1290,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				heroscall(q(28539, {	-- Hero's Call: Stonetalon Mountains!  (max level 28)
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 27 and 35, 30 is based on Wowpedia info)
+					["lvl"] = { 24, 30 },
+					-- #endif
+				})),
 				q(25935, {	-- Hungry Pups
 					["qg"] = 41638,	-- Houndmaster Jonathan
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
@@ -1579,7 +1581,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131476, {	-- Kobold-Wrangler Legguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1732,7 +1734,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131453, {	-- Messenger's Vest
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1777,7 +1779,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26016, {	-- Orders from Base Camp
 					["provider"] = { "i", 56474 },	-- Orders from Base Camp
-					["timeline"] = { ADDED_4_0_3, "removed 5.0.4" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["crs"] = { 41937 },	-- Marshal Paltrow
 					["races"] = HORDE_ONLY,
 				}),
@@ -1963,7 +1965,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131877, {	-- Stardust Waistcord
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1993,7 +1995,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131880, {	-- Thwarter's Footguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2027,7 +2029,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131455, {	-- Helm of the Innocent
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57458, {	-- Thal'darah's Pendant
 							["timeline"] = { ADDED_4_0_3 },
@@ -2058,7 +2060,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131454, {	-- Yvonia's Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2116,7 +2118,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131456, {	-- Cowl of Solace
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2165,6 +2167,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57442, {	-- Mine Sealer's Ring
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(57441, {	-- Shutter Uppers
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(26048, {	-- Spare Parts Up In Here!
@@ -2191,7 +2198,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131472, {	-- Blastgineer's Waistband
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2449,6 +2456,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				q(13913, {	-- They Took Our Gnomes
+					["qg"] = 34354,	-- Huntress Jalin
+					["sourceQuest"] = 28539,	-- Hero's Call: Stonetalon Mountains!
+					["coord"] = { 35.0, 71.5, ASHENVALE },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(25806, {	-- They Put the Assass in... Never Mind
 					["qg"] = 41277,	-- Lieutenant Paulson
 					["sourceQuest"] = 25793,	-- The Deep Reaches
@@ -2548,7 +2562,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131486, {	-- Cinch of the Grieving Father
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2586,7 +2600,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 209838, 1 },	-- Hypnotic Crystal
 						{ "i", 209840, 1 },	-- Gnarled Wand of Wild Magic
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { ASHENVALE, WAILING_CAVERNS },
 					["classes"] = { HUNTER },
 					["lvl"] = 15,
@@ -2615,7 +2629,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131878, {	-- Overseer's Handguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2655,7 +2669,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 210845,	-- Jixo Madrocket <Amateur Daredevil>
 					["sourceQuest"] = 78114,	-- Wild Wyvern Wrangling
 					["coord"] = { 59.2, 62.4, STONETALON_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["lvl"] = 15,
 					["groups"] = {
@@ -2671,6 +2685,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				-- #endif
+				q(25607, {	-- Ze Gnomecorder
+					["qg"] = 40895,	-- Professor Xakxak Gyromate
+					["coord"] = { 35.3, 71.1, ASHENVALE },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(1483, {	-- Ziz Fizziks
 					["qg"] = 3442,	-- Sputtervalve
 					["coord"] = { 62.98, 37.21, THE_BARRENS },
@@ -2739,7 +2759,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 54.8, 38.0, STONETALON_MOUNTAINS },
 					},
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3, "added 7.2.0" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_2_0 },
 					["groups"] = {
 						i(5751, {	-- Webwing Cloak
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
@@ -2902,7 +2922,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(131887, {	-- Krom'gar Champion's Chain Shoulderguard
 							["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57502, {	-- Krom'gar Champion's Hide Shoulderguard
 							["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
@@ -2918,7 +2938,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(131886, {	-- Krom'gar Champion's Mesh Shoulderguard
 							["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57504, {	-- Krom'gar Champion's Plate Pauldrons
 							["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front [Krom'gar Champion]
@@ -2930,7 +2950,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(131889, {	-- Krom'gar General's Chain Mask
 							["sourceQuest"] = 26101,	-- Might Makes Right [Krom'gar General]
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57514, {	-- Krom'gar General's Hide Mask
 							["sourceQuest"] = 26101,	-- Might Makes Right [Krom'gar General]
@@ -2946,7 +2966,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(131888, {	-- Krom'gar General's Mesh Mask
 							["sourceQuest"] = 26101,	-- Might Makes Right [Krom'gar General]
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57516, {	-- Krom'gar General's Plate Helm
 							["sourceQuest"] = 26101,	-- Might Makes Right [Krom'gar General]
@@ -2958,7 +2978,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(131885, {	-- Krom'gar Legionnaire's Chain Bracers
 							["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57485, {	-- Krom'gar Legionnaire's Hide Wraps
 							["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
@@ -2974,7 +2994,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(131884, {	-- Krom'gar Legionnaire's Mesh Wraps
 							["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57487, {	-- Krom'gar Legionnaire's Plate Bracers
 							["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress [Krom'gar Legionnaire]
@@ -2986,7 +3006,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(131883, {	-- Krom'gar Sergeant's Chain Boots
 							["sourceQuest"] = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57473, {	-- Krom'gar Sergeant's Hide Boots
 							["sourceQuest"] = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
@@ -3002,7 +3022,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(131882, {	-- Krom'gar Sergeant's Mesh Boots
 							["sourceQuest"] = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(57475, {	-- Krom'gar Sergeant's Plate Greaves
 							["sourceQuest"] = 26004,	-- Krom'gar Fortress [Krom'gar Sergeant]
@@ -3045,7 +3065,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(11151, {	-- Formula: Enchant Gloves - Herbalism
-					["timeline"] = { "removed 4.3.0", "deleted 7.0.1" },	-- Replaced by BOP Version
+					["timeline"] = { REMOVED_4_3_0, DELETED_7_0_3 },	-- Replaced by BOP Version
 					["crs"] = {
 						4029,	-- Blackened Ancient
 						4028,	-- Charred Ancient

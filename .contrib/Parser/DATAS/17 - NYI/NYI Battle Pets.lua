@@ -128,6 +128,10 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 
 		-- 4.3.0
 		expansion(EXPANSION.CATA, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
+			-- With SpeciesID Attached
+			-- #if BEFORE 5.0.4
+			i(76062),	-- Fetish Shaman (PET!)
+			-- #endif
 			-- Only SpeciesID
 			pet(344, {	-- Green Balloon (PET!)
 				["displayID"] = 38340,

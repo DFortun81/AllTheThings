@@ -32,6 +32,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							["groups"] = {
 								i(69599),	-- Pauldrons of Ambition
 								i(69598),	-- Robes of Dissention
+								-- #if BEFORE MOP
+								i(69597, {	-- Zulian Throwing Axe
+									["timeline"] = { ADDED_4_1_0, REMOVED_5_0_4 },
+								}),
+								-- #endif
 							},
 						}),
 						q(29261, {	-- Zul'Aman Voodoo
@@ -145,7 +150,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						},
 						["groups"] = {
 							i(33993, {	-- Mojo (PET!)
-								["timeline"] = { "added 2.3.0.7382" },
+								["timeline"] = { ADDED_2_3_0 },
 							}),
 							ach(5761, {	-- Hex Mix
 								crit(16836, {	-- Rosa saved.

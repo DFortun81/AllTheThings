@@ -102,9 +102,11 @@ root(ROOTS.WorldEvents, applyclassicphase(WRATH_PHASE_FOUR_OPERATION_ZALAZANE, n
 				["coord"] = { 69.2, 49.2, IRONFORGE },
 				["groups"] = {
 					objective(1, {	-- Regain the Surface of Gnomeregan
-						["provider"] = { "n", 39901 },	-- Mekgineer Thermaplugg's Brag-Bot
-						["provider"] = { "n", 39799 },	-- Gasherikk
-						["provider"] = { "n", 39837 },	-- Commander Boltcog
+						["providers"] = {
+							{ "n", 39901 },	-- Mekgineer Thermaplugg's Brag-Bot
+							{ "n", 39799 },	-- Gasherikk
+							{ "n", 39837 },	-- Commander Boltcog
+						},
 					}),
 					ach(4786),	-- Operation: Gnomeregan
 					i(53097),	-- Gnomeregan Drape

@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18933,	-- Isfar
 					["sourceQuest"] = 10180,	-- Can't Stay Away
 					["coord"] = { 44.1, 65.0, TEROKKAR_FOREST },
-					["timeline"] = { "removed 4.3.0.14942" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- Darkweaver Syth slain
@@ -37,7 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29605, {	-- Brother Against Brother
 					["qg"] = 54840,	-- Isfar
 					["sourceQuest"] = 10180,	-- Can't Stay Away
-					["timeline"] = { "added 4.3.0.14942" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- Free Lakka
@@ -59,7 +59,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					["sourceQuest"] = 11001,	-- Vanquish the Raven God
 					["coord"] = { 80.2, 65.2, ZANGARMARSH },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(70, 70, 30),
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(29607, {	-- Eyes of Desire
 					["qg"] = 54847,	-- Dealer Vijaad
 					["description"] = "Dealer Vijaad appears upon defeating Darkweaver Syth.",
-					["timeline"] = { "added 4.3.0.14942" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- 0/3 Cobalt Eye
@@ -82,7 +82,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18933,	-- Isfar
 					["sourceQuest"] = 10180,	-- Can't Stay Away
 					["coord"] = { 44.1, 65.0, TEROKKAR_FOREST },
-					["timeline"] = { "removed 4.3.0.14942" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["cost"] = {
 						{ "i", 32888, 1 },	-- The Relics of Terokk
 					},
@@ -90,7 +90,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						objective(1, {	-- 0/1 The Saga of Terokk
 							["provider"] = { "i", 27634 },	-- The Saga of Terokk
 							["description"] = "Found on the floor in the center of the room before Talon King Ikiss.",
-							["timeline"] = { "removed 4.3.0.14942" },
+							["timeline"] = { REMOVED_4_3_0 },
 						}),
 						objective(2, {	-- 0/1 Terokk's Mask
 							["provider"] = { "i", 27633 },	-- Terokk's Mask
@@ -107,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29606, {	-- Terokk's Legacy
 					["qg"] = 54840,	-- Isfar
-					["timeline"] = { "added 4.3.0.14942" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(65, 65, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Terokk's Mask
@@ -125,7 +125,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 22832,	-- Morthis Whisperwing <Druid of the Talon>
 					["sourceQuest"] = 10994,	-- Chasing the Moonstone
 					["coord"] = { 80.2, 65.2, ZANGARMARSH },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["classes"] = { DRUID },
 					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
@@ -138,7 +138,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							-- #if BEFORE WRATH
 							["description"] = "Completed the druid quest to obtain Swift Flight Form.",
 							-- #endif
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 							["classes"] = { DRUID },
 							["filterID"] = MOUNTS,
 						}),
@@ -146,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						recipe(40120),	-- Swift Flight Form
 						-- #endif
 						i(32387, {	-- Idol of the Raven Goddess
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(32462, {	-- Morthis' Materials
 							i(32454),	-- Arthorn's Research
@@ -156,19 +156,23 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				})),
 			}),
 			n(COMMON_BOSS_DROPS, {
-				-- #if AFTER 8.0.1.27326
-				currency(1704, {	-- Spirit Shard
-					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses drop one shard each.",
-				}),
-				-- #else
 				i(28558, {	-- Spirit Shard
-					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each.",
+					["timeline"] = { REMOVED_8_0_1 },
+					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
 				}),
-				-- #endif
+				currency(1704, {	-- Spirit Shard
+					["timeline"] = { ADDED_8_0_1 },
+					-- #if BEFORE 9.1.5
+					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+					-- #else
+					-- From 9.1.5 (specific patch uncomfirmed) this currency can be obtained regardless of whom controls the Spirit Towers in the Bone Wastes. This could have been true already from 8.0.1, but no reports seems to confirm it.
+					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. Bosses drop one shard each. These can be used to buy gear from Spirit Sage at Allerian Stronghold (Alliance) / Stonebreaker Hold (Horde).",
+					-- #endif
+				}),
 			}),
 			n(ZONE_DROPS, {
 				i(72480, {	-- Cobalt Eye
-					["timeline"] = { "added 4.3.0.14942" },
+					["timeline"] = { ADDED_4_3_0 },
 					["cr"] = 19428,	-- Cobalt Serpent
 				}),
 				i(29669, {	-- Pattern: Shadow Armor Kit (RECIPE!)
@@ -190,10 +194,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(27915),	-- Sky-Hunter Swift Boots
 						-- #if BEFORE MOP
 						i(27916, {	-- Sethekk Feather-Darts
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(27917, {	-- Libram of the Eternal Rest
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 						i(27633),	-- Terokk's Mask
@@ -270,14 +274,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(27915),	-- Sky-Hunter Swift Boots
 							-- #if BEFORE MOP
 							i(27916, {	-- Sethekk Feather-Darts
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(27917, {	-- Libram of the Eternal Rest
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(25461, {	-- Book of Forgotten Names
-								["timeline"] = { "removed 7.1.0.1233" },
+								["timeline"] = { REMOVED_7_1_0 },
 							}),
 							i(27633),	-- Terokk's Mask
 						},

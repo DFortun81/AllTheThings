@@ -414,7 +414,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				petbattles({ "added 6.0.1" }, {
+				petbattles({ ADDED_6_0_2 }, {
 					n(87110, {	-- Tarr the Terrible <Grand Master Pet Tamer>
 						["coord"] = { 56.2, 9.80, DRAENOR_NAGRAND },
 					}),
@@ -792,6 +792,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 75.0, 22.7, DRAENOR_NAGRAND },
 						["sourceQuest"] = 34894,	-- A Rare Bloom
 					}),
+					heroscall(q(49567, {	-- Hero's Call: Nagrand! (Draenor)
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 98,
+					})),
 					q(34915, {	-- I Help Ya Kill Dem
 						["provider"] = { "n", 80429 },	-- Shadow Hunter Kajassa
 						["coord"] = { 68.5, 64.5, DRAENOR_NAGRAND },
@@ -1474,7 +1479,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							34674,	-- Taking the Fight to Nagrand
 							37184,	-- Taking the Fight to Nagrand
-							49567,	-- Hero's Call: Nagrand!
+							-- #if AFTER 7.3.5
+							49567,	-- Hero's Call: Nagrand! (Draenor)
+							-- #endif
 						},
 					}),
 					q(34795, {	-- The Might of the Warsong
@@ -1484,7 +1491,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							34794,	-- Taking the Fight to Nagrand
 							36952,	-- Taking the Fight to Nagrand
-							49549,	-- Warchief's Command: Nagrand!
+							-- #if AFTER 7.3.5
+							49549,	-- Warchief's Command: Nagrand! (Draenor)
+							-- #endif
 						},
 					}),
 					q(34598, {	-- The Missing Caravan
@@ -1694,6 +1703,11 @@ root(ROOTS.Zones, {
 						},
 						["provider"] = {"o",230303},	-- Bounty Board
 					}),
+					warchiefscommand(q(49549, {	-- Warchief's Command: Nagrand! (Draenor)
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(36273, {	-- Whacking Weeds
 						["provider"] = { "n", 84632 },	-- Marybelle Walsh
 						["coord"] = { 77.4, 47.3, DRAENOR_NAGRAND },

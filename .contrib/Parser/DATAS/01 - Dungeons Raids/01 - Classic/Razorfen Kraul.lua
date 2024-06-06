@@ -69,7 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131617, {	-- Razorflank's Chainmail
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -241,7 +241,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- #if AFTER TBC
 						i(29200, {	-- Falfindel's Blaster
-							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 						}),
 						-- #else
 						i(3041),	-- "Mage-Eye" Blunderbuss
@@ -255,30 +255,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(6748, {	-- Monkey Ring
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(6750, {	-- Snake Hoop
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(6749, {	-- Tiger Band
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 					},
 					-- #endif
 				}),
 				q(26903, {	-- Willix the Importer
 					["qg"] = 4508,	-- Willix the Importer
-					["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					["lvl"] = 30,
 					["groups"] = {
 						i(6748, {	-- Monkey Ring
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(6750, {	-- Snake Hoop
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 						i(6749, {	-- Tiger Band
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 					},
 				}),
@@ -315,7 +315,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(1727),	-- Sword of Decay
 				i(776),		-- Vendetta
 				i(3569, {	-- Vicar's Robe
-					["timeline"] = { "removed 6.0.2", ADDED_10_1_7 },
+					["timeline"] = { REMOVED_6_0_2, ADDED_10_1_7 },
 					-- #if BEFORE 6.0.2
 					["cr"] = 4517,	-- Death's Head Priest
 					-- #endif
@@ -328,14 +328,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #else
 				["description"] = "This NPC is always present since 10.1.7.\nTo obtain their drops you have to be in an appropriate loot spec or they will not drop. However their drops are also located on other bosses in the dungeon.",
 				-- #endif
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(6689),	-- Wind Spirit Staff
 					i(6688),	-- Whisperwind Headdress
 				},
 			}),
 			n(6168, {	-- Roogug
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				-- #if BEFORE 4.0.3
 				["description"] = "Warriors will need to kill this boss for their racial armor quest. If you are the leader of the group, don't be surprised if they ask to kill this boss first.",
 				["groups"] = {
@@ -346,26 +346,26 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			}),
 			n(4424, {	-- Aggem Thorncurse <Death's Head Prophet>
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(6681),	-- Thornspike
 				},
 			}),
 			n(4428, {	-- Death Speaker Jargba <Death's Head Captain>
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(2816, {	-- Death Speaker Scepter
-						["timeline"] = { "removed 6.0.2" },
+						["timeline"] = { REMOVED_6_0_2 },
 					}),
 					i(6685),	-- Death Speaker Mantle
 					i(6682, {	-- Death Speaker Robes
-						["timeline"] = { "removed 6.0.2" },
+						["timeline"] = { REMOVED_6_0_2 },
 					}),
 				},
 			}),
 			e(896, {	-- Hunter Bonetusk
 				["creatureID"] = 75001,	-- Hunter Bonetusk
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(151442, {	-- Bonetusk Cloak
 						["timeline"] = { ADDED_7_3_0 },
@@ -378,28 +378,28 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(895, {	-- Roogug
 				["creatureID"] = 74948,	-- Roogug
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(6691),	-- Swinetusk Shank
 					i(151443, {	-- Roogug's Swinesteel Girdle
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(132565, {	-- Carnal Britches
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(6690),	-- Ferine Leggings
 				},
 			}),
 			n(4438, {	-- Razorfen Spearhide
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(6679, {	-- Armor Piercer
-						["timeline"] = { "removed 6.0.2" },
+						["timeline"] = { REMOVED_6_0_2 },
 					}),
 				},
 			}),
 			n(4420, {	-- Overlord Ramtusk
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(6687),	-- Corpsemaker
 					i(6686),	-- Tusken Helm
@@ -407,7 +407,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(899, {	-- Warlord Ramtusk
 				["creatureID"] = 74462,	-- Warlord Ramtusk
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(6687),	-- Corpsemaker
 					i(6686),	-- Tusken Helm
@@ -421,7 +421,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(4842, {	-- Earthcaller Halmgar
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				-- #if BEFORE 6.0.2
 				["description"] = "After you kill Overlord Ramtusk, go west over a bridge to a plateau.\n\nThis is a rare spawn that is not always present.",
 				-- #endif
@@ -432,7 +432,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(4425, {	-- Blind Hunter
 				["description"] = "This is a rare spawn that is not always present.",
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(6696),	-- Nightstalker Bow
 					i(6695),	-- Stygian Bone Amulet
@@ -440,7 +440,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(4422, {	-- Agathelos the Raging
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(6691),	-- Swinetusk Shank
 					i(6690),	-- Ferine Leggings
@@ -448,7 +448,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(900, {	-- Groyat, the Blind Hunter
 				["creatureID"] = 4425,	-- Groyat, the Blind Hunter
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(6696),	-- Nightstalker Bow
 					i(6695),	-- Stygian Bone Amulet
@@ -456,7 +456,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(75590, {	-- Enormous Bullfrog
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(11026),	-- Tree Frog (PET!)
 					i(11027),	-- Wood Frog (PET!)

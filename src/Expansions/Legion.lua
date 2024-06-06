@@ -5,8 +5,8 @@ local appName,app = ...;
 local C_ArtifactUI = C_ArtifactUI;
 if not C_ArtifactUI then
 	-- Artifacts are not supported by this version of the game client.
-	app.AddArtifactRelicInformation = app.DoNothing;
-	app.GetArtifactModItemID = app.DoNothing
+	app.AddArtifactRelicInformation = app.EmptyFunction;
+	app.GetArtifactModItemID = app.EmptyFunction
 	app.CreateArtifact = app.CreateUnimplementedClass("Artifact", "artifactID");
 	return
 end

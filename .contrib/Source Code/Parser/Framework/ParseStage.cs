@@ -16,6 +16,7 @@
         ConditionalData,
         Incorporation,
         Consolidation,
+        EnsembleCleanup,
         UnsortedGeneration,
         DataIntegrityAnalysis,
         ExportDebugData,

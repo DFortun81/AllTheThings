@@ -75,7 +75,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 							["_drop"] = { "g" },	-- Drop Flawless Battle-Training Stone
 						})),
-						q(37644,  {	-- Mastering the Menagerie
+						q(37644,  {	-- Mastering the Menagerie (A)
 							["isDaily"] = true,
 							["provider"] = { "n", 85418 },	-- Lio the Lioness
 							["coord"] = { 29.0, 40.4, LUNARFALL },
@@ -92,7 +92,7 @@ root(ROOTS.ExpansionFeatures,
 								}),
 							},
 						}),
-						q(37645, {	-- Mastering the Menagerie
+						q(37645, {	-- Mastering the Menagerie (H)
 							["isDaily"] = true,
 							["provider"] = { "n", 79858 },	-- Serr'ah
 							["coord"] = { 32.6, 39.8, FROSTWALL },

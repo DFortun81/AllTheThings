@@ -32,6 +32,7 @@ local RepeatableQuestIcon = app.asset("Interface_Questd");
 
 -- Module locals
 local OneTimeQuests
+local AccountWideLockedQuestsCache = {}
 
 -- Quest Name Lib
 local GetTitleForQuestID, GetQuestTimeLeftMinutes;
@@ -204,7 +205,8 @@ local PrintQuestInfo
 local ClassicDirtyQuests, RetailDirtyQuests = {}, {}
 local CollectibleAsQuest, IsQuestFlaggedCompletedForObject;
 local IgnoreErrorQuests = {}
-app.AddEventHandler("OnSavedVariablesAvailable", function()
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	OneTimeQuests = accountWideData.OneTimeQuests
 	local userignored = ATTAccountWideData.IGNORE_QUEST_PRINT
 	-- add user ignored to the list if any, don't save our hardcoded quests for everyone...
 	if userignored then
@@ -367,7 +369,7 @@ else
 				return true;
 			end
 			if t.locked then return app.Settings.AccountWide.Quests; end
-			return not t.repeatable and not t.isBreadcrumb;
+			return not t.repeatable;
 		end
 	end
 end
@@ -380,14 +382,18 @@ local function CollectibleAsLocked(t, locked)
 	and (locked or t.locked)
 	-- not a repeatable quest
 	and not t.repeatable
-	-- TODO: Not Locked by a OPA Quest...
 	and
 	(
-		-- debug/account mode
-		app.MODE_DEBUG_OR_ACCOUNT
-		or
-		-- available in party sync
-		not t.DisablePartySync
+		-- Not Locked by a OPA/AW Quest
+		not AccountWideLockedQuestsCache[t.questID]
+		and
+		(
+			-- debug/account mode
+			app.MODE_DEBUG_OR_ACCOUNT
+			or
+			-- available in party sync
+			not t.DisablePartySync
+		)
 	)
 end
 local function CollectibleAsQuestOrAsLocked(t)
@@ -712,6 +718,7 @@ app.CheckInaccurateQuestInfo = function(questRef, questChange, forceShow)
 		end
 	end
 end
+-- /run ATTC.CheckQuestInfo(12345,1)
 app.CheckQuestInfo = function(questID, isTest)
 	app.CheckInaccurateQuestInfo(Search("questID",questID), "test-show", isTest)
 end
@@ -946,7 +953,7 @@ else
 end
 
 -- World Quest Support Lib
-local C_QuestLog_GetQuestTagInfo, GetWorldQuestIcon, IsWorldQuest = C_QuestLog.GetQuestTagInfo, nil, nil;
+local C_QuestLog_GetQuestTagInfo, GetWorldQuestIcon = C_QuestLog.GetQuestTagInfo, nil
 if C_QuestLog_GetQuestTagInfo then
 	local TagType = Enum.QuestTagType;
 	local WorldQuestTypeIcons = setmetatable({
@@ -978,19 +985,10 @@ if C_QuestLog_GetQuestTagInfo then
 		end
 		return DefaultWorldQuestIcon;
 	end
-	IsWorldQuest = function(t)
-		local info = C_QuestLog_GetQuestTagInfo(t.questID);
-		if info and info.worldQuestType then
-			return true;
-		else
-			return false;
-		end
-	end;
 else
 	GetWorldQuestIcon = function(t)
 		return DefaultWorldQuestIcon;
 	end
-	IsWorldQuest = app.ReturnFalse;
 end
 
 -- Breadcrumb Checking
@@ -1077,13 +1075,26 @@ local criteriaFuncs = {
         return lvl;
     end,
 
-    questID = IsQuestSaved,
+    questID = function(questID)
+		-- saved on this character to this quest
+		if IsQuestSaved(questID) then return true end
+		-- questID is saved in OneTimeQuests to another character
+		-- local otq = OneTimeQuests[questID]
+		if OneTimeQuests[questID] then return true end
+		-- hmmm not really sure we want to worry about chained locking...
+		-- could just add the chained requirements as possible locks for the base quest
+		-- known OTQ is unsaved, then leave
+		-- if otq == false then app.PrintDebug("otq:false",questID) return end
+		-- questID is itself Locked for this character
+		-- local q = Search(questID)
+		-- if q and q.locked then app.PrintDebug("locked",questID) return true end
+	end,
 	label_questID = L.LOCK_CRITERIA_QUEST_LABEL,
     text_questID = function(questID)
 		-- sometimes we can get nice names from non-server quests... so use their actual implementation
 		local questObject = app.SearchForObject("questID", questID, "field")
 		local questName
-		if questObject then questName = questObject.name end
+		if questObject then questName = app.TryColorizeName(questObject) end
         return ("[%d] %s"):format(questID, questName or RETRIEVING_DATA);
     end,
 
@@ -1126,19 +1137,22 @@ local function IsGroupLocked(t)
 	local lockCriteria = t.lc;
 	if lockCriteria then
 		local criteriaRequired = lockCriteria[1];
-		local critKey, critFunc, nonQuestLock;
+		local critKey, critFunc, critVal, nonQuestLock;
 		for i=2,#lockCriteria,2 do
 			critKey = lockCriteria[i];
 			critFunc = criteriaFuncs[critKey];
 			if critFunc then
-				if critFunc(lockCriteria[i + 1]) then
-					if not nonQuestLock and critKey ~= "questID" then
+				critVal = lockCriteria[i + 1]
+				if critFunc(critVal) then
+					if critKey ~= "questID" then
 						nonQuestLock = true;
+					elseif app.AccountWideQuestsDB[critVal] then
+						-- this quest is locked by a completed AWQ, so we know it can't be completed on another character either
+						AccountWideLockedQuestsCache[t.questID] = true
 					end
 					criteriaRequired = criteriaRequired - 1;
 					if criteriaRequired <= 0 then
 						-- app.PrintDebug("Locked:",app:Linkify(t.questID, app.Colors.ChatLink, "search:questID:" .. t.questID),"=>",critKey,lockCriteria[i + 1])
-						LockedQuestCache[t.questID] = true
 						-- if this was locked due to something other than a Quest specifically, indicate it cannot be done in Party Sync
 						if nonQuestLock then
 							-- app.PrintDebug("Automatic DisablePartySync", app:Linkify(questID, app.Colors.ChatLink, "search:questID:" .. questID))
@@ -1160,7 +1174,10 @@ local function LockedAsQuest(t)
 	if cached ~= nil then return cached end
 	if not IsQuestFlaggedCompleted(questID) then
 		-- generic locked functionality based on lockCriteria
-		if IsGroupLocked(t) then return true; end
+		if IsGroupLocked(t) then
+			LockedQuestCache[questID] = true
+			return true;
+		end
 		-- if an alt-quest is completed, then this quest is locked
 		if t.altcollected then
 			LockedQuestCache[questID] = true
@@ -1291,7 +1308,6 @@ if IsQuestReplayable then
 		end
 		return IsQuestFlaggedCompleted(questID);
 	end;
-	criteriaFuncs.questID = IsQuestSaved;
 
 	-- Causes a group to remain visible if it is replayable, regardless of collection status
 	OnUpdateForPartySyncedQuest = function(data)
@@ -2175,9 +2191,6 @@ if app.IsRetail then
 	app.TryPopulateQuestRewards = TryPopulateQuestRewards;
 end
 
-app.AddEventHandler("OnStartup", function()
-	OneTimeQuests = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true).OneTimeQuests;
-end)
 app.CheckFollowupQuests = CheckFollowupQuests;
 app.CollectibleAsQuest = CollectibleAsQuest;
 app.CollectibleAsQuestOrAsLocked = CollectibleAsQuestOrAsLocked;

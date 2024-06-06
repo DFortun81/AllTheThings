@@ -212,73 +212,6 @@ app.RaceIndex = type(raceIndex) == "table" and raceIndex[factionGroup] or raceIn
 app.RaceID = raceID;
 app.Race = race;
 
--- Accessibility Sorting
-local function calculateAccessibility(source)
-	local score = source.AccessibilityScore or 0;
-	if score > 0 then return score; end
-	if GetRelativeValue(source, "nmr") then
-		score = score + 20;
-	end
-	if GetRelativeValue(source, "nmc") then
-		score = score + 10;
-	end
-	if GetRelativeValue(source, "rwp") then
-		score = score + 5;
-	end
-	if GetRelativeValue(source, "e") then
-		score = score + 1;
-	end
-	local u = GetRelativeValue(source, "u");
-	if u then
-		if u < 3 then
-			score = score + 100;
-		elseif u < 4 then
-			score = score + 10;
-		else
-			score = score + 1;
-		end
-	end
-	source.AccessibilityScore = score;
-	return score;
-end
-app.SortDefaults.Accessibility = function(a, b)
-	return calculateAccessibility(a) < calculateAccessibility(b);
-end
-
--- Accessibility + Distance Sorting
-local function calculateAccessibilityAndDistance(source)
-	local score = source.AccessibilityScore or 0;
-	if score > 0 then return score; end
-	if GetRelativeValue(source, "nmr") then
-		score = score + 20;
-	end
-	if GetRelativeValue(source, "nmc") then
-		score = score + 10;
-	end
-	if GetRelativeValue(source, "rwp") then
-		score = score + 5;
-	end
-	if GetRelativeValue(source, "e") then
-		score = score + 1;
-	end
-	local u = GetRelativeValue(source, "u");
-	if u then
-		if u < 3 then
-			score = score + 100;
-		elseif u < 4 then
-			score = score + 10;
-		else
-			score = score + 1;
-		end
-	end
-	score = score + (source.distance or 99999);
-	source.AccessibilityScore = score;
-	return score;
-end
-app.SortDefaults.AccessibilityAndDistance = function(a, b)
-	return calculateAccessibilityAndDistance(a) < calculateAccessibilityAndDistance(b);
-end
-
 -- Whether ATT should ignore saving data experienced during the play session
 app.IgnoreDataCaching = function()
 	-- This function currently returns false on Tournament realms. Very good. >_<
@@ -509,10 +442,10 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		-- ScrollFrame
 		---@class ATTEditBoxScrollFrame: ScrollFrame
 		local sf = CreateFrame("ScrollFrame", "ATTEditBoxScrollFrame", f, "UIPanelScrollFrameTemplate")
+		---@diagnostic disable-next-line: undefined-field
+		sf:SetPoint("BOTTOM", ATTEditBoxButton, "TOP", 0, 4)
 		sf:SetPoint("LEFT", 16, 0)
 		sf:SetPoint("RIGHT", -32, 0)
-		---@diagnostic disable-next-line: undefined-field
-		sf:SetPoint("BOTTOM", f.Button, "TOP", 0, 0)
 		f.ScrollFrame = sf;
 
 		-- Label (conditionally create)
@@ -536,7 +469,7 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		eb:SetFontObject("ChatFontNormal")
 		eb:SetScript("OnEscapePressed", function() f:Hide() end)
 		---@diagnostic disable-next-line: undefined-field
-		f.Button:SetScript("OnClick", function (self, button, down)
+		ATTEditBoxButton:SetScript("OnClick", function (self, button, down)
 			if self:GetParent().OnClick then
 				self:GetParent().OnClick(eb:GetText());
 			end

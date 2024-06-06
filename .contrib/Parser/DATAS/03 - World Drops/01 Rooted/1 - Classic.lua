@@ -104,25 +104,25 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(4689),	-- Hunting Cloak
 		i(9890),	-- Huntsman's Cape
 		i(68762, {	-- Imbued Cadet Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68748, {	-- Imbued Disciple's Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68759, {	-- Imbued Gypsy Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68743, {	-- Imbued Infantry Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68744, {	-- Imbued Pioneer Cloak
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68746, {	-- Imbued Primal Cape
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68756, {	-- Imbued Simple Cape
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(15661),	-- Impenetrable Cloak
 		i(6432),	-- Imperial Cloak
@@ -226,7 +226,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 4.0.1.12941", "added 6.0.1", "removed 7.0.1" },
+			["timeline"] = { CREATED_4_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(14752),	-- Slayer's Cape
 		i(3972),	-- Smooth Cloak
@@ -609,16 +609,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3798),	-- Interlaced Shoulderpads
 		i(3799),	-- Interlaced Vest
 		i(68754, {	-- Imbued Disciple's Boots
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68749, {	-- Imbued Disciple's Bracers
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68755, {	-- Imbued Disciple's Gloves
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68747, {	-- Imbued Disciple's Sash
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(8246),	-- Imperial Red Boots
 		i(8247),	-- Imperial Red Bracers
@@ -1146,19 +1146,19 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(9893),	-- Huntsman's Leggings
 		i(9894),	-- Huntsman's Shoulders
 		i(68750, {	-- Imbued Pioneer Belt
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68758, {	-- Imbued Pioneer Boots
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68751, {	-- Imbued Pioneer Bracers
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68757, {	-- Imbued Pioneer Gloves
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68745, {	-- Imbued Primal Belt
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(4738),	-- Imperial Leather Belt
 		i(6431),	-- Imperial Leather Boots
@@ -1381,7 +1381,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 1.12.1.12941", "added 6.0.1", "removed 7.0.1" },
+			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(13111),	-- Sandals of the Insurgent
 		i(14553),	-- Sash of Mercy
@@ -1576,7 +1576,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3281),	-- Battle Chain Gloves
 		i(3282),	-- Battle Chain Pants
 		i(3283, {	-- Battle Chain Tunic
-			["timeline"] = { "removed 6.1.0.19445" },
+			["timeline"] = { REMOVED_6_1_0 },
 		}),
 		i(120950, {	-- Battle Chain Vest
 			["timeline"] = { ADDED_6_1_0 },
@@ -1626,7 +1626,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3304),	-- Brackwater Gauntlets
 		i(4681),	-- Brackwater Girdle
 		i(3305, {	-- Brackwater Leggings
-			["timeline"] = { "removed 6.1.0.19445" },
+			["timeline"] = { REMOVED_6_1_0 },
 		}),
 		i(120954, {	-- Brackwater Legguards
 			["timeline"] = { ADDED_6_1_0 },
@@ -1651,7 +1651,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 4.0.1.12941", "added 6.0.1", "removed 7.0.1" },
+			["timeline"] = { CREATED_4_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(9758),	-- Cadet Belt
 		i(9759),	-- Cadet Boots
@@ -1721,7 +1721,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 1.12.1.12941", "added 6.0.1", "removed 7.0.1" },
+			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(2649),	-- Flimsy Chain Belt
 		i(2650),	-- Flimsy Chain Boots
@@ -1800,7 +1800,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 1.12.1.12941", "added 6.0.1", "removed 7.0.1" },
+			["timeline"] = { CREATED_1_12_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(2245),	-- Helm of Narv
 		i(8308),	-- Hero's Band
@@ -1821,16 +1821,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14749),	-- Hulking Spaulders
 		i(1981),	-- Icemail Jerkin
 		i(68752, {	-- Imbued Infantry Belt
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68761, {	-- Imbued Infantry Boots
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68753, {	-- Imbued Infantry Bracers
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(68760, {	-- Imbued Infantry Gauntlets
-			["timeline"] = { "added 4.0.6.13596" },
+			["timeline"] = { ADDED_4_0_6 },
 		}),
 		i(15663),	-- Impenetrable Belt
 		i(15659),	-- Impenetrable Bindings
@@ -2135,7 +2135,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(4678),	-- Veteran Girdle
 		i(2980),	-- Veteran Gloves
 		i(2978, {	-- Veteran Leggings [CRIEVE NOTE: This might be in a similar situation to the two other mail items that were swapped out.]
-			["timeline"] = { "removed 6.1.0.19445" },	-- Likely unobtainable since adding of Vetaran Legguards
+			["timeline"] = { REMOVED_6_1_0 },	-- Likely unobtainable since adding of Vetaran Legguards
 		}),
 		i(120953, {	-- Veteran Legguards
 			["timeline"] = { ADDED_6_1_0 },
@@ -3020,7 +3020,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(15592),	-- Steadfast Buckler
 		-- #if BEFORE 8.2.0
 		i(7188, {	-- Stormwind Guard Shield
-			["timeline"] = { "created 1.12.1.12941", "added 8.2.0" },
+			["timeline"] = { CREATED_1_12_1, ADDED_8_2_0 },
 		}),
 		-- #endif
 		i(14852),	-- Sunscale Shield
@@ -3157,7 +3157,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { "created 1.11.1.13287", "added 6.0.1", "removed 7.0.1" },
+			["timeline"] = { CREATED_1_11_1, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(12042),	-- Marsh Chain
 		i(13091),	-- Medallion of Grand Marshal Morris
@@ -3270,7 +3270,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 6.0.1
 			["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 			-- #endif
-			["timeline"] = { REMOVED_3_0_2, "added 6.0.1", "removed 7.0.1" },
+			["timeline"] = { REMOVED_3_0_2, ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		i(11302),	-- Uther's Strength
 	}),
@@ -3289,7 +3289,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE, i(23197, {	-- Idol of the Moon [Phase 5/6]
-			["timeline"] = { "removed 5.0.4" },
+			["timeline"] = { REMOVED_5_0_4 },
 		})),
 		-- #endif
 		-- #if AFTER 9.1.0
@@ -3304,7 +3304,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE, i(23203, {	-- Libram of Fervor [Phase 5/6]
-			["timeline"] = { "removed 5.0.4" },
+			["timeline"] = { REMOVED_5_0_4 },
 		})),
 		-- #endif
 		i(11736, {	-- Libram of Resilience
@@ -3371,7 +3371,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE, i(23199, {	-- Totem of the Storm [Phase 5/6]
-			["timeline"] = { "removed 5.0.4" },
+			["timeline"] = { REMOVED_5_0_4 },
 		})),
 		-- #endif
 	}),
@@ -3512,7 +3512,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["description"] = "Can drop from any troll in Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
 				["maps"] = { ARATHI_HIGHLANDS, DUN_MOROGH, NORTHERN_STRANGLETHORN, SILITHUS, THE_CAPE_OF_STRANGLETHORN, THE_HINTERLANDS, ZULGURUB },
 				-- #endif
-				["timeline"] = { "removed 4.0.1", ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+				["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 			}),
 			-- #endif
 		}),
@@ -3520,7 +3520,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
 			i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
 			i(12698, {	-- Plans: Dawnbringer Shoulders (RECIPE!)
-				["timeline"]={ "created 1.12.1.6180", "added 2.0.1" },
+				["timeline"]={ CREATED_1_12_1, ADDED_2_0_1 },
 			}),
 			i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
 			i(2883),	-- Plans: Deadly Bronze Poniard (RECIPE!)
@@ -3581,7 +3581,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		prof(ENCHANTING, {
 			i(11038),	-- Formula: Enchant 2H Weapon - Lesser Versatility / CLASSIC: Formula: Enchant 2H Weapon - Lesser Spirit (RECIPE!)
 			i(16245, {	-- Formula: Enchant Boots - Greater Agility (RECIPE!)
-				["timeline"] = { "removed 2.3.0" },	-- Learned at trainer
+				["timeline"] = { REMOVED_2_3_0 },	-- Learned at trainer
 			}),
 			i(16215),	-- Formula: Enchant Boots - Greater Stamina (RECIPE!)
 			i(11167),	-- Formula: Enchant Boots - Lesser Versatility / CLASSIC: Formula: Enchant Boots - Lesser Spirit (RECIPE!)
@@ -3611,12 +3611,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(16253),	-- Formula: Enchant Chest - Greater Stats (RECIPE!)
 			i(6342),	-- Formula: Enchant Chest - Minor Mana (RECIPE!)
 			i(11098, {	-- Formula: Enchant Cloak - Lesser Shadow Resistance (RECIPE!)
-				["timeline"] = { "removed 5.0.4" },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(11039),	-- Formula: Enchant Cloak - Minor Agility (RECIPE!)
 			i(11226),	-- Formula: Enchant Gloves - Riding Skill (RECIPE!)
 			i(11224, {	-- Formula: Enchant Shield - Frost Resistance (RECIPE!)
-				["timeline"] = { "removed 5.0.4" },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(11168),	-- Formula: Enchant Shield - Lesser Parry / CLASSIC: Formula: Enchant Shield - Lesser Block (RECIPE!)
 			i(11081),	-- Formula: Enchant Shield - Lesser Protection (RECIPE!)
@@ -3698,20 +3698,20 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7363),	-- Pattern: Pilferer's Gloves (RECIPE!)
 			i(7288),	-- Pattern: Rugged Leather Pants (RECIPE!)
 			i(15745, {	-- Pattern: Runic Leather Belt (RECIPE!)
-				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
+				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
 			}),
 			i(15731, {	-- Pattern: Runic Leather Gauntlets (RECIPE!)
-				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
+				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
 			}),
 			i(15765, {	-- Pattern: Runic Leather Pants (RECIPE!)
-				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
+				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
 			}),
 			i(7453),	-- Pattern: Swift Boots (RECIPE!)
 			i(8385),	-- Pattern: Turtle Scale Gloves (RECIPE!)
 			i(15742),	-- Pattern: Warbear Harness (RECIPE!)
 			i(2407),	-- Pattern: White Leather Jerkin (RECIPE!)
 			i(15757, {	-- Pattern: Wicked Leather Pants (RECIPE!)
-				["timeline"] = { "removed 5.0.4" },	-- Taught by trainer
+				["timeline"] = { REMOVED_5_0_4 },	-- Taught by trainer
 			}),
 		}),
 		prof(TAILORING, {
@@ -3732,16 +3732,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7084),	-- Pattern: Crimson Silk Shoulders
 			i(7086),	-- Pattern: Earthen Silk Belt
 			i(14492, {	-- Pattern: Felcloth Boots
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14496, {	-- Pattern: Felcloth Hood
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14506, {	-- Pattern: Felcloth Robe
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14508, {	-- Pattern: Felcloth Shoulders
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14474, {	-- Pattern: Frostweave Gloves
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
@@ -3778,16 +3778,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(4347),	-- Pattern: Reinforced Woolen Shoulders
 			i(4354),	-- Pattern: Rich Purple Silk Shirt
 			i(14498, {	-- Pattern: Runecloth Headband
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14491, {	-- Pattern: Runecloth Pants
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14504, {	-- Pattern: Runecloth Shoulders
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(14470, {	-- Pattern: Runecloth Tunic
-				["timeline"] = { "removed 2.0.3" },	-- Taught by trainer
+				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer
 			}),
 			i(4351),	-- Pattern: Shadow Hood
 			i(4353),	-- Pattern: Spider Belt
@@ -3798,5 +3798,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7091),	-- Pattern: Truefaith Gloves
 			i(10301),	-- Pattern: White Bandit Mask
 		}),
+	}),
+	filter(REAGENTS, {
+		i(7191),	-- Fused Wiring
 	}),
 }));

@@ -505,8 +505,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				i(21761, {	-- Scarab Coffer Key
 					["timeline"] = {
-						"added 1.13.0.28211",
-						"deleted 4.2.2.28211"
+						ADDED_1_13_0,
+						DELETED_4_2_2
 					},
 				}),
 			}),
@@ -712,7 +712,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				}),
 				-- Key (Post 4.3 Only!)
 				applyclassicphase(CATA_PHASE_ONE, i(76401, {	-- Scarab Coffer Key
-					["timeline"] = { "added 4.3.0.15005" },
+					["timeline"] = { ADDED_4_3_0 },
 					["crs"] = {
 						15369,	-- Ayamiss the Hunter
 						15370,	-- Buru the Gorger
@@ -752,8 +752,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				["groups"] = {
 					i(22217, {	-- Kurinnaxx's Venom Sac
 						["timeline"] = {
-							"added 1.13.0.28211",
-							"deleted 4.2.2.28211"
+							ADDED_1_13_0,
+							DELETED_4_2_2
 						},
 					}),
 					i(21498),	-- Qiraji Sacrificial Dagger
@@ -834,9 +834,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						-- #endif
 						-- #endif
 						["timeline"] = {
-							"added 1.13.0.28211",
-							"removed 2.0.1",	-- Classic WoWHead shows 0 new drops in WotLK since Classic. (902 recorded drops in both versions, which goes to show that this item no longer exists on the drop table)
-							--"removed 4.2.2.28211",
+							ADDED_1_13_0,
+							REMOVED_2_0_1,	-- Classic WoWHead shows 0 new drops in WotLK since Classic. (902 recorded drops in both versions, which goes to show that this item no longer exists on the drop table)
+							--REMOVED_4_2_2,
 							ADDED_10_1_7,
 						},
 					}),

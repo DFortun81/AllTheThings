@@ -50,12 +50,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(31746),	-- Phoenix-Fire Band
 						i(31704, {	-- The Tempest Key
 							-- #if AFTER WRATH
-							["timeline"] = { "removed 2.3.0" },
+							["timeline"] = { REMOVED_2_3_0 },
 							-- #endif
 						}),
 						ach(432, {	-- Champion of the Naaru (Achievement)
 							["sourceQuest"] = 10888,	-- Trial of the Naaru: Magtheridon
-							["timeline"] = { "removed 3.0.1" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 						title(36, {	-- Champion of the Naaru
 							["timeline"] = { REMOVED_3_0_2 },
@@ -128,7 +128,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						-- #if BEFORE WRATH
 						["description"] = "The epic gems may not be available until Black Temple is released, however, some users have reported getting one out of this bag already.",
 						-- #endif
-						["timeline"] = { "added 2.4.0.7923" },
+						["timeline"] = { ADDED_2_4_0 },
 						["groups"] = {
 							i(32227),	-- Crimson Spinel
 							i(32228),	-- Empyrean Sapphire

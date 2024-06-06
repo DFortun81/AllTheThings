@@ -14,12 +14,12 @@ if not C_TransmogCollection then
 	end
 
 	-- External Functionality
-	app.AddSourceInformation = app.DoNothing;
-	app.BuildSourceInformationForPopout = app.DoNothing;
-	app.GetGroupSourceID = app.DoNothing
+	app.AddSourceInformation = app.EmptyFunction;
+	app.BuildSourceInformationForPopout = app.EmptyFunction;
+	app.GetGroupSourceID = app.EmptyFunction
 
 	-- Extend the Filter Module to include ItemSource
-	app.Modules.Filter.Set.ItemSource = app.DoNothing;
+	app.Modules.Filter.Set.ItemSource = app.EmptyFunction;
 	return
 end
 
@@ -40,7 +40,7 @@ local C_TransmogCollection_GetAppearanceSourceInfo, C_TransmogCollection_GetAllA
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance
 	= C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
-local ATTAccountWideData, AccountSources
+local ATTAccountWideData, AccountSources, CharacterData
 
 -- Inventory Slot Harvester
 local SlotByInventoryType = setmetatable({}, {
@@ -146,6 +146,10 @@ app.DetermineItemLink = function(sourceID)
 		-- app.PrintDebug("DetermineItemLink:Good",link,sourceID,"(Basic Item Data)");
 		-- app.PrintTable(sourceInfo)
 		return link;
+	end
+	-- Cannot do this process until the base Item is loaded in the Client
+	if not GetItemInfo(link) then
+		return RETRIEVING_DATA
 	end
 	local checkID, found = GetSourceID(link);
 	if found and checkID == sourceID then return link; end
@@ -313,7 +317,7 @@ local function CompletionistItemCollectionHelper(sourceID, oldState)
 				-- This is okay since items of this type share their appearance regardless of the power of the item.
 				local name, link = GetItemInfo(sourceInfo.itemID);
 
-				app.print(L.ITEM_ID_ADDED_MISSING:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID));
+				app.print(L.ITEM_ID_ADDED_MISSING:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, app.Version));
 
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
 				app.Audio:PlayReportSound();
@@ -360,7 +364,7 @@ local function UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				-- This is okay since items of this type share their appearance regardless of the power of the item.
 				local name, link = GetItemInfo(sourceInfo.itemID);
 
-				app.print(L[newCollected and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"]:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned));
+				app.print(L[newCollected and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"]:format(link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, newAppearancesLearned, app.Version));
 
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
 				app.Audio:PlayReportSound();
@@ -504,6 +508,16 @@ local function CollectUniqueAppearances()
 	-- app.PrintDebug("Unique Refresh")
 	local currentCharacterOnly = app.Settings:Get("MainOnly");
 	local ItemSourceFilter = app.ItemSourceFilter;
+	if not app.MaxSourceID then
+		-- app.PrintDebug("Initial Session Refresh")
+		local maxSourceID = 0;
+		for id,_ in pairs(SearchForFieldContainer("sourceID")) do
+			-- track the max sourceID so we can evaluate sources not in ATT as well
+			if id > maxSourceID then maxSourceID = id; end
+		end
+		app.MaxSourceID = maxSourceID;
+		-- app.PrintDebug("MaxSourceID",maxSourceID)
+	end
 	for sourceID=1,app.MaxSourceID do
 		-- for each known source
 		if AccountSources[sourceID] == 1 then
@@ -599,6 +613,15 @@ do
 		if not link then return; end
 		-- app.PrintDebug("GGLUS",sourceID,link)
 
+		if IsRetrieving(link) then
+			group.retries = (group.retries or 0) + 1
+			if group.retries > 10 then
+				return
+			end
+			app.FunctionRunner.Run(GenerateGroupLinkUsingSourceID, group)
+			return
+		end
+
 		app.ImportRawLink(group, link, true);
 
 		local sourceGroup = app.SearchForObject("sourceID", sourceID, "key");
@@ -607,20 +630,24 @@ do
 		end
 	end
 
-	-- At this time an appearance must be associated with an item. (TODO: Maybe not?)
+	-- An appearance must be associated with an item since the Item link is displayed in Transmog UI
 	local createItemWithAppearance = app.ExtendClass("Item", "ItemWithAppearance", "sourceID", {
-		["collectible"] = function(t)
+		collectible = function(t)
 			return app.Settings.Collectibles.Transmog;
 		end,
-		["collected"] = function(t)
+		collected = function(t)
 			return AccountSources[t.sourceID];
 		end,
 		trackable = app.ReturnTrue,
 		saved = function(t)
 			return app.IsAccountCached("Sources", t.sourceID) == 1
 		end,
+		collectedwarband = app.IsClassic and app.EmptyFunction or
+		function(t)
+			return app.IsAccountCached("SourceItemsOnCharacter", t.sourceID)
+		end,
 		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
-		["itemID"] = function(t)
+		itemID = function(t)
 			if t.__autolink then return; end
 			-- async generation of the proper Item Link
 			-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped
@@ -632,7 +659,15 @@ do
 			return rawget(t, "itemID")
 		end,
 	});
-	app.CreateItemSource = function(sourceID, itemID, t)
+	app.CreateItemSource = app.GameBuildVersion < 50000 and function(sourceID, itemID, t)
+		if t and (not t.q or t.q < 2) then
+			t.sourceID = sourceID;
+			return app.CreateItem(itemID, t);
+		end
+		t = createItemWithAppearance(sourceID, t);
+		t.itemID = itemID;
+		return t;
+	end or function(sourceID, itemID, t)
 		t = createItemWithAppearance(sourceID, t);
 		t.itemID = itemID;
 		return t;
@@ -640,9 +675,12 @@ do
 end
 
 -- External Functionality
-app.AddSourceInformation = function(sourceID, info, group, sourceGroup)
+app.AddSourceInformation = function(sourceID, info, group)
 	local sourceInfo = sourceID and C_TransmogCollection_GetSourceInfo(sourceID);
 	if sourceInfo then
+		local sourceGroup = group
+		-- app.PrintDebug("ASI",app:SearchLink(group))
+		-- app.PrintGroup(group)
 		local working = false;
 		local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable;
 		if #allVisualSources < 1 or not contains(allVisualSources, sourceID) then
@@ -966,6 +1004,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		app.WipeSearchCache();
 	end
 end
+
 app.AddEventHandler("OnStartup", function()
 	-- TODO: app.AddEventRegistration
 	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
@@ -982,7 +1021,85 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	ATTAccountWideData = accountWideData
 	if not accountWideData.Sources then accountWideData.Sources = {}; end
 	AccountSources = ATTAccountWideData.Sources
+
+	if not accountWideData.SourceItemsOnCharacter then accountWideData.SourceItemsOnCharacter = {}; end
+
+	-- saved var global will exist at this point
+	CharacterData = ATTCharacterData
 end);
+
+if app.IsRetail then
+	local function CheckForUnknownSourceID(link)
+		local sourceID = GetSourceID(link)
+		if not sourceID then
+			-- app.PrintDebug("No SourceID",link)
+			return
+		end
+		if app.IsAccountCached("Sources", sourceID) then
+			-- app.PrintDebug("Learned SourceID",sourceID,link)
+			return
+		end
+		-- if wrong class then won't be learned (probably)
+		local item = app.SearchForObject("sourceID", sourceID, "field")
+		if item.b ~= 1 then
+			-- app.PrintDebug("Non-bound SourceID",sourceID,link)
+			return
+		end
+		if item.nmc or item.nmr then
+			-- app.PrintDebug("Wrong class/race SourceID",sourceID,link)
+			return
+		end
+
+		-- TODO: add information type to show character which has the item
+		app.SetAccountCached("SourceItemsOnCharacter",sourceID,app.GUID)
+		-- app.PrintDebug("Unlearned SourceID!",sourceID,link)
+		return
+	end
+	local CheckValue
+	local function ClearIfValue(container, check)
+		for id,val in pairs(container) do
+			if val == check then
+				container[id] = nil
+			end
+		end
+	end
+	local function ClearIfMyGuid(container)
+		local guid = app.GUID
+		ClearIfValue(container, guid)
+	end
+	local function ClearIfCheckValue(container)
+		ClearIfValue(container, CheckValue)
+	end
+	local function CheckForBoundSourceItems()
+		app.ScanInventory(CheckForUnknownSourceID)
+	end
+
+	app.AddEventHandler("OnStartup", function()
+		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 5)
+		-- Add information type once ATT starts up
+		app.Settings.CreateInformationType("collectedwarband", { priority = 11001, HideCheckBox = true, ForceActive = true,
+			Process = function(t, reference, tooltipInfo)
+				local collectedGuid = t:GetValue(reference)
+				if not collectedGuid then return end
+				local charData = CharacterData[collectedGuid]
+				if not charData then
+					app.print("Removing 'collectedwarband' for unknown player Guid!",collectedGuid)
+					CheckValue = collectedGuid
+					app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfCheckValue)
+					CheckValue = nil
+					return
+				end
+				local charName = charData.text or UNKNOWN
+				tinsert(tooltipInfo, { right = L.BOUND_ON:format(charName)});
+			end
+		});
+	end);
+	app.AddEventRegistration("BANKFRAME_OPENED", function()
+		app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)
+		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
+	end)
+	app.AddEventHandler("OnRefreshCollectionsDone", CheckForBoundSourceItems)
+end
 
 -- Extend the Filter Module to include ItemSource
 app.Modules.Filter.Set.ItemSource = function(useUnique, useMainOnly)

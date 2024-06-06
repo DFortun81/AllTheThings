@@ -623,7 +623,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 		filter(HELD_IN_OFF_HAND, {
 			i(113270, {	-- Shadowtome
-				["timeline"] = { "created 9.0" },
+				["timeline"] = { CREATED_9_0_1 },
 				["bonusID"] = 585,
 			}),
 			-- #IF BEFORE 10.0.5
@@ -636,11 +636,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 		filter(STAVES, {
 			i(113134, {	-- Crystalfire Spellstaff
-				["timeline"] = { "created 9.0" },
+				["timeline"] = { CREATED_9_0_1 },
 				["bonusID"] = 585,
 			}),
 			i(111526, {	-- Etched-Blade Warstaff
-				["timeline"] = { "created 9.0" },
+				["timeline"] = { CREATED_9_0_1 },
 				["bonusID"] = 585,
 			}),
 			-- #IF BEFORE 10.0.5
@@ -657,7 +657,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 		filter(WANDS, {
 			i(113131, {	-- Warmaster's Firestick
-				["timeline"] = { "created 9.0" },
+				["timeline"] = { CREATED_9_0_1 },
 				["bonusID"] = 585,
 			}),
 			-- #IF BEFORE 10.0.5
@@ -903,13 +903,3 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, {
-	n(PROFESSIONS, {
-		prof(TAILORING, {
-			expansion(EXPANSION.WOD, {
-				i(114833),	-- Miniature Flying Carpet
-				i(118052),	-- Murloc Chew Toy
-			}),
-		}),
-	}),
-});

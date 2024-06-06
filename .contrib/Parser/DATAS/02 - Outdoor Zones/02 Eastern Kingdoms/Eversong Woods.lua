@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_eversongwoods",
 		-- #endif
-		["timeline"] = { "added 2.0.1.6180" },
+		["timeline"] = { ADDED_2_0_1 },
 		["groups"] = {
 			m(SUNSTRIDER_ISLE, {
 				["lore"] = "Sunstrider Isle is an island located in northwestern Eversong Woods. After the Third War, no elf was alive on the isle. It was through here that the red dragon Korialstrasz flew over when Prince Kael'thas destroyed the corrupted Sunwell. By the year 25, the isle was reclaimed and thriving.",
@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.3, 19.1, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
+							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- 0/6 Arcane Sliver
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.3, 19.1, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 6.0.2.18816" },
+							["timeline"] = { ADDED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- 0/6 Arcane Sliver
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.2, 21.5, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -133,7 +133,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.3, 20.1, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { ADDED_4_0_3, "removed 7.0.3" },
+							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { WARRIOR },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -152,7 +152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.9, 21.4, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.9, 20.0, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { ROGUE },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.2, 21.5, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.4, 20.4, EVERSONG_WOODS },	-- Matron Arena <Priest Trainer>
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { HUNTER },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -274,7 +274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.9, 21.4, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -295,7 +295,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.4, 20.4, EVERSONG_WOODS },	-- Matron Arena <Priest Trainer>
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -313,7 +313,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -327,7 +327,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 61.0, 45.1, SUNSTRIDER_ISLE },
 							["races"] = { BLOODELF },
 							["classes"] = { MONK },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						}),
 						q(9676, {	-- Paladin Training
 							["qg"] = 15278,	-- Magistrix Erona
@@ -336,7 +336,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -352,7 +352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -397,7 +397,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { ROGUE },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -425,7 +425,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
+							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
@@ -463,7 +463,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 								i(20474),	-- Sunstrider Book Satchel
 								i(131235, {	-- Sunspire Cinch
-									["timeline"] = { "added 7.0.3" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(20996),	-- Sunspire Cord
 								i(20995),	-- Well Watcher Gloves
@@ -479,7 +479,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 6.0.2.18816" },
+							["timeline"] = { ADDED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								}),
 								i(20474),	-- Sunstrider Book Satchel
 								i(131235, {	-- Sunspire Cinch
-									["timeline"] = { "added 7.0.3" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(20996),	-- Sunspire Cord
 								i(20995),	-- Well Watcher Gloves
@@ -532,7 +532,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.0, 20.0, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { HUNTER },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -552,7 +552,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
+							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Shrine of Dath'Remar Read
@@ -575,7 +575,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 6.0.2.18816" },
+							["timeline"] = { ADDED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								objective(1, {	-- Shrine of Dath'Remar Read
@@ -597,7 +597,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 37.2, 19, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
+							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								-- #if BEFORE CATA
@@ -624,12 +624,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 37.2, 19, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
-							["timeline"] = { "added 6.0.2.18816" },
+							["timeline"] = { ADDED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
 							["groups"] = {
 								i(20999),	-- Green Chain Gauntlets
 								i(131236, {	-- Gleaming Chain Bindings
-									["timeline"] = { "added 7.0.3" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(21001),	-- Striding Pants
 								i(21000),	-- Vigorous Bracers
@@ -640,7 +640,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["coord"] = { 63.6, 42.6, SUNSTRIDER_ISLE },
 							["races"] = { BLOODELF },
 							["classes"] = { MONK },
-							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3" },
+							["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 						}),
 						q(8326, {	-- Unfortunate Measures
 							["qg"] = 15278,	-- Magistrix Erona
@@ -664,7 +664,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 								i(20993),	-- Lynxskin Gloves
 								i(20992),	-- Sunrise Bracers
 								i(131818, {	-- Verdant Chain Gloves
-									["timeline"] = { "added 7.0.3" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -675,7 +675,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -692,7 +692,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38, 21, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARRIOR },
 							["races"] = { BLOODELF },
 							-- #if AFTER CATA
@@ -710,7 +710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.5, 20.6, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PALADIN },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -729,7 +729,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.9, 20.0, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { ROGUE },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -747,7 +747,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.2, 21.5, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -765,7 +765,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 38.9, 21.4, EVERSONG_WOODS },
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -783,7 +783,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.4, 20.4, EVERSONG_WOODS },	-- Matron Arena <Priest Trainer>
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { PRIEST },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -801,7 +801,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							-- #else
 							["coord"] = { 39.0, 20.0, EVERSONG_WOODS },	-- Ranger Sallina <Hunter Trainer>
 							-- #endif
-							["timeline"] = { "removed 7.0.3" },
+							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { HUNTER },
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
@@ -967,7 +967,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				fp(82, {	-- Silvermoon City [Horde]
 					["cr"] = 16192,	-- Skymistress Gloaming <Dragonhawk Master>
 					["coord"] = { 54.4, 50.8, EVERSONG_WOODS },
-					["timeline"] = { "added 2.0.1.6180" },
+					["timeline"] = { ADDED_2_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -1032,6 +1032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9673, {	-- Beast Training
 					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
+					["sourceQuest"] = 9485,	-- Taming the Beast (3/3)
 					["coord"] = { 60.3, 62.8, EVERSONG_WOODS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SILVERMOON_CITY },
@@ -1077,8 +1078,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Eversong Ranger Blessed
-							["spellID"] = 1243,	-- Power Word: Fortitude
-							["cr"] = 15938,	-- Eversong Ranger
+							["provider"] = { "n", 15938 },	-- Eversong Ranger
 						}),
 						i(23924, {	-- Robes of Silvermoon
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1191,7 +1191,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28148),	-- Bronze Plate Bracers
 						i(28146),	-- Courier's Wraps
 						i(131243, {	-- Tranquillien Ranger's Cuffs
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(28147),	-- Tranquillien Scout's Bracers
 						i(22571),	-- Courier's Bag
@@ -1273,7 +1273,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(5, 5, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Captain Kelisendra's Cargo
-							["provider"] = { "i", 21771 },	-- Captain Kelisendra's Cargo
+							["providers"] = {
+								{ "i",  21771 },	-- Captain Kelisendra's Cargo
+								{ "o", 180917 },	-- Captain Kelisendra's Cargo
+							},
 							["crs"] = {
 								15670,	-- Grimscale Forager
 								15668,	-- Grimscale Murloc
@@ -1335,7 +1338,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(22956),	-- Rusty Mace
 						i(133696, {	-- Rusty Sin'dorei Stiletto
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(22957),	-- Rusty Sin'dorei Sword
 					},
@@ -1350,8 +1353,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["provider"] = { "i", 21808 },	-- Arcane Core
 							["cr"] = 15638,	-- Arcane Patroller
 						}),
+						i(24241),	-- Green Chain Belt
+						i(23367),	-- Light Silk Robe
+						i(27552),	-- Soft Leather Vest
 						i(131237, {	-- Padded Chainmail
-							["timeline"] = { "added 7.0.1" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1401,7 +1407,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22952),	-- Springpaw Hide Cloak
 						i(22951),	-- Springpaw Hide Leggings
 						i(131239, {	-- Springpaw Padded Greaves
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1512,6 +1518,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(8, 8, 1),
 				}),
+				q(9617, {	-- Seek the Farstriders
+					["qgs"] = {
+						16271,	-- Telenus <Pet Trainer>
+						16673,	-- Oninath <Hunter Trainer>
+					},
+					["coords"] = {
+						{ 48.0, 46.0, EVERSONG_WOODS },
+						{ 84.6, 26.6, SILVERMOON_CITY },
+					},
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = { BLOODELF },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+				}),
 				q(8892, {	-- Situation at Sunsail Anchorage
 					["qg"] = 15939,	-- Ranger Degolien
 					-- #if BEFORE LEGION
@@ -1591,6 +1611,62 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
 				}),
+				q(9484, {	-- Taming the Beast (1/3)
+					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
+					["sourceQuest"] = 9617,	-- Seek the Farstriders
+					["coord"] = { 60.2, 62.8, EVERSONG_WOODS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = { BLOODELF },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame a Crazed Dragonhawk
+							["providers"] = {
+								{ "n", 15650 },	-- Crazed Dragonhawk
+								{ "i", 23697 },	-- Taming Rod
+							},
+						}),
+					},
+				}),
+				q(9486, {	-- Taming the Beast (2/3)
+					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
+					["sourceQuest"] = 9484,	-- Taming the Beast (1/3)
+					["coord"] = { 60.2, 62.8, EVERSONG_WOODS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = { BLOODELF },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame an Elder Springpaw
+							["providers"] = {
+								{ "n", 15652 },	-- Elder Springpaw
+								{ "i", 23702 },	-- Taming Rod
+							},
+						}),
+					},
+				}),
+				q(9485, {	-- Taming the Beast (3/3)
+					["qg"] = 15399,	-- Lieutenant Dawnrunner <Farstriders>
+					["sourceQuest"] = 9486,	-- Taming the Beast (2/3)
+					["coord"] = { 60.2, 62.8, EVERSONG_WOODS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = { BLOODELF },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- Tame a Mistbat
+							["providers"] = {
+								{ "n", 16353 },	-- Mistbat
+								{ "i", 23703 },	-- Taming Rod
+							},
+						}),
+						-- #if BEFORE CATA
+						recipe(883),	-- Call Pet
+						recipe(2641),	-- Dismiss Pet
+						recipe(1515),	-- Tame Beast
+						-- #endif
+					},
+				}),
 				q(8475, {	-- The Dead Scar
 					["qg"] = 15416,	-- Ranger Jaela
 					["coord"] = { 50.3, 50.7, EVERSONG_WOODS },
@@ -1604,7 +1680,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23376),	-- Gatewatcher's Chain Gloves
 						i(23377),	-- Guard's Leggings
 						i(131238, {	-- Sentry's Chain Shirt
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1623,7 +1699,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23372),	-- Bloodhawk Claymore
 						i(23373),	-- Long Knife
 						i(133695, {	-- Short Knife
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1709,7 +1785,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23398),	-- Worn Ranger's Bow
 						i(23395),	-- Farstrider's Buckler
 						i(133694, {	-- Ranger's Notched Dirk
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(23397),	-- Satin Lined Gloves
 						i(23396),	-- Slightly Used Ranger's Blade
@@ -1773,7 +1849,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(4, 4, 1),
 					["groups"] = {
 						objective(1, {	-- 0/6 Unstable Mana Crystal
-							["provider"] = { "i", 20743 },	-- Unstable Mana Crystal
+							["providers"] = {
+								{ "i",  20743 },	-- Unstable Mana Crystal
+								{ "o", 180600 },	-- Unstable Mana Crystal Crate
+							},
 						}),
 					},
 				}),
@@ -1801,7 +1880,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23266),	-- Ranger's Vest
 						i(23267),	-- Satin Lined Boots
 						i(131252, {	-- Ranger's Chainmail
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1846,7 +1925,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(22965),	-- Longshoreman's Bindings
 						i(131240, {	-- Longshoreman's Bracers
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(22966),	-- Silk Wristbands
 						i(22964),	-- Sunsail Bracers
@@ -1921,15 +2000,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(64915),	-- Cape of Silvermoon
-						i(64916),	-- Mantle of Silvermoon
-						i(64914),	-- Shroud of Silvermoon
-						i(67535),	-- Silvermoon Satchel
-						i(45585),	-- Silvermoon City Tabard
+						i(45585, {	-- Silvermoon City Tabard
+							["timeline"] = { ADDED_3_1_0 },
+						}),
+						i(64915, {	-- Cape of Silvermoon
+							["minReputation"] = { 911, EXALTED },	-- Silvermoon City, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(64916, {	-- Mantle of Silvermoon
+							["minReputation"] = { 911, EXALTED },	-- Silvermoon City, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(64914, {	-- Shroud of Silvermoon
+							["minReputation"] = { 911, EXALTED },	-- Silvermoon City, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(67535, {	-- Silvermoon Satchel
+							["minReputation"] = { 911, REVERED },	-- Silvermoon City, Revered.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
 					},
 				}),
 				n(16264, {	-- Winaestra <Hawkstrider Breeder>
 					["coord"] = { 61.0, 54.6, EVERSONG_WOODS },
+					-- Available to Blood Elves without faction requirements.
+					["minReputation"] = { 911, EXALTED },	-- Silvermoon City, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. BLOODELF .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(29221),	-- Black Hawkstrider (MOUNT!)

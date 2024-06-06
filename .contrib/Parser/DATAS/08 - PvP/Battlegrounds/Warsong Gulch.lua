@@ -139,7 +139,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						1252,	-- Supreme Defender (H)
 						207,	-- Save the Day
 					}},
-					["timeline"] = { ADDED_3_0_2, "removed 4.3.0" },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(166, {	-- Warsong Gulch Victory
@@ -232,7 +232,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 10, 19 },
 				}),
@@ -240,7 +240,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
@@ -248,7 +248,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
@@ -256,7 +256,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
@@ -264,7 +264,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
@@ -272,7 +272,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15350,	-- Horde Warbringer
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
@@ -281,7 +281,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8368,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 10, 19 },
@@ -291,7 +291,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8426,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 20, 29 },
@@ -301,7 +301,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8427,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 30, 39 },
@@ -311,7 +311,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8428,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 40, 49 },
@@ -321,7 +321,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8429,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 50, 59 },
@@ -331,7 +331,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8430,	-- Battle of Warsong Gulch
 					["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 60, 69 },
@@ -340,7 +340,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 10, 19 },
 				}),
@@ -348,7 +348,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
@@ -356,7 +356,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
@@ -364,7 +364,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
@@ -372,7 +372,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
@@ -380,7 +380,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 15351,	-- Alliance Brigadier General
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
@@ -389,7 +389,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8372,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 10, 19 },
@@ -399,7 +399,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8399,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 20, 29 },
@@ -409,7 +409,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8400,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 30, 39 },
@@ -419,7 +419,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8401,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 40, 49 },
@@ -429,7 +429,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8402,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 50, 59 },
@@ -439,7 +439,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8403,	-- Fight for Warsong Gulch
 					["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 					["cost"] = { { "i", 20558, 3 } },	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = { 60, 69 },
@@ -543,7 +543,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			n(REWARDS, {
 				i(20558, {	-- Warsong Gulch Mark of Honor
-					["timeline"] = { "removed 3.3.3" },
+					["timeline"] = { REMOVED_3_3_3 },
 				}),
 			}),
 			n(VENDORS, {
@@ -560,7 +560,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(211499, {	-- Trainee's Outrider Wolf
 							["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(10, i(19505)),	-- Warsong Battle Tabard
@@ -571,7 +571,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(212584, {	-- Advisor's Gnarled Staff
 							["minReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(3, i(20425)),	-- Advisor's Gnarled Staff
@@ -582,7 +582,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(212586, {	-- Legionnaire's Sword
 							["minReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(3, i(20430)),	-- Legionnaire's Sword
@@ -593,7 +593,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(212585, {	-- Outrider's Bow
 							["minReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(3, i(20437)),	-- Outrider's Bow
@@ -604,22 +604,22 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(212587, {	-- Scout's Blade
 							["minReputation"] = { 889, REVERED },	-- Warsong Outriders, Revered.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(3, i(20441)),	-- Scout's Blade
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(211500, {	-- Resilient Cloth Headband
 							["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						applyclassicphase(SOD_PHASE_ONE, i(211856, {	-- Resilient Mail Coif
 							["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						applyclassicphase(SOD_PHASE_ONE, i(211857, {	-- Resilient Leather Mask
 							["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(1, i(19534)),	-- Scout's Medallion
@@ -680,7 +680,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(211498, {	-- Trainee's Sentinel Nightsaber
 							["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(10, i(19506)),	-- Silverwing Battle Tabard
@@ -691,7 +691,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(212580, {	-- Lorekeeper's Staff
 							["minReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(3, i(20434)),	-- Lorekeeper's Staff
@@ -702,7 +702,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(212581, {	-- Outrunner's Bow
 							["minReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(3, i(20438)),	-- Outrunner's Bow
@@ -713,7 +713,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(212582, {	-- Protector's Sword
 							["minReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(3, i(20440)),	-- Protector's Sword
@@ -724,22 +724,22 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(212583, {	-- Sentinel's Blade
 							["minReputation"] = { 890, REVERED },	-- Silverwing Sentinels, Revered.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(3, i(19549)),	-- Sentinel's Blade
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(211500, {	-- Resilient Cloth Headband
 							["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						applyclassicphase(SOD_PHASE_ONE, i(211856, {	-- Resilient Mail Coif
 							["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						applyclassicphase(SOD_PHASE_ONE, i(211857, {	-- Resilient Leather Mask
 							["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						})),
 						-- #endif
 						moh(1, i(19538)),	-- Sentinel's Medallion

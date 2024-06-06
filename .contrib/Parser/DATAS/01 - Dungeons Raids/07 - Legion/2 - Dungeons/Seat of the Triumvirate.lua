@@ -195,7 +195,7 @@ root(ROOTS.Instances, { expansion(EXPANSION.LEGION, {
 				n(127882, {	-- Vixx the Collector
 					i(153004),	-- Unstable Portal Emitter (TOY!)
 					i(152982, {		-- Vixx's Chest of Tricks (TOY!)
-						title(365, {	-- %s the Collector
+						title(365, {	-- <Name> the Collector
 							["collectible"] = false,
 						}),
 					}),

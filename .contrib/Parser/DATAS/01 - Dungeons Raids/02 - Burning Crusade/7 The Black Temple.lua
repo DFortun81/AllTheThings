@@ -38,15 +38,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					["qg"] = 18528,	-- Xi'ri
 					["sourceQuest"] = 10949,	-- Entry Into the Black Temple
 					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
-					["timeline"] = { "removed 3.0.1" },
+					["timeline"] = { REMOVED_3_0_2 },
 					["lvl"] = lvlsquish(70, 70, 30),
 					["groups"] = {
 						ach(431, {	-- Hand of A'dal (Achievement)
 							["sourceQuest"] = 10985,	-- A Distraction for Akama
-							["timeline"] = { "removed 3.0.1" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 						title(39, {	-- Hand of A'dal
-							["timeline"] = { "removed 3.0.1" },
+							["timeline"] = { REMOVED_3_0_2 },
 						}),
 						i(32649),	-- Medallion of Karabor
 					},
@@ -119,7 +119,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					i(32429),	-- Pattern: Boots of Shackled Souls (RECIPE!)
 					i(32430, {	-- Pattern: Bracers of Shackled Souls (RECIPE!)
 						r(40000, {["timeline"] = {ADDED_2_1_0, REMOVED_3_0_3}}),
-						r(52733, {["timeline"] = {ADDED_3_0_3}}),
 					}),
 					i(32431),	-- Pattern: Greaves of Shackled Souls (RECIPE!)
 					i(32447),	-- Pattern: Night's End
@@ -250,7 +249,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							i(32261),	-- Band of the Abyssal Lord
 							-- #if BEFORE MOP
 							i(32257, {	-- Idol of the White Stag
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -281,7 +280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							i(32325),	-- Rifle of the Stoic Guardian
 							-- #if BEFORE MOP
 							i(32326, {	-- Twisted Blades of Zarak
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(32329),	-- Cowl of Benevolence
@@ -294,7 +293,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							i(32510),	-- Softstep Boots of Tracking
 							-- #if BEFORE MOP
 							i(32330, {	-- Totem of Ancestral Guidance
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},
@@ -360,7 +359,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							i(32366),	-- Shadowmaster's Boots
 							-- #if BEFORE MOP
 							i(32368, {	-- Tome of the Lightbringer
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 						},

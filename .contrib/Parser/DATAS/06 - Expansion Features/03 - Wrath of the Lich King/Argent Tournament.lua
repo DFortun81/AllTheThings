@@ -815,7 +815,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 33435,	-- Bozzle Blastbolt
 					["sourceQuest"] = 13820,	-- The Blastbolt Brothers
 					["coord"] = { 74.0, 24.6, ICECROWN },
-					["timeline"] = { ADDED_3_1_0, "removed 4.0.1" },
+					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 					["maps"] = { THE_STORM_PEAKS },
 					-- #if BEFORE CATA
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
@@ -2082,7 +2082,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 33434,	-- Bezzle Blastbolt
 					["sourceQuest"] = 13820,	-- The Blastbolt Brothers
 					["coord"] = { 74.2, 24.6, ICECROWN },
-					["timeline"] = { ADDED_3_1_0, "removed 4.0.1" },
+					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 					["maps"] = { CRYSTALSONG_FOREST },
 					-- #if BEFORE CATA
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
@@ -2692,7 +2692,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				q(13820, {	-- The Blastbolt Brothers
 					["qg"] = 33817,	-- Justicar Mariel Trueheart <Seneschal of the Argent Tournament>
 					["coord"] = { 69.6, 22.8, ICECROWN },
-					["timeline"] = { ADDED_3_1_0, "removed 4.0.1" },
+					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_1 },
 					-- #if BEFORE CATA
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_THREE .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. WRATH_PHASE_TWO .. [[; end]],
 					-- #endif
@@ -3948,6 +3948,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						13695,	-- A Valiant Of Undercity
 					},
 					["coord"] = { 76.5, 24.6, ICECROWN },
+					["_drop"] = { "races" },
 					["races"] = exclude({ ORC, GOBLIN, PANDAREN_HORDE, NIGHTBORNE, HIGHMOUNTAIN_TAUREN, ZANDALARI, VULPERA, MAGHAR, DRACTHYR_HORDE }, HORDE_ONLY),
 				}),
 				q(13708, {	-- Valiant Of Sen'jin
@@ -4145,11 +4146,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["groups"] = {
 							champ(25, i(45130)),	-- Blunderbuss of Khaz Modan
 							champ(25, i(164932, {	-- Grapeshotter of Khaz Modan
-								["timeline"] = { "added 8.1.0.28724" },
+								["timeline"] = { ADDED_8_1_0 },
 								["groups"] = {
 									i(164933, {	-- Sen'jin Beakblade Longrifle
 										["description"] = "This Horde item will be automatically learned after buying the Alliance version.",
-										["timeline"] = { "added 8.1.0.28724" },
+										["timeline"] = { ADDED_8_1_0 },
 									}),
 								},
 							})),
@@ -4292,7 +4293,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							-- #endif
 						}))),
 						champ(5, gold(500, i(46758, {	-- Swift Gray Steed (MOUNT!)
-							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							["timeline"] = { REMOVED_7_3_5 },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
 							-- #if BEFORE 7.3.5
 							["races"] = exclude(HUMAN, ALLIANCE_ONLY),
 							-- #endif
@@ -4312,7 +4313,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							["timeline"] = { ADDED_6_1_0 },
 							["sym"] = { { "fill" } },	-- simply fill this item
 						})),
-						champ(100, i(47179)),	-- Argent Charger (MOUNT!)
+						champ(100, i(47179, {	-- Argent Charger (MOUNT!)
+							["classes"] = { PALADIN },
+						})),
 						champ(15, i(46843)),	-- Argent Crusader's Banner (TOY!)
 						champ(50, i(46874)),	-- Argent Crusader's Tabard
 						champ(150, i(47541)),	-- Argent Pony Bridle
@@ -4321,91 +4324,91 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						-- Old Heirlooms
 						-- NOTE: The champion seal costs might be different prior to 6.2, double check when the vendor becomes available
 						champ(25, i(42944, {	-- Balanced Heartseeker
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(40, i(42943, {	-- Bloodied Arcanite Reaper
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(69893, {	-- Bloodsoaked Skullforge Reaver
-							["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+							["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 						})),
 						champ(25, i(69889, {	-- Burnished Breastplate of Might
-							["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+							["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 						})),
 						champ(25, i(69890, {	-- Burnished Pauldrons of Might
-							["timeline"] = { "added 4.1.0.13812", "removed 6.1.0.19445" },
+							["timeline"] = { ADDED_4_1_0, REMOVED_6_1_0 },
 						})),
 						champ(40, i(79131, {	-- Burnished Warden Staff
-							["timeline"] = { "added 5.0.1.15464", "removed 6.1.0.19445" },
+							["timeline"] = { ADDED_5_0_4, REMOVED_6_1_0 },
 						})),
 						champ(25, i(42950, {	-- Champion Herod's Shoulder
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(48677, {	-- Champion's Deathdealer Breastplate
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(40, i(42946, {	-- Charmed Ancient Bone Bow
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(42948, {	-- Devout Aurastone Hammer
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(40, i(42947, {	-- Dignified Headmaster's Charge
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(35, i(42992, {	-- Discerning Eye of the Beast
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(93902, {	-- Flamescarred Draconian Deflector
-							["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 						})),
 						champ(25, i(93904, {	-- Musty Tome of the Lost
-							["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 						})),
 						champ(25, i(42951, {	-- Mystical Pauldrons of Elements
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(48683, {	-- Mystical Vest of Elements
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(48685, {	-- Polished Breastplate of Valor
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(42949, {	-- Polished Spaulders of Valor
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(48687, {	-- Preened Ironfeather Breastplate
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(42984, {	-- Preened Ironfeather Shoulders
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(40, i(48718, {	-- Repurposed Lava Dredger
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(42952, {	-- Stained Shadowcraft Spaulders
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(48689, {	-- Stained Shadowcraft Tunic
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(35, i(42991, {	-- Swift Hand of Justice
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(42985, {	-- Tattered Dreadmist Mantle
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(48691, {	-- Tattered Dreadmist Robe
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(42945, {	-- Venerable Dal'Rend's Sacred Charge
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(48716, {	-- Venerable Mass of McGowan
-							["timeline"] = { "removed 6.1.0.19445" },
+							["timeline"] = { REMOVED_6_1_0 },
 						})),
 						champ(25, i(93903, {	-- Weathered Observer's Shield
-							["timeline"] = { ADDED_5_2_0, "removed 6.1.0.19445" },
+							["timeline"] = { ADDED_5_2_0, REMOVED_6_1_0 },
 						})),
 
 						-- New Heirlooms
@@ -4516,7 +4519,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							-- #endif
 						}))),
 						champ(5, gold(500, i(46762, {	-- Swift Violet Ram (MOUNT!)
-							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							["timeline"] = { REMOVED_7_3_5 },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
 							-- #if BEFORE 7.3.5
 							["races"] = exclude(DWARF, ALLIANCE_ONLY),
 							-- #endif
@@ -4543,7 +4546,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							-- #endif
 						}))),
 						champ(5, gold(500, i(46755, {	-- Great Golden Kodo (MOUNT!)
-							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							["timeline"] = { REMOVED_7_3_5 },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
 							-- #if BEFORE 7.3.5
 							["races"] = exclude(TAUREN, HORDE_ONLY),
 							-- #endif
@@ -4572,7 +4575,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							-- #endif
 						}))),
 						champ(5, gold(500, i(46764, {	-- White Skeletal Warhorse (MOUNT!)
-							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							["timeline"] = { REMOVED_7_3_5 },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
 							-- #if BEFORE 7.3.5
 							["races"] = exclude(UNDEAD, HORDE_ONLY),
 							-- #endif
@@ -4584,7 +4587,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				n(33594, {	-- Fizzix Blastbolt <Engineering Supplies>
 					["coord"] = { 72.2, 20.8, ICECROWN },
 					["groups"] = {
-						i(23817, {	-- Schematic: Titanium Toolbox
+						i(23817, {	-- Schematic: Titanium Toolbox (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -4607,7 +4610,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							-- #endif
 						}))),
 						champ(5, gold(500, i(46749, {	-- Swift Burgundy Wolf (MOUNT!)
-							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							["timeline"] = { REMOVED_7_3_5 },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
 							-- #if BEFORE 7.3.5
 							["races"] = exclude(ORC, HORDE_ONLY),
 							-- #endif
@@ -4645,7 +4648,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							-- #endif
 						}))),
 						champ(5, gold(500, i(46756, {	-- Great Red Elekk (MOUNT!)
-							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							["timeline"] = { REMOVED_7_3_5 },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
 							-- #if BEFORE 7.3.5
 							["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
 							-- #endif
@@ -4701,10 +4704,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 72.4, 20.8, ICECROWN },
 					["groups"] = {
 						epicurean(100, i(46349, {	-- Chef's Hat
-								["timeline"] = { "deleted 7.0.3.22248" },
+								["timeline"] = { DELETED_7_0_3 },
 							})),
 							epicurean(100, i(134020, {	-- Chef's Hat (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							})),
 							epicurean(1, i(43007)),	-- Northern Spices
 							epicurean(3, i(43035)),	-- Recipe: Blackened Dragonfin (RECIPE!)
@@ -4751,7 +4754,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							-- #endif
 						}))),
 						champ(5, gold(500, i(46763, {	-- Turbostrider (MOUNT!)
-							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							["timeline"] = { REMOVED_7_3_5 },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
 							-- #if BEFORE 7.3.5
 							["races"] = exclude(GNOME, ALLIANCE_ONLY),
 							-- #endif
@@ -4778,7 +4781,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							-- #endif
 						}))),
 						champ(5, gold(500, i(46759, {	-- Swift Moonsaber (MOUNT!)
-							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							["timeline"] = { REMOVED_7_3_5 },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
 							-- #if BEFORE 7.3.5
 							["races"] = exclude(NIGHTELF, ALLIANCE_ONLY),
 							-- #endif
@@ -4805,7 +4808,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							-- #endif
 						}))),
 						champ(5, gold(500, i(46760, {	-- Swift Purple Raptor (MOUNT!)
-							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							["timeline"] = { REMOVED_7_3_5 },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
 							-- #if BEFORE 7.3.5
 							["races"] = exclude(TROLL, HORDE_ONLY),
 							-- #endif
@@ -4832,7 +4835,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 							-- #endif
 						}))),
 						champ(5, gold(500, i(46761, {	-- Swift Red Hawkstrider (MOUNT!)
-							["timeline"] = { "removed 7.3.5" },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
+							["timeline"] = { REMOVED_7_3_5 },	-- CRIEVE NOTE: I don't know the actual patch, just know that in Retail it only shows the other one.
 							-- #if BEFORE 7.3.5
 							["races"] = exclude(BLOODELF, HORDE_ONLY),
 							-- #endif

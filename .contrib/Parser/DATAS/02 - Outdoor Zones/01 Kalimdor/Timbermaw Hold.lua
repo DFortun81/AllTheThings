@@ -442,15 +442,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						applyclassicphase(PHASE_THREE, i(19218)),	-- Pattern: Mantle of the Timbermaw
 						applyclassicphase(PHASE_THREE, i(19326)),	-- Pattern: Might of the Timbermaw (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19327)),	-- Pattern: Timbermaw Brawlers (RECIPE!)
-						i(20253),	-- Pattern: Warbear Harness
-						i(20254),	-- Pattern: Warbear Woolies
+						i(20253),	-- Pattern: Warbear Harness (RECIPE!)
+						i(20254),	-- Pattern: Warbear Woolies (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19215)),	-- Pattern: Wisdom of the Timbermaw
 						applyclassicphase(PHASE_THREE, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
 						i(13484),	-- Recipe: Transmute Earth to Water (RECIPE!)
 						i(66888, {	-- Stave of Fur and Claw Toy (TOY!)
 							["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-							["timeline"] = { "added 4.0.1.12984" },
+							["timeline"] = { ADDED_4_0_1 },
 						}),
 					},
 				}),

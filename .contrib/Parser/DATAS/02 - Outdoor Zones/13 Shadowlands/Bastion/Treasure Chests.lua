@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["questID"] = 61150,
 				["cost"] = {
 					{ "i", 180788, 1 },	-- Memorial Wine
-					{ "i", 180797, 1 },	-- Memorial Offering Key
+					{ "i", 180797, 1 },	-- Memorial Offering Key (QI!)
 				},
 			}),
 			o(339601, {	-- Scroll of Aeons

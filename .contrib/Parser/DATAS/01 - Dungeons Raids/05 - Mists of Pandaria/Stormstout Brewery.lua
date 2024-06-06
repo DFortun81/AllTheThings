@@ -23,6 +23,9 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					["coord"] = { 76.2, 36.4, 439 },
 					["sourceQuest"] = 30085,	-- Into the Brewery
 					["g"] = {
+						o(213795, {	-- Stormstout Secrets
+							i(86431),	-- Stormstout Secrets (QI!)
+						}),
 						i(87312),	-- Auntie's Cooking Apron
 						i(87314),	-- Blackened Chain Cloak
 						i(87310),	-- Stormstout Drink Napkin

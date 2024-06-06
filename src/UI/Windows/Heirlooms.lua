@@ -6,6 +6,7 @@ local L = app.L;
 -- Global locals
 local ipairs, pairs, tinsert =
 	  ipairs, pairs, tinsert;
+local GetRelativeValue = app.GetRelativeValue;
 
 -- Implementation
 app:CreateWindow("Heirlooms", {
@@ -25,18 +26,15 @@ app:CreateWindow("Heirlooms", {
 				local g = data.g;
 				if #g < 1 then
 					local heirlooms = {};
-					for i,_ in pairs(app.SearchForFieldContainer("heirloomUnlockID")) do
+					for i,searchResults in pairs(app.SearchForFieldContainer("heirloomUnlockID")) do
 						if not heirlooms[i] then
-							local heirloom = {};
-							for j,o in ipairs(_) do
-								for key,value in pairs(o.parent) do heirloom[key] = value; end
+							local parents = {};
+							for j,o in ipairs(searchResults) do
+								tinsert(parents, o.parent);
 							end
-							heirloom.progress = nil;
-							heirloom.total = nil;
-							heirloom.g = nil;
-							heirloom = app.CreateHeirloom(tonumber(i), heirloom);
-							heirlooms[i] = heirloom;
-							heirloom.parent = data;
+							app.Sort(parents, app.SortDefaults.Accessibility);
+							local heirloom = setmetatable({ parent = data }, { __index = parents[1] });
+							heirloom.u = GetRelativeValue(parents[1], "u");
 							tinsert(g, heirloom);
 						end
 					end

@@ -594,7 +594,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				--  Weekly Raid Quests
 				q(24874, {	-- Blood Quickening [10]
 					["qg"] = 38551,	-- Alrin the Agile
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -606,7 +606,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24879, {	-- Blood Quickening [25]
 					["qg"] = 38551,	-- Alrin the Agile
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -618,7 +618,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24869, {	-- Deprogramming [10]
 					["qg"] = 38471,	-- Infiltrator Minchar
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -630,7 +630,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24875, {	-- Deprogramming [25]
 					["qg"] = 38471,	-- Infiltrator Minchar
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -642,7 +642,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24873, {	-- Residue Rendezvous [10]
 					["qg"] = 38501,	-- Alchemist Adrianna
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -657,7 +657,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24878, {	-- Residue Rendezvous[25]
 					["qg"] = 38501,	-- Alchemist Adrianna
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -672,7 +672,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24872, {	-- Respite for a Tormented Soul [10]
 					["qg"] = 38589,	-- Valithria Dreamwalker
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -688,7 +688,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24880, {	-- Respite for a Tormented Soul [25]
 					["qg"] = 38589,	-- Valithria Dreamwalker
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -704,7 +704,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24871, {	-- Securing the Ramparts [10] (A)
 					["qg"] = 38492,	-- Skybreaker Lieutenant
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -716,7 +716,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24876, {	-- Securing the Ramparts [25] (A)
 					["qg"] = 38492,	-- Skybreaker Lieutenant
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -728,7 +728,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24870, {	-- Securing the Ramparts [10] (H)
 					["qg"] = 38491,	-- Kor'kron Lieutenant
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -740,7 +740,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 				q(24877, {	-- Securing the Ramparts [25] (H)
 					["qg"] = 38491,	-- Kor'kron Lieutenant
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["isWeekly"] = true,
 					["lvl"] = 80,
 					["groups"] = {
@@ -770,7 +770,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				["description"] = "Rewarded for completing the Weekly Raid quests.",
 				["groups"] = {
 					i(52006, {	-- Sack of Frosty Treasures
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["sym"] = {
 							{
 								"select", "itemID",
@@ -926,9 +926,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(49972, {	-- Plans: Hellfrozen Bonegrinders (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(52023, {	-- Plans: Iceblade Arrow
+					i(52023, {	-- Plans: Iceblade Arrow (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						["timeline"] = { "deleted 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 					i(49971, {	-- Plans: Legplates of Painful Death (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
@@ -942,9 +942,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					i(49969, {	-- Plans: Puresteel Legplates (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 					}),
-					i(52022, {	-- Plans: Shatter Rounds
+					i(52022, {	-- Plans: Shatter Rounds (RECIPE!)
 						["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
-						["timeline"] = { "deleted 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 					}),
 				}),
 				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>
@@ -960,7 +960,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						emof(60, i(50996)),	-- Belt of Omission
 						emof(60, i(50994)),	-- Belt of Petrified Ivy
 						emof(30, i(50458, {	-- Bizuri's Totem of Shattered Ice
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(60, i(50980)),	-- Blizzard Keeper's Mitts
 						emof(95, i(50965)),	-- Castle Breaker's Battleplate
@@ -979,22 +979,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						emof(60, i(50981)),	-- Gloves of the Great Horned Owl
 						emof(60, i(50355)),	-- Herkumi War Token
 						emof(30, i(50454, {	-- Idol of the Black Willow
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50456, {	-- Idol of the Crying Moon
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50457, {	-- Idol of the Lunar Eclipse
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50460, {	-- Libram of Blinding Light
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50461, {	-- Libram of the Eternal Tower
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50455, {	-- Libram of Three Truths
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(60, i(50989)),	-- Lich Killer's Lanyard
 						emof(60, i(50979)),	-- Logsplitters
@@ -1010,16 +1010,16 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						emof(50, i(50466)),	-- Sentinel's Winter Cloak
 						emof(95, i(50972)),	-- Shadow Seeker's Tunic
 						emof(30, i(50462, {	-- Sigil of the Bone Gryphon
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50459, {	-- Sigil of the Hanged Man
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50463, {	-- Totem of the Avalanche
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(30, i(50464, {	-- Totem of the Surging Sea
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						emof(60, i(50995)),	-- Vengeful Noose
 						emof(60, i(50991)),	-- Verdigris Chain Belt
@@ -1115,7 +1115,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4534),	-- Boned (10 player)
 							i(142094, {	-- Boneshard (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(50761),	-- Citadel Enforcer's Claymore
 							i(50759),	-- Bone Warden's Splitter
@@ -1185,7 +1185,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4537),	-- I've Gone and Made a Mess (10 player)
 							i(142095, {	-- Blood Boil (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(50805),	-- Mag'hari Chieftain's Staff
 							i(50798),	-- Ramaladni's Blade of Culling
@@ -1201,7 +1201,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50803),	-- Saurfang's Cold-Forged Band
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -1242,7 +1242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50812),	-- Taldron's Long Neglected Boots
 							i(50986),	-- Signet of Putrefaction
 							i(50999, {	-- Gluth's Fetching Knife
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1268,7 +1268,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
 							i(142096, {	-- Blightbreath (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(51011),	-- Flesh-Carving Scalpel
 							i(51010),	-- The Facelifter
@@ -1370,7 +1370,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4580),	-- All You Can Eat (10 player)
 							i(142097, {	-- Soulbroken Whelpling (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(51788),	-- Bleak Coldarra Carver
 							i(51784),	-- Splintershard
@@ -1395,7 +1395,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 								title(140),	-- the Kingslayer
 							}),
 							i(142098, {	-- Drudge Ghoul (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
@@ -1415,7 +1415,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -1442,7 +1442,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4534),	-- Boned (10 player)
 							i(142094, {	-- Boneshard (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(51936),	-- Citadel Enforcer's Claymore
 							i(51938),	-- Bone Warden's Splitter
@@ -1515,7 +1515,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142095, {	-- Blood Boil (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(51898),	-- Mag'hari Chieftain's Staff
 							i(51905),	-- Ramaladni's Blade of Culling
@@ -1531,7 +1531,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(51900),	-- Saurfang's Cold-Forged Band
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -1589,7 +1589,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(51873),	-- Shuffling Shoes
 							i(51878),	-- Rotface's Rupturing Ring
 							i(51880, {	-- Gluth's Fetching Knife
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1601,7 +1601,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142096, {	-- Blightbreath (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(51868),	-- Flesh-Carving Scalpel
 							i(51869),	-- The Facelifter
@@ -1709,7 +1709,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142097, {	-- Soulbroken Whelpling (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(51815),	-- Bleak Coldarra Carver
 							i(51819),	-- Splintershard
@@ -1740,7 +1740,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142099, {	-- Wicked Soul (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
@@ -1760,7 +1760,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -1787,7 +1787,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4610),	-- Boned (25 player)
 							i(142094, {	-- Boneshard (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(50415),	-- Bryntroll, the Bone Arbiter
 							i(49968),	-- Frozen Bonespike
@@ -1869,7 +1869,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142095, {	-- Blood Boil (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(50412),	-- Bloodvenom Blade
 							i(50014),	-- Greatcloak of the Turned Champion
@@ -1878,7 +1878,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50362),	-- Deathbringer's Will
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -1961,7 +1961,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142096, {	-- Blightbreath (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(50179),	-- Last Word
 							i(50068),	-- Rigormortis
@@ -2066,7 +2066,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142097, {	-- Soulbroken Whelpling (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(50423),	-- Sundial of Eternal Dusk
 							i(50421),	-- Sindragosa's Cruel Claw
@@ -2087,7 +2087,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142098, {	-- Drudge Ghoul (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
@@ -2107,7 +2107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -2134,7 +2134,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						["groups"] = {
 							ach(4610),	-- Boned (25 player)
 							i(142094, {	-- Boneshard (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(50709),	-- Bryntroll, the Bone Arbiter
 							i(50608),	-- Frozen Bonespike
@@ -2219,7 +2219,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142095, {	-- Blood Boil (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(50672),	-- Bloodvenom Blade
 							i(50668),	-- Greatcloak of the Turned Champion
@@ -2228,7 +2228,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(50363),	-- Deathbringer's Will
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -2314,7 +2314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142096, {	-- Blightbreath (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(50708),	-- Last Word
 							i(50704),	-- Rigormortis
@@ -2425,7 +2425,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142097, {	-- Soulbroken Whelpling (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(50635),	-- Sundial of Eternal Dusk
 							i(50633),	-- Sindragosa's Cruel Claw
@@ -2457,7 +2457,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142099, {	-- Wicked Soul (PET!)
-								["timeline"] = { "added 7.1.0.22731" },
+								["timeline"] = { ADDED_7_1_0 },
 							}),
 							i(138955, {	-- Illusion: Rune of Razorice (ILLUSION!)
 								["classes"] = { DEATHKNIGHT },
@@ -2477,7 +2477,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							}),
 							i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 								["sourceQuest"] = 38990,	-- The Call of Icecrown
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),

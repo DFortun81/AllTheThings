@@ -42,11 +42,12 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["description"] = "When you have both the ward and holy water, head to the entrance of the Crusader's Cathedral, but don't enter there - Instead, use your Ward of Naxxramas and turn to the left. If done correctly, you will see a Dread Ward of Naxxramas right next to the gates there, Once you find the Dread Ward, toss your  Stratholme Holy Water in it.\n\nIf done correctly, you will receive a zone-wide yell, and a debuff called  Sleight of Hand. Once you get this debuff, you have 5 minutes to run all the way to the Undead side of Stratholme, to the gate to the left of the Necropolis where Lord Aurius Rivendare is located. You MUST kill Lord Aurius Rivendare to open the gate. If you arrive in time, a Hand of Naxxramas NPC will be there, and you will be able to use your Argent Dawn Commission to burn it to a crisp.",
 					["sourceQuests"] = { 76257 },	-- Darkmaster's Scourgestone
 					["questID"] = 76261,
+					["maps"] = { 318 },	-- Stratholme - Undead
 					["cost"] = {
 						{ "i", 12846, 1 },	-- 1x Argent Dawn Commission
 						{ "i", 13180, 1 },	-- 1x Stratholme Holy Water
 						{ "i", 206377, 1 },	-- 1x Ward of Naxxramas
-					}
+					},
 				}),
 				n(16116, {	-- Archmage Angela Dosantos
 					["description"] = "Talk to Archmage after defeating Hand of Naxxramas",
@@ -195,7 +196,6 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						{ "i", 20520, 3 },		-- 3x Dark Rune
 						{ "i", 33042, 1 },		-- 1x Black Coffee
 						{ "i", 13180, 2 },		-- 2x Stratholme Holy Water
-						{ "i", 206473, 1 },		-- 1x Makeshift Grappling Hook
 					},
 					["g"] = {
 						i(206615),	-- Desecrated Cloth Bracers
@@ -1359,7 +1359,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							["lvl"] = lvlsquish(78, 78, 30),
 							["groups"] = {
 								i(44582, {	-- Key to the Focusing Iris
-									["timeline"] = { "deleted 4.2.0" },
+									["timeline"] = { DELETED_4_2_0 },
 									-- #if ANYCLASSIC
 									["OnUpdate"] = WOTLK_CLASSIC_TENMAN_KEY_ONUPDATE,
 									-- #endif
@@ -1699,7 +1699,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #elseif BEFORE 8.0.1
 									["description"] = "This item was originally unavailable until Patch 8.0.1 after the AllTheThings Discord reported it missing from the Patchwerk loot table. Interestingly enough, its absense triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
 									-- #endif
-									["timeline"] = { CREATED_3_0_2, "added 8.0.1" },
+									["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 },
 								}),
 								i(39273),	-- Sullen Cloth Boots
 							},
@@ -1875,7 +1875,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 									-- #elseif BEFORE 8.0.1
 									["description"] = "This item was originally unavailable until Patch 8.0.1 after the AllTheThings Discord reported it missing from the Patchwerk loot table. Interestingly enough, its absense triggered the creation of the addon by Crieve after failing to get this transmog to drop after many many months of unsuccessfully farming for it.",
 									-- #endif
-									["timeline"] = { CREATED_3_0_2, "added 8.0.1" },
+									["timeline"] = { CREATED_3_0_2, ADDED_8_0_1 },
 								}),
 								i(39224),	-- Leggings of Discord
 								i(39280),	-- Leggings of Innumerable Barbs
@@ -2037,7 +2037,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							["lvl"] = lvlsquish(78, 78, 30),
 							["groups"] = {
 								i(44581, {	-- Heroic Key to the Focusing Iris
-									["timeline"] = { "deleted 4.2.0" },
+									["timeline"] = { DELETED_4_2_0 },
 								}),
 							},
 						}),
@@ -2136,10 +2136,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
 								i(39757, {	-- Idol of Worship
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 								i(39728, {	-- Totem of Misery
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 							},
 						}),
@@ -2224,10 +2224,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
 								i(40190, {	-- Spinning Fate
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 								i(40191, {	-- Libram of Radiance
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 							},
 						}),
@@ -2269,7 +2269,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(40258),	-- Forethought Talisman
 								i(40256),	-- Grim Toll
 								i(40207, {	-- Sigil of Awareness
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 							},
 						}),
@@ -2350,10 +2350,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
 								i(40321, {	-- Idol of the Shooting Star
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 								i(40322, {	-- Totem of Dueling
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 							},
 						}),
@@ -2393,10 +2393,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(40258),	-- Forethought Talisman
 								i(40256),	-- Grim Toll
 								i(40342, {	-- Idol of Awakening
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 								i(40337, {	-- Libram of Resurgence
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 							},
 						}),
@@ -2429,7 +2429,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(40627),	-- Breastplate of the Lost Vanquisher
 								i(139547, {	-- Runes of the Darkening [Death Knight Hidden Appearance]
 									["sourceQuest"] = 38990,	-- The Call of Icecrown
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -2479,10 +2479,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(40108),	-- Seized Beauty
 								i(40074),	-- Strong-Handed Ring
 								i(40268, {	-- Libram of Tolerance
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 								i(40267, {	-- Totem of Hex
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 							},
 						}),
@@ -2719,22 +2719,22 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								i(40236),	-- Serene Echoes
 								i(40325),	-- Bindings of the Expansive Mind
 								i(40191, {	-- Libram of Radiance
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 								i(40337, {	-- Libram of Resurgence
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 								i(40268, {	-- Libram of Tolerance
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 								i(40321, {	-- Idol of the Shooting Star
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 								i(39757, {	-- Idol of Worship
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 								i(40322, {	-- Totem of Dueling
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								}),
 								-- #ENDIF
 							},
@@ -2813,7 +2813,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 								applyclassicphase(WRATH_PHASE_ONE_REALM_FIRST, ach(1402, {	-- Realm First! Conqueror of Naxxramas
 									["timeline"] = { REMOVED_4_0_3 },
 									["groups"] = {
-										title(90, {	-- %, Conqueror of Naxxramas
+										title(90, {	-- <Name>, Conqueror of Naxxramas
 											["timeline"] = { REMOVED_4_0_3 },
 										}),
 									},

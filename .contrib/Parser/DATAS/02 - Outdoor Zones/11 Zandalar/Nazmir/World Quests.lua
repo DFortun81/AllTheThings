@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(NAZMIR, {
 		n(WORLD_QUESTS, sharedData({
 			["isWorldQuest"] = true,
@@ -187,6 +187,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 			})),
 			q(54839, {	-- Rightfully Ours (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(166726),	-- Alliance Supplies (QI!)
+				},
 			}),
 			q(50676),	-- River Toll
 			q(54135, {	-- Romp in the Swamp (Faction Assault WQ)

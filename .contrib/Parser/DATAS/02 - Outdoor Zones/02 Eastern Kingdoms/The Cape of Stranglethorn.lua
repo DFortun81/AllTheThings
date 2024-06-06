@@ -6,6 +6,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(THE_CAPE_OF_STRANGLETHORN, {
 		["lore"] = "The Cape of Stranglethorn is the southern part of Stranglethorn Vale, now split from the Shattering. It traces the escalating conflict between the goblin pirates of Booty Bay and their rivals, the Bloodsail Buccaneers. The rest of the zone is dotted with troll ruins and sandy beaches.",
 		["icon"] = "Interface\\Icons\\achievement_zone_stranglethorn_01",
+		-- #if ANYCLASSIC
+		-- CRIEVE NOTE: This is super weird. In Cata Classic they used the retail mapID for STV as the combined STV map.
+		-- The only way to get it on the mini list is to fly south from blasted lands or to use the world map button.
+		["maps"] = { 224 },
+		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
@@ -67,7 +72,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					i(18709),	-- Arena Wristguards
 					i(126948, {	-- Defending Champion
 						["description"] = "Once you have the Arena Grand Master achievement, the next time you open the chest on that character you can get the Defending Champion in addition to the other spoils.",
-						["timeline"] = { "added 6.2.0.19890" },
+						["timeline"] = { ADDED_6_2_0 },
 						["cost"] = { { "i", 19024, 1 } },	-- Arena Grand Master
 					}),
 					i(122222, {	-- Music Roll: Angelic
@@ -132,13 +137,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(591, {	-- Explorers' League Digsite, Stranglethorn
 					["cr"] = 43043,	-- Colin Swifthammer <Gryphon Master>
 					["coord"] = { 55.6, 41.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(592, {	-- Hardwrench Hideaway, Stranglethorn
 					["cr"] = 43053,	-- Hizzle <Wind Rider Master>
 					["coord"] = { 35.0, 29.2, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -146,7 +151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				prof(ENGINEERING, {
 					n(7406, {	-- Oglethorpe Obnoticus <Gnomish Engineering Trainer>
 						["coord"] = { 43.0, 72.0, THE_CAPE_OF_STRANGLETHORN },
-						["g"] = GNOMISH_ENGINEERING,
+						["g"] = ALL_GNOMISH_ENGINEERING,
 					}),
 				}),
 			}),
@@ -284,7 +289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
 						i(10398, {	-- Mechanical Chicken (PET!)
-							["timeline"] = { "added 1.11.1.5462" },
+							["timeline"] = { ADDED_1_11_1 },
 						}),
 					},
 				}),
@@ -368,7 +373,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131606, {	-- Spaulders of the Bat
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -399,7 +404,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131554, {	-- Spaulders of the Bat
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -427,7 +432,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131586, {	-- Booty Bay Trousers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(61628, {	-- Star of Stranglethorn
 							["timeline"] = { ADDED_4_0_3 },
@@ -595,7 +600,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131563, {	-- Cord of Supremecy
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -689,7 +694,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131573, {	-- Ironpatch Handguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -782,7 +787,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 2542,	-- Catelyn the Blade
 					["coord"] = { 41.3, 74.1, THE_CAPE_OF_STRANGLETHORN },
 					["cost"] = {{ "i", 90561, 1 }},	-- Eternium Rose
-					["timeline"] = { "added 6.2.0.20061" },
+					["timeline"] = { ADDED_6_2_0 },
 					["requireSkill"] = ENGINEERING,
 					["isDaily"] = true,
 					["groups"] = {
@@ -832,7 +837,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131611, {	-- Slither-Dog Helm
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -955,7 +960,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131607, {	-- Treads of the Foolhardy
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -986,7 +991,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131555, {	-- Treads of the Foolhardy
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1067,10 +1072,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131530, {	-- Iconic Breastplate
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131531, {	-- Sassy Grippers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1183,10 +1188,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131558, {	-- Phase Three Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131559, {	-- Nice Cuffs
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1325,7 +1330,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131561, {	-- Landlubber Helm
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1350,7 +1355,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131562, {	-- Princess Poobah's Bangles
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1381,7 +1386,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(61602, {	-- Ninja Star
-							["timeline"] = { ADDED_4_0_3, "deleted 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 						}),
 						i(61604, {	-- Other-Eye Patch
 							["timeline"] = { ADDED_4_0_3 },
@@ -1390,10 +1395,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131572, {	-- One-Eye Patch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156952, {	-- Adversarial Blackjack
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1460,10 +1465,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131609, {	-- Supple Support Harness
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131610, {	-- Velvet-Lined Chain Gloves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(61514, {	-- Velvety Vest
 							["timeline"] = { ADDED_4_0_3 },
@@ -1510,7 +1515,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131529, {	-- Not-Scratchy Faceguard
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1546,7 +1551,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131608, {	-- Pantaloons with Myserious Stains
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1571,7 +1576,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131551, {	-- Mixmaster's Trousers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1827,7 +1832,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131560, {	-- Savage Handguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1879,10 +1884,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131567, {	-- Riptide Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131568, {	-- Keelhaul Harness
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2138,7 +2143,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157000, {	-- Fuse-Cutter Knife
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2337,7 +2342,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131585, {	-- Revilgaz's Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2597,10 +2602,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Found inside Crystalvein Mine.",
 					["groups"] = {
 						i(1604, {	-- Chromatic Sword
-							["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+							["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 						}),
 						i(4478, {	-- Iridescent Scale Leggings
-							["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+							["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2721,7 +2726,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(54232, {	-- Mrs. Gant <Cooking Trainer & Supplies>
 					["coord"] = { 42.7, 72.7, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 4.2.0.14241" },
+					["timeline"] = { ADDED_4_2_0 },
 					["groups"] = {
 						i(21219),	-- Recipe: Sagefish Delight (RECIPE!)
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
@@ -2770,64 +2775,64 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(151042, {	-- Skin-Me-Own-Coat Dibblefur <T-Shirt Scalper>
 					["coord"] = { 42.1, 73.8, THE_CAPE_OF_STRANGLETHORN },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["groups"] = {
 						i(167227, {	-- Gild's Crewneck
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 						i(167208, {	-- Jade's Lovely Shirt
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 						i(167223, {	-- Selis' Silk Shirt
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 						i(167230, {	-- Shirtsi's Cloth Shirt
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 						i(167213, {	-- Shuurt's Precious
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 						i(167221, {	-- Threads of Tirion
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 						i(167214, {	-- Tia Shortsleeve's Short Sleeve Shirt
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 					},
 				}),
 				n(105637, {	-- Scowling Rosa <Texts and Specialty Goods>
 					["description"] = "These are completely useless as far as we know. I bought one of each and they're sitting in my bank just in case Blizzard ever removes the vendor.\b - Crieve",
-					["timeline"] = { "added 7.1.0.22810" },
+					["timeline"] = { ADDED_7_1_0 },
 					["groups"] = {
 						i(140101, {	-- A Hypothetical Examination of the Legion's Weaknesses
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(140133, {	-- Axe, Blade, and Fist
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(140109, {	-- How to Meditate in a Hurricane
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(140113, {	-- Legends of the Silver Hand
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(139403, {	-- Powerful Magical Foci and Those Who Wielded Them
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(140097, {	-- The Fall of Lordaeron and the Scouring of the Eastweald
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(140125, {	-- The Fall of the Warchief
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(140117, {	-- The Hunt for Light's Wrath
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(140121, {	-- The Seven Curses of the Southern Seas
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(140093, {	-- The Untold Tales of the War of the Ancients
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2873,13 +2878,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(ZONE_DROPS, {
 				i(5079, {	-- Cold Basilisk Eye
-					["timeline"] = { REMOVED_4_0_3, "added 7.3.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
 					["cr"] = 690,	-- Cold Eye Basilisk
 				}),
 				i(2955, {	-- First Mate Hat
 				}),
 				i(8494, {	-- Hyacinth Macaw (PET!)
-					["timeline"] = { "added 1.11.1.5462" },
+					["timeline"] = { ADDED_1_11_1 },
 				}),
 				i(5789, {	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					["cr"] = 1561,	-- Bloodsail Raider

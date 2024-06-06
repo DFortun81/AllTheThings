@@ -28,7 +28,7 @@ root(ROOTS.Zones, {
 							i(54307),	-- Flame-Retardant Pajama Sleeves
 							i(54309),	-- Gas Soaked Boots
 							i(131860, {	-- Gassy Armbands
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(54308),	-- Gassy Bracers
 						},
@@ -46,7 +46,7 @@ root(ROOTS.Zones, {
 							i(54297),	-- Cracking Whip
 							i(54296),	-- Debt Collector's Gloves
 							i(131857, {	-- Debt Collector's Grips
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),
@@ -159,7 +159,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 28349,	-- Megs in Marketing
 						["groups"] = {
 							i(131858, {	-- Clinking Chain Trousers
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(54299),	-- Fancy Pants
 							i(54298),	-- Skyrocket Gun
@@ -179,7 +179,7 @@ root(ROOTS.Zones, {
 							i(54304),	-- First Bank Knocker
 							i(54305),	-- Tasseled Shoes
 							i(131859, {	-- Vault Cracker Boots
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(54306),	-- Vault Cracker Gloves
 						},
@@ -216,7 +216,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(54292),	-- KTC Executive Slippers
 							i(131856, {	-- Tunnel Worm Chestguard
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(54293),	-- Tunnel Worm Vest
 						},

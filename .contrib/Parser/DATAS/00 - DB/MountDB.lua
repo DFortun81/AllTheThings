@@ -726,7 +726,6 @@ i(94293, 138643);	-- Green Primal Raptor
 i(94231, 138426);	-- Jade Primordial Direhorn
 i(95041, 139407);	-- Malevolent Gladiator's Cloud Serpent
 i(94291, 138641);	-- Red Primal Raptor
-i(95416, 134359);	-- Sky Golem
 i(94229, 138425);	-- Slate Primordial Direhorn
 i(93666, 136471);	-- Spawn of Horridon
 i(95057, 139442);	-- Thundering Cobalt Cloud Serpent
@@ -749,6 +748,7 @@ i(104253, 148417);	-- Kor'kron Juggernaut
 i(104246, 148396);	-- Kor'kron War Wolf
 i(104327, 148620);	-- Prideful Gladiator's Cloud Serpent
 i(103630, 30174);	-- Riding Turtle
+i(95416, 134359);	-- Sky Golem
 i(104208, 148392);	-- Spawn of Galakras
 i(102514, 146615);	-- Vicious Kaldorei Warsaber
 i(102533, 146622);	-- Vicious Skeletal Warhorse
@@ -1518,7 +1518,6 @@ i(0, 387948);		-- [PH] Wind Proto-Drake
 i(0, 351404);		-- PH Mammoth V2 Lava
 i(0, 385767);		-- PH White Slyvern
 i(0, 385771);		-- PH Yellow Slyvern
-i(192766, 349943);	-- Amber Skitterfly
 i(194722, 377849);	-- Carrier Yeti
 i(198821, 359408);	-- Divine Kiss of Ohn'ahra
 i(192804, 374263);	-- Restless Hornstrider
@@ -1730,6 +1729,7 @@ i(211486, 0);		-- Winding Slitherdrake
 ------------------
 -- PATCH 10.2.6 --
 ------------------
+i(192766, 349943);	-- Amber Skitterfly
 i(198822, 385260);	-- Bestowed Ohuna Spotter
 i(211862, 376898);	-- Bestowed Ottuk Vanguard
 i(192765, 374071);	-- Bestowed Sandskimmer
@@ -1782,6 +1782,7 @@ i(221814, 447413);	-- Pearlescent Goblin Wave Shredder
 i(213626, 435153);	-- Purple Shado-Pan Riding Tiger
 i(213628, 435160);	-- Riverwalker Mushan
 i(213605, 435127);	-- Rose Riding Crane
+i(224574, 453255);	-- Savage Ebony Battle Turtle
 i(213606, 435126);	-- Silver Riding Crane
 i(213582, 435084);	-- Sky Surfer
 i(213608, 435131);	-- Snowy Riding Goat

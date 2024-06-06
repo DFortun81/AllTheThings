@@ -85,6 +85,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(55997), -- Bloodpetal Mantle
 						i(55998), -- Robes of Rampant Growth
 						i(55999), -- Seedling Pod
+						-- #if BEFORE MOP
+						i(56001, {	-- Slashing Thorns
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				e(129, {	-- Setesh, Construct of Destruction
@@ -174,6 +179,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							i(56419), -- Bloodpetal Mantle
 							i(56417), -- Robes of Rampant Growth
 							i(56421), -- Seedling Pod
+							-- #if BEFORE MOP
+							i(56420, {	-- Slashing Thorns
+								["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
+							-- #endif
 						},
 					}),
 					e(129, {	-- Setesh, Construct of Destruction

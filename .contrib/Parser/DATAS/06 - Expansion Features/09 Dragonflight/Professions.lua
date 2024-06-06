@@ -32,10 +32,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			}),
 			ach(16791, {	-- Merchant Artisan
-				title(485),	-- Merchant Artisan %s
+				title(485),	-- Merchant Artisan <Name>
 			}),
 			ach(16799, {	-- Personal Crafter
-				title(486),	-- Personal Crafter %s
+				title(486),	-- Personal Crafter <Name>
 			}),
 		}),
 		n(QUESTS, {

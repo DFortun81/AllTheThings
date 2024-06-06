@@ -1105,9 +1105,9 @@ r(382980),	-- Outland Prospecting
 r(382995),	-- Classic Prospecting
 11.0.0.54311
 r(423339),	-- Khaz Algar Jewelcrafting
-r(434018),	-- Algarian Prospecting
+r(434018),	-- Algari Prospecting \\ Algarian Prospecting
 r(434019),	-- Recraft Equipment
-r(434020),	-- Algarian Crushing
+r(434020),	-- Algari Crushing \\ Algarian Crushing
 r(434536),	-- Solid Amber
 r(434537),	-- Deadly Amber
 r(434538),	-- Quick Amber
@@ -1140,27 +1140,27 @@ r(435324),	-- Engraved Gemcutter
 r(435325),	-- Decorative Lens
 r(435326),	-- Marbled Stone
 r(435327),	-- Inverted Prism
-r(435329),	-- Inscription Finishing Reagent
-r(435330),	-- Engineering Finishing Reagent
+r(435329),	-- Sifted Cave Sand \\ Inscription Finishing Reagent
+r(435330),	-- Ominous Energy Crystal \\ Engineering Finishing Reagent
 r(435331),	-- Elemental Focusing Lens
 r(435332),	-- Prismatic Null Stone
 r(435333),	-- Captured Starlight
 r(435334),	-- Magnificent Jeweler's Setting
 r(435335),	-- Apply Socket
 r(435336),	-- Vicious Jeweler's Setting
-r(435337),	-- Amber Prism
-r(435338),	-- Emerald Prism
-r(435339),	-- Ruby Prism
-r(435369),	-- Onyx Prism
-r(435370),	-- Sapphire Prism
-r(435371),	-- Jewelcrafting T1 Helm
-r(435372),	-- Jewelcrafting T2 Helm
-r(435373),	-- Enchanting T1 Focus
-r(435374),	-- Enchanting T2 Focus
+r(435337),	-- Algari Amber Prism \\ Amber Prism
+r(435338),	-- Algari Emerald Prism \\ Emerald Prism
+r(435339),	-- Algari Ruby Prism \\ Ruby Prism
+r(435369),	-- Algari Onyx Prism \\ Onyx Prism
+r(435370),	-- Algari Sapphire Prism \\ Sapphire Prism
+r(435371),	-- Radiant Loupes \\ Jewelcrafting T1 Helm
+r(435372),	-- Extravagant Loupes \\ Jewelcrafting T2 Helm
+r(435373),	-- Incanter's Shard \\ Enchanting T1 Focus
+r(435374),	-- Enchanter's Crystal \\ Enchanting T2 Focus
 r(435375),	-- Right-Handed Magnifying Glass
-r(435376),	-- Inscription T2 Magnifying Glass
-r(435377),	-- Inscription T1 Glasses
-r(435378),	-- Inscription T2 Glasses
+r(435376),	-- Forger's Font Inspector \\ Inscription T2 Magnifying Glass
+r(435377),	-- Storyteller's Glasses \\ Inscription T1 Glasses
+r(435378),	-- Novelist's Specs \\ Inscription T2 Glasses
 r(435379),	-- Malleable Band
 r(435380),	-- Malleable Pendant
 r(435382),	-- Binding of Binding
@@ -2290,9 +2290,9 @@ r(248939),	-- Empyrial Florid Malachite Setting
 r(248940),	-- Empyrial Crown
 11.0.0.54311
 r(423339),	-- Khaz Algar Jewelcrafting
-r(434018),	-- Algarian Prospecting
+r(434018),	-- Algari Prospecting \\ Algarian Prospecting
 r(434019),	-- Recraft Equipment
-r(434020),	-- Algarian Crushing
+r(434020),	-- Algari Crushing \\ Algarian Crushing
 r(434536),	-- Solid Amber
 r(434537),	-- Deadly Amber
 r(434538),	-- Quick Amber
@@ -2325,27 +2325,27 @@ r(435324),	-- Engraved Gemcutter
 r(435325),	-- Decorative Lens
 r(435326),	-- Marbled Stone
 r(435327),	-- Inverted Prism
-r(435329),	-- Inscription Finishing Reagent
-r(435330),	-- Engineering Finishing Reagent
+r(435329),	-- Sifted Cave Sand \\ Inscription Finishing Reagent
+r(435330),	-- Ominous Energy Crystal \\ Engineering Finishing Reagent
 r(435331),	-- Elemental Focusing Lens
 r(435332),	-- Prismatic Null Stone
 r(435333),	-- Captured Starlight
 r(435334),	-- Magnificent Jeweler's Setting
 r(435335),	-- Apply Socket
 r(435336),	-- Vicious Jeweler's Setting
-r(435337),	-- Amber Prism
-r(435338),	-- Emerald Prism
-r(435339),	-- Ruby Prism
-r(435369),	-- Onyx Prism
-r(435370),	-- Sapphire Prism
-r(435371),	-- Jewelcrafting T1 Helm
-r(435372),	-- Jewelcrafting T2 Helm
-r(435373),	-- Enchanting T1 Focus
-r(435374),	-- Enchanting T2 Focus
+r(435337),	-- Algari Amber Prism \\ Amber Prism
+r(435338),	-- Algari Emerald Prism \\ Emerald Prism
+r(435339),	-- Algari Ruby Prism \\ Ruby Prism
+r(435369),	-- Algari Onyx Prism \\ Onyx Prism
+r(435370),	-- Algari Sapphire Prism \\ Sapphire Prism
+r(435371),	-- Radiant Loupes \\ Jewelcrafting T1 Helm
+r(435372),	-- Extravagant Loupes \\ Jewelcrafting T2 Helm
+r(435373),	-- Incanter's Shard \\ Enchanting T1 Focus
+r(435374),	-- Enchanter's Crystal \\ Enchanting T2 Focus
 r(435375),	-- Right-Handed Magnifying Glass
-r(435376),	-- Inscription T2 Magnifying Glass
-r(435377),	-- Inscription T1 Glasses
-r(435378),	-- Inscription T2 Glasses
+r(435376),	-- Forger's Font Inspector \\ Inscription T2 Magnifying Glass
+r(435377),	-- Storyteller's Glasses \\ Inscription T1 Glasses
+r(435378),	-- Novelist's Specs \\ Inscription T2 Glasses
 r(435379),	-- Malleable Band
 r(435380),	-- Malleable Pendant
 r(435382),	-- Binding of Binding

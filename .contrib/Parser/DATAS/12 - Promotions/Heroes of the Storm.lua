@@ -10,11 +10,11 @@ HEROES_OF_THE_STORM = createHeader({
 	},
 });
 root(ROOTS.Promotions, n(HEROES_OF_THE_STORM, {
-	["timeline"] = { "added 6.0.1.18711" },
+	["timeline"] = { ADDED_6_0_2 },
 	["groups"] = {
 		ach(10657, {	-- Fledgling Hero of Warcraft
 			["description"] = "Cross-Game Reward: Lady Liadrin Paladin Hero in Hearthstone.",
-			["timeline"] = { "added 7.0.3.21384" },
+			["timeline"] = { ADDED_7_0_3 },
 		}),
 		n(REWARDS, bubbleDown({
 			["u"] = BLIZZARD_BALANCE,
@@ -27,7 +27,7 @@ root(ROOTS.Promotions, n(HEROES_OF_THE_STORM, {
 		n(REWARDS, bubbleDown({
 			["u"] = REMOVED_FROM_GAME,
 			["description"] = "Obtained by winning 15 games of Heroes of the Storm.\n\nSadly, this is no longer available.",
-			["timeline"] = { "added 7.2.0.23801" },
+			["timeline"] = { ADDED_7_2_0 },
 		}, {
 			ach(11425),	-- Herald of Flames
 			i(143631),	-- Primal Flamesaber (MOUNT!)

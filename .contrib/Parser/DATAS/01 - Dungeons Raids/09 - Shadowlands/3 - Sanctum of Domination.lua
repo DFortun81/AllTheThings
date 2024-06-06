@@ -383,7 +383,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				ach(15110),		-- Dominating the Catwalk
 				-- Fated
 				ach(15667,	-- Fate of Domination
-				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
+				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
 					crit(53547, {	-- The Tarragrue
 						["_encounter"] = { TARRAGRUE, DIFFICULTY.RAID.MULTI.ALL },
 					}),
@@ -416,7 +416,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				})),
 				ach(15668,	-- Heroic: Fate of Domination
-				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
+				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
 					crit(53558, {	-- The Tarragrue
 						["_encounter"] = { TARRAGRUE, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
@@ -449,7 +449,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				})),
 				ach(15669,	-- Mythic: Fate of Domination
-				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {
+				bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {
 					crit(53570, {	-- The Tarragrue
 						["_encounter"] = { TARRAGRUE, DIFFICULTY.RAID.MYTHIC },
 					}),

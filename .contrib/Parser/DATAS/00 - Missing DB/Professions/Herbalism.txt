@@ -44,55 +44,13 @@ r(441327),	-- Herb Gathering
 r(442988),	-- Magical Mulch
 r(442989),	-- Imbued Mulch
 r(442990),	-- Empowered Mulch
+11.0.0.54361
+r(452269),	-- Deepgrove Rose
 
 
 
 
 Missing in Herbalism.lua
 
-11.0.0.54311
-r(423395),	-- Overload Empowered Herb
-r(435811),	-- Mycobloom
-r(435812),	-- Lush Mycobloom
-r(435821),	-- Luredrop
-r(435822),	-- Orbinid
-r(435823),	-- Blessing Blossom
-r(435826),	-- Arathor's Spear
-r(435829),	-- Lush Luredrop
-r(435830),	-- Lush Orbinid
-r(435834),	-- Lush Blessing Blossom
-r(435836),	-- Lush Arathor's Spear
-r(435838),	-- Crystallized Mycobloom
-r(435840),	-- Altered Mycobloom
-r(435843),	-- Irradiated Mycobloom
-r(435850),	-- Sporefused Mycobloom
-r(435851),	-- Camouflaged Mycobloom
-r(435857),	-- Crystallized Luredrop
-r(435858),	-- Altered Luredrop
-r(435859),	-- Irradiated Luredrop
-r(435860),	-- Camouflaged Luredrop
-r(435861),	-- Sporefused Luredrop
-r(435862),	-- Crystallized Orbinid
-r(435864),	-- Altered Orbinid
-r(435865),	-- Irradiated Orbinid
-r(435866),	-- Camouflaged Orbinid
-r(435867),	-- Sporefused Orbinid
-r(435870),	-- Crystallized Blessing Blossom
-r(435871),	-- Irradiated Blessing Blossom
-r(435872),	-- Camouflaged Blessing Blossom
-r(435873),	-- Sporefused Blessing Blossom
-r(435877),	-- Crystallized Arathor's Spear
-r(435878),	-- Irradiated Arathor's Spear
-r(435879),	-- Camouflaged Arathor's Spear
-r(435880),	-- Sporefused Arathor's Spear
-r(438811),	-- Refine Herbs - |A:Professions-ChatIcon-Quality-Tier2:20:20|a
-r(438812),	-- Refine Herbs - |A:Professions-ChatIcon-Quality-Tier3:20:20|a
-r(438952),	-- Overload Crystallized Herb
-r(438953),	-- Overload Altered Herb
-r(438955),	-- Overload Irradiated Herb
-r(438961),	-- Overload Sporefused Herb
-r(439871),	-- Green Thumb
-r(441327),	-- Herb Gathering
-r(442988),	-- Magical Mulch
-r(442989),	-- Imbued Mulch
-r(442990),	-- Empowered Mulch
+11.0.0.54361
+r(452269),	-- Deepgrove Rose

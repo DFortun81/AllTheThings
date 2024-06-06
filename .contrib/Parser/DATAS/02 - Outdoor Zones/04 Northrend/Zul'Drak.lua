@@ -466,6 +466,11 @@ root(ROOTS.Zones, {
 							i(39841),	-- Ancestral Girdle
 						},
 					}),
+					heroscall(q(49552, {	-- Hero's Call: Zul'Drak!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 64,
+					})),
 					q(12709, {	-- Hexed Caches
 						["coord"] = { 59.9, 57.9, ZULDRAK },
 						["qg"] = 28527,	-- Chronicler To'kini
@@ -515,13 +520,13 @@ root(ROOTS.Zones, {
 					}),
 					q(13099, {	-- Just Checkin'
 						["qg"] = 28527,	-- Chronicler To'kini
-						["timeline"] = { ADDED_3_3_0, "removed 4.3.0.14732" },
+						["timeline"] = { ADDED_3_3_0, REMOVED_4_3_0 },
 						["isBreadcrumb"] = true,
 					}),
 					q(29836, {	-- Just Checkin'
 						["qg"] = 28527,	-- Chronicler To'kini
 						["coord"] = { 59.9, 57.9, ZULDRAK },
-						["timeline"] = { "added 4.3.0.14732" },
+						["timeline"] = { ADDED_4_3_0 },
 					}),
 					q(12630, {	-- Kickin' Nass and Takin' Manes
 						["coord"] = { 14.0, 73.8, ZULDRAK },
@@ -1062,13 +1067,13 @@ root(ROOTS.Zones, {
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12730,	-- Convocation at Zol'Heb
 						["coord"] = { 60.2, 57.7, ZULDRAK },
-						["timeline"] = { "removed 4.3.0.14732" },
+						["timeline"] = { REMOVED_4_3_0 },
 					}),
 					q(29833, {	-- Unfinished Business
 						["qg"] = 28401,	-- Har'koa
 						["sourceQuest"] = 12730,	-- Convocation at Zol'Heb
 						["coord"] = { 60.2, 57.7, ZULDRAK },
-						["timeline"] = { "added 4.3.0.14732" },
+						["timeline"] = { ADDED_4_3_0 },
 					}),
 					q(12857, {	-- Wanted: Ragemane's Flipper
 						["provider"] = { "o", 191728 },	-- Wanted!
@@ -1080,6 +1085,11 @@ root(ROOTS.Zones, {
 							i(44736),	-- Sword of Heartwrenching Slaughter
 						},
 					}),
+					warchiefscommand(q(49534, {	-- Warchief's Command: Zul'Drak!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(12707, {	-- Wooly Justice
 						["coord"] = { 59.1, 56.2, ZULDRAK },
 						["qg"] = 28484,	-- Scalper Ahunae
@@ -1117,7 +1127,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12669,	-- So Far, So Bad
 					}),
 					q(39208, {	-- Zul'Drak
-						["timeline"] = { "added 6.2.0.19934", "removed 7.3.5" },	-- old quest from the adventure guide. Pretty sure this was removed (CRIEVE NOTE: Not sure what patch it was removed.)
+						["timeline"] = { ADDED_6_2_0, REMOVED_7_3_5 },	-- old quest from the adventure guide. Pretty sure this was removed (CRIEVE NOTE: Not sure what patch it was removed.)
 						["isBreadcrumb"] = true,
 					}),
 				}),

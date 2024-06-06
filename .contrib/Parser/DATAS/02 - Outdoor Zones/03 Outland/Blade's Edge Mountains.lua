@@ -36,7 +36,7 @@ local OnTooltipForOgrila = [[function(t, tooltipInfo)
 end]];
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(BLADES_EDGE_MOUNTAINS, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(BLADES_EDGE_MOUNTAINS, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Blade's Edge is a level 20-30 questing zone in Outland, filled with splintered mountain peaks, plunging lush valleys, and dusty canyons. Players learn about the presence of the Burning Legion through a mysterious Fel Mask, as well as how Blade's Edge was the original home of the Ogres. Ogri'la is a faction of friendly ogres that players with flying mounts can gain reputation with.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_bladesedgemtns_01",
@@ -143,10 +143,10 @@ root(ROOTS.Zones, {
 						}),
 						pet(528, {	-- Scalded Basilisk Hatchling (PET!)
 							["coord"] = { 72.8, 20.6, BLADES_EDGE_MOUNTAINS },
-							["description"] = "Found in a fairly large area around the coord, above the road.",
+							["description"] = "Found in a fairly large area around Skald, the volcanic area in northeast before the road slopes downwards towards Netherstorm.",
 						}),
 						pet(637, {	-- Skittering Cavern Crawler (PET!)
-							["description"] = "Found only in the two caves that connect Blade's Edge to Zangarmarsh.",
+							["description"] = "Found in the two caves that connect Blade's Edge to Zangarmarsh, and as secondary pet in the zone.",
 						}),
 					},
 				}),
@@ -265,7 +265,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["timeline"] = {
 							ADDED_3_3_0,
-							"removed 4.1.0.7272",
+							REMOVED_4_1_0,
 						},
 						["cost"] = {
 							{ "i", 32643, 1 },	-- Darkrune
@@ -275,7 +275,7 @@ root(ROOTS.Zones, {
 							i(32602, {	-- Crystalforged Darkrune
 								["timeline"] = {
 									ADDED_3_3_0,
-									"removed 4.1.0.7272",
+									REMOVED_4_1_0,
 								},
 							}),
 						},
@@ -504,7 +504,7 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(31447),	-- Vibro Dagger
 							i(157549, {	-- Vibro Knuckles
-								["timeline"] = { "added 7.3.5.25727" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(31446),	-- Vibro Shanker
 							i(31448),	-- Vibro Sword
@@ -568,7 +568,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10980,	-- The Book of the Raven
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { NAGRAND },
 						["classes"] = { DRUID },
 						["lvl"] = 70,
@@ -726,6 +726,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10910,	-- Death's Door
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
+					heroscall(q(39199, {	-- Hero's Call: Blade's Edge Mountains!
+						["timeline"] = { ADDED_6_2_0 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 65,
+					})),
 					q(10865, {	-- Inform Leoroxx!
 						["qg"] = 22312,	-- Spiritcaller Dohgar
 						["sourceQuest"] = 10859,	-- Gather the Orbs
@@ -962,7 +967,7 @@ root(ROOTS.Zones, {
 					}),
 					q(10798, {	-- Pay the Baron a Visit
 						["qg"] = 22149,	-- Commander Haephus Stonewall
-						["sourceQuest"] = 10795,	-- Favor of the Gronn
+						["sourceQuest"] = 10797,	-- Favor of the Gronn
 						["coord"] = { 62.0, 38.0, BLADES_EDGE_MOUNTAINS },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
@@ -1046,7 +1051,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10992,	-- The Hawk's Essence
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { ZANGARMARSH },
 						["classes"] = { DRUID },
 						["cost"] = {
@@ -1285,7 +1290,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10979,	-- To the Evergrove
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 32244, 1 },	-- Seer's Stone (Provided)
@@ -1336,7 +1341,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10990,	-- The Eagle's Essence
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { TEROKKAR_FOREST },
 						["classes"] = { DRUID },
 						["cost"] = {
@@ -1349,7 +1354,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22924,	-- Arthorn Windsong
 						["sourceQuest"] = 10991,	-- The Falcon's Essence
 						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["maps"] = { TEROKKAR_FOREST },
 						["classes"] = { DRUID },
 						["cost"] = {
@@ -1359,7 +1364,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 70,
 						["groups"] = {
 							i(32481, {	-- Charm of Swift Flight
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					})),
@@ -1565,6 +1570,11 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(65, 65, 20),
 					}),
+					warchiefscommand(q(39198, {	-- Warchief's Command: Blade's Edge Mountains!
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(10609, {	-- What Came First, the Drake or the Egg?
 						["qg"] = 21110,	-- Fizit "Doc" Clocktock
 						["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
@@ -1655,7 +1665,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["timeline"] = {
 							ADDED_3_3_0,
-							"removed 4.1.0.7272",
+							REMOVED_4_1_0,
 						},
 						["cost"] = {
 							{ "i", 32643, 1 },	-- Darkrune
@@ -1665,7 +1675,7 @@ root(ROOTS.Zones, {
 							i(32602, {	-- Crystalforged Darkrune
 								["timeline"] = {
 									ADDED_3_3_0,
-									"removed 4.1.0.7272",
+									REMOVED_4_1_0,
 								},
 							}),
 						},
@@ -1784,20 +1794,20 @@ root(ROOTS.Zones, {
 						},
 						["isDaily"] = true,
 						["timeline"] = {
-							"added 2.2.0.7272",
-							"removed 4.1.0.7272",
+							ADDED_2_2_0,
+							REMOVED_4_1_0,
 						},
 						["groups"] = {
 							i(32941, {	-- Corruptor's Signet
 								["timeline"] = {
-									"added 2.2.0.7272",
-									"removed 4.1.0.7272",
+									ADDED_2_2_0,
+									REMOVED_4_1_0,
 								},
 							}),
 							i(32942, {	-- Ring of the Overseer
 								["timeline"] = {
-									"added 2.2.0.7272",
-									"removed 4.1.0.7272",
+									ADDED_2_2_0,
+									REMOVED_4_1_0,
 								},
 							}),
 						},
@@ -1839,8 +1849,8 @@ root(ROOTS.Zones, {
 				n(REWARDS, {
 					i(32643, {	-- Darkrune
 						["timeline"] = {
-							"added 2.2.0.7091",
-							"removed 4.1.0.7272",
+							ADDED_2_2_0,
+							REMOVED_4_1_0,
 						},
 						["cost"] = {
 							 { "i", 33784, 5 },	-- Darkrune Fragment
@@ -1850,8 +1860,8 @@ root(ROOTS.Zones, {
 						i(32569),	-- Apexis Shard
 						i(33784, {	-- Darkrune Fragment
 							["timeline"] = {
-								"added 2.2.0.7091",
-								"removed 4.1.0.7272",
+								ADDED_2_2_0,
+								REMOVED_4_1_0,
 							},
 						}),
 					}),
@@ -2046,11 +2056,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(21494, {	-- Smiles O'Byron <Engineer>
-						["requireSkill"] = 20219,	-- Gnomish Engineering
+						["requireSkill"] = GNOMISH_ENGINEERING,
 						["description"] = "Gnomish Engineers can speak to Smiles to learn the recipe.",
 						["coord"] = { 60.2, 65.2, BLADES_EDGE_MOUNTAINS },
 						["groups"] = {
-							recipe(36955),	-- Ultrasafe Transporter - Toshley's Station
+							r(36955),	-- Ultrasafe Transporter - Toshley's Station
 						},
 					}),
 					n(22099, {	-- Wyrmcult Provisioner
@@ -2597,7 +2607,7 @@ root(ROOTS.Zones, {
 						},
 						["cr"] = 19973,	-- Abyssal Flamebringer
 					}),
-					i(23800, {	-- Schematic: Felsteel Boomstick
+					i(23800, {	-- Schematic: Felsteel Boomstick (RECIPE!)
 						["coords"] = {
 							{ 73.4, 40.6, BLADES_EDGE_MOUNTAINS },
 							{ 73.8, 40.6, BLADES_EDGE_MOUNTAINS },
@@ -2607,7 +2617,7 @@ root(ROOTS.Zones, {
 						},
 						["cr"] = 19960,	-- Doomforge Engineer
 					}),
-					i(34114, {	-- Schematic: Field Repair Bot 110G
+					i(34114, {	-- Schematic: Field Repair Bot 110G (RECIPE!)
 						["coords"] = {
 							{ 27.6, 69.0, BLADES_EDGE_MOUNTAINS },
 							{ 29.0, 47.2, BLADES_EDGE_MOUNTAINS },
@@ -2618,6 +2628,7 @@ root(ROOTS.Zones, {
 							23385,	-- Gan'arg Analyzer
 							23386,	-- Gan'arg Analyzer (wh says "Simon Unit" drops it but these are the actual mobs)
 						},
+						["timeline"] = { ADDED_2_3_0 },
 					}),
 				}),
 			},

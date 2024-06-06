@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(62861),	-- Wolfsbane Vest
 						i(62860),	-- Watched Watcher's Slippers
 						i(131665, {	-- Wolfsbane Harness
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(62873),	-- Godfrey's Belt
 						i(62872),	-- Cloak of Secret Purpose
 						i(131677, {	-- Godfrey's Waistband
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(62870),	-- Rutsak Carriers
 						i(62869),	-- Submariner Killer
 						i(131667, {	-- War Blood Gloves
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),

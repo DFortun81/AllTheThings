@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(NAZMIR, {
 		n(QUESTS, {
 			-- TODO: shit that needs solving:
@@ -65,8 +65,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 149823 },	-- Magni Bronzebeard
 				["coord"] = { 52.3, 68.6, 1382 },
 				["timeline"] = {
-					"added 8.1.5.29701",
-					"removed 8.2",	-- Retired with the implementation of 8.2
+					ADDED_8_1_5,
+					REMOVED_8_2_0,	-- Retired with the implementation of 8.2
 					ADDED_9_2_0,	-- Reported available again 2022-03-21
 				},
 			}),
@@ -652,8 +652,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 47.6, 16.2, 1381 },
 				["maps"] = { 1382 },	-- Uldir (Scenario)
 				["timeline"] = {
-					"added 8.1.5.29701",
-					"removed 8.2",	-- Retired with the implementation of 8.2
+					ADDED_8_1_5,
+					REMOVED_8_2_0,	-- Retired with the implementation of 8.2
 					ADDED_9_2_0,	-- Reported available again 2022-03-21
 				},
 			}),
@@ -996,8 +996,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 149867 },	-- Magni Bronzebeard
 				["coord"] = { 57.8, 50.4, NAZMIR },
 				["timeline"] = {
-					"added 8.1.5.29701",
-					"removed 8.2",	-- Retired with the implementation of 8.2
+					ADDED_8_1_5,
+					REMOVED_8_2_0,	-- Retired with the implementation of 8.2
 					ADDED_9_2_0,	-- Reported available again 2022-03-21
 				},
 			}),

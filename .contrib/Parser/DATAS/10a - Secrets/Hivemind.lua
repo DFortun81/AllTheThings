@@ -109,27 +109,27 @@ root(ROOTS.Secrets, {
 										["description"] = "Exchange the following items with the NPC until you receive 50 |cFFFFD700Glittergill Glitter|r.\n",
 										["g"] = {
 											o(13000004, {	-- Step 1: Seashell
-												["coord"] = { 44.6, 20.2, 205 },	-- Shimmering Expanse, Vashj'ir
+												["coord"] = { 44.6, 20.2, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 1:|r Purchase 500 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
 											}),
 											o(13000005, {	-- Step 2: Cavity-Free Great Shark Tooth
-												["coord"] = { 39.9, 77.6, 204 },	-- Abyssal Depths, Vashj'ir
+												["coord"] = { 39.9, 77.6, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 2:|r Purchase 100 |cFFFFD700Cavity-Free Great Shark Tooth|r from |cFFFFD700Volatile Violetscale|r at |cFFFFFFFF39.9, 77.6|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\nThe NPC is swimming around near the sea floor of the Underlight Canyon.\n",
 											}),
 											o(13000006, {	-- Step 3: Razoreel Larva
-												["coord"] = { 54.3, 24.5, 205 },	-- Shimmering Expanse, Vashj'ir
+												["coord"] = { 54.3, 24.5, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 3:|r Purchase 50 |cFFFFD700Razoreel Larva|r from |cFFFFD700Manta Stargazer|r at |cFFFFFFFF54.3, 24.5|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\nThe NPC is near the surface, hovering around Shimmering Grotto.\n",
 											}),
 											o(13000007, {	-- Step 4: Well-Fed Doctor Fish
-												["coord"] = { 69.0, 47.8, 205 },	-- Shimmering Expanse, Vashj'ir
+												["coord"] = { 69.0, 47.8, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 4:|r Purchase 250 |cFFFFD700Well Fed Doctor Fish|r from |cFFFFD700Lil' Whaley|r at |cFFFFFFFF69.0, 47.86|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\nThe NPC is close to the sea floor, next to the Ruins of Thelserai Temple.\n",
 											}),
 											o(13000008, {	-- Step 5: Freshly Molted Crab Skin
-												["coord"] = { 65.9, 43.2, 204 },	-- Abyssal Depths, Vashj'ir
+												["coord"] = { 65.9, 43.2, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 5:|r Purchase 10 |cFFFFD700Freshly Molted Crab Skin|r from |cFFFFD700Gloomy Bluefin|r at |cFFFFFFFF65.9, 43.2|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\nThe NPC is on the sea floor, swimming to the southwest of the Abyssal Breach.\n",
 											}),
 											o(13000009, {	-- Step 6: Glittergill Glitter
-												["coord"] = { 60.3, 58.5, 201 },	-- Kelp'thar Forest, Vashj'ir
+												["coord"] = { 60.3, 58.5, VASHJIR_KELPTHAR_FOREST },	-- Kelp'thar Forest, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 6:|r Purchase 50 |cFFFFD700Glittergill Glitter|r from |cFFFFD700Ol' Fishbreath|r at |cFFFFFFFF60.3, 58.5|r in |cFFFFD700Kelp'thar Forest|r, Vashj'ir.\nThe NPC is close to the surface, around some plankton in Gnaws' Boneyard.\n",
 											}),
 										},
@@ -138,33 +138,33 @@ root(ROOTS.Secrets, {
 										["description"] = "Exchange the following items with the NPC until you receive 40 |cFFFFD700Symbiotic Plankton|r.\n",
 										["g"] = {
 											o(13000011, {	-- Step 1: Seashell
-												["coord"] = { 44.6, 20.2, 205 },	-- Shimmering Expanse, Vashj'ir
+												["coord"] = { 44.6, 20.2, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 1:|r Purchase 80 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
 											}),
 											o(13000012, {	-- Step 2: Giant Giant Toenail Clipping
-												["coord"] = { 65.9, 43.2, 204 },	-- Abyssal Depths, Vashj'ir
+												["coord"] = { 65.9, 43.2, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 2:|r Purchase 2 |cFFFFD700Giant Giant Toenail Clipping|r from |cFFFFD700Gloomy Bluefin|r at |cFFFFFFFF65.9, 43.2|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is on the sea floor, swimming to the southwest of the Abyssal Breach.\n",
 											}),
 											o(13000013, {	-- Step 3: Makrura Eye
-												["coord"] = { 45.7, 17.3, 204 },	-- Abyssal Depths, Vashj'ir
+												["coord"] = { 45.7, 17.3, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 3:|r Purchase 4 |cFFFFD700Makrura Eye|r from |cFFFFD700Little Carp|r at |cFFFFFFFF45.8, 17.0|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is near the sea floor, swimming around Deepfin Ridge.\n",
 											}),
 											o(13000014, {	-- Step 4: Accidentally-Severed Seahorse Fin
-												["coord"] = { 39.9, 77.6, 204 },	-- Abyssal Depths, Vashj'ir
+												["coord"] = { 39.9, 77.6, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 4:|r Purchase 1 |cFFFFD700Accidentally-Severed Seahorse Fin|r from |cFFFFD700Volatile Violetscale|r at |cFFFFFFFF39.9, 77.6|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is swimming around near the sea floor of the Underlight Canyon.\n",
 											}),
 											o(13000015, {	-- Step 5: Shiny Sea Serpent Scale
-												["coord"] = { 53.8, 89.1, 205 },	-- Shimmering Expanse, Vashj'ir
+												["coord"] = { 53.8, 89.1, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 5:|r Purchase 3 |cFFFFD700Shiny Sea Serpent Scale|r from |cFFFFD700Crimson Angerfish|r at |cFFFFFFFF53.8, 89.1|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is close to the sea floor, swimming to the left of Biel'aran Ridge.\n",
 											}),
 											o(13000016, {	-- Step 6: Symbiotic Plankton
-												["coord"] = { 53.8, 23.4, 205 },	-- Shimmering Expanse, Vashj'ir
+												["coord"] = { 53.8, 23.4, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 												["description"] = "|cFFFFFFFFStep 6:|r Purchase 40 |cFFFFD700Symbiotic Plankton|r from |cFFFFD700Manta Stargazer|r at |cFFFFFFFF53.8, 23.4|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is near the surface, hovering around Shimmering Grotto.\n\nYou only need 2 scales, the spare can be left to despawn.\n",
 											}),
 										},
 									}),
 									o(13000017, {	-- Scintillating Murloc Skin Lotion
-										["coord"] = { 44.6, 20.2, 205 },	-- Shimmering Expanse, Vashj'ir
+										["coord"] = { 44.6, 20.2, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 										["description"] = "Exchange the |cFFFFD700Glittergill Glitter|r and |cFFFFD700Symbiotic Plankton|r for 5 |cFFFFD700Scintillating Murloc Skin Lotion|r with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
 									}),
 								},
@@ -174,23 +174,23 @@ root(ROOTS.Secrets, {
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Potent Gastropod Gloop|r.\n",
 								["g"] = {
 									o(13000019, {	-- Step 1: Seashell
-										["coord"] = { 44.6, 20.2, 205 },	-- Shimmering Expanse, Vashj'ir
+										["coord"] = { 44.6, 20.2, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 1:|r Purchase 300 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
 									}),
 									o(13000020, {	-- Step 2: Vantus Black Squid Ink
-										["coord"] = { 60.6, 60.0, 201 },	-- Kelp'thar Forest, Vashj'ir
+										["coord"] = { 60.6, 60.0, VASHJIR_KELPTHAR_FOREST },	-- Kelp'thar Forest, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 2:|r Purchase 30 |cFFFFD700Vantus Black Squid Ink|r from |cFFFFD700Ol' Fishbreath|r at |cFFFFFFFF60.6, 60.0|r in |cFFFFD700Kelp'thar Forest|r, Vashj'ir.\n\nThe NPC is close to the surface, around some plankton in Gnaws' Boneyard.\n",
 									}),
 									o(13000021, {	-- Step 3: Super Slick Eel Slime
-										["coord"] = { 15.3, 83.5, 204 },	-- Abyssal Depths, Vashj'ir
+										["coord"] = { 15.3, 83.5, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 3:|r Purchase 30 |cFFFFD700Super Slick Eel Slime|r from |cFFFFD700The Blackfish|r at |cFFFFFFFF15.3, 83.5|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is near the southwest corner of the Abandoned Reef.\n",
 									}),
 									o(13000022, {	-- Step 4: Rock-Encrusted Whelk Shell
-										["coord"] = { 39.9, 77.6, 204 },	-- Abyssal Depths, Vashj'ir
+										["coord"] = { 39.9, 77.6, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 4:|r Purchase 3 |cFFFFD700Rock-Encrusted Whelk Shell|r from |cFFFFD700Volatile Violetscale|r at |cFFFFFFFF39.9, 77.6|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is swimming around near the sea floor of the Underlight Canyon.\n",
 									}),
 									o(13000023, {	-- Step 5: Potent Gastropod Gloop
-										["coord"] = { 45.8, 17.0, 204 },	-- Abyssal Depths, Vashj'ir
+										["coord"] = { 45.8, 17.0, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 5:|r Purchase 5 |cFFFFD700Potent Gastropod Gloop|r from |cFFFFD700Little Carp|r at |cFFFFFFFF45.8, 17.0|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is near the sea floor, swimming around Deepfin Ridge.\n",
 									}),
 								},
@@ -199,29 +199,29 @@ root(ROOTS.Secrets, {
 								["description"] = "Exchange the following items with the NPC until you receive 5 |cFFFFD700Captured Cavitation Bubble|r.\n",
 								["g"] = {
 									o(13000025, {	-- Step 1: Seashell
-										["coord"] = { 44.6, 20.2, 205 },	-- Shimmering Expanse, Vashj'ir
+										["coord"] = { 44.6, 20.2, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 1:|r Purchase 1500 |cFFFFD700Seashell|r from |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
 									}),
 									o(13000026, {	-- Step 2: Very Pretty Coral
-										["coord"] = { 69.8, 46.6, 205 },	-- Shimmering Expanse, Vashj'ir
+										["coord"] = { 69.8, 46.6, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 2:|r Purchase 300 |cFFFFD700Very Pretty Coral|r from |cFFFFD700Lil' Whaley|r at |cFFFFFFFF69.8, 46.6|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is close to the sea floor, next to the Ruins of Thelserai Temple.\n",
 									}),
 									o(13000027, {	-- Step 3: Iridescent Shimmerray Skin
-										["coord"] = { 60.6, 60.0, 201 },	-- Kelp'thar Forest, Vashj'ir
+										["coord"] = { 60.6, 60.0, VASHJIR_KELPTHAR_FOREST },	-- Kelp'thar Forest, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 3:|r Purchase 100 |cFFFFD700Iridescent Shimmerray Skin|r from |cFFFFD700Ol' Fishbreath|r at |cFFFFFFFF60.6, 60.0|r in |cFFFFD700Kelp'thar Forest|r, Vashj'ir.\n\nThe NPC is close to the surface, around some plankton in Gnaws' Boneyard.\n",
 									}),
 									o(13000028, {	-- Step 4: Luxurous Luxscale Scale
-										["coord"] = { 53.8, 88.4, 205 },	-- Shimmering Expanse, Vashj'ir
+										["coord"] = { 53.8, 88.4, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 4:|r Purchase 20 |cFFFFD700Luxurous Luxscale Scale|r from |cFFFFD700Crimson Angerfish|r at |cFFFFFFFF53.8, 88.4|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir.\n\nThe NPC is close to the sea floor, swimming to the left of Biel'aran Ridge.\n",
 									}),
 									o(13000029, {	-- Step 5: Captured Cavitation Bubble
-										["coord"] = { 16.0, 82.2, 204 },	-- Abyssal Depths, Vashj'ir
+										["coord"] = { 16.0, 82.2, VASHJIR_ABYSSAL_DEPTHS },	-- Abyssal Depths, Vashj'ir
 										["description"] = "|cFFFFFFFFStep 5:|r Purchase 5 |cFFFFD700Captured Cavitation Bubble|r from |cFFFFD700The Blackfish|r at |cFFFFFFFF16.0, 82.2|r in |cFFFFD700Abyssal Depths|r, Vashj'ir.\n\nThe NPC is near the southwest corner of the Abandoned Reef.\n",
 									}),
 								},
 							}),
 							o(13000030, {	-- Buy the Red Crystal Monocle
-								["coord"] = { 44.6, 20.2, 205 },	-- Shimmering Expanse, Vashj'ir
+								["coord"] = { 44.6, 20.2, VASHJIR_SHIMMERING_EXPANSE },	-- Shimmering Expanse, Vashj'ir
 								["description"] = "Exchange the 3 items with |cFFFFD700Sir Finley Mrrgglton|r at |cFFFFFFFF44.6, 20.2|r in |cFFFFD700Shimmering Expanse|r, Vashj'ir for the |cFFFFD700Red Crystal Monocle|r.\n\nThe NPC is at surface level on one of the islets, atop a watchtower.\n",
 								["g"] = {
 									i(156725),	-- Red Crystal Monocle

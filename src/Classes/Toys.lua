@@ -124,23 +124,25 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		accountWideData.Toys = AccountWideToyData;
 	end
 
-	-- With Wrath Classic, toys became *mostly* account wide.
-	local characterData = currentCharacter.Toys;
-	if characterData then
-		app:StartATTCoroutine("ValidateCharacterToys", function()
-			-- Wait until the Piccolo is detected as a toy.
-			while not IsToyBNETCollectible[13379] do	-- Piccolo
-				coroutine.yield();
-			end
-			for toyID,collected in pairs(characterData) do
-				if collected and IsToyBNETCollectible[toyID] then
-					AccountWideToyData[toyID] = 1;
-					characterData[toyID] = nil;
+	if app.IsClassic then
+		-- With Wrath Classic, toys became *mostly* account wide.
+		local characterData = currentCharacter.Toys;
+		if characterData then
+			app:StartATTCoroutine("ValidateCharacterToys", function()
+				-- Wait until the Piccolo is detected as a toy.
+				while not IsToyBNETCollectible[13379] do	-- Piccolo
+					coroutine.yield();
 				end
-			end
-		end);
-	else
-		currentCharacter.Toys = {};
+				for toyID,collected in pairs(characterData) do
+					if collected and IsToyBNETCollectible[toyID] then
+						AccountWideToyData[toyID] = 1;
+						characterData[toyID] = nil;
+					end
+				end
+			end);
+		else
+			currentCharacter.Toys = {};
+		end
 	end
 end);
 app.CreateToy = app.ExtendClass("Item", "Toy", "toyID", toyFields);

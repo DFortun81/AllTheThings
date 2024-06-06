@@ -62,19 +62,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["provider"] = { "i", 22444 },	-- Putrid Vine
 						}),
 						i(53560, {	-- Moonshadow Staff
-							["timeline"] = { "created 4.0.3" },
+							["timeline"] = { CREATED_4_0_3 },
 						}),
 						i(22458, {	-- Moonshadow Stave
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(53561, {	-- Thicket's Embrace
-							["timeline"] = { "created 4.0.3" },
+							["timeline"] = { CREATED_4_0_3 },
 						}),
 						i(22272, {	-- Forest's Embrace
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(53562, {	-- Grizzled Hide
-							["timeline"] = { "created 4.0.3" },
+							["timeline"] = { CREATED_4_0_3 },
 						}),
 						i(22274, {	-- Grizzled Pelt
 							["timeline"] = { REMOVED_4_0_3 },
@@ -85,7 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 10181,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["sourceQuest"] = 10592,	-- Wisdom of the Banshee Queen
 					["coord"] = { 57.8, 92, UNDERCITY },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -353,7 +353,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = lvlsquish(50, 50, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Avatar of Hakkar slain
-							["provider"] = { "n", 8443 },	-- Avatar of Hakkar
+							["providers"] = {
+								{ "n", 8443 },	-- Avatar of Hakkar
+								{ "n", 8440 },	-- Shade of Hakkar
+							},
 							["cost"] = { { "i", 10465, 1 } },	-- Egg of Hakkar
 						}),
 					},
@@ -572,7 +575,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				i(6181),	-- Fetish of Hakkar
 				i(16216, {	-- Formula: Enchant Cloak - Greater Resistance
-					["timeline"] = { "deleted 4.0.3" },
+					["timeline"] = { DELETED_4_0_3 },
 					["cr"] = 5259,	-- Atal'ai Witch Doctor
 				}),
 				i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version) (RECIPE!)
@@ -711,8 +714,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			e(457, {	-- Avatar of Hakkar
-				["creatureID"] = 8443,
+				["crs"] = {
+					8443,	-- Avatar of Hakkar
+					8440,	-- Shade of Hakkar
+				},
 				-- #if AFTER 4.0.3
+				["provider"] = { "o", 208321 },	-- Shrine of the Soulflayer
 				["description"] = "There is now a skull pile that you can click on in order to summon the boss.",
 				-- #else
 				["description"] = "Requires the use of the Egg of Hakkar or Yeh'kinya's Scroll to summon.\n\nOnce you start the fight, the room will fill with a variety of mobs. You need to kill the 4 Wind Serpents that appear, and loot the blood off of them, and use it to douse one of the fires in each corner of the room.\n\nEvery time you douse a fire, a dragonkin will walk in and start channeling a spell on Hakkar. Do not let them complete this channel.\n\nThe boss spawns after all 4 flames are doused.",

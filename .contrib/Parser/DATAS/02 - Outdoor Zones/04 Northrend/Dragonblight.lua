@@ -358,6 +358,13 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 36780 },	-- Lieutenant Ta'zinni's Letter
 					}),
+					q(13266, {	-- A Life Without Regret
+						["qg"] = 31412,	-- Thrall
+						["sourceQuest"] = 13257,	-- Herald of War
+						["coord"] = { 32, 37.8, ORGRIMMAR },
+						["timeline"] = { REMOVED_4_0_3 },
+						["races"] = HORDE_ONLY,
+					}),
 					q(12240, {	-- A Means to an End
 						["coord"] = { 77.0, 62.9, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
@@ -382,7 +389,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "i", 36742 },	-- Goramosh's Strange Device
 						["description"] = "Must be on or have completed |cFFFFD700Prevent the Accord|r.",
-						["sourceQuest"] = 12000,	-- Rifle the Bodies
+						["sourceQuest"] = 12000,	-- Rifle the Bodies (A)
 					}),
 					q(12059, {	-- A Strange Device (H)
 						["crs"] = { 26349 },	-- Goramosh
@@ -390,7 +397,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["provider"] = { "i", 36746 },	-- Goramosh's Strange Device
 						["description"] = "Must be on or have completed |cFFFFD700Prevent the Accord|r.",
-						["sourceQuest"] = 11999,	-- Rifle the Bodies
+						["sourceQuest"] = 11999,	-- Rifle the Bodies (H)
 					}),
 					q(11977, {	-- A Tauren Among Taunka
 						["coord"] = { 12.7, 51.7, DRAGONBLIGHT },
@@ -801,9 +808,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12046,	-- Soft Packaging
 					}),
 					q(12052, {	-- Harp on This!
-						["coord"] = { 54.4, 23.6, DRAGONBLIGHT },
 						["qg"] = 26647,	-- Narf
 						["sourceQuest"] = 12047,	-- Something That Doesn't Melt
+						["coord"] = { 54.4, 23.6, DRAGONBLIGHT },
 						["groups"] = {
 							i(38097),	-- Experimental Utility Belt
 							i(37947),	-- Miraculous Waistwarming Band
@@ -812,17 +819,30 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(12416, {	-- Heated Battle (A)
-						["coord"] = { 52.2, 50.0, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
 						["qg"] = 27506,	-- Ceristrasz
 						["sourceQuest"] = 12460,	-- Report to the Ruby Dragonshrine
+						["coord"] = { 52.2, 50.0, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12448, {	-- Heated Battle (H)
-						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
-						["races"] = HORDE_ONLY,
 						["qg"] = 27763,	-- Vargastrasz
 						["sourceQuest"] = 12461,	-- Report to the Ruby Dragonshrine
+						["coord"] = { 42.9, 50.8, DRAGONBLIGHT },
+						["races"] = HORDE_ONLY,
 					}),
+					q(13257, {	-- Herald of War
+						["qg"] = 25256,	-- High Overlord Saurfang
+						["sourceQuest"] = 13242,	-- Darkness Stirs
+						["coord"] = { 41.4, 53.6, BOREAN_TUNDRA },
+						["timeline"] = { REMOVED_4_0_3 },
+						["races"] = HORDE_ONLY,
+					}),
+					heroscall(q(39204, {	-- Hero's Call: Dragonblight!
+						["altQuests"] = { 11995 },	-- Your Presence is Required at Stars' Rest
+						["timeline"] = { ADDED_6_2_0 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 61,
+					})),
 					q(12174, {	-- High Commander Halford Wyrmbane
 						["coord"] = { 29.2, 55.4, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
@@ -1018,7 +1038,7 @@ root(ROOTS.Zones, {
 							i(38178),	-- Battlement Enforcer's Axe
 							i(38134),	-- Bloodtinged Spellblade
 							i(38295, {	-- Idol of the Wastes
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(38135),	-- Mace of the Fallen Raven Priest
 							i(38177),	-- Siege Captain's Gun
@@ -1179,7 +1199,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.9, 55.4, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
-						["sourceQuest"] = 12000,	-- Rifle the Bodies
+						["sourceQuest"] = 12000,	-- Rifle the Bodies (A)
 						["groups"] = {
 							i(38031),	-- Azurehunter Legguards
 							i(38094),	-- Dalaran Sentry Headguard
@@ -1191,7 +1211,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
-						["sourceQuest"] = 11999,	-- Rifle the Bodies
+						["sourceQuest"] = 11999,	-- Rifle the Bodies (H)
 						["groups"] = {
 							i(38031),	-- Azurehunter Legguards
 							i(38094),	-- Dalaran Sentry Headguard
@@ -1320,7 +1340,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 26673,	-- Image of Archmage Modera
 						["sourceQuests"] = {
-							12439,	-- A Distrurbance in The Weset
+							12439,	-- A Disturbance in The West
 							-- #if AFTER 6.2.0.19953
 							39204,	-- Hero's Call: Dragonblight!
 							-- #endif
@@ -1329,10 +1349,15 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11999, {	-- Rifle the Bodies (H)
+						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
+						["sourceQuests"] = {
+							11996,	-- Your Presence is Required at Agmar's Hammer
+							-- #if AFTER 7.3.5
+							39203,	-- Warchief's Command: Dragonblight!
+							-- #endif
+						},
 						["coord"] = { 38.0, 46.2, DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
-						["qg"] = 26471,	-- Image of Archmage Aethas Sunreaver
-						["sourceQuest"] = 11996,	-- Your Presence is Required at Agmar's Hammer
 					}),
 					q(12097, {	-- Sarathstra, Scourge of the North
 						["coord"] = { 47.1, 33.0, DRAGONBLIGHT },
@@ -1601,21 +1626,6 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-
-					q(13257, {	-- Herald of War
-						["qg"] = 25256,	-- High Overlord Saurfang
-						["sourceQuest"] = 13242,	-- Darkness Stirs
-						["coord"] = { 41.4, 53.6, BOREAN_TUNDRA },
-						["timeline"] = { REMOVED_4_0_3 },
-						["races"] = HORDE_ONLY,
-					}),
-					q(13266, {	-- A Life Without Regret
-						["qg"] = 31412,	-- Thrall
-						["sourceQuest"] = 13257,	-- Herald of War
-						["coord"] = { 32, 37.8, ORGRIMMAR },
-						["timeline"] = { REMOVED_4_0_3 },
-						["races"] = HORDE_ONLY,
-					}),
 					q(13267, {	-- The Battle for the Undercity (H)
 						["qg"] = 31649,	-- Vol'jin
 						["sourceQuest"] = 13266,	-- A Life Without Regret
@@ -1788,7 +1798,7 @@ root(ROOTS.Zones, {
 							i(38178),	-- Battlement Enforcer's Axe
 							i(38134),	-- Bloodtinged Spellblade
 							i(38295, {	-- Idol of the Wastes
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(38135),	-- Mace of the Fallen Raven Priest
 							i(38177),	-- Siege Captain's Gun
@@ -1838,12 +1848,6 @@ root(ROOTS.Zones, {
 							39206,	-- Warchief's Command: Grizzly Hills!
 							-- #endif
 						},
-						["isBreadcrumb"] = true,
-					}),
-					q(12511, {	-- The Hills Have Us
-						["coord"] = { 77.1, 50.1, DRAGONBLIGHT },
-						["races"] = ALLIANCE_ONLY,
-						["qg"] = 27317,	-- Gryphon Commander Urik
 						["isBreadcrumb"] = true,
 					}),
 					q(12224, {	-- The Kor'kron Vanguard!
@@ -2208,6 +2212,11 @@ root(ROOTS.Zones, {
 							i(38154),	-- Taigasha
 						},
 					}),
+					warchiefscommand(q(39203, {	-- Warchief's Command: Dragonblight!
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(12475, {	-- What Secrets Men Hide
 						["coord"] = { 79.1, 47.1, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
@@ -2246,9 +2255,12 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(11995, {	-- Your Presence is Required at Stars' Rest
+						["qg"] = 26440,	-- Emissary Skyhaven
+						-- #if AFTER 6.2.0
+						["altQuests"] = { 39204 },	-- Hero's Call: Dragonblight!
+						-- #endif
 						["coord"] = { 48.0, 74.9, DRAGONBLIGHT },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 26440,	-- Emissary Skyhaven
 						["isBreadcrumb"] = true,
 					}),
 				}),
@@ -2334,15 +2346,15 @@ root(ROOTS.Zones, {
 							i(44200),	-- Ancestral Sinew Wristguards
 							i(50370, {	-- Arcanum of Blissful Mending
 								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44152, {	-- Arcanum of Blissful Mending
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44140, {	-- Arcanum of the Eclipsed Moon
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44197),	-- Bracers of Accorded Courtesy
@@ -2361,6 +2373,15 @@ root(ROOTS.Zones, {
 							i(44196),	-- Sash of the Wizened Wyrm
 							i(43156, {	-- Tabard of the Wyrmrest Accord
 								["factionID"] = 1091,	-- The Wyrmrest Accord
+							}),
+						},
+					}),
+					n(27185, {	-- Kuk'uq <Spearcrafter>
+						["coord"] = { 49.4, 75.2, DRAGONBLIGHT },
+						["groups"] = {
+							i(39987),	-- Tuskarr Fishing Spear
+							i(39995, {	-- Tuskarr Javelin
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),

@@ -59,9 +59,9 @@ root(ROOTS.Zones, {
 				q(45985),	-- Hellish Scavengers
 				q(45541),	-- How Do YOU Like It?!
 				q(46066),	-- I Fel Bat For You
-				q(46112),	-- Illidari Masters: Madam Viciosa
-				q(46113),	-- Illidari Masters: Nameless Mystic
-				q(46111),	-- Illidari Masters: Sissix
+				petbattle(q(46112)),	-- Illidari Masters: Madam Viciosa
+				petbattle(q(46113)),	-- Illidari Masters: Nameless Mystic
+				petbattle(q(46111)),	-- Illidari Masters: Sissix
 				q(46817),	-- Infernal Downfall
 				q(45743),	-- Judgment of Odyn
 				q(45776, {	-- Keys are a Crutch

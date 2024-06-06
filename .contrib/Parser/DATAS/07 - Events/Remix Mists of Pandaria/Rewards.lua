@@ -1,11 +1,26 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
+local CLOAK_OF_INFINITE_BONUSIDS = function()
+	local cloaks = {};
+	for bonusID=10973,11028,1 do
+		table.insert(cloaks, i(210333, {	-- Cloak of Infinite Potential
+			["bonusID"] = bonusID,
+		}));
+	end
+	return cloaks;
+end
+root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(REWARDS, {
 		i(211279, {	-- Cache of Infinite Treasure
 			i(210526),	-- Unraveling Tunic (QI!)
 		}),
+
+		i(223910),	-- Bronze Cache
+		i(223911),	-- Greater Bronze Cache
+
+		i(224407),	-- Bonus Experience (Uncommon)
+		i(224408),	-- Bonus Experience (Rare)
 
 		------ Common Thread ------
 		i(210984),	-- Thread of Critical Strike
@@ -50,6 +65,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		i(219278),	-- Infinite Thread of Speed
 		i(219275),	-- Infinite Thread of Stamina
 		i(219281),	-- Infinite Thread of Versatility
+
+		------ Eternal Thread ------
+		i(226145),	-- Minor Spool of Eternal Thread
+		i(226144),	-- Lesser Spool of Eternal Thread
+		i(226143),	-- Spool of Eternal Thread
+		i(226142),	-- Greater Spool of Eternal Thread
+
+		filter(CLOAKS, CLOAK_OF_INFINITE_BONUSIDS()),
 		filter(CONSUMABLES, {
 			i(217925),	-- Bottle of Bees
 			i(217926),	-- Bottle of Dead Bees
@@ -77,6 +100,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(217905),	-- Timerunner's Draught of Health
 			i(217904),	-- Timerunner's Draught of Power
 			i(217902),	-- Timerunner's Vial
+			i(221509),	-- Timerunner's Weaponry
 		}),
 		filter(GEMS, {
 			------ Uncommon Gem ------
@@ -196,7 +220,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 }))));
 
 root(ROOTS.HiddenQuestTriggers, {
-	n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_REMIX } }, {
+	n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 		-- Ensembles
 		q(80464),	-- Ensemble: Aldrachi Blasphemer's Flames
 		q(80466),	-- Ensemble: Aldrachi Blasphemer's Flames

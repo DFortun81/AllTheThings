@@ -42,7 +42,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.TBC, {
 		-- 2.4.0
-		expansion(EXPANSION.TBC, 4.0, bubbleDown({ ["timeline"] = { "created 2.4.0" } }, {
+		expansion(EXPANSION.TBC, 4.0, bubbleDown({ ["timeline"] = { CREATED_2_4_0 } }, {
 			i(34548),	-- Cache of the Shattered Sun
 			i(34544),	-- Essence of the Immortals
 			i(35728),	-- Greater Inscription of the Blade (arena realm only)
@@ -98,7 +98,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.1
-		expansion(EXPANSION.CATA, 0.1, bubbleDown({ ["timeline"] = { "created 4.0.1" } }, {
+		expansion(EXPANSION.CATA, 0.1, bubbleDown({ ["timeline"] = { CREATED_4_0_1 } }, {
 			i(42975),	-- Ace of Lords
 			i(42977),	-- Two of Lords
 			i(42978),	-- Three of Lords
@@ -112,7 +112,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 4.0.3
-		expansion(EXPANSION.CATA, 0.3, bubbleDown({ ["timeline"] = { "created 4.0.3" } }, {
+		expansion(EXPANSION.CATA, 0.3, bubbleDown({ ["timeline"] = { CREATED_4_0_3 } }, {
 			i(55217),	-- Aqua Transform
 			i(43254),	-- Essence Crystal
 			i(55216),	-- Fiery Transform
@@ -122,7 +122,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 4.2.0
-		expansion(EXPANSION.CATA, 2.0, bubbleDown({ ["timeline"] = { "created 4.2.0" } }, {
+		expansion(EXPANSION.CATA, 2.0, bubbleDown({ ["timeline"] = { CREATED_4_2_0 } }, {
 			i(71679),	-- Chest of the Fiery Conqueror
 			i(71686),	-- Chest of the Fiery Protector
 			i(71672),	-- Chest of the Fiery Vanquisher
@@ -135,7 +135,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 4.3.0
-		expansion(EXPANSION.CATA, 3.0, bubbleDown({ ["timeline"] = { "created 4.3.0" } }, {
+		expansion(EXPANSION.CATA, 3.0, bubbleDown({ ["timeline"] = { CREATED_4_3_0 } }, {
 			i(78892),	-- Perfect Geode
 		})),
 
@@ -146,23 +146,57 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.1
-		expansion(EXPANSION.MOP, 0.1, bubbleDown({ ["timeline"] = { "created 5.0.1" } }, {
+		expansion(EXPANSION.MOP, 0.1, bubbleDown({ ["timeline"] = { CREATED_5_0_4 } }, {
 			i(79907),	-- Spear of Xuen (Old Version)
 		})),
 
 		-- 5.1.0
-		expansion(EXPANSION.MOP, 1.0, bubbleDown({ ["timeline"] = { "created 5.1.0" } }, {
+		expansion(EXPANSION.MOP, 1.0, bubbleDown({ ["timeline"] = { CREATED_5_1_0 } }, {
 			i(92563),	-- The Eye of the Storm
 		})),
 
+		-- 5.2.0
+		expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { CREATED_5_2_0 } }, {
+			i(96194),	-- Chest of the Crackling Vanquisher
+			i(96195),	-- Chest of the Crackling Conqueror
+			i(96196),	-- Chest of the Crackling Protector
+			i(96227),	-- Gauntlets of the Crackling Vanquisher
+			i(96228),	-- Gauntlets of the Crackling Conqueror
+			i(96229),	-- Gauntlets of the Crackling Protector
+			i(96251),	-- Helm of the Crackling Vanquisher
+			i(96252),	-- Helm of the Crackling Conqueror
+			i(96253),	-- Helm of the Crackling Protector
+			i(96259),	-- Leggings of the Crackling Vanquisher
+			i(96260),	-- Leggings of the Crackling Conqueror
+			i(96261),	-- Leggings of the Crackling Protector
+			i(96327),	-- Shoulders of the Crackling Vanquisher
+			i(96328),	-- Shoulders of the Crackling Conqueror
+			i(96329),	-- Shoulders of the Crackling Protector
+			i(96938),	-- Chest of the Crackling Vanquisher
+			i(96939),	-- Chest of the Crackling Conqueror
+			i(96940),	-- Chest of the Crackling Protector
+			i(96971),	-- Gauntlets of the Crackling Vanquisher
+			i(96972),	-- Gauntlets of the Crackling Conqueror
+			i(96973),	-- Gauntlets of the Crackling Protector
+			i(96995),	-- Helm of the Crackling Vanquisher
+			i(96996),	-- Helm of the Crackling Conqueror
+			i(96997),	-- Helm of the Crackling Protector
+			i(97003),	-- Leggings of the Crackling Vanquisher
+			i(97004),	-- Leggings of the Crackling Conqueror
+			i(97005),	-- Leggings of the Crackling Protector
+			i(97071),	-- Shoulders of the Crackling Vanquisher
+			i(97072),	-- Shoulders of the Crackling Conqueror
+			i(97073),	-- Shoulders of the Crackling Protector
+		})),
+
 		-- 5.3.0
-		expansion(EXPANSION.MOP, 3.0, bubbleDown({ ["timeline"] = { "created 5.3.0" } }, {
+		expansion(EXPANSION.MOP, 3.0, bubbleDown({ ["timeline"] = { CREATED_5_3_0 } }, {
 			i(98001),	-- Saurok Collection
 			i(98005),	-- Saurok Collection
 		})),
 
 		-- 5.4.0
-		expansion(EXPANSION.MOP, 4.0, bubbleDown({ ["timeline"] = { "created 5.4.0" } }, {
+		expansion(EXPANSION.MOP, 4.0, bubbleDown({ ["timeline"] = { CREATED_5_4_0 } }, {
 			i(103535),	-- Bulging Bag of Charms (was planned for asia store)
 		})),
 
@@ -180,7 +214,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, 0.1, bubbleDown({ ["timeline"] = { "created 6.0.1" } }, {
+		expansion(EXPANSION.WOD, 0.1, bubbleDown({ ["timeline"] = { CREATED_6_0_2 } }, {
 			i(115371),	-- [PLACEHOLDER TIER 3 ITEM]
 			i(107459),	-- Black Iron Fragment
 			i(108882),	-- Bloodmaul Blasting Charge
@@ -197,7 +231,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 6.1.0
-		expansion(EXPANSION.WOD, 1.0, bubbleDown({ ["timeline"] = { "created 6.1.0" } }, {
+		expansion(EXPANSION.WOD, 1.0, bubbleDown({ ["timeline"] = { CREATED_6_1_0 } }, {
 			i(122419),	-- Scouting Missive: Gorian Proving Grounds
 			i(122420),	-- Scouting Missive: Gorian Proving Grounds
 		})),
@@ -211,7 +245,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, 0.3, bubbleDown({ ["timeline"] = { "created 7.0.3" } }, {
+		expansion(EXPANSION.LEGION, 0.3, bubbleDown({ ["timeline"] = { CREATED_7_0_3 } }, {
 			i(134824),	-- "Sir Pugsington" Costume
 			i(132118),	-- Aggramar's Blessing
 			i(129742),	-- Badge of Timewalking Justice
@@ -231,7 +265,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, 2.0, bubbleDown({ ["timeline"] = { "created 7.2.0" } }, {
+		expansion(EXPANSION.LEGION, 2.0, bubbleDown({ ["timeline"] = { CREATED_7_2_0 } }, {
 			n(SEASON_RUTHLESS, {
 				n(PVP_ELITE, {
 					i(146483),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
@@ -278,7 +312,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { "created 8.0.1" } }, {
+		expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
 			i(159734),	-- Add Keystone Affix: Fortified
 			i(159730),	-- Add Keystone Affix: Tyrannical
 			i(159732),	-- Add Keystone Affix: Bursting
@@ -338,7 +372,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, 1.0, bubbleDown({ ["timeline"] = { "created 8.1.0" } }, {
+		expansion(EXPANSION.BFA, 1.0, bubbleDown({ ["timeline"] = { CREATED_8_1_0 } }, {
 			i(165730),	-- Cache of Dazar'alor Treasures
 			i(165731),	-- Cache of Dazar'alor Treasures
 			i(165732),	-- Cache of Dazar'alor Treasures
@@ -355,12 +389,12 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, 1.5, bubbleDown({ ["timeline"] = { "created 8.1.5" } }, {
+		expansion(EXPANSION.BFA, 1.5, bubbleDown({ ["timeline"] = { CREATED_8_1_5 } }, {
 			i(167026),	-- Cache of Crucible Treasures
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, 2.0, bubbleDown({ ["timeline"] = { "created 8.2.0" } }, {
+		expansion(EXPANSION.BFA, 2.0, bubbleDown({ ["timeline"] = { CREATED_8_2_0 } }, {
 			i(168272),	-- [PH] Amathet Cache
 			i(170501),	-- [PH] Mogu Cache
 			i(169154),	-- [PH] N'Zoth Cache
@@ -374,7 +408,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.2.5
-		expansion(EXPANSION.BFA, 2.5, bubbleDown({ ["timeline"] = { "created 8.2.5" } }, {
+		expansion(EXPANSION.BFA, 2.5, bubbleDown({ ["timeline"] = { CREATED_8_2_5 } }, {
 			i(170488),	-- [DNT] Torn Journal Page #7
 			i(170484),	-- [DNT] Torn Journal Page #14
 			i(170487),	-- [DNT] Torn Journal Page #23
@@ -383,7 +417,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 
 		-- 8.3.0
-		expansion(EXPANSION.BFA, 3.0, bubbleDown({ ["timeline"] = { "created 8.3.0" } }, {
+		expansion(EXPANSION.BFA, 3.0, bubbleDown({ ["timeline"] = { CREATED_8_3_0 } }, {
 			i(174455),	-- Add Keystone Affix: Awakened
 			i(169293),	-- Coalescing Visions
 			i(174838),	-- Collapsed Fusion Core
@@ -506,7 +540,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(180421),	-- Emberfall
 			i(183841),	-- Emergency Flare
 			i(181796),	-- Emergency Supplies Key
-			i(180786),	-- Empty Binding
 			i(180738),	-- Enchanter's Journal
 			i(180739),	-- Engineer's Journal
 			i(175043),	-- Entangling Vortex
@@ -1306,7 +1339,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 10.1.5
 		expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
-			i(208417),	-- Chromie's Certificate of Temporal Tidiness
 			i(208097),	-- Flamethrower
 			i(208108),	-- Madam Shadow's Old Grimoire
 			i(205259),	-- Order Soul
@@ -1402,11 +1434,16 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(208692),	-- Ancient Roottwined Tome
 			i(210441),	-- Behemoth's Feather
+			i(208840),	-- Concentrated Sophic Vellum
 			i(209019),	-- Conjured Sugarfree Firewater Sorbet
 			i(210326),	-- Cracked Medal of Conquest
 			i(210420),	-- Dream Wardens Insignia [Rare]
 			i(210419),	-- Dream Wardens Insignia [Uncommon]
 			i(210786),	-- Dreaming Whiskerfish
+			i(208597),	-- Eadweard's Notes
+			i(208887),	-- Erdan's Notes
+			i(210027),	-- Extracted Ashen Dust
+			i(210028),	-- Extracted Ashen Dust
 			i(210450),	-- Flaming Orb
 			i(208570),	-- Greater Verdant Crest of Honor
 			i(208566),	-- Greater Verdant Trophy of Conquest
@@ -1414,18 +1451,23 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(210687),	-- Ironfur Sample
 			i(208568),	-- Lesser Verdant Crest of Honor
 			i(208564),	-- Lesser Verdant Trophy of Conquest
+			i(209348),	-- Lydiara's Notes
 			i(210443),	-- Matchbook
 			i(208856),	-- Pocket Lint
 			i(211418),	-- Q'onzu Edict of Change
 			i(208690),	-- Roottwined Key
 			i(210726),	-- Ruby Flightstone
+			i(208839),	-- Rune of Adaptive Binding
 			i(210550),	-- Set Keystone Map: Dawn of the Infinite: Galakrond's Fall
 			i(210551),	-- Set Keystone Map: Dawn of the Infinite: Murozond's Rise
 			i(210040),	-- Set Keystone Map: Throne of the Tides
+			i(209350),	-- Shalasar's Notes on Sophic Magics
 			i(210442),	-- Sizzling Charcoal
 			i(208606),	-- Somnagora's Heart
 			i(210439),	-- Speck of Mana
 			i(210440),	-- Splendid Blossom
+			i(208782),	-- Symbiotic Glowspore Grip
+			i(210223),	-- Unstable Element
 			i(208569),	-- Verdant Crest of Honor
 			i(208565),	-- Verdant Trophy of Conquest
 			i(210438),	-- Wisp Dust
@@ -1477,6 +1519,21 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(216672),	-- The Ambush
 			i(216527),	-- Toxic Smackerel
 			i(212917),	-- Windstorm
+			------ Plunderstorm Valdrakken Vendor ------
+			i(220203),	-- Clutch of Wyrm's Dreaming Crests
+			i(217413),	-- Depleted Blackened Flightstone
+			i(217416),	-- Depleted Emerald Flightstone
+			i(217415),	-- Depleted Ruby Flightstone
+			i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
+			i(220204),	-- Pouch of Whelpling's Dreaming Crests
+			i(220205),	-- Satchel of Drake's Dreaming Crests
+			i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
+			i(220208),	-- Viridescent Bouquet of Aspect's Dreaming Crests
+		})),
+
+		-- 10.2.7
+		expansion(EXPANSION.DF, 2.7, bubbleDown({ ["timeline"] = { CREATED_10_2_7 } }, {
+			i(218120),	-- Arsenal: Exodar Peacekeeper's Armaments
 		})),
 	}),
 }));

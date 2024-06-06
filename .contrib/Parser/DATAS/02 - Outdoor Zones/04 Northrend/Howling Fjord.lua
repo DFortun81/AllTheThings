@@ -903,15 +903,23 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(11228, {	-- Hell Has Frozen Over...
+						["qg"] = 23547,	-- Macalroy
+						-- #if AFTER 7.3.5
+						["sourceQuest"] = 49551,	-- Hero's Call: Howling Fjord!
+						-- #endif
 						["coord"] = { 60.7, 62.5, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["qg"] = 23547,	-- Macalroy
 					}),
 					q(12566, {	-- Help for Camp Winterhoof
 						["coord"] = { 71.4, 39.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["qg"] = 28314,	-- Longrunner Nanik
 					}),
+					heroscall(q(49551, {	-- Hero's Call: Howling Fjord!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 58,
+					})),
 					q(12298, {	-- High Commander Halford Wyrmbane
 						["qg"] = 23859,	-- Greer Orehammer
 						["sourceQuest"] = 12297,	-- Of Traitors and Treason
@@ -1093,7 +1101,7 @@ root(ROOTS.Zones, {
 							i(35846),	-- Banded Chain Gloves
 							i(35848),	-- Munificent Legguards
 							i(35845, {	-- Crystalline Star
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1343,7 +1351,7 @@ root(ROOTS.Zones, {
 							i(35846),	-- Banded Chain Gloves
 							i(35848),	-- Munificent Legguards
 							i(35845, {	-- Crystalline Star
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1871,9 +1879,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11510,	-- "Scoodles"
 					}),
 					q(11167, {	-- The New Plague
+						["qg"] = 24126,	-- Apothecary Lysander
+						-- #if AFTER 7.3.5
+						["sourceQuest"] = 49533,	-- Warchief's Command: Howling Fjord!
+						-- #endif
 						["coord"] = { 78.5, 28.9, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
-						["qg"] = 24126,	-- Apothecary Lysander
 						["groups"] = {
 							i(35832),	-- Blauvelt's Special Occasion Gloves
 							i(35834),	-- Nimblefinger Scaled Gloves
@@ -2116,6 +2127,11 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["qg"] = 23780,	-- High Executor Anselm
 					}),
+					warchiefscommand(q(49533, {	-- Warchief's Command: Howling Fjord!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(11310, {	-- Warning: Some Assembly Required
 						["coord"] = { 53.6, 65.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
@@ -2268,12 +2284,21 @@ root(ROOTS.Zones, {
 							-- These 6 items could be symlinked to 6 more vendors
 						},
 					}),
+					n(27151, {	-- Deniigi <Spearcrafter>
+						["coord"] = { 25.6, 57.6, HOWLING_FJORD },
+						["groups"] = {
+							i(39987),	-- Tuskarr Fishing Spear
+							i(39995, {	-- Tuskarr Javelin
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
+						},
+					}),
 					n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
 						["coord"] = { 59.6, 63.8, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(50372, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(38464),	-- Gnomish Magician's Quill
@@ -2281,10 +2306,10 @@ root(ROOTS.Zones, {
 							i(38463),	-- Lordaeron's Resolve
 							i(38459),	-- Orb of the Eastern Kingdons
 							i(44937, {	-- Plans: Titanium Plating [A] (RECIPE!)
-								["timeline"] = { "added 3.0.8" },
+								["timeline"] = { ADDED_3_0_8 },
 							}),
 							i(38457),	-- Sawed-Off Hand Cannon
-							i(44503),	-- Schematic: Mekgineer's Chopper
+							i(44503),	-- Schematic: Mekgineer's Chopper (RECIPE!)
 							i(38453),	-- Shield of the Lion-Hearted
 							i(38465),	-- Vanguard Soldier's Dagger
 						},
@@ -2296,22 +2321,25 @@ root(ROOTS.Zones, {
 							i(40005),	-- Forsaken Blade
 							i(40004),	-- Forsaken Greatsword
 							i(40006),	-- Forsaken Sword
+							i(40007, {	-- Forsaken Throwing Knife
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
 						},
 					}),
 					n(32774, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Sebastian Crane <Horde Expedition Quartermaster>
 						["coord"] = { 79.6, 30.6, HOWLING_FJORD },
 						["groups"] = {
 							i(50373, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(38452),	-- Bulwark of the Warchief
 							i(38460),	-- Charged Wand of the Cleft
 							i(38458),	-- Darkspear Orb
 							i(44938, {	-- Plans: Titanium Plating [H] (RECIPE!)
-								["timeline"] = { "added 3.0.8" },
+								["timeline"] = { ADDED_3_0_8 },
 							}),
-							i(44502),	-- Schematic: Mechano-Hog
+							i(44502),	-- Schematic: Mechano-Hog (RECIPE!)
 							i(38456),	-- Sin'dorei Recurve Bow
 							i(38454),	-- Warsong Punisher
 							i(38461),	-- Warsong Shanker

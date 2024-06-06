@@ -127,13 +127,13 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			}),
 			-- #if ANYCLASSIC
 			i(33183, {	-- Old Magic Broom (MOUNT!)
-				["timeline"] = { "deleted 4.2.2" },
+				["timeline"] = { DELETED_4_2_2 },
 			}),
 			i(33182, {	-- Swift Flying Broom (MOUNT!)
-				["timeline"] = { "deleted 4.2.2" },
+				["timeline"] = { DELETED_4_2_2 },
 			}),
 			i(33184, {	-- Swift Magic Broom (MOUNT!)
-				["timeline"] = { "deleted 4.2.2" },
+				["timeline"] = { DELETED_4_2_2 },
 			}),
 			-- #endif
 		})),
@@ -178,7 +178,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		-- 2.2.2
 		expansion(EXPANSION.TBC, 2.2, bubbleDownSelf({ ["timeline"] = { CREATED_2_2_2 } }, {
 			i(33176, {	-- Flying Broom (MOUNT!)
-				["timeline"] = { "deleted 4.2.2" },
+				["timeline"] = { DELETED_4_2_2 },
 			}),
 		})),
 		-- #endif
@@ -462,7 +462,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 6.2.1
-		expansion(EXPANSION.WOD, 2.1, bubbleDownSelf({ ["timeline"] = { "created 6.2.1" } }, {
+		expansion(EXPANSION.WOD, 2.1, bubbleDownSelf({ ["timeline"] = { CREATED_6_2_2 } }, {
 			mount(194046, {	-- Swift Spectral Rylak (MOUNT!)
 				["displayID"] = 65845,
 			}),
@@ -684,9 +684,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				["displayID"] = 107207,
 			}),
 			-- With MountID Attached
-			i(192766, {	-- Amber Skitterfly (MOUNT!)
-				["displayID"] = 100693,
-			}),
 			i(194722, {	-- Carrier Yeti (MOUNT!)
 				["displayID"] = 107944,
 			}),

@@ -80,7 +80,7 @@ root(ROOTS.Zones, {
 								},
 							}),
 							q(31833, bubbleDownSelf({	-- Continue Your Training: Master Woo
-								["timeline"] = { "added 5.0", "removed 8.0.1" },
+								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },
 							},{
 								["sourceQuests"] = {
 									31834,	-- Begin Your Training: Master Cheng
@@ -160,32 +160,32 @@ root(ROOTS.Zones, {
 									31834,	-- Begin Your Training: Master Cheng
 								-- #endif
 								},
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 							q(31858, {	-- The Peak of Serenity - Continue Your Training /lvl 15
 								["isBreadcrumb"] = true,
 								["sourceQuest"] = 31835,	-- Continue Your Training: Master Kistane
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 							q(31859, {	-- The Peak of Serenity - Continue Your Training /lvl 20
 								["isBreadcrumb"] = true,
 								["sourceQuest"] = 31836,	-- Continue Your Training: Master Yoon
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 							q(31860, {	-- The Peak of Serenity - Continue Your Training /lvl 25
 								["isBreadcrumb"] = true,
 								["sourceQuest"] = 31837,	-- Continue Your Training: Master Cheng
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 							q(31861, {	-- The Peak of Serenity - Continue Your Training /lvl 30
 								["isBreadcrumb"] = true,
 								["sourceQuest"] = 31838,	-- Continue Your Training: Master Tsang
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 							q(31989, {	-- The Peak of Serenity - Complete Your Training /lvl 35
 								["isBreadcrumb"] = true,
 								["sourceQuest"] = 31839,	-- Continue Your Training: Master Hsu
-								["timeline"] = { "added 5.0", "removed 8.0.1" },	-- baiting this for #errors to get more information
+								["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1 },	-- baiting this for #errors to get more information
 							}),
 						}),
 						n(VENDORS, {
@@ -941,6 +941,11 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 61495 },	-- Elder Shu
 						["sourceQuest"] = 30935,	-- Fisherman's Tale
 					}),
+					heroscall(q(49559, {	-- Hero's Call: Kun-Lai Summit!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 82,
+					})),
 					q(30460, {	-- Hit Medicine
 						["coord"] = { 71.5, 92.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59077 },	-- Apothecary Cheng
@@ -1484,7 +1489,11 @@ root(ROOTS.Zones, {
 					q(30665, {	-- The Defense of Shado-Pan Fallback
 						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60161 },	-- Shado-Master Chong
-						["sourceQuest"] = 30457,	-- Call Out Their Leader
+						["sourceQuests"] = {
+							30459,	-- All of the Arrows
+							30457,	-- Call Out Their Leader
+							30460,	-- Hit Medicine
+						},
 					}),
 					q(30855, {	-- The Fall of Shai Hu
 						["coord"] = { 74.9, 88.5, KUN_LAI_SUMMIT },
@@ -1662,7 +1671,9 @@ root(ROOTS.Zones, {
 					}),
 					q(31254, {	-- The Road to Kun-Lai
 						["races"] = ALLIANCE_ONLY,
+						-- #if AFTER 7.3.5
 						["sourceQuests"] = { 49559 },	-- Hero's Call: Kun-Lai Summit!
+						-- #endif
 						["qgs"] = {
 							63778,	-- Messenger Grummle
 						},
@@ -1671,16 +1682,19 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31255, {	-- The Road to Kun-Lai
-						["races"] = HORDE_ONLY,
-						["sourceQuests"] = { 49541 },	-- Warchief's Command: Kun-Lai Summit!
-						["qgs"] = {
-							63778,	-- Messenger Grummle
-						},
+						["qg"] = 63778,	-- Messenger Grummle
+						-- #if AFTER 7.3.5
+						["sourceQuest"] = 49541,	-- Warchief's Command: Kun-Lai Summit!
+						-- #endif
 						["coords"] = {
 							{ 70.0, 23.6, VALLEY_OF_THE_FOUR_WINDS },
 							{ 41.7, 29.9, KRASARANG_WILDS },
 					--	TODO: Flew by the area before and it wasn't here. Possibly requires "Boom Goes the Doonamite!" ?
 							{ 45.7, 43.8, THE_JADE_FOREST },
+						},
+						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(85694),	-- A Missive from Lorewalker Cho (QI!)
 						},
 					}),
 					q(38936, {	-- The Road to Kun-Lai (Adventure guide)
@@ -1877,6 +1891,12 @@ root(ROOTS.Zones, {
 							i(88071),	-- Wallwatcher Cap
 						},
 					}),
+					warchiefscommand(q(49541, {	-- Warchief's Command: Kun-Lai Summit!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 82,
+					})),
 					q(30512, {	-- Westwind Rest
 						["coord"] = { 71.5, 93.0, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,
@@ -5345,10 +5365,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 35.4, 83.2, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-								["u"] = ELITE_PVP_REQUIREMENT,
+							elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 								["timeline"] = { ADDED_6_0_2 },
-							}),
+							})),
 							n(WEAPONS, {
 								i(144250, {	-- Arsenal: Prideful Gladiator's Weapons (A)
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor

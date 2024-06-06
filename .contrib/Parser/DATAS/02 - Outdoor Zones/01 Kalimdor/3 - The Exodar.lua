@@ -15,7 +15,7 @@ local EGOMIS_GROUPS = {
 };
 local REDEMPTION = recipe(7328);	-- Redemption
 root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
-	m(THE_EXODAR, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+	m(THE_EXODAR, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 		["lore"] = "The Exodar is the capital city of the Draenei. It is located in the westernmost part of Azuremyst Isle. The Exodar's faction leader is Prophet Velen, who is located near the battlemasters in the Vault of Lights.",
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_draenei",
@@ -47,12 +47,15 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if NOT ANYCLASSIC
+			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(207322, {	-- Hero's Call Board
 				["coord"] = { 55.5, 47.9, THE_EXODAR },
-				["timeline"] = { "added 4.0.1" },
+				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
 			}),
+			-- #endif
 			n(QUESTS, {
 				q(10356, {	-- A Donation of Mageweave
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
@@ -112,7 +115,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9551, {	-- Call of Air (1/4) [The Exodar]
 					["qg"] = 17219,	-- Sulaa <Shaman Trainer>
 					["coord"] = { 32.6, 24.2, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
@@ -121,7 +124,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(9547, {	-- Call of Air (1/4) [Ironforge]
 					["qg"] = 23127,	-- Farseer Javad <Shaman Trainer>
 					["coord"] = { 55.2, 29.6, IRONFORGE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
@@ -130,7 +133,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				q(10491, {	-- Call of Air (1/4) [Stormwind City]
 					["qg"] = 20407,	-- Farseer Umbrua <Shaman Trainer>
 					["coord"] = { 61.8, 83.8, STORMWIND_CITY },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["isBreadcrumb"] = true,
@@ -144,7 +147,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						10491,	-- Call of Air (1/4) [Stormwind City]
 					},
 					["coord"] = { 31, 27.8, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["maps"] = { AZUREMYST_ISLE },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
@@ -154,7 +157,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 17431,	-- Velaada
 					["sourceQuest"] = 9552,	-- Call of Air (2/4)
 					["coord"] = { 24.8, 35.8, AZUREMYST_ISLE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["lvl"] = 30,
@@ -166,7 +169,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					},
 					["sourceQuest"] = 9553,	-- Call of Air (3/4)
 					["coord"] = { 22.4, 32.6, AZUREMYST_ISLE },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { SHAMAN },
 					["lvl"] = 30,
@@ -386,16 +389,17 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["coord"] = { 53.6, 90.8, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(23799, {	-- Schematic: Adamantite Rifle
+						i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 							["isLimited"] = true,
 						}),
-						applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine
+						applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine (RECIPE!)
 							["isLimited"] = true,
+							["timeline"] = { REMOVED_4_0_1 },
 						})),
-						i(23816, {	-- Schematic: Fel Iron Toolbox
+						i(23816, {	-- Schematic: Fel Iron Toolbox (RECIPE!)
 							["isLimited"] = true,
 						}),
-						i(23811, {	-- Schematic: White Smoke Flare
+						i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
 							["isLimited"] = true,
 						}),
 					},
@@ -467,7 +471,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["isLimited"] = true,
 						}),
 						i(25720, {	-- Pattern: Heavy Knothide Leather
-							["timeline"] = { "removed 3.2.0"},
+							["timeline"] = { REMOVED_3_2_0},
 							["requireSkill"] = LEATHERWORKING,
 							["isLimited"] = true,
 							["f"] = RECIPES,
@@ -484,11 +488,25 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(64889),	-- Mantle of Exodar
-						i(64890),	-- Cape of Exodar
-						i(64891),	-- Shroud of Exodar
-						i(67527),	-- Exodar Satchel
-						i(45580),	-- Exodar Tabard
+						i(45580, {	-- Exodar Tabard
+							["timeline"] = { ADDED_3_1_0 },
+						}),
+						i(64889, {	-- Mantle of Exodar
+							["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(64890, {	-- Cape of Exodar
+							["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(64891, {	-- Shroud of Exodar
+							["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(67527, {	-- Exodar Satchel
+							["minReputation"] = { 930, REVERED },	-- Exodar, Revered.
+							["timeline"] = { ADDED_4_0_3 },
+						}),
 					},
 				}),
 				n(16747, {	-- Mahri
@@ -574,12 +592,20 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(137789, {	-- Technique: Songs of the Legion (RECIPE!)
-							["timeline"] = { "added 7.0.3.21134" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
 				n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
 					["coord"] = { 81.5, 51.4, THE_EXODAR },
+					-- Available to Draenei without faction requirements.
+					["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+					["OnInit"] = [[function(t)
+						if _.RaceIndex == ]] .. DRAENEI .. [[ then
+							t.minReputation = nil;
+						end
+						return t;
+					end]],
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(29745),	-- Great Blue Elekk (MOUNT!)

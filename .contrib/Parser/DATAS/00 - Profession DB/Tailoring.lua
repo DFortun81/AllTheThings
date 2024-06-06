@@ -731,9 +731,16 @@ i(0, 142951);	-- White Cloud Leggings
 -------------------
 --- PATCH 6.0.1 ---
 -------------------
+--- GARRISON ---
+i(0, 176313);	-- Inspiring Battle Standard
+i(0, 176314);	-- Fearsome Battle Standard
+i(0, 176315);	-- Inspiring Battle Standard
+i(0, 176316);	-- Fearsome Battle Standard
 --- ITEM ---
 i(0, 158758);	-- Tailoring (Draenor)
 i(114863, 168847);	-- Brilliant Hexweave Cloak
+i(114866, 168850);	-- Creeping Carpet
+i(114865, 168849);	-- Elekk Plushie
 i(114864, 168848);	-- Hexweave Bag
 i(114860, 168844);	-- Hexweave Belt
 i(114858, 168842);	-- Hexweave Bracers
@@ -748,8 +755,27 @@ i(114857, 168841);	-- Hexweave Robe
 i(114859, 168843);	-- Hexweave Slippers
 i(114862, 168846);	-- Nimble Hexweave Cloak
 i(114861, 168845);	-- Powerful Hexweave Cloak
+i(120128, 176058);	-- Secrets of Draenor Tailoring
+i(114868, 168852);	-- Sumptuous Cowl
+i(114870, 168854);	-- Sumptuous Leggings
+i(114869, 168853);	-- Sumptuous Robes
 --- NYI ---
 i(0, 169669);	-- Hexweave Cloth
+i(0, 168851);	-- Miniature Flying Carpet
+i(0, 173415);	-- Murloc Chew Toy
+
+-------------------
+--- PATCH 6.1.0 ---
+-------------------
+--- ITEM ---
+i(122716, 182123);	-- Primal Weaving
+
+-------------------
+--- PATCH 6.2.0 ---
+-------------------
+--- ITEM ---
+i(127724, 187492);	-- Mighty Hexweave Essence [REMOVED]
+i(127742, 187516);	-- Savage Hexweave Essence [REMOVED]
 
 -----------------
 -- PATCH 3.0.3 --
@@ -759,12 +785,204 @@ i(39152, 45546);	-- Heavy Frostweave Bandage
 -- #endif
 
 -----------------
+-- PATCH 7.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 195126);	-- Tailoring (Legion) (REMOVED 8.0.1)
+--- ITEM ---
+i(137681, 220511);	-- Bloodtotem Saddle Blanket
+i(138016, 213035);	-- Clothes Chest: Dalaran Citizens
+i(138017, 213036);	-- Clothes Chest: Karazhan Opera House
+i(138018, 213037);	-- Clothes Chest: Molten Core
+i(137965, 185946);	-- Imbued Silkweave Bracers [Rank 2]
+i(137973, 185954);	-- Imbued Silkweave Bracers [Rank 3]
+i(127022, 185927);	-- Imbued Silkweave Cinch [Rank 1]
+i(137966, 185947);	-- Imbued Silkweave Cinch [Rank 2]
+i(137974, 185955);	-- Imbued Silkweave Cinch [Rank 3]
+i(127277, 186112);	-- Imbued Silkweave Cover [Rank 1]
+i(138006, 186113);	-- Imbued Silkweave Cover [Rank 2]
+i(138007, 186114);	-- Imbued Silkweave Cover [Rank 3]
+i(127278, 186115);	-- Imbued Silkweave Drape [Rank 1]
+i(138009, 186116);	-- Imbued Silkweave Drape [Rank 2]
+i(138010, 186117);	-- Imbued Silkweave Drape [Rank 3]
+i(127023, 185928);	-- Imbued Silkweave Epaulets [Rank 1]
+i(137967, 185948);	-- Imbued Silkweave Epaulets [Rank 2]
+i(137975, 185956);	-- Imbued Silkweave Epaulets [Rank 3]
+i(127280, 186109);	-- Imbued Silkweave Flourish [Rank 1]
+i(138003, 186110);	-- Imbued Silkweave Flourish [Rank 2]
+i(138004, 186111);	-- Imbued Silkweave Flourish [Rank 3]
+i(127026, 185931);	-- Imbued Silkweave Gloves [Rank 1]
+i(137970, 185951);	-- Imbued Silkweave Gloves [Rank 2]
+i(137978, 185959);	-- Imbued Silkweave Gloves [Rank 3]
+i(127025, 185930);	-- Imbued Silkweave Hood [Rank 1]
+i(137969, 185950);	-- Imbued Silkweave Hood [Rank 2]
+i(137977, 185958);	-- Imbued Silkweave Hood [Rank 3]
+i(127024, 185929);	-- Imbued Silkweave Pantaloons [Rank 1]
+i(137968, 185949);	-- Imbued Silkweave Pantaloons [Rank 2]
+i(137976, 185957);	-- Imbued Silkweave Pantaloons [Rank 3]
+i(127028, 185933);	-- Imbued Silkweave Robe [Rank 1]
+i(137972, 185953);	-- Imbued Silkweave Robe [Rank 2]
+i(137980, 185961);	-- Imbued Silkweave Robe [Rank 3]
+i(127279, 186106);	-- Imbued Silkweave Shade [Rank 1]
+i(138000, 186107);	-- Imbued Silkweave Shade [Rank 2]
+i(138001, 186108);	-- Imbued Silkweave Shade [Rank 3]
+i(127027, 185932);	-- Imbued Silkweave Slippers [Rank 1]
+i(137971, 185952);	-- Imbued Silkweave Slippers [Rank 2]
+i(137979, 185960);	-- Imbued Silkweave Slippers [Rank 3]
+i(137953, 185934);	-- Silkweave Bracers [Rank 2]
+i(137961, 185942);	-- Silkweave Bracers [Rank 3]
+i(137954, 185935);	-- Silkweave Cinch [Rank 2]
+i(137962, 185943);	-- Silkweave Cinch [Rank 3]
+i(137990, 186097);	-- Silkweave Cover [Rank 1]
+i(137993, 186100);	-- Silkweave Drape [Rank 1]
+i(137955, 185936);	-- Silkweave Epaulets [Rank 2]
+i(137963, 185944);	-- Silkweave Epaulets [Rank 3]
+i(137987, 186094);	-- Silkweave Flourish [Rank 1]
+i(137958, 185939);	-- Silkweave Gloves [Rank 2]
+i(138012, 208350);	-- Silkweave Gloves [Rank 3]
+i(137957, 185938);	-- Silkweave Hood [Rank 2]
+i(138013, 208351);	-- Silkweave Hood [Rank 3]
+i(137956, 185937);	-- Silkweave Pantaloons [Rank 2]
+i(138015, 208353);	-- Silkweave Pantaloons [Rank 3]
+i(137960, 185941);	-- Silkweave Robe [Rank 2]
+i(137964, 185945);	-- Silkweave Robe [Rank 3]
+i(138011, 186388);	-- Silkweave Satchel
+i(137984, 186091);	-- Silkweave Shade [Rank 1]
+i(137959, 185940);	-- Silkweave Slippers [Rank 2]
+i(138014, 208352);	-- Silkweave Slippers [Rank 3]
+--- QUEST ---
+i(0, 186799);	-- Basic Silkweave Robe
+i(0, 186801);	-- Embroidered Silkweave Robe
+i(0, 186803);	-- Handcrafted Silkweave Bag
+i(0, 187060);	-- Handcrafted Silkweave Hood
+i(0, 186738);	-- Handcrafted Silkweave Robe
+i(0, 185962);	-- Imbued Silkweave
+i(0, 185926);	-- Imbued Silkweave Bracers [Rank 1]
+i(0, 187066);	-- Masterwork Silkweave Bracers
+i(0, 186763);	-- Rune-Threaded Silkweave Robe
+i(0, 186764);	-- Rune-Threaded Silkweave Bracers
+i(0, 187064);	-- Silkweave Bracer Lining
+i(0, 185918);	-- Silkweave Bracers [Rank 1]
+i(0, 187065);	-- Silkweave Bracer: Outer Layer
+i(0, 185919);	-- Silkweave Cinch [Rank 1]
+i(0, 185920);	-- Silkweave Epaulets [Rank 1]
+i(0, 185923);	-- Silkweave Gloves [Rank 1]
+i(0, 187058);	-- Silkweave Hood Lining
+i(0, 185922);	-- Silkweave Hood [Rank 1]
+i(0, 187059);	-- Silkweave Hood: Outer Layer
+i(0, 185921);	-- Silkweave Pantaloons [Rank 1]
+i(0, 185925);	-- Silkweave Robe [Rank 1]
+i(0, 185924);	-- Silkweave Slippers [Rank 1]
+
+-----------------
 -- PATCH 7.1.0 --
 -----------------
 --- ITEM ---
+i(142076, 229041);	-- Imbued Silkweave Bag [Rank 1]
+i(142077, 229043);	-- Imbued Silkweave Bag [Rank 2]
+i(142078, 229045);	-- Imbued Silkweave Bag [Rank 3]
 -- #if AFTER 8.0.1
 i(142333, 230047);	-- Feathered Luffa
 -- #endif
+
+-----------------
+-- PATCH 7.2.0 --
+-----------------
+--- TRAINER ---
+i(0, 239412);	-- Celumbra, the Night's Dichotomy
+
+-----------------
+-- PATCH 7.3.0 --
+-----------------
+--- ITEM ---
+i(151746, 247807);	-- Lightweave Breeches [Rank 1]
+i(151747, 247808);	-- Lightweave Breeches [Rank 2]
+i(151748, 247809);	-- Lightweave Breeches [Rank 3]
+
+-----------------
+-- PATCH 8.0.1 --
+-----------------
+i(0, 264616);	-- Tailoring
+i(0, 264618);	-- Outland Tailoring
+i(0, 264620);	-- Northrend Tailoring
+i(0, 264622);	-- Cataclysm Tailoring
+i(0, 264624);	-- Pandaria Tailoring
+i(0, 264626);	-- Draenor Tailoring
+i(0, 264628);	-- Legion Tailoring
+i(0, 264630);	-- Kul Tiran Tailoring
+i(0, 265815);	-- Zandalari Tailoring
+--- TRAINER ---
+i(0, 257134);	-- Battle Flag: Phalanx Defense [Rank 1]
+i(0, 257135);	-- Battle Flag: Phalanx Defense [Rank 2]
+i(0, 257137);	-- Battle Flag: Rallying Swiftness [Rank 1]
+i(0, 257138);	-- Battle Flag: Rallying Swiftness [Rank 2]
+i(0, 257131);	-- Battle Flag: Spirit of Freedom [Rank 1]
+i(0, 257132);	-- Battle Flag: Spirit of Freedom [Rank 2]
+i(0, 257125);	-- Deep Sea Bag [Rank 1]
+i(0, 257126);	-- Deep Sea Bag [Rank 2]
+i(0, 279183);	-- Discreet Spellthread
+i(0, 257122);	-- Embroidered Deep Sea Breeches
+i(0, 257114);	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion [Rank 1]
+i(0, 257115);	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion [Rank 2]
+i(0, 257118);	-- Embroidered Deep Sea Gloves
+i(0, 272440);	-- Embroidered Deep Sea Satin
+i(0, 279184);	-- Feathery Spellthread
+i(0, 268983);	-- Hooked Deep Sea Net
+i(0, 269608);	-- Honorable Combatant's Satin Belt [Rank 1]
+i(0, 269599);	-- Honorable Combatant's Satin Boots [Rank 1]
+i(0, 269611);	-- Honorable Combatant's Satin Bracers [Rank 1]
+i(0, 269596);	-- Honorable Combatant's Satin Cloak [Rank 1]
+i(0, 269602);	-- Honorable Combatant's Satin Mittens [Rank 1]
+i(0, 269605);	-- Honorable Combatant's Satin Pants [Rank 1]
+i(0, 279182);	-- Resilient Spellthread
+i(0, 278414);	-- Rough-hooked Tidespray Linen
+i(0, 257102);	-- Tidespray Linen Belt \\ Sun-Bleached Linen Belt
+i(0, 257103);	-- Tidespray Linen Bracers \\ Sun-Bleached Linen Bracers
+i(0, 257107);	-- Tidespray Linen Cloak \\ Tidespray Linen Cloak of Discretion \\ Sun-Bleached Linen Cloak of Discretion
+i(0, 257097);	-- Tidespray Linen Hood \\ Sun-Bleached Linen Hood
+i(0, 257096);	-- Tidespray Linen Mittens \\ Sun-Bleached Linen Mittens
+i(0, 268982);	-- Tidespray Linen Net \\ Sun-Bleached Linen Net
+i(0, 257099);	-- Tidespray Linen Pants \\ Sun-Bleached Linen Pants
+i(0, 257104);	-- Tidespray Linen Robe \\ Sun-Bleached Linen Robe
+i(0, 257095);	-- Tidespray Linen Sandals \\ Tidespray Linen Boots \\ Sun-Bleached Linen Boots
+i(0, 257101);	-- Tidespray Linen Spaulders \\ Sun-Bleached Linen Spaulders
+--- ITEM ---
+i(162444, 257136);	-- Battle Flag: Phalanx Defense [Rank 3]
+i(162445, 257139);	-- Battle Flag: Rallying Swiftness [Rank 3]
+i(162443, 257133);	-- Battle Flag: Spirit of Freedom [Rank 3]
+i(162421, 257127);	-- Deep Sea Bag [Rank 3] (A)
+i(162769, 257127);	-- Deep Sea Bag [Rank 3] (H)
+i(162510, 257124);	-- Emblazoned Deep Sea Breeches \\ Embroidered Deep Sea Breeches
+i(162508, 257121);	-- Emblazoned Deep Sea Gloves \\ Embroidered Deep Sea Gloves
+i(163027, 257128);	-- Embroidered Deep Sea Bag [Rank 1]
+i(163026, 257129);	-- Embroidered Deep Sea Bag [Rank 2]
+i(162422, 257130);	-- Embroidered Deep Sea Bag [Rank 3]
+i(162427, 257116);	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion [Rank 3] (A)
+i(162772, 257116);	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion [Rank 3] (H)
+i(162439, 269609);	-- Honorable Combatant's Satin Belt [Rank 2]
+i(162440, 269610);	-- Honorable Combatant's Satin Belt [Rank 3]
+i(162433, 269600);	-- Honorable Combatant's Satin Boots [Rank 2]
+i(162434, 269601);	-- Honorable Combatant's Satin Boots [Rank 3]
+i(162441, 269612);	-- Honorable Combatant's Satin Bracers [Rank 2]
+i(162442, 269613);	-- Honorable Combatant's Satin Bracers [Rank 3]
+i(162431, 269597);	-- Honorable Combatant's Satin Cloak [Rank 2]
+i(162432, 269598);	-- Honorable Combatant's Satin Cloak [Rank 3]
+i(162435, 269603);	-- Honorable Combatant's Satin Mittens [Rank 2]
+i(162436, 269604);	-- Honorable Combatant's Satin Mittens [Rank 3]
+i(162437, 269606);	-- Honorable Combatant's Satin Pants [Rank 2]
+i(162438, 269607);	-- Honorable Combatant's Satin Pants [Rank 3]
+i(162509, 257123);	-- Imbued Deep Sea Breeches \\ Embroidered Deep Sea Breeches
+i(162507, 257120);	-- Imbued Deep Sea Gloves \\ Embroidered Deep Sea Gloves
+--- NYI ---
+i(0, 257108);	-- Embroidered Deep Sea Cloak of Resilience
+i(0, 257109);	-- Embroidered Deep Sea Cloak of Resilience
+i(0, 257110);	-- Embroidered Deep Sea Cloak of Resilience
+i(0, 257111);	-- Embroidered Deep Sea Cloak of the Feather
+i(0, 257112);	-- Embroidered Deep Sea Cloak of the Feather
+i(0, 257113);	-- Embroidered Deep Sea Cloak of the Feather
+i(0, 257141);	-- Pet - Hot Air Balloon (DNT)
+i(0, 257105);	-- Tidespray Linen Cloak of Resilience \\ Sun-Bleached Linen Cloak of Resilience
+i(0, 257106);	-- Tidespray Linen Cloak of the Feather \\ Sun-Bleached Linen Cloak of the Feather
 
 -----------------
 -- PATCH 8.1.0 --

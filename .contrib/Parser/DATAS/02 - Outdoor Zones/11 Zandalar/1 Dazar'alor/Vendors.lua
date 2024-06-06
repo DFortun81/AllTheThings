@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(THE_GREAT_SEAL, {
 		n(VENDORS, {
 			n(141954, {	-- Arbo
@@ -200,10 +200,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				-- Note!! Both factions can interact despite being marked unfriendly in-game to Alliance
 				["g"] = {
 					i(104324, {	-- Foot Ball (TOY!)
-						["timeline"] = { "added 5.4.0.17227" },
+						["timeline"] = { ADDED_5_4_0 },
 					}),
 					i(104323, {	-- The Swineskin (TOY!)
-						["timeline"] = { "added 5.4.0.17227" },
+						["timeline"] = { ADDED_5_4_0 },
 					}),
 				},
 			}),
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["g"] = {
 					i(168024, {	-- Formula: Iwen's Enchanting Rod (RECIPE!)
 						["sourceQuest"] = 54002,	-- Putting it All Together
-						["timeline"] = { "added 8.1.5" },
+						["timeline"] = { ADDED_8_1_5 },
 					}),
 				},
 			}),
@@ -681,7 +681,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["g"] = {
 					i(163042, {	-- Mighty Caravan Brutosaur (MOUNT!)
 						["cost"] = 50000000000,	-- 5,000,000g
-						["timeline"] = { "added 8.0.1", REMOVED_9_0_1 },
+						["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 },
 					}),
 					i(159139),	-- Lightweight Skyterror Barding
 					i(163568, {	-- Lost Platysaur (PET!)

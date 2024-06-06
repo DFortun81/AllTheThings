@@ -28,12 +28,14 @@ local function distance( x1, y1, x2, y2 )
 end
 local function GetCurrentMapID()
 	local originalMapID = C_Map_GetBestMapForUnit("player");
+	app.RealMapID = originalMapID
+	-- app.PrintDebug("RealMapID",originalMapID)
 	if originalMapID then
 		local remap = app.MapRemapping[originalMapID];
 		if not remap then return originalMapID; end
 
 		-- local info = C_Map_GetMapInfo(originalMapID);
-		--print("GetCurrentMapID (original): ", originalMapID, info and info.name, not not remap);
+		-- app.PrintDebug("GetCurrentMapID (original): ", originalMapID, info and info.name, not not remap);
 
 		local substitutions = remap.artIDs;
 		if substitutions then
@@ -66,7 +68,7 @@ local function GetCurrentMapID()
 			for areaID,mapID in pairs(substitutions) do
 				local info = C_Map_GetAreaInfo(areaID);
 				if info and zoneTexts[info] then
-					--print(" SUBBED (areaID): ", areaID, info, mapID);
+					-- app.PrintDebug(" SUBBED (areaID): ", areaID, info, mapID);
 					return mapID;
 				end
 			end
@@ -94,7 +96,7 @@ local function GetCurrentMapID()
 		if substitutions then
 			for name,mapID in pairs(substitutions) do
 				if zoneTexts[name] then
-					--print(" SUBBED (name): ", name, info, mapID);
+					-- app.PrintDebug(" SUBBED (name): ", name, info, mapID);
 					return mapID;
 				end
 			end
@@ -119,7 +121,7 @@ local function GetCurrentMapID()
 						end
 					end
 					if closestMapID then
-						--print(" SUBBED (closest): ", closestMapID);
+						-- app.PrintDebug(" SUBBED (closest): ", closestMapID);
 						return closestMapID;
 					end
 				end
@@ -145,7 +147,7 @@ local function GetCurrentMapID()
 				for areaID,mapID in pairs(substitutions) do
 					local info = C_Map_GetAreaInfo(areaID);
 					if info and zoneTexts[info] then
-						--print(" SUBBED (areaID): ", areaID, info, mapID);
+						-- app.PrintDebug(" SUBBED (areaID): ", areaID, info, mapID);
 						return mapID;
 					end
 				end
@@ -154,7 +156,7 @@ local function GetCurrentMapID()
 			if substitutions then
 				for name,mapID in pairs(substitutions) do
 					if zoneTexts[name] then
-						--print(" SUBBED (name): ", name, info, mapID);
+						-- app.PrintDebug(" SUBBED (name): ", name, info, mapID);
 						return mapID;
 					end
 				end
@@ -174,11 +176,11 @@ local function GetMapName(mapID)
 		return "Map ID #???";
 	end
 end
-local UpdateLocationCoroutine;
+local UpdateLocation
 if app.GameBuildVersion < 30000 then
 	-- Before Wrath Classic we didn't have mapIDs in the world proper, so ATT had to make a guess.
 	-- This relied on the map name and stuff.
-	UpdateLocationCoroutine = function()
+	local UpdateLocationCoroutine = function()
 		-- Wait a second, will ya? The position detection is BAD.
 		for i=1,30,1 do coroutine.yield(); end
 
@@ -195,14 +197,18 @@ if app.GameBuildVersion < 30000 then
 			app.HandleEvent("OnCurrentMapIDChanged");
 		end
 	end
+	UpdateLocation = function()
+		app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
+	end
 else
+	local Callback, DelayedCallback = app.CallbackHandlers.Callback, app.CallbackHandlers.DelayedCallback
 	-- After Wrath Classic you don't need to wait for a bit before checking.
-	UpdateLocationCoroutine = function()
+	local function RawUpdateLocation()
 		-- Acquire the new map ID.
-		local mapID = GetCurrentMapID();
-		while not mapID do
-			coroutine.yield();
-			mapID = GetCurrentMapID();
+		local mapID = GetCurrentMapID() or 0
+		if mapID == 0 then
+			Callback(RawUpdateLocation)
+			return
 		end
 		if CurrentMapID ~= mapID then
 			CurrentMapID = mapID;
@@ -211,12 +217,15 @@ else
 			app.HandleEvent("OnCurrentMapIDChanged");
 		end
 	end
-end
-local function UpdateLocation()
-	app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
+	-- Some of these location events trigger tons of times all at once
+	UpdateLocation = function()
+		DelayedCallback(RawUpdateLocation, 0.25)
+	end
 end
 app.AddEventHandler("OnReady", UpdateLocation);
 app.AddEventRegistration("NEW_WMO_CHUNK", UpdateLocation);
+app.AddEventRegistration("WAYPOINT_UPDATE", UpdateLocation);
+app.AddEventRegistration("SCENARIO_UPDATE", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED_INDOORS", UpdateLocation);
 app.AddEventRegistration("ZONE_CHANGED_NEW_AREA", UpdateLocation);
@@ -233,8 +242,8 @@ local ExplorationDB = setmetatable(app.ExplorationDB or {}, {
 });
 local ExplorationAreaPositionDB = app.ExplorationAreaPositionDB or {};
 app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
-	["text"] = function(t)
-		return C_Map_GetAreaInfo(t.explorationID) or RETRIEVING_DATA;
+	["name"] = function(t)
+		return C_Map_GetAreaInfo(t.explorationID) or UNKNOWN;
 	end,
 	["description"] = function(t)
 		if t.coords and #t.coords > 0 then
@@ -353,7 +362,7 @@ local function CheckExplorationForCurrentLocation()
 end
 app.CheckExplorationForCurrentLocation = CheckExplorationForCurrentLocation;
 
--- Event Handlering
+-- Event Handling
 app.AddEventHandler("OnRecalculate", CheckExplorationForCurrentLocation);
 app.events.MAP_EXPLORATION_UPDATED = CheckExplorationForCurrentLocation;
 app.events.UI_INFO_MESSAGE = function(messageID)
@@ -665,10 +674,12 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 		return C_Map_GetMapLevels(t.mapID);
 	end,
 	["playerCoord"] = function(t)
-		local position = C_Map_GetPlayerMapPosition(t.mapID, "player")
+		local mapID = t.mapID
+		if mapID < 0 then mapID = app.RealMapID end
+		local position = C_Map_GetPlayerMapPosition(mapID, "player")
 		if position then
 			local x,y = position:GetXY()
-			return { math_floor(x * 1000) / 10, math_floor(y * 1000) / 10, t.mapID };
+			return { math_floor(x * 1000) / 10, math_floor(y * 1000) / 10, mapID };
 		end
 	end,
 	["isCurrentMap"] = function(t)
@@ -822,3 +833,158 @@ app.CreateInstance = app.CreateClass("Instance", "instanceID", instanceFields,
 		return true;
 	end
 end));
+
+-- Instance Event Handling
+local GetNumSavedInstances, GetServerTime, GetSavedInstanceInfo, GetSavedInstanceEncounterInfo, RequestRaidInfo
+	= GetNumSavedInstances, GetServerTime, GetSavedInstanceInfo, GetSavedInstanceEncounterInfo, RequestRaidInfo;
+local AfterCombatCallback = app.CallbackHandlers.AfterCombatCallback;
+local function RefreshSavesCallback()
+	-- While the player is still logging in, wait.
+	if not app.GUID then
+		AfterCombatCallback(RefreshSavesCallback);
+		return;
+	end
+
+	-- Make sure there's info available to check save data
+	local saves = GetNumSavedInstances();
+	if saves and saves < 1 then
+		-- While the player is still waiting for information, wait.
+		app.refreshingSaves = (app.refreshingSaves or 30) - 1;
+		if app.refreshingSaves <= 0 then
+			app.refreshingSaves = nil;
+			return;
+		end
+		AfterCombatCallback(RefreshSavesCallback);
+		return;
+	end
+
+	-- Cache the lockouts across your account.
+	local serverTime = GetServerTime();
+
+	-- Check to make sure that the old instance data has expired
+	for guid,character in pairs(ATTCharacterData) do
+		local locks = character.Lockouts;
+		if locks then
+			for instanceID,instance in pairs(locks) do
+				local count = 0;
+				for difficulty,lock in pairs(instance) do
+					if type(lock) ~= "table" or type(lock.reset) ~= "number" or serverTime >= lock.reset then
+						-- Clean this up.
+						instance[difficulty] = nil;
+					else
+						count = count + 1;
+					end
+				end
+				if count == 0 then
+					-- Clean this up.
+					locks[instanceID] = nil;
+				end
+			end
+		end
+	end
+
+	-- Update Saved Instances
+	local myLockouts = app.CurrentCharacter.Lockouts;
+	for instanceIter=1,saves do
+		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters, encounterProgress, extendDisabled, savedInstanceID = GetSavedInstanceInfo(instanceIter);
+		if locked and savedInstanceID then
+			-- Cache the locks for this instance
+			difficulty = difficulty or 7;
+			reset = serverTime + reset;
+			local locks = myLockouts[savedInstanceID];
+			if not locks then
+				locks = {};
+				myLockouts[savedInstanceID] = locks;
+			end
+
+			-- Create the lock for this difficulty
+			local lock = locks[difficulty];
+			if not lock then
+				lock = { ["id"] = id, ["reset"] = reset, ["encounters"] = {}};
+				locks[difficulty] = lock;
+			else
+				lock.id = id;
+				lock.reset = reset;
+			end
+
+			-- If this is LFR, then don't share.
+			if difficulty == 7 or difficulty == 17 then
+				if #lock.encounters == 0 then
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
+						tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+					end
+				else
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
+						if not lock.encounters[encounterIter] then
+							tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						elseif isKilled then
+							lock.encounters[encounterIter].isKilled = true;
+						end
+					end
+				end
+			else
+				-- Create the pseudo "shared" lock
+				local shared = locks.shared;
+				if not shared then
+					shared = {};
+					shared.id = id;
+					shared.reset = reset;
+					shared.encounters = {};
+					locks.shared = shared;
+
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
+						tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+
+						-- Shared Encounter is always assigned if this is the first lock seen for this instance
+						tinsert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+					end
+				else
+					-- Check Encounter locks
+					for encounterIter=1,numEncounters do
+						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
+						if not lock.encounters[encounterIter] then
+							tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						elseif isKilled then
+							lock.encounters[encounterIter].isKilled = true;
+						end
+						if not shared.encounters[encounterIter] then
+							tinsert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
+						elseif isKilled then
+							shared.encounters[encounterIter].isKilled = true;
+						end
+					end
+				end
+			end
+		end
+	end
+
+	-- Mark that we're done now.
+	app.HandleEvent("OnSavesUpdated");
+end
+app.events.LOOT_CLOSED = function()
+	-- Once the loot window closes after killing a boss, THEN trigger the update.
+	app:UnregisterEvent("LOOT_CLOSED");
+	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
+	app:RegisterEvent("UPDATE_INSTANCE_INFO");
+	RequestRaidInfo();
+end
+app.events.UPDATE_INSTANCE_INFO = function()
+	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
+	AfterCombatCallback(RefreshSavesCallback);
+end
+app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
+app.AddEventRegistration("BOSS_KILL", function(id, name, ...)
+	-- This is so that when you kill a boss, you can trigger
+	-- an automatic update of your saved instance cache.
+	-- (It does lag a little, but you can disable this if you want.)
+	-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
+	-- print("BOSS_KILL", id, name, ...);
+	app:UnregisterEvent("LOOT_CLOSED");
+	app:RegisterEvent("LOOT_CLOSED");
+end);

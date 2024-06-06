@@ -109,8 +109,8 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 37177,	-- Call of the Talon King
 						["g"] = {
 							--title_gendered(278, 279),	-- Talon King / Talon Queen
-							title_male(278),	-- Talon King %s
-							title_female(279),	-- Talon Queen %s
+							title_male(278),	-- Talon King <Name>
+							title_female(279),	-- Talon Queen <Name>
 							follower(224),	-- Talon Guard Kurekk
 						},
 					}),
@@ -235,7 +235,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.2, 44.0, SPIRES_OF_ARAK },
 					}),
 				}),
-				petbattles({ "added 6.0.1" }, {
+				petbattles({ ADDED_6_0_2 }, {
 					n(87123, {	-- Vesharr <Grand Master Pet Tamer>
 						["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
 					}),
@@ -831,6 +831,11 @@ root(ROOTS.Zones, {
 							i(114718),	-- Skysinger Boots
 						},
 					}),
+					heroscall(q(49566, {	-- Hero's Call: Spires of Arak!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 96,
+					})),
 					q(34656, {  -- Hidden in Plain Sight
 						["sourceQuests"] = { 34655 },	-- The Shadows of Skettis
 						["coord"] = { 43.6, 12.9, SPIRES_OF_ARAK },
@@ -1352,8 +1357,10 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							34653,	-- Arakkoa Exodus
 							36951,	-- Arakkoa Exodus
+							-- #if AFTER 7.3.5
 							49566,	-- Hero's Call: Spires of Arak!
 							49548,	-- Warchief's Command: Spires of Arak!
+							-- #endif
 						},
 						["coord"] = { 37.8, 18.0, SPIRES_OF_ARAK },
 						["provider"] = { "n", 79539 },	-- Azik
@@ -1421,6 +1428,12 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 					}),
+					warchiefscommand(q(49548, {	-- Warchief's Command: Spires of Arak!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 96,
+					})),
 					q(35295, {	-- What's Theirs is Ours
 						["sourceQuests"] = { 35277 },	-- Orders, Commander?
 						["races"] = HORDE_ONLY,

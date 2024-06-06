@@ -40,19 +40,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2562),	-- Karazhan
 				exploration(2938),	-- Sleeping Gorge
 				exploration(2561),	-- The Vice
-				--[[
-				exploration(2558),	-- Deadwind Ravine
-				exploration(2559),	-- Diamondhead River
-				exploration(2560),	-- Ariden's Camp
-				exploration(2563),	-- Morgan's Plot
-				exploration(2837),	-- The Master's Cellar
-				exploration(2937),	-- Grosh'gok Compound
-				]]--
-			}),
-			petbattles({
-				n(66522, {	-- Lydia Accoste <Grand Master Pet Tamer>
-					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
-				}),
 			}),
 			-- #if AFTER 7.0.3.21796
 			n(QUESTS, {
@@ -60,13 +47,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 254007 },	-- Executioner's Altar
 					["sourceQuest"] = 44083,	-- The Grimoire of the First Necrolyte
 					["coord"] = { 38.7, 73.9, DEADWIND_PASS },
-					["timeline"] = { "added 7.0.3.21996" },
+					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { WARLOCK },
 				}),
 				q(44487, {	-- Waterlogged Tome
 					["provider"] = { "o", 258978 },	-- Waterlogged Tome
 					["coord"] = { 39.1, 73.7, 45 },
-					["timeline"] = { "added 7.0.3.21796" },
+					["timeline"] = { ADDED_7_0_3 },
 					["lvl"] = 110,
 					["groups"] = {
 						crit(33145, {	-- Waterlogged Tome
@@ -99,10 +86,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(29187),	-- Inscription of Endurance
 						-- #if BEFORE CATA
 						applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
-							["timeline"] = { "removed 4.0.1.20000" },
+							["timeline"] = { REMOVED_4_0_1 },
 						})),
 						applyclassicphase(TBC_PHASE_THREE, i(34582, {	-- Mysterious Shell
-							["timeline"] = { "removed 4.0.1.20000" },
+							["timeline"] = { REMOVED_4_0_1 },
 						})),
 						-- #endif
 					},

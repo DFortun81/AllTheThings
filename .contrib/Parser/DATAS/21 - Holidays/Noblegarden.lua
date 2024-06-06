@@ -24,27 +24,27 @@ NOBLEGARDEN_HEADER = createHeader({
 local NOBLEGARDEN_VENDOR_GROUPS = {
 	-- Appearances
 	i(74282, {	-- Black Spring Circlet
-		["timeline"] = { "added 4.3.0.15005" },
+		["timeline"] = { ADDED_4_3_0 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(151804, {	-- Black Tuxedo Pants
-		["timeline"] = { "added 7.2.5.24163" },
+		["timeline"] = { ADDED_7_2_5 },
 		["cost"] = { { "i", 44791, 25 } },	-- 25x Noblegarden Chocolate
 	}),
 	i(164922, {	-- Blue Spring Circlet
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(164923, {	-- Brown Spring Circlet
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(151806, {	-- Elegant Dress
-		["timeline"] = { "added 7.2.5.24163" },
+		["timeline"] = { ADDED_7_2_5 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(74283, {	-- Pink Spring Circlet
-		["timeline"] = { "added 4.3.0.15005" },
+		["timeline"] = { ADDED_4_3_0 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	i(44803, {	-- Spring Circlet
@@ -59,12 +59,12 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 25 } },	-- 25x Noblegarden Chocolate
 	}),
 	i(164924, {	-- Yellow Spring Circlet
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 44791, 50 } },	-- 50x Noblegarden Chocolate
 	}),
 	-- Mounts
 	i(72145, {	-- Swift Springstrider (MOUNT!)
-		["timeline"] = { "added 4.3.0.15005" },
+		["timeline"] = { ADDED_4_3_0 },
 		["cost"] = { { "i", 44791, 500 } },	-- 500x Noblegarden Chocolate
 	}),
 	-- Other
@@ -86,11 +86,11 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
 	}),
 	i(141532, {	-- Noblegarden Bunny (PET!)
-		["timeline"] = { "added 7.1.0.22731" },
+		["timeline"] = { ADDED_7_1_0 },
 		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
 	}),
 	i(116258, {	-- Mystical Spring Bouquet (PET!)
-		["timeline"] = { "added 6.0.1.18566" },
+		["timeline"] = { ADDED_6_0_2 },
 		["cost"] = { { "i", 44791, 100 } },	-- 100x Noblegarden Chocolate
 	}),
 	i(44794, {	-- Spring Rabbit (PET!)
@@ -103,7 +103,7 @@ local NOBLEGARDEN_VENDOR_GROUPS = {
 		["cost"] = { { "i", 44791, 200 } },	-- 200x Noblegarden Chocolate
 	}),
 	i(165802, {	-- Noble Gardener's Hearthstone (TOY!)
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 		["cost"] = { { "i", 44791, 250 } },	-- 250x Noblegarden Chocolate
 	}),
 	i(188694, {	-- Spring Florist's Pouch (TOY!)
@@ -156,14 +156,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				["timeline"] = { ADDED_3_1_0 },
 			}),
 			i(72145, {	-- Swift Springstrider (MOUNT!)
-				["timeline"] = { "added 4.3.0.15005" },
+				["timeline"] = { ADDED_4_3_0 },
 			}),
 
 			i(19028, {	-- Elegant Dress
-				["timeline"] = { "removed 7.2.5.24163" },
+				["timeline"] = { REMOVED_7_2_5 },
 			}),
 			i(6835, {	-- Black Tuxedo Pants
-				["timeline"] = { "removed 7.2.5.24163" },
+				["timeline"] = { REMOVED_7_2_5 },
 			}),
 			i(6833),	-- White Tuxedo Shirt
 			-- #if BEFORE 3.1.0.9733
@@ -187,7 +187,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 				2421,	-- Noble Garden (A)
 				2422,	-- Shake Your Bunny-Maker
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(122),	-- <Name> the Noble
@@ -361,7 +361,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 	}),
 	n(RARES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 }, }, {
 		n(213665, {	-- Daetan Swiftplume
-			["questID"] = 73192,	-- Feathered Fiend (A)
 			["providers"] = {
 				{ "n", 216836 },	-- Golden Egg
 				{ "n", 219936 },	-- [DNT] Vignette
@@ -369,7 +368,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
 			["coord"] = { 30.3, 91.4, ELWYNN_FOREST },
 			["races"] = ALLIANCE_ONLY,
-			["isDaily"] = true,
 			["groups"] = {
 				i(210594, {	-- Noblegarden Trinket (QI!)
 					["races"] = ALLIANCE_ONLY,
@@ -377,7 +375,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			},
 		}),
 		n(218738, {	-- Daetan Swiftplume
-			["questID"] = 79558,	-- Feathered Fiend (H)
 			["providers"] = {
 				{ "n", 218736 },	-- Golden Egg
 				{ "n", 219936 },	-- [DNT] Vignette
@@ -385,7 +382,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["description"] = "Drag the large Golden Egg to the Large Duck Nest to spawn the boss.",
 			["coord"] = { 44.4, 35.1, DUROTAR },
 			["races"] = HORDE_ONLY,
-			["isDaily"] = true,
 			["groups"] = {
 				i(216932, {	-- Noblegarden Trinket (QI!)
 					["races"] = HORDE_ONLY,

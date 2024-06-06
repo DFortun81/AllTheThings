@@ -262,7 +262,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 80.4, 25.4, TALADOR },
 					}),
 				}),
-				petbattles({ "added 6.0.1" }, {
+				petbattles({ ADDED_6_0_2 }, {
 					n(87125, {	-- Taralune <Grand Master Pet Tamer>
 						["coord"] = { 49.0, 80.4, TALADOR },
 					}),
@@ -790,7 +790,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							34676,	-- The Critical Path (board)
 							37183,	-- The Critical Path (bodrick grey)
+							-- #if AFTER 7.3.5
 							49565,	-- Hero's Call: Talador!
+							-- #endif
 							36495,	-- News From Talador
 						},
 					}),
@@ -801,7 +803,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							34681,	-- It's a Matter of Strategy (rokhan)
 							36953,	-- It's a Matter of Strategy (board)
+							-- #if AFTER 7.3.5
 							49547,	-- Warchief's Command: Talador!
+							-- #endif
 						},
 					}),
 					q(33761, {	-- Barum's Notes
@@ -1051,6 +1055,11 @@ root(ROOTS.Zones, {
 							i(113023),	-- Foolproof Targeting Mechanism
 						},
 					}),
+					heroscall(q(49565, {	-- Hero's Call: Talador!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 94,
+					})),
 					q(34163, {	-- Hiding in the Shadows
 						["provider"] = {"o",227737},	-- Shadow Council Communicator
 						["coord"] = { 37.2, 79.3, TALADOR },
@@ -1850,6 +1859,12 @@ root(ROOTS.Zones, {
 							i(112536),	-- Talador Sentinel Belt
 						},
 					}),
+					warchiefscommand(q(49547, {	-- Warchief's Command: Talador!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 94,
+					})),
 					q(34351, {	-- We Must Construct Additional Pylons
 						["provider"] = { "n", 77737 },	-- Soulbinder Tuulani
 						["coord"] = { 68.4, 19.3, 536 },
@@ -2634,13 +2649,13 @@ root(ROOTS.Zones, {
 								["timeline"] = { ADDED_3_3_3 },
 							}),
 							i(104324, {	-- Foot Ball (TOY!)
-								["timeline"] = { "added 5.4.0.17227" },
+								["timeline"] = { ADDED_5_4_0 },
 							}),
 							i(137663, {	-- Soft Foam Sword (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(104323, {	-- The Swineskin (TOY!)
-								["timeline"] = { "added 5.4.0.17227" },
+								["timeline"] = { ADDED_5_4_0 },
 							}),
 							i(54438, {	-- Tiny Blue Ragdoll (TOY!)
 								["timeline"] = { ADDED_3_3_3 },
@@ -2707,30 +2722,20 @@ root(ROOTS.Zones, {
 						["coord"] = { 71.6, 30.2, TALADOR },
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							i(23799, {	-- Schematic: Adamantite Rifle
-								["requireSkill"] = ENGINEERING,
+							i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(23807, {	-- Schematic: Adamantite Scope
-								["requireSkill"] = ENGINEERING,
+							i(23807, {	-- Schematic: Adamantite Scope (RECIPE!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(23803, {	-- Schematic: Cogspinner Goggles
-								["requireSkill"] = ENGINEERING,
+							i(23803, {	-- Schematic: Cogspinner Goggles (RECIPE!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(23816, {	-- Schematic: Fel Iron Toolbox
-								["requireSkill"] = ENGINEERING,
+							i(23816, {	-- Schematic: Fel Iron Toolbox (RECIPE!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
-							i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
-								["requireSkill"] = ENGINEERING,
+							i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles (RECIPE!)
 								["isLimited"] = true,
-								["f"] = RECIPES,
 							}),
 						},
 					}),

@@ -122,10 +122,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1877),	-- Valley of Fangs
 				-- #endif
 				exploration(1517),	-- Uldaman
-				--[[
-				exploration(343),	-- Camp Wurg
-
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(632, {	-- Bloodwatcher Point, Badlands
@@ -1131,7 +1127,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157008, {	-- Blam-Hatchet
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1423,10 +1419,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156961, {	-- Martek's Stick of Truthiness
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(156962, {	-- Genuine Deathwing Fang
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1935,7 +1931,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9439, {	-- Unclaimed Baggage
 					["qg"] = 17097,	-- Advisor Sarophas
 					["coord"] = { 5.8, 48, BADLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 36,
 					["groups"] = {
@@ -2231,7 +2227,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				i(2624, {	-- Thinking Cap
-					["timeline"] = { REMOVED_4_0_3, "added 8.0.0" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
 					["cr"] = 2718,	-- Dustbelcher Shaman
 				}),
 			}),

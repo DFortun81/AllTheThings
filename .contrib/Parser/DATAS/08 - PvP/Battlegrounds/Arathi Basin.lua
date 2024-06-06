@@ -68,7 +68,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						583,	-- Arathi Basin All-Star
 						584,	-- Arathi Basin Assassin
 					}},
-					["timeline"] = { ADDED_3_0_2, "removed 4.3.0" },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(154, {	-- Arathi Basin Victory
@@ -237,7 +237,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
@@ -264,7 +264,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
@@ -291,7 +291,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
@@ -318,7 +318,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
@@ -345,7 +345,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
@@ -372,7 +372,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
@@ -399,7 +399,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
@@ -426,7 +426,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
@@ -453,7 +453,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
@@ -480,7 +480,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 79.4, 18.0, STORMWIND_CITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
@@ -507,7 +507,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 58.2, 97.6, UNDERCITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
@@ -534,7 +534,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 58.2, 97.6, UNDERCITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
@@ -561,7 +561,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 58.2, 97.6, UNDERCITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
@@ -588,7 +588,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 58.2, 97.6, UNDERCITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
@@ -615,7 +615,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 58.2, 97.6, UNDERCITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
@@ -642,7 +642,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 58.2, 97.6, UNDERCITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
@@ -669,7 +669,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 58.2, 97.6, UNDERCITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
@@ -696,7 +696,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 58.2, 97.6, UNDERCITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 50, 59 },
 				}),
@@ -723,7 +723,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 58.2, 97.6, UNDERCITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
@@ -750,7 +750,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 58.2, 97.6, UNDERCITY },
 					},
 					["cost"] = { { "i", 20559, 3 } },	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 60, 69 },
 				}),
@@ -763,7 +763,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 					-- #if BEFORE 5.0.4
@@ -788,7 +788,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 				}),
@@ -848,7 +848,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 8121,	-- Take Four Bases (Horde)
 					["minReputation"] = { 510, EXALTED },	-- The Defilers, Exalted.
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
 					-- #if BEFORE 5.0.4
@@ -869,7 +869,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #endif
 					["minReputation"] = { 510, FRIENDLY },	-- The Defilers, Friendly.
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
 				}),
@@ -888,7 +888,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
@@ -907,7 +907,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
@@ -926,7 +926,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
@@ -945,7 +945,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -957,7 +957,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
 					-- #endif
-					["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+					["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
@@ -972,7 +972,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 					-- #endif
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 20, 29 },
 				}),
@@ -987,7 +987,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 					-- #endif
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 30, 39 },
 				}),
@@ -1002,7 +1002,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 					-- #endif
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = { 40, 49 },
 				}),
@@ -1017,14 +1017,14 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 					-- #endif
 					["coord"] = { 73.3, 29.7, ARATHI_HIGHLANDS },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
 			}),
 			n(REWARDS, {
 				i(20559, {	-- Arathi Basin Mark of Honor
-					["timeline"] = { "removed 3.3.3" },
+					["timeline"] = { REMOVED_3_3_3 },
 				}),
 				i(185048, {	-- Shoveltusk Soul
 					["description"] = "Available during Brawl: Comp Stomp",

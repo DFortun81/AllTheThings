@@ -705,7 +705,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 		})),
 		ach(16446, {	-- That's Pretty Neat!
-			title(472),	-- Birdwatcher %s
+			title(472),	-- Birdwatcher <Name>
 			crit(55392, {	-- Apex Blazewing
 				["crs"] = { 193291 },
 				["maps"] = { 2080 },	-- Neltharus

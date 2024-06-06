@@ -6,7 +6,7 @@ root(ROOTS.WorldDrops, {
 		["description"] = "These containers can be opened by a Rogue with Pick Lock or by using a key of the appropriate level. Items exclusive to the boxes will be listed below.",
 		["groups"] = {
 			i(169475, {	-- Barnacled Lockbox
-				["timeline"] = { "added 8.2.0.30918" },
+				["timeline"] = { ADDED_8_2_0 },
 				["sym"] = { {
 					"select", "itemID",
 					-- Last Updated: 2022-05-02, Crieve. 45 items total, no exclusives.
@@ -69,7 +69,7 @@ root(ROOTS.WorldDrops, {
 					i(2567),	-- Evocator's Blade
 					i(5756),	-- Sliverblade
 					i(4454, {	-- Talon of Vultros
-						["timeline"] = { "added 7.2.5.18522" }, -- Unclear when exactly. Going with the big return of items in 7.2.5
+						["timeline"] = { ADDED_7_2_5 }, -- Unclear when exactly. Going with the big return of items in 7.2.5
 					}),
 				},
 				["sym"] = { {
@@ -111,17 +111,22 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(63349, {	-- Flame-Scarred Junkbox
-				["timeline"] = { "added 4.0.1.12941" },
+				["timeline"] = { ADDED_4_0_1 },
 				["groups"] = {
-					i(68163),	-- The Twilight Blade
 					i(68161),	-- Krol Decapitator
+					-- #if BEFORE MOP
+					i(68162, {	-- Spinerender
+						["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+					}),
+					-- #endif
+					i(68163),	-- The Twilight Blade
 				},
 			}),
 			i(43622, {	-- Froststeel Lockbox
 				["timeline"] = { ADDED_3_0_2 },
 			}),
 			i(88567, {	-- Ghost Iron Lockbox
-				["timeline"] = { "added 5.0.1.15752" },
+				["timeline"] = { ADDED_5_0_4 },
 			}),
 			i(16885, {	-- Heavy Junkbox
 				["sym"] = { {
@@ -145,8 +150,10 @@ root(ROOTS.WorldDrops, {
 					2163,   -- Shadowblade
 					12044,  -- Arctic Pendant
 					12014,  -- Arctic Ring
-					21953,  -- Design Emerald Owl
-					21949,  -- Design Ruby Serpent
+					-- #if AFTER TBC
+					21953,  -- Design: Emerald Owl
+					21949,  -- Design: Ruby Serpent
+					-- #endif
 					12057,  -- Dragonscale Band
 					12046,  -- Jungle Necklace
 					12002,  -- Marble Circle
@@ -191,10 +198,10 @@ root(ROOTS.WorldDrops, {
 				},
 			}),
 			i(31952, {	-- Khorium Lockbox
-				["timeline"] = { "added 2.1.0.6678" },
+				["timeline"] = { ADDED_2_1_0 },
 			}),
 			i(188787, {	-- Locked Broker Luggage
-				["timeline"] = { "added 9.2.0.42423" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 			i(186160, {	-- Locked Artifact Case
 				["timeline"] = { ADDED_9_1_0 },
@@ -259,17 +266,25 @@ root(ROOTS.WorldDrops, {
 			}),
 			i(43575, {	-- Reinforced Junkbox
 				["timeline"] = { ADDED_3_0_2 },
-				["sym"] = { {
-					"select", "itemID",
-					43611,  -- Krol Cleaver
-					43613,  -- The Dusk Blade
-				}},
+				["groups"] = {
+					i(43611, {	-- Krol Cleaver
+						["timeline"] = { ADDED_3_0_2 },
+					}),
+					i(43612, {	-- Spineslicer
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
+					}),
+					i(43613, {	-- The Dusk Blade
+						["timeline"] = { ADDED_3_0_2 },
+					}),
+				},
 			}),
 			i(4638,  {	-- Reinforced Steel Lockbox
 				["sym"] = { {
 					"select", "itemID",
+					-- #if AFTER TBC
 					21947,   -- Design: Gem Studded Band
 					21945,   -- Design: The Aquamarine Ward
+					-- #endif
 					16215,   -- Formula: Enchant Boots - Greater Stamina (RECIPE!)
 					11225,   -- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 					16218,   -- Formula: Enchant Bracer - Superior Versatility / CLASSIC: Formula: Enchant Bracer - Superior Spirit (RECIPE!)
@@ -353,7 +368,7 @@ root(ROOTS.WorldDrops, {
 				},
 			}),
 			i(29569, {	-- Strong Junkbox
-				["timeline"] = { "added 2.0.1.6180" },
+				["timeline"] = { ADDED_2_0_1 },
 				["sym"] = { {
 					"select", "itemID",
 					4354,   -- Pattern: Rich Purple Silk Shirt [Discord Confirmation - Luce]
@@ -369,28 +384,35 @@ root(ROOTS.WorldDrops, {
 					12026,  -- Quicksilver Pendant
 					14499,  -- Quicksilver Ring
 					12056,  -- Ring Of The Heavens
-					-- #if BEFORE MOP
-					34622,  -- Spinesever	-- ["timeline"] = { "removed 5.0.4" },
-					-- #endif
 					12045,  -- Swamp Pendant
 					12027   -- Vermilion Necklace
 				}},
+				-- #if BEFORE MOP
+				["groups"] = {
+					-- CRIEVE NOTE: This is the ONLY valid source, please don't remove.
+					i(34622, {	-- Spinesever
+						["timeline"] = { ADDED_2_3_0, REMOVED_5_0_4 },
+					}),
+				},
+				-- #endif
 			}),
 			i(16884, {	-- Sturdy Junkbox
 				["sym"] = { {
 					"select", "itemID",
 					11974,  -- Aquamarine Ring
 					12043,  -- Desert Choker
+					-- #if AFTER TBC
 					21947,  -- Design: Gem Studded Band
 					21945,  -- Design: The Aquamarine Ward
 					21944,  -- Design: Truesilver Boar
+					-- #endif
 					7552,   -- Falcon's Hook
 					12011,  -- Forest Loop
 					11225,  -- Formula: Enchant Bracer - Greater Stamina (RECIPE!)
 					11204,  -- Formula: Enchant Bracer - Greater Versatility / CLASSIC: Formula: Enchant Bracer - Greater Versatility (RECIPE!)
 					11973,  -- Hematite Link
 					11987,  -- Iridium Circle
-					11999,  -- Lodestone  Hoop
+					11999,  -- Lodestone Hoop
 					12031,  -- Lodestone Necklace
 					12042,  -- Marsh Chain
 					12012,  -- Marsh Ring
@@ -419,7 +441,7 @@ root(ROOTS.WorldDrops, {
 			i(5759, {	-- Thorium Lockbox
 			}),
 			i(116920, {	-- True Steel Lockbox
-				["timeline"] = { "added 6.0.1.18594" },
+				["timeline"] = { ADDED_6_0_2 },
 				["sym"] = { {
 					"select", "itemID",
 				--	n(WEAPONS, {
@@ -533,7 +555,7 @@ root(ROOTS.WorldDrops, {
 				}},
 			}),
 			i(88165, {	-- Vine-Cracked Junkbox
-				["timeline"] = { "added 5.0.1.15739" },
+				["timeline"] = { ADDED_5_0_4 },
 				["groups"] = {
 					i(88150),	-- Krol Scimitar
 					i(88149),	-- The Gloaming Blade

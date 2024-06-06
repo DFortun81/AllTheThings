@@ -12,7 +12,7 @@ SCROLL_OF_RESURRECTION = createHeader({
 	},
 });
 root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
-	["timeline"] = { "added 4.3.0.15005", "removed 5.3.0.16781" },
+	["timeline"] = { ADDED_4_3_0, REMOVED_5_3_0 },
 	["groups"] = {
 		cl(DEATHKNIGHT, {
 			i(72994),	-- Ebonsoul Blade
@@ -96,7 +96,7 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 		}),
 		cl(HUNTER, {
 			i(73000),	-- Beastsoul Rifle
-			un(REMOVED_FROM_GAME, i(73001)),	-- Beastsoul Spear (missing on the vendor implementation)
+			i(73001),	-- Beastsoul Spear
 			i(72913),	-- Beastsoul Helm
 			i(72915),	-- Beastsoul Spaulders
 			i(73146),	-- Beastsoul Choker
@@ -131,7 +131,7 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73101),	-- Magesoul Stone of Destruction
 		}),
 		cl(MONK, {
-			["timeline"] = { "added 5.0.1.15752" },
+			["timeline"] = { ADDED_5_0_4 },
 			["groups"] = {
 				i(88648),	-- Monastic Spire
 				i(88622),	-- Monastic Staff
@@ -255,7 +255,7 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 		}),
 		cl(ROGUE, {
 			i(72995),	-- Shadowstalking Dagger
-			un(REMOVED_FROM_GAME, i(72996)),	-- Shadowstalking Shiv (missing on the vendor implementation)
+			i(72996),	-- Shadowstalking Shiv
 			i(72997),	-- Shadowstalking Sword
 			i(72667),	-- Shadowstalking Hood
 			i(72669),	-- Shadowstalking Shoulders
@@ -271,6 +271,11 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73123),	-- Shadowstalking Ring of Onslaught
 			i(73124),	-- Shadowstalking Idol of Rage
 			i(73121),	-- Shadowstalking Stone of Rage
+			-- #if BEFORE MOP
+			i(73357, {	-- Shadowstalking Knives
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			}),
+			-- #endif
 		}),
 		cl(SHAMAN, {
 			i(73005),	-- Stormbinder Aegis
@@ -372,13 +377,21 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73170),	-- Valiant Defender's Stone
 			i(73165),	-- Valiant Idol of Battle
 			i(73164),	-- Valiant Stone of Battle
+			-- #if BEFORE MOP
+			i(73358, {	-- Valiant Knives of Battle
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			}),
+			i(73359, {	-- Valiant Knives of Stoicism
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			}),
+			-- #endif
 		}),
-		i(77956, bubbleDown({ ["timeline"] = { "added 4.3.0.15005", "removed 5.4.7" } }, {	-- Spectral Mount Crate
+		bubbleDown({ ["u"] = BLIZZARD_BALANCE }, i(77956, bubbleDown({ ["timeline"] = { ADDED_4_3_0, REMOVED_5_4_7 } }, {	-- Spectral Mount Crate
 			["description"] = "This crate was given to players whose friends returned to the game by means of the Scroll of Resurrection.",
 			["groups"] = {
 				a(i(76889)),	-- Spectral Gryphon (MOUNT!)
 				h(i(76902)),	-- Spectral Wind Rider (MOUNT!)
 			},
-		})),
+		}))),
 	},
 }));

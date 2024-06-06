@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "added 8.3.0" } }, {
+root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADDED_8_3_0 } }, {
 	inst(1180, {	-- Ny'alotha
 		["coords"] = {
 			{ 55.1, 43.8, NZOTH_ASSAULT_ULDUM },
@@ -235,7 +235,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 							i(174137),	-- Chitinspine Gloves
 							i(174171),	-- Dark Crystalline Girdle
 							i(174530),	-- Ring of Collective Consciousness
-							i(174053, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Overconfident
+							i(174053, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Overconfident
 						},
 					}),
 					e(2364, {	-- Ra-den the Despoiled
@@ -273,7 +273,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 							i(174162),	-- Ego-Annihilating Grips
 							i(174130),	-- Grips of Occult Reminiscence
 							i(174531),	-- Void-Etched Band
-							i(174052, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Masochistic
+							i(174052, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Masochistic
 						},
 					}),
 					e(2373, {	-- Drest'agath
@@ -290,7 +290,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 							i(173946),	-- Writhing Segment of Drest'agath
 							i(174532),	-- Ichorspine Loop
 							i(173946),	-- Writhing Segment of Drest'agath
-							i(174054, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Last Grasp
+							i(174054, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Last Grasp
 						},
 					}),
 					e(2374, {	-- Il'gynoth, Corruption Reborn
@@ -354,7 +354,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 							i(207091, {	-- Technique: Glyph of the Shath'Yar (RECIPE!)
 								["timeline"] = { ADDED_10_1_5 },
 							}),
-							i(174055, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Thing From Beyond
+							i(174055, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Thing From Beyond
 						},
 					}),
 				}),
@@ -544,7 +544,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(174137),	-- Chitinspine Gloves
 						i(174171),	-- Dark Crystalline Girdle
 						i(174530),	-- Ring of Collective Consciousness
-						i(174053, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Overconfident
+						i(174053, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Overconfident
 					},
 				}),
 				e(2367, {	-- Shad'har the Insatiable
@@ -557,7 +557,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(174162),	-- Ego-Annihilating Grips
 						i(174130),	-- Grips of Occult Reminiscence
 						i(174531),	-- Void-Etched Band
-						i(174052, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Masochistic
+						i(174052, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Masochistic
 					},
 				}),
 				e(2373, {	-- Drest'agath
@@ -571,7 +571,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
 						i(173946),	-- Writhing Segment of Drest'agath
-						i(174054, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Last Grasp
+						i(174054, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Last Grasp
 					},
 				}),
 				e(2370, {	-- Vexiona
@@ -644,7 +644,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(174533),	-- Ring of Cosmic Potential
 						i(174277),	-- Lingering Psychic Shell
 						i(174103),	-- Manifesto of Madness
-						i(174055, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Thing From Beyond
+						i(174055, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Thing From Beyond
 					},
 				}),
 			}),
@@ -737,7 +737,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(174137),	-- Chitinspine Gloves
 						i(174171),	-- Dark Crystalline Girdle
 						i(174530),	-- Ring of Collective Consciousness
-						i(174053, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Overconfident
+						i(174053, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Overconfident
 					},
 				}),
 				e(2367, {	-- Shad'har the Insatiable
@@ -750,7 +750,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(174162),	-- Ego-Annihilating Grips
 						i(174130),	-- Grips of Occult Reminiscence
 						i(174531),	-- Void-Etched Band
-						i(174052, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Masochistic
+						i(174052, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Masochistic
 					},
 				}),
 				e(2373, {	-- Drest'agath
@@ -764,7 +764,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
 						i(173946),	-- Writhing Segment of Drest'agath
-						i(174054, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Last Grasp
+						i(174054, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Last Grasp
 					},
 				}),
 				e(2370, {	-- Vexiona
@@ -829,10 +829,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					["crs"] = { 158041 },
 					["g"] = {
 						ach(14068, {	-- Ahead of the Curve: N'Zoth, the Corruptor
-							["timeline"] = { "added 8.3.0", REMOVED_9_0_1 },
+							["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 						}),
 						i(174863, {	-- Spawn of Vexiona
-							["timeline"] = { "added 8.3.0", REMOVED_9_0_1 },
+							["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 						}),
 						i(172187),	-- Devastation's Hour
 						i(172229),	-- Dominion, Lurker Beyond Dreams
@@ -843,7 +843,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(174533),	-- Ring of Cosmic Potential
 						i(174277),	-- Lingering Psychic Shell
 						i(174103),	-- Manifesto of Madness
-						i(174055, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Thing From Beyond
+						i(174055, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Thing From Beyond
 					},
 				}),
 			}),
@@ -941,7 +941,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(174137),	-- Chitinspine Gloves
 						i(174171),	-- Dark Crystalline Girdle
 						i(174530),	-- Ring of Collective Consciousness
-						i(174053, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Overconfident
+						i(174053, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Overconfident
 					},
 				}),
 				e(2367, {	-- Shad'har the Insatiable
@@ -955,7 +955,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(174162),	-- Ego-Annihilating Grips
 						i(174130),	-- Grips of Occult Reminiscence
 						i(174531),	-- Void-Etched Band
-						i(174052, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Masochistic
+						i(174052, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Masochistic
 					},
 				}),
 				e(2373, {	-- Drest'agath
@@ -970,7 +970,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(173946),	-- Writhing Segment of Drest'agath
 						i(174532),	-- Ichorspine Loop
 						i(173946),	-- Writhing Segment of Drest'agath
-						i(174054, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Last Grasp
+						i(174054, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Last Grasp
 					},
 				}),
 				e(2370, {	-- Vexiona
@@ -1039,25 +1039,25 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 					["crs"] = { 158041 },
 					["g"] = {
 						ach(14069, {	-- Cutting Edge: N'Zoth, the Corruptor
-							["timeline"] = { "added 8.3.0", REMOVED_9_0_1 },
+							["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 						}),
 						ach(14055, {	-- Mythic: N'Zoth, the Corruptor
 							title(417),	-- the Uncorrupted
 						}),
 						ach(14040),	-- Mythic: N'Zoth the Corruptor Guild Run
-						ach(14071, bubbleDownSelf({["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {	-- Hall of Fame: N'Zoth the Corruptor (Alliance)
+						ach(14071, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } }, {	-- Hall of Fame: N'Zoth the Corruptor (Alliance)
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								title(416),	-- <Name>, Famed Slayer of N'Zoth
 							},
 						})),
-						ach(14072, bubbleDownSelf({["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {	-- Hall of Fame: N'Zoth the Corruptor (Horde)
+						ach(14072, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } }, {	-- Hall of Fame: N'Zoth the Corruptor (Horde)
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								title(416),	-- <Name>, Famed Slayer of N'Zoth
 							},
 						})),
-						i(173886, bubbleDownSelf({["timeline"] = { "added 8.3.0", REMOVED_9_0_1 } }, {	-- Bursting Void Droplet
+						i(173886, bubbleDownSelf({["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 } }, {	-- Bursting Void Droplet
 						})),
 						i(174872),	-- Ny'alotha Allseer (MOUNT!)
 						i(172187),	-- Devastation's Hour
@@ -1069,7 +1069,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { "ad
 						i(174533),	-- Ring of Cosmic Potential
 						i(174277),	-- Lingering Psychic Shell
 						i(174103),	-- Manifesto of Madness
-						i(174055, { ["timeline"] = { "created 8.3.0.33062" }}),	-- Corrupted Ring - Thing From Beyond
+						i(174055, { ["timeline"] = { CREATED_8_3_0 }}),	-- Corrupted Ring - Thing From Beyond
 					},
 				}),
 			}),

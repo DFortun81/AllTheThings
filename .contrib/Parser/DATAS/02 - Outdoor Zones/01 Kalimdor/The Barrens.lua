@@ -52,20 +52,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(382),	-- The Sludge Fen
 				exploration(388),	-- The Stagnant Oasis
 				exploration(1699),	-- Thorn Hill
-				--[[
-				exploration(2157),	-- Bael'dun Keep
-				exploration(2138),	-- Dreadmist Den
-				exploration(458),	-- Gold Road
-				exploration(720),	-- Fray Island
-				exploration(1599),	-- Mor'shan Base Camp
-				exploration(2757),	-- Shrine of the Fallen Warrior
-				exploration(1156),	-- Southern Barrens
-				exploration(1157),	-- Southern Gold Road
-				exploration(815),	-- Southfury River
-				exploration(1718),	-- The Great Lift
-				exploration(2319),	-- The Great Sea
-				exploration(401),	-- The Tidus Stair
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(470, {	-- Ratchet
@@ -662,7 +648,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131221, {	-- Marauding Cord
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5346, {	-- Orcish Battle Bow
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old rewards, quest reused
@@ -691,7 +677,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 41.8, 38.7, THE_BARRENS },
 						{ 45.0, 62.2, THE_BARRENS },
 					},
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 11,
 				}),
@@ -699,7 +685,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3292,	-- Brewmaster Drohn
 					["sourceQuest"] = 819,	-- Chen's Empty Keg (1/3)
 					["coord"] = { 62.27, 38.39, THE_BARRENS },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 11,
 					["groups"] = {
@@ -730,7 +716,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(4952, {	-- Stormstout
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 					},
 				}),
@@ -738,7 +724,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 3292,	-- Brewmaster Drohn
 					["sourceQuest"] = 821,	-- Chen's Empty Keg (2/3)
 					["coord"] = { 62.27, 38.39, THE_BARRENS },
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 11,
@@ -762,7 +748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 						i(4953, {	-- Trogg Brew / Trogg Ale [CATA+]
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 					},
 				}),
@@ -902,7 +888,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131227, {	-- Quilboar Linked Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5314, {	-- Boar Hunter's Cape
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old rewards, quest reused
@@ -988,7 +974,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 211653,	-- Grizzby
 					["sourceQuest"] = 78284,	-- Grizzby HQT
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { WETLANDS, ARATHI_HIGHLANDS },
 					["lvl"] = 20,
 					["groups"] = {
@@ -1048,7 +1034,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(5478),	-- Dig Rat Stew
 						i(5487, {	-- Recipe: Dig Rat Stew (RECIPE!)
-							["timeline"] = { "removed 4.3.0" },
+							["timeline"] = { REMOVED_4_3_0 },
 						}),
 					},
 				}),
@@ -1187,7 +1173,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 211653,	-- Grizzby
 					["sourceQuest"] = 78284,	-- Grizzby HQT
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["cost"] = { { "i", 17058, 24 } },	-- Fish Oil
 					["maps"] = { ARATHI_HIGHLANDS, BLACKFATHOM_DEEPS, DESOLACE, DUSTWALLOW_MARSH, FERALAS, HILLSBRAD_FOOTHILLS, STRANGLETHORN_VALE, SWAMP_OF_SORROWS, WETLANDS },
 					["lvl"] = 20,
@@ -1416,7 +1402,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131220, {	-- Hands of Unfocused Rage
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5351, {	-- Bounty Hunter's Ring
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old rewards, quest reused
@@ -1638,7 +1624,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131218, {	-- Cord of the Forgotten Pool
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1662,7 +1648,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						78267,	-- Shredder Turbochargers
 					},
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
@@ -1678,7 +1664,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						78267,	-- Shredder Turbochargers
 					},
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
@@ -1803,11 +1789,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["cost"] = {{ "i", 8072, 1 }},	-- Silixiz's Tower Key
 						}),
-						i(9513, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "removed 1.3.0" },
+						i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
+							["timeline"] = { REMOVED_1_3_0 },
 						}),
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "added 1.3.0", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_1_3_0, REMOVED_4_0_3 },
 						}),
 					}
 				}),
@@ -1816,14 +1802,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 880,	-- Altered Beings
 					["coord"] = { 52.26, 31.92, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						i(59557, {	-- Belt of Unwanted Aid
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(59556, {	-- Shield of Inner Glow
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(10820, {	-- Jackseed Belt
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1954,7 +1941,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 16,
 					["groups"] = {
 						objective(1, {	-- 0/1 Southsea Treasure
-							["provider"] = { "i", 7968 },	-- Southsea Treasure
+							["providers"] = {
+								{ "i",   7968 },	-- Southsea Treasure
+								{ "o", 123462 },	-- The Jewel of the Southsea
+							},
 							["coord"] = { 64.8, 45.4, THE_BARRENS },
 							["cr"] = 7168,	-- Polly
 						}),
@@ -2013,7 +2003,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131223, {	-- Smart Sandals
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5343, {	-- Barkeeper's Cloak
 							["timeline"] = { REMOVED_4_0_3 },	-- NOTE: Old reward, quest repurposed
@@ -2049,7 +2039,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 6247,	-- Doan Karhan
 					["sourceQuest"] = 78684,	-- Mysterious Traveler
 					["coord"] = { 49.2, 57.2, THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 20,
 					["groups"] = {
@@ -2221,7 +2211,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1740,	-- The Orb of Soran'ruk
 					["coord"] = { 49.2, 57.2, THE_BARRENS },
 					["description"] = "Climb each of the towers, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { REDRIDGE_MOUNTAINS, DARKSHORE },
 					["classes"] = { WARLOCK },
 					["lvl"] = 20,
@@ -2473,7 +2463,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 214208,	-- N'ora Anyheart <Scholar of Exotic Fauna>
 					["sourceQuest"] = 78908,	--  Speak to N'ora
 					["coord"] = { 62.0, 39.4, THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["OnUpdate"] = [[_.OnUpdateForCrafter]],
 					["cost"] = {
 						{ "i", 10940, 40 },	-- Strange Dust
@@ -2484,7 +2474,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = {
 						i(211420, {	-- Shifting Scale Talisman
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 					},
 				})),
@@ -2492,7 +2482,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 211653,	-- Grizzby
 					["sourceQuest"] = 78284,	-- Grizzby HQT
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["lvl"] = 20,
 					["groups"] = {
@@ -2553,7 +2543,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["questID"] = 78284,	-- Grizzby HQT
 					["qg"] = 211653,	-- Grizzby
 					["coord"] = { 61.8, 39.4, THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["lvl"] = 20,
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to N'ora
@@ -2578,7 +2568,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["questID"] = 78908,	-- N'ora HQT
 					["coord"] = { 62.0, 39.4, THE_BARRENS },
 					["description"] = "You need to loot the Handful of Shifting Scales before this quest will be displayed to you.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["OnUpdate"] = [[_.OnUpdateForCrafter]],
 					["lvl"] = 20,
 				})),
@@ -2924,7 +2914,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 49.2, 57.2, THE_BARRENS },
 						{ 79.0, 80.3, ASHENVALE },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["lvl"] = 20,
 					["groups"] = {
@@ -2989,7 +2979,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131224, {	-- Pigman Waistband
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5275, {	-- Binding Girdle
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3020,7 +3010,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131222, {	-- Nozzlepot Legwraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(5326, {	-- Flaring Baton
 							["timeline"] = { REMOVED_4_0_3 },
@@ -3277,11 +3267,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Moldy Tome
-							["provider"] = { "i", 6931 },	-- Moldy Tome
+							["providers"] = {
+								{ "i", 6931 },	-- Moldy Tome
+								{ "o", 92013 },	-- Tome of the Cabal
+							},
 							["coord"] = { 27.8, 72.9, HILLSBRAD_FOOTHILLS },
 						}),
 						objective(2, {	-- 0/1 Tattered Manuscript
-							["provider"] = { "i", 6997 },	-- Tattered Manuscript
+							["providers"] = {
+								{ "i", 6997 },	-- Tattered Manuscript
+								{ "o", 92423 },	-- Damaged Chest
+							},
 							["coord"] = { 43.5, 32.7, THOUSAND_NEEDLES },
 						}),
 					},
@@ -3412,7 +3408,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131219, {	-- Murderous Cuffs
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3468,10 +3464,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131225, {	-- Gazlowe's Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131226, {	-- Retainer Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -3664,7 +3660,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(209797, {	-- Bruuz
 					["coord"] = { 64.8, 39.8, THE_BARRENS },
 					["cost"] = {{ "i", 208773, 1 }},	-- Fishing Harpoon
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR, HUNTER },
 					["groups"] = {
 						i(208777, {	-- Rune of the Sniper
@@ -3697,14 +3693,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { PRIEST, SHAMAN },
 					["groups"] = {
 						i(208758, {	-- Earthen Rune
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { SHAMAN },
 							["groups"] = {
 								recipe(410107),	-- Engrave Pants - Way of Earth
 							},
 						}),
 						i(205932, {	-- Prophecy of a King's Demise
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PRIEST },
 							["groups"] = {
 								recipe(402849),	-- Engrave Gloves - Shadow Word - Death
@@ -4117,7 +4113,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 407453 },	-- Southsea Loot Stash
 					},
 					["coord"] = { 62, 45, THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400099),	-- Engrave Pants - Blade Dance
@@ -4149,7 +4145,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 407457 },	-- Stable Hand's Trunk
 					["description"] = "Head to Northwatch Hold. As you pass the main gate look to your left, you'll see a stable with a chest on the roof. Go up and around to the right and jump down onto the wall behind the stable. Once there you can jump to the roof and loot the chest for the Rune. You need lockpicking (80) to open this chest.",
 					--["coord"] = { , THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424984),	-- Engrave Gloves - Saber Slash
@@ -4161,7 +4157,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "o", 407312 },	-- Hungry Idol
 					},
 					["coord"] = { 57.08, 9.73, THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["groups"] = {
 						recipe(403936),	-- Engrave Gloves - Shadow Bolt Volley
@@ -4342,7 +4338,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(5051),	-- Dig Rat
 						i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
-							["timeline"] = { ADDED_3_1_0, "deleted 4.3.0.15005" },
+							["timeline"] = { ADDED_3_1_0, DELETED_4_3_0 },
 						}),
 					},
 				}),
@@ -4421,7 +4417,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(208773, {	-- Fishing Harpoon
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARRIOR, HUNTER },
 							["cost"] = 526,	-- 5s 26c
 						})),
@@ -4492,7 +4488,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
-							["timeline"] = { ADDED_3_1_0, "deleted 4.3.0.15005" },
+							["timeline"] = { ADDED_3_1_0, DELETED_4_3_0 },
 						}),
 					},
 				}),
@@ -4505,7 +4501,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["groups"] = {
 						i(20855, {	-- Design: Wicked Moonstone Ring
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 						i(6272, {	-- Pattern: Blue Linen Robe
@@ -4775,7 +4771,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if AFTER 4.2.0.10000
 				i(44977, {	-- Recipe: Dig Rat Stew (RECIPE!)
-					["timeline"] = { ADDED_3_1_0, "deleted 4.3.0.15005" },
+					["timeline"] = { ADDED_3_1_0, DELETED_4_3_0 },
 					["crs"] = {
 						39153,	-- Excavation Raider
 						3376,	-- Bael'dun Soldier
@@ -4794,7 +4790,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, i(208743, {	-- Soul of Greed
 					["description"] = "Use Drain Soul on him.",
 					["coord"] = { 56.2, 8.6, THE_BARRENS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["cr"] = 3445,	-- Supervisor Lugwizzle
 				})),

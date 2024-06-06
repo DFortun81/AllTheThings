@@ -54,10 +54,10 @@ local BRUTAL_GLADIATOR_ONUPDATE = [[function(t)
 	if not t.rwp then t.rwp = 30001; end
 end]];
 -- #endif
-root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { "added 2.0.1" } }, pvp(expansion(EXPANSION.TBC, {
+root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleDown({ ["timeline"] = { ADDED_2_0_1 } }, pvp(expansion(EXPANSION.TBC, {
 	n(PVP_HONOR, {
 		-- Players have said that the Alliance versions were available through Wrath.
-		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 4.0.1" } }, FILTERFUNC_itemID, {
+		n(FACTION_HEADER_ALLIANCE, bubbleDownFiltered({ ["timeline"] = { ADDED_2_0_1, REMOVED_4_0_1 } }, FILTERFUNC_itemID, {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {
@@ -206,7 +206,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				}),
 			},
 		})),
-		n(FACTION_HEADER_HORDE, bubbleDownFiltered({ ["timeline"] = { "added 2.0.1", "removed 3.0.1" } }, FILTERFUNC_itemID, {
+		n(FACTION_HEADER_HORDE, bubbleDownFiltered({ ["timeline"] = { ADDED_2_0_1, REMOVED_3_0_2 } }, FILTERFUNC_itemID, {
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				n(WEAPONS, {
@@ -357,7 +357,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	}),
 	n(SEASON_GLADIATOR, {
 		n(ACHIEVEMENTS, bubbleDown({
-			["timeline"] = { "added 2.0.1.6180", "removed 2.1.2" },
+			["timeline"] = { ADDED_2_0_1, REMOVED_2_1_2 },
 			-- #if BEFORE WRATH
 			["OnUpdate"] = SEASONONE_GLADIATOR_ONUPDATE,
 			-- #endif
@@ -374,15 +374,15 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 		-- #if AFTER 7.0.3
 		n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
 			["coord"] = { 33.0, 64.2, NETHERSTORM },
-			["timeline"] = { "added 4.3.0.14890" },
+			["timeline"] = { ADDED_4_3_0 },
 			["groups"] = {
 		-- #endif
 				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146651, {	-- Arsenal: Gladiator's Weapons
 							["timeline"] = { -- combined with Season 2
-								"added 7.2.0.23436",
-								"removed 7.2.5",
+								ADDED_7_2_0,
+								REMOVED_7_2_5,
 							},
 							["sym"] = {
 								{"sub", "pvp_weapons_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },
@@ -461,13 +461,13 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 						i(28319, {	-- Gladiator's War Edge
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 					}),
 					cl(DRUID, {
 						i(146609, {	-- Ensemble: Gladiator's Dragonhide Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 28443 },	-- General's Dragonhide Belt
@@ -535,7 +535,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(HUNTER, {
 						i(146608, {	-- Ensemble: Gladiator's Chain Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 28450 },	-- General's Chain Girdle
@@ -563,7 +563,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(MAGE, {
 						i(146617, {	-- Ensemble: Gladiator's Silk Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 28409 },	-- General's Silk Belt
@@ -591,7 +591,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(PALADIN, {
 						i(146616, {	-- Ensemble: Gladiator's Scaled Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 28641 },	-- General's Lamellar Belt
@@ -659,7 +659,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(PRIEST, {
 						i(146615, {	-- Ensemble: Gladiator's Satin Armor -- Confirmed August 2021 here+Outdoor BC
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 147613 },	-- General's Satin Cord
@@ -702,7 +702,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(ROGUE, {
 						i(146612, {	-- Ensemble: Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 28423 },	-- General's Leather Belt
@@ -730,7 +730,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(SHAMAN, {
 						i(146614, {	-- Ensemble: Gladiator's Ringmail Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 28629 },	-- General's Linked Girdle
@@ -798,7 +798,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(WARLOCK, {
 						i(146611, {	-- Ensemble: Gladiator's Felweave Armor -- Confirmed August 2021 here+Outdoor BC
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, WARLOCK },
 								{"merge"},	-- Merge all sub results for processing
@@ -849,7 +849,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(WARRIOR, {
 						i(146613, {	-- Ensemble: Gladiator's Plate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 28385 },	-- General's Plate Belt
@@ -886,7 +886,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(147772, {	-- General's Felweave Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(31598, {	-- General's Kodohide Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -917,7 +917,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(147771, {	-- General's Satin Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(28646, {	-- General's Scaled Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -986,7 +986,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(147615, {	-- General's Felweave Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(31594, {	-- General's Kodohide Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -1017,7 +1017,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(147613, {	-- General's Satin Cord
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(28644, {	-- General's Scaled Belt
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -1086,7 +1086,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(147616, {	-- General's Felweave Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(31595, {	-- General's Kodohide Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1112,18 +1112,16 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						i(28383, {	-- General's Plate Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						-- #if AFTER 4.0.1.12941
 						i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							["timeline"] = { "created 2.0.1", "added 4.0.1.12941", "removed 5.0.1", "added 6.0.1" },
+							["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4, ADDED_6_0_2 },
 						}),
-						-- #endif
 						i(32993, {	-- General's Ringmail Sabatons
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 						i(147614, {	-- General's Satin Slippers
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(28645, {	-- General's Scaled Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1199,109 +1197,109 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					-- Horde OG: n(12793,  {	-- Brave Stonehide
 					filter(NECK_F, {
 						i(28245, {	-- Pendant of Dominance
-							["timeline"] = { "added 2.0.3", "removed 2.5.2" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
 						}),
 						i(28244, {	-- Pendant of Triumph
-							["timeline"] = { "added 2.0.3", "removed 2.5.2" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
 						}),
 					}),
 					filter(FINGER_F, {
 						i(28247, {	-- Band of Dominance
-							["timeline"] = { "added 2.0.3", "removed 2.5.2" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
 						}),
 						i(28246, {	-- Band of Triumph
-							["timeline"] = { "added 2.0.3", "removed 2.5.2" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_2 },
 						}),
 					}),
 					filter(TRINKET_F, {
 						i(28235, {	-- Medallion of the Alliance (A) (Druid)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(28237, {	-- Medallion of the Alliance (A) (Hunter)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(28238, {	-- Medallion of the Alliance (A) (Mage)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(28236, {	-- Medallion of the Alliance (A) (Paladin)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(30349, {	-- Medallion of the Alliance (A) (Priest)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(28234, {	-- Medallion of the Alliance (A) (Rogue)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(30351, {	-- Medallion of the Alliance (A) (Shaman)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(30348, {	-- Medallion of the Alliance (A) (Warlock)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(30350, {	-- Medallion of the Alliance (A) (Warrior)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(25829, {	-- Talisman of the Alliance
-							["timeline"] = { "added 2.0.3", "removed 6.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_6_0_2 },
 						}),
 						i(28241, {	-- Medallion of the Horde (H) (Druid)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(28243, {	-- Medallion of the Horde (H) (Hunter)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(28239, {	-- Medallion of the Horde (H) (Mage)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(28242, {	-- Medallion of the Horde (H) (Paladin)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(30346, {	-- Medallion of the Horde (H) (Priest)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(28240, {	-- Medallion of the Horde (H) (Rogue)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(30345, {	-- Medallion of the Horde (H) (Shaman)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(30343, {	-- Medallion of the Horde (H) (Warlock)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(30344, {	-- Medallion of the Horde (H) (Warrior)
-							["timeline"] = { "added 2.0.3", "removed 4.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_1 },
 						}),
 						i(24551, {	-- Talisman of the Horde
-							["timeline"] = { "added 2.0.3", "removed 6.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_6_0_2 },
 						}),
 					}),
 					filter(RELICS_F, {
 						i(33945, {	-- Gladiator's Idol of Resolve
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33942, {	-- Gladiator's Idol of Steadfastness
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(28355, {	-- Gladiator's Idol of Tenacity
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33936, {	-- Gladiator's Libram of Fortitude
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(28356, {	-- Gladiator's Libram of Justice
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33948, {	-- Gladiator's Libram of Vengeance
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33939, {	-- Gladiator's Totem of Indomitability
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33951, {	-- Gladiator's Totem of Survival
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(28357, {	-- Gladiator's Totem of the Third Wind
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 					}),
 				}),
@@ -1311,11 +1309,11 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	-- #endif
 	}),
 	applyclassicphase(TBC_PHASE_TWO, n(SEASON_MERCILESS, {
-		n(ACHIEVEMENTS, bubbleDown({
-				["timeline"] = { "added 2.1.2", "removed 2.3.0.7501" },
-				-- #if BEFORE WRATH
-				["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
-				-- #endif
+		elitepvp(n(ACHIEVEMENTS, bubbleDown({
+			["timeline"] = { ADDED_2_1_2, REMOVED_2_3_0 },
+			-- #if BEFORE WRATH
+			["OnUpdate"] = MERCILESS_GLADIATOR_ONUPDATE,
+			-- #endif
 		}, {
 			ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
 				title(37),	-- Merciless Gladiator <Name>
@@ -1328,18 +1326,18 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				["description"] = "Awarded to members of the Arena teams during TBC Season 2 that were in the 0.5% bracket of their battlegroup.",
 			}),
 			ach(11707, {["timeline"] = {ADDED_7_2_0}}),	-- No Mercy (PvP Season 2)
-		})),
+		}))),
 		-- #if AFTER 7.0.3
 		n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 			["coord"] = { 33.0, 64.2, NETHERSTORM },
-			["timeline"] = { "added 7.0.3.22260" },
+			["timeline"] = { ADDED_7_0_3 },
 			["groups"] = {
 		-- #endif
 				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_weapons_ensemble", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },
 								{"sub", "pvp_weapons_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },
@@ -1421,7 +1419,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 						i(32054, {	-- Merciless Gladiator's War Edge
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(32055, {	-- Merciless Gladiator's War Staff
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
@@ -1430,7 +1428,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(DRUID, {
 						i(146619, {	-- Ensemble: Merciless Gladiator's Dragonhide Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 32810 },	-- Veteran's Dragonhide Bracers
@@ -1495,7 +1493,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(HUNTER, {
 						i(146618, {	-- Ensemble: Merciless Gladiator's Chain Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 32809 },	-- Veteran's Chain Bracers
@@ -1522,7 +1520,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(MAGE, {
 						i(146627, {	-- Ensemble: Merciless Gladiator's Silk Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 32820 },	-- Veteran's Silk Cuffs
@@ -1549,7 +1547,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(PALADIN, {
 						i(146626, {	-- Ensemble: Merciless Gladiator's Scaled Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 32813 },	-- Veteran's Lamellar Bracers
@@ -1614,7 +1612,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(PRIEST, {
 						i(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor -- Confirmed August 2021 here+Outdoor BC
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 32980 },	-- Veteran's Mooncloth Cuffs
@@ -1657,7 +1655,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(ROGUE, {
 						i(146622, {	-- Ensemble: Merciless Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 147612 },	-- Veteran's Leather Wristguards
@@ -1684,7 +1682,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(SHAMAN, {
 						i(146624, {	-- Ensemble: Merciless Gladiator's Ringmail Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 32816 },	-- Veteran's Linked Bracers
@@ -1749,7 +1747,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(WARLOCK, {
 						i(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor -- Confirmed August 2021 here+Outdoor BC
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, WARLOCK },
 								{"select", "itemID", 32811 },	-- Veteran's Dreadweave Cuffs
@@ -1792,7 +1790,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(WARRIOR, {
 						i(146623, {	-- Ensemble: Merciless Gladiator's Plate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 32818 },	-- Veteran's Plate Bracers
@@ -1837,7 +1835,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(147612, {	-- Veteran's Leather Wristguards
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(32816, {	-- Veteran's Linked Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -1888,7 +1886,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(147610, {	-- Veteran's Leather Waistband
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(32803, {	-- Veteran's Linked Girdle
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -1939,7 +1937,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(147611, {	-- Veteran's Leather Footguards
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(32791, {	-- Veteran's Linked Sabatons
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1961,7 +1959,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(147609, {	-- Veteran's Satin Slippers
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(32794, {	-- Veteran's Scaled Greaves
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1978,59 +1976,59 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					-- Horde OG: n(24520, {	-- Doris Volanthius --
 					filter(NECK_F, {
 						i(33067, {	-- Veteran's Pendant of Conquest
-							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33065, {	-- Veteran's Pendant of Dominance
-							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33068, {	-- Veteran's Pendant of Salvation
-							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33067, {	-- Veteran's Pendant of Conquest
-							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33066, {	-- Veteran's Pendant of Triumph
-							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 					}),
 					filter(FINGER_F, {
 						i(33056, {	-- Veteran's Band of Dominance
-							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33064, {	-- Veteran's Band of Salvation
-							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 						i(33057, {	-- Veteran's Band of Triumph
-							["timeline"] = { "added 2.0.3", "removed 2.5.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_2_5_4 },
 						}),
 					}),
 					filter(RELICS_F, {
 						i(33946, {	-- Merciless Gladiator's Idol of Resolve
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33943, {	-- Merciless Gladiator's Idol of Steadfastness
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33076, {	-- Merciless Gladiator's Idol of Tenacity
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33937, {	-- Merciless Gladiator's Libram of Fortitude
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33077, {	-- Merciless Gladiator's Libram of Justice
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33949, {	-- Merciless Gladiator's Libram of Vengeance
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33940, {	-- Merciless Gladiator's Totem of Indomitability
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33952, {	-- Merciless Gladiator's Totem of Survival
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33078, {	-- Merciless Gladiator's Totem of the Third Wind
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 					}),
 				}),
@@ -2040,8 +2038,8 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	-- #endif
 	})),
 	applyclassicphase(TBC_PHASE_THREE, n(SEASON_VENGEFUL, {
-		n(ACHIEVEMENTS, bubbleDown({
-			["timeline"] = { "added 2.3.0.7501", "removed 2.4.3.8600" },
+		elitepvp(n(ACHIEVEMENTS, bubbleDown({
+			["timeline"] = { ADDED_2_3_0, REMOVED_2_4_3 },
 			-- #if BEFORE WRATH
 			["OnUpdate"] = VENGEFUL_GLADIATOR_ONUPDATE,
 			-- #endif
@@ -2057,18 +2055,18 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				["description"] = "Awarded to members of the Arena teams during TBC Season 3 that were in the 0.5% bracket of their battlegroup.",
 			}),
 			ach(11708, {["timeline"] = {ADDED_7_2_0}}),	-- With a Vengeance (PvP Season 3)
-		})),
+		}))),
 		-- #if AFTER 7.0.3
 		n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 			["coord"] = { 33.0, 64.2, NETHERSTORM },
-			["timeline"] = { "added 7.0.3.22260" },
+			["timeline"] = { ADDED_7_0_3 },
 			["groups"] = {
 		-- #endif
 				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_weapons_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },
 							},
@@ -2176,7 +2174,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 						i(33765, {	-- Vengeful Gladiator's War Edge
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(33766, {	-- Vengeful Gladiator's War Staff
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
@@ -2188,7 +2186,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(DRUID, {
 						i(146629, {	-- Ensemble: Vengeful Gladiator's Dragonhide Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 33881 },	-- Vindicator's Dragonhide Bracers
@@ -2253,7 +2251,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(HUNTER, {
 						i(146628, {	-- Ensemble: Vengeful Gladiator's Chain Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 33876 },	-- Vindicator's Chain Bracers
@@ -2280,7 +2278,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(MAGE, {
 						i(146637, {	-- Ensemble: Vengeful Gladiator's Silk Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 33913 },	-- Vindicator's Silk Cuffs
@@ -2307,7 +2305,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(PALADIN, {
 						i(146636, {	-- Ensemble: Vengeful Gladiator's Scaled Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 33889 },	-- Vindicator's Lamellar Bracers
@@ -2372,7 +2370,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(PRIEST, {
 						i(146635, {	-- Ensemble: Vengeful Gladiator's Satin Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 33901 },	-- Vindicator's Mooncloth Cuffs
@@ -2415,7 +2413,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(ROGUE, {
 						i(146632, {	-- Ensemble: Vengeful Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 33891 },	-- Vindicator's Leather Belt
@@ -2442,7 +2440,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(SHAMAN, {
 						i(146634, {	-- Ensemble: Vengeful Gladiator's Ringmail Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 33894 },	-- Vindicator's Linked Bracers
@@ -2507,7 +2505,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(WARLOCK, {
 						i(146631, {	-- Ensemble: Vengeful Gladiator's Felweave Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, WARLOCK },
 								{"select", "itemID", 33883 },	-- Vindicator's Dreadweave Cuffs
@@ -2550,7 +2548,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(WARRIOR, {
 						i(146633, {	-- Ensemble: Vengeful Gladiator's Plate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 33813 },	-- Vindicator's Plate Bracers
@@ -2595,7 +2593,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(147670, {	-- Vindicator's Leather Wristguards
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 						i(33894, {	-- Vindicator's Linked Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -2724,85 +2722,85 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					-- Horde OG: n(24520, {	-- Doris Volanthius --
 					filter(NECK_F, {
 						i(33920, {	-- Vindicator's Pendant of Conquest
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33921, {	-- Vindicator's Pendant of Dominance
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						applyclassicphase(TBC_PHASE_FOUR, i(35317, {	-- Vindicator's Pendant of Reprieve
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						i(33922, {	-- Vindicator's Pendant of Salvation
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						applyclassicphase(TBC_PHASE_FOUR, i(35319, {	-- Vindicator's Pendant of Subjugation
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						i(33923, {	-- Vindicator's Pendant of Triumph
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 					}),
 					filter(FINGER_F, {
 						i(33853, {	-- Vindicator's Band of Dominance
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33918, {	-- Vindicator's Band of Salvation
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						applyclassicphase(TBC_PHASE_FOUR, i(35320, {	-- Vindicator's Band of Subjugation
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						i(33919, {	-- Vindicator's Band of Triumph
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 					}),
 					filter(RELICS_F, {
 						i(33947, {	-- Vengeful Gladiator's Idol of Resolve
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33944, {	-- Vengeful Gladiator's Idol of Steadfastness
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33841, {	-- Vengeful Gladiator's Idol of Tenacity
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33938, {	-- Vengeful Gladiator's Libram of Fortitude
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33842, {	-- Vengeful Gladiator's Libram of Justice
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33950, {	-- Vengeful Gladiator's Libram of Vengeance
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33941, {	-- Vengeful Gladiator's Totem of Indomitability
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33953, {	-- Vengeful Gladiator's Totem of Survival
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 						i(33843, {	-- Vengeful Gladiator's Totem of the Third Wind
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						}),
 					}),
 					filter(TRINKET_F, {
 						applyclassicphase(TBC_PHASE_FOUR, i(35327, {	-- Battlemaster's Alacrity
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						applyclassicphase(TBC_PHASE_FOUR, i(34579, {	-- Battlemaster's Audacity
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						applyclassicphase(TBC_PHASE_FOUR, i(34576, {	-- Battlemaster's Cruelty
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						applyclassicphase(TBC_PHASE_FOUR, i(34577, {	-- Battlemaster's Depravity
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						applyclassicphase(TBC_PHASE_FOUR, i(34578, {	-- Battlemaster's Determination
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 						applyclassicphase(TBC_PHASE_FOUR, i(34580, {	-- Battlemaster's Perseverance
-							["timeline"] = { "added 2.0.3", "removed 3.0.1" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_3_0_2 },
 						})),
 					}),
 				}),
@@ -2812,8 +2810,8 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 	-- #endif
 	})),
 	applyclassicphase(TBC_PHASE_FIVE, n(SEASON_BRUTAL, {
-		n(ACHIEVEMENTS, bubbleDown({
-			["timeline"] = { "added 2.4.3.8600", "removed 3.0.1" },
+		elitepvp(n(ACHIEVEMENTS, bubbleDown({
+			["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 },
 			-- #if BEFORE 4.0.1
 			["OnUpdate"] = BRUTAL_GLADIATOR_ONUPDATE,
 			-- #endif
@@ -2829,18 +2827,18 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 				["description"] = "Awarded to members of the Arena teams during TBC Season 4 that were in the 0.5% bracket of their battlegroup.",
 			}),
 			ach(11709, {["timeline"] = {ADDED_7_2_0}}),	-- Tough Threads (PvP Season 4)
-		})),
+		}))),
 		-- #if AFTER 7.0.3
 		n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 			["coord"] = { 33.2, 64.0, NETHERSTORM },
-			["timeline"] = { "added 7.0.3.22260" },
+			["timeline"] = { ADDED_7_0_3 },
 			["groups"] = {
 		-- #endif
 				n(PVP_GLADIATOR, {
 					n(WEAPONS, {
 						i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_weapons_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },
 							},
@@ -2957,7 +2955,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 						i(35108, {	-- Brutal Gladiator's War Edge
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35109, {	-- Brutal Gladiator's War Staff
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
@@ -2969,7 +2967,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					bubbleDown({ ["timeline"] = { ADDED_3_3_2 } }, cl(DEATHKNIGHT, {
 						i(146600, {	-- Ensemble: Brutal Gladiator's Dreadplate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, DEATHKNIGHT },
 								{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
@@ -2996,7 +2994,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(DRUID, {
 						i(146599, {	-- Ensemble: Brutal Gladiator's Dragonhide Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, DRUID },
 								{"select", "itemID", 35167 },	-- Guardian's Dragonhide Bracers
@@ -3061,7 +3059,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(HUNTER, {
 						i(146598, {	-- Ensemble: Brutal Gladiator's Chain Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, HUNTER },
 								{"select", "itemID", 35166 },	-- Guardian's Chain Bracers
@@ -3088,7 +3086,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(MAGE, {
 						i(146607, {	-- Ensemble: Brutal Gladiator's Silk Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, MAGE },
 								{"select", "itemID", 35179 },	-- Guardian's Silk Cuffs
@@ -3115,7 +3113,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(PALADIN, {
 						i(146606, {	-- Ensemble: Brutal Gladiator's Scaled Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, PALADIN },
 								{"select", "itemID", 35170 },	-- Guardian's Lamellar Bracers
@@ -3180,7 +3178,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(PRIEST, {
 						i(146605, {	-- Ensemble: Brutal Gladiator's Satin Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, PRIEST },
 								{"select", "itemID", 35174 },	-- Guardian's Mooncloth Cuffs
@@ -3223,7 +3221,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(ROGUE, {
 						i(146602, {	-- Ensemble: Brutal Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, ROGUE },
 								{"select", "itemID", 35171 },	-- Guardian's Leather Bracers
@@ -3250,7 +3248,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(SHAMAN, {
 						i(146604, {	-- Ensemble: Brutal Gladiator's Ringmail Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, SHAMAN },
 								{"select", "itemID", 35172 },	-- Guardian's Linked Bracers
@@ -3315,7 +3313,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(WARLOCK, {
 						i(146601, {	-- Ensemble: Brutal Gladiator's Felweave Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, WARLOCK },
 								{"select", "itemID", 35168 },	-- Guardian's Dreadweave Cuffs
@@ -3358,7 +3356,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					cl(WARRIOR, {
 						i(146603, {	-- Ensemble: Brutal Gladiator's Plate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["timeline"] = { "added 7.2.0.23436" },
+							["timeline"] = { ADDED_7_2_0 },
 							["sym"] = {
 								{"sub", "pvp_set_ensemble", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR, WARRIOR },
 								{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
@@ -3539,65 +3537,65 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 					}),
 					filter(NECK_F, {
 						i(35132, {	-- Guardian's Pendant of Conquest
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 						i(35133, {	-- Guardian's Pendant of Dominance
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 						i(37929, {	-- Guardian's Pendant of Reprieve
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 						i(35134, {	-- Guardian's Pendant of Salvation
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 						i(37928, {	-- Guardian's Pendant of Subjugation
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 						i(35135, {	-- Guardian's Pendant of Triumph
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 					}),
 					filter(FINGER_F, {
 						i(35129, {	-- Guardian's Band of Dominance
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 						i(35130, {	-- Guardian's Band of Salvation
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 						i(37927, {	-- Guardian's Band of Subjugation
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 						i(35131, {	-- Guardian's Band of Triumph
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 					}),
 					filter(RELICS_F, {
 						i(35019, {	-- Brutal Gladiator's Idol of Resolve
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35020, {	-- Brutal Gladiator's Idol of Steadfastness
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35021, {	-- Brutal Gladiator's Idol of Tenacity
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35039, {	-- Brutal Gladiator's Libram of Fortitude
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35040, {	-- Brutal Gladiator's Libram of Justice
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35041, {	-- Brutal Gladiator's Libram of Vengeance
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35104, {	-- Brutal Gladiator's Totem of Indomitability
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35105, {	-- Brutal Gladiator's Totem of Survival
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 						i(35106, {	-- Brutal Gladiator's Totem of the Third Wind
-							["timeline"] = { "added 2.0.3", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_0_3, REMOVED_5_0_4 },
 						}),
 					}),
 					filter(TRINKET_F, {
@@ -3614,22 +3612,22 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(37864, {	-- Medallion of the Alliance (epic)
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 						i(38589, {	-- Medallion of the Alliance (dk)
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(69861, {	-- Medallion of the Alliance (not during bc, but for bc)
-							["timeline"] = { "added 4.1.0", "removed 6.0.1" },
+							["timeline"] = { ADDED_4_1_0, REMOVED_6_0_2 },
 						}),
 						i(37865, {	-- Medallion of the Horde (epic)
-							["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 						}),
 						i(38588, {	-- Medallion of the Horde (dk)
 							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 						}),
 						i(69862, {	-- Medallion of the Horde (not during bc, but for bc)
-							["timeline"] = { "added 4.1.0", "removed 6.0.1" },
+							["timeline"] = { ADDED_4_1_0, REMOVED_6_0_2 },
 						}),
 					}),
 				}),
@@ -3688,18 +3686,4 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(46660),	-- Merciless Gladiator's Arsenal
 	}),
 });
--- #endif
--- #if AFTER TBC
--- #if ANYCLASSIC
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.TBC, {
-		-- #if BEFORE 4.0.1.12941
-		i(30491, {	-- General's Plate Sabatons / General's Plate Greaves Tier 2 [TBC]
-			["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-			["timeline"] = { "created 2.0.1", "added 4.0.1.12941", "removed 5.0.1", "added 6.0.1" },
-		}),
-		-- #endif
-	}),
-});
--- #endif
 -- #endif

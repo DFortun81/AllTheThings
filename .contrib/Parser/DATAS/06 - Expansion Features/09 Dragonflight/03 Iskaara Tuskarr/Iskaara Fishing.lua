@@ -430,7 +430,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["questID"] = 74078,
 					["g"] = {
 						i(200086),	-- Khaz'gorite-Infused Resin
-						i(200218),	-- Charred Fishing Pole
+						i(200218, {	-- Charred Fishing Pole
+							["collectible"] = false,
+							--if someone able to cache it - add description, please
+						}),
 					},
 				}),
 				n(193634, {	-- Swog'ranka <Lunker>

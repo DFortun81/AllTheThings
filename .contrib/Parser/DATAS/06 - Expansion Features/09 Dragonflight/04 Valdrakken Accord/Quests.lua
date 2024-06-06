@@ -99,6 +99,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70883, {	-- A Hand In Cultivation
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["lockCriteria"] = {5,
+							"sourceID", 182169,	-- Dragon Garden Fork
+							"sourceID", 182173,	-- Dragon Garden Hand Shovel
+							"sourceID", 182171,	-- Dragon Garden Hoe
+							"sourceID", 182172,	-- Dragon Garden Rake
+							"sourceID", 182174,	-- Dragon Garden Shovel
+						},
 						["g"] = {
 							i(199647),	-- Dragon Garden Fork
 							i(199653),	-- Dragon Garden Hand Shovel
@@ -139,6 +146,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70887, {	-- Feeling Freedom
 						["provider"] = { "n", 185561 },	-- Kaestrasz
 						["coord"] = { 46.8, 78.8, VALDRAKKEN },
+						["lockCriteria"] = {4,
+							"questID", 69215,	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
+							"questID", 69203,	-- Cliffside Wylderdrake: Plated Brow (DM!)
+							"questID", 69172,	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
+							"questID", 69177,	-- Cliffside Wylderdrake: Split Head Horns (DM!)
+						},
 						["g"] = {
 							i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
 								["timeline"] = { ADDED_10_0_7 },
@@ -936,6 +949,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 
 							-- auto learns these Drakewatcher Manuscripts
 							i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
+							i(210471, {	-- Flourishing Whimsydrake: Body Armor (DM!)
+								["timeline"] = { ADDED_10_2_7 },	-- maybe since 10.2.0?
+							}),
+							i(207760, {	-- Grotto Netherwing Drake: Armor (DM!)
+								["timeline"] = { ADDED_10_2_7 },	-- maybe since 10.2.0?
+							}),
 							i(197099),	-- Highland Drake: Armor (DM!)
 							i(197357),	-- Renewed Proto-Drake: Armor (DM!)
 							i(197588),	-- Windborne Velocidrake: Armor (DM!)
@@ -1034,7 +1053,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["g"] = {
 							i(197921),		-- Primal Infusion
 							spell(388978),	-- Ally of Dragons
-							title(474),		-- %s, Ally of Dragons (TITLE!)
+							title(474),		-- <Name>, Ally of Dragons (TITLE!)
 						},
 					}),
 					q(72704, {	-- Renown Supplies

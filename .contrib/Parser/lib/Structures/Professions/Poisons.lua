@@ -8,8 +8,6 @@ CLASSIC_POISONS = bubbleDown({ ["timeline"] = { REMOVED_3_0_2 }, ["classes"] = {
 	r(6510, {["timeline"] = {REMOVED_2_0_1}}),	-- Blinding Powder
 	r(3420),	-- Crippling Poison
 	r(3421),	-- Crippling Poison II
-	r(2818),	-- Deadly Poison
-	r(2823),	-- Deadly Poison
 	r(2835),	-- Deadly Poison
 	r(2837),	-- Deadly Poison II
 	r(11357),	-- Deadly Poison III

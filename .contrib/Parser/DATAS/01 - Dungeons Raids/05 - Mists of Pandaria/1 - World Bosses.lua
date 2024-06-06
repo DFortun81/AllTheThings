@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						i(94295),	-- Primal Egg
 					}),
 					--[[
-					i(95602, bubbleDown({ ["timeline"] = { "added 5.0.3", REMOVED_9_0_1 } }, {	-- Stormtouched Cache Pet Version -- Those Pets got removed, unknown when exactly.
+					i(95602, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_9_0_1 } }, {	-- Stormtouched Cache Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
 						i(54436),	-- Blue Clockwork Rocket Bot
 						i(44970),	-- Dun Morogh Cub
@@ -566,7 +566,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						i(94295),	-- Primal Egg
 					}),
 					--[[
-					i(90840, bubbleDown({ ["timeline"] = { "added 5.0.3", REMOVED_9_0_1 } }, {	-- Marauder's Gleaming Sack of Gold Pet Version -- Those Pets got removed, unknown when exactly.
+					i(90840, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_9_0_1 } }, {	-- Marauder's Gleaming Sack of Gold Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
 						i(10360),	-- Black Kingsnake
 						i(54436),	-- Blue Clockwork Rocket Bot
@@ -702,7 +702,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						i(94295),	-- Primal Egg
 					}),
 					--[[
-					i(90839, bubbleDown({ ["timeline"] = { "added 5.0.3", REMOVED_9_0_1 } }, {	-- Cache of Sha-Touched Gold Pet Version -- Those Pets got removed, unknown when exactly.
+					i(90839, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_9_0_1 } }, {	-- Cache of Sha-Touched Gold Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
 						i(10360),	-- Black Kingsnake
 						i(54436),	-- Blue Clockwork Rocket Bot
@@ -934,7 +934,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						i(105822),	-- Zoid's Molten Gauntlets
 					}),
 					--[[
-					i(104272, bubbleDown({ ["timeline"] = { "added 5.0.3", REMOVED_9_0_1 } }, {	-- Celestial Treasure Box Pet Version -- Those Pets got removed, unknown when exactly.
+					i(104272, bubbleDown({ ["timeline"] = { ADDED_5_0_4, REMOVED_9_0_1 } }, {	-- Celestial Treasure Box Pet Version -- Those Pets got removed, unknown when exactly.
 						i(44984),	-- Ammen Vale Lashling
 						i(10360),	-- Black Kingsnake
 						i(54436),	-- Blue Clockwork Rocket Bot

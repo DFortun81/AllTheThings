@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(TIRAGARDE_SOUND, {
 		n(QUESTS, {
 			q(49523, {	-- A Bad Deal
@@ -94,7 +94,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 					i(158253),	-- Freebooter Pantaloons
 					i(158252),	-- Outrigger Pants
 					i(158250),	-- Sea Raider's Legguards
-					i(155091),	-- Thovas-Explorer's Cape
 					i(161246, {	-- Zanchuli Woolies (confirmed)
 						["races"] = HORDE_ONLY,	-- Horde appearance with no other source, granted by learning Alliance appearance
 					}),
@@ -1504,12 +1503,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["provider"] = { "n", 149877 },	-- Tinkmaster Overspark
 				["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(167039),	-- Tri-dimensional Coordinates (QI!)
+				},
 			}),
 			q(55632, {	-- You Must Be This Height (H)
 				["sourceQuests"] = { 55630 },	-- Let's Get It Started
 				["provider"] = { "n", 149809 },	-- Gazlowe
 				["coord"] = { 65.8, 66.3, TIRAGARDE_SOUND },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(168218),	-- Tri-dimensional Coordinates (QI!)
+				},
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["lockCriteria"] = { 1, "lvl", 50 },

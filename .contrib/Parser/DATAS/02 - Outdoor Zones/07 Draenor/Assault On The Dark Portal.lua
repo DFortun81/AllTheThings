@@ -81,11 +81,11 @@ root(ROOTS.Zones, {
 					}),
 					q(35933, {	-- Azeroth's Last Stand
 						["provider"] = { "n", 78558 },	-- Archmage Khadgar
-						["coord"] = { 54.7, 48.2, 577 },
 						["sourceQuests"] = {
 							36881,	-- The Dark Portal (A)
 							34398,	-- The Dark Portal (H)
 						},
+						["coord"] = { 54.7, 48.2, 577 },
 					}),
 					q(34422, {	-- Blaze of Glory
 						["provider"] = { "n", 78559 },	-- Archmage Khadgar
@@ -304,7 +304,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 34429,	-- Kill Your Hundred
 					}),
 				}),
-				n(ZONE_DROPS, sharedData({["timeline"] = { "added 6.0", "removed 7.0" } },{
+				n(ZONE_DROPS, sharedData({["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 } },{
 					i(112436, {	-- Mismatched Cloth Gloves
 						["cr"] = 78651,	-- Shattered Hand Bonechopper
 					}),

@@ -1,4 +1,4 @@
-do
+
 local _, app = ...;
 
 -- Global locals
@@ -102,6 +102,7 @@ local cacheMapID = function(group, mapID)
 	return true
 end
 local cacheObjectID = function(group, objectID)
+	if group.__ignoreCaching then return end
 	CacheField(group, "objectID", objectID);
 end;
 local cacheQuestID = function(group, questID)
@@ -164,6 +165,7 @@ if app.Debugging and app.Version == "[Git]" then
 		CacheField(group, "headerID", headerID);
 	end
 	cacheObjectID = function(group, objectID)
+		if group.__ignoreCaching then return end
 		if not app.ObjectNames[objectID] then
 			print("Object Missing Name ", objectID);
 			app.ObjectNames[objectID] = "Object #" .. objectID;
@@ -178,11 +180,11 @@ local providerTypeConverters = {
 	["o"] = cacheObjectID,
 	["c"] = function(group, providerID)
 		CacheField(group, "currencyIDAsCost", providerID);
-		CacheField(group, "currencyID", providerID);
+		--CacheField(group, "currencyID", providerID);
 	end,
 	["i"] = function(group, providerID)
 		CacheField(group, "itemIDAsCost", providerID);
-		CacheField(group, "itemID", providerID);
+		--CacheField(group, "itemID", providerID);
 	end,
 	["g"] = function(group, providerID)
 		-- Do nothing, nothing to cache.
@@ -439,6 +441,7 @@ local fieldConverters = {
 	["garrisonBuildingID"] = function(group, value)
 		CacheField(group, "garrisonBuildingID", value);
 	end,
+	["guildAchievementID"] = cacheAchievementID,
 	["headerID"] = cacheHeaderID,
 	["heirloomUnlockID"] = function(group, value)
 		CacheField(group, "heirloomUnlockID", value);
@@ -587,6 +590,11 @@ local fieldConverters = {
 			CacheField(group, "sourceQuestID", value[i]);
 		end
 	end,
+	["sourceAchievements"] = function(group, value)
+		for i=1,#value,1 do
+			CacheField(group, "sourceAchievementID", value[i]);
+		end
+	end,
 
 	-- Localization Helpers
 	["zone-artIDs"] = function(group, value)
@@ -712,6 +720,7 @@ if app.IsRetail then
 	fieldConverters.drakewatcherManuscriptID = fieldConverters.itemID;
 	fieldConverters.heirloomID = fieldConverters.itemID;
 	tinsert(postscripts, function()
+		if #cacheGroupForModItemID == 0 then return end
 		local modItemID
 		-- app.PrintDebug("caching for modItemID",#cacheGroupForModItemID)
 		for _,group in ipairs(cacheGroupForModItemID) do
@@ -877,9 +886,18 @@ local function SearchForObject(field, id, require, allowMultiple)
 	-- * none - accept any object which is cached against the specific field value
 	-- allowMultiple - Whether to return multiple matching objects as an array (within the 'require' restriction)
 	local fcache, count
+	-- Direct search by modItemID means not to allow an itemID fallback in the search
+	-- however, base itemIDs are not cached by modItemID, so a modItemID search on a base itemID
+	-- should instead be considered as an itemID search
+	if field == "modItemID" then
+		local idBase = math_floor(id)
+		if idBase == id then
+			id = idBase
+			field = "itemID"
+		end
 	-- Items are cached by base ItemID and ModItemID, so when searching by ItemID, use ModItemID for
-	-- match requirement accuracy
-	if field == "itemID" then
+	-- match requirement accuracy if possible, with fallback to base itemID
+	elseif field == "itemID" then
 		-- try searching by modItemID cache, any results are the EXACT id searched for
 		fcache = GetRawField("modItemID", id)
 		if fcache and #fcache > 0 then
@@ -896,8 +914,8 @@ local function SearchForObject(field, id, require, allowMultiple)
 		end
 	end
 	fcache = fcache or GetRawField(field, id)
-	count = fcache and #fcache;
-	if not count or count == 0 then
+	count = fcache and #fcache or 0;
+	if count == 0 then
 		-- app.PrintDebug("SFO",field,id,require,"0~")
 		return allowMultiple and app.EmptyTable or nil
 	end
@@ -971,7 +989,9 @@ local function SearchForObject(field, id, require, allowMultiple)
 	local results = (#keyMatch > 0 and keyMatch) or (#fieldMatch > 0 and fieldMatch) or (#match > 0 and match) or app.EmptyTable
 	-- if only 1 or no result, no point to try filtering
 	if #results <= 1 then return allowMultiple and results or results[1] end
-	results = GetFilteredResults(results)
+	-- try out accessibility sort on multiple results instead of filtering
+	app.Sort(results, app.SortDefaults.Accessibility)
+	-- results = GetFilteredResults(results)
 	return allowMultiple and results or results[1]
 end
 
@@ -1233,4 +1253,3 @@ app.VerifyCache = VerifyCache;
 app.VerifyRecursion = VerifyRecursion;
 -- this table is deleted once used
 app.__CacheQuestTriggers = QuestTriggers;
-end

@@ -135,7 +135,7 @@ root("Achievements", {
 				1262,	-- Loremaster of Outland (A)
 				41,		-- Loremaster of Northrend (A)
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4.16016" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster
@@ -149,7 +149,7 @@ root("Achievements", {
 				1274,	-- Loremaster of Outland (H)
 				1360,	-- Loremaster of Northrend (H)
 			}},
-			["timeline"] = { ADDED_3_0_2, "removed 5.0.4.16016" },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				title(93),	-- Loremaster
@@ -171,7 +171,7 @@ root("Achievements", {
 				12561,	-- Explore Nazmir
 				12560,	-- Explore Vol'dun
 			}},
-			["timeline"] = { "added 8.0.1.27326" },
+			["timeline"] = { ADDED_8_0_1 },
 		})),
 		applyclassicphase(LEGION_PHASE_ONE, ach(11188, {	-- Broken Isles Explorer
 			-- Meta Achievement
@@ -182,7 +182,7 @@ root("Achievements", {
 				10668,	-- Explore Stormheim
 				10669,	-- Explore Suramar
 			}},
-			["timeline"] = { "added 7.0.3.21570" },
+			["timeline"] = { ADDED_7_0_3 },
 		})),
 		applyclassicphase(CATA_PHASE_ONE, ach(4868, {	-- Cataclysm Explorer [7.0.3] / Explore Cataclysm
 			-- Meta Achievement
@@ -205,7 +205,7 @@ root("Achievements", {
 				8941,	-- Explore Spires of Arak
 				8940,	-- Explore Talador
 			}},
-			["timeline"] = { "added 6.0.1.18297" },
+			["timeline"] = { ADDED_6_0_2 },
 		})),
 		ach(42, {	-- Eastern Kingdoms Explorer [7.0.3] / Explore Eastern Kingdoms
 			-- #if AFTER WRATH
@@ -330,7 +330,7 @@ root("Achievements", {
 			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_OUTLAND_EXP .. [[); end]],
 			-- #endif
-			["timeline"] = { "added 2.0.1" },
+			["timeline"] = { ADDED_2_0_1 },
 		})),
 		applyclassicphase(MOP_PHASE_ONE, ach(6974, {	-- Pandaria Explorer [7.0.3] / Explore Pandaria
 			-- Meta Achievement
@@ -343,7 +343,7 @@ root("Achievements", {
 				6979,	-- Explore Vale of Eternal Blossoms
 				6969,	-- Explore Valley of the Four Winds
 			}},
-			["timeline"] = { "added 5.0.4.15890" },
+			["timeline"] = { ADDED_5_0_4 },
 		})),
 		applyclassicphase(WRATH_PHASE_ONE, ach(46, {	-- Universal Explorer [7.0.3] / World Explorer
 			-- Meta Achievement
@@ -547,7 +547,7 @@ root("Achievements", {
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = {
 				i(211082, {	-- Arfus
-					["timeline"] = { "added 3.4.3.51470" },
+					["timeline"] = { ADDED_3_4_3 },
 				}),
 			},
 		})),
@@ -572,7 +572,7 @@ root("Achievements", {
 			["races"] = HORDE_ONLY,
 			["groups"] = {
 				i(211082, {	-- Arfus
-					["timeline"] = { "added 3.4.3.51470" },
+					["timeline"] = { ADDED_3_4_3 },
 				}),
 			},
 		})),
@@ -662,7 +662,7 @@ root("Achievements", {
 						end
 					end]],
 					-- #else
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					-- #endif
 				}),
 			},
@@ -706,7 +706,7 @@ root("Achievements", {
 						end
 					end]],
 					-- #else
-					["timeline"] = { "removed 3.1.0" },
+					["timeline"] = { REMOVED_3_1_0 },
 					-- #endif
 				}),
 			},
@@ -806,49 +806,49 @@ root("Achievements", {
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(4784, {	-- Emblematic [A]
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["races"] = ALLIANCE_ONLY,
 			["rank"] = 1,
 		}),
 		ach(4785, {	-- Emblematic [H]
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["races"] = HORDE_ONLY,
 			["rank"] = 1,
 		}),
 		ach(3838, {	-- Dungeon & Raid Emblem
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 1,
 		}),
 		ach(3839, {	-- 25 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 25,
 		}),
 		ach(3840, {	-- 50 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 50,
 		}),
 		ach(3841, {	-- 100 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 100,
 		}),
 		ach(3842, {	-- 250 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 250,
 		}),
 		ach(3843, {	-- 500 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 500,
 		}),
 		ach(3844, {	-- 1000 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 1000,
 		}),
 		ach(3876, {	-- 1500 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 1500,
 		}),
 		ach(4316, {	-- 2500 Dungeon & Raid Emblems
-			["timeline"] = { ADDED_3_3_3, "removed 4.0.1" },
+			["timeline"] = { ADDED_3_3_3, REMOVED_4_0_1 },
 			["rank"] = 2500,
 		}),
 	}),
@@ -871,7 +871,7 @@ root("Achievements", {
 			}),
 			applyclassicphase(TBC_PHASE_ONE, ach(124, {	-- Master Cook
 				["spellID"] = 33359,	-- Cooking (Master)
-				["timeline"] = { "added 2.0.1" },
+				["timeline"] = { ADDED_2_0_1 },
 				["requireSkill"] = COOKING,
 				["rank"] = 5,
 			})),
@@ -1015,10 +1015,10 @@ root("Achievements", {
 	-- #if AFTER 4.2.0
 	achcat(ACHIEVEMENT_CATEGORY_PET_BATTLES, {
 		petbattle(ach(5875, {	-- Littlest Pet Shop (150)
-			["timeline"] = { "added 4.2.0" },
+			["timeline"] = { ADDED_4_2_0 },
 			["groups"] = {
 				i(54810, {	-- Celestial Dragon (PET!)
-					["timeline"] = { CREATED_3_3_0, "added 4.2.0" },
+					["timeline"] = { CREATED_3_3_0, ADDED_4_2_0 },
 				}),
 			},
 		})),
@@ -1029,7 +1029,7 @@ root("Achievements", {
 -- #if BEFORE 4.2.0
 root("NeverImplemented", {
 	i(54810, {	-- Celestial Dragon (PET!)
-		["timeline"] = { CREATED_3_3_0, "added 4.2.0" },
+		["timeline"] = { CREATED_3_3_0, ADDED_4_2_0 },
 	}),
 });
 -- #endif

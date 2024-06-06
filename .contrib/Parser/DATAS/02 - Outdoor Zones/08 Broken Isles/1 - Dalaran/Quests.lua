@@ -137,16 +137,16 @@ root(ROOTS.Zones, {
 				q(49472, {	-- A Titanic Effort
 					["sourceQuest"] = 49474,	-- The Cursed Shard
 					["timeline"] = {
-						"added 7.3.5",
-						"removed 8.0"
+						ADDED_7_3_5,
+						REMOVED_8_0_1
 					},
 				}),
 				q(49473, {	-- A Titanic Effort
 					["sourceQuest"] = 49472,	-- A Titanic Effort
 					["repeatable"] = true,
 					["timeline"] = {
-						"added 7.3.5",
-						"removed 8.0"
+						ADDED_7_3_5,
+						REMOVED_8_0_1
 					},
 				}),
 				q(47041, {	-- Affliction: The Twisted Twin
@@ -1072,8 +1072,8 @@ root(ROOTS.Zones, {
 					["provider"] = { "i", 154880 },	-- Cursed Shard
 					["isBreadcrumb"] = true,
 					["timeline"] = {
-						"added 7.3.5",
-						"removed 8.0"
+						ADDED_7_3_5,
+						REMOVED_8_0_1
 					}
 				}),
 				q(42970, {	-- The Diamond King

@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29659, {	-- Lost Treasure
 					["description"] = "Automatically provided after killing either Gatewatcher.",
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- 0/1 Blinding Fury
@@ -38,7 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29658, {	-- The Calculator
 					["sourceQuest"] = 29657,	-- With Great Power, Comes Great Responsibility
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Pathaleon the Calculator slain
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(29657, {	-- With Great Power, Comes Great Responsibility
 					["description"] = "Automatically provided upon starting the instance.",
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
 						objective(1, {	-- Mechano-Lord Capacitus slain
@@ -93,11 +93,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(28250),	-- Vestia's Pauldrons of Inner
 					-- #if BEFORE MOP
 					i(28248, {	-- Totem of the Void
-						["timeline"] = { "removed 5.0.4" },
+						["timeline"] = { REMOVED_5_0_4 },
 					}),
 					-- #endif
 					i(72663, {	-- Blinding Fury
-						["timeline"] = { "added 4.3.0.14942" },
+						["timeline"] = { ADDED_4_3_0 },
 					}),
 				},
 			}),
@@ -110,7 +110,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(28253),	-- Plasma Rat's Hyper-Scythe
 						i(28256),	-- Thoriumweave Cloak
 						i(28254),	-- Warp Engineer's Prismatic Chain
-						i(35582),	-- Schematic: Rocket Boots Xtreme Lite
+						i(35582, {	-- Schematic: Rocket Boots Xtreme Lite (RECIPE!)
+							["timeline"] = { ADDED_2_4_0 },
+						}),
 					},
 				}),
 				e(564, {	-- Nethermancer Sepethrea
@@ -128,7 +130,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						i(28263),	-- Stellaris
 						-- #if BEFORE MOP
 						i(28258, {	-- Nethershrike
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 						i(22920),	-- Recipe: Major Fire Protection Potion (RECIPE!)
@@ -207,7 +209,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(28253),	-- Plasma Rat's Hyper-Scythe
 							i(28256),	-- Thoriumweave Cloak
 							i(28254),	-- Warp Engineer's Prismatic Chain
-							i(35582),	-- Schematic: Rocket Boots Xtreme Lite
+							i(35582, {	-- Schematic: Rocket Boots Xtreme Lite (RECIPE!)
+								["timeline"] = { ADDED_2_4_0 },
+							}),
 						},
 					}),
 					e(564, {	-- Nethermancer Sepethrea
@@ -225,7 +229,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 							i(28263),	-- Stellaris
 							-- #if BEFORE MOP
 							i(28258, {	-- Nethershrike
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(22920),	-- Recipe: Major Fire Protection Potion (RECIPE!)

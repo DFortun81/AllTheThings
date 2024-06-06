@@ -9,6 +9,7 @@ local L = app.L;
 
 local AssignChildren, CloneClassInstance, GetRelativeValue = app.AssignChildren, app.CloneClassInstance, app.GetRelativeValue;
 local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject;
+local GetTimerunningSeasonEventID = app.Modules.Events.GetTimerunningSeason;
 
 -- Abbreviations
 L.ABBREVIATIONS[L.UNSORTED .. " %> " .. L.UNSORTED] = "|T" .. app.asset("WindowIcon_Unsorted") .. ":0|t " .. L.SHORTTITLE .. " %> " .. L.UNSORTED;
@@ -582,7 +583,11 @@ local function GetSavedText(state)
 end
 local function GetCollectibleIcon(data, iconOnly)
 	if data.collectible then
-		return iconOnly and GetCollectionIcon(data.collected) or GetCollectionText(data.collected);
+		local collected = data.collected
+		if not collected and data.collectedwarband then
+			return iconOnly and L["COLLECTED_WARBAND_ICON"] or L["COLLECTED_WARBAND"];
+		end
+		return iconOnly and GetCollectionIcon(collected) or GetCollectionText(collected);
 	end
 end
 local function GetTrackableIcon(data, iconOnly, forSaved)
@@ -980,6 +985,8 @@ local function CreateObject(t, rootOnly)
 		end
 		if t.mapID then
 			t = app.CreateMap(t.mapID, t);
+		elseif t.explorationID then
+			t = app.CreateExploration(t.explorationID, t);
 		elseif t.sourceID then
 			t = app.CreateItemSource(t.sourceID, t.itemID, t);
 		elseif t.encounterID then
@@ -1014,15 +1021,19 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateFaction(t.factionID, t);
 		elseif t.heirloomID then
 			t = app.CreateHeirloom(t.heirloomID, t);
-		elseif t.itemID then
+		elseif t.itemID or t.modItemID then
+			local itemID, modID, bonusID = app.GetItemIDAndModID(t.modItemID or t.itemID)
+			t.itemID = itemID
+			t.modID = modID
+			t.bonusID = bonusID
 			if t.toyID then
-				t = app.CreateToy(t.itemID, t);
+				t = app.CreateToy(itemID, t);
 			elseif t.runeforgePowerID then
 				t = app.CreateRuneforgeLegendary(t.runeforgePowerID, t);
 			elseif t.conduitID then
 				t = app.CreateConduit(t.conduitID, t);
 			else
-				t = app.CreateItem(t.itemID, t);
+				t = app.CreateItem(itemID, t);
 			end
 		elseif t.npcID or t.creatureID then
 			t = app.CreateNPC(t.npcID or t.creatureID, t);
@@ -1479,6 +1490,9 @@ app.RecreateObject = function(t)
 	return obj;
 end
 
+local GetFixedItemSpecInfo, GetSpecsString, GetGroupItemIDWithModID, GetItemIDAndModID, GroupMatchesParams
+	= app.GetFixedItemSpecInfo, app.GetSpecsString, app.GetGroupItemIDWithModID, app.GetItemIDAndModID, app.GroupMatchesParams
+
 -- Symlink Lib
 do
 local select, tremove, unpack =
@@ -1529,6 +1543,11 @@ local ResolveFunctions = {
 		local Search = SearchForObject
 		for i=1,vals do
 			val = select(i, ...);
+			if field == "modItemID" then
+				-- this is really dumb but direct raw values don't 'always' properly match generated values...
+				-- but splitting the value apart and putting it back together searches accurately
+				val = GetGroupItemIDWithModID(nil, GetItemIDAndModID(val))
+			end
 			cache = Search(field, val, "field", true);
 			if cache and #cache > 0 then
 				ArrayAppend(searchResults, cache)
@@ -2316,6 +2335,7 @@ end	-- Symlink Lib
 
 
 -- Search Results Lib
+do
 local searchCache, working = {}, nil;
 app.GetCachedData = function(cacheKey, method, ...)
 	if IsRetrieving(cacheKey) then return; end
@@ -2338,44 +2358,43 @@ app.events.PLAYER_DIFFICULTY_CHANGED = app.WipeSearchCache;
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 app.AddEventHandler("OnThingCollected", app.WipeSearchCache);
 app.AddEventHandler("OnThingRemoved", app.WipeSearchCache);
-
-local GetFixedItemSpecInfo, GetSpecsString, GetGroupItemIDWithModID, GetItemIDAndModID, GroupMatchesParams
-	= app.GetFixedItemSpecInfo, app.GetSpecsString, app.GetGroupItemIDWithModID, app.GetItemIDAndModID, app.GroupMatchesParams
+app.AddEventHandler("OnSettingsRefreshed", app.WipeSearchCache);
+end
 
 do
 local ContainsLimit, ContainsExceeded;
-local function BuildContainsInfo(item, entries, indent, layer)
-	local g = item and item.g;
-	if g then
-		local Indicator = app.GetIndicatorIcon;
-		for _,group in ipairs(g) do
-			-- If there's progress to display, then let's summarize a bit better.
-			if group.visible then
-				-- Count it, but don't actually add it to entries if it meets the limit
-				if #entries >= ContainsLimit then
-					ContainsExceeded = ContainsExceeded + 1;
-				else
-					-- Insert into the display.
-					-- app.PrintDebug("INCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
-					local o = { group = group, right = GetProgressTextForRow(group) };
-					local indicator = Indicator(group);
-					o.prefix = indicator and (indent:sub(4) .. "|T" .. indicator .. ":0|t ") or indent;
-					tinsert(entries, o);
-				end
+local Indicator = app.GetIndicatorIcon;
+local MaxLayer = 4
+local Indents = {
+	"  ",
+}
+for i=2,MaxLayer do
+	Indents[i] = Indents[i-1].."  "
+end
+local function BuildContainsInfo(subgroups, entries, indent, layer)
+	if not subgroups or #subgroups == 0 then return end
 
-				-- Only go down one more level.
-				if layer < 4
-					-- if there are sub groups
-					and group.g and #group.g > 0
-					-- not for things with a parent unless the parent has no difficultyID
-					-- and (not group.parent or not group.parent.difficultyID)
-					-- not sure what situation this logic was expecting to prevent... bosses within difficulties it seems, which isn't wanted...
-					then
-					BuildContainsInfo(group, entries, indent .. "  ", layer + 1);
-				end
-				-- else
-				-- 	app.PrintDebug("EXCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
+	for _,group in ipairs(subgroups) do
+		-- If there's progress to display, then let's summarize a bit better.
+		if group.visible then
+			-- Count it, but don't actually add it to entries if it meets the limit
+			if #entries >= ContainsLimit then
+				ContainsExceeded = ContainsExceeded + 1;
+			else
+				-- Insert into the display.
+				-- app.PrintDebug("INCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
+				local o = { group = group, right = GetProgressTextForRow(group) };
+				local indicator = Indicator(group);
+				o.prefix = indicator and (Indents[indent]:sub(3) .. "|T" .. indicator .. ":0|t ") or Indents[indent]
+				entries[#entries + 1] = o
 			end
+
+			-- Only go down one more level.
+			if layer < MaxLayer then
+				BuildContainsInfo(group.g, entries, indent + 1, layer + 1);
+			end
+			-- else
+			-- 	app.PrintDebug("EXCLUDE",app.Debugging,GetProgressTextForRow(group),group.hash,group.key,group.key and group[group.key])
 		end
 	end
 end
@@ -2391,12 +2410,13 @@ local TooltipSourceFields = {
 local InitialCachedSearch;
 local SourceLocationSettingsKey = setmetatable({
 	creatureID = "SourceLocations:Creatures",
+	npcID = "SourceLocations:Creatures",
 }, {
 	__index = function(t, key)
 		return "SourceLocations:Things";
 	end
 });
-local UnobtainableTexture = "|T" .. app.asset("status-unobtainable.blp") .. ":0|t";
+local UnobtainableTexture = " |T" .. app.asset("status-unobtainable.blp") .. ":0|t";
 local function HasCost(group, idType, id)
 	-- check if the group has a cost which includes the given parameters
 	if group.cost and type(group.cost) == "table" then
@@ -2439,90 +2459,126 @@ local function GetRelativeDifficulty(group, difficultyID)
 	end
 end
 
+local GetRawField = app.GetRawField
+local SourceSearcher = setmetatable({
+	itemID = function(field, id)
+		local results = GetRawField(field, id)
+		local costResults = GetRawField("itemIDAsCost", id)
+		if results or costResults then return ArrayAppend({}, results, costResults) end
+		local baseItemID = GetItemIDAndModID(id)
+		results = GetRawField(field, baseItemID)
+		costResults = GetRawField("itemIDAsCost", baseItemID)
+		if results or costResults then return ArrayAppend({}, results, costResults) end
+	end,
+	currencyID = function(field, id)
+		local results = GetRawField(field, id)
+		local costResults = GetRawField("currencyIDAsCost", id)
+		if results or costResults then return ArrayAppend({}, results, costResults) end
+	end
+},{
+	__index = function(t, field)
+		return GetRawField
+	end
+})
+
 local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	-- Create a list of sources
 	-- app.PrintDebug("SourceLocations",paramA,SourceLocationSettingsKey[paramA])
-	if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
-		local temp, text, parent = {}, nil, nil;
-		local unfiltered, right = {}, nil;
-		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
-		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
-		local FilterSettings, FilterUnobtainable, FilterCharacter, FirstParent
-			= app.RecursiveGroupRequirementsFilter, app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
-		local abbrevs = L.ABBREVIATIONS;
-		local sourcesToShow
-		-- paramB is the modItemID for itemID searches, so we may have to fallback to the base itemID if nothing sourced for the modItemID
-		local allReferences = app.GetRawField(paramA, paramB) or (paramA == "itemID" and app.GetRawField(paramA, GetItemIDAndModID(paramB))) or app.EmptyTable
-		-- app.PrintDebug("Sources count",#allReferences,paramA,paramB)
-		for _,j in ipairs(allReferences) do
-			parent = j.parent;
-			-- app.PrintDebug("source:",app:SearchLink(j),parent and parent.parent,showCompleted or not app.IsComplete(j),not HasCost(j, paramA, paramB))
-			if parent and parent.parent
-				and (showCompleted or not app.IsComplete(j))
-				and not HasCost(j, paramA, paramB)
-			then
-				text = app.GenerateSourcePathForTooltip(parent);
-				-- app.PrintDebug("SourceLocation",text,FilterUnobtainable(j),FilterSettings(parent),FilterCharacter(parent))
-				if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
-					-- doesn't meet current unobtainable filters from the Thing itself
-					if not FilterUnobtainable(j) then
-						tinsert(unfiltered, { text, UnobtainableTexture });
+	if not app.ThingKeys[paramA] then return end
+	local settings = app.Settings
+	if not settings:GetTooltipSetting("SourceLocations") or not settings:GetTooltipSetting(SourceLocationSettingsKey[paramA]) then return end
+
+	local text, parent, right
+	local character, unavailable, unobtainable = {}, {}, {}
+	local showUnsorted = settings:GetTooltipSetting("SourceLocations:Unsorted");
+	local showCompleted = settings:GetTooltipSetting("SourceLocations:Completed");
+	local FilterSettings, FilterUnobtainable, FilterCharacter, FirstParent
+		= app.RecursiveGroupRequirementsFilter, app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
+	local abbrevs = L.ABBREVIATIONS;
+	local sourcesToShow
+	-- paramB is the modItemID for itemID searches, so we may have to fallback to the base itemID if nothing sourced for the modItemID
+	-- TODO: Rings from raid showing all difficulties, need fallback matching for items... modItemID, modID, itemID
+	local allReferences = SourceSearcher[paramA](paramA,paramB) or app.EmptyTable
+	-- app.PrintDebug("Sources count",#allReferences,paramA,paramB,GetItemIDAndModID(paramB))
+	for _,j in ipairs(allReferences) do
+		parent = j.parent;
+		-- app.PrintDebug("source:",app:SearchLink(j),parent and parent.parent,showCompleted or not app.IsComplete(j),not HasCost(j, paramA, paramB))
+		if parent and parent.parent
+			and (showCompleted or not app.IsComplete(j))
+			and not HasCost(j, paramA, paramB)
+		then
+			text = app.GenerateSourcePathForTooltip(parent);
+			-- app.PrintDebug("SourceLocation",text,FilterUnobtainable(j),FilterSettings(parent),FilterCharacter(parent))
+			if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
+				-- doesn't meet current unobtainable filters from the Thing itself
+				if not FilterUnobtainable(j) then
+					unobtainable[#unobtainable + 1] = text..UnobtainableTexture
+				else
+					-- something user would currently see in a list or not
+					sourcesToShow = FilterSettings(parent) and character or unavailable
+					-- from obtainable, different character source
+					if not FilterCharacter(parent) then
+						sourcesToShow[#sourcesToShow + 1] = text.." |TInterface\\FriendsFrame\\StatusIcon-Away:0|t"
 					else
-						-- something user would currently see in a list or not
-						sourcesToShow = FilterSettings(parent) and temp or unfiltered
-						-- from obtainable, different character source
-						if not FilterCharacter(parent) then
-							tinsert(sourcesToShow, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+						-- check if this needs a status icon even though it's being shown
+						right = GetUnobtainableTexture(FirstParent(j, "e") or FirstParent(j, "u") or j)
+							or (j.rwp and app.asset("status-prerequisites"))
+						if right then
+							sourcesToShow[#sourcesToShow + 1] = text.." |T" .. right .. ":0|t"
 						else
-							-- check if this needs an unobtainable icon even though it's being shown
-							right = GetUnobtainableTexture(FirstParent(j, "e") or FirstParent(j, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
-							tinsert(sourcesToShow, { text, right and ("|T" .. right .. ":0|t") });
+							sourcesToShow[#sourcesToShow + 1] = text
 						end
 					end
 				end
 			end
 		end
-		-- app.PrintDebug("Sources count",#temp,#unfiltered)
-		-- if in Debug or no sources visible, add any unfiltered sources
-		if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
-			for _,data in ipairs(unfiltered) do
-				tinsert(temp, data);
+	end
+	-- app.PrintDebug("Sources count",#character,#unobtainable)
+	-- if in Debug, add any unobtainable & unavailable sources
+	if app.MODE_DEBUG then
+		-- app.PrintDebug("+unavailable",#unavailable,"+unobtainable",#unobtainable)
+		app.ArrayAppend(character, unavailable, unobtainable)
+	elseif #character == 0 and not (paramA == "creatureID" or paramA == "encounterID") then
+		-- no sources available to the character, add any unavailable/unobtainable sources
+		if #unavailable > 0 then
+			-- app.PrintDebug("+unavailable",#unavailable)
+			app.ArrayAppend(character, unavailable)
+		elseif #unobtainable > 0 then
+			-- app.PrintDebug("+unobtainable",#unobtainable)
+			app.ArrayAppend(character, unobtainable)
+		end
+	end
+	if #character > 0 then
+		local listing = {};
+		local maximum = settings:GetTooltipSetting("Locations");
+		local count = 0;
+		app.Sort(character, app.SortDefaults.Strings);
+		for _,text in ipairs(character) do
+			-- since the strings are sorted, we only need to add ones that are not equal to the previously-added one
+			-- instead of checking all existing strings
+			if listing[#listing] ~= text then
+				count = count + 1;
+				if count <= maximum then
+					listing[#listing + 1] = text
+					-- app.PrintDebug("add source",text)
+				end
+			-- else app.PrintDebug("exclude source by last match",text)
 			end
 		end
-		if #temp > 0 then
-			local listing = {};
-			local maximum = app.Settings:GetTooltipSetting("Locations");
-			local count = 0;
-			app.Sort(temp, app.SortDefaults.IndexOneStrings);
-			for _,data in ipairs(temp) do
-				text = data[1];
-				right = data[2];
-				if right and right:len() > 0 then
-					-- app.PrintDebug("text adj",text,"++",right)
-					text = text .. " " .. right;
-				end
-				if not contains(listing, text) then
-					count = count + 1;
-					if count <= maximum then
-						tinsert(listing, text);
-						-- app.PrintDebug("add source",text)
-					end
-				-- else app.PrintDebug("exclude source by contains",text)
-				end
-			end
-			if count > maximum then
-				tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
-			end
-			local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
-			for _,text in ipairs(listing) do
-				for source,replacement in pairs(abbrevs) do
-					text = text:gsub(source, replacement);
-				end
-				if not working and IsRetrieving(text) then working = true; end
-				local left, right = DESCRIPTION_SEPARATOR:split(text);
-				tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
-			end
+		if count > maximum then
+			listing[#listing + 1] = (L.AND_OTHER_SOURCES):format(count - maximum)
 		end
+		local wrap = settings:GetTooltipSetting("SourceLocations:Wrapping");
+		local working
+		for _,text in ipairs(listing) do
+			for source,replacement in pairs(abbrevs) do
+				text = text:gsub(source, replacement);
+			end
+			if not working and IsRetrieving(text) then working = true; end
+			local left, right = DESCRIPTION_SEPARATOR:split(text);
+			tooltipInfo[#tooltipInfo + 1] = { left = left, right = right, wrap = wrap }
+		end
+		return working
 	end
 end
 app.AddSourceLinesForTooltip = AddSourceLinesForTooltip
@@ -2672,62 +2728,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		itemID = GetItemIDAndModID(paramB) or paramB;
 	end
 
-	-- Determine if this tooltip needs more work the next time it refreshes.
-	local working, tooltipInfo = false, {};
-
-	if isTopLevelSearch then
-		AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
-
-		-- Shared Appearances and Stuff
-		if itemID then
-			-- Merge the source group for all matching Sources of the search results
-			local sourceGroup;
-			for i,j in ipairs(group.g or group) do
-				-- app.PrintDebug("sourceGroup?",j.key,j.key and j[j.key],j.modItemID)
-				if sourceID and GroupMatchesParams(j, "sourceID", sourceID) then
-					-- app.PrintDebug("sourceID match",sourceID)
-					if sourceGroup then app.MergeProperties(sourceGroup, j)
-					else sourceGroup = app.__CreateObject(j); end
-				elseif GroupMatchesParams(j, paramA, paramB) then
-					-- app.PrintDebug("exact match",paramA,paramB)
-					if sourceGroup then app.MergeProperties(sourceGroup, j, true)
-					else sourceGroup = app.__CreateObject(j); end
-				elseif GroupMatchesParams(j, paramA, paramB, true) then
-					-- app.PrintDebug("match",paramA,paramB)
-					if sourceGroup then app.MergeProperties(sourceGroup, j, true)
-					else sourceGroup = app.__CreateObject(j); end
-				end
-			end
-
-			if not sourceGroup then sourceGroup = {}; end
-			-- Show the unobtainable source text, if necessary.
-			if sourceGroup.key then
-				-- Acquire the SourceID if it hadn't been determined yet.
-				if not sourceID and sourceGroup.link then
-					sourceID = app.GetSourceID(sourceGroup.link) or sourceGroup.sourceID;
-				end
-			else
-				sourceGroup.missing = true;
-			end
-
-			if app.AddSourceInformation(sourceID, tooltipInfo, group, sourceGroup) then
-				working = true;
-			end
-
-			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
-				local specs = GetFixedItemSpecInfo(itemID);
-				-- specs is already filtered/sorted to only current class
-				if specs and #specs > 0 then
-					tinsert(tooltipInfo, { right = GetSpecsString(specs, true, true) });
-				elseif sourceID then
-					tinsert(tooltipInfo, { right = L.NOT_AVAILABLE_IN_PL });
-				end
-			end
-
-			app.AddArtifactRelicInformation(itemID, rawlink, tooltipInfo, group);
-		end
-	end
-
 	-- Create clones of the search results
 	if not group.g then
 		-- Clone all the groups so that things don't get modified in the Source
@@ -2834,15 +2834,18 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 		if not root then
 			-- app.PrintDebug("Create New Root",paramA,paramB)
-			root = CreateObject({ [paramA] = paramB });
+			root = CreateObject({ [paramA] = paramB, missing = true });
 		end
 		-- If rawLink exists, import it into the root
 		if rawlink then app.ImportRawLink(root, rawlink); end
 		-- Ensure the param values are consistent with the new root object values (basically only affects creatureID)
 		paramA, paramB = root.key, root[root.key];
 		-- Special Case for itemID, need to use the modItemID for accuracy in item matching
-		if paramA == "itemID" or paramA == "sourceID" then
-			paramB = root.modItemID or paramB;
+		if root.itemID then
+			if paramA ~= "sourceID" then
+				paramA = "itemID"
+				paramB = root.modItemID or paramB
+			end
 			-- if our item root has a bonusID, then we will rely on upgrade module to provide any upgrade
 			-- raw groups with 'up' will never be sourced with a bonusID
 			local bonusID = root.bonusID
@@ -2909,7 +2912,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 
 		-- app.PrintDebug(group.g and #group.g,"Merge total");
-		-- app.PrintDebug("Final Group",group.key,group[group.key],group.collectible,group.collected,group.parent,group.sourceParent,rawget(group, "parent"),rawget(group, "sourceParent"));
+		-- app.PrintDebug("Final Group",group.key,group[group.key],group.collectible,group.collected,app:SearchLink(group.sourceParent));
 		-- app.PrintDebug("Group Type",group.__type)
 
 		-- Special cases
@@ -2930,8 +2933,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if method ~= app.EmptyFunction then
 			-- Fill up the group
 			app.FillGroups(group);
-			-- Sort by the heirarchy of the group
-			app.Sort(group.g, app.SortDefaults.Hierarchy, true);
 		end
 
 		-- Only need to build/update groups from the top level
@@ -2943,10 +2944,44 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	elseif #group.g == 0 then
 		group.g = nil;
 	end
+
+	-- Determine if this tooltip needs more work the next time it refreshes.
+	local working
 	group.working = nil;
+	group.itemString = itemString
 
 	if isTopLevelSearch then
+		-- needs tooltip if it's just a regular cached group search skip level... don't bother populating until actually needing to show into a tooltip
+		-- TODO: all of this tooltip data should be moved into Information Types
+		-- then no tooltip information will be generated within the cache search and only within tooltip
+		-- scope when required
+
+		--- Start of tooltip code migration
+		local tooltipInfo = {}
 		-- Add various text to the group now that it has been consolidated from all sources
+		if AddSourceLinesForTooltip(tooltipInfo, paramA, paramB) then
+			working = true
+		end
+
+		-- Shared Appearances and Stuff
+		if itemID then
+			if app.AddSourceInformation(sourceID, tooltipInfo, group) then
+				working = true;
+			end
+
+			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
+				local specs = GetFixedItemSpecInfo(itemID);
+				-- specs is already filtered/sorted to only current class
+				if specs and #specs > 0 then
+					tinsert(tooltipInfo, { right = GetSpecsString(specs, true, true) });
+				elseif sourceID then
+					tinsert(tooltipInfo, { right = L.NOT_AVAILABLE_IN_PL });
+				end
+			end
+
+			app.AddArtifactRelicInformation(itemID, rawlink, tooltipInfo, group);
+		end
+
 		if group.isLimited then
 			tinsert(tooltipInfo, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
 		end
@@ -2972,14 +3007,23 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				tinsert(tooltipInfo, 1, { left = L.MARKS_OF_HONOR_DESC, color = app.Colors.SourceIgnored });
 			end
 		end
+		if paramA == "currencyID" and paramB == 2778 then
+			if app.Settings:GetTooltipSetting("SummarizeThings") then
+				tinsert(tooltipInfo, 1, { left = L.MOP_REMIX_BRONZE_DESC, color = app.Colors.SourceIgnored });
+			end
+		end
 
 		if group.g and app.Settings:GetTooltipSetting("SummarizeThings") then
+			-- Sort by the heirarchy of the group
+			if not working then
+				app.Sort(group.g, app.SortDefaults.Hierarchy, true);
+			end
 			-- app.PrintDebug("SummarizeThings",group.hash,group.g and #group.g)
 			local entries = {};
 			-- app.Debugging = "CONTAINS-"..group.hash;
 			ContainsLimit = app.Settings:GetTooltipSetting("ContainsCount") or 25;
 			ContainsExceeded = 0;
-			BuildContainsInfo(group, entries, "  ", app.noDepth and 99 or 1);
+			BuildContainsInfo(group.g, entries, 1, 1)
 			-- app.Debugging = nil;
 			-- app.PrintDebug(entries and #entries,"contains entries")
 			if #entries > 0 then
@@ -3113,6 +3157,19 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 		end
 
+		-- Add various extra field info if enabled in settings
+		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group)
+
+		-- If there was any informational text generated, then attach that info.
+		if #tooltipInfo > 0 then
+			group.tooltipInfo = tooltipInfo
+			for i,item in ipairs(tooltipInfo) do
+				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color) end
+			end
+		end
+
+		--- End of tooltip code migration
+
 		group.isBaseSearchResult = true;
 
 		-- app.PrintDebug("TopLevelSearch",working and "WORKING" or "DONE",group.text or (group.key and group.key .. group[group.key]),group)
@@ -3120,17 +3177,8 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- Track if the result is not finished processing
 		if isTopLevelSearch then InitialCachedSearch = nil; end
 
-		-- Add various extra field info if enabled in settings
-		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group, itemString)
 		if group.working then working = true; end
-
-		-- If there was any informational text generated, then attach that info.
-		if #tooltipInfo > 0 then
-			group.tooltipInfo = tooltipInfo;
-			for i,item in ipairs(tooltipInfo) do
-				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
-			end
-		end
+		group.working = working
 	end
 
 	return group, working;
@@ -3191,7 +3239,7 @@ end
 -- Determines searches required for costs using this group
 local function DeterminePurchaseGroups(group, FillData)
 	-- do not fill purchases on certain items, can skip the skip though based on a level
-	if not app.ShouldFillPurchasesForItemID(group.itemID) then return end
+	if not app.ShouldFillPurchases(group, FillData) then return end
 
 	local collectibles = group.costCollectibles;
 	if collectibles and #collectibles > 0 then
@@ -3257,6 +3305,7 @@ local function DetermineCraftedGroups(group, FillData)
 			-- app.PrintDebug("recipeID",recipeID);
 			-- item is BoP
 			if filterSkill then
+				-- TODO: think this needs to be 'recipeID'
 				recipe = SearchForObject("spellID",recipeID,"key");
 				if recipe then
 					-- Recipe can be recrafted, i.e. can be used in Crafting Order to another player with the Profession
@@ -3368,7 +3417,7 @@ local function DetermineNPCDrops(group, FillData)
 				-- app.PrintDebug("FillNPC.Diff",group.hash,difficultyID)
 				-- can only fill npc groups for the npc which match the difficultyID
 				local headerID, groups, npcDiff;
-				for _,npcGroup in pairs(npcGroups) do
+				for _,npcGroup in ipairs(npcGroups) do
 					if npcGroup.hash ~= group.hash then
 						headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
 						-- app.PrintDebug("DropCheck",npcGroup.hash,"=>",headerID)
@@ -3388,7 +3437,7 @@ local function DetermineNPCDrops(group, FillData)
 			else
 				-- app.PrintDebug("FillNPC",group.hash)
 				local headerID, groups;
-				for _,npcGroup in pairs(npcGroups) do
+				for _,npcGroup in ipairs(npcGroups) do
 					if npcGroup.hash ~= group.hash then
 						headerID = GetRelativeFieldInSet(npcGroup, "headerID", NPCExpandHeaders);
 						-- app.PrintDebug("DropCheck",npcGroup.hash,"=>",headerID)
@@ -3521,7 +3570,8 @@ app.FillGroups = function(group)
 		CraftedItems = {},
 		InWindow = groupWindow and true or nil,
 		NestNPCData = app.Settings:GetTooltipSetting("NPCData:Nested"),
-		SkipLevel = app.GetSkipLevel()
+		SkipLevel = app.GetSkipLevel(),
+		Root = group
 	};
 	-- Get tradeskill cache
 	knownSkills = app.CurrentCharacter.Professions;
@@ -3643,33 +3693,35 @@ end
 (function()
 -- Keys for groups which are in-game 'Things'
 app.ThingKeys = {
-	-- ["filterID"] = true,
-	["flightPathID"] = true,
-	-- ["professionID"] = true,
-	-- ["categoryID"] = true,
-	-- ["mapID"] = true,
-	["npcID"] = true,
-	["creatureID"] = true,
-	["currencyID"] = true,
-	["itemID"] = true,
-	["sourceID"] = true,
-	["speciesID"] = true,
-	["recipeID"] = true,
-	["runeforgePowerID"] = true,
-	["spellID"] = true,
-	["mountID"] = true,
-	["illusionID"] = true,
-	["questID"] = true,
-	["objectID"] = true,
-	["encounterID"] = true,
-	["artifactID"] = true,
-	["azeriteEssenceID"] = true,
-	["followerID"] = true,
-	["achievementID"] = true,	-- special handling
-	["criteriaID"] = true,	-- special handling
+	-- filterID = true,
+	flightPathID = true,
+	-- professionID = true,
+	-- categoryID = true,
+	-- mapID = true,
+	npcID = true,
+	creatureID = true,
+	currencyID = true,
+	itemID = true,
+	sourceID = true,
+	speciesID = true,
+	recipeID = true,
+	runeforgePowerID = true,
+	spellID = true,
+	mountID = true,
+	illusionID = true,
+	questID = true,
+	objectID = true,
+	encounterID = true,
+	artifactID = true,
+	azeriteEssenceID = true,
+	followerID = true,
+	factionID = true,
+	explorationID = true,
+	achievementID = true,	-- special handling
+	criteriaID = true,	-- special handling
 };
 local SpecificSources = {
-	["headerID"] = {
+	headerID = {
 		[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
 		[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true,
 		[app.HeaderConstants.DROPS] = true,
@@ -3693,6 +3745,13 @@ local function CleanTop(top, keephash)
 		end
 	end
 end
+local function GetThingSources(field, value)
+	if field == "achievementID" then
+		return SearchForField(field, value)
+	end
+	return app.SearchForLink(field..":"..value)
+end
+
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
 app.BuildSourceParent = function(group)
 	-- only show sources for Things or specific of other types
@@ -3713,7 +3772,7 @@ app.BuildSourceParent = function(group)
 
 	-- pull all listings of this 'Thing'
 	local keyValue = group[groupKey];
-	local things = specificSource and { group } or app.SearchForLink(groupKey .. ":" .. keyValue);
+	local things = specificSource and { group } or GetThingSources(groupKey, keyValue)
 	-- app.PrintDebug("BuildSourceParent",group.hash,thingCheck,specificSource,keyValue,#things)
 	-- if app.Debugging then
 	-- 	local sourceGroup = {
@@ -4238,17 +4297,18 @@ local function UpdateSearchResults(searchResults)
 	-- Update all the results within visible windows
 	local hashes = {};
 	local found = {};
-	local Update, UpdateCost, SearchForSpecificGroups = app.DirectGroupUpdate, app.UpdateCostGroup, app.SearchForSpecificGroups;
+	local UpdateCostGroup = app.UpdateCostGroup;
 	-- Directly update the Source groups of the search results, and collect their hashes for updates in other windows
 	for _,result in ipairs(searchResults) do
 		hashes[result.hash] = true;
 		found[#found + 1] = result;
 		-- Make sure any cost data is updated for this specific group since it was updated
-		UpdateCost(result);
+		UpdateCostGroup(result);
 	end
 
 	-- loop through visible ATT windows and collect matching groups
 	-- app.PrintDebug("Checking Windows...")
+	local SearchForSpecificGroups = app.SearchForSpecificGroups;
 	for suffix,window in pairs(app.Windows) do
 		-- Collect matching groups from the updating groups from visible windows other than Main list
 		if window.Suffix ~= "Prime" and window:IsVisible() then
@@ -4261,8 +4321,9 @@ local function UpdateSearchResults(searchResults)
 
 	-- apply direct updates to all found groups
 	-- app.PrintDebug("Updating",#found,"groups")
+	local DirectGroupUpdate = app.DirectGroupUpdate;
 	for _,o in ipairs(found) do
-		Update(o, true);
+		DirectGroupUpdate(o, true);
 	end
 	app.WipeSearchCache();
 	-- app.PrintDebug("UpdateSearchResults Done")
@@ -4296,7 +4357,9 @@ local KeyMaps = setmetatable({
 	enchant = "spellID",
 	follower = "followerID",
 	garrfollower = "followerID",
-	i = "itemID",
+	i = "modItemID",
+	item = "modItemID",
+	itemid = "modItemID",
 	mount = "spellID",
 	mountid = "spellID",
 	n = "creatureID",
@@ -4317,52 +4380,67 @@ local KeyMaps = setmetatable({
 }, { __index = function(t,key) return key:gsub("id", "ID") end})
 
 local function SearchForLink(link)
-	if link:match("item:") then
+	local itemString = link:match("item[%-?%d:]+")
+	if itemString then
 		-- Parse the link and get the itemID and bonus ids.
-		local itemString = link:match("item[%-?%d:]+") or link;
-		if itemString then
-			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
-				linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1, _, artifactID = (":"):split(link);
-			if itemID then
-				-- app.PrintDebug("SFL",itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
-				-- 	linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1, _, artifactID)
-				itemID = tonumber(itemID) or 0;
-				-- Don't use SourceID for artifact searches since they contain many SourceIDs
-				local _, _, type = C_Item_GetItemInfo(link)
-				-- app.PrintDebug(C_Item_GetItemInfo(link))
-				local sourceID = type ~= 6 and app.GetSourceID(link);
-				if sourceID then
-					-- Search for the Source ID. (an appearance)
-					_ = SearchForObject("sourceID", sourceID, nil, true);
-					-- app.PrintDebug("SEARCHING FOR ITEM LINK WITH SOURCE", link, itemID, sourceID, _ and #_);
-					return _;
-				else
-					-- Search for the Item ID. (an item without an appearance)
-					-- app.PrintDebug("SFL-exact",itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1)
-					local exactItemID = GetGroupItemIDWithModID(nil, itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1);
-					local modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
-					-- Artifacts use a different modItemID
-					if type == 6 and bonusCount == "" and artifactID ~= "" then
-						exactItemID = app.GetArtifactModItemID(itemID, tonumber(artifactID), bonusID1 == 1)
-						modItemID = itemID
-						-- app.PrintDebug("artifact!",exactItemID)
+		-- app.PrintDebug(itemString)
+		local linkData = {(":"):split(itemString)}
+		-- app.PrintTable(linkData)
+		local itemID = linkData[2]
+		if itemID then
+			-- ref: https://warcraft.wiki.gg/wiki/ItemLink
+			-- indexes are shifted by 1 due to 'item' being the first index
+			itemID = tonumber(itemID) or 0;
+			local modID = tonumber(linkData[13]) or 0
+			local bonusCount = tonumber(linkData[14]) or 0
+			local bonusID1 = bonusCount > 0 and linkData[15] or 0
+			local itemModifierIndex = 15 + bonusCount
+			local itemModifierCount = tonumber(linkData[itemModifierIndex]) or 0
+			local artifactID
+			if itemModifierCount > 0 then
+				for i=itemModifierIndex + 1,itemModifierIndex + (2 * itemModifierCount),2 do
+					if linkData[i] == "8" then
+						artifactID = tonumber(linkData[i + 1])
+						break
 					end
-					-- app.PrintDebug("SEARCHING FOR ITEM LINK", link, exactItemID, modItemID, itemID);
-					if exactItemID ~= itemID then
-						_ = SearchForObject("itemID", exactItemID, nil, true);
-						if #_ > 0 then return _; end
-					end
-					if modItemID ~= itemID then
-						_ = SearchForObject("itemID", modItemID, nil, true);
-						if #_ > 0 then return _; end
-					end
-					return SearchForObject("itemID", itemID, nil, true);
 				end
 			end
+			-- Don't use SourceID for artifact searches since they contain many SourceIDs
+			local sourceID = not artifactID and app.GetSourceID(link);
+			if sourceID then
+				-- Search for the Source ID. (an appearance)
+				-- app.PrintDebug("SEARCHING FOR ITEM LINK WITH SOURCE", link, itemID, sourceID);
+				return SearchForObject("sourceID", sourceID, nil, true);
+			end
+			-- Search for the Item ID. (an item without an appearance)
+			-- app.PrintDebug("SFL-exact",itemID, modID, (tonumber(bonusCount) or 0) > 0 and bonusID1)
+			local exactItemID
+			local modItemID
+			-- Artifacts use a different modItemID
+			if artifactID then
+				exactItemID = app.GetArtifactModItemID(itemID, artifactID, modID == 0)
+				-- fallback to non-offhand... still something about the links that makes some 2H artifacts weird
+				modItemID = app.GetArtifactModItemID(itemID, artifactID)
+				-- app.PrintDebug("artifact!",exactItemID)
+			else
+				exactItemID = GetGroupItemIDWithModID(nil, itemID, modID, bonusID1);
+				modItemID = GetGroupItemIDWithModID(nil, itemID, modID);
+			end
+			-- app.PrintDebug("SEARCHING FOR ITEM LINK", link, exactItemID, modItemID, itemID);
+			local search
+			if exactItemID ~= itemID then
+				search = SearchForObject("modItemID", exactItemID, nil, true);
+				if #search > 0 then return search; end
+			end
+			if modItemID ~= itemID then
+				search = SearchForObject("modItemID", modItemID, nil, true);
+				if #search > 0 then return search; end
+			end
+			return SearchForObject("itemID", itemID, nil, true);
 		end
 	end
 
-	local kind, id = (":"):split(link);
+	local kind, id, id2, id3 = (":"):split(link);
 	kind = kind:lower();
 	if kind:sub(1,2) == "|c" then
 		kind = kind:sub(11);
@@ -4376,8 +4454,15 @@ local function SearchForLink(link)
 		return;
 	end
 	--print(link:gsub("|c", "c"):gsub("|h", "h"));
-	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,">",#SearchForObject(KeyMaps[kind], id, nil, true))
+	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,">")
 	kind = KeyMaps[kind]
+	if kind == "modItemID" then
+		if not id2 and not id3 then
+			id, id2, id3 = GetItemIDAndModID(id)
+		end
+		id = GetGroupItemIDWithModID(nil, id, id2, id3)
+	end
+	-- app.PrintDebug(#SearchForObject(KeyMaps[kind], id, nil, true))
 	return SearchForObject(kind, id, nil, true), kind, id
 end
 app.SearchForLink = SearchForLink;
@@ -4765,158 +4850,6 @@ local function GetPopulatedQuestObject(questID)
 	return questObject;
 end
 
--- Refresh Functions
-do
-local function RefreshSavesCallback()
-	-- This can be attempted a few times incase data is slow, but not too many times since it's possible to not be saved to any instance
-	app.refreshingSaves = app.refreshingSaves or 30;
-	-- While the player is still logging in, wait.
-	if not app.GUID then
-		AfterCombatCallback(RefreshSavesCallback);
-		return;
-	end
-
-	-- Make sure there's info available to check save data
-	local saves = GetNumSavedInstances();
-	-- While the player is still waiting for information, wait.
-	if saves and saves < 1 and app.refreshingSaves > 0 then
-		app.refreshingSaves = app.refreshingSaves - 1;
-		AfterCombatCallback(RefreshSavesCallback);
-		return;
-	end
-
-	-- Too many attempts, so give up
-	if app.refreshingSaves <= 0 then
-		app.refreshingSaves = nil;
-		return;
-	end
-
-	-- Cache the lockouts across your account.
-	local serverTime = GetServerTime();
-
-	-- Check to make sure that the old instance data has expired
-	for guid,character in pairs(ATTCharacterData) do
-		local locks = character.Lockouts;
-		if locks then
-			for instanceID,instance in pairs(locks) do
-				local count = 0;
-				for difficulty,lock in pairs(instance) do
-					if serverTime >= lock.reset then
-						-- Clean this up.
-						instance[difficulty] = nil;
-					else
-						count = count + 1;
-					end
-				end
-				if count == 0 then
-					-- Clean this up.
-					locks[instanceID] = nil;
-				end
-			end
-		end
-	end
-
-	-- Update Saved Instances
-	local myLockouts = app.CurrentCharacter.Lockouts;
-	for instanceIter=1,saves do
-		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters, encounterProgress, extendDisabled, savedInstanceID = GetSavedInstanceInfo(instanceIter);
-		if locked and savedInstanceID then
-			-- Cache the locks for this instance
-			reset = serverTime + reset;
-			local locks = myLockouts[savedInstanceID];
-			if not locks then
-				locks = {};
-				myLockouts[savedInstanceID] = locks;
-			end
-
-			-- Create the lock for this difficulty
-			local lock = locks[difficulty];
-			if not lock then
-				lock = { ["id"] = id, ["reset"] = reset, ["encounters"] = {}};
-				locks[difficulty] = lock;
-			else
-				lock.id = id;
-				lock.reset = reset;
-			end
-
-			-- If this is LFR, then don't share.
-			if difficulty == 7 or difficulty == 17 then
-				if #lock.encounters == 0 then
-					-- Check Encounter locks
-					for encounterIter=1,numEncounters do
-						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-						tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-					end
-				else
-					-- Check Encounter locks
-					for encounterIter=1,numEncounters do
-						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-						if not lock.encounters[encounterIter] then
-							tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-						elseif isKilled then
-							lock.encounters[encounterIter].isKilled = true;
-						end
-					end
-				end
-			else
-				-- Create the pseudo "shared" lock
-				local shared = locks.shared;
-				if not shared then
-					shared = {};
-					shared.id = id;
-					shared.reset = reset;
-					shared.encounters = {};
-					locks.shared = shared;
-
-					-- Check Encounter locks
-					for encounterIter=1,numEncounters do
-						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-						tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-
-						-- Shared Encounter is always assigned if this is the first lock seen for this instance
-						tinsert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-					end
-				else
-					-- Check Encounter locks
-					for encounterIter=1,numEncounters do
-						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-						if not lock.encounters[encounterIter] then
-							tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-						elseif isKilled then
-							lock.encounters[encounterIter].isKilled = true;
-						end
-						if not shared.encounters[encounterIter] then
-							tinsert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-						elseif isKilled then
-							shared.encounters[encounterIter].isKilled = true;
-						end
-					end
-				end
-			end
-		end
-	end
-
-	-- Mark that we're done now.
-	app:RefreshWindows();
-end
-local function RefreshSaves()
-	AfterCombatCallback(RefreshSavesCallback);
-end
-app.events.LOOT_CLOSED = function()
-	-- Once the loot window closes after killing a boss, THEN trigger the update.
-	app:UnregisterEvent("LOOT_CLOSED");
-	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
-	app:RegisterEvent("UPDATE_INSTANCE_INFO");
-	RequestRaidInfo();
-end
-app.events.UPDATE_INSTANCE_INFO = function()
-	-- We got new information, now refresh the saves. :D
-	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
-	RefreshSaves();
-end
-app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
-end -- Refresh Functions
-
 -- Achievement Lib
 do
 local GetAchievementCategory, GetAchievementNumCriteria, GetCategoryInfo, GetStatistic = GetAchievementCategory, GetAchievementNumCriteria, GetCategoryInfo, GetStatistic;
@@ -5017,6 +4950,13 @@ local fields = {
 app.BaseAchievement = app.BaseObjectFields(fields, "BaseAchievement");
 app.CreateAchievement = function(id, t)
 	return setmetatable(constructor(id, t, "achID"), app.BaseAchievement);
+end
+app.CreateGuildAchievement = function(id, t)
+	-- TODO: Proper Class Extension Maybe? I think the Achievement class doesn't use a Class Constructor yet, but when it does, do this too.
+	t = app.CreateAchievement(id, t);
+	t.collectible = false;
+	t.isGuild = true;
+	return t;
 end
 
 -- Achievement Category Lib
@@ -5220,6 +5160,13 @@ app.CreateAchievementCriteria = function(id, t, init)
 		GetParentAchievementInfo(t, "");
 		-- app.PrintDebug("CreateAchievementCriteria.Init",t.hash)
 	end
+	return t;
+end
+app.CreateGuildAchievementCriteria = function(id, t)
+	-- TODO: Proper Class Extension Maybe? I think the Achievement class doesn't use a Class Constructor yet, but when it does, do this too.
+	t = app.CreateAchievementCriteria(id, t);
+	t.collectible = false;
+	t.isGuild = true;
 	return t;
 end
 
@@ -5853,10 +5800,12 @@ local createHeirloom = app.ExtendClass("Item", "Heirloom", "heirloomID", {
 	g = function(t)
 		-- unlocking the heirloom is the only thing contained in the heirloom
 		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
-			t.g = { CreateHeirloomUnlock(t.itemID, {
+			local unlock = CreateHeirloomUnlock(t.itemID, {
 				e = t.e,
 				u = t.u
-			}) };
+			});
+			unlock.parent = t;
+			t.g = { unlock };
 			return t.g;
 		end
 	end
@@ -6751,18 +6700,18 @@ local fields = {
 	end,
 	--[[
 	["name"] = function(t)
-		if app.GetSpecializationBaseTradeSkill(t.professionID) then return C_Spell_GetSpellInfo(t.professionID); end
-		if t.professionID == 129 then return C_Spell_GetSpellInfo(t.spellID); end
+		if app.GetSpecializationBaseTradeSkill(t.professionID) then return GetSpellInfo(t.professionID); end
+		if t.professionID == 129 then return GetSpellInfo(t.spellID); end
 		return C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
 	end,
 	["icon"] = function(t)
-		if app.GetSpecializationBaseTradeSkill(t.professionID) then return select(2, C_Spell_GetSpellInfo(t.professionID)); end
-		if t.professionID == 129 then return select(2, C_Spell_GetSpellInfo(t.spellID)); end
+		if app.GetSpecializationBaseTradeSkill(t.professionID) then return select(3, GetSpellInfo(t.professionID)); end
+		if t.professionID == 129 then return select(3, GetSpellInfo(t.spellID)); end
 		return C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
 	end,
 	]]--
 	["name"] = function(t)
-		return t.spellID ~= 2366 and select(1, C_Spell_GetSpellInfo(t.spellID)) or C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
+		return t.spellID ~= 2366 and select(1, GetSpellInfo(t.spellID)) or C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
 	end,
 	["icon"] = function(t)
 		return C_Spell_GetSpellTexture(t.spellID) or C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
@@ -6843,11 +6792,13 @@ local function SetGroupVisibility(parent, group)
 		forceShowParent = visible;
 	end
 	-- Apply the visibility to the group
-	if visible then group.visible = true; end
-	-- source ignored group which is determined to be visible should ensure the parent is also visible
-	if not forceShowParent and visible and group.sourceIgnored then
-		forceShowParent = true;
-		-- app.PrintDebug("SGV:ForceParent",parent.text,"via Source Ignored",group.text)
+	if visible then
+		group.visible = true;
+		-- source ignored group which is determined to be visible should ensure the parent is also visible
+		if not forceShowParent and group.sourceIgnored then
+			forceShowParent = true;
+			-- app.PrintDebug("SGV:ForceParent",parent.text,"via Source Ignored",group.text)
+		end
 	end
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
@@ -6894,11 +6845,13 @@ local function SetThingVisibility(parent, group)
 		forceShowParent = visible;
 	end
 	-- Apply the visibility to the group
-	if visible then group.visible = true; end
-	-- source ignored group which is determined to be visible should ensure the parent is also visible
-	if not forceShowParent and visible and group.sourceIgnored then
-		forceShowParent = true;
-		-- if debug then print("SGV:ForceParent",parent.text,"via Source Ignored",group.text) end
+	if visible then
+		group.visible = true;
+		-- source ignored group which is determined to be visible should ensure the parent is also visible
+		if not forceShowParent and group.sourceIgnored then
+			forceShowParent = true;
+			-- app.PrintDebug("STV:ForceParent",parent.text,"via Source Ignored",group.text)
+		end
 	end
 	if parent and forceShowParent then
 		parent.forceShow = forceShowParent;
@@ -7276,9 +7229,8 @@ end
 app.__CacheQuestTriggers = nil
 local function AssignDirectGroupOnUpdates()
 	local questRef;
-	local Search = SearchForObject;
 	for questID,func in pairs(DGU_Quests) do
-		questRef = Search("questID", questID);
+		questRef = SearchForObject("questID", questID);
 		if questRef then
 			-- app.PrintDebug("Assign DGUOnUpdate",questRef.hash)
 			questRef.DGUOnUpdate = func;
@@ -7391,18 +7343,26 @@ local function AdjustRowIndent(row, indentAdjust)
 		row.Label:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
 	end
 end
+local IconPortraitTooltipExtraSettings = {
+	questID = "IconPortraitsForQuests",
+};
 local SetPortraitTexture, SetPortraitTextureFromDisplayID
 	= SetPortraitTexture, SetPortraitTextureFromCreatureDisplayID;
 local function SetPortraitIcon(self, data)
-	local displayID = GetDisplayID(data);
-	if displayID then
-		SetPortraitTextureFromDisplayID(self, displayID);
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
-	elseif data.unit and not data.icon then
-		SetPortraitTexture(self, data.unit);
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
+	if app.Settings:GetTooltipSetting("IconPortraits") then
+		local extraSetting = IconPortraitTooltipExtraSettings[data.key];
+		if not extraSetting or app.Settings:GetTooltipSetting(extraSetting) then
+			local displayID = GetDisplayID(data);
+			if displayID then
+				SetPortraitTextureFromDisplayID(self, displayID);
+				self:SetTexCoord(0, 1, 0, 1);
+				return true;
+			elseif data.unit and not data.icon then
+				SetPortraitTexture(self, data.unit);
+				self:SetTexCoord(0, 1, 0, 1);
+				return true;
+			end
+		end
 	end
 
 	-- Fallback to a traditional icon.
@@ -7688,6 +7648,24 @@ local StoreWindowPosition = function(self)
 			if profile and profile.Windows then
 				profile.Windows[self.Suffix] = nil;
 			end
+		end
+	end
+end
+-- Adds ATT information about the list of Achievements into the provided tooltip
+local function AddAchievementInfoToTooltip(info, achievements, reference)
+	if achievements then
+		local text, mapID;
+		for _,ach in ipairs(achievements) do
+			text = ach.text;
+			if not text then
+				text = RETRIEVING_DATA;
+				reference.working = true;
+			end
+			text = GetCompletionIcon(ach.saved) .. " [" .. ach.achievementID .. "] " .. text;
+			if ach.isGuild then text = text .. " (" .. GUILD .. ")"; end
+			tinsert(info, {
+				left = text
+			});
 		end
 	end
 end
@@ -8260,7 +8238,7 @@ local function RowOnClick(self, button)
 							for key,value in pairs(uniqueNames) do
 								tinsert(arr, key);
 							end
-							Auctionator.API.v1.MultiSearchExact(L.TITLE, arr);
+							Auctionator.API.v1.MultiSearch(L.TITLE, arr);
 							return;
 						elseif TSMAPI and TSMAPI.Auction then
 							-- This was the old, better, TSM API that made sense.
@@ -8781,6 +8759,35 @@ RowOnEnter = function (self)
 				left = L.BREADCRUMBS_WARNING,
 			});
 			AddQuestInfoToTooltip(tooltipInfo, bc, reference);
+		end
+	end
+	if reference.sourceAchievements and (not reference.collected or isDebugMode) then
+		local prereqs, sas = {};
+		for i,sourceAchievementID in ipairs(reference.sourceAchievements) do
+			if sourceAchievementID > 0 and (isDebugMode or not ATTAccountWideData.Achievements[sourceAchievementID]) then
+				sas = SearchForField("achievementID", sourceAchievementID);
+				if #sas > 0 then
+					bestMatch = nil;
+					for j,sa in ipairs(sas) do
+						if sa.achievementID == sourceAchievementID then
+							if isDebugMode or (not sa.saved and app.GroupFilter(sa)) then
+								bestMatch = sa;
+							end
+						end
+					end
+					if bestMatch then
+						tinsert(prereqs, bestMatch);
+					end
+				else
+					tinsert(prereqs, app.CreateAchievement(sourceAchievementID));
+				end
+			end
+		end
+		if prereqs and #prereqs > 0 then
+			tinsert(tooltipInfo, {
+				left = "This has an incomplete prerequisite achievement that you need to complete first.",
+			});
+			AddAchievementInfoToTooltip(tooltipInfo, prereqs, reference);
 		end
 	end
 
@@ -9429,30 +9436,36 @@ function app:GetWindow(suffix, parent, onUpdate)
 end
 
 -- Seems to be some sort of hidden tracking for HQTs and other sorts of things...
-app.AddEventRegistration("PET_BATTLE_OPENING_START", function(...)
-	-- check for open ATT windows
-	for _,window in pairs(app.Windows) do
-		if window:IsVisible() then
-			if not app.PetBattleClosed then app.PetBattleClosed = {}; end
-			tinsert(app.PetBattleClosed, window);
-			window:Toggle();
-		end
-	end
-end)
+-- TODO: figure out why minilist doesn't re-show itself sometimes, then make auto-hiding of windows configurable in some way...
+-- app.AddEventRegistration("PET_BATTLE_OPENING_START", function(...)
+-- 	-- check for open ATT windows
+-- 	for _,window in pairs(app.Windows) do
+-- 		if window:IsVisible() then
+-- 			if not app.PetBattleClosed then app.PetBattleClosed = {}; end
+-- 			tinsert(app.PetBattleClosed, window);
+-- 			window:Toggle();
+-- 		end
+-- 	end
+-- end)
 -- this fires twice when pet battle ends
-app.AddEventRegistration("PET_BATTLE_CLOSE", function(...)
-	if app.PetBattleClosed then
-		for _,window in ipairs(app.PetBattleClosed) do
-			-- special open for Current Instance list
-			if window.Suffix == "CurrentInstance" then
-				DelayedCallback(app.ToggleMiniListForCurrentZone, 1);
-			else
-				window:Toggle();
-			end
-		end
-		app.PetBattleClosed = nil;
-	end
-end)
+-- app.AddEventRegistration("PET_BATTLE_CLOSE", function(...)
+-- 	-- app.PrintDebug("PET_BATTLE_CLOSE",app.PetBattleClosed and #app.PetBattleClosed)
+-- 	if app.PetBattleClosed then
+-- 		for _,window in ipairs(app.PetBattleClosed) do
+-- 			-- special open for Current Instance list
+-- 			if window.Suffix == "CurrentInstance" then
+-- 				DelayedCallback(app.ToggleMiniListForCurrentZone, 1);
+-- 			else
+-- 				window:Toggle();
+-- 			end
+-- 		end
+-- 		app.PetBattleClosed = nil;
+-- 	end
+-- end)
+
+-- When settings that affect the display of a window change, we want to redraw the windows.
+app.AddEventHandler("OnRenderDirty", RefreshWindows);
+app.AddEventHandler("OnSavesUpdated", RefreshWindows);
 end)();
 
 do	-- Main Data
@@ -9495,6 +9508,8 @@ function app:GetDataCache()
 		total = 0,
 		g = {},
 	}, {
+		-- TODO: yuck all of this... should assign the available functionality during startup events
+		-- and use proper methods
 		__index = function(t, key)
 			-- app.PrintDebug("Top-Root-Get",key)
 			if key == "title" then
@@ -9510,7 +9525,7 @@ function app:GetDataCache()
 			elseif key == "modeString" then
 				return app.Settings:GetModeString();
 			elseif key == "untilNextPercentage" then
-				if t.total < 1 then
+				if t.total < 1 and app.CurrentCharacter then
 					local primeData = app.CurrentCharacter.PrimeData;
 					if primeData then
 						return app.Modules.Color.GetProgressTextToNextPercent(primeData.progress, primeData.total);
@@ -9543,6 +9558,13 @@ function app:GetDataCache()
 	db.g = app.Categories.Instances;
 	db.icon = app.asset("Category_D&R");
 	tinsert(g, db);
+
+	-- Delves
+	if app.Categories.Delves then
+		tinsert(g, app.CreateNPC(app.HeaderConstants.DELVES, {
+			g = app.Categories.Delves,
+		}));
+	end
 
 	-- Zones
 	if app.Categories.Zones then
@@ -9706,7 +9728,7 @@ function app:GetDataCache()
 	}));
 
 	-- Create Dynamic Groups Button
-	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.DYNAMIC_CATEGORY_LABEL), {
+	tinsert(g, app.CreateRawText(L.CLICK_TO_CREATE_FORMAT:format(L.SETTINGS_MENU.DYNAMIC_CATEGORY_LABEL), {
 		["icon"] = app.asset("Interface_CreateDynamic"),
 		["OnUpdate"] = app.AlwaysShowUpdate,
 		-- ["OnClick"] = function(row, button)
@@ -10615,7 +10637,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 	if not self.initialized then
 		force = true;
 		self.initialized = true;
-		self.openedOnLogin = false;
 		self.CurrentMaps = {};
 		self.mapID = -1;
 		local IsInInstance = IsInInstance
@@ -10691,6 +10712,14 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		(function()
 		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID, isInInstance;
 		local rootGroups, mapGroups = {}, {};
+		local TimerunningSeasonEventID
+		local function OnlyTimerunning(group)
+			return GetRelativeValue(group, "e") == TimerunningSeasonEventID
+		end
+		local function NotTimerunning(group)
+			local e = GetRelativeValue(group, "e")
+			return not e or e ~= TimerunningSeasonEventID
+		end
 		self.Rebuild = function(self)
 			-- app.PrintDebug("Rebuild",self.mapID);
 			local currentMaps, mapID = {}, self.mapID
@@ -10702,6 +10731,21 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			results = CleanInheritingGroups(SearchForField("mapID", mapID), "sourceIgnored");
 			-- app.PrintDebug("Rebuild#",#results);
 			if results and #results > 0 then
+
+				-- If there's a timerunning event going on...
+				if app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
+					TimerunningSeasonEventID = GetTimerunningSeasonEventID();
+					local refined = {};
+					local Refiner = TimerunningSeasonEventID and OnlyTimerunning or NotTimerunning
+					-- app.PrintDebug(TimerunningSeasonEventID and "ONLYTIMERUNNING" or "NOTTIMERUNNING")
+					for _,j in ipairs(results) do
+						if Refiner(j) then
+							refined[#refined + 1] = j
+						end
+					end
+					results = refined;
+				end
+
 				-- I tend to like this way of finding sub-maps, but it does mean we rely on Blizzard and get whatever maps they happen to claim
 				-- are children of a given map... sometimes has weird results like scenarios during quests being considered children in
 				-- other zones. Since it can give us special top-level maps (Anniversary AV) also as children of other top-level maps (Hillsbarad)
@@ -10919,7 +10963,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				self.ScrollBar:SetValue(1);
 			else
 				-- If we don't have any data cached for this mapID and it exists in game, report it to the chat window.
-				local mapID = mapID;
 				self.CurrentMaps = {[mapID]=true};
 				local mapInfo = C_Map_GetMapInfo(mapID);
 				if mapInfo then
@@ -10935,7 +10978,8 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 						end
 					end
 					-- only report for mapIDs which actually exist
-					print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
+					mapID = self.mapID
+					print("No data found for this Location ", app.GetMapName(mapID), " [", mapID, "]");
 					print("Path: ", mapPath);
 					app.report();
 				end
@@ -10962,37 +11006,13 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			-- app.PrintDebugPrior("RB-Done")
 			return true;
 		end
-		end)();
-		local function OpenMiniList(id, show)
-			-- print("OpenMiniList",id,show);
-			-- Determine whether or not to forcibly reshow the mini list.
-			local self = app:GetWindow("CurrentInstance");
-			if not self:IsVisible() then
-				if app.Settings:GetTooltipSetting("Auto:MiniList") then
-					if not self.openedOnLogin and not show then
-						self.openedOnLogin = true;
-						show = true;
-					end
-				else
-					self.openedOnLogin = false;
-				end
-				if show then self:SetVisible(true); end
-			end
-
-			-- Cache that we're in the current map ID.
-			-- app.PrintDebug("new map",show);
-			self.mapID = id;
-			-- force update when showing the minilist
-			Callback(self.Update, self);
-		end
+		end)()
 		self.RefreshLocation = function(show)
 			-- Acquire the new map ID.
 			local mapID = app.CurrentMapID;
 			-- app.PrintDebug("RefreshLocation",mapID)
-			if not mapID then
-				AfterCombatCallback(self.RefreshLocation);
-				return;
-			end
+			-- can't really do anything about this from here anymore
+			if not mapID then return end
 			-- don't auto-load minimap to anything higher than a 'Zone' if we are in an instance, unless it has no parent?
 			if IsInInstance() then
 				local mapInfo = app.CurrentMapInfo;
@@ -11001,28 +11021,16 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 					return;
 				end
 			end
-			OpenMiniList(mapID, show);
-		end
-		local function LocationTrigger(forceNewMap)
-			if app.InWorld and app.IsReady and (app.Settings:GetTooltipSetting("Auto:MiniList") or app:GetWindow("CurrentInstance"):IsVisible()) then
-				-- app.PrintDebug("LocationTrigger-Callback")
-				if forceNewMap then
-					-- this allows minilist to rebuild itself
-					wipe(self.CurrentMaps)
-				end
-				AfterCombatOrDelayedCallback(self.RefreshLocation, 0.25);
+
+			-- Cache that we're in the current map ID.
+			-- app.PrintDebug("new map");
+			self.mapID = mapID;
+			if show then
+				self:SetVisible(true)
 			end
+			-- force update when showing the minilist
+			Callback(self.Update, self);
 		end
-		app.OpenMiniList = OpenMiniList;
-		app.LocationTrigger = LocationTrigger;
-		self:SetScript("OnEvent", function(self, e, ...)
-			-- app.PrintDebug("LocationTrigger",e,...);
-			LocationTrigger();
-		end);
-		self:RegisterEvent("NEW_WMO_CHUNK");
-		self:RegisterEvent("WAYPOINT_UPDATE");
-		self:RegisterEvent("SCENARIO_UPDATE");
-		app.AddEventHandler("OnCurrentMapIDChanged", LocationTrigger);
 	end
 	if self:IsVisible() then
 		-- Update the mapID into the data for external reference in case not rebuilding
@@ -11132,25 +11140,25 @@ customWindowUpdates.ItemFilter = function(self, force)
 		self:BaseUpdate(force);
 	end
 end;
-customWindowUpdates.NWP = function(self)
-	if self:IsVisible() then
+customWindowUpdates.NWP = function(self, force)
+	if not self.initialized then
 		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 			return;
 		end
-		if not self.initialized then
-			self.initialized = true;
-			self:SetData({
-				["text"] = L.NEW_WITH_PATCH,
-				["icon"] = app.asset("WindowIcon_RWP"),
-				["description"] = L.NEW_WITH_PATCH_TOOLTIP,
-				["visible"] = true,
-				["back"] = 1,
-				["g"] = app:BuildSearchResponse("awp", app.GameBuildVersion),
-			});
-			self:BuildData();
-			self.ExpandInfo = { Expand = true, Manual = true };
-		end
-		self:BaseUpdate(true);
+		self.initialized = true;
+		self:SetData({
+			["text"] = L.NEW_WITH_PATCH,
+			["icon"] = app.asset("WindowIcon_RWP"),
+			["description"] = L.NEW_WITH_PATCH_TOOLTIP,
+			["visible"] = true,
+			["back"] = 1,
+			["g"] = app:BuildSearchResponse("awp", app.GameBuildVersion),
+		});
+		self:BuildData();
+		self.ExpandInfo = { Expand = true, Manual = true };
+	end
+	if self:IsVisible() then
+		self:BaseUpdate(force);
 	end
 end;
 customWindowUpdates.Prime = function(self, ...)
@@ -11614,6 +11622,7 @@ customWindowUpdates.Random = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
+			local searchCache = {}
 
 			local function SearchRecursively(group, field, temp, func)
 				if group.visible and not (group.saved or group.collected) then
@@ -12093,25 +12102,25 @@ customWindowUpdates.Random = function(self)
 		self:BaseUpdate(true);
 	end
 end;
-customWindowUpdates.RWP = function(self)
-	if self:IsVisible() then
+customWindowUpdates.RWP = function(self, force)
+	if not self.initialized then
 		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 			return;
 		end
-		if not self.initialized then
-			self.initialized = true;
-			self:SetData({
-				["text"] = L.FUTURE_UNOBTAINABLE,
-				["icon"] = app.asset("WindowIcon_RWP"),
-				["description"] = L.FUTURE_UNOBTAINABLE_TOOLTIP,
-				["visible"] = true,
-				["back"] = 1,
-				["g"] = app:BuildSearchResponse("rwp"),
-			});
-			self:BuildData();
-			self.ExpandInfo = { Expand = true, Manual = true };
-		end
-		self:BaseUpdate(true);
+		self.initialized = true;
+		self:SetData({
+			["text"] = L.FUTURE_UNOBTAINABLE,
+			["icon"] = app.asset("WindowIcon_RWP"),
+			["description"] = L.FUTURE_UNOBTAINABLE_TOOLTIP,
+			["visible"] = true,
+			["back"] = 1,
+			["g"] = app:BuildSearchResponse("rwp"),
+		});
+		self:BuildData();
+		self.ExpandInfo = { Expand = true, Manual = true };
+	end
+	if self:IsVisible() then
+		self:BaseUpdate(force);
 	end
 end;
 customWindowUpdates.Sync = function(self)
@@ -12362,6 +12371,8 @@ end;
 customWindowUpdates.list = function(self, force, got)
 	if not self.initialized then
 		self.VerifyGroupSourceID = function(data)
+			-- can only determine a sourceID if there is an itemID on the group
+			if not data.itemID then return true end
 			if not data._VerifyGroupSourceID then data._VerifyGroupSourceID = 0 end
 			if data._VerifyGroupSourceID > 5 then return true end
 			data._VerifyGroupSourceID = data._VerifyGroupSourceID + 1
@@ -12529,7 +12540,6 @@ customWindowUpdates.list = function(self, force, got)
 
 		local ObjectTypeFuncs = {
 			questID = GetPopulatedQuestObject,
-			-- new function to build from cache table
 		};
 		if CacheFields then
 			-- app.PrintDebug("OTF:Define",dataType)
@@ -13578,28 +13588,29 @@ app.LoadDebugger = function()
 				_OnUpdate = 1,
 				_SettingsRefresh = 1,
 				_coord = 1,
+				__merge = 1,
 			};
 			local function CleanObject(obj)
-				local clean = {};
-				if obj[1] then
-					for _,o in ipairs(obj) do
-						tinsert(clean, CleanObject(o));
+				if obj == nil then return end
+				if type(obj) == "table" then
+					local clean = {};
+					if obj[1] then
+						for _,o in ipairs(obj) do
+							clean[#clean + 1] = CleanObject(o)
+						end
+					else
+						for k,v in pairs(obj) do
+							if not CleanFields[k] then
+								clean[k] = CleanObject(v)
+							end
+						end
 					end
+					return clean
+				elseif type(obj) == "number" then
+					return obj
 				else
-					for k,v in pairs(obj) do
-						if not CleanFields[k] then
-							clean[k] = v;
-						end
-					end
-					if clean.g then
-						local g = {};
-						for _,o in ipairs(clean.g) do
-							tinsert(g, CleanObject(o));
-						end
-						clean.g = g;
-					end
+					return tostring(obj)
 				end
-				return clean;
 			end
 			local function InitDebuggerData()
 				if not self.rawData then
@@ -13939,19 +13950,30 @@ app.LoadDebugger = function()
 					-- 	end
 					-- end
 
-					local info = { ["questID"] = questID, ["g"] = rawGroups };
-					local providers = {}
-					if questStartItemID and questStartItemID > 0 then tinsert(providers, { "i", questStartItemID }); end
-					if npc_id then
-						npc_id = tonumber(npc_id);
-						tinsert(providers, { type == "GameObject" and "o" or "n", npc_id })
-						local faction = UnitFactionGroup(npc);
-						if faction then
-							info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
-						end
+					local info = { ["questID"] = questID };
+					if #rawGroups > 0 then
+						info.g = rawGroups
 					end
-					if #providers > 0 then
-						info.providers = providers
+					info.name = app.GetQuestName(questID)
+					if e == "QUEST_DETAIL" then
+						local providers = {}
+						if questStartItemID and questStartItemID > 0 then tinsert(providers, { "i", questStartItemID }); end
+						if npc_id then
+							npc_id = tonumber(npc_id);
+							if type == "GameObject" then
+								tinsert(providers, { "o", npc_id })
+							else
+								info.qg = npc_id
+								info.qg_name = app.NPCNameFromID[npc_id]
+							end
+							local faction = UnitFactionGroup(npc);
+							if faction then
+								info.r = faction == "Horde" and Enum.FlightPathFaction.Horde or Enum.FlightPathFaction.Alliance;
+							end
+						end
+						if #providers > 0 then
+							info.providers = providers
+						end
 					end
 					AddObject(info);
 				-- Capture accepted quests which skip NPC dialog windows (addons, auto-accepted)
@@ -13959,6 +13981,7 @@ app.LoadDebugger = function()
 					local questID = ...
 					if questID then
 						local info = { ["questID"] = questID };
+						info.name = app.GetQuestName(questID)
 						AddObject(info);
 					end
 				-- Capture various personal/party loot received
@@ -14430,16 +14453,6 @@ app.SetupProfiles = function()
 	app.Settings:Initialize();
 end
 
-app.AddEventRegistration("BOSS_KILL", function(id, name, ...)
-	-- This is so that when you kill a boss, you can trigger
-	-- an automatic update of your saved instance cache.
-	-- (It does lag a little, but you can disable this if you want.)
-	-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
-	-- print("BOSS_KILL", id, name, ...);
-	app:UnregisterEvent("LOOT_CLOSED");
-	app:RegisterEvent("LOOT_CLOSED");
-end);
-
 app.ActiveCustomCollects = {};
 -- Called when the Addon is loaded to process initial startup information
 app.Startup = function()
@@ -14742,7 +14755,7 @@ SlashCmdList.AllTheThings = function(cmd)
 		elseif cmd == "finder" then
 			app.SetCustomWindowParam("list", "type", "itemharvester");
 			app.SetCustomWindowParam("list", "harvesting", true);
-			app.SetCustomWindowParam("list", "limit", 207000);
+			app.SetCustomWindowParam("list", "limit", 225000);
 			app:GetWindow("list"):Toggle();
 			return true;
 		elseif cmd == "harvest_achievements" then
@@ -14804,6 +14817,7 @@ SLASH_AllTheThingsHARVESTER1 = "/attharvest";
 SLASH_AllTheThingsHARVESTER2 = "/attharvester";
 SlashCmdList.AllTheThingsHARVESTER = function(cmd)
 	app.print("Force Debug Mode");
+	app.Debugging = true
 	app.Settings:ForceRefreshFromToggle();
 	app.Settings:SetDebugMode(true);
 	app.SetCustomWindowParam("list", "reset", true);

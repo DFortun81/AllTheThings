@@ -11,6 +11,29 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(10585),	-- Goblin Radio
 				i(10719),	-- Mobile Alarm
 			}),
+			expansion(EXPANSION.TBC, {
+				-- 2.0.1
+				expansion(EXPANSION.TBC, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_1 } }, {
+					i(23770),	-- Blue Smoke Flare
+					i(23820),	-- Critter Enlarger
+					i(23832),	-- Gnomish Tonk Controller
+					i(23831),	-- Goblin Tonk Controller
+					i(23840),	-- Remote Mail Terminal
+				})),
+			}),
+			expansion(EXPANSION.WRATH, {
+				-- 3.x.x
+				n(P3xx, {
+					i(37589),	-- Hyper-Powered Mote Extractor
+					i(48945),	-- Gnomish Thinking Cap
+				}),
+			}),
+			expansion(EXPANSION.MOP, {
+				-- 5.0.4
+				expansion(EXPANSION.MOP, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+					i(81143),	-- Avanced Deepdive Helmet
+				})),
+			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
 				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
@@ -106,9 +129,62 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				r(12722),	-- Goblin Radio
 				r(12900),	-- Mobile Alarm
 			}),
+			expansion(EXPANSION.TBC, {
+				-- 2.0.1
+				expansion(EXPANSION.TBC, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_1 } }, {
+					r(30573),	-- Gnomish Tonk Controller
+					r(30561),	-- Goblin Tonk Controller
+					-- With SpellID attached
+					i(23813),	-- Schematic: Blue Smoke Flare
+					i(23882),	-- Schematic: Critter Enlarger
+					i(23812),	-- Schematic: Red Smoke Flare
+					i(23885),	-- Schematic: Remote Mail Terminal
+				})),
+			}),
+			expansion(EXPANSION.WRATH, {
+				-- 3.0.2
+				expansion(EXPANSION.WRATH, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+					r(49383),	-- Engineering
+					r(56273),	-- Wormhole: Gadgetzan
+					r(53280),	-- Unknown
+				})),
+
+				-- 3.2.0
+				expansion(EXPANSION.WRATH, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_2_0 } }, {
+					r(67790),	-- Dimensional Folder: K3
+				})),
+			}),
+			expansion(EXPANSION.CATA, {
+				-- 4.0.1
+				expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
+					r(84344),	-- Unknown
+					r(84407),	-- Unknown
+					r(84422),	-- Unknown
+					r(84423),	-- Unknown
+					r(84433),	-- Unknown
+					r(84434),	-- Unknown
+				})),
+			}),
+			expansion(EXPANSION.MOP, {
+				-- 5.2.0
+				expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
+					-- Without SpellID attached
+					i(94894),	-- Schematic: Advanced Refrigeration Unit
+					i(97230),	-- Schematic: Jard's Peculiar Energy Source
+					i(94893),	-- Schematic: Pierre
+					i(94880),	-- Schematic: Sky Golem
+				})),
+
+				-- 5.4.0
+				expansion(EXPANSION.MOP, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_4_0 } }, {
+					-- Without SpellID attached
+					i(100907),	-- Schematic: Rascal-Bot
+				})),
+			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
 				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+					r(161543),	-- Unknown
 					-- Without SpellID attached
 					i(120134),	-- Recipe: Secrets of Draenor Engineering
 				})),
@@ -265,27 +341,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(199415),	-- Schematic: Zapthrottle Soul Inhaler (RECIPE!)
 				})),
 			}),
-		}),
-	}),
-	-- Needs Sorting
-	prof(ENGINEERING, {
-		expansion(EXPANSION.TBC, {
-			i(23813),	-- Schematic: Blue Smoke Flare [Removed in TBC Beta]
-			i(23882),	-- Schematic: Critter Enlarger [Removed in TBC Beta]
-			i(23812),	-- Schematic: Red Smoke Flare [Removed in TBC Beta]
-		}),
-		expansion(EXPANSION.WRATH, {
-			i(37589),	-- Hyper-Powered Mote Extractor
-		}),
-		expansion(EXPANSION.MOP, {
-			-- 5.2.0
-			expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = {"created 5.2.0"} }, {
-				i(94894),	-- Schematic: Advanced Refrigeration Unit
-				i(97230),	-- Schematic: Jard's Peculiar Energy Source
-				i(94893),	-- Schematic: Pierre
-				i(94880),	-- Schematic: Sky Golem
-			})),
-			i(100907),	-- Schematic: Rascal-Bot
 		}),
 	}),
 }));

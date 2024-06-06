@@ -11,7 +11,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 49.0, 55.8, BROKEN_SHORE },
 					["g"] = {
 						i(147120, {	-- Technique: Grimoire of the Shadow Succubus
-							["timeline"] = { "added 7.2.0" },
+							["timeline"] = { ADDED_7_2_0 },
 						}),
 					},
 				}),
@@ -300,11 +300,11 @@ root(ROOTS.Zones, {
 					}),
 					i(151541, {	-- Technique: Glyph of Floating Shards
 						["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
-						["timeline"] = { "added 7.2.5" },
+						["timeline"] = { ADDED_7_2_5 },
 					}),
 					i(141067, {	-- Technique: Grimoire of the Wrathguard
 						["cost"] = { { "c", 1226, 2500 }, },	-- 2,500x Nethershard
-						["timeline"] = { "added 7.2.0" },
+						["timeline"] = { ADDED_7_2_0 },
 					}),
 				}),
 			}),

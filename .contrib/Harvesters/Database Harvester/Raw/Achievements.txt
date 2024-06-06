@@ -13663,6 +13663,8 @@
 40171@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 24 [DNT]
 40192@@@<Hidden> 10.2.6 Void Zone - Keg Leg Renown 39 [DNT]
 40193@@@Into the Storm (copy)
+10.2.6.54358
+40315@@@[HIDDEN] Now THIS is Dragon Racing!
 10.2.7.54171
 17918@@@Undead Battler of Zaralek Cavern
 19871@@@Infinite Power
@@ -13849,6 +13851,10 @@
 40223@@@Timerunner
 40226@@@Realm First! Timerunner
 40227@@@Realm First! Mythic Garrosh
+10.2.7.54295
+19961@@@Mythic Remix: Siege of Orgrimmar
+10.2.7.54630
+40382@@@Hunt the Harbinger
 11.0.0.54311
 12926@@@Artifact Power Earned by the Heart of Azeroth
 16633@@@<DNT> Maruuk Centaur Title Quest
@@ -13922,7 +13928,6 @@
 19776@@@Algarian Skinning 50 (DNT)
 19777@@@Algarian Skinning 75 (DNT)
 19778@@@Algarian Skinning 100 (DNT)
-19961@@@Mythic Remix: Siege of Orgrimmar
 20074@@@Dynamic Duo Complete (DNT)
 20077@@@Terrific Trio Complete (DNT)
 20078@@@Quintessential Quintet Complete (DNT)
@@ -14469,3 +14474,633 @@
 40296@@@Queen Ansurek kills (Normal Nerub-ar Palace)
 40297@@@Queen Ansurek kills (Heroic Nerub-ar Palace)
 40298@@@Queen Ansurek kills (Mythic Nerub-ar Palace)
+11.0.0.54361
+20255@@@Dornogal Drift: Bronze
+20256@@@Dornogal Drift: Silver
+20257@@@Dornogal Drift: Gold
+20258@@@Dornogal Drift Advanced: Bronze
+20259@@@Dornogal Drift Advanced: Silver
+20260@@@Dornogal Drift Advanced: Gold
+20261@@@Dornogal Drift Reverse: Bronze
+20262@@@Dornogal Drift Reverse: Silver
+20263@@@Dornogal Drift Reverse: Gold
+20264@@@Storm's Watch Survey: Bronze
+20265@@@Storm's Watch Survey: Silver
+20266@@@Storm's Watch Survey: Gold
+20267@@@Storm's Watch Survey Advanced: Bronze
+20268@@@Storm's Watch Survey Advanced: Silver
+20269@@@Storm's Watch Survey Advanced: Gold
+20270@@@Storm's Watch Survey Reverse: Bronze
+20271@@@Storm's Watch Survey Reverse: Silver
+20272@@@Storm's Watch Survey Reverse: Gold
+20273@@@Basin Bypass: Bronze
+20274@@@Basin Bypass: Silver
+20275@@@Basin Bypass: Gold
+20276@@@Basin Bypass Advanced: Bronze
+20277@@@Basin Bypass Advanced: Silver
+20278@@@Basin Bypass Advanced: Gold
+20279@@@Basin Bypass Reverse: Bronze
+20280@@@Basin Bypass Reverse: Silver
+20281@@@Basin Bypass Reverse: Gold
+20282@@@The Wold Ways: Bronze
+20283@@@The Wold Ways: Silver
+20284@@@The Wold Ways: Gold
+20285@@@The Wold Ways Advanced: Bronze
+20286@@@The Wold Ways Advanced: Silver
+20287@@@The Wold Ways Advanced: Gold
+20288@@@The Wold Ways Reverse: Bronze
+20289@@@The Wold Ways Reverse: Silver
+20290@@@The Wold Ways Reverse: Gold
+20291@@@Thunderhead Trail: Bronze
+20292@@@Thunderhead Trail: Silver
+20293@@@Thunderhead Trail: Gold
+20294@@@Thunderhead Trail Advanced: Bronze
+20295@@@Thunderhead Trail Advanced: Silver
+20296@@@Thunderhead Trail Advanced: Gold
+20297@@@Thunderhead Trail Reverse: Bronze
+20298@@@Thunderhead Trail Reverse: Silver
+20299@@@Thunderhead Trail Reverse: Gold
+20300@@@Orecreg's Doglegs: Bronze
+20301@@@Orecreg's Doglegs: Silver
+20302@@@Orecreg's Doglegs: Gold
+20303@@@Orecreg's Doglegs Advanced: Bronze
+20304@@@Orecreg's Doglegs Advanced: Silver
+20305@@@Orecreg's Doglegs Advanced: Gold
+20306@@@Orecreg's Doglegs Reverse: Bronze
+20307@@@Orecreg's Doglegs Reverse: Silver
+20308@@@Orecreg's Doglegs Reverse: Gold
+20309@@@Earthenworks Weave: Bronze
+20310@@@Earthenworks Weave: Silver
+20311@@@Earthenworks Weave: Gold
+20312@@@Earthenworks Weave Advanced: Bronze
+20313@@@Earthenworks Weave Advanced: Silver
+20314@@@Earthenworks Weave Advanced: Gold
+20315@@@Earthenworks Weave Reverse: Bronze
+20316@@@Earthenworks Weave Reverse: Silver
+20317@@@Earthenworks Weave Reverse: Gold
+20318@@@Ringing Deeps Ramble: Bronze
+20319@@@Ringing Deeps Ramble: Silver
+20320@@@Ringing Deeps Ramble: Gold
+20321@@@Ringing Deeps Ramble Advanced: Bronze
+20322@@@Ringing Deeps Ramble Advanced: Silver
+20323@@@Ringing Deeps Ramble Advanced: Gold
+20324@@@Ringing Deeps Ramble Reverse: Bronze
+20325@@@Ringing Deeps Ramble Reverse: Silver
+20326@@@Ringing Deeps Ramble Reverse: Gold
+20327@@@Chittering Concourse: Bronze
+20328@@@Chittering Concourse: Silver
+20329@@@Chittering Concourse: Gold
+20330@@@Chittering Concourse Advanced: Bronze
+20331@@@Chittering Concourse Advanced: Silver
+20332@@@Chittering Concourse Advanced: Gold
+20333@@@Chittering Concourse Reverse: Bronze
+20334@@@Chittering Concourse Reverse: Silver
+20335@@@Chittering Concourse Reverse: Gold
+20336@@@Cataract River Cruise: Bronze
+20337@@@Cataract River Cruise: Silver
+20338@@@Cataract River Cruise: Gold
+20339@@@Cataract River Cruise Advanced: Bronze
+20340@@@Cataract River Cruise Advanced: Silver
+20341@@@Cataract River Cruise Advanced: Gold
+20342@@@Cataract River Cruise Reverse: Bronze
+20343@@@Cataract River Cruise Reverse: Silver
+20344@@@Cataract River Cruise Reverse: Gold
+20345@@@Taelloch Twist: Bronze
+20346@@@Taelloch Twist: Silver
+20347@@@Taelloch Twist: Gold
+20348@@@Taelloch Twist Advanced: Bronze
+20349@@@Taelloch Twist Advanced: Silver
+20350@@@Taelloch Twist Advanced: Gold
+20351@@@Taelloch Twist Reverse: Bronze
+20352@@@Taelloch Twist Reverse: Silver
+20353@@@Taelloch Twist Reverse: Gold
+20354@@@Opportunity Point Amble: Bronze
+20355@@@Opportunity Point Amble: Silver
+20356@@@Opportunity Point Amble: Gold
+20357@@@Opportunity Point Amble Advanced: Bronze
+20358@@@Opportunity Point Amble Advanced: Silver
+20359@@@Opportunity Point Amble Advanced: Gold
+20360@@@Opportunity Point Amble Reverse: Bronze
+20361@@@Opportunity Point Amble Reverse: Silver
+20362@@@Opportunity Point Amble Reverse: Gold
+20363@@@Dunelle's Detour: Bronze
+20364@@@Dunelle's Detour: Silver
+20365@@@Dunelle's Detour: Gold
+20366@@@Dunelle's Detour Advanced: Bronze
+20367@@@Dunelle's Detour Advanced: Silver
+20368@@@Dunelle's Detour Advanced: Gold
+20369@@@Dunelle's Detour Reverse: Bronze
+20370@@@Dunelle's Detour Reverse: Silver
+20371@@@Dunelle's Detour Reverse: Gold
+20372@@@Tenir's Traversal: Bronze
+20373@@@Tenir's Traversal: Silver
+20374@@@Tenir's Traversal: Gold
+20375@@@Tenir's Traversal Advanced: Bronze
+20376@@@Tenir's Traversal Advanced: Silver
+20377@@@Tenir's Traversal Advanced: Gold
+20378@@@Tenir's Traversal Reverse: Bronze
+20379@@@Tenir's Traversal Reverse: Silver
+20380@@@Tenir's Traversal Reverse: Gold
+20381@@@Light's Redoubt Descent: Bronze
+20382@@@Light's Redoubt Descent: Silver
+20383@@@Light's Redoubt Descent: Gold
+20384@@@Light's Redoubt Descent Advanced: Bronze
+20385@@@Light's Redoubt Descent Advanced: Silver
+20386@@@Light's Redoubt Descent Advanced: Gold
+20387@@@Light's Redoubt Descent Reverse: Bronze
+20388@@@Light's Redoubt Descent Reverse: Silver
+20389@@@Light's Redoubt Descent Reverse: Gold
+20390@@@Stillstone Slalom: Bronze
+20391@@@Stillstone Slalom: Silver
+20392@@@Stillstone Slalom: Gold
+20393@@@Stillstone Slalom Advanced: Bronze
+20394@@@Stillstone Slalom Advanced: Silver
+20395@@@Stillstone Slalom Advanced: Gold
+20396@@@Stillstone Slalom Reverse: Bronze
+20397@@@Stillstone Slalom Reverse: Silver
+20398@@@Stillstone Slalom Reverse: Gold
+20399@@@Mereldar Meander: Bronze
+20400@@@Mereldar Meander: Silver
+20401@@@Mereldar Meander: Gold
+20402@@@Mereldar Meander Advanced: Bronze
+20403@@@Mereldar Meander Advanced: Silver
+20404@@@Mereldar Meander Advanced: Gold
+20405@@@Mereldar Meander Reverse: Bronze
+20406@@@Mereldar Meander Reverse: Silver
+20407@@@Mereldar Meander Reverse: Gold
+20408@@@Velhan's Venture: Bronze
+20409@@@Velhan's Venture: Silver
+20410@@@Velhan's Venture: Gold
+20411@@@Velhan's Venture Advanced: Bronze
+20412@@@Velhan's Venture Advanced: Silver
+20413@@@Velhan's Venture Advanced: Gold
+20414@@@Velhan's Venture Reverse: Bronze
+20415@@@Velhan's Venture Reverse: Silver
+20416@@@Velhan's Venture Reverse: Gold
+20419@@@City of Threads Twist: Bronze
+20420@@@City of Threads Twist: Silver
+20421@@@City of Threads Twist: Gold
+20422@@@City of Threads Twist Advanced: Bronze
+20423@@@City of Threads Twist Advanced: Silver
+20424@@@City of Threads Twist Advanced: Gold
+20425@@@City of Threads Twist Reverse: Bronze
+20426@@@City of Threads Twist Reverse: Silver
+20427@@@City of Threads Twist Reverse: Gold
+20429@@@Maddening Deep Dip: Bronze
+20430@@@Maddening Deep Dip: Silver
+20431@@@Maddening Deep Dip: Gold
+20432@@@Maddening Deep Dip Advanced: Bronze
+20433@@@Maddening Deep Dip Advanced: Silver
+20434@@@Maddening Deep Dip Advanced: Gold
+20435@@@Maddening Deep Dip Reverse: Bronze
+20436@@@Maddening Deep Dip Reverse: Silver
+20437@@@Maddening Deep Dip Reverse: Gold
+20439@@@The Weaver's Wing: Bronze
+20440@@@The Weaver's Wing: Silver
+20441@@@The Weaver's Wing: Gold
+20442@@@The Weaver's Wing Advanced: Bronze
+20443@@@The Weaver's Wing Advanced: Silver
+20444@@@The Weaver's Wing Advanced: Gold
+20445@@@The Weaver's Wing Reverse: Bronze
+20446@@@The Weaver's Wing Reverse: Silver
+20447@@@The Weaver's Wing Reverse: Gold
+20448@@@Rak-Ahat Rush: Bronze
+20449@@@Rak-Ahat Rush: Silver
+20450@@@Rak-Ahat Rush: Gold
+20451@@@Rak-Ahat Rush Advanced: Bronze
+20452@@@Rak-Ahat Rush Advanced: Silver
+20453@@@Rak-Ahat Rush Advanced: Gold
+20454@@@Rak-Ahat Rush Reverse: Bronze
+20455@@@Rak-Ahat Rush Reverse: Silver
+20456@@@Rak-Ahat Rush Reverse: Gold
+20457@@@Pit Plunge: Bronze
+20458@@@Pit Plunge: Silver
+20459@@@Pit Plunge: Gold
+20460@@@Pit Plunge Advanced: Bronze
+20461@@@Pit Plunge Advanced: Silver
+20462@@@Pit Plunge Advanced: Gold
+20463@@@Pit Plunge Reverse: Bronze
+20464@@@Pit Plunge Reverse: Silver
+20465@@@Pit Plunge Reverse: Gold
+20466@@@Siegehold Scuttle: Bronze
+20467@@@Siegehold Scuttle: Silver
+20468@@@Siegehold Scuttle: Gold
+20469@@@Siegehold Scuttle Advanced: Bronze
+20470@@@Siegehold Scuttle Advanced: Silver
+20471@@@Siegehold Scuttle Advanced: Gold
+20472@@@Siegehold Scuttle Reverse: Bronze
+20473@@@Siegehold Scuttle Reverse: Silver
+20474@@@Siegehold Scuttle Reverse: Gold
+40138@@@Algari Dungeoneer
+40139@@@Algari Dungeon Damage Dealer
+40140@@@Algari Dungeon Healer
+40141@@@Algari Dungeon Tank
+40247@@@The Skittering Battlements
+40248@@@Secrets of Nerub-ar Palace
+40249@@@A Queen's Fall
+40263@@@Would you still /love me if I was a worm...
+40305@@@Allied Races: Earthen (Hidden Character Achievement)
+40306@@@Allied Races: Earthen
+40307@@@Allied Races: Earthen Unlock Requirements
+40308@@@Beacon of Hope
+40309@@@Heritage of the Earthen
+40311@@@Sharing the Light
+40312@@@Starting the Flames
+40313@@@Igniting the Keyflames
+40314@@@Memories of a Worldsoul
+40316@@@Isle of Dorn: Bronze
+40317@@@Isle of Dorn: Silver
+40318@@@Isle of Dorn: Gold
+40319@@@Isle of Dorn Advanced: Bronze
+40320@@@Isle of Dorn Advanced: Silver
+40321@@@Isle of Dorn Advanced: Gold
+40322@@@Isle of Dorn Reverse: Bronze
+40323@@@Isle of Dorn Reverse: Silver
+40324@@@Isle of Dorn Reverse: Gold
+40325@@@The Ringing Deeps: Bronze
+40326@@@The Ringing Deeps: Silver
+40327@@@The Ringing Deeps: Gold
+40328@@@The Ringing Deeps Advanced: Bronze
+40329@@@The Ringing Deeps Advanced: Silver
+40330@@@The Ringing Deeps Advanced: Gold
+40331@@@The Ringing Deeps Reverse: Bronze
+40332@@@The Ringing Deeps Reverse: Silver
+40333@@@The Ringing Deeps Reverse: Gold
+40334@@@Hallowfall: Bronze
+40335@@@Hallowfall: Silver
+40336@@@Hallowfall: Gold
+40337@@@Hallowfall Advanced: Bronze
+40338@@@Hallowfall Advanced: Silver
+40339@@@Hallowfall Advanced: Gold
+40340@@@Hallowfall Reverse: Bronze
+40341@@@Hallowfall Reverse: Silver
+40342@@@Hallowfall Reverse: Gold
+40343@@@Azj-Kahet: Bronze
+40344@@@Azj-Kahet: Silver
+40345@@@Azj-Kahet: Gold
+40346@@@Azj-Kahet Advanced: Bronze
+40347@@@Azj-Kahet Advanced: Silver
+40348@@@Azj-Kahet Advanced: Gold
+40349@@@Azj-Kahet Reverse: Bronze
+40350@@@Azj-Kahet Reverse: Silver
+40351@@@Azj-Kahet Reverse: Gold
+40352@@@Khaz Algar Completionist: Bronze
+40353@@@Khaz Algar Completionist: Silver
+40354@@@Khaz Algar Completionist: Gold
+40360@@@Life on the Farm
+40361@@@Cinderbrew Meadery
+40363@@@Heroic: Cinderbrew Meadery
+40366@@@Mythic: Cinderbrew Meadery
+40370@@@Ara-Kara, City of Echoes
+40374@@@Heroic: Ara-Kara, City of Echoes
+40375@@@Mythic: Ara-Kara, City of Echoes
+40376@@@City of Threads
+40377@@@Heroic: City of Threads
+40379@@@Mythic: City of Threads
+11.0.0.54521
+19408@@@Professional Algari Master
+19410@@@Algari Master of All
+19414@@@Algari Cook
+19415@@@Algari Fisherman
+19515@@@Algari Master of Many
+19704@@@Overflowing Algari Flasks
+19716@@@Plentiful Algari Potions
+19735@@@Algari Alchemy 25 (DNT)
+19736@@@Algari Alchemy 50 (DNT)
+19737@@@Algari Alchemy 75 (DNT)
+19738@@@Algari Alchemy 100 (DNT)
+19739@@@Algari Blacksmithing 25 (DNT)
+19740@@@Algari Blacksmithing 50 (DNT)
+19741@@@Algari Blacksmithing 75 (DNT)
+19742@@@Algari Blacksmithing 100 (DNT)
+19743@@@Algari Enchanting 25 (DNT)
+19744@@@Algari Enchanting 50 (DNT)
+19745@@@Algari Enchanting 75 (DNT)
+19746@@@Algari Enchanting 100 (DNT)
+19747@@@Algari Engineering 25 (DNT)
+19748@@@Algari Engineering 50 (DNT)
+19749@@@Algari Engineering 75 (DNT)
+19750@@@Algari Engineering 100 (DNT)
+19751@@@Algari Inscription 25 (DNT)
+19752@@@Algari Inscription 50 (DNT)
+19753@@@Algari Inscription 75 (DNT)
+19754@@@Algari Inscription 100 (DNT)
+19755@@@Algari Jewelcrafting 25 (DNT)
+19756@@@Algari Jewelcrafting 50 (DNT)
+19757@@@Algari Jewelcrafting 75 (DNT)
+19758@@@Algari Jewelcrafting 100 (DNT)
+19759@@@Algari Leatherworking 25 (DNT)
+19760@@@Algari Leatherworking 50 (DNT)
+19761@@@Algari Leatherworking 75 (DNT)
+19762@@@Algari Leatherworking 100 (DNT)
+19763@@@Algari Tailoring 25 (DNT)
+19764@@@Algari Tailoring 50 (DNT)
+19765@@@Algari Tailoring 75 (DNT)
+19766@@@Algari Tailoring 100 (DNT)
+19767@@@Algari Herbalism 25 (DNT)
+19768@@@Algari Herbalism 50 (DNT)
+19769@@@Algari Herbalism 75 (DNT)
+19770@@@Algari Herbalism 100 (DNT)
+19771@@@Algari Mining 25 (DNT)
+19772@@@Algari Mining 50 (DNT)
+19773@@@Algari Mining 75 (DNT)
+19774@@@Algari Mining 100 (DNT)
+19775@@@Algari Skinning 25 (DNT)
+19776@@@Algari Skinning 50 (DNT)
+19777@@@Algari Skinning 75 (DNT)
+19778@@@Algari Skinning 100 (DNT)
+40240@@@Mythic: Broodtwister Ovi'nax
+40260@@@You Can't See Me
+40283@@@Broodtwister Ovi'nax kills (Raid Finder Nerub-ar Palace)
+40284@@@Broodtwister Ovi'nax kills (Normal Nerub-ar Palace)
+40285@@@Broodtwister Ovi'nax kills (Heroic Nerub-ar Palace)
+40286@@@Broodtwister Ovi'nax kills (Mythic Nerub-ar Palace)
+40314@@@Fragments of Memories
+40380@@@Forged Gladiator: The War Within Season 1
+40381@@@Forged Legend: The War Within Season 1
+40383@@@Hero of the Alliance: Forged
+40384@@@Hero of the Horde: Forged
+40385@@@Combatant I: The War Within Season 1
+40386@@@Combatant II: The War Within Season 1
+40387@@@Challenger I: The War Within Season 1
+40388@@@Challenger II: The War Within Season 1
+40389@@@Rival I: The War Within Season 1
+40390@@@Rival II: The War Within Season 1
+40391@@@Duelist: The War Within Season 1
+40392@@@Elite: The War Within Season 1
+40393@@@Gladiator: The War Within Season 1
+40395@@@Legend: The War Within Season 1
+40396@@@Forged Combatant
+40397@@@Forged Combatant
+40398@@@Forged Gladiator's Fel Bat
+40427@@@Darkflame Cleft
+40428@@@Heroic: Darkflame Cleft
+40429@@@Mythic: Darkflame Cleft
+40430@@@Khaz Algar Flight Master
+11.0.0.54605
+40222@@@Echoes of Danger
+40261@@@Slimy Yet Satisfying
+40266@@@Missed 'Em by That Much
+40431@@@Hunting the Hunter
+40432@@@Nemesis (Solo)
+40433@@@Hunting the Hunter (Solo)
+40434@@@Treasures of the Isle of Dorn
+40435@@@Adventurer of the Isle of Dorn
+40436@@@You're Getting a Delve!
+40437@@@Delver of the Depths
+40438@@@Glory of the Delver
+40445@@@[NYI] Spore Sweeper
+40446@@@[NYI] I TAKE Candle!
+40447@@@Delver of the Depths II
+40448@@@Delver of the Depths III
+40449@@@Delver of the Depths IV
+40450@@@Companion Level 20
+40451@@@Companion Level 30
+40452@@@[NYI] Kobyss Challenge
+40453@@@[NYI] Nerubian Challenge
+40454@@@[NYI] Order of Night Challenge
+40455@@@Companion Level 10
+40456@@@Companion Level 40
+40457@@@Companion Level 50
+40458@@@Rare Within
+40459@@@[PH] Delver's Dirigible
+40460@@@10 Delves Completed
+40461@@@Companion Level 60
+40462@@@50 Delves Completed
+40463@@@100 Delves Completed
+11.0.0.54675
+40250@@@The First Echo
+40251@@@Many Echoes
+40252@@@A Series of Echoes
+40262@@@Cowabunga
+40445@@@Sporesweeper
+40446@@@I TAKE Candle!
+40450@@@Buddy System II
+40451@@@Buddy System III
+40452@@@Just Keep Swimming
+40453@@@Spider Senses
+40454@@@Daystormer
+40455@@@Buddy System I
+40456@@@Buddy System IV
+40457@@@Buddy System V
+40458@@@Rare Finding
+40459@@@I've Got a Flying Machine!
+40460@@@Delve Deep
+40461@@@Buddy System VI
+40462@@@Delve Deeper
+40463@@@Delve Deepest
+40464@@@Bounty Master
+40465@@@Unbound Bounty
+40466@@@Unbound Glory
+40467@@@Unbound Glory
+40468@@@Unbound Glory
+40469@@@I'm Bringing Nerub-ack
+40472@@@Battle Mender: The War Within Season 1
+40473@@@Not So Quick Fix
+40475@@@To All the Slimes I Love
+40476@@@10 Algari Seekerthread
+40480@@@20 Algari Seekerthread
+40484@@@30 Algari Seekerthread
+40485@@@40 Algari Seekerthread
+40487@@@50 Algari Seekerthread
+40488@@@60 Algari Seekerthread
+40489@@@70 Algari Seekerthread
+40490@@@80 Algari Seekerthread
+40491@@@90 Algari Seekerthread
+40492@@@100 Algari Seekerthread
+40494@@@10 Algari Anglerthread
+40495@@@20 Algari Anglerthread
+40496@@@60 Algari Anglerthread
+40497@@@30 Algari Anglerthread
+40498@@@70 Algari Anglerthread
+40499@@@40 Algari Anglerthread
+40500@@@80 Algari Anglerthread
+40501@@@100 Algari Anglerthread
+40502@@@50 Algari Anglerthread
+40503@@@90 Algari Anglerthread
+40504@@@Rocked to Sleep
+40505@@@Fate of the Kirin Tor
+40506@@@No Stone Unturned
+40507@@@Hanging Tight
+40509@@@Awakening The Machine: Wave 10
+40510@@@One Ping Only
+40511@@@Rare Within
+40512@@@War Within: Tier 3
+40514@@@War Within: Tier 4
+40515@@@War Within: Tier 5
+40516@@@War Within: Tier 6
+40517@@@War Within: Tier 7
+40518@@@War Within: Tier 8
+40519@@@War Within: Tier 9
+40520@@@War Within: Tier 10
+40521@@@War Within: Tier 11
+40523@@@On Brand
+40524@@@Good Deed Delver
+40525@@@Fungal Folly Stories
+40526@@@Kriegval's Rest Stories
+40527@@@Earthcrawl Mines Stories
+40528@@@The Waterworks Stories
+40529@@@The Dread Pit Stories
+40530@@@Nightfall Sanctum Stories
+40531@@@Mycomancer Cavern Stories
+40532@@@The Sinkhole Stories
+40533@@@Skittering Breach Stories
+40534@@@The Underkeep Stories
+40535@@@Tak-Rethan Abyss Stories
+40536@@@The Spiral Weave Stories
+40537@@@Delve Loremaster: War Within
+40538@@@Brann Development
+40539@@@The Derby Dash
+11.0.0.54774
+40151@@@Mereldar Menace
+40215@@@Deepwind Ravine Shutout
+40542@@@Smelling History
+40543@@@<DNT> Patient 1 - Mereldar Infirmary
+40544@@@<DNT> Patient 2 - Mereldar Infirmary
+40545@@@<DNT> Patient 3 - Mereldar Infirmary
+40547@@@<DNT> Patient 4 - Mereldar Infirmary
+40548@@@<DNT> Patient 5 - Mereldar Infirmary
+40549@@@<DNT> Patient 6 - Mereldar Infirmary
+40550@@@<DNT> Patient 7 - Mereldar Infirmary
+40569@@@Nothing Boring About Borean (char specific hidden copy)
+40570@@@I've Toured the Fjord (char specific hidden copy)
+40571@@@Icecrown: The Final Goal (char specific hidden copy)
+40572@@@To Hellfire and Back (char specific hidden copy)
+40573@@@Shadow of the Betrayer (char specific hidden copy)
+40574@@@To Hellfire and Back (char specific hidden copy)
+40575@@@I've Toured the Fjord (char specific hidden copy)
+40576@@@Nothing Boring About Borean (char specific hidden copy)
+40577@@@Mighty Roamin' Krasaranger (char specific hidden copy)
+40578@@@Mighty Roamin' Krasaranger (char specific hidden copy)
+40579@@@That's Val'sharah Folks! (char specific hidden copy)
+40580@@@Azsuna Matata (char specific hidden copy)
+40581@@@Vrykul Story, Bro (char specific hidden copy)
+40582@@@Breaching the Tomb (char specific hidden copy)
+40583@@@You Are Now Prepared! (char specific hidden copy)
+40584@@@A Sound Plan (char specific hidden copy)
+40585@@@Super Size Snuffling
+40586@@@Awakening The Machine: Wave 20
+40587@@@Awakening The Machine: Wave 30
+40588@@@Awakening The Machine: Wave 40
+40589@@@Awakening The Machine: Wave 50
+40590@@@Priory of the Sacred Flame
+40591@@@Khaz Algar Diplomat
+40592@@@Heroic: Priory of the Sacred Flame
+40596@@@Mythic: Priory of the Sacred Flame
+40599@@@The Dawnbreaker
+40601@@@Heroic: The Dawnbreaker
+40604@@@Mythic: The Dawnbreaker
+40606@@@Flat Earthen
+40607@@@Wandering in the Ravine
+40608@@@Running in the Ravine
+40612@@@Sprinting in the Ravine
+40613@@@Resilient Runner
+40614@@@Gobblin' with Glublurp
+40615@@@Unexpected Arrival
+40616@@@Unexpected Arrivals
+40617@@@Deepholla
+40618@@@Lost and Found
+40619@@@Mine Poppin'
+40620@@@Back to the Wall
+40621@@@The Rookery
+40622@@@Biblo Archivist
+11.0.0.54935
+20487@@@Ki'katal the Harvester kills (Mythic Ara-Kara, City of Echoes)
+20594@@@Flamegard's Hope
+20597@@@The War Within
+40152@@@Skyriding Glyphs: The Three Shields
+40166@@@Isle of Dorn Glyph Hunter
+40512@@@War Within Delves: Tier 2
+40514@@@War Within Delves: Tier 3
+40515@@@War Within Delves: Tier 4
+40516@@@War Within Delves: Tier 5
+40517@@@War Within Delves: Tier 6
+40518@@@War Within Delves: Tier 7
+40519@@@War Within Delves: Tier 8
+40520@@@War Within Delves: Tier 9
+40521@@@War Within Delves: Tier 10
+40623@@@I Only Need One Trip
+40624@@@Itsy Bitsy Spider
+40625@@@The Missing Lynx
+40628@@@Notable Machines
+40629@@@Bookworm
+40630@@@For the Collective
+40631@@@War Within Delves: Tier 1
+40632@@@No Harm Ever Came From Reading A Book
+40633@@@The Unseeming
+40634@@@You Can't Hang With Us
+40635@@@Branntastic
+40636@@@Sojourner of Azj-Kahet
+40637@@@Heroic: The Rookery
+40642@@@Mythic: The Rookery
+40643@@@The Stonevault
+40644@@@Heroic: The Stonevault
+40648@@@Mythic: The Stonevault
+40652@@@Goldie Baronbottom kills (Normal Cinderbrew Meadery)
+40653@@@Goldie Baronbottom kills (Heroic Cinderbrew Meadery)
+40654@@@Goldie Baronbottom kills (Mythic Cinderbrew Meadery)
+40657@@@Prioress Murrapray kills (Normal Priory of the Sacred Flame)
+40658@@@Prioress Murrapray kills (Heroic Priory of the Sacred Flame)
+40659@@@Prioress Murrapray kills (Mythic Priory of the Sacred Flame)
+40660@@@The War Within Season 1: Spelunker Supreme
+40662@@@It's Not Much, But It's Honest Work
+40663@@@Skyriding Glyphs: Dhar Oztan
+40664@@@Skyriding Glyphs: Storm's Watch
+40665@@@Skyriding Glyphs: Dhar Durgaz
+40666@@@Skyriding Glyphs: Sunken Shield
+40667@@@Skyriding Glyphs: Thul Medran
+40668@@@Skyriding Glyphs: Thunderhead Peak
+40669@@@Skyriding Glyphs: Cinderbrew Meadery
+40670@@@Skyriding Glyphs: Mourning Rise
+40671@@@Skyriding Glyphs: Ironwold
+40672@@@Skyriding Glyphs: Gundargaz
+40673@@@Skyriding Glyphs: The Stonevault Exterior
+40674@@@Skyriding Glyphs: The Lost Mines
+40675@@@Skyriding Glyphs: Chittering Den
+40676@@@Skyriding Glyphs: The Rumbling Wastes
+40677@@@Skyriding Glyphs: The Living Grotto
+40678@@@Skyriding Glyphs: Abyssal Excavation
+40679@@@Skyriding Glyphs: Taelloch Mine
+40680@@@Skyriding Glyphs: The Waterworks
+40681@@@Skyriding Glyphs: The Fangs
+40682@@@Skyriding Glyphs: Sina's Yearning
+40683@@@Skyriding Glyphs: Sanguine Grasps
+40684@@@Skyriding Glyphs: Dunelle's Kindness
+40685@@@Skyriding Glyphs: Bleak Sand
+40686@@@Skyriding Glyphs: Mereldar
+40687@@@Skyriding Glyphs: Priory of the Sacred Flame
+40688@@@Skyriding Glyphs: Fortune's Fall
+40689@@@Skyriding Glyphs: Velhan's Claim
+40690@@@Skyriding Glyphs: Tenir's Ascent
+40691@@@Skyriding Glyphs: Arathi's End
+40692@@@Skyriding Glyphs: Siegehold
+40693@@@Skyriding Glyphs: Ruptured Lake
+40694@@@Skyriding Glyphs: Eye of Ansurek
+40695@@@Skyriding Glyphs: Old Sacrificial Pit
+40696@@@Skyriding Glyphs: Deepwalker Pass
+40697@@@Skyriding Glyphs: The Maddening Deep
+40698@@@Skyriding Glyphs: Rak-Ush
+40699@@@Skyriding Glyphs: Silken Ward
+40700@@@Skyriding Glyphs: Trickling Abyss
+40701@@@Skyriding Glyphs: Untamed Valley
+40702@@@Khaz Algar Glyph Hunter
+40703@@@The Ringing Deeps Glyph Hunter
+40704@@@Hallowfall Glyph Hunter
+40705@@@Azj-Kahet Glyph Hunter
+40706@@@Izo, the Grand Splicer kills (Normal City of Threads)
+40709@@@Izo, the Grand Splicer kills (Heroic City of Threads)
+40710@@@Izo, the Grand Splicer kills (Mythic City of Threads)
+40711@@@Rasha'nan kills (Normal The Dawnbreaker)
+40714@@@Rasha'nan kills (Heroic The Dawnbreaker)
+40715@@@Rasha'nan kills (Mythic The Dawnbreaker)
+40716@@@Voidstone Monstrosity kills (Normal The Rookery)
+40717@@@Voidstone Monstrosity kills (Heroic The Rookery)
+40718@@@Voidstone Monstrosity kills (Mythic The Rookery)
+40719@@@Void Speaker Eirich (Normal The Stonevault)
+40721@@@Void Speaker Eirich (Heroic The Stonevault)
+40722@@@Void Speaker Eirich (Mythic The Stonevault)
+40723@@@[PH] 11.0 Mythic VFX Unlock
+40724@@@Treasures of the Ringing Deeps
+40725@@@War Within Delves: Endgame
+40726@@@War Within Delves: Tier 11
+40727@@@Skittershaw Spin

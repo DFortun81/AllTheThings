@@ -362,7 +362,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 											["collectible"] = false,
 										}),
 										i(142274, {	-- Keleseth's Persuader
-											["timeline"] = { "added 7.0.3.22248" },
+											["timeline"] = { ADDED_7_0_3 },
 										}),
 									}),
 									i(38672),	-- Keleseth's Signet Ring
@@ -401,7 +401,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 										["classes"] = { DEATHKNIGHT },
 									}),
 									i(39208, {	-- Sigil of the Dark Rider
-										["timeline"] = { "removed 5.0.4" },
+										["timeline"] = { REMOVED_5_0_4 },
 									}),
 								},
 							}),
@@ -483,7 +483,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["groups"] = {
 									i(38707),	-- Runed Soulblade
 									i(142320, {	-- Runed Soulsaber
-										["timeline"] = { "added 7.1.0.22731" },
+										["timeline"] = { ADDED_7_1_0 },
 									}),
 								},
 							}),
@@ -518,7 +518,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									i(38633),	-- Greataxe of the Ebon Blade
 									i(38632),	-- Greatsword of the Ebon Blade
 									i(142321, {	-- Saber of the Ebon Blade
-										["timeline"] = { "added 7.1.0.22731" },
+										["timeline"] = { ADDED_7_1_0 },
 									}),
 								},
 							}),
@@ -656,25 +656,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(38663),	-- Blood-Soaked Saronite Plated Spaulders
 								i(38667),	-- Bloodbane's Gauntlets of Command
 								i(174485, {	-- Burning Greatsword of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(174662, {	-- Burning Saber of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(34657),	-- Choker of Damnation
 								i(38147),	-- Corrupted Band
 								i(174486, {	-- Crimson Greatsword of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(174659, {	-- Crimson Saber of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(38669),	-- Engraved Saronite Legplates
 								i(174488, {	-- Freezing Greatsword of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(174660, {	-- Freezing Saber of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(38633),	-- Greataxe of the Ebon Blade
 								i(38661),	-- Greathelm of the Scourge Champion
@@ -693,10 +693,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(38674),	-- Soul Harvester's Charm
 								i(38668),	-- The Plaguebringer's Girdle
 								i(174487, {	-- Unholy Greatsword of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(174661, {	-- Unholy Saber of the Ebon Blade
-									["timeline"] = { "added 8.3.0.33062" },
+									["timeline"] = { ADDED_8_3_0 },
 								}),
 								i(38671),	-- Valanar's Signet Ring
 							},
@@ -856,17 +856,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2619),	-- Thondroril River
 				exploration(2266),	-- Tyr's Hand
 				exploration(2273),	-- Zul'Mashar
-				--[[
-				exploration(1019),	-- The Green Belt
-				exploration(2265),	-- Scarlet Base Camp
-				exploration(2267),	-- The Scarlet Basilica
-				exploration(2269),	-- Browman Mill
-				exploration(2274),	-- Mazra'Alor
-				exploration(2278),	-- Scourgehold
-				exploration(2299),	-- Darrowmere Lake
-				exploration(2625),	-- Eastwall Gate
-				exploration(2626),	-- Terrorweb Tunnel
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(529, {	-- Argent Dawn
@@ -1024,10 +1013,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131669, {	-- Plaguehound Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131670, {	-- Cinch of Good Will
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1756,7 +1745,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(6135, {	-- Duskwing, Oh How I Hate Thee...
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
-					["sourceQuest"] = 6133,	-- The Ranger Lord's Behest
+					["sourceQuests"] = {
+						6133,	-- The Ranger Lord's Behest
+						6022,	-- To Kill With Purpose
+						6042,	-- Un-Life's Little Annoyances
+					},
 					-- #if AFTER WRATH
 					["coord"] = { 23.0, 68.2, EASTERN_PLAGUELANDS },
 					-- #else
@@ -2179,7 +2172,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131668, {	-- Stem-Laced Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2337,7 +2330,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157007, {	-- Militia Dagger
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2527,10 +2520,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156978, {	-- Cauldron Cracker
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(156979, {	-- Cauldron Dredger
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -4009,10 +4002,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(RARES, {
 				n(10819, {	-- Baron Bloodbane
 					["coord"] = { 35.4, 21.2, EASTERN_PLAGUELANDS },
-					["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 					["groups"] = {
 						i(16999, {	-- Royal Seal of Alexis
-							["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3, "removed 4.0.6" },
+							["timeline"] = { CREATED_1_12_1, ADDED_4_0_3, REMOVED_4_0_6 },
 						}),
 					},
 				}),
@@ -4023,7 +4016,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-					["timeline"] = { "deleted 4.0.3" },
+					["timeline"] = { DELETED_4_0_3 },
 				}),
 				-- #endif
 				-- #if AFTER CATA
@@ -4033,7 +4026,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(10818, {	-- Death Knight Soulbearer
 					["coord"] = { 65.4, 24.4, EASTERN_PLAGUELANDS },
-					["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 				}),
 				n(10827, {	-- Deathspeaker Selendre <Cult of the Damned>
 					-- #if AFTER CATA
@@ -4089,7 +4082,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 26.4, 11.6, EASTERN_PLAGUELANDS },
 						{ 27.8, 11.6, EASTERN_PLAGUELANDS },
 					},
-					["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 				}),
 				n(50813, {	-- Fene-mal
 					["coord"] = { 49.6, 43.2, EASTERN_PLAGUELANDS },
@@ -4474,7 +4467,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(15756, {	-- Pattern: Runic Leather Headband (RECIPE!)
-							["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+							["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 							["isLimited"] = true,
 						}),
 					},
@@ -4600,7 +4593,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 						i(13482),	-- Recipe: Transmute Air to Fire (RECIPE!)
 						i(136928, {	-- Thaumaturgist's Orb (TOY!)
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 							["classes"] = { PRIEST },
 						}),
 
@@ -4773,11 +4766,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				i(16242, {	-- Formula: Enchant Chest - Major Mana (RECIPE!)
-					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 					["cr"] = 9452,	-- Scarlet Enchanter
 				}),
 				i(16222, {	-- Formula: Enchant Shield - Vitality / TBC-10.1.5:Formula: Enchant Shield - Superior Versatility / CLASSIC: Formula: Enchant Shield - Superior Spirit (RECIPE!)
-					["timeline"] = { "removed 2.3.0" },	-- Learned from Trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned from Trainer
 					["cr"] = 9447,	-- Scarlet Warder
 				}),
 				-- #if AFTER TBC

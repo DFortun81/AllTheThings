@@ -1,6 +1,4 @@
 local i = GetRecipeHelperForProfession(ENGINEERING);
-local GNOMISH_ENGINEER = 20219;
-local GOBLIN_ENGINEER = 20222;
 
 -- #if SEASON_OF_DISCOVERY
 ------------------
@@ -176,41 +174,41 @@ i(18651, 23071);	-- Truesilver Transformer [TRAINER: 2.0.1]
 i(18658, 23082);	-- Ultra-Flash Shadow Reflector
 i(16052, 19819);	-- Voice Amplification Modulator
 -- Gnomish Engineering
-i(0, 20219, nil, GNOMISH_ENGINEER);	-- Gnomish Engineer
-i(18654, 23096, nil, GNOMISH_ENGINEER);	-- Gnomish Alarm-o-Bot
-i(18661, 23129, nil, GNOMISH_ENGINEER);	-- World Enlarger
-i(0, 12906, nil, GNOMISH_ENGINEER);	-- Gnomish Battle Chicken
-i(0, 12759, nil, GNOMISH_ENGINEER);	-- Gnomish Death Ray
-i(0, 12897, nil, GNOMISH_ENGINEER);	-- Gnomish Goggles
-i(0, 12903, nil, GNOMISH_ENGINEER);	-- Gnomish Harm Prevention Belt
-i(0, 12907, nil, GNOMISH_ENGINEER);	-- Gnomish Mind Control Cap
-i(0, 12902, nil, GNOMISH_ENGINEER);	-- Gnomish Net-o-Matic Projector
-i(0, 12905, nil, GNOMISH_ENGINEER);	-- Gnomish Rocket Boots
-i(0, 12899, nil, GNOMISH_ENGINEER);	-- Gnomish Shrink Ray
-i(0, 12895, nil, GNOMISH_ENGINEER);	-- Inlaid Mithril Cylinder Plans
-i(0, 23489, nil, GNOMISH_ENGINEER);	-- Ultrasafe Transporter - Gadgetzan
+i(0, 20219, nil, GNOMISH_ENGINEERING);	-- Gnomish Engineer
+i(18654, 23096, nil, GNOMISH_ENGINEERING);	-- Gnomish Alarm-o-Bot
+i(18661, 23129, nil, GNOMISH_ENGINEERING);	-- World Enlarger
+i(0, 12906, nil, GNOMISH_ENGINEERING);	-- Gnomish Battle Chicken
+i(0, 12759, nil, GNOMISH_ENGINEERING);	-- Gnomish Death Ray
+i(0, 12897, nil, GNOMISH_ENGINEERING);	-- Gnomish Goggles
+i(0, 12903, nil, GNOMISH_ENGINEERING);	-- Gnomish Harm Prevention Belt
+i(0, 12907, nil, GNOMISH_ENGINEERING);	-- Gnomish Mind Control Cap
+i(0, 12902, nil, GNOMISH_ENGINEERING);	-- Gnomish Net-o-Matic Projector
+i(0, 12905, nil, GNOMISH_ENGINEERING);	-- Gnomish Rocket Boots
+i(0, 12899, nil, GNOMISH_ENGINEERING);	-- Gnomish Shrink Ray
+i(0, 12895, nil, GNOMISH_ENGINEERING);	-- Inlaid Mithril Cylinder Plans
+i(0, 23489, nil, GNOMISH_ENGINEERING);	-- Ultrasafe Transporter - Gadgetzan
 -- #if BEFORE WRATH
-i(11827, 15633, nil, GNOMISH_ENGINEER);	-- Lil' Smoky
+i(11827, 15633, nil, GNOMISH_ENGINEERING);	-- Lil' Smoky
 -- #else
 i(11827, 15633);	-- Lil' Smoky
 -- #endif
 -- Goblin Engineering
-i(0, 20222, nil, GOBLIN_ENGINEER);	-- Goblin Engineer
-i(18653, 23078, nil, GOBLIN_ENGINEER);	-- Goblin Jumper Cables XL
-i(0, 23486, nil, GOBLIN_ENGINEER);	-- Dimensional Ripper - Everlook
-i(0, 12755, nil, GOBLIN_ENGINEER);	-- Goblin Bomb Dispenser
-i(0, 12718, nil, GOBLIN_ENGINEER);	-- Goblin Construction Helmet
-i(0, 12908, nil, GOBLIN_ENGINEER);	-- Goblin Dragon Gun
-i(0, 12717, nil, GOBLIN_ENGINEER);	-- Goblin Mining Helmet
-i(0, 12716, nil, GOBLIN_ENGINEER);	-- Goblin Mortar
-i(0, 8895, nil, GOBLIN_ENGINEER);	-- Goblin Rocket Boots
-i(0, 12715, nil, GOBLIN_ENGINEER);	-- Goblin Rocket Fuel Recipe
-i(0, 12758, nil, GOBLIN_ENGINEER);	-- Goblin Rocket Helmet
-i(0, 12760, nil, GOBLIN_ENGINEER);	-- Goblin Sapper Charge
-i(0, 12754, nil, GOBLIN_ENGINEER);	-- The Big One
-i(0, 13240, nil, GOBLIN_ENGINEER);	-- The Mortar: Reloaded [REMOVED: 4.0.1]
+i(0, 20222, nil, GOBLIN_ENGINEERING);	-- Goblin Engineer
+i(18653, 23078, nil, GOBLIN_ENGINEERING);	-- Goblin Jumper Cables XL
+i(0, 23486, nil, GOBLIN_ENGINEERING);	-- Dimensional Ripper - Everlook
+i(0, 12755, nil, GOBLIN_ENGINEERING);	-- Goblin Bomb Dispenser
+i(0, 12718, nil, GOBLIN_ENGINEERING);	-- Goblin Construction Helmet
+i(0, 12908, nil, GOBLIN_ENGINEERING);	-- Goblin Dragon Gun
+i(0, 12717, nil, GOBLIN_ENGINEERING);	-- Goblin Mining Helmet
+i(0, 12716, nil, GOBLIN_ENGINEERING);	-- Goblin Mortar
+i(0, 8895, nil, GOBLIN_ENGINEERING);	-- Goblin Rocket Boots
+i(0, 12715, nil, GOBLIN_ENGINEERING);	-- Goblin Rocket Fuel Recipe
+i(0, 12758, nil, GOBLIN_ENGINEERING);	-- Goblin Rocket Helmet
+i(0, 12760, nil, GOBLIN_ENGINEERING);	-- Goblin Sapper Charge
+i(0, 12754, nil, GOBLIN_ENGINEERING);	-- The Big One
+i(0, 13240, nil, GOBLIN_ENGINEERING);	-- The Mortar: Reloaded [REMOVED: 4.0.1]
 -- #if BEFORE WRATH
-i(11828, 15628, nil, GOBLIN_ENGINEER);	-- Pet Bombling
+i(11828, 15628, nil, GOBLIN_ENGINEERING);	-- Pet Bombling
 -- #else
 i(11828, 15628);	-- Pet Bombling
 -- #endif
@@ -225,9 +223,356 @@ i(0, 12722);		-- Goblin Radio
 i(0, 12900);		-- Mobile Alarm
 
 -----------------
+-- PATCH 2.0.5 --
+-----------------
+--- TRAINER ---
+i(0, 30350);		-- Engineering (Master) [REMOVED: 8.0.1]
+i(0, 30306);		-- Adamantite Frame
+i(0, 30311);		-- Adamantite Grenade
+i(0, 30303);		-- Elemental Blasting Powder
+i(0, 30310);		-- Fel Iron Bomb
+i(0, 30304);		-- Fel Iron Casing
+i(0, 30312);		-- Fel Iron Musket
+i(0, 30346);		-- Fel Iron Shells [REMOVED: 4.0.1]
+i(0, 30309);		-- Felsteel Stabilizer
+i(0, 30305);		-- Handful of Fel Iron Bolts
+i(0, 30307);		-- Hardened Adamantite Tube
+i(0, 30308);		-- Khorium Power Core
+--- ITEM ---
+i(23799, 30313);	-- Adamantite Rifle
+i(23807, 30329);	-- Adamantite Scope
+i(23815, 30347);	-- Adamantite Shell Machine [REMOVED: 4.0.1]
+i(23803, 30316);	-- Cogspinner Goggles
+i(23810, 30337);	-- Crashin' Thrashin' Robot
+i(23874, 30547);	-- Elemental Seaforium Charge
+i(23816, 30348);	-- Fel Iron Toolbox
+i(23800, 30314);	-- Felsteel Boomstick
+i(23814, 30344);	-- Green Smoke Flare
+i(23883, 30551);	-- Healing Potion Injector [BoE]
+i(23806, 30325);	-- Hyper-Vision Goggles
+i(23808, 30332);	-- Khorium Scope
+i(23884, 30552);	-- Mana Potion Injector [BoE]
+i(23802, 30315);	-- Ornate Khorium Rifle
+i(23804, 30317);	-- Power Amplification Goggles
+i(25887, 32814);	-- Purple Smoke Flare
+i(23887, 30556);	-- Rocket Boots Xtreme
+i(23809, 30334);	-- Stabilized Eternium Scope
+i(23805, 30318);	-- Ultra-Spectropic Detection Goggles
+i(23811, 30341);	-- White Smoke Flare
+i(23888, 30548);	-- Zapthrottle Mote Extractor
+-- Gnomish Engineering
+i(0, 30575, nil, GNOMISH_ENGINEERING);	-- Gnomish Battle Goggles
+i(0, 30568, nil, GNOMISH_ENGINEERING);	-- Gnomish Flame Turret
+i(0, 30569, nil, GNOMISH_ENGINEERING);	-- Gnomish Poultryizer
+i(0, 30574, nil, GNOMISH_ENGINEERING);	-- Gnomish Power Goggles
+i(0, 30570, nil, GNOMISH_ENGINEERING);	-- Nigh-Invulnerability Belt
+i(0, 36955, nil, GNOMISH_ENGINEERING);	-- Ultrasafe Transporter - Toshley's Station
+-- Goblin Engineering
+i(0, 30565, nil, GOBLIN_ENGINEERING);	-- Foreman's Enchanted Helmet
+i(0, 30566, nil, GOBLIN_ENGINEERING);	-- Foreman's Reinforced Helmet
+i(0, 30563, nil, GOBLIN_ENGINEERING);	-- Goblin Rocket Launcher
+i(0, 30560, nil, GOBLIN_ENGINEERING);	-- Super Sapper Charge
+i(0, 30558, nil, GOBLIN_ENGINEERING);	-- The Bigger One
+i(0, 36954, nil, GOBLIN_ENGINEERING);	-- Dimensional Ripper - Area 52
+--- NYI ---
+i(0, 30573);		-- Gnomish Tonk Controller
+i(0, 30561);		-- Goblin Tonk Controller
+i(23813, 30343);	-- Blue Smoke Flare
+i(23882, 30549);	-- Critter Enlarger
+i(23812, 30342);	-- Red Smoke Flare
+i(23885, 30555);	-- Remote Mail Terminal
+
+-----------------
+-- PATCH 2.1.0 --
+-----------------
+--- TRAINER ---
+i(0, 41317);		-- Deathblow X11 Goggles
+i(0, 41320);		-- Destruction Holo-gogs
+i(0, 39973);		-- Frost Grenade
+i(0, 40274);		-- Furious Gizmatic Goggles
+i(0, 41315);		-- Gadgetstorm Goggles
+i(0, 41307);		-- Gyro-balanced Khorium Destroyer
+i(0, 39971);		-- Icy Blasting Primers
+i(0, 41311);		-- Justicebringer 2000 Specs
+i(0, 41316);		-- Living Replicator Specs
+i(0, 41319);		-- Magnified Moon Specs
+i(0, 41321);		-- Powerheal 4000 Lens
+i(0, 41314);		-- Surestrike Goggles v2.0
+i(0, 41312);		-- Tankatronic Goggles
+i(0, 41318);		-- Wonderheal XT40 Shades
+--- ITEM ---
+i(32381, 39895);	-- Fused Wiring [TRAINER: 5.0.4]
+
+-----------------
+-- PATCH 2.3.0 --
+-----------------
+--- TRAINER ---
+i(0, 44155);		-- Flying Machine
+i(0, 44157);		-- Turbo-Charged Flying Machine
+--- ITEM ---
+i(33804, 43676);	-- Adamantite Arrow Maker [REMOVED: 4.0.1]
+i(34114, 44391);	-- Field Repair Bot 110G
+
+-----------------
+-- PATCH 2.4.0 --
+-----------------
+--- ITEM ---
+i(35186, 46111);	-- Annihilator Holo-Gogs
+i(35196, 46115);	-- Hard Khorium Goggles
+i(35310, 30551);	-- Healing Potion Injector [BoP]
+i(35190, 46109);	-- Hyper-Magnified Moon Specs
+i(35187, 46107);	-- Justicebringer 3000 Specs
+i(35193, 46112);	-- Lightning Etched Specs
+i(35311, 30552);	-- Mana Potion Injector [BoP]
+i(35195, 46114);	-- Mayhem Projection Goggles
+i(35189, 46108);	-- Powerheal 9000 Lens
+i(35192, 46110);	-- Primal-Attuned Goggles
+i(35197, 46116);	-- Quad Deathblow X44 Goggles
+i(35582, 46697);	-- Rocket Boots Xtreme Lite
+i(35194, 46113);	-- Surestrike Goggles v3.0
+i(35191, 46106);	-- Wonderheal XT68 Shades
+
+-----------------
+-- PATCH 3.0.2 --
+-----------------
+--- NYI ---
+i(0, 49383);		-- Engineering
+i(0, 56273);		-- Wormhole: Gadgetzan
+i(0, 53280);		-- Unknown
+
+-----------------
+-- PATCH 3.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 51306);		-- Engineering (Grand Master)
+i(0, 56479);		-- Armor Plated Combat Shotgun
+i(0, 56480);		-- Armored Titanium Goggles
+i(0, 56461);		-- Bladed Pickaxe
+i(0, 56468);		-- Box of Bombs
+i(0, 56483);		-- Charged Titanium Specs
+i(0, 56460);		-- Cobalt Frag Bomb
+i(0, 61471);		-- Diamond-Cut Refractor Scope
+i(0, 56487);		-- Electroflux Sight Enhancers
+i(0, 54736);		-- EMP Generator[MoP+] \\ Personal Electromagnetic Pulse Generator[Wrath-MoP]
+i(0, 56463);		-- Explosive Decoy
+i(0, 55002);		-- Flexweave Underlay
+i(0, 54793);		-- Frag Belt
+i(0, 56471);		-- Froststeel Tube
+i(0, 56462);		-- Gnomish Army Knife
+i(0, 56469);		-- Gnomish Lightning Generator
+i(0, 56486);		-- Greensight Gogs
+i(0, 56459);		-- Hammer Pick
+i(0, 56349);		-- Handful of Cobalt Bolts
+i(0, 54998);		-- Hand-Mounted Pyro Rocket [REMOVED: 6.0.2]
+i(0, 56476);		-- Healing Injector Kit
+i(0, 56478);		-- Heartseeker Scope
+i(0, 54999);		-- Hyperspeed Accelerators [REMOVED: 6.0.2]
+i(0, 56474);		-- Mammoth Cutters [REMOVED: 4.0.1]
+i(0, 56477);		-- Mana Injector Kit
+i(0, 54353);		-- Mark "S" Boomstick
+i(0, 56465);		-- Mechanized Snow Goggles
+i(0, 61481);		-- Mechanized Snow Goggles
+i(0, 61482);		-- Mechanized Snow Goggles
+i(0, 61483);		-- Mechanized Snow Goggles
+i(0, 56472);		-- MOLL-E
+i(0, 60874);		-- Nesingwary 4000
+i(0, 55016);		-- Nitro Boosts
+i(0, 56467);		-- Noise Machine
+i(0, 56464);		-- Overcharged Capacitor
+i(0, 63770);		-- Reticulated Armor Webbing [REMOVED: 6.0.2]
+i(0, 56475);		-- Saronite Razorheads [REMOVED: 4.0.1]
+i(0, 56466);		-- Sonic Booster
+i(0, 63765);		-- Springy Arachnoweave [REMOVED: 6.0.2]
+i(0, 56470);		-- Sun Scope
+i(0, 56574);		-- Truesight Ice Blinders
+i(0, 56484);		-- Visage Liquification Goggles
+i(0, 53281);		-- Volatile Blasting Trigger
+i(0, 56481);		-- Weakness Spectralizers
+--- ITEM ---
+i(44502, 60866);	-- Mechano-Hog
+i(44503, 60867);	-- Mekgineer's Chopper
+--- QUEST ---
+i(0, 55252);		-- Scrapbot Construction Kit
+-- Gnomish Engineering
+i(0, 56473, nil, GNOMISH_ENGINEERING);	-- Gnomish X-Ray Specs
+-- Goblin Engineering
+i(0, 56514, nil, GOBLIN_ENGINEERING);	-- Global Thermal Sapper Charge
+
+-----------------
+-- PATCH 3.0.8 --
+-----------------
+--- TRAINER ---
+i(0, 62271);		-- Unbreakable Healing Amplifiers
+--- ITEM ---
+i(23817, 30349);	-- Titanium Toolbox
+
+-----------------
+-- PATCH 3.1.0 --
+-----------------
+--- TRAINER ---
+i(0, 63750);		-- High-powered Flashlight
+
+-----------------
+-- PATCH 3.2.0 --
+-----------------
+--- TRAINER ---
+i(0, 67326);		-- Goblin Beam Welder
+i(0, 67839);		-- Mind Amplification Dish
+i(0, 67920);		-- Wormhole Generator: Northrend
+--- ITEM ---
+i(49050, 68067);	-- Jeeves
+--- NYI ---
+i(0, 67790);		-- Dimensional Folder: K3
+
+-----------------
+-- PATCH 3.3.0 --
+-----------------
+-- Gnomish Engineering
+i(52023, 72953, nil, GNOMISH_ENGINEERING);	-- Iceblade Arrow [REMOVED: 4.0.1]
+-- Goblin Engineering
+i(52022, 72952, nil, GOBLIN_ENGINEERING);	-- Shatter Rounds [REMOVED: 4.0.1]
+
+-----------------
+-- PATCH 4.0.1 --
+-----------------
+--- NYI ---
+i(0, 84344);		-- Unknown
+i(0, 84407);		-- Unknown
+i(0, 84422);		-- Unknown
+i(0, 84423);		-- Unknown
+i(0, 84433);		-- Unknown
+i(0, 84434);		-- Unknown
+
+-----------------
+-- PATCH 4.0.3 --
+-----------------
+--- TRAINER ---
+i(0, 82774);		-- Engineering (Illustrious)
+i(0, 81722);		-- Agile Bio-Optic Killshades
+i(0, 84406);		-- Authentic Jr. Engineer Goggles
+i(0, 95707);		-- Big Daddy
+i(0, 81724);		-- Camouflage Bio-Optic Killshades
+i(0, 81716);		-- Deadly Bio-Optic Killshades
+i(0, 84413);		-- De-Weaponized Mechanical Companion
+i(0, 94748);		-- Electrified Ether
+i(0, 95703);		-- Electrostatic Condenser
+i(0, 84418);		-- Elementium Dragonling
+i(0, 84416);		-- Elementium Toolbox
+i(0, 81720);		-- Energized Bio-Optic Killshades
+i(0, 84420);		-- Finely-Tuned Throat Needler
+i(0, 95705);		-- Gnomish Gravity Well
+i(0, 84428);		-- Gnomish X-Ray Scope
+i(0, 84429);		-- Goblin Barbecue
+i(0, 84403);		-- Handful of Obsidium Bolts
+i(0, 84430);		-- Heat-Treated Spinning Lure
+i(0, 84411);		-- High-Powered Bolt Gun
+i(0, 84432);		-- Kickback 5000
+i(0, 81725);		-- Lightweight Bio-Optic Killshades
+i(0, 84421);		-- Loot-a-Rang
+i(0, 84415);		-- Lure Master Tackle Box
+i(0, 84431);		-- Overpowered Chicken Splitter
+i(0, 84412);		-- Personal World Destroyer
+i(0, 82177);		-- Quickflip Deflection Plates [REMOVED: 6.0.2]
+i(0, 84408);		-- R19 Threatfinder
+i(0, 81714);		-- Reinforced Bio-Optic Killshades
+i(0, 84410);		-- Safety Catch Removal Kit
+i(0, 81715);		-- Specialized Bio-Optic Killshades
+i(0, 82175);		-- Synapse Springs [Rank 1] [REMOVED: 6.0.2]
+i(0, 82180);		-- Tazik Shocker [REMOVED: 6.0.2]
+i(0, 84409);		-- Volatile Seaforium Blastpack
+i(0, 84417);		-- Volatile Thunderstick
+i(0, 82201);		-- Z50 Mana Gulper [REMOVED: 5.0.4]
+--- DISCOVERY ---
+i(0, 84425);		-- Cardboard Assassin
+i(0, 84427);		-- Grounded Plasma Shield
+i(0, 84424);		-- Invisibility Field
+i(0, 82200);		-- Spinal Healing Injector
+
+-----------------
+-- PATCH 4.2.0 --
+-----------------
+--- ITEM ---
+i(71078, 100687);	-- Extreme-Impact Hole Puncher
+i(70177, 100587);	-- Flintlocke's Woodchucker
+
+-----------------
+-- PATCH 5.0.4 --
+-----------------
+--- TRAINER ---
+i(0, 110403);		-- Engineering (Zen Master)
+i(0, 127118);		-- Agile Retinal Armor
+i(0, 127136);		-- Big Game Hunter
+i(0, 127129);		-- Blingtron 4000
+i(0, 127119);		-- Camouflage Retinal Armor
+i(0, 127120);		-- Deadly Retinal Armor
+i(0, 127138);		-- Depleted-Kyparium Rocket
+i(0, 127121);		-- Energized Retinal Armor
+i(0, 131211);		-- Flashing Tinker's Gear
+i(0, 131212);		-- Fractured Tinker's Gear
+i(0, 127127);		-- G91 Landshark
+i(0, 127139);		-- Geosynchronous World Spinner
+i(0, 127113);		-- Ghost Iron Bolts
+i(0, 127134);		-- Ghost Iron Dragonling
+i(0, 127128);		-- Goblin Dragon Gun, Mark II
+i(0, 126392);		-- Goblin Glider
+i(0, 127114);		-- High-Explosive Gunpowder
+i(0, 109077);		-- Incendiary Fireworks Launcher [REMOVED: 6.0.2]
+i(0, 127117);		-- Lightweight Retinal Armor
+i(0, 127124);		-- Locksmith's Powderkeg
+i(0, 127137);		-- Long-Range Trillium Sniper
+i(0, 127115);		-- Lord Blastington's Scope of Doom
+i(0, 127135);		-- Mechanical Pandaren Dragonling
+i(0, 127116);		-- Mirror Scope
+i(0, 127130);		-- Mist-Piercing Goggles
+i(0, 131353);		-- Pandaria Fireworks
+i(0, 108789);		-- Phase Fingers [REMOVED: 6.0.2]
+i(0, 131213);		-- Precise Tinker's Gear
+i(0, 131214);		-- Quick Tinker's Gear
+i(0, 127123);		-- Reinforced Retinal Armor
+i(0, 131215);		-- Rigid Tinker's Gear
+i(0, 131216);		-- Smooth Tinker's Gear
+i(0, 131217);		-- Sparkling Tinker's Gear
+i(0, 127122);		-- Specialized Retinal Armor
+i(0, 131218);		-- Subtle Tinker's Gear
+i(0, 126731);		-- Synapse Springs [Rank 2] [REMOVED: 6.0.2]
+i(0, 127131);		-- Thermal Anvil
+i(0, 131563);		-- Tinker's Kit
+i(0, 109099);		-- Watergliding Jets
+i(0, 127132);		-- Wormhole Generator: Pandaria
+--- ITEM ---
+i(89996, 131256);	-- Autumn Flower Firework
+i(89994, 128260);	-- Celestial Firework
+i(89993, 128261);	-- Grand Celebration Firework
+i(89997, 131258);	-- Jade Blossom Firework
+i(89992, 128262);	-- Serpent's Heart Firework
+
+-----------------
+-- PATCH 5.2.0 --
+-----------------
+--- NYI ---
+i(94894, 0);		-- Schematic: Advanced Refrigeration Unit
+i(97230, 0);		-- Schematic: Jard's Peculiar Energy Source
+i(94893, 0);		-- Schematic: Pierre
+i(94880, 0);		-- Schematic: Sky Golem
+
+-----------------
+-- PATCH 5.4.0 --
+-----------------
+--- ITEM ---
+-- All from the same item
+i(0, 139197);		-- Advanced Refrigeration Unit
+i(0, 139176);		-- Jard's Peculiar Energy Source
+i(0, 139196);		-- Pierre
+i(0, 143714);		-- Rascal-Bot
+i(0, 139192);		-- Sky Golem
+--- NYI ---
+i(100907, 0);		-- Schematic: Rascal-Bot
+
+-----------------
 -- PATCH 6.0.2 --
 -----------------
 --- NYI ---
+i(0, 161543);		-- Unknown
 i(120134, 0);		-- Secrets of Draenor Engineering
 
 -----------------

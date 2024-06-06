@@ -313,11 +313,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(27123, {	-- Deepholm, Realm of Earth
-						["lvl"] = 82,
 						["qg"] = 45042,	-- Thrall
 						["sourceQuest"] = 27203,	-- The Maelstrom
-						["isBreadcrumb"] = true,
 						["maps"] = { 276 },	-- The Maelstrom
+						["isBreadcrumb"] = true,
+						["lvl"] = 82,
 					}),
 					q(26869, {	-- Depth of the Depths
 						["qg"] = 42467,	-- Diamant the Patient
@@ -524,6 +524,12 @@ root(ROOTS.Zones, {
 							i(61430),	-- Stonebound Legplates
 						},
 					}),
+					heroscall(q(27727, {	-- Hero's Call: Deepholm! (breadcrumb quest for 27203) (max level 93)
+						["timeline"] = { ADDED_4_0_3 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 82,
+					})),
 					q(26315, {	-- Imposing Confrontation
 						["lvl"] = 82,
 						["qg"] = 42731,	-- Earthmender Norsala
@@ -899,12 +905,17 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26247,	-- Diplomacy First
 					}),
 					q(27932, {	-- The Axe of Earthly Sundering
-						["lvl"] = 82,
 						["qg"] = 47195,	-- Slate Quicksand
-						["coord"] = { 30.6, 77.8, DEEPHOLM },
 						["sourceQuest"] = 27931,	-- The Quaking Fields
+						["coord"] = { 30.6, 77.8, DEEPHOLM },
+						["lvl"] = 82,
 						["groups"] = {
 							i(61400),	-- Size-Cutting Bracers
+							-- #if BEFORE MOP
+							i(61401, {	-- Rigid Colossus Fragment
+								["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
+							-- #endif
 						},
 					}),
 					q(26971, {	-- The Binding
@@ -950,12 +961,6 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(27203, {	-- The Maelstrom
-						["isBreadcrumb"] = true,
-						["lvl"] = 82,
-						["coords"] = {
-							{ 50.4, 38.2, ORGRIMMAR },	-- Farseer Krogar
-							{ 74.4, 18.8, STORMWIND_CITY },	-- Naraat the Earthspeaker
-						},
 						["providers"] = {
 							{ "n", 45224 },	-- Farseer Krogar
 							{ "n", 45226 },	-- Naraat the Earthspeaker
@@ -968,6 +973,13 @@ root(ROOTS.Zones, {
 							27722, -- Warchief's Command: Deepholm!
 							27727, -- Hero's Call: Deepholm!
 						},
+						["coords"] = {
+							{ 50.4, 38.2, ORGRIMMAR },	-- Farseer Krogar
+							{ 74.4, 18.8, STORMWIND_CITY },	-- Naraat the Earthspeaker
+						},
+						["maps"] = { 276 },	-- The Maelstrom
+						["isBreadcrumb"] = true,
+						["lvl"] = 82,
 					}),
 					q(27938, {	-- The Middle Fragment
 						["lvl"] = 82,

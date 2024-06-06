@@ -708,7 +708,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				-- #if AFTER 6.0.1
 				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
-				["timeline"] = { "created 2.0.1", "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { CREATED_2_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 		}),
 		filter(TWO_HANDED_SWORDS, {
@@ -730,7 +730,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 				-- #if AFTER 6.0.1
 				["description"] = "Dropped from Big Crate of Salvage during Warlords of Draenor.",
 				-- #endif
-				["timeline"] = { "created 2.0.1", "added 6.0.1", "removed 7.0.1" },
+				["timeline"] = { CREATED_2_0_1, ADDED_6_0_2, REMOVED_7_0_3 },
 			}),
 			i(25160),	-- Vengeance Blade
 		}),
@@ -906,46 +906,46 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		-- #if BEFORE MOP
 		filter(THROWN, {
 			i(28535, {	-- Amani Throwing Axe
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28540, {	-- Arakkoa Talon-Axe
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28544, {	-- Assassin's Shuriken
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28531, {	-- Barbed Shrike
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28543, {	-- Dreghood Throwing Axe
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28534, {	-- Fel Tipped Dart
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28538, {	-- Forked Shuriken
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28542, {	-- Heartseeker Knives
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28536, {	-- Jagged Guillotine
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28539, {	-- Razor-Edged Boomerang
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28541, {	-- Sawshrike
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28532, {	-- Silver Throwing Knifes
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28537, {	-- Wildhammer Throwing Axe
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 			i(28533, {	-- Wooden Boomerang
-				["timeline"] = { "removed 5.0.4", },
+				["timeline"] = { REMOVED_5_0_4 },
 			}),
 		}),
 		-- #endif
@@ -1134,7 +1134,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(22903),	-- Recipe: Insane Strength Potion (RECIPE!)
 		}),
 		prof(BLACKSMITHING, {
-			i(33186, {["timeline"]={"added 2.3.0"}}),	-- Plans: Adamantite Weapon Chain (RECIPE!)
+			i(33186, {["timeline"]={ADDED_2_3_0}}),	-- Plans: Adamantite Weapon Chain (RECIPE!)
 			i(23626),	-- Plans: Black Felsteel Bracers (RECIPE!)
 			i(23628),	-- Plans: Blessed Bracers (RECIPE!)
 			i(23627),	-- Plans: Bracers of the Green Fortress (RECIPE!)
@@ -1146,7 +1146,7 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(23629),	-- Plans: Felsteel Longblade (RECIPE!)
 			i(23632),	-- Plans: Felsteel Reaper (RECIPE!)
 			i(23621),	-- Plans: Gauntlets of the Iron Tower (RECIPE!)
-			i(33954, {["timeline"]={"added 2.3.0"}}),	-- Plans: Hammer of Righteous Might (RECIPE!)
+			i(33954, {["timeline"]={ADDED_2_3_0}}),	-- Plans: Hammer of Righteous Might (RECIPE!)
 			i(23637),	-- Plans: Hand of Eternity (RECIPE!)
 			i(23624),	-- Plans: Helm of the Stalwart Defender (RECIPE!)
 			i(23630),	-- Plans: Khorium Champion (RECIPE!)
@@ -1161,20 +1161,20 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 			i(22542),	-- Formula: Enchant Boots - Vitality (RECIPE!)
 			i(22532),	-- Formula: Enchant Bracer - Versatility Prime / TBC: Enchant Bracer - Restore Mana Prime (RECIPE!)
 			i(28270),	-- Formula: Enchant Chest - Major Resilience (RECIPE!)
-			i(22548, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Formula: Enchant Cloak - Major Resistance (RECIPE!)
+			i(22548, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Formula: Enchant Cloak - Major Resistance (RECIPE!)
 			i(22540),	-- Formula: Enchant Shield - Parry / TBC: Formula: Enchant Shield - Shield Block (RECIPE!)
-			i(22541, {["timeline"]={"added 2.0.1","removed 5.0.4"}}),	-- Formula: Enchant Shield - Resistance (RECIPE!)
+			i(22541, {["timeline"]={ADDED_2_0_1,REMOVED_5_0_4}}),	-- Formula: Enchant Shield - Resistance (RECIPE!)
 			i(22557),	-- Formula: Enchant Weapon - Battlemaster (RECIPE!)
 			i(22553),	-- Formula: Enchant Weapon - Potency (RECIPE!)
 			i(22558),	-- Formula: Enchant Weapon - Spellsurge (RECIPE!)
 		}),
 		prof(ENGINEERING, {
-			i(23802),	-- Schematic: Ornate Khorium Rifle
-			i(23804),	-- Schematic: Power Amplification Goggles
-			i(23810),	-- Schematic: Crashin' Thrashin' Robot
-			i(23883),	-- Schematic: Healing Potion Injector (BoE version)
-			i(23884),	-- Schematic: Mana Potion Injector (BoE version)
-			i(25887),	-- Schematic: Purple Smoke Flare
+			i(23810),	-- Schematic: Crashin' Thrashin' Robot (RECIPE!)
+			i(23883),	-- Schematic: Healing Potion Injector (RECIPE!) [BoE]
+			i(23884),	-- Schematic: Mana Potion Injector (RECIPE!) [BoE]
+			i(23802),	-- Schematic: Ornate Khorium Rifle (RECIPE!)
+			i(23804),	-- Schematic: Power Amplification Goggles (RECIPE!)
+			i(25887),	-- Schematic: Purple Smoke Flare (RECIPE!)
 		}),
 		prof(JEWELCRAFTING, {
 			-- #if BEFORE CATA

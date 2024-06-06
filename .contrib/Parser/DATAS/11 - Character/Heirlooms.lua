@@ -1,22 +1,23 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
+-- This File needs cleaning / Braghe
 root(ROOTS.Character, n(HEIRLOOMS, {
 	i(122338),	-- Ancient Heirloom Armor Casing
 	i(122339),	-- Ancient Heirloom Scabbard
 	i(122340),	-- Timeworn Heirloom Armor Casing
 	i(122341),	-- Timeworn Heirloom Scabbard
 	i(151614, {	-- Weathered Heirloom Armor Casing
-		["timeline"] = { "added 7.2.5.24076" },
+		["timeline"] = { ADDED_7_2_5 },
 	}),
 	i(151615, {	-- Weathered Heirloom Scabbard
-		["timeline"] = { "added 7.2.5.24076" },
+		["timeline"] = { ADDED_7_2_5 },
 	}),
 	i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(167732, {	-- Battle-Hardened Heirloom Scabbard
-		["timeline"] = { "added 8.1.5.29701" },
+		["timeline"] = { ADDED_8_1_5 },
 	}),
 	i(187997, {	-- Eternal Heirloom Armor Casing
 		["timeline"] = { ADDED_9_1_5 },
@@ -218,8 +219,8 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		i(122396, {	-- Brawler's Razor Claws
 			-- TODO: more accurate timeline updates
 			["timeline"] = {
-				"added 7.2", "removed 8.0",
-				"added 8.2", REMOVED_9_0_1,
+				ADDED_7_2_0, REMOVED_8_0_1,
+				ADDED_8_2_0, REMOVED_9_0_1,
 			},
 		}),
 		un(REMOVED_FROM_GAME, i(79131)),	-- Burnished Warden Staff
@@ -242,37 +243,59 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		un(REMOVED_FROM_GAME, i(93843)),	-- Hardened Arcanite Reaper
 		un(REMOVED_FROM_GAME, i(105687)),	-- Hellscream's Barrier
 		un(REMOVED_FROM_GAME, i(105674)),	-- Hellscream's Barrier
-		un(REMOVED_FROM_GAME, i(104409)),	-- Hellscream's Barrier
+		i(104409, {	-- Hellscream's Barrier
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		}),
 		un(REMOVED_FROM_GAME, i(105685)),	-- Hellscream's Cleaver
-		un(REMOVED_FROM_GAME, i(104404)),	-- Hellscream's Cleaver
+		i(104404, {	-- Hellscream's Cleaver
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		}),
 		un(REMOVED_FROM_GAME, i(105672)),	-- Hellscream's Cleaver
 		un(REMOVED_FROM_GAME, i(105679)),	-- Hellscream's Decapitator
 		un(REMOVED_FROM_GAME, i(105692)),	-- Hellscream's Decapitator
-		un(REMOVED_FROM_GAME, i(104405)),	-- Hellscream's Decapitator
+		i(104405, {	-- Hellscream's Decapitator
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		}),
 		un(REMOVED_FROM_GAME, i(105691)),	-- Hellscream's Doomblade
 		un(REMOVED_FROM_GAME, i(105678)),	-- Hellscream's Doomblade
-		un(REMOVED_FROM_GAME, i(104401)),	-- Hellscream's Doomblade
+		i(104401, {	-- Hellscream's Doomblade
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		}),
 		un(REMOVED_FROM_GAME, i(105686)),	-- Hellscream's Pig Sticker
-		un(REMOVED_FROM_GAME, i(104403)),	-- Hellscream's Pig Sticker
+		i(104403, {	-- Hellscream's Pig Sticker
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		}),
 		un(REMOVED_FROM_GAME, i(105673)),	-- Hellscream's Pig Sticker
 		un(REMOVED_FROM_GAME, i(105684)),	-- Hellscream's Razor
-		un(REMOVED_FROM_GAME, i(104400)),	-- Hellscream's Razor
+		i(104400, {	-- Hellscream's Razor
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		}),
 		un(REMOVED_FROM_GAME, i(105671)),	-- Hellscream's Razor
 		un(REMOVED_FROM_GAME, i(105693)),	-- Hellscream's Shield Wall
 		un(REMOVED_FROM_GAME, i(105680)),	-- Hellscream's Shield Wall
-		un(REMOVED_FROM_GAME, i(104407)),	-- Hellscream's Shield Wall
+		i(104407, {	-- Hellscream's Shield Wall
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		}),
 		un(REMOVED_FROM_GAME, i(105689)),	-- Hellscream's Tome of Destruction
 		un(REMOVED_FROM_GAME, i(105676)),	-- Hellscream's Tome of Destruction
-		un(REMOVED_FROM_GAME, i(104408)),	-- Hellscream's Tome of Destruction
+		i(104408, {	-- Hellscream's Tome of Destruction
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		}),
 		un(REMOVED_FROM_GAME, i(105690)),	-- Hellscream's War Staff
-		un(REMOVED_FROM_GAME, i(104406)),	-- Hellscream's War Staff
+		i(104406, {	-- Hellscream's War Staff
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		}),
 		un(REMOVED_FROM_GAME, i(105677)),	-- Hellscream's War Staff
-		un(REMOVED_FROM_GAME, i(104399)),	-- Hellscream's Warbow
+		i(104399, {	-- Hellscream's Warbow
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		}),
 		un(REMOVED_FROM_GAME, i(105683)),	-- Hellscream's Warbow
 		un(REMOVED_FROM_GAME, i(105670)),	-- Hellscream's Warbow
 		un(REMOVED_FROM_GAME, i(105688)),	-- Hellscream's Warmace
 		un(REMOVED_FROM_GAME, i(105675)),	-- Hellscream's Warmace
-		un(REMOVED_FROM_GAME, i(104402)),	-- Hellscream's Warmace
+		i(104402, {	-- Hellscream's Warmace
+			["timeline"] = { ADDED_5_4_0, REMOVED_6_0_2, ADDED_10_2_7, REMOVED_MOP_REMIX_END },
+		}),
 		un(REMOVED_FROM_GAME, i(93904)),	-- Musty Tome of the Lost
 		i(122390),	-- Musty Tome of the Lost
 		un(REMOVED_FROM_GAME, i(93856)),	-- Noble Dal'Rend's Sacred Charge

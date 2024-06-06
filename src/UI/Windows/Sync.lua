@@ -318,60 +318,12 @@ local AccountWideDataHandlers = setmetatable({
 		end
 		AccountWideData.Deaths = deaths;
 	end,
-	IGNORE_QUEST_PRINT = function(data)
-		-- Do nothing.
-	end
+	IGNORE_QUEST_PRINT = app.EmptyFunction,
 }, {
 	__index = function(t, key)
 		return DefaultAccountWideDataHandler;
 	end,
 });
-if C_MountJournal then
-	local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
-	local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
-	AccountWideDataHandlers.Spells = function(data)
-		DefaultAccountWideDataHandler(data, "Spells");
-		local allMountIDs = C_MountJournal_GetMountIDs();
-		if allMountIDs and #allMountIDs > 0 then
-			for i,mountID in ipairs(allMountIDs) do
-				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-				if spellID and isCollected then data[spellID] = 1; end
-			end
-		end
-	end
-end
-if C_PetJournal then
-	local C_PetJournal_GetNumCollectedInfo = C_PetJournal.GetNumCollectedInfo;
-	AccountWideDataHandlers.BattlePets = function(data)
-		for speciesID,_ in pairs(app.SearchForFieldContainer("speciesID")) do
-			if not data[speciesID] then
-				local count = C_PetJournal_GetNumCollectedInfo(speciesID);
-				if count and count > 0 then
-					data[speciesID] = 1;
-				end
-			end
-		end
-	end
-end
-if C_ToyBox and app.GameBuildVersion >= 30000 then
-	-- After the C_ToyBox API was added, nearly every toy became account wide learned.
-	local PlayerHasToy = _G["PlayerHasToy"];
-	AccountWideDataHandlers.Toys = function(data)
-		for toyID,_ in pairs(app.SearchForFieldContainer("toyID")) do
-			if not data[toyID] and PlayerHasToy(toyID) then
-				data[toyID] = 1;
-			end
-		end
-		for guid,character in pairs(CharacterData) do
-			local characterData = character.Toys;
-			if characterData then
-				for index,_ in pairs(characterData) do
-					data[index] = 1;
-				end
-			end
-		end
-	end
-end
 local function RecalculateAccountWideData()
 	for key,data in pairs(AccountWideData) do
 		AccountWideDataHandlers[key](data, key);
@@ -380,9 +332,7 @@ end
 
 -- Data Handling
 local maxTimeStamp = 9999999999999;
-local ignoreField = function()
-	-- Ignore.
-end;
+local ignoreField = app.EmptyFunction;
 local typeList = { "number", "table", "string", "boolean" };
 local typeListIDForType = {};
 for i,t in ipairs(typeList) do
@@ -632,6 +582,60 @@ local function ReceiveCharacterSummary(self, sender, responses, guid, lastPlayed
 	end
 end
 
+-- Versioning
+if C_MountJournal then
+	local C_MountJournal_GetMountInfoByID = C_MountJournal.GetMountInfoByID;
+	local C_MountJournal_GetMountIDs = C_MountJournal.GetMountIDs;
+	AccountWideDataHandlers.Spells = function(data)
+		DefaultAccountWideDataHandler(data, "Spells");
+		local allMountIDs = C_MountJournal_GetMountIDs();
+		if allMountIDs and #allMountIDs > 0 then
+			for i,mountID in ipairs(allMountIDs) do
+				local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+				if spellID and isCollected then data[spellID] = 1; end
+			end
+		end
+	end
+end
+if C_PetJournal then
+	local C_PetJournal_GetNumCollectedInfo = C_PetJournal.GetNumCollectedInfo;
+	AccountWideDataHandlers.BattlePets = function(data)
+		for speciesID,_ in pairs(app.SearchForFieldContainer("speciesID")) do
+			if not data[speciesID] then
+				local count = C_PetJournal_GetNumCollectedInfo(speciesID);
+				if count and count > 0 then
+					data[speciesID] = 1;
+				end
+			end
+		end
+	end
+end
+if C_ToyBox and app.GameBuildVersion >= 30000 then
+	-- After the C_ToyBox API was added, nearly every toy became account wide learned.
+	local PlayerHasToy = _G["PlayerHasToy"];
+	AccountWideDataHandlers.Toys = function(data)
+		for toyID,_ in pairs(app.SearchForFieldContainer("toyID")) do
+			if not data[toyID] and PlayerHasToy(toyID) then
+				data[toyID] = 1;
+			end
+		end
+		for guid,character in pairs(CharacterData) do
+			local characterData = character.Toys;
+			if characterData then
+				for index,_ in pairs(characterData) do
+					data[index] = 1;
+				end
+			end
+		end
+	end
+end
+if C_TransmogCollection and app.GameBuildVersion >= 40000 then
+	-- We no longer need to sync Transmog via Sources.
+	AccountWideDataHandlers.Sources = ignoreField;
+	deserializers.Sources = ignoreField;
+	serializers.Sources = ignoreField;
+end
+
 -- Message Handlers
 MESSAGE_HANDLERS.ack = function(self, sender, content, responses)
 	local pending = pendingSendChunksForUser[sender];
@@ -676,13 +680,13 @@ end
 MESSAGE_HANDLERS.char = function(self, sender, content, responses)
 	if not LinkedCharacters[sender] then return false; end
 	local guid, lastPlayed = (":"):split(content[2]);
-	ReceiveCharacterSummary(self, sender, responses, guid, tonumber(lastPlayed), true);
+	ReceiveCharacterSummary(self, sender, responses, guid, tonumber(lastPlayed) or 0, true);
 end
 MESSAGE_HANDLERS.chars = function(self, sender, content, responses)
 	if not LinkedCharacters[sender] then return false; end
 	for i=2,#content,1 do
 		local guid, lastPlayed = (":"):split(content[i]);
-		ReceiveCharacterSummary(self, sender, responses, guid, tonumber(lastPlayed), false);
+		ReceiveCharacterSummary(self, sender, responses, guid, tonumber(lastPlayed) or 0, false);
 	end
 end
 MESSAGE_HANDLERS.link = function(self, sender, content, responses)

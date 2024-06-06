@@ -112,6 +112,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 54.6, 32.8, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 155099 },	-- High Priest Amet
 							["sourceQuest"] = 56472,	-- The Uldum Accord
+							["g"] = {
+								i(173956),	-- Coalesced Corruption (QI!)
+							},
 						}),
 						q(57737, {	-- Ramkahen Rescue
 							["coord"] = { 54.9, 32.7, NZOTH_ASSAULT_ULDUM },
@@ -132,6 +135,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 54.6, 32.8, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 155099 },	-- High Priest Amet
 							["sourceQuest"] = 56472,	-- The Uldum Accord
+							["g"] = {
+								i(173954),	-- Maddened Writings (QI!)
+							},
 						}),
 					})),
 					n(RARES, sharedData({
@@ -369,6 +375,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				["isWeekly"] = true,
 				["isWorldQuest"] = true,
 				["g"] = {
+					i(168257),	-- Artificer's Keystone (QI!)
+					i(168043),	-- Titan Artifact (QI!)
 					n(QUESTS, {
 						-- Assault questline
 						q(58636, {	-- Eyes on the Amathet
@@ -388,6 +396,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 68.9, 57.9, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 							["sourceQuest"] = 58638,	-- A Deeper Dive
+							["g"] = {
+								i(174450),	-- Amathet Artifact (QI!)
+							},
 						}),
 						q(58646, {	-- Chew On This!
 							["lvl"] = 120,
@@ -409,6 +420,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 72.9, 48.4, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 							["sourceQuest"] = 58640,	-- A Crack in the Armor
+							["g"] = {
+								i(174451),	-- Sun King's Decree (QI!)
+							},
 						}),
 						q(58642, {	-- Shared Goals
 							["lvl"] = 120,
@@ -448,6 +462,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["provider"] = { "n", 155096 },	-- High Commander Kamses
 							["g"] = {
 								currency(1755),	-- Coalescing Visions
+								i(173985),	-- Amathet Armor (QI!)
 							},
 						}),
 						q(58283, {	-- Blind Leading the Blind
@@ -475,6 +490,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 54.6, 34.0, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 160957 },	-- Arianna Swiftsand
 							["sourceQuest"] = 56472,	-- The Uldum Accord
+							["g"] = {
+								i(174008),	-- Rugged Hyena Pelt (QI!)
+							},
 						}),
 						q(58286, {	-- Far From Home
 							["lvl"] = 120,
@@ -508,6 +526,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["sourceQuest"] = 56472,	-- The Uldum Accord
 							["g"] = {
 								currency(1755),	-- Coalescing Visions
+								i(174009),	-- Titanic Core (QI!)
 							},
 						}),
 						q(58285, {	-- Unearthed Artifacts
@@ -515,6 +534,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 54.9, 32.9, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 							["sourceQuest"] = 56472,	-- The Uldum Accord
+							["g"] = {
+								i(168043),	-- Titan Artifact (QI!)
+							},
 						}),
 						q(58284, {	-- Writs of the Sun King
 							["lvl"] = 120,
@@ -522,6 +544,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["provider"] = { "n", 155102 },	-- High Explorer Dellorah
 							["g"] = {
 								currency(1755),	-- Coalescing Visions
+								i(173986),	-- Writ of the Sun King (QI!)
 							},
 						}),
 					})),
@@ -711,6 +734,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				["isWeekly"] = true,
 				["isWorldQuest"] = true,
 				["g"] = {
+					i(169432),	-- Wastewander Coin (QI!)
 					n(QUESTS, {
 						-- Assault questline
 						q(57873, {	-- Word from Orsis
@@ -731,6 +755,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 24.5, 55.2, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 159682 },	-- Tracker Samara
 							["sourceQuest"] = 57955,	-- To Ankhaten Harbor
+							["g"] = {
+								i(174323),	-- Torch (QI!)
+							},
 						}),
 						q(57956, {	-- Wastewander Hosts
 							["coord"] = { 24.5, 55.2, NZOTH_ASSAULT_ULDUM },
@@ -749,6 +776,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 27.9, 63.3, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 164196 },	-- H'partho Ardoros
 							["sourceQuest"] = 57971,	-- Ruins of Ammon
+							["g"] = {
+								i(174356),	-- Aqir Bits (QI!)
+							},
 						}),
 						q(57970, {	-- Ruinator Xok'nixx
 							["coord"] = { 27.9, 63.4, NZOTH_ASSAULT_ULDUM },
@@ -759,6 +789,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 27.9, 63.4, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 159820 },	-- Mender Dyrin
 							["sourceQuest"] = 57971,	-- Ruins of Ammon
+							["g"] = {
+								i(174326),	-- Rough Burlap Bandages (QI!)
+							},
 						}),
 						q(57990, {	-- Obelisk of the Sun
 							["coord"] = { 27.9, 63.4, NZOTH_ASSAULT_ULDUM },
@@ -773,6 +806,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 42.4, 55.9, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
 							["sourceQuest"] = 57990,	-- Obelisk of the Sun
+							["g"] = {
+								i(173366),	-- Fuel Canister (QI!)
+							},
 						}),
 						q(56576, {	-- Aqir Extermination
 							["coord"] = { 42.4, 55.9, NZOTH_ASSAULT_ULDUM },
@@ -795,10 +831,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						q(56550, {	-- Corpse Cleanup
 							["coord"] = { 24.5, 55.2, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 159682 },	-- Tracker Samara
+							["g"] = {
+								i(174323),	-- Torch (QI!)
+							},
 						}),
 						q(58778, {	-- Getting Ahead
 							["coord"] = { 40.0, 21.2, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 159920 },	-- Zahra Sandstalker
+							["g"] = {
+								i(174776),	-- Goliath Trophy (QI!)
+							}
 						}),
 						q(58776, {	-- Hatching Problems
 							["coord"] = { 40.0, 21.3, NZOTH_ASSAULT_ULDUM },
@@ -812,6 +854,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 161738 },	-- H'partho Ardoros
 							["sourceQuest"] = 58606,	-- A Bit of Investigation
+							["g"] = {
+								i(174356),	-- Aqir Bits (QI!)
+							},
 						}),
 						q(58777, {	-- Put Your Foot Down
 							["coord"] = { 40.0, 21.3, NZOTH_ASSAULT_ULDUM },
@@ -832,15 +877,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						q(58782, {	-- Things Left Behind
 							["coord"] = { 40.1, 21.3, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 159544 },	-- Arik Scorpidsting
+							["g"] = {
+								i(174774),	-- Wastewander Supplies (QI!)
+							}
 						}),
 						q(56402, {	-- Wastewander Coins
 							["coord"] = { 39.9, 45.2, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 159560 },	-- Outrider Lashan
 							["sourceQuest"] = 57915,	-- Search for Survivors
+							["g"] = {
+								i(169432),	-- Wastewander Coin (QI!)
+							},
 						}),
 						q(56889, {	-- Wounded Wastewanderers
 							["coord"] = { 40.1, 21.3, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 159820 },	-- Mender Dyrin
+							["g"] = {
+								i(174326),	-- Rough Burlap Bandages (QI!)
+							},
 						}),
 					})),
 					-- Common Items
@@ -1090,6 +1144,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58803,	-- Match the Hatch
+						["g"] = {
+							i(174993),	-- Crystallized Void (QI!)
+						},
 					}),
 					q(58809, {	-- A Shocking Technique
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1101,6 +1158,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							58808,	-- Encased in Amber
 							58806,	-- Warmth of the Sun
 							58807,	-- Wrapping Up
+						},
+						["g"] = {
+							i(175003),	-- Zan-tien Generator Part (QI!)
 						},
 					}),
 					q(58808, {	-- Encased in Amber (Mantid assault)
@@ -1126,6 +1186,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							58808,	-- Encased in Amber
 							58807,	-- Wrapping Up
 						},
+						["g"] = {
+							i(174996),	-- Solar Emanator (QI!)
+						},
 					}),
 					q(58807, {	-- Wrapping Up (Aqir assault)
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1138,12 +1201,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							58808,	-- Encased in Amber
 							58806,	-- Warmth of the Sun
 						},
+						["g"] = {
+							i(175001),	-- Aqir Webbing (QI!)
+						},
 					}),
 					q(58805, {	-- Continued Incubation
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["isDaily"] = true,
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58804,	-- Void Incubation
+						["g"] = {
+							i(174993),	-- Crystallized Void (QI!)
+						},
 					}),
 					q(58810, {	-- Coming Out of His Shell
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1158,16 +1227,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58810,	-- Coming Out of His Shell
+						["g"] = {
+							i(175014),	-- Chunk of Meat (QI!)
+						},
 					}),
 					q(58812, {	-- Meat Alternatives
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58811,	-- A Balanced Diet
+						["g"] = {
+							i(175015),	-- Insectoid Meat (QI!)
+						},
 					}),
 					q(58813, {	-- Fetid Filets
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58812,	-- Meat Alternatives
+						["g"] = {
+							i(175016),	-- Corrupted Flesh (QI!)
+						},
 					}),
 					q(58826, {	-- A Bloody Treat
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1180,6 +1258,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							58818,	-- Bug Buddies
 							58825,	-- Super Jelly
 						},
+						["g"] = {
+							i(175023),	-- Vial of Purified Anima (QI!)
+						},
 					}),
 					q(58817, {	-- Action Figures
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1191,6 +1272,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							58826,	-- A Bloody Treat
 							58818,	-- Bug Buddies
 							58825,	-- Super Jelly
+						},
+						["g"] = {
+							i(175020),	-- Amathet Figurine (QI!)
 						},
 					}),
 					q(58818, {	-- Bug Buddies
@@ -1216,12 +1300,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							58817,	-- Action Figures
 							58818,	-- Bug Buddies
 						},
+						["g"] = {
+							i(175022),	-- Concentrated Royal Jelly (QI!)
+						},
 					}),
 					q(58858, {	-- More Fetid Filets
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["isDaily"] = true,
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58813,	-- Fetid Filets
+						["g"] = {
+							i(175016),	-- Corrupted Flesh (QI!)
+						},
 					}),
 					q(58829, {	-- They Grow So Fast
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1236,6 +1326,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58829,	-- They Grow So Fast
+						["g"] = {
+							i(175055),	-- H'partho's Whistle (QI!)
+						},
 					}),
 					q(58860, {	-- Big Bad Beetle
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1290,6 +1383,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["isDaily"] = true,
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58830,	-- Aqir Instincts
+						["g"] = {
+							i(175055),	-- H'partho's Whistle (QI!)
+						},
 					}),
 					q(58863, {	-- A Custom Order
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1301,6 +1397,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
 						["provider"] = { "n", 161738 },	-- H'partho Ardoros
 						["sourceQuest"] = 58863,	-- A Custom Order
+						["g"] = {
+							i(175058),	-- Black Empire Armament (QI!)
+						},
 					}),
 					q(58866, {	-- My Own Drone
 						["coord"] = { 55.6, 35.3, NZOTH_ASSAULT_ULDUM },
@@ -1308,6 +1407,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["sourceQuest"] = 58865,	-- Otherworldly Armaments
 						["g"] = {
 							i(174771),	-- Shadowbarb Drone (MOUNT!)
+							i(175059),	-- Otherworldly Saddle (QI!)
 						},
 					}),
 					q(58879, {	-- Alpaca It Up

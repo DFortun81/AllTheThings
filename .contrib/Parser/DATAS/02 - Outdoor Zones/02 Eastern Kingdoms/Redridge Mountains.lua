@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						i(131588, {	-- Bravo Company Amice
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60722, {	-- Bravo Company Mantle
 							["timeline"] = { ADDED_4_0_3 },
@@ -173,7 +173,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131589, {	-- Bravo Company Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -310,14 +310,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/5 Pile of Leaves
 							["providers"] = {
-								{ "i", 59152 },	-- Pile of Leaves
+								{ "i",  59152 },	-- Pile of Leaves
 								{ "o", 204424 },	-- Pile of Leaves
 							},
 							["coord"] = { 48.5, 64.5, REDRIDGE_MOUNTAINS },
 						}),
 						objective(2, {	-- 0/5 Fox Poop
 							["providers"] = {
-								{ "i", 59153 },	-- Fox Poop
+								{ "i",  59153 },	-- Fox Poop
 								{ "o", 204425 },	-- Fox Poop
 							},
 							["coord"] = { 47.9, 67.8, REDRIDGE_MOUNTAINS },
@@ -343,7 +343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131569, {	-- Muckdweller Handguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60715, {	-- Vial of Chloroform
 							["timeline"] = { ADDED_4_0_3 },
@@ -423,10 +423,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131576, {	-- Exterminator's Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156953, {	-- 'Liberated' Greataxe
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(60714, {	-- Massive Firearm of Death
 							["timeline"] = { ADDED_4_0_3 },
@@ -508,7 +508,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(26365, {	-- Hero's Call: Redridge Mountains!
+				q(26365, {	-- Hero's Call: Redridge Mountains! (From NPCs)
 					["providers"] = {
 						-- #if AFTER 7.0.3
 						{ "n", 107574 },	-- Anduin Wrynn <King of Stormwind>
@@ -527,12 +527,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
 						{ 56.3, 47.6, WESTFALL },	-- Captain Danuvin
 					},
-					["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
+					["description"] = "This quest seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(14, 14, 11),
-					["g"] = {
+					["groups"] = {
 						i(60689, {	-- Belt of Unsolvable Problems
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -540,7 +540,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131517, {	-- Doody Shoes
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60688, {	-- Parker's Yardstick
 							["timeline"] = { ADDED_4_0_3 },
@@ -550,6 +550,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				heroscall(q(28563, {	-- Hero's Call: Redridge Mountains!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 14. (Confirmed by Hurieve, Crieve's Level 14 Hunter.)
+					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 30, 20 is based on Wowpedia info)
+					["lvl"] = { 14, 20 },
+					-- #endif
+					["groups"] = {
+						i(60689, {	-- Belt of Unsolvable Problems
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(60690, {	-- Doody Boots
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(131517, {	-- Doody Shoes
+							["timeline"] = { ADDED_7_0_3 },
+						}),
+						i(60688, {	-- Parker's Yardstick
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(60691, {	-- Unfortunate Treads
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+					},
+				})),
 				q(3741, {	-- Hilary's Necklace
 					["qg"] = 8965,	-- Shawn
 					["coord"] = { 29.3, 53.4, REDRIDGE_MOUNTAINS },
@@ -591,7 +618,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 26.4, 10.4, REDRIDGE_MOUNTAINS },
 						}),
 						i(131557, {	-- Hauberk of the Changing Heart
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60710, {	-- Troteman's Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -604,7 +631,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(2358, {	-- Horns of Nez'ra
 					["qg"] = 7009,	-- Arantir <The Hand of Chaos>
 					["coord"] = { 28.4, 52.4, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "created 1.11.1", ADDED_3_0_2, REMOVED_4_0_3 },
+					["timeline"] = { CREATED_1_11_1, ADDED_3_0_2, REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
@@ -669,6 +696,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.3, 40.1, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Keeshan's Riverboat Ride Complete
+							["provider"] = { "n", 43443 },	-- Keeshan's Riverboat
+							["coord"] = { 34.2, 45.6, REDRIDGE_MOUNTAINS },
+						}),
+					},
 				}),
 				q(26567, {	-- John J. Keeshan
 					["qg"] = 43221,	-- Colonel Troteman
@@ -728,10 +761,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131539, {	-- Chain of Recurring Raids
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(157001, {	-- Everstill Hewer
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(60697, {	-- Indiscriminate Wand
 							["timeline"] = { ADDED_4_0_3 },
@@ -762,7 +795,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131540, {	-- Starvation Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60694, {	-- Starvation Vest
 							["timeline"] = { ADDED_4_0_3 },
@@ -771,7 +804,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131541, {	-- Ventillated Vest
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -959,7 +992,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- Prisoners of War Freed
 							["providers"] = {
-								{ "i", 60384 },	-- Bravo Company Field Kit
+								{ "i",  60384 },	-- Bravo Company Field Kit
 								{ "o", 204441 },	-- Blackrock Holding Pen
 								{ "o", 204442 },	-- Blackrock Holding Pen
 								{ "o", 204435 },	-- Blackrock Holding Pen
@@ -970,11 +1003,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 69.0, 60.1, REDRIDGE_MOUNTAINS },
 							},
 						}),
-						objective(2, {	-- 0/1 Blackrock Holding Pen Key
-							["providers"] = {
-								{ "i", 59261 },	-- Blackrock Holding Pen Key
-								{ "o", 204437 },	-- Blackrock Key Pouch
-							},
+						i(59261, {	-- Blackrock Holding Pen Key
+							["provider"] = { "o", 204437 },	-- Blackrock Key Pouch
 							["coord"] = { 69.5, 76.5, REDRIDGE_MOUNTAINS },
 						}),
 					},
@@ -1061,7 +1091,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131543, {		-- Leverage Wriststraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60700, {	-- Solomon's Gavel
 							["timeline"] = { ADDED_4_0_3 },
@@ -1137,7 +1167,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131583, {	-- Shadowhide Footguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1183,7 +1213,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26503, {	-- Still Assessing the Threat
 					["qg"] = 464,	-- Watch Captain Parker
-					["sourceQuest"] = 26365,	-- Hero's Call: Redridge Mountains!
+					["sourceQuests"] = {
+						26365,	-- Hero's Call: Redridge Mountains! (From NPCs)
+						28563,	-- Hero's Call: Redridge Mountains!
+					},
 					["coord"] = { 15.3, 64.5, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1216,9 +1249,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131538, {	-- Striders of the Prolific Sire
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60685, {	-- Yowling Cloak
+							["timeline"] = { ADDED_4_0_3 },
+						}),
+						i(60731, {	-- Message Carrier
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -1245,7 +1281,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131556, {	-- Lakeshire Handwraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60706, {	-- Sandals of the Neverending Bridge
 							["timeline"] = { ADDED_4_0_3 },
@@ -1342,7 +1378,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131584, {	-- Treacherous Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60720, {	-- Treacherous Treads
 							["timeline"] = { ADDED_4_0_3 },
@@ -1646,7 +1682,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(10371, {	-- Yorus Barleybrew (Draenei)
 					["qg"] = 16771,	-- Ahonan
 					["coord"] = { 55.0, 83.4, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = { DRAENEI },
 					["classes"] = { WARRIOR },
 					["isBreadcrumb"] = true,
@@ -1673,7 +1709,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131552, {	-- Mongrel Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(60704, {	-- Mongrel Leggings
 							["timeline"] = { ADDED_4_0_3 },
@@ -1727,10 +1763,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 78.4, 72.8, REDRIDGE_MOUNTAINS },
 						{ 76.2, 83.4, REDRIDGE_MOUNTAINS },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(211488, {	-- Rune of the Avenger
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PALADIN },
 							["groups"] = {
 								recipe(410008),	-- Engrave Pants - Avenger's Shield
@@ -1771,10 +1807,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(214519, {	-- Incinerator Gar'im
 					["coord"] = { 77.8, 86.2, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(211477, {	-- Rune of Incinerate
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { WARLOCK },
 							["groups"] = {
 								recipe(416015),	-- Engrave Pants - Incinerate
@@ -1805,6 +1841,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(947, {  -- Rohh the Silent
 					-- #if AFTER CATA
 					["coord"] = { 68.0, 35.6, REDRIDGE_MOUNTAINS },
+					["description"] = "This is a stealthed mob. You can target it with the macro '/tar Rohh'.",
 					-- #else
 					["coords"] = {
 						{ 76.0, 29.4, REDRIDGE_MOUNTAINS },
@@ -1885,7 +1922,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(209873, {	-- Dragonslayer's Shield
 					["provider"] = { "o", 409754 },	-- Wall-Mounted Shield
 					["coord"] = { 69.8, 55.8, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 				})),
 			}),
@@ -2300,7 +2337,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(211530, {	-- Prophecy of a City Enthralled
 					["coord"] = { 67.4, 56.0, REDRIDGE_MOUNTAINS },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["cr"] = 436,	-- Blackrock Shadowcaster
 					["groups"] = {

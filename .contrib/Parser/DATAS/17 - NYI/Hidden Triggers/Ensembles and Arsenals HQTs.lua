@@ -19,7 +19,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	n(ARSENALS, {
 		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { "added 7.0.3" } }, {
+			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 				--q(TODO, {["name"] = "Arsenal: Draenor Challenger's Armaments",}),	-- itemID 136854
 				q(43235, {["name"] = "Arsenal: Primal Combatant's Weapons",}),	-- itemID 138625 (Alliance)
 				q(43236, {["name"] = "Arsenal: Primal Combatant's Weapons",}),	-- itemID 138626 (Horde)

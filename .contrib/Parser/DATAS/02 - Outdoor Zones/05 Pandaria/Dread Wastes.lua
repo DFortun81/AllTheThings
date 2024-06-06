@@ -282,6 +282,7 @@ root(ROOTS.Zones, {
 							56575,	-- Once More Into Kor'vess
 						},
 						["groups"] = {
+							i(169866),	-- Corrupted Amber Chunk (QI!)
 							objective(1, {	-- 0/8 Corrupted Amber Chunk
 								["provider"] = { "i", 169866 },	-- Corrupted Amber Chunk (QI!)
 								["crs"] = {
@@ -578,11 +579,15 @@ root(ROOTS.Zones, {
 							31895,	-- Better Off Dread
 							31000,	-- Dread Space
 							31886,	-- Dread Space
+							-- #if AFTER 7.3.5
 							49561,	-- Hero's Call: Dread Wastes!
+							-- #endif
 							31390,	-- The Klaxxi (A)
 							31391,	-- The Klaxxi (H)
 							31656,	-- The Threat in the South
+							-- #if AFTER 7.3.5
 							49543,	-- Warchief's Command: Dread Wastes!
+							-- #endif
 						},
 					}),
 					q(31398, {	-- Falling to Pieces
@@ -702,6 +707,12 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 155707 },	-- Taoshi
 						["sourceQuest"] = 56617,	-- A Unified Swarm
 					}),
+					heroscall(q(49561, {	-- Hero's Call: Dread Wastes!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 84,
+					})),
 					q(31071, {	-- I Bring Us Great Shame
 						["coord"] = { 51.1, 11.1, DREAD_WASTES },
 						["provider"] = { "n", 62859 },	-- Thirsty Missho
@@ -816,6 +827,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 14.1, 76.9, VALE_OF_ETERNAL_BLOSSOMS },
 						["provider"] = { "n", 62112 },	-- Bowmistress Li
 						["g"] = {
+							i(82807),	-- Shado-Pan Dragon Gun (QI!)
 							i(84037),	-- Motherseed Gloves
 							i(84038),	-- Sapfly Gloves
 							i(84039),	-- Withered Wood Gauntlets
@@ -1326,6 +1338,11 @@ root(ROOTS.Zones, {
 							i(84018),	-- Coldbite Legguards
 						},
 					}),
+					warchiefscommand(q(49543, {	-- Warchief's Command: Dread Wastes!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(31502, {	-- Wing Clip
 						["isDaily"] = true,
 						["sourceQuest"] = 31606,	-- The Dissector Wakens
@@ -1601,13 +1618,5 @@ root(ROOTS.HiddenQuestTriggers,{
 		q(31995),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 01 - Speed King
 		q(31996),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 02 - Seek and Destroy
 		q(31997),	-- [FLAG] Dread Wastes Buff Bitflag - Augmentation 03 - Speed King
-	}),
-});
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.MOP, {
-		n(WEAPONS, {
-			i(84085),	-- Dreadwaste Meditation Staff
-			i(84086),	-- Dreadwaste Diviner's Rod
-		}),
 	}),
 });

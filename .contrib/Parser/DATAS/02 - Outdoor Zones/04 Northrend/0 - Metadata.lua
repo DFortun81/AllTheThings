@@ -84,7 +84,7 @@ root(ROOTS.Zones, {
 					-- #if AFTER WRATH
 					["sym"] = { {"meta_achievement",
 						33, 35, 36, 37, 38,
-						-- #if AFTER 4.0.3
+						-- #if AFTER 5.0.4
 						1358, 1356, 38, 1357, 1359,
 						-- #endif
 						39, 34, 40
@@ -95,7 +95,7 @@ root(ROOTS.Zones, {
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 33, 35, 36, 37, 38, 39, 34, 40); end]],
 					-- #endif
-					-- #if BEFORE 4.0.3
+					-- #if BEFORE 5.0.4
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				})),
@@ -108,7 +108,7 @@ root(ROOTS.Zones, {
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1358, 1356, 38, 1357, 1359, 39, 36, 40); end]],
 					-- #endif
-					["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				})),
 				ach(2256, {	-- Northern Exposure

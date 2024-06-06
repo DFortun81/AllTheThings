@@ -33,9 +33,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65929),	-- Bildewhizzle's Armbands
 						i(65978),	-- Electrified Leggings
 						i(65999),	-- Pauldrons of Zul'Farrak
+						-- #if BEFORE MOP
 						i(66010, {	-- Star of the Fool
-							["timeline"] = { ADDED_4_0_3, "deleted 5.0.4" },
+							["timeline"] = { ADDED_4_0_3, DELETED_5_0_4 },
 						}),
+						-- #endif
 					},
 				}),
 				q(27076, {	-- Breaking and Entering
@@ -103,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- #endif
 						}),
 						i(9653, {	-- Speedy Racer Googles
-							["timeline"] = { "removed 1.9.3" },
+							["timeline"] = { REMOVED_1_9_3 },
 						}),
 					},
 				}),
@@ -280,7 +282,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(ZONE_DROPS, {
 				i(142402, {	-- Plans: Light Earthforged Blade (RECIPE!)
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 				}),
 				i(9243),	-- Shriveled Troll Heart
 				i(9523),	-- Troll Temper

@@ -5,6 +5,13 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(INSCRIPTION, {
 		n(CRAFTABLES, {
+			expansion(EXPANSION.MOP, {
+				-- 5.2.0
+				expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { CREATED_5_2_0 } }, {
+					i(93440),	-- Crafted Dreadful Gladiator's Endgame
+					i(93450),	-- Crafted Dreadful Gladiator's Reprieve
+				})),
+			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
 				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
@@ -163,20 +170,20 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(INSCRIPTION, {
 		expansion(EXPANSION.MOP, {
 			-- 5.0.1
-			expansion(EXPANSION.MOP, 0.1, bubbleDownSelf({ ["timeline"] = {"created 5.0.1"} }, {
+			expansion(EXPANSION.MOP, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_5_0_4} }, {
 				i(87829),	-- Technique: Incarnadine Ink
 				i(87830),	-- Technique: Tigersblood Tincture
 			})),
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.2.1
-			expansion(EXPANSION.WOD, 2.1, bubbleDownSelf({ ["timeline"] = {"created 6.2.1"} }, {
+			expansion(EXPANSION.WOD, 2.1, bubbleDownSelf({ ["timeline"] = {CREATED_6_2_2} }, {
 				i(129139),	-- Tome of Rapid Pathfinding
 			})),
 		}),
 		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {"created 7.0.3"} }, {
+			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {CREATED_7_0_3} }, {
 				-- #if BEFORE 10.1.5
 				i(141061),	-- Technique: Grimoire of the Abyssal (Item never made it into the game)
 				-- #endif
@@ -185,7 +192,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			})),
 
 			-- 7.2.0
-			expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = {"created 7.2.0"} }, {
+			expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = {CREATED_7_2_0} }, {
 				i(146335),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 				i(146355),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 				i(146375),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
@@ -227,7 +234,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				i(146383),	-- Vantus Rune Technique: Violet Hold (likely PTR version)
 			})),
 		}),
-		i(169550),	-- REUSE ME [MTMM]
 	}),
 }));
 -- #endif

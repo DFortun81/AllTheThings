@@ -27,7 +27,7 @@ DIFFICULTY = {
 };
 
 -- Helper Functions
-local multiDifficulties,uniqueDifficultyID = {}, -1;
+local multiDifficulties,uniqueDifficultyID = {}, 100;
 function GetOrCreateMultiDifficulty(ids)
 	if type(ids) == "table" then
 		-- Returns a unique DifficultyID and the original ids table as the second argument.
@@ -37,11 +37,11 @@ function GetOrCreateMultiDifficulty(ids)
 				return difficultyID, ids;
 			end
 		end
-		
+
 		-- Cache a new difficultyID.
 		local difficultyID = uniqueDifficultyID;
-		uniqueDifficultyID = difficultyID - 1;
-		
+		uniqueDifficultyID = difficultyID + 1;
+
 		-- Assign the difficulties.
 		multiDifficulties[difficultyID] = ids;
 		return difficultyID, ids;
@@ -147,7 +147,7 @@ DifficultyDB = {
 	[DIFFICULTY.DUNGEON.MYTHIC] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
 	[DIFFICULTY.DUNGEON.TIMEWALKING] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },
 	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },	-- unused?
-	
+
 	-- What this does is tell the shortcut to take the id from the first element and use the remaining elements as the difficulties list.
 	-- This will cause the display to appear as the original difficulty in the addon, but also provide the ability for it to encompass multiple. (Cata -> MOP raids)
 	[DIFFICULTY.LEGACY_RAID.MULTI.NORMAL] = { simplify = true },

@@ -2,6 +2,7 @@
 HELD_IN_OFF_HAND = 1;
 COSMETIC = 2;
 CLOAKS = 3; -- BACK is used by multiple symlinks asking for headerID.
+BACK_F = 3;
 CLOTH = 4;
 LEATHER = 5;
 MAIL = 6;

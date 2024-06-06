@@ -65,6 +65,7 @@
 
 -- Character
 -- #IMPORT: 11 - Character\\Achievements.lua
+-- #IMPORT: 11 - Character\\Guild.lua
 -- #IMPORT: 11 - Character\\New Character.lua
 
 -- Pet Battles

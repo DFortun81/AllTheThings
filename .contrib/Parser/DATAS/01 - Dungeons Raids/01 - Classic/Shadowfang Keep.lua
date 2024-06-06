@@ -32,13 +32,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					applyclassicphase(SOD_PHASE_ONE, i(210212, {	-- Brother's Half-Key
 						["description"] = "Found shortly after baron silverlaine.\nHead up the stairs behind the boss, and take a right, gefell should be in a room up the stairs around the corner.",
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 211764,	-- Gefell
 					})),
 					applyclassicphase(SOD_PHASE_ONE, i(210213, {	-- Sister's Half-Key
 						["description"] = "Just after the Kitchen in baron silverlaine's room.",
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 211765,	-- Gemela
 					})),
@@ -802,10 +802,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(65936),	-- Sandals of Sacrifice
 						i(65910),	-- Godfrey's Britches
 						i(131684, {	-- Packleader's Chain Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131685, {	-- Boots of Painful Cost
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -816,7 +816,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 210186 },	-- Breaching Charge
 					},
 					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
 					["groups"] = {
@@ -839,7 +839,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["sourceQuest"] = 78261,	-- The Horn of Xelthos (1/2)
 					["description"] = "15 minutes or so after you turn in the first part of the Horn of Xelthos, you'll receive another mail from C and be able to loot the rune from the dead drop outside of SFK.",
 					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
 					["groups"] = {
@@ -1396,10 +1396,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(66020),	-- Sandals of Sacrifice
 						i(66011),	-- Godfrey's Britches
 						i(131686, {	-- Packleader's Chain Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131687, {	-- Boots of Painful Cost
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1996,13 +1996,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(5254),	-- Rugged Spaulders
 						-- #endif
 						i(132568, {	-- Shadowfang Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						-- #if AFTER 4.0.3
 						i(5943),	-- Rift Bracers
 						-- #endif
 						i(132567, {	-- Blindwatcher's Chain
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						-- #if AFTER 4.0.3
 						i(6319),	-- Girdle of the Blindwatcher
@@ -2041,7 +2041,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209872, {	-- Dragonslayer's Helm
 					["provider"] = { "o", 409758 },	-- Discarded Helm
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 				})),
 				-- #endif
@@ -2076,7 +2076,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(6642),	-- Phantom Armor
 						i(3230),	-- Black Wolf Bracers
 						i(132566, {	-- Dark Lupine Wraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2223,7 +2223,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(63463),	-- Mantle of the Eastern Lords
 							i(63458),	-- Lord Walden's Breastplate
 							i(157617, {	-- Wolfshide Vest
-								["timeline"] = { "added 7.3.5.25727" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(63457),	-- Shackles of Undeath
 							i(63464),	-- Greaves of the Misguided

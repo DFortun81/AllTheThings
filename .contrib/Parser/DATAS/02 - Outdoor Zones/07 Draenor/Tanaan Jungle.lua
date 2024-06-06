@@ -335,6 +335,7 @@ root(ROOTS.Zones, {
 							}),
 							recipe(187636, {	-- Immaculate Mastery Taladite
 								["cost"] = { { "i", 127773, 1 } },	-- Gemcutter Module: Mastery
+								["u"] = REMOVED_FROM_GAME,	-- Brawlers Guild removed thus this item is no longer available to buy
 							}),
 							recipe(187640, {	-- Immaculate Stamina Taladite
 								["cost"] = { { "i", 127775, 1 } },	-- Gemcutter Module: Stamina

@@ -146,7 +146,6 @@ root(ROOTS.NeverImplemented, filter(TOYS, {
 
 		-- 10.2.5
 		expansion(EXPANSION.DF, 2.5, sharedDataSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
-			i(212524),	-- Delicate Crimson Parasol (TOY!)
 			i(212525),	-- Delicate Ebony Parasol (TOY!)
 		})),
 	}),

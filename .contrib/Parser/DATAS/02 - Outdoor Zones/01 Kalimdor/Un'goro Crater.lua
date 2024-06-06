@@ -180,7 +180,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 115923,	-- Ko'Zan
 					["sourceQuest"] = 45051,	-- Reverse Blacksmithing
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
-					["timeline"] = { "added 7.2.0.23420" },
+					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(4142, {	-- A Visit to Gregan
@@ -802,7 +802,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156996, {	-- Tailspike Pike
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1135,7 +1135,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 115923,	-- Ko'Zan
 					["sourceQuest"] = 45044,	-- Weapon No More
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
-					["timeline"] = { "added 7.2.0.23420" },
+					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(24730, {	-- Roll the Bones
@@ -1184,11 +1184,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 115923,	-- Ko'Zan
 					["sourceQuest"] = 45055,	-- A Taste of Their Own Medicine
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
-					["timeline"] = { "added 7.2.0.23420" },
+					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
 					["groups"] = {
 						i(142383, {	-- Plans: Darkspear (RECIPE!)
-							["timeline"] = { "added 7.1.5.23038" },
+							["timeline"] = { ADDED_7_1_5 },
 						}),
 					},
 				}),
@@ -1488,7 +1488,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156995, {	-- Beastflayer
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1748,7 +1748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(45044, {	-- Weapon No More
 					["provider"] = { "i", 142377 },	-- Badly Broken Dark Spear
-					["timeline"] = { "added 7.2.0.23420" },
+					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
 				}),
 				q(3884, {	-- Williden's Journal
@@ -1900,10 +1900,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 45057,	-- Saving My Head
 					["coord"] = { 43.6, 41.4, UNGORO_CRATER },
 					["description"] = "Vendor only sells plans to those who have completed the quest 'Saving My Head'.",
-					["timeline"] = { "added 7.2.0.23420" },
+					["timeline"] = { ADDED_7_2_0 },
 					["groups"] = {
 						i(142383, {	-- Plans: Darkspear (RECIPE!)
-							["timeline"] = { "added 7.1.5.23038" },
+							["timeline"] = { ADDED_7_1_5 },
 						}),
 					},
 				}),
@@ -1929,7 +1929,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(ZONE_DROPS, {
 				i(142377, {	-- Badly Broken Dark Spear
-					["timeline"] = { "added 7.2.0.23420" },
+					["timeline"] = { ADDED_7_2_0 },
 					["requireSkill"] = BLACKSMITHING,
 					["crs"] = {
 						9376,	-- Blazerunner

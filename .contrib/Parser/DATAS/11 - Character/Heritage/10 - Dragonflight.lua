@@ -132,7 +132,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 198983 },	-- Master Mathias Shaw
 					["coord"] = { 36.7, 51.1, NORTHSHIRE_VALLEY },
 					["g"] = {
-						title(493),	-- Lionguard %s
+						title(493),	-- Lionguard <Name>
 						i(203153),	-- Lionguard Greathelm
 						i(203154),	-- Lionguard Greathelm
 						i(203157),	-- Lionguard Greathelm
@@ -568,6 +568,311 @@ root(ROOTS.Character, n(HERITAGE, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				}),
 			},
 		}));
+		race(DRAENEI, bubbleDown({ ["timeline"] = { ADDED_10_2_7 }, ["races"] = { DRAENEI } }, {
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Draenei|r.",
+			["g"] = {
+				q(78068, {	-- An Artificer's Appeal
+					["provider"] = { "o", 415303 },	-- Magically-Sealed Parcel
+					["coord"] = { 53, 15.5, STORMWIND_CITY },
+					["g"] = {
+						i(210454),	-- Spare Hologem (QI!)
+					},
+				}),
+				q(78069, {	-- Reviving Tradition
+					["sourceQuests"] = { 78068 },	-- An Artificer's Appeal
+					["provider"] = { "n", 210340 },	-- Grand Artificer Romuul
+					["coord"] = { 54.8, 79.8, THE_EXODAR },
+					["g"] = {
+						o_repeated({
+							i(210167),	-- Empyrium Filament (QI!)
+							o(420019),	--	Artificing Tools
+							o(408934),	--	Artificing Tools
+						}),
+						o_repeated({
+							i(210168),	-- Hyperthermal Soldering Tool (QI!)
+							o(420039),	--	Artificing Tools
+							o(420040),	--	Artificing Tools
+						}),
+					},
+				}),
+				q(78070, {	-- Pressing Deadlines
+					["sourceQuests"] = { 78069 },	-- Reviving Tradition
+					["provider"] = { "n", 210340 },	-- Grand Artificer Romuul
+					["coord"] = { 54.8, 79.8, THE_EXODAR },
+					["g"] = {
+						i(210454),	-- Spare Hologem (QI!)
+					},
+				}),
+				q(78071, {	-- Rush Order
+					["sourceQuests"] = { 78070 },	-- Pressing Deadlines
+					["provider"] = { "n", 208494 },	-- High Artificer Ataanya
+					["coord"] = { 39.0, 46.9, SHATTRATH_CITY },
+					["g"] = {
+						i(210181),	-- Signed Work Orders (QI!)
+					},
+				}),
+				q(78072, {	-- An Old Wound
+					["sourceQuests"] = { 78071 },	-- Rush Order
+					["provider"] = { "n", 208496 },	-- Apprentice Beruun
+					["coord"] = { 37.9, 46.9, SHATTRATH_CITY },
+				}),
+				q(78073, {	-- Lingering Scars
+					["sourceQuests"] = { 78072 },	-- An Old Wound
+					["provider"] = { "n", 210578 },	-- Exarch Maladaar
+					["coord"] = { 37.5, 64.3, TEROKKAR_FOREST },
+				}),
+				q(78074, {	-- To See Clearly
+					["sourceQuests"] = { 78073 },	-- Lingering Scars
+					["provider"] = { "n", 210581 },	-- Exarch Maladaar
+					["coord"] = { 41.6, 61.6, TEROKKAR_FOREST },
+					["g"] = {
+						o(408954, {	--	Artificer's Lockbox
+							i(210189),	-- Exarch Hataaru's Artificing Lens (QI!)
+						}),
+					},
+				}),
+				q(78075, {	-- Moving Past
+					["sourceQuests"] = { 78074 },	-- To See Clearly
+					["provider"] = { "n", 210569 },	-- High Artificer Ataanya
+					["coord"] = { 39.1, 46.3, SHATTRATH_CITY },
+					["g"] = {
+						i(210454),	-- Spare Hologem (QI!)
+					},
+				}),
+				q(78076, {	-- Emergency Efforts
+					["sourceQuests"] = { 78075 },	-- Moving Past
+					["provider"] = { "n", 210563 },	-- Chieftain Hatuun
+					["coord"] = { 54.0, 76.6, THE_EXODAR },
+				}),
+				q(78077, {	-- Beneath the Skin
+					["sourceQuests"] = { 78076 },	-- Emergency Efforts
+					["provider"] = { "n", 210391 },	-- Chieftain Hatuun
+					["coord"] = { 51.9, 75.5, BLOODMYST_ISLE },
+					["g"] = {
+						i(210239),	-- Pitted Bones (QI!)
+					},
+				}),
+				q(78078, {	-- Assessing the Enemy
+					["sourceQuests"] = { 78076 },	-- Emergency Efforts
+					["provider"] = { "n", 210588 },	-- Arzaal
+					["coord"] = { 51.9, 75.7, BLOODMYST_ISLE },
+					["g"] = {
+						o(408964, {	-- Satyr Totem
+							i(210238),	-- Satyr Totem (QI!)
+						}),
+					},
+				}),
+				q(78079, {	-- Excision
+					["sourceQuests"] = {
+						78077,	-- Beneath the Skin
+						78078,	-- Assessing the Enemy
+					},
+					["provider"] = { "n", 210390 },	-- Prophet Velen
+					["coord"] = { 52.0, 75.6, BLOODMYST_ISLE },
+				}),
+				q(78080, {	-- At the Source
+					["sourceQuests"] = { 78079 },	-- Excision
+					["provider"] = { "n", 210598 },	-- Arzaal
+					["coord"] = { 42.2, 36.6, BLOODMYST_ISLE },
+				}),
+				q(78081, {	-- Pain Recedes
+					["sourceQuests"] = { 78080 },	-- At the Source
+					["provider"] = { "n", 210605 },	-- Proper Velen
+					["coord"] = { 41.5, 33.0, BLOODMYST_ISLE },
+					["g"] = {
+						i(210454),	-- Spare Hologem (QI!)
+					},
+				}),
+				q(78082, {	-- A Burden Shared
+					["sourceQuests"] = { 78081 },	-- Pain Recedes
+					["provider"] = { "n", 214021 },	-- Proper Velen
+					["coord"] = { 54.7, 80.7, THE_EXODAR },
+					["g"] = {
+						i(210586),	-- Akama's Memory Stone (QI!)
+						i(210578),	-- Arzaal's Memory Stone (QI!)
+						i(210577),	-- Ataanya's Memory Stone (QI!)
+						i(210579),	-- Boros's Memory Stone (QI!)
+						i(210575),	-- Hatuun's Memory Stone (QI!)
+						i(210581),	-- Ishanah's Memory Stone (QI!)
+						i(210584),	-- Naielle's Memory Stone (QI!)
+						i(210580),	-- Nobundo's Memory Stone (QI!)
+						i(210576),	-- Romuul's Memory Stone (QI!)
+						i(210538),	-- Velen's Memory Stone (QI!)
+					},
+				}),
+				q(78083, {	-- Our Path Forward
+					["sourceQuests"] = { 78082 },	-- A Burden Shared
+					["provider"] = { "n", 212387 },	-- Grand Anchorite Almonen
+					["coord"] = { 64.4, 87.3, THE_EXODAR },
+					["g"] = {
+						i(210455),	-- Draenic Hologem (TOY!)
+						i(211313, {	-- Ensemble: Heritage of the Draenei
+							i(211333),	-- Amethyst Bands of Telhamat	
+							i(211340),	-- Amethyst Chestplate of Telhamat
+							i(211338),	-- Amethyst Grips of Telhamat
+							i(211335),	-- Amethyst Sentinels of Telhamat
+							i(211334),	-- Dawnsteel Belt of Telhamat
+							i(211341),	-- Dawnsteel Casque of Telhamat
+							i(211339),	-- Dawnsteel Cleats of Telhamat
+							i(211337),	-- Dawnsteel Helm of Telhamat
+							i(211336),	-- Netherweave Legwraps of Telhamat
+							i(211309),	-- Sumptuous Legwraps of Lost Embaari
+							i(211306),	-- Taladite Bands of Lost Embaari
+							i(211305),	-- Taladite Chestplate of Lost Embaari
+							i(211311),	-- Taladite Grips of Lost Embaari
+							i(211308),	-- Taladite Sentinels of Lost Embaari
+							i(211307),	-- True Iron Belt of Lost Embaari
+							i(211342),	-- True Iron Casque of Lost Embaari
+							i(211312),	-- True Iron Cleats of Lost Embaari
+							i(211310),	-- True Iron Helm of Lost Embaari
+						}),
+					},
+				}),
+			},
+		}));
+		race(TROLL, bubbleDown({ ["timeline"] = { ADDED_10_2_7 }, ["races"] = { TROLL } }, {
+			["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Troll|r.",
+			["g"] = {
+				q(77869),	-- Return to the Echo Isles
+				q(77871, {	-- De Old Loa
+					["sourceQuests"] = { 77869 },	-- Return to the Echo Isles
+					["provider"] = { "n", 210092 },	-- Master Gadrin
+					["coord"] = { 61.4, 65.4, ECHO_ISLES },
+				}),
+				q(77874, {	-- De Loa of de Past
+					["sourceQuests"] = { 77871 },	-- De Old Loa
+					["provider"] = { "n", 214839 },	-- Rokhan
+					["coord"] = { 59.1, 65.6, ECHO_ISLES },
+				}),
+				q(77879, {	-- Stalking the Stalker
+					["sourceQuests"] = { 77874 },	-- De Loa of de Past
+					["provider"] = { "n", 210238 },	-- Rokhan
+					["coord"] = { 84.8, 40.2, NORTHERN_STRANGLETHORN },
+					["g"] = {
+						i(211350),	-- Offering to Hakkar (QI!)
+					},
+				}),
+				q(77881, {	-- There is Another
+					["sourceQuests"] = { 77879 },	-- Stalking the Stalker
+					["provider"] = { "n", 209891 },	-- Kevo ya Siti
+					["coord"] = { 81.8, 48.1, NORTHERN_STRANGLETHORN },
+				}),
+				q(77880, {	-- Looking for Lukou
+					["sourceQuests"] = { 77881 },	-- There is Another
+					["provider"] = { "n", 210091 },	-- Rokhan
+					["coord"] = { 63.5, 41.3, NORTHERN_STRANGLETHORN },
+				}),
+				q(77877, {	-- One With the Loa
+					["sourceQuests"] = { 77880 },	-- Looking for Lukou
+					["provider"] = { "n", 222666 },	-- Kevo ya Siti
+					["coord"] = { 65.1, 47.7, NORTHERN_STRANGLETHORN },
+				}),
+				q(77882, {	-- Stolen But Not Forgotten
+					["sourceQuests"] = { 77877 },	-- One With the Loa
+					["provider"] = { "n", 210091 },	-- Rokhan
+					["coord"] = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
+					["g"] = {
+						o(408767, {	-- Dusty Bag
+							i(210592),	-- Altar Fragment (QI!)
+						}),
+					},
+				}),
+				q(78875, {	-- The Unkillable
+					["sourceQuests"] = { 77877 },	-- One With the Loa
+					["provider"] = { "n", 210091 },	-- Rokhan
+					["coord"] = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
+					["g"] = {
+						i(210593),	-- Lukou's Altar Centerpiece (QI!)
+					},
+				}),
+				q(77894, {	-- Heart of Lokou
+					["sourceQuests"] = {
+						77882,	-- Stolen But Not Forgotten
+						78875,	-- The Unkillable
+					},
+					["provider"] = { "n", 210091 },	-- Rokhan
+					["coord"] = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
+				}),
+				q(77898, {	-- Honor and Tribute
+					["sourceQuests"] = { 77894 },	-- Heart of Lokou
+					["provider"] = { "n", 210091 },	-- Rokhan
+					["coord"] = { 70.6, 49.0, NORTHERN_STRANGLETHORN },
+				}),
+				q(77899, {	-- The Rush'kah
+					["sourceQuests"] = { 77898 },	-- Honor and Tribute
+					["provider"] = { "n", 210086 },	-- Witch Doctor Tzadah
+					["coord"] = { 59.1, 65.9, ECHO_ISLES },
+					["g"] = {
+						i(210830),	-- Finished Rush'kah Mask (QI!)
+					},
+				}),
+				q(77900, {	-- The Loa Trials
+					["sourceQuests"] = { 77899 },	-- The Rush'kah
+					["provider"] = { "n", 223215 },	-- Rokhan
+					["coord"] = { 60.1, 62.4, ECHO_ISLES },
+				}),
+				q(77901, {	-- Retraining the Trainees
+					["sourceQuests"] = { 77900 },	-- The Loa Trials
+					["provider"] = { "n", 210260 },	-- Kevo ya Siti
+					["coord"] = { 59.0, 66.3, ECHO_ISLES },
+					["g"] = {
+						i(211000),	-- Cunning Charm (QI!)
+					},
+				}),
+				q(77902, {	-- Ritual Recovery
+					["sourceQuests"] = { 77900 },	-- The Loa Trials
+					["provider"] = { "n", 205981 },	-- Lukou
+					["coord"] = { 58.4, 66.2, ECHO_ISLES },
+				}),
+				q(77903, {	-- De Power of Death
+					["sourceQuests"] = { 77900 },	-- The Loa Trials
+					["provider"] = { "n", 212784 },	-- Rokhan
+					["coord"] = { 58.5, 65.5, ECHO_ISLES },
+				}),
+				q(77905, {	-- Avatar of Mueh'zala
+					["sourceQuests"] = {
+						77901,	-- Retraining the Trainees
+						77902,	-- Ritual Recovery
+						77903,	-- De Power of Death
+					},
+					["provider"] = { "n", 213638 },	-- Rokhan
+					["coord"] = { 56.9, 56.4, NORTHERN_STRANGLETHORN },
+					["g"] = {
+						i(211133),	-- Jani's Blessing (QI!)
+					},
+				}),
+				q(77906, {	-- De Darkspear Loa
+					["sourceQuests"] = { 77905 },	-- Avatar of Mueh'zala
+					["provider"] = { "n", 212782 },	-- Rokhan
+					["coord"] = { 58.5, 65.5, ECHO_ISLES },
+					["g"] = {
+						i(211446, {	-- Ensemble: Heritage of the Darkspear
+							i(211438),	-- Darkspear Battlestraps
+							i(218007),	-- Darkspear Battlestraps of the Horde
+							i(211441),	-- Darkspear Belt
+							i(218015),	-- Darkspear Belt of the Horde
+							i(211440),	-- Darkspear Bracers
+							i(218016),	-- Darkspear Bracers of the Horde
+							i(211437),	-- Darkspear Greaves
+							i(218010),	-- Darkspear Greaves of the Horde
+							i(211436),	-- Darkspear Grips
+							i(218011),	-- Darkspear Grips of the Horde
+							i(211434),	-- Darkspear Rush'kah
+							i(218012),	-- Darkspear Rush'kah of the Horde
+							i(211442),	-- Darkspear Shoulderguards
+							i(218014),	-- Darkspear Shoulderguards of the Horde
+							i(211439),	-- Darkspear Tusked Barrier
+							i(218009),	-- Darkspear Tusked Barrier of the Horde
+							i(211433),	-- Darkspear War-Skirt
+							i(218013),	-- Darkspear War-Skirt of the Horde
+							i(218119),	-- Kevo ya Siti's Mask of Cunning
+							i(218118),	-- Lukou's Mask of Regeneration
+						}),
+						i(218105),	-- Loa's Blade-Blessing (COSMETIC!)
+					},
+				}),
+			},
+		}));
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, {
@@ -595,5 +900,18 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(77796),	-- Choosing Angellene during 'Fear is Our Weapon' (questID 72860) (spellID 421083)
 		q(77797),	-- Choosing Emalora during 'Fear is Our Weapon' (questID 72860) (spellID 421086)
 		q(77798),	-- Choosing Margix during 'Fear is Our Weapon' (questID 72860) (spellID 421087)
+	})),
+	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }, {
+		q(78548),	-- Triggers after accepting 'An Artificer's Appeal' (questID 78068)
+		q(82162),	-- Stay a while and listen with Chieftain Hatuun / Prophet Velen during 'A Burden Shared' (questID 78082)
+		q(78841),	-- Ensemble: Heritage of the Draenei
+		q(78843),	-- Ensemble: Heritage of the Draenei
+		q(78844),	-- Ensemble: Heritage of the Draenei
+		q(78845),	-- Ensemble: Heritage of the Draenei
+		q(78549),	-- Triggers after accepting 'Return to the Echo Isles' (questID 77869)
+		q(78913),	-- Ensemble: Heritage of the Darkspear
+		q(80503),	-- Ensemble: Heritage of the Darkspear
+		q(80542),	-- Ensemble: Heritage of the Darkspear
+		q(80543),	-- Ensemble: Heritage of the Darkspear
 	})),
 });

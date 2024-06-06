@@ -346,7 +346,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12443,	-- Seeking Solvent
 						["coord"] = { 23.0, 80.0, GRIZZLY_HILLS },
 						["cost"] = { { "i", 37664, 1 } },	-- Element 115
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["races"] = ALLIANCE_ONLY,
 						["repeatable"] = true,
 					})),
@@ -355,7 +355,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12433,	-- Seeking Solvent
 						["coord"] = { 11.1, 76.6, GRIZZLY_HILLS },
 						["cost"] = { { "i", 37664, 1 } },	-- Element 115
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
 					})),
@@ -683,6 +683,13 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12007,	-- Sacrifices Must be Made
 						["coord"] = { 17.4, 36.3, GRIZZLY_HILLS },
 					}),
+					heroscall(q(39207, {	-- Hero's Call: Grizzly Hills!
+						["altQuests"] = { 12511 },	-- The Hills Have Us
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["lvl"] = 63,
+					})),
 					q(12158, {	-- Hollowstone Mine
 						["qg"] = 26212,	-- Captain Gryan Stoutmantle
 						["sourceQuests"] = {
@@ -1319,6 +1326,15 @@ root(ROOTS.Zones, {
 						["coord"] = { 21.0, 64.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 					}),
+					q(12511, {	-- The Hills Have Us
+						["qg"] = 27317,	-- Gryphon Commander Urik
+						-- #if AFTER 6.2.0
+						["altQuests"] = { 39207 },	-- Hero's Call: Grizzly Hills!
+						-- #endif
+						["coord"] = { 77.1, 50.1, DRAGONBLIGHT },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
 					q(12415, {	-- The Horse Hollerer
 						["qg"] = 26944,	-- Soulok Stormfury
 						["coord"] = { 65.0, 47.8, GRIZZLY_HILLS },
@@ -1561,6 +1577,11 @@ root(ROOTS.Zones, {
 							i(38753),	-- Hoarder's Necklace
 						},
 					}),
+					warchiefscommand(q(39206, {	-- Warchief's Command: Grizzly Hills!
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(12131, {	-- We Have the Power (A)
 						["qg"] = 26883,	-- Raegar Breakbrow
 						["sourceQuest"] = 12130,	-- Why Fabricate When You Can Appropriate
@@ -1692,47 +1713,47 @@ root(ROOTS.Zones, {
 								moh(1, venture(70, i(38358))),	-- Arcane Revitalizer
 								moh(1, venture(70, i(38359))),	-- Goblin Repetition Reducer
 								venture(30, i(38360, {	-- Idol of Arcane Terror
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38365, {	-- Idol of Perspicacious Attacks
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38366, {	-- Idol of Pure Thoughts
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								moh(1, venture(50, i(38354))),	-- Oil-Stained Tarp
 								venture(30, i(38357, {	-- Sharpened Throwing Gizmo
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(40875, {	-- Sigil of Arthritic Binding
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(40822, {	-- Sigil of the Frozen Conscience
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(40867, {	-- Sigil of the Wild Buck
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								moh(1, venture(50, i(38355))),	-- Thick Goblin Back Protector
 								venture(30, i(38368, {	-- Totem of the Bay
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								moh(1, venture(30, i(38356))),	-- Venture Battle Wand
 								moh(1, venture(50, i(38353))),	-- Venture Bay Buccaneer's Cape
 								venture(30, i(38367, {	-- Venture Co. Flame Slicer
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38364, {	-- Venture Co. Libram of Mostly Holy Deeds
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38363, {	-- Venture Co. Libram of Protection
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38362, {	-- Venture Co. Libram of Retribution
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38361, {	-- Venture Co. Lightning Rod
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 							}),
 						}),
@@ -1752,47 +1773,47 @@ root(ROOTS.Zones, {
 								moh(1, venture(70, i(38358))),	-- Arcane Revitalizer
 								moh(1, venture(70, i(38359))),	-- Goblin Repetition Reducer
 								venture(30, i(38360, {	-- Idol of Arcane Terror
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38365, {	-- Idol of Perspicacious Attacks
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38366, {	-- Idol of Pure Thoughts
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								moh(1, venture(50, i(38354))),	-- Oil-Stained Tarp
 								venture(30, i(38357, {	-- Sharpened Throwing Gizmo
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(40875, {	-- Sigil of Arthritic Binding
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(40822, {	-- Sigil of the Frozen Conscience
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(40867, {	-- Sigil of the Wild Buck
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								moh(1, venture(50, i(38355))),	-- Thick Goblin Back Protector
 								venture(30, i(38368, {	-- Totem of the Bay
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								moh(1, venture(30, i(38356))),	-- Venture Battle Wand
 								moh(1, venture(50, i(38353))),	-- Venture Bay Buccaneer's Cape
 								venture(30, i(38367, {	-- Venture Co. Flame Slicer
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38364, {	-- Venture Co. Libram of Mostly Holy Deeds
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38363, {	-- Venture Co. Libram of Protection
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38362, {	-- Venture Co. Libram of Retribution
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 								venture(30, i(38361, {	-- Venture Co. Lightning Rod
-									["timeline"] = { "removed 5.0.4" },
+									["timeline"] = { REMOVED_5_0_4 },
 								})),
 							}),
 						}),

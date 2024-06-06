@@ -9,19 +9,20 @@ local L = setmetatable({
 	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
-	
+
 	-- These are populated by the LocalizationDB.
 	EVENT_REMAPPING = {};
+	EVENT_TIMERUNNING_SEASONS = {};
 	HEADER_DESCRIPTIONS = {};
 	HEADER_EVENTS = {};
 	HEADER_ICONS = {};
 	HEADER_LORE = {};
 	HEADER_NAMES = {};
 	QUEST_NAMES = {};
-	
+
 	-- If there is a name provided in the table above, it will prefer that name association.
 	MAP_ID_TO_ZONE_TEXT = {};
-	
+
 	-- Binding Localizations
 	TOGGLE_ACCOUNT_MODE = "Toggle Account Mode";
 	TOGGLE_COMPLETIONIST_MODE = "Toggle Completionist Mode";
@@ -41,10 +42,17 @@ local L = setmetatable({
 	TOGGLE_RANDOM = "Toggle ATT Random";
 	REROLL_RANDOM = "Reroll the Random Selection";
 	MODULES = "Modules";
-	
+
 	-- Features
 	NEARBY = "Nearby:";
-	
+
+	-- Tooltips
+	AND_OTHER_SOURCES = "And %s other sources...";
+	FORCE_REFRESH_REQUIRED = "This may require a Force Refresh ("..SHIFT_KEY_TEXT.." click) to properly be collected.";
+	RELOG_REQUIRED = "After using this, it is typically required to logout & login to collect all the items correctly on the game servers.";
+	RACE_LOCKED = "Race Locked";
+	ENSEMBLE_LEARNED = "This Ensemble has already been used by one of your Characters";
+
 	-- Windows
 	HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers";
 	HIDDEN_ACHIEVEMENT_TRIGGERS_DESC = "These are Achievements which have been manually determined to trigger based on specific criteria and are mainly used internally by the game for tracking purposes";
@@ -55,7 +63,7 @@ local L = setmetatable({
 	UNSORTED = "Unsorted";
 	UNSORTED_DESC = "This thing hasn't been Sourced yet within ATT " .. app.Version .. ".";
 	UNSORTED_DESC_2 = "Items here exist within the game and may be available to players, but have not yet been sourced into the accurate location in ATT";
-	
+
 	-- Crieve tested all professions in non-english locales and the following skills were not detected without these.
 	SPELL_NAME_TO_SPELL_ID = {
 		-- Riding
@@ -79,11 +87,11 @@ local L = setmetatable({
 		["약초채집"] = 2366,
 		["草药学"] = 2366,
 		["草藥學"] = 2366,
-		
+
 		-- French (Classic Era)
 		["Ingénierie"] = 4036,    -- Engineering
 		["Secourisme"] = 3273,    -- First Aid
-		
+
 		-- Spanish (Classic Era)
 		["Costura"] = 3908,	-- Tailoring
 		["Marroquinería"] = 2108,    -- Leatherworking
@@ -104,7 +112,7 @@ L.SETTINGS_MENU = {
 	-- Common Header
 		SKIP_AUTO_REFRESH = "Skip Settings-Toggle Data Refreshes!";
 		SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by "..SHIFT_KEY_TEXT.." clicking on an ATT window.";
-		
+
 	-- About Page
 		ABOUT_PAGE = "About";
 		ABOUT_TOP = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|r";
@@ -122,7 +130,7 @@ L.SETTINGS_MENU = {
 		TWITCH_BUTTON_TOOLTIP = "Click this button to copy the URL to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!";
 		WAGO_BUTTON_LABEL = "Wago.io";
 		WAGO_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
-	
+
 	-- General Page
 		DEBUG_MODE = app.ccColors.Red.."Debug Mode|r (Show Everything)";
 		DEBUG_MODE_TOOLTIP = "Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.";
@@ -140,7 +148,7 @@ L.SETTINGS_MENU = {
 		ONLY_RWP = "Only RWP";
 		ONLY_RWP_TOOLTIP = "Enable this option to only track transmog that get removed from the game in the future. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.";
 		UNOFFICIAL_SUPPORT_TOOLTIP = "NOTE: At this time, official support is not provided by WoW's API, but ATT can track items or quest completion to make it functional in the addon.";
-		
+
 		-- General Content
 		GENERAL_CONTENT = "General Content";
 		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Show All Trackable Things";
@@ -165,7 +173,7 @@ L.SETTINGS_MENU = {
 		SHOW_PVP_CHECKBOX_TOOLTIP = "Enable this setting if you want to show content which 'may' require Player vs. Player interactions within the game.";
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "All Learnable Quest Rewards";
 		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
-		
+
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "Tracked ".. app.ccColors.Account .. "Account-Wide|R by default.";
 		TRACK_ACC_WIDE = app.ccColors.Account .. "Track Account-Wide|R";
@@ -204,7 +212,7 @@ L.SETTINGS_MENU = {
 		TITLES_CHECKBOX_TOOLTIP = "Enable this option to track titles.\n\nThese can make your character stand out and look like you've played for awhile. Typically only new players do not have a title active.";
 		TOYS_CHECKBOX = TOY_BOX;
 		TOYS_CHECKBOX_TOOLTIP = "Enable this option to track Toys.\n\nMost of these toys have a fun thing that they do. Others, like the Hearthstone Toys, can be used in place of your actual Hearthstone and can save you a bag slot! They also have interesting effects... Nice!";
-		
+
 		-- Expansion Things
 		EXPANSION_THINGS_LABEL = "Expansion Things";
 		AZERITE_ESSENCES_CHECKBOX = "|T"..app.asset("Expansion_BFA")..":0|t Azerite Essences";
@@ -219,11 +227,11 @@ L.SETTINGS_MENU = {
 		RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Runecarving Powers.";
 		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t Conduits";
 		SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "Enable this option to track Shadowlands Conduits.";
-		
+
 		-- TODO: Crieve doesn't think this one is necessary, going to investigate later. (A lot of these things could be classified as non-profession recipes, when the profession checkboxes are added, this could be a simple "Character" checkbox in that context instead of a new class)
 		CHARACTERUNLOCKS_CHECKBOX = "Character Unlocks";
 		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Enable this option to track Character Unlocks. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
-		
+
 		-- Account-Wide Checkboxes
 		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "Achievement tracking is usually Account-Wide, but there are a number of achievements exclusive to specific classes and races that you can't get on your main.";
 		ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
@@ -240,8 +248,8 @@ L.SETTINGS_MENU = {
 		ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "Reputations are now tracked Account-Wide in Blizzard's database for achievements, so turning this on may be a good idea.";
 		ACCOUNT_WIDE_SOULBINDCONDUITS_TOOLTIP = "Enable this to consider a Soulbind Conduit as collected for all characters if at least one character has learned it.";
 		ACCOUNT_WIDE_TITLES_TOOLTIP = "Most titles are tracked Account-Wide, but some prestigious titles in WoW are locked to the character that earned them.\n\nToggle this if you don't care about that and want to see those titles marked Collected for your alts.";
-		
-	
+
+
 	-- General: Filters Page
 		ITEM_FILTER_LABEL = ARMOR .." & ".. AUCTION_CATEGORY_WEAPONS;
 		ITEM_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
@@ -251,10 +259,10 @@ L.SETTINGS_MENU = {
 		ALL_BUTTON_TOOLTIP = "Click this button to enable all options at once.";
 		UNCHECK_ALL_BUTTON = NONE;
 		UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all options at once.";
-	
+
 	-- General: Phases Page
 	-- Classic Only, fully dynamic from within parser.
-	
+
 	-- General: Unobtainables Page
 		UNOBTAINABLES_PAGE = "Unobtainables";
 		UNOBTAINABLE_LABEL = "Unobtainable Content";
@@ -263,10 +271,103 @@ L.SETTINGS_MENU = {
 		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 		-- AVAILABILITY_CONDITIONS [These are defined in a different section]
 		-- CUSTOM_COLLECTS_REASONS [These are defined in a different section]
-	
+
 	-- Interface Page
+		INTERFACE_PAGE = UIOPTIONS_MENU;
+		TOOLTIP_LABEL = "Tooltips";
+		TOOLTIP_HELP_CHECKBOX = "Show Tooltip Help";
+		TOOLTIP_HELP_CHECKBOX_TOOLTIP = "Enable this option if you want to see the help info in ATT window tooltips which indicates various key/click combinations for ATT window functionality.\nIf you already know all of the key/click combinations, you may want to save tooltip space and disable this option.";
+		ENABLE_TOOLTIP_INFORMATION_CHECKBOX = "Tooltip Integrations";
+		ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the information provided by ATT in external tooltips. This includes item links sent by other players, in the auction house, in the dungeon journal, in your bags, in the world, on NPCs, etc.\n\nIf you turn this feature off, you are seriously reducing your ability to quickly determine if you need to kill a mob or learn an appearance.\n\nWe recommend you keep this setting on.";
+		DISPLAY_IN_COMBAT_CHECKBOX = "In Combat";
+		DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "Enable this option if you want to render tooltip information while you are in combat.\n\nIf you are raiding with your Mythic/Mythic+ Guild, you should probably turn this setting off to save as much performance as you can.\n\nIt can be useful while you are soloing old content to immediately know what you need from a boss.";
+		TOOLTIP_MOD_LABEL = "Modifier";
+		TOOLTIP_MOD_NONE = NONE_KEY;
+		TOOLTIP_MOD_SHIFT = SHIFT_KEY_TEXT;
+		TOOLTIP_MOD_CTRL = CTRL_KEY_TEXT;
+		TOOLTIP_MOD_ALT = ALT_KEY_TEXT;
+		TOOLTIP_MOD_CMD = CMD_KEY_TEXT;
+		TOOLTIP_SHOW_LABEL = "Shown Information";
+		SHOW_COLLECTION_PROGRESS_CHECKBOX = "Collection Progress";
+		SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want to see your progress towards collecting a Thing or completing a group of Things at the Top Right of its tooltip.\n\nWe recommend that you keep this setting turned on.";
+		ICON_ONLY_CHECKBOX = "Icon Only";
+		ICON_ONLY_CHECKBOX_TOOLTIP = "Enable this option if you only want to see the icon in the topright corner instead of the icon and the collected/not collected text.\n\nSome people like smaller tooltips...";
+		KNOWN_BY_CHECKBOX = "Known By";
+		KNOWN_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that know the Recipe in the tooltip.";
+		COMPLETED_BY_CHECKBOX = "Completed By";
+		COMPLETED_BY_CHECKBOX_TOOLTIP = "Enable this option if you want to see the full list of characters on all servers that have completed the Quest in the tooltip.";
+		SHOW_CRAFTED_ITEMS_CHECKBOX = "Show Crafted Items";
+		SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the items that can be crafted by any of your characters for a reagent in its tooltip.";
+		SHOW_RECIPES_CHECKBOX = "Show Recipes";
+		SHOW_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.";
+		SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX = "Only Non-Trivial";
+		SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you only want to see non-trivial recipes in the recipe list.";
+		SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "Currency calculation";
+		SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "Enable this option to show the estimated amount of Items/Currency required to collect Things.\n\nFor Containers which do not reward all of their available content at once, the estimate will thus be lower than actually required.";
+		SHARED_APPEARANCES_CHECKBOX = "Shared Appearances";
+		SHARED_APPEARANCES_CHECKBOX_TOOLTIP = "Enable this option to see items that share a similar appearance in the tooltip.\n\nNOTE: Items that do not match the armor type are displayed in the list. This is to help you diagnose the Collection progress.\n\nIf you are ever confused by this, as of ATT v1.5.0, you can Right Click the item to open the item and its Shared Appearances into their own standalone Mini List.";
+		INCLUDE_ORIGINAL_CHECKBOX = "Original Source";
+		INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
+		ONLY_RELEVANT_CHECKBOX = "Only Relevant";
+		ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
+		SPEC_CHECKBOX = "Specializations";
+		SPEC_CHECKBOX_TOOLTIP = "Enable this option to show the loot specialization information of items in the item's tooltip as provided by the Game Client.\n\nNOTE: These icons will still appear within the ATT mini lists regardless of this setting.";
+		SUMMARIZE_CHECKBOX = "Summarize Things";
+		SUMMARIZE_CHECKBOX_TOOLTIP = "Enable this option to summarize Things in the tooltip. For example, if a Thing can be turned into a Vendor for another Thing, then show that other thing in the tooltip to provide visibility for its multiple uses. If a Thing acts as a Container for a number of other Things, this option will show all of the other Things that the container Contains.\n\nWe recommend that you keep this setting turned on.";
+		CONTAINS_SLIDER_TOOLTIP = 'Use this to customize the number of Summarized Things to show in the tooltip.\n\nDefault: 25';
+		SOURCE_LOCATIONS_CHECKBOX = "Source Locations";
+		SOURCE_LOCATIONS_CHECKBOX_TOOLTIP = "Enable this option if you want to see full Source Location Paths for objects within the ATT database in the tooltip.";
+		LOCATIONS_SLIDER_TOOLTIP = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
+		COMPLETED_SOURCES_CHECKBOX = "For Completed";
+		COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.";
+		DROP_CHANCES_CHECKBOX = "Drop Chances";
+		DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
+		FOR_CREATURES_CHECKBOX = "For Creatures";
+		FOR_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Creatures.";
+		FOR_THINGS_CHECKBOX = "For Things";
+		FOR_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Things.";
+		FOR_UNSORTED_CHECKBOX = "For Unsorted";
+		FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
+		WITH_WRAPPING_CHECKBOX = "Allow Wrapping";
+		WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.";
+
+		BEHAVIOR_LABEL = "List Behavior";
+		MAIN_LIST_SLIDER_LABEL = "Main List Scale";
+		MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
+		MINI_LIST_SLIDER_LABEL = "Mini Lists Scale";
+		MINI_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of all Mini and Bitty Lists.\n\nDefault: 1';
+		ADHOC_UPDATES_CHECKBOX = "Ad-Hoc Window Updates";
+		ADHOC_UPDATES_CHECKBOX_TOOLTIP = "Enable this option if you want only visible ATT windows to be updated.\n\nThis can greatly reduce loading times and prevent large framerate spikes in some situations.";
+		EXPAND_DIFFICULTY_CHECKBOX = "Expand Current Difficulty";
+		EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "Enable this option if you want to automatically minimize difficulty headers in the mini list that are not active when you enter a dungeon or raid.\n\nExample: Minimize the Heroic header when in a Normal difficulty dungeon.";
+		SHOW_ICON_PORTRAIT_CHECKBOX = "Icon Portraits";
+		SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for non-quest object types.\n\nIE: When looking at bosses, this option will show the face of the boss instead of the difficulty icon.\n\nDefault: On";
+		SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX = "For Quests";
+		SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for quest object types.\n\nIE: When looking at quests, this option will show the face of the quest giver instead of the quest type icon.\n\nDefault: On";
+		SHOW_MODELS_CHECKBOX = "Model Preview";
+		SHOW_MODELS_CHECKBOX_TOOLTIP = "Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.";
+		FILL_DYNAMIC_QUESTS_CHECKBOX = "Fill Dynamic Quests";
+		FILL_DYNAMIC_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to allow Items/Currencies which are used to purchase collectible Things to be filled with those purchases when under automatically-populated Quests.\n\nFor example, this will cause the [World Quests] window to behave like the minilist rather than the Main list regarding Cost display.\nNote that in most cases, this will drastically increase the apparent content within the window.";
+		FILL_NPC_DATA_CHECKBOX = "Fill NPC Data";
+		FILL_NPC_DATA_CHECKBOX_TOOLTIP = "Enable this option if you want to fill all relevant data for a given NPC (Common Boss Drops, Drops, etc) when shown in a mini list. This option may cause a significant amount of duplication, but the idea is that the NPC will remain visible on the mini list if you need something available from that NPC.\n\nNote: A lot of Dragonflight outdoors content relies on this setting being enabled for accuracy due to how many Rares share common drops.\n\nDefault: Off";
+		NESTED_QUEST_CHAIN_CHECKBOX = "Show Nested Quest Chains";
+		NESTED_QUEST_CHAIN_CHECKBOX_TOOLTIP = "Enable this option if you want the Quest Chain Requirements (Right-Click on Quest) window to show required Quests as sub-groups of their following Quests, i.e. they must be completed from the inside out.\n\nThis is useful to not miss Breadcrumb Quests and should be used primarily for Quest completion in mind.\n\nOtherwise, Quest Chain Requirements will be displayed in a top-down list, with the earliest available Quest at the very top.";
+		SORT_BY_PROGRESS_CHECKBOX = "Sort By Progress";
+		SORT_BY_PROGRESS_CHECKBOX_TOOLTIP = "Enable this option if you want the 'Sort' operation ("..SHIFT_KEY_TEXT.." right click) to sort by the total progress of each group (instead of by Name)";
+		SHOW_REMAINING_CHECKBOX = "Show Remaining Things";
+		SHOW_REMAINING_CHECKBOX_TOOLTIP = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
+		PERCENTAGES_CHECKBOX = "Show Percentage Completion";
+		PERCENTAGES_CHECKBOX_TOOLTIP = "Enable this option if you want to see the percent completion of each row.\n\nColoring of groups by completion is unaffected.";
+		PRECISION_SLIDER = "Precision Level";
+		PRECISION_SLIDER_TOOLTIP = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
+		DYNAMIC_CATEGORY_LABEL = "Dynamic Categories";
+		DYNAMIC_CATEGORY_SIMPLE = "Simple";
+		DYNAMIC_CATEGORY_SIMPLE_TOOLTIP = "Generate Dynamic Categories based only on the very highest Category.";
+		DYNAMIC_CATEGORY_NESTED = "Nested";
+		DYNAMIC_CATEGORY_NESTED_TOOLTIP = "Generate Dynamic Categories based on their exact Source. This will lead to duplicates of Things that are also Sourced in multiple places.";
+		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000Applied when Generated|r";
 		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
-	
+
 	-- Interface: Accessibility Page
 		ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
 		ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
@@ -282,7 +383,7 @@ L.SETTINGS_MENU = {
 		RESET_TOOLTIP = "Revert to default settings.";
 		CLASS_BORDER = "Use Class Color For Border";
 		CLASS_BORDER_TOOLTIP = "Use your class color for the borders. This updates when you log onto another class.";
-	
+
 	-- Interface: Information Page
 		ACHIEVEMENT_ID = "Achievement ID";
 		ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
@@ -290,10 +391,10 @@ L.SETTINGS_MENU = {
 		READDED_WITH_PATCH_CLASSIC_FORMAT = "This gets readded with patch %s";
 		REMOVED_WITH_PATCH_CLASSIC_FORMAT = "This gets removed with patch %s";
 		WAS_ADDED_WITH_PATCH_CLASSIC_FORMAT = "This was added with patch %s";
-	
+
 	-- Features Page
 		FEATURES_PAGE = FEATURES_LABEL;
-	
+
 	-- Features: Audio Page
 		CELEBRATIONS_LABEL = "Celebrations & Sound Effects";
 		AUDIO_CHANNEL = "Audio Channel";
@@ -311,7 +412,7 @@ L.SETTINGS_MENU = {
 		WARN_REMOVED_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
 		SCREENSHOT_COLLECTED_CHECKBOX = "Collected Things Trigger a Screenshot";
 		SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP = "Enable this option if you want to take a screenshot for every Thing you collect.";
-	
+
 	-- Features: Reporting Page
 		REPORTING_LABEL = "Reporting";
 		REPORT_COLLECTED_THINGS_CHECKBOX = "Report Collected Things";
@@ -338,18 +439,18 @@ L.SETTINGS_MENU = {
 		REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to flash the taskbar when nearby content is detected.";
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Play a Sound Effect";
 		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to also play a notification sound effect when nearby content is detected.";
-	
+
 	-- Features: Sync Page
 	-- Retail Only, deprecated.
 		SYNC_PAGE = "Sync";
 		ACCOUNT_SYNCHRONIZATION = "Account Synchronization";
 		AUTO_SYNC_ACC_DATA_CHECKBOX = "Automatically Sync Account Data";
 		AUTO_SYNC_ACC_DATA_TOOLTIP = "Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.";
-	
+
 	-- Features: Windows Page
 	-- Classic Only, nothing localizable atm.
 		WINDOWS_PAGE = "Windows";
-	
+
 	-- Profiles Page
 		PROFILES_PAGE = "Profiles";
 		PROFILE = "Profile";

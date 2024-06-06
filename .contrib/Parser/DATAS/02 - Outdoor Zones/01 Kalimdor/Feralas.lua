@@ -99,10 +99,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			explorationHeader({
 				exploration(1099),	-- Camp Mojache
-				exploration(5036, {["timeline"] = { "added 4.0.1" }}),	-- Darkmist Ruins
+				exploration(5036, {["timeline"] = { ADDED_4_0_1 }}),	-- Darkmist Ruins
 				exploration(2577),	-- Dire Maul
 				exploration(1111),	-- Dream Bough
-				exploration(5072, {["timeline"] = { "added 4.0.1" }}),	-- Feathermoon Stronghold
+				exploration(5072, {["timeline"] = { ADDED_4_0_1 }}),	-- Feathermoon Stronghold
 				exploration(1105),	-- Feral Scar Vale
 				exploration(1106),	-- Frayfeather Highlands
 				exploration(1103),	-- Gordunni Outpost
@@ -114,7 +114,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if BEFORE CATA
 				exploration(1113),	-- Oneiros
 				-- #endif
-				exploration(1116, {["timeline"] = { "added 4.0.1" }}),	-- Ruins of Feathermoon
+				exploration(1116, {["timeline"] = { ADDED_4_0_1 }}),	-- Ruins of Feathermoon
 				exploration(2522),	-- Ruins of Isildien
 				exploration(1114),	-- Ruins of Ravenwind
 				-- #if BEFORE CATA
@@ -123,24 +123,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1108),	-- The Forgotten Coast
 				exploration(1119),	-- The Twin Colossals
 				exploration(1101),	-- The Writhing Deep
-				exploration(2520, {["timeline"] = { "added 4.0.1" }}),	-- Woodpaw Den
+				exploration(2520, {["timeline"] = { ADDED_4_0_1 }}),	-- Woodpaw Den
 				exploration(2519),	-- Woodpaw Hills
-				--[[
-				exploration(1109),	-- East Pillar
-				exploration(1136),	-- High Wilderness
-				exploration(1107),	-- Idlewind Lake
-				exploration(1112),	-- Jademir Lake
-				exploration(2518),	-- Lariss Pavilion
-				exploration(1104),	-- Mok'Gordun
-				exploration(1115),	-- Rage Scar Hold
-				exploration(1117),	-- Ruins of Solarsal
-				exploration(3117),	-- Shalzaru's Lair
-				exploration(489),	-- Thalanaar
-				exploration(2323),	-- The Veiled Sea
-				exploration(2521),	-- Verdantis River
-				exploration(1110),	-- West Pillar
-				exploration(1102),	-- Wildwind Lake
-				]]--
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(FACTIONS, {
@@ -506,7 +490,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131417, {	-- Captured Heart Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				},
@@ -838,7 +822,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131862, {	-- Pratt's Handmade Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -875,7 +859,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131863, {	-- Jangdor's Handmade Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -962,6 +946,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["lvl"] = 30,
 					["groups"] = {
 						i(8408, {	-- Pattern: Wild Leather Cloak
@@ -989,7 +974,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131416, {	-- Sentinel's Headgear
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1010,7 +995,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131415, {	-- Ogre's Visage
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1028,13 +1013,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131421, {	-- Green Whelp Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(54912, {	-- Telaron's Platemail
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156984, {	-- Windflight Knife
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(54909, {	-- Windflight Staff
 							["timeline"] = { ADDED_4_0_3 },
@@ -1055,13 +1040,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131411, {-- Green Whelp Spaulders
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(54916, {	-- Konu's Platemail
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156983, {	-- Runetotem Slicer
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(54913, {	-- Runetotem Staff
 							["timeline"] = { ADDED_4_0_3 },
@@ -1178,7 +1163,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131423, {	-- Spaulders of the Ogre-Nabber
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1202,7 +1187,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131418, {	-- Spaulders of the Ogre-Nabber
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1350,10 +1335,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 40,
 					["groups"] = {
 						i(34416, {	-- Gloves of the Dune
-							["timeline"] = { "added 2.3.0.7382", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
 						}),
 						i(34417, {	-- Marauder's Handwraps
-							["timeline"] = { "added 2.3.0.7382", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1381,7 +1366,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131424, {	-- Yeti Hide Padded Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1402,7 +1387,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131420, {	-- Yeti Hide Padded Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1423,7 +1408,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131422, {	-- Chain of Natural Essence
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1444,7 +1429,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131412, {	-- Chain of Natural Essence
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1730,17 +1715,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(25486, {	-- The Grimtotem are Coming
-					["qg"] = 39946,	-- Caryssia Moonhunter
-					["sourceQuests"] = {
-						28503,	-- Hero's Call: Thousand Needles!
-						25479,	-- To New Thalanaar
-						25481,	-- To New Thalanaar
-					},
-					["coord"] = { 86.1, 45.3, FERALAS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(2982, {	-- The High Wilderness
 					["qg"] = 7900,	-- Angelas Moonbreeze
 					["coord"] = { 31.8, 45.6, FERALAS },
@@ -1805,10 +1779,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9630),	-- Pratt's Handcrafted Boots
 						i(9631),	-- Pratt's Handcrafted Gloves
 						i(131425, {	-- Pratt's Handcrafted Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131426, {	-- Pratt's Handcrafted Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1843,10 +1817,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9633),	-- Jangdor's Handcrafted Boots
 						i(9632),	-- Jangdor's Handcrafted Gloves
 						i(131427, {	-- Jangdor's Handcrafted Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131428, {	-- Jangdor's Handcrafted Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2073,29 +2047,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(25481, {	-- To New Thalanaar
-					["qg"] = 40369,	-- Falfindel Waywarder
-					["altQuests"] = {
-						28503,	-- Hero's Call: Thousand Needles!
-						25479,	-- To New Thalanaar
-						-- 25481,	-- To New Thalanaar
-					},
-					["coord"] = { 77.2, 56.5, FERALAS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(25386, {	-- To Stonemaul Hold
 					["qg"] = 39377,	-- Konu Runetotem
 					["sourceQuest"] = 25250,	-- Sealing the Dream
 					["coord"] = { 41.3, 15.4, FERALAS },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(25356, {	-- To the Summit
-					["qg"] = 39893,	-- Jawn Highmesa
-					["sourceQuest"] = 28504,	-- Warchief's Command: Thousand Needles!
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -2155,7 +2110,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131430, {	-- Maloof's Spare Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2202,7 +2157,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131419, {	-- Luring Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(54926, {	-- Condensed Essence Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -2274,7 +2229,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157023, {	-- Power of the Forest
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(54969, {	-- Power of the Hippogryph
 							["timeline"] = { ADDED_4_0_3 },
@@ -2324,6 +2279,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 4304, 10 }},	-- Thick Leather
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["lvl"] = 30,
 				},
 				{	-- Wild Leather Boots
@@ -2339,6 +2295,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 8193, 2 },	-- Nightscape Pants
 						{ "i", 8197, 2 },	-- Nightscape Boots
@@ -2364,6 +2321,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 8175, 2 },	-- Nightscape Tunic
 						{ "i", 8176, 2 },	-- Nightscape Headband
@@ -2389,6 +2347,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 8191, 2 },	-- Turtle Scale Helm
 						{ "i", 8198, 2 },	-- Turtle Scale Bracers
@@ -2414,6 +2373,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 8173, 6 },	-- Thick Armor Kit
 						{ "i", 8153, 1 },	-- Wildvine
@@ -2438,6 +2398,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					}),
 					["timeline"] = { REMOVED_4_0_3 },
 					["requireSkill"] = LEATHERWORKING,
+					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 8189, 2 },	-- Turtle Scale Breastplate
 						{ "i", 8187, 2 },	-- Turtle Scale Gloves
@@ -2734,7 +2695,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 48.2, 78.8, FERALAS },
 						{ 48.6, 79.0, FERALAS },
 					},
-					["timeline"] = { "added 4.3.0.15050" },
+					["timeline"] = { ADDED_4_3_0 },
 					["groups"] = {
 						i(21024),	-- Chimaerok Tenderloin
 					},
@@ -3031,7 +2992,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if AFTER 3.1.0
 				i(11474, {	-- Sprite Darter Egg (PET!)
-					["timeline"] = { "added 1.11.1.5462" },
+					["timeline"] = { ADDED_1_11_1 },
 					-- #if BEFORE 4.0.3
 					["description"] = "This pet only drops from the Darters for Horde players. Alliance players will need to complete 'Becoming a Parent' that is completed in the Hinterlands.",
 					["sourceQuest"] = 4298,	-- Becoming a Parent

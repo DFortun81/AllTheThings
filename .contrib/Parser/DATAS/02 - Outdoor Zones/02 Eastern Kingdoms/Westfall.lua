@@ -83,19 +83,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5290),	-- The Raging Chasm
 				-- #endif
 				exploration(115),	-- Westfall Lighthouse
-				--[[
-				exploration(26),	-- Lighthouse
-				exploration(2),		-- Longshore
-				exploration(2364),	-- The Great Sea
-				]]--
 			}),
 			-- #if AFTER 4.1.0.13726
 			prof(FISHING, {
 				i(68795, {	-- Stendel's Bane
-					["timeline"] = { "added 4.1.0.13726" },
+					["timeline"] = { ADDED_4_1_0 },
 					["groups"] = {
 						i(68797, {	-- Stendel's Wedding Band
-							["timeline"] = { "added 4.1.0.13726" },
+							["timeline"] = { ADDED_4_1_0 },
 						}),
 					},
 				}),
@@ -105,13 +100,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				fp(584, {	-- Furlbrow's Pumpkin Farm, Westfall
 					["cr"] = 42406,	-- Hoboair <Gryphon Master>
 					["coord"] = { 49.8, 18.8, WESTFALL },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(583, {	-- Moonbrook, Westfall
 					["cr"] = 42426,	-- Tina Skyden <Gryphon Master>
 					["coord"] = { 42.0, 63.4, WESTFALL },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(4, {	-- Sentinel Hill, Westfall
@@ -152,7 +147,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							{ 51.0, 47.0, WESTFALL },
 							{ 51.6, 55.6, WESTFALL },
 						},
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { ROGUE },
 						["cr"] = 210549,	-- Defias Scout
 						["groups"] = {
@@ -203,7 +198,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131504, {	-- Troublesome Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -263,7 +258,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 1358 },	-- A Clue to Sander's Treasure
 					},
 					["sourceQuest"] = 26353,	-- Captain Sanders' Hidden Treasure (1/4)
-					["coord"] = { 25.9, 47.7, WESTFALL },
+					["coord"] = { 25.9, 47.75, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				q(26355, {	-- Captain Sanders' Hidden Treasure (3/4)
@@ -379,7 +374,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131505, {	-- Worn Defias Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58922, {	-- Worn Defias Bracers
 							["timeline"] = { ADDED_4_0_3 },
@@ -406,6 +401,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "o", 203972 },	-- Fresh Dirt
 							},
 						}),
+						i(58933),	-- Westfall Mud Pie
 					},
 				}),
 				q(26271, {	-- Feeding the Hungry and the Hopeless
@@ -481,7 +477,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
-				q(26378, {	-- Hero's Call: Westfall!
+				q(26378, {	-- Hero's Call: Westfall! (Elwynn Forest)
 					["qgs"] = {
 						963,	-- Deputy Rainer
 						240,	-- Marshal Dughan
@@ -500,6 +496,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				heroscall(q(28562, {	-- Hero's Call: Westfall!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
+					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
+					["lvl"] = { 9, 20 },
+					-- #endif
+				})),
 				q(26266, {	-- Hope for the People
 					["providers"] = {
 						{ "n", 235 },	-- Salma Saldean
@@ -567,7 +573,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131502, {	-- Sentinel Hill Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58912, {	-- Sentinel Hill Surcoat
 							["timeline"] = { ADDED_4_0_3 },
@@ -597,7 +603,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156935, {	-- Kobold Torch
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(58904, {	-- Wax Catcher
 							["timeline"] = { ADDED_4_0_3 },
@@ -614,6 +620,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						objective(1, {	-- Overloaded Harvest Golem enabled
 							["providers"] = {
 								{ "i", 57954 },	-- Harvest Watcher Heart
+								{ "n", 42381 },	-- Overloaded Harvest Golem
 								{ "n", 42601 },	-- Overloaded Harvest Golem
 							},
 						}),
@@ -625,7 +632,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131497, {	-- Chewed Chain Cord
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58915, {	-- Harvester Boots
 							["timeline"] = { ADDED_4_0_3 },
@@ -664,7 +671,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131503, {	-- Spothide Legguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -716,11 +723,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						recipe(2842, {	-- Poisons
 							["timeline"] = { REMOVED_3_0_2 },
 						}),
-						i(9513, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "removed 1.3.0" },
+						i(7678,	{	-- Recipe: Thistle Tea (RECIPE!)
+							["timeline"] = { REMOVED_1_3_0 },
 						}),
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "added 1.3.0", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_1_3_0, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -763,7 +770,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26209, {	-- Murder Was The Case That They Gave Me
 					["qg"] = 42308,	-- Lieutenant Horatio Laine
-					["sourceQuest"] = 28562,	-- Hero's Call: Westfall!
+					["sourceQuests"] = {
+						26378,	-- Hero's Call: Westfall! (Elwynn Forest)
+						28562,	-- Hero's Call: Westfall!
+					},
 					["coord"] = { 60.1, 19.4, WESTFALL },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -985,7 +995,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156934, {	-- House Wrynn Gavel
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(58928, {	-- House Wrynn Halberd
 							["timeline"] = { ADDED_4_0_3 },
@@ -1460,11 +1470,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/6 Okra
 							["providers"] = {
-								{ "i", 57911 },	-- Okra
+								{ "i",  57911 },	-- Okra
 								{ "o", 203982 },	-- Okra
 							},
 							["coord"] = { 54.6, 33.6, WESTFALL },
-							["cr"] = 114,	-- Harvest Watcher
 						}),
 						objective(2, {	-- 0/6 Goretusk Flank
 							["provider"] = { "i", 57788 },	-- Goretusk Flank
@@ -1488,7 +1497,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131496, {	-- Boiled Chain Footpads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58909, {	-- Golden Sunshine Cloak
 							["timeline"] = { ADDED_4_0_3 },
@@ -1570,7 +1579,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 51.6, 55.6, WESTFALL },
 					},
 					["description"] = "Hunters need to use Hunter's Mark.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["groups"] = {
 						i(208777, {	-- Rune of the Sniper
@@ -1672,7 +1681,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 							["classes"] = { PRIEST },
 							["groups"] = {
 								recipe(402849),	-- Engrave Gloves - Shadow Word - Death
@@ -1775,7 +1784,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_ONE, n(210537, bubbleDownSelf({ ["timeline"] = { "removed 2.0.1" } }, {	-- Undying Laborer
+				applyclassicphase(SOD_PHASE_ONE, n(210537, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {	-- Undying Laborer
 					["coord"] = { 31.8, 43.5, WESTFALL },
 					["groups"] = {
 						i(208849, {	-- Libram of Blessings
@@ -1817,13 +1826,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(115348, {	-- Feathered Cape
-							["timeline"] = { "added 6.0.1.18522" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 						i(4454, {	-- Talon of Vultros
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(115349, {	-- Talon of Vultros
-							["timeline"] = { "added 6.0.1.18522" },
+							["timeline"] = { ADDED_6_0_2 },
 						}),
 					},
 				}),
@@ -2122,7 +2131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209420, {	-- Gillsbane
 					["description"] = "Supposedly this will not drop if you've completed the Quick Strike rune already.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["coords"] = {
 						{ 48.6, 21.8, WESTFALL },
@@ -2142,7 +2151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209059, {	-- Goretusk Haunch
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["crs"] = {
 						454,	-- Young Goretusk
@@ -2190,7 +2199,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(208851, {	-- Libram of Justice
 					["coord"] = { 69.8, 72.4, WESTFALL },
 					["description"] = "While this supposedly can drop from the Drones, don't bother. Go loot the chest in Loch Modan instead!",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 7050,	-- Defias Drone
@@ -2224,7 +2233,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(209041, {	-- Magic Pumpkin Seeds
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { DRUID },
 					["coords"] = {
 						{ 48.6, 21.8, WESTFALL },
@@ -2322,7 +2331,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(208741, {	-- Rune of Endless Rage
 					["description"] = "This can also drop from any of the rare mobs in the zone.",
 					["coord"] = { 34.4, 84.6, WESTFALL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["cr"] = 391,	-- Old Murk-Eye
 					["groups"] = {
@@ -2372,7 +2381,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(209045, {	-- Soul of the Sea
 					["provider"] = { "i", 209420 },	-- Gillsbane
 					["description"] = "This will only drop if you have Gillsbane equipped and haven't completed your Quick Strike rune yet.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["coords"] = {
 						-- various common map locations where 'crs' may be found
@@ -2419,7 +2428,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(208754, {	-- Spell Notes: TENGI RONEERA
 					["coord"] = { 53.0, 78.8, WESTFALL },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["cr"] = 450,	-- Defias Renegade Mage
 				})),

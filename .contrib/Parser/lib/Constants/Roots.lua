@@ -6,6 +6,7 @@ ROOTS = {
 	["BlackMarket"] = "BlackMarket",
 	["Character"] = "Character",
 	["Craftables"] = "Craftables",
+	["Delves"] = "Delves",
 	["ExpansionFeatures"] = "ExpansionFeatures",
 	["Factions"] = "Factions",
 	["GroupFinder"] = "GroupFinder",

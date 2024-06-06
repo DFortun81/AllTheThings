@@ -259,7 +259,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			n(QUESTS, {
 				q(29851, {	-- Champion of the Tournament
 					["qg"] = 34996,	-- Highlord Tirion Fordring
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 				}),
 			}),
 			-- #endif
@@ -443,7 +443,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						currency(241),	-- Champion's Seal
 						-- #if BEFORE CATA
 						currency(301, {	-- Emblem of Triumph
-							["timeline"] = { ADDED_3_2_0, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_2_0, REMOVED_4_0_1 },
 						}),
 						-- #endif
 					}),

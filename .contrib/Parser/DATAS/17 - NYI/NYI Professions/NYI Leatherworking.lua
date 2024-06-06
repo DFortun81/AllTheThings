@@ -18,6 +18,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(39707),	-- Verdant Tundra Cap
 					i(39708),	-- Verdant Tundra Shoulderpads
 				})),
+
+				-- 3.x.x
+				n(P3xx, {
+					i(38378)	-- Wyrmscale Leg Armor
+				}),
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1
@@ -272,7 +277,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(196383),	-- Stonehide Leather Vamp
 					-- Without SpellID attached
 					i(137900),	-- Pattern: Battlebound Armbands [Rank 2]
-					i(137901),	-- Pattern: Battlebound Girdle [Rank 2]
 					i(137905),	-- Pattern: Battlebound Grips [Rank 2]
 					i(137907),	-- Pattern: Battlebound Hauberk [Rank 2]
 					i(137903),	-- Pattern: Battlebound Leggings [Rank 2]
@@ -285,7 +289,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(140644),	-- Pattern: Gravenscale Armbands [Rank 1]
 					i(137933),	-- Pattern: Leather Pet Bed
 					i(137952),	-- Pattern: Stonehide Leather Barding
-					i(137869),	-- Pattern: Warhide Belt [Rank 2]
 					i(137868),	-- Pattern: Warhide Bindings [Rank 2]
 					i(137874),	-- Pattern: Warhide Footpads [Rank 2]
 					i(137873),	-- Pattern: Warhide Gloves [Rank 2]

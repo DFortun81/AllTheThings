@@ -1063,3 +1063,13 @@
 2647@@@The Vizier (Notoriety), Paragon
 2648@@@The Weaver (Notoriety), Paragon
 2649@@@The General (Notoriety), Paragon
+11.0.0.54521
+2579@@@zzOldDelves: Season 1
+2644@@@Delves: Season 1
+11.0.0.54605
+2601@@@The Weaver
+2605@@@The General
+2607@@@The Vizier
+2610@@@Azj-Kaheti Nerubian (Always Hostile) (Hidden)
+11.0.0.54774
+2569@@@The War Within

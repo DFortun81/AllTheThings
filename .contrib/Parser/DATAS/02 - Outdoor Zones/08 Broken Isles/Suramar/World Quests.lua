@@ -29,13 +29,13 @@ root(ROOTS.Zones, {
 				q(41447, {	-- Burning Felslate Deposits
 					["requireSkill"] = MINING,
 				}),
-				q(41990),	-- Chopped
+				petbattle(q(41990)),	-- Chopped
 				q(45307, {	-- Claws for Alarm!
 					crit(34848, {	-- Claws for Alarm!
 						["achievementID"] = 11427,	-- No Shellfish Endeavor
 					}),
 				}),
-				q(41914),	-- Clear the Catacombs
+				petbattle(q(41914)),	-- Clear the Catacombs
 				q(42151),	-- Clear the Skies
 				q(44067),	-- Consolidating Power
 				q(44867),	-- Contain their Advance
@@ -90,7 +90,7 @@ root(ROOTS.Zones, {
 				q(41304, {	-- Flourishing Starlight Roses
 					["requireSkill"] = HERBALISM,
 				}),
-				q(40337),	-- Flummoxed
+				petbattle(q(40337)),	-- Flummoxed
 				q(43932),	-- Forces of Oppression
 				q(42209),	-- Freeing the Taken
 				q(41448, {	-- Heavy Felslate Deposits
@@ -132,7 +132,7 @@ root(ROOTS.Zones, {
 				q(41461, {	-- Malevolent Felslate Outcropping
 					["requireSkill"] = MINING,
 				}),
-				q(41931),	-- Mana Tap
+				petbattle(q(41931)),	-- Mana Tap
 				q(42880),	-- Meeting their Quota
 				q(41305, {	-- Nightborne Herb Trader
 					["requireSkill"] = HERBALISM,
@@ -188,12 +188,12 @@ root(ROOTS.Zones, {
 				q(43435),	-- The Battle Rages On
 				q(42089),	-- The Fallen Ones
 				q(43777),	-- The Magic of Flight
-				q(41895, {	-- The Master of Pets
+				petbattle(q(41895, {	-- The Master of Pets
 					["sourceQuest"] = 44052,	-- And They Will Tremble (wowhead report, maybe guessed)
 					["minReputation"] = { FACTION_THE_NIGHTFALLEN, HONORED },
-				}),
+				})),
 				q(42082),	-- The Shattered Locus
-				q(42015),	-- Threads of Fate
+				petbattle(q(42015)),	-- Threads of Fate
 				q(44002),	-- Undersea Survey
 				q(43814),	-- Unspeakable Collaborators
 				q(41667, {	-- Vantus Rune Work Order: Xavius

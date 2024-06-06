@@ -331,7 +331,7 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 	i(182170, {	-- Gryphon Soul (SS!)
 		["timeline"] = { ADDED_9_0_2_LAUNCH },
 	}),
-	filter(RECIPES, bubbleDown({ ["timeline"] = { "added 7.0.3", "removed 8.0.1" }, }, {
+	filter(RECIPES, bubbleDown({ ["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 }, }, {
 		-- #if BEFORE 8.0.1
 		["description"] = "This has a chance to drop from any rated battleground win during Legion.",
 		-- #endif
@@ -352,8 +352,8 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 	}),
 	i(165717),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Ally
 	i(165718),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Horde
-	title(96, {	-- %s the Flawless Victor
-		["timeline"] = { ADDED_3_0_2, "removed 3.1.0" },
+	title(96, {	-- <Name> the Flawless Victor
+		["timeline"] = { ADDED_3_0_2, REMOVED_3_1_0 },
 		["collectible"] = false,
 	}),
 	i(182184, {	-- Wyvern Soul (SS!)

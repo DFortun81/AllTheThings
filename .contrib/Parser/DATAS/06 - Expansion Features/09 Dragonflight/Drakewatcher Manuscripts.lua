@@ -723,6 +723,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 		header(HEADERS.Item, 210412, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Flourishing Whimsydrake
 			i(210482),	-- Flourishing Whimsydrake: Back Fins (DM!)
+			i(210471, {["timeline"] = {ADDED_10_2_7}}),	-- Flourishing Whimsydrake: Body Armor (DM!) (might be already 10.2.0)
 			i(210476),	-- Flourishing Whimsydrake: Helmet (DM!)
 			i(210486),	-- Flourishing Whimsydrake: Horns (DM!)
 			i(210485),	-- Flourishing Whimsydrake: Long Snout (DM!)
@@ -734,6 +735,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			i(210484),	-- Flourishing Whimsydrake: Underbite Snout (DM!)
 		})),
 		header(HEADERS.Item, 206156, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Grotto Netherwing Drake
+			i(207760, {["timeline"] = {ADDED_10_2_7}}),	-- Grotto Netherwing Drake: Armor (DM!) (might be already 10.2.0)
 			i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
 			i(207776, {["timeline"] = {ADDED_10_2_6}}),	-- Grotto Netherwing Drake: Black Scales (DM!)
 			i(207762),	-- Grotto Netherwing Drake: Chin Spike (DM!)

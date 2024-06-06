@@ -135,6 +135,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						12461,	-- Death Talon Overseer
 					},
 				}),
+				i(19183),	-- Hourglass Sand
 				i(19439, {	-- Interlaced Shadow Jerkin
 					["crs"] = {
 						12460,	-- Death Talon Wyrmguard
@@ -357,7 +358,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_THREE
 						["races"] = HORDE_ONLY,
 					}),
 					i(170511, {	-- Head of Nefarian (Paladin, for Artifact appearance)
-						["timeline"] = { "added 8.2.0.30918" },
+						["timeline"] = { ADDED_8_2_0 },
 						["classes"] = { PALADIN },
 					}),
 					i(19364),	-- Ashkandi, Greatsword of the Brotherhood

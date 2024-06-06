@@ -1,14 +1,42 @@
+4.4.0.54851
+i(216893),	-- Goblin Town-in-a-Box
 11.0.0.54311
 i(211931),	-- Abyss Caller Horn
-i(212174),	-- The Warband Map to Everything Everywhere All At Once
+i(212174),	-- The Warband Map to Everywhere All At Once \\ The Warband Map to Everything Everywhere All At Once
 i(215145),	-- Remembrance Stone
 i(215147),	-- Beautification Iris
 i(216665),	-- Warband Bank Distance Inhibitor
 i(216887),	--
 i(218310),	-- Box of Puntables
-i(219387),	--
+i(219387),	-- Barrel of Fireworks
 i(221966),	-- Wormhole Generator: Khaz Algar
 i(223312),	-- Trusty Hat
+11.0.0.54361
+i(204405),	-- Stuffed Bear
+i(219403),	-- Stonebound Lantern \\ Stonebound Lantern [PH]
+i(221962),	-- Defective Escape Pod
+i(224251),	-- Memory Chord
+i(224552),	-- Cave Spelunker's Torch
+i(224554),	-- Silver Linin' Scepter
+i(224585),	-- Hanna's Locket
+11.0.0.54521
+i(224643),	-- Pet-Sized Candle
+i(224783),	-- Sovereign's Finery Chest \\ Sovereign Finery Chest
+i(224809),	-- Earthen Plumber's Pipe
+11.0.0.54605
+i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
+i(225347),	-- Web-Vandal's Spinning Wheel
+i(225547),	-- Toxic Victory
+11.0.0.54675
+i(225641),	-- Illusive Kobyss Lure
+i(225659),	-- Arathi Book Collection \\ Arathor Book Collection
+i(225910),	-- Pileus Delight
+11.0.0.54774
+i(225933),	-- Forged Legend's Pennant
+i(225969),	-- Forged Flag of Victory
+11.0.0.54935
+i(225556),	-- Ancient Construct
+i(226191),	-- Web Pet Leash
 
 
 
@@ -17,12 +45,38 @@ Missing in ToyDB.lua
 
 11.0.0.54311
 i(211931),	-- Abyss Caller Horn
-i(212174),	-- The Warband Map to Everything Everywhere All At Once
+i(212174),	-- The Warband Map to Everywhere All At Once \\ The Warband Map to Everything Everywhere All At Once
 i(215145),	-- Remembrance Stone
 i(215147),	-- Beautification Iris
 i(216665),	-- Warband Bank Distance Inhibitor
 i(216887),	--
 i(218310),	-- Box of Puntables
-i(219387),	--
+i(219387),	-- Barrel of Fireworks
 i(221966),	-- Wormhole Generator: Khaz Algar
 i(223312),	-- Trusty Hat
+11.0.0.54361
+i(204405),	-- Stuffed Bear
+i(219403),	-- Stonebound Lantern \\ Stonebound Lantern [PH]
+i(221962),	-- Defective Escape Pod
+i(224251),	-- Memory Chord
+i(224552),	-- Cave Spelunker's Torch
+i(224554),	-- Silver Linin' Scepter
+i(224585),	-- Hanna's Locket
+11.0.0.54521
+i(224643),	-- Pet-Sized Candle
+i(224783),	-- Sovereign's Finery Chest \\ Sovereign Finery Chest
+i(224809),	-- Earthen Plumber's Pipe
+11.0.0.54605
+i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
+i(225347),	-- Web-Vandal's Spinning Wheel
+i(225547),	-- Toxic Victory
+11.0.0.54675
+i(225641),	-- Illusive Kobyss Lure
+i(225659),	-- Arathi Book Collection \\ Arathor Book Collection
+i(225910),	-- Pileus Delight
+11.0.0.54774
+i(225933),	-- Forged Legend's Pennant
+i(225969),	-- Forged Flag of Victory
+11.0.0.54935
+i(225556),	-- Ancient Construct
+i(226191),	-- Web Pet Leash

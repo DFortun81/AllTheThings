@@ -99,11 +99,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				exploration(657),	-- The Harborage
 				exploration(1798),	-- The Shifting Mire
-				--[[
-				exploration(1779),	-- Draenil'dur Village
-				exploration(1817),	-- Stagalbog Cave
-				exploration(2403),	-- The Forbidding Sea
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(599, {	-- Bogpaddle, Swamp of Sorrows
@@ -235,6 +230,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27773,	-- Step Three: Prophet
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						i(64596, {	-- Dream Pendant
 							["timeline"] = { ADDED_4_0_3 },
@@ -430,7 +426,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157012, {	-- Broken Silversnap Bottle
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -495,7 +491,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9609, {	-- Help Watcher Biggs
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 25.8, 31.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
@@ -632,11 +628,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27694,	-- Pool of Tears
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 				}),
 				q(9440, {	-- Little Morsels
 					["qg"] = 17109,	-- Cersei Dusksinger
 					["coord"] = { 47.8, 54.9, DUSTWALLOW_MARSH },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -709,7 +706,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28677,	-- Warchief's Command: Swamp of Sorrows!
 					},
 					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						objective(1, {	-- 0/6 Intact Swampshore Tail
 							["provider"] = { "i", 61633 },	-- Intact Swampshore Tail
@@ -766,7 +763,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9448, {	-- Mercy for the Cursed
 					["qg"] = 17127,	-- Anchorite Avuun
 					["coord"] = { 25.8, 31.8, SWAMP_OF_SORROWS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
@@ -867,7 +864,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["allianceQuestData"] = q(9610, {	-- Pool of Tears (A)
 						["qg"] = 18221,	-- Holaaru
 						["coord"] = { 25.9, 32.4, SWAMP_OF_SORROWS },
-						["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					}),
 					["hordeQuestData"] = q(1424, {	-- Pool of Tears (H)
 						["qg"] = 1443,	-- Fel'zerul
@@ -912,6 +909,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27869,	-- The Dragon and the Temple
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/ (10 [TBC] / 5 [WRATH]) Atal'ai Artifact
 							["providers"] = {
@@ -1045,9 +1043,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27704,	-- Legends of the Sunken Temple
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Priestess Udum'bra slain
 							["provider"] = { "n", 46424 },	-- Priestess Udum'bra
+							["coord"] = { 54.3, 79.3, SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
@@ -1056,9 +1056,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27768,	-- Step Two: The Bloodletter
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Jammal'an the Prophet slain
 							["provider"] = { "n", 46656 },	-- Jammal'an the Prophet
+							["coord"] = { 54.43, 78.85, SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
@@ -1067,9 +1069,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27705,	-- Step One: The Priestess
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["groups"] = {
 						objective(1, {	-- 0/1 Gomora the Bloodletter slain
 							["provider"] = { "n", 46623 },	-- Gomora the Bloodletter
+							["coord"] = { 54.5, 79.13, SWAMP_OF_SORROWS },
 						}),
 					},
 				}),
@@ -1096,6 +1100,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
+				}),
+				q(28569, {	-- The Bogpaddle Bullet (A)
+					["qg"] = 9177,	-- Oralius
+					["coord"] = { 71.8, 68.0, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(40, 40, 15),
+				}),
+				q(28570, {	-- The Bogpaddle Bullet (H)
+					["qg"] = 10260,	-- Kibler
+					["coord"] = { 54.9, 22.6, BURNING_STEPPES },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(40, 40, 15),
 				}),
 				q(27757, {	-- The Darkest Depths
 					["qg"] = 46172,	-- Baba Bogbrew
@@ -1162,6 +1182,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["isBreadcrumb"] = true,
 				}),
 				q(1421, {	-- The Lost Caravan
@@ -1368,7 +1389,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157013, {	-- Ogre Mage Club
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1398,7 +1419,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157013, {	-- Ogre Mage Club
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1407,6 +1428,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1415,6 +1437,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { TEMPLE_OF_ATALHAKKAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -1720,7 +1743,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21941, {	-- Design: Black Pearl Panther
-							["timeline"] = { "added 2.0.1.6180" },
+							["timeline"] = { ADDED_2_0_1 },
 							["isLimited"] = true,
 						}),
 						i(11223, {	-- Formula: Enchant Bracer - Dodge (RECIPE!) / Formula: Enchant Bracer - Deflection

@@ -50,27 +50,36 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(80388, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Last Hurrah: Emerald Dream
 					i(217111),	-- Cache of Awakened Dreams
 					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
-						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
-						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
-						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+						["f"] = MISC,
+						["groups"] = {
+							r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+							r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+							r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+						},
 					}),
 					i(211515),	-- Splintered Spark of Awakening
 				})),
 				q(80386, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Last Hurrah: Zaralek Caverns and Time Rifts
 					i(217110),	-- Cache of Awakened Embers
 					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
-						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
-						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
-						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+						["f"] = MISC,
+						["groups"] = {
+							r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+							r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+							r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+						},
 					}),
 					i(211515),	-- Splintered Spark of Awakening
 				})),
 				q(80385, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Last Hurrah: Dragon Isles
 					i(217109),	-- Cache of Awakened Storms
 					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
-						r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
-						r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
-						r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+						["f"] = MISC,
+						["groups"] = {
+							r(429947),	-- Enchanted Aspect's Awakened Crest (RECIPE!)
+							r(429948),	-- Enchanted Whelpling's Awakened Crest (RECIPE!)
+							r(429945),	-- Enchanted Wyrm's Awakened Crest (RECIPE!)
+						},
 					}),
 					i(211515),	-- Splintered Spark of Awakening
 				})),
@@ -152,6 +161,8 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(78450),	-- Aiding the Accord - Emerald Bounty - Quest Complete (spellID 426078)
 		q(78861),	-- Aiding the Accord - Emerald Bounty
 		q(78449),	-- Aiding the Accord - Superbloom - Quest Complete (spellID 426077)
-		--q(80389),	-- (probably) uppon completion "Last Hurrah" series
+		
+		q(80389),	-- (probably) upon completion "Last Hurrah" series
+		q(79073),	-- Triggers with QuestID 80389 and the other "Last Hurrah" quests
 	}),
 }));

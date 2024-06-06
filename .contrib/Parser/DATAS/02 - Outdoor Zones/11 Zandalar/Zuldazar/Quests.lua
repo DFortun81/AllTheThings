@@ -9,7 +9,7 @@ local ASPIRANTS_EQUIPMENT_CACHE = i(167744, {	-- Aspirant's Equipment Cache
 		{ "modID", 47 },	-- blue.  still the wrong iLvl because i can't also apply 2, but it looks better
 	},
 })
-root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(ZULDAZAR, {
 		n(QUESTS, {
 			-- TODO: shit that needs solving:
@@ -230,6 +230,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 121706 },	-- Beastlord L'kala
 				["coord"] = { 66.8, 42.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(167545),	-- L'kala's Offering (QI!)
+				},
 			}),
 			q(48317, {	-- A Nose for Magic
 				["sourceQuests"] = {
@@ -274,6 +277,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 151257 },	-- Torcali
 				["coord"] = { 68.2, 29.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(167546),	-- Blessed Offering (QI!)
+				},
 			}),
 			q(49289, {	-- A Special Stone
 				["sourceQuests"] = {
@@ -378,6 +384,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
+				["g"] = {
+					i(168304),	-- Squeaky Raptor (QI!)
+				},
 			}),
 			q(55249, {	-- Away From the Herd
 			--	i never got this version of the quest, only 55244.  is this version unused or is there a specific set of circumstances under which it appears?
@@ -387,6 +396,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["isDaily"] = true,
 				["coord"] = { 68.2, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(168304),	-- Squeaky Raptor (QI!)
+				},
 			}),
 			q(50412, {	-- Back to the Nest
 				["sourceQuests"] = { 50401 },	-- Fear of Falling
@@ -1407,6 +1419,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 151319 },	-- Li'zal <Priestess of Torcali>
 				["coord"] = { 68.3, 41.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(168325),	-- Direhorn Saddle (QI!)
+				},
 			}),
 			q(55462, {	-- The Wanderer's Call
 				["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
@@ -1479,6 +1494,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["coord"] = { 67.6, 72.8, ZANCHUL_HALL_OF_THE_HIGH_PRIESTS },
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 53775 },	-- Shades of Disruption
+				["g"] = {
+					i(165401),	-- The Glaive of Vol'jin (QI!)
+				},
 			}),
 			q(55798, {	-- Wander Not Alone
 				["sourceQuests"] = { 55797 },	-- The Direhorn Mother's Fury
@@ -1532,6 +1550,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
 				["races"] = HORDE_ONLY,
 				["coord"] = { 68.2, 29.6, ZULDAZAR },
+				["g"] = {
+					i(168005),	-- Mature Direbloom Petal (QI!)
+				},
 			}),
 			q(51990, {	-- Wings for the Kraal
 				["sourceQuests"] = {
@@ -1551,6 +1572,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["sourceQuests"] = {
 					51521,	-- The True Leader of Zandalar
 					54165,	-- The Return of Derek Proudmoore
+				},
+				["g"] = {
+					i(164944),	-- The Bloodied Glaive of Vol'jin (QI!)
 				},
 			}),
 			q(50940, {	-- Wisdom of the Wingless
@@ -1786,7 +1810,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, m(ZANDALAR, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.HiddenQuestTriggers, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(ZULDAZAR, {
 		q(54738),	-- Loa Changer Jani to Paku
 	}),

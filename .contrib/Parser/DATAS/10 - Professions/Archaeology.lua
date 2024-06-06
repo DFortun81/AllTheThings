@@ -76,8 +76,11 @@ ARCHAEOLOGY_ZANDALARI = createHeader({
 	},
 });
 local RESTORED_ARTIFACT = 87399;
-root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = ARCHAEOLOGY }, {
-	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
+	["requireSkill"] = ARCHAEOLOGY,
+	["timeline"] = { ADDED_4_0_3_LAUNCH },
+}, {
+	expansion(EXPANSION.CATA, {
 		n(ACHIEVEMENTS, {
 			ach(4857),	-- Journeyman Archaeologist
 			ach(4919),	-- Expert Archaeologist
@@ -284,7 +287,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({ ["requireSkill"] = AR
 				}),
 			}),
 		})),
-	})),
+	}),
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 		n(ACHIEVEMENTS, {
 			ach(6837),	-- Zen Master Archaeologist

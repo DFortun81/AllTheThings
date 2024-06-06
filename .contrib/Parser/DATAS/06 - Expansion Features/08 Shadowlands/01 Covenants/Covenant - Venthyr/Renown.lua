@@ -24,10 +24,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					["description"] = "Requires Renown 40.",
 				}),
 				]]--
-				title_male(429, {	-- Count %s
+				title_male(429, {	-- Count <Name>
 					["description"] = "Requires Renown 40.",
 				}),
-				title_female(430, {	-- Countess %s
+				title_female(430, {	-- Countess <Name>
 					["description"] = "Requires Renown 40.",
 				}),
 				title(444, {	-- Sin Eater (TITLE!)

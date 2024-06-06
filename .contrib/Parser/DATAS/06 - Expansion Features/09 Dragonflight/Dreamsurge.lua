@@ -16,10 +16,13 @@ local function DreamboundBOA(itemID, vendorItemID)
 	return i;
 end
 local DREAMSURGE_COALESCENCE = 207026;
--- #if BEFORE 10.2.0
-local DREAMSURGE_CHRYSALIS = 208153;
+local DREAMSURGE_CHRYSALIS
+-- #if AFTER 10.2.6.54358
+DREAMSURGE_CHRYSALIS = 224297;
+-- #elseif BEFORE 10.2.0
+DREAMSURGE_CHRYSALIS = 208153;
 -- #else
-local DREAMSURGE_CHRYSALIS = 210254;
+DREAMSURGE_CHRYSALIS = 210254;
 -- #endif
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -90,7 +93,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["isWeekly"] = true,
 				["g"] = {
 					ach(19008),	-- Dream Shaper
-					i(DREAMSURGE_CHRYSALIS),
+					i(208153, {	-- Dreamsurge Chrysalis
+						["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 },
+					}),
+					i(210254, {	-- Dreamsurge Chrysalis
+						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+					}),
+					i(224297, {	-- Dreamsurge Cradle
+						["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+					}),
 					i(215364, {	-- Cache of Dreams
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 					}),
@@ -153,10 +164,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				i(DREAMSURGE_COALESCENCE, {
 					["description"] = "10 per WQ, 25 per rare kill in zone where Dreamsurge is active",
 				}),
-				i(208153, {	-- Dreamsurge Chrysalis (10.1.7)
-					["timeline"] = { ADDED_10_1_7, REMOVED_10_2_0 },
-				}),
-				i(DREAMSURGE_CHRYSALIS),
 				i(192807, {	-- Renewed Magmammoth (MOUNT!)
 					["cost"] = {{ "i", 209419, 20 }},	-- Charred Elemental Remains
 				}),

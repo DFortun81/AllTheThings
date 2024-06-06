@@ -4,7 +4,7 @@
 
 root(ROOTS.Zones, {
 	m(PANDARIA, {
-		applyclassicphase(MOP_PHASE_ONE, m(THE_JADE_FOREST, bubbleDownSelf({ ["timeline"] = { "added 5.0.4" } }, {
+		applyclassicphase(MOP_PHASE_ONE, m(THE_JADE_FOREST, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["lore"] = "The Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.",
 			["icon"] = "Interface\\Icons\\achievement_zone_jadeforest",
 			["maps"] = {
@@ -772,6 +772,11 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29618 },	-- The High Elder
 						["provider"] = { "n", 54913 },	-- Lin Tenderpaw
 						["coord"] = { 44.9, 24.9, THE_JADE_FOREST },
+						["groups"] = {
+							o(209436, {	-- Ripe Orange
+								i(72589),	-- Ripe Orange (QI!)
+							}),
+						},
 					}),
 					q(29756, {	-- A Humble Offering
 						["sourceQuests"] = {
@@ -781,6 +786,11 @@ root(ROOTS.Zones, {
 						},
 						["provider"] = { "n", 55614 },	-- Pei-Zhi
 						["coord"] = { 44.2, 15.0, THE_JADE_FOREST },
+						["groups"] = {
+							o(209825, {	-- Tidemist Cap
+								i(75214),	-- Tidemist Cap (QI!)
+							}),
+						},
 					}),
 					q(31132, {	-- A Mile in My Shoes
 						["sourceQuests"] = { 31121 },	-- Stay a While, and Listen
@@ -803,11 +813,23 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29626 },	-- Groundskeeper Wu
 						["provider"] = { "n", 54915 },	-- Groundskeeper Wu
 						["coord"] = { 41.6, 23.6, THE_JADE_FOREST },
+						["groups"] = {
+							i(72954),	-- Black Walnut Extract (QI!)
+							i(72979),	-- Triple-Bittered Ale (QI!)
+							o(209462, {	-- Rattan Switch
+								i(72926),	-- Rattan Switch (QI!)
+							}),
+						},
 					}),
 					q(29629, {	-- A Steady Hand
 						["sourceQuests"] = { 29627 },	-- A Proper Weapon
 						["provider"] = { "n", 54915 },	-- Groundskeeper Wu
 						["coord"] = { 41.6, 23.7, THE_JADE_FOREST },
+						["groups"] = {
+							o(209550, {	-- Blushleaf Cluster
+								i(73193),	-- Blushleaf Extract (QI!)
+							}),
+						},
 					}),
 					q(29628, {	-- A Strong Back
 						["sourceQuests"] = { 29627 },	-- A Proper Weapon
@@ -869,11 +891,28 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					q(31853, {	-- All Aboard!
+						["qg"] = 54870,	-- General Nazgrim
+						["sourceQuests"] = {
+							29611,	-- The Art of War (Nobody)
+							29612,	-- The Art of War (Veteran)
+							-- #if AFTER 7.3.5
+							49852,	-- To Pandaria!
+							49538,	-- Warchief's Command: Jade Forest!
+							-- #endif
+						},
+						["coord"] = { 48.6, 70.8, ORGRIMMAR },
+						["timeline"] = { ADDED_5_0_4 },
+						["races"] = HORDE_ONLY,
+					}),
 					q(29925, {	-- All We Can Spare
 					--	TODO: does this also require finishing all the other dawn's blossom quests?  is the overall criteria required or just 'the jade witch'?
 						["sourceQuests"] = { 29723 },	-- The Jade Witch
 						["provider"] = { "n", 56348 },	-- Toya
 						["coord"] = { 47.1, 46.1, THE_JADE_FOREST },
+						["groups"] = {
+							i(76483),	-- Scavenged Jade (QI!)
+						},
 					}),
 					q(29576, {	-- An Air of Worry
 						["isBreadcrumb"] = true,
@@ -911,6 +950,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 55480 },	-- Pei-Zhi
 						["coord"] = { 44.2, 14.9, THE_JADE_FOREST },
 						["g"] = {
+							i(74258),	-- Staff of Pei-Zhi (QI!)
 							i(84261),	-- Axe of Sacrifice
 							i(84262),	-- Spirit Crusher
 							i(84263),	-- Spiritsage's Protector
@@ -986,6 +1026,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29750 },	-- Vessels of the Spirit
 						["provider"] = { "n", 55614 },	-- Pei-Zhi
 						["coord"] = { 44.2, 15.0, THE_JADE_FOREST },
+						["groups"] = {
+							i(74808),	-- Spirit Bottles (QI!)
+						},
 					}),
 					q(29632, {	-- Becoming Battle-Ready
 						["sourceQuests"] = { 29620 },	-- The Great Banquet
@@ -1022,6 +1065,10 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56406 },	-- Rivett Clutchpop
 						["coord"] = { 27.2, 50.7, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(76260),	-- Exploded Slicky (QI!)
+							i(76262),	-- Gut Bomb (QI!)
+						},
 					}),
 					q(29967, {	-- Boom Goes the Doonamite!
 						["sourceQuests"] = { 29968 },	-- Green-ish Energy
@@ -1068,6 +1115,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56339 },	-- General Nazgrim
 						["coord"] = { 30.2, 53.1, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(76336),	-- Nazgrim's Grog (QI!)
+						},
 					}),
 					q(29926, {	-- Calamity Jade
 						["sourceQuests"] = { 29928 },	-- I Have No Jade and I Must Scream
@@ -1103,6 +1153,11 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 55521 },	-- Rivett Clutchpop
 						["coord"] = { 31.1, 21.5, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							o(214962, {	-- Requisitioned Firework Launcher
+								i(89163),	-- Requisitioned Firework Launcher (QI!)
+							}),
+						},
 					}),
 					q(29552, {	-- Critical Condition
 						["sourceQuests"] = {
@@ -1126,6 +1181,12 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 55403 },	-- Zin'Jun
 						["coord"] = { 31.1, 17.5, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(74160),	-- Zin'Jun's Rifle (QI!)
+							i(74161),	-- Zin'Jun's Left Eye (QI!)
+							i(74162),	-- Zin'Jun's Right Eye (QI!)
+							i(74163),	-- Snuff's Corpse (QI!)
+						},
 					}),
 					q(30015, {	-- Dawn's Blossom
 						["sourceQuests"] = { 29967 },	-- Boom Goes the Doonamite!
@@ -1231,6 +1292,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 66190 },	-- General Nazgrim
 						["coord"] = { 31.6, 11.3, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(89605),	-- Nazgrim's Flare Gun (QI!)
+						},
 					}),
 					q(29639, {	-- Flying Colors (Instructor Xann)
 						["sourceQuests"] = {
@@ -1294,6 +1358,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 55180 },	-- Shademaster Kiryn
 						["coord"] = { 28.1, 24.8, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(74621),	-- Viscous Chlorophyll (QI!)
+						},
 					}),
 					q(31742, {	-- Fractured Forces
 						["sourceQuests"] = {
@@ -1327,6 +1394,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56406 },	-- Rivett Clutchpop
 						["coord"] = { 28.2, 47.7, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(76225),	-- Fistful of Bird Guts (QI!)
+						},
 					}),
 					q(30484, {	-- Gauging Our Progress
 						["sourceQuests"] = {
@@ -1386,6 +1456,11 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56406 },	-- Rivett Clutchpop
 						["coord"] = { 30.7, 52.2, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							o(209903, {	-- Green Branch
+								i(76333),	-- Greeen Branch (QI!)
+							}),
+						},
 					}),
 					q(29626, {	-- Groundskeeper Wu
 						["sourceQuests"] = { 29620 },	-- The Great Banquet
@@ -1398,11 +1473,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 58.1, 80.6, THE_JADE_FOREST },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(32018, {	-- His Name Was... Stormstout
+					heroscall(q(49556, {	-- Hero's Call: Jade Forest!
+						["timeline"] = { ADDED_7_3_5 },
 						["isBreadcrumb"] = true,
-						["provider"] = { "n", 56774 },	-- Bolo
-						["coord"] = { 45.7, 43.9, THE_JADE_FOREST },
-					}),
+						["lvl"] = 80,
+					})),
 					q(29556, {	-- Hozen Aren't Your Friends, Hozen Are Your Enemies
 						["sourceQuests"] = { 31745 },	-- Onward and Inward
 						["provider"] = { "n", 66292 },	-- Sky Admiral Rogers
@@ -1427,6 +1502,11 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29925 },	-- All We Can Spare
 						["provider"] = { "n", 56346 },	-- Foreman Mann
 						["coord"] = { 50.9, 27.0, THE_JADE_FOREST },
+						["groups"] = {
+							o(209863, {	-- Chunk of Jade
+								i(76209),	-- Chunk of Jade (QI!)
+							}),
+						},
 					}),
 					q(31134, {	-- If These Stones Could Speak
 						["sourceQuests"] = { 31132 },	-- A Mile in my Shoes
@@ -1473,6 +1553,7 @@ root(ROOTS.Zones, {
 							i(80765),	-- Friendly Gift Band
 							i(80766),	-- Band of Flair
 							i(80767),	-- Band of Finding
+							i(76305),	-- Hellscream's Fist Signal Flare (QI!)
 						},
 					}),
 					q(30502, {	-- Jaded Heart
@@ -1537,6 +1618,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 59377 },	-- Lorewalker Cho
 						["coord"] = { 28.2, 46.7, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(80071),	-- Cho Family Heirloom (QI!)
+						},
 					}),
 					q(29822, {	-- Lay of the Land
 						["sourceQuests"] = {
@@ -1595,6 +1679,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 55521 },	-- Rivett Clutchpop
 						["coord"] = { 28.1, 24.7, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(84157),	-- Rivett's Rocket Jumpers (QI!)
+						},
 					}),
 					q(29743, {	-- Monstrosity
 						["sourceQuests"] = { 31774 },	-- Seeking Zin'jun
@@ -1653,12 +1740,22 @@ root(ROOTS.Zones, {
 					q(29580, {	-- Orchard-Supplied Hardware
 						["provider"] = { "n", 54854 },	-- Gentle Mother Hanae
 						["coord"] = { 43.2, 76.0, THE_JADE_FOREST },
+						["groups"] = {
+							o_repeated({
+								i(72133),	-- Orchard Tool (QI!)
+								o(209344),
+								o(209345),
+							}),
+						},
 					}),
 					q(29935, {	-- Orders are Orders
 						["sourceQuests"] = { 29879 },	-- Swallowed Whole
 						["provider"] = { "n", 56313 },	-- Tooki Tooki
 						["coord"] = { 26.2, 37.3, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(85507),	-- Alliance Orders (QI!)
+						},
 					}),
 					q(30002, {	-- Pages of History
 						["sourceQuests"] = { 29998 },	-- The Librarian's Quandry
@@ -1781,6 +1878,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56063 },	-- Inkmaster Jo Po
 						["coord"] = { 55.3, 45.3, THE_JADE_FOREST },
 						["g"] = {
+							i(75221),	-- Wasp Stinger
 							i(80713),	-- Ambermist Leggings
 							i(80714),	-- Blackthicket Legguards
 							i(80715),	-- Jade Witch Legguards
@@ -1825,6 +1923,17 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29749 },	-- An Urgent Plea
 						["provider"] = { "n", 55614 },	-- Pei-Zhi
 						["coord"] = { 44.2, 15.0, THE_JADE_FOREST },
+						["groups"] = {
+							o(209700, {	-- Chipped Ritual Bowl
+								i(74760),	-- Chipped Ritual Bowl (QI!)
+							}),
+							o(209699, {	-- Jade Cong
+								i(74762),	-- Jade Cong (QI!)
+							}),
+							o(209701, {	-- Pungent Ritual Candle
+								i(74761),	-- Pungent Ritual Candle (QI!)
+							}),
+						},
 					}),
 					q(29885, {	-- Road Rations
 						["sourceQuests"] = { 29562 },	-- Jailbreak
@@ -1964,6 +2073,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56358 },	-- Eekle Eekle
 						["coord"] = { 27.0, 50.8, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(76420),	-- Snapper Steak (QI!)
+						},
 					}),
 					q(29748, {	-- Simulacrumble
 						["sourceQuests"] = { 29745 },	-- The Sprites' Plight
@@ -1993,6 +2105,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 54854 },	-- Gentle Mother Hanae
 						["coord"] = { 43.2, 76.0, THE_JADE_FOREST },
 						["g"] = {
+							i(72578),	-- Nectarbreeze Cider (QI!)
 							i(84243),	-- Bamboo Fiber Gloves
 							i(84244),	-- Bamboo Leaf Gloves
 							i(84245),	-- Jade Witch Handguards
@@ -2028,12 +2141,23 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.8, 32.6, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
+					warchiefscommand(q(29611, {	-- The Art of War (Nobody)
+						["description"] = "Players who have not completed Vashj'ir will receive this version of The Art of War.",
+						["races"] = HORDE_ONLY,
+					})),
+					warchiefscommand(q(29612, {	-- The Art of War (Veteran)
+						["description"] = "Players who have completed Vashj'ir will receive this version of The Art of War.",
+						["races"] = HORDE_ONLY,
+					})),
 					q(29933, {	-- The Bees' Knees
 						["minReputation"] = { 1228, FRIENDLY },
 						["sourceQuests"] = { 29879 },	-- Swallowed Whole
 						["provider"] = { "n", 56351 },	-- Bo Bo
 						["coord"] = { 25.8, 37.9, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(76173),	-- Bug Leg (QI!)
+						},
 					}),
 					q(31737, {	-- The Cost of War
 						["sourceQuests"] = { 31735 },	-- The Right Tool For The Job
@@ -2096,6 +2220,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 66646 },	-- General Nazgrim
 						["coord"] = { 34.7, 10.6, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(89769),	-- Nazgrim's Flare Gun (QI!)
+						},
 					}),
 					q(29620, {	-- The Great Banquet
 						["sourceQuests"] = { 29619 },	-- A Courteous Guest
@@ -2142,7 +2269,7 @@ root(ROOTS.Zones, {
 					q(29547, {	-- The King's Command
 						["qg"] = 1750,	-- Grand Admiral Jes-Tereth
 						["coord"] = { 85.6, 32.8, STORMWIND_CITY },
-						["timeline"] = { "added 5.0.4" },
+						["timeline"] = { ADDED_5_0_4 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
@@ -2164,8 +2291,10 @@ root(ROOTS.Zones, {
 						["qg"] = 55789,	-- Rell Nightwind
 						["sourceQuests"] = {
 							29547,	-- The King's Command
+							-- #if AFTER 7.3.5
 							49556,	-- Hero's Call: Jade Forest!
 							49866,	-- To Pandaria!
+							-- #endif
 						},
 						["coord"] = { 78.9, 39.7, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
@@ -2194,6 +2323,11 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 						["provider"] = { "n", 56064 },	-- Inkmaster Glenzu
 						["coord"] = { 54.8, 45.3, THE_JADE_FOREST },
+						["groups"] = {
+							o(209836, {	-- Freshly Fallen Petals
+								i(75219),	-- Freshly Fallen Petal (QI!)
+							}),
+						},
 					}),
 					q(29999, {	-- The Rider's Bind
 						["sourceQuests"] = { 29932 },	-- The Temple of the Jade Serpent
@@ -2225,6 +2359,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 54918 },	-- Instructor Myang
 						["coord"] = { 38.9, 24.0, THE_JADE_FOREST },
 						["g"] = {
+							i(73369),	-- Monastery Fireworks (QI!)
 							i(84251),	-- Staff of Inner Focus
 							i(84252),	-- Instructor's Staff
 							i(84253),	-- Tian Monastic Staff
@@ -2252,6 +2387,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29932 },	-- The Temple of the Jade Serpent
 						["provider"] = { "n", 56782 },	-- Elder Sage Rain-Zhu
 						["coord"] = { 58.1, 58.6, THE_JADE_FOREST },
+						["groups"] = {
+							i(76725),	-- Scryer's Staff (QI!)
+						},
 					}),
 					q(31303, {	-- The Seal is Broken
 						["sourceQuests"] = {
@@ -2306,11 +2444,19 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 						["provider"] = { "n", 59178 },	-- Lo Wanderbrew
 						["coord"] = { 46.6, 45.3, THE_JADE_FOREST },
+						["groups"] = {
+							o(209951, {	-- Silk Patch
+								i(75023),	-- Pristine Silk Strand (QI!)
+							}),
+						},
 					}),
 					q(29752, {	-- The Wayward Dead
 						["sourceQuests"] = { 29749 },	-- An Urgent Plea
 						["provider"] = { "n", 55614 },	-- Pei-Zhi
 						["coord"] = { 44.2, 15.0, THE_JADE_FOREST },
+						["groups"] = {
+							i(74771),	-- Staff of Pei-Zhi (QI!)
+						},
 					}),
 					q(29555, {	-- The White Pawn
 						["sourceQuests"] = { 31745 },	-- Onward and Inward
@@ -2329,6 +2475,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 62923 },	-- Empty Package
 						["coord"] = { 22.8, 30.5, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] ={
+							i(74623),	-- Emergency Supplies (QI!)
+						},
 					}),
 					q(29617, {	-- Tian Monastery
 						["isBreadcrumb"] = true,
@@ -2416,18 +2565,26 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29749 },	-- An Urgent Plea
 						["provider"] = { "n", 55614 },	-- Pei-Zhi
 						["coord"] = { 44.2, 15.0, THE_JADE_FOREST },
+						["groups"] = {
+							i(74763),	-- Spirit Bottle (QI!)
+						},
 					}),
 					q(31613, {	-- Volatile Greenstone Brew
 						["provider"] = { "n", 62321 },	-- Brewmaster Tzu
 						["coord"] = { 47.4, 37.0, THE_JADE_FOREST },
 						["lvl"] = 90,
 					}),
+					warchiefscommand(q(49538, {	-- Warchief's Command: Jade Forest!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(31230, {	-- Welcome to Dawn's Blossom
+						["provider"] = { "n", 56348 },	-- Toya
 						["sourceQuests"] = {
 							30015,	-- Dawn's Blossom (Horde)
 							29922,	-- In Search of Wisdom (Alliance)
 						},
-						["provider"] = { "n", 56348 },	-- Toya
 						["coord"] = { 47.1, 46.1, THE_JADE_FOREST },
 					}),
 					q(31734, {	-- Welcome Wagons
@@ -2463,6 +2620,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.1, 38.9, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							i(85784),	-- Alliance Service Medallion (QI!)
 							i(88701),	-- Wikket Cape
 							i(88702),	-- Wikket Cloak
 							i(88703),	-- Wikket Wrap
@@ -3154,11 +3312,6 @@ root(ROOTS.NeverImplemented, {
 				i(80963),	-- Scavenger's Badge
 				i(80964),	-- Scavenger's Insignia
 			}),
-		}),
-		n(WEAPONS, {
-			i(80982),	-- Scavenger's Shield
-			i(80985),	-- Scavenger's Barrier
-			i(80981),	-- Scavenged Rotor Blade
 		}),
 	}),
 });

@@ -194,7 +194,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							i(49784),	-- Minister's Number One Legplates (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(50169, {	-- Papa's Brand New Knife
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(50316),	-- Papa's Brand New Bag
 							-- #if AFTER 7.3.5

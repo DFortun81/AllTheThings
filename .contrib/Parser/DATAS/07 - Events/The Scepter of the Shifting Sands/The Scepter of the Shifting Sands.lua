@@ -66,13 +66,13 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						title(33, {	-- Scarab Lord Crieve
-							["timeline"] = { "added 2.0.3.28000", REMOVED_4_0_3 },	-- Added in Burning Crusade Prepatch
+							["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },	-- Added in Burning Crusade Prepatch
 						}),
 						i(21176, {	-- Black Qiraji Battle Tank (MOUNT!)
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						mount(239770, {	-- Black Qiraji War Tank (MOUNT!)  (This a high resolution version given to players in the end of Legion)
-							["timeline"] = { "added 7.3.5.10000", "removed 7.3.5.10001" },	-- when it's added, it's already removed because it's only given to players who already have the original removed
+							["timeline"] = { ADDED_7_3_5, REMOVED_7_3_5 },	-- when it's added, it's already removed because it's only given to players who already have the original removed
 						}),
 					},
 				})),
@@ -84,13 +84,13 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 					["lvl"] = 60,
 					["groups"] = {
 						objective(1, {	-- Who Does Number Two Work For?
-							["provider"] = { "n", 15554 },	-- Number Two
-							["coord"] = { 65, 72, WINTERSPRING },
-							["cost"] = {
-								{ "i", 21041, 1 },	-- Bag of Gold
-								{ "i", 21039, 1 },	-- Narain's Turban
-								{ "i", 21040, 1 },	-- Narain's Robe
+							["providers"] = {
+								{ "n", 15554 },	-- Number Two
+								{ "i", 21041 },	-- Bag of Gold
+								{ "i", 21039 },	-- Narain's Turban
+								{ "i", 21040 },	-- Narain's Robe
 							},
+							["coord"] = { 65, 72, WINTERSPRING },
 						}),
 						i(21042, {	-- Narain's Special Kit
 							i(21037),	-- Crude Map

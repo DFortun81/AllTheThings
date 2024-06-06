@@ -17,6 +17,7 @@ if exist "%~1\" (
 	call :link_expansion "%~1\_classic_ptr_"
 	call :link_expansion "%~1\_classic_era_ptr_"
 	call :link_expansion "%~1\_retail_"
+	call :link_beta "%~1\_beta_"
 	call :link_ptr "%~1\_ptr_"
 	call :link_ptr "%~1\_xptr_"
 )
@@ -31,6 +32,41 @@ if exist "%~1\" (
 	if NOT exist "%~1\Interface\AddOns\AllTheThings" (
 		mklink /J "%~1\Interface\AddOns\AllTheThings" "%cd%"
 	)
+)
+EXIT /B 0
+
+:link_beta
+if exist "%~1\" (
+	echo Linking BETA "%~1\"
+	net session >nul 2>&1
+    if %errorLevel% == 0 (
+		call :link_beta_files "%~1\Interface\AddOns\AllTheThings"
+	)
+)
+EXIT /B 0
+
+:link_beta_files
+echo Linking BETA Files "%~1\"
+if exist "%~1\" (
+	rmdir /s /q "%~1\"
+)
+if NOT exist "%~1\" (
+	mkdir "%~1\"
+	mkdir "%~1\db"
+	mklink "%~1\db\AccountWideQuestsDB.lua" "%cd%\db\AccountWideQuestsDB.lua"
+	mklink "%~1\db\Presets.lua" "%cd%\db\Presets.lua"
+	mklink "%~1\db\RaceDB.lua" "%cd%\db\RaceDB.lua"
+	mklink "%~1\db\ReagentsDB.lua" "%cd%\db\ReagentsDB.lua"
+	mklink /J "%~1\db\Dragonflight" "%cd%\.beta_db"
+	mklink /J "%~1\assets" "%cd%\assets"
+	mklink /J "%~1\lib" "%cd%\lib"
+	mklink /J "%~1\locales" "%cd%\locales"
+	mklink /J "%~1\src" "%cd%\src"
+	
+	mklink "%~1\AllTheThings.lua" "%cd%\AllTheThings.lua"
+	mklink "%~1\AllTheThings.toc" "%cd%\AllTheThings.toc"
+	mklink "%~1\Bindings.xml" "%cd%\Bindings.xml"
+	mklink "%~1\Settings.lua" "%cd%\Settings.lua"
 )
 EXIT /B 0
 
@@ -51,7 +87,12 @@ if exist "%~1\" (
 )
 if NOT exist "%~1\" (
 	mkdir "%~1\"
-	mklink /J "%~1\db" "%cd%\ptr_db"
+	mkdir "%~1\db"
+	mklink "%~1\db\AccountWideQuestsDB.lua" "%cd%\db\AccountWideQuestsDB.lua"
+	mklink "%~1\db\Presets.lua" "%cd%\db\Presets.lua"
+	mklink "%~1\db\RaceDB.lua" "%cd%\db\RaceDB.lua"
+	mklink "%~1\db\ReagentsDB.lua" "%cd%\db\ReagentsDB.lua"
+	mklink /J "%~1\db\Dragonflight" "%cd%\.ptr_db"
 	mklink /J "%~1\assets" "%cd%\assets"
 	mklink /J "%~1\lib" "%cd%\lib"
 	mklink /J "%~1\locales" "%cd%\locales"

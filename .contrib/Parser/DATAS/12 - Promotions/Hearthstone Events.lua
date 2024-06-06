@@ -45,7 +45,7 @@ HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
 });
 root(ROOTS.Promotions, {
 	n(HEARTHSTONE, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
-		["timeline"] = { "added 5.3.0.16825" },
+		["timeline"] = { ADDED_5_3_0 },
 		["groups"] = {
 			ach(8345),	-- Hearthstoned
 			i(98618), -- Hearthsteed (MOUNT!)

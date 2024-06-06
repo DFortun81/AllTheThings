@@ -30,10 +30,10 @@ namespace ATT
             ObjectData.Create("instanceID",         "inst",         "_.CreateInstance", "f");
             ObjectData.Create("artifactID",         "artifact",     "_.CreateArtifact", "f");
             ObjectData.Create<HeirloomData>("heirloomID", "heir",   "_.CreateHeirloom");
-            ObjectData.Create<ItemSourceData>("sourceID",  "s",            "_.CreateItemSource");
+            ObjectData.Create<ItemSourceData>("sourceID",  "s",     "_.CreateItemSource");
             ObjectData.Create("categoryID",         "cat",          "_.CreateCategory", "f");
             ObjectData.Create("classID",            "cl",           "_.CreateCharacterClass", "f");
-            ObjectData.Create("criteriaID",         "crit",         "_.CreateAchievementCriteria", "f");
+            ObjectData.Create<CriteriaData>("criteriaID", "crit",   "_.CreateAchievementCriteria", "f");
             ObjectData.Create("difficultyID",       "d",            "_.CreateDifficulty", "f");
             ObjectData.Create("encounterID",        "e",            "_.CreateEncounter", "f");
             ObjectData.Create("explorationID",      "exp",          "_.CreateExploration", "f");
@@ -57,12 +57,12 @@ namespace ATT
             ObjectData.Create("currencyID",         "cu",           "_.CreateCurrencyClass", "f");
             ObjectData.Create<ItemData>("itemID",   "i",            "_.CreateItem");
             ObjectData.Create("factionID",          "faction",      "_.CreateFaction", "f");
-            ObjectData.Create("achID",              "ach",          "_.CreateAchievement", "modID");
+            ObjectData.Create<AchievementData>("achID", "ach",      "_.CreateAchievement", "modID");
             ObjectData.Create("achievementCategoryID", "achcat",    "_.CreateAchievementCategory", "f");
             ObjectData.Create("expansionID",        "x",            "_.CreateExpansion", "f");
             ObjectData.Create("petTypeID",          "pt",           "_.CreatePetType", "f");
             ObjectData.Create("pvpRankID",          "pvprank",      "_.CreatePVPRank", "f");
-            ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID");
+            ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID", "f");
             ObjectData.Create<NPCData>("npcID",     "n",            "_.CreateNPC", "f", "creatureID");
             ObjectData.Create<SpellData>("spellID", "sp", "_.CreateSpell");
             ObjectData.Create<FactionQuestData>("aqd", "aqd", "_.CreateQuestWithFactionData");

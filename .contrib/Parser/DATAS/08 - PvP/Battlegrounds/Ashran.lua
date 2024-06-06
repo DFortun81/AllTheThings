@@ -4,7 +4,7 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(1478, {	-- Ashran
 		["description"] = "Ashran is a 40v40 epic battleground found in eastern Draenor.",
-		["timeline"] = { "added 6.0.2" },
+		["timeline"] = { ADDED_6_0_2 },
 		["maps"] = { 588, 589 },	-- Ashran & Ashran Mine
 		["lvl"] = { 25 },
 		["g"] = {
@@ -822,14 +822,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				n(82876, {	-- Grand Marshal Tremblade Elite S1-S2-S3
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						})),
+						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
-						}),
+						})),
 						un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
 						un(REMOVED_FROM_GAME, i(127377)),	-- Warmongering Gladiator's Greatcloak
@@ -1393,14 +1391,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["races"] = HORDE_ONLY,
 					--["u"] = REMOVED_FROM_GAME,	-- Vendor doesn't sell anything in 7.0+
 					["g"] = {
-						i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						elitepvp(i(120286, {	-- Enchanter's Illusion - Glorious Tyranny (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
-							["u"] = ELITE_PVP_REQUIREMENT,
+						})),
+						elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 							["timeline"] = { ADDED_7_0_3 },
-						}),
+						})),
 						un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
 						un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
 						un(REMOVED_FROM_GAME, i(127376)),	-- Warmongering Gladiator's Greatcloak
@@ -1988,7 +1984,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				i(184042, {	-- Nightborne Liver
 					["description"] = "Can be looted from enemy Nightborne players... although interestingly enough Horde players can loot this from Void Elves. (Albeit they can't turn it in anywhere.)",
-					["timeline"] = { "added 9.0.1" },
+					["timeline"] = { ADDED_9_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(112122, {	-- Orc Tooth

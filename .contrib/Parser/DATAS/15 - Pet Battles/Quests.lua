@@ -1432,4 +1432,147 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["timeline"] = { ADDED_7_0_3_LAUNCH },
 		}),
 	})),
+	-- Pet Tamers (This section is work in progress - Danny Donkey)
+	-- Old World tamers:
+	-- Lvl 2
+	n(64330, {	-- Julia Stevens <Aspiring Pet Tamer>
+		["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
+		["races"] = ALLIANCE_ONLY,
+		["description"] = "This pet tamer is Alliance only.\n\nJulia's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.",
+	}),
+	n(66126, {	-- Zunta <Aspiring Pet Tamer>
+		["coord"] = { 43.9, 28.9, DUROTAR },
+		["races"] = HORDE_ONLY,
+		["description"] = "This pet tamer is Horde only.\n\nZunta's pets are level 2 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+	}),
+	-- Lvl 3
+	n(65648, {	-- Old MacDonald <Master Pet Tamer>
+		["coord"] = { 80.6, 18.4, WESTFALL },
+		["races"] = ALLIANCE_ONLY,
+		["description"] = "This pet tamer is Alliance only.\n\nMacDonald's pets are level 3 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+	}),
+	n(66135, {	-- Dagra the Fierce <Master Pet Tamer>
+		["coord"] = { 58.6, 53.0, NORTHERN_BARRENS },
+		["races"] = HORDE_ONLY,
+		["description"] = "This pet tamer is Horde only.\n\nDagra's pets are level 3 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",
+	}),
+	-- Lvl 5
+	n(65651, {	-- Lindsay <Master Pet Tamer>
+		["coord"] = { 33.2, 52.5, REDRIDGE_MOUNTAINS },
+		["races"] = ALLIANCE_ONLY,
+		["description"] = "This pet tamer is Alliance only.\n\nLindsay's pets are level 5 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Critter - see above.",
+	}),
+	n(66136, {	-- Analynn <Master Pet Tamer>
+		["coord"] = { 20.2, 29.5, ASHENVALE },
+		["races"] = HORDE_ONLY,
+		["description"] = "This pet tamer is Horde only.\n\nAnalynn's pets are level 5 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
+	}),
+	-- Lvl 7
+	n(65655, {	-- Eric Davidson <Master Pet Tamer>
+		["coord"] = { 19.8, 44.6, DUSKWOOD },
+		["races"] = ALLIANCE_ONLY,
+		["description"] = "This pet tamer is Alliance only.\n\nEric's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Beast - see above.",
+	}),
+	n(66137, {	-- Zonya the Sadist <Master Pet Tamer>
+		["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
+		["races"] = HORDE_ONLY,
+		["description"] = "This pet tamer is Horde only.\n\nZonya's pets are level 7 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - see above.",
+	}),
+	-- Lvl 9
+	n(63194, {	-- Steven Lisbane <Master Pet Tamer>
+		["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
+		["races"] = ALLIANCE_ONLY,
+		["description"] = "This pet tamer is Alliance only.\n\nSteven's pets are level 9 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
+	}),
+	n(66372, {	-- Merda Stronghoof <Master Pet Tamer>
+		["coord"] = { 57.2, 45.8, DESOLACE },
+		["races"] = HORDE_ONLY,
+		["description"] = "This pet tamer is Horde only.\n\nMerda's pets are level 9 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+	}),
+	-- Lvl 11
+	n(65656, {	-- Bill Buckler <Master Pet Tamer>
+		["coord"] = { 51.4, 73.2, THE_CAPE_OF_STRANGLETHORN },
+		["races"] = ALLIANCE_ONLY,
+		["description"] = "This pet tamer is Alliance only.\n\nBill's pets are level 11 of the following consecutive pet classes:\n1. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n2. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n3. Flying - see above.",
+	}),
+	n(66422, {	-- Cassandra Kaboom <Master Pet Tamer>
+		["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
+		["races"] = HORDE_ONLY,
+		["description"] = "This pet tamer is Horde only.\n\nCassandra's pets are level 11 of the following consecutive pet classes:\nMechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.",
+	}),
+	-- Lvl 13
+	n(66478, {	-- David Kosse <Master Pet Tamer>
+		["coord"] = { 62.9, 54.5, THE_HINTERLANDS },
+		["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDavid's pets are level 13 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.",
+	}),
+	n(66352, {	-- Traitor Gluk <Master Pet Tamer>
+		["coord"] = { 59.6, 49.6, FERALAS },
+		["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGluk's pets are level 13 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.",
+	}),
+	-- Lvl 14
+	n(66512, {	-- Deiza Plaguehorn <Master Pet Tamer>
+		["coord"] = { 67.0, 52.4, EASTERN_PLAGUELANDS },
+		["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDeiza's pets are level 14 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Undead - use Critter (powerful) or Aquatic (tanky) pet.",
+	}),
+	n(66436, {	-- Grazzle the Great <Master Pet Tamer>
+		["coord"] = { 53.8, 74.8, DUSTWALLOW_MARSH },
+		["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nGrazzle's pets are level 14 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
+	}),
+	-- Lvl 15
+	n(66515, {	-- Kortas Darkhammer <Master Pet Tamer>
+		["coord"] = { 35.2, 27.7, SEARING_GORGE },
+		["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nKortas' pets are level 15 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Dragonkin - see above.\n3. Dragonkin - see above.",
+	}),
+	n(66452, {	-- Kela Grimtotem <Master Pet Tamer>
+		["coord"] = { 31.8, 32.8, THOUSAND_NEEDLES },
+		["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nKela's pets are level 15 of the following consecutive pet classes:\n1. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n2. Critter - see above.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
+	}),
+	-- Lvl 16
+	n(66518, {	-- Everessa <Master Pet Tamer>
+		["coord"] = { 76.8, 41.4, SWAMP_OF_SORROWS },
+		["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nEveressa's pets are level 16 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.",
+	}),
+	n(66442, {	-- Zoltan <Master Pet Tamer>
+		["coord"] = { 40.0, 56.6, FELWOOD },
+		["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nZoltan's pets are level 16 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
+	}),
+	-- Lvl 17
+	n(66520, {	-- Durin Darkhammer <Master Pet Tamer>
+		["coord"] = { 25.5, 47.4, BURNING_STEPPES },
+		["description"] = "This pet tamer is Alliance only, though Horde players can battle them once as part of the Horde version of the quest 'Battle Pet Tamers: Eastern Kingdoms'.\n\nDurin's pets are level 17 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Elemental - use Aquatic (powerful) or Critter (tanky) pet.",
+	}),
+	n(66412, {	-- Elena Flutterfly <Master Pet Tamer>
+		["coord"] = { 46.0, 60.4, MOONGLADE },
+		["description"] = "This pet tamer is Horde only, though Alliance players can battle them once as part of the Alliance version of the quest 'Battle Pet Tamers: Kalimdor'.\n\nElena's pets are level 17 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.",
+	}),
+	-- Lvl 19
+	n(66522, {	-- Lydia Accoste <Grand Master Pet Tamer>
+		["coord"] = { 40.2, 76.6, DEADWIND_PASS },
+		["description"] = "Lydia's pets are level 19 of the following consecutive pet classes:\n1. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	n(66466, {	-- Stone Cold Trixxy <Grand Master Pet Tamer>
+		["coord"] = { 65.6, 64.6, WINTERSPRING },
+		["description"] = "Trixxy's pets are level 19 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n3. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	-- Outland tamers:
+	-- Lvl 20
+	n(66550, {	-- Nicki Tinytech <Master Pet Tamer>
+		["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
+		["description"] = "Nicki's pets are level 20 of the following consecutive pet classes:\n1. Mechanical - use Elemental (powerful and tanky) pet.\n2. Mechanical - see above.\n3. Mechanical - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	-- Lvl 21
+	n(66551, {	-- Ras'an <Master Pet Tamer>
+		["coord"] = { 17.2, 50.6, ZANGARMARSH },
+		["description"] = "Ras'an's pets are level 21 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Humanonoid - use Undead (powerful) or Beast (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	-- Lvl 22
+	n(66552, {	-- Narrok <Master Pet Tamer>
+		["coord"] = { 61.0, 49.4, NAGRAND },
+		["description"] = "Narrok's pets are level 22 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n3. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	-- Lvl 23
+	n(66553, {	-- Morulu The Elder <Master Pet Tamer>
+		["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
+		["description"] = "Morulu's pets are level 23 of the following consecutive pet classes:\n1. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n2. Aquatic - see above.\n3. Aquatic - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
 })));

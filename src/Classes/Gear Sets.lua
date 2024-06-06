@@ -5,7 +5,7 @@ if not C_TransmogSets then
 	app.CreateGearSet = app.CreateUnimplementedClass("GearSet", "setID");
 	app.CreateGearSetHeader = app.CreateUnimplementedClass("GearSetHeader", "gearSetHeaderID");
 	app.CreateGearSetSubHeader = app.CreateUnimplementedClass("GearSetSubHeader", "gearSetSubHeaderID");
-	app.BuildGearSetInformationForGroup = app.DoNothing;
+	app.BuildGearSetInformationForGroup = app.EmptyFunction;
 	return
 end
 

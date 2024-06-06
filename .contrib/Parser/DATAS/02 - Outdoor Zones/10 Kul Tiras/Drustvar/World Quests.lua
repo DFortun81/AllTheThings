@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(DRUSTVAR, {
 		n(WORLD_QUESTS, sharedData({
 			["lvl"] = { 50 },
@@ -103,6 +103,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			q(51512),	-- Bilefang Mother
 			q(54143, {	-- Bird's-Eye (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(165943),	-- Grizzek's Rocket Hop (QI!)
+					i(165656),	-- Spy Gear (QI!)
+				},
 			}),
 			q(51699),	-- Blighted Monstrosity
 			q(53272, {	-- Blooming Siren's Sting
@@ -152,9 +156,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 			}),
 			q(54449, {	-- Elemental Azerite (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(164767),	-- Unrefined Azerite Shard (QI!)
+				},
 			}),
 			q(54448, {	-- Elemental Azerite (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164767),	-- Unrefined Azerite Shard (QI!)
+				},
 			}),
 			q(51919),	-- Emily Mayville
 			q(53867, {	-- Engineer Bolthold (Faction Assault WQ)

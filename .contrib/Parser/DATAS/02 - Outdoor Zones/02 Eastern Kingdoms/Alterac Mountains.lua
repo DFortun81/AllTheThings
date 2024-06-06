@@ -36,11 +36,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(280),	-- Strahnbrad
 				exploration(1680),	-- The Headland
 				exploration(284),	-- The Uplands
-				--[[
-				exploration(277),	-- The Foothill Caverns
-				exploration(1339),	-- Lordamere Lake
-				exploration(2839),	-- Alterac Valley
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(349, {	-- Ravenholdt
@@ -366,12 +361,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(20086, {	-- Dusksteel Throwing Knife [Classic] / Broken Dusksteel Throwing Knife [TBC]
 							["timeline"] = {
-								"added 1.11.1.5462",
-								"removed 2.0.1.5678"
+								ADDED_1_11_1,
+								REMOVED_2_0_1
 							},
 						}),
 						i(25878, {	-- Dusksteel Throwing Knife [TBC]
-							["timeline"] = { "added 2.1.0.6692", "removed 5.0.4" },
+							["timeline"] = { ADDED_2_1_0, REMOVED_5_0_4 },
 						}),
 					},
 				}),
@@ -534,7 +529,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(495, {	-- The Crown of Will (1/5)
 					["qg"] = 2227,	-- Sharlindra
 					["coord"] = { 57.60, 93.84, UNDERCITY },
-					["timeline"] = { "removed 5.0.2" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
@@ -804,7 +799,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { ROGUE },
 					["groups"] = {
 						i(18160, {	-- Recipe: Thistle Tea (RECIPE!)
-							["timeline"] = { "added 1.3.0", REMOVED_6_0_2, ADDED_7_1_0 },
+							["timeline"] = { ADDED_1_3_0, REMOVED_6_0_2, ADDED_7_1_0 },
 						}),
 					},
 				}),
@@ -823,7 +818,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["cr"] = 2415,	-- Warden Belamoore
 				}),
 				i(8491, {	-- Black Tabby Cat (PET!)
-					["timeline"] = { "added 1.11.1.5462" },
+					["timeline"] = { ADDED_1_11_1 },
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						2271,	-- Dalaran Shield Guard

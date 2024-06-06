@@ -663,7 +663,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 50247 },	-- The Mail Must Flow
 						["description"] = "Once you've done the last quest, you can speak to the Postmaster again to offer more assistance sorting letters.",
 						["g"] = {
-							title(372),	-- Postmaster %s
+							title(372),	-- Postmaster <Name>
 						},
 					})),
 				})),

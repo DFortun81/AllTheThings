@@ -4,7 +4,7 @@
 local ASARNAN_MALIJ_GROUPS = {};
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(NETHERSTORM, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(NETHERSTORM, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Netherstorm is the northern-most zone in Outland. It is covered in magical currents, giving it an unnatural sci-fi look--except in the protected Eco-Domes, which are lush green. Goblins and Ethereals have made outposts here, as well as the Burning Legion and Kael'thas' blood elves, with numerous Mana Forges across the region. This region has numerous quests that grant Aldor or Scryer reputation.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_netherstorm_01",
@@ -535,13 +535,13 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10248,	-- You, Robot
 						["groups"] = {
 							i(134021, {	-- X-52 Rocket Helmet (TOY!)
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(30019),	-- Area 52 Defender's Pants
 							i(30014),	-- X-52 Pilot's Leggings
 							i(30016),	-- X-52 Technician's Helm
 							i(30847, {	-- X-52 Rocket Helmet
-								["timeline"] = { "removed 7.0.3.22248" },
+								["timeline"] = { REMOVED_7_0_3 },
 							}),
 						},
 					}),
@@ -786,6 +786,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10206,	-- Pick Your Part
 						["isBreadcrumb"] = true,
 					}),
+					heroscall(q(39202, {	-- Hero's Call: Netherstorm!
+						["timeline"] = { ADDED_6_2_0 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 67,
+					})),
 					q(10293, {	-- Hitting the Motherlode
 						["qg"] = 20067,	-- Zuben Elgenubi
 						["coord"] = { 44.1, 36.0, NETHERSTORM },
@@ -842,7 +847,7 @@ root(ROOTS.Zones, {
 							i(30226),	-- Alley's Recurve
 							-- #if BEFORE MOP
 							i(30227, {	-- Mark V's Throwing Star
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(30252),	-- Unearthed Enkaat Wand
@@ -1173,6 +1178,11 @@ root(ROOTS.Zones, {
 							i(30294),	-- Red Pointy Hat
 						},
 					}),
+					warchiefscommand(q(39201, {	-- Warchief's Command: Netherstorm!
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(10237, {	-- Warn Area 52!
 						["qg"] = 19728,	-- Mama Wheeler
 						["coord"] = { 46.6, 56.5, NETHERSTORM },
@@ -1307,8 +1317,8 @@ root(ROOTS.Zones, {
 					n(54649, {	-- Big Zokk Torquewrench <Classic Weapons>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
-						["timeline"] = { "added 4.3.0.14890" },
-						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
+						["timeline"] = { ADDED_4_3_0 },
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							a(i(77549)),	-- Replica Grand Marshal's Demolisher
 							a(i(77550)),	-- Replica Grand Marshal's Swiftblade
 							a(i(77551)),	-- Replica Grand Marshal's Dirk
@@ -1370,7 +1380,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE 4.0.3.13277
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PVP_GLADIATOR },{ "pop" }},	-- Deadly Gladiator's Set
 						-- #endif
-						["timeline"] = { "added 3.1.1.9806", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, n(32355, {	-- Big Zokk Torquewrench <Arena Vendor> // Original S5 Vendor // Hateful Gladiator: Season 5 Gladiator Gear
 						["coord"] = { 33.2, 64.1, NETHERSTORM },
@@ -1395,12 +1405,12 @@ root(ROOTS.Zones, {
 							-- #endif
 						},
 						-- #endif
-						["timeline"] = { "added 2.4.2.8278", "removed 3.0.1" },
+						["timeline"] = { ADDED_2_4_2, REMOVED_3_0_2 },
 					}),
 					n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 						["coord"] = { 33.2, 64.0, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_BRUTAL, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Brutal Gladiator's Set
-						["timeline"] = { "added 7.0.3.22260" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					n(19536, {	-- Dealer Jadyan <Exotic Weapons>
 						["coord"] = { 44.0, 36.6, NETHERSTORM },
@@ -1412,7 +1422,7 @@ root(ROOTS.Zones, {
 								["isLimited"] = true,
 							}),
 							i(78348, {	-- Formula: Enchant Weapon - Executioner (RECIPE!)
-								["timeline"] = { "added 4.3.0" },
+								["timeline"] = { ADDED_4_3_0 },
 							}),
 							i(29371, {	-- Nexus-Claw
 								["isLimited"] = true,
@@ -1440,7 +1450,7 @@ root(ROOTS.Zones, {
 							i(8490),	-- Siamese Cat (PET!)
 							i(10392),	-- Crimson Snake (PET!)
 							i(29363, {	-- Mana Wyrmling (PET!)
-								["timeline"] = { "added 2.0.1.6180"},
+								["timeline"] = { ADDED_2_0_1},
 							}),
 							i(8495),	-- Senegal (PET!)
 							i(29902),	-- Red Moth (PET!)
@@ -1451,7 +1461,7 @@ root(ROOTS.Zones, {
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						["timeline"] = { ADDED_4_0_3 },
-						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 							i(77692),	-- Replica Field Marshal's Satin Mantle
 							i(77710),	-- Replica Field Marshal's Coronal
@@ -1582,7 +1592,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE 4.0.3
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
 						-- #endif
-						["timeline"] = { "added 3.1.1.9806", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, n(32356, {	-- Grex Brainboiler <Veteran Arena Vendor> [WRATH] Original WOTLK S5 VENDOR
 						["coord"] = { 33.1, 64.0, NETHERSTORM },
@@ -1599,14 +1609,14 @@ root(ROOTS.Zones, {
 					n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_MERCILESS, PVP_GLADIATOR },{"merge"},{ "pop" }},	-- Merciless Gladiator's Set
-						["timeline"] = { "added 7.0.3.22260" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					n(21493, {	-- Kablamm Farflinger <Transportation Engineer>
-						["requireSkill"] = 20222,	-- Goblin Engineering
+						["requireSkill"] = GOBLIN_ENGINEERING,
 						["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
 						["coord"] = { 32.9, 63.7, NETHERSTORM },
 						["groups"] = {
-							recipe(36954),	-- Dimensional Ripper - Area 52
+							r(36954),	-- Dimensional Ripper - Area 52
 						},
 					}),
 					n(20242, {	-- Karaaz <Consortium Quartermaster>
@@ -1636,7 +1646,7 @@ root(ROOTS.Zones, {
 							i(23150),	-- Design: Thick Golden Draenite [TBC] / Design: Subtle Golden Draenite [Cata+]
 							-- #endif
 							i(28274),	-- Formula: Enchant Cloak - Spell Penetration [TBC] / Formula: Enchant Cloak - PvP Power [Cata+]
-							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={"added 2.1.0"}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
+							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={ADDED_2_1_0}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
 							i(29456),	-- Gift of the Ethereal
 							i(29121),	-- Guile of Khoraazi
 							i(29119),	-- Haramad's Bargain
@@ -1650,9 +1660,9 @@ root(ROOTS.Zones, {
 							i(25733),	-- Pattern: Fel Leather Boots (RECIPE!)
 							i(25732),	-- Pattern: Fel Leather Gloves (RECIPE!)
 							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
-							i(23874),	-- Schematic: Elemental Seaforium Charge
+							i(23874),	-- Schematic: Elemental Seaforium Charge (RECIPE!)
 							i(29118, {	-- Smuggler's Ammo Pouch
-								["timeline"] = { "removed 4.0.1.12941" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							i(29117),	-- Stormspire Vest
 						},
@@ -1673,7 +1683,7 @@ root(ROOTS.Zones, {
 								28378,	-- Sergeant's Heavy Cape (H)
 							},
 						},
-						["timeline"] = { "added 4.3.0.14890" },
+						["timeline"] = { ADDED_4_3_0 },
 					}),
 					applyclassicphase(WRATH_PHASE_FOUR, n(33940, {	-- Kezzik the Striker <Veteran Arena Vendor> [WRATH] Original WOTLK S8 VENDOR
 						["coord"] = { 33.1, 64.3, NETHERSTORM },
@@ -1694,7 +1704,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE 4.0.3
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_GLADIATOR },{"pop"}},	-- Furious Gladiator's Set
 						-- #endif
-						["timeline"] = { "added 3.1.1.9806", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, n(32405, {	-- Kezzik the Striker <Veteran Arena Vendor> [WRATH] Original WOTLK S5 VENDOR
 						["coord"] = { 33.1, 64.3, NETHERSTORM },
@@ -1706,17 +1716,17 @@ root(ROOTS.Zones, {
 					n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_VENGEFUL, PVP_GLADIATOR },{"merge"},{"pop"}},	-- Vengeful Gladiator Set
-						["timeline"] = { "added 7.0.3.22260" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					n(23396, {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate> / Krixel Pinchwhistle <Arena Vendor> [TBC]
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
 						-- #if BEFORE WRATH
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.TBC, SEASON_GLADIATOR, PVP_GLADIATOR },{"pop"}},	-- Gladiator's Set
 						-- #endif
-						["timeline"] = { "removed 3.0.1", "added 4.3.0.15005" },
+						["timeline"] = { REMOVED_3_0_2, ADDED_4_3_0 },
 						-- #if AFTER 4.3.0.15005
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
-						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							i(77718),	-- Replica Field Marshal's Plate Shoulderguards
 							i(77673),	-- Replica Field Marshal's Chain Spaulders
 							i(77714),	-- Replica Field Marshal's Plate Armor
@@ -1808,8 +1818,8 @@ root(ROOTS.Zones, {
 					n(54648, {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
-						["timeline"] = { "added 4.3.0.14890" },
-						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
+						["timeline"] = { ADDED_4_3_0 },
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							i(77897),	-- Replica Warlord's Lamellar Pauldrons
 							i(77880),	-- Replica Warlord's Chain Shoulders
 							i(77923),	-- Replica Warlord's Plate Shoulders
@@ -1911,7 +1921,7 @@ root(ROOTS.Zones, {
 						-- #if BEFORE 4.0.3
 						["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_DEADLY, PRE_SEASON_HATEFUL },{"pop"}},	-- Hateful Gladiator's Set
 						-- #endif
-						["timeline"] = { "added 3.1.1.9806", REMOVED_4_0_3 },
+						["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 					})),
 					applyclassicphase(WRATH_PHASE_ONE, n(32354, {	-- Leeni "Smiley" Smalls <Apprentice Arena Vendor> [WRATH] Original WOTLK S5 VENDOR
 						["coord"] = { 33.0, 64.0, NETHERSTORM },
@@ -1923,8 +1933,8 @@ root(ROOTS.Zones, {
 					n(58152, {	-- Tini Smalls <Classic Horde Cloth & Leather>
 						["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.",
 						["coord"] = { 33.0, 64.2, NETHERSTORM },
-						["timeline"] = { "added 4.3.0.14890" },
-						["groups"] = bubbleDown({ ["timeline"] = { "added 4.3.0.15005" } }, pvp({
+						["timeline"] = { ADDED_4_3_0 },
+						["groups"] = bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, pvp({
 							i(77900),	-- Replica Warlord's Satin Cowl
 							i(77874),	-- Replica Warlord's Dragonhide Helmet
 							i(77919),	-- Replica Warlord's Dreadweave Robe
@@ -2102,7 +2112,7 @@ root(ROOTS.Zones, {
 					}),
 					i(28277, {	-- Formula: Enchant Cloak - Greater Shadow Resistance (RECIPE!)
 						["cr"] = 18870,	-- Voidshrieker
-						["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+						["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 					}),
 					i(22551, {	-- Formula: Enchant Weapon - Major Intellect
 						["cr"] = 20136,	-- Sunfury Researcher
@@ -2122,10 +2132,11 @@ root(ROOTS.Zones, {
 					i(23610, {	-- Plans: Khorium Boots (RECIPE!)
 						["cr"] = 18873,	-- Disembodied Protector
 					}),
-					applyclassicphase(TBC_PHASE_TWO, i(33804, {	-- Schematic: Adamantite Arrow Maker
+					applyclassicphase(TBC_PHASE_TWO, i(33804, {	-- Schematic: Adamantite Arrow Maker (RECIPE!)
 						["cr"] = 19707,	-- Sunfury Archer
+						["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 }, -- Changes to uncollectible scrap item in Cata
 					})),
-					i(23808, {	-- Schematic: Khorium Scope
+					i(23808, {	-- Schematic: Khorium Scope (RECIPE!)
 						["cr"] = 20207,	-- Sunfury Bowman
 					}),
 				}),
@@ -2142,14 +2153,3 @@ local COMMON_ENCHANTING_RECIPES = {
 	i(22307),	-- Pattern: Enchanted Mageweave Pouch
 };
 appendGroups(COMMON_ENCHANTING_RECIPES, ASARNAN_MALIJ_GROUPS);
-
--- #if AFTER TBC
--- These quests never made it in.
-root(ROOTS.NeverImplemented, {
-	n(ARMOR, {
-		i(134012, {	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
-			["timeline"] = { "removed 7.0.3.22248" },
-		}),
-	}),
-});
--- #endif

@@ -931,17 +931,17 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["qg"] = 102432,	-- Malfurion Stormrage
 						["sourceQuest"] = 40904,	-- Shadow of the Defiler
 						["coord"] = { 36.4, 41.6, MOONGLADE },
-						["timeline"] = { "removed 7.0.3" },
+						["timeline"] = { REMOVED_7_0_3 },
 						["lvl"] = 100,
 						["groups"] = {
 							i(128422, {	-- Grove Warden (MOUNT!)
-								["timeline"] = { "removed 7.0.3" },
+								["timeline"] = { REMOVED_7_0_3 },
 							}),
 						},
 					}),
 					q(40904, {	-- Shadow of the Defiler
 						["provider"] = { "i", 133762 },	-- Remnant of Chaos
-						["timeline"] = { "removed 7.0.3" },
+						["timeline"] = { REMOVED_7_0_3 },
 						["maps"] = { MOONGLADE },
 					}),
 					q(39504, {	-- The Fel Spire (Heroic)
@@ -1379,7 +1379,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				cr(91331, e(1438, {	-- Archimonde
 					un(REMOVED_FROM_GAME, ach(10044)),	-- Ahead of the Curve: The Black Gate
 					i(133762, {	-- Remnant of Chaos
-						["timeline"] = { "removed 7.0.3" },
+						["timeline"] = { REMOVED_7_0_3 },
 					}),
 					un(REMOVED_FROM_GAME, i(127969, {	-- Badge of Hellfire's Conqueror
 						["sym"] = {
@@ -1890,7 +1890,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					ach(10176),	-- Mythic: Archimonde Guild Run
 					ig(123890),	-- Felsteel Annihilator (MOUNT!)
 					i(133762, {	-- Remnant of Chaos
-						["timeline"] = { "removed 7.0.3" },
+						["timeline"] = { REMOVED_7_0_3 },
 					}),
 					un(REMOVED_FROM_GAME, i(127969, {	-- Badge of Hellfire's Conqueror
 						["sym"] = {

@@ -306,6 +306,8 @@
 423869@@@Avatar of Flame
 3.4.3.54261
 446902@@@Polly Roger
+3.4.3.54948
+440915@@@Auspicious Arborwyrm
 4.4.0.53627
 10790@@@Tiger
 13819@@@Summon Warhorse
@@ -371,6 +373,7 @@
 110051@@@Heart of the Aspects
 113120@@@Feldrake
 121820@@@Obsidian Nightwing
+4.4.0.54377
 6.0.1.18179
 0@@@TEST - Traveler's Tundra Mammoth (Alliance)
 0@@@TEST - Running Wild
@@ -1841,6 +1844,15 @@
 449140@@@[PH] Alliance Wolf Mount
 449141@@@[PH] Alliance Wolf Mount
 449142@@@[PH] Alliance Wolf Mount
+10.2.7.54295
+448849@@@Underlight Shorestalker
+448851@@@Underlight Corrupted Behemoth
+449126@@@Kor'kron Warsaber
+449140@@@Sentinel War Wolf
+10.2.7.54366
+453255@@@Savage Ebony Battle Turtle
+10.2.7.54630
+349943@@@Amber Skitterfly
 11.0.0.54311
 405623@@@Armadillo Roller
 441313@@@Soar
@@ -1907,3 +1919,48 @@
 451488@@@[PH] NerubianWarbeastMount (Orange)
 451489@@@[PH] NerubianWarbeastMount (Dark)
 451491@@@[PH] NerubianWarbeastMount (White)
+11.0.0.54361
+447176@@@Cyan Glowmite
+449269@@@Crimson Mudnose
+449418@@@Shale Ramolith
+452768@@@[PH] NerubianBeetleLargeMount (Blue)
+452777@@@[PH] NerubianBeetleLargeMount (Green)
+452779@@@[PH] NerubianBeetleLargeMount (Tan)
+452780@@@[PH] NerubianBeetleLargeMount (Purple)
+11.0.0.54521
+448939@@@Shackled Shadow
+448978@@@Vermillion Imperial Lynx
+453785@@@Earthen Judicator's Ramolith
+11.0.0.54605
+447185@@@Aquamarine Swarmite
+447405@@@Vicious Flying Nerubian
+447957@@@Ferocious Jawcrawler
+449264@@@Wick
+449325@@@Vicious Flying Nerubian
+449415@@@Slatestone Ramolith
+449466@@@Forged Gladiator's Fel Bat
+11.0.0.54675
+447190@@@Shadowed Swarmite
+448941@@@Beledar's Spawn
+449416@@@Ebonhide Ramolith
+11.0.0.54774
+441324@@@Remembered Golden Gryphon
+441325@@@Remembered Wind Rider
+447160@@@Raging Cinderbee
+447405@@@Vicious Skyflayer
+449258@@@Ol' Mole Rufus
+449325@@@Vicious Skyflayer
+451486@@@Sureki Skyrazor
+451491@@@Ascendant Skyrazor
+11.0.0.54935
+447910@@@[PH] Mount - Shalehorn (Brown) (Copper Saddle) (Player Mount)
+447911@@@[PH] Mount - Shalehorn (Crimson) (Dark Saddle) (Player Mount)
+447912@@@[PH] Mount - Shalehorn (Ivory) (Silver Saddle) (Player Mount)
+447913@@@[PH] Mount - Shalehorn (Yellow) (White Saddle) (Player Mount)
+448188@@@Machine Defense Unit 1-11
+452779@@@Ivory Goliathus
+457650@@@Plunderlord's Golden Crocolisk
+457654@@@Plunderlord's Radiant Crocolisk
+457656@@@Plunderlord's Midnight Crocolisk
+457659@@@Plunderlord's Weathered Crocolisk
+458335@@@Diamond Mechsuit

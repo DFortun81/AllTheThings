@@ -55,13 +55,13 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			i(13812),	-- Ring of the Dawn
 			i(19065),	-- Emerald Circle
 			i(33959, {	-- Ring of Ghoulish Delight
-				["timeline"] = { "created 2.3.0.7521" },
+				["timeline"] = { CREATED_2_3_0 },
 			}),
 			i(33958, {	-- The Horseman's Signet Ring
-				["timeline"] = { "created 2.3.0.7521" },
+				["timeline"] = { CREATED_2_3_0 },
 			}),
 			i(33957, {	-- Witches Band
-				["timeline"] = { "created 2.3.0.7521" },
+				["timeline"] = { CREATED_2_3_0 },
 			}),
 			--
 			i(4988),	-- Burning Obsidian Band
@@ -608,6 +608,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 	}),
 	expansion(EXPANSION.MOP, {
+		filter(LEATHER, {
+			expansion(EXPANSION.MOP, 4.0, {
+				i(104986),	-- Unrepentant Heels
+			}),
+		}),
 		filter(PLATE, {
 			expansion(EXPANSION.MOP, 0.1, {
 				i(81709),	-- Belt of Broken Bones
@@ -618,6 +623,19 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			expansion(EXPANSION.MOP, 3.0, {
 				i(98037),	-- QA Test Finger Dodge
 				i(98038),	-- QA Test Finger Parry
+			}),
+			expansion(EXPANSION.MOP, 4.0, {
+				i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
+				i(103897),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Str Tank Ring
+			}),
+		}),
+		filter(TRINKET_F, {
+			expansion(EXPANSION.MOP, 4.0, {
+				i(102312),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Agi DPS Trinket (5)
+				i(102313),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Hit Trinket (5)
+				i(102314),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Versatility Trinket (5)
+				i(102315),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Str DPS Trinket (5)
+				i(102316),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Tank Trinket (5)
 			}),
 		}),
 	}),
@@ -1100,10 +1118,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 		filter(COSMETIC, {
 			expansion(EXPANSION.LEGION, 0.3, {
-				i(133996),	-- Burgy Blackheart's Handsome Hat
-				i(134013),	-- Chef's Hat [Likely the cosmetic effect from when you use the toy]
 				i(92894),	-- Art Template Generic Head - Helm_Misc_StarPartyHat_A_01
 				i(81862),	-- Art Template Robe Dress_B_03 - Blue
+				i(133996),	-- Burgy Blackheart's Handsome Hat
+				i(134013),	-- Chef's Hat [Likely the cosmetic effect from when you use the toy]
+				i(134012),	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
 			}),
 		}),
 		filter(TABARDS, {
@@ -1219,6 +1238,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			expansion(EXPANSION.BFA, 0.1, {
 				i(153397),	-- Salt Starched Shawl
 				i(154968),	-- Drape of the Golden City
+				i(155091),	-- Thovas-Explorer's Cape
 				i(155384),	-- Singed Skycaller Drape
 				i(156755),	-- Drape of Revengeance
 				i(158500),	-- Salt Starched Shawl
@@ -1596,6 +1616,15 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 		}),
 		filter(CLOTH, {
+			expansion(EXPANSION.SL, 0.1, {
+				i(179587),	-- Drust Mask
+				i(179588),	-- Drust Mask
+				i(179589),	-- Drust Mask
+				i(179590),	-- Drust Mask
+				i(179591),	-- Drust Mask
+				i(179592),	-- Drust Mask
+				i(179595),	-- Drust Mask
+			}),
 			expansion(EXPANSION.SL, 2.0, {
 				i(188065),	-- Choral Bands
 				i(188064),	-- Choral Belt
@@ -2240,189 +2269,25 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(190622),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Accessory - Trinket - Omni
 			}),
 		}),
+		n(SEASON_SINFUL, {
+			expansion(EXPANSION.SL, 0.1, {
+				n(FEET, {
+					i(180650),	-- Shadowlandy Gladiator's Stompers
+				}),
+				filter(TRINKET_F, {
+					i(174380),	-- Gladiator's Concordance
+				}),
+			}),
+		}),
+		-- TODO:
 		--- 9.0.1 ---
 		i(175768),	-- 9.0 QRP - Ardenweald - Cloak
 		i(177814),	-- 9.0 Zone Uncommon - Revendreth - Accessory - Trinket
-		i(179830),	-- Ardenweald Covenant Mail Chest
-		i(179861),	-- Ardenweald Covenant Mail Chest
-		i(179853),	-- Ardenweald Covenant Mail Chest
-		i(179845),	-- Ardenweald Covenant Mail Chest
-		i(179860),	-- Ardenweald Covenant Mail Feet
-		i(179831),	-- Ardenweald Covenant Mail Feet
-		i(179852),	-- Ardenweald Covenant Mail Feet
-		i(179844),	-- Ardenweald Covenant Mail Feet
-		i(179851),	-- Ardenweald Covenant Mail Hand
-		i(179832),	-- Ardenweald Covenant Mail Hand
-		i(179843),	-- Ardenweald Covenant Mail Hand
-		i(179859),	-- Ardenweald Covenant Mail Hand
-		i(179850),	-- Ardenweald Covenant Mail Head
-		i(179842),	-- Ardenweald Covenant Mail Head
-		i(179833),	-- Ardenweald Covenant Mail Head
-		i(179858),	-- Ardenweald Covenant Mail Head
-		i(179841),	-- Ardenweald Covenant Mail Legs
-		i(179834),	-- Ardenweald Covenant Mail Legs
-		i(179857),	-- Ardenweald Covenant Mail Legs
-		i(179849),	-- Ardenweald Covenant Mail Legs
-		i(179840),	-- Ardenweald Covenant Mail Shoulder
-		i(179835),	-- Ardenweald Covenant Mail Shoulder
-		i(179856),	-- Ardenweald Covenant Mail Shoulder
-		i(179848),	-- Ardenweald Covenant Mail Shoulder
-		i(179855),	-- Ardenweald Covenant Mail Waist
-		i(179836),	-- Ardenweald Covenant Mail Waist
-		i(179847),	-- Ardenweald Covenant Mail Waist
-		i(179839),	-- Ardenweald Covenant Mail Waist
-		i(179854),	-- Ardenweald Covenant Mail Wrist
-		i(179846),	-- Ardenweald Covenant Mail Wrist
-		i(179837),	-- Ardenweald Covenant Mail Wrist
-		i(179838),	-- Ardenweald Covenant Mail Wrist
 		i(178768),	-- Binds of the Unwitting Servant
-		i(177523),	-- Communal Hood
-		i(177532),	-- Communal Robe
-		i(177526),	-- Communal Shoulderpads
-		i(177525),	-- Communal Vestments
-		i(181037),	-- Death Shroud Belt
-		i(181038),	-- Death Shroud Bindings
-		i(181032),	-- Death Shroud Boots
-		i(181035),	-- Death Shroud Breeches
-		i(181039),	-- Death Shroud Cloak
-		i(181033),	-- Death Shroud Gloves
-		i(181034),	-- Death Shroud Hood
-		i(181036),	-- Death Shroud Spaulders
-		i(181031),	-- Death Shroud Vest
 		i(178766),	-- Deranged Surgeon's Band
-		i(180996),	-- Dread Sentinel's Chestplate
-		i(181003),	-- Dread Sentinel's Cloak
-		i(181001),	-- Dread Sentinel's Girdle
-		i(180997),	-- Dread Sentinel's Greatboots
-		i(180998),	-- Dread Sentinel's Grips
-		i(180995),	-- Dread Sentinel's Headgear
-		i(180999),	-- Dread Sentinel's Legguards
-		i(181000),	-- Dread Sentinel's Spaulders
-		i(181002),	-- Dread Sentinel's Vambraces
-		i(181136),	-- Fearstalker's Belt
-		i(181137),	-- Fearstalker's Bracers
-		i(181138),	-- Fearstalker's Cloak
-		i(181132),	-- Fearstalker's Gauntlets
-		i(181130),	-- Fearstalker's Hauberk
-		i(181133),	-- Fearstalker's Helm
-		i(181134),	-- Fearstalker's Leggings
-		i(181135),	-- Fearstalker's Monnion
-		i(181131),	-- Fearstalker's Sabatons
-		i(177608),	-- Felsoul Cowl
-		i(177610),	-- Felsoul Robe
-		i(177611),	-- Felsoul Shoulderpads
-		i(177426),	-- Heart-Lesion Breastplate
-		i(177434),	-- Heart-Lesion Chestguard
-		i(177429),	-- Heart-Lesion Helm
-		i(177431),	-- Heart-Lesion Pauldrons
-		i(177438),	-- Heart-Lesion Shoulderguards
-		i(177569),	-- Illidari Blindfold
-		i(177571),	-- Illidari Robe
-		i(177567),	-- Illidari Shoulders
-		i(177538),	-- Lightdrinker Hood
-		i(177535),	-- Lightdrinker Jerkin
-		i(177540),	-- Lightdrinker Shoulders
-		i(177484),	-- Mistdancer Helm
-		i(177491),	-- Mistdancer Hood
-		i(177496),	-- Mistdancer Jerkin
-		i(177486),	-- Mistdancer Pauldrons
-		i(177493),	-- Mistdancer Shoulders
-		i(177481),	-- Mistdancer Vest
-		i(177475),	-- Mountainsage Hood
-		i(177477),	-- Mountainsage Robe
-		i(177478),	-- Mountainsage Shoulderpads
-		i(177614),	-- Oathsworn Breastplate
-		i(177622),	-- Oathsworn Chestguard
-		i(177617),	-- Oathsworn Helm
-		i(177619),	-- Oathsworn Pauldrons
-		i(177626),	-- Oathsworn Shoulderguards
 		i(178776),	-- Ossified Oozebound Waistguard
 		i(183788),	-- Placeholder Twisting Corridors Cosmetic
 		i(178758),	-- Plague Experimenter's Gloves
-		i(181111),	-- Soulbreaker Drape
-		i(181105),	-- Soulbreaker Handwraps
-		i(181106),	-- Soulbreaker Hood
-		i(181107),	-- Soulbreaker Leggings
-		i(181108),	-- Soulbreaker Mantle
-		i(181109),	-- Soulbreaker Sash
-		i(181104),	-- Soulbreaker Slippers
-		i(181103),	-- Soulbreaker Vestments
-		i(181110),	-- Soulbreaker Wraps
-		i(177444),	-- Springrain Headpiece
-		i(177452),	-- Springrain Helm
-		i(177460),	-- Springrain Hood
-		i(177457),	-- Springrain Jerkin
-		i(177454),	-- Springrain Pauldrons
-		i(177462),	-- Springrain Shoulders
-		i(177446),	-- Springrain Spaulders
-		i(177441),	-- Springrain Tunic
-		i(177449),	-- Springrain Vest
-		i(177551),	-- Streamtalker Chestguard
-		i(177546),	-- Streamtalker Coif
-		i(177562),	-- Streamtalker Cowl
-		i(177554),	-- Streamtalker Helm
-		i(177548),	-- Streamtalker Pauldrons
-		i(177556),	-- Streamtalker Shoulderguards
-		i(177564),	-- Streamtalker Spaulders
-		i(177543),	-- Streamtalker Tunic
-		i(177559),	-- Streamtalker Vest
-		i(177497),	-- Sunsoul Battleplate
-		i(177505),	-- Sunsoul Breastplate
-		i(177513),	-- Sunsoul Chestguard
-		i(177516),	-- Sunsoul Faceguard
-		i(177508),	-- Sunsoul Headpiece
-		i(177500),	-- Sunsoul Helm
-		i(177502),	-- Sunsoul Pauldrons
-		i(177518),	-- Sunsoul Shoulderguards
-		i(177510),	-- Sunsoul Spaulders
-		i(177468),	-- Trailseeker Helm
-		i(177470),	-- Trailseeker Spaulders
-		i(177465),	-- Trailseeker Vest
-		i(178439),	-- zzzRated - Cloth Cord
-		i(178425),	-- zzzRated - Cloth Gloves
-		i(178427),	-- zzzRated - Cloth Hood
-		i(178431),	-- zzzRated - Cloth Leggings
-		i(178436),	-- zzzRated - Cloth Mantle
-		i(178415),	-- zzzRated - Cloth Robe
-		i(178420),	-- zzzRated - Cloth Treads
-		i(178443),	-- zzzRated - Cloth Wristwraps
-		i(178441),	-- zzzRated - Leather Belt
-		i(178422),	-- zzzRated - Leather Boots
-		i(178433),	-- zzzRated - Leather Breeches
-		i(178423),	-- zzzRated - Leather Gloves
-		i(178429),	-- zzzRated - Leather Helm
-		i(178434),	-- zzzRated - Leather Spaulders
-		i(178418),	-- zzzRated - Leather Vest
-		i(178446),	-- zzzRated - Leather Wristwraps
-		i(178440),	-- zzzRated - Mail Belt
-		i(178426),	-- zzzRated - Mail Gauntlets
-		i(178428),	-- zzzRated - Mail Helm
-		i(178432),	-- zzzRated - Mail Leggings
-		i(178437),	-- zzzRated - Mail Monnion
-		i(178421),	-- zzzRated - Mail Sabatons
-		i(178417),	-- zzzRated - Mail Vest
-		i(178445),	-- zzzRated - Mail Wristwraps
-		i(178416),	-- zzzRated - Plate Chestplate
-		i(178424),	-- zzzRated - Plate Gauntlets
-		i(178438),	-- zzzRated - Plate Girdle
-		i(178413),	-- zzzRated - Plate Helm
-		i(178430),	-- zzzRated - Plate Legguards
-		i(178435),	-- zzzRated - Plate Shoulders
-		i(178419),	-- zzzRated - Plate Warboots
-		i(178444),	-- zzzRated - Plate Wristwraps
-		--- 9.2.0 ---
-		i(188182),	-- Cavalier Hat of the First Rogue
-		i(188180),	-- Cloak of the First Rogue
-		i(188186),	-- Drape of Dominion
-		i(188181),	-- Gloves of the First Rogue
-		i(188185),	-- Indomitable Vest
-		i(188183),	-- Pants of the First Rogue
-		i(188187),	-- Quickfinger Pocketlifters
-		i(188189),	-- Shadowwrap Leggings
-		i(188184),	-- Shoulderpads of the First Rogue
-		i(188190),	-- Shoulderpads of the Primordial
-		i(188179),	-- Vest of the First Rogue
-		i(188188),	-- Worldbinder Tricorne
 	}),
 	expansion(EXPANSION.DF, {
 		n(BACK, {
@@ -2580,6 +2445,13 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(208430, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Whispering Fanged Cord [Mythic]
 					}),
 				}),
+			})),
+
+			-- 10.2.7
+			expansion(EXPANSION.DF, 2.7, bubbleDown({ ["timeline"] = { CREATED_10_2_7 } }, {
+				i(215074),	-- REUSE
+				i(215085),	-- REUSE
+				i(215092),	-- REUSE
 			})),
 		}),
 		filter(LEATHER, {
@@ -2800,7 +2672,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(210203, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Wellspring Wristlets [Mythic]
 					}),
 				}),
-				header(HEADERS.Achievement, SEASON_VERDANT, {
+				n(SEASON_VERDANT, {
 					n(PVP_GLADIATOR, {
 						i(207142, { ["bonusID"] = 6898 }),	-- Ancient Haubark [Gladiator]
 						i(207142, { ["bonusID"] = 7479 }),	-- Ancient Haubark [Gladiator]
@@ -2945,7 +2817,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207152, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Volcanic Spelunker's Vents [Mythic]
 					}),
 				}),
-				header(HEADERS.Achievement, SEASON_VERDANT, {
+				n(SEASON_VERDANT, {
 					n(PVP_GLADIATOR, {
 						i(208427, { ["bonusID"] = 6898 }),	-- Insurgent Flame Warboots [Gladiator]
 						i(208427, { ["bonusID"] = 7479 }),	-- Insurgent Flame Warboots [Gladiator]
@@ -3077,50 +2949,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			i(204087),	-- 10.1 Cloak Test Item
 			i(204064),	-- PH 10.1 Raid - Black Dragon Labs - Boss 9 - Sarkareth - Accessory - Trinket - Omni
 			i(202608),	-- Power-Draining Spire [This was a Trinket /Braghe]
-		})),
-
-		-- 10.1.5
-		expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
-			i(207899),	-- Mega Dungeon Bronze Cloth Bindings
-			i(207832),	-- Mega Dungeon Bronze Cloth Breeches
-			i(207831),	-- Mega Dungeon Bronze Cloth Hood
-			i(207894),	-- Mega Dungeon Bronze Cloth Mitts
-			i(207829),	-- Mega Dungeon Bronze Cloth Wrap
-			i(207843),	-- Mega Dungeon Bronze Leather Bracers
-			i(207842),	-- Mega Dungeon Bronze Leather Cinch
-			i(207840),	-- Mega Dungeon Bronze Leather Cowl
-			i(207837),	-- Mega Dungeon Bronze Leather Drape
-			i(207905),	-- Mega Dungeon Bronze Leather Spaulders
-			i(207844),	-- Mega Dungeon Bronze Mail Chainmail
-			i(207914),	-- Mega Dungeon Bronze Mail Cinch
-			i(207845),	-- Mega Dungeon Bronze Mail Drape
-			i(207913),	-- Mega Dungeon Bronze Mail Spaulders
-			i(207846),	-- Mega Dungeon Bronze Mail Striders
-			i(207917),	-- Mega Dungeon Bronze Plate Cape
-			i(207916),	-- Mega Dungeon Bronze Plate Chestplate
-			i(207855),	-- Mega Dungeon Bronze Plate Crushers
-			i(207818),	-- Mega Dungeon Bronze Plate Greaves
-			i(207854),	-- Mega Dungeon Bronze Plate Stompers
-			i(207929),	-- Mega Dungeon Infinite Cloth Mantle
-			i(207860),	-- Mega Dungeon Infinite Cloth Robes
-			i(207930),	-- Mega Dungeon Infinite Cloth Sash
-			i(207825),	-- Mega Dungeon Infinite Cloth Slippers
-			i(207861),	-- Mega Dungeon Infinite Cloth Wrap
-			i(207869),	-- Mega Dungeon Infinite Leather Cloak
-			i(207935),	-- Mega Dungeon Infinite Leather Gloves
-			i(207868),	-- Mega Dungeon Infinite Leather Raiment
-			i(207960),	-- Mega Dungeon Infinite Leather Tassets
-			i(207870),	-- Mega Dungeon Infinite Leather Treads
-			i(207947),	-- Mega Dungeon Infinite Mail Bracers
-			i(207880),	-- Mega Dungeon Infinite Mail Cowl
-			i(207941),	-- Mega Dungeon Infinite Mail Drape
-			i(207879),	-- Mega Dungeon Infinite Mail Gauntlets
-			i(207958),	-- Mega Dungeon Infinite Mail Tassets
-			i(207949),	-- Mega Dungeon Infinite Plate Cape
-			i(207954),	-- Mega Dungeon Infinite Plate Girdle
-			i(207952),	-- Mega Dungeon Infinite Plate Greathelm
-			i(207953),	-- Mega Dungeon Infinite Plate Pauldrons
-			i(207891),	-- Mega Dungeon Infinite Plate Vambraces
 		})),
 
 		-- 10.1.5

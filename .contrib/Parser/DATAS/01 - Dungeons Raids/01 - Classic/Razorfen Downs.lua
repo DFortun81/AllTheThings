@@ -85,7 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						74367,	-- Koristrasza
 						74888,	-- Koristrasza
 					},
-					["timeline"] = { "added 6.0.1.18322" },
+					["timeline"] = { ADDED_6_0_2 },
 					["lvl"] = lvlsquish(35, 35, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Mushlump slain
@@ -135,23 +135,53 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
+				q(27029, {	-- Cure the Scourge
+					["qg"] = 44837,	-- Koristrasza
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+					["lvl"] = lvlsquish(40, 40, 15),
+					["groups"] = {
+						objective(1, {	-- 0/20 Withered Tusk
+							["provider"] = { "i", 60756 },	-- Withered Tusk
+							["crs"] = {
+								7334,	-- Battle Boar Horror
+								7335,	-- Death's Head Geomancer
+								7337,	-- Death's Head Necromancer
+								7334,	-- Withered Battle Boar
+								7329,	-- Withered Quilguard
+								7328,	-- Wiethered Reaver
+								7332,	-- Withered Spearhide
+								7327,	-- Withered Warrior
+							},
+						}),
+					},
+				}),
 				q(3525, {	-- Extinguishing the Idol
 					["providers"] = {
 						{ "n",   8516 },	-- Belnistrasz
 						{ "o", 152097 },	-- Belnistrasz's Brazier
 					},
-					["sourceQuests"] = {	
-						-- #if AFTER 4.0.3
-						27019,	-- Scourge of the Downs (After Cataclysm)
-						-- #else
-						3523,	-- Scourge of the Downs (Before Cataclysm)
-						-- #endif
-					},
-					["timeline"] = { "removed 6.0.2" },
+					["sourceQuest"] = 3523,	-- Scourge of the Downs (Before Cataclysm)
+					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 32,
+					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(10710, {	-- Dragonclaw Ring
-							["timeline"] = { "removed 6.0.2" },
+							["timeline"] = { REMOVED_6_0_2 },
+						}),
+					},
+					-- #endif
+				}),
+				q(27022, {	-- Extinguishing the Idol (After Cataclysm)
+					["providers"] = {
+						{ "n",   8516 },	-- Belnistrasz
+						{ "o", 152097 },	-- Belnistrasz's Brazier
+					},
+					["sourceQuest"] = 27019,	-- Scourge of the Downs (After Cataclysm)
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+					["lvl"] = lvlsquish(40, 40, 15),
+					["groups"] = {
+						i(10710, {	-- Dragonclaw Ring
+							["timeline"] = { REMOVED_6_0_2 },
 						}),
 					},
 				}),
@@ -173,8 +203,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(27024, {	-- Partners in Crime
 					["qg"] = 44837,	-- Koristrasza
-					["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
-					["lvl"] = lvlsquish(35, 35, 15),
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+					["lvl"] = lvlsquish(40, 40, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Glutton slain
 							["provider"] = { "n", 8567 },	-- Glutton
@@ -200,8 +230,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "n", 8516 },	-- Belnistrasz
 						{ "i", 10682 },	-- Belnistrasz's Oathstone
 					},
-					["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
-					["lvl"] = 32,
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+					["lvl"] = lvlsquish(40, 40, 15),
 				}),
 				q(27009, {	-- The Coldbringer
 					["qg"] = 44837,	-- Koristrasza
@@ -209,8 +239,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						27063,	-- Looming Threat [Alliance]
 						27062,	-- Looming Threat [Horde]
 					},
-					["timeline"] = { ADDED_4_0_3, "removed 6.0.1.18322" },
-					["lvl"] = lvlsquish(35, 35, 15),
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+					["lvl"] = lvlsquish(42, 42, 15),
 					-- #if BEFORE 6.0.1.18322
 					["groups"] = {
 						objective(1, {	-- 0/1 Amnennar the Coldbringer slain
@@ -229,7 +259,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						74367,	-- Koristrasza
 						74888,	-- Koristrasza
 					},
-					["timeline"] = { "added 6.0.1.18322" },
+					["timeline"] = { ADDED_6_0_2 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Amnennar the Coldbringer slain
 							["provider"] = { "n", 74434 },	-- Amnennar the Coldbringer
@@ -278,7 +308,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if BEFORE 6.0.2
 			n(7355, {	-- Tuten'kash
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10776),	-- Silky Spider Cape
 					i(10775),	-- Carapace of Tuten'kash
@@ -286,7 +316,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(7356, {	-- Plaguemaw the Rotting
-				["timeline"] = { "removed 6.0.2" },
+				["sourceQuests"] = {
+					3525,	-- Extinguishing the Idol (Before Cataclysm)
+					27022,	-- Extinguishing the Idol (After Cataclysm)
+				},
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10766),	-- Plaguerot Sprig
 					i(10760),	-- Swine Fists
@@ -295,17 +329,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			e(1142, {	-- Aarux
 				["creatureID"] = 74412,	-- Aarux
-				["timeline"] = { "added 6.0.2" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(10776),	-- Silky Spider Cape
 					i(10775),	-- Carapace of Tuten'kash
 					i(10777),	-- Arachnid Gloves
 				},
 			}),
-			o(385581, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
+			o(385581, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, { -- Henry's Handbag (object)
 				["description"] = "Head to the Murder Pens area and look for hanging bag, recipe is inside.",
 				["groups"] = {
-					i(202691),	-- Henry's Handbag
+					i(202691),	-- Henry's Handbag (Reagent Bag)
 					i(202249),	-- Recipe: Goldthorn Tea (RECIPE!)
 				},
 			})),
@@ -323,7 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you can click his body to start the encounter.",
 				["coord"] = { 80.0, 26.0, RAZORFEN_DOWNS },	-- The Murder Pens
 				["crs"] = { 75329 },	-- Sah'rhee (prior to clicking)
-				["timeline"] = { "added 6.0.1.18322" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(10766),	-- Plaguerot Sprig
 					i(10768),	-- Boar Champion's Belt
@@ -337,7 +371,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if BEFORE 6.0.2
 			n(7357, {	-- Mordresh Fire Eye
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10770),	-- Mordresh's Lifeless Skull
 					i(10769),	-- Glowing Eye of Mordresh
@@ -347,7 +381,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			e(433, {	-- Mordresh Fire Eye
 				["creatureID"] = 74347,	-- Mordresh Fire Eye
-				["timeline"] = { "added 6.0.1.18322" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(10770),	-- Mordresh's Lifeless Skull
 					i(10769),	-- Glowing Eye of Mordresh
@@ -356,7 +390,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			e(1143, {	-- Mushlump
 				["creatureID"] = 74435,	-- Mushlump
-				["timeline"] = { "added 6.0.1.18322" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(10772),	-- Glutton's Cleaver
 					i(10774),	-- Fleshhide Shoulders
@@ -367,7 +401,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if BEFORE 6.0.2
 			n(8567, {	-- Glutton
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10772),	-- Glutton's Cleaver
 					i(10774),	-- Fleshhide Shoulders
@@ -375,7 +409,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(7354, {	-- Ragglesnout
 				["description"] = "This is a rare spawn that is not always present.",
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					i(10758),	-- X'caliboar
 					i(10767),	-- Savage Boar's Guard
@@ -383,7 +417,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(7358, {	-- Amnennar the Coldbringer
-				["timeline"] = { "removed 6.0.2" },
+				["timeline"] = { REMOVED_6_0_2 },
 				["groups"] = {
 					ach(636, {	-- Razorfen Downs
 						-- #if BEFORE WRATH
@@ -394,7 +428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}),
 					ach(5045, {	-- Razorfen Downs Guild Run
-						["timeline"] = { ADDED_4_0_3, "removed 6.0.2" },
+						["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
 					}),
 					i(10420),	-- Skull of the Coldbringer
 					i(10761),	-- Coldrage Dagger
@@ -407,7 +441,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			e(1146, {	-- Death Speaker Blackthorn
 				["creatureID"] = 74875,	-- Death Speaker Blackthorn
-				["timeline"] = { "added 6.0.1.18322" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(10758),	-- X'caliboar
 					i(10766),	-- Plaguerot Sprig
@@ -424,11 +458,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					74876,	-- Amnennar's Phylactery
 					74434,	-- Amnennar the Coldbringer
 				},
-				["timeline"] = { "added 6.0.1.18322" },
+				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					ach(636),	-- Razorfen Downs
 					ach(5045, {	-- Razorfen Downs Guild Run
-						["timeline"] = { "added 6.0.1.18322" },
+						["timeline"] = { ADDED_6_0_2 },
 					}),
 					i(10761),	-- Coldrage Dagger
 					i(10763),	-- Icemetal Barbute

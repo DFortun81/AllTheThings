@@ -71,17 +71,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Supposedly has a random spawn up to 30 hours, unpredictable due to phasing and server sharding, be prepared to wait.",
 					["sourceQuest"] = 43684,	-- Notes Read [Retribution Paladin Hidden Artifact Appearance]
 					["coord"] = { 69.0, 45.8, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 7.0.3.21570" },
+					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { PALADIN },
 					["groups"] = {
 						i(139623, {	-- Timolain's Phylactery
-							["timeline"] = { "added 7.0.3.21570" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
 				i(139624, {	-- Shard of Darkness
 					["description"] = "It first took 350 casts in the river (RNG, could be 10 casts, could be 10,000 casts)\n\nYou may fish anywhere along the river, as long as your location says \"Thondroril River\"\nYour fishing skill does not matter",
-					["timeline"] = { "added 7.0.3.21570" },
+					["timeline"] = { ADDED_7_0_3 },
 					["classes"] = { PALADIN },
 					["requireSkill"] = FISHING,
 				}),
@@ -134,10 +134,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(196),	-- Uther's Tomb
 				-- #endif
-				--[[
-				exploration(203),	-- Mardenholde Keep
-				exploration(195),	-- School of Necromancy
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(649, {	-- Andorhal, Western Plaguelands
@@ -204,7 +200,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(10373, {	-- A Call to Arms: The Plaguelands! [The Exodar]
 					["qg"] = 20722,	-- Herald Bran'daan
 					["coord"] = { 55.4, 47.2, THE_EXODAR },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -236,7 +232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(10374, {	-- A Call to Arms: The Plaguelands! [Silvermoon City]
 					["qg"] = 20724,	-- Herald Amorlin
 					["coord"] = { 59.3, 64.7, SILVERMOON_CITY },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
@@ -320,7 +316,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131646, {	-- Leather Stitched Chain Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -356,7 +352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131630, {	-- Treads of Renewed Growth
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -472,7 +468,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131639, {	-- Forsaken Trooper Armguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -526,7 +522,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131656, {	-- Chillwind Breeches
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -760,7 +756,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131655, {	-- Bracer of Grievance
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -895,7 +891,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131647, {	-- Faded Mail Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -931,7 +927,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131623, {	-- Ravensun Gloves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1013,7 +1009,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 17099,	-- Mehlar Dawnblade
 					["sourceQuest"] = 9443,	-- The So-Called Mark of the Lightbringer
 					["coord"] = { 26.6, 58.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -1113,7 +1109,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131622, {	-- Whitetail Fox Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62160, {	-- Vandis' Band
 							["timeline"] = { ADDED_4_0_3 },
@@ -1446,10 +1442,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131631, {	-- Del's Discarded Shoulderguard
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131632, {	-- Dusty Gahrron Chainmail
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1514,7 +1510,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 17099,	-- Mehlar Dawnblade
 					["sourceQuest"] = 9601,	-- To The Bulwark
 					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["cost"] = { { "i", 12840, 20 } },	-- Minion's Scourgestone
 					["maps"] = { UNDERCITY },
 					["classes"] = { PALADIN },
@@ -1661,10 +1657,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131644, {	-- Armguards of Binding
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131645, {	-- Shoulderguard of Timeless Restraint
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1695,10 +1691,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131620, {	-- Armguards of Binding
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131621, {	-- Shoulderguard of Timeless Restraint
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1783,7 +1779,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131635, {	-- Plague-Free Disciple Belt
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1810,10 +1806,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131653, {	-- Gloves of Approaching Victory
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131654, {	-- Belt of Proficiency
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1840,10 +1836,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131637, {	-- Gloves of Approaching Victory
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131638, {	-- Belt of Proficiency
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2182,7 +2178,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9474, {	-- The Mark of the Lightbringer
 					["qg"] = 17238,	-- Anchorite Truuen
 					["coord"] = { 42.9, 84.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -2242,7 +2238,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131641, {	-- Andorhal Chain Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2263,7 +2259,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9443, {	-- The So-Called Mark of the Lightbringer
 					["qg"] = 17099,	-- Mehlar Dawnblade
 					["coord"] = { 26.6, 58.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -2372,7 +2368,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 92.0, 37.6, SILVERMOON_CITY },
 						{ 57.8, 90.8, UNDERCITY },
 					},
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -2381,7 +2377,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 17238,	-- Anchorite Truuen
 					["sourceQuest"] = 9474,	-- The Mark of the Lightbringer
 					["coord"] = { 42.9, 84.5, WESTERN_PLAGUELANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 				}),
@@ -2562,10 +2558,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131642, {	-- Putrid Mail Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131643, {	-- Succinct Sash
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2591,10 +2587,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131618, {	-- Putrid Mail Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131619, {	-- Belt of Recklessness
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2655,7 +2651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 10590,	-- Prove Your Hatred
 					["coord"] = { 83.2, 71.2, TIRISFAL_GLADES },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["maps"] = { UNDERCITY },
 					["classes"] = { PALADIN },
 					["races"] = HORDE_ONLY,
@@ -2714,7 +2710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131627, {	-- Scaled Pants of Patience
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(62192, {	-- Zen'Kiki's Thanks
 							["timeline"] = { ADDED_4_0_3 },
@@ -2734,12 +2730,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				i(12843, {	-- Corruptor's Scourgestone / Inert Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-					["timeline"] = { "deleted 4.0.3" },
+					["timeline"] = { DELETED_4_0_3 },
 				}),
 				-- #endif
 				n(1849, {	-- Dreadwhisper
 					["coord"] = { 64.0, 56.6, WESTERN_PLAGUELANDS },
-					["timeline"] = { "created 1.12.1.13277", ADDED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 				}),
 				-- #if BEFORE CATA
 				n(1843, {  -- Foreman Jerris
@@ -2935,7 +2931,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "i", 210329, 1 },	-- Hillsbrad Treasure Map
 						{ "i", 210323, 1 },	-- Safe Combination
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400102),	-- Engrave Pants - Envenom
@@ -3041,6 +3037,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				n(11936, {	-- Artist Renfray
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					-- #IF AFTER 10.1.5
+					["provider"] = {"i",13544},	-- Spectral Essence
+					-- #ENDIF
 					["coord"] = { 65.8, 75.4, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206358, {	-- Imported Candle
@@ -3050,6 +3049,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(11316, {	-- Joseph Dirte
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					-- #IF AFTER 10.1.5
+					["provider"] = {"i",13544},	-- Spectral Essence
+					-- #ENDIF
 					["coord"] = { 68.0, 74.8, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206354, {	-- Stinky Candle
@@ -3071,6 +3073,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(11286, {	-- Magistrate Marduke
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					-- #IF AFTER 10.1.5
+					["provider"] = {"i",13544},	-- Spectral Essence
+					-- #ENDIF
 					["coord"] = { 70.5, 74.0, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206357, {	-- Authentic Andorhal Candle
@@ -3094,6 +3099,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(11285, {	-- Rory
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					-- #IF AFTER 10.1.5
+					["provider"] = {"i",13544},	-- Spectral Essence
+					-- #ENDIF
 					["coord"] = { 63.4, 75.6, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206355, {	-- Tobacco-Filled Candle
@@ -3103,6 +3111,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(11283, {	-- Sammy
 					["description"] = "Only visible if you have the Spectral Essence equipped.",
+					-- #IF AFTER 10.1.5
+					["provider"] = {"i",13544},	-- Spectral Essence
+					-- #ENDIF
 					["coord"] = { 69.1, 78.7, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(206356, {	-- Ghost-Warding Candle

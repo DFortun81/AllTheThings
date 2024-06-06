@@ -692,3 +692,10 @@
 82314@@@--
 82315@@@--
 82316@@@--
+82656@@@Wild Leather Vest
+82657@@@Wild Leather Vest
+82662@@@The Way of the Weaponsmith
+82665@@@The Way of the Weaponsmith
+82850@@@Fish Oil
+82851@@@Dark Iron Ordinance
+82853@@@Shredder Turbochargers

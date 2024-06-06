@@ -49,7 +49,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 		}),
 	}),
 	ach(12901, {	-- Honor Level 25
-		title(321),	-- The Honorable %s
+		title(321),	-- The Honorable <Name>
 	}),
 	ach(12902, {	-- Honor Level 30
 		i(134031),	-- Prestigious Pennant (TOY!)
@@ -58,7 +58,7 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 		i(140233),	-- Prestigious Ivory Courser (MOUNT!)
 	}),
 	ach(12904, {	-- Honor Level 50
-		title(322),	-- %s, the Prestigious
+		title(322),	-- <Name>, the Prestigious
 	}),
 	ach(12905, {	-- Honor Level 60
 		i(134032),	-- Elite Pennant (TOY!)
@@ -67,13 +67,13 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 		i(140408),	-- Prestigious Azure Courser (MOUNT!)
 	}),
 	ach(12907, {	-- Honor Level 80
-		title(323),	-- %s, the Unrelenting
+		title(323),	-- <Name>, the Unrelenting
 	}),
 	ach(12908, {	-- Honor Level 90
 		i(134034),	-- Esteemed Pennant (TOY!)
 	}),
 	ach(12909, {	-- Honor Level 100
-		title(354),	-- %s the Unstoppable Force
+		title(354),	-- <Name> the Unstoppable Force
 	}),
 	ach(12910, {	-- Honor Level 125
 		i(140232),	-- Prestigious Forest Courser (MOUNT!)
@@ -85,13 +85,13 @@ root(ROOTS.PVP, pvp(n(PVP_HONOR, {
 		i(164310),	-- Glorious Pennant (TOY!)
 	}),
 	ach(12913, {	-- Honor Level 200
-		title(325),	-- %s, Bound By Honor
+		title(325),	-- <Name>, Bound By Honor
 	}),
 	ach(12914,{  -- Honor Level 250
 		i(140407),	-- Prestigious Midnight Courser (MOUNT!)
 	}),
 	ach(12915, {	-- Honor Level 300
-		title(369),	-- %s the Tactician
+		title(369),	-- <Name> the Tactician
 	}),
 	ach(12916, {	-- Honor Level 400
 		i(163974, {	-- Bucketshell (PET!)

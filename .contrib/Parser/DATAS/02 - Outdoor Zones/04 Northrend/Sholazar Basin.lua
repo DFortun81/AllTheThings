@@ -736,7 +736,20 @@ root(ROOTS.Zones, {
 						["coord"] = { 25.3, 58.4, SHOLAZAR_BASIN },
 						["qg"] = 28033,	-- Weslex Quickwrench
 						["sourceQuest"] = 12522,	-- Need an Engine, Take an Engine
+						["groups"] = {
+							o_repeated({
+								i(38349),	-- Venture Co. Spare Parts (QI!)
+								o(190453),	-- Venture Co. Spare Parts
+								o(190454),	-- Venture Co. Spare Parts
+								o(190455),	-- Venture Co. Spare Parts
+							}),
+						},
 					}),
+					heroscall(q(49553, {	-- Hero's Call: Sholazar Basin!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 66,
+					})),
 					q(12577, {	-- Home Time!
 						["coord"] = { 42.1, 38.6, SHOLAZAR_BASIN },
 						["qg"] = 28114,	-- Mistcaller Soon-gan
@@ -843,6 +856,11 @@ root(ROOTS.Zones, {
 					q(12522, {	-- Need an Engine, Take an Engine
 						["coord"] = { 25.3, 58.4, SHOLAZAR_BASIN },
 						["qg"] = 28033,	-- Weslex Quickwrench
+						["groups"] = {
+							o(190447, {	-- Flying Machine Engine
+								i(38334),	-- Flying Machine Engine (QI!)
+							}),
+						},
 					}),
 					q(12528, {	-- Playing Along
 						["coord"] = { 50.5, 76.5, SHOLAZAR_BASIN },
@@ -861,7 +879,7 @@ root(ROOTS.Zones, {
 							i(39478),	-- Cloak of the Deadliest Game
 							i(40353),	-- Polished Protodrake Cloak
 							i(39490, {	-- Dorian's Prybar
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -978,11 +996,29 @@ root(ROOTS.Zones, {
 							12549,	-- Dreadsaber Matery: Becoming a Predator
 							12520,	-- Rhino Mastery: The Test
 						},
+						["groups"] = {
+							o(190622, {	-- Sturdy Vine
+								o(190623, {	-- Papaya
+									i(38655),	-- Papaya (QI!)
+								}),
+								o(190624, {	-- Orange
+									i(38656),	-- Orange (QI!)
+								}),
+								o(190625, {	-- Banana Bunch
+									i(38653),	-- Banana Bunch (QI!)
+								}),
+							}),
+						},
 					}),
 					q(12644, {	-- Still At It
 						["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
 						["qg"] = 29157,	-- Grimbooze Thunderbrew
 						["sourceQuest"] = 12634,	-- Some Make Lemonade, Some Make Liquor
+						["groups"] = {
+							o(190643, {	-- Thunderbrew's Jungle Punch
+								i(38688),	-- Thunderbrew's Jungle Punch (QI!)
+							}),
+						},
 					}),
 					q(12547, {	-- The Activation Rune
 						["lvl"] = 66,
@@ -1084,6 +1120,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 26.7, 60.0, SHOLAZAR_BASIN },
 						["qg"] = 29157,	-- Crimbooze Thunderbrew
 						["sourceQuest"] = 12644,	-- Still At It
+						["groups"] = {
+							i(38697),	-- Jungle Punch Sample (QI!)
+						},
 					}),
 					q(12531, {	-- The Underground Menace
 						["coord"] = { 55.4, 69.6, SHOLAZAR_BASIN },
@@ -1103,6 +1142,15 @@ root(ROOTS.Zones, {
 						["qg"] = 28214,	-- Goregek the Gorilla Hunter
 						["sourceQuest"] = 12528,	-- Playing Along
 					}),
+					q(12524, {	-- Venture Co. Misadventure
+						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
+						["qg"] = 28032,	-- Debaar
+					}),
+					warchiefscommand(q(49535, {	-- Warchief's Command: Sholazar Basin!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(12660, {	-- Weapons of Destruction
 						["coord"] = { 64.5, 48.6, SHOLAZAR_BASIN },
 						["qg"] = 27801,	-- Avatar of Freya
@@ -1119,9 +1167,15 @@ root(ROOTS.Zones, {
 							12521,	-- Where in the World is Hemet Nesingwary?
 						},
 					}),
-					q(12524, {	-- Venture Co. Misadventure
-						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
-						["qg"] = 28032,	-- Debaar
+					q(12521, {	-- Where in the World is Hemet Nesingwary?
+						["qg"] = 28160,	-- Achmage Pentarus
+						-- #if AFTER 7.3.5.25600
+						["sourceQuests"] = {
+							49553,	-- Hero's Call: Sholazar Basin!
+							49535,	-- Warchief's Command: Sholazar Basin!
+						},
+						-- #endif
+						["coord"] = { 68.5, 42.0, NORTHREND_DALARAN },
 					}),
 					q(12525, {	-- Wipe That Grin Off His Face
 						["coord"] = { 27.2, 59.8, SHOLAZAR_BASIN },
@@ -1284,7 +1338,7 @@ root(ROOTS.Zones, {
 							i(44122),	-- Scavenged Feathery Leggings
 							i(44121),	-- Sparkly Shiny Gloves
 							i(44118, {	-- Stolen Vrykul Harpoon
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),

@@ -22,10 +22,10 @@ THE_OPENING_OF_THE_DARK_PORTAL = createHeader({
 root(ROOTS.WorldEvents, n(THE_OPENING_OF_THE_DARK_PORTAL,
 	applyclassicphase(TBC_PHASE_ONE_DARKPORTAL, bubbleDown({
 		-- #if AFTER 2.5.1
-		["timeline"] = { "removed 2.0.1" },
+		["timeline"] = { REMOVED_2_0_1 },
 		-- #else
 		-- This is so that it remains available until the end of phase one.
-		["timeline"] = { "removed 2.5.2" },
+		["timeline"] = { REMOVED_2_5_2 },
 		-- #endif
 	}, {
 		["maps"] = { BLASTED_LANDS },

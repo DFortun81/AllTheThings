@@ -158,7 +158,6 @@ local function CacheAccountWideMiscQuests(accountWideData)
 		70941,	-- Fishing Holes [DF Iskaaran Fishing]
 		74576,	-- Restored Hakkari Bijou [Zul'Gurub]
 		76390,	-- Inconvenience Fee [Naxxramas]
-		76307,	-- Makeshift Grappling Hook [206473]
 
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
@@ -228,7 +227,7 @@ local function CacheAccountWideSharedQuests(accountWideData)
 	end
 end
 
-local function FixWrongAccountWideQuests(accountWideData)
+local function FixNonOneTimeQuests(accountWideData)
 	local oneTimeQuests = accountWideData.OneTimeQuests;
 
 	-- if we ever erroneously add an account-wide quest and find out it isn't (or Blizzard actually fixes it to give account-wide credit)
@@ -243,6 +242,8 @@ local function FixWrongAccountWideQuests(accountWideData)
 		62049,	-- Bucket of Clean Water
 		62048,	-- Comfortable Saddle Blanket
 		62050,	-- Dredhollow Apple
+
+		76307,	-- Makeshift Grappling Hook
 	}) do
 		oneTimeQuests[questID] = nil;
 	end
@@ -271,7 +272,7 @@ end
 app.AddEventHandler("OnRefreshCollections", CacheAccountWideCompleteViaAchievement)
 app.AddEventHandler("OnRefreshCollections", CacheAccountWideMiscQuests)
 app.AddEventHandler("OnRefreshCollections", CacheAccountWideSharedQuests)
-app.AddEventHandler("OnRefreshCollections", FixWrongAccountWideQuests)
+app.AddEventHandler("OnRefreshCollections", FixNonOneTimeQuests)
 app.AddEventHandler("OnRefreshCollections", CheckOncePerAccountQuestsForCharacter)
 
 RefreshCollections = function()

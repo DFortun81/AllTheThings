@@ -182,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(13204, {	-- Funky Fungi
 					["provider"] = { "i", 43512 },	-- Ooze-Covered Fungus
-					["timeline"] = { "removed 4.3.0" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["cr"] = 30329,	-- Savage Cave Beast
 					["lvl"] = lvlsquish(73, 73, 15),
 					["groups"] = {
@@ -193,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29825, {	-- Pupil No More
 					["qg"] = 55658,	-- Seer Ixit
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(71, 71, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Elder Nadox slain
@@ -204,7 +204,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(29826, {	-- Reclaiming Ahn'Kahet
 					["qg"] = 55658,	-- Seer Ixit
 					["sourceQuest"] = 29825,	-- Pupil No More
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(71, 71, 15),
 					["groups"] = {
 						objective(1, {	-- 0/3 Eye of Taldaram slain
@@ -244,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 			-- #if AFTER 7.3.5
 			n(ZONE_DROPS, {
 				i(35616, {	-- Spored Tendrils Spaulders
-					["timeline"] = { CREATED_3_0_2, "added 7.3.5" },
+					["timeline"] = { CREATED_3_0_2, ADDED_7_3_5 },
 				}),
 			}),
 			-- #endif
@@ -293,7 +293,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 7.3.5
 						i(43281),	-- Edge of Oblivion (7.3.5 - Used to be only Heroic Mode)
 						i(44191, {	-- Ice-Rimed Chopper (7.3.5 - Used to be only Heroic Mode)
-							["timeline"] = { CREATED_3_0_2, "added 6.2.0" },
+							["timeline"] = { ADDED_6_2_0 },
 						}),
 						i(43280),	-- Faceguard of the Hammer Clan (7.3.5 - Used to be only Heroic Mode)
 						i(43282),	-- Shadowseeker's Pendant (7.3.5 - Used to be only Heroic Mode)
@@ -339,7 +339,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						}),
 					}),
 					-- #endif
@@ -392,11 +392,9 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						["groups"] = {
 							ach(2056),	-- Volunteer Work
 							i(43281),	-- Edge of Oblivion
-							-- #if AFTER 6.2.0
 							i(44191, {	-- Ice-Rimed Chopper
-								["timeline"] = { CREATED_3_0_2, "added 6.2.0" },
+								["timeline"] = { ADDED_6_2_0 },
 							}),
-							-- #endif
 							i(43280),	-- Faceguard of the Hammer Clan
 							i(43282),	-- Shadowseeker's Pendant
 							-- #if AFTER 7.3.5
@@ -452,15 +450,5 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(35490),	-- Ahn'kahet: The Old Kingdom Reward Quest - Heroic completion
 		q(35493),	-- Ahn'kahet: The Old Kingdom Bonus Reward - kill Amanitar (Heroic only)
 	}),
-});
--- #endif
-
--- #if AFTER 4.3.0.14732
-root(ROOTS.NeverImplemented, {
-	-- #if BEFORE 6.2.0
-	i(44191, {	-- Ice-Rimed Chopper
-		["timeline"] = { CREATED_3_0_2, "added 6.2.0" },
-	}),
-	-- #endif
 });
 -- #endif

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, bubbleDown({ ["timeline"] = { "added 7.0.2" } }, {
+root(ROOTS.Zones, bubbleDown({ ["timeline"] = { ADDED_7_0_3 } }, {
 	m(BROKEN_ISLES, {
 		n(WORLD_QUESTS, {
 			i(116415, { ["timeline"] = { REMOVED_10_2_5 } }),	-- Shiny Pet Charm

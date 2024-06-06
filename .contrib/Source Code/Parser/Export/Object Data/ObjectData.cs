@@ -213,7 +213,10 @@ namespace ATT
                 bool ignoreSource = fields.Remove("ignoreSource");
                 fields.Remove("timeline");
                 fields.Remove("ilvl");
-                fields.Remove("q");
+                if (fields.Contains("q") && !Program.PreProcessorTags.ContainsKey("INCLUDE_QUALITY"))
+                {
+                    fields.Remove("q");
+                }
 
                 // Ensure parser-only fields are not exported
                 for (int i = fields.Count - 1; i >= 0; i--)

@@ -124,7 +124,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(13167, {	-- Death to the Traitor King
 					["qg"] = 26653,	-- Kilix the Unraveler
 					["coord"] = { 26.2, 50.8, DRAGONBLIGHT },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Anub'arak's Broken Husk
@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29807, {	-- Death to the Traitor King
 					["qg"] = 55564,	-- Reclaimer A'zak
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 Anub'arak's Broken Husk
@@ -155,7 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				q(13182, {	-- Don't Forget the Eggs!
 					["qg"] = 26653,	-- Kilix the Unraveler
 					["coord"] = { 26.2, 50.8, DRAGONBLIGHT },
-					["timeline"] = { "removed 4.3.0.14732" },
+					["timeline"] = { REMOVED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/6 Nerubian Scourge Eggs Destroyed
@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29808, {	-- Don't Forget the Eggs!
 					["qg"] = 55564,	-- Reclaimer A'zak
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/6 Nerubian Scourge Eggs Destroyed
@@ -183,7 +183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29811, {	-- The Gatewatcher's Talisman
 					["qg"] = 55564,	-- Reclaimer A'zak
-					["timeline"] = { "added 4.3.0.14732" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
 						objective(1, {	-- 0/1 The Gatewatcher's Talisman
@@ -218,7 +218,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #if AFTER 7.3.5
 						i(37216),	-- Facade Shield of Glyphs (7.3.5 - Used to be only Heroic Mode)
 						i(157582, {	-- Nerubian Mantle
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(37219),	-- Custodian's Chestpiece (7.3.5 - Used to be only Heroic Mode)
 						i(37217),	-- Golden Limb Bands (7.3.5 - Used to be only Heroic Mode)
@@ -239,7 +239,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						i(37222),	-- Egg Sac Robes (7.3.5 - Used to be only Heroic Mode)
 						i(37230),	-- Grotto Mist Gloves (7.3.5 - Used to be only Heroic Mode)
 						i(157581, {	-- Skittering Gauntlets
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(37221),	-- Hollowed Mandibles Legplates (7.3.5 - Used to be only Heroic Mode)
 						-- #endif
@@ -307,7 +307,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						}),
 					}),
 					-- #endif
@@ -326,7 +326,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							-- #endif
 							i(37216),	-- Facade Shield of Glyphs
 							i(157582, {	-- Nerubian Mantle
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37219),	-- Custodian's Chestpiece
 							i(37217),	-- Golden Limb Bands
@@ -348,7 +348,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37222),	-- Egg Sac Robes
 							i(37230),	-- Grotto Mist Gloves
 							i(157581, {	-- Skittering Gauntlets
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 							i(37221),	-- Hollowed Mandibles Legplates
 							-- #if AFTER 7.3.5

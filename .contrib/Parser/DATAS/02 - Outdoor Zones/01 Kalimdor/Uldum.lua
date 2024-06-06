@@ -132,12 +132,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(653, {	-- Oasis of Vir'sar
+					["cr"] = 48274,	-- Jock Lindsey <Flight Master>
 					["coord"] = { 26.6, 8.2, ULDUM },
 				}),
 				fp(652, {	-- Ramkahen
+					["cr"] = 48275,	-- Kurzel <Flight Master>
 					["coord"] = { 56.2, 33.6, ULDUM },
 				}),
 				fp(674, {	-- Schnottz's Landing
+					["cr"] = 48273,	-- Evax Oilspark <Flight Master>
 					["coord"] = { 22.2, 64.8, ULDUM },
 				}),
 			}),
@@ -464,6 +467,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65831),	-- Pharoah's Burial Spaulders
 					},
 				}),
+				heroscall(q(28558, {	-- Hero's Call: Uldum!
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 83,
+				})),
 				q(28404, {	-- I'll Do It By Hand
 					["qg"] = 48558,	-- Harrison Jones
 					["coord"] = { 38.9, 23.2, ULDUM },

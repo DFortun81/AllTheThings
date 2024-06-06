@@ -17,15 +17,15 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	n(ACHIEVEMENTS, {
 		ach(17334, {	-- Trading Post Enthusiast
 			i(203431, {	-- Ensemble: Burden of Unrelenting Justice
-				i(211093), -- Belt of Unrelenting Justice
-				i(211092), -- Bracers of Unrelenting Justice
-				i(211095), -- Cloak of Unrelenting Justice
-				i(211088), -- Gloves of Unrelenting Justice
-				i(211090), -- Helm of Unrelenting Justice
-				i(211094), -- Leggings of Unrelenting Justice
-				i(212591), -- Mantle of Unrelenting Justice
-				i(212592), -- Treads of Unrelenting Justice
-				i(211091), -- Tunic of Unrelenting Justice
+				i(211093),	-- Belt of Unrelenting Justice
+				i(211092),	-- Bracers of Unrelenting Justice
+				i(211095),	-- Cloak of Unrelenting Justice
+				i(211088),	-- Gloves of Unrelenting Justice
+				i(211090),	-- Helm of Unrelenting Justice
+				i(211094),	-- Leggings of Unrelenting Justice
+				i(212591),	-- Mantle of Unrelenting Justice
+				i(212592),	-- Treads of Unrelenting Justice
+				i(211091),	-- Tunic of Unrelenting Justice
 			}),
 			i(214240, sharedDataSelf({ ["timeline"] = { ADDED_10_2_5 } }, {	-- Ensemble: Gleaming Burden of Unrelenting Justice
 				i(214226),	-- Gleaming Belt of Unrelenting Justice
@@ -122,7 +122,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		}),
 	}),
 	n(YEAR2023, {
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, "removed 10.0.5.48317" } }, {
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
 			n(MONTHLY_REWARD, {
 				i(190231),	-- Ash'adar, Harbinger of Dawn (MOUNT!)
 			}),
@@ -143,24 +143,24 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190799, {	-- Ensemble: Swashbuckling Buccaneer's Slops
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
 					["g"] = {
-						i(190786), -- Swashbuckling Buccaneer's Boots
-						i(190785), -- Swashbuckling Buccaneer's Breeches
-						i(190784), -- Swashbuckling Buccaneer's Sash
-						i(190783), -- Swashbuckling Buccaneer's Tunic
+						i(190786),	-- Swashbuckling Buccaneer's Boots
+						i(190785),	-- Swashbuckling Buccaneer's Breeches
+						i(190784),	-- Swashbuckling Buccaneer's Sash
+						i(190783),	-- Swashbuckling Buccaneer's Tunic
 					},
 				}),
 				i(202170, {	-- Ensemble: Vagabond's Rosy Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(202168), -- Vagabond's Rosy Cape
-						i(202169), -- Vagabond's Rosy Hood
+						i(202168),	-- Vagabond's Rosy Cape
+						i(202169),	-- Vagabond's Rosy Hood
 					},
 				}),
 				i(202167, {	-- Ensemble: Wanderer's Rosy Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(202166), -- Wanderer's Rosy Cloak
-						i(202165), -- Wanderer's Rosy Scarf
+						i(202166),	-- Wanderer's Rosy Cloak
+						i(202165),	-- Wanderer's Rosy Scarf
 					},
 				}),
 				i(190856, {	-- Fetid Bouquet
@@ -192,7 +192,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.0.5.48317", "removed 10.0.5.48865" } }, {
+		n(MARCH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
 			n(MONTHLY_REWARD, {
 				i(190504, {	-- Ensemble: Darkmoon Harlequin's Bells
 					i(190492),	-- Darkmoon Harlequin's Belt
@@ -216,41 +216,41 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(189938, {	-- Ensemble: Fel-Automaton Exoplate
 					["cost"] = {{"c", TRADERS_TENDER, 850}},
 					["g"] = {
-						i(189887), -- Fel-Automaton Coreguard
-						i(189891), -- Fel-Automaton Cranioplate
-						i(189890), -- Fel-Automaton Manipulators
-						i(189892), -- Fel-Automaton Mobilizers
-						i(189893), -- Fel-Automaton Pauldrons
-						i(189889), -- Fel-Automaton Plating
-						i(189894), -- Fel-Automaton Stabilizers
-						i(189888), -- Fel-Automaton Stompers
+						i(189887),	-- Fel-Automaton Coreguard
+						i(189891),	-- Fel-Automaton Cranioplate
+						i(189890),	-- Fel-Automaton Manipulators
+						i(189892),	-- Fel-Automaton Mobilizers
+						i(189893),	-- Fel-Automaton Pauldrons
+						i(189889),	-- Fel-Automaton Plating
+						i(189894),	-- Fel-Automaton Stabilizers
+						i(189888),	-- Fel-Automaton Stompers
 					},
 				}),
 				i(200884, {	-- Ensemble: Glorious Dragonrider's Mail
 					["cost"] = {{"c", TRADERS_TENDER, 750}},
 					["g"] = {
-						i(190209), -- Glorious Dragonrider's Chains
-						i(190230), -- Glorious Dragonrider's Cuisses
-						i(190212), -- Glorious Dragonrider's Hood
-						i(189792), -- Glorious Dragonrider's Grips
-						i(189878), -- Glorious Dragonrider's Runeward
-						i(190208), -- Glorious Dragonrider's Sabatons
-						i(189877), -- Glorious Dragonrider's Spaulders
-						i(189874), -- Glorious Dragonrider's Wristguards
+						i(190209),	-- Glorious Dragonrider's Chains
+						i(190230),	-- Glorious Dragonrider's Cuisses
+						i(190212),	-- Glorious Dragonrider's Hood
+						i(189792),	-- Glorious Dragonrider's Grips
+						i(189878),	-- Glorious Dragonrider's Runeward
+						i(190208),	-- Glorious Dragonrider's Sabatons
+						i(189877),	-- Glorious Dragonrider's Spaulders
+						i(189874),	-- Glorious Dragonrider's Wristguards
 					},
 				}),
 				i(190166, {	-- Ensemble: Vagabond's Midnight Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190376), -- Vagabond's Midnight Cape
-						i(190150), -- Vagabond's Midnight Hood
+						i(190376),	-- Vagabond's Midnight Cape
+						i(190150),	-- Vagabond's Midnight Hood
 					},
 				}),
 				i(190377, {	-- Ensemble: Wanderer's Midnight Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190149), -- Wanderer's Midnight Cloak
-						i(190151), -- Wanderer's Midnight Scarf
+						i(190149),	-- Wanderer's Midnight Cloak
+						i(190151),	-- Wanderer's Midnight Scarf
 					},
 				}),
 				i(190097, {	-- Fabulously Flashy Finery
@@ -279,11 +279,11 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 10.0.5.48865", "removed 10.1.0.49407" } }, {
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 } }, {
 			n(MONTHLY_REWARD, {
 				i(190164, {	-- Arsenal: Blades of Elune
-					i(190093), -- Elune's Fury
-					i(190094), -- Elune's Wrath
+					i(190093),	-- Elune's Fury
+					i(190094),	-- Elune's Wrath
 				}),
 			}),
 			filter(BATTLE_PETS, {
@@ -306,21 +306,21 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(200909, {	-- Ensemble: Corrupted Runelord's Regalia
 					["cost"] = {{"c", TRADERS_TENDER, 750}},
 					["g"] = {
-						i(189875), -- Corrupted Runelord's Sash
+						i(190210), -- Corrupted Runelord's Cowl
+						i(190206), -- Corrupted Runelord's Glyphbands
 						i(189876), -- Corrupted Runelord's Handguards
 						i(189879), -- Corrupted Runelord's Leggings
 						i(189880), -- Corrupted Runelord's Mantle
-						i(190206), -- Corrupted Runelord's Glyphbands
-						i(190207), -- Corrupted Runelord's Slippers
-						i(190210), -- Corrupted Runelord's Cowl
 						i(190211), -- Corrupted Runelord's Robe
+						i(189875), -- Corrupted Runelord's Sash
+						i(190207), -- Corrupted Runelord's Slippers
 					},
 				}),
 				i(190540, {	-- Ensemble: Trapper's Munitions
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["g"] = {
-						i(190449), -- Trapper's Fur-Lined Quiver
-						i(190448), -- Trapper's Shot Pouch
+						i(190449),	-- Trapper's Fur-Lined Quiver
+						i(190448),	-- Trapper's Shot Pouch
 					},
 				}),
 				i(190886, {	-- Fine White Evening Gloves
@@ -352,9 +352,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MAY, bubbleDownSelf({ ["timeline"] = { "added 10.1.0.49407", "removed 10.1.0.49890" } }, {
+		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 } }, {
 			n(MONTHLY_REWARD, {
-				i(190613), -- Savage Green Battle Turtle (MOUNT!)
+				i(190613),	-- Savage Green Battle Turtle (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
 				i(190175, {	-- Pippin (PET!)
@@ -371,42 +371,42 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(201229, {	-- Ensemble: Kvaldir Scout Leathers
 					["cost"] = {{"c", TRADERS_TENDER, 750}},
 					["g"] = {
-						i(190136), -- Kvaldir Scout Treads
-						i(190137), -- Kvaldir Scout Grips
-						i(190140), -- Kvaldir Scout Trousers
-						i(190141), -- Kvaldir Scout Chestguard
 						i(190548), -- Kvaldir Scout Belt
-						i(190549), -- Kvaldir Scout Wristguard
-						i(190552), -- Kvaldir Scout Shoulderpads
+						i(190141), -- Kvaldir Scout Chestguard
+						i(190137), -- Kvaldir Scout Grips
 						i(190574), -- Kvaldir Scout Hood
+						i(190552), -- Kvaldir Scout Shoulderpads
+						i(190136), -- Kvaldir Scout Treads
+						i(190140), -- Kvaldir Scout Trousers
+						i(190549), -- Kvaldir Scout Wristguard
 					},
 				}),
 				i(190922, {	-- Ensemble: Vagabond's Snowy Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190882), -- Vagabond's Snowy Cape
-						i(190884), -- Vagabond's Snowy Hood
+						i(190882),	-- Vagabond's Snowy Cape
+						i(190884),	-- Vagabond's Snowy Hood
 					},
 				}),
 				i(190095, {	-- Ensemble: Vestment of the Honored Valarjar
 					["cost"] = {{"c", TRADERS_TENDER, 900}},
 					["g"] = {
-						i(190081), -- Mantle of the Honored Valarjar
-						i(190082), -- Cloak of the Honored Valarjar
-						i(190083), -- Robe of the Honored Valarjar
 						i(190084), -- Bracers of the Honored Valarjar
-						i(190085), -- Sash of the Honored Valarjar
-						i(190086), -- Sandals of the Honored Valarjar
-						i(190087), -- Pantaloons of the Honored Valarjar
 						i(190088), -- Circlet of the Honored Valarjar
+						i(190082), -- Cloak of the Honored Valarjar
 						i(190089), -- Gloves of the Honored Valarjar
+						i(190081), -- Mantle of the Honored Valarjar
+						i(190087), -- Pantaloons of the Honored Valarjar
+						i(190083), -- Robe of the Honored Valarjar
+						i(190086), -- Sandals of the Honored Valarjar
+						i(190085), -- Sash of the Honored Valarjar
 					},
 				}),
 				i(190921, {	-- Ensemble: Wanderer's Snowy Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190883), -- Wanderer's Snowy Cloak
-						i(190885), -- Wanderer's Snowy Scarf
+						i(190883),	-- Wanderer's Snowy Cloak
+						i(190885),	-- Wanderer's Snowy Scarf
 					},
 				}),
 				i(190217, {	-- Fang of the Mountain
@@ -438,9 +438,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(JUNE, bubbleDownSelf({ ["timeline"] = { "added 10.1.0.49890", REMOVED_10_1_5 } }, {
+		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_5 } }, {
 			n(MONTHLY_REWARD, {
-				i(190169), -- Quawks (MOUNT!)
+				i(190169),	-- Quawks (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
 				i(190604, {	-- Buzzworth (PET!)
@@ -462,28 +462,28 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(201230, {	-- Ensemble: Helarjar Berserker Warplate
 					["cost"] = {{"c", TRADERS_TENDER, 750}},
 					["g"] = {
-						i(190134), -- Helarjar Berserker Warboots
-						i(190135), -- Helarjar Berserker Gauntlets
-						i(190138), -- Helarjar Berserker Horns
-						i(190139), -- Helarjar Berserker Greaves
-						i(190550), -- Helarjar Berserker Girdle
 						i(190551), -- Helarjar Berserker Bracers
 						i(190553), -- Helarjar Berserker Cuirass
+						i(190135), -- Helarjar Berserker Gauntlets
+						i(190550), -- Helarjar Berserker Girdle
+						i(190139), -- Helarjar Berserker Greaves
+						i(190138), -- Helarjar Berserker Horns
 						i(190554), -- Helarjar Berserker Pauldrons
+						i(190134), -- Helarjar Berserker Warboots
 					},
 				}),
 				i(202178, {	-- Ensemble: Vagabond's Carrot Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(202177), -- Vagabond's Carrot Cape
-						i(202176), -- Vagabond's Carrot Hood
+						i(202177),	-- Vagabond's Carrot Cape
+						i(202176),	-- Vagabond's Carrot Hood
 					},
 				}),
 				i(202179, {	-- Ensemble: Wanderer's Carrot Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(202175), -- Wanderer's Carrot Cloak
-						i(202174), -- Wanderer's Carrot Scarf
+						i(202175),	-- Wanderer's Carrot Cloak
+						i(202174),	-- Wanderer's Carrot Scarf
 					},
 				}),
 				i(190690, {	-- Flame-Forged Fel Fang
@@ -515,7 +515,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(JULY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, "removed 10.1.5.50747" } }, {
+		n(JULY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_5 } }, {
 			n(MONTHLY_REWARD, {
 				i(206156),	-- Grotto Netherwing Drake (MOUNT!)
 			}),
@@ -542,7 +542,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190560, {	-- Conquest
 					["cost"] = {{"c", TRADERS_TENDER, 600}},
 				}),
-				i(200915, {	-- Ensemble: Sylvan Stalker’s Leathers	-- spellID 367583
+				i(200915, {	-- Ensemble: Sylvan Stalker’s Leathers
 					["cost"] = {{"c", TRADERS_TENDER, 750}},
 					["g"] = {
 						i(190436),	-- Sylvan Stalker's Baldric
@@ -555,14 +555,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 						i(190788),	-- Sylvan Stalker's Wristguards
 					},
 				}),
-				i(190528, {	-- Ensemble: Vagabond's Violet Threads	-- spellID 367582
+				i(190528, {	-- Ensemble: Vagabond's Violet Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
 						i(190424),	-- Vagabond's Violet Cape
 						i(190425),	-- Vagabond's Violet Hood
 					},
 				}),
-				i(190529, {	-- Ensemble: Wanderer's Violet Trappings	-- spellID 367583
+				i(190529, {	-- Ensemble: Wanderer's Violet Trapping
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
 						i(190423),	-- Wanderer's Violet Cloak
@@ -598,7 +598,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 10.1.5.50747", REMOVED_10_1_7 } }, {
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 } }, {
 			n(MONTHLY_REWARD, {
 				i(190797, {	-- Ensemble: Bones of the Bloodhunter
 					i(190793),	-- Bloodhunter Footwraps
@@ -665,29 +665,29 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190576, {	-- Ensemble: Vagabonds Azure Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190541), -- Vagabond's Azure Cape
-						i(190572), -- Vagabond's Azure Hood
+						i(190541),	-- Vagabond's Azure Cape
+						i(190572),	-- Vagabond's Azure Hood
 					},
 				}),
 				i(190851, {	-- Ensemble: Vagabonds Crimson Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190827), -- Vagabonds Crimson Cape
-						i(190828), -- Vagabonds Crimson Hood
+						i(190827),	-- Vagabonds Crimson Cape
+						i(190828),	-- Vagabonds Crimson Hood
 					},
 				}),
 				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190573), -- Wanderer's Azure Cloak
-						i(190542), -- Wanderer's Azure Scarf
+						i(190573),	-- Wanderer's Azure Cloak
+						i(190542),	-- Wanderer's Azure Scarf
 					},
 				}),
 				i(190850, {	-- Ensemble: Wanderers Crimson Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190825), -- Wanderer's Crimson Cloak
-						i(190826), -- Wanderer's Crimson Scarf
+						i(190825),	-- Wanderer's Crimson Cloak
+						i(190826),	-- Wanderer's Crimson Scarf
 					},
 				}),
 				i(189898, {	-- Fury of the Firelord
@@ -713,9 +713,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, "removed 10.1.7.51536" } }, {
+		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_10_1_7 } }, {
 			n(MONTHLY_REWARD, {
-				i(190168), -- Crusty Crawler (MOUNT!)
+				i(190168),	-- Crusty Crawler (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
 				i(208045, {	-- Slyvy (PET!) (650)
@@ -732,7 +732,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208177, {	-- Armaments of the Light Avenger
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = PALADIN,
-					["groups"] = {
+					["g"] = {
 						i(208166),	-- Club of of the Light Avenger
 						i(208165),	-- Hammer of the Light Avenger
 						i(208164),	-- Kite of the Light Avenger
@@ -741,7 +741,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208179, {	-- Blood Onyx Blades
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = ROGUE,
-					["groups"] = {
+					["g"] = {
 						i(208174),	-- Blood Onyx Impaler
 						i(208173),	-- Blood Onyx Serrated Edge
 						i(208175),	-- Blood Onyx Shortblade
@@ -750,7 +750,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208405, {	-- Blood Onyx Uniform
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = ROGUE,
-					["groups"] = {
+					["g"] = {
 						i(208404),	-- Blood Onyx Buckle
 						i(208402),	-- Blood Onyx Cowl
 						i(208403),	-- Blood Onyx Pauldrons
@@ -764,7 +764,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(190799, {	-- Ensemble: Swashbuckling Buccaneer's Slops
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
-					["groups"] = {
+					["g"] = {
 						i(190786),	-- Swashbuckling Buccaneer's Boots
 						i(190785),	-- Swashbuckling Buccaneer's Breeches
 						i(190783),	-- Swashbuckling Buccaneer's Tunic
@@ -773,14 +773,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(206321, {	-- Ensemble: Vagabonds Sunny Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["groups"] = {
+					["g"] = {
 						i(206277),	-- Vagabond's Sunny Cape
 						i(206288),	-- Vagabond's Sunny Hood
 					},
 				}),
 				i(206332, {	-- Ensemble: Wanderers Sunny Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["groups"] = {
+					["g"] = {
 						i(206310),	-- Wanderer's Sunny Cloak
 						i(206300),	-- Wanderer's Sunny Scarf
 					},
@@ -806,7 +806,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208176, {	-- Plate of the Light Avenger
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = PALADIN,
-					["groups"] = {
+					["g"] = {
 						i(208163),	-- Cinch of the Light Avenger
 						i(208161),	-- Helm of the Light Avenger
 						i(208162),	-- Shoulderguards of the Light Avenger
@@ -815,7 +815,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208178, {	-- Secrets of the Unnamed Cult
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = PRIEST,
-					["groups"] = {
+					["g"] = {
 						i(208167),	-- Libram of the Unnamed Cult
 						i(208169),	-- Scepter of the Unnamed Cult
 						i(208171),	-- Staff of the Unnamed Cult
@@ -824,7 +824,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208400, {	-- Silk of the Unnamed Cult
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = PRIEST,
-					["groups"] = {
+					["g"] = {
 						i(208397),	-- Hood of the Unnamed Cult
 						i(208398),	-- Mantle of the Unnamed Cult
 						i(208399),	-- Sash of the Unnamed Cult
@@ -838,9 +838,9 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { "removed 10.1.7.51536", REMOVED_10_2_0 } }, {
+		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { REMOVED_10_1_7, REMOVED_10_2_0 } }, {
 			n(MONTHLY_REWARD, {
-				i(208598), -- Eve's Ghastly Rider (MOUNT!)
+				i(208598),	-- Eve's Ghastly Rider (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
 				i(49693, {	-- Lil' KT (PET!)
@@ -861,7 +861,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208663, {	-- Ashamane's Vestment of Rebirth
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = DRUID,
-					["groups"] = {
+					["g"] = {
 						i(208622),	-- Ashamane's Fangs of Rebirth
 						i(208620),	-- Ashamane's Helm of Rebirth
 						i(208621),	-- Ashamane's Spaulders of Rebirth
@@ -870,7 +870,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208664, {	-- Ashamane's Blessings of Rebirth
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = DRUID,
-					["groups"] = {
+					["g"] = {
 						i(208623),	-- Ashamane's Blade of Rebirth
 						i(208624),	-- Ashamane's Claws of Rebirth
 						i(208625),	-- Ashamane's Crescent of Rebirth
@@ -930,7 +930,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208667, {	-- Nathreza Blasphemer's Flames
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = DEMONHUNTER,
-					["groups"] = {
+					["g"] = {
 						i(208633),	-- Nathreza Blasphemer's Horns
 						i(208634),	-- Nathreza Blasphemer's Mantle
 						i(208635),	-- Nathreza Blasphemer's Shard
@@ -939,7 +939,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208668, {	-- Nathreza Blasphemer's Glaives
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = DEMONHUNTER,
-					["groups"] = {
+					["g"] = {
 						i(208637),	-- Nathreza Blasphemer's Warglaive
 						i(208636),	-- Nathreza Blasphemer's Wingglaive
 					},
@@ -953,7 +953,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208665, {	-- Webbed Saronite Exoskeleton
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = DEATHKNIGHT,
-					["groups"] = {
+					["g"] = {
 						i(208629),	-- Webbed Saronite Girdle
 						i(208627),	-- Webbed Saronite Headguard
 						i(208628),	-- Webbed Saronite Spaulders
@@ -962,7 +962,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208666, {	-- Webbed Saronite Weaponry
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = DEATHKNIGHT,
-					["groups"] = {
+					["g"] = {
 						i(208632),	-- Webbed Saronite Devourer
 						i(208631),	-- Webbed Saronite Eviscerator
 						i(208630),	-- Webbed Saronite Greataxe
@@ -976,7 +976,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, "removed 10.2.0.52301"} }, {
+		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0} }, {
 			n(MONTHLY_REWARD, {
 				i(208943, {	-- Arsenal: Cosmic Weapons Cache
 					i(208939),	-- Gorridar, Darkblade of the Sunderer
@@ -1034,7 +1034,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208673, {	-- Instruments of the Alluring Call
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = WARLOCK,
-					["groups"] = {
+					["g"] = {
 						i(208661),	-- Caduceus of the Alluring Call
 						i(208660),	-- Effigy of the Alluring Call
 						i(208659),	-- Flayer of the Alluring Call
@@ -1043,7 +1043,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208672, {	-- Jewels of the Alluring Call
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = WARLOCK,
-					["groups"] = {
+					["g"] = {
 						i(208657),	-- Chains of the Alluring Call
 						i(208655),	-- Voice of the Alluring Call
 						i(208656),	-- Wings of the Alluring Call
@@ -1070,7 +1070,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208671, {	-- Possessed Watcher Arsenal
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = MONK,
-					["groups"] = {
+					["g"] = {
 						i(208651),	-- Possessed Watcher Cord
 						i(208648),	-- Possessed Watcher Kabuto
 						i(208650),	-- Possessed Watcher Pauldrons
@@ -1079,7 +1079,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208669, {	-- Possessed Watcher Guide
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = MONK,
-					["groups"] = {
+					["g"] = {
 						i(208653),	-- Possessed Watcher Bloom
 						i(208652),	-- Possessed Watcher Fan
 						i(208654),	-- Possessed Watcher Keg
@@ -1094,7 +1094,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208675, {	-- Savage Champion’s Aggression
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 					["classes"] = WARRIOR,
-					["groups"] = {
+					["g"] = {
 						i(208643),	-- Savage Champion's Disemboweler
 						i(208642),	-- Savage Champion's Gladius
 						i(208641),	-- Savage Champion's Thorns
@@ -1103,7 +1103,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(208674, {	-- Savage Champion’s Trophies
 					["cost"] = {{"c", TRADERS_TENDER, 450}},
 					["classes"] = WARRIOR,
-					["groups"] = {
+					["g"] = {
 						i(208640),	-- Savage Champion's Belt
 						i(208639),	-- Savage Champion's Tusks
 						i(208638),	-- Savage Champion's Vision
@@ -1123,7 +1123,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52301", "removed 10.2.0.52649"} }, {
+		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0} }, {
 			n(MONTHLY_REWARD, {
 				i(190925),	-- Buttercup (PET!)
 			}),
@@ -1193,7 +1193,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(210883, {	-- Ensemble: Scarlet Zealots Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 550}},
-					["groups"] = {
+					["g"] = {
 						i(190444),	-- Scarlet Zealots Cassock
 						i(190427),	-- Scarlet Zealots Cloak
 						i(207029),	-- Scarlet Zealots Heater Shield
@@ -1202,29 +1202,29 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(190851, {	-- Ensemble: Vagabonds Crimson Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190827), -- Vagabonds Crimson Cape
-						i(190828), -- Vagabonds Crimson Hood
+						i(190827),	-- Vagabonds Crimson Cape
+						i(190828),	-- Vagabonds Crimson Hood
 					},
 				}),
 				i(190922, {	-- Ensemble: Vagabond's Snowy Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190882), -- Vagabond's Snowy Cape
-						i(190884), -- Vagabond's Snowy Hood
+						i(190882),	-- Vagabond's Snowy Cape
+						i(190884),	-- Vagabond's Snowy Hood
 					},
 				}),
 				i(190850, {	-- Ensemble: Wanderers Crimson Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190825), -- Wanderer's Crimson Cloak
-						i(190826), -- Wanderer's Crimson Scarf
+						i(190825),	-- Wanderer's Crimson Cloak
+						i(190826),	-- Wanderer's Crimson Scarf
 					},
 				}),
 				i(190921, {	-- Ensemble: Wanderer's Snowy Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(190883), -- Wanderer's Snowy Cloak
-						i(190885), -- Wanderer's Snowy Scarf
+						i(190883),	-- Wanderer's Snowy Cloak
+						i(190885),	-- Wanderer's Snowy Scarf
 					},
 				}),
 				i(211130, {	-- Errant Crusaders Helm
@@ -1306,7 +1306,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		})),
 	}),
 	n(YEAR2024, {
-		n(JANUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.0.52649", "removed 10.2.5.53162"} }, {
+		n(JANUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_5} }, {
 			n(MONTHLY_REWARD, {
 				i(211002),	-- Golden Mobile Timepiece
 			}),
@@ -1347,7 +1347,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(200925, {	-- Ensemble: Solemn Watchman's Garb
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
-					["groups"] = {
+					["g"] = {
 						i(190694),	-- Solemn Watchman's Belt
 						i(190695),	-- Solemn Watchman's Boots
 						i(190872),	-- Solemn Watchman's Cuirass
@@ -1359,14 +1359,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(206321, {	-- Ensemble: Vagabonds Sunny Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["groups"] = {
+					["g"] = {
 						i(206277),	-- Vagabond's Sunny Cape
 						i(206288),	-- Vagabond's Sunny Hood
 					},
 				}),
 				i(206332, {	-- Ensemble: Wanderers Sunny Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["groups"] = {
+					["g"] = {
 						i(206310),	-- Wanderer's Sunny Cloak
 						i(206300),	-- Wanderer's Sunny Scarf
 					},
@@ -1397,7 +1397,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(211122, {	-- Ensemble: Wastewander Tracker's Kit
 					["cost"] = {{"c", TRADERS_TENDER, 850}},
-					["groups"] = {
+					["g"] = {
 						i(211121),	-- Wastewander Tracker's Bindings
 						i(211117),	-- Wastewander Tracker's Boots
 						i(211115),	-- Wastewander Tracker's Breastplate
@@ -1421,7 +1421,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { "added 10.2.5", "removed 10.2.5"} }, {
+		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5} }, {
 			-- removed 10.2.5.53495
 			n(MONTHLY_REWARD, {
 				i(212220, {	-- Ensemble: Love Witch's Attire
@@ -1488,15 +1488,15 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(202170, {	-- Ensemble: Vagabond's Rosy Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(202168), -- Vagabond's Rosy Cape
-						i(202169), -- Vagabond's Rosy Hood
+						i(202168),	-- Vagabond's Rosy Cape
+						i(202169),	-- Vagabond's Rosy Hood
 					},
 				}),
 				i(202167, {	-- Ensemble: Wanderer's Rosy Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 					["g"] = {
-						i(202166), -- Wanderer's Rosy Cloak
-						i(202165), -- Wanderer's Rosy Scarf
+						i(202166),	-- Wanderer's Rosy Cloak
+						i(202165),	-- Wanderer's Rosy Scarf
 					},
 				}),
 				i(190091, {	-- Fanciful Corsage
@@ -1555,8 +1555,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(MARCH, bubbleDownSelf({ ["timeline"] = { "added 10.2.5.53495", "removed 10.2.6" } }, {
-			-- removed 10.2.5.53913
+		n(MARCH, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 } }, {
 			n(MONTHLY_REWARD, {
 				i(211432),	-- Teele (PET!)
 			}),
@@ -1583,7 +1582,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			filter(COSMETIC, {
 				i(212577, {	-- Arsenal: Skyborn Blades
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
-					["groups"] = {
+					["g"] = {
 						i(212578),	-- Radiant Skyborn Blade
 						i(212579),	-- Skyborn Blade
 					},
@@ -1611,14 +1610,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(206322, {	-- Ensemble: Vagabond's Aquatic Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["groups"] = {
+					["g"] = {
 						i(206289),	-- Vagabond's Aquatic Hood
 						i(206278),	-- Vagabond's Aquatic Cape
 					},
 				}),
 				i(206333, {	-- Ensemble: Wanderer's Aquatic Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["groups"] = {
+					["g"] = {
 						i(206299),	-- Wanderer's Aquatic Scarf
 						i(206311),	-- Wanderer's Aquatic Cloak
 					},
@@ -1655,7 +1654,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(210078, {	-- Sky-Captain's Formal Attire
 					["cost"] = {{"c", TRADERS_TENDER, 800}},
-					["groups"] = {
+					["g"] = {
 						i(210066),	-- Sky-Captain's Formal Boots
 						i(210071),	-- Sky-Captain's Formal Cape
 						i(210067),	-- Sky-Captain's Formal Coat
@@ -1674,7 +1673,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(APRIL, bubbleDownSelf({ ["timeline"] = { "added 10.2.6"} }, {
+		n(APRIL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
 			n(MONTHLY_REWARD, {
 				i(210409),	-- Aura (PET!)
 			}),
@@ -1732,7 +1731,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(217381, {	-- Ensemble: Fearless Buccaneer's Slops
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
-					["groups"] = {
+					["g"] = {
 						i(217380),	-- Fearless Buccaneer's Boots
 						i(217379),	-- Fearless Buccaneer's Breeches
 						i(217378),	-- Fearless Buccaneer's Sash
@@ -1741,7 +1740,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(213084, {	-- Ensemble: Spring Reveler's Lavender Apparel
 					["cost"] = {{"c", TRADERS_TENDER, 300}},
-					["groups"] = {
+					["g"] = {
 						i(212702),	-- Spring Reveler's Lavender Attire
 						i(212703),	-- Spring Reveler's Lavender Belt
 						i(212704),	-- Spring Reveler's Lavender Boots
@@ -1750,14 +1749,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(212940, {	-- Ensemble: Spring Reveler's Lavender Collection
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
-					["groups"] = {
+					["g"] = {
 						i(212712),	-- Spring Reveler's Lavender Dress
 						i(212716),	-- Spring Reveler's Lavender Sun Hat
 					},
 				}),
 				i(190799, {	-- Ensemble: Swashbuckling Buccaneer's Slops
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
-					["groups"] = {
+					["g"] = {
 						i(190786),	-- Swashbuckling Buccaneer's Boots
 						i(190785),	-- Swashbuckling Buccaneer's Breeches
 						i(190783),	-- Swashbuckling Buccaneer's Tunic
@@ -1766,14 +1765,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(206326, {	-- Ensemble: Vagabond's Camo Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["groups"] = {
+					["g"] = {
 						i(206282),	-- Vagabond's Camo Cape
 						i(206293),	-- Vagabond's Camo Hood
 					},
 				}),
 				i(206337, {	-- Ensemble: Wanderer's Camo Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["groups"] = {
+					["g"] = {
 						i(206304),	-- Wanderer's Camo Scarf
 						i(206315),	-- Wanderer's Camo Cloak
 					},
@@ -1831,8 +1830,241 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
+		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_7 } }, { -- 10.2.7.54904
+			n(MONTHLY_REWARD, {
+				i(212613),	-- Wings of the Amber Monarch
+			}),
+			filter(BATTLE_PETS, {
+				i(190604, {	-- Buzzworth (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+				i(217043, {	-- Pokee (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+			}),
+			filter(MOUNTS, {
+				i(192766, {	-- Amber Skitterfly (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+				i(54069, {	-- Blazing Hippogryph (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 800}},
+				}),
+				i(206976, {	-- Royal Swarmer (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 800}},
+				}),
+			}),
+			filter(TOYS, {
+			}),
+			filter(COSMETIC, {
+				i(190164, {	-- Arsenal: Blades of Elune
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(190093),	-- Elune's Fury
+						i(190094),	-- Elune's Wrath
+					},
+				}),
+				i(213396, {	-- Classic Midnight Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(212623, {	-- Dueler's Brick Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(212628, {	-- Dueler's Midnight Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(213394, {	-- Ebony Crown of the Red Rose
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(206325, {	-- Ensemble: Vagabond's Brick Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(206281),	-- Vagabond's Brick Cape
+						i(206292),	-- Vagabond's Brick Hood
+					},
+				}),
+				i(190166, {	-- Ensemble: Vagabond's Midnight Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(190376),	-- Vagabond's Midnight Cape
+						i(190150),	-- Vagabond's Midnight Hood
+					},
+				}),
+				i(206336, {	-- Ensemble: Wanderer's Brick Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(206314),	-- Wanderer's Brick Cloak
+						i(206303),	-- Wanderer's Brick Scarf
+					},
+				}),
+				i(190377, {	-- Ensemble: Wanderer's Midnight Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+						i(190149),	-- Wanderer's Midnight Cloak
+						i(190151),	-- Wanderer's Midnight Scarf
+					},
+				}),
+				i(189896, {	-- Forsaken Cresset
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(213395, {	-- Gloves of the Midnight Soiree
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(213393, {	-- Guise of the Golden Masquerade
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190070, {	-- Highborne Scholar's Gloves
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(213065, {	-- Lavish Floral Edge
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(213068, {	-- Lavish Floral Stalk
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(190674, {	-- Leaky Bucket
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(211071, {	-- Lively Treads of the Kalu'ak
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(213062, {	-- Paradise's Golden Axe
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(190066, {	-- Primeval Maul
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(190201, {	-- Sin'dorei Assassin's Shroud
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(213071, {	-- Sunny Floral Staff
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(213075, {	-- Sunny Bow-quet
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(210855, {	-- Trader's Brick Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190844, {	-- Valarjar Champion's Greatsword
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+			}),
+		})),
+		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.99999" } }, {
+			n(MONTHLY_REWARD, {
+				i(220692),	-- X-treme Water Blaster Display (TOY!)
+			}),
+			filter(BATTLE_PETS, {
+				i(223145, {	-- Marrlok (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+			}),
+			filter(MOUNTS, {
+				i(221814, {	-- Pearlescent Goblin Wave Shredder (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 700}},
+				}),
+				i(23720, {	-- Riding Turtle (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 700}},
+				}),
+			}),
+			filter(TOYS, {
+				i(218112, {	-- Colorful Beach Chair (TOY!)
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(212524, {	-- Delicate Crimson Parasol (TOY!)
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+			}),
+			filter(COSMETIC, {
+				iensemble(223004, {	-- Arsenal: Blazing Felfire Armaments
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				iensemble(221542, {	-- Ensemble: Sunny Tropical Beachwear
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				iensemble(222961, {	-- Ensemble: Sunny Tropical Swimwear
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				i(220357, {	-- Water Blaster B.L.
+					["cost"] = {{"c", TRADERS_TENDER, 330}},
+				}),
+				i(221529, {	-- Tropical Sunrise Mrgl Floater
+					["cost"] = {{"c", TRADERS_TENDER, 220}},
+				}),
+				i(221834, {	-- Tropical Sunrise Sunshade
+					["cost"] = {{"c", TRADERS_TENDER, 220}},
+				}),
+				i(221829, {	-- Tropical Sunrise Halter Top
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(221525, {	-- Tropical Sunrise Shirt
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(221830, {	-- Tropical Sunrise Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(221526, {	-- Tropical Sunrise Trunks
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(221794, { -- Classic Carrot Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190849, { -- Forgemaster's Gavel
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(210863, { -- Trader's Sunny Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(212619, { -- Dueler's Carrot Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(212614, { -- Dueler's Sunny Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(221809, { -- Churning Sands Treads
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(221810, { -- Churning Sands Gloves
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(190860, { -- Initiate's Bo
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(221831, { -- Tropical Sunrise Beads
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(221832, { -- Tropical Sunrise Airy Sandals
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(221833, { -- Tropical Sunrise Sash
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(221527, { -- Tropical Sunrise Wristwraps
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(221528, { -- Tropical Sunrise Sandals
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(190689, {	-- Corrupted Bladefist
+					["cost"] = {{"c", TRADERS_TENDER, 525}},
+				}),
+				i(210866, {	-- Blademaster's Suntouched Stones
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				iensemble(202178, {	-- Ensemble: Vagabond's Carrot Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(202179, {	-- Ensemble: Wanderer's Carrot Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190205, {	-- Sharpened Shank
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+			}),
+		})),
 	}),
 }));
+
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_5 }, ["u"] = NEVER_IMPLEMENTED, }, {	-- Is this tagged with NEVER_IMPLEMENTED incorrectly?
 		-- These don't trigger when using ensembles, but they are listed on Wowhead
@@ -1943,9 +2175,6 @@ root(ROOTS.NeverImplemented, {
 					i(190160),	-- Twisted Arcanum Trousers
 					i(190193),	-- Twisted Arcanum Tunic
 				}),
-				n(WEAPONS, {
-					i(190674),	-- Leaky Bucket
-				}),
 			})),
 
 			-- 10.0.5
@@ -1954,7 +2183,6 @@ root(ROOTS.NeverImplemented, {
 					i(190672),	-- Deathguard Acolyte's Cloak
 					i(189869),	-- Distinguished Warcloak
 					i(190068),	-- Emerald Drape
-					i(190201),	-- Sin'dorei Assassin's Shroud
 				}),
 				n(SETS, {
 					i(190575),	-- Ensemble: Chains of the Honored Valarjar
@@ -1965,7 +2193,6 @@ root(ROOTS.NeverImplemented, {
 					i(190435),	-- Highborne Scholar's Belt
 					i(190437),	-- Highborne Scholar's Collar
 					i(190787),	-- Highborne Scholar's Cuffs
-					i(190070),	-- Highborne Scholar's Gloves
 					i(190815),	-- Highborne Scholar's Leggings
 					i(190555),	-- Highborne Scholar's Robe
 					i(190868),	-- Highborne Scholar's Scrollmantle
@@ -1974,7 +2201,6 @@ root(ROOTS.NeverImplemented, {
 					------ Tidecaller's Set ------
 					i(190700),	-- Tidecaller's Boots
 					i(190432),	-- Tidecaller's Bracers
-					i(190806),	-- Tidecaller's Cinch
 					i(190440),	-- Tidecaller's Crown
 					i(190067),	-- Tidecaller's Grips
 					i(190072),	-- Tidecaller's Hauberk
@@ -2048,7 +2274,6 @@ root(ROOTS.NeverImplemented, {
 					i(189883),	-- Lordaeron Sentry's Bulwark
 					i(189886),	-- Might of the Titanforged
 					i(190687),	-- Painted Warblade
-					i(190066),	-- Primeval Maul
 					i(190148),	-- Ravencrest's Razor
 					i(189872),	-- Shattered Krokul Edge
 					i(190079),	-- Smoldering Forgeblade
@@ -2076,11 +2301,6 @@ root(ROOTS.NeverImplemented, {
 				n(SETS, {
 					i(200917),	-- Ensemble: Tidecaller's Chainmail
 
-					------ Vagabond's Brick Threads ------
-					i(206325),	-- Ensemble: Vagabond's Brick Threads
-					i(206281),	-- Vagabond's Brick Cape
-					i(206292),	-- Vagabond's Brick Hood
-
 					------ Vagabond's Cloudy Threads ------
 					i(206328),	-- Ensemble: Vagabond's Cloudy Threads
 					i(206284),	-- Vagabond's Cloudy Cape
@@ -2105,11 +2325,6 @@ root(ROOTS.NeverImplemented, {
 					i(206323),	-- Ensemble: Vagabond's Plum Threads
 					i(206279),	-- Vagabond's Plum Cape
 					i(206290),	-- Vagabond's Plum Hood
-
-					------ Wanderer's Brick Trappings ------
-					i(206336),	-- Ensemble: Wanderer's Brick Trappings
-					i(206314),	-- Wanderer's Brick Cloak
-					i(206303),	-- Wanderer's Brick Scarf
 
 					------ Wanderer's Cloudy Trappings ------
 					i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
@@ -2146,11 +2361,9 @@ root(ROOTS.NeverImplemented, {
 				n(ARMOR, {
 					i(211069),	-- Azure Treads of the Kalu'ak
 					i(210867),	-- Blademaster's Lively Stones
-					i(211071),	-- Lively Treads of the Kalu'ak
 					i(210999),	-- Ruby Faced Mobile Timepiece
 					i(211001),	-- Sapphire Faced Mobile Timepiece
 					i(210849),	-- Trader's Azure Sarong
-					i(210855),	-- Trader's Brick Sarong
 					i(210854),	-- Trader's Camo Sarong
 					i(210853),	-- Trader's Deep Sarong
 					i(210856),	-- Trader's Faded Sarong
@@ -2158,7 +2371,6 @@ root(ROOTS.NeverImplemented, {
 					i(210848),	-- Trader's Midnight Sarong
 					i(210859),	-- Trader's Plum Sarong
 					i(210862),	-- Trader's Snowy Sarong
-					i(210863),	-- Trader's Sunny Sarong
 				}),
 				n(WEAPONS, {
 					i(190875),	-- Chilled Touch of the Condemned
@@ -2174,17 +2386,13 @@ root(ROOTS.NeverImplemented, {
 					i(190847),	-- Deathmantle Assassin's Barb
 					i(190090),	-- Dessicated Bouquet
 					i(212627),	-- Dueler's Azure Shoulder Cape
-					i(212623),	-- Dueler's Brick Shoulder Cape
 					i(212622),	-- Dueler's Camo Shoulder Cape
-					i(212619),	-- Dueler's Carrot Shoulder Cape
 					i(212617),	-- Dueler's Crimson Shoulder Cape
 					i(212624),	-- Dueler's Deep Shoulder Cape
 					i(212620),	-- Dueler's Faded Shoulder Cape
 					i(212625),	-- Dueler's Grassy Shoulder Cape
-					i(212628),	-- Dueler's Midnight Shoulder Cape
 					i(212618),	-- Dueler's Plum Shoulder Cape
 					i(212615),	-- Dueler's Snowy Shoulder Cape
-					i(212614),	-- Dueler's Sunny Shoulder Cape
 					i(190893),	-- Jeweled Valkyrion Cape
 					i(190688),	-- Silvered Helm of Righteousness
 					i(212705),	-- Spring Reveler's Cornsilk Attire
@@ -2193,7 +2401,6 @@ root(ROOTS.NeverImplemented, {
 					i(212713),	-- Spring Reveler's Cornsilk Dress
 					i(212987),	-- Spring Reveler's Cornsilk Pants
 					i(212717),	-- Spring Reveler's Cornsilk Sun Hat
-					i(212613),	-- Wings of the Amber Monarch
 					i(212612),	-- Wings of the Amethyst Monarch
 					i(212610),	-- Wings of the Emerald Monarch
 					i(212611),	-- Wings of the Tourmaline Monarch
@@ -2237,16 +2444,11 @@ root(ROOTS.NeverImplemented, {
 					i(190908),	-- Devourer's Skullscythe
 					i(213073),	-- Faded Floral Staff
 					i(190816),	-- Forgehand's "Stable" Fuel Cell
-					i(190849),	-- Forgemaster's Gavel
 					i(213107),	-- Gladiator's Ragged Greatsword
 					i(213106),	-- Gladiator's Serrated Greatsword
-					i(190860),	-- Initiate's Bo
 					i(213077),	-- Lavender Bow-quet
-					i(213065),	-- Lavish Floral Edge
-					i(213068),	-- Lavish Floral Stalk
 					i(190822),	-- Mo'arg Enforcer's Halberd
 					i(213076),	-- Orchid Bow-quet
-					i(213062),	-- Paradise's Golden Axe
 					i(213063),	-- Paradise's Ruby Axe
 					i(213064),	-- Paradise's Violet Axe
 					i(213070),	-- Pristine Floral Stalk
@@ -2258,10 +2460,7 @@ root(ROOTS.NeverImplemented, {
 					i(190891),	-- Shabby Battleaxe
 					i(190903),	-- Soulburner Warscythe
 					i(190818),	-- Steamwheedle Artifact Extractor
-					i(213075),	-- Sunny Bow-quet
-					i(213071),	-- Sunny Floral Staff
 					i(213161),	-- Titan Thunderbow
-					i(190844),	-- Valarjar Champion's Greatsword
 					i(213067),	-- Violet Floral Edge
 					i(190902),	-- Will of the Titanforged
 					i(190889),	-- Woodsman's Hatchet
@@ -2273,58 +2472,5 @@ root(ROOTS.NeverImplemented, {
 			i(190539),	-- Coral-Stalker Waveray (MOUNT!)
 			i(137615),	-- Molten Flarecore (MOUNT!)
 		}),
-		--[[
-		i(190674, { -- Leaky Bucket
-			["cost"] = {{"c", TRADERS_TENDER, 75}},
-		}),
-		i(190844, { -- Valarjar Champion's Greatsword
-			["cost"] = {{"c", TRADERS_TENDER, 200}},
-		}),
-		i(206325, { -- Ensemble: Vagabond's Brick Threads
-			["cost"] = {{"c", TRADERS_TENDER, 100}},
-		}),
-		i(206336, { -- Ensemble: Wanderer's Brick Trappings
-			["cost"] = {{"c", TRADERS_TENDER, 100}},
-		}),
-		i(213062, { -- Paradise's Golden Axe
-			["cost"] = {{"c", TRADERS_TENDER, 300}},
-		}),
-		i(213065, { -- Lavish Floral Edge
-			["cost"] = {{"c", TRADERS_TENDER, 300}},
-		}),
-		i(213068, { -- Lavish Floral Stalk
-			["cost"] = {{"c", TRADERS_TENDER, 300}},
-		}),
-		i(213071, { -- Sunny Floral Staff
-			["cost"] = {{"c", TRADERS_TENDER, 300}},
-		}),
-		i(213075, { -- Sunny Bow-quet
-			["cost"] = {{"c", TRADERS_TENDER, 300}},
-		}),
-		i(213106, { -- Gladiator's Serrated Greatsword
-			["cost"] = {{"c", TRADERS_TENDER, 275}},
-		}),
-		i(213107, { -- Gladiator's Ragged Greatsword
-			["cost"] = {{"c", TRADERS_TENDER, 275}},
-		}),
-		i(213393, { -- Guise of the Golden Masquerade
-			["cost"] = {{"c", TRADERS_TENDER, 200}},
-		}),
-		i(213394, { -- Ebony Crown of the Red Rose
-			["cost"] = {{"c", TRADERS_TENDER, 250}},
-		}),
-		i(213395, { -- Gloves of the Midnight Soiree
-			["cost"] = {{"c", TRADERS_TENDER, 100}},
-		}),
-		i(213396, { -- Classic Midnight Tabard
-			["cost"] = {{"c", TRADERS_TENDER, 100}},
-		}),
-		i(217043, { -- Pokee
-			["cost"] = {{"c", TRADERS_TENDER, 350}},
-		}),
-		i(54069, { -- Blazing Hippogryph
-			["cost"] = {{"c", TRADERS_TENDER, 600}},
-		}),
-		--]]
 	})),
 });

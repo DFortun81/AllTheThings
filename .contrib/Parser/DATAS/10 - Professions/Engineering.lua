@@ -880,6 +880,10 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 77.4, 14.2, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167041),	-- Coiled Current Culler (QI!)
+					i(167037),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+				},
 			}),
 			q(55031, {	-- It's Scrap Work... [H]
 				["description"] = "Requires 150 Zandalari Engineering.",
@@ -887,6 +891,10 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 45.1, 40.6, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167041),	-- Coiled Current Culler (QI!)
+					i(167037),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+				},
 			}),
 			q(53947, {	-- In the Dunes [A]
 				["sourceQuests"] = { 55028 },	-- It's Scrap Work... [A]
@@ -910,6 +918,9 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(164770),	-- Faithless Lightning Rod (QI!)
+				},
 			}),
 			q(53806, {	-- Heavy is the Head
 				["sourceQuests"] = {
@@ -938,6 +949,9 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["provider"] = { "n", 145131 },	-- Dataguru Gryzix
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(166881),	-- Gryzix's Toolbox (QI!)
+				},
 			}),
 			q(53948, {	-- Vengeful Venture [A]
 				["sourceQuests"] = { 53848 },	-- Tooling Around Vol'dun
@@ -945,6 +959,11 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(164919),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+					i(166886),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+					i(164773),	-- Gryzix's Decoder (QI!)
+				},
 			}),
 			q(53833, {	-- Vengeful Venture [H]
 				["sourceQuests"] = { 53848 },	-- Tooling Around Vol'dun
@@ -952,6 +971,11 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["coord"] = { 26.3, 47.3, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(164919),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+					i(166886),	-- Encrypted Ub3r-Spanner Schematic (QI!)
+					i(164773),	-- Gryzix's Decoder (QI!)
+				},
 			}),
 			q(53949, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Ub3r-Spanner [A]
 				["sourceQuests"] = { 53948 },	-- Vengeful Venture [A]
@@ -1443,32 +1467,32 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Crafted Heavy Shot",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 3930,
 				},
 				{
 					["name"] = "Crafted Light Shot",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 3920,
 				},
 				{
 					["name"] = "Crafted Solid Shot",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 3947,
 				},
 				{
 					["name"] = "Hi-Impact Mithril Slugs",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 12596,
 				},
 				{
 					["name"] = "Mithril Gyro-Shot",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 12621,
 				},
 				{
 					["name"] = "Thorium Shells",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 19800,
 				},
 			},
@@ -1546,7 +1570,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Hyper-Radiant Flame Reflector",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 23081,
 				},
 				{
@@ -1594,7 +1618,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Mobile Alarm",
-					["timeline"] = { "created 1.12.1.6898" },	-- Never Implemented
+					["timeline"] = { CREATED_1_12_1 },	-- Never Implemented
 					["recipeID"] = 12900,
 				},
 				{
@@ -1619,7 +1643,7 @@ profession(ENGINEERING, {
 				-- #endif
 				{
 					["name"] = "Salt Shaker",
-					["timeline"] = { "deleted 6.0.2" },
+					["timeline"] = { DELETED_6_0_2 },
 					["recipeID"] = 19567,
 				},
 				-- #if SEASON_OF_DISCOVERY
@@ -1634,7 +1658,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Steam Tonk Controller",
-					["timeline"] = { "created 1.10.0", "added 2.0.1.6180" },
+					["timeline"] = { CREATED_1_10_0, ADDED_2_0_1 },
 					["recipeID"] = 28327,
 				},
 				{
@@ -1936,7 +1960,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Flawless Arcanite Rifle",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19833,
 				},
 				{
@@ -1988,12 +2012,12 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Copper Modulator",
-					["timeline"] = { "deleted 4.3.0" },
+					["timeline"] = { DELETED_4_3_0 },
 					["recipeID"] = 3926,
 				},
 				{
 					["name"] = "Copper Tube",
-					["timeline"] = { "deleted 4.3.0" },
+					["timeline"] = { DELETED_4_3_0 },
 					["recipeID"] = 3924,
 				},
 				{
@@ -2006,7 +2030,7 @@ profession(ENGINEERING, {
 				},
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Fused Wiring",
-					["timeline"] = { "added 2.1.0" },
+					["timeline"] = { ADDED_2_1_0 },
 					["recipeID"] = 39895,
 				}),
 				{
@@ -2124,7 +2148,7 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Fel Iron Shells",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 30346,
 				},
 			},
@@ -2136,12 +2160,12 @@ profession(ENGINEERING, {
 			["groups"] = {
 				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Adamantite Arrow Maker",
-					["timeline"] = { "added 2.1.0.6692", "deleted 4.0.1" },
+					["timeline"] = { ADDED_2_1_0, DELETED_4_0_1 },
 					["recipeID"] = 43676,
 				}),
 				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Adamantite Shell Machine",
-					["timeline"] = { "added 2.1.0.6692", "deleted 4.0.1" },
+					["timeline"] = { ADDED_2_1_0, DELETED_4_0_1 },
 					["recipeID"] = 30347,
 				}),
 				{
@@ -2206,7 +2230,7 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Blue Smoke Flare",
-					["timeline"] = { "created 2.0.1" },	-- Never Implemented :(
+					["timeline"] = { CREATED_2_0_1 },	-- Never Implemented :(
 					["recipeID"] = 30343,
 				},
 				{
@@ -2219,7 +2243,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Red Smoke Flare",
-					["timeline"] = { "created 2.0.1" },	-- Never Implemented :(
+					["timeline"] = { CREATED_2_0_1 },	-- Never Implemented :(
 					["recipeID"] = 30342,
 				},
 				{
@@ -2448,7 +2472,7 @@ profession(ENGINEERING, {
 				},
 				applyclassicphase(TBC_PHASE_TWO, {
 					["name"] = "Gyro-balanced Khorium Destroyer",
-					["timeline"] = { "added 2.1.0.6655" },
+					["timeline"] = { ADDED_2_1_0 },
 					["recipeID"] = 41307,
 				}),
 				{
@@ -2466,12 +2490,12 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Mammoth Cutters",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 56474,
 				},
 				{
 					["name"] = "Saronite Razorheads",
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["recipeID"] = 56475,
 				},
 			},
@@ -2495,12 +2519,12 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Hand-Mounted Pyro Rocket",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 54998,
 				},
 				{
 					["name"] = "Hyperspeed Accelerators",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 54999,
 				},
 				{
@@ -2513,12 +2537,12 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Reticulated Armor Webbing",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 63770,
 				},
 				{
 					["name"] = "Springy Arachnoweave",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 63765,
 				},
 			},
@@ -3228,6 +3252,9 @@ cacheRecipes(_.Professions);
 -- Item Recipe Database,
 local itemrecipe = function(name, itemID, spellID, phase, timeline)
 	local o = { ["itemID"] = itemID, ["spellID"] = spellID };
+	-- #if AFTER CATA
+	o.requireSkill = ENGINEERING;
+	-- #endif
 	if type(phase) == "string" then
 		timeline = phase;
 		phase = nil;
@@ -3378,11 +3405,11 @@ itemrecipe("Schematic: Rocket Boots Xtreme", 23887, 30556, TBC_PHASE_ONE);
 itemrecipe("Schematic: Fused Wiring", 32381, 39895, TBC_PHASE_ONE);
 itemrecipe("Schematic: Zapthrottle Mote Extractor", 23888, 30548, TBC_PHASE_ONE);
 itemrecipe("Schematic: Field Repair Bot 110G", 34114, 44391, TBC_PHASE_ONE);
-itemrecipe("Schematic: Elemental Seaforium Charge", 23874, 30547, TBC_PHASE_ONE, "added 2.1.0.6692");
+itemrecipe("Schematic: Elemental Seaforium Charge", 23874, 30547, TBC_PHASE_ONE, ADDED_2_1_0);
 
-itemrecipe("Schematic: Adamantite Arrow Maker", 33804, 43676, TBC_PHASE_TWO, { "added 2.1.0.6692", "removed 4.0.1" });
-itemrecipe("Schematic: Adamantite Shell Machine", 23815, 30347, TBC_PHASE_TWO, { "added 2.1.0.6692", "removed 4.0.1" });
-itemrecipe("Schematic: Khorium Scope", 23808, 30332, TBC_PHASE_ONE, "added 2.1.0.6692");
+itemrecipe("Schematic: Adamantite Arrow Maker", 33804, 43676, TBC_PHASE_TWO, { ADDED_2_1_0, REMOVED_4_0_1 });
+itemrecipe("Schematic: Adamantite Shell Machine", 23815, 30347, TBC_PHASE_TWO, { ADDED_2_1_0, REMOVED_4_0_1 });
+itemrecipe("Schematic: Khorium Scope", 23808, 30332, TBC_PHASE_ONE, ADDED_2_1_0);
 
 itemrecipe("Schematic: Annihilator Holo-Gogs", 35186, 46111, TBC_PHASE_FIVE);
 itemrecipe("Schematic: Justicebringer 3000 Specs", 35187, 46107, TBC_PHASE_FIVE);

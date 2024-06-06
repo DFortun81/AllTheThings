@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.CATA, {
-	applyclassicphase(CATA_PHASE_FOUR, inst(187, bubbleDownSelf({ ["timeline"] = { "added 4.3.0" }, }, {	-- Dragon Soul
+	applyclassicphase(CATA_PHASE_FOUR, inst(187, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Dragon Soul
 		["mapID"] = 409,	--  Wyrmrest Temple [Starting Area]
 		["maps"] = {
 			412,	-- Dragon Soul: Eye of Eternity
@@ -331,6 +331,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78376),	-- Sporebeard Gauntlets
 							i(78385),	-- Girdle of Shattered Stone
 							i(78386),	-- Pillarfoot Greaves
+							-- #if BEFORE MOP
+							i(78374, {	-- Razor Saronite Chip
+								["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+							}),
+							-- #endif
 						})),
 						cr(55308, e(324, {	-- Warlord Zon'ozz
 							i(78399),	-- Finger of Zon'ozz
@@ -418,7 +423,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 							i(78486),	-- Ti'tahk, the Steps of Time
 							i(78480),	-- Vishanka, Jaws of the Earth
 							i(89810, {	-- Bounty of a Sundered Land
-								["timeline"] = { "added 5.0.3" },
+								["timeline"] = { ADDED_5_0_4 },
 							}),
 							i(152981, {	-- Unstable Tendril (PET!)
 								["timeline"] = { ADDED_7_3_0 },
@@ -616,6 +621,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(77269),	-- Sporebeard Gauntlets
 						i(77266),	-- Girdle of Shattered Stone
 						i(77265),	-- Pillarfoot Greaves
+						-- #if BEFORE MOP
+						i(77213, {	-- Razor Saronite Chip
+							["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					})),
 					cr(55308, e(324, {	-- Warlord Zon'ozz
 						i(78183),	-- Gauntlets of the Corrupted Conqueror
@@ -763,6 +773,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(78362),	-- Sporebeard Gauntlets
 						i(78370),	-- Girdle of Shattered Stone
 						i(78361),	-- Pillarfoot Greaves
+						-- #if BEFORE MOP
+						i(78369, {	-- Razor Saronite Chip
+							["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					})),
 					cr(55308, e(324, {	-- Warlord Zon'ozz
 						ach(6110),	-- Heroic: Warlord Zon'ozz

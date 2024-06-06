@@ -113,7 +113,7 @@ root(ROOTS.Zones, {
 						-- #endif
 						["maps"] = { WESTERN_PLAGUELANDS, EASTERN_PLAGUELANDS },
 						["groups"] = {
-							title(99),	-- %s the Argent Champion
+							title(99),	-- <Name> the Argent Champion
 						},
 					}),
 					achWithRep(947, 1106),	-- The Argent Crusade
@@ -506,7 +506,7 @@ root(ROOTS.Zones, {
 							i(43880),	-- Fair Touch of the Crusader
 							i(43893),	-- Olakin's Enchanted Torch
 							i(43900, {	-- Fleshwerk Throwing Glaive
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -760,7 +760,7 @@ root(ROOTS.Zones, {
 					}),
 					q(13373, {	-- Fringe Science Benefits
 						["qg"] = 32430,	-- Fringe Engineer Tezzla
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(12813, {	-- From Their Corpses, Rise!
@@ -826,7 +826,7 @@ root(ROOTS.Zones, {
 					}),
 					q(13379, {	-- Green Technology
 						["qg"] = 30825,	-- Chief Engineer Copperclaw
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = HORDE_ONLY,
 					}),
 					q(13212, {	-- He's Gone to Pieces
@@ -834,6 +834,11 @@ root(ROOTS.Zones, {
 						["qg"] = 30631,	-- Darkrider Arly
 						["sourceQuest"] = 13144,	-- Killing Two Scourge With One Skeleton
 					}),
+					heroscall(q(49555, {	-- Hero's Call: Icecrown!
+						["timeline"] = { ADDED_7_3_5 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 67,
+					})),
 					q(13036, {	-- Honor Above All Else
 						["coord"] = { 87.5, 75.8, ICECROWN },
 						["qg"] = 28179,	-- Highlord Tirion Fordring
@@ -1023,7 +1028,7 @@ root(ROOTS.Zones, {
 					}),
 					q(13383, {	-- Killohertz
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(13280, {	-- King of the Mountain (A)
@@ -1056,7 +1061,7 @@ root(ROOTS.Zones, {
 					}),
 					q(13380, {	-- Leading the Charge
 						["qg"] = 32444,	-- Kibli Killohertz
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(12995, {	-- Leave Our Mark
@@ -1325,6 +1330,22 @@ root(ROOTS.Zones, {
 							i(43884),	-- Amulet of the Malefic Necromancer
 						},
 					}),
+					q(13418, {	-- Preparations for War [A]
+						["qg"] = 31081,	-- Officer Van Rossem
+						-- #if AFTER 7.3.5.25632
+						["sourceQuest"] = 49555,	-- Hero's Call: Icecrown!
+						-- #endif
+						["coord"] = { 67.7, 47.2, NORTHREND_DALARAN },
+						["races"] = ALLIANCE_ONLY,
+					}),
+					q(13419, {	-- Preparations for War [H]
+						["qg"] = 31085,	-- Sky-Reaver Klum
+						-- #if AFTER 7.3.5.25632
+						["sourceQuest"] = 49537,	-- Warchief's Command: Icecrown!
+						-- #endif
+						["coord"] = { 69.4, 40.7, NORTHREND_DALARAN },
+						["races"] = HORDE_ONLY,
+					}),
 					q(13220, {	-- Putting Olakin Back Together Again
 						["coord"] = { 35.3, 66.3, ICECROWN },
 						["qg"] = 30631,	-- Darkrider Arly
@@ -1334,7 +1355,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32444,	-- Kibli Killohertz
 						["sourceQuest"] = 13381,	-- Watts My Target
 						["coord"] = { 54.0, 42.8, ICECROWN },
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1386,7 +1407,7 @@ root(ROOTS.Zones, {
 							i(39143),	-- Writhing Mace
 							i(39121),	-- Cultist's Cauldron Stirrer
 							i(39138, {	-- Deadly Razordarts
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1408,7 +1429,7 @@ root(ROOTS.Zones, {
 							i(39143),	-- Writhing Mace
 							i(39121),	-- Cultist's Cauldron Stirrer
 							i(39138, {	-- Deadly Razordarts
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1447,7 +1468,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32430,	-- Fringe Engineer Tezzla
 						["sourceQuest"] = 13376,	-- Total Ohmage: The Valley of Lost Hope!
 						["coord"] = { 54.0, 36.9, ICECROWN },
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["groups"] = {
@@ -1616,7 +1637,7 @@ root(ROOTS.Zones, {
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13288,	-- That's Abominable!
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -2088,7 +2109,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32430,	-- Fringe Engineer Tezzla
 						["sourceQuest"] = 13374,	-- Amped for Revolt!
 						["coord"] = { 54.0, 36.9, ICECROWN },
-						["timeline"] = { "removed 4.1.0" },
+						["timeline"] = { REMOVED_4_1_0 },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["groups"] = {
@@ -2150,6 +2171,11 @@ root(ROOTS.Zones, {
 						["description"] = "On Orgrim's Hammer.",
 						["sourceQuest"] = 13239,	-- Volatility
 					}),
+					warchiefscommand(q(49537, {	-- Warchief's Command: Icecrown!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(13381, {	-- Watts My Target
 						["qg"] = 32444,	-- Kibli Killohertz
 						["coord"] = { 54.0, 42.8, ICECROWN },
@@ -2236,11 +2262,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 43.4, 20.6, ICECROWN },
 						["groups"] = {
 							i(44149, {	-- Arcanum of Torment
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44138, {	-- Arcanum of Toxic Warding
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44302),	-- Belt of Dark Mending
@@ -2278,17 +2304,20 @@ root(ROOTS.Zones, {
 							i(40005),	-- Forsaken Blade
 							i(40004),	-- Forsaken Greatsword
 							i(40006),	-- Forsaken Sword
+							i(40007, {	-- Forsaken Throwing Knife
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
 						},
 					}),
 					n(30431, {	-- Veteran Crusader Aliocha Segard <Argent Crusade Quartermaster>
 						["coord"] = { 87.6, 75.6, ICECROWN },
 						["groups"] = {
 							i(44139, {	-- Arcanum of the Fleeing Shadow
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44150, {	-- Arcanum of the Stalwart Protector
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44244),	-- Argent Skeleton Crusher
@@ -2317,29 +2346,29 @@ root(ROOTS.Zones, {
 					i(50380),	-- Battered Hilt (Horde)
 					-- #endif
 					i(37330, {	-- Formula: Enchant Cloak - Superior Arcane Resistance (RECIPE!)
-						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 						["crs"] = {
 							32297,	-- Cult Researcher
 							31702,	-- Frostbrood Spawn
 						},
 					}),
 					i(37331, {	-- Formula: Enchant Cloak - Superior Fire Resistance (RECIPE!)
-						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 						["crs"] = {
 							31321,	-- Skeletal Runesmith
 							30921,	-- Skeletal Runesmith
 						},
 					}),
 					i(37332, {	-- Formula: Enchant Cloak - Superior Frost Resistance (RECIPE!)
-						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 						["cr"] = 32289,	-- Damned Apothecary
 					}),
 					i(37333, {	-- Formula: Enchant Cloak - Superior Nature Resistance (RECIPE!)
-						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 						["cr"] = 32290,	-- Cult Alchemist
 					}),
 					i(37334, {	-- Formula: Enchant Cloak - Superior Shadow Resistance (RECIPE!)
-						["timeline"] = { ADDED_3_0_2, "removed 5.0.4" },
+						["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 						["cr"] = 32349,	-- Cultist Shard Watcher
 					}),
 					i(44563, {	-- Pattern: Fur Lining - Arcane Resist (RECIPE!)

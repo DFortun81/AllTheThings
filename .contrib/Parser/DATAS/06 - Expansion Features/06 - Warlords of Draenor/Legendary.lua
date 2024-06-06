@@ -58,8 +58,8 @@ root(ROOTS.ExpansionFeatures,
 						{ 52.0, 40.0, FROSTWALL },
 					},
 					["timeline"] = {
-						"added 6.0.1.18566",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(36157, {	-- Spires of the Betrayer
@@ -67,8 +67,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 35988 },	-- Call of the Archmage
 					["timeline"] = {
-						"added 6.0.1.18566",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(35989, {	-- Khadgar's Task
@@ -76,8 +76,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 36157 },	-- Spires of the Betrayer
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(118290)),	-- Solium Band of Might
@@ -93,8 +93,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 35989 },	-- Khadgar's Task
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(35991, {	-- Core of Iron
@@ -102,8 +102,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 35989 },	-- Khadgar's Task
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(35992, {	-- Core of Life
@@ -111,8 +111,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 35989 },	-- Khadgar's Task
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(36158, {	-- Draenor's Secret Power
@@ -121,8 +121,8 @@ root(ROOTS.ExpansionFeatures,
 					["sourceQuests"] = { 35989 },	-- Khadgar's Task
 					["cost"] = { { "c", 823, 4986}, },	-- 4986 Apexis Crystal
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(35993, {	-- Tackling Teron'gor
@@ -134,8 +134,8 @@ root(ROOTS.ExpansionFeatures,
 						35992,	-- Core of Life
 					},
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(35994, {	-- Eyes of the Archmage
@@ -146,8 +146,8 @@ root(ROOTS.ExpansionFeatures,
 						36158,	-- Draenor's Secret Power
 					},
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(36000, {	-- Fugitive Dragon
@@ -155,8 +155,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 35994 },	-- Eyes of the Archmage
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(36206, {	-- The Dragon's Tale
@@ -164,8 +164,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 77.2, 36.8, DRAENOR_NAGRAND },
 					["sourceQuests"] = { 35994 },	-- Eyes of the Archmage
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(35995, {	-- Tarnished Bronze
@@ -173,8 +173,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 92.4, 31.4, DRAENOR_NAGRAND },
 					["sourceQuests"] = { 36206 },	-- The Dragon's Tale
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(9640)),	-- Chapter I: Call of the Archmage
@@ -185,8 +185,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 92.4, 31.4, DRAENOR_NAGRAND },
 					["sourceQuests"] = { 35995 },	-- Tarnished Bronze
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(118295)),	-- Timeless Solium Band of Brutality
@@ -205,8 +205,8 @@ root(ROOTS.ExpansionFeatures,
 						39022,	-- Call of the Archmage <<-Check this
 					},
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(35998, {	-- Legacy of the Sorcerer Kings
@@ -217,8 +217,8 @@ root(ROOTS.ExpansionFeatures,
 						39022,	-- Call of the Archmage <<--Check this
 					},
 					["timeline"] = {
-						"added 6.0.2.18888",
-						"removed 7.0.3.22248",
+						ADDED_6_0_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(40235, {	-- Abrogator Arbitrator
@@ -231,8 +231,8 @@ root(ROOTS.ExpansionFeatures,
 					["isWeekly"] = true,
 					["cost"] = { { "c", 823, 14958}, },	-- 14958 Apexis Crystal
 					["timeline"] = {
-						"added 6.2.2.20395",
-						"removed 7.0.3.22248",
+						ADDED_6_2_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(36005, {	-- The Scrying Game
@@ -243,8 +243,8 @@ root(ROOTS.ExpansionFeatures,
 						35998,	-- Legacy of the Sorcerer Kings
 					},
 					["timeline"] = {
-						"added 6.0.3.19342",
-						"removed 7.0.3.22248",
+						ADDED_6_0_3_LAUNCH,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(36006, {	-- Hunter: Hunted
@@ -252,8 +252,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 84.8, 31.4, TALADOR },
 					["sourceQuests"] = { 36005 },	-- The Scrying Game
 					["timeline"] = {
-						"added 6.0.3.19342",
-						"removed 7.0.3.22248",
+						ADDED_6_0_3_LAUNCH,
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(9641)),	-- Chapter II: Gul'dan Strikes Back
@@ -264,8 +264,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 36006 },	-- Hunter: Hunted
 					["timeline"] = {
-						"added 6.0.3.19342",
-						"removed 7.0.3.22248",
+						ADDED_6_0_3_LAUNCH,
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(118300)),	-- Spellbound Solium Band of Sorcerous Strength
@@ -281,8 +281,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 36007 },	-- Touch of the Kirin-Tor
 					["timeline"] = {
-						"added 6.0.3.19116",
-						"removed 7.0.3.22248",
+						ADDED_6_0_3_LAUNCH,
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(9642, { crit(26488) }) ),	-- Chapter III: The Foundry Falls
@@ -293,8 +293,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 36007 },	-- Touch of the Kirin-Tor
 					["timeline"] = {
-						"added 6.0.3.19116",
-						"removed 7.0.3.22248",
+						ADDED_6_0_3_LAUNCH,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(36010, {	-- Flamebender's Tome
@@ -302,8 +302,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 36007 },	-- Touch of the Kirin-Tor
 					["timeline"] = {
-						"added 6.0.3.19116",
-						"removed 7.0.3.22248",
+						ADDED_6_0_3_LAUNCH,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(36012, {	-- Reverse Piracy
@@ -311,8 +311,8 @@ root(ROOTS.ExpansionFeatures,
 					["coord"] = { 85.2, 31.6, TALADOR },
 					["sourceQuests"] = { 36007 },	-- Touch of the Kirin-Tor
 					["timeline"] = {
-						"added 6.0.3.19116",
-						"removed 7.0.3.22248",
+						ADDED_6_0_3_LAUNCH,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(40237, {	-- Work Work Stoppage
@@ -325,8 +325,8 @@ root(ROOTS.ExpansionFeatures,
 					["isWeekly"] = true,
 					["cost"] = { { "c", 823, 20000}, },	-- 20000 Apexis Crystal
 					["timeline"] = {
-						"added 6.2.2.20426",
-						"removed 7.0.3.22248",
+						ADDED_6_2_2,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(36014, {	-- Blackhand's Secret
@@ -340,7 +340,7 @@ root(ROOTS.ExpansionFeatures,
 					},
 					["timeline"] = {
 						ADDED_6_1_0,
-						"removed 7.0.3.22248",
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(9642, { crit(26487) }) ),	-- Chapter III: The Foundry Falls
@@ -357,7 +357,7 @@ root(ROOTS.ExpansionFeatures,
 					},
 					["timeline"] = {
 						ADDED_6_1_0,
-						"removed 7.0.3.22248",
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(118305)),	-- Spellbound Runic Band of Elemental Power
@@ -377,8 +377,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 					["isBreadcrumb"] = true,
 					["timeline"] = {
-						"added 6.0.3.19116",
-						"removed 7.0.3.22248",
+						ADDED_6_0_3_LAUNCH,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(39023, {	-- Call of the Archmage
@@ -389,8 +389,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 					["isBreadcrumb"] = true,
 					["timeline"] = {
-						"added 6.2.0.19890",
-						"removed 7.0.3.22248",
+						ADDED_6_2_0,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(36017, {	-- Prisoner of the Mind
@@ -404,7 +404,7 @@ root(ROOTS.ExpansionFeatures,
 					},
 					["timeline"] = {
 						ADDED_6_1_0,
-						"removed 7.0.3.22248",
+						REMOVED_7_0_3,
 					},
 				}),
 				q(37835, {	-- The Shadow War
@@ -413,7 +413,7 @@ root(ROOTS.ExpansionFeatures,
 					["sourceQuests"] = { 36017 },	-- Prisoner of the Mind
 					["timeline"] = {
 						ADDED_6_1_0,
-						"removed 7.0.3.22248",
+						REMOVED_7_0_3,
 					},
 				}),
 				q(37834, {	-- Orb of Dominion
@@ -422,7 +422,7 @@ root(ROOTS.ExpansionFeatures,
 					["sourceQuests"] = { 36017 },	-- Prisoner of the Mind
 					["timeline"] = {
 						ADDED_6_1_0,
-						"removed 7.0.3.22248",
+						REMOVED_7_0_3,
 					},
 				}),
 				q(37836, {	-- Breaking Badness
@@ -431,7 +431,7 @@ root(ROOTS.ExpansionFeatures,
 					["sourceQuests"] = { 37834 },	-- Orb of Dominion
 					["timeline"] = {
 						ADDED_6_1_0,
-						"removed 7.0.3.22248",
+						REMOVED_7_0_3,
 					},
 				}),
 				q(37964, {	-- To Gul'dan!
@@ -440,7 +440,7 @@ root(ROOTS.ExpansionFeatures,
 					["sourceQuests"] = { 37836 },	-- Breaking Badness
 					["timeline"] = {
 						ADDED_6_1_0,
-						"removed 7.0.3.22248",
+						REMOVED_7_0_3,
 					},
 				}),
 				q(37837, {	-- An Inside Job
@@ -449,7 +449,7 @@ root(ROOTS.ExpansionFeatures,
 					["sourceQuests"] = { 37964 },	-- To Gul'dan!
 					["timeline"] = {
 						ADDED_6_1_0,
-						"removed 7.0.3.22248",
+						REMOVED_7_0_3,
 					},
 				}),
 				q(37838, {	-- My Garona
@@ -458,7 +458,7 @@ root(ROOTS.ExpansionFeatures,
 					["sourceQuests"] = { 37837 },	-- An Inside Job
 					["timeline"] = {
 						ADDED_6_1_0,
-						"removed 7.0.3.22248",
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, follower(466)),	-- Garona Halforcen
@@ -470,7 +470,7 @@ root(ROOTS.ExpansionFeatures,
 					["sourceQuests"] = { 37837 },	-- An Inside Job
 					["timeline"] = {
 						ADDED_6_1_0,
-						"removed 7.0.3.22248",
+						REMOVED_7_0_3,
 					},
 				}),
 				-- Part 4
@@ -479,8 +479,8 @@ root(ROOTS.ExpansionFeatures,
 					["sourceQuests"] = { 37841 },	-- The Final Assault
 					["isBreadcrumb"] = true,
 					["timeline"] = {
-						"added 6.2.0.19890",
-						"removed 7.0.3.22248",
+						ADDED_6_2_0,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(39057, {	-- Command of the Seas
@@ -494,8 +494,8 @@ root(ROOTS.ExpansionFeatures,
 						37841,	-- The Final Assault
 					},
 					["timeline"] = {
-						"added 6.2.0.20111",
-						"removed 7.0.3.22248",
+						ADDED_6_2_0,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(39697, {	-- Master vs. Commander
@@ -506,8 +506,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 					["sourceQuests"] = { 39057 },	-- Command of the Seas
 					["timeline"] = {
-						"added 6.2.0.20111",
-						"removed 7.0.3.22248",
+						ADDED_6_2_0,
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						 un(REMOVED_FROM_GAME, i(128693)),	-- Draenic Sea Chart
@@ -525,8 +525,8 @@ root(ROOTS.ExpansionFeatures,
 						37841,	-- The Final Assault
 					},
 					["timeline"] = {
-						"added 6.2.0.19890",
-						"removed 7.0.3.22248",
+						ADDED_6_2_0,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(39003, {	-- Cooking the Books
@@ -537,8 +537,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 					["sourceQuests"] = { 39000 },	-- We Don't Need No Library Card
 					["timeline"] = {
-						"added 6.2.0.20253",
-						"removed 7.0.3.22248",
+						ADDED_6_2_0,
+						REMOVED_7_0_3,
 					},
 				}),
 				q(37839, {	-- Light Be With You
@@ -550,8 +550,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 					["races"] = ALLIANCE_ONLY,
 					["timeline"] = {
-						"added 6.2.2.20444",
-						"removed 7.0.3.22248",
+						ADDED_6_2_2,
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(10021)),	-- Chapter IV: Darkness Incarnate
@@ -571,8 +571,8 @@ root(ROOTS.ExpansionFeatures,
 					},
 					["races"] = HORDE_ONLY,
 					["timeline"] = {
-						"added 6.2.2.20444",
-						"removed 7.0.3.22248",
+						ADDED_6_2_2,
+						REMOVED_7_0_3,
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, ach(10148)),	-- Chapter IV: Darkness Incarnate
@@ -594,8 +594,8 @@ root(ROOTS.ExpansionFeatures,
 						37840,	-- Draenor's Blessing
 					},
 					["timeline"] = {
-						"added 6.2.0.20216",
-						"removed 7.0.3.22248",
+						ADDED_6_2_0,
+						REMOVED_7_0_3,
 					},
 				}),
 				-- Unknown

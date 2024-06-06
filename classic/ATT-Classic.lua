@@ -917,6 +917,29 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 		end
 	end
 end
+local function BuildReagentInfo(groups, entries, paramA, paramB, indent, layer)
+	for i,group in ipairs(groups) do
+		if app.RecursiveGroupRequirementsFilter(group) then
+			local o = { prefix = indent, group = group };
+			if group.u then
+				local condition = L["AVAILABILITY_CONDITIONS"][group.u];
+				if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
+					o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][condition[1]];
+				end
+			elseif group.e then
+				o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][4];
+			end
+			if o.texture then
+				o.prefix = o.prefix:sub(4) .. "|T" .. o.texture .. ":0|t ";
+				o.texture = nil;
+			end
+			if group.count then
+				o.right = group.count .. "x";
+			end
+			tinsert(entries, o);
+		end
+	end
+end
 
 -- Search Caching
 local searchCache, working = {}, nil;
@@ -993,16 +1016,12 @@ local function SortByCommonBossDrops(a, b)
 	return not (a.headerID and a.headerID == app.HeaderConstants.COMMON_BOSS_DROPS) and b.headerID and b.headerID == app.HeaderConstants.COMMON_BOSS_DROPS;
 end
 local function SortByCraftTypeID(a, b)
-	if a.group.craftTypeID == b.group.craftTypeID then
-		if a.group.name then
-			if b.group.name then
-				return a.group.name <= b.group.name;
-			end
-			return true;
-		end
-		return false;
+	local craftTypeA = a.craftTypeID or 0;
+	local craftTypeB = b.craftTypeID or 0;
+	if craftTypeA == craftTypeB then
+		return (a.name or RETRIEVING_DATA) < (b.name or RETRIEVING_DATA);
 	end
-	return a.group.craftTypeID > b.group.craftTypeID;
+	return craftTypeA > craftTypeB;
 end
 
 ---@param method function
@@ -1032,7 +1051,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
-	local working, tooltipInfo, crafted, recipes, mostAccessibleSource = false, {}, {}, {}, nil;
+	local working, tooltipInfo, mostAccessibleSource = false, {}, nil;
 
 	-- Call to the method to search the database.
 	local group, a, b = method(paramA, paramB);
@@ -1197,10 +1216,16 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 	
 	-- Find the most accessible version of the thing we're looking for.
+	if paramA == "spellID" and not itemID then
+		-- We want spells to have higher preference for the spell itself rather than the recipe.
+		for i,j in ipairs(group) do
+			if j.itemID then j.AccessibilityScore = j.AccessibilityScore + 100; end
+		end
+	end
 	app.Sort(group, app.SortDefaults.Accessibility);
 	--[[
 	for i,j in ipairs(group) do
-		print(i, j.text, j.AccessibilityScore);
+		print(i, j.key, j[j.key], j.text, j.AccessibilityScore);
 	end
 	]]--
 	for i,j in ipairs(group) do
@@ -1210,28 +1235,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			break;
 		end
 	end
-
-	if itemID then
-		local reagentCache = app.GetDataSubMember("Reagents", itemID);
-		if reagentCache then
-			for spellID,count in pairs(reagentCache[1]) do
-				MergeClone(recipes, { ["spellID"] = spellID, ["collectible"] = false, ["count"] = count });
-			end
-			for craftedItemID,count in pairs(reagentCache[2]) do
-				MergeClone(crafted, { ["itemID"] = craftedItemID, ["count"] = count });
-				local searchResults = SearchForField("itemID", craftedItemID);
-				if #searchResults > 0 then
-					for i,o in ipairs(searchResults) do
-						if not o.itemID and o.cost then
-							-- Reagent for something that crafts a thing required for something else.
-							MergeClone(group, { ["itemID"] = craftedItemID, ["count"] = count, ["g"] = { CloneClassInstance(o) } });
-						end
-					end
-				end
-			end
-		end
-	end
-
+	
 	-- Create a list of sources
 	if isTopLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
 		local temp, text, parent = {}, nil, nil;
@@ -1242,7 +1246,24 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		local FilterUnobtainable, FilterCharacter, FirstParent
 			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 		local abbrevs = L["ABBREVIATIONS"];
-		for _,j in ipairs(group.g or group) do
+		
+		-- Include Cost Sources
+		local sourceGroups = group;
+		if #sourceGroups == 0 and (paramA == "itemID" or paramA == "currencyID") then
+			local costGroups = SearchForField(paramA .. "AsCost", paramB);
+			if costGroups and #costGroups > 0 then
+				local regroup = {};
+				for i,g in ipairs(sourceGroups) do
+					tinsert(regroup, g);
+				end
+				for i,g in ipairs(costGroups) do
+					tinsert(regroup, g);
+				end
+				sourceGroups = regroup;
+			end
+		end
+		
+		for _,j in ipairs(sourceGroups) do
 			parent = j.parent;
 			if parent and not FirstParent(j, "hideText") and parent.parent
 				and (showCompleted or not app.IsComplete(j))
@@ -1343,20 +1364,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			group = CloneClassInstance({ [paramA] = paramB, key = paramA });
 			group.g = merged;
 		end
-		
-		-- Only need to build/update groups from the top level
-		if isTopLevelSearch and group.g then
-			group.total = 0;
-			group.progress = 0;
-			--AssignChildren(group);	-- Turning this off fixed a bug with objective tooltips.
-			app.UpdateGroups(group, group.g);
-			if group.collectible then
-				group.total = group.total + 1;
-				if group.collected then
-					group.progress = group.progress + 1;
-				end
-			end
-		end
 	end
 
 	if mostAccessibleSource then
@@ -1364,6 +1371,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		group.rwp = mostAccessibleSource.rwp;
 		group.e = mostAccessibleSource.e;
 		group.u = mostAccessibleSource.u;
+		group.f = mostAccessibleSource.f;
 	end
 
 	-- Resolve Cost
@@ -1414,6 +1422,20 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 		end
 	end
+		
+	-- Only need to build/update groups from the top level
+	if isTopLevelSearch and group.g then
+		group.total = 0;
+		group.progress = 0;
+		--AssignChildren(group);	-- Turning this off fixed a bug with objective tooltips.
+		app.UpdateGroups(group, group.g);
+		if group.collectible then
+			group.total = group.total + 1;
+			if group.collected then
+				group.progress = group.progress + 1;
+			end
+		end
+	end
 
 	if group.isLimited then
 		tinsert(tooltipInfo, 1, { left = L.LIMITED_QUANTITY, wrap = true, color = app.Colors.TooltipDescription });
@@ -1421,11 +1443,15 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	
 	if isTopLevelSearch then
 		-- Add various extra field info if enabled in settings
-		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group, itemString);
+		group.itemString = itemString
+		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group);
 		if group.working then working = true; end
 	end
 
-	local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");
+	if app.AddSourceInformation(group.sourceID, tooltipInfo, group) then
+		working = true;
+	end
+	
 	if app.Settings:GetTooltipSetting("SummarizeThings") then
 		-- Contents
 		if group.g and #group.g > 0 then
@@ -1443,28 +1469,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 						tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-
-						if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
-							local incompletes = {};
-							for guid,character in pairs(ATTCharacterData) do
-								if not character.ignored and character.realm == realmName
-									and (not item.group.r or (character.factionID and item.group.r == character.factionID))
-									and (not item.group.races or (character.raceID and contains(item.group.races, character.raceID)))
-									and (not item.group.c or (character.classID and contains(item.group.c, character.classID)))
-									and (character.Quests and not character.Quests[item.group.questID]) then
-									incompletes[guid] = character;
-								end
-							end
-							local desc, j = "", 0;
-							for guid,character in pairs(incompletes) do
-								if j > 0 then desc = desc .. ", "; end
-								desc = desc .. (character.text or guid);
-								j = j + 1;
-							end
-							if j > 0 then
-								tinsert(tooltipInfo, { left = " ", right = desc:gsub("-" .. realmName, ""), hash = "HASH" .. item.group.questID });
-							end
-						end
 					end
 				else
 					for i=1,math.min(25, #entries) do
@@ -1475,139 +1479,103 @@ local function GetSearchResults(method, paramA, paramB, ...)
 						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 						tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-
-						if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
-							local incompletes = {};
-							for guid,character in pairs(ATTCharacterData) do
-								if not character.ignored and character.realm == realmName and character.Quests and not character.Quests[item.group.questID] then
-									incompletes[guid] = character;
-								end
-							end
-							local desc, j = "", 0;
-							for guid,character in pairs(incompletes) do
-								if j > 0 then desc = desc .. ", "; end
-								desc = desc .. (character.text or guid);
-								j = j + 1;
-							end
-							tinsert(tooltipInfo, { left = " ", right = desc:gsub("-" .. realmName, ""), hash = "HASH" .. item.group.questID });
-						end
 					end
 					local more = #entries - 25;
 					if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 				end
 			end
 		end
-
-		-- Crafted Items
-		if crafted and #crafted > 0 then
-			if app.Settings:GetTooltipSetting("Show:CraftedItems") then
-				local entries = {};
-				BuildContainsInfo(crafted, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-				if #entries > 0 then
-					local left, right;
-					tinsert(tooltipInfo, { left = "Used to Craft:" });
-					if #entries < 25 then
-						app.Sort(entries, function(a, b)
-							if a.group.name then
-								if b.group.name then
-									return a.group.name <= b.group.name;
+		
+		if itemID then
+			local reagentCache = app.GetDataSubMember("Reagents", itemID);
+			if reagentCache then
+				-- Crafted Items
+				if app.Settings:GetTooltipSetting("Show:CraftedItems") then
+					local crafted = {};
+					for craftedItemID,count in pairs(reagentCache[2]) do
+						local item = app.CreateItem(craftedItemID);
+						item.count = count;
+						tinsert(crafted, item);
+					end
+					if #crafted > 0 then
+						local entries = {};
+						BuildReagentInfo(crafted, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+						if #entries > 0 then
+							local left, right;
+							tinsert(tooltipInfo, { left = "Used to Craft:" });
+							if #entries < 25 then
+								app.Sort(entries, function(a, b)
+									if a.group.name then
+										if b.group.name then
+											return a.group.name <= b.group.name;
+										end
+										return true;
+									end
+									return false;
+								end);
+								for i,item in ipairs(entries) do
+									left = item.group.text or RETRIEVING_DATA;
+									if IsRetrieving(left) then working = true; end
+									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 								end
-								return true;
+							else
+								for i=1,math.min(25, #entries) do
+									local item = entries[i];
+									left = item.group.text or RETRIEVING_DATA;
+									if IsRetrieving(left) then working = true; end
+									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
+								end
+								local more = #entries - 25;
+								if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 							end
-							return false;
-						end);
-						for i,item in ipairs(entries) do
-							left = item.group.text or RETRIEVING_DATA;
-							if IsRetrieving(left) then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 						end
-					else
-						for i=1,math.min(25, #entries) do
-							local item = entries[i];
-							left = item.group.text or RETRIEVING_DATA;
-							if IsRetrieving(left) then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-						end
-						local more = #entries - 25;
-						if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 					end
 				end
-			end
-		end
 
-		-- Recipes
-		if recipes and #recipes > 0 then
-			if app.Settings:GetTooltipSetting("Show:Recipes") then
-				local entries, left, right = {}, nil, nil;
-				BuildContainsInfo(recipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-				if #entries > 0 then
-					tinsert(tooltipInfo, { left = "Used in Recipes:" });
-					if #entries < 25 then
-						app.Sort(entries, function(a, b)
-							if a and a.group.name then
-								if b and b.group.name then
-									return a.group.name <= b.group.name;
+				-- Recipes
+				if app.Settings:GetTooltipSetting("Show:Recipes") then
+					local recipes = {};
+					for spellID,count in pairs(reagentCache[1]) do
+						local spell = app.CreateSpell(spellID);
+						spell.count = count;
+						tinsert(recipes, spell);
+					end
+					if #recipes > 0 then
+						if app.Settings:GetTooltipSetting("Show:OnlyShowNonTrivialRecipes") then
+							local nonTrivialRecipes = {};
+							for _, o in pairs(recipes) do
+								local craftTypeID = o.craftTypeID;
+								if craftTypeID and craftTypeID > 0 then
+									tinsert(nonTrivialRecipes, o);
 								end
-								return true;
 							end
-							return false;
-						end);
-						for i,item in ipairs(entries) do
-							left = item.group.text or RETRIEVING_DATA;
-							if IsRetrieving(left) then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
+							recipes = nonTrivialRecipes;
 						end
-					else
-						for i=1,math.min(25, #entries) do
-							local item = entries[i];
-							left = item.group.text or RETRIEVING_DATA;
-							if IsRetrieving(left) then working = true; end
-							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-						end
-						local more = #entries - 25;
-						if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
-					end
-				end
-			end
-			if app.Settings:GetTooltipSetting("Show:SpellRanks") then
-				if app.MODE_DEBUG_OR_ACCOUNT then
-					-- Show all characters
-				else
-					-- Show only the current character
-					local nonTrivialRecipes = {};
-					for _, o in pairs(recipes) do
-						local craftTypeID = app.CurrentCharacter.SpellRanks[o.spellID];
-						if craftTypeID and craftTypeID > 0 then
-							o.craftTypeID = craftTypeID;
-							tinsert(nonTrivialRecipes, o);
-						end
-					end
-					local entries, left = {}, nil;
-					BuildContainsInfo(nonTrivialRecipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
-					if #entries > 0 then
-						tinsert(tooltipInfo, { left = "Available Skill Ups:" });
-						if #entries < 25 then
-							app.Sort(entries, SortByCraftTypeID);
-							for _,item in ipairs(entries) do
-								left = item.group.text or RETRIEVING_DATA;
-								if IsRetrieving(left) then working = true; end
-								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-								tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
+						app.Sort(recipes, SortByCraftTypeID);
+						local entries, left = {}, nil;
+						BuildReagentInfo(recipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+						if #entries > 0 then
+							tinsert(tooltipInfo, { left = "Used in Recipes:" });
+							if #entries < 25 then
+								for i,item in ipairs(entries) do
+									left = item.group.craftText or item.group.text or RETRIEVING_DATA;
+									if IsRetrieving(left) then working = true; end
+									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
+								end
+							else
+								for i=1,math.min(25, #entries) do
+									local item = entries[i];
+									left = item.group.craftText or item.group.text or RETRIEVING_DATA;
+									if IsRetrieving(left) then working = true; end
+									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
+								end
+								local more = #entries - 25;
+								if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 							end
-						else
-							for i=1,math.min(25, #entries) do
-								local item = entries[i];
-								left = item.group.text or RETRIEVING_DATA;
-								if IsRetrieving(left) then working = true; end
-								if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-								tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
-							end
-							local more = #entries - 25;
-							if more > 0 then tinsert(tooltipInfo, { left = "And " .. more .. " more..." }); end
 						end
 					end
 				end
@@ -1617,24 +1585,10 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	-- If there was any informational text generated, then attach that info.
 	if #tooltipInfo > 0 then
-		local uniques, dupes, _ = {}, {}, nil;
-		for _,item in ipairs(tooltipInfo) do
-			_ = item.hash or item.left;
-			if not _ then
-				tinsert(uniques, item);
-			else
-				if item.right then _ = _ .. item.right; end
-				if not dupes[_] then
-					dupes[_] = true;
-					tinsert(uniques, item);
-				end
-			end
-		end
-
-		for i,item in ipairs(uniques) do
+		for i,item in ipairs(tooltipInfo) do
 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 		end
-		group.tooltipInfo = uniques;
+		group.tooltipInfo = tooltipInfo;
 	end
 
 	-- Cache the result depending on if there is more work to be done.
@@ -1644,6 +1598,17 @@ end
 app.GetCachedSearchResults = function(method, paramA, paramB, ...)
 	return app.GetCachedData((paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA, GetSearchResults, method, paramA, paramB, ...);
 end
+
+-- Temporary functions to update the cache without breaking ATT.
+local function UpdateRawID(field, id)
+	app:RefreshDataQuietly("UpdateRawID", true);
+end
+app.UpdateRawID = UpdateRawID;
+-- Temporary functions to update the cache without breaking ATT.
+local function UpdateRawIDs(field, ids)
+	app:RefreshDataQuietly("UpdateRawIDs", true);
+end
+app.UpdateRawIDs = UpdateRawIDs;
 
 -- Item Information Lib
 local function SearchForLink(link)
@@ -2522,6 +2487,11 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		return -1;
 	end
 	app.CreateAchievement = app.CreateClass("Achievement", "achievementID", fields);
+	app.CreateGuildAchievement = app.ExtendClass("Achievement", "GuildAchievement", "guildAchievementID", {
+		collectible = app.ReturnFalse,
+		achievementID = function(t) return t.guildAchievementID; end,
+		isGuild = app.ReturnTrue,
+	});
 	app.CreateAchievementCriteria = app.CreateClass("AchievementCriteria", "criteriaID", {
 		["achievementID"] = function(t)
 			return t.achID or t.criteriaParent.achievementID;
@@ -2615,6 +2585,11 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			return GetAchievementCriteriaInfo;
 		end;
 	}, (function(t) return t.criteriaID < 100; end));
+	app.CreateGuildAchievementCriteria = app.ExtendClass("AchievementCriteria", "GuildAchievementCriteria", "guildCriteriaID", {
+		collectible = app.ReturnFalse,
+		criteriaID = function(t) return t.guildCriteriaID; end,
+		isGuild = app.ReturnTrue,
+	});
 
 	local function CheckAchievementCollectionStatus(achievementID)
 		achievementID = tonumber(achievementID) or achievementID;
@@ -3901,13 +3876,10 @@ app.CreateHeader = app.CreateClass("AutomaticHeader", "autoID", {
 						return o;
 					end
 				end
-				t.result = cache[1];
-				return cache[1];
-			else
-				cache = CloneClassInstance({[typ] = t.autoID,key = typ});
-				t.result = cache;
-				return cache;
 			end
+			cache = CloneClassInstance({[typ] = t.autoID,key = typ});
+			t.result = cache;
+			return cache;
 		else
 			local cache = AlternateDataTypes[t.type];
 			if cache then
@@ -4070,14 +4042,15 @@ end)();
 
 -- Recipe & Spell Lib
 (function()
+local grey = RGBToHex(0.75, 0.75, 0.75);
 local craftColors = {
 	RGBToHex(0.25,0.75,0.25),
 	RGBToHex(1,1,0),
 	RGBToHex(1,0.5,0.25),
-	[0]=RGBToHex(0.5, 0.5, 0.5),
-};
+	[0]=grey,
+}
 local CraftTypeIDToColor = function(craftTypeID)
-	return craftColors[craftTypeID];
+	return craftColors[craftTypeID] or grey;
 end
 app.CraftTypeToCraftTypeID = function(craftType)
 	if craftType then
@@ -4211,7 +4184,10 @@ local nameFromSpellID = function(t)
 end;
 local spellFields = {
 	["text"] = function(t)
-		return t.craftTypeID and Colorize(t.name, CraftTypeIDToColor(t.craftTypeID)) or t.link;
+		return t.link;
+	end,
+	["craftText"] = function(t)
+		return Colorize(t.name, CraftTypeIDToColor(t.craftTypeID));
 	end,
 	["icon"] = function(t)
 		local icon = t.baseIcon;
@@ -4224,7 +4200,7 @@ local spellFields = {
 		return GetSpellDescription(t.spellID);
 	end,
 	["craftTypeID"] = function(t)
-		return app.CurrentCharacter.SpellRanks[t.spellID];
+		return app.CurrentCharacter.SpellRanks[t.spellID] or 0;
 	end,
 	["trackable"] = function(t)
 		return GetSpellCooldown(t.spellID) > 0;
@@ -4257,7 +4233,7 @@ local createRecipe = app.CreateClass("Recipe", "spellID", recipeFields,
 		return select(5, GetItemInfoInstant(t.itemID)) or baseIconFromSpellID(t);
 	end,
 	link = function(t)
-		return select(2, GetItemInfo(t.itemID)) or RETRIEVING_DATA;
+		return select(2, GetItemInfo(t.itemID));
 	end,
 	name = function(t)
 		return GetItemInfo(t.itemID) or nameFromSpellID(t);
@@ -4365,7 +4341,12 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 	local C_PetJournal = _G["C_PetJournal"];
 	-- Once the Pet Journal API is available, then all pets become account wide.
 	SetBattlePetCollected = function(t, speciesID, collected)
-		return app.SetAccountCollected(t, "BattlePets", speciesID, collected);
+		if collected then
+			return app.SetAccountCollected(t, "BattlePets", speciesID, collected);
+		else
+			-- Stop turning it off, dumbass Blizzard API.
+			return app.IsAccountCached("BattlePets", speciesID);
+		end
 	end
 	speciesFields.icon = function(t)
 		return select(2, C_PetJournal.GetPetInfoBySpeciesID(t.speciesID));
@@ -4558,164 +4539,6 @@ app.CreateMusicRoll = app.CreateUnimplementedClass("MusicRoll", "questID");
 app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
 app.CreateSelfieFilter = app.CreateUnimplementedClass("SelfieFilter", "questID");
 end)();
-
--- Automatically Refresh Saved Instances
-local function RefreshSaves()
-	local waitTimer = 30;
-	while waitTimer > 0 do
-		coroutine.yield();
-		waitTimer = waitTimer - 1;
-	end
-
-	-- While the player is in combat, wait for combat to end.
-	while InCombatLockdown() do coroutine.yield(); end
-
-	-- While the player is still logging in, wait.
-	while not app.GUID do coroutine.yield(); end
-
-	-- Cache the lockouts across your account.
-	local serverTime = GetServerTime();
-
-	-- Check to make sure that the old instance data has expired
-	for guid,character in pairs(ATTCharacterData) do
-		local locks = character.Lockouts;
-		if locks then
-			for instanceID,instance in pairs(locks) do
-				local count = 0;
-				for difficulty,lock in pairs(instance) do
-					if type(lock) ~= "table" or type(lock.reset) ~= "number" or serverTime >= lock.reset then
-						-- Clean this up.
-						instance[difficulty] = nil;
-					else
-						count = count + 1;
-					end
-				end
-				if count == 0 then
-					-- Clean this up.
-					locks[instanceID] = nil;
-				end
-			end
-		end
-	end
-
-	-- While the player is still waiting for information, wait.
-	-- NOTE: Usually, this is only 1 wait.
-	local counter = 0;
-	while GetNumSavedInstances() < 1 do
-		coroutine.yield();
-		counter = counter + 1;
-		if counter > 10 then
-			app.refreshingSaves = false;
-			return false;
-		end
-	end
-
-	-- Update Saved Instances
-	local myLockouts = app.CurrentCharacter.Lockouts;
-	for instanceIter=1,GetNumSavedInstances() do
-		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters, encounterProgress, extendDisabled, savedInstanceID = GetSavedInstanceInfo(instanceIter);
-		if locked and savedInstanceID then
-			-- Update the name of the instance and cache the lock for this instance
-			difficulty = difficulty or 7;
-			reset = serverTime + reset;
-			local locks = myLockouts[savedInstanceID];
-			if not locks then
-				locks = {};
-				myLockouts[savedInstanceID] = locks;
-			end
-
-			-- Create the lock for this difficulty
-			local lock = locks[difficulty];
-			if not lock then
-				lock = { ["id"] = id, ["reset"] = reset, ["encounters"] = {}};
-				locks[difficulty] = lock;
-			else
-				lock.id = id;
-				lock.reset = reset;
-			end
-
-			-- If this is LFR, then don't share.
-			if difficulty == 7 or difficulty == 17 then
-				if #lock.encounters == 0 then
-					-- Check Encounter locks
-					for encounterIter=1,numEncounters do
-						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-						tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-					end
-				else
-					-- Check Encounter locks
-					for encounterIter=1,numEncounters do
-						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-						if not lock.encounters[encounterIter] then
-							tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-						elseif isKilled then
-							lock.encounters[encounterIter].isKilled = true;
-						end
-					end
-				end
-			else
-				-- Create the pseudo "shared" lock
-				local shared = locks["shared"];
-				if not shared then
-					shared = {};
-					shared.id = id;
-					shared.reset = reset;
-					shared.encounters = {};
-					locks["shared"] = shared;
-
-					-- Check Encounter locks
-					for encounterIter=1,numEncounters do
-						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-						tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-
-						-- Shared Encounter is always assigned if this is the first lock seen for this instance
-						tinsert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-					end
-				else
-					-- Check Encounter locks
-					for encounterIter=1,numEncounters do
-						local name, _, isKilled = GetSavedInstanceEncounterInfo(instanceIter, encounterIter);
-						if not lock.encounters[encounterIter] then
-							tinsert(lock.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-						elseif isKilled then
-							lock.encounters[encounterIter].isKilled = true;
-						end
-						if not shared.encounters[encounterIter] then
-							tinsert(shared.encounters, { ["name"] = name, ["isKilled"] = isKilled });
-						elseif isKilled then
-							shared.encounters[encounterIter].isKilled = true;
-						end
-					end
-				end
-			end
-		end
-	end
-
-	-- Mark that we're done now.
-	app.HandleEvent("OnSavesUpdated");
-end
-app:RegisterEvent("BOSS_KILL");
-app.events.BOSS_KILL = function(id, name, ...)
-	-- This is so that when you kill a boss, you can trigger
-	-- an automatic update of your saved instance cache.
-	-- (It does lag a little, but you can disable this if you want.)
-	-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
-	-- print("BOSS_KILL", id, name, ...);
-	app:UnregisterEvent("LOOT_CLOSED");
-	app:RegisterEvent("LOOT_CLOSED");
-end
-app.events.LOOT_CLOSED = function()
-	-- Once the loot window closes after killing a boss, THEN trigger the update.
-	app:UnregisterEvent("LOOT_CLOSED");
-	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
-	app:RegisterEvent("UPDATE_INSTANCE_INFO");
-	RequestRaidInfo();
-end
-app.events.UPDATE_INSTANCE_INFO = function()
-	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
-	app:StartATTCoroutine("RefreshSaves", RefreshSaves);
-end
-app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
 
 -- TomTom Support
 local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
@@ -5144,6 +4967,7 @@ local ADDON_LOADED_HANDLERS = {
 		if not accountWideData.Spells then accountWideData.Spells = {}; end
 		if not accountWideData.Titles then accountWideData.Titles = {}; end
 		if not accountWideData.Transmog then accountWideData.Transmog = {}; end
+		if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 
 		-- Account Wide Settings
 		local accountWideSettings = app.Settings.AccountWide;
@@ -5339,23 +5163,15 @@ app.events.ADDON_LOADED = function(addonName)
 	if handler then handler(); end
 end
 
-app:RegisterEvent("VARIABLES_LOADED");
-app.events.VARIABLES_LOADED = function()
-	app:StartATTCoroutine("Startup", function()
-		coroutine.yield();
-		
-		-- Execute the OnStartup handlers.
-		app.HandleEvent("OnStartup");
-		
-		-- Prepare the Sound Pack!
-		app.Audio:ReloadSoundPack();
+app.AddEventHandler("OnStartupDone", function()
+	-- Prepare the Sound Pack!
+	app.Audio:ReloadSoundPack();
 
-		-- Execute the OnReady handlers.
-		app.HandleEvent("OnReady");
-		
-		-- Mark that we're ready now!
-		app.IsReady = true;
-	end);
-end
+	-- Execute the OnReady handlers.
+	app.HandleEvent("OnReady");
+	
+	-- Mark that we're ready now!
+	app.IsReady = true;
+end);
 
 app.HandleEvent("OnLoad")

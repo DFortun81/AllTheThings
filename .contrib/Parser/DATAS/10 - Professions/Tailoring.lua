@@ -223,7 +223,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			q(36236, {	-- The Cryptic Tome of Tailoring
 				["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
 				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18522" },
+				["timeline"] = { ADDED_6_0_2 },
 				["requireSkill"] = TAILORING,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
@@ -238,7 +238,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			q(36301, {	-- Trega's Tailoring Kit
 				["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
 				["description"] = "This item can drop from any Draenor mob.",
-				["timeline"] = { "added 6.0.1.18522" },
+				["timeline"] = { ADDED_6_0_2 },
 				["requireSkill"] = TAILORING,
 				["races"] = HORDE_ONLY,
 				["maps"] = {
@@ -297,6 +297,9 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["coord"] = { 76.6, 11.8, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167231),	-- Delormi's Synchronous Thread (QI!)
+				},
 			}),
 			q(53940, {	-- A Stitch in Time [H]
 				["sourceQuests"] = { 53938 },	-- A Friend in Needle [H]
@@ -304,6 +307,9 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["coord"] = { 43.5, 34.8, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167231),	-- Delormi's Synchronous Thread (QI!)
+				},
 			}),
 			q(55177, {	-- Tearing at the Seams [A]
 				["sourceQuests"] = { 53807 },	-- A Stitch in Time [A]
@@ -355,6 +361,9 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["provider"] = { "n", 151134 },	-- Timeweaver Delormi
 				["coord"] = { 64.2, 69.5, SURAMAR },
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(167231),	-- Delormi's Synchronous Thread (QI!)
+				},
 			}),
 			q(53868, {	-- Saving Nine
 				["sourceQuests"] = { 55214 },	-- Seam Stress
@@ -390,7 +399,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		n(SPECIAL, {
 			n(151903, {	-- Time-Lost Trader
 				["description"] = "This Trader has a ~20% chance to spawn from closing a Time Rift via the Synchronous Thread (Battle for Azeroth Tailor Only item).\nBest Zone to farm Time Rifts is Nazjatar.",
-				["timeline"] = { "added 8.1.5" },
+				["timeline"] = { ADDED_8_1_5 },
 				["coords"] = {
 					-- Zuldazar
 					{ 45.0, 39.0, ZULDAZAR },	-- Ledge right before entrance to Atal'Dazar
@@ -927,7 +936,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Gordok Ogre Suit",
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 22813
 				}),
 				{
@@ -947,7 +956,7 @@ profession(TAILORING, {
 				{
 					["name"] = "Black Silk Pack",
 					["recipeID"] = 6695,
-					["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 				},
 				{
 					["name"] = "Bottomless Bag",
@@ -971,7 +980,7 @@ profession(TAILORING, {
 				}),
 				{
 					["name"] = "Felcloth Bag",
-					["timeline"] = { "removed 4.0.1", "added 10.1.5" },
+					["timeline"] = { REMOVED_4_0_1, ADDED_10_1_5 },
 					["recipeID"] = 26086,
 				},
 				{
@@ -1188,7 +1197,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Vest",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24091,
 				}),
 				{
@@ -1286,7 +1295,7 @@ profession(TAILORING, {
 				},
 				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Green Winter Clothes",
-					["timeline"] = { "added 2.3.0.7382" },
+					["timeline"] = { ADDED_2_3_0 },
 					["recipeID"] = 44950,
 				}),
 				{
@@ -1295,7 +1304,7 @@ profession(TAILORING, {
 				},
 				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Haliscan Jacket",
-					["timeline"] = { "added 2.4.2.8301" },
+					["timeline"] = { ADDED_2_4_2 },
 					["recipeID"] = 50644
 				}),
 				{
@@ -1324,7 +1333,7 @@ profession(TAILORING, {
 				},
 				applyevent(EVENTS.FEAST_OF_WINTER_VEIL, {
 					["name"] = "Red Winter Clothes",
-					["timeline"] = { "added 2.3.0.7382" },
+					["timeline"] = { ADDED_2_3_0 },
 					["recipeID"] = 44958,
 				}),
 				{
@@ -1337,7 +1346,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Robe of the Void",
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["recipeID"] = 18458,
 					-- #if TBC
 					["classes"] = { WARLOCK },
@@ -1345,7 +1354,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Robe of Winter Night",
-					["timeline"] = { REMOVED_4_0_3, "added 8.1.5" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
 					["recipeID"] = 18436
 				},
 				{
@@ -1596,7 +1605,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Leggings",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24092,
 				}),
 				{
@@ -1637,7 +1646,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Haliscan Pantaloons",
-					["timeline"] = { "added 2.4.2.8301" },
+					["timeline"] = { ADDED_2_4_2 },
 					["recipeID"] = 50647
 				}),
 				{
@@ -1704,7 +1713,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Boots",
-					["timeline"] = { REMOVED_4_0_3, "added 10.0.7" },
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24093,
 				}),
 				{
@@ -1717,7 +1726,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Dress Shoes",
-					["timeline"] = { "added 2.4.2.8301" },
+					["timeline"] = { ADDED_2_4_2 },
 					["recipeID"] = 49677
 				}),
 				-- #if SEASON_OF_DISCOVERY
@@ -2895,22 +2904,22 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Darkglow Embroidery",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 55769
 				},
 				{
 					["name"] = "Lightweave Embroidery",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 55642
 				},
 				{
 					["name"] = "Master's Spellthread",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 56034
 				},
 				{
 					["name"] = "Sanctified Spellthread",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 56039
 				},
 				{
@@ -2923,7 +2932,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Swordguard Embroidery",
-					["timeline"] = { "removed 6.0.2" },
+					["timeline"] = { REMOVED_6_0_2 },
 					["recipeID"] = 55777
 				},
 			}
@@ -4479,7 +4488,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Imbued Silkweave Epaulets",	-- Rank 3
-					["timeline"] = { "removed 8.0.1", ADDED_10_0_7 },
+					["timeline"] = { REMOVED_8_0_1, ADDED_10_0_7 },
 					["previousRecipeID"] = 185948,
 					["recipeID"] = 185956
 				},
@@ -5736,12 +5745,12 @@ profession(TAILORING, {
 				{
 					["name"] = "Crafter's Mark IV",
 					["recipeID"] = 359661,
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_9_2_0 },
 				},
 				{
 					["name"] = "Crafter's Mark of the First Ones",
 					["recipeID"] = 359670,
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_9_2_0 },
 				},
 				{
 					["name"] = "Novice Crafter's Mark",
@@ -5750,7 +5759,7 @@ profession(TAILORING, {
 				{
 					["name"] = "Vestige of the Eternal",
 					["recipeID"] = 359703,
-					["timeline"] = { "added 9.2.0" },
+					["timeline"] = { ADDED_9_2_0 },
 				},
 			}
 		},
@@ -6303,10 +6312,10 @@ itemrecipe("Pattern: Flameheart Bracers", 30842, 37882, TBC_PHASE_ONE);
 itemrecipe("Pattern: Flameheart Gloves", 30843, 37883, TBC_PHASE_ONE);
 itemrecipe("Pattern: Flameheart Vest", 30844, 37884, TBC_PHASE_ONE);
 
-itemrecipe("Pattern: Dress Shoes", 37915, 49677, TBC_PHASE_ONE, "added 2.4.2.8301");
+itemrecipe("Pattern: Dress Shoes", 37915, 49677, TBC_PHASE_ONE, ADDED_2_4_2);
 itemrecipe("Pattern: Mycah's Botanical Bag", 38229, 50194, TBC_PHASE_ONE);
-itemrecipe("Pattern: Haliscan Jacket", 38327, 50644, TBC_PHASE_ONE, "added 2.4.2.8301");
-itemrecipe("Pattern: Haliscan Pantaloons", 38328, 50647, TBC_PHASE_ONE, "added 2.4.2.8301");
+itemrecipe("Pattern: Haliscan Jacket", 38327, 50644, TBC_PHASE_ONE, ADDED_2_4_2);
+itemrecipe("Pattern: Haliscan Pantaloons", 38328, 50647, TBC_PHASE_ONE, ADDED_2_4_2);
 
 itemrecipe("Pattern: Belt of Blasting", 30280, 36315, TBC_PHASE_TWO);
 itemrecipe("Pattern: Belt of the Long Road", 30281, 36316, TBC_PHASE_TWO);

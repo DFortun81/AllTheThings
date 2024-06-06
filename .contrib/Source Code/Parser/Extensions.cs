@@ -259,6 +259,19 @@ namespace ATT
         }
 
         /// <summary>
+        /// Returns all KVPs within the dictionary which meet the provided <paramref name="check"/>
+        /// </summary>
+        public static IEnumerable<KeyValuePair<TKey, TValue>> GetAllKvps<TKey, TValue>(this IEnumerable<KeyValuePair<TKey, TValue>> kvps, Func<TValue, bool> check)
+        {
+            if (check == null || kvps == null || !kvps.Any())
+                yield break;
+
+            foreach (KeyValuePair<TKey, TValue> kvp in kvps)
+                if (check(kvp.Value))
+                    yield return kvp;
+        }
+
+        /// <summary>
         /// Performs the expected .Contains logic for the provided object on a list containing objects,
         /// but attempts to verify matching objects even when there are slightly different underlying Types
         /// and passes-out the proper Typed-value if it is found in the List
@@ -301,9 +314,9 @@ namespace ATT
         /// <summary>
         /// Finds an object from a List of object datas which contains the specified key/value pair
         /// </summary>
-        public static IDictionary<string, object> FindObject<T>(this List<object> list, string key, T value)
+        public static IDictionary<string, object> FindObject<T>(this IEnumerable<object> list, string key, T value)
         {
-            if (list == null || list.Count == 0) return null;
+            if (list == null) return null;
 
             foreach (var obj in list)
             {
@@ -325,9 +338,9 @@ namespace ATT
         /// <summary>
         /// Finds an object from a List of object datas which contains both specified key/value pairs
         /// </summary>
-        public static IDictionary<string, object> FindObject<T1, T2>(this List<object> list, string key1, T1 value1, string key2, T2 value2)
+        public static IDictionary<string, object> FindObject<T1, T2>(this IEnumerable<object> list, string key1, T1 value1, string key2, T2 value2)
         {
-            if (list == null || list.Count == 0) return null;
+            if (list == null) return null;
 
             foreach (var obj in list)
             {
@@ -344,6 +357,24 @@ namespace ATT
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// Returns true if any of the <paramref name="groups"/> match the <paramref name="check"/> function
+        /// </summary>
+        /// <param name="groups"></param>
+        /// <returns></returns>
+        public static bool AnyMatchingGroup<T>(this List<T> groups, Func<IDictionary<string, object>, bool> check)
+        {
+            if (groups == null || groups.Count == 0) return false;
+
+            foreach (IDictionary<string, object> data in groups.AsTypedEnumerable<IDictionary<string, object>>())
+            {
+                if (check(data))
+                    return true;
+            }
+
+            return false;
         }
 
         /// <summary>

@@ -84,6 +84,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						54691,	-- Time-Twisted Sorceress
 					},
 				}),
+				-- #if BEFORE MOP
+				i(76155, {	-- Thorns of the Dying Day
+					["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+				}),
+				-- #endif
 			})),
 			d(DIFFICULTY.DUNGEON.HEROIC, {
 				n(COMMON_BOSS_DROPS, {

@@ -42,15 +42,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				--spell(),	--
 			}),
 		})),
-	}),
-})));
-root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.TWW, {
-		n(ACHIEVEMENTS, {
+		-- Future season
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_1, ADDED_11_1_0 } }, {
 			ach(20579),	-- Keystone Hero: The Rookery
 			ach(20581),	-- Keystone Hero: Priory of the Sacred Flame
 			ach(20583),	-- Keystone Hero: Cinderbrew Meadery
 			ach(20584),	-- Keystone Hero: Darkflame Cleft
-		}),
+		})),
 	}),
-});
+})));

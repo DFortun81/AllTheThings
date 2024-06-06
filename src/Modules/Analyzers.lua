@@ -52,7 +52,7 @@ api.CheckSymlinks = function()
 end
 
 api.CheckRunners = function()
-	for name,runner in pairs(app.__Runners) do
+	for name,runner in pairs(app.Runners) do
 		runner.Stats()
 	end
 end

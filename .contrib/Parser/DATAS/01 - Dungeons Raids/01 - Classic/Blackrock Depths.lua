@@ -210,7 +210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["cr"] = 9056,	-- Fineous Darkvire <Chief Architect>
 						}),
 						i(11000, {	-- Shadowforge Key
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { DELETED_4_0_3 },
 						}),
 					},
 				}),
@@ -269,14 +269,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(SOD_PHASE_THREE, q(82062, {	-- Ever After
 					["qg"] = 222530,	-- Rugged Traveler
 					["description"] = "Just east of the Ring in Blackrock Depths is a bridge that leads north over lava.\n\nAs you get onto the bridge, look down and to the left; you'll see a friendly Dark Iron Dwarf below you on the base of a pillar. Clear the rest of the mobs ahead of you (Blazing Fireguards and a group of Shadowforge dwarves).\n\nMove to the left side of the bridge near a small brazier. Get onto the railing, hug the rock wall, and jump ahead onto the platform near the wall.\n\nMove to the end of the platform, hugging the wall, and move hard into the rock corner.\n\nTurn with your left shoulder to the wall and run carefully against the wall, until you just fall down into the exposed corner. Drop down onto the rock outcrop below. \n\nTurn left into a small room, where you'll encounter the Rugged Traveler.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["lvl"] = 48,
 					["groups"] = {
 						i(221316, {	-- Premo's Poise-Demanding Uniform
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 						i(221315, {	-- Rainbow Generator
-							["timeline"] = { "removed 2.0.1" },
+							["timeline"] = { REMOVED_2_0_1 },
 						}),
 					},
 				})),
@@ -1465,7 +1465,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9079,	-- Hierophant Theodora Mulvadania <Kargath Expeditionary Force>
 					["coord"] = { 3.02, 47.81, BADLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { BLASTED_LANDS },
+					["maps"] = { BURNING_STEPPES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
@@ -1672,13 +1672,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- You get these when completing the quest (Only when completing Horde version specifically and relogging, gg Blizz)
 						-- i(141976, {	-- Headguard of the Order
-						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- 	["timeline"] = { ADDED_7_0_3 },
 						-- }),
 						-- i(141977, {	-- Faceguard of the Order
-						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- 	["timeline"] = { ADDED_7_0_3 },
 						-- }),
 						-- i(141978, {	-- Helm of the Order
-						-- 	["timeline"] = { "added 7.0.3.22248" },
+						-- 	["timeline"] = { ADDED_7_0_3 },
 						-- }),
 					},
 				}),
@@ -1701,15 +1701,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						-- You get these when completing the quest
 						i(141976, {	-- Headguard of the Order
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 						i(141977, {	-- Faceguard of the Order
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 						i(141978, {	-- Helm of the Order
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 							["description"] = "May need to re-login to the game to properly trigger this collected from Blizzard.",
 						}),
 					},
@@ -2271,102 +2271,55 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			n(VENDORS, {
-				n(12944, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
-					applyclassicphase(PHASE_THREE, i(19449, {	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					applyclassicphase(PHASE_THREE, i(19448, {	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					})),
-					applyclassicphase(PHASE_THREE, i(19444, {	-- Formula: Enchant Weapon - Strength (RECIPE!)
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					})),
-					i(17025, {	-- Pattern: Black Dragonscale Boots (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					}),
-					applyclassicphase(PHASE_THREE, i(19331, {	-- Pattern: Chromatic Gauntlets (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					applyclassicphase(PHASE_THREE, i(19332, {	-- Pattern: Corehound Belt (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					i(17022, {	-- Pattern: Corehound Boots (RECIPE!)
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					}),
-					i(17018, {	-- Pattern: Flarecore Gloves
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					}),
-					applyclassicphase(PHASE_THREE, i(19220, {	-- Pattern: Flarecore Leggings
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					i(17017, {	-- Pattern: Flarecore Mantle
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					}),
-					applyclassicphase(PHASE_THREE, i(19219, {	-- Pattern: Flarecore Robe
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					})),
-					applyclassicphase(PHASE_THREE, i(19330, {	-- Pattern: Lava Belt (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					})),
-					applyclassicphase(PHASE_THREE, i(19333, {	-- Pattern: Molten Belt (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					i(17023, {	-- Pattern: Molten Helm (RECIPE!)
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					}),
-					applyclassicphase(PHASE_THREE, i(19208, {	-- Plans: Black Amnesty (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					applyclassicphase(PHASE_THREE, i(19209, {	-- Plans: Blackfury (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					applyclassicphase(PHASE_THREE, i(19211, {	-- Plans: Blackguard (RECIPE!)
-						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					})),
-					applyclassicphase(PHASE_FOUR, i(20040, {	-- Plans: Dark Iron Boots (RECIPE!)
-						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					})),
-					i(17051, {	-- Plans: Dark Iron Bracers (RECIPE!)
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					}),
-					i(17060, {	-- Plans: Dark Iron Destroyer (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					}),
-					applyclassicphase(PHASE_THREE, i(19207, {	-- Plans: Dark Iron Gauntlets (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					})),
-					applyclassicphase(PHASE_THREE, i(19206, {	-- Plans: Dark Iron Helm (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					})),
-					i(17052, {	-- Plans: Dark Iron Leggings (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					}),
-					i(17059, {	-- Plans: Dark Iron Reaver (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					}),
-					applyclassicphase(PHASE_THREE, i(19210, {	-- Plans: Ebon Hand (RECIPE!)
-						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					})),
-					i(17049, {	-- Plans: Fiery Chain Girdle (RECIPE!)
-						["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-					}),
-					i(17053, {	-- Plans: Fiery Chain Shoulders (RECIPE!)
-						["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
-					}),
-					applyclassicphase(PHASE_THREE, i(19212, {	-- Plans: Nightfall (RECIPE!)
-						["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
-					})),
-					applyclassicphase(PHASE_FIVE, i(20761, {	-- Recipe: Transmute Elemental Fire (RECIPE!)
-						["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
-					})),
-				}),
+				n(12944, bubbleDownClassicRep(59, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
+					{	-- Neutral
+						
+					},
+					{	-- Friendly
+						applyclassicphase(PHASE_THREE, i(19444)),	-- Formula: Enchant Weapon - Strength (RECIPE!)
+						i(17022),	-- Pattern: Corehound Boots (RECIPE!)
+						i(17018),	-- Pattern: Flarecore Gloves
+						i(17023),	-- Pattern: Molten Helm (RECIPE!)
+						i(17051),	-- Plans: Dark Iron Bracers (RECIPE!)
+						applyclassicphase(PHASE_FIVE, i(20761)),	-- Recipe: Transmute Elemental Fire (RECIPE!)
+					},
+					{	-- Honored
+						applyclassicphase(PHASE_THREE, i(19448)),	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
+						i(17025),	-- Pattern: Black Dragonscale Boots (RECIPE!)
+						i(17017),	-- Pattern: Flarecore Mantle
+						applyclassicphase(PHASE_THREE, i(19219)),	-- Pattern: Flarecore Robe
+						applyclassicphase(PHASE_THREE, i(19330)),	-- Pattern: Lava Belt (RECIPE!)
+						i(17060),	-- Plans: Dark Iron Destroyer (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19206)),	-- Plans: Dark Iron Helm (RECIPE!)
+						i(17059),	-- Plans: Dark Iron Reaver (RECIPE!)
+						i(17049),	-- Plans: Fiery Chain Girdle (RECIPE!)
+					},
+					{	-- Revered
+						applyclassicphase(PHASE_THREE, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19331)),	-- Pattern: Chromatic Gauntlets (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19332)),	-- Pattern: Corehound Belt (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19220)),	-- Pattern: Flarecore Leggings
+						applyclassicphase(PHASE_THREE, i(19333)),	-- Pattern: Molten Belt (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19208)),	-- Plans: Black Amnesty (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19209)),	-- Plans: Blackfury (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19207)),	-- Plans: Dark Iron Gauntlets (RECIPE!)
+						i(17052),	-- Plans: Dark Iron Leggings (RECIPE!)
+						i(17053),	-- Plans: Fiery Chain Shoulders (RECIPE!)
+					},
+					{	-- Exalted
+						applyclassicphase(PHASE_THREE, i(19211)),	-- Plans: Blackguard (RECIPE!)
+						applyclassicphase(PHASE_FOUR,  i(20040)),	-- Plans: Dark Iron Boots (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19210)),	-- Plans: Ebon Hand (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19212)),	-- Plans: Nightfall (RECIPE!)
+					},
+				})),
 				n(9499, {	-- Plugger Spazzring
 					i(15759),	-- Pattern: Black Dragonscale Breastplate (RECIPE!)
 					i(13483),	-- Recipe: Transmute Fire to Earth (RECIPE!)
 					i(11325),	-- Dark Iron Ale Mug
 				}),
 				n(45843, {	-- Yuka Screwspigot <Engineering Supplies>
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 					["groups"] = {
 						i(10602),   -- Schematic: Deadly Scope (RECIPE!)
 					},
@@ -2461,7 +2414,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(11813, {	-- Formula: Smoking Heart of the Mountain [BOE] (RECIPE!)
-							["timeline"] = { "removed 3.1.0.9658" },
+							["timeline"] = { REMOVED_3_1_0 },
 						}),
 						i(11631),	-- Stoneshell Guard
 						i(11632),	-- Earthslag Shoulders
@@ -2471,10 +2424,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11679),	-- Rubicund Armguards
 						-- #endif
 						applyclassicphase(PHASE_FIVE, i(22397, {	-- Idol of Ferocity
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						})),
 						i(11630, {	-- Rockshard Pellets
-							["timeline"] = { "deleted 4.0.1" },
+							["timeline"] = { DELETED_4_0_1 },
 						}),
 					},
 				}),
@@ -2524,7 +2477,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}, {
 						i(22047),	-- Top Piece of Lord Valthalak's Amulet
 						i(22305, {	-- Ironweave Mantle
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(22317),	-- Lefty's Brass Knuckle
 						i(22318),	-- Malgen's Long Bow
@@ -2607,7 +2560,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
-							["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
+							["timeline"] = { REMOVED_2_0_1, ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
 						}),
 						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					},
@@ -2730,7 +2683,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(12557, {	-- Ebonsteel Spaulders
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 8.1.0"
+								ADDED_8_1_0
 							},
 						}),
 						-- #endif
@@ -2782,10 +2735,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11313),	-- Ribbly's Head
 						i(11612),	-- Plans: Dark Iron Plate (RECIPE!)
 						i(2663, {	-- Ribbly's Bandolier
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(2662, {	-- Ribbly's Quiver
-							["timeline"] = { "removed 4.0.1" },
+							["timeline"] = { REMOVED_4_0_1 },
 						}),
 						i(11742),	-- Wayfarer's Knapsack
 					},
@@ -2803,7 +2756,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, n(28067, {	-- Dark Iron Brewer
 					["description"] = "Speak to him until he passes out, a Mug will appear on the ground",
-					["timeline"] = { "added 2.4.3.8601" },
+					["timeline"] = { ADDED_2_4_3 },
 					["groups"] = {
 						i(38320),	-- Dire Brew
 					},
@@ -2820,7 +2773,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["isBounty"] = true,
 							-- #endif
 							-- #endif
-							["timeline"] = { "removed 2.0.1", ADDED_10_1_7 },
+							["timeline"] = { REMOVED_2_0_1, ADDED_10_1_7 },
 						}),
 						-- #if BEFORE 7.3.2
 						i(11746),	-- Golem Skull Helm
@@ -2880,10 +2833,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						i(22275),	-- Firemoss Boots
 						applyclassicphase(PHASE_FIVE, i(22400, {	-- Libram of Truth
-							["timeline"] = { "deleted 5.0.4" },
+							["timeline"] = { DELETED_5_0_4 },
 						})),
 						applyclassicphase(PHASE_FIVE, i(22395, {	-- Totem of Rage
-							["timeline"] = { "deleted 5.0.4" },
+							["timeline"] = { DELETED_5_0_4 },
 						})),
 					},
 				}),
@@ -2898,25 +2851,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(12557, {	-- Ebonsteel Spaulders
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 8.1.0"
+								ADDED_8_1_0
 							},
 						}),
 						i(12554, {	-- Hands of the Exalted Herald
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 						i(12556, {	-- High Priestess Boots
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 						i(12553, {	-- Swiftwalker Boots
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 					},
@@ -2950,7 +2903,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(12554, {	-- Hands of the Exalted Herald
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 						-- #endif
@@ -2964,13 +2917,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(12556, {	-- High Priestess Boots
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 						i(12553, {	-- Swiftwalker Boots
 							["timeline"] = {
 								REMOVED_4_0_3,
-								"added 7.3.2"
+								ADDED_7_3_2
 							},
 						}),
 						-- #endif

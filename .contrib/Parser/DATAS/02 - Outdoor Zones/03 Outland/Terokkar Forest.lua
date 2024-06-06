@@ -23,7 +23,7 @@ local OnTooltipForSkyguard = [[function(t, tooltipInfo)
 end]];
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(TEROKKAR_FOREST, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(TEROKKAR_FOREST, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Terokkar Forest is a zone in central Outland that is home to Shattrath City, as well as quest hubs for level 15-30 players. The northern half of Terokkar is lush and the quests cover the threat of the Arakoaa and magic-addicted elves. The souther half is a wasteland known as the Bone Wastes, created when the Shadow Council blew up Auchindoun. There is also a daily quest hub, Skettis, for players with flying mounts--rewards include vanity items.",
 			-- #if AFTER WRATH
 			["icon"] = "Interface\\Icons\\achievement_zone_terrokar",
@@ -272,7 +272,7 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(514, {	-- Flayer Youngling (PET!)
-							["description"] = "Found in Razorthorn Rise on the border of Hellfire and Terokkar.",
+							["description"] = "Found in Razorthorn Rise, on the mountain range between Hellfire Peninsula and Terokkar Forest. Flying is required.",
 						}),
 						pet(517),	-- Warpstalker Hatchling (PET!)
 					},
@@ -586,7 +586,7 @@ root(ROOTS.Zones, {
 							i(32831),	-- Jeweled Rod
 							-- #if BEFORE MOP
 							i(32832, {	-- Scout's Throwing Knives
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							-- #endif
 							i(32830),	-- Severin's Cane
@@ -762,6 +762,11 @@ root(ROOTS.Zones, {
 							i(25949),	-- Gloves of the Afterlife
 						},
 					}),
+					heroscall(q(39188, {	-- Hero's Call: Terokkar Forest!
+						["timeline"] = { ADDED_6_2_0 },
+						["isBreadcrumb"] = true,
+						["lvl"] = 62,
+					})),
 					q(10227, {	-- I See Dead Draenei -- aa
 						["qg"] = 19697,	-- Ha'lei
 						["coord"] = { 35.0, 65.0, TEROKKAR_FOREST },
@@ -1099,7 +1104,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10880,	-- Cabal Orders
 						["groups"] = {
 							i(31730, {	-- Heirloom Signet of Convalescence
-								["timeline"] = { "removed 3.2.0" },
+								["timeline"] = { REMOVED_3_2_0 },
 							}),
 							i(31729),	-- Heirloom Signet of Valor
 							i(31728),	-- Heirloom Signet of Willpower
@@ -1232,6 +1237,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.8, 45.3, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
+					warchiefscommand(q(39182, {	-- Warchief's Command: Terokkar Forest!
+						["timeline"] = { ADDED_6_2_0 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(10791, {	-- Welcoming the Wolf Spirit
 						["qg"] = 18384,	-- Malukaz
 						["coord"] = { 50.2, 46.4, TEROKKAR_FOREST },
@@ -1620,7 +1630,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(25848, {	-- Formula: Runed Adamantite Rod (RECIPE!)
-								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 							}),
 							i(27699),	-- Recipe: Golden Fish Sticks (RECIPE!)
 							i(27700),	-- Recipe: Spicy Crawdad (RECIPE!)
@@ -1630,90 +1640,46 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.8, 46.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["groups"] = pvp({
-							i(28553, {	-- Band of the Exorcist
-								["cost"] = { { "c", 1704, 50 }, },	-- 50x Spirit Shard
-							}),
-							i(28576, {	-- Exorcist's Chain Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28574, {	-- Exorcist's Dragonhide Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28759, {	-- Exorcist's Dreadweave Hood
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28560, {	-- Exorcist's Lamellar Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28561, {	-- Exorcist's Leather Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28577, {	-- Exorcist's Linked Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28758, {	-- Exorcist's Mail Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28559, {	-- Exorcist's Plate Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28761, {	-- Exorcist's Scaled Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28760, {	-- Exorcist's Silk Hood
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28575, {	-- Exorcist's Wyrmhide Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28555, {	-- Seal of the Exorcist
-								["cost"] = { { "c", 1704, 50 }, },	-- 50x Spirit Shard
-							}),
+							spiritshard(50, i(28553)),	-- Band of the Exorcist
+							spiritshard(50, i(28555)),	-- Seal of the Exorcist
+							spiritshard(18, i(28576)),	-- Exorcist's Chain Helm
+							spiritshard(18, i(28574)),	-- Exorcist's Dragonhide Helm
+							spiritshard(18, i(28759)),	-- Exorcist's Dreadweave Hood
+							spiritshard(18, i(28560)),	-- Exorcist's Lamellar Helm
+							spiritshard(18, i(28561)),	-- Exorcist's Leather Helm
+							spiritshard(18, i(28577)),	-- Exorcist's Linked Helm
+							spiritshard(18, i(28758)),	-- Exorcist's Mail Helm
+							spiritshard(18, i(28559)),	-- Exorcist's Plate Helm
+							spiritshard(18, i(28761)),	-- Exorcist's Scaled Helm
+							spiritshard(18, i(28760)),	-- Exorcist's Silk Hood
+							spiritshard(18, i(28575)),	-- Exorcist's Wyrmhide Helm
+							spiritshard(8, i(28557)),	-- Quickened Starfire Diamond
+							spiritshard(8, i(28556)),	-- Swift Windfire Diamond
+							spiritshard(2, i(32947)),	-- Auchenai Healing Potion
+							spiritshard(2, i(32948)),	-- Auchenai Mana Potion
 						}),
 					}),
 					n(19773, {	-- Spirit Sage Zran
 						["coord"] = { 56.0, 53.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = pvp({
-							i(28553, {	-- Band of the Exorcist
-								["cost"] = { { "c", 1704, 50 }, },	-- 50x Spirit Shard
-							}),
-							i(28576, {	-- Exorcist's Chain Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28574, {	-- Exorcist's Dragonhide Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28759, {	-- Exorcist's Dreadweave Hood
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28560, {	-- Exorcist's Lamellar Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28561, {	-- Exorcist's Leather Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28577, {	-- Exorcist's Linked Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28758, {	-- Exorcist's Mail Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28559, {	-- Exorcist's Plate Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28761, {	-- Exorcist's Scaled Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28760, {	-- Exorcist's Silk Hood
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28575, {	-- Exorcist's Wyrmhide Helm
-								["cost"] = { { "c", 1704, 18 }, },	-- 18x Spirit Shard
-							}),
-							i(28555, {	-- Seal of the Exorcist
-								["cost"] = { { "c", 1704, 50 }, },	-- 50x Spirit Shard
-							}),
+							spiritshard(50, i(28553)),	-- Band of the Exorcist
+							spiritshard(50, i(28555)),	-- Seal of the Exorcist
+							spiritshard(18, i(28576)),	-- Exorcist's Chain Helm
+							spiritshard(18, i(28574)),	-- Exorcist's Dragonhide Helm
+							spiritshard(18, i(28759)),	-- Exorcist's Dreadweave Hood
+							spiritshard(18, i(28560)),	-- Exorcist's Lamellar Helm
+							spiritshard(18, i(28561)),	-- Exorcist's Leather Helm
+							spiritshard(18, i(28577)),	-- Exorcist's Linked Helm
+							spiritshard(18, i(28758)),	-- Exorcist's Mail Helm
+							spiritshard(18, i(28559)),	-- Exorcist's Plate Helm
+							spiritshard(18, i(28761)),	-- Exorcist's Scaled Helm
+							spiritshard(18, i(28760)),	-- Exorcist's Silk Hood
+							spiritshard(18, i(28575)),	-- Exorcist's Wyrmhide Helm
+							spiritshard(8, i(28557)),	-- Quickened Starfire Diamond
+							spiritshard(8, i(28556)),	-- Swift Windfire Diamond
+							spiritshard(2, i(32947)),	-- Auchenai Healing Potion
+							spiritshard(2, i(32948)),	-- Auchenai Mana Potion
 						}),
 					}),
 					n(19038, {	-- Supply Officer Mills <Rations>

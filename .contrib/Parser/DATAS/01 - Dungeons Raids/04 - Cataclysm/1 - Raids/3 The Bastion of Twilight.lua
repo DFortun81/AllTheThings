@@ -30,12 +30,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			n(ZONE_DROPS, {
 				i(60211),	-- Bracers of the Dark Pool
-				i(60202),	-- Tsanga's Helm
-				i(60201),	-- Phase-Twister Leggings
-				i(59901),	-- Heaving Plates of Protection
-				i(59521),	-- Soul Blade
 				i(59525),	-- Chelley's Staff of Dark Mending
 				i(60210),	-- Crossfire Carbine
+				-- #if BEFORE MOP
+				i(68608, {	-- Dragonwreck Throwing Axe
+					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+				}),
+				-- #endif
+				i(59901),	-- Heaving Plates of Protection
+				i(60201),	-- Phase-Twister Leggings
+				i(59521),	-- Soul Blade
+				i(60202),	-- Tsanga's Helm
 				i(59520),	-- Unheeded Warning
 			}),
 			d(DIFFICULTY.LEGACY_RAID.MULTI.NORMAL_HEROIC, {

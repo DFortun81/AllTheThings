@@ -581,7 +581,7 @@ local MADAME_RUBY_GROUPS = {
 		["isLimited"] = true,
 	}),
 	i(25849, {	-- Formula: Runed Eternium Rod (RECIPE!)
-		["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+		["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 	}),
 	i(22562, {	-- Formula: Superior Mana Oil (RECIPE!)
 		["isLimited"] = true,
@@ -600,7 +600,7 @@ local EPIC_GEM_COSTS = { { "i", 29434, 15 } };	-- 15x Badge of Justice
 -- #endif
 root(ROOTS.Zones, {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
-		m(SHATTRATH_CITY, bubbleDownSelf({ ["timeline"] = { "added 2.0.1" } }, {
+		m(SHATTRATH_CITY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Shattrath City is a major hub in Outland situated in the northwestern portion of Terokkar Forest. It is a capital-sized sanctuary city populated by ancient heroes and naaru. It is the first capital available to both sides.",
 			["icon"] = "Interface\\Icons\\spell_arcane_teleportshattrath",
 			["isRaid"] = true,
@@ -690,11 +690,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.08, 41.12, SHATTRATH_CITY },
 					}),
 				}),
-				petbattles({
-					n(66553, {	-- Morulu The Elder <Master Pet Tamer>
-						["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
-					}),
-				}),
 				n(PROFESSIONS, {
 					prof(BLACKSMITHING, {
 						n(20124, {	-- Kradu Grimblade <Weaponsmith Trainer>
@@ -767,7 +762,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10210,	-- A'dal
 						["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					}),
-					q(44863, bubbleDownSelf({ ["timeline"] = { "created 7.0.3", "added 7.1.5" } }, {	-- Clearing the Air
+					q(44863, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3, ADDED_7_1_5 } }, {	-- Clearing the Air
 						["qg"] = 115546,	-- Lunelli
 						["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
 						["requireSkill"] = BLACKSMITHING,
@@ -791,10 +786,10 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["lvl"] = 70,
 					})),
-					q(41160, bubbleDownSelf({ ["timeline"] = { "added 7.1.5" } }, {	-- Earth to Earth
+					q(41160, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {	-- Earth to Earth
 						["qg"] = 115546,	-- Lunelli
 						["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
-						["timeline"] = { "added 7.0.3.21655" },
+						["timeline"] = { ADDED_7_0_3 },
 						["requireSkill"] = BLACKSMITHING,
 						["groups"] = {
 							i(142284),	-- Plans: Stoneforged Claymore (RECIPE!)
@@ -837,7 +832,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.8, 42.6, SHATTRATH_CITY },
 						["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["maps"] = { BLADES_EDGE_MOUNTAINS },
-						["timeline"] = { "removed 3.0.1" },
+						["timeline"] = { REMOVED_3_0_2 },
 						["isDaily"] = true,
 						["lvl"] = lvlsquish(70, 70, 25),
 						-- #if BEFORE WRATH
@@ -879,7 +874,7 @@ root(ROOTS.Zones, {
 					q(10169, {	-- Losing Gracefully
 						["qg"] = 19485,	-- Magister Falris
 						["coord"] = { 47.0, 83.5, SHATTRATH_CITY },
-						["timeline"] = { "added 2.0.3", "removed 2.4.0" },
+						["timeline"] = { ADDED_2_0_3, REMOVED_2_4_0 },
 					}),
 					applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B, q(11514, {	-- Maintaining the Sunwell Portal
 						["qg"] = 24932,	-- Exarch Nasuun
@@ -1025,7 +1020,7 @@ root(ROOTS.Zones, {
 					q(57581, {	-- Plucking Plumes
 						["qg"] = 22429,	-- Vekax
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
-						["timeline"] = { "added 8.2.5.31960" },
+						["timeline"] = { ADDED_8_2_5 },
 						["minReputation"] = { 1011, HONORED },	-- Lower City, Honored.
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["repeatable"] = true,
@@ -1665,7 +1660,7 @@ root(ROOTS.Zones, {
 							}),
 							i(25846, {	-- Plans: Adamantite Rod (RECIPE!)
 								["isLimited"] = true,
-								["timeline"] = { "added 2.0.1", "removed 5.0.4" },
+								["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1712,15 +1707,15 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35330)),	-- Dreadweave Leggings
 							applyclassicphase(TBC_PHASE_TWO, i(35345)),	-- Evoker's Silk Handguards
 							i(28273),	-- Formula: Enchant Gloves - Major Healing (RECIPE!)
-							i(33153, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Gloves - Threat (RECIPE!)
-							i(22537, {["timeline"]={"added 2.0.1","removed 6.0.2"}}),	-- Formula: Enchant Ring - Healing Power (RECIPE!)
+							i(33153, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Gloves - Threat (RECIPE!)
+							i(22537, {["timeline"]={ADDED_2_0_1,REMOVED_6_0_2}}),	-- Formula: Enchant Ring - Healing Power (RECIPE!)
 							i(28281),	-- Formula: Enchant Weapon - Major Healing (RECIPE!)
 							i(29175),	-- Gavel of Pure Light
 							i(29195, {	-- Glyph of Arcane Warding
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(29191, {	-- Glyph of Power
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							applyclassicphase(TBC_PHASE_TWO, i(35362)),	-- Kodohide Helm
 							applyclassicphase(TBC_PHASE_TWO, i(35333)),	-- Mooncloth Cowl
@@ -1740,7 +1735,7 @@ root(ROOTS.Zones, {
 							i(31781),	-- Sha'tar Tabard
 							applyclassicphase(TBC_PHASE_TWO, i(35380)),	-- Stalker's Chain Spaulders
 							i(30634, {	-- Warpforged Key
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
@@ -1869,27 +1864,27 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							i(32883, {	-- Felbane Slugs
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							i(32882, {	-- Hellfire Shot
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 								["races"] = HORDE_ONLY,
 							}),
 							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(34582, {	-- Mysterious Shell
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31737, {	-- Timeless Arrow
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31735, {	-- Timeless Shell
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							i(31949, {	-- Warden's Arrow
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),
@@ -1909,7 +1904,7 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
 							i(25720, {	-- Pattern: Heavy Knothide Leather
-								["timeline"] = { "removed 3.2.0"},
+								["timeline"] = { REMOVED_3_2_0},
 								["requireSkill"] = LEATHERWORKING,
 								["isLimited"] = true,
 								["f"] = RECIPES,
@@ -1970,7 +1965,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_ONE, i(29376)),	-- Essence of the Martyr
 							applyclassicphase(TBC_PHASE_FOUR, i(33513)),	-- Eternium Rage-Shackles
 							applyclassicphase(TBC_PHASE_ONE, i(29390, {	-- Everbloom Idol
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_ONE, i(32083)),	-- Faceguard of Domination
 							applyclassicphase(TBC_PHASE_ONE, i(29385)),	-- Farstrider Defender's Cloak
@@ -1992,13 +1987,13 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_FOUR, i(33518)),	-- High Justicar's Legplates
 							applyclassicphase(TBC_PHASE_ONE, i(29370)),	-- Icon of the Silver Crescent
 							applyclassicphase(TBC_PHASE_FOUR, i(33508, {	-- Idol of Budding Life
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33509, {	-- Idol of Terror
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33510, {	-- Idol of the Unseen Moon
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33207)),	-- Implacable Guardian Sabatons
 							applyclassicphase(TBC_PHASE_ONE, i(30770)),	-- Inferno Forged Boots
@@ -2021,16 +2016,16 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_ONE, i(29273)),	-- Khadgar's Knapsack
 							applyclassicphase(TBC_PHASE_FOUR, i(33333)),	-- Kharmaa's Shroud of Hope
 							applyclassicphase(TBC_PHASE_FOUR, i(33503, {	-- Libram of Divine Judgement
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33504, {	-- Libram of Divine Purpose
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33502, {	-- Libram of Mending
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_ONE, i(29388, {	-- Libram of Repentance
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_ONE, i(29267)),	-- Light-Bearer's Faith Shield
 							applyclassicphase(TBC_PHASE_FOUR, i(33587)),	-- Light-Blessed Bonds
@@ -2066,13 +2061,13 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_ONE, i(29369)),	-- Shawl of Shifting Probabilities
 							applyclassicphase(TBC_PHASE_FOUR, i(33527)),	-- Shifting Camouflage Pants
 							applyclassicphase(TBC_PHASE_FOUR, i(33506, {	-- Skycall Totem
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33593)),	-- Slikk's Cloak of Placation
 							applyclassicphase(TBC_PHASE_FOUR, i(33559)),	-- Starfire Waistband
 							applyclassicphase(TBC_PHASE_FOUR, i(33529)),	-- Steadying Bracers
 							applyclassicphase(TBC_PHASE_FOUR, i(33507, {	-- Stonebreaker's Totem
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_ONE, i(32086)),	-- Storm Master's Helmet
 							applyclassicphase(TBC_PHASE_FOUR, i(33536)),	-- Stormwrap
@@ -2080,10 +2075,10 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_ONE, i(29271)),	-- Talisman of Kalecgos
 							applyclassicphase(TBC_PHASE_ONE, i(29274)),	-- Tears of Heaven
 							applyclassicphase(TBC_PHASE_FOUR, i(33505, {	-- Totem of Living Water
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_ONE, i(29389, {	-- Totem of the Pulsing Earth
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							})),
 							applyclassicphase(TBC_PHASE_FOUR, i(33537)),	-- Treads of Booming Thunder
 							applyclassicphase(TBC_PHASE_FOUR, i(33324)),	-- Treads of the Life Path
@@ -2114,7 +2109,7 @@ root(ROOTS.Zones, {
 						i(27982),	-- Charm of Potent and Powerful Passions
 						i(27941),	-- Compassionate Critter's Friend
 						i(33014, {	-- Fine Poking Stick
-							["timeline"] = { "added 2.2.0.6983", "removed 2.3.0" },
+							["timeline"] = { ADDED_2_2_0, REMOVED_2_3_0 },
 						}),
 						i(34249),	-- Hula Girl Doll
 						i(27992),	-- Infallible Tikbalang Ward
@@ -2128,11 +2123,11 @@ root(ROOTS.Zones, {
 						i(27979),	-- Stone of Stupendous Springing Strides
 						i(27944),	-- Talisman of True Treasure Tracking
 						i(33012, {	-- Terokkar Lilac
-							["timeline"] = { "added 2.2.0.6983", "removed 2.3.0" },
+							["timeline"] = { ADDED_2_2_0, REMOVED_2_3_0 },
 						}),
 						i(156726, {	-- Yellow Crystal Monocle
 							["sourceQuest"] = 50183,	-- Star-Touched Chest
-							["timeline"] = { "added 8.1.028768" },
+							["timeline"] = { ADDED_8_1_0 },
 						}),
 						-- TODO: presumably other monocles can be re-purchased here once having been obtained via the secret
 					}),
@@ -2174,11 +2169,11 @@ root(ROOTS.Zones, {
 							}),
 							i(134007, {	-- Eternal Black Diamond Ring (TOY!)
 								["cost"] = 50000000,	-- 5,000g
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(134004, {	-- Noble's Eternal Elementium Signet (TOY!)
 								["cost"] = 30000000,	-- 3,000g
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							applyclassicphase(WRATH_PHASE_FOUR, i(51809, {	-- Portable Hole
 								["cost"] = 30000000,	-- 3,000g
@@ -2186,7 +2181,7 @@ root(ROOTS.Zones, {
 							})),
 							i(71037, {	-- Black Diamond Ring
 								["cost"] = 35000000,	-- 3,500g
-								["timeline"] = { "added 4.1.0" },
+								["timeline"] = { ADDED_4_1_0 },
 							}),
 							i(38091, {	-- Gold Eternium Band
 								["cost"] = 30000000,	-- 3,000g
@@ -2195,7 +2190,7 @@ root(ROOTS.Zones, {
 								["cost"] = 24000000,	-- 2,400g
 							}),
 							i(38089, {	-- Ruby Shades
-								["timeline"] = { "removed 3.0.8" },
+								["timeline"] = { REMOVED_3_0_8 },
 								["cost"] = 20000000,	-- 2,000g
 							}),
 							i(38090, {	-- Sapphire Pinky Ring
@@ -2270,13 +2265,13 @@ root(ROOTS.Zones, {
 						}},
 						["groups"] = {
 							i(15906, {	-- Left-Handed Brass Knuckles
-								["timeline"] = { "removed 6.0.2" },
+								["timeline"] = { REMOVED_6_0_2 },
 							}),
 							i(15909, {	-- Left-Handed Blades
-								["timeline"] = { "removed 6.0.2" },
+								["timeline"] = { REMOVED_6_0_2 },
 							}),
 							i(15907, {	-- Left-Handed Claw
-								["timeline"] = { "removed 6.0.2" },
+								["timeline"] = { REMOVED_6_0_2 },
 							}),
 						},
 					}),
@@ -2291,8 +2286,8 @@ root(ROOTS.Zones, {
 					n(115546, {	-- Lunelli <Keeper of Lost Recipes>
 						["description"] = "She will only sell these recipes to those who have completed the quests that reward them.",
 						["coord"] = { 64.2, 71.4, SHATTRATH_CITY },
-						["timeline"] = { "added 7.1.0.22908" },
-						["groups"] = sharedData({ ["timeline"] = { "added 7.1.5"} }, {
+						["timeline"] = { ADDED_7_1_0 },
+						["groups"] = sharedData({ ["timeline"] = { ADDED_7_1_5} }, {
 							i(142287),	-- Plans: Great Earthforged Hammer (RECIPE!)
 							i(142286),	-- Plans: Lavaforged Warhammer (RECIPE!)
 							i(142283),	-- Plans: Skyforged Great Axe (RECIPE!)
@@ -2312,27 +2307,27 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							i(32883, {	-- Felbane Slugs
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							i(32882, {	-- Hellfire Shot
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 								["races"] = HORDE_ONLY,
 							}),
 							applyclassicphase(TBC_PHASE_THREE, i(34581, {	-- Mysterious Arrow
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(34582, {	-- Mysterious Shell
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31737, {	-- Timeless Arrow
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							applyclassicphase(TBC_PHASE_THREE, i(31735, {	-- Timeless Shell
-								["timeline"] = { "removed 4.0.1.20000" },
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
 							i(31949, {	-- Warden's Arrow
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 						},
 					}),
@@ -2350,7 +2345,7 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
 							i(30633, {	-- Auchenai Key
-								["timeline"] = { "removed 4.2.0" },
+								["timeline"] = { REMOVED_4_2_0 },
 								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
@@ -2380,14 +2375,14 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35357)),	-- Dragonhide Helm
 							applyclassicphase(TBC_PHASE_TWO, i(35331)),	-- Dreadweave Mantle
 							applyclassicphase(TBC_PHASE_TWO, i(35344)),	-- Evoker's Silk Cowl
-							i(33148, {["timeline"]={"added 2.2.0"}}),	-- Formula: Enchant Cloak - Dodge (RECIPE!)
-							applyclassicphase(TBC_PHASE_THREE, i(22538, {["timeline"]={"added 2.0.1","removed 6.0.2"}})),	-- Formula: Enchant Ring - Stats (RECIPE!)
+							i(33148, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Dodge (RECIPE!)
+							applyclassicphase(TBC_PHASE_THREE, i(22538, {["timeline"]={ADDED_2_0_1,REMOVED_6_0_2}})),	-- Formula: Enchant Ring - Stats (RECIPE!)
 							i(30832),	-- Gavel of Unearthed Secrets
 							i(29199, {	-- Glyph of Shadow Warding
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(30846, {	-- Glyph of the Outcast
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							applyclassicphase(TBC_PHASE_TWO, i(35361)),	-- Kodohide Gloves
 							i(30836),	-- Leggings of the Skettis Exile
@@ -2610,7 +2605,7 @@ root(ROOTS.Zones, {
 							i(23133),	-- Design: Brilliant Blood Garnet [CATA+] / Design: Runed Blood Garnet [TBC]
 							-- #else
 							i(23143, {	-- Design: Dazzling Deep Peridot [TBC] / Design: Purified Shadow Draenite [CATA+]
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							-- #endif
 							i(24176),	-- Design: Pendant of Withering
@@ -2618,7 +2613,7 @@ root(ROOTS.Zones, {
 							i(23133),	-- Design: Runed Blood Garnet [TBC] / Design: Brilliant Blood Garnet [CATA+]
 							-- #else
 							i(23143, {	-- Design: Dazzling Deep Peridot [TBC] / Design: Purified Shadow Draenite [CATA+]
-								["timeline"] = { "removed 4.0.1" },
+								["timeline"] = { REMOVED_4_0_1 },
 							}),
 							-- #endif
 							i(29134),	-- Gauntlets of the Chosen
@@ -2759,11 +2754,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.8, 69.6, SHATTRATH_CITY },
 						["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 						["groups"] = {
-							i(23799, {	-- Schematic: Adamantite Rifle
+							i(23799, {	-- Schematic: Adamantite Rifle (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(32381, {	-- Schematic: Fused Wiring
-								["timeline"] = { "added 2.1.0", "removed 5.0.4" },
+							i(32381, {	-- Schematic: Fused Wiring (RECIPE!)
+								["timeline"] = { ADDED_2_1_0, REMOVED_5_0_4 },
 								["isLimited"] = true,
 							}),
 						},
@@ -2776,13 +2771,14 @@ root(ROOTS.Zones, {
 					n(18484, {	-- Wind Trader Lathrai
 						["coord"] = { 72.6, 31.6, SHATTRATH_CITY },
 						["groups"] = {
-							applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine
+							applyclassicphase(TBC_PHASE_TWO, i(23815, {	-- Schematic: Adamantite Shell Machine (RECIPE!)
 								["isLimited"] = true,
+								["timeline"] = { REMOVED_4_0_1 },
 							})),
-							i(23816, {	-- Schematic: Fel Iron Toolbox
+							i(23816, {	-- Schematic: Fel Iron Toolbox (RECIPE!)
 								["isLimited"] = true,
 							}),
-							i(23811, {	-- Schematic: White Smoke Flare
+							i(23811, {	-- Schematic: White Smoke Flare (RECIPE!)
 								["isLimited"] = true,
 							}),
 						},

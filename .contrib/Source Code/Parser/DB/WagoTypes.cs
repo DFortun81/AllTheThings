@@ -18,6 +18,9 @@ namespace ATT.DB
             typeof(Criteria),
             typeof(CriteriaTree),
             typeof(ModifierTree),
+            typeof(TransmogSet),
+            typeof(TransmogSetItem),
+            typeof(SpellEffect),
         };
 
         private static readonly IDictionary<Type, PropertyInfo[]> _typeProperties = new Dictionary<Type, PropertyInfo[]>();

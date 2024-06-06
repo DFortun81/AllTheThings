@@ -50,7 +50,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, applyclassicphase(WRATH_PHASE_ONE, {
 						2089,	-- 1000 Stone Keeper's Shards
 						-- #endif
 					}},
-					["timeline"] = { ADDED_3_0_2, "removed 4.3.0" },
+					["timeline"] = { ADDED_3_0_2, REMOVED_4_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(1717, {	-- Wintergrasp Victory
@@ -61,23 +61,23 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, applyclassicphase(WRATH_PHASE_ONE, {
 				}),
 				ach(2085, {	-- 50 Stone Keeper's Shards
 					["cost"] = { { "c", 161, 50 } },	-- Stone Keeper's Shard
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				ach(2086, {	-- 100 Stone Keeper's Shards
 					["cost"] = { { "c", 161, 100 } },	-- Stone Keeper's Shard
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				ach(2087, {	-- 250 Stone Keeper's Shards
 					["cost"] = { { "c", 161, 250 } },	-- Stone Keeper's Shard
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				ach(2088, {	-- 500 Stone Keeper's Shards
 					["cost"] = { { "c", 161, 500 } },	-- Stone Keeper's Shard
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				ach(2089, {	-- 1000 Stone Keeper's Shards
 					["cost"] = { { "c", 161, 1000 } },	-- Stone Keeper's Shard
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				ach(2080, {	-- Black War Mammoth
 					["providers"] = {
@@ -161,28 +161,28 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, applyclassicphase(WRATH_PHASE_ONE, {
 				q(55510, {	-- No Mercy for the Merciless
 					["qg"] = 151795,	-- Commander Zanneth
 					["coord"] = { 49.6, 20.4, WINTERGRASP_BG },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 				}),
 				q(55511, {	-- Slay them all!
 					["qg"] = 151611,	-- Commander Dardosh
 					["coord"] = { 49.6, 20.4, WINTERGRASP_BG },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 				}),
 				q(55508, {	-- Victory in Wintergrasp (A)
 					["qg"] = 152003,	-- Tactical Officer Ahbramis
 					["coord"] = { 50.2, 17.8, WINTERGRASP_BG },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 				}),
 				q(55509, {	-- Victory in Wintergrasp (H)
 					["qg"] = 152004,	-- Tactical Officer Kilrath
 					["coord"] = { 50.2, 17.8, WINTERGRASP_BG },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
 				}),

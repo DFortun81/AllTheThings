@@ -143,35 +143,39 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2657),	-- Valley of Bones
 				-- #endif
 				exploration(607),	-- Valley of Spears
-				--[[
-				exploration(600),	-- Bolgan's Hole
-				exploration(2217),	-- Broken Spear Village
-				exploration(597),	-- Ghost Walker Post
-				exploration(598),	-- Sar'theris Strand
-				exploration(2617),	-- Scrabblescrew's Camp
-				exploration(2324),	-- The Veiled Sea
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(92, {	-- Gelkis Clan Centaur
+					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
+					-- #if AFTER CATA
+					-- #if ANYCLASSIC
+					-- CRIEVE NOTE: Blizzard included the rep update with Cata instead of making us wait until 8.0.1. :)
+					["sourceQuest"] = 14394,	-- Death to Agogridon
+					-- #else
 					-- #if AFTER 8.0.1
 					["sourceQuest"] = 14394,	-- Death to Agogridon
 					-- #endif
-					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
-					["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },
-					-- #if BEFORE CATA
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+					-- #endif
+					-- #else
 					["minReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be Honored.
 					["maxReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be lower than Honored.
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.DesolaceCentaurs,
 					-- #endif
 				}),
 				faction(93, {	-- Magram Clan Centaur
+					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
+					-- #if AFTER CATA
+					-- #if ANYCLASSIC
+					-- CRIEVE NOTE: Blizzard included the rep update with Cata instead of making us wait until 8.0.1. :)
+					["sourceQuest"] = 14394,	-- Death to Agogridon
+					-- #else
 					-- #if AFTER 8.0.1
 					["sourceQuest"] = 14394,	-- Death to Agogridon
 					-- #endif
-					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
-					["timeline"] = { REMOVED_4_0_3, "added 8.0.1" },
-					-- #if BEFORE CATA
+					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+					-- #endif
+					-- #else
 					["minReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be Honored.
 					["maxReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be lower than Honored.
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.DesolaceCentaurs,
@@ -384,11 +388,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5821, {	-- Bodyguard for Hire
 					["qg"] = 11625,	-- Cork Gizelton
 					["coord"] = { 40.4, 79.2, DESOLACE },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["lvl"] = 30,
 					["groups"] = {
 						i(15689, {	-- Trader's Ring
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
@@ -496,7 +500,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131344, {	-- Kodo Lead Chain
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -593,7 +597,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131348, {	-- Lob Stompers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -644,8 +648,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Soft-shelled Clam Meat
 							["providers"] = {
-								{ "i", 15924 },	-- Soft-shelled Clam Meat
-								{ "i", 15874 },	-- Soft-shelled Clam
+								{ "i",  15924 },	-- Soft-shelled Clam Meat
+								{ "i",  15874 },	-- Soft-shelled Clam
+								{ "o", 177784 },	-- Giant Softshell Clam
 							},
 							["cr"] = 12347,	-- Enraged Reef Crawler
 						}),
@@ -677,7 +682,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131353, {	-- Windwhipped Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -719,7 +724,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156968, {	-- Kolkar Polearm
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -745,7 +750,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131345, {	-- Rebellious Epaulets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(55911, {	-- Stubborn Legguards
 							["timeline"] = { ADDED_4_0_3 },
@@ -900,7 +905,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131337, {	-- Avian Oiled Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -952,17 +957,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(5943, {	-- Gizelton Caravan
 					["qg"] = 11626,	-- Rigger Gizelton
 					["coord"] = { 40.4, 79.4, DESOLACE },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["lvl"] = 32,
 					["groups"] = {
 						i(15691, {	-- Sidegunner Shottie
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(15692, {	-- Kodo Brander
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(15695, {	-- Studded Ring Shield
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 					},
 				}),
@@ -994,9 +999,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						objective(1, {	-- 0/1 Demon Box
-							["provider"] = { "i", 13542 },	-- Demon Box
+							["providers"] = {
+								{ "i",  13542 },	-- Demon Box
+								{ "i",  14523 },	-- Demon Pick
+								{ "o", 176581 },	-- Hand of Iruxos Crystal
+							},
 							["coord"] = { 55, 26.4, DESOLACE },
-							["cost"] = {{ "i", 14523, 1 }},	-- Demon Pick
 							["cr"] = 11876,	-- Demon Spirit
 						}),
 					},
@@ -1014,6 +1022,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				heroscall(q(28531, {    -- Hero's Call: Desolace! (breadcrumb quest for 14384, not available if 25938 is completed) (max level 33)
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 34 (TODO: Test max level between 32 and 37, 34 is based on Wowpedia info)
+					["lvl"] = { 29, 34 },
+					-- #endif
+				})),
 				q(14378, {	-- Hunting Brendol
 					["qg"] = 36329,	-- Thargad
 					["sourceQuests"] = {
@@ -1254,7 +1272,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131338, {	-- Earthhewn Helm
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(55898, {	-- Rockgrab Crushers
 							["timeline"] = { ADDED_4_0_3 },
@@ -1359,7 +1377,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131352, {	-- Securing Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1392,7 +1410,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131233, {	-- Securing Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(16794, {	-- Gripsteel Wristguards
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1414,7 +1432,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131343, {	-- Thornwoven Epaulets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(55901, {	-- Phytoresistant Helm
 							["timeline"] = { ADDED_4_0_3 },
@@ -1587,7 +1605,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(131232, {	-- Stormfire Gauntlets
-							["timeline"] = { "created 7.0.3.22248" },
+							["timeline"] = { CREATED_7_0_3 },
 						}),
 					},
 				}),
@@ -1639,10 +1657,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131342, {	-- Crashing Water Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156967, {	-- Spinescale Hammer
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1772,13 +1790,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE MOP
 						i(3463, {	-- Silver Star [Classic] / Broken Silver Star [TBC]
 							["timeline"] = {
-								"added 1.11.1.5462",
-								"removed 2.0.1.5678"
+								ADDED_1_11_1,
+								REMOVED_2_0_1
 							},
 						}),
 						i(32378, {	-- Silver Star [TBC]
 							["timeline"] = {
-								"added 2.0.1.5678",
+								ADDED_2_0_1,
 								REMOVED_4_0_3,
 							},
 						}),
@@ -1993,7 +2011,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131231, {	-- Claimant Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(55950, {	-- Treads of the Seeker
 							["timeline"] = { ADDED_4_0_3 },
@@ -2074,7 +2092,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131347, {	-- Messenger's Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2094,7 +2112,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131350, {	-- Gleaming Link Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2115,7 +2133,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131335, {	-- Gleaming Link Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2227,7 +2245,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 31.6, 29.4, DESOLACE },
 					},
 					-- #endif
-					["timeline"] = { "added 2.2.0.7272" },
+					["timeline"] = { ADDED_2_2_0 },
 				}),
 				n(11688, {	-- Cursed Centaur
 					-- #if AFTER CATA
@@ -2348,7 +2366,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring
-							["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },	-- Learned by trainer
+							["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },	-- Learned by trainer
 							["isLimited"] = true,
 						}),
 						i(7114, {	-- Pattern: Azure Silk Gloves
@@ -2369,7 +2387,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(12246, {	-- Super-Seller 680
 					["coord"] = { 40.6, 79.2, DESOLACE },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["groups"] = {
 						i(7087, {	-- Pattern: Crimson Silk Cloak
 							["isLimited"] = true,
@@ -2405,7 +2423,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(12245, {	-- Vendor-Tron 1000
 					["coord"] = { 60.2, 38.0, DESOLACE },
-					["timeline"] = { "removed 5.0.4" },
+					["timeline"] = { REMOVED_5_0_4 },
 					["sym"] = {{"select", "itemID",
 						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
 						14635,	-- Pattern: Gem-studded Leather Belt (RECIPE!)
@@ -2428,7 +2446,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["isLimited"] = true,
 						}),
 						i(5489, {	-- Recipe: Lean Venison (RECIPE!)
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 							["isLimited"] = true,
 						}),
 						i(12228, {	-- Recipe: Roast Raptor (RECIPE!)

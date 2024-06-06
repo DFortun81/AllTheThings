@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
+root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(BORALUS, {
 		n(WORLD_QUESTS, {
 			q(52047, {	-- Against the Storm
@@ -27,6 +27,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["lvl"] = 110,
 				["races"] = HORDE_ONLY,
 				["isWorldQuest"] = true,
+				["g"] = {
+					i(164742),	-- Crawler Mine Parts (QI!)
+				},
 			}),
 			q(51579, {	-- Dark Ranger Clea
 				["lvl"] = 120,
@@ -47,6 +50,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["lvl"] = 110,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["g"] = {
+					i(165841),	-- Bot Scrambler (QI!)
+				},
 			}),
 			q(53704, {	-- Not Too Sober Citizens Brigade (Faction Assault WQ)
 				["lvl"] = 110,
@@ -217,6 +223,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, 
 				["coord"] = { 73.21, 11.01, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["groups"] = {
+					i(157540),	-- Battered S.E.L.F.I.E. Camera (QI!)
+				},
 			}),
 			q(50792, {	-- Taking Bribes
 				["lvl"] = 120,

@@ -3513,11 +3513,10 @@ root(ROOTS.Zones, {
 										{ "g", 50000000 },	-- 5,000g
 									},
 								}),
-								i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
+								elitepvp(i(120287, {	-- Enchanter's Illusion - Primal Victory (ILLUSION!)
 									["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-									["u"] = ELITE_PVP_REQUIREMENT,
 									["timeline"] = { ADDED_6_0_2 },
-								}),
+								})),
 							},
 						}),
 						n(87551, {	-- Maru'sa <Inscription Recipes>
@@ -3575,12 +3574,12 @@ root(ROOTS.Zones, {
 									["collectible"] = false,
 									["description"] = "The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)",
 									["cost"] = { { "i", 119297, 5 }, },	-- 5x Secret of Draenor Inscription
-									["timeline"] = { "added 6.0.1.18738", REMOVED_10_0_5 },
+									["timeline"] = { ADDED_6_0_2, REMOVED_10_0_5 },
 								}),
-								i(118608, { ["timeline"] = { "created 6.0.1.18738" }}),	-- Technique: Greater Weapon Crystal
-								i(120266, { ["timeline"] = { "created 6.0.2.18850" }}),	-- Technique: Greater Ensorcelled Tarot
-								i(122548, { ["timeline"] = { "created 6.1.0.19480" }}),	-- Technique: Powerful Ensorcelled Tarot
-								i(122553, { ["timeline"] = { "created 6.1.0.19480" }}),	-- Technique: Powerful Weapon Crystal
+								i(118608, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Weapon Crystal
+								i(120266, { ["timeline"] = { CREATED_6_0_2 }}),	-- Technique: Greater Ensorcelled Tarot
+								i(122548, { ["timeline"] = { CREATED_6_1_0 }}),	-- Technique: Powerful Ensorcelled Tarot
+								i(122553, { ["timeline"] = { CREATED_6_1_0 }}),	-- Technique: Powerful Weapon Crystal
 							},
 						}),
 						n(88493, {	-- Mimi Wizzlebub <Steamwheedle Quartermaster>

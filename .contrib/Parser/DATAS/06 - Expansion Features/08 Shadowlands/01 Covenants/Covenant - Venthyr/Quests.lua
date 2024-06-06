@@ -284,8 +284,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["provider"] = { "n", 160941 },	-- The Curator <Harvester of Avarice>
 				["coord"] = { 72.7, 37.6, REVENDRETH },
 				["g"] = {
-					i(174098),	-- Death Lotus Powder (QI!)
-					i(174100),	-- Stonebreaker Mallet (QI!)
+					o(339837, {	-- Powder Bag
+						i(174098),	-- Death Lotus Powder (QI!)
+					}),
+					o(353305, {	-- Stronebreaker Mallet
+						i(174100),	-- Stonebreaker Mallet (QI!)
+					}),
 				},
 			}),
 			q(58392, {	-- Death's End Destruction
@@ -524,7 +528,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["g"] = {
 					i(180945),	-- Crypt Gargon (MOUNT!)
 					i(174179),	-- Death Lotus Powder (QI!)
-					i(174111),	-- Medallion of Avarice (QI!)
+					o(339869, {	-- Curator's Chest
+						i(174111),	-- Medallion of Avarice (QI!)
+					}),
 				},
 			}),
 			q(57891, {	-- Mix, Mingle, and Meddle

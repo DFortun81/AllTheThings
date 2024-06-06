@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		-- #if AFTER WRATH
 		["icon"] = "Interface\\Icons\\achievement_zone_ghostlands",
 		-- #endif
-		["timeline"] = { "added 2.0.1.6180" },
+		["timeline"] = { ADDED_2_0_1 },
 		["lvl"] = lvlsquish(10, 10, 1),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(24340),	-- Vandril's Hand Me Down Pants
 						i(28149),	-- Tranquillien Breeches
 						i(131251, {	-- Mix-Match Linked Pants
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 16240,	-- Arcanist Janeda
 					["sourceQuest"] = 9220,	-- War on Deatholme
 					["coord"] = { 54.8, 48.4, GHOSTLANDS },
-					["timeline"] = { "removed 7.3.5" },	-- TODO: This is a guess based on prereq quest modifications in 7.3.5.
+					["timeline"] = { REMOVED_7_3_5 },	-- TODO: This is a guess based on prereq quest modifications in 7.3.5.
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(17, 17, 1),
 				}),
@@ -279,13 +279,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23407),	-- Supple Cotton Bracers
 						i(23408),	-- Farstrider Bracers
 						i(131249, {	-- Farstrider Cuffs
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
 				q(9276, {	-- Attack on Zeb'Tela
 					["qg"] = 16463,	-- Farstrider Solanna
+					-- #if AFTER LEGION
+					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
+					-- #endif
 					["coord"] = { 72.3, 31.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -419,7 +422,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28142),	-- Farstrider's Belt
 						i(28143),	-- Rusted Plate Girdle
 						i(131244, {	-- Farstrider's Chain
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(23415)	-- Survival Knife
 					},
@@ -457,10 +460,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22997),	-- Ley-Keeper's Wand
 						i(22998),	-- Ghostclaw Leggings
 						i(131245, {	-- Scourge Lieutenant Breeches
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156942, {	-- Spiky Legbone
-							["timeline"] = { "added 7.3.5" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -532,7 +535,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23413),	-- Troll Kickers (Cloth)
 						i(23414),	-- Troll Kickers (Leather)
 						i(131248, {	-- Troll Kickers (Mail)
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -559,7 +562,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				-- #endif
 				q(9157, {	-- Forgotten Rituals
 					["qg"] = 16201,	-- Geranis Whitemorn
+					-- #if AFTER LEGION
+					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
+					-- #endif
 					["coord"] = { 72.2, 19.0, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -630,10 +636,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Pitted Gold Band
-							["provider"] = { "i", 23717 },	-- Pitted Gold Band
+							["providers"] = {
+								{ "i", 23717 },	-- Pitted Gold Band
+								{ "o", 181665 }	-- Burial Chest
+							},
 							["description"] = "Use your lockpicking skill to open the Burial Chests.",
-							["timeline"] = { REMOVED_4_0_3 },
 							["coord"] = { 63.8, 28.9, GHOSTLANDS },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(23921, {	-- Bulging Sack of Silver
 							["timeline"] = { REMOVED_4_0_3 },
@@ -814,7 +823,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28144),	-- Troll Handler Gloves
 						i(28153),	-- Farstrider's Shield
 						i(131242, {	-- Farstrider's Chainmail
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -832,7 +841,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28157),	-- Black Leather Jerkin
 						i(28161),	-- Tranquillien	Plate Leggings
 						i(131246, {	-- Dark Chain Shirt
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -914,7 +923,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9214, {	-- Shadowpine Weaponry
 					["qg"] = 16220,	-- Captain Helios
+					-- #if AFTER LEGION
+					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
+					-- #endif
 					["coord"] = { 72.3, 29.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 15, 1),
@@ -952,7 +964,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9274, {	-- Spirits of the Drowned
 					["qg"] = 16462,	-- Ranger Krenn'an
+					-- #if AFTER LEGION
+					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
 					["sourceQuest"] = 9146,	-- Report to Captain Helios
+					-- #endif
 					["coord"] = { 72.2, 29.7, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 1),
@@ -1041,7 +1056,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["lvl"] = lvlsquish(16, 16, 1),
 					["groups"] = {
 						objective(1, {	-- 0/1 Archeologist's Shrunken Head
-							["provider"] = { "i", 30503 },	-- Archeologist's Shrunken Head
+							["providers"] = {
+								{ "i",  30503 },	-- Archeologist's Shrunken Head
+								{ "o", 184793 },	-- Primitive Chest
+							},
 							["description"] = "Use your lockpicking skill to open the Primitive Chests.",
 							["timeline"] = { REMOVED_4_0_3 },
 							["coord"] = { 75.6, 43.7, GHOSTLANDS },
@@ -1086,7 +1104,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(22984),	-- Dawnblade
 						i(22995),	-- Sindorei Warblade
 						i(156941, {	-- Staff of Radiance
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1173,7 +1191,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(28159),	-- Undertaker's Gloves
 						i(28163),	-- Maltendis' Handguards
 						i(131247, {	-- Gravedigger's Grips
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1297,7 +1315,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						i(23403),	-- Salvaged Plate Leggings
 						i(23404),	-- Padded Running Shoes
 						i(131241, {	-- Relinked Chain Boots
-							["timeline"] = { "added 7.0.3" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1328,6 +1346,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 					["groups"] = {
 						i(23923),	-- Amani Sacrificial Dagger
 						i(29518),	-- Amani Scimitar
+						i(25874, {	-- Large Throwing Knife
+							["timeline"] = { REMOVED_5_0_4 },
+						}),
 					},
 				}),
 				o(184793, {	-- Primitive Chest
@@ -1353,7 +1374,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						-- #if BEFORE MOP
 						i(29584, {	-- Throat Piercers
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						-- #endif
 					},
@@ -1378,7 +1399,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(132572, {	-- Deathstalker's Hauberk
 							["minReputation"] = { 922, REVERED },	-- Tranquillien, Revered.
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(22985, {	-- Suncrown Breastplate
 							["minReputation"] = { 922, REVERED },	-- Tranquillien, Revered.
@@ -1394,7 +1415,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(132573, {	-- Tranquillen Pathfinder's Cinch
 							["minReputation"] = { 922, HONORED },	-- Tranquillien, Honored.
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(28164, {	-- Tranquillien Flamberge
 							["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
@@ -1410,7 +1431,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 						i(132571, {	-- Woodrunner's Footpads
 							["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),

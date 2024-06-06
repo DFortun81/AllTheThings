@@ -73,6 +73,17 @@ do
 				end
 			end
 		end
+		local function default_costCollectibles(t)
+			local id = t.itemID
+			if not id then return app.EmptyTable end
+			local results = app.GetRawField("itemIDAsCost", id);
+			if results and #results > 0 then
+				-- not sure we need to copy these into another table
+				-- app.PrintDebug("default_costCollectibles",id,#results,app:SearchLink(t))
+				return results;
+			end
+			return app.EmptyTable;
+		end
 		local CollectedSpeciesHelper = setmetatable({}, {
 			__index = function(t, key)
 				if key > 0 then
@@ -110,6 +121,9 @@ do
 				-- certain Battle Pets are per Character, so we can implicitly check for them as Account-Wide since Battle Pets have no toggle for that
 				-- account-wide collected
 				if app.IsAccountCached(CACHE, id) then return 2; end
+			end,
+			costCollectibles = function(t)
+				return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 			end,
 			f = function(t)
 				return 101;

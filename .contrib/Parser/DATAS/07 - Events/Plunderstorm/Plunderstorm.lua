@@ -23,7 +23,7 @@ PLUNDERSTORM = createHeader({
 	},
 });
 -- #if NOT ANYCLASSIC
-root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 	n(PLUNDERSTORM, {
 		n(ACHIEVEMENTS, {
 			ach(20509),	-- Plunderking
@@ -50,11 +50,21 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				["sourceQuests"] = { 80384 },	-- xx
 				["coord"] = { 46.5, 45.1, VALDRAKKEN },
 				["groups"] = {
-					i(217705),	-- Pirate's Booty
-					--
-					i(217411),	-- Blackened Flightstone
-					i(217419),	-- Large Satchel of Drake's Dreaming Crests
-					--i(210923),	-- Clutch of Wyrm's Dreaming Crests (unsure if need it here)
+					i(217411, {	-- Blackened Flightstone
+						["cost"] = {{"i", 217397, 1}},	-- 1x Keg-Stamped Coin
+					}),
+					i(217412, {	-- Blackened Flightstone
+						["cost"] = {{"i", 217397, 1}},	-- 1x Keg-Stamped Coin
+					}),
+					i(217419, {	-- Large Satchel of Drake's Dreaming Crests
+						["cost"] = {{"i", 217397, 2}},	-- 2x Keg-Stamped Coin
+					}),
+					i(217420, {	-- Large Pouch of Whelpling's Awakened Crests
+						["cost"] = {{"i", 217397, 2}},	-- 2x Keg-Stamped Coin
+					}),
+					i(217705, {	-- Pirate's Booty
+						["cost"] = 18	-- 18c
+					}),
 				},
 			}),
 		}),
@@ -176,7 +186,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 	}),
 })));
 -- #else
-root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ ["timeline"] = { "added 3.4.3.53622", "removed 4.0.1" } }, {
+root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_PHASE_FOUR_RUBYSANCTUM, bubbleDown({ ["timeline"] = { ADDED_3_4_3, REMOVED_4_0_1 } }, {
 	n(PLUNDERSTORM, {
 		pet(4532, {		-- Pinchy the Plunderer (PET!)
 			["spellID"] = 446916,	-- Pinchy the Plunderer
@@ -188,7 +198,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, applyclassicphase(WRATH_
 -- #endif
 
 root(ROOTS.HiddenQuestTriggers, {
-	n(PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM } }, {
+	n(PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 		q(80110),	-- First WQ of the Day
 		q(80436),	-- Purchasing Pirate's Booty -- Once per account lockout
 		q(65247),	-- Triggeres randomly anytime doing Plunderstorm

@@ -253,20 +253,28 @@ local function HasExpandedSubgroup(group)
 end
 app.ExpandGroupsRecursively = ExpandGroupsRecursively;
 
+local IconPortraitTooltipExtraSettings = {
+	questID = "IconPortraitsForQuests",
+};
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
 local function SetPortraitIcon(self, data, x)
-	local displayID = CalculateRowDisplayID(data);
-	if displayID then
-		SetPortraitTextureFromDisplayID(self, type(displayID) == "number" and displayID or displayID[1]);
-		self:SetWidth(self:GetHeight());
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
-	elseif data.unit and not data.icon then
-		SetPortraitTexture(self, data.unit);
-		self:SetWidth(self:GetHeight());
-		self:SetTexCoord(0, 1, 0, 1);
-		return true;
+	if app.Settings:GetTooltipSetting("IconPortraits") then
+		local extraSetting = IconPortraitTooltipExtraSettings[data.key];
+		if not extraSetting or app.Settings:GetTooltipSetting(extraSetting) then
+			local displayID = CalculateRowDisplayID(data);
+			if displayID then
+				SetPortraitTextureFromDisplayID(self, type(displayID) == "number" and displayID or displayID[1]);
+				self:SetWidth(self:GetHeight());
+				self:SetTexCoord(0, 1, 0, 1);
+				return true;
+			elseif data.unit and not data.icon then
+				SetPortraitTexture(self, data.unit);
+				self:SetWidth(self:GetHeight());
+				self:SetTexCoord(0, 1, 0, 1);
+				return true;
+			end
+		end
 	end
 
 	-- Fallback to a traditional icon.
@@ -678,7 +686,7 @@ local function RowOnClick(self, button)
 					for key,value in pairs(uniqueNames) do
 						tinsert(arr, key);
 					end
-					Auctionator.API.v1.MultiSearchExact(L["TITLE"], arr);
+					Auctionator.API.v1.MultiSearch(L["TITLE"], arr);
 					return;
 				end
 
@@ -897,35 +905,6 @@ local function RowOnEnter(self)
 		else tinsert(tooltipInfo, { left = "This can be completed multiple times.", wrap = true }); end
 	end
 
-	if reference.questID and app.Settings:GetTooltipSetting("SummarizeThings") then
-		if not reference.repeatable and app.Settings:GetTooltipSetting("Show:OtherCharacterQuests") then
-			local incompletes, realmName = {}, GetRealmName();
-			for guid,character in pairs(ATTCharacterData) do
-				if not character.ignored and character.realm == realmName
-					and (not reference.r or (character.factionID and reference.r == character.factionID))
-					and (not reference.races or (character.raceID and contains(reference.races, character.raceID)))
-					and (not reference.c or (character.classID and contains(reference.c, character.classID)))
-					and (character.Quests and not character.Quests[reference.questID]) then
-					incompletes[guid] = character;
-				end
-			end
-			incompletes[app.GUID] = nil;
-			local desc, j = "", 0;
-			for guid,character in pairs(incompletes) do
-				if j > 0 then desc = desc .. ", "; end
-				desc = desc .. (character.text or guid);
-				j = j + 1;
-			end
-			if j > 0 then
-				tinsert(tooltipInfo, {
-					left = "Incomplete on " .. desc:gsub("-" .. realmName, ""),
-					r = 1, g = 1, b = 1,
-					wrap = true,
-				});
-			end
-		end
-	end
-
 	-- Show Quest Prereqs
 	local isDebugMode = app.MODE_DEBUG;
 	if reference.sourceQuests and (isDebugMode or not reference.saved) then
@@ -992,21 +971,60 @@ local function RowOnEnter(self)
 			end
 		end
 	end
+	if reference.sourceAchievements and (isDebugMode or not reference.collected) then
+		local currentMapID, prereqs, bc = app.CurrentMapID, {}, {};
+		for i,sourceAchievementID in ipairs(reference.sourceAchievements) do
+			if sourceAchievementID > 0 and (isDebugMode or not ATTAccountWideData.Achievements[sourceAchievementID]) then
+				local sas = SearchForField("achievementID", sourceAchievementID);
+				if #sas > 0 then
+					local bestMatch = nil;
+					for j,sa in ipairs(sas) do
+						if sa.achievementID == sourceAchievementID then
+							if isDebugMode or (app.RecursiveCharacterRequirementsFilter(sa) and not sa.collected) then
+								bestMatch = sa;
+							end
+						end
+					end
+					if bestMatch then
+						tinsert(prereqs, bestMatch);
+					end
+				else
+					tinsert(prereqs, app.CreateAchievement(sourceAchievementID));
+				end
+			end
+		end
 
-	if reference.g then
-		-- If we're at the Auction House
-		if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
+		if prereqs and #prereqs > 0 then
 			tinsert(tooltipInfo, {
-				left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"],
-				r = 1, g = 1, b = 1,
+				left = "This has an incomplete prerequisite achievement that you need to complete first.",
 				wrap = true,
 			});
-		else
-			tinsert(tooltipInfo, {
-				left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"],
-				r = 1, g = 1, b = 1,
-				wrap = true,
-			});
+			for i,prereq in ipairs(prereqs) do
+				local text = "   " .. prereq.achievementID .. ": " .. (prereq.text or RETRIEVING_DATA);
+				if prereq.isGuild then text = text .. " (" .. GUILD .. ")"; end
+				tinsert(tooltipInfo, {
+					left = text,
+					right = GetCompletionIcon(prereq.collected),
+				});
+			end
+		end
+	end
+	if app.Settings:GetTooltipSetting("Show:TooltipHelp") then
+		if reference.g then
+			-- If we're at the Auction House
+			if (AuctionFrame and AuctionFrame:IsShown()) or (AuctionHouseFrame and AuctionHouseFrame:IsShown()) then
+				tinsert(tooltipInfo, {
+					left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS_AH") or "TOP_ROW_INSTRUCTIONS_AH"],
+					r = 1, g = 1, b = 1,
+					wrap = true,
+				});
+			else
+				tinsert(tooltipInfo, {
+					left = L[(self.index > 0 and "OTHER_ROW_INSTRUCTIONS") or "TOP_ROW_INSTRUCTIONS"],
+					r = 1, g = 1, b = 1,
+					wrap = true,
+				});
+			end
 		end
 	end
 	

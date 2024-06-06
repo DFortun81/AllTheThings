@@ -119,15 +119,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(1857),	-- Thoradin's Wall
 				-- #endif
 				exploration(317),	-- Witherbark Village
-				--[[
-				exploration(322),	-- Blackwater Shipwrecks
-				exploration(323),	-- O'Breen's Camp
-				exploration(325),	-- The Tower of Arathor
-				exploration(326),	-- The Sanctum
-				exploration(328),	-- The Drowned Reef
-				exploration(2401),	-- The Forbidding Sea
-				exploration(1837),	-- Witherbark Caverns
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(601, {	-- Galen's Fall, Arathi
@@ -209,10 +200,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131479, {	-- Cuffs of Feeling
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131480, {	-- Grips of the Forsaken
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -302,7 +293,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131470, {	-- Refuge Cinch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -334,7 +325,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(677, {	-- Call to Arms (1/3)
 					["qg"] = 2771,	-- Drum Fel
+					-- #if BEFORE WRATH
 					["sourceQuest"] = 676,	-- The Hammer May Fall
+					-- #endif
 					["coord"] = { 74.24, 33.91, ARATHI_HIGHLANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -415,10 +408,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131467, {	-- Gold Star Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131468, {	-- Chain of Ogre Ruin
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -497,10 +490,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131565, {	-- Seafarer's Chain Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131566, {	-- The Good Captain's Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -582,13 +575,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131475, {	-- Steelgut's Undermail
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
 				q(26022, {	-- First Blood
 					["qg"] = 41949,	-- Dark Ranger Alina
-					["sourceQuest"] = 28572,	-- Warchief's Command: Arathi Highlands!
+					["sourceQuests"] = {
+						28572,	-- Warchief's Command: Arathi Highlands! (Undercity, Silvermoon City)
+						28619,	-- Warchief's Command: Arathi Highlands! (Hillsbrad)
+					},
 					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -620,7 +616,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131487, {	-- Stromgarde Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -723,13 +719,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131485, {	-- Hammerfaul Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156947, {	-- Hammerfall Cudgel
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(156960, {	-- Hammerfall Gavel
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -754,6 +750,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
+				heroscall(q(28573, {	-- Hero's Call: Arathi Highlands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE },	-- Only found in Ironforge in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 28 and 35, 30 is based on Wowpedia info)
+					["lvl"] = { 24, 30 },
+					-- #endif
+				})),
 				q(659, {	-- Hints of a New Plague? (1/5)
 					["qg"] = 2711,	-- Phin Odelic
 					["coord"] = { 50.3, 59.0, HILLSBRAD_FOOTHILLS },
@@ -841,7 +847,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(35, 35, 10),
 					-- Horde Trauma (6623) is unavailable permanently, a GM confirmed this to me. Because of the phasing issue, they removed the quest from the NPC entirely.
-					["timeline"] = { "removed 7.3.5" },
+					["timeline"] = { REMOVED_7_3_5 },
 					-- #if AFTER 7.3.5
 					-- ["DisablePartySync"] = true,
 					-- ["lockCriteria"] = { 1, "achID", 12452 },	-- Allied Races: Highmountain Tauren [Appears to cause a phasing issue with the quest giver]
@@ -1270,10 +1276,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131481, {	-- Bindings of Longing
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131482, {	-- Grips of the Weary
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1393,10 +1399,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131474, {	-- Chain Weighted Shoes
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156948, {	-- Waterlogged Elven Spear
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1509,7 +1515,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131473, {	-- Mantle of the Bound
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				},
@@ -1559,7 +1565,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131469, {	-- Seabreeze Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1599,7 +1605,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131466, {	-- Highland Chain Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1655,7 +1661,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131528, {	-- Cheater's Cinch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1851,7 +1857,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131465, {	-- Hauberk of Dire Tidings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1909,19 +1915,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131477, {	-- Boots of the Refuge Captain
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131478, {	-- Battle Rider Belt
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
-				q(28619, {	-- Warchief's Command: Arathi Highlands!
-					["provider"] = { "o", 207279 },	-- Warchief's Command Board
-					["coord"] = { 56.5, 47.1, HILLSBRAD_FOOTHILLS },
-					["timeline"] = { "added 4.0.1.12984" },
+				warchiefscommand(q(28572, {	-- Warchief's Command: Arathi Highlands! (Undercity, Silvermoon City)
+					["timeline"] = { ADDED_4_0_1 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },
 					["races"] = HORDE_ONLY,
-				}),
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 26 and 35, 30 is based on Wowpedia info)
+					["lvl"] = { 24, 30 },
+					-- #endif
+				})),
+				warchiefscommand(q(28619, {	-- Warchief's Command: Arathi Highlands! (Hillsbrad)
+					["timeline"] = { ADDED_4_0_1 },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 26 and 35, 30 is based on Wowpedia info)
+					["lvl"] = { 24, 30 },
+					-- #endif
+				})),
 				q(691, {	-- Worth Its Weight in Gold
 					["qg"] = 2788,	-- Apprentice Kryten
 					["sourceQuest"] = 690,	-- Malin's Request (1/2)
@@ -2018,10 +2039,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["groups"] = {
 						i(5742, {	-- Gemstone Dagger
-							["timeline"] = { "created 1.11.1", ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 07.09.2023
+							["timeline"] = { CREATED_1_11_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 07.09.2023
 						}),
 						i(5743, {	-- Prismstone Ring
-							["timeline"] = { "created 1.11.1", ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 05.09.2023
+							["timeline"] = { CREATED_1_11_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 05.09.2023
 						}),
 					},
 				}),
@@ -2307,7 +2328,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						-- #endif
 						i(11163, {	-- Formula: Enchant Bracer - Lesser Dodge / CLASSIC: Formula: Enchant Bracer - Lesser Deflection (RECIPE!)
-							["timeline"] = { "removed 4.1.0" },	-- Learned by trainer
+							["timeline"] = { REMOVED_4_1_0 },	-- Learned by trainer
 						}),
 						i(3682),	-- Recipe: Curiously Tasty Omelet (RECIPE!)
 						i(12228),	-- Recipe: Roast Raptor (RECIPE!)

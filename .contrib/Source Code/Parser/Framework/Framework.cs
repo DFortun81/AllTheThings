@@ -125,9 +125,9 @@ namespace ATT
             // Key-Value Pair   // Classic Release Version
             { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },    // Unknown, invalid data.
             { "CLASSIC", new int[] { 1, 15, 7, 22248 } },   // NOTE: Values for WoW-Classic
-            { "TBC", new int[] { 2, 5, 4, 22248 } },        // NOTE: Values for TBC-Classic
-            { "WRATH", new int[] { 3, 4, 5, 22248 } },      // NOTE: Values for Wrath-Classic
-            { "CATA", new int[] { 4, 3, 4, 15595 } },
+            { "TBC", new int[] { 2, 5, 5, 43638 } },        // NOTE: Values for TBC-Classic
+            { "WRATH", new int[] { 3, 4, 5, 51666 } },      // NOTE: Values for Wrath-Classic
+            { "CATA", new int[] { 4, 4, 5, 54481 } },
             { "MOP", new int[] { 5, 4, 8, 18224 } },
             { "WOD", new int[] { 6, 2, 4, 21345 } },
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
@@ -196,6 +196,7 @@ namespace ATT
             { "questID", new Dictionary<long, List<IDictionary<string, object>>>() },
             { "recipeID", new Dictionary<long, List<IDictionary<string, object>>>() },
             { "spellID", new Dictionary<long, List<IDictionary<string, object>>>() },
+            { "sourceID", new Dictionary<long, List<IDictionary<string, object>>>() },
         };
 
         // TODO: clean all these separate collections into the above
@@ -744,6 +745,7 @@ namespace ATT
                     case "c":
                     case "specs":
                     case "races":
+                    case "sourceAchievements":
                     case "sourceQuests":
                     case "altQuests":
                     case "customCollect":
@@ -1088,6 +1090,10 @@ namespace ATT
                     {
                         return "isBounty";
                     }
+                case "isGuild":
+                    {
+                        return "isGuild";
+                    }
                 case "isRepeatable":
                 case "repeatable":
                     {
@@ -1198,6 +1204,11 @@ namespace ATT
                 case "modIDs":
                     {
                         return "modIDs";
+                    }
+
+                case "sourceAchievements":
+                    {
+                        return "sourceAchievements";
                     }
 
                 case "sourceQuests":
@@ -1367,6 +1378,7 @@ namespace ATT
                 case "setID":
                 case "skipFill":
                 case "sort":
+                case "sourceAchievement":
                 case "sourceQuest":
                 case "sourceText":
                 case "style":
@@ -2408,6 +2420,7 @@ namespace ATT
                     var eventIDs = new Dictionary<long, long>();
                     var eventRemaps = new Dictionary<long, long>();
                     var eventSchedules = new Dictionary<long, string>();
+                    var timerunningSeasonIDs = new Dictionary<long, long>();
                     var icons = new Dictionary<long, string>();
                     var constants = new Dictionary<string, long>();
                     var localizationForText = new Dictionary<string, Dictionary<long, string>>();
@@ -2435,6 +2448,10 @@ namespace ATT
                                     if (header.TryGetValue("eventSchedule", out value))
                                     {
                                         eventSchedules[eventID] = value.ToString();
+                                    }
+                                    if (header.TryGetValue("timerunningSeasonID", out value))
+                                    {
+                                        timerunningSeasonIDs[eventID] = Convert.ToInt64(value);
                                     }
                                 }
                                 if (header.TryGetValue("icon", out value))
@@ -2635,6 +2652,15 @@ namespace ATT
                         foreach (var pair in eventRemaps)
                         {
                             ExportObjectKeyValue(builder, pair.Key, pair.Value).AppendLine();
+                        }
+                        builder.AppendLine("});").AppendLine();
+                    }
+                    if (timerunningSeasonIDs.Any())
+                    {
+                        builder.AppendLine("localize(L.EVENT_TIMERUNNING_SEASONS, {");
+                        foreach (var pair in timerunningSeasonIDs)
+                        {
+                            ExportObjectKeyValue(builder, pair.Value, pair.Key).AppendLine();
                         }
                         builder.AppendLine("});").AppendLine();
                     }

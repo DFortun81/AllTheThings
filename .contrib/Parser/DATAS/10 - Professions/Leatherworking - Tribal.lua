@@ -6,7 +6,7 @@ profession(LEATHERWORKING, {
 			5143,	-- Tribal Leatherworking [Alliance]
 			5148,	-- Tribal Leatherworking [Horde]
 		},
-		["timeline"] = { "removed 4.0.1" },
+		["timeline"] = { REMOVED_4_0_1 },
 		["groups"] = {
 			-- #if AFTER TBC
 			{
@@ -22,7 +22,7 @@ profession(LEATHERWORKING, {
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Windhawk Hauberk",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35585,
 						["requireSkill"] = 10660,
 					}),
@@ -34,7 +34,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Windhawk Bracers",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35588,
 						["requireSkill"] = 10660,
 					}),
@@ -46,7 +46,7 @@ profession(LEATHERWORKING, {
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, {
 						["name"] = "Windhawk Belt",
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 35587
 					}),
 				},
@@ -104,13 +104,13 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Frostsaber Tunic",
-						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						["recipeID"] = 19104,
 						["requireSkill"] = 10660,
 					},
 					{
 						["name"] = "Ironfeather Breastplate",
-						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						["recipeID"] = 19086,
 						["requireSkill"] = 10660,
 					},
@@ -138,7 +138,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Frostsaber Gloves",
-						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						["recipeID"] = 19087,
 						["requireSkill"] = 10660,
 					},
@@ -171,7 +171,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Frostsaber Leggings",
-						["timeline"] = { REMOVED_4_0_3, "added 10.1.7" },
+						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 						["recipeID"] = 19074,
 						["requireSkill"] = 10660,
 					},

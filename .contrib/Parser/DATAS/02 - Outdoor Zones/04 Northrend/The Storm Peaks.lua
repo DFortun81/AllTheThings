@@ -57,7 +57,7 @@ local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
 		else
 			AddQuestTooltip(tooltipInfo, "Complete %s", t.spear);
 		end
-		
+
 		local AddQuestTooltipWithReputation = _.Modules.FactionData.AddQuestTooltipWithReputation;
 		tinsert(tooltipInfo, { left = "Daily Quests:" });
 		if viscousRep > 0 then
@@ -590,10 +590,10 @@ root(ROOTS.Zones, {
 							i(43186),	-- Iceshrieker's Touch
 							i(43185),	-- Wand of Chilled Renewal
 							i(43188, {	-- Razor-sharp Ice Shards
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(43187, {	-- Weighted Throwing Axe
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -763,7 +763,7 @@ root(ROOTS.Zones, {
 							i(42830),	-- Ring of Jokkum
 						},
 					}),
-					q(13001, {	-- Forging Hodir's Spear
+					q(13001, {	-- Raising Hodir's Spear
 						["qg"] = 30252,	-- Lorekeeper Randvir
 						["coord"] = { 64.8, 59.1, THE_STORM_PEAKS },
 						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
@@ -816,6 +816,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 53.1, 65.7, THE_STORM_PEAKS },
 						["sourceQuest"] = 12972,	-- You'll Need a Bear
 					}),
+					heroscall(q(49554, {	-- Hero's Call: Storm Peaks!
+						["timeline"] = { ADDED_7_3_5 },
+						["maps"] = { NORTHREND_DALARAN, NORTHREND_THE_UNDERBELLY },
+						["isBreadcrumb"] = true,
+						["lvl"] = 67,
+					})),
 					q(12991, {	-- Hit Them Where it Hurts
 						["qg"] = 30152,	-- Bruor Ironbane
 						["coord"] = { 31.2, 38.1, THE_STORM_PEAKS },
@@ -893,6 +899,17 @@ root(ROOTS.Zones, {
 							i(42814),	-- Broken Chastity Belt
 							i(42833),	-- Jawbreakers
 						},
+					}),
+					q(12853, {	-- Luxurious Getaway!
+						["qg"] = 30490,	-- Rin Duoctane
+						-- #if AFTER 7.3.5.25600
+						["sourceQuests"] = {
+							49554,	-- Hero's Call: Storm Peaks!
+							49536,	-- Warchief's Command: Storm Peaks!
+						},
+						-- #endif
+						["coord"] = { 31.2, 49.6, NORTHREND_THE_UNDERBELLY },
+						["maps"] = { NORTHREND_DALARAN },
 					}),
 					q(13422, {	-- Maintaining Discipline
 						["qg"] = 29796,	-- Gretta the Arbiter
@@ -1095,10 +1112,10 @@ root(ROOTS.Zones, {
 							i(43185),	-- Wand of Chilled Renewal
 							i(43186),	-- Iceshrieker's Touch
 							i(43188, {	-- Razor-sharp Ice Shards
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(43187, {	-- Weighted Throwing Axe
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1223,7 +1240,7 @@ root(ROOTS.Zones, {
 							i(42887),	-- Pauldrons of the Ascent
 							i(42876),	-- Light-Touched Mantle
 							i(42863, {	-- Sharpened Hyldnir Harpoon
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1367,7 +1384,7 @@ root(ROOTS.Zones, {
 						["requireSkill"] = ENGINEERING,
 						["sourceQuest"] = 12888,	-- SCRAP-E
 						["groups"] = {
-							recipe(55252),	-- Schematic: Scrapbot Construction Kit
+							r(55252),	-- Scrapbot Construction Kit
 						},
 					}),
 					q(13047, {	-- The Reckoning
@@ -1483,6 +1500,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
 						["sourceQuest"] = 13009,	-- A New Beginning
 					}),
+					warchiefscommand(q(49536, {	-- Warchief's Command: Storm Peaks!
+						["timeline"] = { ADDED_7_3_5 },
+						["races"] = HORDE_ONLY,
+						["isBreadcrumb"] = true,
+					})),
 					q(12862, {	-- When All Else Fails (A)
 						["qg"] = 29428,	-- Ricket
 						["coord"] = { 40.9, 85.3, THE_STORM_PEAKS },
@@ -1618,7 +1640,7 @@ root(ROOTS.Zones, {
 							i(43958),	-- Ice Mammoth (A) (MOUNT!)
 							i(44080),	-- Ice Mammoth (H) (MOUNT!)
 							i(44137, {	-- Arcanum of the Frosty Soul
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(44193),	-- Broken Stalactite
@@ -1724,7 +1746,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					i(41817, {	-- Design: Fractured Scarlet Ruby [WRATH] / Design: Smooth Autumn's Glow [CATA+]
-						["timeline"] = { "removed 4.0.1" },
+						["timeline"] = { REMOVED_4_0_1 },
 						["cr"] = 29570,	-- Nascent Val'kyr
 					}),
 					i(41819, {	-- Design: Radiant Forest Emerald
@@ -1736,7 +1758,7 @@ root(ROOTS.Zones, {
 					i(44724),	-- Everfrost Chip
 					i(44725),	-- Everfrost Chip
 					i(42780),	-- Relics of Ulduar
-					i(49050, {	-- Schematic: Jeeves
+					i(49050, {	-- Schematic: Jeeves (RECIPE!)
 						["crs"] = { 29724 },	-- Library Guardian
 					}),
 					i(43573, {	-- Tears of Bitter Anguish

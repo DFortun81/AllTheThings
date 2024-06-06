@@ -54,6 +54,8 @@ APPRENTICE_JOURNEYMAN_ENGINEERING = {
 	r(3978),	-- Standard Scope
 	r(3932),	-- Target Dummy
 	r(3942),	-- Whirring Bronze Gizmo
+
+	r(39895, {["timeline"] = {ADDED_5_0_4}}),	-- Fused Wiring
 };
 EXPERT_ARTISAN_ENGINEERING = {
 	r(4038, {	-- Engineering (Expert)
@@ -99,6 +101,7 @@ EXPERT_ARTISAN_ENGINEERING = {
 	r(12590),	-- Gyromatic Micro-Adjustor
 	r(12619),	-- Hi-Explosive Bomb
 	r(12596, {["timeline"] = {REMOVED_4_0_1}}),	-- Hi-Impact Mithril Slugs
+	r(63750, {["timeline"] = {ADDED_3_1_0}}),	-- High-powered Flashlight
 	r(3962),	-- Iron Grenade
 	r(3958),	-- Iron Strut
 	r(3939, {["timeline"] = {ADDED_4_1_0}}),	-- Lovingly Crafted Boomstick
@@ -123,7 +126,7 @@ EXPERT_ARTISAN_ENGINEERING = {
 	r(23071, {["timeline"] = {ADDED_2_0_1}}),	-- Truesilver Transformer
 	r(12591),	-- Unstable Trigger
 };
-GNOMISH_ENGINEERING = {
+CLASSIC_GNOMISH_ENGINEERING = {
 	r(20219, {	-- Gnomish Engineer
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
@@ -139,7 +142,7 @@ GNOMISH_ENGINEERING = {
 	r(12899),	-- Gnomish Shrink Ray
 	r(12895),	-- Inlaid Mithril Cylinder Plans
 };
-GOBLIN_ENGINEERING = {
+CLASSIC_GOBLIN_ENGINEERING = {
 	r(20222, {	-- Goblin Engineer
 		-- #if NOT ANYCLASSIC
 		["collectible"] = false,
@@ -164,9 +167,420 @@ EXPERT_ARTISAN_ENGINEERING
 	{}
 -- #endif
 );
+TBC_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_2_0_5 } }, {
+	r(30350, {	-- Engineering (Master)
+		["timeline"] = { ADDED_2_0_5, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 50,
+		-- #endif
+		["rank"] = 5,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264479, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Outland Engineering
+	n(ARMOR, {
+		applyclassicphase(TBC_PHASE_TWO, r(41317, {	-- Deathblow X11 Goggles
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { ROGUE, MONK, DRUID },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41320, {	-- Destruction Holo-gogs
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { PRIEST, MAGE, WARLOCK },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(40274, {	-- Furious Gizmatic Goggles
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41315, {	-- Gadgetstorm Goggles
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { SHAMAN },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41311, {	-- Justicebringer 2000 Specs
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { PALADIN },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41316, {	-- Living Replicator Specs
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { SHAMAN },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41319, {	-- Magnified Moon Specs
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { DRUID },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41321, {	-- Powerheal 4000 Lens
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { PRIEST },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41314, {	-- Surestrike Goggles v2.0
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { HUNTER, SHAMAN },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41312, {	-- Tankatronic Goggles
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+			-- #endif
+		})),
+		applyclassicphase(TBC_PHASE_TWO, r(41318, {	-- Wonderheal XT40 Shades
+			["timeline"] = { ADDED_2_1_0 },
+			-- #if BEFORE 7.3.5
+			["classes"] = { DRUID },
+			-- #endif
+		})),
+	}),
+	filter(MISC, {
+		r(30311),	-- Adamantite Grenade
+		r(30310),	-- Fel Iron Bomb
+		r(30346, {["timeline"] = {ADDED_2_0_5, REMOVED_4_0_1}}),	-- Fel Iron Shells
+		r(39973, {["timeline"] = {ADDED_2_1_0}}),	-- Frost Grenade
+	}),
+	filter(REAGENTS, {
+		r(30306),	-- Adamantite Frame
+		r(30303),	-- Elemental Blasting Powder
+		r(30304),	-- Fel Iron Casing
+		r(30309),	-- Felsteel Stabilizer
+		r(30305),	-- Handful of Fel Iron Bolts
+		r(30307),	-- Hardened Adamantite Tube
+		r(39971, {["timeline"] = {ADDED_2_1_0}}),	-- Icy Blasting Primers
+		r(30308),	-- Khorium Power Core
+	}),
+	n(WEAPONS, {
+		r(30312),	-- Fel Iron Musket
+		applyclassicphase(TBC_PHASE_TWO, r(41307, {["timeline"] = {ADDED_2_1_0}})),	-- Gyro-balanced Khorium Destroyer
+	}),
+}));
+TBC_GNOMISH_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5 } }, {
+	r(30575),	-- Gnomish Battle Goggles
+	r(30568),	-- Gnomish Flame Turret
+	r(30569),	-- Gnomish Poultryizer
+	r(30574),	-- Gnomish Power Goggles
+	r(30570),	-- Nigh-Invulnerability Belt
+}));
+TBC_GOBLIN_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_2_0_5 } }, {
+	r(30565),	-- Foreman's Enchanted Helmet
+	r(30566),	-- Foreman's Reinforced Helmet
+	r(30563),	-- Goblin Rocket Launcher
+	r(30560),	-- Super Sapper Charge
+	r(30558),	-- The Bigger One
+}));
+CLASSIC_TBC_GNOMISH_ENGINEERING = appendGroups(CLASSIC_GNOMISH_ENGINEERING,
+-- #if AFTER 2.0.5
+TBC_GNOMISH_ENGINEERING
+-- #else
+	{}
+-- #endif
+);
+CLASSIC_TBC_GOBLIN_ENGINEERING = appendGroups(CLASSIC_GOBLIN_ENGINEERING,
+-- #if AFTER 2.0.5
+TBC_GOBLIN_ENGINEERING
+-- #else
+	{}
+-- #endif
+);
+WRATH_ENGINEERING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_3_0_3 } }, {
+	r(51306, {	-- Engineering (Grand Master)
+		["timeline"] = { ADDED_3_0_3, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #else
+		["lvl"] = 65,
+		-- #endif
+		["rank"] = 6,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264481, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Northrend Engineering
+	n(ARMOR, {
+		r(56480, {	-- Armored Titanium Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+			-- #endif
+		}),
+		r(56483, {	-- Charged Titanium Specs
+			-- #if BEFORE 7.3.0
+			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+			-- #endif
+		}),
+		r(56487, {	-- Electroflux Sight Enhancers
+			-- #if BEFORE 7.3.0
+			["classes"] = {
+				-- #if AFTER CATA
+				-- CRIEVE NOTE: Not sure what patch this becomes available to hunters.
+				HUNTER,
+				-- #endif
+				SHAMAN,
+			},
+			-- #endif
+		}),
+		r(56486, {	-- Greensight Gogs
+			-- #if BEFORE 7.3.0
+			["classes"] = { DRUID },
+			-- #endif
+		}),
+		r(56465, {	-- Mechanized Snow Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { PRIEST, MAGE, WARLOCK },
+			-- #endif
+		}),
+		r(61481, {	-- Mechanized Snow Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+			-- #endif
+		}),
+		r(61482, {	-- Mechanized Snow Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { HUNTER, SHAMAN },
+			-- #endif
+		}),
+		r(61483, {	-- Mechanized Snow Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
+			-- #endif
+		}),
+		r(56574, {	-- Truesight Ice Blinders
+			-- #if BEFORE 7.3.0
+			["classes"] = { HUNTER, SHAMAN },
+			-- #endif
+		}),
+		r(62271, {	-- Unbreakable Healing Amplifiers
+			["timeline"] = {ADDED_3_0_8},
+			-- #if BEFORE 7.3.0
+			["classes"] = { PALADIN },
+			-- #endif
+		}),
+		r(56484, {	-- Visage Liquification Goggles
+			-- #if BEFORE 7.3.0
+			["classes"] = { PRIEST, MAGE, WARLOCK },
+			-- #endif
+		}),
+		r(56481, {	-- Weakness Spectralizers
+			-- #if BEFORE 7.3.0
+			["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+			-- #endif
+		}),
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(54736),	-- EMP Generator[MoP+] \\ Personal Electromagnetic Pulse Generator[Wrath-MoP]
+		r(55002),	-- Flexweave Underlay
+		r(54793),	-- Frag Belt
+		r(54998, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Hand-Mounted Pyro Rocket
+		r(54999, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Hyperspeed Accelerators
+		r(67839, {["timeline"] = {ADDED_3_2_0}}),	-- Mind Amplification Dish
+		r(55016),	-- Nitro Boosts
+		r(63770, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Reticulated Armor Webbing
+		r(63765, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Springy Arachnoweave
+	}),
+	filter(MISC, {
+		r(56461),	-- Bladed Pickaxe
+		r(56468),	-- Box of Bombs
+		r(56460),	-- Cobalt Frag Bomb
+		r(56463),	-- Explosive Decoy
+		r(56462),	-- Gnomish Army Knife
+		r(67326, {["timeline"] = {ADDED_3_2_0}}),	-- Goblin Beam Welder
+		r(56459),	-- Hammer Pick
+		r(56476),	-- Healing Injector Kit
+		r(56474, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Mammoth Cutters
+		r(56477),	-- Mana Injector Kit
+		r(56475, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Saronite Razorheads
+	}),
+	filter(REAGENTS, {
+		r(56471),	-- Froststeel Tube
+		r(56349),	-- Handful of Cobalt Bolts
+		r(56464),	-- Overcharged Capacitor
+		r(53281),	-- Volatile Blasting Trigger
+	}),
+	filter(TOYS, {
+		r(56472),	-- MOLL-E
+		r(67920, {["timeline"] = {ADDED_3_2_0}}),	-- Wormhole Generator: Northrend
+	}),
+	filter(TRINKET_F, {
+		r(56469),	-- Gnomish Lightning Generator
+		r(56467),	-- Noise Machine
+		r(56466),	-- Sonic Booster
+	}),
+	n(WEAPONS, {
+		r(56479),	-- Armor Plated Combat Shotgun
+		r(54353),	-- Mark "S" Boomstick
+		r(60874),	-- Nesingwary 4000
+	}),
+	n(WEAPON_ENCHANTMENTS, {
+		r(61471),	-- Diamond-Cut Refractor Scope
+		r(56478),	-- Heartseeker Scope
+		r(56470),	-- Sun Scope
+	}),
+}));
+WRATH_GNOMISH_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_3_0_3 } }, {
+	r(56473), -- Gnomish X-Ray Specs
+}));
+WRATH_GOBLIN_ENGINEERING = applyclassicphase(TBC_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_3_0_3 } }, {
+	r(56514), -- Global Thermal Sapper Charge
+}));
+ALL_GNOMISH_ENGINEERING = appendGroups(CLASSIC_TBC_GNOMISH_ENGINEERING,
+-- #if AFTER 3.0.3
+WRATH_GNOMISH_ENGINEERING
+-- #else
+	{}
+-- #endif
+);
+ALL_GOBLIN_ENGINEERING = appendGroups(CLASSIC_TBC_GOBLIN_ENGINEERING,
+-- #if AFTER 3.0.3
+WRATH_GOBLIN_ENGINEERING
+-- #else
+	{}
+-- #endif
+);
+CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
+	r(82774, {	-- Engineering (Illustrious)
+		["timeline"] = { ADDED_4_0_3_LAUNCH, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 7,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264483, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Engineering
+	n(ARMOR, {
+		r(81722),	-- Agile Bio-Optic Killshades
+		r(84406),	-- Authentic Jr. Engineer Goggles
+		r(81724),	-- Camouflage Bio-Optic Killshades
+		r(81716),	-- Deadly Bio-Optic Killshades
+		r(81720),	-- Energized Bio-Optic Killshades
+		r(81725),	-- Lightweight Bio-Optic Killshades
+		r(81714),	-- Reinforced Bio-Optic Killshades
+		r(81715),	-- Specialized Bio-Optic Killshades
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(82177, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Quickflip Deflection Plates
+		r(82175, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Synapse Springs
+		r(82180, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Tazik Shocker
+		r(82201, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_5_0_4}}),	-- Z50 Mana Gulper
+	}),
+	filter(BATTLE_PETS, {
+		r(84413),	-- De-Weaponized Mechanical Companion
+		r(84412),	-- Personal World Destroyer
+	}),
+	filter(MISC, {
+		r(95707),	-- Big Daddy
+		r(95703),	-- Electrostatic Condenser
+		r(84416),	-- Elementium Toolbox
+		r(84429),	-- Goblin Barbecue
+		r(84430),	-- Heat-Treated Spinning Lure
+		r(84411),	-- High-Powered Bolt Gun
+		r(84415),	-- Lure Master Tackle Box
+		r(84409),	-- Volatile Seaforium Blastpack
+	}),
+	filter(REAGENTS, {
+		r(94748),	-- Electrified Ether
+		r(84403),	-- Handful of Obsidium Bolts
+	}),
+	filter(TOYS, {
+		r(95705),	-- Gnomish Gravity Well
+		r(84421),	-- Loot-a-Rang
+	}),
+	filter(TRINKET_F, {
+		r(84418),	-- Elementium Dragonling
+	}),
+	n(WEAPONS, {
+		r(84420),	-- Finely-Tuned Throat Needler
+		r(84432),	-- Kickback 5000
+		r(84431),	-- Overpowered Chicken Splitter
+		r(84417),	-- Volatile Thunderstick
+	}),
+	n(WEAPON_ENCHANTMENTS, {
+		r(84428),	-- Gnomish X-Ray Scope
+		r(84408),	-- R19 Threatfinder
+		r(84410),	-- Safety Catch Removal Kit
+	}),
+}));
+MOP_ENGINEERING = applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+	r(110403, {	-- Engineering (Zen Master)
+		["timeline"] = { ADDED_5_0_4, REMOVED_8_0_1_LAUNCH },
+		-- #if NOT ANYCLASSIC
+		["collectible"] = false,
+		-- #endif
+		["rank"] = 8,
+	}),
+	applyclassicphase(BFA_PHASE_ONE, r(264485, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Pandaria Engineering
+	n(ARMOR, {
+		r(127118),	-- Agile Retinal Armor
+		r(127119),	-- Camouflage Retinal Armor
+		r(127120),	-- Deadly Retinal Armor
+		r(127121),	-- Energized Retinal Armor
+		r(127117),	-- Lightweight Retinal Armor
+		r(127130),	-- Mist-Piercing Goggles
+		r(127123),	-- Reinforced Retinal Armor
+		r(127122),	-- Specialized Retinal Armor
+	}),
+	n(ARMOR_ENCHANTMENTS, {
+		r(126392),	-- Goblin Glider
+		r(109077, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Incendiary Fireworks Launcher
+		r(108789, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Phase Fingers
+		r(126731, {["timeline"] = {ADDED_5_0_4, REMOVED_6_0_2}}),	-- Synapse Springs [Rank 2]
+		r(109099),	-- Watergliding Jets
+	}),
+	filter(BATTLE_PETS, {
+		r(127135),	-- Mechanical Pandaren Dragonling
+	}),
+	filter(GEMS, {
+		r(131211),	-- Flashing Tinker's Gear
+		r(131212),	-- Fractured Tinker's Gear
+		r(131213),	-- Precise Tinker's Gear
+		r(131214),	-- Quick Tinker's Gear
+		r(131215),	-- Rigid Tinker's Gear
+		r(131216),	-- Smooth Tinker's Gear
+		r(131217),	-- Sparkling Tinker's Gear
+		r(131218),	-- Subtle Tinker's Gear
+	}),
+	filter(MISC, {
+		r(127127),	-- G91 Landshark
+		r(127128),	-- Goblin Dragon Gun, Mark II
+		r(127124),	-- Locksmith's Powderkeg
+		r(131353),	-- Pandaria Fireworks
+		r(127131),	-- Thermal Anvil
+	}),
+	filter(MOUNTS, {
+		r(127138),	-- Depleted-Kyparium Rocket
+		r(127139),	-- Geosynchronous World Spinner
+	}),
+	filter(REAGENTS, {
+		r(127113),	-- Ghost Iron Bolts
+		r(127114),	-- High-Explosive Gunpowder
+		r(131563),	-- Tinker's Kit
+	}),
+	filter(TOYS, {
+		r(127129),	-- Blingtron 4000
+		r(127132),	-- Wormhole Generator: Pandaria
+	}),
+	filter(TRINKET_F, {
+		r(127134),	-- Ghost Iron Dragonling
+	}),
+	n(WEAPONS, {
+		r(127136),	-- Big Game Hunter
+		r(127137),	-- Long-Range Trillium Sniper
+	}),
+	n(WEAPON_ENCHANTMENTS, {
+		r(127115),	-- Lord Blastington's Scope of Doom
+		r(127116),	-- Mirror Scope
+	}),
+}));
 local SECRET_OF_DRAENOR_ENGINEERING = 119299;
 DRAENOR_ENGINEERING = applyclassicphase(WOD_PHASE_ONE, i(111921, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_3_LAUNCH } }, {
-	["description"] = "This is a reward for completing the introductory Blacksmithing questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
+	["description"] = "This is a reward for completing the introductory Engineering questline that can drop from any Draenor mob. Also sold at The Forge for 100 gold.",
 	["filterID"] = MISC,
 	["g"] = {
 		r(158739, {	-- Engineering (Draenor Master)

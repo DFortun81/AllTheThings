@@ -461,6 +461,9 @@ root(ROOTS.Zones, {
 							37188,	-- A Flash of Bronze...	(NYI)
 							37194,	-- A Flash of Bronze...	(NYI)
 						},
+						["groups"] = {
+							i(104110),	-- Curious Bronze Timepiece (QI!)
+						},
 					}),
 					q(30635, {	-- Killing the Quilen
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
@@ -1825,7 +1828,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 82.0, 29.3, VALE_OF_ETERNAL_BLOSSOMS },
 						["g"] = {
 							i(137788, {	-- Technique: Songs of Peace (RECIPE!)
-								["timeline"] = { "added 7.0.3" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 						},
 					}),

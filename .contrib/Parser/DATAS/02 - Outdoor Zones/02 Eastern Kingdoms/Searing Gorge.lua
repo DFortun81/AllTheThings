@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(4910, {	-- Searing Gorge Quests
-					["timeline"] = { "added 4.0.1" },
+					["timeline"] = { ADDED_4_0_1 },
 					-- #if AFTER MOP
 					["groups"] = {
 						crit(38257, {	-- Thorium Advance
@@ -76,15 +76,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5629),	-- Thorium Advance
 				exploration(1446),	-- Thorium Point
 				-- #endif
-				--[[
-				exploration(2838),	-- Stonewrought Pass
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(673, {	-- Iron Summit, Searing Gorge
 					["cr"] = 47927,	-- Doug Deepdown <Flight Master>
 					["coord"] = { 41.0, 68.6, SEARING_GORGE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				fp(74, {	-- Thorium Point, Searing Gorge
 					["cr"] = 2941,	-- Lanie Reed <Gryphon Master>
@@ -166,6 +163,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(63209, {	-- Glassweb Robes
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(63208, {	-- Glassweb Spider Fangs
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(3201, {	-- At Last!
@@ -465,7 +467,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(7702, {	-- Kill 'Em With Sleep Deprivation
 					["qg"] = 14628,	-- Evonice Sootsmoker
 					["coord"] = { 38.4, 27.7, SEARING_GORGE },
-					["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0, REMOVED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_3_3_0, REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/20 Dark Iron Pillow
@@ -476,7 +478,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 14635,	-- Sleepy Dark Iron Worker
 						}),
 						i(19129, {	-- Everglowing Robe
-							["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0, REMOVED_4_0_3 },
+							["timeline"] = { CREATED_1_12_1, ADDED_3_3_0, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -549,11 +551,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 179832 },	-- Pillamaster's Ornate Pillow
 						{ "n",  14636 },	-- Chambermaid Pillaclencher
 					},
-					["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0, REMOVED_4_0_3 },
+					["timeline"] = { CREATED_1_12_1, ADDED_3_3_0, REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
 						i(18951, {	-- Evonice's Landin' Pilla
-							["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0 },
+							["timeline"] = { CREATED_1_12_1, ADDED_3_3_0 },
 						}),
 					},
 				}),
@@ -573,7 +575,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						i(18951, {	-- Evonice's Landin' Pilla
-							["timeline"] = { "created 1.12.1.10958", ADDED_3_3_0 },
+							["timeline"] = { CREATED_1_12_1, ADDED_3_3_0 },
 						}),
 					},
 				}),
@@ -932,7 +934,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156936, {	-- Dark Iron Pike
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1334,13 +1336,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156937, {	-- Dark Iron Blackjack
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157009, {	-- Dark Iron Shank
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(157010, {	-- Dark Iron Maul
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1648,28 +1650,36 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				o(266289, {	-- Time Lost Chest
 					["description"] = "Kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
 					["coord"] = { 37.0, 48.9, SEARING_GORGE },
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 					["cost"] = { { "i", 142359, 1 } },	-- Lava Oil
 					["groups"] = {
 						i(142358, {	-- Plans: Blazing Rapier (RECIPE!)
-							["timeline"] = { "added 7.1.5.23360" },
+							["timeline"] = { ADDED_7_1_5 },
 						}),
 					},
 				}),
 			}),
 			-- #endif
 			n(ZONE_DROPS, {
+				i(62916, {	-- Dark Iron Bullet
+					["timeline"] = { ADDED_4_0_3 },
+					["crs"] = {
+						8338,	-- Dark Iron Marksman
+						8566,	-- Dark Iron Lookout
+					},
+					["description"] = "In addition to being looted, this item can also be passively obtained by being attacked by said mobs. Required for the quest 'They Build a Better Bullet', is otherwise safe to discard.",
+				}),
 				i(18944, {	-- Incendosaur Scale
 					["cr"] = 9318,	-- Incendosaur
 				}),
 				i(142359, {	-- Lava Oil
 					["coord"] = { 48.0, 42.3, SEARING_GORGE },
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 					["cr"] = 47463,	-- Searing Flamewraith
 				}),
 				i(14476, {	-- Pattern: Cindercloth Gloves
 					-- Started dropping again in 8.2.  The new version (167887) is also available from Time-Lost Trader
-					["timeline"] = { "removed 4.0.1", "added 8.2.0" },
+					["timeline"] = { REMOVED_4_0_1, ADDED_8_2_0 },
 					["cr"] = 5861,	-- Twilight Fire Guard
 					["coords"] = {
 						{ 19.4, 36.6, SEARING_GORGE },
@@ -1678,7 +1688,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				i(14471, {	-- Pattern: Cindercloth Vest
 					-- Started dropping again in 8.2.  The new version (167886) is also available from Time-Lost Trader
-					["timeline"] = { "removed 4.0.1", "added 8.2.0" },
+					["timeline"] = { REMOVED_4_0_1, ADDED_8_2_0 },
 					["cr"] = 5861,	-- Twilight Fire Guard
 					["coords"] = {
 						{ 19.4, 36.6, SEARING_GORGE },

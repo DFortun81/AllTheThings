@@ -739,31 +739,31 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				-- Awakened
 				ach(19570, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakened Flames
 					crit(64986, {	-- Gnarlroot
-						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64987, {	-- Igira the Cruel
-						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { IGIRA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64988, {	-- Volcoross
-						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { VOLCOROSS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64989, {	-- Council of Dreams
-						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { COUNCIL_OF_DREAMS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64990, {	-- Larodar, Keeper of the Flame
-						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { LARODAR, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64991, {	-- Nymue, Weaver of the Cycle
-						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { NYMUE, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64992, {	-- Smolderon
-						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { SMOLDERON, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64993, {	-- Tindral Sageswift, Seer of the Flame
-						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { TINDRAL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64994, {	-- Fyrakk the Blazing
-						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 				})),
 				ach(19571, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Flames
@@ -1053,7 +1053,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS).AddGroups({
 				n(QUESTS, {
-					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_2_7 } }, {	-- A Glowing Memento
+					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_11_0_1_LAUNCH } }, {	-- A Glowing Memento
 						["provider"] = { "i", 211375 },	-- Everglowing Ember
 						["g"] = {
 							i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (DM!)
@@ -1167,7 +1167,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						title(530),	-- <Name> the Blazing
 					}),
 					ach(19351, {["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }}),	-- Cutting Edge: Fyrakk the Blazing
-					ach(19392, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, "removed 10.2.5.53162" } }, {	-- Hall of Fame: Fyrakk the Blazing
+					ach(19392, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_10_2_5 } }, {	-- Hall of Fame: Fyrakk the Blazing
 						title(528),	-- <Name>, Famed Slayer of Fyrakk
 					})),
 					ach(19389),	-- Mythic: Fyrakk the Blazing Guild Run

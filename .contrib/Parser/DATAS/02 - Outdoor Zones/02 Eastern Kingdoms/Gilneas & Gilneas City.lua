@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(55010),	-- Cannoneer's Leggings
 								i(55009),	-- Steadfast Boots
 								i(131866, {	-- Steadfast Greaves
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 							},
 						}),
@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["groups"] = {
 								i(54976),	-- Bracers of the Queen's Gate
 								i(131865, {	-- Darius' Handguards
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(55005),	-- Darius' Sash
 								i(55006),	-- Dempsey's Gloves
@@ -513,7 +513,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["provider"] = { "n", 35118 },	-- Bloodfang Worgen
 								}),
 								i(131864, {	-- Armstead Bindings
-									["timeline"] = { "added 7.0.3.22248" },
+									["timeline"] = { ADDED_7_0_3 },
 								}),
 								i(54975, {	-- Armstead Bracers
 									["timeline"] = { ADDED_4_0_3 },
@@ -581,7 +581,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(55003),	-- Greymane Cloak
 						i(55002),	-- Blue-Bloodied Boots
 						i(131378, {	-- Blue-Bloodied Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58255),	-- Lord Walden's Top Hat
 					},
@@ -812,7 +812,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 23.2, 67.2, 179 },
 						}),
 						i(131355, {	-- Dark Ranger's Hauberk
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(55007),	-- Dark Ranger's Vest
 						i(55008),	-- Leader's Boots
@@ -850,7 +850,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(54999),	-- Seryl's Robes
 						i(55000),	-- Hightailing Leggings
 						i(131380, {	-- Hightailing Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(55001),	-- Hotfoot Boots
 					},
@@ -877,10 +877,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(66660),	-- Hammer of Controlled Fury
 						i(66876),	-- Sharp Edge of Balance
 						i(133697, {	-- Sharpened Wolf's Tooth
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156985, {	-- Staff of Deserved Tranquility
-							["timeline"] = { "added 7.3.5" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(52942),	-- Staff of Earned Tranquility
 					},
@@ -1008,7 +1008,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(54996),	-- Rygna-Silk Leggings
 						i(54997),	-- Arachnophobe's Breastplate
 						i(131369, {	-- Arachnophobe's Chain Shirt
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(54998),	-- Braided Gossamer Armbands
 					},
@@ -1053,7 +1053,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(54981),	-- Caregiver's Leggings
 						i(54982),	-- Gloves of Protection
 						i(131351, {	-- Protector's Legguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1096,7 +1096,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(54994),	-- Paramedic Bracers
 						i(131368, {	-- First Responder's Bindings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(54995),	-- Hailwood Chestpiece
 					},
@@ -1240,7 +1240,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(58216),	-- "Flying" Worgen Robes
 						i(55015),	-- Gloves of the Two Birds
 						i(131354, {	-- The Stone's Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1274,7 +1274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(55018),	-- Boatwork Boots
 						i(55019),	-- Repair Belt
 						i(131356, {	-- Repairman's Cinch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),

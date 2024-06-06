@@ -45,7 +45,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190584, {	-- Memory of Unity (DK)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 		cl(DEMONHUNTER, bubbleDownSelf({ ["classes"] = { DEMONHUNTER } }, {
@@ -78,7 +78,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190587, {	-- Memory of Unity (DH)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 		cl(DRUID, bubbleDownSelf({ ["classes"] = { DRUID } }, {
@@ -119,7 +119,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190588, {	-- Memory of Unity (DRUID)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 		cl(EVOKER, bubbleDownSelf({ ["classes"] = { EVOKER }, ["timeline"] = { ADDED_10_0_0 } }, {
@@ -159,7 +159,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190589, {	-- Memory of Unity (HUNTER)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 		cl(MAGE, bubbleDownSelf({ ["classes"] = { MAGE } }, {
@@ -196,7 +196,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190590, {	-- Memory of Unity (MAGE)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 		cl(MONK, bubbleDownSelf({ ["classes"] = { MONK } }, {
@@ -233,7 +233,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190591, {	-- Memory of Unity (MONK)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 		cl(PALADIN, bubbleDownSelf({ ["classes"] = { PALADIN } }, {
@@ -270,7 +270,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190592, {	-- Memory of Unity (PALADIN)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 		cl(PRIEST, bubbleDownSelf({ ["classes"] = { PRIEST } }, {
@@ -307,7 +307,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190593, {	-- Memory of Unity (PRIEST)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 		cl(ROGUE, bubbleDownSelf({ ["classes"] = { ROGUE } }, {
@@ -344,7 +344,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190594, {	-- Memory of Unity (ROGUE)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 		cl(SHAMAN, bubbleDownSelf({ ["classes"] = { SHAMAN } }, {
@@ -381,7 +381,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190595, {	-- Memory of Unity (SHAMAN)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 		cl(WARLOCK, bubbleDownSelf({ ["classes"] = { WARLOCK } }, {
@@ -418,7 +418,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190596, {	-- Memory of Unity (WARLOCK)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 		cl(WARRIOR, bubbleDownSelf({ ["classes"] = { WARRIOR } }, {
@@ -455,7 +455,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(190598, {	-- Memory of Unity (WARRIOR)
-				["timeline"] = { "added 9.2.0" },
+				["timeline"] = { ADDED_9_2_0 },
 			}),
 		})),
 	}),

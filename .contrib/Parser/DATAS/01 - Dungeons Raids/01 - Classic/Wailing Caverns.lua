@@ -43,10 +43,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(65985),	-- Cleansed Pauldrons
 							i(65961),	-- Cobrahn's Boots
 							i(131615, {	-- Cobrahn's Scale Gloves
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(131616, {	-- Pytha's Chain Boots
-								["timeline"] = { "added 7.0.3.22248" },
+								["timeline"] = { ADDED_7_0_3 },
 							}),
 							i(66003),	-- Pytha's Vest
 							i(65937),	-- Serpentis' Gloves
@@ -201,7 +201,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["lvl"] = lvlsquish(15, 15, 8),
 						["groups"] = {
 							objective(1, {	-- 0/5 Serpentbloom
-								["provider"] = { "i", 5339 },	-- Serpentbloom
+								["providers"] = {
+									{ "i", 5339 },	-- Serpentbloom
+									{ "o", 13891 },	-- Serpentbloom
+								},
 							}),
 						},
 					}),
@@ -213,7 +216,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["lvl"] = 14,
 						["groups"] = {
 							objective(1, {	-- 0/10 Serpentbloom
-								["provider"] = { "i", 5339 },	-- Serpentbloom
+								["providers"] = {
+									{ "i", 5339 },	-- Serpentbloom
+									{ "o", 13891 },	-- Serpentbloom
+								},
 							}),
 							i(10919, {	-- Apothecary Gloves
 								["timeline"] = { REMOVED_4_0_3 },
@@ -281,7 +287,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				n(3840, {	-- Druid of the Fang
 					i(10413),	-- Gloves of the Fang
 					i(132743, {	-- Slither-Scale Gauntlets
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(208015, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Stuffed Deviate Scale Pouch
 						i(208016),	-- Deviate Scale Pouch
@@ -307,7 +313,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(132737, {	-- Cavern Slitherer Pauldrons
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(5404),	-- Serpent's Shoulders
 					i(151426, {	-- Lady Anacondra's Satin Cuffs
@@ -315,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(10412),	-- Belt of the Fang
 					i(132740, {	-- Slither-Scale Cord
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(6446),	-- Snakeskin Bag
 				},
@@ -340,7 +346,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(6473),	-- Armor of the Fang
 					i(132739, {	-- Slither-Scale Hauberk
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 					i(151428, {	-- Slumbersilk Waistcord
 						["timeline"] = { ADDED_7_3_0 },
@@ -355,7 +361,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(6460),	-- Cobrahn's Grasp
 					i(10410),	-- Leggings of the Fang
 					i(132742, {	-- Slither-Scale Britches
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				},
 			}),
@@ -382,7 +388,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(10411),	-- Footpads of the Fang
 					i(6459),	-- Savage Trodders
 					i(132741, {	-- Slither-Scale Boots
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 					}),
 				},
 			}),
@@ -407,7 +413,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_ONE, i(209838, {	-- Hypnotic Crystal
-						["timeline"] = { "removed 2.0.1" },
+						["timeline"] = { REMOVED_2_0_1 },
 						["classes"] = { HUNTER },
 					})),
 					-- #endif

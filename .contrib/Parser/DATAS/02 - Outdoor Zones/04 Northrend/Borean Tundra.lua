@@ -238,7 +238,7 @@ root(ROOTS.Zones, {
 						}),
 						pet(536),	-- Tundra Penguin (PET!)
 						pet(1238, {	-- Unborn Val'kyr (PET!)
-							["timeline"] = { "added 5.3.0.16758" },
+							["timeline"] = { ADDED_5_3_0 },
 						}),
 					},
 				}),
@@ -795,7 +795,7 @@ root(ROOTS.Zones, {
 					q(11672, {	-- Enlistment Day
 						["qg"] = 25307,	-- Recruitment Officer Blythe
 						-- #if AFTER 4.0.3.13277
-						["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra!
+						["sourceQuest"] = 28709,	-- Hero's Call: Borean Tundra! [7.3.5+] / Hero's Call: Northrend!
 						-- #endif
 						["coord"] = { 57.8, 67.5, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
@@ -821,6 +821,9 @@ root(ROOTS.Zones, {
 							i(37399),	-- Floodplain Shoulderpads
 							i(37212),	-- Transborean Wraps
 							i(37422),	-- Westrift Wristguards
+							i(37028, {	-- Condor-Bone Star
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
 						},
 					}),
 					q(11683, {	-- Fallen Necropolis
@@ -964,14 +967,14 @@ root(ROOTS.Zones, {
 							i(37047),	-- Branch of Everlasting Flame
 							i(37528),	-- Dry Earth Circle
 							i(37573, {	-- Idol of the Plainstalker
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(37574, {	-- Libram of Furious Blows
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(37049),	-- Lost Marksman's Rifle
 							i(37575, {	-- Totem of the Tundra
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -1064,6 +1067,15 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.1, 44.3, BOREAN_TUNDRA },
 						["sourceQuest"] = 11864,	-- A Mission Statement
 					}),
+					heroscall(q(28709, {	-- Hero's Call: Borean Tundra! [7.3.5+] / Hero's Call: Northrend!
+						["timeline"] = { ADDED_4_0_3 },
+						["isBreadcrumb"] = true,
+						-- #if BEFORE 7.3.5
+						-- Cataclysm: Minimum is level 68. (TODO: Confirm this.)
+						-- Cataclysm: Maximum is level 78 (TODO: Test max level between 74 and 79, 78 is based on Wowpedia info)
+						["lvl"] = { 68, 78 },
+						-- #endif
+					})),
 					q(11660, {	-- Horn of the Ancient Mariner
 						["qg"] = 25476,	-- Waltor of Pal'ea
 						["coord"] = { 32.3, 54.2, BOREAN_TUNDRA },
@@ -1645,14 +1657,14 @@ root(ROOTS.Zones, {
 							i(37047),	-- Branch of Everlasting Flame
 							i(37528),	-- Dry Earth Circle
 							i(37573, {	-- Idol of the Plainstalker
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(37049),	-- Lost Marksman's Rifle
 							i(37574, {	-- Libram of Furious Blows
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(37575, {	-- Totem of the Tundra
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 							}),
 						},
 					}),
@@ -2441,7 +2453,7 @@ root(ROOTS.Zones, {
 					o(244447, {	-- White Murloc Egg
 						["description"] = "In a hidden cave in a glacier contained in the White Murloc Egg at the back of the room, not the table.",
 						["coord"] = { 56.0, 88.0, BOREAN_TUNDRA },
-						["timeline"] = { "added 6.2.2.20444" },
+						["timeline"] = { ADDED_6_2_2 },
 						["groups"] = {
 							i(22780),	-- White Murloc Egg (Terky)
 						},
@@ -2488,16 +2500,16 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(50373, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(38452),	-- Bulwark of the Warchief
 							i(38460),	-- Charged Wand of the Cleft
 							i(38458),	-- Darkspear Orb
 							i(44938, {	-- Plans: Titanium Plating [H] (RECIPE!)
-								["timeline"] = { "added 3.0.8" },
+								["timeline"] = { ADDED_3_0_8 },
 							}),
-							i(44502),	-- Schematic: Mechano-Hog
+							i(44502),	-- Schematic: Mechano-Hog (RECIPE!)
 							i(38456),	-- Sin'dorei Recurve Bow
 							i(38454),	-- Warsong Punisher
 							i(38461),	-- Warsong Shanker
@@ -2527,7 +2539,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(50372, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { "removed 5.0.4" },
+								["timeline"] = { REMOVED_5_0_4 },
 								["filterID"] = CONSUMABLES,
 							}),
 							i(38464),	-- Gnomish Magician's Quill
@@ -2535,10 +2547,10 @@ root(ROOTS.Zones, {
 							i(38463),	-- Lordaeron's Resolve
 							i(38459),	-- Orb of the Eastern Kingdons
 							i(44937, {	-- Plans: Titanium Plating [A] (RECIPE!)
-								["timeline"] = { "added 3.0.8" },
+								["timeline"] = { ADDED_3_0_8 },
 							}),
 							i(38457),	-- Sawed-Off Hand Cannon
-							i(44503),	-- Schematic: Mekgineer's Chopper
+							i(44503),	-- Schematic: Mekgineer's Chopper (RECIPE!)
 							i(38453),	-- Shield of the Lion-Hearted
 							i(38465),	-- Vanguard Soldier's Dagger
 						},
@@ -2569,10 +2581,19 @@ root(ROOTS.Zones, {
 							i(25474),	-- Tawny Wind Rider (MOUNT!)
 						},
 					}),
+					n(27188, {	-- Tonraq <Spearcrafter>
+						["coord"] = { 77.8, 52.2, BOREAN_TUNDRA },
+						["groups"] = {
+							i(39987),	-- Tuskarr Fishing Spear
+							i(39995, {	-- Tuskarr Javelin
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
+						},
+					}),
 				}),
 				n(ZONE_DROPS, {
 					i(140785, {	-- Hardened Circuitboard Plating
-						["timeline"] = { "added 7.0.3.22248" },
+						["timeline"] = { ADDED_7_0_3 },
 						["crs"] = {
 							25758,	-- Defendo-tank 66D
 							25814,	-- Fizzcrank Mechagnome

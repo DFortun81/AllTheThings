@@ -136,12 +136,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1766),	-- Shatter Scar Vale
 				exploration(1998),	-- Talonbranch Glade 
 				exploration(1769),	-- Timbermaw Hold
-				--[[
-				exploration(1764),	-- Bloodvenom River
-				exploration(1768),	-- Irontree Cavern
-				exploration(1770),	-- Shadow Hold
-				exploration(1771),	-- Shrine of the Deceiver
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(48, {	-- Bloodvenom Post, Felwood
@@ -159,7 +153,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 51.5, 82.2, FELWOOD },
 						-- #endif
 					},
-					["timeline"] = { "added 2.2.0.7272" },
+					["timeline"] = { ADDED_2_2_0 },
 				}),
 				fp(597, {	-- Irontree Clearing, Felwood
 					["cr"] = 43085,	-- Dirzak Pryocrank <Flight Master>
@@ -1265,6 +1259,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65302, {	-- Farlus' Staff
 							["timeline"] = { ADDED_4_0_3 },
 						}),
+						-- #if BEFORE MOP
+						i(65321, {	-- Stars of Felwood
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(5085, {	-- Mystery Goo
@@ -1323,10 +1322,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(65357, {	-- Rainbow Generator
-							["timeline"] = { ADDED_4_0_3, "deleted 7.0.3.22248" },
+							["timeline"] = { ADDED_4_0_3, DELETED_7_0_3 },
 						}),
 						i(133998, {	-- Rainbow Generator (TOY!)
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1977,7 +1976,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156982, {	-- Shadow Hold Dagger
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -2327,12 +2326,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(107595, {	-- Grimrot
 					["description"] = "This is the daytime light grey bear model.",
 					["coord"] = { 38.2, 45.4, FELWOOD },
-					["timeline"] = { "added 7.0.3.22280" },
+					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(107596, {	-- Grimrot
 					["description"] = "This is the nightime black diseased bear model.",
 					["coord"] = { 38.2, 45.4, FELWOOD },
-					["timeline"] = { "added 7.0.3.22280" },
+					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(50925, {	-- Grovepaw
 					["coord"] = { 38.2, 72.8, FELWOOD },
@@ -2546,7 +2545,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cr"] = 7112,	-- Jaedenar Cultist
 				}),
 				i(15754, {	-- Pattern: Warbear Woolies (RECIPE!)
-					["timeline"] = { "removed 1.11.1.5462" },
+					["timeline"] = { REMOVED_1_11_1 },
 					["crs"] = {
 						7158,	-- Deadwood Shaman
 						7156,	-- Deadwood Den Watcher

@@ -1318,6 +1318,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 	}),
 	prof(TAILORING, {
 		filter(MOUNT_EQUIPMENT, {
+			i(165739),	-- Rough-hooked Tidespray Linen
 			i(168427),	-- Saddlechute
 		}),
 		filter(BAGS, {
@@ -1478,15 +1479,3 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		}),
 	}),
 }))));
-root(ROOTS.NeverImplemented, {
-	n(PROFESSIONS, {
-		prof(TAILORING, {
-			expansion(EXPANSION.BFA, {
-				i(154698),	-- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
-				i(154701),	-- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
-				i(161988),	-- Tidespray Linen Cloak of the Feather
-				i(161991),	-- Tidespray Linen Cloak of Resilience
-			}),
-		}),
-	}),
-});

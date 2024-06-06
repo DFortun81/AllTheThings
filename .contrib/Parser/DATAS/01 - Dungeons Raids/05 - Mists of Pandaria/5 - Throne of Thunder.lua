@@ -817,18 +817,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							["timeline"] = { ADDED_5_2_0, REMOVED_5_4_0 },
 						}),
 						ach(8090, {	-- A Complete Circuit
-							crit(22797, {	-- Static Shock Conduit Disabled First
-								["_noautomation"] = true,
-							}),
-							crit(22996, {	-- Diffusion Chain Conduit Disabled First
-								["_noautomation"] = true,
-							}),
-							crit(22997, {	-- Overcharge Conduit Disabled First
-								["_noautomation"] = true,
-							}),
-							crit(22998, {	-- Bouncing Bolt Conduit Disabled First
-								["_noautomation"] = true,
-							}),
+							crit(22797),	-- Static Shock Conduit Disabled First
+							crit(22996),	-- Diffusion Chain Conduit Disabled First
+							crit(22997),	-- Overcharge Conduit Disabled First
+							crit(22998),	-- Bouncing Bolt Conduit Disabled First
 						}),
 					},
 				}),
@@ -2150,38 +2142,6 @@ root(ROOTS.HiddenQuestTriggers, {
 root(ROOTS.NeverImplemented, {
 	expansion(EXPANSION.MOP, {
 		inst(362, {
-			filter(CONSUMABLES, {
-				i(96194),	-- Chest of the Crackling Vanquisher
-				i(96195),	-- Chest of the Crackling Conqueror
-				i(96196),	-- Chest of the Crackling Protector
-				i(96227),	-- Gauntlets of the Crackling Vanquisher
-				i(96228),	-- Gauntlets of the Crackling Conqueror
-				i(96229),	-- Gauntlets of the Crackling Protector
-				i(96251),	-- Helm of the Crackling Vanquisher
-				i(96252),	-- Helm of the Crackling Conqueror
-				i(96253),	-- Helm of the Crackling Protector
-				i(96259),	-- Leggings of the Crackling Vanquisher
-				i(96260),	-- Leggings of the Crackling Conqueror
-				i(96261),	-- Leggings of the Crackling Protector
-				i(96327),	-- Shoulders of the Crackling Vanquisher
-				i(96328),	-- Shoulders of the Crackling Conqueror
-				i(96329),	-- Shoulders of the Crackling Protector
-				i(96938),	-- Chest of the Crackling Vanquisher
-				i(96939),	-- Chest of the Crackling Conqueror
-				i(96940),	-- Chest of the Crackling Protector
-				i(96971),	-- Gauntlets of the Crackling Vanquisher
-				i(96972),	-- Gauntlets of the Crackling Conqueror
-				i(96973),	-- Gauntlets of the Crackling Protector
-				i(96995),	-- Helm of the Crackling Vanquisher
-				i(96996),	-- Helm of the Crackling Conqueror
-				i(96997),	-- Helm of the Crackling Protector
-				i(97003),	-- Leggings of the Crackling Vanquisher
-				i(97004),	-- Leggings of the Crackling Conqueror
-				i(97005),	-- Leggings of the Crackling Protector
-				i(97071),	-- Shoulders of the Crackling Vanquisher
-				i(97072),	-- Shoulders of the Crackling Conqueror
-				i(97073),	-- Shoulders of the Crackling Protector
-			}),
 			i(97075),	-- Spiderweb Tabi
 			i(97082),	-- Deeproot Treads
 			i(97086),	-- Abandoned Zandalari Silentbelt

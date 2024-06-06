@@ -484,13 +484,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					i(32274),	-- Design: Bold Crimson Spinel
 					i(32283, {	-- Design: Bright Crimson Spinel [TBC] / Design: Delicate Crimson Spinel [CATA+]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32290, {	-- Design: Brilliant Lionseye
 						["timeline"] = {
-							"added 2.1.0.6624",
+							ADDED_2_1_0,
 							REMOVED_9_0_1, -- Unsure exactly when this was removed but not in SL at least.566
 						},
 					}),
@@ -500,29 +500,29 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					applyclassicphase(TBC_PHASE_FIVE, i(35765)),	-- Design: Forceful Seaspray Emerald
 					i(32293, {	-- Design: Gleaming Lionseye [TBC] / Design: Smooth Lionseye [CATA+]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32306),	-- Design: Glinting Pyrestone [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
 					i(32301),	-- Design: Glowing Shadowsong Amethyst [TBC] / Design: Timeless Shadowsong Amethyst [CATA+]
 					i(32300, {	-- Design: Infused Shadowsong Amethyst [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32312),	-- Design: Jagged Seaspray Emerald
 					i(32305, {	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32288, {	-- Design: Lustrous Empyrean Sapphire [TBC] / Design: Sparkling Empyrean Sapphire [CATA+]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32304),	-- Design: Potent Pyrestone
@@ -532,8 +532,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					i(32292),	-- Design: Rigid Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
 					i(32302, {	-- Design: Royal Shadowsong Amethyst [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32282),	-- Design: Runed Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
@@ -544,14 +544,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					i(32284),	-- Design: Subtle Lionseye
 					i(32281, {	-- Design: Teardrop Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32294, {	-- Design: Thick Lionseye [TBC] / Design: Subtle Lionseye [CATA+]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32308),	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+]
@@ -560,13 +560,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					i(32282),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Runed Crimson Spinel [TBC]
 					i(32281, {	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Teardrop Crimson Spinel [TBC]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32290, {	-- Design: Brilliant Lionseye
 						["timeline"] = {
-							"added 2.1.0.6624",
+							ADDED_2_1_0,
 							REMOVED_9_0_1, -- Unsure exactly when this was removed but not in SL at least.566
 						},
 					}),
@@ -574,16 +574,16 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					i(32277),	-- Design: Delicate Crimson Spinel
 					i(32283, {	-- Design: Delicate Crimson Spinel [CATA+] / Design: Bright Crimson Spinel [TBC]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, i(35765)),	-- Design: Forceful Seaspray Emerald
 					i(32306),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Glinting Pyrestone [TBC]
 					i(32300, {	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Infused Shadowsong Amethyst [TBC]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32312),	-- Design: Jagged Seaspray Emerald
@@ -591,8 +591,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					i(32311),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Dazzling Seaspray Emerald [TBC]
 					i(32302, {	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Royal Shadowsong Amethyst [TBC]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, i(35763)),	-- Design: Quick Lionseye
@@ -600,8 +600,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					applyclassicphase(TBC_PHASE_FIVE, i(35762)),	-- Design: Reckless Pyrestone
 					i(32305, {	-- Design: Reckless Pyrestone [CATA+] / Design: Luminous Pyrestone [TBC]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32309),	-- Design: Regal Seaspray Emerald [CATA+] / Design: Enduring Seaspray Emerald [TBC]
@@ -610,24 +610,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					i(32291),	-- Design: Smooth Lionseye
 					i(32293, {	-- Design: Smooth Lionseye [CATA+] / Design: Gleaming Lionseye [TBC]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32286),	-- Design: Solid Empyrean Sapphire
 					i(32287),	-- Design: Sparkling Empyrean Sapphire
 					i(32288, {	-- Design: Sparkling Empyrean Sapphire [CATA+] / Design: Lustrous Empyrean Sapphire [TBC]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					applyclassicphase(TBC_PHASE_FIVE, i(35764)),	-- Design: Steady Seaspray Emerald
 					i(32284),	-- Design: Subtle Lionseye
 					i(32294, {	-- Design: Subtle Lionseye [CATA+] / Design: Thick Lionseye [TBC]
 						["timeline"] = {
-							"added 2.1.0.6624",
-							"removed 4.0", -- Renamed and not available after Cata
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and not available after Cata
 						},
 					}),
 					i(32301),	-- Design: Timeless Shadowsong Amethyst [CATA+] / Design: Glowing Shadowsong Amethyst [TBC]

@@ -796,16 +796,16 @@ else
 app.Presets = {
 	["ALL"] = setmetatable({}, { __index = function() return true; end}),
 	["DEATHKNIGHT"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		false, -- [4]
-		false, -- [5]
-		false, -- [6]
-		true, -- [7]
-		false, -- [8]
-		true, -- [9]
-		true, -- [10]
+		true, -- [1] HELD_IN_OFF_HAND
+		true, -- [2] COSMETIC
+		true, -- [3] CLOAKS
+		false, -- [4] CLOTH
+		false, -- [5] LEATHER
+		false, -- [6] MAIL
+		true, -- [7] PLATE
+		false, -- [8] SHIELDS
+		true, -- [9] TABARDS
+		true, -- [10] SHIRTS
 		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
@@ -849,16 +849,16 @@ app.Presets = {
 		[200] = true,
 	},
 	["DRUID"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		true, -- [4]
-		true, -- [5]
-		false, -- [6]
-		false, -- [7]
-		false, -- [8]
-		true, -- [9]
-		true, -- [10]
+		true, -- [1] HELD_IN_OFF_HAND
+		true, -- [2] COSMETIC
+		true, -- [3] CLOAKS
+		app.GameBuildVersion < 40000, -- [4] CLOTH
+		true, -- [5] LEATHER
+		false, -- [6] MAIL
+		false, -- [7] PLATE
+		false, -- [8] SHIELDS
+		true, -- [9] TABARDS
+		true, -- [10] SHIRTS
 		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
@@ -902,16 +902,16 @@ app.Presets = {
 		[200] = true,
 	},
 	["HUNTER"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		false, -- [4]
-		true, -- [5]
-		true, -- [6]
-		false, -- [7]
-		false, -- [8]
-		true, -- [9]
-		true, -- [10]
+		true, -- [1] HELD_IN_OFF_HAND
+		true, -- [2] COSMETIC
+		true, -- [3] CLOAKS
+		false, -- [4] CLOTH
+		app.GameBuildVersion < 40000, -- [5] LEATHER
+		true, -- [6] MAIL
+		false, -- [7] PLATE
+		false, -- [8] SHIELDS
+		true, -- [9] TABARDS
+		true, -- [10] SHIRTS
 		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
@@ -955,16 +955,16 @@ app.Presets = {
 		[200] = true,
 	},
 	["MAGE"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		true, -- [4]
-		false, -- [5]
-		false, -- [6]
-		false, -- [7]
-		false, -- [8]
-		true, -- [9]
-		true, -- [10]
+		true, -- [1] HELD_IN_OFF_HAND
+		true, -- [2] COSMETIC
+		true, -- [3] CLOAKS
+		true, -- [4] CLOTH
+		false, -- [5] LEATHER
+		false, -- [6] MAIL
+		false, -- [7] PLATE
+		false, -- [8] SHIELDS
+		true, -- [9] TABARDS
+		true, -- [10] SHIRTS
 		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
@@ -1008,16 +1008,16 @@ app.Presets = {
 		[200] = true,
 	},
 	["PALADIN"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		true, -- [4]
-		true, -- [5]
-		true, -- [6]
-		true, -- [7]
-		true, -- [8]
-		true, -- [9]
-		true, -- [10]
+		true, -- [1] HELD_IN_OFF_HAND
+		true, -- [2] COSMETIC
+		true, -- [3] CLOAKS
+		app.GameBuildVersion < 40000, -- [4] CLOTH
+		app.GameBuildVersion < 40000, -- [5] LEATHER
+		app.GameBuildVersion < 40000, -- [6] MAIL
+		true, -- [7] PLATE
+		true, -- [8] SHIELDS
+		true, -- [9] TABARDS
+		true, -- [10] SHIRTS
 		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
@@ -1061,16 +1061,16 @@ app.Presets = {
 		[200] = true,
 	},
 	["PRIEST"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		true, -- [4]
-		false, -- [5]
-		false, -- [6]
-		false, -- [7]
-		false, -- [8]
-		true, -- [9]
-		true, -- [10]
+		true, -- [1] HELD_IN_OFF_HAND
+		true, -- [2] COSMETIC
+		true, -- [3] CLOAKS
+		true, -- [4] CLOTH
+		false, -- [5] LEATHER
+		false, -- [6] MAIL
+		false, -- [7] PLATE
+		false, -- [8] SHIELDS
+		true, -- [9] TABARDS
+		true, -- [10] SHIRTS
 		true, -- [11]
 		[20] = true,
 		[21] = false,
@@ -1105,16 +1105,16 @@ app.Presets = {
 		[200] = true,
 	},
 	["ROGUE"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		false, -- [4]
-		true, -- [5]
-		false, -- [6]
-		false, -- [7]
-		false, -- [8]
-		true, -- [9]
-		true, -- [10]
+		true, -- [1] HELD_IN_OFF_HAND
+		true, -- [2] COSMETIC
+		true, -- [3] CLOAKS
+		false, -- [4] CLOTH
+		true, -- [5] LEATHER
+		false, -- [6] MAIL
+		false, -- [7] PLATE
+		false, -- [8] SHIELDS
+		true, -- [9] TABARDS
+		true, -- [10] SHIRTS
 		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]
@@ -1158,16 +1158,16 @@ app.Presets = {
 		[200] = true,
 	},
 	["SHAMAN"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		true, -- [4]
-		true, -- [5]
-		true, -- [6]
-		false, -- [7]
-		true, -- [8]
-		true, -- [9]
-		true, -- [10]
+		true, -- [1] HELD_IN_OFF_HAND
+		true, -- [2] COSMETIC
+		true, -- [3] CLOAKS
+		app.GameBuildVersion < 40000, -- [4] CLOTH
+		app.GameBuildVersion < 40000, -- [5] LEATHER
+		true, -- [6] MAIL
+		false, -- [7] PLATE
+		true, -- [8] SHIELDS
+		true, -- [9] TABARDS
+		true, -- [10] SHIRTS
 		true, -- [11]
 		[20] = true,
 		[21] = true,
@@ -1201,16 +1201,16 @@ app.Presets = {
 		[200] = true,
 	},
 	["WARLOCK"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		true, -- [4]
-		false, -- [5]
-		false, -- [6]
-		false, -- [7]
-		false, -- [8]
-		true, -- [9]
-		true, -- [10]
+		true, -- [1] HELD_IN_OFF_HAND
+		true, -- [2] COSMETIC
+		true, -- [3] CLOAKS
+		true, -- [4] CLOTH
+		false, -- [5] LEATHER
+		false, -- [6] MAIL
+		false, -- [7] PLATE
+		false, -- [8] SHIELDS
+		true, -- [9] TABARDS
+		true, -- [10] SHIRTS
 		true, -- [11]
 		[20] = true,
 		[21] = false,
@@ -1244,16 +1244,16 @@ app.Presets = {
 		[200] = true,
 	},
 	["WARRIOR"] = {
-		true, -- [1]
-		true, -- [2]
-		true, -- [3]
-		false, -- [4]
-		true, -- [5]
-		true, -- [6]
-		true, -- [7]
-		true, -- [8]
-		true, -- [9]
-		true, -- [10]
+		true, -- [1] HELD_IN_OFF_HAND
+		true, -- [2] COSMETIC
+		true, -- [3] CLOAKS
+		false, -- [4] CLOTH
+		app.GameBuildVersion < 40000, -- [5] LEATHER
+		app.GameBuildVersion < 40000, -- [6] MAIL
+		true, -- [7] PLATE
+		true, -- [8] SHIELDS
+		true, -- [9] TABARDS
+		true, -- [10] SHIRTS
 		true, -- [11]
 		nil, -- [12]
 		nil, -- [13]

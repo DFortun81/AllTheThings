@@ -105,10 +105,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(556),	-- The Loch
 				exploration(144),	-- Thelsamar
 				exploration(924),	-- Valley of Kings
-				--[[
-				exploration(145),	-- Algaz Gate
-				exploration(2101),	-- Stoutlager Inn
-				]]--
 			}),
 			n(FLIGHT_PATHS, {
 				fp(555, {	-- Farstrider Lodge, Loch Modan
@@ -269,7 +265,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131492, {	-- Waistguard of the Valley of Kings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -284,7 +280,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1194 },	-- Mountain Buzzard
 						}),
 						i(59004, {	-- Daryl's Bow
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(2903, {	-- Daryl's Hunting Bow
 							["timeline"] = { REMOVED_4_0_3 },
@@ -293,7 +289,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(59003, {	-- Daryl's Rifle
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -309,7 +305,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 1192 },	-- Elder Mountain Boar
 						}),
 						i(59000, {	-- Daryl's Axe
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(3572, {	-- Daryl's Shortsword
 							["timeline"] = { REMOVED_4_0_3 },
@@ -318,10 +314,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(59001, {	-- Ill-Worn Belt
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(59002, {	-- Unabashed Vest
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -459,7 +455,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131491, {	-- Bonesnapper Cuffs
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58996, {	-- Mountaineer's Belt
 							["timeline"] = { ADDED_4_0_3 },
@@ -752,7 +748,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131628, {	-- Trogg Stompers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -787,13 +783,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156932, {	-- Surveyor's Staff
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(58992, {	-- Uncovered Breastplate
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131300, {	-- Uncovered Chestguard
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -804,6 +800,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				heroscall(q(28567, {	-- Hero's Call: Loch Modan!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE },	-- Only found in Ironforge in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
+					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
+					["lvl"] = { 9, 20 },
+					-- #endif
+				})),
 				-- #if BEFORE 4.0.3
 				q(6387, {	-- Honor Students
 					["providers"] = {
@@ -910,7 +916,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(131490, {	-- Greaves of Uncanny Courage
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58985, {	-- Leggings of Uncanny Courage
 							["timeline"] = { ADDED_4_0_3 },
@@ -1046,7 +1052,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131204, {	-- Foreman Handguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(58983, {	-- Ironband Legguards
 							["timeline"] = { ADDED_4_0_3 },
@@ -1249,7 +1255,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156933, {	-- Mori's Pocketknife
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1395,7 +1401,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131633, {	-- Vyrin's Waistband
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1412,10 +1418,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 1210,	-- Chok'sul
 						}),
 						i(59028, {	-- Bluntnose's Signet
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(59026, {	-- Bounty Hunter's Bracers
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 						i(6189, {	-- Durable Chain Shoulders
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1427,7 +1433,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(59027, {	-- Thelsamar Chainmail
-							["timeline"] = { "added 4.0.1", REMOVED_4_0_3 },
+							["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 						}),
 					},
 				}),
@@ -1464,7 +1470,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 69.6, 42.0, LOCH_MODAN },
 						{ 66.6, 40.0, LOCH_MODAN },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(1398, {  -- Boss Galgosh <Stonesplinter Chieftain>
 					-- #if AFTER CATA
@@ -1518,6 +1524,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3192),	-- Short Bastard Sword
 						i(15933),	-- Simple Branch
 						i(6547),	-- Soldier's Gauntlets
+						-- Still available in some chests
+						i(4596),	-- Discolored Healing Potion
 					},
 				}),
 				n(14267, {  -- Emogg the Crusher
@@ -1568,7 +1576,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, n(209958, {	-- Graix
 					["provider"] = { "n", 209954 },	-- Demonic Remains
 					["coord"] = { 72.6, 68.8, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["groups"] = {
 						i(208744, {	-- Rune of Shadowbolts
@@ -1606,7 +1614,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(210107, {	-- Kackle
 					["coord"] = { 55.0, 55.4, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { HUNTER },
 					["groups"] = {
 						i(208777, {	-- Rune of the Sniper
@@ -1738,7 +1746,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407983, {	-- Pile of Stolen Books
 					["coord"] = { 54.2, 27.0, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(208754, {	-- Spell Notes: TENGI RONEERA
 							["classes"] = { MAGE },
@@ -1749,7 +1757,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "n", 209908 },	-- Heretic Idol
 					["description"] = "/kneel at the statue for the rune.",
 					["coord"] = { 71.8, 27.6, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["groups"] = {
 						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
@@ -1782,7 +1790,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
 					["provider"] = { "o", 407731 },	-- Stonemason's Toolbox
 					["coord"] = { 46.5, 12.7, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424984),	-- Engrave Gloves - Saber Slash
@@ -1794,7 +1802,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, o(407850, {	-- Sunken Reliquary
 					["coord"] = { 36.8, 91.4, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["groups"] = {
 						i(208851, {	-- Libram of Justice
 							["classes"] = { PALADIN },
@@ -1970,7 +1978,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208843, {	-- Battle Totem
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["coords"] = {
 						{ 79.6, 16.0, LOCH_MODAN },
 						{ 76.6, 16.0, LOCH_MODAN },
@@ -2010,7 +2018,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 36.6, 84.4, LOCH_MODAN },
 						{ 49.0, 21.6, LOCH_MODAN },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { MAGE },
 					["cr"] = 1166,  -- Stonesplinter Seer
 				})),
@@ -2092,7 +2100,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208823, {	-- Offering Coin
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["coords"] = {
 						{ 35.6, 20.0, LOCH_MODAN },
 						{ 35.8, 27.4, LOCH_MODAN },
@@ -2197,7 +2205,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 55.2, 68.2, LOCH_MODAN },
 						{ 66.0, 37.8, LOCH_MODAN },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
@@ -2206,7 +2214,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				-- #endif
-				-- #if BEFORE 4.0.3
+				-- #if BEFORE 10.1.7
 				-- Moved to Searing Gorge in 10.1.7
 				i(2274, {	-- Sapper's Gloves
 					["timeline"] = { REMOVED_4_0_3 },
@@ -2216,7 +2224,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208847, {	-- Skull-Shaped Geode
 					["coord"] = { 33.2, 73.8, LOCH_MODAN },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {

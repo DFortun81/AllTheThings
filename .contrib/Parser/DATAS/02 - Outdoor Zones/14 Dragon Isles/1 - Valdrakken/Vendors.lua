@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					})),
 					i(206028, {	-- Chest of Gold
 						["cost"] = {
-							-- #if AFTER 10.2.6.60000
+							-- #if AFTER 10.2.6.54358
 							{ "i", ASPECTS_TOKEN_OF_MERIT_S4, 2 },
 							-- #elseif AFTER 10.2.0
 							{ "i", ASPECTS_TOKEN_OF_MERIT_S3, 2 },
@@ -324,7 +324,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 53.2, 56.0, VALDRAKKEN },
 				["g"] = {
 					i(210595, {	-- Dreaming Equipment Chest
-						["timeline"] = { "added 10.2.5.53040", REMOVED_10_2_6_SEASON_FOUR },
+						["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 					i(217241, {	-- Awakened Equipment Chest
 						["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
@@ -339,14 +339,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
+			-------------
+			---- LFR ----
+			-------------
 			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mirioszin <Infinite Importer>
 				["coord"] = { 73.8, 45.6, VALDRAKKEN },
 				["g"] = sharedData({
 					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
+					["description"] = "Shared Transmog with |cFFAEF359Looking for Raid|r.",
 				}, {
-					i(190170, {	-- Jigglesworth, Sr. (MOUNT!)
-						["cost"] = {{ "i", ANTIQUE_BRONZE, 3 }},
-					}),
 					i(217601),	-- Crucible Raider's Bronzed Beacon
 					i(217555),	-- Crucible Raider's Bronzed Cannon
 					i(217559),	-- Crucible Raider's Bronzed Claws
@@ -367,25 +368,123 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(217567),	-- Crucible Raider's Bronzed Tome
 					i(217571),	-- Crucible Raider's Bronzed Ultra Greatsword
 					i(217531),	-- Crucible Raider's Bronzed Wingblades
-					i(217604),	-- Crucible Raider's Corrupted Beacon
-					i(217558),	-- Crucible Raider's Corrupted Cannon
-					i(217562),	-- Crucible Raider's Corrupted Claws
-					i(217554),	-- Crucible Raider's Corrupted Cleaver
-					i(217518),	-- Crucible Raider's Corrupted Cudgel
-					i(217550),	-- Crucible Raider's Corrupted Elderstaff
-					i(217526),	-- Crucible Raider's Corrupted Focus
-					i(217578),	-- Crucible Raider's Corrupted Greatshield
-					i(217538),	-- Crucible Raider's Corrupted Hatchet
-					i(217530),	-- Crucible Raider's Corrupted Kiteshield
-					i(217514),	-- Crucible Raider's Corrupted Lance
-					i(217542),	-- Crucible Raider's Corrupted Longbow
-					i(217546),	-- Crucible Raider's Corrupted Mace
-					i(217510),	-- Crucible Raider's Corrupted Mutilator
-					i(217522),	-- Crucible Raider's Corrupted Rod
-					i(217582),	-- Crucible Raider's Corrupted Shiv
-					i(217570),	-- Crucible Raider's Corrupted Tome
-					i(217574),	-- Crucible Raider's Corrupted Ultra Greatsword
-					i(217534),	-- Crucible Raider's Corrupted Wingblades
+					i(217661),	-- Dream Raider's Azure Barrier
+					i(217673),	-- Dream Raider's Azure Blade
+					i(217669),	-- Dream Raider's Azure Charglaive
+					i(217648),	-- Dream Raider's Azure Chime
+					i(217665),	-- Dream Raider's Azure Cleaver
+					i(217627),	-- Dream Raider's Azure Defender
+					i(217631),	-- Dream Raider's Azure Dreamcarver
+					i(217689),	-- Dream Raider's Azure Flare
+					i(217623),	-- Dream Raider's Azure Flayer
+					i(217615),	-- Dream Raider's Azure Greathammer
+					i(217644),	-- Dream Raider's Azure Paws
+					i(217685),	-- Dream Raider's Azure Poleax
+					-- i(217635),	-- Dream Raider's Azure Razor (Not on Vendor)
+					i(217681),	-- Dream Raider's Azure Recurve
+					i(217640),	-- Dream Raider's Azure Rifle
+					i(217636),	-- Dream Raider's Azure Saber
+					i(217652),	-- Dream Raider's Azure Scythe
+					i(217656),	-- Dream Raider's Azure Sickle
+					i(217619),	-- Dream Raider's Azure Torch
+					i(217677),	-- Dream Raider's Azure Trident
+					i(217436),	-- Vault Raider's Crystal Bulwark
+					i(217444),	-- Vault Raider's Crystal Conduit
+					i(217432),	-- Vault Raider's Crystal Crossbow
+					i(217452),	-- Vault Raider's Crystal Crusher
+					i(217484),	-- Vault Raider's Crystal Fists
+					i(217480),	-- Vault Raider's Crystal Glaives
+					i(217488),	-- Vault Raider's Crystal Greatbow
+					i(217460),	-- Vault Raider's Crystal Halberd
+					i(217476),	-- Vault Raider's Crystal Knife
+					i(217440),	-- Vault Raider's Crystal Pavise
+					i(217464),	-- Vault Raider's Crystal Pillar
+					i(217492),	-- Vault Raider's Crystal Scepter
+					i(217448),	-- Vault Raider's Crystal Scriptures
+					i(217472),	-- Vault Raider's Crystal Shard
+					i(217424),	-- Vault Raider's Crystal Slicer
+					i(217456),	-- Vault Raider's Crystal Splitter
+					i(217468),	-- Vault Raider's Crystal Staff
+					i(217428),	-- Vault Raider's Crystal Thumper
+				}),
+			})),
+			-------------
+			---- NORMAL ----
+			-------------
+			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mirioszin <Infinite Importer>
+				["coord"] = { 73.8, 45.6, VALDRAKKEN },
+				["g"] = sharedData({
+					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
+					["description"] = "Shared Transmog with |cFFFFFFFFNormal|r.",
+				}, {
+					i(217602),	-- Crucible Raider's Shadowed Beacon
+					i(217556),	-- Crucible Raider's Shadowed Cannon
+					i(217560),	-- Crucible Raider's Shadowed Claws
+					i(217552),	-- Crucible Raider's Shadowed Cleaver
+					i(217564),	-- Crucible Raider's Shadowed Control Rod
+					i(217516),	-- Crucible Raider's Shadowed Cudgel
+					i(217548),	-- Crucible Raider's Shadowed Elderstaff
+					i(217524),	-- Crucible Raider's Shadowed Focus
+					i(217576),	-- Crucible Raider's Shadowed Greatshield
+					i(217536),	-- Crucible Raider's Shadowed Hatchet
+					i(217528),	-- Crucible Raider's Shadowed Kiteshield
+					i(217512),	-- Crucible Raider's Shadowed Lance
+					i(217540),	-- Crucible Raider's Shadowed Longbow
+					i(217544),	-- Crucible Raider's Shadowed Mace
+					i(217508),	-- Crucible Raider's Shadowed Mutilator
+					i(217520),	-- Crucible Raider's Shadowed Rod
+					i(217580),	-- Crucible Raider's Shadowed Shiv
+					i(217568),	-- Crucible Raider's Shadowed Tome
+					i(217572),	-- Crucible Raider's Shadowed Ultra Greatsword
+					i(217532),	-- Crucible Raider's Shadowed Wingblades
+					i(217662),	-- Dream Raider's Blazing Barrier
+					i(217674),	-- Dream Raider's Blazing Blade
+					i(217670),	-- Dream Raider's Blazing Charglaive
+					i(217649),	-- Dream Raider's Blazing Chime
+					i(217666),	-- Dream Raider's Blazing Cleaver
+					i(217628),	-- Dream Raider's Blazing Defender
+					i(217632),	-- Dream Raider's Blazing Dreamcarver
+					i(217690),	-- Dream Raider's Blazing Flare
+					i(217624),	-- Dream Raider's Blazing Flayer
+					i(217616),	-- Dream Raider's Blazing Greathammer
+					i(217645),	-- Dream Raider's Blazing Paws
+					i(217686),	-- Dream Raider's Blazing Poleax
+					i(217682),	-- Dream Raider's Blazing Recurve
+					i(217641),	-- Dream Raider's Blazing Rifle
+					i(217637),	-- Dream Raider's Blazing Saber
+					i(217653),	-- Dream Raider's Blazing Scythe
+					i(217657),	-- Dream Raider's Blazing Sickle
+					i(217620),	-- Dream Raider's Blazing Torch
+					i(217678),	-- Dream Raider's Blazing Trident
+					i(217433),	-- Vault Raider's Earthen Bulwark
+					i(217441),	-- Vault Raider's Earthen Conduit
+					i(217429),	-- Vault Raider's Earthen Crossbow
+					i(217449),	-- Vault Raider's Earthen Crusher
+					i(217481),	-- Vault Raider's Earthen Fists
+					i(217477),	-- Vault Raider's Earthen Glaives
+					i(217485),	-- Vault Raider's Earthen Greatbow
+					i(217457),	-- Vault Raider's Earthen Halberd
+					i(217473),	-- Vault Raider's Earthen Knife
+					i(217437),	-- Vault Raider's Earthen Pavise
+					i(217461),	-- Vault Raider's Earthen Pillar
+					i(217489),	-- Vault Raider's Earthen Scepter
+					i(217445),	-- Vault Raider's Earthen Scriptures
+					i(217469),	-- Vault Raider's Earthen Shard
+					i(217421),	-- Vault Raider's Earthen Slicer
+					i(217453),	-- Vault Raider's Earthen Splitter
+					i(217465),	-- Vault Raider's Earthen Staff
+					i(217425),	-- Vault Raider's Earthen Thumper
+				}),
+			})),
+			-------------
+			---- HEROIC ----
+			-------------
+			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mirioszin <Infinite Importer>
+				["coord"] = { 73.8, 45.6, VALDRAKKEN },
+				["g"] = sharedData({
+					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
+					["description"] = "Shared Transmog with |cFFA330C9Heroic|r.",
+				}, {
 					i(217603),	-- Crucible Raider's Molten Beacon
 					i(217557),	-- Crucible Raider's Molten Cannon
 					i(217561),	-- Crucible Raider's Molten Claws
@@ -406,66 +505,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(217569),	-- Crucible Raider's Molten Tome
 					i(217573),	-- Crucible Raider's Molten Ultra Greatsword
 					i(217533),	-- Crucible Raider's Molten Wingblades
-					i(217602),	-- Crucible Raider's Shadowed Beacon
-					i(217556),	-- Crucible Raider's Shadowed Cannon
-					i(217560),	-- Crucible Raider's Shadowed Claws
-					i(217552),	-- Crucible Raider's Shadowed Cleaver
-					i(217564),	-- Crucible Raider's Shadowed Control Rod
-					i(217566),	-- Crucible Raider's Shadowed Control Rod
-					i(217516),	-- Crucible Raider's Shadowed Cudgel
-					i(217548),	-- Crucible Raider's Shadowed Elderstaff
-					i(217524),	-- Crucible Raider's Shadowed Focus
-					i(217576),	-- Crucible Raider's Shadowed Greatshield
-					i(217536),	-- Crucible Raider's Shadowed Hatchet
-					i(217528),	-- Crucible Raider's Shadowed Kiteshield
-					i(217512),	-- Crucible Raider's Shadowed Lance
-					i(217540),	-- Crucible Raider's Shadowed Longbow
-					i(217544),	-- Crucible Raider's Shadowed Mace
-					i(217508),	-- Crucible Raider's Shadowed Mutilator
-					i(217520),	-- Crucible Raider's Shadowed Rod
-					i(217580),	-- Crucible Raider's Shadowed Shiv
-					i(217568),	-- Crucible Raider's Shadowed Tome
-					i(217572),	-- Crucible Raider's Shadowed Ultra Greatsword
-					i(217532),	-- Crucible Raider's Shadowed Wingblades
-					i(217661),	-- Dream Raider's Azure Barrier
-					i(217673),	-- Dream Raider's Azure Blade
-					i(217669),	-- Dream Raider's Azure Charglaive
-					i(217648),	-- Dream Raider's Azure Chime
-					i(217665),	-- Dream Raider's Azure Cleaver
-					i(217627),	-- Dream Raider's Azure Defender
-					i(217631),	-- Dream Raider's Azure Dreamcarver
-					i(217689),	-- Dream Raider's Azure Flare
-					i(217623),	-- Dream Raider's Azure Flayer
-					i(217615),	-- Dream Raider's Azure Greathammer
-					i(217644),	-- Dream Raider's Azure Paws
-					i(217685),	-- Dream Raider's Azure Poleax
-					i(217635),	-- Dream Raider's Azure Razor
-					i(217681),	-- Dream Raider's Azure Recurve
-					i(217640),	-- Dream Raider's Azure Rifle
-					i(217636),	-- Dream Raider's Azure Saber
-					i(217652),	-- Dream Raider's Azure Scythe
-					i(217656),	-- Dream Raider's Azure Sickle
-					i(217619),	-- Dream Raider's Azure Torch
-					i(217677),	-- Dream Raider's Azure Trident
-					i(217662),	-- Dream Raider's Blazing Barrier
-					i(217674),	-- Dream Raider's Blazing Blade
-					i(217670),	-- Dream Raider's Blazing Charglaive
-					i(217649),	-- Dream Raider's Blazing Chime
-					i(217666),	-- Dream Raider's Blazing Cleaver
-					i(217628),	-- Dream Raider's Blazing Defender
-					i(217632),	-- Dream Raider's Blazing Dreamcarver
-					i(217690),	-- Dream Raider's Blazing Flare
-					i(217624),	-- Dream Raider's Blazing Flayer
-					i(217616),	-- Dream Raider's Blazing Greathammer
-					i(217645),	-- Dream Raider's Blazing Paws
-					i(217686),	-- Dream Raider's Blazing Poleax
-					i(217682),	-- Dream Raider's Blazing Recurve
-					i(217641),	-- Dream Raider's Blazing Rifle
-					i(217637),	-- Dream Raider's Blazing Saber
-					i(217653),	-- Dream Raider's Blazing Scythe
-					i(217657),	-- Dream Raider's Blazing Sickle
-					i(217620),	-- Dream Raider's Blazing Torch
-					i(217678),	-- Dream Raider's Blazing Trident
 					i(217663),	-- Dream Raider's Emerald Barrier
 					i(217675),	-- Dream Raider's Emerald Blade
 					i(217671),	-- Dream Raider's Emerald Charglaive
@@ -485,7 +524,55 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(217658),	-- Dream Raider's Emerald Sickle
 					i(217621),	-- Dream Raider's Emerald Torch
 					i(217679),	-- Dream Raider's Emerald Trident
-					i(217660),	-- Dream Raider's Replica Dreambinder
+					i(217434),	-- Vault Raider's Frozen Bulwark
+					i(217442),	-- Vault Raider's Frozen Conduit
+					i(217430),	-- Vault Raider's Frozen Crossbow
+					i(217450),	-- Vault Raider's Frozen Crusher
+					i(217482),	-- Vault Raider's Frozen Fists
+					i(217478),	-- Vault Raider's Frozen Glaives
+					i(217486),	-- Vault Raider's Frozen Greatbow
+					i(217458),	-- Vault Raider's Frozen Halberd
+					i(217474),	-- Vault Raider's Frozen Knife
+					i(217438),	-- Vault Raider's Frozen Pavise
+					i(217462),	-- Vault Raider's Frozen Pillar
+					i(217490),	-- Vault Raider's Frozen Scepter
+					i(217446),	-- Vault Raider's Frozen Scriptures
+					i(217470),	-- Vault Raider's Frozen Shard
+					i(217422),	-- Vault Raider's Frozen Slicer
+					i(217454),	-- Vault Raider's Frozen Splitter
+					i(217466),	-- Vault Raider's Frozen Staff
+					i(217426),	-- Vault Raider's Frozen Thumper
+				}),
+			})),
+			-------------
+			---- MYTHIC ----
+			-------------
+			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mirioszin <Infinite Importer>
+				["coord"] = { 73.8, 45.6, VALDRAKKEN },
+				["g"] = sharedData({
+					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
+					["description"] = "Shared Transmog with |cFFED7014Mythic|r.",
+				}, {
+					i(217604),	-- Crucible Raider's Corrupted Beacon
+					i(217558),	-- Crucible Raider's Corrupted Cannon
+					i(217562),	-- Crucible Raider's Corrupted Claws
+					i(217554),	-- Crucible Raider's Corrupted Cleaver
+					i(217566),	-- Crucible Raider's Shadowed Control Rod (Blizzard screwed up the name of this item)
+					i(217518),	-- Crucible Raider's Corrupted Cudgel
+					i(217550),	-- Crucible Raider's Corrupted Elderstaff
+					i(217526),	-- Crucible Raider's Corrupted Focus
+					i(217578),	-- Crucible Raider's Corrupted Greatshield
+					i(217538),	-- Crucible Raider's Corrupted Hatchet
+					i(217530),	-- Crucible Raider's Corrupted Kiteshield
+					i(217514),	-- Crucible Raider's Corrupted Lance
+					i(217542),	-- Crucible Raider's Corrupted Longbow
+					i(217546),	-- Crucible Raider's Corrupted Mace
+					i(217510),	-- Crucible Raider's Corrupted Mutilator
+					i(217522),	-- Crucible Raider's Corrupted Rod
+					i(217582),	-- Crucible Raider's Corrupted Shiv
+					i(217570),	-- Crucible Raider's Corrupted Tome
+					i(217574),	-- Crucible Raider's Corrupted Ultra Greatsword
+					i(217534),	-- Crucible Raider's Corrupted Wingblades
 					i(217664),	-- Dream Raider's Shadowflame Barrier
 					i(217676),	-- Dream Raider's Shadowflame Blade
 					i(217672),	-- Dream Raider's Shadowflame Charglaive
@@ -505,61 +592,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(217659),	-- Dream Raider's Shadowflame Sickle
 					i(217622),	-- Dream Raider's Shadowflame Torch
 					i(217680),	-- Dream Raider's Shadowflame Trident
-					i(217436),	-- Vault Raider's Crystal Bulwark
-					i(217444),	-- Vault Raider's Crystal Conduit
-					i(217432),	-- Vault Raider's Crystal Crossbow
-					i(217452),	-- Vault Raider's Crystal Crusher
-					i(217484),	-- Vault Raider's Crystal Fists
-					i(217480),	-- Vault Raider's Crystal Glaives
-					i(217488),	-- Vault Raider's Crystal Greatbow
-					i(217460),	-- Vault Raider's Crystal Halberd
-					i(217476),	-- Vault Raider's Crystal Knife
-					i(217440),	-- Vault Raider's Crystal Pavise
-					i(217464),	-- Vault Raider's Crystal Pillar
-					i(217492),	-- Vault Raider's Crystal Scepter
-					i(217448),	-- Vault Raider's Crystal Scriptures
-					i(217472),	-- Vault Raider's Crystal Shard
-					i(217424),	-- Vault Raider's Crystal Slicer
-					i(217456),	-- Vault Raider's Crystal Splitter
-					i(217468),	-- Vault Raider's Crystal Staff
-					i(217428),	-- Vault Raider's Crystal Thumper
-					i(217433),	-- Vault Raider's Earthen Bulwark
-					i(217441),	-- Vault Raider's Earthen Conduit
-					i(217429),	-- Vault Raider's Earthen Crossbow
-					i(217449),	-- Vault Raider's Earthen Crusher
-					i(217481),	-- Vault Raider's Earthen Fists
-					i(217477),	-- Vault Raider's Earthen Glaives
-					i(217485),	-- Vault Raider's Earthen Greatbow
-					i(217457),	-- Vault Raider's Earthen Halberd
-					i(217473),	-- Vault Raider's Earthen Knife
-					i(217437),	-- Vault Raider's Earthen Pavise
-					i(217461),	-- Vault Raider's Earthen Pillar
-					i(217489),	-- Vault Raider's Earthen Scepter
-					i(217445),	-- Vault Raider's Earthen Scriptures
-					i(217469),	-- Vault Raider's Earthen Shard
-					i(217421),	-- Vault Raider's Earthen Slicer
-					i(217453),	-- Vault Raider's Earthen Splitter
-					i(217465),	-- Vault Raider's Earthen Staff
-					i(217425),	-- Vault Raider's Earthen Thumper
-					i(217434),	-- Vault Raider's Frozen Bulwark
-					i(217442),	-- Vault Raider's Frozen Conduit
-					i(217430),	-- Vault Raider's Frozen Crossbow
-					i(217450),	-- Vault Raider's Frozen Crusher
-					i(217482),	-- Vault Raider's Frozen Fists
-					i(217478),	-- Vault Raider's Frozen Glaives
-					i(217486),	-- Vault Raider's Frozen Greatbow
-					i(217458),	-- Vault Raider's Frozen Halberd
-					i(217474),	-- Vault Raider's Frozen Knife
-					i(217438),	-- Vault Raider's Frozen Pavise
-					i(217462),	-- Vault Raider's Frozen Pillar
-					i(217490),	-- Vault Raider's Frozen Scepter
-					i(217446),	-- Vault Raider's Frozen Scriptures
-					i(217470),	-- Vault Raider's Frozen Shard
-					i(217422),	-- Vault Raider's Frozen Slicer
-					i(217454),	-- Vault Raider's Frozen Splitter
-					i(217466),	-- Vault Raider's Frozen Staff
-					i(217426),	-- Vault Raider's Frozen Thumper
-					i(217493),	-- Vault Raider's Primal Greatstaff
 					i(217435),	-- Vault Raider's Storming Bulwark
 					i(217443),	-- Vault Raider's Storming Conduit
 					i(217431),	-- Vault Raider's Storming Crossbow
@@ -580,9 +612,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(217427),	-- Vault Raider's Storming Thumper
 				}),
 			})),
+			n(216236, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Mirioszin <Infinite Importer>
+				["coord"] = { 73.8, 45.6, VALDRAKKEN },
+				["g"] = sharedData({
+					["cost"] = {{ "i", ANTIQUE_BRONZE, 1 }},
+				}, {
+					i(190170, {	-- Jigglesworth, Sr. (MOUNT!)
+						["cost"] = {{ "i", ANTIQUE_BRONZE, 3 }},
+					}),
+					i(217493),	-- Vault Raider's Primal Greatstaff
+					i(217660),	-- Dream Raider's Replica Dreambinder
+				}),
+			})),
 			n(189644, {	-- Ms. Xiulan <Madam Goya's Assistant>
 				["coord"] = { 19.0, 50.2, VALDRAKKEN },
-				["g"] = bubbleDown({ ["timeline"] = { "added 10.2.0.52649" } }, {
+				["g"] = bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 					i(211300, {	-- Arsenal: Whispering Temple Blades
 						["cost"] = 2000000000, -- 200,000g
 						["groups"] = {
@@ -670,22 +714,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					--	},
 					--}),
 					-- Trade Down
-					i(212367, {	-- Clutch of Wyrm's Dreaming Crests
-						["cost"] = {{ "c", ASPECTS_DREAMING_CREST, 15 }},	-- assume that cost is bugged and should be Currency ID 2811/2812
+					i(212367, {	-- Clutch of Wyrm's Awakened Crests
+						["cost"] = {{ "c", 2812, 15 }},	-- Aspect's Awakened Crests x15
 						["g"] = {
-							currency(2810),	-- Wyrm's Awakened Crest (or bugged and should be 2809)
+							currency(2809),	-- Wyrm's Awakened Crest
 						},
 					}),
-					i(211951, {	-- Pouch of Whelpling's Dreaming Crests
-						["cost"] = {{ "c", DRAKES_DREAMING_CREST, 15 }},	-- assume that cost is bugged and should be Currency ID 2808/2807
+					i(211951, {	-- Pouch of Whelpling's Awakened Crests
+						["cost"] = {{ "c", 2807, 15 }},	-- Drake's Awakened Crests x15
 						["g"] = {
-							currency(2805),	-- Whelpling's Awakened Crest (or bugged and should be 2806)
+							currency(2806),	-- Whelpling's Awakened Crest
 						},
 					}),
-					i(211952, {	-- Satchel of Drake's Dreaming Crests
-						["cost"] = {{ "c", WYRMS_DREAMING_CREST, 15 }},	-- assume that cost is bugged and should be Currency ID 2810/2809
+					i(211952, {	-- Satchel of Drake's Awakened Crests
+						["cost"] = {{ "c", 2809, 15 }},	-- Wyrm's Awakened Crests x15
 						["g"] = {
-							currency(2808),	-- Drake's Awakened Crest (or bugged and should be 2807)
+							currency(2807),	-- Drake's Awakened Crest
 						},
 					}),
 				},

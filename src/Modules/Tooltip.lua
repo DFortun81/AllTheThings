@@ -40,7 +40,7 @@ local function distance( x1, y1, x2, y2 )
 end
 local function GetPlayerPosition()
 	local mapID = app.CurrentMapID;
-	if not IsInInstance() then
+	if mapID and not IsInInstance() then
 		local pos = C_Map_GetPlayerMapPosition(mapID, "player");
 		if pos then
 			local px, py = pos:GetXY();
@@ -173,17 +173,28 @@ else
 								closestInstance = searchResult;
 							end
 						end
+						if closestInstance then
+							tinsert(objects, {
+								objectID = objectID,
+								distance = closestDistance,
+								AccessibilityScore = closestInstance.AccessibilityScore + closestDistance
+							});
+							closestInstance = nil;
+							closestDistance = 999999;
+						end
 					end
 				end
-				tinsert(objects, {
-					objectID = objectID,
-					parent = closestInstance,
-					distance = closestDistance
-				});
 			end
 			if #objects > 0 then
-				app.Sort(objects, app.SortDefaults.AccessibilityAndDistance);
+				app.Sort(objects, app.SortDefaults.Accessibility);
+				--[[
+				for i,o in ipairs(objects) do
+					print(i, o.objectID, o.AccessibilityScore, o.distance);
+				end
+				]]--
 				return objects[1].objectID;
+			elseif #o == 1 then
+				return o[1];
 			end
 		end
 	end
@@ -543,16 +554,33 @@ app.SetSkipLevel = function(level)
 end
 
 -- ItemID's which should be skipped when filling purchases with certain levels of 'skippability'
-local SkipFillingPurchasesLevelByItemID = {
-	[137642] = 2,	-- Mark of Honor
-	[21100] = 1,	-- Coin of Ancestry
-	[23247] = 1,	-- Burning Blossom
-	[49927] = 1,	-- Love Token
+local SkipPurchases = {
+	-- 0 	- (default, never skipped)
+	-- 1 	- (tooltip, skipped unless within tooltip/popout)
+	-- 1.5	- (tooltip root, skipped unless tooltip root or within popout)
+	-- 2 	- (popout, skipped unless within popout)
+	-- 2.5 	- (popout root, skipped unless root of popout)
+	itemID = {
+		[137642] = 2,	-- Mark of Honor
+		[21100] = 1,	-- Coin of Ancestry
+		[23247] = 1,	-- Burning Blossom
+		[49927] = 1,	-- Love Token
+	},
+	currencyID = {
+		[2778] = 2,		-- Bronze
+	},
 }
-app.ShouldFillPurchasesForItemID = function(itemID)
-	local reqSkipLevel = itemID and SkipFillingPurchasesLevelByItemID[itemID];
-	if reqSkipLevel and CurrentSkipLevel < reqSkipLevel then
-		return false;
+app.ShouldFillPurchases = function(group, FillData)
+	local val
+	for key,values in pairs(SkipPurchases) do
+		val = group[key]
+		if val then
+			val = values[val]
+			if not val then return true end
+			if CurrentSkipLevel < val - (group == FillData.Root and 0.5 or 0) then
+				return false;
+			end
+		end
 	end
 	return true;
 end
@@ -678,6 +706,7 @@ local function ClearTooltip(tooltip)
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATT_AttachComplete = nil;
 end
+local HexToARGB = app.Modules.Color.HexToARGB
 local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
 	app.SetSkipLevel(1);
@@ -689,8 +718,24 @@ local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 				tooltip:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
 			end
 
+			local tooltipInfo = group.tooltipInfo
+			-- TODO: comment in once all tooltip logic is hooked via information types
+			-- If we need to generate tooltip-only content for this group then do that now
+			-- if not tooltipInfo then
+			-- 	tooltipInfo = {}
+			-- 	group.tooltipInfo = tooltipInfo
+			-- 	app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group)
+
+			-- 	-- Some tooltip items might be added using a color instead of argb, so we have to convert them... TODO maybe clean up
+			-- 	if #tooltipInfo > 0 then
+			-- 		for i,item in ipairs(tooltipInfo) do
+			-- 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color) end
+			-- 		end
+			-- 	end
+			-- end
+
 			-- If there was info text generated for this search result, then display that first.
-			AttachTooltipInformation(tooltip, group.tooltipInfo);
+			AttachTooltipInformation(tooltip, tooltipInfo);
 		end
 	else
 		print(status, group);
@@ -734,7 +779,7 @@ end
 --hooksecurefunc("BattlePetTooltipTemplate_SetBattlePet", AttachBattlePetTooltip); -- Not ready yet.
 
 -- Tooltip API Differences between Modern and Legacy APIs.
-if TooltipDataProcessor then
+if TooltipDataProcessor and app.GameBuildVersion > 50000 then
 	-- 10.0.2
 	-- https://wowpedia.fandom.com/wiki/Patch_10.0.2/API_changes#Tooltip_Changes
 	-- many of these don't include an ID in-game so they don't attach results. maybe someday they will...
@@ -1123,6 +1168,7 @@ else
 
 					-- Normal item tooltip, not on the Toy Box.
 					AttachTooltipSearchResults(self, 1, SearchForLink, link);
+					if app.GameBuildVersion > 40000 then self:Show(); end
 					return true;
 				end
 

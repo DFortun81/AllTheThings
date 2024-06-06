@@ -16,7 +16,7 @@ pet(4465),	-- Vanilla
 pet(4466),	-- Argos
 pet(4467),	-- Hallowed Glowfly
 pet(4469),	-- Bop
-pet(4470),	-- Argent Scootlefish
+pet(4470),	-- Oop'lajax \\ Argent Scootlefish
 pet(4471),	-- Aubergine Scootlefish
 pet(4472),	-- Shadowbog Hopper
 pet(4473),	-- Spinner
@@ -32,7 +32,7 @@ pet(4483),	-- Vile Bloodtick
 pet(4484),	-- Frenzied Bloodtick
 pet(4485),	-- Mossy Snail
 pet(4488),	-- Haywire Servobot
-pet(4489),	-- Obsidian Weave-rat
+pet(4489),	-- Bouncer \\ Obsidian Weave-rat
 pet(4490),	-- Fuzzy
 pet(4491),	-- Jump Jump
 pet(4492),	-- Fringe
@@ -47,7 +47,7 @@ pet(4502),	-- Kaheti Bull Worm
 pet(4503),	-- Sporbit
 pet(4504),	-- Sporbit
 pet(4505),	-- Sporbit
-pet(4506),	-- Sporbit
+pet(4506),	-- Violet Sporbit \\ Sporbit
 pet(4507),	-- Sporbit
 pet(4508),	-- Sporbit
 pet(4509),	-- Sporbit
@@ -66,8 +66,8 @@ pet(4521),	-- Subterranean Dartswog
 pet(4522),	-- Troglofrog
 pet(4524),	-- Starkstripe Hopper
 pet(4525),	-- Fragrant Stonelamb
-pet(4526),	-- Sandstone Protolamb
-pet(4527),	-- Rosewool Protolamb
+pet(4526),	-- Sandstone Mosswool \\ Sandstone Protolamb
+pet(4527),	-- Lil' Moss Rosy \\ Rosewool Protolamb
 pet(4528),	-- Cobalt Mosswool
 pet(4529),	-- Shale Mosswool
 pet(4530),	-- Loamy
@@ -75,13 +75,13 @@ pet(4533),	-- Meek Bloodlasher
 pet(4534),	-- Nightfarm Growthling
 pet(4535),	-- Ghostcap Menace
 pet(4536),	-- Blightbud
-pet(4537),	-- Kobold Fist-Thrower
+pet(4537),	-- Chester \\ Kobold Fist-Thrower
 pet(4538),	-- Cobalt Ramolith
 pet(4539),	-- Granite Ramolith
 pet(4540),	-- Alabaster Stonecharger
 pet(4541),	-- Bedrock Stonecharger
 pet(4542),	-- Slim
-pet(4543),	-- Nightshade
+pet(4543),	-- Sir Shady Mrgglton Junior \\ Nightshade
 pet(4544),	-- Umbral Amalgam
 pet(4545),	-- Clay Stonecharger
 pet(4546),	-- Sandstone Ramolith
@@ -112,6 +112,19 @@ pet(4582),	-- Rak-Ush Battleshell
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
 pet(4586),	-- Brown Leafbug
+11.0.0.54361
+pet(4589),	-- Gale
+pet(4590),	-- Flash
+pet(4591),	-- Thundo
+pet(4594),	-- Dalaran Sewer Turtle
+11.0.0.54521
+pet(4596),	-- Faithful Dog
+pet(4597),	--
+pet(4598),	--
+11.0.0.54605
+pet(4599),	-- Mind Slurp
+11.0.0.54935
+pet(4602),	-- Claudius
 
 
 
@@ -136,7 +149,7 @@ pet(4465),	-- Vanilla
 pet(4466),	-- Argos
 pet(4467),	-- Hallowed Glowfly
 pet(4469),	-- Bop
-pet(4470),	-- Argent Scootlefish
+pet(4470),	-- Oop'lajax \\ Argent Scootlefish
 pet(4471),	-- Aubergine Scootlefish
 pet(4472),	-- Shadowbog Hopper
 pet(4473),	-- Spinner
@@ -152,7 +165,7 @@ pet(4483),	-- Vile Bloodtick
 pet(4484),	-- Frenzied Bloodtick
 pet(4485),	-- Mossy Snail
 pet(4488),	-- Haywire Servobot
-pet(4489),	-- Obsidian Weave-rat
+pet(4489),	-- Bouncer \\ Obsidian Weave-rat
 pet(4490),	-- Fuzzy
 pet(4491),	-- Jump Jump
 pet(4492),	-- Fringe
@@ -167,7 +180,7 @@ pet(4502),	-- Kaheti Bull Worm
 pet(4503),	-- Sporbit
 pet(4504),	-- Sporbit
 pet(4505),	-- Sporbit
-pet(4506),	-- Sporbit
+pet(4506),	-- Violet Sporbit \\ Sporbit
 pet(4507),	-- Sporbit
 pet(4508),	-- Sporbit
 pet(4509),	-- Sporbit
@@ -186,8 +199,8 @@ pet(4521),	-- Subterranean Dartswog
 pet(4522),	-- Troglofrog
 pet(4524),	-- Starkstripe Hopper
 pet(4525),	-- Fragrant Stonelamb
-pet(4526),	-- Sandstone Protolamb
-pet(4527),	-- Rosewool Protolamb
+pet(4526),	-- Sandstone Mosswool \\ Sandstone Protolamb
+pet(4527),	-- Lil' Moss Rosy \\ Rosewool Protolamb
 pet(4528),	-- Cobalt Mosswool
 pet(4529),	-- Shale Mosswool
 pet(4530),	-- Loamy
@@ -195,13 +208,13 @@ pet(4533),	-- Meek Bloodlasher
 pet(4534),	-- Nightfarm Growthling
 pet(4535),	-- Ghostcap Menace
 pet(4536),	-- Blightbud
-pet(4537),	-- Kobold Fist-Thrower
+pet(4537),	-- Chester \\ Kobold Fist-Thrower
 pet(4538),	-- Cobalt Ramolith
 pet(4539),	-- Granite Ramolith
 pet(4540),	-- Alabaster Stonecharger
 pet(4541),	-- Bedrock Stonecharger
 pet(4542),	-- Slim
-pet(4543),	-- Nightshade
+pet(4543),	-- Sir Shady Mrgglton Junior \\ Nightshade
 pet(4544),	-- Umbral Amalgam
 pet(4545),	-- Clay Stonecharger
 pet(4546),	-- Sandstone Ramolith
@@ -232,3 +245,16 @@ pet(4582),	-- Rak-Ush Battleshell
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
 pet(4586),	-- Brown Leafbug
+11.0.0.54361
+pet(4589),	-- Gale
+pet(4590),	-- Flash
+pet(4591),	-- Thundo
+pet(4594),	-- Dalaran Sewer Turtle
+11.0.0.54521
+pet(4596),	-- Faithful Dog
+pet(4597),	--
+pet(4598),	--
+11.0.0.54605
+pet(4599),	-- Mind Slurp
+11.0.0.54935
+pet(4602),	-- Claudius

@@ -2896,13 +2896,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(986),	-- Zalashji's Den
 				-- #endif
 				exploration(978),	-- Zul'Farrak
-				--[[
-				exploration(991),	-- Gunstan's Post
-				exploration(2317),	-- South Seas
-				exploration(2857),	-- The Rumble Cage
-				exploration(989),	-- Uldum
-				exploration(988),	-- Wavestrider Beach
-				]]--
 			}),
 			n(FACTIONS, {
 				faction(369, {	-- Gadgetzan
@@ -2928,7 +2921,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(531, {	-- Dawnrise Expedition, Tanaris
 					["cr"] = 41215,	-- Raina Sunglide <Flight Master>
 					["coord"] = { 33.2, 77.2, TANARIS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 				}),
 				fp(39, {	-- Gadgetzan, Tanaris
@@ -2952,7 +2945,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(532, {	-- Gunstan's Dig, Tanaris
 					["cr"] = 40827,	-- Thurda <Flight Master>
 					["coord"] = { 40, 77.4, TANARIS },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -2965,7 +2958,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(8126, {	-- Nixx Sprocketspring <Goblin Engineering Trainer>
 					["coord"] = { 52.2, 28.2, TANARIS },
-					["g"] = GOBLIN_ENGINEERING,
+					["g"] = ALL_GOBLIN_ENGINEERING,
 				}),
 			}),
 			n(QUESTS, {
@@ -2986,7 +2979,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						10892,	-- Imperial Plate Armor [H]
 					},
 					-- #endif
-					["timeline"] = { "added 1.11.1.10772", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 					["coord"] = { 51.4, 28.7, TANARIS },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
@@ -3155,6 +3148,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 38927,	-- Mazoga
 					["coord"] = { 42.2, 23.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/6 Fistful of Blood
+							["provider"] = { "i", 52064 },	-- Fistful of Blood
+							["crs"] = {
+								5645,	-- Sandfury Hideskinner
+								5646,	-- Sandfury Axe Thrower
+								5647,	-- Sandfury Firecaller
+							},
+						}),
+					},
 				}),
 				q(25103, {	-- Bootlegger Outpost
 					["qg"] = 38703,	-- Megs Dreadshredder
@@ -3603,12 +3606,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 151130,	-- Grizzek Fizzwrench
 					["sourceQuest"] = 53819,	-- Return to the Nest
 					["coord"] = { 27.2, 60.1, TANARIS },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 					["groups"] = {
 						i(165845, {	-- Feathers (PET!)
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 					},
 				}),
@@ -3620,7 +3623,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10891, {	-- Imperial Plate Armor [A]
 					["qg"] = 11145,	-- Myolor Sunderfury
 					["coord"] = { 52.0, 41.4, IRONFORGE },
-					["timeline"] = { "added 2.5.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_5_1, REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["isBreadcrumb"] = true,
@@ -3630,7 +3633,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10892, {	-- Imperial Plate Armor [H]
 					["qg"] = 11176,	-- Krathok Moltenfist
 					["coord"] = { 80.0, 23.3, ORGRIMMAR },
-					["timeline"] = { "added 2.5.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_5_1, REMOVED_4_0_3 },
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 265,
 					["isBreadcrumb"] = true,
@@ -3980,7 +3983,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 151132,	-- Feathers
 					["sourceQuest"] = 53816,	-- Some Reassembly Required
 					["coord"] = { 62.1, 45.3, TANARIS },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["lvl"] = 120,
 				}),
 				q(648, {	-- Rescue OOX-17/TN!
@@ -4024,7 +4027,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 151132,	-- Feathers
 					["sourceQuest"] = 53818,	-- Re-parrot / Programming On The Fly
 					["coord"] = { 62.1, 45.3, TANARIS },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["lvl"] = 120,
 				}),
 				q(24905, {	-- Returning a Favor
@@ -4116,7 +4119,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157014, {	-- Dunemaul Skullcracker
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -4148,7 +4151,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157024, {	-- Sandfury Hatchet
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -4179,13 +4182,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25048, {	-- Seaside Salvage (A)
 					["qg"] = 38535,	-- Kelsey Steelspark
+					["sourceQuest"] = 27446,	-- Tanaris is Calling [A]
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24906, {	-- Seaside Salvage (H)
 					["qg"] = 38534,	-- Megs Dreadshredder
-					["sourceQuest"] = 27447,	-- Tanaris is Calling
+					["sourceQuest"] = 27447,	-- Tanaris is Calling [H]
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -4214,11 +4218,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 151129,	-- Sapphronetta Flavvers
 					["sourceQuest"] = 53819,	-- Return to the Nest
 					["coord"] = { 27.1, 60.0, TANARIS },
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(165845, {	-- Feathers (PET!)
-							["timeline"] = { "added 8.1.5.29701" },
+							["timeline"] = { ADDED_8_1_5 },
 						}),
 					},
 				}),
@@ -4266,8 +4270,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						53817,	-- Whatever Happened to Grizzek Fizzwrench?
 					},
 					["coord"] = { 62.1, 45.3, TANARIS },
-					["timeline"] = { "added 8.1.5.29701" },
-					["lvl"] = 120,
+					["timeline"] = { ADDED_8_1_5 },
+					["lvl"] = 50,
+					["g"] = {
+						i(167232),	-- Mechanical Parts (QI!)
+					},
 				}),
 				q(8366, {	-- Southsea Shakedown
 					["qg"] = 7882,	-- Security Chief Bilgewhizzle
@@ -4574,19 +4581,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 42,
 					["groups"] = {
 						i(8647, {	-- Egg Crate
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { DELETED_4_0_3 },
 							["groups"] = {
 								i(8646, {	-- Bad Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8643, {	-- Extraordinary Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8644, {	-- Fine Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8645, {	-- Ordinary Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 							},
 						}),
@@ -4602,19 +4609,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 42,
 					["groups"] = {
 						i(8647, {	-- Egg Crate
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { DELETED_4_0_3 },
 							["groups"] = {
 								i(8646, {	-- Bad Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8643, {	-- Extraordinary Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8644, {	-- Fine Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 								i(8645, {	-- Ordinary Egg
-									["timeline"] = { "deleted 4.0.3" },
+									["timeline"] = { DELETED_4_0_3 },
 								}),
 							},
 						}),
@@ -4929,7 +4936,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(157015, {	-- Meatface's Tenderizer
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -4943,7 +4950,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 36.6, 42.6, TANARIS },
 						{ 36.8, 46.6, TANARIS },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(44759, {	-- Andre Firebeard
 					["coord"] = { 69.6, 56.8, TANARIS },
@@ -5008,7 +5015,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 53.0, 70.4, TANARIS },
 						{ 50.6, 72.6, TANARIS },
 					},
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(39186, {	-- Hellgazer
 					["coord"] = { 40.8, 41.2, TANARIS },
@@ -5180,7 +5187,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE 4.0.3
 					["sym"] = {{"sub", "pvp_gear_base", EXPANSION.WRATH, SEASON_FURIOUS, PVP_ELITE },{"merge"}},	-- Furious Gladiator's Elite Set
 					-- #endif
-					["timeline"] = { "added 3.1.1.9806", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
 				}),
 				n(34090, {	-- Blazzek the Biter <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
 					-- #if BEFORE 4.0.3.13277
@@ -5286,7 +5293,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				n(106940, {	-- Innkeeper Fizzgrimble <Innkeeper>
 					["coord"] = { 52.6, 27.0, TANARIS },
-					["timeline"] = { "added 7.0.3.22396" },
+					["timeline"] = { ADDED_7_0_3 },
 					["groups"] = {
 						i(18046),	-- Recipe: Tender Wolf Steak (RECIPE!)
 					},
@@ -5311,7 +5318,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				n(14743, {	-- Jhordy Lapforge <Engineer>
-					["requireSkill"] = 20219,	-- Gnomish Engineering
+					["requireSkill"] = GNOMISH_ENGINEERING,
 					["description"] = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
 					-- #if AFTER CATA
 					["coord"] = { 52.2, 27.8, TANARIS },
@@ -5319,7 +5326,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.17, 27.88, TANARIS },
 					-- #endif
 					["groups"] = {
-						recipe(23489),	-- Ultrasafe Transporter - Gadgetzan
+						r(23489),	-- Ultrasafe Transporter - Gadgetzan
 					},
 				}),
 				n(5411, {	-- Krinkle Goodsteel <Blacksmithing Supplies>
@@ -5477,16 +5484,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["description"] = "This item have three sources: Pirate's Footlocker, Captain's Chest, and Cuergo's Hidden Treasure.\nPirate's Footlocker is a common drop from mobs on Lost Rigger's Cove.\nCaptain's Chest is found in the captain's quarters in one of the two ships harboured at Lost Rigger's Cove. It only be opened by a Captain's Key, an uncommon item contained in Pirate's Footlockers.\nCuergo's Hidden Treasure is rewarded from the quest Cuergo's Gold.",
 						}),
 						i(9250, {	-- Ship Schedule
-							["timeline"] = { "deleted 4.0.3" },
+							["timeline"] = { DELETED_4_0_3 },
 						}),
 						i(9251, {	-- Upper Map Fragment
-							["timeline"] = { "deleted 4.1.0" },
+							["timeline"] = { DELETED_4_1_0 },
 						}),
 						i(9253, {	-- Middle Map Fragment
-							["timeline"] = { "deleted 4.1.0" },
+							["timeline"] = { DELETED_4_1_0 },
 						}),
 						i(9252, {	-- Lower Map Fragment
-							["timeline"] = { "deleted 4.1.0" },
+							["timeline"] = { DELETED_4_1_0 },
 						}),
 						i(9249, {	-- Captain's Key
 							["description"] = "Unlocks the Captain's Chest located in one of the ships harboured at Lost Rigger's Cove.",

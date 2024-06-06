@@ -148,18 +148,35 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FLIGHT_PATHS, {
 				fp(616, {	-- Gates of Sothann
+					["cr"] = 43549,	-- Althera <Flight Master>
 					["coord"] = { 71.6, 75.3, MOUNT_HYJAL },
 				}),
 				fp(558, {	-- Grove of Aessina
+					["crs"] = {
+						41860,	-- Elizil Wintermoth <Flight Master>
+						53783,	-- Elizil Wintermoth <Flight Master>
+					},
 					["coord"] = { 19.6, 36.3, MOUNT_HYJAL },
 				}),
 				fp(559, {	-- Nordrassil
+					["cr"] = 41861,	-- Fayran Elthas <Flight Master>
 					["coord"] = { 62.1, 21.5, MOUNT_HYJAL },
 				}),
 				fp(781, {	-- Sanctuary of Malorne
+					["crs"] = {
+						54392,	-- Ranela Featherglen <Flight Master>
+						54393,	-- Ranela Featherglen <Flight Master>
+					},
 					["coord"] = { 27.7, 63.6, MOUNT_HYJAL },
 				}),
 				fp(557, {	-- Shrine of Aviana
+					["crs"] = {
+						43481,	-- Dinorae Swiftfeather <Flight Master>
+						50084,	-- Dinorae Swiftfeather <Flight Master>
+						-- #if AFTER 7.2.0
+						119843,	-- Dinorae Swiftfeather <Flight Master>
+						-- #endif
+					},
 					["coord"] = { 41.1, 42.5, MOUNT_HYJAL },
 				}),
 			}),
@@ -652,12 +669,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
 					["sourceQuest"] = 25494,	-- A Champion's Collar
 				}),
+				heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
+					["description"] = "Only available to players who have not quested through Mount Hyjal.",
+					["timeline"] = { ADDED_4_2_0 },
+					["isBreadcrumb"] = true,
+					["lvl"] = 85,
+					["u"] = REMOVED_FROM_GAME,
+				})),
+				warchiefscommand(q(29390, {	-- Guardians of Hyjal: Call of the Ancients (H)
+					["description"] = "Only available to players who have not quested through Mount Hyjal.",
+					["timeline"] = { ADDED_4_2_0 },
+					["isBreadcrumb"] = true,
+					["lvl"] = 85,
+					["u"] = REMOVED_FROM_GAME,
+				})),
+				heroscall(q(29387, {	-- Guardians of Hyjal: Firelands Invasion! (A)
+					["timeline"] = { ADDED_4_2_0 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 85,
+				})),
+				warchiefscommand(q(29388, {	-- Guardians of Hyjal: Firelands Invasion! (H)
+					["timeline"] = { ADDED_4_2_0 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 85,
+				})),
 				q(29389, {	-- Guardians of Hyjal: Firelands Invasion!
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-					["lvl"] = 85,
+					["sourceQuests"] = {
+						25372,	-- Aessina's Miracle
+						-- #if AFTER 4.2.0
+						29391,	-- Guardians of Hyjal: Call of the Ancients (A)
+						29390,	-- Guardians of Hyjal: Call of the Ancients (H)
+						-- #endif
+					},
 					["coord"] = { 19.5, 37.8, MOUNT_HYJAL },
-					["sourceQuest"] = 25372,	-- Aessina's Miracle
 					["isBreadcrumb"] = true,
+					["lvl"] = 85,
 				}),
 				q(25255, {	-- Harrying the Hunters
 					["qg"] = 39429,	-- Oomla Whitehorn
@@ -673,6 +722,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39858,	-- Archdruid Hamuul Runetotem
 					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
 					["sourceQuest"] = 25493,	-- Fresh Bait
+				}),
+				heroscall(q(27726, {	-- Hero's Call: Mount Hyjal! (max level 100)
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 80,
+				})),
+				q(29386, {	-- Hero's Call: Mount Hyjal!
+					-- @Darkal: This might be an HQT
+					["u"] = REMOVED_FROM_GAME,	-- triggers when turning in #27726
 				}),
 				q(25270, {	-- Howling Mad
 					["qg"] = 39432,	-- Takrik Ragehowl
@@ -863,9 +922,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(29145, {	-- Opening the Door
 					["qg"] = 52669,	-- Matoclaw
-					["lvl"] = 85,
+					-- #if AFTER 4.2.0
+					["sourceQuests"] = {
+						29387,	-- Guardians of Hyjal: Firelands Invasion! (A)
+						29388,	-- Guardians of Hyjal: Firelands Invasion! (H)
+						29389,	-- Guardians of Hyjal: Firelands Invasion! (both)
+					},
+					-- #endif
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["sourceQuest"] = 29389,	-- Guardians of Hyjal: Firelands Invasion!
+					["lvl"] = 85,
 				}),
 				q(29164, {	-- Perfecting Your Howl
 					["qg"] = 52669,	-- Matoclaw
@@ -1371,11 +1436,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.1, 45.4, MOUNT_HYJAL },
 					["sourceQuest"] = 25584,	-- The Return of the Ancients
 				}),
-				q(28732, {	-- This Can Only Mean One Thing...
-					["qg"] = 49444,	-- Pip Quickwit
-					["coord"] = { 42.6, 28.1, MOUNT_HYJAL },
-					["isBreadcrumb"] = true,
-				}),
 				q(29161, {	-- Those Bears Up There
 					["qg"] = 52671,	-- Mylune
 					["lvl"] = 85,
@@ -1435,6 +1495,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(57310),	-- Impressive Greaves
 						i(57309),	-- Chestplate of Exceptional Expectations
+						-- #if BEFORE MOP
+						i(57311, {	-- Firetail Dart
+							["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(25321, {	-- Twilight Captivity
@@ -1619,7 +1684,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(71304, {	-- Iris Moondreamer <Quartermaster>
 					["coord"] = { 62.8, 24.2, MOUNT_HYJAL },
-					["timeline"] = { "added 5.3.0.16781" },
+					["timeline"] = { ADDED_5_3_0 },
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(72994),	-- Ebonsoul Blade
@@ -1703,7 +1768,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						cl(HUNTER, {
 							i(73000),	-- Beastsoul Rifle
-							un(REMOVED_FROM_GAME, i(73001)),	-- Beastsoul Spear (missing on the vendor implementation)
+							--i(73001),	-- Beastsoul Spear (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
 							i(72913),	-- Beastsoul Helm
 							i(72915),	-- Beastsoul Spaulders
 							i(73146),	-- Beastsoul Choker
@@ -1738,7 +1803,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(73101),	-- Magesoul Stone of Destruction
 						}),
 						cl(MONK, {
-							["timeline"] = { "added 5.0.1.15752" },
+							["timeline"] = { ADDED_5_0_4 },
 							["groups"] = {
 								i(88648),	-- Monastic Spire
 								i(88622),	-- Monastic Staff
@@ -1862,7 +1927,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						cl(ROGUE, {
 							i(72995),	-- Shadowstalking Dagger
-							un(REMOVED_FROM_GAME, i(72996)),	-- Shadowstalking Shiv (missing on the vendor implementation)
+							--i(72996),	-- Shadowstalking Shiv (missing on the vendor implementation) [CRIEVE NOTE: It's listed in the Scroll of Resurrection section already.]
 							i(72997),	-- Shadowstalking Sword
 							i(72667),	-- Shadowstalking Hood
 							i(72669),	-- Shadowstalking Shoulders

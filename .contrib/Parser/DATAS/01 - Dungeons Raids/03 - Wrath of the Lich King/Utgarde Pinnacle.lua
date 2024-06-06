@@ -197,7 +197,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 				}),
 				q(29864, {	-- Working at the Source, No actual awards.
 					["qg"] = 56072,	-- Image of Argent Confessor Paletress
-					["timeline"] = { "added 4.3.0" },
+					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(78, 78, 20),
 				}),
 			}),
@@ -275,7 +275,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 						-- #endif
 						i(37056),	-- Harpooner's Striders
 						i(157560, {	-- Skadi's Scaled Boots
-							["timeline"] = { "added 7.3.5.25744" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -317,7 +317,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					n(ZONE_DROPS, {
 						i(37590),	-- Bands of Fading Light
 						i(37410, {	-- Tracker's Balanced Knives
-							["timeline"] = { "removed 5.0.4" },
+							["timeline"] = { REMOVED_5_0_4 },
 						}),
 						i(37587),	-- Ymirjar Physician's Robe
 					}),
@@ -325,7 +325,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if BEFORE CATA
 					n(COMMON_BOSS_DROPS, {
 						currency(101, {	-- Emblem of Heroism
-							["timeline"] = { ADDED_3_0_2, "removed 4.0.1" },
+							["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 						}),
 					}),
 					-- #endif
@@ -383,7 +383,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							i(37056),	-- Harpooner's Striders (7.3.5 - Used to be only Normal Mode)
 							-- #endif
 							i(157560, {	-- Skadi's Scaled Boots
-								["timeline"] = { "added 7.3.5.25744" },
+								["timeline"] = { ADDED_7_3_5 },
 							}),
 						},
 					}),

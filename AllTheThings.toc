@@ -4,8 +4,8 @@
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Author: Crieve-Sargeras
 ## Version: @project-version@
-## Interface: 100206
-## X-Interface: 100206
+## Interface: 100207
+## X-Interface: 100207
 ## X-Wago-ID: yQKyY5K7
 ## X-Curse-Project-ID: 267285
 ## SavedVariables: ATTCharacterData, ATTAccountWideData, AllTheThingsSavedVariables, AllTheThingsSettings, AllTheThingsAD, AllTheThingsProfiles, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsArtifactsItems, AllTheThingsHarvestItems
@@ -62,6 +62,7 @@ src\Modules\Color.lua
 src\Modules\Costs.lua
 src\Modules\Events.lua
 src\Modules\Filter.lua
+src\Modules\Inventory.lua
 src\Modules\Social.lua
 src\Modules\Tooltip.lua
 src\Modules\Upgrade.lua
@@ -73,6 +74,7 @@ db\Dragonflight\LocalizationDB.lua
 db\Dragonflight\en_auto.lua
 db\Presets.lua
 db\ReagentsDB.lua
+db\AccountWideQuestsDB.lua
 
 # Load object class templates
 src\Classes\base.lua
@@ -84,6 +86,7 @@ src\Classes\Quests.lua
 src\Classes\Item.Retail.lua
 # src\Classes\Item.Classic.lua
 src\Classes\Encounter.lua
+src\Classes\Ensemble.lua
 src\Classes\Expansion.lua
 src\Classes\Maps.lua
 src\Classes\Mount.lua
@@ -103,7 +106,6 @@ src\Classes\CharacterUnlock.lua
 
 # Item Sub-Classes
 src\Classes\Toys.lua
-#src\Classes\Ensembles.lua
 
 # Expansion specific source files
 src\Expansions\Warlords.lua

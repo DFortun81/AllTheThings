@@ -276,12 +276,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if AFTER CATA
 				exploration(352),	-- Zun'watha
 				-- #endif
-				--[[
-				exploration(1880),	-- Featherbeard's Hovel
-				exploration(1881),	-- Shindigger's Camp
-				exploration(2400),	-- The Forbidding Sea
-				exploration(349),	-- Wildhammer Keep
-				]]--
 			}),
 			-- #if BEFORE TBC
 			n(FACTIONS, {
@@ -340,7 +334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9470, {	-- A Gesture of Goodwill
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 41,
 					["groups"] = {
@@ -427,7 +421,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #if BEFORE 4.0.3
 					["groups"] = {
 						i(11474, {	-- Sprite Darter Egg (PET!)
-							["timeline"] = { "added 1.11.1.5462" },
+							["timeline"] = { ADDED_1_11_1 },
 							-- #if BEFORE WRATH
 							["races"] = ALLIANCE_ONLY,
 							-- #endif
@@ -458,10 +452,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131570, {	-- Cloudcaller Greaves
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131571, {	-- Cinch of the Scattering Wind
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -484,10 +478,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131519, {	-- Apothecary Chain Pants
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131520, {	-- Shadraspawn Waistguard
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -523,7 +517,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 46,
 					["groups"] = {
 						objective(1, {	-- 0/10 Vessel of Tainted Blood
-							["provider"] = { "i", 19071 },	-- Vessel of Tainted Blood
+							["providers"] = {
+								{ "i",  19071 },	-- Vessel of Tainted Blood
+								{ "o", 179922 },	-- Vessel of Tainted Blood
+							},
 							["description"] = "Can be found all over Jintha'alor.",
 							["coord"] = { 65.2, 71.9, THE_HINTERLANDS },
 						}),
@@ -554,13 +551,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(131544, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(59253, {	-- Sandrene's Invisible Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131545, {	-- Spider Venom Legguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -586,13 +583,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(131510, {	-- Sandrene's Invisible Hauberk
 							["description"] = "You will not be able to transmog this item.",
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(59253, {	-- Sandrene's Invisible Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131511, {	-- Spider Venom Legguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -665,7 +662,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9469, {	-- Featherbeard's Endorsement
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -724,7 +721,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131495, {	-- Stomachache Cinch
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -747,7 +744,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131536, {	-- Stormfeather Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -791,10 +788,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131546, {	-- Gauntlets of Strange Words
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156945, {	-- Talon Hatchet
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -818,10 +815,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131518, {	-- Gauntlets of Strange Words
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156945, {	-- Talon Hatchet
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -855,7 +852,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 181649 },	-- Featherbeard's Journal
 					["sourceQuest"] = 9469,	-- Featherbeard's Endorsement
 					["coord"] = { 13.4, 55.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 				}),
@@ -876,7 +873,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131542, {	-- Soul Eater Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -897,7 +894,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131509, {	-- Soul Eater Pauldrons
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1015,7 +1012,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9471, {	-- Preying on the Predators
 					["qg"] = 17223,	-- Ambassador Rualeth
 					["coord"] = { 15.1, 47.2, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 39,
 					["groups"] = {
@@ -1047,10 +1044,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131537, {	-- Blastbrew Headgear
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156946, {	-- Goopy Mallet
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1074,10 +1071,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131501, {	-- Slime Hunter Headgear
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(156946, {	-- Goopy Mallet
-							["timeline"] = { "added 7.3.5.25692" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 					},
 				}),
@@ -1110,7 +1107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131553, {	-- Gryphon Master's Chain
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
                         i(59235, {	-- Razorbeak Amulet
 							["timeline"] = { ADDED_4_0_3 },
@@ -1124,7 +1121,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["sourceQuest"] = 9476,	-- In Pursuit of Featherbeard
 					["coord"] = { 37.1, 71.5, THE_HINTERLANDS },
-					["timeline"] = { "added 2.0.1", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_1, REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
 					["groups"] = {
@@ -1317,11 +1314,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 46,
 					["groups"] = {
 						objective(1, {	-- 0/1 Huntsman Malkhor's Skull
-							["provider"] = { "i", 19069 },	-- Huntsman Malkhor's Skull
+							["providers"] = {
+								{ "i",  19069 },	-- Huntsman Malkhor's Skull
+								{ "o", 179915 },	-- Pile of Skulls
+							},
 							["coord"] = { 58.6, 64.9, THE_HINTERLANDS },
 						}),
 						objective(2, {	-- 0/1 Huntsman Malkhor's Bones
-							["provider"] = { "i", 19070 },	-- Huntsman Malkhor's Bones
+							["providers"] = {
+								{ "i",  19070 },	-- Huntsman Malkhor's Bones
+								{ "o", 179914 },	-- Pile of Bones
+							},
 							["coord"] = { 62.2, 75.5, THE_HINTERLANDS },
 						}),
 						i(19117, {	-- Laquered Wooden Plate Legplates
@@ -1352,10 +1355,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131549, {	-- Aerie Headgear
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131550, {	-- Aerie War Cap
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1379,10 +1382,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131526, {	-- Virulent Headpiece
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131527, {	-- Venomous Headgear
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1547,6 +1550,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2936,	-- The Spider God
 					["coord"] = { 56, 74.6, DUROTAR },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
@@ -1685,10 +1689,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131547, {	-- Gwenyth's Wristguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131548, {	-- Grips of Fanatical Zealotry
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1712,10 +1716,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131524, {	-- Gwenyth's Wristguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(131525, {	-- Grips of Fanatical Zealotry
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1744,7 +1748,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131498, {	-- Encroaching Boots
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1760,7 +1764,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7884,	-- Fraggar Thundermantle
 					["sourceQuest"] = 2880,	-- Troll Necklace Bounty
 					["coord"] = { 14.8, 44.6, THE_HINTERLANDS },
-					["timeline"] = { "removed 2.0.3" },
+					["timeline"] = { REMOVED_2_0_3 },
 					-- #if BEFORE TBC
 					["maxReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
 					-- #endif
@@ -1904,32 +1908,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				n(8215, {	-- Grimungous
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 71.6, 62.6, THE_HINTERLANDS },
 						{ 73.8, 55.8, THE_HINTERLANDS },
 						{ 78.6, 50.8, THE_HINTERLANDS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 63.8, 48.4, THE_HINTERLANDS },
 						{ 68.2, 50.2, THE_HINTERLANDS },
 						{ 62.8, 55.0, THE_HINTERLANDS },
 						{ 70.2, 59.8, THE_HINTERLANDS },
 						{ 74.6, 50.0, THE_HINTERLANDS },
 						{ 75.0, 56.0, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8213, {	-- Ironback
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 80.2, 58.2, THE_HINTERLANDS },
 						{ 81.0, 55.4, THE_HINTERLANDS },
 						{ 79.4, 56.6, THE_HINTERLANDS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 82.2, 44.8, THE_HINTERLANDS },
 						{ 81.6, 48.8, THE_HINTERLANDS },
 						{ 79.8, 61.2, THE_HINTERLANDS },
@@ -1938,50 +1938,50 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 76.8, 81.0, THE_HINTERLANDS },
 						{ 75.0, 88.8, THE_HINTERLANDS },
 						{ 73.4, 91.4, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8214, {	-- Jalinde Summerdrake
-					-- #if AFTER CATA
-					["coord"] = { 34.6, 55.2, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 34.6, 55.2, THE_HINTERLANDS },
+						-- #else
 						{ 27.8, 44.0, THE_HINTERLANDS },
 						{ 28.6, 46.6, THE_HINTERLANDS },
 						{ 31.6, 49.6, THE_HINTERLANDS },
 						{ 31.2, 43.6, THE_HINTERLANDS },
 						{ 32.8, 44.6, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
 				n(8217, {	-- Mith'rethis the Enchanter
-					-- #if AFTER CATA
-					["coord"] = { 64.8, 81.6, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.8, 81.6, THE_HINTERLANDS },
+						-- #else
 						{ 58.8, 71.2, THE_HINTERLANDS },
 						{ 59.8, 77.4, THE_HINTERLANDS },
 						{ 66.8, 80.2, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(17050, {	-- Chan's Imperial Robes
-							["timeline"] = { REMOVED_4_0_3, "added 9.0.1" },
+							["timeline"] = { REMOVED_4_0_3, ADDED_9_0_1 },
 						}),
 					},
 				}),
 				n(8211, {	-- Old Cliff Jumper
-					-- #if AFTER CATA
-					["coord"] = { 13.6, 53.8, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 13.6, 53.8, THE_HINTERLANDS },
+						-- #else
 						{ 17.0, 54.6, THE_HINTERLANDS },
 						{ 19.0, 50.6, THE_HINTERLANDS },
 						{ 30.6, 49.4, THE_HINTERLANDS },
 						{ 22.6, 52.4, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(107617, {	-- Ol' Muddle
 					["description"] = "This rare wanders the eastern portion of the zone, coords provide general areas to look for this rare.",
@@ -2000,69 +2000,67 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 67.8, 57.4, THE_HINTERLANDS },
 						{ 64.0, 54.6, THE_HINTERLANDS },
 					},
-					["timeline"] = { "added 7.0.3.22280" },
+					["timeline"] = { ADDED_7_0_3 },
 				}),
 				n(8210, {	-- Razortalon
-					-- #if AFTER CATA
-					["coord"] = { 66.2, 53.6, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 66.2, 53.6, THE_HINTERLANDS },
+						-- #else
 						{ 27.0, 54.8, THE_HINTERLANDS },
 						{ 27.0, 66.0, THE_HINTERLANDS },
 						{ 37.8, 44.2, THE_HINTERLANDS },
 						{ 36.8, 51.2, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8216, {	-- Retherokk the Berserker
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 47.6, 66.4, THE_HINTERLANDS },
 						{ 48.6, 68.4, THE_HINTERLANDS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 44.6, 67.4, THE_HINTERLANDS },
 						{ 46.8, 70.2, THE_HINTERLANDS },
 						{ 46.4, 64.6, THE_HINTERLANDS },
 						{ 51.2, 65.6, THE_HINTERLANDS },
 						{ 50.4, 60.4, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8212, {	-- The Reak
-					-- #if AFTER CATA
-					["coord"] = { 57.5, 42.6, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.5, 42.6, THE_HINTERLANDS },
+						-- #else
 						{ 46.8, 40.4, THE_HINTERLANDS },
 						{ 49.4, 53.0, THE_HINTERLANDS },
 						{ 58.0, 41.6, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8218, {	-- Witherheart the Stalker
-					-- #if AFTER CATA
-					["coord"] = { 39.8, 66.6, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 39.8, 66.6, THE_HINTERLANDS },
+						-- #else
 						{ 34.2, 68.4, THE_HINTERLANDS },
 						{ 31.4, 73.0, THE_HINTERLANDS },
 						{ 34.0, 75.6, THE_HINTERLANDS },
 						{ 35.0, 74.0, THE_HINTERLANDS },
 						{ 33.8, 73.2, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8219, {	-- Zul'arek Hatefowler
-					-- #if AFTER CATA
-					["coord"] = { 24.8, 65.6, THE_HINTERLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 24.8, 65.6, THE_HINTERLANDS },
+						-- #else
 						{ 24.2, 57.4, THE_HINTERLANDS },
 						{ 32.8, 57.6, THE_HINTERLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 			}),
 			n(VENDORS, {
@@ -2075,7 +2073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(12258, {	-- Serpent Clasp Belt
-							["timeline"] = { "created 1.12.1.12941", ADDED_4_0_3 },
+							["timeline"] = { CREATED_1_12_1, ADDED_4_0_3 },
 							["isLimited"] = true,
 						}),
 					},
@@ -2089,11 +2087,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(8161, {	-- Harggan <Blacksmithing Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 13.6, 44.8, THE_HINTERLANDS },
-					-- #else
-					["coord"] = { 13.4, 44.1, THE_HINTERLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 13.6, 44.8, THE_HINTERLANDS },
+						-- #else
+						{ 13.4, 44.1, THE_HINTERLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7995, {	-- Plans: Mithril Scale Bracers (RECIPE!)
@@ -2152,7 +2152,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(ZONE_DROPS, {
 				i(16214, {	-- Formula: Enchant Bracer - Greater Intellect
-					["timeline"] = { "removed 2.3.0" },	-- Learned at trainer
+					["timeline"] = { REMOVED_2_3_0 },	-- Learned at trainer
 					["cr"] = 2642,	-- Vilebranch Shadowcaster
 				}),
 				-- #if BEFORE CATA
@@ -2189,7 +2189,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if BEFORE 4.0.3
 				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
-					["timeline"] = { "removed 4.0.1" },
+					["timeline"] = { REMOVED_4_0_1 },
 				}),
 				-- #endif
 			}),

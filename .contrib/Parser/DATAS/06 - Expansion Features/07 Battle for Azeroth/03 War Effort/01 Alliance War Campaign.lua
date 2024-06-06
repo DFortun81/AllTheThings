@@ -1090,6 +1090,9 @@ root(ROOTS.ExpansionFeatures,
 								54519,	-- Squad Goals
 								54518,	-- Zero Zeppelins
 							},
+							["g"] = {
+								i(166682),	-- Blight Specialist Mask (QI!)
+							},
 						}),
 						q(54559, {	-- Free Plumeria
 							["provider"] = { "n", 145632 },	-- Okri Putterwrench
@@ -1199,6 +1202,9 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54200 },	-- Bring the Base
+							["g"] = {
+								i(165759),	-- Azerite Infused Ore (QI!)
+							},
 						}),
 						q(54202, {	-- Calibrate the Core
 							["provider"] = { "n", 147148 },	-- Megs
@@ -1226,6 +1232,9 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 41.1, 70.6, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54204 },	-- Total Temple Destruction
+							["g"] = {
+								i(165815),	-- Tranquilizer Dart (QI!)
+							},
 						}),
 						q(54206, {	-- The Sleeper Agent
 							["provider"] = { "n", 147519 },	-- Kelsey Steelspark
@@ -1343,12 +1352,18 @@ root(ROOTS.ExpansionFeatures,
 								54421,	-- Taming their Beasts
 								54418,	-- The Mech of Death
 							},
+							["g"] = {
+								i(166230),	-- Re-Discombobulator (QI!)
+							},
 						}),
 						q(54459, {	-- He Who Walks in the Light
 							["provider"] = { "n", 147842 },	-- Lady Jaina Proudmoore
 							["coord"] = { 50.4, 84.1, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 54441 },	-- Taking the Blood Gate
+							["g"] = {
+								i(166230),	-- Re-Discombobulator (QI!)
+							},
 						}),
 					--	AFTER TIDES OF VENGEANCE
 						q(54485, {	-- Battle of Dazar'alor
@@ -1386,6 +1401,13 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
 							["coord"] = { 80.1, 75.0, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(167151),	-- A Pile of Betting Slips (QI!)
+								i(167149),	-- An Annotated Recipe (QI!)
+								i(167153),	-- Ashvane Shipping Record (QI!)
+								i(167154),	-- Bad Poetry (QI!)
+								i(167065),	-- Suspiciously Encrypted Letter (QI!)
+							},
 						}),
 						q(55116, {	-- Getting a Clue
 							["sourceQuests"] = {
@@ -1395,12 +1417,18 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
 							["coord"] = { 80.1, 75.0, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(167155),	-- Ashvane Cipher Ring (QI!)
+							},
 						}),
 						q(55119, {	-- Reporting In!
 							["sourceQuests"] = { 55116 },	-- Getting A Clue
 							["provider"] = { "n", 150796 },	-- Kelsey Steelspark
 							["coord"] = { 80.1, 75.0, TIRAGARDE_SOUND },
 							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(167102),	-- A Decrypted Letter from Ashvane (QI!)
+							},
 						}),
 						q(55044, {	-- Don't Shoot the Messenger
 							["sourceQuests"] = { 55119 },	-- Reporting In!
@@ -1443,6 +1471,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 150637 },	-- Kelsey Steelspark
 							["coord"] = { 48.2, 41.4, STORMSONG_VALLEY },
 							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(167216),	-- Salvaged Parts (QI!)
+							},
 						}),
 						q(55183, {	-- Seeking Higher Ground
 							["sourceQuests"] = {
@@ -1489,6 +1520,11 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 146374 },	-- Shandris Feathermoon
 							["coord"] = { 11.5, 17.6, ASHENVALE },
 							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(165232),	-- Ancient Kaldorei Tome (QI!)
+								i(165233),	-- Discarded Nightsaber Bridle (QI!)
+								i(165250),	-- Elun'tara, Bow of the High Priestess (QI!)
+							},
 						}),
 						q(54041, {	-- No Survivors
 							["sourceQuests"] = { 53988 },	-- Shores of Fate

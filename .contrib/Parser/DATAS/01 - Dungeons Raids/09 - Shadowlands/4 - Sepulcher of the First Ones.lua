@@ -508,7 +508,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				ach(15409),	-- First Wonders
 				-- Fated
-				ach(15681, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Fate of the Sepulcher
+				ach(15681, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Fate of the Sepulcher
 					crit(53579, {	-- Vigilant Guardian
 						["_encounter"] = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MULTI.ALL },
 					}),
@@ -543,7 +543,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { THE_JAILER, DIFFICULTY.RAID.MULTI.ALL },
 					}),
 				})),
-				ach(15682, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Heroic: Fate of the Sepulcher
+				ach(15682, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Heroic: Fate of the Sepulcher
 					crit(53590, {	-- Vigilant Guardian
 						["_encounter"] = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
@@ -578,7 +578,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { THE_JAILER, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
-				ach(15683, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, "removed 10.0.2.47213" } }, {	-- Mythic: Fate of the Sepulcher
+				ach(15683, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH } }, {	-- Mythic: Fate of the Sepulcher
 					crit(153601, {	-- Vigilant Guardian
 						["_encounter"] = { VIGILANT_GUARDIAN, DIFFICULTY.RAID.MYTHIC },
 					}),

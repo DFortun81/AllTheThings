@@ -119,14 +119,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(4675),	-- Withering Thicket
 				exploration(454),	-- Wildbend River
 				-- #endif
-				--[[
-				exploration(455),	-- Blackwood Den
-				exploration(452),	-- Mist's Edge
-				exploration(453),	-- The Long Wash
-				exploration(2326),	-- The Veiled Sea
-				exploration(2078),	-- Twilight Shore
-				exploration(2077),	-- Twilight Vale
-				]]--
 			}),
 			prof(FISHING, {
 				i(12238),	-- Darkshore Grouper
@@ -135,7 +127,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				fp(339, {	-- Grove of the Ancients, Darkshore
 					["cr"] = 33253,	-- Delanea <Flight Master>
 					["coord"] = { 44.4, 75.4, DARKSHORE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(26, {	-- Lor'danel, Darkshore [CATA+] / Auberdine, Darkshore
@@ -225,7 +217,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131286, {	-- Legguards of Eternal Longing
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -280,7 +272,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131283, {	-- Serene Breeze Bracers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -320,7 +312,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131290, {	-- Wildkin Feathered Links
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -522,14 +514,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(53130, {	-- Bloodied Sentinel's Glaive (Alliance)
 					["provider"] = { "o", 296536 },	-- Bloodied Sentinel's Glaive
 					["coord"] = { 45.2, 17.9, DARKSHORE },
-					["timeline"] = { "added 8.0.1.27291" },
+					["timeline"] = { ADDED_8_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(120, 120, 50),
 				}),
 				q(53129, {	-- Bloodied Sentinel's Glaive (Horde)
 					["provider"] = { "o", 296536 },	-- Bloodied Sentinel's Glaive
 					["coord"] = { 45.2, 17.9, DARKSHORE },
-					["timeline"] = { "added 8.0.1.27291" },
+					["timeline"] = { ADDED_8_0_1 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(120, 120, 50),
 				}),
@@ -645,7 +637,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131285, {	-- Auberdine Ringmail Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -786,7 +778,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131278, {	-- Sentinel's Leafbough Chestpiece
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -807,7 +799,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131292, {	-- Silver Inlaid Footguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -897,7 +889,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1132, {	-- Fiora Longears
 					["qg"] = 4455,	-- Red Jack Flint
 					["coord"] = { 9.9, 57.9, WETLANDS },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 18,
@@ -1040,6 +1032,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
+				heroscall(q(28490, {	-- Hero's Call: Darkshore! (breadcrumb quest for 13518, not available if 26383, 26385 are completed) (max level 13)
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS },	-- Only found in Darnassus in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
+					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
+					["lvl"] = { 9, 20 },
+					-- #endif
+				})),
 				-- #if AFTER TBC
 				q(1135, {	-- Highperch Venom
 					-- This quest was moved to Darkshore after TBC Prepatch.
@@ -1116,7 +1118,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131289, {	-- Jadefire Squelcher Cord
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1126,7 +1128,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4456,	-- Fiora Longears
 					["sourceQuest"] = 1132,	-- Fiora Longears
 					["coord"] = { 33.8, 42.4, DARKSHORE },
-					["timeline"] = { "removed 3.3.0" },
+					["timeline"] = { REMOVED_3_3_0 },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -1272,7 +1274,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(10752, {	-- Onward to Ashenvale
 					["qg"] = 3649,	-- Thundris Windweaver
 					["coord"] = { 37.4, 40.2, DARKSHORE },
-					["timeline"] = { "added 2.0.3", REMOVED_4_0_3 },
+					["timeline"] = { ADDED_2_0_3, REMOVED_4_0_3 },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
@@ -1306,7 +1308,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131281, {	-- Tharill's Boon
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1340,7 +1342,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(156966, {	-- Cerellean's Spellsword
-							["timeline"] = { "added 7.3.5.25716" },
+							["timeline"] = { ADDED_7_3_5 },
 						}),
 						i(46325, {	-- Withers (PET!)
 							["timeline"] = { ADDED_4_0_3 },
@@ -1418,7 +1420,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131291, {	-- Soothsayer's Harness
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1550,7 +1552,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131318, {	-- Absentminded Legguards
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(52671, {	-- Bahrum's Bad Mood Ring
 							["timeline"] = { ADDED_4_0_3 },
@@ -1621,7 +1623,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131316, {	-- Armguards of the Ancient Grove
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1710,7 +1712,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(131823, {	-- Diver's Waistband
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(52609, {	-- Diver's Cord
 							["timeline"] = { ADDED_4_0_3 },
@@ -1749,7 +1751,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131282, {	-- Treetender Tunic
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1777,7 +1779,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131284, {	-- Blackwood Treads
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1798,7 +1800,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131315, {	-- Ancient Armbands
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1920,7 +1922,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131293, {	-- Archaeologist's Leggings
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1961,7 +1963,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131305, {	-- Wildwood Chain Links
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -1994,7 +1996,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131317, {	-- Cord of the Ancient Horn
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 						i(55135, {	-- Tia's Ring
 							["timeline"] = { ADDED_4_0_3 },
@@ -2040,7 +2042,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131288, {	-- Moonstalker Wristwraps
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2058,7 +2060,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131311, {	-- Seedhandler's Soft Grips
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2224,7 +2226,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131280, {	-- Lendra's Cult-Stompers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2239,7 +2241,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131824, {	-- Thessera's Gratitude
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2292,7 +2294,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131279, {	-- Starbreeze Gauntlets
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2343,7 +2345,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(131287, {	-- Grass-Stained Stompers
-							["timeline"] = { "added 7.0.3.22248" },
+							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
 				}),
@@ -2559,7 +2561,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, n(210482, {	-- Paxnozz
 					["coord"] = { 48.8, 15.6, DARKSHORE },
 					["cost"] = {{ "i", 209047, 1 }},	-- Gnarled Harpoon
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR, HUNTER },
 					["groups"] = {
 						i(208777, {	-- Rune of the Sniper
@@ -2615,7 +2617,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 409289 },	-- Strange Orb
 					["coord"] = { 56.2, 26.5, DARKSHORE },
 					["description"] = "Climb the tower in Darkshore, you'll likely need a group or a friend capable of surviving long enough to give you about 3 seconds of uninterupted looting time.",
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PALADIN },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(209047, {	-- Gnarled Harpoon
@@ -2626,7 +2628,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 49.2, 16.2, DARKSHORE },
 						{ 48.3, 18.0, DARKSHORE },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARRIOR, HUNTER },
 				})),
 				applyclassicphase(SOD_PHASE_ONE, i(205905, {	-- Memory of a Devout Champion
@@ -2647,7 +2649,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, i(205932, {	-- Prophecy of a King's Demise
 					["provider"] = { "o", 414646 },	-- Remnant
 					["coord"] = { 30.4, 48.0, DARKSHORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { PRIEST },
 					["groups"] = {
 						recipe(402849),	-- Engrave Gloves - Shadow Word - Death
@@ -2671,7 +2673,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 211471 },	-- Cliffspring Key
 					},
 					["coord"] = { 56.3, 34.9, DARKSHORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(400099),	-- Engrave Pants - Blade Dance
@@ -2680,7 +2682,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				applyclassicphase(SOD_PHASE_ONE, i(208772, {	-- Rune of Saber Slash
 					["provider"] = { "o", 414624 },	-- Lighthouse Stash
 					["coord"] = { 32.8, 37.1, DARKSHORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { ROGUE },
 					["groups"] = {
 						recipe(424984),	-- Engrave Gloves - Saber Slash
@@ -2701,7 +2703,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(43436, {	-- Ceriale Duskwhisper <Clothier>
 					["coord"] = { 50.6, 20.6, DARKSHORE },
-					["timeline"] = { "added 4.0.1.12984" },
+					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						16059,	-- Common Brown Shirt
@@ -2802,7 +2804,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				-- #if BEFORE 4.0.3
 				i(5839, {	-- Journal Page
-					["timeline"] = { "deleted 4.0.3" },
+					["timeline"] = { DELETED_4_0_3 },
 					["cr"] = 3660,	-- Athrikus Narassin <Cult of the Dark Strand>
 				}),
 				-- #endif
@@ -2813,7 +2815,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, i(208750, {	-- Rune of Channeling
 					["coord"] = { 57.0, 26.4, DARKSHORE },
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["cr"] = 2336,	-- Dark Strand Fanatic
 					["groups"] = {
@@ -2825,7 +2827,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 57.6, 26.0, DARKSHORE },
 						{ 52.6, 33.8, DARKSHORE },
 					},
-					["timeline"] = { "removed 2.0.1" },
+					["timeline"] = { REMOVED_2_0_1 },
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						3662,	-- Delmanis the Hated
@@ -2847,7 +2849,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 				-- #if BEFORE 4.0.3
 				i(5568, {	-- Smooth Pebble
-					["timeline"] = { "deleted 4.0.1" },
+					["timeline"] = { DELETED_4_0_1 },
 					["crs"] = {
 						2156,	-- Cracked Golem
 						2157,	-- Stone Behemoth
@@ -2870,7 +2872,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 -- #if AFTER 8.0.1.27404
 root(ROOTS.HiddenQuestTriggers, {
 	q(52759, {	-- Talked to Zom in Darkshore, which normally has 1 option. But this time had 2 "see past" options.
-		["timeline"] = { "added 8.0.1.27404" },
+		["timeline"] = { ADDED_8_0_1_LAUNCH },
 	}),
 });
 -- #endif

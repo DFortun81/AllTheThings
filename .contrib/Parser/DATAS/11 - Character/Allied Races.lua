@@ -279,6 +279,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 150515 },	-- Cyrus Crestfall
 				["coord"] = { 58.6, 70.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(166462),	-- Letter from the Lord Admiral (QI!)
+				},
 			}),
 			q(54721, {	-- I'm Too Old for This Ship
 				["sourceQuests"] = { 54708 },	-- Home, Home on the Range
@@ -318,6 +321,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 148870 },	-- Dorian Atwater
 				["coord"] = { 67.1, 12.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(166675),	-- Algerson Lumber Sample (QI!)
+				},
 			}),
 			q(54730, {	-- Gorak Tul's Influence
 				["sourceQuests"] = { 54728 },	-- This Lumber is Haunted
@@ -348,6 +354,12 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 150885 },	-- Wicker Beast
 				["coord"] = { 36.5, 28.9, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(167174),	-- Gnawed Bone (QI!)
+					i(167173),	-- Squeaky Toy (QI!)
+					i(167168),	-- Storehouse Key (QI!)
+					i(167172),	-- Worn Collar (QI!)
+				},
 			}),
 			q(54733, {	-- Make it Wright
 				["sourceQuests"] = { 55136 },	-- Her Dog Days Are Over
@@ -367,6 +379,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 					{ 33.0, 30.4, DRUSTVAR },
 				},
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(167199),	-- Dorian's Ore Shipment (QI!)
+					i(166674),	-- Hastily Scrawled Note (QI!)
+					i(167200),	-- Purified Lumber Sample (QI!)
+				},
 			}),
 			q(54735, {	-- A Worthy Crew
 				["sourceQuests"] = { 54734 },	-- Summons from Dorian
@@ -588,6 +605,10 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 150555 },	-- Waren Gearhart
 				["coord"] = { 73.1, 33.3, MECHAGON },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(172521),	-- Acquisitioned Machine Part (QI!)
+					i(172522),	-- Heat Tolerant Ooze (QI!)
+				},
 			}),
 			q(57490, {	-- Voyage to Safety
 				["sourceQuests"] = { 57488 },	-- The Current Schematic
@@ -601,9 +622,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["coord"] = { 73.1, 33.4, MECHAGON },
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
+					i(173028),	-- Flux Energized Servos (QI!)
 					i(172511),	-- Neural Accelerator (QI!)
 					i(173026),	-- Omni Electromagnetic Amplifier (QI!)
-					i(173028),	-- Flux Energized Servos (QI!)
 				},
 			}),
 			q(57492, {	-- Him?
@@ -799,12 +820,23 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 145416 },	-- Kiro
 				["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(171358),	-- Clucker Tidbits (QI!)
+					i(171356),	-- Enlarging Totem (QI!)
+					i(164926),	-- Saber Flank (QI!)
+					i(171357),	-- Worg Meat (QI!)
+				},
 			}),
 			q(53894, {	-- Worthwhile Repairs
 				["sourceQuests"] = { 53892 },	-- Where Are the Workers?
 				["provider"] = { "n", 145416 },	-- Kiro
 				["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					o(307836, {	-- Twilight Ore
+						i(164927),	-- Twilight Ore (QI!)
+					}),
+				},
 			}),
 			q(53895, {	-- Peon Promotions!
 				["sourceQuests"] = { 53892 },	-- Where Are the Workers?
@@ -857,6 +889,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 145980 },	-- Nisha
 				["coord"] = { 74.8, 63.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(171968),	-- Nazeshi Weaponry (QI!)
+				},
 			}),
 			q(53902, {	-- Taking Out the Tidecaller
 				["sourceQuests"] = {
@@ -902,6 +937,10 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 146301 },	-- Nomi
 				["coord"] = { 60.5, 56.2, SURAMAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(165013),	-- Fermented Firebloom (QI!)
+					i(165012),	-- Silkwing Fibers (QI!)
+				},
 			}),
 			q(53907, {	-- Sip and Savor
 				["sourceQuests"] = { 53906 },	-- Fermented for the Horde
@@ -910,6 +949,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(173727),	-- Nomi's Vintage (TOY!)
+					i(165014),	-- Nomi's Wine (QI!)
 				},
 			}),
 			q(53908, {	-- Awaiting Our Arrival

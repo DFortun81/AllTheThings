@@ -1498,9 +1498,11 @@ end");
                         case "hqd":
                         case "altQuestID":
                         case "altQuests":
+                        case "sourceAchievements":
                         case "sourceQuests":
                         case "isBounty":
                         case "isLimited":
+                        case "isGuild":
                         case "isDaily":
                         case "isWeekly":
                         case "isMonthly":
@@ -1772,6 +1774,7 @@ end");
                     case "DisablePartySync":
                     case "isBounty":
                     case "isLimited":
+                    case "isGuild":
                     case "isDaily":
                     case "isWeekly":
                     case "isMonthly":
@@ -1899,6 +1902,8 @@ end");
                     case "awp":
                     case "id":
                     case "uid":
+                    case "tmogSetID":
+                    case "_multiDifficultyID":
                         {
                             try
                             {
@@ -1912,6 +1917,19 @@ end");
                         }
 
                     // Integer -> Integer-Array Data Type conversion
+                    case "sourceAchievement":
+                        {
+                            try
+                            {
+                                // Convert a single sourceAchievement to a sourceAchievements list.
+                                Merge(item, "sourceAchievements", Convert.ToInt64(value));
+                            }
+                            catch
+                            {
+                                LogError($"Invalid Format for field [{field}] = {ToJSON(value)}", item);
+                            }
+                            break;
+                        }
                     case "sourceQuest":
                         {
                             try
@@ -1969,6 +1987,7 @@ end");
                     case "c":
                     case "specs":
                     case "difficulties":
+                    case "sourceAchievements":
                     case "sourceQuests":
                     case "altQuests":
                     case "races":
@@ -2589,7 +2608,7 @@ end");
             /// <summary>
             /// Attempts to find a matching 'data' object in the container based on the data that needs to merge
             /// </summary>
-            private static IDictionary<string, object> FindMatchingData(List<object> container, IDictionary<string, object> data2)
+            public static IDictionary<string, object> FindMatchingData(IEnumerable<object> container, IDictionary<string, object> data2)
             {
                 // if the data is explicitly defined as not to merge
                 if (data2.TryGetValue("nomerge", out bool nomerge) && nomerge)

@@ -2466,6 +2466,13 @@
 7487@@@+14 Damage and Healing Spells
 7488@@@+31 Healing Spells
 7489@@@+19 Damage and Healing Spells
+1.15.2.54332
+6971@@@Damaged Rune
+6973@@@Damaged Rune
+7087@@@Damaged Rune
+7491@@@Skull Bash
+7492@@@Lacerate
+7499@@@Light's Grace
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
@@ -11846,6 +11853,8 @@
 7323@@@10FX - Weapon Enchant - Sha - All Weapons
 7465@@@Funeral Pyre
 7466@@@Bulwark of the Black Ox
+10.2.7.54366
+7246@@@Chi-Ji, the Red Crane
 11.0.0.54311
 7143@@@Rite of Sanctification
 7144@@@Rite of Adjuration
@@ -12090,3 +12099,51 @@
 7500@@@Oil of Beladar's Grace |A:Professions-ChatIcon-Quality-Tier1:20:20|a
 7501@@@Oil of Beladar's Grace |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 7502@@@Oil of Beladar's Grace |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+11.0.0.54361
+7503@@@Lightning Tether
+7504@@@Overclocked S.E.L.F.I.E. Camera
+7505@@@Earthen Delivery Drill
+7506@@@Heartseeking Health Injector
+11.0.0.54521
+7211@@@+$k1 Primary Stat and +$435488s1% Maximum Mana per unique Algari gem color
+7212@@@+$k1 Primary Stat and +$435488s1% Maximum Mana per unique Algari gem color
+7213@@@+$k1 Primary Stat and +$435488s1% Maximum Mana per unique Algari gem color
+7214@@@+$k1 Primary Stat and +$435500s1% Critical Effect per unique Algari gem color
+7215@@@+$k1 Primary Stat and +$435500s1% Critical Effect per unique Algari gem color
+7216@@@+$k1 Primary Stat and +$435500s1% Critical Effect per unique Algari gem color
+7217@@@+$k1 Primary Stat and +$435501s1% Movement Speed per unique Algari gem color
+7218@@@+$k1 Primary Stat and +$435501s1% Movement Speed per unique Algari gem color
+7219@@@+$k1 Primary Stat and +$435501s1% Movement Speed per unique Algari gem color
+7251@@@+$k1 Primary Stat and +$438874s1% perceived fame and fortune per unique Algari gem color socketed
+7252@@@+$k1 Primary Stat and +$438874s1% perceived fame and fortune per unique Algari gem color socketed
+7253@@@+$k1 Primary Stat and +$438874s1% perceived fame and fortune per unique Algari gem color socketed
+7493@@@Algari Mana Oil |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7494@@@Algari Mana Oil |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7495@@@Algari Mana Oil |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7521@@@Holy Fire
+11.0.0.54605
+7522@@@Refurbished Alarm-O-Turret
+7523@@@Refurbished Plane Displacer
+7524@@@Refurbished Supercollide-O-Tron
+7525@@@Refurbished Shadowflame Rockets
+11.0.0.54675
+7526@@@Algari Weaverline
+11.0.0.54774
+7527@@@11.0.0 FX Testing - Enchant Visual - Goblin
+7528@@@Tidecaller's Guard
+7529@@@+$k1 Intellect & +$387302s1% Mana |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7530@@@+$k1 Intellect & +$387302s1% Mana |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7531@@@+$k1 Intellect & +$387302s1% Mana |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7532@@@+$k1 Intellect & +$k2 Stamina |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7533@@@+$k1 Intellect & +$k2 Stamina |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7534@@@+$k1 Intellect & +$k2 Stamina |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7535@@@+$k1 Intellect |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7536@@@+$k1 Intellect |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7537@@@+$k1 Intellect |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7538@@@Dornogal Buckle|A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7539@@@Dornogal Buckle|A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7540@@@Dornogal Buckle A:Professions-ChatIcon-Quality-Tier1:20:20|a
+11.0.0.54935
+7496@@@Oil of Deep Toxins |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7497@@@Oil of Deep Toxins |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7498@@@Oil of Deep Toxins |A:Professions-ChatIcon-Quality-Tier3:20:20|a

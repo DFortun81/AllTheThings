@@ -216,7 +216,7 @@ app:CreateWindow("RaidAssistant", {
 					priority = 20,
 					OnClick = function(row, button)
 						InviteUnit(InviteCharacterName);
-						C_Timer.After(.5,ConvertToRaid);
+						C_Timer.After(.8,ConvertToRaid);
 						self:Reset();
 						return true;
 					end,

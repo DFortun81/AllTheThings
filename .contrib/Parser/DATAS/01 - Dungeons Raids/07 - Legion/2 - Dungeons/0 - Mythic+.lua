@@ -10,8 +10,8 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			ach(11181, {	-- Legion Keymaster
 				["timeline"] = {
-					"added 7.0.3",
-					"removed 8.0.1",
+					ADDED_7_0_3,
+					REMOVED_8_0_1,
 				},
 				["g"] = {
 					crit(32353),	-- Eye of Azshara

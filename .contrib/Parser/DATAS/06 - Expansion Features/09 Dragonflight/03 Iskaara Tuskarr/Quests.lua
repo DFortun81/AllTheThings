@@ -289,8 +289,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						-- technically not accurate, but no other way to lock this properly for first character
+						-- 2024-05-16: This quest was no longer locked, possibly with 10.2.7
+						-- #IF BEFORE 10.2.7
 						["lockCriteria"] = { 1, "questID", 72393 },	-- Dragon Isles Supplies [Renown 12]
 						["DisablePartySync"] = true,
+						-- #ENDIF
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -655,12 +658,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
 						["g"] = {
-							title(476),	-- %s of Iskaara
+							title(476),	-- <Name> of Iskaara
 						},
 					}),
 					q(72328, {	-- Out Ferocious, Armored Steeds
 						["provider"] = { "n", 186462 },	-- Tatto
 						["coord"] = { 13.8, 49.7, THE_AZURE_SPAN },
+						["lockCriteria"] = {2,
+							"spellID", 376910,	-- Brown War Ottuk (MOUNT!)
+							"spellID", 376913,	-- Yellow War Ottuk (MOUNT!)
+						},
 						["g"] = {
 							i(201426),	-- Brown War Ottuk (MOUNT!)
 							i(201425),	-- Yellow War Ottuk (MOUNT!)

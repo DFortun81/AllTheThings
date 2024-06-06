@@ -123,6 +123,35 @@ local DefaultFields = {
     ["upgradeTotal"] = returnZero,
 	["progress"] = returnZero,
     ["total"] = returnZero,
+	-- anything without an icon ends up with weird spacing in lists
+	icon = function(t) return QUESTION_MARK_ICON end,
+	["AccessibilityScore"] = function(t)
+		local score = 0;
+		if GetRelativeValue(t, "nmr") then
+			score = score + 20;
+		end
+		if GetRelativeValue(t, "nmc") then
+			score = score + 10;
+		end
+		if GetRelativeValue(t, "rwp") then
+			score = score + 5;
+		end
+		if GetRelativeValue(t, "e") then
+			score = score + 1;
+		end
+		local u = GetRelativeValue(t, "u");
+		if u then
+			if u < 3 then
+				score = score + 100000;
+			elseif u < 4 then
+				score = score + 10;
+			else
+				score = score + 1;
+			end
+		end
+		t.AccessibilityScore = score;
+		return score;
+	end
 };
 
 if app.IsRetail then
@@ -232,8 +261,8 @@ or function(fields, className)
 		print("A Class Name must be declared when using BaseObjectFields");
 	end
 	local class = { __type = function() return className; end };
-	app.__perf.CaptureTable(class, className)
-	app.__perf.AutoCaptureTable(class, className)
+	app.__perf.CaptureTable(class, "Class:"..className)
+	app.__perf.AutoCaptureTable(class, "Class:"..className)
 	-- capture keys which are referenced but not implemented in a sub-table for better perf tracking
 	class.__missing = {}
 

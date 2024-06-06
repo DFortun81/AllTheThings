@@ -78,7 +78,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		})),
 		ach(6006, {	-- Elders of Cataclysm
 			["sym"] = {{ "achievement_criteria" }},
-			["timeline"] = { "added 4.2.0" },
+			["timeline"] = { ADDED_4_2_0 },
 		}),
 		ach(912, {	-- Elders of Eastern Kingdoms
 			["sym"] = {{ "achievement_criteria" }},
@@ -159,7 +159,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8882, {	-- Cluster Launcher
 			["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["timeline"] = { "removed 3.0.8.9464" },
+			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 55,
@@ -175,7 +175,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(8880, {	-- Cluster Rockets
 			["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
-			["timeline"] = { "removed 3.0.8.9464" },
+			["timeline"] = { REMOVED_3_0_8 },
 			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
 			["repeatable"] = true,
 			["lvl"] = 45,
@@ -195,10 +195,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Courage|r transmog.",
 			["coord"] = { 53.1, 36.0, MOONGLADE },
-			["timeline"] = { "added 8.3.0.33115" },
+			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
+				i(170278),	-- Flower of Fortitude (QI!)
+				i(170279),	-- Flower of Sincerity (QI!)
+				i(170280),	-- Flower of Vigor (QI!)
 				i(170205, {	-- Crown of Boundless Courage
-					["timeline"] = { "added 8.3.0.33115" },
+					["timeline"] = { ADDED_8_3_0 },
 				}),
 			},
 		}),
@@ -207,10 +210,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Dark Blossoms|r transmog.",
 			["coord"] = { 53.1, 36.0, MOONGLADE },
-			["timeline"] = { "added 8.3.0.33115" },
+			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
+				i(170296),	-- Flower of Compassion (QI!)
+				i(170298),	-- Flower of Reflection (QI!)
+				i(170308),	-- Flower of Solemnity (QI!)
 				i(170207, {	-- Crown of Eternal Memorial
-					["timeline"] = { "added 8.3.0.33115" },
+					["timeline"] = { ADDED_8_3_0 },
 				}),
 			},
 		}),
@@ -219,7 +225,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Good Fortune|r transmog.",
 			["coord"] = { 53.1, 36.0, MOONGLADE },
-			["timeline"] = { "added 8.3.0.33115" },
+			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
 				objective(1, {	-- 0/3 Flower of Thoughtfulness
 					["providers"] = {
@@ -243,7 +249,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["coord"] = { 48, 55, DUN_MOROGH },
 				}),
 				i(169208, {	-- Crown of Everlasting Fortune
-					["timeline"] = { "added 8.3.0.33115" },
+					["timeline"] = { ADDED_8_3_0 },
 				}),
 			},
 		}),
@@ -252,10 +258,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["sourceQuest"] = 56842,	-- Lunar Preservation
 			["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Prosperity|r transmog.",
 			["coord"] = { 53.1, 36.0, MOONGLADE },
-			["timeline"] = { "added 8.3.0.33115" },
+			["timeline"] = { ADDED_8_3_0 },
 			["groups"] = {
+				i(170283),	-- Flower of Felicity (QI!)
+				i(170282),	-- Flower of Peace (QI!)
+				i(170281),	-- Flower of Wealth (QI!)
 				i(170206, {	-- Crown of Infinite Prosperity
-					["timeline"] = { "added 8.3.0.33115" },
+					["timeline"] = { ADDED_8_3_0 },
 				}),
 			},
 		}),
@@ -278,7 +287,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15864,  -- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
 			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
-			["timeline"] = { "removed 3.0.8.9464" },
+			["timeline"] = { REMOVED_3_0_8 },
 			["isYearly"] = true,
 			["lvl"] = 10,
 			-- #if BEFORE 3.0.8.9464
@@ -292,7 +301,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15864,  -- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
 			["cost"] = { { "i", 21100, 1 } },	-- Coin of Ancestry
-			["timeline"] = { "removed 3.0.8.9464" },
+			["timeline"] = { REMOVED_3_0_8 },
 			["repeatable"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -304,7 +313,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15864,  -- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
 			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
-			["timeline"] = { "removed 3.0.8.9464" },
+			["timeline"] = { REMOVED_3_0_8 },
 			["repeatable"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -319,7 +328,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15864,  -- Valadar Starsong
 			["coord"] = { 53.6, 35.3, MOONGLADE },
 			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
-			["timeline"] = { "removed 3.0.8.9464" },
+			["timeline"] = { REMOVED_3_0_8 },
 			["isYearly"] = true,
 			-- #if BEFORE 3.0.8.9464
 			["groups"] = {
@@ -334,7 +343,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
-			["timeline"] = { "removed 3.0.8.9464" },
+			["timeline"] = { REMOVED_3_0_8 },
 			["repeatable"] = true,
 			["lvl"] = 50,
 			["groups"] = {
@@ -342,10 +351,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				i(21640),	-- Lunar Festival Fireworks Pack
 				-- #endif
 				i(21722, {	-- Pattern: Festival Dress
-					["timeline"] = { "removed 3.0.8.9464" },
+					["timeline"] = { REMOVED_3_0_8 },
 				}),
 				i(21723, {	-- Pattern: Festival Suit
-					["timeline"] = { "removed 3.0.8.9464" },
+					["timeline"] = { REMOVED_3_0_8 },
 				}),
 			},
 		}),
@@ -353,7 +362,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
-			["timeline"] = { "removed 3.0.8.9464" },
+			["timeline"] = { REMOVED_3_0_8 },
 			["repeatable"] = true,
 			["lvl"] = 45,
 			["groups"] = {
@@ -369,7 +378,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
-			["timeline"] = { "removed 3.0.8.9464" },
+			["timeline"] = { REMOVED_3_0_8 },
 			["repeatable"] = true,
 			["lvl"] = 55,
 			-- #if BEFORE 3.0.8.9464
@@ -387,7 +396,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
-			["timeline"] = { "removed 3.0.8.9464" },
+			["timeline"] = { REMOVED_3_0_8 },
 			["repeatable"] = true,
 			["lvl"] = 35,
 			-- #if BEFORE 3.0.8.9464
@@ -442,13 +451,17 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(56842, {	-- Lunar Preservation
 			["qg"] = 155759,	-- Myrael Lunarbloom
 			["coord"] = { 53.1, 36.0, MOONGLADE },
-			["timeline"] = { "added 8.3.0.33115" },
+			["timeline"] = { ADDED_8_3_0 },
+			["g"] = {
+				i(170084),	-- Blessed Staff of Moonflowers (QI!)
+				i(170083),	-- Staff of Moonflowers (QI!)
+			},
 		}),
 		q(8876, {	-- Small Rockets
 			["qg"] = 15909,  -- Fariel Starsong <Coin of Ancestry Collector>
 			["coord"] = { 53.8, 35.3, MOONGLADE },
 			["cost"] = { { "i", 21100, 5 } },	-- Coin of Ancestry
-			["timeline"] = { "removed 3.0.8.9464" },
+			["timeline"] = { REMOVED_3_0_8 },
 			["repeatable"] = true,
 			["lvl"] = 25,
 			-- #if BEFORE 3.0.8.9464
@@ -594,55 +607,55 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		q(29736, {	-- Darkfeather the Elder
 			["qg"] = 55218,	-- Elder Darkfeather
 			["coord"] = { 51.8, 33.0, TWILIGHT_HIGHLANDS },
-			["timeline"] = { "added 4.3.0.15050" },
+			["timeline"] = { ADDED_4_3_0 },
 			["isYearly"] = true,
 		}),
 		q(29734, {	-- Deepforge the Elder
 			["qg"] = 55216,	-- Elder Deepforge
 			["coord"] = { 27.7, 69.1, DEEPHOLM },
-			["timeline"] = { "added 4.3.0.15050" },
+			["timeline"] = { ADDED_4_3_0 },
 			["isYearly"] = true,
 		}),
 		q(29740, {	-- Evershade the Elder
 			["qg"] = 55227,	-- Elder Evershade
 			["coord"] = { 62.5, 22.8, MOUNT_HYJAL },
-			["timeline"] = { "added 4.3.0.15050" },
+			["timeline"] = { ADDED_4_3_0 },
 			["isYearly"] = true,
 		}),
 		q(29737, {	-- Firebeard the Elder
 			["qg"] = 55219,	-- Elder Firebeard
 			["coord"] = { 50.9, 70.4, TWILIGHT_HIGHLANDS },
-			["timeline"] = { "added 4.3.0.15050" },
+			["timeline"] = { ADDED_4_3_0 },
 			["isYearly"] = true,
 		}),
 		q(29742, {	-- Menkhaf the Elder
 			["qg"] = 55211,	-- Elder Menkhaf
 			["coord"] = { 65.5, 18.7, ULDUM },
-			["timeline"] = { "added 4.3.0.15050" },
+			["timeline"] = { ADDED_4_3_0 },
 			["isYearly"] = true,
 		}),
 		q(29738, {	-- Moonlance the Elder
 			["qg"] = 55228,	-- Elder Moonlance
-			["coord"] = { 57.2, 86.1, 205 },
-			["timeline"] = { "added 4.3.0.15050" },
+			["coord"] = { 57.2, 86.1, VASHJIR_SHIMMERING_EXPANSE },
+			["timeline"] = { ADDED_4_3_0 },
 			["isYearly"] = true,
 		}),
 		q(29741, {	-- Sekhemi the Elder
 			["qg"] = 55210,	-- Elder Sekhemi
 			["coord"] = { 31.5, 63.0, ULDUM },
-			["timeline"] = { "added 4.3.0.15050" },
+			["timeline"] = { ADDED_4_3_0 },
 			["isYearly"] = true,
 		}),
 		q(29735, {	-- Stonebrand the Elder
 			["qg"] = 55217,	-- Elder Stonebrand
 			["coord"] = { 49.7, 54.8, DEEPHOLM },
-			["timeline"] = { "added 4.3.0.15050" },
+			["timeline"] = { ADDED_4_3_0 },
 			["isYearly"] = true,
 		}),
 		q(29739, {	-- Windsong the Elder
 			["qg"] = 55224,	-- Elder Windsong
 			["coord"] = { 26.7, 62.0, MOUNT_HYJAL },
-			["timeline"] = { "added 4.3.0.15050" },
+			["timeline"] = { ADDED_4_3_0 },
 			["isYearly"] = true,
 		}),
 		-- Elders of Eastern Kingdoms
@@ -1307,7 +1320,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(167731, {	-- Battle-Hardened Heirloom Armor Casing
-					["timeline"] = { "added 8.1.5.29701" },
+					["timeline"] = { ADDED_8_1_5 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
@@ -1322,7 +1335,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
 				i(151614, {	-- Weathered Heirloom Armor Casing
-					["timeline"] = { "added 7.2.5.24076" },
+					["timeline"] = { ADDED_7_2_5 },
 					["cost"] = { { "i", 21100, 75 } },	-- 75x Coin of Ancestry
 					["sym"] = { { "fill" } },	-- simply fill this item
 				}),
@@ -1387,51 +1400,51 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),
 				i(90000, {	-- Everlasting Horde Firework (TOY!)
-					["timeline"] = { "added 6.0.2" },
+					["timeline"] = { ADDED_6_0_2 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(89999, {	-- Everlasting Alliance Firework (TOY!)
-					["timeline"] = { "added 6.0.2" },
+					["timeline"] = { ADDED_6_0_2 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(143827, {	-- Red Dragon Head Costume (TOY!)
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(165674, {	-- Green Dragon Head Costume (TOY!)
-					["timeline"] = { "added 8.1.0.28724" },
+					["timeline"] = { ADDED_8_1_0 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(165671, {	-- Blue Dragon Head Costume (TOY!)
-					["timeline"] = { "added 8.1.0.28724" },
+					["timeline"] = { ADDED_8_1_0 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(143828, {	-- Red Dragon Body Costume (TOY!)
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 					["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
 				}),
 				i(165675, {	-- Green Dragon Body Costume (TOY!)
-					["timeline"] = { "added 8.1.0.28724" },
+					["timeline"] = { ADDED_8_1_0 },
 					["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
 				}),
 				i(165672, {	-- Blue Dragon Body Costume (TOY!)
-					["timeline"] = { "added 8.1.0.28724" },
+					["timeline"] = { ADDED_8_1_0 },
 					["cost"] = { { "i", 21100, 10 } },	-- 10x Coin of Ancestry
 				}),
 				i(143829, {	-- Red Dragon Tail Costume (TOY!)
-					["timeline"] = { "added 7.1.5.23360" },
+					["timeline"] = { ADDED_7_1_5 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(165676, {	-- Green Dragon Tail Costume (TOY!)
-					["timeline"] = { "added 8.1.0.28724" },
+					["timeline"] = { ADDED_8_1_0 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(165673, {	-- Blue Dragon Tail Costume (TOY!)
-					["timeline"] = { "added 8.1.0.28724" },
+					["timeline"] = { ADDED_8_1_0 },
 					["cost"] = { { "i", 21100, 25 } },	-- 25x Coin of Ancestry
 				}),
 				i(165669, {	-- Lunar Elder's Hearthstone (TOY!)
-					["timeline"] = { "added 8.1.0.28724" },
+					["timeline"] = { ADDED_8_1_0 },
 					["cost"] = { { "i", 21100, 30 } },	-- 30x Coin of Ancestry
 				}),
 				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor (DM!)
@@ -1485,14 +1498,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					-- #if AFTER 8.1.0
 					["races"] = HORDE_ONLY,
 					-- #endif
-					["timeline"] = { "added 4.3.0.15005" },
+					["timeline"] = { ADDED_4_3_0 },
 					["cost"] = { { "i", 21100, 50 } },	-- 50x Coin of Ancestry
 				}),
 				i(74610, {	-- Lunar Lantern (PET!)
 					-- #if AFTER 8.1.0
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
-					["timeline"] = { "added 4.3.0.15005" },
+					["timeline"] = { ADDED_4_3_0 },
 					["cost"] = { { "i", 21100, 50 } },	-- 50x Coin of Ancestry
 				}),
 				i(21157, {	-- Festive Green Dress
@@ -1536,7 +1549,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry
 				}),
 				i(116172, {	-- Perky Blaster
-					["timeline"] = { "added 6.0.1.18566" },
+					["timeline"] = { ADDED_6_0_2 },
 					["cost"] = { { "i", 21100, 1 } },	-- 1x Coin of Ancestry
 				}),
 				i(21713),	-- Elune's Candle

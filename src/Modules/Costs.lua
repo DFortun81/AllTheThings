@@ -344,7 +344,7 @@ do
 		if not o.visible or o.saved or o.collected then return end
 		-- only add costs once per hash in case it is duplicated
 		local hash = o.hash
-		if Collector.Hashes[hash] then return end
+		if not hash or Collector.Hashes[hash] then return end
 		Collector.Hashes[hash] = true
 
 		local cost = o.cost;

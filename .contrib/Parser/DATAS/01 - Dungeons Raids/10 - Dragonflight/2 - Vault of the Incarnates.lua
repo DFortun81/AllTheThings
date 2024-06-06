@@ -525,28 +525,28 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				-- Awakened
 				ach(19564, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Awakened Storms
 					crit(64929, {	-- Eranog
-						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { ERANOG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64930, {	-- The Primal Council
-						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { THE_PRIMAL_COUNCIL, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64931, {	-- Terros
-						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { TERROS, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64932, {	-- Sennarth, the Cold Breath
-						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { SENNARTH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64933, {	-- Dathea, Ascended
-						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { DATHEA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64934, {	-- Kurog Grimtotem
-						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { KUROG, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64935, {	-- Broodkeeper Diurna
-						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 					crit(64936, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.ALL },
+						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 				})),
 				ach(19565, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Heroic: Awakened Storms
@@ -598,6 +598,9 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MYTHIC },
 					}),
 					crit(64952, {	-- Raszageth the Storm-Eater
+						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
+					}),
+					crit(64953, {	-- Raszageth the Storm-Eater (extra criteria??)
 						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
 					}),
 				})),
@@ -796,15 +799,15 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				ZoneDrops(),
 				-- Mythic Only Temp BoP Items
 				n(ZONE_DROPS, {
-					i(202146, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Brawler's Earthen Cuirass [BoP]
-					i(202148, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Emissary's Flamewrought Seal [BoP]
-					i(202145, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Frozen Claw Mantle [BoP]
-					i(202150, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Galvanic Gaiters [BoP]
-					i(202144, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Greathelm of Horned Fury [BoP]
-					i(202151, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Lavamancer's Ceremonial Waistguard [BoP]
-					i(202147, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Primal Seeker's Leggings [BoP]
-					i(202149, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5 }}),	-- Primalist Warden's Bracers [BoP]
-					i(202143, {["timeline"] = { "added 10.0.2.47213", REMOVED_10_0_5}}),	-- Woven Stone Bracelets [BoP]
+					i(202146, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Brawler's Earthen Cuirass [BoP]
+					i(202148, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Emissary's Flamewrought Seal [BoP]
+					i(202145, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Frozen Claw Mantle [BoP]
+					i(202150, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Galvanic Gaiters [BoP]
+					i(202144, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Greathelm of Horned Fury [BoP]
+					i(202151, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Lavamancer's Ceremonial Waistguard [BoP]
+					i(202147, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Primal Seeker's Leggings [BoP]
+					i(202149, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5 }}),	-- Primalist Warden's Bracers [BoP]
+					i(202143, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_0_5}}),	-- Woven Stone Bracelets [BoP]
 				}),
 				Boss(ERANOG, {
 					ach(16346),	-- Mythic: Eranog
