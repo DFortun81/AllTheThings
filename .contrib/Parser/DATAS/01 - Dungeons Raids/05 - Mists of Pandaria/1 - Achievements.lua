@@ -111,10 +111,10 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 			crit(19609, {	-- Trial of the King
 				["_encounter"] = { 708, DIFFICULTY.DUNGEON.HEROIC },
 			}),
-			crit(19608, {	-- Vizier Jin'bak
+			crit(19604, {	-- Vizier Jin'bak
 				["_encounter"] = { 693, DIFFICULTY.DUNGEON.HEROIC },
 			}),
-			crit(19604, {	-- Yan-Zhu the Uncasked
+			crit(19608, {	-- Yan-Zhu the Uncasked
 				["_encounter"] = { 670, DIFFICULTY.DUNGEON.HEROIC },
 			}),
 		})),

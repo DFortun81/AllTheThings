@@ -1608,10 +1608,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 
 				------ Old Mounts ------
 				i(94230, {	-- Amber Primordial Direhorn (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
+					["cost"] = {{"c", BRONZE, 18700}},
 				}),
 				i(87777, {	-- Astral Cloud Serpent (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
+					["cost"] = {{"c", BRONZE, 18700}},
 				}),
 				i(95059, {	-- Clutch of Ji-Kun (MOUNT!)
 					["cost"] = {{"c", BRONZE, 38500}},
@@ -1623,7 +1623,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["cost"] = {{"c", BRONZE, 38500}},
 				}),
 				i(94231, {	-- Jade Primordial Direhorn (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
+					["cost"] = {{"c", BRONZE, 18700}},
 				}),
 				i(104253, {	-- Kor'kron Juggernaut (MOUNT!)
 					["cost"] = {{"c", BRONZE, 38500}},
@@ -1632,7 +1632,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["cost"] = {{"c", BRONZE, 38500}},
 				}),
 				i(94229, {	-- Slate Primordial Direhorn (MOUNT!)
-					["cost"] = {{"c", BRONZE, 38500}},
+					["cost"] = {{"c", BRONZE, 18700}},
 				}),
 				i(89783, {	-- Son of Galleon (MOUNT!)
 					["cost"] = {{"c", BRONZE, 38500}},
