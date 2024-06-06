@@ -12,10 +12,11 @@ local IsQuestFlaggedCompleted, SearchForFieldContainer, GetFixedItemSpecInfo = a
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetSpellLink = app.WOWAPI.GetSpellLink;
 
-local GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
+local IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
 ---@diagnostic disable-next-line: deprecated
-	= GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
+	= IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
 
 -- Consolidates some spell checking
 local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)

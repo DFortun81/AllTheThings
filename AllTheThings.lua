@@ -60,6 +60,7 @@ local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
+local GetSpellLink = app.WOWAPI.GetSpellLink;
 
 local C_TradeSkillUI = C_TradeSkillUI;
 local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
@@ -6248,7 +6249,6 @@ end)();
 
 -- Music Rolls & Selfie Filter Lib: Music Rolls
 (function()
-local GetSpellLink = GetSpellLink;
 local fields = {
 	["key"] = function(t)
 		return "questID";

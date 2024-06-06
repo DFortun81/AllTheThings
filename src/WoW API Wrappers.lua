@@ -90,6 +90,7 @@ end
 if not GetSpellInfo then
 	lib.GetSpellName = C_Spell.GetSpellName;
 	lib.GetSpellIcon = C_Spell.GetSpellTexture;
+	lib.GetSpellLink = C_Spell.GetSpellLink;
 else
 	local GetSpellInfo = GetSpellInfo;
 	if app.GameBuildVersion >= 40000 then
@@ -98,4 +99,5 @@ else
 		lib.GetSpellName = function(spellID, rank) return rank and select(1, GetSpellInfo(spellID, rank)) or select(1, GetSpellInfo(spellID)); end;
 	end
 	lib.GetSpellIcon = function(spellID) return select(3, GetSpellInfo(spellID)); end;
+	lib.GetSpellLink = GetSpellLink;
 end

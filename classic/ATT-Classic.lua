@@ -62,6 +62,7 @@ local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
+local GetSpellLink = app.WOWAPI.GetSpellLink;
 
 -- App & Module locals
 local contains = app.contains;

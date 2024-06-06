@@ -7,12 +7,12 @@ local ipairs, pairs, rawset, rawget, math_floor, select, tonumber
 
 local C_MountJournal_GetMountInfoExtraByID,C_MountJournal_GetMountInfoByID,C_MountJournal_GetMountIDs
 	= C_MountJournal.GetMountInfoExtraByID,C_MountJournal.GetMountInfoByID,C_MountJournal.GetMountIDs
-local GetSpellLink = GetSpellLink
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
+local GetSpellLink = app.WOWAPI.GetSpellLink;
 
 -- App locals
 local Colorize = app.Modules.Color.Colorize;
