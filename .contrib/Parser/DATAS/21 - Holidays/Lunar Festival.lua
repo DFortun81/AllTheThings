@@ -16,7 +16,7 @@ LUNAR_FESTIVAL_HEADER = createHeader({
 	-- #endif
 	text = {
 		-- #if AFTER TBC
-		en = [[~select(1,GetCategoryInfo(160))]],
+		en = WOWAPI_GetCategoryName(160),
 		-- #else
 		en = "Lunar Festival",
 		-- #endif

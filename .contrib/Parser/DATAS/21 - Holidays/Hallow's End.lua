@@ -15,7 +15,7 @@ HALLOWS_END_HEADER = createHeader({
 	-- #endif
 	text = {
 		-- #if AFTER TBC
-		en = [[~select(1,GetCategoryInfo(158))]],
+		en = WOWAPI_GetCategoryName(158),
 		-- #else
 		en = "Hallow's End",
 		-- #endif

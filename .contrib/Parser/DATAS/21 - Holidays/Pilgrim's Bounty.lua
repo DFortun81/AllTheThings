@@ -7,7 +7,7 @@ PILGRIMS_BOUNTY_HEADER = createHeader({
 	icon = [[~_.asset("Holiday_Pilgrim")]],
 	eventID = EVENTS.PILGRIMS_BOUNTY,
 	text = {
-		en = [[~select(1,GetCategoryInfo(14981))]],
+		en = WOWAPI_GetCategoryName(14981),
 	},
 });
 local ALLIANCE_PILGRIM_MAPS = {

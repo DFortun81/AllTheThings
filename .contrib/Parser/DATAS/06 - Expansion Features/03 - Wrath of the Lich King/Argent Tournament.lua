@@ -5,7 +5,7 @@ ARGENT_TOURNAMENT = createHeader({
 	readable = "The Argent Tournament",
 	icon = "Interface\\Icons\\achievement_reputation_argentchampion",
 	text = {
-		en = [[~select(1,GetCategoryInfo(14941))]],
+		en = WOWAPI_GetCategoryName(14941),
 	},
 });
 

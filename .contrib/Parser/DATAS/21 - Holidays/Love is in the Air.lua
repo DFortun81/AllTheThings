@@ -15,7 +15,7 @@ LOVE_IS_IN_THE_AIR_HEADER = createHeader({
 	-- #endif
 	text = {
 		-- #if AFTER TBC
-		en = [[~select(1,GetCategoryInfo(187))]],
+		en = WOWAPI_GetCategoryName(187),
 		-- #else
 		en = "Love is in the Air",
 		-- #endif

@@ -43,9 +43,11 @@ WOWAPI_GetItemSubClassInfo = function(a,b)
 	end
 end
 WOWAPI_GetAchievementName = function(achievementID)
-	return "select(2, GetAchievementInfo(" .. achievementID .. "))";
+	return "select(2,GetAchievementInfo(" .. achievementID .. "))";
 end
-
+WOWAPI_GetCategoryName = function(categoryID)
+	return "select(1,GetCategoryInfo(" .. categoryID .. "))";
+end
 
 FUNCTION_TEMPLATES = {
 	OnTooltip = {

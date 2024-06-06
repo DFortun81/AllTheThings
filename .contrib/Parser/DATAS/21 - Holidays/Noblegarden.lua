@@ -15,7 +15,7 @@ NOBLEGARDEN_HEADER = createHeader({
 	-- #endif
 	text = {
 		-- #if AFTER TBC
-		en = [[~select(1,GetCategoryInfo(159))]],
+		en = WOWAPI_GetCategoryName(159),
 		-- #else
 		en = "Noblegarden",
 		-- #endif

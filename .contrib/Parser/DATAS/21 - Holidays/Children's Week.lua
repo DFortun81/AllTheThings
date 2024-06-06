@@ -15,7 +15,7 @@ CHILDRENS_WEEK_HEADER = createHeader({
 	-- #endif
 	text = {
 		-- #if AFTER TBC
-		en = [[~select(1,GetCategoryInfo(163))]],
+		en = WOWAPI_GetCategoryName(163),
 		-- #else
 		en = "Children's Week",
 		-- #endif

@@ -16,7 +16,7 @@ BREWFEST_HEADER = createHeader({
 	-- #endif
 	text = {
 		-- #if AFTER TBC
-		en = [[~select(1,GetCategoryInfo(162))]],
+		en = WOWAPI_GetCategoryName(162),
 		-- #else
 		en = "Brewfest",
 		-- #endif
