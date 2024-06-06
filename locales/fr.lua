@@ -3,6 +3,10 @@ if GetLocale() ~= "frFR" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+-- Temporary Helper functions
+local GetSpellInfo = GetSpellInfo;
+local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
+
 -- General Text
 	L.DESCRIPTION = "\"Sottement, vous avez cherché votre propre perte. Effrontément, vous avez ignoré des pouvoirs au-delà de votre compréhension. Vous vous êtes battus pour envahir le royaume du Collectionneur. Maintenant, il n’y a plus qu’une seule issue : emprunter le chemin solitaire... des damnés.\"";
 	--TODO: L.THINGS_UNTIL = " THINGS UNTIL ";
@@ -840,8 +844,8 @@ local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "Expérience Nouveau Joueur", desc = "Seul un nouveau personnage peut collecter ceci." },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Fil du destin", desc = "Seul un personnage ayant passé la suite de quête principale de Shadowlands peut collecter ceci." },
-	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "Seul un personnage ayant obtenu le |cffe6cc80"..GetSpellInfo(275825).."|r peut collecter ceci." },
-	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Seul un personnage |cffff0000n’ayant pas|r obtenu le |cffe6cc80"..GetSpellInfo(275825).."|r peut collecter ceci." },
+	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellName(275825), desc = "Seul un personnage ayant obtenu le |cffe6cc80"..GetSpellName(275825).."|r peut collecter ceci." },
+	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellName(275825), desc = "Seul un personnage |cffff0000n’ayant pas|r obtenu le |cffe6cc80"..GetSpellName(275825).."|r peut collecter ceci." },
 })
 do a[key] = value; end
 end

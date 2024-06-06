@@ -8,7 +8,11 @@ local Colorize = app.Modules.Color.Colorize;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
-local GetRealmName, GetItemInfo, GetSpellInfo = GetRealmName, GetItemInfo, GetSpellInfo
+local GetRealmName, GetItemInfo = GetRealmName, GetItemInfo
+
+-- Temporary Helper functions
+local GetSpellInfo = GetSpellInfo;
+local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
@@ -112,7 +116,7 @@ local ConversionMethods = setmetatable({
 		end
 	end,
 	professionName = function(spellID, reference)
-		return IsRetrievingConversionMethod(GetSpellInfo(app.SkillIDToSpellID[spellID] or 0), reference)
+		return IsRetrievingConversionMethod(GetSpellName(app.SkillIDToSpellID[spellID] or 0), reference)
 	end,
 }, {
 	__index = function(t, key)

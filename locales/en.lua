@@ -11,6 +11,10 @@ local L = app.L;
 -- Global locals
 local GetAchievementInfo, select, sformat = GetAchievementInfo, select, string.format;
 
+-- Temporary Helper functions
+local GetSpellInfo = GetSpellInfo;
+local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
+
 for key, value in pairs({
 	-- General Text
 	["THINGS_UNTIL"] = " THINGS UNTIL ";
@@ -613,7 +617,7 @@ for key, value in pairs({
 		["Toy Box"] = TOY,
 		--["Zone Drop"] = LFG_TYPE_ZONE,
 		["Zone Wide"] = LFG_TYPE_ZONE,
-		["Mini World Events"] = GetSpellInfo(57055),
+		["Mini World Events"] = GetSpellName(57055),
 		["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
 		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",
 		["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
@@ -834,10 +838,10 @@ for key, value in pairs({
 		[-302] = BATTLEFIELD_LEVEL.." 80-84",									-- Level Range 80-84
 		[-303] = BATTLEFIELD_LEVEL.." 85-89",									-- Level Range 85-89
 	-- Outposts in Draenor
-		[-357] = GetSpellInfo(171866),											-- Sparring Arena Outpost
-		[-358] = GetSpellInfo(164028),											-- Lumber Mill Outpost
+		[-357] = GetSpellName(171866),											-- Sparring Arena Outpost
+		[-358] = GetSpellName(164028),											-- Lumber Mill Outpost
 		[-360] = select(2,GetAchievementInfo(8987)),							-- Arcane Sanctum
-		[-361] = GetSpellInfo(182108).." Tower",								-- Artillery Tower
+		[-361] = GetSpellName(182108).." Tower",								-- Artillery Tower
 	-- Pre Class Hall Monk
 		[-362] = DUNGEON_FLOOR_KUNLAISUMMITSCENARIO0,							-- Peak of Serenity
 	-- Draenor Outposts
@@ -877,40 +881,40 @@ for key, value in pairs({
 		[-691] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = select(2, GetAchievementInfo(13957)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
 	-- Toys
-		[-798] = GetSpellInfo(181765),											-- S.E.L.F.I.E. Camera
+		[-798] = GetSpellName(181765),											-- S.E.L.F.I.E. Camera
 	-- Secret Header
-		[-807] = GetSpellInfo(261395),											-- The Hivemind
+		[-807] = GetSpellName(261395),											-- The Hivemind
 	-- Chests
 		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Shadowlands Header
-		[-901] = GetSpellInfo(339041),											-- Covenant Callings
+		[-901] = GetSpellName(339041),											-- Covenant Callings
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
 	--	[-902] = "Renown Rewards",												-- Renown Rewards
-		[-905] = GetSpellInfo(280630),											-- Command Table
+		[-905] = GetSpellName(280630),											-- Command Table
 		[-916] = sformat(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
 		[-917] = sformat(COVENANT_SANCTUM_TIER, 2),						-- Tier 2
 		[-918] = sformat(COVENANT_SANCTUM_TIER, 3),						-- Tier 3
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
-		[-981] = GetSpellInfo(348869),											-- Conduits
+		[-981] = GetSpellName(348869),											-- Conduits
 		-- SL Maldraxxus/Necrolord
-		[-920] = GetSpellInfo(321078),											-- Necrolord
+		[-920] = GetSpellName(321078),											-- Necrolord
 		[-923] = COVENANT_SANCTUM_FEATURE_NECROLORDS,							-- Abomination Factory
 		[-924] = "Transport Network",											-- Transport Network
 		[-925] = sformat(COVENANT_SANCTUM_TIER, 4),						-- Tier 4
 		[-926] = sformat(COVENANT_SANCTUM_TIER, 5),						-- Tier 5
 		-- SL Ardenweald/Night Fae
-		[-929] = GetSpellInfo(321077),											-- Night Fae
+		[-929] = GetSpellName(321077),											-- Night Fae
 		[-930] = COVENANT_SANCTUM_FEATURE_NIGHT_FAE,							-- Queen's Conservatory
 		[-934] = C_Map.GetAreaInfo(12840),										-- Star Lake Amphitheater
 		-- SL Bastion/Kyrian
-		[-939] = GetSpellInfo(321076),											-- Kyrian
+		[-939] = GetSpellName(321076),											-- Kyrian
 		[-942] = COVENANT_SANCTUM_FEATURE_KYRIAN,								-- Path of Ascension
 		[-972] = C_PetJournal.GetPetInfoBySpeciesID(3065),						-- Courage
 		[-973] = "Loyalty",														-- Loyalty
-		[-974] = GetSpellInfo(3166),											-- Wisdom
+		[-974] = GetSpellName(3166),											-- Wisdom
 		[-975] = "Humility",													-- Humility
 		-- SL Revendreth/Venthyr
-		[-949] = GetSpellInfo(321079),											-- Venthyr
+		[-949] = GetSpellName(321079),											-- Venthyr
 		[-954] = "Inquisitors",													-- Inquisitors
 		[-955] = "High Inquisitors",											-- High Inquisitors
 		[-956] = "Grand Inquisitors",											-- Grand Inquisitors
@@ -931,13 +935,13 @@ for key, value in pairs({
 		[-1100] = "Drakewatcher Manuscripts",									-- Drakewatcher Manuscripts
 		[-1101] = "Primal Storms",													-- Primal Storms
 		[-1102] = "Wrathion & Sabellian",											-- Wrathion & Sabellian
-		[-1111] = GetSpellInfo(365311),												-- Rock Climbing
-		[-1112] = GetSpellInfo(381284),												-- Cataloging
-		[-1113] = GetSpellInfo(386485),												-- Ancient Waygates
-		[-1114] = GetSpellInfo(382288),												-- Cartographer's Flag
+		[-1111] = GetSpellName(365311),												-- Rock Climbing
+		[-1112] = GetSpellName(381284),												-- Cataloging
+		[-1113] = GetSpellName(386485),												-- Ancient Waygates
+		[-1114] = GetSpellName(382288),												-- Cartographer's Flag
 		[-1120] = "Maruuk Centaur",													-- Maruuk Centaur
 		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
-		[-1142] = GetSpellInfo(400433),												-- Dragonriding Racing
+		[-1142] = GetSpellName(400433),												-- Dragonriding Racing
 		[-1143] = "DF Rare Rotation",												-- DF Rare Rotation (Every 30 min Rare)
 		[-1150] = "Loamm Niffen",													-- Loamm Niffen
 		[-1151] = "Bartering",														-- Bartering
@@ -1008,12 +1012,12 @@ for key, value in pairs({
 	["CUSTOM_COLLECTS_REASONS"] = {
 		["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "New Player Experience", desc = "Only a New Character can Collect this." },
 		["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Threads of Fate", desc = "Only a Character who chose to skip the Shadowlands Storyline can Collect this." },
-		["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
-		["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellInfo(275825).."|r can collect this." },
-		["SL_COV_KYR"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_kyrian")..":0|t", color = "ff516bfe", text = GetSpellInfo(321076) },
-		["SL_COV_NEC"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_necrolord")..":0|t", color = "ff40bf40", text = GetSpellInfo(321078) },
-		["SL_COV_NFA"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_nightfae")..":0|t", color = "ffA330C9", text = GetSpellInfo(321077) },
-		["SL_COV_VEN"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_venthyr")..":0|t", color = "fffe040f", text = GetSpellInfo(321079) },
+		["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellName(275825), desc = "Only a Character who has obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this." },
+		["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellName(275825), desc = "Only a Character who has |cffff0000not|r obtained the |cffe6cc80"..GetSpellName(275825).."|r can collect this." },
+		["SL_COV_KYR"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_kyrian")..":0|t", color = "ff516bfe", text = GetSpellName(321076) },
+		["SL_COV_NEC"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_necrolord")..":0|t", color = "ff40bf40", text = GetSpellName(321078) },
+		["SL_COV_NFA"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_nightfae")..":0|t", color = "ffA330C9", text = GetSpellName(321077) },
+		["SL_COV_VEN"] = { icon = "|T"..("Interface\\Icons\\ui_sigil_venthyr")..":0|t", color = "fffe040f", text = GetSpellName(321079) },
 	};
 }) do
 	L[key] = value;

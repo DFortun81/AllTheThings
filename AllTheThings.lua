@@ -49,7 +49,6 @@ local GetFactionInfoByID = _G.GetFactionInfoByID;
 local GetItemInfo = _G.GetItemInfo;
 ---@diagnostic disable-next-line: deprecated
 local GetItemInfoInstant = _G.GetItemInfoInstant;
-local GetSpellInfo = GetSpellInfo;
 local InCombatLockdown = _G.InCombatLockdown;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove,
@@ -59,6 +58,11 @@ local print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, se
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 local ATTAccountWideData;
+
+-- Temporary Helper functions
+local GetSpellInfo = GetSpellInfo;
+local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
+local GetSpellIcon = (GetSpellInfo and (function(spellID) return select(3, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellIcon;
 
 local C_TradeSkillUI = C_TradeSkillUI;
 local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
@@ -6243,7 +6247,7 @@ end)();
 
 -- Music Rolls & Selfie Filter Lib: Music Rolls
 (function()
-local GetSpellLink, GetSpellInfo = GetSpellLink, GetSpellInfo;
+local GetSpellLink = GetSpellLink;
 local fields = {
 	["key"] = function(t)
 		return "questID";
@@ -6299,7 +6303,7 @@ local fields = {
 		return "questID";
 	end,
 	["icon"] = function(t)
-		return select(3, GetSpellInfo(t.spellID));
+		return GetSpellIcon(t.spellID);
 	end,
 	["link"] = function(t)
 		return GetSpellLink(t.spellID);
@@ -6695,21 +6699,21 @@ local fields = {
 	end,
 	--[[
 	["name"] = function(t)
-		if app.GetSpecializationBaseTradeSkill(t.professionID) then return GetSpellInfo(t.professionID); end
-		if t.professionID == 129 then return GetSpellInfo(t.spellID); end
+		if app.GetSpecializationBaseTradeSkill(t.professionID) then return GetSpellName(t.professionID); end
+		if t.professionID == 129 then return GetSpellName(t.spellID); end
 		return C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
 	end,
 	["icon"] = function(t)
-		if app.GetSpecializationBaseTradeSkill(t.professionID) then return select(3, GetSpellInfo(t.professionID)); end
-		if t.professionID == 129 then return select(3, GetSpellInfo(t.spellID)); end
+		if app.GetSpecializationBaseTradeSkill(t.professionID) then return GetSpellIcon(t.professionID); end
+		if t.professionID == 129 then return GetSpellIcon(t.spellID); end
 		return C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
 	end,
 	]]--
 	["name"] = function(t)
-		return t.spellID ~= 2366 and select(1, GetSpellInfo(t.spellID)) or C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
+		return t.spellID ~= 2366 and GetSpellName(t.spellID) or C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
 	end,
 	["icon"] = function(t)
-		return select(3, GetSpellInfo(t.spellID)) or C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
+		return GetSpellIcon(t.spellID) or C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
 	end,
 	["spellID"] = function(t)
 		return app.SkillIDToSpellID[t.professionID];

@@ -3,6 +3,10 @@ if GetLocale() ~= "zhCN" and GetLocale() ~= "zhTW" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+-- Temporary Helper functions
+local GetSpellInfo = GetSpellInfo;
+local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
+
 -- General Text
 	L.DESCRIPTION = "“你愚蠢地寻求自己的终结，厚颜无耻地无视了你无法理解的力量。你入侵了收藏者的领域并为此努力。现在只有一条路可走了——这条孤独的路……该死的路。”";
 	L.THINGS_UNTIL = " 事物到 ";
@@ -466,7 +470,7 @@ for key,value in pairs({
 	-- Allied Races
 		[-255] = "传承护甲",											-- Heritage
 	-- Outposts in Draenor
-		[-361] = GetSpellInfo(182108).." 塔",						-- Artillery Tower
+		[-361] = GetSpellName(182108).." 塔",						-- Artillery Tower
 	-- BFA Outposts
 		[-397] = "哨站",												-- Outposts
 	-- Misc
@@ -882,8 +886,8 @@ local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "新玩家体验", desc = "只有新角色可以收藏这个。" },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "命运丝线", desc = "只有选择跳过暗影国度故事线的角色才能收藏这个。" },
-	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "只有角色获得 |cffe6cc80"..GetSpellInfo(275825).."|r 可以收集。" },
-	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellInfo(275825), desc = "只有角色 |cffff0000没有|r 获得 |cffe6cc80"..GetSpellInfo(275825).."|r 可以收集。" },
+	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellName(275825), desc = "只有角色获得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。" },
+	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellName(275825), desc = "只有角色 |cffff0000没有|r 获得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。" },
 })
 do a[key] = value; end
 end

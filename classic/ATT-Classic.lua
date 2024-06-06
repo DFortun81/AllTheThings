@@ -57,8 +57,8 @@ local GetItemInfoInstant = _G["GetItemInfoInstant"];
 ---@diagnostic disable-next-line: deprecated
 local GetItemCount = _G["GetItemCount"];
 local InCombatLockdown = _G["InCombatLockdown"];
-local GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown =
-	  GetSpellInfo, IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown;
+local IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown =
+	  IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
@@ -74,6 +74,11 @@ local Colorize = app.Modules.Color.Colorize;
 local ColorizeRGB = app.Modules.Color.ColorizeRGB;
 local HexToARGB = app.Modules.Color.HexToARGB;
 local RGBToHex = app.Modules.Color.RGBToHex;
+
+-- Temporary Helper functions
+local GetSpellInfo = GetSpellInfo;
+local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
+local GetSpellIcon = (GetSpellInfo and (function(spellID) return select(3, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellTexture;
 
 -- Helper Functions
 local pendingCollection, pendingRemovals, retrievingCollection, pendingCollectionCooldown = {},{},{},0;
@@ -2368,7 +2373,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[2] then return data[2]; end
 		return GetNameFromProviders(t)
-			or (t.spellID and GetSpellInfo(t.spellID));
+			or (t.spellID and GetSpellName(t.spellID));
 	end
 	fields.link = function(t)
 		return GetAchievementLink(t.achievementID);
@@ -2379,7 +2384,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[3] then return data[3]; end
 		return GetIconFromProviders(t)
-			or (t.spellID and select(3, GetSpellInfo(t.spellID)))
+			or (t.spellID and GetSpellIcon(t.spellID))
 			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
 	end
 	fields.parentCategoryID = function(t)
@@ -2680,13 +2685,13 @@ else
 	fields.name = function(t)
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[2] then return data[2]; end
-		return GetNameFromProviders(t) or (t.spellID or GetSpellInfo(t.spellID)) or RETRIEVING_DATA;
+		return GetNameFromProviders(t) or (t.spellID or GetSpellName(t.spellID)) or RETRIEVING_DATA;
 	end
 	fields.icon = function(t)
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[3] then return data[3]; end
 		return GetIconFromProviders(t)
-			or (t.spellID and select(3, GetSpellInfo(t.spellID)))
+			or (t.spellID and GetSpellIcon(t.spellID))
 			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
 	end
 	fields.parentCategoryID = function(t)
@@ -4020,10 +4025,10 @@ app.OnUpdateForOmarionsHandbook = function(t)
 end;
 app.CreateProfession = app.CreateClass("Profession", "professionID", {
 	["text"] = function(t)
-		return GetSpellInfo(t.spellID);
+		return GetSpellName(t.spellID);
 	end,
 	["icon"] = function(t)
-		return select(3, GetSpellInfo(t.spellID));
+		return GetSpellIcon(t.spellID);
 	end,
 	["spellID"] = function(t)
 		return app.SkillIDToSpellID[t.professionID];
@@ -4074,7 +4079,7 @@ app.GetSpellName = function(spellID, rank)
 	if rank then
 		spellName = GetSpellInfo(spellID, rank);
 	else
-		spellName = GetSpellInfo(spellID);
+		spellName = GetSpellName(spellID);
 	end
 	if not IsRetrieving(spellName) then
 		if not rawget(app.SpellNameToSpellID, spellName) then
@@ -4104,7 +4109,7 @@ end
 app.IsSpellKnown = function(spellID, rank, ignoreHigherRanks)
 	if isSpellKnownHelper(spellID) then return true; end
 	if rank then
-		local spellName = GetSpellInfo(spellID);
+		local spellName = GetSpellName(spellID);
 		if spellName then
 			local maxRank = ignoreHigherRanks and rank or  rawget(MaxSpellRankPerSpellName, spellName);
 			if maxRank then
@@ -4166,7 +4171,7 @@ app.SpellNameToSpellID = setmetatable(L.SPELL_NAME_TO_SPELL_ID, {
 
 -- The difference between a recipe and a spell is that a spell is not collectible.
 local baseIconFromSpellID = function(t)
-	return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
+	return GetSpellIcon(t.spellID) or (t.requireSkill and GetSpellIcon(t.requireSkill));
 end;
 local linkFromSpellID = function(t)
 	local link = GetSpellLink(t.spellID);
@@ -4306,7 +4311,7 @@ local mountFields = {
 		return "|cffb19cd9" .. t.name .. "|r";
 	end,
 	["icon"] = function(t)
-		return select(3, GetSpellInfo(t.spellID));
+		return GetSpellIcon(t.spellID);
 	end,
 	["link"] = function(t)
 		return (t.itemID and select(2, GetItemInfo(t.itemID))) or GetSpellLink(t.spellID);
@@ -4324,7 +4329,7 @@ local mountFields = {
 		return (t.parent and t.parent.b) or 1;
 	end,
 	["name"] = function(t)
-		return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
+		return GetSpellName(t.spellID) or RETRIEVING_DATA;
 	end,
 	["tsmForItem"] = function(t)
 		---@diagnostic disable-next-line: undefined-field
@@ -4391,7 +4396,7 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 		mountFields.name = function(t)
 			local mountID = t.mountID;
 			if mountID then return C_MountJournal.GetMountInfoByID(mountID); end
-			return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
+			return GetSpellName(t.spellID) or RETRIEVING_DATA;
 		end
 		mountFields.displayID = function(t)
 			local mountID = t.mountID;
@@ -4418,7 +4423,7 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 		end
 	else
 		mountFields.name = function(t)
-			return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
+			return GetSpellName(t.spellID) or RETRIEVING_DATA;
 		end
 		mountFields.collected = function(t)
 			local spellID = t.spellID;
@@ -4441,7 +4446,7 @@ else
 		return t.itemID and GetItemInfo(t.itemID) or RETRIEVING_DATA;
 	end
 	mountFields.name = function(t)
-		return GetSpellInfo(t.spellID) or RETRIEVING_DATA;
+		return GetSpellName(t.spellID) or RETRIEVING_DATA;
 	end
 	if GetCompanionInfo and GetNumCompanions("CRITTER") ~= nil then
 		local CollectedBattlePetHelper = {};

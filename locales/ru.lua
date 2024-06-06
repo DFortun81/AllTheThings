@@ -3,6 +3,10 @@ if GetLocale() ~= "ruRU" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+-- Temporary Helper functions
+local GetSpellInfo = GetSpellInfo;
+local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
+
 -- General Text
 	L.DESCRIPTION = "\"Глупцы! Вы сами нашли свою погибель! Вам никогда не понять, сколь велика сила, потревоженная вами.  Вы сражались отчаянно, чтобы проникнуть в царство Жнеца. Теперь перед вами лежит лишь один путь – путь проклятых.\"";
 	L.THINGS_UNTIL = " ШТУЧЕК ДО ";
@@ -499,8 +503,8 @@ for key,value in pairs({
 			[-5205] = "Скрытый облик",								-- Hidden Appearance
 
 	-- Classes
-		[-9951] = GetSpellInfo(148462).." и "..GetSpellInfo(137031),	-- Discipline / Holy Priest Spec
-		[-9952] = GetSpellInfo(234890).." и "..GetSpellInfo(137011),	-- Guardian / Feral Druid Spec
+		[-9951] = GetSpellName(148462).." и "..GetSpellName(137031),	-- Discipline / Holy Priest Spec
+		[-9952] = GetSpellName(234890).." и "..GetSpellName(137011),	-- Guardian / Feral Druid Spec
 	------ ACHIEVEMENT HEADERS SECTION ------
 		[-10071] = "Видения Н'Зота",								-- Visions of N'Zoth
 		[-10072] = "Нападение Н'Зота",								-- N'Zoth Assault
@@ -862,7 +866,7 @@ local a = L.CUSTOM_COLLECTS_REASONS;
 for key,value in pairs({
 	["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "Новый Персонаж", desc = "Только Новый Персонаж может собрать эти предметы." },
 	["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "Нити Судьбы", desc = "Только Персонаж, который пропустил сюжет Тёмных Земель, может собрать эти предметы." },
-	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellInfo(275825), desc = "Только Персонаж с |cffe6cc80Сердцем Азерот|r может собрать эти предметы." },
+	["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellName(275825), desc = "Только Персонаж с |cffe6cc80Сердцем Азерот|r может собрать эти предметы." },
 	["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000Без|r Сердца Азерот", desc = "Только Персонаж |cffff0000без|r |cffe6cc80Сердца Азерот|r может собрать эти предметы." },
 })
 do a[key] = value; end
