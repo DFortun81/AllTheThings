@@ -3784,7 +3784,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(180558),	-- Doomblade Spaulders
 				}),
 			}),
-			header(HEADERS.Achievement, SEASON_SINFUL, {
+			n(SEASON_SINFUL, {
 				filter(CLOAKS, {
 					i(180425),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 02
 					i(180426),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 03
@@ -6445,7 +6445,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
-			header(HEADERS.Achievement, SEASON_OBSIDIAN, {
+			n(SEASON_OBSIDIAN, {
 				-- [High Item]
 				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {
 					cl(DEATHKNIGHT, {
@@ -7779,7 +7779,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
-			header(HEADERS.Achievement, SEASON_VERDANT, {
+			n(SEASON_VERDANT, {
 				n(PVP_GLADIATOR, bubbleDownSelf({ ["bonusID"] = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(209275),	-- Verdant Gladiator's Cloak
@@ -9179,7 +9179,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 			-- Newly added items for Dragonflight season 1
-			header(HEADERS.Achievement, SEASON_CRIMSON, {
+			n(SEASON_CRIMSON, {
 				-- Death Knight got only one item and Mage got nothing.
 				-- Season 1 appearances voted for season 4 (Evoker, Hunter, Monk) are implemented in Catalyst
 				n(PVP_GLADIATOR, bubbleDown({ ["modID"] = 8 }, {	-- "Tier Slots"
@@ -9465,7 +9465,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				})),
 			}),
 			-- Newly added items for Dragonflight season 2
-			header(HEADERS.Achievement, SEASON_OBSIDIAN, {
+			n(SEASON_OBSIDIAN, {
 				-- Only Druid and Paladin versions added in 10.2.6
 				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6898 }, {
 					cl(DRUID, {
@@ -9557,7 +9557,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 			}),
-			header(HEADERS.Achievement, SEASON_DRACONIC_PVP, {
+			n(SEASON_DRACONIC_PVP, {
 				n(PVP_GLADIATOR, bubbleDownSelf({ ["bonusID"] = 6898 }, {
 					cl(DEATHKNIGHT, {
 						i(216232),	-- Draconic Gladiator's Cloak

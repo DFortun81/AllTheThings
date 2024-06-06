@@ -1026,7 +1026,7 @@ root(ROOTS.NeverImplemented, {
 			i(159510),	-- Wintersail Strikers
 		}),
 		expansion(EXPANSION.SL, {
-			header(HEADERS.Achievement, SEASON_SINFUL, {
+			n(SEASON_SINFUL, {
 				i(183432),	-- Sinful Aspirant's Reaver
 				i(178469),	-- Sinful Aspirant's Bow
 				i(178671),	-- Sinful Aspirant's Broadsword

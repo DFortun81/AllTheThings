@@ -2269,7 +2269,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(190622),	-- [DNT] 9.2 Raid - Sepulcher of the First Ones - World Boss - Accessory - Trinket - Omni
 			}),
 		}),
-		header(HEADERS.Achievement, SEASON_SINFUL, {
+		n(SEASON_SINFUL, {
 			expansion(EXPANSION.SL, 0.1, {
 				n(FEET, {
 					i(180650),	-- Shadowlandy Gladiator's Stompers
@@ -2672,7 +2672,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(210203, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Wellspring Wristlets [Mythic]
 					}),
 				}),
-				header(HEADERS.Achievement, SEASON_VERDANT, {
+				n(SEASON_VERDANT, {
 					n(PVP_GLADIATOR, {
 						i(207142, { ["bonusID"] = 6898 }),	-- Ancient Haubark [Gladiator]
 						i(207142, { ["bonusID"] = 7479 }),	-- Ancient Haubark [Gladiator]
@@ -2817,7 +2817,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207152, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Volcanic Spelunker's Vents [Mythic]
 					}),
 				}),
-				header(HEADERS.Achievement, SEASON_VERDANT, {
+				n(SEASON_VERDANT, {
 					n(PVP_GLADIATOR, {
 						i(208427, { ["bonusID"] = 6898 }),	-- Insurgent Flame Warboots [Gladiator]
 						i(208427, { ["bonusID"] = 7479 }),	-- Insurgent Flame Warboots [Gladiator]
