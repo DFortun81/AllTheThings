@@ -320,6 +320,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215937),	-- Imperial Wind Blade (drop)
 					i(215947),	-- Inkgill Sword (wowhead)
 					i(215740),	-- Jinyu Bonebreaker
+					i(215677),	-- Jinyu's Light (drop)
 					i(215643),	-- Klaxxi Pincers
 					i(215532),	-- Mogu Warbow
 					i(215868),	-- Monastic Staff

@@ -147,6 +147,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216001),	-- Mountainsage Rod (wowhead)
 					i(215650),	-- Pandaren Claw (drop)
 					i(215616),	-- Pandaren Warknife (wowhead)
+					i(211149),	-- Rikkitun Warbow (drop)
 					i(215595),	-- Saltscale Shanker (wowhead)
 					i(215758),	-- Saurok Scepter
 					i(216572),	-- Shomi's Barrier (wowhead)

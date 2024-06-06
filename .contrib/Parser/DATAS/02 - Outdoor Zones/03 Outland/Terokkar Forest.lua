@@ -1547,6 +1547,7 @@ root(ROOTS.Zones, {
 							i(33818),	-- Muckbreath (PET!)
 							i(34827),	-- Noble's Monocle
 							i(34829),	-- Ornate Drinking Stein
+							i(34859),	-- Razor Sharp Fillet Knife
 							i(35349),	-- Snarly (PET!)
 							i(33816),	-- Toothy (PET!)
 							i(33820),	-- Weather-Beaten Fishing Hat

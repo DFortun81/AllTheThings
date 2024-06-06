@@ -190,11 +190,6 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
-				petbattles({
-					n(66557, {	-- Bloodknight Antari <Grand Master Pet Tamer>
-						["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
-					}),
-				}),
 				n(PROFESSIONS, {
 					prof(ENGINEERING, {
 						["crs"] = {
