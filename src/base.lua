@@ -19,9 +19,6 @@ if v:match("version") then
 else
 	app.Version = "" .. v;
 end
-app.GameBuildVersion = select(4, GetBuildInfo());
-app.IsRetail = app.GameBuildVersion >= 100000;
-app.IsClassic = not app.IsRetail;
 app.DESCRIPTION_SEPARATOR = "`"
 
 -- ReloadUI slash command (for ease of use)

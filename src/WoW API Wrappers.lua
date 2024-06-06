@@ -1,3 +1,8 @@
+local app = select(2, ...);
+app.GameBuildVersion = select(4, GetBuildInfo());
+app.IsRetail = app.GameBuildVersion >= 100000;
+app.IsClassic = not app.IsRetail;
+
 -- This file was created because Blizzard likes to give Crieve heart attacks with all their API changes.
 -- In the future, ATT will reference all its global APIs provided by Blizzard through out WOWAPI lib.
 local lib = setmetatable({}, {
@@ -8,7 +13,7 @@ local lib = setmetatable({}, {
 
 -- Local cache
 local select = select;
-select(2, ...).WOWAPI = lib;
+app.WOWAPI = lib;
 
 -- Faction APIs
 if not GetFactionInfoByID then
@@ -87,6 +92,10 @@ if not GetSpellInfo then
 	lib.GetSpellIcon = C_Spell.GetSpellTexture;
 else
 	local GetSpellInfo = GetSpellInfo;
-	lib.GetSpellName = function(spellID, rank) return select(1, GetSpellInfo(spellID, rank)); end;
+	if app.GameBuildVersion >= 40000 then
+		lib.GetSpellName = function(spellID) return select(1, GetSpellInfo(spellID)); end;
+	else
+		lib.GetSpellName = function(spellID, rank) return rank and select(1, GetSpellInfo(spellID, rank)) or select(1, GetSpellInfo(spellID)); end;
+	end
 	lib.GetSpellIcon = function(spellID) return select(3, GetSpellInfo(spellID)); end;
 end
