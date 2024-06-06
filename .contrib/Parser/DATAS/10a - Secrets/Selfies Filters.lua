@@ -1,8 +1,15 @@
 ---------------------------------------------
 --        S E C R E T S       M O D U L E  --
 ---------------------------------------------
+SELFIE_FILTER = createHeader({
+	readable = "Selfie Filter",
+	icon = [[~_.app.asset("Category_SelfieFilters")]],
+	text = {
+		en = WOWAPI_GetSpellName(181765),
+	},
+});
 
-root(ROOTS.Secrets, n(-798,  {	-- Selfie Filter
+root(ROOTS.Secrets, n(SELFIE_FILTER,  {
 	["cost"] = { { "i", 122674, 1 } },	-- S.E.L.F.I.E. Camera MkII
 	["g"] = {
 		spell(258803, {	-- Argus Filter

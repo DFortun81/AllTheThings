@@ -300,7 +300,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.DESCRIPTIONS = "Descriptions";
 		--TODO: L.LORE = "Lore";
 		--TODO: L.CLASSES = "Classes";
-		
+
 	-- Features tab
 		--TODO: L.MINIMAP_LABEL = "Minimap Button";
 		--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
@@ -402,7 +402,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.ARTIFACT_RELIC_COMPLETION = "Artifact Relic Completion";
 		--TODO: L.NOT_TRADEABLE = "Not Tradeable";
 		--TODO: L.TRADEABLE = "Tradeable";
-		
+
 	-- Keybind usage
 		--TODO: L.ENABLED = "enabled";
 		--TODO: L.DISABLED = "disabled";
@@ -456,23 +456,15 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Allied Races
-		[-255] = "유산 방어구",											-- Heritage
-	-- Chests
-		[-851] = "검은 제국 보관함",										-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "중개자 베켄 & 중개자 베노트",								-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "이동 연결망",											-- Transport Network
 		[-967] = "거울 복구 작업",										-- Mirror Restoration
 	-- Dragonflight
-		[-1100] = "비룡감시자 필사본",										-- Drakewatcher Manuscripts
 		[-1102] = "래시온과 사벨리안",										-- Wrathion & Sabellian
 		[-1120] = "마루크 켄타우로스",										-- Maruuk Centaur
 		[-1130] = "이스카라 투스카르",										-- Iskaara Tuskarr
 		[-1150] = "로암 니펜",											-- Loamm Niffen
-		[-1200] = "지스케라 금고",										-- Zskera Vaults
-		[-1202] = "피락의 습격",											-- Fyrakk Assaults
-		[-1203] = "냄새 추적",											-- Sniffenseeking
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5202] = "힘의 균형",										-- Balance of Power
@@ -689,7 +681,7 @@ for key,value in pairs({
 		--TODO: FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 		--TODO: WITH_WRAPPING_CHECKBOX = "Allow Wrapping";
 		--TODO: WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.";
-		
+
 		--TODO: BEHAVIOR_LABEL = "List Behavior";
 		--TODO: MAIN_LIST_SLIDER_LABEL = "Main List Scale";
 		--TODO: MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';

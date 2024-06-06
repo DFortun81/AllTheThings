@@ -452,8 +452,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Allied Races
-		[-255] = "Armure ancestrale",								-- Heritage
 	-- BFA Outposts
 		[-397] = "Avant-postes",									-- Outposts
 	-- Misc
@@ -465,8 +463,6 @@ for key,value in pairs({
 		[-676] = select(2, GetAchievementInfo(8791))..": Saison 13",	-- Tyrannical Gladiator: Season 13
 		[-652] = "Équipement Honneur Saison Dramatique",				-- Honor Gear Grievous Season
 		[-651] = "Équipement Honneur Saison Orgueilleux",				-- Honor Gear Prideful Season
-	-- Chests
-		[-851] = "Cache de l’Empire noir",							-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "Négociant Ve'ken & Négociant Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "Réseau de transport",								-- Transport Network
@@ -483,17 +479,11 @@ for key,value in pairs({
 			[-970] = "Tier C",										-- Set C
 			[-971] = "Tier D",										-- Set D
 	-- Dragonflight
-		[-1100] = "Manuscrit guette-drake",							-- Drakewatcher Manuscripts
-		[-1101] = "Les Tempêtes Primordiales",						-- Primal Storms
+
 		[-1102] = "Irion et Sabellian",								-- Wrathion & Sabellian
 		[-1120] = "Centaure maruuk",								-- Maruuk Centaur
 		[-1130] = "Rohart iskaarien",								-- Iskaara Tuskarr
-		[-1143] = "Rotation Rare de DF",							-- DF Rare Rotation
 		[-1150] = "Flairans de Terreau",							-- Loamm Niffen
-		[-1151] = "Marchandage",									-- Bartering
-		[-1200] = "Caveaux de Zskera",								-- Zskera Vaults
-		[-1202] = "Assauts de Fyrakka",								-- Fyrakk Assaults
-		[-1203] = "Recherches olfactives",							-- Sniffenseeking
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "Apparence de base",							-- Base Appearance
@@ -502,10 +492,6 @@ for key,value in pairs({
 			[-5203] = "Récompenses préstigieuses",					-- Prestige Rewards
 			[-5204] = "Apparence de Challenge",						-- Challenge Appearance
 			[-5205] = "Apparence Cachée",							-- Hidden Appearance
-
-	------ ACHIEVEMENT HEADERS SECTION ------
-		[-10071] = "Visions de N'Zoth",								-- Visions of N'Zoth
-		[-10072] = "Assaut de N'Zoth Assault",						-- N'Zoth Assault
 })
 do a[key] = value; end
 end

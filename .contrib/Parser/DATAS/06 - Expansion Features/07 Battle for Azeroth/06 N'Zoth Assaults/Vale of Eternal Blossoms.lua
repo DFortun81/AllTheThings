@@ -64,7 +64,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["sourceQuest"] = 56771,	-- Time-Lost Warriors
 							["g"] = {
 								i(174744),	-- Artifact of the Black Empire (QI!)
-								n(-851, {	-- Black Empire Cache placeholder
+								o(334220, {	-- Black Empire Cache placeholder [Until we find the otherIDs]
 									["coords"] = {
 										{ 52.7, 39.7, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- 57197
 										{ 53.9, 41.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- 57197
@@ -903,7 +903,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			n(FACTIONS, {
 				faction(FACTION_RAJANI),	-- Rajani
 			}),
-			n(-10072, {	-- N'Zoth Assault
+			n(NZOTH_ASSAULTS, {
 				n(ACHIEVEMENTS, {
 					ach(14154, {	-- Defend the Vale
 						crit(47204, {	-- Assault: The Warring Clans

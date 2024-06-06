@@ -1,11 +1,17 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+NETHER_DISRUPTOR = createHeader({
+	readable = "Nether Disruptor",
+	icon = "Interface\\Icons\\buff_epichunter",
+	text = {
+		en = [[~BROKENSHORE_BUILDING_NETHERDISRUPTOR]],
+	},
+});
 root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(BROKEN_SHORE, {
-			n(-10050, {	-- Nether Disruptor
+			n(NETHER_DISRUPTOR, {
 				q(46736, {	-- Contribute to Nether Disruptor
 					["repeatable"] = true,
 					["g"] = {

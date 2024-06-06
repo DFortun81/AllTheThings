@@ -1,13 +1,6 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-DRAGONRIDING_RACING = createHeader({
-	readable = "Dragonriding Racing",
-	icon = "Interface\\Icons\\ability_evoker_masterygiantkiller",
-	text = {
-		en = "Dragonriding Racing",
-	},
-});
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(VALDRAKKEN_ACCORD, {
 		n(DRAGONRIDING_RACING, bubbleDownSelf({ ["minReputation"] = { FACTION_VALDRAKKEN_ACCORD, 7 } }, {

@@ -300,7 +300,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.DESCRIPTIONS = "Descriptions";
 		--TODO: L.LORE = "Lore";
 		--TODO: L.CLASSES = "Classes";
-		
+
 	-- Features tab
 		--TODO: L.MINIMAP_LABEL = "Minimap Button";
 		--TODO: L.MODULES_LABEL = "Modules & Mini Lists";
@@ -402,7 +402,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.ARTIFACT_RELIC_COMPLETION = "Artifact Relic Completion";
 		--TODO: L.NOT_TRADEABLE = "Not Tradeable";
 		--TODO: L.TRADEABLE = "Tradeable";
-	
+
 	-- Keybind usage
 		--TODO: L.ENABLED = "enabled";
 		--TODO: L.DISABLED = "disabled";
@@ -456,25 +456,15 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Allied Races
-		[-255] = "Armatura Retaggio",								-- Heritage
-	-- Chests
-		[-851] = "Cassa dell'Impero Nero",							-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "Alienatore Ve'ken & Alienatore Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "Rete di Trasporto",								-- Transport Network
 		[-967] = "Ripristino degli specchi",						-- Mirror Restoration
 	-- Dragonflight
-		[-1100] = "Manoscritto del Guardadraghi",					-- Drakewatcher Manuscripts
-		[-1101] = "Tempeste Primordiali",							-- Primal Storms
 		[-1102] = "Irathion & Sabellian",							-- Wrathion & Sabellian
 		[-1120] = "Centauro Maruuk",								-- Maruuk Centaur
 		[-1130] = "Tuskarr di Iskaara",								-- Iskaara Tuskarr
 		[-1150] = "Niffen di Loamm",								-- Loamm Niffen
-		[-1151] = "Baratto",										-- Bartering
-		[-1200] = "Cripte di Zskera",								-- Zskera Vaults
-		[-1202] = "Assalti di Fyrakk",								-- Fyrakk Assaults
-		[-1203] = "Il Fiutatutto",									-- Sniffenseeking
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5202] = "Equilibrio di potere",						-- Balance of Power
@@ -691,7 +681,7 @@ for key,value in pairs({
 		--TODO: FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 		--TODO: WITH_WRAPPING_CHECKBOX = "Allow Wrapping";
 		--TODO: WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.";
-		
+
 		--TODO: BEHAVIOR_LABEL = "List Behavior";
 		--TODO: MAIN_LIST_SLIDER_LABEL = "Main List Scale";
 		--TODO: MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';

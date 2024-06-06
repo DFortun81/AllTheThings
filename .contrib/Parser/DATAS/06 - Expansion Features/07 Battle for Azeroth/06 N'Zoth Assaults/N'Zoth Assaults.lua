@@ -5,7 +5,7 @@
 -- Everything in this section should be common to both Vale and Uldum N'Zoth
 -- assault and tagged with location information
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
-	n(-10072, {	-- N'Zoth Assault
+	n(NZOTH_ASSAULTS, {
 		["maps"] = {
 			NZOTH_ASSAULT_ULDUM,
 			NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS,

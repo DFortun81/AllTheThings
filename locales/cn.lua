@@ -466,8 +466,6 @@ for key,value in pairs({
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."（直升）",	-- Level 50 (Boost)
 	-- PvP
 		[-242] = "无评级",												-- Unrated
-	-- Allied Races
-		[-255] = "传承护甲",											-- Heritage
 	-- Outposts in Draenor
 		[-361] = GetSpellName(182108).." 塔",						-- Artillery Tower
 	-- BFA Outposts
@@ -483,8 +481,6 @@ for key,value in pairs({
 		[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
 		[-652] = "荣誉装备恶孽赛季",									-- Honor Gear Grievous (S14)
 		[-651] = "荣誉装备骄矜赛季",									-- Honor Gear Prideful (S15)
-	-- Chests
-		[-851] = "黑暗帝国宝箱",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Shadowlands Header
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "传送网络",											-- Transport Network
@@ -501,16 +497,11 @@ for key,value in pairs({
 			[-970] = "组 C",											-- Set C
 			[-971] = "组 D",											-- Set D
 	-- Dragonflight
-		[-1101] = "原始风暴",											-- Primal Storms
+
 		[-1102] = "拉希奥和萨贝里安",										-- Wrathion & Sabellian
 		[-1120] = "马鲁克半人马",											-- Maruuk Centaur
 		[-1130] = "伊斯卡拉海象人",										-- Iskaara Tuskarr
-		[-1143] = "每30分钟稀有",										-- DF Rare Rotation (Every 30 min Rare)
 		[-1150] = "峈姆鼹鼠人",											-- Loamm Niffen
-		[-1151] = "以物易物",								            -- Bartering
-		[-1200] = "兹斯克拉宝库",										-- Zskera Vaults
-		[-1202] = "菲莱克突袭",											-- Fyrakk Assaults
-		[-1203] = "嗅味探寻",							                -- Sniffenseeking
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "基础外观",										-- Base Appearance
@@ -519,14 +510,9 @@ for key,value in pairs({
 			[-5203] = "荣誉奖励",										-- Prestige Rewards
 			[-5204] = "挑战外观",										-- Challenge Appearance
 			[-5205] = "隐藏外观",										-- Hidden Appearance
-
-	------ ACHIEVEMENT HEADERS SECTION ------
-		[-10071] = "恩佐斯的幻象",										-- Visions of N'Zoth
-		[-10072] = "恩佐斯突袭",											-- N'Zoth Assault
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
-	a[-1101] = "洪荒風暴";												-- Primal Storms
 	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
 	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarrccord
 end

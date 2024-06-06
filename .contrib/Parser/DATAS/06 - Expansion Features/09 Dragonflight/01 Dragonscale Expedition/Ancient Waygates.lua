@@ -1,6 +1,13 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+ANCIENT_WAYGATES = createHeader({
+	readable = "Ancient Waygates",
+	icon = "Interface\\Icons\\inv_misc_ancient_mana",
+	text = {
+		en = WOWAPI_GetSpellName(386485),
+	},
+});
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(ANCIENT_WAYGATES, bubbleDownSelf({ ["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 7 } }, {

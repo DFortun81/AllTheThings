@@ -13,6 +13,20 @@ local function BarterCost(bricks, boulders)
 		{"i",BARTER_BOULDER,boulders},
 	};
 end
+BARTERING = createHeader({
+	readable = "Bartering",
+	icon = "Interface\\Icons\\achievement_guildperk_bartering",
+	text = {
+		en = "Bartering",
+		es = "Comercio",
+		de = "Tauschhandels",
+		fr = "Marchandage",
+		it = "Baratto",
+		pt = "Pechincha",
+		ru = "Обмен",
+		cn = "以物易物",
+	},
+});
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
 		n(BARTERING, bubbleDownSelf({ ["minReputation"] = { FACTION_LOAMM_NIFFEN, 3 } }, {

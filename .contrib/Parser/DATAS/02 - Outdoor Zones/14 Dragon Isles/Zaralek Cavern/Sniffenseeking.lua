@@ -1,6 +1,21 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+SNIFFENSEEKING = createHeader({
+	readable = "Sniffenseeking",
+	icon = "Interface\\Icons\\inv_pet_mole",
+	text = {
+		en = "Sniffenseeking",
+		es = "Olfatobúsqueda",
+		de = "Schnüffelsuchen",
+		fr = "Recherches olfactives",
+		it = "Il Fiutatutto",
+		pt = "Busca farejante",
+		ru = "Нюхорысканье",
+		ko = "냄새 추적",
+		cn = "嗅味探寻",
+	},
+});
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(SNIFFENSEEKING, {

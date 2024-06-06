@@ -666,8 +666,6 @@ for key, value in pairs({
 		[-242] = "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",				-- Unrated
 	-- War Campaign
 		[-253] = "Interface\\Icons\\ui_horde_honorboundmedal",								-- Horde War Campaign
-	-- Allied Races
-		[-255] = "Interface\\Icons\\vas_guildfactionchange",								-- Heritage
 	-- Garrison Missons
 		[-299] = "Interface\\Icons\\achievement_garrisonquests_1000",						-- Missions
 	-- PvP
@@ -714,29 +712,13 @@ for key, value in pairs({
 		[-686] = "Interface\\Icons\\inv_stormdragonmount2light",							-- Fierce Gladiator: Legion Season 5
 		[-687] = "Interface\\Icons\\inv_stormdragonmount2yellow",							-- Dominant Gladiator: Legion Season 6
 		[-688] = "Interface\\Icons\\inv_stormdragonmount2_fel",								-- Demonic Gladiator: Legion Season 7
-	-- Battle for Azeroth PvP Seasons
-
-
-		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",					-- Notorious Gladiator: Battle for Azeroth Season 3
-		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
-	-- Toys
-		[-798] = app.asset("Category_SelfieFilters"),										-- Selfie Filter
-	-- Secret Header
-		[-807] = "Interface\\Icons\\inv_hivemind",											-- Hivemind
-	-- Chests
-		[-851] = "Interface\\Icons\\INV_Eng_Crate2",										-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- SL Headers
 		[-901] = 3726261,																	-- Covenant Callings
 		[-902] = 3726261,																	-- Renown
 		[-905] = "Interface\\Icons\\Sanctum_features_missiontable",							-- Command Table
-		--[-916] = Uses Different Icons														-- Tier 1
-		--[-917] = Uses Different Icons														-- Tier 2
-		--[-918] = Uses Different Icons														-- Tier 3
 		[-920] = "Interface\\Icons\\ui_sigil_necrolord",									-- Covenant: Necrolord
 		[-923] = "Interface\\Icons\\sanctum_features_buildabom",							-- Abomination Factory (Necrolord)
 		--[-924] = Uses Different Icons														-- Transport Network
-		--[-925] = Uses Different Icons														-- Tier 4
-		--[-926] = Uses Different Icons														-- Tier 5
 		[-929] = "Interface\\Icons\\ui_sigil_nightfae",										-- Covenant: Night Fae
 		[-930] = "Interface\\Icons\\Sanctum_features_gardenweald",							-- Queen's Conservatory
 		[-939] = "Interface\\Icons\\ui_sigil_kyrian",										-- Covenant: Kyrian
@@ -763,40 +745,10 @@ for key, value in pairs({
 		[-986] = 2178500,																	-- Mort'regar
 		[-987] = 2178509,																	-- The Upper Reaches
 	-- Dragonflight
-		[-1100] = "Interface\\Icons\\ability_dragonriding_glyph01",									-- Drakewatcher Manuscripts
-		[-1101] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_trinket_1ragingelement_air",	-- Primal Storms
 		[-1102] = "Interface\\Icons\\ability_evoker_dragonrage2",									-- Wrathion & Sabellian
-		[-1111] = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",							-- Climbing
-		[-1112] = 1109168,																			-- Cataloging
-		[-1113] = "Interface\\Icons\\inv_misc_ancient_mana",										-- Ancient Waygates
-		[-1114] = "Interface\\Icons\\ability_racial_mountaineer",									-- Cartographer's Flag
 		[-1120] = "Interface\\Icons\\ui_majorfaction_centaur",										-- Maruuk Centaur
 		[-1130] = "Interface\\Icons\\ui_majorfaction_tuskarr",										-- Iskaara Tuskarr
-		[-1142] = "Interface\\Icons\\inv_checkered_flag",											-- Dragonriding Racing
-		[-1143] = 237274,																			-- Every 30 min Rare
 		[-1150] = "Interface\\Icons\\ui_majorfaction_niffen",										-- Loamm Niffen
-		[-1151] = "Interface\\Icons\\achievement_guildperk_bartering",								-- Bartering
-		[-1200] = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_ring_4_omni",					-- Zskera Vaults
-		[-1202] = "Interface\\Icons\\inv_fyrakk_dragonbreath",										-- Fyrakk Assaults
-		[-1203] = "Interface\\Icons\\inv_pet_mole",													-- Sniffenseeking
-		[-1204] = 133642,																			-- Available (Inv_misc_bag_10_green)
-		[-1205] = 133643,																			-- Unavailable (Inv_misc_bag_10_red)
-	-- Island Expeditions
-		[-3338] = "Interface\\Icons\\achievement_zone_darkshore_01",						-- Island Expeditions
-	-- Tournament
-		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",								-- Tournament
-	--
-		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",							-- Cities
-	------ ACHIEVEMENT HEADERS SECTION ------
-	-- Is Used Somewhere
-		[-10048] = "Interface\\Icons\\buff_feltreasures",							-- Mage Tower
-		[-10050] = "Interface\\Icons\\buff_epichunter",								-- Nether Disruptor
-	-- 8.3
-		[-10071] = "Interface\\Icons\\Paladin_Protection",							-- Vision of N'zotth
-		[-10072] = "Interface\\Icons\\ability_deathwing_assualtaspects",			-- N'Zoth Assault
-	-- NYI
-		[-11111] = app.asset("Category_TradingPost"),						-- Trading Post NYI
-		[-11112] = "Interface\\Icons\\Inv_misc_questionmark",				-- Source IDs NYI
 	};
 	["HEADER_NAMES"] = {
 	-- Class Trial
@@ -833,8 +785,6 @@ for key, value in pairs({
 		[-242] = "Unrated",														-- Unrated
 	-- War Campaign
 		[-253] = C_Map.GetAreaInfo(9664),										-- War Campaign - Horde
-	-- Allied Races
-		[-255] = "Heritage",													-- Heritage
 	-- Garrison Missions
 		[-299] = GARRISON_MISSIONS,												-- Missions
 	-- PvP
@@ -878,33 +828,16 @@ for key, value in pairs({
 		[-686] = select(2, GetAchievementInfo(12010)),							-- Fierce Gladiator: Legion Season 5
 		[-687] = select(2, GetAchievementInfo(12134)),							-- Dominant Gladiator: Legion Season 6
 		[-688] = select(2, GetAchievementInfo(12185)),							-- Demonic Gladiator: Legion Season 7
-	-- Battle for Azeroth PvP Seasons
-
-
-		[-691] = select(2, GetAchievementInfo(13630)),							-- Notorious Gladiator: Battle for Azeroth Season 3
-		[-692] = select(2, GetAchievementInfo(13957)),							-- Corrupted Gladiator: Battle for Azeroth Season 4
-	-- Toys
-		[-798] = GetSpellName(181765),											-- S.E.L.F.I.E. Camera
-	-- Secret Header
-		[-807] = GetSpellName(261395),											-- The Hivemind
-	-- Chests
-		[-851] = "Black Empire Cache",											-- Black Empire Cache (Is a placeholder since no ObjectID are assigned to chests!)
 	-- Shadowlands Header
 		[-901] = GetSpellName(339041),											-- Covenant Callings
 		[-902] = COVENANT_SANCTUM_TAB_RENOWN,									-- Renown
-	--	[-902] = "Renown Rewards",												-- Renown Rewards
 		[-905] = GetSpellName(280630),											-- Command Table
-		[-916] = sformat(COVENANT_SANCTUM_TIER, 1),						-- Tier 1
-		[-917] = sformat(COVENANT_SANCTUM_TIER, 2),						-- Tier 2
-		[-918] = sformat(COVENANT_SANCTUM_TIER, 3),						-- Tier 3
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
 		[-981] = GetSpellName(348869),											-- Conduits
 		-- SL Maldraxxus/Necrolord
 		[-920] = GetSpellName(321078),											-- Necrolord
 		[-923] = COVENANT_SANCTUM_FEATURE_NECROLORDS,							-- Abomination Factory
 		[-924] = "Transport Network",											-- Transport Network
-		[-925] = sformat(COVENANT_SANCTUM_TIER, 4),						-- Tier 4
-		[-926] = sformat(COVENANT_SANCTUM_TIER, 5),						-- Tier 5
 		-- SL Ardenweald/Night Fae
 		[-929] = GetSpellName(321077),											-- Night Fae
 		[-930] = COVENANT_SANCTUM_FEATURE_NIGHT_FAE,							-- Queen's Conservatory
@@ -935,49 +868,20 @@ for key, value in pairs({
 		[-986] = select(2, GetAchievementInfo(14488)),							-- Mort'regar
 		[-987] = select(2, GetAchievementInfo(14493)),							-- The Upper Reaches
 	-- Dragonflight
-		[-1100] = "Drakewatcher Manuscripts",									-- Drakewatcher Manuscripts
-		[-1101] = "Primal Storms",													-- Primal Storms
+		-- Autotranslate with NPC
 		[-1102] = "Wrathion & Sabellian",											-- Wrathion & Sabellian
-		[-1111] = GetSpellName(365311),												-- Rock Climbing
-		[-1112] = GetSpellName(381284),												-- Cataloging
-		[-1113] = GetSpellName(386485),												-- Ancient Waygates
-		[-1114] = GetSpellName(382288),												-- Cartographer's Flag
+		-- Autotranslate with Reputation
 		[-1120] = "Maruuk Centaur",													-- Maruuk Centaur
 		[-1130] = "Iskaara Tuskarr",												-- Iskaara Tuskarr
-		[-1142] = GetSpellName(400433),												-- Dragonriding Racing
-		[-1143] = "DF Rare Rotation",												-- DF Rare Rotation (Every 30 min Rare)
 		[-1150] = "Loamm Niffen",													-- Loamm Niffen
-		[-1151] = "Bartering",														-- Bartering
-		[-1200] = "Zskera Vaults",													-- Zskera Vaults
-		[-1202] = "Fyrakk Assaults",												-- Fyrakk Assaults
-		[-1203] = "Sniffenseeking",													-- Sniffenseeking
-		[-1204] = AVAILABLE,														-- Available
-		[-1205] = UNAVAILABLE,														-- Unavailable
-	-- Island Expeditions
-		[-3338] = ISLANDS_HEADER,												-- Island Expeditions
-	-- Tournament
-		[-4191] = ITEM_TOURNAMENT_GEAR,											-- Tournament Gear
 	-- Tier/Dungeon/Event/Holiday Sets
-		-- Artifact Strings
+		-- Artifact Strings, These IDs are used in src/Expansion/Legion [Ask Runaway about removing them]
 		[-5200] = "Base Appearance",											-- Base Appearance
 		[-5201] = "Class Hall Campaign",										-- Class Hall Campaign
 		[-5202] = "Balance of Power",											-- Balance of Power
 		[-5203] = "Prestige Rewards",											-- Prestige Rewards
 		[-5204] = "Challenge Appearance",										-- Challenge Appearance
 		[-5205] = "Hidden Appearance",											-- Hidden Appearance
-
-		[-6014] = BUG_CATEGORY4,												-- Cities
-
-	------ ACHIEVEMENT HEADERS SECTION ------
-		[-10048] = BROKENSHORE_BUILDING_MAGETOWER,								-- Mage Tower
-		[-10050] = BROKENSHORE_BUILDING_NETHERDISRUPTOR,						-- Nether Disruptor
-	-- 8.3
-		[-10071] = "Visions of N'Zoth",
-		[-10072] = "N'Zoth Assault",
-
-	-- NYI
-		[-11111] = "Trading Post",												-- Trading Post NYI
-		[-11112] = "Source IDs",												-- Source IDs NYI
 	};
 
 	-- Module Localizations

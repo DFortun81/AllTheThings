@@ -1,6 +1,21 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+FYRAKK_ASSAULTS = createHeader({
+	readable = "Fyrakk Assaults",
+	icon = "Interface\\Icons\\inv_fyrakk_dragonbreath",
+	text = {
+		en = "Fyrakk Assaults",
+		es = "Asaltos de Fyrakk",
+		de = "Angriffe von Fyrakk",
+		fr = "Assauts de Fyrakk",
+		it = "Assalti di Fyrakk",
+		pt = "Ofensivas de Fyrakk",
+		ru = "Налеты Фиракка",
+		ko = "피락의 습격",
+		cn = "菲莱克突袭",
+	},
+});
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(FYRAKK_ASSAULTS, {
 		["questID"] = 75467,	-- completion of the assault via killing the respective 'Disciple' dragon

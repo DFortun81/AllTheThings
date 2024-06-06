@@ -4207,7 +4207,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 
 		-- 9.1.5
 		expansion(EXPANSION.SL, 1.5, bubbleDown({ ["timeline"] = { CREATED_9_1_5 } }, {
-			n(-10048, {	-- Mage Tower
+			n(MAGE_TOWER, {
 				cl(MAGE, {	-- Regalia of the Arcane Tempest set
 					i(188643),	-- Raiment of the Arcane Tempest
 				}),

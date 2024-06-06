@@ -1,6 +1,13 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+CLIMBING = createHeader({
+	readable = "Climbing",
+	icon = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",
+	text = {
+		en = WOWAPI_GetSpellName(365311),
+	},
+});
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(CLIMBING, bubbleDownSelf({ ["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 6 } }, {

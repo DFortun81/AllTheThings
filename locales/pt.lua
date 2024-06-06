@@ -402,7 +402,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		--TODO: L.ARTIFACT_RELIC_COMPLETION = "Artifact Relic Completion";
 		--TODO: L.NOT_TRADEABLE = "Not Tradeable";
 		--TODO: L.TRADEABLE = "Tradeable";
-		
+
 	-- Keybind usage
 		--TODO: L.ENABLED = "enabled";
 		--TODO: L.DISABLED = "disabled";
@@ -456,25 +456,15 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Allied Races
-		[-255] = "Armadura Tradicional",							-- Heritage
-	-- Chests
-		[-851] = "Depósito do Império Negro",						-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "Corretor Ve'ken & Corretor Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "Rede de Transporte",								-- Transport Network
 		[-967] = "Restauração de espelho",							-- Mirror Restoration
 	-- Dragonflight
-		[-1100] = "Manuscrito de Vigia-dracos",						-- Drakewatcher Manuscripts
-		[-1101] = "Tempestades Primevas",							-- Primal Storms
 		[-1102] = "Wrathion e Sabellian",							-- Wrathion & Sabellian
 		[-1120] = "Centauro Maruuk",								-- Maruuk Centaur
 		[-1130] = "Morsanos de Iskaara",							-- Iskaara Tuskarr
 		[-1150] = "Farins de Argília",								-- Loamm Niffen
-		[-1151] = "Pechincha",										-- Bartering
-		[-1200] = "Câmaras de Zskera",								-- Zskera Vaults
-		[-1202] = "Ofensivas de Fyrakk",							-- Fyrakk Assaults
-		[-1203] = "Busca farejante",								-- Sniffenseeking
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5202] = "Equilíbrio de poder",						-- Balance of Power
@@ -691,7 +681,7 @@ for key,value in pairs({
 		--TODO: FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 		--TODO: WITH_WRAPPING_CHECKBOX = "Allow Wrapping";
 		--TODO: WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.";
-		
+
 		--TODO: BEHAVIOR_LABEL = "List Behavior";
 		--TODO: MAIN_LIST_SLIDER_LABEL = "Main List Scale";
 		--TODO: MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';

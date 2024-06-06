@@ -1,6 +1,21 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+VISIONS_OF_NZOTH = createHeader({
+	readable = "Visions of Nzoth",
+	icon = "Interface\\Icons\\Paladin_Protection",
+	text = {
+		-- #if AFTER 10.1.5
+		en = WOWAPI_GetSpellName(417520),
+		-- #else
+		en = "Visions of N'Zoth",
+		de = "Visionen von N'Zoth",
+		fr = "Visions de N'Zoth",
+		ru = "Видения Н'Зота",
+		cn = "恩佐斯的幻象",
+		-- #endif
+	},
+});
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
@@ -1111,7 +1126,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				faction(2427),	-- Aqir Hatchling
 				faction(FACTION_ULDUM_ACCORD),	-- Uldum Accord
 			}),
-			n(-10072, {	-- N'Zoth Assault
+			n(NZOTH_ASSAULTS, {
 				n(ACHIEVEMENTS, {
 					ach(14155),		-- Uldum Accord
 					ach(14153, {	-- Uldum Under Assault
@@ -1627,7 +1642,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						},
 					}),
 				}),
-				n(-10071,	{	-- Visions of N'Zoth
+				n(VISIONS_OF_NZOTH,	{
 					["description"] = "Use the obelisk to see Uldum succumb to N'Zoth's corruption.",
 					["g"] = {
 						n(ZONE_DROPS, {
@@ -1689,7 +1704,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
-		n(-10072, {	-- N'Zoth Assault
+		n(NZOTH_ASSAULTS, {
 			q(59061),	-- hatching Shadowbarb drone after the first phase
 		}),
 	}),

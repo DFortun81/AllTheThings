@@ -446,8 +446,6 @@ for key,value in pairs({
 		[-152] = "Гарнизонная кампания",							-- Garrison Campaign
 	-- PvP
 		[-242] = "Нерейтинговые",									-- Unrated
-	-- Allied Races
-		[-255] = "Традиционные доспехи",							-- Heritage
 	-- Outposts in Draenor
 		[-361] = "Артиллерийная башня",								-- Artillery Tower
 	-- BFA Outposts
@@ -463,8 +461,6 @@ for key,value in pairs({
 		[-676] = select(2, GetAchievementInfo(8791))..": Сезон 13",	-- Tyrannical Gladiator: Season 13
 		[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
 		[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
-	-- Chests
-		[-851] = "Тайник Темной Империи",							-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "Транспортная Сеть",								-- Transport Network
@@ -481,17 +477,10 @@ for key,value in pairs({
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
 	-- Dragonflight
-		[-1100] = "Манускрипты наблюдений за драконами",			-- Drakewatcher Manuscripts
-		[-1101] = "Изначальные Бури",								-- Primal Storms
 		[-1102] = "Гневион и Сабеллиан",							-- Wrathion & Sabellian
 		[-1120] = "Кентавры Маруук",								-- Maruuk Centaur
 		[-1130] = "Искарские клыкарры",								-- Iskaara Tuskarr
-		[-1143] = "Редкие DF по расписанию",						-- DF Rare Rotation
 		[-1150] = "Лоаммские ниффы",								-- Loamm Niffen
-		[-1151] = "Обмен",											-- Bartering
-		[-1200] = "Зкерские хранилища",								-- Zskera Vaults
-		[-1202] = "Налеты Фиракка",									-- Fyrakk Assaults
-		[-1203] = "Нюхорысканье",									-- Sniffenseeking
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5200] = "Основной облик",								-- Base Appearance
@@ -500,13 +489,6 @@ for key,value in pairs({
 			[-5203] = "Награды за Престиж",							-- Prestige Rewards
 			[-5204] = "Облик Испытаний",							-- Challenge Appearance
 			[-5205] = "Скрытый облик",								-- Hidden Appearance
-
-	-- Classes
-		[-9951] = GetSpellName(148462).." и "..GetSpellName(137031),	-- Discipline / Holy Priest Spec
-		[-9952] = GetSpellName(234890).." и "..GetSpellName(137011),	-- Guardian / Feral Druid Spec
-	------ ACHIEVEMENT HEADERS SECTION ------
-		[-10071] = "Видения Н'Зота",								-- Visions of N'Zoth
-		[-10072] = "Нападение Н'Зота",								-- N'Zoth Assault
 })
 do a[key] = value; end
 end
@@ -846,7 +828,7 @@ for key,value in pairs({
 	[4] = {3, "|CFFFF0000Это больше нельзя будет купить или получить в коллекцию, если у вас нет необходимого PvP титула или если вы не входили в топ % лучших в этом сезоне.|r", "ПвП Элита / Гладиатор"},
 
 	-- Arbitrary Filters
-		--[9] = {3, "|CFFFF0000This item is available on the Black Market Auction House. The original source may have been removed.|R", "Черный рынок AH [BMAH]"}, 
+		--[9] = {3, "|CFFFF0000This item is available on the Black Market Auction House. The original source may have been removed.|R", "Черный рынок AH [BMAH]"},
 		[10] = {3, "|CFFFF0000Первоначально доступно через карту TCG, которая больше не печатается, но все еще может быть доступна на черном рынке, в игре или на аукционах в реальной жизни.|r", "Коллекционная карточная игра [TCG]"},
 		[11] = {3, "|CFFFF0000Это больше не доступно, если вы не знаете кого-то, у кого есть доступ к предметам, используемым для вызова босса.\nПримечание: Большинство предметов призыва можно получить повторно, если они у Вас были раньше, поговорив с соответствующим NPC.|r", "Требуются предметы для призыва"},
 		-- [13] = {1, "|CFFFF0000Ваши последователи слишком высокого уровня, и миссия для тайника больше не будет появляться.|r", "Устаревший тайник"},

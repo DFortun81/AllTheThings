@@ -1,6 +1,21 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+ZSKERA_VAULTS = createHeader({
+	readable = "Zskera Vaults",
+	icon = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_ring_4_omni",
+	text = {
+		en = "Zskera Vaults",
+		es = "Cámaras de Zskera",
+		de = "Gewölbe von Zskera",
+		fr = "Caveaux de Zskera",
+		it = "Cripte di Zskera",
+		pt = "Câmaras de Zskera",
+		ru = "Зкерские хранилища",
+		ko = "지스케라 금고",
+		cn = "兹斯克拉宝库",
+	},
+});
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(ZSKERA_VAULTS, {

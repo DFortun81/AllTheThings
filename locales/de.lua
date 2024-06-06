@@ -447,12 +447,8 @@ for key,value in pairs({
 		[-152] = "Garnisonskampagne",								-- Garrison Campaign
 	-- PvP
 		[-242] = "Ungewertet",										-- Unrated
-	-- Allied Races
-		[-255] = "Traditionsrüstung",								-- Heritage
 	-- BFA Outposts
 		[-397] = "Außenposten",										-- Outposts
-	-- Chests
-		[-851] = "Truhe des Schwarzen Imperiums",					-- Black Empire Cache
 	-- Shadowlands Header
 		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		[-924] = "Reisenetzwerk",									-- Transport Network
@@ -465,23 +461,14 @@ for key,value in pairs({
 			[-956] = "Großinquisitor",								-- Grand Inquisitors
 			[-967] = "Spiegelwiederherstellung",					-- Mirror Restoration
 	-- Dragonflight
-		[-1100] = "Drachenwächtermanuskript",						-- Drakewatcher Manuscripts
-		[-1101] = "Urstürme",										-- Primal Storms
 		[-1102] = "Furorion und Sabellian",							-- Wrathion & Sabellian
 		[-1120] = "Zentauren der Maruuk",							-- Maruuk Centaur
 		[-1130] = "Tuskarr von Iskaara",							-- Iskaara Tuskarr
 		[-1150] = "Niffen von Loamm",								-- Loamm Niffen
-		[-1151] = "Tauschhandels",									-- Bartering
-		[-1200] = "Gewölbe von Zskera",								-- Zskera Vaults
-		[-1202] = "Angriffe von Fyrakk",							-- Fyrakk Assaults
-		[-1203] = "Schnüffelsuchen",								-- Sniffenseeking
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
 			[-5201] = "Ordenskampagne",								-- Class Hall Campaign
 			[-5202] = "Gleichgewicht der Kräfte",					-- Balance of Power
-
-	------ ACHIEVEMENT HEADERS SECTION ------
-		[-10071] = "Visionen von N'Zoth",							-- Visions of N'Zoth
 })
 do a[key] = value; end
 end
@@ -690,7 +677,7 @@ for key,value in pairs({
 		--TODO: FOR_UNSORTED_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 		--TODO: WITH_WRAPPING_CHECKBOX = "Allow Wrapping",
 		--TODO: WITH_WRAPPING_CHECKBOX_TOOLTIP = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
-		
+
 		--TODO: BEHAVIOR_LABEL = "List Behavior";
 		--TODO: MAIN_LIST_SLIDER_LABEL = "Main List Scale";
 		--TODO: MAIN_LIST_SCALE_TOOLTIP = 'Use this to customize the scale of the Main List.\n\nDefault: 1';
