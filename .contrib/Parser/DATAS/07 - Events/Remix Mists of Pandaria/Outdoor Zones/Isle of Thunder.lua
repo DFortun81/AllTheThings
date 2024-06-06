@@ -326,6 +326,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216595),	-- Bulwark of Twinned Despair
 					i(215681),	-- Crane's Beak Effigy
 					i(215948),	-- Darkhide Sword
+					i(216569),	-- Deflector of Orbiss
 					i(215908),	-- Do-tharak, the Foebreaker
 					i(216600),	-- Eyes of the Doomed
 					i(216601),	-- Eyes of the Doomed

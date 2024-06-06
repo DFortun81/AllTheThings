@@ -113,6 +113,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					i(215492),	-- Axe of Iron Might
 					i(215752),	-- Ced's Basher
+					i(215607),	-- Ceremonial Spike (reported by Sanctuari)
 					i(215880),	-- Darkstaff of Ruin
 					i(215537),	-- Dawnwatcher's Warbow
 					i(216007),	-- Deathspeaker Channel

@@ -153,7 +153,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215937),	-- Imperial Wind Blade
 					i(215947),	-- Inkgill Sword
 					i(216533),	-- Ironwood Shield (drop)
-					i(215740),	-- Jinyu Bonebreaker
+					i(215740),	-- Jinyu Bonebreaker (cache)
 					i(215989),	-- Jinyu Flamberge
 					i(215677),	-- Jinyu's Light
 					i(215539),	-- Jinyu Longbow
