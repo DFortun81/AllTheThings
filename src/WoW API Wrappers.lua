@@ -10,7 +10,7 @@ local lib = setmetatable({}, {
 local select = select;
 select(2, ...).WOWAPI = lib;
 
-
+-- Faction APIs
 if not GetFactionInfoByID then
 	local C_Reputation = C_Reputation;
 	lib.GetFactionName = function(factionID)
@@ -53,4 +53,14 @@ else
 	lib.GetFactionReaction = function(factionID)
 		return select(3, GetFactionInfoByID(factionID));
 	end
+end
+
+-- Spell APIs
+if not GetSpellInfo then
+	lib.GetSpellName = C_Spell.GetSpellName;
+	lib.GetSpellIcon = C_Spell.GetSpellTexture;
+else
+	local GetSpellInfo = GetSpellInfo;
+	lib.GetSpellName = function(spellID, rank) return select(1, GetSpellInfo(spellID, rank)); end;
+	lib.GetSpellIcon = function(spellID) return select(3, GetSpellInfo(spellID)); end;
 end

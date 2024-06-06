@@ -77,10 +77,9 @@ local ColorizeRGB = app.Modules.Color.ColorizeRGB;
 local HexToARGB = app.Modules.Color.HexToARGB;
 local RGBToHex = app.Modules.Color.RGBToHex;
 
--- Temporary Helper functions
-local GetSpellInfo = GetSpellInfo;
-local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
-local GetSpellIcon = (GetSpellInfo and (function(spellID) return select(3, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellTexture;
+-- WoW API Cache
+local GetSpellName = app.WOWAPI.GetSpellName;
+local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 
 -- Helper Functions
 local pendingCollection, pendingRemovals, retrievingCollection, pendingCollectionCooldown = {},{},{},0;
@@ -4079,7 +4078,7 @@ app.GetSpellName = function(spellID, rank)
 	local spellName = rawget(SpellIDToSpellName, spellID);
 	if spellName then return spellName; end
 	if rank then
-		spellName = GetSpellInfo(spellID, rank);
+		spellName = GetSpellName(spellID, rank);
 	else
 		spellName = GetSpellName(spellID);
 	end

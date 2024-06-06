@@ -13,9 +13,9 @@ local C_TradeSkillUI, GetCraftDisplaySkillLine, GetCraftInfo, GetCraftNumReagent
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
--- Temporary Helper functions
-local GetSpellInfo = GetSpellInfo;
-local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
+-- WoW API Cache
+local GetSpellName = app.WOWAPI.GetSpellName;
+local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 
 local function RefreshSkills()
 	-- Store Skill Data

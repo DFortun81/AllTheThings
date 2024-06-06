@@ -11,9 +11,10 @@ local L = app.L;
 -- Global locals
 local GetAchievementInfo, select, sformat = GetAchievementInfo, select, string.format;
 
+-- WoW API Cache
+local GetSpellName = app.WOWAPI.GetSpellName;
+
 -- Temporary Helper functions
-local GetSpellInfo = GetSpellInfo;
-local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
 local GetItemClassInfo = GetItemClassInfo;
 if not GetItemClassInfo then GetItemClassInfo = C_Item.GetItemClassInfo; end
 

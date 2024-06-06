@@ -27,11 +27,8 @@ local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 -- WoW API Cache
 local GetFactionName = app.WOWAPI.GetFactionName;
 local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
-
--- Temporary Helper functions
-local GetSpellInfo = GetSpellInfo;
-local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
-local GetSpellIcon = (GetSpellInfo and (function(spellID) return select(3, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellTexture;
+local GetSpellName = app.WOWAPI.GetSpellName;
+local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 
 -- Class locals
 local LastQuestTurnedIn, MostRecentQuestTurnIns;

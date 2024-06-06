@@ -11,10 +11,9 @@ local GetSpellLink,GetItemInfo
 ---@diagnostic disable-next-line: deprecated
 	= GetSpellLink,((C_Item and C_Item.GetItemInfo) or GetItemInfo)
 
--- Temporary Helper functions
-local GetSpellInfo = GetSpellInfo;
-local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
-local GetSpellIcon = (GetSpellInfo and (function(spellID) return select(3, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellTexture;
+-- WoW API Cache
+local GetSpellName = app.WOWAPI.GetSpellName;
+local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 
 -- App locals
 local Colorize = app.Modules.Color.Colorize;

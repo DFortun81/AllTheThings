@@ -10,9 +10,8 @@ local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
 local GetRealmName, GetItemInfo = GetRealmName, GetItemInfo
 
--- Temporary Helper functions
-local GetSpellInfo = GetSpellInfo;
-local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
+-- WoW API Cache
+local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)

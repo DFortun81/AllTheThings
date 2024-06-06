@@ -3,9 +3,8 @@ if GetLocale() ~= "ruRU" then return; end
 local app = select(2, ...);
 local L = app.L;
 
--- Temporary Helper functions
-local GetSpellInfo = GetSpellInfo;
-local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
+-- WoW API Cache
+local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- General Text
 	L.DESCRIPTION = "\"Глупцы! Вы сами нашли свою погибель! Вам никогда не понять, сколь велика сила, потревоженная вами.  Вы сражались отчаянно, чтобы проникнуть в царство Жнеца. Теперь перед вами лежит лишь один путь – путь проклятых.\"";

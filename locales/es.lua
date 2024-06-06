@@ -3,9 +3,8 @@ if GetLocale() ~= "esES" and GetLocale() ~= "esMX" then return; end
 local app = select(2, ...);
 local L = app.L;
 
--- Temporary Helper functions
-local GetSpellInfo = GetSpellInfo;
-local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
+-- WoW API Cache
+local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- General Text
 	--TODO: L.DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";

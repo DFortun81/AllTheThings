@@ -35,10 +35,9 @@ app.IsSpellKnownHelper = IsSpellKnownHelper;
 local SpellIDToSpellName = {};
 local SpellNameToSpellID;
 
--- Temporary Helper functions
-local GetSpellInfo = GetSpellInfo;
-local _GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
-local GetSpellIcon = (GetSpellInfo and (function(spellID) return select(3, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellTexture;
+-- WoW API Cache
+local _GetSpellName = app.WOWAPI.GetSpellName;
+local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local GetSpellName = function(spellID)
 	local spellName = SpellIDToSpellName[spellID];
 	if spellName then return spellName; end
