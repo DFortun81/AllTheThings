@@ -23,13 +23,17 @@ if not C_TransmogCollection then
 	return
 end
 
+-- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
+
 -- Transmog is supported!
 -- Global locals
 local ipairs, select, tinsert, pairs, rawget
 	= ipairs, select, tinsert, pairs, rawget;
-local GetItemInfoInstant, C_Item_IsDressableItemByID, GetItemInfo, GetSlotForInventoryType
+local C_Item_IsDressableItemByID, GetSlotForInventoryType
 ---@diagnostic disable-next-line: deprecated
-	= ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant), C_Item.IsDressableItemByID, ((C_Item and C_Item.GetItemInfo) or GetItemInfo), C_Transmog.GetSlotForInventoryType
+	= C_Item.IsDressableItemByID, C_Transmog.GetSlotForInventoryType
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local L, contains, containsAny, SearchForField, SearchForFieldContainer
 	= app.L, app.contains, app.containsAny, app.SearchForField, app.SearchForFieldContainer;

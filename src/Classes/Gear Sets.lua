@@ -11,10 +11,10 @@ end
 
 -- Transmog is supported!
 -- Global locals
-local ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink, GetItemInfoInstant,
+local ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink,
 		C_TransmogCollection_GetSourceInfo, C_TransmogSets_GetSetInfo, C_TransmogSets_GetAllSourceIDs
 	---@diagnostic disable-next-line: deprecated
-	= ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink, ((C_Item and C_Item.GetItemInfoInstant) or GetItemInfoInstant),
+	= ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink,
 		C_TransmogCollection.GetSourceInfo, C_TransmogSets.GetSetInfo, C_TransmogSets.GetAllSourceIDs;
 	
 -- Gear Sets
@@ -31,7 +31,7 @@ app.CreateGearSet = app.CreateClass("GearSet", "setID", {
 			for i, sourceID in ipairs(sources) do
 				local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
 				if sourceInfo and sourceInfo.invType == 2 then
-					local icon = select(5, GetItemInfoInstant(sourceInfo.itemID));
+					local icon = GetItemIcon(sourceInfo.itemID);
 					if icon then t.icon = icon; end
 					return icon;
 				end

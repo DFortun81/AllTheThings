@@ -50,10 +50,6 @@ local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
 local GetAchievementCriteriaInfoByID = _G["GetAchievementCriteriaInfoByID"];
 local GetCategoryInfo = _G["GetCategoryInfo"];
 ---@diagnostic disable-next-line: deprecated
-local GetItemInfo = _G["GetItemInfo"];
----@diagnostic disable-next-line: deprecated
-local GetItemInfoInstant = _G["GetItemInfoInstant"];
----@diagnostic disable-next-line: deprecated
 local GetItemCount = _G["GetItemCount"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown =
@@ -62,6 +58,8 @@ local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
 -- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
 
 -- App & Module locals
@@ -327,7 +325,7 @@ local function GetIconFromProviders(group)
 				if v[1] == "o" then
 					icon = app.ObjectIcons[v[2]];
 				elseif v[1] == "i" then
-					icon = select(5, GetItemInfoInstant(v[2]));
+					icon = GetItemIcon(v[2]);
 				end
 				if icon then return icon; end
 			end
@@ -4236,7 +4234,7 @@ recipeFields.IsClassIsolated = true;
 local createRecipe = app.CreateClass("Recipe", "spellID", recipeFields,
 "WithItem", {
 	baseIcon = function(t)
-		return select(5, GetItemInfoInstant(t.itemID)) or baseIconFromSpellID(t);
+		return GetItemIcon(t.itemID) or baseIconFromSpellID(t);
 	end,
 	link = function(t)
 		return select(2, GetItemInfo(t.itemID));
@@ -4439,7 +4437,7 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 else
 	speciesFields.icon = function(t)
 		if t.itemID then
-			return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+			return GetItemIcon(t.itemID) or "Interface\\Icons\\INV_Misc_QuestionMark";
 		end
 		return "Interface\\Icons\\INV_Misc_QuestionMark";
 	end

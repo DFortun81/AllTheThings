@@ -10,9 +10,12 @@ local pairs, select, rawget
 -- App locals
 local IsQuestFlaggedCompleted, SearchForFieldContainer, GetFixedItemSpecInfo = app.IsQuestFlaggedCompleted, app.SearchForFieldContainer, app.GetFixedItemSpecInfo
 
-local GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown, GetItemInfo
+-- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+
+local GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
 ---@diagnostic disable-next-line: deprecated
-	= GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown, ((C_Item and C_Item.GetItemInfo) or GetItemInfo)
+	= GetSpellLink, IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
 
 -- Consolidates some spell checking
 local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)

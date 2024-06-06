@@ -55,6 +55,26 @@ else
 	end
 end
 
+-- Item APIs
+if not GetItemInfo then
+	local GetItemInfo = C_Item.GetItemInfo;
+	lib.GetItemInfo = GetItemInfo;
+	lib.GetItemInfoInstant = function(item)
+		local _, _, _, _, _, itemType, itemSubType, _, itemEquipLoc, itemTexture, _, classID, subclassID = GetItemInfo(item);
+		return C_Item.GetItemIDForItemInfo(item), itemType, itemSubType, itemEquipLoc, itemTexture, classID, subclassID;
+	end
+	lib.GetItemID = function(item) return C_Item.GetItemIDForItemInfo(item); end
+	lib.GetItemIcon = function(item) return C_Item.GetItemIconByID(item); end
+else
+	---@diagnostic disable-next-line: deprecated
+	local GetItemInfoInstant = GetItemInfoInstant;
+	---@diagnostic disable-next-line: deprecated
+	lib.GetItemInfo = GetItemInfo;
+	lib.GetItemInfoInstant = GetItemInfoInstant;
+	lib.GetItemID = function(item) return GetItemInfoInstant(item); end
+	lib.GetItemIcon = function(item) return select(5, GetItemInfoInstant(item)); end
+end
+
 -- Spell APIs
 if not GetSpellInfo then
 	lib.GetSpellName = C_Spell.GetSpellName;

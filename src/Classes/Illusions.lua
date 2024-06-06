@@ -4,10 +4,8 @@ do
 local app = select(2, ...);
 local L = app.L
 
--- Global Variables
-local GetItemInfo =
----@diagnostic disable-next-line: deprecated
-	((C_Item and C_Item.GetItemInfo) or GetItemInfo);
+-- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
 
 -- Illusion Class
 local AccountWideIllusionData = {};

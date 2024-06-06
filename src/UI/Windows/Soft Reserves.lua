@@ -5,10 +5,13 @@ local L = app.L;
 -- Global locals
 local GetRaidRosterInfo, GuildControlGetNumRanks, GetGuildRosterInfo, GetGuildRosterLastOnline =
 	  GetRaidRosterInfo, GuildControlGetNumRanks, GetGuildRosterInfo, GetGuildRosterLastOnline;
-local GetItemInfo, GetItemInfoInstant = GetItemInfo, GetItemInfoInstant;
 local GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty =
 	  GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty;
 local tinsert, tremove = tinsert, tremove;
+
+-- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemID = app.WOWAPI.GetItemID;
 
 -- App locals
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
@@ -138,7 +141,7 @@ local function ParseSoftReserve(guid, cmd, isSilentMode, isCurrentPlayer)
 		end
 		
 		-- Parse out the itemID if possible.
-		local itemID = tonumber(cmd) or GetItemInfoInstant(cmd);
+		local itemID = tonumber(cmd) or GetItemID(cmd);
 		if itemID then cmd = "itemid:" .. itemID; end
 		
 		-- Search for the Link in the database
@@ -214,7 +217,7 @@ local function QuerySoftReserve(guid, cmd, target)
 		end
 		
 		-- Parse out the itemID if possible.
-		local itemID = tonumber(cmd) or GetItemInfoInstant(cmd);
+		local itemID = tonumber(cmd) or GetItemID(cmd);
 		if itemID then cmd = "itemid:" .. itemID; end
 		
 		-- Search for the Link in the database
@@ -1227,7 +1230,7 @@ app.CreateSoftReserveUnit = app.ExtendClass("Unit", "SoftReserveUnit", "unit", {
 		end
 	end,
 	["preview"] = function(t)
-		return t.itemID and select(5, GetItemInfoInstant(t.itemID));
+		return t.itemID and GetItemIcon(t.itemID);
 	end,
 	["link"] = function(t)
 		return t.itemID and select(2, GetItemInfo(t.itemID));

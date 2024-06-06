@@ -8,9 +8,10 @@ local Colorize = app.Modules.Color.Colorize;
 local GetNumberWithZeros = app.Modules.Color.GetNumberWithZeros;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetRelativeValue = app.GetRelativeValue;
-local GetRealmName, GetItemInfo = GetRealmName, GetItemInfo
+local GetRealmName = GetRealmName
 
 -- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- Settings: Interface Page

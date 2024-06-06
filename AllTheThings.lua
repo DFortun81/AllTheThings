@@ -48,16 +48,16 @@ local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo;
 local GetAchievementInfo = _G.GetAchievementInfo;
 local GetAchievementLink = _G.GetAchievementLink;
----@diagnostic disable-next-line: deprecated
-local GetItemInfo = _G.GetItemInfo;
----@diagnostic disable-next-line: deprecated
-local GetItemInfoInstant = _G.GetItemInfoInstant;
 local InCombatLockdown = _G.InCombatLockdown;
 local GetTimePreciseSec = GetTimePreciseSec
 
 -- WoW API Cache
 local GetFactionName = app.WOWAPI.GetFactionName;
 local GetFactionBonusReputation = app.WOWAPI.GetFactionBonusReputation;
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemID = app.WOWAPI.GetItemID;
+local GetItemIcon = app.WOWAPI.GetItemIcon;
+local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 
@@ -280,7 +280,7 @@ local function GetIconFromProviders(group)
 				if v[1] == "o" then
 					icon = app.ObjectIcons[v[2]];
 				elseif v[1] == "i" then
-					icon = select(5, GetItemInfoInstant(v[2]));
+					icon = GetItemIcon(v[2]);
 				end
 				if icon then return icon; end
 			end
@@ -5767,7 +5767,7 @@ local CreateHeirloomLevel = app.CreateClass("HeirloomLevel", "heirloomLevelID", 
 -- Heirloom Item
 local createHeirloom = app.ExtendClass("Item", "Heirloom", "heirloomID", {
 	itemID = function(t) return t.heirloomID; end,
-	icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or select(5, GetItemInfoInstant(t.itemID)); end,
+	icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or GetItemIcon(t.itemID); end,
 	link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end,
 	collectibleAsCost = app.ReturnFalse,
 	collectible = function(t)
@@ -13930,11 +13930,11 @@ app.LoadDebugger = function()
 					local rawGroups = {};
 					for i=1,GetNumQuestRewards(),1 do
 						local link = GetQuestItemLink("reward", i);
-						if link then tinsert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+						if link then tinsert(rawGroups, { ["itemID"] = GetItemID(link) }); end
 					end
 					for i=1,GetNumQuestChoices(),1 do
 						local link = GetQuestItemLink("choice", i);
-						if link then tinsert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+						if link then tinsert(rawGroups, { ["itemID"] = GetItemID(link) }); end
 					end
 					-- GetNumQuestLogRewardSpells removed in 10.1
 					-- for i=1,GetNumQuestLogRewardSpells(questID),1 do
@@ -13994,7 +13994,7 @@ app.LoadDebugger = function()
 					local itemString = msg:match("item[%-?%d:]+");
 					if itemString then
 						-- print("Looted Item",itemString)
-						local itemID = GetItemInfoInstant(itemString);
+						local itemID = GetItemID(itemString);
 						AddObject({ ["unit"] = j, ["g"] = { { ["itemID"] = itemID, ["rawlink"] = itemString } } });
 					end
 				-- Capture personal loot sources
@@ -14014,7 +14014,7 @@ app.LoadDebugger = function()
 					for i=1,slots,1 do
 						loot = GetLootSlotLink(i);
 						if loot then
-							itemID = GetItemInfoInstant(loot);
+							itemID = GetItemID(loot);
 							if itemID then
 								source = { GetLootSourceInfo(i) };
 								for j=1,#source,2 do
@@ -14033,7 +14033,7 @@ app.LoadDebugger = function()
 					end
 				elseif e == "QUEST_LOOT_RECEIVED" then
 					local questID, itemLink = ...
-					local itemID = GetItemInfoInstant(itemLink)
+					local itemID = GetItemID(itemLink)
 					local info = { ["questID"] = questID, ["g"] = { { ["itemID"] = itemID, ["rawlink"] = itemLink } } }
 					app.PrintDebug("Add Quest Loot from",questID,itemLink,itemID)
 					AddObject(info)

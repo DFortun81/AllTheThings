@@ -10,11 +10,12 @@ local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFla
 -- Global locals
 local ipairs, pairs, rawset, rawget, tinsert, math_floor, select, tonumber, tostring, tremove
 	= ipairs, pairs, rawset, rawget, tinsert, math.floor, select, tonumber, tostring, tremove
-local GetItemCount, GetItemInfo, GetItemInfoInstant, GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
-	= ((C_Item and C_Item.GetItemCount) or GetItemCount), GetItemInfo, GetItemInfoInstant, GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
+local GetItemCount, GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
+	= ((C_Item and C_Item.GetItemCount) or GetItemCount), GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
 
 
 -- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetFactionBonusReputation = app.WOWAPI.GetFactionBonusReputation;
 
 -- Class locals
@@ -321,7 +322,7 @@ local function default_link(t)
 	return UNKNOWN;
 end
 local function default_icon(t)
-	return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+	return t.itemID and GetItemIcon(t.itemID) or "Interface\\Icons\\INV_Misc_QuestionMark";
 end
 local function default_specs(t)
 	return GetFixedItemSpecInfo(t.itemID);

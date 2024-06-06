@@ -3,8 +3,11 @@ local appName, app = ...;
 local SearchForField = app.SearchForField;
 local UpdateGroups = app.UpdateGroups;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local rawset, tostring, GetItemInfoInstant, GetItemInfo
-	= rawset, tostring, GetItemInfoInstant, GetItemInfo;
+local rawset, tostring = rawset, tostring;
+
+-- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemID = app.WOWAPI.GetItemID;
 
 -- Uncomment this section to also harvest tooltip data.
 --[[
@@ -490,7 +493,7 @@ app:CreateWindow("ItemFinder", {
 				collectible = app.ReturnTrue,
 				collected = app.ReturnFalse,
 				text = function(t)
-					if GetItemInfoInstant(t.itemID) then
+					if GetItemID(t.itemID) then
 						local link = t.link;
 						if link then
 							local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,

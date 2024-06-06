@@ -1,6 +1,9 @@
 -- App locals
 local appName, app = ...;
 
+-- WoW API Cache
+local GetItemID = app.WOWAPI.GetItemID;
+
 -- Implementation
 -- Uncomment this section if you need to enable Debugger:
 -- NOTE: It needs a lot of work! Not currently attached to any TOC files.
@@ -207,11 +210,11 @@ app:CreateWindow("Debugger", {
 				local rawGroups = {};
 				for i=1,GetNumQuestRewards(),1 do
 					local link = GetQuestItemLink("reward", i);
-					if link then tinsert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+					if link then tinsert(rawGroups, { ["itemID"] = GetItemID(link) }); end
 				end
 				for i=1,GetNumQuestChoices(),1 do
 					local link = GetQuestItemLink("choice", i);
-					if link then tinsert(rawGroups, { ["itemID"] = GetItemInfoInstant(link) }); end
+					if link then tinsert(rawGroups, { ["itemID"] = GetItemID(link) }); end
 				end
 				for i=1,GetNumQuestLogRewardSpells(questID),1 do
 					local texture, name, isTradeskillSpell, isSpellLearned, hideSpellLearnText, isBoostSpell, garrFollowerID, genericUnlock, spellID = GetQuestLogRewardSpell(i, questID);
@@ -241,7 +244,7 @@ app:CreateWindow("Debugger", {
 				local msg, player, a, b, c, d, e, f, g, h, i, j, k, l = ...;
 				local itemString = msg:match("item[%-?%d:]+");
 				if itemString then
-					self:AddObject({ ["itemID"] = GetItemInfoInstant(itemString) });
+					self:AddObject({ ["itemID"] = GetItemID(itemString) });
 				end
 			end
 		end);

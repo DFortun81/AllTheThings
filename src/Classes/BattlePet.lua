@@ -6,10 +6,8 @@ local _, app = ...
 local wipe, setmetatable, rawget, select
 	= wipe, setmetatable, rawget, select
 
--- Blizzard
-local GetItemInfo
----@diagnostic disable-next-line: deprecated
-	= ((C_Item and C_Item.GetItemInfo) or GetItemInfo)
+-- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
 
 -- Module
 

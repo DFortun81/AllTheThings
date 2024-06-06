@@ -11,12 +11,15 @@ if not C_ArtifactUI then
 	return
 end
 
+-- WoW API Cache
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+
 local CurrentArtifactRelicItemLevels = {}
 local pairs, select, math_floor
 	= pairs, select, math.floor;
 local L, ColorizeRGB = app.L, app.Modules.Color.ColorizeRGB;
 local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
-local GetDetailedItemLevelInfo, GetItemInfo, IsArtifactRelicItem = GetDetailedItemLevelInfo, GetItemInfo, IsArtifactRelicItem;
+local GetDetailedItemLevelInfo, IsArtifactRelicItem = GetDetailedItemLevelInfo, IsArtifactRelicItem;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection and C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
 local ATTAccountWideData, ATTAccountWideDataArtifacts
