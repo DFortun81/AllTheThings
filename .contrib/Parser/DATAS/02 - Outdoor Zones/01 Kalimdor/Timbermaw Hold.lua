@@ -57,7 +57,7 @@ local OnTooltipForTimbermawHold = [[function(t, tooltipInfo)
 		-- #endif
 		addRepInfo(tooltipInfo, reputation, "Turn in Deadwood Feathers (x5) in Felwood", repPerTurnIn, 42000);
 		local repPer, remainingTurnIns = addRepInfo(tooltipInfo, reputation, "Turn in Winterfall Beads (x5) in Winterspring", repPerTurnIn, 42000);
-		local remaining = ((remainingTurnIns * 5) - GetItemCount(21383, true) - GetItemCount(21377, true));
+		local remaining = ((remainingTurnIns * 5) - ]] .. WOWAPI_GetItemCount(21383) .. [[ - ]] .. WOWAPI_GetItemCount(21377) .. [[);
 		if remaining > 0 then
 			tinsert(tooltipInfo, { left = "You need " .. remaining .. " more feathers/beads for Exalted.", r = 1, g = 1, b = 0 });
 		end

@@ -406,7 +406,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								["OnUpdate"] = [[function(t)
 									local collected = true;
 									for i,provider in ipairs(t.providers) do
-										if provider[1] == "i" and GetItemCount(provider[2], true) == 0 then
+										if provider[1] == "i" and ]] .. WOWAPI_GetItemCount("provider[2]") .. [[ == 0 then
 											collected = false;
 											break;
 										end

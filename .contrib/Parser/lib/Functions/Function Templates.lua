@@ -1,3 +1,11 @@
+-- WoW API Function Templates
+WOWAPI_GetItemCount = function(itemID)
+	-- #if AFTER TWW
+	return "C_Item.GetItemCount(" .. itemID .. ", true)";
+	-- #else
+	return "GetItemCount(" .. itemID .. ", true)";
+	-- #endif
+end
 FUNCTION_TEMPLATES = {
 	OnTooltip = {
 		-- #if BEFORE CATA

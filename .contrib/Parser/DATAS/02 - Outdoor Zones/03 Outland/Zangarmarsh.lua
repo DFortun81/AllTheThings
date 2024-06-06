@@ -2016,7 +2016,7 @@ root(ROOTS.Zones, {
 								end]],
 								["OnInit"] = [[function(t)
 									t.otherItemID = 185690;
-									t.GetItemCount = function(t) return GetItemCount(t.itemID, true) + GetItemCount(t.otherItemID, true); end
+									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
 									return t;
 								end]],
 								-- #endif

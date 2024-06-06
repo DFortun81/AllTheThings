@@ -12,7 +12,7 @@ ATALAI_DEFENDERS = createHeader({
 	},
 });
 local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
-	if not t.collected and _.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1 then
+	if not t.collected and _.IsQuestFlaggedCompleted(3373) and ]] .. WOWAPI_GetItemCount(10455) .. [[ < 1 then
 		if not _.Settings.AccountWide.Quests then
 			t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		else
@@ -22,7 +22,7 @@ local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
 	end
 end]];
 local ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate = [[function(t)
-	if not _.IsQuestFlaggedCompleted(3374) and (_.IsQuestFlaggedCompleted(3373) and GetItemCount(10455, true) < 1) then
+	if not _.IsQuestFlaggedCompleted(3374) and (_.IsQuestFlaggedCompleted(3373) and ]] .. WOWAPI_GetItemCount(10455) .. [[ < 1) then
 		if not _.Settings.AccountWide.Quests then
 			t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		else
