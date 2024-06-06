@@ -995,7 +995,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				},
 				["OnTooltip"] = [[function(t, tooltipInfo)
 					if _.CurrentCharacter.Spells[55208] then
-						if GetSpellCooldown(55208) > 0 then
+						if ]] .. WOWAPI_GetSpellCooldown(55208) .. [[ > 0 then
 							tinsert(tooltipInfo, { left = "Your Titansteel cooldown is unavailable." });
 						else
 							tinsert(tooltipInfo, { left = "Your Titansteel cooldown is available." });

@@ -6,6 +6,13 @@ WOWAPI_GetItemCount = function(itemID)
 	return "GetItemCount(" .. itemID .. ", true)";
 	-- #endif
 end
+WOWAPI_GetSpellCooldown = function(spellID)
+	-- #if AFTER TWW
+	return "C_Spell.GetSpellCooldown(" .. spellID .. ")";
+	-- #else
+	return "GetSpellCooldown(" .. spellID .. ")";
+	-- #endif
+end
 FUNCTION_TEMPLATES = {
 	OnTooltip = {
 		-- #if BEFORE CATA
@@ -51,7 +58,7 @@ FUNCTION_TEMPLATES = {
 	OnInit = {
 		-- function unmarks the removed from game flag for folks with the brazier.
 		BrazierAccess = [[function(t)
-			if GetItemCount(22057, true) > 0 then
+			if ]] .. WOWAPI_GetItemCount(22057) .. [[ > 0 then
 				t.u = nil;
 				for i,o in ipairs(t.g) do
 					if o.u and o.u == 11 then
