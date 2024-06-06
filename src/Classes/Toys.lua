@@ -1,9 +1,10 @@
 -- App locals
 local appName,app = ...;
 
-local pairs, GetItemCount, PlayerHasToy
----@diagnostic disable-next-line: deprecated
-	= pairs, ((C_Item and C_Item.GetItemCount) or GetItemCount), PlayerHasToy;
+local pairs, PlayerHasToy = pairs, PlayerHasToy;
+
+-- WoW API Cache
+local GetItemCount = app.WOWAPI.GetItemCount;
 
 -- Toy Lib
 local KEY, CACHE = "toyID", "Toys"

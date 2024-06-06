@@ -2,15 +2,15 @@ local appName, app = ...
 local L = app.L;
 
 -- Global locals
-local ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type, GetItemCount
----@diagnostic disable-next-line: deprecated
-	= ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type, GetItemCount;
-local C_QuestLog_IsOnQuest
-	= C_QuestLog.IsOnQuest;
+local ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type
+	= ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type;
+local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 
 -- WoW API Cache
-local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemID = app.WOWAPI.GetItemID;
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemIcon = app.WOWAPI.GetItemIcon;
+local GetItemCount = app.WOWAPI.GetItemCount;
 local GetFactionBonusReputation = app.WOWAPI.GetFactionBonusReputation;
 
 -- App locals

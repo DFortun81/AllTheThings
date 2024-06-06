@@ -13,6 +13,7 @@ end
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemIcon = app.WOWAPI.GetItemIcon;
 
 local select, setmetatable, pairs
 	= select, setmetatable, pairs

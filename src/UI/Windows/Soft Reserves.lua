@@ -10,8 +10,9 @@ local GetLootMethod, GetRealmName, UnitName, UnitGUID, UnitInRaid, UnitInParty =
 local tinsert, tremove = tinsert, tremove;
 
 -- WoW API Cache
-local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemID = app.WOWAPI.GetItemID;
+local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemIcon = app.WOWAPI.GetItemIcon;
 
 -- App locals
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;

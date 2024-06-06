@@ -9,6 +9,9 @@ if not C_TransmogSets then
 	return
 end
 
+-- WoW API Cache
+local GetItemIcon = app.WOWAPI.GetItemIcon;
+
 -- Transmog is supported!
 -- Global locals
 local ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink,

@@ -59,6 +59,7 @@ local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
 

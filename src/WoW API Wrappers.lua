@@ -57,7 +57,9 @@ end
 
 -- Item APIs
 if not GetItemInfo then
+	local C_Item = C_Item;
 	local GetItemInfo = C_Item.GetItemInfo;
+	lib.GetItemCount = C_Item.GetItemCount;
 	lib.GetItemInfo = GetItemInfo;
 	lib.GetItemInfoInstant = function(item)
 		local _, _, _, _, _, itemType, itemSubType, _, itemEquipLoc, itemTexture, _, classID, subclassID = GetItemInfo(item);
@@ -65,14 +67,18 @@ if not GetItemInfo then
 	end
 	lib.GetItemID = function(item) return C_Item.GetItemIDForItemInfo(item); end
 	lib.GetItemIcon = function(item) return C_Item.GetItemIconByID(item); end
+	lib.GetItemSpecInfo = function(item) return C_Item.GetItemSpecInfo(item); end
 else
 	---@diagnostic disable-next-line: deprecated
 	local GetItemInfoInstant = GetItemInfoInstant;
 	---@diagnostic disable-next-line: deprecated
 	lib.GetItemInfo = GetItemInfo;
+	---@diagnostic disable-next-line: deprecated
+	lib.GetItemCount = GetItemCount;
 	lib.GetItemInfoInstant = GetItemInfoInstant;
 	lib.GetItemID = function(item) return GetItemInfoInstant(item); end
 	lib.GetItemIcon = function(item) return select(5, GetItemInfoInstant(item)); end
+	lib.GetItemSpecInfo = GetItemSpecInfo;
 end
 
 -- Spell APIs

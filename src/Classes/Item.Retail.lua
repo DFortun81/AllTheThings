@@ -10,12 +10,15 @@ local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFla
 -- Global locals
 local ipairs, pairs, rawset, rawget, tinsert, math_floor, select, tonumber, tostring, tremove
 	= ipairs, pairs, rawset, rawget, tinsert, math.floor, select, tonumber, tostring, tremove
-local GetItemCount, GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
-	= ((C_Item and C_Item.GetItemCount) or GetItemCount), GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
+local GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
+	= GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
 
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemIcon = app.WOWAPI.GetItemIcon;
+local GetItemCount = app.WOWAPI.GetItemCount;
+local GetItemSpecInfo = app.WOWAPI.GetItemSpecInfo;
 local GetFactionBonusReputation = app.WOWAPI.GetFactionBonusReputation;
 
 -- Class locals

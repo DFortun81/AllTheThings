@@ -12,6 +12,7 @@ local GetRealmName = GetRealmName
 
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
+local GetItemCount = app.WOWAPI.GetItemCount;
 local GetSpellName = app.WOWAPI.GetSpellName;
 
 -- Settings: Interface Page
