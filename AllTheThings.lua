@@ -55,28 +55,15 @@ local GetItemInfoInstant = _G.GetItemInfoInstant;
 local InCombatLockdown = _G.InCombatLockdown;
 local GetTimePreciseSec = GetTimePreciseSec
 
+-- WoW API Cache
+local GetFactionName = app.WOWAPI.GetFactionName;
+local GetFactionBonusReputation = app.WOWAPI.GetFactionBonusReputation;
+
 
 -- Temporary Helper functions
 local GetSpellInfo = GetSpellInfo;
 local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
 local GetSpellIcon = (GetSpellInfo and (function(spellID) return select(3, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellIcon;
-local GetFactionInfoByID = GetFactionInfoByID;
-local GetFactionName, GetFactionBonusReputation;
-if not GetFactionInfoByID then
-	local C_Reputation = C_Reputation;
-	GetFactionName = function(factionID)
-		local factionData = C_Reputation.GetFactionDataByID(factionID);
-		return factionData and factionData.name;
-	end
-	GetFactionBonusReputation = function(factionID)
-		return false;
-	end
-else
-	GetFactionName = function(factionID) return select(1, GetFactionInfoByID(factionID)); end
-	GetFactionBonusReputation = function(factionID)
-		return select(15, GetFactionInfoByID(factionID));
-	end
-end
 
 local C_TradeSkillUI = C_TradeSkillUI;
 local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe

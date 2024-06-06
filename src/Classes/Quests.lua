@@ -24,21 +24,14 @@ local GetNumQuestLogRewardCurrencies, GetQuestLogRewardInfo =
 local ALLIANCE_FACTION_ID = Enum.FlightPathFaction.Alliance;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 
+-- WoW API Cache
+local GetFactionName = app.WOWAPI.GetFactionName;
+local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
+
 -- Temporary Helper functions
 local GetSpellInfo = GetSpellInfo;
 local GetSpellName = (GetSpellInfo and (function(spellID) return select(1, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellName;
 local GetSpellIcon = (GetSpellInfo and (function(spellID) return select(3, GetSpellInfo(spellID)); end)) or C_Spell.GetSpellTexture;
-local GetFactionInfoByID = GetFactionInfoByID;
-local GetFactionName;
-if not GetFactionInfoByID then
-	local C_Reputation = C_Reputation;
-	GetFactionName = function(factionID)
-		local factionData = C_Reputation.GetFactionDataByID(factionID);
-		return factionData and factionData.name;
-	end
-else
-	GetFactionName = function(factionID) return select(1, GetFactionInfoByID(factionID)); end
-end
 
 -- Class locals
 local LastQuestTurnedIn, MostRecentQuestTurnIns;
@@ -1486,7 +1479,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		local flag = IsQuestFlaggedCompletedForObject(t);
 		if flag then return flag; end
 		local maxReputation = t.maxReputation;
-		if (select(6, GetFactionInfoByID(maxReputation[1])) or 0) >= maxReputation[2] then
+		if GetFactionCurrentReputation(maxReputation[1]) >= maxReputation[2] then
 			return t.repeatable and 1 or 2;
 		end
 		if app.Settings.AccountWide.Reputations then

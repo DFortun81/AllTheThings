@@ -8,19 +8,8 @@ local ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type, Get
 local C_QuestLog_IsOnQuest
 	= C_QuestLog.IsOnQuest;
 
--- Temporary helper functions
-local GetFactionInfoByID = GetFactionInfoByID;
-local GetFactionBonusReputation;
-if not GetFactionInfoByID then
-	local C_Reputation = C_Reputation;
-	GetFactionBonusReputation = function(factionID)
-		return false;
-	end
-else
-	GetFactionBonusReputation = function(factionID)
-		return select(15, GetFactionInfoByID(factionID));
-	end
-end
+-- WoW API Cache
+local GetFactionBonusReputation = app.WOWAPI.GetFactionBonusReputation;
 
 -- App locals
 local AssignChildren, GetRelativeValue, IsQuestFlaggedCompletedForObject, NestObject, SearchForField, SearchForFieldContainer

@@ -49,7 +49,6 @@ local GetAchievementNumCriteria = _G["GetAchievementNumCriteria"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
 local GetAchievementCriteriaInfoByID = _G["GetAchievementCriteriaInfoByID"];
 local GetCategoryInfo = _G["GetCategoryInfo"];
-local GetFactionInfoByID = _G["GetFactionInfoByID"];
 ---@diagnostic disable-next-line: deprecated
 local GetItemInfo = _G["GetItemInfo"];
 ---@diagnostic disable-next-line: deprecated
@@ -61,6 +60,9 @@ local IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown =
 	  IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
+
+-- WoW API Cache
+local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
 
 -- App & Module locals
 local contains = app.contains;
@@ -3785,7 +3787,7 @@ local createCustomHeader = app.CreateClass("Header", "headerID", {
 		end
 	end,
 	collected = function(t)
-		if (select(6, GetFactionInfoByID(t.maxReputation[1])) or 0) >= t.maxReputation[2] then
+		if GetFactionCurrentReputation(t.maxReputation[1]) >= t.maxReputation[2] then
 			return 1;
 		end
 		if app.Settings.AccountWide.Reputations then

@@ -13,19 +13,9 @@ local ipairs, pairs, rawset, rawget, tinsert, math_floor, select, tonumber, tost
 local GetItemCount, GetItemInfo, GetItemInfoInstant, GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
 	= ((C_Item and C_Item.GetItemCount) or GetItemCount), GetItemInfo, GetItemInfoInstant, GetItemSpecInfo, GetNumSpecializations, GetSpecializationInfo, GetSpecializationInfoByID
 
--- Temporary helper functions
-local GetFactionInfoByID = GetFactionInfoByID;
-local GetFactionBonusReputation;
-if not GetFactionInfoByID then
-	local C_Reputation = C_Reputation;
-	GetFactionBonusReputation = function(factionID)
-		return false;
-	end
-else
-	GetFactionBonusReputation = function(factionID)
-		return select(15, GetFactionInfoByID(factionID));
-	end
-end
+
+-- WoW API Cache
+local GetFactionBonusReputation = app.WOWAPI.GetFactionBonusReputation;
 
 -- Class locals
 

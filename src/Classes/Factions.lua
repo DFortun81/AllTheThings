@@ -18,18 +18,12 @@ local ATTAccountWideData
 local GetProgressColor = app.Modules.Color.GetProgressColor;
 local Colorize = app.Modules.Color.Colorize;
 
--- Temporary Helper functions
-local GetFactionInfoByID = GetFactionInfoByID;
-local GetFactionName;
-if not GetFactionInfoByID then
-	local C_Reputation = C_Reputation;
-	GetFactionName = function(factionID)
-		local factionData = C_Reputation.GetFactionDataByID(factionID);
-		return factionData and factionData.name;
-	end
-else
-	GetFactionName = function(factionID) return select(1, GetFactionInfoByID(factionID)); end
-end
+-- WoW API Cache
+local GetFactionName = app.WOWAPI.GetFactionName;
+local GetFactionLore = app.WOWAPI.GetFactionLore;
+local GetFactionReaction = app.WOWAPI.GetFactionReaction;
+local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
+local GetFactionReputationCeiling = app.WOWAPI.GetFactionReputationCeiling;
 
 -- Faction API Implementation
 app.AddEventHandler("OnStartup", function()
@@ -152,7 +146,7 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 		if not t.lore then return L.FACTION_SPECIFIC_REP; end
 	end,
 	lore = function(t)
-		return select(2, GetFactionInfoByID(t[KEY]));
+		return GetFactionLore(t[KEY]);
 	end,
 	icon = function(t)
 		return app.asset("Category_Factions");
@@ -164,7 +158,7 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 			-- If your reputation is higher than the maximum for a different faction, return partial completion.
 			if not app.Settings.AccountWide[SETTING] then
 				local maxReputation = t.maxReputation;
-				if maxReputation and maxReputation[1] ~= t[KEY] and (select(3, GetFactionInfoByID(maxReputation[1])) or 4) >= GetFactionStanding(maxReputation[2]) then
+				if maxReputation and maxReputation[1] ~= t[KEY] and (GetFactionReaction(maxReputation[1]) or 4) >= GetFactionStanding(maxReputation[2]) then
 					return false;
 				end
 			end
@@ -209,17 +203,16 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 		return title;
 	end,
 	reputation = function(t)
-		return select(6, GetFactionInfoByID(t[KEY])) or 0;
+		return GetFactionCurrentReputation(t[KEY]);
 	end,
 	reputationThreshold = function(t)
 		return { GetFactionStanding(t.reputation) };
 	end,
 	ceiling = function(t)
-		local _, _, _, m, ma = GetFactionInfoByID(t[KEY]);
-		return ma and m and (ma - m);
+		return GetFactionReputationCeiling(t[KEY]);
 	end,
 	standing = function(t)
-		return select(3, GetFactionInfoByID(t[KEY])) or 1;
+		return GetFactionReaction(t[KEY]) or 1;
 	end,
 	maxstanding = function(t)
 		local minReputation = t.minReputation;
