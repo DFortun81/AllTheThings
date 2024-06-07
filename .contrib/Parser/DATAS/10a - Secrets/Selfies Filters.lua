@@ -3,7 +3,7 @@
 ---------------------------------------------
 SELFIE_FILTER = createHeader({
 	readable = "Selfie Filter",
-	icon = [[~_.app.asset("Category_SelfieFilters")]],
+	icon = [[~_.asset("Category_SelfieFilters")]],
 	text = {
 		en = WOWAPI_GetSpellName(181765),
 	},
