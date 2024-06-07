@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
---[[
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1274, {	-- City of Threads
 		--["coord"] = { X, Y, AZJ_KAHET },
@@ -12,55 +11,57 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2594, {	-- Orator Krix'vizk
-					--["crs"] = {  },
+					["crs"] = { 216619 },	-- Orator Krix'vizk <The Fifth Strand>
 					["g"] = {
-						i(221166),	-- Krix'vizk's Speech Rod
-						i(221167),	-- Vociferous Subjugator's Bracers
-						i(221170),	-- Subduer's Terrorgrips
 						i(221168),	-- Cinch of Lingering Influence
-						i(221169),	-- Whisperer's Echoing Steps
+						i(221166),	-- Krix'vizk's Speech Rod
 						i(219318),	-- Oppressive Orator's Larynx
+						i(221170),	-- Subduer's Terrorgrips
+						i(221167),	-- Vociferous Subjugator's Bracers
+						i(221169),	-- Whisperer's Echoing Steps
 					},
 				}),
 				e(2595, {	-- Fangs of the Queen
-					--["crs"] = {  },
+					["crs"] = {
+						216648,	-- Nx <Fang of the Queen>
+						216649,	-- Vx <Fang of the Queen>
+					},
 					["g"] = {
-						i(221171),	-- Kingslayer's Frostfang
-						i(221172),	-- Pail of Preserved Obscurity
-						i(221175),	-- Shadowchill Amice
 						i(221176),	-- Arachnofrost Vest
-						i(221174),	-- Penumbral Rimeguards
+						i(221171),	-- Kingslayer's Frostfang
 						i(221173),	-- Legplates of Duality
+						i(221172),	-- Pail of Preserved Obscurity
+						i(221174),	-- Penumbral Rimeguards
+						i(221175),	-- Shadowchill Amice
 						i(219319),	-- Twin Fang Instruments
 					},
 				}),
 				e(2600, {	-- The Coaglamation
-					--["crs"] = {  },
+					["crs"] = { 216320 },	-- The Coaglamation
 					["g"] = {
-						i(221177),	-- Old-Blood Hielaman
-						i(221181),	-- Elder's Hemolymphal Periapt
 						i(221179),	-- Coagulum Cuirass
-						i(221182),	-- Vitriolic Veinwoven Wraps
+						i(221181),	-- Elder's Hemolymphal Periapt
 						i(221180),	-- Gorebound Stranglers
 						i(221178),	-- Ichor-Stained Sollerets
+						i(221177),	-- Old-Blood Hielaman
 						i(219320),	-- Viscous Coaglam
+						i(221182),	-- Vitriolic Veinwoven Wraps
 					},
 				}),
 				e(2596, {	-- Izo, the Grand Splicer
-					--["crs"] = {  },
+					["crs"] = { 216658 },	-- Izo, the Grand Splicer
 					["g"] = {
-						i(221184),	-- Surgical Heartstopper
-						i(221183),	-- Splice 'n Dice
-						i(221187),	-- Intertwiner's Shadowcowl
-						i(221185),	-- Flesh Connector's Epaulets
-						i(221188),	-- Viscera-Lathered Coat
+						i(219321),	-- Cirral Concoctory
 						i(221186),	-- Entwined Chimeric Legguards
 						i(221189),	-- Experiment 08752's Band
-						i(219321),	-- Cirral Concoctory
+						i(221185),	-- Flesh Connector's Epaulets
+						i(221187),	-- Intertwiner's Shadowcowl
+						i(221183),	-- Splice 'n Dice
+						i(221184),	-- Surgical Heartstopper
+						i(221188),	-- Viscera-Lathered Coat
 					},
 				}),
 			}),
 		},
 	})
 })));
---]]
