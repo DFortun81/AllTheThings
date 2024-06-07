@@ -1853,8 +1853,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 					["cost"] = {{"c", TRADERS_TENDER, 800}},
 				}),
 			}),
-			filter(TOYS, {
-			}),
 			filter(COSMETIC, {
 				i(190164, {	-- Arsenal: Blades of Elune
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
@@ -1979,47 +1977,8 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				iensemble(223004, {	-- Arsenal: Blazing Felfire Armaments
 					["cost"] = {{"c", TRADERS_TENDER, 650}},
 				}),
-				iensemble(221542, {	-- Ensemble: Sunny Tropical Beachwear
-					["cost"] = {{"c", TRADERS_TENDER, 650}},
-				}),
-				iensemble(222961, {	-- Ensemble: Sunny Tropical Swimwear
-					["cost"] = {{"c", TRADERS_TENDER, 650}},
-				}),
-				i(220357, {	-- Water Blaster B.L.
-					["cost"] = {{"c", TRADERS_TENDER, 330}},
-				}),
-				i(221529, {	-- Tropical Sunrise Mrgl Floater
-					["cost"] = {{"c", TRADERS_TENDER, 220}},
-				}),
-				i(221834, {	-- Tropical Sunrise Sunshade
-					["cost"] = {{"c", TRADERS_TENDER, 220}},
-				}),
-				i(221829, {	-- Tropical Sunrise Halter Top
+				i(210866, {	-- Blademaster's Suntouched Stones
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
-				}),
-				i(221525, {	-- Tropical Sunrise Shirt
-					["cost"] = {{"c", TRADERS_TENDER, 200}},
-				}),
-				i(221830, {	-- Tropical Sunrise Skirt
-					["cost"] = {{"c", TRADERS_TENDER, 150}},
-				}),
-				i(221526, {	-- Tropical Sunrise Trunks
-					["cost"] = {{"c", TRADERS_TENDER, 150}},
-				}),
-				i(221794, { -- Classic Carrot Tabard
-					["cost"] = {{"c", TRADERS_TENDER, 100}},
-				}),
-				i(190849, { -- Forgemaster's Gavel
-					["cost"] = {{"c", TRADERS_TENDER, 100}},
-				}),
-				i(210863, { -- Trader's Sunny Sarong
-					["cost"] = {{"c", TRADERS_TENDER, 100}},
-				}),
-				i(212619, { -- Dueler's Carrot Shoulder Cape
-					["cost"] = {{"c", TRADERS_TENDER, 75}},
-				}),
-				i(212614, { -- Dueler's Sunny Shoulder Cape
-					["cost"] = {{"c", TRADERS_TENDER, 75}},
 				}),
 				i(221809, { -- Churning Sands Treads
 					["cost"] = {{"c", TRADERS_TENDER, 60}},
@@ -2027,29 +1986,23 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(221810, { -- Churning Sands Gloves
 					["cost"] = {{"c", TRADERS_TENDER, 60}},
 				}),
-				i(190860, { -- Initiate's Bo
-					["cost"] = {{"c", TRADERS_TENDER, 60}},
-				}),
-				i(221831, { -- Tropical Sunrise Beads
-					["cost"] = {{"c", TRADERS_TENDER, 40}},
-				}),
-				i(221832, { -- Tropical Sunrise Airy Sandals
-					["cost"] = {{"c", TRADERS_TENDER, 40}},
-				}),
-				i(221833, { -- Tropical Sunrise Sash
-					["cost"] = {{"c", TRADERS_TENDER, 60}},
-				}),
-				i(221527, { -- Tropical Sunrise Wristwraps
-					["cost"] = {{"c", TRADERS_TENDER, 40}},
-				}),
-				i(221528, { -- Tropical Sunrise Sandals
-					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				i(221794, { -- Classic Carrot Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
 				i(190689, {	-- Corrupted Bladefist
 					["cost"] = {{"c", TRADERS_TENDER, 525}},
 				}),
-				i(210866, {	-- Blademaster's Suntouched Stones
-					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				i(212619, { -- Dueler's Carrot Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(212614, { -- Dueler's Sunny Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				iensemble(221542, {	-- Ensemble: Sunny Tropical Beachwear
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
+				}),
+				iensemble(222961, {	-- Ensemble: Sunny Tropical Swimwear
+					["cost"] = {{"c", TRADERS_TENDER, 650}},
 				}),
 				iensemble(202178, {	-- Ensemble: Vagabond's Carrot Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
@@ -2057,8 +2010,53 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				iensemble(202179, {	-- Ensemble: Wanderer's Carrot Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
+				i(190849, { -- Forgemaster's Gavel
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190860, { -- Initiate's Bo
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
 				i(190205, {	-- Sharpened Shank
 					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(210863, { -- Trader's Sunny Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(221832, { -- Tropical Sunrise Airy Sandals
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(221831, { -- Tropical Sunrise Beads
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(221829, {	-- Tropical Sunrise Halter Top
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(221529, {	-- Tropical Sunrise Mrgl Floater
+					["cost"] = {{"c", TRADERS_TENDER, 220}},
+				}),
+				i(221528, { -- Tropical Sunrise Sandals
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(221833, { -- Tropical Sunrise Sash
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(221525, {	-- Tropical Sunrise Shirt
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(221830, {	-- Tropical Sunrise Skirt
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(221834, {	-- Tropical Sunrise Sunshade
+					["cost"] = {{"c", TRADERS_TENDER, 220}},
+				}),
+				i(221526, {	-- Tropical Sunrise Trunks
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(221527, { -- Tropical Sunrise Wristwraps
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(220357, {	-- Water Blaster B.L.
+					["cost"] = {{"c", TRADERS_TENDER, 330}},
 				}),
 			}),
 		})),

@@ -64,7 +64,6 @@ root(ROOTS.Unsorted, {
 				i(220734),	-- Shocking Stormrider's Buckle
 				i(220735),	-- Shocking Stormrider's Grips
 				i(220736),	-- Shocking Stormrider's Breastplate
-				i(220737),	-- Storm Spirit
 				i(220752),	-- Frenzied Stormhammer
 				i(220753),	-- Deep Stormhammer
 				i(220755),	-- Arsenal: Stormrider's Dark Stormhammers
@@ -157,26 +156,34 @@ root(ROOTS.Unsorted, {
 				i(223259),	-- Green Diver's Wristguard
 				i(223260),	-- Dark Diver's Wristguard
 				i(223409),	-- The Coward's Violet Target
-				i(223410),	-- [PH] Dagger Red
-				i(223411),	-- [PH] Dagger Blue
-				i(223412),	-- [PH] Warglaive Red
-				i(223413),	-- [PH] Warglaive Blue
-				i(223414),	-- [PH] Axe Red
-				i(223415),	-- [PH] Axe Blue
+				i(223410),	-- Scarlet Shanker
+				i(223411),	-- Sapphire Shanker
+				i(223412),	-- Scarlet Warglaive
+				i(223413),	-- Sapphire Warglaive
+				i(223414),	-- Scarlet Axe of Asymmetry
+				i(223415),	-- Sapphire Axe of Asymmetry
 				i(223416),	-- Seaborn Blade
 				i(223417),	-- Radiant Seaborn Blade
 				i(223418),	-- Arsenal: Seaborn Blades
 				i(223419),	-- Fireborn Blade
 				i(223420),	-- Radiant Fireborn Blade
 				i(223421),	-- Arsenal: Fireborn Blades
-				i(223422),	-- [PH] Rifle Red
-				i(223423),	-- [PH] Rifle Blue
-				i(223425),	-- [PH] Wand Red
-				i(223426),	-- [PH] Wand Blue
-				i(223429),	-- [PH] Staff Red
-				i(223430),	-- [PH] Staff Blue
-				i(223433),	-- [PH] Offhand Red
-				i(223434),	-- [PH] Offhand Blue
+				i(223422),	-- Scarlet Bladed Blunderbuss
+				i(223423),	-- Sapphire Bladed Blunderbuss
+				i(223425),	-- Simple Scarlet Wand
+				i(223426),	-- Simple Sapphire Wand
+				i(223429),	-- Conjurer's Scarlet Staff
+				i(223430),	-- Conjurer's Sapphire  Staff
+				i(223433),	-- Sunreaver's Scarlet Tome
+				i(223434),	-- The Sapphire Thalassian Tome
+				i(221011),	-- Purple Snugglefin Murloc Pullover
+				i(221012),	-- Purple Snugglefin Murloc Slippers
+				i(221013),	-- Purple Snugglefin Murloc Mittens
+				i(221014),	-- Purple Snugglefin Murloc Sweatpants
+				i(221015),	-- Angry Purple Snugglefin Murloc Hood
+				i(221016),	-- Happy Purple Snugglefin Murloc Hood
+				i(221479),	-- Purple Snugglefin Murloc Backpack
+				i(223486),	-- Ensemble: Purple Snugglefin Murloc Romper
 			}),
 			filter(MISC, {
 				------ Grey ------
@@ -229,6 +236,14 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(QUEST_ITEMS, {
 				i(217349),	-- DEPRECATED - Arcane Dust
+				i(210582),	-- Jadaar's Memory Stone
+				i(210583),	-- Kuros's Memory Stone
+				i(210585),	-- Aesom's Memory Stone
+				i(210587),	-- Nemuraan's Memory Stone
+				i(210588),	-- Oman's Memory Stone
+				i(210591),	-- Tishamaat Memory Stones
+				i(221266),	-- Precious Belonging [DNT]
+				i(220737),	-- Storm Spirit
 			}),
 			n(SPECIAL, {	-- Timerunning
 				n(ARMOR, {
@@ -240,6 +255,7 @@ root(ROOTS.Unsorted, {
 						i(220970),	-- Mindbender Shirt
 						i(220971),	-- Mistwalker's Shirt
 						i(220972),	-- Shaded Wood Vest
+						i(225064),	-- Breezebinder's Shirt
 					}),
 					filter(LEATHER, {
 						------ NYI or only in Ensembles ------
@@ -258,6 +274,7 @@ root(ROOTS.Unsorted, {
 					i(224021),	-- Survivalist's Healing Potion
 					i(224022),	-- Survivalist's Mana Potion
 					i(224120),	-- Timerunner's Gem Box
+					i(226037),	-- Timeless Neural Silencer
 				}),
 				n(WEAPONS, {
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
@@ -283,28 +300,24 @@ root(ROOTS.Unsorted, {
 					i(216597),	-- Eyes of the Doomed
 				}),
 			}),
-			filter(TOYS, {
+			filter(MISC, {
+				i(210881),	-- Cunning Charm
+				i(213530),	-- Entropic Crystal
+				i(213531),	-- Nether Sands
+				i(213532),	-- Void Rune
+				i(213537),	-- Void Tendril
+				i(213540),	-- Ghostly Motes
+				i(217016),	-- Fragmented Medallion of the Darkspear
 			}),
-			i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (DM!)
-			i(224270),	-- Tattered Technique: Certificate of Ownership
-			i(224407),	-- Bonus Experience
-			i(224408),	-- Bonus Experience
-			i(210582),	-- Jadaar's Memory Stone
-			i(210583),	-- Kuros's Memory Stone
-			i(210585),	-- Aesom's Memory Stone
-			i(210587),	-- Nemuraan's Memory Stone
-			i(210588),	-- Oman's Memory Stone
-			i(210591),	-- Tishamaat Memory Stones
-			i(210881),	-- Cunning Charm
-			i(213530),	-- Entropic Crystal
-			i(213531),	-- Nether Sands
-			i(213532),	-- Void Rune
-			i(213537),	-- Void Tendril
-			i(213540),	-- Ghostly Motes
-			i(217016),	-- Fragmented Medallion of the Darkspear
-			i(219904),	-- Romuul's Controllable Shoulderplate
-			i(221266),	-- Precious Belonging [DNT]
-			i(225064),	-- Breezebinder's Shirt
+			n(ARMOR, {
+				i(219904),	-- Romuul's Controllable Shoulderplate
+			}),
+			n(PROFESSIONS, {
+				i(224270),	-- Tattered Technique: Certificate of Ownership
+			}),
+			n(DRAKEWATCHER_MANUSCRIPTS, {
+				i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (DM!)
+			}),
 		})),
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 			------ Next Check 10.2.7 ------
@@ -342,9 +355,6 @@ root(ROOTS.Unsorted, {
 				------ Unknown ------
 				i(212175),	-- Draconic Commendation
 			}),
-			filter(TOYS, {
-				i(218128),	-- Draconic Banner of the Aspects (TOY!)
-			}),
 			n(QUESTS, {
 				-- 10.2.6.53840
 				q(79248),	--
@@ -369,77 +379,19 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 			------ Next Check 10.2.7 ------
 			n(SPECIAL, {	-- Timerunning: Pandamonium [Probably 10.2.7]
-				filter(CLOTH, {
-					i(210603),	-- Passionsilk Amice
-					i(210605),	-- Passionsilk Bands
-					i(210601),	-- Passionsilk Cap
-					i(210598),	-- Passionsilk Mitts
-					i(210604),	-- Passionsilk Sash
-					i(210600),	-- Passionsilk Slippers
-					i(210602),	-- Passionsilk Trousers
-					i(210599),	-- Passionsilk Vestments
-					i(210309),	-- Scrollkeeper Belt
-					i(210312),	-- Scrollkeeper Cuffs
-					i(210258),	-- Scrollkeeper Handwraps
-					i(210297),	-- Scrollkeeper Helm
-					i(210301),	-- Scrollkeeper Pants
-					i(210259),	-- Scrollkeeper Raiment
-					i(210293),	-- Scrollkeeper Sandals
-					i(210306),	-- Scrollkeeper Shoulderpads
-					i(210284),	-- Spirit-Waker Cord
-					i(210272),	-- Spirit-Waker Crown
-					i(208493),	-- Spirit-Waker Gloves
-					i(210281),	-- Spirit-Waker Mantle
-					i(210287),	-- Spirit-Waker Wristwraps
-				}),
 				filter(FINGER_F, {
 					i(210257),	-- Bamboo Band
 					i(210256),	-- Cloud-Rider Seal
 				}),
 				filter(LEATHER, {
-					i(210315),	-- Mistveil Bindings
-					i(210299),	-- Mistveil Cover
-					i(210260),	-- Mistveil Handguards
-					i(210303),	-- Mistveil Legguards
-					i(210304),	-- Mistveil Shoulders
-					i(210295),	-- Mistveil Treads
-					i(210261),	-- Mistveil Vest
-					i(210311),	-- Mistveil Waistband
-					i(210610),	-- Spiderhide Britches
-					i(210612),	-- Spiderhide Cinch
-					i(210608),	-- Spiderhide Footpads
-					i(210606),	-- Spiderhide Grips
-					i(210609),	-- Spiderhide Helmet
-					i(210607),	-- Spiderhide Jerkin
-					i(210611),	-- Spiderhide Shoulderpads
-					i(210613),	-- Spiderhide Wristguards
-					i(210286),	-- Thunderpaw Belt
-					i(210290),	-- Thunderpaw Bracers
-					i(208492),	-- Thunderpaw Gloves
-					i(210274),	-- Thunderpaw Helm
 					i(210279),	-- Thunderpaw Spaulders
 				}),
 				filter(MAIL, {
-					i(210314),	-- Dawnwatcher's Bands
-					i(210294),	-- Dawnwatcher's Footguards
-					i(210296),	-- Dawnwatcher's Gloves
-					i(210298),	-- Dawnwatcher's Headguard
-					i(210302),	-- Dawnwatcher's Legguards
-					i(210292),	-- Dawnwatcher's Ringmail
-					i(210307),	-- Dawnwatcher's Spaulder
-					i(210310),	-- Dawnwatcher's Waistguard
 					i(210285),	-- Jade Guardian's Belt
 					i(210289),	-- Jade Guardian's Bracers
 					i(210271),	-- Jade Guardian's Gauntlets
 					i(210273),	-- Jade Guardian's Helm
 					i(210282),	-- Jade Guardian's Monnion
-					i(210615),	-- Reedstalker Boots
-					i(210614),	-- Reedstalker Chestguard
-					i(210620),	-- Reedstalker Girdle
-					i(210618),	-- Reedstalker Greaves
-					i(210616),	-- Reedstalker Grips
-					i(210617),	-- Reedstalker Headpiece
-					i(210619),	-- Reedstalker Shoulderguard
 					i(210621),	-- Reedstalker Wristguards
 				}),
 				filter(MISC, {
@@ -457,70 +409,23 @@ root(ROOTS.Unsorted, {
 					i(211344),	-- Miniaturizer
 					i(211347),	-- Scarab's Shell
 				}),
-				filter(PLATE, {
-					i(210288),	-- Greenstone Bracers
-					i(208472),	-- Greenstone Gauntlets
-					i(210283),	-- Greenstone Girdle
-					i(210266),	-- Greenstone Helm
-					i(210280),	-- Greenstone Shoulders
-					i(210308),	-- Sentinel's Belt
-					i(208471),	-- Sentinel's Chestpiece
-					i(210263),	-- Sentinel's Gloves
-					i(210291),	-- Sentinel's Helmet
-					i(210300),	-- Sentinel's Legplates
-					i(210305),	-- Sentinel's Spaulders
-					i(210313),	-- Sentinel's Vambraces
-					i(210264),	-- Sentinel's Warboots
-					i(210630),	-- Shan'ze Armplates
-					i(210622),	-- Shan'ze Chestplate
-					i(210626),	-- Shan'ze Greathelm
-					i(210627),	-- Shan'ze Greaves
-					i(210624),	-- Shan'ze Handguards
-					i(210628),	-- Shan'ze Pauldrons
-					i(210625),	-- Shan'ze Sabatons
-					i(210629),	-- Shan'ze Waistguard
-				}),
 				filter(TRINKET_F, {
 					i(208556),	-- Flicker Blossom
 				}),
 				n(WEAPONS, {
 					i(211162),	-- Klaxxi Longsword
 				}),
-				i(210906),	-- Timerunner's Amice
-				i(210913),	-- Timerunner's Armplates
 				i(210914),	-- Timerunner's Bands
-				i(210911),	-- Timerunner's Belt
-				i(210895),	-- Timerunner's Boots
-				i(210915),	-- Timerunner's Bracers
-				i(210884),	-- Timerunner's Breastplate
-				i(210903),	-- Timerunner's Breeches
 				i(210910),	-- Timerunner's Chain
 				i(208553),	-- Timerunner's Chalice
 				i(210892),	-- Timerunner's Chestguard
 				i(210525),	-- Timerunner's Cloak
 				i(210898),	-- Timerunner's Coif
-				i(210885),	-- Timerunner's Gauntlets
-				i(210908),	-- Timerunner's Girdle
-				i(210887),	-- Timerunner's Gloves
 				i(210896),	-- Timerunner's Grips
-				i(210888),	-- Timerunner's Handwraps
-				i(210899),	-- Timerunner's Helm
-				i(210897),	-- Timerunner's Hood
-				i(210901),	-- Timerunner's Leggings
 				i(210902),	-- Timerunner's Legguards
-				i(210900),	-- Timerunner's Legplates
 				i(210907),	-- Timerunner's Monnion
-				i(210905),	-- Timerunner's Pauldrons
-				i(210889),	-- Timerunner's Robe
 				i(210894),	-- Timerunner's Sabatons
-				i(210909),	-- Timerunner's Sash
-				i(210893),	-- Timerunner's Slippers
-				i(210904),	-- Timerunner's Spaulders
 				i(211388),	-- Timerunner's Starter Kit
-				i(210890),	-- Timerunner's Tunic
-				i(210886),	-- Timerunner's Warboots
-				i(210891),	-- Timerunner's Warhelm
-				i(210912),	-- Timerunner's Wristwraps
 				i(210528),	-- Timerunning Belt
 				i(210529),	-- Timerunning Boots
 				i(210527),	-- Timerunning Bracers

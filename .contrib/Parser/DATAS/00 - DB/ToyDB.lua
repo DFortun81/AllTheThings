@@ -1302,7 +1302,6 @@ i(208087);	-- Unknown
 -- PATCH 10.2.5 --
 ------------------
 i(210975);	-- Date Simulation Modulator
-i(212524);	-- Delicate Crimson Parasol
 i(212523);	-- Delicate Jade Parasol
 i(190196);	-- Enlightened Hearthstone
 i(211864);	-- Exquisite Love Boat
@@ -1320,7 +1319,6 @@ i(212525);	-- Delicate Ebony Parasol
 -- PATCH 10.2.6 --
 ------------------
 i(212500);	-- Delicate Silk Parasol
-i(218128);	-- Draconic Banner of the Aspects
 i(211869);	-- Draconic Legend's Pennant
 i(216881);	-- Duck Disguiser
 i(170197);	-- Swarthy Warning Sign
@@ -1330,6 +1328,8 @@ i(170197);	-- Swarthy Warning Sign
 ------------------
 i(220777);	-- Cherry Blossom Trail
 i(218112);	-- Colorful Beach Chair
+i(212524);	-- Delicate Crimson Parasol
+i(218128);	-- Draconic Banner of the Aspects
 i(210455);	-- Draenic Hologem
 i(217725);	-- Essence of Yu'lon
 i(217726);	-- Fortitude of Niuzao

@@ -16683,41 +16683,41 @@ i(65731),	-- choke Hearts \\ Yetichoke Hearts
 i(65732),	-- icious Badges \\ Suspicious Badges
 i(65734),	-- ight Documents \\ Twilight Documents
 i(65745),	-- ial Sandals \\ Martial Sandals
-i(65747),	-- 
-i(65748),	-- 
-i(65749),	-- 
-i(65750),	-- 
-i(65751),	-- 
-i(65752),	-- 
-i(65753),	-- 
-i(65754),	-- 
-i(65755),	-- 
-i(65756),	-- 
-i(65757),	-- 
-i(65758),	-- 
-i(65759),	-- 
-i(65760),	-- 
-i(65761),	-- 
-i(65762),	-- 
-i(65763),	-- 
-i(65764),	-- 
-i(65765),	-- 
-i(65766),	-- 
-i(65767),	-- 
-i(65768),	-- 
-i(65769),	-- 
-i(65770),	-- 
-i(65771),	-- 
-i(65772),	-- 
-i(65777),	-- 
-i(65778),	-- 
-i(65779),	-- 
-i(65780),	-- 
-i(65781),	-- 
-i(65782),	-- 
-i(65783),	-- 
-i(65784),	-- 
-i(65785),	-- 
+i(65747),	--
+i(65748),	--
+i(65749),	--
+i(65750),	--
+i(65751),	--
+i(65752),	--
+i(65753),	--
+i(65754),	--
+i(65755),	--
+i(65756),	--
+i(65757),	--
+i(65758),	--
+i(65759),	--
+i(65760),	--
+i(65761),	--
+i(65762),	--
+i(65763),	--
+i(65764),	--
+i(65765),	--
+i(65766),	--
+i(65767),	--
+i(65768),	--
+i(65769),	--
+i(65770),	--
+i(65771),	--
+i(65772),	--
+i(65777),	--
+i(65778),	--
+i(65779),	--
+i(65780),	--
+i(65781),	--
+i(65782),	--
+i(65783),	--
+i(65784),	--
+i(65785),	--
 i(65803),	-- ison's Insignia of Panache \\ Harrison's Insignia of Panache
 i(65804),	-- sman of Sinister Order \\ Talisman of Sinister Order
 i(65805),	-- ottz's Medallion of Command \\ Schnottz's Medallion of Command
@@ -20499,7 +20499,7 @@ i(74847),	-- Jade Squash \\ Squash
 i(74848),	-- Striped Melon \\ ped Melon
 i(74849),	-- Pink Turnip \\ Turnip
 i(74850),	-- White Turnip \\ e Turnip
-i(74851),	-- Rice \\ 
+i(74851),	-- Rice \\
 i(74852),	-- Yak Milk \\ Milk
 i(74853),	-- 100 Year Soy Sauce \\ Year Soy Sauce
 i(74854),	-- Instant Noodles \\ ant Noodles
@@ -23658,11 +23658,11 @@ i(114243),	-- Abu'Gar's Finest Reel \\ Gar's Finest Reel
 i(114244),	-- GG-117 Micro-Jetpack \\ 17 Micro-Jetpack
 i(114245),	-- Abu'Gar's Favorite Lure \\ Gar's Favorite Lure
 i(114246),	-- "Skyterror" Personal Delivery System \\ terror" Personal Delivery System
-i(114279),	-- Ring \\ 
-i(114280),	-- Ring \\ 
-i(114281),	-- Ring \\ 
-i(114282),	-- Ring \\ 
-i(114283),	-- Ring \\ 
+i(114279),	-- Ring \\
+i(114280),	-- Ring \\
+i(114281),	-- Ring \\
+i(114282),	-- Ring \\
+i(114283),	-- Ring \\
 i(114285),	-- Fangtooth Ring \\ tooth Ring
 i(114286),	-- Melting Pureice Band \\ ing Pureice Band
 i(114287),	-- Ivy Bloodring \\ Bloodring
@@ -23678,11 +23678,11 @@ i(114304),	-- Spectral Ghost of Insight \\ tral Ghost of Insight
 i(114305),	-- Spectral Whisper of Healing \\ tral Whisper of Healing
 i(114306),	-- Spectral Claw of Might \\ tral Claw of Might
 i(114307),	-- Spectral Miasma of Fortitude \\ tral Miasma of Fortitude
-i(114342),	-- Ring \\ 
-i(114343),	-- Ring \\ 
-i(114344),	-- Ring \\ 
-i(114345),	-- Ring \\ 
-i(114346),	-- Ring \\ 
+i(114342),	-- Ring \\
+i(114343),	-- Ring \\
+i(114344),	-- Ring \\
+i(114345),	-- Ring \\
+i(114346),	-- Ring \\
 i(114348),	-- Arrow-Kissed Loop \\ w-Kissed Loop
 i(114349),	-- Shadowflame Seal \\ owflame Seal
 i(114350),	-- Transluminescent Band \\ sluminescent Band
@@ -23693,36 +23693,36 @@ i(114355),	-- Locket of Crackling Lightning \\ et of Crackling Lightning
 i(114356),	-- Sea Foam Pendant \\ Foam Pendant
 i(114357),	-- Scytheblade Choker \\ heblade Choker
 i(114358),	-- Choker of Binding Steel \\ er of Binding Steel
-i(114403),	-- Ring \\ 
-i(114404),	-- Ring \\ 
-i(114405),	-- Ring \\ 
-i(114406),	-- Ring \\ 
-i(114407),	-- Ring \\ 
+i(114403),	-- Ring \\
+i(114404),	-- Ring \\
+i(114405),	-- Ring \\
+i(114406),	-- Ring \\
+i(114407),	-- Ring \\
 i(114409),	-- Poisoner's Ring \\ oner's Ring
 i(114410),	-- Loop of Frozen Leaves \\ of Frozen Leaves
 i(114411),	-- Windfire Band \\ fire Band
 i(114412),	-- Valiant Soldier's Signet \\ ant Soldier's Signet
 i(114413),	-- Doomed Guardian's Band \\ ed Guardian's Band
-i(114464),	-- Ring \\ 
-i(114465),	-- Ring \\ 
-i(114466),	-- Ring \\ 
-i(114467),	-- Ring \\ 
-i(114468),	-- Ring \\ 
+i(114464),	-- Ring \\
+i(114465),	-- Ring \\
+i(114466),	-- Ring \\
+i(114467),	-- Ring \\
+i(114468),	-- Ring \\
 i(114470),	-- Stealthy Hunter's Band \\ lthy Hunter's Band
 i(114471),	-- Mindstalker Seal \\ stalker Seal
 i(114472),	-- Loop of Soothing Visions \\ of Soothing Visions
 i(114473),	-- Calcified Finger of Dread \\ ified Finger of Dread
 i(114474),	-- Unbowed Signet \\ wed Signet
-i(114525),	-- Ring \\ 
-i(114526),	-- Ring \\ 
-i(114527),	-- Ring \\ 
-i(114528),	-- Ring \\ 
-i(114529),	-- Ring \\ 
-i(114586),	-- RING \\ 
-i(114587),	-- Ring \\ 
-i(114588),	-- RING \\ 
-i(114589),	-- RING \\ 
-i(114590),	-- RING \\ 
+i(114525),	-- Ring \\
+i(114526),	-- Ring \\
+i(114527),	-- Ring \\
+i(114528),	-- Ring \\
+i(114529),	-- Ring \\
+i(114586),	-- RING \\
+i(114587),	-- Ring \\
+i(114588),	-- RING \\
+i(114589),	-- RING \\
+i(114590),	-- RING \\
 i(114610),	-- Formidable Jar of Doom \\ idable Jar of Doom
 i(114611),	-- Formidable Orb of Putrescence \\ idable Orb of Putrescence
 i(114612),	-- Formidable Censer of Faith \\ idable Censer of Faith
@@ -23905,7 +23905,7 @@ i(115978),	-- Enchant Weapon - Glory of the Frostwolf \\ ant Weapon - Glory of t
 i(116020),	-- An Old Key \\ ld Key
 i(116024),	-- Holy Tome \\ Tome
 i(116054),	-- Garden \\ en
-i(116055),	-- Mine \\ 
+i(116055),	-- Mine \\
 i(116063),	-- Prestige Card: The Turn \\ tige Card: The Turn
 i(116068),	-- Ring of Promises \\ of Promises
 i(116069),	-- Misappropriated Draenic Texts \\ ppropriated Draenic Texts
@@ -24421,7 +24421,7 @@ i(120180),	-- Ogre Cage Key \\ Cage Key
 i(120181),	-- Giants' Stash of Weapons \\ ts' Stash of Weapons
 i(120183),	-- Excess Potion of Accumulated Power \\ ss Potion of Accumulated Power
 i(120204),	-- Forged Weapons and Armor \\ ed Weapons and Armor
-i(120205),	-- XP \\ 
+i(120205),	-- XP \\
 i(120263),	-- Unstable Ensorcelled Tarot \\ able Ensorcelled Tarot
 i(120264),	-- Unstable Greater Ensorcelled Tarot \\ able Greater Ensorcelled Tarot
 i(120269),	-- Autographed Portrait of Jaina Proudmoore \\ graphed Portrait of Jaina Proudmoore
@@ -25375,7 +25375,7 @@ i(130246),	-- Saber's Eye of Strength \\ r's Eye of Strength
 i(130247),	-- Saber's Eye of Agility \\ r's Eye of Agility
 i(130248),	-- Saber's Eye of Intellect \\ r's Eye of Intellect
 i(130250),	-- Jeweled Lockpick \\ led Lockpick
-i(130252),	-- Hack \\ 
+i(130252),	-- Hack \\
 i(130253),	-- Slash \\ h
 i(130255),	-- Latara's Bow \\ ra's Bow
 i(130257),	-- Pocket Friend \\ et Friend
@@ -25705,7 +25705,7 @@ i(133583),	-- Warmongering Gladiator's Runeaxe \\ ongering Gladiator's Runeaxe
 i(133586),	-- Illidari Waterskin \\ dari Waterskin
 i(133587),	-- Broken Eye Protectors \\ en Eye Protectors
 i(133588),	-- Flaked Sea Salt \\ ed Sea Salt
-i(133589),	-- Dalape�o Pepper \\ Dalapeño Pepper \\ Dalape�o Pepper \\ pe�o Pepper
+i(133589),	-- Dalape�o Pepper \\ Dalapeño Pepper \\ Dalape�o Pepper \\ pe�o Pepper
 i(133590),	-- Muskenbutter \\ enbutter
 i(133591),	-- River Onion \\ r Onion
 i(133592),	-- Stonedark Snail \\ edark Snail
@@ -26261,7 +26261,7 @@ i(137597),	-- Oily Transmutagen \\ Transmutagen
 i(137598),	-- Pearl of Arcane Wisdom \\ l of Arcane Wisdom
 i(137601),	-- Stack of Letters \\ k of Letters
 i(137604),	-- Unstable Riftstone \\ able Riftstone
-i(137609),	-- Wood \\ 
+i(137609),	-- Wood \\
 i(137610),	-- Intact Greatstag Antler \\ ct Greatstag Antler
 i(137611),	-- Pristine Eagle Tailfeather \\ tine Eagle Tailfeather
 i(137612),	-- Raw Meat \\ Meat
@@ -26449,7 +26449,7 @@ i(138814),	-- Adventurer's Renown \\ nturer's Renown
 i(138815),	-- Old Grizzleback's Staff \\ Grizzleback's Staff
 i(138816),	-- Adventurer's Glory \\ nturer's Glory
 i(138817),	-- Demonic Runestone \\ nic Runestone
-i(138826),	-- ???? \\ 
+i(138826),	-- ???? \\
 i(138830),	-- Demonic Logbook on Uthalesh \\ nic Logbook on Uthalesh
 i(138839),	-- Valiant's Glory \\ ant's Glory
 i(138849),	-- Demonic Logbook on Thal'kiel \\ nic Logbook on Thal'kiel
@@ -27122,7 +27122,7 @@ i(140629),	-- Bottled Maelstrom \\ led Maelstrom
 i(140631),	-- Nightpear \\ tpear
 i(140635),	-- Notable Antiquities of Ancient Azeroth \\ ble Antiquities of Ancient Azeroth
 i(140654),	-- Pestilential Hide of Nythendra \\ ilential Hide of Nythendra
-i(140655),	-- Log \\ 
+i(140655),	-- Log \\
 i(140668),	-- Meaty Racks of Musken Ribs \\ y Racks of Musken Ribs
 i(140670),	-- Souvenir Elekk \\ enir Elekk
 i(140671),	-- Souvenir Raptor \\ enir Raptor
@@ -28192,7 +28192,7 @@ i(147563),	-- Stone Totem \\ e Totem
 i(147564),	-- Diamond Stone \\ ond Stone
 i(147565),	-- Book of Lost Sermons \\ of Lost Sermons
 i(147566),	-- Horn of Valor \\ of Valor
-i(147567),	-- Soothing Focus \\ 
+i(147567),	-- Soothing Focus \\
 i(147568),	-- Essence of Nether \\ nce of Nether
 i(147569),	-- Arcane Trap \\ ne Trap
 i(147570),	-- Dreamgrove Leaf \\ mgrove Leaf
@@ -32331,39 +32331,6 @@ i(178012),	-- Spoiled Contaminant \\ TR: Versatile III - 20 Corruption \\ Preser
 i(178013),	-- Spoiled Contaminant \\ TR: Void Ritual I - 15 Corruption \\ Preserved Contaminant: Void Ritual
 i(178014),	-- Spoiled Contaminant \\ TR: Void Ritual II - 35 Corruption \\ Preserved Contaminant: Void Ritual
 i(178015),	-- Spoiled Contaminant \\ TR: Void Ritual III - 66 Corruption \\ Preserved Contaminant: Void Ritual
-9.0.1.34972
-i(178264),	-- Sinful Aspirant's Plate Headguard \\ Unrated - Plate Helm
-i(178266),	-- Sinful Aspirant's Silk Gown \\ Unrated - Cloth Robe
-i(178267),	-- Sinful Aspirant's Plate Armor \\ Unrated - Plate Chestplate
-i(178268),	-- Sinful Aspirant's Chain Tunic \\ Unrated - Mail Vest
-i(178269),	-- Sinful Aspirant's Leather Tunic \\ Unrated - Leather Vest
-i(178270),	-- Sinful Aspirant's Plate Stompers \\ Unrated - Plate Warboots
-i(178271),	-- Sinful Aspirant's Silk Footwraps \\ Unrated - Cloth Treads
-i(178272),	-- Sinful Aspirant's Chain Stompers \\ Unrated - Mail Sabatons
-i(178273),	-- Sinful Aspirant's Leather Footpads \\ Unrated - Leather Boots
-i(178274),	-- Sinful Aspirant's Leather Grips \\ Unrated - Leather Gloves
-i(178275),	-- Sinful Aspirant's Plate Handguards \\ Unrated - Plate Gauntlets
-i(178276),	-- Sinful Aspirant's Silk Handwraps \\ Unrated - Cloth Gloves
-i(178277),	-- Sinful Aspirant's Chain Handguards \\ Unrated - Mail Gauntlets
-i(178278),	-- Sinful Aspirant's Silk Cover \\ Unrated - Cloth Hood
-i(178279),	-- Sinful Aspirant's Chain Headguard \\ Unrated - Mail Helm
-i(178280),	-- Sinful Aspirant's Leather Mask \\ Unrated - Leather Helm
-i(178281),	-- Sinful Aspirant's Plate Wargreaves \\ Unrated - Plate Legguards
-i(178282),	-- Sinful Aspirant's Silk Legwraps \\ Unrated - Cloth Leggings
-i(178283),	-- Sinful Aspirant's Chain Wargreaves \\ Unrated - Mail Leggings
-i(178284),	-- Sinful Aspirant's Leather Leggings \\ Unrated - Leather Breeches
-i(178285),	-- Sinful Aspirant's Leather Mantle \\ Unrated - Leather Spaulders
-i(178286),	-- Sinful Aspirant's Plate Pauldrons \\ Unrated - Plate Shoulders
-i(178287),	-- Sinful Aspirant's Silk Shawl \\ Unrated - Cloth Mantle
-i(178288),	-- Sinful Aspirant's Chain Shoulderguards \\ Unrated - Mail Monnion
-i(178289),	-- Sinful Aspirant's Plate Greatbelt \\ Unrated - Plate Girdle
-i(178290),	-- Sinful Aspirant's Silk Belt \\ Unrated - Cloth Cord
-i(178291),	-- Sinful Aspirant's Chain Clasp \\ Unrated - Mail Belt
-i(178292),	-- Sinful Aspirant's Leather Cord \\ Unrated - Leather Belt
-i(178294),	-- Sinful Aspirant's Silk Bindings \\ Unrated - Cloth Wristwraps
-i(178295),	-- Sinful Aspirant's Plate Armguards \\ Unrated - Plate Wristwraps
-i(178296),	-- Sinful Aspirant's Chain Bracer \\ Unrated - Mail Wristwraps
-i(178297),	-- Sinful Aspirant's Leather Armguards \\ Unrated - Leather Wristwraps
 9.2.0.41089
 i(188179),	-- Vest of the First Rogue
 i(188180),	-- Cloak of the First Rogue
@@ -32377,277 +32344,6 @@ i(188187),	-- Quickfinger Pocketlifters
 i(188188),	-- Worldbinder Tricorne
 i(188189),	-- Shadowwrap Leggings
 i(188190),	-- Shoulderpads of the Primordial
-10.2.7.54171
-i(214011),	-- Shado-Pan Tunic
-i(214012),	-- Shado-Pan Footwraps
-i(214013),	-- Shado-Pan Handwraps
-i(214014),	-- Shado-Pan Hat
-i(214015),	-- Shado-Pan Pants
-i(214016),	-- Shado-Pan Shoulderguards
-i(214017),	-- Shado-Pan Sash
-i(214018),	-- Shado-Pan Bracers
-i(214019),	-- Shado-Pan Armbands
-i(214020),	-- Shado-Pan Belt
-i(214021),	-- Shado-Pan Mantle
-i(214022),	-- Shado-Pan Trousers
-i(214023),	-- Shado-Pan Headguard
-i(214024),	-- Shado-Pan Gloves
-i(214025),	-- Shado-Pan Sandals
-i(214026),	-- Shado-Pan Jerkin
-i(214124),	-- Tian Monastery Bracers
-i(214125),	-- Tian Monastery Tunic
-i(214126),	-- Tian Monastery Boots
-i(214127),	-- Tian Monastery Gloves
-i(214128),	-- Tian Monastery Belt
-i(214129),	-- Tian Monastery Leggings
-i(214130),	-- Tian Monastery Legguards
-i(214131),	-- Tian Monastery Waistband
-i(214132),	-- Tian Monastery Grips
-i(214133),	-- Tian Monastery Footguards
-i(214134),	-- Tian Monastery Vest
-i(214135),	-- Tian Monastery Bindings
-i(214136),	-- Tian Monastery Wraps
-i(214137),	-- Tian Monastery Jerkin
-i(214138),	-- Tian Monastery Treads
-i(214139),	-- Tian Monastery Handguards
-i(214140),	-- Tian Monastery Cinch
-i(214141),	-- Tian Monastery Pants
-i(214377),	-- Mantle of the Barbed Assassin
-i(214427),	-- Kor'kron Binder's Leggings
-i(214428),	-- Kor'kron Binder's Spaulders
-i(214429),	-- Kor'kron Binder's Belt
-i(214430),	-- Kor'kron Binder's Gauntlets
-i(214431),	-- Kor'kron Binder's Helm
-i(214432),	-- Kor'kron Binder's Boots
-i(214433),	-- Kor'kron Binder's Hauberk
-i(214434),	-- Kor'kron Binder's Bracers
-i(214437),	-- Armbands of Twisted Elements
-i(214438),	-- Chestguard of Twisted Elements
-i(214439),	-- Sabatons of Twisted Elements
-i(214440),	-- Headguard of Twisted Elements
-i(214441),	-- Gloves of Twisted Elements
-i(214442),	-- Chain of Twisted Elements
-i(214443),	-- Pauldrons of Twisted Elements
-i(214444),	-- Legguards of Twisted Elements
-i(214445),	-- Dark Shaman Legwraps
-i(214446),	-- Dark Shaman Mantle
-i(214447),	-- Dark Shaman Girdle
-i(214448),	-- Dark Shaman Grips
-i(214449),	-- Dark Shaman Helmet
-i(214450),	-- Dark Shaman Footguards
-i(214451),	-- Dark Shaman Vest
-i(214452),	-- Dark Shaman Wristguards
-i(214535),	-- Sun Pearl Legguards
-i(214536),	-- Sun Pearl Chain
-i(214537),	-- Sun Pearl Gloves
-i(214538),	-- Sun Pearl Sabatons
-i(214539),	-- Sun Pearl Chestguard
-i(214540),	-- Sun Pearl Armbands
-i(214541),	-- Sun Pearl Wristguards
-i(214542),	-- Sun Pearl Breastplate
-i(214543),	-- Sun Pearl Footguards
-i(214544),	-- Sun Pearl Grips
-i(214545),	-- Sun Pearl Girdle
-i(214546),	-- Sun Pearl Legwraps
-i(214547),	-- Sun Pearl Leggings
-i(214548),	-- Sun Pearl Belt
-i(214549),	-- Sun Pearl Gauntlets
-i(214550),	-- Sun Pearl Boots
-i(214551),	-- Sun Pearl Hauberk
-i(214552),	-- Sun Pearl Bracers
-i(214985),	-- Warboots of Resounding Rings
-i(214986),	-- Vambraces of Resounding Rings
-i(214987),	-- Legplates of Resounding Rings
-i(214988),	-- Greathelm of Resounding Rings
-i(214989),	-- Battleplate of Resounding Rings
-i(214990),	-- Gauntlets of Resounding Rings
-i(214991),	-- Spaulders of Resounding Rings
-i(214992),	-- Greatbelt of Resounding Rings
-i(215073),	-- Nightsky Robe
-i(215075),	-- Nightsky Gloves
-i(215076),	-- Nightsky Leggings
-i(215077),	-- Nightsky Slippers
-i(215078),	-- Nightsky Belt
-i(215079),	-- Nightsky Bands
-i(215080),	-- Bands of Wisdom
-i(215081),	-- Belt of Wisdom
-i(215082),	-- Slippers of Wisdom
-i(215083),	-- Leggings of Wisdom
-i(215084),	-- Gloves of Wisdom
-i(215086),	-- Robe of Wisdom
-i(215087),	-- Serene Bands
-i(215088),	-- Serene Belt
-i(215089),	-- Serene Slippers
-i(215090),	-- Serene Leggings
-i(215091),	-- Serene Gloves
-i(215093),	-- Serene Robe
-i(215094),	-- Belt of Precarious Balance
-i(215095),	-- Slippers of Precarious Balance
-i(215096),	-- Leggings of Precarious Balance
-i(215097),	-- Robe of Precarious Balance
-i(215098),	-- Robe of Hushed Wisdom
-i(215099),	-- Leggings of Hushed Wisdom
-i(215100),	-- Slippers of Hushed Wisdom
-i(215101),	-- Belt of Hushed Wisdom
-i(215102),	-- Robe of Quiet Reflection
-i(215103),	-- Leggings of Quiet Reflection
-i(215104),	-- Slippers of Quiet Reflection
-i(215105),	-- Belt of Quiet Reflection
-i(215106),	-- Robe of Humbling Gravity
-i(215107),	-- Leggings of Humbling Gravity
-i(215108),	-- Slippers of Humbling Gravity
-i(215109),	-- Belt of Humbling Gravity
-i(215189),	-- Ensemble: Regalia of the Burning Scroll
-i(215190),	-- Ensemble: Regalia of the Burning Scroll
-i(215191),	-- Ensemble: Regalia of the Burning Scroll
-i(215192),	-- Ensemble: Regalia of the Chromatic Hydra
-i(215193),	-- Ensemble: Regalia of the Chromatic Hydra
-i(215194),	-- Ensemble: Regalia of the Chromatic Hydra
-i(215195),	-- Ensemble: Chronomancer Regalia
-i(215196),	-- Ensemble: Chronomancer Regalia
-i(215197),	-- Ensemble: Chronomancer Regalia
-i(215198),	-- Ensemble: Guardian Serpent Regalia
-i(215199),	-- Ensemble: Guardian Serpent Regalia
-i(215200),	-- Ensemble: Guardian Serpent Regalia
-i(215201),	-- Ensemble: Regalia of the Exorcist
-i(215202),	-- Ensemble: Regalia of the Exorcist
-i(215203),	-- Ensemble: Regalia of the Exorcist
-i(215204),	-- Ensemble: Regalia of Ternion Glory
-i(215205),	-- Ensemble: Regalia of Ternion Glory
-i(215206),	-- Ensemble: Regalia of Ternion Glory
-i(215207),	-- Ensemble: Sha Skin Regalia
-i(215208),	-- Ensemble: Sha Skin Regalia
-i(215209),	-- Ensemble: Sha Skin Regalia
-i(215210),	-- Ensemble: Regalia of the Thousandfold Hells
-i(215211),	-- Ensemble: Regalia of the Thousandfold Hells
-i(215212),	-- Ensemble: Regalia of the Thousandfold Hells
-i(215213),	-- Ensemble: Regalia of the Horned Nightmare
-i(215214),	-- Ensemble: Regalia of the Horned Nightmare
-i(215215),	-- Ensemble: Regalia of the Horned Nightmare
-i(215241),	-- Ensemble: Vestments of the Eternal Blossom
-i(215242),	-- Ensemble: Vestments of the Eternal Blossom
-i(215243),	-- Ensemble: Vestments of the Eternal Blossom
-i(215244),	-- Ensemble: Vestments of the Haunted Forest
-i(215245),	-- Ensemble: Vestments of the Haunted Forest
-i(215246),	-- Ensemble: Vestments of the Haunted Forest
-i(215247),	-- Ensemble: Vestments of the Shattered Vale
-i(215248),	-- Ensemble: Vestments of the Shattered Vale
-i(215249),	-- Ensemble: Vestments of the Shattered Vale
-i(215250),	-- Ensemble: Vestments of the Red Crane
-i(215251),	-- Ensemble: Vestments of the Red Crane
-i(215252),	-- Ensemble: Vestments of the Red Crane
-i(215253),	-- Ensemble: Fire-Charm Vestments
-i(215254),	-- Ensemble: Fire-Charm Vestments
-i(215255),	-- Ensemble: Fire-Charm Vestments
-i(215256),	-- Ensemble: Vestments of the Seven Sacred Seals
-i(215258),	-- Ensemble: Vestments of the Seven Sacred Seals
-i(215259),	-- Ensemble: Vestments of the Seven Sacred Seals
-i(215260),	-- Ensemble: Battlegear of the Thousandfold Blades
-i(215261),	-- Ensemble: Battlegear of the Thousandfold Blades
-i(215262),	-- Ensemble: Battlegear of the Thousandfold Blades
-i(215263),	-- Ensemble: Nine-Tail Battlegear
-i(215264),	-- Ensemble: Nine-Tail Battlegear
-i(215265),	-- Ensemble: Nine-Tail Battlegear
-i(215266),	-- Ensemble: Barbed Assassin Battlegear
-i(215267),	-- Ensemble: Barbed Assassin Battlegear
-i(215268),	-- Ensemble: Barbed Assassin Battlegear
-i(215288),	-- Ensemble: Yaungol Slayer Battlegear
-i(215289),	-- Ensemble: Yaungol Slayer Battlegear
-i(215290),	-- Ensemble: Yaungol Slayer Battlegear
-i(215291),	-- Ensemble: Battlegear of the Saurok Stalker
-i(215292),	-- Ensemble: Battlegear of the Saurok Stalker
-i(215293),	-- Ensemble: Battlegear of the Saurok Stalker
-i(215294),	-- Ensemble: Battlegear of the Unblinking Vigil
-i(215295),	-- Ensemble: Battlegear of the Unblinking Vigil
-i(215296),	-- Ensemble: Battlegear of the Unblinking Vigil
-i(215297),	-- Ensemble: Regalia of the Firebird
-i(215298),	-- Ensemble: Regalia of the Firebird
-i(215299),	-- Ensemble: Regalia of the Firebird
-i(215300),	-- Ensemble: Regalia of the Witch Doctor
-i(215301),	-- Ensemble: Regalia of the Witch Doctor
-i(215302),	-- Ensemble: Regalia of the Witch Doctor
-i(215303),	-- Ensemble: Regalia of Celestial Harmony
-i(215304),	-- Ensemble: Regalia of Celestial Harmony
-i(215305),	-- Ensemble: Regalia of Celestial Harmony
-i(215320),	-- Ensemble: Plate of the Lost Catacomb
-i(215321),	-- Ensemble: Plate of the Lost Catacomb
-i(215322),	-- Ensemble: Plate of the Lost Catacomb
-i(215323),	-- Ensemble: Battleplate of the All-Consuming Maw
-i(215324),	-- Ensemble: Battleplate of the All-Consuming Maw
-i(215325),	-- Ensemble: Battleplate of the All-Consuming Maw
-i(215326),	-- Ensemble: Battleplate of Cyclopean Dread
-i(215327),	-- Ensemble: Battleplate of Cyclopean Dread
-i(215328),	-- Ensemble: Battleplate of Cyclopean Dread
-i(215329),	-- Ensemble: White Tiger Battlegear
-i(215330),	-- Ensemble: White Tiger Battlegear
-i(215331),	-- Ensemble: White Tiger Battlegear
-i(215332),	-- Ensemble: Battlegear of the Lightning Emperor
-i(215333),	-- Ensemble: Battlegear of the Lightning Emperor
-i(215334),	-- Ensemble: Battlegear of the Lightning Emperor
-i(215335),	-- Ensemble: Vestments of Winged Triumph
-i(215336),	-- Ensemble: Vestments of Winged Triumph
-i(215337),	-- Ensemble: Vestments of Winged Triumph
-i(215338),	-- Ensemble: Battleplate of Resounding Rings
-i(215339),	-- Ensemble: Battleplate of Resounding Rings
-i(215340),	-- Ensemble: Battleplate of Resounding Rings
-i(215341),	-- Ensemble: Battleplate of Resounding Rings
-i(215342),	-- Ensemble: Battleplate of the Last Mogu
-i(215343),	-- Ensemble: Battleplate of the Last Mogu
-i(215344),	-- Ensemble: Battleplate of the Last Mogu
-i(215345),	-- Ensemble: Battleplate of the Prehistoric Marauder
-i(215346),	-- Ensemble: Battleplate of the Prehistoric Marauder
-i(215347),	-- Ensemble: Battleplate of the Prehistoric Marauder
-i(220966),	-- Shirt of the Chronomancer
-i(220973),	-- Chronomancer Shirt
-i(220974),	-- Chronomancer Vest
-i(220975),	-- Sha-Skin Shirt
-i(220976),	-- Shirt of the Thousandfold Hells
-i(220977),	-- Vest of the Thousandfold Hells
-i(220978),	-- Shirt of the Horned Nightmare
-i(220979),	-- Amaranthine Shirt
-i(220980),	-- Vest of the Dynast
-i(220981),	-- Eternal Blossom Tunic
-i(220982),	-- Vest of the Haunted Forest
-i(220983),	-- Vest of the Haunted Forest
-i(220984),	-- Tunic of the Shattered Vale
-i(220986),	-- Vest of the Shattered Vale
-i(220987),	-- Fire-Charm Tunic
-i(220988),	-- Fire-Charm Vestments
-i(220989),	-- Fire-Charm Jacket
-i(220990),	-- Firebird's Shirt
-i(220991),	-- Firebird's Cuirass
-i(220992),	-- Shirt of the Witch Doctor
-i(220993),	-- Tunic of the Witch Doctor
-i(220994),	-- Chainmail of the Witch Doctor
-i(220995),	-- Shirt of Precarious Balance
-i(220996),	-- Shirt of Hushed Wisdom
-i(220997),	-- Shirt of Quiet Reflection
-i(220998),	-- Shirt of Humbling Gravity
-i(221535),	-- Sunny Tropical Shirt \\ Yellow Tropical Shirt
-i(221536),	-- Sunny Tropical Trunks \\ Yellow Tropical Trunks
-i(221537),	-- Sunny Tropical Wristwraps \\ Yellow Tropical Wristwraps
-i(221538),	-- Sunny Tropical Sandals \\ Yellow Tropical Sandals
-i(221539),	-- Sunny Tropical Mrgl Floater \\ Yellow Tropical Floater
-i(221841),	-- Sunny Tropical Halter Top \\ Yellow Tropical Halter Top
-i(221842),	-- Sunny Tropical Skirt \\ Yellow Tropical Skirt
-i(221843),	-- Sunny Tropical Beads \\ Yellow Tropical Beads
-i(221844),	-- Sunny Tropical Airy Sandals \\ Yellow Tropical Airy Sandals
-i(221845),	-- Sunny Tropical Sash \\ Yellow Tropical Sash
-i(221846),	-- Sunny Tropical Sunshade \\ Yellow Tropical Sunshade
-i(223002),	-- Blazing Felfire Splitblade
-i(223003),	-- Blazing Felfire Bulwark
-10.2.7.54366
-i(224459),	-- Tusks of Mannoroth
-10.2.7.54847
-i(221011),	-- Purple Snugglefin Murloc Pullover
-i(221012),	-- Purple Snugglefin Murloc Slippers
-i(221013),	-- Purple Snugglefin Murloc Mittens
-i(221014),	-- Purple Snugglefin Murloc Sweatpants
-i(221015),	-- Angry Purple Snugglefin Murloc Hood
-i(221016),	-- Happy Purple Snugglefin Murloc Hood
-i(221479),	-- Purple Snugglefin Murloc Backpack
-i(223486),	-- Ensemble: Purple Snugglefin Murloc Romper
-i(226037),	-- Timeless Neural Silencer
 11.0.0.54311
 i(206134),	-- Potion of Healing
 i(206211),	-- Onyx Annulet
