@@ -5852,7 +5852,6 @@ root(ROOTS.Unsorted, {
 					i(216456),	-- Pandaren Staff
 					i(216457),	-- Pandaren Standard
 					i(216478),	-- Pandaren Flamberge
-					i(216553),	-- Norushen's Tower Shield
 					i(216597),	-- Eyes of the Doomed
 				}),
 			}),
