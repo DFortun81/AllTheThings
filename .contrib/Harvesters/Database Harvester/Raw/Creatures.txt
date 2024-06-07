@@ -21804,3 +21804,26 @@
 227762@@@Kirin Tor Portal Mage
 227766@@@Kirin Tor Portal Mage
 227776@@@Kordac Invisible Stalker
+11.0.0.55000
+204340@@@Soot-stanined Shalewing
+215113@@@Orweyna
+218859@@@Sky-Captain Elaena Lancekat
+220951@@@Hannan
+220952@@@On'hiea
+220954@@@Ney'leia
+220955@@@Kai'shae
+223533@@@Custodian Khubon
+224822@@@Kaheti Skirmisher
+227725@@@Beetle of Burden
+227792@@@Kordac Invisible Stalker
+227869@@@Sound Stalker - 11.0 Scenario - Theater Troupe - Stampede
+227876@@@Supervisor Radlock
+227882@@@Convoy Driver
+227883@@@Convoy Guard
+227897@@@Webbed
+227963@@@Ney'leia
+227964@@@Kai'shae
+227965@@@On'hiea
+227971@@@Zev'kall
+227977@@@Oathsworn Peacekeeper
+228001@@@Nipper

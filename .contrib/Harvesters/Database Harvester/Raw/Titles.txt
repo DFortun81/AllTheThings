@@ -740,3 +740,15 @@
 565@@@Honorary Councilmember %s
 566@@@Lamplighter %s
 567@@@Thread-Spinner %s
+11.0.0.55000
+184@@@%s the Bloodthirsty
+362@@@%s the Tomb Raider
+366@@@%s the Lightbringer
+375@@@%s the Horde Slayer
+376@@@%s the Alliance Slayer
+433@@@%s the Party Herald
+451@@@%s the Tormented Hero
+458@@@%s the Cryptic Hero
+466@@@%s the Shrouded Hero
+469@@@%s the Worldbreaker
+568@@@%s, Machine-Warden

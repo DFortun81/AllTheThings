@@ -15104,3 +15104,63 @@
 40725@@@War Within Delves: Endgame
 40726@@@War Within Delves: Tier 11
 40727@@@Skittershaw Spin
+11.0.0.55000
+40264@@@Kill Streak
+40455@@@Buddy System
+40458@@@Stranger Delves
+40723@@@Web-Wrapped in the Finest Silks
+40728@@@Forged Finery
+40729@@@Light's Gambit Champion
+40730@@@Love is in the Lair
+40731@@@Panhandled
+40732@@@Heavy-Handed
+40734@@@Total delves completed
+40735@@@Fungal Folly clears
+40736@@@Kriegval's Rest clears
+40737@@@Earthcrawl Mines clears
+40738@@@The Waterworks clears
+40739@@@The Dread Pit clears
+40740@@@Nightfall Sanctum clears
+40741@@@Mycomancer Cavern clears
+40742@@@The Sinkhole clears
+40743@@@Skittering Breach clears
+40744@@@The Underkeep clears
+40745@@@Tak-Rethan Abyss clears
+40746@@@The Spiral Weave clears
+40747@@@Zekvir's Lair clears
+40748@@@Total deaths in delves
+40749@@@Restored Coffer Keys obtained
+40750@@@Treasure Trove Keys obtained
+40751@@@The War Within delve completed the most
+40757@@@The War Within total delves completed
+40758@@@The War Within companion levels obtained
+40759@@@Companion levels obtained
+40760@@@Returned by evokers
+40761@@@Restored by paladins
+40762@@@Khaz Algar Lore Hunter
+40763@@@I'm not a Thief, I'm a Treasure Hunter
+40764@@@Treasures found
+40765@@@The War Within treasures found
+40766@@@Tier 1 delves completed
+40767@@@Tier 2 delves completed
+40768@@@Tier 3 delves completed
+40769@@@Tier 4 delves completed
+40770@@@Tier 5 delves completed
+40771@@@Tier 6 delves completed
+40772@@@Tier 7 delves completed
+40773@@@Tier 8 delves completed
+40774@@@Tier 9 delves completed
+40775@@@Tier 10 delves completed
+40776@@@Tier 11 delves completed
+40777@@@The War Within Tier 1 delves completed
+40778@@@The War Within Tier 2 delves completed
+40779@@@The War Within Tier 3 delves completed
+40780@@@The War Within Tier 4 delves completed
+40781@@@The War Within Tier 5 delves completed
+40782@@@The War Within Tier 6 delves completed
+40783@@@The War Within Tier 7 delves completed
+40784@@@The War Within Tier 8 delves completed
+40785@@@The War Within Tier 9 delves completed
+40786@@@The War Within Tier 10 delves completed
+40787@@@The War Within Tier 11 delves completed
+40788@@@I Got the Keys

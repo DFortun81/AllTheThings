@@ -1964,3 +1964,11 @@
 457656@@@Plunderlord's Midnight Crocolisk
 457659@@@Plunderlord's Weathered Crocolisk
 458335@@@Diamond Mechsuit
+11.0.0.55000
+359380@@@Depthstalker
+447151@@@Soaring Meaderbee
+452768@@@[PH] Goliathus (Blue)
+452777@@@[PH] Goliathus (Green)
+452780@@@[PH] Goliathus (Purple)
+457654@@@Keg Leg's Radiant Crocolisk
+459193@@@Hand of Reshkigaal

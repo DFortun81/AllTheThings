@@ -12147,3 +12147,28 @@
 7496@@@Oil of Deep Toxins |A:Professions-ChatIcon-Quality-Tier1:20:20|a
 7497@@@Oil of Deep Toxins |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 7498@@@Oil of Deep Toxins |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+11.0.0.55000
+7401@@@Chant of Winged Grace |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7402@@@Chant of Winged Grace |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7403@@@Chant of Winged Grace |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7407@@@Chant of Leeching Fangs |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7408@@@Chant of Leeching Fangs |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7409@@@Chant of Leeching Fangs |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7413@@@Chant of Burrowing Rapidity |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7414@@@Chant of Burrowing Rapidity |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7415@@@Chant of Burrowing Rapidity |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7500@@@Oil of Beledar's Grace |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7501@@@Oil of Beledar's Grace |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7502@@@Oil of Beledar's Grace |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7543@@@Sharpened: +$k1 Attack Power |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7544@@@Sharpened: +$k1 Attack Power |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7545@@@Sharpened: +$k1 Attack Power |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7546@@@Razor Sharp: +$k1 Finesse |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7547@@@Razor Sharp: +$k1 Finesse |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7548@@@Razor Sharp: +$k1 Finesse |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7549@@@Weighted: +$k1 Attack Power |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7550@@@Weighted: +$k1 Attack Power |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7551@@@Weighted: +$k1 Attack Power |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7552@@@Sanctified Belt Clasp
+7553@@@Sanctified Belt Clasp
+7554@@@Sanctified Belt Clasp
