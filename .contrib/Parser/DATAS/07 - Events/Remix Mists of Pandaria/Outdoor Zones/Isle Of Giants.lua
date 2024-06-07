@@ -117,6 +117,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215982),	-- Marista Greatsword (wowhead)
 					i(215549),	-- Miracoran, the Dissonant Chord (wowhead)
 					i(215550),	-- Miracoran, the Dissonant Chord (wowhead)
+					i(216540),	-- Mogu Lord's Shield
 					i(215488),	-- Mountainscaler Hatchet (wowhead)
 					i(215597),	-- Mushan Slicer (wowhead)
 					i(215703),	-- Pandaren Rifle
