@@ -5812,13 +5812,10 @@ root(ROOTS.Unsorted, {
 						i(220970),	-- Mindbender Shirt
 						i(220971),	-- Mistwalker's Shirt
 						i(220972),	-- Shaded Wood Vest
-						i(220979),	-- Amaranthine Shirt
 					}),
 					filter(LEATHER, {
 						------ NYI or only in Ensembles ------
 						i(220985),	-- Vest of the Shattered Vale
-						-- Only in Ensemble?
-						i(214377),	-- Mantle of the Barbed Assassin
 					}),
 				}),
 				filter(MISC, {
@@ -5836,7 +5833,6 @@ root(ROOTS.Unsorted, {
 				}),
 				n(WEAPONS, {
 					i(215508),	-- Shin'ka, the Tyrant's Greataxe
-					i(215553),	-- Death Lotus Repeater
 					i(215565),	-- Jinyu Slasher
 					i(215566),	-- Jinyu Blade
 					i(215567),	-- Jinyu Poker
