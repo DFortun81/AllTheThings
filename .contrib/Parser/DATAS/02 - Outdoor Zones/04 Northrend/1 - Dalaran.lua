@@ -1372,7 +1372,7 @@ root(ROOTS.Zones, {
 							{ "i", 43650, 1 },	-- Rusty Prison Key
 							-- #endif
 						},
-						["timeline"] = { ADDED_3_0_1, REMOVED_4_0_3, ADDED_5_2_0 },
+						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3, ADDED_5_2_0 },
 						["groups"] = {
 							i(37891),	-- Cast Iron Shackles
 							i(37890),	-- Chain Gang Legguards
@@ -1383,7 +1383,7 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_5_2_0 },
 					}),
 					i(43650, {	-- Rusty Prison Key
-						["timeline"] = { ADDED_3_0_1, REMOVED_4_0_3 },
+						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_3 },
 					}),
 				}),
 				n(FLIGHT_PATHS, {
