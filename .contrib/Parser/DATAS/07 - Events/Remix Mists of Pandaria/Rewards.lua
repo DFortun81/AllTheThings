@@ -18,6 +18,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 
 		i(223910),	-- Bronze Cache
 		i(223911),	-- Greater Bronze Cache
+		i(223909),	-- Lesser Bronze Cache
 
 		i(224407),	-- Bonus Experience (Uncommon)
 		i(224408),	-- Bonus Experience (Rare)

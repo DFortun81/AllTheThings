@@ -3610,12 +3610,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(QUESTS, sharedData({
 				["isDaily"] = true,
 				["g"] = {
-					i(223908, {	-- Minor Bronze Cache
-						currency(BRONZE),
-					}),
-					i(223909, {	-- Lesser Bronze Cache
-						currency(BRONZE),
-					}),
+					i(223908),	-- Minor Bronze Cache
 				},
 			}, {
 				q(80448, {	-- A Fresh Scene
