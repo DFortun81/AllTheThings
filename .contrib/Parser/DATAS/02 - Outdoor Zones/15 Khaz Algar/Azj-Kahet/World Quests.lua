@@ -1,14 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(AZJ_KAHET, {
 		n(WORLD_QUESTS, {
-			["sourceQuests"] = {
-				71232,	-- Renown of the Dragon Isles
-				DF_ACCOUNT_CAMPAIGN_QUEST,
-			},
+			--["sourceQuests"] = {
+			--	71232,	-- Renown of the Dragon Isles
+			--	DF_ACCOUNT_CAMPAIGN_QUEST,
+			--},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 				petbattle(q(82297, {	-- One Hungry Worm
 					["coord"] = { 53.9, 37.0, AZJ_KAHET },
@@ -101,4 +100,3 @@ root(ROOTS.HiddenQuestTriggers, {
 		},
 	}),
 });
---]]

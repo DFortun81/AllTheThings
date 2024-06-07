@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
@@ -19,7 +18,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			n(216048, {	-- Contaminated Harverster
 				--["description"] = "Patrol in area, can be killed by Harverster Qixt",
-				["questID"] = xx,	-- didn't fire
+				--["questID"] = xx,	-- didn't fire
 				["coord"] = { 65.1, 85.7, 2256},
 				["g"] = {
 					-- no loot
@@ -27,7 +26,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			n(216050, {	-- Harverster Qixt
 				["description"] = "Patrol in area",
-				["questID"] = xx,	-- didn't fire
+				--["questID"] = xx,	-- didn't fire
 				["coords"] = {
 					{ 62.4, 86.4, 2256},	-- Start
 					{ 64.3, 86.0, 2256},	-- Mid
@@ -54,4 +53,3 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		})),
 	}),
 })));
---]]
