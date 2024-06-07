@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(THE_RINGING_DEEPS, {
 		n(TREASURES, {
@@ -12,19 +11,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(452706, {	-- Deep-Lost Satchel
-				["maps"] = { THE_RINGING_DEEPS },	-- repeatable
+				--["maps"] = { THE_RINGING_DEEPS },	-- repeatable
 				["g"] = {
 					-- crafting reagents and gray item
 				},
 			}),
 			o(452696, {	-- Machine Speaker's Reliquary
-				["maps"] = { THE_RINGING_DEEPS },	-- repeatable
+				--["maps"] = { THE_RINGING_DEEPS },	-- repeatable
 				["g"] = {
 					-- crafting reagents and gray item
 				},
 			}),
 			o(446495, {	-- Pile of Refuse
-				["maps"] = { THE_RINGING_DEEPS },	-- repeatable
+				--["maps"] = { THE_RINGING_DEEPS },	-- repeatable
 				["g"] = {
 					-- crafting reagents and gray item
 				},
@@ -68,7 +67,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(446151, {	-- Dislodged Blockage
-				["providers"] = { "o", 446100 },	-- Blocked Intake (vignette)
+				["provider"] = { "o", 446100 },	-- Blocked Intake (vignette)
 				["coord"] = { 48.2, 48.9, THE_RINGING_DEEPS },
 				["questID"] = 82820,
 				["g"] = {
@@ -112,7 +111,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--	{ "i", xx, 1 },	-- Rought Deeptopaz Shard
 				--},
 				--["g"] = {
-				--	i(),	-- 
+				--	i(),	--
 				--},
 			}),
 			o(420053, {	-- Webbed Knapsack
@@ -147,4 +146,3 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		}),
 	}),
 })));
---]]

@@ -1,20 +1,20 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(THE_RINGING_DEEPS, {
 		n(QUESTS, {
+			--[[
 			-- alpha build data
 			q(xx, {	-- xx
 				["sourceQuests"] = { xx },	-- xx
 				["provider"] = { "n", xxx },	-- xxx
 				["coord"] = { x, y, THE_RINGING_DEEPS },
 				["g"] = {
-					i(),	-- 
+					i(),	--
 				},
 			}),
-			--
+			--]]
 			--q(78546),	-- flagged from quest tauren when dropping you here
 			--q(82200),	-- flagged from quest tauren when dropping you here
 			--Zone story quests
@@ -248,12 +248,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					78701,	-- The Truth in Chalk
 				},
 				["provider"] = { "n", 214892 },	-- Dagran Thaurissan II
-				["maps"] = { THE_RINGING_DEEPS },	-- follow player
+				--["maps"] = { THE_RINGING_DEEPS },	-- follow player
 			}),
 			q(78704, {	-- Find the Foreman
 				["sourceQuests"] = { 78703 },	-- Buried in Stone
-				["providers"] = { "n", 214890 },	-- Magni Bronzebeard
-				["maps"] = { THE_RINGING_DEEPS },	-- follow player
+				["provider"] = { "n", 214890 },	-- Magni Bronzebeard
+				--["maps"] = { THE_RINGING_DEEPS },	-- follow player
 				["g"] = {
 					i(219362),	-- Earthen Traveler's Cuffs
 					i(219366),	-- Earthen Traveler's Bindings
@@ -264,7 +264,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(78705, {	-- What She Saw
 				["sourceQuests"] = { 78704 },	-- Find the Foreman
 				["provider"] = { "n", 214892 },	-- Dagran Thaurissan II
-				["maps"] = { THE_RINGING_DEEPS },	-- follow player
+				--["maps"] = { THE_RINGING_DEEPS },	-- follow player
 			}),
 			--'you don't meet the requirements for that quest' after turn in quest above
 			--so could be something here?
@@ -993,8 +993,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			q(79679, {	-- Muddled Mind in the Mine
 				["sourceQuests"] = {
-					79149.	-- Rampage in the Refinery
-					79148.	-- The Nibelgaz Refinery
+					79149,	-- Rampage in the Refinery
+					79148,	-- The Nibelgaz Refinery
 				},
 				["provider"] = { "n", 215208 },	-- Orsenth
 				["coord"] = { 51.0, 14.9, THE_RINGING_DEEPS },
@@ -1033,7 +1033,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(79257, {	-- Grotto Grievances
 				["coord"] = { 54.6, 71.2, THE_RINGING_DEEPS },
 			}),
-			-- 
+			--
 			-- Rares / Bonus Objectives / One times
 			-- need to move into rares if this is not case
 			q(80557, {	-- Aquelion
@@ -1065,11 +1065,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223401),	-- Corrupted Earthen Wristwraps
 				},
 			}),
+			--[[
 			q(x, {	-- Candleflyer Captain // didn't fire
-				["description"] = "Flying around and pretty high"
+				["description"] = "Flying around and pretty high",
 				["provider"] = { "n", 220276 },	-- Candleflyer Captain
 				["coord"] = { 66.5, 29.9, THE_RINGING_DEEPS },
 			}),
+			--]]
 			q(81562, {	-- Charmonger
 				["provider"] = { "n", 220267 },	-- Charmonger
 				["coord"] = { 61.5, 26.8, THE_RINGING_DEEPS },
@@ -1145,4 +1147,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	--q(82957),	-- 'Thanks for the Wax' accepted every time when you fly in zone
 	q(83475),	-- Repair Water Console @ 45.3, 46.4
 });
---]]
