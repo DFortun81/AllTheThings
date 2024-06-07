@@ -494,7 +494,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									14725,	-- We Happy Few
 								}},
 								["g"] = {
-									title(433),	-- The Party Herald
+									title(433),	-- <Name> the Party Herald
 								},
 							}),
 							ach(14725),		-- We Happy Few

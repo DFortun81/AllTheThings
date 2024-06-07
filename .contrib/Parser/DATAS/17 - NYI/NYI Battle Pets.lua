@@ -1364,9 +1364,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(205008, {	-- Emerald Swoglet (PET!)
 				["displayID"] = 112145,
 			}),
-			i(205148, {	-- Dread Shalewing (PET!)
-				["displayID"] = 112186,
-			}),
 			i(205018, {	-- Jade Skitterbug (PET!)
 				["displayID"] = 112155,
 			}),
@@ -1402,6 +1399,9 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			}),
 			i(205035, {	-- Snapjaw Lurker (PET!)
 				["displayID"] = 112163,
+			}),
+			i(205148, {	-- Soot-stanined Shalewing (PET!)
+				["displayID"] = 112186,
 			}),
 			i(205157, {	-- Undermoth (PET!)
 				["displayID"] = 112196,

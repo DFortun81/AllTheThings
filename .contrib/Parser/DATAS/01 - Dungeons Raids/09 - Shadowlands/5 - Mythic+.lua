@@ -33,7 +33,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				i(187525),	-- Soultwisted Deathwalker (MOUNT!)
 			}),
 			ach(15327, {	-- Tormented Hero: Shadowlands Season 2
-				title(451),	-- <Name>, the Tormented Hero (TITLE!)
+				title(451),	-- <Name> the Tormented Hero (TITLE!)
 			}),
 			-- Keystone Hero
 			ach(15051, {	-- Keystone Hero: De Other Side
@@ -73,7 +73,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			ach(15506),		-- Shadowlands Keystone Hero: Season Three
 			ach(15691, {	-- Cryptic Hero: Shadowlands Season 3
-				title(458),	-- <Name>, the Cryptic Hero (TITLE!)
+				title(458),	-- <Name> the Cryptic Hero (TITLE!)
 			}),
 			-- Keystone Hero
 			ach(15051, {	-- Keystone Hero: De Other Side
@@ -117,7 +117,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				i(192557),	-- Restoration Deathwalker (MOUNT!)
 			}),
 			ach(15756, {	-- Shrouded Hero: Shadowlands Season 4
-				title(466),	-- <Name>, the Shrouded Hero (TITLE!)
+				title(466),	-- <Name> the Shrouded Hero (TITLE!)
 			}),
 			-- Keystone Hero
 			ach(15695, {	-- Keystone Hero: Grimrail Depot

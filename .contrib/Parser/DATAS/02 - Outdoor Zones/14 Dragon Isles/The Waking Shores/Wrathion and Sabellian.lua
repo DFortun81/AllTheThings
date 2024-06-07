@@ -560,7 +560,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								{ "i", 202173, 20 },		-- 20x Magmote
 							},
 							["g"] = {
-								title(469, {	-- <Name>, the Worldbreaker
+								title(469, {	-- <Name> the Worldbreaker
 									["collectible"] = false,
 								}),
 							},

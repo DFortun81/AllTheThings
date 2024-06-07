@@ -186,7 +186,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["OnUpdate"] = HK_OnUpdate,
 		-- #endif
 		["groups"] = {
-			title(184),		-- the Bloodthirsty
+			title(184),		-- <Name> the Bloodthirsty
 		},
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(230, {	-- Battlemaster (Alliance)

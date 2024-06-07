@@ -66,7 +66,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						11699,	-- Grand Fin-ale
 					}},
 					["groups"] = {
-						title(362, {	-- , the Tomb Raider
+						title(362, {	-- <Name> the Tomb Raider
 							["style"] = 3,
 						}),
 						i(101426),		-- Micronax (PET!)

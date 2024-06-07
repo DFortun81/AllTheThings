@@ -3948,7 +3948,6 @@ i(205032, 3525);	-- Bestial Lurker
 i(205011, 3517);	-- Bronze Swoglet
 i(205017, 3519);	-- Byrn
 i(205008, 3514);	-- Emerald Swoglet
-i(205148, 3542);	-- Dread Shalewing
 i(205018, 3520);	-- Jade Skitterbug
 i(205116, 3534);	-- Jerrie
 i(205166, 3556);	-- Kromos
@@ -3961,6 +3960,7 @@ i(205023, 3522);	-- Savage Lobstrok
 i(205164, 3554);	-- Senega
 i(205150, 3544);	-- Shalewing Devourer
 i(205035, 3526);	-- Snapjaw Lurker
+i(205148, 3542);	-- Soot-stanined Shalewing
 i(205157, 3550);	-- Undermoth
 i(205037, 3527);	-- Void Lurker
 i(205232, 0);		-- [DNT] REUSE

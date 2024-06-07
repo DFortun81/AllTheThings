@@ -61,13 +61,13 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				["races"] = HORDE_ONLY,
 				["timeline"] = { REMOVED_10_0_2 },
 			},{
-				title(376),	-- <Name>, the Alliance Slayer
+				title(376),	-- <Name> the Alliance Slayer
 			})),
 			q(52784, bubbleDownSelf({	-- The Horde Slayer
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { REMOVED_10_0_2 },
 			},{
-				title(375),	-- <Name>, the Horde Slayer
+				title(375),	-- <Name> the Horde Slayer
 			})),
 		}),
 	})),
@@ -198,14 +198,14 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				["description"] = "If you die while on the quest, and are resurrected you will continue gaining credit.",
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
-					title(375),	-- <Name>, the Horde Slayer
+					title(375),	-- <Name> the Horde Slayer
 				},
 			}),
 			q(71144, {	-- The Alliance Slayer
 				["description"] = "If you die while on the quest, and are resurrected you will continue gaining credit.",
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					title(376),	-- <Name>, the Alliance Slayer
+					title(376),	-- <Name> the Alliance Slayer
 				},
 			}),
 		}),
