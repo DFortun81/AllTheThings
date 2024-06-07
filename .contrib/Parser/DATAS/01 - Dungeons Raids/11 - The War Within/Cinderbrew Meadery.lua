@@ -8,7 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2586, {	-- Brew Master Aldryr
-					["crs"] = { 210271 },
+					["crs"] = { 210271 },	-- Brew Master Aldryr
 					["g"] = {
 						i(221051),	-- Crusher of the Unsettled
 						i(221052),	-- Foam-Ridden Pauldrons
@@ -18,7 +18,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2588, {	-- Benk Buzzbee
-					["crs"] = { 218002 },
+					["crs"] = { 218002 },	-- Benk Buzzbee
 					["g"] = {
 						i(221063),	-- Hivebreaker's Dipper
 						i(221062),	-- Scalding Queenmaker's Shiv
@@ -30,7 +30,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2587, {	-- I'pa
-					["crs"] = { 210267 },
+					["crs"] = { 210267 },	-- I'pa
 					["g"] = {
 						i(221057),	-- Sticky Stirring Stick
 						i(221056),	-- Vessel of the Beverage
@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2589, {	-- Goldie Baronbottom
-					--["crs"] = { 218523 },
+					["crs"] = { 218523 },	-- Goldie Baronbottom
 					["g"] = {
 						i(221068),	-- Profit Divider
 						i(221070),	-- "Azeroth's Greatest BEO" Cap

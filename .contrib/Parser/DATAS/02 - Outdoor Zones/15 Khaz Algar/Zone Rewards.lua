@@ -1,10 +1,9 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ZONE_REWARDS, {
-		filter(BACK, {
+		filter(BACK_F, {
 			--- wqs gear green/blue (move to zone reward if needed)
 			i(224664),	-- Gem-Woven Cloak // Hallowfall
 			i(224663),	-- Gem-Woven Shawl // Isle of Dorn, The Ringing Deeps
@@ -85,4 +84,3 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 
 	}),
 })));
-]]--

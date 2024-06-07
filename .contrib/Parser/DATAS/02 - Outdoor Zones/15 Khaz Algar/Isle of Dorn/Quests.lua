@@ -1,19 +1,20 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		n(QUESTS, {
+			--[[
 			-- alpha build data
 			q(xx, {	-- xx
 				["sourceQuests"] = { xx },	-- xx
 				["provider"] = { "n", xxx },	-- xxx
 				["coord"] = { x, y, ISLE_OF_DORN },
 				["g"] = {
-					i(),	-- 
+					i(),	--
 				},
 			}),
-			--
+			--]]
 			q(82199),	-- marked right after you click on tauren to start Isle of Dorn (should be previous quest in chain to this, I guess?)
 			--with a little bit of delay, after server realize that you should be ported in zone
 			q(78713),	-- |
@@ -26,9 +27,8 @@
 			q(83543),	-- |
 			--
 			-- Story quest chain START
-			q(, {	-- Violet Impact
+			q(78529, {	-- Violet Impact
 				--["sourceQuests"] = { xx },	-- xx
-				--["provider"] = { "n", xxx },	-- xxx
 				["coord"] = { 23.7, 56.6, ISLE_OF_DORN },	-- but probably starting in some other area, since this one 'throw' player here
 			}),
 			q(78530, {	-- Slay the Saboteurs
@@ -133,9 +133,9 @@
 						ach(40458),	-- Rare Finding
 					}),
 					-- after boss kill in the end
-					q(77716),	-- Level 2 // 
+					q(77716),	-- Level 2 //
 					q(77718),	-- Level 3 // Brann Bronzebeard leveled up
-					q(77719),	-- Level 4 // 
+					q(77719),	-- Level 4 //
 					q(82772),	-- probably either flag for tier 1 finished/tier 2 unlock or just generic this delves end?
 					-- o: 413563 (Heavy Trunk)
 					-- ["g"] = {
@@ -262,6 +262,7 @@
 				["provider"] = { "n", 217849 },	-- Adelgonn
 				["coord"] = { 79.0, 44.0, ISLE_OF_DORN },
 			}),
+			--[[
 			q(, {	-- Recompense
 				["sourceQuests"] = { 78545 },	-- Return to the Coreway
 				["provider"] = { "n", 217880 },	-- Merrix
@@ -272,6 +273,7 @@
 					--c(2897),	-- Council of Dornogal Commendation, one-time Warband bonus
 				},
 			}),
+			--]]
 			-- Side quests, since main story is bugged in main city
 			q(78754, {	-- Lost Delivery
 				--["sourceQuests"] = { x },	-- ?
@@ -510,6 +512,7 @@
 					i(215234),	-- Titan Artifact (QI!)
 				},
 			}),
+			--[[
 			q(, {	-- It's Probably Nothing
 				["sourceQuests"] = { 79727 },	-- Because It's Shiny
 				["provider"] = { "n", 217828 },	-- Rannan Korren
@@ -519,6 +522,7 @@
 					--c(2897),	-- Council of Dornogal Commendation, one-time Warband bonus
 				},
 			}),
+			--]]
 			-- end
 			-- dungeon quest
 			q(83099, {	-- Mergers and Acquisitions
@@ -667,7 +671,7 @@
 				["provider"] = { "n", 215327 },	-- Aggartha
 				["coord"] = { 48.3, 82.9, ISLE_OF_DORN },
 				["g"] = {
-					--crit 'Seven Soldiers' 
+					--crit 'Seven Soldiers'
 					i(219764),	-- Luminescent Pearl Band
 					--c(2897),	-- Council of Dornogal Commendation, one-time Warbound bonus
 				},
@@ -816,6 +820,7 @@
 					i(223345),	-- Viper's Stone Grips
 				},
 			}),
+			--[[
 			q(x, {	-- Rustul Titancap // didn't fire questID
 				["provider"] = { "n", 213115 },	-- Rustul Titancap
 				["coords"] = {
@@ -828,6 +833,7 @@
 					-- missing loot table
 				},
 			}),
+			--]]
 			q(79685, {	-- Sandres the Relicbearer
 				["provider"] = { "n", 217534 },	-- Sandres the Relicbearer
 				["coord"] = { 64.1, 73.1, ISLE_OF_DORN },
@@ -887,4 +893,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82146),	-- Special Assignment: Cinderbree Surge
 	q(83069),	-- Special Assignment: Titanic Resurgence
 });
-]]--

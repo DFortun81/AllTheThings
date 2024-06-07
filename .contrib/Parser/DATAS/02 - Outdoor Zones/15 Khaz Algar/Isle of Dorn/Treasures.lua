@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		n(TREASURES, {
 			o(444899, {	-- Kobold Axe (vignette name - Forgotten Axe)
@@ -58,13 +58,14 @@
 				},
 			}),
 			o(444894, {	-- Opal Lily
-				[description] = "In pit of this shaft",
+				["description"] = "In pit of this shaft",
 				["questID"] = 82326,
 				["coord"] = { 47.5, 64.1, ISLE_OF_DORN },
 				["g"] = {
 					-- few flowers
 				},
 			}),
+			--[[
 			o(xx, {	-- ? // possibly move to special?
 				--["description"] = "Interact with Lost Mosswool 3 times to spawn this treasure",
 				--["questID"] = x,
@@ -82,6 +83,8 @@
 					}),
 				},
 			}),
+			--]]
+			--[[
 			o(x, {	-- U'llort the Self-Exalted
 				--[description] = "",	-- TODO: Require Boskroot cap
 				--["questID"] = x,
@@ -90,6 +93,7 @@
 					--
 				},
 			}),
+			--]]
 			o(446473, {	-- Herb-Infused Brew
 				--vignette and actual object have different names, probably have other objectID
 				["questID"] = 82714,
@@ -100,7 +104,7 @@
 			}),
 			n(212928, {	-- Dalaran Sewer Turtle
 				["coord"] = { 38.0, 79.5, ISLE_OF_DORN },
-				["cost"] = { "i", xx, 5 },	-- Dornish Pike x5
+				--["cost"] = { "i", xx, 5 },	-- Dornish Pike x5
 				--["g"] = {
 				--	?
 				--},
@@ -124,4 +128,3 @@
 		}),
 	}),
 })));
-]]--

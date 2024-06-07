@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(DORNOGAL, {
-		--["icon"] = ,
+		["icon"] = 5901551,
 		--["lore"] = "",
 		["isRaid"] = true,
 	}),

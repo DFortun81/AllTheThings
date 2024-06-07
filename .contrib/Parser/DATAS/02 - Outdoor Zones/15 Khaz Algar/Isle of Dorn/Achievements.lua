@@ -11,17 +11,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(66215, {	-- Earthen Fissures
 					["sourceQuest"] = 78471,	-- TODO: quest name
 				}),
-				crit(66216, {	-- The First Blow
-					["sourceQuest"] = 78546,	-- TODO: quest name
-				}),
+				--crit(66216, {	-- The First Blow
+				--	["sourceQuest"] = 78546,	-- TODO: quest name
+				--}),
 			}),
 			ach(20595, {	-- Sojourner of Isle of Dorn
 				crit(67054, {	-- Spores of Dread
 					["sourceQuest"] = 78574,	-- TODO: quest name
 				}),
-				crit(67055, {	-- Behind Closed Doors
-					["sourceQuest"] = 79530,	-- TODO: quest name
-				}),
+				--crit(67055, {	-- Behind Closed Doors
+				--	["sourceQuest"] = 79530,	-- TODO: quest name
+				--}),
 				crit(67059, {	-- Seven Soldiers
 					["sourceQuest"] = 78999,	-- TODO: quest name
 				}),
@@ -34,18 +34,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(67075, {	-- The Hermit
 					["sourceQuest"] = 78759,	-- TODO: quest name
 				}),
-				crit(67085, {	-- A Titanic Expedition
-					["sourceQuest"] = 79728,	-- TODO: quest name
-				}),
+				--crit(67085, {	-- A Titanic Expedition
+				--	["sourceQuest"] = 79728,	-- TODO: quest name
+				--}),
 				crit(68162, {	-- Remember Me, Earthen
 					["sourceQuest"] = 82895,	-- TODO: quest name
 				}),
-				crit(67056, {	-- Brotherhood in the Skolzgal Wood
-					["sourceQuest"] = 80218,	-- TODO: quest name
-				}),
-				crit(68254, {	-- Brotherhood in the Skolzgal Wood
-					["sourceQuest"] = 83181,	-- TODO: quest name
-				}),
+				--crit(67056, {	-- Brotherhood in the Skolzgal Wood
+				--	["sourceQuest"] = 80218,	-- TODO: quest name
+				--}),
+				--crit(68254, {	-- Brotherhood in the Skolzgal Wood
+				--	["sourceQuest"] = 83181,	-- TODO: quest name
+				--}),
 			}),
 			pvp(ach(40083)),	-- Tour of Duty: Isle of Dorn
 		}),

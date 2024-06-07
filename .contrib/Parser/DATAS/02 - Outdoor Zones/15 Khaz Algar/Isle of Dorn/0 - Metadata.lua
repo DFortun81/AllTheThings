@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
-		--["icon"] = ,
+		["icon"] = 5770811,
 		--["lore"] = "",
 	}),
 })));

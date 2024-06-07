@@ -1,14 +1,13 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		n(WORLD_QUESTS, {
-			["sourceQuests"] = {
-				71232,	-- Renown of the Dragon Isles
-				DF_ACCOUNT_CAMPAIGN_QUEST,
-			},
+			--["sourceQuests"] = {
+			--	71232,	-- Renown of the Dragon Isles
+			--	DF_ACCOUNT_CAMPAIGN_QUEST,
+			--},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 				petbattle(q(82292, {	-- Rock Collector
 					["coord"] = { 34.9, 85.6, ISLE_OF_DORN },
@@ -19,7 +18,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82234, {	-- A Floral Flair for Every Ram
 					["coord"] = { 40.2, 80.4, ISLE_OF_DORN },
 				}),
-				q(82448 {	-- Book It to the Library
+				q(82448, {	-- Book It to the Library
 					["coord"] = { 25.5, 59.1, ISLE_OF_DORN },
 				}),
 				q(82658, {	-- Drop and Go
@@ -83,4 +82,3 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		}),
 	}),
 })));
---]]

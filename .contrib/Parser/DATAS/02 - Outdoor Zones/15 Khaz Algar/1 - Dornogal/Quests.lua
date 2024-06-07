@@ -1,23 +1,24 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(DORNOGAL, {
 		n(QUESTS, {
+			--[[
 			-- alpha build data
 			q(xx, {	-- xx
 				["sourceQuests"] = { xx },	-- xx
 				["provider"] = { "n", xxx },	-- xxx
 				["coord"] = { x, y, DORNOGAL },
 				["g"] = {
-					i(),	-- 
+					i(),	--
 				},
 			}),
-			--
-			-- Probably main story, since questtauren didn't flag anything
+			--]]
+			-- probably main story, since questtauren didn't flag anything
 			-- but also unsure if need to be moved anywhere
 			q(79333, {	-- The Fleet Arrives
-				["sourceQuests"] = { 79197 },	-- Surface Bound
+				--["sourceQuests"] = { 79197 },	-- Surface Bound
 				["provider"] = { "n", 216149 },	-- Moira Thaurissan
 				["coord"] = { 36.1, 80.3, DORNOGAL },
 				["g"] = {
@@ -63,11 +64,13 @@
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
 			}),
+			--[[
 			q(, {	-- The Hardbringer of Crests // missing this quest on alpha as of 19/05 build
 				["sourceQuests"] = { 82042 },	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
 			}),
+			--]]
 			-- Enchanting tutorial but some data uses placeholder data
 			q(83275, {	-- Item Enchanting Tutorial
 				--["sourceQuests"] = { x },	-- ?
@@ -79,7 +82,7 @@
 			}),
 			-- Crossroads Plaza
 			q(82747, {	-- Crossroads Plaza
-				["isBreadcrumb"] = true,	// but need to confirm
+				["isBreadcrumb"] = true,	--// but need to confirm
 				--["sourceQuests"] = { x },	-- ?
 				["provider"] = { "n", 224544 },	-- Rannida
 				["coord"] = { 46.7, 48.8, DORNOGAL },
@@ -153,7 +156,7 @@
 				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
 				["coord"] = { 46.3, 49.3, DORNOGAL },
 				["g"] = {
-					c(3029),	-- Treasure Trove Key (x2)
+					currency(3029),	-- Treasure Trove Key (x2)
 				},
 			}),
 			-- Weekly Events area?
@@ -175,7 +178,7 @@
 				["provider"] = { "n", 223875 },	-- Faerin Lothar
 				["coord"] = { 46.1, 49.6, DORNOGAL },
 				["g"] = {
-					c(3029),	-- Treasure Trove Key (x2)
+					currency(3029),	-- Treasure Trove Key (x2)
 				},
 			}),
 			q(82483, {	-- Worldsoul: Spreading the Light
@@ -183,7 +186,7 @@
 				["provider"] = { "n", 223875 },	-- Faerin Lothar
 				["coord"] = { 46.1, 49.6, DORNOGAL },
 				["g"] = {
-					c(3029),	-- Treasure Trove Key (x2)
+					currency(3029),	-- Treasure Trove Key (x2)
 				},
 			}),
 			q(82488, {	-- Worldsoul: Darkflame Cleft
@@ -191,7 +194,7 @@
 				["provider"] = { "n", 223875 },	-- Faerin Lothar
 				["coord"] = { 46.1, 49.6, DORNOGAL },
 				["g"] = {
-					c(3029),	-- Treasure Trove Key (x2)
+					currency(3029),	-- Treasure Trove Key (x2)
 				},
 			}),
 			q(82512, {	-- Worldsoul: World Boss
@@ -199,7 +202,7 @@
 				["provider"] = { "n", 223875 },	-- Faerin Lothar
 				["coord"] = { 46.1, 49.6, DORNOGAL },
 				["g"] = {
-					c(3029),	-- Treasure Trove Key (x2)
+					currency(3029),	-- Treasure Trove Key (x2)
 				},
 			}),
 		}),
@@ -211,4 +214,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	--^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
 	q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
 });
-]]--
