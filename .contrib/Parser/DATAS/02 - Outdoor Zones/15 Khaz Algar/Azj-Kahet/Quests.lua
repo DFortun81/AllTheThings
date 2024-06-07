@@ -1,20 +1,20 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(AZJ_KAHET, {
 		n(QUESTS, {
+			--[[
 			-- alpha build data
 			q(xx, {	-- xx
 				["sourceQuests"] = { xx },	-- xx
 				["provider"] = { "n", xxx },	-- xxx
 				["coord"] = { x, y, AZJ_KAHET },
 				["g"] = {
-					i(),	-- 
+					i(),	--
 				},
 			}),
-			--
+			--]]
 			--q(82202),	-- hqt, could be alpha specific?
 			--
 			-- Zone story
@@ -376,7 +376,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["g"] = {
 					--crit 'Pillar-nest Vosh for achievementID 40636 (Sojourner of Azj-Kahet)
 				},
-			}),			
+			}),
 			-- End Faerin's Advance side quest
 			-- New side quests from The Weaver's Lair
 			q(83324, {	-- A Silken Thread
@@ -788,7 +788,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 65.2, 56.1, AZJ_KAHET },
 				["g"] = {
 					--I'm currently unsure if rares are spot/mode/zone specific
-					--Shard of Gorribal > Heartsear > Azerite Manifistation > Dregblood and Soulboil >  Windowcore 
+					--Shard of Gorribal > Heartsear > Azerite Manifistation > Dregblood and Soulboil >  Windowcore
 					n(222620, {	-- Shard of Gorribal
 						["coord"] = { 67.0, 54.6, AZJ_KAHET },
 					}),
@@ -833,7 +833,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 224166 },	-- Eirzay
 				["coord"] = { 36.1, 50.2, 2213 },
 			}),
-			q(81489, {	Bounty: Zorikal the Patron
+			q(81489, {	-- Bounty: Zorikal the Patron
 				["isDaily"] = true,
 				["provider"] = { "n", 224167 },	-- Eirzay
 				["coord"] = { 15.6, 45.9, 2213 },
@@ -931,6 +931,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223392),	-- Trousers of Dark Hunger
 				},
 			}),
+			--[[
 			q(xx, {	-- Stronghold Scouts
 				["description"] = "Can be found on their path at this road",
 				["providers"] = {
@@ -946,6 +947,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223392),	-- Trousers of Dark Hunger
 				},
 			}),
+			--]]
 			q(81698, {	-- Ahg'zagall
 				["provider"] = { "n", 214151 },	-- Ahg'zagall
 				["coord"] = { 40.0, 47.3, AZJ_KAHET },
@@ -960,6 +962,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(216034),	-- Steam-Powered Wristwatch
 				},
 			}),
+			--[[
 			q(xx, {	-- Kaheti Webspeaker
 				["provider"] = { "n", 216041 },	-- Webspeaker Grik'ik
 				["coord"] = { 61.3, 33.0, AZJ_KAHET },
@@ -967,6 +970,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
+			--]]
 			q(81705, {	-- Monstrous Lasharoth
 				["provider"] = { "n", 216043 },	-- Monstrous Lasharoth
 				["coord"] = { 68.9, 72.2, AZJ_KAHET },
@@ -1096,4 +1100,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- On first leveled character on alpha (when wasn't all zone unlocked)
 	q(79573),	-- Adventure Mode (spellID 434027) & Unlock Content Scaling (spellID 434024) (last one probably for alpha only?)
 });
---]]

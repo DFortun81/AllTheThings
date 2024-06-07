@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(AZJ_KAHET, {
 		n(TREASURES, {
@@ -23,7 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- since for all of them active General is required
 			o(437058, {	-- Forgotten Memorial
 				["coord"] = { 68.5, 82.8, AZJ_KAHET },
-				["questID"] = xx,
+				--["questID"] = xx,
 				["g"] = {
 					-- bugged, interactable but didn't summon enemy
 				},
@@ -38,42 +37,42 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			o(451595, {	-- Forgotten Memorial
 				["coord"] = { 36.1, 46.7, AZJ_KAHET },
-				["questID"] = xx,
+				--["questID"] = xx,
 				["g"] = {
 					-- bugged, uninteractable.
 				},
 			}),
 			o(451596, {	-- Forgotten Memorial
 				["coord"] = { 41.2, 46.1, AZJ_KAHET },
-				["questID"] = xx,
+				--["questID"] = xx,
 				["g"] = {
 					-- bugged, uninteractable.
 				},
 			}),
 			o(451597, {	-- Forgotten Memorial
 				["coord"] = { 63.1, 18.3, AZJ_KAHET },
-				["questID"] = xx,
+				--["questID"] = xx,
 				["g"] = {
 					-- bugged, uninteractable.
 				},
 			}),
 			o(451599, {	-- Forgotten Memorial
 				["coord"] = { 75.1, 68.2, AZJ_KAHET },
-				["questID"] = xx,
+				--["questID"] = xx,
 				["g"] = {
 					-- bugged, uninteractable.
 				},
 			}),
 			o(451600, {	-- Forgotten Memorial
 				["coord"] = { 74.7, 88.2, AZJ_KAHET },
-				["questID"] = xx,
+				--["questID"] = xx,
 				["g"] = {
 					-- bugged, uninteractable.
 				},
 			}),
 			o(451601, {	-- Forgotten Memorial
 				["coord"] = { 49.6, 62.6, AZJ_KAHET },
-				["questID"] = xx,
+				--["questID"] = xx,
 				["g"] = {
 					-- bugged, uninteractable.
 				},
@@ -88,7 +87,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			o(451603, {	-- Forgotten Memorial
 				["coord"] = { 7.8, 25.7, 2213 },	-- Nureb'ar
-				["questID"] = xx,
+				--["questID"] = xx,
 				["g"] = {
 					-- bugged, uninteractable.
 				},
@@ -162,7 +161,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					{ 76.3, 43.4, AZJ_KAHET },
 					{ 73.5, 45.2, AZJ_KAHET },
 				},
-				["questID"] = xx,	-- missing qtID
+				--["questID"] = xx,	-- missing qtID
 				["g"] = {
 					-- crafting reagent and gray item
 				},
@@ -196,67 +195,67 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			o(454340, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache",
-				["providers"] = { "n", 224893 },	-- Thimble // Weave-Rat Cache (vignette)
+				["provider"] = { "n", 224893 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82859,
 				["coords"] = {
 					{ 31.6, 47.3, AZJ_KAHET },	-- Thimble (a bit bugged player can see vignette/different version of him during his pathway but they are uninteractable)
 					{ 32.1, 43.5, AZJ_KAHET },	-- cache spot
 				},
 				["g"] = {
-					c(3056),	-- Kej
+					currency(3056),	-- Kej
 				},
 			}),
 			o(434527, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache",
-				["providers"] = { "n", 226528 },	-- Thimble // Weave-Rat Cache (vignette)
+				["provider"] = { "n", 226528 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82856,
 				["coords"] = {
 					{ 54.1, 57.0, AZJ_KAHET },	-- Thimble
 					{ 53.8, 56.8, AZJ_KAHET },	-- cache spot
 				},
 				["g"] = {
-					c(3056),	-- Kej
+					currency(3056),	-- Kej
 				},
 			}),
 			o(454342, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache",
-				["providers"] = { "n", 224895 },	-- Thimble // Weave-Rat Cache (vignette)
+				["provider"] = { "n", 224895 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82862,
 				["coords"] = {
 					{ 75.2, 48.3, 2213 },	-- Thimble
 					{ 73.6, 29.0, 2213 },	-- cache spot
 				},
 				["g"] = {
-					c(3056),	-- Kej
+					currency(3056),	-- Kej
 				},
 			}),
 			o(454337, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache",
-				["providers"] = { "n", 224891 },	-- Thimble // Weave-Rat Cache (vignette)
+				["provider"] = { "n", 224891 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82858,
 				["coords"] = {
 					{ 69.9, 82.8, 2213 },	-- Thimble
 					{ 63.9, 85.7, 2213 },	-- cache spot
 				},
 				["g"] = {
-					c(3056),	-- Kej
+					currency(3056),	-- Kej
 				},
 			}),
 			o(454331, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache",
-				["providers"] = { "n", 224888 },	-- Thimble // Weave-Rat Cache (vignette)
+				["provider"] = { "n", 224888 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82855,
 				["coords"] = {
 					{ 72.9, 43.9, AZJ_KAHET },	-- Thimble
 					{ 74.5, 43.0, AZJ_KAHET },	-- cache spot
 				},
 				["g"] = {
-					c(3056),	-- Kej
+					currency(3056),	-- Kej
 				},
 			}),
 			o(446420, {	-- "Weaving Supplies"
-				[providers] = { "o", 452708 },	-- "Weaving Supplies" // probably need to be switched
-				["questID"] = xx,
+				["provider"] = { "o", 452708 },	-- "Weaving Supplies" // probably need to be switched
+				--["questID"] = xx,
 				["coord"] = { 77.3, 39.0, AZJ_KAHET },
 				["g"] = {
 					-- didn't find a way to open
@@ -265,4 +264,3 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		}),
 	}),
 })));
---]]
