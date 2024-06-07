@@ -1065,7 +1065,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					n(WEAPONS, bubbleDown({ ["modID"] = 0 }, {
 						i(215920),	-- Arcweaver Spellblade
 						i(215523),	-- Dagryn's Longbow
-						i(215553),	-- Death Lotus Repeater (not 100% sure, but I have it and the other 3 are sorted to LFR N HC, ~Gold 7th June)
+						i(215553),	-- Death Lotus Repeater
 						i(215838),	-- Drakebinder's Spire
 						i(215779),	-- Gar'tok, Might of the Faithful
 						i(215974),	-- Greatsword of Fallen Pride
