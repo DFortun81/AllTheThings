@@ -667,8 +667,8 @@ r(444192),	-- Darkmoon Sigil: Evolve \\ Darkmoon Sigil: Evolution
 r(444193),	-- Darkmoon Sigil: Radiance \\ Darkmoon Sigil: Shine
 r(444194),	-- Darkmoon Sigil: Symbiosis
 r(444195),	-- Darkmoon Sigil: Vivacity
-r(444196),	-- Inquisitor's Codex
-r(444197),	-- Vagabond's Codex
+r(444196),	-- Inquisitor's Torch \\ Inquisitor's Codex
+r(444197),	-- Vagabond's Torch \\ Vagabond's Codex
 r(444198),	-- Vagabond's Careful Crutch
 r(444199),	-- Vagabond's Bounding Baton
 r(444200),	-- Inquisitor's Crutch
@@ -690,7 +690,7 @@ r(444215),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickb
 r(444217),	-- Contract: Assembly of the Deeps \\ Contract: Earthen
 r(444218),	-- Contract: Hallowfall Arathi \\ Contract: Arathor
 r(444219),	-- Contract: The Severed Threads \\ Contract: Nerubian
-r(444220),	-- Contract: Artisan's Consortium, Khaz Algar Branch \\ Contract: Artisan
+r(444220),	-- Contract: Council of Dornogal \\ Contract: Artisan's Consortium, Khaz Algar Branch \\ Contract: Artisan
 r(444221),	-- Shadow Ink \\ Sable Ink
 r(444222),	-- Apricate Ink
 r(444223),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
@@ -750,8 +750,8 @@ r(444192),	-- Darkmoon Sigil: Evolve \\ Darkmoon Sigil: Evolution
 r(444193),	-- Darkmoon Sigil: Radiance \\ Darkmoon Sigil: Shine
 r(444194),	-- Darkmoon Sigil: Symbiosis
 r(444195),	-- Darkmoon Sigil: Vivacity
-r(444196),	-- Inquisitor's Codex
-r(444197),	-- Vagabond's Codex
+r(444196),	-- Inquisitor's Torch \\ Inquisitor's Codex
+r(444197),	-- Vagabond's Torch \\ Vagabond's Codex
 r(444198),	-- Vagabond's Careful Crutch
 r(444199),	-- Vagabond's Bounding Baton
 r(444200),	-- Inquisitor's Crutch
@@ -773,7 +773,7 @@ r(444215),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickb
 r(444217),	-- Contract: Assembly of the Deeps \\ Contract: Earthen
 r(444218),	-- Contract: Hallowfall Arathi \\ Contract: Arathor
 r(444219),	-- Contract: The Severed Threads \\ Contract: Nerubian
-r(444220),	-- Contract: Artisan's Consortium, Khaz Algar Branch \\ Contract: Artisan
+r(444220),	-- Contract: Council of Dornogal \\ Contract: Artisan's Consortium, Khaz Algar Branch \\ Contract: Artisan
 r(444221),	-- Shadow Ink \\ Sable Ink
 r(444222),	-- Apricate Ink
 r(444223),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering

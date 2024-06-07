@@ -2,7 +2,7 @@
 r(423334),	-- Khaz Algar Enchanting
 r(425138),	-- Recraft Equipment
 r(445317),	-- Stormrider's Fury
-r(445318),	-- Oil of Beladar's Grace
+r(445318),	-- Oil of Beledar's Grace \\ Oil of Beladar's Grace
 r(445319),	-- Gleeful Glamour - Orc
 r(445320),	-- Radiant Haste
 r(445321),	-- Oathsworn's Strength
@@ -100,7 +100,7 @@ Missing in Enchanting.lua
 r(423334),	-- Khaz Algar Enchanting
 r(425138),	-- Recraft Equipment
 r(445317),	-- Stormrider's Fury
-r(445318),	-- Oil of Beladar's Grace
+r(445318),	-- Oil of Beledar's Grace \\ Oil of Beladar's Grace
 r(445319),	-- Gleeful Glamour - Orc
 r(445320),	-- Radiant Haste
 r(445321),	-- Oathsworn's Strength

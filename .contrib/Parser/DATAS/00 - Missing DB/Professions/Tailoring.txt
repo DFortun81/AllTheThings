@@ -584,7 +584,7 @@ r(446981),	-- Satchel of the Long Night
 r(446982),	-- Concoctor's Clutch \\ Alchemy Bag
 r(446983),	-- Ignition Satchel \\ Blacksmithing Bag
 r(446984),	-- Hideshaper's Workbag \\ Leatherworking Bag
-r(446985),	-- Enchanting Bag
+r(446985),	-- Magically "Infinite" Messenger \\ Enchanting Bag
 r(446986),	-- Prodigy's Toolbox \\ Prodigy's Scrapbag \\ Engineering Bag
 r(446987),	-- Darkmoon Duffle \\ Inscription Bag
 r(446988),	-- Gardener's Seed Satchel \\ Herbalism Bag
@@ -965,7 +965,7 @@ r(446981),	-- Satchel of the Long Night
 r(446982),	-- Concoctor's Clutch \\ Alchemy Bag
 r(446983),	-- Ignition Satchel \\ Blacksmithing Bag
 r(446984),	-- Hideshaper's Workbag \\ Leatherworking Bag
-r(446985),	-- Enchanting Bag
+r(446985),	-- Magically "Infinite" Messenger \\ Enchanting Bag
 r(446986),	-- Prodigy's Toolbox \\ Prodigy's Scrapbag \\ Engineering Bag
 r(446987),	-- Darkmoon Duffle \\ Inscription Bag
 r(446988),	-- Gardener's Seed Satchel \\ Herbalism Bag

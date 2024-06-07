@@ -51,15 +51,15 @@ r(450254),	-- Ironclaw Knuckles
 r(450255),	-- Ironclaw Great Mace
 r(450256),	-- Ironclaw Axe
 r(450257),	-- Ironclaw Great Axe
-r(450258),	-- Ironclaw Sabatons
-r(450259),	-- Ironclaw Breastplate
-r(450260),	-- Ironclaw Greatbelt
-r(450261),	-- Ironclaw Defender
-r(450262),	-- Ironclaw Helm
-r(450263),	-- Ironclaw Legplates
-r(450264),	-- Ironclaw Vambraces
-r(450265),	-- Ironclaw Pauldrons
-r(450266),	-- Ironclaw Gauntlets
+r(450258),	-- Dredger's Plate Sabatons \\ Ironclaw Sabatons
+r(450259),	-- Dredger's Plate Breastplate \\ Ironclaw Breastplate
+r(450260),	-- Dredger's Developed Greatbelt \\ Ironclaw Greatbelt
+r(450261),	-- Dredger's Developed Defender \\ Ironclaw Defender
+r(450262),	-- Dredger's Developed Helm \\ Ironclaw Helm
+r(450263),	-- Dredger's Developed Legplates \\ Ironclaw Legplates
+r(450264),	-- Dredger's Plate Vambraces \\ Ironclaw Vambraces
+r(450265),	-- Dredger's Developed Pauldrons \\ Ironclaw Pauldrons
+r(450266),	-- Dredger's Developed Gauntlets \\ Ironclaw Gauntlets
 r(450267),	-- Proficient Sickle
 r(450268),	-- Proficient Pickaxe
 r(450269),	-- Proficient Skinning Knife
@@ -156,15 +156,15 @@ r(450254),	-- Ironclaw Knuckles
 r(450255),	-- Ironclaw Great Mace
 r(450256),	-- Ironclaw Axe
 r(450257),	-- Ironclaw Great Axe
-r(450258),	-- Ironclaw Sabatons
-r(450259),	-- Ironclaw Breastplate
-r(450260),	-- Ironclaw Greatbelt
-r(450261),	-- Ironclaw Defender
-r(450262),	-- Ironclaw Helm
-r(450263),	-- Ironclaw Legplates
-r(450264),	-- Ironclaw Vambraces
-r(450265),	-- Ironclaw Pauldrons
-r(450266),	-- Ironclaw Gauntlets
+r(450258),	-- Dredger's Plate Sabatons \\ Ironclaw Sabatons
+r(450259),	-- Dredger's Plate Breastplate \\ Ironclaw Breastplate
+r(450260),	-- Dredger's Developed Greatbelt \\ Ironclaw Greatbelt
+r(450261),	-- Dredger's Developed Defender \\ Ironclaw Defender
+r(450262),	-- Dredger's Developed Helm \\ Ironclaw Helm
+r(450263),	-- Dredger's Developed Legplates \\ Ironclaw Legplates
+r(450264),	-- Dredger's Plate Vambraces \\ Ironclaw Vambraces
+r(450265),	-- Dredger's Developed Pauldrons \\ Ironclaw Pauldrons
+r(450266),	-- Dredger's Developed Gauntlets \\ Ironclaw Gauntlets
 r(450267),	-- Proficient Sickle
 r(450268),	-- Proficient Pickaxe
 r(450269),	-- Proficient Skinning Knife

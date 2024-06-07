@@ -1,76 +1,17 @@
 11.0.0.54311
-ach(18830),	-- Level 2
 ach(19408),	-- Professional Algari Master \\ Professional Algarian Master
 ach(19409),	-- Working Underground
 ach(19410),	-- Algari Master of All \\ Algarian Master of All
 ach(19414),	-- Algari Cook \\ Algarian Cook
 ach(19415),	-- Algari Fisherman \\ Algarian Fisherman
 ach(19460),	-- Two Warband Mentors: The War Within
-ach(19467),	-- 1st level 80 on account (DNT)
-ach(19469),	-- 2nd level 80 on account (DNT)
 ach(19470),	-- One Warband Mentor: The War Within
-ach(19472),	-- 3nd level 80 on account (DNT)
-ach(19473),	-- 4th level 80 on account (DNT)
-ach(19474),	-- 5th level 80 on account (DNT)
 ach(19475),	-- Three Warband Mentors: The War Within
 ach(19476),	-- Four Warband Mentors: The War Within
 ach(19477),	-- Five Warband Mentors: The War Within
-ach(19510),	-- Test - For PH - Multiple Characters Hitting Max Level (DNT)
 ach(19515),	-- Algari Master of Many \\ Algarian Master of Many
-ach(19552),	-- Vicious Saddle (39)
-ach(19559),	-- Azj-Kahet
-ach(19560),	-- The Ringing Deeps
 ach(19704),	-- Overflowing Algari Flasks \\ Overflowing Algarian Flasks
-ach(19705),	-- Test - For EHW - Account Wide Criteria Test (DNT)
 ach(19716),	-- Plentiful Algari Potions \\ Plentiful Algarian Potions
-ach(19735),	-- Algari Alchemy 25 (DNT) \\ Algarian Alchemy 25 (DNT)
-ach(19736),	-- Algari Alchemy 50 (DNT) \\ Algarian Alchemy 50 (DNT)
-ach(19737),	-- Algari Alchemy 75 (DNT) \\ Algarian Alchemy 75 (DNT)
-ach(19738),	-- Algari Alchemy 100 (DNT) \\ Algarian Alchemy 100 (DNT)
-ach(19739),	-- Algari Blacksmithing 25 (DNT) \\ Algarian Blacksmithing 25 (DNT)
-ach(19740),	-- Algari Blacksmithing 50 (DNT) \\ Algarian Blacksmithing 50 (DNT)
-ach(19741),	-- Algari Blacksmithing 75 (DNT) \\ Algarian Blacksmithing 75 (DNT)
-ach(19742),	-- Algari Blacksmithing 100 (DNT) \\ Algarian Blacksmithing 100 (DNT)
-ach(19743),	-- Algari Enchanting 25 (DNT) \\ Algarian Enchanting 25 (DNT)
-ach(19744),	-- Algari Enchanting 50 (DNT) \\ Algarian Enchanting 50 (DNT)
-ach(19745),	-- Algari Enchanting 75 (DNT) \\ Algarian Enchanting 75 (DNT)
-ach(19746),	-- Algari Enchanting 100 (DNT) \\ Algarian Enchanting 100 (DNT)
-ach(19747),	-- Algari Engineering 25 (DNT) \\ Algarian Engineering 25 (DNT)
-ach(19748),	-- Algari Engineering 50 (DNT) \\ Algarian Engineering 50 (DNT)
-ach(19749),	-- Algari Engineering 75 (DNT) \\ Algarian Engineering 75 (DNT)
-ach(19750),	-- Algari Engineering 100 (DNT) \\ Algarian Engineering 100 (DNT)
-ach(19751),	-- Algari Inscription 25 (DNT) \\ Algarian Inscription 25 (DNT)
-ach(19752),	-- Algari Inscription 50 (DNT) \\ Algarian Inscription 50 (DNT)
-ach(19753),	-- Algari Inscription 75 (DNT) \\ Algarian Inscription 75 (DNT)
-ach(19754),	-- Algari Inscription 100 (DNT) \\ Algarian Inscription 100 (DNT)
-ach(19755),	-- Algari Jewelcrafting 25 (DNT) \\ Algarian Jewelcrafting 25 (DNT)
-ach(19756),	-- Algari Jewelcrafting 50 (DNT) \\ Algarian Jewelcrafting 50 (DNT)
-ach(19757),	-- Algari Jewelcrafting 75 (DNT) \\ Algarian Jewelcrafting 75 (DNT)
-ach(19758),	-- Algari Jewelcrafting 100 (DNT) \\ Algarian Jewelcrafting 100 (DNT)
-ach(19759),	-- Algari Leatherworking 25 (DNT) \\ Algarian Leatherworking 25 (DNT)
-ach(19760),	-- Algari Leatherworking 50 (DNT) \\ Algarian Leatherworking 50 (DNT)
-ach(19761),	-- Algari Leatherworking 75 (DNT) \\ Algarian Leatherworking 75 (DNT)
-ach(19762),	-- Algari Leatherworking 100 (DNT) \\ Algarian Leatherworking 100 (DNT)
-ach(19763),	-- Algari Tailoring 25 (DNT) \\ Algarian Tailoring 25 (DNT)
-ach(19764),	-- Algari Tailoring 50 (DNT) \\ Algarian Tailoring 50 (DNT)
-ach(19765),	-- Algari Tailoring 75 (DNT) \\ Algarian Tailoring 75 (DNT)
-ach(19766),	-- Algari Tailoring 100 (DNT) \\ Algarian Tailoring 100 (DNT)
-ach(19767),	-- Algari Herbalism 25 (DNT) \\ Algarian Herbalism 25 (DNT)
-ach(19768),	-- Algari Herbalism 50 (DNT) \\ Algarian Herbalism 50 (DNT)
-ach(19769),	-- Algari Herbalism 75 (DNT) \\ Algarian Herbalism 75 (DNT)
-ach(19770),	-- Algari Herbalism 100 (DNT) \\ Algarian Herbalism 100 (DNT)
-ach(19771),	-- Algari Mining 25 (DNT) \\ Algarian Mining 25 (DNT)
-ach(19772),	-- Algari Mining 50 (DNT) \\ Algarian Mining 50 (DNT)
-ach(19773),	-- Algari Mining 75 (DNT) \\ Algarian Mining 75 (DNT)
-ach(19774),	-- Algari Mining 100 (DNT) \\ Algarian Mining 100 (DNT)
-ach(19775),	-- Algari Skinning 25 (DNT) \\ Algarian Skinning 25 (DNT)
-ach(19776),	-- Algari Skinning 50 (DNT) \\ Algarian Skinning 50 (DNT)
-ach(19777),	-- Algari Skinning 75 (DNT) \\ Algarian Skinning 75 (DNT)
-ach(19778),	-- Algari Skinning 100 (DNT) \\ Algarian Skinning 100 (DNT)
-ach(20074),	-- Dynamic Duo Complete (DNT)
-ach(20077),	-- Terrific Trio Complete (DNT)
-ach(20078),	-- Quintessential Quintet Complete (DNT)
-ach(20118),	-- The Isle of Dorn
 ach(20255),	-- Dornogal Drift: Bronze \\ WW Zone 1 Race 1: Bronze
 ach(20256),	-- Dornogal Drift: Silver \\ WW Zone 1 Race 1: Silver
 ach(20257),	-- Dornogal Drift: Gold \\ WW Zone 1 Race 1: Gold
@@ -287,185 +228,12 @@ ach(20471),	-- Siegehold Scuttle Advanced: Gold \\ WW Zone 5 Race 6 Advanced: Go
 ach(20472),	-- Siegehold Scuttle Reverse: Bronze \\ WW Zone 5 Race 6 Reverse: Bronze
 ach(20473),	-- Siegehold Scuttle Reverse: Silver \\ WW Zone 5 Race 6 Reverse: Silver
 ach(20474),	-- Siegehold Scuttle Reverse: Gold \\ WW Zone 5 Race 6 Reverse: Gold
-ach(20482),	-- The Darkness kills (Normal Darkflame Cleft)
-ach(20483),	-- The Darkness kills (Heroic Darkflame Cleft)
-ach(20484),	-- The Darkness kills (Mythic Darkflame Cleft)
-ach(20485),	-- Ki'katal the Harvester kills (Normal Ara-Kara, City of Echoes)
-ach(20486),	-- Ki'katal the Harvester kills (Heroic Ara-Kara, City of Echoes)
-ach(20487),	-- Ki'katal the Harvester kills (Mythic Ara-Kara, City of Echoes) \\ Ki'katal the Harvester kills (Mythic Ara-Kara, City of Echoes) (copy)
-ach(20488),	-- Valorstones earned
-ach(20489),	-- Weathered Harbinger Crests earned
-ach(20490),	-- Carved Harbinger Crests earned
-ach(20491),	-- Runed Harbinger Crests earned
-ach(20492),	-- Gilded Harbinger Crests earned
 ach(20510),	-- What Could it be?
 ach(20511),	-- Gotta Punt em' All
 ach(20512),	-- Herding Cats
-ach(20523),	-- The War Within Keystone Explorer: Season One
-ach(20524),	-- The War Within Keystone Conqueror: Season One
-ach(20525),	-- The War Within Keystone Master: Season One
-ach(20526),	-- The War Within Keystone Hero: Season One
-ach(20579),	-- Keystone Hero: The Rookery
-ach(20580),	-- Keystone Hero: The Stonevault
-ach(20581),	-- Keystone Hero: Priory of the Sacred Flame
-ach(20582),	-- Keystone Hero: City of Threads
-ach(20583),	-- Keystone Hero: Cinderbrew Meadery
-ach(20584),	-- Keystone Hero: Darkflame Cleft
-ach(20585),	-- Keystone Hero: The Dawnbreaker
-ach(20586),	-- Keystone Hero: Ara-Kara, City of Echoes
-ach(20587),	-- Keystone Hero: Siege of Boralus
-ach(20588),	-- Keystone Hero: Grim Batol
-ach(20589),	-- [PH] Hero: The War Within Season 1
 ach(20594),	-- Flamegard's Hope \\ Flamegards Hope
-ach(20595),	-- Sojourner of Isle of Dorn
-ach(20596),	-- Loremaster of Khaz Algar
 ach(20597),	-- The War Within \\ United We Stand
-ach(20598),	-- Hallowfall
-ach(39919),	-- Might of Dragonblight (char specific hidden copy)
-ach(39920),	-- The Empire of Zul'Drak (char specific hidden copy)
-ach(39921),	-- Fo' Grizzle My Shizzle (char specific hidden copy)
-ach(39922),	-- The Summit of Storm Peaks (char specific hidden copy)
-ach(39923),	-- Into the Basin (char specific hidden copy)
-ach(39924),	-- Utgarde Keep (char specific hidden copy)
-ach(39925),	-- The Nexus (char specific hidden copy)
-ach(39926),	-- The Culling of Stratholme (char specific hidden copy)
-ach(39927),	-- Azjol-Nerub (char specific hidden copy)
-ach(39928),	-- Ahn'kahet: The Old Kingdom (char specific hidden copy)
-ach(39929),	-- Drak'Tharon Keep (char specific hidden copy)
-ach(39930),	-- Gundrak (char specific hidden copy)
-ach(39931),	-- Halls of Stone (char specific hidden copy)
-ach(39932),	-- Halls of Lightning (char specific hidden copy)
-ach(39933),	-- The Oculus (char specific hidden copy)
-ach(39934),	-- Utgarde Pinnacle (char specific hidden copy)
-ach(39935),	-- 100 Honorable Kills (char specific hidden copy)
-ach(39936),	-- Stratholme (char specific hidden copy)
-ach(39937),	-- Hero of the Frostwolf Clan (char specific hidden copy)
-ach(39938),	-- Mysteries of the Marsh (char specific hidden copy)
-ach(39939),	-- Terror of Terokkar (char specific hidden copy)
-ach(39940),	-- Nagrand Slam (char specific hidden copy)
-ach(39941),	-- On the Blade's Edge (char specific hidden copy)
-ach(39942),	-- Into the Nether (char specific hidden copy)
-ach(39943),	-- Terror of Terokkar (char specific hidden copy)
-ach(39944),	-- Nagrand Slam (char specific hidden copy)
-ach(39945),	-- Fo' Grizzle My Shizzle (char specific hidden copy)
-ach(39946),	-- Might of Dragonblight (char specific hidden copy)
-ach(39947),	-- Sinking into Vashj'ir (char specific hidden copy)
-ach(39948),	-- Coming Down the Mountain (char specific hidden copy)
-ach(39949),	-- Deep into Deepholm (char specific hidden copy)
-ach(39950),	-- Unearthing Uldum (char specific hidden copy)
-ach(39951),	-- Fading into Twilight (char specific hidden copy)
-ach(39952),	-- Eastern Plaguelands Quests (char specific hidden copy)
-ach(39953),	-- Western Plaguelands Quests (char specific hidden copy)
-ach(39954),	-- Silverpine Forest Quests (char specific hidden copy)
-ach(39955),	-- Hillsbrad Foothills Quests (char specific hidden copy)
-ach(39956),	-- Arathi Highlands Quests (char specific hidden copy)
-ach(39957),	-- Hinterlands Quests (char specific hidden copy)
-ach(39958),	-- Loch Modan Quests (char specific hidden copy)
-ach(39959),	-- Badlands Quests (char specific hidden copy)
-ach(39960),	-- Burning Steppes Quests (char specific hidden copy)
-ach(39961),	-- Redridge Mountains Quests (char specific hidden copy)
-ach(39962),	-- Westfall Quests (char specific hidden copy)
-ach(39963),	-- Swamp of Sorrows Quests (char specific hidden copy)
-ach(39964),	-- Cape of Stranglethorn Quests (char specific hidden copy)
-ach(39965),	-- Northern Stranglethorn Quests (char specific hidden copy)
-ach(39966),	-- Ghostlands Quests (char specific hidden copy)
-ach(39967),	-- Blasted Lands Quests (char specific hidden copy)
-ach(39968),	-- Searing Gorge Quests (char specific hidden copy)
-ach(39969),	-- Ashenvale Quests (char specific hidden copy)
-ach(39970),	-- Bloodmyst Isle Quests (char specific hidden copy)
-ach(39971),	-- Azshara Quests (char specific hidden copy)
-ach(39972),	-- Darkshore Quests (char specific hidden copy)
-ach(39973),	-- Dustwallow Marsh Quests (char specific hidden copy)
-ach(39974),	-- Desolace Quests (char specific hidden copy)
-ach(39975),	-- Felwood Quests (char specific hidden copy)
-ach(39976),	-- Feralas Quests (char specific hidden copy)
-ach(39977),	-- Northern Barrens Quests (char specific hidden copy)
-ach(39978),	-- Silithus Quests (char specific hidden copy)
-ach(39979),	-- Tanaris Quests (char specific hidden copy)
-ach(39980),	-- Stonetalon Mountains Quests (char specific hidden copy)
-ach(39981),	-- Southern Barrens Quests (char specific hidden copy)
-ach(39982),	-- Thousand Needles Quests (char specific hidden copy)
-ach(39983),	-- Un'Goro Crater Quests (char specific hidden copy)
-ach(39984),	-- Winterspring Quests (char specific hidden copy)
-ach(39985),	-- Ashenvale Quests (char specific hidden copy)
-ach(39986),	-- Dustwallow Marsh Quests (char specific hidden copy)
-ach(39987),	-- Feralas Quests (char specific hidden copy)
-ach(39988),	-- Stonetalon Mountains Quests (char specific hidden copy)
-ach(39989),	-- Southern Barrens Quests (char specific hidden copy)
-ach(39990),	-- Sinking into Vashj'ir (char specific hidden copy)
-ach(39991),	-- Full Caravan (char specific hidden copy)
-ach(39992),	-- Fading into Twilight (char specific hidden copy)
-ach(39993),	-- Darkmoon Dominator (char specific hidden copy)
-ach(39994),	-- Upjade Complete (char specific hidden copy)
-ach(39995),	-- Rally the Valley (char specific hidden copy)
-ach(39996),	-- Upjade Complete (char specific hidden copy)
-ach(39997),	-- Slum It in the Summit (char specific hidden copy)
-ach(39998),	-- Slum It in the Summit (char specific hidden copy)
-ach(39999),	-- One Steppe Forward, Two Steppes Back (char specific hidden copy)
-ach(40000),	-- Dread Haste Makes Dread Waste (char specific hidden copy)
-ach(40001),	-- Amber is the Color of My Energy (char specific hidden copy)
-ach(40002),	-- Theramore's Fall (char specific hidden copy)
-ach(40003),	-- Theramore's Fall (char specific hidden copy)
-ach(40004),	-- You'll Get Caught Up In The... Frostfire! (char specific hidden copy)
-ach(40005),	-- As I Walk Through the Valley of the Shadow of Moon (char specific hidden copy)
-ach(40006),	-- Don't Let the Tala-door Hit You on the Way Out (char specific hidden copy)
-ach(40007),	-- Don't Let the Tala-door Hit You on the Way Out (char specific hidden copy)
-ach(40008),	-- Putting the Gore in Gorgrond (char specific hidden copy)
-ach(40009),	-- Putting the Gore in Gorgrond (char specific hidden copy)
-ach(40010),	-- Between Arak and a Hard Place (char specific hidden copy)
-ach(40011),	-- Between Arak and a Hard Place (char specific hidden copy)
-ach(40012),	-- Nagrandeur (char specific hidden copy)
-ach(40013),	-- Nagrandeur (char specific hidden copy)
-ach(40014),	-- Arakkoa Outcasts (char specific hidden copy)
-ach(40015),	-- Ain't No Mountain High Enough (char specific hidden copy)
-ach(40016),	-- Improving on History (char specific hidden copy)
-ach(40017),	-- Good Suramaritan (char specific hidden copy)
-ach(40018),	-- Unleashed Monstrosities (char specific hidden copy)
-ach(40019),	-- Insurrection (char specific hidden copy)
-ach(40020),	-- Legionfall Commander (char specific hidden copy)
-ach(40021),	-- The Throne of Zuldazar (char specific hidden copy)
-ach(40022),	-- The Dark Heart of Nazmir (char specific hidden copy)
-ach(40023),	-- Seat of the Pantheon (char specific hidden copy)
-ach(40024),	-- The Descent into Madness (char specific hidden copy)
-ach(40025),	-- Wetlands Quests (char specific hidden copy)
-ach(40026),	-- Duskwood Quests (char specific hidden copy)
-ach(40027),	-- Secrets in the Sands (char specific hidden copy)
-ach(40028),	-- Zandalar Forever! (char specific hidden copy)
-ach(40029),	-- Stormsong and Dance (char specific hidden copy)
-ach(40030),	-- Drust Do It. (char specific hidden copy)
-ach(40031),	-- Halls of Containment (char specific hidden copy)
-ach(40032),	-- Crimson Descent (char specific hidden copy)
-ach(40033),	-- Heart of Corruption (char specific hidden copy)
-ach(40034),	-- Welcome to Zandalar (char specific hidden copy)
-ach(40035),	-- Come Sail Away (char specific hidden copy)
-ach(40036),	-- Archipelago Explorer (char specific hidden copy)
-ach(40037),	-- Victory or Death (char specific hidden copy)
-ach(40038),	-- Junkyard Collector (char specific hidden copy)
-ach(40039),	-- The Circle of Stars (char specific hidden copy)
-ach(40040),	-- The Waking Dream (char specific hidden copy)
-ach(40041),	-- Adventurer of Bastion (char specific hidden copy)
-ach(40042),	-- Adventurer of Maldraxxus (char specific hidden copy)
-ach(40043),	-- Adventurer of Ardenweald (char specific hidden copy)
-ach(40044),	-- Adventurer of Revendreth (char specific hidden copy)
-ach(40045),	-- Into the Maw (char specific hidden copy)
-ach(40046),	-- Pursuing Loyalty (char specific hidden copy)
-ach(40047),	-- Castle Nathria (char specific hidden copy)
-ach(40048),	-- It's In The Mix (char specific hidden copy)
-ach(40049),	-- Ramparts Racer (char specific hidden copy)
-ach(40050),	-- Fractured Faerie Tales (char specific hidden copy)
-ach(40051),	-- Toss a Seed to Your Hunter... (char specific hidden copy)
-ach(40052),	-- Bloodsport (char specific hidden copy)
-ach(40053),	-- Sand, Sand Everywhere! (char specific hidden copy)
-ach(40054),	-- Fragments of History (char specific hidden copy)
-ach(40055),	-- The Gentleman Elemental (char specific hidden copy)
-ach(40056),	-- Fury of the Storm (char specific hidden copy)
-ach(40057),	-- Hero of the Stormpike Guard (char specific hidden copy)
-ach(40060),	-- Might of the Alliance (char specific hidden copy)
 ach(40082),	-- Never Enough
-ach(40083),	-- Tour of Duty: Isle of Dorn
-ach(40084),	-- Tour of Duty: The Ringing Deeps
-ach(40085),	-- Tour of Duty: Hallowfall
-ach(40086),	-- Tour of Duty: Azj-Kahet
 ach(40087),	-- Unbound Battle
 ach(40088),	-- A Champion's Tour: The War Within
 ach(40089),	-- Spoiled Goods
@@ -483,7 +251,6 @@ ach(40103),	-- Nemesis
 ach(40107),	-- Harbinger of the Carved (TODO: Fix Icon)
 ach(40115),	-- Harbinger of the Runed (TODO: Fix Icon)
 ach(40118),	-- Harbinger of the Gilded (TODO: Fix Icon)
-ach(40121),	-- <Hidden> Account has completed 11.0 Upgrade System tutorial quests
 ach(40138),	-- Algari Dungeoneer \\ Algarian Dungeoneer
 ach(40139),	-- Algari Dungeon Damage Dealer \\ Algarian Dungeon Damage Dealer
 ach(40140),	-- Algari Dungeon Healer \\ Algarian Dungeon Healer
@@ -493,47 +260,7 @@ ach(40145),	-- So Much Sharing
 ach(40150),	-- Children's Entertainer
 ach(40151),	-- Mereldar Menace \\ Mereldar Menance
 ach(40152),	-- Skyriding Glyphs: The Three Shields \\ Flight Glyphs: The Three Shields
-ach(40153),	-- Battle on Khaz Algar
-ach(40154),	-- Aquatic Battler of Khaz Algar
-ach(40155),	-- Beast Battler of Khaz Algar
-ach(40156),	-- Critter Battler of Khaz Algar
-ach(40157),	-- Dragonkin Battler of Khaz Algar
-ach(40158),	-- Elemental Battler of Khaz Algar
-ach(40161),	-- Flying Battler of Khaz Algar
-ach(40162),	-- Humanoid Battler of Khaz Algar
-ach(40163),	-- Magic Battler of Khaz Algar
-ach(40164),	-- Mechanical Battler of Khaz Algar
-ach(40165),	-- Undead Battler of Khaz Algar
 ach(40166),	-- Isle of Dorn Glyph Hunter \\ Khaz Algar Glyph Hunter
-ach(40172),	-- Dynamic Flight Power 1
-ach(40173),	-- Dynamic Flight Power 2
-ach(40174),	-- Dynamic Flight Power 3
-ach(40175),	-- Dynamic Flight Power 4
-ach(40176),	-- Dynamic Flight Power 5
-ach(40177),	-- Dynamic Flight Power 6
-ach(40178),	-- Dynamic Flight Power 7
-ach(40179),	-- Dynamic Flight Power 8
-ach(40180),	-- Dynamic Flight Power 9
-ach(40181),	-- Dynamic Flight Power 10
-ach(40182),	-- Dynamic Flight Power 11
-ach(40183),	-- Dynamic Flight Power 12
-ach(40184),	-- Dynamic Flight Power 13
-ach(40185),	-- Dynamic Flight Power 14
-ach(40186),	-- Dynamic Flight Power 15
-ach(40187),	-- Dynamic Flight Power 16
-ach(40188),	-- Dynamic Flight Power 17
-ach(40189),	-- Dynamic Flight Power 18
-ach(40190),	-- Dynamic Flight Power 19
-ach(40191),	-- Dynamic Flight Power 20
-ach(40194),	-- Khaz Algar Safari
-ach(40195),	-- Deephaul Ravine victories
-ach(40196),	-- Deephaul Ravine battles
-ach(40197),	-- Rated Deephaul Ravine battles
-ach(40198),	-- Rated Deephaul Ravine victories
-ach(40199),	-- Rated Battleground Blitz played
-ach(40200),	-- Rated Battleground Blitz played the most
-ach(40201),	-- Rated Battleground Blitz won
-ach(40202),	-- Rated Battleground Blitz won the most
 ach(40210),	-- Deephaul Ravine Victory
 ach(40211),	-- Deephaul Ravine Veteran
 ach(40215),	-- Deepwind Ravine Shutout \\ Deephaul Ravine Perfection
@@ -546,8 +273,6 @@ ach(40222),	-- Echoes of Danger \\ Echos of Danger
 ach(40231),	-- The War Within Pathfinder [NYI]
 ach(40232),	-- Glory of the Nerub-ar Raider
 ach(40233),	-- Strategist: The War Within Season 1
-ach(40234),	-- Forged Warlord: The War Within Season 1
-ach(40235),	-- Forged Marshall: The War Within Season 1
 ach(40236),	-- Mythic: Ulgrax the Devourer
 ach(40237),	-- Mythic: The Bloodbound Horror
 ach(40238),	-- Mythic: Sikran, Captain of the Sureki
@@ -576,45 +301,11 @@ ach(40260),	-- You Can't See Me \\ [PH] Bloodbound Horror Achievement
 ach(40261),	-- Slimy Yet Satisfying \\ [PH] Ulgrax the Devourer Achievement
 ach(40262),	-- Cowabunga \\ [PH] Rasha'nan Achievement
 ach(40263),	-- Would you still /love me if I was a worm... \\ [PH] Eggtender Ovi'nax Achievement
-ach(40264),	-- [PH] Nexus-Princess Ky'veza Achievement
+ach(40264),	-- Kill Streak \\ [PH] Nexus-Princess Ky'veza Achievement
 ach(40265),	-- [PH] The Silken Court Achievement
 ach(40266),	-- Missed 'Em by That Much \\ [PH] Queen Ansurek Achievement
-ach(40267),	-- Ulgrax the Devourer kills (Raid Finder Nerub-ar Palace)
-ach(40268),	-- Ulgrax the Devourer kills (Normal Nerub-ar Palace)
-ach(40269),	-- Ulgrax the Devourer kills (Heroic Nerub-ar Palace)
-ach(40270),	-- Ulgrax the Devourer kills (Mythic Nerub-ar Palace)
-ach(40271),	-- The Bloodbound Horror kills (Raid Finder Nerub-ar Palace)
-ach(40272),	-- The Bloodbound Horror kills (Normal Nerub-ar Palace)
-ach(40273),	-- The Bloodbound Horror kills (Heroic Nerub-ar Palace)
-ach(40274),	-- The Bloodbound Horror kills (Mythic Nerub-ar Palace)
-ach(40275),	-- Sikran, Captain of the Sureki kills (Raid Finder Nerub-ar Palace)
-ach(40276),	-- Sikran, Captain of the Sureki kills (Normal Nerub-ar Palace)
-ach(40277),	-- Sikran, Captain of the Sureki kills (Heroic Nerub-ar Palace)
-ach(40278),	-- Sikran, Captain of the Sureki kills (Mythic Nerub-ar Palace)
-ach(40279),	-- Rasha'nan kills (Raid Finder Nerub-ar Palace)
-ach(40280),	-- Rasha'nan kills (Normal Nerub-ar Palace)
-ach(40281),	-- Rasha'nan kills (Heroic Nerub-ar Palace)
-ach(40282),	-- Rasha'nan kills (Mythic Nerub-ar Palace)
-ach(40283),	-- Broodtwister Ovi'nax kills (Raid Finder Nerub-ar Palace) \\ Eggtender Ovi'nax kills (Raid Finder Nerub-ar Palace)
-ach(40284),	-- Broodtwister Ovi'nax kills (Normal Nerub-ar Palace) \\ Eggtender Ovi'nax kills (Normal Nerub-ar Palace)
-ach(40285),	-- Broodtwister Ovi'nax kills (Heroic Nerub-ar Palace) \\ Eggtender Ovi'nax kills (Heroic Nerub-ar Palace)
-ach(40286),	-- Broodtwister Ovi'nax kills (Mythic Nerub-ar Palace) \\ Eggtender Ovi'nax kills (Mythic Nerub-ar Palace)
-ach(40287),	-- Nexus-Princess Ky'veza kills (Raid Finder Nerub-ar Palace)
-ach(40288),	-- Nexus-Princess Ky'veza kills (Normal Nerub-ar Palace)
-ach(40289),	-- Nexus-Princess Ky'veza kills (Heroic Nerub-ar Palace)
-ach(40290),	-- Nexus-Princess Ky'veza kills (Mythic Nerub-ar Palace)
-ach(40291),	-- The Silken Court kills (Raid Finder Nerub-ar Palace)
-ach(40292),	-- The Silken Court kills (Normal Nerub-ar Palace)
-ach(40293),	-- The Silken Court kills (Heroic Nerub-ar Palace)
-ach(40294),	-- The Silken Court kills (Mythic Nerub-ar Palace)
-ach(40295),	-- Queen Ansurek kills (Raid Finder Nerub-ar Palace)
-ach(40296),	-- Queen Ansurek kills (Normal Nerub-ar Palace)
-ach(40297),	-- Queen Ansurek kills (Heroic Nerub-ar Palace)
-ach(40298),	-- Queen Ansurek kills (Mythic Nerub-ar Palace)
 11.0.0.54361
-ach(40305),	-- Allied Races: Earthen (Hidden Character Achievement)
 ach(40306),	-- Allied Races: Earthen
-ach(40307),	-- Allied Races: Earthen Unlock Requirements
 ach(40308),	-- Beacon of Hope
 ach(40309),	-- Heritage of the Earthen
 ach(40311),	-- Sharing the Light
@@ -671,23 +362,6 @@ ach(40376),	-- City of Threads
 ach(40377),	-- Heroic: City of Threads
 ach(40379),	-- Mythic: City of Threads
 11.0.0.54521
-ach(40380),	-- Forged Gladiator: The War Within Season 1
-ach(40381),	-- Forged Legend: The War Within Season 1
-ach(40383),	-- Hero of the Alliance: Forged
-ach(40384),	-- Hero of the Horde: Forged
-ach(40385),	-- Combatant I: The War Within Season 1
-ach(40386),	-- Combatant II: The War Within Season 1
-ach(40387),	-- Challenger I: The War Within Season 1
-ach(40388),	-- Challenger II: The War Within Season 1
-ach(40389),	-- Rival I: The War Within Season 1
-ach(40390),	-- Rival II: The War Within Season 1
-ach(40391),	-- Duelist: The War Within Season 1
-ach(40392),	-- Elite: The War Within Season 1
-ach(40393),	-- Gladiator: The War Within Season 1
-ach(40395),	-- Legend: The War Within Season 1
-ach(40396),	-- Forged Combatant
-ach(40397),	-- Forged Combatant
-ach(40398),	-- Forged Gladiator's Fel Bat
 ach(40427),	-- Darkflame Cleft
 ach(40428),	-- Heroic: Darkflame Cleft
 ach(40429),	-- Mythic: Darkflame Cleft
@@ -711,10 +385,9 @@ ach(40451),	-- Buddy System III \\ Companion Level 30
 ach(40452),	-- Just Keep Swimming \\ [NYI] Kobyss Challenge
 ach(40453),	-- Spider Senses \\ [NYI] Nerubian Challenge
 ach(40454),	-- Daystormer \\ [NYI] Order of Night Challenge
-ach(40455),	-- Buddy System I \\ Companion Level 10
+ach(40455),	-- Buddy System \\ Buddy System I \\ Companion Level 10
 ach(40456),	-- Buddy System IV \\ Companion Level 40
 ach(40457),	-- Buddy System V \\ Companion Level 50
-ach(40458),	-- Rare Finding \\ Rare Within
 ach(40459),	-- I've Got a Flying Machine! \\ [PH] Delver's Dirigible
 ach(40460),	-- Delve Deep \\ 10 Delves Completed
 ach(40461),	-- Buddy System VI \\ Companion Level 60
@@ -915,8 +588,64 @@ ach(40718),	-- Voidstone Monstrosity kills (Mythic The Rookery)
 ach(40719),	-- Void Speaker Eirich (Normal The Stonevault)
 ach(40721),	-- Void Speaker Eirich (Heroic The Stonevault)
 ach(40722),	-- Void Speaker Eirich (Mythic The Stonevault)
-ach(40723),	-- [PH] 11.0 Mythic VFX Unlock
+ach(40723),	-- Web-Wrapped in the Finest Silks \\ [PH] 11.0 Mythic VFX Unlock
 ach(40724),	-- Treasures of the Ringing Deeps
 ach(40725),	-- War Within Delves: Endgame
 ach(40726),	-- War Within Delves: Tier 11
 ach(40727),	-- Skittershaw Spin
+11.0.0.55000
+ach(40728),	-- Forged Finery
+ach(40729),	-- Light's Gambit Champion
+ach(40730),	-- Love is in the Lair
+ach(40731),	-- Panhandled
+ach(40732),	-- Heavy-Handed
+ach(40734),	-- Total delves completed
+ach(40735),	-- Fungal Folly clears
+ach(40736),	-- Kriegval's Rest clears
+ach(40737),	-- Earthcrawl Mines clears
+ach(40738),	-- The Waterworks clears
+ach(40739),	-- The Dread Pit clears
+ach(40740),	-- Nightfall Sanctum clears
+ach(40741),	-- Mycomancer Cavern clears
+ach(40742),	-- The Sinkhole clears
+ach(40743),	-- Skittering Breach clears
+ach(40744),	-- The Underkeep clears
+ach(40745),	-- Tak-Rethan Abyss clears
+ach(40746),	-- The Spiral Weave clears
+ach(40747),	-- Zekvir's Lair clears
+ach(40748),	-- Total deaths in delves
+ach(40749),	-- Restored Coffer Keys obtained
+ach(40750),	-- Treasure Trove Keys obtained
+ach(40751),	-- The War Within delve completed the most
+ach(40757),	-- The War Within total delves completed
+ach(40758),	-- The War Within companion levels obtained
+ach(40759),	-- Companion levels obtained
+ach(40760),	-- Returned by evokers
+ach(40761),	-- Restored by paladins
+ach(40762),	-- Khaz Algar Lore Hunter
+ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
+ach(40764),	-- Treasures found
+ach(40765),	-- The War Within treasures found
+ach(40766),	-- Tier 1 delves completed
+ach(40767),	-- Tier 2 delves completed
+ach(40768),	-- Tier 3 delves completed
+ach(40769),	-- Tier 4 delves completed
+ach(40770),	-- Tier 5 delves completed
+ach(40771),	-- Tier 6 delves completed
+ach(40772),	-- Tier 7 delves completed
+ach(40773),	-- Tier 8 delves completed
+ach(40774),	-- Tier 9 delves completed
+ach(40775),	-- Tier 10 delves completed
+ach(40776),	-- Tier 11 delves completed
+ach(40777),	-- The War Within Tier 1 delves completed
+ach(40778),	-- The War Within Tier 2 delves completed
+ach(40779),	-- The War Within Tier 3 delves completed
+ach(40780),	-- The War Within Tier 4 delves completed
+ach(40781),	-- The War Within Tier 5 delves completed
+ach(40782),	-- The War Within Tier 6 delves completed
+ach(40783),	-- The War Within Tier 7 delves completed
+ach(40784),	-- The War Within Tier 8 delves completed
+ach(40785),	-- The War Within Tier 9 delves completed
+ach(40786),	-- The War Within Tier 10 delves completed
+ach(40787),	-- The War Within Tier 11 delves completed
+ach(40788),	-- I Got the Keys

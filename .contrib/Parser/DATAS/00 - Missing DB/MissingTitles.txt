@@ -1,13 +1,6 @@
 11.0.0.54311
-title(548),	-- %s, the [PH] Hero
 title(549),	-- Immortal Spelunker %s
 title(550),	-- High Explorer %s
-title(554),	-- Forged Warlord %s
-title(555),	-- Forged Marshall %s
-title(556),	-- Queenslayer %s \\ %s the [PH] TBD Title
-11.0.0.54521
-title(558),	-- Forged Gladiator %s
-title(559),	-- Forged Legend %s
 11.0.0.54605
 title(560),	-- %s Ascension Breaker
 11.0.0.54675
@@ -20,3 +13,5 @@ title(564),	-- Machine Whisperer %s
 title(565),	-- Honorary Councilmember %s
 title(566),	-- Lamplighter %s
 title(567),	-- Thread-Spinner %s
+11.0.0.55000
+title(568),	-- %s, Machine-Warden

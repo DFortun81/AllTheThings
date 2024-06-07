@@ -35,3 +35,5 @@ fp(2967),	-- Quest Path 9870: 11.0 Raid - Nerubian - Zone - Thread Elevator - 04
 11.0.0.54935
 fp(2970),	-- Tranquil Strand, Isle of Dorn
 fp(2971),	-- The Pulsing Pit (One-way)
+11.0.0.55000
+fp(2972),	-- Jeff the Flightmaster

@@ -84,6 +84,8 @@ r(447376),	-- Spelunker's Goggles \\ Leather Leveling Goggles (DNT) \\ PH Engine
 r(447377),	-- Tracker's Goggles \\ Mail Leveling Goggles (DNT) \\ PH Engineering Recipe
 r(447378),	-- Dredger's Goggles \\ Plate Leveling Goggles (DNT) \\ PH Engineering Recipe
 r(447379),	-- 4UT0-41M3R \\ Leveling Gun (DNT) \\ PH Engineering Recipe
+11.0.0.55000
+r(459299),	-- Bottled Brilliance
 
 
 
@@ -176,3 +178,5 @@ r(447376),	-- Spelunker's Goggles \\ Leather Leveling Goggles (DNT) \\ PH Engine
 r(447377),	-- Tracker's Goggles \\ Mail Leveling Goggles (DNT) \\ PH Engineering Recipe
 r(447378),	-- Dredger's Goggles \\ Plate Leveling Goggles (DNT) \\ PH Engineering Recipe
 r(447379),	-- 4UT0-41M3R \\ Leveling Gun (DNT) \\ PH Engineering Recipe
+11.0.0.55000
+r(459299),	-- Bottled Brilliance

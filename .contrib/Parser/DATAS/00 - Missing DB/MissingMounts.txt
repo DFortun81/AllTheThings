@@ -7,7 +7,7 @@ mount(442358),	-- Stonevault Mechsuit
 mount(446052),	-- Delver's Dirigible
 mount(447057),	-- Smoldering Cinderbee
 mount(447149),	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
-mount(447151),	-- [PH] Firebee Mount (Black Skin, Copper Saddle)
+mount(447151),	-- Soaring Meaderbee \\ [PH] Firebee Mount (Black Skin, Copper Saddle)
 mount(447156),	-- [PH] Firebee Mount (White Skin, White Saddle)
 mount(447160),	-- Raging Cinderbee \\ [PH] Firebee Mount (Red Skin, Dark Saddle)
 mount(447161),	-- [PH] Firefly2Mount (Yellow)
@@ -67,10 +67,10 @@ mount(451488),	-- [PH] NerubianWarbeastMount (Orange)
 mount(451489),	-- [PH] NerubianWarbeastMount (Dark)
 mount(451491),	-- Ascendant Skyrazor \\ [PH] NerubianWarbeastMount (White)
 11.0.0.54361
-mount(452768),	-- [PH] NerubianBeetleLargeMount (Blue)
-mount(452777),	-- [PH] NerubianBeetleLargeMount (Green)
+mount(452768),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
+mount(452777),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green)
 mount(452779),	-- Ivory Goliathus \\ [PH] NerubianBeetleLargeMount (Tan)
-mount(452780),	-- [PH] NerubianBeetleLargeMount (Purple)
+mount(452780),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 11.0.0.54521
 mount(453785),	-- Earthen Judicator's Ramolith
 11.0.0.54774
@@ -78,10 +78,13 @@ mount(441324),	-- Remembered Golden Gryphon
 mount(441325),	-- Remembered Wind Rider
 11.0.0.54935
 mount(457650),	-- Plunderlord's Golden Crocolisk
-mount(457654),	-- Plunderlord's Radiant Crocolisk
+mount(457654),	-- Keg Leg's Radiant Crocolisk \\ Plunderlord's Radiant Crocolisk
 mount(457656),	-- Plunderlord's Midnight Crocolisk
 mount(457659),	-- Plunderlord's Weathered Crocolisk
 mount(458335),	-- Diamond Mechsuit
+11.0.0.55000
+mount(359380),	-- Depthstalker
+mount(459193),	-- Hand of Reshkigaal
 
 
 
@@ -97,7 +100,7 @@ mount(442358),	-- Stonevault Mechsuit
 mount(446052),	-- Delver's Dirigible
 mount(447057),	-- Smoldering Cinderbee
 mount(447149),	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
-mount(447151),	-- [PH] Firebee Mount (Black Skin, Copper Saddle)
+mount(447151),	-- Soaring Meaderbee \\ [PH] Firebee Mount (Black Skin, Copper Saddle)
 mount(447156),	-- [PH] Firebee Mount (White Skin, White Saddle)
 mount(447160),	-- Raging Cinderbee \\ [PH] Firebee Mount (Red Skin, Dark Saddle)
 mount(447161),	-- [PH] Firefly2Mount (Yellow)
@@ -157,10 +160,10 @@ mount(451488),	-- [PH] NerubianWarbeastMount (Orange)
 mount(451489),	-- [PH] NerubianWarbeastMount (Dark)
 mount(451491),	-- Ascendant Skyrazor \\ [PH] NerubianWarbeastMount (White)
 11.0.0.54361
-mount(452768),	-- [PH] NerubianBeetleLargeMount (Blue)
-mount(452777),	-- [PH] NerubianBeetleLargeMount (Green)
+mount(452768),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
+mount(452777),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green)
 mount(452779),	-- Ivory Goliathus \\ [PH] NerubianBeetleLargeMount (Tan)
-mount(452780),	-- [PH] NerubianBeetleLargeMount (Purple)
+mount(452780),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 11.0.0.54521
 mount(453785),	-- Earthen Judicator's Ramolith
 11.0.0.54774
@@ -168,7 +171,10 @@ mount(441324),	-- Remembered Golden Gryphon
 mount(441325),	-- Remembered Wind Rider
 11.0.0.54935
 mount(457650),	-- Plunderlord's Golden Crocolisk
-mount(457654),	-- Plunderlord's Radiant Crocolisk
+mount(457654),	-- Keg Leg's Radiant Crocolisk \\ Plunderlord's Radiant Crocolisk
 mount(457656),	-- Plunderlord's Midnight Crocolisk
 mount(457659),	-- Plunderlord's Weathered Crocolisk
 mount(458335),	-- Diamond Mechsuit
+11.0.0.55000
+mount(359380),	-- Depthstalker
+mount(459193),	-- Hand of Reshkigaal
