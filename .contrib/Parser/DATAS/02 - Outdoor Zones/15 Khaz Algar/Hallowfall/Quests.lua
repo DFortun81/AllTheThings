@@ -1,20 +1,20 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(HALLOWFALL, {
 		n(QUESTS, {
+			--[[
 			-- alpha build data
 			q(xx, {	-- xx
 				["sourceQuests"] = { xx },	-- xx
 				["provider"] = { "n", xxx },	-- xxx
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
-					i(),	-- 
+					i(),	--
 				},
 			}),
-			--
+			--]]
 			-- looks like it is main story quest in zone
 			--Hallowfall START
 			q(78658, {	-- The Hallowed Path
@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(78666, {	-- The Only Good Spider
 				["sourceQuests"] = { 78665 },	-- Tunnel Trouble
 				["provider"] = { "n", 224310 },	-- Great Kyron
-				["coord"] = { 70,1, 61.3, HALLOWFALL },
+				["coord"] = { 70.1, 61.3, HALLOWFALL },
 			}),
 			q(78667, {	-- Rekindled Memories
 				--["sourceQuests"] = { xx },	-- Igniting Hope // require The Only Good Spider in quest log to pick this up
@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			q(78668, {	-- Rally on the Dawnbreaker
-				["sourceQuests"] = { 
+				["sourceQuests"] = {
 					78667,	--	Rekindled Memories
 					78666,	--	The Only Good Spider
 				},
@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			q(82836, {	-- Zero out Xerosh
-				["sourceQuests"] = { 
+				["sourceQuests"] = {
 					78669,	--	For Their Eyes Only
 					78670,	--	Siege Weapon Sabotage
 				},
@@ -301,7 +301,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(80315, {	-- Alluring Offer
 				["sourceQuests"] = {
 					80313,	-- Tidal Charms
-					80314,	-- Voices from the Deep	
+					80314,	-- Voices from the Deep
 				 },
 				["provider"] = { "n", 219430 },	-- Peculiar Fish
 				["coord"] = { 54.5, 25.3, HALLOWFALL },
@@ -515,11 +515,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			-- End of Last Mage quest chain
 			-- This is probably need to be moved under Delves expantion feature?
+			--[[
 			q(xx, {	-- Delver's Guide to Delves
 				["sourceQuests"] = { xx },	-- was up after ship events but before turn in 'The Reckoning'
 				["provider"] = { "n", xxx },	-- Zandelvari
 				["coord"] = { x, y, HALLOWFALL },
 			}),
+			--]]
 			--
 			--	Bonus Objectives
 			q(81568, {	-- Release the Beasts
@@ -810,7 +812,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- End of Runway Scare-a-way (on map) quest chain
 			-- Status report quest chain
 			q(79309, {	-- Status Report
-				["sourceQuests"] = { x },	-- ?
+				--["sourceQuests"] = { x },	-- ?
 				["provider"] = { "n", 216061 },	-- Captain Trueflame
 				["coord"] = { 70.5, 44.9, HALLOWFALL },
 			}),
@@ -958,13 +960,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--
 			--	Rares / Bonus Objectives
 			--	need to be moved into rares if didn't get bonus objective
-			q(xx, {	-- Deepfiend Azellix // didn't fire 
+			--[[
+			q(xx, {	-- Deepfiend Azellix // didn't fire
 				["provider"] = { "n", 218458 },	-- Deepfiend Azellix
 				["coord"] = { 72.1, 64.3, HALLOWFALL },
 				["g"] = {
 					-- no loot
 				},
 			}),
+			--]]
 			q(82164, {	-- Worldsoul Memory: Reign of The Old Gods
 				["provider"] = { "n", 222165 },	-- Worldsoul Memory (vignette - Radiant Echo)
 				["coord"] = { 60.7, 67.5, HALLOWFALL },
@@ -1001,20 +1005,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
-			q(xx, {	-- Ixlorb the Spinner // didn't fire 
+			--[[
+			q(xx, {	-- Ixlorb the Spinner // didn't fire
 				["provider"] = { "n", 218426 },	-- Ixlorb the Spinner
 				["coord"] = { 57.0, 64.4, HALLOWFALL },
 				["g"] = {
 					-- no loot
 				},
 			}),
-			q(xx, {	-- 
+			q(xx, {	--
 				["provider"] = { "n", xxx },	-- Murkshade (another providers is n: xx (Lost Cache))
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
 					i(223382),	-- Murkshade Grips
 				},
 			}),
+			--]]
 			q(81791, {	-- The Perchfather // I'm unsure if this is right quest, since there daily reset happens at same time
 				["provider"] = { "n", 221648 },	-- The Perchfather
 				["coord"] = { 44.0, 16.4, HALLOWFALL },
@@ -1029,6 +1035,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
+			--[[
 			q(xx, {	-- Grimslice // didn't fire
 				["description"] = "Walking around park and can be killed by random ally npcs in area",
 				["provider"] = { "n", 221551 },	-- Grimslice
@@ -1037,13 +1044,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
-			q(xx, {	-- 
+			q(xx, {	--
 				["provider"] = { "n", xxx },	-- Funglour
 				["coord"] = { x, y, HALLOWFALL },
 				["g"] = {
 					-- no loot
 				},
 			}),
+			--]]
 			q(81882, {	-- Pride of Beledar
 				["provider"] = { "n", 221786 },	-- Pride of Beledar
 				["coord"] = { 57.3, 48.6, HALLOWFALL },
@@ -1062,7 +1070,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 221534 },	-- Lytfang the Lost
 				["coord"] = { 23.0, 59.2, HALLOWFALL },
 				["g"] = {
-					
+
 				},
 			}),
 			q(81836, {	-- Horror of the Shallows
@@ -1083,6 +1091,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
+			--[[
 			q(xx, {	-- Radiant-Twisted Mycelium
 				["provider"] = { "n", 214905 },	-- Radiant-Twisted Mycelium
 				["coord"] = { 62.6, 19.7, HALLOWFALL },	-- ~~
@@ -1090,6 +1099,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(),	-- Shadowed Essence
 				},
 			}),
+			--]]
 		}),
 	}),
 })));
@@ -1103,10 +1113,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(79706),	-- Stay a while and listen - Faerin Lothar, during questID 79971 (Nightwatch)
 	q(81636),	-- Stay a while and listen - General Steelstrike, after turn in questID 78626 (Spar Day)
 	q(81631),	-- Stay a while and listen - Faerin Lothar, after pick up questID 80049 (The Flame Still Burns)
-	-- 
-	q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid 
+	--
+	q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
 	--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
-	-- 
+	--
 	q(82749),	-- triggered after turn in questID 80678 (Time Lost) (spellID 452551 - Flag Timer)
 	-- Some dude with question, which require you to loot something in world?
 	q(80068),	-- [DNT] Infirmary Tracker, fire near Caesper (n: 225948 @ 41.8, 58.3) and Ryfus Sacredpyr (n: 221630  @ 40.0, 51.1)
@@ -1140,7 +1150,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(80583),	-- pop after I grab Radiant Remnant from ground during qID 78590 (Cutting Edge) @ 64.0, 31.7
 	q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time
 	-- Special Assignment unclocks tracker
-	q(82158)	-- Special Assignment: Lynx Rescue
-	q(82161)	-- Special Assignment: Bombs from Behind
+	q(82158),	-- Special Assignment: Lynx Rescue
+	q(82161),	-- Special Assignment: Bombs from Behind
 });
---]]

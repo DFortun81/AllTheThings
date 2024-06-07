@@ -7,6 +7,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 	["timeline"] = { ADDED_11_0_1_LAUNCH },
 	["g"] = {
 		m(DORNOGAL),
+		m(HALLOWFALL),
 		m(ISLE_OF_DORN),
+		m(THE_RINGING_DEEPS),
 	},
 })));

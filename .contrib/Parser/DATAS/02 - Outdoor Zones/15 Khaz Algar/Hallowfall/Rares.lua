@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
@@ -11,10 +10,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(214757, {	-- Croakit
 				--unable to try him out, he just kick me out of his cave
-				["questID"] = xx,
+				--["questID"] = xx,
 				["coord"] = { 67.3, 23.5, HALLOWFALL },
 				["g"] = {
-					i(),	-- 
+					--i(),	--
 				},
 			}),
 			n(207802, {	-- Beledar's Spawn
@@ -34,7 +33,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			n(207780, {	-- Finclaw Bloodtide
-				["providers"] = { "n", 220492 },	-- same name / vignette for crab
+				["provider"] = { "n", 220492 },	-- same name / vignette for crab
 				--was walking around Faded Shore Keyflame
 				--["questID"] = xx,	-- missing qID after kill
 				--["coord"] = { 61.9, 17.1, HALLOWFALL },
@@ -92,4 +91,3 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		})),
 	}),
 })));
---]]

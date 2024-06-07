@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
---[[
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(HALLOWFALL, {
 		n(TREASURES, {
@@ -9,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["maps"] = { HALLOWFALL },
 				--["questID"] = xx,
 				["g"] = {
-					i(206350),	- Radiant Remnant
+					i(206350),	-- Radiant Remnant
 				},
 			}),
 			o(444801, {	-- Brimming Arathi Treasure Hoard // not sure what about brimming stuff
@@ -42,13 +41,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coords"] = {
 					{ 41.8, 58.3, HALLOWFALL },	-- Caesper
 					{ 42.1, 59.0, HALLOWFALL },	-- Disturbed Lyns Treasure
-				}.
+				},
 				["questID"] = 83263,
 				["g"] = {
 					i(225592),	-- Exquisitely Eviscerated Muscle
 					i(225639),	-- Recipe: Exquisitely Eviscerated Muscle (RECIPE!)
 				},
 			}),
+			--[[
 			o(xx, {	-- Faded Supply Chest
 				["coord"] = { 61.8, 17.4, HALLOWFALL },
 				["questID"] = xx,
@@ -56,6 +56,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- didn't find key for it and missing vignette
 				},
 			}),
+			--]]
 			o(437302, {	-- Fisherman's Pouch
 				["coord"] = { 56.1, 14.6, HALLOWFALL },
 				["questID"] = 81518,
@@ -139,4 +140,3 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		}),
 	}),
 })));
---]]
