@@ -480,11 +480,11 @@ REMOVED_10_2_6 = "removed 10.2.6.53840";				-- Dragonflight 10.2.6 Launch on Mar
 CREATED_10_2_6_SEASON_FOUR = "created 10.2.6.54358";	-- Dragonflight 10.2.6 Season Four Launch on April 23rd, 2024
 ADDED_10_2_6_SEASON_FOUR = "added 10.2.6.54358";		-- Dragonflight 10.2.6 Season Four Launch on April 23rd, 2024
 REMOVED_10_2_6_SEASON_FOUR = "removed 10.2.6.54358";	-- Dragonflight 10.2.6 Season Four Launch on April 23rd, 2024
-REMOVED_PLUNDERSTORM_END = "removed 10.2.6.54499"		-- Plunderstorm Ended on April 30th, 2024
+REMOVED_PLUNDERSTORM_END = "removed 10.2.6.54499";		-- Plunderstorm Ended on April 30th, 2024
 CREATED_10_2_7 = "created 10.2.7.54577";				-- Dragonflight 10.2.7 Launch on May 7th, 2024
 ADDED_10_2_7 = "added 10.2.7.54577";					-- Dragonflight 10.2.7 Launch on May 7th, 2024
 REMOVED_10_2_7 = "removed 10.2.7.54577";				-- Dragonflight 10.2.7 Launch on May 7th, 2024
-ADDED_MOP_REMIX = "added 10.2.7.54736"				    -- Dragonflight 10.2.7 MoP Remix Launch on May 16th, 2024
+ADDED_MOP_REMIX = "added 10.2.7.54736";				    -- Dragonflight 10.2.7 MoP Remix Launch on May 16th, 2024
 REMOVED_MOP_REMIX_END = "removed 11.0.0";				-- PlaceHolder Until we know
 
 --------------------
@@ -499,12 +499,18 @@ REMOVED_11_0_1 = "removed 11.0.0";						-- The War Within 11.0.1/Pre-Patch Launc
 CREATED_11_0_1_LAUNCH = "created 11.0.0";				-- The War Within Launch on
 ADDED_11_0_1_LAUNCH = "added 11.0.0";					-- The War Within Launch on
 REMOVED_11_0_1_LAUNCH = "removed 11.0.0";				-- The War Within Launch on
-CREATED_11_0_5 = "created 11.0.5"						-- The War Within 11.0.5 Launch on
-ADDED_11_0_5 = "added 11.0.5"							-- The War Within 11.0.5 Launch on
-REMOVED_11_0_5 = "removed 11.0.5"						-- The War Within 11.0.5 Launch on
-CREATED_11_0_7 = "created 11.0.7"						-- The War Within 11.0.7 Launch on
-ADDED_11_0_7 = "added 11.0.7"							-- The War Within 11.0.7 Launch on
-REMOVED_11_0_7 = "removed 11.0.7"						-- The War Within 11.0.7 Launch on
-CREATED_11_1_0 = "created 11.1.0"						-- The War Within 11.1.0 Launch on
-ADDED_11_1_0 = "added 11.1.0"							-- The War Within 11.1.0 Launch on
-REMOVED_11_1_0 = "removed 11.1.0"						-- The War Within 11.1.0 Launch on
+CREATED_11_0_5 = "created 11.0.5";						-- The War Within 11.0.5 Launch on
+ADDED_11_0_5 = "added 11.0.5";							-- The War Within 11.0.5 Launch on
+REMOVED_11_0_5 = "removed 11.0.5";						-- The War Within 11.0.5 Launch on
+CREATED_11_0_7 = "created 11.0.7";						-- The War Within 11.0.7 Launch on
+ADDED_11_0_7 = "added 11.0.7";							-- The War Within 11.0.7 Launch on
+REMOVED_11_0_7 = "removed 11.0.7";						-- The War Within 11.0.7 Launch on
+CREATED_11_1_0 = "created 11.1.0";						-- The War Within 11.1.0 Launch on
+ADDED_11_1_0 = "added 11.1.0";							-- The War Within 11.1.0 Launch on
+REMOVED_11_1_0 = "removed 11.1.0";						-- The War Within 11.1.0 Launch on
+
+
+--------------
+-- MIDNIGHT --
+--------------
+REMOVED_12_0_0 = "removed 12.0.0";

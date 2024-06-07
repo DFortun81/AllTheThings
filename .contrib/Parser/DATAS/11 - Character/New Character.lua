@@ -5,11 +5,13 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	n(ACHIEVEMENTS, {
 		------ Epic ------
 		ach(40147, {	-- War Within Epic
-			["timeline"] = { ADDED_11_0_1_LAUNCH },
-		}),
-		ach(18977, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Epic
 			["sym"] = {{"achievement_criteria"}},
-		})),
+			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_12_0_0_LAUNCH },
+		}),
+		ach(18977, {	-- Draconically Epic
+			["sym"] = {{"achievement_criteria"}},
+			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_1_LAUNCH },
+		}),
 		ach(18366, {	-- Draconically Epic - Replaced with new achievement number 18977
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },
 		}),
@@ -36,11 +38,13 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		})),
 		------ Superior ------
 		ach(40146, {	-- War Within Superior
-			["timeline"] = { ADDED_11_0_1_LAUNCH },
-		}),
-		ach(18976, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Draconically Superior
 			["sym"] = {{"achievement_criteria"}},
-		})),
+			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_12_0_0_LAUNCH },
+		}),
+		ach(18976, {	-- Draconically Superior
+			["sym"] = {{"achievement_criteria"}},
+			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_1_LAUNCH },
+		}),
 		ach(18365, {	-- Draconically Superior - Replaced with new achievement number 18976
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },
 		}),
