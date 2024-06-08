@@ -1612,6 +1612,7 @@ root(ROOTS.HiddenQuestTriggers,{
 		q(31343),	-- Kovok Tracking - triggers after turning in "Reunited" (questID 31091), allows Kovok to follow you
 		q(31484),	-- Hisek Tracking Quest
 		q(32012),	-- Kovok tracking [GROWING]
+		q(31115),	-- FLAG - Freed Han
 		q(31992),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 01 - Angel of Death
 		q(31993),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 02 - Iron Mantid
 		q(31994),	-- [FLAG] Dread Wastes Buff Bitflag - Enhancement 03 - Raining Blood

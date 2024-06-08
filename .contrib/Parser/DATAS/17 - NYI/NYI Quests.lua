@@ -770,7 +770,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(31331, { ["name"] = "Figuring out how to make quests", }),	-- Figuring out how to make quests
 			q(29767, { ["name"] = "Fish Fry", }),	-- Fish Fry
 			q(29818, { ["name"] = "Fix the Flavor", }),	-- Fix the Flavor
-			q(31115, { ["name"] = "FLAG - Freed Han", }),	-- FLAG - Freed Han
 			q(31219, { ["name"] = "FLAG - Unlocked Nurong", }),	-- FLAG - Unlocked Nurong
 			q(31218, { ["name"] = "FLAG - Unlocked Tenwu", }),	-- FLAG - Unlocked Tenwu
 			q(31665, { ["name"] = "FLAG - Vegetron 4000 Converted", }),	-- FLAG - Vegetron 4000 Converted

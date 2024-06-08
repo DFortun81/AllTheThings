@@ -671,7 +671,6 @@ local keys = {
 [31098]="Founding of the Order of the Cloud Serpent",
 [31099]="Klaxx Attack",
 [31101]="Legends of the Brewfathers",
-[31115]="FLAG - Freed Han",
 [31218]="FLAG - Unlocked Tenwu",
 [31219]="FLAG - Unlocked Nurong",
 [31273]="Relics of the Swarm",
