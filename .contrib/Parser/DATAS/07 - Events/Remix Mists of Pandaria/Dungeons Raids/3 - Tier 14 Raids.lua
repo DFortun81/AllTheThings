@@ -315,6 +315,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216563),	-- Gaze of the Ancient (not on wowhead)
 					i(215633),	-- Gara'kal, Claw of the Spiritbinder
 					i(215852),	-- Gao-Rei, Staff of the Protector (player confirmed)
+					i(215698),	-- Grand Imperial Rifle (MSV normal)
 					i(215968),	-- Greatsword of the Iron Legion
 					i(215855),	-- Jin'ya, Orb of the Watercaller
 					i(215929),	-- Kilrak, Fangs of Terror (MSV normal)
@@ -459,7 +460,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215853),	-- Gao-Rei, Staff of the Protector
 					i(215634),	-- Gara'kal, Claw of the Spiribinder
 					i(216565),	-- Gaze of the Ancient (MSV HC)
-					i(215698),	-- Grand Imperial Rifle (HoF HC)
+					i(215698),	-- Grand Imperial Rifle (HoF HC -> wrong?)
+					i(215699),	-- Grand Imperial Rifle (guess)
 					i(215969),	-- Greatsword of the Iron Legion
 					i(215856),	-- Jin'ya, Orb of the Watercaller
 					i(215931),	-- Kilrak, Fangs of Terror
