@@ -1,61 +1,12 @@
 11.0.0.54311
-r(423321),	-- Khaz Algar Alchemy
-r(425137),	-- Recraft Equipment
-r(427174),	-- Wild Experimentation
-r(427185),	-- Algari Alchemist Stone \\ Algarian Alchemist Stone
-r(427214),	-- Neutralize Concoctions
-r(430315),	-- Thaumaturgy
-r(430345),	-- Meticulous Experimentation
-r(430590),	-- Algari Healing Potion \\ Algarian Healing Potion
-r(430591),	-- Algari Mana Potion \\ Algarian Mana Potion
-r(430592),	-- Cavedweller's Delight
-r(430593),	-- Slumbering Soul Serum
-r(430594),	-- Draught of Silent Footfalls
-r(430595),	-- Draught of Shocking Revelations
-r(430596),	-- Agonizing Potion
-r(430597),	-- Potion of Unwavering Focus
-r(430598),	-- Frontline Potion
-r(430599),	-- Tempered Potion
-r(430600),	-- Potion of the Reborn Cheetah
-r(430601),	-- Flask of Tempered Aggression
-r(430602),	-- Flask of Tempered Swiftness
-r(430603),	-- Flask of Tempered Versatility
-r(430604),	-- Flask of Tempered Mastery
-r(430605),	-- Flask of Alchemical Chaos
 r(430606),	--
-r(430607),	-- Vicious Flask of Classical Spirits
-r(430608),	-- Vicious Flask of Honor
-r(430610),	-- Vicious Flask of Manifested Fury
-r(430611),	-- Vicious Flask of the Wrecking Ball
-r(430612),	-- Flask of Saving Graces
 r(430613),	--
-r(430614),	-- Phial of Focused Inspiration
-r(430615),	-- Phial of Truesight
-r(430616),	-- Phial of Enhanced Ambidextry
-r(430617),	-- Phial of Bountiful Seasons
-r(430618),	-- Mercurial Blessings
-r(430619),	-- Mercurial Storms
-r(430620),	-- Volatile Weaving
-r(430621),	-- Volatile Stone
-r(430622),	-- Ominous Call
-r(430623),	-- Ominous Gloom
-r(430624),	-- Gleaming Glory
-r(432204),	-- Harmonious Horticulture
-r(432962),	-- Algari Flask Cauldron \\ Algarian Flask Cauldron
-r(432963),	-- Algari Potion Cauldron \\ Algarian Potion Cauldron
-r(433087),	-- Formulated Courage
 r(433271),	--
 r(433604),	--
 r(433605),	--
 r(433606),	--
 r(433607),	--
 r(433608),	--
-r(449571),	-- Mercurial Herbs
-r(449572),	-- Ominous Herbs
-r(449573),	-- Mercurial Coalescence
-r(449574),	-- Ominous Coalescence
-r(449575),	-- Volatile Coalescence
-r(449938),	-- Gleaming Chaos
 
 
 
@@ -63,60 +14,11 @@ r(449938),	-- Gleaming Chaos
 Missing in Alchemy.lua
 
 11.0.0.54311
-r(423321),	-- Khaz Algar Alchemy
-r(425137),	-- Recraft Equipment
-r(427174),	-- Wild Experimentation
-r(427185),	-- Algari Alchemist Stone \\ Algarian Alchemist Stone
-r(427214),	-- Neutralize Concoctions
-r(430315),	-- Thaumaturgy
-r(430345),	-- Meticulous Experimentation
-r(430590),	-- Algari Healing Potion \\ Algarian Healing Potion
-r(430591),	-- Algari Mana Potion \\ Algarian Mana Potion
-r(430592),	-- Cavedweller's Delight
-r(430593),	-- Slumbering Soul Serum
-r(430594),	-- Draught of Silent Footfalls
-r(430595),	-- Draught of Shocking Revelations
-r(430596),	-- Agonizing Potion
-r(430597),	-- Potion of Unwavering Focus
-r(430598),	-- Frontline Potion
-r(430599),	-- Tempered Potion
-r(430600),	-- Potion of the Reborn Cheetah
-r(430601),	-- Flask of Tempered Aggression
-r(430602),	-- Flask of Tempered Swiftness
-r(430603),	-- Flask of Tempered Versatility
-r(430604),	-- Flask of Tempered Mastery
-r(430605),	-- Flask of Alchemical Chaos
 r(430606),	--
-r(430607),	-- Vicious Flask of Classical Spirits
-r(430608),	-- Vicious Flask of Honor
-r(430610),	-- Vicious Flask of Manifested Fury
-r(430611),	-- Vicious Flask of the Wrecking Ball
-r(430612),	-- Flask of Saving Graces
 r(430613),	--
-r(430614),	-- Phial of Focused Inspiration
-r(430615),	-- Phial of Truesight
-r(430616),	-- Phial of Enhanced Ambidextry
-r(430617),	-- Phial of Bountiful Seasons
-r(430618),	-- Mercurial Blessings
-r(430619),	-- Mercurial Storms
-r(430620),	-- Volatile Weaving
-r(430621),	-- Volatile Stone
-r(430622),	-- Ominous Call
-r(430623),	-- Ominous Gloom
-r(430624),	-- Gleaming Glory
-r(432204),	-- Harmonious Horticulture
-r(432962),	-- Algari Flask Cauldron \\ Algarian Flask Cauldron
-r(432963),	-- Algari Potion Cauldron \\ Algarian Potion Cauldron
-r(433087),	-- Formulated Courage
 r(433271),	--
 r(433604),	--
 r(433605),	--
 r(433606),	--
 r(433607),	--
 r(433608),	--
-r(449571),	-- Mercurial Herbs
-r(449572),	-- Ominous Herbs
-r(449573),	-- Mercurial Coalescence
-r(449574),	-- Ominous Coalescence
-r(449575),	-- Volatile Coalescence
-r(449938),	-- Gleaming Chaos

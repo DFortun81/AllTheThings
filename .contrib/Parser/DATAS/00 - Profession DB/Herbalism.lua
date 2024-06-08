@@ -233,6 +233,7 @@ i(0, 422293);	-- Overload Overgrown Herb
 ------------------
 --- TRAINER ---
 i(0, 441327);	-- Herb Gathering (Khaz Algar)
+i(0, 452269);	-- Deepgrove Rose
 i(0, 435811);	-- Mycobloom
 --- DISCOVERY ---
 i(0, 435858);	-- Altered Luredrop

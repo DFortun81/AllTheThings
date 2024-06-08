@@ -1165,3 +1165,63 @@ i(0, 405832);		-- Stinky Bright Potion
 i(210241, 415628);	-- Dreamwalker's Healing Potion
 --- DISCOVERY ---
 i(0, 415810);		-- Potion of Withering Dreams
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+--- TRAINER ---
+i(0, 423321);		-- Khaz Algar Alchemy
+i(0, 430590);		-- Algari Healing Potion
+i(0, 427214);		-- Neutralize Concoctions
+i(0, 425137);		-- Recraft Equipment
+i(0, 427174);		-- Wild Experimentation
+--- ITEM ---
+i(224018, 430607);	-- Vicious Flask of Classical Spirits
+i(224017, 430608);	-- Vicious Flask of Honor
+i(224019, 430610);	-- Vicious Flask of Manifested Fury
+i(224020, 430611);	-- Vicious Flask of the Wrecking Ball
+--- DISCOVERY ---
+--- THAUMATURGY ---
+i(0, 430618);		-- Mercurial Blessings
+i(0, 449571);		-- Mercurial Herbs
+i(0, 430619);		-- Mercurial Storms
+i(0, 430622);		-- Ominous Call
+i(0, 430623);		-- Ominous Gloom
+i(0, 449572);		-- Ominous Herbs
+i(0, 430621);		-- Volatile Stone
+i(0, 430620);		-- Volatile Weaving
+--- WILD/METICULOUS ---
+i(0, 430596);		-- Agonizing Potion
+i(0, 430591);		-- Algari Mana Potion
+i(0, 430592);		-- Cavedweller's Delight
+i(0, 430595);		-- Draught of Shocking Revelations
+i(0, 430594);		-- Draught of Silent Footfalls
+i(0, 430605);		-- Flask of Alchemical Chaos
+i(0, 430612);		-- Flask of Saving Graces
+i(0, 430601);		-- Flask of Tempered Aggression
+i(0, 430604);		-- Flask of Tempered Mastery
+i(0, 430602);		-- Flask of Tempered Swiftness
+i(0, 430603);		-- Flask of Tempered Versatility
+i(0, 430598);		-- Frontline Potion
+i(0, 430345);		-- Meticulous Experimentation
+i(0, 430617);		-- Phial of Bountiful Seasons
+i(0, 430616);		-- Phial of Enhanced Ambidextry
+i(0, 430614);		-- Phial of Focused Inspiration
+i(0, 430615);		-- Phial of Truesight
+i(0, 430600);		-- Potion of the Reborn Cheetah
+i(0, 430597);		-- Potion of Unwavering Focus
+i(0, 430593);		-- Slumbering Soul Serum
+i(0, 430599);		-- Tempered Potion
+--- SPECIALIZATION ---
+i(0, 432962);		-- Algari Flask Cauldron
+i(0, 432963);		-- Algari Potion Cauldron
+i(0, 433087);		-- Formulated Courage
+i(0, 449938);		-- Gleaming Chaos
+i(0, 430624);		-- Gleaming Glory
+i(0, 432204);		-- Harmonious Horticulture
+i(0, 449573);		-- Mercurial Coalescence
+i(0, 449574);		-- Ominous Coalescence
+i(0, 430315);		-- Thaumaturgy
+i(0, 449575);		-- Volatile Coalescence
+--- UNKNOWN SOURCE ---
+i(223080, 427185);	-- Algari Alchemist Stone

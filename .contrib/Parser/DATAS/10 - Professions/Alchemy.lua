@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local ALCHEMY_KNOWLEDGE = 2024;
+local DF_ALCHEMY_KNOWLEDGE = 2024;
+local TWW_ALCHEMY_KNOWLEDGE = 2785;
 root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18733),	-- A Cure for All Ails IV
@@ -926,7 +927,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", ALCHEMY_KNOWLEDGE, 1 }} }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", DF_ALCHEMY_KNOWLEDGE, 1 }} }, {
 				r(370747),	-- Advanced Phial Experimentation
 				r(370745),	-- Advanced Potion Experimentation
 				r(370730),	-- Brood Salt
@@ -1043,7 +1044,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				currency(ALCHEMY_KNOWLEDGE),
+				currency(DF_ALCHEMY_KNOWLEDGE),
 			},
 		 }, {
 			i(198608),	-- Alchemy Notes
@@ -1075,6 +1076,23 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["coord"] = { 80.2, 75.6, OHNAHRAN_PLAINS },
 			}),
 		})),
+	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TWW_ALCHEMY_KNOWLEDGE, 1 }} }, {
+				r(432962),	-- Algari Flask Cauldron
+				r(432963),	-- Algari Potion Cauldron
+				r(433087),	-- Formulated Courage
+				r(449938),	-- Gleaming Chaos
+				r(430624),	-- Gleaming Glory
+				r(432204),	-- Harmonious Horticulture
+				r(449573),	-- Mercurial Coalescence
+				r(449574),	-- Ominous Coalescence
+				r(430315),	-- Thaumaturgy
+				r(449575),	-- Volatile Coalescence
+			}),
+		}),
 	})),
 })));
 

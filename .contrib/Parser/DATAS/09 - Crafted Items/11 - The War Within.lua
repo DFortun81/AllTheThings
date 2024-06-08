@@ -24,10 +24,181 @@ end
 root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	i(210814),	-- Artisan's Acuity
 	prof(ALCHEMY, {
-		--[[
-		filter(CONSUMABLES, {
+		n(DISCOVERY, {
+			spell(430345, {	-- Meticulous Experimentation
+				i(211958, {	-- Meticulous Experimentation
+					r(430596),	-- Agonizing Potion
+					r(430595),	-- Draught of Shocking Revelations
+					r(430594),	-- Draught of Silent Footfalls
+					r(430605),	-- Flask of Alchemical Chaos
+					r(430612),	-- Flask of Saving Graces
+					r(430601),	-- Flask of Tempered Aggression
+					r(430604),	-- Flask of Tempered Mastery
+					r(430602),	-- Flask of Tempered Swiftness
+					r(430603),	-- Flask of Tempered Versatility
+					r(430598),	-- Frontline Potion
+					r(430617),	-- Phial of Bountiful Seasons
+					r(430616),	-- Phial of Enhanced Ambidextry
+					r(430614),	-- Phial of Focused Inspiration
+					r(430615),	-- Phial of Truesight
+					r(430600),	-- Potion of the Reborn Cheetah
+					r(430597),	-- Potion of Unwavering Focus
+					r(430599),	-- Tempered Potion
+				}),
+			}),
+			spell(430315, {	-- Thaumaturgy
+				i(211796, {	-- Thaumaturgy
+					r(430618),	-- Mercurial Blessings
+					r(449571),	-- Mercurial Herbs
+					r(430619),	-- Mercurial Storms
+					r(430622),	-- Ominous Call
+					r(430623),	-- Ominous Gloom
+					r(449572),	-- Ominous Herbs
+					r(430621),	-- Volatile Stone
+					r(430620),	-- Volatile Weaving
+				}),
+			}),
+			spell(427174, {	-- Wild Experimentation
+				i(210813,{	-- Wild Experimentation
+					r(430591),	-- Algari Mana Potion
+					r(430592),	-- Cavedweller's Delight
+					r(430345),	-- Meticulous Experimentation
+					r(430593),	-- Slumbering Soul Serum
+				}),
+			}),
 		}),
-		--]]
+		filter(CONSUMABLES, {
+			i(212254),	-- Agonizing Potion+
+			i(212255),	-- Agonizing Potion++
+			i(212256),	-- Agonizing Potion+++
+			i(212719, {	-- Algari Flask Cauldron+
+				i(212739),	-- Fleeting Flask of Alchemical Chaos+
+				i(212745),	-- Fleeting Flask of Saving Graces+
+				i(212775),	-- Fleeting Flask of Tempered Aggression+
+				i(212735),	-- Fleeting Flask of Tempered Mastery+
+				i(212729),	-- Fleeting Flask of Tempered Swiftness+
+				i(212732),	-- Fleeting Flask of Tempered Versatility+
+			}),
+			i(212720, {	-- Algari Flask Cauldron++
+				i(212740),	-- Fleeting Flask of Alchemical Chaos++
+				i(212746),	-- Fleeting Flask of Saving Graces++
+				i(212776),	-- Fleeting Flask of Tempered Aggression++
+				i(212736),	-- Fleeting Flask of Tempered Mastery++
+				i(212730),	-- Fleeting Flask of Tempered Swiftness++
+				i(212733),	-- Fleeting Flask of Tempered Versatility++
+			}),
+			i(212721, {	-- Algari Flask Cauldron+++
+				i(212741),	-- Fleeting Flask of Alchemical Chaos+++
+				i(212747),	-- Fleeting Flask of Saving Graces+++
+				i(212777),	-- Fleeting Flask of Tempered Aggression+++
+				i(212738),	-- Fleeting Flask of Tempered Mastery+++
+				i(212731),	-- Fleeting Flask of Tempered Swiftness+++
+				i(212734),	-- Fleeting Flask of Tempered Versatility+++
+			}),
+			i(212239),	-- Algari Mana Potion+
+			i(212240),	-- Algari Mana Potion++
+			i(212241),	-- Algari Mana Potion+++
+			i(212751, {	-- Algari Potion Cauldron+
+				i(212960),	-- Fleeting Agonizing Potion+
+				i(212942),	-- Fleeting Algari Healing Potion+
+				i(212945),	-- Fleeting Algari Mana Potion+
+				i(212948),	-- Fleeting Cavedweller's Delight+
+				i(212957),	-- Fleeting Draught of Shocking Revelations+
+				i(212954),	-- Fleeting Draught of Silent Footfalls+
+				i(212966),	-- Fleeting Frontline Potion+
+				i(212972),	-- Fleeting Potion of the Reborn Cheetah+
+				i(212963),	-- Fleeting Potion of Unwavering Focus+
+				i(212951),	-- Fleeting Slumbering Soul Serum+
+				i(212969),	-- Fleeting Tempered Potion+
+			}),
+			i(212752, {	-- Algari Potion Cauldron++
+				i(212961),	-- Fleeting Agonizing Potion++
+				i(212943),	-- Fleeting Algari Healing Potion++
+				i(212946),	-- Fleeting Algari Mana Potion++
+				i(212949),	-- Fleeting Cavedweller's Delight++
+				i(212958),	-- Fleeting Draught of Shocking Revelations++
+				i(212955),	-- Fleeting Draught of Silent Footfalls++
+				i(212967),	-- Fleeting Frontline Potion++
+				i(212973),	-- Fleeting Potion of the Reborn Cheetah++
+				i(212964),	-- Fleeting Potion of Unwavering Focus++
+				i(212952),	-- Fleeting Slumbering Soul Serum++
+				i(212970),	-- Fleeting Tempered Potion++
+			}),
+			i(212753, {	-- Algari Potion Cauldron+++
+				i(212962),	-- Fleeting Agonizing Potion+++
+				i(212944),	-- Fleeting Algari Healing Potion+++
+				i(212947),	-- Fleeting Algari Mana Potion+++
+				i(212950),	-- Fleeting Cavedweller's Delight+++
+				i(212959),	-- Fleeting Draught of Shocking Revelations+++
+				i(212956),	-- Fleeting Draught of Silent Footfalls+++
+				i(212968),	-- Fleeting Frontline Potion+++
+				i(212974),	-- Fleeting Potion of the Reborn Cheetah+++
+				i(212965),	-- Fleeting Potion of Unwavering Focus+++
+				i(212953),	-- Fleeting Slumbering Soul Serum+++
+				i(212971),	-- Fleeting Tempered Potion+++
+			}),
+			i(211878),	-- Algari Healing Potion+
+			i(211879),	-- Algari Healing Potion++
+			i(211880),	-- Algari Healing Potion+++
+			i(212242),	-- Cavedweller's Delight+
+			i(212243),	-- Cavedweller's Delight++
+			i(212244),	-- Cavedweller's Delight+++
+			i(212251),	-- Draught of Shocking Revelations+
+			i(212252),	-- Draught of Shocking Revelations++
+			i(212253),	-- Draught of Shocking Revelations+++
+			i(212248),	-- Draught of Silent Footfalls+
+			i(212249),	-- Draught of Silent Footfalls++
+			i(212250),	-- Draught of Silent Footfalls+++
+			i(212281),	-- Flask of Alchemical Chaos+
+			i(212282),	-- Flask of Alchemical Chaos+
+			i(212283),	-- Flask of Alchemical Chaos+++
+			i(212299),	-- Flask of Saving Graces+
+			i(212300),	-- Flask of Saving Graces++
+			i(212301),	-- Flask of Saving Graces+++
+			i(212269),	-- Flask of Tempered Aggression+
+			i(212270),	-- Flask of Tempered Aggression++
+			i(212271),	-- Flask of Tempered Aggression+++
+			i(212278),	-- Flask of Tempered Mastery+
+			i(212279),	-- Flask of Tempered Mastery++
+			i(212280),	-- Flask of Tempered Mastery+++
+			i(212272),	-- Flask of Tempered Swiftness+
+			i(212273),	-- Flask of Tempered Swiftness++
+			i(212274),	-- Flask of Tempered Swiftness+++
+			i(212275),	-- Flask of Tempered Versatility+
+			i(212276),	-- Flask of Tempered Versatility++
+			i(212277),	-- Flask of Tempered Versatility+++
+			i(212260),	-- Frontline Potion+
+			i(212261),	-- Frontline Potion++
+			i(212262),	-- Frontline Potion+++
+			i(212314),	-- Phial of Bountiful Seasons+
+			i(212315),	-- Phial of Bountiful Seasons++
+			i(212316),	-- Phial of Bountiful Seasons+++
+			i(212311),	-- Phial of Enhanced Ambidextry+
+			i(212312),	-- Phial of Enhanced Ambidextry++
+			i(212313),	-- Phial of Enhanced Ambidextry+++
+			i(212305),	-- Phial of Focused Inspiration+
+			i(212306),	-- Phial of Focused Inspiration++
+			i(212307),	-- Phial of Focused Inspiration+++
+			i(212308),	-- Phial of Truesight+
+			i(212309),	-- Phial of Truesight++
+			i(212310),	-- Phial of Truesight+++
+			i(212266),	-- Potion of the Reborn Cheetah+
+			i(212267),	-- Potion of the Reborn Cheetah++
+			i(212268),	-- Potion of the Reborn Cheetah+++
+			i(212257),	-- Potion of Unwavering Focus+
+			i(212258),	-- Potion of Unwavering Focus++
+			i(212259),	-- Potion of Unwavering Focus+++
+			i(212245),	-- Slumbering Soul Serum+
+			i(212246),	-- Slumbering Soul Serum++
+			i(212247),	-- Slumbering Soul Serum+++
+			i(212263),	-- Tempered Potion+
+			i(212264),	-- Tempered Potion++
+			i(212265),	-- Tempered Potion+++
+			i(212289),	-- Vicious Flask of Classical Spirits
+			i(212292),	-- Vicious Flask of Honor
+			i(212295),	-- Vicious Flask of Manifested Fury
+			i(212298),	-- Vicious Flask of the Wrecking Ball
+		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ALCHEMY,
 		},{
@@ -88,14 +259,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81130, 432962);	-- Algari Flask Cauldron
 			FirstCraft(81131, 432963);	-- Algari Potion Cauldron
 		})),
-		--[[
 		filter(MISC, {
+			i(212781),	-- Formulated Courage
 		}),
 		filter(REAGENTS, {
+			i(212514),	-- Blasphemite
+			i(210815),	-- Coreway Catalyst
+			i(211805),	-- Gleaming Transmutagen
+			i(212563),	-- Harmonious Horticulture+
+			i(212564),	-- Harmonious Horticulture++
+			i(212565),	-- Harmonious Horticulture+++
+			i(211803),	-- Mercurial Transmutagen
+			i(211802),	-- Ominous Transmutagen
+			i(211804),	-- Volatile Transmutagen
 		}),
 		filter(TRINKET_F, {
+			i(210816),	-- Algari Alchemist Stone
 		}),
-		--]]
 	}),
 	--[[
 	prof(BLACKSMITHING, {

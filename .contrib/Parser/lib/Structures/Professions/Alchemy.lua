@@ -514,3 +514,16 @@ DF_ALCHEMY = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 		r(370748),	-- Reclaim Concoctions
 	}),
 }));
+TWW_ALCHEMY = bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+	r(423321),	-- Khaz Algar Alchemy
+	r(427174),	-- Wild Experimentation
+	filter(CONSUMABLES, {
+		r(430590),	-- Algari Healing Potion
+	}),
+	filter(MISC, {
+		r(425137),	-- Recraft Equipment
+	}),
+	filter(REAGENTS, {
+		r(427214),	-- Neutralize Concoctions
+	}),
+});

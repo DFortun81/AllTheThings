@@ -8,6 +8,11 @@ root(ROOTS.Unsorted, {
 	i(183835),	-- Crate of Zandalari Archaeology Fragments
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+			n(PROFESSIONS, {
+				prof(ALCHEMY, {
+					i(223080),	-- Recipe: Algari Alchemist Stone (RECIPE!)
+				}),
+			}),
 		})),
 	}),
 	expansion(EXPANSION.DF, {
