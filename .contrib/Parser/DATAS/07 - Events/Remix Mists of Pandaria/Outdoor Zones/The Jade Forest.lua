@@ -369,6 +369,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215863),	-- Torch of Midnight
 					i(215700),	-- Trailseeker Longrifle
 					i(215946),	-- Valiant's Honorblade
+					i(215675),	-- Wakener's Lantern (drop)
 				}),
 			}),
 		},

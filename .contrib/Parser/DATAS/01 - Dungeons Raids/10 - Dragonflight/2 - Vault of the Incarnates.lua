@@ -597,9 +597,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					crit(64951, {	-- Broodkeeper Diurna
 						["_encounter"] = { DIURNA, DIFFICULTY.RAID.MYTHIC },
 					}),
-					crit(64952, {	-- Raszageth the Storm-Eater
-						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
-					}),
+					-- Criteria not found in past wagotools tables, typo maybe? Would explain there existing a mysterious extra.
+					-- crit(64952, {	-- Raszageth the Storm-Eater
+					-- 	["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
+					-- }),
 					crit(64953, {	-- Raszageth the Storm-Eater (extra criteria??)
 						["_encounter"] = { RASZAGETH, DIFFICULTY.RAID.MYTHIC },
 					}),

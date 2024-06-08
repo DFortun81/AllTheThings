@@ -769,6 +769,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215475),	-- Malkorok's Headtaker
 						i(215995),	-- Mistspinner's Channel
 						i(215575),	-- Nazgrim's Shanker
+						i(215570),	-- Norushen's Dagger (Malkorok HC)
 						i(216552),	-- Noreshen Tower Shield
 						i(215579),	-- Rik'kal's Bloody Blade
 						i(215829),	-- Rod of the Megantholithic Apparatus
