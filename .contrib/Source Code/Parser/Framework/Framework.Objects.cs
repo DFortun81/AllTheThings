@@ -2033,12 +2033,14 @@ end");
 
                     // List of String Data Type Fields (stored as List<string> for usability reasons)
                     case "customCollect":
-                    case "timeline":
                     case "zone-text-names":
                         {
                             MergeStringArrayData(item, field, value);
                             break;
                         }
+                    case "timeline":
+                        Timeline.Merge(item, value);
+                        break;
 
                     // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
                     case "sym":

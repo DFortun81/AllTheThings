@@ -633,8 +633,9 @@ namespace ATT
                     case "timeline":
                         if (!ProcessingMergeData) break;
 
-                        Objects.MergeStringArrayData(item, field, value);
-                        LogDebug($"INFO: Merge {item["itemID"]}: {field} <==", value);
+                        //Objects.MergeStringArrayData(item, field, value);
+                        Timeline.Merge(item, value);
+                        LogDebug($"INFO: Merge {item["itemID"]}: {field} +", value);
                         break;
 
                     // Integer-Array Data Type Fields (stored as List<object> for usability reasons)

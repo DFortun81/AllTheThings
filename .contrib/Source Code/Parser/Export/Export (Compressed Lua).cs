@@ -33,10 +33,10 @@ namespace ATT
             else if (data is double db) builder.Append(ToString(db));
             else if (data is string str) ExportStringValue(builder, str);
             else if (data is IExportableField field) ExportCompressedLua(builder, field.AsExportType());
-            else if (data is IList<long> longlist) ExportCompressedLua(builder, longlist);
-            else if (data is IList<string> strlist) ExportCompressedLua(builder, strlist);
-            else if (data is IList<List<object>> listObjects) ExportCompressedLua(builder, listObjects);
-            else if (data is IList<object> objlist) ExportCompressedLua(builder, objlist);
+            else if (data is IEnumerable<long> longlist) ExportCompressedLua(builder, longlist);
+            else if (data is IEnumerable<string> strlist) ExportCompressedLua(builder, strlist);
+            else if (data is IEnumerable<List<object>> listObjects) ExportCompressedLua(builder, listObjects);
+            else if (data is IEnumerable<object> objlist) ExportCompressedLua(builder, objlist);
             else if (data is IDictionary<string, List<object>> listdict) ExportCompressedLua(builder, listdict);
             else if (data is IDictionary<string, object> dict) ExportCompressedLua(builder, dict);
             else if (data is IDictionary<long, long> longLongDict) ExportCompressedLua(builder, longLongDict);
@@ -266,69 +266,75 @@ namespace ATT
         /// </summary>
         /// <param name="builder">The builder.</param>
         /// <param name="list">The list of data.</param>
-        private static void ExportCompressedLua<VALUE>(StringBuilder builder, IList<VALUE> list)
+        private static void ExportCompressedLua<VALUE>(StringBuilder builder, IEnumerable<VALUE> list)
         {
             // If the list doesn't have any content, then return immediately.
-            if (list.Any())
+            if (!list.Any())
             {
-                // Determine if this list type is something that gets marked
-                var listType = list[0].GetType();
-                if (listType == typeof(long)
-                    || listType == typeof(int)
-                    || listType == typeof(double)
-                    || listType == typeof(float)
-                    || listType == typeof(string))
-                {
-                    // These are simple types that can be compressed.
-                    // Open Bracket for beginning of the List.
-                    var subbuilder = new StringBuilder();
-                    subbuilder.Append('{');
-
-                    // Export Fields
-                    //int maxValue = 0, value = 0;
-                    for (int i = 0, count = list.Count; i < count; ++i)
-                    {
-                        // If this is NOT the first field, append a comma.
-                        if (i > 0) subbuilder.Append(',');
-
-                        // Append the undetermined object's format to the sub builder.
-                        ExportCompressedLua(subbuilder, list[i]);
-
-                        // Determine if this is higher than the current max value.
-                        //value = Convert.ToInt64(list[i]);
-                        //if (value > maxValue) maxValue = value;
-                    }
-
-                    // Close Bracket for the end of the List.
-                    subbuilder.Append('}');
-
-                    // Cache the structure, mark it, then write it to the builder.
-                    var structure = subbuilder.ToString();
-                    /*if (maxValue < 40)*/
-                    MarkStructure(structure);
-                    builder.Append(structure);
-                }
-                else
-                {
-                    // These are complex types that are not appropriate for compression.
-                    // Open Bracket for beginning of the List.
-                    builder.Append('{');
-
-                    // Export Fields
-                    for (int i = 0, count = list.Count; i < count; ++i)
-                    {
-                        // If this is NOT the first field, append a comma.
-                        if (i > 0) builder.Append(',');
-
-                        // Append the undetermined object's format to the sub builder.
-                        ExportCompressedLua(builder, list[i]);
-                    }
-
-                    // Close Bracket for the end of the List.
-                    builder.Append('}');
-                }
+                builder.Append("{}");
+                return;
             }
-            else builder.Append("{}");
+
+            // Determine if this list type is something that gets marked
+            var listType = list.First().GetType();
+            if (listType == typeof(long)
+                || listType == typeof(int)
+                || listType == typeof(double)
+                || listType == typeof(float)
+                || listType == typeof(string))
+            {
+                // These are simple types that can be compressed.
+                // Open Bracket for beginning of the List.
+                var subbuilder = new StringBuilder();
+                subbuilder.Append('{');
+
+                // Export Fields
+                //int maxValue = 0, value = 0;
+                bool first = true;
+                foreach(var obj in list)
+                {
+                    // If this is NOT the first field, append a comma.
+                    if (!first) { subbuilder.Append(','); }
+                    else { first = false; }
+
+                    // Append the undetermined object's format to the sub builder.
+                    ExportCompressedLua(subbuilder, obj);
+
+                    // Determine if this is higher than the current max value.
+                    //value = Convert.ToInt64(obj);
+                    //if (value > maxValue) maxValue = value;
+                }
+
+                // Close Bracket for the end of the List.
+                subbuilder.Append('}');
+
+                // Cache the structure, mark it, then write it to the builder.
+                var structure = subbuilder.ToString();
+                /*if (maxValue < 40)*/
+                MarkStructure(structure);
+                builder.Append(structure);
+            }
+            else
+            {
+                // These are complex types that are not appropriate for compression.
+                // Open Bracket for beginning of the List.
+                builder.Append('{');
+
+                // Export Fields
+                bool first = true;
+                foreach (var obj in list)
+                {
+                    // If this is NOT the first field, append a comma.
+                    if (!first) { builder.Append(','); }
+                    else { first = false; }
+
+                    // Append the undetermined object's format to the sub builder.
+                    ExportCompressedLua(builder, obj);
+                }
+
+                // Close Bracket for the end of the List.
+                builder.Append('}');
+            }
         }
 
         /// <summary>

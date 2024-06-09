@@ -33,10 +33,10 @@ namespace ATT
             else if (data is double db) builder.Append(ToString(db));
             else if (data is string str) ExportStringValue(builder, str);
             else if (data is IExportableField field) ExportRawLua(builder, field.AsExportType());
-            else if (data is IList<long> longlist) ExportRawLua(builder, longlist, indent);
-            else if (data is IList<string> strlist) ExportRawLua(builder, strlist, indent);
-            else if (data is IList<List<object>> listObjects) ExportRawLua(builder, listObjects, indent);
-            else if (data is IList<object> objlist) ExportRawLua(builder, objlist, indent);
+            else if (data is IEnumerable<long> longlist) ExportRawLua(builder, longlist, indent);
+            else if (data is IEnumerable<string> strlist) ExportRawLua(builder, strlist, indent);
+            else if (data is IEnumerable<List<object>> listObjects) ExportRawLua(builder, listObjects, indent);
+            else if (data is IEnumerable<object> objlist) ExportRawLua(builder, objlist, indent);
             else if (data is IDictionary<string, List<object>> listdict) ExportRawLua(builder, listdict, indent);
             else if (data is IDictionary<string, object> dict) ExportRawLua(builder, dict, indent);
             else if (data is IDictionary<long, long> longLongDict) ExportRawLua(builder, longLongDict, indent);
@@ -138,7 +138,7 @@ namespace ATT
 
                         // Append the Sub-Indent and the Field Name
                         builder.Append(subindent).Append("[");
-                        ExportRawLua(builder, "races", subindent);
+                        ExportRawLua(builder, (object)"races", subindent);
                         builder.Append("] = ").Append(factionRaces);
                     }
                     catch
@@ -204,11 +204,10 @@ namespace ATT
         /// <param name="builder">The builder.</param>
         /// <param name="list">The list of data.</param>
         /// <param name="indent">The string to prefix before each line. (indenting)</param>
-        private static void ExportRawLua<VALUE>(StringBuilder builder, IList<VALUE> list, string indent = "")
+        private static void ExportRawLua<VALUE>(StringBuilder builder, IEnumerable<VALUE> list, string indent = "")
         {
             // If the list doesn't have any content, then return immediately.
-            var count = list.Count;
-            if (count == 0)
+            if (!list.Any())
             {
                 builder.Append("{}");
                 return;
@@ -223,21 +222,26 @@ namespace ATT
                 builder.AppendLine();
 
             // Export Fields
-            for (int i = 0; i < count; ++i)
+            bool first = true;
+            foreach (var obj in list)
             {
                 // If this is NOT the first field, append a comma.
-                if (i > 0)
+                if (!first)
                 {
                     builder.Append(',');
                     if (IncludeRawNewlines)
                         builder.AppendLine();
+                }
+                else
+                {
+                    first = false;
                 }
 
                 // Append the Sub-Indent
                 builder.Append(subindent);
 
                 // Append the undetermined object's format to the builder.
-                ExportRawLua(builder, list[i], subindent);
+                ExportRawLua(builder, obj, subindent);
             }
 
             // Close Bracket for the end of the List.

@@ -11,6 +11,16 @@ namespace ATT
     partial class Framework
     {
         /// <summary>
+        /// Represents a set of FilterIDs which when linked to Items in Ensembles are always granted when the Ensemble is used, even when the primary FilterID
+        /// of the entire set of Items in an Ensemble are a different FilterID</para>
+        /// Potentially only Cosmetic is applicable, but any other Types determined as always granted from Ensembles should be added here
+        /// </summary>
+        internal static readonly HashSet<long> Ensemble_IgnoredFilterIDs = new HashSet<long>
+        {
+            (long)Objects.Filters.Cosmetic
+        };
+
+        /// <summary>
         /// Process all of the data loaded into the database.
         /// </summary>
         public static void Process()
@@ -1059,6 +1069,11 @@ namespace ATT
 
             if (!data.TryGetValue("_sourceIDs", out List<long> sourceIDs)) return true;
 
+            //if (ensembleID == 215356)
+            //{
+
+            //}
+
             // Ensembles will Source raw Items/Appearances which have no other currently-obtainable source
             // Or will generate a symlink for the duplicated Items/Appearances
             List<IDictionary<string, object>> symlinkSources = new List<IDictionary<string, object>>();
@@ -1120,13 +1135,16 @@ namespace ATT
                     {
                         long specificFilter = ensembleFilterCount.First(kvp => kvp.Value == maxItemsPerFilter).Key;
                         // Cosmetic-granting ensembles grant appearances for other armor types as well
-                        if (specificFilter != (long)Objects.Filters.Cosmetic)
+                        if (!Ensemble_IgnoredFilterIDs.Contains(specificFilter))
                         {
                             List<object> removedSymlinked = new List<object>();
                             List<object> removedSourced = new List<object>();
                             int removedSymlinks = symlinkSources.RemoveAll(s =>
                             {
-                                if (s.TryGetValue("f", out long filterID) && filterID != specificFilter)
+                                // Some Filter Type Items are still granted when contained in a different-Filtered Ensemble
+                                if (s.TryGetValue("f", out long filterID)
+                                    && filterID != specificFilter
+                                    && !Ensemble_IgnoredFilterIDs.Contains(filterID))
                                 {
                                     if (s.TryGetValue("itemID", out long itemID))
                                     {
@@ -1142,7 +1160,10 @@ namespace ATT
                             });
                             int removedRawSources = rawSources.RemoveAll(s =>
                             {
-                                if (s.TryGetValue("f", out long filterID) && filterID != specificFilter)
+                                // Some Filter Type Items are still granted when contained in a different-Filtered Ensemble
+                                if (s.TryGetValue("f", out long filterID)
+                                    && filterID != specificFilter
+                                    && !Ensemble_IgnoredFilterIDs.Contains(filterID))
                                 {
                                     if (s.TryGetValue("itemID", out long itemID))
                                     {
@@ -1157,7 +1178,10 @@ namespace ATT
                                 return false;
                             });
 
-                            LogDebug($"Removed {removedSymlinks} {ToJSON(removedSymlinked)} symlink items & {removedRawSources} {ToJSON(removedSourced)} sourced items from Ensemble {ensembleID} due to incorrect Filter from expected {(Objects.Filters)specificFilter}", data);
+                            if (removedSymlinks > 0 || removedRawSources > 0)
+                            {
+                                LogDebug($"Removed {removedSymlinks} {ToJSON(removedSymlinked)} symlink items & {removedRawSources} {ToJSON(removedSourced)} sourced items from Ensemble {ensembleID} due to incorrect Filter from expected {(Objects.Filters)specificFilter}", data);
+                            }
                         }
                     }
                 }
@@ -2909,29 +2933,26 @@ namespace ATT
         private static bool CheckTimeline(IDictionary<string, object> data)
         {
             // Check to see what patch this data was made relevant for.
-            if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
+            if (data.TryGetValue("timeline", out object timelineRef) && timelineRef is Timeline timeline)
             {
                 int removed = 0;
                 var index = 0;
-                var lastIndex = timeline.Count - 1;
+                var lastIndex = timeline.EntryCount - 1;
                 long addedPatch = 10000;
                 long removedPatch = 10000;
-                foreach (var entry in timeline)
+                foreach (var entry in timeline.Entries)
                 {
-                    var commandSplit = Convert.ToString(entry).Split(' ');
-                    var longVersion = commandSplit[1].Split('.').ConvertVersion();
-                    var version = longVersion.ConvertToGameVersion();
-                    switch (commandSplit[0])
+                    switch (entry.Change)
                     {
                         // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
                         case "created":
                             {
-                                if (CURRENT_SHORT_RELEASE_VERSION < version)
+                                if (CURRENT_SHORT_RELEASE_VERSION < entry.Version)
                                 {
                                     // Not implemented yet and doesn't exist in the database.
                                     return false;    // Invalid
                                 }
-                                else if (CURRENT_RELEASE_VERSION < longVersion)
+                                else if (CURRENT_RELEASE_VERSION < entry.LongVersion)
                                 {
                                     //Console.Write("NOT CREATED: ");
                                     //Console.WriteLine(ToJSON(data));
@@ -2947,7 +2968,7 @@ namespace ATT
                         case "added":
                             {
                                 // If it hasn't happened yet, then do a thing.
-                                if (CURRENT_SHORT_RELEASE_VERSION < version)
+                                if (CURRENT_SHORT_RELEASE_VERSION < entry.Version)
                                 {
                                     // If this is the first patch the thing was added...
                                     if (index == 0)
@@ -2957,7 +2978,7 @@ namespace ATT
                                         return false;    // Invalid
                                     }
                                 }
-                                else if (CURRENT_RELEASE_VERSION < longVersion)
+                                else if (CURRENT_RELEASE_VERSION < entry.LongVersion)
                                 {
                                     //Console.Write("NOT ADDED: ");
                                     //Console.WriteLine(ToJSON(data));
@@ -2976,12 +2997,12 @@ namespace ATT
                                 }
 
                                 // Mark the most relevant patch this comes back on.
-                                if (addedPatch <= CURRENT_SHORT_RELEASE_VERSION || removed > 0) addedPatch = version;
+                                if (addedPatch <= CURRENT_SHORT_RELEASE_VERSION || removed > 0) addedPatch = entry.Version;
                                 break;
                             }
                         case "deleted":
                             {
-                                if (index == lastIndex && CURRENT_RELEASE_VERSION >= longVersion)
+                                if (index == lastIndex && CURRENT_RELEASE_VERSION >= entry.LongVersion)
                                 {
                                     // We don't want things that got deleted to be in the addon.
                                     // NOTE: If it's not the last entry, that means it might have been readded later?
@@ -2992,37 +3013,17 @@ namespace ATT
                                 }
 
                                 // Mark the first patch this was removed on. (the upcoming patch)
-                                if (removedPatch <= 10000) removedPatch = version;
+                                if (removedPatch <= 10000) removedPatch = entry.Version;
                                 break;
                             }
                         case "removed":
                             {
-                                if (CURRENT_RELEASE_VERSION >= longVersion) removed = 2;
+                                if (CURRENT_RELEASE_VERSION >= entry.LongVersion) removed = 2;
                                 else
                                 {
                                     // Mark the first patch this was removed on. (the upcoming patch)
-                                    if (removedPatch <= 10000) removedPatch = version;
+                                    if (removedPatch <= 10000) removedPatch = entry.Version;
                                 }
-                                break;
-                            }
-                        case "blackmarket":
-                            {
-                                // Mark the most relevant patch this comes back on.
-                                if (addedPatch <= CURRENT_SHORT_RELEASE_VERSION || removed > 0) addedPatch = version;
-
-                                // NOTE: This should be deprecated, if it's in the blackmarket, that in itself is a separate source.
-                                // It doesn't mean the original source ever came back!
-                                if (CURRENT_SHORT_RELEASE_VERSION >= version) removed = 3;
-                                break;
-                            }
-                        case "timewalking":
-                            {
-                                // Mark the most relevant patch this comes back on.
-                                if (addedPatch <= CURRENT_SHORT_RELEASE_VERSION || removed > 0) addedPatch = version;
-
-                                // NOTE: This should be deprecated, if it's in the timewalking, that in itself is a separate source.
-                                // It doesn't mean the original source ever came back!
-                                if (CURRENT_SHORT_RELEASE_VERSION >= version) removed = 5;
                                 break;
                             }
                     }
@@ -3036,15 +3037,6 @@ namespace ATT
                     case 1:
                         data["u"] = 1;
                         break;
-                    // Black Market
-                    case 3:
-                        data["u"] = 9;
-                        break;
-                    // Timewalking re-implemented
-                    case 5:
-                        data["e"] = 1271;
-                        break;
-
                     case 4: // Deleted
                     case 2: // Removed From Game
                         data["u"] = 2;
