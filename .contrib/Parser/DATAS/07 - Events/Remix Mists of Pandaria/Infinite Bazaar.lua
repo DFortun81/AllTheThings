@@ -1254,260 +1254,130 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					iensemble(217824, { -- Arsenal: Webbed Soulforged Weaponry
 						["classes"] = DEATHKNIGHT,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217768),	-- Webbed Soulforged Devourer
-							i(217767),	-- Webbed Soulforged Eviscerator
-							i(217766),	-- Webbed Soulforged Greataxe
-						},
 					}),
 					iensemble(217837, { -- Ensemble: Webbed Soulforged Exoskeleton
 						["classes"] = DEATHKNIGHT,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217765),	-- Webbed Soulforged Girdle
-							i(217763),	-- Webbed Soulforged Headguard
-							i(217764),	-- Webbed Soulforged Spaulders
-						},
 					}),
 				}),
 				clWithoutLock(DEMONHUNTER, {
 					iensemble(217828, { -- Arsenal: Aldrachi Blasphemer's Glaives
 						["classes"] = DEMONHUNTER,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217773),	-- Aldrachi Blasphemer's Warglaive
-							i(217772),	-- Aldrachi Blasphemer's Wingglaive
-						},
 					}),
 					iensemble(217842, { -- Ensemble: Aldrachi Blasphemer's Flames
 						["classes"] = DEMONHUNTER,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217769),	-- Aldrachi Blasphemer's Horns
-							i(217770),	-- Aldrachi Blasphemer's Mantle
-							i(217771),	-- Aldrachi Blasphemer's Shard
-						},
 					}),
 				}),
 				clWithoutLock(DRUID, {
 					iensemble(217829, { -- Arsenal: Ela'lothen's Blessings of Rebirth
 						["classes"] = DRUID,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217759),	-- Ela'lothen's Blade of Rebirth
-							i(217760),	-- Ela'lothen's Claws of Rebirth
-							i(217761),	-- Ela'lothen's Crescent of Rebirth
-							i(217762),	-- Ela'lothen's Jewel of Rebirth
-						},
 					}),
 					iensemble(217843, { -- Ensemble: Ela'lothen's Vestment of Rebirth
 						["classes"] = DRUID,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217758),	-- Ela'lothen's Fangs of Rebirth
-							i(217756),	-- Ela'lothen's Helm of Rebirth
-							i(217757),	-- Ela'lothen's Spaulders of Rebirth
-						},
 					}),
 				}),
 				clWithoutLock(EVOKER, {
 					iensemble(217821, { -- Arsenal: Treasure of the Gold Hoarder
 						["classes"] = EVOKER,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217802),	-- Flames of the Gold Hoarder
-							i(217801),	-- Flight of the Gold Hoarder
-							i(217803),	-- Saber of the Gold Hoarder
-						},
 					}),
 					iensemble(217835, { -- Ensemble: Scales of the Gold Hoarder
 						["classes"] = EVOKER,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217798),	-- Horns of the Gold Hoarder
-							i(217800),	-- Sash of the Gold Hoarder
-							i(217799),	-- Shoulderguards of the Gold Hoarder
-						},
 					}),
 				}),
 				clWithoutLock(HUNTER, {
 					iensemble(217820, { -- Arsenal: Dreadsquall Hunter's Preference
 						["classes"] = HUNTER,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217815),	-- Dreadsquall Hunter's Harpooner
-							i(217814),	-- Dreadsquall Hunter's Pride
-							i(217813),	-- Dreadsquall Hunter's Serrator
-						},
 					}),
 					iensemble(217834, {	--  Ensemble: Dreadsquall Hunter's Camouflage
 						["classes"] = HUNTER,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217811),	-- Dreadsquall Hunter's Ammunition
-							i(217810),	-- Dreadsquall Hunter's Beak
-							i(217812),	-- Dreadsquall Hunter's Crest
-						},
 					}),
 				}),
 				clWithoutLock(MAGE, {
 					iensemble(217823, { -- Arsenal: Sin'dorei Magister's Enchantment
 						["classes"] = MAGE,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217797),	-- Sin'dorei Magister's Scepter
-							i(217795),	-- Sin'dorei Magister's Scimitar
-							i(217796),	-- Sin'dorei Magister's Shard
-						},
 					}),
 					iensemble(217836, { -- Ensemble: Sin'dorei Magister's Regalia
 						["classes"] = MAGE,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217794),	-- Sin'dorei Magister's Belt
-							i(217793),	-- Sin'dorei Magister's Epaulets
-							i(217792),	-- Sin'dorei Magister's Orbs
-						},
 					}),
 				}),
 				clWithoutLock(MONK, {
 					iensemble(217827, { -- Arsenal: Shado-Pan Watcher Arsenal
 						["classes"] = MONK,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217784),	-- Shado-Pan Watcher Bloom
-							i(217783),	-- Shado-Pan Watcher Fan
-							i(217785),	-- Shado-Pan Watcher Keg
-						},
 					}),
 					iensemble(217841, { -- Ensemble: Shado-Pan Watcher Guise
 						["classes"] = MONK,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217782),	-- Shado-Pan Watcher Cord
-							i(217780),	-- Shado-Pan Watcher Kabuto
-							i(217781),	-- Shado-Pan Watcher Pauldrons
-						},
 					}),
 				}),
 				clWithoutLock(PALADIN, {
 					iensemble(217832, { -- Arsenal: Armaments of the Holy Avenger
 						["classes"] = PALADIN,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217743),	-- Club of the Holy Avenger
-							i(217742),	-- Hammer of the Holy Avenger
-							i(217741),	-- Kite of the Holy Avenger
-						},
 					}),
 					iensemble(217846, { -- Ensemble: Plate of the Holy Avenger
 						["classes"] = PALADIN,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217738),	-- Helm of the Holy Avenger
-							i(217739),	-- Shoulderguards of the Holy Avenger
-							i(217740),	-- Cinch of the Holy Avenger
-						},
 					}),
 				}),
 				clWithoutLock(PRIEST, {
 					iensemble(217831, { -- Arsenal: Secrets of the Abyssal Cult
 						["classes"] = PRIEST,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217744),	-- Libram of the Abyssal Cult
-							i(217745),	-- Scepter of the Abyssal Cult
-							i(217746),	-- Staff of the Abyssal Cult
-						},
 					}),
 					iensemble(217845, { -- Ensemble: Silks of the Abyssal Cult
 						["classes"] = PRIEST,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217750),	-- Hood of the Abyssal Cult
-							i(217751),	-- Mantle of the Abyssal Cult
-							i(217752),	-- Sash of the Abyssal Cult
-						},
 					}),
 				}),
 				clWithoutLock(ROGUE, {
 					iensemble(217830, { -- Arsenal: Igneous Onyx Blades
 						["classes"] = ROGUE,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217748),	-- Igneous Onyx Impaler
-							i(217747),	-- Igneous Onyx Serrated Edge
-							i(217749),	-- Igneous Onyx Shortblade
-						},
 					}),
 					iensemble(217844, { -- Ensemble: Igneous Onyx Uniform
 						["classes"] = ROGUE,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217755),	-- Igneous Onyx Buckle
-							i(217753),	-- Igneous Onyx Cowl
-							i(217754),	-- Igneous Onyx Pauldrons
-						},
 					}),
 				}),
 				clWithoutLock(SHAMAN, {
 					iensemble(217819, { -- Arsenal: Tools of Krag'wa's Disciple
 						["classes"] = SHAMAN,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217808),	-- Hatchet of Krag'wa's Disciple
-							i(217807),	-- Safeguard of Krag'wa's Disciple
-							i(217809),	-- Talons of Krag'wa's Disciple
-						},
 					}),
 					iensemble(217833, { -- Ensemble: Imminence of Krag'wa's Disciple
 						["classes"] = SHAMAN,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217804),	-- Headdress of Krag'wa's Disciple
-							i(217805),	-- Idols of Krag'wa's Disciple
-							i(217806),	-- Vines of Krag'wa's Disciple
-						},
 					}),
 				}),
 				clWithoutLock(WARLOCK, {
 					iensemble(217826, { -- Arsenal: Instruments of Temptation's Call
 						["classes"] = WARLOCK,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217791),	-- Caduceus of Temptation's Call
-							i(217790),	-- Effigy of Temptation's Call
-							i(217789),	-- Flayer of Temptation's Call
-						},
 					}),
 					iensemble(217839, { -- Ensemble: Jewels of Temptation's Call
 						["classes"] = WARLOCK,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217788),	-- Chains of Temptation's Call
-							i(217786),	-- Voice of Temptation's Call
-							i(217787),	-- Wings of Temptation's Call
-						},
 					}),
 				}),
 				clWithoutLock(WARRIOR, {
 					iensemble(217825, { -- Arsenal: Fanatical Champion's Aggression
 						["classes"] = WARRIOR,
 						["cost"] = {{"c", BRONZE, 3000}},
-						["_g"] = {
-							i(217779),	-- Fanatical Champion's Disemboweler
-							i(217778),	-- Fanatical Champion's Gladius
-							i(217777),	-- Fanatical Champion's Thorns
-						},
 					}),
 					iensemble(217838, { -- Ensemble: Fanatical Champion's Trophies
 						["classes"] = WARRIOR,
 						["cost"] = {{"c", BRONZE, 4000}},
-						["_g"] = {
-							i(217776),	-- Fanatical Champion's Belt
-							i(217775),	-- Fanatical Champion's Tusks
-							i(217774),	-- Fanatical Champion's Vision
-						},
 					}),
 				}),
 			}),
