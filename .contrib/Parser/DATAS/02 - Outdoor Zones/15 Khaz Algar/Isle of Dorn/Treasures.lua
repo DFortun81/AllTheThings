@@ -83,8 +83,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					}),
 				},
 			}),
-			--]]
-			--[[
 			o(x, {	-- U'llort the Self-Exalted
 				--[description] = "",	-- TODO: Require Boskroot cap
 				--["questID"] = x,
@@ -124,6 +122,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--
 					--some rep and two jc gems
 				},
+			}),
+			o(442718, {	-- Elemental Pearl
+				["coord"] = { 53.0, 18.5, ISLE_OF_DORN },
+				["g"] = {
+					i(221504),	-- Elemental Pearl
+				},
+			}),
+			n(222847, {	-- Weary Water Elemental
+				["coord"] = { 54.1, 19.0, ISLE_OF_DORN },
+				["questID"] = 82134,
+				["cost"] = {{"i", 221504, 1}},	-- 1x Elemental Pearl
+				["g"] = {
+					o(444215, {	-- Mysterious Orb
+						["questID"] = 83224,
+						["g"] = {
+							i(224373),	-- Waterlord's Iridescent Gem
+						},
+					}),
+				},
+			}),
+			-- Couldnt extract objectID
+			q(82047, {	-- Watcher of the North (Achievement Crit)
+				["coord"] = { 57.2, 20.0, ISLE_OF_DORN },
 			}),
 		}),
 	}),

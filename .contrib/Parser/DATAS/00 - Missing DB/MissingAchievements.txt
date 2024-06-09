@@ -312,15 +312,6 @@ ach(40311),	-- Sharing the Light
 ach(40312),	-- Starting the Flames
 ach(40313),	-- Igniting the Keyflames
 ach(40314),	-- Fragments of Memories \\ Memories of a Worldsoul
-ach(40316),	-- Isle of Dorn: Bronze
-ach(40317),	-- Isle of Dorn: Silver
-ach(40318),	-- Isle of Dorn: Gold
-ach(40319),	-- Isle of Dorn Advanced: Bronze
-ach(40320),	-- Isle of Dorn Advanced: Silver
-ach(40321),	-- Isle of Dorn Advanced: Gold
-ach(40322),	-- Isle of Dorn Reverse: Bronze
-ach(40323),	-- Isle of Dorn Reverse: Silver
-ach(40324),	-- Isle of Dorn Reverse: Gold
 ach(40325),	-- The Ringing Deeps: Bronze
 ach(40326),	-- The Ringing Deeps: Silver
 ach(40327),	-- The Ringing Deeps: Gold
@@ -533,15 +524,12 @@ ach(40658),	-- Prioress Murrapray kills (Heroic Priory of the Sacred Flame)
 ach(40659),	-- Prioress Murrapray kills (Mythic Priory of the Sacred Flame)
 ach(40660),	-- The War Within Season 1: Spelunker Supreme
 ach(40662),	-- It's Not Much, But It's Honest Work
-ach(40663),	-- Skyriding Glyphs: Dhar Oztan
 ach(40664),	-- Skyriding Glyphs: Storm's Watch
 ach(40665),	-- Skyriding Glyphs: Dhar Durgaz
 ach(40666),	-- Skyriding Glyphs: Sunken Shield
-ach(40667),	-- Skyriding Glyphs: Thul Medran
 ach(40668),	-- Skyriding Glyphs: Thunderhead Peak
 ach(40669),	-- Skyriding Glyphs: Cinderbrew Meadery
 ach(40670),	-- Skyriding Glyphs: Mourning Rise
-ach(40671),	-- Skyriding Glyphs: Ironwold
 ach(40672),	-- Skyriding Glyphs: Gundargaz
 ach(40673),	-- Skyriding Glyphs: The Stonevault Exterior
 ach(40674),	-- Skyriding Glyphs: The Lost Mines

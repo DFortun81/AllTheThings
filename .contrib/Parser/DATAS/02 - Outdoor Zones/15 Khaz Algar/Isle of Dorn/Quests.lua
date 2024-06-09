@@ -4,276 +4,285 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		n(QUESTS, {
-			--[[
-			-- alpha build data
-			q(xx, {	-- xx
-				["sourceQuests"] = { xx },	-- xx
-				["provider"] = { "n", xxx },	-- xxx
-				["coord"] = { x, y, ISLE_OF_DORN },
-				["g"] = {
-					i(),	--
-				},
-			}),
-			--]]
-			q(82199),	-- marked right after you click on tauren to start Isle of Dorn (should be previous quest in chain to this, I guess?)
-			--with a little bit of delay, after server realize that you should be ported in zone
-			q(78713),	-- |
-			q(78714),	-- |
-			q(78715),	-- |
-			q(78716),	-- | could be some pre-patch/xpac quest intro quest chain for phase?
-			q(80500),	-- |
-			q(81930),	-- |
-			q(81966),	-- |
-			q(83543),	-- |
+			-- Using Questauren These gets completed (Probably Inbetween Bronzebeard Family and Violet Impact)
+			q(82199),	--
+			q(81966),	-- Slept like a Rock
+			q(83543),	-- |could be some pre-patch/xpac quest intro quest chain for phase?
 			--
 			-- Story quest chain START
-			q(78529, {	-- Violet Impact
-				--["sourceQuests"] = { xx },	-- xx
-				["coord"] = { 23.7, 56.6, ISLE_OF_DORN },	-- but probably starting in some other area, since this one 'throw' player here
+			q(81930, {	-- The War Within [A]
+				["races"] = ALLIANCE_ONLY,
 			}),
-			q(78530, {	-- Slay the Saboteurs
-				--["sourceQuests"] = { xx },	-- xx // up right when you phase here, could be side quest
-				["provider"] = { "n", 211944 },	-- Lady Jaina Proudmoore
-				["coord"] = { 24.4, 57.1, ISLE_OF_DORN },
+			q(78713, {	-- The War Within [H]
+				["races"] = HORDE_ONLY,
 			}),
-			q(78531, {	-- Urgent Recovery
-				["sourceQuests"] = { 78529 },	-- Violet Impact
-				["provider"] = { "n", 211993 },	-- Thrall
-				["coord"] = { 24.3, 57.2, ISLE_OF_DORN },
-			}),
-			q(78532, {	-- Erratic Artifacts
-				--["sourceQuests"] = { 78531 },	-- Urgent Recovery // actually required in quest log, since spawn after you assist him during quest
-				["provider"] = { "n", 223166 },	-- Archmage Aethas Sunreaver
-				["coord"] = { 26.1, 57.3, ISLE_OF_DORN },
-				["g"] = {
-					i(211535),	-- Scroll of Shattering (QI!)
-				},
-			}),
-			q(78533, {	-- Secure the Beach
+			q(78714, {	-- Oh, THAT Sword
 				["sourceQuests"] = {
-					78532,	-- Erratic Artifacts
-					78531,	-- Urgent Recovery
-					78530,	-- Slay the Saboteurs // unsure about this one
+					81930,	-- The War Within [A]
+					78713,	-- The War Within [H]
 				},
-				["provider"] = { "n", 212450 },	-- Anduin Wrynn
-				["coord"] = { 24.4, 57.1, ISLE_OF_DORN },
-				["g"] = {
-					i(219754),	-- Remembrance of the Fallen City
+				["providers"] = {
+					{ "n", 213625 },	-- Lady Jaina Proudmoore
+					{ "n", 213620 },	-- Thrall
 				},
+				["coord"] = { 41.9, 45.0, SILITHUS_THE_WOUND },
+				["maps"] = { 2321 },	-- Chamber of Heart
+				["sourceQuestNumRequired"] = 1,
 			}),
-			q(78534, {	-- To Dornogal	// this quest remove aura from not be able to fly in Isle
-				["sourceQuests"] = { 78533 },	-- Secure the Beach
-				["provider"] = { "n", 211859 },	-- Baelgrim
-				["coord"] = { 25.5, 58.0, ISLE_OF_DORN },
+			q(78715, {	-- Azeroth's Voice
+				["sourceQuests"] = { 78714 },	-- Oh, THAT Sword
+				["provider"] = { "n", 213624 },	-- Magni Bronzebeard
+				["coord"] = { 50.1, 64.4, 2321 },	-- Chamber of Heart
 			}),
-			q(78535, {	-- They Come from Below
-				["sourceQuests"] = { 78534 },	-- To Dornogal
-				["provider"] = { "n", 216628 },	-- Baelgrim
-				["coord"] = { 33.6, 75.2, DORNOGAL },
+			q(78716, {	-- Painful Lessons
+				["sourceQuests"] = { 78715 },	-- Azeroth's Voice
+				["provider"] = { "n", 213625 },	-- Lady Jaina Proudmoore
+				["coord"] = { 49.5, 58.6, 2321 },	-- Chamber of Heart
 			}),
-			q(78536, {	-- Impossible Odds
-				["sourceQuests"] = { 78535 },	-- They Come from Below
-				["provider"] = { "n", 217852 },	-- Baelgrim
-				["coord"] = { 36.2, 64.2, DORNOGAL },
-				["g"] = {
-					--crit 'Breaking Point' for achievementID 20118 (The Isle of Dorn)
-					i(219746),	--Charred Nerubian Robes
-					--c(2897),	-- Council of Dornogal Commendation, this is one-time Warbound bonus
-				},
+			q(80500, {	-- The Bronzebeard Family
+				["sourceQuests"] = { 78716 },	-- Painful Lessons
+				["provider"] = { "n", 214651 },	-- Moira Thaurissan
+				["coord"] = { 40.5, 57.7, 629 },	-- Aegwynn's Gallery
 			}),
-			q(78460, {	-- Hypocenter
-				["sourceQuests"] = { 78536 },	-- Impossible Odds
-				["provider"] = { "n", 217852 },	-- Baelgrim
-				["coord"] = { 36.2, 64.2, DORNOGAL },
-				["g"] = {
-					i(218507),	-- Earthen Memory Gem (QI!)
-				},
+			header(HEADERS.Achievement, 20118, {	-- The Isle of Dorn
+				------ Chapter 1 ------
+				q(78529, {	-- Violet Impact
+					["sourceQuests"] = { 80500 },	-- The Bronzebeard Family
+				}),
+				q(78530, {	-- Slay the Saboteurs
+					["sourceQuests"] = { 78529 },	-- Violet Impact
+					["provider"] = { "n", 211944 },	-- Lady Jaina Proudmoore
+					["coord"] = { 24.4, 57.1, ISLE_OF_DORN },
+				}),
+				q(78531, {	-- Urgent Recovery
+					["sourceQuests"] = { 78529 },	-- Violet Impact
+					["provider"] = { "n", 211993 },	-- Thrall
+					["coord"] = { 24.3, 57.2, ISLE_OF_DORN },
+				}),
+				q(78532, {	-- Erratic Artifacts
+					["sourceQuests"] = { 78529 },	-- Violet Impact
+					["provider"] = { "n", 223166 },	-- Archmage Aethas Sunreaver
+					["coord"] = { 26.1, 57.3, ISLE_OF_DORN },
+					["g"] = {
+						i(211535),	-- Scroll of Shattering (QI!)
+					},
+				}),
+				q(78533, {	-- Secure the Beach
+					["sourceQuests"] = {
+						78532,	-- Erratic Artifacts
+						78530,	-- Slay the Saboteurs
+						78531,	-- Urgent Recovery
+					},
+					["provider"] = { "n", 212450 },	-- Anduin Wrynn
+					["coord"] = { 24.4, 57.1, ISLE_OF_DORN },
+					["g"] = {
+						i(219754),	-- Remembrance of the Fallen City
+					},
+				}),
+				q(78534, {	-- To Dornogal
+					["sourceQuests"] = { 78533 },	-- Secure the Beach
+					["provider"] = { "n", 211859 },	-- Baelgrim
+					["coord"] = { 25.5, 58.0, ISLE_OF_DORN },
+				}),
+				q(78535, {	-- They Come from Below
+					["sourceQuests"] = { 78534 },	-- To Dornogal
+					["provider"] = { "n", 216628 },	-- Baelgrim
+					["coord"] = { 33.6, 75.2, DORNOGAL },
+				}),
+				q(78536, {	-- Impossible Odds
+					["sourceQuests"] = { 78535 },	-- They Come from Below
+					["provider"] = { "n", 217852 },	-- Baelgrim
+					["coord"] = { 36.2, 64.2, DORNOGAL },
+					["g"] = {
+						i(219749),	-- Charred Nerubian Helm
+						i(219747),	-- Charred Nerubian Leggings
+						i(219746),	-- Charred Nerubian Robes
+						i(219748),	-- Charred Nerubian Warplate
+					},
+				}),
+				------ Chapter 2 ------
+				q(78460, {	-- Hypocenter
+					["sourceQuests"] = { 78536 },	-- Impossible Odds
+					["provider"] = { "n", 217852 },	-- Baelgrim
+					["coord"] = { 36.2, 64.2, DORNOGAL },
+					["g"] = {
+						i(217610),	-- Earthen Memory Gem (QI!)
+					},
+				}),
+				q(78468, {	-- The Archive
+					["sourceQuests"] = { 78460 },	-- Hypocenter
+					["provider"] = { "n", 217857 },	-- Speaker Brinthe
+					["coord"] = { 29.4, 59.9, DORNOGAL },
+				}),
+				q(78457, {	-- Stones of Dornogal
+					["sourceQuests"] = { 78460 },	-- Hypocenter
+					["provider"] = { "n", 217854 },	-- Merrix
+					["coord"] = { 29.4, 59.4, DORNOGAL },
+					["g"] = {
+						i(216697),	-- Councilward's Signet (QI!)
+					},
+				}),
+				q(78459, {	-- State of the Union
+					["sourceQuests"] = {
+						78547,	-- Stones of Dornogal
+						78468,	-- The Archive
+					},
+					["provider"] = { "n", 217861 },	-- Merrix
+					["coord"] = { 39.9, 26.0, DORNOGAL },
+				}),
+				q(78461, {	-- The Fourth Seat
+					["sourceQuests"] = { 78459 },	-- State of the Union
+					["provider"] = { "n", 217864 },	-- Moira Thaurissan
+					["coord"] = { 40.5, 25.8, DORNOGAL },
+				}),
+				q(78464, {	-- Delve into the Earth
+					["sourceQuests"] = { 78461 },	-- The Fourth Seat
+					["provider"] = { "n", 217879 },	-- Adelgonn
+					["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
+					["maps"] = { 2269 },	-- Earthcrawl Mines
+					["g"] = {
+						i(219785),	-- Arachnophobic Spelunker's Battleaxe
+						i(219784),	-- Arachnophobic Spelunker's Battlestaff
+						i(219789),	-- Arachnophobic Spelunker's Greatmace
+						i(219788),	-- Arachnophobic Spelunker's Knife
+						i(219786),	-- Arachnophobic Spelunker's Saber
+						i(219792),	-- Arachnophobic Spelunker's Scepter
+						i(219790),	-- Arachnophobic Spelunker's Spellsword
+						i(219787),	-- Arachnophobic Spelunker's Striker
+					},
+				}),
+				q(79553, {	-- A Natural Remedy
+					["sourceQuests"] = { 78464 },	-- Delve into the Earth
+					["provider"] = { "n", 217879 },	-- Adelgonn
+					["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
+					["g"] = {
+						i(213233),	-- Fungarian Chunks (QI!)
+					},
+				}),
+				q(78463, {	-- Building Blocks
+					["sourceQuests"] = { 78464 },	-- Delve into the Earth
+					["provider"] = { "n", 217881 },	-- Baelgrim
+					["coord"] = { 39.0, 78.2, DORNOGAL },
+					["g"] = {
+						i(211962),	-- Glittering Ore (QI!)
+					},
+				}),
+				q(78462, {	-- Echoes of Compassion
+					["sourceQuests"] = {
+						79553,	-- A Natural Remedy
+						78463,	-- Building Blocks
+					},
+					["provider"] = { "n", 217879 },	-- Adelgonn
+					["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
+					["g"] = {
+						i(219795),	-- Cured Terracotta Axe
+						i(219799),	-- Cured Terracotta Firearm
+						i(219796),	-- Cured Terracotta Lantern
+						i(219797),	-- Cured Terracotta Pummeler
+						i(219798),	-- Cured Terracotta Shield
+						i(219800),	-- Cured Terracotta Stabber
+						i(219794),	-- Cured Terracotta Staff
+						i(219802),	-- Cured Terracotta Warglaive
+					},
+				}),
+				q(78470, {	-- The Proscenium
+					["sourceQuests"] = { 78462 },	-- Echoes of Compassion
+					["provider"] = { "n", 217879 },	-- Adelgonn
+					["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
+				}),
+				q(79701, {	-- The Calvalry is Here
+					["sourceQuests"] = { 78470 },	-- The Proscenium
+					["provider"] = { "n", 217766 },	-- Baelgrim
+					["coord"] = { 56.7, 53.6, ISLE_OF_DORN },
+				}),
+				q(79721, {	-- Fire in the Hole
+					["sourceQuests"] = { 78470 },	-- The Proscenium
+					["provider"] = { "n", 212295 },	-- Wenbrandt
+					["coord"] = { 56.8, 53.6, ISLE_OF_DORN },
+				}),
+				q(78471, {	-- Convergence
+					["sourceQuests"] = {
+						79721,	-- Fire in the Hole
+						79701,	-- The Calvalry is Here
+					},
+					["provider"] = { "n", 217898 },	-- Moira Thaurissan
+					["coord"] = { 56.6, 48.8, ISLE_OF_DORN },
+					["g"] = {
+						i(219752),	-- Congealed Cinderbrew Battleboots
+						i(219753),	-- Congealed Cinderbrew Cinch
+						i(219750),	-- Congealed Cinderbrew Gloves
+						i(219751),	-- Congealed Cinderbrew Pauldrons
+					},
+				}),
+				------ Chapter 3 ------
+				q(78538, {	-- Group Effort
+					["sourceQuests"] = { 78471 },	-- Convergence
+					["provider"] = { "n", 217904 },	-- Merrix
+					["coord"] = { 39.9, 26.0, DORNOGAL },
+					["g"] = {
+						i(213271),	-- Work Orders (QI!)
+					},
+				}),
+				q(80022, {	-- Calling the Stormriders
+					--dungeon quest which queue you into follower dungeon
+					["sourceQuests"] = { 78538 },	-- Group Effort
+					["provider"] = { "n", 212747 },	-- Baelgrim
+					["coord"] = { 36.0, 52.8, DORNOGAL },
+				}),
+				q(78539, {	-- Lasting Repairs
+					["sourceQuests"] = { 80022 },	-- Calling the Stormriders
+					["provider"] = { "n", 222555 },	-- Baelgrim
+					["coord"] = { 35.9, 52.7, DORNOGAL },
+				}),
+				q(78540, {	-- To the Meadery
+					["sourceQuests"] = { 78539 },	-- Lasting Repairs
+					["provider"] = { "n", 222555 },	-- Baelgrim
+					["coord"] = { 35.9, 52.7, DORNOGAL },
+				}),
+				q(78541, {	-- Lay the Trap
+					["sourceQuests"] = { 78540 },	-- To the Meadery
+					["provider"] = { "n", 212749 },	-- Baelgrim
+					["coord"] = { 79.1, 43.0, ISLE_OF_DORN },
+				}),
+				q(78542, {	-- Evacuation Area
+					["sourceQuests"] = { 78540 },	-- To the Meadery
+					["provider"] = { "n", 212750 },	-- Wenbrandt
+					["coord"] = { 79.1, 43.0, ISLE_OF_DORN },
+				}),
+				q(78543, {	-- Poking the Spider Nest
+					["sourceQuests"] = {
+						78542,	-- Evacuation Area
+						78541,	-- Lay the Trap
+					},
+					["provider"] = { "n", 212750 },	-- Wenbrandt (TODO: re-check)
+					["coord"] = { 79.1, 43.0, ISLE_OF_DORN },
+				}),
+				q(78544, {	-- Bring the Thunder
+					["sourceQuests"] = { 78543 },	-- Poking the Spider Nest
+					["provider"] = { "n", 212756 },	-- Baelgrim
+					["coord"] = { 78.4, 42.0, ISLE_OF_DORN },
+					["g"] = {
+						i(219755),	-- Mead-Speckled Pantaloons
+					},
+				}),
+				q(78545, {	-- Return to the Coreway
+					["sourceQuests"] = { 78544 },	-- Bring the Thunder
+					["provider"] = { "n", 217849 },	-- Adelgonn
+					["coord"] = { 79.0, 44.0, ISLE_OF_DORN },
+				}),
+				--[[
+				q(, {	-- Recompense
+					["sourceQuests"] = { 78545 },	-- Return to the Coreway
+					["provider"] = { "n", 217880 },	-- Merrix
+					["coord"] = { 32.1, 59.7, DORNOGAL },
+					["g"] = {
+						--crit 'The First Blow' for achievementID 20118 (The Isle of Dorn)
+						i(219760),	-- Rubble-Salvaged Slippers
+						--c(2897),	-- Council of Dornogal Commendation, one-time Warband bonus
+					},
+				}),
+				--]]
 			}),
-			q(78468, {	-- The Archive
-				["sourceQuests"] = { 78460 },	-- Hypocenter
-				["provider"] = { "n", 217857 },	-- Speaker Brinthe
-				["coord"] = { 29.4, 59.9, DORNOGAL },
-			}),
-			q(78547, {	-- Stones of Dornogal
-				["sourceQuests"] = { 78460 },	-- Hypocenter
-				["provider"] = { "n", 217854 },	-- Merrix
-				["coord"] = { 29.4, 59.4, DORNOGAL },
-				["g"] = {
-					i(216697),	-- Councilward's Signet (QI!)
-				},
-			}),
-			q(78459, {	-- State of the Union
-				["sourceQuests"] = {
-					78468,	-- The Archive	// possibly not required
-					78547,	-- Stones of Dornogal
-				},
-				["provider"] = { "n", 217861 },	-- Merrix
-				["coord"] = { 39.9, 26.0, DORNOGAL },
-			}),
-			q(78461, {	-- The Fourth Seat
-				["sourceQuests"] = { 78459 },	-- State of the Union
-				["provider"] = { "n", 217864 },	-- Moira Thaurissan
-				["coord"] = { 40.5, 25.8, DORNOGAL },
-			}),
-			q(78464, {	-- Delve into the Earth (TODO: CLEAR THIS UP TO DELVES)
-				["sourceQuests"] = { 78461 },	-- The Fourth Seat
-				["provider"] = { "n", 217879 },	-- Adelgonn
-				["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
-				["maps"] = { 2269 },	-- Earthcrawl Mines (crs: 212407 for entrance) // unsure if it separate mapID for Delves or this one specific
-				["g"] = {
-					--probably realted to devles only
-					i(226002),	-- Expensive Looking Find (was looted from Sturdy Chest @ 43.6, 26.9, 2269, trigger 83438 (I miss objectID))
-					--Sturdy Chest (objectID 450049) @ 32.8, 40.0, 2269, trigger questID 83451
-					i(223287),	--Atomized Salien Slime (Sturdy Chest (objectID 454092) @ 53.1, 82.1, 2269, trigger questID 83451)
-					--
-					i(226222),	-- Webbed Hookshot // shared across all delves?
-					i(222922),	-- Expeditionary Spoils // delves tier 1 reward
-					--
-					n(223541, {	-- Stolen Loader
-						ach(40458),	-- Rare Finding
-					}),
-					-- after boss kill in the end
-					q(77716),	-- Level 2 //
-					q(77718),	-- Level 3 // Brann Bronzebeard leveled up
-					q(77719),	-- Level 4 //
-					q(82772),	-- probably either flag for tier 1 finished/tier 2 unlock or just generic this delves end?
-					-- o: 413563 (Heavy Trunk)
-					-- ["g"] = {
-					--	i(225249),	-- Rattling Bag'o'gold
-					--	i(211061),	-- Unearthed Relic Band
-					--},
-					-- o: 451830 (Heavy Trunk)
-					-- ["g"] = {
-					--	i(225900),	-- Light-Touched Idol
-					--	i(226109),	-- Squirming Swarm Sac
-					--},
-					-- reward pop on turn in page
-					i(219792),	-- Arachnophobic Spelunker's Scepter
-					spell(442446),	-- Delve Companion
-				},
-			}),
-			q(79553, {	-- A Natural Remedy
-				["sourceQuests"] = { 78464 },	-- Delve into the Earth
-				["provider"] = { "n", 217879 },	-- Adelgonn
-				["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
-				["g"] = {
-					i(213233),	-- Fungarian Chunks (QI!)
-				},
-			}),
-			q(78463, {	-- Building Blocks
-				["sourceQuests"] = { 78464 },	-- Delve into the Earth
-				["provider"] = { "n", 217881 },	-- Baelgrim
-				["coord"] = { 39.0, 78.2, DORNOGAL },
-				["g"] = {
-					i(211962),	-- Glittering Ore (QI!)
-				},
-			}),
-			q(78462, {	-- Echoes of Compassion
-				["sourceQuests"] = {
-					79553,	-- A Natural Remedy
-					78463,	-- Building Blocks
-				},
-				["provider"] = { "n", 217879 },	-- Adelgonn
-				["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
-				["g"] = {
-					i(219796),	-- Cured Terracotta Lantern
-				},
-			}),
-			q(78470, {	-- The Proscenium
-				["sourceQuests"] = { 78462 },	-- Echoes of Compassion
-				["provider"] = { "n", 217879 },	-- Adelgonn
-				["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
-			}),
-			q(79701, {	-- The Calvalry is Here
-				["sourceQuests"] = { 78470 },	-- The Proscenium
-				["provider"] = { "n", 217766 },	-- Baelgrim
-				["coord"] = { 56.7, 53.6, ISLE_OF_DORN },
-			}),
-			q(79721, {	-- Fire in the Hole
-				["sourceQuests"] = { 78470 },	-- The Proscenium
-				["provider"] = { "n", 212295 },	-- Wenbrandt
-				["coord"] = { 56.8, 53.6, ISLE_OF_DORN },
-			}),
-			q(78471, {	-- Convergence
-				["sourceQuests"] = {
-					79721,	-- Fire in the Hole
-					79701,	-- The Calvalry is Here
-				},
-				["provider"] = { "n", 217898 },	-- Moira Thaurissan
-				["coord"] = { 56.6, 48.8, ISLE_OF_DORN },
-				["g"] = {
-					--crit 'Earthen Fissures' for achievementID 20118 (The Isle of Dorn)
-					i(219750),	-- Congealed Cinderbrew Gloves
-					--c(2897),	-- Council of Dornogal Commendation, one-time Warband bonus
-				},
-			}),
-			q(78538, {	-- Group Effort
-				["sourceQuests"] = { 78471 },	-- Convergence
-				["provider"] = { "n", 217904 },	-- Merrix
-				["coord"] = { 39.9, 26.0, DORNOGAL },
-				["g"] = {
-					i(213271),	-- Work Orders (QI!)
-				},
-			}),
-			q(80022, {	-- Calling the Stormriders
-				--dungeon quest which queue you into follower dungeon
-				["sourceQuests"] = { 78538 },	-- Group Effort
-				["provider"] = { "n", 212747 },	-- Baelgrim
-				["coord"] = { 36.0, 52.8, DORNOGAL },
-			}),
-			q(78539, {	-- Lasting Repairs
-				["sourceQuests"] = { 80022 },	-- Calling the Stormriders
-				["provider"] = { "n", 222555 },	-- Baelgrim
-				["coord"] = { 35.9, 52.7, DORNOGAL },
-			}),
-			q(78540, {	-- To the Meadery
-				["sourceQuests"] = { 78539 },	-- Lasting Repairs
-				["provider"] = { "n", 222555 },	-- Baelgrim
-				["coord"] = { 35.9, 52.7, DORNOGAL },
-			}),
-			q(78541, {	-- Lay the Trap
-				["sourceQuests"] = { 78540 },	-- To the Meadery
-				["provider"] = { "n", 212749 },	-- Baelgrim
-				["coord"] = { 79.1, 43.0, ISLE_OF_DORN },
-			}),
-			q(78542, {	-- Evacuation Area
-				["sourceQuests"] = { 78540 },	-- To the Meadery
-				["provider"] = { "n", 212750 },	-- Wenbrandt
-				["coord"] = { 79.1, 43.0, ISLE_OF_DORN },
-			}),
-			q(78543, {	-- Poking the Spider Nest
-				["sourceQuests"] = {
-					78542,	-- Evacuation Area
-					78541,	-- Lay the Trap
-				},
-				["provider"] = { "n", 212750 },	-- Wenbrandt (TODO: re-check)
-				["coord"] = { 79.1, 43.0, ISLE_OF_DORN },
-			}),
-			q(78544, {	-- Bring the Thunder
-				["sourceQuests"] = { 78543 },	-- Poking the Spider Nest
-				["provider"] = { "n", 212756 },	-- Baelgrim
-				["coord"] = { 78.4, 42.0, ISLE_OF_DORN },
-				["g"] = {
-					i(219755),	-- Mead-Speckled Pantaloons
-				},
-			}),
-			q(78545, {	-- Return to the Coreway
-				["sourceQuests"] = { 78544 },	-- Bring the Thunder
-				["provider"] = { "n", 217849 },	-- Adelgonn
-				["coord"] = { 79.0, 44.0, ISLE_OF_DORN },
-			}),
-			--[[
-			q(, {	-- Recompense
-				["sourceQuests"] = { 78545 },	-- Return to the Coreway
-				["provider"] = { "n", 217880 },	-- Merrix
-				["coord"] = { 32.1, 59.7, DORNOGAL },
-				["g"] = {
-					--crit 'The First Blow' for achievementID 20118 (The Isle of Dorn)
-					i(219760),	-- Rubble-Salvaged Slippers
-					--c(2897),	-- Council of Dornogal Commendation, one-time Warband bonus
-				},
-			}),
-			--]]
 			-- Side quests, since main story is bugged in main city
 			q(78754, {	-- Lost Delivery
 				--["sourceQuests"] = { x },	-- ?
@@ -844,10 +853,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(81899, {	-- Gar'loc
 				["provider"] = { "n", 219268 },	-- Gar'loc
 				["coord"] = { 53.0, 86.9, ISLE_OF_DORN },
-			}),
-			q(81897, {	-- Plaguehart
-				["provider"] = { "n", 219267 },	-- Plaguehart
-				["coord"] = { 49.9, 74.8, ISLE_OF_DORN },
 			}),
 			q(81893, {	-- Ravenous Packleader
 				["provider"] = { "n", 219264 },	-- Bloodmaw

@@ -32387,7 +32387,6 @@ i(210942),	-- Byproduct 01 - Light
 i(210943),	-- Byproduct 02 - Dark
 i(210970),	-- Crumbled Keepsake
 i(210981),	-- Kriegval's Helm
-i(211005),	-- Cave Topographer's Drape
 i(211006),	-- Secret-Dredger's Cloak
 i(211007),	-- Torchbearer's Greatcloak
 i(211008),	-- Cave Topographer's Vestment
@@ -34680,12 +34679,6 @@ i(219742),	-- Algari Spices \\ Algarian Spices
 i(219743),	-- Khaz Algar Olive (Vendor)
 i(219744),	-- Khaz Algar Vegetable
 i(219745),	-- Olive Oil
-i(219747),	-- Charred Nerubian Leggings
-i(219748),	-- Charred Nerubian Warplate
-i(219749),	-- Charred Nerubian Helm
-i(219751),	-- Congealed Cinderbrew Pauldrons
-i(219752),	-- Congealed Cinderbrew Battleboots
-i(219753),	-- Congealed Cinderbew Cinch
 i(219756),	-- Mead-Speckled Vest \\ Mead Speckled Vest
 i(219757),	-- Mead-Speckled Full Helm \\ Mead Speckled Full Helm
 i(219758),	-- Mead-Speckled Legguards \\ Mead Speckled Legguards
@@ -34700,22 +34693,8 @@ i(219769),	-- Sporefused Chainmail
 i(219780),	-- 11.0 Leveling Quest Template - Axe2H - Str
 i(219781),	-- 11.0 Leveling Quest Template - FistWeapon - Agi
 i(219782),	-- 11.0 Leveling Quest Template - Sword1H - Int
-i(219784),	-- Arachnophobic Spelunker's Battlestaff
-i(219785),	-- Arachnophobic Spelunker's Battleaxe
-i(219786),	-- Arachnophobic Spelunker's Saber
-i(219787),	-- Arachnophobic Spelunker's Striker
-i(219788),	-- Arachnophobic Spelunker's Knife
-i(219789),	-- Arachnophobic Spelunker's Greatmace [Update Appearance]
-i(219790),	-- Arachnophobic Spelunker's Spellsword
 i(219791),	-- 11.0 Leveling Quest Template - Mace1H - Int
 i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
-i(219794),	-- Cured Terracotta Staff \\ Cured Terracota Staff
-i(219795),	-- Cured Terracotta Axe
-i(219797),	-- Cured Terracotta Pummeler [Update Appearance]
-i(219798),	-- Cured Terracotta Shield
-i(219799),	-- Cured Terracotta Firearm
-i(219800),	-- Cured Terracotta Stabber
-i(219802),	-- Cured Terracotta Warglaive [Update Appearance]
 i(219804),	-- [DNT] Antiparalytic Serum
 i(219808),	-- Ethereal Sugar
 i(219819),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
@@ -35121,7 +35100,6 @@ i(221209),	-- Flame Trader's Gloves
 i(221210),	-- Grips of the Earth
 i(221211),	-- Grasp of the Shallows
 i(221212),	-- Death Burrower Handguards
-i(221213),	-- Shawl of the Plagued
 i(221214),	-- Chitin Chain Headpiece
 i(221215),	-- Taskmaster's Mining Cap
 i(221216),	-- Bruin Strength Legplates
@@ -35171,7 +35149,6 @@ i(221495),	-- Waddles
 i(221496),	-- Wriggle
 i(221502),	-- Adventurer's Warbound Battlegear Drop
 i(221503),	-- Explorer's Warbound Battlegear Drop
-i(221504),	-- Elemental Pearl
 i(221505),	-- [DNT] Rare Cloth - Robe
 i(221506),	-- Arachnid's Web-Sown Guise
 i(221507),	-- Earth Golem's Wrap
@@ -35380,7 +35357,6 @@ i(221750),	-- Shredded Weavercloth
 i(221751),	-- DO NOT USE Prismatic Codex
 i(221753),	-- Smoldering Cinderbee \\ [PH] Firebee Mount (Base Skin, Gold Saddle)
 i(221754),	-- Ringing Deeps Ingot
-i(221756),	-- Vial of Kaheti Oils
 i(221757),	-- Gloomfathom Hide
 i(221758),	-- Profaned Tinderbox
 i(221759),	-- Sceaduthax
@@ -37277,7 +37253,6 @@ i(224284),	-- Eyeless Petal
 i(224285),	-- Luminous Strangler Sap
 i(224286),	-- Cochineal Crawler
 i(224292),	-- Radiant Fuel Shard
-i(224373),	-- Waterlord's Iridescent Gem
 i(224395),	-- Secret Garlic
 i(224396),	-- Mangled Taro
 i(224397),	-- Pristine Taro
@@ -38224,7 +38199,6 @@ i(226258),	-- Delver's Pouch of Reagents
 i(226259),	-- Delver's Pouch of Resonance Crystals
 i(226260),	-- Delver's Pouch of Gold
 i(226263),	-- Theater Troupe's Trove
-i(226265),	-- Earthen Iron Powder
 i(226266),	-- Metal Dornogal Frame
 i(226267),	-- Reinforced Beaker
 i(226268),	-- Engraved Stirring Rod

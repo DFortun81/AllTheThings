@@ -1093,6 +1093,12 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				r(449575),	-- Volatile Coalescence
 			}),
 		}),
+		n(TREASURES, {
+			-- Couldnt get objectID
+			q(83840, {
+				i(226265),	-- Earthen Iron Powder
+			})
+		})
 	})),
 })));
 

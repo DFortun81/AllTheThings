@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1268, {	-- The Rookery
-		--["coord"] = { X, Y, ISLE_OF_DORN },
+		["coord"] = { 32.2, 34.6, DORNOGAL },
 		["maps"] = {
 			2315,	-- The Rookery Landing
 			2316,	-- Storm's Roost

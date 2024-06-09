@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1272, {	-- Cinderbrew Meadery
-		--["coord"] = { X, Y, ISLE_OF_DORN },
+		["coord"] = { 76.6, 43.8, ISLE_OF_DORN },
 		["maps"] = { 2335 },	-- Cinderbrew Meadery
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {

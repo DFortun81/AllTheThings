@@ -39,6 +39,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--	spell(447213),	-- Alunira // may be? :)
 				--},
 			}),
+			n(219267, {	-- Plaguehart
+				["coord"] = { 49.9, 74.8, ISLE_OF_DORN },
+				["questID"] = 84026,
+				["g"] = {
+					bo(81897, true),
+					i(221213),	-- Shawl of the Plagued
+				},
+			}),
+			n(219270, {	-- Kronolith, Might of the Mountain
+				["coord"] = { 48.1, 27.0, ISLE_OF_DORN },
+			}),
 		})),
 	}),
 })));

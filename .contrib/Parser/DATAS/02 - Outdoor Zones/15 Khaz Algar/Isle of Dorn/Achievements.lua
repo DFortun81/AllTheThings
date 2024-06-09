@@ -6,10 +6,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		n(ACHIEVEMENTS, {
 			ach(20118, {	-- The Isle of Dorn
 				crit(66214, {	-- Breaking Point
-					["sourceQuest"] = 78536,	-- TODO: quest name
+					["sourceQuest"] = 78536,	-- Impossible Odds
 				}),
 				crit(66215, {	-- Earthen Fissures
-					["sourceQuest"] = 78471,	-- TODO: quest name
+					["sourceQuest"] = 78471,	-- Convergence
 				}),
 				--crit(66216, {	-- The First Blow
 				--	["sourceQuest"] = 78546,	-- TODO: quest name
@@ -48,6 +48,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--}),
 			}),
 			pvp(ach(40083)),	-- Tour of Duty: Isle of Dorn
+
+			ach(40663, {	-- Skyriding Glyphs: Dhar Oztan
+				["coord"] = { 23.1, 58.5, ISLE_OF_DORN },
+			}),
+			ach(40671, {	-- Skyriding Glyphs: Ironwold
+				["coord"] = { 71.9, 47.2, ISLE_OF_DORN },
+			}),
+			ach(40667, {	-- Skyriding Glyphs: Thul Medran
+				["coord"] = { 47.9, 26.6, ISLE_OF_DORN },
+			}),
 		}),
 	}),
 })));
