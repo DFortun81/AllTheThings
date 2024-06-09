@@ -747,6 +747,7 @@ localize(L.HEADER_NAMES, {
 	[-1000863] = PVP_RATED_BATTLEGROUND,
 	[-1000870] = "The Troll Incursion",
 	[-1000872] = "Plunderstorm",
+	[-1000904] = "Source IDs",
 	[-1000905] = GUILD .. " " .. TUTORIAL_TITLE20,
 });
 localize(L.HEADER_DESCRIPTIONS, {
@@ -960,6 +961,7 @@ localize(L.HEADER_ICONS, {
 	[-1000863] = "Interface/Icons/INV_BannerPVP_03",
 	[-1000870] = "135727",
 	[-1000872] = "133168",
+	[-1000904] = "Interface/Icons/Inv_misc_questionmark",
 	[-1000905] = _.asset("Interface_Vendor"),
 });
 localize(L.HEADER_EVENTS, {
