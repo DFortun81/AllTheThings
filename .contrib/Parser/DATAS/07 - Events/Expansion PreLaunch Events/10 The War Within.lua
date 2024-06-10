@@ -13,6 +13,30 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["provider"] = { "n", 213627 },	-- Archmage Khadgar
 				["coord"] = { 42.9, 59.7, 629 },	-- Legion Dalaran, Aegwynn's Gallery
 			}),
+			q(82689, {	-- Only Darkness
+				["isWeekly"] = true,
+				["provider"] = { "n", 224373 },	-- Echo of the Silver Hand
+				["coord"] = { 59.5, 52.0, DRAGONBLIGHT },
+				["g"] = {
+					currency(RESIDUAL_MEMORIES),
+				},
+			}),
+			q(78938, {	-- Champion of the Waterlords
+				["isWeekly"] = true,
+				["provider"] = { "n", 214399 },	-- Memory of a Duke
+				["coord"] = { 43.6, 67.3, SEARING_GORGE },
+				["g"] = {
+					currency(RESIDUAL_MEMORIES),
+				},
+			}),
+			q(82676, {	-- Broken Masquerade
+				["isWeekly"] = true,
+				["provider"] = { "n", 224367 },	-- Forgotten Hero
+				["coord"] = { 45.5, 57.7, DUSTWALLOW_MARSH },
+				["g"] = {
+					currency(RESIDUAL_MEMORIES),
+				},
+			}),
 		}),
 		n(VENDORS, {
 			n(223710, {	-- Rememberance Amuul
@@ -273,7 +297,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, {
 	expansion(EXPANSION.TWW, {
 		n(HIDDEN_QUESTS, {
-			--
+			q(82687),	-- triggered after turn in questID 82689 (Only Darkness) // could be any weekly but lockout for first per week?
+			q(82688),	-- triggered after turn in questID 82689 (Only Darkness) // could be any weekly but lockout for first per week?
 		}),
 	}),
 })));
