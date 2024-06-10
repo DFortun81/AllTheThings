@@ -413,7 +413,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 			i(154971),	-- Howdah-Rider's Bow
 			i(153642),	-- Manual of Reverse Wounding
 			i(158567),	-- Necropolis Sentry's Sword
-			i(166889),	-- Zandalari Prelate's Lightblade
+			i(166889, {["sourceID"] = 103154 }),	-- Zandalari Prelate's Lightblade
 			i(158563),	-- Tomb-Rustler's Polearm
 			i(154972),	-- Tomb-Rustler's Polearm
 			i(166887),	-- Pakura Priest Staff

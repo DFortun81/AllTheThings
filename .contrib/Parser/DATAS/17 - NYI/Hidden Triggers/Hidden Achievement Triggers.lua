@@ -5,6 +5,7 @@
 root(ROOTS.HiddenAchievementTriggers, {
 	-- Note!! Here is where we can put all the hidden Achievement triggers in the game that don't exactly fit anywhere.
 	-- When adding a Achievement trigger be sure to put a description of how it triggered
+	-- #if ANYCLASSIC
 	expansion(EXPANSION.CLASSIC, {
 		--1.14.1.40666
 		-- #if ANYCLASSIC
@@ -68,6 +69,8 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(40137),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
 		-- #endif
 	}),
+	-- #endif
+	-- #if ANYCLASSIC
 	expansion(EXPANSION.TBC, {
 		--2.5.1.39399
 		-- #if ANYCLASSIC
@@ -104,6 +107,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		-- #endif
 		-- #endif
 	}),
+	-- #endif
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.1.8622
 		ach(49),	-- Alterac Valley victories

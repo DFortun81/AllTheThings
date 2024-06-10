@@ -55,6 +55,10 @@ root(ROOTS.NeverImplemented, {
 	n(WEAPONS),															-- Not Completed and Not Sorted
 });
 root(ROOTS.HiddenAchievementTriggers, {
+	-- #if ANYCLASSIC
+	expansion(EXPANSION.CLASSIC),
+	expansion(EXPANSION.TBC),
+	-- #endif
 	expansion(EXPANSION.WRATH),
 	expansion(EXPANSION.CATA),
 	expansion(EXPANSION.MOP),

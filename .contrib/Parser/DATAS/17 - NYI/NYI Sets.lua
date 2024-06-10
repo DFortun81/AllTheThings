@@ -3154,14 +3154,14 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
 				}),
 				n(BACK, {
-					i(172655),	-- Corrupted Gladiator's Shawl
-					i(172656),	-- Corrupted Gladiator's Greatcloak
-					i(172657),	-- Corrupted Gladiator's Drape
-					i(172658),	-- Corrupted Gladiator's Cape
-					i(172659),	-- Corrupted Gladiator's Shawl
-					i(172660),	-- Corrupted Gladiator's Greatcloak
-					i(172661),	-- Corrupted Gladiator's Drape
-					i(172662),	-- Corrupted Gladiator's Cape
+					i(172655, {["sourceID"] = 107001 }),	-- Corrupted Gladiator's Shawl
+					i(172656, {["sourceID"] = 107003 }),	-- Corrupted Gladiator's Greatcloak
+					i(172657, {["sourceID"] = 107005 }),	-- Corrupted Gladiator's Drape
+					i(172658, {["sourceID"] = 107007 }),	-- Corrupted Gladiator's Cape
+					i(172659, {["sourceID"] = 107009 }),	-- Corrupted Gladiator's Shawl
+					i(172660, {["sourceID"] = 107011 }),	-- Corrupted Gladiator's Greatcloak
+					i(172661, {["sourceID"] = 107013 }),	-- Corrupted Gladiator's Drape
+					i(172662, {["sourceID"] = 107015 }),	-- Corrupted Gladiator's Cape
 					i(172851),	-- Corrupted Aspirant's Greatcloak
 					i(172855),	-- Corrupted Aspirant's Greatcloak
 				}),

@@ -1306,14 +1306,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(154873),	-- Heartsbane Cuffs
 			}),
 			expansion(EXPANSION.BFA, 2.0, {
-				i(167111),	-- QA Combat Test Caster Belt 1
-				i(167112),	-- QA Combat Test Caster Robes 1
-				i(167113),	-- QA Combat Test Caster Shoulders 1
-				i(167114),	-- QA Combat Test Caster Gloves 1
-				i(167115),	-- QA Combat Test Caster Helm 1
-				i(167116),	-- QA Combat Test Caster Legs 1
-				i(167117),	-- QA Combat Test Caster Boots
-				i(167118),	-- QA Combat Test Caster Bracer 1
+				i(167111, {["sourceID"] = 103263 }),	-- QA Combat Test Caster Belt 1
+				i(167112, {["sourceID"] = 103264 }),	-- QA Combat Test Caster Robes 1
+				i(167113, {["sourceID"] = 103265 }),	-- QA Combat Test Caster Shoulders 1
+				i(167114, {["sourceID"] = 103266 }),	-- QA Combat Test Caster Gloves 1
+				i(167115, {["sourceID"] = 103267 }),	-- QA Combat Test Caster Helm 1
+				i(167116, {["sourceID"] = 103268 }),	-- QA Combat Test Caster Legs 1
+				i(167117, {["sourceID"] = 103269 }),	-- QA Combat Test Caster Boots
+				i(167118, {["sourceID"] = 103270 }),	-- QA Combat Test Caster Bracer 1
 			}),
 		}),
 		filter(LEATHER, {
@@ -1430,14 +1430,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(159213),	-- Eventide Leggings
 			}),
 			expansion(EXPANSION.BFA, 2.0, {
-				i(167119),	-- QA Combat Test Mail Helm
-				i(167120),	-- QA Combat Test Mail Legs 1
-				i(167121),	-- QA Combat Test Mail Bracer 1
-				i(167122),	-- QA Combat Test Mail Belt 1
-				i(167123),	-- QA Combat Test Mail Chest 1
-				i(167124),	-- QA Combat Test Mail Gloves 1
-				i(167125),	-- QA Combat Test Mail Shoulders 1
-				i(167126),	-- QA Combat Test Mail Boots 1
+				i(167119, {["sourceID"] = 103271 }),	-- QA Combat Test Mail Helm
+				i(167120, {["sourceID"] = 103272 }),	-- QA Combat Test Mail Legs 1
+				i(167121, {["sourceID"] = 103273 }),	-- QA Combat Test Mail Bracer 1
+				i(167122, {["sourceID"] = 103274 }),	-- QA Combat Test Mail Belt 1
+				i(167123, {["sourceID"] = 103275 }),	-- QA Combat Test Mail Chest 1
+				i(167124, {["sourceID"] = 103276 }),	-- QA Combat Test Mail Gloves 1
+				i(167125, {["sourceID"] = 103277 }),	-- QA Combat Test Mail Shoulders 1
+				i(167126, {["sourceID"] = 103278 }),	-- QA Combat Test Mail Boots 1
 			}),
 		}),
 		filter(PLATE, {
@@ -1491,14 +1491,14 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(159197),	-- Brineworks Stompers
 			}),
 			expansion(EXPANSION.BFA, 2.0, {
-				i(167127),	-- QA Combat Test Plate Bracer 1
-				i(167128),	-- QA Combat Test Plate Chest 1
-				i(167129),	-- QA Combat Test Plate Shoulders 1
-				i(167130),	-- QA Combat Test Plate Gloves 1
-				i(167131),	-- QA Combat Test Plate Belt 1
-				i(167132),	-- QA Combat Test Plate Helm 1
-				i(167133),	-- QA Combat Test Plate Legs 1
-				i(167134),	-- QA Combat Test Plate Boots
+				i(167127, {["sourceID"] = 103279 }),	-- QA Combat Test Plate Bracer 1
+				i(167128, {["sourceID"] = 103280 }),	-- QA Combat Test Plate Chest 1
+				i(167129, {["sourceID"] = 103281 }),	-- QA Combat Test Plate Shoulders 1
+				i(167130, {["sourceID"] = 103282 }),	-- QA Combat Test Plate Gloves 1
+				i(167131, {["sourceID"] = 103283 }),	-- QA Combat Test Plate Belt 1
+				i(167132, {["sourceID"] = 103284 }),	-- QA Combat Test Plate Helm 1
+				i(167133, {["sourceID"] = 103285 }),	-- QA Combat Test Plate Legs 1
+				i(167134, {["sourceID"] = 103286 }),	-- QA Combat Test Plate Boots
 			}),
 		}),
 		filter(COSMETIC, {

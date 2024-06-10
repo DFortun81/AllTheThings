@@ -391,21 +391,22 @@ root(ROOTS.NeverImplemented, {
 		i(178673),	-- Sinful Aspirant's Weapon - Offhand
 		filter(BOWS, {
 			-- Load In Game
+			i(165266, {["sourceID"] = 101572 }),	-- Fallback Weapon - Bow
+			i(167144, {["sourceID"] = 103291 }),	-- QA Combat Test Hunter Bow
 			i(182563),	-- NPE Weapon Bow
 			i(182563, {	-- NPE Weapon Bow
 				["bonusID"] = 6895,
 			}),
 			-- ItemID/Retrieving
 			i(108783),	-- 7.0 PH Weapon - Bow Agi
-			i(165266),	-- Fallback Weapon - Bow
-			i(167144),	-- QA Combat Test Hunter Bow
 			i(109283),	-- 6.0 QA Combat Test Hunter Bow
 			i(111783),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
 		}),
 		filter(CROSSBOWS, {
+			-- Load In Game
+			i(165267, {["sourceID"] = 101573 }),	-- Fallback Weapon - Crossbow
 			-- ItemID/Retrieving
 			i(108784),	-- 7.0 PH Weapon - Crossbow Agi
-			i(165267),	-- Fallback Weapon - Crossbow
 		}),
 		filter(DAGGERS, {
 			-- Load In Game
@@ -448,14 +449,14 @@ root(ROOTS.NeverImplemented, {
 			i(165269),	-- Fallback Weapon - Fist
 		}),
 		filter(GUNS, {
+			-- Load In Game
+			i(165270, {["sourceID"] = 101575 }),	-- Fallback Weapon - Gun
 			-- ItemID/Retrieving
 			i(38246),	-- Skull-Forged Blunderbuss
 			i(49455),	-- Blunderbuss of Deforestation
 			i(108790),	-- 7.0 PH Weapon - Gun Agi
 			i(109491),	-- 6.0 QA Combat Test Hunter Gun
 			i(109529),	-- 6.0 QA Combat Test Hunter Gun No Variance
-			i(165270),	-- Fallback Weapon - Gun
-
 		}),
 		filter(HELD_IN_OFF_HAND, {
 			-- ItemID/Retrieving
@@ -472,6 +473,8 @@ root(ROOTS.NeverImplemented, {
 			i(68050),	-- Shatterscale Mightfish
 			i(80983),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 			i(117010),	-- Forester's Axe	(Never added in Game)
+			i(164967, {["sourceID"] = 101181 }),	-- Steelforged Axe (CREATURE USE - TIER 2 VISUAL ONLY)
+			i(165264, {["sourceID"] = 101570 }),	-- Fallback Weapon - 1H Axe
 			i(182562),	-- NPE Weapon 1H Axe AGI
 			i(182577),	-- NPE Weapon 1H Axe AGI 2
 			-- ItemID/Retrieving
@@ -484,8 +487,6 @@ root(ROOTS.NeverImplemented, {
 			i(109536),	-- 6.0 QA Combat Test Offhand Agility Axe 2
 			i(159483),	-- 8.0 PH - Weapon - 1H Axe
 			i(159484),	-- 8.0 PH - Weapon - 1H Axe
-			i(164967),	-- Steelforged Axe (CREATURE USE - TIER 2 VISUAL ONLY)
-			i(165264),	-- Fallback Weapon - 1H Axe
 		}),
 		filter(ONE_HANDED_MACES, {
 			-- Load In Game
@@ -509,6 +510,8 @@ root(ROOTS.NeverImplemented, {
 			-- Load In Game
 			i(137225),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
 			i(162447),	-- Marrow Render
+			i(165273, {["sourceID"] = 101578 }),	-- Fallback Weapon - 1H Sword
+			i(167143, {["sourceID"] = 103290 }),	-- QA Combat Test 1h Sword
 			i(182567),	-- NPE Weapon 1H Sword AGI
 			i(182574),	-- NPE Weapon 1H Sword AGI 2
 			i(182575),	-- NPE Weapon 1H Sword AGI 3
@@ -527,18 +530,17 @@ root(ROOTS.NeverImplemented, {
 			i(124084),	-- Bloodslaked Blade
 			i(127852),	-- Armaments of the Black Wyrm [TEMP]
 			i(134067),	-- Blackswell Scalemender's Mace
-			i(165273),	-- Fallback Weapon - 1H Sword
-			i(167143),	-- QA Combat Test 1h Sword
 			i(171401),	-- Phaeweald Rapier
 		}),
 		filter(POLEARMS, {
+			-- Load In Game
+			i(165271, {["sourceID"] = 101576 }),	-- Fallback Weapon - Polearm
 			-- ItemID/Retrieving
 			i(54965),	-- Stormwind Spear
 			i(108797),	-- 7.0 PH Weapon - 2H Polearm Agi
 			i(108798),	-- 7.0 PH Weapon - 2H Polearm Str
 			i(108799),	-- 7.0 PH Weapon - 2H Polearm Int
 			i(109456),	-- 6.0 QA Combat Test Agility Polearm
-			i(165271),	-- Fallback Weapon - Polearm
 			i(176904),	-- Bonegrafted Spear
 		}),
 		n(RELICS, {
@@ -592,10 +594,11 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(SHIELDS, {
 			-- Load In Game
+			i(165276, {["sourceID"] = 101581 }),	-- Fallback Weapon - Shield
+			i(167140, {["sourceID"] = 103287 }),	-- QA Combat Test  Shield 1
 			i(182570),	-- NPE Weapon Shield
 			i(182576),	-- NPE Weapon Shield 2
 			-- ItemID/Retrieving
-
 			i(34415),	-- Crystaline Shard Shield
 			i(60220),	-- Theodore's Heirloom Buckler
 			i(108808),	-- 7.0 PH Shield - Shield Str
@@ -606,8 +609,6 @@ root(ROOTS.NeverImplemented, {
 			i(109550),	-- 7.0 QA Combat Test Shield 4
 			i(159814),	-- 8.0 PH - Shield
 			i(159815),	-- 8.0 PH - Shield
-			i(165276),	-- Fallback Weapon - Shield
-			i(167140),	-- QA Combat Test  Shield 1
 		}),
 		filter(STAVES, {
 			-- Load In Game
@@ -645,6 +646,8 @@ root(ROOTS.NeverImplemented, {
 			i(69916),	-- Trollbane (Daakara)
 			i(80980),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 			i(80984),	-- Expropriator's Greataxe
+			i(165265, {["sourceID"] = 101571 }),	-- Fallback Weapon - 2H Axe
+			i(167142, {["sourceID"] = 103289 }),	-- QA Combat Test 2H Axe
 			i(182568),	-- NPE Weapon 2H Axe STR
 			-- ItemID/Retrieving
 			i(23420),	-- Engraved Axe
@@ -653,11 +656,10 @@ root(ROOTS.NeverImplemented, {
 			i(109519),	-- 6.0 QA Combat Test Strength 2H Axe
 			i(134563),	-- Death's Smile
 			i(151377),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
-			i(165265),	-- Fallback Weapon - 2H Axe
-			i(167142),	-- QA Combat Test 2H Axe
 		}),
 		filter(TWO_HANDED_MACES, {
 			-- Load In Game
+			i(165263, {["sourceID"] = 101569 }),	-- Fallback Weapon - 2H Mace
 			i(169818),	-- Quilboar Club
 			i(182565),	-- NPE Weapon 2H Mace STR
 			i(182569),	-- NPE Weapon 2H Sword STR
@@ -668,22 +670,19 @@ root(ROOTS.NeverImplemented, {
 			i(108796),	-- 7.0 PH Weapon - 2H Mace Int
 			i(109401),	-- 6.0 QA Combat Test Strength 2H Mace
 			i(159555),	-- 8.0 PH - Weapon - 2H Mace
-			i(165263),	-- Fallback Weapon - 2H Mace
 		}),
 		filter(TWO_HANDED_SWORDS, {
 			-- Load In Game
 			i(33475),	-- Frostmourne
 			i(56702),	-- Saw Blade (never made it to live)
 			i(81703),	-- Glorenzelg, High-Blade of the Silver Hand, added in 5.0.1 ??
+			i(165274, {["sourceID"] = 101579 }),	-- Fallback Weapon - 2H Sword
 			i(182337),	-- Unholy Weapon
 			-- ItemID/Retrieving
-
-
 			i(23432),	-- Engraved Greatsword
 			i(49457),	-- Fury of the Flame
 			i(108806),	-- 7.0 PH Weapon - 2H Sword Str
 			i(109373),	-- 6.0 QA Combat Test Strength 2h Sword
-			i(165274),	-- Fallback Weapon - 2H Sword
 			--
 			i(49547),	-- Unknown
 		}),
