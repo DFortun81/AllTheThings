@@ -589,6 +589,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		}),
 	}),
 	prof(ENGINEERING, {
+		prof(GNOMISH_ENGINEERING, {
+			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
+			["groups"] = {
+				filter(MOUNTS, {
+					i(87251),	-- Geosynchronous World Spinner (MOUNT!)
+				}),
+			},
+		}),
+		prof(GOBLIN_ENGINEERING, {
+			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
+			["groups"] = {
+				filter(MOUNTS, {
+					i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
+				}),
+			},
+		}),
 		n(ARMOR, {
 			i(77534),	-- Agile Retinal Armor
 			i(77535),	-- Camouflage Retinal Armor

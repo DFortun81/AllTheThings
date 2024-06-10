@@ -450,17 +450,14 @@ i(0, 84434);		-- Unknown
 i(0, 82774);		-- Engineering (Illustrious)
 i(0, 81722);		-- Agile Bio-Optic Killshades
 i(0, 84406);		-- Authentic Jr. Engineer Goggles
-i(0, 95707);		-- Big Daddy
 i(0, 81724);		-- Camouflage Bio-Optic Killshades
 i(0, 81716);		-- Deadly Bio-Optic Killshades
-i(0, 84413);		-- De-Weaponized Mechanical Companion
 i(0, 94748);		-- Electrified Ether
 i(0, 95703);		-- Electrostatic Condenser
 i(0, 84418);		-- Elementium Dragonling
 i(0, 84416);		-- Elementium Toolbox
 i(0, 81720);		-- Energized Bio-Optic Killshades
 i(0, 84420);		-- Finely-Tuned Throat Needler
-i(0, 95705);		-- Gnomish Gravity Well
 i(0, 84428);		-- Gnomish X-Ray Scope
 i(0, 84429);		-- Goblin Barbecue
 i(0, 84403);		-- Handful of Obsidium Bolts
@@ -471,7 +468,6 @@ i(0, 81725);		-- Lightweight Bio-Optic Killshades
 i(0, 84421);		-- Loot-a-Rang
 i(0, 84415);		-- Lure Master Tackle Box
 i(0, 84431);		-- Overpowered Chicken Splitter
-i(0, 84412);		-- Personal World Destroyer
 i(0, 82177);		-- Quickflip Deflection Plates [REMOVED: 6.0.2]
 i(0, 84408);		-- R19 Threatfinder
 i(0, 81714);		-- Reinforced Bio-Optic Killshades
@@ -487,6 +483,12 @@ i(0, 84425);		-- Cardboard Assassin
 i(0, 84427);		-- Grounded Plasma Shield
 i(0, 84424);		-- Invisibility Field
 i(0, 82200);		-- Spinal Healing Injector
+-- Gnomish Engineering
+i(0, 84413, nil, GNOMISH_ENGINEERING);	-- De-Weaponized Mechanical Companion
+i(0, 95705, nil, GNOMISH_ENGINEERING);	-- Gnomish Gravity Well
+-- Goblin Engineering
+i(0, 95707, nil, GOBLIN_ENGINEERING);	-- Big Daddy
+i(0, 84412, nil, GOBLIN_ENGINEERING);	-- Personal World Destroyer
 
 -----------------
 -- PATCH 4.2.0 --
@@ -505,12 +507,10 @@ i(0, 127136);		-- Big Game Hunter
 i(0, 127129);		-- Blingtron 4000
 i(0, 127119);		-- Camouflage Retinal Armor
 i(0, 127120);		-- Deadly Retinal Armor
-i(0, 127138);		-- Depleted-Kyparium Rocket
 i(0, 127121);		-- Energized Retinal Armor
 i(0, 131211);		-- Flashing Tinker's Gear
 i(0, 131212);		-- Fractured Tinker's Gear
 i(0, 127127);		-- G91 Landshark
-i(0, 127139);		-- Geosynchronous World Spinner
 i(0, 127113);		-- Ghost Iron Bolts
 i(0, 127134);		-- Ghost Iron Dragonling
 i(0, 127128);		-- Goblin Dragon Gun, Mark II
@@ -545,6 +545,10 @@ i(89994, 128260);	-- Celestial Firework
 i(89993, 128261);	-- Grand Celebration Firework
 i(89997, 131258);	-- Jade Blossom Firework
 i(89992, 128262);	-- Serpent's Heart Firework
+-- Gnomish Engineering
+i(0, 127139, nil, GNOMISH_ENGINEERING);	-- Geosynchronous World Spinner
+-- Goblin Engineering
+i(0, 127138, nil, GOBLIN_ENGINEERING);	-- Depleted-Kyparium Rocket
 
 -----------------
 -- PATCH 5.2.0 --

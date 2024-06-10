@@ -341,6 +341,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		}),
 	}),
 	prof(ENGINEERING, {
+		prof(GNOMISH_ENGINEERING, {
+			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
+			["groups"] = {
+				filter(BATTLE_PETS, {
+					i(60216),	-- De-Weaponized Mechanical Companion (PET!)
+				}),
+				filter(TOYS, {
+					i(40727, {	-- Gnomish Gravity Well (TOY!)
+						["requireSkill"] = GNOMISH_ENGINEERING,
+					}),
+				}),
+			},
+		}),
+		prof(GOBLIN_ENGINEERING, {
+			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
+			["groups"] = {
+				filter(BATTLE_PETS, {
+					i(59597),	-- Personal World Destroyer (PET!)
+				}),
+				filter(MISC, {
+					i(63396),	-- Big Daddy
+				}),
+			},
+		}),
 		n(DISCOVERY, {
 			r(84425),	-- Cardboard Assassin
 			r(84427),	-- Grounded Plasma Shield
@@ -357,12 +381,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(59359),	-- Reinforced Bio-Optic Killshades
 			i(59448),	-- Specialized Bio-Optic Killshades
 		}),
-		filter(BATTLE_PETS, {
-			i(60216),	-- De-Weaponized Mechanical Companion (PET!)
-			i(59597),	-- Personal World Destroyer (PET!)
-		}),
 		filter(MISC, {
-			i(63396),	-- Big Daddy
 			i(67494, {	-- Electrostatic Condenser
 				["collectible"] = false,
 			}),
@@ -379,7 +398,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(60224),	-- Handful of Obsidium Bolts
 		}),
 		filter(TOYS, {
-			i(40727),	-- Gnomish Gravity Well (TOY!)
 			i(60854),	-- Loot-A-Rang (TOY!)
 		}),
 		filter(TRINKET_F, {
