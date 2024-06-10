@@ -315,6 +315,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216563),	-- Gaze of the Ancient (not on wowhead)
 					i(215633),	-- Gara'kal, Claw of the Spiritbinder
 					i(215852),	-- Gao-Rei, Staff of the Protector (player confirmed)
+					i(215698),	-- Grand Imperial Rifle (player confirmed)
 					i(215968),	-- Greatsword of the Iron Legion
 					i(215855),	-- Jin'ya, Orb of the Watercaller
 					i(215929),	-- Kilrak, Fangs of Terror (MSV normal)
