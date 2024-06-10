@@ -16,10 +16,10 @@ struct = function(field, id, t)
 	t[field] = id;
 	return t;
 end
--- Clone a piece of data as a separate table
+-- Clone a piece of data as a separate table (t => c, return c)
 clone = function(t, c)
+	if type(t) ~= "table" then return t end
 	c = c or {};
-	if type(c) ~= "table" then error("clone is only necessary for 'table' types!") end
 
 	for key,value in pairs(t) do
 		if not c[key] then
@@ -88,12 +88,51 @@ appendAllGroups = function(g, ...)
 	end
 	return g;
 end
--- Simply applies keys from 'data' into 't' where each key does not already exist
+-- I've determined that this isn't going to work out with how our data is currently organized
+-- Since we've grown accustomed to making the inner timeline fully-replace any bubbleDown, there's no
+-- real way to add logic to merge these properly. Oh well, maybe another field will eventually benefit
+-- from this concept :(
+-- local CustomMergedData = {
+-- 	timeline = function(t, new)
+-- 		local old = t.timeline
+-- 		if old == new then
+-- 			print("Self-merging timeline within bubbledown??",tostring(new),"=>",tostring(old))
+-- 			for k, v in pairs(t) do
+-- 				print(k,"=",v)
+-- 			end
+-- 			return
+-- 		end
+-- 		-- don't merge into an ignored timeline, the purpose is to prevent merging if it's ignored!
+-- 		if old == IGNORED_VALUE then
+-- 			return
+-- 		end
+-- 		if type(old) ~= "table" then
+-- 			print("Merging into timeline which is not an array =>",old)
+-- 			old = {old}
+-- 		end
+-- 		if type(new) ~= "table" then
+-- 			print("Merging from timeline which is not an array =>",new)
+-- 			new = {new}
+-- 		end
+-- 		-- print("#new",#new,tostring(old),tostring(new))
+-- 		for _,patch in ipairs(new) do
+-- 			old[#old + 1] = patch
+-- 			-- print("merged timeline",patch,"@",#old)
+-- 		end
+-- 		t.timeline = old
+-- 	end
+-- }
+-- Simply applies keys from 'data' into 't' using a custom function by key, or where the key does not already exist
 applyData = function(data, t)
 	if data and t then
 		for key, value in pairs(data) do
-			if t[key] == nil then	-- dont' replace existing data
-				t[key] = value;
+			if t[key] == nil then	-- don't replace existing data
+				t[key] = clone(value)
+			-- else
+			-- 	local custom = CustomMergedData[key]
+			-- 	if custom then
+			-- 		custom(t, value)
+			-- 	end
 			end
 		end
 	end

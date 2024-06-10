@@ -9,15 +9,34 @@ namespace ATT.FieldTypes
     {
         private static readonly TimelineEntry[] _empty = Array.Empty<TimelineEntry>();
         private TimelineEntry[] _entries;
+        private bool _dirty;
 
         public const string Field = "timeline";
 
         public int EntryCount => _entries?.Length ?? 0;
 
-        public IReadOnlyList<TimelineEntry> Entries => _entries ?? _empty;
+        public IReadOnlyList<TimelineEntry> Entries
+        {
+            get
+            {
+                if (_entries == null)
+                {
+                    return _empty;
+                }
+                if (!_dirty)
+                {
+                    return _entries;
+                }
+
+                _entries = _entries.Distinct().OrderBy(e => e.LongVersion).ToArray();
+                _dirty = false;
+                return _entries;
+            }
+        }
 
         private Timeline(object obj)
         {
+            _dirty = true;
             if (obj is IEnumerable<string> strs)
             {
                 _entries = strs.Select(TimelineEntry.AsTimelineEntry).ToArray();
@@ -94,12 +113,13 @@ namespace ATT.FieldTypes
         private void Merge(Timeline obj)
         {
             if (obj._entries == null) return;
+            _dirty = true;
             if (_entries == null)
             {
                 _entries = obj._entries.ToArray();
                 return;
             }
-            _entries = _entries.Union(obj._entries).Distinct().OrderBy(e => e.LongVersion).ToArray();
+            _entries = _entries.Union(obj._entries).ToArray();
         }
     }
 }
