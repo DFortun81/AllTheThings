@@ -302,6 +302,7 @@ root(ROOTS.Unsorted, {
 					i(216457),	-- Pandaren Standard
 					i(216478),	-- Pandaren Flamberge
 					i(216597),	-- Eyes of the Doomed
+					i(215699),	-- Grand Imperial Rifle (do not add this anywhere unless it is actually confirmed)
 				}),
 			}),
 			filter(MISC, {

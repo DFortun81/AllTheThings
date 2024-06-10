@@ -352,9 +352,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215501),	-- Xal'atoh, Malformed Image of Gorehowl
 						i(215909),	-- Xifeng, Longblade of the Guardian
 					})),
-					filter(BATTLE_PETS, {
-						i(45606),	-- Sen'jin Fetish (PET!)
-					}),
 					header(HEADERS.Achievement, 8458, {	-- Vale of Eternal Sorrows
 						e(852, {	-- Immerseus
 							["crs"] = { 71543 },	-- Immerseus
