@@ -1575,7 +1575,7 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Ice Deflector",
-					["timeline"] = { REMOVED_4_0_3, "timewalking 9.1.0" },
+					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 3957,
 				},
 				{

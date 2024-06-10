@@ -94,7 +94,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Stormshroud Shoulders",
-						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
+						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 						["recipeID"] = 19090,
 						["requireSkill"] = 10658,
 					},
@@ -117,7 +117,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Stormshroud Armor",
-						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
+						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 						["recipeID"] = 19079,
 						["requireSkill"] = 10658,
 					},
@@ -139,7 +139,7 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Stormshroud Gloves",
-						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
+						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 						["recipeID"] = 26279,
 						["requireSkill"] = 10658,
 					},

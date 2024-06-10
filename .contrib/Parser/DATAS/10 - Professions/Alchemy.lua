@@ -1157,7 +1157,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				},
 				{
 					["name"] = "Greater Arcane Protection Potion",
-					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1.0" },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 					["recipeID"] = 17577
 				},
 				applyclassicphase(PHASE_FOUR, {

@@ -1827,7 +1827,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Stormshroud Shoulders",
-					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 					["recipeID"] = 19090,
 				},
 				-- #endif
@@ -2056,7 +2056,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Stormshroud Armor",
-					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 					["recipeID"] = 19079,
 				},
 				-- #endif
@@ -2371,7 +2371,7 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Stormshroud Gloves",
-					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3, "timewalking 9.1" },
+					["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 					["recipeID"] = 26279,
 				},
 				-- #endif
