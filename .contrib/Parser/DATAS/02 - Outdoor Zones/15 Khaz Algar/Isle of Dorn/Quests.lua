@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- Using Questauren These gets completed (Probably Inbetween Bronzebeard Family and Violet Impact)
 			q(82199),	--
 			q(81966),	-- Slept like a Rock
-			q(83543),	-- |could be some pre-patch/xpac quest intro quest chain for phase?
+			q(83543),	-- could be some pre-patch/xpac quest intro quest chain for phase?
 			--
 			-- Story quest chain START
 			q(81930, {	-- The War Within [A]
@@ -22,10 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					81930,	-- The War Within [A]
 					78713,	-- The War Within [H]
 				},
-				["providers"] = {
-					{ "n", 213625 },	-- Lady Jaina Proudmoore
-					{ "n", 213620 },	-- Thrall
-				},
+				["provider"] = { "n", 213620 },	-- Thrall
 				["coord"] = { 41.9, 45.0, SILITHUS_THE_WOUND },
 				["maps"] = { 2321 },	-- Chamber of Heart
 				["sourceQuestNumRequired"] = 1,
