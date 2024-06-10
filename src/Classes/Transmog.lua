@@ -1045,6 +1045,10 @@ if app.IsRetail then
 		end
 		-- if wrong class then won't be learned (probably)
 		local item = app.SearchForObject("sourceID", sourceID, "field")
+		if not item then
+			-- ATT doesn't know about this SourceID...
+			return
+		end
 		if item.b ~= 1 then
 			-- app.PrintDebug("Non-bound SourceID",sourceID,link)
 			return
