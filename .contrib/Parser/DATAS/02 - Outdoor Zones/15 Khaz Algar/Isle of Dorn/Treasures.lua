@@ -20,12 +20,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			o(444773, {	-- Jade Pearl
 				["questID"] = 82287,
-				["coord"] = { 81.4, 20.7, ISLE_OF_DORN },
+				["coord"] = { 77.2, 24.5, ISLE_OF_DORN },
 				["g"] = {
 					--gray item 500g
 					i(223280),	-- Jade Pearl
 				},
 			}),
+			--[[ Seems like not here in this build and entire area a bit off with coords?
 			o(446476, {	-- Web-wrapped Axe
 				["questID"] = 82715,
 				["coord"] = { 59.7, 19.5, ISLE_OF_DORN },
@@ -33,6 +34,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(224290),	-- Storm Defender's Axe
 				},
 			}),
+			]]--
 			o(443638, {	-- Mosswool Flower
 				["description"] = "Interact with Lost Mosswool 3 times to spawn this treasure",
 				["questID"] = 83246,	-- or 82251 since both fire at same time, but 82251 has 'Tracking Quest' name
@@ -108,15 +110,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--},
 			}),
 			o(444137, {	-- Thak's Treasure
-				["coord"] = { 33.3, 41.9, ISLE_OF_DORN },
+				["coord"] = { 36.9, 42.2, ISLE_OF_DORN },
 				["questID"] = 82246,
 				["g"] = {
 					n(223227, {	-- One-Eyed Thak
-						["coord"] = { 34.6, 43.5, ISLE_OF_DORN },
+						["coord"] = { 38.1, 43.5, ISLE_OF_DORN },
 						["questID"] = 82245,	-- Friendly Thak
 					}),
 					n(223247, {	-- One-Eyed Thak
-						["coord"] = { 33.2, 41.9, ISLE_OF_DORN },
+						["coord"] = { 36.9, 42.3, ISLE_OF_DORN },
 						--["questID"] = 82245,	-- Friendly Thak, flag as completed
 					}),
 					--
@@ -142,9 +144,34 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					}),
 				},
 			}),
-			-- Couldnt extract objectID
-			q(82047, {	-- Watcher of the North (Achievement Crit)
+			n(222941, {	-- Pearlescent Shellcrab
+				--?
+				["coord"] = { 48.6, 30.1, ISLE_OF_DORN },
+				--["questID"] = ,
+				["g"] = {
+					i(224185),	-- Crab-Guiding Branch
+				},
+			}),
+			-- 
+			o(441284, {	-- Watcher of the North (achievement crit)
 				["coord"] = { 57.2, 20.0, ISLE_OF_DORN },
+				["questID"] = 82047,
+			}),
+			o(441278, {	-- Watcher of the South (achievement crit)
+				["coord"] = { 42.1, 80.2, ISLE_OF_DORN },
+				["questID"] = 82048,
+			}),
+			o(441183, {	-- Galan's Edict (achievement crit)
+				["coord"] = { 37.3, 52.5, ISLE_OF_DORN },
+				["questID"] = 82038,
+			}),
+			o(441223, {	-- Stone of The Unbound (achievement crit)
+				["coord"] = { 44.1, 30.1, ISLE_OF_DORN },
+				["questID"] = 82046,
+			}),
+			o(441231, {	-- Titan Console (achievement crit)
+				["coord"] = { 78.1, 27.9, ISLE_OF_DORN },
+				["questID"] = 82045,
 			}),
 		}),
 	}),

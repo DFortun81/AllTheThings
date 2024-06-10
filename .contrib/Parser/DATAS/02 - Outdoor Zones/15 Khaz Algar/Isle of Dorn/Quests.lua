@@ -261,6 +261,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 78.4, 42.0, ISLE_OF_DORN },
 					["g"] = {
 						i(219755),	-- Mead-Speckled Pantaloons
+						i(219756),	-- Mead-Speckled Vest
 					},
 				}),
 				q(78545, {	-- Return to the Coreway
@@ -742,6 +743,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			--	Rares / Bonus Objectives / Once per character?
 			--	need to be moved into rares if didn't get bonus objective
+			-- TODO: Worldsoul memory @ 51.2, 29.2
+			--
 			q(81894, {	-- Warphorn
 				["description"] = "Walking around in area",
 				["provider"] = { "n", 219263 },	-- Warphorn
@@ -779,22 +782,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
-			q(81903, {	-- Bouldershell Pincer (vignette)
-				["provider"] = { "n", 219278 },	-- Shallowshell the Cracker
-				["coord"] = { 77.7, 25.0, ISLE_OF_DORN },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			q(81901, {	-- Tempeest Lord Incarus
-				["provider"] = { "n", 219269 },	-- Tempeest Lord Incarus
-				["coord"] = { 60.2, 16.4, ISLE_OF_DORN },
-				["g"] = {
-					-- no loot
-				},
-			}),
 			q(81895, {	-- Emperor Pitfang
-				["provider"] = { "n", 219269 },	-- Emperor Pitfang
+				["provider"] = { "n", 219265 },	-- Emperor Pitfang // 219269?
 				["coord"] = { 46.4, 63.3, ISLE_OF_DORN },
 				["g"] = {
 					i(223345),	-- Viper's Stone Grips
@@ -821,10 +810,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223376),	-- Band of the Relicbearer
 				},
 			}),
-			q(81899, {	-- Gar'loc
-				["provider"] = { "n", 219268 },	-- Gar'loc
-				["coord"] = { 53.0, 86.9, ISLE_OF_DORN },
-			}),
 			q(81893, {	-- Ravenous Packleader
 				["provider"] = { "n", 219264 },	-- Bloodmaw
 				["coords"] = {
@@ -835,11 +820,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 				["g"] = {
 					i(223351),	-- Wolf Packleader's Hood
+
 				},
 			}),
 			q(81892, {	-- Scorching Steamsurger
 				["provider"] = { "n", 219262 },	-- Springbubble
-				["coord"] = { 59.2, 63.9, ISLE_OF_DORN },
+				["coord"] = { 58.7, 60.7, ISLE_OF_DORN },
 				["g"] = {
 					i(223356),	-- Shoulderpads of the Steamsurger
 				},
@@ -861,9 +847,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
 	q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
 	-- Side quests
-	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
-	-- Pseudo-treasure / Lore?
-	q(82287),	-- interact with Titan Console @ 82.4, 24.7 (o: 441231)
+	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero) 
 	-- Special Assignment unlocks tracker
 	q(82157),	-- Special Assignment: Rise of the Colossals
 	q(82146),	-- Special Assignment: Cinderbree Surge

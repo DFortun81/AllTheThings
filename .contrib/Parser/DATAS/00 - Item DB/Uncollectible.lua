@@ -1841,6 +1841,8 @@ i(225803);	-- Lynx Tag Collar
 i(225850);	-- Moldy Rations
 i(220219);	-- Mound of Night Soil
 i(217162);	-- Necklace of Kobold Teeth
+i(224153);	-- Nibbled Shroomcap
+i(213258);	-- Odorant Oddity
 i(220244);	-- Oversized Claw
 i(220251);	-- Pale Gills
 i(225787);	-- Pheromone-Covered Missive
@@ -1873,10 +1875,12 @@ i(220296);	-- Thickly Webbed Foot
 i(220223);	-- Torn Gossamer Scrap
 i(220272);	-- Torn Manuscript Page
 i(220282);	-- Tuft of Whiskers
+i(213266);	-- Twitching Snack
 i(223893);	-- Uncharged Feather
 i(220295);	-- Unidentified Viscous Substance
 i(225828);	-- Unrefined Dense Ore
 i(220289);	-- Venomous Stinger
 i(220270);	-- Vile Catalyst
+i(220263);	-- Wax Miner's Sack
 i(225802);	-- Well-Worn Darning Needle
 i(217163);	-- Well Worn Doll
