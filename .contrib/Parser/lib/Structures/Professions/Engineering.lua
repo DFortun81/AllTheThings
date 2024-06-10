@@ -455,14 +455,42 @@ CATA_ENGINEERING = applyclassicphase(CATA_PHASE_ONE, bubbleDown({ ["timeline"] =
 	}),
 	applyclassicphase(BFA_PHASE_ONE, r(264483, {["timeline"] = {ADDED_8_0_1_LAUNCH}})),	-- Cataclysm Engineering
 	n(ARMOR, {
-		r(81722),	-- Agile Bio-Optic Killshades
+		r(81722, {	-- Agile Bio-Optic Killshades
+			-- #if BEFORE 7.3.0
+			["classes"] = LEATHER_CLASSES,
+			-- #endif
+		}),
 		r(84406),	-- Authentic Jr. Engineer Goggles
-		r(81724),	-- Camouflage Bio-Optic Killshades
-		r(81716),	-- Deadly Bio-Optic Killshades
-		r(81720),	-- Energized Bio-Optic Killshades
-		r(81725),	-- Lightweight Bio-Optic Killshades
-		r(81714),	-- Reinforced Bio-Optic Killshades
-		r(81715),	-- Specialized Bio-Optic Killshades
+		r(81724, {	-- Camouflage Bio-Optic Killshades
+			-- #if BEFORE 7.3.0
+			["classes"] = { DRUID },
+			-- #endif
+		}),
+		r(81716, {	-- Deadly Bio-Optic Killshades
+			-- #if BEFORE 7.3.0
+			["classes"] = MAIL_CLASSES,
+			-- #endif
+		}),
+		r(81720, {	-- Energized Bio-Optic Killshades
+			-- #if BEFORE 7.3.0
+			["classes"] = { SHAMAN },
+			-- #endif
+		}),
+		r(81725, {	-- Lightweight Bio-Optic Killshades
+			-- #if BEFORE 7.3.0
+			["classes"] = CLOTH_CLASSES,
+			-- #endif
+		}),
+		r(81714, {	-- Reinforced Bio-Optic Killshades
+			-- #if BEFORE 7.3.0
+			["classes"] = PLATE_CLASSES,
+			-- #endif
+		}),
+		r(81715, {	-- Specialized Bio-Optic Killshades
+			-- #if BEFORE 7.3.0
+			["classes"] = { PALADIN },
+			-- #endif
+		}),
 	}),
 	n(ARMOR_ENCHANTMENTS, {
 		r(82177, {["timeline"] = {ADDED_4_0_3_LAUNCH, REMOVED_6_0_2}}),	-- Quickflip Deflection Plates

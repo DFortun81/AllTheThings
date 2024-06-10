@@ -37,17 +37,27 @@ ALL_CLASSES = {
 	-- #endif
 };
 TANKS = {
+	-- #if AFTER WRATH
 	DEATHKNIGHT,
+	-- #endif
+	-- #if AFTER LEGION
 	DEMONHUNTER,
+	-- #endif
 	DRUID,
+	-- #if AFTER MOP
 	MONK,
+	-- #endif
 	PALADIN,
 	WARRIOR,
 };
 HEALERS = {
 	DRUID,
+	-- #if AFTER DF
 	EVOKER,
+	-- #endif
+	-- #if AFTER MOP
 	MONK,
+	-- #endif
 	PALADIN,
 	PRIEST,
 	SHAMAN,
@@ -58,9 +68,13 @@ CLOTH_CLASSES = {
 	WARLOCK,
 };
 LEATHER_CLASSES = {
+	-- #if AFTER LEGION
 	DEMONHUNTER,
+	-- #endif
 	DRUID,
+	-- #if AFTER MOP
 	MONK,
+	-- #endif
 	ROGUE,
 };
 LEATHER_CLASSES_INTELLECT = {
@@ -68,7 +82,9 @@ LEATHER_CLASSES_INTELLECT = {
 	MONK,
 };
 MAIL_CLASSES = {
+	-- #if AFTER DF
 	EVOKER,
+	-- #endif
 	HUNTER,
 	SHAMAN,
 };
@@ -81,7 +97,9 @@ MAIL_CLASSES_HEALER = {
 	SHAMAN,
 };
 PLATE_CLASSES = {
+	-- #if AFTER WRATH
 	DEATHKNIGHT,
+	-- #endif
 	PALADIN,
 	WARRIOR,
 };
