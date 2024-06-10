@@ -1516,9 +1516,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(104269, {	-- Thundering Onyx Cloud Serpent (MOUNT!)
 					["cost"] = {{"c", BRONZE, 38500}},
 				}),
-				i(90655, {	-- Thundering Ruby Cloud Serpent (MOUNT!)
-					["cost"] = {{"c", BRONZE, 50000}},
-				}),
 			}),
 			n(219013, {	-- Horos <Rare Collections>
 				["crs"] = { 217051 }, 	-- Horos <Rare Collections>
