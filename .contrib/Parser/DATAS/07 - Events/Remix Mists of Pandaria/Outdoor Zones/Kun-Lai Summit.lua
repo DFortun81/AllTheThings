@@ -89,7 +89,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				q(80431, {	-- Aid the August Celestials
 					["provider"] = { "n", 60968 },	-- Xuen
 					["coords"] = {
-						{ 67.2, 56, KUN_LAI_SUMMIT },
+						{ 67.2, 56.0, KUN_LAI_SUMMIT },
 						{ 70.4, 51.2, KUN_LAI_SUMMIT }, 
 						{ 71.6, 45.0, KUN_LAI_SUMMIT },  
 						{ 66.4, 46.4, KUN_LAI_SUMMIT },

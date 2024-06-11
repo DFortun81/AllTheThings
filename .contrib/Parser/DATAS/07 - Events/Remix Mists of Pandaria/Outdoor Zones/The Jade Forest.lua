@@ -276,6 +276,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				q(80441, {	-- Aid the Order of the Cloud Serpent
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["coord"] = { 57.6, 44.9, THE_JADE_FOREST },
+					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
 					["repeatable"] = true,
 				}),
 				q(80429, {	-- Aid the August Celestials
