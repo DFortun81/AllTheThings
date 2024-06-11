@@ -33,7 +33,7 @@ api.IsRetrieving = function(text)
 	return (not text
 		or RetrievingTexts[text]
 		or text:find(RETRIEVING_DATA)
-		or text:find("^%[%]"))
+		or text:find("%[%]"))
 		-- make sure regardless of conditional return we return a true here for consistency
 		and true;
 end
