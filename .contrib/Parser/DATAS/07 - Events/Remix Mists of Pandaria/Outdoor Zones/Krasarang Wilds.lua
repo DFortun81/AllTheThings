@@ -181,24 +181,26 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["sym"] = {{"meta_achievement",
 						19995,	-- Elusive Foes: Krasarang Wilds
 						20028,	-- Explore Krasarang Wilds
-						19979,	-- Hidden Treasures: Krasarang Wilds
+						19979,  -- Hidden Treasures: Krasarang Wilds
 					}},
 				}),
 			}),
 			n(QUESTS, {
-				q(80439, {	-- Aid the Alliance
+				q(80439, {	-- Aid the Alliance [A]
+					["sourceQuest"] = 32109,  -- Lion's Landing [A]
 					["provider"] = { "n", 67940 },	-- Admiral Taylor
 					["coord"] = { 89.5, 32.5, KRASARANG_WILDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
 					["repeatable"] = true,
 				}),
-				q(80438, {	-- Aid the Horde
-					["sourceQuest"] = 32108,	-- Domination Point (H)
+				q(80438, {	-- Aid the Horde [H]
+					["sourceQuest"] = 32108,  -- Domination Point [H]
 					["provider"] = { "n", 67939 },	-- General Nazgrim
 					["coord"] = { 10.3, 53.7, KRASARANG_WILDS },
 					["races"] = HORDE_ONLY,
+					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
 					["repeatable"] = true,
-					["cost"] = { { "c", 738, 10 } },	-- 10x Lesser Charm of Good Fortune
 				}),
 			}),
 			n(ZONE_REWARDS, {

@@ -85,6 +85,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}},
 				}),
 			}),
+			n(QUESTS, {
+				q(80431, {	-- Aid the August Celestials
+					["provider"] = { "n", 60968 },	-- Xuen
+					["coords"] = {
+						{ 67.2, 56, KUN_LAI_SUMMIT },
+						{ 70.4, 51.2, KUN_LAI_SUMMIT }, 
+						{ 71.6, 45.0, KUN_LAI_SUMMIT },  
+						{ 66.4, 46.4, KUN_LAI_SUMMIT },
+						{ 68.6, 44.4, KUN_LAI_SUMMIT },
+					},
+					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
+					["repeatable"] = true,
+				}),
+			}),
 			n(ZONE_REWARDS, {
 				filter(CLOTH, {
 					i(213700),	-- Silkmaster's Bracers

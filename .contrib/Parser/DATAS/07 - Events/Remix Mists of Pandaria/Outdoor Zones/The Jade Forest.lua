@@ -274,14 +274,15 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				-- daily turn in
 				q(80441, {	-- Aid the Order of the Cloud Serpent
-					["repeatable"] = true,
 					["provider"] = { "n", 58564 },	-- Elder Anli
 					["coord"] = { 57.6, 44.9, THE_JADE_FOREST },
+					["repeatable"] = true,
 				}),
 				q(80429, {	-- Aid the August Celestials
-					["repeatable"] = true,
 					["provider"] = { "n", 57319 },	-- Elder Sage Storm-Sing
 					["coord"] = { 53.8, 61.9, THE_JADE_FOREST },
+					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
+					["repeatable"] = true,
 				}),
 			}),
 			n(ZONE_REWARDS, {
