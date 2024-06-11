@@ -58,6 +58,20 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(QUESTS, {
+				q(80310, {	-- Setting Sun Garrison
+					["isDaily"] = true,
+					["g"] = {
+						i(211279),	-- Cache of Infinite Treasure
+					},
+					["providers"] = {
+						{ "n", 64031 },	 -- Xari the Kind
+						{ "n", 64007 },  -- Weng the Merciful
+					},
+					["coords"] = {
+						{ 84.2, 62.4, VALE_OF_ETERNAL_BLOSSOMS },
+						{ 63.0, 22.2, VALE_OF_ETERNAL_BLOSSOMS },
+					},
+				}),
 				q(80427, {	-- Aid the Golden Lotus
 					["repeatable"] = true,
 					["provider"] = { "n", 58919 },	-- Anji Autumnlight
