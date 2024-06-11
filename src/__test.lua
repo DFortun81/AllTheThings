@@ -218,6 +218,10 @@ app.errors = function(msg)
 	runner2.Run(throw, msg.."3")
 	runner2.Run(throw, msg.."4")
 
+	-- repeated test on consistent runner
+	app.UpdateRunner.Run(throw, "update"..msg.."5")
+	app.UpdateRunner.Run(throw, "update"..msg.."6")
+
 end
 
 function ATTarrayappend()

@@ -200,49 +200,55 @@ local function CreateRunner(name)
 	end
 
 	-- Static coroutine for the Runner which runs one loop each time the Runner is called, and yields on the Stack
-	local RunnerCoroutine = c_create(function()
-		while true do
-			perFrame = Config.PerFrame
-			local params;
-			local func = FunctionQueue[RunIndex];
-			-- app.PrintDebug("FRC.Running."..name)
-			while func do
-				perFrame = perFrame - 1;
-				params = ParameterBucketQueue[RunIndex];
-				if params then
-					-- app.PrintDebug("FRC.Run.N."..name,RunIndex,unpack(params))
-					local ok, err = pcall(func, unpack(params));
-					if not ok then PrintError(err, "Run."..Name) end
-				else
-					-- app.PrintDebug("FRC.Run.1."..name,RunIndex,ParameterSingleQueue[RunIndex])
-					local ok, err = pcall(func, ParameterSingleQueue[RunIndex]);
-					if not ok then PrintError(err, "Run."..Name) end
+	local RunnerCoroutine
+	local SetRunnerCoroutine = function()
+		RunnerCoroutine = c_create(function()
+			while true do
+				perFrame = Config.PerFrame
+				local params;
+				local func = FunctionQueue[RunIndex];
+				-- app.PrintDebug("FRC.Running."..name)
+				while func do
+					perFrame = perFrame - 1;
+					params = ParameterBucketQueue[RunIndex];
+					if params then
+						-- app.PrintDebug("FRC.Run.N."..name,RunIndex,unpack(params))
+						local ok, err = pcall(func, unpack(params));
+						if not ok then PrintError(err, "Run."..Name) end
+					else
+						-- app.PrintDebug("FRC.Run.1."..name,RunIndex,ParameterSingleQueue[RunIndex])
+						local ok, err = pcall(func, ParameterSingleQueue[RunIndex]);
+						if not ok then PrintError(err, "Run."..Name) end
+					end
+					-- app.PrintDebug("FRC.Done."..name,RunIndex)
+					if perFrame <= 0 then
+						-- app.PrintDebug("FRC.Yield."..name)
+						c_yield();
+						perFrame = Config.PerFrame;
+					end
+					RunIndex = RunIndex + 1;
+					func = FunctionQueue[RunIndex];
 				end
-				-- app.PrintDebug("FRC.Done."..name,RunIndex)
-				if perFrame <= 0 then
-					-- app.PrintDebug("FRC.Yield."..name)
-					c_yield();
-					perFrame = Config.PerFrame;
+				-- Run the OnEnd function if it exists
+				local OnEnd = FunctionQueue[0];
+				if OnEnd then
+					-- app.PrintDebug("FRC.End."..name,#FunctionQueue)
+					OnEnd();
 				end
-				RunIndex = RunIndex + 1;
-				func = FunctionQueue[RunIndex];
+				Pushed = nil;
+				Reset();
+				-- Yield false to kick the StackRun off the Stack to stop calling this coroutine since it is complete until Run is called again
+				c_yield(false);
 			end
-			-- Run the OnEnd function if it exists
-			local OnEnd = FunctionQueue[0];
-			if OnEnd then
-				-- app.PrintDebug("FRC.End."..name,#FunctionQueue)
-				OnEnd();
-			end
-			Pushed = nil;
-			Reset();
-			-- Yield false to kick the StackRun off the Stack to stop calling this coroutine since it is complete until Run is called again
-			c_yield(false);
-		end
-	end);
+		end);
+		-- app.PrintDebug("SetRunnerCoroutine",Name)
+	end
+	SetRunnerCoroutine()
 
 	-- Static Function that handles the Stack-Run for the Runner-Coroutine
 	local function StackRun()
 		-- app.PrintDebug("Stack.Run",Name)
+		if c_status(RunnerCoroutine) == "dead" then SetRunnerCoroutine() end
 		local ok, err = c_resume(RunnerCoroutine);
 		if ok then
 			if err == false then
