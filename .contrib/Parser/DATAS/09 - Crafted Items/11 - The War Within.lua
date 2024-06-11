@@ -522,11 +522,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		spell(2575, {	-- Mining
 		}),
 	}),
-	--[[
 	prof(SKINNING, {
-		spell(, {	--
-		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = SKINNING,
+			["collectible"] = false,
+		},{
+			FirstSkin(81450, 219264),	-- Skinning Bloodmaw
+			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
+			FirstSkin(81452, 219267),	-- Skinning Plaguehart
+			FirstSkin(81453, 219271),	-- Skinning Twice-Stinger the Wretched
+			FirstSkin(81449, 219263),	-- Skinning Warphorn
+		})),
+		--spell(, {	--
+		--}),
 	}),
+	--[[
 	prof(TAILORING, {
 		n(ARMOR, {
 		}),

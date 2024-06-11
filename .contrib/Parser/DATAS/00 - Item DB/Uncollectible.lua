@@ -1880,6 +1880,7 @@ i(213266);	-- Twitching Snack
 i(223893);	-- Uncharged Feather
 i(220295);	-- Unidentified Viscous Substance
 i(225828);	-- Unrefined Dense Ore
+i(218453);	-- Unusable Fragment
 i(220289);	-- Venomous Stinger
 i(220270);	-- Vile Catalyst
 i(220263);	-- Wax Miner's Sack

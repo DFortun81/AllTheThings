@@ -1143,5 +1143,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82156),	-- 'Special Assignment: When the Deeps Stir'	/ callings or emissary actually
 	-- ?
 	--q(82957),	-- 'Thanks for the Wax' accepted every time when you fly in zone
-	q(83475),	-- Repair Water Console @ 45.3, 46.4
+	q(83475),	-- [DNT] Repair Console (spellID 455981) Water Console (o: ?) @ 45.3, 46.4, THE_RINGING_DEEPS)
+	q(83482),	-- [DNT] Repair Console (spellID 456005) Lost Console (o: 226641 @ 56.4, 22.5, THE_RINGING_DEEPS)
+	--q(82991),	-- when bind hearthstone location to Camp Murroch tavern
 });

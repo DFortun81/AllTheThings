@@ -1353,6 +1353,13 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					i(226325), -- Dornogal Craftsman's Flat Knife
 				},
 			}),
+			o(455966, {	-- Earthen Awl
+				["coord"] = { 64.3, 66.3, THE_RINGING_DEEPS },
+				["questID"] = 83901,
+				["g"] = {
+					i(226327), -- Earthen Awl
+				},
+			}),
 			o(455969, {	-- Earthen Lacing Tools
 				["coord"] = { 54.3, 59.6, DORNOGAL },
 				["questID"] = 83898,

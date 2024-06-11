@@ -262,6 +262,13 @@ root(ROOTS.Professions, prof(SKINNING, {
 					i(226341), -- Earthen Worker's Beams
 				},
 			}),
+			o(455950, {	-- Fungarian's Rich Tannin
+				["coord"] = { 65.7, 61.9, ISLE_OF_DORN },
+				--["questID"] = x,	-- TODO: re-check
+				["g"] = {
+					i(226343), -- Fungarian's Rich Tannin
+				},
+			}),
 		})
 	})),
 }));
