@@ -55,31 +55,20 @@ pet(4510),	-- Winged Arachnoid
 pet(4511),	-- Venomwing
 pet(4512),	-- Sceaduthax
 pet(4513),	-- Pillarnest Bonedrinker
-pet(4514),	-- Fallowspark Glowfly
 pet(4515),	-- Azure Flickerfly
 pet(4516),	-- Vibrant Glowfly
 pet(4517),	-- Waxwick
-pet(4518),	-- Magmashell Crawler
 pet(4519),	-- Burntram
 pet(4520),	-- Fathom Incher
 pet(4521),	-- Subterranean Dartswog
-pet(4522),	-- Troglofrog
 pet(4524),	-- Starkstripe Hopper
-pet(4525),	-- Fragrant Stonelamb
-pet(4526),	-- Sandstone Mosswool \\ Sandstone Protolamb
 pet(4527),	-- Lil' Moss Rosy \\ Rosewool Protolamb
 pet(4528),	-- Cobalt Mosswool
-pet(4529),	-- Shale Mosswool
 pet(4530),	-- Loamy
 pet(4533),	-- Meek Bloodlasher
 pet(4534),	-- Nightfarm Growthling
-pet(4535),	-- Ghostcap Menace
 pet(4536),	-- Blightbud
 pet(4537),	-- Chester \\ Kobold Fist-Thrower
-pet(4538),	-- Cobalt Ramolith
-pet(4539),	-- Granite Ramolith
-pet(4540),	-- Alabaster Stonecharger
-pet(4541),	-- Bedrock Stonecharger
 pet(4542),	-- Slim
 pet(4543),	-- Sir Shady Mrgglton Junior \\ Nightshade
 pet(4544),	-- Umbral Amalgam
@@ -106,7 +95,6 @@ pet(4573),	-- Skittish Sniffler
 pet(4574),	-- Snuffling
 pet(4575),	-- Sneef
 pet(4576),	-- Spearmint Snuffling
-pet(4577),	-- Cinderhoney Emberstinger
 pet(4581),	-- Purple Stagshell
 pet(4582),	-- Rak-Ush Battleshell
 pet(4583),	-- Green Stagshell
@@ -188,31 +176,20 @@ pet(4510),	-- Winged Arachnoid
 pet(4511),	-- Venomwing
 pet(4512),	-- Sceaduthax
 pet(4513),	-- Pillarnest Bonedrinker
-pet(4514),	-- Fallowspark Glowfly
 pet(4515),	-- Azure Flickerfly
 pet(4516),	-- Vibrant Glowfly
 pet(4517),	-- Waxwick
-pet(4518),	-- Magmashell Crawler
 pet(4519),	-- Burntram
 pet(4520),	-- Fathom Incher
 pet(4521),	-- Subterranean Dartswog
-pet(4522),	-- Troglofrog
 pet(4524),	-- Starkstripe Hopper
-pet(4525),	-- Fragrant Stonelamb
-pet(4526),	-- Sandstone Mosswool \\ Sandstone Protolamb
 pet(4527),	-- Lil' Moss Rosy \\ Rosewool Protolamb
 pet(4528),	-- Cobalt Mosswool
-pet(4529),	-- Shale Mosswool
 pet(4530),	-- Loamy
 pet(4533),	-- Meek Bloodlasher
 pet(4534),	-- Nightfarm Growthling
-pet(4535),	-- Ghostcap Menace
 pet(4536),	-- Blightbud
 pet(4537),	-- Chester \\ Kobold Fist-Thrower
-pet(4538),	-- Cobalt Ramolith
-pet(4539),	-- Granite Ramolith
-pet(4540),	-- Alabaster Stonecharger
-pet(4541),	-- Bedrock Stonecharger
 pet(4542),	-- Slim
 pet(4543),	-- Sir Shady Mrgglton Junior \\ Nightshade
 pet(4544),	-- Umbral Amalgam
@@ -239,7 +216,6 @@ pet(4573),	-- Skittish Sniffler
 pet(4574),	-- Snuffling
 pet(4575),	-- Sneef
 pet(4576),	-- Spearmint Snuffling
-pet(4577),	-- Cinderhoney Emberstinger
 pet(4581),	-- Purple Stagshell
 pet(4582),	-- Rak-Ush Battleshell
 pet(4583),	-- Green Stagshell

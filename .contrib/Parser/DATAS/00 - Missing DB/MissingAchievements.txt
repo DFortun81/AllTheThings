@@ -57,15 +57,6 @@ ach(20296),	-- Thunderhead Trail Advanced: Gold \\ WW Zone 1 Race 5 Advanced: Go
 ach(20297),	-- Thunderhead Trail Reverse: Bronze \\ WW Zone 1 Race 5 Reverse: Bronze
 ach(20298),	-- Thunderhead Trail Reverse: Silver \\ WW Zone 1 Race 5 Reverse: Silver
 ach(20299),	-- Thunderhead Trail Reverse: Gold \\ WW Zone 1 Race 5 Reverse: Gold
-ach(20300),	-- Orecreg's Doglegs: Bronze \\ WW Zone 1 Race 6: Bronze
-ach(20301),	-- Orecreg's Doglegs: Silver \\ WW Zone 1 Race 6: Silver
-ach(20302),	-- Orecreg's Doglegs: Gold \\ WW Zone 1 Race 6: Gold
-ach(20303),	-- Orecreg's Doglegs Advanced: Bronze \\ WW Zone 1 Race 6 Advanced: Bronze
-ach(20304),	-- Orecreg's Doglegs Advanced: Silver \\ WW Zone 1 Race 6 Advanced: Silver
-ach(20305),	-- Orecreg's Doglegs Advanced: Gold \\ WW Zone 1 Race 6 Advanced: Gold
-ach(20306),	-- Orecreg's Doglegs Reverse: Bronze \\ WW Zone 1 Race 6 Reverse: Bronze
-ach(20307),	-- Orecreg's Doglegs Reverse: Silver \\ WW Zone 1 Race 6 Reverse: Silver
-ach(20308),	-- Orecreg's Doglegs Reverse: Gold \\ WW Zone 1 Race 6 Reverse: Gold
 ach(20309),	-- Earthenworks Weave: Bronze \\ WW Zone 2 Race 1: Bronze
 ach(20310),	-- Earthenworks Weave: Silver \\ WW Zone 2 Race 1: Silver
 ach(20311),	-- Earthenworks Weave: Gold \\ WW Zone 2 Race 1: Gold
@@ -371,17 +362,11 @@ ach(40446),	-- I TAKE Candle! \\ [NYI] I TAKE Candle!
 ach(40447),	-- Delver of the Depths II
 ach(40448),	-- Delver of the Depths III
 ach(40449),	-- Delver of the Depths IV
-ach(40450),	-- Buddy System II \\ Companion Level 20
-ach(40451),	-- Buddy System III \\ Companion Level 30
 ach(40452),	-- Just Keep Swimming \\ [NYI] Kobyss Challenge
 ach(40453),	-- Spider Senses \\ [NYI] Nerubian Challenge
 ach(40454),	-- Daystormer \\ [NYI] Order of Night Challenge
-ach(40455),	-- Buddy System \\ Buddy System I \\ Companion Level 10
-ach(40456),	-- Buddy System IV \\ Companion Level 40
-ach(40457),	-- Buddy System V \\ Companion Level 50
 ach(40459),	-- I've Got a Flying Machine! \\ [PH] Delver's Dirigible
 ach(40460),	-- Delve Deep \\ 10 Delves Completed
-ach(40461),	-- Buddy System VI \\ Companion Level 60
 ach(40462),	-- Delve Deeper \\ 50 Delves Completed
 ach(40463),	-- Delve Deepest \\ 100 Delves Completed
 11.0.0.54675
@@ -445,7 +430,6 @@ ach(40534),	-- The Underkeep Stories
 ach(40535),	-- Tak-Rethan Abyss Stories
 ach(40536),	-- The Spiral Weave Stories
 ach(40537),	-- Delve Loremaster: War Within
-ach(40538),	-- Brann Development
 ach(40539),	-- The Derby Dash
 11.0.0.54774
 ach(40542),	-- Smelling History
@@ -509,7 +493,6 @@ ach(40631),	-- War Within Delves: Tier 1
 ach(40632),	-- No Harm Ever Came From Reading A Book
 ach(40633),	-- The Unseeming
 ach(40634),	-- You Can't Hang With Us
-ach(40635),	-- Branntastic
 ach(40636),	-- Sojourner of Azj-Kahet
 ach(40637),	-- Heroic: The Rookery
 ach(40642),	-- Mythic: The Rookery
@@ -529,7 +512,6 @@ ach(40665),	-- Skyriding Glyphs: Dhar Durgaz
 ach(40666),	-- Skyriding Glyphs: Sunken Shield
 ach(40668),	-- Skyriding Glyphs: Thunderhead Peak
 ach(40669),	-- Skyriding Glyphs: Cinderbrew Meadery
-ach(40670),	-- Skyriding Glyphs: Mourning Rise
 ach(40672),	-- Skyriding Glyphs: Gundargaz
 ach(40673),	-- Skyriding Glyphs: The Stonevault Exterior
 ach(40674),	-- Skyriding Glyphs: The Lost Mines

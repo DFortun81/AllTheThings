@@ -1,6 +1,7 @@
 11.0.0.54311
 title(549),	-- Immortal Spelunker %s
 title(550),	-- High Explorer %s
+title(556),	-- Queenslayer %s \\ %s the [PH] TBD Title
 11.0.0.54605
 title(560),	-- %s Ascension Breaker
 11.0.0.54675

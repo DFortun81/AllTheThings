@@ -11,10 +11,6 @@ fp(2923),	-- Lightspark, Hallowfall
 fp(2924),	-- Light's Redoubt, Hallowfall
 fp(2925),	-- Opportunity Point, The Ringing Deeps
 fp(2926),	-- Camp Murroch, The Ringing Deeps
-fp(2928),	-- Dornogal, Isle of Dorn
-fp(2929),	-- Freywold Village, Isle of Dorn
-fp(2931),	-- Durgaz Cabin, Isle of Dorn
-fp(2932),	-- Rambleshire, Isle of Dorn
 fp(2933),	-- Grand Rampart \\ Front Gate, Nerub'ar Palace
 fp(2934),	-- The Pulsing Pit \\ Slime Pit, Nerub'ar Palace
 fp(2935),	-- Terrace of Majesty \\ Barracks, Nerub'ar Palace
@@ -27,7 +23,6 @@ fp(2943),	-- Lorel's Crossing, Hallowfall
 fp(2944),	-- Hillhelm Family Farm, Hallowfall
 fp(2950),	-- The Aegis Wall, Hallowfall
 fp(2955),	-- Quest Path 9706: 11.0 Z2 - Max Level - CH3 - Q2 - Pipe Ingress 1 Taxi (SMART)
-fp(2962),	-- Gundargaz, The Ringing Deeps
 fp(2963),	-- Shadowvein Point, The Ringing Deeps
 fp(2964),	-- Quest Path 9786: 11.0 Z2 - Campaign - Ch 3 - Dark Iron From Above - Boss Flyover - (LWB)
 11.0.0.54605
