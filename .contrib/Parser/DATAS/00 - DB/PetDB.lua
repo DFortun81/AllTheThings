@@ -4093,6 +4093,20 @@ i(223474, 4566);	-- Worgli the Apprehensive
 ------------------
 -- PATCH 11.0.0 --
 ------------------
+--- ITEM ---
+i(221548, 4536);	-- Blightbud
+i(223625, 4570);	-- Cinderwold Sizzlestinger
+i(222973, 4492);	-- Fringe
+i(222968, 4476);	-- Itchbite
+i(222972, 4491);	-- Jump Jump
+i(224450, 4527);	-- Lil' Moss Rosy
+i(225544, 4599);	-- Mind Slurp
+i(224439, 4470);	-- Oop'lajax
+i(218245, 4451);	-- Remembered Construct
+i(218086, 4450);	-- Remembered Riverpaw
+i(218246, 4452);	-- Remembered Spawn
+i(221849, 4465);	-- Vanilla
+--- NPC ---
 n(223092, 4540);	-- Alabaster Stonecharger
 n(223090, 4541);	-- Bedrock Stonecharger
 n(223698, 4577);	-- Cinderhoney Emberstinger
@@ -4105,3 +4119,46 @@ n(222713, 4518);	-- Magmashell Crawler
 n(222775, 4526);	-- Sandstone Mosswool
 n(222778, 4529);	-- Shale Mosswool
 n(222739, 4522);	-- Troglofrog
+--- UNSORTED ---
+i(222969, 4474);	-- Anub'Rekyute
+i(221851, 4466);	-- Argos
+i(223155, 4469);	-- Bop
+i(222971, 4489);	-- Bouncer
+i(224101, 4586);	-- Brown Leafbug
+i(221764, 4519);	-- Burntram
+i(221820, 4537);	-- Chester
+i(226104, 4602);	-- Claudius
+i(222979, 4545);	-- Clay Stonecharger
+i(224766, 4596);	-- Faithful Dog
+i(222964, 4520);	-- Fathom Incher
+i(224259, 4590);	-- Flash
+i(221850, 4464);	-- Freshly Webbed Kebab /BEAN
+i(222970, 4490);	-- Fuzzy
+i(224261, 4589);	-- Gale
+i(220771, 4467);	-- Hallowed Glowfly
+i(221195, 4458);	-- Illskitter
+i(225934, 4500);	-- Lil' Bonechewer
+i(222965, 4530);	-- Loamy
+i(221546, 4534);	-- Nightfarm Growthling
+i(223802, 4581);	-- Purple Stagshell
+i(225935, 4582);	-- Rak-Ush Battleshell
+i(222978, 4546);	-- Sandstone Ramolith
+i(221759, 4512);	-- Sceaduthax
+i(224549, 4594);	-- Dalaran Sewer Turtle
+i(221819, 4472);	-- Shadowbog Hopper
+i(222974, 4543);	-- Sir Shady Mrgglton Junior
+i(221494, 4495);	-- Skippy
+i(222980, 4542);	-- Slim
+i(223624, 4575);	-- Sneef
+i(222966, 4473);	-- Spinner
+i(221811, 4524);	-- Starkstripe Hopper
+i(220782, 4462);	-- Thunder
+i(224260, 4591);	-- Thundo
+i(221848, 4463);	-- Tiberius
+i(221761, 4511);	-- Venomwing
+i(225337, 4506);	-- Violet Sporbit
+i(221495, 4497);	-- Waddles
+i(221821, 4517);	-- Waxwick
+i(222967, 4475);	-- Webbers
+i(221496, 4496);	-- Wriggle
+i(223487, 4482);	-- Writhing Transmutagen

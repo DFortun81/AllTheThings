@@ -1,79 +1,37 @@
 11.0.0.54311
-pet(4450),	-- Remembered Riverpaw
-pet(4451),	-- Remembered Construct
-pet(4452),	-- Remembered Spawn
 pet(4455),	-- Rak-Ush Threadling
 pet(4456),	-- Arachnoid Hatchling
 pet(4457),	-- Chitin Burrower
-pet(4458),	-- Illskitter
 pet(4459),	-- Moss Skipper
 pet(4460),	-- Arathi Chicken
 pet(4461),	-- Greenlands Chicken
-pet(4462),	-- Thunder
-pet(4463),	-- Tiberius
-pet(4464),	-- Bean
-pet(4465),	-- Vanilla
-pet(4466),	-- Argos
-pet(4467),	-- Hallowed Glowfly
-pet(4469),	-- Bop
-pet(4470),	-- Oop'lajax \\ Argent Scootlefish
 pet(4471),	-- Aubergine Scootlefish
-pet(4472),	-- Shadowbog Hopper
-pet(4473),	-- Spinner
-pet(4474),	-- Anub'Rekyute
-pet(4475),	-- Webbers
-pet(4476),	-- Itchbite
 pet(4477),	-- Verdant Scootlefish
 pet(4478),	-- Caustic Oozeling
 pet(4480),	-- Shadowy Oozeling
 pet(4481),	-- Voidling Ooze
-pet(4482),	-- Writhing Transmutagen
 pet(4483),	-- Vile Bloodtick
 pet(4484),	-- Frenzied Bloodtick
 pet(4485),	-- Mossy Snail
 pet(4488),	-- Haywire Servobot
-pet(4489),	-- Bouncer \\ Obsidian Weave-rat
-pet(4490),	-- Fuzzy
-pet(4491),	-- Jump Jump
-pet(4492),	-- Fringe
 pet(4493),	-- Redthroat Skipling
-pet(4495),	-- Skippy
-pet(4496),	-- Wriggle
-pet(4497),	-- Waddles
 pet(4498),	-- Ebon Ploughworm
 pet(4499),	-- Common Ploughworm
-pet(4500),	-- Lil' Bonechewer
 pet(4502),	-- Kaheti Bull Worm
 pet(4503),	-- Sporbit
 pet(4504),	-- Sporbit
 pet(4505),	-- Sporbit
-pet(4506),	-- Violet Sporbit \\ Sporbit
 pet(4507),	-- Sporbit
 pet(4508),	-- Sporbit
 pet(4509),	-- Sporbit
 pet(4510),	-- Winged Arachnoid
-pet(4511),	-- Venomwing
-pet(4512),	-- Sceaduthax
 pet(4513),	-- Pillarnest Bonedrinker
 pet(4515),	-- Azure Flickerfly
 pet(4516),	-- Vibrant Glowfly
-pet(4517),	-- Waxwick
-pet(4519),	-- Burntram
-pet(4520),	-- Fathom Incher
 pet(4521),	-- Subterranean Dartswog
-pet(4524),	-- Starkstripe Hopper
-pet(4527),	-- Lil' Moss Rosy \\ Rosewool Protolamb
 pet(4528),	-- Cobalt Mosswool
-pet(4530),	-- Loamy
 pet(4533),	-- Meek Bloodlasher
-pet(4534),	-- Nightfarm Growthling
-pet(4536),	-- Blightbud
-pet(4537),	-- Chester \\ Kobold Fist-Thrower
-pet(4542),	-- Slim
-pet(4543),	-- Sir Shady Mrgglton Junior \\ Nightshade
 pet(4544),	-- Umbral Amalgam
-pet(4545),	-- Clay Stonecharger
-pet(4546),	-- Sandstone Ramolith
 pet(4549),	-- Tiny Cragling
 pet(4550),	-- Stratus
 pet(4551),	-- Ridge
@@ -89,30 +47,15 @@ pet(4560),	-- Zaedu
 pet(4561),	-- Awakened Custodian
 pet(4562),	-- Guttergunk
 pet(4564),	-- Rufus
-pet(4570),	-- Cinderwold Sizzlestinger
 pet(4571),	-- Pinkskin Burrower
 pet(4573),	-- Skittish Sniffler
 pet(4574),	-- Snuffling
-pet(4575),	-- Sneef
 pet(4576),	-- Spearmint Snuffling
-pet(4581),	-- Purple Stagshell
-pet(4582),	-- Rak-Ush Battleshell
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
-pet(4586),	-- Brown Leafbug
-11.0.0.54361
-pet(4589),	-- Gale
-pet(4590),	-- Flash
-pet(4591),	-- Thundo
-pet(4594),	-- Dalaran Sewer Turtle
 11.0.0.54521
-pet(4596),	-- Faithful Dog
 pet(4597),	--
 pet(4598),	--
-11.0.0.54605
-pet(4599),	-- Mind Slurp
-11.0.0.54935
-pet(4602),	-- Claudius
 
 
 
@@ -120,81 +63,39 @@ pet(4602),	-- Claudius
 Missing in PetDB.lua
 
 11.0.0.54311
-pet(4450),	-- Remembered Riverpaw
-pet(4451),	-- Remembered Construct
-pet(4452),	-- Remembered Spawn
 pet(4455),	-- Rak-Ush Threadling
 pet(4456),	-- Arachnoid Hatchling
 pet(4457),	-- Chitin Burrower
-pet(4458),	-- Illskitter
 pet(4459),	-- Moss Skipper
 pet(4460),	-- Arathi Chicken
 pet(4461),	-- Greenlands Chicken
-pet(4462),	-- Thunder
-pet(4463),	-- Tiberius
-pet(4464),	-- Bean
-pet(4465),	-- Vanilla
-pet(4466),	-- Argos
-pet(4467),	-- Hallowed Glowfly
-pet(4469),	-- Bop
-pet(4470),	-- Oop'lajax \\ Argent Scootlefish
 pet(4471),	-- Aubergine Scootlefish
-pet(4472),	-- Shadowbog Hopper
-pet(4473),	-- Spinner
-pet(4474),	-- Anub'Rekyute
-pet(4475),	-- Webbers
-pet(4476),	-- Itchbite
 pet(4477),	-- Verdant Scootlefish
 pet(4478),	-- Caustic Oozeling
 pet(4480),	-- Shadowy Oozeling
 pet(4481),	-- Voidling Ooze
-pet(4482),	-- Writhing Transmutagen
 pet(4483),	-- Vile Bloodtick
 pet(4484),	-- Frenzied Bloodtick
 pet(4485),	-- Mossy Snail
 pet(4488),	-- Haywire Servobot
-pet(4489),	-- Bouncer \\ Obsidian Weave-rat
-pet(4490),	-- Fuzzy
-pet(4491),	-- Jump Jump
-pet(4492),	-- Fringe
 pet(4493),	-- Redthroat Skipling
-pet(4495),	-- Skippy
-pet(4496),	-- Wriggle
-pet(4497),	-- Waddles
 pet(4498),	-- Ebon Ploughworm
 pet(4499),	-- Common Ploughworm
-pet(4500),	-- Lil' Bonechewer
 pet(4502),	-- Kaheti Bull Worm
 pet(4503),	-- Sporbit
 pet(4504),	-- Sporbit
 pet(4505),	-- Sporbit
-pet(4506),	-- Violet Sporbit \\ Sporbit
 pet(4507),	-- Sporbit
 pet(4508),	-- Sporbit
 pet(4509),	-- Sporbit
 pet(4510),	-- Winged Arachnoid
-pet(4511),	-- Venomwing
-pet(4512),	-- Sceaduthax
 pet(4513),	-- Pillarnest Bonedrinker
 pet(4515),	-- Azure Flickerfly
 pet(4516),	-- Vibrant Glowfly
-pet(4517),	-- Waxwick
-pet(4519),	-- Burntram
-pet(4520),	-- Fathom Incher
 pet(4521),	-- Subterranean Dartswog
-pet(4524),	-- Starkstripe Hopper
-pet(4527),	-- Lil' Moss Rosy \\ Rosewool Protolamb
 pet(4528),	-- Cobalt Mosswool
-pet(4530),	-- Loamy
 pet(4533),	-- Meek Bloodlasher
-pet(4534),	-- Nightfarm Growthling
-pet(4536),	-- Blightbud
-pet(4537),	-- Chester \\ Kobold Fist-Thrower
-pet(4542),	-- Slim
-pet(4543),	-- Sir Shady Mrgglton Junior \\ Nightshade
 pet(4544),	-- Umbral Amalgam
-pet(4545),	-- Clay Stonecharger
-pet(4546),	-- Sandstone Ramolith
 pet(4549),	-- Tiny Cragling
 pet(4550),	-- Stratus
 pet(4551),	-- Ridge
@@ -210,27 +111,12 @@ pet(4560),	-- Zaedu
 pet(4561),	-- Awakened Custodian
 pet(4562),	-- Guttergunk
 pet(4564),	-- Rufus
-pet(4570),	-- Cinderwold Sizzlestinger
 pet(4571),	-- Pinkskin Burrower
 pet(4573),	-- Skittish Sniffler
 pet(4574),	-- Snuffling
-pet(4575),	-- Sneef
 pet(4576),	-- Spearmint Snuffling
-pet(4581),	-- Purple Stagshell
-pet(4582),	-- Rak-Ush Battleshell
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
-pet(4586),	-- Brown Leafbug
-11.0.0.54361
-pet(4589),	-- Gale
-pet(4590),	-- Flash
-pet(4591),	-- Thundo
-pet(4594),	-- Dalaran Sewer Turtle
 11.0.0.54521
-pet(4596),	-- Faithful Dog
 pet(4597),	--
 pet(4598),	--
-11.0.0.54605
-pet(4599),	-- Mind Slurp
-11.0.0.54935
-pet(4602),	-- Claudius

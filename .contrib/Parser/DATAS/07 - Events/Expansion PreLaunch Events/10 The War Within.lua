@@ -57,10 +57,12 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					-- Mounts
 					i(217985, {	-- Remembered Golden Gryphon [A] (MOUNT!)
 						["cost"] = {{ "c", RESIDUAL_MEMORIES, 20000 }},
+						["races"] = ALLIANCE_ONLY,
 					}),
-					--i(?, {	-- [H] (MOUNT!)
-					--	["cost"] = {{ "c", RESIDUAL_MEMORIES, 20000 }},
-					--}),
+					i(217987, {	-- Remembered Wind Rider [H] (MOUNT!)
+						["cost"] = {{ "c", RESIDUAL_MEMORIES, 20000 }},
+						["races"] = HORDE_ONLY,
+					}),
 					-- Pets
 					i(218245, {	-- Remembered Construct (PET!)
 						["cost"] = {{ "c", RESIDUAL_MEMORIES, 10000 }},

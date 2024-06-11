@@ -7,10 +7,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(220864, {	-- Y'tekhl <Severed Threads Quatermaster> // probably gonna need to move him later into faction vendor
 				["coord"] = { 57.7, 47.0, AZJ_KAHET },
 				["g"] = {
-					i(222972, {	--Jump Jump (PET!)	/ Renown 16
+					i(222972, {	-- Jump Jump (PET!)	/ Renown 16
 						["cost"] = {{"c", 3056, 2250}},	--- Kej x2250
 					}),
-					i(223274, {	--Ferocious Jawcrawler (MOUNT!)	/ Renown 23
+					i(223274, {	-- Ferocious Jawcrawler (MOUNT!)	/ Renown 23
 						["cost"] = {{"c", 3056, 2815 }},	-- Kej x2815
 					}),
 				},
@@ -161,10 +161,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(218207, {	-- Clutchmother Marn'tiq <Pet Battle Master>
 				["coord"] = { 44.2, 17.1, 2213 },
 				["g"] = {
-					i(222968, {	-- Itchbite
+					i(222968, {	-- Itchbite (PET!)
 						["cost"] = {{"i", 163036, 500}},	--- Polished Pet Charm x500
 					}),
-					i(222973, {	-- Fringe
+					i(222973, {	-- Fringe (PET!)
 						["cost"] = {{"i", 163036, 250}},	--- Polished Pet Charm x250
 					}),
 				},

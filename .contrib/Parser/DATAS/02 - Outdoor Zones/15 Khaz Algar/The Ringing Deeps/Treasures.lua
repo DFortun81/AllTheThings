@@ -90,14 +90,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 58.9, 30.3, THE_RINGING_DEEPS },
 				["questID"] = 82818,
 				["g"] = {
-					i(224439),	--Oop'lajax (PET!)
+					i(224439),	-- Oop'lajax (PET!)
 				},
 			}),
 			o(444071, {	-- Cursed Pickaxe
 				["coord"] = { 63.1, 63.1, THE_RINGING_DEEPS },
 				["questID"] = 82230,
 				["g"] = {
-					i(224837),	--Cursed Pickaxe
+					i(224837),	-- Cursed Pickaxe
 				},
 			}),
 			o(446341, {	-- Dusty Prospector's Chest

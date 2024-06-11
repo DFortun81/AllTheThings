@@ -35,9 +35,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["description"] = "On peak of mountain, he is immune to any attacks",
 				--["questID"] = x,
 				--["coord"] = { 15.8, 61.5, ISLE_OF_DORN },	-- coords ~~ since I didn't manage to get here without flying in zone
-				--["g"] = {
+				["g"] = {
+					i(223270),	-- Alunira (MOUNT!)
 				--	spell(447213),	-- Alunira // may be? :)
-				--},
+				},
 			}),
 			n(219267, {	-- Plaguehart
 				["coord"] = { 51.1, 70.0, ISLE_OF_DORN },

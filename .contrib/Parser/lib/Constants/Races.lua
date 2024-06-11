@@ -14,6 +14,9 @@ MECHAGNOME = 37;
 DRACTHYR_ALLIANCE = 52;
 DRACTHYR_HORDE = 70;
 
+EARTHEN_ALLIANCE = 85;
+EARTHEN_HORDE = 84;
+
 PANDAREN_NEUTRAL = 24;
 PANDAREN_ALLIANCE = 25;
 PANDAREN_HORDE = 26;
@@ -51,6 +54,9 @@ ALLIANCE_ONLY = {
 						MECHAGNOME,
 							-- #if AFTER 10.0.2
 							DRACTHYR_ALLIANCE,
+								-- #if AFTER TWW
+								EARTHEN_ALLIANCE,
+								-- #endif
 							-- #endif
 						-- #endif
 					-- #endif
@@ -80,6 +86,9 @@ HORDE_ONLY = {
 						VULPERA,
 							-- #if AFTER 10.0.2
 							DRACTHYR_HORDE,
+								-- #if AFTER TWW
+								EARTHEN_HORDE,
+								-- #endif
 							-- #endif
 						-- #endif
 					-- #endif

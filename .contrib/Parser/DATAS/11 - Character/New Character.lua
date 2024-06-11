@@ -654,6 +654,12 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	}),
 	cl(PALADIN, {
 		filter(MOUNTS, {
+			mount(453785, {-- Earthen Judicator's Ramolith (MOUNT!)
+				["description"] = "|cFF40bf40Received on reaching Level 10 as a Earthen Paladin.|r",
+				["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE },
+				["classes"] = { PALADIN },
+				["timeline"] = { ADDED_11_0_1_LAUNCH }
+			}),
 			mount(270564, {	-- Dawnforge Ram (MOUNT!)
 				["description"] = "|cFF40bf40Received on reaching Level 10 as a Dwarf Paladin.|r", -- Possibly as D.I.D too
 				["races"] = { DWARF },

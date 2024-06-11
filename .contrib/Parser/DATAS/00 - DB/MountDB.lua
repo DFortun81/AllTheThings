@@ -1786,6 +1786,7 @@ i(224574, 453255);	-- Savage Ebony Battle Turtle
 i(213606, 435126);	-- Silver Riding Crane
 i(213582, 435084);	-- Sky Surfer
 i(213608, 435131);	-- Snowy Riding Goat
+i(224374, 132036);	-- Thundering Ruby Cloud Serpent
 i(213604, 435125);	-- Tropical Riding Crane
 i(223471, 449142);	-- [PH] Alliance Wolf Mount Purple
 i(223470, 449141);	-- [PH] Alliance Wolf Mount Red
@@ -1798,3 +1799,45 @@ i(223449, 449126);	-- [PH] Nightsaber Horde Mount Red
 i(223460, 449133);	-- [PH] Nightsaber Horde Mount White
 i(223285, 448851);	-- [PH] Purple Old God Fish Mount
 i(223286, 448850);	-- [PH] Red Old God Fish Mount
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+i(223270, 447213);	-- Alunira
+i(223505, 449269);	-- Crimson Mudnose
+i(222989, 447176);	-- Cyan Glowmite
+i(226357, 458335);	-- Diamond Mechsuit
+i(0, 453785);		-- Earthen Judicator's Ramolith
+i(223274, 447957);	-- Ferocious Jawcrawler
+i(223586, 449466);	-- Forged Gladiator's Fel Bat
+i(217985, 441324);	-- Remembered Golden Gryphon
+i(217987, 441325);	-- Remembered Wind Rider
+i(223511, 449325);	-- Vicious Skyflayer [A]
+i(221813, 447405);	-- Vicious Skyflayer [H]
+--- UNSORTED ---
+i(224151, 451491);	-- Ascendant Skyrazor
+i(223264, 447185);	-- Aquamarine Swarmite
+i(223315, 448941);	-- Beledar's Spawn
+i(221967, 448186);	-- Crowd Pummeler 2-30
+i(219391, 446052);	-- Delver's Dirigible
+i(223570, 449416);	-- Ebonhide Ramolith
+i(226506, 459193);	-- Hand of Reshkigaal
+i(224415, 452779);	-- Ivory Goliathus
+i(226041, 457654);	-- Keg Leg's Radiant Crocolisk
+i(223269, 448188);	-- Machine Defense Unit 1-11
+i(223501, 449258);	-- Ol' Mole Rufus
+i(226040, 457650);	-- Plunderlord's Golden Crocolisk
+i(226042, 457656);	-- Plunderlord's Midnight Crocolisk
+i(226044, 457659);	-- Plunderlord's Weathered Crocolisk
+i(223158, 447160);	-- Raging Cinderbee
+i(223314, 448939);	-- Shackled Shadow
+i(223266, 447190);	-- Shadowed Swarmite
+i(223571, 449418);	-- Shale Ramolith
+i(224150, 451489);	-- Siesbarg
+i(223572, 449415);	-- Slatestone Ramolith
+i(221753, 447057);	-- Smoldering Cinderbee
+i(223153, 447151);	-- Soaring Meaderbee
+i(221765, 442358);	-- Stonevault Mechsuit
+i(224147, 451486);	-- Sureki Skyrazor
+i(223317, 448978);	-- Vermillion Imperial Lynx
+i(225548, 449264);	-- Wick's Lead

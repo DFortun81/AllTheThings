@@ -60,10 +60,15 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			-- Fashion
 			--ach(),	--
 		})),
-		--[[
 		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {
-
+			i(223511, {	-- Vicious Skyflayer [A]
+				["races"] = ALLIANCE_ONLY,
+			}),
+			i(221813, {	-- Vicious Skyflayer [H]
+				["races"] = HORDE_ONLY,
+			}),
 		})),
+		--[[
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {
 
 		})),

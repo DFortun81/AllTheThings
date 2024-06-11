@@ -8,6 +8,94 @@ root(ROOTS.Unsorted, {
 	i(183835),	-- Crate of Zandalari Archaeology Fragments
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+			filter(BATTLE_PETS, {
+				i(222969),	-- Anub'Rekyute (PET!)
+				i(221851),	-- Argos (PET!)
+				i(223155),	-- Bop (PET!)
+				i(222971),	-- Bouncer (PET!)
+				i(224101),	-- Brown Leafbug (PET!)
+				i(221764),	-- Burntram (PET!)
+				i(221820),	-- Chester (PET!)
+				i(226104),	-- Claudius (PET!)
+				i(222979),	-- Clay Stonecharger (PET!)
+				i(224766),	-- Faithful Dog (PET!) [These is wowhead guide!]
+				i(222964),	-- Fathom Incher (PET!)
+				i(224259),	-- Flash (PET!)
+				i(221850),	-- Freshly Webbed Kebab /Bean (PET!)
+				i(222970),	-- Fuzzy (PET!)
+				i(224261),	-- Gale (PET!)
+				i(220771),	-- Hallowed Glowfly (PET!)
+				i(221195),	-- Illskitter (PET!)
+				i(225934),	-- Lil' Bonechewer (PET!)
+				i(222965),	-- Loamy (PET!)
+				i(221546),	-- Nightfarm Growthling (PET!)
+				i(223802),	-- Purple Stagshell (PET!)
+				i(225935),	-- Rak-Ush Battleshell (PET!)
+				i(222978),	-- Sandstone Ramolith (PET!)
+				i(221759),	-- Sceaduthax (PET!)
+				i(221819),	-- Shadowbog Hopper (PET!)
+				i(222974),	-- Sir Shady Mrgglton Junior (PET!)
+				i(222980),	-- Slim (PET!)
+				i(223624),	-- Sneef (PET!)
+				i(222966),	-- Spinner (PET!)
+				i(221811),	-- Starkstripe Hopper (PET!)
+				i(220782),	-- Thunder (PET!)
+				i(224260),	-- Thundo (PET!)
+				i(221848),	-- Tiberius (PET!)
+				i(221761),	-- Venomwing (PET!)
+				i(225337),	-- Violet Sporbit (PET!)
+				i(221495),	-- Waddles (PET!)
+				i(221821),	-- Waxwick (PET!)
+				i(222967),	-- Webbers (PET!)
+				i(221496),	-- Wriggle (PET!)
+				i(223487),	-- Writhing Transmutagen (PET!)
+				------
+				i(221493),	-- Admiral (PET!) (Redthroat Skipling)
+				i(221486),	-- Baleclaw (PET!) (Rak-Ush Threadling)
+				i(223803),	-- Blue Stagshell (PET!) (Rak-Ush Battleshell)
+				i(221760),	-- Bonedrinker (PET!) (Pillarnest Bonedrinker)
+				i(221492),	-- Bup (PET!) (Moss Skipper)
+				i(221762),	-- Clot (PET!) (Frenzied Bloodtick)
+				i(224646),	-- Coppers the Kobold (PET!) (Couldnt find)
+				i(221022),	-- Cowboy Bee[DNT] (PET!) (Bop???)
+				i(223626),	-- Embersting (PET!) (Couldnt find)
+				i(223623),	-- Guacamole (PET!)	(Spearmint Snuffling)
+				i(224579),	-- Sapphire Crab (PET!) (Sapphire Crab, might be the one from DF 10.0.0)
+				i(222975),	-- Umbral Amalgam [DNT] (PET!) (Couldnt find)
+				i(224760),	-- Wobbles (PET!) (Couldnt find)
+			}),
+			filter(MOUNTS, {
+				i(223264),	-- Aquamarine Swarmite (MOUNT!)
+				i(224151),	-- Ascendant Skyrazor (MOUNT!)
+				i(223315),	-- Beledar's Spawn (MOUNT!)
+				i(221967),	-- Crowd Pummeler 2-30 (MOUNT!)
+				i(219391),	-- Delver's Dirigible (MOUNT!)
+				i(223570),	-- Ebonhide Ramolith (MOUNT!)
+				i(226506),	-- Hand of Reshkigaal (MOUNT!)
+				i(224415),	-- Ivory Goliathus (MOUNT!)
+				i(226041),	-- Keg Leg's Radiant Crocolisk (MOUNT!)
+				i(223269),	-- Machine Defense Unit 1-11 (MOUNT!)
+				i(223501),	-- Ol' Mole Rufus (MOUNT!)
+				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!)
+				i(226042),	-- Plunderlord's Midnight Crocolisk (MOUNT!)
+				i(226044),	-- Plunderlord's Weathered Crocolisk (MOUNT!)
+				i(223158),	-- Raging Cinderbee (MOUNT!)
+				i(223314),	-- Shackled Shadow (MOUNT!)
+				i(223266),	-- Shadowed Swarmite (MOUNT!)
+				i(223571),	-- Shale Ramolith (MOUNT!)
+				i(224150),	-- Siesbarg (MOUNT!)
+				i(223572),	-- Slatestone Ramolith (MOUNT!)
+				i(221753),	-- Smoldering Cinderbee (MOUNT!)
+				i(223153),	-- Soaring Meaderbee (MOUNT!)
+				i(221765),	-- Stonevault Mechsuit (MOUNT!)
+				i(224147),	-- Sureki Skyrazor (MOUNT!)
+				i(223317),	-- Vermillion Imperial Lynx (MOUNT!)
+				i(225548),	-- Wick's Lead (MOUNT!)
+				---
+				i(220786),	-- Delver's Dirigible (MOUNT!) (Double Up!?)
+				i(207104),	-- Morsel Sniffer Reins (MOUNT!) (couldnt find)
+				i(219012),	-- Placeholder Delve Exclusive Mount (MOUNT!) (triple up?)
+			}),
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					i(223080),	-- Recipe: Algari Alchemist Stone (RECIPE!)
@@ -20,7 +108,6 @@ root(ROOTS.Unsorted, {
 			i(206581),	-- Harvester Core
 			i(206601),	-- Dark-Nurtured Scallions
 			i(207084),	-- Auebry's Marker Pistol
-			i(207104),	-- Morsel Sniffer Reins
 			i(207390),	-- Delve Ring
 			i(208670),	-- Arachnophobia Mode
 			i(208948),	-- [DNT] Club Chest Key \\ Club Chest Key
@@ -1826,7 +1913,6 @@ root(ROOTS.Unsorted, {
 			i(219009),	-- Crystalline Creature Lure
 			i(219010),	-- Writhing Creature Lure
 			i(219011),	-- Sporefused Creature Lure
-			i(219012),	-- Placeholder Delve Exclusive Mount
 			i(219013),	-- Superb Beast Fang
 			i(219016),	-- Coated Steel Tips
 			i(219017),	-- Silver Armor Clasps
@@ -2013,7 +2099,6 @@ root(ROOTS.Unsorted, {
 			i(219385),	-- Antiparalytic Serum
 			i(219388),	-- Sacred Flame Torch
 			i(219390),	-- Set Keystone Map: Grim Batol
-			i(219391),	-- Delver's Dirigible \\ Placeholder Delve Exclusive Mount
 			i(219393),	-- Earthen Shoulders
 			i(219394),	-- Earthen Trousers
 			i(219395),	-- Earthen Grips
@@ -2589,12 +2674,9 @@ root(ROOTS.Unsorted, {
 			i(220767),	-- Triumphant Satchel of Carved Harbinger Crests \\ Triumphant Satchel of Carved Harbinger Crests (TODO: Fix Icon)
 			i(220769),	-- Algari Token of Merit \\ Algarian Token of Merit
 			i(220770),	-- Void-Scarred Stormhammer
-			i(220771),	-- Hallowed Glowfly
 			i(220773),	-- Celebratory Pack of Runed Harbinger Crests \\ Celebratory Pack of Runed Harbinger Crests (TODO: Fix Icon)
 			i(220774),	-- Goblin Mini Fridge
 			i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
-			i(220782),	-- Thunder
-			i(220786),	-- Delver's Dirigible
 			i(220788),	-- Nascent Weathered Harbinger Crest \\ Nascent Weathered Harbinger Crest (TODO: Fix Icon)
 			i(220789),	-- Nascent Gilded Harbinger Crest \\ Nascent Gilded Harbinger Crest (TODO: Fix Icon)
 			i(220790),	-- Nascent Runed Harbinger Crest \\ Nascent Runed Harbinger Crest (TODO: Fix Icon)
@@ -2619,12 +2701,10 @@ root(ROOTS.Unsorted, {
 			i(220961),	-- Arathor Armor Patch
 			i(220962),	-- Arathor Armor Patch
 			i(220963),	-- Arathor Armor Patch
-			i(221022),	-- Cowboy Bee[DNT]
 			i(221023),	-- Field Operative's Transmitter \\ Malfunctioning Ethereum Module \\ Malfunctioning Cartel Communicator
 			i(221033),	-- Hyperactive Stormclaw
 			i(221066),	-- Template - Accessory - Finger
 			i(221093),	-- Deeply Corrupted Coil
-			i(221195),	-- Illskitter
 			i(221204),	-- Spore Giant's Stompers
 			i(221205),	-- Vest of the River
 			i(221206),	-- Reinforced Chitin Chestpiece
@@ -2675,19 +2755,12 @@ root(ROOTS.Unsorted, {
 			i(221264),	-- Fungarian Mystic's Cluster
 			i(221265),	-- Charm of the Underground Beast
 			i(221269),	-- Crimson Valorstone \\ Crimson Valorstone (TODO: Fix Icon) (Maybe fix name too?)
-			i(221486),	-- Baleclaw
-			i(221492),	-- Bup
-			i(221493),	-- Admiral
-			i(221494),	-- Skippy
-			i(221495),	-- Waddles
-			i(221496),	-- Wriggle
 			i(221502),	-- Adventurer's Warbound Battlegear Drop
 			i(221503),	-- Explorer's Warbound Battlegear Drop
 			i(221505),	-- [DNT] Rare Cloth - Robe
 			i(221506),	-- Arachnid's Web-Sown Guise
 			i(221507),	-- Earth Golem's Wrap
 			i(221508),	-- Pelt of Beledar's Strength
-			i(221546),	-- Nightfarm Growthling
 			i(221550),	-- Boskroot Cap
 			i(221551),	-- Duskthread
 			i(221552),	-- Duskthread
@@ -2889,16 +2962,10 @@ root(ROOTS.Unsorted, {
 			i(221749),	-- Delete me 62 \\ Weavercloth Bandage
 			i(221750),	-- Shredded Weavercloth
 			i(221751),	-- DO NOT USE Prismatic Codex
-			i(221753),	-- Smoldering Cinderbee \\ [PH] Firebee Mount (Base Skin, Gold Saddle)
 			i(221754),	-- Ringing Deeps Ingot
 			i(221757),	-- Gloomfathom Hide
 			i(221758),	-- Profaned Tinderbox
-			i(221759),	-- Sceaduthax
-			i(221761),	-- Venomwing
-			i(221762),	-- Clot
 			i(221763),	-- Viridian Charmcap
-			i(221764),	-- Burntram
-			i(221765),	-- Stonevault Mechsuit
 			i(221777),	-- Pearlescent Shellcrab
 			i(221778),	-- [PH] Firefly2Mount (Yellow)
 			i(221786),	-- Spring-Loaded Bismuth Fabric Cutters \\ Tailoring Tool T1 [DNT]
@@ -2923,15 +2990,7 @@ root(ROOTS.Unsorted, {
 			i(221806),	-- Venting Vambraces
 			i(221807),	-- Whirring Wristwraps
 			i(221808),	-- Clanking Cuffs
-			i(221811),	-- Starkstripe Hopper
 			i(221812),	-- Player Experience
-			i(221813),	-- Vicious Skyflayer \\ [PH] Vicious Flying Nerubian (Horde)
-			i(221819),	-- Shadowbog Hopper
-			i(221820),	-- Chester \\ Kobold Fist-Thrower
-			i(221821),	-- Waxwick
-			i(221848),	-- Tiberius
-			i(221850),	-- Freshly Webbed Kebab
-			i(221851),	-- Argos
 			i(221852),	-- [PH] MoleMount (Pink Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
 			i(221853),	-- Handful of Bismuth Bolts
 			i(221854),	-- Handful of Bismuth Bolts
@@ -3047,7 +3106,6 @@ root(ROOTS.Unsorted, {
 			i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
 			i(221965),	-- Prototype: Wormhole Generator: Khaz Algar
 			i(221966),	-- Wormhole Generator: Khaz Algar
-			i(221967),	-- Crowd Pummeler 2-30
 			i(221968),	-- Legibly Scribbled Notes
 			i(221969),	-- P.0.W. x2
 			i(221983),	-- Core Alloy
@@ -3973,20 +4031,8 @@ root(ROOTS.Unsorted, {
 			i(222955),	-- Player Experience
 			i(222956),	-- Player Experience
 			i(222963),	-- Lava Globs
-			i(222964),	-- Fathom Incher
-			i(222965),	-- Loamy
-			i(222966),	-- Spinner
-			i(222967),	-- Webbers
-			i(222969),	-- Anub'Rekyute
-			i(222970),	-- Fuzzy
-			i(222971),	-- Bouncer
-			i(222974),	-- Sir Shady Mrgglton Junior \\ Nightshade
-			i(222975),	-- Umbral Amalgam [DNT]
 			i(222976),	-- Flame-Tempered Harpoon
 			i(222977),	-- Scorched Junk
-			i(222978),	-- Sandstone Ramolith
-			i(222979),	-- Clay Stonecharger
-			i(222980),	-- Slim
 			i(222982),	-- Earthen Satchel
 			i(222988),	-- [PH] Firefly2Mount (Green)
 			i(222990),	-- Earthen Spire
@@ -4128,21 +4174,14 @@ root(ROOTS.Unsorted, {
 			i(223143),	-- Formula: Enchant Ring - Cursed Versatility
 			i(223144),	-- Formula: Enchant Weapon - Authority of the Depths
 			i(223152),	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
-			i(223153),	-- Reins of the Soaring Meaderbee \\ [PH] Firebee Mount (Black Skin, Copper Saddle)
 			i(223154),	-- [PH] Firebee Mount (White Skin, White Saddle)
-			i(223155),	-- Bop
 			i(223157),	-- Blacksmith's Breastplate
-			i(223158),	-- Raging Cinderbee \\ [PH] Firebee Mount (Red Skin, Dark Saddle)
 			i(223159),	-- [PH] Firebee Mount (Blue Variant)
 			i(223220),	-- Kaheti All-Purpose Cleanser
 			i(223247),	-- Ryton Blackholme's Breastplate
-			i(223264),	-- Aquamarine Swarmite \\ [PH] FlyingNerubian2 Mount (Green Body, Blue Saddle)
 			i(223265),	-- [PH] FlyingNerubian2 Mount (Tan Body, Orange Saddle)
-			i(223266),	-- Reins of the Shadowed Swarmite \\ [PH] FlyingNerubian2 Mount (Black Body, Purple Saddle)
 			i(223267),	-- [PH] FlyingNerubian2 Mount (Purple Body, Red Saddle)
 			i(223268),	-- [PH] DwarvenMechBoss (Gold)
-			i(223269),	-- Machine Defense Unit 1-11 \\ [PH] DwarvenMechBoss (Bronze)
-			i(223270),	-- Alunira
 			i(223271),	-- [PH] Gryphon_Air_Mount (White Skin, Gold Saddle)
 			i(223272),	-- [PH] CaveBorerWormMount (Blue Skin, Purple Saddle)
 			i(223273),	-- [PH] CaveBorerWormMount (Forest Skin, Blue Saddle)
@@ -4169,10 +4208,7 @@ root(ROOTS.Unsorted, {
 			i(223311),	-- Armguards of Dimming Fluorescence
 			i(223312),	-- Trusty Hat
 			i(223313),	-- [PH] Shadow Elemental (Black)
-			i(223314),	-- Shackled Shadow \\ [PH] Shadow Elemental (Gold)
-			i(223315),	-- Beledar's Spawn \\ [PH] Shadow Elemental (Purple)
 			i(223316),	-- Trusty Hat
-			i(223317),	-- Vermillion Imperial Lynx \\ [PH] ArathiLynxMount (Red Fur, Red Armor)
 			i(223318),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
 			i(223319),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
 			i(223320),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
@@ -4267,9 +4303,7 @@ root(ROOTS.Unsorted, {
 			i(223467),	-- Saboteur's Girdle
 			i(223468),	-- Stormrider's Armplates
 			i(223472),	-- Drape of the Lamplighter
-			i(223487),	-- Writhing Transmutagen
 			i(223500),	-- [PH] MoleMount (Gray Skin, Purple Saddle, Teeth Tusks, Nose Base)
-			i(223501),	-- Regurgitated Mole Reins \\ [PH] MoleMount (Dark Skin, Black Saddle, Teeth Rodent, Nose Star)
 			i(223502),	-- [PH] MoleMount (Brown Skin, Red Saddle, Teeth Tusks, Nose Pointed)
 			i(223503),	-- [PH] MoleMountBasic (Blue Skin, Purple Saddle, Teeth Tusks, Nose Base)
 			i(223504),	-- [PH] MoleMountBasic (Green Skin, Black Saddle, Teeth Tusks, Nose Star)
@@ -4277,7 +4311,6 @@ root(ROOTS.Unsorted, {
 			i(223507),	-- Recruit's Pocket Watch
 			i(223508),	-- Recruit's Whetstone
 			i(223510),	-- Airship Schematic: Template
-			i(223511),	-- Vicious Skyflayer \\ [PH] Vicious Flying Nerubian Mount
 			i(223512),	-- Basically Beef
 			i(223515),	-- Breastplate and Tinderbox
 			i(223516),	-- Recruit's Trumpet
@@ -4285,9 +4318,6 @@ root(ROOTS.Unsorted, {
 			i(223547),	-- Algari Heavy Staff
 			i(223548),	-- Algari Rifle
 			i(223569),	-- Algari Spellcleaver
-			i(223570),	-- Reins of the Ebonhide Ramolith \\ [PH] Proto Ram Earthen (Black Skin, Grand Horns, Silver Saddle)
-			i(223571),	-- Shale Ramolith \\ [PH] Proto Ram Earthen (Blue Skin, Grand Horns, Copper Saddle)
-			i(223572),	-- Reins of the Slatestone Ramolith \\ [PH] Proto Ram Earthen (Grey Skin, Grand Horns, Gold Saddle)
 			i(223573),	-- [PH] Proto Ram Earthen (Sand Skin, Grand Horns, Dark Saddle)
 			i(223574),	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle)
 			i(223584),	-- Algari Scepter
@@ -4297,9 +4327,6 @@ root(ROOTS.Unsorted, {
 			i(223616),	-- Forged Gladiator's Tabard \\ [PH] 11.0 PVP - Gladiator's Tabard
 			i(223617),	-- Forged Gladiator's Prestigious Cloak \\ [PH] 11.0 Gladiator's Prestigious Cloak
 			i(223618),	-- Enchant Boots - Cavalry's March
-			i(223624),	-- Sneef
-			i(223625),	-- Cinderwold Sizzlestinger \\ Bumbler
-			i(223626),	-- Embersting
 			i(223627),	-- Scout's Dog Tags
 			i(223628),	-- Marksman's Dog Tags
 			i(223629),	-- Marksman's War-Chain
@@ -4459,8 +4486,6 @@ root(ROOTS.Unsorted, {
 			i(223798),	-- Enchant Cloak - Chant of Burrowing Rapidity \\ Enchant Cloak - Chant of Speed
 			i(223799),	-- Enchant Cloak - Chant of Burrowing Rapidity \\ Enchant Cloak - Chant of Speed
 			i(223800),	-- Enchant Cloak - Chant of Burrowing Rapidity \\ Enchant Cloak - Chant of Speed
-			i(223802),	-- Purple Stagshell
-			i(223803),	-- Blue Stagshell
 			i(223804),	-- [DNT] Zone 1 Placeholder Treasure
 			i(223805),	-- Bag Test A
 			i(223806),	-- Bag Test B
@@ -4654,7 +4679,6 @@ root(ROOTS.Unsorted, {
 			i(224096),	-- Anglin' Art's Sandals
 			i(224097),	-- Lucky Fishing Hat
 			i(224100),	-- Bottomless Bag of Khaz Algar General Goods
-			i(224101),	-- Brown Leafbug
 			i(224104),	-- Flashfire Thurible
 			i(224105),	-- Algari Mana Oil \\ Algarian Mana Oil
 			i(224106),	-- Algari Mana Oil \\ Algarian Mana Oil
@@ -4671,11 +4695,8 @@ root(ROOTS.Unsorted, {
 			i(224117),	-- Ghoulfish Delight
 			i(224118),	-- Nightshade Letter
 			i(224119),	-- Electric Eel
-			i(224147),	-- Reins of the Sureki Skyrazor \\ [PH] NerubianWarbeastMount (Blue)
 			i(224148),	-- [PH] NerubianWarbeastMount (Cyan)
 			i(224149),	-- [PH] NerubianWarbeastMount (Orange)
-			i(224150),	-- Siesbarg \\ [PH] NerubianWarbeastMount (Dark)
-			i(224151),	-- Reins of the Ascendant Skyrazor \\ [PH] NerubianWarbeastMount (White)
 			i(224156),	-- Bottomless Bag of Khaz Algar General Goods
 			i(224161),	-- Stormrider Flight Badge
 			i(224165),	-- Dornogal Tabard \\ Gilded Earthen Tabard \\ [PH] Earthen Tabard
@@ -4756,9 +4777,6 @@ root(ROOTS.Unsorted, {
 			i(224252),	-- Calcified Journal
 			i(224254),	-- Wooden Figure
 			i(224257),	-- Sturdy Locket
-			i(224259),	-- Flash
-			i(224260),	-- Thundo
-			i(224261),	-- Gale
 			i(224263),	-- Infused Cinderbrew
 			i(224264),	-- Deepgrove Petal
 			i(224265),	-- Deepgrove Rose
@@ -4783,7 +4801,6 @@ root(ROOTS.Unsorted, {
 			i(224412),	-- Companion Experience
 			i(224413),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
 			i(224414),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green)
-			i(224415),	-- Ivory Goliathus \\ [PH] NerubianBeetleLargeMount (Tan)
 			i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 			i(224418),	-- Recipe: Everything Stew
 			i(224419),	-- Recipe: Jester's Board \\ Recipe: All-Day Banquet
@@ -4814,7 +4831,6 @@ root(ROOTS.Unsorted, {
 			i(224486),	-- Uncle's Eye
 			i(224545),	-- Plowhead
 			i(224548),	-- Nerubian Device
-			i(224549),	-- Sewer Turtle Whistle
 			i(224553),	-- Beledar's Attunement
 			i(224554),	-- Silver Linin' Scepter
 			i(224556),	-- Victorious Contender's Strongbox
@@ -4822,7 +4838,6 @@ root(ROOTS.Unsorted, {
 			i(224572),	-- Crystallized Augment Rune
 			i(224573),	-- Crystal Satchel of Cooperation
 			i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
-			i(224579),	-- Sapphire Crab
 			i(224583),	-- Slab of Slate
 			i(224584),	-- Erosion Polished Slate
 			i(224585),	-- Hanna's Locket
@@ -4946,7 +4961,6 @@ root(ROOTS.Unsorted, {
 			i(224763),	-- Design: Cubic Blasphemia
 			i(224764),	-- Mosswool Thread
 			i(224765),	-- Everburning Ignition
-			i(224766),	-- Faithful Dog
 			i(224767),	-- Giant Candle Parts
 			i(224768),	-- Airship: Wing-Mounted Propeller
 			i(224769),	-- Airship: Rotor Blades
@@ -5075,7 +5089,6 @@ root(ROOTS.Unsorted, {
 			i(225247),	-- Overflowing Severed Threads Trove
 			i(225251),	-- Disassemble Invention
 			i(225336),	-- A Lost Shoe
-			i(225337),	-- Violet Sporbit
 			i(225338),	-- Glyph of Jab
 			i(225339),	-- Chicken Eggs
 			i(225341),	-- Incriminating Dagger
@@ -5258,7 +5271,6 @@ root(ROOTS.Unsorted, {
 			i(225542),	-- Airship Schematic: Void \\ Airship: Void
 			i(225543),	-- Bloodied Idol
 			i(225547),	-- Toxic Victory
-			i(225548),	-- Wick's Lead
 			i(225553),	-- PH_5
 			i(225554),	-- Sunless Lure \\ Sunless Orb
 			i(225557),	-- Sizzling Cinderpollen
@@ -5472,7 +5484,6 @@ root(ROOTS.Unsorted, {
 			i(225911),	-- Cinderbee Belly
 			i(225912),	-- Hot Honeycomb
 			i(216696),	-- Hidden Pants
-			i(217987),	-- Remembered Wind Rider
 			i(224300),	-- Gleeful Glamour - Blood Elf
 			i(224301),	-- Gleeful Glamour - Dark Iron Dwarf
 			i(224302),	-- Gleeful Glamour - Draenei
@@ -5548,8 +5559,6 @@ root(ROOTS.Unsorted, {
 			i(225927),	-- Emerald Necakle
 			i(225930),	-- Glimmering Crystal
 			i(225933),	-- Forged Legend's Pennant
-			i(225934),	-- Lil' Bonechewer
-			i(225935),	-- Rak-Ush Battleshell
 			i(225936),	-- Hideseeker's Tote
 			i(225937),	-- Putrid Goop
 			i(225945),	-- Airship Captain's Cloak
@@ -5616,14 +5625,9 @@ root(ROOTS.Unsorted, {
 			i(226034),	-- Vantus Rune: Nerub-ar Palace
 			i(226035),	-- Vantus Rune: Nerub-ar Palace
 			i(226036),	-- Vantus Rune: Nerub-ar Palace
-			i(226040),	-- Plunderlord's Golden Crocolisk
-			i(226041),	-- Keg Leg's Radiant Crocolisk \\ Plunderlord's Radiant Crocolisk
-			i(226042),	-- Plunderlord's Midnight Crocolisk
-			i(226044),	-- Plunderlord's Weathered Crocolisk
 			i(226045),	-- The General's Trove
 			i(226100),	-- The Vizier's Trove
 			i(226103),	-- The Weaver's Trove
-			i(226104),	-- Claudius
 			i(226105),	-- Emerald Scale Treads \\ Jade Scale Treads
 			i(226106),	-- Amber Scale Treads
 			i(226107),	-- Homebrewed Blink Vial
@@ -5765,7 +5769,6 @@ root(ROOTS.Unsorted, {
 			i(226353),	-- Royal Outfitter's Protractor
 			i(226354),	-- Nerubian Quilt
 			i(226355),	-- Nerubian's Pincushion
-			i(226357),	-- Diamond Mechsuit
 			i(226363),	-- Earthen Backpack
 			i(225670),	-- Apprentice's Crafting License
 			i(225671),	-- Stack of Pentagold Reviews
@@ -5830,7 +5833,6 @@ root(ROOTS.Unsorted, {
 			i(226482),	-- Ensemble: Grimy Harvest Golem
 			i(226483),	-- Ensemble: Battered Harvest Golem
 			i(226505),	-- Nerubian Gemweaver
-			i(226506),	-- Hand of Reshkigaal
 			i(226507),	-- Venom Dahn's Webscrub
 			i(226508),	-- Vizier's Influence
 			i(226509),	-- General's Insight
