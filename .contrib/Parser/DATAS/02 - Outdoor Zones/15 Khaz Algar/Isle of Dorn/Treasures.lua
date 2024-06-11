@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		n(TREASURES, {
 			o(444899, {	-- Kobold Axe (vignette name - Forgotten Axe)
 				["questID"] = 82325,
-				["coord"] = { 63.9, 43.1, ISLE_OF_DORN },
+				["coord"] = { 62.6, 43.3, ISLE_OF_DORN },
 				["g"] = {
 					i(223484),	-- Kobold Mastermind's Pivel
 				},
@@ -26,34 +26,32 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223280),	-- Jade Pearl
 				},
 			}),
-			--[[ Seems like not here in this build and entire area a bit off with coords?
 			o(446476, {	-- Web-wrapped Axe
 				["questID"] = 82715,
-				["coord"] = { 59.7, 19.5, ISLE_OF_DORN },
+				["coord"] = { 59.1, 23.5, ISLE_OF_DORN },
 				["g"] = {
 					i(224290),	-- Storm Defender's Axe
 				},
 			}),
-			]]--
 			o(443638, {	-- Mosswool Flower
-				["description"] = "Interact with Lost Mosswool 3 times to spawn this treasure",
+				["description"] = "Interact with Lost Mosswool 3 times to spawn this treasure. Treasure appears with some delay.",
 				["questID"] = 83246,	-- or 82251 since both fire at same time, but 82251 has 'Tracking Quest' name
-				["coord"] = { 60.5, 25.7, ISLE_OF_DORN },
+				["coord"] = { 59.7, 28.7, ISLE_OF_DORN },
 				["g"] = {
 					n(222956, {	-- Lost Mosswool
 						["description"] = "1st Mosswool spot",
 						["questID"] = 82145,	-- technically, it is legit quest that started after player touch first mosswool
-						["coord"] = { 60.3, 20.9, ISLE_OF_DORN },
+						["coord"] = { 59.6, 24.6, ISLE_OF_DORN },
 					}),
 					n(222963, {	-- Lost Mosswool
 						["description"] = "2nd Mosswool spot",
 						--["questID"] = x,	-- didn't fire questID
-						["coord"] = { 59.7, 23.8, ISLE_OF_DORN },
+						["coord"] = { 59.1, 27.1, ISLE_OF_DORN },
 					}),
 					n(222965, {	-- Lost Mosswool
 						["description"] = "3rd Mosswool spot",
 						--["questID"] = ,	-- complete 82145
-						["coord"] = { 60.5, 25.7, ISLE_OF_DORN },
+						["coord"] = { 59.7, 28.7, ISLE_OF_DORN },
 					}),
 					--
 					i(224450),	-- Lil' Moss Rosy (PET!)
@@ -62,10 +60,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			o(444894, {	-- Opal Lily
 				["description"] = "In pit of this shaft",
 				["questID"] = 82326,
-				["coord"] = { 47.5, 64.1, ISLE_OF_DORN },
-				["g"] = {
-					-- few flowers
-				},
+				["coord"] = { 48.9, 60.9, ISLE_OF_DORN },
 			}),
 			--[[
 			o(xx, {	-- ? // possibly move to special?
@@ -93,7 +88,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--
 				},
 			}),
-			--]]
 			o(446473, {	-- Herb-Infused Brew
 				--vignette and actual object have different names, probably have other objectID
 				["questID"] = 82714,
@@ -102,6 +96,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(224263),	-- Infused Cinderbrew
 				},
 			}),
+			--]]
 			n(212928, {	-- Dalaran Sewer Turtle
 				["coord"] = { 38.0, 79.5, ISLE_OF_DORN },
 				--["cost"] = { "i", xx, 5 },	-- Dornish Pike x5

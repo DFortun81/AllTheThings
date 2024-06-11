@@ -1819,6 +1819,7 @@ i(220229);	-- Dormant Core
 i(220271);	-- Downy Clump
 i(225836);	-- Drained Elemental Mote
 i(225792);	-- Elegant Pedipalp Wrappings
+i(220262);	-- Elongated Proboscis
 i(220355);	-- Enlarged Ear
 i(225814);	-- Feather-on-a-Stick
 i(220302);	-- Fractured Casing

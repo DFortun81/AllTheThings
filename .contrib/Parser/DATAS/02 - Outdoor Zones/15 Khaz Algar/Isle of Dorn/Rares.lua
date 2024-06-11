@@ -82,6 +82,63 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 53.5, 80.1, ISLE_OF_DORN },
 				["questID"] = 81899,	-- there also was 84028 in addition
 			}),
+			n(217534, {	-- Sandres the Relicbearer
+				["coord"] = { 64.1, 73.1, ISLE_OF_DORN },
+				["questID"] = 79685,
+				["g"] = {
+					i(223376),	-- Band of the Relicbearer
+				},
+			}),
+			n(219263, {	-- Warphorn
+				["description"] = "Walking around in area",
+				["coords"] = {
+					{ 58.0, 37.0, ISLE_OF_DORN },
+					{ 56.2, 36.5, ISLE_OF_DORN },
+					{ 57.0, 32.9, ISLE_OF_DORN },	-- initial spawn point
+					{ 58.9, 33.1, ISLE_OF_DORN },
+				},
+				["questID"] = 81894,
+				["g"] = {
+					i(223344),	-- Warphorn's Resilient Vest
+				},
+			}),
+			n(221128, {	-- Clawbreaker K'zithix (old npcID 219279, vignette name - Vileweb Breacher)
+				["description"] = "Walking around in area",
+				["coords"] = {
+					{ 80.3, 35.1, ISLE_OF_DORN },
+					{ 79.1, 34.2, ISLE_OF_DORN },
+					{ 64.0, 39.2, ISLE_OF_DORN },
+				},
+				["questID"] = 81920,	-- there also was 84036 in addition
+			}),
+			n(219264, {	-- Bloodmaw (vignette name - Ravenous Packleader)
+				["coords"] = {
+					{ 49.9, 74.8, ISLE_OF_DORN },
+					{ 39.6, 82.4, ISLE_OF_DORN },
+					{ 39.9, 83.8, ISLE_OF_DORN },
+					{ 38.0, 84.0, ISLE_OF_DORN },
+				},
+				["questID"] = 81893,
+				["g"] = {
+					i(223351),	-- Wolf Packleader's Hood
+				},
+			}),
+			n(219262, {	-- Springbubble (vignette name - Scorching Steamsurger)
+				["description"] = "Walking around in area",
+				["coord"] = { 58.7, 60.7, ISLE_OF_DORN },
+				["questID"] = 81892,
+				["g"] = {
+					i(223356),	-- Shoulderpads of the Steamsurger
+				},
+			}),
+			n(219265, {	-- Emperor Pitfang (old npcID - 219269)
+				["description"] = "Walking around in area",
+				["coord"] = { 47.9, 60.1, ISLE_OF_DORN },
+				["questID"] = 81895,
+				["g"] = {
+					i(223345),	-- Viper's Stone Grips
+				},
+			}),
 		})),
 	}),
 })));
