@@ -186,6 +186,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(QUESTS, {
+				q(80438, {	-- Aid the Horde [H]
+					["sourceQuest"] = 32108,  -- Domination Point [H]
+					["provider"] = { "n", 67939 },	-- General Nazgrim
+					["coord"] = { 10.3, 53.7, KRASARANG_WILDS },
+					["races"] = HORDE_ONLY,
+					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
+					["repeatable"] = true,
+				}),
 				q(80439, {	-- Aid the Alliance [A]
 					["sourceQuest"] = 32109,  -- Lion's Landing [A]
 					["provider"] = { "n", 67940 },	-- Admiral Taylor
@@ -194,11 +202,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
 					["repeatable"] = true,
 				}),
-				q(80438, {	-- Aid the Horde [H]
-					["sourceQuest"] = 32108,  -- Domination Point [H]
-					["provider"] = { "n", 67939 },	-- General Nazgrim
-					["coord"] = { 10.3, 53.7, KRASARANG_WILDS },
-					["races"] = HORDE_ONLY,
+				q(80433, {  -- Aid the August Celestials
+					["provider"] = { "n", 60506 },	-- Thelonius
+					["coord"] = { 31.2, 63.4, KRASARANG_WILDS },
 					["cost"] = { { "c", 738, 10 } },  -- 10x Lesser Charm of Good Fortune
 					["repeatable"] = true,
 				}),
