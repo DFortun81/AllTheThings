@@ -49,6 +49,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
+			n(220267, {	-- Charmonger
+				["coord"] = { 61.5, 26.8, THE_RINGING_DEEPS },
+				["questID"] = 81562,	-- in addition 84044
+				["g"] = {
+					i(221249),	-- Kobold Rodent Squasher // alpha data
+				},
+			}),
+
 		})),
 	}),
 })));

@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--	{ 58.8, 25.1, THE_RINGING_DEEPS },	-- Body spot 4
 				--},
 			}),
-			q(78367, {	-- Cracking Cogchewer
+			q(78637, {	-- Cracking Cogchewer
 				["sourceQuests"] = {
 					78635,	-- Death and Waxes
 					78634,	-- Leave No Stone Behind
@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			q(78636, {	-- Retaking the Mines
 				["sourceQuests"] = {
-					78367,	-- Cracking Cogchewer
+					78637,	-- Cracking Cogchewer
 					78638,	-- Engeneering Destruction
 				},
 				["provider"] = { "n", 212519 },	-- Speaker Brinthe
@@ -183,6 +183,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(219466),	-- Earthen Traveler's Chopper
 					i(219462),	-- Earthen Traveler's Claymore
 					i(219461),	-- Earthen Traveler's Gavel
+					i(219463),	-- Earthen Traveler's Javelin
 					i(219457),	-- Earthen Traveler's Saber
 					i(219459),	-- Earthen Traveler's Staff
 				},
@@ -804,6 +805,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// but could be renown?
 				["provider"] = { "n", 222803 },	-- Skitter
 				["coord"] = { 47.1, 33.3, THE_RINGING_DEEPS },
+				["g"] = {
+					i(223625),	-- Cinderwold Sizzlestinger (PET!)
+				},
 			}),
 			q(81999, {	-- New Home, New Candle!
 				--["sourceQuests"] = { 80082 },	-- Back to Gundargaz
@@ -946,6 +950,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--c(2815),	-- x100 Resonance Crystals
 				},
 			}),
+			q(83752, {	-- Threats of Zekvir
+				["sourceQuests"] = { 83749 },	-- Delves: The Waterworks
+				["provider"] = { "n", 227492 },	-- Brann Bronzebeard
+				["coord"] = { 46.2, 48.0, THE_RINGING_DEEPS },
+				["g"] = {
+					--c(2815),	-- x100 Resonance Crystals
+				},
+			}),
 			-- Area where Janky quest leads (New Home, New Candle)
 			q(82952, {	-- An Opportunity to Relax
 				--["sourceQuests"] = { x },	-- ?
@@ -1072,13 +1084,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 66.5, 29.9, THE_RINGING_DEEPS },
 			}),
 			--]]
-			q(81562, {	-- Charmonger
-				["provider"] = { "n", 220267 },	-- Charmonger
-				["coord"] = { 61.5, 26.8, THE_RINGING_DEEPS },
-				["g"] = {
-					i(221249),	-- Kobold Rodent Squasher
-				},
-			}),
 			q(81511, {	-- Coalesced Monstrosity
 				["provider"] = { "n", 220266 },	-- Coalesced Monstrosity
 				["coord"] = { 57.9, 38.2, THE_RINGING_DEEPS },

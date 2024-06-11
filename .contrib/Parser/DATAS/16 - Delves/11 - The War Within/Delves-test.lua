@@ -101,6 +101,50 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 			}),
 		},
 	}),
+	m(2302, {	-- The Dread Pit
+		["coord"] = { 74.1, 37.7, THE_RINGING_DEEPS },
+		["g"] = {
+			-- rare was - Treasure Wrath
+			o(455482, {	-- Sturdy Chest
+				["coord"] = { 41.1, 45.5, 2302 },
+				["questID"] = 83677,
+			}),
+			o(455503, {	-- Sturdy Chest
+				["coord"] = { 57.5, 56.1, 2302 },
+				["questID"] = 83658,
+			}),
+			o(455484, {	-- Sturdy Chest
+				["coord"] = { 57.8, 27.7, 2302 },
+				["questID"] = 83678,
+			}),
+			o(455504, {	-- Sturdy Chest
+				["coord"] = { 36.3, 16.7, 2302 },
+				["questID"] = 83659,
+			}),
+		},
+	}),
+	m(2251, {	-- The Waterworks
+		["coord"] = { 46.3, 48.5, THE_RINGING_DEEPS },
+		["g"] = {
+			-- rare was - murloc, wrath
+			o(455490, {	-- Sturdy Chest
+				["coord"] = { 48.0, 25.6, 2251 },
+				["questID"] = 83684,
+			}),
+			o(455532, {	-- Sturdy Chest
+				["coord"] = { 42.2, 40.0, 2251 },
+				["questID"] = 83650,
+			}),
+			o(455512, {	-- Sturdy Chest
+				["coord"] = { 48.5, 56.0, 2251 },
+				["questID"] = 83667,
+			}),
+			o(454207, {	-- Sturdy Chest
+				["coord"] = { 47.7, 83.0, 2251 },
+				["questID"] = 83456,
+			}),
+		},
+	}),
 	n(REWARDS, {
 		i(222916),	-- Player Experience (Tier 1-2)
 		i(222917),	-- Player Experience (Tier 3)
@@ -118,6 +162,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 		i(226109),	-- Squirming Swarm Sac
 		-- Gear
 		i(211005),	-- Cave Topographer's Drape
+		i(211007),	-- Torchbearer's Greatcloak
 		i(211018),	-- Treasure-Seeker's Breeches
 		i(211061),	-- Unearthed Relic Band
 		i(211047),	-- Lapidarius Gemcutter
