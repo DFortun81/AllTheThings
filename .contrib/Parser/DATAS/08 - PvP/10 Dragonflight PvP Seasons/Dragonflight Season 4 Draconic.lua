@@ -1567,7 +1567,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(199720, {	-- Glamora
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
 				["g"] = {
-					elitepvp(i(216667, {	-- Draconic Gladiator's Tabard
+					elitepvp(ig(216667, {	-- Draconic Gladiator's Tabard
 						["sourceAchievement"] = 19509,	-- Elite: Dragonflight Season 4
 						["cost"] = {{"c", HONOR, 100 }, },
 					--	["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
