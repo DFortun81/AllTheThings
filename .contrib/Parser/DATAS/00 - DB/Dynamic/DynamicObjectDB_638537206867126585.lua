@@ -1,0 +1,73 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[446343] = {
+		readable = "Loose Crystal Shard",
+		text = {
+			en = "Loose Crystal Shard",
+			es = "Loose Crystal Shard",
+			de = "Loose Crystal Shard",
+			fr = "Loose Crystal Shard",
+			it = "Loose Crystal Shard",
+			pt = "Loose Crystal Shard",
+			ru = "Loose Crystal Shard",
+			ko = "Loose Crystal Shard",
+			cn = "Loose Crystal Shard",
+		},
+	},
+	[446347] = {
+		readable = "Loose Crystal Shard",
+		text = {
+			en = "Loose Crystal Shard",
+			es = "Loose Crystal Shard",
+			de = "Loose Crystal Shard",
+			fr = "Loose Crystal Shard",
+			it = "Loose Crystal Shard",
+			pt = "Loose Crystal Shard",
+			ru = "Loose Crystal Shard",
+			ko = "Loose Crystal Shard",
+			cn = "Loose Crystal Shard",
+		},
+	},
+	[446349] = {
+		readable = "Loose Crystal Shard",
+		text = {
+			en = "Loose Crystal Shard",
+			es = "Loose Crystal Shard",
+			de = "Loose Crystal Shard",
+			fr = "Loose Crystal Shard",
+			it = "Loose Crystal Shard",
+			pt = "Loose Crystal Shard",
+			ru = "Loose Crystal Shard",
+			ko = "Loose Crystal Shard",
+			cn = "Loose Crystal Shard",
+		},
+	},
+	[446351] = {
+		readable = "Loose Crystal Shard",
+		text = {
+			en = "Loose Crystal Shard",
+			es = "Loose Crystal Shard",
+			de = "Loose Crystal Shard",
+			fr = "Loose Crystal Shard",
+			it = "Loose Crystal Shard",
+			pt = "Loose Crystal Shard",
+			ru = "Loose Crystal Shard",
+			ko = "Loose Crystal Shard",
+			cn = "Loose Crystal Shard",
+		},
+	},
+	[446352] = {
+		readable = "Loose Crystal Shard",
+		text = {
+			en = "Loose Crystal Shard",
+			es = "Loose Crystal Shard",
+			de = "Loose Crystal Shard",
+			fr = "Loose Crystal Shard",
+			it = "Loose Crystal Shard",
+			pt = "Loose Crystal Shard",
+			ru = "Loose Crystal Shard",
+			ko = "Loose Crystal Shard",
+			cn = "Loose Crystal Shard",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

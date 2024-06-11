@@ -102,17 +102,47 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			o(446341, {	-- Dusty Prospector's Chest
 				["coord"] = { 49.0, 31.6, THE_RINGING_DEEPS },
-				--["questID"] = x,
-				--["cost"] = {
-				--	{ "i", xx, 1 },	-- Rought Deepdiamond Shard
-				--	{ "i", xx, 1 },	-- Rought Deepemerald Shard
-				--	{ "i", xx, 1 },	-- Rought Deepamethyst Shard
-				--	{ "i", xx, 1 },	-- Rought Deepruby Shard
-				--	{ "i", xx, 1 },	-- Rought Deeptopaz Shard
-				--},
-				--["g"] = {
-				--	i(),	--
-				--},
+				["questID"] = 82464,
+				["cost"] = {
+					{ "i", 223880, 1 },	-- Rought Deepamethyst Shard
+					{ "i", 223882, 1 },	-- Rought Deepdiamond Shard
+					{ "i", 223881, 1 },	-- Rought Deepemerald Shard
+					{ "i", 223878, 1 },	-- Rought Deepruby Shard
+					{ "i", 223879, 1 },	-- Rought Deeptopaz Shard
+				},
+				["g"] = {
+					o(446349, {	-- Loose Crystal Shard
+						["coord"] = { 57.3, 21.9, THE_RINGING_DEEPS },
+						["g"] = {
+							i(223880),	-- Rough Deepamethyst Shard
+						},
+					}),
+					o(446352, {	-- Loose Crystal Shard
+						["coord"] = { 68.2, 53.2, THE_RINGING_DEEPS },
+						["g"] = {
+							i(223882),	-- Rough Deepdiamond Shard
+						},
+					}),
+					o(446351, {	-- Loose Crystal Shard
+						["coord"] = { 59.0, 38.1, THE_RINGING_DEEPS },
+						["g"] = {
+							i(223881),	-- Rough Deepemerald Shard
+						},
+					}),
+					o(446343, {	-- Loose Crystal Shard
+						["coord"] = { 59.9, 53.0, THE_RINGING_DEEPS },
+						["g"] = {
+							i(223878),	-- Rough Deepruby Shard
+						},
+					}),
+					o(446347, {	-- Loose Crystal Shard
+						["coord"] = { 67.1, 63.0, THE_RINGING_DEEPS },
+						["g"] = {
+							i(223879),	-- Rough Deeptopaz Shard
+						},
+					}),
+					--jc gems and I got mail with additional item which I cannot loot
+				},
 			}),
 			o(420053, {	-- Webbed Knapsack
 				["coord"] = { 68.9, 38.8, THE_RINGING_DEEPS },

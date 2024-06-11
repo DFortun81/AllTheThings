@@ -1125,13 +1125,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
-			q(81566, {	-- Deathbound Husk
-				["provider"] = { "n", 220272 },	-- Deathbound Husk
-				["coord"] = { 66.7, 68.8, THE_RINGING_DEEPS },
-				["g"] = {
-					i(223368),	-- Twisted Earthen Signet
-				},
-			}),
 		}),
 	}),
 })));
