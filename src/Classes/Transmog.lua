@@ -161,7 +161,6 @@ app.DetermineItemLink = function(sourceID)
 	-- Only try to manually scan for a sourceID if we are Debugging (save regular users from unnecessary lookups)
 	if not app.Debugging then return end
 
-
 	-- Check ModIDs
 	-- bonusID 3524 seems to imply "use ModID to determine SourceID" since without it, everything with ModID resolves as the base SourceID from links
 	itemFormat = "item:"..itemID..":::::::::::%d:1:3524";
@@ -176,7 +175,7 @@ app.DetermineItemLink = function(sourceID)
 
 	-- Check BonusIDs
 	itemFormat = "item:"..itemID.."::::::::::::1:%d";
-	for b=1,10999,1 do
+	for b=1,11028,1 do
 		---@diagnostic disable-next-line: undefined-field
 		link = itemFormat:format(b);
 		checkID, found = GetSourceID(link);
@@ -593,7 +592,7 @@ app.SaveHarvestSource = function(data)
 		if not data.artifactID then
 			local i, m, b = app.GetItemIDAndModID(itemID)
 			-- we either want to save using modID OR bonusID, but not both
-			if b and b > 0 then
+			if b and b > 0 and b ~= 3524 then
 				itemID = app.GetGroupItemIDWithModID(nil, i, nil, b)
 			elseif m and m > 0 then
 				itemID = app.GetGroupItemIDWithModID(nil, i, m)
