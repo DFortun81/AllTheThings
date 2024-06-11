@@ -1344,6 +1344,31 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			}),
 		})),
 	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		n(TREASURES, {
+			o(455968, {	-- Dornogal Craftsman's Flat Knife
+				["coord"] = { 47.3, 28.3, THE_RINGING_DEEPS },
+				["questID"] = 83899,
+				["g"] = {
+					i(226325), -- Dornogal Craftsman's Flat Knife
+				},
+			}),
+			o(455969, {	-- Earthen Lacing Tools
+				["coord"] = { 54.3, 59.6, DORNOGAL },
+				["questID"] = 83898,
+				["g"] = {
+					i(226324), -- Earthen Lacing Tools
+				},
+			}),
+			o(455967, {	-- Underground Stropping Compound
+				["coord"] = { 47.1, 34.9, THE_RINGING_DEEPS },
+				["questID"] = 83900,
+				["g"] = {
+					i(226326), -- Underground Stropping Compound
+				},
+			}),
+		})
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

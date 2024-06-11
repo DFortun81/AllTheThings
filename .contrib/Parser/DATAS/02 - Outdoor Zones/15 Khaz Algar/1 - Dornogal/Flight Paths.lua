@@ -4,10 +4,10 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(DORNOGAL, {
 		n(FLIGHT_PATHS, {
-			--fp(xx, {	-- Dornogal, Isle of Dorn
-			--	["coord"] = { 44.7, 51.1, DORNOGAL },
-			--	["cr"] = 212369,	-- Breem
-			--}),
+			fp(2928, {	-- Dornogal, Isle of Dorn
+				["coord"] = { 44.7, 51.1, DORNOGAL },
+				["cr"] = 212369,	-- Breem
+			}),
 		}),
 	}),
 })));

@@ -252,8 +252,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						78542,	-- Evacuation Area
 						78541,	-- Lay the Trap
 					},
-					["provider"] = { "n", 212750 },	-- Wenbrandt (TODO: re-check)
-					["coord"] = { 79.1, 43.0, ISLE_OF_DORN },
+					["provider"] = { "n", 212749 },	-- Baelgrim
+					["coord"] = { 75.3, 43.1, ISLE_OF_DORN },
 				}),
 				q(78544, {	-- Bring the Thunder
 					["sourceQuests"] = { 78543 },	-- Poking the Spider Nest
@@ -727,6 +727,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 223924 },	-- Natalia Pearce
 				["coord"] = { 29.6, 86.5, ISLE_OF_DORN },
 			}),
+			q(83335, {	-- Wanted: The Boroughbreaker
+				["provider"] = { "o", 454463 },	-- Wanted Poster
+				["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+			}),
+			q(83759, {	-- DELVER'S CALL: Kriegval's Rest
+				["provider"] = { "o", 455713 },
+				["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+			}),
+			q(83758, {	-- DELVER'S CALL: Fungal Folly
+				["provider"] = { "o", 455716 },
+				["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(78618, {	-- Fungal Frenzy
 					["coord"] = { 52.0, 72.6, ISLE_OF_DORN },
@@ -787,7 +799,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
 	q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
 	-- Side quests
-	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero) 
+	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
 	-- Special Assignment unlocks tracker
 	q(82157),	-- Special Assignment: Rise of the Colossals
 	q(82146),	-- Special Assignment: Cinderbree Surge

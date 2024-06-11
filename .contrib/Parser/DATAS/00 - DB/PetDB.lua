@@ -4089,3 +4089,19 @@ i(223145, 4548);	-- Marrlok
 i(221817, 4579);	-- Muskpaw Calf
 i(223339, 4565);	-- Trishi
 i(223474, 4566);	-- Worgli the Apprehensive
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+n(223092, 4540);	-- Alabaster Stonecharger
+n(223090, 4541);	-- Bedrock Stonecharger
+n(223698, 4577);	-- Cinderhoney Emberstinger
+n(223094, 4538);	-- Cobalt Ramolith
+n(219267, 4514);	-- Fallowspark Glowfly
+n(222774, 4525);	-- Fragrant Stonelamb
+n(222877, 4535);	-- Ghostcap Menace
+n(223093, 4539);	-- Granite Ramolith
+n(222713, 4518);	-- Magmashell Crawler
+n(222775, 4526);	-- Sandstone Mosswool
+n(222778, 4529);	-- Shale Mosswool
+n(222739, 4522);	-- Troglofrog

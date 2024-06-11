@@ -239,6 +239,31 @@ root(ROOTS.Professions, prof(SKINNING, {
 			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
 		},
 	}),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		n(TREASURES, {
+			o(455951, {	-- Artisan's Drawing Knife
+				["coord"] = { 47.3, 28.3, THE_RINGING_DEEPS },
+				["questID"] = 83916,
+				["g"] = {
+					i(226342), -- Artisan's Drawing Knife
+				},
+			}),
+			o(455953, {	-- Dornogal Carving Knife
+				["coord"] = { 54.3, 57.3, DORNOGAL },
+				["questID"] = 83914,
+				["g"] = {
+					i(226340), -- Dornogal Carving Knife
+				},
+			}),
+			o(455952, {	-- Earthen Worker's Beam
+				["coord"] = { 60.0, 28.0, ISLE_OF_DORN },
+				["questID"] = 83915,
+				["g"] = {
+					i(226341), -- Earthen Worker's Beams
+				},
+			}),
+		})
+	})),
 }));
 profession(SKINNING, {
 	-- #if AFTER WOD

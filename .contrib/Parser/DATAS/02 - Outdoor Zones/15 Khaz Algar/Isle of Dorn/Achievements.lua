@@ -59,6 +59,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			ach(40667, {	-- Skyriding Glyphs: Thul Medran
 				["coord"] = { 47.9, 26.6, ISLE_OF_DORN },
 			}),
+			ach(40670, {	-- Skyriding Glyphs: Mourning Rise
+				["coord"] = { 62.1, 44.9, ISLE_OF_DORN },
+			}),
 		}),
 	}),
 })));

@@ -99,8 +99,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["crs"] = { x },
 			}),
 			crit(67294, {	-- Fallowspark Glowfly
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 219267 },
 			}),
 			crit(67295, {	-- Azure Flickerfly
 				-- TODO
@@ -147,8 +146,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["crs"] = { x },
 			}),
 			crit(67306, {	-- Ghostcap Menace
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222877 },
 			}),
 			crit(67307, {	-- Winged Arachnoid
 				-- TODO
@@ -159,12 +157,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["crs"] = { x },
 			}),
 			crit(67309, {	-- Magmashell Crawler
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222713 },
 			}),
 			crit(67317, {	-- Bedrock Stonecharger
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 223090 },
 			}),
 			crit(67310, {	-- Mossy Snail
 				-- TODO
@@ -175,44 +171,36 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["crs"] = { x },
 			}),
 			crit(67312, {	-- Troglofrog
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222739 },
 			}),
 			crit(67313, {	-- Fragrant Stonelamb
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222774 },
 			}),
 			crit(67314, {	-- Sandstone Mosswool
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222775 },
 			}),
 			crit(67315, {	-- Shale Mosswool
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222778 },
 			}),
 			crit(67316, {	-- Umbral Amalgam
 				-- TODO
 				--["crs"] = { x },
 			}),
 			crit(67318, {	-- Cobalt Ramolith
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 223094 },
 			}),
 			crit(67319, {	-- Granite Ramolith
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 223093 },
 			}),
 			crit(67320, {	-- Alabaster Stonecharger
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 223092 },
 			}),
 			crit(68269, {	-- Snuffling
 				-- TODO
 				--["crs"] = { x },
 			}),
 			crit(68270, {	-- Cinderhoney Emberstinger
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 223698 },
 			}),
 		})),
 	}),

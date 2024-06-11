@@ -25,6 +25,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 			-- Rares
 			n(223541),	-- Stolen Loader
 			n(207482),	-- Invasive Sporecap
+			n(228030),	-- Sir Finley Mrgglton
 
 			-- Equipment?
 			i(226222),	-- Webbed Hookshot
@@ -119,6 +120,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 		i(211005),	-- Cave Topographer's Drape
 		i(211018),	-- Treasure-Seeker's Breeches
 		i(211061),	-- Unearthed Relic Band
+		i(211047),	-- Lapidarius Gemcutter
+		i(211022),	-- Torchbearer's Striders
+		-- Cosmetic
+		i(212172),	-- Ajul'Nerub Raptorial Spine
 
 		-- Rare Treasure Finds?
 		i(226002),	-- Expensive Looking Find (was looted from Sturdy Chest (objectID) 454091)

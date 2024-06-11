@@ -7,9 +7,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--["sym"] = {{"select","speciesID",
 
 			--}},
-			--["g"] = {
-
-			--},
+			["g"] = {
+				n(223090, {	-- Bedrock Stonecharger (PET!)
+					["coord"] = { 27.3, 67.6, DORNOGAL },
+				}),
+				n(222713, {	-- Magmashell Crawler (PET!)
+					["coord"] = { 47.9, 56.0, DORNOGAL },
+				}),
+			},
 		})),
 	}),
 })));

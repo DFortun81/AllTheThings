@@ -4,9 +4,11 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(HALLOWFALL, {
 		petbattle(filter(BATTLE_PETS, {
-			--["sym"] = {{"select","speciesID",
-
-			--}},
+			["sym"] = {{"select","speciesID",
+				4514,	-- Fallowspark Glowfly (PET!)
+				4535,	-- Ghostcap Menace (PET!)
+				4522,	-- Troglofrog (PET!)
+			}},
 			--["g"] = {
 				--[[
 				pet(xx, {	-- Arachnoid Hatchling (PET!)
@@ -29,16 +31,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						{ x, y, HALLOWFALL },
 					},
 				}),
-				pet(xx, {	-- Fallowspark Glowfly (PET!)
-					["coords"] = {
-						{ x, y, HALLOWFALL },
-					},
-				}),
-				pet(xx, {	-- Ghostcap Menace (PET!)
-					["coords"] = {
-						{ x, y, HALLOWFALL },
-					},
-				}),
 				pet(xx, {	-- Greenlands Chicken (PET!)
 					["coords"] = {
 						{ x, y, HALLOWFALL },
@@ -50,11 +42,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				pet(xx, {	-- Subterranean Dartswog (PET!)
-					["coords"] = {
-						{ x, y, HALLOWFALL },
-					},
-				}),
-				pet(xx, {	-- Troglofrog (PET!)
 					["coords"] = {
 						{ x, y, HALLOWFALL },
 					},
