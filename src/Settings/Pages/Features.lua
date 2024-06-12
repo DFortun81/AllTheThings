@@ -136,48 +136,54 @@ checkboxAutomaticallySkipCutscenes:SetPoint("TOPLEFT", headerModules, "BOTTOMLEF
 
 local checkboxAutomaticallyOpenBountyList;
 if app.IsRetail then
--- Classic Windows persist their states, this isn't necessary in that environment. (coming to retail soon!)
-local checkboxAutomaticallyOpenMainList = child:CreateCheckBox(L.AUTO_MAIN_LIST_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:MainList"))
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:MainList", self:GetChecked())
-end)
-checkboxAutomaticallyOpenMainList:SetATTTooltip(L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP)
-checkboxAutomaticallyOpenMainList:AlignBelow(checkboxAutomaticallySkipCutscenes)
+	-- Classic Windows persist their states, this isn't necessary in that environment. (coming to retail soon!)
+	local checkboxAutomaticallyOpenMainList = child:CreateCheckBox(L.AUTO_MAIN_LIST_CHECKBOX,
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Auto:MainList"))
+	end,
+	function(self)
+		settings:SetTooltipSetting("Auto:MainList", self:GetChecked())
+	end)
+	checkboxAutomaticallyOpenMainList:SetATTTooltip(L.AUTO_MAIN_LIST_CHECKBOX_TOOLTIP)
+	checkboxAutomaticallyOpenMainList:AlignBelow(checkboxAutomaticallySkipCutscenes)
 
-local checkboxAutomaticallyOpenMiniList = child:CreateCheckBox(L.AUTO_MINI_LIST_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:MiniList"))
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:MiniList", self:GetChecked())
-end)
-checkboxAutomaticallyOpenMiniList:SetATTTooltip(L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP)
-checkboxAutomaticallyOpenMiniList:AlignBelow(checkboxAutomaticallyOpenMainList)
+	local checkboxAutomaticallyOpenMiniList = child:CreateCheckBox(L.AUTO_MINI_LIST_CHECKBOX,
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Auto:MiniList"))
+	end,
+	function(self)
+		settings:SetTooltipSetting("Auto:MiniList", self:GetChecked())
+	end)
+	checkboxAutomaticallyOpenMiniList:SetATTTooltip(L.AUTO_MINI_LIST_CHECKBOX_TOOLTIP)
+	checkboxAutomaticallyOpenMiniList:AlignBelow(checkboxAutomaticallyOpenMainList)
 
-local checkboxFilterMiniListTimerunning = child:CreateCheckBox(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Filter:MiniList:Timerunning"))
-end,
-function(self)
-	settings:SetTooltipSetting("Filter:MiniList:Timerunning", self:GetChecked())
-	app.LocationTrigger(true)
-end)
-checkboxFilterMiniListTimerunning:SetATTTooltip(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP)
-checkboxFilterMiniListTimerunning:AlignBelow(checkboxAutomaticallyOpenMiniList, 1)
-checkboxFilterMiniListTimerunning:MarkAsWIP();
+	local function AddTimerunningToCurrentInstance()
+		local active = settings:GetTooltipSetting("Filter:MiniList:Timerunning")
+		app:GetWindow("CurrentInstance").Filters = active and { Timerunning = true } or nil
+	end
+	app.AddEventHandler("OnLoad", AddTimerunningToCurrentInstance)
+	local checkboxFilterMiniListTimerunning = child:CreateCheckBox(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX,
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Filter:MiniList:Timerunning"))
+	end,
+	function(self)
+		settings:SetTooltipSetting("Filter:MiniList:Timerunning", self:GetChecked())
+		AddTimerunningToCurrentInstance()
+		app.LocationTrigger(true)
+	end)
+	checkboxFilterMiniListTimerunning:SetATTTooltip(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP)
+	checkboxFilterMiniListTimerunning:AlignBelow(checkboxAutomaticallyOpenMiniList, 1)
+	checkboxFilterMiniListTimerunning:MarkAsWIP();
 
-checkboxAutomaticallyOpenBountyList = child:CreateCheckBox(L.AUTO_BOUNTY_CHECKBOX,
-function(self)
-	self:SetChecked(settings:GetTooltipSetting("Auto:BountyList"))
-end,
-function(self)
-	settings:SetTooltipSetting("Auto:BountyList", self:GetChecked())
-end)
-checkboxAutomaticallyOpenBountyList:SetATTTooltip(L.AUTO_BOUNTY_CHECKBOX_TOOLTIP)
-checkboxAutomaticallyOpenBountyList:AlignBelow(checkboxFilterMiniListTimerunning, -1)
+	checkboxAutomaticallyOpenBountyList = child:CreateCheckBox(L.AUTO_BOUNTY_CHECKBOX,
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Auto:BountyList"))
+	end,
+	function(self)
+		settings:SetTooltipSetting("Auto:BountyList", self:GetChecked())
+	end)
+	checkboxAutomaticallyOpenBountyList:SetATTTooltip(L.AUTO_BOUNTY_CHECKBOX_TOOLTIP)
+	checkboxAutomaticallyOpenBountyList:AlignBelow(checkboxFilterMiniListTimerunning, -1)
 end
 
 local checkboxAutomaticallyOpenProfessionList = child:CreateCheckBox(L.AUTO_PROF_LIST_CHECKBOX,

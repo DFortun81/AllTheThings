@@ -9,7 +9,6 @@ local L = app.L;
 
 local AssignChildren, CloneClassInstance, GetRelativeValue = app.AssignChildren, app.CloneClassInstance, app.GetRelativeValue;
 local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject;
-local GetTimerunningSeasonEventID = app.Modules.Events.GetTimerunningSeason;
 
 -- Abbreviations
 L.ABBREVIATIONS[L.UNSORTED .. " %> " .. L.UNSORTED] = "|T" .. app.asset("WindowIcon_Unsorted") .. ":0|t " .. L.SHORTTITLE .. " %> " .. L.UNSORTED;
@@ -7028,9 +7027,12 @@ local function DirectGroupUpdate(group, got)
 		-- app.PrintDebug("DGU:OnUpdate",group.hash)
 		group:DGUOnUpdate();
 	end
+	local window = app.GetRelativeRawWithField(group, "window");
+	if window then window:ToggleExtraFilters(true) end
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
 	if not app.RecursiveDirectGroupRequirementsFilter(group) then
 		-- app.PrintDebug("DGU:Filtered",group.hash,group.parent and group.parent.text)
+		if window then window:ToggleExtraFilters() end
 		return;
 	end
 	local prevTotal, prevProg, prevCost, prevUpgrade
@@ -7050,7 +7052,6 @@ local function DirectGroupUpdate(group, got)
 		AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange);
 	end
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
-	local window = app.GetRelativeRawWithField(group, "window");
 	if window then
 		-- sometimes we may want to trigger a delayed fill operation on a group, but when attempting the fill originally,
 		-- the group may not yet be in a state for proper filling... so we can instead assign the group to trigger a fill
@@ -7062,6 +7063,7 @@ local function DirectGroupUpdate(group, got)
 		end
 		-- app.PrintDebug("DGU:Update",group.hash,">",window.Suffix,window.Update,window.isQuestChain)
 		DelayedCallback(window.Update, DGUDelay, window, window.isQuestChain, got);
+		window:ToggleExtraFilters()
 	elseif group.DGU_Fill then
 		-- group wants to fill, but isn't yet in a window... so do a delayed DGU again
 		if not tonumber(group.DGU_Fill) then
@@ -9159,7 +9161,11 @@ local function UpdateWindow(self, force, got)
 		self.HasPendingUpdate = true;
 		force = nil;
 	end
-	-- app.PrintDebug("Update:",self.Suffix, force and "FORCE" or "SOFT", visible and "VISIBLE" or "HIDDEN",got and "COLLECTED" or "PASSIVE");
+	-- app.PrintDebug(Colorize("Update:", app.Colors.ATT),self.Suffix,
+	-- 	force and "FORCE" or "SOFT",
+	-- 	visible and "VISIBLE" or "HIDDEN",
+	-- 	got and "COLLECTED" or "PASSIVE",
+	-- 	self.HasPendingUpdate and "PENDING" or "")
 	if force or visible then
 		-- clear existing row data for the update
 		if self.rowData then wipe(self.rowData);
@@ -9167,10 +9173,12 @@ local function UpdateWindow(self, force, got)
 
 		data.expanded = true;
 		if not self.doesOwnUpdate and force then
-			-- app.PrintDebug("TLUG",self.Suffix)
+			self:ToggleExtraFilters(true)
+			-- app.PrintDebug(Colorize("TLUG", app.Colors.Time),self.Suffix)
 			app.TopLevelUpdateGroup(data);
 			self.HasPendingUpdate = nil;
 			-- app.PrintDebugPrior("Done")
+			self:ToggleExtraFilters()
 		end
 
 		-- Should the groups in this window be expanded prior to processing the rows for display
@@ -9276,6 +9284,16 @@ local function GetRunner(self)
 	self.__Runner = Runner
 	return Runner
 end
+local function ToggleExtraFilters(self, active)
+	local filters = self.Filters
+	if not filters then return end
+	local Set = app.Modules.Filter.Set
+	local Setter
+	for name,_ in pairs(filters) do
+		Setter = Set[name]
+		if Setter then Setter(active) end
+	end
+end
 function app:GetWindow(suffix, parent, onUpdate)
 	if app.GetCustomWindowParam(suffix, "reset") then
 		ResetWindow(suffix);
@@ -9299,6 +9317,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window.SetData = SetData;
 		window.BuildData = BuildData;
 		window.GetRunner = GetRunner;
+		window.ToggleExtraFilters = ToggleExtraFilters
 
 		window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
 		window:SetScript("OnMouseDown", StartMovingOrSizing);
@@ -9561,7 +9580,7 @@ function app:GetDataCache()
 	db.g = app.Categories.Instances;
 	db.icon = app.asset("Category_D&R");
 	tinsert(g, db);
-	
+
 	-- Delves
 	if app.Categories.Delves then
 		tinsert(g, app.CreateNPC(app.HeaderConstants.DELVES, {
@@ -10715,14 +10734,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		(function()
 		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID, isInInstance;
 		local rootGroups, mapGroups = {}, {};
-		local TimerunningSeasonEventID
-		local function OnlyTimerunning(group)
-			return GetRelativeValue(group, "e") == TimerunningSeasonEventID
-		end
-		local function NotTimerunning(group)
-			local e = GetRelativeValue(group, "e")
-			return not e or e ~= TimerunningSeasonEventID
-		end
 		self.Rebuild = function(self)
 			-- app.PrintDebug("Rebuild",self.mapID);
 			local currentMaps, mapID = {}, self.mapID
@@ -10734,20 +10745,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			results = CleanInheritingGroups(SearchForField("mapID", mapID), "sourceIgnored");
 			-- app.PrintDebug("Rebuild#",#results);
 			if results and #results > 0 then
-
-				-- If there's a timerunning event going on...
-				if app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
-					TimerunningSeasonEventID = GetTimerunningSeasonEventID();
-					local refined = {};
-					local Refiner = TimerunningSeasonEventID and OnlyTimerunning or NotTimerunning
-					-- app.PrintDebug(TimerunningSeasonEventID and "ONLYTIMERUNNING" or "NOTTIMERUNNING")
-					for _,j in ipairs(results) do
-						if Refiner(j) then
-							refined[#refined + 1] = j
-						end
-					end
-					results = refined;
-				end
 
 				-- I tend to like this way of finding sub-maps, but it does mean we rely on Blizzard and get whatever maps they happen to claim
 				-- are children of a given map... sometimes has weird results like scenarios during quests being considered children in
@@ -11042,11 +11039,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		if not self:IsSameMapID() then
 			force = self:Rebuild();
 		end
-		self.data.back = 1;
-		self.data.indent = 0;
-		self.data.visible = true;
-		Callback(self.BaseUpdate, self, force, got)
-		-- self:BaseUpdate(force, got);
+		self:BaseUpdate(force, got);
 	end
 end;
 customWindowUpdates.ItemFilter = function(self, force)

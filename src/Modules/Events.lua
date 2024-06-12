@@ -326,6 +326,35 @@ if PlayerGetTimerunningSeasonID then
 		local seasonID = PlayerGetTimerunningSeasonID();
 		if seasonID then return timerunningSeasons[seasonID]; end
 	end
+	local TimerunningSeasonEventID
+	local GetRelativeRawWithField = app.GetRelativeRawWithField
+	local ThingKeys
+	local function OnlyTimerunning(group)
+		-- app.PrintDebug("F:TR",group.e,TimerunningSeasonEventID,group.__type,ThingKeys[group.key],group.e == TimerunningSeasonEventID)
+		if not ThingKeys[group.key] then return true end
+		return GetRelativeRawWithField(group, "e") == TimerunningSeasonEventID
+	end
+	local function NotMoPRemixTimerunning(group)
+		-- app.PrintDebug("F:~TR",group.e,TimerunningSeasonEventID,group.__type,ThingKeys[group.key],not group.e or group.e ~= 1525)
+		if not ThingKeys[group.key] then return true end
+		local e = GetRelativeRawWithField(group, "e")
+		return not e or e ~= 1525
+	end
+
+	-- Add a Timerunning Filters that can be used for Live/Timerunning characters
+	-- The use of the respective filter would be enabled based on the setting
+	app.AddEventHandler("OnStartup", function()
+		ThingKeys = app.ThingKeys
+		local DefineFilter = app.Modules.Filter.DefineToggleFilter
+		TimerunningSeasonEventID = GetTimerunningSeason()
+		if TimerunningSeasonEventID then
+			-- app.PrintDebug("Added OnlyTimerunning filter")
+			DefineFilter("Timerunning", "A", OnlyTimerunning)
+		else
+			-- app.PrintDebug("Added NotMoPRemixTimerunning filter")
+			DefineFilter("Timerunning", "A", NotMoPRemixTimerunning)
+		end
+	end)
 else
 	-- Timerunning API is not available.
 	GetTimerunningSeason = app.EmptyFunction;
