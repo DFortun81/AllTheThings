@@ -16,8 +16,8 @@ local IsRefreshing
 if app.IsRetail then
 -- CRIEVE NOTE: I really don't like the explicit listed data here
 -- I'd much rather have parser export these.
-local wipe, math_max, tonumber, type, select, pcall, ipairs, pairs =
-	  wipe, math.max, tonumber, type, select, pcall, ipairs, pairs;
+local math_max, tonumber, type, select, pcall, ipairs, pairs =
+	  math.max, tonumber, type, select, pcall, ipairs, pairs;
 local GetAchievementInfo =
 	  GetAchievementInfo;
 local ATTAccountWideData
@@ -284,8 +284,6 @@ RefreshCollections = function()
 	end
 
 	-- Execute the OnRefreshCollections handlers.
-	-- TODO: Take all the bulk of this function and make them use the event handler.
-	-- The function used in the Classic section is what I want to see when this is completed.
 	app.HandleEvent("OnRefreshCollections", ATTAccountWideData)
 end
 
@@ -311,11 +309,7 @@ app.AddEventHandler("OnStartup", function()
 	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
 end)
 
-else
--- TODO: Once the Retail version of this function uses ALOT less things manually
--- and has successfully converted them to using event handlers, then this is what I'm
--- expecting the function to look like at the end. Probably also add an event handler
--- to proc when it's "done". Like OnRefreshCollectionsComplete or something?
+else	-- Classic
 RefreshCollections = function()
 	if InCombatLockdown() then
 		print(app.L.REFRESHING_COLLECTION,"(",COMBAT,")");
