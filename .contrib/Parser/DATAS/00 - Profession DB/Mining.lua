@@ -322,3 +322,48 @@ i(0, 405131);		-- Overload Metamorphic Deposit
 i(0, 421247);		-- Living Draconium Deposit
 i(0, 421244);		-- Living Serevite Deposit
 i(0, 422809);		-- Overload Living Deposit
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+i(0, 423341);		-- Khaz Algar Mining
+i(0, 439705);		-- Bismuth
+i(0, 453381);		-- Erosion Polished Slate
+--- DISCOVERY ---
+i(0, 439707);		-- Aqirite
+i(0, 439713);		-- Aqirite Seam
+i(0, 439712);		-- Bismuth Seam
+i(0, 439725);		-- Camouflaged Aqirite
+i(0, 439724);		-- Camouflaged Bismuth
+i(0, 439726);		-- Camouflaged Ironclaw
+i(0, 439716);		-- Crystallized Aqirite
+i(0, 439715);		-- Crystallized Bismuth
+i(0, 439717);		-- Crystallized Ironclaw
+i(0, 439722);		-- EZ-Mine Aqirite
+i(0, 439721);		-- EZ-Mine Bismuth
+i(0, 439723);		-- EZ-Mine Ironclaw
+i(0, 439708);		-- Ironclaw
+i(0, 439714);		-- Ironclaw Seam
+i(0, 439742);		-- Overload Crystallized
+i(0, 423394);		-- Overload Empowered Deposit
+i(0, 439744);		-- Overload Explosives
+i(0, 439747);		-- Overload Webbed Deposits
+i(0, 439743);		-- Overload Weeping
+i(0, 439710);		-- Rich Aqirite
+i(0, 439709);		-- Rich Bismuth
+i(0, 439711);		-- Rich Ironclaw
+i(0, 439728);		-- Webbed Aqirite
+i(0, 439727);		-- Webbed Bismuth
+i(0, 439729);		-- Webbed Ironclaw
+i(0, 439719);		-- Weeping Aqirite
+i(0, 439718);		-- Weeping Bismuth
+i(0, 439720);		-- Weeping Ironclaw
+--- SPECIALIZATION ---
+i(0, 442328);		-- Refine Bismuth++
+i(0, 442329);		-- Refine Bismuth+++
+i(0, 442330);		-- Refine Aqirite++
+i(0, 442331);		-- Refine Aqirite+++
+i(0, 442332);		-- Refine Ironclaw Ore++
+i(0, 442333);		-- Refine Ironclaw Ore+++
+-- NIY?
+i(0, 423882);		-- Overload Test Deposit

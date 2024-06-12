@@ -126,16 +126,6 @@ root(ROOTS.Unsorted, {
 			i(210698),	-- Rare Delve Key
 			i(210699),	-- Epic Delve Key
 			i(210745),	-- Firelight Spud
-			i(210930),	-- Bismuth
-			i(210931),	-- Bismuth
-			i(210932),	-- Bismuth
-			i(210933),	-- Aqirite
-			i(210934),	-- Aqirite
-			i(210935),	-- Aqirite
-			i(210936),	-- Ironclaw Ore
-			i(210937),	-- Ironclaw Ore
-			i(210938),	-- Ironclaw Ore
-			i(210939),	-- Null Stone
 			i(210940),	-- Null Stone
 			i(210941),	-- Null Stone
 			i(210942),	-- Byproduct 01 - Light

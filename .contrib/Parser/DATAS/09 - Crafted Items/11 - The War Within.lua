@@ -520,7 +520,83 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	--]]
 	prof(MINING, {
 		spell(2575, {	-- Mining
+			i(210933),	-- Aqirite+
+			i(210934),	-- Aqirite++
+			i(210935),	-- Aqirite+++
+			i(210930),	-- Bismuth+
+			i(210931),	-- Bismuth++
+			i(210932),	-- Bismuth+++
+			i(210936),	-- Ironclaw Ore+
+			i(210937),	-- Ironclaw Ore++
+			i(210938),	-- Ironclaw Ore+++
+			i(210939),	-- Null Stone
 		}),
+		n(DISCOVERY, {
+			r(439707),	-- Aqirite
+			r(439713),	-- Aqirite Seam
+			r(439712),	-- Bismuth Seam
+			r(439725),	-- Camouflaged Aqirite
+			r(439724),	-- Camouflaged Bismuth
+			r(439726),	-- Camouflaged Ironclaw
+			r(439716),	-- Crystallized Aqirite
+			r(439715),	-- Crystallized Bismuth
+			r(439717),	-- Crystallized Ironclaw
+			r(439722),	-- EZ-Mine Aqirite
+			r(439721),	-- EZ-Mine Bismuth
+			r(439723),	-- EZ-Mine Ironclaw
+			r(439708),	-- Ironclaw
+			r(439714),	-- Ironclaw Seam
+			r(439742),	-- Overload Crystallized
+			r(423394),	-- Overload Empowered Deposit
+			r(439744),	-- Overload Explosives
+			r(439747),	-- Overload Webbed Deposits
+			r(439743),	-- Overload Weeping
+			r(439710),	-- Rich Aqirite
+			r(439709),	-- Rich Bismuth
+			r(439711),	-- Rich Ironclaw
+			r(439728),	-- Webbed Aqirite
+			r(439727),	-- Webbed Bismuth
+			r(439729),	-- Webbed Ironclaw
+			r(439719),	-- Weeping Aqirite
+			r(439718),	-- Weeping Bismuth
+			r(439720),	-- Weeping Ironclaw
+		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = MINING,
+		},{
+			-- Aqirite
+			--FirstCraft(XXXXX, 439707);	-- Aqirite
+			--FirstCraft(XXXXX, 439713);	-- Aqirite Seam
+			--FirstCraft(XXXXX, 439725);	-- Camouflaged Aqirite
+			--FirstCraft(XXXXX, 439716);	-- Crystallized Aqirite
+			--FirstCraft(XXXXX, 439722);	-- EZ-Mine Aqirite
+			--FirstCraft(XXXXX, 439710);	-- Rich Aqirite
+			--FirstCraft(XXXXX, 439728);	-- Webbed Aqirite
+			--FirstCraft(XXXXX, 439719);	-- Weeping Aqirite
+			-- Bismuth
+			--FirstCraft(XXXXX, 439712);	-- Bismuth Seam
+			--FirstCraft(XXXXX, 439724);	-- Camouflaged Bismuth
+			--FirstCraft(XXXXX, 439715);	-- Crystallized Bismuth
+			--FirstCraft(XXXXX, 439721);	-- EZ-Mine Bismuth
+			--FirstCraft(XXXXX, 439709);	-- Rich Bismuth
+			--FirstCraft(XXXXX, 439727);	-- Webbed Bismuth
+			--FirstCraft(XXXXX, 439718);	-- Weeping Bismuth
+			-- Ironclaw
+			--FirstCraft(XXXXX, 439708);	-- Ironclaw
+			--FirstCraft(XXXXX, 439714);	-- Ironclaw Seam
+			--FirstCraft(XXXXX, 439726);	-- Camouflaged Ironclaw
+			--FirstCraft(XXXXX, 439717);	-- Crystallized Ironclaw
+			--FirstCraft(XXXXX, 439723);	-- EZ-Mine Ironclaw
+			--FirstCraft(XXXXX, 439711);	-- Rich Ironclaw
+			--FirstCraft(XXXXX, 439729);	-- Webbed Ironclaw
+			--FirstCraft(XXXXX, 439720);	-- Weeping Ironclaw
+			-- Overload
+			--FirstCraft(XXXXX, 439742);	-- Overload Crystallized
+			--FirstCraft(XXXXX, 423394);	-- Overload Empowered Deposit
+			--FirstCraft(XXXXX, 439744);	-- Overload Explosives
+			--FirstCraft(XXXXX, 439747);	-- Overload Webbed Deposits
+			--FirstCraft(XXXXX, 439743);	-- Overload Weeping
+		})),
 	}),
 	prof(SKINNING, {
 		n(FIRST_CRAFTS_HEADER, sharedData({

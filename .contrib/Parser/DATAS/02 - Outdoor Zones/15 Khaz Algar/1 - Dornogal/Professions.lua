@@ -25,12 +25,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 			}),
 			prof(MINING, {
-				--[[
-				n(XXXXX, {
-					["coord"] = { X, Y, DORNOGAL },
+				n(219097, {	-- Tarib <Mining Trainer>
+					["coord"] = { 49.2, 45.4, DORNOGAL },
 					["g"] = TWW_MINING,
 				}),
-				--]]
 			}),
 		}),
 	}),
