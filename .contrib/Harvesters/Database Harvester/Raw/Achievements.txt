@@ -15164,3 +15164,12 @@
 40786@@@The War Within Tier 10 delves completed
 40787@@@The War Within Tier 11 delves completed
 40788@@@I Got the Keys
+11.0.0.55087
+17732@@@<Hidden> 00.x Chromie Time - Hit Previous Max Level While In Chromie Time
+17733@@@<Hidden> 00.x Chromie Time - Hit 61 While In Chromie Time
+40263@@@Would You Still /love Me if I Was a Worm...
+40307@@@Allied Races: Earthen
+40789@@@I've Got More Flying Machine?!
+40790@@@Khaz Algar Explorer
+40792@@@Solo Shuffle Medic: The War Within
+40795@@@Battleground Blitz Medic: The War Within

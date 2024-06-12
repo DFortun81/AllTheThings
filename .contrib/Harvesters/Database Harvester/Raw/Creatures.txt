@@ -21827,3 +21827,19 @@
 227971@@@Zev'kall
 227977@@@Oathsworn Peacekeeper
 228001@@@Nipper
+11.0.0.55087
+204340@@@Soot-Stained Shalewing
+213633@@@Magni Bronzebeard
+213634@@@Dagran Thaurissan II
+213763@@@Moira Thaurissan
+217886@@@Anduin Wrynn
+225554@@@Coppers
+225632@@@Wobbles
+228122@@@Kai'shae
+228124@@@Ney'leia
+228126@@@On'hiea
+228493@@@Alleria Windrunner
+228518@@@Sound Stalker - 11.0 Quest - Max Level Campaign - Q07b
+228526@@@Scenario First Task Credit
+228528@@@Scenario Final Task Credit
+228531@@@Image of Zekvir

@@ -1972,3 +1972,6 @@
 452780@@@[PH] Goliathus (Purple)
 457654@@@Keg Leg's Radiant Crocolisk
 459193@@@Hand of Reshkigaal
+11.0.0.55087
+447195@@@Swarmite Skyhunter
+451489@@@Siesbarg

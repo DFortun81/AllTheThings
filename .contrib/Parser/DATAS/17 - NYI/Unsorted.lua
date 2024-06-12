@@ -5862,6 +5862,180 @@ root(ROOTS.Unsorted, {
 			i(226695),	-- Cunning Advisor's Favor
 			i(226696),	-- Mighty Advisor's Favor
 			i(226800),	-- Earthen Backpack
+			-----------------------------------
+			i(205148),	-- Soot-Stained Shalewing
+			i(210221),	-- Forged Combatant's Heraldry
+			i(210232),	-- Forged Aspirant's Heraldry
+			i(210233),	-- Forged Gladiator's Heraldry
+			i(212039),	-- K'areshi Phantom's Grips
+			i(212040),	-- K'areshi Phantom's Netherwalkers
+			i(212254),	-- Grotesque Vial
+			i(212255),	-- Grotesque Vial
+			i(212256),	-- Grotesque Vial
+			i(212324),	-- QA Grotesque Vial
+			i(212960),	-- Fleeting Grotesque Vial
+			i(212961),	-- Fleeting Grotesque Vial
+			i(212962),	-- Fleeting Grotesque Vial
+			i(215137),	-- Algari Competitor's Signet
+			i(215144),	-- Algari Competitor's Amulet
+			i(216882),	-- Log Entry 467-21-5
+			i(220215),	-- Unidentified Tinderbox
+			i(221023),	-- Treacherous Transmitter
+			i(221096),	-- Rail Rider's Bisector
+			i(221207),	-- Den Mother's Chestpiece
+			i(222626),	-- Algari Missive of Ingenuity
+			i(222627),	-- Algari Missive of Ingenuity
+			i(222628),	-- Algari Missive of Ingenuity
+			i(223043),	-- Plans: Sanctified Steps
+			i(223089),	-- Design: Extravagant Loupes
+			i(223090),	-- Design: Enchanter's Crystal
+			i(223091),	-- Design: Forger's Font Inspector
+			i(223092),	-- Design: Novelist's Specs
+			i(223267),	-- Swarmite Skyhunter
+			i(223376),	-- Band of the Relic Bearer
+			i(223484),	-- Kobold Mastermind's "Pivel"
+			i(223510),	-- Delver's Dirigible Schematic: Template
+			i(223646),	-- Memory of the Eastern Kingdoms
+			i(224424),	-- Pattern: Artisan Chef's Hat
+			i(224760),	-- Wobbles
+			i(224768),	-- Delver's Dirigible Schematic: Wing-Mounted Propeller
+			i(224769),	-- Delver's Dirigible Schematic: Rotor Blades
+			i(224770),	-- Delver's Dirigible Schematic: Front-Mounted Propeller
+			i(224771),	-- Delver's Dirigible Schematic: Empennage
+			i(224960),	-- Delver's Dirigible Schematic: Lantern Wing
+			i(224979),	-- Delver's Dirigible Schematic: Zeppelin
+			i(224980),	-- Delver's Dirigible Schematic: Front-Mounted Lantern
+			i(224981),	-- Delver's Dirigible Schematic: Brown Paint
+			i(224982),	-- Delver's Dirigible Schematic: Exhaust
+			i(225066),	-- Trailblazer's Haversack
+			i(225213),	-- Sky-Captain Lancekat's Curse
+			i(225432),	-- Design: Algari Competitor's Signet
+			i(225433),	-- Design: Algari Competitor's Amulet
+			i(225542),	-- Delver's Dirigible Schematic: Void
+			i(225614),	-- Dreadful Blasphemer's Effigy
+			i(225615),	-- Mystic Blasphemer's Effigy
+			i(225616),	-- Venerated Blasphemer's Effigy
+			i(225617),	-- Zenith Blasphemer's Effigy
+			i(225618),	-- Dreadful Stalwart's Emblem
+			i(225619),	-- Mystic Stalwart's Emblem
+			i(225620),	-- Venerated Stalwart's Emblem
+			i(225621),	-- Zenith Stalwart's Emblem
+			i(225622),	-- Dreadful Conniver's Badge
+			i(225623),	-- Mystic Conniver's Badge
+			i(225624),	-- Venerated Conniver's Badge
+			i(225625),	-- Zenith Conniver's Badge
+			i(225626),	-- Dreadful Slayer's Icon
+			i(225627),	-- Mystic Slayer's Icon
+			i(225628),	-- Venerated Slayer's Icon
+			i(225629),	-- Zenith Slayer's Icon
+			i(225630),	-- Dreadful Obscenity's Idol
+			i(225631),	-- Mystic Obscenity's Idol
+			i(225632),	-- Venerated Obscenity's Idol
+			i(225633),	-- Zenith Obscenity's Idol
+			i(226025),	-- Darkmoon Sigil: Radiance
+			i(226026),	-- Darkmoon Sigil: Radiance
+			i(226027),	-- Darkmoon Sigil: Radiance
+			i(226117),	-- Dalaran Guardian's Arcanotool
+			i(226643),	-- Plans: Beledar's Bulwark
+			i(226810),	-- Infiltrator's Shroud
+			i(226811),	-- Marinated Maggots
+			i(226813),	-- Golden Valorstone
+			i(226814),	-- Chest of Gold
+			i(227208),	-- Bismuth Rod
+			i(227272),	-- Rock Lobster
+			i(227273),	-- Iron Poppers
+			i(227274),	-- Candle Rock Candy
+			i(227275),	-- Koboldatouille
+			i(227281),	-- Recipe: Feast of the Midnight Masquerade
+			i(227283),	-- Recipe: Feast of the Divine Day
+			i(227287),	-- Skovald's Resolve
+			i(227294),	-- Ravencrest's Wrath
+			i(227297),	-- Hallowed Burger
+			i(227298),	-- Humble Pie
+			i(227299),	-- Acid Braised Beetle
+			i(227300),	-- Poison Poached Eggs
+			i(227301),	-- Crystal Tots
+			i(227302),	-- Granite Salad
+			i(227303),	-- Waxy Cheese Snack
+			i(227304),	-- Mushroom Cake
+			i(227305),	-- Airship Dog on a Bun
+			i(227306),	-- Holy Mackerel
+			i(227307),	-- Insects Bowl Mix
+			i(227308),	-- Butterflied Deepstrider
+			i(227309),	-- Titanshake
+			i(227310),	-- Magmalaid
+			i(227311),	-- Digspresso
+			i(227312),	-- Afterglow
+			i(227313),	-- Starfruit Puree
+			i(227314),	-- Coffee, Light Ice
+			i(227315),	-- Tarragon Soda
+			i(227316),	-- Eggnog
+			i(227317),	-- Lava Cola
+			i(227318),	-- Quicksilver Sipper
+			i(227319),	-- Koboldchino
+			i(227320),	-- Wicker Wisps
+			i(227321),	-- Blessed Brew
+			i(227322),	-- Sanctified Sasparilla
+			i(227323),	-- Mushroom Tea
+			i(227324),	-- Nerub'ar Nectar
+			i(227325),	-- Stone Soup
+			i(227326),	-- Chalcocite Lava Cake
+			i(227327),	-- Rocky Road
+			i(227328),	-- Wax Fondue
+			i(227329),	-- Still-Twitching Gumbo
+			i(227330),	-- Grottochunk Stew
+			i(227331),	-- Saints' Delight
+			i(227332),	-- Sipping Aether
+			i(227333),	-- Glimmering Delicacy
+			i(227334),	-- Mole Mole
+			i(227335),	-- Borer Blood Pudding
+			i(227336),	-- Sugar Slurry
+			i(227407),	-- Faded Blacksmith's Diagrams
+			i(227408),	-- Faded Scribe's Runic Drawings
+			i(227409),	-- Faded Alchemist's Research
+			i(227410),	-- Faded Tailor's Diagrams
+			i(227411),	-- Faded Enchanter's Research
+			i(227412),	-- Faded Engineer's Scribblings
+			i(227413),	-- Faded Jeweler's Illustrations
+			i(227414),	-- Faded Leatherworker's Diagrams
+			i(227415),	-- Faded Herbalist's Notes
+			i(227416),	-- Faded Miner's Notes
+			i(227417),	-- Faded Skinner's Notes
+			i(227418),	-- Exceptional Blacksmith's Diagrams
+			i(227419),	-- Exceptional Scribe's Runic Drawings
+			i(227420),	-- Exceptional Alchemist's Research
+			i(227421),	-- Exceptional Tailor's Diagrams
+			i(227422),	-- Exceptional Enchanter's Research
+			i(227423),	-- Exceptional Engineer's Scribblings
+			i(227424),	-- Exceptional Jeweler's Illustrations
+			i(227425),	-- Exceptional Leatherworker's Diagrams
+			i(227426),	-- Exceptional Herbalist's Notes
+			i(227427),	-- Exceptional Miner's Notes
+			i(227428),	-- Exceptional Skinner's Notes
+			i(227429),	-- Pristine Blacksmith's Diagrams
+			i(227430),	-- Pristine Scribe's Runic Drawings
+			i(227431),	-- Pristine Alchemist's Research
+			i(227432),	-- Pristine Tailor's Diagrams
+			i(227433),	-- Pristine Enchanter's Research
+			i(227434),	-- Pristine Engineer's Scribblings
+			i(227435),	-- Pristine Jeweler's Illustrations
+			i(227436),	-- Pristine Leatherworker's Diagrams
+			i(227437),	-- Pristine Herbalist's Notes
+			i(227438),	-- Pristine Miner's Notes
+			i(227439),	-- Pristine Skinner's Notes
+			i(227445),	-- Inscrutable Fragrance
+			i(227447),	-- Invigorating Fragrance
+			i(227448),	-- Volatile Fragrance
+			i(227449),	-- Robust Fragrance
+			i(227450),	-- Sky Racer's Purse
+			i(227538),	-- Unbound Legend's Pennant
+			i(227539),	-- Unbound Strategist's Pennant
+			i(227542),	-- Begrimed Blade
+			i(227543),	-- Begrimed Hatchet
+			i(227544),	-- Begrimed Staff
+			i(227545),	-- Begrimed Mace
+			i(227546),	-- Begrimed Dagger
+			i(227550),	-- Tusks of Mannoroth
 		})),
 	}),
 	expansion(EXPANSION.DF, {

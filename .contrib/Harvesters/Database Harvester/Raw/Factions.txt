@@ -1073,3 +1073,7 @@
 2610@@@Azj-Kaheti Nerubian (Always Hostile) (Hidden)
 11.0.0.54774
 2569@@@The War Within
+11.0.0.55087
+2647@@@The Vizier (Paragon)
+2648@@@The Weaver (Paragon)
+2649@@@The General (Paragon)
