@@ -608,16 +608,76 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 	}),
 	expansion(EXPANSION.MOP, {
+		filter(CLOTH, {
+			-- #if BEFORE 10.2.7
+			-- All was added into MoP: Remix Throne of Thunder Ensembles
+			expansion(EXPANSION.MOP, 2.0, {
+				i(96705),	-- Abandoned Zandalari Firecord
+				i(97077),	-- Abandoned Zandalari Firecord
+				i(96706),	-- Abandoned Zandalari Shadowgirdle
+				i(97078),	-- Abandoned Zandalari Shadowgirdle
+				i(96707),	-- Silentflame Sandals
+				i(97079),	-- Silentflame Sandals
+				i(96709),	-- Home-Warding Slippers
+				i(97081),	-- Home-Warding Slippers
+			}),
+			-- #endif
+		}),
 		filter(LEATHER, {
+			-- #if BEFORE 10.2.7
+			-- All was added into MoP: Remix Throne of Thunder Ensembles
+			expansion(EXPANSION.MOP, 2.0, {
+				i(96703),	-- Spiderweb Tabi
+				i(97075),	-- Spiderweb Tabi
+				i(96710),	-- Deeproot Treads
+				i(97082),	-- Deeproot Treads
+				i(96714),	-- Abandoned Zandalari Silentbelt
+				i(97086),	-- Abandoned Zandalari Silentbelt
+				i(96715),	-- Abandoned Zandalari Moonstrap
+				i(97087),	-- Abandoned Zandalari Moonstrap
+			}),
+			-- #endif
 			expansion(EXPANSION.MOP, 4.0, {
 				i(104986),	-- Unrepentant Heels
 			}),
+		}),
+		filter(MAIL, {
+			-- #if BEFORE 10.2.7
+			-- All was added into MoP: Remix Throne of Thunder Ensembles
+			expansion(EXPANSION.MOP, 2.0, {
+				i(96704),	-- Scalehide Spurs
+				i(97076),	-- Scalehide Spurs
+				i(96711),	-- Spiritbound Boots
+				i(97083),	-- Spiritbound Boots
+				i(96716),	-- Abandoned Zandalari Arrowlinks
+				i(97088),	-- Abandoned Zandalari Arrowlinks
+				i(96717),	-- Abandoned Zandalari Waterchain
+				i(97089),	-- Abandoned Zandalari Waterchain
+			}),
+			-- #endif
 		}),
 		filter(PLATE, {
 			expansion(EXPANSION.MOP, 0.1, {
 				i(81709),	-- Belt of Broken Bones
 				i(81710),	-- Grinning Skull Greatboots
 			}),
+			-- #if BEFORE 10.2.7
+			-- All was added into MoP: Remix Throne of Thunder Ensembles
+			expansion(EXPANSION.MOP, 2.0, {
+				i(96712),	-- Vaultwalker Sabatons
+				i(97084),	-- Vaultwalker Sabatons
+				i(96718),	-- Abandoned Zandalari Greatbelt
+				i(97090),	-- Abandoned Zandalari Greatbelt
+				i(96719),	-- Abandoned Zandalari Goreplate
+				i(97091),	-- Abandoned Zandalari Goreplate
+				i(96720),	-- Abandoned Zandalari Bucklebreaker
+				i(97092),	-- Abandoned Zandalari Bucklebreaker
+				i(96722),	-- Locksmasher Greaves
+				i(97094),	-- Locksmasher Greaves
+				i(96723),	-- Columnbreaker Stompers
+				i(97095),	-- Columnbreaker Stompers
+			}),
+			-- #endif
 		}),
 		filter(FINGER_F, {
 			expansion(EXPANSION.MOP, 3.0, {
