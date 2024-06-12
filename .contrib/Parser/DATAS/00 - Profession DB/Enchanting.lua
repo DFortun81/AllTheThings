@@ -1308,9 +1308,9 @@ i(223123, 445354);	-- Enchanted Gilded Harbinger Crest
 i(223122, 445347);	-- Enchanted Runed Harbinger Crest
 i(223121, 445399);	-- Enchanted Weathered Harbinger Crest
 i(223115, 445387);	-- Radiant Critical Strike
-i(223115, 445320);	-- Radiant Haste
-i(223115, 445375);	-- Radiant Mastery
-i(223115, 445349);	-- Radiant Versatility
+i(223116, 445320);	-- Radiant Haste
+i(223117, 445375);	-- Radiant Mastery
+i(223118, 445349);	-- Radiant Versatility
 i(223124, 445323);	-- Runed Null Stone Rod
 --- SPECIALIZATION ---
 i(0, 445378);		-- Algari Ingenuity

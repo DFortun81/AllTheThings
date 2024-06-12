@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 67.5, 44.6, HALLOWFALL },
 				["cr"] = 217639,	-- Auro Flitter
 			}),
-			fp(xx, {	-- Hillhelm Family Farm, Hallowfall
+			fp(2944, {	-- Hillhelm Family Farm, Hallowfall
 				["coord"] = { 61.3, 31.0, HALLOWFALL },
 				["cr"] = 206537,	-- Rubaen Hillhelm
 			}),

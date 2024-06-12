@@ -8,10 +8,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 
 			--}},
 			["g"] = {
-				n(223090, {	-- Bedrock Stonecharger (PET!)
+				pet(4541, {	-- Bedrock Stonecharger (PET!)
 					["coord"] = { 27.3, 67.6, DORNOGAL },
 				}),
-				n(222713, {	-- Magmashell Crawler (PET!)
+				pet(4518, {	-- Magmashell Crawler (PET!)
 					["coord"] = { 47.9, 56.0, DORNOGAL },
 				}),
 			},
