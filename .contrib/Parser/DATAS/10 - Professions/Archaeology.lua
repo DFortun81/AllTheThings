@@ -1868,7 +1868,7 @@ root(ROOTS.Professions, prof(ARCHAEOLOGY, bubbleDownSelf({
 					["provider"] = { "i", 160742 },	-- Pristine Soul Coffer
 				}),
 			}),
-			n(ARCH_CURRENCY_ZANDALARI, {
+			n(ARCHAEOLOGY_ZANDALARI, {
 				q(51926, {	-- Pristine Akun'Jar Vase
 					["provider"] = { "i", 154931 },	-- Pristine Akun'Jar Vase
 				}),
