@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["g"] = {
 					i(217995),	-- Order of Night Propaganda (QI!)
 					i(217993),	-- Order of Night Propaganda (QI!)
-					--i(),	-- Order of Night Propaganda (QI!) // wasn't able to find third version in new build
+					i(217900),	-- Order of Night Propaganda (QI!)
 					-- possibly more?
 				},
 			}),
@@ -870,6 +870,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--c(2815),	-- 100x Resonance Crystals
 				},
 			}),
+			q(83755, {	-- Delves: Nightfall Sanctum
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 227523 },	-- Brann Bronzebeard
+				["coord"] = { 43.5, 56.3, HALLOWFALL },
+				["g"] = {
+					--c(2815),	-- 100x Resonance Crystals
+				},
+			}),
 			--new sides
 			q(78686, {	-- Lights Out
 				--["sourceQuests"] = { x },	-- ?
@@ -960,15 +968,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--
 			--	Rares / Bonus Objectives
 			--	need to be moved into rares if didn't get bonus objective
-			--[[
-			q(xx, {	-- Deepfiend Azellix // didn't fire
-				["provider"] = { "n", 218458 },	-- Deepfiend Azellix
-				["coord"] = { 72.1, 64.3, HALLOWFALL },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			--]]
 			q(82164, {	-- Worldsoul Memory: Reign of The Old Gods
 				["provider"] = { "n", 222165 },	-- Worldsoul Memory (vignette - Radiant Echo)
 				["coord"] = { 60.7, 67.5, HALLOWFALL },
@@ -1006,12 +1005,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			--[[
-			q(xx, {	-- Ixlorb the Spinner // didn't fire
-				["provider"] = { "n", 218426 },	-- Ixlorb the Spinner
-				["coord"] = { 57.0, 64.4, HALLOWFALL },
-				["g"] = {
-					-- no loot
-				},
 			}),
 			q(xx, {	--
 				["provider"] = { "n", xxx },	-- Murkshade (another providers is n: xx (Lost Cache))
@@ -1035,23 +1028,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
-			--[[
-			q(xx, {	-- Grimslice // didn't fire
-				["description"] = "Walking around park and can be killed by random ally npcs in area",
-				["provider"] = { "n", 221551 },	-- Grimslice
-				["coord"] = { 35.0, 50.4, HALLOWFALL },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			q(xx, {	--
-				["provider"] = { "n", xxx },	-- Funglour
-				["coord"] = { x, y, HALLOWFALL },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			--]]
 			q(81882, {	-- Pride of Beledar
 				["provider"] = { "n", 221786 },	-- Pride of Beledar
 				["coord"] = { 57.3, 48.6, HALLOWFALL },
@@ -1108,9 +1084,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- During questing
 	q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
 	q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
-	q(81594),	-- [DNT] Complete Tracking Quest (spellID 443002), after turn in questID 78932 (Fickle Fiendish Fish) (could be rp unlock for 'Stay a while and listen' Faerin during Blades of the Arathi? Activation of this dialog didn't fire any quest)
+	--q(81594),	-- [DNT] Complete Tracking Quest (spellID 443002), after turn in questID 78932 (Fickle Fiendish Fish) (could be rp unlock for 'Stay a while and listen' Faerin during Blades of the Arathi? Activation of this dialog didn't fire any quest)
 	q(79971),	-- Stay a while and listen - Alleria Windrunner, during questID 79971 (Nightwatch)
 	q(79706),	-- Stay a while and listen - Faerin Lothar, during questID 79971 (Nightwatch)
+	q(82538),	-- Stay a while and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
 	q(81636),	-- Stay a while and listen - General Steelstrike, after turn in questID 78626 (Spar Day)
 	q(81631),	-- Stay a while and listen - Faerin Lothar, after pick up questID 80049 (The Flame Still Burns)
 	--
@@ -1129,7 +1106,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	--q(),	-- 3rd option / unknown requirements
 	-- Pseudo-treasures / Lore?
 	q(82063),	-- Worn-Down Journal (spellID 446429) // A Worn Down Book @ 25.1, 53.7
-	q(82064),	-- A Weathered Tome (spellID 446439) @ 78.2, 40.3
 	q(82061),	-- Last Flight of The Soundness (spellID 446423) // Captain's Chest @ 25.7, 38.5
 	-- Keyflames
 	q(80005),	-- Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4

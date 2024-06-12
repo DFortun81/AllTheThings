@@ -556,6 +556,7 @@ localize(L.HEADER_NAMES, {
 	[-1000894] = "Archaeology: PH8",
 	[-1000895] = "Archaeology: PH9",
 	[-1000896] = "Archaeology: PH10",
+	[-1000897] = "Archaeology: PH11",
 	[-1000899] = SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE,
 	[-1000900] = "Lost Area",
 	[-1000901] = "Corrupted Area",
@@ -11169,6 +11170,7 @@ _.ObjectModels = {
 	[452710] = 4070769,
 	[453374] = 4681253,
 	[455890] = 1254955,
+	[455914] = 3936818,
 	[455967] = 1310395,
 }
 

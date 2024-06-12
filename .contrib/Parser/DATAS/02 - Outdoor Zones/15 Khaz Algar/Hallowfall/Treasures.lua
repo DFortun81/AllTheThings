@@ -106,7 +106,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["g"] = {
 					i(225335),	-- Smuggler's Key
 					--
-					i(225256),	-- PH_2
+					i(226021),	-- Jar of Pickles
+					--no longer here
+					--i(225256),	-- PH_2
 				},
 			}),
 			o(419695, {	-- Spore-Covered Coffer
@@ -136,6 +138,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["g"] = {
 					i(224578),	-- Arathor Courier's Satchel
 				},
+			}),
+			-- achievement crits
+			o(441637, {	-- A Weathered Tome
+				["coord"] = { 78.2, 40.3, HALLOWFALL },
+				["questID"] = 82064,
 			}),
 		}),
 	}),

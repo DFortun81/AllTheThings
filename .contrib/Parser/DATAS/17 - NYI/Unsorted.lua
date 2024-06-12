@@ -1347,7 +1347,6 @@ root(ROOTS.Unsorted, {
 			i(218449),	-- Forged Aspirant's Knife \\ PH Copy Draconic Aspirant's Knife
 			i(218451),	-- Forged Aspirant's Chopper \\ PH Copy Draconic Aspirant's Chopper
 			i(218452),	-- Forged Aspirant's Wand \\ PH Copy Draconic Aspirant's Wand
-			i(218453),	-- Unusable Fragment
 			i(218455),	-- Totem of the Southern Storm
 			i(218456),	-- Precious Gems
 			i(218457),	-- Special Silk
@@ -4234,7 +4233,6 @@ root(ROOTS.Unsorted, {
 			i(223378),	-- Footguards of the Nerubian Twins
 			i(223379),	-- Nerubian Weaver's Chestplate
 			i(223380),	-- Nerubian Weaver's Chainmail
-			i(223381),	-- Nerubian Weaver's Vest
 			i(223382),	-- Murkshade Grips
 			i(223383),	-- Murkshade Handguards
 			i(223384),	-- Murkshade Gloves
@@ -4243,14 +4241,12 @@ root(ROOTS.Unsorted, {
 			i(223387),	-- Vilewing Chain Helm
 			i(223390),	-- Leggings of Dark Hunger
 			i(223391),	-- Legguards of Dark Hunger
-			i(223393),	-- Deepfiend Spaulders
 			i(223394),	-- Deepfiend Pauldrons
 			i(223395),	-- Deepfiend Shoulderpads
 			i(223396),	-- Deepfiend Shoulder Shells
 			i(223397),	-- Abyssal Hunter's Girdle
 			i(223398),	-- Abyssal Hunter's Sash
 			i(223399),	-- Abyssal Hunter's Chain
-			i(223400),	-- Abyssal Hunter's Cinch
 			i(223402),	-- Corrupted Earthen Wristguards
 			i(223403),	-- Corrupted Earthen Binds
 			i(223406),	-- Slippers of the Nerubian Twins
@@ -5599,7 +5595,6 @@ root(ROOTS.Unsorted, {
 			i(226018),	-- Darkened Arathi Cape
 			i(226019),	-- Darkened Arathi Shoulderguards
 			i(226020),	-- Ancient Titan Salvage
-			i(226021),	-- Jar of Pickles
 			i(226022),	-- Darkmoon Sigil: Evolution
 			i(226023),	-- Darkmoon Sigil: Evolution
 			i(226024),	-- Darkmoon Sigil: Evolution
@@ -5897,7 +5892,6 @@ root(ROOTS.Unsorted, {
 			i(224980),	-- Delver's Dirigible Schematic: Front-Mounted Lantern
 			i(224981),	-- Delver's Dirigible Schematic: Brown Paint
 			i(224982),	-- Delver's Dirigible Schematic: Exhaust
-			i(225066),	-- Trailblazer's Haversack
 			i(225213),	-- Sky-Captain Lancekat's Curse
 			i(225432),	-- Design: Algari Competitor's Signet
 			i(225433),	-- Design: Algari Competitor's Amulet

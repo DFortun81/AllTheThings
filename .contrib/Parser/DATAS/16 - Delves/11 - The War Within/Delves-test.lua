@@ -104,7 +104,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 	m(2302, {	-- The Dread Pit
 		["coord"] = { 74.1, 37.7, THE_RINGING_DEEPS },
 		["g"] = {
-			-- rare was - Treasure Wrath
+			-- rare was - Treasure Wraith (n: 208728)
 			o(455482, {	-- Sturdy Chest
 				["coord"] = { 41.1, 45.5, 2302 },
 				["questID"] = 83677,
@@ -126,7 +126,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 	m(2251, {	-- The Waterworks
 		["coord"] = { 46.3, 48.5, THE_RINGING_DEEPS },
 		["g"] = {
-			-- rare was - murloc, wrath
+			-- rare was - murloc, wraith
 			o(455490, {	-- Sturdy Chest
 				["coord"] = { 48.0, 25.6, 2251 },
 				["questID"] = 83684,
@@ -145,21 +145,104 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 			}),
 		},
 	}),
+	m(2310, {	-- Skittering Breach
+		["coord"] = { 65.5, 61.5, HALLOWFALL },
+		["g"] = {
+			-- rare was - wraith
+			o(455914, {	-- Sturdy Chest
+				["coord"] = { 48.1, 61.8, 2310 },
+				["questID"] = 83679,
+			}),
+			o(455505, {	-- Sturdy Chest
+				["coord"] = { 27.4, 26.4, 2310 },
+				["questID"] = 83660,
+			}),
+			o(455522, {	-- Sturdy Chest
+				["coord"] = { 56.1, 24.1, 2310 },
+				["questID"] = 83696,
+			}),
+			o(455486, {	-- Sturdy Chest
+				["coord"] = { 66.7, 14.5, 2310 },
+				["questID"] = 83680,
+			}),
+		},
+	}),
+	m(2301, {	-- The Sinkhole
+		["coord"] = { 50.6, 53.2, HALLOWFALL },
+		["g"] = {
+			--o(xx, {	-- Sturdy Chest // bugged/uninteractable?
+			--	["coord"] = { 49.8, 40.0, 2301 },
+			--	["questID"] = x,
+			--}),
+			o(455513, {	-- Sturdy Chest
+				["coord"] = { 44.3, 69.9, 2301 },
+				["questID"] = 83668,
+			}),
+			o(455525, {	-- Sturdy Chest
+				["coord"] = { 62.6, 70.3, 2301 },
+				["questID"] = 83700,
+			}),
+			o(455491, {	-- Sturdy Chest
+				["coord"] = { 47.4, 75.4, 2301 },
+				["questID"] = 83685,
+			}),
+		},
+	}),
+	m(2277, {	-- Nightfall Sanctum
+		["coord"] = { 34.6, 46.8, HALLOWFALL },
+		["g"] = {
+			o(455494, {	-- Sturdy Chest
+				["coord"] = { 51.9, 57.0, 2277 },
+				["questID"] = 83688,
+			}),
+			o(454201, {	-- Sturdy Chest
+				["coord"] = { 39.2, 74.4, 2277 },
+				["questID"] = 83454,
+			}),
+			o(455526, {	-- Sturdy Chest
+				["coord"] = { 40.0, 36.7, 2277 },
+				["questID"] = 83701,
+			}),
+		},
+	}),
+	m(2312, {	-- Mycomancer Cavern
+		["coord"] = { 71.1, 31.1, HALLOWFALL },
+		["g"] = {
+			-- rares - wraith and sporecap
+			o(455497, {	-- Sturdy Chest
+				["coord"] = { 63.3, 45.3, 2312 },
+				["questID"] = 83691,
+			}),
+			o(455534, {	-- Sturdy Chest
+				["coord"] = { 50.0, 21.5, 2312 },
+				["questID"] = 83652,
+			}),
+			o(454202, {	-- Sturdy Chest
+				["coord"] = { 68.8, 40.6, 2312 },
+				["questID"] = 83455,
+			}),
+			o(455517, {	-- Sturdy Chest
+				["coord"] = { 40.2, 62.1, 2312 },
+				["questID"] = 83672,
+			}),
+		},
+	}),
 	n(REWARDS, {
 		i(222916),	-- Player Experience (Tier 1-2)
 		i(222917),	-- Player Experience (Tier 3)
 		i(222922),	-- Expeditionary Spoils (Tier 1)
 		i(222923),	-- Expeditionary Spoils (Tier 2)
 		i(225178),	-- Expeditionary Spoils (Tier 3)
-
-		i(221756),	-- Vial of Kaheti Oils (Maybe Only Nerubian Themed Delves?)
-
+		-- Curio
+		i(225900),	-- Light-Touched Idol
 		-- Miscellaneous
 		i(223287),	-- Atomized Salien Slime
 		i(226110),	-- Elemental Fusion Bomb
 		i(225900),	-- Light-Touched Idol
 		i(225249),	-- Rattling Bag'o'gold
 		i(226109),	-- Squirming Swarm Sac
+		--
+		i(221756),	-- Vial of Kaheti Oils(Maybe Only Nerubian Themed Delves?)
 		-- Gear
 		i(211005),	-- Cave Topographer's Drape
 		i(211007),	-- Torchbearer's Greatcloak
@@ -168,12 +251,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 		i(211047),	-- Lapidarius Gemcutter
 		i(211022),	-- Torchbearer's Striders
 		-- Cosmetic
-		i(212172),	-- Ajul'Nerub Raptorial Spine
-
+		i(212172),	-- Ajul'Nerub Raptorial Spine (COSMETIC!) (was looted in Skittering Breach)
+		i(225066),	-- Trailblazer's Haversack (COSMETIC!) (was looted in Nightfall Sanctum)
+		i(212163),	-- Soporific Shroom Cap (COSMETIC!) (was looted in Mycomancer Cavern)
 		-- Rare Treasure Finds?
 		i(226002),	-- Expensive Looking Find (was looted from Sturdy Chest (objectID) 454091)
 		i(226003),	-- Snake Oil (was looted from Sturdy Chest (objectID) 454091, 455496)
 		i(226001),	-- Pure Gold Stein (was looted from Sturdy Chest (objectID) 455489)
 		i(226004),	-- Odlen Text (was looted from Sturdy Chest (objectID) 455495)
+		i(226005),	-- Ancient Tool (was looted from Sturdy Chest (objectID) 455914)
 	}),
 }));
