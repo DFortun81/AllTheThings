@@ -2276,8 +2276,8 @@ root(ROOTS.Zones, {
 							19519,	-- Starving Bog Lord
 						},
 					}),
-					i(29960, {	-- Firefly (PET!)
-						["description"] = "This pet is an extremely rare drop.",
+					i(29960, {	-- Captured Firefly (item) / Firefly (PET!)
+						["description"] = "Teaches you how to summon the pet Firefly. This is an extremely rare drop.",
 						["crs"] = { 20197 },	-- Bogflare Needler
 						["timeline"] = { ADDED_2_1_0 },
 					}),
