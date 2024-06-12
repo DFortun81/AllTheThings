@@ -2416,7 +2416,11 @@ namespace ATT
                 }
                 if (spellEffect.IsLearnedTransmogSet())
                 {
-                    Objects.Merge(data, "tmogSetID", spellEffect.EffectMiscValue_0);
+                    // don't override any custom data... sometimes blizz hotfixes ensembles but we don't get the updated data immediately from wago
+                    if (!data.ContainsKey("tmogSetID"))
+                    {
+                        Objects.Merge(data, "tmogSetID", spellEffect.EffectMiscValue_0);
+                    }
                     Incorporate_EnsembleTransmogSetItems(data);
                 }
             }
@@ -2426,7 +2430,7 @@ namespace ATT
         {
             if (!data.TryGetValue("tmogSetID", out long tmogSetID))
             {
-                LogWarn($"Ensemble Item cannot incorporate Transmog Set", data);
+                LogWarn($"Ensemble Item cannot incorporate Transmog Set due to missing 'tmogSetID'", data);
                 return;
             }
 
