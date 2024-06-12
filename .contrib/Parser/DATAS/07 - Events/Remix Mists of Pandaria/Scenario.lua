@@ -109,7 +109,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214757),	-- Swarmbreaker's Warhelm
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDown({ ["modID"] = 0 }, {
+			d(DIFFICULTY.SCENARIO.NORMAL, bubbleDown({ ["modID"] = 0 }, {
 				n(WEAPONS, {
 					i(215492),	-- Axe of Iron Might
 					i(215752),	-- Ced's Basher
@@ -134,7 +134,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215808),	-- Yak-Herder's Longspear
 				}),
 			})),
-			d(DIFFICULTY.DUNGEON.HEROIC, bubbleDown({ ["modID"] = 0 }, {
+			d(DIFFICULTY.SCENARIO.HEROIC, bubbleDown({ ["modID"] = 0 }, {
 				n(WEAPONS, {
 					i(215615),	-- Amber Blade
 					i(216584),	-- Barrier of the Protectorate

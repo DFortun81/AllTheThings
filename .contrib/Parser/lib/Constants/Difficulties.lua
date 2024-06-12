@@ -1,5 +1,9 @@
 -- Difficulties
 DIFFICULTY = {
+	SCENARIO = {
+		NORMAL = 12,
+		HEROIC = 11,
+	},
 	DUNGEON = {
 		NORMAL = 1,
 		HEROIC = 2,
