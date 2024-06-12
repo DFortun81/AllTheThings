@@ -957,7 +957,6 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 		if oldState ~= 1 then
 			AccountSources[sourceID] = 1;
 			ActiveItemCollectionHelper(sourceID, oldState);
-			app.WipeSearchCache();
 		end
 	end
 end
