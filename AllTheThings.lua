@@ -4864,8 +4864,11 @@ local function CacheInfo(t, field)
 	_t.icon = icon or QUESTION_MARK_ICON;
 	if field then return _t[field]; end
 end
+local function OnUpdateWindows()
+	app.HandleEvent("OnUpdateWindows")
+end
 local function DelayedOnUpdateWindows()
-	AfterCombatOrDelayedCallback(app.HandleEvent, 1, "OnUpdateWindows")
+	AfterCombatOrDelayedCallback(OnUpdateWindows, 1)
 end
 app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", DelayedOnUpdateWindows);
 local fields = {

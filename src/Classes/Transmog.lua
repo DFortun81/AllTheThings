@@ -35,8 +35,8 @@ local C_Item_IsDressableItemByID, GetSlotForInventoryType
 ---@diagnostic disable-next-line: deprecated
 	= C_Item.IsDressableItemByID, C_Transmog.GetSlotForInventoryType
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local L, contains, containsAny, SearchForField, SearchForFieldContainer
-	= app.L, app.contains, app.containsAny, app.SearchForField, app.SearchForFieldContainer;
+local L, contains, containsAny, SearchForField, SearchForFieldContainer, Callback
+	= app.L, app.contains, app.containsAny, app.SearchForField, app.SearchForFieldContainer, app.CallbackHandlers.Callback
 local C_TransmogCollection_GetItemInfo, C_TransmogCollection_GetSourceInfo
 	= C_TransmogCollection.GetItemInfo, C_TransmogCollection.GetSourceInfo;
 local C_TransmogCollection_GetAppearanceSourceInfo, C_TransmogCollection_GetAllAppearanceSources
@@ -300,7 +300,11 @@ local function FilterItemSourceUniqueOnlyMain(sourceInfo, allSources)
 	end
 end
 
-
+-- Wrap calls to the main event handler in a callback so that learning many sources at once
+-- only trigger the main event once
+local function OnTransmogCollected()
+	app.HandleEvent("OnThingCollected", "Transmog")
+end
 -- The following Helper Methods are used when you obtain a new appearance.
 local function CompletionistItemCollectionHelper(sourceID, oldState)
 	-- Get the source info for this source ID.
@@ -325,7 +329,8 @@ local function CompletionistItemCollectionHelper(sourceID, oldState)
 				-- Play a sound when a reportable error is found, if any sound setting is enabled
 				app.Audio:PlayReportSound();
 			end
-			app.HandleEvent("OnThingCollected", "Transmog")
+
+			Callback(OnTransmogCollected)
 		end
 
 		-- Update the groups for the sourceID results
@@ -373,7 +378,7 @@ local function UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				app.Audio:PlayReportSound();
 			end
 			if newCollected then
-				app.HandleEvent("OnThingCollected", "Transmog")
+				Callback(OnTransmogCollected)
 			end
 		end
 
