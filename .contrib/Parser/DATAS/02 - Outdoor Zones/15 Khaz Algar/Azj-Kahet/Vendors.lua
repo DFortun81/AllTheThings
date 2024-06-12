@@ -74,6 +74,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(218193, {	-- Iliani <Enchanting Supplies>
 				["coord"] = { 45.4, 33.3, 2213 },
 				["g"] = {
+					i(223136, {	-- Formula: Enchant Bracers - Chant of Armored Avoidance (RECIPE!)
+						["cost"] = {
+							{"c", 3056, 1500},
+							{"i", ARTISANS_ACUITY, 150},
+						},
+					}),
+					i(223137, {	-- Formula: Enchant Bracers - Chant of Armored Leech (RECIPE!)
+						["cost"] = {
+							{"c", 3056, 1500},
+							{"i", ARTISANS_ACUITY, 150},
+						},
+					}),
 					i(224050, {	-- Web Sparkles: Pretty and Powerful
 						["cost"] = {{"c", 3056, 565}},	--- Kej x565
 					}),

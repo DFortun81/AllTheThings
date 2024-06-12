@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local ENCHANTING_KNOWLEDGE = 2030;
+local DF_ENCHANTING_KNOWLEDGE = 2030;
+local TWW_ENCHANTING_KNOWLEDGE = 2787;
 root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18769),	-- Disenchantment IV
@@ -621,7 +622,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", ENCHANTING_KNOWLEDGE, 1 }} }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", DF_ENCHANTING_KNOWLEDGE, 1 }} }, {
 				r(389547),	-- Burning Devotion
 				r(391302),	-- Crystalline Shatter
 				r(389301),	-- Devotion of Avoidance
@@ -756,7 +757,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				currency(ENCHANTING_KNOWLEDGE),
+				currency(DF_ENCHANTING_KNOWLEDGE),
 			},
 		},{
 			i(198610),	-- Enchanter's Script
@@ -788,6 +789,47 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["coord"] = { 40.6, 60.8, THE_AZURE_SPAN },
 			}),
 		})),
+	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TWW_ENCHANTING_KNOWLEDGE, 1 }} }, {
+				r(445378),	-- Algari Ingenuity
+				r(445403),	-- Authority of Fiery Resolve
+				r(445336),	-- Authority of Storms
+				r(445330),	-- Chant of Armored Speed
+				r(445395),	-- Concentration Concentrate
+				r(445333),	-- Crystalline Radiance
+				r(445388),	-- Cursed Haste
+				r(445396),	-- Defender's March
+				r(445367),	-- Gleeful Glamour - Blood Elf
+				r(445400),	-- Gleeful Glamour - Dark Iron Dwarf
+				r(445391),	-- Gleeful Glamour - Draenei
+				r(445402),	-- Gleeful Glamour - Dwarf
+				r(445362),	-- Gleeful Glamour - Gnome
+				r(445332),	-- Gleeful Glamour - Goblin
+				r(445377),	-- Gleeful Glamour - Highmountain Tauren
+				r(445352),	-- Gleeful Glamour - Human
+				r(445342),	-- Gleeful Glamour - Kul Tiran
+				r(445343),	-- Gleeful Glamour - Lightforged Draenei
+				r(445370),	-- Gleeful Glamour - Mag'har Orc
+				r(445357),	-- Gleeful Glamour - Mechagnome
+				r(445363),	-- Gleeful Glamour - Night Elf
+				r(445390),	-- Gleeful Glamour - Nightborne
+				r(445319),	-- Gleeful Glamour - Orc
+				r(445366),	-- Gleeful Glamour - Tauren
+				r(445326),	-- Gleeful Glamour - Troll
+				r(445350),	-- Gleeful Glamour - Undead
+				r(445356),	-- Gleeful Glamour - Void Elf
+				r(445329),	-- Gleeful Glamour - Vulpera
+				r(445397),	-- Gleeful Glamour - Worgen
+				r(445345),	-- Gleeful Glamour - Zandalari Troll
+				r(445318),	-- Oil of Beledar's Grace
+				r(445372),	-- Runed Ironclaw Rod
+				r(445355),	-- Scepter of Radiant Magics
+				r(445466),	-- Shatter Essence
+			}),
+		}),
 	})),
 })));
 

@@ -706,6 +706,7 @@ SL_ENCHANTING = applyclassicphase(SHADOWLANDS_PHASE_ONE, sharedData({ ["timeline
 DF_ENCHANTING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	r(366255),	-- Dragon Isles Enchanting
 	r(392888, {["collectible"] = false}),	-- Disenchant
+	r(389191),	-- Recraft Equipment
 	n(ARMOR_ENCHANTMENTS, {
 		r(389292),	-- Devotion of Critical Strike
 		r(389293),	-- Devotion of Haste
@@ -727,7 +728,6 @@ DF_ENCHANTING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { AD
 		r(391811),	-- Illusory Adornment: Earth
 		r(390951),	-- Illusory Adornment: Fire
 		r(391809),	-- Illusory Adornment: Frost
-		r(389191),	-- Recraft Equipment
 		r(391806),	-- Scepter of Spectacle: Air
 		r(391807),	-- Scepter of Spectacle: Earth
 		r(391196),	-- Scepter of Spectacle: Fire
@@ -748,3 +748,41 @@ DF_ENCHANTING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { AD
 		r(389546),	-- Wafting Writ
 	}),
 }));
+TWW_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	r(423334),	-- Khaz Algar Enchanting
+	r(455970, {["collectible"] = false}),	-- Disenchant
+	r(425138),	-- Recraft Equipment
+	n(ARMOR_ENCHANTMENTS, {
+		r(445358),	-- Glimmering Critical Strike
+		r(445384),	-- Glimmering Haste
+		r(445381),	-- Glimmering Mastery
+		r(445340),	-- Glimmering Versatility
+		r(445351),	-- Oathsworn Tenacity
+		r(445392),	-- Whisper of Armored Avoidance
+		r(445374),	-- Whisper of Armored Leech
+		r(445376),	-- Whisper of Armored Speed
+		r(445344),	-- Whisper of Silken Avoidance
+		r(445348),	-- Whisper of Silken Leech
+		r(445373),	-- Whisper of Silken Speed
+	}),
+	filter(MISC, {
+		r(445338),	-- Algari Mana Oil
+		r(445382),	-- Gleeful Glamour - Earthen
+		r(445365),	-- Gleeful Glamour - Pandaren
+		r(445360),	-- Illusory Adornment: Runes
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(445361),	-- Runed Bismuth Rod
+	}),
+	filter(REAGENTS, {
+		r(445371),	-- Mirror Powder
+	}),
+	n(WEAPONS, {
+		r(445324),	-- Enchanted Spearwood Wand
+	}),
+	n(WEAPON_ENCHANTMENTS, {
+		r(445379),	-- Council's Guile
+		r(445385),	-- Stonebound Artistry
+		r(445317),	-- Stormrider's Fury
+	}),
+});

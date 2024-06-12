@@ -100,6 +100,20 @@ root(ROOTS.Unsorted, {
 				prof(ALCHEMY, {
 					i(223080),	-- Recipe: Algari Alchemist Stone (RECIPE!)
 				}),
+				prof(ENCHANTING, {
+					i(223113),	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
+					i(223114),	-- Formula: Enchant Boots - Scout's March (RECIPE!)
+					i(223127),	-- Formula: Enchant Chest - Council's Intellect (RECIPE!)
+					i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
+					i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
+					i(223139),	-- Formula: Enchant Cloak - Chant of Leeching Fangs (RECIPE!)
+					i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
+					i(223119),	-- Formula: Enchant Weapon - Authority of Air (RECIPE!)
+					i(223133),	-- Formula: Illusory Adornment: Crystal (RECIPE!)
+					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
+					i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
+					i(223125),	-- Formula: Oil of Deep Toxins (RECIPE!)
+				}),
 			}),
 			i(206134),	-- Potion of Healing
 			i(206211),	-- Onyx Annulet
@@ -4130,38 +4144,6 @@ root(ROOTS.Unsorted, {
 			i(223110),	-- Pattern: Arathi Leatherworker's Smock
 			i(223111),	-- Pattern: Deep Tracker's Cap
 			i(223112),	-- Pattern: Deep Tracker's Pack
-			i(223113),	-- Formula: Enchant Boots - Cavalry's March
-			i(223114),	-- Formula: Enchant Boots - Scout's March
-			i(223115),	-- Formula: Enchant Ring - Radiant Critical Strike
-			i(223116),	-- Formula: Enchant Ring - Radiant Haste
-			i(223117),	-- Formula: Enchant Ring - Radiant Mastery
-			i(223118),	-- Formula: Enchant Ring - Radiant Versatility
-			i(223119),	-- Formula: Enchant Weapon - Authority of Air
-			i(223120),	-- Formula: Enchant Weapon - Authority of Radiant Power
-			i(223121),	-- Formula: Enchanted Weathered Harbinger Crest
-			i(223122),	-- Formula: Enchanted Runed Harbinger Crest
-			i(223123),	-- Formula: Enchanted Gilded Harbinger Crest
-			i(223124),	-- Formula: Runed Null Stone Rod
-			i(223125),	-- Formula: Oil of Deep Toxins \\ Formula: Weapon Oil 3
-			i(223126),	-- Formula: Enchant Chest - Stormrider's Agility
-			i(223127),	-- Formula: Enchant Chest - Council's Intellect
-			i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength
-			i(223129),	-- Formula: Enchant Tool - Algari Deftness \\ Formula: Enchant Tool - Algarian Deftness
-			i(223130),	-- Formula: Enchant Tool - Algari Finesse \\ Formula: Enchant Tool - Algarian Finesse
-			i(223131),	-- Formula: Enchant Tool - Algari Perception \\ Formula: Enchant Tool - Algarian Perception
-			i(223132),	-- Formula: Enchant Tool - Algari Resourcefulness \\ Formula: Enchant Tool - Algarian Resourcefulness
-			i(223133),	-- Formula: Illusory Adornment: Crystal
-			i(223134),	-- Formula: Illusory Adornment: Radiance
-			i(223135),	-- Formula: Illusory Adornment: Shadow
-			i(223136),	-- Formula: Enchant Bracers - Chant of Armored Avoidance \\ Formula: Enchant Bracers - Chant of Avoidance
-			i(223137),	-- Formula: Enchant Bracers - Chant of Armored Leech \\ Formula: Enchant Bracers - Chant of Leech
-			i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace \\ Formula: Enchant Cloak - Chant of Avoidance
-			i(223139),	-- Formula: Enchant Cloak - Chant of Leeching Fangs \\ Formula: Enchant Cloak - Chant of Leech
-			i(223140),	-- Formula: Enchant Cloak - Chant of Burrowing Rapidity \\ Formula: Enchant Cloak - Chant of Speed
-			i(223141),	-- Formula: Enchant Ring - Cursed Critical Strike
-			i(223142),	-- Formula: Enchant Ring - Cursed Mastery
-			i(223143),	-- Formula: Enchant Ring - Cursed Versatility
-			i(223144),	-- Formula: Enchant Weapon - Authority of the Depths
 			i(223152),	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
 			i(223154),	-- [PH] Firebee Mount (White Skin, White Saddle)
 			i(223157),	-- Blacksmith's Breastplate
@@ -4312,7 +4294,6 @@ root(ROOTS.Unsorted, {
 			i(223588),	-- Algari Fighting Knife
 			i(223616),	-- Forged Gladiator's Tabard \\ [PH] 11.0 PVP - Gladiator's Tabard
 			i(223617),	-- Forged Gladiator's Prestigious Cloak \\ [PH] 11.0 Gladiator's Prestigious Cloak
-			i(223618),	-- Enchant Boots - Cavalry's March
 			i(223627),	-- Scout's Dog Tags
 			i(223628),	-- Marksman's Dog Tags
 			i(223629),	-- Marksman's War-Chain
@@ -4327,151 +4308,6 @@ root(ROOTS.Unsorted, {
 			i(223644),	-- Memory of Kalimdor
 			i(223645),	-- Essence of the Eastern Kingdoms
 			i(223646),	-- Memory of the  Eastern Kingdoms \\ Memory ofthe  Eastern Kingdoms
-			i(223649),	-- Enchant Boots - Cavalry's March
-			i(223650),	-- Enchant Boots - Cavalry's March
-			i(223651),	-- Enchant Boots - Scout's March
-			i(223652),	-- Enchant Boots - Scout's March
-			i(223653),	-- Enchant Boots - Scout's March
-			i(223654),	-- Enchant Boots - Defender's March
-			i(223655),	-- Enchant Boots - Defender's March
-			i(223656),	-- Enchant Boots - Defender's March
-			i(223657),	-- Enchant Ring - Glimmering Critical Strike
-			i(223658),	-- Enchant Ring - Glimmering Critical Strike
-			i(223659),	-- Enchant Ring - Glimmering Critical Strike
-			i(223660),	-- Enchant Ring - Radiant Critical Strike
-			i(223661),	-- Enchant Ring - Radiant Critical Strike
-			i(223662),	-- Enchant Ring - Radiant Critical Strike
-			i(223663),	-- Enchant Ring - Glimmering Haste
-			i(223664),	-- Enchant Ring - Glimmering Haste
-			i(223665),	-- Enchant Ring - Glimmering Haste
-			i(223666),	-- Enchant Ring - Glimmering Mastery
-			i(223667),	-- Enchant Ring - Glimmering Mastery
-			i(223668),	-- Enchant Ring - Glimmering Mastery
-			i(223670),	-- Enchant Ring - Glimmering Versatility
-			i(223671),	-- Enchant Ring - Glimmering Versatility
-			i(223672),	-- Enchant Ring - Radiant Haste
-			i(223673),	-- Enchant Ring - Radiant Haste
-			i(223674),	-- Enchant Ring - Radiant Haste
-			i(223675),	-- Enchant Ring - Radiant Mastery
-			i(223676),	-- Enchant Ring - Radiant Mastery
-			i(223677),	-- Enchant Ring - Radiant Mastery
-			i(223678),	-- Enchant Ring - Radiant Versatility
-			i(223679),	-- Enchant Ring - Radiant Versatility
-			i(223680),	-- Enchant Ring - Radiant Versatility
-			i(223681),	-- Enchant Chest - Stormrider's Agility
-			i(223682),	-- Enchant Chest - Stormrider's Agility
-			i(223683),	-- Enchant Chest - Stormrider's Agility
-			i(223684),	-- Enchant Chest - Council's Intellect
-			i(223685),	-- Enchant Chest - Council's Intellect
-			i(223686),	-- Enchant Chest - Council's Intellect
-			i(223687),	-- Enchant Chest - Oathsworn's Strength
-			i(223688),	-- Enchant Chest - Oathsworn's Strength
-			i(223689),	-- Enchant Chest - Oathsworn's Strength
-			i(223690),	-- Enchant Chest - Crystalline Radiance
-			i(223691),	-- Enchant Chest - Crystalline Radiance
-			i(223692),	-- Enchant Chest - Crystalline Radiance
-			i(223693),	-- Enchant Tool - Algari Deftness \\ Enchant Tool - Algarian Deftness
-			i(223694),	-- Enchant Tool - Algari Deftness \\ Enchant Tool - Algarian Deftness
-			i(223695),	-- Enchant Tool - Algari Deftness \\ Enchant Tool - Algarian Deftness
-			i(223696),	-- Enchant Tool - Algari Finesse \\ Enchant Tool - Algarian Finesse
-			i(223697),	-- Enchant Tool - Algari Finesse \\ Enchant Tool - Algarian Finesse
-			i(223698),	-- Enchant Tool - Algari Finesse \\ Enchant Tool - Algarian Finesse
-			i(223699),	-- Enchant Tool - Algari Ingenuity \\ Enchant Tool - Algarian Ingenuity
-			i(223700),	-- Enchant Tool - Algari Ingenuity \\ Enchant Tool - Algarian Ingenuity
-			i(223701),	-- Enchant Tool - Algari Ingenuity \\ Enchant Tool - Algarian Ingenuity
-			i(223702),	-- Enchant Tool - Algari Perception \\ Enchant Tool - Algarian Perception
-			i(223703),	-- Enchant Tool - Algari Perception \\ Enchant Tool - Algarian Perception
-			i(223704),	-- Enchant Tool - Algari Perception \\ Enchant Tool - Algarian Perception
-			i(223705),	-- Enchant Tool - Algari Resourcefulness \\ Enchant Tool - Algarian Resourcefulness
-			i(223706),	-- Enchant Tool - Algari Resourcefulness \\ Enchant Tool - Algarian Resourcefulness
-			i(223707),	-- Enchant Tool - Algari Resourcefulness \\ Enchant Tool - Algarian Resourcefulness
-			i(223708),	-- Enchant Bracer - Whisper of Armored Avoidance \\ Enchant Bracer - Whisper of Avoidance
-			i(223709),	-- Enchant Bracer - Whisper of Armored Avoidance \\ Enchant Bracer - Whisper of Avoidance
-			i(223710),	-- Enchant Bracer - Whisper of Armored Avoidance \\ Enchant Bracer - Whisper of Avoidance
-			i(223711),	-- Enchant Bracer - Chant of Armored Avoidance \\ Enchant Bracer - Chant of Avoidance
-			i(223712),	-- Enchant Bracer - Chant of Armored Avoidance \\ Enchant Bracer - Chant of Avoidance
-			i(223713),	-- Enchant Bracer - Chant of Armored Avoidance \\ Enchant Bracer - Chant of Avoidance
-			i(223714),	-- Enchant Bracer - Whisper of Armored Leech \\ Enchant Bracer - Whisper of Leech
-			i(223715),	-- Enchant Bracer - Whisper of Armored Leech \\ Enchant Bracer - Whisper of Leech
-			i(223716),	-- Enchant Bracer - Whisper of Armored Leech \\ Enchant Bracer - Whisper of Leech
-			i(223717),	-- Enchant Bracer - Chant of Armored Leech \\ Enchant Bracer - Chant of Leech
-			i(223718),	-- Enchant Bracer - Chant of Armored Leech \\ Enchant Bracer - Chant of Leech
-			i(223719),	-- Enchant Bracer - Chant of Armored Leech \\ Enchant Bracer - Chant of Leech
-			i(223720),	-- Enchant Bracer - Whisper of Armored Speed \\ Enchant Bracer - Whisper of Speed
-			i(223721),	-- Enchant Bracer - Whisper of Armored Speed \\ Enchant Bracer - Whisper of Speed
-			i(223722),	-- Enchant Bracer - Whisper of Armored Speed \\ Enchant Bracer - Whisper of Speed
-			i(223723),	-- Enchant Bracer - Chant of Armored Speed \\ Enchant Bracer - Chant of Speed
-			i(223724),	-- Enchant Bracer - Chant of Armored Speed \\ Enchant Bracer - Chant of Speed
-			i(223725),	-- Enchant Bracer - Chant of Armored Speed \\ Enchant Bracer - Chant of Speed
-			i(223726),	-- Enchant Cloak - Whisper of Silken Avoidance \\ Enchant Cloak - Whisper of Avoidance
-			i(223727),	-- Enchant Cloak - Whisper of Silken Avoidance \\ Enchant Cloak - Whisper of Avoidance
-			i(223728),	-- Enchant Cloak - Whisper of Silken Avoidance \\ Enchant Cloak - Whisper of Avoidance
-			i(223729),	-- Enchant Cloak - Chant of Winged Grace \\ Enchant Cloak - Chant of Avoidance
-			i(223730),	-- Enchant Cloak - Chant of Winged Grace \\ Enchant Cloak - Chant of Avoidance
-			i(223731),	-- Enchant Cloak - Chant of Winged Grace \\ Enchant Cloak - Chant of Avoidance
-			i(223732),	-- Enchant Cloak - Whisper of Silken Leech \\ Enchant Cloak - Whisper of Leech
-			i(223733),	-- Enchant Cloak - Whisper of Silken Leech \\ Enchant Cloak - Whisper of Leech
-			i(223734),	-- Enchant Cloak - Whisper of Silken Leech \\ Enchant Cloak - Whisper of Leech
-			i(223735),	-- Enchant Cloak - Chant of Leeching Fangs \\ Enchant Cloak - Chant of Leech
-			i(223736),	-- Enchant Cloak - Chant of Leeching Fangs \\ Enchant Cloak - Chant of Leech
-			i(223737),	-- Enchant Cloak - Chant of Leeching Fangs \\ Enchant Cloak - Chant of Leech
-			i(223738),	-- Enchant Cloak - Whisper of Silken Speed \\ Enchant Cloak - Whisper of Speed
-			i(223739),	-- Enchant Cloak - Whisper of Silken Speed \\ Enchant Cloak - Whisper of Speed
-			i(223740),	-- Enchant Cloak - Whisper of Silken Speed \\ Enchant Cloak - Whisper of Speed
-			i(223745),	-- Illusory Adornment: Crystal
-			i(223746),	-- Illusory Adornment: Crystal
-			i(223747),	-- Illusory Adornment: Crystal
-			i(223748),	-- Illusory Adornment: Radiance
-			i(223749),	-- Illusory Adornment: Radiance
-			i(223750),	-- Illusory Adornment: Radiance
-			i(223751),	-- Illusory Adornment: Runes
-			i(223752),	-- Illusory Adornment: Runes
-			i(223753),	-- Illusory Adornment: Runes
-			i(223754),	-- Illusory Adornment: Shadow
-			i(223755),	-- Illusory Adornment: Shadow
-			i(223756),	-- Illusory Adornment: Shadow
-			i(223757),	-- Enchant Weapon - Council's Guile
-			i(223758),	-- Enchant Weapon - Council's Guile
-			i(223759),	-- Enchant Weapon - Council's Guile
-			i(223760),	-- Enchant Weapon - Stormrider's Fury
-			i(223761),	-- Enchant Weapon - Stormrider's Fury
-			i(223762),	-- Enchant Weapon - Stormrider's Fury
-			i(223763),	-- Enchant Weapon - Stonebound Artistry
-			i(223764),	-- Enchant Weapon - Stonebound Artistry
-			i(223765),	-- Enchant Weapon - Stonebound Artistry
-			i(223766),	-- Enchant Weapon - Oathsworn Tenacity
-			i(223767),	-- Enchant Weapon - Oathsworn Tenacity
-			i(223768),	-- Enchant Weapon - Oathsworn Tenacity
-			i(223770),	-- Enchant Weapon - Authority of Storms
-			i(223771),	-- Enchant Weapon - Authority of Storms
-			i(223772),	-- Enchant Weapon - Authority of Storms
-			i(223773),	-- Enchant Weapon - Authority of Air
-			i(223774),	-- Enchant Weapon - Authority of Air
-			i(223775),	-- Enchant Weapon - Authority of Air
-			i(223776),	-- Enchant Weapon - Authority of Fiery Resolve
-			i(223777),	-- Enchant Weapon - Authority of Fiery Resolve
-			i(223778),	-- Enchant Weapon - Authority of Fiery Resolve
-			i(223779),	-- Enchant Weapon - Authority of Radiant Power
-			i(223780),	-- Enchant Weapon - Authority of Radiant Power
-			i(223781),	-- Enchant Weapon - Authority of Radiant Power
-			i(223782),	-- Enchant Weapon - Authority of the Depths
-			i(223783),	-- Enchant Weapon - Authority of the Depths
-			i(223784),	-- Enchant Weapon - Authority of the Depths
-			i(223785),	-- Enchant Ring - Cursed Critical Strike
-			i(223786),	-- Enchant Ring - Cursed Critical Strike
-			i(223787),	-- Enchant Ring - Cursed Critical Strike
-			i(223788),	-- Enchant Ring - Cursed Haste
-			i(223789),	-- Enchant Ring - Cursed Haste
-			i(223790),	-- Enchant Ring - Cursed Haste
-			i(223791),	-- Enchant Ring - Cursed Mastery
-			i(223792),	-- Enchant Ring - Cursed Mastery
-			i(223793),	-- Enchant Ring - Cursed Mastery
-			i(223794),	-- Enchant Ring - Cursed Versatility
-			i(223795),	-- Enchant Ring - Cursed Versatility
-			i(223796),	-- Enchant Ring - Cursed Versatility
-			i(223798),	-- Enchant Cloak - Chant of Burrowing Rapidity \\ Enchant Cloak - Chant of Speed
-			i(223799),	-- Enchant Cloak - Chant of Burrowing Rapidity \\ Enchant Cloak - Chant of Speed
-			i(223800),	-- Enchant Cloak - Chant of Burrowing Rapidity \\ Enchant Cloak - Chant of Speed
 			i(223804),	-- [DNT] Zone 1 Placeholder Treasure
 			i(223805),	-- Bag Test A
 			i(223806),	-- Bag Test B
@@ -4647,9 +4483,6 @@ root(ROOTS.Unsorted, {
 			i(224066),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Skinning
 			i(224067),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Tailoring
 			i(224068),	-- Professor Instructaur's Brain Pertaining to Khaz Algar
-			i(224069),	-- Enchanted Weathered Harbinger Crest
-			i(224072),	-- Enchanted Runed Harbinger Crest
-			i(224073),	-- Enchanted Gilded Harbinger Crest
 			i(224084),	-- Tentacled Hat
 			i(224085),	-- Hightfish Cap
 			i(224086),	-- Nat's Drinking Hat
@@ -4666,18 +4499,6 @@ root(ROOTS.Unsorted, {
 			i(224097),	-- Lucky Fishing Hat
 			i(224100),	-- Bottomless Bag of Khaz Algar General Goods
 			i(224104),	-- Flashfire Thurible
-			i(224105),	-- Algari Mana Oil \\ Algarian Mana Oil
-			i(224106),	-- Algari Mana Oil \\ Algarian Mana Oil
-			i(224107),	-- Algari Mana Oil \\ Algarian Mana Oil
-			i(224108),	-- Oil of Beledar's Grace \\ Oil of Beladar's Grace
-			i(224109),	-- Oil of Beledar's Grace \\ Oil of Beladar's Grace
-			i(224110),	-- Oil of Beledar's Grace \\ Oil of Beladar's Grace
-			i(224111),	-- Oil of Deep Toxins \\ Oil of Deepening Shadows
-			i(224112),	-- Oil of Deep Toxins \\ Oil of Deepening Shadows
-			i(224113),	-- Oil of Deep Toxins \\ Oil of Deepening Shadows
-			i(224114),	-- Runed Bismuth Rod
-			i(224115),	-- Runed Ironclaw Rod
-			i(224116),	-- Runed Null Stone Rod
 			i(224117),	-- Ghoulfish Delight
 			i(224118),	-- Nightshade Letter
 			i(224119),	-- Electric Eel
@@ -4692,12 +4513,6 @@ root(ROOTS.Unsorted, {
 			i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
 			i(224170),	-- Wildercloth Fishing Cap
 			i(224171),	-- Master's Wildercloth Fishing Cap
-			i(224173),	-- Concentration Concentrate
-			i(224174),	-- Concentration Concentrate
-			i(224175),	-- Concentration Concentrate
-			i(224176),	-- Mirror Powder
-			i(224177),	-- Mirror Powder
-			i(224178),	-- Mirror Powder
 			i(224179),	-- Swamplogged Letter
 			i(224180),	-- Worn Journal
 			i(224181),	-- Companion Experience
@@ -4781,8 +4596,6 @@ root(ROOTS.Unsorted, {
 			i(224395),	-- Secret Garlic
 			i(224396),	-- Mangled Taro
 			i(224397),	-- Pristine Taro
-			i(224404),	-- Enchanted Spearwood Wand
-			i(224405),	-- Scepter of Radiant Magics
 			i(224411),	-- Companion Experience
 			i(224412),	-- Companion Experience
 			i(224413),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
@@ -5470,78 +5283,6 @@ root(ROOTS.Unsorted, {
 			i(225911),	-- Cinderbee Belly
 			i(225912),	-- Hot Honeycomb
 			i(216696),	-- Hidden Pants
-			i(224300),	-- Gleeful Glamour - Blood Elf
-			i(224301),	-- Gleeful Glamour - Dark Iron Dwarf
-			i(224302),	-- Gleeful Glamour - Draenei
-			i(224303),	-- Gleeful Glamour - Dwarf
-			i(224304),	-- Gleeful Glamour - Earthen
-			i(224305),	-- Gleeful Glamour - Gnome
-			i(224306),	-- Gleeful Glamour - Goblin
-			i(224307),	-- Gleeful Glamour - Highmountain Tauren
-			i(224308),	-- Gleeful Glamour - Human
-			i(224309),	-- Gleeful Glamour - Kul Tiran
-			i(224310),	-- Gleeful Glamour - Lightforged Draenei
-			i(224311),	-- Gleeful Glamour - Mag'har Orc
-			i(224312),	-- Gleeful Glamour - Mechagnome
-			i(224313),	-- Gleeful Glamour - Night Elf
-			i(224314),	-- Gleeful Glamour - Nightborne
-			i(224315),	-- Gleeful Glamour - Orc
-			i(224316),	-- Gleeful Glamour - Pandaren
-			i(224317),	-- Gleeful Glamour - Tauren
-			i(224318),	-- Gleeful Glamour - Troll
-			i(224319),	-- Gleeful Glamour - Undead
-			i(224320),	-- Gleeful Glamour - Void Elf
-			i(224321),	-- Gleeful Glamour - Vulpera
-			i(224322),	-- Gleeful Glamour - Worgen
-			i(224323),	-- Gleeful Glamour - Zaldalari Troll
-			i(224324),	-- Gleeful Glamour - Blood Elf
-			i(224325),	-- Gleeful Glamour - Dark Iron Dwarf
-			i(224326),	-- Gleeful Glamour - Draenei
-			i(224327),	-- Gleeful Glamour - Dwarf
-			i(224328),	-- Gleeful Glamour - Earthen
-			i(224329),	-- Gleeful Glamour - Gnome
-			i(224330),	-- Gleeful Glamour - Goblin
-			i(224331),	-- Gleeful Glamour - Highmountain Tauren
-			i(224332),	-- Gleeful Glamour - Human
-			i(224333),	-- Gleeful Glamour - Kul Tiran
-			i(224334),	-- Gleeful Glamour - Lightforged Draenei
-			i(224335),	-- Gleeful Glamour - Mag'har Orc
-			i(224336),	-- Gleeful Glamour - Mechagnome
-			i(224337),	-- Gleeful Glamour - Night Elf
-			i(224338),	-- Gleeful Glamour - Nightborne
-			i(224339),	-- Gleeful Glamour - Orc
-			i(224340),	-- Gleeful Glamour - Pandaren
-			i(224341),	-- Gleeful Glamour - Tauren
-			i(224342),	-- Gleeful Glamour - Troll
-			i(224343),	-- Gleeful Glamour - Undead
-			i(224344),	-- Gleeful Glamour - Void Elf
-			i(224345),	-- Gleeful Glamour - Vulpera
-			i(224346),	-- Gleeful Glamour - Worgen
-			i(224347),	-- Gleeful Glamour - Zaldalari Troll
-			i(224348),	-- Gleeful Glamour - Blood Elf
-			i(224349),	-- Gleeful Glamour - Dark Iron Dwarf
-			i(224350),	-- Gleeful Glamour - Draenei
-			i(224351),	-- Gleeful Glamour - Dwarf
-			i(224352),	-- Gleeful Glamour - Earthen
-			i(224353),	-- Gleeful Glamour - Gnome
-			i(224354),	-- Gleeful Glamour - Goblin
-			i(224355),	-- Gleeful Glamour - Highmountain Tauren
-			i(224356),	-- Gleeful Glamour - Human
-			i(224357),	-- Gleeful Glamour - Kul Tiran
-			i(224358),	-- Gleeful Glamour - Lightforged Draenei
-			i(224359),	-- Gleeful Glamour - Mag'har Orc
-			i(224360),	-- Gleeful Glamour - Mechagnome
-			i(224361),	-- Gleeful Glamour - Night Elf
-			i(224362),	-- Gleeful Glamour - Nightborne
-			i(224363),	-- Gleeful Glamour - Orc
-			i(224364),	-- Gleeful Glamour - Pandaren
-			i(224365),	-- Gleeful Glamour - Tauren
-			i(224366),	-- Gleeful Glamour - Troll
-			i(224367),	-- Gleeful Glamour - Undead
-			i(224368),	-- Gleeful Glamour - Void Elf
-			i(224369),	-- Gleeful Glamour - Vulpera
-			i(224370),	-- Gleeful Glamour - Worgen
-			i(224371),	-- Gleeful Glamour - Zaldalari Troll
 			i(225927),	-- Emerald Necakle
 			i(225930),	-- Glimmering Crystal
 			i(225933),	-- Forged Legend's Pennant

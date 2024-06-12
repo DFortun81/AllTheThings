@@ -1263,3 +1263,100 @@ i(0, 422338);		-- Shalasar's Sophic Vellum
 i(0, 429947);		-- Enchanted Aspect's Awakened Crest [Shared Item]
 i(0, 429948);		-- Enchanted Whelpling's Awakened Crest [Shared Item]
 i(0, 429945);		-- Enchanted Wyrm's Awakened Crest [Shared Item]
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+i(0, 423334);		-- Khaz Algar Enchanting
+i(0, 455970);		-- Disenchant [The War Within]
+i(0, 445338);		-- Algari Mana Oil
+i(0, 445379);		-- Council's Guile
+i(0, 445324);		-- Enchanted Spearwood Wand
+i(0, 445382);		-- Gleeful Glamour - Earthen
+i(0, 445365);		-- Gleeful Glamour - Pandaren
+i(0, 445358);		-- Glimmering Critical Strike
+i(0, 445384);		-- Glimmering Haste
+i(0, 445381);		-- Glimmering Mastery
+i(0, 445340);		-- Glimmering Versatility
+i(0, 445360);		-- Illusory Adornment: Runes
+i(0, 445371);		-- Mirror Powder
+i(0, 445351);		-- Oathsworn Tenacity
+i(0, 425138);		-- Recraft Equipment
+i(0, 445361);		-- Runed Bismuth Rod
+i(0, 445385);		-- Stonebound Artistry
+i(0, 445317);		-- Stormrider's Fury
+i(0, 445392);		-- Whisper of Armored Avoidance
+i(0, 445374);		-- Whisper of Armored Leech
+i(0, 445376);		-- Whisper of Armored Speed
+i(0, 445344);		-- Whisper of Silken Avoidance
+i(0, 445348);		-- Whisper of Silken Leech
+i(0, 445373);		-- Whisper of Silken Speed
+--- ITEM ---
+i(223129, 445364);	-- Algari Deftness
+i(223130, 445328);	-- Algari Finesse
+i(223131, 445380);	-- Algari Perception
+i(223132, 445398);	-- Algari Resourcefulness
+i(223120, 445339);	-- Authority of Radiant Power
+i(223144, 445341);	-- Authority of the Depths
+i(223136, 445334);	-- Chant of Armored Avoidance
+i(223137, 445325);	-- Chant of Armored Leech
+i(223140, 445389);	-- Chant of Burrowing Rapidity
+i(223141, 445394);	-- Cursed Critical Strike
+i(223142, 445359);	-- Cursed Mastery
+i(223143, 445383);	-- Cursed Versatility
+i(223123, 445354);	-- Enchanted Gilded Harbinger Crest
+i(223122, 445347);	-- Enchanted Runed Harbinger Crest
+i(223121, 445399);	-- Enchanted Weathered Harbinger Crest
+i(223115, 445387);	-- Radiant Critical Strike
+i(223115, 445320);	-- Radiant Haste
+i(223115, 445375);	-- Radiant Mastery
+i(223115, 445349);	-- Radiant Versatility
+i(223124, 445323);	-- Runed Null Stone Rod
+--- SPECIALIZATION ---
+i(0, 445378);		-- Algari Ingenuity
+i(0, 445403);		-- Authority of Fiery Resolve
+i(0, 445336);		-- Authority of Storms
+i(0, 445330);		-- Chant of Armored Speed
+i(0, 445395);		-- Concentration Concentrate
+i(0, 445333);		-- Crystalline Radiance
+i(0, 445388);		-- Cursed Haste
+i(0, 445396);		-- Defender's March
+i(0, 445367);		-- Gleeful Glamour - Blood Elf
+i(0, 445400);		-- Gleeful Glamour - Dark Iron Dwarf
+i(0, 445391);		-- Gleeful Glamour - Draenei
+i(0, 445402);		-- Gleeful Glamour - Dwarf
+i(0, 445362);		-- Gleeful Glamour - Gnome
+i(0, 445332);		-- Gleeful Glamour - Goblin
+i(0, 445377);		-- Gleeful Glamour - Highmountain Tauren
+i(0, 445352);		-- Gleeful Glamour - Human
+i(0, 445342);		-- Gleeful Glamour - Kul Tiran
+i(0, 445343);		-- Gleeful Glamour - Lightforged Draenei
+i(0, 445370);		-- Gleeful Glamour - Mag'har Orc
+i(0, 445357);		-- Gleeful Glamour - Mechagnome
+i(0, 445363);		-- Gleeful Glamour - Night Elf
+i(0, 445390);		-- Gleeful Glamour - Nightborne
+i(0, 445319);		-- Gleeful Glamour - Orc
+i(0, 445366);		-- Gleeful Glamour - Tauren
+i(0, 445326);		-- Gleeful Glamour - Troll
+i(0, 445350);		-- Gleeful Glamour - Undead
+i(0, 445356);		-- Gleeful Glamour - Void Elf
+i(0, 445329);		-- Gleeful Glamour - Vulpera
+i(0, 445397);		-- Gleeful Glamour - Worgen
+i(0, 445345);		-- Gleeful Glamour - Zandalari Troll
+i(0, 445318);		-- Oil of Beledar's Grace
+i(0, 445372);		-- Runed Ironclaw Rod
+i(0, 445355);		-- Scepter of Radiant Magics
+i(0, 445466);		-- Shatter Essence
+-- Unknown
+i(223119, 445331);	-- Authority of Air
+i(223113, 445335);	-- Cavalry's March
+i(223139, 445393);	-- Chant of Leeching Fangs
+i(223138, 445386);	-- Chant of Winged Grace
+i(223127, 445322);	-- Council's Intellect
+i(223133, 445327);	-- Illusory Adornment: Crystal
+i(223134, 445401);	-- Illusory Adornment: Radiance
+i(223135, 445337);	-- Illusory Adornment: Shadow
+i(223128, 445321);	-- Oathsworn's Strength
+i(223125, 445346);	-- Oil of Deep Toxins
+i(223114, 445368);	-- Scout's March
+i(223126, 445353);	-- Stormrider's Agility

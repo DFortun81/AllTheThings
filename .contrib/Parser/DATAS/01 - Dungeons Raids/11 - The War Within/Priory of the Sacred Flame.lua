@@ -36,6 +36,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2573, {	-- Prioress Murrpray
 					["crs"] = { 207940 },	-- Prioress Murrpray
 					["g"] = {
+						i(223115),	-- Formula: Enchant Ring - Radiant Critical Strike (RECIPE!)
+						i(223116),	-- Formula: Enchant Ring - Radiant Haste (RECIPE!)
+						i(223117),	-- Formula: Enchant Ring - Radiant Mastery (RECIPE!)
+						i(223118),	-- Formula: Enchant Ring - Radiant Versatility (RECIPE!)
+						i(223120),	-- Formula: Enchant Weapon - Authority of Radiant Power (RECIPE!)
 						i(219310),	-- Bursting Lightshard
 						i(221129),	-- Divine Pyrewalkers
 						i(221131),	-- Elysian Flame Crown

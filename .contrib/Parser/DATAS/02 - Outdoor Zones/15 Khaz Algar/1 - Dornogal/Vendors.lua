@@ -4,6 +4,26 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(DORNOGAL, {
 		n(VENDORS, {
+			n(219051, {	-- Lyrendal <Artisan's Consortium Quartermaster>
+				--["coord"] = { 52.1, 42.2, DORNOGAL },
+				["g"] = {
+					i(223129, {	-- Formula: Enchant Tool - Algari Deftness (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223130, {	-- Formula: Enchant Tool - Algari Finesse (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223131, {	-- Formula: Enchant Tool - Algari Perception (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223132, {	-- Formula: Enchant Tool - Algari Resourcefulness (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223124, {	-- Formula: Runed Null Stone Rod (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+				},
+			}),
 			n(219226, {	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
 				["g"] = {

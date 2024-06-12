@@ -22,7 +22,7 @@ local function FirstSkin(questID, creatureID, added, group)
 end
 
 root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
-	i(210814),	-- Artisan's Acuity
+	i(ARTISANS_ACUITY),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			spell(430345, {	-- Meticulous Experimentation
@@ -296,10 +296,104 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	}),
 	prof(COOKING, {
 	}),
+	--]]
 	prof(ENCHANTING, {
-		spell(, {	-- Disenchant
+		spell(455970, {	-- Disenchant
 		}),
 		n(ARMOR_ENCHANTMENTS, {
+			i(223618),	-- Enchant Boots - Cavalry's March+
+			i(223649),	-- Enchant Boots - Cavalry's March++
+			i(223650),	-- Enchant Boots - Cavalry's March+++
+			i(223654),	-- Enchant Boots - Defender's March+
+			i(223655),	-- Enchant Boots - Defender's March++
+			i(223656),	-- Enchant Boots - Defender's March+++
+			i(223651),	-- Enchant Boots - Scout's March+
+			i(223652),	-- Enchant Boots - Scout's March++
+			i(223653),	-- Enchant Boots - Scout's March+++
+			i(223711),	-- Enchant Bracer - Chant of Armored Avoidance+
+			i(223712),	-- Enchant Bracer - Chant of Armored Avoidance++
+			i(223713),	-- Enchant Bracer - Chant of Armored Avoidance+++
+			i(223717),	-- Enchant Bracer - Chant of Armored Leech+
+			i(223718),	-- Enchant Bracer - Chant of Armored Leech++
+			i(223719),	-- Enchant Bracer - Chant of Armored Leech+++
+			i(223723),	-- Enchant Bracer - Chant of Armored Speed+
+			i(223724),	-- Enchant Bracer - Chant of Armored Speed++
+			i(223725),	-- Enchant Bracer - Chant of Armored Speed+++
+			i(223708),	-- Enchant Bracer - Whisper of Armored Avoidance+
+			i(223709),	-- Enchant Bracer - Whisper of Armored Avoidance++
+			i(223710),	-- Enchant Bracer - Whisper of Armored Avoidance+++
+			i(223714),	-- Enchant Bracer - Whisper of Armored Leech+
+			i(223715),	-- Enchant Bracer - Whisper of Armored Leech++
+			i(223716),	-- Enchant Bracer - Whisper of Armored Leech+++
+			i(223720),	-- Enchant Bracer - Whisper of Armored Speed+
+			i(223721),	-- Enchant Bracer - Whisper of Armored Speed++
+			i(223722),	-- Enchant Bracer - Whisper of Armored Speed+++
+			i(223684),	-- Enchant Chest - Council's Intellect+
+			i(223685),	-- Enchant Chest - Council's Intellect++
+			i(223686),	-- Enchant Chest - Council's Intellect+++
+			i(223690),	-- Enchant Chest - Crystalline Radiance+
+			i(223691),	-- Enchant Chest - Crystalline Radiance++
+			i(223692),	-- Enchant Chest - Crystalline Radiance+++
+			i(223687),	-- Enchant Chest - Oathsworn's Strength+
+			i(223688),	-- Enchant Chest - Oathsworn's Strength++
+			i(223689),	-- Enchant Chest - Oathsworn's Strength+++
+			i(223681),	-- Enchant Chest - Stormrider's Agility+
+			i(223682),	-- Enchant Chest - Stormrider's Agility++
+			i(223683),	-- Enchant Chest - Stormrider's Agility+++
+			i(223798),	-- Enchant Cloak - Chant of Burrowing Rapidity+
+			i(223799),	-- Enchant Cloak - Chant of Burrowing Rapidity++
+			i(223800),	-- Enchant Cloak - Chant of Burrowing Rapidity+++
+			i(223735),	-- Enchant Cloak - Chant of Leeching Fangs+
+			i(223736),	-- Enchant Cloak - Chant of Leeching Fangs++
+			i(223737),	-- Enchant Cloak - Chant of Leeching Fangs+++
+			i(223729),	-- Enchant Cloak - Chant of Winged Grace+
+			i(223730),	-- Enchant Cloak - Chant of Winged Grace++
+			i(223731),	-- Enchant Cloak - Chant of Winged Grace+++
+			i(223726),	-- Enchant Cloak - Whisper of Silken Avoidance+
+			i(223727),	-- Enchant Cloak - Whisper of Silken Avoidance++
+			i(223728),	-- Enchant Cloak - Whisper of Silken Avoidance+++
+			i(223732),	-- Enchant Cloak - Whisper of Silken Leech+
+			i(223733),	-- Enchant Cloak - Whisper of Silken Leech++
+			i(223734),	-- Enchant Cloak - Whisper of Silken Leech+++
+			i(223738),	-- Enchant Cloak - Whisper of Silken Speed+
+			i(223739),	-- Enchant Cloak - Whisper of Silken Speed++
+			i(223740),	-- Enchant Cloak - Whisper of Silken Speed+++
+			i(223785),	-- Enchant Ring - Cursed Critical Strike+
+			i(223786),	-- Enchant Ring - Cursed Critical Strike++
+			i(223787),	-- Enchant Ring - Cursed Critical Strike+++
+			i(223788),	-- Enchant Ring - Cursed Haste+
+			i(223789),	-- Enchant Ring - Cursed Haste++
+			i(223790),	-- Enchant Ring - Cursed Haste+++
+			i(223791),	-- Enchant Ring - Cursed Mastery+
+			i(223792),	-- Enchant Ring - Cursed Mastery++
+			i(223793),	-- Enchant Ring - Cursed Mastery+++
+			i(223794),	-- Enchant Ring - Cursed Versatility+
+			i(223795),	-- Enchant Ring - Cursed Versatility++
+			i(223796),	-- Enchant Ring - Cursed Versatility+++
+			i(223657),	-- Enchant Ring - Glimmering Critical Strike+
+			i(223658),	-- Enchant Ring - Glimmering Critical Strike++
+			i(223659),	-- Enchant Ring - Glimmering Critical Strike+++
+			i(223663),	-- Enchant Ring - Glimmering Haste+
+			i(223664),	-- Enchant Ring - Glimmering Haste++
+			i(223665),	-- Enchant Ring - Glimmering Haste+++
+			i(223666),	-- Enchant Ring - Glimmering Mastery+
+			i(223667),	-- Enchant Ring - Glimmering Mastery++
+			i(223668),	-- Enchant Ring - Glimmering Mastery+++
+			i(223669),	-- Enchant Ring - Glimmering Versatility+
+			i(223670),	-- Enchant Ring - Glimmering Versatility++
+			i(223671),	-- Enchant Ring - Glimmering Versatility+++
+			i(223660),	-- Enchant Ring - Radiant Critical Strike+
+			i(223661),	-- Enchant Ring - Radiant Critical Strike++
+			i(223662),	-- Enchant Ring - Radiant Critical Strike+++
+			i(223672),	-- Enchant Ring - Radiant Haste+
+			i(223673),	-- Enchant Ring - Radiant Haste++
+			i(223674),	-- Enchant Ring - Radiant Haste+++
+			i(223675),	-- Enchant Ring - Radiant Mastery+
+			i(223676),	-- Enchant Ring - Radiant Mastery++
+			i(223677),	-- Enchant Ring - Radiant Mastery+++
+			i(223678),	-- Enchant Ring - Radiant Versatility+
+			i(223679),	-- Enchant Ring - Radiant Versatility++
+			i(223680),	-- Enchant Ring - Radiant Versatility+++
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENCHANTING,
@@ -308,16 +402,166 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		filter(ILLUSIONS, {
 		}),
 		filter(MISC, {
+			i(224105),	-- Algari Mana Oil+
+			i(224106),	-- Algari Mana Oil++
+			i(224107),	-- Algari Mana Oil+++
+			i(224300),	-- Gleeful Glamour - Blood Elf+
+			i(224324),	-- Gleeful Glamour - Blood Elf++
+			i(224348),	-- Gleeful Glamour - Blood Elf+++
+			i(224301),	-- Gleeful Glamour - Dark Iron Dwarf+
+			i(224325),	-- Gleeful Glamour - Dark Iron Dwarf++
+			i(224349),	-- Gleeful Glamour - Dark Iron Dwarf+++
+			i(224302),	-- Gleeful Glamour - Draenei+
+			i(224326),	-- Gleeful Glamour - Draenei++
+			i(224350),	-- Gleeful Glamour - Draenei+++
+			i(224303),	-- Gleeful Glamour - Dwarf+
+			i(224327),	-- Gleeful Glamour - Dwarf++
+			i(224351),	-- Gleeful Glamour - Dwarf+++
+			i(224304),	-- Gleeful Glamour - Earthen+
+			i(224328),	-- Gleeful Glamour - Earthen++
+			i(224352),	-- Gleeful Glamour - Earthen+++
+			i(224305),	-- Gleeful Glamour - Gnome+
+			i(224329),	-- Gleeful Glamour - Gnome++
+			i(224353),	-- Gleeful Glamour - Gnome+++
+			i(224306),	-- Gleeful Glamour - Goblin+
+			i(224330),	-- Gleeful Glamour - Goblin++
+			i(224354),	-- Gleeful Glamour - Goblin+++
+			i(224307),	-- Gleeful Glamour - Highmountain Tauren+
+			i(224331),	-- Gleeful Glamour - Highmountain Tauren++
+			i(224355),	-- Gleeful Glamour - Highmountain Tauren+++
+			i(224308),	-- Gleeful Glamour - Human+
+			i(224332),	-- Gleeful Glamour - Human++
+			i(224356),	-- Gleeful Glamour - Human+++
+			i(224309),	-- Gleeful Glamour - Kul Tiran+
+			i(224333),	-- Gleeful Glamour - Kul Tiran++
+			i(224357),	-- Gleeful Glamour - Kul Tiran+++
+			i(224310),	-- Gleeful Glamour - Lightforged Draenei+
+			i(224334),	-- Gleeful Glamour - Lightforged Draenei++
+			i(224358),	-- Gleeful Glamour - Lightforged Draenei+++
+			i(224311),	-- Gleeful Glamour - Mag'har Orc+
+			i(224335),	-- Gleeful Glamour - Mag'har Orc++
+			i(224359),	-- Gleeful Glamour - Mag'har Orc+++
+			i(224312),	-- Gleeful Glamour - Mechagnome+
+			i(224336),	-- Gleeful Glamour - Mechagnome++
+			i(224360),	-- Gleeful Glamour - Mechagnome+++
+			i(224313),	-- Gleeful Glamour - Night Elf+
+			i(224337),	-- Gleeful Glamour - Night Elf++
+			i(224361),	-- Gleeful Glamour - Night Elf+++
+			i(224314),	-- Gleeful Glamour - Nightborne+
+			i(224338),	-- Gleeful Glamour - Nightborne++
+			i(224362),	-- Gleeful Glamour - Nightborne+++
+			i(224315),	-- Gleeful Glamour - Orc+
+			i(224339),	-- Gleeful Glamour - Orc++
+			i(224363),	-- Gleeful Glamour - Orc+++
+			i(224316),	-- Gleeful Glamour - Pandaren+
+			i(224340),	-- Gleeful Glamour - Pandaren++
+			i(224364),	-- Gleeful Glamour - Pandaren+++
+			i(224317),	-- Gleeful Glamour - Tauren+
+			i(224341),	-- Gleeful Glamour - Tauren++
+			i(224365),	-- Gleeful Glamour - Tauren+++
+			i(224318),	-- Gleeful Glamour - Troll+
+			i(224342),	-- Gleeful Glamour - Troll++
+			i(224366),	-- Gleeful Glamour - Troll+++
+			i(224319),	-- Gleeful Glamour - Undead+
+			i(224343),	-- Gleeful Glamour - Undead++
+			i(224367),	-- Gleeful Glamour - Undead+++
+			i(224320),	-- Gleeful Glamour - Void Elf+
+			i(224344),	-- Gleeful Glamour - Void Elf++
+			i(224368),	-- Gleeful Glamour - Void Elf+++
+			i(224321),	-- Gleeful Glamour - Vulpera+
+			i(224345),	-- Gleeful Glamour - Vulpera++
+			i(224369),	-- Gleeful Glamour - Vulpera+++
+			i(224322),	-- Gleeful Glamour - Worgen+
+			i(224346),	-- Gleeful Glamour - Worgen++
+			i(224370),	-- Gleeful Glamour - Worgen+++
+			i(224323),	-- Gleeful Glamour - Zaldalari Troll+
+			i(224347),	-- Gleeful Glamour - Zaldalari Troll++
+			i(224371),	-- Gleeful Glamour - Zaldalari Troll+++
+			i(223746),	-- Illusory Adornment: Crystal+
+			i(223745),	-- Illusory Adornment: Crystal++
+			i(223747),	-- Illusory Adornment: Crystal+++
+			i(223748),	-- Illusory Adornment: Radiance+
+			i(223749),	-- Illusory Adornment: Radiance++
+			i(223750),	-- Illusory Adornment: Radiance+++
+			i(223751),	-- Illusory Adornment: Runes+
+			i(223752),	-- Illusory Adornment: Runes++
+			i(223753),	-- Illusory Adornment: Runes+++
+			i(223754),	-- Illusory Adornment: Shadow+
+			i(223755),	-- Illusory Adornment: Shadow++
+			i(223756),	-- Illusory Adornment: Shadow+++
+			i(224108),	-- Oil of Beledar's Grace+
+			i(224109),	-- Oil of Beledar's Grace++
+			i(224110),	-- Oil of Beledar's Grace+++
+			i(224111),	-- Oil of Deep Toxins+
+			i(224112),	-- Oil of Deep Toxins++
+			i(224113),	-- Oil of Deep Toxins+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
+			i(224114),	-- Runed Bismuth Rod
+			i(224115),	-- Runed Ironclaw Rod
+			i(224116),	-- Runed Null Stone Rod
 		}),
 		filter(REAGENTS, {
+			i(224173),	-- Concentration Concentrate+
+			i(224174),	-- Concentration Concentrate++
+			i(224175),	-- Concentration Concentrate+++
+			i(224073),	-- Enchanted Gilded Harbinger Crest
+			i(224072),	-- Enchanted Runed Harbinger Crest
+			i(224069),	-- Enchanted Weathered Harbinger Crest
+			i(224177),	-- Mirror Powder+
+			i(224178),	-- Mirror Powder++
+			i(224176),	-- Mirror Powder+++
 		}),
 		n(WEAPON_ENCHANTMENTS, {
+			i(223693),	-- Enchant Tool - Algari Deftness+
+			i(223694),	-- Enchant Tool - Algari Deftness++
+			i(223695),	-- Enchant Tool - Algari Deftness+++
+			i(223696),	-- Enchant Tool - Algari Finesse+
+			i(223697),	-- Enchant Tool - Algari Finesse++
+			i(223698),	-- Enchant Tool - Algari Finesse+++
+			i(223699),	-- Enchant Tool - Algari Ingenuity+
+			i(223700),	-- Enchant Tool - Algari Ingenuity++
+			i(223701),	-- Enchant Tool - Algari Ingenuity+++
+			i(223702),	-- Enchant Tool - Algari Perception+
+			i(223703),	-- Enchant Tool - Algari Perception++
+			i(223704),	-- Enchant Tool - Algari Perception+++
+			i(223705),	-- Enchant Tool - Algari Resourcefulness+
+			i(223706),	-- Enchant Tool - Algari Resourcefulness++
+			i(223707),	-- Enchant Tool - Algari Resourcefulness+++
+			i(223773),	-- Enchant Weapon - Authority of Air+
+			i(223774),	-- Enchant Weapon - Authority of Air++
+			i(223775),	-- Enchant Weapon - Authority of Air+++
+			i(223776),	-- Enchant Weapon - Authority of Fiery Resolve+
+			i(223777),	-- Enchant Weapon - Authority of Fiery Resolve++
+			i(223778),	-- Enchant Weapon - Authority of Fiery Resolve+++
+			i(223779),	-- Enchant Weapon - Authority of Radiant Power+
+			i(223780),	-- Enchant Weapon - Authority of Radiant Power++
+			i(223781),	-- Enchant Weapon - Authority of Radiant Power+++
+			i(223770),	-- Enchant Weapon - Authority of Storms+
+			i(223771),	-- Enchant Weapon - Authority of Storms++
+			i(223772),	-- Enchant Weapon - Authority of Storms+++
+			i(223782),	-- Enchant Weapon - Authority of the Depths+
+			i(223783),	-- Enchant Weapon - Authority of the Depths++
+			i(223784),	-- Enchant Weapon - Authority of the Depths+++
+			i(223757),	-- Enchant Weapon - Council's Guile+
+			i(223758),	-- Enchant Weapon - Council's Guile++
+			i(223759),	-- Enchant Weapon - Council's Guile+++
+			i(223766),	-- Enchant Weapon - Oathsworn Tenacity+
+			i(223767),	-- Enchant Weapon - Oathsworn Tenacity++
+			i(223768),	-- Enchant Weapon - Oathsworn Tenacity+++
+			i(223763),	-- Enchant Weapon - Stonebound Artistry+
+			i(223764),	-- Enchant Weapon - Stonebound Artistry++
+			i(223765),	-- Enchant Weapon - Stonebound Artistry+++
+			i(223760),	-- Enchant Weapon - Stormrider's Fury+
+			i(223761),	-- Enchant Weapon - Stormrider's Fury++
+			i(223762),	-- Enchant Weapon - Stormrider's Fury+++
 		}),
 		n(WEAPONS, {
+			i(224404),	-- Enchanted Spearwood Wand
+			i(224405),	-- Scepter of Radiant Magics
 		}),
 	}),
+	--[[
 	prof(ENGINEERING, {
 		n(DISCOVERY, {
 		}),
