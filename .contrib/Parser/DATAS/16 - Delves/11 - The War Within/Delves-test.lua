@@ -227,6 +227,56 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 			}),
 		},
 	}),
+	m(2347, {	-- The Spiral Weave
+		["coord"] = { 46.6, 25.7, AZJ_KAHET },
+		["g"] = {
+			-- no rares
+			o(455487, {	-- Sturdy Chest
+				["coord"] = { 46.0, 46.4, 2347 },
+				["questID"] = 83681,
+			}),
+		},
+	}),
+	m(2259, {	-- Tak-Rethan Abyss
+		["coord"] = { 55.5, 74.9, AZJ_KAHET },
+		["g"] = {
+			i(211776),	-- Damp Repair Kit (QI!)
+			-- rare - wraith
+			o(455533, {	-- Sturdy Chest
+				["coord"] = { 57.5, 18.5, 2259 },
+				["questID"] = 83651,
+			}),
+			o(455514, {	-- Sturdy Chest
+				["coord"] = { 61.3, 39.2, 2259 },
+				["questID"] = 83669,
+			}),
+			o(455492, {	-- Sturdy Chest
+				["coord"] = { 44.3, 39.9, 2259 },
+				["questID"] = 83686,
+			}),
+			o(455493, {	-- Sturdy Chest
+				["coord"] = { 55.0, 62.7, 2259 },
+				["questID"] = 83687,
+			}),
+		},
+	}),
+	m(2299, {	-- The Underkeep
+		["coord"] = { 58.1, 65.8, 2213 },
+		["g"] = {
+			o(455509, {	-- Sturdy Chest
+				["coord"] = { 35.9, 34.6, 2299 },
+				["questID"] = 83664,
+			}),
+			--o(455488, {	-- Sturdy Chest
+			--	["coord"] = { x, y, 2299 },	-- after first room map is broken, there no mapID and coords after it
+			--	["questID"] = 83682,
+			--}),
+			---o(, {	-- Sturdy Chest
+			---	["coord"] = { x, y, 2299 },
+			---	["questID"] = 83697,
+			---}),
+		},
+	}),
 	n(REWARDS, {
 		i(222916),	-- Player Experience (Tier 1-2)
 		i(222917),	-- Player Experience (Tier 3)
@@ -235,8 +285,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 		i(225178),	-- Expeditionary Spoils (Tier 3)
 		-- Curio
 		i(225900),	-- Light-Touched Idol
+		i(225899),	-- Unbreakable Iron Idol
 		-- Miscellaneous
 		i(223287),	-- Atomized Salien Slime
+		i(218121),	-- Candle Light
 		i(226110),	-- Elemental Fusion Bomb
 		i(225900),	-- Light-Touched Idol
 		i(225249),	-- Rattling Bag'o'gold
@@ -245,17 +297,18 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 		i(221756),	-- Vial of Kaheti Oils(Maybe Only Nerubian Themed Delves?)
 		-- Gear
 		i(211005),	-- Cave Topographer's Drape
-		i(211007),	-- Torchbearer's Greatcloak
-		i(211018),	-- Treasure-Seeker's Breeches
-		i(211061),	-- Unearthed Relic Band
 		i(211047),	-- Lapidarius Gemcutter
 		i(211022),	-- Torchbearer's Striders
+		i(211007),	-- Torchbearer's Greatcloak
+		i(211018),	-- Treasure-Seeker's Breeches
+		i(211006),	-- Secret-Dredger's Cloak
+		i(211061),	-- Unearthed Relic Band
 		-- Cosmetic
-		i(212172),	-- Ajul'Nerub Raptorial Spine (COSMETIC!) (was looted in Skittering Breach)
+		i(212172),	-- Ajul'Nerub Raptorial Spine (COSMETIC!) (was looted in Skittering Breach & The Underkeep)
 		i(225066),	-- Trailblazer's Haversack (COSMETIC!) (was looted in Nightfall Sanctum)
 		i(212163),	-- Soporific Shroom Cap (COSMETIC!) (was looted in Mycomancer Cavern)
 		-- Rare Treasure Finds?
-		i(226002),	-- Expensive Looking Find (was looted from Sturdy Chest (objectID) 454091)
+		i(226002),	-- Expensive-Looking Find (was looted from Sturdy Chest (objectID) 454091)
 		i(226003),	-- Snake Oil (was looted from Sturdy Chest (objectID) 454091, 455496)
 		i(226001),	-- Pure Gold Stein (was looted from Sturdy Chest (objectID) 455489)
 		i(226004),	-- Odlen Text (was looted from Sturdy Chest (objectID) 455495)

@@ -1820,6 +1820,7 @@ i(220271);	-- Downy Clump
 i(225836);	-- Drained Elemental Mote
 i(225792);	-- Elegant Pedipalp Wrappings
 i(220262);	-- Elongated Proboscis
+i(213265);	-- Empty Antidote Vial
 i(220355);	-- Enlarged Ear
 i(225814);	-- Feather-on-a-Stick
 i(220302);	-- Fractured Casing
@@ -1868,6 +1869,7 @@ i(220299);	-- Sleek Beak
 i(220226);	-- Slime-Coated Membrane
 i(225810);	-- Smoked Visor
 i(220268);	-- Spiraled Horn
+i(213262);	-- Stained Glass Fragment
 i(220363);	-- Straw-Stuffed Hat
 i(220292);	-- Stretched Wing
 i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
