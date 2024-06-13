@@ -11,33 +11,33 @@ WARBAND = createHeader({
 root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(QUESTS, {
 		q(83492, {	-- Warbanding Together
-			-- TODO: Info missing because this is once per account and debugger wasn't running
-			--["provider"] = { "n", X },	-- ?
-			--["coord"] = { X, Y, ? },
+			-- Auto granted upon login
 		}),
 		q(83493, {	-- Rift Reader
 			["sourceQuest"] = 83492,	-- Warbanding Together
 			["provider"] = { "n", 226658 },	-- Blue
 			["coord"] = { 52.5, 26.9, TANARIS },
 		}),
-		-- TODO: Questline bricked for account, need someone else to finish this
 		q(83494, {	-- Space Ghosts by the Coast
-			--["sourceQuest"] = ?,	-- ?
-			--["provider"] = { "n", X },	-- ?
-			--["coord"] = { X, Y, ? },
+			["sourceQuest"] = 83492,	-- Warbanding Together
+			["provider"] = { "n", 226658 },	-- Blue
+			["coord"] = { 52.5, 26.9, TANARIS },
 			["g"] = {
 				i(225783),	-- Spetial Residue
 			},
 		}),
 		q(83495, {	-- Twinsposition
-			--["sourceQuest"] = ?,	-- ?
-			--["provider"] = { "n", X },	-- ?
-			--["coord"] = { X, Y, ? },
+			["sourceQuests"] = {
+				83493,	-- Rift Reader
+				83494,	-- Space Ghosts by the Coast
+			},
+			["provider"] = { "n", 226658 },	-- Blue
+			["coord"] = { 52.5, 26.9, TANARIS },
 		}),
 		q(83496, {	-- Spacetime is Money
-			--["sourceQuest"] = ?,	-- ?
-			--["provider"] = { "n", X },	-- ?
-			--["coord"] = { X, Y, ? },
+			["sourceQuest"] = 83495,	-- Twinsposition
+			["provider"] = { "n", 226658 },	-- Blue
+			["coord"] = { 48.5, 31.6, TANARIS },
 			["g"] = {
 				i(216665),	-- Warband Bank Distance Inhibitor (TOY!)
 			},

@@ -415,6 +415,7 @@ HeaderAssignments = {
 	["Volund's Folly"] = -1000328,
 	["Waist"] = -1000072,
 	["War Effort"] = -1000076,
+	["Warband"] = -1000954,
 	["Warcraft III Spoils of War Edition"] = -1000259,
 	["Warcraft Movie"] = -1000268,
 	["Warcraft Rumble"] = -1000269,
@@ -467,4 +468,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000952;
+NextHeaderID = -1000955;

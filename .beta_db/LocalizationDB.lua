@@ -606,6 +606,7 @@ localize(L.HEADER_NAMES, {
 	[-1000951] = "The Proscenium",
 	[-1000952] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-1000953] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1000954] = "Warband",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1110,6 +1111,7 @@ localize(L.HEADER_ICONS, {
 	[-1000946] = "Interface/Icons/Achievement_PVP_Legion08",
 	[-1000948] = _.asset("Category_SelfieFilters"),
 	[-1000949] = "Interface/Icons/ui_majorfactions_storm",
+	[-1000954] = "Interface/Icons/achievement_guildperk_everybodysfriend",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -6375,10 +6377,13 @@ _.ObjectNames = {
 	[455720] = "DELVER'S CALL: Tak-Rethan Abyss",
 	[455890] = "Waterlogged Refuse",
 	[455914] = "Mislaid Curiosity",
+	[455946] = "Carapace Shiner",
 	[455950] = "Fungarian's Rich Tannin",
 	[455951] = "Artisan's Drawing Knife",
 	[455952] = "Earthen Worker's Beams",
 	[455953] = "Dornogal Carving Knife",
+	[455962] = "Curved Nerubian Skinning Knife",
+	[455963] = "Nerubian Tanning Mallet",
 	[455966] = "Earthen Awl",
 	[455967] = "Underground Stropping Compound",
 	[455968] = "Dornogal Craftsman's Flat Knife",
