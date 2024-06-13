@@ -120,6 +120,66 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223377),	-- Ancient Fungarian's Fingerwrap
 				},
 			}),
+			n(221534, {	-- Lytfang the Lost
+				["coord"] = { 23.0, 59.2, HALLOWFALL },
+				["questID"] = 81756,	-- in addition 84063
+				["g"] = {
+					i(221207),	-- Den Mother's Chestpiece
+				},
+			}),
+			n(221708, {	-- Sir Alastair Purefire
+				["coord"] = { 35.9, 35.5, HALLOWFALL },
+				["questID"] = 81853,	-- in addition 84067
+				["g"] = {
+					i(221245),	-- Righteous Path Treads (alpha data)
+				},
+			}),
+			n(221668, {	-- Horror of the Shallows
+				["description"] = "Swimming near coast on east -> north-east -> north of Hallowfall zone",
+				["coords"] = {
+					{ 28.3, 44.3, HALLOWFALL },
+					{ 25.4, 46.4, HALLOWFALL },
+				},
+				["questID"] = 81836,	-- in addition 84065
+				["g"] = {
+					i(221255),	-- Sharpened Scalepiercer (alpha data)
+				},
+			}),
+			n(221648, {	-- The Perchfather
+				["coord"] = { 44.0, 16.4, HALLOWFALL },
+				["questID"] = 81791,	-- in addition 84064
+			}),
+			n(215805, {	-- Sloshmuck
+				["coord"] = { 73.4, 52.4, HALLOWFALL },
+				["questID"] = 79271,	-- in addition 84062
+				["g"] = {
+					i(221255),	-- Sharpened Scalepiercer (alpha data)
+				},
+			}),
+			n(218444, {	-- The Taskmaker
+				["coord"] = { 56.4, 69.0, HALLOWFALL },
+				["questID"] = 80009,	-- in addition 84061
+			}),
+			n(218452, {	-- Murkshade
+				["provider"] = { "n", 218455 },	-- Lost Cache
+				["coord"] = { 52.3, 27.0, HALLOWFALL },
+				["questID"] = 80010,	-- in addition 84061
+				["g"] = {
+					i(223382),	-- Murkshade Grips
+				},
+			}),
+			n(221690, {	-- Strenght of Beledar
+				["coord"] = { 42.7, 31.3, HALLOWFALL },
+				["questID"] = 81849,	-- in addition 84066
+			}),
+			n(221786, {	-- Pride of Beledar
+				["coord"] = { 57.3, 48.6, HALLOWFALL },
+				["questID"] = 81882,	-- in addition 84068
+				["g"] = {
+					i(223007),	-- Lance of Beledar's Pride (alpha data)
+					i(221225),	-- Benevolent Hornstag Cinch
+				},
+			}),
 		})),
 	}),
 })));

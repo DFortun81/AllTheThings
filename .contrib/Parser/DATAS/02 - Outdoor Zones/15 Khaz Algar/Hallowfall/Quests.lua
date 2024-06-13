@@ -415,8 +415,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 215335 },	-- General Steelstrike
 				["coord"] = { 40.5, 50.8, HALLOWFALL },
 			}),
-			q(83322, {	-- The Dawnbreaker: The Christening
-				--dungeon quest?
+			--q(83322, {	-- The Dawnbreaker: The Christening
+			--	--dungeon quest?
+			--	--["sourceQuests"] = { xx },	-- TODO: figure out when they become available
+			--	["provider"] = { "n", 215335 },	-- General Steelstrike
+			--	["coord"] = { 40.5, 50.8, HALLOWFALL },
+			--}),
+			q(82894, {	-- The Price of Hope
+				--now here instead of quest above
 				--["sourceQuests"] = { xx },	-- TODO: figure out when they become available
 				["provider"] = { "n", 215335 },	-- General Steelstrike
 				["coord"] = { 40.5, 50.8, HALLOWFALL },
@@ -997,76 +1003,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					}),
 				},
 			}),
-			q(80009, {	-- The Taskmaker
-				["provider"] = { "n", 218444 },	-- The Taskmaker
-				["coord"] = { 56.4, 69.0, HALLOWFALL },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			--[[
-			}),
-			q(xx, {	--
-				["provider"] = { "n", xxx },	-- Murkshade (another providers is n: xx (Lost Cache))
-				["coord"] = { x, y, HALLOWFALL },
-				["g"] = {
-					i(223382),	-- Murkshade Grips
-				},
-			}),
-			--]]
-			q(81791, {	-- The Perchfather // I'm unsure if this is right quest, since there daily reset happens at same time
-				["provider"] = { "n", 221648 },	-- The Perchfather
-				["coord"] = { 44.0, 16.4, HALLOWFALL },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			q(81849, {	-- Strenght of Beledar
-				["provider"] = { "n", 221690 },	-- Strenght of Beledar
-				["coord"] = { 42.7, 31.3, HALLOWFALL },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			q(81882, {	-- Pride of Beledar
-				["provider"] = { "n", 221786 },	-- Pride of Beledar
-				["coord"] = { 57.3, 48.6, HALLOWFALL },
-				["g"] = {
-					i(223007),	-- Lance of Beledar's Pride (warbound)
-				},
-			}),
-			q(81853, {	-- Sir Alastair Purefire
-				["provider"] = { "n", 221708 },	-- Sir Alastair Purefire
-				["coord"] = { 35.9, 35.5, HALLOWFALL },
-				["g"] = {
-					i(221245),	-- Righteous Path Treads (warbound)
-				},
-			}),
-			q(81756, {	-- Feral Denmother
-				["provider"] = { "n", 221534 },	-- Lytfang the Lost
-				["coord"] = { 23.0, 59.2, HALLOWFALL },
-				["g"] = {
-
-				},
-			}),
-			q(81836, {	-- Horror of the Shallows
-				["description"] = "Swimming near coast",
-				["provider"] = { "n", 221668 },	-- Horror of the Shallows
-				["coords"] = {
-					{ 28.3, 44.3, HALLOWFALL },
-					{ 25.4, 46.4, HALLOWFALL },
-				},
-				["g"] = {
-					i(221255),	-- Sharpened Scalepiercer
-				},
-			}),
-			q(79271, {	-- Sloshmuck
-				["provider"] = { "n", 215805 },	-- Sloshmuck
-				["coord"] = { 73.4, 52.4, HALLOWFALL },
-				["g"] = {
-					i(221255),	-- Sharpened Scalepiercer
-				},
-			}),
 			--[[
 			q(xx, {	-- Radiant-Twisted Mycelium
 				["provider"] = { "n", 214905 },	-- Radiant-Twisted Mycelium
@@ -1096,17 +1032,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--
 	q(82749),	-- triggered after turn in questID 80678 (Time Lost) (spellID 452551 - Flag Timer)
 	-- Some dude with question, which require you to loot something in world?
-	q(80068),	-- [DNT] Infirmary Tracker, fire near Caesper (n: 225948 @ 41.8, 58.3) and Ryfus Sacredpyr (n: 221630  @ 40.0, 51.1)
-	--n: 221630 Ryfus Sacredpyr @ 40.0, 51.1
-	-- Question 1
-	q(83300),	-- 3rd option (something with cosmos related) / other option didn't fire any hqt
-	-- Question 2
-	q(83301),	-- 3rd option (Patience and respect) / require either Disturbed Lyns Treasure or Care and Feeding of the Imperial Lynx being flagged (otherwise this option won't be here)
-	-- Question 3
-	--q(),	-- 3rd option / unknown requirements
-	-- Pseudo-treasures / Lore?
-	q(82063),	-- Worn-Down Journal (spellID 446429) // A Worn Down Book @ 25.1, 53.7
-	q(82061),	-- Last Flight of The Soundness (spellID 446423) // Captain's Chest @ 25.7, 38.5
+	--q(80068),	-- [DNT] Infirmary Tracker, fire near Caesper (n: 225948 @ 41.8, 58.3) and Ryfus Sacredpyr (n: 221630  @ 40.0, 51.1)
 	-- Keyflames
 	q(80005),	-- Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
 	q(78472),	-- Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7

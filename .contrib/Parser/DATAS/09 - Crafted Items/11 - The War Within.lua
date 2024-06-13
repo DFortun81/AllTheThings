@@ -851,8 +851,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(83411, 214151),	-- Skinning Ahg'zagall
 			FirstSkin(81450, 219264),	-- Skinning Bloodmaw
 			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
+			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
 			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler
+			FirstSkin(83400, 221534),	-- Skinning Lytfang the Lost
+			FirstSkin(81458, 218452),	-- Skinning Murkshade
 			FirstSkin(81452, 219267),	-- Skinning Plaguehart
+			FirstSkin(83403, 221786),	-- Skinning Pride of Beledar
+			FirstSkin(83401, 221648),	-- Skinning The Perchfather
 			FirstSkin(81453, 219271),	-- Skinning Twice-Stinger the Wretched
 			FirstSkin(81449, 219263),	-- Skinning Warphorn
 			FirstSkin(83412, 216039),	-- Skinning Xishorr

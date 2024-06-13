@@ -241,6 +241,13 @@ root(ROOTS.Professions, prof(SKINNING, {
 	}),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 		n(TREASURES, {
+			o(455948, {	-- Arathi Craftsman's Spokeshave
+				["coord"] = { 42.2, 53.9, HALLOWFALL },
+				["questID"] = 83919,
+				["g"] = {
+					i(226345), -- Arathi Craftsman's Spokeshave
+				},
+			}),
 			o(455951, {	-- Artisan's Drawing Knife
 				["coord"] = { 47.3, 28.3, THE_RINGING_DEEPS },
 				["questID"] = 83916,

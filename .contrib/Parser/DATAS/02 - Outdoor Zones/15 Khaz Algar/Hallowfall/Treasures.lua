@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(453167, {	-- Disturbed Lyns Treasure
-				["description"] = "Bring Caesper Meaty Haunch and follow him, he will digup treasure for you",
+				["description"] = "Bring Caesper Meaty Haunch and follow him, he will dig up treasure for you",
 				["provider"] = { "n", 225948 },	-- Caesper
 				["coords"] = {
 					{ 41.8, 58.3, HALLOWFALL },	-- Caesper
@@ -118,6 +118,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- crafting reagents
 				},
 			}),
+			o(455038, {	-- Light's Gambit Playbook
+				["coord"] = { 68.7, 41.5, HALLOWFALL },
+				--["questID"] = ,
+				["g"] = {
+					i(225206),	-- Light's Gambit Playbook [book]
+				},
+			}),
 			o(453749, {	-- Palawltar's Codex of Dimensional Structure
 				["coord"] = { 48.7, 64.7, HALLOWFALL },
 				["questID"] = 83309,
@@ -132,6 +139,34 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(225207),	-- Care and Feeding of the Imperial Lynx [book]
 				},
 			}),
+			o(453752, {	-- Shadow Curfew Guidelines
+				["coord"] = { 64.2, 28.1, HALLOWFALL },
+				["questID"] = 83311,
+				["g"] = {
+					i(225204),	-- Shadow Curfew Guidelines [book]
+				},
+			}),
+			o(453753, {	-- Beledar- The Emperor's Vision
+				["coord"] = { 56.6, 65.2, HALLOWFALL },
+				["questID"] = 83312,
+				["g"] = {
+					i(225203),	-- Beledar- The Emperor's Vision [book]
+				},
+			}),
+			o(453754, {	-- The Song of Renilash
+				["coord"] = { 70.2, 56.8, HALLOWFALL },
+				["questID"] = 83313,
+				["g"] = {
+					i(225215),	-- The Song of Renilash [book]
+				},
+			}),
+			o(453755, {	-- The Big Book of Arathi Idioms
+				["coord"] = { 48.1, 39.6, HALLOWFALL },
+				["questID"] = 83314,
+				["g"] = {
+					i(225212),	-- The Big Book of Arathi Idioms [book]
+				},
+			}),
 			o(441611, {	-- Windswept Satchel
 				["coord"] = { 30.2, 38.8, HALLOWFALL },
 				["questID"] = 81972,
@@ -139,10 +174,67 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(224578),	-- Arathor Courier's Satchel
 				},
 			}),
+			--o(, {	-- Coral Fused Clam
+			--	["coord"] = { 64.0, 6.1, HALLOWFALL },
+			--	["questID"] = ,
+			--	["cost"] = {{ "i", xx, 1 }},	-- Clammer's Pry Bar
+			--}),
+			--Lore dude
+			o(453741, {	-- Loremaster's Reward
+				["provider"] = { "n", 221630 },	-- Ryfus Sacredpyr
+				["coord"] = { 40.0, 51.1, HALLOWFALL },
+				["questID"] = 83298,
+				["cost"] = {
+					{ "i", 225216, 1 },	-- Palawltar's Codex of Dimensional Structure / Question 1
+					{ "i", 225207, 1 },	-- Care and Feeding of the Imperial Lynx / Question 2
+					{ "i", 225204, 1 },	-- Shadow Curfew Guidelines / Question 3
+					{ "i", 225203, 1 },	-- Beledar- The Emperor's Vision / Question 4
+					{ "i", 225215, 1 },	-- The Song of Renilash / Question 5
+					{ "i", 225212, 1 },	-- The Big Book of Arathi Idioms / Question 6
+				},
+				["g"] = {
+					q(83300, {	-- Question 1
+						["name"] = "Get Palawltar's Codex of Dimensional Structure for right answer on 1st question"
+					}),
+					q(83301, {	-- Question 2
+						["name"] = "Get Care and Feeding of the Imperial Lynx for right answer on 2nd question"
+					}),
+					q(83302, {	-- Question 3
+						["name"] = "Get Shadow Curfew Guidelines for right answer on 3rd question"
+					}),
+					q(83303, {	-- Question 4
+						["name"] = "Get Beledar - The Emperor's Vision for right answer on 4th question"
+					}),
+					q(83304, {	-- Question 5
+						["name"] = "Get The Song of Renilash for right answer on 5th question"
+					}),
+					q(83305, {	-- Question 6
+						["name"] = "Get The Big Book of Arathi Idioms for right answer on 6th question"
+					}),
+					--
+					i(225659),	-- Arathi Book Collection (TOY!)
+				},
+			}),
 			-- achievement crits
+			o(441720, {	-- A Scout's Journal
+				["coord"] = { 62.2, 45.6, HALLOWFALL },
+				["questID"] = 82066,
+			}),
+			o(441688, {	-- A Tattered Note
+				["coord"] = { 71.4, 36.7, HALLOWFALL },
+				["questID"] = 82065,
+			}),
 			o(441637, {	-- A Weathered Tome
 				["coord"] = { 78.2, 40.3, HALLOWFALL },
 				["questID"] = 82064,
+			}),
+			o(441633, {	-- A Worn Down Book
+				["coord"] = { 25.1, 53.7, HALLOWFALL },
+				["questID"] = 82063,
+			}),
+			o(441628, {	-- Captain's Chest
+				["coord"] = { 25.7, 38.4, HALLOWFALL },
+				["questID"] = 82061,
 			}),
 		}),
 	}),

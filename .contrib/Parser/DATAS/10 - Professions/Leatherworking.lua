@@ -1346,6 +1346,20 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 		n(TREASURES, {
+			o(455965, {	-- Arathi Beveler Set
+				["coord"] = { 47.5, 65.1, HALLOWFALL },
+				["questID"] = 83902,
+				["g"] = {
+					i(226328), -- Arathi Beveler Set
+				},
+			}),
+			o(455964, {	-- Arathi Leather Burnisher
+				["coord"] = { 41.5, 57.8, HALLOWFALL },
+				["questID"] = 83903,
+				["g"] = {
+					i(226329), -- Arathi Leather Burnisher
+				},
+			}),
 			o(455962, {	-- Curved Nerubian Skinning Knife
 				["coord"] = { 60.2, 57.5, AZJ_KAHET },
 				["questID"] = 83905,
