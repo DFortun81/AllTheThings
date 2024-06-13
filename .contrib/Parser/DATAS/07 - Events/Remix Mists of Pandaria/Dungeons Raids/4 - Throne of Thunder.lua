@@ -265,6 +265,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						i(215564),	-- Durumu's Gaze
 						i(215687),	-- Eye of the Hydra
 						i(215689),	-- Eye of the Hydra
+						i(216597),	-- Eyes of the Doomed
 						i(216409),	-- Fyn's Dagger
 						i(216411),	-- Fyn's Dagger
 						i(216434),	-- Hammer of the Dawn
