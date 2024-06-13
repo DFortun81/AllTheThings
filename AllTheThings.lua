@@ -7519,15 +7519,15 @@ local function Refresh(self)
 	for i=2,totalRowCount do
 		row = container.rows[i] or CreateRow(container);
 		SetRowData(self, row, rowData[current]);
-		-- track the minimum indentation within the set of rows so they can be adjusted later
-		if row.indent and (not minIndent or row.indent < minIndent) then
-			minIndent = row.indent;
-			-- print("new minIndent",minIndent)
-		end
 		totalHeight = totalHeight + row:GetHeight();
 		if totalHeight > containerHeight then
 			break;
 		else
+			-- track the minimum indentation within the set of rows so they can be adjusted later
+			if row.indent and (not minIndent or row.indent < minIndent) then
+				minIndent = row.indent;
+				-- print("new minIndent",minIndent)
+			end
 			current = current + 1;
 			rowCount = rowCount + 1;
 		end
