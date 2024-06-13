@@ -10,6 +10,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(217390),	-- Coagulated Black Blood Clot (QS!)/(QI!)
 				},
 			}),
+			n(218725, {	-- Arachnoid Scrounger
+				--["coord"] = { 78.3, 79.0, AZJ_KAHET },	-- in this area
+				["g"] = {
+					i(217385),	-- Clump of Waxy Excretion (QS!)/(QI!) (require 80 level to start quest?)
+				},
+			}),
 		}),
 	}),
 })));

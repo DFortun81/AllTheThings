@@ -114,7 +114,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 82720,
 				["g"] = {
 					i(225513),	-- Bloodied Idol
-					i(220236),	-- Sanguineous Sac
 					i(223899),	-- Shadowed Appendage
 				},
 			}),
@@ -123,7 +122,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 82726,
 				["g"] = {
 					i(221760),	-- Bonedrinker (PET!)
-					--i(222966),	-- Spinner (PET!) // not here anymore?
 				},
 			}),
 			o(446135, {	-- Niffen Stash
@@ -170,7 +168,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 67.4, 74.4, 2213 },	-- Nerub'ar
 				["questID"] = 82727,
 				["g"] = {
-					-- missing loot table
+					i(222966),	-- Spinner (PET!)
 				},
 			}),
 			-- The Weaver Treasures, didn't fire questID - repeatable?
@@ -260,6 +258,27 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["g"] = {
 					-- didn't find a way to open
 				},
+			}),
+			-- achievement
+			n(222634, {	-- Forgotten Shadecaster
+				["coord"] = { 58.7, 90.1, AZJ_KAHET },
+				["questID"] = 82079,
+			}),
+			n(222369, {	-- Kah'teht
+				["coord"] = { 74.3, 38.5, AZJ_KAHET },
+				["questID"] = 82069,
+			}),
+			n(222381, {	-- Mad Nerubian
+				["coord"] = { 54.8, 25.3, AZJ_KAHET },
+				["questID"] = 82067,
+			}),
+			n(222304, {	-- Neglected Shadecaster
+				["coord"] = { 8.6, 30.6, 2213 },
+				["questID"] = 82085,
+			}),
+			n(222283, {	-- Weathered Shadecaster
+				["coord"] = { 70.4, 65.2, AZJ_KAHET },
+				["questID"] = 82082,
 			}),
 		}),
 	}),

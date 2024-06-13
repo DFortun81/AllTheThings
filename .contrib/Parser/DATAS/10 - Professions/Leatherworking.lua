@@ -1346,6 +1346,13 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 		n(TREASURES, {
+			o(455962, {	-- Curved Nerubian Skinning Knife
+				["coord"] = { 60.2, 57.5, AZJ_KAHET },
+				["questID"] = 83905,
+				["g"] = {
+					i(226331), -- Curved Nerubian Skinning Knife
+				},
+			}),
 			o(455968, {	-- Dornogal Craftsman's Flat Knife
 				["coord"] = { 47.3, 28.3, THE_RINGING_DEEPS },
 				["questID"] = 83899,
@@ -1365,6 +1372,13 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["questID"] = 83898,
 				["g"] = {
 					i(226324), -- Earthen Lacing Tools
+				},
+			}),
+			o(455963, {	-- Nerubian Tanning Mallet
+				["coord"] = { 55.0, 27.0, 2213 },
+				["questID"] = 83904,
+				["g"] = {
+					i(226330), -- Nerubian Tanning Mallet
 				},
 			}),
 			o(455967, {	-- Underground Stropping Compound

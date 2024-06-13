@@ -314,6 +314,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["sourceQuests"] = { 83321 },	-- Strange Bats // this or quest below require this source to pop, otherwise will be 1 quest
 				["provider"] = { "n", 211652 },	-- Greenspeaker Na'layro
 				["coord"] = { 43.9, 47.0, AZJ_KAHET },
+				["g"] = {
+					-- crit 'The Wormlands' for achievementID 40636 (Sojourner of Azj-Kahet)
+				},
 			}),
 			q(78898, {	-- Intention vs Instinct
 				--["sourceQuests"] = { 83321 },	-- Strange Bats
@@ -342,6 +345,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["sourceQuests"] = { 78902 },	-- Delegated Dig
 				["provider"] = { "n", 214168 },	-- Skedgit Cinderbangs
 				["coord"] = { 42.5, 44.4, AZJ_KAHET },
+				["g"] = {
+					i(226172),	-- Disturbance Detection Device (COSMETIC!)
+				},
 			}),
 			-- End The Wormlands popup
 			-- Faerin's Advance side quest
@@ -539,7 +545,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- End of some random spider quest #3
 			-- Start of some random spider quest #4
 			q(79119, {	-- It's Rough to Be a Bug!
-				--["sourceQuests"] = { xx },	-- ? // Azi-Kahet Pheromones near them so somewhere after 78226 (A Most Intriguing Invitation) or 78228 (Into a Skittering City)
+				--["sourceQuests"] = { xx },	-- ?
 				["provider"] = { "n", 214359 },	-- Kish'nal
 				["coord"] = { 74.9, 83.5, AZJ_KAHET },
 			}),
@@ -585,6 +591,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["sourceQuests"] = { 79122 },	-- Scarab Scouting
 				["provider"] = { "n", 214359 },	-- Kish'nal
 				["coord"] = { 74.0, 82.0, AZJ_KAHET },
+				["g"] = {
+					--crit 'Rak-Ush Swarmery'
+				},
 			}),
 			-- End of some random spider quest #4
 			-- Start of some random spider quest #5
@@ -761,7 +770,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(220161),	-- [PH] Toy, Black Blood Candle (TOY!) (TODO: but not really)
 				},
 			}),
-			--
+			-- ?
+			q(79955, {	-- ...And Now I'm Arachnophobic
+				["provider"] = { "n", 217640 },	-- Albert
+				["coord"] = { 66.8, 54.9, 2216 },
+			}),
+			q(79956, {	-- Legs in the Ceiling
+				["sourceQuests"] = { 79955 },	-- ...And Now I'm Arachnophobic
+				["provider"] = { "n", 217640 },	-- Albert
+				["coord"] = { 69.9, 63.3, 2216 },
+			}),
+			q(79957, {	-- Maggots in Your Eyes
+				["sourceQuests"] = { 79956 },	-- Legs in the Ceiling
+				["provider"] = { "n", 217994 },	-- Albert
+				["coord"] = { 68.7, 62.3, 2216 },
+				["g"] = {
+					--crit 'Pillar-nest of Horrors'
+					i(216689),	-- Albert's Head (QI!)
+				},
+			}),
 			--	Bonus Objectives
 			q(81670, {	-- Shattered Silk
 				["coord"] = { 72.8, 55.0, AZJ_KAHET },
@@ -923,61 +950,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--
 			--	Rares / Bonus Objectives / Once per character?
 			--	need to be moved into rares if didn't get bonus objective
-			q(81695, {	-- Abyssal Devourer
-				["provider"] = { "n", 216031 },	-- Abyssal Devourer
-				["coord"] = { 47.4, 43.7, AZJ_KAHET },
-				["g"] = {
-					i(223389),	-- Legplates of Dark Hunger
-					i(223392),	-- Trousers of Dark Hunger
-				},
-			}),
-			--[[
-			q(xx, {	-- Stronghold Scouts
-				["description"] = "Can be found on their path at this road",
-				["providers"] = {
-					{ "n", 216032 },	-- Khak'ik
-					{ "n", 221032 },	-- Rhak'ik
-				},
-				["coords"] = {
-					{ 45.5, 36.2, AZJ_KAHET },	-- spawn coords
-					{ 45.5, 42.1, AZJ_KAHET },	-- mid route
-					{ 45.5, 47.1, AZJ_KAHET },	-- end point, where they turn back
-				},
-				["g"] = {
-					i(223392),	-- Trousers of Dark Hunger
-				},
-			}),
-			--]]
-			q(81698, {	-- Ahg'zagall
-				["provider"] = { "n", 214151 },	-- Ahg'zagall
-				["coord"] = { 40.0, 47.3, AZJ_KAHET },
-				["g"] = {
-					i(223375),	-- Clattering Chitin Necklace
-				},
-			}),
-			q(81703, {	-- The XT-Minecrusher 8700
-				["provider"] = { "n", 216034 },	-- The XT-Minecrusher 8700
-				["coord"] = { 75.4, 61.0, AZJ_KAHET },
-				["g"] = {
-					i(216034),	-- Steam-Powered Wristwatch
-				},
-			}),
-			--[[
-			q(xx, {	-- Kaheti Webspeaker
-				["provider"] = { "n", 216041 },	-- Webspeaker Grik'ik
-				["coord"] = { 61.3, 33.0, AZJ_KAHET },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			--]]
-			q(81705, {	-- Monstrous Lasharoth
-				["provider"] = { "n", 216043 },	-- Monstrous Lasharoth
-				["coord"] = { 68.9, 72.2, AZJ_KAHET },
-				["g"] = {
-					-- no loot
-				},
-			}),
 			q(81707, {	-- Gutter Carver
 				["provider"] = { "n", 216045 },	-- Gutter Carver
 				["coord"] = { 58.4, 65.0, AZJ_KAHET },
@@ -988,45 +960,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(81706, {	-- Bomb Beetle
 				["provider"] = { "n", 216044 },	-- Siegefire Bomber
 				["coord"] = { 60.7, 74.4, AZJ_KAHET },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			q(81700, {	-- Vilewing
-				["description"] = "Fly around assignet coords.",
-				["provider"] = { "n", 216037 },	-- Vilewing
-				["coord"] = { 36.6, 44.3, AZJ_KAHET },
-				["g"] = {
-					i(223388),	-- Vilewing Cap
-					i(223405),	-- Vilewing Visor
-				},
-			}),
-			q(81634, {	-- Chitin Hulk
-				["provider"] = { "n", 216038 },	-- Chitin Hulk
-				["coord"] = { 38.3, 44.2, 2213 },	-- Nerub'ar
-				["g"] = {
-					-- no loot
-				},
-			}),
-			q(81707, {	-- Lurking Hunter
-				["description"] = "In cave.",
-				["provider"] = { "n", 216039 },	-- Xishorr
-				["coords"] = {
-					{ 72.3, 57.0, 2216 },	-- Cave entrance
-					{ 68.7, 59.3, 2216 },	-- Rare spot
-				},
-				["g"] = {
-					i(221221),	-- Venomous Lurker's Greathelm
-				},
-			}),
-			q(81702, {	-- Kaheti Silk Hauler
-				["description"] = "Patrol on road",
-				["provider"] = { "n", 221327 },	-- Kaheti Silk Hauler
-				["coords"] = {
-					{ 60.8, 38.1, AZJ_KAHET },	-- Start
-					{ 62.7, 43.6, AZJ_KAHET },	-- Mid
-					{ 68.7, 54.8, AZJ_KAHET },	-- End
-				},
 				["g"] = {
 					-- no loot
 				},
@@ -1044,6 +977,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(79658),	-- [DNT] The Severed Threads Renown Unlock (spellID 448677)
+	q(83488),	-- Rak-Ush Stagshell World Quests Unlocked (spellID 456051)
 	-- Pheromones (spellID 444927 - [DNT] Set Faction Reputation) - ?
 	q(81628),	-- triggered during questID 79175 (I Think I'm a Drone Now) when apply Anub'azal's Pheromones
 	q(81625),	-- triggered during questID 78226 (A Most Intriguing Invitation) when apply Azi-Kahet Pheromones
@@ -1054,12 +988,8 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Reps with zone dudes, probably gonna need to move into expansion feature?
 	q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
 	q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
-	-- better move to treasure or they was broken and only supposed to be up with specific zone dude?
-	q(82067),	-- Mad Nerubian (n: 222381 @ 54.8, 25.3) (spellID 446507)
-	q(82069),	-- Azjol-Nerub Survivor (n: 222369 (Kah'reht) @ 74.3, 38.5) (spellID 446539)
-	q(82082),	-- Shadecaster: Anub'arak (n: 222283 (Weathered Shadecaster) @ 70.4, 65.2) (spellID 446638)
-	q(82085),	-- Shadecaster: Nefferess (n: 222304 (Neglected Shadecaster) @ 8.6, 30.6, 2213) (spellID 446647)
-	q(82079),	-- Shadecaster: Nefferess (n: 222634 (Forgotten Shadecaster) @ 77.6, 70.2, 2213) (spellID 446614)
+	q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
+	q(81627),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
 	--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
 	q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
 	q(82646),	-- pop questIDs: 81492 (General), 81499 (?), 81506 (?)

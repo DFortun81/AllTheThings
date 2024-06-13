@@ -11,12 +11,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(216049, {	-- Black BLood Slime
 				--seems like not here?
 				["questID"] = 82035,
-				["coord"] = { 64.7, 88.8, 2256 },	-- Azj-Kahet Lower
+				["coord"] = { 62.2, 90.5, 2256 },	-- Azj-Kahet Lower
 				["g"] = {
 					i(223006),	-- Signet of Dark Horizons (warbound)
 				},
 			}),
-			n(216048, {	-- Contaminated Harverster
+			n(216048, {	-- Jix'ak the Crazed (vignette - Contaminated Harverster)
 				--["description"] = "Patrol in area, can be killed by Harverster Qixt",
 				--["questID"] = xx,	-- didn't fire
 				["coord"] = { 65.1, 85.7, 2256},
@@ -48,6 +48,91 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 69.4, 93.6, AZJ_KAHET },
 				["g"] = {
 					-- no loot
+				},
+			}),
+			n(216037, {	-- Vilewing
+				["description"] = "Fly around",
+				["coord"] = { 36.6, 44.3, AZJ_KAHET },
+				["questID"] = 81700,
+				["g"] = {
+					i(223388),	-- Vilewing Cap
+					i(223405),	-- Vilewing Visor
+				},
+			}),
+			n(216031, {	-- Abyssal Devourer
+				["coord"] = { 47.4, 43.7, AZJ_KAHET },
+				["questID"] = 81695,
+				["g"] = {
+					i(223389),	-- Legplates of Dark Hunger
+					i(223392),	-- Trousers of Dark Hunger
+				},
+			}),
+			n(216032, {	-- Stronghold Scouts (Khak'ik npcID)
+				["crs"] = { 221032 },	-- Rhak'ik
+				["coords"] = {
+					{ 45.5, 36.2, AZJ_KAHET },	-- spawn coords
+					{ 45.5, 42.1, AZJ_KAHET },	-- mid route
+					{ 45.5, 47.1, AZJ_KAHET },	-- end point, where they turn back
+				},
+				["questID"] = 81694,
+				["g"] = {
+					i(223392),	-- Trousers of Dark Hunger
+					i(223408),	-- Treads of the Nerubian Twins
+				},
+			}),
+			n(214151, {	-- Ahg'zagall
+				["coord"] = { 40.0, 47.3, AZJ_KAHET },
+				["questID"] = 81698,
+				["g"] = {
+					i(223375),	-- Clattering Chitin Necklace
+				},
+			}),
+			n(216041, {	-- Webspeaker Grik'ik (vignette - Kaheti Webspeaker)
+				["coord"] = { 61.3, 33.0, AZJ_KAHET },
+				["questID"] = 81699,
+				["g"] = {
+					i(223369),	-- Webspeaker's Spiritual Cloak
+				},
+			}),
+			n(221327, {	-- Kaheti Silk Hauler
+				["description"] = "Patrol on road",
+				["coords"] = {
+					{ 60.8, 38.1, AZJ_KAHET },	-- Start
+					{ 62.7, 43.6, AZJ_KAHET },	-- Mid
+					{ 68.7, 54.8, AZJ_KAHET },	-- End
+				},
+				["questID"] = 81702,	-- in addition 84071
+			}),
+			n(216034, {	-- XT-Minecrusher 8700
+				["coord"] = { 75.4, 61.0, AZJ_KAHET },
+				["questID"] = 81703,	-- in addition 84072
+				["g"] = {
+					--
+				},
+			}),
+			n(216043, {	-- Monstrous Lasharoth
+				["coord"] = { 68.9, 72.2, AZJ_KAHET },
+				["questID"] = 81705,	-- in addition 84074
+				["g"] = {
+					--
+				},
+			}),
+			n(216039, {	-- Xishorr (vignette -  Lurking Hunter)
+				["description"] = "In cave.",
+				["coords"] = {
+					{ 72.3, 57.0, 2216 },	-- Cave entrance
+					{ 68.7, 59.3, 2216 },	-- Rare spot
+				},
+				["questID"] = 81701,	-- in addition 84070
+				["g"] = {
+					i(221221),	-- Venomous Lurker's Greathelm
+				},
+			}),
+			n(216038, {	-- The Groundskeeper (vignette - Chitin Hulk)
+				["coord"] = { 30.6, 55.5, 2213 },	-- Nerub'ar
+				["questID"] = 81634,	-- in addition 84069
+				["g"] = {
+					--
 				},
 			}),
 		})),

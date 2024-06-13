@@ -847,11 +847,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = SKINNING,
 			["collectible"] = false,
 		},{
+			FirstSkin(83410, 216031),	-- Skinning Abyssal Devourer
+			FirstSkin(83411, 214151),	-- Skinning Ahg'zagall
 			FirstSkin(81450, 219264),	-- Skinning Bloodmaw
 			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
+			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler
 			FirstSkin(81452, 219267),	-- Skinning Plaguehart
 			FirstSkin(81453, 219271),	-- Skinning Twice-Stinger the Wretched
 			FirstSkin(81449, 219263),	-- Skinning Warphorn
+			FirstSkin(83412, 216039),	-- Skinning Xishorr
 		})),
 		--spell(, {	--
 		--}),

@@ -45,15 +45,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- normal - 80279 / advanced - 80285 / reverse - 80291
 					["coord"] = { 53.7, 41.2, AZJ_KAHET },
 				}),
-				q(79959, {	-- Taking It To Go
-					["coord"] = { 78.0, 77.7, AZJ_KAHET },
-					["g"] = {
-						i(216664),	-- Threading Lure (QI!)
-						--
-						i(217385),	-- Clump of Waxy Excretion (QS!)/(QI) // I'm also unsure if it drop only during wqs, need more data
-						-- also unable to start quest with it 'You didn't meet the requirements for that quest'.
-					},
-				}),
+				--q(, {	-- Taking It To Go
+				--	["coord"] = { 78.0, 77.7, AZJ_KAHET },
+				--	["g"] = {
+				--		i(216664),	-- Threading Lure (QI!)
+				--	},
+				--}),
 				q(82332, {	-- Unassuming Delivery Spider
 					["coord"] = { 62.6, 22.4, 2213 },
 				}),

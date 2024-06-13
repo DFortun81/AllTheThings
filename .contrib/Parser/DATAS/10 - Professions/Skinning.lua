@@ -248,6 +248,13 @@ root(ROOTS.Professions, prof(SKINNING, {
 					i(226342), -- Artisan's Drawing Knife
 				},
 			}),
+			o(455946, {	-- Carapace Shiner
+				["coord"] = { 57.1, 58.7, AZJ_KAHET },
+				["questID"] = 83921,
+				["g"] = {
+					i(226347), -- Carapace Shiner
+				},
+			}),
 			o(455953, {	-- Dornogal Carving Knife
 				["coord"] = { 54.3, 57.3, DORNOGAL },
 				["questID"] = 83914,
