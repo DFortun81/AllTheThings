@@ -819,7 +819,6 @@ root(ROOTS.Unsorted, {
 			i(216603),	-- Boots of the Light
 			i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 			i(216657),	-- Test Item C
-			i(216665),	-- Warband Bank Distance Inhibitor
 			i(216682),	-- The Vizier's Invitation
 			i(216683),	-- Earthen Rifle
 			i(216684),	-- Earthen Sword
