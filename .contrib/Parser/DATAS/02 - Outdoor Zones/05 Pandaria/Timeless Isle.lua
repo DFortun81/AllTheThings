@@ -1322,6 +1322,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 33336 },	-- The Essence of Time
 						["provider"] = { "n", 72870 },	-- Kairoz
 						["isWeekly"] = true,
+						["groups"] = {
+							i(105715),	-- Epoch Stone (QI!)
+						},
 					}),
 					q(33377, {	-- Hidden Threads
 						["sourceQuests"] = { 33376 },	-- Seeking Fate
@@ -1416,6 +1419,9 @@ root(ROOTS.Zones, {
 					q(33336, {	-- The Essence of Time
 						["sourceQuests"] = { 33161 },	-- A Timeless Tour
 						["provider"] = { "n", 72870 },	-- Kairoz
+						["groups"] = {
+							i(105715),	-- Epoch Stone (QI!)
+						},
 					}),
 					q(33335, {	-- The Last Emperor
 						["sourceQuests"] = { 33228 },	-- Time In Your Hands
