@@ -20,7 +20,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["sourceQuest"] = 78574,	-- Boss of the Bosk
 				}),
 				crit(67055, {	-- Behind Closed Doors
-				--	["sourceQuest"] = 79530,	-- TODO: quest name (could be HQT?)
+					-- Remove when the quest below is uncommented
+					["_noautomation"] = true,
+					--["sourceQuest"] = 79530,	-- TODO: quest name (could be HQT?)
 				}),
 				crit(67059, {	-- Seven Soldiers
 					["sourceQuest"] = 78999,	-- Heart of a Hero
@@ -40,12 +42,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(68162, {	-- Remember Me, Earthen
 					["sourceQuest"] = 82895,	-- The Weight of Duty
 				}),
-				-- This is a criteria tree, it contains 2 base criteria
 				crit(67056, {	-- Brotherhood in the Skolzgal Wood
-				--	["sourceQuest"] = 80218,	-- TODO: quest name (could be HQT?)
+					-- Remove when the quest below is uncommented
+					["_noautomation"] = true,
+					--	["sourceQuest"] = 80218,	-- TODO: quest name (could be HQT?)
 				}),
 				crit(68254, {	-- Brotherhood in the Skolzgal Wood
-				--	["sourceQuest"] = 83181,	-- TODO: quest name (could be HQT?)
+					-- Intentionally did not add _noautomation here because showing the name portion of the criteriatree is enough
+					--	["sourceQuest"] = 83181,	-- TODO: quest name (could be HQT?)
 				}),
 			}),
 			pvp(ach(40083)),	-- Tour of Duty: Isle of Dorn
