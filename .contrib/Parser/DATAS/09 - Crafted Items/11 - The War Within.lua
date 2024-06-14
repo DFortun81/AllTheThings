@@ -700,11 +700,34 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 438961);	-- Overload Sporefused Herb
 		})),
 	}),
-	--[[
 	prof(INSCRIPTION, {
-		spell(, {	--
+		spell(444181, {	-- Khaz Algar Milling
+			i(224805),	-- Blossom Pigment+
+			i(224804),	-- Blossom Pigment++
+			i(224803),	-- Blossom Pigment+++
+			i(222612),	-- Luredrop Pigment+
+			i(222613),	-- Luredrop Pigment++
+			i(222614),	-- Luredrop Pigment+++
+			i(222618),	-- Nacreous Pigment+
+			i(222619),	-- Nacreous Pigment++
+			i(222620),	-- Nacreous Pigment+++
+			i(224802),	-- Orbinid Pigment+
+			i(224801),	-- Orbinid Pigment++
+			i(224800),	-- Orbinid Pigment+++
 		}),
 		n(DISCOVERY, {
+			spell(447868, {	-- Algari Treatise on Inscription
+				r(444187),	-- Algari Treatise on Alchemy
+				r(444184),	-- Algari Treatise on Blacksmithing
+				r(444188),	-- Algari Treatise on Enchanting
+				r(444223),	-- Algari Treatise on Engineering
+				r(444182),	-- Algari Treatise on Herbalism
+				r(444189),	-- Algari Treatise on Jewelcrafting
+				r(444185),	-- Algari Treatise on Leatherworking
+				r(444183),	-- Algari Treatise on Mining
+				r(444236),	-- Algari Treatise on Skinning
+				r(444186),	-- Algari Treatise on Tailoring
+			}),
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = INSCRIPTION,
@@ -713,16 +736,167 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		filter(GLYPHS, {
 		}),
 		filter(MISC, {
+			i(222635),	-- Algari Missive of Crafting Speed+
+			i(222636),	-- Algari Missive of Crafting Speed++
+			i(222637),	-- Algari Missive of Crafting Speed+++
+			i(222644),	-- Algari Missive of Deftness+
+			i(222645),	-- Algari Missive of Deftness++
+			i(222646),	-- Algari Missive of Deftness+++
+			i(222638),	-- Algari Missive of Finesse+
+			i(222639),	-- Algari Missive of Finesse++
+			i(222640),	-- Algari Missive of Finesse+++
+			i(222626),	-- Algari Missive of Ingenuity+
+			i(222627),	-- Algari Missive of Ingenuity++
+			i(222628),	-- Algari Missive of Ingenuity+++
+			i(222632),	-- Algari Missive of Multicraft+
+			i(222633),	-- Algari Missive of Multicraft++
+			i(222634),	-- Algari Missive of Multicraft+++
+			i(222641),	-- Algari Missive of Perception+
+			i(222642),	-- Algari Missive of Perception++
+			i(222643),	-- Algari Missive of Perception+++
+			i(222629),	-- Algari Missive of Resourcefulness+
+			i(222630),	-- Algari Missive of Resourcefulness++
+			i(222631),	-- Algari Missive of Resourcefulness+++
+			i(222579),	-- Algari Missive of the Aurora+
+			i(222580),	-- Algari Missive of the Aurora++
+			i(222581),	-- Algari Missive of the Aurora+++
+			i(222582),	-- Algari Missive of the Feverflare+
+			i(222583),	-- Algari Missive of the Feverflare++
+			i(222584),	-- Algari Missive of the Feverflare+++
+			i(222585),	-- Algari Missive of the Fireflash+
+			i(222586),	-- Algari Missive of the Fireflash++
+			i(222587),	-- Algari Missive of the Fireflash+++
+			i(222588),	-- Algari Missive of the Harmonious+
+			i(222589),	-- Algari Missive of the Harmonious++
+			i(222590),	-- Algari Missive of the Harmonious+++
+			i(222591),	-- Algari Missive of the Peerless+
+			i(222592),	-- Algari Missive of the Peerless++
+			i(222593),	-- Algari Missive of the Peerless+++
+			i(222594),	-- Algari Missive of the Quickblade+
+			i(222595),	-- Algari Missive of the Quickblade++
+			i(222596),	-- Algari Missive of the Quickblade+++
+			i(222546),	-- Algari Treatise on Alchemy
+			i(222554),	-- Algari Treatise on Blacksmithing
+			i(222550),	-- Algari Treatise on Enchanting
+			i(222621),	-- Algari Treatise on Engineering
+			i(222552),	-- Algari Treatise on Herbalism
+			i(222548),	-- Algari Treatise on Inscription
+			i(222551),	-- Algari Treatise on Jewelcrafting
+			i(222549),	-- Algari Treatise on Leatherworking
+			i(222553),	-- Algari Treatise on Mining
+			i(222649),	-- Algari Treatise on Skinning
+			i(222547),	-- Algari Treatise on Tailoring
+			i(222600),	-- Contract: Assembly of the Deeps+
+			i(222601),	-- Contract: Assembly of the Deeps++
+			i(222602),	-- Contract: Assembly of the Deeps+++
+			i(222597),	-- Contract: Council of Dornogal+
+			i(222598),	-- Contract: Council of Dornogal++
+			i(222599),	-- Contract: Council of Dornogal+++
+			i(222603),	-- Contract: Hallowfall Arathi+
+			i(222604),	-- Contract: Hallowfall Arathi++
+			i(222605),	-- Contract: Hallowfall Arathi+++
+			i(222606),	-- Contract: The Severed Threads+
+			i(222607),	-- Contract: The Severed Threads++
+			i(222608),	-- Contract: The Severed Threads+++
+			i(226022),	-- Darkmoon Sigil: Evolution+
+			i(226023),	-- Darkmoon Sigil: Evolution++
+			i(226024),	-- Darkmoon Sigil: Evolution+++
+			i(226025),	-- Darkmoon Sigil: Radiance+
+			i(226026),	-- Darkmoon Sigil: Radiance++
+			i(226027),	-- Darkmoon Sigil: Radiance+++
+			i(226028),	-- Darkmoon Sigil: Symbiosis+
+			i(226029),	-- Darkmoon Sigil: Symbiosis++
+			i(226030),	-- Darkmoon Sigil: Symbiosis+++
+			i(226031),	-- Darkmoon Sigil: Vivacity+
+			i(226032),	-- Darkmoon Sigil: Vivacity++
+			i(226033),	-- Darkmoon Sigil: Vivacity+++
+			i(226034),	-- Vantus Rune: Nerub-ar Palace+
+			i(226035),	-- Vantus Rune: Nerub-ar Palace++
+			i(226036),	-- Vantus Rune: Nerub-ar Palace+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
+			i(222577),	-- Burnt Rolling Pin
+			i(222575),	-- Hasty Alchemist's Mixing Rod
+			i(222578),	-- Inscribed Rolling Pin
+			i(222573),	-- Lightweight Scribe's Quill
+			i(222576),	-- Patient Alchemist's Mixing Rod
+			i(222574),	-- Silver Tongue's Quill
 		}),
 		filter(REAGENTS, {
+			i(222615),	-- Apricate Ink+
+			i(222616),	-- Apricate Ink++
+			i(222617),	-- Apricate Ink+++
+			i(222558),	-- Boundless Cipher+
+			i(222559),	-- Boundless Cipher++
+			i(222560),	-- Boundless Cipher+++
+			i(222555),	-- Codified Greenwood+
+			i(222556),	-- Codified Greenwood++
+			i(222557),	-- Codified Greenwood+++
+			i(222609),	-- Shadow Ink+
+			i(222610),	-- Shadow Ink++
+			i(222611),	-- Shadow Ink+++
+		}),
+		spell(444224, {	-- Transcribe: Evolution
+			i(222681),	-- Ace of Evolution
+			i(222682),	-- Two of Evolution
+			i(222683),	-- Three of Evolution
+			i(222684),	-- Four of Evolution
+			i(222685),	-- Five of Evolution
+			i(222686),	-- Six of Evolution
+			i(222687),	-- Seven of Evolution
+			i(222688),	-- Eight of Evolution
+		}),
+		spell(444227, {	-- Transcribe: Radiance
+			i(222663),	-- Ace of Radiance
+			i(222664),	-- Two of Radiance
+			i(222665),	-- Three of Radiance
+			i(222666),	-- Four of Radiance
+			i(222667),	-- Five of Radiance
+			i(222668),	-- Six of Radiance
+			i(222669),	-- Seven of Radiance
+			i(222670),	-- Eight of Radiance
+		}),
+		spell(444226, {	-- Transcribe: Symbiosis
+			i(222654),	-- Ace of Symbiosis
+			i(222655),	-- Two of Symbiosis
+			i(222656),	-- Three of Symbiosis
+			i(222657),	-- Four of Symbiosis
+			i(222658),	-- Five of Symbiosis
+			i(222659),	-- Six of Symbiosis
+			i(222660),	-- Seven of Symbiosis
+			i(222661),	-- Eight of Symbiosis
+		}),
+		spell(444225, {	-- Transcribe: Vivacity
+			i(222672),	-- Ace of Vivacity
+			i(222673),	-- Two of Vivacity
+			i(222674),	-- Three of Vivacity
+			i(222675),	-- Four of Vivacity
+			i(222676),	-- Five of Vivacity
+			i(222677),	-- Six of Vivacity
+			i(222678),	-- Seven of Vivacity
+			i(222679),	-- Eight of Vivacity
 		}),
 		filter(TRINKET_F, {
+			i(219933),	-- Algari Competitor's Emblem
+			i(219932),	-- Algari Competitor's Insignia of Alacrity
+			i(222680),	-- Darkmoon Deck: Evolve
+			i(219672),	-- Darkmoon Deck: Radiance
+			i(222653),	-- Darkmoon Deck: Symbiosis
+			i(222671),	-- Darkmoon Deck: Vivacity
 		}),
 		n(WEAPONS, {
+			i(225372),	-- Algari Competitor's Censer
+			i(225368),	-- Algari Competitor's Scythe
+			i(225369),	-- Algari Competitor's Staff
+			i(222570),	-- Inquisitor's Baton
+			i(222569),	-- Inquisitor's Crutch
+			i(222565),	-- Inquisitor's Torch
+			i(222568),	-- Vagabond's Bounding Baton
+			i(222567),	-- Vagabond's Careful Crutch
+			i(222566),	-- Vagabond's Torch
 		}),
 	}),
+	--[[
 	prof(JEWELCRAFTING, {
 		spell(, {	--
 		}),

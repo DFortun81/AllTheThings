@@ -1588,3 +1588,84 @@ i(0, 422337);		-- Lydiara's Binding Rune
 i(211611, 430092);	-- Draconic Combatant's Emblem
 i(211610, 430091);	-- Draconic Combatant's Insignia of Alacrity
 i(211609, 430090);	-- Draconic Combatant's Medallion
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+--- TRAINER ---
+i(0, 423338);		-- Khaz Algar Inscription
+i(0, 444181);		-- Khaz Algar Milling
+i(0, 444210);		-- Algari Missive of the Aurora
+i(0, 444211);		-- Algari Missive of the Feverflare
+i(0, 444212);		-- Algari Missive of the Fireflash
+i(0, 444213);		-- Algari Missive of the Harmonious
+i(0, 444214);		-- Algari Missive of the Peerless
+i(0, 444215);		-- Algari Missive of the Quickblade
+i(0, 444222);		-- Apricate Ink
+i(0, 444191);		-- Boundless Cipher
+i(0, 444208);		-- Burnt Rolling Pin
+i(0, 444190);		-- Codified Greenwood
+i(0, 444206);		-- Hasty Alchemist's Mixing Rod
+i(0, 444201);		-- Inquisitor's Baton
+i(0, 444200);		-- Inquisitor's Crutch
+i(0, 444196);		-- Inquisitor's Torch
+i(0, 444204);		-- Lightweight Scribe's Quill
+i(0, 425140);		-- Recraft Equipment
+i(0, 444228);		-- Recraft Equipment
+i(0, 444221);		-- Shadow Ink
+i(0, 444203);		-- Vantus Rune: Nerub-ar Palace
+--- ITEM ---
+i(225484, 455006);	-- Algari Competitor's Censer
+i(225477, 444338);	-- Algari Competitor's Emblem
+i(225476, 444337);	-- Algari Competitor's Insignia of Alacrity
+i(225475, 444336);	-- Algari Competitor's Medallion
+i(225480, 455007);	-- Algari Competitor's Scythe
+i(225481, 455008);	-- Algari Competitor's Staff
+i(223068, 444232);	-- Algari Missive of Crafting Speed
+i(223071, 444235);	-- Algari Missive of Deftness
+i(223069, 444233);	-- Algari Missive of Finesse
+i(223065, 444229);	-- Algari Missive of Ingenuity
+i(223067, 444231);	-- Algari Missive of Multicraft
+i(223070, 444234);	-- Algari Missive of Perception
+i(223066, 444230);	-- Algari Missive of Resourcefulness
+i(223061, 444209);	-- Inscribed Rolling Pin
+i(223060, 444207);	-- Patient Alchemist's Mixing Rod
+--- SPECIALIZATION ---
+i(0, 447868);		-- Algari Treatise on Inscription
+i(0, 444192);		-- Darkmoon Sigil: Evolve
+i(0, 444193);		-- Darkmoon Sigil: Radiance
+i(0, 444194);		-- Darkmoon Sigil: Symbiosis
+i(0, 444195);		-- Darkmoon Sigil: Vivacity
+i(0, 444205);		-- Silver Tongue's Quill
+i(0, 444199);		-- Vagabond's Bounding Baton
+i(0, 444198);		-- Vagabond's Careful Crutch
+i(0, 444197);		-- Vagabond's Torch
+i(0, 444224);		-- Transcribe: Evolution
+i(0, 444227);		-- Transcribe: Radiance
+i(0, 444226);		-- Transcribe: Symbiosis
+i(0, 444225);		-- Transcribe: Vivacity
+--- DISCOVERY ---
+i(0, 444187);		-- Algari Treatise on Alchemy
+i(0, 444184);		-- Algari Treatise on Blacksmithing
+i(0, 444188);		-- Algari Treatise on Enchanting
+i(0, 444223);		-- Algari Treatise on Engineering
+i(0, 444182);		-- Algari Treatise on Herbalism
+i(0, 444189);		-- Algari Treatise on Jewelcrafting
+i(0, 444185);		-- Algari Treatise on Leatherworking
+i(0, 444183);		-- Algari Treatise on Mining
+i(0, 444236);		-- Algari Treatise on Skinning
+i(0, 444186);		-- Algari Treatise on Tailoring
+--- Unknown ---
+i(223063, 444217);	-- Contract: Assembly of the Deeps
+i(223062, 444220);	-- Contract: Council of Dornogal
+i(223064, 444218);	-- Contract: Hallowfall Arathi
+i(225355, 444219);	-- Contract: The Severed Threads
+--- NYI ---
+i(0, 445068);		-- Inquisitor's Greenwood Bow
+i(0, 441318);		-- Miner's Rune of Decyphering
+i(0, 445069);		-- Vagabond's Alacrity
+i(223072, 445070);	-- Colors of the Wind
+i(223059, 444202);	-- Lexicon of Mysteries
+i(223034, 0);		-- Technique: Inscribed Rolling Pin
+i(223032, 0);		-- Technique: Lexicon of Mysteries
+i(223033, 0);		-- Technique: Patient Alchemist's Mixing Rod

@@ -114,6 +114,22 @@ root(ROOTS.Unsorted, {
 					i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 					i(223125),	-- Formula: Oil of Deep Toxins (RECIPE!)
 				}),
+				prof(INSCRIPTION, {
+					i(223063),	-- Technique: Contract: Assembly of the Deeps (RECIPE!)
+					i(223062),	-- Technique: Contract: Council of Dornogal (RECIPE!)
+					i(223064),	-- Technique: Contract: Hallowfall Arathi (RECIPE!)
+					i(225355),	-- Technique: Contract: The Severed Threads (RECIPE!)
+					i(223060),	-- Technique: Patient Alchemist's Mixing Rod (RECIPE!) [Fungarian Delve Drop?]
+					i(222545),	-- Khaz Algar Milling
+					i(222108),	-- Khaz Algar Milling
+					i(219599),	-- Fortuitous Essence
+					i(219632),	-- Scribe Water
+					i(222622),	-- Transcribe to Evolution \\ Extraction: Evolve
+					i(222623),	-- Transcribe to Vivacity \\ Extraction: Vivacity
+					i(222624),	-- Transcribe to Symbiosis \\ Extraction: Symbiosis
+					i(222625),	-- Transcribe to Radiance \\ Extraction: Shine
+					i(222689),	-- Fortuitous Essence
+				}),
 			}),
 			i(206134),	-- Potion of Healing
 			i(206211),	-- Onyx Annulet
@@ -2183,120 +2199,6 @@ root(ROOTS.Unsorted, {
 			i(219512),	-- Weathered Stormfront Vest
 			i(219513),	-- Roiling Thunderstrike Talons
 			i(219522),	-- Radiant Fuel Crystal
-			i(219528),	-- Sable Ink
-			i(219529),	-- Sable Ink
-			i(219530),	-- Sable Ink
-			i(219531),	-- Sable Pigment
-			i(219532),	-- Sable Pigment
-			i(219533),	-- Sable Pigment
-			i(219534),	-- Apricate Ink
-			i(219535),	-- Apricate Ink
-			i(219536),	-- Apricate Ink
-			i(219537),	-- Apricate Pigment
-			i(219538),	-- Apricate Pigment
-			i(219539),	-- Apricate Pigment
-			i(219540),	-- Bound Spearwood
-			i(219541),	-- Bound Spearwood
-			i(219542),	-- Bound Spearwood
-			i(219543),	-- Cipher of Movement
-			i(219544),	-- Cipher of Movement
-			i(219545),	-- Cipher of Movement
-			i(219546),	-- Cipher of Exhileration
-			i(219547),	-- Cipher of Exhileration
-			i(219548),	-- Cipher of Exhileration
-			i(219549),	-- Cipher of Perfection
-			i(219550),	-- Cipher of Perfection
-			i(219551),	-- Cipher of Perfection
-			i(219552),	-- Cipher of Cooperation
-			i(219553),	-- Cipher of Cooperation
-			i(219554),	-- Cipher of Cooperation
-			i(219555),	-- Darkmoon Sigil: Evolution
-			i(219556),	-- Darkmoon Sigil: Evolution
-			i(219557),	-- Darkmoon Sigil: Evolution
-			i(219558),	-- Darkmoon Sigil: Shine
-			i(219559),	-- Darkmoon Sigil: Shine
-			i(219560),	-- Darkmoon Sigil: Shine
-			i(219561),	-- Darkmoon Sigil: Symbiosis
-			i(219562),	-- Darkmoon Sigil: Symbiosis
-			i(219563),	-- Darkmoon Sigil: Symbiosis
-			i(219564),	-- Darkmoon Sigil: Vivacity
-			i(219565),	-- Darkmoon Sigil: Vivacity
-			i(219566),	-- Darkmoon Sigil: Vivacity
-			i(219599),	-- Fortuitous Essence
-			i(219600),	-- Burnt Rolling Pin
-			i(219601),	-- Lightweight Scribe's Quill
-			i(219602),	-- Hasty Alchemist's Mixing Rod
-			i(219603),	-- Patient Alchemist's Mixing Rod
-			i(219604),	-- Inscribed Rolling Pin
-			i(219605),	-- Silver Tongue's Quill
-			i(219606),	-- Vantus of Progress: 11.0 Raid
-			i(219607),	-- Vantus of Progress: 11.0 Raid
-			i(219608),	-- Vantus of Progress: 11.0 Raid
-			i(219609),	-- Inquisitor's Codex
-			i(219610),	-- Endgame Offhand
-			i(219611),	-- Leveling Agility Stave
-			i(219612),	-- Inquisitor's Crutch
-			i(219613),	-- Lexicon of Mysteries
-			i(219614),	-- Vagabond's Baton
-			i(219615),	-- Vagabond's Post
-			i(219616),	-- Inquisitor's Greenwood Bow
-			i(219617),	-- Vagabond's Alacrity
-			i(219618),	-- Colors of the Wind
-			i(219621),	-- Algari Treatise on Alchemy \\ Algarian Treatise on Alchemy
-			i(219622),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
-			i(219623),	-- Algari Treatise on Blacksmithing \\ Algarian Treatise on Blacksmithing
-			i(219624),	-- Algari Treatise on Enchanting \\ Algarian Treatise on Enchanting
-			i(219625),	-- Algari Treatise on Herbalism \\ Algarian Treatise on Herbalism
-			i(219626),	-- Algari Treatise on Inscription \\ Algarian Treatise on Inscription
-			i(219627),	-- Algari Treatise on Jewelcrafting \\ Algarian Treatise on Jewelcrafting
-			i(219628),	-- Algari Treatise on Leatherworking \\ Algarian Treatise on Leatherworking
-			i(219629),	-- Algari Treatise on Mining \\ Algarian Treatise on Mining
-			i(219630),	-- Algari Treatise on Tailoring \\ Algarian Treatise on Tailoring
-			i(219631),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
-			i(219632),	-- Scribe Water
-			i(219633),	-- Vantus Rune: 11.0 Season 1 Raid
-			i(219634),	-- Vantus Rune: 11.0 Season 1 Raid
-			i(219635),	-- Vantus Rune: 11.0 Season 1 Raid
-			i(219636),	-- Contract: Khaz Algar
-			i(219637),	-- Contract: Khaz Algar
-			i(219638),	-- Contract: Khaz Algar
-			i(219639),	-- Contract: Arathor
-			i(219640),	-- Contract: Arathor
-			i(219641),	-- Contract: Arathor
-			i(219642),	-- Contract: Nerubian
-			i(219643),	-- Contract: Nerubian
-			i(219644),	-- Contract: Nerubian
-			i(219645),	-- Contract: 11.0 Artisan's Consortium
-			i(219646),	-- Contract: 11.0 Artisan's Consortium
-			i(219647),	-- Contract: 11.0 Artisan's Consortium
-			i(219648),	-- Contract: Renown D
-			i(219649),	-- Contract: Renown D
-			i(219650),	-- Contract: Renown D
-			i(219651),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(219652),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(219653),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(219654),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
-			i(219655),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
-			i(219656),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
-			i(219657),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
-			i(219658),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
-			i(219659),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
-			i(219660),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
-			i(219661),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
-			i(219662),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
-			i(219663),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
-			i(219664),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
-			i(219665),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
-			i(219666),	-- Algari Missive of Perception \\ Algarian Missive of Perception
-			i(219667),	-- Algari Missive of Perception \\ Algarian Missive of Perception
-			i(219668),	-- Algari Missive of Perception \\ Algarian Missive of Perception
-			i(219669),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
-			i(219670),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
-			i(219671),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
-			i(219672),	-- Darkmoon Deck: Radiance \\ Darkmoon Deck: Shine
-			i(219673),	-- Darkmook Deck: Symbiosis
-			i(219674),	-- Darkmoon Deck: Evolve
-			i(219675),	-- Darkmoon Deck: Vivacity
 			i(219676),	-- Common Fish A
 			i(219677),	-- Common Fish B
 			i(219678),	-- Common Fish C
@@ -2377,48 +2279,6 @@ root(ROOTS.Unsorted, {
 			i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
 			i(219804),	-- [DNT] Antiparalytic Serum
 			i(219808),	-- Ethereal Sugar
-			i(219819),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(219820),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(219821),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(219822),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(219823),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(219824),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(219825),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(219826),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(219827),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(219828),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(219829),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(219830),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(219831),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(219832),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(219833),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(219834),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(219835),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(219836),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(219837),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(219838),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(219839),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(219840),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(219841),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(219842),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(219843),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(219844),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(219845),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(219846),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(219847),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(219848),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(219849),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(219850),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(219851),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(219852),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(219853),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(219854),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(219855),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(219856),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(219857),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(219858),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(219859),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(219860),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
 			i(219861),	-- Gardener's Basket
 			i(219862),	-- Hideseeker's Pack
 			i(219863),	-- Hideseeker's Hat
@@ -2476,8 +2336,6 @@ root(ROOTS.Unsorted, {
 			i(219919),	-- Blade of Hatred
 			i(219923),	-- Blade of Hatred
 			i(219931),	-- Algari Competitor's Medallion \\ Vicious Competitor's Medallion
-			i(219932),	-- Algari Competitor's Insignia of Alacrity \\ Vicious Competitor's Insignia of Alacrity
-			i(219933),	-- Algari Competitor's Emblem \\ Vicious Competitor's Emblem
 			i(219934),	-- Spark of War
 			i(219939),	-- Alleria's Crystal
 			i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
@@ -2531,7 +2389,6 @@ root(ROOTS.Unsorted, {
 			i(220156),	-- Bubbling Wax
 			i(220157),	-- Lightbringer's Amulet \\ [PH] The Cool Arathi Necklace (Stage 2)
 			i(220158),	-- Lightbringer's Amulet \\ [PH] The Cool Arathi Necklace (Stage 3)
-			i(220171),	-- Darkmoon Deck: Symbiosis
 			i(220174),	-- Core Alloy
 			i(220175),	-- Core Alloy
 			i(220176),	-- Core Alloy
@@ -3235,147 +3092,6 @@ root(ROOTS.Unsorted, {
 			i(222105),	-- Queen's Lurefish
 			i(222106),	-- Cursed Ghoulfish
 			i(222107),	-- Kah, King of the Deeps
-			i(222108),	-- Khaz Algar Milling
-			i(222109),	-- Algari Treatise on Alchemy \\ Algarian Treatise on Alchemy
-			i(222110),	-- Algari Treatise on Tailoring \\ Algarian Treatise on Tailoring
-			i(222111),	-- Algari Treatise on Inscription \\ Algarian Treatise on Inscription
-			i(222112),	-- Algari Treatise on Leatherworking \\ Algarian Treatise on Leatherworking
-			i(222113),	-- Algari Treatise on Enchanting \\ Algarian Treatise on Enchanting
-			i(222114),	-- Algari Treatise on Jewelcrafting \\ Algarian Treatise on Jewelcrafting
-			i(222115),	-- Algari Treatise on Herbalism \\ Algarian Treatise on Herbalism
-			i(222116),	-- Algari Treatise on Mining \\ Algarian Treatise on Mining
-			i(222117),	-- Algari Treatise on Blacksmithing \\ Algarian Treatise on Blacksmithing
-			i(222118),	-- Codified Greenwood
-			i(222119),	-- Codified Greenwood
-			i(222120),	-- Codified Greenwood
-			i(222121),	-- Boundless Cipher
-			i(222122),	-- Boundless Cipher
-			i(222123),	-- Boundless Cipher
-			i(222124),	-- Darkmoon Sigil: Evolution
-			i(222125),	-- Darkmoon Sigil: Shine
-			i(222126),	-- Darkmoon Sigil: Symbiosis
-			i(222127),	-- Darkmoon Sigil: Vivacity
-			i(222128),	-- Inquisitor's Codex
-			i(222129),	-- Vagabond's Codex
-			i(222130),	-- Vagabond's Careful Crutch
-			i(222131),	-- Vagabond's Bounding Baton
-			i(222132),	-- Inquisitor's Crutch
-			i(222133),	-- Inquisitor's Baton
-			i(222134),	-- Lexicon of Mysteries
-			i(222135),	-- Vantus Rune: 11.0 Raid
-			i(222136),	-- Lightweight Scribe's Quill
-			i(222137),	-- Silver Tongue's Quill
-			i(222138),	-- Hasty Alchemist's Mixing Rod
-			i(222139),	-- Patient Alchemist's Mixing Rod
-			i(222140),	-- Burnt Rolling Pin
-			i(222141),	-- Inscribed Rolling Pin
-			i(222142),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(222143),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(222144),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(222145),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(222146),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(222147),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(222148),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(222149),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(222150),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(222151),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(222152),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(222153),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(222154),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(222155),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(222156),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(222157),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(222158),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(222159),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(222160),	-- Contract: Earthen
-			i(222161),	-- Contract: Earthen
-			i(222162),	-- Contract: Earthen
-			i(222163),	-- Contract: Arathor
-			i(222164),	-- Contract: Arathor
-			i(222165),	-- Contract: Arathor
-			i(222166),	-- Contract: Nerubian
-			i(222167),	-- Contract: Nerubian
-			i(222168),	-- Contract: Nerubian
-			i(222169),	-- Contract: Artisan
-			i(222170),	-- Contract: Artisan
-			i(222171),	-- Contract: Artisan
-			i(222172),	-- Sable Ink
-			i(222173),	-- Sable Ink
-			i(222174),	-- Sable Ink
-			i(222175),	-- Sable Pigment
-			i(222176),	-- Sable Pigment
-			i(222177),	-- Sable Pigment
-			i(222178),	-- Apricate Ink
-			i(222179),	-- Apricate Ink
-			i(222180),	-- Apricate Ink
-			i(222181),	-- Apricate Pigment
-			i(222182),	-- Apricate Pigment
-			i(222183),	-- Apricate Pigment
-			i(222184),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
-			i(222185),	-- Extraction: Evolve
-			i(222186),	-- Extraction: Vivacity
-			i(222187),	-- Extraction: Symbiosis
-			i(222188),	-- Extraction: Shine
-			i(222189),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(222190),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(222191),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(222192),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
-			i(222193),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
-			i(222194),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
-			i(222195),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
-			i(222196),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
-			i(222197),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
-			i(222198),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
-			i(222199),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
-			i(222200),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
-			i(222201),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
-			i(222202),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
-			i(222203),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
-			i(222204),	-- Algari Missive of Perception \\ Algarian Missive of Perception
-			i(222205),	-- Algari Missive of Perception \\ Algarian Missive of Perception
-			i(222206),	-- Algari Missive of Perception \\ Algarian Missive of Perception
-			i(222207),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
-			i(222208),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
-			i(222209),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
-			i(222210),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
-			i(222211),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
-			i(222212),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
-			i(222213),	-- Darkmoon Deck: Symbiosis
-			i(222214),	-- Ace of Symbiosis
-			i(222215),	-- Two of Symbiosis
-			i(222216),	-- Three of Symbiosis
-			i(222217),	-- Four of Symbiosis
-			i(222218),	-- Five of Symbiosis
-			i(222219),	-- Six of Symbiosis
-			i(222220),	-- Seven of Symbiosis
-			i(222221),	-- Eight of Symbiosis
-			i(222222),	-- Darkmoon Deck: Shine
-			i(222223),	-- Ace of Shining
-			i(222224),	-- Two of Shining
-			i(222225),	-- Three of Shining
-			i(222226),	-- Four of Shining
-			i(222227),	-- Five of Shining
-			i(222228),	-- Six of Shining
-			i(222229),	-- Seven of Shining
-			i(222230),	-- Eight of Shining
-			i(222231),	-- Darkmoon Deck: Vivacity
-			i(222232),	-- Ace of Vivacity
-			i(222233),	-- Two of Vivacity
-			i(222234),	-- Three of Vivacity
-			i(222235),	-- Four of Vivacity
-			i(222236),	-- Five of Vivacity
-			i(222237),	-- Six of Vivacity
-			i(222238),	-- Seven of Vivacity
-			i(222239),	-- Eight of Vivacity
-			i(222240),	-- Darkmoon Deck: Evolve
-			i(222241),	-- Ace of Evolution
-			i(222242),	-- Two of Evolution
-			i(222243),	-- Three of Evolution
-			i(222244),	-- Four of Evolution
-			i(222245),	-- Five of Evolution
-			i(222246),	-- Six of Evolution
-			i(222247),	-- Seven of Evolution
-			i(222248),	-- Eight of Evolution
 			i(222250),	-- Chopped Mycobloom
 			i(222251),	-- Portioned Steak
 			i(222252),	-- Spiced Meat Stock
@@ -3669,151 +3385,6 @@ root(ROOTS.Unsorted, {
 			i(222542),	-- Queen's Lurefish
 			i(222543),	-- Cursed Ghoulfish
 			i(222544),	-- Kah, King of the Deeps
-			i(222545),	-- Khaz Algar Milling
-			i(222546),	-- Algari Treatise on Alchemy \\ Algarian Treatise on Alchemy
-			i(222547),	-- Algari Treatise on Tailoring \\ Algarian Treatise on Tailoring
-			i(222548),	-- Algari Treatise on Inscription \\ Algarian Treatise on Inscription
-			i(222549),	-- Algari Treatise on Leatherworking \\ Algarian Treatise on Leatherworking
-			i(222550),	-- Algari Treatise on Enchanting \\ Algarian Treatise on Enchanting
-			i(222551),	-- Algari Treatise on Jewelcrafting \\ Algarian Treatise on Jewelcrafting
-			i(222552),	-- Algari Treatise on Herbalism \\ Algarian Treatise on Herbalism
-			i(222553),	-- Algari Treatise on Mining \\ Algarian Treatise on Mining
-			i(222554),	-- Algari Treatise on Blacksmithing \\ Algarian Treatise on Blacksmithing
-			i(222555),	-- Codified Greenwood
-			i(222556),	-- Codified Greenwood
-			i(222557),	-- Codified Greenwood
-			i(222558),	-- Boundless Cipher
-			i(222559),	-- Boundless Cipher
-			i(222560),	-- Boundless Cipher
-			i(222561),	-- Darkmoon Sigil: Evolution
-			i(222562),	-- Darkmoon Sigil: Shine
-			i(222563),	-- Darkmoon Sigil: Symbiosis
-			i(222564),	-- Darkmoon Sigil: Vivacity
-			i(222565),	-- Inquisitor's Torch \\ Inquisitor's Codex
-			i(222566),	-- Vagabond's Torch \\ Vagabond's Codex
-			i(222567),	-- Vagabond's Careful Crutch
-			i(222568),	-- Vagabond's Bounding Baton
-			i(222569),	-- Inquisitor's Crutch
-			i(222570),	-- Inquisitor's Baton
-			i(222571),	-- Lexicon of Mysteries
-			i(222572),	-- Vantus Rune: 11.0 Raid
-			i(222573),	-- Lightweight Scribe's Quill
-			i(222574),	-- Silver Tongue's Quill
-			i(222575),	-- Hasty Alchemist's Mixing Rod
-			i(222576),	-- Patient Alchemist's Mixing Rod
-			i(222577),	-- Burnt Rolling Pin
-			i(222578),	-- Inscribed Rolling Pin
-			i(222579),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(222580),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(222581),	-- Algari Missive of the Aurora \\ Algarian Missive of the Aurora
-			i(222582),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(222583),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(222584),	-- Algari Missive of the Feverflare \\ Algarian Missive of the Feverflare
-			i(222585),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(222586),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(222587),	-- Algari Missive of the Fireflash \\ Algarian Missive of the Fireflash
-			i(222588),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(222589),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(222590),	-- Algari Missive of the Harmonious \\ Algarian Missive of the Harmonious
-			i(222591),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(222592),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(222593),	-- Algari Missive of the Peerless \\ Algarian Missive of the Peerless
-			i(222594),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(222595),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(222596),	-- Algari Missive of the Quickblade \\ Algarian Missive of the Quickblade
-			i(222597),	-- Contract: Council of Dornogal \\ Contract: Earthen
-			i(222598),	-- Contract: Council of Dornogal \\ Contract: Earthen
-			i(222599),	-- Contract: Council of Dornogal \\ Contract: Earthen
-			i(222600),	-- Contract: Assembly of the Deeps \\ Contract: Arathor
-			i(222601),	-- Contract: Assembly of the Deeps \\ Contract: Arathor
-			i(222602),	-- Contract: Assembly of the Deeps \\ Contract: Arathor
-			i(222603),	-- Contract: Hallowfall Arathi \\ Contract: Nerubian
-			i(222604),	-- Contract: Hallowfall Arathi \\ Contract: Nerubian
-			i(222605),	-- Contract: Hallowfall Arathi \\ Contract: Nerubian
-			i(222606),	-- Contract: The Severed Threads \\ Contract: Artisan
-			i(222607),	-- Contract: The Severed Threads \\ Contract: Artisan
-			i(222608),	-- Contract: The Severed Threads \\ Contract: Artisan
-			i(222609),	-- Shadow Ink \\ Sable Ink
-			i(222610),	-- Shadow Ink \\ Sable Ink
-			i(222611),	-- Shadow Ink \\ Sable Ink
-			i(222612),	-- Luredrop Pigment \\ Sable Pigment
-			i(222613),	-- Luredrop Pigment \\ Sable Pigment
-			i(222614),	-- Luredrop Pigment \\ Sable Pigment
-			i(222615),	-- Apricate Ink
-			i(222616),	-- Apricate Ink
-			i(222617),	-- Apricate Ink
-			i(222618),	-- Nacreous Pigment \\ Apricate Pigment
-			i(222619),	-- Nacreous Pigment \\ Apricate Pigment
-			i(222620),	-- Nacreous Pigment \\ Apricate Pigment
-			i(222621),	-- Algari Treatise on Engineering \\ Algarian Treatise on Engineering
-			i(222622),	-- Transcribe to Evolution \\ Extraction: Evolve
-			i(222623),	-- Transcribe to Vivacity \\ Extraction: Vivacity
-			i(222624),	-- Transcribe to Symbiosis \\ Extraction: Symbiosis
-			i(222625),	-- Transcribe to Radiance \\ Extraction: Shine
-			i(222626),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(222627),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(222628),	-- Algari Missive of Inspiration \\ Algarian Missive of Inspiration
-			i(222629),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
-			i(222630),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
-			i(222631),	-- Algari Missive of Resourcefulness \\ Algarian Missive of Resourcefulness
-			i(222632),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
-			i(222633),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
-			i(222634),	-- Algari Missive of Multicraft \\ Algarian Missive of Multicraft
-			i(222635),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
-			i(222636),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
-			i(222637),	-- Algari Missive of Crafting Speed \\ Algarian Missive of Crafting Speed
-			i(222638),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
-			i(222639),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
-			i(222640),	-- Algari Missive of Finesse \\ Algarian Missive of Finesse
-			i(222641),	-- Algari Missive of Perception \\ Algarian Missive of Perception
-			i(222642),	-- Algari Missive of Perception \\ Algarian Missive of Perception
-			i(222643),	-- Algari Missive of Perception \\ Algarian Missive of Perception
-			i(222644),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
-			i(222645),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
-			i(222646),	-- Algari Missive of Deftness \\ Algarian Missive of Deftness
-			i(222647),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
-			i(222648),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
-			i(222649),	-- Algari Treatise on Skinning \\ Algarian Treatise on Skinning
-			i(222650),	-- DNT Inquisitor's Greenwood Bow (Deprecated) \\ Inquisitor's Greenwood Bow
-			i(222651),	-- DNT Vagabond's Alacrity (Deprecated) \\ Vagabond's Alacrity
-			i(222652),	-- DNT Colors of the Wind (Deprecated) \\ Colors of the Wind
-			i(222653),	-- Darkmoon Deck: Symbiosis
-			i(222654),	-- Ace of Symbiosis
-			i(222655),	-- Two of Symbiosis
-			i(222656),	-- Three of Symbiosis
-			i(222657),	-- Four of Symbiosis
-			i(222658),	-- Five of Symbiosis
-			i(222659),	-- Six of Symbiosis
-			i(222660),	-- Seven of Symbiosis
-			i(222661),	-- Eight of Symbiosis
-			i(222662),	-- Darkmoon Deck: Shine
-			i(222663),	-- Ace of Radiance \\ Ace of Shining
-			i(222664),	-- Two of Radiance \\ Two of Shining
-			i(222665),	-- Three of Radiance \\ Three of Shining
-			i(222666),	-- Four of Radiance \\ Four of Shining
-			i(222667),	-- Five of Radiance \\ Five of Shining
-			i(222668),	-- Six of Radiance \\ Six of Shining
-			i(222669),	-- Seven of Radiance \\ Seven of Shining
-			i(222670),	-- Eight of Radiance \\ Eight of Shining
-			i(222671),	-- Darkmoon Deck: Vivacity
-			i(222672),	-- Ace of Vivacity
-			i(222673),	-- Two of Vivacity
-			i(222674),	-- Three of Vivacity
-			i(222675),	-- Four of Vivacity
-			i(222676),	-- Five of Vivacity
-			i(222677),	-- Six of Vivacity
-			i(222678),	-- Seven of Vivacity
-			i(222679),	-- Eight of Vivacity
-			i(222680),	-- Darkmoon Deck: Evolve
-			i(222681),	-- Ace of Evolution
-			i(222682),	-- Two of Evolution
-			i(222683),	-- Three of Evolution
-			i(222684),	-- Four of Evolution
-			i(222685),	-- Five of Evolution
-			i(222686),	-- Six of Evolution
-			i(222687),	-- Seven of Evolution
-			i(222688),	-- Eight of Evolution
-			i(222689),	-- Fortuitous Essence
 			i(222690),	-- Chopped Mycobloom
 			i(222691),	-- Portioned Steak
 			i(222692),	-- Spiced Meat Stock
@@ -4072,9 +3643,9 @@ root(ROOTS.Unsorted, {
 			i(223029),	-- Plans: Webbed Fishing Line
 			i(223030),	-- Plans: Weighted Lure
 			i(223031),	-- Plans: Coreforged Skeleton Key
-			i(223032),	-- Technique: Lexicon of Mysteries
-			i(223033),	-- Technique: Patient Alchemist's Mixing Rod
-			i(223034),	-- Technique: Inscribed Rolling Pin
+
+
+
 			i(223035),	-- Plans: Charged Hexsword
 			i(223036),	-- Plans: Charged Runeaxe
 			i(223037),	-- Plans: Charged Facesmasher
@@ -4097,20 +3668,6 @@ root(ROOTS.Unsorted, {
 			i(223054),	-- Plans: Artisan Leatherworker's Toolset
 			i(223055),	-- Plans: Seasoned Skillet
 			i(223057),	-- Plans: Weighted Lure
-			i(223059),	-- Technique: Lexicon of Mysteries
-			i(223060),	-- Technique: Patient Alchemist's Mixing Rod
-			i(223061),	-- Technique: Inscribed Rolling Pin
-			i(223062),	-- Technique: Contract: Council of Dornogal \\ Technique: Contract: Earthen
-			i(223063),	-- Technique: Contract: Assembly of the Deeps \\ Technique: Contract: Arathor
-			i(223064),	-- Technique: Contract: Hallowfall Arathi \\ Technique: Contract: Nerubian
-			i(223065),	-- Technique: Algari Missive of Ingenuity \\ Technique: Algarian Missive of Ingenuity
-			i(223066),	-- Technique: Algari Missive of Resourcefulness \\ Technique: Algarian Missive of Resourcefulness
-			i(223067),	-- Technique: Algari Missive of Multicraft \\ Technique: Algarian Missive of Multicraft
-			i(223068),	-- Technique: Algari Missive of Crafting Speed \\ Technique: Algarian Missive of Crafting Speed
-			i(223069),	-- Technique: Algari Missive of Finesse \\ Technique: Algarian Missive of Finesse
-			i(223070),	-- Technique: Algari Missive of Perception \\ Technique: Algarian Missive of Perception
-			i(223071),	-- Technique: Algari Missive of Deftness \\ Technique: Algarian Missive of Deftness
-			i(223072),	-- Technique: Colors of the Wind [DEPRECATED] \\ Technique: Colors of the Wind
 			i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
 			i(223082),	-- Design: Ominous Energy Crystal \\ Design: Engineering Finishing Reagent (DNT) \\ Pattern: Artisan Gardening Hat
 			i(223083),	-- Design: Elemental Focusing Lens \\ Pattern: Artisan Fishing Cap
@@ -4776,12 +4333,6 @@ root(ROOTS.Unsorted, {
 			i(224786),	-- Skeleton King Outfit
 			i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
 			i(224792),	-- Sanguine Aristocrat Outfit
-			i(224800),	-- Orbinid Pigment
-			i(224801),	-- Orbinid Pigment
-			i(224802),	-- Orbinid Pigment
-			i(224803),	-- Blossom Pigment
-			i(224804),	-- Blossom Pigment
-			i(224805),	-- Blossom Pigment
 			i(224807),	-- Algari Skinning Notes
 			i(224808),	-- Opal Ore
 			i(224809),	-- Earthen Plumber's Pipe
@@ -4894,11 +4445,7 @@ root(ROOTS.Unsorted, {
 			i(225343),	-- Incriminating Journal Entry
 			i(225344),	-- Incriminating Evidence
 			i(225347),	-- Web-Vandal's Spinning Wheel
-			i(225350),	-- Contract: Artisan's Consortium, Khaz Algar Branch
-			i(225351),	-- Contract: Artisan's Consortium, Khaz Algar Branch
-			i(225352),	-- Contract: Artisan's Consortium, Khaz Algar Branch
 			i(225354),	-- Kaheti Confiscated Dirk
-			i(225355),	-- Technique: Contract: The Severed Threads
 			i(225356),	-- Kaheti Confiscated Crossbow
 			i(225359),	-- Kaheti Confiscated Mallet
 			i(225363),	-- Kaheti Confiscated Sword
@@ -4906,11 +4453,8 @@ root(ROOTS.Unsorted, {
 			i(225365),	-- PH_3
 			i(225366),	-- Algari Competitor's Splitter \\ Vicious Competitor's Splitter
 			i(225367),	-- Algari Competitor's Dagger \\ Vicious Competitor's Dagger
-			i(225368),	-- Algari Competitor's Scythe \\ Vicious Competitor's Scythe
-			i(225369),	-- Algari Competitor's Staff \\ Vicious Competitor's Staff
 			i(225370),	-- Algari Competitor's Rifle \\ Vicious Competitor's Rifle
 			i(225371),	-- Algari Competitor's Scepter \\ Vicious Competitor's Scepter
-			i(225372),	-- Algari Competitor's Censer \\ Vicious Competitor's Censer
 			i(225373),	-- Algari Competitor's Shield \\ Vicious Competitor's Shield
 			i(225374),	-- Algari Competitor's Axe \\ Vicious Competitor's Axe
 			i(225375),	-- Algari Competitor's Sickle \\ Vicious Competitor's Sickle
@@ -5011,16 +4555,10 @@ root(ROOTS.Unsorted, {
 			i(225472),	-- Schematic: Algari Competitor's Leather Bracers \\ Schematic: Vicious Competitor's Leather Bracers
 			i(225473),	-- Schematic: Algari Competitor's Mail Bracers \\ Schematic: Vicious Competitor's Mail Bracers
 			i(225474),	-- Schematic: Algari Competitor's Plate Bracers \\ Schematic: Vicious Competitor's Plate Bracers
-			i(225475),	-- Technique: Algari Competitor's Medallion \\ Technique: Vicious Competitor's Medallion
-			i(225476),	-- Technique: Algari Competitor's Insignia of Alacrity \\ Technique: Vicious Competitor's Insignia of Alacrity
-			i(225477),	-- Technique: Algari Competitor's Emblem \\ Technique: Vicious Competitor's Emblem
 			i(225478),	-- Plans: Algari Competitor's Splitter \\ Plans: Vicious Competitor's Splitter
 			i(225479),	-- Plans: Algari Competitor's Dagger \\ Plans: Vicious Competitor's Dagger
-			i(225480),	-- Technique: Algari Competitor's Scythe \\ Technique: Vicious Competitor's Scythe
-			i(225481),	-- Technique: Algari Competitor's Staff \\ Technique: Vicious Competitor's Staff
 			i(225482),	-- Schematic: Algari Competitor's Rifle \\ Schematic: Vicious Competitor's Rifle
 			i(225483),	-- Plans: Algari Competitor's Scepter \\ Plans: Vicious Competitor's Scepter
-			i(225484),	-- Technique: Algari Competitor's Censer \\ Technique: Vicious Competitor's Censer
 			i(225485),	-- Plans: Algari Competitor's Shield \\ Plans: Vicious Competitor's Shield
 			i(225486),	-- Plans: Algari Competitor's Axe \\ Plans: Vicious Competitor's Axe
 			i(225487),	-- Plans: Algari Competitor's Sickle \\ Plans: Vicious Competitor's Sickle
@@ -5335,21 +4873,6 @@ root(ROOTS.Unsorted, {
 			i(226018),	-- Darkened Arathi Cape
 			i(226019),	-- Darkened Arathi Shoulderguards
 			i(226020),	-- Ancient Titan Salvage
-			i(226022),	-- Darkmoon Sigil: Evolution
-			i(226023),	-- Darkmoon Sigil: Evolution
-			i(226024),	-- Darkmoon Sigil: Evolution
-			i(226025),	-- Darmoon Sigil: Radiance
-			i(226026),	-- Darmoon Sigil: Radiance
-			i(226027),	-- Darmoon Sigil: Radiance
-			i(226028),	-- Darkmoon Sigil: Symbiosis
-			i(226029),	-- Darkmoon Sigil: Symbiosis
-			i(226030),	-- Darkmoon Sigil: Symbiosis
-			i(226031),	-- Darkmoon Sigil: Vivacity
-			i(226032),	-- Darkmoon Sigil: Vivacity
-			i(226033),	-- Darkmoon Sigil: Vivacity
-			i(226034),	-- Vantus Rune: Nerub-ar Palace
-			i(226035),	-- Vantus Rune: Nerub-ar Palace
-			i(226036),	-- Vantus Rune: Nerub-ar Palace
 			i(226045),	-- The General's Trove
 			i(226100),	-- The Vizier's Trove
 			i(226103),	-- The Weaver's Trove
@@ -5608,9 +5131,6 @@ root(ROOTS.Unsorted, {
 			i(221023),	-- Treacherous Transmitter
 			i(221096),	-- Rail Rider's Bisector
 			i(221207),	-- Den Mother's Chestpiece
-			i(222626),	-- Algari Missive of Ingenuity
-			i(222627),	-- Algari Missive of Ingenuity
-			i(222628),	-- Algari Missive of Ingenuity
 			i(223043),	-- Plans: Sanctified Steps
 			i(223089),	-- Design: Extravagant Loupes
 			i(223090),	-- Design: Enchanter's Crystal
@@ -5656,9 +5176,6 @@ root(ROOTS.Unsorted, {
 			i(225631),	-- Mystic Obscenity's Idol
 			i(225632),	-- Venerated Obscenity's Idol
 			i(225633),	-- Zenith Obscenity's Idol
-			i(226025),	-- Darkmoon Sigil: Radiance
-			i(226026),	-- Darkmoon Sigil: Radiance
-			i(226027),	-- Darkmoon Sigil: Radiance
 			i(226117),	-- Dalaran Guardian's Arcanotool
 			i(226643),	-- Plans: Beledar's Bulwark
 			i(226810),	-- Infiltrator's Shroud

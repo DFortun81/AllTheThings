@@ -6,6 +6,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 		--["coord"] = { X, Y, THE_RINGING_DEEPS },
 		["maps"] = { 2303 },	-- Darkflame Cleft
 		["g"] = {
+			i(223061),	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?]
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2569, {	-- Ol' Waxbeard
 					["crs"] = { 210149 },	-- Ol' Waxbeard

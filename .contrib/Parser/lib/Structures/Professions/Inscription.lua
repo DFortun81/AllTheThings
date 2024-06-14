@@ -343,3 +343,34 @@ DF_INSCRIPTION = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { A
 		r(383544),	-- Pioneer's Writhebark Stave
 	}),
 }));
+TWW_INSCRIPTION = bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+	r(423338),	-- Khaz Algar Inscription
+	r(444181),	-- Khaz Algar Milling
+	r(425140),	-- Recraft Equipment
+	r(444228),	-- Recraft Equipment
+	filter(MISC, {
+		r(444210),	-- Algari Missive of the Aurora
+		r(444211),	-- Algari Missive of the Feverflare
+		r(444212),	-- Algari Missive of the Fireflash
+		r(444213),	-- Algari Missive of the Harmonious
+		r(444214),	-- Algari Missive of the Peerless
+		r(444215),	-- Algari Missive of the Quickblade
+		r(444203),	-- Vantus Rune: Nerub-ar Palace
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(444208),	-- Burnt Rolling Pin
+		r(444206),	-- Hasty Alchemist's Mixing Rod
+		r(444204),	-- Lightweight Scribe's Quill
+	}),
+	filter(REAGENTS, {
+		r(444222),	-- Apricate Ink
+		r(444191),	-- Boundless Cipher
+		r(444190),	-- Codified Greenwood
+		r(444221),	-- Shadow Ink
+	}),
+	n(WEAPONS, {
+		r(444201),	-- Inquisitor's Baton
+		r(444200),	-- Inquisitor's Crutch
+		r(444196),	-- Inquisitor's Torch
+	}),
+});

@@ -22,6 +22,27 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223124, {	-- Formula: Runed Null Stone Rod (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
+					i(223068, {	-- Technique: Algari Missive of Crafting Speed (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223071, {	-- Technique: Algari Missive of Deftness (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223069, {	-- Technique: Algari Missive of Finesse (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223065, {	-- Technique: Algari Missive of Ingenuity (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223067, {	-- Technique: Algari Missive of Multicraft (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223070, {	-- Technique: Algari Missive of Perception (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223066, {	-- Technique: Algari Missive of Resourcefulness (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
 				},
 			}),
 			n(219226, {	-- Vaskarn

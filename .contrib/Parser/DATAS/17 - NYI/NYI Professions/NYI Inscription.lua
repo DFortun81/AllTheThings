@@ -47,6 +47,320 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(194842),	-- Regal Barding Manuscript
 				})),
 			}),
+			expansion(EXPANSION.TWW, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, 0.01, bubbleDown({ ["timeline"] = { CREATED_11_0_0 } }, {
+					i(222241),	-- Ace of Evolution
+					i(222223),	-- Ace of Shining
+					i(222214),	-- Ace of Symbiosis
+					i(222232),	-- Ace of Vivacity
+					i(219660),	-- Algari Missive of Crafting Speed
+					i(219661),	-- Algari Missive of Crafting Speed
+					i(219662),	-- Algari Missive of Crafting Speed
+					i(222198),	-- Algari Missive of Crafting Speed
+					i(222199),	-- Algari Missive of Crafting Speed
+					i(222200),	-- Algari Missive of Crafting Speed
+					i(219669),	-- Algari Missive of Deftness
+					i(219670),	-- Algari Missive of Deftness
+					i(219671),	-- Algari Missive of Deftness
+					i(222207),	-- Algari Missive of Deftness
+					i(222208),	-- Algari Missive of Deftness
+					i(222209),	-- Algari Missive of Deftness
+					i(219663),	-- Algari Missive of Finesse
+					i(219664),	-- Algari Missive of Finesse
+					i(219665),	-- Algari Missive of Finesse
+					i(222201),	-- Algari Missive of Finesse
+					i(222202),	-- Algari Missive of Finesse
+					i(222203),	-- Algari Missive of Finesse
+					i(219651),	-- Algari Missive of Inspiration
+					i(219652),	-- Algari Missive of Inspiration
+					i(219653),	-- Algari Missive of Inspiration
+					i(219837),	-- Algari Missive of Inspiration
+					i(219838),	-- Algari Missive of Inspiration
+					i(219839),	-- Algari Missive of Inspiration
+					i(219858),	-- Algari Missive of Inspiration
+					i(219859),	-- Algari Missive of Inspiration
+					i(219860),	-- Algari Missive of Inspiration
+					i(222189),	-- Algari Missive of Inspiration
+					i(222190),	-- Algari Missive of Inspiration
+					i(222191),	-- Algari Missive of Inspiration
+					i(219657),	-- Algari Missive of Multicraft
+					i(219658),	-- Algari Missive of Multicraft
+					i(219659),	-- Algari Missive of Multicraft
+					i(222195),	-- Algari Missive of Multicraft
+					i(222196),	-- Algari Missive of Multicraft
+					i(222197),	-- Algari Missive of Multicraft
+					i(219666),	-- Algari Missive of Perception
+					i(219667),	-- Algari Missive of Perception
+					i(219668),	-- Algari Missive of Perception
+					i(222204),	-- Algari Missive of Perception
+					i(222205),	-- Algari Missive of Perception
+					i(222206),	-- Algari Missive of Perception
+					i(219654),	-- Algari Missive of Resourcefulness
+					i(219655),	-- Algari Missive of Resourcefulness
+					i(219656),	-- Algari Missive of Resourcefulness
+					i(222192),	-- Algari Missive of Resourcefulness
+					i(222193),	-- Algari Missive of Resourcefulness
+					i(222194),	-- Algari Missive of Resourcefulness
+					i(219825),	-- Algari Missive of the Aurora
+					i(219826),	-- Algari Missive of the Aurora
+					i(219827),	-- Algari Missive of the Aurora
+					i(219846),	-- Algari Missive of the Aurora
+					i(219847),	-- Algari Missive of the Aurora
+					i(219848),	-- Algari Missive of the Aurora
+					i(222142),	-- Algari Missive of the Aurora
+					i(222143),	-- Algari Missive of the Aurora
+					i(222144),	-- Algari Missive of the Aurora
+					i(219822),	-- Algari Missive of the Feverflare
+					i(219823),	-- Algari Missive of the Feverflare
+					i(219824),	-- Algari Missive of the Feverflare
+					i(219843),	-- Algari Missive of the Feverflare
+					i(219844),	-- Algari Missive of the Feverflare
+					i(219845),	-- Algari Missive of the Feverflare
+					i(222145),	-- Algari Missive of the Feverflare
+					i(222146),	-- Algari Missive of the Feverflare
+					i(222147),	-- Algari Missive of the Feverflare
+					i(219819),	-- Algari Missive of the Fireflash
+					i(219820),	-- Algari Missive of the Fireflash
+					i(219821),	-- Algari Missive of the Fireflash
+					i(219840),	-- Algari Missive of the Fireflash
+					i(219841),	-- Algari Missive of the Fireflash
+					i(219842),	-- Algari Missive of the Fireflash
+					i(222148),	-- Algari Missive of the Fireflash
+					i(222149),	-- Algari Missive of the Fireflash
+					i(222150),	-- Algari Missive of the Fireflash
+					i(219831),	-- Algari Missive of the Harmonious
+					i(219832),	-- Algari Missive of the Harmonious
+					i(219833),	-- Algari Missive of the Harmonious
+					i(219852),	-- Algari Missive of the Harmonious
+					i(219853),	-- Algari Missive of the Harmonious
+					i(219854),	-- Algari Missive of the Harmonious
+					i(222151),	-- Algari Missive of the Harmonious
+					i(222152),	-- Algari Missive of the Harmonious
+					i(222153),	-- Algari Missive of the Harmonious
+					i(219834),	-- Algari Missive of the Peerless
+					i(219835),	-- Algari Missive of the Peerless
+					i(219836),	-- Algari Missive of the Peerless
+					i(219855),	-- Algari Missive of the Peerless
+					i(219856),	-- Algari Missive of the Peerless
+					i(219857),	-- Algari Missive of the Peerless
+					i(222154),	-- Algari Missive of the Peerless
+					i(222155),	-- Algari Missive of the Peerless
+					i(222156),	-- Algari Missive of the Peerless
+					i(219828),	-- Algari Missive of the Quickblade
+					i(219829),	-- Algari Missive of the Quickblade
+					i(219830),	-- Algari Missive of the Quickblade
+					i(219849),	-- Algari Missive of the Quickblade
+					i(219850),	-- Algari Missive of the Quickblade
+					i(219851),	-- Algari Missive of the Quickblade
+					i(222157),	-- Algari Missive of the Quickblade
+					i(222158),	-- Algari Missive of the Quickblade
+					i(222159),	-- Algari Missive of the Quickblade
+					i(219621),	-- Algari Treatise on Alchemy
+					i(222109),	-- Algari Treatise on Alchemy
+					i(219623),	-- Algari Treatise on Blacksmithing
+					i(222117),	-- Algari Treatise on Blacksmithing
+					i(219624),	-- Algari Treatise on Enchanting
+					i(222113),	-- Algari Treatise on Enchanting
+					i(219622),	-- Algari Treatise on Engineering
+					i(222184),	-- Algari Treatise on Engineering
+					i(219625),	-- Algari Treatise on Herbalism
+					i(222115),	-- Algari Treatise on Herbalism
+					i(219626),	-- Algari Treatise on Inscription
+					i(222111),	-- Algari Treatise on Inscription
+					i(219627),	-- Algari Treatise on Jewelcrafting
+					i(222114),	-- Algari Treatise on Jewelcrafting
+					i(219628),	-- Algari Treatise on Leatherworking
+					i(222112),	-- Algari Treatise on Leatherworking
+					i(219629),	-- Algari Treatise on Mining
+					i(222116),	-- Algari Treatise on Mining
+					i(219631),	-- Algari Treatise on Skinning
+					i(222210),	-- Algari Treatise on Skinning
+					i(222211),	-- Algari Treatise on Skinning
+					i(222212),	-- Algari Treatise on Skinning
+					i(222647),	-- Algari Treatise on Skinning
+					i(222648),	-- Algari Treatise on Skinning
+					i(219630),	-- Algari Treatise on Tailoring
+					i(222110),	-- Algari Treatise on Tailoring
+					i(219534),	-- Apricate Ink
+					i(219535),	-- Apricate Ink
+					i(219536),	-- Apricate Ink
+					i(222178),	-- Apricate Ink
+					i(222179),	-- Apricate Ink
+					i(222180),	-- Apricate Ink
+					i(219537),	-- Apricate Pigment
+					i(219538),	-- Apricate Pigment
+					i(219539),	-- Apricate Pigment
+					i(222181),	-- Apricate Pigment
+					i(222182),	-- Apricate Pigment
+					i(222183),	-- Apricate Pigment
+					i(219540),	-- Bound Spearwood
+					i(219541),	-- Bound Spearwood
+					i(219542),	-- Bound Spearwood
+					i(222121),	-- Boundless Cipher
+					i(222122),	-- Boundless Cipher
+					i(222123),	-- Boundless Cipher
+					i(219600),	-- Burnt Rolling Pin
+					i(222140),	-- Burnt Rolling Pin
+					i(219552),	-- Cipher of Cooperation
+					i(219553),	-- Cipher of Cooperation
+					i(219554),	-- Cipher of Cooperation
+					i(219546),	-- Cipher of Exhileration
+					i(219547),	-- Cipher of Exhileration
+					i(219548),	-- Cipher of Exhileration
+					i(219543),	-- Cipher of Movement
+					i(219544),	-- Cipher of Movement
+					i(219545),	-- Cipher of Movement
+					i(219549),	-- Cipher of Perfection
+					i(219550),	-- Cipher of Perfection
+					i(219551),	-- Cipher of Perfection
+					i(222118),	-- Codified Greenwood
+					i(222119),	-- Codified Greenwood
+					i(222120),	-- Codified Greenwood
+					i(219618),	-- Colors of the Wind
+					i(219645),	-- Contract: 11.0 Artisan's Consortium
+					i(219646),	-- Contract: 11.0 Artisan's Consortium
+					i(219647),	-- Contract: 11.0 Artisan's Consortium
+					i(219639),	-- Contract: Arathor
+					i(219640),	-- Contract: Arathor
+					i(219641),	-- Contract: Arathor
+					i(222163),	-- Contract: Arathor
+					i(222164),	-- Contract: Arathor
+					i(222165),	-- Contract: Arathor
+					i(222169),	-- Contract: Artisan
+					i(222170),	-- Contract: Artisan
+					i(222171),	-- Contract: Artisan
+					i(225350),	-- Contract: Artisan's Consortium, Khaz Algar Branch
+					i(225351),	-- Contract: Artisan's Consortium, Khaz Algar Branch
+					i(225352),	-- Contract: Artisan's Consortium, Khaz Algar Branch
+					i(222160),	-- Contract: Earthen
+					i(222161),	-- Contract: Earthen
+					i(222162),	-- Contract: Earthen
+					i(219636),	-- Contract: Khaz Algar
+					i(219637),	-- Contract: Khaz Algar
+					i(219638),	-- Contract: Khaz Algar
+					i(219642),	-- Contract: Nerubian
+					i(219643),	-- Contract: Nerubian
+					i(219644),	-- Contract: Nerubian
+					i(222166),	-- Contract: Nerubian
+					i(222167),	-- Contract: Nerubian
+					i(222168),	-- Contract: Nerubian
+					i(219648),	-- Contract: Renown D
+					i(219649),	-- Contract: Renown D
+					i(219650),	-- Contract: Renown D
+					i(219673),	-- Darkmook Deck: Symbiosis
+					i(219674),	-- Darkmoon Deck: Evolve
+					i(222240),	-- Darkmoon Deck: Evolve
+					i(222222),	-- Darkmoon Deck: Shine
+					i(222662),	-- Darkmoon Deck: Shine
+					i(220171),	-- Darkmoon Deck: Symbiosis
+					i(222213),	-- Darkmoon Deck: Symbiosis
+					i(219675),	-- Darkmoon Deck: Vivacity
+					i(222231),	-- Darkmoon Deck: Vivacity
+					i(219555),	-- Darkmoon Sigil: Evolution
+					i(219556),	-- Darkmoon Sigil: Evolution
+					i(219557),	-- Darkmoon Sigil: Evolution
+					i(222124),	-- Darkmoon Sigil: Evolution
+					i(222561),	-- Darkmoon Sigil: Evolution
+					i(219558),	-- Darkmoon Sigil: Shine
+					i(219559),	-- Darkmoon Sigil: Shine
+					i(219560),	-- Darkmoon Sigil: Shine
+					i(222125),	-- Darkmoon Sigil: Shine
+					i(222562),	-- Darkmoon Sigil: Shine
+					i(219561),	-- Darkmoon Sigil: Symbiosis
+					i(219562),	-- Darkmoon Sigil: Symbiosis
+					i(219563),	-- Darkmoon Sigil: Symbiosis
+					i(222126),	-- Darkmoon Sigil: Symbiosis
+					i(222563),	-- Darkmoon Sigil: Symbiosis
+					i(219564),	-- Darkmoon Sigil: Vivacity
+					i(219565),	-- Darkmoon Sigil: Vivacity
+					i(219566),	-- Darkmoon Sigil: Vivacity
+					i(222127),	-- Darkmoon Sigil: Vivacity
+					i(222564),	-- Darkmoon Sigil: Vivacity
+					i(222652),	-- DNT Colors of the Wind (Deprecated)
+					i(222650),	-- DNT Inquisitor's Greenwood Bow (Deprecated)
+					i(222651),	-- DNT Vagabond's Alacrity (Deprecated)
+					i(222248),	-- Eight of Evolution
+					i(222230),	-- Eight of Shining
+					i(222221),	-- Eight of Symbiosis
+					i(222239),	-- Eight of Vivacity
+					i(219610),	-- Endgame Offhand
+					i(222185),	-- Extraction: Evolve
+					i(222188),	-- Extraction: Shine
+					i(222187),	-- Extraction: Symbiosis
+					i(222186),	-- Extraction: Vivacity
+					i(222245),	-- Five of Evolution
+					i(222227),	-- Five of Shining
+					i(222218),	-- Five of Symbiosis
+					i(222236),	-- Five of Vivacity
+					i(222244),	-- Four of Evolution
+					i(222226),	-- Four of Shining
+					i(222217),	-- Four of Symbiosis
+					i(222235),	-- Four of Vivacity
+					i(219602),	-- Hasty Alchemist's Mixing Rod
+					i(222138),	-- Hasty Alchemist's Mixing Rod
+					i(222133),	-- Inquisitor's Baton
+					i(219609),	-- Inquisitor's Codex
+					i(222128),	-- Inquisitor's Codex
+					i(219612),	-- Inquisitor's Crutch
+					i(222132),	-- Inquisitor's Crutch
+					i(219616),	-- Inquisitor's Greenwood Bow
+					i(219604),	-- Inscribed Rolling Pin
+					i(222141),	-- Inscribed Rolling Pin
+					i(219611),	-- Leveling Agility Stave
+					i(219613),	-- Lexicon of Mysteries
+					i(222134),	-- Lexicon of Mysteries
+					i(222571),	-- Lexicon of Mysteries
+					i(219601),	-- Lightweight Scribe's Quill
+					i(222136),	-- Lightweight Scribe's Quill
+					i(219603),	-- Patient Alchemist's Mixing Rod
+					i(222139),	-- Patient Alchemist's Mixing Rod
+					i(219528),	-- Sable Ink
+					i(219529),	-- Sable Ink
+					i(219530),	-- Sable Ink
+					i(222172),	-- Sable Ink
+					i(222173),	-- Sable Ink
+					i(222174),	-- Sable Ink
+					i(219531),	-- Sable Pigment
+					i(219532),	-- Sable Pigment
+					i(219533),	-- Sable Pigment
+					i(222175),	-- Sable Pigment
+					i(222176),	-- Sable Pigment
+					i(222177),	-- Sable Pigment
+					i(222247),	-- Seven of Evolution
+					i(222229),	-- Seven of Shining
+					i(222220),	-- Seven of Symbiosis
+					i(222238),	-- Seven of Vivacity
+					i(219605),	-- Silver Tongue's Quill
+					i(222137),	-- Silver Tongue's Quill
+					i(222246),	-- Six of Evolution
+					i(222228),	-- Six of Shining
+					i(222219),	-- Six of Symbiosis
+					i(222237),	-- Six of Vivacity
+					i(222243),	-- Three of Evolution
+					i(222225),	-- Three of Shining
+					i(222216),	-- Three of Symbiosis
+					i(222234),	-- Three of Vivacity
+					i(222242),	-- Two of Evolution
+					i(222224),	-- Two of Shining
+					i(222215),	-- Two of Symbiosis
+					i(222233),	-- Two of Vivacity
+					i(219617),	-- Vagabond's Alacrity
+					i(219614),	-- Vagabond's Baton
+					i(222131),	-- Vagabond's Bounding Baton
+					i(222130),	-- Vagabond's Careful Crutch
+					i(222129),	-- Vagabond's Codex
+					i(219615),	-- Vagabond's Post
+					i(219606),	-- Vantus of Progress: 11.0 Raid
+					i(219607),	-- Vantus of Progress: 11.0 Raid
+					i(219608),	-- Vantus of Progress: 11.0 Raid
+					i(222135),	-- Vantus Rune: 11.0 Raid
+					i(222572),	-- Vantus Rune: 11.0 Raid
+					i(219633),	-- Vantus Rune: 11.0 Season 1 Raid
+					i(219634),	-- Vantus Rune: 11.0 Season 1 Raid
+					i(219635),	-- Vantus Rune: 11.0 Season 1 Raid
+				})),
+			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.BFA, {
@@ -162,6 +476,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(198936),	-- Technique: Serene Ink (RECIPE!)
 					i(198956),	-- Technique: Vantus Rune: Vault of the Incarnates (RECIPE!)
 					i(198786),	-- Technique: Wrathion Darkmoon Deckbox (RECIPE!)
+				})),
+			}),
+			expansion(EXPANSION.TWW, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, 0.01, bubbleDown({ ["timeline"] = { CREATED_11_0_0 } }, {
+					-- With SpellID attached
+					i(223072),	-- Technique: Colors of the Wind [DEPRECATED] (RECIPE!)
+					i(223059),	-- Technique: Lexicon of Mysteries (RECIPE!)
 				})),
 			}),
 		}),

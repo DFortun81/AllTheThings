@@ -3479,7 +3479,8 @@ end
 -- Validation Code Undo change
 r = oldR;
 
-local INSCRIPTION_KNOWLEDGE = 2028;
+local DF_INSCRIPTION_KNOWLEDGE = 2028;
+local TWW_INSCRIPTION_KNOWLEDGE = 2790;
 -- Inscription - Skill ID  / SPELL ID
 root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = INSCRIPTION }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -5171,7 +5172,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", INSCRIPTION_KNOWLEDGE, 1 }} }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", DF_INSCRIPTION_KNOWLEDGE, 1 }} }, {
 				r(383533),	-- Azurescale Sigil
 				r(383536),	-- Bronzescale Sigil
 				r(383512),	-- Bundle O' Cards: Dragon Isles
@@ -5302,7 +5303,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				currency(INSCRIPTION_KNOWLEDGE),
+				currency(DF_INSCRIPTION_KNOWLEDGE),
 			},
 		},{
 			i(198607),	-- Scribe's Glyphs
@@ -5343,6 +5344,26 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["coord"] = { 44.0, 81.8, THALDRASZUS },
 			}),
 		})),
+	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TWW_INSCRIPTION_KNOWLEDGE, 1 }} }, {
+				r(447868),	-- Algari Treatise on Inscription
+				r(444192),	-- Darkmoon Sigil: Evolve
+				r(444193),	-- Darkmoon Sigil: Radiance
+				r(444194),	-- Darkmoon Sigil: Symbiosis
+				r(444195),	-- Darkmoon Sigil: Vivacity
+				r(444205),	-- Silver Tongue's Quill
+				r(444199),	-- Vagabond's Bounding Baton
+				r(444198),	-- Vagabond's Careful Crutch
+				r(444197),	-- Vagabond's Torch
+				r(444224),	-- Transcribe: Evolution
+				r(444227),	-- Transcribe: Radiance
+				r(444226),	-- Transcribe: Symbiosis
+				r(444225),	-- Transcribe: Vivacity
+			}),
+		}),
 	})),
 })));
 applyclassicphase(WRATH_PHASE_ONE, root(ROOTS.Professions, prof(INSCRIPTION)));
