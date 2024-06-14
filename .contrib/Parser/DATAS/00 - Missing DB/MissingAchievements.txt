@@ -431,29 +431,6 @@ ach(40537),	-- Delve Loremaster: War Within
 ach(40539),	-- The Derby Dash
 11.0.0.54774
 ach(40542),	-- Smelling History
-ach(40543),	-- <DNT> Patient 1 - Mereldar Infirmary
-ach(40544),	-- <DNT> Patient 2 - Mereldar Infirmary
-ach(40545),	-- <DNT> Patient 3 - Mereldar Infirmary
-ach(40547),	-- <DNT> Patient 4 - Mereldar Infirmary
-ach(40548),	-- <DNT> Patient 5 - Mereldar Infirmary
-ach(40549),	-- <DNT> Patient 6 - Mereldar Infirmary
-ach(40550),	-- <DNT> Patient 7 - Mereldar Infirmary
-ach(40569),	-- Nothing Boring About Borean (char specific hidden copy)
-ach(40570),	-- I've Toured the Fjord (char specific hidden copy)
-ach(40571),	-- Icecrown: The Final Goal (char specific hidden copy)
-ach(40572),	-- To Hellfire and Back (char specific hidden copy)
-ach(40573),	-- Shadow of the Betrayer (char specific hidden copy)
-ach(40574),	-- To Hellfire and Back (char specific hidden copy)
-ach(40575),	-- I've Toured the Fjord (char specific hidden copy)
-ach(40576),	-- Nothing Boring About Borean (char specific hidden copy)
-ach(40577),	-- Mighty Roamin' Krasaranger (char specific hidden copy)
-ach(40578),	-- Mighty Roamin' Krasaranger (char specific hidden copy)
-ach(40579),	-- That's Val'sharah Folks! (char specific hidden copy)
-ach(40580),	-- Azsuna Matata (char specific hidden copy)
-ach(40581),	-- Vrykul Story, Bro (char specific hidden copy)
-ach(40582),	-- Breaching the Tomb (char specific hidden copy)
-ach(40583),	-- You Are Now Prepared! (char specific hidden copy)
-ach(40584),	-- A Sound Plan (char specific hidden copy)
 ach(40585),	-- Super Size Snuffling
 ach(40586),	-- Awakening The Machine: Wave 20
 ach(40587),	-- Awakening The Machine: Wave 30
@@ -497,60 +474,8 @@ ach(40642),	-- Mythic: The Rookery
 ach(40643),	-- The Stonevault
 ach(40644),	-- Heroic: The Stonevault
 ach(40648),	-- Mythic: The Stonevault
-ach(40652),	-- Goldie Baronbottom kills (Normal Cinderbrew Meadery)
-ach(40653),	-- Goldie Baronbottom kills (Heroic Cinderbrew Meadery)
-ach(40654),	-- Goldie Baronbottom kills (Mythic Cinderbrew Meadery)
-ach(40657),	-- Prioress Murrapray kills (Normal Priory of the Sacred Flame)
-ach(40658),	-- Prioress Murrapray kills (Heroic Priory of the Sacred Flame)
-ach(40659),	-- Prioress Murrapray kills (Mythic Priory of the Sacred Flame)
 ach(40660),	-- The War Within Season 1: Spelunker Supreme
 ach(40662),	-- It's Not Much, But It's Honest Work
-ach(40672),	-- Skyriding Glyphs: Gundargaz
-ach(40673),	-- Skyriding Glyphs: The Stonevault Exterior
-ach(40674),	-- Skyriding Glyphs: The Lost Mines
-ach(40675),	-- Skyriding Glyphs: Chittering Den
-ach(40676),	-- Skyriding Glyphs: The Rumbling Wastes
-ach(40677),	-- Skyriding Glyphs: The Living Grotto
-ach(40678),	-- Skyriding Glyphs: Abyssal Excavation
-ach(40679),	-- Skyriding Glyphs: Taelloch Mine
-ach(40680),	-- Skyriding Glyphs: The Waterworks
-ach(40681),	-- Skyriding Glyphs: The Fangs
-ach(40682),	-- Skyriding Glyphs: Sina's Yearning
-ach(40683),	-- Skyriding Glyphs: Sanguine Grasps
-ach(40684),	-- Skyriding Glyphs: Dunelle's Kindness
-ach(40685),	-- Skyriding Glyphs: Bleak Sand
-ach(40686),	-- Skyriding Glyphs: Mereldar
-ach(40687),	-- Skyriding Glyphs: Priory of the Sacred Flame
-ach(40688),	-- Skyriding Glyphs: Fortune's Fall
-ach(40689),	-- Skyriding Glyphs: Velhan's Claim
-ach(40690),	-- Skyriding Glyphs: Tenir's Ascent
-ach(40691),	-- Skyriding Glyphs: Arathi's End
-ach(40692),	-- Skyriding Glyphs: Siegehold
-ach(40693),	-- Skyriding Glyphs: Ruptured Lake
-ach(40694),	-- Skyriding Glyphs: Eye of Ansurek
-ach(40695),	-- Skyriding Glyphs: Old Sacrificial Pit
-ach(40696),	-- Skyriding Glyphs: Deepwalker Pass
-ach(40697),	-- Skyriding Glyphs: The Maddening Deep
-ach(40698),	-- Skyriding Glyphs: Rak-Ush
-ach(40699),	-- Skyriding Glyphs: Silken Ward
-ach(40700),	-- Skyriding Glyphs: Trickling Abyss
-ach(40701),	-- Skyriding Glyphs: Untamed Valley
-ach(40702),	-- Khaz Algar Glyph Hunter
-ach(40703),	-- The Ringing Deeps Glyph Hunter
-ach(40704),	-- Hallowfall Glyph Hunter
-ach(40705),	-- Azj-Kahet Glyph Hunter
-ach(40706),	-- Izo, the Grand Splicer kills (Normal City of Threads)
-ach(40709),	-- Izo, the Grand Splicer kills (Heroic City of Threads)
-ach(40710),	-- Izo, the Grand Splicer kills (Mythic City of Threads)
-ach(40711),	-- Rasha'nan kills (Normal The Dawnbreaker)
-ach(40714),	-- Rasha'nan kills (Heroic The Dawnbreaker)
-ach(40715),	-- Rasha'nan kills (Mythic The Dawnbreaker)
-ach(40716),	-- Voidstone Monstrosity kills (Normal The Rookery)
-ach(40717),	-- Voidstone Monstrosity kills (Heroic The Rookery)
-ach(40718),	-- Voidstone Monstrosity kills (Mythic The Rookery)
-ach(40719),	-- Void Speaker Eirich (Normal The Stonevault)
-ach(40721),	-- Void Speaker Eirich (Heroic The Stonevault)
-ach(40722),	-- Void Speaker Eirich (Mythic The Stonevault)
 ach(40723),	-- Web-Wrapped in the Finest Silks \\ [PH] 11.0 Mythic VFX Unlock
 ach(40724),	-- Treasures of the Ringing Deeps
 ach(40725),	-- War Within Delves: Endgame
@@ -562,53 +487,6 @@ ach(40729),	-- Light's Gambit Champion
 ach(40730),	-- Love is in the Lair
 ach(40731),	-- Panhandled
 ach(40732),	-- Heavy-Handed
-ach(40734),	-- Total delves completed
-ach(40735),	-- Fungal Folly clears
-ach(40736),	-- Kriegval's Rest clears
-ach(40737),	-- Earthcrawl Mines clears
-ach(40738),	-- The Waterworks clears
-ach(40739),	-- The Dread Pit clears
-ach(40740),	-- Nightfall Sanctum clears
-ach(40741),	-- Mycomancer Cavern clears
-ach(40742),	-- The Sinkhole clears
-ach(40743),	-- Skittering Breach clears
-ach(40744),	-- The Underkeep clears
-ach(40745),	-- Tak-Rethan Abyss clears
-ach(40746),	-- The Spiral Weave clears
-ach(40747),	-- Zekvir's Lair clears
-ach(40748),	-- Total deaths in delves
-ach(40749),	-- Restored Coffer Keys obtained
-ach(40750),	-- Treasure Trove Keys obtained
-ach(40751),	-- The War Within delve completed the most
-ach(40757),	-- The War Within total delves completed
-ach(40758),	-- The War Within companion levels obtained
-ach(40759),	-- Companion levels obtained
-ach(40760),	-- Returned by evokers
-ach(40761),	-- Restored by paladins
 ach(40762),	-- Khaz Algar Lore Hunter
 ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
-ach(40764),	-- Treasures found
-ach(40765),	-- The War Within treasures found
-ach(40766),	-- Tier 1 delves completed
-ach(40767),	-- Tier 2 delves completed
-ach(40768),	-- Tier 3 delves completed
-ach(40769),	-- Tier 4 delves completed
-ach(40770),	-- Tier 5 delves completed
-ach(40771),	-- Tier 6 delves completed
-ach(40772),	-- Tier 7 delves completed
-ach(40773),	-- Tier 8 delves completed
-ach(40774),	-- Tier 9 delves completed
-ach(40775),	-- Tier 10 delves completed
-ach(40776),	-- Tier 11 delves completed
-ach(40777),	-- The War Within Tier 1 delves completed
-ach(40778),	-- The War Within Tier 2 delves completed
-ach(40779),	-- The War Within Tier 3 delves completed
-ach(40780),	-- The War Within Tier 4 delves completed
-ach(40781),	-- The War Within Tier 5 delves completed
-ach(40782),	-- The War Within Tier 6 delves completed
-ach(40783),	-- The War Within Tier 7 delves completed
-ach(40784),	-- The War Within Tier 8 delves completed
-ach(40785),	-- The War Within Tier 9 delves completed
-ach(40786),	-- The War Within Tier 10 delves completed
-ach(40787),	-- The War Within Tier 11 delves completed
 ach(40788),	-- I Got the Keys

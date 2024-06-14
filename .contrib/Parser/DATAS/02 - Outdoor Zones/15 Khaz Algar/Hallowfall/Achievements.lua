@@ -15,6 +15,61 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["sourceQuest"] = 78630,	-- The Reckoning
 				}),
 			}),
+			ach(40704, {	-- Hallowfall Glyph Hunter
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					40685,	-- Skyriding Glyphs: Bleak Sand
+					40684,	-- Skyriding Glyphs: Dunelle's Kindness
+					40688,	-- Skyriding Glyphs: Fortune's Fall
+					40686,	-- Skyriding Glyphs: Mereldar
+					40687,	-- Skyriding Glyphs: Priory of the Sacred Flame
+					40683,	-- Skyriding Glyphs: Sanguine Grasps
+					40682,	-- Skyriding Glyphs: Sina's Yearning
+					40681,	-- Skyriding Glyphs: The Fangs
+					40690,	-- Skyriding Glyphs: Tenir's Ascent
+					40689,	-- Skyriding Glyphs: Velhan's Claim
+				}},
+			}),
+			ach(40685, {	-- Skyriding Glyphs: Bleak Sand
+				-- TODO
+				--["coord"] = { X, Y, HALLOWFALL },
+			}),
+			ach(40684, {	-- Skyriding Glyphs: Dunelle's Kindness
+				-- TODO
+				--["coord"] = { X, Y, HALLOWFALL },
+			}),
+			ach(40688, {	-- Skyriding Glyphs: Fortune's Fall
+				-- TODO
+				--["coord"] = { X, Y, HALLOWFALL },
+			}),
+			ach(40686, {	-- Skyriding Glyphs: Mereldar
+				-- TODO
+				--["coord"] = { X, Y, HALLOWFALL },
+			}),
+			ach(40687, {	-- Skyriding Glyphs: Priory of the Sacred Flame
+				-- TODO
+				--["coord"] = { X, Y, HALLOWFALL },
+			}),
+			ach(40683, {	-- Skyriding Glyphs: Sanguine Grasps
+				-- TODO
+				--["coord"] = { X, Y, HALLOWFALL },
+			}),
+			ach(40682, {	-- Skyriding Glyphs: Sina's Yearning
+				-- TODO
+				--["coord"] = { X, Y, HALLOWFALL },
+			}),
+			ach(40681, {	-- Skyriding Glyphs: The Fangs
+				-- TODO
+				--["coord"] = { X, Y, HALLOWFALL },
+			}),
+			ach(40690, {	-- Skyriding Glyphs: Tenir's Ascent
+				-- TODO
+				--["coord"] = { X, Y, HALLOWFALL },
+			}),
+			ach(40689, {	-- Skyriding Glyphs: Velhan's Claim
+				-- TODO
+				--["coord"] = { X, Y, HALLOWFALL },
+			}),
 			pvp(ach(40085)),	-- Tour of Duty: Hallowfall
 		}),
 	}),

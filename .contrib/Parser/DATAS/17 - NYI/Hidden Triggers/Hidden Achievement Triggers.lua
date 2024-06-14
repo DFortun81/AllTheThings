@@ -3463,6 +3463,100 @@ root(ROOTS.HiddenAchievementTriggers, {
 			-- 11.0.0.54361
 			ach(40305),	-- Allied Races: Earthen (Hidden Character Achievement)
 			ach(40307),	-- Allied Races: Earthen Unlock Requirements
+
+			-- 11.0.0.54774
+			ach(40543),	-- <DNT> Patient 1 - Mereldar Infirmary
+			ach(40544),	-- <DNT> Patient 2 - Mereldar Infirmary
+			ach(40545),	-- <DNT> Patient 3 - Mereldar Infirmary
+			ach(40547),	-- <DNT> Patient 4 - Mereldar Infirmary
+			ach(40548),	-- <DNT> Patient 5 - Mereldar Infirmary
+			ach(40549),	-- <DNT> Patient 6 - Mereldar Infirmary
+			ach(40550),	-- <DNT> Patient 7 - Mereldar Infirmary
+			ach(40569),	-- Nothing Boring About Borean (char specific hidden copy)
+			ach(40570),	-- I've Toured the Fjord (char specific hidden copy)
+			ach(40571),	-- Icecrown: The Final Goal (char specific hidden copy)
+			ach(40572),	-- To Hellfire and Back (char specific hidden copy)
+			ach(40573),	-- Shadow of the Betrayer (char specific hidden copy)
+			ach(40574),	-- To Hellfire and Back (char specific hidden copy)
+			ach(40575),	-- I've Toured the Fjord (char specific hidden copy)
+			ach(40576),	-- Nothing Boring About Borean (char specific hidden copy)
+			ach(40577),	-- Mighty Roamin' Krasaranger (char specific hidden copy)
+			ach(40578),	-- Mighty Roamin' Krasaranger (char specific hidden copy)
+			ach(40579),	-- That's Val'sharah Folks! (char specific hidden copy)
+			ach(40580),	-- Azsuna Matata (char specific hidden copy)
+			ach(40581),	-- Vrykul Story, Bro (char specific hidden copy)
+			ach(40582),	-- Breaching the Tomb (char specific hidden copy)
+			ach(40583),	-- You Are Now Prepared! (char specific hidden copy)
+			ach(40584),	-- A Sound Plan (char specific hidden copy)
+
+			-- 11.0.0.54935
+			ach(40652),	-- Goldie Baronbottom kills (Normal Cinderbrew Meadery)
+			ach(40653),	-- Goldie Baronbottom kills (Heroic Cinderbrew Meadery)
+			ach(40654),	-- Goldie Baronbottom kills (Mythic Cinderbrew Meadery)
+			ach(40657),	-- Prioress Murrapray kills (Normal Priory of the Sacred Flame)
+			ach(40658),	-- Prioress Murrapray kills (Heroic Priory of the Sacred Flame)
+			ach(40659),	-- Prioress Murrapray kills (Mythic Priory of the Sacred Flame)
+			ach(40706),	-- Izo, the Grand Splicer kills (Normal City of Threads)
+			ach(40709),	-- Izo, the Grand Splicer kills (Heroic City of Threads)
+			ach(40710),	-- Izo, the Grand Splicer kills (Mythic City of Threads)
+			ach(40711),	-- Rasha'nan kills (Normal The Dawnbreaker)
+			ach(40714),	-- Rasha'nan kills (Heroic The Dawnbreaker)
+			ach(40715),	-- Rasha'nan kills (Mythic The Dawnbreaker)
+			ach(40716),	-- Voidstone Monstrosity kills (Normal The Rookery)
+			ach(40717),	-- Voidstone Monstrosity kills (Heroic The Rookery)
+			ach(40718),	-- Voidstone Monstrosity kills (Mythic The Rookery)
+			ach(40719),	-- Void Speaker Eirich (Normal The Stonevault)
+			ach(40721),	-- Void Speaker Eirich (Heroic The Stonevault)
+			ach(40722),	-- Void Speaker Eirich (Mythic The Stonevault)
+
+			-- 11.0.0.55000
+			ach(40734),	-- Total delves completed
+			ach(40735),	-- Fungal Folly clears
+			ach(40736),	-- Kriegval's Rest clears
+			ach(40737),	-- Earthcrawl Mines clears
+			ach(40738),	-- The Waterworks clears
+			ach(40739),	-- The Dread Pit clears
+			ach(40740),	-- Nightfall Sanctum clears
+			ach(40741),	-- Mycomancer Cavern clears
+			ach(40742),	-- The Sinkhole clears
+			ach(40743),	-- Skittering Breach clears
+			ach(40744),	-- The Underkeep clears
+			ach(40745),	-- Tak-Rethan Abyss clears
+			ach(40746),	-- The Spiral Weave clears
+			ach(40747),	-- Zekvir's Lair clears
+			ach(40748),	-- Total deaths in delves
+			ach(40749),	-- Restored Coffer Keys obtained
+			ach(40750),	-- Treasure Trove Keys obtained
+			ach(40751),	-- The War Within delve completed the most
+			ach(40757),	-- The War Within total delves completed
+			ach(40758),	-- The War Within companion levels obtained
+			ach(40759),	-- Companion levels obtained
+			ach(40760),	-- Returned by evokers
+			ach(40761),	-- Restored by paladins
+			ach(40764),	-- Treasures found
+			ach(40765),	-- The War Within treasures found
+			ach(40766),	-- Tier 1 delves completed
+			ach(40767),	-- Tier 2 delves completed
+			ach(40768),	-- Tier 3 delves completed
+			ach(40769),	-- Tier 4 delves completed
+			ach(40770),	-- Tier 5 delves completed
+			ach(40771),	-- Tier 6 delves completed
+			ach(40772),	-- Tier 7 delves completed
+			ach(40773),	-- Tier 8 delves completed
+			ach(40774),	-- Tier 9 delves completed
+			ach(40775),	-- Tier 10 delves completed
+			ach(40776),	-- Tier 11 delves completed
+			ach(40777),	-- The War Within Tier 1 delves completed
+			ach(40778),	-- The War Within Tier 2 delves completed
+			ach(40779),	-- The War Within Tier 3 delves completed
+			ach(40780),	-- The War Within Tier 4 delves completed
+			ach(40781),	-- The War Within Tier 5 delves completed
+			ach(40782),	-- The War Within Tier 6 delves completed
+			ach(40783),	-- The War Within Tier 7 delves completed
+			ach(40784),	-- The War Within Tier 8 delves completed
+			ach(40785),	-- The War Within Tier 9 delves completed
+			ach(40786),	-- The War Within Tier 10 delves completed
+			ach(40787),	-- The War Within Tier 11 delves completed
 		})),
 	}),
 });

@@ -3,6 +3,15 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
+		ach(40702, {	-- Khaz Algar Glyph Hunter
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				40705, 	-- Azj-Kahet Glyph Hunter
+				40704, 	-- Hallowfall Glyph Hunter
+				40166, 	-- Isle of Dorn Glyph Hunter
+				40703, 	-- The Ringing Deeps Glyph Hunter
+			}},
+		}),
 		ach(20596, {	-- Loremaster of Khaz Algar
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

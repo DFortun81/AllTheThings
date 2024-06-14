@@ -4,6 +4,17 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		n(ACHIEVEMENTS, {
+			ach(20118, {	-- The Isle of Dorn
+				crit(66214, {	-- Breaking Point
+					["sourceQuest"] = 78536,	-- Impossible Odds
+				}),
+				crit(66215, {	-- Earthen Fissures
+					["sourceQuest"] = 78471,	-- Convergence
+				}),
+				crit(66216, {	-- The First Blow
+					["sourceQuest"] = 78546,	-- Recompense
+				}),
+			}),
 			ach(40166, {	-- Isle of Dorn Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -18,17 +29,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					40670,	-- Skyriding Glyphs: Mourning Rise
 					40152,	-- Skyriding Glyphs: The Three Shields
 				}},
-			}),
-			ach(20118, {	-- The Isle of Dorn
-				crit(66214, {	-- Breaking Point
-					["sourceQuest"] = 78536,	-- Impossible Odds
-				}),
-				crit(66215, {	-- Earthen Fissures
-					["sourceQuest"] = 78471,	-- Convergence
-				}),
-				crit(66216, {	-- The First Blow
-					["sourceQuest"] = 78546,	-- Recompense
-				}),
 			}),
 			ach(20595, {	-- Sojourner of Isle of Dorn
 				crit(67054, {	-- Spores of Dread
