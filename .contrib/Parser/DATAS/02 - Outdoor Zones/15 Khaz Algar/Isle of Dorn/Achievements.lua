@@ -19,9 +19,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(67054, {	-- Spores of Dread
 					["sourceQuest"] = 78574,	-- Boss of the Bosk
 				}),
-				--crit(67055, {	-- Behind Closed Doors
-				--	["sourceQuest"] = 79530,	-- TODO: quest name
-				--}),
+				crit(67055, {	-- Behind Closed Doors
+				--	["sourceQuest"] = 79530,	-- TODO: quest name (could be HQT?)
+				}),
 				crit(67059, {	-- Seven Soldiers
 					["sourceQuest"] = 78999,	-- Heart of a Hero
 				}),
@@ -40,16 +40,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(68162, {	-- Remember Me, Earthen
 					["sourceQuest"] = 82895,	-- The Weight of Duty
 				}),
-				-- ?? Two?
-				--crit(67056, {	-- Brotherhood in the Skolzgal Wood
-				--	["sourceQuest"] = 80218,	-- TODO: quest name
-				--}),
-				--crit(68254, {	-- Brotherhood in the Skolzgal Wood
-				--	["sourceQuest"] = 83181,	-- TODO: quest name
-				--}),
+				-- This is a criteria tree, it contains 2 base criteria
+				crit(67056, {	-- Brotherhood in the Skolzgal Wood
+				--	["sourceQuest"] = 80218,	-- TODO: quest name (could be HQT?)
+				}),
+				crit(68254, {	-- Brotherhood in the Skolzgal Wood
+				--	["sourceQuest"] = 83181,	-- TODO: quest name (could be HQT?)
+				}),
 			}),
 			pvp(ach(40083)),	-- Tour of Duty: Isle of Dorn
-
 			ach(40663, {	-- Skyriding Glyphs: Dhar Oztan
 				["coord"] = { 23.1, 58.5, ISLE_OF_DORN },
 			}),

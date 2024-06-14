@@ -5,16 +5,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 	m(THE_RINGING_DEEPS, {
 		n(ACHIEVEMENTS, {
 			ach(19560, {	-- The Ringing Deeps
-				-- TODO: Add quest names + criteria names
-				crit(64791, {	-- 	(Intro and Chapter 1)
-					["sourceQuest"] = 78642,	--
+				crit(64791, {	-- 	By Candlelight
+					["sourceQuest"] = 78642,	-- New Candle, New Hope
 				}),
-				crit(64792, {	-- 	(Chapter 2)
-					["sourceQuest"] = 78706,	--
+				crit(64792, {	-- 	Dark Revelations
+					["sourceQuest"] = 78706,	-- The High Speaker's Secret
 				}),
-				--crit(64793, {	-- 	(Chapter 3)
-				--	["sourceQuest"] = 78828,	--
-				--}),
+				crit(64793, {	-- 	The Monster and the Machine
+				--	["sourceQuest"] = 78828,	-- TODO: Quest name (HQT maybe?)
+				}),
 			}),
 			pvp(ach(40084)),	-- Tour of Duty: The Ringing Deeps
 		}),
