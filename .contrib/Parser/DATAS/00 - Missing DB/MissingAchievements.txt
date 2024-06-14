@@ -250,8 +250,6 @@ ach(40142),	-- Learning to Share
 ach(40145),	-- So Much Sharing
 ach(40150),	-- Children's Entertainer
 ach(40151),	-- Mereldar Menace \\ Mereldar Menance
-ach(40152),	-- Skyriding Glyphs: The Three Shields \\ Flight Glyphs: The Three Shields
-ach(40166),	-- Isle of Dorn Glyph Hunter \\ Khaz Algar Glyph Hunter
 ach(40210),	-- Deephaul Ravine Victory
 ach(40211),	-- Deephaul Ravine Veteran
 ach(40215),	-- Deepwind Ravine Shutout \\ Deephaul Ravine Perfection
@@ -507,11 +505,6 @@ ach(40658),	-- Prioress Murrapray kills (Heroic Priory of the Sacred Flame)
 ach(40659),	-- Prioress Murrapray kills (Mythic Priory of the Sacred Flame)
 ach(40660),	-- The War Within Season 1: Spelunker Supreme
 ach(40662),	-- It's Not Much, But It's Honest Work
-ach(40664),	-- Skyriding Glyphs: Storm's Watch
-ach(40665),	-- Skyriding Glyphs: Dhar Durgaz
-ach(40666),	-- Skyriding Glyphs: Sunken Shield
-ach(40668),	-- Skyriding Glyphs: Thunderhead Peak
-ach(40669),	-- Skyriding Glyphs: Cinderbrew Meadery
 ach(40672),	-- Skyriding Glyphs: Gundargaz
 ach(40673),	-- Skyriding Glyphs: The Stonevault Exterior
 ach(40674),	-- Skyriding Glyphs: The Lost Mines
