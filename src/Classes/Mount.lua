@@ -76,7 +76,6 @@ do
 		if retries > 20 then
 			local name = (itemID and ("Item #%d"):format(itemID)) or
 						(id and ("Spell #%d"):format(id));
-			_t.text = _t.text or Colorize(name, app.Colors.Mount);
 			_t.name = _t.name or name;
 			_t.icon = _t.icon or 134400;	-- question mark
 			_t.link = GetSpellLink(id);
@@ -102,7 +101,7 @@ do
 		end,
 		-- Mounts use special text coloring instead of default text
 		text = function(t)
-			return cache.GetCachedField(t, "text", CacheInfo);
+			return Colorize(t.name, app.Colors.Mount)
 		end,
 		icon = function(t)
 			return cache.GetCachedField(t, "icon", CacheInfo);
