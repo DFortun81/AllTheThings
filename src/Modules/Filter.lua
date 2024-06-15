@@ -112,7 +112,8 @@ RawCharacterFilters.InGame = api.Filters.InGame
 -- Unobtainable
 DefineToggleFilter("Unobtainable", AccountFilters,
 function(item)
-	return not item.u or SettingsUnobtainable[item.u];
+	local u = item.u
+	return not u or SettingsUnobtainable[u];
 end);
 
 -- PvP
