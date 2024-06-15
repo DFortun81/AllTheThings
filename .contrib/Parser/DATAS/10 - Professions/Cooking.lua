@@ -783,6 +783,11 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 			}),
 		}),
 	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		n(ACHIEVEMENTS, {
+			ach(19414),	-- Algari Cook
+		}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

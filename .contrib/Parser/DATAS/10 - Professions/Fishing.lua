@@ -843,4 +843,9 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			}),
 		}),
 	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		n(ACHIEVEMENTS, {
+			ach(19415),	-- Algari Fisherman
+		}),
+	})),
 })));

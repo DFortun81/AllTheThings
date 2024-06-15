@@ -1,9 +1,4 @@
 11.0.0.54311
-ach(19408),	-- Professional Algari Master \\ Professional Algarian Master
-ach(19409),	-- Working Underground
-ach(19410),	-- Algari Master of All \\ Algarian Master of All
-ach(19414),	-- Algari Cook \\ Algarian Cook
-ach(19415),	-- Algari Fisherman \\ Algarian Fisherman
 ach(19460),	-- Two Warband Mentors: The War Within
 ach(19470),	-- One Warband Mentor: The War Within
 ach(19475),	-- Three Warband Mentors: The War Within

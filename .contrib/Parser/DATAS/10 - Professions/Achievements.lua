@@ -2,6 +2,9 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+	ach(19410, sharedDataSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {	-- Algari Master of All
+		["sym"] = {{ "achievement_criteria" }},
+	})),
 	ach(16630, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Draconic Master of All
 		crit(53500),	-- Dragon Isles Alchemy
 		crit(53501),	-- Dragon Isles Blacksmithing
@@ -155,6 +158,9 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 		crit(40059),	-- Classic Skinning
 		crit(40060),	-- Classic Tailoring
 	})),
+	ach(19409, {	-- Working Underground
+		["timeline"] = { ADDED_11_0_1_LAUNCH },
+	}),
 	ach(16626, {	-- Working with Wyrms
 		["timeline"] = { ADDED_10_0_2_LAUNCH },
 	}),
@@ -189,6 +195,9 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	}),
 	ach(18728, {	-- Working from the Start
 		["timeline"] = { ADDED_10_1_7 },
+	}),
+	ach(19408, {	-- Professional Algari Master
+		["timeline"] = { ADDED_11_0_1_LAUNCH },
 	}),
 	ach(16627, {	-- Professional Draconic Master
 		["timeline"] = { ADDED_10_0_2_LAUNCH },
