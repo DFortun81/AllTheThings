@@ -231,6 +231,7 @@ root(ROOTS.Zones, {
 						pet(641),	-- Arctic Hare (PET!)
 						pet(639),	-- Borean Marmot (PET!)
 						pet(1165, {	-- Nexus Whelpling (PET!)
+							["description"] = "Found in Coldarra.",
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 						pet(530, {	-- Oily Slimeling (PET!)
@@ -2451,7 +2452,7 @@ root(ROOTS.Zones, {
 				-- #if AFTER 6.2.2.20444
 				n(TREASURES, {
 					o(244447, {	-- White Murloc Egg
-						["description"] = "In a hidden cave in a glacier contained in the White Murloc Egg at the back of the room, not the table.",
+						["description"] = "Found beneath Riplash Ruins. There is an obscured underwater cave outside the northeastern end of the ruins. Two white murloc eggs can be found in the end of the cave, but only the one on the ground can be looted.",
 						["coord"] = { 56.0, 88.0, BOREAN_TUNDRA },
 						["timeline"] = { ADDED_6_2_2 },
 						["groups"] = {
