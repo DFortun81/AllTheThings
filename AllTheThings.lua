@@ -8377,7 +8377,7 @@ RowOnEnter = function (self)
 	-- Build tooltip information.
 	local tooltipInfo = {};
 	tooltip:ClearLines();
-	app.ActiveRowReference = reference;
+	app.ActiveRowReference = true;
 	local owner;
 	if self:GetCenter() > (UIParent:GetWidth() / 2) and (not AuctionFrame or not AuctionFrame:IsVisible()) then
 		owner = "ANCHOR_LEFT"
