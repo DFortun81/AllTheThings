@@ -9,6 +9,13 @@ WARBAND = createHeader({
 	},
 });
 root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+	n(ACHIEVEMENTS, {
+		ach(19470),	-- One Warband Mentor: The War Within
+		ach(19460),	-- Two Warband Mentors: The War Within
+		ach(19475),	-- Three Warband Mentors: The War Within
+		ach(19476),	-- Four Warband Mentors: The War Within
+		ach(19477),	-- Five Warband Mentors: The War Within
+	}),
 	n(QUESTS, {
 		q(83492, {	-- Warbanding Together
 			-- Auto granted upon login

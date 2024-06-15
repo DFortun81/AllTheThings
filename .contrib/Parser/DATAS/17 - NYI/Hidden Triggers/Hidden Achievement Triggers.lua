@@ -3462,7 +3462,6 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 			-- 11.0.0.54361
 			ach(40305),	-- Allied Races: Earthen (Hidden Character Achievement)
-			ach(40307),	-- Allied Races: Earthen Unlock Requirements
 
 			-- 11.0.0.54774
 			ach(40543),	-- <DNT> Patient 1 - Mereldar Infirmary

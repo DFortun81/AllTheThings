@@ -1,9 +1,4 @@
 11.0.0.54311
-ach(19460),	-- Two Warband Mentors: The War Within
-ach(19470),	-- One Warband Mentor: The War Within
-ach(19475),	-- Three Warband Mentors: The War Within
-ach(19476),	-- Four Warband Mentors: The War Within
-ach(19477),	-- Five Warband Mentors: The War Within
 ach(19515),	-- Algari Master of Many \\ Algarian Master of Many
 ach(19704),	-- Overflowing Algari Flasks \\ Overflowing Algarian Flasks
 ach(19716),	-- Plentiful Algari Potions \\ Plentiful Algarian Potions
@@ -336,6 +331,7 @@ ach(40375),	-- Mythic: Ara-Kara, City of Echoes
 ach(40376),	-- City of Threads
 ach(40377),	-- Heroic: City of Threads
 ach(40379),	-- Mythic: City of Threads
+ach(40307),	-- Allied Races: Earthen
 11.0.0.54521
 ach(40427),	-- Darkflame Cleft
 ach(40428),	-- Heroic: Darkflame Cleft
