@@ -1693,14 +1693,9 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(ZONE_DROPS, {
-					i{25719, {	-- Arakkoa Feather
+					i(25719, {	-- Arakkoa Feather
 						["description"] = "Drops commonly from any Arakkoa in Terokkar Forest, except the Sethekk Halls. Can be turned in to the NPC named Vekax for Outcast's Cache and reputation with the Lower City. Each turn in requires 30 Arakkoa Feathers. Vekax can be found in the northwestern section of the Lower City in Shattrath.",
-						["group"] = {
-							i(31800,  {  -- Outcasts Cache
-								["sym"] = {{"fill"}},	-- Sourced in Shattrath City quest 'The Outcast's Plight'
-							}),
-						},
-					}},
+					}),
 					i(34491, {    -- Pattern: Bag of Many Hides (RECIPE!)
 						["crs"] = {
 							22143,    -- Gordunni Back-Breaker
