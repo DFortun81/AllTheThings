@@ -97,8 +97,110 @@ root(ROOTS.Unsorted, {
 				i(219012),	-- Placeholder Delve Exclusive Mount (MOUNT!) (triple up?)
 			}),
 			n(PROFESSIONS, {
+				i(211296),	-- Spark of Omens
+				i(211297),	-- Fractured Spark of Omens
+				i(213097),	-- Test Warbound until equipped (DNT)
+				i(213610),	-- Crystalline Powder
+				i(213611),	-- Writhing Sample
+				i(213612),	-- Viridescent Spores
+				i(213613),	-- Leyline Residue
 				prof(ALCHEMY, {
 					i(223080),	-- Recipe: Algari Alchemist Stone (RECIPE!)
+					i(211807),	-- Gilded Vial
+					i(211808),	-- Gilded Vial
+				}),
+				prof(BLACKSMITHING, {
+					i(217847),	-- Everforged Hands
+					i(217848),	-- Everforged Wrists
+					i(217849),	-- Everforged Waist
+					i(217850),	-- Everforged Legs
+					i(217851),	-- Everforged Feet
+					i(217852),	-- Everforged Shoulders
+					i(217853),	-- <Insert Bespoke Cantrip Gear>
+					i(217854),	-- Everforged Chest
+					i(217855),	-- Everforged Helm
+					i(217856),	-- Pressurized Alloy Greatbelt
+					i(217857),	-- Charged Mace
+					i(217858),	-- Charged Shiv
+					i(217859),	-- Pressurized Alloy Breastplate
+					i(217860),	-- Pressurized Alloy Vambraces
+					i(217861),	-- Charged Glaive
+					i(217862),	-- Pressurized Alloy Gauntlets
+					i(217863),	-- <Insert Bespoke Cantrip Gear>
+					i(217864),	-- Plans: Pressurized Alloy Warglaive
+					i(217865),	-- Plans: Pressurized Alloy Mace
+					i(217866),	-- Plans: Pressurized Alloy Sabatons
+					i(217867),	-- Plans: Polarized Alloy Claymore
+					i(217868),	-- Plans: Polarized Alloy Slicer
+					i(217869),	-- Plans: Polarized Alloy Runeaxe
+					i(217870),	-- Plans: Polarized Alloy Hexsword
+					i(217871),	-- Plans: <Insert Bespoke Cantrip Gear>
+					i(217873),	-- Plans: Polarized Alloy Halberd
+					i(217874),	-- Plans: <Insert Bespoke Cantrip Gear>
+					i(217875),	-- Plans: Pressurized Alloy Shortblade
+					i(217876),	-- Plans: Pressurized Alloy Legplates
+					i(217877),	-- Plans: Pressurized Alloy Helm
+					i(217878),	-- Plans: Pressurized Alloy Greatbelt
+					i(217879),	-- Plans: Polarized Alloy Crusher
+					i(217880),	-- Plans: Pressurized Alloy Greataxe
+					i(217881),	-- Plans: Pressurized Alloy Vambraces
+					i(217882),	-- Plans: Pressurized Alloy Gauntlets
+					i(217883),	-- Plans: Pressurized Alloy Spellblade
+					i(217884),	-- Plans: Pressurized Alloy Defender
+					i(217885),	-- Plans: Pressurized Alloy Pauldrons
+					i(217886),	-- Plans: Pressurized Alloy Longsword
+					i(217887),	-- Plans: Pressurized Alloy Breastplate
+					i(217888),	-- Plans: <Insert Bespoke Cantrip Gear>
+					i(217890),	-- Plans: <Insert Bespoke Cantrip Gear>
+					i(217909),	-- Ironclaw Great Axe
+					i(217910),	-- Pressurized Alloy Defender
+					i(217911),	-- Coreway Excavator's  Greaves
+					i(217912),	-- Coreway Excavator's  Clasp
+					i(217913),	-- Ironclaw Great Mace
+					i(217914),	-- Ironclaw Knuckles
+					i(217915),	-- Ironclaw Stiletto
+					i(217916),	-- Ironclaw Sword
+					i(217917),	-- Coreway Excavator's  Spaulders
+					i(217918),	-- Pressurized Alloy Sword
+					i(217919),	-- Coreway Excavator's  Chestguard
+					i(217920),	-- Coreway Excavator's  Bracers
+					i(217921),	-- Coreway Excavator's  Gauntlets
+					i(217922),	-- Coreway Excavator's  Helm
+					i(217923),	-- Coreway Excavator's  Boots
+					i(217924),	-- Everforged Great Axe
+					i(217931),	-- Proficient Herbalist's Sickle
+					i(217932),	-- Artisan Tailor's Needle Set
+					i(217933),	-- Proficient Leatherworker's Scalpel
+					i(217934),	-- Proficient Smithing Hammer
+					i(217935),	-- Artisan Leatherworker's Scalpel
+					i(217936),	-- Artisan Smithing Toolbox
+					i(217937),	-- Proficient Tailor's Needle Set
+					i(217938),	-- Artisan Leatherworker's Toolset
+					i(217939),	-- Proficient Skinner's Knife
+					i(217940),	-- Artisan Miner's Pickaxe
+					i(217941),	-- Artisan Skinner's Knife
+					i(217942),	-- Artisan Smithing Hammer
+					i(217943),	-- Proficient Leatherworker's Toolset
+					i(217944),	-- Artisan Herbalist's Sickle
+					i(217945),	-- Proficient Miner's Pickaxe
+					i(217946),	-- Plans: <Epic Smithing Hammer>
+					i(217947),	-- Plans: Hematic Alloy Leatherworker's Knife
+					i(217948),	-- Plans: Hematic Alloy Pickaxe
+					i(217949),	-- Plans: Hematic Alloy Leatherworker's Toolset
+					i(217950),	-- Plans: Hematic Alloy Blacksmith's Hammer
+					i(217951),	-- Plans: Sturdy Expedition Shovel
+					i(217952),	-- Plans: Hematic Alloy Blacksmith's Toolbox
+					i(217953),	-- Plans: Hematic Alloy Sickle
+					i(217954),	-- Plans: Hematic Alloy Needle Set
+					i(217955),	-- Plans: Hematic Alloy Skinning Knife
+					i(217143),	-- Algari Competitor's Plate Breastplate \\ Vicious Competitor's Plate Breastplate
+					i(217144),	-- Algari Competitor's Plate Sabatons \\ Vicious Competitor's Plate Sabatons
+					i(217145),	-- Algari Competitor's Plate Gauntlets \\ Vicious Competitor's Plate Gauntlets
+					i(217146),	-- Algari Competitor's Plate Helm \\ Vicious Competitor's Plate Helm
+					i(217147),	-- Algari Competitor's Plate Greaves \\ Vicious Competitor's Plate Greaves
+					i(217148),	-- Algari Competitor's Plate Pauldrons \\ Vicious Competitor's Plate Pauldrons
+					i(217149),	-- Algari Competitor's Plate Waistguard \\ Vicious Competitor's Plate Waistguard
+					i(217150),	-- Algari Competitor's Plate Armguards \\ Vicious Competitor's Plate Armguards
 				}),
 				prof(ENCHANTING, {
 					i(223113),	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
@@ -113,6 +215,19 @@ root(ROOTS.Unsorted, {
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 					i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 					i(223125),	-- Formula: Oil of Deep Toxins (RECIPE!)
+				}),
+				prof(ENGINEERING, {
+					i(217151),	-- Algari Competitor's Cloth Goggles \\ Vicious Competitor's Cloth Goggles
+					i(217152),	-- Algari Competitor's Leather Goggles \\ Vicious Competitor's Leather Goggles
+					i(217153),	-- Algari Competitor's Mail Goggles \\ Vicious Competitor's Mail Goggles
+					i(217154),	-- Algari Competitor's Plate Goggles \\ Vicious Competitor's Plate Goggles
+					i(217155),	-- Algari Competitor's Cloth Bracers \\ Vicious Competitor's Cloth Bracers
+					i(217156),	-- Algari Competitor's Leather Bracers \\ Vicious Competitor's Leather Bracers
+					i(217157),	-- Algari Competitor's Mail Bracers \\ Vicious Competitor's Mail Bracers
+					i(217158),	-- Algari Competitor's Plate Bracers \\ Vicious Competitor's Plate Bracers
+				}),
+				prof(HERBALISM, {
+					i(217105),	-- Refine Khaz Algar Herbs
 				}),
 				prof(INSCRIPTION, {
 					i(223063),	-- Technique: Contract: Assembly of the Deeps (RECIPE!)
@@ -130,877 +245,812 @@ root(ROOTS.Unsorted, {
 					i(222625),	-- Transcribe to Radiance \\ Extraction: Shine
 					i(222689),	-- Fortuitous Essence
 				}),
+				prof(JEWELCRAFTING, {
+					i(212495),	-- Radiant Ruby
+					i(212498),	-- Ambivalent Amber
+					i(212505),	-- Extravagant Emerald
+					i(212511),	-- Ostentatious Onyx
+					i(213219),	-- Crushed Gemstones
+					i(213220),	-- Crushed Gemstones
+					i(213221),	-- Crushed Gemstones
+					i(213398),	-- Handful of Pebbles
+					i(213399),	-- Glittering Glass
+					i(213453),	-- Quick Ruby
+					i(213454),	-- Quick Ruby
+					i(213455),	-- Quick Ruby
+					i(213456),	-- Masterful Ruby
+					i(213457),	-- Masterful Ruby
+					i(213458),	-- Masterful Ruby
+					i(213459),	-- Versatile Ruby
+					i(213460),	-- Versatile Ruby
+					i(213461),	-- Versatile Ruby
+					i(213462),	-- Deadly Ruby
+					i(213463),	-- Deadly Ruby
+					i(213464),	-- Deadly Ruby
+					i(213465),	-- Deadly Sapphire
+					i(213466),	-- Deadly Sapphire
+					i(213467),	-- Deadly Sapphire
+					i(213468),	-- Quick Sapphire
+					i(213469),	-- Quick Sapphire
+					i(213470),	-- Quick Sapphire
+					i(213471),	-- Masterful Sapphire
+					i(213472),	-- Masterful Sapphire
+					i(213473),	-- Masterful Sapphire
+					i(213474),	-- Versatile Sapphire
+					i(213475),	-- Versatile Sapphire
+					i(213476),	-- Versatile Sapphire
+					i(213477),	-- Deadly Emerald
+					i(213478),	-- Deadly Emerald
+					i(213479),	-- Deadly Emerald
+					i(213480),	-- Masterful Emerald
+					i(213481),	-- Masterful Emerald
+					i(213482),	-- Masterful Emerald
+					i(213483),	-- Versatile Emerald
+					i(213484),	-- Versatile Emerald
+					i(213485),	-- Versatile Emerald
+					i(213486),	-- Quick Emerald
+					i(213487),	-- Quick Emerald
+					i(213488),	-- Quick Emerald
+					i(213489),	-- Deadly Onyx
+					i(213490),	-- Deadly Onyx
+					i(213491),	-- Deadly Onyx
+					i(213492),	-- Quick Onyx
+					i(213493),	-- Quick Onyx
+					i(213494),	-- Quick Onyx
+					i(213495),	-- Versatile Onyx
+					i(213496),	-- Versatile Onyx
+					i(213497),	-- Versatile Onyx
+					i(213498),	-- Masterful Onyx
+					i(213499),	-- Masterful Onyx
+					i(213500),	-- Masterful Onyx
+					i(213501),	-- Deadly Amber
+					i(213502),	-- Deadly Amber
+					i(213503),	-- Deadly Amber
+					i(213504),	-- Quick Amber
+					i(213505),	-- Quick Amber
+					i(213506),	-- Quick Amber
+					i(213507),	-- Masterful Amber
+					i(213508),	-- Masterful Amber
+					i(213509),	-- Masterful Amber
+					i(213510),	-- Versatile Amber
+					i(213511),	-- Versatile Amber
+					i(213512),	-- Versatile Amber
+					i(213515),	-- Solid Amber
+					i(213516),	-- Solid Amber
+					i(213517),	-- Solid Amber
+					i(213738),	-- Insightful Blasphemite
+					i(213739),	-- Insightful Blasphemite
+					i(213740),	-- Insightful Blasphemite
+					i(213741),	-- Culminating Blasphemite
+					i(213742),	-- Culminating Blasphemite
+					i(213743),	-- Culminating Blasphemite
+					i(213744),	-- Elusive Blasphemite
+					i(213745),	-- Elusive Blasphemite
+					i(213746),	-- Elusive Blasphemite
+					i(213747),	-- Enduring Bloodstone
+					i(213748),	-- Cognitive Bloodstone
+					i(213749),	-- Determined Bloodstone
+					i(213750),	-- Engraved Gemcutter
+					i(213751),	-- Engraved Gemcutter
+					i(213752),	-- Engraved Gemcutter
+					i(213753),	-- Decorative Lens
+					i(213754),	-- Decorative Lens
+					i(213755),	-- Decorative Lens
+					i(213756),	-- Marbled Stone
+					i(213757),	-- Marbled Stone
+					i(213758),	-- Marbled Stone
+					i(213759),	-- Inverted Prism
+					i(213760),	-- Inverted Prism
+					i(213761),	-- Inverted Prism
+					i(213762),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
+					i(213763),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
+					i(213764),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
+					i(213765),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
+					i(213766),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
+					i(213767),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
+					i(213768),	-- Elemental Focusing Lens
+					i(213769),	-- Elemental Focusing Lens
+					i(213770),	-- Elemental Focusing Lens
+					i(213771),	-- Prismatic Null Stone
+					i(213772),	-- Prismatic Null Stone
+					i(213773),	-- Prismatic Null Stone
+					i(213774),	-- Captured Starlight
+					i(213775),	-- Captured Starlight
+					i(213776),	-- Captured Starlight
+					i(213777),	-- Magnificent Jeweler's Setting
+					i(213778),	-- Vicious Jeweler's Setting
+					i(213779),	-- Algari Amber Prism \\ Amber Prism (DNT)
+					i(213782),	-- Algari Emerald Prism \\ Emerald Prism (DNT)
+					i(213785),	-- Algari Ruby Prism \\ Ruby Prism (DNT)
+					i(213788),	-- Algari Onyx Prism \\ Onyx Prism (DNT)
+					i(213791),	-- Algari Sapphire Prism \\ Sapphire Prism (DNT)
+					i(214043),	-- Glittering Gemdust
+					i(214561),	-- Verdant Seed
+					i(214595),	-- Sporefused Verdant Seed
+					i(214597),	-- Irradiated Verdant Seed
+					i(214605),	-- Crystallized Verdant Seed
+					i(215117),	-- Storyteller's Glasses \\ T1 Inscription Glasses
+					i(215119),	-- Right-Handed Magnifying Glass
+					i(215120),	-- Radiant Loupes \\ T1 Jewelcrafting Head
+					i(215121),	-- Incanter's Shard \\ T1 Enchanting Focus
+					i(215122),	-- Novelist's Specs \\ T2 Inscription Glasses
+					i(215123),	-- Forger's Font Inspector \\ T2 Inscription Magnifying Glass
+					i(215124),	-- Extravagant Loupes \\ T2 Jewelcrafting Head
+					i(215125),	-- Enchanter's Crystal \\ T2 Enchanting Focus
+					i(215130),	-- Malleable Band
+					i(215131),	-- Malleable Pendant
+					i(215132),	-- Marvelous Mood Ring
+					i(215133),	-- Binding of Binding
+					i(215134),	-- Fractured Gemstone Locket
+					i(215135),	-- Ring of Earthen Craftsmanship
+					i(215136),	-- Amulet of Earthen Craftsmanship
+					i(215137),	-- Vicious Bloodstone Signet
+					i(215139),	-- Copy Copy Elemental Lariat
+					i(215143),	-- Copy Copy Elemental Lariat
+					i(215144),	-- Vicious Bloodstone Amulet
+					i(215236),	-- Bloodstone
+					i(217113),	-- Cubic Blasphemia
+					i(217114),	-- Cubic Blasphemia
+					i(217115),	-- Cubic Blasphemia
+				}),
+				prof(LEATHERWORKING, {
+					i(217126),	-- Algari Competitor's Leather Boots \\ Vicious Competitor's Leather Boots
+					i(217127),	-- Algari Competitor's Leather Chestpiece \\ Vicious Competitor's Leather Chestpiece
+					i(217128),	-- Algari Competitor's Leather Mask \\ Vicious Competitor's Leather Mask
+					i(217129),	-- Algari Competitor's Leather Shoulderpads \\ Vicious Competitor's Leather Shoulderpads
+					i(217130),	-- Algari Competitor's Leather Belt \\ Vicious Competitor's Leather Belt
+					i(217131),	-- Algari Competitor's Leather Trousers \\ Vicious Competitor's Leather Trousers
+					i(217132),	-- Algari Competitor's Leather Gloves \\ Vicious Competitor's Leather Gloves
+					i(217133),	-- Algari Competitor's Leather Wristwraps \\ Vicious Competitor's Leather Wristwraps
+					i(217134),	-- Algari Competitor's Chain Treads \\ Vicious Competitor's Chain Treads
+					i(217135),	-- Algari Competitor's Chain Chainmail \\ Vicious Competitor's Chain Chainmail
+					i(217136),	-- Algari Competitor's Chain Cowl \\ Vicious Competitor's Chain Cowl
+					i(217137),	-- Algari Competitor's Chain Epaulets \\ Vicious Competitor's Chain Epaulets
+					i(217138),	-- Algari Competitor's Chain Girdle \\ Vicious Competitor's Chain Girdle
+					i(217139),	-- Algari Competitor's Chain Leggings \\ Vicious Competitor's Chain Leggings
+					i(217140),	-- Algari Competitor's Chain Gauntlets \\ Vicious Competitor's Chain Gauntlets
+					i(217141),	-- Algari Competitor's Chain Cuffs \\ Vicious Competitor's Chain Cuffs
+				}),
+				prof(MINING, {
+					i(217707),	-- Imperfect Null Stone
+					i(210940),	-- Null Stone
+					i(210941),	-- Null Stone
+					i(210942),	-- Byproduct 01 - Light
+					i(210943),	-- Byproduct 02 - Dark
+				}),
+				prof(SKINNING, {
+					i(212664),	-- Stormcharged Leather
+					i(212665),	-- Stormcharged Leather
+					i(212666),	-- Stormcharged Leather
+					i(212667),	-- Gloom Chitin
+					i(212668),	-- Gloom Chitin
+					i(212669),	-- Gloom Chitin
+					i(212670),	-- Thunderous Hide
+					i(212672),	-- Thunderous Hide
+					i(212673),	-- Thunderous Hide
+					i(212674),	-- Sunless Carapace
+					i(212675),	-- Sunless Carapace
+					i(212676),	-- Sunless Carapace
+					i(217818),	-- Refine Algari Hides \\ Refine Algarian Hides
+					i(217822),	-- Refine Algari Leather \\ Refine Algarian Leather
+					i(217840),	-- Refine Algari Chitin \\ Refine Algarian Chitin
+				}),
+				prof(TAILORING, {
+					i(212677),	-- Underground Cloth 01
+					i(212678),	-- Underground Cloth 01
+					i(212679),	-- Underground Cloth 01
+					i(217117),	-- Algari Competitor's Cloth Leggings \\ Vicious Competitor's Cloth Leggings
+					i(217118),	-- Algari Competitor's Cloth Shoulderpads \\ Vicious Competitor's Cloth Shoulderpads
+					i(217119),	-- Algari Competitor's Cloth Treads \\ Vicious Competitor's Cloth Treads
+					i(217120),	-- Algari Competitor's Cloth Bands \\ Vicious Competitor's Cloth Bands
+					i(217121),	-- Algari Competitor's Cloth Hood \\ Vicious Competitor's Cloth Hood
+					i(217122),	-- Algari Competitor's Cloth Gloves \\ Vicious Competitor's Cloth Gloves
+					i(217123),	-- Algari Competitor's Cloth Tunic \\ Vicious Competitor's Cloth Tunic
+					i(217124),	-- Algari Competitor's Cloth Sash \\ Vicious Competitor's Cloth Sash
+					i(217125),	-- Algari Competitor's Cloth Cloak \\ Vicious Competitor's Cloth Cloak
+				}),
 			}),
-			i(206134),	-- Potion of Healing
-			i(206211),	-- Onyx Annulet
-			i(206348),	-- Fragmented Flame
-			i(206349),	-- Fragmented Reagent
-			i(206581),	-- Harvester Core
-			i(206601),	-- Dark-Nurtured Scallions
-			i(207084),	-- Auebry's Marker Pistol
-			i(207390),	-- Delve Ring
-			i(208670),	-- Arachnophobia Mode
-			i(208948),	-- [DNT] Club Chest Key \\ Club Chest Key
-			i(208957),	-- Totem of the Southern Storm
-			i(209431),	-- Fungal Scraper
-			i(209788),	-- Dispersion Crystal
-			i(209857),	-- Unusual Seeds
-			i(210017),	-- Fungal Fish
-			i(210051),	-- Spark Feather
-			i(210220),	-- Resilient Mask
-			i(210221),	-- Aspirant's Heraldry
-			i(210232),	-- Combatant's Heraldry
-			i(210233),	-- Gladiator's Heraldry
-			i(210693),	-- Delves Keystone
-			i(210697),	-- Luckstone
-			i(210698),	-- Rare Delve Key
-			i(210699),	-- Epic Delve Key
-			i(210745),	-- Firelight Spud
-			i(210940),	-- Null Stone
-			i(210941),	-- Null Stone
-			i(210942),	-- Byproduct 01 - Light
-			i(210943),	-- Byproduct 02 - Dark
-			i(211006),	-- Secret-Dredger's Cloak
-			i(211007),	-- Torchbearer's Greatcloak
-			i(211008),	-- Cave Topographer's Vestment
-			i(211009),	-- Cave Topographer's Sandals
-			i(211010),	-- Cave Topographer's Handwraps
-			i(211011),	-- Cave Topographer's Cowl
-			i(211012),	-- Cave Topographer's Leggings
-			i(211013),	-- Cave Topographer's Cord
-			i(211014),	-- Cave Topographer's Cuffs
-			i(211015),	-- Treasure-Seeker's Boots
-			i(211016),	-- Treasure-Seeker's Grips
-			i(211017),	-- Treasure-Seeker's Helm
-			i(211019),	-- Treasure-Seeker's Sash
-			i(211020),	-- Treasure-Seeker's Bindings
-			i(211021),	-- Torchbearer's Chainmail
-			i(211023),	-- Torchbearer's Grips
-			i(211024),	-- Torchbearer's Coif
-			i(211025),	-- Torchbearer's Greaves
-			i(211026),	-- Torchbearer's Shoulderguards
-			i(211027),	-- Torchbearer's Cinch
-			i(211028),	-- Torchbearer's Bracers
-			i(211029),	-- Secret-Dredger's Helm
-			i(211030),	-- Secret-Dredger's Breastplate
-			i(211031),	-- Secret-Dredger's Sabatons
-			i(211032),	-- Secret-Dredger's Gauntlets
-			i(211033),	-- Secret-Dredger's Legguards
-			i(211034),	-- Secret-Dredger's Mantle
-			i(211035),	-- Secret-Dredger's Girdle
-			i(211036),	-- Secret-Dredger's Armplates
-			i(211037),	-- Treasure-Seeker's Vest
-			i(211038),	-- Treasure-Seeker's Epaulets
-			i(211039),	-- Cave Topographer's Shoulders
-			i(211040),	-- Unhinged Vault-Hatch
-			i(211041),	-- Brilliant Beacon
-			i(211042),	-- Delver's Wand
-			i(211043),	-- Delver's Polearm
-			i(211044),	-- Delver's Rifle
-			i(211045),	-- Delver's Spellblade
-			i(211046),	-- Umbral Artist's Chisel
-			i(211048),	-- Pathfinder's Stonecarver
-			i(211049),	-- Delver's Blade
-			i(211050),	-- Delver's Greatsword
-			i(211051),	-- Loop of Vestigial Power
-			i(211052),	-- Olden Signet
-			i(211053),	-- Delver's Hacker
-			i(211054),	-- Delver's Cleaver
-			i(211055),	-- Delver's Censer
-			i(211056),	-- Delver's Mallet
-			i(211057),	-- Delver's Cudgel
-			i(211058),	-- Delver's Halberd
-			i(211059),	-- Luminous Lampspire
-			i(211060),	-- Delver's Warglaive
-			i(211062),	-- Treasure-Seeker's Shawl
-			i(211063),	-- Long Lost Choker
-			i(211142),	-- Delves Keystone
-			i(211209),	-- Suspicious Candle
-			i(211210),	-- Blacksmith Boss' Head
-			i(211291),	-- Decorative Bones
-			i(211296),	-- Spark of Omens
-			i(211297),	-- Fractured Spark of Omens
-			i(211304),	-- Bone Key
-			i(211348),	-- Awkward Potion
-			i(211349),	-- Mundane Potion
-			i(211407),	-- The Book of Bob
-			i(211469),	-- Squash Hook
-			i(211474),	-- Shadowblind Grouper
-			i(211475),	-- Twilight Spice
-			i(211478),	-- Darkroot Persimmon
-			i(211479),	-- Frog-Kissed Caviar
-			i(211481),	-- Stomping Shoes \\ Stompin' Shoes
-			i(211529),	-- Test Big Bag (DNT)
-			i(211620),	-- 11.0 Dungeon Template - Plate - Feet
-			i(211621),	-- 11.0 Dungeon Template - Cloth - Robe
-			i(211622),	-- 11.0 Dungeon Template - Plate - Chest
-			i(211623),	-- 11.0 Dungeon Template - Mail - Chest
-			i(211624),	-- 11.0 Dungeon Template - Leather - Chest
-			i(211625),	-- 11.0 Dungeon Template - Leather - Hand
-			i(211626),	-- 11.0 Dungeon Template - Plate - Hand
-			i(211627),	-- 11.0 Dungeon Template - Cloth - Hand
-			i(211628),	-- 11.0 Dungeon Template - Mail - Hand
-			i(211629),	-- 11.0 Dungeon Template - Cloth - Head
-			i(211630),	-- 11.0 Dungeon Template - Mail - Head
-			i(211631),	-- 11.0 Dungeon Template - Leather - Head
-			i(211632),	-- 11.0 Dungeon Template - Plate - Legs
-			i(211633),	-- 11.0 Dungeon Template - Cloth - Legs
-			i(211634),	-- 11.0 Dungeon Template - Mail - Legs
-			i(211635),	-- 11.0 Dungeon Template - Leather - Legs
-			i(211636),	-- 11.0 Dungeon Template - Leather - Shoulder
-			i(211637),	-- 11.0 Dungeon Template - Plate - Shoulder
-			i(211638),	-- 11.0 Dungeon Template - Cloth - Shoulder
-			i(211639),	-- 11.0 Dungeon Template - Mail - Shoulder
-			i(211640),	-- 11.0 Dungeon Template - Plate - Waist
-			i(211641),	-- 11.0 Dungeon Template - Cloth - Waist
-			i(211642),	-- 11.0 Dungeon Template - Mail - Waist
-			i(211643),	-- 11.0 Dungeon Template - Leather - Waist
-			i(211644),	-- 11.0 Dungeon Template - Cloth - Wrist
-			i(211645),	-- 11.0 Dungeon Template - Plate - Wrist
-			i(211646),	-- 11.0 Dungeon Template - Mail - Wrist
-			i(211647),	-- 11.0 Dungeon Template - Leather - Wrist
-			i(211648),	-- 11.0 Dungeon Template - Generic - Finger
-			i(211649),	-- 11.0 Dungeon Template - Generic - Trinket
-			i(211650),	-- 11.0 Dungeon Template - Generic - Neck
-			i(211651),	-- 11.0 Dungeon Template - Generic - Cloak
-			i(211652),	-- 11.0 Dungeon Template - Shield - Shield
-			i(211653),	-- 11.0 Dungeon Template - Generic - Holdable
-			i(211654),	-- 11.0 Dungeon Template - Mace2H - Str - 2 Hand
-			i(211655),	-- 11.0 Dungeon Template - Staff - Agi - 2 Hand
-			i(211656),	-- 11.0 Dungeon Template - Guns - RangedRight
-			i(211657),	-- 11.0 Dungeon Template - Warglaives - Weapon
-			i(211658),	-- 11.0 Dungeon Template - Sword1H - Str -Weapon
-			i(211659),	-- 11.0 Dungeon Template - Polearms - Int - 2 Hand
-			i(211660),	-- 11.0 Dungeon Template - Dagger - Int - Weapon
-			i(211661),	-- 11.0 Dungeon Template - Dagger - Agi - Weapon
-			i(211662),	-- 11.0 Dungeon Template - Sword1H - Agi - Weapon
-			i(211663),	-- 11.0 Dungeon Template - Plate - Head
-			i(211664),	-- 11.0 Dungeon Template - Cloth - Feet
-			i(211665),	-- 11.0 Dungeon Template - Mail - Feet
-			i(211666),	-- 11.0 Dungeon Template - Leather - Feet
-			i(211667),	-- 11.0 Dungeon Template - Staff - Int - 2 Hand
-			i(211668),	-- 11.0 Dungeon Template - Mace1H - Agi - Weapon
-			i(211669),	-- 11.0 Dungeon Template - Bows - Ranged
-			i(211670),	-- 11.0 Dungeon Template - Crossbow - RangedRight
-			i(211671),	-- 11.0 Dungeon Template - Axe1H - Str - Weapon
-			i(211672),	-- 11.0 Dungeon Template - Axe1H - Agi - Weapon
-			i(211673),	-- 11.0 Dungeon Template - Axe1H - Int - Weapon
-			i(211674),	-- 11.0 Dungeon Template - Mace1H - Int - Weapon
-			i(211675),	-- 11.0 Dungeon Template - Sword1H - Int - Weapon
-			i(211676),	-- 11.0 Dungeon Template - Mace1H - Str - Weapon
-			i(211677),	-- 11.0 Dungeon Template - Axe2H - Str - 2 Hand
-			i(211678),	-- 11.0 Dungeon Template - Sword2H - Str - 2 Hand
-			i(211679),	-- 11.0 Dungeon Template - FistWeapon - Weapon
-			i(211680),	-- 11.0 Dungeon Template - Mace2H - Int - 2 Hand
-			i(211681),	-- 11.0 Dungeon Template - Sword2H - Int - 2 Hand
-			i(211682),	-- 11.0 Dungeon Template - Wand - RangedRight
-			i(211683),	-- 11.0 Dungeon Template - Polearms - Agi - 2 Hand
-			i(211776),	-- Damp Repair Kit
-			i(211797),	-- Expedition Map
-			i(211801),	-- Poisonous Shroom Cap \\ Poisonous Fungarian Helm [PH]
-			i(211807),	-- Gilded Vial
-			i(211808),	-- Gilded Vial
-			i(211861),	-- Umbral Eggplant
-			i(211863),	-- Sizzling Magma Core
-			i(211889),	-- 11.0 Poor Item Template - <Descriptor> Leather Cinch
-			i(211890),	-- 11.0 Poor Item Template - <Descriptor> Leather Footwraps
-			i(211891),	-- 11.0 Poor Item Template - <Descriptor> Leather Handwraps
-			i(211892),	-- 11.0 Poor Item Template - <Descriptor> Leather Guise
-			i(211893),	-- 11.0 Poor Item Template - <Descriptor> Leather Leggings
-			i(211894),	-- 11.0 Poor Item Template - <Descriptor> Leather Shoulderpads
-			i(211895),	-- 11.0 Poor Item Template - <Descriptor> Leather Jerkin
-			i(211896),	-- 11.0 Poor Item Template - <Descriptor> Leather Bracers
-			i(211897),	-- 11.0 Poor Item Template - <Descriptor> Plate Vambraces
-			i(211898),	-- 11.0 Poor Item Template - <Descriptor> Plate Warboots
-			i(211899),	-- 11.0 Poor Item Template - <Descriptor> Plate Shoulderguards
-			i(211900),	-- 11.0 Poor Item Template - <Descriptor> Plate Legguards
-			i(211901),	-- 11.0 Poor Item Template - <Descriptor> Plate Faceguard
-			i(211902),	-- 11.0 Poor Item Template - <Descriptor> Plate Gloves
-			i(211903),	-- 11.0 Poor Item Template - <Descriptor> Plate Chestpiece
-			i(211904),	-- 11.0 Poor Item Template - <Descriptor> Plate Greatbelt
-			i(211905),	-- 11.0 Poor Item Template - <Descriptor> Cloth Armbands
-			i(211906),	-- 11.0 Poor Item Template - <Descriptor> Cloth Vestments
-			i(211907),	-- 11.0 Poor Item Template - <Descriptor> Cloth Footpads
-			i(211908),	-- 11.0 Poor Item Template - <Descriptor> Cloth Legwraps
-			i(211909),	-- 11.0 Poor Item Template - <Descriptor> Cloth Grips
-			i(211910),	-- 11.0 Poor Item Template - <Descriptor> Cloth Hood
-			i(211911),	-- 11.0 Poor Item Template - <Descriptor> Cloth Cincture
-			i(211912),	-- 11.0 Poor Item Template - <Descriptor> Cloth Mantle
-			i(211913),	-- 11.0 Poor Item Template - <Descriptor> Chain Armguards
-			i(211914),	-- 11.0 Poor Item Template - <Descriptor> Chain Spaulders
-			i(211915),	-- 11.0 Poor Item Template - <Descriptor> Chain Footguards
-			i(211916),	-- 11.0 Poor Item Template - <Descriptor> Chain Breeches
-			i(211917),	-- 11.0 Poor Item Template - <Descriptor> Chain Vest
-			i(211918),	-- 11.0 Poor Item Template - <Descriptor> Chain Gauntlets
-			i(211919),	-- 11.0 Poor Item Template - <Descriptor> Chain Helm
-			i(211920),	-- 11.0 Poor Item Template - <Descriptor> Chain Clasp
-			i(211929),	-- Ichor Coated Debris
-			i(211930),	-- Damaged Framework
-			i(211931),	-- Abyss Caller Horn
-			i(211959),	-- Lost Belongings
-			i(211960),	-- Game Piece
-			i(211961),	-- Rocket-Powered Impact Wrench
-			i(211963),	-- Ceiling Sweeper
-			i(211964),	-- Stillstone Catch
-			i(211966),	-- Nerubian Sealed Crate
-			i(211967),	-- Large Sealed Crate
-			i(211968),	-- Blueprint Bundle
-			i(211969),	-- Arathi-Locked Chest
-			i(211973),	-- Spider-Touched Bag
-			i(211974),	-- Rolled Arathi Rug
-			i(211979),	-- Warsculptor's Cloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Generic - Cloak
-			i(211980),	-- Warsculptor's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Wrist
-			i(211981),	-- Warsculptor's Buckle \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Waist
-			i(211982),	-- Warsculptor's Horned Spaulders \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Shoulder
-			i(211983),	-- Warsculptor's Cuisses \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Legs
-			i(211984),	-- Warsculptor's Tusks \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Head
-			i(211985),	-- Warsculptor's Crushers \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Hand
-			i(211986),	-- Warsculptor's Carved Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Feet
-			i(211987),	-- Warsculptor's Fur Plate \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Chest
-			i(211988),	-- Entombed Seraph's Greatcloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Generic - Cloak
-			i(211989),	-- Entombed Seraph's Shackles \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Wrist
-			i(211990),	-- Entombed Seraph's Waistguard \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Waist
-			i(211991),	-- Entombed Seraph's Chained Plumes \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Shoulder
-			i(211992),	-- Entombed Seraph's Greaves \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Legs
-			i(211993),	-- Entombed Seraph's Casque \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Head
-			i(211994),	-- Entombed Seraph's Castigation \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Hand
-			i(211995),	-- Entombed Seraph's Sabatons \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Feet
-			i(211996),	-- Entombed Seraph's Casket \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Chest
-			i(211997),	-- Exhumed Centurion's Drape \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Generic - Cloak
-			i(211998),	-- Exhumed Centurion's Manacles \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Wrist
-			i(211999),	-- Exhumed Centurion's Baltea \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Waist
-			i(212000),	-- Exhumed Centurion's Spikes \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Shoulder
-			i(212001),	-- Exhumed Centurion's Chausses \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Legs
-			i(212002),	-- Exhumed Centurion's Galea \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Head
-			i(212003),	-- Exhumed Centurion's Gauntlets \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Hand
-			i(212004),	-- Exhumed Centurion's Sollerets \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Feet
-			i(212005),	-- Exhumed Centurion's Breastplate \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Chest
-			i(212006),	-- Mist of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Generic - Cloak
-			i(212007),	-- Embrace of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Wrist
-			i(212008),	-- Wrappings of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Waist
-			i(212009),	-- Concourse of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Shoulder
-			i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-			i(212011),	-- Noetic of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Head
-			i(212012),	-- Covenant of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Hand
-			i(212013),	-- Shoes of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Feet
-			i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-			i(212015),	-- Lightless Scavenger's Hide \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Generic - Cloak
-			i(212016),	-- Lightless Scavenger's Wristguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Wrist
-			i(212017),	-- Lightless Scavenger's Bonegirdle \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Waist
-			i(212018),	-- Lightless Scavenger's Taxidermy \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Shoulder
-			i(212019),	-- Lightless Scavenger's Stalkings \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Legs
-			i(212020),	-- Lightless Scavenger's Skull \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Head
-			i(212021),	-- Lightless Scavenger's Mitts \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Hand
-			i(212022),	-- Lightless Scavenger's Footpads \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Feet
-			i(212023),	-- Lightless Scavenger's Tunic \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Chest
-			i(212024),	-- Cape of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Generic - Cloak
-			i(212025),	-- Wristblades of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Wrist
-			i(212026),	-- Core of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Waist
-			i(212027),	-- Fumaroles of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Shoulder
-			i(212028),	-- Legguards of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Legs
-			i(212029),	-- Horns of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Head
-			i(212030),	-- Rippers of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Hand
-			i(212031),	-- Talons of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Feet
-			i(212032),	-- Scales of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Chest
-			i(212033),	-- K'areshi Phantom's Breeze \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Generic - Cloak
-			i(212034),	-- K'areshi Phantom's Cuffs \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Wrist
-			i(212035),	-- K'areshi Phantom's Belt \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Waist
-			i(212036),	-- K'areshi Phantom's Shoulderpads \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Shoulder
-			i(212037),	-- K'areshi Phantom's Leggings \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Legs
-			i(212038),	-- K'areshi Phantom's Emptiness \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Head
-			i(212039),	-- K'areshi Phantom's Gloves \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Hand
-			i(212040),	-- K'areshi Phantom's Footwraps \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Feet
-			i(212041),	-- K'areshi Phantom's Nexus Wraps \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Chest
-			i(212042),	-- Gatecrasher's Mantle \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Generic - Cloak
-			i(212043),	-- Gatecrasher's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Wrist
-			i(212044),	-- Gatecrasher's Cord \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Waist
-			i(212045),	-- Gatecrasher's Enduring Effigy \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Shoulder
-			i(212046),	-- Gatecrasher's Kilt \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Legs
-			i(212047),	-- Gatecrasher's Horns \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Head
-			i(212048),	-- Gatecrasher's Protectors \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Hand
-			i(212049),	-- Gatecrasher's Tabi \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Feet
-			i(212050),	-- Gatecrasher's Gi \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Chest
-			i(212051),	-- Cloak of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Generic - Cloak
-			i(212052),	-- Great Links of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Wrist
-			i(212053),	-- Faulds of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Waist
-			i(212054),	-- Maw of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Shoulder
-			i(212055),	-- Leggings of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Legs
-			i(212056),	-- Mask of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Head
-			i(212057),	-- Eviscerators of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Hand
-			i(212058),	-- Treads of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Feet
-			i(212059),	-- Hide of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Chest
-			i(212060),	-- Drape of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Generic - Cloak
-			i(212061),	-- Armguards of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Wrist
-			i(212062),	-- Waistguard of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Waist
-			i(212063),	-- War-Mantle of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-			i(212064),	-- Trousers of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Legs
-			i(212065),	-- Impalers of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Head
-			i(212066),	-- Claws of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Hand
-			i(212067),	-- Talons of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Feet
-			i(212068),	-- Chestguard of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Chest
-			i(212069),	-- Hexflame Coven's Shawl \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Generic - Cloak
-			i(212070),	-- Hexflame Coven's Wristlace \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Wrist
-			i(212071),	-- Hexflame Coven's Dormant Eye \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Waist
-			i(212072),	-- Hexflame Coven's Altar \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Shoulder
-			i(212073),	-- Hexflame Coven's Leggings \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Legs
-			i(212074),	-- Hexflame Coven's All-Seeing Eye \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Head
-			i(212075),	-- Hexflame Coven's Sleeves \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Hand
-			i(212076),	-- Hexflame Coven's Treads \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth - Feet
-			i(212077),	-- Hexflame Coven's Ritual Harness \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth - Robe
-			i(212078),	-- Living Luster's Glow \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Generic - Cloak
-			i(212079),	-- Living Luster's Crystbands \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Wrist
-			i(212080),	-- Living Luster's Lightbelt \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Waist
-			i(212081),	-- Living Luster's Dominion \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Shoulder
-			i(212082),	-- Living Luster's Trousers \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Legs
-			i(212083),	-- Living Luster's Semblance \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Head
-			i(212084),	-- Living Luster's Touch \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Hand
-			i(212085),	-- Living Luster's Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth - Feet
-			i(212086),	-- Living Luster's Raiment \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth - Robe
-			i(212087),	-- Ward of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Generic - Cloak
-			i(212088),	-- Bracelets of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Wrist
-			i(212089),	-- Sigil of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Waist
-			i(212090),	-- Beacons of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Shoulder
-			i(212091),	-- Coattails of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Legs
-			i(212092),	-- Hood of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Head
-			i(212093),	-- Jeweled Gauntlets of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Hand
-			i(212094),	-- Slippers of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth - Feet
-			i(212095),	-- Runecoat of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth - Chest
-			i(212098),	-- 11.0 End Game Template <Descriptor> Vestment
-			i(212099),	-- 11.0 End Game Template <Descriptor> Sandals
-			i(212100),	-- 11.0 End Game Template <Descriptor> Handwraps
-			i(212101),	-- 11.0 End Game Template <Descriptor> Cowl
-			i(212102),	-- 11.0 End Game Template <Descriptor> Leggings
-			i(212103),	-- 11.0 End Game Template <Descriptor> Cord
-			i(212104),	-- 11.0 End Game Template <Descriptor> Cuffs
-			i(212105),	-- 11.0 End Game Template <Descriptor> Waders
-			i(212106),	-- 11.0 End Game Template <Descriptor> Grips
-			i(212108),	-- 11.0 End Game Template <Descriptor> Breeches
-			i(212109),	-- 11.0 End Game Template <Descriptor> Sash
-			i(212110),	-- 11.0 End Game Template <Descriptor> Bindings
-			i(212111),	-- 11.0 End Game Template <Descriptor> Chainmail
-			i(212112),	-- 11.0 End Game Template <Descriptor> Striders
-			i(212113),	-- 11.0 End Game Template <Descriptor> Grips
-			i(212114),	-- 11.0 End Game Template <Descriptor> Coif
-			i(212115),	-- 11.0 End Game Template <Descriptor> Greaves
-			i(212116),	-- 11.0 End Game Template <Descriptor> Shoulderguards
-			i(212117),	-- 11.0 End Game Template <Descriptor> Cinch
-			i(212118),	-- 11.0 End Game Template <Descriptor> Bracers
-			i(212119),	-- 11.0 End Game Template <Descriptor> Helm
-			i(212120),	-- 11.0 End Game Template <Descriptor> Breastplate
-			i(212121),	-- 11.0 End Game Template <Descriptor> Sabatons
-			i(212122),	-- 11.0 End Game Template <Descriptor> Gauntlets
-			i(212123),	-- 11.0 End Game Template <Descriptor> Legguards
-			i(212124),	-- 11.0 End Game Template <Descriptor> Mantle
-			i(212125),	-- 11.0 End Game Template <Descriptor> Girdle
-			i(212126),	-- 11.0 End Game Template <Descriptor> Armplates
-			i(212127),	-- 11.0 End Game Template <Descriptor> Vest
-			i(212128),	-- 11.0 End Game Template <Descriptor> Epaulets
-			i(212129),	-- 11.0 End Game Template <Descriptor> Shoulderpads
-			i(212130),	-- 11.0 End Game Template <Descriptor> Shield
-			i(212131),	-- 11.0 End Game Template <Descriptor> Offhand
-			i(212132),	-- 11.0 End Game Template <Descriptor> Polearm
-			i(212133),	-- 11.0 End Game Template <Descriptor> Gun
-			i(212134),	-- 11.0 End Game Template <Descriptor> Kris
-			i(212135),	-- 11.0 End Game Template <Descriptor> Mace
-			i(212136),	-- 11.0 End Game Template <Descriptor> Shank
-			i(212137),	-- 11.0 End Game Template <Descriptor> Sword
-			i(212138),	-- 11.0 End Game Template <Descriptor> Blade
-			i(212139),	-- 11.0 End Game Template <Descriptor> Great Mace
-			i(212140),	-- 11.0 End Game Template <Descriptor> Band
-			i(212141),	-- 11.0 End Game Template <Descriptor> Signet
-			i(212142),	-- 11.0 End Game Template <Descriptor> Cudgel
-			i(212143),	-- 11.0 End Game Template <Descriptor> Cudgel
-			i(212144),	-- 11.0 End Game Template <Descriptor> Stave
-			i(212145),	-- 11.0 End Game Template <Descriptor> Halberd
-			i(212146),	-- 11.0 End Game Template <Descriptor> Staff
-			i(212147),	-- 11.0 End Game Template <Descriptor> Warglaive
-			i(212148),	-- 11.0 End Game Template <Descriptor> Trinket
-			i(212149),	-- 11.0 End Game Template <Descriptor> Band
-			i(212150),	-- 11.0 End Game Template <Descriptor> Belt
-			i(212151),	-- 11.0 End Game Template <Descriptor> Shawl
-			i(212152),	-- 11.0 End Game Template <Descriptor> Choker
-			i(212162),	-- Bitter Shroom Cap \\ Angry Fungarian Helm [PH]
-			i(212163),	-- Soporific Shroom Cap \\ Sleepy Fungarian Helm [PH]
-			i(212164),	-- Shallow Nautic Helm \\ Shallow Kobyss Helm [PH]
-			i(212165),	-- Deep Nautic Helm \\ Deep Kobyss Helm [PH]
-			i(212166),	-- Coral Nautic Helm \\ Coral Kobyss Helm [PH]
-			i(212167),	-- Taken Candle \\ Candle Kobold Helm [PH]
-			i(212168),	-- Cinderbee Wax Candle Hat \\ Cultlight Kobold Helm [PH]
-			i(212169),	-- Mint-Scented Candle Hat \\ Candelabra Kobold Helm [PH]
-			i(212170),	-- Bronzebeard's Spare Hat \\ Bronzebeard Hat [PH]
-			i(212171),	-- Zekvir's Raptorial Spine \\ Xev'zikk's Spine
-			i(212173),	-- Rulk'Nerub Raptorial Spine \\ Rulk'Nerub Backpiece [PH]
-			i(212174),	-- The Warband Map to Everywhere All At Once \\ The Warband Map to Everything Everywhere All At Once
-			i(212223),	-- Elemental Essence
-			i(212224),	-- Titan Relics
-			i(212331),	-- The Unusual Bug
-			i(212333),	-- Expedition Tinderbox
-			i(212339),	-- A Small Bag of Seeds
-			i(212340),	-- Strange Jar
-			i(212344),	-- Chest Key
-			i(212349),	-- Sizzling Spring Water
-			i(212385),	-- Moira's Healing Surge TO DEPRECATE
-			i(212386),	-- Husk of Swallowing Darkness \\ 11.0 Raid Template - Shield - Shield
-			i(212387),	-- Broodtwister's Grim Catalyst \\ 11.0 Raid Template - Generic - Holdable
-			i(212388),	-- Ulgrax's Morsel-Masher \\ 11.0 Raid Template - Mace2H - Str - 2 Hand
-			i(212389),	-- Spire of Transfused Horrors \\ 11.0 Raid Template - Staff - Agi - 2 Hand
-			i(212390),	-- 11.0 Raid Template - Guns - RangedRight
-			i(212391),	-- Predator's Feasthooks \\ 11.0 Raid Template - Warglaives - Weapon
-			i(212392),	-- Duelist's Dancing Steel \\ 11.0 Raid Template - Sword1H - Str - Weapon \\ 11.0 Raid Template - Sword1H - Str -Weapon
-			i(212393),	-- 11.0 Raid Template - Polearms - Int - 2 Hand
-			i(212394),	-- Sovereign's Disdain \\ 11.0 Raid Template - Dagger - Int - Weapon
-			i(212395),	-- Blood-Kissed Kukri \\ 11.0 Raid Template - Dagger - Agi - Weapon
-			i(212396),	-- Monster Weapon - 1H Sword \\ 11.0 Raid Template - Sword1H - Agi - Weapon
-			i(212397),	-- Takazj's Entropic Edict \\ 11.0 Raid Template - Staff - Int - 2 Hand
-			i(212398),	-- Bludgeons of Blistering Wind \\ 11.0 Raid Template - Mace1H - Agi - Weapon
-			i(212399),	-- Splintershot Silkbow \\ 11.0 Raid Template - Bows - Ranged
-			i(212400),	-- Shade-Touched Silencer \\ 11.0 Raid Template - Crossbow - RangedRight
-			i(212401),	-- Ansurek's Final Judgment \\ 11.0 Raid Template - Axe1H - Str - Weapon
-			i(212402),	-- 11.0 Raid Template - Axe1H - Agi - Weapon
-			i(212403),	-- 11.0 Raid Template - Axe1H - Int - Weapon
-			i(212404),	-- Scepter of Manifested Miasma \\ 11.0 Raid Template - Mace1H - Int - Weapon
-			i(212405),	-- Flawless Phase Blade \\ 11.0 Raid Template - Sword1H - Int - Weapon
-			i(212406),	-- 11.0 Raid Template - Mace1H - Str - Weapon
-			i(212407),	-- Anub'arash's Colossal Mandible \\ 11.0 Raid Template - Axe2H - Str - 2 Hand
-			i(212408),	-- 11.0 Raid Template - Sword2H - Str - 2 Hand
-			i(212409),	-- Venom-Etched Claw \\ 11.0 Raid Template - FistWeapon - Weapon
-			i(212410),	-- 11.0 Raid Template - Mace2H - Int - 2 Hand
-			i(212411),	-- 11.0 Raid Template - Sword2H - Int - 2 Hand
-			i(212412),	-- 11.0 Raid Template - Wand - RangedRight
-			i(212413),	-- Honored Executioner's Perforator \\ 11.0 Raid Template - Polearms - Agi - 2 Hand
-			i(212414),	-- Lost Watcher's Remains \\ 11.0 Raid Template - Mail - Waist
-			i(212415),	-- Throne Defender's Bangles \\ 11.0 Raid Template - Mail - Wrist
-			i(212416),	-- Cosmic-Tinged Treads \\ 11.0 Raid Template - Cloth - Feet
-			i(212417),	-- Beyond's Dark Visage \\ 11.0 Raid Template - Leather - Head
-			i(212418),	-- Black Blood Injectors \\ 11.0 Raid Template - Plate - Hand
-			i(212419),	-- Bile-Soaked Harness \\ 11.0 Raid Template - Cloth - Chest
-			i(212420),	-- Queenguards's Carapace \\ 11.0 Raid Template - Plate - Chest
-			i(212421),	-- Goresplattered Membrane \\ 11.0 Raid Template - Mail - Chest
-			i(212422),	-- Bloodbound Horror's Legplates \\ 11.0 Raid Template - Plate - Legs
-			i(212423),	-- Rebel's Drained Marrowslacks \\ 11.0 Raid Template - Leather - Legs
-			i(212424),	-- Seasoned Earthen Boulderplates \\ 11.0 Raid Template - Plate - Shoulder
-			i(212425),	-- Devourer's Taut Innards \\ 11.0 Raid Template - Leather - Waist
-			i(212426),	-- Crunchy Intruder's Wristband \\ 11.0 Raid Template - Cloth - Wrist
-			i(212427),	-- Visor of the Evolved Captain \\ 11.0 Raid Template - Plate - Head
-			i(212428),	-- Final Meal's Horns \\ 11.0 Raid Template - Mail - Head
-			i(212429),	-- Whispering Voidlight Spaulders \\ 11.0 Raid Template - Mail - Shoulder
-			i(212430),	-- Shattered Eye Cincture \\ 11.0 Raid Template - Cloth - Waist
-			i(212431),	-- Undermoth-Lined Footpads \\ 11.0 Raid Template - Mail - Feet
-			i(212432),	-- Thousand-Scar Impalers \\ 11.0 Raid Template - Leather - Hand
-			i(212433),	-- Omnivore's Venomous Camouflage \\ 11.0 Raid Template - Leather - Chest
-			i(212434),	-- Voidspoken Sarong \\ 11.0 Raid Template - Cloth - Legs
-			i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-			i(212436),	-- Clutches of Paranoia \\ 11.0 Raid Template - Mail - Hand
-			i(212437),	-- Ravaged Lamplighter's Manacles \\ 11.0 Raid Template - Plate - Wrist
-			i(212438),	-- Polluted Spectre's Cover \\ 11.0 Raid Template - Leather - Wrist
-			i(212439),	-- Beacons of the False Dawn \\ 11.0 Raid Template - Cloth - Shoulder
-			i(212440),	-- Devotee's Discarded Headdress \\ 11.0 Raid Template - Cloth - Head
-			i(212441),	-- Bindings of the Starless Night \\ 11.0 Raid Template - Cloth - Hand
-			i(212442),	-- Greatbelt of the Hungerer \\ 11.0 Raid Template - Plate - Waist
-			i(212443),	-- Shattershell Greaves \\ 11.0 Raid Template - Plate - Feet
-			i(212444),	-- Frame of Felled Insurgents \\ 11.0 Raid Template - Leather - Shoulder
-			i(212445),	-- Chitin-Spiked Jackboots \\ 11.0 Raid Template - Leather - Feet
-			i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
-			i(212447),	-- Key to the Unseeming \\ 11.0 Raid Template - Generic - Finger
-			i(212448),	-- Locket of Broken Memories \\ 11.0 Raid Template - Generic - Neck
-			i(212449),	-- Sikran's Endless Arsenal \\ Sikran's Shadow Arsenal \\ Sik'ran's Shadow Arsenal
-			i(212450),	-- Swarmlord's Authority
-			i(212451),	-- Aberrant Spellforge
-			i(212452),	-- Gruesome Syringe
-			i(212453),	-- Skyterror's Corrosive Organ \\ Rasha'nan's Acid Gland \\ Gigantic Acid Gland
-			i(212454),	-- Mad Queen's Mandate \\ Abyssal Effigy
-			i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
-			i(212456),	-- Void Reaper's Contract \\ Void Reaper's Chime
-			i(212457),	-- 11.0 Raid Template - INT - Trinket
-			i(212494),	-- Squishy Bits [DNT]
-			i(212495),	-- Radiant Ruby
-			i(212498),	-- Ambivalent Amber
-			i(212505),	-- Extravagant Emerald
-			i(212511),	-- Ostentatious Onyx
-			i(212519),	-- Nebb's Key
-			i(212520),	-- Shadow-Tainted Tinderbox
-			i(212521),	-- Nebb's "Treasure" [DNT]
-			i(212527),	-- Spiderforged Emitter Key [REMOVED]
-			i(212547),	-- Final Project Page
-			i(212601),	-- Second Half of Titan Key NOT USED
-			i(212602),	-- Titan Emitter \\ The Archaedas Conundrum \\ Titan Disc
-			i(212603),	-- First Half of Titan Key NOT USED
-			i(212604),	-- Restored Titan Key NOT USED
-			i(212664),	-- Stormcharged Leather
-			i(212665),	-- Stormcharged Leather
-			i(212666),	-- Stormcharged Leather
-			i(212667),	-- Gloom Chitin
-			i(212668),	-- Gloom Chitin
-			i(212669),	-- Gloom Chitin
-			i(212670),	-- Thunderous Hide
-			i(212672),	-- Thunderous Hide
-			i(212673),	-- Thunderous Hide
-			i(212674),	-- Sunless Carapace
-			i(212675),	-- Sunless Carapace
-			i(212676),	-- Sunless Carapace
-			i(212677),	-- Underground Cloth 01
-			i(212678),	-- Underground Cloth 01
-			i(212679),	-- Underground Cloth 01
-			i(212755),	-- Remnant Satchel
-			i(212868),	-- Precious Ore \\ Delicious Ore
-			i(212882),	-- Glittering Ore
-			i(213000),	-- Holy Flamethrower Torch
-			i(213085),	-- Lost Treasure
-			i(213097),	-- Test Warbound until equipped (DNT)
-			i(213099),	-- Test Warbound until equipped (DNT)
-			i(213108),	-- Corrupted Oil
-			i(213163),	-- Cryptographic Glyph
-			i(213193),	-- Arathi Army Medallion
-			i(213219),	-- Crushed Gemstones
-			i(213220),	-- Crushed Gemstones
-			i(213221),	-- Crushed Gemstones
-			i(213398),	-- Handful of Pebbles
-			i(213399),	-- Glittering Glass
-			i(213402),	-- Incriminating Crystal
-			i(213404),	-- Incriminating Script
-			i(213405),	-- Incriminating Focus
-			i(213420),	-- Fungarian Mushroom Cap
-			i(213423),	-- Bygone Weapon Charm
-			i(213424),	-- Keg of Cinderbrew Mead
-			i(213425),	-- Shredded Reins
-			i(213453),	-- Quick Ruby
-			i(213454),	-- Quick Ruby
-			i(213455),	-- Quick Ruby
-			i(213456),	-- Masterful Ruby
-			i(213457),	-- Masterful Ruby
-			i(213458),	-- Masterful Ruby
-			i(213459),	-- Versatile Ruby
-			i(213460),	-- Versatile Ruby
-			i(213461),	-- Versatile Ruby
-			i(213462),	-- Deadly Ruby
-			i(213463),	-- Deadly Ruby
-			i(213464),	-- Deadly Ruby
-			i(213465),	-- Deadly Sapphire
-			i(213466),	-- Deadly Sapphire
-			i(213467),	-- Deadly Sapphire
-			i(213468),	-- Quick Sapphire
-			i(213469),	-- Quick Sapphire
-			i(213470),	-- Quick Sapphire
-			i(213471),	-- Masterful Sapphire
-			i(213472),	-- Masterful Sapphire
-			i(213473),	-- Masterful Sapphire
-			i(213474),	-- Versatile Sapphire
-			i(213475),	-- Versatile Sapphire
-			i(213476),	-- Versatile Sapphire
-			i(213477),	-- Deadly Emerald
-			i(213478),	-- Deadly Emerald
-			i(213479),	-- Deadly Emerald
-			i(213480),	-- Masterful Emerald
-			i(213481),	-- Masterful Emerald
-			i(213482),	-- Masterful Emerald
-			i(213483),	-- Versatile Emerald
-			i(213484),	-- Versatile Emerald
-			i(213485),	-- Versatile Emerald
-			i(213486),	-- Quick Emerald
-			i(213487),	-- Quick Emerald
-			i(213488),	-- Quick Emerald
-			i(213489),	-- Deadly Onyx
-			i(213490),	-- Deadly Onyx
-			i(213491),	-- Deadly Onyx
-			i(213492),	-- Quick Onyx
-			i(213493),	-- Quick Onyx
-			i(213494),	-- Quick Onyx
-			i(213495),	-- Versatile Onyx
-			i(213496),	-- Versatile Onyx
-			i(213497),	-- Versatile Onyx
-			i(213498),	-- Masterful Onyx
-			i(213499),	-- Masterful Onyx
-			i(213500),	-- Masterful Onyx
-			i(213501),	-- Deadly Amber
-			i(213502),	-- Deadly Amber
-			i(213503),	-- Deadly Amber
-			i(213504),	-- Quick Amber
-			i(213505),	-- Quick Amber
-			i(213506),	-- Quick Amber
-			i(213507),	-- Masterful Amber
-			i(213508),	-- Masterful Amber
-			i(213509),	-- Masterful Amber
-			i(213510),	-- Versatile Amber
-			i(213511),	-- Versatile Amber
-			i(213512),	-- Versatile Amber
-			i(213515),	-- Solid Amber
-			i(213516),	-- Solid Amber
-			i(213517),	-- Solid Amber
-			i(213533),	-- Ancient Weapon Charm
-			i(213534),	-- Bygone Armor Charm
-			i(213535),	-- Ancient Armor Charm
-			i(213538),	-- Wood-Worm Tonic \\ Wood-Worm Liqueur \\ Necrotic Dart
-			i(213557),	-- Lost Journal Tablet
-			i(213569),	-- Test Item A
-			i(213570),	-- Test Item B
-			i(213610),	-- Crystalline Powder
-			i(213611),	-- Writhing Sample
-			i(213612),	-- Viridescent Spores
-			i(213613),	-- Leyline Residue
-			i(213738),	-- Insightful Blasphemite
-			i(213739),	-- Insightful Blasphemite
-			i(213740),	-- Insightful Blasphemite
-			i(213741),	-- Culminating Blasphemite
-			i(213742),	-- Culminating Blasphemite
-			i(213743),	-- Culminating Blasphemite
-			i(213744),	-- Elusive Blasphemite
-			i(213745),	-- Elusive Blasphemite
-			i(213746),	-- Elusive Blasphemite
-			i(213747),	-- Enduring Bloodstone
-			i(213748),	-- Cognitive Bloodstone
-			i(213749),	-- Determined Bloodstone
-			i(213750),	-- Engraved Gemcutter
-			i(213751),	-- Engraved Gemcutter
-			i(213752),	-- Engraved Gemcutter
-			i(213753),	-- Decorative Lens
-			i(213754),	-- Decorative Lens
-			i(213755),	-- Decorative Lens
-			i(213756),	-- Marbled Stone
-			i(213757),	-- Marbled Stone
-			i(213758),	-- Marbled Stone
-			i(213759),	-- Inverted Prism
-			i(213760),	-- Inverted Prism
-			i(213761),	-- Inverted Prism
-			i(213762),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
-			i(213763),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
-			i(213764),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
-			i(213765),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
-			i(213766),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
-			i(213767),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
-			i(213768),	-- Elemental Focusing Lens
-			i(213769),	-- Elemental Focusing Lens
-			i(213770),	-- Elemental Focusing Lens
-			i(213771),	-- Prismatic Null Stone
-			i(213772),	-- Prismatic Null Stone
-			i(213773),	-- Prismatic Null Stone
-			i(213774),	-- Captured Starlight
-			i(213775),	-- Captured Starlight
-			i(213776),	-- Captured Starlight
-			i(213777),	-- Magnificent Jeweler's Setting
-			i(213778),	-- Vicious Jeweler's Setting
-			i(213779),	-- Algari Amber Prism \\ Amber Prism (DNT)
-			i(213782),	-- Algari Emerald Prism \\ Emerald Prism (DNT)
-			i(213785),	-- Algari Ruby Prism \\ Ruby Prism (DNT)
-			i(213788),	-- Algari Onyx Prism \\ Onyx Prism (DNT)
-			i(213791),	-- Algari Sapphire Prism \\ Sapphire Prism (DNT)
-			i(214043),	-- Glittering Gemdust
-			i(214561),	-- Verdant Seed
-			i(214595),	-- Sporefused Verdant Seed
-			i(214597),	-- Irradiated Verdant Seed
-			i(214605),	-- Crystallized Verdant Seed
-			i(215117),	-- Storyteller's Glasses \\ T1 Inscription Glasses
-			i(215119),	-- Right-Handed Magnifying Glass
-			i(215120),	-- Radiant Loupes \\ T1 Jewelcrafting Head
-			i(215121),	-- Incanter's Shard \\ T1 Enchanting Focus
-			i(215122),	-- Novelist's Specs \\ T2 Inscription Glasses
-			i(215123),	-- Forger's Font Inspector \\ T2 Inscription Magnifying Glass
-			i(215124),	-- Extravagant Loupes \\ T2 Jewelcrafting Head
-			i(215125),	-- Enchanter's Crystal \\ T2 Enchanting Focus
-			i(215130),	-- Malleable Band
-			i(215131),	-- Malleable Pendant
-			i(215132),	-- Marvelous Mood Ring
-			i(215133),	-- Binding of Binding
-			i(215134),	-- Fractured Gemstone Locket
-			i(215135),	-- Ring of Earthen Craftsmanship
-			i(215136),	-- Amulet of Earthen Craftsmanship
-			i(215137),	-- Vicious Bloodstone Signet
-			i(215139),	-- Copy Copy Elemental Lariat
-			i(215143),	-- Copy Copy Elemental Lariat
-			i(215144),	-- Vicious Bloodstone Amulet
-			i(215145),	-- Remembrance Stone
-			i(215146),	-- JC Gemcutting Toy
-			i(215147),	-- Beautification Iris
-			i(215159),	-- Pillaged Trophy
-			i(215169),	-- Everburning Lantern
-			i(215170),	-- Abyssal Trap
-			i(215171),	-- Fungal Friend Flute
-			i(215172),	-- Silken Chain Weaver
-			i(215173),	-- Serum of Unconstrained Senses
-			i(215174),	-- Concoction: Kiss of Death
-			i(215175),	-- Belt of Vials
-			i(215177),	-- Power Cell
-			i(215178),	-- Shadow-Binding Ritual Knife
-			i(215179),	-- Power Cell
-			i(215180),	-- Power Cell
-			i(215236),	-- Bloodstone
-			i(215359),	-- Very Large Valdrakken Accord Supply Pack
-			i(215360),	-- Personalized Setting
-			i(215447),	-- Duskstem
-			i(215448),	-- Darkstem Stew \\ Darkstem Brew
-			i(215457),	-- Loyalist Secretions
-			i(215466),	-- Sanctified Supplies
-			i(216420),	-- Signal Flare
-			i(216433),	-- Stolen Relic
-			i(216528),	-- Faded Supply Chest Key
-			i(216603),	-- Boots of the Light
-			i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
-			i(216657),	-- Test Item C
-			i(216682),	-- The Vizier's Invitation
-			i(216683),	-- Earthen Rifle
-			i(216684),	-- Earthen Sword
-			i(216685),	-- Earthen Shield
-			i(216686),	-- Earthen Axe
-			i(216688),	-- High Hollows Key
-			i(216689),	-- Albert's Head
-			i(216708),	-- Holy Candle
-			i(216772),	-- Whispering Explosives \\ Explosives
-			i(216905),	-- Brann Bronzebeard's Axe
-			i(216906),	-- Ol' Faithful
-			i(216982),	-- Spy List
-			i(217012),	-- Novice Actor's Chest
-			i(217013),	-- Expert Actor's Chest
-			i(217040),	-- Kobold Earwax
-			i(217105),	-- Refine Khaz Algar Herbs
-			i(217113),	-- Cubic Blasphemia
-			i(217114),	-- Cubic Blasphemia
-			i(217115),	-- Cubic Blasphemia
-			i(217117),	-- Algari Competitor's Cloth Leggings \\ Vicious Competitor's Cloth Leggings
-			i(217118),	-- Algari Competitor's Cloth Shoulderpads \\ Vicious Competitor's Cloth Shoulderpads
-			i(217119),	-- Algari Competitor's Cloth Treads \\ Vicious Competitor's Cloth Treads
-			i(217120),	-- Algari Competitor's Cloth Bands \\ Vicious Competitor's Cloth Bands
-			i(217121),	-- Algari Competitor's Cloth Hood \\ Vicious Competitor's Cloth Hood
-			i(217122),	-- Algari Competitor's Cloth Gloves \\ Vicious Competitor's Cloth Gloves
-			i(217123),	-- Algari Competitor's Cloth Tunic \\ Vicious Competitor's Cloth Tunic
-			i(217124),	-- Algari Competitor's Cloth Sash \\ Vicious Competitor's Cloth Sash
-			i(217125),	-- Algari Competitor's Cloth Cloak \\ Vicious Competitor's Cloth Cloak
-			i(217126),	-- Algari Competitor's Leather Boots \\ Vicious Competitor's Leather Boots
-			i(217127),	-- Algari Competitor's Leather Chestpiece \\ Vicious Competitor's Leather Chestpiece
-			i(217128),	-- Algari Competitor's Leather Mask \\ Vicious Competitor's Leather Mask
-			i(217129),	-- Algari Competitor's Leather Shoulderpads \\ Vicious Competitor's Leather Shoulderpads
-			i(217130),	-- Algari Competitor's Leather Belt \\ Vicious Competitor's Leather Belt
-			i(217131),	-- Algari Competitor's Leather Trousers \\ Vicious Competitor's Leather Trousers
-			i(217132),	-- Algari Competitor's Leather Gloves \\ Vicious Competitor's Leather Gloves
-			i(217133),	-- Algari Competitor's Leather Wristwraps \\ Vicious Competitor's Leather Wristwraps
-			i(217134),	-- Algari Competitor's Chain Treads \\ Vicious Competitor's Chain Treads
-			i(217135),	-- Algari Competitor's Chain Chainmail \\ Vicious Competitor's Chain Chainmail
-			i(217136),	-- Algari Competitor's Chain Cowl \\ Vicious Competitor's Chain Cowl
-			i(217137),	-- Algari Competitor's Chain Epaulets \\ Vicious Competitor's Chain Epaulets
-			i(217138),	-- Algari Competitor's Chain Girdle \\ Vicious Competitor's Chain Girdle
-			i(217139),	-- Algari Competitor's Chain Leggings \\ Vicious Competitor's Chain Leggings
-			i(217140),	-- Algari Competitor's Chain Gauntlets \\ Vicious Competitor's Chain Gauntlets
-			i(217141),	-- Algari Competitor's Chain Cuffs \\ Vicious Competitor's Chain Cuffs
-			i(217142),	-- Earthen Limb
-			i(217143),	-- Algari Competitor's Plate Breastplate \\ Vicious Competitor's Plate Breastplate
-			i(217144),	-- Algari Competitor's Plate Sabatons \\ Vicious Competitor's Plate Sabatons
-			i(217145),	-- Algari Competitor's Plate Gauntlets \\ Vicious Competitor's Plate Gauntlets
-			i(217146),	-- Algari Competitor's Plate Helm \\ Vicious Competitor's Plate Helm
-			i(217147),	-- Algari Competitor's Plate Greaves \\ Vicious Competitor's Plate Greaves
-			i(217148),	-- Algari Competitor's Plate Pauldrons \\ Vicious Competitor's Plate Pauldrons
-			i(217149),	-- Algari Competitor's Plate Waistguard \\ Vicious Competitor's Plate Waistguard
-			i(217150),	-- Algari Competitor's Plate Armguards \\ Vicious Competitor's Plate Armguards
-			i(217151),	-- Algari Competitor's Cloth Goggles \\ Vicious Competitor's Cloth Goggles
-			i(217152),	-- Algari Competitor's Leather Goggles \\ Vicious Competitor's Leather Goggles
-			i(217153),	-- Algari Competitor's Mail Goggles \\ Vicious Competitor's Mail Goggles
-			i(217154),	-- Algari Competitor's Plate Goggles \\ Vicious Competitor's Plate Goggles
-			i(217155),	-- Algari Competitor's Cloth Bracers \\ Vicious Competitor's Cloth Bracers
-			i(217156),	-- Algari Competitor's Leather Bracers \\ Vicious Competitor's Leather Bracers
-			i(217157),	-- Algari Competitor's Mail Bracers \\ Vicious Competitor's Mail Bracers
-			i(217158),	-- Algari Competitor's Plate Bracers \\ Vicious Competitor's Plate Bracers
-			i(217310),	-- The Foremans' First Scroll
-			i(217311),	-- The Foreman's Second Scroll
-			i(217312),	-- The Foreman's Third Scroll
-			i(217386),	-- Discarded Memory Gem
-			i(217400),	-- Kobyss Lure
-			i(217401),	-- Wormcaller's Resonator
-			i(217402),	-- Olden Armor Charm
-			i(217403),	-- Olden Weapon Charm
-			i(217404),	-- Time-Worn Armor Charm
-			i(217405),	-- Time-Worn Weapon Charm
-			i(217414),	-- Speakeasy Passrune
-			i(217506),	-- Test Item [DNT]
-			i(217706),	-- Learn Warglaives Test Item (DNT)
-			i(217707),	-- Imperfect Null Stone
-			i(217715),	-- Key Scroll
-			i(217818),	-- Refine Algari Hides \\ Refine Algarian Hides
-			i(217822),	-- Refine Algari Leather \\ Refine Algarian Leather
-			i(217840),	-- Refine Algari Chitin \\ Refine Algarian Chitin
-			i(217847),	-- Everforged Hands
-			i(217848),	-- Everforged Wrists
-			i(217849),	-- Everforged Waist
-			i(217850),	-- Everforged Legs
-			i(217851),	-- Everforged Feet
-			i(217852),	-- Everforged Shoulders
-			i(217853),	-- <Insert Bespoke Cantrip Gear>
-			i(217854),	-- Everforged Chest
-			i(217855),	-- Everforged Helm
-			i(217856),	-- Pressurized Alloy Greatbelt
-			i(217857),	-- Charged Mace
-			i(217858),	-- Charged Shiv
-			i(217859),	-- Pressurized Alloy Breastplate
-			i(217860),	-- Pressurized Alloy Vambraces
-			i(217861),	-- Charged Glaive
-			i(217862),	-- Pressurized Alloy Gauntlets
-			i(217863),	-- <Insert Bespoke Cantrip Gear>
-			i(217864),	-- Plans: Pressurized Alloy Warglaive
-			i(217865),	-- Plans: Pressurized Alloy Mace
-			i(217866),	-- Plans: Pressurized Alloy Sabatons
-			i(217867),	-- Plans: Polarized Alloy Claymore
-			i(217868),	-- Plans: Polarized Alloy Slicer
-			i(217869),	-- Plans: Polarized Alloy Runeaxe
-			i(217870),	-- Plans: Polarized Alloy Hexsword
-			i(217871),	-- Plans: <Insert Bespoke Cantrip Gear>
-			i(217873),	-- Plans: Polarized Alloy Halberd
-			i(217874),	-- Plans: <Insert Bespoke Cantrip Gear>
-			i(217875),	-- Plans: Pressurized Alloy Shortblade
-			i(217876),	-- Plans: Pressurized Alloy Legplates
-			i(217877),	-- Plans: Pressurized Alloy Helm
-			i(217878),	-- Plans: Pressurized Alloy Greatbelt
-			i(217879),	-- Plans: Polarized Alloy Crusher
-			i(217880),	-- Plans: Pressurized Alloy Greataxe
-			i(217881),	-- Plans: Pressurized Alloy Vambraces
-			i(217882),	-- Plans: Pressurized Alloy Gauntlets
-			i(217883),	-- Plans: Pressurized Alloy Spellblade
-			i(217884),	-- Plans: Pressurized Alloy Defender
-			i(217885),	-- Plans: Pressurized Alloy Pauldrons
-			i(217886),	-- Plans: Pressurized Alloy Longsword
-			i(217887),	-- Plans: Pressurized Alloy Breastplate
-			i(217888),	-- Plans: <Insert Bespoke Cantrip Gear>
-			i(217890),	-- Plans: <Insert Bespoke Cantrip Gear>
-			i(217894),	-- Nerubian Pheromone Secreter
-			i(217895),	-- Pheromone Bottle
-			i(217896),	-- Cinderbrew Mead
-			i(217897),	-- Volatile Pheromone
-			i(217909),	-- Ironclaw Great Axe
-			i(217910),	-- Pressurized Alloy Defender
-			i(217911),	-- Coreway Excavator's  Greaves
-			i(217912),	-- Coreway Excavator's  Clasp
-			i(217913),	-- Ironclaw Great Mace
-			i(217914),	-- Ironclaw Knuckles
-			i(217915),	-- Ironclaw Stiletto
-			i(217916),	-- Ironclaw Sword
-			i(217917),	-- Coreway Excavator's  Spaulders
-			i(217918),	-- Pressurized Alloy Sword
-			i(217919),	-- Coreway Excavator's  Chestguard
-			i(217920),	-- Coreway Excavator's  Bracers
-			i(217921),	-- Coreway Excavator's  Gauntlets
-			i(217922),	-- Coreway Excavator's  Helm
-			i(217923),	-- Coreway Excavator's  Boots
-			i(217924),	-- Everforged Great Axe
-			i(217931),	-- Proficient Herbalist's Sickle
-			i(217932),	-- Artisan Tailor's Needle Set
-			i(217933),	-- Proficient Leatherworker's Scalpel
-			i(217934),	-- Proficient Smithing Hammer
-			i(217935),	-- Artisan Leatherworker's Scalpel
-			i(217936),	-- Artisan Smithing Toolbox
-			i(217937),	-- Proficient Tailor's Needle Set
-			i(217938),	-- Artisan Leatherworker's Toolset
-			i(217939),	-- Proficient Skinner's Knife
-			i(217940),	-- Artisan Miner's Pickaxe
-			i(217941),	-- Artisan Skinner's Knife
-			i(217942),	-- Artisan Smithing Hammer
-			i(217943),	-- Proficient Leatherworker's Toolset
-			i(217944),	-- Artisan Herbalist's Sickle
-			i(217945),	-- Proficient Miner's Pickaxe
-			i(217946),	-- Plans: <Epic Smithing Hammer>
-			i(217947),	-- Plans: Hematic Alloy Leatherworker's Knife
-			i(217948),	-- Plans: Hematic Alloy Pickaxe
-			i(217949),	-- Plans: Hematic Alloy Leatherworker's Toolset
-			i(217950),	-- Plans: Hematic Alloy Blacksmith's Hammer
-			i(217951),	-- Plans: Sturdy Expedition Shovel
-			i(217952),	-- Plans: Hematic Alloy Blacksmith's Toolbox
-			i(217953),	-- Plans: Hematic Alloy Sickle
-			i(217954),	-- Plans: Hematic Alloy Needle Set
-			i(217955),	-- Plans: Hematic Alloy Skinning Knife
+			header(HEADERS.LFGDungeon, 1273, {
+				i(211979),	-- Warsculptor's Cloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Generic - Cloak
+				i(211980),	-- Warsculptor's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Wrist
+				i(211981),	-- Warsculptor's Buckle \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Waist
+				i(211982),	-- Warsculptor's Horned Spaulders \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Shoulder
+				i(211983),	-- Warsculptor's Cuisses \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Legs
+				i(211984),	-- Warsculptor's Tusks \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Head
+				i(211985),	-- Warsculptor's Crushers \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Hand
+				i(211986),	-- Warsculptor's Carved Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Feet
+				i(211987),	-- Warsculptor's Fur Plate \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Chest
+				i(211988),	-- Entombed Seraph's Greatcloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Generic - Cloak
+				i(211989),	-- Entombed Seraph's Shackles \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Wrist
+				i(211990),	-- Entombed Seraph's Waistguard \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Waist
+				i(211991),	-- Entombed Seraph's Chained Plumes \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Shoulder
+				i(211992),	-- Entombed Seraph's Greaves \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Legs
+				i(211993),	-- Entombed Seraph's Casque \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Head
+				i(211994),	-- Entombed Seraph's Castigation \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Hand
+				i(211995),	-- Entombed Seraph's Sabatons \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Feet
+				i(211996),	-- Entombed Seraph's Casket \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Chest
+				i(211997),	-- Exhumed Centurion's Drape \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Generic - Cloak
+				i(211998),	-- Exhumed Centurion's Manacles \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Wrist
+				i(211999),	-- Exhumed Centurion's Baltea \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Waist
+				i(212000),	-- Exhumed Centurion's Spikes \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Shoulder
+				i(212001),	-- Exhumed Centurion's Chausses \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Legs
+				i(212002),	-- Exhumed Centurion's Galea \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Head
+				i(212003),	-- Exhumed Centurion's Gauntlets \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Hand
+				i(212004),	-- Exhumed Centurion's Sollerets \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Feet
+				i(212005),	-- Exhumed Centurion's Breastplate \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Chest
+				i(212006),	-- Mist of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Generic - Cloak
+				i(212007),	-- Embrace of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Wrist
+				i(212008),	-- Wrappings of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Waist
+				i(212009),	-- Concourse of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Shoulder
+				i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
+				i(212011),	-- Noetic of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Head
+				i(212012),	-- Covenant of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Hand
+				i(212013),	-- Shoes of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Feet
+				i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
+				i(212015),	-- Lightless Scavenger's Hide \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Generic - Cloak
+				i(212016),	-- Lightless Scavenger's Wristguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Wrist
+				i(212017),	-- Lightless Scavenger's Bonegirdle \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Waist
+				i(212018),	-- Lightless Scavenger's Taxidermy \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Shoulder
+				i(212019),	-- Lightless Scavenger's Stalkings \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Legs
+				i(212020),	-- Lightless Scavenger's Skull \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Head
+				i(212021),	-- Lightless Scavenger's Mitts \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Hand
+				i(212022),	-- Lightless Scavenger's Footpads \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Feet
+				i(212023),	-- Lightless Scavenger's Tunic \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Chest
+				i(212024),	-- Cape of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Generic - Cloak
+				i(212025),	-- Wristblades of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Wrist
+				i(212026),	-- Core of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Waist
+				i(212027),	-- Fumaroles of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Shoulder
+				i(212028),	-- Legguards of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Legs
+				i(212029),	-- Horns of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Head
+				i(212030),	-- Rippers of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Hand
+				i(212031),	-- Talons of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Feet
+				i(212032),	-- Scales of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Chest
+				i(212033),	-- K'areshi Phantom's Breeze \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Generic - Cloak
+				i(212034),	-- K'areshi Phantom's Cuffs \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Wrist
+				i(212035),	-- K'areshi Phantom's Belt \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Waist
+				i(212036),	-- K'areshi Phantom's Shoulderpads \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Shoulder
+				i(212037),	-- K'areshi Phantom's Leggings \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Legs
+				i(212038),	-- K'areshi Phantom's Emptiness \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Head
+				i(212039),	-- K'areshi Phantom's Gloves \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Hand
+				i(212040),	-- K'areshi Phantom's Footwraps \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Feet
+				i(212041),	-- K'areshi Phantom's Nexus Wraps \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Chest
+				i(212042),	-- Gatecrasher's Mantle \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Generic - Cloak
+				i(212043),	-- Gatecrasher's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Wrist
+				i(212044),	-- Gatecrasher's Cord \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Waist
+				i(212045),	-- Gatecrasher's Enduring Effigy \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Shoulder
+				i(212046),	-- Gatecrasher's Kilt \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Legs
+				i(212047),	-- Gatecrasher's Horns \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Head
+				i(212048),	-- Gatecrasher's Protectors \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Hand
+				i(212049),	-- Gatecrasher's Tabi \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Feet
+				i(212050),	-- Gatecrasher's Gi \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Chest
+				i(212051),	-- Cloak of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Generic - Cloak
+				i(212052),	-- Great Links of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Wrist
+				i(212053),	-- Faulds of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Waist
+				i(212054),	-- Maw of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Shoulder
+				i(212055),	-- Leggings of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Legs
+				i(212056),	-- Mask of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Head
+				i(212057),	-- Eviscerators of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Hand
+				i(212058),	-- Treads of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Feet
+				i(212059),	-- Hide of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Chest
+				i(212060),	-- Drape of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Generic - Cloak
+				i(212061),	-- Armguards of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Wrist
+				i(212062),	-- Waistguard of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Waist
+				i(212063),	-- War-Mantle of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Shoulder
+				i(212064),	-- Trousers of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Legs
+				i(212065),	-- Impalers of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Head
+				i(212066),	-- Claws of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Hand
+				i(212067),	-- Talons of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Feet
+				i(212068),	-- Chestguard of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Chest
+				i(212069),	-- Hexflame Coven's Shawl \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Generic - Cloak
+				i(212070),	-- Hexflame Coven's Wristlace \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Wrist
+				i(212071),	-- Hexflame Coven's Dormant Eye \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Waist
+				i(212072),	-- Hexflame Coven's Altar \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Shoulder
+				i(212073),	-- Hexflame Coven's Leggings \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Legs
+				i(212074),	-- Hexflame Coven's All-Seeing Eye \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Head
+				i(212075),	-- Hexflame Coven's Sleeves \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Hand
+				i(212076),	-- Hexflame Coven's Treads \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth - Feet
+				i(212077),	-- Hexflame Coven's Ritual Harness \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth - Robe
+				i(212078),	-- Living Luster's Glow \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Generic - Cloak
+				i(212079),	-- Living Luster's Crystbands \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Wrist
+				i(212080),	-- Living Luster's Lightbelt \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Waist
+				i(212081),	-- Living Luster's Dominion \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Shoulder
+				i(212082),	-- Living Luster's Trousers \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Legs
+				i(212083),	-- Living Luster's Semblance \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Head
+				i(212084),	-- Living Luster's Touch \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Hand
+				i(212085),	-- Living Luster's Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth - Feet
+				i(212086),	-- Living Luster's Raiment \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth - Robe
+				i(212087),	-- Ward of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Generic - Cloak
+				i(212088),	-- Bracelets of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Wrist
+				i(212089),	-- Sigil of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Waist
+				i(212090),	-- Beacons of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Shoulder
+				i(212091),	-- Coattails of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Legs
+				i(212092),	-- Hood of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Head
+				i(212093),	-- Jeweled Gauntlets of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Hand
+				i(212094),	-- Slippers of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth - Feet
+				i(212095),	-- Runecoat of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth - Chest
+
+
+				i(212386),	-- Husk of Swallowing Darkness \\ 11.0 Raid Template - Shield - Shield
+				i(212387),	-- Broodtwister's Grim Catalyst \\ 11.0 Raid Template - Generic - Holdable
+				i(212388),	-- Ulgrax's Morsel-Masher \\ 11.0 Raid Template - Mace2H - Str - 2 Hand
+				i(212389),	-- Spire of Transfused Horrors \\ 11.0 Raid Template - Staff - Agi - 2 Hand
+				i(212390),	-- 11.0 Raid Template - Guns - RangedRight
+				i(212391),	-- Predator's Feasthooks \\ 11.0 Raid Template - Warglaives - Weapon
+				i(212392),	-- Duelist's Dancing Steel \\ 11.0 Raid Template - Sword1H - Str - Weapon \\ 11.0 Raid Template - Sword1H - Str -Weapon
+				i(212393),	-- 11.0 Raid Template - Polearms - Int - 2 Hand
+				i(212394),	-- Sovereign's Disdain \\ 11.0 Raid Template - Dagger - Int - Weapon
+				i(212395),	-- Blood-Kissed Kukri \\ 11.0 Raid Template - Dagger - Agi - Weapon
+				i(212396),	-- Monster Weapon - 1H Sword \\ 11.0 Raid Template - Sword1H - Agi - Weapon
+				i(212397),	-- Takazj's Entropic Edict \\ 11.0 Raid Template - Staff - Int - 2 Hand
+				i(212398),	-- Bludgeons of Blistering Wind \\ 11.0 Raid Template - Mace1H - Agi - Weapon
+				i(212399),	-- Splintershot Silkbow \\ 11.0 Raid Template - Bows - Ranged
+				i(212400),	-- Shade-Touched Silencer \\ 11.0 Raid Template - Crossbow - RangedRight
+				i(212401),	-- Ansurek's Final Judgment \\ 11.0 Raid Template - Axe1H - Str - Weapon
+				i(212402),	-- 11.0 Raid Template - Axe1H - Agi - Weapon
+				i(212403),	-- 11.0 Raid Template - Axe1H - Int - Weapon
+				i(212404),	-- Scepter of Manifested Miasma \\ 11.0 Raid Template - Mace1H - Int - Weapon
+				i(212405),	-- Flawless Phase Blade \\ 11.0 Raid Template - Sword1H - Int - Weapon
+				i(212406),	-- 11.0 Raid Template - Mace1H - Str - Weapon
+				i(212407),	-- Anub'arash's Colossal Mandible \\ 11.0 Raid Template - Axe2H - Str - 2 Hand
+				i(212408),	-- 11.0 Raid Template - Sword2H - Str - 2 Hand
+				i(212409),	-- Venom-Etched Claw \\ 11.0 Raid Template - FistWeapon - Weapon
+				i(212410),	-- 11.0 Raid Template - Mace2H - Int - 2 Hand
+				i(212411),	-- 11.0 Raid Template - Sword2H - Int - 2 Hand
+				i(212412),	-- 11.0 Raid Template - Wand - RangedRight
+				i(212413),	-- Honored Executioner's Perforator \\ 11.0 Raid Template - Polearms - Agi - 2 Hand
+				i(212414),	-- Lost Watcher's Remains \\ 11.0 Raid Template - Mail - Waist
+				i(212415),	-- Throne Defender's Bangles \\ 11.0 Raid Template - Mail - Wrist
+				i(212416),	-- Cosmic-Tinged Treads \\ 11.0 Raid Template - Cloth - Feet
+				i(212417),	-- Beyond's Dark Visage \\ 11.0 Raid Template - Leather - Head
+				i(212418),	-- Black Blood Injectors \\ 11.0 Raid Template - Plate - Hand
+				i(212419),	-- Bile-Soaked Harness \\ 11.0 Raid Template - Cloth - Chest
+				i(212420),	-- Queenguards's Carapace \\ 11.0 Raid Template - Plate - Chest
+				i(212421),	-- Goresplattered Membrane \\ 11.0 Raid Template - Mail - Chest
+				i(212422),	-- Bloodbound Horror's Legplates \\ 11.0 Raid Template - Plate - Legs
+				i(212423),	-- Rebel's Drained Marrowslacks \\ 11.0 Raid Template - Leather - Legs
+				i(212424),	-- Seasoned Earthen Boulderplates \\ 11.0 Raid Template - Plate - Shoulder
+				i(212425),	-- Devourer's Taut Innards \\ 11.0 Raid Template - Leather - Waist
+				i(212426),	-- Crunchy Intruder's Wristband \\ 11.0 Raid Template - Cloth - Wrist
+				i(212427),	-- Visor of the Evolved Captain \\ 11.0 Raid Template - Plate - Head
+				i(212428),	-- Final Meal's Horns \\ 11.0 Raid Template - Mail - Head
+				i(212429),	-- Whispering Voidlight Spaulders \\ 11.0 Raid Template - Mail - Shoulder
+				i(212430),	-- Shattered Eye Cincture \\ 11.0 Raid Template - Cloth - Waist
+				i(212431),	-- Undermoth-Lined Footpads \\ 11.0 Raid Template - Mail - Feet
+				i(212432),	-- Thousand-Scar Impalers \\ 11.0 Raid Template - Leather - Hand
+				i(212433),	-- Omnivore's Venomous Camouflage \\ 11.0 Raid Template - Leather - Chest
+				i(212434),	-- Voidspoken Sarong \\ 11.0 Raid Template - Cloth - Legs
+				i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
+				i(212436),	-- Clutches of Paranoia \\ 11.0 Raid Template - Mail - Hand
+				i(212437),	-- Ravaged Lamplighter's Manacles \\ 11.0 Raid Template - Plate - Wrist
+				i(212438),	-- Polluted Spectre's Cover \\ 11.0 Raid Template - Leather - Wrist
+				i(212439),	-- Beacons of the False Dawn \\ 11.0 Raid Template - Cloth - Shoulder
+				i(212440),	-- Devotee's Discarded Headdress \\ 11.0 Raid Template - Cloth - Head
+				i(212441),	-- Bindings of the Starless Night \\ 11.0 Raid Template - Cloth - Hand
+				i(212442),	-- Greatbelt of the Hungerer \\ 11.0 Raid Template - Plate - Waist
+				i(212443),	-- Shattershell Greaves \\ 11.0 Raid Template - Plate - Feet
+				i(212444),	-- Frame of Felled Insurgents \\ 11.0 Raid Template - Leather - Shoulder
+				i(212445),	-- Chitin-Spiked Jackboots \\ 11.0 Raid Template - Leather - Feet
+				i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
+				i(212447),	-- Key to the Unseeming \\ 11.0 Raid Template - Generic - Finger
+				i(212448),	-- Locket of Broken Memories \\ 11.0 Raid Template - Generic - Neck
+				i(212449),	-- Sikran's Endless Arsenal \\ Sikran's Shadow Arsenal \\ Sik'ran's Shadow Arsenal
+				i(212450),	-- Swarmlord's Authority
+				i(212451),	-- Aberrant Spellforge
+				i(212452),	-- Gruesome Syringe
+				i(212453),	-- Skyterror's Corrosive Organ \\ Rasha'nan's Acid Gland \\ Gigantic Acid Gland
+				i(212454),	-- Mad Queen's Mandate \\ Abyssal Effigy
+				i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
+				i(212456),	-- Void Reaper's Contract \\ Void Reaper's Chime
+				i(212457),	-- 11.0 Raid Template - INT - Trinket
+			}),
+			n(SPECIAL, {	-- Delves
+				i(207390),	-- Delve Ring
+				i(210693),	-- Delves Keystone
+				i(210698),	-- Rare Delve Key
+				i(210699),	-- Epic Delve Key
+				i(211006),	-- Secret-Dredger's Cloak
+				i(211007),	-- Torchbearer's Greatcloak
+				i(211008),	-- Cave Topographer's Vestment
+				i(211009),	-- Cave Topographer's Sandals
+				i(211010),	-- Cave Topographer's Handwraps
+				i(211011),	-- Cave Topographer's Cowl
+				i(211012),	-- Cave Topographer's Leggings
+				i(211013),	-- Cave Topographer's Cord
+				i(211014),	-- Cave Topographer's Cuffs
+				i(211015),	-- Treasure-Seeker's Boots
+				i(211016),	-- Treasure-Seeker's Grips
+				i(211017),	-- Treasure-Seeker's Helm
+				i(211019),	-- Treasure-Seeker's Sash
+				i(211020),	-- Treasure-Seeker's Bindings
+				i(211021),	-- Torchbearer's Chainmail
+				i(211023),	-- Torchbearer's Grips
+				i(211024),	-- Torchbearer's Coif
+				i(211025),	-- Torchbearer's Greaves
+				i(211026),	-- Torchbearer's Shoulderguards
+				i(211027),	-- Torchbearer's Cinch
+				i(211028),	-- Torchbearer's Bracers
+				i(211029),	-- Secret-Dredger's Helm
+				i(211030),	-- Secret-Dredger's Breastplate
+				i(211031),	-- Secret-Dredger's Sabatons
+				i(211032),	-- Secret-Dredger's Gauntlets
+				i(211033),	-- Secret-Dredger's Legguards
+				i(211034),	-- Secret-Dredger's Mantle
+				i(211035),	-- Secret-Dredger's Girdle
+				i(211036),	-- Secret-Dredger's Armplates
+				i(211037),	-- Treasure-Seeker's Vest
+				i(211038),	-- Treasure-Seeker's Epaulets
+				i(211039),	-- Cave Topographer's Shoulders
+				i(211040),	-- Unhinged Vault-Hatch
+				i(211041),	-- Brilliant Beacon
+				i(211042),	-- Delver's Wand
+				i(211043),	-- Delver's Polearm
+				i(211044),	-- Delver's Rifle
+				i(211045),	-- Delver's Spellblade
+				i(211046),	-- Umbral Artist's Chisel
+				i(211048),	-- Pathfinder's Stonecarver
+				i(211049),	-- Delver's Blade
+				i(211050),	-- Delver's Greatsword
+				i(211051),	-- Loop of Vestigial Power
+				i(211052),	-- Olden Signet
+				i(211053),	-- Delver's Hacker
+				i(211054),	-- Delver's Cleaver
+				i(211055),	-- Delver's Censer
+				i(211056),	-- Delver's Mallet
+				i(211057),	-- Delver's Cudgel
+				i(211058),	-- Delver's Halberd
+				i(211059),	-- Luminous Lampspire
+				i(211060),	-- Delver's Warglaive
+				i(211062),	-- Treasure-Seeker's Shawl
+				i(211063),	-- Long Lost Choker
+				i(211142),	-- Delves Keystone
+			}),
+			filter(COSMETIC, {
+				i(217706),	-- Learn Warglaives Test Item (DNT)
+				-- Probably from Delves
+				i(211801),	-- Poisonous Shroom Cap \\ Poisonous Fungarian Helm [PH]
+				i(212162),	-- Bitter Shroom Cap \\ Angry Fungarian Helm [PH]
+				i(212163),	-- Soporific Shroom Cap \\ Sleepy Fungarian Helm [PH]
+				i(212164),	-- Shallow Nautic Helm \\ Shallow Kobyss Helm [PH]
+				i(212165),	-- Deep Nautic Helm \\ Deep Kobyss Helm [PH]
+				i(212166),	-- Coral Nautic Helm \\ Coral Kobyss Helm [PH]
+				i(212167),	-- Taken Candle \\ Candle Kobold Helm [PH]
+				i(212168),	-- Cinderbee Wax Candle Hat \\ Cultlight Kobold Helm [PH]
+				i(212169),	-- Mint-Scented Candle Hat \\ Candelabra Kobold Helm [PH]
+				i(212170),	-- Bronzebeard's Spare Hat \\ Bronzebeard Hat [PH]
+				i(212171),	-- Zekvir's Raptorial Spine \\ Xev'zikk's Spine
+				i(212173),	-- Rulk'Nerub Raptorial Spine \\ Rulk'Nerub Backpiece [PH]
+			}),
+			n(ARMOR, {
+				i(206211),	-- Onyx Annulet
+				i(210220),	-- Resilient Mask
+				i(211620),	-- 11.0 Dungeon Template - Plate - Feet
+				i(211621),	-- 11.0 Dungeon Template - Cloth - Robe
+				i(211622),	-- 11.0 Dungeon Template - Plate - Chest
+				i(211623),	-- 11.0 Dungeon Template - Mail - Chest
+				i(211624),	-- 11.0 Dungeon Template - Leather - Chest
+				i(211625),	-- 11.0 Dungeon Template - Leather - Hand
+				i(211626),	-- 11.0 Dungeon Template - Plate - Hand
+				i(211627),	-- 11.0 Dungeon Template - Cloth - Hand
+				i(211628),	-- 11.0 Dungeon Template - Mail - Hand
+				i(211629),	-- 11.0 Dungeon Template - Cloth - Head
+				i(211630),	-- 11.0 Dungeon Template - Mail - Head
+				i(211631),	-- 11.0 Dungeon Template - Leather - Head
+				i(211632),	-- 11.0 Dungeon Template - Plate - Legs
+				i(211633),	-- 11.0 Dungeon Template - Cloth - Legs
+				i(211634),	-- 11.0 Dungeon Template - Mail - Legs
+				i(211635),	-- 11.0 Dungeon Template - Leather - Legs
+				i(211636),	-- 11.0 Dungeon Template - Leather - Shoulder
+				i(211637),	-- 11.0 Dungeon Template - Plate - Shoulder
+				i(211638),	-- 11.0 Dungeon Template - Cloth - Shoulder
+				i(211639),	-- 11.0 Dungeon Template - Mail - Shoulder
+				i(211640),	-- 11.0 Dungeon Template - Plate - Waist
+				i(211641),	-- 11.0 Dungeon Template - Cloth - Waist
+				i(211642),	-- 11.0 Dungeon Template - Mail - Waist
+				i(211643),	-- 11.0 Dungeon Template - Leather - Waist
+				i(211644),	-- 11.0 Dungeon Template - Cloth - Wrist
+				i(211645),	-- 11.0 Dungeon Template - Plate - Wrist
+				i(211646),	-- 11.0 Dungeon Template - Mail - Wrist
+				i(211647),	-- 11.0 Dungeon Template - Leather - Wrist
+				i(211648),	-- 11.0 Dungeon Template - Generic - Finger
+				i(211649),	-- 11.0 Dungeon Template - Generic - Trinket
+				i(211650),	-- 11.0 Dungeon Template - Generic - Neck
+				i(211651),	-- 11.0 Dungeon Template - Generic - Cloak
+				i(211652),	-- 11.0 Dungeon Template - Shield - Shield
+				i(211653),	-- 11.0 Dungeon Template - Generic - Holdable
+				i(211654),	-- 11.0 Dungeon Template - Mace2H - Str - 2 Hand
+				i(211655),	-- 11.0 Dungeon Template - Staff - Agi - 2 Hand
+				i(211656),	-- 11.0 Dungeon Template - Guns - RangedRight
+				i(211657),	-- 11.0 Dungeon Template - Warglaives - Weapon
+				i(211658),	-- 11.0 Dungeon Template - Sword1H - Str -Weapon
+				i(211659),	-- 11.0 Dungeon Template - Polearms - Int - 2 Hand
+				i(211660),	-- 11.0 Dungeon Template - Dagger - Int - Weapon
+				i(211661),	-- 11.0 Dungeon Template - Dagger - Agi - Weapon
+				i(211662),	-- 11.0 Dungeon Template - Sword1H - Agi - Weapon
+				i(211663),	-- 11.0 Dungeon Template - Plate - Head
+				i(211664),	-- 11.0 Dungeon Template - Cloth - Feet
+				i(211665),	-- 11.0 Dungeon Template - Mail - Feet
+				i(211666),	-- 11.0 Dungeon Template - Leather - Feet
+				i(211667),	-- 11.0 Dungeon Template - Staff - Int - 2 Hand
+				i(211668),	-- 11.0 Dungeon Template - Mace1H - Agi - Weapon
+				i(211669),	-- 11.0 Dungeon Template - Bows - Ranged
+				i(211670),	-- 11.0 Dungeon Template - Crossbow - RangedRight
+				i(211671),	-- 11.0 Dungeon Template - Axe1H - Str - Weapon
+				i(211672),	-- 11.0 Dungeon Template - Axe1H - Agi - Weapon
+				i(211673),	-- 11.0 Dungeon Template - Axe1H - Int - Weapon
+				i(211674),	-- 11.0 Dungeon Template - Mace1H - Int - Weapon
+				i(211675),	-- 11.0 Dungeon Template - Sword1H - Int - Weapon
+				i(211676),	-- 11.0 Dungeon Template - Mace1H - Str - Weapon
+				i(211677),	-- 11.0 Dungeon Template - Axe2H - Str - 2 Hand
+				i(211678),	-- 11.0 Dungeon Template - Sword2H - Str - 2 Hand
+				i(211679),	-- 11.0 Dungeon Template - FistWeapon - Weapon
+				i(211680),	-- 11.0 Dungeon Template - Mace2H - Int - 2 Hand
+				i(211681),	-- 11.0 Dungeon Template - Sword2H - Int - 2 Hand
+				i(211682),	-- 11.0 Dungeon Template - Wand - RangedRight
+				i(211683),	-- 11.0 Dungeon Template - Polearms - Agi - 2 Hand
+				i(211889),	-- 11.0 Poor Item Template - <Descriptor> Leather Cinch
+				i(211890),	-- 11.0 Poor Item Template - <Descriptor> Leather Footwraps
+				i(211891),	-- 11.0 Poor Item Template - <Descriptor> Leather Handwraps
+				i(211892),	-- 11.0 Poor Item Template - <Descriptor> Leather Guise
+				i(211893),	-- 11.0 Poor Item Template - <Descriptor> Leather Leggings
+				i(211894),	-- 11.0 Poor Item Template - <Descriptor> Leather Shoulderpads
+				i(211895),	-- 11.0 Poor Item Template - <Descriptor> Leather Jerkin
+				i(211896),	-- 11.0 Poor Item Template - <Descriptor> Leather Bracers
+				i(211897),	-- 11.0 Poor Item Template - <Descriptor> Plate Vambraces
+				i(211898),	-- 11.0 Poor Item Template - <Descriptor> Plate Warboots
+				i(211899),	-- 11.0 Poor Item Template - <Descriptor> Plate Shoulderguards
+				i(211900),	-- 11.0 Poor Item Template - <Descriptor> Plate Legguards
+				i(211901),	-- 11.0 Poor Item Template - <Descriptor> Plate Faceguard
+				i(211902),	-- 11.0 Poor Item Template - <Descriptor> Plate Gloves
+				i(211903),	-- 11.0 Poor Item Template - <Descriptor> Plate Chestpiece
+				i(211904),	-- 11.0 Poor Item Template - <Descriptor> Plate Greatbelt
+				i(211905),	-- 11.0 Poor Item Template - <Descriptor> Cloth Armbands
+				i(211906),	-- 11.0 Poor Item Template - <Descriptor> Cloth Vestments
+				i(211907),	-- 11.0 Poor Item Template - <Descriptor> Cloth Footpads
+				i(211908),	-- 11.0 Poor Item Template - <Descriptor> Cloth Legwraps
+				i(211909),	-- 11.0 Poor Item Template - <Descriptor> Cloth Grips
+				i(211910),	-- 11.0 Poor Item Template - <Descriptor> Cloth Hood
+				i(211911),	-- 11.0 Poor Item Template - <Descriptor> Cloth Cincture
+				i(211912),	-- 11.0 Poor Item Template - <Descriptor> Cloth Mantle
+				i(211913),	-- 11.0 Poor Item Template - <Descriptor> Chain Armguards
+				i(211914),	-- 11.0 Poor Item Template - <Descriptor> Chain Spaulders
+				i(211915),	-- 11.0 Poor Item Template - <Descriptor> Chain Footguards
+				i(211916),	-- 11.0 Poor Item Template - <Descriptor> Chain Breeches
+				i(211917),	-- 11.0 Poor Item Template - <Descriptor> Chain Vest
+				i(211918),	-- 11.0 Poor Item Template - <Descriptor> Chain Gauntlets
+				i(211919),	-- 11.0 Poor Item Template - <Descriptor> Chain Helm
+				i(211920),	-- 11.0 Poor Item Template - <Descriptor> Chain Clasp
+				i(212098),	-- 11.0 End Game Template <Descriptor> Vestment
+				i(212099),	-- 11.0 End Game Template <Descriptor> Sandals
+				i(212100),	-- 11.0 End Game Template <Descriptor> Handwraps
+				i(212101),	-- 11.0 End Game Template <Descriptor> Cowl
+				i(212102),	-- 11.0 End Game Template <Descriptor> Leggings
+				i(212103),	-- 11.0 End Game Template <Descriptor> Cord
+				i(212104),	-- 11.0 End Game Template <Descriptor> Cuffs
+				i(212105),	-- 11.0 End Game Template <Descriptor> Waders
+				i(212106),	-- 11.0 End Game Template <Descriptor> Grips
+				i(212108),	-- 11.0 End Game Template <Descriptor> Breeches
+				i(212109),	-- 11.0 End Game Template <Descriptor> Sash
+				i(212110),	-- 11.0 End Game Template <Descriptor> Bindings
+				i(212111),	-- 11.0 End Game Template <Descriptor> Chainmail
+				i(212112),	-- 11.0 End Game Template <Descriptor> Striders
+				i(212113),	-- 11.0 End Game Template <Descriptor> Grips
+				i(212114),	-- 11.0 End Game Template <Descriptor> Coif
+				i(212115),	-- 11.0 End Game Template <Descriptor> Greaves
+				i(212116),	-- 11.0 End Game Template <Descriptor> Shoulderguards
+				i(212117),	-- 11.0 End Game Template <Descriptor> Cinch
+				i(212118),	-- 11.0 End Game Template <Descriptor> Bracers
+				i(212119),	-- 11.0 End Game Template <Descriptor> Helm
+				i(212120),	-- 11.0 End Game Template <Descriptor> Breastplate
+				i(212121),	-- 11.0 End Game Template <Descriptor> Sabatons
+				i(212122),	-- 11.0 End Game Template <Descriptor> Gauntlets
+				i(212123),	-- 11.0 End Game Template <Descriptor> Legguards
+				i(212124),	-- 11.0 End Game Template <Descriptor> Mantle
+				i(212125),	-- 11.0 End Game Template <Descriptor> Girdle
+				i(212126),	-- 11.0 End Game Template <Descriptor> Armplates
+				i(212127),	-- 11.0 End Game Template <Descriptor> Vest
+				i(212128),	-- 11.0 End Game Template <Descriptor> Epaulets
+				i(212129),	-- 11.0 End Game Template <Descriptor> Shoulderpads
+				i(212130),	-- 11.0 End Game Template <Descriptor> Shield
+				i(212131),	-- 11.0 End Game Template <Descriptor> Offhand
+				i(212132),	-- 11.0 End Game Template <Descriptor> Polearm
+				i(212133),	-- 11.0 End Game Template <Descriptor> Gun
+				i(212134),	-- 11.0 End Game Template <Descriptor> Kris
+				i(212135),	-- 11.0 End Game Template <Descriptor> Mace
+				i(212136),	-- 11.0 End Game Template <Descriptor> Shank
+				i(212137),	-- 11.0 End Game Template <Descriptor> Sword
+				i(212138),	-- 11.0 End Game Template <Descriptor> Blade
+				i(212139),	-- 11.0 End Game Template <Descriptor> Great Mace
+				i(212140),	-- 11.0 End Game Template <Descriptor> Band
+				i(212141),	-- 11.0 End Game Template <Descriptor> Signet
+				i(212142),	-- 11.0 End Game Template <Descriptor> Cudgel
+				i(212143),	-- 11.0 End Game Template <Descriptor> Cudgel
+				i(212144),	-- 11.0 End Game Template <Descriptor> Stave
+				i(212145),	-- 11.0 End Game Template <Descriptor> Halberd
+				i(212146),	-- 11.0 End Game Template <Descriptor> Staff
+				i(212147),	-- 11.0 End Game Template <Descriptor> Warglaive
+				i(212148),	-- 11.0 End Game Template <Descriptor> Trinket
+				i(212149),	-- 11.0 End Game Template <Descriptor> Band
+				i(212150),	-- 11.0 End Game Template <Descriptor> Belt
+				i(212151),	-- 11.0 End Game Template <Descriptor> Shawl
+				i(212152),	-- 11.0 End Game Template <Descriptor> Choker
+				i(213099),	-- Test Warbound until equipped (DNT)
+				i(215169),	-- Everburning Lantern
+				i(215170),	-- Abyssal Trap
+				i(215171),	-- Fungal Friend Flute
+				i(215172),	-- Silken Chain Weaver
+				i(215173),	-- Serum of Unconstrained Senses
+				i(215174),	-- Concoction: Kiss of Death
+				i(215175),	-- Belt of Vials
+				i(215178),	-- Shadow-Binding Ritual Knife
+				i(216657),	-- Test Item C
+				i(217894),	-- Nerubian Pheromone Secreter
+			}),
+			n(PVP, {
+				i(210221),	-- Aspirant's Heraldry
+				i(210232),	-- Combatant's Heraldry
+				i(210233),	-- Gladiator's Heraldry
+			}),
+			n(MISC, {
+				i(206134),	-- Potion of Healing
+				i(206581),	-- Harvester Core
+				i(208670),	-- Arachnophobia Mode
+				i(209431),	-- Fungal Scraper
+				i(209788),	-- Dispersion Crystal
+				i(210017),	-- Fungal Fish
+				i(210051),	-- Spark Feather
+				i(210697),	-- Luckstone
+				i(211348),	-- Awkward Potion
+				i(211349),	-- Mundane Potion
+				i(211474),	-- Shadowblind Grouper
+				i(211529),	-- Test Big Bag (DNT)
+				i(211776),	-- Damp Repair Kit
+				i(212340),	-- Strange Jar
+				i(212385),	-- Moira's Healing Surge TO DEPRECATE
+				i(212527),	-- Spiderforged Emitter Key [REMOVED]
+				i(212601),	-- Second Half of Titan Key NOT USED
+				i(212603),	-- First Half of Titan Key NOT USED
+				i(212868),	-- Precious Ore \\ Delicious Ore
+				i(213000),	-- Holy Flamethrower Torch
+				i(213085),	-- Lost Treasure
+				i(213420),	-- Fungarian Mushroom Cap
+				i(213423),	-- Bygone Weapon Charm
+				i(213533),	-- Ancient Weapon Charm
+				i(213534),	-- Bygone Armor Charm
+				i(213535),	-- Ancient Armor Charm
+				i(213569),	-- Test Item A
+				i(213570),	-- Test Item B
+				i(215359),	-- Very Large Valdrakken Accord Supply Pack
+				i(215360),	-- Personalized Setting
+				i(215448),	-- Darkstem Stew \\ Darkstem Brew
+				i(215466),	-- Sanctified Supplies
+				i(216420),	-- Signal Flare
+				i(216433),	-- Stolen Relic
+				i(216528),	-- Faded Supply Chest Key
+				i(216603),	-- Boots of the Light
+				i(216708),	-- Holy Candle
+				i(216772),	-- Whispering Explosives \\ Explosives
+				i(216982),	-- Spy List
+				i(217012),	-- Novice Actor's Chest
+				i(217013),	-- Expert Actor's Chest
+				i(217040),	-- Kobold Earwax
+				i(217386),	-- Discarded Memory Gem
+				i(217401),	-- Wormcaller's Resonator
+				i(217402),	-- Olden Armor Charm
+				i(217403),	-- Olden Weapon Charm
+				i(217404),	-- Time-Worn Armor Charm
+				i(217405),	-- Time-Worn Weapon Charm
+				i(217715),	-- Key Scroll
+				i(217895),	-- Pheromone Bottle
+				i(217896),	-- Cinderbrew Mead
+				i(217897),	-- Volatile Pheromone
+			}),
+			n(QUEST_ITEMS, {
+				i(206348),	-- Fragmented Flame
+				i(206349),	-- Fragmented Reagent
+				i(206601),	-- Dark-Nurtured Scallions
+				i(207084),	-- Auebry's Marker Pistol
+				i(208948),	-- [DNT] Club Chest Key \\ Club Chest Key
+				i(208957),	-- Totem of the Southern Storm
+				i(209857),	-- Unusual Seeds
+				i(210745),	-- Firelight Spud
+				i(211209),	-- Suspicious Candle
+				i(211210),	-- Blacksmith Boss' Head
+				i(211291),	-- Decorative Bones
+				i(211304),	-- Bone Key
+				i(211407),	-- The Book of Bob
+				i(211469),	-- Squash Hook
+				i(211475),	-- Twilight Spice
+				i(211478),	-- Darkroot Persimmon
+				i(211479),	-- Frog-Kissed Caviar
+				i(211481),	-- Stomping Shoes \\ Stompin' Shoes
+				i(211797),	-- Expedition Map
+				i(211861),	-- Umbral Eggplant
+				i(211863),	-- Sizzling Magma Core
+				i(211929),	-- Ichor Coated Debris
+				i(211930),	-- Damaged Framework
+				i(211959),	-- Lost Belongings
+				i(211960),	-- Game Piece
+				i(211961),	-- Rocket-Powered Impact Wrench
+				i(211963),	-- Ceiling Sweeper
+				i(211964),	-- Stillstone Catch
+				i(211966),	-- Nerubian Sealed Crate
+				i(211967),	-- Large Sealed Crate
+				i(211968),	-- Blueprint Bundle
+				i(211969),	-- Arathi-Locked Chest
+				i(211973),	-- Spider-Touched Bag
+				i(211974),	-- Rolled Arathi Rug
+				i(212223),	-- Elemental Essence
+				i(212224),	-- Titan Relics
+				i(212331),	-- The Unusual Bug
+				i(212333),	-- Expedition Tinderbox
+				i(212339),	-- A Small Bag of Seeds
+				i(212349),	-- Sizzling Spring Water
+				i(212344),	-- Chest Key
+				i(212520),	-- Shadow-Tainted Tinderbox
+				i(212755),	-- Remnant Satchel
+				i(212882),	-- Glittering Ore
+				i(212494),	-- Squishy Bits [DNT]
+				i(212519),	-- Nebb's Key
+				i(212521),	-- Nebb's "Treasure" [DNT]
+				i(212547),	-- Final Project Page
+				i(212602),	-- Titan Emitter \\ The Archaedas Conundrum \\ Titan Disc
+				i(212604),	-- Restored Titan Key NOT USED
+				i(213108),	-- Corrupted Oil
+				i(213163),	-- Cryptographic Glyph
+				i(213193),	-- Arathi Army Medallion
+				i(213402),	-- Incriminating Crystal
+				i(213404),	-- Incriminating Script
+				i(213405),	-- Incriminating Focus
+				i(213424),	-- Keg of Cinderbrew Mead
+				i(213425),	-- Shredded Reins
+				i(213538),	-- Wood-Worm Tonic \\ Wood-Worm Liqueur \\ Necrotic Dart
+				i(213557),	-- Lost Journal Tablet
+				i(215159),	-- Pillaged Trophy
+				i(215177),	-- Power Cell
+				i(215179),	-- Power Cell
+				i(215180),	-- Power Cell
+				i(215447),	-- Duskstem
+				i(215457),	-- Loyalist Secretions
+				i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
+				i(216682),	-- The Vizier's Invitation
+				i(216683),	-- Earthen Rifle
+				i(216684),	-- Earthen Sword
+				i(216685),	-- Earthen Shield
+				i(216686),	-- Earthen Axe
+				i(216688),	-- High Hollows Key
+				i(216689),	-- Albert's Head
+				i(217142),	-- Earthen Limb
+				i(217310),	-- The Foremans' First Scroll
+				i(217311),	-- The Foreman's Second Scroll
+				i(217312),	-- The Foreman's Third Scroll
+				i(217400),	-- Kobyss Lure
+				i(217414),	-- Speakeasy Passrune
+				i(217506),	-- Test Item [DNT]
+			}),
+			n(WEAPONS, {
+				i(216905),	-- Brann Bronzebeard's Axe
+				i(216906),	-- Ol' Faithful
+			}),
+			filter(TOYS, {
+				i(211931),	-- Abyss Caller Horn (TOY!)
+				i(219387),	-- Barrel of Fireworks (TOY!)
+				i(215147),	-- Beautification Iris (TOY!)
+				i(218310),	-- Box of Puntables (TOY!)
+				i(221962),	-- Defective Escape Pod (TOY!)
+				i(224585),	-- Hanna's Locket (TOY!)
+				i(224251),	-- Memory Chord (TOY!)
+				i(215145),	-- Remembrance Stone (TOY!)
+				i(224554),	-- Silver Linin' Scepter (TOY!)
+				i(219403),	-- Stonebound Lantern (TOY!)
+				i(212174),	-- The Warband Map to Everywhere All At Once (TOY!)
+				i(223312),	-- Trusty Hat (TOY!)
+				i(221966),	-- Wormhole Generator: Khaz Algar (TOY!)
+
+				---
+				i(215146),	-- JC Gemcutting Toy
+			}),
+
+			--
 			i(217965),	-- Repair Kit
 			i(217970),	-- Dormant Runestone
 			i(217971),	-- Deadly Cypher
@@ -1237,7 +1287,7 @@ root(ROOTS.Unsorted, {
 			i(218306),	-- Recruit's Sturdy Wrap
 			i(218308),	-- Winter Veil Cracker
 			i(218309),	-- Gently Shaken Gift
-			i(218310),	-- Box of Puntables
+
 			i(218311),	-- Winter Veil Gift
 			i(218312),	-- Recruit's Sturdy Polearm \\ Recruit's Sturdy Poleaxe
 			i(218313),	-- Recruit's Sturdy Greatsword
@@ -2124,7 +2174,6 @@ root(ROOTS.Unsorted, {
 			i(219397),	-- Earthen Boots
 			i(219398),	-- Earthen Chain
 			i(219400),	-- Faerin's Torch of Holy Flame
-			i(219403),	-- Stonebound Lantern \\ Stonebound Lantern [PH]
 			i(219407),	-- Earthen Chestpiece
 			i(219408),	-- Earthen Striders
 			i(219409),	-- Earthen Handguards
@@ -2960,11 +3009,10 @@ root(ROOTS.Unsorted, {
 			i(221959),	-- Portable Profession Possibility Projector
 			i(221960),	-- Prototype: Barrel of Fireworks
 			i(221961),	-- Prototype: Defective Escape Pod
-			i(221962),	-- Defective Escape Pod
+
 			i(221963),	-- Prototype: Filmless Camera \\ Prototype: Malfunctioning Navigation Beacon
 			i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
 			i(221965),	-- Prototype: Wormhole Generator: Khaz Algar
-			i(221966),	-- Wormhole Generator: Khaz Algar
 			i(221968),	-- Legibly Scribbled Notes
 			i(221969),	-- P.0.W. x2
 			i(221983),	-- Core Alloy
@@ -3733,7 +3781,6 @@ root(ROOTS.Unsorted, {
 			i(223309),	-- Bindings of Irradiating Imprisonment
 			i(223310),	-- Wristwraps of Fading Luminescence
 			i(223311),	-- Armguards of Dimming Fluorescence
-			i(223312),	-- Trusty Hat
 			i(223313),	-- [PH] Shadow Elemental (Black)
 			i(223316),	-- Trusty Hat
 			i(223318),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
@@ -4130,7 +4177,6 @@ root(ROOTS.Unsorted, {
 			i(224248),	-- Earthen Blunderbuss
 			i(224249),	-- Earthen Shillelagh
 			i(224250),	-- Toy Fish
-			i(224251),	-- Memory Chord
 			i(224252),	-- Calcified Journal
 			i(224254),	-- Wooden Figure
 			i(224257),	-- Sturdy Locket
@@ -4187,7 +4233,6 @@ root(ROOTS.Unsorted, {
 			i(224545),	-- Plowhead
 			i(224548),	-- Nerubian Device
 			i(224553),	-- Beledar's Attunement
-			i(224554),	-- Silver Linin' Scepter
 			i(224556),	-- Victorious Contender's Strongbox
 			i(224557),	-- Field Medic's Hazard Payout
 			i(224572),	-- Crystallized Augment Rune
@@ -4195,7 +4240,6 @@ root(ROOTS.Unsorted, {
 			i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
 			i(224583),	-- Slab of Slate
 			i(224584),	-- Erosion Polished Slate
-			i(224585),	-- Hanna's Locket
 			i(224586),	-- Box o' Booms
 			i(224587),	-- Box o' Booms
 			i(224588),	-- Box o' Booms
@@ -4660,7 +4704,6 @@ root(ROOTS.Unsorted, {
 			i(225633),	-- Zenith Acid-Pocked Egg \\ Zenith Adjective Thing
 			i(225635),	-- Zev'kall's Attrition Log
 			i(211494),	-- Spark of Beginnings
-			i(219387),	-- Barrel of Fireworks
 			i(224727),	-- Dasher's Trophy Fish
 			i(225555),	-- Periapt of Pure Flame
 			i(225636),	-- Regicide \\ 11.0 Raid Template - Dagger - Agi - Weapon
