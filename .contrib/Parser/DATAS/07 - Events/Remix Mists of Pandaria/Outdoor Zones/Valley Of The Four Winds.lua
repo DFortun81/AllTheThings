@@ -156,6 +156,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216612),	-- Seawatch Launcher
 					i(215485),	-- Shomi's Hatchet
 					i(215739),	-- Shomi's Scepter
+					i(210635),	-- Streamtalker Shield
 					i(215781),	-- Sumprush Maul
 					i(216476),	-- Temple Trainee's Edge
 					i(216472),	-- Tian Monastery Conduit

@@ -90,8 +90,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["provider"] = { "n", 60968 },	-- Xuen
 					["coords"] = {
 						{ 67.2, 56.0, KUN_LAI_SUMMIT },
-						{ 70.4, 51.2, KUN_LAI_SUMMIT }, 
-						{ 71.6, 45.0, KUN_LAI_SUMMIT },  
+						{ 70.4, 51.2, KUN_LAI_SUMMIT },
+						{ 71.6, 45.0, KUN_LAI_SUMMIT },
 						{ 66.4, 46.4, KUN_LAI_SUMMIT },
 						{ 68.6, 44.4, KUN_LAI_SUMMIT },
 					},
@@ -152,6 +152,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215862),	-- Engraved Spire
 					i(215952),	-- Fear's Bite (wowhead)
 					i(211151),	-- Fran's Repeater
+					i(215678),	-- Grummle Lantern
 					i(215940),	-- Halcyon Blade
 					i(215944),	-- Harmonious Scimitar (wowhead)
 					i(216419),	-- Hozen Knife

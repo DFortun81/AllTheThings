@@ -258,6 +258,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215742),	-- Faded Forest Crusher
 					i(215560),	-- Faded Forest Launcher (wowhead)
 					i(215865),	-- Fogspeaker Conduit
+					i(215680),	-- Hope's Effigy
 					i(215702),	-- Howling Rifle
 					i(216417),	-- Hozen Shanker
 					i(215937),	-- Imperial Wind Blade (drop)
