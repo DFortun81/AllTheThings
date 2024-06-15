@@ -1803,8 +1803,6 @@ root(ROOTS.Zones, {
 							i(90547),	-- Lantern of Hope
 						},
 					}),
-
-
 					q(30089, {	-- Apply Directly to the Forehead
 						["sourceQuests"] = { 30088 },	-- Why So Serious?
 						["provider"] = { "n", 56115 },	-- Ken-Ken
@@ -1821,8 +1819,6 @@ root(ROOTS.Zones, {
 							i(81475),	-- Dojani Legguards
 						},
 					}),
-
-
 					q(30672, {	-- Balance
 						["sourceQuests"] = {
 							30691,	-- Misery
@@ -1843,8 +1839,6 @@ root(ROOTS.Zones, {
 							i(81551),	-- Cloudfall Mace
 						},
 					}),
-
-
 					q(30674, {	-- Balance Without Violence
 						["sourceQuests"] = {
 							30691,	-- Misery
@@ -1853,45 +1847,33 @@ root(ROOTS.Zones, {
 						["description"] = "Automatically given you while moving through Nayeli Lagoon.",
 						["coord"] = { 46.9, 84.8, KRASARANG_WILDS },
 					}),
-
-
 					q(30384, {	-- Blind Them! (A)
 						["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
 						["provider"] = { "n", 58735 },	-- Lyalia
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(30124, {	-- Blind Them! (H)
 						["sourceQuests"] = { 30179 },	-- Poisoned!
 						["provider"] = { "n", 58114 },	-- Kor Bloodtust
 						["coord"] = { 62.6, 20.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30270, {	-- Blinding the Riverblades
 						["sourceQuests"] = { 30269 },	-- Unsafe Passage
 						["provider"] = { "n", 59138 },	-- Koro Mistwalker
 						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
 					}),
-
-
 					q(30084, {	-- Borderlands
 						["sourceQuests"] = { 30091 },	-- Tears of Pandaria
 						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 						["coord"] = { 79.7, 1.56, KRASARANG_WILDS },
 					}),
-
-
 					q(30668, {	-- Build Your Own Raft
 						["sourceQuests"] = { 30666 },	-- Sudden, Unexpected Crocolist Aggression
 						["provider"] = { "n", 60173 },	-- Jay Cloudfall
 						["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
 					}),
-
-
 					q(30675, {	-- Buried Hozen Treasure
 						["provider"] = { "i", 80827 },	-- Confusing Treasure Map
 						["coord"] = { 48.1, 90.8, KRASARANG_WILDS },	-- general midpoint-ish area, since the mobs are spread out around the island
@@ -1904,8 +1886,6 @@ root(ROOTS.Zones, {
 							i(80822),	-- The Golden Banana (TOY!)
 						},
 					}),
-
-
 					q(30082, {	-- Cheer Up, Yi-Mo
 						["sourceQuests"] = { 30080 },	-- Finding Yi-Mo
 						["provider"] = { "n", 58376 },	-- Yi-Mo Longbrow
@@ -1922,19 +1902,13 @@ root(ROOTS.Zones, {
 							i(81448),	-- Dojani Helm
 						},
 					}),
-
-
 					q(30352, {	-- Crane Mastery
 						["provider"] = { "n", 58779 },	-- Daggle Bombstrider
 						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
 					}),
-
-
 					q(30126, {	-- Crane Mastery
 						["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the version above
 					}),
-
-
 					q(31262, {	-- Crane Mastery: Needlebeak
 						["sourceQuests"] = { 30352 },	-- Crane Mastery
 						["provider"] = { "n", 58779 },	-- Daggle Bombstrider
@@ -1955,10 +1929,11 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 						["coord"] = { 79.7, 1.57, KRASARANG_WILDS },
 					}),
-
-
 					q(30174, {	-- For Family
-						["sourceQuests"] = { 30164 },	-- The Stoneplow Convoy
+						["sourceQuests"] = {
+							30164,	-- The Stoneplow Convoy
+							30175,	-- The Mantid (H)
+						},
 						["provider"] = { "n", 58607 },	-- Sunwalker Dezco
 						["coord"] = { 15.3, 36.2, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
@@ -1974,16 +1949,12 @@ root(ROOTS.Zones, {
 							i(81457),	-- Dojani Shoulders
 						},
 					}),
-
-
 					q(30163, {	-- For the Tribe
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 						["provider"] = { "n", 58114 },	-- Kor Bloodtusk
 						["coord"] = { 29.0, 48.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30363, {	-- Going on the Offensive
 					--	does this also require "Lotus Tea" (30351) and "Threats from Dojan" (30349)?
 						["sourceQuests"] = { 30348 },	-- Immortality?
@@ -1991,24 +1962,18 @@ root(ROOTS.Zones, {
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(30465, {	-- Going on the Offensive
 					--	does this have different SQs than the previous version?
 						["provider"] = { "n", 58735 },	-- Lyalia
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(30132, {	-- Going West
 						["sourceQuests"] = { 30131 },	-- Life
 						["provider"] = { "n", 58113 },	-- Sunwalker Dezco
 						["coord"] = { 63.1, 20.7, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30464, {	-- Going West
 					--	does this have different SQs than the version above?
 						["sourceQuests"] = { 30131 },	-- Life
@@ -2016,8 +1981,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.1, 20.7, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30130, {	-- Herbal Remedies
 						["sourceQuests"] = {
 							30123,	-- Skitterer Skew
@@ -2027,14 +1990,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 62.6, 20.0, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-					
 					heroscall(q(49558, {	-- Hero's Call: Krasarang Wilds!
 						["timeline"] = { ADDED_7_3_5 },
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 						["lvl"] = 81,
 					})),
-
 					q(30376, {	-- Hope Springs Eternal
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = {
@@ -2049,16 +2010,16 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 59719 },	-- Chi-Ji
 						["coord"] = { 41.6, 46.3, KRASARANG_WILDS },
 					}),
-
-
 					q(30348, {	-- Immortality?
-						["sourceQuests"] = { 30347 },	-- The Pools of Youth
+						["sourceQuests"] = {
+							30347,	-- The Pools of Youth
+							30349,	-- Threat from Dojan (A)
+							30351,	-- Lotus Tea (A)
+						},
 						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
 						["coord"] = { 70.7, 28.4, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(30273, {	-- In the House of the Red Crane
 					--	Anduin seems to follow you constantly even if you abandon this, so coords do not appear to be unnecessary
 						["sourceQuests"] = {
@@ -2079,8 +2040,6 @@ root(ROOTS.Zones, {
 							i(81485),	-- Nayeli Cord
 						},
 					}),
-
-
 					q(30178, {	-- Into the Wilds
 						["sourceQuests"] = { 30090 },	-- Zhu's Despair
 						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
@@ -2088,8 +2047,6 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-
-
 					q(30462, {	-- Into the Wilds
 					--	does this have different SQs than the previous version?
 						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
@@ -2097,8 +2054,6 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-
-
 					q(30133, {	-- Into the Wilds
 						["sourceQuests"] = { 30090 },	-- Zhu's Despair
 						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
@@ -2106,8 +2061,6 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-
-
 					q(30461, {	-- Into the Wilds
 					--	does this have different SQs than the previous version?
 						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
@@ -2115,8 +2068,6 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					}),
-
-
 					q(30131, {	-- Life
 						["sourceQuests"] = {
 							30128,	-- The Pools of Youth
@@ -2126,8 +2077,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 62.6, 19.9, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30351, {	-- Lotus Tea
 						["sourceQuests"] = {
 							30384,	-- Blind Them!
@@ -2138,8 +2087,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(30081, {	-- Materia Medica
 						["sourceQuests"] = {
 							30079,  -- What's Eating Zhu's Watch?
@@ -2148,29 +2095,21 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56115 },	-- Ken-ken
 						["coord"] = { 80.2, 1.00, KRASARANG_WILDS },
 					}),
-
-
 					q(30691, {	-- Misery
 						["sourceQuests"] = { 30669 },	-- The Lorewalker on the Lake
 						["provider"] = { "n", 60139 },	-- Wise Ana Wu
 						["coord"] = { 47.6, 78.1, KRASARANG_WILDS },
 					}),
-
-
 					q(30354, {	-- No Sister Left Behind
 						["sourceQuests"] = { 30363, 30465 },	-- Going on the Offensive
 						["provider"] = { "n", 58821 },	-- Lyalia
 						["coord"] = { 24.7, 29.9, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(30667, {	-- Particular Plumage
 						["provider"] = { "n", 60182 },	-- Tony Tuna
 						["coord"] = { 53.7, 74.4, KRASARANG_WILDS },
 					}),
-
-
 					q(30179, {	-- Poisoned!
 						["sourceQuests"] = {
 							30121,	-- Search Party
@@ -2186,8 +2125,6 @@ root(ROOTS.Zones, {
 							i(81526),	-- Seal of the Forbidden Jungle
 						},
 					}),
-
-
 					q(30353, {	-- Profit Mastery
 						["provider"] = { "n", 58779 },	-- Daggle Bombstrider
 						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
@@ -2203,20 +2140,14 @@ root(ROOTS.Zones, {
 							i(81502),	-- Dojani Gauntlets
 						},
 					}),
-
-
 					q(30125, {	-- Profit Mastery
 						["u"] = REMOVED_FROM_GAME,	-- triggers when turning in the version above
 					}),
-
-
 					q(31260, {	-- Profit Mastery: Chasheen
 						["sourceQuests"] = { 30353 },	-- Profit Mastery
 						["provider"] = { "n", 58779 },	-- Daggle Bombstrider
 						["coord"] = { 67.6, 25.6, KRASARANG_WILDS },
 					}),
-
-
 					q(30169, {	-- Raid Leader Slovan
 						["provider"] = { "n", 58278 }, -- Tired Shushen <Waterspeaker>
 						["coord"] = { 29.7, 39, KRASARANG_WILDS },
@@ -2224,8 +2155,6 @@ root(ROOTS.Zones, {
 							i(88387),	-- Shushen's Spittoon (TOY!)
 						},
 					}),
-
-
 					q(30355, {	-- Re-Reclaim (A)
 						["sourceQuests"] = { 30363, 30465 },	-- Going on the Offensive
 						["provider"] = { "n", 56114 },	-- Kang Bramblestaff
@@ -2243,8 +2172,6 @@ root(ROOTS.Zones, {
 							i(81511),	-- Dojani Bracers
 						},
 					}),
-
-
 					q(30230, {	-- Re-Reclaim (H)
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 						["provider"] = { "n", 56112 },	-- Kang Bramblestaff
@@ -2261,21 +2188,15 @@ root(ROOTS.Zones, {
 							i(81511),	-- Dojani Bracers
 						},
 					}),
-
-
 					q(30375, {	-- Sea Snakes
 						["u"] = REMOVED_FROM_GAME,	-- triggers when turning in 30268, "The Murksweats"
 					}),
-
-
 					q(30121, {	-- Search Party
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 58113 },	-- Sunwalker Dezco
 						["coord"] = { 59.8, 24.6, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30083, {	-- Securing the Province
 						["sourceQuests"] = { 30091 },	-- Tears of Pandaria
 						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
@@ -2288,16 +2209,12 @@ root(ROOTS.Zones, {
 							i(81516),	-- Pendant of the Lost Dynasty
 						},
 					}),
-
-
 					q(30356, {	-- Sever Their Supply Line
 						["sourceQuests"] = { 30363, 30465 },	-- Going on the Offensive
 						["provider"] = { "n", 58821 },	-- Lyalia
 						["coord"] = { 24.7, 29.9, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(30271, {	-- Sha Can Awe
 						["sourceQuests"] = {
 							30270,	-- Blinding the Riverblades
@@ -2311,24 +2228,18 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
 					}),
-
-
 					q(30123, {	-- Skitterer Stew
 						["sourceQuests"] = { 30179 },	-- Poisoned!
 						["provider"] = { "n", 56112 },	-- Kang Bramblestaff
 						["coord"] = { 62.7, 20.3, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30350, {	-- Squirmy Delight
 						["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
 						["provider"] = { "n", 56114 },	-- Kang Bramblestaff
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(30272, {	-- Striking the Rain
 						["sourceQuests"] = {
 							30270,	-- Blinding the Riverblades
@@ -2338,14 +2249,10 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 59138 },	-- Koro Mistwalker
 						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
 					}),
-
-
 					q(30666, {	-- Sudden, Unexpected Crocolisk Aggression
 						["provider"] = { "n", 60173 },	-- Jay Cloudfall
 						["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
 					}),
-
-
 					q(30091, {	-- Tears of Pandaria
 						["sourceQuests"] = { 30082 },	-- Cheer Up, Yi-Mo
 						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
@@ -2355,24 +2262,18 @@ root(ROOTS.Zones, {
 						["coord"] = { 70.6, 28.4, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(31058, {	-- The Funky Monkey Brew
 						["provider"] = { "n", 65289 },	-- Brewmaster Bo
 						["coord"] = { 54.4, 75.2, KRASARANG_WILDS },
 						["maps"] = { 450 },	-- Unga Ingoo
 						["lvl"] = 90,	-- 35
 					}),
-
-
 					q(30229, {	-- The Greater Danger
 						["sourceQuests"] = { 30132, 30464 },	-- Going West (two versions)
 						["provider"] = { "n", 58114 },	-- Kor Bloodtusk
 						["coord"] = { 29.0, 48.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30359, {	-- The Lord Reclaimer
 						["sourceQuests"] = {
 							30361,	-- The Mantid
@@ -2382,15 +2283,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 14.3, 35.7, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(30669, {	-- The Lorewalker on the Lake
 						["sourceQuests"] = { 30668 }, -- Build Your Own Raft
 						["provider"] = { "n", 60173 },	-- Jay Cloudfall
 						["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
 					}),
-
-
 					q(30344, {	-- The Lost Dynasty
 						["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
 						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
@@ -2404,8 +2301,6 @@ root(ROOTS.Zones, {
 							i(81526),	-- Seal of the Forbidden Jungle
 						},
 					}),
-
-
 					q(30361, {	-- The Mantid (A)
 						["sourceQuests"] = {
 							30354,	-- No Sister Left Behind
@@ -2427,8 +2322,6 @@ root(ROOTS.Zones, {
 							i(81466),	-- Dojani Chestpiece
 						},
 					}),
-
-
 					q(30175, {	-- The Mantid (H)
 						["sourceQuests"] = {
 							30230,	-- Re-Reclaim
@@ -2450,8 +2343,6 @@ root(ROOTS.Zones, {
 							i(81466),	-- Dojani Chestpiece
 						},
 					}),
-
-
 					q(30129, {	-- The Mogu Agenda
 						["sourceQuests"] = {
 							30123,	-- Skitterer Skew
@@ -2461,8 +2352,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 62.7, 20.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30268, {	-- The Murksweats
 						["sourceQuests"] = { 30269 },	-- Unsafe Passage
 						["provider"] = { "n", 58609 },	-- Anduin Wrynn
@@ -2475,8 +2364,6 @@ root(ROOTS.Zones, {
 							i(81561),	-- Murkscale Band
 						},
 					}),
-
-
 					q(30347, {	-- The Pools of Youth (A)
 						["sourceQuests"] = { 30346 },	-- Where are the Pools
 						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
@@ -2490,8 +2377,6 @@ root(ROOTS.Zones, {
 							i(81541),	-- Balmy Drape
 						},
 					}),
-
-
 					q(30128, {	-- The Pools of Youth (H)
 						["sourceQuests"] = { 30129 },	-- The Mogu Agenda
 						["provider"] = { "n", 58206 },	-- Kang Bramblestaff
@@ -2521,8 +2406,6 @@ root(ROOTS.Zones, {
 							i(84295),	-- Imperial Lotus Cloak
 						},
 					}),
-
-
 					q(30164, {	-- The Stoneplow Convoy (H)
 						["sourceQuests"] = {
 							30163,	-- For the Tribe
@@ -2533,8 +2416,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 15.2, 36.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30445, {	-- The Waters of Youth
 						["sourceQuests"] = { 30359 },	-- The Lord Reclaimer
 						["provider"] = { "n", 58745 },	-- Lorekeeper Vaeldrin
@@ -2552,8 +2433,6 @@ root(ROOTS.Zones, {
 							i(81457),	-- Dojani Shoulders
 						},
 					}),
-
-
 					q(30168, {	-- Thieving Raiders
 						["provider"] = { "n", 58278 },	-- Tired Shushen
 						["coord"] = { 29.7, 39, KRASARANG_WILDS },
@@ -2564,8 +2443,6 @@ root(ROOTS.Zones, {
 							i(81536),	-- Jungle Huntress Idol
 						},
 					}),
-
-
 					q(30349, {	-- Threat from Dojan (A)
 						["sourceQuests"] = {
 							30384,	-- Blind Them!
@@ -2583,8 +2460,6 @@ root(ROOTS.Zones, {
 							i(84285),	-- Bramble Amulet
 						},
 					}),
-
-
 					q(30127, {	-- Threat from Dojan (H)
 						["sourceQuests"] = {
 							30123,	-- Skitterer Skew
@@ -2594,8 +2469,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 62.6, 20.0, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30694, {	-- Tread Lightly
 						["sourceQuests"] = { 30269 },	-- Unsafe Passage
 						["provider"] = { "n", 59138 },	-- Koro Mistwalker
@@ -2612,8 +2485,6 @@ root(ROOTS.Zones, {
 							i(84280),	-- Mistwalker Armored Legguards
 						},
 					}),
-
-
 					q(30269, {	-- Unsafe Passage
 						["sourceQuests"] = {
 						--	unclear what the difference is in these.  the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't.  possibly there are different versions if you abandon/re-pick up?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
@@ -2625,13 +2496,11 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 58547 },	-- Koro Mistwalker
 						["coord"] = { 45.6, 39.5, KRASARANG_WILDS },
 					}),
-
 					warchiefscommand(q(49540, {	-- Warchief's Command: Krasarang Wilds!
 						["timeline"] = { ADDED_7_3_5 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
 					})),
-
 					q(30360, {	-- Warn Stoneplow (A)
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = {
@@ -2648,8 +2517,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 24.7, 29.9, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(30241, {	-- Warn Stoneplow (H)
 						["isBreadcrumb"] = true,
 						["sourceQuests"] = {
@@ -2665,8 +2532,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 29.1, 48.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 					}),
-
-
 					q(30079, {	-- What's Eating Zhu's Watch?
 						["sourceQuests"] = {
 							29873,	-- Ken-Ken
@@ -2678,8 +2543,6 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56115 },	-- Ken-Ken
 						["coord"] = { 80.2, 1.02, KRASARANG_WILDS },
 					}),
-
-
 					q(30346, {	-- Where are the Pools
 						["sourceQuests"] = {
 							30384,	-- Blind Them!
@@ -2690,8 +2553,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 70.6, 28.5, KRASARANG_WILDS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-
-
 					q(30088, {	-- Why So Serious?
 						["sourceQuests"] = { 30081 },	-- Materia Medica
 						["provider"] = { "n", 56115 },	-- Ken-Ken
@@ -2708,8 +2569,6 @@ root(ROOTS.Zones, {
 							i(88053),	-- Dojani Handwraps
 						},
 					}),
-
-
 					q(30671, {	-- Wisdom Has A Price
 						["sourceQuests"] = { 30669 },	-- The Lorewalker on the Lake
 						["provider"] = { "n", 60139 },	-- Wise Ana Wu
@@ -2726,8 +2585,6 @@ root(ROOTS.Zones, {
 							i(88035),	-- Dojani Shoes
 						},
 					}),
-
-
 					q(30090, {	-- Zhu's Despair
 						["sourceQuests"] = { 30089 },	-- Apply Directly to the Forehead
 						["provider"] = { "n", 56115 },	-- Ken-Ken
