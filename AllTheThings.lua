@@ -7268,43 +7268,6 @@ local function Toggle(self, forceUpdate)
 end
 
 app.Windows = {};
--- local function UpdateWindowsOnEnd()
--- 	app.Processing_RefreshData = nil;
--- 	app.Processing_UpdateWindows = nil;
--- 	app.Processing_RefreshWindows = nil;
--- 	app.refreshDataGot = nil;
--- 	app.WipeSearchCache();
--- end
--- local function UpdateWindows(force, got)
--- 	-- app.PrintDebug("UpdateWindows",force and "FORCE" or "SOFT",got and "COLLECTED" or "PASSIVE")
--- 	-- After handling all Updates, perform some logic
--- 	app.UpdateRunner.OnEnd(UpdateWindowsOnEnd);
--- 	local Run = app.UpdateRunner.Run;
--- 	for _,window in pairs(app.Windows) do
--- 		Run(window.Update, window, force, got);
--- 	end
--- end
--- function app:UpdateWindows(force, got)
--- 	if app.Processing_UpdateWindows then return; end
--- 	app.Processing_UpdateWindows = true;
--- 	app.Processing_RefreshWindows = true;
--- 	-- app.PrintDebug("UpdateWindows:Async")
--- 	AfterCombatOrDelayedCallback(UpdateWindows, 0.1, force, got);
--- end
-local function RefreshWindows()
-	-- app.PrintDebug("RefreshWindows")
-	for _,window in pairs(app.Windows) do
-		window:Refresh();
-	end
-	app.Processing_RefreshWindows = nil;
-	-- app.PrintDebugPrior("RefreshWindows")
-end
-function app:RefreshWindows()
-	if app.Processing_RefreshWindows then return; end
-	app.Processing_RefreshWindows = true;
-	-- app.PrintDebug("RefreshWindows:Async")
-	Callback(RefreshWindows);
-end
 local function ClearRowData(self)
 	self.ref = nil;
 	self.Background:Hide();
@@ -9484,10 +9447,6 @@ end
 -- 		app.PetBattleClosed = nil;
 -- 	end
 -- end)
-
--- When settings that affect the display of a window change, we want to redraw the windows.
-app.AddEventHandler("OnRenderDirty", RefreshWindows);
-app.AddEventHandler("OnSavesUpdated", RefreshWindows);
 end)();
 
 do	-- Main Data

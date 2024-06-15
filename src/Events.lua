@@ -81,7 +81,7 @@ local RunnerEvents = {
 	OnRefreshCollections = true,
 	OnRecalculate = true,
 	OnUpdateWindows = true,
-	OnRefreshWindows = true,
+	-- OnRefreshWindows = true,
 }
 -- Represents Events which should always fire upon completion of a prior Event. These cannot be passed arguments currently
 local EventSequence = {
@@ -98,6 +98,12 @@ local EventSequence = {
 		"OnSourceCollection",
 		"OnUniqueSourceCollection",
 		"OnRecalculateDone",
+	},
+	OnRenderDirty = {
+		"OnRefreshWindows"
+	},
+	OnSavesUpdated = {
+		"OnRefreshWindows"
 	},
 	-- OnRecalculate_NewSettings = {
 	-- },
@@ -150,4 +156,17 @@ app.HandleEvent = function(eventName, ...)
 			Callback(HandleSequenceEvents, sequenceEvents)
 		end
 	end
+end
+-- Provides a unique function per EventName which can be used in a Callback without interfering with other Callback Events
+local CallbackEventFunctions = setmetatable({}, { __index = function(t, eventName)
+	local callback = function(eventName)
+		app.HandleEvent(eventName)
+	end
+	t[eventName] = callback
+	return callback
+end})
+-- Allows performing an Event on the next frame instead of immediately.
+-- Also enforces that a single handle of that Event is performed that frame, thus for clarity, parameters are NOT supported
+app.CallbackEvent = function(eventName)
+	Callback(CallbackEventFunctions[eventName], eventName)
 end

@@ -719,7 +719,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("IconPortraits", self:GetChecked());
-	app.HandleEvent("OnRenderDirty");
+	app.CallbackEvent("OnRenderDirty")
 end)
 checkboxIconPortrait:SetATTTooltip(L.SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP)
 checkboxIconPortrait:AlignBelow(checkboxExpandDifficulty)
@@ -737,7 +737,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("IconPortraitsForQuests", self:GetChecked())
-	app.HandleEvent("OnRenderDirty");
+	app.CallbackEvent("OnRenderDirty")
 end)
 checkboxIconPortraitForQuests:SetATTTooltip(L.SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP)
 checkboxIconPortraitForQuests:AlignBelow(checkboxIconPortrait, 1)
@@ -805,7 +805,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("Show:Remaining", self:GetChecked())
 	app.Modules.Color.SetShowRemainingText(self:GetChecked());
-	app.HandleEvent("OnRenderDirty")
+	app.CallbackEvent("OnRenderDirty")
 end)
 checkboxShowRemainingCount:SetATTTooltip(L.SHOW_REMAINING_CHECKBOX_TOOLTIP)
 checkboxShowRemainingCount:AlignBelow(checkboxSortByProgress)
@@ -818,7 +818,7 @@ end,
 function(self)
 	settings:SetTooltipSetting("Show:Percentage", self:GetChecked())
 	app.Modules.Color.SetShowPercentageText(self:GetChecked());
-	app.HandleEvent("OnRenderDirty")
+	app.CallbackEvent("OnRenderDirty")
 end)
 checkboxShowPercentageCount:SetATTTooltip(L.PERCENTAGES_CHECKBOX_TOOLTIP)
 checkboxShowPercentageCount:AlignBelow(checkboxShowRemainingCount)
@@ -848,7 +848,7 @@ sliderPercentagePrecision:SetScript("OnValueChanged", function(self, newValue)
 		return 1
 	end
 	settings:SetTooltipSetting("Precision", newValue)
-	app.HandleEvent("OnRenderDirty")
+	app.CallbackEvent("OnRenderDirty")
 end)
 sliderPercentagePrecision.OnRefresh = function(self)
 	if not settings:GetTooltipSetting("Show:Percentage") then

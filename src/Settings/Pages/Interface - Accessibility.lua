@@ -25,7 +25,7 @@ local function ShowColorPicker(callback, color)
 			newR, newG, newB = ColorPickerFrame:GetColorRGB();
 		end
 		callback({r = newR, g = newG, b = newB, a = newA});
-		app.HandleEvent("OnRenderDirty")
+		app.CallbackEvent("OnRenderDirty")
 	end
 	picker.func, picker.opacityFunc, picker.cancelFunc, picker.swatchFunc
 		= OnColorChanged, OnColorChanged, OnColorChanged, OnColorChanged
@@ -104,7 +104,7 @@ function(self)
 end,
 function(self)
 	settings:SetTooltipSetting("UseMoreColors", self:GetChecked())
-	app.HandleEvent("OnRenderDirty")
+	app.CallbackEvent("OnRenderDirty")
 end)
 checkboxUseMoreColors:SetATTTooltip(L.MORE_COLORS_CHECKBOX_TOOLTIP)
 checkboxUseMoreColors:SetPoint("TOPLEFT", textHeader, "BOTTOMLEFT", 0, -5)
@@ -114,7 +114,7 @@ local buttonDefault = child:CreateButton(
 {
 	OnClick = function(self)
 		wipe(app.Colors);
-		app.HandleEvent("OnRenderDirty")
+		app.CallbackEvent("OnRenderDirty")
 	end,
 })
 buttonDefault:SetPoint("TOPLEFT", checkboxUseMoreColors.Text, "TOPRIGHT", 10, 5)
