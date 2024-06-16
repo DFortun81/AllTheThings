@@ -1,7 +1,4 @@
 11.0.0.54311
-ach(19515),	-- Algari Master of Many \\ Algarian Master of Many
-ach(19704),	-- Overflowing Algari Flasks \\ Overflowing Algarian Flasks
-ach(19716),	-- Plentiful Algari Potions \\ Plentiful Algarian Potions
 ach(20309),	-- Earthenworks Weave: Bronze \\ WW Zone 2 Race 1: Bronze
 ach(20310),	-- Earthenworks Weave: Silver \\ WW Zone 2 Race 1: Silver
 ach(20311),	-- Earthenworks Weave: Gold \\ WW Zone 2 Race 1: Gold
