@@ -273,9 +273,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
 				}),
 				q(80311, {	-- Order of the Cloud Serpent
-					["sourceQuests"] = {
-						30134,	-- Wild Things
-					},
 					["provider"] = { "n", 63900 },	-- Toortle Wider
 					["coord"] = { 49, 46, THE_JADE_FOREST },
 					["isBreadcrumb"] = true,
