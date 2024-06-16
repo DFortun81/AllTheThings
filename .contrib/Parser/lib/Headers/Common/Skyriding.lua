@@ -7,7 +7,7 @@ DRAGONRIDING_RACING = createHeader({
 });
 SKYRIDING = createHeader({
 	readable = "Skyriding",
-	icon = "ability_dragonriding_dragonridinggliding01",
+	icon = "Interface\\Icons\\ability_dragonriding_dragonridinggliding01",
 	text = {
 		en = WOWAPI_GetSpellName(415581),
 	},

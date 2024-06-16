@@ -1274,6 +1274,18 @@ dragonridingrace = function(id, t)						-- Creates a QUEST which is for a Dragon
 	};
 	return t;
 end
+skyridingrace = function(id, t)						-- Creates a QUEST which is for a Skyriding Race
+	t = q(id, t);
+	t.repeatable = true;
+	t.collectible = false;	-- quest literally cannot be completed
+	-- TODO: Do similar conditions exist?
+	-- t.sourceQuestNumRequired = 1;
+	-- t.sourceQuests = {
+	-- 	68795,	-- Dragonriding
+	-- 	DF_ACCOUNT_CAMPAIGN_QUEST,
+	-- };
+	return t;
+end
 
 -- Outdoor Zones Headers with Filters
 battlepets = function(timeline, t)						-- Creates a BATTLE_PETS header with pet battle filter on it. Use this with Outdoor Zones.

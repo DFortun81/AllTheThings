@@ -2,51 +2,6 @@
 ach(19515),	-- Algari Master of Many \\ Algarian Master of Many
 ach(19704),	-- Overflowing Algari Flasks \\ Overflowing Algarian Flasks
 ach(19716),	-- Plentiful Algari Potions \\ Plentiful Algarian Potions
-ach(20255),	-- Dornogal Drift: Bronze \\ WW Zone 1 Race 1: Bronze
-ach(20256),	-- Dornogal Drift: Silver \\ WW Zone 1 Race 1: Silver
-ach(20257),	-- Dornogal Drift: Gold \\ WW Zone 1 Race 1: Gold
-ach(20258),	-- Dornogal Drift Advanced: Bronze \\ WW Zone 1 Race 1 Advanced: Bronze
-ach(20259),	-- Dornogal Drift Advanced: Silver \\ WW Zone 1 Race 1 Advanced: Silver
-ach(20260),	-- Dornogal Drift Advanced: Gold \\ WW Zone 1 Race 1 Advanced: Gold
-ach(20261),	-- Dornogal Drift Reverse: Bronze \\ WW Zone 1 Race 1 Reverse: Bronze
-ach(20262),	-- Dornogal Drift Reverse: Silver \\ WW Zone 1 Race 1 Reverse: Silver
-ach(20263),	-- Dornogal Drift Reverse: Gold \\ WW Zone 1 Race 1 Reverse: Gold
-ach(20264),	-- Storm's Watch Survey: Bronze \\ WW Zone 1 Race 2: Bronze
-ach(20265),	-- Storm's Watch Survey: Silver \\ WW Zone 1 Race 2: Silver
-ach(20266),	-- Storm's Watch Survey: Gold \\ WW Zone 1 Race 2: Gold
-ach(20267),	-- Storm's Watch Survey Advanced: Bronze \\ WW Zone 1 Race 2 Advanced: Bronze
-ach(20268),	-- Storm's Watch Survey Advanced: Silver \\ WW Zone 1 Race 2 Advanced: Silver
-ach(20269),	-- Storm's Watch Survey Advanced: Gold \\ WW Zone 1 Race 2 Advanced: Gold
-ach(20270),	-- Storm's Watch Survey Reverse: Bronze \\ WW Zone 1 Race 2 Reverse: Bronze
-ach(20271),	-- Storm's Watch Survey Reverse: Silver \\ WW Zone 1 Race 2 Reverse: Silver
-ach(20272),	-- Storm's Watch Survey Reverse: Gold \\ WW Zone 1 Race 2 Reverse: Gold
-ach(20273),	-- Basin Bypass: Bronze \\ WW Zone 1 Race 3: Bronze
-ach(20274),	-- Basin Bypass: Silver \\ WW Zone 1 Race 3: Silver
-ach(20275),	-- Basin Bypass: Gold \\ WW Zone 1 Race 3: Gold
-ach(20276),	-- Basin Bypass Advanced: Bronze \\ WW Zone 1 Race 3 Advanced: Bronze
-ach(20277),	-- Basin Bypass Advanced: Silver \\ WW Zone 1 Race 3 Advanced: Silver
-ach(20278),	-- Basin Bypass Advanced: Gold \\ WW Zone 1 Race 3 Advanced: Gold
-ach(20279),	-- Basin Bypass Reverse: Bronze \\ WW Zone 1 Race 3 Reverse: Bronze
-ach(20280),	-- Basin Bypass Reverse: Silver \\ WW Zone 1 Race 3 Reverse: Silver
-ach(20281),	-- Basin Bypass Reverse: Gold \\ WW Zone 1 Race 3 Reverse: Gold
-ach(20282),	-- The Wold Ways: Bronze \\ WW Zone 1 Race 4: Bronze
-ach(20283),	-- The Wold Ways: Silver \\ WW Zone 1 Race 4: Silver
-ach(20284),	-- The Wold Ways: Gold \\ WW Zone 1 Race 4: Gold
-ach(20285),	-- The Wold Ways Advanced: Bronze \\ WW Zone 1 Race 4 Advanced: Bronze
-ach(20286),	-- The Wold Ways Advanced: Silver \\ WW Zone 1 Race 4 Advanced: Silver
-ach(20287),	-- The Wold Ways Advanced: Gold \\ WW Zone 1 Race 4 Advanced: Gold
-ach(20288),	-- The Wold Ways Reverse: Bronze \\ WW Zone 1 Race 4 Reverse: Bronze
-ach(20289),	-- The Wold Ways Reverse: Silver \\ WW Zone 1 Race 4 Reverse: Silver
-ach(20290),	-- The Wold Ways Reverse: Gold \\ WW Zone 1 Race 4 Reverse: Gold
-ach(20291),	-- Thunderhead Trail: Bronze \\ WW Zone 1 Race 5: Bronze
-ach(20292),	-- Thunderhead Trail: Silver \\ WW Zone 1 Race 5: Silver
-ach(20293),	-- Thunderhead Trail: Gold \\ WW Zone 1 Race 5: Gold
-ach(20294),	-- Thunderhead Trail Advanced: Bronze \\ WW Zone 1 Race 5 Advanced: Bronze
-ach(20295),	-- Thunderhead Trail Advanced: Silver \\ WW Zone 1 Race 5 Advanced: Silver
-ach(20296),	-- Thunderhead Trail Advanced: Gold \\ WW Zone 1 Race 5 Advanced: Gold
-ach(20297),	-- Thunderhead Trail Reverse: Bronze \\ WW Zone 1 Race 5 Reverse: Bronze
-ach(20298),	-- Thunderhead Trail Reverse: Silver \\ WW Zone 1 Race 5 Reverse: Silver
-ach(20299),	-- Thunderhead Trail Reverse: Gold \\ WW Zone 1 Race 5 Reverse: Gold
 ach(20309),	-- Earthenworks Weave: Bronze \\ WW Zone 2 Race 1: Bronze
 ach(20310),	-- Earthenworks Weave: Silver \\ WW Zone 2 Race 1: Silver
 ach(20311),	-- Earthenworks Weave: Gold \\ WW Zone 2 Race 1: Gold
