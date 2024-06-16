@@ -919,14 +919,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(211948),	-- Kobyss Spear (QI!)
 				},
 			}),
-			q(78964, {	-- Reclaiming Velhan's Claim
+			q(78694, {	-- Reclaiming Velhan's Claim
 				["sourceQuests"] = { 78690 },	-- Situational Awareness
 				["provider"] = { "n", 213614 },	-- Taenar Strongoth
 				["coord"] = { 45.7, 13.1, HALLOWFALL },
 			}),
 			q(78692, {	-- Teach a Man to Fish
 				["sourceQuests"] = {
-					78964,	-- Reclaiming Velhan's Claim
+					78694,	-- Reclaiming Velhan's Claim
 					78693,	-- Spears for Fears
 				},
 				["provider"] = { "n", 213613 },	-- Aemyra Acton
@@ -934,7 +934,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			q(78692, {	-- Teach a Man to Fish
 				["sourceQuests"] = {
-					78964,	-- Reclaiming Velhan's Claim
+					78694,	-- Reclaiming Velhan's Claim
 					78693,	-- Spears for Fears
 				},
 				["provider"] = { "n", 213613 },	-- Aemyra Acton

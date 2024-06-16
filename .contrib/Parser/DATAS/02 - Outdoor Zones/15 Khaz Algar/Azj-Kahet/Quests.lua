@@ -160,7 +160,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 217330 },	-- Anub'azal
 				["coord"] = { 46.9, 26.2, AZJ_KAHET },
 				["g"] = {
-					--i(221100),	-- General's Pungent Armor // it is now different itemID
+					i(225538),	-- General's Pungent Armor
 					i(225535),	-- General's Pungent Mantle
 				},
 			}),
@@ -986,6 +986,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(81946),	-- 'Stay awhile and listen' - Anduin Wrynn - druing questID 78231 (Like a Spider on the Wall)
 	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (Beginning Anew From Rock Bottom)
 	-- Reps with zone dudes, probably gonna need to move into expansion feature?
+	q(81601),	-- [DNT] General - Level 1 Unlock (spellID 443677)
 	q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
 	q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
 	q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
