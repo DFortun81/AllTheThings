@@ -165,7 +165,6 @@ ach(20510),	-- What Could it be?
 ach(20511),	-- Gotta Punt em' All
 ach(20512),	-- Herding Cats
 ach(20594),	-- Flamegard's Hope \\ Flamegards Hope
-ach(20597),	-- The War Within \\ United We Stand
 ach(40082),	-- Never Enough
 ach(40087),	-- Unbound Battle
 ach(40088),	-- A Champion's Tour: The War Within
@@ -181,9 +180,6 @@ ach(40100),	-- Undying Caver
 ach(40101),	-- Hitting one's Stride
 ach(40102),	-- Dawn of a new Delve
 ach(40103),	-- Nemesis
-ach(40107),	-- Harbinger of the Carved (TODO: Fix Icon)
-ach(40115),	-- Harbinger of the Runed (TODO: Fix Icon)
-ach(40118),	-- Harbinger of the Gilded (TODO: Fix Icon)
 ach(40138),	-- Algari Dungeoneer \\ Algarian Dungeoneer
 ach(40139),	-- Algari Dungeon Damage Dealer \\ Algarian Dungeon Damage Dealer
 ach(40140),	-- Algari Dungeon Healer \\ Algarian Dungeon Healer

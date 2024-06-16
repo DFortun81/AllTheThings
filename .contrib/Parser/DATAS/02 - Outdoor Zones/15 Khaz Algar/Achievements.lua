@@ -212,5 +212,32 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["crs"] = { 223698 },
 			}),
 		})),
+		ach(20597, {	-- The War Within
+			crit(66989, {	-- Against the Current
+				-- Remove when the quest below is uncommented
+				["_noautomation"] = true,
+				--["sourceQuest"] = 79344,	-- Urban Odyssey
+			}),
+			crit(66990, {	-- Ties That Bind
+				-- Remove when the quest below is uncommented
+				["_noautomation"] = true,
+				--["sourceQuest"] = 79157,	-- Titanic Failsafe
+			}),
+			crit(66991, {	-- News from Below
+				-- Remove when the quest below is uncommented
+				["_noautomation"] = true,
+				--["sourceQuest"] = 79244,	-- Inform the Weaver
+			}),
+			crit(66992, {	-- The Machines March to War
+				-- Remove when the quest below is uncommented
+				["_noautomation"] = true,
+				--["sourceQuest"] = 79030,	-- The Voice of the Speakers
+			}),
+			crit(66993, {	-- A Light in the Dark
+				-- Remove when the quest below is uncommented
+				["_noautomation"] = true,
+				--["sourceQuest"] = 83503,	-- TODO: Quest Name
+			}),
+		}),
 	}),
 })));
