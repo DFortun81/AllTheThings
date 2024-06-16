@@ -5,7 +5,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 	m(ISLE_OF_DORN, {
 		n(SKYRIDING, {
 			n(ACHIEVEMENTS, {
-				-- TODO: Added info to Meta once all races have been added.
 				ach(40316, {	-- Isle of Dorn: Bronze
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

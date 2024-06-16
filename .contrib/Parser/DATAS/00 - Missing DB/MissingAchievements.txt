@@ -1,58 +1,4 @@
 11.0.0.54311
-ach(20309),	-- Earthenworks Weave: Bronze \\ WW Zone 2 Race 1: Bronze
-ach(20310),	-- Earthenworks Weave: Silver \\ WW Zone 2 Race 1: Silver
-ach(20311),	-- Earthenworks Weave: Gold \\ WW Zone 2 Race 1: Gold
-ach(20312),	-- Earthenworks Weave Advanced: Bronze \\ WW Zone 2 Race 1 Advanced: Bronze
-ach(20313),	-- Earthenworks Weave Advanced: Silver \\ WW Zone 2 Race 1 Advanced: Silver
-ach(20314),	-- Earthenworks Weave Advanced: Gold \\ WW Zone 2 Race 1 Advanced: Gold
-ach(20315),	-- Earthenworks Weave Reverse: Bronze \\ WW Zone 2 Race 1 Reverse: Bronze
-ach(20316),	-- Earthenworks Weave Reverse: Silver \\ WW Zone 2 Race 1 Reverse: Silver
-ach(20317),	-- Earthenworks Weave Reverse: Gold \\ WW Zone 2 Race 1 Reverse: Gold
-ach(20318),	-- Ringing Deeps Ramble: Bronze \\ WW Zone 2 Race 2: Bronze
-ach(20319),	-- Ringing Deeps Ramble: Silver \\ WW Zone 2 Race 2: Silver
-ach(20320),	-- Ringing Deeps Ramble: Gold \\ WW Zone 2 Race 2: Gold
-ach(20321),	-- Ringing Deeps Ramble Advanced: Bronze \\ WW Zone 2 Race 2 Advanced: Bronze
-ach(20322),	-- Ringing Deeps Ramble Advanced: Silver \\ WW Zone 2 Race 2 Advanced: Silver
-ach(20323),	-- Ringing Deeps Ramble Advanced: Gold \\ WW Zone 2 Race 2 Advanced: Gold
-ach(20324),	-- Ringing Deeps Ramble Reverse: Bronze \\ WW Zone 2 Race 2 Reverse: Bronze
-ach(20325),	-- Ringing Deeps Ramble Reverse: Silver \\ WW Zone 2 Race 2 Reverse: Silver
-ach(20326),	-- Ringing Deeps Ramble Reverse: Gold \\ WW Zone 2 Race 2 Reverse: Gold
-ach(20327),	-- Chittering Concourse: Bronze \\ WW Zone 2 Race 3: Bronze
-ach(20328),	-- Chittering Concourse: Silver \\ WW Zone 2 Race 3: Silver
-ach(20329),	-- Chittering Concourse: Gold \\ WW Zone 2 Race 3: Gold
-ach(20330),	-- Chittering Concourse Advanced: Bronze \\ WW Zone 2 Race 3 Advanced: Bronze
-ach(20331),	-- Chittering Concourse Advanced: Silver \\ WW Zone 2 Race 3 Advanced: Silver
-ach(20332),	-- Chittering Concourse Advanced: Gold \\ WW Zone 2 Race 3 Advanced: Gold
-ach(20333),	-- Chittering Concourse Reverse: Bronze \\ WW Zone 2 Race 3 Reverse: Bronze
-ach(20334),	-- Chittering Concourse Reverse: Silver \\ WW Zone 2 Race 3 Reverse: Silver
-ach(20335),	-- Chittering Concourse Reverse: Gold \\ WW Zone 2 Race 3 Reverse: Gold
-ach(20336),	-- Cataract River Cruise: Bronze \\ WW Zone 2 Race 4: Bronze
-ach(20337),	-- Cataract River Cruise: Silver \\ WW Zone 2 Race 4: Silver
-ach(20338),	-- Cataract River Cruise: Gold \\ WW Zone 2 Race 4: Gold
-ach(20339),	-- Cataract River Cruise Advanced: Bronze \\ WW Zone 2 Race 4 Advanced: Bronze
-ach(20340),	-- Cataract River Cruise Advanced: Silver \\ WW Zone 2 Race 4 Advanced: Silver
-ach(20341),	-- Cataract River Cruise Advanced: Gold \\ WW Zone 2 Race 4 Advanced: Gold
-ach(20342),	-- Cataract River Cruise Reverse: Bronze \\ WW Zone 2 Race 4 Reverse: Bronze
-ach(20343),	-- Cataract River Cruise Reverse: Silver \\ WW Zone 2 Race 4 Reverse: Silver
-ach(20344),	-- Cataract River Cruise Reverse: Gold \\ WW Zone 2 Race 4 Reverse: Gold
-ach(20345),	-- Taelloch Twist: Bronze \\ WW Zone 2 Race 5: Bronze
-ach(20346),	-- Taelloch Twist: Silver \\ WW Zone 2 Race 5: Silver
-ach(20347),	-- Taelloch Twist: Gold \\ WW Zone 2 Race 5: Gold
-ach(20348),	-- Taelloch Twist Advanced: Bronze \\ WW Zone 2 Race 5 Advanced: Bronze
-ach(20349),	-- Taelloch Twist Advanced: Silver \\ WW Zone 2 Race 5 Advanced: Silver
-ach(20350),	-- Taelloch Twist Advanced: Gold \\ WW Zone 2 Race 5 Advanced: Gold
-ach(20351),	-- Taelloch Twist Reverse: Bronze \\ WW Zone 2 Race 5 Reverse: Bronze
-ach(20352),	-- Taelloch Twist Reverse: Silver \\ WW Zone 2 Race 5 Reverse: Silver
-ach(20353),	-- Taelloch Twist Reverse: Gold \\ WW Zone 2 Race 5 Reverse: Gold
-ach(20354),	-- Opportunity Point Amble: Bronze \\ WW Zone 2 Race 6: Bronze
-ach(20355),	-- Opportunity Point Amble: Silver \\ WW Zone 2 Race 6: Silver
-ach(20356),	-- Opportunity Point Amble: Gold \\ WW Zone 2 Race 6: Gold
-ach(20357),	-- Opportunity Point Amble Advanced: Bronze \\ WW Zone 2 Race 6 Advanced: Bronze
-ach(20358),	-- Opportunity Point Amble Advanced: Silver \\ WW Zone 2 Race 6 Advanced: Silver
-ach(20359),	-- Opportunity Point Amble Advanced: Gold \\ WW Zone 2 Race 6 Advanced: Gold
-ach(20360),	-- Opportunity Point Amble Reverse: Bronze \\ WW Zone 2 Race 6 Reverse: Bronze
-ach(20361),	-- Opportunity Point Amble Reverse: Silver \\ WW Zone 2 Race 6 Reverse: Silver
-ach(20362),	-- Opportunity Point Amble Reverse: Gold \\ WW Zone 2 Race 6 Reverse: Gold
 ach(20363),	-- Dunelle's Detour: Bronze \\ WW Zone 3 Race 1: Bronze
 ach(20364),	-- Dunelle's Detour: Silver \\ WW Zone 3 Race 1: Silver
 ach(20365),	-- Dunelle's Detour: Gold \\ WW Zone 3 Race 1: Gold
@@ -239,15 +185,6 @@ ach(40311),	-- Sharing the Light
 ach(40312),	-- Starting the Flames
 ach(40313),	-- Igniting the Keyflames
 ach(40314),	-- Fragments of Memories \\ Memories of a Worldsoul
-ach(40325),	-- The Ringing Deeps: Bronze
-ach(40326),	-- The Ringing Deeps: Silver
-ach(40327),	-- The Ringing Deeps: Gold
-ach(40328),	-- The Ringing Deeps Advanced: Bronze
-ach(40329),	-- The Ringing Deeps Advanced: Silver
-ach(40330),	-- The Ringing Deeps Advanced: Gold
-ach(40331),	-- The Ringing Deeps Reverse: Bronze
-ach(40332),	-- The Ringing Deeps Reverse: Silver
-ach(40333),	-- The Ringing Deeps Reverse: Gold
 ach(40334),	-- Hallowfall: Bronze
 ach(40335),	-- Hallowfall: Silver
 ach(40336),	-- Hallowfall: Gold
