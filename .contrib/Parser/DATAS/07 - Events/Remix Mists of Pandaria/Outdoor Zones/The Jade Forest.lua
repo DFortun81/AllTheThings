@@ -173,7 +173,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			n(QUESTS, {
 				q(81638, {	-- Home Is Where the Hearthstone Is
-					--["sourceQuests"] = { 79440 },	-- Recalling the War (need to confirm)
+					["sourceQuests"] = { 79440 },	-- Recalling the War (need to confirm) we can use retail errors to confirm
 					["provider"] = { "n", 65907 },	-- Jiayi Applebloom
 					["coord"] = { 44.8, 84.4, THE_JADE_FOREST },
 					["races"] = ALLIANCE_ONLY,
@@ -271,6 +271,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["sourceQuests"] = { 83776 },	-- Infinite Growth III
 					["provider"] = { "n", 213664 },	-- Momentus
 					["coord"] = { 42.5, 27.3, THE_JADE_FOREST },
+				}),
+				q(80311, {	-- Order of the Cloud Serpent
+					["sourceQuests"] = {
+						30134,	-- Wild Things
+					},
+					["provider"] = { "n", 63900 },	-- Toortle Wider
+					["coord"] = { 49, 46, THE_JADE_FOREST },
+					["isBreadcrumb"] = true,
 				}),
 				q(80441, {	-- Aid the Order of the Cloud Serpent
 					["provider"] = { "n", 58564 },	-- Elder Anli

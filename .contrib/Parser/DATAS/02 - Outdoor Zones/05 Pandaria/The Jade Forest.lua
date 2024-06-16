@@ -142,7 +142,12 @@ root(ROOTS.Zones, {
 									["cost"] = { { "i", 104286, 1 } },	-- 1x Quivering Firestorm Egg
 								}),
 								q(30135, {	-- Beating the Odds
-									["sourceQuests"] = { 30134 },	-- Wild Things
+									["sourceQuests"] = {
+										30134,	-- Wild Things
+										-- #if AFTER 10.2.7
+										80311,	-- Order of the Cloud Serpent
+										-- #endif
+									},
 									["provider"] = { "n", 58225 },	-- Instructor Tong
 									["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
 								}),
