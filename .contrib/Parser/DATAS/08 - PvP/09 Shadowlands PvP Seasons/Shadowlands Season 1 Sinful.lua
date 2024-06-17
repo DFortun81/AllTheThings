@@ -339,11 +339,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							i(192210),	-- Eternal Gladiator's Drape
 							i(192211),	-- Eternal Gladiator's Shawl
 							i(192212),	-- Eternal Gladiator's Greatcloak
-							-- Elite (as of 10.2.7 it gives Elite cloaks too)
-							i(175888, { ["modID"] = 45 }),	-- Sinful Gladiator's Cloak
-							i(178353, { ["modID"] = 45 }),	-- Sinful Gladiator's Drape
-							i(178414, { ["modID"] = 45 }),	-- Sinful Gladiator's Shawl
-							i(184311, { ["modID"] = 45 }),	-- Sinful Gladiator's Greatcloak
+							-- Elite (as of 10.2.7 it gives Elite cloaks too, but only Eternal not Sinful)
 							i(192209, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Cloak
 							i(192210, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Drape
 							i(192211, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Shawl
