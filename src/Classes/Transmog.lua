@@ -82,7 +82,7 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 	["INVTYPE_TABARD"] = {19},
 };
 local DressUpModel = CreateFrame('DressUpModel');
-local function GetSourceID(itemLink)
+local function GetSourceID(itemLink, quick)
 	if not itemLink or (C_Item_IsDressableItemByID and not C_Item_IsDressableItemByID(itemLink)) then return nil, false end
 
 	-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
@@ -92,6 +92,8 @@ local function GetSourceID(itemLink)
 		-- app.PrintDebug("TMOGSourceID",sourceID,itemLink)
 		if sourceID then return sourceID, true; end
 	end
+
+	if quick then return end
 
 	-- app.PrintDebug("Failed to directly retrieve SourceID",itemLink)
 	local itemID, _, _, slotName = GetItemInfoInstant(itemLink);

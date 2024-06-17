@@ -27,7 +27,7 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 			for _,extraLootData in ipairs(helper.ExtraLoots) do
 				add, data = extraLootData.Add, extraLootData.Data
 				if (not add or type(add) ~= "function") or (not data or type(data) ~= "table") then
-					error("'extraLoots' expects an array of tables with { Add = func(encounter, bossID, difficultyID, [data]), Data = { [bossID] = {i(###),i(###)}, ... } }")
+					print("'extraLoots' expects an array of tables with { Add = func(encounter, bossID, difficultyID, [data]), Data = { [bossID] = {i(###),i(###)}, ... } }")
 				end
 				add(encounter, id, CurrentDifficultyID, data)
 			end
@@ -39,7 +39,7 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 		if not groups then return end
 		if not helper.UpgradeMapping then error("To use 'WithUpgrades', define InstanceHelper.UpgradeMapping = { [DifficultyID] = ModID.BonusID }") end
 		local up = helper.UpgradeMapping[CurrentDifficultyID]
-		if not up then error("Missing 'UpgradeMapping' for ",CurrentDifficultyID) end
+		if not up then print("Missing 'UpgradeMapping' for Difficulty ",CurrentDifficultyID) end
 		for _,o in ipairs(groups) do
 			-- add upgrades within certain nested groups
 			if o.groups and (o.npcID or o.headerID or o.itemID or o.encounterID) then

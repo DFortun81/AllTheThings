@@ -373,9 +373,16 @@ local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
 
 InstanceHelper.UpgradeMapping = {
+	-- Disabled in 10.2.7
+	-- #IF BEFORE 10.2.7
 	[DIFFICULTY.RAID.LFR] = 3,
 	[DIFFICULTY.RAID.NORMAL] = 5,
 	[DIFFICULTY.RAID.HEROIC] = 6,
+	-- #ELSE
+	[DIFFICULTY.RAID.LFR] = IGNORED_VALUE,
+	[DIFFICULTY.RAID.NORMAL] = IGNORED_VALUE,
+	[DIFFICULTY.RAID.HEROIC] = IGNORED_VALUE,
+	-- #ENDIF
 };
 
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
