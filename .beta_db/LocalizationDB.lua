@@ -578,7 +578,7 @@ localize(L.HEADER_NAMES, {
 	[-1000920] = C_Spell.GetSpellName(415581),
 	[-1000921] = ISLANDS_HEADER,
 	[-1000922] = WORLD_MAP_THREATS,
-	[-1000923] = "Primal Storms",
+	[-1000923] = "Drakewatcher Manuscript",
 	[-1000924] = "Primal Storms",
 	[-1000925] = BROKENSHORE_BUILDING_MAGETOWER,
 	[-1000926] = "Trading Post",

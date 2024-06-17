@@ -1036,8 +1036,37 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(81449, 219263),	-- Skinning Warphorn
 			FirstSkin(83412, 216039),	-- Skinning Xishorr
 		})),
-		--spell(, {	--
-		--}),
+		spell(423342, {	-- Khaz Algar Skinning
+			i(224781),	-- Abyssal Fur
+			i(212667),	-- Gloom Chitin+
+			i(212668),	-- Gloom Chitin++
+			i(212669),	-- Gloom Chitin+++
+			i(217840),	-- Refine Algari Chitin
+			i(217818),	-- Refine Algari Hides
+			i(217822),	-- Refine Algari Leather
+			i(212664),	-- Stormcharged Leather+
+			i(212665),	-- Stormcharged Leather++
+			i(212666),	-- Stormcharged Leather+++
+			i(212674),	-- Sunless Carapace+
+			i(212675),	-- Sunless Carapace++
+			i(212676),	-- Sunless Carapace+++
+			i(212670),	-- Thunderous Hide+
+			i(212672),	-- Thunderous Hide++
+			i(212673),	-- Thunderous Hide+++
+			i(224780),	-- Toughened Thunderous Hide
+		}),
+		i(219005),	-- Arathor Hammerfish Lure
+		i(219019),	-- Beast Lure Scent
+		i(218738),	-- Bizarrely-Shaped Stomach
+		i(219009),	-- Crystalline Creature Lure
+		i(219004),	-- Dornish Pike Lure
+		i(219007),	-- Elusive Creature Lure
+		i(219003),	-- Quiet River Bass Lure
+		i(219006),	-- Roaring Anglerseeker Lure
+		i(219002),	-- Specular Rainbowfish Lure
+		i(219011),	-- Sporefused Creature Lure
+		i(219008),	-- Supreme Beast Lure
+		i(219010),	-- Writhing Creature Lure
 	}),
 	--[[
 	prof(TAILORING, {

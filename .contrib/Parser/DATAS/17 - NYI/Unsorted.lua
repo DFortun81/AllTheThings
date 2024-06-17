@@ -418,23 +418,6 @@ root(ROOTS.Unsorted, {
 					i(210942),	-- Byproduct 01 - Light
 					i(210943),	-- Byproduct 02 - Dark
 				}),
-				prof(SKINNING, {
-					i(212664),	-- Stormcharged Leather
-					i(212665),	-- Stormcharged Leather
-					i(212666),	-- Stormcharged Leather
-					i(212667),	-- Gloom Chitin
-					i(212668),	-- Gloom Chitin
-					i(212669),	-- Gloom Chitin
-					i(212670),	-- Thunderous Hide
-					i(212672),	-- Thunderous Hide
-					i(212673),	-- Thunderous Hide
-					i(212674),	-- Sunless Carapace
-					i(212675),	-- Sunless Carapace
-					i(212676),	-- Sunless Carapace
-					i(217818),	-- Refine Algari Hides \\ Refine Algarian Hides
-					i(217822),	-- Refine Algari Leather \\ Refine Algarian Leather
-					i(217840),	-- Refine Algari Chitin \\ Refine Algarian Chitin
-				}),
 				prof(TAILORING, {
 					i(212677),	-- Underground Cloth 01
 					i(212678),	-- Underground Cloth 01
@@ -1709,7 +1692,6 @@ root(ROOTS.Unsorted, {
 			i(218735),	-- Forged Gladiator's Sword \\ PH Copy Draconic Gladiator's Sword
 			i(218736),	-- Forged Gladiator's Skewer \\ Forged Gladiator's Shotel \\ PH Copy Draconic Gladiator's Shotel
 			i(218737),	-- Forged Gladiator's Battlestaff \\ Forged Gladiator's Axestaff \\ PH Copy Draconic Gladiator's Axestaff
-			i(218738),	-- Bizarrely-Shaped Stomach
 			i(218741),	-- Mossy Cartographer's Doublet
 			i(218742),	-- Deep Cartographer's Doublet
 			i(218743),	-- Crimson Cartographer's Doublet
@@ -1971,20 +1953,9 @@ root(ROOTS.Unsorted, {
 			i(218999),	-- Leafy Educator's Wraps
 			i(219000),	-- Lilac Educator's Wraps
 			i(219001),	-- Cardinal Educator's Wraps
-			i(219002),	-- Specular Rainbowfish Lure
-			i(219003),	-- Quiet River Bass Lure
-			i(219004),	-- Dornish Pike Lure
-			i(219005),	-- Arathor Hammerfish Lure
-			i(219006),	-- Roaring Anglerseeker Lure
-			i(219007),	-- Elusive Creature Lure
-			i(219008),	-- Supreme Beast Lure
-			i(219009),	-- Crystalline Creature Lure
-			i(219010),	-- Writhing Creature Lure
-			i(219011),	-- Sporefused Creature Lure
 			i(219013),	-- Superb Beast Fang
 			i(219016),	-- Coated Steel Tips
 			i(219017),	-- Silver Armor Clasps
-			i(219019),	-- Beast Lure Scent
 			i(219065),	-- [DNT] Ensemble: CivilianScholar
 			i(219066),	-- [DNT] Ensemble: CivilianScholar
 			i(219067),	-- [DNT] Ensemble: CivilianScholar
@@ -4371,8 +4342,6 @@ root(ROOTS.Unsorted, {
 			i(224777),	-- Sureki Shadecaster
 			i(224778),	-- Knicknack's Enbiggener
 			i(224779),	-- Alhainr's Skull
-			i(224780),	-- Toughened Thunderous Hide
-			i(224781),	-- Abyssal Fur
 			i(224782),	-- Razor Talon
 			i(224786),	-- Skeleton King Outfit
 			i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit

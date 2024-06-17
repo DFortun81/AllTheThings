@@ -1402,7 +1402,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 					i(226326), -- Underground Stropping Compound
 				},
 			}),
-		})
+		}),
 	})),
 })));
 

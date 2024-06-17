@@ -283,7 +283,44 @@ root(ROOTS.Professions, prof(SKINNING, {
 					i(226343), -- Fungarian's Rich Tannin
 				},
 			}),
-		})
+		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				--currency(SKINNING_KNOWLEDGE),	-- set up new local or timeline it?
+			},
+		},{
+			--i(xx),	-- new skinning weekly item
+			--q(?, {	-- Inscription Order: Skinning
+			--	["name"] = "Inscription Order: Skinning",
+			--	["description"] = "Requires a crafting order from Inscription.",
+			--	["provider"] = { "i", x },	-- xx Treatise on Skinning
+			--}),
+			q(81459, {	-- Weekly Skinning Knowledgepoint #1
+				["name"] = "Weekly Skinning Knowledgepoint #1",
+				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
+			}),
+			q(81460, {	-- Weekly Skinning Knowledgepoint #2
+				["name"] = "Weekly Skinning Knowledgepoint #2",
+				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
+			}),
+			q(81461, {	-- Weekly Skinning Knowledgepoint #3
+				["name"] = "Weekly Skinning Knowledgepoint #3",
+				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
+			}),
+			q(81462, {	-- Weekly Skinning Knowledgepoint #4
+				["name"] = "Weekly Skinning Knowledgepoint #4",
+				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
+			}),
+			q(81463, {	-- Weekly Skinning Knowledgepoint #5
+				["name"] = "Weekly Skinning Knowledgepoint #5",
+				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
+			}),
+			q(81464, {	-- Weekly Skinning Knowledgepoint #6
+				["name"] = "Weekly Skinning Knowledgepoint #6",
+				["provider"] = { "i", 224781 },	-- Abyssal Fur
+			}),
+		})),
 	})),
 }));
 profession(SKINNING, {

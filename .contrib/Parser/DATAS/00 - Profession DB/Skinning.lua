@@ -37,3 +37,31 @@ i(0, 375782);	-- Thousandbite Piranha Lure
 i(0, 377988);	-- Heart in a Bottle
 -- NYI --
 i(0, 382587);	-- Opening
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+-- TRAINER --
+i(0, 423342);    -- Khaz Algar Skinning
+i(0, 442566);    -- Gloom Chitin
+i(0, 442567);    -- Stormcharged Leather
+i(0, 442569);    -- Sunless Carapace
+i(0, 442572);    -- Thunderous Hide
+-- SPECIALIZATION -- 
+i(0, 442654);    -- Beast Lure Scent
+i(0, 442652);    -- Elusive Creature Lure
+i(0, 442649);    -- Infusion: Crystal
+i(0, 442650);    -- Infusion: Spores
+i(0, 442651);    -- Infusion: Writhing
+i(0, 442655);    -- Supreme Beast Lure
+i(0, 442647);    -- Arathor Hammerfish Lure
+i(0, 442646);    -- Dornish Pike Lure
+i(0, 442645);    -- Quiet River Bass Lure
+i(0, 442648);    -- Roaring Anglerseeker Lure
+i(0, 442644);    -- Specular Rainbowfish Lure
+i(0, 440942);    -- Refine Chitin++
+i(0, 440943);    -- Refine Chitin+++
+i(0, 440929);    -- Refine Hides++
+i(0, 440934);    -- Refine Hides+++
+i(0, 440937);    -- Refine Leather++
+i(0, 440938);    -- Refine Leather+++
