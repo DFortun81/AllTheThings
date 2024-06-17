@@ -338,6 +338,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 							i(192210),	-- Eternal Gladiator's Drape
 							i(192211),	-- Eternal Gladiator's Shawl
 							i(192212),	-- Eternal Gladiator's Greatcloak
+							i(175888, { ["bonusID"] = 7532 }),	-- Sinful Gladiator's Cloak
+							i(178353, { ["bonusID"] = 7532 }),	-- Sinful Gladiator's Drape
+							i(178414, { ["bonusID"] = 7532 }),	-- Sinful Gladiator's Shawl
+							i(184311, { ["bonusID"] = 7532 }),	-- Sinful Gladiator's Greatcloak
+							i(192209, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Cloak
+							i(192210, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Drape
+							i(192211, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Shawl
+							i(192212, { ["bonusID"] = 7532 }),	-- Eternal Gladiator's Greatcloak
 						},
 					})),
 					filter(BACK_F, {
