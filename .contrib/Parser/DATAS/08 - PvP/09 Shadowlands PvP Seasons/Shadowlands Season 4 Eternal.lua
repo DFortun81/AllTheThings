@@ -852,6 +852,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					}),
 				}),
 			}),
+			n(168011, {	-- Zo'sorg <Master of Conflict>
+				["coord"] = { 35.0, 57.6, ORIBOS },
+				["g"] = {
+					i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
+						["cost"] = {{"i", MOH, 1}},
+						["g"] = {
+							i(175888),	-- Sinful Gladiator's Cloak
+							i(178353),	-- Sinful Gladiator's Drape
+							i(178414),	-- Sinful Gladiator's Shawl
+							i(184311),	-- Sinful Gladiator's Greatcloak
+							i(192209),	-- Eternal Gladiator's Cloak
+							i(192210),	-- Eternal Gladiator's Drape
+							i(192211),	-- Eternal Gladiator's Shawl
+							i(192212),	-- Eternal Gladiator's Greatcloak
+						},
+					})),
+				},
+			}),
 		}),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 }, ["bonusID"] = 7532 }, {
 			n(CLASSES,{

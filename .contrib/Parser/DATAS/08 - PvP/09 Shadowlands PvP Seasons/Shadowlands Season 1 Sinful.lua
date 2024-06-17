@@ -327,6 +327,19 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 						["cost"] = {{"i", MOH, 12}},
 						["timeline"] = { ADDED_10_0_2_LAUNCH },
 					}),
+					i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
+						["cost"] = {{"i", MOH, 1}},
+						["g"] = {
+							i(175888),	-- Sinful Gladiator's Cloak
+							i(178353),	-- Sinful Gladiator's Drape
+							i(178414),	-- Sinful Gladiator's Shawl
+							i(184311),	-- Sinful Gladiator's Greatcloak
+							i(192209),	-- Eternal Gladiator's Cloak
+							i(192210),	-- Eternal Gladiator's Drape
+							i(192211),	-- Eternal Gladiator's Shawl
+							i(192212),	-- Eternal Gladiator's Greatcloak
+						},
+					})),
 					filter(BACK_F, {
 						i(175888, {	-- Sinful Gladiator's Cloak
 							["cost"] = {{"c", CONQUEST, 525}},

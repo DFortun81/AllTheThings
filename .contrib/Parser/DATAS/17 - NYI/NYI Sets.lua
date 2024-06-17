@@ -5884,6 +5884,45 @@ root(ROOTS.NeverImplemented, n(SETS, {
 						i(188943),	-- Vambraces of the Infinite Infantry
 					}),
 				})),
+				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6894 }, {
+					cl(DEATHKNIGHT, {
+						i(188873),	-- Cloak of the First Eidolon
+					}),
+					cl(DEMONHUNTER, {
+						i(188900),	-- Mercurial Punisher's Mantle
+					}),
+					cl(DRUID, {
+						i(188871),	-- Wrap of the Fixed Stars
+					}),
+					cl(HUNTER, {
+						i(188872),	-- Godstalker's Camouflage
+					}),
+					cl(MAGE, {
+						i(188846),	-- Erudite Occultist's Shroud
+					}),
+					cl(MONK, {
+						i(188918),	-- Drape of the Grand Upwelling
+					}),
+					cl(PALADIN, {
+						i(188936),	-- Luminous Chevalier's Drape
+					}),
+					cl(PRIEST, {
+						i(188882),	-- Drape of the Empyrean
+					}),
+					cl(ROGUE, {
+						i(188909),	-- Soulblade Cloak
+					}),
+					cl(SHAMAN, bubbleDown({ ["bonusID"] = 6896 }, {
+						-- Shaman has a different bonusID
+						i(188927),	-- Theurgic Starspeaker's Shawl
+					})),
+					cl(WARLOCK, {
+						i(188891),	-- Cape of the Demon Star
+					}),
+					cl(WARRIOR, {
+						i(188945),	-- Favor of the Infinite Infantry
+					}),
+				})),
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 6895 }, {
 					cl(DEATHKNIGHT, {
 						i(188864),	-- Carapace of the First Eidolon
