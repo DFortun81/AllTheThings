@@ -19,12 +19,16 @@ local api = {};
 app.Modules.Upgrade = api;
 
 -- Module locals
-local CreateItem, DGU, TransmogLastRefresh
+local CreateItem, DGU, TransmogLastRefresh, GetGroupItemIDWithModID, GetSourceID, CreateItemSource
 local Runner = app.CreateRunner("upgrade");
+Runner.SetPerFrameDefault(1)
 
 app.AddEventHandler("OnLoad", function()
 	CreateItem = app.CreateItem;
 	DGU = app.DirectGroupUpdate
+	GetGroupItemIDWithModID = app.GetGroupItemIDWithModID
+	GetSourceID = app.GetSourceID
+	CreateItemSource = app.CreateItemSource
 end)
 
 -- Static mapping of BonusID -> Next Unlock BonusID for a corresponding Item. Unlock will most-likely always be an Appearance
@@ -255,6 +259,10 @@ local BonusIDNextUnlock = {
 	--[10417] = ,
 	--[10418] = ,
 }
+-- Which bonusID nested upgrades are allowed to be nested under an already-upgraded listing
+local NestedUpgradesAllowedByBonusID = {
+	[10416] = true,	-- Awakened 3/3
+}
 
 local function GetFirstValueAndKey(t, keys)
 	if not t or not keys then return end
@@ -308,63 +316,68 @@ local function GetNextItemUnlockBonusID(item)
 end
 api.GetNextItemUnlockBonusID = GetNextItemUnlockBonusID;
 
+local ItemSourceCache = {}
 local function AsItemSource(t)
 	-- already an item source table
 	if t.__type == "ItemWithAppearance" then return t; end
 	local link = t.link or t.rawlink or t.silentLink;
 	if not link then return end
-	local sourceID = app.GetSourceID(link)
-	if sourceID then
-		return app.CreateItemSource(sourceID, t.itemID, t);
-	end
+	local sourceID = GetSourceID(link, true)
+	if sourceID then return CreateItemSource(sourceID, t.itemID, t) end
 end
-local function GetUpgrade(t, upmodID, upbonusID)
+local function SplitUpgradeID(up)
+	local upmodID = floor(up);
+	local upbonusID = floor((up - upmodID) * 100000 + 0.5);
+	return upmodID, upbonusID
+end
+local function GetUpgrade(t, up)
 	local itemID = t.itemID
-	local up = {
+	local upmodID, upbonusID = SplitUpgradeID(up)
+	local modItemID = GetGroupItemIDWithModID(nil, itemID, upmodID, upbonusID)
+	local itemSource = ItemSourceCache[modItemID]
+	-- app.PrintDebug("UPGRADE<=CACHE",itemID,"+",upmodID,upbonusID,"=>",modItemID,"==",itemSource and itemSource.hash)
+	if itemSource then return itemSource end
+	local t = {
 		itemID = itemID,
 		modID = upmodID > 0 and upmodID or nil,
 		bonusID = upbonusID > 0 and upbonusID or nil
 	}
-	return AsItemSource(CreateItem(itemID, up));
+	itemSource = AsItemSource(CreateItem(itemID, t))
+	if itemSource then
+		ItemSourceCache[modItemID] = itemSource
+		-- app.PrintDebug("UPGRADE=>CACHE",modItemID,"==",itemSource.hash)
+		return itemSource
+	end
 end
 api.GetUpgrade = GetUpgrade;
 
 -- Returns the different and upgraded version of 't' (via 'up' field only)
 local function HasUpgrade(t)
 
+	-- app.PrintDebug("HU:",t.modItemID)
 	-- '.up' is the modID.bonusID portion of the respective upgrade item defined in ATT
 	local up = t.up;
 	if not up then
 		-- app.PrintDebug("no upgrade",t.modItemID)
-		-- t.isUpgraded = true;
 		return;
 	end
 
 	-- find or create the upgrade for cached reference
-	local upmodID = floor(up);
-	local upbonusID = floor((up - upmodID) * 10000 + 0.5);
-	up = GetUpgrade(t, upmodID, upbonusID);
-	if not up then
-		-- app.PrintDebug("HU:no upgrade created",t.modItemID,"=>",upmodID,upbonusID)
-		-- t.isUpgraded = true;
+	local upgrade = GetUpgrade(t, up);
+	if not upgrade then
+		-- app.PrintDebug("HU:no upgrade created",t.modItemID,"=>",up)
 		return;
 	end
 
 	-- upgrade has to actually be different than the source item
-	local uphash = up.hash;
-	if uphash and uphash == t.hash or up.sourceID == t.sourceID then
-		-- app.PrintDebug("HU:upgrade is same",t.hash,t.modItemID,"=+>",up.__type,uphash,up.modItemID)
-		-- t.isUpgraded = true;
+	if upgrade.sourceID == t.sourceID then
+		-- app.PrintDebug("HU:upgrade is same",t.hash,t.modItemID,"=+>",upgrade.__type,upgrade.modItemID)
 		return;
 	end
 
-	-- if up.modID == t.modID and up.bonusID == t.bonusID then
-	-- 	app.print("SAME ITEM AS UPGRADE!?",t.hash,t.modItemID,"=+>",up.__type,up.hash,up.modItemID)
-	-- end
-
-	t._up = up;
-	-- app.PrintDebug("HU:",up.__type,t.isUpgrade,t.modItemID,up.modItemID)
-	return up;
+	t._up = upgrade;
+	-- app.PrintDebug("HU:",upgrade.__type,t.isUpgrade,t.modItemID,upgrade.modItemID)
+	return upgrade;
 end
 
 local UpdateUpgradeGroup
@@ -391,11 +404,9 @@ UpdateUpgradeGroup = function(ref)
 	CheckIsUpgrade(ref)
 end
 local function UpdateUpgradeGroups(refs)
-	local ref
 	-- app.PrintDebug("Upgrade Updates",#refs)
 	for i=1,#refs do
-		ref = refs[i];
-		CheckIsUpgrade(ref)
+		CheckIsUpgrade(refs[i])
 	end
 end
 local function UpdateStart()
@@ -413,9 +424,8 @@ local function UpdateUpgrades()
 	end
 	TransmogLastRefresh = app.Settings.Collectibles.Transmog
 
-	-- cancel all existing running cost updates
+	-- cancel all existing running upgrade updates
 	Runner.Reset()
-	Runner.SetPerFrame(1)
 
 	if app.Debugging then
 		Runner.OnEnd(UpdateEnd)
@@ -439,61 +449,43 @@ api.NextUpgrade = function(t)
 	local upgrade = t._up or HasUpgrade(t);
 	if upgrade then return upgrade end
 
-	-- nested upgrades should not be considered for a following upgrade (Contains tooltip/DetermineUpgradeGroups)
-	-- if a situation arises in which a single item can be upgraded across multiple 'collectible' variants, this will have to be revisted
-	-- if t.isUpgraded then
-	-- 	-- app.PrintDebug("isUpgraded",t.modItemID)
-	-- 	return;
-	-- end
-
 	-- is this a non-default item table which has no upgrade unlock?
 	local unlockBonusID = GetNextItemUnlockBonusIDByTable(t)
 	if not unlockBonusID or unlockBonusID < 1 then
 		-- app.PrintDebug("isUpgraded via item",t.modItemID)
-		-- t.isUpgraded = true;
 		return;
+	end
+
+	-- parent is pre-upgrade of itself and not specifically allowed further upgrades, then no upgrade for this
+	if not NestedUpgradesAllowedByBonusID[unlockBonusID] then
+		local p = t.parent
+		local pup = p and p._up;
+		-- app.PrintDebug("parent?",p,pup and pup.hash,t.hash)
+		if pup and pup.hash == t.hash then
+			-- app.PrintDebug("parent is upgrade source",p.modItemID,t.modItemID)
+			return;
+		end
 	end
 
 	-- '.up' is the modID.bonusID portion of the respective upgrade item
 	-- if no upgrade
 	local up = unlockBonusID / 100000
-	-- if not up then
-	-- 	-- app.PrintDebug("no upgrade",t.modItemID)
-	-- 	-- t.isUpgraded = true;
-	-- 	return;
-	-- end
-
-	-- parent is pre-upgrade of itself and less than 2 upgrades allowed from the parent, then no upgrade for this
-	local p = t.parent
-	local pup = p and p._up;
-	-- app.PrintDebug("parent?",p,pup and pup.hash,t.hash)
-	if pup and pup.hash == t.hash then
-		-- app.PrintDebug("parent is upgrade source",p.modItemID,t.modItemID)
-		-- t.isUpgraded = true;
-		return;
-	end
-
 	-- find or create the upgrade for cached reference
-	local upmodID = floor(up);
-	local upbonusID = floor((up - upmodID) * 100000 + 0.5);
-	up = GetUpgrade(t, upmodID, upbonusID);
-	if not up then
+	local upgrade = GetUpgrade(t, up);
+	if not upgrade then
 		-- app.PrintDebug("NU:no upgrade created",t.modItemID,"=>",upmodID,upbonusID)
-		-- t.isUpgraded = true;
 		return;
 	end
 
 	-- upgrade has to actually be different than the source item
-	local uphash = up.hash;
-	if uphash and uphash == t.hash or up.sourceID == t.sourceID then
-		-- app.PrintDebug("NU:upgrade is same",uphash,up.modItemID)
-		-- t.isUpgraded = true;
+	if upgrade.sourceID == t.sourceID then
+		-- app.PrintDebug("NU:upgrade is same",upgrade.modItemID)
 		return;
 	end
 
-	t._up = up;
-	-- app.PrintDebug("NU:",up.__type,up.collected,t.modItemID,up.modItemID)
-	return up;
+	t._up = upgrade;
+	-- app.PrintDebug("NU:",upgrade.__type,upgrade.collected,t.modItemID,upgrade.modItemID)
+	return upgrade;
 end
 
 -- Returns whether 't' has an upgrade AND it is uncollected

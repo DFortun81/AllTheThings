@@ -994,7 +994,7 @@ iupgrade = function(itemID, modID, bonusID, t)			-- Create an ITEM Object which 
 	end
 	local i = i(itemID, t);
 	-- use ModID/BonusID combination to represent the new Item available via Upgrading
-	i.up = (tonumber(modID) or 0) + ((tonumber(bonusID) or 0) / 10000);
+	i.up = (tonumber(modID) or 0) + ((tonumber(bonusID) or 0) / 100000);
 	return i;
 end
 iensemble = function(itemID, t)
