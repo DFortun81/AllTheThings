@@ -218,6 +218,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["description"] = "|Cffff0000This Ensemble is currently broken and gives nothing when used.|r",
 							-- Marked as removed until Blizzard fixes this
 							["g"] = sharedData({ ["bonusID"] = 6894, ["u"] = REMOVED_FROM_GAME, }, {
+								i(175888),	-- Sinful Gladiator's Cloak
+								i(178353),	-- Sinful Gladiator's Drape
+								i(178414),	-- Sinful Gladiator's Shawl
+								i(184311),	-- Sinful Gladiator's Greatcloak
+								i(192209),	-- Eternal Gladiator's Cloak
+								i(192210),	-- Eternal Gladiator's Drape
+								i(192211),	-- Eternal Gladiator's Shawl
+								i(192212),	-- Eternal Gladiator's Greatcloak
+							}),
+							-- Blizzard fixed as of at least June 17th, 2024, however, what we have listed is wrong.
+							--[[["g"] = sharedData({ ["bonusID"] = 6894, ["u"] = REMOVED_FROM_GAME, }, {
 								i(188873, {["classes"] = DEATHKNIGHT}),	-- Cloak of the First Eidolon
 								i(188900, {["classes"] = DEMONHUNTER}),	-- Mercurial Punisher's Mantle
 								i(188871, {["classes"] = DRUID}),	-- Wrap of the Fixed Stars
@@ -231,6 +242,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(188891, {["classes"] = WARLOCK}),	-- Cape of the Demon Star
 								i(188945, {["classes"] = WARRIOR}),	-- Favor of the Infinite Infantry
 							}),
+							--]]
 						})),
 					},
 				}),
