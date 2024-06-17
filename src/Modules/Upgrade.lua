@@ -325,29 +325,40 @@ local function AsItemSource(t)
 	local sourceID = GetSourceID(link, true)
 	if sourceID then return CreateItemSource(sourceID, t.itemID, t) end
 end
-local function SplitUpgradeID(up)
-	local upmodID = floor(up);
-	local upbonusID = floor((up - upmodID) * 100000 + 0.5);
-	return upmodID, upbonusID
-end
 local function GetUpgrade(t, up)
 	local itemID = t.itemID
-	local upmodID, upbonusID = SplitUpgradeID(up)
+	local upmodID = floor(up);
+	local upbonusID = floor((up - upmodID) * 100000 + 0.5);
 	local modItemID = GetGroupItemIDWithModID(nil, itemID, upmodID, upbonusID)
 	local itemSource = ItemSourceCache[modItemID]
 	-- app.PrintDebug("UPGRADE<=CACHE",itemID,"+",upmodID,upbonusID,"=>",modItemID,"==",itemSource and itemSource.hash)
-	if itemSource then return itemSource end
-	local t = {
-		itemID = itemID,
-		modID = upmodID > 0 and upmodID or nil,
-		bonusID = upbonusID > 0 and upbonusID or nil
-	}
-	itemSource = AsItemSource(CreateItem(itemID, t))
-	if itemSource then
+	if not itemSource then
+		local tup = {
+			itemID = itemID,
+			modID = upmodID > 0 and upmodID or nil,
+			bonusID = upbonusID > 0 and upbonusID or nil
+		}
+		itemSource = AsItemSource(CreateItem(itemID, tup))
+		if not itemSource then
+			-- app.PrintDebug("GU:no upgrade created",t.modItemID,"=>",up)
+			-- this case always means we expected an upgrade, but got none, which means the upgrade item
+			-- is not yet loaded in the Client and cannot return the proper SourceID because Blizzard.
+			return
+		end
 		ItemSourceCache[modItemID] = itemSource
 		-- app.PrintDebug("UPGRADE=>CACHE",modItemID,"==",itemSource.hash)
-		return itemSource
 	end
+
+	-- upgrade has to actually be different than the source item
+	if itemSource.sourceID == t.sourceID then
+		-- app.PrintDebug("GU:upgrade is same",t.hash,t.modItemID,"=+>",itemSource.__type,itemSource.modItemID)
+		return;
+	end
+
+	-- cache the upgrade within the item itself
+	t._up = itemSource;
+	-- app.PrintDebug("GU:",itemSource.__type,t.isUpgrade,t.modItemID,itemSource.modItemID)
+	return itemSource
 end
 api.GetUpgrade = GetUpgrade;
 
@@ -363,21 +374,7 @@ local function HasUpgrade(t)
 	end
 
 	-- find or create the upgrade for cached reference
-	local upgrade = GetUpgrade(t, up);
-	if not upgrade then
-		-- app.PrintDebug("HU:no upgrade created",t.modItemID,"=>",up)
-		return;
-	end
-
-	-- upgrade has to actually be different than the source item
-	if upgrade.sourceID == t.sourceID then
-		-- app.PrintDebug("HU:upgrade is same",t.hash,t.modItemID,"=+>",upgrade.__type,upgrade.modItemID)
-		return;
-	end
-
-	t._up = upgrade;
-	-- app.PrintDebug("HU:",upgrade.__type,t.isUpgrade,t.modItemID,upgrade.modItemID)
-	return upgrade;
+	return GetUpgrade(t, up);
 end
 
 local UpdateUpgradeGroup
@@ -468,24 +465,8 @@ api.NextUpgrade = function(t)
 	end
 
 	-- '.up' is the modID.bonusID portion of the respective upgrade item
-	-- if no upgrade
-	local up = unlockBonusID / 100000
 	-- find or create the upgrade for cached reference
-	local upgrade = GetUpgrade(t, up);
-	if not upgrade then
-		-- app.PrintDebug("NU:no upgrade created",t.modItemID,"=>",upmodID,upbonusID)
-		return;
-	end
-
-	-- upgrade has to actually be different than the source item
-	if upgrade.sourceID == t.sourceID then
-		-- app.PrintDebug("NU:upgrade is same",upgrade.modItemID)
-		return;
-	end
-
-	t._up = upgrade;
-	-- app.PrintDebug("NU:",upgrade.__type,upgrade.collected,t.modItemID,upgrade.modItemID)
-	return upgrade;
+	return GetUpgrade(t, unlockBonusID / 100000);
 end
 
 -- Returns whether 't' has an upgrade AND it is uncollected
