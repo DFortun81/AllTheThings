@@ -5885,6 +5885,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 				})),
 				n(PVP_GLADIATOR, bubbleDown({ ["bonusID"] = 6894 }, {
+					-- TODO: add all sets with #IF BEFORE DF (they are now in PvP Ensembles)
 					cl(DEATHKNIGHT, {
 						i(188873),	-- Cloak of the First Eidolon
 					}),
