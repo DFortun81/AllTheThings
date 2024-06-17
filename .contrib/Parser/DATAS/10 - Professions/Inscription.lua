@@ -2508,6 +2508,14 @@ GLYPH_OF_THE_LIGHTSPAWN = r(254227, {	-- Glyph of the Lightspawn
 	["name"] = "Glyph of the Lightspawn",
 	["timeline"] = { ADDED_7_3_0 },
 });
+GLYPH_OF_THE_LONG_WORD_AND_PROTECTOR_OF_THE_INNOCENT = r(95825, {	-- Glyph of the Long Word / Glyph of Protector of the Innocent [MOP+]
+	-- #if AFTER 5.0.4
+	["name"] = "Glyph of Protector of the Innocent",
+	-- #else
+	["name"] = "Glyph of the Long Word",
+	-- #endif
+	["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
+});
 GLYPH_OF_THE_OBSERVER = r(225555, {	-- Glyph of the Observer
 	["name"] = "Glyph of the Observer",
 	["timeline"] = { ADDED_7_0_3 },
@@ -3189,6 +3197,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_SHIELD_OF_RIGHTEOUSNESS_AND_ALABASTER_SHIELD,
 		GLYPH_OF_SPIRITUAL_ATTUNEMENT_AND_DIVINE_PROTECTION,
 		GLYPH_OF_THE_EXORCIST,
+		GLYPH_OF_THE_LONG_WORD_AND_PROTECTOR_OF_THE_INNOCENT,
 		GLYPH_OF_THE_QUEEN,
 		GLYPH_OF_THE_TRUSTED_STEED,
 		GLYPH_OF_THE_WISE_AND_FIRE_FROM_THE_HEAVENS,
@@ -3865,6 +3874,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				GLYPH_OF_SWIFTMEND_AND_STAMPEDE,
 				GLYPH_OF_TAUNT,
 				GLYPH_OF_THE_BEAST_AND_TRAP_LAUNCHER_AND_MARKED_FOR_DEATH_AND_LIBERATION,
+				GLYPH_OF_THE_LONG_WORD_AND_PROTECTOR_OF_THE_INNOCENT,
 				GLYPH_OF_TRUESHOT_AURA_AND_KILL_COMMAND_AND_MEND_PET,
 				GLYPH_OF_UNLEASHED_LIGHTNING_AND_LIGHTNING_SHIELD,
 				GLYPH_OF_UNSTABLE_AFFLICTION,
