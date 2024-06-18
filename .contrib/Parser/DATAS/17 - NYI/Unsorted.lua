@@ -5101,7 +5101,6 @@ root(ROOTS.Unsorted, {
 			i(227544),	-- Begrimed Staff
 			i(227545),	-- Begrimed Mace
 			i(227546),	-- Begrimed Dagger
-			i(227550),	-- Tusks of Mannoroth
 		})),
 	}),
 	expansion(EXPANSION.DF, {
@@ -5411,6 +5410,7 @@ root(ROOTS.Unsorted, {
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (DM!)
 			}),
+			i(227550),	-- Tusks of Mannoroth
 		})),
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 			------ Next Check 10.2.7 ------
