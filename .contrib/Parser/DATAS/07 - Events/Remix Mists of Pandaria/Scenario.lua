@@ -58,7 +58,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				},
 			}),
 		}),
-		mapped(SCENARIO_COMPLETION, {
+		mapped(SCENARIO, {
 			n(ARMOR, {
 				filter(CLOTH, {
 					i(213657),	-- Brewmoon Crown
@@ -268,11 +268,11 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			}),
 			i(89196, {	-- Theramore Tabard
 				["races"] = ALLIANCE_ONLY,
-				["description"] = "Granted to Alliance players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great." -- Fixed on 3-June-2024
+				["description"] = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Alliance players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great." -- Fixed on 3-June-2024
 			}),
 			i(89205, {	-- Mini Mana Bomb Toy (TOY!)
 				["races"] = HORDE_ONLY,
-				["description"] = "Granted to Horde players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great." -- Fixed on 3-June-2024
+				["description"] = "Buyable from the Toy Vendor at any Infinite Bazar Location or granted to Horde players on completion of the Theramore's Fall scenario at |cffFF0000exactly level 35|R. You can unequip your cloak if your experience bonus is too great." -- Fixed on 3-June-2024
 			}),
 		}),
 		m(450, {	-- Unga Ingoo
