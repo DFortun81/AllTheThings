@@ -1791,6 +1791,7 @@ i(223887);	-- Ominous Herbs
 i(220287);	-- Acid-Filled Sack
 i(217170);	-- Backup Candles
 i(220290);	-- Barbed Pincers
+i(213254);	-- Big Gold Nugget
 i(220291);	-- Bioluminescent Thorax
 i(225801);	-- Braided Seaweed Bangle
 i(225716);	-- Brax's Favorite Cog

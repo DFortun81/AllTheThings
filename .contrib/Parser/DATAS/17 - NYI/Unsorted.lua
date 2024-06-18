@@ -993,7 +993,6 @@ root(ROOTS.Unsorted, {
 				i(215179),	-- Power Cell
 				i(215180),	-- Power Cell
 				i(215447),	-- Duskstem
-				i(215457),	-- Loyalist Secretions
 				i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 				i(216682),	-- The Vizier's Invitation
 				i(216683),	-- Earthen Rifle
@@ -2601,7 +2600,6 @@ root(ROOTS.Unsorted, {
 			i(221223),	-- Bog Beast Mantle
 			i(221224),	-- Bouldershell Waistguard
 			i(221225),	-- Benevolent Hornstag Cinch
-			i(221226),	-- Voidtouched Waistguard
 			i(221227),	-- Monstrous Fungal Cord
 			i(221228),	-- Infested Fungal Wristwraps
 			i(221229),	-- Perchfather's Cuffs
@@ -3809,19 +3807,15 @@ root(ROOTS.Unsorted, {
 			i(223428),	-- Stormrider's Cuffs
 			i(223431),	-- The Fallen Queen's Band
 			i(223432),	-- Commemorative Light's Gambit Championship Signet \\ [PH] 11.0 - Signet
-			i(223435),	-- Element-Attuned Pendant
 			i(223436),	-- Light Boots of the Ringing Deeps
 			i(223437),	-- Handwraps of the Weaver
 			i(223438),	-- Algari Warden's Vestment
 			i(223439),	-- [PH] 11.0 - Leggings
 			i(223440),	-- Saboteur's Shoulderpads
 			i(223441),	-- [PH] 11.0 - Waders
-			i(223442),	-- Saboteur's Grips
 			i(223443),	-- Algari Warden's Hood
 			i(223444),	-- [PH] 11.0 - Breeches
-			i(223445),	-- Sash of the Weaver
 			i(223446),	-- Stormrider's Bindings
-			i(223448),	-- Epaulets of the Ringing Deeps
 			i(223450),	-- [PH] 11.0 - Chainmail
 			i(223451),	-- Saboteur's Striders
 			i(223452),	-- Grips of the Ringing Deeps
@@ -4705,7 +4699,6 @@ root(ROOTS.Unsorted, {
 			i(225737),	-- 11.0 Raid Template - Plate - Feet
 			i(225738),	-- Kaheti Warblade
 			i(225739),	-- Algari Distinguishment
-			i(225741),	-- Titan Disk Fragment
 			i(225744),	-- 11.0 Raid Template - Plate - Feet
 			i(225748),	-- Seal of the Silent Vigil \\ 11.0 Raid Template - Generic - Finger
 			i(225749),	-- Seal of the Void-Touched \\ 11.0 Raid Template - Generic - Finger
@@ -4808,7 +4801,6 @@ root(ROOTS.Unsorted, {
 			i(225898),	-- Idol of the Earthmother
 			i(225899),	-- Unbreakable Iron Idol
 			i(225901),	-- Streamlined Relic \\ Power Idol
-			i(225902),	-- Idol of Final Will
 			i(225903),	-- Amorphous Relic \\ Relic Page
 			i(225904),	-- Time Lost Relic
 			i(225905),	-- Olden Seeker Relic
@@ -4877,14 +4869,12 @@ root(ROOTS.Unsorted, {
 			i(226103),	-- The Weaver's Trove
 			i(226105),	-- Emerald Scale Treads \\ Jade Scale Treads
 			i(226106),	-- Amber Scale Treads
-			i(226107),	-- Homebrewed Blink Vial
 			i(226108),	-- [DNT] Debug Profession Stats
 			i(226111),	-- Arakkoan Ritual Staff
 			i(226113),	-- Kereke's Flourishing Sabre
 			i(226114),	-- Windslicer's Lance
 			i(226115),	-- Contaminating Cleaver
 			i(226116),	-- Coagulating Phlegm Churner
-			i(226117),	-- Dalaran Guardian's Implement
 			i(226118),	-- Arcane Prisoner's Puncher
 			i(226119),	-- Arcane Sharpshooter's Crossbow
 			i(226120),	-- Deployable Battle Supplies \\ Deployable Charge Station

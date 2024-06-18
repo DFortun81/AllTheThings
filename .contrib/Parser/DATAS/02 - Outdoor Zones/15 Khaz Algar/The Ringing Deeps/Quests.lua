@@ -1055,26 +1055,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223373),	-- Treads of Shallow Waters
 				},
 			}),
-			q(81485, {	-- Kelpmire
-				["provider"] = { "n", 220287 },	-- Kelpmire
-				["coord"] = { 47.1, 46.9, THE_RINGING_DEEPS },
-				["g"] = {
-					-- no loot
-				},
-			}),
 			q(80560, {	-- Cragmund
 				["provider"] = { "n", 220269 },	-- Cragmund
 				["coord"] = { 47.1, 46.9, THE_RINGING_DEEPS },
 				["g"] = {
 
-				},
-			}),
-			q(81563, {	-- Rampaging Skardyn
-				["provider"] = { "n", 220273 },	-- Rampaging Skardyn
-				["coord"] = { 57.0, 54.7, THE_RINGING_DEEPS },
-				["g"] = {
-					i(223404),	--Corrupted Earthen Cuffs
-					i(223401),	-- Corrupted Earthen Wristwraps
 				},
 			}),
 			--[[
@@ -1084,10 +1069,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 66.5, 29.9, THE_RINGING_DEEPS },
 			}),
 			--]]
-			q(81511, {	-- Coalesced Monstrosity
-				["provider"] = { "n", 220266 },	-- Coalesced Monstrosity
-				["coord"] = { 57.9, 38.2, THE_RINGING_DEEPS },
-			}),
 			q(80547, {	-- King Splash
 				["provider"] = { "n", 220275 },	-- King Splash
 				["coord"] = { 42.8, 35.1, THE_RINGING_DEEPS },
@@ -1143,7 +1124,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82156),	-- 'Special Assignment: When the Deeps Stir'	/ callings or emissary actually
 	-- ?
 	--q(82957),	-- 'Thanks for the Wax' accepted every time when you fly in zone
-	q(83475),	-- [DNT] Repair Console (spellID 455981) Water Console (o: ?) @ 45.3, 46.4, THE_RINGING_DEEPS)
+	q(83475),	-- [DNT] Repair Console (spellID 455981) Water Console (o: 226624) @ 45.3, 46.4, THE_RINGING_DEEPS)
 	q(83482),	-- [DNT] Repair Console (spellID 456005) Lost Console (o: 226641 @ 56.4, 22.5, THE_RINGING_DEEPS)
 	--q(82991),	-- when bind hearthstone location to Camp Murroch tavern
 });

@@ -21,6 +21,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82448, {	-- Book It to the Library
 					["coord"] = { 25.5, 59.1, ISLE_OF_DORN },
 				}),
+				q(82456, {	-- Chew On This
+					["coord"] = { 52.1, 55.8, ISLE_OF_DORN },
+				}),
 				q(81854, {	-- Coreway Maintenance Request
 					["coord"] = { 31.6, 59.3, DORNOGAL },
 				}),
@@ -39,6 +42,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(211811),	-- Small Glob of Fire Honey (QI!)
 					},
 				}),
+				q(81710, {	-- Mead for the Catalog
+					["coord"] = { 77.5, 48.5, ISLE_OF_DORN },
+				}),
 				q(82237, {	-- Rising the Falls
 					["coord"] = { 56.8, 42.5, ISLE_OF_DORN },
 				}),
@@ -49,12 +55,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				q(81803, {	-- Skyrider Racing - Basin Bypass
-					-- normal - ? / advanced - ? / reversed - ?
-					--["coord"] = { 53.0, 67.7, ISLE_OF_DORN },
+					-- normal - 80221 / advanced - 80227 / reversed - 80233
+					["coord"] = { 53.5, 64.2, ISLE_OF_DORN },
 				}),
 				q(81799, {	-- Skyrider Racing - Dornogal Drift
 					-- normal - 80219 / advanced - 80225 / reversed - 80231
 					["coord"] = { 43.5, 11.7, DORNOGAL },	-- probably gonna need to move out of here
+				}),
+				q(81802, {	-- Skyrider Racing - Storm's Watch Survey
+					-- normal - 80220 / advanced - 80226 / reversed - 80232
+					["coord"] = { 38.6, 43.6, ISLE_OF_DORN },
 				}),
 				q(81805, {	-- Skyrider Racing - Thunderhead Trail
 					-- normal - 80223 / advanced - 80229 / reversed - 80235

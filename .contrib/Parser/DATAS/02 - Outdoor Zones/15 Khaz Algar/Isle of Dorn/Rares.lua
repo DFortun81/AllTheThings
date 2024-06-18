@@ -162,6 +162,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223367),	-- Cuffs of the Titancap
 				},
 			}),
+			n(219284, {	-- Zovex
+				--seems like rare in this spot have rotation?
+				["coord"] = { 30.9, 52.3, ISLE_OF_DORN },
+				["questID"] = 82203,
+				["g"] = {
+					i(226117),	-- Dalaran Guardian's Arcanotool
+				},
+			}),
 		})),
 	}),
 })));

@@ -14,9 +14,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 		ach(40635),	-- Branntastic
 	}),
 	n(QUESTS, {
-		q(77716),	-- Level 2 //
-		q(77718),	-- Level 3 // Brann Bronzebeard leveled up
-		q(77719),	-- Level 4 //
+		-- Brann Bronzebeard leveling quest, probably better to move to hqts?
+		q(77716),	-- Level 2
+		q(77718),	-- Level 3
+		q(77719),	-- Level 4
+		q(77720),	-- Level 5
+		q(77721),	-- Level 6
+		q(77722),	-- Level 7
 		q(82772),	-- probably either flag for tier 1 finished/tier 2 unlock or just generic this delves end?
 	}),
 	m(2269, {	-- Earthcrawl Mines
@@ -142,6 +146,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 			o(454207, {	-- Sturdy Chest
 				["coord"] = { 47.7, 83.0, 2251 },
 				["questID"] = 83456,
+			}),
+			-- opened with coffer key, unsure if it is limited per week or qid per dungeon
+			o(413590, {	-- Bountiful Coffer
+				["coord"] = { 45.3, 95.3, 2251 },
+				["questID"] = 83319,
+				["g"] = {
+					i(220520),	-- Radiant Echo (TODO: remove when more nice source gonna be found out)
+				},
 			}),
 		},
 	}),
@@ -278,18 +290,23 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 		},
 	}),
 	n(REWARDS, {
-		i(222916),	-- Player Experience (Tier 1-2)
-		i(222917),	-- Player Experience (Tier 3)
+		i(224181),	-- Companion Experience (Tier 1-2)
+		i(224411),	-- Companion Experience (Tier 3)
 		i(222922),	-- Expeditionary Spoils (Tier 1)
 		i(222923),	-- Expeditionary Spoils (Tier 2)
 		i(225178),	-- Expeditionary Spoils (Tier 3)
+		i(222916),	-- Player Experience (Tier 1-2)
+		i(222917),	-- Player Experience (Tier 3)
+		i(222927),	-- Weathered Coin Coffer
 		-- Curio
+		i(225902),	-- Idol of Final Will
 		i(225900),	-- Light-Touched Idol
 		i(225899),	-- Unbreakable Iron Idol
 		-- Miscellaneous
 		i(223287),	-- Atomized Salien Slime
 		i(218121),	-- Candle Light
 		i(226110),	-- Elemental Fusion Bomb
+		i(226107),	-- Homebrewed Blink Vial
 		i(225900),	-- Light-Touched Idol
 		i(225249),	-- Rattling Bag'o'gold
 		i(226109),	-- Squirming Swarm Sac

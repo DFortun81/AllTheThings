@@ -63,7 +63,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223368),	-- Twisted Earthen Signet
 				},
 			}),
-
+			n(220273, {	-- Rampaging Skardyn
+				["coord"] = { 57.0, 54.7, THE_RINGING_DEEPS },
+				["questID"] = 81563,
+				["g"] = {
+					i(223404),	-- Corrupted Earthen Cuffs
+					i(223401),	-- Corrupted Earthen Wristwraps	(alpha data)
+				},
+			}),
+			n(220287, {	-- Kelpmire
+				["coord"] = { 47.1, 46.9, THE_RINGING_DEEPS },
+				["questID"] = 81485,	-- in addition 84047
+			}),
+			n(220266, {	-- Coalesced Monstrosity
+				["coord"] = { 57.9, 38.2, THE_RINGING_DEEPS },
+				["questID"] = 81511,	-- in addition 84045
+				["g"] = {
+					i(221226),	-- Voidtouched Waistguard
+				},
+			}),
 		})),
 	}),
 })));

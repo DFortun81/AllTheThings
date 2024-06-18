@@ -79,7 +79,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 83030,
 				["g"] = {
 					--gray items
-					i(213254),	-- Big Gold Nugget
 					i(213250),	-- Cracked Gem
 					i(213253),	-- Gilded Candle
 					i(213255),	-- Wax Canary
