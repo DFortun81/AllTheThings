@@ -111,10 +111,9 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			n(SPECIAL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 				n(118930, {	-- Ixallon the Soulbreaker
-					["description"] = "Last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick acess to him.",
-					["g"] = {
-						i(212779),	-- Grimoire of the Bloodrage Tyrant (CI!)
-					},
+					i(212779, {	-- Grimoire of the Bloodrage Tyrant (CI!)
+						["description"] = "Drops from the last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick access to him.",
+					}),
 				}),
 			})),
 			n(COMMON_BOSS_DROPS, {
