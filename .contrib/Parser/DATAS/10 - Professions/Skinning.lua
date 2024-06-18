@@ -2,6 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local SKINNING_KNOWLEDGE = 2033;
+--local SKINNING_KNOWLEDGE = 2792;
 -- Skinning - Skill ID 393 / Spell ID 8613
 root(ROOTS.Professions, prof(SKINNING, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -287,7 +288,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				--currency(SKINNING_KNOWLEDGE),	-- set up new local or timeline it?
+				--currency(SKINNING_KNOWLEDGE_TWW),	-- set up new local or timeline it?
 			},
 		},{
 			--i(xx),	-- new skinning weekly item

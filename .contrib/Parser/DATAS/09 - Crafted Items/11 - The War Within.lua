@@ -1039,9 +1039,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		})),
 		spell(423342, {	-- Khaz Algar Skinning
 			i(224781),	-- Abyssal Fur
+			i(218338),	-- Bottled Storm
+			i(218339),	-- Burning Cinderbee Setae
 			i(212667),	-- Gloom Chitin+
 			i(212668),	-- Gloom Chitin++
 			i(212669),	-- Gloom Chitin+++
+			i(218337),	-- Honed Bone Shards
+			i(218336),	-- Kaheti Swarm Chitin
 			i(217840),	-- Refine Algari Chitin
 			i(217818),	-- Refine Algari Hides
 			i(217822),	-- Refine Algari Leather

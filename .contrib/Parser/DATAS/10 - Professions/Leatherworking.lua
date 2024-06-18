@@ -2,6 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local LEATHERWORKING_KNOWLEDGE = 2025;
+--local LEATHERWORKING_KNOWLEDGE_TWW = 2794;
 root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18884),	-- A Test of Scale IV
@@ -1403,6 +1404,27 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				--currency(LEATHERWORKING_KNOWLEDGE_TWW),
+			},
+		},{
+			--i(),	-- Leatherworking Designs
+			--q(, {	-- Inscription Order: Leatherworking
+			--	["name"] = "Inscription Order: Leatherworking",
+			--	["description"] = "Requires a crafting order from Inscription.",
+			--	["provider"] = { "i", xx },	-- xx Treatise on Leatherworking
+			--}),
+			q(83267, {	-- Weekly Leatherworking Knowledgepoint #1
+				["name"] = "Leatherworking Treasure #1",
+				["provider"] = { "i", 225223 },		-- Sturdy Nerubian Carapace
+			}),
+			q(83268, {	-- Weekly Leatherworking Knowledgepoint #2
+				["name"] = "Leatherworking Treasure #2",
+				["provider"] = { "i", 225222 },		-- Studded Leather Band
+			}),
+		})),
 	})),
 })));
 

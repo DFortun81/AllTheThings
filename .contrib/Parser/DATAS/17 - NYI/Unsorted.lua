@@ -1295,10 +1295,6 @@ root(ROOTS.Unsorted, {
 			i(218333),	-- Recruit's Sturdy Longblade
 			i(218334),	-- Recruit's Sturdy Saber
 			i(218335),	-- Recruit's Sturdy Crescent
-			i(218336),	-- Kaheti Swarm Chitin \\ Nerub Chitin
-			i(218337),	-- Honed Bone Shards
-			i(218338),	-- Bottled Storm
-			i(218339),	-- Burning Cinderbee Setae
 			i(218340),	-- Chest of Playtest Equipment
 			i(218341),	-- Shoulderguards of the Assembly \\ Shoulderguards of the Assembled
 			i(218342),	-- Shawl of the Assembly \\ Shawl of the Assembled
@@ -4258,17 +4254,6 @@ root(ROOTS.Unsorted, {
 			i(224659),	-- Secret-Woven Silk
 			i(224661),	-- Gem-Studded Signet
 			i(224662),	-- Gem-Studded Ring
-			i(224666),	-- Alighted Robes
-			i(224667),	-- Alighted Sandals
-			i(224668),	-- Alighted Handwraps
-			i(224670),	-- Alighted Leggings
-			i(224671),	-- Alighted Shoulderpads
-			i(224672),	-- Alighted Cord
-			i(224674),	-- Lockstitch Vest
-			i(224675),	-- Lockstitch Waders
-			i(224678),	-- Lockstitch Breeches
-			i(224679),	-- Lockstitch Epaulets
-			i(224680),	-- Lockstitch Sash
 			i(224682),	-- Chitinoid Chainmail
 			i(224683),	-- Chitinoid Striders
 			i(224684),	-- Chitinoid Grips
@@ -4277,12 +4262,6 @@ root(ROOTS.Unsorted, {
 			i(224687),	-- Chitinoid Shoulderguards
 			i(224688),	-- Chitinoid Belt
 			i(224689),	-- Chitinoid Bracers
-			i(224690),	-- Sedimentary Breastplate
-			i(224691),	-- Sedimentary Sabatons
-			i(224692),	-- Sedimentary Gauntlets
-			i(224694),	-- Sedimentary Legguards
-			i(224695),	-- Sedimentary Mantle
-			i(224696),	-- Sedimentary Girdle
 			i(224698),	-- Ancient Forged Shank
 			i(224699),	-- Ancient Forged Ritual Knife
 			i(224700),	-- Ancient Forged Cudgel
@@ -4901,7 +4880,6 @@ root(ROOTS.Unsorted, {
 			i(226156),	-- Really Big Candle
 			i(226160),	-- Hillhelm Farmhand's Hoe
 			i(226161),	-- Hillhelm Farmhand's Watering Can
-			i(226164),	-- Invitation: Grand Auction
 			i(226172),	-- Disturbance Detection Device
 			i(226173),	-- Boots of the First Embrace
 			i(226174),	-- Famished Bride's Clasp

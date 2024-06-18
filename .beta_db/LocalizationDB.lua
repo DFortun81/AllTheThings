@@ -6219,6 +6219,7 @@ _.ObjectNames = {
 	[412950] = "Moon-Blessed Claw",
 	[412995] = "Small Box of Vials",
 	[413126] = "Box of Artisanal Goods",
+	[413590] = "<span style=\"color: #0070dd\">Bountiful Coffer</span>",
 	[413774] = "The Legend of Elun'Ahir",
 	[413780] = "On the Nature of the Dream",
 	[413784] = "Self-Baking Herb Based Cookies",
