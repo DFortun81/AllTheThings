@@ -44,6 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2589, {	-- Goldie Baronbottom
 					["crs"] = { 218523 },	-- Goldie Baronbottom <BEE.E.O.>
 					["g"] = {
+						i(223102),	-- Pattern: Busy Bee's Buckle (RECIPE!)
 						i(221070),	-- "Azeroth's Greatest BEO" Cap
 						i(221198),	-- 85 Years Tenure Ring
 						i(221071),	-- Backbreaking Bootstrappers

@@ -18,15 +18,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 			}),
+			prof(ENCHANTING, {
+				n(219085, {	-- Nagad <Enchanting Trainer>
+					--["coord"] = { 44.8, 69.3, DORNOGAL }, Check These Coords
+					["g"] = TWW_ENCHANTING,
+				}),
+			}),
 			prof(HERBALISM, {
 				n(219101, {	-- Akdan <Herbalism Trainer>
 					["coord"] = { 44.8, 69.3, DORNOGAL },
 					["g"] = TWW_HERBALISM,
 				}),
 			}),
+			prof(INSCRIPTION, {
+				n(219090, {	-- Brrigan <Inscription Trainer>
+					--["coord"] = { 44.8, 69.3, DORNOGAL }, Check These Coords
+					["g"] = TWW_INSCRIPTION,
+				}),
+			}),
+			prof(LEATHERWORKING, {
+				n(219080, {	-- Marbb <Leatherworking Trainer>
+					--["coord"] = { 44.8, 69.3, DORNOGAL }, Check These Coords
+					["g"] = TWW_LEATHERWORKING,
+				}),
+			}),
 			prof(MINING, {
 				n(219097, {	-- Tarib <Mining Trainer>
-					["coord"] = { 49.2, 45.4, DORNOGAL },
+					--["coord"] = { 49.2, 45.4, DORNOGAL }, Check These Coords
 					["g"] = TWW_MINING,
 				}),
 			}),

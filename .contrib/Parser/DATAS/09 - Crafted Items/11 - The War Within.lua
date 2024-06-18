@@ -915,11 +915,70 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		filter(REAGENTS, {
 		}),
 	}),
+	--]]
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			filter(LEATHER, {
+				i(219502),	-- Adrenal Surge Clasp
+				i(217130),	-- Algari Competitor's Leather Belt
+				i(217126),	-- Algari Competitor's Leather Boots
+				i(217127),	-- Algari Competitor's Leather Chestpiece
+				i(217132),	-- Algari Competitor's Leather Gloves
+				i(217128),	-- Algari Competitor's Leather Mask
+				i(217129),	-- Algari Competitor's Leather Shoulderpads
+				i(217131),	-- Algari Competitor's Leather Trousers
+				i(217133),	-- Algari Competitor's Leather Wristwraps
+				i(219513),	-- Roiling Thunderstrike Talons
+				i(219511),	-- Rook Feather Wristwraps
+				i(219334),	-- Rune-Branded Armbands
+				i(219333),	-- Rune-Branded Grasps
+				i(219329),	-- Rune-Branded Hood
+				i(219327),	-- Rune-Branded Kickers
+				i(219332),	-- Rune-Branded Legwraps
+				i(219330),	-- Rune-Branded Mantle
+				i(219328),	-- Rune-Branded Tunic
+				i(219331),	-- Rune-Branded Waistband
+				i(219471),	-- Spelunker's Leather Bands
+				i(219470),	-- Spelunker's Leather Footpads
+				i(219472),	-- Spelunker's Leather Jerkin
+				i(219479),	-- Spelunker's Practiced Britches
+				i(219476),	-- Spelunker's Practiced Hat
+				i(219478),	-- Spelunker's Practiced Mitts
+				i(219480),	-- Spelunker's Practiced Sash
+				i(219477),	-- Spelunker's Practiced Shoulders
+				i(219489),	-- Waders of the Unifying Flame
+				i(219512),	-- Weathered Stormfront Vest
 			}),
 			filter(MAIL, {
+				i(217135),	-- Algari Competitor's Chain Chainmail
+				i(217136),	-- Algari Competitor's Chain Cowl
+				i(217141),	-- Algari Competitor's Chain Cuffs
+				i(217137),	-- Algari Competitor's Chain Epaulets
+				i(217140),	-- Algari Competitor's Chain Gauntlets
+				i(217138),	-- Algari Competitor's Chain Girdle
+				i(217139),	-- Algari Competitor's Chain Leggings
+				i(217134),	-- Algari Competitor's Chain Treads
+				i(219509),	-- Busy Bee's Buckle
+				i(219339),	-- Glyph-Etched Binding
+				i(219336),	-- Glyph-Etched Breastplate
+				i(219340),	-- Glyph-Etched Cuisses
+				i(219338),	-- Glyph-Etched Epaulets
+				i(219341),	-- Glyph-Etched Gauntlets
+				i(219337),	-- Glyph-Etched Guise
+				i(219335),	-- Glyph-Etched Stompers
+				i(219342),	-- Glyph-Etched Vambraces
+				i(219508),	-- Reinforced Setae Flyers
+				i(219492),	-- Sanctified Torchbearer's Grips
+				i(219507),	-- Smoldering Pollen Hauberk
+				i(219474),	-- Tracker's Chitin Cuffs
+				i(219473),	-- Tracker's Chitin Galoshes
+				i(219475),	-- Tracker's Chitin Hauberk
+				i(219485),	-- Tracker's Toughened Girdle
+				i(219483),	-- Tracker's Toughened Handguards
+				i(219481),	-- Tracker's Toughened Headgear
+				i(219484),	-- Tracker's Toughened Links
+				i(219482),	-- Tracker's Toughened Shoulderguards
+				i(219501),	-- Vambraces of Deepening Darkness
 			}),
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
@@ -927,15 +986,70 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		},{
 		})),
 		filter(MISC, {
+			i(219495),	-- Blessed Weapon Grip+
+			i(219496),	-- Blessed Weapon Grip++
+			i(219497),	-- Blessed Weapon Grip+++
+			i(219906),	-- Defender's Armor Kit+
+			i(219907),	-- Defender's Armor Kit++
+			i(219908),	-- Defender's Armor Kit+++
+			i(219912),	-- Dual Layered Armor Kit+
+			i(219913),	-- Dual Layered Armor Kit++
+			i(219914),	-- Dual Layered Armor Kit+++
+			i(219909),	-- Stormbound Armor Kit+
+			i(219910),	-- Stormbound Armor Kit++
+			i(219911),	-- Stormbound Armor Kit+++
+			i(219905),	-- Thunderous Drums
+			i(219504),	-- Writhing Armor Banding+
+			i(219505),	-- Writhing Armor Banding++
+			i(219506),	-- Writhing Armor Banding+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
+			i(219866),	-- Apothecary's Cap
+			i(219871),	-- Arathi Leatherworker's Smock
+			i(219870),	-- Charged Scrapmaster's Gauntlets
+			i(219869),	-- Deep Tracker's Cap
+			i(219868),	-- Deep Tracker's Pack
+			i(219874),	-- Earthen Forgemaster's Apron
+			i(219876),	-- Earthen Jeweler's Cover
+			i(219861),	-- Gardener's Basket
+			i(219875),	-- Gemcutter's Apron
+			i(219863),	-- Hideseeker's Hat
+			i(219862),	-- Hideseeker's Pack
+			i(219865),	-- Hideshaper's Cover
+			i(219872),	-- Nerubian Alchemist's Hat
+			i(219864),	-- Scrapsmith's Gloves
+			i(219873),	-- Steelsmith's Apron
+			i(219867),	-- Stonebound Herbalist's Pack
 		}),
 		filter(REAGENTS, {
+			i(219880),	-- Carapace-Backed Hide+
+			i(219881),	-- Carapace-Backed Hide++
+			i(219882),	-- Carapace-Backed Hide+++
+			i(219898),	-- Chitin Armor Banding+
+			i(219899),	-- Chitin Armor Banding++
+			i(219900),	-- Chitin Armor Banding+++
+			i(219883),	-- Crystalfused Hide+
+			i(219884),	-- Crystalfused Hide++
+			i(219885),	-- Crystalfused Hide+++
+			i(219895),	-- Deepfury Hide+
+			i(219896),	-- Deepfury Hide++
+			i(219897),	-- Deepfury Hide+++
+			i(219892),	-- Leyfused Hide+
+			i(219893),	-- Leyfused Hide++
+			i(219894),	-- Leyfused Hide+++
+			i(219889),	-- Sporecoated Hide+
+			i(219890),	-- Sporecoated Hide++
+			i(219891),	-- Sporecoated Hide+++
+			i(219901),	-- Storm-Touched Weapon Wrap+
+			i(219902),	-- Storm-Touched Weapon Wrap++
+			i(219903),	-- Storm-Touched Weapon Wrap+++
+			i(219886),	-- Writhing Hide+
+			i(219887),	-- Writhing Hide++
+			i(219888),	-- Writhing Hide+++
 		}),
 		n(WEAPONS, {
 		}),
 	}),
-	--]]
 	prof(MINING, {
 		spell(2575, {	-- Mining
 			i(210933),	-- Aqirite+

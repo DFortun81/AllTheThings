@@ -2371,3 +2371,101 @@ i(211590, 430057);	-- Draconic Combatant's Resilient Mask
 i(211593, 430060);	-- Draconic Combatant's Resilient Shoulderpads
 i(211592, 430059);	-- Draconic Combatant's Resilient Trousers
 i(211596, 430063);	-- Draconic Combatant's Resilient Wristwraps
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+--- TRAINER ---
+i(0, 423340);		-- Khaz Algar Leatherworking
+i(0, 425142);		-- Recraft Equipment
+i(0, 444105);		-- Apothecary's Cap
+i(0, 444075);		-- Carapace-Backed Hide
+i(0, 444086);		-- Chitin Armor Banding
+i(0, 444076);		-- Crystalfused Hide
+i(0, 444085);		-- Deepfury Hide
+i(0, 444104);		-- Dual Layered Armor Kit
+i(0, 444112);		-- Gardener's Basket
+i(0, 444114);		-- Gemcutter's Apron
+i(0, 444120);		-- Hideseeker's Hat
+i(0, 444118);		-- Hideseeker's Pack
+i(0, 444116);		-- Hideshaper's Cover
+i(0, 444079);		-- Leyfused Hide
+i(0, 444110);		-- Scrapsmith's Gloves
+i(0, 443702);		-- Spelunker's Leather Bands
+i(0, 443696);		-- Spelunker's Leather Footpads
+i(0, 443695);		-- Spelunker's Leather Jerkin
+i(0, 443699);		-- Spelunker's Practiced Britches
+i(0, 443698);		-- Spelunker's Practiced Hat
+i(0, 443697);		-- Spelunker's Practiced Mitts
+i(0, 443701);		-- Spelunker's Practiced Sash
+i(0, 443700);		-- Spelunker's Practiced Shoulders
+i(0, 444078);		-- Sporecoated Hide
+i(0, 444107);		-- Steelsmith's Apron
+i(0, 444087);		-- Storm-Touched Weapon Wrap
+i(0, 444122);		-- Thunderous Drums
+i(0, 443710);		-- Tracker's Chitin Cuffs
+i(0, 443704);		-- Tracker's Chitin Galoshes
+i(0, 443703);		-- Tracker's Chitin Hauberk
+i(0, 443709);		-- Tracker's Toughened Girdle
+i(0, 443705);		-- Tracker's Toughened Handguards
+i(0, 443706);		-- Tracker's Toughened Headgear
+i(0, 443707);		-- Tracker's Toughened Links
+i(0, 443708);		-- Tracker's Toughened Shoulderguards
+i(0, 444077);		-- Writhing Hide
+--- ITEM ---
+i(223097, 444070);	-- Adrenal Surge Clasp
+i(225452, 438907);	-- Algari Competitor's Chain Chainmail
+i(225453, 438908);	-- Algari Competitor's Chain Cowl
+i(225458, 438913);	-- Algari Competitor's Chain Cuffs
+i(225454, 438909);	-- Algari Competitor's Chain Epaulets
+i(225457, 438912);	-- Algari Competitor's Chain Gauntlets
+i(225455, 438910);	-- Algari Competitor's Chain Girdle
+i(225456, 438911);	-- Algari Competitor's Chain Leggings
+i(225451, 438906);	-- Algari Competitor's Chain Treads
+i(225447, 438902);	-- Algari Competitor's Leather Belt
+i(225443, 438898);	-- Algari Competitor's Leather Boots
+i(225444, 438899);	-- Algari Competitor's Leather Chestpiece
+i(225449, 438904);	-- Algari Competitor's Leather Gloves
+i(225445, 438900);	-- Algari Competitor's Leather Mask
+i(225446, 438901);	-- Algari Competitor's Leather Shoulderpads
+i(225448, 438903);	-- Algari Competitor's Leather Trousers
+i(225450, 438905);	-- Algari Competitor's Leather Wristwraps
+i(223110, 444117);	-- Arathi Leatherworker's Smock
+i(223102, 443958);	-- Busy Bee's Buckle
+i(223107, 444111);	-- Charged Scrapmaster's Gauntlets
+i(223111, 444121);	-- Deep Tracker's Cap
+i(223112, 444119);	-- Deep Tracker's Pack
+i(223106, 444108);	-- Earthen Forgemaster's Apron
+i(223109, 444115);	-- Earthen Jeweler's Cover
+i(223105, 444106);	-- Nerubian Alchemist's Hat
+i(223096, 443950);	-- Roiling Thunderstrike Talons
+i(223108, 444113);	-- Stonebound Herbalist's Pack
+--- SPECIALIZATION ---
+i(0, 441460);		-- Blessed Weapon Grip
+i(0, 441065);		-- Glyph-Etched Binding
+i(0, 441059);		-- Glyph-Etched Breastplate
+i(0, 441063);		-- Glyph-Etched Cuisses
+i(0, 441064);		-- Glyph-Etched Epaulets
+i(0, 441061);		-- Glyph-Etched Gauntlets
+i(0, 441062);		-- Glyph-Etched Guise
+i(0, 441060);		-- Glyph-Etched Stompers
+i(0, 441066);		-- Glyph-Etched Vambraces
+i(0, 441058);		-- Rune-Branded Armbands
+i(0, 441053);		-- Rune-Branded Grasps
+i(0, 441054);		-- Rune-Branded Hood
+i(0, 441052);		-- Rune-Branded Kickers
+i(0, 441055);		-- Rune-Branded Legwraps
+i(0, 441056);		-- Rune-Branded Mantle
+i(0, 441051);		-- Rune-Branded Tunic
+i(0, 441057);		-- Rune-Branded Waistband
+i(0, 441461);		-- Writhing Armor Banding
+--- UNKNOWN ---
+i(223104, 444103);	-- Defender's Armor Kit
+i(223101, 443960);	-- Reinforced Setae Flyers
+i(223095, 443949);	-- Rook Feather Wristwraps
+i(223099, 444073);	-- Sanctified Torchbearer's Grips
+i(0, 443961);		-- Smoldering Pollen Hauberk
+i(223103, 444102);	-- Stormbound Armor Kit
+i(223100, 444068);	-- Vambraces of Deepening Darkness
+i(223098, 444071);	-- Waders of the Unifying Flame
+i(0, 443951);		-- Weathered Stormfront Vest

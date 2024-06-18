@@ -394,22 +394,13 @@ root(ROOTS.Unsorted, {
 					i(217115),	-- Cubic Blasphemia
 				}),
 				prof(LEATHERWORKING, {
-					i(217126),	-- Algari Competitor's Leather Boots \\ Vicious Competitor's Leather Boots
-					i(217127),	-- Algari Competitor's Leather Chestpiece \\ Vicious Competitor's Leather Chestpiece
-					i(217128),	-- Algari Competitor's Leather Mask \\ Vicious Competitor's Leather Mask
-					i(217129),	-- Algari Competitor's Leather Shoulderpads \\ Vicious Competitor's Leather Shoulderpads
-					i(217130),	-- Algari Competitor's Leather Belt \\ Vicious Competitor's Leather Belt
-					i(217131),	-- Algari Competitor's Leather Trousers \\ Vicious Competitor's Leather Trousers
-					i(217132),	-- Algari Competitor's Leather Gloves \\ Vicious Competitor's Leather Gloves
-					i(217133),	-- Algari Competitor's Leather Wristwraps \\ Vicious Competitor's Leather Wristwraps
-					i(217134),	-- Algari Competitor's Chain Treads \\ Vicious Competitor's Chain Treads
-					i(217135),	-- Algari Competitor's Chain Chainmail \\ Vicious Competitor's Chain Chainmail
-					i(217136),	-- Algari Competitor's Chain Cowl \\ Vicious Competitor's Chain Cowl
-					i(217137),	-- Algari Competitor's Chain Epaulets \\ Vicious Competitor's Chain Epaulets
-					i(217138),	-- Algari Competitor's Chain Girdle \\ Vicious Competitor's Chain Girdle
-					i(217139),	-- Algari Competitor's Chain Leggings \\ Vicious Competitor's Chain Leggings
-					i(217140),	-- Algari Competitor's Chain Gauntlets \\ Vicious Competitor's Chain Gauntlets
-					i(217141),	-- Algari Competitor's Chain Cuffs \\ Vicious Competitor's Chain Cuffs
+					i(223104),	-- Pattern: Defender's Armor Kit (RECIPE!)
+					i(223101),	-- Pattern: Reinforced Setae Flyers (RECIPE!)
+					i(223095),	-- Pattern: Rook Feather Wristwraps (RECIPE!)
+					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
+					i(223103),	-- Pattern: Stormbound Armor Kit (RECIPE!)
+					i(223100),	-- Pattern: Vambraces of Deepening Darkness (RECIPE!)
+					i(223098),	-- Pattern: Waders of the Unifying Flame (RECIPE!)
 				}),
 				prof(MINING, {
 					i(217707),	-- Imperfect Null Stone
@@ -2102,22 +2093,6 @@ root(ROOTS.Unsorted, {
 			i(219323),	-- Gelatinous Unguent
 			i(219324),	-- Roiling Elixir
 			i(219325),	-- Band of Radiant Echoes
-			i(219327),	-- Rune-Branded Kickers
-			i(219328),	-- Rune-Branded Tunic
-			i(219329),	-- Rune-Branded Hood
-			i(219330),	-- Rune-Branded Mantle
-			i(219331),	-- Rune-Branded Waistband
-			i(219332),	-- Rune-Branded Legwraps
-			i(219333),	-- Rune-Branded Grasps
-			i(219334),	-- Rune-Branded Armbands
-			i(219335),	-- Glyph-Etched Stompers
-			i(219336),	-- Glyph-Etched Breastplate
-			i(219337),	-- Glyph-Etched Guise
-			i(219338),	-- Glyph-Etched Epaulets
-			i(219339),	-- Glyph-Etched Binding
-			i(219340),	-- Glyph-Etched Cuisses
-			i(219341),	-- Glyph-Etched Gauntlets
-			i(219342),	-- Glyph-Etched Vambraces
 			i(219346),	-- Camp Supplies
 			i(219350),	-- Maddening Manifest
 			i(219351),	-- Mana-Lined Slab Slicer
@@ -2178,40 +2153,8 @@ root(ROOTS.Unsorted, {
 			i(219465),	-- Earthen Traveler's Crossbow
 			i(219467),	-- Earthen Traveler's Fist \\ Earthen Traveler's Fist Weapon
 			i(219469),	-- Fog Beast Tracker
-			i(219470),	-- Spelunker's Leather Footpads
-			i(219471),	-- Spelunker's Leather Bands
-			i(219472),	-- Spelunker's Leather Jerkin
-			i(219473),	-- Tracker's Chitin Galoshes
-			i(219474),	-- Tracker's Chitin Cuffs
-			i(219475),	-- Tracker's Chitin Hauberk
-			i(219476),	-- Spelunker's Practiced Hat
-			i(219477),	-- Spelunker's Practiced Shoulders
-			i(219478),	-- Spelunker's Practiced Mitts
-			i(219479),	-- Spelunker's Practiced Britches
-			i(219480),	-- Spelunker's Practiced Sash
-			i(219481),	-- Tracker's Toughened Headgear
-			i(219482),	-- Tracker's Toughened Shoulderguards
-			i(219483),	-- Tracker's Toughened Handguards
-			i(219484),	-- Tracker's Toughened Links
-			i(219485),	-- Tracker's Toughened Girdle
-			i(219489),	-- Waders of the Unifying Flame
-			i(219492),	-- Sanctified Torchbearer's Grips
 			i(219494),	-- Ritual Flame
-			i(219495),	-- Blessed Weapon Grip
-			i(219496),	-- Blessed Weapon Grip
-			i(219497),	-- Blessed Weapon Grip
 			i(219500),	-- Fang Adornments
-			i(219501),	-- Vambraces of Deepening Darkness
-			i(219502),	-- Adrenal Surge Clasp
-			i(219504),	-- Writhing Armor Banding
-			i(219505),	-- Writhing Armor Banding
-			i(219506),	-- Writhing Armor Banding
-			i(219507),	-- Smoldering Pollen Hauberk
-			i(219508),	-- Reinforced Setae Flyers
-			i(219509),	-- Busy Bee's Buckle
-			i(219511),	-- Rook Feather Wristwraps
-			i(219512),	-- Weathered Stormfront Vest
-			i(219513),	-- Roiling Thunderstrike Talons
 			i(219522),	-- Radiant Fuel Crystal
 			i(219676),	-- Common Fish A
 			i(219677),	-- Common Fish B
@@ -2293,57 +2236,7 @@ root(ROOTS.Unsorted, {
 			i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
 			i(219804),	-- [DNT] Antiparalytic Serum
 			i(219808),	-- Ethereal Sugar
-			i(219861),	-- Gardener's Basket
-			i(219862),	-- Hideseeker's Pack
-			i(219863),	-- Hideseeker's Hat
-			i(219864),	-- Scrapsmith's Gloves
-			i(219865),	-- Hideshaper's Cover
-			i(219866),	-- Apothecary's Cap
-			i(219867),	-- Stonebound Herbalist's Pack
-			i(219868),	-- Deep Tracker's Pack
-			i(219869),	-- Deep Tracker's Cap
-			i(219870),	-- Charged Scrapmaster's Gauntlets
-			i(219871),	-- Arathi Leatherworker's Smock
-			i(219872),	-- Nerubian Alchemist's Hat
-			i(219873),	-- Steelsmith's Apron
-			i(219874),	-- Earthen Forgemaster's Apron
-			i(219875),	-- Gemcutter's Apron
-			i(219876),	-- Earthen Jeweler's Cover
 			i(219877),	-- Void Reaper's Warp Blade
-			i(219880),	-- Carapace-Backed Hide
-			i(219881),	-- Carapace-Backed Hide
-			i(219882),	-- Carapace-Backed Hide
-			i(219883),	-- Crystalfused Hide
-			i(219884),	-- Crystalfused Hide
-			i(219885),	-- Crystalfused Hide
-			i(219886),	-- Writhing Hide
-			i(219887),	-- Writhing Hide
-			i(219888),	-- Writhing Hide
-			i(219889),	-- Sporecoated Hide
-			i(219890),	-- Sporecoated Hide
-			i(219891),	-- Sporecoated Hide
-			i(219892),	-- Leyfused Hide
-			i(219893),	-- Leyfused Hide
-			i(219894),	-- Leyfused Hide
-			i(219895),	-- Deepfury Hide
-			i(219896),	-- Deepfury Hide
-			i(219897),	-- Deepfury Hide
-			i(219898),	-- Chitin Armor Banding
-			i(219899),	-- Chitin Armor Banding
-			i(219900),	-- Chitin Armor Banding
-			i(219901),	-- Storm-Touched Weapon Wrap
-			i(219902),	-- Storm-Touched Weapon Wrap
-			i(219903),	-- Storm-Touched Weapon Wrap
-			i(219905),	-- Thunderous Drums
-			i(219906),	-- Defender's Armor Kit
-			i(219907),	-- Defender's Armor Kit
-			i(219908),	-- Defender's Armor Kit
-			i(219909),	-- Stormbound Armor Kit
-			i(219910),	-- Stormbound Armor Kit
-			i(219911),	-- Stormbound Armor Kit
-			i(219912),	-- Dual Layered Armor Kit
-			i(219913),	-- Dual Layered Armor Kit
-			i(219914),	-- Dual Layered Armor Kit
 			i(219915),	-- Foul Behemoth's Chelicera
 			i(219916),	-- Bronzebeard Family Compass
 			i(219917),	-- Creeping Coagulum
@@ -3692,24 +3585,6 @@ root(ROOTS.Unsorted, {
 			i(223092),	-- Design: Inscription T2 Glasses (DNT) \\ Pattern: Inscription Bag
 			i(223093),	-- Design: Beautification Iris \\ Pattern: Herbalism Bag
 			i(223094),	-- Design: Magnificent Jeweler's Setting \\ Pattern: Mining Bag
-			i(223095),	-- Pattern: Rook Feather Wristwraps \\ Pattern: Jewelcrafting Bag
-			i(223096),	-- Pattern: Roiling Thunderstrike Talons \\ Pattern: Dawnthread Lining
-			i(223097),	-- Pattern: Adrenal Surge Clasp \\ Pattern: Duskthread Lining
-			i(223098),	-- Pattern: Waders of the Unifying Flame \\ Pattern: Reinforced Wrap Kit
-			i(223099),	-- Pattern: Sanctified Torchbearer's Grips \\ Pattern: Weaverthread Parachute Kit
-			i(223100),	-- Pattern: Vambraces of Deepening Darkness
-			i(223101),	-- Pattern: Reinforced Setae Flyers
-			i(223102),	-- Pattern: Busy Bee's Buckle
-			i(223103),	-- Pattern: Stormbound Armor Kit
-			i(223104),	-- Pattern: Defender's Armor Kit
-			i(223105),	-- Pattern: Nerubian Alchemist's Hat
-			i(223106),	-- Pattern: Earthen Forgemaster's Apron
-			i(223107),	-- Pattern: Charged Scrapmaster's Gauntlets
-			i(223108),	-- Pattern: Stonebound Herbalist's Pack
-			i(223109),	-- Pattern: Earthen Jeweler's Cover
-			i(223110),	-- Pattern: Arathi Leatherworker's Smock
-			i(223111),	-- Pattern: Deep Tracker's Cap
-			i(223112),	-- Pattern: Deep Tracker's Pack
 			i(223152),	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
 			i(223154),	-- [PH] Firebee Mount (White Skin, White Saddle)
 			i(223157),	-- Blacksmith's Breastplate
@@ -4496,22 +4371,6 @@ root(ROOTS.Unsorted, {
 			i(225440),	-- Pattern: Algari Competitor's Cloth Tunic \\ Pattern: Vicious Competitor's Cloth Tunic
 			i(225441),	-- Pattern: Algari Competitor's Cloth Sash \\ Pattern: Vicious Competitor's Cloth Sash
 			i(225442),	-- Pattern: Algari Competitor's Cloth Cloak \\ Pattern: Vicious Competitor's Cloth Cloak
-			i(225443),	-- Pattern: Algari Competitor's Leather Boots \\ Pattern: Vicious Competitor's Leather Boots
-			i(225444),	-- Pattern: Algari Competitor's Leather Chestpiece \\ Pattern: Vicious Competitor's Leather Chestpiece
-			i(225445),	-- Pattern: Algari Competitor's Leather Mask \\ Pattern: Vicious Competitor's Leather Mask
-			i(225446),	-- Pattern: Algari Competitor's Leather Shoulderpads \\ Pattern: Vicious Competitor's Leather Shoulderpads
-			i(225447),	-- Pattern: Algari Competitor's Leather Belt \\ Pattern: Vicious Competitor's Leather Belt
-			i(225448),	-- Pattern: Algari Competitor's Leather Trousers \\ Pattern: Vicious Competitor's Leather Trousers
-			i(225449),	-- Pattern: Algari Competitor's Leather Gloves \\ Pattern: Vicious Competitor's Leather Gloves
-			i(225450),	-- Pattern: Algari Competitor's Leather Wristwraps \\ Pattern: Vicious Competitor's Leather Wristwraps
-			i(225451),	-- Pattern: Algari Competitor's Chain Treads \\ Pattern: Vicious Competitor's Chain Treads
-			i(225452),	-- Pattern: Algari Competitor's Chain Chainmail \\ Pattern: Vicious Competitor's Chain Chainmail
-			i(225453),	-- Pattern: Algari Competitor's Chain Cowl \\ Pattern: Vicious Competitor's Chain Cowl
-			i(225454),	-- Pattern: Algari Competitor's Chain Epaulets \\ Pattern: Vicious Competitor's Chain Epaulets
-			i(225455),	-- Pattern: Algari Competitor's Chain Girdle \\ Pattern: Vicious Competitor's Chain Girdle
-			i(225456),	-- Pattern: Algari Competitor's Chain Leggings \\ Pattern: Vicious Competitor's Chain Leggings
-			i(225457),	-- Pattern: Algari Competitor's Chain Gauntlets \\ Pattern: Vicious Competitor's Chain Gauntlets
-			i(225458),	-- Pattern: Algari Competitor's Chain Cuffs \\ Pattern: Vicious Competitor's Chain Cuffs
 			i(225459),	-- Plans: Algari Competitor's Plate Breastplate \\ Plans: Vicious Competitor's Plate Breastplate
 			i(225460),	-- Plans: Algari Competitor's Plate Sabatons \\ Plans: Vicious Competitor's Plate Sabatons
 			i(225461),	-- Plans: Algari Competitor's Plate Gauntlets \\ Plans: Vicious Competitor's Plate Gauntlets

@@ -1,8 +1,8 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local LEATHERWORKING_KNOWLEDGE = 2025;
---local LEATHERWORKING_KNOWLEDGE_TWW = 2794;
+local DF_LEATHERWORKING_KNOWLEDGE = 2025;
+local TWW_LEATHERWORKING_KNOWLEDGE = 2792;
 root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18884),	-- A Test of Scale IV
@@ -1175,7 +1175,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", LEATHERWORKING_KNOWLEDGE, 1 }} }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", DF_LEATHERWORKING_KNOWLEDGE, 1 }} }, {
 				r(375125),	-- Bow of the Dragon Hunters
 				r(375159),	-- Fang Adornments
 				r(375123),	-- Flame-Touched Chain
@@ -1297,7 +1297,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				currency(LEATHERWORKING_KNOWLEDGE),
+				currency(DF_LEATHERWORKING_KNOWLEDGE),
 			},
 		},{
 			i(198613),	-- Leatherworking Designs
@@ -1346,68 +1346,91 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TWW_LEATHERWORKING_KNOWLEDGE, 1 }} }, {
+				r(441460),	-- Blessed Weapon Grip
+				r(441065),	-- Glyph-Etched Binding
+				r(441059),	-- Glyph-Etched Breastplate
+				r(441063),	-- Glyph-Etched Cuisses
+				r(441064),	-- Glyph-Etched Epaulets
+				r(441061),	-- Glyph-Etched Gauntlets
+				r(441062),	-- Glyph-Etched Guise
+				r(441060),	-- Glyph-Etched Stompers
+				r(441066),	-- Glyph-Etched Vambraces
+				r(441058),	-- Rune-Branded Armbands
+				r(441053),	-- Rune-Branded Grasps
+				r(441054),	-- Rune-Branded Hood
+				r(441052),	-- Rune-Branded Kickers
+				r(441055),	-- Rune-Branded Legwraps
+				r(441056),	-- Rune-Branded Mantle
+				r(441051),	-- Rune-Branded Tunic
+				r(441057),	-- Rune-Branded Waistband
+				r(441461),	-- Writhing Armor Banding
+			}),
+		}),
 		n(TREASURES, {
 			o(455965, {	-- Arathi Beveler Set
 				["coord"] = { 47.5, 65.1, HALLOWFALL },
 				["questID"] = 83902,
 				["g"] = {
-					i(226328), -- Arathi Beveler Set
+					i(226328),	-- Arathi Beveler Set
 				},
 			}),
 			o(455964, {	-- Arathi Leather Burnisher
 				["coord"] = { 41.5, 57.8, HALLOWFALL },
 				["questID"] = 83903,
 				["g"] = {
-					i(226329), -- Arathi Leather Burnisher
+					i(226329),	-- Arathi Leather Burnisher
 				},
 			}),
 			o(455962, {	-- Curved Nerubian Skinning Knife
 				["coord"] = { 60.2, 57.5, AZJ_KAHET },
 				["questID"] = 83905,
 				["g"] = {
-					i(226331), -- Curved Nerubian Skinning Knife
+					i(226331),	-- Curved Nerubian Skinning Knife
 				},
 			}),
 			o(455968, {	-- Dornogal Craftsman's Flat Knife
 				["coord"] = { 47.3, 28.3, THE_RINGING_DEEPS },
 				["questID"] = 83899,
 				["g"] = {
-					i(226325), -- Dornogal Craftsman's Flat Knife
+					i(226325),	-- Dornogal Craftsman's Flat Knife
 				},
 			}),
 			o(455966, {	-- Earthen Awl
 				["coord"] = { 64.3, 66.3, THE_RINGING_DEEPS },
 				["questID"] = 83901,
 				["g"] = {
-					i(226327), -- Earthen Awl
+					i(226327),	-- Earthen Awl
 				},
 			}),
 			o(455969, {	-- Earthen Lacing Tools
 				["coord"] = { 54.3, 59.6, DORNOGAL },
 				["questID"] = 83898,
 				["g"] = {
-					i(226324), -- Earthen Lacing Tools
+					i(226324),	-- Earthen Lacing Tools
 				},
 			}),
 			o(455963, {	-- Nerubian Tanning Mallet
 				["coord"] = { 55.0, 27.0, 2213 },
 				["questID"] = 83904,
 				["g"] = {
-					i(226330), -- Nerubian Tanning Mallet
+					i(226330),	-- Nerubian Tanning Mallet
 				},
 			}),
 			o(455967, {	-- Underground Stropping Compound
 				["coord"] = { 47.1, 34.9, THE_RINGING_DEEPS },
 				["questID"] = 83900,
 				["g"] = {
-					i(226326), -- Underground Stropping Compound
+					i(226326),	-- Underground Stropping Compound
 				},
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				--currency(LEATHERWORKING_KNOWLEDGE_TWW),
+				currency(TWW_LEATHERWORKING_KNOWLEDGE),
 			},
 		},{
 			--i(),	-- Leatherworking Designs

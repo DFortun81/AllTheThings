@@ -42,6 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2568, {	-- Voidstone Monstrosity
 					["crs"] = { 207207 },	-- Voidstone Monstrosity
 					["g"] = {
+						i(223096),	-- Pattern: Roiling Thunderstrike Talons (RECIPE!)
 						i(221048),	-- Amice of Oblivion
 						i(221050),	-- Ancient Hardened Legwraps
 						i(221046),	-- Behemoth Kneebender

@@ -196,6 +196,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(225995, {	-- Pattern: Skinning Bag (RECIPE!)
 						["cost"] = {{"c", 3056, 1500}},	--- Kej x1500
 					}),
+					i(223111, {	-- Pattern: Deep Tracker's Cap (RECIPE!)
+						["cost"] = {
+							{"i", ARTISANS_ACUITY, 150},
+							{"c", 3056, 1500},	--- Kej x1500
+						},
+					}),
+					i(223112, {	-- Pattern: Deep Tracker's Pack (RECIPE!)
+						["cost"] = {
+							{"i", ARTISANS_ACUITY, 150},
+							{"c", 3056, 1500},	--- Kej x1500
+						},
+					}),
+					i(223105, {	-- Pattern: Nerubian Alchemist's Hat (RECIPE!)
+						["cost"] = {
+							{"i", ARTISANS_ACUITY, 150},
+							{"c", 3056, 1500},	--- Kej x1500
+						},
+					}),
 				},
 			}),
 			n(218176, {	-- Nuel Prill <Inscription Supplies>

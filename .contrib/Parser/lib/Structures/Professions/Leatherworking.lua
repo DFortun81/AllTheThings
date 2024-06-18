@@ -1275,3 +1275,54 @@ DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = 
 		r(375102),	-- Bonewrought Crossbow
 	}),
 }));
+
+TWW_LEATHERWORKING = sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	r(423340),	-- Khaz Algar Leatherworking
+	r(425142),	-- Recraft Equipment
+	n(ARMOR, {
+		filter(LEATHER, {
+			r(443702),	-- Spelunker's Leather Bands
+			r(443696),	-- Spelunker's Leather Footpads
+			r(443695),	-- Spelunker's Leather Jerkin
+			r(443699),	-- Spelunker's Practiced Britches
+			r(443698),	-- Spelunker's Practiced Hat
+			r(443697),	-- Spelunker's Practiced Mitts
+			r(443701),	-- Spelunker's Practiced Sash
+			r(443700),	-- Spelunker's Practiced Shoulders
+		}),
+		filter(MAIL, {
+			r(443710),	-- Tracker's Chitin Cuffs
+			r(443704),	-- Tracker's Chitin Galoshes
+			r(443703),	-- Tracker's Chitin Hauberk
+			r(443709),	-- Tracker's Toughened Girdle
+			r(443705),	-- Tracker's Toughened Handguards
+			r(443706),	-- Tracker's Toughened Headgear
+			r(443707),	-- Tracker's Toughened Links
+			r(443708),	-- Tracker's Toughened Shoulderguards
+		}),
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(444105),	-- Apothecary's Cap
+		r(444112),	-- Gardener's Basket
+		r(444114),	-- Gemcutter's Apron
+		r(444120),	-- Hideseeker's Hat
+		r(444118),	-- Hideseeker's Pack
+		r(444116),	-- Hideshaper's Cover
+		r(444110),	-- Scrapsmith's Gloves
+		r(444107),	-- Steelsmith's Apron
+	}),
+	filter(MISC, {
+		r(444104),	-- Dual Layered Armor Kit
+		r(444122),	-- Thunderous Drums
+	}),
+	filter(REAGENTS, {
+		r(444075),	-- Carapace-Backed Hide
+		r(444086),	-- Chitin Armor Banding
+		r(444076),	-- Crystalfused Hide
+		r(444085),	-- Deepfury Hide
+		r(444079),	-- Leyfused Hide
+		r(444078),	-- Sporecoated Hide
+		r(444087),	-- Storm-Touched Weapon Wrap
+		r(444077),	-- Writhing Hide
+	}),
+});

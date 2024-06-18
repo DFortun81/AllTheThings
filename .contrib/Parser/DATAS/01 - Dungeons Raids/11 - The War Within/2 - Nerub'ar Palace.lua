@@ -29,6 +29,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 		},
 		["g"] = {
 		i(223144),	-- Formula: Enchant Weapon - Authority of the Depths (RECIPE!) (QUEEEEEN)
+		i(223097),	-- Pattern: Adrenal Surge Clasp (RECIPE!) (SIKRAN)
 		},
 	}),
 })));

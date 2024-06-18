@@ -22,6 +22,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223124, {	-- Formula: Runed Null Stone Rod (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
+					i(223110, {	-- Pattern: Arathi Leatherworker's Smock (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223107, {	-- Pattern: Charged Scrapmaster's Gauntlets (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223106, {	-- Pattern: Earthen Forgemaster's Apron (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223109, {	-- Pattern: Earthen Jeweler's Cover (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223108, {	-- Pattern: Stonebound Herbalist's Pack (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
 					i(223068, {	-- Technique: Algari Missive of Crafting Speed (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
