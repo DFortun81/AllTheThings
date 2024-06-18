@@ -1024,6 +1024,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(83410, 216031),	-- Skinning Abyssal Devourer
 			FirstSkin(83411, 214151),	-- Skinning Ahg'zagall
 			FirstSkin(81450, 219264),	-- Skinning Bloodmaw
+			FirstSkin(83414, 216042),	-- Skinning Cha'tak
 			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
 			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
 			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler

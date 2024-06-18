@@ -21,6 +21,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82448, {	-- Book It to the Library
 					["coord"] = { 25.5, 59.1, ISLE_OF_DORN },
 				}),
+				q(81854, {	-- Coreway Maintenance Request
+					["coord"] = { 31.6, 59.3, DORNOGAL },
+				}),
 				q(82658, {	-- Drop and Go
 					--["coord"] = { 45.2, 65.0, ISLE_OF_DORN },	-- could be wrong, all Isle of Dorn missing quest zone highlights
 					["g"] = {

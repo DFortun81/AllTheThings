@@ -101,7 +101,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					{ 62.7, 43.6, AZJ_KAHET },	-- Mid
 					{ 68.7, 54.8, AZJ_KAHET },	-- End
 				},
-				["questID"] = 81702,	-- in addition 84071
+				["questID"] = 81702,	-- in addition 84071 (84071 didn't fire on secodn kill / on 80s)
+				["g"] = {
+					i(221206),	-- Reinforced Chitin Chestpiece
+				},
 			}),
 			n(216034, {	-- XT-Minecrusher 8700
 				["coord"] = { 75.4, 61.0, AZJ_KAHET },
@@ -133,6 +136,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 81634,	-- in addition 84069
 				["g"] = {
 					--
+				},
+			}),
+			n(216042, {	-- Cha'tak
+				["coord"] = { 70.0, 27.7, AZJ_KAHET },
+				["questID"] = 81704,	-- in addition 84073
+				["g"] = {
+					i(221212),	-- Death Burrower Handguards
 				},
 			}),
 		})),

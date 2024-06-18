@@ -22,6 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 216149 },	-- Moira Thaurissan
 				["coord"] = { 36.1, 80.3, DORNOGAL },
 				["g"] = {
+					--crit 'Complete the Khaz-Algar main story campaign' for achievementID 40725 (War Within Delves: Endgame)
 					--spell(434027),	-- Adventure Mode
 				},
 			}),
@@ -32,31 +33,163 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 35.9, 81.5, DORNOGAL },
 				["g"] = {
 					i(223549),	-- Algari Greatsword
+					i(223547),	-- Algari Heavy Staff
 					i(223564),	-- Algari Short Axe
 					i(223546),	-- Algari Spear
 				},
 			}),
-			--q(79328, {	-- Embassies and Envoys [H]
+			q(79328, {	-- Embassies and Envoys [H]
 			--	["sourceQuests"] = { 79333 },	-- The Fleet Arrives
 			--	["provider"] = { "n", xx },	-- xx
 			--	["races"] = HORDE_ONLY,
 			--	["coord"] = { x, y, DORNOGAL },
 			--	["g"] = {
 			--		i(223549),	-- Algari Greatsword
+			--		i(223547),	-- Algari Heavy Staff
 			--		i(223564),	-- Algari Short Axe
 			--		i(223546),	-- Algari Spear
 			--	},
-			--}),
+			}),
 			q(83271, {	-- There's Always Another Secret
 				["sourceQuests"] = {
-					82153,	-- Embassies and Envoys
-					--xx,	-- horde quest? 79328?
+					82153,	-- Embassies and Envoys [A]
+					79328,	-- Embassies and Envoys [H]
 				},
-				["sourceQuestNumRequired"] = 1,
+				["sourceQuestNumRequired"] = 1,	-- but probably not required, since fire both quest
 				["provider"] = { "n", 214917 },	-- Moira Thaurissan
 				["coord"] = { 31.8, 59.4, DORNOGAL },
 			}),
-			-- end of main story due to quest above is bugged (there is quest npcs phased out)
+			q(83286, {	-- What's Hidden Beneath Dornogal
+				["sourceQuests"] = { 83271 },	-- There's Always Another Secret
+				["provider"] = { "n", 226040 },	-- Speaker Brinthe
+				["coord"] = { 48.1, 54.6, ISLE_OF_DORN },
+			}),
+			q(83315, {	-- Preparing for the Unknown
+				["sourceQuests"] = { 83286 },	-- What's Hidden Beneath Dornogal
+				["provider"] = { "n", 226040 },	-- Speaker Brinthe
+				["coord"] = { 48.1, 54.6, ISLE_OF_DORN },
+			}),
+			q(79344, {	-- Urban Odyssey
+				["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
+				["provider"] = { "n", 214917 },	-- Moira Thaurissan
+				["coord"] = { 31.8, 59.4, DORNOGAL },
+				["g"] = {
+					--crit 'Against the Current' for achievementID 20597 (The War Within)
+				},
+			}),
+			q(79107, {	-- After the Storm
+				["sourceQuests"] = { 79344 },	-- Urban Odyssey
+				["provider"] = { "n", 223944 },	-- Alleria Windrunner
+				["coord"] = { 31.5, 59.7, DORNOGAL },
+			}),
+			q(81914, {	-- Dhar Oztan
+				["sourceQuests"] = { 79107 },	-- After the Storm
+				["provider"] = { "n", 215039 },	-- Rooktender Lufsela
+				["coord"] = { 37.4, 82.2, DORNOGAL },
+			}),
+			q(79124, {	-- Totem of the Southern Storm
+				["sourceQuests"] = { 81914 },	-- Dhar Oztan
+				["provider"] = { "n", 214995 },	-- Olbarig
+				["coord"] = { 28.5, 61.0, ISLE_OF_DORN },
+				["g"] = {
+					i(218455),	-- Totem of the Southern Storm (QI!)
+				},
+			}),
+			q(79475, {	-- Charging Up That Hill
+				["sourceQuests"] = { 79124 },	-- Totem of the Southern Storm
+				["provider"] = { "n", 214995 },	-- Olbarig
+				["coord"] = { 27.6, 60.5, ISLE_OF_DORN },
+			}),
+			q(79476, {	-- Heeding the Call
+				["sourceQuests"] = { 79124 },	-- Totem of the Southern Storm
+				["provider"] = { "n", 214995 },	-- Olbarig
+				["coord"] = { 27.6, 60.5, ISLE_OF_DORN },
+			}),
+			q(79129, {	-- Rook Rally
+				["sourceQuests"] = {
+					79475,	-- Charging Up That Hill
+					79476,	-- Heeding the Call
+				},
+				["provider"] = { "n", 215039 },	-- Rooktender Lufsela
+				["coord"] = { 25.6, 57.2, ISLE_OF_DORN },
+				["g"] = {
+					i(223447),	-- Lightning-Scarred Vest
+				},
+			}),
+			q(79146, {	-- Ground Pounders
+				["sourceQuests"] = { 79129 },	-- Rook Rally
+				["provider"] = { "n", 214919 },	-- Thrall
+				["coord"] = { 27.8, 60.8, ISLE_OF_DORN },
+			}),
+			q(79140, {	-- Goldbricking
+				["sourceQuests"] = { 79146 },	-- Ground Pounders
+				["provider"] = { "n", 215187 },	-- Overlord Geya'rah
+				["coord"] = { 33.2, 63.3, ISLE_OF_DORN },
+			}),
+			q(79145, {	-- Metal and Stone
+				["sourceQuests"] = { 79146 },	-- Ground Pounders
+				["provider"] = { "n", 223205 },	-- High Exarch Turalyon
+				["coord"] = { 33.3, 63.3, ISLE_OF_DORN },
+				["g"] = {
+					i(223875),	-- Algari Censer
+				},
+			}),
+			q(81915, {	-- Home to Roost
+				["sourceQuests"] = {
+					79140,	-- Goldbricking
+					79145,	-- Metal and Stone
+				},
+				["provider"] = { "n", 215277 },	-- Adelgonn
+				["coord"] = { 33.3, 63.3, ISLE_OF_DORN },
+			}),
+			q(79477, {	-- Strays
+				["sourceQuests"] = { 81915 },	-- Home to Roost
+				["provider"] = { "n", 215039 },	-- Rooktender Lufsela
+				["coord"] = { 28.9, 61.7, ISLE_OF_DORN },
+			}),
+			q(79147, {	-- Flight Training 101
+				["sourceQuests"] = { 79477 },	-- Strays
+				["provider"] = { "n", 215211 },	-- Kurdan Wildhammer
+				["coord"] = { 29.0, 61.5, ISLE_OF_DORN },
+			}),
+			q(81912, {	-- Flight Training 102
+				["sourceQuests"] = { 79147 },	-- Flight Training 101
+				["provider"] = { "n", 215211 },	-- Kurdan Wildhammer
+				["coord"] = { 35.0, 72.2, ISLE_OF_DORN },
+			}),
+			q(81913, {	-- Flight Training 103
+				["sourceQuests"] = { 81912 },	-- Flight Training 102
+				["provider"] = { "n", 215211 },	-- Kurdan Wildhammer
+				["coord"] = { 61.7, 65.5, ISLE_OF_DORN },
+				["g"] = {
+					i(224161),	-- Stormrider Flight Badge
+				},
+			}),
+			q(79480, {	-- Paying Respects
+				["sourceQuests"] = { 81913 },	-- Flight Training 103
+				["provider"] = { "n", 214995 },	-- Olbarig
+				["coord"] = { 75.9, 39.8, ISLE_OF_DORN },
+			}),
+			q(79156, {	-- The Edicts
+				["sourceQuests"] = { 79480 },	-- Paying Respects
+				["provider"] = { "n", 214995 },	-- Olbarig
+				["coord"] = { 76.5, 35.6, ISLE_OF_DORN },
+			}),
+			q(79157, {	-- Titanic Failsafe
+				["sourceQuests"] = { 79156 },	-- The Edicts
+				["provider"] = { "n", 214916 },	-- Merrix
+				["coord"] = { 57.1, 50.5, ISLE_OF_DORN },
+				["g"] = {
+					--crit 'Ties That Bind'
+					i(223446),	-- Stormrider's Bindings
+				},
+			}),
+			q(79224, {	-- Gathering Intel
+				["sourceQuests"] = { 79157 },	-- Titanic Failsafe
+				["provider"] = { "n", 223944 },	-- Alleria Windrunner
+				["coord"] = { 31.6, 59.6, DORNOGAL },
+			}),
+			-- tbc
 			-- renown quests can be turned in @ 39.1, 24.3, in additional to their zone specific area.
 			-- Vaskarn
 			q(82042, {	-- The Better Part of Valorstones
@@ -215,4 +348,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	--q(79326),	-- after turn in questID 82153 (Embassies and Envoys), [DNT] Push RP Event (spellID 362105)
 	--^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
 	q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
+	-- WQs unlock
+	q(79573),	-- Adventure Mode (spellID 434027) & Unlock Content Scaling (spellID 434024)
+	--
+	q(84009),	-- 'Stay awhile and listen' - Alleria Windrunner (n: 216148) - during questID 82153 (Embassies and Envoys)
+	q(82542),	-- 'Stay awhile and listen' -  Rooktender Lufsela (n: 215039) - during questID 81914 (81914)
 });

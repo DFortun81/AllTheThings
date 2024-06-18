@@ -1409,7 +1409,6 @@ root(ROOTS.Unsorted, {
 			i(218449),	-- Forged Aspirant's Knife \\ PH Copy Draconic Aspirant's Knife
 			i(218451),	-- Forged Aspirant's Chopper \\ PH Copy Draconic Aspirant's Chopper
 			i(218452),	-- Forged Aspirant's Wand \\ PH Copy Draconic Aspirant's Wand
-			i(218455),	-- Totem of the Southern Storm
 			i(218456),	-- Precious Gems
 			i(218457),	-- Special Silk
 			i(218458),	-- Important Info Scrolls
@@ -2586,13 +2585,11 @@ root(ROOTS.Unsorted, {
 			i(221093),	-- Deeply Corrupted Coil
 			i(221204),	-- Spore Giant's Stompers
 			i(221205),	-- Vest of the River
-			i(221206),	-- Reinforced Chitin Chestpiece
 			i(221207),	-- Denmother's Chestpiece
 			i(221208),	-- Unseen Cutthroat's Tunic \\ Fel Assassin Tunic
 			i(221209),	-- Flame Trader's Gloves
 			i(221210),	-- Grips of the Earth
 			i(221211),	-- Grasp of the Shallows
-			i(221212),	-- Death Burrower Handguards
 			i(221214),	-- Chitin Chain Headpiece
 			i(221215),	-- Taskmaster's Mining Cap
 			i(221216),	-- Bruin Strength Legplates
@@ -3779,7 +3776,6 @@ root(ROOTS.Unsorted, {
 			i(223364),	-- Wristwraps of the Titancap
 			i(223365),	-- Wristguards of the Titancap
 			i(223366),	-- Bracers of the Titancap
-			i(223367),	-- Cuffs of the Titancap
 			i(223369),	-- Webspeaker's Spiritual Cloak
 			i(223370),	-- Wolf Packleader's Visor
 			i(223371),	-- Slippers of Shallow Waters
@@ -3825,7 +3821,6 @@ root(ROOTS.Unsorted, {
 			i(223444),	-- [PH] 11.0 - Breeches
 			i(223445),	-- Sash of the Weaver
 			i(223446),	-- Stormrider's Bindings
-			i(223447),	-- Lightning-Scarred Vest
 			i(223448),	-- Epaulets of the Ringing Deeps
 			i(223450),	-- [PH] 11.0 - Chainmail
 			i(223451),	-- Saboteur's Striders
@@ -3949,7 +3944,6 @@ root(ROOTS.Unsorted, {
 			i(223872),	-- Algari Mace
 			i(223873),	-- Algari Shield
 			i(223874),	-- Algari Dagger
-			i(223875),	-- Algari Censer
 			i(223876),	-- Algari Warglaive
 			i(223877),	-- Algari Hatchet
 			i(223889),	-- Flame Touched Weaponry
@@ -4072,14 +4066,11 @@ root(ROOTS.Unsorted, {
 			i(224096),	-- Anglin' Art's Sandals
 			i(224097),	-- Lucky Fishing Hat
 			i(224100),	-- Bottomless Bag of Khaz Algar General Goods
-			i(224104),	-- Flashfire Thurible
 			i(224117),	-- Ghoulfish Delight
-			i(224118),	-- Nightshade Letter
 			i(224119),	-- Electric Eel
 			i(224148),	-- [PH] NerubianWarbeastMount (Cyan)
 			i(224149),	-- [PH] NerubianWarbeastMount (Orange)
 			i(224156),	-- Bottomless Bag of Khaz Algar General Goods
-			i(224161),	-- Stormrider Flight Badge
 			i(224165),	-- Dornogal Tabard \\ Gilded Earthen Tabard \\ [PH] Earthen Tabard
 			i(224166),	-- Awakened Tabard \\ Awakening Tabard \\ Copper Earthen Tabard \\ [PH] Earthen Tabard
 			i(224167),	-- Gundargaz Tabard \\ Dark Earthen Tabard \\ [PH] Earthen Tabard
@@ -4161,10 +4152,6 @@ root(ROOTS.Unsorted, {
 			i(224272),	-- Calcified Journal
 			i(224273),	-- Wooden Figure
 			i(224274),	-- Sturdy Locket
-			i(224283),	-- Reclaimed Catalyst
-			i(224284),	-- Eyeless Petal
-			i(224285),	-- Luminous Strangler Sap
-			i(224286),	-- Cochineal Crawler
 			i(224292),	-- Radiant Fuel Shard
 			i(224395),	-- Secret Garlic
 			i(224396),	-- Mangled Taro
@@ -4925,7 +4912,6 @@ root(ROOTS.Unsorted, {
 			i(226160),	-- Hillhelm Farmhand's Hoe
 			i(226161),	-- Hillhelm Farmhand's Watering Can
 			i(226164),	-- Invitation: Grand Auction
-			i(226166),	-- Message-Imprinted Silken Square
 			i(226172),	-- Disturbance Detection Device
 			i(226173),	-- Boots of the First Embrace
 			i(226174),	-- Famished Bride's Clasp

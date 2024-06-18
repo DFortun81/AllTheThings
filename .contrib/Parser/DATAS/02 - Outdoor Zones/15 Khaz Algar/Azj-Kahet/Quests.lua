@@ -611,6 +611,71 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 52.9, 46.2, 2213 },
 			}),
 			-- End of some random spider quest #5
+			-- crit 'Subterfuge in Silk'
+			q(81686, {	-- Subterfuge in Silk
+				--["sourceQuests"] = {  },	-- unsure, probably somewhere around last story chapter or after it
+				["isBreadcrumb"] = true,	-- unless it is now required for spawn next quests/npc
+				["provider"] = { "n", 207471 },	-- Window Arak'nal
+				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+			}),
+			q(83616, {	-- The Entrenched
+				["sourceQuests"] = { 81686 },	-- Subterfuge in Silk
+				["provider"] = { "n", 222136 },	-- Teth
+				["coord"] = { 69.1, 52.0, AZJ_KAHET },
+			}),
+			q(81683, {	-- Spring Collection
+				["sourceQuests"] = { 83616 },	-- The Entrenched
+				["provider"] = { "n", 221557 },	-- Grand Overspinner Antourix
+				["coord"] = { 74.7, 56.2, AZJ_KAHET },
+				["g"] = {
+					i(224286),	-- Cochineal Crawler (QI!)
+					i(224284),	-- Eyeless Petal (QI!)
+					i(224285),	-- Luminous Strangler Sap (QI!)
+					i(224283),	-- Reclaimed Catalyst (QI!)
+				},
+			}),
+			q(81667, {	-- The Upstart
+				["sourceQuests"] = { 81686 },	-- Subterfuge in Silk
+				["provider"] = { "n", 222136 },	-- Teth
+				["coord"] = { 69.1, 52.0, AZJ_KAHET },
+			}),
+			q(81668, {	-- Measure Once, Cut Thrice
+				["sourceQuests"] = { 81667 },	-- The Upstart
+				["provider"] = { "n", 221550 },	-- Ren'khat
+				["coord"] = { 66.2, 45.9, AZJ_KAHET },
+			}),
+			q(81685, {	-- Azj-Kahet's Next Top Dyemaster
+				["sourceQuests"] = {
+					81668,	-- Measure Once, Cut Thrice
+					81683,	-- Spring Collection
+				},
+				["provider"] = { "n", 222132 },	-- Teth
+				["coord"] = { 72.0, 47.2, AZJ_KAHET },
+				["g"] = {
+					i(226166),	-- Message-Imprinted Silken Square
+				},
+			}),
+			q(81687, {	-- I Expect You To Dye
+				["sourceQuests"] = {
+					81668,	-- Measure Once, Cut Thrice
+					81683,	-- Spring Collection
+				},
+				["provider"] = { "n", 222132 },	-- Teth
+				["coord"] = { 72.0, 47.2, AZJ_KAHET },
+			}),
+			q(81688, {	-- That's All
+				["sourceQuests"] = {
+					81685,	-- Azj-Kahet's Next Top Dyemaster
+					81687,	-- I Expect You To Dye
+				},
+				["provider"] = { "n", 222136 },	-- Teth
+				["coord"] = { 69.0, 52.0, AZJ_KAHET },
+				["g"] = {
+					--crit 'Subterfuge in Silk'
+					i(224659),	-- Secret-Woven Silk (QI!)
+				},
+			}),
+			-- End of crit 'Subterfuge in Silk'
 			-- ZONE DUNGEON QUESTS (80 only)
 			q(83166, {	-- Ara-Kara, the City of Echoes: Harverst's End
 				--["sourceQuests"] = { xx },	-- ?
@@ -740,18 +805,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 227158 },	-- Hannan
 				["coord"] = { 62.5, 80.5, 2256 },
 			}),
-			--
-			q(83616, {	-- The Entrenched
-				--["sourceQuests"] = { xx },	-- ?
-				["provider"] = { "n", 222136 },	-- Teth
-				["coord"] = { 69.1, 52.0, AZJ_KAHET },
-			}),
-			q(81667, {	-- The Upstart
-				--["sourceQuests"] = { xx },	-- ?
-				["provider"] = { "n", 222136 },	-- Teth
-				["coord"] = { 69.1, 52.0, AZJ_KAHET },
-			}),
-			--
 			-- Delves
 			q(83771, {	-- DELVER'S CALL: Tak-Rethan Abyss
 				["provider"] = { "o", 455720 },	-- DELVER'S CALL: Tak-Rethan Abyss
@@ -964,13 +1017,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
-			q(81704, {	-- Cha'tak
-				["provider"] = { "n", 216042 },	-- Cha'tak
-				["coord"] = { 70.0, 27.7, AZJ_KAHET },
-				["g"] = {
-					-- no loot
-				},
-			}),
 		}),
 	}),
 })));
@@ -1027,7 +1073,4 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Vizier
 	--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID 81480 (Wild Reagents: Maddening Deep)
 	-- Missing 11 total quest data/givers, 81505 81498 81497 81502 81482 (and 5 more)
-	--
-	-- On first leveled character on alpha (when wasn't all zone unlocked)
-	q(79573),	-- Adventure Mode (spellID 434027) & Unlock Content Scaling (spellID 434024) (last one probably for alpha only?)
 });

@@ -738,14 +738,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(209854),	-- Hillhelm Remnant Supply (QI!)
 				},
 			}),
-			q(79107, {	-- Seeds of Evil
-				--["sourceQuests"] = { x },	-- x
-				["provider"] = { "n", 206528 },	-- Aliya Hillhelm
-				["coord"] = { 61.2, 30.5, HALLOWFALL },
-				["g"] = {
-					i(212153),	-- Corrupted Shadowleaf Seed (QI!)
-				},
-			}),
+			--q(79107, {	-- Seeds of Evil // should be other questID as of beta build
+			--	--["sourceQuests"] = { x },	-- x
+			--	["provider"] = { "n", 206528 },	-- Aliya Hillhelm
+			--	["coord"] = { 61.2, 30.5, HALLOWFALL },
+			--	["g"] = {
+			--		i(212153),	-- Corrupted Shadowleaf Seed (QI!)
+			--	},
+			--}),
 			q(80382, {	-- Eggs In One Basket
 				--["sourceQuests"] = { x },	-- x
 				["provider"] = { "o", 430581 },	-- Egg Basket
@@ -766,7 +766,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(79109, {	-- Follow Miral
 				["sourceQuests"] = {
 					80382,	-- Eggs In One Basket // unsure about this one
-					79107,	-- Seeds of Evil
+					--79107,	-- Seeds of Evil (TODO: fix to new questID)
 				},
 				["provider"] = { "n", 206528 },	-- Aliya Hillhelm
 				["coord"] = { 61.2, 30.5, HALLOWFALL },

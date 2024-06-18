@@ -140,6 +140,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223345),	-- Viper's Stone Grips
 				},
 			}),
+			n(219279, {	-- Flamekeeper Graz
+				["description"] = "Walking around in area",
+				["coords"] = {
+					{ 65.6, 39.9, ISLE_OF_DORN },
+					{ 64.6, 39.8, ISLE_OF_DORN },
+					{ 64.0, 39.2, ISLE_OF_DORN },	-- initial spawn point
+				},
+				["questID"] = 81905,	-- in addition 84034
+			}),
+			n(213115, {	-- Rustul Titancap
+				["description"] = "Walking around in area",
+				["coords"] = {
+					{ 31.7, 80.8, ISLE_OF_DORN },
+					{ 33.5, 81.3, ISLE_OF_DORN },
+					{ 32.4, 82.7, ISLE_OF_DORN },
+					{ 31.4, 82.0, ISLE_OF_DORN },
+				},
+				["questID"] = 78619,
+				["g"] = {
+					i(223367),	-- Cuffs of the Titancap
+				},
+			}),
 		})),
 	}),
 })));

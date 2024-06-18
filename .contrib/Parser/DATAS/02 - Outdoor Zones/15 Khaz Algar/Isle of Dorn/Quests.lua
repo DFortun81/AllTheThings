@@ -637,6 +637,82 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 			}),
 			header(HEADERS.AchCriteria, 20595.09, {	-- Brotherhood in the Skolzgal Wood
+				q(80456, {	-- A Sassy Arathi
+					--["sourceQuests"] = { x },	-- ?
+					--["isBreadcrumb"] = true,	-- ?
+					["provider"] = { "n", 219437 },	-- Dornogal CItizen
+					["coord"] = { 55.3, 55.7, ISLE_OF_DORN },
+				}),
+				q(80209, {	-- An Oddball in Dornogal
+					["sourceQuests"] = { 80456 },	-- A Sassy Arathi
+					["provider"] = { "n", 222224 },	-- Peacekeeper Leif
+					["coord"] = { 54.3, 19.2, DORNOGAL },
+				}),
+				q(80210, {	-- Found Around the Unbound
+					["sourceQuests"] = { 80209 },	-- An Oddball in Dornogal
+					["provider"] = { "n", 222268 },	-- Peacekeeper Leif
+					["coord"] = { 67.1, 18.7, DORNOGAL },
+				}),
+				q(80210, {	-- Found Around the Unbound
+					["sourceQuests"] = { 80209 },	-- An Oddball in Dornogal
+					["provider"] = { "n", 222268 },	-- Peacekeeper Leif
+					["coord"] = { 67.1, 18.7, DORNOGAL },	-- could be wrong
+				}),
+				q(80211, {	-- The Pillage of Freywold Village
+					["sourceQuests"] = { 80210 },	-- Found Around the Unbound
+					["provider"] = { "n", 222314 },	-- Peacekeeper Leif
+					["coord"] = { 42.6, 70.9, ISLE_OF_DORN },
+				}),
+				q(80212, {	-- The Abductors' Obstructors
+					["sourceQuests"] = { 80211 },	-- The Pillage of Freywold Village
+					["provider"] = { "n", 222314 },	-- Peacekeeper Leif
+					["coord"] = { 42.6, 70.9, ISLE_OF_DORN },
+				}),
+				q(80213, {	-- Holy Fire in Rambleshire
+					["sourceQuests"] = { 80212 },	-- The Abductors' Obstructors
+					["provider"] = { "n", 222352 },	-- Lamplighter Kaerter
+					["coord"] = { 57.5, 30.1, ISLE_OF_DORN },
+					["g"] = {
+						i(224104),	-- Flashfire Thurible (QI!)
+						i(224118),	-- Nightshade Letter (QI!)
+					},
+				}),
+				q(80214, {	-- A Time to Kill at the Lumber Mill
+					["sourceQuests"] = { 80213 },	-- Holy Fire in Rambleshire
+					["provider"] = { "n", 222356 },	-- Lamplighter Kaerter
+					["coord"] = { 62, 30.7, ISLE_OF_DORN },
+				}),
+				q(80215, {	-- Ungirthin' the Earthen
+					["sourceQuests"] = { 80214 },	-- A Time to Kill at the Lumber Mill
+					["provider"] = { "n", 222356 },	-- Lamplighter Kaerter
+					["coord"] = { 67.0, 31.1, ISLE_OF_DORN },
+				}),
+				q(80216, {	-- Concealed in the Weald
+					["sourceQuests"] = { 80214 },	-- A Time to Kill at the Lumber Mill
+					["provider"] = { "n", 222358 },	-- Peacekeeper Leif
+					["coord"] = { 67.0, 31.2, ISLE_OF_DORN },
+				}),
+				q(80217, {	-- A Lamplight for the Shipwright
+					["sourceQuests"] = {
+						80216,	-- Concealed in the Weald
+						80215,	-- Ungirthin' the Earthen
+					},
+					["provider"] = { "n", 222362 },	-- Peacekeeper Leif
+					["coord"] = { 65.9, 24.7, ISLE_OF_DORN },
+				}),
+				q(80218, {	-- Up to No Good Down in Silkwood
+					["sourceQuests"] = { 80217 },	-- A Lamplight for the Shipwright
+					["provider"] = { "n", 222364 },	-- Lamplighter Kaerter
+					["coord"] = { 65.9, 23.8, ISLE_OF_DORN },
+				}),
+				q(83181, {	-- Best Friends, Same Ends
+					["sourceQuests"] = { 80217 },	-- A Lamplight for the Shipwright
+					["provider"] = { "n", 222363 },	-- Peacekeeper Leif
+					["coord"] = { 65.9, 23.8, ISLE_OF_DORN },
+					["g"] = {
+						--crit ' in the Skolzgal Wood'
+					},
+				}),
 			}),
 			-- Side quests, since main story is bugged in main city
 
@@ -756,32 +832,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--	Rares / Bonus Objectives / Once per character?
 			--	need to be moved into rares if didn't get bonus objective
 			-- TODO: Worldsoul memory @ 51.2, 29.2
-			q(81905, {	-- Flamekeeper Graz
-				["description"] = "Walking around in area",
-				["provider"] = { "n", 219279 },	-- Flamekeeper Graz
-				["coords"] = {
-					{ 65.6, 39.9, ISLE_OF_DORN },
-					{ 64.6, 39.8, ISLE_OF_DORN },
-					{ 64.0, 39.2, ISLE_OF_DORN },	-- initial spawn point
-				},
-				["g"] = {
-					-- no loot
-				},
-			}),
-			--[[
-			q(x, {	-- Rustul Titancap // didn't fire questID
-				["provider"] = { "n", 213115 },	-- Rustul Titancap
-				["coords"] = {
-					{ 31.7, 80.8, ISLE_OF_DORN },
-					{ 33.5, 81.3, ISLE_OF_DORN },
-					{ 32.4, 82.7, ISLE_OF_DORN },
-					{ 31.4, 82.0, ISLE_OF_DORN },
-				},
-				["g"] = {
-					-- missing loot table
-				},
-			}),
-			--]]
 			-- new?
 			q(81891, {	-- Malfuctioning Spire
 				["provider"] = { "n", 220068 },	-- Malfuctioning Spire
