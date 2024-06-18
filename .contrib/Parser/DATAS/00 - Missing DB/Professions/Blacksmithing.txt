@@ -1,3 +1,5 @@
+1.15.3.55112
+r(460460),	-- Sulfuron Hammer
 11.0.0.54311
 r(423332),	-- Khaz Algar Blacksmithing
 r(425136),	-- Recraft Equipment
@@ -103,6 +105,8 @@ r(455004),	-- Algari Competitor's Sword \\ Vicious Competitor's Sword
 
 Missing in Blacksmithing.lua
 
+1.15.3.55112
+r(460460),	-- Sulfuron Hammer
 11.0.0.54311
 r(423332),	-- Khaz Algar Blacksmithing
 r(425136),	-- Recraft Equipment

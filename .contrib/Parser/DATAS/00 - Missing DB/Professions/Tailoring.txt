@@ -573,7 +573,7 @@ r(446970),	-- Artisan Gardening Hat
 r(446971),	-- Artisan Fishing Cap
 r(446972),	-- Artisan Enchanter's Hat
 r(446973),	-- Artisan Alchemist's Robe
-r(446974),	-- Artisan's Chef's Hat
+r(446974),	-- Artisan Chef's Hat \\ Artisan's Chef's Hat
 r(446975),	-- Artisan Tailor's Coat \\ Venerated Robes of the Eclipse
 r(446976),	-- Weavercloth Bag
 r(446977),	-- Dawnweave Reagent Bag \\ Dawnthread Bag
@@ -594,9 +594,9 @@ r(446991),	-- Dawnthread Lining
 r(446992),	-- Duskthread Lining
 r(446993),	-- Reinforced Wrap Kit
 r(446994),	-- Weaverthread Parachute Kit
-r(446995),	-- Preserving Pocket Cloth
+r(446995),	-- Preserving Embroidery Thread \\ Preserving Pocket Cloth
 r(446996),	-- Bright Polishing Cloth
-r(446997),	-- Weaverthread Polishing Cloth
+r(446997),	-- Weavercloth Embroidery Thread \\ Weaverthread Polishing Cloth
 r(446998),	-- Gritty Polishing Cloth
 r(446999),	-- Weavercloth Spellthread
 r(447000),	-- Sunset Spellthread
@@ -954,7 +954,7 @@ r(446970),	-- Artisan Gardening Hat
 r(446971),	-- Artisan Fishing Cap
 r(446972),	-- Artisan Enchanter's Hat
 r(446973),	-- Artisan Alchemist's Robe
-r(446974),	-- Artisan's Chef's Hat
+r(446974),	-- Artisan Chef's Hat \\ Artisan's Chef's Hat
 r(446975),	-- Artisan Tailor's Coat \\ Venerated Robes of the Eclipse
 r(446976),	-- Weavercloth Bag
 r(446977),	-- Dawnweave Reagent Bag \\ Dawnthread Bag
@@ -975,9 +975,9 @@ r(446991),	-- Dawnthread Lining
 r(446992),	-- Duskthread Lining
 r(446993),	-- Reinforced Wrap Kit
 r(446994),	-- Weaverthread Parachute Kit
-r(446995),	-- Preserving Pocket Cloth
+r(446995),	-- Preserving Embroidery Thread \\ Preserving Pocket Cloth
 r(446996),	-- Bright Polishing Cloth
-r(446997),	-- Weaverthread Polishing Cloth
+r(446997),	-- Weavercloth Embroidery Thread \\ Weaverthread Polishing Cloth
 r(446998),	-- Gritty Polishing Cloth
 r(446999),	-- Weavercloth Spellthread
 r(447000),	-- Sunset Spellthread

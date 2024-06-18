@@ -1,3 +1,5 @@
+1.15.3.55112
+faction(2650),	-- S03 - 60 - Western Plaguelands - Mage Runecarving
 11.0.0.54311
 faction(2569),	-- The War Within \\ (11.0 Header) The War Within
 faction(2570),	-- Hallowfall Arathi
@@ -25,6 +27,6 @@ faction(2638),	-- PLAYER, Earthen Horde
 faction(2640),	-- Brann Bronzebeard
 faction(2644),	-- Delves: Season 1 \\ [DNT] Delves: Season 1 Renown Track
 faction(2645),	-- Earthen
-faction(2647),	-- The Vizier (Notoriety), Paragon
-faction(2648),	-- The Weaver (Notoriety), Paragon
-faction(2649),	-- The General (Notoriety), Paragon
+faction(2647),	-- The Vizier (Paragon) \\ The Vizier (Notoriety), Paragon
+faction(2648),	-- The Weaver (Paragon) \\ The Weaver (Notoriety), Paragon
+faction(2649),	-- The General (Paragon) \\ The General (Notoriety), Paragon

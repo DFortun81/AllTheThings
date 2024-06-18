@@ -15,6 +15,7 @@ pet(4484),	-- Frenzied Bloodtick
 pet(4485),	-- Mossy Snail
 pet(4488),	-- Haywire Servobot
 pet(4493),	-- Redthroat Skipling
+pet(4495),	-- Skippy
 pet(4498),	-- Ebon Ploughworm
 pet(4499),	-- Common Ploughworm
 pet(4502),	-- Kaheti Bull Worm
@@ -53,9 +54,11 @@ pet(4574),	-- Snuffling
 pet(4576),	-- Spearmint Snuffling
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
+11.0.0.54361
+pet(4594),	-- Dalaran Sewer Turtle
 11.0.0.54521
-pet(4597),	--
-pet(4598),	--
+pet(4597),	-- Wobbles
+pet(4598),	-- Coppers
 
 
 
@@ -118,5 +121,5 @@ pet(4576),	-- Spearmint Snuffling
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
 11.0.0.54521
-pet(4597),	--
-pet(4598),	--
+pet(4597),	-- Wobbles
+pet(4598),	-- Coppers

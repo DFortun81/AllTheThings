@@ -1167,8 +1167,8 @@ r(435382),	-- Binding of Binding
 r(435383),	-- Fractured Gemstone Locket
 r(435384),	-- Ring of Earthen Craftsmanship
 r(435385),	-- Amulet of Earthen Craftsmanship
-r(435386),	-- Vicious Bloodstone Signet
-r(435387),	-- Vicious Bloodstone Amulet
+r(435386),	-- Algari Competitor's Signet \\ Vicious Bloodstone Signet
+r(435387),	-- Algari Competitor's Amulet \\ Vicious Bloodstone Amulet
 r(435389),	-- Remembrance Stone
 r(435391),	-- Beautification Iris
 r(435392),	-- Cubic Blasphemia
@@ -2352,8 +2352,8 @@ r(435382),	-- Binding of Binding
 r(435383),	-- Fractured Gemstone Locket
 r(435384),	-- Ring of Earthen Craftsmanship
 r(435385),	-- Amulet of Earthen Craftsmanship
-r(435386),	-- Vicious Bloodstone Signet
-r(435387),	-- Vicious Bloodstone Amulet
+r(435386),	-- Algari Competitor's Signet \\ Vicious Bloodstone Signet
+r(435387),	-- Algari Competitor's Amulet \\ Vicious Bloodstone Amulet
 r(435389),	-- Remembrance Stone
 r(435391),	-- Beautification Iris
 r(435392),	-- Cubic Blasphemia

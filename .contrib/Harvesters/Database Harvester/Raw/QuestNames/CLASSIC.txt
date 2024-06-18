@@ -699,3 +699,245 @@
 82850@@@Fish Oil
 82851@@@Dark Iron Ordinance
 82853@@@Shredder Turbochargers
+81730@@@Duskwood Mission I: Defeat Worgen
+81731@@@Duskwood Mission II: Defeat Ogres
+81732@@@Duskwood Mission III: Defeat Dragonkin
+81733@@@Duskwood Mission IV: Ogre Intelligence
+81734@@@Duskwood Mission V: Worgen Intelligence
+81735@@@Duskwood Mission VI: Dragon Intelligence
+81736@@@Duskwood Mission VII: Recover Shadowscythe
+81737@@@Duskwood Mission VIII: Recover Ogre Magi text
+81738@@@Duskwood Mission IX: Recover Dragon Egg
+81739@@@Duskwood Mission X: Nightmare Moss
+81740@@@Duskwood Mission XI: Cold Iron Ore
+81741@@@Duskwood Mission XII: Dream-Touched Dragonscale
+81742@@@Duskwood Mission XIII: Defeat Ylanthrius
+81743@@@Duskwood Mission XIV: Defeat Vvarc'zul
+81744@@@Duskwood Mission XV: Defeat Amokarok
+81745@@@Duskwood Mission XVI: Rescue Kroll Mountainshade
+81746@@@Duskwood Mission XVII: Rescue Alara Grovemender
+81747@@@Duskwood Mission XVIII: Rescue Elenora Marshwalker
+81768@@@Ashenvale Mission I: Defeat Satyrs
+81769@@@Ashenvale Mission II: Defeat Treants
+81770@@@Ashenvale Mission III: Defeat Dragonkin
+81771@@@Ashenvale Mission IV: Dragon Intelligence
+81772@@@Ashenvale Mission V: Satyr Intelligence
+81773@@@Ashenvale Mission VI: Treant Intelligence
+81774@@@Ashenvale Mission VII: Recover Dreamengine
+81775@@@Ashenvale Mission VIII: Recover Azsharan Prophecy
+81776@@@Ashenvale Mission IX: Recover Dream-Touched Dragonegg
+81777@@@Ashenvale Mission X: Dreamroot
+81778@@@Ashenvale Mission XI: Fool's Gold Dust
+81779@@@Ashenvale Mission XII: Dream-Infused Dragonscale
+81780@@@Ashenvale Mission XIII: Defeat Larsera
+81781@@@Ashenvale Mission XIV: Defeat Zalius
+81782@@@Ashenvale Mission XV: Defeat Shredder 9000
+81783@@@Ashenvale Mission XVI: Rescue Alyssian Windcaller
+81784@@@Ashenvale Mission XVII: Rescue Doran Dreambough
+81785@@@Ashenvale Mission XVIII: Rescue Maseara Autumnmoon
+81786@@@Hinterlands Mission I: Defeat Moonkin
+81787@@@Hinterlands Mission II: Defeat Giant Turtles
+81788@@@Hinterlands Mission III: Defeat Dragonkin
+81789@@@Hinterlands Mission IV: Dragon Intelligence
+81817@@@Hinterlands Mission V: Turtle Intelligence
+81820@@@Hinterlands Mission VI: Moonkin Intelligence
+81826@@@Hinterlands Mission VII: Recover Star-Touched Dragonegg
+81830@@@Hinterlands Mission VIII: Recover Elunar Relic
+81832@@@Hinterlands Mission IX: Recover Dreampearl
+81833@@@Hinterlands Mission X: Star Lotus
+81834@@@Hinterlands Mission XI: Starsilver Ore
+81835@@@Hinterlands Mission XII: Starshells
+81837@@@Hinterlands Mission XIII: Defeat Florius
+81838@@@Hinterlands Mission XIV: Defeat Doomkin
+81839@@@Hinterlands Mission XV: Defeat Ghamoo-Raja
+81850@@@Hinterlands Mission XVI: Rescue Elianar Shadowdrinker
+81851@@@Hinterlands Mission XVII: Rescue Serlina Starbright
+81852@@@Hinterlands Mission XVIII: Rescue Veanna Cloudsleeper
+81855@@@Feralas Mission I: Defeat Children of Cenarius
+81856@@@Feralas Mission II: Defeat Harpies
+81857@@@Feralas Mission III: Defeat Dragonkin
+81858@@@Feralas Mission IV: Dragon Intelligence
+81859@@@Feralas Mission V: Cenarion Intelligence
+81860@@@Feralas Mission VI: Harpy Intelligence
+81861@@@Feralas Mission VII: Recover Moonglow Dragonegg
+81863@@@Feralas Mission VIII: Recover Keeper's Notes
+81864@@@Feralas Mission IX: Recover Harpy Screed
+81865@@@Feralas Mission X: Moonroot
+81866@@@Feralas Mission XI: Greater Moonstone
+81867@@@Feralas Mission XII: Greater Moondragon Scales
+81868@@@Feralas Mission XIII: Defeat Tyrannikus
+81870@@@Feralas Mission XIV: Defeat Alondrius
+81871@@@Feralas Mission XV: Defeat Slirena
+81872@@@Feralas Mission XVI: Rescue Mellias Earthtender
+81873@@@Feralas Mission XVII: Rescue Nerene Brooksinger
+81874@@@Feralas Mission XVIII: Rescue Jamniss Treemender
+83183@@@--
+83184@@@--
+83185@@@--
+83186@@@--
+83187@@@--
+83756@@@--
+83808@@@--
+83822@@@--
+83823@@@--
+83934@@@--
+83935@@@--
+83936@@@--
+83937@@@--
+83938@@@--
+83939@@@--
+83940@@@--
+83941@@@--
+83942@@@--
+83943@@@--
+83944@@@--
+83945@@@--
+83946@@@--
+83947@@@--
+83948@@@--
+83949@@@--
+83950@@@--
+83951@@@--
+83952@@@--
+83953@@@--
+83954@@@--
+83955@@@--
+83956@@@--
+83957@@@--
+83958@@@--
+83959@@@--
+83960@@@--
+83961@@@--
+83962@@@--
+83963@@@--
+83964@@@--
+83965@@@--
+83966@@@--
+83967@@@--
+83968@@@--
+83969@@@--
+83970@@@--
+83971@@@--
+83972@@@--
+83973@@@--
+83974@@@--
+83975@@@--
+83976@@@--
+83977@@@--
+83978@@@--
+83979@@@--
+83980@@@--
+83981@@@--
+83982@@@--
+83983@@@--
+83984@@@--
+83985@@@--
+83986@@@--
+83987@@@--
+83988@@@--
+83990@@@--
+83991@@@--
+83992@@@--
+83993@@@--
+83994@@@--
+83995@@@--
+83996@@@--
+83997@@@--
+83998@@@--
+84004@@@--
+84008@@@--
+84017@@@--
+84124@@@--
+84125@@@--
+84126@@@--
+84135@@@--
+84136@@@--
+84137@@@--
+84138@@@--
+84146@@@--
+84147@@@--
+84148@@@--
+84149@@@--
+84150@@@An Earnest Proposition
+84151@@@--
+84152@@@--
+84153@@@--
+84154@@@--
+84155@@@--
+84156@@@--
+84157@@@--
+84158@@@--
+84159@@@--
+84160@@@--
+84161@@@--
+84162@@@--
+84163@@@--
+84164@@@--
+84165@@@--
+84166@@@--
+84167@@@--
+84168@@@--
+84169@@@--
+84170@@@--
+84171@@@--
+84172@@@--
+84173@@@--
+84174@@@--
+84175@@@--
+84176@@@--
+84177@@@--
+84178@@@--
+84179@@@--
+84180@@@--
+84181@@@--
+84182@@@--
+84183@@@--
+84184@@@--
+84185@@@--
+84186@@@--
+84187@@@--
+84188@@@--
+84189@@@--
+84190@@@--
+84191@@@--
+84192@@@--
+84193@@@--
+84194@@@--
+84195@@@--
+84196@@@--
+84197@@@--
+84198@@@--
+84199@@@--
+84200@@@--
+84201@@@--
+84202@@@--
+84203@@@--
+84204@@@--
+84205@@@--
+84206@@@--
+84207@@@--
+84208@@@--
+84209@@@--
+84210@@@--
+84211@@@--
+84212@@@--
+84213@@@--
+84235@@@--
+84238@@@--
+84317@@@--
+84318@@@--
+84319@@@--
+84320@@@--
+84321@@@--
+84322@@@--
+84323@@@--
+84324@@@--
+84325@@@--
+84326@@@--
+84327@@@--
+84328@@@--
+84329@@@--
+84330@@@--
+84331@@@--
+84332@@@--
+84338@@@--
