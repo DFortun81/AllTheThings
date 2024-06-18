@@ -2473,6 +2473,33 @@
 7491@@@Skull Bash
 7492@@@Lacerate
 7499@@@Light's Grace
+1.15.3.55112
+6851@@@Divine Light
+6891@@@Cobra Slayer
+6898@@@Kill Shot
+6965@@@Aura Mastery
+6991@@@Wyvern Strike
+7025@@@Faded Rune
+7030@@@Greater Ghost Wolf
+7040@@@Hallowed Ground
+7049@@@Malleable Protection
+7507@@@Sword Specialization
+7508@@@Axe Specialization
+7509@@@Mace Specialization
+7510@@@Dagger Specialization
+7511@@@Fist Weapon Specialization
+7512@@@Ranged Weapon Specialization
+7513@@@Pole Weapon Specialization
+7514@@@Arcane Specialization
+7515@@@Fire Specialization
+7516@@@Frost Specialization
+7517@@@Nature Specialization
+7518@@@Shadow Specialization
+7519@@@Holy Specialization
+7520@@@Feral Combat Specialization
+7541@@@Void Plague
+7542@@@Occult Poison I
+7555@@@Defense Specialization
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)

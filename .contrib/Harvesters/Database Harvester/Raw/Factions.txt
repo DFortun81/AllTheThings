@@ -312,6 +312,8 @@
 1.15.2.53941
 2641@@@Emerald Wardens
 2646@@@S03 - 50 - Tanaris Arena Opponent
+1.15.3.55112
+2650@@@S03 - 60 - Western Plaguelands - Mage Runecarving
 2.0.0.6080
 911@@@Silvermoon City
 914@@@PLAYER, Blood Elf
