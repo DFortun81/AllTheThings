@@ -5101,6 +5101,142 @@ root(ROOTS.Unsorted, {
 			i(227544),	-- Begrimed Staff
 			i(227545),	-- Begrimed Mace
 			i(227546),	-- Begrimed Dagger
+			-----------------------------------
+			i(184205),	-- Long-Lost Crown
+			i(184238),	-- Doubt-Tinged Warglaive
+			i(198534),	-- Draconic Missive of Ingenuity
+			i(198535),	-- Draconic Missive of Ingenuity
+			i(198536),	-- Draconic Missive of Ingenuity
+			i(199963),	-- Enchant Tool - Draconic Ingenuity
+			i(200005),	-- Enchant Tool - Draconic Ingenuity
+			i(200047),	-- Enchant Tool - Draconic Ingenuity
+			i(200599),	-- Technique: Draconic Missive of Ingenuity
+			i(208957),	-- Conduit of the Southern Storm
+			i(210201),	-- Handful of Tiny Pebbles
+			i(211984),	-- Warsculptor's Barbute
+			i(211987),	-- Warsculptor's Furred Plastron
+			i(211991),	-- Entombed Seraph's Plumes
+			i(211996),	-- Entombed Seraph's Breastplate
+			i(212064),	-- Pantaloons of the Hypogeal Nemesis
+			i(212438),	-- Polluted Spectre's Wraps
+			i(213780),	-- Algari Amber Prism
+			i(213781),	-- Algari Amber Prism
+			i(213783),	-- Algari Emerald Prism
+			i(213784),	-- Algari Emerald Prism
+			i(213786),	-- Algari Ruby Prism
+			i(213787),	-- Algari Ruby Prism
+			i(213789),	-- Algari Onyx Prism
+			i(213790),	-- Algari Onyx Prism
+			i(213792),	-- Algari Sapphire Prism
+			i(213793),	-- Algari Sapphire Prism
+			i(217162),	-- Necklace of Kobold Teeth
+			i(217163),	-- Well Worn Doll
+			i(217164),	-- Royal Nailpicker
+			i(217167),	-- Crusty Chalice
+			i(218455),	-- Conduit of the Southern Storm
+			i(219503),	-- Honorary Tinderbox
+			i(219783),	-- Arachnophobic Spelunker's Bow
+			i(219789),	-- Arachnophobic Spelunker's Greatmace
+			i(219797),	-- Cured Terracotta Pummeler
+			i(220157),	-- Darkened Tinderbox
+			i(220158),	-- Empowered Tinderbox
+			i(222561),	-- Darkmoon Sigil: Ascension
+			i(222622),	-- Transcribe to Ascension
+			i(222680),	-- Darkmoon Deck: Ascend
+			i(222681),	-- Ace of Ascension
+			i(222682),	-- Two of Ascension
+			i(222683),	-- Three of Ascension
+			i(222684),	-- Four of Ascension
+			i(222685),	-- Five of Ascension
+			i(222686),	-- Six of Ascension
+			i(222687),	-- Seven of Ascension
+			i(222688),	-- Eight of Ascension
+			i(223439),	-- Mereldar Scholar's Leggings
+			i(223444),	-- Arathi Defender's Breeches
+			i(223450),	-- Honored Soldier's Chainmail
+			i(223462),	-- Honorable Arathi Breastplate
+			i(223870),	-- Cache Key
+			i(224780),	-- Toughened Tempest Pelt
+			i(225249),	-- Rattling Bag o' Gold
+			i(225580),	-- Accelerated Ascension Coil
+			i(225654),	-- Imperfect Ascendancy Serum
+			i(225927),	-- Emerald Necklace
+			i(226022),	-- Darkmoon Sigil: Ascension
+			i(226023),	-- Darkmoon Sigil: Ascension
+			i(226024),	-- Darkmoon Sigil: Ascension
+			i(226150),	-- Gem-Studded Candelabra
+			i(226175),	-- Traditional Nuptial Shoulderpads
+			i(227542),	-- Preserved Arathi Sword
+			i(227543),	-- Preserved Arathi Hatchet
+			i(227544),	-- Preserved Deep-Dweller's Staff
+			i(227545),	-- Preserved Deep-Dweller's Cudgel
+			i(227546),	-- Preserved Deep-Dweller's Dirk
+			i(227659),	-- Fleeting Arcane Manifestation
+			i(227661),	-- Gleaming Telluric Crystal
+			i(227662),	-- Shimmering Dust
+			i(227667),	-- Algari Enchanting Folio
+			i(227668),	-- Delver's Bounty
+			i(227669),	-- Teleportation Scroll
+			i(227675),	-- Satchel of Alchemy Surplus
+			i(227676),	-- Satchel of Blacksmithing Surplus
+			i(227677),	-- Satchel of Enchanting Surplus
+			i(227678),	-- Satchel of Engineering Surplus
+			i(227679),	-- Satchel of Inscription Surplus
+			i(227680),	-- Satchel of Jewelcrafting Surplus
+			i(227681),	-- Satchel of Leatherworking Surplus
+			i(227682),	-- Satchel of Tailoring Surplus
+			i(227692),	-- Arathi Sword
+			i(227693),	-- Expeditionary Blade
+			i(227694),	-- Preserved Begrimed Greathelm
+			i(227695),	-- Preserved Pierced Helm
+			i(227696),	-- Preserved Distressed Visor
+			i(227697),	-- Preserved Moth-Ridden Hood
+			i(227699),	-- Earthen Ceremonial Chopper
+			i(227700),	-- Preserved Defender's Spear
+			i(227701),	-- Preserved Defender's Kris
+			i(227710),	-- Tome of Polymorph: Mosswool
+			i(227713),	-- Artisan's Consortium Payout
+			i(227769),	-- Bountiful Bolts
+			i(227770),	-- Assorted Whirlygigs
+			i(227771),	-- Unnecessary Mugholder
+			i(227772),	-- Blinker Fluid
+			i(227773),	-- Cataclysmic Converter
+			i(227774),	-- Pummel Permit
+			i(227778),	-- Delver's Bounty
+			i(227779),	-- Delver's Bounty
+			i(227780),	-- Delver's Bounty
+			i(227781),	-- Delver's Bounty
+			i(227782),	-- Delver's Bounty
+			i(227783),	-- Delver's Bounty
+			i(227784),	-- Delver's Bounty
+			i(227792),	-- Everyday Cache
+			i(227794),	-- Archaic Cipher Key
+			i(227795),	-- Homebrewer's Sampling Mantle
+			i(227890),	-- Unrecognizable Prototype
+			i(227916),	-- Chitinous Wristwraps
+			i(227917),	-- Boroughbreaker's Cuffs
+			i(227918),	-- Wanted Nerubian's Bands
+			i(227919),	-- Crypt Lord's Bracers
+			i(228071),	-- Companion Experience
+			i(228072),	-- Companion Experience
+			i(228073),	-- Companion Experience
+			i(228096),	-- Vibrant Firefly
+			i(228097),	-- Pinkskin Burrower
+			i(228098),	-- Troglofrog
+			i(228099),	-- Oversized Chelicera
+			i(228148),	-- Warsculptor's Barbute
+			i(228149),	-- Entombed Seraph's Casque
+			i(228150),	-- Exhumed Centurion's Galea
+			i(228151),	-- Noetic of the Forgotten Reservoir
+			i(228152),	-- Lightless Scavenger's Skull
+			i(228153),	-- Horns of the Destroyer
+			i(228154),	-- K'areshi Phantom's Emptiness
+			i(228155),	-- Gatecrasher's Horns
+			i(228156),	-- Mask of the Greatlynx
+			i(228157),	-- Impalers of the Hypogeal Nemesis
+			i(228158),	-- Hexflame Coven's All-Seeing Eye
+			i(228159),	-- Living Luster's Semblance
+			i(228161),	-- Hood of Violet Rebirth
 		})),
 	}),
 	expansion(EXPANSION.DF, {

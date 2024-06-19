@@ -752,3 +752,5 @@
 466@@@%s the Shrouded Hero
 469@@@%s the Worldbreaker
 568@@@%s, Machine-Warden
+11.0.0.55185
+570@@@%s, Seeker of Loot

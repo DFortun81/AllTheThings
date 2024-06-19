@@ -15173,3 +15173,22 @@
 40790@@@Khaz Algar Explorer
 40792@@@Solo Shuffle Medic: The War Within
 40795@@@Battleground Blitz Medic: The War Within
+11.0.0.55185
+40506@@@Leave No Treasure Unfound
+40724@@@Treasures of The Ringing Deeps
+40796@@@This Takes Me Back
+40799@@@Sojourner of The Ringing Deeps
+40800@@@Warband Tutorial Complete - Teach Warband Bank Summon (DNT)
+40803@@@Leave No Treasure Unfound: Fungal Foly
+40806@@@Leave No Treasure Unfound: Earthcrawl Mines
+40807@@@Leave No Treasure Unfound: Kriegval's Rest
+40808@@@Leave No Treasure Unfound: Mycomancer Cavern
+40809@@@Leave No Treasure Unfound: Nightfall Sanctum
+40810@@@Leave No Treasure Unfound: Skittering Breach
+40811@@@Leave No Treasure Unfound: Tak-Rethan Abyss
+40812@@@Leave No Treasure Unfound: The Dread Pit
+40813@@@Leave No Treasure Unfound: The Sinkhole
+40814@@@Leave No Treasure Unfound: The Spiral Weave
+40815@@@Leave No Treasure Unfound: The Underkeep
+40816@@@Leave No Treasure Unfound: The Waterworks
+40817@@@A Delver's Bounty

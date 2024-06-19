@@ -646,3 +646,5 @@
 2883@@@Khaz Algar Tailoring
 2884@@@Language: Earthen
 2895@@@Racial - Earthen
+11.0.0.55185
+2902@@@All - Warbands

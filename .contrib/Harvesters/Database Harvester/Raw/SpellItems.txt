@@ -12204,3 +12204,13 @@
 7557@@@Invigorating Fragrance
 7558@@@Robust Fragrance
 7559@@@Volatile Fragrance
+11.0.0.55185
+6662@@@+$k1 Ingenuity |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+6663@@@+$k1 Ingenuity |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+6664@@@+$k1 Ingenuity |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7251@@@+$k1 Primary Stat
+7252@@@+$k1 Primary Stat
+7253@@@+$k1 Primary Stat
+7371@@@+$k1 Ingenuity |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7372@@@+$k1 Ingenuity |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7373@@@+$k1 Ingenuity |A:Professions-ChatIcon-Quality-Tier3:20:20|a

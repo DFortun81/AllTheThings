@@ -21843,3 +21843,24 @@
 228526@@@Scenario First Task Credit
 228528@@@Scenario Final Task Credit
 228531@@@Image of Zekvir
+11.0.0.55185
+211409@@@Faerin Lothar
+212080@@@Regald Hornfyre
+213662@@@Magni Bronzebeard
+215699@@@Kai'shae
+215724@@@Ney'leia
+216213@@@Spindle
+217958@@@On'hiea
+219109@@@Orweyna
+223717@@@Guacamole
+226026@@@Dagran Thaurissan II
+226040@@@High Speaker Brinthe
+226362@@@Merrix
+226363@@@High Speaker Brinthe
+226364@@@Adelgonn
+226366@@@Lufsela
+227723@@@Meesk the Venomtongue
+227749@@@Faerin Lothar
+228604@@@Sound Stalker - 11.0 Quest - Ringing Deeps - Earthen Crowd
+228613@@@Hunting Skyrazor
+228884@@@Air Bubbles
