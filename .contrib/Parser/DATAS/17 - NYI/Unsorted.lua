@@ -5317,15 +5317,6 @@ root(ROOTS.Unsorted, {
 				q(82411),	-- Ensemble: Unburied Aspirant's Cloak Rack
 				q(82412),	-- Ensemble: Unburied Aspirant's Cloak Rack
 				q(82413),	-- Ensemble: Unburied Aspirant's Cloak Rack
-				q(82420),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82422),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82423),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82425),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82426),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82427),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82428),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82430),	-- Ensemble: Unburied Gladiator's Cloak Rack
-				q(82438),	-- Ensemble: Unburied Gladiator's Cloak Rack
 			}),
 			filter(QUEST_ITEMS, {
 				i(217349),	-- DEPRECATED - Arcane Dust

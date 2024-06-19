@@ -951,5 +951,16 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(74279),	-- Arsenal: Sinful Gladiator's Bastion Weapons
 		q(74278),	-- Arsenal: Sinful Gladiator's Maldraxxus Weapons
 		q(74277),	-- Arsenal: Sinful Gladiator's Revendreth Weapons
+
+		-- Unburied Gladiator's Cloak Rack (Item 223640)
+		q(82420, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82422, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82423, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82425, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82426, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82427, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82428, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82430, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
+		q(82438, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Gladiator's Cloak Rack
 	}),
 });
