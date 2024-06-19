@@ -681,8 +681,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					["g"] = {
 						ach(8097),	-- Soft Hands
 						i(95059),	-- Clutch of Ji-Kun (MOUNT!)
-						i(94835, {	-- Ji-Kun Hatchling (PET!)
-						}),
+						i(94835),	-- Ji-Kun Hatchling (PET!)
 					},
 				}),
 				e(818, {	-- Durumu the Forgotten
@@ -1174,7 +1173,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(818, {	-- Durumu the Forgotten
 						["crs"] = { 68036 },	-- Durumu the Forgotten
 						["g"] = {
-							ach(8098),	-- You Said Crossing the Streams Was Bad
 							i(94818),	-- Aberrant Chestguard of Torment
 							i(94821),	-- Artery Rippers
 							i(94820),	-- Caustic Spike Bracers

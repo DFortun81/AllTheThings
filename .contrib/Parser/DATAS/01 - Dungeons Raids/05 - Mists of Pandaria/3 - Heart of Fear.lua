@@ -258,6 +258,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				e(743, {	-- Grand Empress Shek'zeer
 					["crs"] = { 62837 },	-- Grand Empress Shek'zeer
 					["g"] = {
+						ach(6922, {	-- Timing is Everything
+							crit(21105, {	-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
+								["cr"] = 63591,	-- Kor'thik Reaver
+							}),
+							crit(21107, {	-- Defeat Grand Empress Shek'zeer
+							}),
+						}),
 						ach(8246, {	-- Ahead of the Curve: Grand Empress Shek'zeer
 							["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 						}),
@@ -381,13 +388,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(743, {	-- Grand Empress Shek'zeer
 						["crs"] = { 62837 },	-- Grand Empress Shek'zeer
 						["g"] = {
-							ach(6922, {	-- Timing is Everything
-								crit(21105, {	-- Defeat 2 Kor'thik Reavers within 10 seconds of each other
-									["cr"] = 63591,	-- Kor'thik Reaver
-								}),
-								crit(21107, {	-- Defeat Grand Empress Shek'zeer
-								}),
-							}),
 							i(89237, {	-- Chest of the Shadowy Conqueror
 								["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
 							}),

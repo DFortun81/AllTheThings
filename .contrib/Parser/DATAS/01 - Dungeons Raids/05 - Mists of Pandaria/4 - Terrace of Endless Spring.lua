@@ -189,6 +189,17 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 						60583,	-- Protector Kaolan
 					},
 					["g"] = {
+						ach(6717, {	-- Power Overwhelming
+							crit(19624, {	-- Protector Kaolan defeated last
+								["cr"] = 60583,	-- Protector Kaolan
+							}),
+							crit(19625, {	-- Elder Regail defeated last
+								["cr"] = 60585,	-- Elder Regail
+							}),
+							crit(19626, {	-- Elder Asani defeated last
+								["cr"] = 60586,	-- Elder Asani
+							}),
+						}),
 					},
 				}),
 				e(742, {	-- Tsulong
@@ -208,7 +219,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							["timeline"] = { ADDED_8_1_5 },
 						}),
 					},
-				}),	
+				}),
 				e(709, {	-- Sha of Fear
 					["crs"] = { 60999 },	-- Sha of Fear
 					["g"] = {
@@ -235,17 +246,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 							60585,	-- Elder Regail
 						},
 						["g"] = {
-							ach(6717, {	-- Power Overwhelming
-								crit(19624, {	-- Protector Kaolan defeated last
-									["cr"] = 60583,	-- Protector Kaolan
-								}),
-								crit(19625, {	-- Elder Regail defeated last
-									["cr"] = 60585,	-- Elder Regail
-								}),
-								crit(19626, {	-- Elder Asani defeated last
-									["cr"] = 60586,	-- Elder Asani
-								}),
-							}),
 							n(QUALITY_ELITE, {
 								["description"] = "You must kill Protector Kaolan last!",
 								["g"] = {

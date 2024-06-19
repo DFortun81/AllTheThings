@@ -263,6 +263,13 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				e(689, {	-- Feng the Accursed
 					["crs"] = { 60009 },	-- Feng the Accursed
 					["g"] = {
+						ach(6674, {	-- Anything You Can Do, I Can Do Better...
+							crit(19501),	-- Epicenter
+							crit(19502),	-- Lightning Fists
+							crit(19504),	-- Wildfire Spark
+							crit(19506),	-- Arcane Velocity
+							crit(19507),	-- Arcane Resonance
+						}),
 					},
 				}),
 				e(682, {	-- Gara'jal the Spiritbinder
@@ -354,13 +361,6 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 					e(689, {	-- Feng the Accursed
 						["crs"] = { 60009 },	-- Feng the Accursed
 						["g"] = {
-							ach(6674, {	-- Anything You Can Do, I Can Do Better...
-								crit(19501),	-- Epicenter
-								crit(19502),	-- Lightning Fists
-								crit(19504),	-- Wildfire Spark
-								crit(19506),	-- Arcane Velocity
-								crit(19507),	-- Arcane Resonance
-							}),
 							i(85986),	-- Amulet of Seven Curses
 							i(86082),	-- Arrow Breaking Windcloak
 							i(85983),	-- Bracers of Six Oxen
