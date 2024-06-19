@@ -656,41 +656,42 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = HERBALISM,
 		},{
 			-- Arathor's Spear
-			--FirstCraft(XXXXX, 435826);	-- Arathor's Spear
+			FirstCraft(79933, 435826);	-- Arathor's Spear
 			--FirstCraft(XXXXX, 435879);	-- Camouflaged Arathor's Spear
 			--FirstCraft(XXXXX, 435877);	-- Crystallized Arathor's Spear
 			--FirstCraft(XXXXX, 435878);	-- Irradiated Arathor's Spear
-			--FirstCraft(XXXXX, 435836);	-- Lush Arathor's Spear
+			--FirstCraft(79934, 435836);	-- Lush Arathor's Spear
 			--FirstCraft(XXXXX, 435880);	-- Sporefused Arathor's Spear
 			-- Blessing Blossom
-			--FirstCraft(XXXXX, 435823);	-- Blessing Blossom
+			FirstCraft(79927, 435823);	-- Blessing Blossom
 			--FirstCraft(XXXXX, 435872);	-- Camouflaged Blessing Blossom
 			--FirstCraft(XXXXX, 435870);	-- Crystallized Blessing Blossom
-			--FirstCraft(XXXXX, 435871);	-- Irradiated Blessing Blossom
-			--FirstCraft(XXXXX, 435834);	-- Lush Blessing Blossom
+			FirstCraft(79930, 435871);	-- Irradiated Blessing Blossom
+			FirstCraft(79928, 435834);	-- Lush Blessing Blossom
 			--FirstCraft(XXXXX, 435873);	-- Sporefused Blessing Blossom
 			-- Luredrop
-			--FirstCraft(XXXXX, 435821);	-- Luredrop
+			FirstCraft(79913, 435821);	-- Luredrop
 			--FirstCraft(XXXXX, 435858);	-- Altered Luredrop
 			--FirstCraft(XXXXX, 435860);	-- Camouflaged Luredrop
-			--FirstCraft(XXXXX, 435857);	-- Crystallized Luredrop
+			FirstCraft(79915, 435857);	-- Crystallized Luredrop
 			--FirstCraft(XXXXX, 435859);	-- Irradiated Luredrop
 			--FirstCraft(XXXXX, 435829);	-- Lush Luredrop
 			--FirstCraft(XXXXX, 435861);	-- Sporefused Luredrop
 			-- Mycobloom
-			--FirstCraft(XXXXX, 435840);	-- Altered Mycobloom
+			FirstCraft(79906, 435811);	-- Mycobloom
+			FirstCraft(79909, 435840);	-- Altered Mycobloom
 			--FirstCraft(XXXXX, 435851);	-- Camouflaged Mycobloom
-			--FirstCraft(XXXXX, 435838);	-- Crystallized Mycobloom
-			--FirstCraft(XXXXX, 435843);	-- Irradiated Mycobloom
-			--FirstCraft(XXXXX, 435812);	-- Lush Mycobloom
-			--FirstCraft(XXXXX, 435850);	-- Sporefused Mycobloom
+			FirstCraft(79908, 435838);	-- Crystallized Mycobloom
+			FirstCraft(79910, 435843);	-- Irradiated Mycobloom
+			FirstCraft(79907, 435812);	-- Lush Mycobloom
+			FirstCraft(79912, 435850);	-- Sporefused Mycobloom
 			-- Orbinid
-			--FirstCraft(XXXXX, 435822);	-- Orbinid
+			FirstCraft(79920, 435822);	-- Orbinid
 			--FirstCraft(XXXXX, 435864);	-- Altered Orbinid
 			--FirstCraft(XXXXX, 435866);	-- Camouflaged Orbinid
 			--FirstCraft(XXXXX, 435862);	-- Crystallized Orbinid
 			--FirstCraft(XXXXX, 435865);	-- Irradiated Orbinid
-			--FirstCraft(XXXXX, 435830);	-- Lush Orbinid
+			FirstCraft(79921, 435830);	-- Lush Orbinid
 			--FirstCraft(XXXXX, 435867);	-- Sporefused Orbinid
 			-- Overload
 			--FirstCraft(XXXXX, 438953);	-- Overload Altered Herb
@@ -1106,21 +1107,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 439728);	-- Webbed Aqirite
 			--FirstCraft(XXXXX, 439719);	-- Weeping Aqirite
 			-- Bismuth
+			FirstCraft(80350, 439705);	-- Bismuth
 			--FirstCraft(XXXXX, 439712);	-- Bismuth Seam
 			--FirstCraft(XXXXX, 439724);	-- Camouflaged Bismuth
-			--FirstCraft(XXXXX, 439715);	-- Crystallized Bismuth
+			FirstCraft(80359, 439715);	-- Crystallized Bismuth
 			--FirstCraft(XXXXX, 439721);	-- EZ-Mine Bismuth
-			--FirstCraft(XXXXX, 439709);	-- Rich Bismuth
-			--FirstCraft(XXXXX, 439727);	-- Webbed Bismuth
+			FirstCraft(80353, 439709);	-- Rich Bismuth
+			FirstCraft(80371, 439727);	-- Webbed Bismuth
 			--FirstCraft(XXXXX, 439718);	-- Weeping Bismuth
 			-- Ironclaw
-			--FirstCraft(XXXXX, 439708);	-- Ironclaw
+			FirstCraft(80352, 439708);	-- Ironclaw
 			--FirstCraft(XXXXX, 439714);	-- Ironclaw Seam
 			--FirstCraft(XXXXX, 439726);	-- Camouflaged Ironclaw
-			--FirstCraft(XXXXX, 439717);	-- Crystallized Ironclaw
+			FirstCraft(80361, 439717);	-- Crystallized Ironclaw
 			--FirstCraft(XXXXX, 439723);	-- EZ-Mine Ironclaw
-			--FirstCraft(XXXXX, 439711);	-- Rich Ironclaw
-			--FirstCraft(XXXXX, 439729);	-- Webbed Ironclaw
+			FirstCraft(80355, 439711);	-- Rich Ironclaw
+			FirstCraft(80373, 439729);	-- Webbed Ironclaw
 			--FirstCraft(XXXXX, 439720);	-- Weeping Ironclaw
 			-- Overload
 			--FirstCraft(XXXXX, 439742);	-- Overload Crystallized

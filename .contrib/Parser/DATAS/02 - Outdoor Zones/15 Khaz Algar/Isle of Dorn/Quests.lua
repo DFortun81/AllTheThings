@@ -13,9 +13,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- Story quest chain START
 			q(81930, {	-- The War Within [A]
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(227669),	-- Teleportation Scroll (QI!)
+				},
 			}),
 			q(78713, {	-- The War Within [H]
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(227669),	-- Teleportation Scroll (QI!)
+				},
 			}),
 			q(78714, {	-- Oh, THAT Sword
 				["sourceQuests"] = {
@@ -122,7 +128,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 				q(78459, {	-- State of the Union
 					["sourceQuests"] = {
-						78547,	-- Stones of Dornogal
+						78457,	-- Stones of Dornogal
 						78468,	-- The Archive
 					},
 					["provider"] = { "n", 217861 },	-- Merrix
@@ -832,14 +838,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--	Rares / Bonus Objectives / Once per character?
 			--	need to be moved into rares if didn't get bonus objective
 			-- TODO: Worldsoul memory @ 51.2, 29.2
-			-- new?
-			q(81891, {	-- Malfuctioning Spire
-				["provider"] = { "n", 220068 },	-- Malfuctioning Spire
-				["coord"] = { 26.7, 57.4, ISLE_OF_DORN },
-				["g"] = {
-					i(223356),	-- Shoulderpads of the Steamsurger
-				},
-			}),
 		}),
 	}),
 })));

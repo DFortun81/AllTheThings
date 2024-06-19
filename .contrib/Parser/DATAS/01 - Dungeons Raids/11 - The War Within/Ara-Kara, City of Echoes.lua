@@ -3,10 +3,11 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1271, {	-- Ara-Kara, City of Echoes
-		--["coord"] = { X, Y, AZJ_KAHET },
-		--["maps"] = {
-		--	2216,	-- it is using same mapID as outdoor
-		--},
+		["coord"] = { 52.2, 45.8, NERUBAR_LOWER },
+		["maps"] = {
+			2357,	-- 	-- CityOfEchoes_A // Echoing Overlook
+			2358,	-- 	-- CityOfEchoes_B // The Undercache
+		},
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2583, {	-- Avanoxx

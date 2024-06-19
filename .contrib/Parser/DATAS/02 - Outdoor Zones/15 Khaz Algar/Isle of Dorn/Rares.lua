@@ -122,14 +122,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 81893,
 				["g"] = {
 					i(223351),	-- Wolf Packleader's Hood
+					i(223370),	-- Wolf Packleader's Visor
 				},
 			}),
-			n(219262, {	-- Springbubble (vignette name - Scorching Steamsurger)
-				["description"] = "Walking around in area",
+			n(219262, {	-- Springbubble
 				["coord"] = { 58.7, 60.7, ISLE_OF_DORN },
 				["questID"] = 81892,
 				["g"] = {
 					i(223356),	-- Shoulderpads of the Steamsurger
+					i(223357),	-- Spaulders of the Steamsurger
 				},
 			}),
 			n(219265, {	-- Emperor Pitfang (old npcID - 219269)
@@ -160,6 +161,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 78619,
 				["g"] = {
 					i(223367),	-- Cuffs of the Titancap
+					i(223365),	-- Wristguards of the Titancap
 				},
 			}),
 			n(219284, {	-- Zovex
@@ -168,6 +170,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 82203,
 				["g"] = {
 					i(226117),	-- Dalaran Guardian's Arcanotool
+				},
+			}),
+			n(220068, {	-- Malfuctioning Spire
+				--could be available only during starting quests?
+				["coord"] = { 26.7, 57.4, ISLE_OF_DORN },
+				["questID"] = 81891,
+				["g"] = {
+					i(223356),	-- Shoulderpads of the Steamsurger
 				},
 			}),
 		})),

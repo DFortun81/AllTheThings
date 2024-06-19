@@ -2,6 +2,7 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local MINING_KNOWLEDGE = 2035;
+--local TWW_MINING_KNOWLEDGE = ;
 root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
 	-- #if AFTER 3.0.2
 	n(DISCOVERY, {
@@ -1275,5 +1276,80 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				["provider"] = { "i", 201301 },	-- Iridescent Ore
 			}),
 		})),
+	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		--[[filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TWW_MINING_KNOWLEDGE, 1 }} }, {
+				r(xx),	-- Refine ?
+			}),
+		}),]]--
+		n(TREASURES, {
+			o(455957, {	-- Arathi Precision Drill
+				["coord"] = { 46.1, 64.4, HALLOWFALL },
+				["questID"] = 83910,
+				["g"] = {
+					i(226336),	-- Arathi Precision Drill
+				},
+			}),
+			o(455956, {	-- Devout Archaeologist's Excavator
+				["coord"] = { 43.1, 56.8, HALLOWFALL },
+				["questID"] = 83911,
+				["g"] = {
+					i(226337),	-- Devout Archaeologist's Excavator
+				},
+			}),
+			o(455960, {	-- Dornogal Chisel
+				["coord"] = { 36.6, 79.3, DORNOGAL },
+				["questID"] = 83907,
+				["g"] = {
+					i(226333),	-- Dornogal Chisel
+				},
+			}),
+			o(455961, {	-- Earthen Miner's Gavel
+				["coord"] = { 58.2, 62.0, ISLE_OF_DORN },
+				["questID"] = 83906,
+				["g"] = {
+					i(226332),	-- Earthen Miner's Gavel
+				},
+			}),
+		}),
+		--[[n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_MINING_KNOWLEDGE),
+			},
+		},{
+			i(),	-- Mining Field Notes
+			q(, {		-- Inscription Order: Mining
+				["name"] = "Inscription Order: Mining",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", xx },	-- xx Treatise on Mining
+			}),
+			q(, {	-- Weekly Mining Knowledgepoint #1
+				["name"] = "Weekly Mining Knowledgepoint #1",
+				["provider"] = { "i", xx },	-- 
+			}),
+			q(, {	-- Weekly Mining Knowledgepoint #2
+				["name"] = "Weekly Mining Knowledgepoint #2",
+				["provider"] = { "i", xx },	-- 
+			}),
+			--q(, {	-- Weekly Mining Knowledgepoint #3
+			--	["name"] = "Weekly Mining Knowledgepoint #3",
+			--	["provider"] = { "i", xx },	-- 
+			--}),
+			--q(, {	-- Weekly Mining Knowledgepoint #4
+			--	["name"] = "Weekly Mining Knowledgepoint #4",
+			--	["provider"] = { "i", xx },	-- 
+			--}),
+			--q(, {	-- Weekly Mining Knowledgepoint #5
+			--	["name"] = "Weekly Mining Knowledgepoint #5",
+			--	["provider"] = { "i", xx },	-- 
+			--}),
+			--q(, {	-- Weekly Mining Knowledgepoint #6
+			--	["name"] = "Weekly Mining Knowledgepoint #6",
+			--	["provider"] = { "i", xx },	-- ?
+			--}),
+		})),]]--
 	})),
 })));

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1274, {	-- City of Threads
-		--["coord"] = { X, Y, AZJ_KAHET },
+		["coord"] = { 46.7, 63.4, AZJ_KAHET },
 		["maps"] = {
 			2343,	-- City of Threads
 			2344,	-- The Transformatory

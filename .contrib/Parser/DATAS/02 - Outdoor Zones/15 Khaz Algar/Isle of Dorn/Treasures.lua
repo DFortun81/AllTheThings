@@ -88,15 +88,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--
 				},
 			}),
-			o(446473, {	-- Herb-Infused Brew
-				--vignette and actual object have different names, probably have other objectID
+			--]]
+			o(446473, {	-- Infused Cinderbrew
 				["questID"] = 82714,
-				["coord"] = { 56.3, 64.2, ISLE_OF_DORN },
+				["coord"] = { 56.2, 60.9, ISLE_OF_DORN },
 				["g"] = {
 					i(224263),	-- Infused Cinderbrew
 				},
 			}),
-			--]]
 			n(212928, {	-- Dalaran Sewer Turtle
 				["coord"] = { 38.0, 79.5, ISLE_OF_DORN },
 				--["cost"] = { "i", xx, 5 },	-- Dornish Pike x5

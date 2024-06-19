@@ -13,7 +13,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 34.9, 85.6, ISLE_OF_DORN },
 				})),
 				petbattle(q(82291, {	-- Robot Rumble
-					--["coord"] = { x, y, ISLE_OF_DORN },	-- painful to go there without flying
+					--["provider"] = { "n", 223407 },	-- Awakened Custodian
+					["coord"] = { 48.2, 32.0, ISLE_OF_DORN },
 				})),
 				q(82234, {	-- A Floral Flair for Every Ram
 					["coord"] = { 40.2, 80.4, ISLE_OF_DORN },

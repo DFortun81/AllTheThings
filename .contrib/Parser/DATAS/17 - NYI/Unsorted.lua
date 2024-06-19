@@ -3277,9 +3277,7 @@ root(ROOTS.Unsorted, {
 			i(223371),	-- Slippers of Shallow Waters
 			i(223372),	-- Sabatons of Shallow Waters
 			i(223374),	-- Nerubian Weaver's Gown
-			i(223377),	-- Ancient Fungarian's Fingerwrap
 			i(223378),	-- Footguards of the Nerubian Twins
-			i(223379),	-- Nerubian Weaver's Chestplate
 			i(223380),	-- Nerubian Weaver's Chainmail
 			i(223382),	-- Murkshade Grips
 			i(223383),	-- Murkshade Handguards
@@ -3289,10 +3287,8 @@ root(ROOTS.Unsorted, {
 			i(223387),	-- Vilewing Chain Helm
 			i(223390),	-- Leggings of Dark Hunger
 			i(223391),	-- Legguards of Dark Hunger
-			i(223394),	-- Deepfiend Pauldrons
 			i(223395),	-- Deepfiend Shoulderpads
 			i(223396),	-- Deepfiend Shoulder Shells
-			i(223397),	-- Abyssal Hunter's Girdle
 			i(223398),	-- Abyssal Hunter's Sash
 			i(223399),	-- Abyssal Hunter's Chain
 			i(223402),	-- Corrupted Earthen Wristguards
@@ -3634,7 +3630,6 @@ root(ROOTS.Unsorted, {
 			i(224252),	-- Calcified Journal
 			i(224254),	-- Wooden Figure
 			i(224257),	-- Sturdy Locket
-			i(224263),	-- Infused Cinderbrew
 			i(224264),	-- Deepgrove Petal
 			i(224265),	-- Deepgrove Rose
 			i(224266),	-- Ivory Tinderbox
@@ -4174,7 +4169,6 @@ root(ROOTS.Unsorted, {
 			i(225817),	-- Ominous Ceremonial Robe
 			i(225818),	-- Tainted Incense
 			i(225819),	-- Smudged Propaganda
-			i(225821),	-- Tattered Theater Hood
 			i(225822),	-- Jar of Cinderbee Honey
 			i(225823),	-- Split Bull-Horn
 			i(225824),	-- Sand Sculpting Comb
@@ -4388,12 +4382,8 @@ root(ROOTS.Unsorted, {
 			i(226297),	-- Arathi Safety Gloves
 			i(226298),	-- Puppeted Mechanical Spider
 			i(226299),	-- Emptied Venom Canister
-			i(226300),	-- Ancient Flower
-			i(226301),	-- Dornogal Gardening Scythe
 			i(226302),	-- Earthen Digging Fork
 			i(226303),	-- Fungarian Slicer's Knife
-			i(226304),	-- Arathi Garden Trowel
-			i(226305),	-- Arathi Herb Pruner
 			i(226306),	-- Web-Entangled Lotus
 			i(226307),	-- Tunneler's Shovel
 			i(226308),	-- Dornogal Scribe's Quill
@@ -4417,12 +4407,8 @@ root(ROOTS.Unsorted, {
 			i(226329),	-- Arathi Leather Burnisher
 			i(226330),	-- Nerubian Tanning Mallet
 			i(226331),	-- Curved Nerubian Skinning Knife
-			i(226332),	-- Earthen Miner's Gavel
-			i(226333),	-- Dornogal Chisel
 			i(226334),	-- Earthen Excavator's Shovel
 			i(226335),	-- Regenerating Ore
-			i(226336),	-- Arathi Precision Drill
-			i(226337),	-- Devout Archaeologist's Excavator
 			i(226338),	-- Heavy Spider Crusher
 			i(226339),	-- Nerubian Mining Cart
 			i(226343),	-- Fungarian's Rich Tannin
@@ -4558,7 +4544,6 @@ root(ROOTS.Unsorted, {
 			i(223091),	-- Design: Forger's Font Inspector
 			i(223092),	-- Design: Novelist's Specs
 			i(223267),	-- Swarmite Skyhunter
-			i(223376),	-- Band of the Relic Bearer
 			i(223484),	-- Kobold Mastermind's "Pivel"
 			i(223510),	-- Delver's Dirigible Schematic: Template
 			i(223646),	-- Memory of the Eastern Kingdoms
@@ -4771,7 +4756,6 @@ root(ROOTS.Unsorted, {
 			i(227662),	-- Shimmering Dust
 			i(227667),	-- Algari Enchanting Folio
 			i(227668),	-- Delver's Bounty
-			i(227669),	-- Teleportation Scroll
 			i(227675),	-- Satchel of Alchemy Surplus
 			i(227676),	-- Satchel of Blacksmithing Surplus
 			i(227677),	-- Satchel of Enchanting Surplus

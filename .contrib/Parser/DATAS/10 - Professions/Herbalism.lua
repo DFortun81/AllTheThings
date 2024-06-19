@@ -1420,5 +1420,72 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				r(438812),	-- Refine Herbs+++
 			}),
 		}),
+		n(TREASURES, {
+			o(455993, {	-- Ancient Flower
+				["coord"] = { 57.5, 61.5, ISLE_OF_DORN },
+				["questID"] = 83874,
+				["g"] = {
+					i(226300),	-- Ancient Flower
+				},
+			}),
+			o(455989, {	-- Arathi Garden Trowel
+				["coord"] = { 47.7, 63.3, HALLOWFALL },
+				["questID"] = 83878,
+				["g"] = {
+					i(226304),	-- Arathi Garden Trowel
+				},
+			}),
+			o(455988, {	-- Arathi Herb Pruner
+				["coord"] = { 36.0, 55.0, HALLOWFALL },
+				["questID"] = 83879,
+				["g"] = {
+					i(226305),	-- Arathi Herb Pruner
+				},
+			}),
+			o(455992, {	-- Dornogal Gardening Scythe
+				["coord"] = { 59.2, 23.5, DORNOGAL },
+				["questID"] = 83875,
+				["g"] = {
+					i(226301),	-- Dornogal Gardening Scythe
+				},
+			}),
+		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_HERBALISM_KNOWLEDGE),
+			},
+		},{
+			--i(),	-- Herbalism Field Notes
+			--q(, {	-- Inscription Order: Herbalism
+			--	["name"] = "Inscription Order: Herbalism",
+			--	["description"] = "Requires a crafting order from Inscription.",
+			--	["provider"] = { "i", xx },	-- xx Treatise on Herbalism
+			--}),
+			q(81416, {	-- Weekly Herbalism Knowledgepoint #1
+				["name"] = "Weekly Herbalism Knowledgepoint #1",
+				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			}),
+			q(81417, {	-- Weekly Herbalism Knowledgepoint #2
+				["name"] = "Weekly Herbalism Knowledgepoint #2",
+				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			}),
+			--q(, {	-- Weekly Herbalism Knowledgepoint #3
+			--	["name"] = "Weekly Herbalism Knowledgepoint #3",
+			--	["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			--}),
+			--q(, {	-- Weekly Herbalism Knowledgepoint #4
+			--	["name"] = "Weekly Herbalism Knowledgepoint #4",
+			--	["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			--}),
+			--q(, {	-- Weekly Herbalism Knowledgepoint #5
+			--	["name"] = "Weekly Herbalism Knowledgepoint #5",
+			--	["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			--}),
+			--q(, {	-- Weekly Herbalism Knowledgepoint #6
+			--	["name"] = "Weekly Herbalism Knowledgepoint #6",
+			--	["provider"] = { "i", xx },	-- ?
+			--}),
+		})),
 	})),
 })));

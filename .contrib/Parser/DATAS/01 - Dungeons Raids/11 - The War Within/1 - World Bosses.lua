@@ -87,7 +87,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 			e(2637, {	-- Shurrai, Atrocity of the Undersea
 				["crs"] = { 221224 },	-- Shurrai <Atrocity of the Undersea>
-				--["coord"] = { x, y, z },
+				["coord"] = { 45.6, 18.4, HALLOWFALL },
 				--["questID"] = xx,
 				["g"] = sharedData({
 					["modID"] = 3,
@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 			--[[
 			q(xx, {	-- xx (WQ)
-				["coord"] = { x, y, z },
+				["coord"] = { 45.6, 18.4, HALLOWFALL },
 				["isWorldQuest"] = true,
 				["sym"] = {
 					{"select","encounterID",2637,},{"pop"},	-- Original WB

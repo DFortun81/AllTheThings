@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			n(207802, {	-- Beledar's Spawn
 				--possibly spawning only when crystal is purple
-				["coord"] = { 48.9, 32.0, HALLOWFALL },
+				["coord"] = { 48.9, 32.0, HALLOWFALL },	-- more than one spot? 58.0, 49.2?
 				["questID"] = 81763,
 				["g"] = {
 					-- no loot
@@ -93,12 +93,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 80011,
 				["g"] = {
 					i(223393),	-- Deepfiend Spaulders
+					i(223394),	-- Deepfiend Pauldrons
 				},
 			}),
 			n(218426, {	-- Ixlorb the Spinner
 				["coord"] = { 57.0, 64.4, HALLOWFALL },
 				["questID"] = 80006,
 				["g"] = {
+					i(223379),	-- Nerubian Weaver's Chestplate
 					i(223381),	-- Nerubian Weaver's Vest
 				},
 			}),
@@ -111,6 +113,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 81761,
 				["g"] = {
 					i(223400),	-- Abyssal Hunter's Cinch
+					i(223397),	-- Abyssal Hunter's Girdle
 				},
 			}),
 			n(221767, {	-- Funglour

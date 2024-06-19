@@ -3,10 +3,8 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1270, {	-- The Dawnbreaker
-		--["coord"] = { X, Y, HALLOWFALL },
-		--["maps"] = {
-			--2215,	-- same as outdoor
-		--},
+		["coord"] = { 54.8, 62.9, HALLOWFALL },
+		["maps"] = { 2359 },	-- The Dawnbreaker
 		["g"] = {
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2580, {	-- Speaker Shadowcrown

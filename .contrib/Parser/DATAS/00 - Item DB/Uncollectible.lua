@@ -1781,13 +1781,6 @@ i(211798);	-- Un-Raised Bone Fragments
 ------------------
 -- PATCH 11.0.0 --
 ------------------
-i(210829);	-- Neutralize Concoctions
-i(225677);	-- Gleaming Chaos
-i(223883);	-- Mercurial Transmutation
-i(223884);	-- Volatile Transmutation
-i(223885);	-- Ominous Transmutation
-i(223886);	-- Mercurial Herbs
-i(223887);	-- Ominous Herbs
 i(220287);	-- Acid-Filled Sack
 i(217170);	-- Backup Candles
 i(220290);	-- Barbed Pincers
@@ -1826,6 +1819,7 @@ i(220355);	-- Enlarged Ear
 i(220222);	-- Everburning Lump
 i(225814);	-- Feather-on-a-Stick
 i(220302);	-- Fractured Casing
+i(225677);	-- Gleaming Chaos
 i(220259);	-- Gob of Mucus
 i(220509);	-- Gossamer Web
 i(225790);	-- Half-Painted Pewter Spider
@@ -1842,11 +1836,16 @@ i(220264);	-- Jaw with Barbed Teeth
 i(220234);	-- Leaden Vial
 i(225820);	-- Lovingly Worn Chisel
 i(225803);	-- Lynx Tag Collar
+i(223886);	-- Mercurial Herbs
+i(223883);	-- Mercurial Transmutation
 i(225850);	-- Moldy Rations
 i(220219);	-- Mound of Night Soil
 i(217162);	-- Necklace of Kobold Teeth
+i(210829);	-- Neutralize Concoctions
 i(224153);	-- Nibbled Shroomcap
 i(213258);	-- Odorant Oddity
+i(223887);	-- Ominous Herbs
+i(223885);	-- Ominous Transmutation
 i(220244);	-- Oversized Claw
 i(220251);	-- Pale Gills
 i(225787);	-- Pheromone-Covered Missive
@@ -1875,6 +1874,7 @@ i(220268);	-- Spiraled Horn
 i(213262);	-- Stained Glass Fragment
 i(220363);	-- Straw-Stuffed Hat
 i(220292);	-- Stretched Wing
+i(225821);	-- Tattered Theater Hood
 i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
 i(225852);	-- The Foolhardy's Guide to Survival
 i(220296);	-- Thickly Webbed Foot
@@ -1888,6 +1888,7 @@ i(225828);	-- Unrefined Dense Ore
 i(218453);	-- Unusable Fragment
 i(220289);	-- Venomous Stinger
 i(220270);	-- Vile Catalyst
+i(223884);	-- Volatile Transmutation
 i(220263);	-- Wax Miner's Sack
 i(225802);	-- Well-Worn Darning Needle
 i(217163);	-- Well Worn Doll
