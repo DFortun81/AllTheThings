@@ -161,7 +161,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(185240),	-- Unchained Aspirant's Cape
 								i(192319),	-- Eternal Aspirant's Cloak
 								i(192355),	-- Eternal Aspirant's Drape
-								i(192210),	-- Eternal Aspirant's Cape
+								i(192390),	-- Eternal Aspirant's Cape
 						},
 						})),
 					},
