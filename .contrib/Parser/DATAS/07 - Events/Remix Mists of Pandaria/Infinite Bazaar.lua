@@ -3496,3 +3496,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		},
 	}),
 }))));
+root(ROOTS.HiddenQuestTriggers,  applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
+	q(84258),	-- Upon using item 224459 (Tusks of Mannoroth) SpellID 460105
+}))));
