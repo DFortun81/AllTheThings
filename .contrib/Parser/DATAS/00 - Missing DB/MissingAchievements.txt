@@ -275,7 +275,7 @@ ach(40502),	-- 50 Algari Anglerthread
 ach(40503),	-- 90 Algari Anglerthread
 ach(40504),	-- Rocked to Sleep
 ach(40505),	-- Fate of the Kirin Tor
-ach(40506),	-- No Stone Unturned
+ach(40506),	-- Leave No Treasure Unfound \\ No Stone Unturned
 ach(40507),	-- Hanging Tight
 ach(40509),	-- Awakening The Machine: Wave 10
 ach(40510),	-- One Ping Only
@@ -353,7 +353,7 @@ ach(40648),	-- Mythic: The Stonevault
 ach(40660),	-- The War Within Season 1: Spelunker Supreme
 ach(40662),	-- It's Not Much, But It's Honest Work
 ach(40723),	-- Web-Wrapped in the Finest Silks \\ [PH] 11.0 Mythic VFX Unlock
-ach(40724),	-- Treasures of the Ringing Deeps
+ach(40724),	-- Treasures of The Ringing Deeps \\ Treasures of the Ringing Deeps
 ach(40725),	-- War Within Delves: Endgame
 ach(40726),	-- War Within Delves: Tier 11
 ach(40727),	-- Skittershaw Spin
@@ -371,3 +371,20 @@ ach(40789),	-- I've Got More Flying Machine?!
 ach(40790),	-- Khaz Algar Explorer
 ach(40792),	-- Solo Shuffle Medic: The War Within
 ach(40795),	-- Battleground Blitz Medic: The War Within
+11.0.0.55185
+ach(40796),	-- This Takes Me Back
+ach(40799),	-- Sojourner of The Ringing Deeps
+ach(40800),	-- Warband Tutorial Complete - Teach Warband Bank Summon (DNT)
+ach(40803),	-- Leave No Treasure Unfound: Fungal Foly
+ach(40806),	-- Leave No Treasure Unfound: Earthcrawl Mines
+ach(40807),	-- Leave No Treasure Unfound: Kriegval's Rest
+ach(40808),	-- Leave No Treasure Unfound: Mycomancer Cavern
+ach(40809),	-- Leave No Treasure Unfound: Nightfall Sanctum
+ach(40810),	-- Leave No Treasure Unfound: Skittering Breach
+ach(40811),	-- Leave No Treasure Unfound: Tak-Rethan Abyss
+ach(40812),	-- Leave No Treasure Unfound: The Dread Pit
+ach(40813),	-- Leave No Treasure Unfound: The Sinkhole
+ach(40814),	-- Leave No Treasure Unfound: The Spiral Weave
+ach(40815),	-- Leave No Treasure Unfound: The Underkeep
+ach(40816),	-- Leave No Treasure Unfound: The Waterworks
+ach(40817),	-- A Delver's Bounty

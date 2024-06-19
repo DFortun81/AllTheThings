@@ -16,3 +16,5 @@ title(566),	-- Lamplighter %s
 title(567),	-- Thread-Spinner %s
 11.0.0.55000
 title(568),	-- %s, Machine-Warden
+11.0.0.55185
+title(570),	-- %s, Seeker of Loot
