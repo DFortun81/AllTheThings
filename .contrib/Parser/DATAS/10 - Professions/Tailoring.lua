@@ -2,7 +2,8 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 local EMBROIDERED_DEEP_SEA_SATIN = 158378;
-local TAILORING_KNOWLEDGE = 2026;
+local DF_TAILORING_KNOWLEDGE = 2026;
+local TWW_TAILORING_KNOWLEDGE = 2795;
 root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAILORING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18888),	-- Quite the Quilt IV
@@ -652,7 +653,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", TAILORING_KNOWLEDGE, 1 }}, }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", DF_TAILORING_KNOWLEDGE, 1 }}, }, {
 				r(376556),	-- Azureweave Bolt
 				r(376502),	-- Azureweave Mantle
 				r(376500),	-- Azureweave Robe
@@ -778,7 +779,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				currency(TAILORING_KNOWLEDGE),
+				currency(DF_TAILORING_KNOWLEDGE),
 			},
 		},{
 			i(198609),	-- Tailoring Examples
@@ -821,6 +822,35 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["provider"] = { "i", 198977 },	-- Ohn'arhan Weave
 			}),
 		})),
+	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TWW_TAILORING_KNOWLEDGE, 1 }} }, {
+				r(446940),	-- Consecrated Cloak
+				r(446939),	-- Consecrated Cord
+				r(446938),	-- Consecrated Cuffs
+				r(446945),	-- Consecrated Gloves
+				r(446941),	-- Consecrated Hood
+				r(446943),	-- Consecrated Leggings
+				r(446944),	-- Consecrated Mantle
+				r(446942),	-- Consecrated Robe
+				r(446937),	-- Consecrated Slippers
+				r(446935),	-- Cool Sunset Bracers
+				r(446928),	-- Dawnweave Bolt
+				r(446977),	-- Dawnweave Reagent Bag
+				r(446979),	-- Duskweave Bag
+				r(446927),	-- Duskweave Bolt
+				r(446932),	-- Gloves of the Woven Dusk
+				r(446930),	-- Grips of the Woven Dawn
+				r(446995),	-- Preserving Embroidery Thread
+				r(446933),	-- Slippers of the Woven Dusk
+				r(454431),	-- The Severed Satchel
+				r(446931),	-- Treads of the Woven Dawn
+				r(446934),	-- Warm Sunrise Bracers
+				r(446997),	-- Weavercloth Embroidery Thread
+			}),
+		}),
 	})),
 })));
 

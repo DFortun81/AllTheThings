@@ -2,6 +2,11 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.WorldDrops, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	filter(REAGENTS, {
+		i(224826),	-- Dawnweave Scraps
+		i(224824),	-- Duskweave Scraps
+		i(224828),	-- Weavercloth
+	}),
 	filter(RECIPES, {
 		i(223140),	-- Formula: Enchant Cloak - Chant of Burrowing Rapidity (RECIPE!)
 		i(223141),	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)

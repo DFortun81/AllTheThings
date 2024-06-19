@@ -7,8 +7,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		--["lore"] = "",
 		["maps"] = {
 			2256,	-- Azj-Kahet Lower
-			2213,	-- Nerub'ar
-			2216,	-- Nerub'ar Lower
+			NERUBAR,
+			NERUBAR_LOWER,
 		},
 	}),
 })));

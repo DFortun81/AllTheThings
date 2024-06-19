@@ -25,6 +25,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223110, {	-- Pattern: Arathi Leatherworker's Smock (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
+					i(224422, {	-- Pattern: Artisan Enchanter's Hat (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(224421, {	-- Pattern: Artisan Fishing Cap (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(224420, {	-- Pattern: Artisan Gardening Hat (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
 					i(223107, {	-- Pattern: Charged Scrapmaster's Gauntlets (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),

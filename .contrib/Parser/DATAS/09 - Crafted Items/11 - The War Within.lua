@@ -1187,22 +1187,134 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(219008),	-- Supreme Beast Lure
 		i(219010),	-- Writhing Creature Lure
 	}),
-	--[[
 	prof(TAILORING, {
 		n(ARMOR, {
+			i(217120),	-- Algari Competitor's Cloth Bands
+			i(217125),	-- Algari Competitor's Cloth Cloak
+			i(217122),	-- Algari Competitor's Cloth Gloves
+			i(217121),	-- Algari Competitor's Cloth Hood
+			i(217117),	-- Algari Competitor's Cloth Leggings
+			i(217124),	-- Algari Competitor's Cloth Sash
+			i(217118),	-- Algari Competitor's Cloth Shoulderpads
+			i(217119),	-- Algari Competitor's Cloth Treads
+			i(217123),	-- Algari Competitor's Cloth Tunic
+			i(222817),	-- Consecrated Cloak
+			i(222816),	-- Consecrated Cord
+			i(222815),	-- Consecrated Cuffs
+			i(222822),	-- Consecrated Gloves
+			i(222818),	-- Consecrated Hood
+			i(222820),	-- Consecrated Leggings
+			i(222821),	-- Consecrated Mantle
+			i(222819),	-- Consecrated Robe
+			i(222814),	-- Consecrated Slippers
+			i(222812),	-- Cool Sunset Bracers
+			i(222809),	-- Gloves of the Woven Dusk
+			i(222807),	-- Grips of the Woven Dawn
+			i(222833),	-- Pioneer's Cloth Cuffs
+			i(222837),	-- Pioneer's Cloth Robe
+			i(222832),	-- Pioneer's Cloth Slippers
+			i(222835),	-- Pioneer's Perfected Cloak
+			i(222834),	-- Pioneer's Perfected Cord
+			i(222840),	-- Pioneer's Perfected Gloves
+			i(222836),	-- Pioneer's Perfected Hood
+			i(222838),	-- Pioneer's Perfected Leggings
+			i(222839),	-- Pioneer's Perfected Mantle
+			i(222810),	-- Slippers of the Woven Dusk
+			i(222808),	-- Treads of the Woven Dawn
+			i(222811),	-- Warm Sunrise Bracers
+		}),
+		filter(BAGS, {
+			i(222859),	-- Concoctor's Clutch
+			i(222864),	-- Darkmoon Duffle
+			i(222854),	-- Dawnweave Reagent Bag
+			i(222856),	-- Duskweave Bag
+			i(222866),	-- Excavator's Haversack
+			i(222865),	-- Gardener's Seed Satchel
+			i(225936),	-- Hideseeker's Tote
+			i(222861),	-- Hideshaper's Workbag
+			i(222860),	-- Ignition Satchel
+			i(222867),	-- Jeweler's Purse
+			i(222862),	-- Magically "Infinite" Messenger
+			i(222863),	-- Prodigy's Toolbox
+			i(224852),	-- The Severed Satchel
+			i(222853),	-- Weavercloth Bag
+			i(222855),	-- Weavercloth Reagent Bag
 		}),
 		filter(MISC, {
+			i(225729),	-- Algari Weaverline
+			i(222879),	-- Bright Polishing Cloth+
+			i(222880),	-- Bright Polishing Cloth++
+			i(222881),	-- Bright Polishing Cloth+++
+			i(222868),	-- Dawnthread Lining+
+			i(222869),	-- Dawnthread Lining++
+			i(222870),	-- Dawnthread Lining+++
+			i(222894),	-- Daybreak Spellthread+
+			i(222895),	-- Daybreak Spellthread++
+			i(222896),	-- Daybreak Spellthread+++
+			i(222871),	-- Duskthread Lining+
+			i(222872),	-- Duskthread Lining++
+			i(222873),	-- Duskthread Lining+++
+			i(222876),	-- Gritty Polishing Cloth+
+			i(222877),	-- Gritty Polishing Cloth++
+			i(222878),	-- Gritty Polishing Cloth+++
+			i(222885),	-- Preserving Embroidery Thread+
+			i(222886),	-- Preserving Embroidery Thread++
+			i(222887),	-- Preserving Embroidery Thread+++
+			i(222891),	-- Sunset Spellthread+
+			i(222892),	-- Sunset Spellthread++
+			i(222893),	-- Sunset Spellthread+++
+			i(224440),	-- Weavercloth Bandage+
+			i(224441),	-- Weavercloth Bandage++
+			i(224442),	-- Weavercloth Bandage+++
+			i(222882),	-- Weavercloth Embroidery Thread+
+			i(222883),	-- Weavercloth Embroidery Thread++
+			i(222884),	-- Weavercloth Embroidery Thread+++
+			i(222888),	-- Weavercloth Spellthread+
+			i(222889),	-- Weavercloth Spellthread++
+			i(222890),	-- Weavercloth Spellthread+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
+			i(222850),	-- Artisan's Alchemist's Robe
+			i(222851),	-- Artisan's Chef's Hat
+			i(222849),	-- Artisan's Enchanter's Hat
+			i(222848),	-- Artisan's Fishing Cap
+			i(222847),	-- Artisan's Gardening Hat
+			i(222852),	-- Artisan Tailor's Coat
+			i(222845),	-- Weavercloth Alchemist's Robe
+			i(222846),	-- Weavercloth Chef's Hat
+			i(222843),	-- Weavercloth Enchanter's Hat
+			i(222842),	-- Weavercloth Fishing Cap
+			i(222841),	-- Weavercloth Gardening Hat
+			i(222844),	-- Weavercloth Tailor's Coat
 		}),
 		filter(REAGENTS, {
+			i(222801),	-- Dawnweave Bolt+
+			i(222802),	-- Dawnweave Bolt++
+			i(222803),	-- Dawnweave Bolt+++
+			i(222798),	-- Duskweave Bolt+
+			i(222799),	-- Duskweave Bolt++
+			i(222800),	-- Duskweave Bolt+++
+			i(224832),	-- Exquisite Weavercloth Bolt+
+			i(224833),	-- Exquisite Weavercloth Bolt++
+			i(224834),	-- Exquisite Weavercloth Bolt+++
+			i(222792),	-- Spool of Dawnthread+
+			i(222793),	-- Spool of Dawnthread++
+			i(222794),	-- Spool of Dawnthread+++
+			i(222789),	-- Spool of Duskthread+
+			i(222790),	-- Spool of Duskthread++
+			i(222791),	-- Spool of Duskthread+++
+			i(222795),	-- Spool of Weaverthread+
+			i(222796),	-- Spool of Weaverthread++
+			i(222797),	-- Spool of Weaverthread+++
+			i(222804),	-- Weavercloth Bolt+
+			i(222805),	-- Weavercloth Bolt++
+			i(222806),	-- Weavercloth Bolt+++
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = TAILORING,
 		},{
 		})),
 	}),
-	--]]
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

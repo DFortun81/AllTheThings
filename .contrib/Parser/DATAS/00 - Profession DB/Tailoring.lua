@@ -1459,3 +1459,104 @@ i(211576, 430080);	-- Draconic Combatant's Wildercloth Sash
 i(211577, 430079);	-- Draconic Combatant's Wildercloth Shoulderpads
 i(211578, 430075);	-- Draconic Combatant's Wildercloth Treads
 i(211579, 430074);	-- Draconic Combatant's Wildercloth Tunic
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+--- TRAINER ---
+i(0, 423343);		-- Khaz Algar Tailoring
+i(0, 446926);		-- Unraveling
+i(0, 425143);		-- Recraft Equipment
+i(0, 456706);		-- Algari Weaverline
+i(0, 446996);		-- Bright Polishing Cloth
+i(0, 454397);		-- Exquisite Weavercloth Bolt
+i(0, 446998);		-- Gritty Polishing Cloth
+i(0, 446958);		-- Pioneer's Cloth Cloak
+i(0, 446957);		-- Pioneer's Cloth Cord
+i(0, 446956);		-- Pioneer's Cloth Cuffs
+i(0, 446959);		-- Pioneer's Cloth Hood
+i(0, 446960);		-- Pioneer's Cloth Robe
+i(0, 446955);		-- Pioneer's Cloth Slippers
+i(0, 446963);		-- Pioneer's Perfected Gloves
+i(0, 446961);		-- Pioneer's Perfected Leggings
+i(0, 446962);		-- Pioneer's Perfected Mantle
+i(0, 446968);		-- Weavercloth Alchemist's Robe
+i(0, 446976);		-- Weavercloth Bag
+i(0, 447002);		-- Weavercloth Bandage
+i(0, 446929);		-- Weavercloth Bolt
+i(0, 446969);		-- Weavercloth Chef's Hat
+i(0, 446966);		-- Weavercloth Enchanter's Hat
+i(0, 446965);		-- Weavercloth Fishing Cap
+i(0, 446964);		-- Weavercloth Gardening Hat
+i(0, 446978);		-- Weavercloth Reagent Bag
+i(0, 446999);		-- Weavercloth Spellthread
+i(0, 446967);		-- Weavercloth Tailor's Coat
+--- ITEM ---
+i(225437, 438892);	-- Algari Competitor's Cloth Bands
+i(225442, 438897);	-- Algari Competitor's Cloth Cloak
+i(225439, 438894);	-- Algari Competitor's Cloth Gloves
+i(225438, 438893);	-- Algari Competitor's Cloth Hood
+i(225434, 438889);	-- Algari Competitor's Cloth Leggings
+i(225441, 438896);	-- Algari Competitor's Cloth Sash
+i(225435, 438890);	-- Algari Competitor's Cloth Shoulderpads
+i(225436, 438891);	-- Algari Competitor's Cloth Treads
+i(225440, 438895);	-- Algari Competitor's Cloth Tunic
+i(224423, 446973);	-- Artisan Alchemist's Robe
+i(224424, 446974);	-- Artisan Chef's Hat
+i(224422, 446972);	-- Artisan Enchanter's Hat
+i(224421, 446971);	-- Artisan Fishing Cap
+i(224420, 446970);	-- Artisan Gardening Hat
+i(224425, 446982);	-- Concoctor's Clutch
+i(224430, 446987);	-- Darkmoon Duffle
+i(224435, 446992);	-- Duskthread Lining
+i(224432, 446989);	-- Excavator's Haversack
+i(224431, 446988);	-- Gardener's Seed Satchel
+i(225995, 447888);	-- Hideseeker's Tote
+i(224427, 446984);	-- Hideshaper's Workbag
+i(224426, 446983);	-- Ignition Satchel
+i(224433, 446990);	-- Jeweler's Purse
+i(224428, 446985);	-- Magically "Infinite" Messenger
+i(224429, 446986);	-- Prodigy's Toolbox
+--- SPECIALIZATION ---
+i(0, 446940);		-- Consecrated Cloak
+i(0, 446939);		-- Consecrated Cord
+i(0, 446938);		-- Consecrated Cuffs
+i(0, 446945);		-- Consecrated Gloves
+i(0, 446941);		-- Consecrated Hood
+i(0, 446943);		-- Consecrated Leggings
+i(0, 446944);		-- Consecrated Mantle
+i(0, 446942);		-- Consecrated Robe
+i(0, 446937);		-- Consecrated Slippers
+i(0, 446935);		-- Cool Sunset Bracers
+i(0, 446928);		-- Dawnweave Bolt
+i(0, 446977);		-- Dawnweave Reagent Bag
+i(0, 446979);		-- Duskweave Bag
+i(0, 446927);		-- Duskweave Bolt
+i(0, 446932);		-- Gloves of the Woven Dusk
+i(0, 446930);		-- Grips of the Woven Dawn
+i(0, 446995);		-- Preserving Embroidery Thread
+i(0, 446933);		-- Slippers of the Woven Dusk
+i(0, 454431);		-- The Severed Satchel
+i(0, 446931);		-- Treads of the Woven Dawn
+i(0, 446934);		-- Warm Sunrise Bracers
+i(0, 446997);		-- Weavercloth Embroidery Thread
+--- UNKNOWN ---
+i(0, 446975);		-- Artisan Tailor's Coat
+i(224434, 446991);	-- Dawnthread Lining
+i(0, 447001);		-- Daybreak Spellthread
+i(0, 447000);		-- Sunset Spellthread
+--- NYI ---
+i(0, 446936);		-- Adaptive Delver's Shawl
+i(0, 446980);		-- Satchel of the Long Day
+i(0, 446981);		-- Satchel of the Long Night
+i(0, 446949);		-- Vicious Combatant's Weavercloth Cloak
+i(0, 446947);		-- Vicious Combatant's Weavercloth Cord
+i(0, 446954);		-- Vicious Combatant's Weavercloth Gloves
+i(0, 446950);		-- Vicious Combatant's Weavercloth Hood
+i(0, 446953);		-- Vicious Combatant's Weavercloth Mantle
+i(0, 446952);		-- Vicious Combatant's Weavercloth Pants
+i(0, 446951);		-- Vicious Combatant's Weavercloth Robe
+i(0, 446946);		-- Vicious Combatant's Weavercloth Slippers
+i(0, 446948);		-- Vicious Combatant's Weavercloth Wrists
+i(224436, 446993);	-- Reinforced Wrap Kit
+i(224437, 446994);	-- Weaverthread Parachute Kit

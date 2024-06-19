@@ -187,3 +187,42 @@ DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADD
 		r(376555),	-- Wildercloth Bolt
 	}),
 }));
+TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	r(423343),	-- Khaz Algar Tailoring
+	r(446926),	-- Unraveling
+	r(425143),	-- Recraft Equipment
+	n(ARMOR, {
+		r(446958),	-- Pioneer's Cloth Cloak
+		r(446957),	-- Pioneer's Cloth Cord
+		r(446956),	-- Pioneer's Cloth Cuffs
+		r(446959),	-- Pioneer's Cloth Hood
+		r(446960),	-- Pioneer's Cloth Robe
+		r(446955),	-- Pioneer's Cloth Slippers
+		r(446963),	-- Pioneer's Perfected Gloves
+		r(446961),	-- Pioneer's Perfected Leggings
+		r(446962),	-- Pioneer's Perfected Mantle
+	}),
+	filter(BAGS, {
+		r(446976),	-- Weavercloth Bag
+		r(446978),	-- Weavercloth Reagent Bag
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(446968),	-- Weavercloth Alchemist's Robe
+		r(446969),	-- Weavercloth Chef's Hat
+		r(446966),	-- Weavercloth Enchanter's Hat
+		r(446965),	-- Weavercloth Fishing Cap
+		r(446964),	-- Weavercloth Gardening Hat
+		r(446967),	-- Weavercloth Tailor's Coat
+	}),
+	filter(MISC, {
+		r(456706),	-- Algari Weaverline
+		r(446996),	-- Bright Polishing Cloth
+		r(446998),	-- Gritty Polishing Cloth
+		r(447002),	-- Weavercloth Bandage
+		r(446999),	-- Weavercloth Spellthread
+	}),
+	filter(REAGENTS, {
+		r(454397),	-- Exquisite Weavercloth Bolt
+		r(446929),	-- Weavercloth Bolt
+	}),
+});
