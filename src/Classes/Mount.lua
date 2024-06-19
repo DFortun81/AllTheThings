@@ -58,7 +58,7 @@ do
 		end
 		local name, icon = GetSpellName(id), GetSpellIcon(id);
 		if name then
-			_t.text = Colorize(name, app.Colors.Mount)
+			_t.name = name
 			_t.icon = icon;
 		end
 		if itemID then
@@ -101,7 +101,11 @@ do
 		end,
 		-- Mounts use special text coloring instead of default text
 		text = function(t)
-			return Colorize(t.name, app.Colors.Mount)
+			local name = t.name
+			if name then
+				return Colorize(name, app.Colors.Mount)
+			end
+			return t.link
 		end,
 		icon = function(t)
 			return cache.GetCachedField(t, "icon", CacheInfo);
