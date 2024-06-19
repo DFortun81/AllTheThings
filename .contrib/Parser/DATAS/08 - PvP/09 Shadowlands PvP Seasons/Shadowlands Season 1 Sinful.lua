@@ -329,6 +329,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 					}),
 					i(223640, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Gladiator's Cloak Rack
 						["cost"] = {{"i", MOH, 1}},
+						["description"] = "|Cffff0000This ensemble may or may not work.  If it does not work see if you own any of the cloaks in the set.  If the token does not work for you report to ATT discord on how many cloaks you own from this ensemble.|r",
 						["g"] = {
 							-- Gladiator
 							i(175888),	-- Sinful Gladiator's Cloak
