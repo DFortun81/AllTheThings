@@ -1720,10 +1720,10 @@ namespace ATT
                 data.ContainsKey("criteriaID") ||
                 (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
 
-            // if (achID == 19326)
-            // {
+            //if (achID == 6674)
+            //{
 
-            // }
+            //}
 
             // Grab AchievementDB info
             ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
@@ -1799,6 +1799,9 @@ namespace ATT
         {
             // Classic can't trust Retail data for Achievements because Blizzard
             if (!Program.PreProcessorTags.ContainsKey("RETAIL")) return;
+
+            // don't automate any achievement criteria which is specifically listed under a Difficulty
+            if (NestedDifficultyID != 0) return;
 
             if (!data.TryGetValue("criteriaID", out long criteriaID))
                 return;

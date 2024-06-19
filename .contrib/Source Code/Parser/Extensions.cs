@@ -364,11 +364,11 @@ namespace ATT
         /// </summary>
         /// <param name="groups"></param>
         /// <returns></returns>
-        public static bool AnyMatchingGroup<T>(this List<T> groups, Func<IDictionary<string, object>, bool> check)
+        public static bool AnyMatchingGroup(this List<IDictionary<string, object>> groups, Func<IDictionary<string, object>, bool> check)
         {
             if (groups == null || groups.Count == 0) return false;
 
-            foreach (IDictionary<string, object> data in groups.AsTypedEnumerable<IDictionary<string, object>>())
+            foreach (IDictionary<string, object> data in groups)
             {
                 if (check(data))
                     return true;
