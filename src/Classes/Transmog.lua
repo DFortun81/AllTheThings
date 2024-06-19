@@ -1053,6 +1053,7 @@ if app.IsRetail then
 		end
 		if app.IsAccountCached("Sources", sourceID) then
 			-- app.PrintDebug("Learned SourceID",sourceID,link)
+			app.SetAccountCached("SourceItemsOnCharacter",sourceID)
 			return
 		end
 		-- if wrong class then won't be learned (probably)
