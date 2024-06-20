@@ -922,6 +922,8 @@ local function RefreshActiveInformationTypes()
 	ActiveInformationTypesForExternalTooltips[#ActiveInformationTypesForExternalTooltips + 1] = PostProcessor;
 	ActiveInformationTypes[#ActiveInformationTypes + 1] = PostProcessor;
 end
+-- other settings can control what information is displayed without themselves being an information type
+app.AddEventHandler("OnSettingsRefreshed", RefreshActiveInformationTypes)
 local function SortInformationTypes()
 	wipe(SortedInformationTypes);
 	wipe(SortedInformationTypesByName);
