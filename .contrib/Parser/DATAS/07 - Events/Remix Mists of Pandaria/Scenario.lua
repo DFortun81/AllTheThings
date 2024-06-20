@@ -18,14 +18,13 @@ local MAPS = {
 	483,
 	450,
 }
-local mapped = function(id, t)
-	local o = n(id ,t)
-	o.maps = MAPS
-	return o
+local mapped = function(t)
+	t.maps = MAPS
+	return t
 end
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(SCENARIOS, {
-		mapped(ACHIEVEMENTS, {
+		n(ACHIEVEMENTS, {
 			ach(19881, {	-- Escalation
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -58,8 +57,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				},
 			}),
 		}),
-		mapped(SCENARIO_COMPLETION, {
-			n(ARMOR, {
+		n(SCENARIO_COMPLETION, {
+			mapped(n(ARMOR, {
 				filter(CLOTH, {
 					i(213657),	-- Brewmoon Crown
 					i(213655),	-- Brewmoon Mantle
@@ -108,8 +107,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214755),	-- Swarmbreaker's Waistguard
 					i(214757),	-- Swarmbreaker's Warhelm
 				}),
-			}),
-			d(DIFFICULTY.SCENARIO.NORMAL, bubbleDown({ ["modID"] = 0 }, {
+			})),
+			mapped(d(DIFFICULTY.SCENARIO.NORMAL, bubbleDown({ ["modID"] = 0 }, {
 				n(WEAPONS, {
 					i(215492),	-- Axe of Iron Might
 					i(215752),	-- Ced's Basher
@@ -133,8 +132,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215953),	-- Siege Captain's Blade
 					i(215808),	-- Yak-Herder's Longspear
 				}),
-			})),
-			d(DIFFICULTY.SCENARIO.HEROIC, bubbleDown({ ["modID"] = 0 }, {
+			}))),
+			mapped(d(DIFFICULTY.SCENARIO.HEROIC, bubbleDown({ ["modID"] = 0 }, {
 				n(WEAPONS, {
 					i(215615),	-- Amber Blade
 					i(216584),	-- Barrier of the Protectorate
@@ -156,7 +155,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215707),	-- Yan-Zhu's Rifle
 					i(215809),	-- Yaungol Warspear
 				}),
-			})),
+			}))),
 		}),
 		-- Scenario Maps
 		m(447, {	-- A Brewing Storm

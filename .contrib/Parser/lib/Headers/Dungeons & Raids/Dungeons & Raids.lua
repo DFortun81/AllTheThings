@@ -7,6 +7,7 @@ DUNGEONS_AND_RAIDS = createHeader({
 });
 DUNGEONS = createHeader({
 	readable = "Dungeons",
+	constant = "DUNGEONS",
 	icon = [[~_.asset("Category_D&R")]],
 	text = {
 		en = "Dungeons",
@@ -14,6 +15,7 @@ DUNGEONS = createHeader({
 });
 RAIDS = createHeader({
 	readable = "Raids",
+	constant = "RAIDS",
 	icon = [[~_.asset("Category_D&R")]],
 	text = {
 		en = "Raids",

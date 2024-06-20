@@ -16,15 +16,14 @@ local MAPS = {
 	475,	-- Heart of Fear
 	456,	-- Terrace of Endless Spring
 }
-local mapped = function(id, t)
-	local o = d(id ,t)
-	o.maps = MAPS
-	return o
+local mapped = function(t)
+	t.maps = MAPS
+	return t
 end
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	n(RAIDS, {
 		n(TIER_14_RAIDS, {
-			mapped(DIFFICULTY.RAID.FINDER, bubbleDown({ ["modID"] = 0 }, {
+			mapped(d(DIFFICULTY.RAID.FINDER, bubbleDown({ ["modID"] = 0 }, {
 				n(ARMOR, {
 					filter(CLOTH, {
 						-- MAGE
@@ -190,8 +189,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215671),	-- Zephyrcall Censer (MSV LFR / HoF LFR (2nd wing))
 					i(215674),	-- Zephyrcall Censer (MSV LFR (1st wing))
 				}),
-			})),
-			mapped(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDown({ ["modID"] = 0 }, {
+			}))),
+			mapped(d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDown({ ["modID"] = 0 }, {
 				n(ARMOR, {
 					filter(CLOTH, {
 						-- MAGE
@@ -335,8 +334,8 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215844),	-- Waterspeaker's Staff
 					i(215672),	-- Zephyrcall Censer (player confirmed)
 				}),
-			})),
-			mapped(DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC, bubbleDown({ ["modID"] = 0 }, {
+			}))),
+			mapped(d(DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC, bubbleDown({ ["modID"] = 0 }, {
 				n(ARMOR, {
 					filter(CLOTH, {
 						-- MAGE
@@ -480,7 +479,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215845),	-- Waterspeaker's Staff (MSV HC)
 					i(215673),	-- Zephyrcall Censer (MSV HC / HoF HC)
 				}),
-			})),
+			}))),
 			inst(317, {	-- Mogu'shan Vaults
 				["isRaid"] = true,
 				["coord"] = { 59.6, 39.1, KUN_LAI_SUMMIT },

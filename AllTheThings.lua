@@ -10688,6 +10688,11 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		-- Headers possible in a hierarchy that should just be ignored
 		local ignoredHeaders = {
 			[app.HeaderConstants.GARRISONS] = true,
+			[app.HeaderConstants.DUNGEONS] = true,
+			[app.HeaderConstants.RAIDS] = true,
+			[app.HeaderConstants.SCENARIOS] = true,
+			[app.HeaderConstants.SCENARIO_COMPLETION] = true,
+			[app.HeaderConstants.REMIX_MOP] = true
 		};
 		-- self.Rebuild
 		(function()
