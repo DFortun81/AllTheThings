@@ -4360,6 +4360,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(28701, {	-- Timothy Jones <Jewelcrafting Trainer>
+						["description"] = "Daily Jewelcrafting quests:\n\nShipment: Blood Jade Amulet - Vrykul can be found on Ymirheim, in the middle of Icecrown.\n\nShipment: Bright Armor Relic - Revenants/Elementals can be found in Dragonblight, following the mountainside from the Crystal Vice towards Wrathgate.\n\nShipment: Glowing Ivory Figurine - Mammoth can be found in southernmost Storm Peaks, by the road towards K3.\n\nShipment: Intricate Bone Figurine - Proto Dragons can be found in Storm Peaks, in the valley above Brunnhildar Village.\n\nShipment:Shifting Sun Curio - Scourge/Undead can be found as neutral ghosts in Crystalsong Forest, by the Violet Stand beneath Dalaran.\n\nShipment: Wicked Armour Relic - Iron Dwarfs can be found in the Storm Peaks, in a cave between Frosthold and Valkyrion.",
 						["coord"] = { 40.3, 35.1, NORTHREND_DALARAN },
 						["groups"] = applyclassicphase(WRATH_PHASE_THREE, {
 							daljewelcraftingtoken(4, i(47010)),	-- Design: Accurate Dreadstone [CATA+] / Design: Accurate Ametrine
