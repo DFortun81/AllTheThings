@@ -249,27 +249,33 @@ local function GetMoneyString(amount)
 end
 local function GetDisplayID(data)
 	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
-	if data.sourceID or data.itemID or data.difficultyID or data.mapID then return; end
-	if data.displayID then
-		return data.displayID;
-	elseif data.creatureID then
-		local displayID = app.NPCDisplayIDFromID[data.creatureID];
+	if data.sourceID or data.itemID or data.difficultyID or data.mapID then return end
+	local displayID = data.displayID
+	if displayID then
+		return displayID
+	end
+	local npcID = data.npcID or data.creatureID
+	if npcID then
+		displayID = app.NPCDisplayIDFromID[npcID]
 		if displayID then
-			return displayID;
+			return displayID
 		end
 	end
 
-	if data.providers and #data.providers > 0 then
-		for k,v in pairs(data.providers) do
+	local qgs = data.qgs
+	if qgs and #qgs > 0 then
+		return app.NPCDisplayIDFromID[qgs[1]]
+	end
+
+	local providers = data.providers
+	if providers and #providers > 0 then
+		local lookup = app.NPCDisplayIDFromID
+		for _,v in ipairs(providers) do
 			-- if one of the providers is an NPC, we should show its texture regardless of other providers
 			if v[1] == "n" then
-				return app.NPCDisplayIDFromID[v[2]];
+				return lookup[v[2]]
 			end
 		end
-	end
-
-	if data.qgs and #data.qgs > 0 then
-		return app.NPCDisplayIDFromID[data.qgs[1]];
 	end
 end
 local function GetIconFromProviders(group)
