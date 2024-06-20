@@ -1086,7 +1086,7 @@ mount = function(id, t)									-- Create a MOUNT Object, which is just a spellI
 end
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	if not id then
-		-- error("NPC ID Missing");
+		print("NPC ID Missing for n() header");
 		if t then
 			return unpack(t);
 		else

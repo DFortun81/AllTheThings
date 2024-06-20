@@ -1,16 +1,6 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-TRIAL_OF_STYLE_HEADER = createHeader({
-	readable = "Trial of Style",
-	constant = "TRIAL_OF_STYLE_HEADER",
-	icon = [[~_.asset("Holiday_Trialofstyle")]],
-	eventID = EVENTS.TRIAL_OF_STYLE,
-	text = {
-		en = "Trial of Style",
-		ru = "Наденьте это немедлено",
-	},
-});
 local TRIAL_OF_STYLE_TOKEN = 151134;
 root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {
 	["zone-text-areaID"] = 8712,

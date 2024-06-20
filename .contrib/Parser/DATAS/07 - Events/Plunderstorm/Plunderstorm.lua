@@ -71,7 +71,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 	}),
 	-- Renown Rewards
 	n(PLUNDERSTORM, {
-		n(FACTION, {
+		n(FACTIONS, {
 			faction(2593),	-- Keg Leg's Crew
 		}),
 		n(RENOWN, bubbleDownRep(2593, {

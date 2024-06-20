@@ -314,7 +314,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 							},
 						}),
 					}),
-					n(REWARD, {
+					n(REWARDS, {
 						i(NATS_LUCKY_COIN, {
 							["description"] = "Received from turning in Lunkers at Nat Paggle in your Garrison.\nLunkers can be fished anywhere in WoD, except in your Garrison, if your Fishing Shack is at Rank3.\n\nFishing in pools is more efficient than fishing in open water.",
 						}),
