@@ -58,7 +58,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				},
 			}),
 		}),
-		-- TODO: SCENARIO does not exist as a header anymore -> restore it to denote some scenarios also drop chests during it?
 		mapped(SCENARIO_COMPLETION, {
 			n(ARMOR, {
 				filter(CLOTH, {
