@@ -488,3 +488,36 @@ iq(216902, 80089);					-- Yellow Duck Disguise
 ------------------
 -- PATCH 11.0.0 --
 ------------------
+iq(227420, 81147);					-- Exceptional Alchemist's Research
+iq(227418, 84227);					-- Exceptional Blacksmith's Diagrams
+iq(227422, 81077);					-- Exceptional Enchanter's Research
+iq(227423, 84230);					-- Exceptional Engineer's Scribblings
+iq(227426, 81423);					-- Exceptional Herbalist's Notes
+iq(227424, 81260);					-- Exceptional Jeweler's Illustrations
+iq(227425, 80979);					-- Exceptional Leatherworker's Diagrams
+iq(227427, 81391);					-- Exceptional Miner's Notes
+iq(227419, 80750);					-- Exceptional Scribe's Runic Drawings
+iq(227428, 84233);					-- Exceptional Skinner's Notes
+iq(227421, 80872);					-- Exceptional Tailor's Diagrams
+iq(227409, 81146);					-- Faded Alchemist's Research
+iq(227407, 84226);					-- Faded Blacksmith's Diagrams
+iq(227411, 81076);					-- Faded Enchanter's Research
+iq(227412, 84229);					-- Faded Engineer's Scribblings
+iq(227415, 81422);					-- Faded Herbalist's Notes
+iq(227413, 81259);					-- Faded Jeweler's Illustrations
+iq(227414, 80978);					-- Faded Leatherworker's Diagrams
+iq(227416, 81390);					-- Faded Miner's Notes
+iq(227408, 80749);					-- Faded Scribe's Runic Drawings
+iq(227417, 84232);					-- Faded Skinner's Notes
+iq(227410, 80871);					-- Faded Tailor's Diagrams
+iq(227431, 81148);					-- Pristine Alchemist's Research
+iq(227429, 84228);					-- Pristine Blacksmith's Diagrams
+iq(227433, 81078);					-- Pristine Enchanter's Research
+iq(227434, 84231);					-- Pristine Engineer's Scribblings
+iq(227437, 81424);					-- Pristine Herbalist's Notes
+iq(227435, 81261);					-- Pristine Jeweler's Illustrations
+iq(227436, 80980);					-- Pristine Leatherworker's Diagrams
+iq(227438, 81392);					-- Pristine Miner's Notes
+iq(227430, 80751);					-- Pristine Scribe's Runic Drawings
+iq(227439, 84234);					-- Pristine Skinner's Notes
+iq(227432, 80873);					-- Pristine Tailor's Diagrams

@@ -4632,39 +4632,6 @@ root(ROOTS.Unsorted, {
 			i(227334),	-- Mole Mole
 			i(227335),	-- Borer Blood Pudding
 			i(227336),	-- Sugar Slurry
-			i(227407),	-- Faded Blacksmith's Diagrams
-			i(227408),	-- Faded Scribe's Runic Drawings
-			i(227409),	-- Faded Alchemist's Research
-			i(227410),	-- Faded Tailor's Diagrams
-			i(227411),	-- Faded Enchanter's Research
-			i(227412),	-- Faded Engineer's Scribblings
-			i(227413),	-- Faded Jeweler's Illustrations
-			i(227414),	-- Faded Leatherworker's Diagrams
-			i(227415),	-- Faded Herbalist's Notes
-			i(227416),	-- Faded Miner's Notes
-			i(227417),	-- Faded Skinner's Notes
-			i(227418),	-- Exceptional Blacksmith's Diagrams
-			i(227419),	-- Exceptional Scribe's Runic Drawings
-			i(227420),	-- Exceptional Alchemist's Research
-			i(227421),	-- Exceptional Tailor's Diagrams
-			i(227422),	-- Exceptional Enchanter's Research
-			i(227423),	-- Exceptional Engineer's Scribblings
-			i(227424),	-- Exceptional Jeweler's Illustrations
-			i(227425),	-- Exceptional Leatherworker's Diagrams
-			i(227426),	-- Exceptional Herbalist's Notes
-			i(227427),	-- Exceptional Miner's Notes
-			i(227428),	-- Exceptional Skinner's Notes
-			i(227429),	-- Pristine Blacksmith's Diagrams
-			i(227430),	-- Pristine Scribe's Runic Drawings
-			i(227431),	-- Pristine Alchemist's Research
-			i(227432),	-- Pristine Tailor's Diagrams
-			i(227433),	-- Pristine Enchanter's Research
-			i(227434),	-- Pristine Engineer's Scribblings
-			i(227435),	-- Pristine Jeweler's Illustrations
-			i(227436),	-- Pristine Leatherworker's Diagrams
-			i(227437),	-- Pristine Herbalist's Notes
-			i(227438),	-- Pristine Miner's Notes
-			i(227439),	-- Pristine Skinner's Notes
 			i(227445),	-- Inscrutable Fragrance
 			i(227447),	-- Invigorating Fragrance
 			i(227448),	-- Volatile Fragrance
