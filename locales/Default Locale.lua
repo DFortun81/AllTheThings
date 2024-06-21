@@ -52,6 +52,7 @@ local L = setmetatable({
 	RELOG_REQUIRED = "After using this, it is typically required to logout & login to collect all the items correctly on the game servers.";
 	RACE_LOCKED = "Race Locked";
 	ENSEMBLE_LEARNED = "This Ensemble has already been used by one of your characters";
+	HOLIDAY_DROP = "Only your first daily attempt per Battle.net account has a chance to drop this item. The drop chance increases with every daily attempt.";
 
 	-- Windows
 	HIDDEN_ACHIEVEMENT_TRIGGERS = "Hidden Achievement Triggers";

@@ -203,6 +203,14 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
 		["timeline"] = { ADDED_9_2_0 },
 	}),
+	i(220785, {	-- Midsummer Safeguard
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["timeline"] = { ADDED_10_2_7 },
+	}),
+	i(220787, {	-- Mantle of Midsummer
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["timeline"] = { ADDED_10_2_7 },
+	}),
 	-- #if AFTER 2.4.0.7994
 	-- This item was originally exclusively available as a quest reward.
 	i(23083, {	-- Captured Flame (PET!)
@@ -293,6 +301,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					}),
 					i(53641, {	-- Frigid Frostling (PET!)
 						["timeline"] = { ADDED_3_3_3 },
+					}),
+					i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor
+						["timeline"] = { ADDED_10_2_7 },
+						["description"] = "Only your first daily attempt per Battle.net account has a chance to drop this item. The drop chance increases with every daily attempt.",
+						-- ["description"] = HOLIDAY_DROP,	I can't get this to work but it would be good if we could re-use this, as this logic is being used from Midsummer onward
 					}),
 				},
 			}),
