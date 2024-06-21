@@ -1216,6 +1216,9 @@ namespace ATT
                 symlinkCommands
             };
 
+            // Capture the Ensemble for Debug output
+            CaptureDebugDBData(data);
+
             return true;
         }
 
