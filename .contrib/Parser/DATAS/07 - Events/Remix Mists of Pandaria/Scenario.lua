@@ -57,106 +57,104 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				},
 			}),
 		}),
-		n(SCENARIO_COMPLETION, {
-			mapped(n(ARMOR, {
-				filter(CLOTH, {
-					i(213657),	-- Brewmoon Crown
-					i(213655),	-- Brewmoon Mantle
-					i(213658),	-- Brewmoon Mitts
-					i(213654),	-- Brewmoon Sash
-					i(213659),	-- Brewmoon Slippers
-					i(213656),	-- Brewmoon Trousers
-					i(213660),	-- Brewmoon Vestment
-					i(213653),	-- Brewmoon Wristwraps
-				}),
-				filter(LEATHER, {
-					i(214053),	-- Brushstalker Belt
-					i(214058),	-- Brushstalker Boots
-					i(214052),	-- Brushstalker Bracers
-					i(214057),	-- Brushstalker Gloves
-					i(214056),	-- Brushstalker Helm
-					i(214055),	-- Brushstalker Leggings
-					i(214054),	-- Brushstalker Shoulderpads
-					i(214059),	-- Brushstalker Tunic
-					i(214047),	-- Tidesplitter Cap
-					i(214050),	-- Tidesplitter Cinch
-					i(214046),	-- Tidesplitter Handguards
-					i(214044),	-- Tidesplitter Jerkin
-					i(214049),	-- Tidesplitter Mantle
-					i(214048),	-- Tidesplitter Pants
-					i(214045),	-- Tidesplitter Treads
-					i(214051),	-- Tidesplitter Wraps
-				}),
-				filter(MAIL, {
-					i(214420),	-- Waterburst Breastplate
-					i(214421),	-- Waterburst Footguards
-					i(214424),	-- Waterburst Girdle
-					i(214423),	-- Waterburst Grips
-					i(214422),	-- Waterburst Helmet
-					i(214426),	-- Waterburst Legwraps
-					i(214425),	-- Waterburst Mantle
-					i(214419),	-- Waterburst Wristguards
-				}),
-				filter(PLATE, {
-					i(214759),	-- Swarmbreaker's Armguards
-					i(214760),	-- Swarmbreaker's Chestguard
-					i(214756),	-- Swarmbreaker's Grasp
-					i(214758),	-- Swarmbreaker's Greatboots
-					i(214753),	-- Swarmbreaker's Greaves
-					i(214754),	-- Swarmbreaker's Shoulderguards
-					i(214755),	-- Swarmbreaker's Waistguard
-					i(214757),	-- Swarmbreaker's Warhelm
-				}),
-			})),
-			mapped(d(DIFFICULTY.SCENARIO.NORMAL, bubbleDown({ ["modID"] = 0 }, {
-				n(WEAPONS, {
-					i(215492),	-- Axe of Iron Might
-					i(215752),	-- Ced's Basher
-					i(215607),	-- Ceremonial Spike (reported by Sanctuari)
-					i(215880),	-- Darkstaff of Ruin
-					i(215537),	-- Dawnwatcher's Warbow
-					i(216007),	-- Deathspeaker Channel
-					i(215610),	-- Dreadpriest's Dagger (wowhead)
-					i(215785),	-- Fangcracker Maul
-					i(215884),	-- Firedancer's Staff
-					i(215606),	-- Firescribe Slicer (wowhead)
-					i(215647),	-- Ka'eng, Fang of Shadow
-					i(215706),	-- Klaxxi Ambershot
-					i(215685),	-- Klaxxi Channeling Fork
-					i(215614),	-- Klaxxi Slicer
-					i(215756),	-- Klaxxi Smasher
-					i(215876),	-- Mistdancer's Rod
-					i(215985),	-- Satay's Greatsword
-					i(216579),	-- Shield of the Devourer (wowhead)
-					i(216583),	-- Shield of the Protectorate
-					i(215953),	-- Siege Captain's Blade
-					i(215808),	-- Yak-Herder's Longspear
-				}),
-			}))),
-			mapped(d(DIFFICULTY.SCENARIO.HEROIC, bubbleDown({ ["modID"] = 0 }, {
-				n(WEAPONS, {
-					i(215615),	-- Amber Blade
-					i(216584),	-- Barrier of the Protectorate
-					i(215986),	-- Blade of Broken Chains
-					i(215757),	-- Carapace Crusher
-					i(215607),	-- Ceremonial Spike
-					i(215877),	-- Cloudscorcher Staff (wowhead)
-					i(215753),	-- Gao's Kegbreaker
-					i(215881),	-- Gustspinner's Staff
-					i(215786),	-- Lerah's Maul
-					i(215611),	-- Lightdrinker Dagger
-					i(216008),	-- Necromantic Channel (wowhead)
-					i(215648),	-- Ner'onok's Katar
-					i(215956),	-- Ook's Hozen Cutter
-					i(215493),	-- Scalebreaker Battleaxe
-					i(216580),	-- Skyrider's Shield
-					i(215885),	-- Teachings of Shaohao
-					i(215538),	-- Tempestuous Shortbow
-					i(215707),	-- Yan-Zhu's Rifle
-					i(215809),	-- Yaungol Warspear
-				}),
-			}))),
-		}),
+		mapped(n(ARMOR, {
+			filter(CLOTH, {
+				i(213657),	-- Brewmoon Crown
+				i(213655),	-- Brewmoon Mantle
+				i(213658),	-- Brewmoon Mitts
+				i(213654),	-- Brewmoon Sash
+				i(213659),	-- Brewmoon Slippers
+				i(213656),	-- Brewmoon Trousers
+				i(213660),	-- Brewmoon Vestment
+				i(213653),	-- Brewmoon Wristwraps
+			}),
+			filter(LEATHER, {
+				i(214053),	-- Brushstalker Belt
+				i(214058),	-- Brushstalker Boots
+				i(214052),	-- Brushstalker Bracers
+				i(214057),	-- Brushstalker Gloves
+				i(214056),	-- Brushstalker Helm
+				i(214055),	-- Brushstalker Leggings
+				i(214054),	-- Brushstalker Shoulderpads
+				i(214059),	-- Brushstalker Tunic
+				i(214047),	-- Tidesplitter Cap
+				i(214050),	-- Tidesplitter Cinch
+				i(214046),	-- Tidesplitter Handguards
+				i(214044),	-- Tidesplitter Jerkin
+				i(214049),	-- Tidesplitter Mantle
+				i(214048),	-- Tidesplitter Pants
+				i(214045),	-- Tidesplitter Treads
+				i(214051),	-- Tidesplitter Wraps
+			}),
+			filter(MAIL, {
+				i(214420),	-- Waterburst Breastplate
+				i(214421),	-- Waterburst Footguards
+				i(214424),	-- Waterburst Girdle
+				i(214423),	-- Waterburst Grips
+				i(214422),	-- Waterburst Helmet
+				i(214426),	-- Waterburst Legwraps
+				i(214425),	-- Waterburst Mantle
+				i(214419),	-- Waterburst Wristguards
+			}),
+			filter(PLATE, {
+				i(214759),	-- Swarmbreaker's Armguards
+				i(214760),	-- Swarmbreaker's Chestguard
+				i(214756),	-- Swarmbreaker's Grasp
+				i(214758),	-- Swarmbreaker's Greatboots
+				i(214753),	-- Swarmbreaker's Greaves
+				i(214754),	-- Swarmbreaker's Shoulderguards
+				i(214755),	-- Swarmbreaker's Waistguard
+				i(214757),	-- Swarmbreaker's Warhelm
+			}),
+		})),
+		mapped(d(DIFFICULTY.SCENARIO.NORMAL, bubbleDown({ ["modID"] = 0 }, {
+			n(WEAPONS, {
+				i(215492),	-- Axe of Iron Might
+				i(215752),	-- Ced's Basher
+				i(215607),	-- Ceremonial Spike (reported by Sanctuari)
+				i(215880),	-- Darkstaff of Ruin
+				i(215537),	-- Dawnwatcher's Warbow
+				i(216007),	-- Deathspeaker Channel
+				i(215610),	-- Dreadpriest's Dagger (wowhead)
+				i(215785),	-- Fangcracker Maul
+				i(215884),	-- Firedancer's Staff
+				i(215606),	-- Firescribe Slicer (wowhead)
+				i(215647),	-- Ka'eng, Fang of Shadow
+				i(215706),	-- Klaxxi Ambershot
+				i(215685),	-- Klaxxi Channeling Fork
+				i(215614),	-- Klaxxi Slicer
+				i(215756),	-- Klaxxi Smasher
+				i(215876),	-- Mistdancer's Rod
+				i(215985),	-- Satay's Greatsword
+				i(216579),	-- Shield of the Devourer (wowhead)
+				i(216583),	-- Shield of the Protectorate
+				i(215953),	-- Siege Captain's Blade
+				i(215808),	-- Yak-Herder's Longspear
+			}),
+		}))),
+		mapped(d(DIFFICULTY.SCENARIO.HEROIC, bubbleDown({ ["modID"] = 0 }, {
+			n(WEAPONS, {
+				i(215615),	-- Amber Blade
+				i(216584),	-- Barrier of the Protectorate
+				i(215986),	-- Blade of Broken Chains
+				i(215757),	-- Carapace Crusher
+				i(215607),	-- Ceremonial Spike
+				i(215877),	-- Cloudscorcher Staff (wowhead)
+				i(215753),	-- Gao's Kegbreaker
+				i(215881),	-- Gustspinner's Staff
+				i(215786),	-- Lerah's Maul
+				i(215611),	-- Lightdrinker Dagger
+				i(216008),	-- Necromantic Channel (wowhead)
+				i(215648),	-- Ner'onok's Katar
+				i(215956),	-- Ook's Hozen Cutter
+				i(215493),	-- Scalebreaker Battleaxe
+				i(216580),	-- Skyrider's Shield
+				i(215885),	-- Teachings of Shaohao
+				i(215538),	-- Tempestuous Shortbow
+				i(215707),	-- Yan-Zhu's Rifle
+				i(215809),	-- Yaungol Warspear
+			}),
+		}))),
 		-- Scenario Maps
 		m(447, {	-- A Brewing Storm
 			n(ACHIEVEMENTS, {

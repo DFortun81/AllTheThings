@@ -148,6 +148,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215747),	-- Mace of the Rikkitun
 					i(216537),	-- Mogu Lord's Deflector (wowhead)
 					i(216001),	-- Mountainsage Rod (wowhead)
+					i(210638),	-- Mushan Hewer
 					i(215650),	-- Pandaren Claw (drop)
 					i(215616),	-- Pandaren Warknife (wowhead)
 					i(211149),	-- Rikkitun Warbow (drop)
