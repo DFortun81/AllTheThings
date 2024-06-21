@@ -16,15 +16,13 @@ local events = setmetatable({}, {
 local frame = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 ---@diagnostic disable-next-line: inject-field
 frame.Suffix = "ATTFRAME";
-if app.DebuggingEvents then
-frame:SetScript("OnEvent", function(self, e, ...)
+local function OnEvent_Debugging(self, e, ...)
 	app.PrintDebug(e,...);
 	events[e](...);
 	app.PrintDebugPrior(e);
-end);
-else
-frame:SetScript("OnEvent", function(self, e, ...) events[e](...); end);
 end
+local function OnEvent(self, e, ...) events[e](...) end
+frame:SetScript("OnEvent", app.DebuggingEvents and OnEvent_Debugging or OnEvent);
 frame:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
 frame:SetSize(1, 1);
 frame:Show();
@@ -55,6 +53,10 @@ app.SetScript = function(self, ...)
 	else
 		frame:SetScript(scriptName, nil);
 	end
+end
+app.DebugEvents = function()
+	app.DebuggingEvents = not app.DebuggingEvents
+	frame:SetScript("OnEvent", app.DebuggingEvents and OnEvent_Debugging or OnEvent);
 end
 
 -- Simple Events
