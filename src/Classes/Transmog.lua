@@ -663,6 +663,10 @@ do
 		function(t)
 			return app.IsAccountCached("SourceItemsOnCharacter", t.sourceID)
 		end,
+		visualID = function(t)
+			local sourceInfo = C_TransmogCollection_GetSourceInfo(t.sourceID)
+			return sourceInfo and sourceInfo.visualID
+		end,
 		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
 		itemID = function(t)
 			if t.__autolink then return; end
