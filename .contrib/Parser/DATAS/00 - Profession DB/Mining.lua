@@ -359,10 +359,10 @@ i(0, 439719);		-- Weeping Aqirite
 i(0, 439718);		-- Weeping Bismuth
 i(0, 439720);		-- Weeping Ironclaw
 --- SPECIALIZATION ---
-i(0, 442328);		-- Refine Bismuth++
-i(0, 442329);		-- Refine Bismuth+++
 i(0, 442330);		-- Refine Aqirite++
 i(0, 442331);		-- Refine Aqirite+++
+i(0, 442328);		-- Refine Bismuth++
+i(0, 442329);		-- Refine Bismuth+++
 i(0, 442332);		-- Refine Ironclaw Ore++
 i(0, 442333);		-- Refine Ironclaw Ore+++
 -- NIY?
