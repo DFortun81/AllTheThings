@@ -477,15 +477,14 @@ iq(212984, 79444, WARLOCK);			-- Grimoire of the Zealous Observer
 -- PATCH 10.2.6 --
 ------------------
 iq(216907, 80093);					-- A Tiny Plumed Tricorne
-iq(216902, 80089);					--
-iq(216901, 80088);					--
-iq(216900, 80087);					--
-iq(216898, 80085);					--
-iq(216897, 80084);					--
-iq(216890, 80083);					--
-iq(216902, 80089);					--
-iq(216901, 80088);					--
-iq(216900, 80087);					--
-iq(216898, 80085);					--
-iq(216897, 80084);					--
-iq(216890, 80083);					--
+iq(216890, 80083);					-- Black Duck Disguise
+iq(216897, 80084);					-- Brown Duck Disguise
+iq(216898, 80085);					-- Mallard Duck Disguise
+iq(216900, 80087);					-- Pink Duck Disguise
+iq(216901, 80088);					-- White Duck Disguise
+iq(216902, 80089);					-- Yellow Duck Disguise
+
+
+------------------
+-- PATCH 11.0.0 --
+------------------

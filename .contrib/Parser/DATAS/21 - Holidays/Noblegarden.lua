@@ -710,24 +710,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216881),	-- Duck Disguiser (TOY!)
-				i(216890, {	-- Black Duck Disguise
-					["questID"] = 80083,
-				}),
-				i(216897, {	-- Brown Duck Disguise
-					["questID"] = 80084,
-				}),
-				i(216898, {	-- Mallard Duck Disguise
-					["questID"] = 80085,
-				}),
-				i(216900, {	-- Pink Duck Disguise
-					["questID"] = 80087,
-				}),
-				i(216901, {	-- White Duck Disguise
-					["questID"] = 80088,
-				}),
-				i(216902, {	-- Yellow Duck Disguise
-					["questID"] = 80089,
-				}),
+				i(216890),	-- Black Duck Disguise (CI!)
+				i(216897),	-- Brown Duck Disguise (CI!)
+				i(216898),	-- Mallard Duck Disguise (CI!)
+				i(216900),	-- Pink Duck Disguise (CI!)
+				i(216901),	-- White Duck Disguise (CI!)
+				i(216902),	-- Yellow Duck Disguise (CI!)
 				i(212608),	-- Duck Potion (QI!)
 				o(420195, {	-- Golden Egg Heirloom
 					i(212643),	-- Golden Egg Heirloom (QI!)
@@ -742,24 +730,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216881),	-- Duck Disguiser (TOY!)
-				i(216890, {	-- Black Duck Disguise
-					["questID"] = 80083,
-				}),
-				i(216897, {	-- Brown Duck Disguise
-					["questID"] = 80084,
-				}),
-				i(216898, {	-- Mallard Duck Disguise
-					["questID"] = 80085,
-				}),
-				i(216900, {	-- Pink Duck Disguise
-					["questID"] = 80087,
-				}),
-				i(216901, {	-- White Duck Disguise
-					["questID"] = 80088,
-				}),
-				i(216902, {	-- Yellow Duck Disguise
-					["questID"] = 80089,
-				}),
+				i(216890),	-- Black Duck Disguise (CI!)
+				i(216897),	-- Brown Duck Disguise (CI!)
+				i(216898),	-- Mallard Duck Disguise (CI!)
+				i(216900),	-- Pink Duck Disguise (CI!)
+				i(216901),	-- White Duck Disguise (CI!)
+				i(216902),	-- Yellow Duck Disguise (CI!)
 				i(216488),	-- Duck Potion (QI!)
 				o(424098, {	-- Golden Egg Heirloom
 					i(216489),	-- Golden Egg Heirloom (QI!)
