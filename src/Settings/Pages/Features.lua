@@ -173,7 +173,6 @@ if app.IsRetail then
 	end)
 	checkboxFilterMiniListTimerunning:SetATTTooltip(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP)
 	checkboxFilterMiniListTimerunning:AlignBelow(checkboxAutomaticallyOpenMiniList, 1)
-	checkboxFilterMiniListTimerunning:MarkAsWIP();
 
 	checkboxAutomaticallyOpenBountyList = child:CreateCheckBox(L.AUTO_BOUNTY_CHECKBOX,
 	function(self)
