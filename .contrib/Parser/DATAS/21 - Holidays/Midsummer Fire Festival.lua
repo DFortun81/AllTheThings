@@ -302,7 +302,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					i(53641, {	-- Frigid Frostling (PET!)
 						["timeline"] = { ADDED_3_3_3 },
 					}),
-					i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor
+					i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (DM!)
 						["timeline"] = { ADDED_10_2_7 },
 						["description"] = "Only your first daily attempt per Battle.net account has a chance to drop this item. The drop chance increases with every daily attempt.",
 						-- ["description"] = HOLIDAY_DROP,	I can't get this to work but it would be good if we could re-use this, as this logic is being used from Midsummer onward
