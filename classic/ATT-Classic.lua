@@ -3599,6 +3599,9 @@ app.events.TAXIMAP_OPENED = function()
 	app.CacheFlightPathDataForTarget(knownNodeIDs);
 	app.CacheFlightPathDataForMap(app.CurrentMapID, knownNodeIDs);
 
+	-- apparently this can be nil somehow
+	if not app.CurrentMapID then return end
+
 	local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.CurrentMapID);
 	if allNodeData then
 		for j,nodeData in ipairs(allNodeData) do
