@@ -1191,7 +1191,6 @@ i(0, 449572);		-- Ominous Herbs
 i(0, 430621);		-- Volatile Stone
 i(0, 430620);		-- Volatile Weaving
 --- WILD/METICULOUS ---
-i(0, 430596);		-- Agonizing Potion
 i(0, 430591);		-- Algari Mana Potion
 i(0, 430592);		-- Cavedweller's Delight
 i(0, 430595);		-- Draught of Shocking Revelations
@@ -1203,6 +1202,7 @@ i(0, 430604);		-- Flask of Tempered Mastery
 i(0, 430602);		-- Flask of Tempered Swiftness
 i(0, 430603);		-- Flask of Tempered Versatility
 i(0, 430598);		-- Frontline Potion
+i(0, 430596);		-- Grotesque Vial
 i(0, 430345);		-- Meticulous Experimentation
 i(0, 430617);		-- Phial of Bountiful Seasons
 i(0, 430616);		-- Phial of Enhanced Ambidextry

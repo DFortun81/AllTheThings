@@ -27,7 +27,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		n(DISCOVERY, {
 			spell(430345, {	-- Meticulous Experimentation
 				i(211958, {	-- Meticulous Experimentation
-					r(430596),	-- Agonizing Potion
 					r(430595),	-- Draught of Shocking Revelations
 					r(430594),	-- Draught of Silent Footfalls
 					r(430605),	-- Flask of Alchemical Chaos
@@ -37,6 +36,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					r(430602),	-- Flask of Tempered Swiftness
 					r(430603),	-- Flask of Tempered Versatility
 					r(430598),	-- Frontline Potion
+					r(430596),	-- Grotesque Vial
 					r(430617),	-- Phial of Bountiful Seasons
 					r(430616),	-- Phial of Enhanced Ambidextry
 					r(430614),	-- Phial of Focused Inspiration
@@ -68,9 +68,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			}),
 		}),
 		filter(CONSUMABLES, {
-			i(212254),	-- Agonizing Potion+
-			i(212255),	-- Agonizing Potion++
-			i(212256),	-- Agonizing Potion+++
 			i(212719, {	-- Algari Flask Cauldron+
 				i(212739),	-- Fleeting Flask of Alchemical Chaos+
 				i(212745),	-- Fleeting Flask of Saving Graces+
@@ -99,12 +96,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212240),	-- Algari Mana Potion++
 			i(212241),	-- Algari Mana Potion+++
 			i(212751, {	-- Algari Potion Cauldron+
-				i(212960),	-- Fleeting Agonizing Potion+
 				i(212942),	-- Fleeting Algari Healing Potion+
 				i(212945),	-- Fleeting Algari Mana Potion+
 				i(212948),	-- Fleeting Cavedweller's Delight+
 				i(212957),	-- Fleeting Draught of Shocking Revelations+
 				i(212954),	-- Fleeting Draught of Silent Footfalls+
+				i(212960),	-- Fleeting Grotesque Vial+
 				i(212966),	-- Fleeting Frontline Potion+
 				i(212972),	-- Fleeting Potion of the Reborn Cheetah+
 				i(212963),	-- Fleeting Potion of Unwavering Focus+
@@ -112,12 +109,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				i(212969),	-- Fleeting Tempered Potion+
 			}),
 			i(212752, {	-- Algari Potion Cauldron++
-				i(212961),	-- Fleeting Agonizing Potion++
 				i(212943),	-- Fleeting Algari Healing Potion++
 				i(212946),	-- Fleeting Algari Mana Potion++
 				i(212949),	-- Fleeting Cavedweller's Delight++
 				i(212958),	-- Fleeting Draught of Shocking Revelations++
 				i(212955),	-- Fleeting Draught of Silent Footfalls++
+				i(212961),	-- Fleeting Grotesque Vial++
 				i(212967),	-- Fleeting Frontline Potion++
 				i(212973),	-- Fleeting Potion of the Reborn Cheetah++
 				i(212964),	-- Fleeting Potion of Unwavering Focus++
@@ -125,12 +122,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				i(212970),	-- Fleeting Tempered Potion++
 			}),
 			i(212753, {	-- Algari Potion Cauldron+++
-				i(212962),	-- Fleeting Agonizing Potion+++
 				i(212944),	-- Fleeting Algari Healing Potion+++
 				i(212947),	-- Fleeting Algari Mana Potion+++
 				i(212950),	-- Fleeting Cavedweller's Delight+++
 				i(212959),	-- Fleeting Draught of Shocking Revelations+++
 				i(212956),	-- Fleeting Draught of Silent Footfalls+++
+				i(212962),	-- Fleeting Grotesque Vial+++
 				i(212968),	-- Fleeting Frontline Potion+++
 				i(212974),	-- Fleeting Potion of the Reborn Cheetah+++
 				i(212965),	-- Fleeting Potion of Unwavering Focus+++
@@ -170,6 +167,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212260),	-- Frontline Potion+
 			i(212261),	-- Frontline Potion++
 			i(212262),	-- Frontline Potion+++
+			i(212254),	-- Grotesque Vial+
+			i(212255),	-- Grotesque Vial++
+			i(212256),	-- Grotesque Vial+++
 			i(212314),	-- Phial of Bountiful Seasons+
 			i(212315),	-- Phial of Bountiful Seasons++
 			i(212316),	-- Phial of Bountiful Seasons+++
@@ -212,23 +212,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Basic Concoctions
 			FirstCraft(81095, 430590);	-- Algari Healing Potion
 			FirstCraft(81096, 430591);	-- Algari Mana Potion
-			--FirstCraft(QuestID, 430592);	-- Cavedweller's Delight
-			--FirstCraft(QuestID, 430593);	-- Slumbering Soul Serum
+			FirstCraft(81097, 430592);	-- Cavedweller's Delight
+			FirstCraft(81098, 430593);	-- Slumbering Soul Serum
 			-- Potions
-			FirstCraft(81101, 430596);	-- Agonizing Potion
 			FirstCraft(81100, 430595);	-- Draught of Shocking Revelations
 			FirstCraft(81099, 430594);	-- Draught of Silent Footfalls
 			FirstCraft(81103, 430598);	-- Frontline Potion
+			FirstCraft(81101, 430596);	-- Grotesque Vial
 			FirstCraft(81105, 430600);	-- Potion of the Reborn Cheetah
-			--FirstCraft(QuestID, 430597);	-- Potion of Unwavering Focus
+			FirstCraft(81102, 430597);	-- Potion of Unwavering Focus
 			FirstCraft(81104, 430599);	-- Tempered Potion
 			-- Flasks
 			FirstCraft(81110, 430605);	-- Flask of Alchemical Chaos
-			--FirstCraft(QuestID, 430612);	-- Flask of Saving Graces
-			--FirstCraft(QuestID, 430604);	-- Flask of Tempered Mastery
-			--FirstCraft(QuestID, 430603);	-- Flask of Tempered Versatility
+			FirstCraft(81116, 430612);	-- Flask of Saving Graces
+			FirstCraft(81109, 430604);	-- Flask of Tempered Mastery
+			FirstCraft(81108, 430603);	-- Flask of Tempered Versatility
 			FirstCraft(81106, 430601);	-- Flask of Tempered Aggression
-			--FirstCraft(QuestID, 430602);	-- Flask of Tempered Swiftness
+			FirstCraft(81107, 430602);	-- Flask of Tempered Swiftness
 			-- Vicious Flasks
 			--FirstCraft(QuestID, 430607);	-- Vicious Flask of Classical Spirits
 			--FirstCraft(QuestID, 430608);	-- Vicious Flask of Honor
@@ -237,10 +237,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Phials
 			FirstCraft(81121, 430617);	-- Phial of Bountiful Seasons
 			FirstCraft(81120, 430616);	-- Phial of Enhanced Ambidextry
-			--FirstCraft(QuestID, 430614);	-- Phial of Focused Inspiration
+			FirstCraft(81118, 430614);	-- Phial of Focused Inspiration
 			FirstCraft(81119, 430615);	-- Phial of Truesight
 			-- Transmutations
-			--FirstCraft(QuestID, 449938);	-- Gleaming Chaos
+			FirstCraft(81145, 449938);	-- Gleaming Chaos
 			FirstCraft(81128, 430624);	-- Gleaming Glory
 			FirstCraft(81142, 449573);	-- Mercurial Coalescence
 			FirstCraft(81143, 449574);	-- Ominous Coalescence
@@ -249,12 +249,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81140, 449571);	-- Mercurial Herbs
 			FirstCraft(81123, 430619);	-- Mercurial Storms
 			FirstCraft(81126, 430622);	-- Ominous Call
-			--FirstCraft(QuestID, 430623);	-- Ominous Gloom
+			FirstCraft(81127, 430623);	-- Ominous Gloom
 			FirstCraft(81141, 449572);	-- Ominous Herbs
 			FirstCraft(81125, 430621);	-- Volatile Stone
 			FirstCraft(81124, 430620);	-- Volatile Weaving
 			-- Alchemist Stones
-			--FirstCraft(QuestID, 427185);	-- Algari Alchemist Stone
+			FirstCraft(81092, 427185);	-- Algari Alchemist Stone
 			-- Cuauldrons
 			FirstCraft(81130, 432962);	-- Algari Flask Cauldron
 			FirstCraft(81131, 432963);	-- Algari Potion Cauldron
