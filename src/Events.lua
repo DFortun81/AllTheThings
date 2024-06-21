@@ -91,6 +91,12 @@ local EventSequence = {
 	OnStartup = {
 		"OnStartupDone"
 	},
+	OnStartupDone = {
+		"OnRefreshSettings"
+	},
+	OnRefreshSettings = {
+		"OnSettingsRefreshed"
+	},
 	OnRefreshCollections = {
 		"OnRefreshCollectionsDone",
 	},

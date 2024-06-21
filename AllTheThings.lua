@@ -14954,7 +14954,7 @@ end)();
 -- Define Event Behaviours
 app.AddonLoadedTriggers = {
 	[appName] = function()
-		-- OnLoad events
+		-- OnLoad events (saved variables are now available)
 		app.HandleEvent("OnLoad")
 	end,
 	["Blizzard_AuctionHouseUI"] = function()

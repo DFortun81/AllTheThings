@@ -305,6 +305,11 @@ settings.Initialize = function(self)
 	app._SettingsRefresh = GetTimePreciseSec()
 	settings._Initialize = true
 	app.DoRefreshAppearanceSources = settings:Get("Thing:Transmog")
+
+	-- setup settings refresh functionality now that we're done initializing
+	settings.Refresh = function()
+		app.CallbackEvent("OnRefreshSettings");
+	end
 	-- app.PrintDebug("settings.Initialize:Done")
 end
 -- dumb self-referencing...
@@ -692,11 +697,9 @@ settings.SetUnobtainableFilter = function(self, u, value)
 	self:UpdateMode(1);
 end
 
-local Callback = app.CallbackHandlers.Callback;
 settings.Objects = {};
-local function Refresh(self)
-	app.HandleEvent("OnSettingsRefreshed");
-	local objects = self.Objects
+local function Refresh()
+	local objects = settings.Objects
 	-- app.PrintDebug("Settings.Refresh",objects and #objects)
 	if objects then
 		for _,object in ipairs(objects) do
@@ -705,14 +708,9 @@ local function Refresh(self)
 		end
 	end
 	-- app.PrintDebug("Settings.Refresh:Done")
-	self.__Refreshing = nil
 end
-settings.Refresh = function(self)
-	-- apparently child components have the audacity to tell the parent it should refresh itself... so insubordinate
-	if self.__Refreshing then return end
-	self.__Refreshing = true
-	Callback(Refresh, self)
-end
+app.AddEventHandler("OnRefreshSettings", Refresh)
+settings.Refresh = app.EmptyFunction	-- Refresh triggers when Initializing Settings, which we don't want to do anything yet
 
 local function Mixin(o, mixin)
 	for k,v in pairs(mixin) do
