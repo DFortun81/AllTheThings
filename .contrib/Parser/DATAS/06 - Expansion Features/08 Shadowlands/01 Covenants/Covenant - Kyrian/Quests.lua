@@ -162,6 +162,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 58847 },	-- Kyrestia's Grace
 				["provider"] = { "n", 160037 },	-- Polemarch Adrestes
 				["coord"] = { 55.6, 42.0, ARCHONS_RISE },
+				["lockCriteria"] = { 1, "questID", 65147 },	-- No Ordinary Steward
 				["g"] = {
 					follower(1258),	-- Mikanikos
 				},
@@ -376,6 +377,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["sourceQuests"] = { 58796 },	-- The Forsworn Onslaught
 				["provider"] = { "n", 163650 },	-- Kleia
 				["coord"] = { 51.6, 47.7, ARCHONS_RISE },
+				["lockCriteria"] = { 1, "questID", 65168 },	-- My Wings Are Yours
 				["g"] = {
 					follower(1260),	-- Kleia
 				},
@@ -586,6 +588,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["provider"] = { "n", 183278 },	-- Kleia
 				["coord"] = { 58.7, 36.2, SANCTUM_OF_BINDING },
 				["timeline"] = { ADDED_9_1_5 },
+				["lockCriteria"] = { 1, "questID", 58797 },	-- Forged by Trial
 				["g"] = {
 					follower(1260),	-- Kleia
 				},
@@ -599,6 +602,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				["provider"] = { "n", 183192 },	-- Mikanikos
 				["coord"] = { 59.5, 37.4, SANCTUM_OF_BINDING },
 				["timeline"] = { ADDED_9_1_5 },
+				["lockCriteria"] = { 1, "questID", 59919 },	-- An Earned Bond
 				["g"] = {
 					follower(1258),	-- Mikanikos
 				},
