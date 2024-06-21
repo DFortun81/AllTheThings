@@ -197,7 +197,19 @@ root(ROOTS.Zones, {
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["groups"] = {
-						pet(537),-- Dragonbone Hatchling (PET!)
+						pet(537, {	-- Dragonbone Hatchling (PET!)
+							["description"] = "Found around The Dragon Wastes.",
+							["coords"] = {
+								{ 52.5, 26.0, DRAGONBLIGHT },
+								{ 62.5, 29.5, DRAGONBLIGHT },
+								{ 60.0, 52.0, DRAGONBLIGHT },
+								{ 65.0, 53.0, DRAGONBLIGHT },
+								{ 67.0, 63.0, DRAGONBLIGHT },
+								{ 57.0, 59.0, DRAGONBLIGHT },
+								{ 52.0, 54.0, DRAGONBLIGHT },
+								{ 54.0, 42.0, DRAGONBLIGHT },
+							},
+						}),
 					},
 				}),
 				explorationHeader({

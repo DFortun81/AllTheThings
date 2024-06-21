@@ -222,13 +222,16 @@ root(ROOTS.Zones, {
 					["groups"] = {
 						pet(649, {	-- Biletoad (PET!)
 							["description"] = "Found around the central basin.",
+							["coord"] = { 48.0, 63.0, SHOLAZAR_BASIN },
 						}),
 						pet(1167, {	-- Emerald Proto-Whelp (PET!)
 							["description"] = "Found all around the Savage Thicket, but they seem to be on an undisclosed timer. This pet is a strong PvE Dragonkin.",
+							["coord"] = { 46.0, 27.0, SHOLAZAR_BASIN },
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 						pet(532, {	-- Stunted Shardhorn (PET!)
 							["description"] = "Found around The Suntouched Pillar.",
+							["coord"] = { 33.0, 53.0, SHOLAZAR_BASIN },
 						}),
 					},
 				}),

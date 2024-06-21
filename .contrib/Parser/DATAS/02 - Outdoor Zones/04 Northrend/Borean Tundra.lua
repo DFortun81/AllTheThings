@@ -229,15 +229,26 @@ root(ROOTS.Zones, {
 					}},
 					["g"] = {
 						pet(641),	-- Arctic Hare (PET!)
-						pet(639),	-- Borean Marmot (PET!)
+						pet(639, {	-- Borean Marmot (PET!)
+							["description"] = "Found all over the yellow/brown tundra between Warsong Hold and Sholazar Basin.",
+							["coord"] = { 57.0, 35.0, BOREAN_TUNDRA },
+						}),
 						pet(1165, {	-- Nexus Whelpling (PET!)
 							["description"] = "Found in Coldarra.",
+							["coord"] = { 30.0, 30.0, BOREAN_TUNDRA },
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 						pet(530, {	-- Oily Slimeling (PET!)
 							["description"] = "Found in the oil pools from Fizzcrank Airstrip to the Geyser Fields.",
+							["coord"] = { 61.0, 31.0, BOREAN_TUNDRA },
 						}),
-						pet(536),	-- Tundra Penguin (PET!)
+						pet(536, {	-- Tundra Penguin (PET!)
+							["description"] = "There is only a few spawns of this pet, which can be found by the shore in the westernmost part of Dragonblight. However, it is a common secondary pet in both Borean Tundra and Dragonblight!",
+							["coords"] = {
+								{ 9.0, 60.0, DRAGONBLIGHT }, -- Coldwind Pass
+								{ 18.7, 63.3, DRAGONBLIGHT }, -- Moonrest Gardens
+							},
+						}),
 						pet(1238, {	-- Unborn Val'kyr (PET!)
 							["timeline"] = { ADDED_5_3_0 },
 						}),
