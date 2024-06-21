@@ -2444,9 +2444,6 @@ root(ROOTS.Unsorted, {
 			i(220773),	-- Celebratory Pack of Runed Harbinger Crests \\ Celebratory Pack of Runed Harbinger Crests (TODO: Fix Icon)
 			i(220774),	-- Goblin Mini Fridge
 			i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
-			i(220788),	-- Nascent Weathered Harbinger Crest \\ Nascent Weathered Harbinger Crest (TODO: Fix Icon)
-			i(220789),	-- Nascent Gilded Harbinger Crest \\ Nascent Gilded Harbinger Crest (TODO: Fix Icon)
-			i(220790),	-- Nascent Runed Harbinger Crest \\ Nascent Runed Harbinger Crest (TODO: Fix Icon)
 			i(220943),	-- Reinforced Handle
 			i(220944),	-- Reinforced Handle
 			i(220945),	-- Reinforced Handle
@@ -4587,7 +4584,6 @@ root(ROOTS.Unsorted, {
 			i(226811),	-- Marinated Maggots
 			i(226813),	-- Golden Valorstone
 			i(226814),	-- Chest of Gold
-			i(227208),	-- Bismuth Rod
 			i(227272),	-- Rock Lobster
 			i(227273),	-- Iron Poppers
 			i(227274),	-- Candle Rock Candy
