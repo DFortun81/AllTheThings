@@ -4881,8 +4881,6 @@ root(ROOTS.Unsorted, {
 				i(220760),	-- Shining Stormhammer
 				i(220761),	-- Shocking Stormhammer
 				i(220762),	-- Arsenal: Stormrider's Silver Stormhammers
-				i(220785),	-- Midsummer Safeguard
-				i(220787),	-- Mantle of Midsummer
 				i(221520),	-- Black Tropical Shirt
 				i(221521),	-- Black Tropical Trunks
 				i(221522),	-- Black Tropical Wristwraps
@@ -5112,9 +5110,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				i(224270),	-- Tattered Technique: Certificate of Ownership
-			}),
-			n(DRAKEWATCHER_MANUSCRIPTS, {
-				i(224163),	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (DM!)
 			}),
 			i(227550),	-- Tusks of Mannoroth
 		})),
