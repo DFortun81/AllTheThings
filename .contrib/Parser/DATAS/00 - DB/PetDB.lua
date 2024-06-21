@@ -4095,6 +4095,7 @@ i(223474, 4566);	-- Worgli the Apprehensive
 ------------------
 --- ITEM ---
 i(221548, 4536);	-- Blightbud
+i(224101, 4586);	-- Brown Leafbug
 i(223625, 4570);	-- Cinderwold Sizzlestinger
 i(222973, 4492);	-- Fringe
 i(222968, 4476);	-- Itchbite
@@ -4105,7 +4106,11 @@ i(224439, 4470);	-- Oop'lajax
 i(218245, 4451);	-- Remembered Construct
 i(218086, 4450);	-- Remembered Riverpaw
 i(218246, 4452);	-- Remembered Spawn
+i(222978, 4546);	-- Sandstone Ramolith
+i(221494, 4495);	-- Skippy
+i(221811, 4524);	-- Starkstripe Hopper
 i(221849, 4465);	-- Vanilla
+i(221761, 4511);	-- Venomwing
 --- NPC ---
 n(223092, 4540);	-- Alabaster Stonecharger
 n(223090, 4541);	-- Bedrock Stonecharger
@@ -4124,7 +4129,6 @@ i(222969, 4474);	-- Anub'Rekyute
 i(221851, 4466);	-- Argos
 i(223155, 4469);	-- Bop
 i(222971, 4489);	-- Bouncer
-i(224101, 4586);	-- Brown Leafbug
 i(221764, 4519);	-- Burntram
 i(221820, 4537);	-- Chester
 i(226104, 4602);	-- Claudius
@@ -4142,20 +4146,16 @@ i(222965, 4530);	-- Loamy
 i(221546, 4534);	-- Nightfarm Growthling
 i(223802, 4581);	-- Purple Stagshell
 i(225935, 4582);	-- Rak-Ush Battleshell
-i(222978, 4546);	-- Sandstone Ramolith
 i(221759, 4512);	-- Sceaduthax
 i(224549, 4594);	-- Dalaran Sewer Turtle
 i(221819, 4472);	-- Shadowbog Hopper
 i(222974, 4543);	-- Sir Shady Mrgglton Junior
-i(221494, 4495);	-- Skippy
 i(222980, 4542);	-- Slim
 i(223624, 4575);	-- Sneef
 i(222966, 4473);	-- Spinner
-i(221811, 4524);	-- Starkstripe Hopper
 i(220782, 4462);	-- Thunder
 i(224260, 4591);	-- Thundo
 i(221848, 4463);	-- Tiberius
-i(221761, 4511);	-- Venomwing
 i(225337, 4506);	-- Violet Sporbit
 i(221495, 4497);	-- Waddles
 i(221821, 4517);	-- Waxwick

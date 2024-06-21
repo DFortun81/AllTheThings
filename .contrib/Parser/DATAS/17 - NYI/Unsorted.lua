@@ -13,7 +13,6 @@ root(ROOTS.Unsorted, {
 				i(221851),	-- Argos (PET!)
 				i(223155),	-- Bop (PET!)
 				i(222971),	-- Bouncer (PET!)
-				i(224101),	-- Brown Leafbug (PET!)
 				i(221764),	-- Burntram (PET!)
 				i(221820),	-- Chester (PET!)
 				i(226104),	-- Claudius (PET!)
@@ -31,18 +30,15 @@ root(ROOTS.Unsorted, {
 				i(221546),	-- Nightfarm Growthling (PET!)
 				i(223802),	-- Purple Stagshell (PET!)
 				i(225935),	-- Rak-Ush Battleshell (PET!)
-				i(222978),	-- Sandstone Ramolith (PET!)
 				i(221759),	-- Sceaduthax (PET!)
 				i(221819),	-- Shadowbog Hopper (PET!)
 				i(222974),	-- Sir Shady Mrgglton Junior (PET!)
 				i(222980),	-- Slim (PET!)
 				i(223624),	-- Sneef (PET!)
 				i(222966),	-- Spinner (PET!)
-				i(221811),	-- Starkstripe Hopper (PET!)
 				i(220782),	-- Thunder (PET!)
 				i(224260),	-- Thundo (PET!)
 				i(221848),	-- Tiberius (PET!)
-				i(221761),	-- Venomwing (PET!)
 				i(225337),	-- Violet Sporbit (PET!)
 				i(221495),	-- Waddles (PET!)
 				i(221821),	-- Waxwick (PET!)
@@ -849,7 +845,6 @@ root(ROOTS.Unsorted, {
 				i(212151),	-- 11.0 End Game Template <Descriptor> Shawl
 				i(212152),	-- 11.0 End Game Template <Descriptor> Choker
 				i(213099),	-- Test Warbound until equipped (DNT)
-				i(215169),	-- Everburning Lantern
 				i(215170),	-- Abyssal Trap
 				i(215171),	-- Fungal Friend Flute
 				i(215172),	-- Silken Chain Weaver
@@ -968,7 +963,6 @@ root(ROOTS.Unsorted, {
 				i(212519),	-- Nebb's Key
 				i(212521),	-- Nebb's "Treasure" [DNT]
 				i(212547),	-- Final Project Page
-				i(212602),	-- Titan Emitter \\ The Archaedas Conundrum \\ Titan Disc
 				i(212604),	-- Restored Titan Key NOT USED
 				i(213108),	-- Corrupted Oil
 				i(213163),	-- Cryptographic Glyph
@@ -981,9 +975,6 @@ root(ROOTS.Unsorted, {
 				i(213538),	-- Wood-Worm Tonic \\ Wood-Worm Liqueur \\ Necrotic Dart
 				i(213557),	-- Lost Journal Tablet
 				i(215159),	-- Pillaged Trophy
-				i(215177),	-- Power Cell
-				i(215179),	-- Power Cell
-				i(215180),	-- Power Cell
 				i(215447),	-- Duskstem
 				i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 				i(216682),	-- The Vizier's Invitation
@@ -2229,7 +2220,6 @@ root(ROOTS.Unsorted, {
 			i(219745),	-- Olive Oil
 			i(219757),	-- Mead-Speckled Full Helm \\ Mead Speckled Full Helm
 			i(219758),	-- Mead-Speckled Legguards \\ Mead Speckled Legguards
-			i(219765),	-- Sparkling Pearl Ring
 			i(219780),	-- 11.0 Leveling Quest Template - Axe2H - Str
 			i(219781),	-- 11.0 Leveling Quest Template - FistWeapon - Agi
 			i(219782),	-- 11.0 Leveling Quest Template - Sword1H - Int
@@ -2505,7 +2495,6 @@ root(ROOTS.Unsorted, {
 			i(221242),	-- Forgeborn Helm
 			i(221244),	-- Flamekeeper's Footpads
 			i(221246),	-- Fierce Beast Staff
-			i(221247),	-- Cavernous Critter Shooter
 			i(221248),	-- Deep Terror Carver
 			i(221250),	-- Creeping Lasher Machete
 			i(221251),	-- Bestial Underground Cleaver
@@ -2522,7 +2511,6 @@ root(ROOTS.Unsorted, {
 			i(221506),	-- Arachnid's Web-Sown Guise
 			i(221507),	-- Earth Golem's Wrap
 			i(221508),	-- Pelt of Beledar's Strength
-			i(221550),	-- Boskroot Cap
 			i(221751),	-- DO NOT USE Prismatic Codex
 			i(221754),	-- Ringing Deeps Ingot
 			i(221757),	-- Gloomfathom Hide
@@ -3249,28 +3237,13 @@ root(ROOTS.Unsorted, {
 			i(223320),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
 			i(223321),	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
 			i(223340),	-- Footguards of Shallow Waters
-			i(223341),	-- Warphorn's Resilient Mane
-			i(223342),	-- Warphorn's Resilient Chestplate
-			i(223343),	-- Warphorn's Resilient Chainmail
-			i(223346),	-- Viper's Stone Handguards
-			i(223347),	-- Viper's Stone Mitts
-			i(223348),	-- Viper's Stone Gauntlets
-			i(223349),	-- Wolf Packleader's Cowl
-			i(223350),	-- Wolf Packleader's Helm
 			i(223352),	-- Waterskipper's Legplates
 			i(223354),	-- Waterskipper's Chain Leggings
-			i(223357),	-- Spaulders of the Steamsurger
-			i(223358),	-- Mantle of the Steamsurger
-			i(223359),	-- Epaulets of the Steamsurger
 			i(223360),	-- Flying Kobold's Seatbelt
 			i(223361),	-- Flying Kobold's Seatbelt
 			i(223362),	-- Flying Kobold's Seatbelt
 			i(223363),	-- Flying Kobold's Seatbelt
-			i(223364),	-- Wristwraps of the Titancap
-			i(223365),	-- Wristguards of the Titancap
-			i(223366),	-- Bracers of the Titancap
 			i(223369),	-- Webspeaker's Spiritual Cloak
-			i(223370),	-- Wolf Packleader's Visor
 			i(223371),	-- Slippers of Shallow Waters
 			i(223372),	-- Sabatons of Shallow Waters
 			i(223374),	-- Nerubian Weaver's Gown
@@ -3789,7 +3762,6 @@ root(ROOTS.Unsorted, {
 			i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
 			i(224792),	-- Sanguine Aristocrat Outfit
 			i(224807),	-- Algari Skinning Notes
-			i(224808),	-- Opal Ore
 			i(224809),	-- Earthen Plumber's Pipe
 			i(224810),	-- Woodworm Elixir
 			i(224814),	-- Adventurer's Warbound Boots
@@ -4217,9 +4189,7 @@ root(ROOTS.Unsorted, {
 			i(225883),	-- Prepared Ghoulfish
 			i(225884),	-- Extra Large Leek \\ Extra Large Leak
 			i(225885),	-- Garlic Knots
-			i(225886),	-- Shattered Relic Fragments
 			i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
-			i(225888),	-- Titan Emitter \\ The Archaedas Conundrum
 			i(225891),	-- Vile Vial of Kaheti Bile
 			i(225894),	-- Recipe: Beledar's Bounty
 			i(225896),	-- Void-Touched Valorstone
@@ -4283,7 +4253,6 @@ root(ROOTS.Unsorted, {
 			i(226012),	-- Plunderlord's Radiant Tasseled Spaulders \\ Plunderlord's Radiant Tassled Spaulders
 			i(226013),	-- Plunderlord's Radiant Cinch
 			i(226014),	-- Plunderlord's Radiant Cuffs
-			i(226015),	-- Petrified Ironwood Parchment
 			i(226016),	-- Darkened Tabard of the Arathi
 			i(226017),	-- Ensemble: Plunderlord's Radiant Finery
 			i(226018),	-- Darkened Arathi Cape
@@ -4300,8 +4269,6 @@ root(ROOTS.Unsorted, {
 			i(226114),	-- Windslicer's Lance
 			i(226115),	-- Contaminating Cleaver
 			i(226116),	-- Coagulating Phlegm Churner
-			i(226118),	-- Arcane Prisoner's Puncher
-			i(226119),	-- Arcane Sharpshooter's Crossbow
 			i(226120),	-- Deployable Battle Supplies \\ Deployable Charge Station
 			i(226131),	-- Deployable Wind-Wrangling Spire \\ Deployable Wind-Wrangling Station
 			i(226132),	-- Deployable Recovery Keg \\ Deployable Recovery Station
@@ -4578,7 +4545,6 @@ root(ROOTS.Unsorted, {
 			i(225631),	-- Mystic Obscenity's Idol
 			i(225632),	-- Venerated Obscenity's Idol
 			i(225633),	-- Zenith Obscenity's Idol
-			i(226117),	-- Dalaran Guardian's Arcanotool
 			i(226643),	-- Plans: Beledar's Bulwark
 			i(226810),	-- Infiltrator's Shroud
 			i(226811),	-- Marinated Maggots
@@ -4733,9 +4699,6 @@ root(ROOTS.Unsorted, {
 			i(227695),	-- Preserved Pierced Helm
 			i(227696),	-- Preserved Distressed Visor
 			i(227697),	-- Preserved Moth-Ridden Hood
-			i(227699),	-- Earthen Ceremonial Chopper
-			i(227700),	-- Preserved Defender's Spear
-			i(227701),	-- Preserved Defender's Kris
 			i(227710),	-- Tome of Polymorph: Mosswool
 			i(227713),	-- Artisan's Consortium Payout
 			i(227769),	-- Bountiful Bolts

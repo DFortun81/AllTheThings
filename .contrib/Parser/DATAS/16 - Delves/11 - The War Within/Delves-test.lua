@@ -320,6 +320,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 		i(211018),	-- Treasure-Seeker's Breeches
 		i(211006),	-- Secret-Dredger's Cloak
 		i(211061),	-- Unearthed Relic Band
+		i(215169),	-- Everburning Lantern
 		-- Cosmetic
 		i(212172),	-- Ajul'Nerub Raptorial Spine (COSMETIC!) (was looted in Skittering Breach & The Underkeep)
 		i(225066),	-- Trailblazer's Haversack (COSMETIC!) (was looted in Nightfall Sanctum)

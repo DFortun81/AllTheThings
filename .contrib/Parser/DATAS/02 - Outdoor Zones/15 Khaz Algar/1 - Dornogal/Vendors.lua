@@ -7,6 +7,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(219036, {	-- Ardgaz <Token Exchange>
 				["coord"] = { 54.8, 42.5, DORNOGAL },
 			}),
+			n(219230, {	-- Erani <Pet Charm Trader>
+				["coord"] = { 58.5, 64.9, DORNOGAL },
+				["g"] = {
+					-- TODO: Costs! Was not available in latest build
+					i(224101),	-- Brown Leafbug (PET!)
+					i(222978),	-- Sandstone Ramolith (PET!)
+					i(221494),	-- Skippy (PET!)
+					i(221811),	-- Starkstripe Hopper (PET!)
+					i(221761),	-- Venomwing (PET!)
+				},
+			}),
+			n(219255, {	-- Karbath <Weapon Trader>
+				["coord"] = { 47.3, 64.8, DORNOGAL },
+				["g"] = {
+					i(227699, {	-- Earthen Ceremonial Chopper
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
+					}),
+					i(227701, {	-- Preserved Defender's Kris
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
+					}),
+					i(227700, {	-- Preserved Defender's Spear
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
+					}),
+				},
+			}),
 			n(219051, {	-- Lyrendal <Artisan's Consortium Quartermaster>
 				--["coord"] = { 52.1, 42.2, DORNOGAL },
 				["g"] = {

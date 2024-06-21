@@ -4,18 +4,41 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		n(TREASURES, {
-			o(444899, {	-- Kobold Axe (vignette name - Forgotten Axe)
-				["questID"] = 82325,
-				["coord"] = { 62.6, 43.3, ISLE_OF_DORN },
+			o(442814, {	-- Boskroot Cap
+				["coord"] = { 52.4, 67.3, ISLE_OF_DORN },
 				["g"] = {
-					i(223484),	-- Kobold Mastermind's Pivel
+					i(221550),	-- Boskroot Cap
 				},
+			}),
+			n(212928, {	-- Dalaran Sewer Turtle
+				["coord"] = { 38.0, 79.5, ISLE_OF_DORN },
+				--["cost"] = { "i", xx, 5 },	-- Dornish Pike x5
+				--["g"] = {
+				--	?
+				--},
 			}),
 			o(444065, {	-- Elemental Geode
 				--["questID"] = x,	-- no qid
 				["coord"] = { 77.1, 35.7, ISLE_OF_DORN },
 				["g"] = {
 					i(223484),	-- Kobold Mastermind's Pivel
+				},
+			}),
+			o(442718, {	-- Elemental Pearl
+				["coord"] = { 53.0, 18.5, ISLE_OF_DORN },
+				["g"] = {
+					i(221504),	-- Elemental Pearl
+				},
+			}),
+			o(441183, {	-- Galan's Edict (achievement crit)
+				["coord"] = { 37.3, 52.5, ISLE_OF_DORN },
+				["questID"] = 82038,
+			}),
+			o(446473, {	-- Infused Cinderbrew
+				["questID"] = 82714,
+				["coord"] = { 56.2, 60.9, ISLE_OF_DORN },
+				["g"] = {
+					i(224263),	-- Infused Cinderbrew
 				},
 			}),
 			o(444773, {	-- Jade Pearl
@@ -26,11 +49,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223280),	-- Jade Pearl
 				},
 			}),
-			o(446476, {	-- Web-wrapped Axe
-				["questID"] = 82715,
-				["coord"] = { 59.1, 23.5, ISLE_OF_DORN },
+			o(444899, {	-- Kobold Axe (vignette name - Forgotten Axe)
+				["questID"] = 82325,
+				["coord"] = { 62.6, 43.3, ISLE_OF_DORN },
 				["g"] = {
-					i(224290),	-- Storm Defender's Axe
+					i(223484),	-- Kobold Mastermind's Pivel
 				},
 			}),
 			o(443638, {	-- Mosswool Flower
@@ -62,6 +85,78 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 82326,
 				["coord"] = { 48.9, 60.9, ISLE_OF_DORN },
 			}),
+			n(222941, {	-- Pearlescent Shellcrab
+				--?
+				["coord"] = { 48.6, 30.1, ISLE_OF_DORN },
+				--["questID"] = ,
+				["g"] = {
+					i(224185),	-- Crab-Guiding Branch
+				},
+			}),
+
+			o(441223, {	-- Stone of The Unbound (achievement crit)
+				["coord"] = { 44.1, 30.1, ISLE_OF_DORN },
+				["questID"] = 82046,
+			}),
+			o(444137, {	-- Thak's Treasure
+				["coord"] = { 36.9, 42.2, ISLE_OF_DORN },
+				["questID"] = 82246,
+				["g"] = {
+					n(223227, {	-- One-Eyed Thak
+						["coord"] = { 38.1, 43.5, ISLE_OF_DORN },
+						["questID"] = 82245,	-- Friendly Thak
+					}),
+					n(223247, {	-- One-Eyed Thak
+						["coord"] = { 36.9, 42.3, ISLE_OF_DORN },
+						--["questID"] = 82245,	-- Friendly Thak, flag as completed
+					}),
+					--
+					--some rep and two jc gems
+				},
+			}),
+			o(441231, {	-- Titan Console (achievement crit)
+				["coord"] = { 78.1, 27.9, ISLE_OF_DORN },
+				["questID"] = 82045,
+			}),
+			n(222894, {	-- U'llort the Self-Exiled
+				["coord"] = { 54.8, 69.8, ISLE_OF_DORN },
+				["questID"] = 82142,
+				["cost"] = {{"i", 221550, 1}},	-- 1x Boskroot Cap
+				["g"] = {
+					o(444233, {	-- Mushroom Cap
+						q(82253),
+						q(83245), -- Both Fired.
+					}),
+				},
+			}),
+			o(441284, {	-- Watcher of the North (achievement crit)
+				["coord"] = { 57.2, 20.0, ISLE_OF_DORN },
+				["questID"] = 82047,
+			}),
+			o(441278, {	-- Watcher of the South (achievement crit)
+				["coord"] = { 42.1, 80.2, ISLE_OF_DORN },
+				["questID"] = 82048,
+			}),
+			n(222847, {	-- Weary Water Elemental
+				["coord"] = { 54.1, 19.0, ISLE_OF_DORN },
+				["questID"] = 82134,
+				["cost"] = {{"i", 221504, 1}},	-- 1x Elemental Pearl
+				["g"] = {
+					o(444215, {	-- Mysterious Orb
+						["questID"] = 83224,
+						["g"] = {
+							i(224373),	-- Waterlord's Iridescent Gem
+						},
+					}),
+				},
+			}),
+			o(446476, {	-- Web-wrapped Axe
+				["questID"] = 82715,
+				["coord"] = { 59.1, 23.5, ISLE_OF_DORN },
+				["g"] = {
+					i(224290),	-- Storm Defender's Axe
+				},
+			}),
 			--[[
 			o(xx, {	-- ? // possibly move to special?
 				--["description"] = "Interact with Lost Mosswool 3 times to spawn this treasure",
@@ -80,93 +175,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					}),
 				},
 			}),
-			o(x, {	-- U'llort the Self-Exalted
-				--[description] = "",	-- TODO: Require Boskroot cap
-				--["questID"] = x,
-				["coord"] = { 54.8, 69.8, ISLE_OF_DORN },
-				["g"] = {
-					--
-				},
-			}),
 			--]]
-			o(446473, {	-- Infused Cinderbrew
-				["questID"] = 82714,
-				["coord"] = { 56.2, 60.9, ISLE_OF_DORN },
-				["g"] = {
-					i(224263),	-- Infused Cinderbrew
-				},
-			}),
-			n(212928, {	-- Dalaran Sewer Turtle
-				["coord"] = { 38.0, 79.5, ISLE_OF_DORN },
-				--["cost"] = { "i", xx, 5 },	-- Dornish Pike x5
-				--["g"] = {
-				--	?
-				--},
-			}),
-			o(444137, {	-- Thak's Treasure
-				["coord"] = { 36.9, 42.2, ISLE_OF_DORN },
-				["questID"] = 82246,
-				["g"] = {
-					n(223227, {	-- One-Eyed Thak
-						["coord"] = { 38.1, 43.5, ISLE_OF_DORN },
-						["questID"] = 82245,	-- Friendly Thak
-					}),
-					n(223247, {	-- One-Eyed Thak
-						["coord"] = { 36.9, 42.3, ISLE_OF_DORN },
-						--["questID"] = 82245,	-- Friendly Thak, flag as completed
-					}),
-					--
-					--some rep and two jc gems
-				},
-			}),
-			o(442718, {	-- Elemental Pearl
-				["coord"] = { 53.0, 18.5, ISLE_OF_DORN },
-				["g"] = {
-					i(221504),	-- Elemental Pearl
-				},
-			}),
-			n(222847, {	-- Weary Water Elemental
-				["coord"] = { 54.1, 19.0, ISLE_OF_DORN },
-				["questID"] = 82134,
-				["cost"] = {{"i", 221504, 1}},	-- 1x Elemental Pearl
-				["g"] = {
-					o(444215, {	-- Mysterious Orb
-						["questID"] = 83224,
-						["g"] = {
-							i(224373),	-- Waterlord's Iridescent Gem
-						},
-					}),
-				},
-			}),
-			n(222941, {	-- Pearlescent Shellcrab
-				--?
-				["coord"] = { 48.6, 30.1, ISLE_OF_DORN },
-				--["questID"] = ,
-				["g"] = {
-					i(224185),	-- Crab-Guiding Branch
-				},
-			}),
-			-- 
-			o(441284, {	-- Watcher of the North (achievement crit)
-				["coord"] = { 57.2, 20.0, ISLE_OF_DORN },
-				["questID"] = 82047,
-			}),
-			o(441278, {	-- Watcher of the South (achievement crit)
-				["coord"] = { 42.1, 80.2, ISLE_OF_DORN },
-				["questID"] = 82048,
-			}),
-			o(441183, {	-- Galan's Edict (achievement crit)
-				["coord"] = { 37.3, 52.5, ISLE_OF_DORN },
-				["questID"] = 82038,
-			}),
-			o(441223, {	-- Stone of The Unbound (achievement crit)
-				["coord"] = { 44.1, 30.1, ISLE_OF_DORN },
-				["questID"] = 82046,
-			}),
-			o(441231, {	-- Titan Console (achievement crit)
-				["coord"] = { 78.1, 27.9, ISLE_OF_DORN },
-				["questID"] = 82045,
-			}),
 		}),
 	}),
 })));

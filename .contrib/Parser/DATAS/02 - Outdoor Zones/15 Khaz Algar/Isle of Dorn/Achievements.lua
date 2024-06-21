@@ -66,6 +66,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- Intentionally did not add _noautomation here because showing the name portion of the criteriatree is enough
 					--	["sourceQuest"] = 83181,	-- TODO: quest name (could be HQT?)
 				}),
+				crit(69433, {	-- All Ore Nothing
+					["sourceQuest"] = 82801,	-- Beetlejeweled
+				}),
 			}),
 			pvp(ach(40083)),	-- Tour of Duty: Isle of Dorn
 			ach(40665, {	-- Skyriding Glyphs: Dhar Durgaz
