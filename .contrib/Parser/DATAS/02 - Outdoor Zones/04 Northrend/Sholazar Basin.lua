@@ -220,12 +220,16 @@ root(ROOTS.Zones, {
 						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["groups"] = {
-						pet(649),	-- Biletoad (PET!)
+						pet(649, {	-- Biletoad (PET!)
+							["description"] = "Found around the central basin.",
+						}),
 						pet(1167, {	-- Emerald Proto-Whelp (PET!)
 							["description"] = "Found all around the Savage Thicket, but they seem to be on an undisclosed timer. This pet is a strong PvE Dragonkin.",
 							["timeline"] = { ADDED_5_1_0 },
 						}),
-						pet(532),	-- Stunted Shardhorn (PET!)
+						pet(532, {	-- Stunted Shardhorn (PET!)
+							["description"] = "Found around The Suntouched Pillar.",
+						}),
 					},
 				}),
 				explorationHeader({
