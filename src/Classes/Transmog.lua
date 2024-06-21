@@ -1113,6 +1113,7 @@ if app.IsRetail then
 	end);
 	app.AddEventRegistration("BANKFRAME_OPENED", function()
 		app.SetAccountCachedByCheck("SourceItemsOnCharacter", ClearIfMyGuid)
+		app.WipeSearchCache()
 		app.CallbackHandlers.DelayedCallback(CheckForBoundSourceItems, 2)
 	end)
 	app.AddEventHandler("OnRefreshCollectionsDone", CheckForBoundSourceItems)
