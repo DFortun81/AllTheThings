@@ -1,8 +1,8 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local SKINNING_KNOWLEDGE = 2033;
---local SKINNING_KNOWLEDGE = 2792;
+local DF_SKINNING_KNOWLEDGE = 2033;	-- CHECK!
+local TWW_SKINNING_KNOWLEDGE = 2794;
 -- Skinning - Skill ID 393 / Spell ID 8613
 root(ROOTS.Professions, prof(SKINNING, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
@@ -288,15 +288,15 @@ root(ROOTS.Professions, prof(SKINNING, {
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				--currency(SKINNING_KNOWLEDGE_TWW),	-- set up new local or timeline it?
+				currency(TWW_SKINNING_KNOWLEDGE),
 			},
 		},{
 			--i(xx),	-- new skinning weekly item
-			--q(?, {	-- Inscription Order: Skinning
-			--	["name"] = "Inscription Order: Skinning",
-			--	["description"] = "Requires a crafting order from Inscription.",
-			--	["provider"] = { "i", x },	-- xx Treatise on Skinning
-			--}),
+			q(83734, {	-- Inscription Order: Skinning
+				["name"] = "Inscription Order: Skinning",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222649 },	-- Algari Treatise on Skinning
+			}),
 			q(81459, {	-- Weekly Skinning Knowledgepoint #1
 				["name"] = "Weekly Skinning Knowledgepoint #1",
 				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide

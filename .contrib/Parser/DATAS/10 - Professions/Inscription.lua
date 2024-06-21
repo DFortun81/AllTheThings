@@ -5379,6 +5379,17 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				r(444225),	-- Transcribe: Vivacity
 			}),
 		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_INSCRIPTION_KNOWLEDGE),
+			},
+		},{
+			q(83730, {	-- Inscription Order: Inscription
+				["name"] = "Inscription Order: Inscription",
+				["provider"] = { "i", 222548 },	-- Algari Treatise on Inscription
+			}),
+		})),
 	})),
 })));
 applyclassicphase(WRATH_PHASE_ONE, root(ROOTS.Professions, prof(INSCRIPTION)));

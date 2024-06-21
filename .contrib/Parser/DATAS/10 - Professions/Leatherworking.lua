@@ -1434,11 +1434,11 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			},
 		},{
 			--i(),	-- Leatherworking Designs
-			--q(, {	-- Inscription Order: Leatherworking
-			--	["name"] = "Inscription Order: Leatherworking",
-			--	["description"] = "Requires a crafting order from Inscription.",
-			--	["provider"] = { "i", xx },	-- xx Treatise on Leatherworking
-			--}),
+			q(83732, {	-- Inscription Order: Leatherworking
+				["name"] = "Inscription Order: Leatherworking",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222549 },	-- Algari Treatise on Leatherworking
+			}),
 			q(83267, {	-- Weekly Leatherworking Knowledgepoint #1
 				["name"] = "Leatherworking Treasure #1",
 				["provider"] = { "i", 225223 },		-- Sturdy Nerubian Carapace

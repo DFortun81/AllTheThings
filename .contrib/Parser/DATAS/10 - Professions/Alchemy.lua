@@ -1100,11 +1100,26 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		}),
 		n(TREASURES, {
-			-- Couldnt get objectID
-			q(83840, {
-				i(226265),	-- Earthen Iron Powder
-			})
-		})
+			o(456025, {	-- Earthen Iron Powder
+				["coord"] = { 47.3, 70.4, DORNOGAL },
+				["questID"] = 83840,
+				["g"] = {
+					i(226265),	-- Earthen Iron Powder
+				},
+			}),
+		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_ALCHEMY_KNOWLEDGE),
+			},
+		 }, {
+			q(83725, {	-- Inscription Order: Alchemy
+				["name"] = "Inscription Order: Alchemy",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222546 },	-- Algari Treatise on Alchemy
+			}),
+		})),
 	})),
 })));
 

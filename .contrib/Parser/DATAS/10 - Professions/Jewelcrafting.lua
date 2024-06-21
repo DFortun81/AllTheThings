@@ -2,7 +2,8 @@
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
 -- #if AFTER TBC
-local JEWELCRAFTING_KNOWLEDGE = 2029;
+local DF_JEWELCRAFTING_KNOWLEDGE = 2029;
+local TWW_JEWELCRAFTING_KNOWLEDGE = 2791;
 root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = JEWELCRAFTING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18880),	-- Generations of Gemstones I
@@ -606,7 +607,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", JEWELCRAFTING_KNOWLEDGE, 1 }} }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", DF_JEWELCRAFTING_KNOWLEDGE, 1 }} }, {
 				r(374483),	-- Blotting Sand
 				r(374442),	-- Crafty Alexstraszite
 				r(374450),	-- Crafty Ysemerald
@@ -751,7 +752,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				currency(JEWELCRAFTING_KNOWLEDGE),
+				currency(DF_JEWELCRAFTING_KNOWLEDGE),
 			},
 		},{
 			i(198612),	-- Jeweler's Cuts
@@ -798,6 +799,19 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 					{ 50.6, 33.2, THE_WAKING_SHORES },
 					{ 53.6, 31.0, THE_WAKING_SHORES },
 				},
+			}),
+		})),
+	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_JEWELCRAFTING_KNOWLEDGE),
+			},
+		},{
+			q(83731, {	-- Inscription Order: Jewelcrafting
+				["name"] = "Inscription Order: Jewelcrafting",
+				["provider"] = { "i", 222551 },	-- Algari Treatise on Jewelcrafting
 			}),
 		})),
 	})),

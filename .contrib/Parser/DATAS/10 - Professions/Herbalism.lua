@@ -1457,11 +1457,11 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			},
 		},{
 			--i(),	-- Herbalism Field Notes
-			--q(, {	-- Inscription Order: Herbalism
-			--	["name"] = "Inscription Order: Herbalism",
-			--	["description"] = "Requires a crafting order from Inscription.",
-			--	["provider"] = { "i", xx },	-- xx Treatise on Herbalism
-			--}),
+			q(83729, {	-- Inscription Order: Herbalism
+				["name"] = "Inscription Order: Herbalism",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222552 },	-- Algari Treatise on Herbalism
+			}),
 			q(81416, {	-- Weekly Herbalism Knowledgepoint #1
 				["name"] = "Weekly Herbalism Knowledgepoint #1",
 				["provider"] = { "i", 224264 },	-- Deepgrove Petal

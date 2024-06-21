@@ -830,6 +830,18 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				r(445466),	-- Shatter Essence
 			}),
 		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_ENCHANTING_KNOWLEDGE),
+			},
+		},{
+			q(83727, {	-- Inscription Order: Enchanting
+				["name"] = "Inscription Order: Enchanting",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222550 },	-- Algari Treatise on Enchanting
+			}),
+		})),
 	})),
 })));
 

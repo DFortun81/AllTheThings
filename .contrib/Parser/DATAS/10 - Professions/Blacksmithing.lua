@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local BLACKSMITHING_KNOWLEDGE = 2023;
+local DF_BLACKSMITHING_KNOWLEDGE = 2023;
+local TWW_BLACKSMITHING_KNOWLEDGE = 2786;
 root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18866),	-- Anvil Mastery IV
@@ -942,7 +943,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", BLACKSMITHING_KNOWLEDGE, 1 }} }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", DF_BLACKSMITHING_KNOWLEDGE, 1 }} }, {
 				r(376700),	-- Illustrious Insight
 				r(371412),	-- Khaz'gorite Blacksmith's Hammer
 				r(371374),	-- Khaz'gorite Blacksmith's Toolbox
@@ -1086,7 +1087,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				currency(BLACKSMITHING_KNOWLEDGE),
+				currency(DF_BLACKSMITHING_KNOWLEDGE),
 			},
 		},{
 			i(198606),	-- Blacksmith's Writ
@@ -1128,6 +1129,20 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					{ 50.6, 33.2, THE_WAKING_SHORES },
 					{ 53.6, 31.0, THE_WAKING_SHORES },
 				},
+			}),
+		})),
+	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_BLACKSMITHING_KNOWLEDGE),
+			},
+		 }, {
+			q(83726, {	-- Inscription Order: Blacksmithing
+				["name"] = "Inscription Order: Blacksmithing",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222554 },	-- Algari Treatise on Blacksmithing
 			}),
 		})),
 	})),

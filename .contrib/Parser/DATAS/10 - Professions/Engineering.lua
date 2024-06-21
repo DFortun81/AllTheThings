@@ -1,7 +1,8 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-local ENGINEERING_KNOWLEDGE = 2027;
+local DF_ENGINEERING_KNOWLEDGE = 2027;
+local TWW_ENGINEERING_KNOWLEDGE = 2788;
 root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = ENGINEERING }, {
 	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 		ach(18901, {	-- Chromatic Calibration: Holo-Gogs
@@ -1253,7 +1254,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = {{ "c", ENGINEERING_KNOWLEDGE, 1 }} }, {
+			["g"] = sharedData({ ["cost"] = {{ "c", DF_ENGINEERING_KNOWLEDGE, 1 }} }, {
 				r(382345),	-- Assorted Safety Fuses
 				r(382408),	-- Cartomancy Cannon
 				r(382368),	-- Centralized Precipitation Emitter
@@ -1396,7 +1397,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				currency(ENGINEERING_KNOWLEDGE),
+				currency(DF_ENGINEERING_KNOWLEDGE),
 			},
 		},{
 			i(198611),	-- Engineering Details
@@ -1426,6 +1427,20 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["crs"] = { 193244 },	-- Titan Defense Matrix
 				["provider"] = { "i", 198969 },		-- Keeper's Mark
 				["coord"] = { 57.2, 60.4, THALDRASZUS },
+			}),
+		})),
+	})),
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_ENGINEERING_KNOWLEDGE),
+			},
+		},{
+			q(83728, {	-- Inscription Order: Engineering
+				["name"] = "Inscription Order: Engineering",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
 			}),
 		})),
 	})),

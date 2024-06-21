@@ -851,6 +851,18 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				r(446997),	-- Weavercloth Embroidery Thread
 			}),
 		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_TAILORING_KNOWLEDGE),
+			},
+		},{
+			q(83735, {	-- Inscription Order: Tailoring
+				["name"] = "Inscription Order: Tailoring",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222547 },	-- Algari Treatise on Tailoring
+			}),
+		})),
 	})),
 })));
 
