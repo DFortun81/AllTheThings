@@ -195,6 +195,14 @@ local MERCHANT_GROUPS = {
 		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
 		["timeline"] = { ADDED_7_1_0 },
 	}),
+	i(220787, {	-- Mantle of Midsummer
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["timeline"] = { ADDED_10_2_7 },
+	}),
+	i(220785, {	-- Midsummer Safeguard
+		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
+		["timeline"] = { ADDED_10_2_7 },
+	}),
 	i(141649, {	-- Set of Matches (TOY!)
 		["cost"] = { { "i", 23247, 500 } },	-- Burning Blossom
 		["timeline"] = { ADDED_7_1_0 },
@@ -202,14 +210,6 @@ local MERCHANT_GROUPS = {
 	i(188695, {	-- Summer Cranial Skillet (TOY!)
 		["cost"] = { { "i", 23247, 150 } },	-- Burning Blossom
 		["timeline"] = { ADDED_9_2_0 },
-	}),
-	i(220785, {	-- Midsummer Safeguard
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
-		["timeline"] = { ADDED_10_2_7 },
-	}),
-	i(220787, {	-- Mantle of Midsummer
-		["cost"] = { { "i", 23247, 350 } },	-- Burning Blossom
-		["timeline"] = { ADDED_10_2_7 },
 	}),
 	-- #if AFTER 2.4.0.7994
 	-- This item was originally exclusively available as a quest reward.
@@ -306,6 +306,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 						["timeline"] = { ADDED_10_2_7 },
 						["description"] = "Only your first daily attempt per Battle.net account has a chance to drop this item. The drop chance increases with every daily attempt.",
 						-- ["description"] = HOLIDAY_DROP,	I can't get this to work but it would be good if we could re-use this, as this logic is being used from Midsummer onward
+					}),
+					q(83134, {	-- Increased Cliffside Wylderdrake: Midsummer Fire Festival Armor Droprate (Daily Accountwide)
+						["name"] = "Increased Cliffside Wylderdrake: Midsummer Fire Festival Armor Droprate (Daily Accountwide)",
+						["timeline"] = { ADDED_10_2_7 },
+						["collectible"] = false,
+						["isDaily"] = true,
 					}),
 				},
 			}),
