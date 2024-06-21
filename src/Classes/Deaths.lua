@@ -80,9 +80,9 @@ if GetStatistic and GetStatistic(60) then
 	fields.OnUpdate = function(t)
 		return OnUpdateForDeathTrackerLib;
 	end
-	app.events.PLAYER_DEAD = function()
+	app.AddEventRegistration("PLAYER_DEAD", function()
 		app.Audio:PlayDeathSound();
-	end
+	end)
 else
 	-- Oh boy, we have to track it ourselves!
 	local OnUpdateForDeathTrackerLib = function(t)
@@ -98,14 +98,13 @@ else
 	fields.OnUpdate = function(t)
 		return OnUpdateForDeathTrackerLib;
 	end
-	app.events.PLAYER_DEAD = function()
+	app.AddEventRegistration("PLAYER_DEAD", function()
 		ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + 1;
 		app.CurrentCharacter.Deaths = app.CurrentCharacter.Deaths + 1;
 		app.Audio:PlayDeathSound();
 		app:RefreshDataQuietly("PLAYER_DEAD");
-	end
+	end)
 end
-app:RegisterEvent("PLAYER_DEAD");
 app.CreateDeathClass = app.CreateClass("DeathTracker", "deaths", fields);
 app.AddEventHandler("OnStartup", function()
 	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);

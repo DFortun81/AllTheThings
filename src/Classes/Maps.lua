@@ -364,12 +364,10 @@ app.CheckExplorationForCurrentLocation = CheckExplorationForCurrentLocation;
 
 -- Event Handling
 app.AddEventHandler("OnRecalculate", CheckExplorationForCurrentLocation);
-app.events.MAP_EXPLORATION_UPDATED = CheckExplorationForCurrentLocation;
-app.events.UI_INFO_MESSAGE = function(messageID)
+app.AddEventRegistration("MAP_EXPLORATION_UPDATED", CheckExplorationForCurrentLocation)
+app.AddEventRegistration("UI_INFO_MESSAGE", function(messageID)
 	if messageID == 372 then CheckExplorationForCurrentLocation(); end
-end
-app:RegisterEvent("MAP_EXPLORATION_UPDATED");
-app:RegisterEvent("UI_INFO_MESSAGE");
+end)
 
 -- Harvesting
 local MAXIMUM_COORDS_PER_AREA = 5;
@@ -967,24 +965,23 @@ local function RefreshSavesCallback()
 	-- Mark that we're done now.
 	app.HandleEvent("OnSavesUpdated");
 end
-app.events.LOOT_CLOSED = function()
+app.AddEventRegistration("LOOT_CLOSED", function()
 	-- Once the loot window closes after killing a boss, THEN trigger the update.
 	app:UnregisterEvent("LOOT_CLOSED");
-	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	app:RegisterEvent("UPDATE_INSTANCE_INFO");
 	RequestRaidInfo();
-end
-app.events.UPDATE_INSTANCE_INFO = function()
+end)
+local function Event_UPDATE_INSTANCE_INFO()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	AfterCombatCallback(RefreshSavesCallback);
 end
-app.AddEventHandler("OnStartup", app.events.UPDATE_INSTANCE_INFO);
+app.AddEventRegistration("UPDATE_INSTANCE_INFO", Event_UPDATE_INSTANCE_INFO)
+app.AddEventHandler("OnStartup", Event_UPDATE_INSTANCE_INFO);
 app.AddEventRegistration("BOSS_KILL", function(id, name, ...)
 	-- This is so that when you kill a boss, you can trigger
 	-- an automatic update of your saved instance cache.
 	-- (It does lag a little, but you can disable this if you want.)
 	-- Waiting until the LOOT_CLOSED occurs will prevent the failed Auto Loot bug.
 	-- print("BOSS_KILL", id, name, ...);
-	app:UnregisterEvent("LOOT_CLOSED");
 	app:RegisterEvent("LOOT_CLOSED");
 end);

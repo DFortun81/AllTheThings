@@ -2359,8 +2359,7 @@ end
 app.WipeSearchCache = function()
 	wipe(searchCache);
 end
-app:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
-app.events.PLAYER_DIFFICULTY_CHANGED = app.WipeSearchCache;
+app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", app.WipeSearchCache);
 app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
 app.AddEventHandler("OnThingCollected", app.WipeSearchCache);
 app.AddEventHandler("OnThingRemoved", app.WipeSearchCache);
@@ -5654,7 +5653,7 @@ app.BaseFlightPath = app.BaseObjectFields(fields, "BaseFlightPath");
 app.CreateFlightPath = function(id, t)
 	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 end
-app.events.TAXIMAP_OPENED = function()
+app.AddEventRegistration("TAXIMAP_OPENED", function()
 	local mapID = GetTaxiMapID() or -1;
 	if mapID < 0 then return; end
 	if app.Debugging then
@@ -5684,7 +5683,7 @@ app.events.TAXIMAP_OPENED = function()
 		userLocale.FLIGHTPATH_NAMES = names;
 		UpdateRawIDs("flightPathID", newFPs);
 	end
-end
+end)
 end	-- Flight Path Lib
 
 -- Item Lib
@@ -14666,9 +14665,6 @@ local function InitDataCoroutine()
 	-- warning about debug logging in case it sneaks in we can realize quicker
 	app.PrintDebug("NOTE: ATT debug prints enabled!")
 
-	app:RegisterEvent("HEIRLOOMS_UPDATED");
-	app:RegisterEvent("SKILL_LINES_CHANGED");
-
 	-- finally can say the app is ready
 	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 	app.IsReady = true;
@@ -14970,7 +14966,7 @@ app:RegisterFuncEvent("ADDON_LOADED", function(addonName)
 	if addonTrigger then addonTrigger(); end
 end)
 
-app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
+app.AddEventRegistration("HEIRLOOMS_UPDATED", function(itemID, kind, ...)
 	-- print("HEIRLOOMS_UPDATED",itemID,kind)
 	if itemID then
 		UpdateRawID("itemID", itemID);
@@ -14982,7 +14978,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 			if link then print(L.ITEM_ID_ADDED_RANK:format(link, itemID, (select(5, C_Heirloom.GetHeirloomInfo(itemID)) or 1))); end
 		end
 	end
-end
+end)
 
 app.AddEventHandler("OnStartupDone", function() app.OnStartupDone = true end)
 

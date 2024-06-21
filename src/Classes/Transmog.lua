@@ -960,7 +960,7 @@ app.BuildSourceInformationForPopout = function(group)
 end
 
 -- Event Handling
-app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
+app.AddEventRegistration("TRANSMOG_COLLECTION_SOURCE_ADDED", function(sourceID)
 	-- print("TRANSMOG_COLLECTION_SOURCE_ADDED",sourceID)
 	if sourceID then
 		-- Cache the previous state. This will help keep lag under control.
@@ -973,8 +973,8 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 			ActiveItemCollectionHelper(sourceID, oldState);
 		end
 	end
-end
-app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
+end)
+app.AddEventRegistration("TRANSMOG_COLLECTION_SOURCE_REMOVED", function(sourceID)
 	-- print("TRANSMOG_COLLECTION_SOURCE_REMOVED",sourceID)
 	local oldState = sourceID and AccountSources[sourceID];
 	if oldState then
@@ -1019,13 +1019,9 @@ app.events.TRANSMOG_COLLECTION_SOURCE_REMOVED = function(sourceID)
 		app.HandleEvent("OnThingRemoved", "Transmog")
 		app.WipeSearchCache();
 	end
-end
+end)
 
 app.AddEventHandler("OnStartup", function()
-	-- TODO: app.AddEventRegistration
-	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_ADDED");
-	app:RegisterEvent("TRANSMOG_COLLECTION_SOURCE_REMOVED");
-
 	local conversions = app.Settings.InformationTypeConversionMethods;
 	conversions.sourceID = function(sourceID)
 		-- add a value conversion for sourceID to include a checkmark/x

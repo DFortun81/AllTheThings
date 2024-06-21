@@ -149,7 +149,7 @@ if C_VignetteInfo then
 		end
 	end
 	app.AddEventRegistration("VIGNETTE_MINIMAP_UPDATED", UpdateVignette);
-	app.AddEventRegistration("VIGNETTES_UPDATED", function()
+	local function Event_VIGNETTES_UPDATED()
 		local vignettesByGUID = {};
 		local vignettes = C_VignetteInfo_GetVignettes();
 		if vignettes then
@@ -163,10 +163,11 @@ if C_VignetteInfo then
 				ClearVignette(guid);
 			end
 		end
-	end);
+	end
+	app.AddEventRegistration("VIGNETTES_UPDATED", Event_VIGNETTES_UPDATED);
 	app.AddEventHandler("OnReady", function()
-		app.events.VIGNETTES_UPDATED();
-		app.AddEventHandler("OnReportNearbySettingsChanged", app.events.VIGNETTES_UPDATED);
+		Event_VIGNETTES_UPDATED();
+		app.AddEventHandler("OnReportNearbySettingsChanged", Event_VIGNETTES_UPDATED);
 	end);
 else
 	-- Fallback for if the Vignette class isn't supported.

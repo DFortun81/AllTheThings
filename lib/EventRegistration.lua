@@ -58,8 +58,7 @@ app.SetScript = function(self, ...)
 end
 
 -- Simple Events
-app:RegisterEvent("PLAYER_LEVEL_UP");
-app.events.PLAYER_LEVEL_UP = function(newLevel)
+app:RegisterFuncEvent("PLAYER_LEVEL_UP", function(newLevel)
 	app.Level = newLevel;
 	app.HandleEvent("OnPlayerLevelUp");
-end
+end)

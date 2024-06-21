@@ -69,7 +69,7 @@ local function AfterCombatOrDelayedCallback(method, delaySec, ...)
 		DelayedCallback(method, delaySec, ...);
 	end
 end
-app.events.PLAYER_REGEN_ENABLED = function()
+app:RegisterFuncEvent("PLAYER_REGEN_ENABLED", function()
 	app:UnregisterEvent("PLAYER_REGEN_ENABLED");
 	-- print("PLAYER_REGEN_ENABLED:Begin")
 	local callbacks = __combatcallbacks;
@@ -82,7 +82,7 @@ app.events.PLAYER_REGEN_ENABLED = function()
 		end
 	end
 	-- print("PLAYER_REGEN_ENABLED:End")
-end
+end)
 
 -- External API
 app.CallbackHandlers = {
