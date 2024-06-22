@@ -3884,7 +3884,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}),
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Tier Slots"
-					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["description"] = "These items are obtained by choosing them from your weekly vault after reaching 2400 in any bracket.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					-- Check if they are possible to obtain from vault
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(217221),	-- Casket of the Risen Nightmare
