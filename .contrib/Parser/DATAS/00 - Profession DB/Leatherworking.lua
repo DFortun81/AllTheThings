@@ -2440,6 +2440,7 @@ i(223109, 444115);	-- Earthen Jeweler's Cover
 i(223105, 444106);	-- Nerubian Alchemist's Hat
 i(223096, 443950);	-- Roiling Thunderstrike Talons
 i(223108, 444113);	-- Stonebound Herbalist's Pack
+i(223103, 444102);	-- Stormbound Armor Kit
 --- SPECIALIZATION ---
 i(0, 441460);		-- Blessed Weapon Grip
 i(0, 441065);		-- Glyph-Etched Binding
@@ -2465,7 +2466,6 @@ i(223101, 443960);	-- Reinforced Setae Flyers
 i(223095, 443949);	-- Rook Feather Wristwraps
 i(223099, 444073);	-- Sanctified Torchbearer's Grips
 i(0, 443961);		-- Smoldering Pollen Hauberk
-i(223103, 444102);	-- Stormbound Armor Kit
 i(223100, 444068);	-- Vambraces of Deepening Darkness
 i(223098, 444071);	-- Waders of the Unifying Flame
 i(0, 443951);		-- Weathered Stormfront Vest

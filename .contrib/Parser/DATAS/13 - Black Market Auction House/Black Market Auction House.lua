@@ -30,9 +30,16 @@ root(ROOTS.BlackMarket, {
 			["coord"] = { 52.40, 83.80, REVENDRETH },
 		}),
 		-- #ENDIF
+		-- #IF BEFORE TWW
 		n(189676, {	-- Madam Goya
 			["coord"] = { 20.2, 49.1, VALDRAKKEN },
 		}),
+		-- #ENDIF
+		-- #IF AFTER TWW
+		n(219055, {	-- Madam Goya
+			["coord"] = { 64.8, 52.7, DORNOGAL },
+		}),
+		-- #ENDIF
 		-- n(94829, {	-- Zhang Yeoh [Garrison]
 		-- 	["coords"] = {
 		-- 		{ 44.96, 50.07, FROSTWALL },

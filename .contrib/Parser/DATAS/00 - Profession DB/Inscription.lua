@@ -1628,6 +1628,7 @@ i(223065, 444229);	-- Algari Missive of Ingenuity
 i(223067, 444231);	-- Algari Missive of Multicraft
 i(223070, 444234);	-- Algari Missive of Perception
 i(223066, 444230);	-- Algari Missive of Resourcefulness
+i(223062, 444220);	-- Contract: Council of Dornogal
 i(223061, 444209);	-- Inscribed Rolling Pin
 i(223060, 444207);	-- Patient Alchemist's Mixing Rod
 --- SPECIALIZATION ---
@@ -1657,7 +1658,6 @@ i(0, 444236);		-- Algari Treatise on Skinning
 i(0, 444186);		-- Algari Treatise on Tailoring
 --- Unknown ---
 i(223063, 444217);	-- Contract: Assembly of the Deeps
-i(223062, 444220);	-- Contract: Council of Dornogal
 i(223064, 444218);	-- Contract: Hallowfall Arathi
 i(225355, 444219);	-- Contract: The Severed Threads
 --- NYI ---

@@ -1812,6 +1812,8 @@ i(223274, 447957);	-- Ferocious Jawcrawler
 i(223586, 449466);	-- Forged Gladiator's Fel Bat
 i(217985, 441324);	-- Remembered Golden Gryphon
 i(217987, 441325);	-- Remembered Wind Rider
+i(223571, 449418);	-- Shale Ramolith
+i(221753, 447057);	-- Smoldering Cinderbee
 i(223511, 449325);	-- Vicious Skyflayer [A]
 i(221813, 447405);	-- Vicious Skyflayer [H]
 --- UNSORTED ---
@@ -1832,10 +1834,8 @@ i(226044, 457659);	-- Plunderlord's Weathered Crocolisk
 i(223158, 447160);	-- Raging Cinderbee
 i(223314, 448939);	-- Shackled Shadow
 i(223266, 447190);	-- Shadowed Swarmite
-i(223571, 449418);	-- Shale Ramolith
 i(224150, 451489);	-- Siesbarg
 i(223572, 449415);	-- Slatestone Ramolith
-i(221753, 447057);	-- Smoldering Cinderbee
 i(223153, 447151);	-- Soaring Meaderbee
 i(221765, 442358);	-- Stonevault Mechsuit
 i(224147, 451486);	-- Sureki Skyrazor

@@ -6,6 +6,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 		["coord"] = { 76.6, 43.8, ISLE_OF_DORN },
 		["maps"] = { 2335 },	-- Cinderbrew Meadery
 		["g"] = {
+			n(QUESTS, {
+				q(83099, {	-- Mergers and Acquisitions
+					["provider"] = { "n", 226409 },	-- Wenbrandt
+					["coord"] = { 29.4, 43.4, ISLE_OF_DORN },
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2586, {	-- Brew Master Aldryr
 					["crs"] = { 210271 },	-- Brew Master Aldryr

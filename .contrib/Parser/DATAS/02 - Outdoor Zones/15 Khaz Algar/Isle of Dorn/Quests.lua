@@ -365,6 +365,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 			}),
 			header(HEADERS.AchCriteria, 20595.04, {	-- Lost Lord of the Storm
+				q(78289, {	-- To Rumbleshire
+					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["provider"] = { "n", 214352 },	-- Rooktender Otwin
+					["coord"] = { 32.8, 33.6, DORNOGAL },
+				}),
 				q(78291, {	-- Power Predators
 					["sourceQuests"] = { 78289 },	-- To Rambleshire
 					["provider"] = { "n", 211740 },	-- Rooktender Lufsela
@@ -465,7 +470,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 				q(78756, {	-- Lots and Lots of FIre Honey
 					["sourceQuests"] = { 78758 },	-- Pulse within the Earth
-					["provider"] = { "n", 213691 },	-- Harvester Farnee
+					["provider"] = { "n", 214922 },	-- Harvester Farnee
 					["coord"] = { 69.2, 47.9, ISLE_OF_DORN },
 					["g"] = {
 						i(211489),	-- Enormous Glob of Fire Honey (QI!)
@@ -792,50 +797,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 			}),
-			-- Side quests, since main story is bugged in main city
-			q(83336, {	-- The Earthwound
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 226750 },	-- Freysworn Etterca
-				["coord"] = { 55.4, 58.2, ISLE_OF_DORN },
-				["g"] = {
-					i(225674),	-- Broken Stoneheart (QI!)
-				},
-			}),
-			q(79686, {	-- Concerning Fungarians
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "o", 428135 },	-- Discarded Botanist Notes
-				["coord"] = { 31.9, 83.6, ISLE_OF_DORN },
-				["g"] = {
-					i(216882),	-- Log Entry: 467-21-5 (QI!)
-					i(216888),	-- Log Entry 652-12-3 (QI!)
-					i(216889),	-- Log Entry 893-03-9 (QI!)
-				},
-			}),
-			-- Rambleshire
-			q(83339, {	-- The Spirebreaker
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 226791 },	-- Violet Warden
-				["coord"] = { 58.8, 23.9, ISLE_OF_DORN },
-			}),
-			q(83338, {	-- The Mage Slayer
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 226791 },	-- Violet Warden
-				["coord"] = { 58.8, 23.9, ISLE_OF_DORN },
-			}),
-			q(83337, {	-- Stormscarred
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 226792 },	-- Rancher Edidither
-				["coord"] = { 58.9, 25.3, ISLE_OF_DORN },
-			}),
-			--
-			-- end
-			-- dungeon quest
-			q(83099, {	-- Mergers and Acquisitions
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 226409 },	-- Wenbrandt
-				["coord"] = { 29.4, 43.4, ISLE_OF_DORN },
-			}),
-			-- end for dungeon quest
 			------ Dagran & Brinthe ------
 			q(83081, {	-- Not Enought Minerals
 				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
@@ -908,6 +869,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			-- The Questline just stops here?! Might Be "Behind Closed Doors" - Critiera // Braghe
 			------ Miscellaneous ------
+			q(79686, {	-- Concerning Fungarians
+				["provider"] = { "o", 428135 },	-- Discarded Botanist Notes
+				["coord"] = { 31.9, 83.6, ISLE_OF_DORN },
+				["g"] = {
+					i(216882),	-- Log Entry: 467-21-5 (QI!)
+					i(216888),	-- Log Entry 652-12-3 (QI!)
+					i(216889),	-- Log Entry 893-03-9 (QI!)
+				},
+			}),
 			q(83758, {	-- DELVER'S CALL: Fungal Folly
 				["provider"] = { "o", 455716 },
 				["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
@@ -921,9 +891,34 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 228304 },	-- Oathsworn Earthen
 				["coord"] = { 37.6, 72.6, ISLE_OF_DORN },
 			}),
+			q(83337, {	-- Stormscarred
+				["provider"] = { "n", 226792 },	-- Rancher Edidither
+				["coord"] = { 58.9, 25.3, ISLE_OF_DORN },
+			}),
+			q(83336, {	-- The Earthwound
+				["provider"] = { "n", 226750 },	-- Freysworn Etterca
+				["coord"] = { 55.4, 58.2, ISLE_OF_DORN },
+				["g"] = {
+					i(225674),	-- Broken Stoneheart (QI!)
+				},
+			}),
+			q(83338, {	-- The Mage Slayer
+				["provider"] = { "n", 226791 },	-- Violet Warden
+				["coord"] = { 58.8, 23.9, ISLE_OF_DORN },
+			}),
+			q(83339, {	-- The Spirebreaker
+				["provider"] = { "n", 226791 },	-- Violet Warden
+				["coord"] = { 58.8, 23.9, ISLE_OF_DORN },
+			}),
 			q(83335, {	-- Wanted: The Boroughbreaker
 				["provider"] = { "o", 454463 },	-- Wanted Poster
 				["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+				["g"] = {
+					i(227917),	-- Boroughbreaker's Cuffs
+					i(227916),	-- Chitinous Wristwraps
+					i(227919),	-- Crypt Lord's Bracers
+					i(227918),	-- Wanted Nerubian's Bands
+				},
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(78618, {	-- Fungal Frenzy
@@ -939,8 +934,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 50.5, 80.2, ISLE_OF_DORN },	-- need more accurate coords from popup
 				}),
 			}),
-			--	Rares / Bonus Objectives / Once per character?
-			--	need to be moved into rares if didn't get bonus objective
 			-- TODO: Worldsoul memory @ 51.2, 29.2
 		}),
 	}),

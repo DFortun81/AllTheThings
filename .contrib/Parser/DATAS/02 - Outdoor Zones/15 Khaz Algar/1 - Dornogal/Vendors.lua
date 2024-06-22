@@ -18,6 +18,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(221761),	-- Venomwing (PET!)
 				},
 			}),
+			n(219197, {	-- Griftah <Amazing Amulets>
+				["coord"] = { 62.5, 50.9, DORNOGAL },
+				["g"] = {
+					i(224763),	-- Design: Cubic Blasphemia (RECIPE!)
+				},
+			}),
 			n(219255, {	-- Karbath <Weapon Trader>
 				["coord"] = { 47.3, 64.8, DORNOGAL },
 				["g"] = {

@@ -510,6 +510,10 @@ iq(227416, 81390);					-- Faded Miner's Notes
 iq(227408, 80749);					-- Faded Scribe's Runic Drawings
 iq(227417, 84232);					-- Faded Skinner's Notes
 iq(227410, 80871);					-- Faded Tailor's Diagrams
+iq(224645, 83058);					-- Jewel-Etched Alchemy Notes
+iq(224647, 83059);					-- Jewel-Etched Blacksmithing Notes
+iq(224652, 83060);					-- Jewel-Etched Enchanting Notes
+iq(224648, 83061);					-- Jewel-Etched Tailoring Notes
 iq(227431, 81148);					-- Pristine Alchemist's Research
 iq(227429, 84228);					-- Pristine Blacksmith's Diagrams
 iq(227433, 81078);					-- Pristine Enchanter's Research

@@ -1301,6 +1301,7 @@ i(223144, 445341);	-- Authority of the Depths
 i(223136, 445334);	-- Chant of Armored Avoidance
 i(223137, 445325);	-- Chant of Armored Leech
 i(223140, 445389);	-- Chant of Burrowing Rapidity
+i(223127, 445322);	-- Council's Intellect
 i(223141, 445394);	-- Cursed Critical Strike
 i(223142, 445359);	-- Cursed Mastery
 i(223143, 445383);	-- Cursed Versatility
@@ -1352,7 +1353,6 @@ i(223119, 445331);	-- Authority of Air
 i(223113, 445335);	-- Cavalry's March
 i(223139, 445393);	-- Chant of Leeching Fangs
 i(223138, 445386);	-- Chant of Winged Grace
-i(223127, 445322);	-- Council's Intellect
 i(223133, 445327);	-- Illusory Adornment: Crystal
 i(223134, 445401);	-- Illusory Adornment: Radiance
 i(223135, 445337);	-- Illusory Adornment: Shadow

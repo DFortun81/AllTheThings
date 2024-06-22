@@ -4101,6 +4101,7 @@ i(222973, 4492);	-- Fringe
 i(222968, 4476);	-- Itchbite
 i(222972, 4491);	-- Jump Jump
 i(224450, 4527);	-- Lil' Moss Rosy
+i(222965, 4530);	-- Loamy
 i(225544, 4599);	-- Mind Slurp
 i(224439, 4470);	-- Oop'lajax
 i(218245, 4451);	-- Remembered Construct
@@ -4142,7 +4143,6 @@ i(224261, 4589);	-- Gale
 i(220771, 4467);	-- Hallowed Glowfly
 i(221195, 4458);	-- Illskitter
 i(225934, 4500);	-- Lil' Bonechewer
-i(222965, 4530);	-- Loamy
 i(221546, 4534);	-- Nightfarm Growthling
 i(223802, 4581);	-- Purple Stagshell
 i(225935, 4582);	-- Rak-Ush Battleshell

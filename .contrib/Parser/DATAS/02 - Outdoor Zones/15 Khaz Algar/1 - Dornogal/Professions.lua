@@ -57,6 +57,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--["g"] = TWW_ENGINEERING,
 				}),
 			}),
+			prof(FISHING, {
+				n(219106, {	-- Drokar <Fishing Trainer>
+					["coord"] = { 50.5, 26.8, DORNOGAL },
+					--["g"] = TWW_FISHING,
+				}),
+			}),
 			prof(HERBALISM, {
 				n(219101, {	-- Akdan <Herbalism Trainer>
 					["coord"] = { 44.8, 69.3, DORNOGAL },
@@ -71,7 +77,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			prof(JEWELCRAFTING, {
 				n(219087, {	-- Makir <Jewelcrafting Trainer>
-					--["coord"] = { 44.8, 70.9, DORNOGAL }, Need to find
+					["coord"] = { 49.5, 70.8, DORNOGAL },
 					--["g"] = TWW_JEWELCRAFTING,
 				}),
 			}),

@@ -106,8 +106,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 62.1, 44.9, ISLE_OF_DORN },
 			}),
 			ach(40152, {	-- Skyriding Glyphs: The Three Shields
-				-- TODO
-				--["coord"] = { X, Y, ISLE_OF_DORN },
+				["coord"] = { 75.7, 22.2, ISLE_OF_DORN },
 			}),
 		}),
 	}),
