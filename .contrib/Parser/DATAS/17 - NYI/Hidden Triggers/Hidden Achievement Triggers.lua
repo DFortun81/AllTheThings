@@ -3556,6 +3556,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(40785),	-- The War Within Tier 9 delves completed
 			ach(40786),	-- The War Within Tier 10 delves completed
 			ach(40787),	-- The War Within Tier 11 delves completed
+
+			-- 11.0.0.55185
+			ach(40800),	-- Warband Tutorial Complete - Teach Warband Bank Summon (DNT)
 		})),
 	}),
 });
