@@ -2238,15 +2238,6 @@ root(ROOTS.Unsorted, {
 			i(219939),	-- Alleria's Crystal
 			i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 			i(219942),	-- 11.0 Stalwart's Sandals
-			i(219946),	-- Storm Dust
-			i(219947),	-- Storm Dust
-			i(219948),	-- Storm Dust
-			i(219949),	-- Gleaming Shard
-			i(219950),	-- Gleaming Shard
-			i(219951),	-- Gleaming Shard
-			i(219952),	-- Refulgent Crystal
-			i(219954),	-- Refulgent Crystal
-			i(219955),	-- Refulgent Crystal
 			i(219960),	-- Honey Drone Vac
 			i(219961),	-- Fresh Mug of Cinderbrew Mead \\ Cinderbrew Mead
 			i(220107),	-- Tower-Keeper's Shoes
@@ -2357,7 +2348,6 @@ root(ROOTS.Unsorted, {
 			i(220376),	-- Bismuth Lockbox \\ (NYI) 11.0 Lockbox
 			i(220377),	-- Growing Void Mass
 			i(220378),	-- Forged Equipment Chest \\ PH War Within Equipment Chest
-			i(220381),	-- Shatter Essence
 			i(220382),	-- Chopped Mycobloom
 			i(220383),	-- Portioned Steak
 			i(220384),	-- Spiced Meat Stock

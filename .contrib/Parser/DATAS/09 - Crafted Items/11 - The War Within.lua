@@ -299,6 +299,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	--]]
 	prof(ENCHANTING, {
 		spell(455970, {	-- Disenchant
+			i(219949),	-- Gleaming Shard+
+			i(219950),	-- Gleaming Shard++
+			i(219951),	-- Gleaming Shard+++
+			i(219952),	-- Refulgent Crystal+
+			i(219954),	-- Refulgent Crystal++
+			i(219955),	-- Refulgent Crystal+++
+			i(219946),	-- Storm Dust+
+			i(219947),	-- Storm Dust++
+			i(219948),	-- Storm Dust+++
+		}),
+		spell(445466, {	-- Shatter Essence
+			i(220381),	-- Shatter Essence
 		}),
 		n(ARMOR_ENCHANTMENTS, {
 			i(223618),	-- Enchant Boots - Cavalry's March+
@@ -398,6 +410,99 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = ENCHANTING,
 		},{
+			-- Algari Illusions
+			FirstCraft(81040, 445367);	-- Gleeful Glamour - Blood Elf
+			FirstCraft(81072, 445400);	-- Gleeful Glamour - Dark Iron Dwarf
+			FirstCraft(81063, 445391);	-- Gleeful Glamour - Draenei
+			FirstCraft(81074, 445402);	-- Gleeful Glamour - Dwarf
+			--FirstCraft(xx, 445382);	-- Gleeful Glamour - Earthen
+			FirstCraft(81035, 445362);	-- Gleeful Glamour - Gnome
+			FirstCraft(81005, 445332);	-- Gleeful Glamour - Goblin
+			FirstCraft(81049, 445377);	-- Gleeful Glamour - Highmountain Tauren
+			FirstCraft(81025, 445352);	-- Gleeful Glamour - Human
+			FirstCraft(81015, 445342);	-- Gleeful Glamour - Kul Tiran
+			FirstCraft(81016, 445343);	-- Gleeful Glamour - Lightforged Draenei
+			FirstCraft(81042, 445370);	-- Gleeful Glamour - Mag'har Orc
+			FirstCraft(81030, 445357);	-- Gleeful Glamour - Mechagnome
+			FirstCraft(81036, 445363);	-- Gleeful Glamour - Night Elf
+			FirstCraft(81062, 445390);	-- Gleeful Glamour - Nightborne
+			FirstCraft(80992, 445319);	-- Gleeful Glamour - Orc
+			FirstCraft(81038, 445365);	-- Gleeful Glamour - Pandaren
+			FirstCraft(81039, 445366);	-- Gleeful Glamour - Tauren
+			FirstCraft(80999, 445326);	-- Gleeful Glamour - Troll
+			FirstCraft(81023, 445350);	-- Gleeful Glamour - Undead
+			FirstCraft(81029, 445356);	-- Gleeful Glamour - Void Elf
+			FirstCraft(81002, 445329);	-- Gleeful Glamour - Vulpera
+			FirstCraft(81069, 445397);	-- Gleeful Glamour - Worgen
+			FirstCraft(81018, 445345);	-- Gleeful Glamour - Zandalari Troll
+			FirstCraft(81033, 445360);	-- Illusory Adornment: Runes
+			FirstCraft(81000, 445327);	-- Illusory Adornment: Crystal
+			FirstCraft(81073, 445401);	-- Illusory Adornment: Radiance
+			FirstCraft(81010, 445337);	-- Illusory Adornment: Shadow
+			-- Arathor Enchantments
+			FirstCraft(81004, 445331);	-- Authority of Air
+			FirstCraft(81012, 445339);	-- Authority of Radiant Power
+			FirstCraft(81075, 445403);	-- Authority of Fiery Resolve
+			FirstCraft(81008, 445335);	-- Cavalry's March
+			FirstCraft(81068, 445396);	-- Defender's March
+			FirstCraft(81031, 445358);	-- Glimmering Critical Strike
+			FirstCraft(81056, 445384);	-- Glimmering Haste
+			FirstCraft(81053, 445381);	-- Glimmering Mastery
+			FirstCraft(81013, 445340);	-- Glimmering Versatility
+			FirstCraft(81059, 445387);	-- Radiant Critical Strike
+			FirstCraft(80993, 445320);	-- Radiant Haste
+			FirstCraft(81047, 445375);	-- Radiant Mastery
+			FirstCraft(81022, 445349);	-- Radiant Versatility
+			FirstCraft(81041, 445368);	-- Scout's March
+			-- Earthen Enchantments
+			FirstCraft(81037, 445364);	-- Algari Deftness
+			FirstCraft(81001, 445328);	-- Algari Finesse
+			FirstCraft(81050, 445378);	-- Algari Ingenuity
+			FirstCraft(81052, 445380);	-- Algari Perception
+			FirstCraft(81070, 445398);	-- Algari Resourcefulness
+			FirstCraft(81009, 445336);	-- Authority of Storms
+			FirstCraft(81051, 445379);	-- Council's Guile
+			FirstCraft(80995, 445322);	-- Council's Intellect
+			FirstCraft(81006, 445333);	-- Crystalline Radiance
+			FirstCraft(81024, 445351);	-- Oathsworn Tenacity
+			FirstCraft(80994, 445321);	-- Oathsworn's Strength
+			FirstCraft(81057, 445385);	-- Stonebound Artistry
+			FirstCraft(81026, 445353);	-- Stormrider's Agility
+			FirstCraft(80990, 445317);	-- Stormrider's Fury
+			-- Mana Oils
+			FirstCraft(81011, 445338);	-- Algari Mana Oil
+			FirstCraft(80991, 445318);	-- Oil of Beledar's Grace
+			FirstCraft(81019, 445346);	-- Oil of Deep Toxins
+			-- Nerubian Enchantments
+			FirstCraft(81014, 445341);	-- Authority of the Depths
+			FirstCraft(81007, 445334);	-- Chant of Armored Avoidance
+			FirstCraft(80998, 445325);	-- Chant of Armored Leech
+			FirstCraft(81003, 445330);	-- Chant of Armored Speed
+			FirstCraft(81061, 445389);	-- Chant of Burrowing Rapidity
+			FirstCraft(81065, 445393);	-- Chant of Leeching Fangs
+			FirstCraft(81058, 445386);	-- Chant of Winged Grace
+			FirstCraft(81066, 445394);	-- Cursed Critical Strike
+			FirstCraft(81060, 445388);	-- Cursed Haste
+			FirstCraft(81032, 445359);	-- Cursed Mastery
+			FirstCraft(81055, 445383);	-- Cursed Versatility
+			FirstCraft(81064, 445392);	-- Whisper of Armored Avoidance
+			FirstCraft(81046, 445374);	-- Whisper of Armored Leech
+			FirstCraft(81048, 445376);	-- Whisper of Armored Speed
+			FirstCraft(81017, 445344);	-- Whisper of Silken Avoidance
+			FirstCraft(81021, 445348);	-- Whisper of Silken Leech
+			FirstCraft(81045, 445373);	-- Whisper of Silken Speed
+			-- Reagents
+			FirstCraft(81067, 445395);	-- Concentration Concentrate
+			--FirstCraft(xx, 445354);	-- Enchanted Gilded Harbinger Crest
+			--FirstCraft(xx, 445347);	-- Enchanted Runed Harbinger Crest
+			--FirstCraft(xx, 445399);	-- Enchanted Weathered Harbinger Crest
+			FirstCraft(81043, 445371);	-- Mirror Powder
+			-- Rods and Wants
+			--FirstCraft(xx, 445324);	-- Enchanted Spearwood Wand
+			FirstCraft(81034, 445361);	-- Runed Bismuth Rod
+			FirstCraft(81044, 445372);	-- Runed Ironclaw Rod
+			FirstCraft(80996, 445323);	-- Runed Null Stone Rod
+			--FirstCraft(xx, 445355);	-- Scepter of Radiant Magics
 		})),
 		filter(ILLUSIONS, {
 		}),
@@ -405,6 +510,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(224105),	-- Algari Mana Oil+
 			i(224106),	-- Algari Mana Oil++
 			i(224107),	-- Algari Mana Oil+++
+			i(227208),	-- Bismuth Rod
 			i(224300),	-- Gleeful Glamour - Blood Elf+
 			i(224324),	-- Gleeful Glamour - Blood Elf++
 			i(224348),	-- Gleeful Glamour - Blood Elf+++
