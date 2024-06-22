@@ -4684,6 +4684,20 @@ local function AddNestedTomTomWaypoints(group, depth)
 				AddNestedTomTomWaypoints(o, depth + 1);
 			end
 		end
+		-- if the Thing is specifically NOT a Quest
+		-- check for the search result of the sourceQuests of the Thing
+		-- e.g. Achievement using sourceQuest
+		if group.key ~= "questID" then
+			if group.sourceQuests then
+				for _,questID in ipairs(group.sourceQuests) do
+					for _,o in ipairs(SearchForField("questID", questID, "field")) do
+						-- app.PrintDebug("WP:sq-Search:",o.hash)
+						AddNestedTomTomWaypoints(o, 0);
+						AddTomTomParentCoord(o);
+					end
+				end
+			end
+		end
 		group.plotting = nil;
 	end
 end
@@ -4703,11 +4717,9 @@ local function AddTomTomSearchResultWaypoints(group)
 		local key = group.key;
 		if not key then return end
 		for _,o in ipairs(SearchForField(key, group[key], "field")) do
-			if not o.saved and not o.missingSourceQuests then
-				-- app.PrintDebug("WP:Search:",o.hash)
-				TryAddGroupWaypoints(o);
-				AddTomTomParentCoord(o);
-			end
+			-- app.PrintDebug("WP:Search:",o.hash)
+			AddNestedTomTomWaypoints(o, 0);
+			AddTomTomParentCoord(o);
 		end
 	end
 end
