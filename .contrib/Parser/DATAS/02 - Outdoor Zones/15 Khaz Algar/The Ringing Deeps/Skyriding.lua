@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80240, {	-- Cataract River Cruise
 					-- TODO
 					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20336),	-- Cataract River Cruise: Bronze
 						ach(20337),	-- Cataract River Cruise: Silver
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80247, {	-- Cataract River Cruise - Advanced
 					-- TODO
 					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20339),	-- Cataract River Cruise Advanced: Bronze
 						ach(20340),	-- Cataract River Cruise Advanced: Silver
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80253, {	-- Cataract River Cruise - Reverse
 					-- TODO
 					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20342),	-- Cataract River Cruise Reverse: Bronze
 						ach(20343),	-- Cataract River Cruise Reverse: Silver
@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80237, {	-- Earthenworks Weave
 					-- TODO
 					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20309),	-- Earthenworks Weave: Bronze
 						ach(20310),	-- Earthenworks Weave: Silver
@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80244, {	-- Earthenworks Weave - Advanced
 					-- TODO
 					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20312),	-- Earthenworks Weave Advanced: Bronze
 						ach(20313),	-- Earthenworks Weave Advanced: Silver
@@ -189,7 +189,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80250, {	-- Earthenworks Weave - Reverse
 					-- TODO
 					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20315),	-- Earthenworks Weave Reverse: Bronze
 						ach(20316),	-- Earthenworks Weave Reverse: Silver
@@ -259,7 +259,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80242, {	-- Taelloch Twist
 					-- TODO
 					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["coord"] = { 66.6, 68.7, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20345),	-- Taelloch Twist: Bronze
 						ach(20346),	-- Taelloch Twist: Silver
@@ -269,7 +269,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80248, {	-- Taelloch Twist - Advanced
 					-- TODO
 					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["coord"] = { 66.6, 68.7, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20348),	-- Taelloch Twist Advanced: Bronze
 						ach(20349),	-- Taelloch Twist Advanced: Silver
@@ -279,7 +279,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80254, {	-- Taelloch Twist - Reverse
 					-- TODO
 					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["coord"] = { 66.6, 68.7, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20351),	-- Taelloch Twist Reverse: Bronze
 						ach(20352),	-- Taelloch Twist Reverse: Silver

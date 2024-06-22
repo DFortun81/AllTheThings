@@ -1,58 +1,4 @@
 11.0.0.54311
-ach(20363),	-- Dunelle's Detour: Bronze \\ WW Zone 3 Race 1: Bronze
-ach(20364),	-- Dunelle's Detour: Silver \\ WW Zone 3 Race 1: Silver
-ach(20365),	-- Dunelle's Detour: Gold \\ WW Zone 3 Race 1: Gold
-ach(20366),	-- Dunelle's Detour Advanced: Bronze \\ WW Zone 3 Race 1 Advanced: Bronze
-ach(20367),	-- Dunelle's Detour Advanced: Silver \\ WW Zone 3 Race 1 Advanced: Silver
-ach(20368),	-- Dunelle's Detour Advanced: Gold \\ WW Zone 3 Race 1 Advanced: Gold
-ach(20369),	-- Dunelle's Detour Reverse: Bronze \\ WW Zone 3 Race 1 Reverse: Bronze
-ach(20370),	-- Dunelle's Detour Reverse: Silver \\ WW Zone 3 Race 1 Reverse: Silver
-ach(20371),	-- Dunelle's Detour Reverse: Gold \\ WW Zone 3 Race 1 Reverse: Gold
-ach(20372),	-- Tenir's Traversal: Bronze \\ WW Zone 3 Race 2: Bronze
-ach(20373),	-- Tenir's Traversal: Silver \\ WW Zone 3 Race 2: Silver
-ach(20374),	-- Tenir's Traversal: Gold \\ WW Zone 3 Race 2: Gold
-ach(20375),	-- Tenir's Traversal Advanced: Bronze \\ WW Zone 3 Race 2 Advanced: Bronze
-ach(20376),	-- Tenir's Traversal Advanced: Silver \\ WW Zone 3 Race 2 Advanced: Silver
-ach(20377),	-- Tenir's Traversal Advanced: Gold \\ WW Zone 3 Race 2 Advanced: Gold
-ach(20378),	-- Tenir's Traversal Reverse: Bronze \\ WW Zone 3 Race 2 Reverse: Bronze
-ach(20379),	-- Tenir's Traversal Reverse: Silver \\ WW Zone 3 Race 2 Reverse: Silver
-ach(20380),	-- Tenir's Traversal Reverse: Gold \\ WW Zone 3 Race 2 Reverse: Gold
-ach(20381),	-- Light's Redoubt Descent: Bronze \\ WW Zone 3 Race 3: Bronze
-ach(20382),	-- Light's Redoubt Descent: Silver \\ WW Zone 3 Race 3: Silver
-ach(20383),	-- Light's Redoubt Descent: Gold \\ WW Zone 3 Race 3: Gold
-ach(20384),	-- Light's Redoubt Descent Advanced: Bronze \\ WW Zone 3 Race 3 Advanced: Bronze
-ach(20385),	-- Light's Redoubt Descent Advanced: Silver \\ WW Zone 3 Race 3 Advanced: Silver
-ach(20386),	-- Light's Redoubt Descent Advanced: Gold \\ WW Zone 3 Race 3 Advanced: Gold
-ach(20387),	-- Light's Redoubt Descent Reverse: Bronze \\ WW Zone 3 Race 3 Reverse: Bronze
-ach(20388),	-- Light's Redoubt Descent Reverse: Silver \\ WW Zone 3 Race 3 Reverse: Silver
-ach(20389),	-- Light's Redoubt Descent Reverse: Gold \\ WW Zone 3 Race 3 Reverse: Gold
-ach(20390),	-- Stillstone Slalom: Bronze \\ WW Zone 3 Race 4: Bronze
-ach(20391),	-- Stillstone Slalom: Silver \\ WW Zone 3 Race 4: Silver
-ach(20392),	-- Stillstone Slalom: Gold \\ WW Zone 3 Race 4: Gold
-ach(20393),	-- Stillstone Slalom Advanced: Bronze \\ WW Zone 3 Race 4 Advanced: Bronze
-ach(20394),	-- Stillstone Slalom Advanced: Silver \\ WW Zone 3 Race 4 Advanced: Silver
-ach(20395),	-- Stillstone Slalom Advanced: Gold \\ WW Zone 3 Race 4 Advanced: Gold
-ach(20396),	-- Stillstone Slalom Reverse: Bronze \\ WW Zone 3 Race 4 Reverse: Bronze
-ach(20397),	-- Stillstone Slalom Reverse: Silver \\ WW Zone 3 Race 4 Reverse: Silver
-ach(20398),	-- Stillstone Slalom Reverse: Gold \\ WW Zone 3 Race 4 Reverse: Gold
-ach(20399),	-- Mereldar Meander: Bronze \\ WW Zone 3 Race 5: Bronze
-ach(20400),	-- Mereldar Meander: Silver \\ WW Zone 3 Race 5: Silver
-ach(20401),	-- Mereldar Meander: Gold \\ WW Zone 3 Race 5: Gold
-ach(20402),	-- Mereldar Meander Advanced: Bronze \\ WW Zone 3 Race 5 Advanced: Bronze
-ach(20403),	-- Mereldar Meander Advanced: Silver \\ WW Zone 3 Race 5 Advanced: Silver
-ach(20404),	-- Mereldar Meander Advanced: Gold \\ WW Zone 3 Race 5 Advanced: Gold
-ach(20405),	-- Mereldar Meander Reverse: Bronze \\ WW Zone 3 Race 5 Reverse: Bronze
-ach(20406),	-- Mereldar Meander Reverse: Silver \\ WW Zone 3 Race 5 Reverse: Silver
-ach(20407),	-- Mereldar Meander Reverse: Gold \\ WW Zone 3 Race 5 Reverse: Gold
-ach(20408),	-- Velhan's Venture: Bronze \\ WW Zone 3 Race 6: Bronze
-ach(20409),	-- Velhan's Venture: Silver \\ WW Zone 3 Race 6: Silver
-ach(20410),	-- Velhan's Venture: Gold \\ WW Zone 3 Race 6: Gold
-ach(20411),	-- Velhan's Venture Advanced: Bronze \\ WW Zone 3 Race 6 Advanced: Bronze
-ach(20412),	-- Velhan's Venture Advanced: Silver \\ WW Zone 3 Race 6 Advanced: Silver
-ach(20413),	-- Velhan's Venture Advanced: Gold \\ WW Zone 3 Race 6 Advanced: Gold
-ach(20414),	-- Velhan's Venture Reverse: Bronze \\ WW Zone 3 Race 6 Reverse: Bronze
-ach(20415),	-- Velhan's Venture Reverse: Silver \\ WW Zone 3 Race 6 Reverse: Silver
-ach(20416),	-- Velhan's Venture Reverse: Gold \\ WW Zone 3 Race 6 Reverse: Gold
 ach(20419),	-- City of Threads Twist: Bronze \\ WW Zone 5 Race 1: Bronze
 ach(20420),	-- City of Threads Twist: Silver \\ WW Zone 5 Race 1: Silver
 ach(20421),	-- City of Threads Twist: Gold \\ WW Zone 5 Race 1: Gold
@@ -107,6 +53,7 @@ ach(20471),	-- Siegehold Scuttle Advanced: Gold \\ WW Zone 5 Race 6 Advanced: Go
 ach(20472),	-- Siegehold Scuttle Reverse: Bronze \\ WW Zone 5 Race 6 Reverse: Bronze
 ach(20473),	-- Siegehold Scuttle Reverse: Silver \\ WW Zone 5 Race 6 Reverse: Silver
 ach(20474),	-- Siegehold Scuttle Reverse: Gold \\ WW Zone 5 Race 6 Reverse: Gold
+
 ach(20510),	-- What Could it be?
 ach(20511),	-- Gotta Punt em' All
 ach(20512),	-- Herding Cats
@@ -186,15 +133,6 @@ ach(40311),	-- Sharing the Light
 ach(40312),	-- Starting the Flames
 ach(40313),	-- Igniting the Keyflames
 ach(40314),	-- Fragments of Memories \\ Memories of a Worldsoul
-ach(40334),	-- Hallowfall: Bronze
-ach(40335),	-- Hallowfall: Silver
-ach(40336),	-- Hallowfall: Gold
-ach(40337),	-- Hallowfall Advanced: Bronze
-ach(40338),	-- Hallowfall Advanced: Silver
-ach(40339),	-- Hallowfall Advanced: Gold
-ach(40340),	-- Hallowfall Reverse: Bronze
-ach(40341),	-- Hallowfall Reverse: Silver
-ach(40342),	-- Hallowfall Reverse: Gold
 ach(40343),	-- Azj-Kahet: Bronze
 ach(40344),	-- Azj-Kahet: Silver
 ach(40345),	-- Azj-Kahet: Gold

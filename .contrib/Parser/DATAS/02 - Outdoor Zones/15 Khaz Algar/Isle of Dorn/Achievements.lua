@@ -67,6 +67,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--	["sourceQuest"] = 83181,	-- TODO: quest name (could be HQT?)
 				}),
 				crit(69433, {	-- All Ore Nothing
+					-- Remove noautomation here once new wago files are added, this criteria doesn't exist in the current exports so the parser is unhappy
+					["_noautomation"] = true,
 					["sourceQuest"] = 82801,	-- Beetlejeweled
 				}),
 			}),

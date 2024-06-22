@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80221, {	-- Basin Bypass
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 53.5, 64.2, ISLE_OF_DORN },
 					["g"] = {
 						ach(20273),	-- Basin Bypass: Bronze
 						ach(20274),	-- Basin Bypass: Silver
@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80227, {	-- Basin Bypass - Advanced
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 53.5, 64.2, ISLE_OF_DORN },
 					["g"] = {
 						ach(20276),	-- Basin Bypass Advanced: Bronze
 						ach(20277),	-- Basin Bypass Advanced: Silver
@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80233, {	-- Basin Bypass - Reverse
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 53.5, 64.2, ISLE_OF_DORN },
 					["g"] = {
 						ach(20279),	-- Basin Bypass Reverse: Bronze
 						ach(20280),	-- Basin Bypass Reverse: Silver
@@ -139,7 +139,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80219, {	-- Dornogal Drift
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 43.5, 11.7, DORNOGAL },
 					["g"] = {
 						ach(20255),	-- Dornogal Drift: Bronze
 						ach(20256),	-- Dornogal Drift: Silver
@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80225, {	-- Dornogal Drift - Advanced
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 43.5, 11.7, DORNOGAL },
 					["g"] = {
 						ach(20258),	-- Dornogal Drift Advanced: Bronze
 						ach(20259),	-- Dornogal Drift Advanced: Silver
@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80231, {	-- Dornogal Drift - Reverse
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 43.5, 11.7, DORNOGAL },
 					["g"] = {
 						ach(20261),	-- Dornogal Drift Reverse: Bronze
 						ach(20262),	-- Dornogal Drift Reverse: Silver
@@ -196,7 +196,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80220, {	-- Storm's Watch Survey
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 38.6, 43.6, ISLE_OF_DORN },
 					["g"] = {
 						ach(20264),	-- Storm's Watch Survey: Bronze
 						ach(20265),	-- Storm's Watch Survey: Silver
@@ -206,7 +206,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80226, {	-- Storm's Watch Survey - Advanced
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 38.6, 43.6, ISLE_OF_DORN },
 					["g"] = {
 						ach(20267),	-- Storm's Watch Survey Advanced: Bronze
 						ach(20268),	-- Storm's Watch Survey Advanced: Silver
@@ -216,7 +216,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80232, {	-- Storm's Watch Survey - Reverse
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 38.6, 43.6, ISLE_OF_DORN },
 					["g"] = {
 						ach(20270),	-- Storm's Watch Survey Reverse: Bronze
 						ach(20271),	-- Storm's Watch Survey Reverse: Silver
@@ -256,7 +256,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80223, {	-- Thunderhead Trail
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 58.6, 21.1, ISLE_OF_DORN },
 					["g"] = {
 						ach(20291),	-- Thunderhead Trail: Bronze
 						ach(20292),	-- Thunderhead Trail: Silver
@@ -266,7 +266,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80229, {	-- Thunderhead Trail - Advanced
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 58.6, 21.1, ISLE_OF_DORN },
 					["g"] = {
 						ach(20294),	-- Thunderhead Trail Advanced: Bronze
 						ach(20295),	-- Thunderhead Trail Advanced: Silver
@@ -276,7 +276,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				skyridingrace(80235, {	-- Thunderhead Trail - Reverse
 					-- TODO
 					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, ISLE_OF_DORN },
+					["coord"] = { 58.6, 21.1, ISLE_OF_DORN },
 					["g"] = {
 						ach(20297),	-- Thunderhead Trail Reverse: Bronze
 						ach(20298),	-- Thunderhead Trail Reverse: Silver
