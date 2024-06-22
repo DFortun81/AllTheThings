@@ -2050,17 +2050,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	--      DF      --
 	------------------
 	expansion(EXPANSION.DF, {
-		-- New Heritage questline start HQTs
-		q(75246),	-- Human Heritage (spellID 406118)
-		q(75247),	-- Orc Heritage (spellID 406119)
-		q(75248),	-- Goblin Heritage (spellID 406121)
-		q(75249),	-- Worgen Heritage (spellID 406122)
-		q(75250),	-- Tauren Heritage (spellID 406123)
-		q(75251),	-- Gnome Heritage (spellID 406126)
-		q(75252),	-- Blood Elf Heritage (spellID 406127)
-		q(75253),	-- Dwarf Heritage (spellID 406128)
-		q(76457),	-- Undead Heritage (spellID 414546)
-		q(76458),	-- Night Elf Heritage (spellID 414550)
 		-- Timewalking - Master of Timeways Triggers
 		q(78204),	-- First Week Trigger (spellID 423861)
 		-- PVP
