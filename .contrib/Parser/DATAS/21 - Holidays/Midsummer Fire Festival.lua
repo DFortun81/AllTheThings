@@ -1085,7 +1085,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
 			["sourceQuest"] = 11657,	-- Torch Catching (A)
 			["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
-			["timeline"] = { ADDED_2_4_0 },
+			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = ALLIANCE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -1099,7 +1099,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
 			["sourceQuest"] = 11923,	-- Torch Catching (H)
 			["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
-			["timeline"] = { ADDED_2_4_0 },
+			["timeline"] = { ADDED_2_4_0, REMOVED_10_2_7 },
 			["races"] = HORDE_ONLY,
 			["isDaily"] = true,
 			["groups"] = {
@@ -1109,6 +1109,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				i(23247),	-- Burning Blossom
 			},
 		}),
+		{	-- More Torch Tossing
+			["allianceQuestData"] = q(82080, {	-- More Torch Tossing (A)
+				["qg"] = FESTIVAL_MASTER_FIRE_EATER_ID,
+				["sourceQuest"] = 11657,	-- Torch Catching (A)
+				["coords"] = FESTIVAL_MASTER_FIRE_EATER_COORDS,
+			}),
+			["hordeQuestData"] = q(82109, {	-- More Torch Tossing (H)
+				["qg"] = FESTIVAL_MASTER_FLAME_EATER_ID,
+				["sourceQuest"] = 11923,	-- Torch Catching (H)
+				["coords"] = FESTIVAL_MASTER_FLAME_EATER_COORDS,
+			}),
+			["timeline"] = { ADDED_10_2_7 },
+			["isDaily"] = true,
+			["groups"] = {
+				objective(1, {	-- Hit 8 braziers.
+					["provider"] = { "i", 34862 },	-- Practice Torches
+				}),
+				i(23247),	-- Burning Blossom
+			},
+		},
 		q(11882, {	-- Playing with Fire (A)
 			["qg"] = 25962,	-- Fire Eater (A)
 			["timeline"] = { ADDED_2_4_0 },
