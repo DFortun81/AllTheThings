@@ -34,6 +34,117 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					40701,	-- Skyriding Glyphs: Untamed Valley
 				}},
 			}),
+			-- TODO: Remove _noautomation when possible
+			ach(40629, bubbleDown({ ["_noautomation"] = true, }, {	-- Bookworm
+				crit(68983, {	-- Entomological Essay on Grubs, Volume 1
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454335 },
+				}),
+				crit(68989, {	-- Entomological Essay on Grubs, Volume 2
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454336 },
+				}),
+				crit(68990, {	-- Entomological Essay on Grubs, Volume 3
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454338 },
+				}),
+			})),
+			ach(40727),		-- Skittershaw Spin
+			ach(40691, {	-- Skyriding Glyphs: Arathi's End
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			ach(40696, {	-- Skyriding Glyphs: Deepwalker Pass
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			ach(40694, {	-- Skyriding Glyphs: Eye of Ansurek
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			ach(40695, {	-- Skyriding Glyphs: Old Sacrificial Pit
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			ach(40698, {	-- Skyriding Glyphs: Rak-Ush
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			ach(40693, {	-- Skyriding Glyphs: Ruptured Lake
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			ach(40692, {	-- Skyriding Glyphs: Siegehold
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			ach(40699, {	-- Skyriding Glyphs: Silken Ward
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			ach(40697, {	-- Skyriding Glyphs: The Maddening Deep
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			ach(40700, {	-- Skyriding Glyphs: Trickling Abyss
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			ach(40701, {	-- Skyriding Glyphs: Untamed Valley
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			-- TODO: Remove _noautomation when possible
+			ach(40542, bubbleDown({ ["_noautomation"] = true, }, {	-- Smelling History
+				crit(68818, {	-- Strands of Memory
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454328 },
+				}),
+				crit(68971, {	-- Ethos of War, Part 1
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454343 },
+				}),
+				crit(68980, {	-- Ethos of War, Part 2
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454344 },
+				}),
+				crit(68981, {	-- Ethos of War, Part 3
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454348 },
+				}),
+				crit(68982, {	-- Ethos of War, Part 4
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454350 },
+				}),
+				crit(68984, {	-- Queen Xekatha
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454313 },
+				}),
+				crit(68985, {	-- Queen Anub'izek
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454320 },
+				}),
+				crit(68986, {	-- Queen Zaltra
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454316 },
+				}),
+				crit(68987, {	-- Treatise on Forms: Sages
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454332 },
+				}),
+				crit(68988, {	-- Treatise on Forms: Skitterlings
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 454330 },
+				}),
+				crit(69446, {	-- Treatise on Forms: Skitterlings
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 456927 },
+				}),
+				crit(69447, {	-- Treatise on Forms: Skitterlings
+					-- TODO: Add this provider somewhere
+					--["provider"] = { "o", 456928 },
+				}),
+			})),
 			ach(40636, {	-- Sojourner of Azj-Kahet
 				crit(69159, {	-- Rak-Ush Swarmery
 					["sourceQuest"] = 79123,	-- Pernament Hire
@@ -97,50 +208,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["_noautomation"] = true,
 					--["sourceQuest"] = 82284,	-- Remembrance for the Fallen
 				}),
-			}),
-			ach(40691, {	-- Skyriding Glyphs: Arathi's End
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
-			}),
-			ach(40696, {	-- Skyriding Glyphs: Deepwalker Pass
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
-			}),
-			ach(40694, {	-- Skyriding Glyphs: Eye of Ansurek
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
-			}),
-			ach(40695, {	-- Skyriding Glyphs: Old Sacrificial Pit
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
-			}),
-			ach(40698, {	-- Skyriding Glyphs: Rak-Ush
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
-			}),
-			ach(40693, {	-- Skyriding Glyphs: Ruptured Lake
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
-			}),
-			ach(40692, {	-- Skyriding Glyphs: Siegehold
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
-			}),
-			ach(40699, {	-- Skyriding Glyphs: Silken Ward
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
-			}),
-			ach(40697, {	-- Skyriding Glyphs: The Maddening Deep
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
-			}),
-			ach(40700, {	-- Skyriding Glyphs: Trickling Abyss
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
-			}),
-			ach(40701, {	-- Skyriding Glyphs: Untamed Valley
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
 			}),
 			pvp(ach(40086)),	-- Tour of Duty: Azj-Kahet
 		}),

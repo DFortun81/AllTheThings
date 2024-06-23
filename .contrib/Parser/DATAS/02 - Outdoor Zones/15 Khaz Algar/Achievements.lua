@@ -3,36 +3,17 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
-		ach(40702, {	-- Khaz Algar Glyph Hunter
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				40705, 	-- Azj-Kahet Glyph Hunter
-				40704, 	-- Hallowfall Glyph Hunter
-				40166, 	-- Isle of Dorn Glyph Hunter
-				40703, 	-- The Ringing Deeps Glyph Hunter
-			}},
-		}),
-		ach(20596, {	-- Loremaster of Khaz Algar
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				20118,	-- The Isle of Dorn
-				19560,	-- The Ringing Deeps
-				20598,	-- Hallowfall
-				19559,	-- Azj-Kahet
-				20595,	-- Sojourner of Isle of Dorn
-			}},
-		}),
-		petbattle(ach(40153, {	-- Battle on Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["_quests"] = { x },
-			-- }),
-		})),
 		petbattle(ach(40154, {	-- Aquatic Battler of Khaz Algar
 			-- TODO
 			-- crit(x, {	-- x
 			-- 	["crs"] = { x },
 			-- 	["coord"] = { x, y, map },
+			-- }),
+		})),
+		petbattle(ach(40153, {	-- Battle on Khaz Algar
+			-- TODO
+			-- crit(x, {	-- x
+			-- 	["_quests"] = { x },
 			-- }),
 		})),
 		petbattle(ach(40155, {	-- Beast Battler of Khaz Algar
@@ -71,27 +52,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- }),
 		})),
 		petbattle(ach(40162, {	-- Humanoid Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
-		})),
-		petbattle(ach(40163, {	-- Magic Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
-		})),
-		petbattle(ach(40164, {	-- Mechanical Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
-		})),
-		petbattle(ach(40165, {	-- Undead Battler of Khaz Algar
 			-- TODO
 			-- crit(x, {	-- x
 			-- 	["crs"] = { x },
@@ -147,6 +107,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				40327,	-- The Ringing Deeps: Gold
 				40330,	-- The Ringing Deeps Advanced: Gold
 				40333,	-- The Ringing Deeps Reverse: Gold
+			}},
+		}),
+		ach(40702, {	-- Khaz Algar Glyph Hunter
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				40705, 	-- Azj-Kahet Glyph Hunter
+				40704, 	-- Hallowfall Glyph Hunter
+				40166, 	-- Isle of Dorn Glyph Hunter
+				40703, 	-- The Ringing Deeps Glyph Hunter
 			}},
 		}),
 		petbattle(ach(40194, {	-- Khaz Algar Safari
@@ -263,6 +232,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["crs"] = { 223698 },
 			}),
 		})),
+		ach(20596, {	-- Loremaster of Khaz Algar
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				20118,	-- The Isle of Dorn
+				19560,	-- The Ringing Deeps
+				20598,	-- Hallowfall
+				19559,	-- Azj-Kahet
+				20595,	-- Sojourner of Isle of Dorn
+			}},
+		}),
+		petbattle(ach(40163, {	-- Magic Battler of Khaz Algar
+			-- TODO
+			-- crit(x, {	-- x
+			-- 	["crs"] = { x },
+			-- 	["coord"] = { x, y, map },
+			-- }),
+		})),
+		petbattle(ach(40164, {	-- Mechanical Battler of Khaz Algar
+			-- TODO
+			-- crit(x, {	-- x
+			-- 	["crs"] = { x },
+			-- 	["coord"] = { x, y, map },
+			-- }),
+		})),
 		ach(20597, {	-- The War Within
 			crit(66989, {	-- Against the Current
 				["sourceQuest"] = 79344,	-- Urban Odyssey
@@ -282,5 +275,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["sourceQuest"] = 83503,	-- TODO: Quest Name
 			}),
 		}),
+		petbattle(ach(40165, {	-- Undead Battler of Khaz Algar
+			-- TODO
+			-- crit(x, {	-- x
+			-- 	["crs"] = { x },
+			-- 	["coord"] = { x, y, map },
+			-- }),
+		})),
 	}),
 })));

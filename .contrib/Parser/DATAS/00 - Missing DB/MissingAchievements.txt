@@ -51,13 +51,8 @@ ach(40266),	-- Missed 'Em by That Much \\ [PH] Queen Ansurek Achievement
 11.0.0.54361
 ach(40306),	-- Allied Races: Earthen
 ach(40307),	-- Allied Races: Earthen \\ Allied Races: Earthen Unlock Requirements
-ach(40308),	-- Beacon of Hope
 ach(40309),	-- Heritage of the Earthen
-ach(40311),	-- Sharing the Light
-ach(40312),	-- Starting the Flames
-ach(40313),	-- Igniting the Keyflames
 ach(40314),	-- Fragments of Memories \\ Memories of a Worldsoul
-ach(40360),	-- Life on the Farm
 11.0.0.54521
 ach(40430),	-- Khaz Algar Flight Master
 11.0.0.54605
@@ -91,30 +86,9 @@ ach(40469),	-- I'm Bringing Nerub-ack
 ach(40472),	-- Battle Mender: The War Within Season 1
 ach(40473),	-- Not So Quick Fix
 ach(40475),	-- To All the Slimes I Love
-ach(40476),	-- 10 Algari Seekerthread
-ach(40480),	-- 20 Algari Seekerthread
-ach(40484),	-- 30 Algari Seekerthread
-ach(40485),	-- 40 Algari Seekerthread
-ach(40487),	-- 50 Algari Seekerthread
-ach(40488),	-- 60 Algari Seekerthread
-ach(40489),	-- 70 Algari Seekerthread
-ach(40490),	-- 80 Algari Seekerthread
-ach(40491),	-- 90 Algari Seekerthread
-ach(40492),	-- 100 Algari Seekerthread
-ach(40494),	-- 10 Algari Anglerthread
-ach(40495),	-- 20 Algari Anglerthread
-ach(40496),	-- 60 Algari Anglerthread
-ach(40497),	-- 30 Algari Anglerthread
-ach(40498),	-- 70 Algari Anglerthread
-ach(40499),	-- 40 Algari Anglerthread
-ach(40500),	-- 80 Algari Anglerthread
-ach(40501),	-- 100 Algari Anglerthread
-ach(40502),	-- 50 Algari Anglerthread
-ach(40503),	-- 90 Algari Anglerthread
 ach(40504),	-- Rocked to Sleep
 ach(40505),	-- Fate of the Kirin Tor
 ach(40506),	-- Leave No Treasure Unfound \\ No Stone Unturned
-ach(40507),	-- Hanging Tight
 ach(40509),	-- Awakening The Machine: Wave 10
 ach(40510),	-- One Ping Only
 ach(40511),	-- Rare Within
@@ -135,7 +109,6 @@ ach(40536),	-- The Spiral Weave Stories
 ach(40537),	-- Delve Loremaster: War Within
 ach(40539),	-- The Derby Dash
 11.0.0.54774
-ach(40542),	-- Smelling History
 ach(40585),	-- Super Size Snuffling
 ach(40586),	-- Awakening The Machine: Wave 20
 ach(40587),	-- Awakening The Machine: Wave 30
@@ -151,17 +124,13 @@ ach(40614),	-- Gobblin' with Glublurp
 ach(40615),	-- Unexpected Arrival
 ach(40616),	-- Unexpected Arrivals
 ach(40617),	-- Deepholla
-ach(40618),	-- Lost and Found
 ach(40619),	-- Mine Poppin'
 ach(40620),	-- Back to the Wall
 ach(40622),	-- Biblo Archivist
 11.0.0.54935
-ach(40623),	-- I Only Need One Trip
 ach(40624),	-- Itsy Bitsy Spider
 ach(40625),	-- The Missing Lynx
 ach(40628),	-- Notable Machines
-ach(40629),	-- Bookworm
-ach(40630),	-- For the Collective
 ach(40632),	-- No Harm Ever Came From Reading A Book
 ach(40633),	-- The Unseeming
 ach(40634),	-- You Can't Hang With Us
@@ -170,12 +139,9 @@ ach(40662),	-- It's Not Much, But It's Honest Work
 ach(40723),	-- Web-Wrapped in the Finest Silks \\ [PH] 11.0 Mythic VFX Unlock
 ach(40724),	-- Treasures of The Ringing Deeps \\ Treasures of the Ringing Deeps
 ach(40725),	-- War Within Delves: Endgame
-ach(40727),	-- Skittershaw Spin
 11.0.0.55000
 ach(40728),	-- Forged Finery
-ach(40729),	-- Light's Gambit Champion
 ach(40730),	-- Love is in the Lair
-ach(40731),	-- Panhandled
 ach(40732),	-- Heavy-Handed
 ach(40762),	-- Khaz Algar Lore Hunter
 ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
