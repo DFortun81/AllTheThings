@@ -8,6 +8,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 			453,	-- The Crimson Assembly Hall
 			454,	-- Vaults of Kings Past
 			455,	-- Throne of Ancient Conquerors
+			1546,	-- Mogu'shan Palace (reported a lot on Remix)
 		},
 		["g"] = {
 			n(QUESTS, {
