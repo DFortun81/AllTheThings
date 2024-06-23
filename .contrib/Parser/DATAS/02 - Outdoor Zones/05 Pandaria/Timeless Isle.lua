@@ -99,6 +99,24 @@ root(ROOTS.Zones, {
 				})),
 				n(ACHIEVEMENTS, {
 					ach(8716),	-- Emissary of Ordos
+					ach(8717, {	-- Candlekeeper
+						["cost"] = {{"c",789,10}},	-- 10x Bloody Coin
+					}),
+					ach(8718, {	-- Oathguard
+						["cost"] = {{"c",789,100}},	-- 100x Bloody Coin
+					}),
+					ach(8719, {	-- Blazebinder
+						["cost"] = {{"c",789,500}},	-- 500x Bloody Coin
+					}),
+					ach(8720, {	-- Kilnmaster
+						["cost"] = {{"c",789,1000}},	-- 1000x Bloody Coin
+					}),
+					ach(8721, {	-- Fire-Watcher
+						["cost"] = {{"c",789,2000}},	-- 2000x Bloody Coin
+						["g"] = {
+							title(251),	-- Fire-Watcher
+						},
+					}),
 					ach(8715),	-- Emperor Shaohao
 					ach(8726),	-- Extreme Treasure Hunter
 					ach(8725, {	-- Eyes On The Ground
@@ -2321,23 +2339,16 @@ root(ROOTS.Zones, {
 					n(73307, {	-- Speaker Gulan <Emissary of Ordos>
 						["coord"] = { 74.9, 44.9, TIMELESS_ISLE },
 						["g"] = pvp({
-							currency(789, {	-- Bloody Coin
-								["description"] = "Earn Bloody Coins by transforming into an Emissary of Ordos and participating in PvP.",
-								["g"] = {
-									ach(8717),	-- Candlekeeper
-									ach(8718),	-- Oathguard
-									ach(8719),	-- Blazebinder
-									ach(8720),	-- Kilnmaster
-									ach(8721, {	-- Fire-Watcher
-										title(251),	-- Fire-Watcher
-									}),
-								},
-							}),
 							i(102464, {	-- Black Ash
 								["cost"] = { { "c", 789, 1 } },	-- 1x Bloody Coin
 							}),
 							i(102467, {	-- Censer of Eternal Agony (TOY!)
 								["cost"] = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
+								["g"] = {
+									currency(789, {	-- Bloody Coin
+										["description"] = "Earn Bloody Coins by transforming into an Emissary of Ordos and participating in PvP.",
+									}),
+								}
 							}),
 							i(102463, {	-- Fire-Watcher's Oath
 								["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
