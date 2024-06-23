@@ -35,8 +35,10 @@ local DUST_TRADER = {
 local HERB_TRADER = {
 	PRIMAL_SPIRIT,
 	i(128161, {	-- Recipe: Elemental Distillate (RECIPE!)
+		-- #if AFTER 9.0.1
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #endif
 		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 }
 	}),
@@ -47,8 +49,10 @@ local HERB_TRADER = {
 		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
 	}),
 	i(128160, {	-- Recipe: Wildswater (RECIPE!)
+		-- #if AFTER 9.0.1
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #endif
 		["cost"] = {{ "i", ALCHEMICAL_CATALYST, 10 }},
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 }
 	}),
@@ -71,22 +75,32 @@ local HERB_TRADER = {
 		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
 	}),
 	i(127723, {	-- Technique: Mighty Ensorcelled Tarot (RECIPE!)
+		-- #if AFTER 9.0.1
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #endif
 		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
 	}),
 	i(127728, {	-- Technique: Mighty Weapon Crystal (RECIPE!)
+		-- #if AFTER 9.0.1
 		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #endif
 		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 	}),
 	i(127741, {	-- Technique: Savage Ensorcelled Tarot (RECIPE!)
+		-- #if AFTER 9.0.1
 		["description"] = WOD_REMOVED_RECIPE_STR,
 		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #endif
 		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
 	}),
 	i(127746, {	-- Technique: Savage Weapon Crystal (RECIPE!)
+		-- #if AFTER 9.0.1
 		["description"] = WOD_REMOVED_RECIPE_STR,
+		["collectible"] = false,	-- item still exists on vendor, but not usable/learnable so we have to mark it as not collectible
+		-- #endif
 		["cost"] = {{ "i", CERULEAN_PIGMENT, 20 }},
 		["timeline"] = { ADDED_6_2_0, REMOVED_10_0_5 },
 	}),
