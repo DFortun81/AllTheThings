@@ -1071,15 +1071,16 @@ if app.IsRetail then
 			return
 		end
 
-		-- TODO: add information type to show character which has the item
 		app.SetAccountCached("SourceItemsOnCharacter",sourceID,app.GUID)
 		-- app.PrintDebug("Unlearned SourceID!",sourceID,link)
+		app.WipeSearchCache()
 		return
 	end
 	local CheckValue
 	local function ClearIfValue(container, check)
 		for id,val in pairs(container) do
 			if val == check then
+				-- app.PrintDebug("Cleared",id,"from",check)
 				container[id] = nil
 			end
 		end
