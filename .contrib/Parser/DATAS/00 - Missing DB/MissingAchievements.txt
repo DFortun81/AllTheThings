@@ -58,19 +58,7 @@ ach(40312),	-- Starting the Flames
 ach(40313),	-- Igniting the Keyflames
 ach(40314),	-- Fragments of Memories \\ Memories of a Worldsoul
 ach(40360),	-- Life on the Farm
-ach(40361),	-- Cinderbrew Meadery
-ach(40363),	-- Heroic: Cinderbrew Meadery
-ach(40366),	-- Mythic: Cinderbrew Meadery
-ach(40370),	-- Ara-Kara, City of Echoes
-ach(40374),	-- Heroic: Ara-Kara, City of Echoes
-ach(40375),	-- Mythic: Ara-Kara, City of Echoes
-ach(40376),	-- City of Threads
-ach(40377),	-- Heroic: City of Threads
-ach(40379),	-- Mythic: City of Threads
 11.0.0.54521
-ach(40427),	-- Darkflame Cleft
-ach(40428),	-- Heroic: Darkflame Cleft
-ach(40429),	-- Mythic: Darkflame Cleft
 ach(40430),	-- Khaz Algar Flight Master
 11.0.0.54605
 ach(40431),	-- Hunting the Hunter
@@ -153,13 +141,7 @@ ach(40586),	-- Awakening The Machine: Wave 20
 ach(40587),	-- Awakening The Machine: Wave 30
 ach(40588),	-- Awakening The Machine: Wave 40
 ach(40589),	-- Awakening The Machine: Wave 50
-ach(40590),	-- Priory of the Sacred Flame
 ach(40591),	-- Khaz Algar Diplomat
-ach(40592),	-- Heroic: Priory of the Sacred Flame
-ach(40596),	-- Mythic: Priory of the Sacred Flame
-ach(40599),	-- The Dawnbreaker
-ach(40601),	-- Heroic: The Dawnbreaker
-ach(40604),	-- Mythic: The Dawnbreaker
 ach(40606),	-- Flat Earthen
 ach(40607),	-- Wandering in the Ravine
 ach(40608),	-- Running in the Ravine
@@ -172,7 +154,6 @@ ach(40617),	-- Deepholla
 ach(40618),	-- Lost and Found
 ach(40619),	-- Mine Poppin'
 ach(40620),	-- Back to the Wall
-ach(40621),	-- The Rookery
 ach(40622),	-- Biblo Archivist
 11.0.0.54935
 ach(40623),	-- I Only Need One Trip
@@ -184,11 +165,6 @@ ach(40630),	-- For the Collective
 ach(40632),	-- No Harm Ever Came From Reading A Book
 ach(40633),	-- The Unseeming
 ach(40634),	-- You Can't Hang With Us
-ach(40637),	-- Heroic: The Rookery
-ach(40642),	-- Mythic: The Rookery
-ach(40643),	-- The Stonevault
-ach(40644),	-- Heroic: The Stonevault
-ach(40648),	-- Mythic: The Stonevault
 ach(40660),	-- The War Within Season 1: Spelunker Supreme
 ach(40662),	-- It's Not Much, But It's Honest Work
 ach(40723),	-- Web-Wrapped in the Finest Silks \\ [PH] 11.0 Mythic VFX Unlock

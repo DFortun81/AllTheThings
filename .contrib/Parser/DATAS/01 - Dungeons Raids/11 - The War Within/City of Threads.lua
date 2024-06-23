@@ -51,6 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2596, {	-- Izo, the Grand Splicer
 					["crs"] = { 216658 },	-- Izo, the Grand Splicer
 					["g"] = {
+						ach(40376),	-- City of Threads
 						i(219321),	-- Cirral Concoctory
 						i(221186),	-- Entwined Chimeric Legguards
 						i(221189),	-- Experiment 08752's Band
@@ -59,6 +60,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221183),	-- Splice 'n Dice
 						i(221184),	-- Surgical Heartstopper
 						i(221188),	-- Viscera-Lathered Coat
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				e(2596, {	-- Izo, the Grand Splicer
+					["crs"] = { 216658 },	-- Izo, the Grand Splicer
+					["g"] = {
+						ach(40377),	-- Heroic: City of Threads
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				e(2596, {	-- Izo, the Grand Splicer
+					["crs"] = { 216658 },	-- Izo, the Grand Splicer
+					["g"] = {
+						ach(40379),	-- Mythic: City of Threads
 					},
 				}),
 			}),

@@ -43,6 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2561, {	-- The Darkness
 					["crs"] = { 210797 },	-- The Darkness
 					["g"] = {
+						ach(40427),	-- Darkflame Cleft
 						i(221112),	-- Caliginous Claspers
 						i(221110),	-- Crepuscular Carver
 						i(221113),	-- Gloaming Visage
@@ -50,6 +51,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221111),	-- Poleaxe of Somber Fate
 						i(219307),	-- Remnant of Darkness
 						i(221114),	-- Shadowspawn Leggings
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				e(2561, {	-- The Darkness
+					["crs"] = { 210797 },	-- The Darkness
+					["g"] = {
+						ach(40428),	-- Heroic: Darkflame Cleft
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				e(2561, {	-- The Darkness
+					["crs"] = { 210797 },	-- The Darkness
+					["g"] = {
+						ach(40429),	-- Mythic: Darkflame Cleft
 					},
 				}),
 			}),

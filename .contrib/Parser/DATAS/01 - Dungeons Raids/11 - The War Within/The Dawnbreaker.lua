@@ -34,6 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2593, {	-- Rasha'nan
 					["crs"] = { 224552 },	-- Rasha'nan
 					["g"] = {
+						ach(40599),	-- The Dawnbreaker
 						i(221148),	-- Epaulets of the Clipped Wings
 						i(221147),	-- Goliath's Chitinous Chainmail
 						i(221149),	-- Membranous Slippers
@@ -42,6 +43,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221145),	-- Shipwrecker's Bludgeon
 						i(221146),	-- Soaring Behemoth's Greathelm
 						i(221144),	-- Zephyrous Sail Carver
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				e(2593, {	-- Rasha'nan
+					["crs"] = { 224552 },	-- Rasha'nan
+					["g"] = {
+						ach(40601),	-- Heroic: The Dawnbreaker
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				e(2593, {	-- Rasha'nan
+					["crs"] = { 224552 },	-- Rasha'nan
+					["g"] = {
+						ach(40604),	-- Mythic: The Dawnbreaker
 					},
 				}),
 			}),
