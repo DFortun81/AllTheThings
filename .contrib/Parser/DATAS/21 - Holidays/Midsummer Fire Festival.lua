@@ -277,6 +277,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 		-- #endif
 		["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS },
 		["timeline"] = { ADDED_2_4_0 },
+		["provider"] = { "o", 188192 },	-- Ice Chest
 		["isDaily"] = true,
 		["groups"] = {
 			ach(263, {	-- Ice the Frost Lord
