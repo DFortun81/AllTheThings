@@ -205,7 +205,6 @@ ach(40630),	-- For the Collective
 ach(40632),	-- No Harm Ever Came From Reading A Book
 ach(40633),	-- The Unseeming
 ach(40634),	-- You Can't Hang With Us
-ach(40636),	-- Sojourner of Azj-Kahet
 ach(40637),	-- Heroic: The Rookery
 ach(40642),	-- Mythic: The Rookery
 ach(40643),	-- The Stonevault
