@@ -3092,25 +3092,34 @@ local function GetSearchResults(method, paramA, paramB, ...)
 									-- if only a few maps, list them all
 									local count = #id;
 									if count == 1 then
-										id = id[1];
-										locationGroup = C_Map_GetMapInfo(id);
-										locationName = locationGroup and TryColorizeName(locationGroup, locationGroup.name);
+										locationName = app.GetMapName(id[1]);
 									else
-										local mapsConcat, names, name = {}, {}, nil;
+										-- instead of listing individual zone names, just list zone count for brevity
+										local names = {__count=0}
+										local name
 										for j=1,count,1 do
 											name = app.GetMapName(id[j]);
 											if name and not names[name] then
-												names[name] = true;
-												tinsert(mapsConcat, name);
+												names.__count = names.__count + 1
 											end
 										end
-										-- up to 3 unqiue map names displayed
-										if #mapsConcat < 4 then
-											locationName = app.TableConcat(mapsConcat, nil, nil, "/");
-										else
-											mapsConcat[4] = "+++";
-											locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 4);
-										end
+										locationName = "["..names.__count.." "..BRAWL_TOOLTIP_MAPS.."]"
+										-- old: list 3 zones/+++
+										-- local mapsConcat, names, name = {}, {}, nil;
+										-- for j=1,count,1 do
+										-- 	name = app.GetMapName(id[j]);
+										-- 	if name and not names[name] then
+										-- 		names[name] = true;
+										-- 		mapsConcat[#mapsConcat + 1] = name
+										-- 	end
+										-- end
+										-- -- 1 unique map name displayed
+										-- if #mapsConcat < 2 then
+										-- 	locationName = app.TableConcat(mapsConcat, nil, nil, "/");
+										-- else
+										-- 	mapsConcat[2] = "+"..(count - 1);
+										-- 	locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 2);
+										-- end
 									end
 								else
 									locationGroup = SearchForObject(field, id, "field") or (id and field == "mapID" and C_Map_GetMapInfo(id));
