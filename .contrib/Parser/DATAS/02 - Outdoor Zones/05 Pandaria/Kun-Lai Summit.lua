@@ -18,6 +18,7 @@ root(ROOTS.Zones, {
 				386,	-- Ruins of Korune (Upper Floor)
 				387,	-- Ruins of Korune (Lower Floor)
 				434,	-- The Ancient Passage
+				843,	-- Shadow-Pan Showdown
 			},
 			["groups"] = {
 				n(-362, bubbleDownSelf({	-- Peak of Serenity
