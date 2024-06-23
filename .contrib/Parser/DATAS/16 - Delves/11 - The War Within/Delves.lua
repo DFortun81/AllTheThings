@@ -1,8 +1,11 @@
-root(ROOTS.Delves, expansion(EXPANSION.TWW, {
+root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
-		ach(40817),	-- A Delver's Bounty
-		ach(40538),	-- Brann Development
+		ach(40817),		-- A Delver's Bounty
+		ach(40538, {	-- Brann Development
+			["timeline"] = { REMOVED_11_1_0 },
+		}),
 		ach(40635, {	-- Branntastic
+			["timeline"] = { REMOVED_11_1_0 },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(40461),	-- Buddy System VI
@@ -417,4 +420,4 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, {
 		i(226004),	-- Odlen Text (was looted from Sturdy Chest (objectID) 455495)
 		i(226005),	-- Ancient Tool (was looted from Sturdy Chest (objectID) 455914)
 	}),
-}));
+})));
