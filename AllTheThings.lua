@@ -2421,7 +2421,8 @@ local SourceLocationSettingsKey = setmetatable({
 		return "SourceLocations:Things";
 	end
 });
-local UnobtainableTexture = " |T" .. app.asset("status-unobtainable.blp") .. ":0|t";
+local UnobtainableTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[1]..":0|t"
+local NotCurrentCharacterTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[0]..":0|t"
 local function HasCost(group, idType, id)
 	-- check if the group has a cost which includes the given parameters
 	if group.cost and type(group.cost) == "table" then
@@ -2523,10 +2524,10 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 					sourcesToShow = FilterSettings(parent) and character or unavailable
 					-- from obtainable, different character source
 					if not FilterCharacter(parent) then
-						sourcesToShow[#sourcesToShow + 1] = text.." |TInterface\\FriendsFrame\\StatusIcon-Away:0|t"
+						sourcesToShow[#sourcesToShow + 1] = text..NotCurrentCharacterTexture
 					else
 						-- check if this needs a status icon even though it's being shown
-						right = GetUnobtainableTexture(FirstParent(j, "e") or FirstParent(j, "u") or j)
+						right = GetUnobtainableTexture(FirstParent(j, "e", true) or FirstParent(j, "u", true) or j)
 							or (j.rwp and app.asset("status-prerequisites"))
 						if right then
 							sourcesToShow[#sourcesToShow + 1] = text.." |T" .. right .. ":0|t"

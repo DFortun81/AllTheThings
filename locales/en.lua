@@ -889,6 +889,7 @@ for key, value in pairs({
 
 	-- Unobtainable Listing (for fellow 100%s out there)
 	["UNOBTAINABLE_ITEM_TEXTURES"] = {
+		[0] = "Interface\\FriendsFrame\\StatusIcon-Offline",	-- Available, but not due to Current Character filters
 		app.asset("status-unobtainable"),
 		app.asset("status-prerequisites"),
 		"",									-- 3, we want no icon for these
