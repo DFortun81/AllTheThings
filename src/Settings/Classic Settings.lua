@@ -300,6 +300,9 @@ settings.Initialize = function(self)
 	app.SetMinimapButtonSettings(
 		self:GetTooltipSetting("MinimapButton"),
 		self:GetTooltipSetting("MinimapSize"));
+
+	app.DoRefreshAppearanceSources = settings:Get("Thing:Transmog")
+
 	self:UpdateMode();
 end
 settings.Get = function(self, setting)
@@ -469,7 +472,7 @@ settings.SetPersonal = function(self, setting, value)
 	self:Refresh();
 end
 settings.Refresh = function(self)
-	app.HandleEvent("OnSettingsRefreshed");
+	app.CallbackEvent("OnSettingsRefreshed");
 end
 
 
