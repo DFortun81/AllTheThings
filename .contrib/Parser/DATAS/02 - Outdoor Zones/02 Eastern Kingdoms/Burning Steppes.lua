@@ -544,7 +544,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER 10.0.1
 					["lvl"] = lvlsquish(56, 56, 20),
+					-- #else
+					["lvl"] = { 48, 57 },
+					-- #endif
 					-- this quest was level locked for characters above level 56 before Shadowlands level squish
 				}),
 				q(7630, {	-- Arcanite
