@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(69163, {	-- Pawns and Puppetry
 					-- Remove when the quest below is uncommented
 					["_noautomation"] = true,
-					--["sourceQuest"] = 80205,	-- TODO: quest name (could be HQT?)
+					--["sourceQuest"] = 80205,	-- Pulling Strings
 				}),
 				crit(69164, {	-- The Wormlands
 					["sourceQuest"] = 78897,	-- Boom or Blight
@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(69176, {	-- All Good Things...
 					-- Remove when the quest below is uncommented
 					["_noautomation"] = true,
-					--["sourceQuest"] = 82284,	-- TODO: quest name (could be HQT?)
+					--["sourceQuest"] = 82284,	-- Remembrance for the Fallen
 				}),
 			}),
 			ach(40691, {	-- Skyriding Glyphs: Arathi's End

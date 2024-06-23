@@ -58,13 +58,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["sourceQuest"] = 82895,	-- The Weight of Duty
 				}),
 				crit(67056, {	-- Brotherhood in the Skolzgal Wood
-					-- Remove when the quest below is uncommented
-					["_noautomation"] = true,
-					--	["sourceQuest"] = 80218,	-- TODO: quest name (could be HQT?)
+					["sourceQuest"] = 80218,	-- Up to No Good Down in Silkwood
 				}),
 				crit(68254, {	-- Brotherhood in the Skolzgal Wood
-					-- Intentionally did not add _noautomation here because showing the name portion of the criteriatree is enough
-					--	["sourceQuest"] = 83181,	-- TODO: quest name (could be HQT?)
+					["sourceQuest"] = 83181,	-- Best Friends, Same Ends
 				}),
 				crit(69433, {	-- All Ore Nothing
 					-- Remove noautomation here once new wago files are added, this criteria doesn't exist in the current exports so the parser is unhappy

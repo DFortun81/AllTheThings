@@ -232,4 +232,3 @@ ach(40792),	-- Solo Shuffle Medic: The War Within
 ach(40795),	-- Battleground Blitz Medic: The War Within
 11.0.0.55185
 ach(40796),	-- This Takes Me Back
-ach(40799),	-- Sojourner of The Ringing Deeps
