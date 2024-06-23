@@ -215,6 +215,94 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			i(202184),	-- Trophy of Strife
 		}),
 	})),
+	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		ach(40088, {	-- A Champion's Tour: The War Within
+			-- TODO: Uncomment and add quest name when quests are added
+			-- crit(66974, {	-- Elemental Excavation
+			-- 	["_quests"] = { 80395 },	-- ?
+			-- }),
+			-- crit(66975, {	-- Along for the Ride
+			-- 	["_quests"] = { 80394 },	-- ?
+			-- }),
+			-- crit(66976, {	-- Digging into Trouble
+			-- 	["_quests"] = { 80208 },	-- ?
+			-- }),
+			-- crit(66977, {	-- Foggy Faceoff
+			-- 	["_quests"] = { 80323 },	-- ?
+			-- }),
+			-- crit(66979, {	-- Fending off Darkness
+			-- 	["_quests"] = { 80412 },	-- ?
+			-- }),
+			-- crit(66978, {	-- Bells of the Light
+			-- 	["_quests"] = { 81622 },	-- ?
+			-- }),
+			-- crit(66980, {	-- Polarized
+			-- 	["_quests"] = { 80409 },	-- ?
+			-- }),
+			-- crit(66981, {	-- Serving the Queen
+			-- 	["_quests"] = { 80457 },	-- ?
+			-- }),
+		}),
+		ach(40097, {	-- Ruffious's Bid
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				40088,	-- A Champion's Tour: Dragon Isles
+				40096,	-- Sparking Battle
+				40086,	-- Tour of Duty: Azj-Kahet
+				40085,	-- Tour of Duty: Hallowfall
+				40083,	-- Tour of Duty: Isle of Dorn
+				40084,	-- Tour of Duty: The Ringing Deeps
+				40087,	-- Unbound Battle
+			}},
+		}),
+		-- TODO: check if _noautomation still needed once all criteriaIDs are correct
+		ach(40091, bubbleDown({ ["_noautomation"] = true, }, {	-- Slightly Spoiled
+			crit(66982, {	-- Isle of Dorn
+				["maps"] = { ISLE_OF_DORN },
+			}),
+			crit(66983, {	-- The Ringing Deeps
+				["maps"] = { THE_RINGING_DEEPS },
+			}),
+			-- TODO: Blizzard done goofed with the criteriaIDs here, fix after they do
+			-- crit(66982, {	-- Hallowfall
+			-- 	["maps"] = { HALLOWFALL },
+			-- }),
+			crit(66984, {	-- Azj-kahet
+				["maps"] = { AZJ_KAHET },
+			}),
+		})),
+		ach(40095),	-- Sparking Battle
+		ach(40096),	-- Sparking Battle
+		ach(40089),	-- Spoiled Goods
+		ach(40090),	-- Spoiled Goods
+		ach(40087, {	-- Unbound Battle
+			-- TODO: Uncomment and add quest name when quests are added
+			-- crit(66974, {	-- Elemental Excavation
+			-- 	["_quests"] = { 80395 },	-- ?
+			-- }),
+			-- crit(66975, {	-- Along for the Ride
+			-- 	["_quests"] = { 80394 },	-- ?
+			-- }),
+			-- crit(66976, {	-- Digging into Trouble
+			-- 	["_quests"] = { 80208 },	-- ?
+			-- }),
+			-- crit(66977, {	-- Foggy Faceoff
+			-- 	["_quests"] = { 80323 },	-- ?
+			-- }),
+			-- crit(66979, {	-- Fending off Darkness
+			-- 	["_quests"] = { 80412 },	-- ?
+			-- }),
+			-- crit(66978, {	-- Bells of the Light
+			-- 	["_quests"] = { 81622 },	-- ?
+			-- }),
+			-- crit(66980, {	-- Polarized
+			-- 	["_quests"] = { 80409 },	-- ?
+			-- }),
+			-- crit(66981, {	-- Serving the Queen
+			-- 	["_quests"] = { 80457 },	-- ?
+			-- }),
+		}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

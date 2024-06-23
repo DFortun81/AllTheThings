@@ -1,31 +1,10 @@
 11.0.0.54311
 ach(20510),	-- What Could it be?
 ach(20511),	-- Gotta Punt em' All
-ach(20512),	-- Herding Cats
-ach(20594),	-- Flamegard's Hope \\ Flamegards Hope
-ach(40082),	-- Never Enough
-ach(40087),	-- Unbound Battle
-ach(40088),	-- A Champion's Tour: The War Within
-ach(40089),	-- Spoiled Goods
-ach(40090),	-- Spoiled Goods
-ach(40091),	-- Slightly Spoiled
-ach(40095),	-- Sparking Battle
-ach(40096),	-- Sparking Battle
-ach(40097),	-- Ruffious's Bid
-ach(40098),	-- Immortal Spelunker
-ach(40099),	-- That Extra Push Over the Cliff
-ach(40100),	-- Undying Caver
-ach(40101),	-- Hitting one's Stride
-ach(40102),	-- Dawn of a new Delve
-ach(40103),	-- Nemesis
 ach(40138),	-- Algari Dungeoneer \\ Algarian Dungeoneer
 ach(40139),	-- Algari Dungeon Damage Dealer \\ Algarian Dungeon Damage Dealer
 ach(40140),	-- Algari Dungeon Healer \\ Algarian Dungeon Healer
 ach(40141),	-- Algari Dungeon Tank \\ Algarian Dungeon Tank
-ach(40142),	-- Learning to Share
-ach(40145),	-- So Much Sharing
-ach(40150),	-- Children's Entertainer
-ach(40151),	-- Mereldar Menace \\ Mereldar Menance
 ach(40210),	-- Deephaul Ravine Victory
 ach(40211),	-- Deephaul Ravine Veteran
 ach(40215),	-- Deepwind Ravine Shutout \\ Deephaul Ravine Perfection

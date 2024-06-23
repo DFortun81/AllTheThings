@@ -645,6 +645,10 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		--11.0.0
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			ach(18830),	-- Level 2
+			ach(20512),	-- Herding Cats
+			ach(40099),	-- That Extra Push Over the Cliff
+			ach(40101),	-- Hitting one's Stride
+			ach(40102),	-- Dawn of a new Delve
 		})),
 	}),
 }));

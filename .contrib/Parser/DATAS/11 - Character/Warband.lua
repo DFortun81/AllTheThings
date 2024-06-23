@@ -3,6 +3,7 @@
 -------------------------------------------
 WARBAND = createHeader({
 	readable = "Warband",
+	-- TODO: Find a better icon for this
 	icon = "Interface\\Icons\\achievement_guildperk_everybodysfriend",
 	text = {
 		en = "Warband",
@@ -15,6 +16,8 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_
 		ach(19475),	-- Three Warband Mentors: The War Within
 		ach(19476),	-- Four Warband Mentors: The War Within
 		ach(19477),	-- Five Warband Mentors: The War Within
+		ach(40142),	-- Learning to Share
+		ach(40145),	-- So Much Sharing
 	}),
 	n(QUESTS, {
 		q(83492, {	-- Warbanding Together

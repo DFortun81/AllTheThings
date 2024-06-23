@@ -14,7 +14,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40451),	-- Buddy System III
 		ach(40450),	-- Buddy System II
 		ach(40455),	-- Buddy System
+		ach(40098),	-- Immortal Spelunker
+		ach(40103, {	-- Nemesis
+			["timeline"] = { REMOVED_11_1_0 },
+		}),
 		ach(40458),	-- Rare Finding
+		ach(40100),	-- Undying Caver
 		ach(40631),	-- War Within Delves: Tier 1
 		ach(40512),	-- War Within Delves: Tier 2
 		ach(40514),	-- War Within Delves: Tier 3

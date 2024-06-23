@@ -4,6 +4,8 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(HALLOWFALL, {
 		n(ACHIEVEMENTS, {
+			ach(40150),		-- Children's Entertainer
+			ach(20594),		-- Flamegard's Hope
 			ach(20598, {	-- Hallowfall
 				crit(66935, {	-- The Guiding Star
 					["sourceQuest"] = 78671,	-- The Light of the Dawntower
@@ -70,6 +72,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				-- TODO
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
+			ach(40151),		-- Mereldar Menace
+			ach(40082),		-- Never Enough
 			pvp(ach(40085)),	-- Tour of Duty: Hallowfall
 		}),
 	}),
