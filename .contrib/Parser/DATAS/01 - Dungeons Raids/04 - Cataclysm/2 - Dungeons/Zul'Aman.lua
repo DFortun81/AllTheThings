@@ -119,11 +119,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							},
 						}),
 						i(69802),	-- Band of the Gurubashi Berserker
-						i(69803, {	-- Knotted Handwraps
+						i(69803, {	-- Gurubashi Punisher
 							["crs"] = {
-								130241,	-- Zandalari Archon
-								130243,	-- Zandalari Hierophant
-								130245, -- Zandalari Juggernaut
+								130241,	 -- Zandalari Archon
+								130243,	 -- Zandalari Hierophant
+								130245,	 -- Zandalari Juggernaut
 							},
 						}),
 						i(69798, {	-- Knotted Handwraps
