@@ -119,6 +119,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							},
 						}),
 						i(69802),	-- Band of the Gurubashi Berserker
+						i(69803, {	-- Knotted Handwraps
+							["crs"] = {
+								130241,	-- Zandalari Archon
+								130243,	-- Zandalari Hierophant
+								130245, -- Zandalari Juggernaut
+							},
+						}),
+						i(69798, {	-- Knotted Handwraps
+							["crs"] = {
+								23584,	-- Amani Bear
+								23834,	-- Amani Dragonhawk
+								24530,	-- Amani Elder Lynx
+								24043,	-- Amani Lynx
+								24064,	-- Amani Lynx Cub
+								23542,	-- Amani'shi Axe Thrower
+								24059,	-- Amani'shi Beast Tamer
+								24374,	-- Amani'shi Berserker
+								23596,	-- Amani'shi Flame Caster
+								23597,	-- Amani'shi Guardian
+								24065,	-- Amani'shi Handler
+								23581,	-- Amani'shi Medicine Man
+								23586,	-- Amani'shi Scout
+								24549,	-- Amani'shi Tempest
+								23774,	-- Amani'shi Trainer
+								23582,	-- Amani'shi Tribesman
+								23580,	-- Amani'shi Warbringer
+								24138,	-- Tamed Amani Crocolisk
+							},
+						}),
 						i(69798, {	-- Knotted Handwraps
 							["crs"] = {
 								23584,	-- Amani Bear
