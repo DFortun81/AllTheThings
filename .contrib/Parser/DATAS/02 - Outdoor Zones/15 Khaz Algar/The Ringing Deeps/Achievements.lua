@@ -7,36 +7,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			ach(40507),		-- Hanging Tight
 			ach(40731),		-- Panhandled
 			ach(40678, {	-- Skyriding Glyphs: Abyssal Excavation
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 63.7, 95.0, THE_RINGING_DEEPS },
 			}),
 			ach(40675, {	-- Skyriding Glyphs: Chittering Den
 				-- TODO
 				--["coord"] = { X, Y, THE_RINGING_DEEPS },
 			}),
 			ach(40672, {	-- Skyriding Glyphs: Gundargaz
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 49.0, 31.5, THE_RINGING_DEEPS },
 			}),
 			ach(40679, {	-- Skyriding Glyphs: Taelloch Mine
 				-- TODO
 				--["coord"] = { X, Y, THE_RINGING_DEEPS },
 			}),
 			ach(40677, {	-- Skyriding Glyphs: The Living Grotto
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 49.3, 66.2, THE_RINGING_DEEPS },
 			}),
 			ach(40674, {	-- Skyriding Glyphs: The Lost Mines
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 57.3, 31.5, THE_RINGING_DEEPS },
 			}),
 			ach(40673, {	-- Skyriding Glyphs: The Stonevault Exterior
 				-- TODO
 				--["coord"] = { X, Y, THE_RINGING_DEEPS },
 			}),
 			ach(40676, {	-- Skyriding Glyphs: The Rumbling Wastes
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 56.2, 56.2, THE_RINGING_DEEPS },
 			}),
 			ach(40680, {	-- Skyriding Glyphs: The Waterworks
 				-- TODO

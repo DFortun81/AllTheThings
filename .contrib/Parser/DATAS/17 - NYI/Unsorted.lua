@@ -51,13 +51,10 @@ root(ROOTS.Unsorted, {
 				i(221760),	-- Bonedrinker (PET!) (Pillarnest Bonedrinker)
 				i(221492),	-- Bup (PET!) (Moss Skipper)
 				i(221762),	-- Clot (PET!) (Frenzied Bloodtick)
-				i(224646),	-- Coppers the Kobold (PET!) (Couldnt find)
 				i(221022),	-- Cowboy Bee[DNT] (PET!) (Bop???)
 				i(223626),	-- Embersting (PET!) (Couldnt find)
-				i(223623),	-- Guacamole (PET!)	(Spearmint Snuffling)
 				i(224579),	-- Sapphire Crab (PET!) (Sapphire Crab, might be the one from DF 10.0.0)
 				i(222975),	-- Umbral Amalgam [DNT] (PET!) (Couldnt find)
-				i(224760),	-- Wobbles (PET!) (Couldnt find)
 			}),
 			filter(MOUNTS, {
 				i(223264),	-- Aquamarine Swarmite (MOUNT!)
@@ -222,7 +219,6 @@ root(ROOTS.Unsorted, {
 					i(217105),	-- Refine Khaz Algar Herbs
 				}),
 				prof(INSCRIPTION, {
-					i(223063),	-- Technique: Contract: Assembly of the Deeps (RECIPE!)
 					i(223064),	-- Technique: Contract: Hallowfall Arathi (RECIPE!)
 					i(225355),	-- Technique: Contract: The Severed Threads (RECIPE!)
 					i(223060),	-- Technique: Patient Alchemist's Mixing Rod (RECIPE!) [Fungarian Delve Drop?]
@@ -1262,9 +1258,6 @@ root(ROOTS.Unsorted, {
 			i(218334),	-- Recruit's Sturdy Saber
 			i(218335),	-- Recruit's Sturdy Crescent
 			i(218340),	-- Chest of Playtest Equipment
-			i(218341),	-- Shoulderguards of the Assembly \\ Shoulderguards of the Assembled
-			i(218342),	-- Shawl of the Assembly \\ Shawl of the Assembled
-			i(218343),	-- Tabard of the Assembly \\ Tabard of the Assembled
 			i(218347),	-- Thread-Bearer's Pauldrons \\ [DNT] Nerubian Renown Shoulders
 			i(218348),	-- Thread-Bearer's Cloak \\ [DNT] Nerubian Renown Cloak
 			i(218349),	-- Tabard of The Severed Threads \\ [DNT] Nerubian Renown Tabard
@@ -1910,7 +1903,6 @@ root(ROOTS.Unsorted, {
 			i(219743),	-- Khaz Algar Olive (Vendor)
 			i(219744),	-- Khaz Algar Vegetable
 			i(219745),	-- Olive Oil
-			i(219758),	-- Mead-Speckled Legguards \\ Mead Speckled Legguards
 			i(219780),	-- 11.0 Leveling Quest Template - Axe2H - Str
 			i(219781),	-- 11.0 Leveling Quest Template - FistWeapon - Agi
 			i(219782),	-- 11.0 Leveling Quest Template - Sword1H - Int
@@ -2926,8 +2918,6 @@ root(ROOTS.Unsorted, {
 			i(223396),	-- Deepfiend Shoulder Shells
 			i(223398),	-- Abyssal Hunter's Sash
 			i(223399),	-- Abyssal Hunter's Chain
-			i(223402),	-- Corrupted Earthen Wristguards
-			i(223403),	-- Corrupted Earthen Binds
 			i(223406),	-- Slippers of the Nerubian Twins
 			i(223407),	-- Sabatons of the Nerubian Twins
 			i(223408),	-- Treads of the Nerubian Twins
@@ -3278,7 +3268,6 @@ root(ROOTS.Unsorted, {
 			i(224413),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
 			i(224414),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green)
 			i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
-			i(224418),	-- Recipe: Everything Stew
 			i(224419),	-- Recipe: Jester's Board \\ Recipe: All-Day Banquet
 			i(224453),	-- City Guard's Coronet \\ Dalaran Cowl
 			i(224454),	-- City Guard's Mask \\ Dalaran Hood
@@ -4110,7 +4099,6 @@ root(ROOTS.Unsorted, {
 			i(223484),	-- Kobold Mastermind's "Pivel"
 			i(223510),	-- Delver's Dirigible Schematic: Template
 			i(223646),	-- Memory of the Eastern Kingdoms
-			i(224760),	-- Wobbles
 			i(224768),	-- Delver's Dirigible Schematic: Wing-Mounted Propeller
 			i(224769),	-- Delver's Dirigible Schematic: Rotor Blades
 			i(224770),	-- Delver's Dirigible Schematic: Front-Mounted Propeller

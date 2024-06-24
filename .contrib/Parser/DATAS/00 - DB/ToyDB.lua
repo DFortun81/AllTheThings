@@ -1345,6 +1345,7 @@ i(204405);	-- Stuffed Bear
 -- PATCH 11.0.0 --
 ------------------
 i(224552);	-- Cave Spelunker's Torch
+i(224643);	-- Pet-Sized Candle
 i(216665);	-- Warband Bank Distance Inhibitor
 -- UNSORTED --
 i(211931);	-- Abyss Caller Horn

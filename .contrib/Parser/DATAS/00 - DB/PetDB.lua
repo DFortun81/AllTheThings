@@ -4097,7 +4097,9 @@ i(223474, 4566);	-- Worgli the Apprehensive
 i(221548, 4536);	-- Blightbud
 i(224101, 4586);	-- Brown Leafbug
 i(223625, 4570);	-- Cinderwold Sizzlestinger
+i(224646, 4598);	-- Coppers
 i(222973, 4492);	-- Fringe
+i(223623, 4576);	-- Guacamole
 i(222968, 4476);	-- Itchbite
 i(222972, 4491);	-- Jump Jump
 i(224450, 4527);	-- Lil' Moss Rosy
@@ -4112,6 +4114,7 @@ i(221494, 4495);	-- Skippy
 i(221811, 4524);	-- Starkstripe Hopper
 i(221849, 4465);	-- Vanilla
 i(221761, 4511);	-- Venomwing
+i(224760, 4597);	-- Wobbles
 --- NPC ---
 n(223092, 4540);	-- Alabaster Stonecharger
 n(223090, 4541);	-- Bedrock Stonecharger

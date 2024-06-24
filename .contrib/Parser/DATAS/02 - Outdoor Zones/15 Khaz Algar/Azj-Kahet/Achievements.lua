@@ -87,8 +87,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["coord"] = { X, Y, AZJ_KAHET },
 			}),
 			ach(40700, {	-- Skyriding Glyphs: Trickling Abyss
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 70.4, 19.4, AZJ_KAHET },
 			}),
 			ach(40701, {	-- Skyriding Glyphs: Untamed Valley
 				-- TODO

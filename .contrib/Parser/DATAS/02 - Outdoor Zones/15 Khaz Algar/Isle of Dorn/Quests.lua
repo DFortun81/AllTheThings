@@ -267,6 +267,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 78.4, 42.0, ISLE_OF_DORN },
 					["g"] = {
 						i(219757),	-- Mead-Speckled Full Helm
+						i(219758),	-- Mead-Speckled Legguards
 						i(219755),	-- Mead-Speckled Pantaloons
 						i(219756),	-- Mead-Speckled Vest
 					},
