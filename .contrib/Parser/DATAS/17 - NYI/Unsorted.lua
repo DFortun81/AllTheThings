@@ -393,7 +393,6 @@ root(ROOTS.Unsorted, {
 					i(223098),	-- Pattern: Waders of the Unifying Flame (RECIPE!)
 				}),
 				prof(MINING, {
-					i(217707),	-- Imperfect Null Stone
 					i(210940),	-- Null Stone
 					i(210941),	-- Null Stone
 					i(210942),	-- Byproduct 01 - Light
@@ -1072,7 +1071,6 @@ root(ROOTS.Unsorted, {
 			i(218102),	-- Bloodstained Plans: <PVP Alloy>
 			i(218103),	-- Plans: <Endgame Alloy C>
 			i(218104),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
-			i(218121),	-- Candle Light \\ Candle-Light
 			i(218122),	-- Stolen Relic \\ Stolen Shard
 			i(218123),	-- Glowing Shard
 			i(218124),	-- Element Extractor
@@ -1921,7 +1919,6 @@ root(ROOTS.Unsorted, {
 			i(219743),	-- Khaz Algar Olive (Vendor)
 			i(219744),	-- Khaz Algar Vegetable
 			i(219745),	-- Olive Oil
-			i(219757),	-- Mead-Speckled Full Helm \\ Mead Speckled Full Helm
 			i(219758),	-- Mead-Speckled Legguards \\ Mead Speckled Legguards
 			i(219780),	-- 11.0 Leveling Quest Template - Axe2H - Str
 			i(219781),	-- 11.0 Leveling Quest Template - FistWeapon - Agi
@@ -2021,9 +2018,7 @@ root(ROOTS.Unsorted, {
 			i(220239),	-- Severed Spiraled Tail
 			i(220240),	-- Night's Litany
 			i(220241),	-- Softly Glowing Shard
-			i(220243),	-- Eloquent Tailfeather
 			i(220245),	-- Charged Antennae
-			i(220248),	-- Mass of Melted Wax
 			i(220250),	-- Filthy Handkerchief
 			i(220260),	-- Corroded Golem Graspers
 			i(220265),	-- Slitted Eye
@@ -2803,7 +2798,6 @@ root(ROOTS.Unsorted, {
 			i(222902),	-- [PH] Mount - Unicorn Moose (Crimson) (Dark Saddle) (Player Mount)
 			i(222903),	-- [PH] Mount - Unicorn Moose (Ivory) (Silver Saddle) (Player Mount)
 			i(222904),	-- [PH] Mount - Unicorn Moose (Yellow) (White Saddle) (Player Mount)
-			i(222927),	-- Weathered Coin Coffer \\ Small Coin Coffer
 			i(222928),	-- Coin Coffer
 			i(222929),	-- Carved Coin Coffer \\ Large Coin Coffer
 			i(222951),	-- Eagle Fillet \\ Eagle Breast
@@ -2921,10 +2915,8 @@ root(ROOTS.Unsorted, {
 			i(223319),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
 			i(223320),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
 			i(223321),	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
-			i(223340),	-- Footguards of Shallow Waters
 			i(223352),	-- Waterskipper's Legplates
 			i(223354),	-- Waterskipper's Chain Leggings
-			i(223360),	-- Flying Kobold's Seatbelt
 			i(223361),	-- Flying Kobold's Seatbelt
 			i(223362),	-- Flying Kobold's Seatbelt
 			i(223363),	-- Flying Kobold's Seatbelt
@@ -3222,7 +3214,6 @@ root(ROOTS.Unsorted, {
 			i(224171),	-- Master's Wildercloth Fishing Cap
 			i(224179),	-- Swamplogged Letter
 			i(224180),	-- Worn Journal
-			i(224181),	-- Companion Experience
 			i(224182),	-- Webbed Ingots
 			i(224183),	-- Bleak Chum
 			i(224184),	-- Crusty Spyglass
@@ -3284,8 +3275,6 @@ root(ROOTS.Unsorted, {
 			i(224252),	-- Calcified Journal
 			i(224254),	-- Wooden Figure
 			i(224257),	-- Sturdy Locket
-			i(224264),	-- Deepgrove Petal
-			i(224265),	-- Deepgrove Rose
 			i(224266),	-- Ivory Tinderbox
 			i(224267),	-- Dented Spearhead
 			i(224268),	-- Filigreed Cleric
@@ -3297,7 +3286,6 @@ root(ROOTS.Unsorted, {
 			i(224395),	-- Secret Garlic
 			i(224396),	-- Mangled Taro
 			i(224397),	-- Pristine Taro
-			i(224411),	-- Companion Experience
 			i(224412),	-- Companion Experience
 			i(224413),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
 			i(224414),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green)
@@ -3325,8 +3313,6 @@ root(ROOTS.Unsorted, {
 			i(224572),	-- Crystallized Augment Rune
 			i(224573),	-- Crystal Satchel of Cooperation
 			i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
-			i(224583),	-- Slab of Slate
-			i(224584),	-- Erosion Polished Slate
 			i(224586),	-- Box o' Booms
 			i(224587),	-- Box o' Booms
 			i(224588),	-- Box o' Booms
@@ -3444,8 +3430,6 @@ root(ROOTS.Unsorted, {
 			i(224809),	-- Earthen Plumber's Pipe
 			i(224810),	-- Woodworm Elixir
 			i(224814),	-- Adventurer's Warbound Boots
-			i(224817),	-- Algari Herbalism Notes
-			i(224818),	-- Algari Mining Notes
 			i(224822),	-- Scour Through Scrap
 			i(224831),	-- Cube of Infinite Inventions (PTR Only)
 			i(224835),	-- Deepgrove Roots
@@ -3837,7 +3821,6 @@ root(ROOTS.Unsorted, {
 			i(225846),	-- Fractured Command Matrix
 			i(225847),	-- Inoperable Keystone
 			i(225848),	-- Cracked Etheric Power Core
-			i(225849),	-- Long-Forgotten Glove
 			i(225853),	-- Broken Stirrup
 			i(225854),	-- Muddied Amulet
 			i(225855),	-- Ghoulfish Delight
@@ -3874,7 +3857,6 @@ root(ROOTS.Unsorted, {
 			i(225896),	-- Void-Touched Valorstone
 			i(225897),	-- Brute Force Idol
 			i(225898),	-- Idol of the Earthmother
-			i(225899),	-- Unbreakable Iron Idol
 			i(225901),	-- Streamlined Relic \\ Power Idol
 			i(225903),	-- Amorphous Relic \\ Relic Page
 			i(225904),	-- Time Lost Relic
@@ -4025,8 +4007,6 @@ root(ROOTS.Unsorted, {
 			i(226297),	-- Arathi Safety Gloves
 			i(226298),	-- Puppeted Mechanical Spider
 			i(226299),	-- Emptied Venom Canister
-			i(226302),	-- Earthen Digging Fork
-			i(226303),	-- Fungarian Slicer's Knife
 			i(226306),	-- Web-Entangled Lotus
 			i(226307),	-- Tunneler's Shovel
 			i(226308),	-- Dornogal Scribe's Quill
@@ -4050,7 +4030,6 @@ root(ROOTS.Unsorted, {
 			i(226329),	-- Arathi Leather Burnisher
 			i(226330),	-- Nerubian Tanning Mallet
 			i(226331),	-- Curved Nerubian Skinning Knife
-			i(226334),	-- Earthen Excavator's Shovel
 			i(226335),	-- Regenerating Ore
 			i(226338),	-- Heavy Spider Crusher
 			i(226339),	-- Nerubian Mining Cart
@@ -4155,7 +4134,6 @@ root(ROOTS.Unsorted, {
 			i(226689),	-- Grimy Harvest Golem's Head
 			i(226690),	-- Patched Harvest Golem's Head
 			i(226691),	-- Battered Harvest Golem's Head
-			i(226692),	-- Splintered Stone
 			i(226693),	-- Ragged Harvest Golem's Head
 			i(226695),	-- Cunning Advisor's Favor
 			i(226696),	-- Mighty Advisor's Favor
@@ -4281,7 +4259,6 @@ root(ROOTS.Unsorted, {
 			i(227447),	-- Invigorating Fragrance
 			i(227448),	-- Volatile Fragrance
 			i(227449),	-- Robust Fragrance
-			i(227450),	-- Sky Racer's Purse
 			i(227538),	-- Unbound Legend's Pennant
 			i(227539),	-- Unbound Strategist's Pennant
 			i(227542),	-- Begrimed Blade
@@ -4317,10 +4294,6 @@ root(ROOTS.Unsorted, {
 			i(213790),	-- Algari Onyx Prism
 			i(213792),	-- Algari Sapphire Prism
 			i(213793),	-- Algari Sapphire Prism
-			i(217162),	-- Necklace of Kobold Teeth
-			i(217163),	-- Well Worn Doll
-			i(217164),	-- Royal Nailpicker
-			i(217167),	-- Crusty Chalice
 			i(218455),	-- Conduit of the Southern Storm
 			i(219503),	-- Honorary Tinderbox
 			i(219783),	-- Arachnophobic Spelunker's Bow
@@ -4345,7 +4318,6 @@ root(ROOTS.Unsorted, {
 			i(223462),	-- Honorable Arathi Breastplate
 			i(223870),	-- Cache Key
 			i(224780),	-- Toughened Tempest Pelt
-			i(225249),	-- Rattling Bag o' Gold
 			i(225580),	-- Accelerated Ascension Coil
 			i(225654),	-- Imperfect Ascendancy Serum
 			i(225927),	-- Emerald Necklace
@@ -4397,13 +4369,9 @@ root(ROOTS.Unsorted, {
 			i(227794),	-- Archaic Cipher Key
 			i(227795),	-- Homebrewer's Sampling Mantle
 			i(227890),	-- Unrecognizable Prototype
-			i(228071),	-- Companion Experience
-			i(228072),	-- Companion Experience
-			i(228073),	-- Companion Experience
 			i(228096),	-- Vibrant Firefly
 			i(228097),	-- Pinkskin Burrower
 			i(228098),	-- Troglofrog
-			i(228099),	-- Oversized Chelicera
 			i(228148),	-- Warsculptor's Barbute
 			i(228149),	-- Entombed Seraph's Casque
 			i(228150),	-- Exhumed Centurion's Galea

@@ -5,7 +5,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 	m(ISLE_OF_DORN, {
 		n(TREASURES, {
 			o(442814, {	-- Boskroot Cap
-				["coord"] = { 52.4, 67.3, ISLE_OF_DORN },
+				["coords"] = {
+					{ 52.4, 67.3, ISLE_OF_DORN },
+					{ 52.3, 66.4, ISLE_OF_DORN },
+					{ 52.2, 66.5, ISLE_OF_DORN },
+					{ 52.3, 66.5, ISLE_OF_DORN },
+					{ 52.9, 66.0, ISLE_OF_DORN },
+					{ 52.5, 65.7, ISLE_OF_DORN },
+					{ 52.8, 65.4, ISLE_OF_DORN },
+					{ 53.7, 66.9, ISLE_OF_DORN },
+
+				},
 				["g"] = {
 					i(221550),	-- Boskroot Cap
 				},
@@ -119,7 +129,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 82045,
 			}),
 			n(222894, {	-- U'llort the Self-Exiled
-				["coord"] = { 54.8, 69.8, ISLE_OF_DORN },
+				["coord"] = { 55.0, 65.6, ISLE_OF_DORN },
 				["questID"] = 82142,
 				["cost"] = {{"i", 221550, 1}},	-- 1x Boskroot Cap
 				["g"] = {

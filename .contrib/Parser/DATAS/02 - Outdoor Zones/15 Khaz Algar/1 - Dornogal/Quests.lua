@@ -531,13 +531,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- Stay awhile and listen
 			q(84335, {	-- Stay awhile and listen: Alleria
 				["name"] = "Stay awhile and listen: Alleria",
-				["sourceQuests"] = { 78546 },	-- Recompense // NOTE SURE
+				["sourceQuests"] = { 78546 },	-- Recompense
 				["provider"] = { "n", 228493 },	-- Alleria Windrunner
 				["coord"] = { 32.0, 60.5, DORNOGAL },
 			}),
 			q(82461, {	-- Stay awhile and listen: Dagran
 				["name"] = "Stay awhile and listen: Dagran",
-				["sourceQuests"] = { 78546 },	-- Recompense // NOTE SURE
+				["sourceQuests"] = { 78546 },	-- Recompense
 				["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
 				["coord"] = { 29.8, 60.0, DORNOGAL },
 			}),

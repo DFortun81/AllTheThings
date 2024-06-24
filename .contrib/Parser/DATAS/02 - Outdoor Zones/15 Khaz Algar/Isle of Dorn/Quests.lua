@@ -266,6 +266,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["provider"] = { "n", 212756 },	-- Baelgrim
 					["coord"] = { 78.4, 42.0, ISLE_OF_DORN },
 					["g"] = {
+						i(219757),	-- Mead-Speckled Full Helm
 						i(219755),	-- Mead-Speckled Pantaloons
 						i(219756),	-- Mead-Speckled Vest
 					},
@@ -943,6 +944,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- During questing
 	q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
 	q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
+	q(82462),	-- 'Stay awhile and listen' - Moira Thaurissan (n: 217878), after turn in questID 78462 (Echoes of Compassion)
 	-- Side quests
 	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
 	-- Special Assignment unlocks tracker

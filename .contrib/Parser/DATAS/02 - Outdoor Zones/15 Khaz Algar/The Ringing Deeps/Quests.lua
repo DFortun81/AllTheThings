@@ -1048,33 +1048,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--
 			-- Rares / Bonus Objectives / One times
 			-- need to move into rares if this is not case
-			q(80557, {	-- Aquelion
-				["provider"] = { "n", 220274 },	-- Aquelion
-				["coord"] = { 55.0, 70.5, THE_RINGING_DEEPS },
-				["g"] = {
-					i(223373),	-- Treads of Shallow Waters
-				},
-			}),
 			q(80560, {	-- Cragmund
 				["provider"] = { "n", 220269 },	-- Cragmund
 				["coord"] = { 47.1, 46.9, THE_RINGING_DEEPS },
 				["g"] = {
 
-				},
-			}),
-			--[[
-			q(x, {	-- Candleflyer Captain // didn't fire
-				["description"] = "Flying around and pretty high",
-				["provider"] = { "n", 220276 },	-- Candleflyer Captain
-				["coord"] = { 66.5, 29.9, THE_RINGING_DEEPS },
-			}),
-			--]]
-			q(80547, {	-- King Splash
-				["provider"] = { "n", 220275 },	-- King Splash
-				["coord"] = { 42.8, 35.1, THE_RINGING_DEEPS },
-				["g"] = {
-					i(223355),	-- Waterskipper's Leggings
-					i(223353),	-- Waterskipper's Trousers
 				},
 			}),
 			q(80507, {	-- Terror of the Forge
@@ -1114,12 +1092,8 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- During questing
 	q(83613),	-- [DNT] Zone 2 Bread Crumb Completed Organically (spellID 456929), after turn in questID 80434 (Into the Deeps)
 	q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
+	-- Side quests
 	q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
-	-- Pseudo-trasure / Lore?
-	q(82052),	-- Submerged Sign (spellID 446371) (o: 441563 @ 51.5, 72.4)
-	q(82053),	-- Wax-Drenched Sign (spellID 446377) (o: 441555 @ 50.2, 58.3)
-	q(82054),	-- Worn-Down Sign (spellID 446380) (o: 441578 (Kobold Warning Sign) @ 64.9, 56.2)
-	q(82051),	-- Collapsed Tunnel (spellID 446353) (o: 441577 (Warning: Collapsed Tunnel) @ 71.4, 42.4)
 	-- Special Assignment unlocks tracker
 	q(82156),	-- 'Special Assignment: When the Deeps Stir'	/ callings or emissary actually
 	-- ?

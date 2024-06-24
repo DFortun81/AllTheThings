@@ -34,13 +34,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	}),
 	n(QUESTS, {
 		-- Brann Bronzebeard leveling quest, probably better to move to hqts?
+		q(82772),	-- First time finishing delves (tutorial end flag/compation unlock?)
 		q(77716),	-- Level 2
 		q(77718),	-- Level 3
 		q(77719),	-- Level 4
 		q(77720),	-- Level 5
 		q(77721),	-- Level 6
 		q(77722),	-- Level 7
-		q(82772),	-- probably either flag for tier 1 finished/tier 2 unlock or just generic this delves end?
+		q(77723),	-- Level 8
+		q(77724),	-- Level 9
 	}),
 	m(2269, {	-- Earthcrawl Mines
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
@@ -394,26 +396,31 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		-- Curio
 		i(225902),	-- Idol of Final Will
 		i(225900),	-- Light-Touched Idol
+		i(218129),	-- Porcelain Arrowhead Idol
 		i(225899),	-- Unbreakable Iron Idol
 		-- Miscellaneous
 		i(223287),	-- Atomized Salien Slime
 		i(218121),	-- Candle Light
 		i(226110),	-- Elemental Fusion Bomb
 		i(226107),	-- Homebrewed Blink Vial
-		i(225900),	-- Light-Touched Idol
 		i(225249),	-- Rattling Bag'o'gold
 		i(226109),	-- Squirming Swarm Sac
+		--Mislaid Curiosity (green sacks)
+		i(228071),	-- Companion Experience (green)
+		i(228072),	-- Companion Experience (blue)
+		i(228073),	-- Companion Experience (epic)
 		--
-		i(221756),	-- Vial of Kaheti Oils(Maybe Only Nerubian Themed Delves?)
+		i(221756),	-- Vial of Kaheti Oils (Maybe Only Nerubian Themed Delves?)
 		-- Gear
 		i(211005),	-- Cave Topographer's Drape
-		i(211047),	-- Lapidarius Gemcutter
-		i(211022),	-- Torchbearer's Striders
-		i(211007),	-- Torchbearer's Greatcloak
-		i(211018),	-- Treasure-Seeker's Breeches
-		i(211006),	-- Secret-Dredger's Cloak
-		i(211061),	-- Unearthed Relic Band
 		i(215169),	-- Everburning Lantern
+		i(211047),	-- Lapidarius Gemcutter
+		i(211006),	-- Secret-Dredger's Cloak
+		i(225653),	-- Siphoning Lightbrand
+		i(211007),	-- Torchbearer's Greatcloak
+		i(211022),	-- Torchbearer's Striders
+		i(211018),	-- Treasure-Seeker's Breeches
+		i(211061),	-- Unearthed Relic Band
 		-- Cosmetic
 		i(212172),	-- Ajul'Nerub Raptorial Spine (COSMETIC!) (was looted in Skittering Breach & The Underkeep)
 		i(225066),	-- Trailblazer's Haversack (COSMETIC!) (was looted in Nightfall Sanctum)

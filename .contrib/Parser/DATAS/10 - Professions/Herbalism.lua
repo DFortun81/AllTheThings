@@ -1413,6 +1413,17 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		n(QUESTS, sharedData({
+			["description"] = "Requires 25 Skill.",
+			["provider"] = { "n", 219101 },	-- Akdan
+			["coord"] = { 44.8, 69.3, DORNOGAL },
+			["isWeekly"] = true,
+			["g"] = {
+				i(224817),	-- Algari Herbalism Notes
+			},
+		},{
+			q(82916),	-- When Fungi Bloom
+		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["g"] = sharedData({ ["cost"] = {{ "c", TWW_HERBALISM_KNOWLEDGE, 1 }} }, {
@@ -1449,6 +1460,20 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					i(226301),	-- Dornogal Gardening Scythe
 				},
 			}),
+			o(455991, {	-- Earthen Digging Fork
+				["coord"] = { 48.2, 35.0, THE_RINGING_DEEPS },
+				["questID"] = 83876,
+				["g"] = {
+					i(226302),	-- Earthen Digging Fork
+				},
+			}),
+			o(455990, {	-- Fungarian Slicer's Knife
+				["coord"] = { 52.8, 65.8, THE_RINGING_DEEPS },
+				["questID"] = 83877,
+				["g"] = {
+					i(226303),	-- Fungarian Slicer's Knife
+				},
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
@@ -1456,7 +1481,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				currency(TWW_HERBALISM_KNOWLEDGE),
 			},
 		},{
-			--i(),	-- Herbalism Field Notes
+			i(224817),	-- Algari Herbalism Notes
 			q(83729, {	-- Inscription Order: Herbalism
 				["name"] = "Inscription Order: Herbalism",
 				["description"] = "Requires a crafting order from Inscription.",
@@ -1470,22 +1495,22 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				["name"] = "Weekly Herbalism Knowledgepoint #2",
 				["provider"] = { "i", 224264 },	-- Deepgrove Petal
 			}),
-			--q(, {	-- Weekly Herbalism Knowledgepoint #3
-			--	["name"] = "Weekly Herbalism Knowledgepoint #3",
-			--	["provider"] = { "i", 224264 },	-- Deepgrove Petal
-			--}),
-			--q(, {	-- Weekly Herbalism Knowledgepoint #4
-			--	["name"] = "Weekly Herbalism Knowledgepoint #4",
-			--	["provider"] = { "i", 224264 },	-- Deepgrove Petal
-			--}),
-			--q(, {	-- Weekly Herbalism Knowledgepoint #5
-			--	["name"] = "Weekly Herbalism Knowledgepoint #5",
-			--	["provider"] = { "i", 224264 },	-- Deepgrove Petal
-			--}),
-			--q(, {	-- Weekly Herbalism Knowledgepoint #6
-			--	["name"] = "Weekly Herbalism Knowledgepoint #6",
-			--	["provider"] = { "i", xx },	-- ?
-			--}),
+			q(81418, {	-- Weekly Herbalism Knowledgepoint #3
+				["name"] = "Weekly Herbalism Knowledgepoint #3",
+				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			}),
+			q(81419, {	-- Weekly Herbalism Knowledgepoint #4
+				["name"] = "Weekly Herbalism Knowledgepoint #4",
+				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			}),
+			q(81420, {	-- Weekly Herbalism Knowledgepoint #5
+				["name"] = "Weekly Herbalism Knowledgepoint #5",
+				["provider"] = { "i", 224264 },	-- Deepgrove Petal
+			}),
+			q(81421, {	-- Weekly Herbalism Knowledgepoint #6
+				["name"] = "Weekly Herbalism Knowledgepoint #6",
+				["provider"] = { "i", 224265 },	-- Deepgrove Rose
+			}),
 		})),
 	})),
 })));

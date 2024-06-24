@@ -82,6 +82,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(221226),	-- Voidtouched Waistguard
 				},
 			}),
+			n(220275, {	-- King Splash
+				["coord"] = { 42.8, 35.1, THE_RINGING_DEEPS },
+				["questID"] = 80547,
+				["g"] = {
+					i(223355),	-- Waterskipper's Leggings
+					i(223352),	-- Waterskipper's Legplates
+					i(223353),	-- Waterskipper's Trousers
+				},
+			}),
+			n(220276, {	-- Candleflyer Captain
+				["description"] = "Flying around and pretty high",
+				["coord"] = { 66.5, 29.9, THE_RINGING_DEEPS },
+				["questID"] = 80505,
+				["g"] = {
+					i(223360),	-- Flying Kobold's Seatbelt
+				},
+			}),
+			n(220274, {	-- Aquelion
+				["coord"] = { 55.0, 70.5, THE_RINGING_DEEPS },
+				["questID"] = 80557,
+				["g"] = {
+					i(223340),	-- Footguards of Shallow Waters
+					i(223373),	-- Treads of Shallow Waters (alpha data)
+				},
+			}),
 		})),
 	}),
 })));

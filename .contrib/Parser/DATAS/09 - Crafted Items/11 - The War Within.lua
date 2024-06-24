@@ -704,6 +704,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210805),	-- Blessing Blossom+
 			i(210806),	-- Blessing Blossom++
 			i(210807),	-- Blessing Blossom+++
+			i(224264),	-- Deepgrove Petal
+			i(224265),	-- Deepgrove Rose
 			i(210799),	-- Luredrop+
 			i(210800),	-- Luredrop++
 			i(210801),	-- Luredrop+++
@@ -714,6 +716,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210802),	-- Orbinid+
 			i(210803),	-- Orbinid++
 			i(210804),	-- Orbinid+++
+			i(214561),	-- Verdant Seed
 		}),
 		n(DISCOVERY, {
 			r(435858),	-- Altered Luredrop
@@ -765,13 +768,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(79933, 435826);	-- Arathor's Spear
 			--FirstCraft(XXXXX, 435879);	-- Camouflaged Arathor's Spear
 			--FirstCraft(XXXXX, 435877);	-- Crystallized Arathor's Spear
-			--FirstCraft(XXXXX, 435878);	-- Irradiated Arathor's Spear
-			--FirstCraft(79934, 435836);	-- Lush Arathor's Spear
+			FirstCraft(79936, 435878);	-- Irradiated Arathor's Spear
+			FirstCraft(79934, 435836);	-- Lush Arathor's Spear
 			--FirstCraft(XXXXX, 435880);	-- Sporefused Arathor's Spear
 			-- Blessing Blossom
 			FirstCraft(79927, 435823);	-- Blessing Blossom
 			--FirstCraft(XXXXX, 435872);	-- Camouflaged Blessing Blossom
-			--FirstCraft(XXXXX, 435870);	-- Crystallized Blessing Blossom
+			FirstCraft(79929, 435870);	-- Crystallized Blessing Blossom
 			FirstCraft(79930, 435871);	-- Irradiated Blessing Blossom
 			FirstCraft(79928, 435834);	-- Lush Blessing Blossom
 			--FirstCraft(XXXXX, 435873);	-- Sporefused Blessing Blossom
@@ -1165,10 +1168,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210930),	-- Bismuth+
 			i(210931),	-- Bismuth++
 			i(210932),	-- Bismuth+++
+			i(217707),	-- Imperfect Null Stone
 			i(210936),	-- Ironclaw Ore+
 			i(210937),	-- Ironclaw Ore++
 			i(210938),	-- Ironclaw Ore+++
 			i(210939),	-- Null Stone
+			i(224583),	-- Slab of Slate
+			i(224584),	-- Erosion Polished Slate
 		}),
 		n(DISCOVERY, {
 			r(439707),	-- Aqirite
