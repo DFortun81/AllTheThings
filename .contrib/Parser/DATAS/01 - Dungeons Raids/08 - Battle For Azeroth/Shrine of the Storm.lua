@@ -31,21 +31,21 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						134056,	-- Aqu'sirr
 						134828,	-- Aqualing
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159321),	-- Gloves of Corrupted Water
 						i(159366),	-- Water Shapers
 						i(159239),	-- Aqu'sirr's Swirling Sash
 						i(159420),	-- Stormsurger's Sabatons
 						i(158318),	-- Murkey Cerulean Signet
 						i(159619),	-- Briny Barnacle
-					}),
+					},
 				}),
 				e(2154, {	-- Tidesage Council
 					["crs"] = {
 						134063,	-- Brother Ironhull
 						134058,	-- Galecaller Faye
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(158371),	-- Seabreeze
 						i(159426),	-- Belt of the Unrelenting Gale
 						i(159419),	-- Ironhull's Reinforced Legplates
@@ -53,26 +53,26 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159311),	-- Blessing Bearer's Waders
 						i(159295),	-- Footpads of the Serene Wake
 						i(159614),	-- Galecaller's Boon
-					}),
+					},
 				}),
 				e(2155, {	-- Lord Stormsong
 					["crs"] = {
 						134060,	-- Lord Stormsong
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159646),	-- Aq'mar, the Tidecaller
 						i(159289),	-- Void-Drenched Cape
 						i(159364),	-- Bindings of the Calling Depths
 						i(159308),	-- Bracers of the Sacred Fleet
 						i(159421),	-- Gauntlets of Total Subservience
 						i(159242),	-- Leggings of the Drowned Lord
-					}),
+					},
 				}),
 				e(2156, {	-- Vol'zith the Whisperer
 					["crs"] = {
 						134069,	-- Vol'zith the Whisperer
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						ach(12835),	-- Shrine of the Storm
 						i(159135),	-- Deep Fathom's Bite
 						i(159302),	-- Cowl of Fluid Machiantions
@@ -84,7 +84,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159354),	-- Hauberk of Sunken Despair
 						i(159377),	-- Chain of Consummate Power
 						i(159620),	-- Conch of Dark Whispers
-					}),
+					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {

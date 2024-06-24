@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 		}),
-		n(ZONE_DROPS, bubbleDown({["bonusID"] = 4796, }, {
+		n(ZONE_DROPS, {
 			i(160175),	-- Bonepicker Helmet
 			i(160177),	-- Bonepicker Spaulders
 			i(160178),	-- Bonepicker Undermail
@@ -72,6 +72,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(160157),	-- Stormforger Legguards
 			i(160159),	-- Stormforger Sabatons
 			i(160170),	-- Arid Caravan Band
-		})),
+		}),
 	}),
 })));

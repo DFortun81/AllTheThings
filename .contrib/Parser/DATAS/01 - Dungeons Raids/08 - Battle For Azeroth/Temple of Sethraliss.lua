@@ -31,7 +31,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						133379,	-- Adderis
 						133944,	-- Aspix
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159636),	-- Staff of the Lightning Serpent
 						i(158370),	-- Twin-Strike Polearm
 						i(159380),	-- Arc-Glass Bindings
@@ -42,13 +42,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159435),	-- Legplates of Charged Duality
 						i(159388),	-- Sabatons of Coruscating Energy
 						i(159259),	-- Sandswept Sandals
-					}),
+					},
 				}),
 				e(2143, {	-- Merektha
 					["crs"] = {
 						133384,	-- Merektha
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(158714),	-- Swarm's Eedge
 						i(159637),	-- Snakeebite Recurvee
 						i(159437),	-- Fangproof Gauntlets
@@ -57,13 +57,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159327),	-- Sand-Shined Snakeskin Sandals
 						i(162544),	-- Jad Phidian Band
 						i(158367),	-- Merektha's Fang
-					}),
+					},
 				}),
 				e(2144, {	-- Galvazzt
 					["crs"] = {
 						133389,	-- Galvazzt
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(158369),	-- Galvanized Stormcrusher
 						i(159664),	-- Bulwark of Brimming Potential
 						i(159247),	-- Handwraps of Oscillating Polarity
@@ -71,11 +71,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(158366),	-- Charged Sandstone Band
 						i(158374),	-- Tiny Eelectromental in a Jar
 						i(168154),	-- Static Induction Matrix
-					}),
+					},
 				}),
 				e(2145, {	-- Avatar of Sethraliss
 					["crs"] = { 133392 },	-- Avatar of Sethraliss
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						ach(12504),	-- The Temple of Sethraliss
 						i(158373),	-- Resonating Crystal Scimitar
 						i(159318),	-- Hood of the Slithering Loa
@@ -88,7 +88,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159337),	-- Grips of Electrified Defense
 						i(158368),	-- Fangs of Intertwined Essence
 						i(168131),	-- Essence of the Sands
-					}),
+					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {

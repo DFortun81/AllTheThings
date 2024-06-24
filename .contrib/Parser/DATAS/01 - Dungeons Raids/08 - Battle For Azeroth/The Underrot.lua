@@ -38,20 +38,20 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 					["crs"] = {
 						131318,	-- Elder Leaxa <Voice of G'huun>
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159652),	-- Leaxa's Thought-Piercer
 						i(159324),	-- Blood Elder's Bindings
 						i(159402),	-- Waistguard of Sanguine Fervor
 						i(159443),	-- Legplates of Profane Sacrifice
 						i(159463),	-- Loop of Pulsing Veins
 						i(159624),	-- Rotcrusted Voodoo Doll
-					}),
+					},
 				}),
 				e(2131,  { -- Cragmaw the Infested
 					["crs"] = {
 						131817,	-- Cragmaw the Infested
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159653),	-- Bile-Stained Crawg Tusks
 						i(159134),	-- Heart-Piercing Stalacite
 						i(159433),	-- Phosphorescent Armplates
@@ -62,13 +62,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159269),	-- Darklight Legwarmers
 						i(159436),	-- Fluorescent Flora Stompers
 						i(159396),	-- Waders of the Infested
-					}),
+					},
 				}),
 				e(2130, {	-- Sporecaller Zancha
 					["crs"] = {
 						131383,	-- Sporecaller Zancha
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159654),	-- Corruption Borne Headlopper
 						i(159665),	-- Targee of the Ancient Warder
 						i(159292),	-- Sporecaller's Shroud
@@ -77,13 +77,13 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159338),	-- Pustule Bearer's Pants
 						i(159270),	-- Blood Warder's Moccasins
 						i(159626),	-- Lingering Sporepods
-					}),
+					},
 				}),
 				e(2158, {	-- Unbound Abomination
 					["crs"] = {
 						133007,	-- Unbound Abomination
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						ach(12500),	-- Underrot
 						i(159655),	-- Vile Exasanguinator
 						i(159446),	-- Greathelm of the Putrid Path
@@ -96,7 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159330),	-- Gore-Splattered Vest
 						i(159253),	-- Gloves of Staunched Wounds
 						i(159625),	-- Vial of Animated Blood
-					}),
+					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {

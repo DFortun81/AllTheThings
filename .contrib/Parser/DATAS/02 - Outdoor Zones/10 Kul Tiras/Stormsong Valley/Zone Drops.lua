@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 		}),
-		n(ZONE_DROPS, bubbleDown({["bonusID"] = 4796, }, {
+		n(ZONE_DROPS, {
 			i(159217),	-- Sagehold Circlet
 			i(159222),	-- Sagehold Mantle
 			i(159199),	-- Sagehold Cloak
@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(159198),	-- Brineworks Vambraces
 			i(159192),	-- Brineworks Gauntlets
 			i(159193),	-- Brineworks Girdle
-		})),
+		}),
 	}),
 })));
 
