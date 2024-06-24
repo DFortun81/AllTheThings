@@ -152,7 +152,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if AFTER 4.3.0.15005
 					["qg"] = 55537,	-- Image of Warmage Kaitlyn
 					-- #else
-					["qg"] = 26110,	-- Librarian Serrah <Food & Drink>
+					["provider"] = { "n", 26110 },	-- Librarian Serrah <Food & Drink>
 					["coord"] = { 33.4, 34.4, BOREAN_TUNDRA },
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
@@ -171,7 +171,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if AFTER 4.3.0.15005
 					["qg"] = 55537,	-- Image of Warmage Kaitlyn
 					-- #else
-					["qg"] = 26110,	-- Librarian Serrah <Food & Drink>
+					["provider"] = { "n", 26110 },	-- Librarian Serrah <Food & Drink>
 					["coord"] = { 33.4, 34.4, BOREAN_TUNDRA },
 					-- #endif
 					["races"] = HORDE_ONLY,
@@ -190,7 +190,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if AFTER 4.3.0.15005
 					["qg"] = 55535,	-- Image of Warmage Kaitlyn
 					-- #else
-					["qg"] = 25314,	-- Archmage Berinand <Maces & Staves>
+					["provider"] = { "n", 25314 },	-- Archmage Berinand <Maces & Staves>
 					["sourceQuest"] = 11900,	-- Reading the Meters
 					["coord"] = { 33.0, 34.2, BOREAN_TUNDRA },
 					-- #endif
@@ -210,7 +210,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if AFTER 4.3.0.15005
 					["qg"] = 55531,	-- Warmage Kaitlyn
 					-- #else
-					["qg"] = 26117,	-- Raelorasz
+					["provider"] = { "n", 26117 },	-- Raelorasz
 					["sourceQuest"] = 11969,	-- Springing the Trap
 					["coord"] = { 33.2, 34.4, BOREAN_TUNDRA },
 					-- #endif
@@ -228,7 +228,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					-- #if AFTER 4.3.0.15005
 					["qg"] = 55536,	-- Image of Warmage Kaitlyn
 					-- #else
-					["qg"] = 25314,	-- Archmage Berinand <Maces & Staves>
+					["provider"] = { "n", 25314 },	-- Archmage Berinand <Maces & Staves>
 					["sourceQuest"] = 11910,	-- Secrets of the Ancients
 					["coord"] = { 33.0, 34.2, BOREAN_TUNDRA },
 					-- #endif

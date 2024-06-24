@@ -108,14 +108,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				ach(940, {	-- The Green Hills of Stranglethorn
-					-- #if AFTER CATA
-					["sourceQuest"] = 208,	-- Big Game Hunter
-					-- #else
 					["sourceQuests"] = {
 						208,	-- Big Game Hunter
+						-- #if BEFORE CATA
 						338,	-- The Green Hills of Stranglethorn
+						-- #endif
 					},
-					-- #endif
 					-- #if BEFORE WRATH
 					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
 					["AllSourceQuestsRequiredForAchievement"] = true,
@@ -124,11 +122,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			pvp(o(179697, {	-- Arena Treasure Chest
 				["description"] = "Chest is dropped in arena every 3 hours.\n\nWARNING: FREE-FOR-ALL PVP EVENT\n12AM, 3PM, 6PM, 9PM, 12PM, 3AM, 6AM, 9AM",
-				-- #if AFTER CATA
-				["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
-				-- #else
-				["coord"] = { 30.5, 47.8, STRANGLETHORN_VALE },
-				-- #endif
+				["coords"] = {
+					-- #if AFTER CATA
+					{ 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
+					-- #else
+					{ 30.5, 47.8, STRANGLETHORN_VALE },
+					-- #endif
+				},
 				["groups"] = {
 					ach(389, {	-- Gurubashi Arena Master
 						["provider"] = { "i", 18706 },	-- Arena Master
@@ -210,29 +210,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FLIGHT_PATHS, {
 				fp(18, {	-- Booty Bay, Stranglethorn
 					["cr"] = 2858,	-- Gringer <Wind Rider Master>
-					-- #if AFTER CATA
-					["coord"] = { 40.6, 73.2, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 26.8, 77.0, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.6, 73.2, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 26.8, 77.0, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 				fp(19, {	-- Booty Bay, Stranglethorn
 					["cr"] = 2859,	-- Gyll <Gryphon Master>
-					-- #if AFTER CATA
-					["coord"] = { 41.6, 74.4, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 27.4, 77.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.6, 74.4, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 27.4, 77.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(20, {	-- Grom'gol, Stranglethorn
 					["cr"] = 1387,	-- Thysta <Wind Rider Master>
-					-- #if AFTER CATA
-					["coord"] = { 39.0, 51.2, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 32.6, 29.2, STRANGLETHORN_VALE },
-					-- #endif
+					["coord"] = {
+						-- #if AFTER CATA
+						{ 39.0, 51.2, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 32.6, 29.2, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 				fp(195, {	-- Rebel Camp, Stranglethorn
@@ -324,11 +330,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						2767,	-- Rescue OOX-22/FE! (Feralas)
 						-- #endif
 					},
-					-- #if AFTER CATA
-					["coord"] = { 43.0, 72.0, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.0, 72.0, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.2, 76.2, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(30, 30, 10),
 					["groups"] = {
 						i(10398, {	-- Mechanical Chicken (PET!)
@@ -339,11 +347,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9457, {	-- An Unusual Patron
 					["qg"] = 17094,	-- Nemeth Hawkeye
 					["sourceQuest"] = 9436,	-- Bloodscalp Insight
-					-- #if AFTER CATA
-					["coord"] = { 38.1, 50.0, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 32, 28.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 38.1, 50.0, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 32, 28.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["timeline"] = { ADDED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -381,11 +391,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				pvp(q(7838, {	-- Arena Grandmaster
 					["qg"] = 14508,	-- Short John Mithril
 					["sourceQuest"] = 7810,	-- Arena Master
-					-- #if AFTER CATA
-					["coord"] = { 45.0, 25.4, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 29.6, 47.4, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 45.0, 25.4, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 29.6, 47.4, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["cost"] = { { "i", 18706, 12 } },	-- Arena Master (trinket)
 					["repeatable"] = true,
 					["groups"] = {
@@ -400,22 +412,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				pvp(q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
-					-- #if AFTER CATA
-					["coord"] = { 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 30.5, 47.8, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.6, 26.1, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 30.5, 47.8, STRANGLETHORN_VALE },
+						-- #endif
+					},
 				})),
 				q(4621, {	-- Avast Ye, Admiral!
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
 					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
-					-- #if AFTER CATA
-					["coord"] = { 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 30.6, 90.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 30.6, 90.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(55, 55, 10),
 					["groups"] = {
 						i(12185),	-- Bloodsail Admiral's Hat
@@ -424,11 +440,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(1036, {	-- Avast Ye, Scallywag
 					["qg"] = 2545,	-- "Pretty Boy" Duncan
 					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
-					-- #if AFTER CATA
-					["coord"] = { 44.4, 92.6, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 27.4, 69.4, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.4, 92.6, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 27.4, 69.4, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(55, 55, 10),
 				}),
@@ -463,11 +481,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						197,	-- Raptor Mastery
 						188,	-- Tiger Mastery
 					},
-					-- #if AFTER CATA
-					["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.1, 22.9, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.7, 10.8, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Bangalash
@@ -785,11 +805,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9272, {	-- Dressing the Part
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["minReputation"] = { 87, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
-					-- #if AFTER CATA
-					["coord"] = { 46.6, 95.2, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 30.6, 90.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.6, 95.2, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 30.6, 90.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(49, 49, 10),
 					["groups"] = {
 						i(22746, {	-- Buccaneer's Uniform
@@ -1236,11 +1258,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(190, {	-- Panther Hunting [CATA+] / Panther Mastery (1/4)
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
-					-- #if AFTER CATA
-					["coord"] = { 44.1, 22.2, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.1, 22.2, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.6, 10.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Young Panther slain
@@ -1251,11 +1275,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(193, {	-- Panther Mastery (4/4)
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 192,	-- Panther Prowess [CATA+] / Panther Mastery (3/4)
-					-- #if AFTER CATA
-					["coord"] = { 44.1, 22.2, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.1, 22.2, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.6, 10.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Fang of Bhag'thera
@@ -1284,11 +1310,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(192, {	-- Panther Prowess [CATA+] / Panther Mastery (3/4)
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 191,	-- Panther Stalking [CATA+] / Panther Mastery (2/4)
-					-- #if AFTER CATA
-					["coord"] = { 44.1, 22.2, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.1, 22.2, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.6, 10.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Shadowmaw Panther slain
@@ -1299,11 +1327,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(191, {	-- Panther Stalking [CATA+] / Panther Mastery (2/4)
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 190,	-- Panther Hunting [CATA+] / Panther Mastery (1/4)
-					-- #if AFTER CATA
-					["coord"] = { 44.1, 22.2, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.1, 22.2, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.6, 10.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Panther slain
@@ -1322,11 +1352,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(194, {	-- Raptor Hunting [CATA+] / Raptor Mastery (1/4)
 					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
-					-- #if AFTER CATA
-					["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.1, 22.9, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.7, 10.8, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Stranglethorn Raptor slain
@@ -1337,11 +1369,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(197, {	-- Raptor Mastery (4/4)
 					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["sourceQuest"] = 196,	-- Raptor Prowess [CATA+] / Raptor Mastery (3/4)
-					-- #if AFTER CATA
-					["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.1, 22.9, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.7, 10.8, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Talon of Tethis
@@ -1369,11 +1403,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(196, {	-- Raptor Prowess [CATA+] / Raptor Mastery (3/4)
 					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["sourceQuest"] = 195,	-- Raptor Stalking [CATA+] / Raptor Mastery (2/4)
-					-- #if AFTER CATA
-					["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.1, 22.9, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.7, 10.8, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Jungle Stalker slain
@@ -1384,11 +1420,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(195, {	-- Raptor Stalking [CATA+] / Raptor Mastery (2/4)
 					["qg"] = 715,	-- Hemet Nesingwary Jr. [TBC+] / Hemet Nesingwary
 					["sourceQuest"] = 194,	-- Raptor Hunting [CATA+] / Raptor Mastery (1/4)
-					-- #if AFTER CATA
-					["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.1, 22.9, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.7, 10.8, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Lashtail Raptor slain
@@ -2119,11 +2157,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(185, {	-- Tiger Hunting [CATA+] / Tiger Mastery (1/4)
 					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 583,	-- Welcome to the Jungle
-					-- #if AFTER CATA
-					["coord"] = { 44.5, 22.6, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.5, 22.6, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.6, 10.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Young Stranglethorn Tiger slain
@@ -2134,11 +2174,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(188, {	-- Tiger Mastery (4/4)
 					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 187,	-- Tiger Prowess [CATA+] / Tiger Mastery (3/4)
-					-- #if AFTER CATA
-					["coord"] = { 44.5, 22.6, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.5, 22.6, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.6, 10.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Paw of Sin'Dall
@@ -2169,11 +2211,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(187, {	-- Tiger Prowess [CATA+] / Tiger Mastery (3/4)
 					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 186,	-- Tiger Stalking [CATA+] / Tiger Mastery (2/4)
-					-- #if AFTER CATA
-					["coord"] = { 44.5, 22.6, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.5, 22.6, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.6, 10.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Elder Stranglethorn Tiger slain
@@ -2184,11 +2228,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(186, {	-- Tiger Stalking [CATA+] / Tiger Mastery (2/4)
 					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 185,	-- Tiger Hunting [CATA+] / Tiger Mastery (1/4)
-					-- #if AFTER CATA
-					["coord"] = { 44.5, 22.6, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.5, 22.6, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.6, 10.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/10 Stranglethorn Tiger slain
@@ -2198,11 +2244,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9259, {	-- Traitor to the Bloodsail
 					["qg"] = 16399,	-- Bloodsail Traitor
-					-- #if AFTER CATA
-					["coord"] = { 48.4, 63.2, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 31.8, 70.9, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.4, 63.2, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 31.8, 70.9, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["maxReputation"] = { 21, NEUTRAL },	-- Booty Bay, must be less than Neutral
 					["cost"] = {
 						{ "i", 4306, 40 },	-- Silk Cloth
@@ -2384,51 +2432,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(RARES, {
 				n(14487, {	-- Gluggl [CATA+] / Gluggle
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 43.6, 43.4, NORTHERN_STRANGLETHORN },
 						{ 43.1, 41.7, NORTHERN_STRANGLETHORN },
 						{ 42.0, 41.2, NORTHERN_STRANGLETHORN },
 						{ 40.0, 38.8, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 34.4, 22.4, STRANGLETHORN_VALE },
+						-- #endif
 					},
-					-- #else
-					["coord"] = { 34.4, 22.4, STRANGLETHORN_VALE },
-					-- #endif
 				}),
 				n(11383, {	-- High Priestess Hai'watna
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 67.0, 34.0, NORTHERN_STRANGLETHORN },
 						{ 67.0, 31.6, NORTHERN_STRANGLETHORN },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 51.4, 16.6, STRANGLETHORN_VALE },
 						{ 51.6, 18.6, STRANGLETHORN_VALE },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(14491, {	-- Kurmokk
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 58.0, 47.8, THE_CAPE_OF_STRANGLETHORN },
 						{ 54.4, 52.2, THE_CAPE_OF_STRANGLETHORN },
 						{ 51.0, 54.4, THE_CAPE_OF_STRANGLETHORN },
 						{ 48.0, 58.0, THE_CAPE_OF_STRANGLETHORN },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 31.8, 68.2, STRANGLETHORN_VALE },
 						{ 35.8, 63.8, STRANGLETHORN_VALE },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(2541, {	-- Lord Sakrasis
-					-- #if AFTER CATA
-					["coord"] = { 43.8, 49.1, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.6, 62.2, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.8, 49.1, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.6, 62.2, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(5028, {	-- Lord Sakrasis' Scepter
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2449,40 +2495,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(14490, {	-- Rippa
-					-- #if AFTER CATA
-					["coord"] = { 41.4, 71.4, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.4, 71.4, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
 						{ 24.2, 58.0, STRANGLETHORN_VALE },
 						{ 25.4, 73.6, STRANGLETHORN_VALE },
 						{ 26.8, 85.0, STRANGLETHORN_VALE },
 						{ 30.4, 86.0, STRANGLETHORN_VALE },
 						{ 34.0, 83.6, STRANGLETHORN_VALE },
 						{ 35.6, 74.8, STRANGLETHORN_VALE },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(14488, {	-- Roloch
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 46.6, 45.4, NORTHERN_STRANGLETHORN },
 						{ 45.8, 51.0, NORTHERN_STRANGLETHORN },
 						{ 45.2, 54.4, NORTHERN_STRANGLETHORN },
 						{ 46.8, 55.8, NORTHERN_STRANGLETHORN },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 38.0, 24.8, STRANGLETHORN_VALE },
 						{ 27.0, 31.8, STRANGLETHORN_VALE },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(1552, {	-- Scale Belly
-					-- #if AFTER CATA
-					["coord"] = { 67.8, 25.4, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 44.0, 48.2, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.8, 25.4, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 44.0, 48.2, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(1604, {	-- Chromatic Sword
 							["timeline"] = { REMOVED_4_0_3, ADDED_7_3_5 },
@@ -2493,31 +2539,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(14492, {	-- Verifonix <The Surveyor>
-					-- #if AFTER CATA
-					["coord"] = { 53.2, 27.6, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 36.8, 56.0, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.2, 27.6, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 36.8, 56.0, STRANGLETHORN_VALE },
+						-- #endif
+					},
 				}),
 			}),
 			n(VENDORS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 42.8, 74.1, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.2, 77.5, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 42.8, 74.1, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.2, 77.5, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["sym"] = {{"select", "itemID",
 						2846,	-- Pattern: Thick Murloc Armor (RECIPE!)
 						5788,	-- Pattern: Murloc Scale Bracers (RECIPE!)
 					}},
 				}),
 				n(734, {	-- Corporal Bluth <Camp Trader>
-					-- #if AFTER CATA
-					["coord"] = { 47.2, 10.2, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.2, 10.2, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 38.0, 3.0, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12231),	-- Recipe: Jungle Stew (RECIPE!)
@@ -2525,11 +2577,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2672, {	-- Cowardly Crosby <Tailoring Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 40.8, 82.1, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 27.0, 82.5, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.8, 82.1, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 27.0, 82.5, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(10318, {	-- Pattern: Admiral's Hat
 							["isLimited"] = true,
@@ -2537,11 +2591,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2838, {	-- Crazk Sparks <Fireworks Merchant>
-					-- #if AFTER CATA
-					["coord"] = { 43.0, 72.7, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.2, 76.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.0, 72.7, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.2, 76.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(18648, {	-- Schematic: Green Firework (RECIPE!)
 							["isLimited"] = true,
@@ -2549,11 +2605,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2845, {	-- Fargon Mortalak <Superior Armorer>
-					-- #if AFTER CATA
-					["coord"] = { 44.1, 70.0, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 29.0, 75.0, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.1, 70.0, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 29.0, 75.0, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(12257, {	-- Heavy Notched Belt
 							["isLimited"] = true,
@@ -2561,11 +2619,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2848, {	-- Glyx Brewright <Alchemy Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 42.7, 75.1, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.0, 78.0, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 42.7, 75.1, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.0, 78.0, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
 							["isLimited"] = true,
@@ -2576,11 +2636,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2687, {	-- Gnaz Blunderflame <Engineering Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 67.5, 61.2, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 51.0, 35.2, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.5, 61.2, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 51.0, 35.2, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(13311, {	-- Schematic: Mechanical Dragonling (RECIPE!)
 							["isLimited"] = true,
@@ -2588,11 +2650,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2839, {	-- Haren Kanmae <Superior Bowyer>
-					-- #if AFTER CATA
-					["coord"] = { 42.9, 69.3, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.3, 74.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 42.9, 69.3, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.3, 74.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(11305, {	-- Dense Shortbow
 							["isLimited"] = true,
@@ -2600,11 +2664,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2483, {	-- Jaquilina Dramet <Superior Axecrafter>
-					-- #if AFTER CATA
-					["coord"] = { 43.7, 23.2, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.8, 10.7, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.7, 23.2, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.8, 10.7, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(12250, {	-- Midnight Axe
 							["isLimited"] = true,
@@ -2615,11 +2681,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2843, {	-- Jutak <Blade Trader>
-					-- #if AFTER CATA
-					["coord"] = { 41.6, 74.1, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 27.5, 77.5, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.6, 74.1, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 27.5, 77.5, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(12248, {	-- Daring Dirk
 							["isLimited"] = true,
@@ -2630,11 +2698,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2664, {	-- Kelsey Yance <Cook>
-					-- #if AFTER CATA
-					["coord"] = { 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.2, 74.4, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 42.8, 69.0, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.2, 74.4, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(13940),	-- Recipe: Cooked Glossy Mightfish (RECIPE!)
 						i(13941),	-- Recipe: Filet of Redgill (RECIPE!)
@@ -2647,11 +2717,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>
-					-- #if AFTER CATA
-					["coord"] = { 42.9, 70.4, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.3, 75.2, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 42.9, 70.4, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.3, 75.2, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(4778, {	-- Heavy Spiked Mace
 							["isLimited"] = true,
@@ -2662,11 +2734,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(8679, {	-- Knaz Blunderflame <Engineering Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 67.8, 61.1, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 51.0, 35.2, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.8, 61.1, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 51.0, 35.2, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(10602, {	-- Schematic: Deadly Scope (RECIPE!)
 							["isLimited"] = true,
@@ -2674,11 +2748,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2685, {	-- Mazk Snipeshot <Engineering Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 43.2, 70.2, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.5, 75.1, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.2, 70.2, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.5, 75.1, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(13310, {	-- Schematic: Accurate Scope (RECIPE!)
 							["timeline"] = { REMOVED_5_0_4 },	-- Moved to Trainer
@@ -2689,11 +2765,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2663, {	-- Narkk <Pirate Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 42.6, 69.1, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.1, 74.4, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 42.6, 69.1, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.1, 74.4, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(8496),	-- Cockatiel (PET!)
 						i(8495),	-- Senegal (PET!)
@@ -2703,11 +2781,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1148, {	-- Nerrist <Trade Goods>
-					-- #if AFTER CATA
-					["coord"] = { 39.3, 51.1, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 32.6, 29.2, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 39.3, 51.1, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 32.6, 29.2, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21943, {	-- Design: Truesilver Crab
@@ -2719,11 +2799,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2626, {	-- Old Man Heming <Fisherman>
-					-- #if AFTER CATA
-					["coord"] = { 41.6, 73.4, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 27.4, 77.1, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.6, 73.4, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 27.4, 77.1, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(16083, {	-- Expert Fishing - The Bass and You
 							["timeline"] = { REMOVED_3_1_0 },
@@ -2740,11 +2822,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.4, 76.0, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.2, 71.7, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.4, 76.0, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(14635, {	-- Pattern: Gem-Studded Leather Belt (RECIPE!)
 							["isLimited"] = true,
@@ -2755,22 +2839,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1149, {	-- Uthok <General Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 37.5, 49.1, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 31.6, 28.0, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 37.5, 49.1, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 31.6, 28.0, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(16111),	-- Recipe: Spiced Chili Crab (RECIPE!)
 					},
 				}),
 				n(1146, {	-- Vharr <Superior Weaponsmith>
-					-- #if AFTER CATA
-					["coord"] = { 38.7, 49.1, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 32.2, 28.0, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 38.7, 49.1, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 32.2, 28.0, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12250, {	-- Midnight Axe
@@ -2785,11 +2873,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2670, {	-- Xizk Goodstitch <Tailoring Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 43.6, 73.1, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.7, 76.9, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.6, 73.1, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.7, 76.9, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(7087, {	-- Pattern: Crimson Silk Cloak
 							["isLimited"] = true,
@@ -2800,11 +2890,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2482, {	-- Zarena Cromwind <Superior Weaponsmith>
-					-- #if AFTER CATA
-					["coord"] = { 43.0, 70.8, THE_CAPE_OF_STRANGLETHORN },
-					-- #else
-					["coord"] = { 28.3, 75.5, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.0, 70.8, THE_CAPE_OF_STRANGLETHORN },
+						-- #else
+						{ 28.3, 75.5, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["groups"] = {
 						i(12251, {	-- Big Stick
 							["isLimited"] = true,

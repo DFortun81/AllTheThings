@@ -429,13 +429,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9170, {	-- Dar'Khan's Lieutenants
 					["qg"] = 16204,	-- Magister Idonis
-					-- #if AFTER LEGION
-					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
-					-- Complete The Twin Ziggurats first and then you'll be able to pick this quest.
-					["sourceQuest"] = 9176,	-- The Twin Ziggurats	[TODO: Confirm this!]
-					-- #else
-					["sourceQuest"] = 9220,	-- War on Deatholme
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER LEGION
+						-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
+						-- Complete The Twin Ziggurats first and then you'll be able to pick this quest.
+						9176,	-- The Twin Ziggurats	[TODO: Confirm this!]
+						-- #else
+						9220,	-- War on Deatholme
+						-- #endif
+					},
 					["coord"] = { 54.8, 48.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(17, 17, 1),
@@ -1273,13 +1275,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9220, {	-- War on Deatholme
 					["qg"] = 16204,	-- Magister Idonis
-					-- #if AFTER LEGION
-					-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
-					-- Complete The Twin Ziggurats first and then you'll be able to pick this quest.
-					["sourceQuest"] = 9176,	-- The Twin Ziggurats	[TODO: Confirm this!]
-					-- #else
-					["sourceQuest"] = 9151,	-- The Sanctum of the Sun
-					-- #endif
+					["sourceQuests"] = {
+						-- #if AFTER LEGION
+						-- 7.3.5 introduced new pre-requisites for a lot of quests in Ghostlands.
+						-- Complete The Twin Ziggurats first and then you'll be able to pick this quest.
+						9176,	-- The Twin Ziggurats	[TODO: Confirm this!]
+						-- #else
+						9151,	-- The Sanctum of the Sun
+						-- #endif
+					},
 					["coord"] = { 54.8, 48.5, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(17, 17, 1),

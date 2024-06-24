@@ -412,11 +412,13 @@ root(ROOTS.WorldEvents, n(THE_SCEPTER_OF_THE_SHIFTING_SANDS,
 						{
 							["itemID"] = 21107,	-- Draconic for Dummies [Chapter V]
 							["provider"] = { "o", 180665 },	-- Draconic for Dummies
-							-- #if AFTER WRATH
-							["coord"] = { 75.35, 29.73, STORMWIND_CITY },
-							-- #else
-							["coord"] = { 72, 6, STORMWIND_CITY },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER WRATH
+								{ 75.35, 29.73, STORMWIND_CITY },
+								-- #else
+								{ 72, 6, STORMWIND_CITY },
+								-- #endif
+							},
 						},
 						{
 							["itemID"] = 21108,	-- Draconic for Dummies [Chapter VI]

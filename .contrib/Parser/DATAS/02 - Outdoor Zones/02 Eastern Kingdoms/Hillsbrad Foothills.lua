@@ -219,11 +219,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(13, {	-- Tarren Mill, Hillsbrad
 					["cr"] = 2389,	-- Zarise <Bat Handler>
-					-- #if AFTER CATA
-					["coord"] = { 56.0, 46.0, HILLSBRAD_FOOTHILLS },
-					-- #else
-					["coord"] = { 60.2, 18.6, HILLSBRAD_FOOTHILLS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 56.0, 46.0, HILLSBRAD_FOOTHILLS },
+						-- #else
+						{ 60.2, 18.6, HILLSBRAD_FOOTHILLS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 			}),

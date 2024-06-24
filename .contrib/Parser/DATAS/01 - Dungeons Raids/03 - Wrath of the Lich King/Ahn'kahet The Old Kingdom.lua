@@ -223,7 +223,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					["qg"] = 55658,	-- Seer Ixit
 					["sourceQuest"] = 29826,	-- Reclaiming Ahn'Kahet
 					-- #else
-					["qg"] = 26653,	-- Kilix the Unraveler
+					["provider"] =  {"n", 26653 },	-- Kilix the Unraveler
 					["coord"] = { 26.2, 50.6, DRAGONBLIGHT },
 					-- #endif
 					["lvl"] = lvlsquish(71, 71, 15),

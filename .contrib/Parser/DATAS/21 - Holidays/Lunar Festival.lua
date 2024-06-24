@@ -664,38 +664,46 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 			-- #if AFTER WOD
 			["description"] = "In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",
 			-- #endif
-			-- #if AFTER CATA
-			["coord"] = { 54.2, 49.4, BLASTED_LANDS },
-			-- #else
-			["coord"] = { 57.9, 54.9, BLASTED_LANDS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 54.2, 49.4, BLASTED_LANDS },
+				-- #else
+				{ 57.9, 54.9, BLASTED_LANDS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8683, {	-- Dawnstrider the Elder
 			["qg"] = 15585,	-- Elder Dawnstrider
-			-- #if AFTER CATA
-			["coord"] = { 52.3, 23.9, BURNING_STEPPES },
-			-- #else
-			["coord"] = { 64.5, 24.1, BURNING_STEPPES },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 52.3, 23.9, BURNING_STEPPES },
+				-- #else
+				{ 64.5, 24.1, BURNING_STEPPES },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8653, {	-- Goldwell the Elder
 			["qg"] = 15569,	-- Elder Goldwell
-			-- #if AFTER CATA
-			["coord"] = { 53.8, 49.9, DUN_MOROGH },
-			-- #else
-			["coord"] = { 46.8, 51.6, DUN_MOROGH },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 53.8, 49.9, DUN_MOROGH },
+				-- #else
+				{ 46.8, 51.6, DUN_MOROGH },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8652, {	-- Graveborn the Elder
 			["qg"] = 15568,	-- Elder Graveborn
-			-- #if AFTER CATA
-			["coord"] = { 61.8, 53.9, TIRISFAL_GLADES },
-			-- #else
-			["coord"] = { 61.9, 53.8, TIRISFAL_GLADES },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 61.8, 53.9, TIRISFAL_GLADES },
+				-- #else
+				{ 61.9, 53.8, TIRISFAL_GLADES },
+				-- #endif
+			},
 			-- #if AFTER BFA
 			["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.",
 			-- #endif
@@ -703,11 +711,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8643, {	-- Highpeak the Elder
 			["qg"] = 15559,	-- Elder Highpeak
-			-- #if AFTER CATA
-			["coord"] = { 49.9, 47.9, THE_HINTERLANDS },
-			-- #else
-			["coord"] = { 50.0, 48.0, THE_HINTERLANDS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 49.9, 47.9, THE_HINTERLANDS },
+				-- #else
+				{ 50.0, 48.0, THE_HINTERLANDS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8651, {	-- Ironband the Elder
@@ -717,38 +727,46 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8722, {	-- Meadowrun the Elder
 			["qg"] = 15602,	-- Elder Meadowrun
-			-- #if AFTER CATA
-			["coord"] = { 63.5, 36.2, WESTERN_PLAGUELANDS },
-			-- #else
-			["coord"] = { 66.0, 47.8, WESTERN_PLAGUELANDS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 63.5, 36.2, WESTERN_PLAGUELANDS },
+				-- #else
+				{ 66.0, 47.8, WESTERN_PLAGUELANDS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8714, {	-- Moonstrike the Elder
 			["qg"] = 15594,	-- Elder Moonstrike
-			-- #if AFTER CATA
-			["coord"] = { 69.1, 73.3, WESTERN_PLAGUELANDS },
-			-- #else
-			["coord"] = { 69, 73, WESTERN_PLAGUELANDS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 69.1, 73.3, WESTERN_PLAGUELANDS },
+				-- #else
+				{ 69, 73, WESTERN_PLAGUELANDS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8645, {	-- Obsidian the Elder
 			["qg"] = 15561,	-- Elder Obsidian
-			-- #if AFTER CATA
-			["coord"] = { 45.0, 41.1, SILVERPINE_FOREST },
-			-- #else
-			["coord"] = { 44.9, 41.1, SILVERPINE_FOREST },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 45.0, 41.1, SILVERPINE_FOREST },
+				-- #else
+				{ 44.9, 41.1, SILVERPINE_FOREST },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8636, {	-- Rumblerock the Elder
 			["qg"] = 15557,	-- Elder Rumblerock
-			-- #if AFTER CATA
-			["coord"] = { 70.1, 45.4, BURNING_STEPPES },
-			-- #else
-			["coord"] = { 82.2, 46.5, BURNING_STEPPES },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 70.1, 45.4, BURNING_STEPPES },
+				-- #else
+				{ 82.2, 46.5, BURNING_STEPPES },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8642, {	-- Silvervein the Elder
@@ -763,22 +781,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8650, {	-- Snowcrown the Elder
 			["qg"] = 15566,	-- Elder Snowcrown
-			-- #if AFTER CATA
-			["coord"] = { 75.7, 54.4, EASTERN_PLAGUELANDS },
-			-- #elseif AFTER WRATH
-			["coord"] = { 75.7, 54.6, EASTERN_PLAGUELANDS },
-			-- #else
-			["coord"] = { 81.5, 60.5, EASTERN_PLAGUELANDS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 75.7, 54.4, EASTERN_PLAGUELANDS },
+				-- #elseif AFTER WRATH
+				{ 75.7, 54.6, EASTERN_PLAGUELANDS },
+				-- #else
+				{ 81.5, 60.5, EASTERN_PLAGUELANDS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8716, {	-- Starglade the Elder
 			["qg"] = 15596,	-- Elder Starglade
-			-- #if AFTER CATA
-			["coord"] = { 71.0, 34.2, NORTHERN_STRANGLETHORN },
-			-- #else
-			["coord"] = { 53.11, 18.46, STRANGLETHORN_VALE },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 71.0, 34.2, NORTHERN_STRANGLETHORN },
+				-- #else
+				{ 53.11, 18.46, STRANGLETHORN_VALE },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8649, {	-- Stormbrow the Elder
@@ -788,34 +810,40 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8688, {	-- Windrun the Elder
 			["qg"] = 15592,	-- Elder Windrun
-			-- #if AFTER CATA
-			["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
-			-- #elseif AFTER WRATH
-			["coord"] = { 35.6, 68.8, EASTERN_PLAGUELANDS },
-			-- #else
-			["coord"] = { 39.7, 75.4, EASTERN_PLAGUELANDS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 35.5, 68.8, EASTERN_PLAGUELANDS },
+				-- #elseif AFTER WRATH
+				{ 35.6, 68.8, EASTERN_PLAGUELANDS },
+				-- #else
+				{ 39.7, 75.4, EASTERN_PLAGUELANDS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8674, {	-- Winterhoof the Elder
 			["qg"] = 15576,	-- Elder Winterhoof
-			-- #if AFTER CATA
-			["coord"] = { 40.0, 72.4, THE_CAPE_OF_STRANGLETHORN },
-			-- #elseif AFTER TBC
-			["coord"] = { 26.4, 76.6, STRANGLETHORN_VALE },
-			-- #else
-			["coord"] = { 27.6, 74.2, STRANGLETHORN_VALE },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 40.0, 72.4, THE_CAPE_OF_STRANGLETHORN },
+				-- #elseif AFTER TBC
+				{ 26.4, 76.6, STRANGLETHORN_VALE },
+				-- #else
+				{ 27.6, 74.2, STRANGLETHORN_VALE },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		-- Elders of Kalimdor
 		q(8715, {	-- Bladeleaf the Elder
 			["qg"] = 15595,	-- Elder Bladeleaf
-			-- #if AFTER CATA
-			["coord"] = { 56.8, 53.1, TELDRASSIL },
-			-- #else
-			["coord"] = { 56.9, 60.5, TELDRASSIL },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 56.8, 53.1, TELDRASSIL },
+				-- #else
+				{ 56.9, 60.5, TELDRASSIL },
+				-- #endif
+			},
 			-- #if AFTER BFA
 			["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil.  The Elder is on the left side of the Cenarion Enclave.",
 			-- #endif
@@ -823,11 +851,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8719, {	-- Bladesing the Elder
 			["qg"] = 15599,	-- Elder Bladesing
-			-- #if AFTER CATA
-			["coord"] = { 53.0, 35.4, SILITHUS },
-			-- #else
-			["coord"] = { 49.0, 37.7, SILITHUS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 53.0, 35.4, SILITHUS },
+				-- #else
+				{ 49.0, 37.7, SILITHUS },
+				-- #endif
+			},
 			-- #if BEFORE BFA
 			["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
 			-- #endif
@@ -840,83 +870,101 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8726, {	-- Brightspear the Elder
 			["qg"] = 15606,	-- Elder Brightspear
-			-- #if AFTER CATA
-			["coord"] = { 53.2, 56.7, WINTERSPRING },
-			-- #else
-			["coord"] = { 55.6, 43.7, WINTERSPRING },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 53.2, 56.7, WINTERSPRING },
+				-- #else
+				{ 55.6, 43.7, WINTERSPRING },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8684, {	-- Dreamseer the Elder
 			["qg"] = 15586,	-- Elder Dreamseer
-			-- #if AFTER CATA
-			["coord"] = { 51.3, 28.8, TANARIS },
-			-- #else
-			["coord"] = { 51.5, 27.8, TANARIS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 51.3, 28.8, TANARIS },
+				-- #else
+				{ 51.5, 27.8, TANARIS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8679, {	-- Grimtotem the Elder
 			["qg"] = 15581,	-- Elder Grimtotem
-			-- #if AFTER CATA
-			["coord"] = { 76.7, 37.8, FERALAS },
-			-- #else
-			["coord"] = { 76.7, 37.9, FERALAS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 76.7, 37.8, FERALAS },
+				-- #else
+				{ 76.7, 37.9, FERALAS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8686, {	-- High Mountain the Elder
 			["qg"] = 15588,	-- Elder High Mountain
-			-- #if AFTER CATA
-			["coord"] = { 41.6, 47.4, SOUTHERN_BARRENS },
-			-- #else
-			["coord"] = { 45.0, 58.0, THE_BARRENS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 41.6, 47.4, SOUTHERN_BARRENS },
+				-- #else
+				{ 45.0, 58.0, THE_BARRENS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8685, {	-- Mistwalker the Elder
 			["qg"] = 15587,	-- Elder Mistwalker
-			-- #if AFTER CATA
-			["coord"] = { 62.5, 30.9, FERALAS },
-			-- #else
-			["coord"] = { 62.5, 31.0, FERALAS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 62.5, 30.9, FERALAS },
+				-- #else
+				{ 62.5, 31.0, FERALAS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8717, {	-- Moonwarden the Elder
 			["qg"] = 15597,	-- Elder Moonwarden
-			-- #if AFTER CATA
-			["coord"] = { 48.5, 59.2, NORTHERN_BARRENS },
-			-- #else
-			["coord"] = { 51.4, 30.7, THE_BARRENS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 48.5, 59.2, NORTHERN_BARRENS },
+				-- #else
+				{ 51.4, 30.7, THE_BARRENS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8724, {	-- Morningdew the Elder
 			["qg"] = 15604,	-- Elder Morningdew
-			-- #if AFTER CATA
-			["coord"] = { 77.1, 75.6, THOUSAND_NEEDLES },
-			-- #else
-			["coord"] = { 79.2, 77.1, THOUSAND_NEEDLES },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 77.1, 75.6, THOUSAND_NEEDLES },
+				-- #else
+				{ 79.2, 77.1, THOUSAND_NEEDLES },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8723, {	-- Nightwind the Elder
 			["qg"] = 15603,	-- Elder Nightwind
-			-- #if AFTER CATA
-			["coord"] = { 38.4, 52.8, FELWOOD },
-			-- #else
-			["coord"] = { 37.7, 53.0, FELWOOD },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 38.4, 52.8, FELWOOD },
+				-- #else
+				{ 37.7, 53.0, FELWOOD },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8654, {	-- Primestone the Elder
 			["qg"] = 15570,	-- Elder Primestone
-			-- #if AFTER CATA
-			["coord"] = { 30.8, 13.3, SILITHUS },
-			-- #else
-			["coord"] = { 23.1, 11.8, SILITHUS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 30.8, 13.3, SILITHUS },
+				-- #else
+				{ 23.1, 11.8, SILITHUS },
+				-- #endif
+			},
 			-- #if AFTER BFA
 			["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
 			-- #endif
@@ -924,11 +972,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8671, {	-- Ragetotem the Elder
 			["qg"] = 15573,	-- Elder Ragetotem
-			-- #if AFTER CATA
-			["coord"] = { 37.2, 79.0, TANARIS },
-			-- #else
-			["coord"] = { 36.3, 80.5, TANARIS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 37.2, 79.0, TANARIS },
+				-- #else
+				{ 36.3, 80.5, TANARIS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8725, {	-- Riversong the Elder
@@ -938,38 +988,46 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8670, {	-- Runetotem the Elder
 			["qg"] = 15572,	-- Elder Runetotem
-			-- #if AFTER CATA
-			["coord"] = { 53.1, 43.6, DUROTAR },
-			-- #else
-			["coord"] = { 53.1, 44.2, DUROTAR },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 53.1, 43.6, DUROTAR },
+				-- #else
+				{ 53.1, 44.2, DUROTAR },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8720, {	-- Skygleam the Elder
 			["qg"] = 15600,	-- Elder Skygleam
-			-- #if AFTER CATA
-			["coord"] = { 64.7, 79.3, AZSHARA },
-			-- #else
-			["coord"] = { 72.4, 85.4, AZSHARA },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 64.7, 79.3, AZSHARA },
+				-- #else
+				{ 72.4, 85.4, AZSHARA },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8682, {	-- Skyseer the Elder
 			["qg"] = 15584,	-- Elder Skyseer
-			-- #if AFTER CATA
-			["coord"] = { 46.3, 50.9, THOUSAND_NEEDLES },
-			-- #else
-			["coord"] = { 45.4, 50.1, THOUSAND_NEEDLES },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 46.3, 50.9, THOUSAND_NEEDLES },
+				-- #else
+				{ 45.4, 50.1, THOUSAND_NEEDLES },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8721, {	-- Starweave the Elder
 			["qg"] = 15601,	-- Elder Starweave
-			-- #if AFTER CATA
-			["coord"] = { 49.5, 18.9, DARKSHORE },
-			-- #else
-			["coord"] = { 36.8, 46.7, DARKSHORE },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 49.5, 18.9, DARKSHORE },
+				-- #else
+				{ 36.8, 46.7, DARKSHORE },
+				-- #endif
+			},
 			-- #if AFTER BFA
 			["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 to see Darkshore before the battle.",
 			-- #endif
@@ -977,11 +1035,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8672, {	-- Stonespire the Elder
 			["qg"] = 15574,	-- Elder Stonespire
-			-- #if AFTER CATA
-			["coord"] = { 59.9, 49.9, WINTERSPRING },
-			-- #else
-			["coord"] = { 61.4, 37.8, WINTERSPRING },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 59.9, 49.9, WINTERSPRING },
+				-- #else
+				{ 61.4, 37.8, WINTERSPRING },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8681, {	-- Thunderhorn the Elder
@@ -991,11 +1051,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8680, {	-- Windtotem the Elder
 			["qg"] = 15582,	-- Elder Windtotem
-			-- #if AFTER CATA
-			["coord"] = { 68.4, 69.9, NORTHERN_BARRENS },
-			-- #else
-			["coord"] = { 62.7, 36.7, THE_BARRENS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 68.4, 69.9, NORTHERN_BARRENS },
+				-- #else
+				{ 62.7, 36.7, THE_BARRENS },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		-- Elders of Northrend
@@ -1223,11 +1285,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8676, {	-- Wildmane the Elder
 			["qg"] = 15578,	-- Elder Wildmane
-			-- #if AFTER CATA
-			["coord"] = { 39.21, 21.29, TANARIS },
-			-- #else
-			["coord"] = { 39.0, 19.0, TANARIS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 39.21, 21.29, TANARIS },
+				-- #else
+				{ 39.0, 19.0, TANARIS },
+				-- #endif
+			},
 			["description"] = "Inside of Zul'Farrak. Located by the pool where Gahz'rilla is summoned.",
 			["maps"] = { ZULFARRAK },
 			["isYearly"] = true,
@@ -1243,11 +1307,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		-- Elders of the Alliance
 		q(8718, {	-- Bladeswift the Elder
 			["qg"] = 15598,	-- Elder Bladeswift
-			-- #if AFTER CATA
-			["coord"] = { 39.3, 31.8, DARNASSUS },
-			-- #else
-			["coord"] = { 33.5, 14.3, DARNASSUS },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 39.3, 31.8, DARNASSUS },
+				-- #else
+				{ 33.5, 14.3, DARNASSUS },
+				-- #endif
+			},
 			-- #if AFTER BFA
 			["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus.  The Elder is on the left side of the Cenarion Enclave.",
 			-- #endif
@@ -1255,32 +1321,38 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8866, {	-- Bronzebeard the Elder
 			["qg"] = 15871,	-- Elder Bronzebeard
-			-- #if AFTER CATA
-			["coord"] = { 29.4, 17.1, IRONFORGE },
-			-- #else
-			["coord"] = { 29.1, 17.0, IRONFORGE },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 29.4, 17.1, IRONFORGE },
+				-- #else
+				{ 29.1, 17.0, IRONFORGE },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		q(8646, {	-- Hammershout the Elder
 			["qg"] = 15562,	-- Elder Hammershout
-			-- #if AFTER CATA
-			["coord"] = { 34.5, 50.3, ELWYNN_FOREST },
-			-- #elseif AFTER WRATH
-			["coord"] = { 36.3, 66.1, STORMWIND_CITY },
-			-- #else
-			["coord"] = { 21.6, 54, STORMWIND_CITY },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 34.5, 50.3, ELWYNN_FOREST },
+				-- #elseif AFTER WRATH
+				{ 36.3, 66.1, STORMWIND_CITY },
+				-- #else
+				{ 21.6, 54, STORMWIND_CITY },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 		-- Elders of the Horde
 		q(8648, {	-- Darkcore the Elder
 			["qg"] = 15564,	-- Elder Darkcore
-			-- #if AFTER CATA
-			["coord"] = { 66.5, 38.0, UNDERCITY },
-			-- #else
-			["coord"] = { 66.6, 38.2, UNDERCITY },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 66.5, 38.0, UNDERCITY },
+				-- #else
+				{ 66.6, 38.2, UNDERCITY },
+				-- #endif
+			},
 			-- #if AFTER BFA
 			["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.  The Elder is just inside the front door of the city.",
 			-- #endif
@@ -1298,11 +1370,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 		}),
 		q(8678, {	-- Wheathoof the Elder [Wrath+] / Proudhorn the Elder [Classic]
 			["qg"] = 15580,	-- Elder Wheathoof [Wrath+] / Elder Proudhorn [Classic]
-			-- #if AFTER CATA
-			["coord"] = { 72.8, 22.8, THUNDER_BLUFF },
-			-- #else
-			["coord"] = { 73.0, 23.4, THUNDER_BLUFF },
-			-- #endif
+			["coords"] = {
+				-- #if AFTER CATA
+				{ 72.8, 22.8, THUNDER_BLUFF },
+				-- #else
+				{ 73.0, 23.4, THUNDER_BLUFF },
+				-- #endif
+			},
 			["isYearly"] = true,
 		}),
 	}),

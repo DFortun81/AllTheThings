@@ -111,11 +111,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(4, {	-- Sentinel Hill, Westfall
 					["cr"] = 523,	-- Thor <Gryphon Master>
-					-- #if AFTER CATA
-					["coord"] = { 56.6, 49.4, WESTFALL },
-					-- #else
-					["coord"] = { 56.6, 52.6, WESTFALL },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 56.6, 49.4, WESTFALL },
+						-- #else
+						{ 56.6, 52.6, WESTFALL },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -1592,22 +1594,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(573, {	-- Foe Reaper 4000
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 54.6, 32.6, WESTFALL },
 						{ 44.0, 36.0, WESTFALL },
 						{ 38.8, 51.6, WESTFALL },
 						{ 62.6, 61.6, WESTFALL },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 51.8, 24.6, WESTFALL },
 						{ 45.5, 36.0, WESTFALL },
 						{ 38.6, 51.6, WESTFALL },
 						{ 62.8, 62.2, WESTFALL },
 						{ 51.6, 67.4, WESTFALL },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(933, {	-- Large Rucksack
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -1803,24 +1803,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}))),
 				-- #endif
 				n(462, {	-- Vultros
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 58.0, 20.2, WESTFALL },
 						{ 54.6, 24.6, WESTFALL },
 						{ 49.2, 26.8, WESTFALL },
 						{ 49.0, 33.6, WESTFALL },
 						{ 56.0, 34.4, WESTFALL },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 51.8, 24.6, WESTFALL },
 						{ 45.5, 44.6, WESTFALL },
 						{ 64.4, 56.0, WESTFALL },
 						{ 45.6, 60.2, WESTFALL },
 						{ 35.8, 68.4, WESTFALL },
 						{ 64.0, 73.8, WESTFALL },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(5971, {	-- Feathered Cape
 							["timeline"] = { REMOVED_4_0_3 },
@@ -1914,11 +1912,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(843, {	-- Gina MacGregor <Trade Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 57.6, 53.8, WESTFALL },
-					-- #else
-					["coord"] = { 57.6, 54.0, WESTFALL },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.6, 53.8, WESTFALL },
+						-- #else
+						{ 57.6, 54.0, WESTFALL },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6274, {	-- Pattern: Blue Overalls
@@ -1946,11 +1946,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1668, {	-- William MacGregor <Bowyer>
-					-- #if AFTER CATA
-					["coord"] = { 57.6, 53.6, WESTFALL },
-					-- #else
-					["coord"] = { 57.6, 53.8, WESTFALL },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 57.6, 53.6, WESTFALL },
+						-- #else
+						{ 57.6, 53.8, WESTFALL },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11304, {	-- Fine Longbow
@@ -1974,23 +1976,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(826, {	-- Brutish Riverpaw Axe
 					["cr"] = 124,	-- Riverpaw Brute
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 54.2, 62.0, WESTFALL },
 						{ 55.8, 68.4, WESTFALL },
 						{ 55.4, 69.4, WESTFALL },
 						{ 31.4, 70.4, WESTFALL },
 						{ 48.8, 62.6, WESTFALL },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 65.4, 72.4, WESTFALL },
 						{ 50.8, 42.8, WESTFALL },
 						{ 46.8, 53.8, WESTFALL },
 						{ 49.4, 63.0, WESTFALL },
 						{ 32.4, 71.8, WESTFALL },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(68724, {	-- Broken Barn Door
 					["timeline"] = { ADDED_4_0_3 },

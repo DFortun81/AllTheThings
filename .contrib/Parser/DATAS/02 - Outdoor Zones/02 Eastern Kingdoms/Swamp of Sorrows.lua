@@ -114,11 +114,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(56, {	-- Stonard, Swamp of Sorrows
 					["cr"] = 6026,	-- Breyk <Wind Rider Master>
-					-- #if AFTER CATA
-					["coord"] = { 47.6, 55.0, SWAMP_OF_SORROWS },
-					-- #else
-					["coord"] = { 46.0, 54.6, SWAMP_OF_SORROWS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.6, 55.0, SWAMP_OF_SORROWS },
+						-- #else
+						{ 46.0, 54.6, SWAMP_OF_SORROWS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 				fp(600, {	-- The Harborage, Swamp of Sorrows
@@ -1562,30 +1564,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(14446, {	-- Fingat
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 77.2, 82.0, SWAMP_OF_SORROWS },
 						{ 78.0, 85.6, SWAMP_OF_SORROWS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 66.0, 83.2, SWAMP_OF_SORROWS },
 						{ 66.6, 84.2, SWAMP_OF_SORROWS },
 						{ 64.2, 91.4, SWAMP_OF_SORROWS },
 						{ 61.0, 85.6, SWAMP_OF_SORROWS },
 						{ 64.4, 82.6, SWAMP_OF_SORROWS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(51052, {	-- Gib the Banana-Hoarder
 					["coord"] = { 16.71, 47.30, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(14447, {	-- Gilmorian
-					-- #if AFTER CATA
-					["coord"] = { 90.2, 67.6, SWAMP_OF_SORROWS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 90.2, 67.6, SWAMP_OF_SORROWS },
+						-- #else
 						{ 78.0, 5.6, SWAMP_OF_SORROWS },
 						{ 90.6, 24.0, SWAMP_OF_SORROWS },
 						{ 93.6, 39.6, SWAMP_OF_SORROWS },
@@ -1595,8 +1595,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 87.0, 80.4, SWAMP_OF_SORROWS },
 						{ 85.4, 87.0, SWAMP_OF_SORROWS },
 						{ 83.4, 93.6, SWAMP_OF_SORROWS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50790, {	-- Ionis
 					["coord"] = { 40.0, 35.6, SWAMP_OF_SORROWS },
@@ -1631,37 +1631,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(763, {	-- Lost One Chieftain
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 59.6, 26.4, SWAMP_OF_SORROWS },
 						{ 61.8, 25.6, SWAMP_OF_SORROWS },
 						{ 63.8, 23.6, SWAMP_OF_SORROWS },
 						{ 65.2, 22.4, SWAMP_OF_SORROWS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 64.6, 15.8, SWAMP_OF_SORROWS },
 						{ 62.6, 21.8, SWAMP_OF_SORROWS },
 						{ 63.2, 25.2, SWAMP_OF_SORROWS },
 						{ 60.0, 20.2, SWAMP_OF_SORROWS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(1106, {	-- Lost One Cook
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 63.0, 24.4, SWAMP_OF_SORROWS },
 						{ 63.0, 26.6, SWAMP_OF_SORROWS },
 						{ 63.0, 27.6, SWAMP_OF_SORROWS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 62.6, 21.6, SWAMP_OF_SORROWS },
 						{ 63.0, 26.8, SWAMP_OF_SORROWS },
 						{ 67.4, 23.6, SWAMP_OF_SORROWS },
 						{ 66.4, 20.4, SWAMP_OF_SORROWS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(14448, {	-- Molt Thorn
 					-- #if AFTER CATA
@@ -1735,11 +1731,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(VENDORS, {
 				n(989, {	-- Banalash <Trade Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 46.6, 57.0, SWAMP_OF_SORROWS },
-					-- #else
-					["coord"] = { 44.6, 56.8, SWAMP_OF_SORROWS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.6, 57.0, SWAMP_OF_SORROWS },
+						-- #else
+						{ 44.6, 56.8, SWAMP_OF_SORROWS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21941, {	-- Design: Black Pearl Panther
@@ -1754,11 +1752,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(8176, {	-- Gharash <Blacksmithing Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 47.2, 52.2, SWAMP_OF_SORROWS },
-					-- #else
-					["coord"] = { 45.6, 51.6, SWAMP_OF_SORROWS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.2, 52.2, SWAMP_OF_SORROWS },
+						-- #else
+						{ 45.6, 51.6, SWAMP_OF_SORROWS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(7995, {	-- Plans: Mithril Scale Bracers (RECIPE!)
@@ -1767,11 +1767,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(11874, {	-- Masat T'andr <Superior Leatherworker>
-					-- #if AFTER CATA
-					["coord"] = { 29.6, 33.6, SWAMP_OF_SORROWS },
-					-- #else
-					["coord"] = { 26.5, 31.4, SWAMP_OF_SORROWS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 29.6, 33.6, SWAMP_OF_SORROWS },
+						-- #else
+						{ 26.5, 31.4, SWAMP_OF_SORROWS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(15726, {	-- Pattern: Green Dragonscale Breastplate (Old Version) (RECIPE!)
@@ -1786,11 +1788,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(8177, {	-- Rartar <Alchemy Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 47.2, 57.2, SWAMP_OF_SORROWS },
-					-- #else
-					["coord"] = { 45.4, 57.0, SWAMP_OF_SORROWS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 47.2, 57.2, SWAMP_OF_SORROWS },
+						-- #else
+						{ 45.4, 57.0, SWAMP_OF_SORROWS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(9300, {	-- Recipe: Elixir of Demonslaying (RECIPE!)
@@ -1799,11 +1803,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(984, {	-- Thralosh <Cloth & Leather Armor Merchant>
-					-- #if AFTER CATA
-					["coord"] = { 46.8, 52.6, SWAMP_OF_SORROWS },
-					-- #else
-					["coord"] = { 45.0, 51.6, SWAMP_OF_SORROWS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.8, 52.6, SWAMP_OF_SORROWS },
+						-- #else
+						{ 45.0, 51.6, SWAMP_OF_SORROWS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12256, {	-- Cindercloth Leggings

@@ -229,11 +229,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(7, {	-- Menethil Harbor, Wetlands
 					["cr"] = 1571,	-- Shellei Brondir <Gryphon Master>
-					-- #if AFTER CATA
-					["coord"] = { 9.4, 59.6, WETLANDS },
-					-- #else
-					["coord"] = { 9.6, 59.6, WETLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 9.4, 59.6, WETLANDS },
+						-- #else
+						{ 9.6, 59.6, WETLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				fp(554, {	-- Slabchisel's Survey, Wetlands
@@ -1636,27 +1638,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(14425, {	-- Gnawbone
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 31.6, 33.6, WETLANDS },
 						{ 31.6, 29.6, WETLANDS },
 						{ 35.2, 27.4, WETLANDS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 39.0, 30.6, WETLANDS },
 						{ 30.6, 31.2, WETLANDS },
 						{ 35.4, 37.2, WETLANDS },
 						{ 38.4, 36.4, WETLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(1112, {	-- Leech Widow
-					-- #if AFTER CATA
-					["coord"] = { 46.8, 63.6, WETLANDS },
-					-- #else
-					["coord"] = { 46.8, 61.4, WETLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.8, 63.6, WETLANDS },
+						-- #else
+						{ 46.8, 61.4, WETLANDS },
+						-- #endif
+					},
 					["groups"] = {
 						i(4444, {	-- Black Husk Shield
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -1667,11 +1669,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2090, {	-- Ma'ruk Wyrmscale <Dragonmaw Warlord>
-					-- #if AFTER CATA
-					["coord"] = { 48.0, 74.6, WETLANDS },
-					-- #else
-					["coord"] = { 47.8, 76.8, WETLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.0, 74.6, WETLANDS },
+						-- #else
+						{ 47.8, 76.8, WETLANDS },
+						-- #endif
+					},
 					["groups"] = {
 						i(5749, {	-- Scythe Axe
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -1682,30 +1686,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(14424, {	-- Mirelow
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 52.4, 36.2, WETLANDS },
 						{ 54.6, 32.0, WETLANDS },
 						{ 55.6, 29.0, WETLANDS },
 						{ 52.4, 27.6, WETLANDS },
 						{ 50.6, 32.4, WETLANDS },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 18.6, 28.4, WETLANDS },
 						{ 22.8, 31.4, WETLANDS },
 						{ 27.8, 32.8, WETLANDS },
 						{ 23.0, 21.4, WETLANDS },
 						{ 24.6, 37.0, WETLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(1140, {	-- Razormaw Matriarch
-					-- #if AFTER CATA
-					["coord"] = { 69.8, 29.2, WETLANDS },
-					-- #else
-					["coord"] = { 70.8, 30.4, WETLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 69.8, 29.2, WETLANDS },
+						-- #else
+						{ 70.8, 30.4, WETLANDS },
+						-- #endif
+					},
 					["groups"] = {
 						i(4463, {	-- Beaded Raptor Collar
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 07.09.2023
@@ -1873,11 +1877,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				-- #endif
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
-					-- #if AFTER CATA
-					["coord"] = { 10.0, 59.0, WETLANDS },
-					-- #else
-					["coord"] = { 8.1, 55.8, WETLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 10.0, 59.0, WETLANDS },
+						-- #else
+						{ 8.1, 55.8, WETLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6275, {	-- Pattern: Greater Adept's Robe
@@ -1907,11 +1913,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1459, {	-- Naela Trance <Bowyer>
-					-- #if AFTER CATA
-					["coord"] = { 11.0, 57.8, WETLANDS },
-					-- #else
-					["coord"] = { 11.3, 58.4, WETLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 11.0, 57.8, WETLANDS },
+						-- #else
+						{ 11.3, 58.4, WETLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11304, {	-- Fine Longbow
@@ -1920,11 +1928,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1448, {	-- Neal Allen <Engineering Supplies & General Goods>
-					-- #if AFTER CATA
-					["coord"] = { 11.8, 52.6, WETLANDS },
-					-- #else
-					["coord"] = { 10.8, 56.8, WETLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 11.8, 52.6, WETLANDS },
+						-- #else
+						{ 10.8, 56.8, WETLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(20970, {	-- Design: Pendant of the Agate Shield
@@ -1934,11 +1944,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(3178, {	-- Stuart Fleming <Fisherman>
-					-- #if AFTER CATA
-					["coord"] = { 6.4, 57.6, WETLANDS },
-					-- #else
-					["coord"] = { 8.0, 58.3, WETLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 6.4, 57.6, WETLANDS },
+						-- #else
+						{ 8.0, 58.3, WETLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(17062),	-- Recipe: Mithril Head Trout (RECIPE!)
@@ -1947,12 +1959,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1460, {	-- Unger Statforth <Horse Breeder>
-					-- #if AFTER CATA
-					["coord"] = { 9.2, 56.6, WETLANDS },
-					-- #else
-					["coord"] = { 8.6, 54.4, WETLANDS },
-					-- #endif
-
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 9.2, 56.6, WETLANDS },
+						-- #else
+						{ 8.6, 54.4, WETLANDS },
+						-- #endif
+					},
 					-- Available to Humans without faction requirements.
 					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
 					["OnInit"] = [[function(t)
