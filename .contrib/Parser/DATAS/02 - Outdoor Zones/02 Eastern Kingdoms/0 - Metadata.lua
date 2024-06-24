@@ -971,7 +971,11 @@ root(ROOTS.Zones, {
 							{ 76.1, 32.0, STORMWIND_CITY },
 							-- #endif
 							{ 72.1, 48.0, DUSKWOOD },
+							-- #if AFTER CATA
+							{ 54.7, 50.3, DUN_MOROGH },
+							-- #else
 							{ 47.6, 52.0, DUN_MOROGH },
+							-- #endif
 							{ 77.0, 12.4, IRONFORGE },
 							-- #if AFTER CATA
 							{ 57.2, 45.5, HILLSBRAD_FOOTHILLS },
