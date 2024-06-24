@@ -15,13 +15,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				petbattle(q(82295, {	-- Ziriak
 					["coord"] = { 61.3, 37.0, 2216 },
 				})),
-				q(82536, {	-- Exfiltration Operation
-					["coord"] = { 62.5, 72.0, 2213 },
+				q(82526, {	-- Bug Them
+					-- The Vizier
+					["coord"] = { 71.1, 31.6, 2213 },
 				}),
 				q(82481, {	-- Enforcer Extermination
 					["coord"] = { 56.1, 58.4, AZJ_KAHET },
 				}),
-				q(79722, {	-- Gutter Work (could be only up if Vizier was choosen?)
+				q(82536, {	-- Exfiltration Operation
+					["coord"] = { 62.5, 72.0, 2213 },
+				}),
+				q(82524, {	-- Exterminate
+					-- The Weaver (TODO: notes for future if Blizzard decide to fix WQs in zone to be only for one that you selected)
+					["coord"] = { 63.1, 19.7, AZJ_KAHET },
+				}),
+				q(79722, {	-- Gutter Work
+					-- The Vizier
 					["coord"] = { 57.5, 71.1, AZJ_KAHET },
 					["g"] = {
 						i(224102),	-- Chunked Kobyss Innards (QI!)
@@ -51,6 +60,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--		i(216664),	-- Threading Lure (QI!)
 				--	},
 				--}),
+				q(78995, {	-- Truffle Shuffle
+					-- The General
+					["coord"] = { 73.1, 71.4, AZJ_KAHET },
+				}),
 				q(82332, {	-- Unassuming Delivery Spider
 					["coord"] = { 62.6, 22.4, 2213 },
 				}),

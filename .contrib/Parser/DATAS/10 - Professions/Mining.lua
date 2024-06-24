@@ -1336,6 +1336,13 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					i(226332),	-- Earthen Miner's Gavel
 				},
 			}),
+			o(455955, {	-- Heavy Spider Crusher
+				["coord"] = { 46.8, 21.7, 2213 },
+				["questID"] = 83912,
+				["g"] = {
+					i(226338),	-- Heavy Spider Crusher
+				},
+			}),
 			o(455958, {	-- Regenerating Ore
 				["coord"] = { 66.2, 66.2, THE_RINGING_DEEPS },
 				["questID"] = 83909,

@@ -1020,10 +1020,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- During questing
 	q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
 	q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
-	--q(81594),	-- [DNT] Complete Tracking Quest (spellID 443002), after turn in questID 78932 (Fickle Fiendish Fish) (could be rp unlock for 'Stay a while and listen' Faerin during Blades of the Arathi? Activation of this dialog didn't fire any quest)
+	q(81594),	-- [DNT] Complete Tracking Quest (spellID 443002), after turn in questID 78932 (Fickle Fiendish Fish) (could be rp unlock for 'Stay a while and listen' Faerin during Blades of the Arathi? Activation of this dialog didn't fire any quest)
 	q(79971),	-- Stay a while and listen - Alleria Windrunner, during questID 79971 (Nightwatch)
 	q(79706),	-- Stay a while and listen - Faerin Lothar, during questID 79971 (Nightwatch)
-	q(82538),	-- Stay a while and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
+	--q(82538),	-- Stay a while and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
 	q(81636),	-- Stay a while and listen - General Steelstrike, after turn in questID 78626 (Spar Day)
 	q(81631),	-- Stay a while and listen - Faerin Lothar, after pick up questID 80049 (The Flame Still Burns)
 	--

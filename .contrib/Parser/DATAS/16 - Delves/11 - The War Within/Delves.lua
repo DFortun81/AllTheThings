@@ -43,6 +43,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77722),	-- Level 7
 		q(77723),	-- Level 8
 		q(77724),	-- Level 9
+		--q(77727),	-- Level 10 (was already attached to achievement 40455 (Buddy System), but I not sure where it grab it from?)
 	}),
 	m(2269, {	-- Earthcrawl Mines
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
@@ -81,6 +82,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(MISC, {
 				-- Equipment?
 				i(226222),	-- Webbed Hookshot
+				i(212868),	-- Precious Ore (QI!)
 			})
 		},
 	}),
@@ -395,6 +397,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(222927),	-- Weathered Coin Coffer
 		-- Curio
 		i(225902),	-- Idol of Final Will
+		i(225906),	-- Lifeless Necrotic Relic
 		i(225900),	-- Light-Touched Idol
 		i(218129),	-- Porcelain Arrowhead Idol
 		i(225899),	-- Unbreakable Iron Idol
@@ -415,7 +418,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(211005),	-- Cave Topographer's Drape
 		i(215169),	-- Everburning Lantern
 		i(211047),	-- Lapidarius Gemcutter
+		i(211036),	-- Secret-Dredger's Armplates
+		i(211030),	-- Secret-Dredger's Breastplate
 		i(211006),	-- Secret-Dredger's Cloak
+		i(211029),	-- Secret-Dredger's Helm
+		i(211032),	-- Secret-Dredger's Gauntlets
+		i(211035),	-- Secret-Dredger's Girdle
+		i(211033),	-- Secret-Dredger's Legguards
+		i(211034),	-- Secret-Dredger's Mantle
+		i(211031),	-- Secret-Dredger's Sabatons
 		i(225653),	-- Siphoning Lightbrand
 		i(211007),	-- Torchbearer's Greatcloak
 		i(211022),	-- Torchbearer's Striders

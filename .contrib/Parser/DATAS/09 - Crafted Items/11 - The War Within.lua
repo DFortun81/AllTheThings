@@ -780,7 +780,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 435873);	-- Sporefused Blessing Blossom
 			-- Luredrop
 			FirstCraft(79913, 435821);	-- Luredrop
-			--FirstCraft(XXXXX, 435858);	-- Altered Luredrop
+			FirstCraft(79916, 435858);	-- Altered Luredrop
 			--FirstCraft(XXXXX, 435860);	-- Camouflaged Luredrop
 			FirstCraft(79915, 435857);	-- Crystallized Luredrop
 			--FirstCraft(XXXXX, 435859);	-- Irradiated Luredrop
@@ -796,9 +796,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(79912, 435850);	-- Sporefused Mycobloom
 			-- Orbinid
 			FirstCraft(79920, 435822);	-- Orbinid
-			--FirstCraft(XXXXX, 435864);	-- Altered Orbinid
+			FirstCraft(79923, 435864);	-- Altered Orbinid
 			--FirstCraft(XXXXX, 435866);	-- Camouflaged Orbinid
-			--FirstCraft(XXXXX, 435862);	-- Crystallized Orbinid
+			FirstCraft(79922, 435862);	-- Crystallized Orbinid
 			--FirstCraft(XXXXX, 435865);	-- Irradiated Orbinid
 			FirstCraft(79921, 435830);	-- Lush Orbinid
 			--FirstCraft(XXXXX, 435867);	-- Sporefused Orbinid
@@ -1172,6 +1172,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210936),	-- Ironclaw Ore+
 			i(210937),	-- Ironclaw Ore++
 			i(210938),	-- Ironclaw Ore+++
+			i(224838),	-- Null Sliver
 			i(210939),	-- Null Stone
 			i(224583),	-- Slab of Slate
 			i(224584),	-- Erosion Polished Slate
