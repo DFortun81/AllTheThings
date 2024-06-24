@@ -573,7 +573,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(199882, {	-- Tuskarr Mystic's Stave
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", AQUATIC_MAW, 2 },
+								{ "i", RUNED_WRITHEBARK, 3 },
 								{ "i", TUFT_OF_PRIMAL_WOOL, 3 },
 							},
 						}),
