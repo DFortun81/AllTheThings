@@ -46,6 +46,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(160171),	-- Bonepicker Cinch
 			i(160176),	-- Bonepicker Legguards
 			i(160174),	-- Bonepicker Footguards
+			i(160161),	-- Faithless Skycloak
 			i(160166),	-- Sandscout Headcover
 			i(160168),	-- Sandscout Shoulders
 			i(160167),	-- Sandscout Tunic

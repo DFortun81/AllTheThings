@@ -61,10 +61,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { AD
 			i(154778),	-- Ruptured Plate Vambraces
 		}),
 		filter(CLOAKS, {
-			i(160161),	-- Faithless Skycloak
-			i(154848),	-- Heartsbane Greatcloak
 			i(163953),	-- Jula's Jovial Drape
-			i(159229),	-- Mistfall Greatcloak
 			i(163932),	-- Wolfpelt Greatcloak
 		}),
 		filter(FINGER_F, {
