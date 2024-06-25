@@ -1245,8 +1245,6 @@ root(ROOTS.Zones, {
 					crit(3802, {	-- War of the Three Hammers
 						["provider"] = { "o", 175739 },
 						["coords"] = {
-							-- #endif
-							{ 75.0, 9.0, IRONFORGE },
 							-- #if AFTER CATA
 							{ 32.6, 49.5, MULGORE },
 							{ 28.9, 41.3, REDRIDGE_MOUNTAINS },
@@ -1258,6 +1256,7 @@ root(ROOTS.Zones, {
 							{ 69.6, 41.1, STORMWIND_CITY },
 							{ 49.1, 84.1, THE_BARRENS },
 							-- #endif
+							{ 75.0, 9.0, IRONFORGE },
 							{ 14.1, 44.1, THE_HINTERLANDS },
 						},
 						["maps"] = {
