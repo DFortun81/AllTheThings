@@ -149,11 +149,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(21, {	-- Kargath / New Kargath [CATA+], Badlands
 					["cr"] = 2861,	-- Gorrik <Wind Rider Master>
-					-- #if AFTER CATA
-					["coord"] = { 17.2, 40.2, BADLANDS },
-					-- #else
-					["coord"] = { 4.0, 44.8, BADLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 17.2, 40.2, BADLANDS },
+						-- #else
+						{ 4.0, 44.8, BADLANDS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -2075,11 +2077,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(2744, {	-- Shadowforge Commander
-					-- #if AFTER CATA
-					["coord"] = { 39.6, 24.6, BADLANDS },
-					-- #else
-					["coord"] = { 41.2, 26.2, BADLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 39.6, 24.6, BADLANDS },
+						-- #else
+						{ 41.2, 26.2, BADLANDS },
+						-- #endif
+					},
 				}),
 				n(50838, {	-- Tabbs
 					["coord"] = { 58.6, 60.6, BADLANDS },
@@ -2102,28 +2106,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(2751, {	-- War Golem
-					-- #if AFTER CATA
-					["coord"] = { 49.0, 25.4, BADLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 49.0, 25.4, BADLANDS },
+						-- #else
 						{ 47.8, 13.2, BADLANDS },
 						{ 52.0, 28.2, BADLANDS },
 						{ 45.6, 33.2, BADLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(2931, {	-- Zaricotl
-					-- #if AFTER CATA
-					["coord"] = { 56.6, 44.0, BADLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 56.6, 44.0, BADLANDS },
+						-- #else
 						{ 3.6, 44.2, BADLANDS },
 						{ 34.6, 53.8, BADLANDS },
 						{ 37.2, 68.0, BADLANDS },
 						{ 56.0, 57.4, BADLANDS },
 						{ 55.8, 64.6, BADLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(51018, {	-- Zormus
 					["coord"] = { 51.8, 34.2, BADLANDS },
@@ -2174,17 +2178,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2621, {	-- Cowl of Necromancy
 					["cr"] = 2740,	-- Shadowforge Darkweaver
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 53.6, 31.8, BADLANDS },
 						{ 52.4, 33.6, BADLANDS },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 47.0, 26.0, BADLANDS },
 						{ 47.2, 32.4, BADLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(10822, {	-- Dark Whelpling (PET!)
 					-- #if AFTER CATA

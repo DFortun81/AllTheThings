@@ -30,14 +30,14 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						126832,	-- Skycap'n Kragg
 						--  Shark Bait
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159633),	-- Sharkbait's Fishhook
 						i(155884),	-- Parrotfeather Cloak
 						i(159227),	-- Silk Cuffs of the Skycap'n
 						i(159353),	-- Chain-Linked Safety Cord
 						i(158360),	-- Sharkbait Harneses Girdle
 						i(155862),	-- Kragg's Rigging Scalers
-					}),
+					},
 				}),
 				e(2093, {	-- Council o' Captains
 					["crs"] = {
@@ -45,7 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						126845,	-- Captain Jolly
 						126847,	-- Captain Raoul
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159132),	-- Jolly's Boot Daggeer
 						i(159130),	-- Captain's Diplomacy
 						i(158311),	-- Concealed Fencing Plates
@@ -54,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159297),	-- Silver-Trimmed Breeches
 						i(158351),	-- Dashing Bilge Rat Shoes
 						i(158314),	-- Seal of Questionable
-					}),
+					},
 				}),
 				e(2094, {	-- Ring of Booty
 					["crs"] = {
@@ -63,7 +63,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						129699,	-- Ludwig Von Tortollan
 						126969,	-- Trothak <The Shark Puncher>
 					},
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159634),	-- Jeweled Sharksplitter
 						i(158305),	-- Sea Dog's Cuffs
 						i(155892),	-- Bite-Resistant Chain Gloves
@@ -73,11 +73,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(158302),	-- Chum-Coated Leggings
 						i(158361),	-- Sharkwater Waders
 						i(158356),	-- Shell-Kickers
-					}),
+					},
 				}),
 				e(2095,	{	-- Harlan Sweete
 					["crs"] = { 126983 },	-- Harlan Sweete
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						ach(12831),	-- Freehold
 						i(159635),	-- Bloody Tideturner
 						i(155888),	-- Irontide Captain's Hat
@@ -90,7 +90,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(158301),	-- Ruffled Poet Blouse
 						i(155881),	-- Harlan's Loaded Dice
 						i(168132),	-- Sweete's Diamond-Studded Spyglass
-					}),
+					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {

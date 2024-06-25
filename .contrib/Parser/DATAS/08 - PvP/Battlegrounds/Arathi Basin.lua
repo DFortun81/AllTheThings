@@ -166,11 +166,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8262, {	-- Arathor Advanced Care Package
 					["qg"] = 15127,	-- Samuel Hawke
 					["minReputation"] = { 509, FRIENDLY },	-- The League of Arathor, Friendly.
-					-- #if AFTER CATA
-					["coord"] = { 40.2, 46.4, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 46.0, 45.2, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.2, 46.4, ARATHI_HIGHLANDS },
+						-- #else
+						{ 46.0, 45.2, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144065 },	-- Samuel Hawke (Invasion Phase)
 					-- #endif
@@ -183,11 +185,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8260, {	-- Arathor Basic Care Package
 					["qg"] = 15127,	-- Samuel Hawke
 					["minReputation"] = { 509, FRIENDLY },	-- The League of Arathor, Friendly.
-					-- #if AFTER CATA
-					["coord"] = { 40.2, 46.4, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 46.0, 45.2, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.2, 46.4, ARATHI_HIGHLANDS },
+						-- #else
+						{ 46.0, 45.2, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144065 },	-- Samuel Hawke (Invasion Phase)
 					-- #endif
@@ -200,11 +204,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8261, {	-- Arathor Standard Care Package
 					["qg"] = 15127,	-- Samuel Hawke
 					["minReputation"] = { 509, FRIENDLY },	-- The League of Arathor, Friendly.
-					-- #if AFTER CATA
-					["coord"] = { 40.2, 46.4, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 46.0, 45.2, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.2, 46.4, ARATHI_HIGHLANDS },
+						-- #else
+						{ 46.0, 45.2, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144065 },	-- Samuel Hawke (Invasion Phase)
 					-- #endif
@@ -758,11 +764,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 14983,	-- Field Marshal Oslight
 					["sourceQuest"] = 8114,	-- Control Four Bases (Alliance)
 					["minReputation"] = { 509, EXALTED },	-- The League of Arathor, Exalted.
-					-- #if AFTER CATA
-					["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.0, 46.7, ARATHI_HIGHLANDS },
+						-- #else
+						{ 45.8, 45.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
@@ -783,11 +791,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 					-- #endif
 					["minReputation"] = { 509, FRIENDLY },	-- The League of Arathor, Friendly.
-					-- #if AFTER CATA
-					["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.0, 46.7, ARATHI_HIGHLANDS },
+						-- #else
+						{ 45.8, 45.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
@@ -795,11 +805,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8265, {	-- Defiler's Advanced Care Package
 					["qg"] = 15126,	-- Rutherford Twing
 					["minReputation"] = { 510, FRIENDLY },	-- The Defilers, Friendly.
-					-- #if AFTER CATA
-					["coord"] = { 68.5, 30.4, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 73.4, 29.8, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.5, 30.4, ARATHI_HIGHLANDS },
+						-- #else
+						{ 73.4, 29.8, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144064 },	-- Rutherford Twing (Invasion Phase)
 					-- #endif
@@ -812,11 +824,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8263, {	-- Defiler's Basic Care Package
 					["qg"] = 15126,	-- Rutherford Twing
 					["minReputation"] = { 510, FRIENDLY },	-- The Defilers, Friendly.
-					-- #if AFTER CATA
-					["coord"] = { 68.5, 30.4, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 73.4, 29.8, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.5, 30.4, ARATHI_HIGHLANDS },
+						-- #else
+						{ 73.4, 29.8, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144064 },	-- Rutherford Twing (Invasion Phase)
 					-- #endif
@@ -829,11 +843,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8264, {	-- Defiler's Standard Care Package
 					["qg"] = 15126,	-- Rutherford Twing
 					["minReputation"] = { 510, FRIENDLY },	-- The Defilers, Friendly.
-					-- #if AFTER CATA
-					["coord"] = { 68.5, 30.4, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 73.4, 29.8, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.5, 30.4, ARATHI_HIGHLANDS },
+						-- #else
+						{ 73.4, 29.8, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144064 },	-- Rutherford Twing (Invasion Phase)
 					-- #endif
@@ -883,11 +899,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
-					-- #if AFTER CATA
-					["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.0, 46.7, ARATHI_HIGHLANDS },
+						-- #else
+						{ 45.8, 45.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 20, 29 },
@@ -902,11 +920,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
-					-- #if AFTER CATA
-					["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.0, 46.7, ARATHI_HIGHLANDS },
+						-- #else
+						{ 45.8, 45.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 30, 39 },
@@ -921,11 +941,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
-					-- #if AFTER CATA
-					["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.0, 46.7, ARATHI_HIGHLANDS },
+						-- #else
+						{ 45.8, 45.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = { 40, 49 },
@@ -940,11 +962,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8105,	-- The Battle for Arathi Basin! [Level 50]
 					},
 					-- #endif
-					-- #if AFTER CATA
-					["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.0, 46.7, ARATHI_HIGHLANDS },
+						-- #else
+						{ 45.8, 45.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -952,11 +976,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(10531, {	-- The Battle for Arathi Basin! [Level 50] (Alliance)
 					-- CRIEVE NOTE: This quest was added in TBC, not directly accessible to players. Might be a flag for both factions that this quest was completed. Originally we had to use altQuests to flag them correctly.
 					["qg"] = 14983,	-- Field Marshal Oslight
-					-- #if AFTER CATA
-					["coord"] = { 40.0, 46.7, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 45.8, 45.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.0, 46.7, ARATHI_HIGHLANDS },
+						-- #else
+						{ 45.8, 45.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["timeline"] = { ADDED_2_0_1, REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -1034,11 +1060,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			n(VENDORS, {
 				n(15126, {	-- Rutherford Twing
-					-- #if AFTER CATA
-					["coord"] = { 68.5, 30.4, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 73.4, 29.8, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.5, 30.4, ARATHI_HIGHLANDS },
+						-- #else
+						{ 73.4, 29.8, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144064 },	-- Rutherford Twing (Invasion Phase)
 					-- #endif
@@ -1139,11 +1167,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 				}),
 				n(15127, {	-- Samuel Hawke <League of Arathor Supply Officer>
-					-- #if AFTER CATA
-					["coord"] = { 40.2, 46.4, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 46.0, 45.2, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.2, 46.4, ARATHI_HIGHLANDS },
+						-- #else
+						{ 46.0, 45.2, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					-- #if AFTER 8.0.1.26812
 					["crs"] = { 144065 },	-- Samuel Hawke (Invasion Phase)
 					-- #endif

@@ -51,7 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2082, {	-- Priestess Alun'za
 					["crs"] = { 122967 },	-- Priestess Alun'za
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(158321),	-- Wand of Zealous Purification
 						i(158322),	-- Aureus Vessel
 						i(158309),	-- Wristlinks of Alchemical Transfusion
@@ -61,11 +61,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(155861),	-- Embellished Ritual Sabatons
 						i(158319),	-- My'das Talisman
 						i(168146),	-- Sphere of Sangaurum
-					}),
+					},
 				}),
 				e(2036, {	-- Vol'kaal
 					["crs"] = { 122965 },	-- Vol'kaal
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159632),	-- Adulation Enforcer
 						i(158375),	-- Drape of the Loyal Vassal
 						i(158348),	-- Wraps of Everliving Fealty
@@ -73,11 +73,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159445),	-- Grips of the Everlasting Guardian
 						i(155869),	-- Shambling Berserker's Leggings
 						i(158320),	-- Revitalizing Voodoo Totem
-					}),
+					},
 				}),
 				e(2083, {	-- Rezan
 					["crs"] = { 122963 },	-- Rezan
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(168139),	-- Long Regal Sinew (LW reagent, has the highest drop chance from this boss)
 						i(160269),	-- Soulrending Claw
 						i(158711),	-- Hallowed Ossein Longbow
@@ -88,11 +88,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159458),	-- Seal of the Regal Loa
 						i(158712),	-- Rezan's Gleaning Eye
 						i(168128),	-- Essence of the Regal Loa
-					}),
+					},
 				}),
 				e(2030, {	-- Yazma
 					["crs"] = { 122968 },	-- Yazma
-					["g"] = bubbleDown({["bonusID"] = 4}, {
+					["g"] = {
 						ach(12824),	-- Atal'Dazar
 						i(158323),	-- Soulrender's Fang
 						i(159358),	-- Coif of the Court Spider
@@ -104,7 +104,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(160212),	-- Shadowshroud Vambraces
 						i(158308),	-- Souldrifting Sabatons
 						i(159610),	-- Vessel of Skittering Shadows
-					}),
+					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {

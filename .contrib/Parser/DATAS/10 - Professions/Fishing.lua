@@ -845,6 +845,26 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
+			ach(40494),	-- 10 Algari Anglerthread
+			ach(40495),	-- 20 Algari Anglerthread
+			ach(40497),	-- 30 Algari Anglerthread
+			ach(40499),	-- 40 Algari Anglerthread
+			ach(40502),	-- 50 Algari Anglerthread
+			ach(40496),	-- 60 Algari Anglerthread
+			ach(40498),	-- 70 Algari Anglerthread
+			ach(40500),	-- 80 Algari Anglerthread
+			ach(40503),	-- 90 Algari Anglerthread
+			ach(40501),	-- 100 Algari Anglerthread
+			ach(40476),	-- 10 Algari Seekerthread
+			ach(40480),	-- 20 Algari Seekerthread
+			ach(40484),	-- 30 Algari Seekerthread
+			ach(40485),	-- 40 Algari Seekerthread
+			ach(40487),	-- 50 Algari Seekerthread
+			ach(40488),	-- 60 Algari Seekerthread
+			ach(40489),	-- 70 Algari Seekerthread
+			ach(40490),	-- 80 Algari Seekerthread
+			ach(40491),	-- 90 Algari Seekerthread
+			ach(40492),	-- 100 Algari Seekerthread
 			ach(19415),	-- Algari Fisherman
 		}),
 	})),

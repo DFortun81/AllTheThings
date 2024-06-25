@@ -778,7 +778,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25399, {	-- Hatecrest Forces
-					["qg"] = 39726,	-- Tambre
+					["qg"] = 39723,	-- Tambre
 					["coord"] = { 32.6, 45.7, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

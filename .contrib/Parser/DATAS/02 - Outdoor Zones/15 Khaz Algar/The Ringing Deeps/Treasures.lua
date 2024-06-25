@@ -172,6 +172,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- crafting reagents (gems)
 				},
 			}),
+			-- achievement crit
+			o(441578, {	-- Kobold Warning Sign
+				["coord"] = { 64.9, 56.2, THE_RINGING_DEEPS },
+				["questID"] = 82054,
+			}),
+			o(441563, {	-- Submerged Sign
+				["coord"] = { 51.5, 72.4, THE_RINGING_DEEPS },
+				["questID"] = 82052,
+			}),
+			o(441555, {	-- Wax-Drenched Sign
+				["coord"] = { 50.2, 58.3, THE_RINGING_DEEPS },
+				["questID"] = 82053,
+			}),
+			o(441577, {	-- Collapsed Tunnel (Warning: Collapsed Tunnel)
+				["coord"] = { 71.4, 42.4, THE_RINGING_DEEPS },
+				["questID"] = 82051,
+			}),
 		}),
 	}),
 })));

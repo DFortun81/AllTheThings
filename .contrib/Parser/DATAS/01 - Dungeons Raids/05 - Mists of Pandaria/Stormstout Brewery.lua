@@ -56,6 +56,15 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = ADDED
 					},
 				}),
 			}),
+			n(VENDORS, {
+				n(59822, {	-- Auntie Stormstout
+					i(88530),	-- Bubbling Beverage
+					i(80313),	-- Ling-Ting's Favorite Tea
+					i(88529),	-- Sparkling Water
+					i(88490),	-- Triple-Distilled Brew
+					i(88492),	-- Wicked Wikket
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(668, {	-- Ook-Ook
 					["crs"] = { 56637 },	-- Ook-Ook

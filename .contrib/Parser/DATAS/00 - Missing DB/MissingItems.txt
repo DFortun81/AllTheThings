@@ -20808,7 +20808,6 @@ i(80308),	-- Fire Lotus Incense \\ Lotus Incense
 i(80310),	-- Silver Goby \\ er Goby
 i(80311),	-- Filled Oil Vial \\ ed Oil Vial
 i(80312),	-- Empty Oil Vial \\ y Oil Vial
-i(80313),	-- Ling-Ting's Favorite Tea \\ -Ting's Favorite Tea
 i(80314),	-- EZ-Gro Green Cabbage \\ ro Green Cabbage
 i(80315),	-- Stolen Supplies \\ en Supplies
 i(80316),	-- Lucky Virmen's Foot \\ y Virmen's Foot
@@ -21213,7 +21212,6 @@ i(85571),	-- Venomous Stinger \\ mous Stinger
 i(85572),	-- Scarab Wing \\ ab Wing
 i(85573),	-- Dreadshade \\ dshade
 i(85581),	-- Shado-Pan Torch \\ o-Pan Torch
-i(85582),	-- Shao-Tien Cage Key \\ -Tien Cage Key
 i(85583),	-- Needle Mushrooms \\ le Mushrooms
 i(85584),	-- Silkworm Pupa \\ worm Pupa
 i(85585),	-- Red Beans \\ Beans
@@ -21462,10 +21460,6 @@ i(88397),	-- Grummlepack \\ mlepack
 i(88398),	-- Root Veggie Stew \\ Veggie Stew
 i(88416),	-- Adrenaline Shot \\ naline Shot
 i(88487),	-- Volatile Orb \\ tile Orb
-i(88490),	-- Triple-Distilled Brew \\ le-Distilled Brew
-i(88492),	-- Wicked Wikket \\ ed Wikket
-i(88529),	-- Sparkling Water \\ kling Water
-i(88530),	-- Bubbling Beverage \\ ling Beverage
 i(88532),	-- Lotus Water \\ s Water
 i(88538),	-- Sha-Haunted Crystal \\ Haunted Crystal
 i(88564),	-- Tattered Journal \\ ered Journal
@@ -21850,7 +21844,6 @@ i(92727),	-- Charred Glyph \\ red Glyph
 i(92735),	-- Meng-do's Essence \\ -do's Essence
 i(92736),	-- Gen-Li's Essence \\ Li's Essence
 i(92739),	-- Misplaced Keg \\ laced Keg
-i(92741),	-- Flawless Battle-Stone \\ less Battle-Stone
 i(92742),	-- Polished Battle-Stone \\ shed Battle-Stone
 i(92743),	-- Krasari Iron \\ ari Iron
 i(92745),	-- Liquid Fire \\ id Fire

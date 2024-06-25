@@ -140,6 +140,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(225357),	-- Kaheti Confiscated Lantern
 					i(225353),	-- Kaheti Confiscated Spade
 					i(225361),	-- Kaheti Confiscated Staff
+					i(225363),	-- Kaheti Confiscated Sword
 				},
 			}),
 			q(78237, {	-- Let Fly!
@@ -263,7 +264,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(225563),	-- Threadmaestro's Collar
 				},
 			}),
-			q(78248, {	-- Beginning Anew From Rock Bottom
+			q(78248, {	-- What We Still Have
 				["sourceQuests"] = { 78244 },	-- Kahet Hospitality
 				["provider"] = { "n", 217385 },	-- Alleria Windrunner
 				["coord"] = { 60.7, 71.1, AZJ_KAHET },
@@ -274,7 +275,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- this is potentially main story quest but they pop in next build (when all zones become available)
 			-- in player journal treated as The War Withing Campaign
 			q(79197, {	-- Surface Bound
-				["sourceQuests"] = { 78248 },	-- Beginning Anew From Rock Bottom / TODO: unsure
+				["sourceQuests"] = { 78248 },	-- What We Still Have / TODO: unsure
 				["provider"] = { "n", 219252 },	-- Alleria Windrunner
 				["coord"] = { 56.2, 48.5, AZJ_KAHET },
 			}),
@@ -613,7 +614,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- End of some random spider quest #5
 			-- crit 'Subterfuge in Silk'
 			q(81686, {	-- Subterfuge in Silk
-				--["sourceQuests"] = {  },	-- unsure, probably somewhere around last story chapter or after it
+				--["sourceQuests"] = {  },	-- unsure 78248 or quest before it
 				["isBreadcrumb"] = true,	-- unless it is now required for spawn next quests/npc
 				["provider"] = { "n", 207471 },	-- Window Arak'nal
 				["coord"] = { 56.2, 48.2, AZJ_KAHET },
@@ -676,6 +677,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			-- End of crit 'Subterfuge in Silk'
+			-- missing header! (in quest log)
+			q(83276, {	-- Saving Private Spindle
+				--["sourceQuests"] = {  },	-- ?
+				--["isBreadcrumb"] = true,
+				["provider"] = { "n", 207471 },	-- Window Arak'nal
+				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+			}),
+			--
 			-- ZONE DUNGEON QUESTS (80 only)
 			q(83166, {	-- Ara-Kara, the City of Echoes: Harverst's End
 				--["sourceQuests"] = { xx },	-- ?
@@ -813,6 +822,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(83770, {	-- DELVER'S CALL: Spiral Weave
 				["provider"] = { "n", 211721 },	-- Sir Jonathan Trueheart
 				["coord"] = { 59.2, 25.1, AZJ_KAHET },
+			}),
+			q(83761, {	-- Delves: The Underkeep
+				["provider"] = { "n", 227544 },	-- Brann Bronzebeard
+				["coord"] = { 55.9, 38.1, AZJ_KAHET },
 			}),
 			--Zone Drop quest?
 			q(80378, {	-- A Light of the Dark
@@ -1001,22 +1014,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			--
-			--	Rares / Bonus Objectives / Once per character?
-			--	need to be moved into rares if didn't get bonus objective
-			q(81707, {	-- Gutter Carver
-				["provider"] = { "n", 216045 },	-- Gutter Carver
-				["coord"] = { 58.4, 65.0, AZJ_KAHET },
-				["g"] = {
-					i(221243),	-- Slippers of Delirium
-				},
-			}),
-			q(81706, {	-- Bomb Beetle
-				["provider"] = { "n", 216044 },	-- Siegefire Bomber
-				["coord"] = { 60.7, 74.4, AZJ_KAHET },
-				["g"] = {
-					-- no loot
-				},
-			}),
 		}),
 	}),
 })));
@@ -1030,13 +1027,16 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(81623),	-- triggered during questID 78228 (Into a Skittering City) when apply Azi-Kahet Pheromones
 	-- Dialogs
 	q(81946),	-- 'Stay awhile and listen' - Anduin Wrynn - druing questID 78231 (Like a Spider on the Wall)
-	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (Beginning Anew From Rock Bottom)
+	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (What We Still Have)
 	-- Reps with zone dudes, probably gonna need to move into expansion feature?
 	q(81601),	-- [DNT] General - Level 1 Unlock (spellID 443677)
+	q(81602),	-- [DNT] General - Level 2 Unlock (spellID 443679)
+	q(81626),	-- [DNT] General - Level 2 Unlock (spellID 443679)
 	q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
 	q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
 	q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
 	q(81627),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
+	q(81599),	-- [DNT] Weaver - Level 3 Unlock (spellID 443675)
 	--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
 	q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
 	q(82646),	-- pop questIDs: 81492 (General), 81499 (?), 81506 (?)
@@ -1073,4 +1073,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Vizier
 	--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID 81480 (Wild Reagents: Maddening Deep)
 	-- Missing 11 total quest data/givers, 81505 81498 81497 81502 81482 (and 5 more)
+	-- Special Assignment unlocks tracker
+	q(82159),	-- Special Assignment: A Pound of Cure (but it is Bombs from Behind?)
 });

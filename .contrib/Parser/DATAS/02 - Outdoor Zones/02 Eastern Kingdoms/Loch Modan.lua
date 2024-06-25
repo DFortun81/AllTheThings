@@ -1473,22 +1473,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_1 },
 				}),
 				n(1398, {  -- Boss Galgosh <Stonesplinter Chieftain>
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 69.6, 60.0, LOCH_MODAN },
 						{ 70.4, 64.6, LOCH_MODAN },
 						{ 70.8, 68.0, LOCH_MODAN },
 						{ 68.0, 66.0, LOCH_MODAN },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 68.4, 66.0, LOCH_MODAN },
 						{ 65.8, 68.0, LOCH_MODAN },
 						{ 68.8, 68.6, LOCH_MODAN },
 						{ 72.4, 67.6, LOCH_MODAN },
 						{ 70.4, 63.8, LOCH_MODAN },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(1938, {	-- Block Mallet
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
@@ -1529,22 +1527,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(14267, {  -- Emogg the Crusher
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 68.4, 29.0, LOCH_MODAN },
 						{ 67.0, 21.0, LOCH_MODAN },
 						{ 73.0, 25.8, LOCH_MODAN },
 						{ 72.8, 21.4, LOCH_MODAN },
 						{ 70.0, 25.0, LOCH_MODAN },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 65.0, 21.0, LOCH_MODAN },
 						{ 68.4, 28.8, LOCH_MODAN },
 						{ 64.2, 28.4, LOCH_MODAN },
 						{ 71.6, 21.0, LOCH_MODAN },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(2821, {	-- Mo'grosh Masher
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
@@ -1593,15 +1589,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(1425, {  -- Grizlak / Kubb [CATA+]
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 26.0, 27.0, LOCH_MODAN },
 						{ 26.2, 31.8, LOCH_MODAN },
 						{ 24.8, 30.6, LOCH_MODAN },
+						-- #else
+						{ 35.4, 27.8, LOCH_MODAN },
+						-- #endif
 					},
-					-- #else
-					["coord"] = { 35.4, 27.8, LOCH_MODAN },
-					-- #endif
 					["groups"] = {
 						i(2284, {	-- Rat Cloth Cloak
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
@@ -1645,29 +1641,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(14268, {  -- Lord Condar
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 67.4, 76.0, LOCH_MODAN },
 						{ 73.2, 72.6, LOCH_MODAN },
 						{ 75.8, 63.0, LOCH_MODAN },
 						{ 79.0, 63.0, LOCH_MODAN },
 						{ 78.6, 71.2, LOCH_MODAN },
 						{ 78.2, 74.6, LOCH_MODAN },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 62.8, 78.2, LOCH_MODAN },
 						{ 74.8, 67.8, LOCH_MODAN },
 						{ 78.0, 74.2, LOCH_MODAN },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(1399, {  -- Magosh <Stonesplinter Tribal Shaman>
-					-- #if AFTER CATA
-					["coord"] = { 31.0, 75.6, LOCH_MODAN },
-					-- #else
-					["coord"] = { 70.0, 66.2, LOCH_MODAN },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 31.0, 75.6, LOCH_MODAN },
+						-- #else
+						{ 70.0, 66.2, LOCH_MODAN },
+						-- #endif
+					},
 					["groups"] = {
 						i(2241, {	-- Desperado Cape
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 05.09.2023 ATT Discord
@@ -1709,11 +1705,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(14266, {  -- Shanda the Spinner
-					-- #if AFTER CATA
-					["coord"] = { 61.6, 74.6, LOCH_MODAN },
-					-- #else
-					["coord"] = { 77.8, 53.6, LOCH_MODAN },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.6, 74.6, LOCH_MODAN },
+						-- #else
+						{ 77.8, 53.6, LOCH_MODAN },
+						-- #endif
+					},
 				}),
 				n(45401, {	-- Whitefin
 					["coords"] = {

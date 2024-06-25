@@ -903,6 +903,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210805),	-- Blessing Blossom+
 			i(210806),	-- Blessing Blossom++
 			i(210807),	-- Blessing Blossom+++
+			i(224264),	-- Deepgrove Petal
+			i(224265),	-- Deepgrove Rose
 			i(210799),	-- Luredrop+
 			i(210800),	-- Luredrop++
 			i(210801),	-- Luredrop+++
@@ -913,6 +915,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210802),	-- Orbinid+
 			i(210803),	-- Orbinid++
 			i(210804),	-- Orbinid+++
+			i(214561),	-- Verdant Seed
 		}),
 		n(DISCOVERY, {
 			r(435858),	-- Altered Luredrop
@@ -963,20 +966,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Arathor's Spear
 			FirstCraft(79933, 435826);	-- Arathor's Spear
 			--FirstCraft(XXXXX, 435879);	-- Camouflaged Arathor's Spear
-			--FirstCraft(XXXXX, 435877);	-- Crystallized Arathor's Spear
-			--FirstCraft(XXXXX, 435878);	-- Irradiated Arathor's Spear
-			--FirstCraft(79934, 435836);	-- Lush Arathor's Spear
+			FirstCraft(79935, 435877);	-- Crystallized Arathor's Spear
+			FirstCraft(79936, 435878);	-- Irradiated Arathor's Spear
+			FirstCraft(79934, 435836);	-- Lush Arathor's Spear
 			--FirstCraft(XXXXX, 435880);	-- Sporefused Arathor's Spear
 			-- Blessing Blossom
 			FirstCraft(79927, 435823);	-- Blessing Blossom
 			--FirstCraft(XXXXX, 435872);	-- Camouflaged Blessing Blossom
-			--FirstCraft(XXXXX, 435870);	-- Crystallized Blessing Blossom
+			FirstCraft(79929, 435870);	-- Crystallized Blessing Blossom
 			FirstCraft(79930, 435871);	-- Irradiated Blessing Blossom
 			FirstCraft(79928, 435834);	-- Lush Blessing Blossom
 			--FirstCraft(XXXXX, 435873);	-- Sporefused Blessing Blossom
 			-- Luredrop
 			FirstCraft(79913, 435821);	-- Luredrop
-			--FirstCraft(XXXXX, 435858);	-- Altered Luredrop
+			FirstCraft(79916, 435858);	-- Altered Luredrop
 			--FirstCraft(XXXXX, 435860);	-- Camouflaged Luredrop
 			FirstCraft(79915, 435857);	-- Crystallized Luredrop
 			--FirstCraft(XXXXX, 435859);	-- Irradiated Luredrop
@@ -992,9 +995,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(79912, 435850);	-- Sporefused Mycobloom
 			-- Orbinid
 			FirstCraft(79920, 435822);	-- Orbinid
-			--FirstCraft(XXXXX, 435864);	-- Altered Orbinid
+			FirstCraft(79923, 435864);	-- Altered Orbinid
 			--FirstCraft(XXXXX, 435866);	-- Camouflaged Orbinid
-			--FirstCraft(XXXXX, 435862);	-- Crystallized Orbinid
+			FirstCraft(79922, 435862);	-- Crystallized Orbinid
 			--FirstCraft(XXXXX, 435865);	-- Irradiated Orbinid
 			FirstCraft(79921, 435830);	-- Lush Orbinid
 			--FirstCraft(XXXXX, 435867);	-- Sporefused Orbinid
@@ -1289,6 +1292,104 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = LEATHERWORKING,
+			-- Arathorian Patterns
+			FirstCraft(80922, 441460);	-- Blessed Weapon Grip
+			FirstCraft(80927, 444073);	-- Sanctified Torchbearer's Grips
+			FirstCraft(80926, 444071);	-- Waders of the Unifying Flame
+			-- Bestial Patterns
+			FirstCraft(80961, 443958);	-- Busy Bee's Buckle
+			FirstCraft(80960, 443960);	-- Reinforced Setae Flyers
+			FirstCraft(80956, 443950);	-- Roiling Thunderstrike Talons
+			FirstCraft(80958, 443949);	-- Rook Feather Wristwraps
+			FirstCraft(80959, 443961);	-- Smoldering Pollen Hauberk
+			FirstCraft(80957, 443951);	-- Weathered Stormfront Vest
+			-- Competitor's Leather (PvP)
+			--FirstCraft(xx, 438902);	-- Algari Competitor's Leather Belt
+			--FirstCraft(xx, 438898);	-- Algari Competitor's Leather Boots
+			--FirstCraft(xx, 438899);	-- Algari Competitor's Leather Chestpiece
+			--FirstCraft(xx, 438904);	-- Algari Competitor's Leather Gloves
+			--FirstCraft(xx, 438900);	-- Algari Competitor's Leather Mask
+			--FirstCraft(xx, 438901);	-- Algari Competitor's Leather Shoulderpads
+			--FirstCraft(xx, 438903);	-- Algari Competitor's Leather Trousers
+			--FirstCraft(xx, 438905);	-- Algari Competitor's Leather Wristwraps
+			-- Competitor's Mail (PvP)
+			--FirstCraft(xx, 438907);	-- Algari Competitor's Chain Chainmail
+			--FirstCraft(xx, 438908);	-- Algari Competitor's Chain Cowl
+			--FirstCraft(xx, 438913);	-- Algari Competitor's Chain Cuffs
+			--FirstCraft(xx, 438909);	-- Algari Competitor's Chain Epaulets
+			--FirstCraft(xx, 438912);	-- Algari Competitor's Chain Gauntlets
+			--FirstCraft(xx, 438910);	-- Algari Competitor's Chain Girdle
+			--FirstCraft(xx, 438911);	-- Algari Competitor's Chain Leggings
+			--FirstCraft(xx, 438906);	-- Algari Competitor's Chain Treads
+			-- Consumables
+			FirstCraft(80953, 444103);	-- Defender's Armor Kit
+			FirstCraft(80955, 444104);	-- Dual Layered Armor Kit
+			FirstCraft(80954, 444102);	-- Stormbound Armor Kit
+			FirstCraft(80952, 444122);	-- Thunderous Drums
+			-- Leather Armor
+			FirstCraft(80897, 441058);	-- Rune-Branded Armbands
+			FirstCraft(80892, 441053);	-- Rune-Branded Grasps
+			FirstCraft(80893, 441054);	-- Rune-Branded Hood
+			FirstCraft(80890, 441052);	-- Rune-Branded Kickers
+			FirstCraft(80894, 441055);	-- Rune-Branded Legwraps
+			FirstCraft(80895, 441056);	-- Rune-Branded Mantle
+			FirstCraft(80891, 441051);	-- Rune-Branded Tunic
+			FirstCraft(80896, 441057);	-- Rune-Branded Waistband
+			FirstCraft(80913, 443702);	-- Spelunker's Leather Bands
+			FirstCraft(80907, 443696);	-- Spelunker's Leather Footpads
+			FirstCraft(80906, 443695);	-- Spelunker's Leather Jerkin
+			--FirstCraft(80910, 443699);	-- Spelunker's Practiced Britches
+			--FirstCraft(80909, 443698);	-- Spelunker's Practiced Hat
+			FirstCraft(80908, 443697);	-- Spelunker's Practiced Mitts
+			FirstCraft(80912, 443701);	-- Spelunker's Practiced Sash
+			FirstCraft(80911, 443700);	-- Spelunker's Practiced Shoulders
+			-- Mail Armor
+			FirstCraft(80904, 441065);	-- Glyph-Etched Binding
+			FirstCraft(80899, 441059);	-- Glyph-Etched Breastplate
+			FirstCraft(80902, 441063);	-- Glyph-Etched Cuisses
+			FirstCraft(80903, 441064);	-- Glyph-Etched Epaulets
+			FirstCraft(80900, 441061);	-- Glyph-Etched Gauntlets
+			FirstCraft(80901, 441062);	-- Glyph-Etched Guise
+			FirstCraft(80898, 441060);	-- Glyph-Etched Stompers
+			FirstCraft(80905, 441066);	-- Glyph-Etched Vambraces
+			FirstCraft(80921, 443710);	-- Tracker's Chitin Cuffs
+			FirstCraft(80915, 443704);	-- Tracker's Chitin Galoshes
+			FirstCraft(80914, 443703);	-- Tracker's Chitin Hauberk
+			FirstCraft(80920, 443709);	-- Tracker's Toughened Girdle
+			FirstCraft(80916, 443705);	-- Tracker's Toughened Handguards
+			FirstCraft(80917, 443706);	-- Tracker's Toughened Headgear
+			FirstCraft(80918, 443707);	-- Tracker's Toughened Links
+			FirstCraft(80919, 443708);	-- Tracker's Toughened Shoulderguards
+			-- Nerubian Patterns
+			FirstCraft(80925, 444070);	-- Adrenal Surge Clasp
+			FirstCraft(80924, 444068);	-- Vambraces of Deepening Darkness
+			FirstCraft(80923, 441461);	-- Writhing Armor Banding
+			-- Profession Equiepment
+			FirstCraft(80928, 444105);	-- Apothecary's Cap
+			FirstCraft(80939, 444117);	-- Arathi Leatherworker's Smock
+			FirstCraft(80933, 444111);	-- Charged Scrapmaster's Gauntlets
+			FirstCraft(80943, 444121);	-- Deep Tracker's Cap
+			FirstCraft(80941, 444119);	-- Deep Tracker's Pack
+			FirstCraft(80931, 444108);	-- Earthen Forgemaster's Apron
+			FirstCraft(80937, 444115);	-- Earthen Jeweler's Cover
+			FirstCraft(80934, 444112);	-- Gardener's Basket
+			FirstCraft(80936, 444114);	-- Gemcutter's Apron
+			FirstCraft(80942, 444120);	-- Hideseeker's Hat
+			FirstCraft(80940, 444118);	-- Hideseeker's Pack
+			FirstCraft(80938, 444116);	-- Hideshaper's Cover
+			FirstCraft(80929, 444106);	-- Nerubian Alchemist's Hat
+			FirstCraft(80932, 444110);	-- Scrapsmith's Gloves
+			FirstCraft(80930, 444107);	-- Steelsmith's Apron
+			--FirstCraft(xx, 444113);	-- Stonebound Herbalist's Pack
+			-- Reagents
+			FirstCraft(80945, 444075);	-- Carapace-Backed Hide
+			FirstCraft(80944, 444086);	-- Chitin Armor Banding
+			FirstCraft(80946, 444076);	-- Crystalfused Hide
+			FirstCraft(80950, 444085);	-- Deepfury Hide
+			FirstCraft(80949, 444079);	-- Leyfused Hide
+			FirstCraft(80948, 444078);	-- Sporecoated Hide
+			FirstCraft(80951, 444087);	-- Storm-Touched Weapon Wrap
+			FirstCraft(80947, 444077);	-- Writhing Hide
 		},{
 		})),
 		filter(MISC, {
@@ -1364,10 +1465,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210930),	-- Bismuth+
 			i(210931),	-- Bismuth++
 			i(210932),	-- Bismuth+++
+			i(217707),	-- Imperfect Null Stone
 			i(210936),	-- Ironclaw Ore+
 			i(210937),	-- Ironclaw Ore++
 			i(210938),	-- Ironclaw Ore+++
+			i(224838),	-- Null Sliver
 			i(210939),	-- Null Stone
+			i(224583),	-- Slab of Slate
+			i(224584),	-- Erosion Polished Slate
 		}),
 		n(DISCOVERY, {
 			r(439707),	-- Aqirite

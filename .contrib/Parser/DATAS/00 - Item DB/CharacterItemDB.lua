@@ -514,6 +514,9 @@ iq(224645, 83058);					-- Jewel-Etched Alchemy Notes
 iq(224647, 83059);					-- Jewel-Etched Blacksmithing Notes
 iq(224652, 83060);					-- Jewel-Etched Enchanting Notes
 iq(224648, 83061);					-- Jewel-Etched Tailoring Notes
+iq(224653, 83063);					-- Machine-Learned Engineering Notes
+iq(224654, 83064);					-- Machine-Learned Inscription Notes
+iq(224651, 83062);					-- Machine-Learned Mining Notes
 iq(227431, 81148);					-- Pristine Alchemist's Research
 iq(227429, 84228);					-- Pristine Blacksmith's Diagrams
 iq(227433, 81078);					-- Pristine Enchanter's Research

@@ -3,9 +3,16 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1269, {	-- The Stonevault
-		--["coord"] = { X, Y, THE_RINGING_DEEPS },
+		["coord"] = { 46.8, 8.5, THE_RINGING_DEEPS },
 		["maps"] = { 2341 },	-- The Stonevault
 		["g"] = {
+			n(QUESTS, {
+				q(83108, {	-- Daily Diagnostics
+					["sourceQuests"] = { 79354 },	-- The Machine Speakers
+					["provider"] = { "n", 225533 },	-- Therkan
+					["coord"] = { 47.3, 31.6, THE_RINGING_DEEPS },
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2572, {	-- E.D.N.A.
 					["crs"] = { 210108 },	-- E.D.N.A

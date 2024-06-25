@@ -46,7 +46,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2585, {	-- Ki'katal the Harvester
 					["crs"] = { 215407 },
 					["g"] = {

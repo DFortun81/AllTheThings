@@ -203,6 +203,43 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					}),
 				},
 			}),
+			n(224294, {	-- Osidion <Ensemble Vendor>
+				["coord"] = { 57.3, 60.8, DORNOGAL },
+				["g"] = sharedData({
+					["cost"] = {{"i", 223951, 1}},	-- 1x Earth-Encrusted Gem
+				}, {
+					iensemble(219116),	-- Arcane Peddler's Trinkets
+					iensemble(219100),	-- Cardinal Educator's Knowledge
+					iensemble(219127),	-- Cast Artisan's Talent
+					iensemble(219113),	-- Celestial Patron's Elegance
+					iensemble(219103),	-- Cobalt Educator's Knowledge
+					iensemble(219114),	-- Court Patron's Elegance
+					iensemble(219117),	-- Curious Peddler's Trinkets
+					iensemble(219133),	-- Deep Cartographer's Orientation
+					iensemble(219107),	-- Earthy Quotidian Wear
+					iensemble(219102),	-- Leafy Educator's Knowledge
+					iensemble(219101),	-- Lilac Educator's Knowledge
+					iensemble(219106),	-- Maroon Quotidian Wear
+					iensemble(219104),	-- Midnight Educator's Knowledge
+					iensemble(219134),	-- Mossy Cartographer's Orientation
+					iensemble(219119),	-- Occult Peddler's Trinkets
+					iensemble(219131),	-- Oceanic Cartographer's Orientation
+					iensemble(219118),	-- Peculiar Peddler's Trinkets
+					iensemble(219111),	-- Royal Patron's Elegance
+					iensemble(219130),	-- Saffron Cartographer's Orientation
+					iensemble(219105),	-- Sandy Quotidian Wear
+					iensemble(219129),	-- Sooty Artisan's Talent
+					iensemble(219128),	-- Stained Artisan's Talent
+					iensemble(219109),	-- Taupe Quotidian Wear
+					iensemble(219123),	-- Toiler's Beige Uniform
+					iensemble(219122),	-- Toiler's Burgundy Uniform
+					iensemble(219124),	-- Toiler's Navy Uniform
+					iensemble(219121),	-- Toiler's Ochre Uniform
+					iensemble(219108),	-- Umber Quotidian Wear
+					iensemble(219112),	-- Verdant Patron's Elegance
+					iensemble(219126),	-- Woven Artisan's Talent
+				}),
+			}),
 			n(219226, {	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
 				["g"] = {

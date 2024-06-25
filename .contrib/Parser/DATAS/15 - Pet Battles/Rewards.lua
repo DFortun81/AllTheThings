@@ -4,6 +4,7 @@
 root(ROOTS.PetBattles, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
 	n(REWARDS, bubbleDown({ ["timeline"] = { ADDED_5_1_0 } }, {	-- These can drop very rarely from none trainer pet battle
 		i(92679),	-- Flawless Aquatic Battle-Stone
+		i(92741),	-- Flawless Battle-Stone
 		i(92675),	-- Flawless Beast Battle-Stone
 		i(92676),	-- Flawless Critter Battle-Stone
 		i(92665),	-- Flawless Elemental Battle-Stone

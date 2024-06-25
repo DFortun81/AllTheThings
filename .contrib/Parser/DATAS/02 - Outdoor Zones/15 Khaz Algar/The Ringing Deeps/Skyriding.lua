@@ -107,9 +107,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			n(QUESTS, {
 				skyridingrace(80240, {	-- Cataract River Cruise
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219554 },	-- Bronze Timekeeper
+					["coord"] = { 52.5, 46.9, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20336),	-- Cataract River Cruise: Bronze
 						ach(20337),	-- Cataract River Cruise: Silver
@@ -117,9 +116,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80247, {	-- Cataract River Cruise - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219554 },	-- Bronze Timekeeper
+					["coord"] = { 52.5, 46.9, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20339),	-- Cataract River Cruise Advanced: Bronze
 						ach(20340),	-- Cataract River Cruise Advanced: Silver
@@ -127,9 +125,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80253, {	-- Cataract River Cruise - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219554 },	-- Bronze Timekeeper
+					["coord"] = { 52.5, 46.9, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20342),	-- Cataract River Cruise Reverse: Bronze
 						ach(20343),	-- Cataract River Cruise Reverse: Silver
@@ -197,9 +194,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80243, {	-- Opportunity Point Amble
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219556 },	-- Bronze Timekeeper
+					["coord"] = { 63.5, 75.1, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20354),	-- Opportunity Point Amble: Bronze
 						ach(20355),	-- Opportunity Point Amble: Silver
@@ -207,9 +203,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80249, {	-- Opportunity Point Amble - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219556 },	-- Bronze Timekeeper
+					["coord"] = { 63.5, 75.1, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20357),	-- Opportunity Point Amble Advanced: Bronze
 						ach(20358),	-- Opportunity Point Amble Advanced: Silver
@@ -217,9 +212,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80255, {	-- Opportunity Point Amble - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219556 },	-- Bronze Timekeeper
+					["coord"] = { 63.5, 75.1, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20360),	-- Opportunity Point Amble Reverse: Bronze
 						ach(20361),	-- Opportunity Point Amble Reverse: Silver
@@ -227,9 +221,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80238, {	-- Ringing Deeps Ramble
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219552 },	-- Bronze Timekeeper
+					["coord"] = { 42.2, 27.4, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20318),	-- Ringing Deeps Ramble: Bronze
 						ach(20319),	-- Ringing Deeps Ramble: Silver
@@ -237,9 +230,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80245, {	-- Ringing Deeps Ramble - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219552 },	-- Bronze Timekeeper
+					["coord"] = { 42.2, 27.4, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20321),	-- Ringing Deeps Ramble Advanced: Bronze
 						ach(20322),	-- Ringing Deeps Ramble Advanced: Silver
@@ -247,9 +239,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80251, {	-- Ringing Deeps Ramble - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219552 },	-- Bronze Timekeeper
+					["coord"] = { 42.2, 27.4, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20324),	-- Ringing Deeps Ramble Reverse: Bronze
 						ach(20325),	-- Ringing Deeps Ramble Reverse: Silver

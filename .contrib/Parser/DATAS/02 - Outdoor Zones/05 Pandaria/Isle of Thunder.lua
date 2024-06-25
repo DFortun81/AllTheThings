@@ -1,7 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(ISLE_OF_THUNDER, {
@@ -799,10 +798,14 @@ root(ROOTS.Zones, {
 						i(97268, {	-- Tome of Valor
 							["timeline"] = { ADDED_5_2_0, REMOVED_5_3_0 },
 						}),
+						-- TODO: maybe make it more clear this is a 'looted' trigger via built-in handling?
+						header(HEADERS.Item, 94221, {	-- Shan'ze Ritual Stone [looted]
+							["description"] = "Whether this will be lootable from Rares.",
+							["questID"] = 32610,
+						}),
 					})),
 					n(70000, {	-- Al'tabim the All-Seeing
 						["isWeekly"] = true,
-						["questID"] = 32610,
 						["coord"] = { 44.7, 29.8, ISLE_OF_THUNDER },
 						["g"] = {
 							crit(22826, {	-- Al'tabim the All-Seeing
@@ -812,7 +815,6 @@ root(ROOTS.Zones, {
 					}),
 					n(70001, {	-- Backbreaker Uru
 						["isWeekly"] = true,
-						["questID"] = 32610,
 						["coords"] = {
 							{ 48.0, 25.5, ISLE_OF_THUNDER },
 							{ 42.9, 36.3, 505 },
@@ -828,7 +830,6 @@ root(ROOTS.Zones, {
 					}),
 					n(69999, {	-- God-Hulk Ramuk
 						["isWeekly"] = true,
-						["questID"] = 32610,
 						["coord"] = { 61.4, 49.5, ISLE_OF_THUNDER },
 						["g"] = {
 							crit(22825, {	-- God-Hulk Ramuk
@@ -838,7 +839,6 @@ root(ROOTS.Zones, {
 					}),
 					n(69998, {	-- Goda
 						["isWeekly"] = true,
-						["questID"] = 32610,
 						["coord"] = { 53.7, 53.1, ISLE_OF_THUNDER },
 						["g"] = {
 							crit(22824, {	-- Goda
@@ -851,7 +851,6 @@ root(ROOTS.Zones, {
 					}),
 					n(50358, {	-- Haywire Sunreaver Construct
 						["isWeekly"] = true,
-						["questID"] = 32610,
 						["coords"] = {
 							{ 48.4, 86.4, ISLE_OF_THUNDER },
 							{ 50.2, 90.8, ISLE_OF_THUNDER },
@@ -872,7 +871,6 @@ root(ROOTS.Zones, {
 					}),
 					n(69996, {	-- Ku'lai the Skyclaw
 						["isWeekly"] = true,
-						["questID"] = 32610,
 						["coords"] = {
 							{ 33.0, 81.0, ISLE_OF_THUNDER },
 							{ 37.6, 82.6, ISLE_OF_THUNDER },
@@ -885,7 +883,6 @@ root(ROOTS.Zones, {
 					}),
 					n(70002, {	-- Lu-Ban
 						["isWeekly"] = true,
-						["questID"] = 32610,
 						["coord"] = { 54.3, 35.4, ISLE_OF_THUNDER },
 						["g"] = {
 							crit(22825, {	-- Lu-Ban
@@ -895,7 +892,6 @@ root(ROOTS.Zones, {
 					}),
 					n(70003, {	-- Molthor
 						["isWeekly"] = true,
-						["questID"] = 32610,
 						["coords"] = {
 							{ 63.5, 49.2, ISLE_OF_THUNDER },
 							{ 39.0, 37.2, 506 },
@@ -908,7 +904,6 @@ root(ROOTS.Zones, {
 					}),
 					n(69664, {	-- Mumta
 						["isWeekly"] = true,
-						["questID"] = 32610,
 						["coord"] = { 35.10, 62.45, ISLE_OF_THUNDER },
 						["g"] = {
 							crit(22821, {	-- Mumta
@@ -918,7 +913,6 @@ root(ROOTS.Zones, {
 					}),
 					n(69997, {	-- Progenitus
 						["isWeekly"] = true,
-						["questID"] = 32610,
 						["coords"] = {
 							{ 51.31, 71.19, ISLE_OF_THUNDER },	-- Spawn
 							{ 50.49, 74.96, ISLE_OF_THUNDER },	-- Path Start
@@ -1141,7 +1135,6 @@ root(ROOTS.Zones, {
 		}),
 	}),
 });
-
 root(ROOTS.HiddenQuestTriggers,{
 	expansion(EXPANSION.MOP, {
 		q(32260),	-- Alliance Quest Choice: PvE

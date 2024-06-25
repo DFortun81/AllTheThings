@@ -183,6 +183,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(226117),	-- Dalaran Guardian's Arcanotool
 				},
 			}),
+			n(222378, {	-- Kereke
+				--seems like rare in this spot have rotation?
+				["coord"] = { 30.9, 52.3, ISLE_OF_DORN },
+				--["questID"] = ,
+			}),
 		})),
 	}),
 })));

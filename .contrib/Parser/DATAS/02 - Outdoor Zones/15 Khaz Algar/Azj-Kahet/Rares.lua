@@ -76,7 +76,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 				["questID"] = 81694,
 				["g"] = {
-					i(223392),	-- Trousers of Dark Hunger
+					i(223378),	-- Footguards of the Nerubian Twins
 					i(223408),	-- Treads of the Nerubian Twins
 				},
 			}),
@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					{ 62.7, 43.6, AZJ_KAHET },	-- Mid
 					{ 68.7, 54.8, AZJ_KAHET },	-- End
 				},
-				["questID"] = 81702,	-- in addition 84071 (84071 didn't fire on secodn kill / on 80s)
+				["questID"] = 81702,	-- in addition 84071 (84071 didn't fire on second kill on 80s same character / fire on alt 77 level)
 				["g"] = {
 					i(221206),	-- Reinforced Chitin Chestpiece
 				},
@@ -143,6 +143,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 81704,	-- in addition 84073
 				["g"] = {
 					i(221212),	-- Death Burrower Handguards
+				},
+			}),
+			n(216045, {	-- Enduring Gutterface
+				["coord"] = { 58.4, 65.0, AZJ_KAHET },
+				["questID"] = 81707,	-- in addition 84076
+				["g"] = {
+					i(221243),	-- Slippers of Delirium (alpha data)
+				},
+			}),
+			n(216044, {	-- Maddened Siegebomber
+				--TODO: need more coords, flying around
+				["coord"] = { 66.4, 56.4, AZJ_KAHET },
+				["questID"] = 81706,	-- in addition 84075
+				["g"] = {
+					i(221217),	-- Nerubian Bomber's Leggings
 				},
 			}),
 		})),

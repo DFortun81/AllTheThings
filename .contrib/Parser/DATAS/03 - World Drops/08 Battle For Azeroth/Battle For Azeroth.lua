@@ -61,10 +61,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { AD
 			i(154778),	-- Ruptured Plate Vambraces
 		}),
 		filter(CLOAKS, {
-			i(160161),	-- Faithless Skycloak
-			i(154848),	-- Heartsbane Greatcloak
 			i(163953),	-- Jula's Jovial Drape
-			i(159229),	-- Mistfall Greatcloak
 			i(163932),	-- Wolfpelt Greatcloak
 		}),
 		filter(FINGER_F, {
@@ -97,7 +94,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { AD
 		i(163956),	-- Treiya's Shining Pillar
 		i(163968),	-- Yang's Other Recurve
 	}),
-	n(WEAPONS, bubbleDown({["bonusID"] = 4796 }, {	-- [Uncommon -- needs ID's]
+	n(WEAPONS, {	-- [Uncommon -- needs ID's]
 		i(159545),	-- Bleached Bone Club
 		i(159595),	-- Bleached Bone Cutlass
 		i(159508),	-- Bleached Bone Glaive
@@ -217,7 +214,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { AD
 		i(159799),	-- Wintersail Bulwark
 		i(159494),	-- Wintersail Repeater
 		i(159568),	-- Wintersail Staff
-	})),
+	}),
 	n(WEAPONS, {	-- [Poor]
 		i(160937),	-- Arrow-Pocked Aegis
 		i(160935),	-- Backfiring Blunderbuss

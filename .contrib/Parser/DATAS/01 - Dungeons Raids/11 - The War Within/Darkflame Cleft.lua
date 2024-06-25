@@ -3,10 +3,17 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1210, {	-- Darkflame Cleft
-		--["coord"] = { X, Y, THE_RINGING_DEEPS },
+		["coord"] = { 59.6, 21.6, THE_RINGING_DEEPS },
 		["maps"] = { 2303 },	-- Darkflame Cleft
 		["g"] = {
 			i(223061),	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?]
+			n(QUESTS, {
+				q(83154, {	-- Knicknack's Knickknacks
+					--["sourceQuests"] = { x },	-- ?
+					["provider"] = { "n", 225555 },	-- Knicknack
+					["coord"] = { 46.5, 30.3, THE_RINGING_DEEPS },
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2569, {	-- Ol' Waxbeard
 					["crs"] = { 210149 },	-- Ol' Waxbeard
