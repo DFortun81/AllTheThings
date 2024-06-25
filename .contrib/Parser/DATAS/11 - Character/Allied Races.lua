@@ -53,7 +53,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		["u"] = REMOVED_FROM_GAME,
 	}),
 	race(DARKIRON, {
+		-- #if BEFORE 10.1.5
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
+		-- #else
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		-- #endif
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
 			q(51813, {	-- Blackrock Depths
@@ -120,7 +124,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(HIGHMOUNTAIN_TAUREN, {
+		-- #if BEFORE 10.1.5
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
+		-- #else
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		-- #endif
 		["races"] = HORDE_ONLY,
 		["g"] = {
 			q(48066, {	-- A Feast for Our Kin
@@ -253,7 +261,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(KULTIRAN, {
+		-- #if BEFORE 10.1.5
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700A Nation United|r, The Kul Tiran Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
+		-- #else
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		-- #endif
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
 			q(54706, {	-- Made in Kul Tiras
@@ -430,7 +442,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(LIGHTFORGED, {
+		-- #if BEFORE 10.1.5
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
+		-- #else
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		-- #endif
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
 			q(49698, {	-- The Lightforged
@@ -477,7 +493,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(MAGHAR, {
+		-- #if BEFORE 10.1.5
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Ready for War|r, The 8.0 War Campaign.",
+		-- #else
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		-- #endif
 		["races"] = HORDE_ONLY,
 		["g"] = {
 			q(53466, {	-- Vision of Time
@@ -567,7 +587,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(MECHAGNOME, {
+		-- #if BEFORE 10.1.5
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700The Mechagonian Threat|r, The Mechagon Storyline.",
+		-- #else
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		-- #endif
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
 			q(58214, {	-- Urgent Care
@@ -691,7 +715,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(NIGHTBORNE, {
+		-- #if BEFORE 10.1.5
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Insurrection|r, The 7.2 Suramar Campaign.",
+		-- #else
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		-- #endif
 		["races"] = HORDE_ONLY,
 		["g"] = {
 			q(49973, {	-- Thalyssra's Estate
@@ -743,7 +771,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(VOIDELF, {
+		-- #if BEFORE 10.1.5
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
+		-- #else
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		-- #endif
 		["races"] = ALLIANCE_ONLY,
 		["maps"] = { 971 },
 		["g"] = {
@@ -785,11 +817,18 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(VULPERA, {
+		-- #if BEFORE 10.1.5
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed |cFFFFD700Secrets in the Sands|r, The Vol'dun Storyline.",
+		-- #else
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		-- #endif
 		["races"] = HORDE_ONLY,
 		["g"] = {
 			q(53870, {	-- Guests at Grommash Hold
 				["sourceQuests"] = { 50242 },	-- A Choice for Allies (H)
+				-- #if BEFORE 10.1.5
+				["description"] = "Must be exalted with |cFFFFD700Voldunai|r and complete the |cFFFFD700Secrets in the Sands|r achievement.",
+				-- #endif
 				["provider"] = { "n", 133523 },	-- Ji Firepaw
 				["coord"] = { 37.7, 81.1, ORGRIMMAR },
 			}),
@@ -989,7 +1028,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(ZANDALARI, {
+		-- #if BEFORE 10.1.5
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Character|r and completed both |cFFFFD700Zandalar Forever!|r, The Zandalari Campaign and |cFFFFD700Tides of Vengeance|r, The 8.1.5 War Campaign.",
+		-- #else
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
+		-- #endif
 		["races"] = HORDE_ONLY,
 		["g"] = {
 			q(53831, {	-- A Royal Occasion
