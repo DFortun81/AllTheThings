@@ -661,17 +661,11 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							-- #if AFTER CATA
 							{ 85.2, 26.1, STORMWIND_CITY },
-							-- #else
-							{ 76.1, 32.0, STORMWIND_CITY },
-							-- #endif
-							-- #if AFTER CATA
 							{ 60.1, 13.6, BLASTED_LANDS },
-							-- #else
-							{ 64.3, 15.5, BLASTED_LANDS },
-							-- #endif
-							-- #if AFTER CATA
 							{ 54.2, 31.0, DARNASSUS },
 							-- #else
+							{ 76.1, 32.0, STORMWIND_CITY },
+							{ 64.3, 15.5, BLASTED_LANDS },
 							{ 54.4, 13.0, DARNASSUS },
 							-- #endif
 						},
@@ -710,17 +704,11 @@ root(ROOTS.Zones, {
 							-- #endif
 							-- #if AFTER CATA
 							{ 84.6, 24.3, STORMWIND_CITY },
-							-- #else
-							{ 76.3, 29.0, STORMWIND_CITY },
-							-- #endif
-							-- #if AFTER CATA
 							{ 60.9, 20.2, BLASTED_LANDS },
-							-- #else
-							{ 65.2, 22.9, BLASTED_LANDS },
-							-- #endif
-							-- #if AFTER CATA
 							{ 40.7, 73.8, THE_CAPE_OF_STRANGLETHORN },
 							-- #else
+							{ 76.3, 29.0, STORMWIND_CITY },
+							{ 65.2, 22.9, BLASTED_LANDS },
 							{ 26.9, 77.3, STRANGLETHORN_VALE },
 							-- #endif
 						},
@@ -748,13 +736,10 @@ root(ROOTS.Zones, {
 							-- #endif
 							-- #if AFTER CATA
 							{ 85.0, 23.4, STORMWIND_CITY },
-							-- #else
-							{ 76.4, 32.4, STORMWIND_CITY },
-							-- #endif
-							-- #if AFTER CATA
 							{ 38.8, 44.1, NORTHSHIRE_VALLEY },
 							{ 57.4, 45.4, HILLSBRAD_FOOTHILLS },
 							-- #else
+							{ 76.4, 32.4, STORMWIND_CITY },
 							{ 49.5, 39.6, ELWYNN_FOREST },
 							{ 51.3, 58.5, HILLSBRAD_FOOTHILLS },
 							-- #endif
@@ -786,12 +771,9 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							-- #if AFTER CATA
 							{ 67.1, 73.4, NORTHERN_BARRENS },
-							-- #else
-							{ 61.9, 38.7, THE_BARRENS },
-							-- #endif
-							-- #if AFTER CATA
 							{ 39.7, 39.8, DARNASSUS },
 							-- #else
+							{ 61.9, 38.7, THE_BARRENS },
 							{ 34.1, 26.0, DARNASSUS },
 							-- #endif
 							{ 61.9, 57.8, UNDERCITY },
@@ -967,21 +949,15 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							-- #if AFTER CATA
 							{ 85.2, 26.3, STORMWIND_CITY },
-							-- #else
-							{ 76.1, 32.0, STORMWIND_CITY },
-							-- #endif
-							{ 72.1, 48.0, DUSKWOOD },
-							-- #if AFTER CATA
 							{ 54.7, 50.3, DUN_MOROGH },
-							-- #else
-							{ 47.6, 52.0, DUN_MOROGH },
-							-- #endif
-							{ 77.0, 12.4, IRONFORGE },
-							-- #if AFTER CATA
 							{ 57.2, 45.5, HILLSBRAD_FOOTHILLS },
 							-- #else
+							{ 76.1, 32.0, STORMWIND_CITY },
+							{ 47.6, 52.0, DUN_MOROGH },
 							{ 63.7, 20.7, HILLSBRAD_FOOTHILLS },
 							-- #endif
+							{ 72.1, 48.0, DUSKWOOD },
+							{ 77.0, 12.4, IRONFORGE },
 						},
 					}),
 					crit(3783, {	-- The Battle of Grim Batol
@@ -1034,14 +1010,11 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							-- #if AFTER CATA
 							{ 87.1, 35.9, STORMWIND_CITY },
-							-- #else
-							{ 83.0, 36.3, STORMWIND_CITY },
-							-- #endif
-							-- #if AFTER CATA
 							{ 62.5, 16.1, BLASTED_LANDS },
 							{ 26.2, 42.2, REDRIDGE_MOUNTAINS },
 							{ 49.5, 55.4, SWAMP_OF_SORROWS },
 							-- #else
+							{ 83.0, 36.3, STORMWIND_CITY },
 							{ 66.8, 18.3, BLASTED_LANDS },
 							{ 26.8, 45.8, REDRIDGE_MOUNTAINS },
 							{ 47.7, 55.0, SWAMP_OF_SORROWS },
@@ -1126,13 +1099,10 @@ root(ROOTS.Zones, {
 						["coords"] = {
 							-- #if AFTER CATA
 							{ 86.1, 25.5, STORMWIND_CITY },
-							-- #else
-							{ 75.7, 32.0, STORMWIND_CITY },
-							-- #endif
-							-- #if AFTER CATA
 							{ 65.5, 46.7, SOUTHERN_BARRENS },
 							{ 49.2, 55.4, SWAMP_OF_SORROWS },
 							-- #else
+							{ 75.7, 32.0, STORMWIND_CITY },
 							{ 47.6, 55.0, SWAMP_OF_SORROWS },
 							{ 61.9, 54.9, THE_BARRENS },
 							-- #endif
@@ -1273,17 +1243,14 @@ root(ROOTS.Zones, {
 					crit(3802, {	-- War of the Three Hammers
 						["provider"] = { "o", 175739 },
 						["coords"] = {
-							-- #if AFTER CATA
-							{ 32.6, 49.5, MULGORE },
-							-- #else
-							{ 31.6, 49.4, MULGORE },
-							-- #endif
 							{ 75.0, 9.0, IRONFORGE },
 							-- #if AFTER CATA
+							{ 32.6, 49.5, MULGORE },
 							{ 28.9, 41.3, REDRIDGE_MOUNTAINS },
 							{ 50.1, 86.5, SOUTHERN_BARRENS },
 							{ 66.5, 43.5, STORMWIND_CITY },
 							-- #else
+							{ 31.6, 49.4, MULGORE },
 							{ 30.0, 44.7, REDRIDGE_MOUNTAINS },
 							{ 69.6, 41.1, STORMWIND_CITY },
 							{ 49.1, 84.1, THE_BARRENS },
