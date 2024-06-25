@@ -314,7 +314,7 @@ local function CompletionistItemCollectionHelper(sourceID, oldState)
 	if sourceInfo then
 		-- Search ATT for the related sources.
 		-- Show the collection message.
-		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
+		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local searchResults = SearchForField("sourceID", sourceID);
 			if #searchResults > 0 then
 				local firstMatch = searchResults[1];
@@ -361,7 +361,7 @@ local function UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 		local newAppearancesLearned = oldState == 0 and #unlockedSourceIDs or (#unlockedSourceIDs - 1);
 
 		-- Show the collection message if learning this Source actually contributed as a new Unique appearance
-		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
+		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local newCollected = newAppearancesLearned > 0
 			-- Search for the item that actually was unlocked.
 			local firstMatch = SearchForSourceIDQuickly(sourceID);
@@ -879,7 +879,7 @@ app.AddSourceInformation = function(sourceID, info, group)
 			end
 		end
 
-		if app.IsReady and sourceInfo.categoryID > 0 and sourceGroup.missing then
+		if sourceInfo.categoryID > 0 and sourceGroup.missing then
 			-- Do not localize first part of the message, it is for contribs
 			tinsert(info, {
 				left = "Item Source not found in the " .. appName .. " " .. app.Version .. " database.\n" .. L.SOURCE_ID_MISSING,

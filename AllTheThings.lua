@@ -14687,13 +14687,12 @@ local function InitDataCoroutine()
 	-- warning about debug logging in case it sneaks in we can realize quicker
 	app.PrintDebug("NOTE: ATT debug prints enabled!")
 
-	-- finally can say the app is ready
-	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
-	app.IsReady = true;
-	-- app.PrintDebug("ATT is Ready!");
-
 	-- Execute the OnReady handlers.
 	app.HandleEvent("OnReady")
+
+	-- finally can say the app is ready
+	app.IsReady = true;
+	-- app.PrintDebug("ATT is Ready!");
 
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end
