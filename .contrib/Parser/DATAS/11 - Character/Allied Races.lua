@@ -253,7 +253,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(KULTIRAN, {
-		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r e|r.",
+		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
 			q(54706, {	-- Made in Kul Tiras

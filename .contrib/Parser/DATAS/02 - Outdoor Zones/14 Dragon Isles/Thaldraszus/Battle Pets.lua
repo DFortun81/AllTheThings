@@ -28,7 +28,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				pet(3352, {	-- Razortooth Bear Cub (PET!)
 					["description"] = "Rare spawn in place of 'Grizzlefur Cub'.",
-					["coord"] = { 48.4, 56.0, THALDRASZUS },
+					["coords"] = {
+						{ 48.4, 56.0, THALDRASZUS },
+						{ 68.6, 52.0, THALDRASZUS },
+						{ 37.0, 33.0, THE_AZURE_SPAN }, 
+					},
 				}),
 				pet(3336, {	-- Vorquin Runt (PET!)
 					["coord"] = { 48.2, 64.8, THALDRASZUS },
