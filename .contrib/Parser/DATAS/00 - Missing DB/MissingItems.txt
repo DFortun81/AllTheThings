@@ -21849,7 +21849,6 @@ i(92727),	-- Charred Glyph \\ red Glyph
 i(92735),	-- Meng-do's Essence \\ -do's Essence
 i(92736),	-- Gen-Li's Essence \\ Li's Essence
 i(92739),	-- Misplaced Keg \\ laced Keg
-i(92741),	-- Flawless Battle-Stone \\ less Battle-Stone
 i(92742),	-- Polished Battle-Stone \\ shed Battle-Stone
 i(92743),	-- Krasari Iron \\ ari Iron
 i(92745),	-- Liquid Fire \\ id Fire
