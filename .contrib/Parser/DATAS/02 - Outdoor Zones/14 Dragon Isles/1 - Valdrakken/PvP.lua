@@ -1471,6 +1471,30 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity (RECIPE!)
 							i(203378),	-- Technique: Crimson Combatant's Medallion (RECIPE!)
 						})),
+						filter(RECIPES, sharedData({
+							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
+							["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+						}, {
+							i(204169),	-- Technique: Obsidian Combatant's Emblem (RECIPE!)
+							i(204168),	-- Technique: Obsidian Combatant's Insignia of Alacrity (RECIPE!)
+							i(204167),	-- Technique: Obsidian Combatant's Medallion (RECIPE!)
+						})),
+						filter(RECIPES, sharedData({
+							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
+							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						}, {
+							i(208312),	-- Technique: Verdant Combatant's Emblem (RECIPE!)
+							i(208311),	-- Technique: Verdant Combatant's Insignia of Alacrity (RECIPE!)
+							i(208310),	-- Technique: Verdant Combatant's Medallion (RECIPE!)
+						})),
+						filter(RECIPES, sharedData({
+							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+						}, {
+							i(211611),	-- Technique: Draconic Combatant's Emblem (RECIPE!)
+							i(211610),	-- Technique: Draconic Combatant's Insignia of Alacrity (RECIPE!)
+							i(211609),	-- Technique: Draconic Combatant's Medallion (RECIPE!)
+						})),
 					},
 				}),
 				n(199601, {	-- Seltherex

@@ -351,6 +351,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 					["isBounty"] = true,
 					-- #endif
 				}),
+				i(113718),	-- Ravaged Leather Chestguard	— 03/31/24
 				i(113724),	-- Ravaged Leather Gauntlets	— 01/18/22
 				i(113700, {	-- Ravaged Leather Helm
 					["timeline"] = { REMOVED_7_3_5 },
