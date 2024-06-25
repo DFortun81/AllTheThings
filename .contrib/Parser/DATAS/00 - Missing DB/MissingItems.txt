@@ -21213,7 +21213,6 @@ i(85571),	-- Venomous Stinger \\ mous Stinger
 i(85572),	-- Scarab Wing \\ ab Wing
 i(85573),	-- Dreadshade \\ dshade
 i(85581),	-- Shado-Pan Torch \\ o-Pan Torch
-i(85582),	-- Shao-Tien Cage Key \\ -Tien Cage Key
 i(85583),	-- Needle Mushrooms \\ le Mushrooms
 i(85584),	-- Silkworm Pupa \\ worm Pupa
 i(85585),	-- Red Beans \\ Beans
