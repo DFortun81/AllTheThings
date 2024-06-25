@@ -34,8 +34,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(224074),	-- Opal-Mining Tools (QI!)
 					}
 				}),
-				q(82235, {	-- Excavation Extravaganza
-					--["coord"] = { 63.1, 76.2, ISLE_OF_DORN },	-- require more accurate coords from popup
+				q(82225, {	-- Excavation Extravaganza
+					["coord"] = { 61.9, 71.2, ISLE_OF_DORN },
 				}),
 				q(81639, {	-- Honey Thieving Nerubians
 					["coord"] = { 78.9, 37.9, ISLE_OF_DORN },
@@ -103,6 +103,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["g"] = {
 						i(219525),	-- Globe of Nourishment (QI!)
 					},
+				}),
+				q(81615, {	-- Wick Points
+					["coord"] = { 62.4, 45.1, ISLE_OF_DORN },
 				}),
 				--
 				q(82355, {	-- Special Assignment: Cinderbee Surge

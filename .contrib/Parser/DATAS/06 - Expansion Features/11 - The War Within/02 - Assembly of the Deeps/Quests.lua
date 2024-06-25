@@ -7,7 +7,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			{		-- RENOWN 1 --
 			}, {	-- RENOWN 2 --
 			}, {	-- RENOWN 3 --
+				q(82366, {	-- A Flickering Candle
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+					["g"] = {
+						i(226146),	-- Handful of Humming Shinies
+					},
+				}),
 			}, {	-- RENOWN 4 --
+				q(82367, {	-- Earth-Encrusted Gem
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+					["g"] = {
+						i(223951),	-- Earth-Encrusted Gem
+					},
+				}),
 			}, {	-- RENOWN 5 --
 			}, {	-- RENOWN 6 --
 			}, {	-- RENOWN 7 --

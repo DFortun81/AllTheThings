@@ -1993,7 +1993,6 @@ root(ROOTS.Unsorted, {
 			i(220221),	-- Void Pebble
 			i(220222),	-- Everburning Lump
 			i(220225),	-- Tattered Standard
-			i(220227),	-- Pristine Ventral Fin
 			i(220232),	-- Worm-Eaten Burlap Robe
 			i(220233),	-- Extinguished Icon
 			i(220235),	-- Electrified Teeth
@@ -3726,7 +3725,6 @@ root(ROOTS.Unsorted, {
 			i(225797),	-- The Fifty Rules of Commerce, Fourth Edition
 			i(225798),	-- Intricately Carved Barter Boulder
 			i(225799),	-- Dazzling Spanner
-			i(225800),	-- Stone Singing Bowl
 			i(225805),	-- Ornate Box of Seasonings
 			i(225806),	-- Crystal Inkwell
 			i(225809),	-- Oiled Pigment Pouch
@@ -3875,7 +3873,6 @@ root(ROOTS.Unsorted, {
 			i(226139),	-- Arathi Officer's Gauntlets
 			i(226140),	-- The Flame's Remembrance
 			i(226141),	-- Airship Captain's Lost Pendant
-			i(226146),	-- Handful of Humming Shinies
 			i(226147),	-- Bunch of Brave Rocks
 			i(226148),	-- Wax-sealed Weathered Crests
 			i(226149),	-- Pile of Humming Shinies

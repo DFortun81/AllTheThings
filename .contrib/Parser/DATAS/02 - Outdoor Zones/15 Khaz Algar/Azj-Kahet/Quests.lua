@@ -1036,6 +1036,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
 	q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
 	q(81627),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
+	q(81599),	-- [DNT] Weaver - Level 3 Unlock (spellID 443675)
 	--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
 	q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
 	q(82646),	-- pop questIDs: 81492 (General), 81499 (?), 81506 (?)
@@ -1072,4 +1073,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Vizier
 	--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID 81480 (Wild Reagents: Maddening Deep)
 	-- Missing 11 total quest data/givers, 81505 81498 81497 81502 81482 (and 5 more)
+	-- Special Assignment unlocks tracker
+	q(82159),	-- Special Assignment: A Pound of Cure (but it is Bombs from Behind?)
 });

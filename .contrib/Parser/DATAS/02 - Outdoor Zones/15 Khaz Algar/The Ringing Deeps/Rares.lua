@@ -109,6 +109,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223373),	-- Treads of Shallow Waters (alpha data)
 				},
 			}),
+			n(220268, {	-- Trungal
+				["description"] = "Kill roots of trungal on way to him to make him jump out of terrain",
+				["coord"] = { 71.8, 46.3, THE_RINGING_DEEPS },
+				["questID"] = 80574,	-- in addition 84043
+				["g"] = {
+					--
+				},
+			}),
 		})),
 	}),
 })));

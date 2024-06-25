@@ -1011,6 +1011,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(79257, {	-- Grotto Grievances
 					["coord"] = { 54.6, 71.2, THE_RINGING_DEEPS },
 				}),
+				q(81981, {	-- What Army?
+					["coord"] = { 70.7, 39.8, THE_RINGING_DEEPS },
+				}),
 			}),
 			--
 			-- Rares / Bonus Objectives / One times
@@ -1032,14 +1035,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(80506, {	-- Basilisk Matriarch
 				["provider"] = { "n", 220270 },	-- Basilisk Matriarch
 				["coord"] = { 52.7, 27.8, THE_RINGING_DEEPS },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			q(80574, {	-- Trungal
-				["description"] = "Kill small things on way to him to make him jump out of terrain",
-				["provider"] = { "n", 220268 },	-- Trungal
-				["coord"] = { 71.8, 46.3, THE_RINGING_DEEPS },
 				["g"] = {
 					-- no loot
 				},

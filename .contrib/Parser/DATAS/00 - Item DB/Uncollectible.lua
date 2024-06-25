@@ -1856,6 +1856,7 @@ i(225787);	-- Pheromone-Covered Missive
 i(220283);	-- Pileus Puff
 i(220247);	-- Polishing Powder
 i(220258);	-- Rotting Bones
+i(220227);	-- Pristine Ventral Fin
 i(220257);	-- Pulsing Pustules
 i(220230);	-- Punctured Intestine
 i(220261);	-- Pungent Mushroom
@@ -1877,6 +1878,7 @@ i(225810);	-- Smoked Visor
 i(220268);	-- Spiraled Horn
 i(226692);	-- Splintered Stone
 i(213262);	-- Stained Glass Fragment
+i(225800);	-- Stone Singing Bowl
 i(220363);	-- Straw-Stuffed Hat
 i(220292);	-- Stretched Wing
 i(225821);	-- Tattered Theater Hood
