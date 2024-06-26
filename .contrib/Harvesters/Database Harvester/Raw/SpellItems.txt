@@ -2500,6 +2500,38 @@
 7541@@@Void Plague
 7542@@@Occult Poison I
 7555@@@Defense Specialization
+1.15.3.55244
+6724@@@Damaged Rune
+6731@@@Damaged Rune
+6851@@@Damaged Rune
+7257@@@Improved Swipe
+7258@@@Tree of Life
+7259@@@Starfall
+7261@@@Fresh Meat
+7262@@@Sudden Death
+7263@@@Shockwave
+7264@@@Resourcefulness
+7265@@@Improved Volley
+7266@@@Hit and Run
+7267@@@Feral Spirit
+7268@@@Storm, Earth, and Fire
+7269@@@Shield of Righteousness
+7270@@@Vindicator
+7271@@@Righteous Vengeance
+7272@@@Frozen Orb
+7273@@@Decimation
+7274@@@Mark of Chaos
+7275@@@Infernal Armor
+7560@@@Hot Streak
+7561@@@Rewind Time
+7562@@@Divine Light
+7563@@@+15 Fire Resistance
+7564@@@+20 Fire Resistance
+7565@@@+101 HP
+7566@@@Frostbrand 5
+7567@@@Flametongue 6
+7568@@@Rockbiter 7
+7569@@@Windfury 4
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)

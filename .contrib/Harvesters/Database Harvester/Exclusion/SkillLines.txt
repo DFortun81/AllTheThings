@@ -566,3 +566,4 @@
 2884@@@Language: Earthen
 2895@@@Racial - Earthen
 2902@@@All - Warbands
+2904@@@Astral Perfect Victory
