@@ -384,7 +384,7 @@ WRATH_ENGINEERING = applyclassicphase(WRATH_PHASE_ONE, bubbleDown({ ["timeline"]
 		r(67839, {["timeline"] = {ADDED_3_2_0}}),	-- Mind Amplification Dish
 		r(55016),	-- Nitro Boosts
 		r(63770, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Reticulated Armor Webbing
-		r(63765, {["timeline"] = {ADDED_3_0_3, REMOVED_6_0_2}}),	-- Springy Arachnoweave
+		r(63765, {["timeline"] = {ADDED_3_0_3, REMOVED_4_0_1}}),	-- Springy Arachnoweave
 	}),
 	filter(MISC, {
 		r(56461),	-- Bladed Pickaxe
