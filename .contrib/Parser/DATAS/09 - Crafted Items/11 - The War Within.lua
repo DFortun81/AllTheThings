@@ -688,14 +688,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		n(WEAPONS, {
 		}),
 	}),
+	--]]
 	prof(FISHING, {
+		i(220143),	-- Dornish Pike
+		i(222533),	-- Goldengill Trout
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",
 			}),
 		}),
 	}),
-	--]]
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering
 			i(210808),	-- Arathor's Spear+

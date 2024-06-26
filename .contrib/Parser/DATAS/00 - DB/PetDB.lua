@@ -3674,7 +3674,6 @@ i(0, 3340);			-- Blue Dragon Whelp
 i(0, 3343);			-- Bronze Dragon Whelp
 i(0, 3361);			-- Diamond Crab
 i(0, 3341);			-- Red Dragon Whelp
-i(0, 3362);			-- Sapphire Crab
 i(0, 3364);			-- Striped Snakebiter
 i(0, 3257);			-- Test Beetle
 i(0, 3308);			-- Time-Lost Duckling
@@ -4098,7 +4097,10 @@ i(221548, 4536);	-- Blightbud
 i(224101, 4586);	-- Brown Leafbug
 i(223625, 4570);	-- Cinderwold Sizzlestinger
 i(224646, 4598);	-- Coppers
+i(224549, 4594);	-- Dalaran Sewer Turtle
+i(224259, 4590);	-- Flash
 i(222973, 4492);	-- Fringe
+i(224261, 4589);	-- Gale
 i(223623, 4576);	-- Guacamole
 i(222968, 4476);	-- Itchbite
 i(222972, 4491);	-- Jump Jump
@@ -4110,8 +4112,10 @@ i(218245, 4451);	-- Remembered Construct
 i(218086, 4450);	-- Remembered Riverpaw
 i(218246, 4452);	-- Remembered Spawn
 i(222978, 4546);	-- Sandstone Ramolith
+i(224579, 3362);	-- Sapphire Crab
 i(221494, 4495);	-- Skippy
 i(221811, 4524);	-- Starkstripe Hopper
+i(224260, 4591);	-- Thundo
 i(221849, 4465);	-- Vanilla
 i(221761, 4511);	-- Venomwing
 i(224760, 4597);	-- Wobbles
@@ -4139,10 +4143,8 @@ i(226104, 4602);	-- Claudius
 i(222979, 4545);	-- Clay Stonecharger
 i(224766, 4596);	-- Faithful Dog
 i(222964, 4520);	-- Fathom Incher
-i(224259, 4590);	-- Flash
 i(221850, 4464);	-- Freshly Webbed Kebab /BEAN
 i(222970, 4490);	-- Fuzzy
-i(224261, 4589);	-- Gale
 i(220771, 4467);	-- Hallowed Glowfly
 i(221195, 4458);	-- Illskitter
 i(225934, 4500);	-- Lil' Bonechewer
@@ -4150,14 +4152,12 @@ i(221546, 4534);	-- Nightfarm Growthling
 i(223802, 4581);	-- Purple Stagshell
 i(225935, 4582);	-- Rak-Ush Battleshell
 i(221759, 4512);	-- Sceaduthax
-i(224549, 4594);	-- Dalaran Sewer Turtle
 i(221819, 4472);	-- Shadowbog Hopper
 i(222974, 4543);	-- Sir Shady Mrgglton Junior
 i(222980, 4542);	-- Slim
 i(223624, 4575);	-- Sneef
 i(222966, 4473);	-- Spinner
 i(220782, 4462);	-- Thunder
-i(224260, 4591);	-- Thundo
 i(221848, 4463);	-- Tiberius
 i(225337, 4506);	-- Violet Sporbit
 i(221495, 4497);	-- Waddles

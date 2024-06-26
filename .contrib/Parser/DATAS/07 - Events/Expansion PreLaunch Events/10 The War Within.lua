@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 local RESIDUAL_MEMORIES = 3089;
-root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_0_0, REMOVED_11_0_0_LAUNCH } }, {
+root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_0_0, REMOVED_11_0_1_LAUNCH } }, {
 	expansion(EXPANSION.TWW, {
 		n(ACHIEVEMENTS, {
 			--

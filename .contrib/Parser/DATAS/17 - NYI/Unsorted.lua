@@ -19,10 +19,8 @@ root(ROOTS.Unsorted, {
 				i(222979),	-- Clay Stonecharger (PET!)
 				i(224766),	-- Faithful Dog (PET!) [These is wowhead guide!]
 				i(222964),	-- Fathom Incher (PET!)
-				i(224259),	-- Flash (PET!)
 				i(221850),	-- Freshly Webbed Kebab /Bean (PET!)
 				i(222970),	-- Fuzzy (PET!)
-				i(224261),	-- Gale (PET!)
 				i(220771),	-- Hallowed Glowfly (PET!)
 				i(221195),	-- Illskitter (PET!)
 				i(225934),	-- Lil' Bonechewer (PET!)
@@ -36,7 +34,6 @@ root(ROOTS.Unsorted, {
 				i(223624),	-- Sneef (PET!)
 				i(222966),	-- Spinner (PET!)
 				i(220782),	-- Thunder (PET!)
-				i(224260),	-- Thundo (PET!)
 				i(221848),	-- Tiberius (PET!)
 				i(225337),	-- Violet Sporbit (PET!)
 				i(221495),	-- Waddles (PET!)
@@ -53,7 +50,6 @@ root(ROOTS.Unsorted, {
 				i(221762),	-- Clot (PET!) (Frenzied Bloodtick)
 				i(221022),	-- Cowboy Bee[DNT] (PET!) (Bop???)
 				i(223626),	-- Embersting (PET!) (Couldnt find)
-				i(224579),	-- Sapphire Crab (PET!) (Sapphire Crab, might be the one from DF 10.0.0)
 				i(222975),	-- Umbral Amalgam [DNT] (PET!) (Couldnt find)
 			}),
 			filter(MOUNTS, {
@@ -979,7 +975,6 @@ root(ROOTS.Unsorted, {
 				i(215147),	-- Beautification Iris (TOY!)
 				i(218310),	-- Box of Puntables (TOY!)
 				i(221962),	-- Defective Escape Pod (TOY!)
-				i(224585),	-- Hanna's Locket (TOY!)
 				i(224251),	-- Memory Chord (TOY!)
 				i(215145),	-- Remembrance Stone (TOY!)
 				i(224554),	-- Silver Linin' Scepter (TOY!)
@@ -1942,7 +1937,6 @@ root(ROOTS.Unsorted, {
 			i(220140),	-- Goldengill Trout
 			i(220141),	-- Specular Rainbowfish
 			i(220142),	-- Quiet River Bass
-			i(220143),	-- Dornish Pike
 			i(220144),	-- Roaring Anglerseeker
 			i(220145),	-- Arathor Hammerfish
 			i(220146),	-- Regal Dottyback
@@ -2657,7 +2651,6 @@ root(ROOTS.Unsorted, {
 			i(222530),	-- Quiet River Bass
 			i(222531),	-- Arathor Hammerfish
 			i(222532),	-- Azj-Kahet Slum Shark
-			i(222533),	-- Goldengill Trout
 			i(222534),	-- Nibbling Minnow
 			i(222535),	-- Pale Huskfish
 			i(222536),	-- Regal Dottyback
@@ -4086,7 +4079,6 @@ root(ROOTS.Unsorted, {
 			i(223091),	-- Design: Forger's Font Inspector
 			i(223092),	-- Design: Novelist's Specs
 			i(223267),	-- Swarmite Skyhunter
-			i(223484),	-- Kobold Mastermind's "Pivel"
 			i(223510),	-- Delver's Dirigible Schematic: Template
 			i(223646),	-- Memory of the Eastern Kingdoms
 			i(224768),	-- Delver's Dirigible Schematic: Wing-Mounted Propeller

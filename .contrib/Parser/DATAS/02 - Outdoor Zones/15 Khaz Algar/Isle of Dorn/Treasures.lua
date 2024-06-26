@@ -22,10 +22,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			n(212928, {	-- Dalaran Sewer Turtle
 				["coord"] = { 38.0, 79.5, ISLE_OF_DORN },
-				--["cost"] = { "i", xx, 5 },	-- Dornish Pike x5
-				--["g"] = {
-				--	?
-				--},
+				--["questID"] = ,
+				["cost"] = {
+					{"i", 220143, 5},	-- 5x Dornish Pike
+					{"i", 222533, 1},	-- 1x Goldengill Trout
+				},
 			}),
 			o(444065, {	-- Elemental Geode
 				--["questID"] = x,	-- no qid
@@ -40,6 +41,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(221504),	-- Elemental Pearl
 				},
 			}),
+			n(222940, {	-- Freysworn Letitia
+				["description"] = "Find 6 Pearlescent Shellcrab around Isle of Dorn",
+				["coord"] = { 48.6, 30.0, ISLE_OF_DORN },
+				["g"] = {
+					i(224185),	-- Crab-Guiding Branch
+					n(222941, {	-- Pearlescent Shellcrab
+						["coords"] = {
+							{ 50.7, 70.6, ISLE_OF_DORN },
+							{ 74.9, 49.4, ISLE_OF_DORN },
+							{ 70.8, 20.0, ISLE_OF_DORN },
+							{ 41.9, 27.0, ISLE_OF_DORN },
+							{ 19.7, 58.4, ISLE_OF_DORN },
+							{ 38.3, 42.0, ISLE_OF_DORN },
+						},
+					}),
+					o(443318, {	-- Tree's Treasure
+						["questID"] = 83242,
+						["g"] = {
+							i(224585),	-- Hanna's Locket (TOY!)
+						},
+					}),
+				},
+			}),
 			o(441183, {	-- Galan's Edict (achievement crit)
 				["coord"] = { 37.3, 52.5, ISLE_OF_DORN },
 				["questID"] = 82038,
@@ -52,42 +76,54 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(444773, {	-- Jade Pearl
-				["questID"] = 82287,
 				["coord"] = { 77.2, 24.5, ISLE_OF_DORN },
+				["questID"] = 82287,
 				["g"] = {
-					--gray item 500g
 					i(223280),	-- Jade Pearl
 				},
 			}),
-			o(444899, {	-- Kobold Axe (vignette name - Forgotten Axe)
-				["questID"] = 82325,
+			o(444899, {	-- Kobold Pickaxe
 				["coord"] = { 62.6, 43.3, ISLE_OF_DORN },
+				["questID"] = 82325,
 				["g"] = {
-					i(223484),	-- Kobold Mastermind's Pivel
+					i(223484),	-- Kobold Mastermind's "Pivel"
+				},
+			}),
+			n(223104, {	-- Lionel
+				["crs"] = { 223104 },	-- Lionel (223143)
+				["coord"] = { 40.6, 59.9, ISLE_OF_DORN },
+				["questID"] = 82212,	-- Weak Lionfish
+				["cost"] = {{"i", 222906, 5}},	-- 5x Plump Snapcrab
+				["g"] = {
+					o(444022, {	-- Magical Treasure Chest
+						["questID"] = 83243,
+						["g"] = {
+							i(224579),	-- Sapphire Crab (PET!)
+						},
+					}),
 				},
 			}),
 			o(443638, {	-- Mosswool Flower
 				["description"] = "Interact with Lost Mosswool 3 times to spawn this treasure. Treasure appears with some delay.",
-				["questID"] = 83246,	-- or 82251 since both fire at same time, but 82251 has 'Tracking Quest' name
+				["questID"] = 83246,
 				["coord"] = { 59.7, 28.7, ISLE_OF_DORN },
 				["g"] = {
+					i(224450),	-- Lil' Moss Rosy (PET!)
 					n(222956, {	-- Lost Mosswool
 						["description"] = "1st Mosswool spot",
-						["questID"] = 82145,	-- technically, it is legit quest that started after player touch first mosswool
+						["questID"] = 82145,	-- The Lost Mosswool
 						["coord"] = { 59.6, 24.6, ISLE_OF_DORN },
 					}),
 					n(222963, {	-- Lost Mosswool
 						["description"] = "2nd Mosswool spot",
-						--["questID"] = x,	-- didn't fire questID
+						["questID"] = 82145,	-- The Lost Mosswool
 						["coord"] = { 59.1, 27.1, ISLE_OF_DORN },
 					}),
 					n(222965, {	-- Lost Mosswool
 						["description"] = "3rd Mosswool spot",
-						--["questID"] = ,	-- complete 82145
+						["questID"] = 82145,	-- The Lost Mosswool
 						["coord"] = { 59.7, 28.7, ISLE_OF_DORN },
 					}),
-					--
-					i(224450),	-- Lil' Moss Rosy (PET!)
 				},
 			}),
 			o(444894, {	-- Opal Lily
@@ -95,33 +131,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 82326,
 				["coord"] = { 48.9, 60.9, ISLE_OF_DORN },
 			}),
-			n(222941, {	-- Pearlescent Shellcrab
-				--?
-				["coord"] = { 48.6, 30.1, ISLE_OF_DORN },
-				--["questID"] = ,
-				["g"] = {
-					i(224185),	-- Crab-Guiding Branch
-				},
-			}),
-
 			o(441223, {	-- Stone of The Unbound (achievement crit)
 				["coord"] = { 44.1, 30.1, ISLE_OF_DORN },
 				["questID"] = 82046,
 			}),
-			o(444137, {	-- Thak's Treasure
-				["coord"] = { 36.9, 42.2, ISLE_OF_DORN },
-				["questID"] = 82246,
+			n(223227, {	-- One-Eyed Thak
+				["crs"] = { 223247 },	-- One-Eyed Thak
+				["coords"] = {
+					{ 38.1, 43.5, ISLE_OF_DORN },
+					{ 36.9, 42.3, ISLE_OF_DORN },
+				},
+				["questID"] = 82245,	-- Friendly Thak
 				["g"] = {
-					n(223227, {	-- One-Eyed Thak
-						["coord"] = { 38.1, 43.5, ISLE_OF_DORN },
-						["questID"] = 82245,	-- Friendly Thak
+					o(444137, {	-- Thak's Treasure
+						["coord"] = { 36.9, 42.2, ISLE_OF_DORN },
+						["questID"] = 82246,
 					}),
-					n(223247, {	-- One-Eyed Thak
-						["coord"] = { 36.9, 42.3, ISLE_OF_DORN },
-						--["questID"] = 82245,	-- Friendly Thak, flag as completed
-					}),
-					--
-					--some rep and two jc gems
 				},
 			}),
 			o(441231, {	-- Titan Console (achievement crit)
@@ -134,8 +159,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["cost"] = {{"i", 221550, 1}},	-- 1x Boskroot Cap
 				["g"] = {
 					o(444233, {	-- Mushroom Cap
-						q(82253),
-						q(83245), -- Both Fired.
+						["questID"] = 83245,
 					}),
 				},
 			}),
@@ -167,25 +191,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(224290),	-- Storm Defender's Axe
 				},
 			}),
-			--[[
-			o(xx, {	-- ? // possibly move to special?
-				--["description"] = "Interact with Lost Mosswool 3 times to spawn this treasure",
-				--["questID"] = x,
-				["coord"] = { 37.7, 62.9, ISLE_OF_DORN },
-				["g"] = {
-					n(223104, {	-- Lionel
-						["description"] = "Interact with fish and throw it into water",
-						["questID"] = 82212,	-- Weak Lionfish
-						["coord"] = { 37.7, 62.9, ISLE_OF_DORN },
-					}),
-					n(223143, {	-- Lionel
-						["description"] = "Give fish 'a good meal'",	-- idk
-						--["questID"] = x,	-- Weak Lionfish
-						["coord"] = { 37.8, 62.8, ISLE_OF_DORN },
-					}),
-				},
-			}),
-			--]]
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
+	m(ISLE_OF_DORN, {
+		q(82227),	-- Extra HQT: Magical Treasure Chest
+		q(82253),	-- Extra HQT: Mushroom Cap
+		q(82251),	-- Extra HQT: Mosswool Flower
+	}),
+}));
