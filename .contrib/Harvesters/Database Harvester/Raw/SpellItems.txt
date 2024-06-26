@@ -12246,3 +12246,7 @@
 7371@@@+$k1 Ingenuity |A:Professions-ChatIcon-Quality-Tier1:20:20|a
 7372@@@+$k1 Ingenuity |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 7373@@@+$k1 Ingenuity |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+11.0.0.55288
+7446@@@Oathsworn's Tenacity |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7447@@@Oathsworn's Tenacity |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7448@@@Oathsworn's Tenacity |A:Professions-ChatIcon-Quality-Tier3:20:20|a
