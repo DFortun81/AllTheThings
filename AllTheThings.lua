@@ -6893,15 +6893,22 @@ local function UpdateGroup(group, parent)
 	-- if debug then print("UG",group.hash,parent and parent.hash) end
 
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
-	local valid;
+	-- Things which are determined to be a cost/upgrade for something else which meets user filters will
+	-- be shown anyway, so don't need to undergo a filtering pass
+	local valid = group.isCost or group.isUpgrade
+	if valid then
+		-- app.PrintDebug("Pre-valid group as from cost/upgrade",group.isCost,group.isUpgrade,app:SearchLink(group))
+	end
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
 	-- so need to verify filtering based on that instead of only itself
-	if group.sourceParent then
-		valid = RecursiveGroupRequirementsFilter(group);
-		-- if debug then print("UG.RGRF",valid,"=>",group.sourceParent.hash) end
-	else
-		valid = GroupFilter(group);
-		-- if debug then print("UG.GF",valid) end
+	if not valid then
+		if group.sourceParent then
+			valid = RecursiveGroupRequirementsFilter(group);
+			-- if debug then print("UG.RGRF",valid,"=>",group.sourceParent.hash) end
+		else
+			valid = GroupFilter(group);
+			-- if debug then print("UG.GF",valid) end
+		end
 	end
 
 	if valid then
