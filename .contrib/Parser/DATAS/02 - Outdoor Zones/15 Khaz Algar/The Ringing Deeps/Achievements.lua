@@ -78,7 +78,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["sourceQuest"] = 79327,	-- The Glittering Shard
 				}),
 				crit(69491, {	-- Abysmal Extraction
-					["sourceQuest"] = 83162,	-- The Glittering Shard
+					-- Remove when the quest below is uncommented
+					["_noautomation"] = true,
+					--["sourceQuest"] = 83162,	-- Put it Back, Put it Back!
 				}),
 				crit(69492, {	-- Revenge in the Rumbling Wastes
 					["sourceQuest"] = 81672,	-- In a Pinch
