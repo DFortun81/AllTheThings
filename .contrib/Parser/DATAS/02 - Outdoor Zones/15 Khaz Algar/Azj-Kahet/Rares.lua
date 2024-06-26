@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			n(214151, {	-- Ahg'zagall
 				["coord"] = { 40.0, 47.3, AZJ_KAHET },
-				["questID"] = 81698,
+				["questID"] = 81698,	-- 78905 on 80s 2nd character??
 				["g"] = {
 					i(223375),	-- Clattering Chitin Necklace
 				},

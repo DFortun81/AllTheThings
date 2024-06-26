@@ -44,6 +44,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77723),	-- Level 8
 		q(77724),	-- Level 9
 		--q(77727),	-- Level 10 (was already attached to achievement 40455 (Buddy System), but I not sure where it grab it from?)
+		q(77728),	-- Level 11
 	}),
 	m(2269, {	-- Earthcrawl Mines
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
@@ -200,7 +201,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 47.7, 83.0, 2251 },
 					["questID"] = 83456,
 				}),
-				-- opened with coffer key, unsure if it is limited per week or qid per dungeon
 				o(413590, {	-- Bountiful Coffer
 					["coord"] = { 45.3, 95.3, 2251 },
 					["questID"] = 83319,
@@ -320,6 +320,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	m(2347, {	-- The Spiral Weave
 		["coord"] = { 46.6, 25.7, AZJ_KAHET },
 		["g"] = {
+			i(216772),	-- Whispering Explosives (QI!)
 			n(ACHIEVEMENTS, {
 				ach(40814),	-- Leave No Treasure Unfound: The Spiral Weave
 			}),
@@ -329,6 +330,22 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 46.0, 46.4, 2347 },
 					["questID"] = 83681,
 				}),
+				o(455531, {	-- Sturdy Chest
+					["coord"] = { 50.0, 46.2, 2347 },
+					["questID"] = 83649,
+				}),
+				o(455506, {	-- Sturdy Chest
+					["coord"] = { 36.3, 10.5, 2347 },
+					["questID"] = 83661,
+				}),
+				-- same objectID as other chest
+				--o(413590, {	-- Bountiful Coffer
+				--	["coord"] = { 48.2, 48.2, 2347 },
+				--	["questID"] = 83320,
+				--	["g"] = {
+				--		i(220520),	-- Radiant Echo (TODO: remove when more nice source gonna be found out)
+				--	},
+				--}),
 			}),
 		},
 	}),

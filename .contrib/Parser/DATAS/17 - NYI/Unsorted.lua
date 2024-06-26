@@ -878,7 +878,6 @@ root(ROOTS.Unsorted, {
 				i(216528),	-- Faded Supply Chest Key
 				i(216603),	-- Boots of the Light
 				i(216708),	-- Holy Candle
-				i(216772),	-- Whispering Explosives \\ Explosives
 				i(216982),	-- Spy List
 				i(217012),	-- Novice Actor's Chest
 				i(217013),	-- Expert Actor's Chest
