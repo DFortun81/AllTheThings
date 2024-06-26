@@ -1537,7 +1537,7 @@ root(ROOTS.Zones, {
 				}),
 				n(REWARDS, {
 					i(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
-						["description"] = "This bag is exclusive to the Crocolisk in the City Daily Quest.",
+						["description"] = "This bag is exclusive to the daily quest 'Crocolisk in the City'.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							i(34828),	-- Antique Silver Cufflinks
