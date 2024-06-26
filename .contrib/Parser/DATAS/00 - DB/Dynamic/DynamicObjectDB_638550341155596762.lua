@@ -1,0 +1,61 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[443318] = {
+		readable = "Tree's Treasure",
+		text = {
+			en = "Tree's Treasure",
+			es = "Tree's Treasure",
+			de = "Tree's Treasure",
+			fr = "Tree's Treasure",
+			it = "Tree's Treasure",
+			pt = "Tree's Treasure",
+			ru = "Tree's Treasure",
+			ko = "Tree's Treasure",
+			cn = "Tree's Treasure",
+		},
+	},
+	[444022] = {
+		readable = "Magical Treasure Chest",
+		model = 1526090,
+		text = {
+			en = "Magical Treasure Chest",
+			es = "Magical Treasure Chest",
+			de = "Magical Treasure Chest",
+			fr = "Magical Treasure Chest",
+			it = "Magical Treasure Chest",
+			pt = "Magical Treasure Chest",
+			ru = "Magical Treasure Chest",
+			ko = "Magical Treasure Chest",
+			cn = "Magical Treasure Chest",
+		},
+	},
+	[444354] = {
+		readable = "Turtle's Thanks",
+		text = {
+			en = "Turtle's Thanks",
+			es = "Turtle's Thanks",
+			de = "Turtle's Thanks",
+			fr = "Turtle's Thanks",
+			it = "Turtle's Thanks",
+			pt = "Turtle's Thanks",
+			ru = "Turtle's Thanks",
+			ko = "Turtle's Thanks",
+			cn = "Turtle's Thanks",
+		},
+	},
+	[456006] = {
+		readable = "Animated Enchanting Dust",
+		model = 1310395,
+		text = {
+			en = "Animated Enchanting Dust",
+			es = "Animated Enchanting Dust",
+			de = "Animated Enchanting Dust",
+			fr = "Animated Enchanting Dust",
+			it = "Animated Enchanting Dust",
+			pt = "Animated Enchanting Dust",
+			ru = "Animated Enchanting Dust",
+			ko = "Animated Enchanting Dust",
+			cn = "Animated Enchanting Dust",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

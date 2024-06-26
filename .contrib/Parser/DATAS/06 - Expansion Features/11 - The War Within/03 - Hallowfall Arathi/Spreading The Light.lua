@@ -11,6 +11,13 @@ SPREADING_THE_LIGHT = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(HALLOWFALL_ARATHI, {
 		n(SPREADING_THE_LIGHT, {
+			n(ACHIEVEMENTS, {
+				-- INFO: Should auto-fill with quests as they are sourced in ATT
+				ach(40308),		-- Beacon of Hope
+				ach(40313),		-- Igniting the Keyflames
+				ach(40311),		-- Sharing the Light
+				ach(40312),		-- Starting the Flames
+			}),
 		}),
 	}),
 })));
