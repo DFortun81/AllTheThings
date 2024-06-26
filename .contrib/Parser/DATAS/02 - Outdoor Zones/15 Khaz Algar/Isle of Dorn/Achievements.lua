@@ -61,9 +61,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["sourceQuest"] = 78574,	-- Boss of the Bosk
 				}),
 				crit(67055, {	-- Behind Closed Doors
-					-- Remove when the quest below is uncommented
-					["_noautomation"] = true,
-					--["sourceQuest"] = 79530,	-- TODO: quest name (could be HQT?)
+					["sourceQuest"] = 79530,	-- Bad Business
 				}),
 				crit(67059, {	-- Seven Soldiers
 					["sourceQuest"] = 78999,	-- Heart of a Hero

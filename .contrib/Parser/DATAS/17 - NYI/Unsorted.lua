@@ -914,7 +914,6 @@ root(ROOTS.Unsorted, {
 				i(211481),	-- Stomping Shoes \\ Stompin' Shoes
 				i(211797),	-- Expedition Map
 				i(211861),	-- Umbral Eggplant
-				i(211863),	-- Sizzling Magma Core
 				i(211929),	-- Ichor Coated Debris
 				i(211930),	-- Damaged Framework
 				i(211959),	-- Lost Belongings
@@ -968,7 +967,6 @@ root(ROOTS.Unsorted, {
 				i(217311),	-- The Foreman's Second Scroll
 				i(217312),	-- The Foreman's Third Scroll
 				i(217400),	-- Kobyss Lure
-				i(217414),	-- Speakeasy Passrune
 				i(217506),	-- Test Item [DNT]
 			}),
 			n(WEAPONS, {
@@ -1038,7 +1036,6 @@ root(ROOTS.Unsorted, {
 			i(218080),	-- Dalaran Defender's Cloak
 			i(218081),	-- Dalaran Defender's Drape
 			i(218084),	-- Crumpled Note
-			i(218085),	-- Vial of Liquid Opal
 			i(218087),	-- <Pressurized Core Alloy>
 			i(218088),	-- <Pressurized Core Alloy>
 			i(218089),	-- <Endgame Alloy C>
@@ -1921,12 +1918,11 @@ root(ROOTS.Unsorted, {
 			i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 			i(219942),	-- 11.0 Stalwart's Sandals
 			i(219960),	-- Honey Drone Vac
-			i(219961),	-- Fresh Mug of Cinderbrew Mead \\ Cinderbrew Mead
 			i(220107),	-- Tower-Keeper's Shoes
 			i(220109),	-- Chainmail of Sina's Stalwarts
 			i(220112),	-- Cowl of Sina's Stalwarts
 			i(220113),	-- Tower-Keeper's Shoulderguards
-			i(220115),	-- Loldren's Market Audit
+
 			i(220116),	-- Completed Market Audit
 			i(220118),	-- Arathi Demolition Charge
 			i(220119),	-- Lamplighter's Handwraps
@@ -3177,7 +3173,6 @@ root(ROOTS.Unsorted, {
 			i(224097),	-- Lucky Fishing Hat
 			i(224100),	-- Bottomless Bag of Khaz Algar General Goods
 			i(224117),	-- Ghoulfish Delight
-			i(224119),	-- Electric Eel
 			i(224148),	-- [PH] NerubianWarbeastMount (Cyan)
 			i(224149),	-- [PH] NerubianWarbeastMount (Orange)
 			i(224156),	-- Bottomless Bag of Khaz Algar General Goods
@@ -3924,7 +3919,6 @@ root(ROOTS.Unsorted, {
 			i(226284),	-- Grinded Earthen Gem
 			i(226285),	-- Silver Dornogal Rod
 			i(226286),	-- Soot-Coated Orb
-			i(226287),	-- Animated Enchanting Dust
 			i(226288),	-- Essence of Holy Fire
 			i(226289),	-- Enchanted Arathi Scroll
 			i(226290),	-- Book of Dark Magic

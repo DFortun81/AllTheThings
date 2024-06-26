@@ -48,16 +48,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
 			ach(40684, {	-- Skyriding Glyphs: Dunelle's Kindness
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 69.9, 44.2, HALLOWFALL },
 			}),
 			ach(40688, {	-- Skyriding Glyphs: Fortune's Fall
 				-- TODO
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
 			ach(40686, {	-- Skyriding Glyphs: Mereldar
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 43.3, 52.8, HALLOWFALL },
 			}),
 			ach(40687, {	-- Skyriding Glyphs: Priory of the Sacred Flame
 				-- TODO
@@ -76,8 +74,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
 			ach(40690, {	-- Skyriding Glyphs: Tenir's Ascent
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 57.6, 64.6, HALLOWFALL },
 			}),
 			ach(40689, {	-- Skyriding Glyphs: Velhan's Claim
 				-- TODO

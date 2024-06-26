@@ -267,10 +267,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["provider"] = { "n", 213569 },	-- Speaker Brinthe
 					["coord"] = { 47.1, 20.7, THE_RINGING_DEEPS },
 				}),
+				q(81798, {	-- Return to Moira
+					["sourceQuests"] = { 78741 },	-- Sympathetic Speaker
+					["provider"] = { "n", 213672 },	-- Foreman Uzjax
+					["coord"] = { 49.0, 17.5, THE_RINGING_DEEPS },
+				}),
 				q(78760, {	-- Dark Iron from Above
 					["sourceQuests"] = {
-						78742,	-- Battle of the Earthenworks // probably only this required
-						78741,	-- Sympathetic Speaker
+						78742,	-- Battle of the Earthenworks
+						81798,	-- Return to Moira
 					},
 					["provider"] = { "n", 213763 },	-- Moira Thaurissan
 					["coord"] = { 47.1, 20.7, THE_RINGING_DEEPS },
@@ -283,6 +288,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["g"] = {
 						i(219018),	-- Esteemed Earthen Emblem
 					},
+				}),
+				q(79354, {	-- The Machine Speakers
+					["sourceQuests"] = { 78761 },	-- Into the Machine
+					["provider"] = { "n", 212742 },	-- Moira Thaurissan
+					["coord"] = { 47.2, 34.1, THE_RINGING_DEEPS },
+				}),
+				q(81689, {	-- Orientation: Gundargaz
+					--also look like not story quest, tbf... Very Weird...
+					["sourceQuests"] = { 79354 },	-- The Machine Speakers
+					["provider"] = { "n", 212742 },	-- Moira Thaurissan
+					["coord"] = { 47.2, 34.1, THE_RINGING_DEEPS },
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.01, {	-- The Caretaker of Brunwin's Terrace
@@ -502,17 +518,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			header(HEADERS.AchCriteria, 40799.06, {	-- Fearbreaker
 				q(79256, {	-- A Hint of Fear
 					["sourceQuests"] = { 78761 },	-- Into the Machine
-					["provider"] = { "n", 212742 },	-- Moira Thaurissan
-					["coord"] = { 47.2, 34.1, THE_RINGING_DEEPS },
-				}),
-				q(79354, {	-- The Machine Speakers
-					["sourceQuests"] = { 78761 },	-- Into the Machine
-					["provider"] = { "n", 212742 },	-- Moira Thaurissan
-					["coord"] = { 47.2, 34.1, THE_RINGING_DEEPS },
-				}),
-				q(81689, {	-- Orientation: Gundargaz
-					--also look like not story quest, tbf
-					["sourceQuests"] = { 79354 },	-- The Machine Speakers
 					["provider"] = { "n", 212742 },	-- Moira Thaurissan
 					["coord"] = { 47.2, 34.1, THE_RINGING_DEEPS },
 				}),

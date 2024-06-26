@@ -17,13 +17,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 49.0, 31.5, THE_RINGING_DEEPS },
 			}),
 			ach(40679, {	-- Skyriding Glyphs: Taelloch Mine
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 63.0, 66.1, THE_RINGING_DEEPS },
 			}),
 			ach(40677, {	-- Skyriding Glyphs: The Living Grotto
 				["coord"] = { 49.3, 66.2, THE_RINGING_DEEPS },
 			}),
-			ach(40674, {	-- Skyriding Glyphs: The Lost Mines
+			ach(40674, {	-- Skyriding Glyphs: Lost Mines
 				["coord"] = { 57.3, 31.5, THE_RINGING_DEEPS },
 			}),
 			ach(40673, {	-- Skyriding Glyphs: The Stonevault Exterior
@@ -99,9 +98,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["sourceQuest"] = 78706,	-- The High Speaker's Secret
 				}),
 				crit(64793, {	-- 	The Monster and the Machine
-					-- Remove when the quest below is uncommented
-					["_noautomation"] = true,
-					--["sourceQuest"] = 78828,	-- TODO: Quest name (HQT maybe?)
+					["sourceQuest"] = 81689,	-- Orientation: Gundargaz
 				}),
 			}),
 			ach(40703, {	-- The Ringing Deeps Glyph Hunter
@@ -110,9 +107,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					40678,	-- Skyriding Glyphs: Abyssal Excavation
 					40675,	-- Skyriding Glyphs: Chittering Den
 					40672,	-- Skyriding Glyphs: Gundargaz
+					40674,	-- Skyriding Glyphs: Lost Mines
 					40679,	-- Skyriding Glyphs: Taelloch Mine
 					40677,	-- Skyriding Glyphs: The Living Grotto
-					40674,	-- Skyriding Glyphs: The Lost Mines
 					40673,	-- Skyriding Glyphs: The Stonevault Exterior
 					40676,	-- Skyriding Glyphs: The Rumbling Wastes
 					40680,	-- Skyriding Glyphs: The Waterworks

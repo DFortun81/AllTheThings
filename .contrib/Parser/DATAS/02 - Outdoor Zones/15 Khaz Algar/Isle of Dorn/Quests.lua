@@ -333,6 +333,90 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 			}),
 			header(HEADERS.AchCriteria, 20595.02, {	-- Behind Closed Doors
+				q(80207, {	-- How Scandalous!
+					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["provider"] = { "n", 219393 },	-- Aldra
+					["coord"] = { 62.7, 21.7, DORNOGAL },
+				}),
+				q(79521, {	-- Seizing Evidence
+					["sourceQuests"] = { 80207 },	-- How Scandalous!
+					["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
+					["coord"] = { 49.9, 49.3, DORNOGAL },
+					["g"] = {
+						i(217499),	-- Assorted Chisels (QI!)
+						i(217500),	-- High-Quality Coal (QI!)
+						i(217501),	-- Moleskin Apron (QI!)
+						i(217498),	-- Seized Shipment (QI!)
+					},
+				}),
+				q(79522, {	-- Withheld Information
+					["sourceQuests"] = { 79521 },	-- Seizing Evidence
+					["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
+					["coord"] = { 49.9, 49.3, DORNOGAL },
+				}),
+				q(79523, {	-- Something Hidden
+					["sourceQuests"] = { 79522 },	-- Withheld Information
+					["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
+					["coord"] = { 49.9, 49.3, DORNOGAL },
+					["g"] = {
+						i(217505),	-- Bag of Glowing Shards (QI!)
+						i(217504),	-- Bundle of Receipts (QI!)
+						i(217502),	-- Infused Underclay (QI!)
+						i(217503),	-- Nerubian Silk Ropes (QI!)
+					},
+				}),
+				q(79525, {	-- Report to the Councilward
+					["sourceQuests"] = { 79523 },	-- Something Hidden
+					["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
+					["coord"] = { 49.9, 49.3, DORNOGAL },
+				}),
+				q(79542, {	-- The Councilward's Summons
+					["sourceQuests"] = {
+						78838,	-- Cogs in the Machine
+						79525,	-- Report to the Councilward
+					},
+					["provider"] = { "n", 225426 },	-- Saradi
+					["coord"] = { 47.5, 32.7, THE_RINGING_DEEPS },
+				}),
+				q(79543, {	-- Dornogal's Benefactor
+					["sourceQuests"] = { 79542 },	-- The Councilward's Summons
+					["provider"] = { "n", 217068 },	-- Merrix
+					["coord"] = { 55.2, 6.2, DORNOGAL },
+				}),
+				q(79544, {	-- Security Through Trade
+					["sourceQuests"] = { 79543 },	-- Dornogal's Benefactor
+					["provider"] = { "n", 217095 },	-- Merrix
+					["coord"] = { 49.3, 26.3, DORNOGAL },
+				}),
+				q(79545, {	-- The Market Reeveo of the Forgegrounds
+					["sourceQuests"] = { 79544 },	-- Security Through Trade
+					["provider"] = { "n", 217072 },	-- Bevrusi
+					["coord"] = { 56.6, 59.0, DORNOGAL },
+					["g"] = {
+						i(219961),	-- Fresh Mug of Cinderbrew Mead (QI!)
+						i(220115),	-- Loldren's Market Audit (QI!)
+						i(211863),	-- Sizzling Magma Core (QI!)
+					},
+				}),
+				q(79176, {	-- Opals and Runes
+					["sourceQuests"] = { 79544 },	-- Security Through Trade
+					["provider"] = { "n", 217091 },	-- Vokgret
+					["coord"] = { 44.8, 57.5, DORNOGAL },
+					["g"] = {
+						i(217414),	-- Speakeasy Passrune (QI!)
+						i(218085),	-- Vial of Liquid Opal (QI!)
+					},
+				}),
+				q(79546, {	-- The Machine Speakeasy
+					["sourceQuests"] = { 79176 },	-- Opals and Runes
+					["provider"] = { "n", 219126 },	-- Merrix
+					["coord"] = { 62.2, 39.6, DORNOGAL },
+				}),
+				q(79526),	-- Sedition
+				q(79527),	-- Damage Mitigation
+				q(79528),	-- Dispelling Rumors
+				q(79529),	-- Forcing My Hand
+				q(79530),	-- Bad Business
 			}),
 			header(HEADERS.AchCriteria, 20595.03, {	-- Seven Soldiers
 				q(78996, {	-- Weapons and Warriors
@@ -869,7 +953,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(225888),	-- Titan Emitter (QI!)
 				},
 			}),
-			-- The Questline just stops here?! Might Be "Behind Closed Doors" - Critiera // Braghe
+			------ Birdman ------
+			q(82680, {	-- Birdman of the Three Shields
+				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+				["provider"] = { "n", 224394 },	-- Harmot
+				["coord"] = { 60.2, 28.4, ISLE_OF_DORN },
+			}),
+			q(82681, {	-- Cloudrook Down
+				["sourceQuests"] = { 82680 },	-- Birdman of the Three Shields
+				["provider"] = { "n", 224392 },	-- Olbarig
+				["coord"] = { 74.6, 19.7, ISLE_OF_DORN },
+			}),
+			q(82682, {	-- Elemental Hors D'Oeuvers
+				["sourceQuests"] = { 82681 },	-- Cloudrook Down
+				["provider"] = { "n", 224392 },	-- Olbarig
+				["coord"] = { 74.6, 19.7, ISLE_OF_DORN },
+				["g"] = {
+					i(224119),	-- Electric Eel (QI!)
+				},
+			}),
+			q(82768, {	-- Cloud Fishing
+				["sourceQuests"] = { 82682 },	-- Elemental Hors D'Oeuvers
+				["provider"] = { "n", 224392 },	-- Olbarig
+				["coord"] = { 74.6, 19.7, ISLE_OF_DORN },
+				["g"] = {
+					i(224119),	-- Electric Eel (QI!)
+				},
+			}),
 			------ Miscellaneous ------
 			q(79686, {	-- Concerning Fungarians
 				["provider"] = { "o", 428135 },	-- Discarded Botanist Notes
@@ -953,4 +1063,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82146),	-- Special Assignment: Cinderbree Surge
 	--q(83069),	-- Special Assignment: Titanic Resurgence (???)
 	q(83070),	-- Special Assignment: Titanic Resurgence
+
+
+	q(80539),	-- Completing The Machine Speakeasy (79546)
 });
