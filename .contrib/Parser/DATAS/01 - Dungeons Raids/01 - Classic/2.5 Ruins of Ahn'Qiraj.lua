@@ -521,6 +521,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				},
 				["groups"] = {
 					-- Class Books
+					-- #if BEFORE 4.0.1
 					cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 						i(21294, {	-- Book of Healing Touch XI
 							["spellID"] = 25297,	-- Healing Touch XI
@@ -646,7 +647,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 							["rank"] = 6,
 						}),
 					})),
-
+					-- #endif
+					
 					-- Enchants
 					i(20736),	-- Formula: Enchant Cloak - Dodge (RECIPE!)
 					i(20734),	-- Formula: Enchant Cloak - Stealth (RECIPE!)
