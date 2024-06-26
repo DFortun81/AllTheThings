@@ -14,7 +14,7 @@ ach(40219),	-- Battleground Blitzest
 ach(40220),	-- Setting Records
 ach(40221),	-- Battleground Blitz Master
 ach(40222),	-- Echoes of Danger \\ Echos of Danger
-ach(40231),	-- The War Within Pathfinder [NYI]
+ach(40231),	-- The War Within Pathfinder \\ The War Within Pathfinder [NYI]
 ach(40232),	-- Glory of the Nerub-ar Raider
 ach(40233),	-- Strategist: The War Within Season 1
 ach(40236),	-- Mythic: Ulgrax the Devourer
@@ -59,7 +59,6 @@ ach(40430),	-- Khaz Algar Flight Master
 ach(40431),	-- Hunting the Hunter
 ach(40432),	-- Nemesis (Solo)
 ach(40433),	-- Hunting the Hunter (Solo)
-ach(40434),	-- Treasures of the Isle of Dorn
 ach(40435),	-- Adventurer of the Isle of Dorn
 ach(40436),	-- You're Getting a Delve!
 ach(40437),	-- Delver of the Depths
@@ -153,3 +152,24 @@ ach(40792),	-- Solo Shuffle Medic: The War Within
 ach(40795),	-- Battleground Blitz Medic: The War Within
 11.0.0.55185
 ach(40796),	-- This Takes Me Back
+11.0.0.55288
+ach(40819),	-- Ready to Turn
+ach(40820),	-- Raisin' Brann
+ach(40822),	-- Explore Azj-Kahet
+ach(40825),	-- Explore The Ringing Deeps
+ach(40826),	-- Explore Hallowfall
+ach(40828),	-- Treasures of Azj-Kahet
+ach(40831),	-- Explore the Isle of Dorn
+ach(40832),	-- Leave it to Weaver
+ach(40833),	-- The General's Salute
+ach(40835),	-- Vizier than Ever
+ach(40836),	-- Forging Deep Friendships
+ach(40837),	-- Adventurer of The Ringing Deeps
+ach(40838),	-- The Severed Threads
+ach(40839),	-- Delve PTR Cheat
+ach(40840),	-- Adventurer of Azj-Kahet
+ach(40843),	-- Mine Poppin'
+ach(40844),	-- Sojourner of Hallowfall
+ach(40845),	-- Hallowfall Arathi
+ach(40848),	-- Treasures of Hallowfall
+ach(40851),	-- Adventurer of Hallowfall

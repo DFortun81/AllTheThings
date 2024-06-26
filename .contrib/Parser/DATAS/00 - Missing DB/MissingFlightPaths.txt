@@ -23,3 +23,5 @@ fp(2970),	-- Tranquil Strand, Isle of Dorn
 fp(2971),	-- The Pulsing Pit (One-way)
 11.0.0.55000
 fp(2972),	-- Jeff the Flightmaster
+11.0.0.55288
+fp(2984),	-- The Ascending Reach

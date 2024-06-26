@@ -7,6 +7,9 @@ r(433605),	--
 r(433606),	--
 r(433607),	--
 r(433608),	--
+11.0.0.55288
+r(462121),	-- Bubbling Mycobloom Culture
+r(462122),	-- Petal Powder
 
 
 
@@ -22,3 +25,6 @@ r(433605),	--
 r(433606),	--
 r(433607),	--
 r(433608),	--
+11.0.0.55288
+r(462121),	-- Bubbling Mycobloom Culture
+r(462122),	-- Petal Powder

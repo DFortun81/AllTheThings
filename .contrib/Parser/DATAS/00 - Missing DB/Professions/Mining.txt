@@ -1,11 +1,5 @@
 11.0.0.54311
 r(423882),	-- Overload Test Deposit
-r(442328),	-- Refine Bismuth |A:Professions-ChatIcon-Quality-Tier2:20:20|a
-r(442329),	-- Refine Bismuth |A:Professions-ChatIcon-Quality-Tier3:20:20|a
-r(442330),	-- Refine Aqirite |A:Professions-ChatIcon-Quality-Tier2:20:20|a
-r(442331),	-- Refine Aqirite |A:Professions-ChatIcon-Quality-Tier3:20:20|a
-r(442332),	-- Refine Ironclaw Ore |A:Professions-ChatIcon-Quality-Tier2:20:20|a
-r(442333),	-- Refine Ironclaw Ore |A:Professions-ChatIcon-Quality-Tier3:20:20|a
 
 
 Nothing is Missing in Mining.lua! Good Work!
