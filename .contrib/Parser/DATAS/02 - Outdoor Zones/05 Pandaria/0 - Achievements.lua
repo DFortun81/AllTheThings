@@ -309,18 +309,15 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			crit(19793, {	-- The Birthplace of Liu Lang
 				["provider"] = { "o", 213459 },
 				["coord"] = { 20.3, 55.9, VALLEY_OF_THE_FOUR_WINDS },
-			}
-		),	
+			}),	
 			crit(19794, { -- A Most Famous Bill of Sale
 				["provider"] = { "o", 213460 },
 				["coord"] = { 55.0, 47.3, VALLEY_OF_THE_FOUR_WINDS },
-			}
-		),	
+			}),	
 			crit(19795, {	-- The Wandering Widow
 				["provider"] = { "o", 213461 },
 				["coord"] = { 34.6, 64.0, VALLEY_OF_THE_FOUR_WINDS },
-			}
-		),	
+			}),	
 			crit(19796, {	-- Waiting for the Turtle
 				["provider"] = { "o", 215765 },
 				["coord"] = { 72.2, 31.1, KRASARANG_WILDS },
