@@ -51,6 +51,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
             -- TODO
             --title(),	-- Echochaser <Name>
         })),
+        ach(40314), -- Fragments of Memories (automated)
         ach(40107, {	-- Harbinger of the Carved
             -- TODO
             -- ["timeline"] = { removed_when },

@@ -45,4 +45,8 @@ select(2, ...).RaceDB = {
 	["Mechagnome"] = 37,
 	["ZandalariTroll"] = 31,
 	["Zandalari Troll"] = 31,
+	["Earthen"] = {
+		["Alliance"] = 85,
+		["Horde"] = 84,
+	},
 };

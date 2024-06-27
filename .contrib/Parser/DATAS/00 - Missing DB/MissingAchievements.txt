@@ -1,8 +1,3 @@
-11.0.0.54361
-ach(40306),	-- Allied Races: Earthen
-ach(40307),	-- Allied Races: Earthen \\ Allied Races: Earthen Unlock Requirements
-ach(40309),	-- Heritage of the Earthen
-ach(40314),	-- Fragments of Memories \\ Memories of a Worldsoul
 11.0.0.54521
 ach(40430),	-- Khaz Algar Flight Master
 11.0.0.54605

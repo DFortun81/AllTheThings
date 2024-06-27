@@ -649,6 +649,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(40099),	-- That Extra Push Over the Cliff
 			ach(40101),	-- Hitting one's Stride
 			ach(40102),	-- Dawn of a new Delve
+			ach(40306),	-- Allied Races: Earthen
 		})),
 	}),
 }));

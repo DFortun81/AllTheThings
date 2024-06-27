@@ -123,6 +123,12 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 		},
 	}),
+	race(EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY, }, {
+		ach(40307),	-- Allied Races: Earthen (automated),
+	})),
+	race(EARTHEN_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH }, ["races"] = HORDE_ONLY, }, {
+		ach(40307),	-- Allied Races: Earthen (automated),
+	})),
 	race(HIGHMOUNTAIN_TAUREN, {
 		-- #if BEFORE 10.1.5
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700Ain't No Mountain High Enough|r, The Highmountain Storyline.",
