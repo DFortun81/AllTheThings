@@ -721,12 +721,18 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["isBreadcrumb"] = true,
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
+							["timeline"] = { ADDED_9_0_2_LAUNCH },
+							["lockCriteria"] = { 1, "questID", 51211 },	-- The Heart of Azeroth
+							["DisablePartySync"] = true,
 						}),
 						q(61871, {	-- To Current Matters (H)
 							["sourceQuests"] = { 54964 },	-- A One-Way Ticket to the Heart
 							["isBreadcrumb"] = true,
 							["provider"] = { "n", 136907 },	-- Magni Bronzebeard
 							["coord"] = { 50.1, 53.6, CHAMBER_OF_HEART },
+							["timeline"] = { ADDED_9_0_2_LAUNCH },
+							["lockCriteria"] = { 1, "questID", 51211 },	-- The Heart of Azeroth
+							["DisablePartySync"] = true,
 						}),
 						q(56188, {	-- To the Catacombs!
 							["provider"] = { "n", 154874 },	-- Blacktalon Watcher

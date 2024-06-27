@@ -440,6 +440,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					q(76158, {	-- Temporal Gossamer
 						["sourceQuests"] = { 74913 },	-- Memories of an Artifact
 						["provider"] = { "i", 206163 },	-- Temporal Gossamer
+						["timeline"] = { ADDED_10_1_0, REMOVED_10_2_7 },
 						["g"] = {
 							i(204808),	-- Empowered Temporal Gossamer
 							i(206165),	-- Major Resonating Vestigial (QI!)

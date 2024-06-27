@@ -456,6 +456,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						28858,	-- Blasted Lands: The Other Side of the World
 						28865,	-- Call of the Warmatron
 						28671,	-- Warchief's Command: Blasted Lands!
+						28553,	-- Okrilla and the Blasted Lands
 					},
 					["coord"] = { 40.4, 11.6, BLASTED_LANDS },
 					["timeline"] = { ADDED_4_0_3 },

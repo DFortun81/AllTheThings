@@ -66,7 +66,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 18074,	-- Elementalist Morgh <The Earthen Ring>
 					["coord"] = { 60.6, 22.4, NAGRAND },
 					["timeline"] = { ADDED_4_3_0 },
-					["isBreadcrumb"] = true,
+					-- ["isBreadcrumb"] = true,	-- 2024-06-22 Discord: not locked by 'Rescuing the Expedition' (29570)
 					["lvl"] = lvlsquish(63, 63, 10),
 				}),
 				q(9717, {	-- Oh, It's On!

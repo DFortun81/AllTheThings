@@ -746,6 +746,7 @@ root(ROOTS.Zones, {
 										}),
 									},
 								}),
+								i(95496),	-- Shado-Pan Assault Insignia
 								i(95491, {	-- Tattered Historical Parchments
 									["description"] = "These parchments are inside chests in the solo scenario, which is accessible after getting a Key to the Palace of Lei Shen.",
 								}),
