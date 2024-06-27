@@ -1,37 +1,3 @@
-11.0.0.54311
-ach(40232),	-- Glory of the Nerub-ar Raider
-ach(40233),	-- Strategist: The War Within Season 1
-ach(40236),	-- Mythic: Ulgrax the Devourer
-ach(40237),	-- Mythic: The Bloodbound Horror
-ach(40238),	-- Mythic: Sikran, Captain of the Sureki
-ach(40239),	-- Mythic: Rasha'nan
-ach(40240),	-- Mythic: Broodtwister Ovi'nax \\ Mythic: Eggtender Ovi'nax
-ach(40241),	-- Mythic: Nexus-Princess Ky'veza
-ach(40242),	-- Mythic: The Silken Court
-ach(40243),	-- Mythic: Queen Ansurek
-ach(40244),	-- Nerub-ar Palace
-ach(40245),	-- Heroic: Nerub-ar Palace
-ach(40246),	-- Mythic: Nerub-ar Palace
-ach(40247),	-- The Skittering Battlements \\ [PH] Nerub-ar Palace Wing 1
-ach(40248),	-- Secrets of Nerub-ar Palace \\ [PH] Nerub-ar Palace Wing 2
-ach(40249),	-- A Queen's Fall \\ [PH] Nerub-ar Palace Wing 3
-ach(40250),	-- The First Echo \\ The First Chord
-ach(40251),	-- Many Echoes \\ Many Chords
-ach(40252),	-- A Series of Echoes \\ A Series of Chords
-ach(40253),	-- Ahead of the Curve: Queen Ansurek
-ach(40254),	-- Cutting Edge: Queen Ansurek
-ach(40255),	-- Sik Parry Bro
-ach(40256),	-- Nerub-ar Palace Guild Run
-ach(40257),	-- Heroic: Nerub-ar Palace Guild Run
-ach(40258),	-- Mythic: Queen Ansurek Guild Run
-ach(40259),	-- Hall of Fame: Queen Ansurek
-ach(40260),	-- You Can't See Me \\ [PH] Bloodbound Horror Achievement
-ach(40261),	-- Slimy Yet Satisfying \\ [PH] Ulgrax the Devourer Achievement
-ach(40262),	-- Cowabunga \\ [PH] Rasha'nan Achievement
-ach(40263),	-- Would You Still /love Me if I Was a Worm... \\ Would you still /love me if I was a worm... \\ [PH] Eggtender Ovi'nax Achievement
-ach(40264),	-- Kill Streak \\ [PH] Nexus-Princess Ky'veza Achievement
-ach(40265),	-- [PH] The Silken Court Achievement
-ach(40266),	-- Missed 'Em by That Much \\ [PH] Queen Ansurek Achievement
 11.0.0.54361
 ach(40306),	-- Allied Races: Earthen
 ach(40307),	-- Allied Races: Earthen \\ Allied Races: Earthen Unlock Requirements
