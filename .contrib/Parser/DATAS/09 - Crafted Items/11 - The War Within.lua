@@ -399,8 +399,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80665, 450287); -- Ironclaw Weightstone
 			--Frameworks
 			FirstCraft(80662, 450284); -- Forged Framework
-			--FirstCraft(xxxxx, 450288); -- Adjustable Framework
-			--FirstCraft(xxxxx, 450289); -- Tempered Framework
+			FirstCraft(80666, 450288); -- Adjustable Framework
+			FirstCraft(80667, 450289); -- Tempered Framework
 			-- Other
 			FirstCraft(83398, 450291); -- Coreforged Repair Hammer
 		})),
