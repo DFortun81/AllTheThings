@@ -2199,3 +2199,99 @@ i(211580, 430086);	-- Draconic Combatant's Draconium Helm
 i(211583, 430087);	-- Draconic Combatant's Draconium Pauldrons
 i(211585, 430088);	-- Draconic Combatant's Draconium Sabatons
 i(211587, 430089);	-- Draconic Combatant's Draconium Waistguard
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+--- TRAINER ---
+i(0, 423332);       -- Dragon Isles Blacksmithing
+i(0, 450216);       -- Core Alloy
+i(0, 450217);       -- Charged Alloy
+i(0, 450218);       -- Sanctified Alloy
+i(0, 450219);       -- Ironclaw Alloy
+i(0, 450291);       -- Coreforged Repair Hammer
+i(0, 450258);       -- Dredger's Plate Sabatons
+i(0, 450259);       -- Dredger's Plate Breastplate
+i(0, 450260);       -- Dredger's Developed Greatbelt
+i(0, 450261);       -- Dredger's Developed Defender
+i(0, 450262);       -- Dredger's Developed Helm
+i(0, 450263);       -- Dredger's Developed Legplates
+i(0, 450264);       -- Dredger's Plate Vambraces
+i(0, 450265);       -- Dredger's Developed Pauldrons
+i(0, 450266);       -- Dredger's Developed Gauntlets
+i(0, 450251);       -- Ironclaw Stiletto
+i(0, 450252);       -- Ironclaw Dirk
+i(0, 450253);       -- Ironclaw Sword
+i(0, 450254);       -- Ironclaw Knuckles
+i(0, 450255);       -- Ironclaw Great Mace
+i(0, 450256);       -- Ironclaw Axe
+i(0, 450257);       -- Ironclaw Great Axe
+i(0, 450267);       -- Proficient Sickle
+i(0, 450268);       -- Proficient Pickaxe
+i(0, 450269);       -- Proficient Skinning Knife
+i(0, 450270);       -- Proficient Needle Set
+i(0, 450271);       -- Proficient Leatherworker's Knife
+i(0, 450272);       -- Proficient Leatherworker's Toolset
+i(0, 450273);       -- Proficient Blacksmith's Hammer
+i(0, 450274);       -- Proficient Blacksmith's Toolbox
+i(0, 450284);       -- Forged Framework
+i(0, 450288);       -- Adjustable Framework
+i(0, 450285);       -- Ironclaw Whetstone
+i(0, 450286);       -- Ironclaw Razorstone
+i(0, 450287);       -- Ironclaw Weightstone
+i(0, 450283);       -- Earthen Master's Hammer
+--- ITEM ---
+i(223048, 450250);  -- Siphoning Stiletto
+i(223043, 450245);  -- Sanctified Steps
+i(226643, 450246);  -- Beledar's Bulwark
+i(223042, 450242);  -- Charged Slicer
+i(223036, 450236);  -- Charged Runeaxe
+i(223037, 450237);  -- Charged Facesmasher
+i(223040, 450240);  -- Charged Crusher
+i(223051, 450277);  -- Artisan Skinning Knife
+i(223050, 450276);  -- Artisan Pickaxe
+i(223049, 450275);  -- Artisan Sickle
+i(223053, 450279);  -- Artisan Leatherworker's Knife
+i(223052, 450278);  -- Artisan Needle Set
+i(223054, 450280);  -- Artisan Leatherworker's Toolset
+i(225488, 455003);  -- Algari Competitor's Greatsword
+i(225489, 455004);  -- Algari Competitor's Sword
+i(225487, 455002);  -- Algari Competitor's Sickle
+i(225485, 455000);  -- Algari Competitor's Shield
+i(225483, 454999);  -- Algari Competitor's Scepter
+i(225479, 454998);  -- Algari Competitor's Dagger
+i(225486, 455001);  -- Algari Competitor's Axe
+i(225478, 454997);  -- Algari Competitor's Splitter
+i(225459, 438914);  -- Algari Competitor's Plate Breastplate
+i(225465, 438920);  -- Algari Competitor's Plate Waistguard
+i(225460, 438915);  -- Algari Competitor's Plate Sabatons
+i(225461, 438916);  -- Algari Competitor's Plate Gauntlets
+i(225462, 438917);  -- Algari Competitor's Plate Helm
+i(225464, 438919);  -- Algari Competitor's Plate Pauldrons
+i(225466, 438921);  -- Algari Competitor's Plate Armguards
+i(225463, 438918);  -- Algari Competitor's Plate Greaves
+i(223058, 450292);  -- Coreforged Skeleton Key
+--- SPECIALIZATION ---
+i(0, 450220);       -- Everforged Sabatons
+i(0, 450221);       -- Everforged Breastplate
+i(0, 450222);       -- Everforged Greatbelt
+i(0, 450223);       -- Everforged Defender
+i(0, 450224);       -- Everforged Helm
+i(0, 450225);       -- Everforged Legplates
+i(0, 450226);       -- Everforged Vambraces
+i(0, 450227);       -- Everforged Pauldrons
+i(0, 450228);       -- Everforged Gauntlets
+i(0, 450229);       -- Everforged Stabber
+i(0, 450230);       -- Everforged Dagger
+i(0, 450231);       -- Everforged Longsword
+i(0, 450233);       -- Everforged Mace
+i(0, 450234);       -- Everforged Greataxe
+i(0, 450232);       -- Everforged Warglaive
+i(0, 450238);       -- Charged Claymore
+i(0, 450235);       -- Charged Hexsword
+i(0, 450239);       -- Charged Halberd
+i(0, 450241);       -- Charged Invoker
+i(0, 450281);       -- Artisan Blacksmith's Hammer
+i(0, 450282);       -- Artisan Blacksmith's Toolbox
+i(0, 450289);       -- Tempered Framework
+i(0, 453727);       -- Everburning Ignition
