@@ -110,6 +110,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215944),	-- Harmonious Scimitar (wowhead)
 					i(215623),	-- Imperial Shortblade (wowhead)
 					i(215861),	-- Instructor's Spire (wowhead)
+					i(216535),	-- Ironwood Bulwark
 					i(215511),	-- Jadestone Greataxe (wowhead)
 					i(215772),	-- Jerthud, Hand of the Savior
 					i(215897),	-- Jinyu Staff (wowhead)

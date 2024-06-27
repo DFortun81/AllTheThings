@@ -114,6 +114,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215748),	-- Fireblaze Mace
 					i(216002),	-- Grummle Rod (wowhead)
 					i(215600),	-- Grummle Shortblade
+					i(215676),	-- Hopebringer's Lantern
 					i(215656),	-- Hozen Fetish
 					i(215762),	-- Hozen Smasher
 					i(210640),	-- Icon of Hope

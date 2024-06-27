@@ -135,6 +135,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215679),	-- Golden Crane Rod (august celestials cache)
 					i(215738),	-- Grummle Mace (wowhead)
 					i(215780),	-- Hatred's Warmace (drop)
+					i(211163),	-- Hidden Pass Knuckles
 					i(215890),	-- Hopespreader's Staff (drop)
 					i(215763),	-- Hozen Basher
 					i(215657),	-- Hozen Conduit
