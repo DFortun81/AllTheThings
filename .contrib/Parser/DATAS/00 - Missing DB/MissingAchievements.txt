@@ -1,6 +1,4 @@
 11.0.0.54311
-ach(20510),	-- What Could it be?
-ach(20511),	-- Gotta Punt em' All
 ach(40138),	-- Algari Dungeoneer \\ Algarian Dungeoneer
 ach(40139),	-- Algari Dungeon Damage Dealer \\ Algarian Dungeon Damage Dealer
 ach(40140),	-- Algari Dungeon Healer \\ Algarian Dungeon Healer
