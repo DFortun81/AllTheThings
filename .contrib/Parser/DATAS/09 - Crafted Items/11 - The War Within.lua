@@ -1745,5 +1745,10 @@ root(ROOTS.HiddenQuestTriggers, {
 			--q(81090),	-- Randomly when crafting Wild Experimentation
 						-- Randomly when crafting Thaumaturgy
 		}),
+		prof(BLACKSMITHING, {
+			q(83111), -- 10/40 Everburning Forge
+			q(83112), -- 20/40 Everburning Forge
+			q(83131), -- 30/40 Everburning Forge
+		}),
 	}),
 });

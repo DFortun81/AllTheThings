@@ -2235,19 +2235,19 @@ i(0, 450272);       -- Proficient Leatherworker's Toolset
 i(0, 450273);       -- Proficient Blacksmith's Hammer
 i(0, 450274);       -- Proficient Blacksmith's Toolbox
 i(0, 450284);       -- Forged Framework
+i(0, 450288);       -- Adjustable Framework
 i(0, 450285);       -- Ironclaw Whetstone
 i(0, 450286);       -- Ironclaw Razorstone
 i(0, 450287);       -- Ironclaw Weightstone
+i(0, 450283);       -- Earthen Master's Hammer
 --- ITEM ---
 i(223048, 450250);  -- Siphoning Stiletto
 i(223043, 450245);  -- Sanctified Steps
 i(226643, 450246);  -- Beledar's Bulwark
-i(223038, 450238);  -- Charged Claymore
 i(223042, 450242);  -- Charged Slicer
 i(223036, 450236);  -- Charged Runeaxe
 i(223037, 450237);  -- Charged Facesmasher
 i(223040, 450240);  -- Charged Crusher
---i(, 450232);      -- Everforged Warglaive
 i(223051, 450277);  -- Artisan Skinning Knife
 i(223050, 450276);  -- Artisan Pickaxe
 i(223049, 450275);  -- Artisan Sickle
@@ -2271,8 +2271,6 @@ i(225464, 438919);  -- Algari Competitor's Plate Pauldrons
 i(225466, 438921);  -- Algari Competitor's Plate Armguards
 i(225463, 438918);  -- Algari Competitor's Plate Greaves
 i(223058, 450292);  -- Coreforged Skeleton Key
---i(, 450288);      -- Adjustable Framework
---i(, 450289);      -- Tempered Framework
 --- SPECIALIZATION ---
 i(0, 450220);       -- Everforged Sabatons
 i(0, 450221);       -- Everforged Breastplate
@@ -2288,10 +2286,12 @@ i(0, 450230);       -- Everforged Dagger
 i(0, 450231);       -- Everforged Longsword
 i(0, 450233);       -- Everforged Mace
 i(0, 450234);       -- Everforged Greataxe
+i(0, 450232);       -- Everforged Warglaive
+i(0, 450238);       -- Charged Claymore
 i(0, 450235);       -- Charged Hexsword
 i(0, 450239);       -- Charged Halberd
 i(0, 450241);       -- Charged Invoker
 i(0, 450281);       -- Artisan Blacksmith's Hammer
 i(0, 450282);       -- Artisan Blacksmith's Toolbox
-i(0, 450283);       -- Earthen Master's Hammer
---- QUEST ---
+i(0, 450289);       -- Tempered Framework
+i(0, 453727);       -- Everburning Ignition
