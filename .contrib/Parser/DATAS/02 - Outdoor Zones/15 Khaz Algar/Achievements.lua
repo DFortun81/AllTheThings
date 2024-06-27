@@ -37,6 +37,53 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- 	["coord"] = { x, y, map },
 			-- }),
 		})),
+		ach(40222, bubbleDownSelf({ ["_noautomation"] = true, }, {	-- Echoes of Danger
+			-- TODO: All of these need their creatures attached, especially the combo ones at the end to get a proper name
+			crit(67509),	-- Aqu'yinra
+			crit(67510),	-- S'toth The Insatiable
+			crit(67507),	-- Bor'zal the Lurking
+			crit(67508),	-- Yor'sith
+			crit(67511),	-- Venox
+			crit(67512),	-- Hand of Azshara
+			crit(67513),	-- Zaniga the Tracker
+			crit(67514),	-- Ankoan Champion Utaari
+			crit(67515),	-- Gurl the Feaster
+			crit(67516),	-- Utmoth the Tidetwister
+			crit(67517),	-- Kiji the Stomper
+			crit(67518),	-- Clawmother Tengi
+			crit(67519),	-- Nalo'xic
+			crit(67520),	-- Pterrordaxus
+			crit(67521),	-- Tor'go
+			crit(67523),	-- Flame Viscerator Ignes
+			crit(67524),	-- Oremex Flamebreaker
+			crit(67525),	-- Earthfury Cragshar
+			crit(67526),	-- Deepwalker Cavelord
+			crit(67527),	-- Crateron
+			crit(67528),	-- Stormlord Kao'dar
+			crit(67529),	-- Toaka the Explorer
+			crit(67530),	-- Conqueror Or'sosh
+			crit(67531),	-- Wavecrasher Jurvak
+			crit(67532),	-- Warmonger Ogli
+			crit(67534),	-- Gong'tze the Riverhewer
+			crit(67535),	-- First Blade Grimskarn
+			crit(67540),	-- Talinhet
+			crit(67541),	-- Temaya
+			crit(67544),	-- The Rebellious Queen
+			crit(67545),	-- The Rebellious Queen
+			crit(67546),	-- Vil'Vim
+			crit(67547),	-- Spiz'na the Traitor
+			crit(67548),	-- Yoh'nath the Ender
+			crit(67549),	-- Azerite Manifestation
+			crit(67550),	-- Shard of Gorribal
+			crit(67552),	-- Widowcore
+			crit(67553),	-- Heartsear
+			crit(67551),	-- Dregbile and Soulboil
+			crit(67554),	-- Dregbile and Soulboil
+			crit(67539),	-- Zeeben and Zillix
+			crit(68240),	-- Zeeben and Zillix
+			-- TODO
+			--title(),	-- Echochaser <Name>
+		})),
 		petbattle(ach(40158, {	-- Elemental Battler of Khaz Algar
 			-- TODO
 			-- crit(x, {	-- x
@@ -107,6 +154,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				40327,	-- The Ringing Deeps: Gold
 				40330,	-- The Ringing Deeps Advanced: Gold
 				40333,	-- The Ringing Deeps Reverse: Gold
+			}},
+		}),
+		ach(40790, {	-- Khaz Algar Explorer
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				40822,	-- Explore Azj-Kahet
+				40826,	-- Explore Hallowfall
+				40831,	-- Explore The Isle of Dorn
+				40825,	-- Explore The Ringing Deeps
 			}},
 		}),
 		ach(40702, {	-- Khaz Algar Glyph Hunter
@@ -274,6 +330,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["_noautomation"] = true,
 				--["sourceQuest"] = 83503,	-- TODO: Quest Name
 			}),
+		}),
+		ach(40231, {	-- The War Within Pathfinder
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				19559,	-- Azj-Kahet
+				40790,	-- Khaz Algar Explorer
+				20598,	-- Hallowfall
+				20118,	-- The Isle of Dorn
+				19560,	-- The Ringing Deeps
+			}},
 		}),
 		petbattle(ach(40165, {	-- Undead Battler of Khaz Algar
 			-- TODO

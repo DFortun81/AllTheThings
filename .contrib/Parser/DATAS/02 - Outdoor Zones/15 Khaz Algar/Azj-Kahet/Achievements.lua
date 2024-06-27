@@ -49,6 +49,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--["provider"] = { "o", 454338 },
 				}),
 			})),
+			ach(40822, {	-- Explore Azj-Kahet
+				-- TODO: These criteria look unfinished
+				crit(69608),	-- Ruptured Lake
+				crit(69608),	-- Lightless Channels
+				crit(69608),	-- Crawling Chasm
+				crit(69608),	-- The Weaver's Lair
+				crit(69608),	-- Untamed Valley
+				crit(69608),	-- Twitching Gorge
+				crit(69608),	-- Rak-Ush
+				crit(69608),	-- The Skeins
+				crit(69608),	-- Umbral Bazaar
+				crit(69608),	-- High Hollows
+			}),
 			ach(40727),		-- Skittershaw Spin
 			ach(40691, {	-- Skyriding Glyphs: Arathi's End
 				-- TODO

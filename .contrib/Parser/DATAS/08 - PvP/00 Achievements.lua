@@ -262,6 +262,23 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(19413, {		-- Battleground Blitz Veteran
 		["timeline"] = { ADDED_10_2_0 },
 	}),
+	ach(40221, {	-- Battleground Blitz Master
+		["timeline"] = { ADDED_11_0_1_LAUNCH },
+	}),
+	ach(40217, {	-- Battleground Blitzer
+		["timeline"] = { ADDED_11_0_1_LAUNCH },
+	}),
+	ach(40219, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } , ["_noautomation"] = true, }, {	-- Battleground Blitzest
+		crit(67431),	-- Arathi Basin
+		crit(67425),	-- Deephaul Ravine
+		crit(67430),	-- Deepwind Gorge
+		crit(67432),	-- Eye of the Storm
+		crit(67428),	-- Silvershard Mines
+		crit(67429),	-- Temple of Kotmogu
+		crit(67433),	-- The Battle for Gilneas
+		crit(67427),	-- Twin Peaks
+		crit(67426),	-- Warsong Gulch
+	})),
 	ach(611, {		-- Bleeding Bloodhoof
 		["providers"] = {
 			-- #if AFTER CATA
@@ -961,6 +978,9 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 				["timeline"] = { ADDED_8_3_0, REMOVED_9_0_1 },
 			}),
 		},
+	}),
+	ach(40220, {	-- Setting Records
+		["timeline"]= { ADDED_11_0_1_LAUNCH },
 	}),
 	ach(11470, {	-- Slayin' to Seven
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },

@@ -1124,6 +1124,7 @@ localize(L.HEADER_ICONS, {
 	[-1000449] = "Interface/Icons/inv_misc_celebrationcake_01",
 	[-1000450] = "Interface/Icons/ui_majorfactions_candle",
 	[-1000451] = "Interface/Icons/ui_majorfactions_flame",
+	[-1000454] = "Interface/Icons/spell_holy_holynova",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000032] = 479,

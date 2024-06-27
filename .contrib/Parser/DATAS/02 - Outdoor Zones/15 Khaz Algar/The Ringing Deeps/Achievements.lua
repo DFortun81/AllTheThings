@@ -4,6 +4,19 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(THE_RINGING_DEEPS, {
 		n(ACHIEVEMENTS, {
+			ach(40825, {	-- Explore The Ringing Deeps
+				-- TODO: These criteria look unfinished
+				crit(69608),	-- The Earthenworks
+				crit(69608),	-- Lost Mines
+				crit(69608),	-- Shadowvein Extraction Site
+				crit(69608),	-- Shadowvein Point
+				crit(69608),	-- The Waterworks
+				crit(69608),	-- Taelloch
+				crit(69608),	-- The Living Grotto
+				crit(69608),	-- Opportunity Point
+				crit(69608),	-- The Coreway
+				crit(69608),	-- Gundargaz
+			}),
 			ach(40507),		-- Hanging Tight
 			ach(40731),		-- Panhandled
 			ach(40678, {	-- Skyriding Glyphs: Abyssal Excavation

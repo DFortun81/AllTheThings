@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 SPREADING_THE_LIGHT = createHeader({
 	readable = "Spreading The Light",
-	--icon = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",
+	icon = "Interface\\Icons\\spell_holy_holynova",
 	text = {
 		en = "Spreading The Light",
 	},
@@ -12,10 +12,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 	n(HALLOWFALL_ARATHI, {
 		n(SPREADING_THE_LIGHT, {
 			n(ACHIEVEMENTS, {
-				-- INFO: Should auto-fill with quests as they are sourced in ATT
-				ach(40308),		-- Beacon of Hope
+				ach(40308),		-- Beacon of Hope (automated)
 				ach(40313),		-- Igniting the Keyflames
-				ach(40311),		-- Sharing the Light
+				ach(40311),		-- Sharing the Light (automated)
 				ach(40312),		-- Starting the Flames
 			}),
 		}),

@@ -4,6 +4,19 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		n(ACHIEVEMENTS, {
+			ach(40831, {	-- Explore the Isle of Dorn
+				-- TODO: These criteria look unfinished
+				crit(69608),	-- Ruptured Lake
+				crit(69608),	-- Lightless Channels
+				crit(69608),	-- Crawling Chasm
+				crit(69608),	-- The Weaver's Lair
+				crit(69608),	-- Untamed Valley
+				crit(69608),	-- Twitching Gorge
+				crit(69608),	-- Rak-Ush
+				crit(69608),	-- The Skeins
+				crit(69608),	-- Umbral Bazaar
+				crit(69608),	-- High Hollows
+			}),
 			ach(40630),		-- For the Collective
 			ach(40623),		-- I Only Need One Trip
 			ach(40166, {	-- Isle of Dorn Glyph Hunter

@@ -5,6 +5,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 	m(HALLOWFALL, {
 		n(ACHIEVEMENTS, {
 			ach(40150),		-- Children's Entertainer
+			ach(40826, {
+				-- TODO: These criteria look unfinished
+				crit(69608),	-- Dunelle's Kindness
+				crit(69608),	-- Aegis Wall
+				crit(69608),	-- The Fangs
+				crit(69608),	-- Lorel's Crossing
+				crit(69608),	-- Mereldar
+				crit(69608),	-- Light's Redoubt
+				crit(69608),	-- Light's Blooming
+				crit(69608),	-- Priory of the Sacred Flame
+				crit(69608),	-- The Undersea
+			}),
 			ach(20594),		-- Flamegard's Hope
 			ach(20598, {	-- Hallowfall
 				crit(66935, {	-- The Guiding Star
@@ -33,10 +45,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}},
 			}),
 			ach(40729),		-- Light's Gambit Champion
-			-- INFO: Should auto-fill with quests as they are sourced in ATT
-			ach(40360),		-- Life on the Farm
-			-- INFO: Should auto-fill with quests as they are sourced in ATT
-			ach(40618),		-- Lost and Found
+			ach(40360),		-- Life on the Farm (automated)
+			ach(40618),		-- Lost and Found (automated)
 			ach(40151),		-- Mereldar Menace
 			ach(40082),		-- Never Enough
 			ach(40685, {	-- Skyriding Glyphs: Bleak Sand
