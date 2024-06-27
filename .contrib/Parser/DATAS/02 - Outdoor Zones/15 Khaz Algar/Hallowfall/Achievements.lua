@@ -4,6 +4,7 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(HALLOWFALL, {
 		n(ACHIEVEMENTS, {
+			ach(40851),		-- Adventurer of Hallowfall (automated)
 			ach(40150),		-- Children's Entertainer
 			ach(40826, {
 				-- TODO: These criteria look unfinished
@@ -86,7 +87,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				-- TODO
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
+			ach(40844),		-- Sojourner of Hallowfall (automated)
 			pvp(ach(40085)),	-- Tour of Duty: Hallowfall
+			ach(40848),		-- Treasures of Hallowfall (automated)
 		}),
 	}),
 })));

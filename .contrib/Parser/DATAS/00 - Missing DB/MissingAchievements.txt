@@ -4,7 +4,6 @@ ach(40430),	-- Khaz Algar Flight Master
 ach(40431),	-- Hunting the Hunter
 ach(40432),	-- Nemesis (Solo)
 ach(40433),	-- Hunting the Hunter (Solo)
-ach(40435),	-- Adventurer of the Isle of Dorn
 ach(40436),	-- You're Getting a Delve!
 ach(40437),	-- Delver of the Depths
 ach(40438),	-- Glory of the Delver
@@ -74,7 +73,6 @@ ach(40634),	-- You Can't Hang With Us
 ach(40660),	-- The War Within Season 1: Spelunker Supreme
 ach(40662),	-- It's Not Much, But It's Honest Work
 ach(40723),	-- Web-Wrapped in the Finest Silks \\ [PH] 11.0 Mythic VFX Unlock
-ach(40724),	-- Treasures of The Ringing Deeps \\ Treasures of the Ringing Deeps
 ach(40725),	-- War Within Delves: Endgame
 11.0.0.55000
 ach(40728),	-- Forged Finery
@@ -92,17 +90,11 @@ ach(40796),	-- This Takes Me Back
 11.0.0.55288
 ach(40819),	-- Ready to Turn
 ach(40820),	-- Raisin' Brann
-ach(40828),	-- Treasures of Azj-Kahet
 ach(40832),	-- Leave it to Weaver
 ach(40833),	-- The General's Salute
 ach(40835),	-- Vizier than Ever
 ach(40836),	-- Forging Deep Friendships
-ach(40837),	-- Adventurer of The Ringing Deeps
 ach(40838),	-- The Severed Threads
 ach(40839),	-- Delve PTR Cheat
-ach(40840),	-- Adventurer of Azj-Kahet
 ach(40843),	-- Mine Poppin'
-ach(40844),	-- Sojourner of Hallowfall
 ach(40845),	-- Hallowfall Arathi
-ach(40848),	-- Treasures of Hallowfall
-ach(40851),	-- Adventurer of Hallowfall

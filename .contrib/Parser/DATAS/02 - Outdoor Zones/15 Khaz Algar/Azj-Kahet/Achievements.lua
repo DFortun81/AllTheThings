@@ -4,6 +4,7 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(AZJ_KAHET, {
 		n(ACHIEVEMENTS, {
+			ach(40840),		-- Adventurer of Azj-Kahet (automated)
 			ach(19559, {	-- Azj-Kahet
 				crit(64786, {	-- Friends in the Dark
 					["sourceQuest"] = 78392,	-- The Tangled Web
@@ -157,71 +158,74 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--["provider"] = { "o", 456928 },
 				}),
 			})),
-			ach(40636, {	-- Sojourner of Azj-Kahet
-				crit(69159, {	-- Rak-Ush Swarmery
-					["sourceQuest"] = 79123,	-- Pernament Hire
-				}),
-				crit(69160, {	-- Pillar-nest Vosh
-					["sourceQuest"] = 79357,	-- Removing the Cap
-				}),
-				crit(69161, {	-- Gutter Work
-					["sourceQuest"] = 79715,	-- Short-Term Slaughter Solutions
-				}),
-				-- TODO: Why is this both a top level criteria -and- part of a tree? Someone at Blizzard done an oopsie? Intentional? Who knows?
-				-- crit(69161, {	-- Melody of Madness
-				-- 	["sourceQuest"] = 79715,	-- Short-Term Slaughter Solutions
-				-- }),
-				crit(69162, {	-- Melody of Madness
-					["sourceQuest"] = 80572,	-- Discordant Measure
-				}),
-				crit(69163, {	-- Pawns and Puppetry
-					-- Remove when the quest below is uncommented
-					["_noautomation"] = true,
-					--["sourceQuest"] = 80205,	-- Pulling Strings
-				}),
-				crit(69164, {	-- The Wormlands
-					["sourceQuest"] = 78897,	-- Boom or Blight
-				}),
-				crit(69165, {	-- The Wormlands
-					["sourceQuest"] = 78898,	-- Intention vs Instinct
-				}),
-				crit(69166, {	-- The Wormlands
-					["sourceQuest"] = 78902,	-- Delegated Dig
-				}),
-				crit(69167, {	-- Haggling with Mmarl
-					["sourceQuest"] = 79541,	-- Burn It With Fire
-				}),
-				crit(69168, {	-- The Second Front
-					["sourceQuest"] = 79579,	-- That Airspace is Mine(d)!
-				}),
-				crit(69169, {	-- The Second Front
-					["sourceQuest"] = 79580,	-- Offensive Counter
-				}),
-				crit(69170, {	-- Mr. Sunflower's Therapy
-					["sourceQuest"] = 83057,	-- Setting Boundaries
-				}),
-				crit(69171, {	-- The Wild Camp
-					["sourceQuest"] = 83639,	-- Open Communications
-				}),
-				crit(69172, {	-- Pillar-nest of Horrors
-					["sourceQuest"] = 79957,	-- Maggots in Your Eyes
-				}),
-				crit(69173, {	-- Subterfuge in Silk
-					["sourceQuest"] = 81688,	-- That's All
-				}),
-				crit(69174, {	-- Silken Ward
-					["sourceQuest"] = 81963,	-- The Fruits of Our Labor
-				}),
-				crit(69175, {	-- Grieve & Weave
-					["sourceQuest"] = 80502,	-- Don't Cry for Me, Azi-Kahet
-				}),
-				crit(69176, {	-- All Good Things...
-					-- Remove when the quest below is uncommented
-					["_noautomation"] = true,
-					--["sourceQuest"] = 82284,	-- Remembrance for the Fallen
-				}),
-			}),
+			ach(40636),		-- Sojourner of Azj-Kahet
+			-- TODO: Leaving this up for now because it contains some unsourced quests (so we can check automation is working fine)
+			-- ach(40636, {	-- Sojourner of Azj-Kahet
+			-- 	crit(69159, {	-- Rak-Ush Swarmery
+			-- 		["sourceQuest"] = 79123,	-- Pernament Hire
+			-- 	}),
+			-- 	crit(69160, {	-- Pillar-nest Vosh
+			-- 		["sourceQuest"] = 79357,	-- Removing the Cap
+			-- 	}),
+			-- 	crit(69161, {	-- Gutter Work
+			-- 		["sourceQuest"] = 79715,	-- Short-Term Slaughter Solutions
+			-- 	}),
+			-- 	-- TODO: Why is this both a top level criteria -and- part of a tree? Someone at Blizzard done an oopsie? Intentional? Who knows?
+			-- 	-- crit(69161, {	-- Melody of Madness
+			-- 	-- 	["sourceQuest"] = 79715,	-- Short-Term Slaughter Solutions
+			-- 	-- }),
+			-- 	crit(69162, {	-- Melody of Madness
+			-- 		["sourceQuest"] = 80572,	-- Discordant Measure
+			-- 	}),
+			-- 	crit(69163, {	-- Pawns and Puppetry
+			-- 		-- Remove when the quest below is uncommented
+			-- 		["_noautomation"] = true,
+			-- 		--["sourceQuest"] = 80205,	-- Pulling Strings
+			-- 	}),
+			-- 	crit(69164, {	-- The Wormlands
+			-- 		["sourceQuest"] = 78897,	-- Boom or Blight
+			-- 	}),
+			-- 	crit(69165, {	-- The Wormlands
+			-- 		["sourceQuest"] = 78898,	-- Intention vs Instinct
+			-- 	}),
+			-- 	crit(69166, {	-- The Wormlands
+			-- 		["sourceQuest"] = 78902,	-- Delegated Dig
+			-- 	}),
+			-- 	crit(69167, {	-- Haggling with Mmarl
+			-- 		["sourceQuest"] = 79541,	-- Burn It With Fire
+			-- 	}),
+			-- 	crit(69168, {	-- The Second Front
+			-- 		["sourceQuest"] = 79579,	-- That Airspace is Mine(d)!
+			-- 	}),
+			-- 	crit(69169, {	-- The Second Front
+			-- 		["sourceQuest"] = 79580,	-- Offensive Counter
+			-- 	}),
+			-- 	crit(69170, {	-- Mr. Sunflower's Therapy
+			-- 		["sourceQuest"] = 83057,	-- Setting Boundaries
+			-- 	}),
+			-- 	crit(69171, {	-- The Wild Camp
+			-- 		["sourceQuest"] = 83639,	-- Open Communications
+			-- 	}),
+			-- 	crit(69172, {	-- Pillar-nest of Horrors
+			-- 		["sourceQuest"] = 79957,	-- Maggots in Your Eyes
+			-- 	}),
+			-- 	crit(69173, {	-- Subterfuge in Silk
+			-- 		["sourceQuest"] = 81688,	-- That's All
+			-- 	}),
+			-- 	crit(69174, {	-- Silken Ward
+			-- 		["sourceQuest"] = 81963,	-- The Fruits of Our Labor
+			-- 	}),
+			-- 	crit(69175, {	-- Grieve & Weave
+			-- 		["sourceQuest"] = 80502,	-- Don't Cry for Me, Azi-Kahet
+			-- 	}),
+			-- 	crit(69176, {	-- All Good Things...
+			-- 		-- Remove when the quest below is uncommented
+			-- 		["_noautomation"] = true,
+			-- 		--["sourceQuest"] = 82284,	-- Remembrance for the Fallen
+			-- 	}),
+			-- }),
 			pvp(ach(40086)),	-- Tour of Duty: Azj-Kahet
+			ach(40828),		-- Treasures of Azj-Kahet (automated)
 		}),
 	}),
 })));
