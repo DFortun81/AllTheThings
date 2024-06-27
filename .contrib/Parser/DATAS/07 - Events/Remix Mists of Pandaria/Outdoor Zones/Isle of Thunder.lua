@@ -120,9 +120,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					},
 				}),
-				ach(19919, {	-- Kirin Tor Offensive
-					["races"] = ALLIANCE_ONLY,
-				}),
 				ach(20015, {	-- Looking For Group: Isle of Thunder
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -131,8 +128,27 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						20019,	-- Nalak, the Storm Lord
 					}},
 				}),
-				ach(19920, {	-- Sunreaver Onslaught
+			}),
+			n(FACTIONS, {
+				faction(1387, {	-- Kirin Tor Offensive
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(19919, {	-- Kirin Tor Offensive
+								["races"] = ALLIANCE_ONLY,
+							}),
+						}),
+					},
+				}),
+				faction(1388, {	-- Sunreaver Onslaught
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(19920, {	-- Sunreaver Onslaught
+								["races"] = HORDE_ONLY,
+							}),
+						}),
+					},
 				}),
 			}),
 			n(QUESTS, {
