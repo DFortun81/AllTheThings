@@ -19,10 +19,8 @@ root(ROOTS.Unsorted, {
 				i(222979),	-- Clay Stonecharger (PET!)
 				i(224766),	-- Faithful Dog (PET!) [These is wowhead guide!]
 				i(222964),	-- Fathom Incher (PET!)
-				i(224259),	-- Flash (PET!)
 				i(221850),	-- Freshly Webbed Kebab /Bean (PET!)
 				i(222970),	-- Fuzzy (PET!)
-				i(224261),	-- Gale (PET!)
 				i(220771),	-- Hallowed Glowfly (PET!)
 				i(221195),	-- Illskitter (PET!)
 				i(225934),	-- Lil' Bonechewer (PET!)
@@ -36,7 +34,6 @@ root(ROOTS.Unsorted, {
 				i(223624),	-- Sneef (PET!)
 				i(222966),	-- Spinner (PET!)
 				i(220782),	-- Thunder (PET!)
-				i(224260),	-- Thundo (PET!)
 				i(221848),	-- Tiberius (PET!)
 				i(225337),	-- Violet Sporbit (PET!)
 				i(221495),	-- Waddles (PET!)
@@ -53,7 +50,6 @@ root(ROOTS.Unsorted, {
 				i(221762),	-- Clot (PET!) (Frenzied Bloodtick)
 				i(221022),	-- Cowboy Bee[DNT] (PET!) (Bop???)
 				i(223626),	-- Embersting (PET!) (Couldnt find)
-				i(224579),	-- Sapphire Crab (PET!) (Sapphire Crab, might be the one from DF 10.0.0)
 				i(222975),	-- Umbral Amalgam [DNT] (PET!) (Couldnt find)
 			}),
 			filter(MOUNTS, {
@@ -878,7 +874,6 @@ root(ROOTS.Unsorted, {
 				i(216528),	-- Faded Supply Chest Key
 				i(216603),	-- Boots of the Light
 				i(216708),	-- Holy Candle
-				i(216772),	-- Whispering Explosives \\ Explosives
 				i(216982),	-- Spy List
 				i(217012),	-- Novice Actor's Chest
 				i(217013),	-- Expert Actor's Chest
@@ -915,7 +910,6 @@ root(ROOTS.Unsorted, {
 				i(211481),	-- Stomping Shoes \\ Stompin' Shoes
 				i(211797),	-- Expedition Map
 				i(211861),	-- Umbral Eggplant
-				i(211863),	-- Sizzling Magma Core
 				i(211929),	-- Ichor Coated Debris
 				i(211930),	-- Damaged Framework
 				i(211959),	-- Lost Belongings
@@ -969,7 +963,6 @@ root(ROOTS.Unsorted, {
 				i(217311),	-- The Foreman's Second Scroll
 				i(217312),	-- The Foreman's Third Scroll
 				i(217400),	-- Kobyss Lure
-				i(217414),	-- Speakeasy Passrune
 				i(217506),	-- Test Item [DNT]
 			}),
 			n(WEAPONS, {
@@ -982,7 +975,6 @@ root(ROOTS.Unsorted, {
 				i(215147),	-- Beautification Iris (TOY!)
 				i(218310),	-- Box of Puntables (TOY!)
 				i(221962),	-- Defective Escape Pod (TOY!)
-				i(224585),	-- Hanna's Locket (TOY!)
 				i(224251),	-- Memory Chord (TOY!)
 				i(215145),	-- Remembrance Stone (TOY!)
 				i(224554),	-- Silver Linin' Scepter (TOY!)
@@ -1039,7 +1031,6 @@ root(ROOTS.Unsorted, {
 			i(218080),	-- Dalaran Defender's Cloak
 			i(218081),	-- Dalaran Defender's Drape
 			i(218084),	-- Crumpled Note
-			i(218085),	-- Vial of Liquid Opal
 			i(218087),	-- <Pressurized Core Alloy>
 			i(218088),	-- <Pressurized Core Alloy>
 			i(218089),	-- <Endgame Alloy C>
@@ -1922,12 +1913,11 @@ root(ROOTS.Unsorted, {
 			i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 			i(219942),	-- 11.0 Stalwart's Sandals
 			i(219960),	-- Honey Drone Vac
-			i(219961),	-- Fresh Mug of Cinderbrew Mead \\ Cinderbrew Mead
 			i(220107),	-- Tower-Keeper's Shoes
 			i(220109),	-- Chainmail of Sina's Stalwarts
 			i(220112),	-- Cowl of Sina's Stalwarts
 			i(220113),	-- Tower-Keeper's Shoulderguards
-			i(220115),	-- Loldren's Market Audit
+
 			i(220116),	-- Completed Market Audit
 			i(220118),	-- Arathi Demolition Charge
 			i(220119),	-- Lamplighter's Handwraps
@@ -1947,7 +1937,6 @@ root(ROOTS.Unsorted, {
 			i(220140),	-- Goldengill Trout
 			i(220141),	-- Specular Rainbowfish
 			i(220142),	-- Quiet River Bass
-			i(220143),	-- Dornish Pike
 			i(220144),	-- Roaring Anglerseeker
 			i(220145),	-- Arathor Hammerfish
 			i(220146),	-- Regal Dottyback
@@ -2662,7 +2651,6 @@ root(ROOTS.Unsorted, {
 			i(222530),	-- Quiet River Bass
 			i(222531),	-- Arathor Hammerfish
 			i(222532),	-- Azj-Kahet Slum Shark
-			i(222533),	-- Goldengill Trout
 			i(222534),	-- Nibbling Minnow
 			i(222535),	-- Pale Huskfish
 			i(222536),	-- Regal Dottyback
@@ -3178,7 +3166,6 @@ root(ROOTS.Unsorted, {
 			i(224097),	-- Lucky Fishing Hat
 			i(224100),	-- Bottomless Bag of Khaz Algar General Goods
 			i(224117),	-- Ghoulfish Delight
-			i(224119),	-- Electric Eel
 			i(224148),	-- [PH] NerubianWarbeastMount (Cyan)
 			i(224149),	-- [PH] NerubianWarbeastMount (Orange)
 			i(224156),	-- Bottomless Bag of Khaz Algar General Goods
@@ -3925,7 +3912,6 @@ root(ROOTS.Unsorted, {
 			i(226284),	-- Grinded Earthen Gem
 			i(226285),	-- Silver Dornogal Rod
 			i(226286),	-- Soot-Coated Orb
-			i(226287),	-- Animated Enchanting Dust
 			i(226288),	-- Essence of Holy Fire
 			i(226289),	-- Enchanted Arathi Scroll
 			i(226290),	-- Book of Dark Magic
@@ -4093,7 +4079,6 @@ root(ROOTS.Unsorted, {
 			i(223091),	-- Design: Forger's Font Inspector
 			i(223092),	-- Design: Novelist's Specs
 			i(223267),	-- Swarmite Skyhunter
-			i(223484),	-- Kobold Mastermind's "Pivel"
 			i(223510),	-- Delver's Dirigible Schematic: Template
 			i(223646),	-- Memory of the Eastern Kingdoms
 			i(224768),	-- Delver's Dirigible Schematic: Wing-Mounted Propeller
@@ -4312,6 +4297,186 @@ root(ROOTS.Unsorted, {
 			i(228158),	-- Hexflame Coven's All-Seeing Eye
 			i(228159),	-- Living Luster's Semblance
 			i(228161),	-- Hood of Violet Rebirth
+			-----------------------------------
+			i(57394),	-- Long-Lost Wand
+			i(194374),	-- Explorers' League Rifle
+			i(198728),	-- Explorers' League Banner
+			i(211063),	-- Long-Lost Choker
+			i(212305),	-- Phial of Concentrated Ingenuity
+			i(212306),	-- Phial of Concentrated Ingenuity
+			i(212307),	-- Phial of Concentrated Ingenuity
+			i(215236),	-- Vicious Bloodstone
+			i(216526),	-- Resplendent Shield
+			i(217168),	-- Chocolate Coins
+			i(217169),	-- Cloak of Beards
+			i(217170),	-- Backup Candles
+			i(217171),	-- CANDLE KING DIARY
+			i(219429),	-- Ritual Kobyss Spear
+			i(220424),	-- zzOldFeast of the Divine Day
+			i(221492),	-- Moss Skipper
+			i(221697),	-- Artisan Gardening Hat
+			i(221699),	-- Artisan Enchanter's Hat
+			i(221762),	-- Frenzied Bloodtick
+			i(222562),	-- Darkmoon Sigil: Radiance
+			i(222788),	-- Khaz Algar Unraveling
+			i(222847),	-- Artisan Gardening Hat
+			i(222848),	-- Artisan Fishing Cap
+			i(222849),	-- Artisan Enchanter's Hat
+			i(222850),	-- Artisan Alchemist's Robe
+			i(222851),	-- Artisan Chef's Hat
+			i(223766),	-- Enchant Weapon - Oathsworn's Tenacity
+			i(223767),	-- Enchant Weapon - Oathsworn's Tenacity
+			i(223768),	-- Enchant Weapon - Oathsworn's Tenacity
+			i(224323),	-- Gleeful Glamour - Zandalari Troll
+			i(224347),	-- Gleeful Glamour - Zandalari Troll
+			i(224371),	-- Gleeful Glamour - Zandalari Troll
+			i(224616),	-- Earthforged Greathelm
+			i(224617),	-- Earthforged Haubergeon
+			i(224618),	-- Earthforged Sabatons
+			i(224619),	-- Earthforged Handguards
+			i(224620),	-- Earthforged Faulds
+			i(224621),	-- Earthforged Shoulder Scales
+			i(224623),	-- Earthforged Cuffs
+			i(224650),	-- Wax-Sealed Pouch
+			i(224721),	-- Wax-Sealed Box
+			i(224722),	-- Waxy Bundle of Resonance Crystals
+			i(224723),	-- Waxy Bundle of Leather
+			i(224724),	-- Waxy Bundle of Dust
+			i(224725),	-- Waxy Bundle of Herbs
+			i(224726),	-- Waxy Box of Rocks
+			i(224824),	-- Duskweave
+			i(224826),	-- Dawnweave
+			i(225220),	-- Chitin Needle
+			i(225221),	-- Spool of Webweave
+			i(225222),	-- Stone-Leather Swatch
+			i(225224),	-- Diaphanous Gem Shards
+			i(225225),	-- Deepstone Fragment
+			i(225226),	-- Striated Inkstone
+			i(225227),	-- Wax-sealed Records
+			i(225228),	-- Rust-Locked Mechanism
+			i(225229),	-- Earthen Induction Coil
+			i(225230),	-- Crystalline Repository
+			i(225231),	-- Powdered Fulgurance
+			i(225232),	-- Coreway Billet
+			i(225233),	-- Dense Bladestone
+			i(225234),	-- Alchemical Sediment
+			i(225235),	-- Deepstone Crucible
+			i(225741),	-- Titan Disc Fragment
+			i(226205),	-- Distilled Algari Freshwater
+			i(226313),	-- Calligrapher's Chiseled Marker
+			i(226339),	-- Nerubian Mining Supplies
+			i(226430),	-- Navigations of The Soul
+			i(227675),	-- Satchel of Surplus Herbs
+			i(227676),	-- Satchel of Surplus Ore
+			i(227681),	-- Satchel of Surplus Leather
+			i(227682),	-- Satchel of Surplus Cloth
+			i(227771),	-- Blinker Fluid
+			i(227772),	-- Cataclysmic Converter
+			i(227773),	-- Pummel-Proof Plating
+			i(228192),	-- Cracked Fel Focus
+			i(228193),	-- Chipped Demon's Blade
+			i(228194),	-- Fully Scrapped Scrap
+			i(228195),	-- Tattered Goblin Cap
+			i(228210),	-- Firelight Ruby Chip
+			i(228217),	-- Design: Solid Amber
+			i(228220),	-- Waxy Bundle
+			i(228224),	-- Spark of Legacies
+			i(228225),	-- do not use
+			i(228231),	-- Weavercloth
+			i(228232),	-- Weavercloth
+			i(228233),	-- Duskweave
+			i(228234),	-- Duskweave
+			i(228235),	-- Dawnweave
+			i(228236),	-- Dawnweave
+			i(228320),	-- Design: Binding of Binding
+			i(228329),	-- Design: Remembrance Stone
+			i(228337),	-- Satchel of Surplus Dust
+			i(228338),	-- Soul Sigil I
+			i(228339),	-- Soul Sigil II
+			i(228361),	-- Seasoned Adventurer's Cache
+			i(228362),	-- Polished Arathi Rifle
+			i(228363),	-- Shinda's Spare Greataxe
+			i(228364),	-- Endiri's Chipped Boot Knife
+			i(228365),	-- Concerned Captain's Cudgel
+			i(228366),	-- Child's Former Fishing Rod
+			i(228367),	-- Arathi Scout's Walking Stick
+			i(228368),	-- Relic of the Past VI
+			i(228369),	-- Reconstructed Ledger
+			i(228370),	-- Olbarig's Old Wristwraps
+			i(228371),	-- Olbarig's Old Bracers
+			i(228372),	-- Olbarig's Old Cuffs
+			i(228373),	-- Olbarig's Old Vambraces
+			i(228374),	-- Shoulders of Kix'arak's Bane
+			i(228375),	-- Belt of Kix'arak's Bane
+			i(228376),	-- Boots of Kix'arak's Bane
+			i(228377),	-- Gauntlets of Kix'arak's Bane
+			i(228378),	-- Pristine Council's Seal
+			i(228379),	-- Design: Captured Starlight
+			i(228380),	-- Earthmender's Signet
+			i(228387),	-- Crumbling Bismuth
+			i(228388),	-- Damp Doll
+			i(228390),	-- Left Boot
+			i(228391),	-- Right Boot
+			i(228392),	-- Corroded Pocket Watch
+			i(228393),	-- Shattered Lantern
+			i(228394),	-- Lost Note
+			i(228395),	-- Mud Clump
+			i(228396),	-- Dead Fish
+			i(228398),	-- Angry Rock
+			i(228399),	-- Sad Rock
+			i(228400),	-- Happy Rock
+			i(228401),	-- Bubbling Mycobloom Culture
+			i(228402),	-- Bubbling Mycobloom Culture
+			i(228403),	-- Bubbling Mycobloom Culture
+			i(228404),	-- Petal Powder
+			i(228405),	-- Petal Powder
+			i(228406),	-- Petal Powder
+			i(228409),	-- Valrin's Sweetrolls
+			i(228412),	-- Scouting Map: The Skies of the Dragon Isles
+			i(228413),	-- Lampyridae Caller
+			i(228414),	-- Frayed Wiring
+			i(228415),	-- Adelgonn's Journal
+			i(228416),	-- Steelvein's Manifesto
+			i(228417),	-- Emergency Healthstone
+			i(228418),	-- Noncandescent Smithing Choker
+			i(228419),	-- Mineral-Sparkled Cape
+			i(228420),	-- Unsevered Thread
+			i(228421),	-- Recipe: Melted Candlebar
+			i(228422),	-- Recipe: Ghoulfish Delight
+			i(228423),	-- Recipe: Pep-In-Your-Step
+			i(228424),	-- Recipe: Cinder Nectar
+			i(228425),	-- Grips of Fading Luminescence
+			i(228426),	-- Gloves of Irradiating Imprisonment
+			i(228427),	-- Wraps of Depleting Brilliance
+			i(228428),	-- Gauntlets of Dimming Fluorescence
+			i(228429),	-- Reflective Rock
+			i(228430),	-- Mucky Rock
+			i(228431),	-- Rock Buddy
+			i(228434),	-- Stew-Stained Cape
+			i(228435),	-- Wine-Dyed Leggings
+			i(228436),	-- United Arathi's Jerkin
+			i(228437),	-- Salamanther-Scale Greaves
+			i(228438),	-- Derill's Unused Visor
+			i(228439),	-- Mitts of Menial Tasks
+			i(228440),	-- Chitin-Laced Shoulderguards
+			i(228441),	-- Overseer's Oversized Clasp
+			i(228442),	-- Rak-Ush Rancher's Waders
+			i(228443),	-- Liberator's Tarnished Band
+			i(228444),	-- Silken Ward Signet
+			i(228445),	-- Deceased Nerubian's Slippers
+			i(228446),	-- Albert's Last Gloves
+			i(228447),	-- Spider-Fang Epaulets
+			i(228448),	-- Long-Forgotten Girdle
+			i(228449),	-- Tasty Iron Bar
+			i(228450),	-- Edible Copper Nuggets
+			i(228451),	-- Scrumptious Gold Bar
+			i(228452),	-- Deepest, Darkest Black Ink
+			i(228453),	-- Extra Large Bag of Popped Pebbles
+			i(228454),	-- Collector's Commemorative Proscenium Playbill
+			i(228455),	-- Bolt of Bouldercloth
+			i(228456),	-- Bouldercloth
+			i(228457),	-- Lightspark Sky Academy Gradebook
+			i(228458),	-- Bouldercloth Bag
 		})),
 	}),
 	expansion(EXPANSION.DF, {

@@ -1340,10 +1340,8 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		-- 10.1.5
 		expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 			i(208097),	-- Flamethrower
-			i(208108),	-- Madam Shadow's Old Grimoire
 			i(205259),	-- Order Soul
 			i(207096),	-- Paracausal Chest
-			i(206474),	-- Smelly Cheese
 			i(207102),	-- TESTING ITEM DELETE ME
 			i(205146),	-- Weyrnstone
 		})),

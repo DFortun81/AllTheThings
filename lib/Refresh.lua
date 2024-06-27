@@ -305,8 +305,8 @@ app.AddEventHandler("OnRefreshCollectionsDone", function()
 	end
 	IsRefreshing = nil
 end)
-app.AddEventHandler("OnStartup", function()
-	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	ATTAccountWideData = accountWideData
 end)
 
 else	-- Classic

@@ -106,8 +106,8 @@ else
 	end)
 end
 app.CreateDeathClass = app.CreateClass("DeathTracker", "deaths", fields);
-app.AddEventHandler("OnStartup", function()
-	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	ATTAccountWideData = accountWideData
 	ATTCharacterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true);
 end)
 end

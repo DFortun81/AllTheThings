@@ -316,8 +316,8 @@ app.AddEventHandler("OnLoad", function()
 	UpdateRunner = api.Runner
 	CacheFilters();
 end)
-app.AddEventHandler("OnStartup", function()
-	OneTimeQuests = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true).OneTimeQuests;
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	OneTimeQuests = accountWideData.OneTimeQuests;
 end)
 app.AddEventHandler("OnRecalculate_NewSettings", UpdateCosts)
 

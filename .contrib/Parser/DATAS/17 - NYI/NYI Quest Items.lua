@@ -375,7 +375,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(204711),	-- Crystal Focus
 			i(204331),	-- Djaradin Pillar Shard
 			i(204347),	-- Pool Contaminant
-			i(202271),	-- Pouch of Gold Coins
 			i(205410),	-- Pungent Morsel
 			i(202239),	-- Senegos's Old Spellbook
 			i(204197),	-- Shard of an Earth Portal
@@ -384,7 +383,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(202875),	-- Snail Lasso
 			i(204327),	-- Titan Machine Part
 			i(204175),	-- Unknown Core
-			i(203707),	-- Water Bucket
 		})),
 
 		-- 10.1.5

@@ -36,6 +36,8 @@
 40133@@@[DNT] Discoverer's Delight - Reach Level 40 in Phase 3.5 - Update (hidden)
 40135@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)
 40137@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
+1.15.3.55244
+19563@@@UNUSED Bael'Gar Defeated (Daily)
 2.5.1.39399
 15018@@@Infernal Gladiator
 15019@@@Gladiator: Season 1
@@ -15192,3 +15194,82 @@
 40815@@@Leave No Treasure Unfound: The Underkeep
 40816@@@Leave No Treasure Unfound: The Waterworks
 40817@@@A Delver's Bounty
+11.0.0.55288
+457@@@Realm First! Level 80 (Legacy)
+458@@@Realm First! Level 80 Rogue (Legacy)
+459@@@Realm First! Level 80 Warrior (Legacy)
+460@@@Realm First! Level 80 Mage (Legacy)
+461@@@Realm First! Level 80 Death Knight (Legacy)
+462@@@Realm First! Level 80 Hunter (Legacy)
+463@@@Realm First! Level 80 Warlock (Legacy)
+464@@@Realm First! Level 80 Priest (Legacy)
+465@@@Realm First! Level 80 Paladin (Legacy)
+466@@@Realm First! Level 80 Druid (Legacy)
+467@@@Realm First! Level 80 Shaman (Legacy)
+1404@@@Realm First! Level 80 Gnome (Legacy)
+1405@@@Realm First! Level 80 Blood Elf (Legacy)
+1406@@@Realm First! Level 80 Draenei (Legacy)
+1407@@@Realm First! Level 80 Dwarf (Legacy)
+1408@@@Realm First! Level 80 Human (Legacy)
+1409@@@Realm First! Level 80 Night Elf (Legacy)
+1410@@@Realm First! Level 80 Orc (Legacy)
+1411@@@Realm First! Level 80 Tauren (Legacy)
+1412@@@Realm First! Level 80 Troll (Legacy)
+1413@@@Realm First! Level 80 Forsaken (Legacy)
+4998@@@Realm First! Level 85 Shaman (Legacy)
+4999@@@Realm First! Level 85 (Legacy)
+5000@@@Realm First! Level 85 Druid (Legacy)
+5001@@@Realm First! Level 85 Paladin (Legacy)
+5002@@@Realm First! Level 85 Priest (Legacy)
+5003@@@Realm First! Level 85 Warlock (Legacy)
+5004@@@Realm First! Level 85 Hunter (Legacy)
+5005@@@Realm First! Level 85 Death Knight (Legacy)
+5006@@@Realm First! Level 85 Mage (Legacy)
+5007@@@Realm First! Level 85 Warrior (Legacy)
+5008@@@Realm First! Level 85 Rogue (Legacy)
+6523@@@Realm First! Level 90 Shaman (Legacy)
+6524@@@Realm First! Level 90 (Legacy)
+6743@@@Realm First! Level 90 Druid (Legacy)
+6744@@@Realm First! Level 90 Paladin (Legacy)
+6745@@@Realm First! Level 90 Priest (Legacy)
+6746@@@Realm First! Level 90 Warlock (Legacy)
+6747@@@Realm First! Level 90 Hunter (Legacy)
+6748@@@Realm First! Level 90 Death Knight (Legacy)
+6749@@@Realm First! Level 90 Mage (Legacy)
+6750@@@Realm First! Level 90 Warrior (Legacy)
+6751@@@Realm First! Level 90 Rogue (Legacy)
+6752@@@Realm First! Level 90 Monk (Legacy)
+40231@@@The War Within Pathfinder
+40674@@@Skyriding Glyphs: Lost Mines
+40803@@@Fungal Folly Discoveries
+40806@@@Earthcrawl Mines Discoveries
+40807@@@Kriegval's Rest Discoveries
+40808@@@Mycomancer Cavern Discoveries
+40809@@@Nightfall Sanctum Discoveries
+40810@@@Skittering Breach Discoveries
+40811@@@Tak-Rethan Abyss Discoveries
+40812@@@The Dread Pit Discoveries
+40813@@@The Sinkhole Discoveries
+40814@@@The Spiral Weave Discoveries
+40815@@@The Underkeep Discoveries
+40816@@@The Waterworks Discoveries
+40819@@@Ready to Turn
+40820@@@Raisin' Brann
+40822@@@Explore Azj-Kahet
+40825@@@Explore The Ringing Deeps
+40826@@@Explore Hallowfall
+40828@@@Treasures of Azj-Kahet
+40831@@@Explore the Isle of Dorn
+40832@@@Leave it to Weaver
+40833@@@The General's Salute
+40835@@@Vizier than Ever
+40836@@@Forging Deep Friendships
+40837@@@Adventurer of The Ringing Deeps
+40838@@@The Severed Threads
+40839@@@Delve PTR Cheat
+40840@@@Adventurer of Azj-Kahet
+40843@@@Mine Poppin'
+40844@@@Sojourner of Hallowfall
+40845@@@Hallowfall Arathi
+40848@@@Treasures of Hallowfall
+40851@@@Adventurer of Hallowfall

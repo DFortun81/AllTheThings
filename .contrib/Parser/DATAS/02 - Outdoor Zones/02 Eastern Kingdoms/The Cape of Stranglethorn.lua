@@ -258,10 +258,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26487, {	-- Akiris by the Bundle (H)
 					["qg"] = 43095,	-- Sassy Hardwrench
-					["sourceQuest"] = 26489,	-- It's You!!
+					["sourceQuest"] = 28704,	-- Warchief's Command: The Cape of Stranglethorn!
 					["coord"] = { 34.6, 29.5, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
+					["races"] = exclude(GOBLIN, HORDE_ONLY),
 					["groups"] = {
 						objective(1, {	-- 0/6 Akiris Reed
 							["provider"] = { "i", 4029 },	-- Akiris Reed
@@ -1087,10 +1087,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26489, {	-- It's You!!
 					["qg"] = 43095,	-- Sassy Hardwrench
+					["sourceQuest"] = 28704,	-- Warchief's Command: The Cape of Stranglethorn!
 					["coord"] = { 34.8, 29.4, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { GOBLIN },
-					["isBreadcrumb"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/6 Akiris Reed
 							["provider"] = { "i", 4029 },	-- Akiris Reed

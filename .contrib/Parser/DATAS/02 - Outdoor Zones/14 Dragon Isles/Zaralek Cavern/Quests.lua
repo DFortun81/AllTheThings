@@ -352,6 +352,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["sourceQuests"] = { 72919 },	-- Raked Over the Coals
 					["provider"] = { "n", 199958 },	-- Ebyssian
 					["coord"] = { 56.0, 54.3, ZARALEK_CAVERN },
+					["g"] = {
+						i(203707),	-- Water Bucket (QI!)
+					},
 				}),
 				q(75145, {	-- In the Wake of the Ashes
 					["sourceQuests"] = { 72920 },	-- The Endless Burning Sky

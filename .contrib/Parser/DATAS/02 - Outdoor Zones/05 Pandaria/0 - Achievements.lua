@@ -306,26 +306,42 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			}),
 		}),
 		ach(6856, {	-- Ballad of Liu Lang
-			crit(19793),	-- The Birthplace of Liu Lang (Valley of the Four Winds)
-			crit(19794),	-- A Most Famous Bill of Sale (Valley of the Four Winds)
-			crit(19795),	-- The Wandering Widow (Valley of the Four Winds)
-			crit(19796),	-- Waiting for the Turtle (Krasarang Wilds)
+			crit(19793, {	-- The Birthplace of Liu Lang
+				["provider"] = { "o", 213459 },
+				["coord"] = { 20.3, 55.9, VALLEY_OF_THE_FOUR_WINDS },
+			}),	
+			crit(19794, { -- A Most Famous Bill of Sale
+				["provider"] = { "o", 213460 },
+				["coord"] = { 55.0, 47.3, VALLEY_OF_THE_FOUR_WINDS },
+			}),	
+			crit(19795, {	-- The Wandering Widow
+				["provider"] = { "o", 213461 },
+				["coord"] = { 34.6, 64.0, VALLEY_OF_THE_FOUR_WINDS },
+			}),	
+			crit(19796, {	-- Waiting for the Turtle
+				["provider"] = { "o", 215765 },
+				["coord"] = { 72.2, 31.1, KRASARANG_WILDS },
+			}),	
 		}),
 		ach(6716, {	-- Between a Saurok and a Hard Place
 			crit(19618, {	-- The Saurok
+				["provider"] = { "o", 213327 },
 				["coord"] = { 67.7, 29.3, THE_JADE_FOREST },
 			}),
 			crit(19619, {	-- The Defiant
 				["description"] = "At the north end of the circular room at the back of the cave.",
+				["provider"] = { "o", 213328 },
 				["coords"] = {
 					{ 73.2, 94.6, KUN_LAI_SUMMIT },	-- entrance
 					{ 54.9, 16.9, 434 },	-- actual object
 				},
 			}),
 			crit(19620, {	-- The Deserters
+				["provider"] = { "o", 213329 },
 				["coord"] = { 67.4, 60.8, DREAD_WASTES },
 			}),
 			crit(19621, {	-- The Last Stand
+				["provider"] = { "o", 213330 },
 				["coord"] = { 33.3, 25.0, KRASARANG_WILDS },
 			}),
 		}),
@@ -345,12 +361,22 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 		})),
 		ach(7285),	-- Every Day I'm Pand-a-ren
 		ach(6846, {	-- Fish Tales
-			crit(19768),	-- Watersmithing (Jade Forest)
+			crit(19768, {	-- Watersmithing
+				["provider"] = { "o", 215779 },
+				["coord"] = { 66.0, 87.5, THE_JADE_FOREST },
+			}),
 			crit(19769, {	-- Waterspeakers
+				["provider"] = { "o", 215780 },
 				["coord"] = { 61.52, 34.88, VALLEY_OF_THE_FOUR_WINDS },
 			}),
-			crit(19771),	-- Origins (Krasarang Wilds)
-			crit(19772),	-- Role Call (Kun-Lai Summit)
+			crit(19771, {	-- Origins
+				["provider"] = { "o", 215782 },
+				["coord"] = { 30.6, 38.5, KRASARANG_WILDS },
+			}),
+			crit(19772, {	-- Role Call
+				["provider"] = { "o", 215783 },
+				["coord"] = { 74.5, 83.5, KUN_LAI_SUMMIT },
+			}),
 		}),
 		ach(7439, {	-- Glorious!
 			["sym"] = {{"achievement_criteria"}},
@@ -360,17 +386,36 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			},
 		}),
 		ach(6850, {	-- Hozen in the Mist
-			crit(19781),	-- Hozen Speech (Jade Forest)
-			crit(19782),	-- Hozen Maturity (Krasarang Wilds)
+			crit(19781, {	-- Hozen Speech
+				["provider"] = { "o", 211990 },
+				["coord"] = { 26.5, 28.3, THE_JADE_FOREST },
+			}),
+			crit(19782, {	-- Hozen Maturity
+				["provider"] = { "o", 211993 },
+				["coord"] = { 52.4, 87.6, KRASARANG_WILDS },
+			}),
 			crit(19783, {	-- Embracing the Passions
+				["provider"] = { "o", 215785 },
 				["coord"] = { 83.22, 21.16, VALLEY_OF_THE_FOUR_WINDS },
 			}),
-			crit(19784),	-- The Hozen Ravage (Kun-Lai Summit)
+			crit(19784, {	-- The Hozen Ravage
+				["provider"] = { "o", 211994 },
+				["coord"] = { 45.7, 61.9, KUN_LAI_SUMMIT },
+			}),
 		}),
 		ach(7230, {	-- Legend of the Brewfathers
-			crit(20415),	-- Quan Tou Kuo the Two Fisted (Krasarang Wilds)
-			crit(20416),	-- Xin Wo Yin the Broken Hearted (Jade Forest)
-			crit(20417),	-- Ren Yun the Blind (Kun-Lai Summit)
+			crit(20415, {	-- Quan Tou Kuo the Two Fisted
+				["provider"] = { "o", 213407 },
+				["coord"] = { 81.4, 11.4, KRASARANG_WILDS },
+			}),
+			crit(20416, {	-- Xin Wo Yin the Broken Hearted
+				["provider"] = { "o", 213512 },
+				["coord"] = { 37.5, 30.1, THE_JADE_FOREST },
+			}),
+			crit(20417, {	-- Ren Yun the Blind
+				["provider"] = { "o", 213438 },
+				["coord"] = { 44.7, 52.5, KUN_LAI_SUMMIT },
+			}),
 		}),
 		petbattle(ach(8518, {	-- Master of the Master
 			crit(23620),	-- Blingtron 4000
@@ -676,23 +721,58 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 		}),
 		ach(6855, {	-- The Seven Burdens of Shaohao
 			crit(19785, {	-- The Emperor's Burden - Part 1
+				["provider"] = { "o", 215799 },
 				["coord"] = { 47.0, 45.1, THE_JADE_FOREST },
 			}),
-			crit(19790),	-- The Emperor's Burden - Part 2 (Kun-Lai Summit)
+			crit(19790, {	-- The Emperor's Burden - Part 2
+				["provider"] = { "o", 215797 },
+				["coord"] = { 43.8, 51.2, KUN_LAI_SUMMIT },
+			}),	
 			crit(19786, {	-- The Emperor's Burden - Part 3
+				["provider"] = { "o", 213421 },
 				["coord"] = { 55.8, 56.8, THE_JADE_FOREST },
 			}),
-			crit(19787),	-- The Emperor's Burden - Part 4 (Krasarang Wilds)
-			crit(19789),	-- The Emperor's Burden - Part 5 (Townlong Steppes)
-			crit(19788),	-- The Emperor's Burden - Part 6 (Kun-Lai Summit)
-			crit(19791),	-- The Emperor's Burden - Part 7 (Kun-Lai Summit)
-			crit(19792),	-- The Emperor's Burden - Part 8 (Vale of Eternal Blossoms)
+			crit(19787, {	-- The Emperor's Burden - Part 4
+				["provider"] =  {"o", 213422 },
+				["coord"] = { 40.4, 56.6, KRASARANG_WILDS },
+			}),	
+			crit(19789, {	-- The Emperor's Burden - Part 5
+				["provider"] = { "o", 213445 },
+				["coord"] = { 37.7, 62.9, TOWNLONG_STEPPES },
+			}),
+			crit(19788, {	-- The Emperor's Burden - Part 6
+				["provider"] = { "o", 213443 },
+				["coord"] = { 67.7, 48.3, KUN_LAI_SUMMIT },
+			}),
+			crit(19791, {	-- The Emperor's Burden - Part 7
+				["provider"] = { "o", 213455 },
+				["coord"] = { 40.9, 42.3, KUN_LAI_SUMMIT },
+			}),
+			crit(19792, {	-- The Emperor's Burden - Part 8
+				["provider"] = { "o", 213456 },
+				-- #if AFTER BFA
+				["description"] = "This can only be found in the non-N'zoth phase. Speak to Zidormi atop the Seat of Knowledge to travel to the past.",
+				-- #endif
+				["coord"] = { 67.7, 44.2, VALE_OF_ETERNAL_BLOSSOMS },
+			}),
 		}),
 		ach(6847, {	-- The Song of the Yaungol
-			crit(19773),	-- Yaungol Tactics (Kun-Lai Summit)
-			crit(19774),	-- Dominance (Townlong Steppes)
-			crit(19775),	-- Yaungoil (Kun-Lai Summit)
-			crit(19776),	-- Trapped in a Strange Land (Townlong Steppes)
+			crit(19773, {	-- Yaungol Tactics
+				["provider"] = { "o", 213417 },
+				["coord"] = { 50.5, 79.3, KUN_LAI_SUMMIT },
+			}),
+			crit(19774, {	-- Dominance
+				["provider"] = { "o", 213418 },
+				["coord"] = { 65.5, 50.0, TOWNLONG_STEPPES },
+			}),
+			crit(19775, {	-- Yaungoil
+				["provider"] = { "o", 215798 },
+				["coord"] = { 71.7, 63.0, KUN_LAI_SUMMIT },
+			}),
+			crit(19776, {	-- Trapped in a Strange Land
+				["provider"] = { "o", 213420 },
+				["coord"] = { 84.1, 72.8, TOWNLONG_STEPPES },
+			}),
 		}),
 		ach(6350, {	-- To All the Squirrels I Once Caressed?
 			crit(20817,  {	-- Amethyst Spiderling
@@ -786,11 +866,36 @@ root(ROOTS.Zones, m(PANDARIA, applyclassicphase(MOP_PHASE_ONE, bubbleDown({ ["ti
 			}),
 		}),
 		ach(6858, {	-- What Is Worth Fighting For
-			crit(19801),	-- Pandaren Fighting Tactics (Valley of the Four Winds)
-			crit(19802),	-- Always Remember (Vale of Eternal Blossoms)
-			crit(19803),	-- The First Monks (Jade Forest)
-			crit(19804),	-- Together, We Are Strong (Vale of Eternal Blossoms)
-			crit(19809),	-- Victory in Kun-Lai (Kun-Lai Summit)
+			crit(19801, {	-- Pandaren Fighting Tactics
+				["provider"] = { "o", 213413 },
+				["coord"] = { 18.8, 31.8, VALLEY_OF_THE_FOUR_WINDS },
+			}),
+			crit(19802, {	-- Always Remember
+				["provider"] = { "o", 213414 },
+				["coords"] = { 
+					{ 53.0, 68.3, VALE_OF_ETERNAL_BLOSSOMS },
+					-- #if AFTER BFA
+					{ 53.0, 68.3, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
+					-- #endif
+				},
+			}),
+			crit(19803, {	-- The First Monks
+				["provider"] = { "o", 213415 },
+				["coord"] = { 35.7, 30.5, THE_JADE_FOREST },
+			}),
+			crit(19804, {	-- Together, We Are Strong
+				["provider"] = { "o", 213416 },
+				["coords"] = { 
+					{ 26.6, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
+					-- #if AFTER BFA
+					{ 26.6, 20.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
+					-- #endif
+				},
+			}),
+			crit(19809, {	-- Victory in Kun-Lai
+				["provider"] = { "o", 213511 },
+				["coord"] = { 63.1, 40.8, KUN_LAI_SUMMIT },
+			}),
 		}),
 		ach(8078, {	-- Zul'Again
 			crit(22733, {	-- Zandalari Scouts Slain slain (10) (Townlong Steppes, Dread Wastes, Kun-Lai Summit, Krasarang Wilds, The Jade Forest)

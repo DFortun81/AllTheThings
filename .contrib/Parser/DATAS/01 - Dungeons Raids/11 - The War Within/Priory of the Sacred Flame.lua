@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1267, {	-- Priory of the Sacred Flame
-		--["coord"] = { X, Y, HALLOWFALL },
+		["coord"] = { 41.3, 49.3, HALLOWFALL },
 		["maps"] = {
 			2308,	-- Sanctified Grounds
 			2309,	-- Priory of the Sacred Flame

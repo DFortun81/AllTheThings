@@ -248,8 +248,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80242, {	-- Taelloch Twist
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219555 },	-- Bronze Timekeeper
 					["coord"] = { 66.6, 68.7, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20345),	-- Taelloch Twist: Bronze
@@ -258,8 +257,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80248, {	-- Taelloch Twist - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219555 },	-- Bronze Timekeeper
 					["coord"] = { 66.6, 68.7, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20348),	-- Taelloch Twist Advanced: Bronze
@@ -268,8 +266,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80254, {	-- Taelloch Twist - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219555 },	-- Bronze Timekeeper
 					["coord"] = { 66.6, 68.7, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20351),	-- Taelloch Twist Reverse: Bronze

@@ -379,45 +379,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 44.7, 47.2, DORNOGAL },	-- probably moved in new builds
 			}),
 			-- end
-			-- How Scandalous! (not sure when this one pop, but I think it wasn't here when I runing first time around here)
-			q(80207, {	-- How Scandalous!
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 219393 },	-- Aldra
-				["coord"] = { 62.7, 21.7, DORNOGAL },
-			}),
-			q(79521, {	-- Seizing Evidence
-				["sourceQuests"] = { 80207 },	-- How Scandalous!
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
-				["g"] = {
-					i(217499),	-- Assorted Chisels (QI!)
-					i(217500),	-- High-Quality Coal (QI!)
-					i(217501),	-- Moleskin Apron (QI!)
-					i(217498),	-- Seized Shipment (QI!)
-				},
-			}),
-			q(79522, {	-- Withheld Information
-				["sourceQuests"] = { 79521 },	-- Seizing Evidence
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
-			}),
-			q(79523, {	-- Something Hidden
-				["sourceQuests"] = { 79522 },	-- Withheld Information
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
-				["g"] = {
-					i(217505),	-- Bag of Glowing Shards (QI!)
-					i(217504),	-- Bundle of Receipts (QI!)
-					i(217502),	-- Infused Underclay (QI!)
-					i(217503),	-- Nerubian Silk Ropes (QI!)
-				},
-			}),
-			q(79525, {	-- Report to the Councilward
-				["sourceQuests"] = { 79523 },	-- Something Hidden
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
-			}),
-			-- end
 			-- Crafting Orders
 			q(84260, {	-- Crafting to Order
 				["provider"] = { "n", 219108 },	-- Roldira

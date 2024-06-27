@@ -21864,3 +21864,28 @@
 228604@@@Sound Stalker - 11.0 Quest - Ringing Deeps - Earthen Crowd
 228613@@@Hunting Skyrazor
 228884@@@Air Bubbles
+11.0.0.55288
+216466@@@Unbound Fighter
+216467@@@Unbound Stormrider
+216468@@@Horde Wolfaxe
+216523@@@G.E.A.R Pilot
+216524@@@G.E.A.R Bomber
+222899@@@Storm Gryphon
+229128@@@Valeera Sanguinar
+229137@@@Fire Stalker [DNT]
+229148@@@Taoshi
+229149@@@Garona Halforcen
+229150@@@Lord Jorach Ravenholdt
+229267@@@Kirin Tor Defender
+229305@@@Armored Ironbreaker
+229307@@@Veteran Blood Knight
+229314@@@Night Elf Starcaller
+229316@@@Forsaken Warlock
+229319@@@Master Tidesage
+229322@@@Gilnean Scrapper
+229328@@@Suramar Chronomancer
+229329@@@Warborn Crusher
+229335@@@Electricity Stalker [DNT]
+229340@@@Stormwind Knight
+229341@@@Hallowfall Lightblade
+229342@@@Zandalari Prelate

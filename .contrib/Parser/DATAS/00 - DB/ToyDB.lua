@@ -1345,6 +1345,7 @@ i(204405);	-- Stuffed Bear
 -- PATCH 11.0.0 --
 ------------------
 i(224552);	-- Cave Spelunker's Torch
+i(224585);	-- Hanna's Locket
 i(224643);	-- Pet-Sized Candle
 i(216665);	-- Warband Bank Distance Inhibitor
 -- UNSORTED --
@@ -1353,7 +1354,6 @@ i(219387);	-- Barrel of Fireworks
 i(215147);	-- Beautification Iris
 i(218310);	-- Box of Puntables
 i(221962);	-- Defective Escape Pod
-i(224585);	-- Hanna's Locket
 i(224251);	-- Memory Chord
 i(215145);	-- Remembrance Stone
 i(224554);	-- Silver Linin' Scepter

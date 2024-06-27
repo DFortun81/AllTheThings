@@ -8,6 +8,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
 				["g"] = bubbleDownRep(FACTION_THE_ASSEMBLY_OF_THE_DEEPS, {
 					{		-- RENOWN 1 --
+						i(228418, {	-- Noncandescent Smithing Choker
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
+						}),
 					}, {	-- RENOWN 2 --
 						i(223063, {	-- Technique: Contract: Assembly of the Deeps (RECIPE!)
 							["cost"] = {{"i", ARTISANS_ACUITY, 150}},
@@ -44,13 +47,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}, {	-- RENOWN 11 --
 					}, {	-- RENOWN 12 --
 						i(224653, {	-- Machine-Learned Engineering Notes
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
+							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
 						}),
 						i(224654, {	-- Machine-Learned Inscription Notes
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
+							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
 						}),
 						i(224651, {	-- Machine-Learned Mining Notes
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
+							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
 						}),
 					}, {	-- RENOWN 13 --
 					}, {	-- RENOWN 14 --

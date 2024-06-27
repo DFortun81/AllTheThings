@@ -16,6 +16,8 @@ i(147349);	-- Spiked Armor Set \\ ed Armor Set
 -- BFA Minor Visions
 i(169294);	-- Resilient Soul
 i(173888);	-- Shard of Self Sacrifice \\ Lingering Soul
+-- SL
+i(187603);	-- The Mad Duke's Tea
 
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 

@@ -1362,6 +1362,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 					["timeline"] = { ADDED_10_1_5 },
 					["g"] = {
 						spell(417884),	-- Fiendish Imps
+						i(208108),	-- Madam Shadow's Old Grimoire
 					},
 				}),
 				q(76163, {	-- A Lighter Shade of Fel

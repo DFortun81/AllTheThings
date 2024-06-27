@@ -44,12 +44,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77723),	-- Level 8
 		q(77724),	-- Level 9
 		--q(77727),	-- Level 10 (was already attached to achievement 40455 (Buddy System), but I not sure where it grab it from?)
+		q(77728),	-- Level 11
 	}),
 	m(2269, {	-- Earthcrawl Mines
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40806),	-- Leave No Treasure Unfound: Earthcrawl Mines
+				ach(40806),	-- Earthcrawl Mines Discoveries
 			}),
 			n(RARES, {
 				n(223541),	-- Stolen Loader
@@ -90,7 +91,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 51.9, 65.5, ISLE_OF_DORN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40803),	-- Leave No Treasure Unfound: Fungal Foly
+				ach(40803),	-- Fungal Folly Discoveries
 			}),
 			n(TREASURES, {
 				o(455516, {	-- Sturdy Chest
@@ -123,7 +124,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 62.1, 42.7, ISLE_OF_DORN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40807),	-- Leave No Treasure Unfound: Kriegval's Rest
+				ach(40807),	-- Kriegval's Rest Discoveries
 			}),
 			n(TREASURES, {
 				o(455510, {	-- Sturdy Chest
@@ -149,7 +150,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 74.1, 37.7, THE_RINGING_DEEPS },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40812),	-- Leave No Treasure Unfound: The Dread Pit
+				ach(40812),	-- The Dread Pit Discoveries
 			}),
 			n(RARES, {
 				-- rare was - Treasure Wraith (n: 208728)
@@ -178,7 +179,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 46.3, 48.5, THE_RINGING_DEEPS },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40816),	-- Leave No Treasure Unfound: The Waterworks
+				ach(40816),	-- The Waterworks Discoveries
 			}),
 			n(RARES, {
 				-- rare was - murloc, wraith
@@ -200,7 +201,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 47.7, 83.0, 2251 },
 					["questID"] = 83456,
 				}),
-				-- opened with coffer key, unsure if it is limited per week or qid per dungeon
 				o(413590, {	-- Bountiful Coffer
 					["coord"] = { 45.3, 95.3, 2251 },
 					["questID"] = 83319,
@@ -215,7 +215,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 65.5, 61.5, HALLOWFALL },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40810),	-- Leave No Treasure Unfound: Skittering Breach
+				ach(40810),	-- Skittering Breach Discoveries
 			}),
 			n(RARES, {
 				-- rare was - wraith
@@ -244,7 +244,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 50.6, 53.2, HALLOWFALL },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40813),	-- Leave No Treasure Unfound: The Sinkhole
+				ach(40813),	-- The Sinkhole Discoveries
 			}),
 			n(TREASURES, {
 				--o(xx, {	-- Sturdy Chest // bugged/uninteractable?
@@ -270,7 +270,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 34.6, 46.8, HALLOWFALL },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40809),	-- Leave No Treasure Unfound: Nightfall Sanctum
+				ach(40809),	-- Nightfall Sanctum Discoveries
 			}),
 			n(TREASURES, {
 				o(455494, {	-- Sturdy Chest
@@ -292,7 +292,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 71.1, 31.1, HALLOWFALL },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40808),	-- Leave No Treasure Unfound: Mycomancer Cavern
+				ach(40808),	-- Mycomancer Cavern Discoveries
 			}),
 			n(RARES, {
 				-- rares - wraith and sporecap
@@ -320,8 +320,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	m(2347, {	-- The Spiral Weave
 		["coord"] = { 46.6, 25.7, AZJ_KAHET },
 		["g"] = {
+			i(216772),	-- Whispering Explosives (QI!)
 			n(ACHIEVEMENTS, {
-				ach(40814),	-- Leave No Treasure Unfound: The Spiral Weave
+				ach(40814),	-- The Spiral Weave Discoveries
 			}),
 			-- no rares
 			n(TREASURES, {
@@ -329,6 +330,22 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 46.0, 46.4, 2347 },
 					["questID"] = 83681,
 				}),
+				o(455531, {	-- Sturdy Chest
+					["coord"] = { 50.0, 46.2, 2347 },
+					["questID"] = 83649,
+				}),
+				o(455506, {	-- Sturdy Chest
+					["coord"] = { 36.3, 10.5, 2347 },
+					["questID"] = 83661,
+				}),
+				-- same objectID as other chest
+				--o(413590, {	-- Bountiful Coffer
+				--	["coord"] = { 48.2, 48.2, 2347 },
+				--	["questID"] = 83320,
+				--	["g"] = {
+				--		i(220520),	-- Radiant Echo (TODO: remove when more nice source gonna be found out)
+				--	},
+				--}),
 			}),
 		},
 	}),
@@ -336,7 +353,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 55.5, 74.9, AZJ_KAHET },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40811),	-- Leave No Treasure Unfound: Tak-Rethan Abyss
+				ach(40811),	-- Tak-Rethan Abyss Discoveries
 			}),
 			n(RARES, {
 				-- rare - wraith
@@ -368,7 +385,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 58.1, 65.8, 2213 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40815),	-- Leave No Treasure Unfound: The Underkeep
+				ach(40815),	-- The Underkeep Discoveries
 			}),
 			n(TREASURES, {
 				o(455509, {	-- Sturdy Chest

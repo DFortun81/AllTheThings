@@ -18,7 +18,7 @@ r(444799),	-- Sanguine Dogfish
 r(444800),	-- Spiked Sea Raven
 r(444801),	-- Queen's Lurefish
 r(444802),	-- Cursed Ghoulfish
-r(444803),	-- Awoken Coelecanth \\ Kah, King of the Deep
+r(444803),	-- Awoken Coelacanth \\ Awoken Coelecanth \\ Kah, King of the Deep
 11.0.0.54605
 r(454441),	-- Becoming an Algari Angler
 r(454442),	-- Fishing Skill and You
@@ -58,7 +58,7 @@ r(444799),	-- Sanguine Dogfish
 r(444800),	-- Spiked Sea Raven
 r(444801),	-- Queen's Lurefish
 r(444802),	-- Cursed Ghoulfish
-r(444803),	-- Awoken Coelecanth \\ Kah, King of the Deep
+r(444803),	-- Awoken Coelacanth \\ Awoken Coelecanth \\ Kah, King of the Deep
 11.0.0.54605
 r(454441),	-- Becoming an Algari Angler
 r(454442),	-- Fishing Skill and You

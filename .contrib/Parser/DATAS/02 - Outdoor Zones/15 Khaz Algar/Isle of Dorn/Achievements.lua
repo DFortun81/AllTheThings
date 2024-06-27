@@ -61,9 +61,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["sourceQuest"] = 78574,	-- Boss of the Bosk
 				}),
 				crit(67055, {	-- Behind Closed Doors
-					-- Remove when the quest below is uncommented
-					["_noautomation"] = true,
-					--["sourceQuest"] = 79530,	-- TODO: quest name (could be HQT?)
+					["sourceQuest"] = 79530,	-- Bad Business
 				}),
 				crit(67059, {	-- Seven Soldiers
 					["sourceQuest"] = 78999,	-- Heart of a Hero
@@ -104,6 +102,35 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 				crit(66216, {	-- The First Blow
 					["sourceQuest"] = 78546,	-- Recompense
+				}),
+			}),
+			ach(40434, {	-- Treasures of the Isle of Dorn
+				crit(68197, {	-- Tree's Treasure
+					["_quests"] = { 83242 },
+				}),
+				crit(68198, {	-- Turtle's Thanks
+					["_quests"] = { 82716 },
+				}),
+				crit(68199, {	-- Magical Treasure Chest
+					["_quests"] = { 83243 },
+				}),
+				crit(68201, {	-- Mysterious Orb
+					["_quests"] = { 83244 },
+				}),
+				crit(68202, {	-- 	Mushroom Cap
+					["_quests"] = { 83245 },
+				}),
+				crit(68203, {	-- 	Thak's Treasure
+					["_quests"] = { 82246 },
+				}),
+				crit(68204, {	-- 	Mosswool Flower
+					["_quests"] = { 83246 },
+				}),
+				crit(68205, {	-- 	Kobold Pickaxe
+					["_quests"] = { 82325 },
+				}),
+				crit(68206, {	-- 	Jade Pearl
+					["_quests"] = { 82287 },
 				}),
 			}),
 			pvp(ach(40083)),	-- Tour of Duty: Isle of Dorn

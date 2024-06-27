@@ -170,6 +170,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 205424 },	-- Chromie
 					["coord"] = { 52.1, 81.6, THALDRASZUS },
 					["g"] = {
+						i(206474),	-- Smelly Cheese
 						i(206447),	-- Task List for Adventurers (QI!)
 					},
 				}),

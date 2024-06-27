@@ -1642,10 +1642,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(158572),	-- Shimmering Rune
 				i(157766),	-- Vial of Nightmare Fog
 			}),
-			expansion(EXPANSION.BFA, 2.5, {
-				i(171528),	-- Reign of the Dead
-				i(171549),	-- Reign of the Unliving
-			}),
 			expansion(EXPANSION.BFA, 3.0, {
 				i(173426),	-- Black Empire trinkets
 			}),

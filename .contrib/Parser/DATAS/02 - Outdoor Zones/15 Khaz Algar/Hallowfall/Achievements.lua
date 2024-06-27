@@ -4,8 +4,6 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(HALLOWFALL, {
 		n(ACHIEVEMENTS, {
-			-- INFO: Should auto-fill with quests as they are sourced in ATT
-			ach(40308),		-- Beacon of Hope
 			ach(40150),		-- Children's Entertainer
 			ach(20594),		-- Flamegard's Hope
 			ach(20598, {	-- Hallowfall
@@ -34,7 +32,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					40689,	-- Skyriding Glyphs: Velhan's Claim
 				}},
 			}),
-			ach(40313),		-- Igniting the Keyflames
 			ach(40729),		-- Light's Gambit Champion
 			-- INFO: Should auto-fill with quests as they are sourced in ATT
 			ach(40360),		-- Life on the Farm
@@ -42,22 +39,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			ach(40618),		-- Lost and Found
 			ach(40151),		-- Mereldar Menace
 			ach(40082),		-- Never Enough
-			ach(40311),		-- Sharing the Light
 			ach(40685, {	-- Skyriding Glyphs: Bleak Sand
 				-- TODO
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
 			ach(40684, {	-- Skyriding Glyphs: Dunelle's Kindness
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 69.9, 44.2, HALLOWFALL },
 			}),
 			ach(40688, {	-- Skyriding Glyphs: Fortune's Fall
 				-- TODO
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
 			ach(40686, {	-- Skyriding Glyphs: Mereldar
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 43.3, 52.8, HALLOWFALL },
 			}),
 			ach(40687, {	-- Skyriding Glyphs: Priory of the Sacred Flame
 				-- TODO
@@ -76,14 +70,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
 			ach(40690, {	-- Skyriding Glyphs: Tenir's Ascent
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 57.6, 64.6, HALLOWFALL },
 			}),
 			ach(40689, {	-- Skyriding Glyphs: Velhan's Claim
 				-- TODO
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
-			ach(40312),		-- Starting the Flames
 			pvp(ach(40085)),	-- Tour of Duty: Hallowfall
 		}),
 	}),

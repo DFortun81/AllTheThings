@@ -388,7 +388,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			["g"] = {
 				mount(423869),	-- Avatar of Flame (MOUNT!)
 				i(209945),	-- Lil' Wrathion (PET!)
-				
+
 				-- Twilight's Hammer Regalia Transmog Set (Added with Cataclysm)
 				i(224380, {	-- Twilight's Hammer Regalia Helmet
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
@@ -435,7 +435,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 					["sourceID"] = 220348,
 					["f"] = CLOTH,
 				}),
-				
+
 				-- Town-In-A-Box Starter Set Toy (Added with Cataclysm)
 				i(216893, {	-- Goblin Town-in-a-Box
 					["timeline"] = { ADDED_4_4_0, REMOVED_4_4_0 },
@@ -687,9 +687,6 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			["description"] = "These rewards were made available to anyone who purchased The War Within Epic Edition.",
 			["g"] = {
 				ach(19030),	-- Squally
-				i(208751),	-- Squally (PET!)
-				i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
-				i(208883),	-- Sandbox Storm Gryphon (TOY!)
 				i(209336, {	-- Ensemble: Stormrider's Attire
 					i(209330),	-- Stormrider's Buckle
 					i(209321),	-- Stormrider's Boots
@@ -701,6 +698,17 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 					i(209328),	-- Stormrider's Pants
 					i(209332),	-- Stormrider's Wristguards
 				}),
+				i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
+				i(208883),	-- Sandbox Storm Gryphon (TOY!)
+				i(208751),	-- Squally (PET!)
+				q(82809, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- Gryphons of a Feather
+					["provider"] = { "n", 209681 },	-- Squally
+					["g"] = {
+						i(224259),	-- Flash (PET!)
+						i(224261),	-- Gale (PET!)
+						i(224260),	-- Thundo (PET!)
+					},
+				})),
 			},
 		}),
 	})),
