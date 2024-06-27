@@ -418,12 +418,14 @@ local function SettingsFilters(item)
 end
 local function SettingsExtraFilters(item, extraFilters)
 	if SettingsFilters(item) then
-		local filter
-		for name,_ in pairs(extraFilters) do
-			filter = api.Filters[name]
-			if filter then
-				-- if not filter(item) then PrintExclusionCause(name, item) return end
-				if not filter(item) then return end
+		if extraFilters then
+			local filter
+			for name,_ in pairs(extraFilters) do
+				filter = api.Filters[name]
+				if filter then
+					-- if not filter(item) then PrintExclusionCause(name, item) return end
+					if not filter(item) then return end
+				end
 			end
 		end
 		return true;

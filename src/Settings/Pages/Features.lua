@@ -170,6 +170,8 @@ if app.IsRetail then
 		settings:SetTooltipSetting("Filter:MiniList:Timerunning", self:GetChecked())
 		AddTimerunningToCurrentInstance()
 		app.LocationTrigger(true)
+		-- changing this now needs to update Costs again since they now depend on this Filter
+		app.HandleEvent("OnRecalculate_NewSettings")
 	end)
 	checkboxFilterMiniListTimerunning:SetATTTooltip(L.FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP)
 	checkboxFilterMiniListTimerunning:AlignBelow(checkboxAutomaticallyOpenMiniList, 1)
