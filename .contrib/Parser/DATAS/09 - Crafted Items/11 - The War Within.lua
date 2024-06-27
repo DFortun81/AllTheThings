@@ -342,8 +342,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80609, 450231); -- Everforged Longsword
 			FirstCraft(80611, 450233); -- Everforged Mace
 			FirstCraft(80612, 450234); -- Everforged Greataxe
-			--FirstCraft(XXXXX, 450232); -- Everforged Warglaive
-			--FirstCraft(XXXXX, 450238); -- Charged Claymore
+			FirstCraft(80610, 450232); -- Everforged Warglaive
+			FirstCraft(80616, 450238); -- Charged Claymore
 			--FirstCraft(XXXXX, 450242); -- Charged Slicers
 			--FirstCraft(XXXXX, 450236); -- Charged Runeaxe
 			--FirstCraft(XXXXX, 450237); -- Charged Facesmasher
@@ -406,8 +406,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		})),
 		filter(MISC, {
 			i(222520), -- Coreforged Repair Hammer+
-			i(222521), -- Coreforged Repair Hammer++
-			i(222522), -- Coreforged Repair Hammer+++
+			i(222522), -- Coreforged Repair Hammer++
+			i(222521), -- Coreforged Repair Hammer+++
 			i(222505), -- Ironclaw Razorstone+
 			i(222506), -- Ironclaw Razorstone++
 			i(222507), -- Ironclaw Razorstone+++
@@ -442,7 +442,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		filter(REAGENTS, {
 			i(222423), -- Sanctified Alloy+
 			i(222424), -- Sanctified Alloy++
-			i(222435), -- Sanctified Alloy+++
+			i(222425), -- Sanctified Alloy+++
 			i(222420), -- Charged Alloy+
 			i(222421), -- Charged Alloy++
 			i(222422), -- Charged Alloy+++
@@ -459,8 +459,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222515), -- Tempered Framework++
 			i(222516), -- Tempered Framework+++
 			i(222499), -- Forged Framework+
-			i(222450), -- Forged Framework++
-			i(222451), -- Forged Framework+++			
+			i(222500), -- Forged Framework++
+			i(222501), -- Forged Framework+++			
 		}),
 		n(WEAPONS, {
 			i(222439), -- Charged Dagger
