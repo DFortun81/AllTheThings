@@ -1035,7 +1035,7 @@ localize(L.HEADER_ICONS, {
 	[-1000357] = "Interface/Icons/ability_bossmagistrix_timewarp1",
 	[-1000358] = "Interface/Icons/achievement_guildperk_everybodysfriend",
 	[-1000359] = _.asset("Interface_Vendor"),
-	[-1000360] = "Interface/Icons/achievement_guildperk_everybodysfriend",
+	[-1000360] = "Interface/Icons/inv_cape_special_treasure_c_01",
 	[-1000361] = _.asset("Expansion_SL"),
 	[-1000362] = _.asset("Expansion_DF"),
 	[-1000363] = "136101",

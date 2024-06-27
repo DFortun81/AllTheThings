@@ -4,7 +4,7 @@
 WARBAND = createHeader({
 	readable = "Warband",
 	-- TODO: Find a better icon for this
-	icon = "Interface\\Icons\\achievement_guildperk_everybodysfriend",
+	icon = "Interface\\Icons\\inv_cape_special_treasure_c_01",
 	text = {
 		en = "Warband",
 	},

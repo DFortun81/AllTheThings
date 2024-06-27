@@ -1,12 +1,4 @@
 11.0.0.54311
-ach(40138),	-- Algari Dungeoneer \\ Algarian Dungeoneer
-ach(40139),	-- Algari Dungeon Damage Dealer \\ Algarian Dungeon Damage Dealer
-ach(40140),	-- Algari Dungeon Healer \\ Algarian Dungeon Healer
-ach(40141),	-- Algari Dungeon Tank \\ Algarian Dungeon Tank
-ach(40210),	-- Deephaul Ravine Victory
-ach(40211),	-- Deephaul Ravine Veteran
-ach(40215),	-- Deepwind Ravine Shutout \\ Deephaul Ravine Perfection
-ach(40216),	-- Deephaul Ravine Expedience
 ach(40217),	-- Battleground Blitzer
 ach(40219),	-- Battleground Blitzest
 ach(40220),	-- Setting Records
@@ -113,14 +105,7 @@ ach(40588),	-- Awakening The Machine: Wave 40
 ach(40589),	-- Awakening The Machine: Wave 50
 ach(40591),	-- Khaz Algar Diplomat
 ach(40606),	-- Flat Earthen
-ach(40607),	-- Wandering in the Ravine
-ach(40608),	-- Running in the Ravine
-ach(40612),	-- Sprinting in the Ravine
-ach(40613),	-- Resilient Runner
 ach(40614),	-- Gobblin' with Glublurp
-ach(40615),	-- Unexpected Arrival
-ach(40616),	-- Unexpected Arrivals
-ach(40617),	-- Deepholla
 ach(40619),	-- Mine Poppin'
 ach(40620),	-- Back to the Wall
 ach(40622),	-- Biblo Archivist
