@@ -1,9 +1,4 @@
 11.0.0.54675
-ach(40464),	-- Bounty Master
-ach(40465),	-- Unbound Bounty
-ach(40466),	-- Unbound Glory
-ach(40467),	-- Unbound Glory
-ach(40468),	-- Unbound Glory
 ach(40469),	-- I'm Bringing Nerub-ack
 ach(40472),	-- Battle Mender: The War Within Season 1
 ach(40473),	-- Not So Quick Fix
