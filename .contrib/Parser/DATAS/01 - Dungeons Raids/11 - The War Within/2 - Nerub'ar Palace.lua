@@ -139,6 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						40266,	-- Missed 'Em by That Much
 					}},
 				}),
+				ach(40469),	-- I'm Bringing Nerub-ack
 				ach(40256),	-- Nerub-ar Palace Guild Run
 				ach(40257),	-- Heroic: Nerub-ar Palace Guild Run
 				ach(40258),	-- Mythic: Queen Ansurek Guild Run

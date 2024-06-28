@@ -651,6 +651,9 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(40102),	-- Dawn of a new Delve
 			ach(40306),	-- Allied Races: Earthen
 			ach(40432),	-- Nemesis (Solo)
+			ach(40505),	-- Fate of the Kirin Tor
+			ach(40510),	-- One Ping Only
+			ach(40511),	-- Rare Within
 		})),
 	}),
 }));

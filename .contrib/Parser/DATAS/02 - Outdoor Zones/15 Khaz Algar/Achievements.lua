@@ -195,6 +195,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				40703, 	-- The Ringing Deeps Glyph Hunter
 			}},
 		}),
+		ach(40762),		-- Khaz Algar Lore Hunter (automated)
 		petbattle(ach(40194, {	-- Khaz Algar Safari
 			crit(67292, {	-- Chitin Burrower
 				-- TODO

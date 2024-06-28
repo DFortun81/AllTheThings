@@ -64,6 +64,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
             -- TODO
             -- ["timeline"] = { removed_when },
         }),
+        ach(40591, {	-- Khaz Algar Diplomat
+            ["sym"] = {{ "achievement_criteria" }},
+        }),
         ach(40251),	-- Many Echoes
         ach(40250),	-- The First Echo
     }),

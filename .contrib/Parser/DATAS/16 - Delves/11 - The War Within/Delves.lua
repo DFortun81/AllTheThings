@@ -116,6 +116,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40098),	-- Immortal Spelunker
 		ach(40446),	-- I TAKE Candle!
 		ach(40459),	-- I've Got a Flying Machine!
+		ach(40789),	-- I've Got More Flying Machine?! (automated)
 		ach(40452),	-- Just Keep Swimming
 		ach(40103, {	-- Nemesis
 			["timeline"] = { REMOVED_11_1_0 },
@@ -136,6 +137,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				40811,	-- Tak-Rethan Abyss Discoveries
 				40815,	-- The Underkeep Discoveries
 			}},
+		}),
+		ach(40523, {	-- On Brand
+			["timeline"] = { REMOVED_11_1_0 },
+			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(40458),	-- Rare Finding
 		ach(40453),	-- Spider Senses

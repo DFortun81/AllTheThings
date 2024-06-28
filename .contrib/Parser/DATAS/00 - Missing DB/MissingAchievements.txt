@@ -1,23 +1,11 @@
 11.0.0.54675
-ach(40469),	-- I'm Bringing Nerub-ack
-ach(40472),	-- Battle Mender: The War Within Season 1
 ach(40473),	-- Not So Quick Fix
 ach(40475),	-- To All the Slimes I Love
 ach(40504),	-- Rocked to Sleep
-ach(40505),	-- Fate of the Kirin Tor
-ach(40509),	-- Awakening The Machine: Wave 10
-ach(40510),	-- One Ping Only
-ach(40511),	-- Rare Within
-ach(40523),	-- On Brand
 ach(40524),	-- Good Deed Delver
 ach(40539),	-- The Derby Dash
 11.0.0.54774
 ach(40585),	-- Super Size Snuffling
-ach(40586),	-- Awakening The Machine: Wave 20
-ach(40587),	-- Awakening The Machine: Wave 30
-ach(40588),	-- Awakening The Machine: Wave 40
-ach(40589),	-- Awakening The Machine: Wave 50
-ach(40591),	-- Khaz Algar Diplomat
 ach(40606),	-- Flat Earthen
 ach(40614),	-- Gobblin' with Glublurp
 ach(40619),	-- Mine Poppin'
@@ -38,13 +26,8 @@ ach(40725),	-- War Within Delves: Endgame
 ach(40728),	-- Forged Finery
 ach(40730),	-- Love is in the Lair
 ach(40732),	-- Heavy-Handed
-ach(40762),	-- Khaz Algar Lore Hunter
 ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
 ach(40788),	-- I Got the Keys
-11.0.0.55087
-ach(40789),	-- I've Got More Flying Machine?!
-ach(40792),	-- Solo Shuffle Medic: The War Within
-ach(40795),	-- Battleground Blitz Medic: The War Within
 11.0.0.55185
 ach(40796),	-- This Takes Me Back
 11.0.0.55288

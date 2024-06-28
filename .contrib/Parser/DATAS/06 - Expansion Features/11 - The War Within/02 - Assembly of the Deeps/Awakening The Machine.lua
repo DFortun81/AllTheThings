@@ -11,6 +11,13 @@ AWAKENING_THE_MACHINE = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(THE_ASSEMBLY_OF_THE_DEEPS, {
 		n(AWAKENING_THE_MACHINE, {
+			n(ACHIEVEMENTS, {
+				ach(40509),	-- Awakening The Machine: Wave 10
+				ach(40586),	-- Awakening The Machine: Wave 20
+				ach(40587),	-- Awakening The Machine: Wave 30
+				ach(40588),	-- Awakening The Machine: Wave 40
+				ach(40589),	-- Awakening The Machine: Wave 50
+			}),
 			n(VENDORS, {
 				n(225189, {	-- R-K-MEDES <Awakening The Machine>
 					["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
