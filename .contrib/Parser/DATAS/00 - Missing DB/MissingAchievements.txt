@@ -1,9 +1,6 @@
 11.0.0.54675
 ach(40473),	-- Not So Quick Fix
-ach(40475),	-- To All the Slimes I Love
 ach(40504),	-- Rocked to Sleep
-ach(40524),	-- Good Deed Delver
-ach(40539),	-- The Derby Dash
 11.0.0.54774
 ach(40585),	-- Super Size Snuffling
 ach(40606),	-- Flat Earthen
@@ -13,23 +10,11 @@ ach(40620),	-- Back to the Wall
 ach(40622),	-- Biblo Archivist
 11.0.0.54935
 ach(40624),	-- Itsy Bitsy Spider
-ach(40625),	-- The Missing Lynx
-ach(40628),	-- Notable Machines
 ach(40632),	-- No Harm Ever Came From Reading A Book
 ach(40633),	-- The Unseeming
 ach(40634),	-- You Can't Hang With Us
-ach(40660),	-- The War Within Season 1: Spelunker Supreme
-ach(40662),	-- It's Not Much, But It's Honest Work
-ach(40723),	-- Web-Wrapped in the Finest Silks \\ [PH] 11.0 Mythic VFX Unlock
-ach(40725),	-- War Within Delves: Endgame
 11.0.0.55288
-ach(40819),	-- Ready to Turn
-ach(40820),	-- Raisin' Brann
 ach(40832),	-- Leave it to Weaver
 ach(40833),	-- The General's Salute
 ach(40835),	-- Vizier than Ever
-ach(40836),	-- Forging Deep Friendships
-ach(40838),	-- The Severed Threads
-ach(40839),	-- Delve PTR Cheat
 ach(40843),	-- Mine Poppin'
-ach(40845),	-- Hallowfall Arathi

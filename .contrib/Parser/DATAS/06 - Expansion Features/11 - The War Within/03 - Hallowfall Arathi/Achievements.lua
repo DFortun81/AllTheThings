@@ -4,7 +4,7 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(HALLOWFALL_ARATHI, {
 		n(ACHIEVEMENTS, {
-
+			ach(40845),	-- Hallowfall Arathi
 		}),
 	}),
 })));

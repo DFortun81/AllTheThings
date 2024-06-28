@@ -17,6 +17,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				ach(40587),	-- Awakening The Machine: Wave 30
 				ach(40588),	-- Awakening The Machine: Wave 40
 				ach(40589),	-- Awakening The Machine: Wave 50
+				ach(40662),	-- It's Not Much, But It's Honest Work
 			}),
 			n(VENDORS, {
 				n(225189, {	-- R-K-MEDES <Awakening The Machine>

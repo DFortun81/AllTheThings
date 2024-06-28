@@ -19,6 +19,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(69608),	-- Gundargaz
 			}),
 			ach(40507),		-- Hanging Tight
+			ach(40628),		-- Notable Machines (automated)
 			ach(40731),		-- Panhandled
 			ach(40678, {	-- Skyriding Glyphs: Abyssal Excavation
 				["coord"] = { 63.7, 95.0, THE_RINGING_DEEPS },
@@ -133,6 +134,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					40680,	-- Skyriding Glyphs: The Waterworks
 				}},
 			}),
+			ach(40475),	-- To All the Slimes I Love (automated)
 			pvp(ach(40084)),	-- Tour of Duty: The Ringing Deeps
 			ach(40724),		-- Treasures of The Ringing Deeps (automated)
 		}),

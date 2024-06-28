@@ -4,7 +4,7 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(THE_ASSEMBLY_OF_THE_DEEPS, {
 		n(ACHIEVEMENTS, {
-
+			ach(40836),	-- Forging Deep Friendships
 		}),
 	}),
 })));

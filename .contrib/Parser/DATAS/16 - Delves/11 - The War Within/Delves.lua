@@ -107,6 +107,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				40103,	-- Nemesis
 			}},
 		}),
+		ach(40524),	-- Good Deed Delver
 		ach(40732),	-- Heavy-Handed
 		ach(40431, {	-- Hunting the Hunter
 			["timeline"] = { REMOVED_11_1_0 },
@@ -145,7 +146,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["timeline"] = { REMOVED_11_1_0 },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
+		ach(40820, {	-- Raisin' Brann
+			["timeline"] = { REMOVED_11_1_0 },
+		}),
 		ach(40458),	-- Rare Finding
+		ach(40819),	-- Ready to Turn
 		ach(40453),	-- Spider Senses
 		ach(40445),	-- Sporesweeper
 		ach(40100),	-- Undying Caver

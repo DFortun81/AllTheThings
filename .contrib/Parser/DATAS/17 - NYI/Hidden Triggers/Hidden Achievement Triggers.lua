@@ -3562,6 +3562,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 			-- 11.0.0.55185
 			ach(40800),	-- Warband Tutorial Complete - Teach Warband Bank Summon (DNT)
+
+			-- 11.0.0.55288
+			ach(40839),	-- Delve PTR Cheat
 		})),
 	}),
 });

@@ -361,6 +361,7 @@ HeaderAssignments = {
 	["The Scepter of the Shifting Sands"] = -1000334,
 	["The Scourge Invasion"] = -1000335,
 	["The Sealing of the Halls of Valor"] = -1000279,
+	["The Severed Threads"] = -1000455,
 	["The Silithyst Must Flow"] = -1000336,
 	["The Troll Incursion"] = -1000266,
 	["The Upper Necropolis"] = -1000067,
@@ -454,4 +455,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000056,
 	["Zskera Vaults"] = -1000262,
 };
-NextHeaderID = -1000455;
+NextHeaderID = -1000456;

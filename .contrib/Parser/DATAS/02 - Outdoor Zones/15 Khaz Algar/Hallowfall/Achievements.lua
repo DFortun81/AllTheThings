@@ -88,6 +88,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
 			ach(40844),		-- Sojourner of Hallowfall (automated)
+			ach(40625),		-- The Missing Lynx (automated)
 			pvp(ach(40085)),	-- Tour of Duty: Hallowfall
 			ach(40848),		-- Treasures of Hallowfall (automated)
 		}),

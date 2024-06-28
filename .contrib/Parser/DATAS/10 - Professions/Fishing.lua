@@ -866,6 +866,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			ach(40491),	-- 90 Algari Seekerthread
 			ach(40492),	-- 100 Algari Seekerthread
 			ach(19415),	-- Algari Fisherman
+			ach(40539),	-- The Derby Dash (automated)
 		}),
 	})),
 })));
