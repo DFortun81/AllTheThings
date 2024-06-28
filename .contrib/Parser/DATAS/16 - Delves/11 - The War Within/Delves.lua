@@ -14,11 +14,132 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40451),	-- Buddy System III
 		ach(40450),	-- Buddy System II
 		ach(40455),	-- Buddy System
+		ach(40437, bubbleDown({ ["_noautomation"] = true, }, {	-- Delver of the Depths
+			crit(68295),	-- Earthcrawl Mines
+			crit(68296),	-- Fungal Folly
+			crit(68297),	-- Kriegval's Rest
+			crit(68298),	-- Mycomancer Cavern
+			crit(68299),	-- Nightfall Sanctum
+			crit(68300),	-- Skittering Breach
+			crit(68303),	-- Tak-Rethan Abyss
+			crit(68302),	-- The Dread Pit
+			crit(68301),	-- The Sinkhole
+			crit(68304),	-- The Spiral Weave
+			crit(68305),	-- The Underkeep
+			crit(68306),	-- The Waterworks
+		})),
+		ach(40447, bubbleDown({ ["_noautomation"] = true, }, {		-- Delver of the Depths II
+			crit(68307),	-- Earthcrawl Mines
+			crit(68308),	-- Fungal Folly
+			crit(68309),	-- Kriegval's Rest
+			crit(68310),	-- Mycomancer Cavern
+			crit(68311),	-- Nightfall Sanctum
+			crit(68312),	-- Skittering Breach
+			crit(68313),	-- Tak-Rethan Abyss
+			crit(68314),	-- The Dread Pit
+			crit(68315),	-- The Sinkhole
+			crit(68316),	-- The Spiral Weave
+			crit(68317),	-- The Underkeep
+			crit(68318),	-- The Waterworks
+		})),
+		ach(40448, bubbleDown({ ["_noautomation"] = true, }, {		-- Delver of the Depths III
+			crit(68319),	-- Earthcrawl Mines
+			crit(68320),	-- Fungal Folly
+			crit(68321),	-- Kriegval's Rest
+			crit(68322),	-- Mycomancer Cavern
+			crit(68323),	-- Nightfall Sanctum
+			crit(68324),	-- Skittering Breach
+			crit(68325),	-- Tak-Rethan Abyss
+			crit(68326),	-- The Dread Pit
+			crit(68327),	-- The Sinkhole
+			crit(68328),	-- The Spiral Weave
+			crit(68329),	-- The Underkeep
+			crit(68330),	-- The Waterworks
+		})),
+		ach(40449, bubbleDown({ ["_noautomation"] = true, }, {		-- Delver of the Depths IV
+			crit(68331),	-- Earthcrawl Mines
+			crit(68332),	-- Fungal Folly
+			crit(68333),	-- Kriegval's Rest
+			crit(68334),	-- Mycomancer Cavern
+			crit(68335),	-- Nightfall Sanctum
+			crit(68336),	-- Skittering Breach
+			crit(68337),	-- Tak-Rethan Abyss
+			crit(68338),	-- The Dread Pit
+			crit(68339),	-- The Sinkhole
+			crit(68340),	-- The Spiral Weave
+			crit(68341),	-- The Underkeep
+			crit(68342),	-- The Waterworks
+		})),
+		ach(40454),	-- Daystormer
+		ach(40460),	-- Delve Deep
+		ach(40462),	-- Delve Deeper
+		ach(40463),	-- Delve Deepest
+		ach(40537, {	-- Delve Loremaster: War Within
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				40527,	-- Earthcrawl Mines Stories
+				40525,	-- Fungal Folly Stories
+				40526,	-- Kriegval's Rest Stories
+				40529,	-- The Dread Pit Stories
+				40528,	-- The Waterworks Stories
+				40533,	-- Skittering Breach Stories
+				40532,	-- The Sinkhole Stories
+				40530,	-- Nightfall Sanctum Stories
+				40531,	-- Mycomancer Cavern Stories
+				40536,	-- The Spiral Weave Stories
+				40535,	-- Tak-Rethan Abyss Stories
+				40534,	-- The Underkeep Stories
+			}},
+		}),
+		ach(40438, {	-- Glory of the Delver
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				40519,	-- War Within Delves: Tier 8
+				40537,	-- Delve Loremaster: War Within
+				40506,	-- Leave No Treasure Unfound
+				40445,	-- Sporesweeper
+				40446,	-- I TAKE Candle!
+				40452,	-- Just Keep Swimming
+				40453,	-- Spider Senses
+				40454,	-- Daystormer
+				-- TODO: fix when Blizzard fixes duplication
+				--40506,	-- Leave No Treasure Unfound
+				40103,	-- Nemesis
+			}},
+		}),
+		ach(40431, {	-- Hunting the Hunter
+			["timeline"] = { REMOVED_11_1_0 },
+		}),
+		ach(40433, {	-- Hunting the Hunter (Solo)
+			["timeline"] = { REMOVED_11_1_0 },
+		}),
 		ach(40098),	-- Immortal Spelunker
+		ach(40446),	-- I TAKE Candle!
+		ach(40459),	-- I've Got a Flying Machine!
+		ach(40452),	-- Just Keep Swimming
 		ach(40103, {	-- Nemesis
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
+		ach(40506, {	-- Leave No Treasure Unfound
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				40806,	-- Earthcrawl Mines Discoveries
+				40803,	-- Fungal Folly Discoveries
+				40807,	-- Kriegval's Rest Discoveries
+				40812,	-- The Dread Pit Discoveries
+				40816,	-- The Waterworks Discoveries
+				40810,	-- Skittering Breach Discoveries
+				40813,	-- The Sinkhole Discoveries
+				40809,	-- Nightfall Sanctum Discoveries
+				40808,	-- Mycomancer Cavern Discoveries
+				40814,	-- The Spiral Weave Discoveries
+				40811,	-- Tak-Rethan Abyss Discoveries
+				40815,	-- The Underkeep Discoveries
+			}},
+		}),
 		ach(40458),	-- Rare Finding
+		ach(40453),	-- Spider Senses
+		ach(40445),	-- Sporesweeper
 		ach(40100),	-- Undying Caver
 		ach(40631),	-- War Within Delves: Tier 1
 		ach(40512),	-- War Within Delves: Tier 2
@@ -31,6 +152,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40520),	-- War Within Delves: Tier 9
 		ach(40521),	-- War Within Delves: Tier 10
 		ach(40726),	-- War Within Delves: Tier 11
+		ach(40436),	-- You're Getting a Delve!
 	}),
 	n(QUESTS, {
 		-- Brann Bronzebeard leveling quest, probably better to move to hqts?
@@ -51,6 +173,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40806),	-- Earthcrawl Mines Discoveries
+				ach(40527, bubbleDown({ ["_noautomation"] = true, }, {	-- Earthcrawl Mines Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			n(RARES, {
 				n(223541),	-- Stolen Loader
@@ -92,6 +217,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40803),	-- Fungal Folly Discoveries
+				ach(40525, bubbleDown({ ["_noautomation"] = true, }, {	-- Fungal Folly Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			n(TREASURES, {
 				o(455516, {	-- Sturdy Chest
@@ -125,6 +253,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40807),	-- Kriegval's Rest Discoveries
+				ach(40526, bubbleDown({ ["_noautomation"] = true, }, {	-- Kriegval's Rest Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			n(TREASURES, {
 				o(455510, {	-- Sturdy Chest
@@ -151,6 +282,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40812),	-- The Dread Pit Discoveries
+				ach(40529, bubbleDown({ ["_noautomation"] = true, }, {	-- The Dread Pit Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			n(RARES, {
 				-- rare was - Treasure Wraith (n: 208728)
@@ -180,6 +314,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40816),	-- The Waterworks Discoveries
+				ach(40528, bubbleDown({ ["_noautomation"] = true, }, {	-- The Waterworks Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			n(RARES, {
 				-- rare was - murloc, wraith
@@ -216,6 +353,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40810),	-- Skittering Breach Discoveries
+				ach(40533, bubbleDown({ ["_noautomation"] = true, }, {	-- Skittering Breach Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			n(RARES, {
 				-- rare was - wraith
@@ -245,6 +385,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40813),	-- The Sinkhole Discoveries
+				ach(40532, bubbleDown({ ["_noautomation"] = true, }, {	-- The Sinkhole Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			n(TREASURES, {
 				--o(xx, {	-- Sturdy Chest // bugged/uninteractable?
@@ -271,6 +414,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40809),	-- Nightfall Sanctum Discoveries
+				ach(40530, bubbleDown({ ["_noautomation"] = true, }, {	-- Nightfall Sanctum Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			n(TREASURES, {
 				o(455494, {	-- Sturdy Chest
@@ -293,6 +439,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40808),	-- Mycomancer Cavern Discoveries
+				ach(40531, bubbleDown({ ["_noautomation"] = true, }, {	-- Mycomancer Cavern Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			n(RARES, {
 				-- rares - wraith and sporecap
@@ -323,6 +472,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(216772),	-- Whispering Explosives (QI!)
 			n(ACHIEVEMENTS, {
 				ach(40814),	-- The Spiral Weave Discoveries
+				ach(40536, bubbleDown({ ["_noautomation"] = true, }, {	-- The Spiral Weave Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			-- no rares
 			n(TREASURES, {
@@ -354,6 +506,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40811),	-- Tak-Rethan Abyss Discoveries
+				ach(40535, bubbleDown({ ["_noautomation"] = true, }, {	-- Tak-Rethan Abyss Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			n(RARES, {
 				-- rare - wraith
@@ -386,6 +541,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40815),	-- The Underkeep Discoveries
+				ach(40534, bubbleDown({ ["_noautomation"] = true, }, {	-- The Underkeep Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
 			}),
 			n(TREASURES, {
 				o(455509, {	-- Sturdy Chest

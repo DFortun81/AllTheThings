@@ -650,6 +650,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(40101),	-- Hitting one's Stride
 			ach(40102),	-- Dawn of a new Delve
 			ach(40306),	-- Allied Races: Earthen
+			ach(40432),	-- Nemesis (Solo)
 		})),
 	}),
 }));

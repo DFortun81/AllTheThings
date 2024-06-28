@@ -1,22 +1,3 @@
-11.0.0.54605
-ach(40431),	-- Hunting the Hunter
-ach(40432),	-- Nemesis (Solo)
-ach(40433),	-- Hunting the Hunter (Solo)
-ach(40436),	-- You're Getting a Delve!
-ach(40437),	-- Delver of the Depths
-ach(40438),	-- Glory of the Delver
-ach(40445),	-- Sporesweeper \\ [NYI] Spore Sweeper
-ach(40446),	-- I TAKE Candle! \\ [NYI] I TAKE Candle!
-ach(40447),	-- Delver of the Depths II
-ach(40448),	-- Delver of the Depths III
-ach(40449),	-- Delver of the Depths IV
-ach(40452),	-- Just Keep Swimming \\ [NYI] Kobyss Challenge
-ach(40453),	-- Spider Senses \\ [NYI] Nerubian Challenge
-ach(40454),	-- Daystormer \\ [NYI] Order of Night Challenge
-ach(40459),	-- I've Got a Flying Machine! \\ [PH] Delver's Dirigible
-ach(40460),	-- Delve Deep \\ 10 Delves Completed
-ach(40462),	-- Delve Deeper \\ 50 Delves Completed
-ach(40463),	-- Delve Deepest \\ 100 Delves Completed
 11.0.0.54675
 ach(40464),	-- Bounty Master
 ach(40465),	-- Unbound Bounty
@@ -29,25 +10,11 @@ ach(40473),	-- Not So Quick Fix
 ach(40475),	-- To All the Slimes I Love
 ach(40504),	-- Rocked to Sleep
 ach(40505),	-- Fate of the Kirin Tor
-ach(40506),	-- Leave No Treasure Unfound \\ No Stone Unturned
 ach(40509),	-- Awakening The Machine: Wave 10
 ach(40510),	-- One Ping Only
 ach(40511),	-- Rare Within
 ach(40523),	-- On Brand
 ach(40524),	-- Good Deed Delver
-ach(40525),	-- Fungal Folly Stories
-ach(40526),	-- Kriegval's Rest Stories
-ach(40527),	-- Earthcrawl Mines Stories
-ach(40528),	-- The Waterworks Stories
-ach(40529),	-- The Dread Pit Stories
-ach(40530),	-- Nightfall Sanctum Stories
-ach(40531),	-- Mycomancer Cavern Stories
-ach(40532),	-- The Sinkhole Stories
-ach(40533),	-- Skittering Breach Stories
-ach(40534),	-- The Underkeep Stories
-ach(40535),	-- Tak-Rethan Abyss Stories
-ach(40536),	-- The Spiral Weave Stories
-ach(40537),	-- Delve Loremaster: War Within
 ach(40539),	-- The Derby Dash
 11.0.0.54774
 ach(40585),	-- Super Size Snuffling
