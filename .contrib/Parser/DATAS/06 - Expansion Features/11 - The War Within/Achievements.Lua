@@ -70,10 +70,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
         ach(40251),	-- Many Echoes
         ach(40250),	-- The First Echo
         ach(40660, bubbleDownSelf({ ["_noautomation"] = true, ["timeline"] = { REMOVED_11_1_0 }, }, {	-- The War Within Season 1: Spelunker Supreme
-            ["timeline"] = { REMOVED_11_1_0 },
-                crit(67375), -- Attained 1600+ Rated PVP rating
-                crit(66890), -- Attained 2000+ Mythic Plus rating
-                crit(67597), -- Defeated Queen Ansurek on Heroic or Mythic difficulty
+            crit(67375), -- Attained 1600+ Rated PVP rating
+            crit(66890), -- Attained 2000+ Mythic Plus rating
+            crit(67597), -- Defeated Queen Ansurek on Heroic or Mythic difficulty
         })),
         ach(40723, {	-- Web-Wrapped in the Finest Silks (automated)
             ["timeline"] = { REMOVED_11_1_0 },
