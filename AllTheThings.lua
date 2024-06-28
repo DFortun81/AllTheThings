@@ -10726,7 +10726,8 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			[app.HeaderConstants.RAIDS] = true,
 			[app.HeaderConstants.SCENARIOS] = true,
 			[app.HeaderConstants.SCENARIO_COMPLETION] = true,
-			[app.HeaderConstants.REMIX_MOP] = true
+			[app.HeaderConstants.REMIX_MOP] = true,
+			[app.HeaderConstants.TIER_14_RAIDS] = true,
 		};
 		-- self.Rebuild
 		(function()
@@ -10815,7 +10816,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 					nested = nil;
 
 					-- Cache the difficultyID, if there is one and we are in an actual instance where the group is being mapped
-					difficultyID = isInInstance and GetRelativeValue(group, "difficultyID");
+					difficultyID = isInInstance and GetRelativeValue(group.sourceParent, "difficultyID");
 
 					-- Get the header chain for the group
 					nextParent = group.parent;
