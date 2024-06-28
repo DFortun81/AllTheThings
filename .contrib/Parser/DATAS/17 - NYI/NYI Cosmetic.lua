@@ -233,11 +233,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(206284),	-- Vagabond's Cloudy Cape
 				i(206295),	-- Vagabond's Cloudy Hood
 
-				------ Vagabond's Deep Threads ------
-				i(206327),	-- Ensemble: Vagabond's Deep Threads
-				i(206283),	-- Vagabond's Deep Cape
-				i(206294),	-- Vagabond's Deep Hood
-
 				------ Vagabond's Faded Threads ------
 				i(206324),	-- Ensemble: Vagabond's Faded Threads
 				i(206280),	-- Vagabond's Faded Cape
@@ -257,11 +252,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
 				i(206317),	-- Wanderer's Cloudy Cloak
 				i(206306),	-- Wanderer's Cloudy Scarf
-
-				------ Wanderer's Deep Trappings ------
-				i(206338),	-- Ensemble: Wanderer's Deep Trappings
-				i(206316),	-- Wanderer's Deep Cloak
-				i(206305),	-- Wanderer's Deep Scarf
 
 				------ Wanderer's Faded Trappings ------
 				i(206335),	-- Ensemble: Wanderer's Faded Trappings
@@ -298,7 +288,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(211001),	-- Sapphire Faced Mobile Timepiece
 				i(210849),	-- Trader's Azure Sarong
 				i(210854),	-- Trader's Camo Sarong
-				i(210853),	-- Trader's Deep Sarong
 				i(210856),	-- Trader's Faded Sarong
 				i(210851),	-- Trader's Grassy Sarong
 				i(210848),	-- Trader's Midnight Sarong
@@ -325,7 +314,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(212627),	-- Dueler's Azure Shoulder Cape
 				i(212622),	-- Dueler's Camo Shoulder Cape
 				i(212617),	-- Dueler's Crimson Shoulder Cape
-				i(212624),	-- Dueler's Deep Shoulder Cape
 				i(212620),	-- Dueler's Faded Shoulder Cape
 				i(212625),	-- Dueler's Grassy Shoulder Cape
 				i(212618),	-- Dueler's Plum Shoulder Cape
@@ -397,7 +385,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190891),	-- Shabby Battleaxe
 				i(190903),	-- Soulburner Warscythe
 				i(190818),	-- Steamwheedle Artifact Extractor
-				i(213161),	-- Titan Thunderbow
 				i(213067),	-- Violet Floral Edge
 				i(190902),	-- Will of the Titanforged
 				i(190889),	-- Woodsman's Hatchet

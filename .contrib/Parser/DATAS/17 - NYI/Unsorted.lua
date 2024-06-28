@@ -4484,7 +4484,6 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(224576),	-- Lil' Flameo (PET!)
 				i(223499),	-- Lil' Manny (PET!)
-				i(223339),	-- Trishi (PET!)
 				i(223474),	-- Worgli the Apprehensive (PET!)
 			}),
 			filter(COSMETIC, {
@@ -4570,18 +4569,6 @@ root(ROOTS.Unsorted, {
 				i(221847),	-- Ensemble: Black Tropical Swimwear
 				i(222959),	-- Ensemble: Blue Tropical Swimwear
 				i(222960),	-- Ensemble: Pink Tropical Swimwear
-				i(223165),	-- Vengeful Crusader's Helm
-				i(223166),	-- Deepsea Treasure Pack
-				i(223170),	-- Classic Deep Tabard
-				i(223176),	-- Riptide Gut Puncher
-				i(223179),	-- Riptide Dagger
-				i(223184),	-- Riptide Staff
-				i(223185),	-- Blade of the Riptide
-				i(223187),	-- Riptide Bulwark
-				i(223188),	-- Riptide Basher
-				i(223189),	-- Riptide Slicer
-				i(223190),	-- Wand of the Riptide
-				i(223191),	-- Trident of the Riptide
 				i(223199),	-- Deep Diver's Bonnet
 				i(223200),	-- Deep Diver's Pauldrons
 				i(223201),	-- Deep Diver's Corselet
@@ -4589,13 +4576,6 @@ root(ROOTS.Unsorted, {
 				i(223204),	-- Deep Diver's Greaves
 				i(223205),	-- Deep Diver's Boots
 				i(223206),	-- Deep Diver's Gloves
-				i(223207),	-- Dark Diver's Bonnet
-				i(223208),	-- Dark Diver's Pauldrons
-				i(223209),	-- Dark Diver's Corselet
-				i(223210),	-- Dark Diver's Belt
-				i(223211),	-- Dark Diver's Greaves
-				i(223212),	-- Dark Diver's Boots
-				i(223213),	-- Dark Diver's Gloves
 				i(223223),	-- Green Diver's Bonnet
 				i(223224),	-- Green Diver's Pauldrons
 				i(223225),	-- Green Diver's Corselet
@@ -4603,25 +4583,13 @@ root(ROOTS.Unsorted, {
 				i(223227),	-- Green Diver's Greaves
 				i(223228),	-- Green Diver's Boots
 				i(223229),	-- Green Diver's Gloves
-				i(223230),	-- Tan Diver's Bonnet
-				i(223231),	-- Tan Diver's Pauldrons
-				i(223232),	-- Tan Diver's Corselet
-				i(223233),	-- Tan Diver's Belt
-				i(223234),	-- Tan Diver's Greaves
-				i(223235),	-- Tan Diver's Boots
-				i(223236),	-- Tan Diver's Gloves
 				i(223243),	-- Ensemble: Blue Diver Suit
-				i(223244),	-- Ensemble: Dark Diver Suit
 				i(223245),	-- Ensemble: Green Diver Suit
 				i(223246),	-- Ensemble: Tan Diver Suit
-				i(223252),	-- Tan Diver's Tank
 				i(223253),	-- Green Diver's Tank
-				i(223254),	-- Dark Diver's Tank
 				i(223255),	-- Deep Diver's Tank
-				i(223257),	-- Tan Diver's Wristguard
 				i(223258),	-- Deep Diver's Wristguard
 				i(223259),	-- Green Diver's Wristguard
-				i(223260),	-- Dark Diver's Wristguard
 				i(223409),	-- The Coward's Violet Target
 				i(223410),	-- Scarlet Shanker
 				i(223411),	-- Sapphire Shanker
@@ -4678,7 +4646,6 @@ root(ROOTS.Unsorted, {
 				i(223459),	-- [PH] Nightsaber Horde Mount Black (MOUNT!)
 				i(223449),	-- [PH] Nightsaber Horde Mount Red (MOUNT!)
 				i(223460),	-- [PH] Nightsaber Horde Mount White (MOUNT!)
-				i(223285),	-- [PH] Purple Old God Fish Mount (MOUNT!)
 				i(223286),	-- [PH] Red Old God Fish Mount (MOUNT!)
 			}),
 			n(PVP, {
