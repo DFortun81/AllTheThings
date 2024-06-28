@@ -1416,7 +1416,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(3609),	-- Sporeflower (PET!)
 			pet(3975),	-- Midnight Terrorwing (PET!)
 			pet(4237),	-- Treanthony (PET!)
-			-- With SpeciesID Attached
 		})),
 
 		-- 10.2.5

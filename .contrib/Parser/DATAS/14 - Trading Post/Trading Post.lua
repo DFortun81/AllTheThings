@@ -2066,7 +2066,6 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 			filter(BATTLE_PETS, {
 				i(206174, {	-- Blub (PET!)
-					["displayID"] = 112678,
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
 				}),
 			}),

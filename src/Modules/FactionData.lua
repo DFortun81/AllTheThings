@@ -33,7 +33,6 @@ api.FACTION_RACES = {
 		37,	-- Mechagnome
 		52, -- Dracthyr [Alliance]
 		85,	-- Earthen [Alliance]
-
 	},
 	[2] = {
 		2,	-- Orc
