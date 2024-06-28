@@ -32,7 +32,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				title(558),	-- Forged Gladiator <Name>
 			}),
 			-- RBG
-			ach(40795),		-- Battleground Blitz Medic: The War Within
+			ach(40795, {		-- Battleground Blitz Medic: The War Within
+				["classes"] = HEALERS,
+			}),
 			ach(40383, {	-- Hero of the Alliance: Forged
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -59,10 +61,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			ach(40381, {	-- Forged Legend: The War Within Season 1
 				title(559),	-- Forged Legend <Name>
 			}),
-			ach(40472),		-- Battle Mender: The War Within Season 1
-			ach(40792),		-- Solo Shuffle Medic: The War Within
+			ach(40472, {		-- Battle Mender: The War Within Season 1
+				["classes"] = HEALERS,
+			}),
+			ach(40792, {		-- Solo Shuffle Medic: The War Within
+				["classes"] = HEALERS,
+			}),
 			-- Fashion
-			--ach(),	--
+			ach(40728),	-- Forged Finery
 		})),
 		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {
 			i(223511, {	-- Vicious Skyflayer [A]

@@ -136,6 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						40263,	-- Would You Still /love Me if I Was a Worm...
 						40264,	-- Kill Streak
 						40265,	-- [PH] The Silken Court Achievement
+						40730,	-- Love is in the Lair (TODO: verify, atm it lists [PH] The Silken Court Achievement)
 						40266,	-- Missed 'Em by That Much
 					}},
 				}),
@@ -153,6 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					ach(40263),	-- Would You Still /love Me if I Was a Worm...
 					ach(40264),	-- Kill Streak
 					ach(40265),	-- [PH] The Silken Court Achievement
+					ach(40730),	-- Love is in the Lair (TODO: maybe replaces [PH] The Silken Court Achievement?)
 					ach(40266),	-- Missed 'Em by That Much
 				-- }),
 				-- Difficulty(DIFFICULTY.RAID.MULTI.HEROIC_PLUS, {

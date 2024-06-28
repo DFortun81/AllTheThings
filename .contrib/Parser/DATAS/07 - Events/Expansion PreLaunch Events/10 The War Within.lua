@@ -5,7 +5,7 @@ local RESIDUAL_MEMORIES = 3089;
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_0_0, REMOVED_11_0_1_LAUNCH } }, {
 	expansion(EXPANSION.TWW, {
 		n(ACHIEVEMENTS, {
-			--
+			ach(40796),	-- This Takes Me Back
 		}),
 		n(QUESTS, {
 			q(82539),	-- Radiant Echoes

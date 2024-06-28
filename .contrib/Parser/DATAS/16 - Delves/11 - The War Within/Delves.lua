@@ -107,6 +107,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				40103,	-- Nemesis
 			}},
 		}),
+		ach(40732),	-- Heavy-Handed
 		ach(40431, {	-- Hunting the Hunter
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
@@ -114,9 +115,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["timeline"] = { REMOVED_11_1_0 },
 		}),
 		ach(40098),	-- Immortal Spelunker
+		ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
 		ach(40446),	-- I TAKE Candle!
 		ach(40459),	-- I've Got a Flying Machine!
 		ach(40789),	-- I've Got More Flying Machine?! (automated)
+		ach(40788),	-- I Got the Keys
 		ach(40452),	-- Just Keep Swimming
 		ach(40103, {	-- Nemesis
 			["timeline"] = { REMOVED_11_1_0 },
