@@ -5,6 +5,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 	m(HALLOWFALL, {
 		n(ACHIEVEMENTS, {
 			ach(40851),		-- Adventurer of Hallowfall (automated)
+			ach(40622),		-- Biblo Archivist (automated)
 			ach(40150),		-- Children's Entertainer
 			ach(40826, {
 				-- TODO: These criteria look unfinished

@@ -20,7 +20,40 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			ach(40507),		-- Hanging Tight
 			ach(40628),		-- Notable Machines (automated)
+			ach(40473),		-- Not So Quick Fix (automated)
 			ach(40731),		-- Panhandled
+			ach(40504, {	-- Rocked to Sleep
+				crit(68684, {	-- Attwogaz
+					-- TODO: coord
+				}),
+				crit(68682, {	-- Hathlaz
+					-- TODO: coord
+				}),
+				crit(68685, {	-- Krattdaz
+					-- TODO: coord
+				}),
+				crit(68686, {	-- Uisgaz
+					-- TODO: coord
+				}),
+				crit(68687, {	-- Venedaz
+					-- TODO: coord
+				}),
+				crit(68688, {	-- Merunth
+					-- TODO: coord
+				}),
+				crit(68689, {	-- Varerko
+					-- TODO: coord
+				}),
+				crit(68690, {	-- Alfritha
+					-- TODO: coord
+				}),
+				crit(68691, {	-- Gundrig
+					-- TODO: coord
+				}),
+				crit(68692, {	-- Sathilga
+					-- TODO: coord
+				}),
+			}),
 			ach(40678, {	-- Skyriding Glyphs: Abyssal Excavation
 				["coord"] = { 63.7, 95.0, THE_RINGING_DEEPS },
 			}),
@@ -109,6 +142,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- 		["sourceQuest"] = 81713,	-- Oozemodious
 			-- 	}),
 			-- }),
+			ach(40585),		-- Super Size Snuffling
 			ach(19560, {	-- The Ringing Deeps
 				crit(64791, {	-- 	By Candlelight
 					["sourceQuest"] = 78642,	-- New Candle, New Hope

@@ -4,6 +4,7 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(DORNOGAL, {
 		n(ACHIEVEMENTS, {
+			ach(40606),	-- Flat Earthen
 		}),
 	}),
 })));

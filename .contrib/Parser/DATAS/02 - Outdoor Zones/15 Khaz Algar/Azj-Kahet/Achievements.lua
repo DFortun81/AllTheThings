@@ -35,6 +35,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					40701,	-- Skyriding Glyphs: Untamed Valley
 				}},
 			}),
+			ach(40620),		-- Back to the Wall
 			-- TODO: Remove _noautomation when possible
 			ach(40629, bubbleDown({ ["_noautomation"] = true, }, {	-- Bookworm
 				crit(68983, {	-- Entomological Essay on Grubs, Volume 1
@@ -63,6 +64,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(69608),	-- Umbral Bazaar
 				crit(69608),	-- High Hollows
 			}),
+			ach(40624),		-- Itsy Bitsy Spider (automated)
+			ach(40832),		-- Leave it to Weaver
+			ach(40619),		-- Mine Poppin'
+			ach(40843),		-- Mine Poppin'
+			ach(40632),		-- No Harm Ever Came From Reading A Book
 			ach(40727),		-- Skittershaw Spin
 			ach(40691, {	-- Skyriding Glyphs: Arathi's End
 				-- TODO
@@ -224,8 +230,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- 		--["sourceQuest"] = 82284,	-- Remembrance for the Fallen
 			-- 	}),
 			-- }),
+			ach(40833),		-- The General's Salute
+			ach(40633),		-- The Unseeming
 			pvp(ach(40086)),	-- Tour of Duty: Azj-Kahet
 			ach(40828),		-- Treasures of Azj-Kahet (automated)
+			ach(40835),		-- Vizier than Ever
+			ach(40634),		-- You Can't Hang With Us
 		}),
 	}),
 })));
