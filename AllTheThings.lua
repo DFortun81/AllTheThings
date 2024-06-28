@@ -10815,11 +10815,11 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 					-- app.PrintDebug(group.hash,group.text)
 					nested = nil;
 
-					-- Cache the difficultyID, if there is one and we are in an actual instance where the group is being mapped
-					difficultyID = isInInstance and GetRelativeValue(group.sourceParent, "difficultyID");
-
 					-- Get the header chain for the group
 					nextParent = group.parent;
+
+					-- Cache the difficultyID, if there is one and we are in an actual instance where the group is being mapped
+					difficultyID = isInInstance and GetRelativeValue(nextParent, "difficultyID");
 
 					-- Building the header chain for each mapped Thing
 					topHeader = nil;
