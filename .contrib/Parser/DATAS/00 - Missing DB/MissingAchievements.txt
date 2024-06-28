@@ -1,5 +1,3 @@
-11.0.0.54521
-ach(40430),	-- Khaz Algar Flight Master
 11.0.0.54605
 ach(40431),	-- Hunting the Hunter
 ach(40432),	-- Nemesis (Solo)
