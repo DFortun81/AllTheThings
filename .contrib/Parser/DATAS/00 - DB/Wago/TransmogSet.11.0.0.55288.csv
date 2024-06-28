@@ -276,7 +276,7 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Sanctified Ymirjar Lord's Battlegear",298,1,0,0,35,13292,655,1,2,30300,2770,0
 "Vestments of the Purifier",308,16,0,0,8,13193,0,1,6,70001,8751,0
 "Vestments of the Purifier",309,16,0,0,8,2015,308,1,6,70001,8752,0
-"Regalia of the Exorcist",310,16,79755,0,10,13193,0,1,4,50200,5220,0
+"Regalia of the Exorcist",310,16,79755,256,10,13193,0,1,4,50200,5220,0
 "Vestments of the Purifier",311,16,0,0,8,13145,308,1,6,70001,8753,0
 "Legacy of Azj'Aqir",315,256,0,0,8,13193,0,1,6,70001,8751,0
 "Legacy of Azj'Aqir",316,256,0,0,8,2015,315,1,6,70001,8752,0
@@ -289,14 +289,14 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Windspeaker's Regalia",328,64,0,0,29,2015,418,1,5,60001,6850,0
 "Soul Priest's Raiment",329,16,0,0,29,13145,327,1,5,60001,7000,0
 "Regalia of the High Priest",330,16,0,0,49,0,0,1,6,70001,8400,0
-"Regalia of Ternion Glory",331,16,79759,0,30,13193,0,1,4,50400,5400,0
-"Regalia of Ternion Glory",332,16,79758,0,30,13145,331,1,4,50400,5660,0
-"Regalia of Ternion Glory",333,16,79757,0,30,1641,331,1,4,50400,5280,0
-"Regalia of the Exorcist",334,16,79756,0,10,2015,310,1,4,50200,5350,0
-"Regalia of the Exorcist",335,16,79754,0,10,1641,310,1,4,50200,5020,0
-"Guardian Serpent Regalia",336,16,79751,0,31,13193,0,1,4,50003,4960,0
-"Guardian Serpent Regalia",337,16,79752,0,31,1641,336,1,4,50003,4830,0
-"Regalia of the Firebird",338,64,79846,0,31,2015,427,1,4,50003,5090,0
+"Regalia of Ternion Glory",331,16,79759,256,30,13193,0,1,4,50400,5400,0
+"Regalia of Ternion Glory",332,16,79758,256,30,13145,331,1,4,50400,5660,0
+"Regalia of Ternion Glory",333,16,79757,256,30,1641,331,1,4,50400,5280,0
+"Regalia of the Exorcist",334,16,79756,256,10,2015,310,1,4,50200,5350,0
+"Regalia of the Exorcist",335,16,79754,256,10,1641,310,1,4,50200,5020,0
+"Guardian Serpent Regalia",336,16,79751,256,31,13193,0,1,4,50003,4960,0
+"Guardian Serpent Regalia",337,16,79752,256,31,1641,336,1,4,50003,4830,0
+"Regalia of the Firebird",338,64,79846,256,31,2015,427,1,4,50003,5090,0
 "Regalia of Dying Light",339,16,0,0,32,13193,0,1,3,40300,3970,0
 "Regalia of Dying Light",340,16,0,0,32,1641,339,1,3,40300,3840,0
 "Regalia of Dying Light",341,16,0,0,32,2015,339,1,3,40300,4100,0
@@ -371,15 +371,15 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Windspeaker's Regalia",418,64,0,0,29,13193,0,1,5,60001,6700,0
 "Soul Priest's Raiment",419,16,0,0,29,2015,327,1,5,60001,6850,0
 "Windspeaker's Regalia",420,64,0,0,29,13145,418,1,5,60001,7000,0
-"Regalia of Celestial Harmony",421,64,79850,0,30,13193,0,1,4,50400,5400,0
-"Regalia of Celestial Harmony",422,64,79852,0,30,13145,421,1,4,50400,5660,0
-"Regalia of Celestial Harmony",423,64,79851,0,30,1641,421,1,4,50400,5280,0
-"Regalia of the Witch Doctor",424,64,79847,0,10,13193,0,1,4,50200,5220,0
-"Regalia of the Witch Doctor",425,64,79848,0,10,2015,424,1,4,50200,5350,0
-"Regalia of the Witch Doctor",426,64,79849,0,10,1641,424,1,4,50200,5020,0
-"Regalia of the Firebird",427,64,79844,0,31,13193,0,1,4,50003,4960,0
-"Regalia of the Firebird",428,64,79845,0,31,1641,427,1,4,50003,4830,0
-"Guardian Serpent Regalia",429,16,79753,0,31,2015,336,1,4,50003,5090,0
+"Regalia of Celestial Harmony",421,64,79850,256,30,13193,0,1,4,50400,5400,0
+"Regalia of Celestial Harmony",422,64,79852,256,30,13145,421,1,4,50400,5660,0
+"Regalia of Celestial Harmony",423,64,79851,256,30,1641,421,1,4,50400,5280,0
+"Regalia of the Witch Doctor",424,64,79847,256,10,13193,0,1,4,50200,5220,0
+"Regalia of the Witch Doctor",425,64,79848,256,10,2015,424,1,4,50200,5350,0
+"Regalia of the Witch Doctor",426,64,79849,256,10,1641,424,1,4,50200,5020,0
+"Regalia of the Firebird",427,64,79844,256,31,13193,0,1,4,50003,4960,0
+"Regalia of the Firebird",428,64,79845,256,31,1641,427,1,4,50003,4830,0
+"Guardian Serpent Regalia",429,16,79753,256,31,2015,336,1,4,50003,5090,0
 "Raiment of the Farseer",430,64,0,0,49,0,0,1,6,70001,8400,0
 "Battlegear of Iron Wrath",432,1,0,0,28,13193,0,1,5,60200,6950,0
 "Battlegear of Iron Wrath",433,1,0,0,28,2015,432,1,5,60200,7050,0
@@ -387,15 +387,15 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Blackhand's Battlegear",435,1,0,0,29,13193,0,1,5,60001,6700,0
 "Blackhand's Battlegear",436,1,0,0,29,2015,435,1,5,60001,6850,0
 "Blackhand's Battlegear",437,1,0,0,29,13145,435,1,5,60001,7000,0
-"Battleplate of the Prehistoric Marauder",438,1,79893,0,30,13193,0,1,4,50400,5400,0
-"Battleplate of the Prehistoric Marauder",439,1,79891,0,30,13145,438,1,4,50400,5660,0
-"Battleplate of the Prehistoric Marauder",440,1,79892,0,30,1641,438,1,4,50400,5280,0
-"Battleplate of the Last Mogu",441,1,79890,0,10,13193,0,1,4,50200,5220,0
-"Battleplate of the Last Mogu",442,1,79889,0,10,1641,441,1,4,50200,5020,0
-"Battleplate of the Last Mogu",443,1,79888,0,10,2015,441,1,4,50200,5350,0
-"Battleplate of Resounding Rings",444,1,79886,0,31,13193,0,1,4,50003,4960,0
-"Battleplate of Resounding Rings",445,1,79887,0,31,2015,444,1,4,50003,5090,0
-"Battleplate of Resounding Rings",446,1,79885,0,31,1641,444,1,4,50003,4830,0
+"Battleplate of the Prehistoric Marauder",438,1,79893,256,30,13193,0,1,4,50400,5400,0
+"Battleplate of the Prehistoric Marauder",439,1,79891,256,30,13145,438,1,4,50400,5660,0
+"Battleplate of the Prehistoric Marauder",440,1,79892,256,30,1641,438,1,4,50400,5280,0
+"Battleplate of the Last Mogu",441,1,79890,256,10,13193,0,1,4,50200,5220,0
+"Battleplate of the Last Mogu",442,1,79889,256,10,1641,441,1,4,50200,5020,0
+"Battleplate of the Last Mogu",443,1,79888,256,10,2015,441,1,4,50200,5350,0
+"Battleplate of Resounding Rings",444,1,79886,256,31,13193,0,1,4,50003,4960,0
+"Battleplate of Resounding Rings",445,1,79887,256,31,2015,444,1,4,50003,5090,0
+"Battleplate of Resounding Rings",446,1,79885,256,31,1641,444,1,4,50003,4830,0
 "Battlelord's Plate",447,1,0,0,49,0,0,1,6,70001,8400,0
 "Vestments of the Black Harvest",448,256,0,0,49,0,0,1,6,70001,8400,0
 "Deathrattle Regalia",449,256,0,0,28,13193,0,1,5,60200,6950,0
@@ -404,15 +404,15 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Shadow Council's Garb",452,256,0,0,29,13193,0,1,5,60001,6700,0
 "Shadow Council's Garb",453,256,0,0,29,13145,452,1,5,60001,7000,0
 "Shadow Council's Garb",454,256,0,0,29,2015,452,1,5,60001,6850,0
-"Regalia of the Horned Nightmare",455,256,79768,0,30,13193,0,1,4,50400,5400,0
-"Regalia of the Horned Nightmare",456,256,79766,0,30,13145,455,1,4,50400,5660,0
-"Regalia of the Horned Nightmare",457,256,79767,0,30,1641,455,1,4,50400,5280,0
-"Regalia of the Thousandfold Hells",458,256,79765,0,10,13193,0,1,4,50200,5220,0
-"Regalia of the Thousandfold Hells",459,256,79763,0,10,1641,458,1,4,50200,5020,0
-"Regalia of the Thousandfold Hells",460,256,79764,0,10,2015,458,1,4,50200,5350,0
-"Sha Skin Regalia",461,256,79762,0,31,13193,0,1,4,50003,4960,0
-"Sha Skin Regalia",462,256,79761,0,31,1641,461,1,4,50003,4830,0
-"Sha Skin Regalia",463,256,79760,0,31,2015,461,1,4,50003,5090,0
+"Regalia of the Horned Nightmare",455,256,79768,256,30,13193,0,1,4,50400,5400,0
+"Regalia of the Horned Nightmare",456,256,79766,256,30,13145,455,1,4,50400,5660,0
+"Regalia of the Horned Nightmare",457,256,79767,256,30,1641,455,1,4,50400,5280,0
+"Regalia of the Thousandfold Hells",458,256,79765,256,10,13193,0,1,4,50200,5220,0
+"Regalia of the Thousandfold Hells",459,256,79763,256,10,1641,458,1,4,50200,5020,0
+"Regalia of the Thousandfold Hells",460,256,79764,256,10,2015,458,1,4,50200,5350,0
+"Sha Skin Regalia",461,256,79762,256,31,13193,0,1,4,50003,4960,0
+"Sha Skin Regalia",462,256,79761,256,31,1641,461,1,4,50003,4830,0
+"Sha Skin Regalia",463,256,79760,256,31,2015,461,1,4,50003,5090,0
 "Battlegear of the Uncrowned",464,8,0,0,49,0,0,1,6,70001,8400,0
 "Felblade Armor",465,8,0,0,28,13193,0,1,5,60200,6950,0
 "Felblade Armor",466,8,0,0,28,2015,465,1,5,60200,7050,0
@@ -420,30 +420,30 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Poisoner's Battlegear",468,8,0,0,29,13193,0,1,5,60001,6700,0
 "Poisoner's Battlegear",469,8,0,0,29,2015,468,1,5,60001,6850,0
 "Poisoner's Battlegear",470,8,0,0,29,13145,468,1,5,60001,7000,0
-"Barbed Assassin Battlegear",471,8,79813,0,30,13193,0,1,4,50400,5400,0
-"Barbed Assassin Battlegear",472,8,79815,0,30,13145,471,1,4,50400,5660,0
-"Barbed Assassin Battlegear",473,8,79814,0,30,1641,471,1,4,50400,5280,0
-"Nine-Tail Battlegear",474,8,79810,0,10,13193,0,1,4,50200,5220,0
-"Nine-Tail Battlegear",475,8,79812,0,10,2015,474,1,4,50200,5350,0
-"Nine-Tail Battlegear",476,8,79811,0,10,1641,474,1,4,50200,5020,0
-"Battlegear of the Thousandfold Blades",477,8,79809,0,31,2015,478,1,4,50003,5090,0
-"Battlegear of the Thousandfold Blades",478,8,79807,0,31,13193,0,1,4,50003,4960,0
-"Battlegear of the Thousandfold Blades",479,8,79808,0,31,1641,478,1,4,50003,4830,0
+"Barbed Assassin Battlegear",471,8,79813,256,30,13193,0,1,4,50400,5400,0
+"Barbed Assassin Battlegear",472,8,79815,256,30,13145,471,1,4,50400,5660,0
+"Barbed Assassin Battlegear",473,8,79814,256,30,1641,471,1,4,50400,5280,0
+"Nine-Tail Battlegear",474,8,79810,256,10,13193,0,1,4,50200,5220,0
+"Nine-Tail Battlegear",475,8,79812,256,10,2015,474,1,4,50200,5350,0
+"Nine-Tail Battlegear",476,8,79811,256,10,1641,474,1,4,50200,5020,0
+"Battlegear of the Thousandfold Blades",477,8,79809,256,31,2015,478,1,4,50003,5090,0
+"Battlegear of the Thousandfold Blades",478,8,79807,256,31,13193,0,1,4,50003,4960,0
+"Battlegear of the Thousandfold Blades",479,8,79808,256,31,1641,478,1,4,50003,4830,0
 "Watch of the Ceaseless Vigil",480,2,0,0,28,13193,0,1,5,60200,6950,0
 "Watch of the Ceaseless Vigil",481,2,0,0,28,2015,480,1,5,60200,7050,0
 "Watch of the Ceaseless Vigil",482,2,0,0,28,13145,480,1,5,60200,7200,0
 "Battlegear of Guiding Light",483,2,0,0,29,13193,0,1,5,60001,6700,0
 "Battlegear of Guiding Light",484,2,0,0,29,2015,483,1,5,60001,6850,0
 "Battlegear of Guiding Light",485,2,0,0,29,13145,483,1,5,60001,7000,0
-"Vestments of Winged Triumph",487,2,79884,0,30,13193,0,1,4,50400,5400,0
-"Vestments of Winged Triumph",488,2,79883,0,30,13145,487,1,4,50400,5660,0
-"Vestments of Winged Triumph",489,2,79882,0,30,1641,487,1,4,50400,5280,0
-"Battlegear of the Lightning Emperor",490,2,79879,0,10,13193,0,1,4,50200,5220,0
-"Battlegear of the Lightning Emperor",491,2,79880,0,10,2015,490,1,4,50200,5350,0
-"Battlegear of the Lightning Emperor",492,2,79881,0,10,1641,490,1,4,50200,5020,0
-"White Tiger Battlegear",493,2,79876,0,31,13193,0,1,4,50003,4960,0
-"White Tiger Battlegear",494,2,79878,0,31,2015,493,1,4,50003,5090,0
-"White Tiger Battlegear",495,2,79877,0,31,1641,493,1,4,50003,4830,0
+"Vestments of Winged Triumph",487,2,79884,256,30,13193,0,1,4,50400,5400,0
+"Vestments of Winged Triumph",488,2,79883,256,30,13145,487,1,4,50400,5660,0
+"Vestments of Winged Triumph",489,2,79882,256,30,1641,487,1,4,50400,5280,0
+"Battlegear of the Lightning Emperor",490,2,79879,256,10,13193,0,1,4,50200,5220,0
+"Battlegear of the Lightning Emperor",491,2,79880,256,10,2015,490,1,4,50200,5350,0
+"Battlegear of the Lightning Emperor",492,2,79881,256,10,1641,490,1,4,50200,5020,0
+"White Tiger Battlegear",493,2,79876,256,31,13193,0,1,4,50003,4960,0
+"White Tiger Battlegear",494,2,79878,256,31,2015,493,1,4,50003,5090,0
+"White Tiger Battlegear",495,2,79877,256,31,1641,493,1,4,50003,4830,0
 "Battleplate of the Silver Hand",496,2,0,0,49,0,0,1,6,70001,8400,0
 "Grandmaster's Finery",497,512,0,0,49,0,0,1,6,70001,8400,0
 "Battlegear of the Somber Gaze",498,512,0,0,29,13193,0,1,5,60001,6700,0
@@ -452,15 +452,15 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Battlewrap of the Hurricane's Eye",502,512,0,0,28,13193,0,1,5,60200,6950,0
 "Battlewrap of the Hurricane's Eye",503,512,0,0,28,2015,502,1,5,60200,7050,0
 "Battlewrap of the Hurricane's Eye",505,512,0,0,28,13145,502,1,5,60200,7200,0
-"Vestments of the Seven Sacred Seals",506,512,79805,0,30,13193,0,1,4,50400,5400,0
-"Vestments of the Seven Sacred Seals",507,512,79806,0,30,13145,506,1,4,50400,5660,0
-"Vestments of the Seven Sacred Seals",508,512,79804,0,30,1641,506,1,4,50400,5280,0
-"Fire-Charm Vestments",510,512,79801,0,10,13193,0,1,4,50200,5220,0
-"Fire-Charm Vestments",511,512,79802,0,10,2015,510,1,4,50200,5350,0
-"Fire-Charm Vestments",512,512,79803,0,10,1641,510,1,4,50200,5020,0
-"Vestments of the Red Crane",513,512,79799,0,31,13193,0,1,4,50003,4960,0
-"Vestments of the Red Crane",514,512,79798,0,31,2015,513,1,4,50003,5090,0
-"Vestments of the Red Crane",515,512,79800,0,31,1641,513,1,4,50003,4830,0
+"Vestments of the Seven Sacred Seals",506,512,79805,256,30,13193,0,1,4,50400,5400,0
+"Vestments of the Seven Sacred Seals",507,512,79806,256,30,13145,506,1,4,50400,5660,0
+"Vestments of the Seven Sacred Seals",508,512,79804,256,30,1641,506,1,4,50400,5280,0
+"Fire-Charm Vestments",510,512,79801,256,10,13193,0,1,4,50200,5220,0
+"Fire-Charm Vestments",511,512,79802,256,10,2015,510,1,4,50200,5350,0
+"Fire-Charm Vestments",512,512,79803,256,10,1641,510,1,4,50200,5020,0
+"Vestments of the Red Crane",513,512,79799,256,31,13193,0,1,4,50003,4960,0
+"Vestments of the Red Crane",514,512,79798,256,31,2015,513,1,4,50003,5090,0
+"Vestments of the Red Crane",515,512,79800,256,31,1641,513,1,4,50003,4830,0
 "Vesture of Tirisgarde",516,128,0,0,49,0,0,1,6,70001,8400,0
 "Raiment of the Arcanic Conclave",517,128,0,0,28,13193,0,1,5,60200,6950,0
 "Raiment of the Arcanic Conclave",518,128,0,0,28,13145,517,1,5,60200,7200,0
@@ -468,15 +468,15 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Arcanoshatter Regalia",520,128,0,0,29,13193,0,1,5,60001,6700,0
 "Arcanoshatter Regalia",521,128,0,0,29,2015,520,1,5,60001,6850,0
 "Arcanoshatter Regalia",522,128,0,0,29,13145,520,1,5,60001,7000,0
-"Chronomancer Regalia",523,128,79750,0,30,13193,0,1,4,50400,5400,0
-"Chronomancer Regalia",524,128,79748,0,30,13145,523,1,4,50400,5660,0
-"Chronomancer Regalia",525,128,79749,0,30,1641,523,1,4,50400,5280,0
-"Regalia of the Chromatic Hydra",526,128,79747,0,10,13193,0,1,4,50200,5220,0
-"Regalia of the Chromatic Hydra",527,128,79745,0,10,2015,526,1,4,50200,5350,0
-"Regalia of the Chromatic Hydra",528,128,79746,0,10,1641,526,1,4,50200,5020,0
-"Regalia of the Burning Scroll",529,128,79744,0,31,13193,0,1,4,50003,4960,0
-"Regalia of the Burning Scroll",530,128,79743,0,31,2015,529,1,4,50003,5090,0
-"Regalia of the Burning Scroll",531,128,79742,0,31,1641,529,1,4,50003,4830,0
+"Chronomancer Regalia",523,128,79750,256,30,13193,0,1,4,50400,5400,0
+"Chronomancer Regalia",524,128,79748,256,30,13145,523,1,4,50400,5660,0
+"Chronomancer Regalia",525,128,79749,256,30,1641,523,1,4,50400,5280,0
+"Regalia of the Chromatic Hydra",526,128,79747,256,10,13193,0,1,4,50200,5220,0
+"Regalia of the Chromatic Hydra",527,128,79745,256,10,2015,526,1,4,50200,5350,0
+"Regalia of the Chromatic Hydra",528,128,79746,256,10,1641,526,1,4,50200,5020,0
+"Regalia of the Burning Scroll",529,128,79744,256,31,13193,0,1,4,50003,4960,0
+"Regalia of the Burning Scroll",530,128,79743,256,31,2015,529,1,4,50003,5090,0
+"Regalia of the Burning Scroll",531,128,79742,256,31,1641,529,1,4,50003,4830,0
 "Guise of the Unseen Path",532,4,0,0,49,0,0,1,6,70001,8400,0
 "Battlegear of the Savage Hunt",533,4,0,0,28,13193,0,1,5,60200,6950,0
 "Battlegear of the Savage Hunt",534,4,0,0,28,2015,533,1,5,60200,7050,0
@@ -484,15 +484,15 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Rylakstalker's Battlegear",536,4,0,0,29,13193,0,1,5,60001,6700,0
 "Rylakstalker's Battlegear",537,4,0,0,29,2015,536,1,5,60001,6850,0
 "Rylakstalker's Battlegear",538,4,0,0,29,13145,536,1,5,60001,7000,0
-"Battlegear of the Unblinking Vigil",539,4,79841,0,30,13193,0,1,4,50400,5400,0
-"Battlegear of the Unblinking Vigil",540,4,79843,0,30,13145,539,1,4,50400,5660,0
-"Battlegear of the Unblinking Vigil",541,4,79842,0,30,1641,539,1,4,50400,5280,0
-"Battlegear of the Saurok Stalker",542,4,79839,0,10,13193,0,1,4,50200,5220,0
-"Battlegear of the Saurok Stalker",543,4,79840,0,10,1641,542,1,4,50200,5020,0
-"Battlegear of the Saurok Stalker",544,4,79838,0,10,2015,542,1,4,50200,5350,0
-"Yaungol Slayer Battlegear",545,4,79835,0,31,13193,0,1,4,50003,4960,0
-"Yaungol Slayer Battlegear",546,4,79836,0,31,1641,545,1,4,50003,4830,0
-"Yaungol Slayer Battlegear",547,4,79837,0,31,2015,545,1,4,50003,5090,0
+"Battlegear of the Unblinking Vigil",539,4,79841,256,30,13193,0,1,4,50400,5400,0
+"Battlegear of the Unblinking Vigil",540,4,79843,256,30,13145,539,1,4,50400,5660,0
+"Battlegear of the Unblinking Vigil",541,4,79842,256,30,1641,539,1,4,50400,5280,0
+"Battlegear of the Saurok Stalker",542,4,79839,256,10,13193,0,1,4,50200,5220,0
+"Battlegear of the Saurok Stalker",543,4,79840,256,10,1641,542,1,4,50200,5020,0
+"Battlegear of the Saurok Stalker",544,4,79838,256,10,2015,542,1,4,50200,5350,0
+"Yaungol Slayer Battlegear",545,4,79835,256,31,13193,0,1,4,50003,4960,0
+"Yaungol Slayer Battlegear",546,4,79836,256,31,1641,545,1,4,50003,4830,0
+"Yaungol Slayer Battlegear",547,4,79837,256,31,2015,545,1,4,50003,5090,0
 "Battlegear of the Shattered Abyss",548,2048,0,0,49,0,0,1,6,70001,8400,0
 "Dreamgrove Raiment",549,1024,0,0,49,0,0,1,6,70001,8400,0
 "Deathlord's Battleplate",550,32,0,0,49,0,0,1,6,70001,8400,0
@@ -502,30 +502,30 @@ Name_lang,ID,ClassMask,TrackingQuestID,Flags,TransmogSetGroupID,ItemNameDescript
 "Living Wood Battlegear",554,1024,0,0,29,13193,0,1,5,60001,6700,0
 "Living Wood Battlegear",555,1024,0,0,29,2015,554,1,5,60001,6850,0
 "Living Wood Battlegear",556,1024,0,0,29,13145,554,1,5,60001,7000,0
-"Vestments of the Shattered Vale",557,1024,79797,0,30,13193,0,1,4,50400,5400,0
-"Vestments of the Shattered Vale",558,1024,79796,0,30,13145,557,1,4,50400,5660,0
-"Vestments of the Shattered Vale",559,1024,79795,0,30,1641,557,1,4,50400,5280,0
-"Vestments of the Haunted Forest",560,1024,79794,0,10,13193,0,1,4,50200,5220,0
-"Vestments of the Haunted Forest",561,1024,79792,0,10,2015,560,1,4,50200,5350,0
-"Vestments of the Haunted Forest",562,1024,79793,0,10,1641,560,1,4,50200,5020,0
-"Vestments of the Eternal Blossom",563,1024,79791,0,31,13193,0,1,4,50003,4960,0
-"Vestments of the Eternal Blossom",564,1024,79790,0,31,2015,563,1,4,50003,5090,0
-"Vestments of the Eternal Blossom",565,1024,79789,0,31,1641,563,1,4,50003,4830,0
+"Vestments of the Shattered Vale",557,1024,79797,256,30,13193,0,1,4,50400,5400,0
+"Vestments of the Shattered Vale",558,1024,79796,256,30,13145,557,1,4,50400,5660,0
+"Vestments of the Shattered Vale",559,1024,79795,256,30,1641,557,1,4,50400,5280,0
+"Vestments of the Haunted Forest",560,1024,79794,256,10,13193,0,1,4,50200,5220,0
+"Vestments of the Haunted Forest",561,1024,79792,256,10,2015,560,1,4,50200,5350,0
+"Vestments of the Haunted Forest",562,1024,79793,256,10,1641,560,1,4,50200,5020,0
+"Vestments of the Eternal Blossom",563,1024,79791,256,31,13193,0,1,4,50003,4960,0
+"Vestments of the Eternal Blossom",564,1024,79790,256,31,2015,563,1,4,50003,5090,0
+"Vestments of the Eternal Blossom",565,1024,79789,256,31,1641,563,1,4,50003,4830,0
 "Demongaze Armor",566,32,0,0,28,13193,0,1,5,60200,6950,0
 "Demongaze Armor",567,32,0,0,28,2015,566,1,5,60200,7050,0
 "Demongaze Armor",568,32,0,0,28,13145,566,1,5,60200,7200,0
 "Ogreskull Boneplate Battlegear",569,32,0,0,29,13193,0,1,5,60001,6700,0
 "Ogreskull Boneplate Battlegear",570,32,0,0,29,2015,569,1,5,60001,6850,0
 "Ogreskull Boneplate Battlegear",571,32,0,0,29,13145,569,1,5,60001,7000,0
-"Battleplate of Cyclopean Dread",572,32,79873,0,30,13193,0,1,4,50400,5400,0
-"Battleplate of Cyclopean Dread",573,32,79875,0,30,13145,572,1,4,50400,5660,0
-"Battleplate of Cyclopean Dread",574,32,79874,0,30,1641,572,1,4,50400,5280,0
-"Battleplate of the All-Consuming Maw",575,32,79872,0,10,13193,0,1,4,50200,5220,0
-"Battleplate of the All-Consuming Maw",576,32,79871,0,10,1641,575,1,4,50200,5020,0
-"Battleplate of the All-Consuming Maw",577,32,79870,0,10,2015,575,1,4,50200,5350,0
-"Plate of the Lost Catacomb",578,32,79868,0,31,13193,0,1,4,50003,4960,0
-"Plate of the Lost Catacomb",579,32,79867,0,31,1641,578,1,4,50003,4830,0
-"Plate of the Lost Catacomb",580,32,79869,0,31,2015,578,1,4,50003,5090,0
+"Battleplate of Cyclopean Dread",572,32,79873,256,30,13193,0,1,4,50400,5400,0
+"Battleplate of Cyclopean Dread",573,32,79875,256,30,13145,572,1,4,50400,5660,0
+"Battleplate of Cyclopean Dread",574,32,79874,256,30,1641,572,1,4,50400,5280,0
+"Battleplate of the All-Consuming Maw",575,32,79872,256,10,13193,0,1,4,50200,5220,0
+"Battleplate of the All-Consuming Maw",576,32,79871,256,10,1641,575,1,4,50200,5020,0
+"Battleplate of the All-Consuming Maw",577,32,79870,256,10,2015,575,1,4,50200,5350,0
+"Plate of the Lost Catacomb",578,32,79868,256,31,13193,0,1,4,50003,4960,0
+"Plate of the Lost Catacomb",579,32,79867,256,31,1641,578,1,4,50003,4830,0
+"Plate of the Lost Catacomb",580,32,79869,256,31,2015,578,1,4,50003,5090,0
 "Felfume Raiment",581,400,0,0,54,1641,0,1,5,60200,6850,0
 "Ironpelt Garb",582,3592,0,0,54,1641,0,1,5,60200,6850,0
 "Rancorbite Armor",583,4164,0,0,54,1641,0,1,5,60200,6850,0
@@ -1196,7 +1196,7 @@ Netherblade,890,8,0,0,41,13193,0,1,1,20000,1200,0
 "Cruel Gladiator's Chain Armor",1255,4,46472,22,46,3859,1254,1,6,70200,8602,0
 "Cruel Gladiator's Chain Armor",1256,4,46471,26,46,3859,1253,1,6,70200,8602,0
 "Cruel Gladiator's Dragonhide Armor",1257,1024,46450,20,46,13301,0,1,6,70200,8601,0
-"Cruel Gladiator's Dragonhide Armor",1258,1024,46449,24,46,13301,0,1,6,70200,8601,0
+"Cruel Gladiator's Dragonhide Armor",1258,1024,46449,280,46,13301,0,1,6,70200,8601,0
 "Cruel Gladiator's Dragonhide Armor",1259,1024,46474,22,46,3859,1257,1,6,70200,8602,0
 "Cruel Gladiator's Dragonhide Armor",1260,1024,46473,26,46,3859,1258,1,6,70200,8602,0
 "Cruel Gladiator's Felskin Armor",1261,2048,47083,24,46,13301,0,1,6,70200,8601,0
@@ -2364,7 +2364,7 @@ Drakebreaker,2668,35,0,0,199,13980,2667,1,9,100000,10200,0
 "Helarjar Berserker Warplate",2679,35,72133,2,198,0,0,1,6,100005,1640,0
 "[DNT] 10.0 Mythic VFX Unlock - All Items",2680,0,72248,3,0,0,0,1,9,100000,3980,0
 "Ottuk Hide Armor",2681,3592,0,0,202,13987,0,1,9,100000,10100,0
-"Crimson Aspirant's Battlegarb",2682,3592,0,18,207,13303,2681,1,9,100000,10100,0
+"Crimson Aspirant's Leather Armor",2682,3592,0,18,207,13303,2681,1,9,100000,10100,0
 "Tuskarr Dungeoneer's Garb",2683,3592,0,0,202,13988,2681,1,9,100000,10100,0
 "Tuskarr Field Garb",2684,3592,0,0,202,13990,2681,1,9,100000,10100,0
 "Trailblazer's Leather Armor",2685,3592,0,0,203,13989,0,1,9,100000,10000,0
@@ -2384,7 +2384,7 @@ Drakebreaker,2668,35,0,0,199,13980,2667,1,9,100000,10200,0
 "Firestorm Armor",2699,35,74366,2,203,13979,2697,1,9,100000,10000,0
 "Shorebreaker's Armor",2700,35,0,0,203,13990,2697,1,9,100000,10000,0
 "Cobalt Watcher's Vestments",2701,400,0,0,204,13987,0,1,9,100000,10100,0
-"Crimson Aspirant's Silk Vestments",2702,400,0,18,207,13303,2701,1,9,100000,10100,0
+"Crimson Aspirant's Silk Armor",2702,400,0,18,207,13303,2701,1,9,100000,10100,0
 "Titan Dungeonkeeper's Vestments",2703,400,0,0,204,13988,2701,1,9,100000,10100,0
 "Tyr Hold Vestments",2704,400,0,0,204,13990,2701,1,9,100000,10100,0
 "Lost Watcher's Vestments",2705,400,0,0,204,13990,2701,1,9,100000,10100,0
@@ -2397,7 +2397,7 @@ Drakebreaker,2668,35,0,0,199,13980,2667,1,9,100000,10200,0
 "Djaradin Dungeon Battlegear",2712,35,0,0,206,13988,2711,1,9,100000,10100,0
 "Citadel Breaker's Battlegear",2713,35,0,0,206,13990,2711,1,9,100000,10100,0
 "Drakeender's Battlegear",2714,35,0,0,206,13990,2711,1,9,100000,10100,0
-"Crimson Aspirant's Plate Battlegear",2715,35,0,18,207,13303,2711,1,9,100000,10100,0
+"Crimson Aspirant's Plate Armor",2715,35,0,18,207,13303,2711,1,9,100000,10100,0
 "Crimson Gladiator's Silk Armor",2716,128,0,18,207,13301,0,1,9,100000,10401,0
 "Crimson Gladiator's Silk Armor",2717,128,0,18,207,3859,2716,1,9,100000,10402,0
 "Crimson Gladiator's Silk Armor",2718,16,0,18,207,13301,0,1,9,100000,10401,0
@@ -2689,10 +2689,10 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Obsidian Gladiator's Prestigious Cloak",3004,0,0,19,0,0,0,1,9,100002,1550,0
 "Obsidian Gladiator's Tabard",3005,0,0,19,0,0,0,1,9,100002,10,0
 "Enmity Hood and Cloak",3006,0,76111,67,0,0,0,1,8,0,1640,0
-"Obsidian Aspirant's Silk Vestments",3007,400,0,18,212,13303,2661,1,9,100100,10200,0
-"Obsidian Aspirant's Battlegarb",3008,3592,0,18,212,13303,2665,1,9,100100,10200,0
+"Obsidian Aspirant's Silk Armor",3007,400,0,18,212,13303,2661,1,9,100100,10200,0
+"Obsidian Aspirant's Leather Armor",3008,3592,0,18,212,13303,2665,1,9,100100,10200,0
 "Obsidian Aspirant's Chain Armor",3009,4164,0,18,212,13303,2663,1,9,100100,10200,0
-"Obsidian Aspirant's Plate Battlegear",3010,35,0,18,212,13303,2667,1,9,100100,10200,0
+"Obsidian Aspirant's Plate Armor",3010,35,0,18,212,13303,2667,1,9,100100,10200,0
 "Moonless Vestiture",3011,400,0,0,215,14016,0,1,9,100100,10100,0
 "Endowed Garb",3012,400,0,0,215,13590,3011,1,9,100100,10100,0
 "Suffused Attire",3013,400,0,0,215,14017,3011,1,9,100100,10100,0
@@ -2966,10 +2966,10 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Verdant Gladiator's Leather Armor",3286,8,0,19,0,0,0,1,9,100200,3820,0
 "Verdant Gladiator's Prestigious Cloak",3287,0,0,19,0,0,0,1,9,100200,1550,0
 "Verdant Gladiator's Tabard",3288,0,0,19,0,0,0,1,9,100200,10,0
-"Verdant Aspirant's Silk Vestments",3289,400,0,16,226,13303,3131,1,9,100200,10200,0
-"Verdant Aspirant's Battlegarb",3290,3592,0,16,226,13303,3133,1,9,100200,10200,0
+"Verdant Aspirant's Silk Armor",3289,400,0,16,226,13303,3131,1,9,100200,10200,0
+"Verdant Aspirant's Leather Armor",3290,3592,0,16,226,13303,3133,1,9,100200,10200,0
 "Verdant Aspirant's Chain Armor",3291,4164,0,16,226,13303,3132,1,9,100200,10200,0
-"Verdant Aspirant's Plate Battlegear",3292,35,0,16,226,13303,3134,1,9,100200,10200,0
+"Verdant Aspirant's Plate Armor",3292,35,0,16,226,13303,3134,1,9,100200,10200,0
 "Overgrown Freyan Warplate",3293,35,0,0,224,13989,3134,1,9,100200,10,0
 "Embrace of the Dreamfused Skull",3294,4164,0,0,224,13989,3132,1,9,100200,10,0
 "Barkbloom Warleathers",3295,3592,0,0,224,13989,3133,1,9,100200,10,0
@@ -3041,82 +3041,82 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Dark Ranger General's Kit",3362,0,79517,2,242,0,0,1,9,100205,10,0
 "Icy Drake Racer's Silks",3363,0,0,0,227,14106,3054,1,9,100206,10,0
 "Frosted Riders of Azeroth Tabard",3364,0,79702,3,0,0,0,1,9,100205,10,0
-"Breezebinder's Vestments",3365,400,79733,0,243,14121,0,1,4,50000,1021,0
+"Breezebinder's Vestments",3365,400,79733,256,243,14121,0,1,4,50000,1021,0
 "Gleaming Burden of Unrelenting Justice",3366,0,79708,2,246,14133,3305,1,9,100200,10299,0
 "Moonlit Burden of Unrelenting Justice",3367,0,79709,2,246,14132,3305,1,9,100200,10299,0
-"Vestments of Serenity",3368,16383,79904,2,244,14120,3439,1,4,50000,1001,0
-"Breezebinder's Vestments",3369,400,79734,0,243,14015,3365,1,4,50000,1021,0
-"Breezebinder's Vestments",3370,400,79735,0,243,13965,3365,1,4,50000,1021,0
-"Spirit-Waker's Vestments",3371,400,79736,0,244,13967,0,1,4,50000,1011,0
-"Spirit-Waker's Vestments",3372,400,79737,0,244,13968,3371,1,4,50000,1011,0
-"Spirit-Waker's Vestments",3373,400,79738,0,244,13965,3371,1,4,50000,1011,0
-"Mistwalker's Vestments",3374,400,79739,0,244,13967,3375,1,4,50000,1012,0
-"Mistwalker's Vestments",3375,400,79740,0,244,14121,0,1,4,50000,1012,0
-"Mistwalker's Vestments",3376,400,79741,0,244,14120,3375,1,4,50000,1012,0
-"Vestments of the Eternal Dynasty",3377,400,79769,0,244,13966,0,1,4,50000,1013,0
-"Vestments of the Eternal Dynasty",3378,400,79770,0,244,13967,3377,1,4,50000,1013,0
-"Vestments of the Eternal Dynasty",3379,400,79771,0,244,14122,3377,1,4,50000,1013,0
-"Guise of the Shado-Pan",3380,16383,79772,2,244,14123,0,1,4,50000,1004,0
-"Guise of the Shado-Pan",3381,16383,79773,2,244,14121,3380,1,4,50000,1004,0
-"Mogubreaker Battlegear",3382,3592,79774,0,243,13966,3383,1,4,50000,1021,0
-"Mogubreaker Battlegear",3383,3592,79775,0,243,14121,0,1,4,50000,1021,0
-"Mogubreaker Battlegear",3384,3592,79776,0,243,13965,3383,1,4,50000,1021,0
-"Mogubreaker Battlegear",3385,3592,79777,0,243,14122,3383,1,4,50000,1021,0
-"Thunderpaw Battlegear",3386,3592,79778,0,244,14123,3388,1,4,50000,1011,0
-"Thunderpaw Battlegear",3387,3592,79779,0,244,14126,3388,1,4,50000,1011,0
-"Thunderpaw Battlegear",3388,3592,79780,0,244,14121,0,1,4,50000,1011,0
-"Thunderpaw Battlegear",3389,3592,79781,0,244,13965,3388,1,4,50000,1011,0
-"Mistveil Leathers",3390,3592,79782,0,244,13966,0,1,4,50000,1012,0
-"Mistveil Leathers",3391,3592,79783,0,244,14125,3390,1,4,50000,1012,0
-"Mistveil Leathers",3392,3592,79784,0,244,13984,3390,1,4,50000,1012,0
-"Mistveil Leathers",3393,3592,79785,0,244,14124,3390,1,4,50000,1012,0
-"Tian Monastery Clothing",3394,16383,79786,2,244,13967,0,1,4,50000,1001,0
-"Tian Monastery Clothing",3395,16383,79787,0,244,13965,3394,1,4,50000,1001,0
-"Tian Monastery Clothing",3396,16383,79788,0,244,14120,3394,1,4,50000,1001,0
-"Snowdrift Battlegear",3397,3592,79816,0,244,13967,0,1,4,50000,1013,0
-"Snowdrift Battlegear",3398,3592,79817,0,244,14125,3397,1,4,50000,1013,0
-"Snowdrift Battlegear",3399,3592,79818,0,244,13965,3397,1,4,50000,1013,0
-"Mogu Lord's Regalia",3400,4164,79819,0,243,13966,0,1,4,50000,1021,0
-"Mogu Lord's Regalia",3401,4164,79820,0,243,14130,3400,1,4,50000,1021,0
-"Mogu Lord's Regalia",3402,4164,79821,0,243,14129,3400,1,4,50000,1021,0
-"Kor'kron Shaman Vestments",3403,16383,79822,2,244,14128,3405,1,4,50000,1003,0
-"Kor'kron Shaman Vestments",3404,16383,79823,2,244,14127,3405,1,4,50000,1003,0
-"Kor'kron Shaman Vestments",3405,16383,79824,2,244,14122,0,1,4,50000,1003,0
-"Trailseeker's Laminar Armor",3406,4164,79825,0,244,13966,0,1,4,50000,1011,0
-"Trailseeker's Laminar Armor",3407,4164,79826,0,244,14130,3406,1,4,50000,1011,0
-"Trailseeker's Laminar Armor",3408,4164,79827,0,244,13968,3406,1,4,50000,1011,0
-"Trailseeker's Laminar Armor",3409,4164,79828,0,244,14120,3406,1,4,50000,1011,0
-"Dawnwatcher's Scale Armor",3410,4164,79829,0,244,13967,0,1,4,50000,1012,0
-"Dawnwatcher's Scale Armor",3411,4164,79830,0,244,14015,3410,1,4,50000,1012,0
-"Dawnwatcher's Scale Armor",3412,4164,79831,0,244,13965,3410,1,4,50000,1012,0
-"Sun Pearl Clothing",3413,16383,79832,0,244,13968,0,1,4,50000,1001,0
-"Sun Pearl Clothing",3414,16383,79833,0,244,13965,3413,1,4,50000,1001,0
-"Sun Pearl Clothing",3415,16383,79834,2,244,14122,3413,1,4,50000,1001,0
-"Jade Guardian's Regalia",3416,4164,79853,0,244,13967,0,1,4,50000,1013,0
-"Jade Guardian's Regalia",3417,4164,79854,0,244,14125,3416,1,4,50000,1013,0
-"Jade Guardian's Regalia",3418,4164,79855,0,244,13965,3416,1,4,50000,1013,0
-"Jade Guardian's Regalia",3419,4164,79856,0,244,14122,3416,1,4,50000,1013,0
-"Swarmbreaker's Battleplate",3420,35,79857,0,243,14123,3422,1,4,50000,1021,0
-"Swarmbreaker's Battleplate",3421,35,79858,0,243,14126,3422,1,4,50000,1021,0
-"Swarmbreaker's Battleplate",3422,35,79859,0,243,14121,0,1,4,50000,1021,0
-"Spiritguard's Warplate",3423,35,79860,0,244,13967,0,1,4,50000,1011,0
-"Spiritguard's Warplate",3424,35,79861,0,244,14130,3423,1,4,50000,1011,0
-"Spiritguard's Warplate",3425,35,79862,0,244,14131,3423,1,4,50000,1011,0
-"Shan'ze Warplate",3426,35,79863,0,244,13968,0,1,4,50000,1012,0
-"Shan'ze Warplate",3427,35,79864,0,244,14015,3426,1,4,50000,1012,0
-"Shan'ze Warplate",3428,35,79865,0,244,13965,3426,1,4,50000,1012,0
-"Shan'ze Warplate",3429,35,79866,0,244,14122,3426,1,4,50000,1012,0
-"Gatecrasher's Battleplate",3430,35,79894,0,244,13966,0,1,4,50000,1013,0
-"Gatecrasher's Battleplate",3431,35,79895,0,244,13967,3430,1,4,50000,1013,0
-"Gatecrasher's Battleplate",3432,35,79896,0,244,13968,3430,1,4,50000,1013,0
-"Gatecrasher's Battleplate",3433,35,79897,0,244,13965,3430,1,4,50000,1013,0
-"Robes of Quiet Reflection",3434,16383,79898,2,244,14125,3436,1,4,50000,1002,0
-"Robes of Quiet Reflection",3435,16383,79899,2,244,13968,3436,1,4,50000,1002,0
-"Robes of Quiet Reflection",3436,16383,79900,2,244,13965,0,1,4,50000,1002,0
-"Robes of Quiet Reflection",3437,16383,79901,2,244,14122,3436,1,4,50000,1002,0
-"Vestments of Serenity",3438,16383,79903,2,244,13968,3439,1,4,50000,1001,0
-"Vestments of Serenity",3439,16383,79902,2,244,13967,0,1,4,50000,1001,0
-"Battleplate of Resounding Rings",3440,1,79732,2,31,14119,444,1,4,50003,4829,0
+"Vestments of Serenity",3368,16383,79904,258,244,14120,3439,1,4,50000,1001,0
+"Breezebinder's Vestments",3369,400,79734,256,243,14015,3365,1,4,50000,1021,0
+"Breezebinder's Vestments",3370,400,79735,256,243,13965,3365,1,4,50000,1021,0
+"Spirit-Waker's Vestments",3371,400,79736,256,244,13967,0,1,4,50000,1011,0
+"Spirit-Waker's Vestments",3372,400,79737,256,244,13968,3371,1,4,50000,1011,0
+"Spirit-Waker's Vestments",3373,400,79738,256,244,13965,3371,1,4,50000,1011,0
+"Mistwalker's Vestments",3374,400,79739,256,244,13967,3375,1,4,50000,1012,0
+"Mistwalker's Vestments",3375,400,79740,256,244,14121,0,1,4,50000,1012,0
+"Mistwalker's Vestments",3376,400,79741,256,244,14120,3375,1,4,50000,1012,0
+"Vestments of the Eternal Dynasty",3377,400,79769,256,244,13966,0,1,4,50000,1013,0
+"Vestments of the Eternal Dynasty",3378,400,79770,256,244,13967,3377,1,4,50000,1013,0
+"Vestments of the Eternal Dynasty",3379,400,79771,256,244,14122,3377,1,4,50000,1013,0
+"Guise of the Shado-Pan",3380,16383,79772,258,244,14123,0,1,4,50000,1004,0
+"Guise of the Shado-Pan",3381,16383,79773,258,244,14121,3380,1,4,50000,1004,0
+"Mogubreaker Battlegear",3382,3592,79774,256,243,13966,3383,1,4,50000,1021,0
+"Mogubreaker Battlegear",3383,3592,79775,256,243,14121,0,1,4,50000,1021,0
+"Mogubreaker Battlegear",3384,3592,79776,256,243,13965,3383,1,4,50000,1021,0
+"Mogubreaker Battlegear",3385,3592,79777,256,243,14122,3383,1,4,50000,1021,0
+"Thunderpaw Battlegear",3386,3592,79778,256,244,14123,3388,1,4,50000,1011,0
+"Thunderpaw Battlegear",3387,3592,79779,256,244,14126,3388,1,4,50000,1011,0
+"Thunderpaw Battlegear",3388,3592,79780,256,244,14121,0,1,4,50000,1011,0
+"Thunderpaw Battlegear",3389,3592,79781,256,244,13965,3388,1,4,50000,1011,0
+"Mistveil Leathers",3390,3592,79782,256,244,13966,0,1,4,50000,1012,0
+"Mistveil Leathers",3391,3592,79783,256,244,14125,3390,1,4,50000,1012,0
+"Mistveil Leathers",3392,3592,79784,256,244,13984,3390,1,4,50000,1012,0
+"Mistveil Leathers",3393,3592,79785,256,244,14124,3390,1,4,50000,1012,0
+"Tian Monastery Clothing",3394,16383,79786,258,244,13967,0,1,4,50000,1001,0
+"Tian Monastery Clothing",3395,16383,79787,256,244,13965,3394,1,4,50000,1001,0
+"Tian Monastery Clothing",3396,16383,79788,256,244,14120,3394,1,4,50000,1001,0
+"Snowdrift Battlegear",3397,3592,79816,256,244,13967,0,1,4,50000,1013,0
+"Snowdrift Battlegear",3398,3592,79817,256,244,14125,3397,1,4,50000,1013,0
+"Snowdrift Battlegear",3399,3592,79818,256,244,13965,3397,1,4,50000,1013,0
+"Mogu Lord's Regalia",3400,4164,79819,256,243,13966,0,1,4,50000,1021,0
+"Mogu Lord's Regalia",3401,4164,79820,256,243,14130,3400,1,4,50000,1021,0
+"Mogu Lord's Regalia",3402,4164,79821,256,243,14129,3400,1,4,50000,1021,0
+"Kor'kron Shaman Vestments",3403,16383,79822,258,244,14128,3405,1,4,50000,1003,0
+"Kor'kron Shaman Vestments",3404,16383,79823,258,244,14127,3405,1,4,50000,1003,0
+"Kor'kron Shaman Vestments",3405,16383,79824,258,244,14122,0,1,4,50000,1003,0
+"Trailseeker's Laminar Armor",3406,4164,79825,256,244,13966,0,1,4,50000,1011,0
+"Trailseeker's Laminar Armor",3407,4164,79826,256,244,14130,3406,1,4,50000,1011,0
+"Trailseeker's Laminar Armor",3408,4164,79827,256,244,13968,3406,1,4,50000,1011,0
+"Trailseeker's Laminar Armor",3409,4164,79828,256,244,14120,3406,1,4,50000,1011,0
+"Dawnwatcher's Scale Armor",3410,4164,79829,256,244,13967,0,1,4,50000,1012,0
+"Dawnwatcher's Scale Armor",3411,4164,79830,256,244,14015,3410,1,4,50000,1012,0
+"Dawnwatcher's Scale Armor",3412,4164,79831,256,244,13965,3410,1,4,50000,1012,0
+"Sun Pearl Clothing",3413,16383,79832,256,244,13968,0,1,4,50000,1001,0
+"Sun Pearl Clothing",3414,16383,79833,256,244,13965,3413,1,4,50000,1001,0
+"Sun Pearl Clothing",3415,16383,79834,258,244,14122,3413,1,4,50000,1001,0
+"Jade Guardian's Regalia",3416,4164,79853,256,244,13967,0,1,4,50000,1013,0
+"Jade Guardian's Regalia",3417,4164,79854,256,244,14125,3416,1,4,50000,1013,0
+"Jade Guardian's Regalia",3418,4164,79855,256,244,13965,3416,1,4,50000,1013,0
+"Jade Guardian's Regalia",3419,4164,79856,256,244,14122,3416,1,4,50000,1013,0
+"Swarmbreaker's Battleplate",3420,35,79857,256,243,14123,3422,1,4,50000,1021,0
+"Swarmbreaker's Battleplate",3421,35,79858,256,243,14126,3422,1,4,50000,1021,0
+"Swarmbreaker's Battleplate",3422,35,79859,256,243,14121,0,1,4,50000,1021,0
+"Spiritguard's Warplate",3423,35,79860,256,244,13967,0,1,4,50000,1011,0
+"Spiritguard's Warplate",3424,35,79861,256,244,14130,3423,1,4,50000,1011,0
+"Spiritguard's Warplate",3425,35,79862,256,244,14131,3423,1,4,50000,1011,0
+"Shan'ze Warplate",3426,35,79863,256,244,13968,0,1,4,50000,1012,0
+"Shan'ze Warplate",3427,35,79864,256,244,14015,3426,1,4,50000,1012,0
+"Shan'ze Warplate",3428,35,79865,256,244,13965,3426,1,4,50000,1012,0
+"Shan'ze Warplate",3429,35,79866,256,244,14122,3426,1,4,50000,1012,0
+"Gatecrasher's Battleplate",3430,35,79894,256,244,13966,0,1,4,50000,1013,0
+"Gatecrasher's Battleplate",3431,35,79895,256,244,13967,3430,1,4,50000,1013,0
+"Gatecrasher's Battleplate",3432,35,79896,256,244,13968,3430,1,4,50000,1013,0
+"Gatecrasher's Battleplate",3433,35,79897,256,244,13965,3430,1,4,50000,1013,0
+"Robes of Quiet Reflection",3434,16383,79898,258,244,14125,3436,1,4,50000,1002,0
+"Robes of Quiet Reflection",3435,16383,79899,258,244,13968,3436,1,4,50000,1002,0
+"Robes of Quiet Reflection",3436,16383,79900,258,244,13965,0,1,4,50000,1002,0
+"Robes of Quiet Reflection",3437,16383,79901,258,244,14122,3436,1,4,50000,1002,0
+"Vestments of Serenity",3438,16383,79903,258,244,13968,3439,1,4,50000,1001,0
+"Vestments of Serenity",3439,16383,79902,258,244,13967,0,1,4,50000,1001,0
+"Battleplate of Resounding Rings",3440,1,79732,258,31,14119,444,1,4,50003,4829,0
 "Verdant Gladiator's Prestigious Cloak",3441,0,0,19,0,0,0,1,9,100206,1550,0
 "Draconic Gladiator's Tabard",3442,0,0,19,0,0,0,1,9,100206,10,0
 "Plunderlord's Finery",3443,0,0,2,247,0,0,1,9,100206,1,0
@@ -3162,32 +3162,32 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Fine Crimson Doublet",3485,0,0,3,0,0,0,1,9,100206,10,0
 "Plunderlord's Finery",3486,0,0,3,251,0,0,1,9,990000,1,0
 "Fearless Buccaneer's Slops",3487,0,80335,2,252,14142,2340,1,9,100206,1640,0
-"Tools of Krag'wa's Disciple",3489,64,80483,67,0,0,0,1,9,100207,10,0
-"Imminence of Krag'wa's Disciple",3490,64,80482,67,0,0,0,1,9,100207,10,0
-"Dreadsquall Hunter's Preference",3491,4,80481,67,0,0,0,1,9,100207,10,0
-"Dreadsquall Hunter's Camouflage",3492,4,80480,67,0,0,0,1,9,100207,10,0
-"Treasure of the Gold Hoarder",3493,4096,80479,67,0,0,0,1,9,100207,10,0
-"Scales of the Gold Hoarder",3494,4096,80478,67,0,0,0,1,9,100207,10,0
-"Sin'dorei Magister's Enchantment",3495,128,80477,67,0,0,0,1,9,100207,10,0
-"Sin'dorei Magister's Regalia",3496,128,80476,67,0,0,0,1,9,100207,10,0
-"Webbed Soulforged Weaponry",3497,32,80475,67,0,0,0,1,9,100207,10,0
-"Webbed Soulforged Exoskeleton",3498,32,80474,67,0,0,0,1,9,100207,10,0
-"Fanatical Champion's Aggression",3499,1,80473,67,0,0,0,1,9,100207,10,0
-"Fanatical Champion's Trophies",3500,1,80472,67,0,0,0,1,9,100207,10,0
-"Instruments of Temptation's Call",3501,256,80471,67,0,0,0,1,9,100207,10,0
-"Jewels of Temptation's Call",3502,256,80470,67,0,0,0,1,9,100207,10,0
-"Shado-Pan Watcher Arsenal",3503,512,80469,67,0,0,0,1,9,100207,10,0
-"Shado-Pan Watcher Guise",3504,512,80468,67,0,0,0,1,9,100207,10,0
-"Aldrachi Blasphemer's Glaives",3505,2048,80467,67,0,0,0,1,9,100207,10,0
-"Aldrachi Blasphemer's Flames",3506,2048,80466,67,0,0,0,1,9,100207,10,0
-"Ela'lothen's Blessings of Rebirth",3507,1024,80465,67,0,0,0,1,9,100207,10,0
-"Ela'lothen's Vestment of Rebirth",3508,1024,80464,67,0,0,0,1,9,100207,10,0
-"Igneous Onyx Uniform",3509,8,80463,67,0,0,0,1,9,100207,10,0
-"Silks of the Abyssal Cult",3510,16,80462,67,0,0,0,1,9,100207,10,0
-"Igneous Onyx Blades",3511,8,80461,67,0,0,0,1,9,100207,10,0
-"Secrets of the Abyssal Cult",3512,16,80460,67,0,0,0,1,9,100207,10,0
-"Armaments of the Holy Avenger",3513,2,80459,67,0,0,0,1,9,100207,10,0
-"Plate of the Holy Avenger",3514,2,80458,67,0,0,0,1,9,100207,10,0
+"Tools of Krag'wa's Disciple",3489,64,80483,323,0,0,0,1,9,100207,10,0
+"Imminence of Krag'wa's Disciple",3490,64,80482,323,0,0,0,1,9,100207,10,0
+"Dreadsquall Hunter's Preference",3491,4,80481,323,0,0,0,1,9,100207,10,0
+"Dreadsquall Hunter's Camouflage",3492,4,80480,323,0,0,0,1,9,100207,10,0
+"Treasure of the Gold Hoarder",3493,4096,80479,323,0,0,0,1,9,100207,10,0
+"Scales of the Gold Hoarder",3494,4096,80478,323,0,0,0,1,9,100207,10,0
+"Sin'dorei Magister's Enchantment",3495,128,80477,323,0,0,0,1,9,100207,10,0
+"Sin'dorei Magister's Regalia",3496,128,80476,323,0,0,0,1,9,100207,10,0
+"Webbed Soulforged Weaponry",3497,32,80475,323,0,0,0,1,9,100207,10,0
+"Webbed Soulforged Exoskeleton",3498,32,80474,323,0,0,0,1,9,100207,10,0
+"Fanatical Champion's Aggression",3499,1,80473,323,0,0,0,1,9,100207,10,0
+"Fanatical Champion's Trophies",3500,1,80472,323,0,0,0,1,9,100207,10,0
+"Instruments of Temptation's Call",3501,256,80471,323,0,0,0,1,9,100207,10,0
+"Jewels of Temptation's Call",3502,256,80470,323,0,0,0,1,9,100207,10,0
+"Shado-Pan Watcher Arsenal",3503,512,80469,323,0,0,0,1,9,100207,10,0
+"Shado-Pan Watcher Guise",3504,512,80468,323,0,0,0,1,9,100207,10,0
+"Aldrachi Blasphemer's Glaives",3505,2048,80467,323,0,0,0,1,9,100207,10,0
+"Aldrachi Blasphemer's Flames",3506,2048,80466,323,0,0,0,1,9,100207,10,0
+"Ela'lothen's Blessings of Rebirth",3507,1024,80465,323,0,0,0,1,9,100207,10,0
+"Ela'lothen's Vestment of Rebirth",3508,1024,80464,323,0,0,0,1,9,100207,10,0
+"Igneous Onyx Uniform",3509,8,80463,323,0,0,0,1,9,100207,10,0
+"Silks of the Abyssal Cult",3510,16,80462,323,0,0,0,1,9,100207,10,0
+"Igneous Onyx Blades",3511,8,80461,323,0,0,0,1,9,100207,10,0
+"Secrets of the Abyssal Cult",3512,16,80460,323,0,0,0,1,9,100207,10,0
+"Armaments of the Holy Avenger",3513,2,80459,323,0,0,0,1,9,100207,10,0
+"Plate of the Holy Avenger",3514,2,80458,323,0,0,0,1,9,100207,10,0
 "Loyalty of the Darkspear",3515,0,80503,10,228,13965,3350,1,0,100207,10,56823
 "Expeditionary Arathi Attire",3518,0,0,0,253,13591,0,1,10,110000,10,0
 "Honorary Councilmember's Mandate",3519,0,0,0,254,13591,0,1,10,110000,10,0
@@ -3363,10 +3363,10 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Arsenal: Hellbloom Branch",3693,5755,0,17,0,0,0,1,9,0,4150,0
 "Earthen Copper Regalia",3694,0,82770,3,269,0,0,1,10,110000,4150,0
 "Earthen Weaponry",3695,0,82788,3,270,0,0,1,10,110000,4150,0
-"Forged Aspirant's Plate Battlegear",3696,35,0,16,271,13303,3655,1,10,110000,10200,0
+"Forged Aspirant's Plate Armor",3696,35,0,16,271,13303,3655,1,10,110000,10200,0
 "Forged Aspirant's Chain Armor",3697,4164,0,16,271,13303,3656,1,10,110000,10200,0
-"Forged Aspirant's Battlegarb",3698,3592,0,16,271,13303,3657,1,10,110000,10200,0
-"Forged Aspirant's Silk Vestments",3699,400,0,16,271,13303,3658,1,10,110000,10200,0
+"Forged Aspirant's Leather Armor",3698,3592,0,16,271,13303,3657,1,10,110000,10200,0
+"Forged Aspirant's Silk Armor",3699,400,0,16,271,13303,3658,1,10,110000,10200,0
 "Heritage of Khaz Algar",3700,0,82771,2,272,14166,0,1,0,110000,10,123985
 "Heritage of Khaz Algar",3701,0,82771,2,272,14165,3700,1,0,110000,10,123985
 "Heritage of Khaz Algar",3702,0,82771,2,272,14164,3700,1,0,110000,10,123985
@@ -3488,17 +3488,17 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Forged Gladiator's Plate Armor",3819,1,0,19,0,0,0,1,10,110000,3820,0
 "Forged Gladiator's Plate Armor",3820,1,0,19,0,0,0,1,10,110000,3820,0
 "Forged Gladiator's Silk Armor",3821,128,0,16,271,13301,0,1,10,110000,10401,0
-"Forged Gladiator's Silk Armor",3822,32,0,16,271,13301,0,1,10,110000,10401,0
-"Forged Gladiator's Silk Armor",3823,2048,0,16,271,13301,0,1,10,110000,10401,0
-"Forged Gladiator's Silk Armor",3824,1024,0,16,271,13301,0,1,10,110000,10401,0
-"Forged Gladiator's Silk Armor",3825,4096,0,16,271,13301,0,1,10,110000,10401,0
-"Forged Gladiator's Silk Armor",3826,4,0,16,271,13301,0,1,10,110000,10401,0
-"Forged Gladiator's Silk Armor",3827,512,0,16,271,13301,0,1,10,110000,10401,0
-"Forged Gladiator's Silk Armor",3828,2,0,16,271,13301,0,1,10,110000,10401,0
+"Forged Gladiator's Plate Armor",3822,32,0,16,271,13301,0,1,10,110000,10401,0
+"Forged Gladiator's Leather Armor",3823,2048,0,16,271,13301,0,1,10,110000,10401,0
+"Forged Gladiator's Leather Armor",3824,1024,0,16,271,13301,0,1,10,110000,10401,0
+"Forged Gladiator's Chain Armor",3825,4096,0,16,271,13301,0,1,10,110000,10401,0
+"Forged Gladiator's Chain Armor",3826,4,0,16,271,13301,0,1,10,110000,10401,0
+"Forged Gladiator's Leather Armor",3827,512,0,16,271,13301,0,1,10,110000,10401,0
+"Forged Gladiator's Plate Armor",3828,2,0,16,271,13301,0,1,10,110000,10401,0
 "Forged Gladiator's Silk Armor",3829,16,0,16,271,13301,0,1,10,110000,10401,0
-"Forged Gladiator's Silk Armor",3830,8,0,16,271,13301,0,1,10,110000,10401,0
-"Forged Gladiator's Silk Armor",3831,64,0,16,271,13301,0,1,10,110000,10401,0
-"Forged Gladiator's Silk Armor",3832,1,0,16,271,13301,0,1,10,110000,10401,0
+"Forged Gladiator's Leather Armor",3830,8,0,16,271,13301,0,1,10,110000,10401,0
+"Forged Gladiator's Chain Armor",3831,64,0,16,271,13301,0,1,10,110000,10401,0
+"Forged Gladiator's Plate Armor",3832,1,0,16,271,13301,0,1,10,110000,10401,0
 "Forged Gladiator's Silk Armor",3833,256,0,16,271,13301,0,1,10,110000,10401,0
 "Forged Gladiator's Silk Armor",3834,128,0,48,271,3859,3821,1,10,110000,10401,0
 "Forged Gladiator's Plate Armor",3835,32,0,48,271,3859,3822,1,10,110000,10401,0
@@ -3533,6 +3533,12 @@ Dreamfire,2748,35,0,2,199,13992,2667,1,9,100000,10200,0
 "Algari Chainmail",3890,4164,0,0,280,13988,0,1,10,110000,4370,0
 "Coreway Regalia",3891,3592,0,0,281,13988,0,1,10,110000,4370,0
 "Threads of Awakening",3892,400,0,0,282,13988,0,1,10,110000,4370,0
+"Earthen Copper Regalia",3893,0,82770,3,269,0,3694,1,10,110000,4150,0
+"Earthen Copper Regalia",3894,0,82770,3,269,0,3694,1,10,110000,4150,0
+"Earthen Copper Regalia",3895,0,82770,3,269,0,3694,1,10,110000,4150,0
+"Earthen Copper Regalia",3896,0,82770,3,269,0,3694,1,10,110000,4150,0
+"Earthen Copper Regalia",3897,0,82770,3,269,0,3694,1,10,110000,4150,0
+"Tusks of Mannoroth",3898,0,84258,67,0,0,0,1,9,100207,10,0
 "Stormrider's Attire",3128,0,78048,2,233,14154,0,1,9,100107,1640,0
 "Thundering Stormrider's Attire",3129,0,78049,2,233,14036,3128,1,9,100107,1640,0
 "Bow of the Ranger Captain",3453,0,80199,3,0,0,0,1,0,100207,10,0
