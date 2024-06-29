@@ -53,7 +53,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 					title(554),	-- Forged Warlord <Nem>
 				},
 			}),
-			ach(40233),	-- Ttretagegist: The War Within Season 1
+			ach(40233, {	-- The Strategist: The War Within Season 1		(25 Wins)
+				-- toy here?
+			}),
 			-- Solo
 			ach(40395, {	-- Legend: The War Within Season 1			(100 Wins)
 				i(225933),	-- Forged Legend's Pennant (TOY)
@@ -61,10 +63,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			ach(40381, {	-- Forged Legend: The War Within Season 1	(0.1%)
 				title(559),	-- Forged Legend <Name>
 			}),
-			ach(40472, {		-- Battle Mender: The War Within Season 1
+			ach(40472, {	-- Battle Mender: The War Within Season 1
 				["classes"] = HEALERS,
 			}),
-			ach(40792, {		-- Solo Shuffle Medic: The War Within
+			ach(40792, {	-- Solo Shuffle Medic: The War Within
 				["classes"] = HEALERS,
 			}),
 			-- Fashion
