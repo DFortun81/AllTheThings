@@ -583,6 +583,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(222916),	-- Player Experience (Tier 1-2)
 		i(222917),	-- Player Experience (Tier 3)
 		i(222927),	-- Weathered Coin Coffer
+		-- Consumable
+		i(226132),	-- Deployable Recovery Keg
 		-- Curio
 		i(225902),	-- Idol of Final Will
 		i(225906),	-- Lifeless Necrotic Relic
@@ -616,6 +618,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(211034),	-- Secret-Dredger's Mantle
 		i(211031),	-- Secret-Dredger's Sabatons
 		i(225653),	-- Siphoning Lightbrand
+		i(211028),	-- Torchbearer's Bracers
 		i(211007),	-- Torchbearer's Greatcloak
 		i(211022),	-- Torchbearer's Striders
 		i(211018),	-- Treasure-Seeker's Breeches

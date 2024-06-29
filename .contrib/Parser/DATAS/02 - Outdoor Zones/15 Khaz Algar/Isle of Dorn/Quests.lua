@@ -522,6 +522,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 39.7, 78.9, ISLE_OF_DORN },
 					["g"] = {
 						i(219920),	-- Hreka's Pot-Making Kit
+						i(223843),	-- Personally Crafted Mug
 					},
 				}),
 			}),

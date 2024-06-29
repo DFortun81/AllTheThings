@@ -624,7 +624,6 @@ root(ROOTS.Unsorted, {
 				i(211025),	-- Torchbearer's Greaves
 				i(211026),	-- Torchbearer's Shoulderguards
 				i(211027),	-- Torchbearer's Cinch
-				i(211028),	-- Torchbearer's Bracers
 				i(211037),	-- Treasure-Seeker's Vest
 				i(211038),	-- Treasure-Seeker's Epaulets
 				i(211039),	-- Cave Topographer's Shoulders
@@ -3016,7 +3015,6 @@ root(ROOTS.Unsorted, {
 			i(223840),	-- Forged Warmonger's Shawl \\ X Warmonger's Shawl
 			i(223841),	-- Forged Warmonger's Cloak \\ X Warmonger's Cloak
 			i(223842),	-- Forged Warmonger's Drape \\ X Warmonger's Drape
-			i(223843),	-- Personally Crafted Mug
 			i(223844),	-- Forged Warmonger's Battleaxe \\ X Warmonger's Battleaxe
 			i(223845),	-- Forged Warmonger's Hatchet \\ X Warmonger's Hatchet
 			i(223846),	-- Forged Warmonger's Carver \\ X Warmonger's Carver
@@ -3851,7 +3849,6 @@ root(ROOTS.Unsorted, {
 			i(226116),	-- Coagulating Phlegm Churner
 			i(226120),	-- Deployable Battle Supplies \\ Deployable Charge Station
 			i(226131),	-- Deployable Wind-Wrangling Spire \\ Deployable Wind-Wrangling Station
-			i(226132),	-- Deployable Recovery Keg \\ Deployable Recovery Station
 			i(226134),	-- Mourning Baron's Shoulderpads
 			i(226135),	-- Nerubian Venom
 			i(226136),	-- Nerubian Blood
@@ -4209,7 +4206,6 @@ root(ROOTS.Unsorted, {
 			i(218455),	-- Conduit of the Southern Storm
 			i(219503),	-- Honorary Tinderbox
 			i(219783),	-- Arachnophobic Spelunker's Bow
-			i(219789),	-- Arachnophobic Spelunker's Greatmace
 			i(219797),	-- Cured Terracotta Pummeler
 			i(220157),	-- Darkened Tinderbox
 			i(220158),	-- Empowered Tinderbox
