@@ -446,7 +446,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 						i(185794),	-- Gavel Pounders
 						i(185809),	-- Venza's Powderbelt
 						i(185840),	-- Seal of the Panoply
-						i(185051),	-- Direhorn Soul
+						ig(185051),	-- Direhorn Soul
 					},
 				}),
 				e(2436, {	-- Mailroom Mayhem

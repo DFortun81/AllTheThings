@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(MYTHIC_PLUS, {
-		i(182173, {	-- Hyena Soul
+		ig(182173, {	-- Hyena Soul
 			["timeline"] = { ADDED_9_0_2, REMOVED_10_0_2_LAUNCH },
 		}),
 		header(HEADERS.Achievement, SEASON_PROUD, bubbleDownSelf({
@@ -144,6 +144,6 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 		})),
 	}),
 	d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-		i(182173),	-- Hyena Soul
+		ig(182173),	-- Hyena Soul
 	})),
 })));
