@@ -583,14 +583,59 @@ namespace ATT
                             // get the container for objects of this key
                             if (typeObjects.TryGetValue(keyValue, out List<IDictionary<string, object>> mergeObjects))
                             {
-                                // track the data which is actually being merged into another group
-                                TrackPostProcessMergeKey(key, keyValue);
+                                // probably cleaner way to make this chunk re-usable if other merge-filtering is required in future... can't think atm
 
-                                // merge the objects into the data object
-                                foreach (IDictionary<string, object> mergeObject in mergeObjects)
+                                // for '_encounterHash' merge into, make sure the merged Encounter matches the specific EventID
+                                if (key == "_encounterHash")
                                 {
-                                    // copy the actual object when merging under another Source, since it may merge into multiple Sources
-                                    Merge(data, "g", mergeObject);
+                                    if (data.TryGetValue("e", out long eventID))
+                                    {
+                                        // merge the objects into the data object
+                                        foreach (IDictionary<string, object> mergeObject in mergeObjects)
+                                        {
+                                            if (!mergeObject.TryGetValue("e", out long mergingEventID) || mergingEventID != eventID)
+                                            {
+                                                continue;
+                                            }
+
+                                            // track the data which is actually being merged into another group
+                                            TrackPostProcessMergeKey(key, keyValue);
+
+                                            // match EventID when merging
+                                            // copy the actual object when merging under another Source, since it may merge into multiple Sources
+                                            Merge(data, "g", mergeObject);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        // merge the objects into the data object
+                                        foreach (IDictionary<string, object> mergeObject in mergeObjects)
+                                        {
+                                            if (mergeObject.ContainsKey("e"))
+                                            {
+                                                continue;
+                                            }
+
+                                            // track the data which is actually being merged into another group
+                                            TrackPostProcessMergeKey(key, keyValue);
+
+                                            // copy the actual object when merging under another Source, since it may merge into multiple Sources
+                                            Merge(data, "g", mergeObject);
+                                        }
+
+                                    }
+                                }
+                                else
+                                {
+                                    // track the data which is actually being merged into another group
+                                    TrackPostProcessMergeKey(key, keyValue);
+
+                                    // merge the objects into the data object
+                                    foreach (IDictionary<string, object> mergeObject in mergeObjects)
+                                    {
+                                        // copy the actual object when merging under another Source, since it may merge into multiple Sources
+                                        Merge(data, "g", mergeObject);
+                                    }
                                 }
                             }
                         }
