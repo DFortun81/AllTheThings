@@ -1948,7 +1948,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.99999" } }, {
+		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.55261" } }, {
 			n(MONTHLY_REWARD, {
 				i(220692),	-- X-treme Water Blaster Display (TOY!)
 			}),
@@ -2060,7 +2060,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 10.2.7.55261", "removed 10.2.7.99999" } }, {
+		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 10.2.7.55261", REMOVED_11_0_1 } }, {
 			n(MONTHLY_REWARD, {
 				i(223339),	-- Trishi (PET!)
 			}),
@@ -2162,6 +2162,16 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(223190, {	-- Wand Of The Riptide
 					["cost"] = {{"c", TRADERS_TENDER, 125}},
 				}),
+			}),
+		})),
+		n(AUGUST bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1 } }, {
+			n(MONTHLY_REWARD, {
+			}),
+			filter(BATTLE_PETS, {
+			}),
+			filter(MOUNTS, {
+			}),
+			filter(COSMETIC, {
 			}),
 		})),
 	}),
