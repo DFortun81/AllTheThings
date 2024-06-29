@@ -13,9 +13,6 @@ i(225547),	-- Toxic Victory
 i(225641),	-- Illusive Kobyss Lure
 i(225659),	-- Arathi Book Collection \\ Arathor Book Collection
 i(225910),	-- Pileus Delight
-11.0.0.54774
-i(225933),	-- Forged Legend's Pennant
-i(225969),	-- Forged Flag of Victory
 11.0.0.54935
 i(225556),	-- Ancient Construct
 i(226191),	-- Web Pet Leash

@@ -24,41 +24,41 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			ach(40392, {	-- Elite: The War Within Season 1
 
 			}),
-			ach(40393, {	-- Gladiator: The War Within Season 1
+			ach(40393, {	-- Gladiator: The War Within Season 1		(50 Wins)
 				i(223586),	-- Forged Gladiator's Fel Bat (MOUNT!)
 			}),
 			ach(40398),		-- Forged Gladiator's Fel Bat
-			ach(40380, {	-- Forged Gladiator: The War Within Season 1
+			ach(40380, {	-- Forged Gladiator: The War Within Season 1 (0.1%)
 				title(558),	-- Forged Gladiator <Name>
 			}),
 			-- RBG
-			ach(40795, {		-- Battleground Blitz Medic: The War Within
+			ach(40795, {	-- Battleground Blitz Medic: The War Within
 				["classes"] = HEALERS,
 			}),
-			ach(40383, {	-- Hero of the Alliance: Forged
+			ach(40383, {	-- Hero of the Alliance: Forged	(0.5%)
 				["races"] = ALLIANCE_ONLY,
 			}),
-			ach(40384, {	-- Hero of the Horde: Forged
+			ach(40384, {	-- Hero of the Horde: Forged	(0.5%)
 				["races"] = HORDE_ONLY,
 			}),
-			ach(40235, {	-- Forged Marshall: The War Within Season 1
+			ach(40235, {	-- Forged Marshall: The War Within Season 1	(0.1%)
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					title(555),	-- Forged Marshall <Name>
 				},
 			}),
-			ach(40234, {	-- Forged Warlord: The War Within Season 1
+			ach(40234, {	-- Forged Warlord: The War Within Season 1	(0.1%)
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					title(554),	-- Forged Warlord <Nem>
 				},
 			}),
-			ach(40233),		-- Strategist: The War Within Season 1
+			ach(40233),	-- Ttretagegist: The War Within Season 1
 			-- Solo
-			ach(40395, {	-- Legend: The War Within Season 1
-
+			ach(40395, {	-- Legend: The War Within Season 1			(100 Wins)
+				i(225933),	-- Forged Legend's Pennant (TOY)
 			}),
-			ach(40381, {	-- Forged Legend: The War Within Season 1
+			ach(40381, {	-- Forged Legend: The War Within Season 1	(0.1%)
 				title(559),	-- Forged Legend <Name>
 			}),
 			ach(40472, {		-- Battle Mender: The War Within Season 1

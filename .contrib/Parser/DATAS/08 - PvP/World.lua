@@ -247,8 +247,10 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					["maps"] = { AZJ_KAHET },
 				}),
 			})),
-			ach(40095),	-- Sparking Battle
-			ach(40096),	-- Sparking Battle
+			ach(40095),	-- Sparking Battle (x5)
+			ach(40096, {	-- Sparking Battle (x20)
+				i(225969),	-- Forged Flag of Victory (TOY)
+			}),
 			ach(40089),	-- Spoiled Goods
 			ach(40090),	-- Spoiled Goods
 			ach(40087),	-- Unbound Battle (automated)
