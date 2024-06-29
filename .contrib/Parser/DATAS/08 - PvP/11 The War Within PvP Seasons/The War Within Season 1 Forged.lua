@@ -53,7 +53,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 					title(554),	-- Forged Warlord <Nem>
 				},
 			}),
-			ach(40233, {	-- The Strategist: The War Within Season 1		(25 Wins)
+			ach(40233, {	-- The Strategist: The War Within Season 1	(25 Wins)
 				-- toy here?
 			}),
 			-- Solo
