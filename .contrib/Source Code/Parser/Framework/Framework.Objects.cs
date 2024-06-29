@@ -78,6 +78,7 @@ namespace ATT
                 {  "recipeID" , new string[] { "requireSkill", "learnedAt" } },
                 {  "speciesID" , new string[] { "pb", "crs" } },
                 {  "instanceID" , new string[] { "isRaid" } },
+                {  "mapID" , new string[] { "maps" } },
                 {  "questID" , new string[] { "type", "sourceQuests", "altQuests", "isBreadcrumb" } },
             };
 
