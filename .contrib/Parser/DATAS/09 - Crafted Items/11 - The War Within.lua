@@ -280,7 +280,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	prof(BLACKSMITHING, {
 	n(ARMOR, {
 		i(222430), -- Everforged Breastplate
-		i(222432), -- Everforged Defender
 		i(222437), -- Everforged Gauntlets
 		i(222431), -- Everforged Greatbelt
 		i(222433), -- Everforged Helm
@@ -298,13 +297,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(222472), -- Dredger's Developed Breastplate
 		i(222471), -- Dredger's Developed Sabatons
 		i(217150), -- Algari Competitor's Plate Armguards
-		i(217143), -- Algari Competitor's Plate Breatsplate
+		i(217143), -- Algari Competitor's Plate Breatplate
 		i(217145), -- Algari Competitor's Plate Gauntlets
 		i(217147), -- Algari Competitor's Plate Greaves
 		i(217146), -- Algari Competitor's Plate Helm
 		i(217148), -- Algari Competitor's Plate Pauldrons
 		i(217144), -- Algari Competitor's Plate Sabatons
 		i(217149), -- Algari Competitor's Plate Waistguard
+		i(222458),	-- Sanctified Steps
 	}),
 	n(FIRST_CRAFTS_HEADER, sharedData({
 		["requireSkill"] = BLACKSMITHING,
@@ -420,6 +420,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222523), -- Coreforged Skeleton Key
 			i(224765), -- Everburning Ignition
 			i(225660), -- Earthern Master's Hammer
+			i(225660),	-- Earthen Master's Hammer
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(222480, {["requireSkill"] = HERBALISM}), -- Proficient Sickle
@@ -460,7 +461,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222516), -- Tempered Framework+++
 			i(222499), -- Forged Framework+
 			i(222500), -- Forged Framework++
-			i(222501), -- Forged Framework+++			
+			i(222501), -- Forged Framework+++
 		}),
 		n(WEAPONS, {
 			i(222439), -- Charged Dagger
@@ -490,6 +491,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(225374), -- Algari Competitor's Axe
 			i(225375), -- Algari Competitor's Sickle
 			i(225377), -- Algari Competitor's Sword
+			i(225376),	-- Algari Competitor's Greatsword
+			i(222459),	-- Beledar's Bulwark
+			i(222446),	-- Charged Facesmasher
+			i(222463),	-- Siphoning Stiletto
+			i(222439),	-- Everforged Dagger
+			i(222432), -- Everforged Defender
+			i(222443),	-- Everforged Greataxe
+			i(222440),	-- Everforged Longsword
+			i(222442),	-- Everforged Mace
+			i(222438),	-- Everforged Stabber
+			i(222441),	-- Everforged Warglaive
 		}),
 	}),
 	--[[
