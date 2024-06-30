@@ -32,12 +32,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				title(558),	-- Forged Gladiator <Name>
 			}),
 			-- RBG
-			ach(40795, {	-- Battleground Blitz Medic: The War Within
-				["classes"] = HEALERS,
-				["g"] = {
-					i(227539),	-- Unbound Strategist's Pennant (TOY)
-				},
-			}),
 			ach(40383, {	-- Hero of the Alliance: Forged	(0.5%)
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -68,12 +62,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			}),
 			ach(40472, {	-- Battle Mender: The War Within Season 1
 				["classes"] = HEALERS,
-			}),
-			ach(40792, {	-- Solo Shuffle Medic: The War Within
-				["classes"] = HEALERS,
-				["g"] = {
-					i(227538),	-- Unbound Legend's Pennant (TOY)
-				},
 			}),
 			-- Fashion
 			ach(40728),	-- Forged Finery
