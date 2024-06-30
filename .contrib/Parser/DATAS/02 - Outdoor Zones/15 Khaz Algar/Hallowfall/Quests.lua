@@ -53,6 +53,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 70.1, 61.0, HALLOWFALL },
 				["g"] = {
 					i(213191),	-- Arathi Tinderbox (QI!)
+					i(220109),	-- Chainmail of Sina's Stalwarts
+					i(220112),	-- Cowl of Sina's Stalwarts
 					i(220110),	-- Greaves of Sina's Stalwarts
 					i(220108),	-- Helm of Sina's Stalwarts
 				},
@@ -98,6 +100,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["g"] = {
 					--crit 'The Guilding Star' for achievement 'Hallowfall'
 					i(220111),	-- Tower-Keeper's Grips
+					i(220107),	-- Tower-Keeper's Shoes
+					i(220113),	-- Tower-Keeper's Shoulderguards
 					i(220114),	-- Tower-Keeper's Waistguard
 					--c(2899),	-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
@@ -171,7 +175,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 55.8, 43.4, HALLOWFALL },
 				["g"] = {
 					--	crit 'Gathering Shadows' for achievement 'Hallowfall'
+					i(220126),	-- Lamplighter's Cinch
 					i(220125),	-- Lamplighter's Epaulets
+					i(220119),	-- Lamplighter's Handwraps
 					i(220127),	-- Lamplighter's Sabatons
 					-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
@@ -275,6 +281,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- crit 'Hope in Solidarity' for achievement 'Hallowfall'.
 					i(220132),	-- Breastplate of the Reckoning's Vengeance
 					i(220129),	-- Breeches of the Reckoning's Vengeance
+					i(220131),	-- Coif of the Reckoning's Vengeance
+					i(220128),	-- Vestment of the Reckoning's Vengeance
 					-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
 			}),

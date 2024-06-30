@@ -133,11 +133,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(211769),	-- Orders from Siegehold (QI!)
 						i(212159),	-- Vial of Stinky Pheromones (QI!)
 					}),
+					i(225364),	-- Kaheti Confiscated Blade
 					i(225349),	-- Kaheti Confiscated Borers
 					i(225358),	-- Kaheti Confiscated Buckler
+					i(225356),	-- Kaheti Confiscated Crossbow
+					i(225354),	-- Kaheti Confiscated Dirk
 					i(225360),	-- Kaheti Confiscated Hatchet
 					i(225362),	-- Kaheti Confiscated Knife
 					i(225357),	-- Kaheti Confiscated Lantern
+					i(225359),	-- Kaheti Confiscated Mallet
 					i(225353),	-- Kaheti Confiscated Spade
 					i(225361),	-- Kaheti Confiscated Staff
 					i(225363),	-- Kaheti Confiscated Sword

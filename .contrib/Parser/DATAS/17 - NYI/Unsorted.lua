@@ -76,6 +76,49 @@ root(ROOTS.Unsorted, {
 				i(220786),	-- Delver's Dirigible (MOUNT!) (Double Up!?)
 				i(207104),	-- Morsel Sniffer Reins (MOUNT!) (couldnt find)
 				i(219012),	-- Placeholder Delve Exclusive Mount (MOUNT!) (triple up?)
+				---
+				i(221778),	-- [PH] Firefly2Mount (Yellow)
+				i(221852),	-- [PH] MoleMount (Pink Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
+				i(222898),	-- [PH] Mount - Unicorn Moose (Blue) (Gold Saddle) (Player Mount)
+
+				i(222901),	-- [PH] Mount - Unicorn Moose (Brown) (Copper Saddle) (Player Mount)
+				i(222902),	-- [PH] Mount - Unicorn Moose (Crimson) (Dark Saddle) (Player Mount)
+				i(222903),	-- [PH] Mount - Unicorn Moose (Ivory) (Silver Saddle) (Player Mount)
+				i(222904),	-- [PH] Mount - Unicorn Moose (Yellow) (White Saddle) (Player Mount)
+				i(222988),	-- [PH] Firefly2Mount (Green)
+				i(222991),	-- [PH] Firefly2Mount (Purple)
+				i(223152),	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
+				i(223154),	-- [PH] Firebee Mount (White Skin, White Saddle)
+				i(223159),	-- [PH] Firebee Mount (Blue Variant)
+				i(223265),	-- [PH] FlyingNerubian2 Mount (Tan Body, Orange Saddle)
+				i(223268),	-- [PH] DwarvenMechBoss (Gold)
+				i(223271),	-- [PH] Gryphon_Air_Mount (White Skin, Gold Saddle)
+				i(223272),	-- [PH] CaveBorerWormMount (Blue Skin, Purple Saddle)
+				i(223273),	-- [PH] CaveBorerWormMount (Forest Skin, Blue Saddle)
+				i(223275),	-- [PH] CaveBorerWormMount (Nocturne Skin, Red Saddle)
+				i(223276),	-- [PH] SpiderUndergroundMount (Red)
+				i(223277),	-- [PH] SpiderUndergroundMount (Green)
+				i(223278),	-- [PH] SpiderUndergroundMount (Blue)
+				i(223279),	-- [PH] SpiderUndergroundMount (Yellow)
+				i(223313),	-- [PH] Shadow Elemental (Black)
+				i(223318),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
+				i(223319),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
+				i(223320),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
+				i(223321),	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
+				i(223500),	-- [PH] MoleMount (Gray Skin, Purple Saddle, Teeth Tusks, Nose Base)
+				i(223502),	-- [PH] MoleMount (Brown Skin, Red Saddle, Teeth Tusks, Nose Pointed)
+				i(223503),	-- [PH] MoleMountBasic (Blue Skin, Purple Saddle, Teeth Tusks, Nose Base)
+				i(223504),	-- [PH] MoleMountBasic (Green Skin, Black Saddle, Teeth Tusks, Nose Star)
+				i(223506),	-- [PH] MoleMountBasic (Yellow Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
+				i(223573),	-- [PH] Proto Ram Earthen (Sand Skin, Grand Horns, Dark Saddle)
+				i(223574),	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle)
+				i(223587),	-- [PH] Silver Armored Fel Bat Gladiator Mount
+				i(224148),	-- [PH] NerubianWarbeastMount (Cyan)
+				i(224149),	-- [PH] NerubianWarbeastMount (Orange)
+				i(224413),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
+				i(224414),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green)
+				i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
+				i(224553),	-- Beledar's Attunement
 			}),
 			n(PROFESSIONS, {
 				i(211296),	-- Spark of Omens
@@ -85,6 +128,463 @@ root(ROOTS.Unsorted, {
 				i(213611),	-- Writhing Sample
 				i(213612),	-- Viridescent Spores
 				i(213613),	-- Leyline Residue
+				i(219500),	-- Fang Adornments
+				i(219676),	-- Common Fish A
+				i(219677),	-- Common Fish B
+				i(219678),	-- Common Fish C
+				i(219679),	-- Common Fish D
+				i(219680),	-- Uncommon Fish A
+				i(219681),	-- Uncommon Fish B
+				i(219682),	-- Uncommon Fish C
+				i(219683),	-- Uncoomon Fish D
+				i(219684),	-- Rare Fish A
+				i(219685),	-- Rare Fish B
+				i(219686),	-- Rare Fish C
+				i(219687),	-- Rare Fish D
+				i(219688),	-- Rare Fish E
+				i(219689),	-- Rare Fish F
+				i(219690),	-- Trophy Common Fish A
+				i(219691),	-- Trophy Common Fish B
+				i(219692),	-- Trophy Uncommon Fish A
+				i(219693),	-- Trophy Uncommon Fish B
+				i(219694),	-- Trophy Uncommon Fish C
+				i(219695),	-- Trophy Uncoomon Fish D
+				i(219696),	-- Trophy Rare Fish A
+				i(219697),	-- Trophy Rare Fish B
+				i(219698),	-- Trophy Rare Fish C
+				i(219699),	-- Trophy Rare Fish D
+				i(219700),	-- Trophy Rare Fish E
+				i(219701),	-- Trophy Rare Fish F
+				i(219702),	-- Cooked Meat T1 A
+				i(219703),	-- Cooked Meat T1 B
+				i(219704),	-- Cooked Meat T1 C
+				i(219705),	-- Cooked Meat T1
+				i(219706),	-- Fish Palte Haste
+				i(219707),	-- Fish Plate Crit
+				i(219708),	-- Fish Plate Verse
+				i(219709),	-- Fish Plate Mastery
+				i(219710),	-- Fish Plate Haste/Crit
+				i(219711),	-- Fish Plate Haste/Verse
+				i(219712),	-- Fish Plate Haste/Mastery
+				i(219713),	-- Fish Plate Crit/Verse
+				i(219714),	-- Fish Plate Crit/Mastery
+				i(219715),	-- Fish Plate Vers/Mastery
+				i(219716),	-- Fish Plate Stam Str
+				i(219717),	-- Fish Plate Stam Agi
+				i(219718),	-- Fish Plate Stam Int
+				i(219719),	-- Feast
+				i(219720),	-- Prepared Algari Steak \\ Prepared Algarian Steak
+				i(219721),	-- Prepared Algari Filet \\ Prepared Algarian Filet
+				i(219722),	-- Prepared Algari Poultry \\ Prepared Algarian Poultry
+				i(219723),	-- Hearty Cooked Meat T1 A
+				i(219724),	-- Hearty Cooked Meat T1 B
+				i(219725),	-- Hearty Cooked Meat T1 C
+				i(219726),	-- Hearty Cooked Meat T1
+				i(219727),	-- Hearty Fish Palte Haste
+				i(219728),	-- Hearty Fish Plate Crit
+				i(219729),	-- Hearty Fish Plate Verse
+				i(219730),	-- Hearty Fish Plate Mastery
+				i(219731),	-- Hearty Fish Plate Haste/Crit
+				i(219732),	-- Hearty Fish Plate Haste/Verse
+				i(219733),	-- Hearty Fish Plate Haste/Mastery
+				i(219734),	-- Hearty Fish Plate Crit/Verse
+				i(219735),	-- Hearty Fish Plate Crit/Mastery
+				i(219736),	-- Hearty Fish Plate Vers/Mastery
+				i(219737),	-- Hearty Fish Plate Stam Str
+				i(219738),	-- Hearty Fish Plate Stam Agi
+				i(219739),	-- Hearty Fish Plate Stam Int
+				i(219740),	-- Hearty Fish Plate Stam
+				i(219741),	-- Algari Mineral \\ Algarian Mineral
+				i(219742),	-- Algari Spices \\ Algarian Spices
+				i(219743),	-- Khaz Algar Olive (Vendor)
+				i(219744),	-- Khaz Algar Vegetable
+				i(219745),	-- Olive Oil
+				i(219931),	-- Algari Competitor's Medallion \\ Vicious Competitor's Medallion
+				i(220134),	-- Dilly-Dally Dace
+				i(220135),	-- Bloody Perch
+				i(220136),	-- Crystalline Sturgeon
+				i(220137),	-- Bismuth Bitterling
+				i(220138),	-- Nibbling Minnow
+				i(220139),	-- Whispering Stargazer
+				i(220140),	-- Goldengill Trout
+				i(220141),	-- Specular Rainbowfish
+				i(220142),	-- Quiet River Bass
+				i(220144),	-- Roaring Anglerseeker
+				i(220145),	-- Arathor Hammerfish
+				i(220146),	-- Regal Dottyback
+				i(220147),	-- Kaheti Slum Shark \\ Azj-Kahet Slum Shark
+				i(220148),	-- Pale Huskfish
+				i(220149),	-- Sanguine Dogfish
+				i(220150),	-- Spiked Sea Raven
+				i(220151),	-- Queen's Lurefish
+				i(220152),	-- Cursed Ghoulfish
+				i(220153),	-- Awoken Coelecanth \\ Kah, King of the Deep
+				i(220382),	-- Chopped Mycobloom
+				i(220383),	-- Portioned Steak
+				i(220384),	-- Spiced Meat Stock
+				i(220385),	-- Cluster of Meatballs
+				i(220386),	-- Fresh Fillet
+				i(220387),	-- Twined Herbs
+				i(220388),	-- Crunchy Peppers
+				i(220389),	-- Coreway Dust
+				i(220390),	-- Surface Olive
+				i(220391),	-- Khaz Algar Tomato
+				i(220392),	-- Granulated Spices
+				i(220393),	-- Clumped Flour
+				i(220394),	-- Skewered Fillet
+				i(220395),	-- Meatball Hold-Me-Over
+				i(220396),	-- Unseasoned Field Steak
+				i(220397),	-- Roasted Mycobloom
+				i(220398),	-- Pan Seared Mycobloom
+				i(220399),	-- Hallowfall Chili
+				i(220400),	-- Coreway Kabob
+				i(220401),	-- Flash Fire Fillet
+				i(220402),	-- Meat and Potatoes
+				i(220403),	-- Rib Stickers
+				i(220404),	-- Sweet and Sour Meatballs
+				i(220405),	-- Grilled Pepper Steak
+				i(220406),	-- Zesty Nibblers
+				i(220407),	-- Fiery Fish Sticks
+				i(220408),	-- Ginger Glazed Fillet
+				i(220409),	-- Salty Fish Pie
+				i(220410),	-- Deepfin Patty
+				i(220411),	-- Underbelly Soup
+				i(220413),	-- Fish and Chips
+				i(220414),	-- Salt Baked Seafood
+				i(220415),	-- Angler's Delight
+				i(220416),	-- Mycobloom Risotto
+				i(220417),	-- Stuffed Cave Peppers
+				i(220418),	-- Sizzling Honey Roast
+				i(220419),	-- Marinated Tenderloins
+				i(220420),	-- The Breakfast Sampler
+				i(220421),	-- Daylight Delicacy
+				i(220422),	-- Nightfall Nourishment
+				i(220423),	-- Late Night Snack
+				i(220424),	-- Feast of the Divine Day
+				i(220425),	-- Feast of the Midnight Masquerade
+				i(220426),	-- Village Potluck
+				i(220427),	-- Everything Stew
+				i(220428),	-- Chippy Tea
+				i(220429),	-- Citrus Refresher
+				i(220430),	-- Blessing Blossom Tea
+				i(220431),	-- Crisp Ringing Water
+				i(220432),	-- Pep-In-Your-Step
+				i(220433),	-- Savory Evening Tart
+				i(220434),	-- Rockslide Shake
+				i(220435),	-- Olive Oil Ice Cream
+				i(221754),	-- Ringing Deeps Ingot
+				i(221757),	-- Gloomfathom Hide
+				i(221758),	-- Profaned Tinderbox
+				i(221763),	-- Viridian Charmcap
+				i(221786),	-- Spring-Loaded Bismuth Fabric Cutters \\ Tailoring Tool T1 [DNT]
+				i(221787),	-- Spring-Loaded Aqirite Fabric Cutters \\ Tailoring Tool T2 [DNT]
+				i(221788),	-- Bismuth Brainwave Projector \\ Engineering Helm T1 [DNT]
+				i(221789),	-- Aqirite Brainwave Projector \\ Engineering Helm T2 [DNT]
+				i(221790),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
+				i(221791),	-- Aqirite Fisherfriend \\ Fishing Tool T2 [DNT]
+				i(221792),	-- Lapidary's Bismuth Clamps \\ Jewelcrafting Tool T1 [DNT]
+				i(221793),	-- Lapidary's Aqirite Clamps \\ Jewelcrafting Tool T2 [DNT]
+				i(221795),	-- Bismuth Miner's Headgear \\ Mining Helmet T1 [DNT]
+				i(221796),	-- Aqirite Miner's Headgear \\ Mining Hlmet T2 [DNT]
+				i(221797),	-- Bismuth Fueled Samophlange \\ Engineering Tool T1 [DNT]
+				i(221798),	-- Aqirite Fueled Samophlange \\ Engineering Tool T2 [DNT]
+				i(221799),	-- Miner's Bismuth Hoard \\ Mining Backpack T1 [DNT]
+				i(221800),	-- Miner's Aqirite Hoard \\ Mining Backpack T2 [DNT]
+				i(221801),	-- Studious Brilliance Expeditor \\ ENG - Cloth Goggles [DNT]
+				i(221802),	-- Overclocked Idea Generator \\ ENG - Leather Goggles [DNT]
+				i(221803),	-- Supercharged Thought Enhancer \\ ENG - Mail Goggles [DNT]
+				i(221804),	-- Dangerous Distraction Inhibitor \\ ENG - Plate Goggles [DNT]
+				i(221805),	-- Blasting Bracers
+				i(221806),	-- Venting Vambraces
+				i(221807),	-- Whirring Wristwraps
+				i(221808),	-- Clanking Cuffs
+				i(222089),	-- Bloody Perch
+				i(222090),	-- Crystalline Sturgeon
+				i(222091),	-- Bismuth Bitterling
+				i(222092),	-- Dornish Pike
+				i(222093),	-- Quiet River Bass
+				i(222094),	-- Arathor Hammerfish
+				i(222095),	-- Azj-Kahet Slum Shark
+				i(222096),	-- Goldengill Trout
+				i(222097),	-- Nibbling Minnow
+				i(222098),	-- Pale Huskfish
+				i(222099),	-- Regal Dottyback
+				i(222100),	-- Roaring Anglerseeker
+				i(222101),	-- Specular Rainbowfish
+				i(222102),	-- Whispering Stargazer
+				i(222103),	-- Sanguine Dogfish
+				i(222104),	-- Spiked Sea Raven
+				i(222105),	-- Queen's Lurefish
+				i(222106),	-- Cursed Ghoulfish
+				i(222107),	-- Kah, King of the Deeps
+				i(222250),	-- Chopped Mycobloom
+				i(222251),	-- Portioned Steak
+				i(222252),	-- Spiced Meat Stock
+				i(222253),	-- Cluster of Meatballs
+				i(222254),	-- Fresh Fillet
+				i(222255),	-- Twined Herbs
+				i(222256),	-- Crunchy Peppers
+				i(222257),	-- Coreway Dust
+				i(222258),	-- Surface Olive
+				i(222259),	-- Khaz Algar Tomato
+				i(222260),	-- Granulated Spices
+				i(222261),	-- Clumped Flour
+				i(222262),	-- Skewered Fillet
+				i(222263),	-- Meatball Hold-Me-Over
+				i(222264),	-- Unseasoned Field Steak
+				i(222265),	-- Roasted Mycobloom
+				i(222266),	-- Pan Seared Mycobloom
+				i(222267),	-- Hallowfall Chili
+				i(222268),	-- Coreway Kabob
+				i(222269),	-- Flash Fire Fillet
+				i(222270),	-- Meat and Potatoes
+				i(222271),	-- Rib Stickers
+				i(222272),	-- Sweet and Sour Meatballs
+				i(222273),	-- NYI NAME NEEDED
+				i(222274),	-- Zesty Nibblers
+				i(222275),	-- Fiery Fish Sticks
+				i(222276),	-- Ginger Glazed Fillet
+				i(222277),	-- Salty Fish Pie (Revise)
+				i(222278),	-- Fish Cake (Revise)
+				i(222279),	-- Fish Soup (Revise)
+				i(222281),	-- Fish and Chips
+				i(222282),	-- Salt Baked Seafood
+				i(222283),	-- Angler's Delight
+				i(222284),	-- NYI NAME NEEDED
+				i(222285),	-- NYI NAME NEEDED
+				i(222286),	-- NYI NAME NEEDED
+				i(222287),	-- NYI NAME NEEDED
+				i(222288),	-- The Breakfast Sampler
+				i(222289),	-- Daylight Delicacy
+				i(222290),	-- Nightfall Nourishment
+				i(222291),	-- Late Night Snack
+				i(222292),	-- Shadow-Infused Gumbo
+				i(222293),	-- NYI NAME NEEDED
+				i(222294),	-- NYI NAME NEEDED
+				i(222295),	-- Chippy Tea
+				i(222296),	-- NYI NAME NEEDED
+				i(222297),	-- NYI NAME NEEDED
+				i(222298),	-- NYI NAME NEEDED
+				i(222299),	-- NYI NAME NEEDED
+				i(222300),	-- Pep-In-Your-Step
+				i(222301),	-- NYI NAME NEEDED
+				i(222302),	-- Rockslide Shake
+				i(222303),	-- NYI NAME NEEDED
+				i(222304),	-- NYI NAME NEEDED
+				i(222305),	-- Hearty Skewered Fillet
+				i(222306),	-- Hearty Meatball Hold-Me-Over
+				i(222307),	-- Hearty Unseasoned Field Steak
+				i(222308),	-- Hearty Roasted Mycobloom
+				i(222309),	-- Hearty Pan Seared Mycobloom
+				i(222310),	-- Hearty Hallowfall Chili
+				i(222311),	-- Hearty Coreway Kabob
+				i(222312),	-- Hearty Flash Fire Fillet
+				i(222313),	-- Hearty Meat and Potatoes
+				i(222314),	-- Hearty Rib Stickers
+				i(222315),	-- Hearty Sweet and Sour Meatballs
+				i(222316),	-- Hearty NYI NAME NEEDED
+				i(222317),	-- Hearty Zesty Nibblers
+				i(222318),	-- Hearty Fiery Fish Sticks
+				i(222319),	-- Hearty Ginger Glazed Fillet
+				i(222320),	-- Hearty Salty Fish Pie (Revise)
+				i(222321),	-- Hearty Fish Cake (Revise)
+				i(222322),	-- Hearty Fish Soup (Revise)
+				i(222324),	-- Hearty Fish and Chips
+				i(222325),	-- Hearty Salt Baked Seafood
+				i(222326),	-- Hearty Angler's Delight
+				i(222327),	-- Hearty NYI NAME NEEDED
+				i(222328),	-- Hearty NYI NAME NEEDED
+				i(222329),	-- Hearty NYI NAME NEEDED
+				i(222330),	-- Hearty NYI NAME NEEDED
+				i(222331),	-- Hearty The Breakfast Sampler
+				i(222332),	-- Hearty Daylight Delicacy
+				i(222333),	-- Hearty Nightfall Nourishment
+				i(222334),	-- Hearty Late Night Snack
+				i(222335),	-- Hearty Shadow-Infused Gumbo
+				i(222336),	-- Hearty NYI NAME NEEDED
+				i(222337),	-- Hearty NYI NAME NEEDED
+				i(222338),	-- Hearty Chippy Tea
+				i(222339),	-- Hearty NYI NAME NEEDED
+				i(222340),	-- Hearty NYI NAME NEEDED
+				i(222341),	-- Hearty NYI NAME NEEDED
+				i(222342),	-- Hearty NYI NAME NEEDED
+				i(222343),	-- Hearty Pep-In-Your-Step
+				i(222344),	-- Hearty NYI NAME NEEDED
+				i(222345),	-- Hearty Rockslide Shake
+				i(222346),	-- Hearty NYI NAME NEEDED
+				i(222347),	-- Hearty NYI NAME NEEDED
+				i(222526),	-- Bloody Perch
+				i(222527),	-- Crystalline Sturgeon
+				i(222528),	-- Bismuth Bitterling
+				i(222529),	-- Dornish Pike
+				i(222530),	-- Quiet River Bass
+				i(222531),	-- Arathor Hammerfish
+				i(222532),	-- Azj-Kahet Slum Shark
+				i(222534),	-- Nibbling Minnow
+				i(222535),	-- Pale Huskfish
+				i(222536),	-- Regal Dottyback
+				i(222537),	-- Roaring Anglerseeker
+				i(222538),	-- Specular Rainbowfish
+				i(222539),	-- Whispering Stargazer
+				i(222540),	-- Sanguine Dogfish
+				i(222541),	-- Spiked Sea Raven
+				i(222542),	-- Queen's Lurefish
+				i(222543),	-- Cursed Ghoulfish
+				i(222544),	-- Kah, King of the Deeps
+				i(222690),	-- Chopped Mycobloom
+				i(222691),	-- Portioned Steak
+				i(222692),	-- Spiced Meat Stock
+				i(222693),	-- Hearty Meals
+				i(222694),	-- Fresh Fillet
+				i(222695),	-- Twined Herbs
+				i(222696),	-- Crunchy Peppers
+				i(222697),	-- Coreway Dust
+				i(222698),	-- Surface Olive
+				i(222699),	-- Khaz Algar Tomato
+				i(222700),	-- Granulated Spices
+				i(222701),	-- Clumped Flour
+				i(222702),	-- Skewered Fillet
+				i(222703),	-- Simple Stew
+				i(222704),	-- Unseasoned Field Steak
+				i(222705),	-- Roasted Mycobloom
+				i(222706),	-- Pan Seared Mycobloom
+				i(222707),	-- Hallowfall Chili
+				i(222708),	-- Coreway Kabob
+				i(222709),	-- Flash Fire Fillet
+				i(222710),	-- Meat and Potatoes
+				i(222711),	-- Rib Stickers
+				i(222712),	-- Sweet and Sour Meatballs
+				i(222713),	-- Tender Twilight Jerky
+				i(222714),	-- Zesty Nibblers
+				i(222715),	-- Fiery Fish Sticks
+				i(222716),	-- Ginger Glazed Fillet
+				i(222717),	-- Salty Dog \\ Salty Fish Pie
+				i(222718),	-- Deepfin Patty
+				i(222719),	-- Sweet and Spicy Soup
+				i(222720),	-- The Sushi Special
+				i(222721),	-- Fish and Chips
+				i(222722),	-- Salt Baked Seafood
+				i(222723),	-- Marinated Tenderloins
+				i(222724),	-- Sizzling Honey Roast
+				i(222725),	-- Mycobloom Risotto
+				i(222726),	-- Stuffed Cave Peppers
+				i(222727),	-- Angler's Delight
+				i(222728),	-- Beledar's Bounty \\ Emperor's Bounty
+				i(222729),	-- Empress' Farewell
+				i(222730),	-- Jester's Board
+				i(222731),	-- Outsider's Provisions
+				i(222732),	-- Feast of the Divine Day
+				i(222733),	-- Feast of the Midnight Masquerade
+				i(222734),	-- Village Potluck
+				i(222735),	-- Everything Stew
+				i(222736),	-- Chippy Tea
+				i(222737),	-- Chopped Mycobloom
+				i(222738),	-- Portioned Steak
+				i(222739),	-- Spiced Meat Stock
+				i(222740),	-- Hearty Meals
+				i(222741),	-- Fresh Fillet
+				i(222742),	-- Luminous Lemonade
+				i(222743),	-- Blessing Blossom Tea
+				i(222744),	-- Cinder Nectar \\ Warm Honey Water
+				i(222745),	-- Pep-In-Your-Step
+				i(222746),	-- Tasty Pocket Tart \\ Eclipse Eclair
+				i(222747),	-- Rockslide Shake
+				i(222748),	-- Sticky Sweet Treat \\ Olive Oil Ice Cream
+				i(222749),	-- Melted Candlebar \\ Late Night Snack
+				i(222750),	-- Hearty Skewered Fillet
+				i(222751),	-- Hearty Simple Stew \\ Hearty Meatball Hold-Me-Over
+				i(222752),	-- Hearty Unseasoned Field Steak
+				i(222753),	-- Hearty Roasted Mycobloom
+				i(222754),	-- Hearty Pan-Seared Mycobloom \\ Hearty Pan Seared Mycobloom
+				i(222755),	-- Hearty Hallowfall Chili
+				i(222756),	-- Hearty Coreway Kabob
+				i(222757),	-- Hearty Flash Fire Fillet
+				i(222758),	-- Hearty Meat and Potatoes
+				i(222759),	-- Hearty Rib Stickers
+				i(222760),	-- Hearty Sweet and Sour Meatballs
+				i(222761),	-- Hearty Tender Twilight Jerky
+				i(222762),	-- Hearty Zesty Nibblers
+				i(222763),	-- Hearty Fiery Fish Sticks
+				i(222764),	-- Hearty Ginger Glazed Fillet
+				i(222765),	-- Hearty Salty Dog \\ Hearty Salty Fish Pie
+				i(222766),	-- Hearty Deepfin Patty
+				i(222767),	-- Hearty Sweet and Spicy Soup
+				i(222768),	-- Hearty Sushi Special \\ Hearty Fish Stir Fry (Revise)
+				i(222769),	-- Hearty Fish and Chips
+				i(222770),	-- Hearty Salt Baked Seafood
+				i(222771),	-- Hearty Marinated Tenderloins
+				i(222772),	-- Hearty Sizzling Honey Roast
+				i(222773),	-- Hearty Mycobloom Risotto
+				i(222774),	-- Hearty Stuffed Cave Peppers
+				i(222775),	-- Hearty Angler's Delight
+				i(222776),	-- Hearty Beledar's Bounty \\ Hearty Emperor's Bounty
+				i(222777),	-- Hearty Empress' Farewell
+				i(222778),	-- Hearty Jester's Board
+				i(222779),	-- Hearty Outsider's Provisions
+				i(222780),	-- Hearty Feast of the Divine Day
+				i(222781),	-- Hearty Feast of the Midnight Masquerade
+				i(222782),	-- Hearty Village Potluck
+				i(222783),	-- Hearty Everything Stew
+				i(222784),	-- Hearty Chippy Tea
+				i(222785),	-- zzold cooking recipe
+				i(222786),	-- zzold cooking recipe
+				i(222787),	-- zzold cooking recipe
+				i(219150),	-- Pile of Rusted Scrap
+				i(219191),	-- Hastily Scrawled Notes \\ Hastily Scribbled Notes
+				i(219192),	-- Comprehensibly Organized Ideas
+				i(219194),	-- Magical Mulch
+				i(219195),	-- Imbued Mulch
+				i(219196),	-- Empowered Mulch
+				i(223512),	-- Basically Beef
+				i(223955),	-- Recipe: Fine Egg Powder
+				i(223961),	-- Recipe: Azj-Kahet Special
+				i(223965),	-- Fine Egg Powder
+				i(223966),	-- Everything-On-A-Stick
+				i(223967),	-- Protein Slurp
+				i(223968),	-- Spongey Scramble
+				i(223969),	-- Secret Sauce
+				i(223971),	-- Azj-Kahet Special
+				i(223977),	-- Coagulated Yolk
+				i(223978),	-- Double Packed Yolk
+				i(221476),	-- Engineering - 1H Wrench [DNT]
+				i(221477),	-- Engineering - 2H Wrench [DNT]
+				i(224419),	-- Recipe: Jester's Board \\ Recipe: All-Day Banquet
+				i(224822),	-- Scour Through Scrap
+				i(224831),	-- Cube of Infinite Inventions (PTR Only)
+				i(223081),	-- Design: Sifted Cave Sand \\ Design: Inscription Finishing Reagent (DNT)
+				i(225202),	-- Pilfer Through Parts
+				i(225241),	-- Refurbished Tinker: Alarm-O-Turret
+				i(225242),	-- Refurbished Tinker: Plane Displacer
+				i(225243),	-- Refurbished Tinker: Supercollide-O-Tron
+				i(225244),	-- Refurbished Tinker: Shadowflame Rockets
+				i(225370),	-- Algari Competitor's Rifle \\ Vicious Competitor's Rifle
+				i(225251),	-- Disassemble Invention
+				i(225338),	-- Glyph of Jab
+				i(225431),	-- Design: Vicious Jeweler's Setting
+				i(225432),	-- Design: Vicious Bloodstone Signet
+				i(225433),	-- Design: Vicious Bloodstone Amulet
+				i(225467),	-- Schematic: Algari Competitor's Cloth Goggles \\ Schematic: Vicious Competitor's Cloth Goggles
+				i(225468),	-- Schematic: Algari Competitor's Leather Goggles \\ Schematic: Vicious Competitor's Leather Goggles
+				i(225469),	-- Schematic: Algari Competitor's Mail Goggles \\ Schematic: Vicious Competitor's Mail Goggles
+				i(225470),	-- Schematic: Algari Competitor's Plate Goggles \\ Schematic: Vicious Competitor's Plate Goggles
+				i(225471),	-- Schematic: Algari Competitor's Cloth Bracers \\ Schematic: Vicious Competitor's Cloth Bracers
+				i(225472),	-- Schematic: Algari Competitor's Leather Bracers \\ Schematic: Vicious Competitor's Leather Bracers
+				i(225473),	-- Schematic: Algari Competitor's Mail Bracers \\ Schematic: Vicious Competitor's Mail Bracers
+				i(225474),	-- Schematic: Algari Competitor's Plate Bracers \\ Schematic: Vicious Competitor's Plate Bracers
+				i(225482),	-- Schematic: Algari Competitor's Rifle \\ Schematic: Vicious Competitor's Rifle
+				i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
+				i(224586),	-- Box o' Booms
+				i(224587),	-- Box o' Booms
+				i(224588),	-- Box o' Booms
+				i(224640),	-- Invent
+				i(224716),	-- [PH] Skewered Slum Shark
+				i(224718),	-- [PH] Surface Tipper's Toes
+				i(224719),	-- [PH] Evasive Angler's Treads
+				i(224720),	-- [PH] Keen Angler's Eye
+				i(224728),	-- Rollin' Barrel \\ [PH] Rollin' Barrel
+				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
+				i(224730),	-- [PH] Derby Dashers
+				i(224764),	-- Mosswool Thread
 				prof(ALCHEMY, {
 					i(223080),	-- Recipe: Algari Alchemist Stone (RECIPE!)
 					i(211807),	-- Gilded Vial
@@ -299,6 +799,121 @@ root(ROOTS.Unsorted, {
 					i(217156),	-- Algari Competitor's Leather Bracers \\ Vicious Competitor's Leather Bracers
 					i(217157),	-- Algari Competitor's Mail Bracers \\ Vicious Competitor's Mail Bracers
 					i(217158),	-- Algari Competitor's Plate Bracers \\ Vicious Competitor's Plate Bracers
+
+					i(221853),	-- Handful of Bismuth Bolts
+					i(221854),	-- Handful of Bismuth Bolts
+					i(221855),	-- Handful of Bismuth Bolts
+					i(221856),	-- Whimsical Wiring
+					i(221857),	-- Whimsical Wiring
+					i(221858),	-- Whimsical Wiring
+					i(221859),	-- Gyrating Gear
+					i(221860),	-- Gyrating Gear
+					i(221861),	-- Gyrating Gear
+					i(221862),	-- Safety Switch
+					i(221863),	-- Safety Switch
+					i(221864),	-- Safety Switch
+					i(221865),	-- Chaos Circuit
+					i(221866),	-- Chaos Circuit
+					i(221867),	-- Chaos Circuit
+					i(221868),	-- Entropy Enhancer
+					i(221869),	-- Entropy Enhancer
+					i(221870),	-- Entropy Enhancer
+					i(221871),	-- Prototype: Potion Bomb of Speed
+					i(221872),	-- Potion Bomb of Speed
+					i(221873),	-- Potion Bomb of Speed
+					i(221874),	-- Potion Bomb of Speed
+					i(221875),	-- Prototype: Potion Bomb of Recovery
+					i(221876),	-- Potion Bomb of Recovery
+					i(221877),	-- Potion Bomb of Recovery
+					i(221878),	-- Potion Bomb of Recovery
+					i(221879),	-- Prototype: Potion Bomb of Power
+					i(221880),	-- Potion Bomb of Power
+					i(221881),	-- Potion Bomb of Power
+					i(221882),	-- Potion Bomb of Power
+					i(221883),	-- Prototype: Stasis Mine
+					i(221884),	-- Stasis Mine
+					i(221885),	-- Stasis Mine
+					i(221886),	-- Stasis Mine
+					i(221887),	-- Prototype: Gravity Mine
+					i(221888),	-- Gravity Mine
+					i(221889),	-- Gravity Mine
+					i(221890),	-- Gravity Mine
+					i(221891),	-- Prototype: Explosive Mine
+					i(221892),	-- Explosive Mine
+					i(221893),	-- Explosive Mine
+					i(221894),	-- Explosive Mine
+					i(221895),	-- Prototype: Tinker: Lightning Tether \\ Prototype: Tinker: Lightning  Tether
+					i(221896),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
+					i(221897),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
+					i(221898),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
+					i(221899),	-- Prototype: Tinker: Overclocked S.E.L.F.I.E. Camera
+					i(221900),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
+					i(221901),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
+					i(221902),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
+					i(221903),	-- Prototype: Tinker: Earthen Delivery Drill
+					i(221904),	-- Tinker: Earthen Delivery Drill
+					i(221905),	-- Tinker: Earthen Delivery Drill
+					i(221906),	-- Tinker: Earthen Delivery Drill
+					i(221907),	-- Prototype: Tinker: Heartseeking Health Injector
+					i(221908),	-- Tinker: Heartseeking Health Injector
+					i(221909),	-- Tinker: Heartseeking Health Injector
+					i(221910),	-- Tinker: Heartseeking Health Injector
+					i(221911),	-- Serrated Cogwheel
+					i(221912),	-- Serrated Cogwheel
+					i(221913),	-- Serrated Cogwheel
+					i(221914),	-- Overclocked Cogwheel
+					i(221915),	-- Overclocked Cogwheel
+					i(221916),	-- Overclocked Cogwheel
+					i(221917),	-- Impeccable Cogwheel
+					i(221918),	-- Impeccable Cogwheel
+					i(221919),	-- Impeccable Cogwheel
+					i(221920),	-- Adjustable Cogwheel
+					i(221921),	-- Adjustable Cogwheel
+					i(221922),	-- Adjustable Cogwheel
+					i(221923),	-- Recalibrated Safety Switch
+					i(221924),	-- Recalibrated Safety Switch
+					i(221925),	-- Recalibrated Safety Switch
+					i(221926),	-- Blame Redirection Device \\ Blame Redistribution Device
+					i(221927),	-- Blame Redirection Device \\ Blame Redistribution Device
+					i(221928),	-- Blame Redirection Device \\ Blame Redistribution Device
+					i(221929),	-- Overclocked Circuit Board
+					i(221930),	-- Overclocked Circuit Board
+					i(221931),	-- Overclocked Circuit Board
+					i(221932),	-- Complicated Fuse Box
+					i(221933),	-- Complicated Fuse Box
+					i(221934),	-- Complicated Fuse Box
+					i(221935),	-- Pouch of Pocket Grenades
+					i(221936),	-- Pouch of Pocket Grenades
+					i(221937),	-- Pouch of Pocket Grenades
+					i(221938),	-- Concealed Chaos Module
+					i(221939),	-- Concealed Chaos Module
+					i(221940),	-- Concealed Chaos Module
+					i(221941),	-- Energy Redistribution Beacon
+					i(221942),	-- Energy Redistribution Beacon
+					i(221943),	-- Energy Redistribution Beacon
+					i(221944),	-- Prototype: Irresistible Red Button
+					i(221945),	-- Irresistible Red Button
+					i(221946),	-- Irresistible Red Button
+					i(221947),	-- Irresistible Red Button
+					i(221948),	-- Prototype: Pausing Pylon
+					i(221949),	-- Pausing Pylon
+					i(221950),	-- Pausing Pylon
+					i(221951),	-- Pausing Pylon
+					i(221952),	-- Prototype: Convincingly Realistic Jumper Cables
+					i(221953),	-- Convincingly Realistic Jumper Cables
+					i(221954),	-- Convincingly Realistic Jumper Cables
+					i(221955),	-- Convincingly Realistic Jumper Cables
+					i(221956),	-- Prototype: Algari Repair Bot 11O \\ Prototype: Repair Bot
+					i(221957),	-- Algari Repair Bot 11O \\ Repair Bot
+					i(221958),	-- Prototype: Portable Profession Possibility Projector
+					i(221959),	-- Portable Profession Possibility Projector
+					i(221960),	-- Prototype: Barrel of Fireworks
+					i(221961),	-- Prototype: Defective Escape Pod
+					i(221963),	-- Prototype: Filmless Camera \\ Prototype: Malfunctioning Navigation Beacon
+					i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
+					i(221965),	-- Prototype: Wormhole Generator: Khaz Algar
+					i(221968),	-- Legibly Scribbled Notes
+					i(221969),	-- P.0.W. x2
 				}),
 				prof(HERBALISM, {
 					i(217105),	-- Refine Khaz Algar Herbs
@@ -316,6 +931,18 @@ root(ROOTS.Unsorted, {
 					i(222624),	-- Transcribe to Symbiosis \\ Extraction: Symbiosis
 					i(222625),	-- Transcribe to Radiance \\ Extraction: Shine
 					i(222689),	-- Fortuitous Essence
+					i(217971),	-- Deadly Cypher
+					i(217972),	-- Deadly Cypher
+					i(217973),	-- Deadly Cypher
+					i(217974),	-- Quick Cypher
+					i(217975),	-- Quick Cypher
+					i(217976),	-- Quick Cypher
+					i(217977),	-- Masterful Cypher
+					i(217978),	-- Masterful Cypher
+					i(217979),	-- Masterful Cypher
+					i(217980),	-- Versatile Cypher
+					i(217981),	-- Versatile Cypher
+					i(217982),	-- Versatile Cypher
 				}),
 				prof(JEWELCRAFTING, {
 					i(212495),	-- Radiant Ruby
@@ -464,6 +1091,19 @@ root(ROOTS.Unsorted, {
 					i(217113),	-- Cubic Blasphemia
 					i(217114),	-- Cubic Blasphemia
 					i(217115),	-- Cubic Blasphemia
+					i(223082),	-- Design: Ominous Energy Crystal \\ Design: Engineering Finishing Reagent (DNT) \\ Pattern: Artisan Gardening Hat
+					i(223083),	-- Design: Elemental Focusing Lens \\ Pattern: Artisan Fishing Cap
+					i(223084),	-- Design: Prismatic Null Stone \\ Pattern: Artisan Enchanter's Hat
+					i(223085),	-- Design: Fractured Gemstone Locket \\ Pattern: Artisan Alchemist's Robe
+					i(223086),	-- Design: Insightful Blasphemite \\ Pattern: Artisan's Chef's Hat
+					i(223087),	-- Design: Culminating Blasphemite \\ Pattern: Alchemy Bag
+					i(223088),	-- Design: Elusive Blasphemite \\ Pattern: Blacksmithing Bag
+					i(223089),	-- Design: Jewelcrafting T2 Helm (DNT) \\ Pattern: Leatherworking Bag
+					i(223090),	-- Design: Enchanting T2 Focus (DNT) \\ Pattern: Enchanting Bag
+					i(223091),	-- Design: Inscription T2 Magnifying Glass (DNT) \\ Pattern: Engineering Bag
+					i(223092),	-- Design: Inscription T2 Glasses (DNT) \\ Pattern: Inscription Bag
+					i(223093),	-- Design: Beautification Iris \\ Pattern: Herbalism Bag
+					i(223094),	-- Design: Magnificent Jeweler's Setting \\ Pattern: Mining Bag
 				}),
 				prof(LEATHERWORKING, {
 					i(223104),	-- Pattern: Defender's Armor Kit (RECIPE!)
@@ -494,6 +1134,26 @@ root(ROOTS.Unsorted, {
 					r(447001),	-- Daybreak Spellthread
 					r(447000),	-- Sunset Spellthread
 				}),
+				-- Prof Knowledge
+				i(224782),	-- Razor Talon
+				i(224807),	-- Algari Skinning Notes
+				i(224835),	-- Deepgrove Roots
+				i(225220),	-- Umbral Bone Needle
+				i(225221),	-- Primalweave Spindle
+				i(225222),	-- Studded Leather Band \\ Preserved Animal Parts
+				i(225223),	-- Sturdy Nerubian Carapace \\ Molted Dragon Scales
+				i(225224),	-- Ancient Gem Fragments
+				i(225225),	-- Chipped Tyrstone
+				i(225226),	-- Phoenix Feather Quill
+				i(225227),	-- Iskaaran Trading Ledger
+				i(225228),	-- Eroded Titan Gizmo
+				i(225229),	-- Watcher Power Core
+				i(225230),	-- Prismatic Focusing Shard
+				i(225231),	-- Primal Dust
+				i(225232),	-- Valdrakken Weapon Chain
+				i(225233),	-- Draconium Blade Sharpener
+				i(225234),	-- Experimental Substance
+				i(225235),	-- Reawakened Catalyst
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				i(212390),	-- 11.0 Raid Template - Guns - RangedRight
@@ -572,6 +1232,69 @@ root(ROOTS.Unsorted, {
 				i(211062),	-- Treasure-Seeker's Shawl
 				i(211063),	-- Long-Lost Choker
 				i(211142),	-- Delves Keystone
+				i(218129),	-- Porcelain Arrowhead Idol \\ Curio Test \\ Test Curio
+				i(219138),	-- Delve Experience
+				i(219351),	-- Mana-Lined Slab Slicer
+				i(219352),	-- Skypiercing Drillstaff
+				i(219353),	-- Trailblazer's Hookshoot
+				i(219354),	-- Mountain Shaper's Greataxe
+				i(219355),	-- Bedrock Breaker
+				i(219356),	-- Torchlit Pickaxe
+				i(219916),	-- Bronzebeard Family Compass
+				i(225065),	-- Torchbearer's Haversack
+				i(225066),	-- Trail Blazer's Haversack
+				i(225067),	-- Shadowlit Haversack
+				i(225123),	-- Companion Experience
+				i(225379),	-- Torchbearer's Chainmail
+				i(225380),	-- Torchbearer's Cinch
+				i(225381),	-- Torchbearer's Striders
+				i(225382),	-- Torchbearer's Grips
+				i(225383),	-- Torchbearer's Coif
+				i(225384),	-- Torchbearer's Greaves
+				i(225385),	-- Torchbearer's Shoulderguards
+				i(225386),	-- Torchbearer's Bracers
+				i(225387),	-- Cave Topographer's Vestment
+				i(225388),	-- Cave Topographer's Sandals
+				i(225389),	-- Cave Topographer's Handwraps
+				i(225390),	-- Cave Topographer's Cowl
+				i(225391),	-- Cave Topographer's Leggings
+				i(225392),	-- Cave Topographer's Shoulders
+				i(225393),	-- Cave Topographer's Cord
+				i(225394),	-- Cave Topographer's Cuffs
+				i(225395),	-- Treasure-Seeker's Vest
+				i(225396),	-- Treasure-Seeker's Boots
+				i(225397),	-- Treasure-Seeker's Grips
+				i(225398),	-- Treasure-Seeker's Helm
+				i(225399),	-- Treasure-Seeker's Breeches
+				i(225400),	-- Treasure-Seeker's Epaulets
+				i(225401),	-- Treasure-Seeker's Sash
+				i(225402),	-- Treasure-Seeker's Bindings
+				i(225403),	-- Secret-Dredger's Breastplate
+				i(225404),	-- Secret-Dredger's Sabatons
+				i(225405),	-- Secret-Dredger's Gauntlets
+				i(225406),	-- Secret-Dredger's Helm
+				i(225407),	-- Secret-Dredger's Legguards
+				i(225408),	-- Secret-Dredger's Mantle
+				i(225409),	-- Secret-Dredger's Girdle
+				i(225410),	-- Secret-Dredger's Armplates
+				i(225411),	-- Secret-Dredger's Cloak
+				i(225412),	-- Torchbearer's Greatcloak
+				i(225413),	-- Treasure-Seeker's Shawl
+				i(225414),	-- Cave Topographer's Drape
+				i(225495),	-- Brilliant Beacon
+				i(225496),	-- Unhinged Vault-Hatch
+				i(225497),	-- Torchlit Pickaxe
+				i(225498),	-- Umbral Artist's Chisel
+				i(225499),	-- Lapidarius Gemcutter
+				i(225500),	-- Bedrock Breaker
+				i(225501),	-- Pathfinder's Stonecarver
+				i(225502),	-- Mountain Shaper's Greataxe
+				i(225503),	-- Trailblazer's Hookshoot
+				i(225504),	-- Skypiercing Drillstaff
+				i(225505),	-- Luminous Lampspire
+				i(225506),	-- Mana-Lined Slab Slicer
+				i(225507),	-- Brilliant Beacon
+				i(225508),	-- Unhinged Vault-Hatch
 			}),
 			filter(COSMETIC, {
 				i(217706),	-- Learn Warglaives Test Item (DNT)
@@ -588,6 +1311,65 @@ root(ROOTS.Unsorted, {
 				i(212170),	-- Bronzebeard's Spare Hat \\ Bronzebeard Hat [PH]
 				i(212171),	-- Zekvir's Raptorial Spine \\ Xev'zikk's Spine
 				i(212173),	-- Rulk'Nerub Raptorial Spine \\ Rulk'Nerub Backpiece [PH]
+
+				i(218347),	-- Thread-Bearer's Pauldrons \\ [DNT] Nerubian Renown Shoulders
+				i(218348),	-- Thread-Bearer's Cloak \\ [DNT] Nerubian Renown Cloak
+				i(218349),	-- Tabard of The Severed Threads \\ [DNT] Nerubian Renown Tabard
+				i(218350),	-- Expeditionary Spaulders \\ [DNT] Arathi Renown Shoulders
+				i(218351),	-- Expeditionary Cape \\ [DNT] Arathi Renown Cloak
+				i(218352),	-- Expeditionary Tabard \\ [DNT] Arathi Renown Tabard
+				i(218911),	-- [DNT] EarthenCivilian Robe Copper
+				i(218912),	-- [DNT] EarthenCivilian Robe Dark
+				i(218913),	-- [DNT] EarthenCivilian Robe Gold
+				i(218914),	-- [DNT] EarthenCivilian Robe Silver
+				i(218915),	-- [DNT] EarthenCivilian Robe Skardyn
+				i(218916),	-- [DNT] EarthenCivilian Robe White
+				i(219065),	-- [DNT] Ensemble: CivilianScholar
+				i(219066),	-- [DNT] Ensemble: CivilianScholar
+				i(219067),	-- [DNT] Ensemble: CivilianScholar
+				i(219068),	-- [DNT] Ensemble: CivilianScholar
+				i(219069),	-- [DNT] Ensemble: CivilianScholar
+				i(219070),	-- [DNT] Ensemble: CivilianPeasant
+				i(219071),	-- [DNT] Ensemble: CivilianPeasant
+				i(219072),	-- [DNT] Ensemble: CivilianPeasant
+				i(219073),	-- [DNT] Ensemble: CivilianPeasant
+				i(219074),	-- [DNT] Ensemble: CivilianPeasant
+				i(219075),	-- [DNT] Ensemble: CivilianNoble
+				i(219076),	-- [DNT] Ensemble: CivilianNoble
+				i(219077),	-- [DNT] Ensemble: CivilianNoble
+				i(219078),	-- [DNT] Ensemble: CivilianNoble
+				i(219079),	-- [DNT] Ensemble: CivilianNoble
+				i(219080),	-- [DNT] Ensemble: CivilianMerchant
+				i(219081),	-- [DNT] Ensemble: CivilianMerchant
+				i(219082),	-- [DNT] Ensemble: CivilianMerchant
+				i(219083),	-- [DNT] Ensemble: CivilianMerchant
+				i(219084),	-- [DNT] Ensemble: CivilianMerchant
+				i(219085),	-- [DNT] Ensemble: CivilianLaborer
+				i(219086),	-- [DNT] Ensemble: CivilianLaborer
+				i(219087),	-- [DNT] Ensemble: CivilianLaborer
+				i(219088),	-- [DNT] Ensemble: CivilianLaborer
+				i(219089),	-- [DNT] Ensemble: CivilianLaborer
+				i(219090),	-- [DNT] Ensemble: CivilianCraftsperson
+				i(219091),	-- [DNT] Ensemble: CivilianCraftsperson
+				i(219092),	-- [DNT] Ensemble: CivilianCraftsperson
+				i(219093),	-- [DNT] Ensemble: CivilianCraftsperson
+				i(219094),	-- [DNT] Ensemble: CivilianCraftsperson
+				i(219095),	-- [DNT] Ensemble: CivilianAdventurer
+				i(219096),	-- [DNT] Ensemble: CivilianAdventurer
+				i(219097),	-- [DNT] Ensemble: CivilianAdventurer
+				i(219098),	-- [DNT] Ensemble: CivilianAdventurer
+				i(219099),	-- [DNT] Ensemble: CivilianAdventurer
+				iensemble(219115),	-- Versatile Peddler's Trinkets
+				iensemble(219120),	-- Toiler's Khaki Uniform
+				iensemble(219125),	-- Formed Artisan's Talent
+				iensemble(219132),	-- Crimson Cartographer's Orientation
+				-- Cosmetic
+				i(224165),	-- Dornogal Tabard \\ Gilded Earthen Tabard \\ [PH] Earthen Tabard
+				i(224166),	-- Awakened Tabard \\ Awakening Tabard \\ Copper Earthen Tabard \\ [PH] Earthen Tabard
+				i(224167),	-- Gundargaz Tabard \\ Dark Earthen Tabard \\ [PH] Earthen Tabard
+				i(224168),	-- Stonebound Tabard \\ Silver Earthen Tabard \\ [PH] Earthen Tabard
+				i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
+				i(224717),	-- Ensemble: Cerulean Dredger \\ [PH] Ensemble: Cerulean Dredger
 			}),
 			n(ARMOR, {
 				i(206211),	-- Onyx Annulet
@@ -752,8 +1534,287 @@ root(ROOTS.Unsorted, {
 				i(215178),	-- Shadow-Binding Ritual Knife
 				i(216657),	-- Test Item C
 				i(217894),	-- Nerubian Pheromone Secreter
+				-- Recruits?!
+				i(217991),	-- Recruit's Sturdy Greaves
+				i(218024),	-- Recruit's Sturdy Greaves
+				i(218025),	-- Recruit's Sturdy Chestplate
+				i(218026),	-- Recruit's Sturdy Stompers
+				i(218027),	-- Recruit's Sturdy Crushers
+				i(218028),	-- Recruit's Sturdy Greathelm
+				i(218029),	-- Recruit's Sturdy Pauldrons
+				i(218030),	-- Recruit's Sturdy Girdle
+				i(218031),	-- Recruit's Sturdy Vambraces
+				i(218032),	-- Recruit's Sturdy Cape
+				i(218034),	-- Recruit's Sturdy Chestplate
+				i(218035),	-- Recruit's Sturdy Stompers
+				i(218036),	-- Recruit's Sturdy Crushers
+				i(218037),	-- Recruit's Sturdy Greathelm
+				i(218038),	-- Recruit's Sturdy Pauldrons
+				i(218039),	-- Recruit's Sturdy Girdle
+				i(218040),	-- Recruit's Sturdy Vambraces
+				i(218041),	-- Recruit's Sturdy Cape
+
+				-- Dalaran Defender?
+				i(218078),	-- Dalaran Defender's Cape
+				i(218079),	-- Dalaran Defender's Shawl
+				i(218080),	-- Dalaran Defender's Cloak
+				i(218081),	-- Dalaran Defender's Drape
+
+				i(218132),	-- 11.0 Zone Uncommon Template - Vestment
+				i(218133),	-- 11.0 Zone Uncommon Template - Sandals
+				i(218134),	-- 11.0 Zone Uncommon Template - Handwraps
+				i(218135),	-- 11.0 Zone Uncommon Template - Cowl
+				i(218136),	-- 11.0 Zone Uncommon Template - Leggings
+				i(218137),	-- 11.0 Zone Uncommon Template - Cord
+				i(218138),	-- 11.0 Zone Uncommon Template - Cuffs
+				i(218139),	-- 11.0 Zone Uncommon Template - Waders
+				i(218140),	-- 11.0 Zone Uncommon Template - Grips
+				i(218141),	-- 11.0 Zone Uncommon Template - Helm
+				i(218142),	-- 11.0 Zone Uncommon Template - Breeches
+				i(218143),	-- 11.0 Zone Uncommon Template - Sash
+				i(218144),	-- 11.0 Zone Uncommon Template - Bindings
+				i(218145),	-- 11.0 Zone Uncommon Template - Chainmail
+				i(218146),	-- 11.0 Zone Uncommon Template - Striders
+				i(218147),	-- 11.0 Zone Uncommon Template - Grips
+				i(218148),	-- 11.0 Zone Uncommon Template - Coif
+				i(218149),	-- 11.0 Zone Uncommon Template - Greaves
+				i(218150),	-- 11.0 Zone Uncommon Template - Shoulderguards
+				i(218151),	-- 11.0 Zone Uncommon Template - Cinch
+				i(218152),	-- 11.0 Zone Uncommon Template - Bracers
+				i(218153),	-- 11.0 Zone Uncommon Template - Helm
+				i(218154),	-- 11.0 Zone Uncommon Template - Breastplate
+				i(218155),	-- 11.0 Zone Uncommon Template - Sabatons
+				i(218156),	-- 11.0 Zone Uncommon Template - Gauntlets
+				i(218157),	-- 11.0 Zone Uncommon Template - Legguards
+				i(218158),	-- 11.0 Zone Uncommon Template - Mantle
+				i(218159),	-- 11.0 Zone Uncommon Template - Girdle
+				i(218160),	-- 11.0 Zone Uncommon Template - Armplates
+				i(218161),	-- 11.0 Zone Uncommon Template - Vest
+				i(218162),	-- 11.0 Zone Uncommon Template - Epaulets
+				i(218163),	-- 11.0 Zone Uncommon Template - Shoulderpads
+				i(218164),	-- 11.0 Zone Uncommon Template - Shield
+				i(218165),	-- 11.0 Zone Uncommon Template - Offhand
+				i(218166),	-- 11.0 Zone Uncommon Template - Polearm
+				i(218167),	-- 11.0 Zone Uncommon Template - Gun
+				i(218168),	-- 11.0 Zone Uncommon Template - Kris
+				i(218169),	-- 11.0 Zone Uncommon Template - Mace
+				i(218170),	-- 11.0 Zone Uncommon Template - Shank
+				i(218171),	-- 11.0 Zone Uncommon Template - Sword
+				i(218172),	-- 11.0 Zone Uncommon Template - Blade
+				i(218173),	-- 11.0 Zone Uncommon Template - Great Mace
+				i(218174),	-- 11.0 Zone Uncommon Template - Band
+				i(218175),	-- 11.0 Zone Uncommon Template - Signet
+				i(218176),	-- 11.0 Zone Uncommon Template - Cudgel
+				i(218177),	-- 11.0 Zone Uncommon Template - Cudgel
+				i(218178),	-- 11.0 Zone Uncommon Template - Stave
+				i(218179),	-- 11.0 Zone Uncommon Template - Halberd
+				i(218180),	-- 11.0 Zone Uncommon Template - Staff
+				i(218181),	-- 11.0 Zone Uncommon Template - Warglaive
+				i(218182),	-- 11.0 Zone Uncommon Template - Trinket
+				i(218183),	-- 11.0 Zone Uncommon Template - Band
+				i(218184),	-- 11.0 Zone Uncommon Template - Belt
+				i(218185),	-- 11.0 Zone Uncommon Template - Shawl
+				i(218186),	-- 11.0 Zone Uncommon Template - Choker
+				i(218189),	-- 11.0 Leveling Quest Template - Vestment
+				i(218190),	-- 11.0 Leveling Quest Template - Sandals
+				i(218191),	-- 11.0 Leveling Quest Template - Handwraps
+				i(218192),	-- 11.0 Leveling Quest Template - Cowl
+				i(218193),	-- 11.0 Leveling Quest Template - Leggings
+				i(218194),	-- 11.0 Leveling Quest Template - Cord
+				i(218195),	-- 11.0 Leveling Quest Template - Cuffs
+				i(218196),	-- 11.0 Leveling Quest Template - Waders
+				i(218197),	-- 11.0 Leveling Quest Template - Grips
+				i(218198),	-- 11.0 Leveling Quest Template - Helm
+				i(218199),	-- 11.0 Leveling Quest Template - Breeches
+				i(218200),	-- 11.0 Leveling Quest Template - Sash
+				i(218201),	-- 11.0 Leveling Quest Template - Bindings
+				i(218202),	-- 11.0 Leveling Quest Template - Chainmail
+				i(218203),	-- 11.0 Leveling Quest Template - Striders
+				i(218204),	-- 11.0 Leveling Quest Template - Grips
+				i(218205),	-- 11.0 Leveling Quest Template - Coif
+				i(218206),	-- 11.0 Leveling Quest Template - Greaves
+				i(218207),	-- 11.0 Leveling Quest Template - Shoulderguards
+				i(218208),	-- 11.0 Leveling Quest Template - Cinch
+				i(218209),	-- 11.0 Leveling Quest Template - Bracers
+				i(218210),	-- 11.0 Leveling Quest Template - Helm
+				i(218211),	-- 11.0 Leveling Quest Template - Breastplate
+				i(218212),	-- 11.0 Leveling Quest Template - Sabatons
+				i(218213),	-- 11.0 Leveling Quest Template - Gauntlets
+				i(218214),	-- 11.0 Leveling Quest Template - Legguards
+				i(218215),	-- 11.0 Leveling Quest Template - Mantle
+				i(218216),	-- 11.0 Leveling Quest Template - Girdle
+				i(218217),	-- 11.0 Leveling Quest Template - Armplates
+				i(218218),	-- 11.0 Leveling Quest Template - Vest
+				i(218219),	-- 11.0 Leveling Quest Template - Epaulets
+				i(218220),	-- 11.0 Leveling Quest Template - Shoulderpads
+				i(218221),	-- 11.0 Leveling Quest Template - Shield - Shield
+				i(218222),	-- 11.0 Leveling Quest Template - Generic - Holdable
+				i(218223),	-- 11.0 Leveling Quest Template - Polearms - Agi
+				i(218224),	-- 11.0 Leveling Quest Template - Guns - Agi
+				i(218225),	-- 11.0 Leveling Quest Template - Dagger - Int
+				i(218226),	-- 11.0 Leveling Quest Template - Mace2H - Int
+				i(218227),	-- 11.0 Leveling Quest Template - Dagger - Agi
+				i(218228),	-- 11.0 Leveling Quest Template - Sword1H - Str
+				i(218229),	-- 11.0 Leveling Quest Template - Sword1H - Agi
+				i(218230),	-- 11.0 Leveling Quest Template - Mace2H - Str
+				i(218231),	-- 11.0 Leveling Quest Template - Band
+				i(218232),	-- 11.0 Leveling Quest Template - Signet
+				i(218233),	-- 11.0 Leveling Quest Template - Mace1H - Str
+				i(218234),	-- 11.0 Leveling Quest Template - Mace1H - Agi
+				i(218235),	-- 11.0 Leveling Quest Template - Staff - Agi
+				i(218236),	-- 11.0 Leveling Quest Template - Polearms - Str
+				i(218237),	-- 11.0 Leveling Quest Template - Staff - Int
+				i(218238),	-- 11.0 Leveling Quest Template - Warglaive - Agi
+				i(218239),	-- 11.0 Leveling Quest Template - Trinket
+				i(218240),	-- 11.0 Leveling Quest Template - Band
+				i(218241),	-- 11.0 Leveling Quest Template - Belt
+				i(218242),	-- 11.0 Leveling Quest Template - Shawl
+				i(218243),	-- 11.0 Leveling Quest Template - Choker
+				i(218250),	-- Recruit's Sturdy Chainmail
+				i(218251),	-- Recruit's Sturdy Striders
+				i(218252),	-- Recruit's Sturdy Gauntlets
+				i(218253),	-- Recruit's Sturdy Cowl
+				i(218254),	-- Recruit's Sturdy Kilt
+				i(218255),	-- Recruit's Sturdy Spaulders
+				i(218256),	-- Recruit's Sturdy Cinch
+				i(218257),	-- Recruit's Sturdy Bracers
+				i(218258),	-- Recruit's Sturdy Drape
+				i(218259),	-- Recruit's Sturdy Chainmail
+				i(218260),	-- Recruit's Sturdy Striders
+				i(218261),	-- Recruit's Sturdy Gauntlets
+				i(218262),	-- Recruit's Sturdy Cowl
+				i(218263),	-- Recruit's Sturdy Kilt
+				i(218264),	-- Recruit's Sturdy Spaulders
+				i(218265),	-- Recruit's Sturdy Cinch
+				i(218266),	-- Recruit's Sturdy Bracers
+				i(218267),	-- Recruit's Sturdy Drape
+				i(218271),	-- Recruit's Sturdy Raiment
+				i(218272),	-- Recruit's Sturdy Treads
+				i(218273),	-- Recruit's Sturdy Gloves
+				i(218274),	-- Recruit's Sturdy Mask
+				i(218275),	-- Recruit's Sturdy Leggings
+				i(218276),	-- Recruit's Sturdy Epaulets
+				i(218277),	-- Recruit's Sturdy Cincture
+				i(218278),	-- Recruit's Sturdy Wristbands
+				i(218279),	-- Recruit's Sturdy Cloak
+				i(218280),	-- Recruit's Sturdy Raiment
+				i(218281),	-- Recruit's Sturdy Treads
+				i(218282),	-- Recruit's Sturdy Gloves
+				i(218283),	-- Recruit's Sturdy Mask
+				i(218284),	-- Recruit's Sturdy Leggings
+				i(218285),	-- Recruit's Sturdy Epaulets
+				i(218286),	-- Recruit's Sturdy Cincture
+				i(218287),	-- Recruit's Sturdy Wristbands
+				i(218288),	-- Recruit's Sturdy Cloak
+				i(218289),	-- Recruit's Sturdy Robes
+				i(218290),	-- Recruit's Sturdy Slippers
+				i(218291),	-- Recruit's Sturdy Mitts
+				i(218292),	-- Recruit's Sturdy Hood
+				i(218293),	-- Recruit's Sturdy Breeches
+				i(218294),	-- Recruit's Sturdy Mantle
+				i(218295),	-- Recruit's Sturdy Sash
+				i(218296),	-- Recruit's Sturdy Bindings
+				i(218297),	-- Recruit's Sturdy Wrap
+				i(218298),	-- Recruit's Sturdy Robes
+				i(218299),	-- Recruit's Sturdy Slippers
+				i(218300),	-- Recruit's Sturdy Mitts
+				i(218301),	-- Recruit's Sturdy Hood
+				i(218302),	-- Recruit's Sturdy Breeches
+				i(218303),	-- Recruit's Sturdy Mantle
+				i(218304),	-- Recruit's Sturdy Sash
+				i(218305),	-- Recruit's Sturdy Bindings
+				i(218306),	-- Recruit's Sturdy Wrap
+				-- Recruit
+				i(223507),	-- Recruit's Pocket Watch
+				i(223508),	-- Recruit's Whetstone
+				i(223516),	-- Recruit's Trumpet
+				i(223517),	-- Recruit's Warhorn
+				-- Armor???
+				i(224084),	-- Tentacled Hat
+				i(224085),	-- Hightfish Cap
+				i(224086),	-- Nat's Drinking Hat
+				i(224087),	-- Boots of the Bay
+				i(224088),	-- Worn Fishing Hat
+				i(224089),	-- Nat Pagle's Extreme Anglin' Boots
+				i(224090),	-- Weather-Beaten Fishing Hat
+				i(224091),	-- Nat's Hat
+				i(224092),	-- Darkmoon Fishing Cap
+				i(224093),	-- Anglin' Art's Stompers
+				i(224094),	-- Anglin' Art's Waders
+				i(224095),	-- Anglin' Art's Treads
+				i(224096),	-- Anglin' Art's Sandals
+				i(224097),	-- Lucky Fishing Hat
+				-- Armor..
+				i(224170),	-- Wildercloth Fishing Cap
+				i(224171),	-- Master's Wildercloth Fishing Cap
+				-- Armor
+				i(224661),	-- Gem-Studded Signet
+				i(224662),	-- Gem-Studded Ring
+				i(224682),	-- Chitinoid Chainmail
+				i(224683),	-- Chitinoid Striders
+				i(224684),	-- Chitinoid Grips
+				i(224685),	-- Chitinoid Coif
+				i(224686),	-- Chitinoid Greaves
+				i(224687),	-- Chitinoid Shoulderguards
+				i(224688),	-- Chitinoid Belt
+				i(224689),	-- Chitinoid Bracers
+				i(224698),	-- Ancient Forged Shank
+				i(224699),	-- Ancient Forged Ritual Knife
+				i(224700),	-- Ancient Forged Cudgel
+				i(224701),	-- Ancient Forged Hammer
+				i(224702),	-- Ancient Forged Blade
+				i(224703),	-- Ancient Forged Sword
+				i(224704),	-- Ancient Forged Slugthrower
+				i(224705),	-- Ancient Forged Mace
+				i(224706),	-- Ancient Forged Warhammer
+				i(224708),	-- Ancient Forged Polearm
+				i(224709),	-- Ancient Forged Staff
+				i(224710),	-- Ancient Forged Spellstaff
+				i(224711),	-- Ancient Forged Curio
+				i(224712),	-- Ancient Forged Shield
+				i(224713),	-- Ancient Forged Glaive
+				i(225509),	-- [PH] Armor Vestment
+				i(225510),	-- [PH] Armor Sandals
+				i(225511),	-- [PH] Armor Handwraps
+				i(225512),	-- [PH] Armor Cowl
+				i(225514),	-- Webweave Belt
+				i(225515),	-- General's Pungent Wraps
+				i(225517),	-- [PH] Armor Grips
+				i(225518),	-- [PH] Armor Helm
+				i(225519),	-- [PH] Armor Breeches
+				i(225522),	-- [PH] Armor Chainmail
+				i(225523),	-- Smuggled Nerubian Boots
+				i(225524),	-- Rescued Aeroknight's Gloves
+				i(225525),	-- [PH] Armor Coif
+				i(225526),	-- General's Pungent Legguards
+				i(225527),	-- [PH] Armor Shoulderguards
+				i(225528),	-- [PH] Armor Cinch
+				i(225529),	-- Webweave Wristguards
+				i(225531),	-- [PH] Armor Breastplate
+				i(225532),	-- [PH] Armor Sabatons
+				i(225534),	-- [PH] Armor Legguards
+				i(225536),	-- [PH] Armor Girdle
+				i(225538),	-- General's Pungent Armor
+				i(225539),	-- [PH] Armor Epaulets
+				i(225540),	-- Rescued Aeroknight's Mantle
+
+				i(219942),	-- 11.0 Stalwart's Sandals
+				i(220157),	-- Darkened Tinderbox
+				i(220158),	-- Empowered Tinderbox
+				-- Armor Generator
+				i(224814),	-- Adventurer's Warbound Boots
+				i(224839),	-- Adventurer's Warbound Wrists \\ Warbound Adventurer's Wrists
+				i(224840),	-- Adventurer's Warbound Waist
+				i(224841),	-- Adventurer's Warbound Shoulders
+				i(224842),	-- Adventurer's Warbound Legs
+				i(224843),	-- Adventurer's Warbound Headpiece
+				i(224844),	-- Adventurer's Warbound Gloves
+				i(224845),	-- Adventurer's Warbound Chestpiece
 			}),
 			n(PVP, {
+				i(224556),	-- Victorious Contender's Strongbox
+				i(224557),	-- Field Medic's Hazard Payout
+				i(225493),	-- Medal of Conquest
 				i(210221),	-- Forged Combatant's Heraldry
 				i(210232),	-- Forged Aspirant's Heraldry
 				i(210233),	-- Forged Gladiator's Heraldry
@@ -1210,6 +2271,19 @@ root(ROOTS.Unsorted, {
 				i(225872),	-- Forged Gladiator's Pulverizer
 				i(225873),	-- Forged Gladiator's Sword
 				i(225874),	-- Forged Gladiator's Wither-Blade \\ Forged Gladiator's Shotel
+				i(223989),	-- Arsenal: Hellbloom Club
+				i(223990),	-- Arsenal: Hellbloom Hammer
+				i(223991),	-- Arsenal: Hellbloom Knife
+				i(223992),	-- Arsenal: Hellbloom Wand
+				i(223993),	-- Arsenal: Hellbloom Polearm
+				i(223994),	-- Arsenal: Hellbloom Shield
+				i(223995),	-- Arsenal: Hellbloom Staff
+				i(223996),	-- Arsenal: Hellbloom Bow
+				i(223997),	-- Arsenal: Hellbloom Warglaive
+				i(223998),	-- Arsenal: Hellbloom Sword
+				i(223999),	-- Arsenal: Hellbloom Greatsword
+				i(224000),	-- Arsenal: Hellbloom Axe
+				i(224001),	-- Arsenal: Hellbloom Branch
 			}),
 			n(MISC, {
 				i(206134),	-- Potion of Healing
@@ -1262,6 +2336,198 @@ root(ROOTS.Unsorted, {
 				i(217895),	-- Pheromone Bottle
 				i(217896),	-- Cinderbrew Mead
 				i(217897),	-- Volatile Pheromone
+				i(218308),	-- Winter Veil Cracker
+				i(218309),	-- Gently Shaken Gift
+				i(218311),	-- Winter Veil Gift
+				i(221502),	-- Adventurer's Warbound Battlegear Drop
+				i(221503),	-- Explorer's Warbound Battlegear Drop
+				i(221777),	-- Pearlescent Shellcrab
+				i(221812),	-- Player Experience
+				i(222928),	-- Coin Coffer
+				i(222929),	-- Carved Coin Coffer \\ Large Coin Coffer
+				i(222954),	-- Runed Coin Coffer \\ Coin Coffer
+				i(222955),	-- Player Experience
+				i(222956),	-- Player Experience
+				i(222977),	-- Scorched Junk
+				i(222982),	-- Earthen Satchel
+				i(223316),	-- Trusty Hat
+				i(219390),	-- Set Keystone Map: Grim Batol
+				i(219494),	-- Ritual Flame
+				i(220122),	-- Offering of Pure Water
+				i(220123),	-- Ominous Offering
+				i(220124),	-- Jar of Mucus
+				i(220156),	-- Bubbling Wax
+				i(220220),	-- Ornate Pipe
+				i(220221),	-- Void Pebble
+				i(220222),	-- Everburning Lump
+				i(220225),	-- Tattered Standard
+				i(220232),	-- Worm-Eaten Burlap Robe
+				i(220233),	-- Extinguished Icon
+				i(220235),	-- Electrified Teeth
+				i(220238),	-- Keen Fang
+				i(220239),	-- Severed Spiraled Tail
+				i(220240),	-- Night's Litany
+				i(220241),	-- Softly Glowing Shard
+				i(220245),	-- Charged Antennae
+				i(220250),	-- Filthy Handkerchief
+				i(220260),	-- Corroded Golem Graspers
+				i(220265),	-- Slitted Eye
+				i(220269),	-- Ionized Feather
+				i(220273),	-- Shed Skin
+				i(220274),	-- Chipped Hammer
+				i(220276),	-- Wax-Covered Helmet
+				i(220278),	-- Well-Worn Leather Sole
+				i(220284),	-- Darkened Crystal
+				i(220285),	-- Moldy Rucksack
+				i(220286),	-- Tarnished Medallion
+				i(220293),	-- Very Soft Wool
+				i(220294),	-- Strangely Glowing Filament
+				i(220298),	-- Melted Candle Stump
+				i(220300),	-- Translucent Wing
+				i(220301),	-- Crystallized Honey
+				i(220303),	-- Decayed Flesh
+
+				i(220306),	-- Fresh Fillet
+				i(220339),	-- Chopped Mycobloom
+				i(220340),	-- Meatball Cluster
+				i(220341),	-- Portioned Steak
+				i(220342),	-- Spiced Stock
+				i(220377),	-- Growing Void Mass
+				i(220438),	-- Root-Staff Splinter
+				i(220439),	-- Half-Eaten Fish
+				i(220440),	-- Kelp Necklace
+				i(220441),	-- Hardened Pearl
+				i(220442),	-- Weighty Shovel
+				i(220443),	-- Desecrated Arathi Tinderbox
+				i(220444),	-- Gnawed Spine
+				i(220445),	-- Illusionary Charm
+				i(220447),	-- Broken Trident Prong
+				i(220448),	-- Cerulean Orb
+				i(220484),	-- Bowl of Pulsing Goo
+
+				i(220486),	-- Collection of Shiny Shells
+				i(220491),	-- Wicked Blade Shard
+				i(220520),	-- Radiant Echo \\ Radiant Chord
+				i(220756),	-- Flickering Torch \\ Fading Torch
+				i(220767),	-- Triumphant Satchel of Carved Harbinger Crests \\ Triumphant Satchel of Carved Harbinger Crests (TODO: Fix Icon)
+				i(220769),	-- Algari Token of Merit \\ Algarian Token of Merit
+				i(220770),	-- Void-Scarred Stormhammer
+				i(220773),	-- Celebratory Pack of Runed Harbinger Crests \\ Celebratory Pack of Runed Harbinger Crests (TODO: Fix Icon)
+				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
+				i(221269),	-- Crimson Valorstone \\ Crimson Valorstone (TODO: Fix Icon) (Maybe fix name too?)
+				i(217965),	-- Repair Kit
+				i(217970),	-- Dormant Runestone
+				i(217984),	-- Miner's Rune of Decyphering
+				i(217986),	-- "Delicious" Egg Parts
+				i(217999),	-- Tasty Mussel
+				i(218000),	-- Sack of Spices
+				i(218002),	-- Priceless Pumpkin
+				i(218123),	-- Glowing Shard
+				i(218122),	-- Stolen Relic \\ Stolen Shard
+				i(218340),	-- Chest of Playtest Equipment
+				i(218354),	-- Clammer's Pry Bar
+				i(219139),	-- Set Keystone Map: Priory of the Sacred Flame
+				i(219140),	-- Set Keystone Map: The Rookery
+				i(219141),	-- Set Keystone Map: City of Threads
+				i(219142),	-- Set Keystone Map: Ara-Kara, City of Echoes
+				i(219143),	-- Set Keystone Map: Darkflame Cleft
+				i(219144),	-- Set Keystone Map: The Dawnbreaker
+				i(219145),	-- Set Keystone Map: Cinderbrew Meadery
+				i(219146),	-- Set Keystone Map: Stonevault
+				i(219255),	-- Puntable Rotten Little Helper
+				i(219286),	-- Puntable Globe Yeti
+				i(219289),	-- Puntable Tiny Snowman
+				i(219291),	-- Puntable Baby Greench
+				i(223641),	-- Essence of Northrend
+				i(223642),	-- Memory of Northrend
+				i(223643),	-- Essence of Kalimdor
+				i(223644),	-- Memory of Kalimdor
+				i(223645),	-- Essence of the Eastern Kingdoms
+				i(223646),	-- Memory of the  Eastern Kingdoms \\ Memory ofthe  Eastern Kingdoms
+				i(223804),	-- [DNT] Zone 1 Placeholder Treasure
+				i(223805),	-- Bag Test A
+				i(223806),	-- Bag Test B
+				i(223869),	-- DO NOT USE Prismatic Codex
+				i(223897),	-- Ruptured Engine \\ Ruptered Engine
+				i(223898),	-- Loose Bolts
+				i(223900),	-- Bottled Darkness
+				i(224027),	-- Bottomless Bag of Khaz Algar Herbs
+				i(224028),	-- Bottomless Bag of Khaz Algar Ore
+				i(224029),	-- Bottomless Bag of Khaz Algar Skins
+				i(224030),	-- Bottomless Bag of Khaz Algar Alchemy Goods
+				i(224031),	-- Bottomless Bag of Khaz Algar Blacksmithing Goods
+				i(224032),	-- Bottomless Bag of Khaz Algar Enchanting Goods
+				i(224033),	-- Bottomless Bag of Khaz Algar Engineering Goods
+				i(224034),	-- Bottomless Bag of Khaz Algar Inscription Goods
+				i(224035),	-- Bottomless Bag of Khaz Algar Jewelcrafting Goods
+				i(224037),	-- Bottomless Bag of Khaz Algar Leatherworking Goods
+				i(224039),	-- Bottomless Bag of Khaz Algar Tailoring Goods
+				i(224040),	-- Bottomless Bag of Khaz Algar Optional Goods
+				i(224041),	-- Holy Brigade
+				i(224042),	-- Voracious Residue
+				i(224043),	-- Famished Residue
+				i(224044),	-- Devouring Residue
+				i(224045),	-- Kelp Grasp
+				i(224046),	-- Sand Tornado
+				i(224047),	-- Water Blast
+				i(224048),	-- Electric Shock
+				i(224049),	-- Web Pull
+				i(224057),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Alchemy
+				i(224058),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Blacksmithing
+				i(224059),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Enchanting
+				i(224060),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Engineering
+				i(224061),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Herbalism
+				i(224062),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Inscription
+				i(224063),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Jewelcrafting
+				i(224064),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Leatherworking
+				i(224065),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Mining
+				i(224066),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Skinning
+				i(224067),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Tailoring
+				i(224068),	-- Professor Instructaur's Brain Pertaining to Khaz Algar
+				i(224100),	-- Bottomless Bag of Khaz Algar General Goods
+				i(224117),	-- Ghoulfish Delight
+				i(224156),	-- Bottomless Bag of Khaz Algar General Goods
+				i(224183),	-- Bleak Chum
+				i(224266),	-- Ivory Tinderbox
+				i(224267),	-- Dented Spearhead
+				i(224268),	-- Filigreed Cleric
+				i(224269),	-- [DNT] 11.0 Food/Drink Template - Food Only - Level 75 - Required Level 70
+				i(224273),	-- Wooden Figure
+				i(224274),	-- Sturdy Locket
+				i(224292),	-- Radiant Fuel Shard
+				i(224412),	-- Companion Experience
+				i(224464),	-- Demonic Healthstone
+				i(224762),	-- Delver's Waterskin
+				i(224767),	-- Giant Candle Parts
+				i(224786),	-- Skeleton King Outfit
+				i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
+				i(224792),	-- Sanguine Aristocrat Outfit
+				i(224809),	-- Earthen Plumber's Pipe
+				i(224913),	-- Radiant Fuel Cache
+				i(224941),	-- Radiant Fuel Cache
+				i(225240),	-- PH_1
+				i(225239),	-- Overflowing Council of Dornogal Trove
+
+
+				i(225245),	-- Overflowing Trove of the Deeps
+				i(225246),	-- Overflowing Hallowfall Trove
+				i(225247),	-- Overflowing Severed Threads Trove
+				i(225365),	-- PH_3
+				i(225416),	-- Green Hills of Stranglethorn - Page 26
+				i(225417),	-- Green Hills of Stranglethorn - Page 6
+				i(225418),	-- Green Hills of Stranglethorn - Page 8
+				i(225419),	-- Green Hills of Stranglethorn - Page 27
+				i(225420),	-- Green Hills of Stranglethorn - Page 11
+				i(225421),	-- Green Hills of Stranglethorn - Page 16
+				i(225422),	-- Green Hills of Stranglethorn - Page 10
+				i(225423),	-- Green Hills of Stranglethorn - Page 4
+				i(225424),	-- Green Hills of Stranglethorn - Page 21
+				i(225425),	-- Green Hills of Stranglethorn - Page 18
+				i(225426),	-- Green Hills of Stranglethorn - Page 25
+				i(225427),	-- Green Hills of Stranglethorn - Page 20
+				i(225428),	-- Green Hills of Stranglethorn - Page 1
+				i(225429),	-- Green Hills of Stranglethorn - Page 24
+				i(225430),	-- Green Hills of Stranglethorn - Page 14
 			}),
 			n(QUEST_ITEMS, {
 				i(206348),	-- Fragmented Flame
@@ -1338,10 +2604,150 @@ root(ROOTS.Unsorted, {
 				i(217312),	-- The Foreman's Third Scroll
 				i(217400),	-- Kobyss Lure
 				i(217506),	-- Test Item [DNT]
+				i(217996),	-- Sureki Tithe
+				i(218084),	-- Crumpled Note
+				i(218104),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
+				i(218124),	-- Element Extractor
+				i(218127),	-- Ever-Blossoming Fungi
+				i(218456),	-- Precious Gems
+				i(218457),	-- Special Silk
+				i(218458),	-- Important Info Scrolls
+				i(218459),	-- TBD
+				i(219197),	-- Black Blood Residue
+				i(219214),	-- Cooling Wax
+				i(219215),	-- Wax Puddle
+				i(219292),	-- Perplexing Contraband
+				i(219293),	-- Sureki Intelligence
+				i(219322),	-- Malodorous Philter
+				i(219323),	-- Gelatinous Unguent
+				i(219324),	-- Roiling Elixir
+				i(219346),	-- Camp Supplies
+				i(219350),	-- Maddening Manifest
+				i(219384),	-- Tenir and the Order of Night
+				i(219385),	-- Antiparalytic Serum
+				i(219388),	-- Sacred Flame Torch
+				i(219400),	-- Faerin's Torch of Holy Flame
+				i(219443),	-- Paralytic Draught
+				i(219469),	-- Fog Beast Tracker
+				i(219522),	-- Radiant Fuel Crystal
+				i(219804),	-- [DNT] Antiparalytic Serum
+				i(219808),	-- Ethereal Sugar
+				i(219934),	-- Spark of War
+				i(219939),	-- Alleria's Crystal
+				i(219960),	-- Honey Drone Vac
+				i(220116),	-- Completed Market Audit
+				i(220130),	-- Pure Fire Honey
+				i(220212),	-- Aelric's Corrupted Tinderbox
+				i(220215),	-- Unidentified Tinderbox
+				i(220218),	-- Sticky Wax
+				i(220359),	-- Aelric's Corrupted Tinderbox
+				i(220483),	-- Tuning Wand
+				i(220485),	-- Candlefly Luminescence \\ Candlefly Luminesence
+				i(221751),	-- DO NOT USE Prismatic Codex
+				i(222899),	-- [UNUSED] Faerin's Shield
+				i(222951),	-- Eagle Fillet \\ Eagle Breast
+				i(222953),	-- Light-Bathed Lotus Cuttings
+				i(222963),	-- Lava Globs
+				i(222976),	-- Flame-Tempered Harpoon
+				i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
+				i(223157),	-- Blacksmith's Breastplate
+				i(223220),	-- Kaheti All-Purpose Cleanser
+				i(223247),	-- Ryton Blackholme's Breastplate
+				i(223515),	-- Breastplate and Tinderbox
+				i(223638),	-- Arathi Trade Goods
+				i(223889),	-- Flame Touched Weaponry
+				i(223952),	-- Singed Plush
+				i(224011),	-- Signet of the Thousand Scars
+				i(224012),	-- Signet of the Thousand Scars
+				i(224013),	-- Signet of the Thousand Scars
+				i(224014),	-- Signet of the Skeinspiner
+				i(224015),	-- Signet of the Skeinspiner
+				i(224016),	-- Signet of the Skeinspiner
+				i(224051),	-- Slightly Chewed Harvest Bounty
+				i(224179),	-- Swamplogged Letter
+				i(224180),	-- Worn Journal
+				i(224182),	-- Webbed Ingots
+
+				i(224184),	-- Crusty Spyglass
+				i(224186),	-- Hymns of the Flame
+				i(224187),	-- Dented Spearhead
+				i(224188),	-- Filigreed Cleric \\ Gambit Piece
+				i(224189),	-- Ivory Tinderbox
+				i(224238),	-- Worn Coin
+				i(224239),	-- Pile of Leather String
+				i(224250),	-- Toy Fish
+				i(224252),	-- Calcified Journal
+				i(224254),	-- Wooden Figure
+				i(224257),	-- Sturdy Locket
+				i(224272),	-- Calcified Journal
+				i(224395),	-- Secret Garlic
+				i(224396),	-- Mangled Taro
+				i(224397),	-- Pristine Taro
+				i(224457),	-- Lil Piggy
+				i(224460),	-- The Lost Diary
+				i(224462),	-- The Ear
+				i(224463),	-- Lily's Locket
+				i(224465),	-- Unusual Potato
+				i(224466),	-- Wilber The Chicken \\ The Chicken
+				i(224486),	-- Uncle's Eye
+				i(224545),	-- Plowhead
+				i(224548),	-- Nerubian Device
+				i(224659),	-- Secret-Woven Silk
+				i(224773),	-- Knicknack's Red Candle
+				i(224774),	-- Knicknack's Potion Bottle
+				i(224775),	-- Knicknack's Definitely Rubies
+				i(224777),	-- Sureki Shadecaster
+				i(224778),	-- Knicknack's Enbiggener
+				i(224779),	-- Alhainr's Skull
+				i(224810),	-- Woodworm Elixir
+				i(225180),	-- Stained and Tattered Page
+				i(225336),	-- A Lost Shoe
+
+				i(225339),	-- Chicken Eggs
+				i(225341),	-- Incriminating Dagger
+				i(225342),	-- Incriminating Script
+				i(225343),	-- Incriminating Journal Entry
+				i(225344),	-- Incriminating Evidence
 			}),
 			n(WEAPONS, {
 				i(216905),	-- Brann Bronzebeard's Axe
 				i(216906),	-- Ol' Faithful
+				i(218312),	-- Recruit's Sturdy Polearm \\ Recruit's Sturdy Poleaxe
+				i(218313),	-- Recruit's Sturdy Greatsword
+				i(218314),	-- Recruit's Sturdy Tome \\ Recruit's Sturdy Scroll
+				i(218315),	-- Recruit's Sturdy Bow \\ Recruit's Sturdy Ballista
+				i(218316),	-- Recruit's Sturdy Maul
+				i(218317),	-- Recruit's Sturdy Shield
+				i(218318),	-- Recruit's Sturdy Rod
+				i(218319),	-- Recruit's Sturdy Mallet
+				i(218320),	-- Recruit's Sturdy Shank
+				i(218321),	-- Recruit's Sturdy Longblade
+				i(218322),	-- Recruit's Sturdy Saber
+				i(218323),	-- Recruit's Sturdy Crescent
+				i(218324),	-- Recruit's Sturdy Polearm \\ Recruit's Sturdy Poleaxe
+				i(218325),	-- Recruit's Sturdy Greataxe \\ Recruit's Sturdy Greatsword
+				i(218326),	-- Recruit's Sturdy Tome \\ Recruit's Sturdy Scroll
+				i(218327),	-- Recruit's Sturdy Bow \\ Recruit's Sturdy Ballista
+				i(218328),	-- Recruit's Sturdy Maul
+				i(218329),	-- Recruit's Sturdy Shield
+				i(218330),	-- Recruit's Sturdy Rod
+				i(218331),	-- Recruit's Sturdy Mallet
+				i(218332),	-- Recruit's Sturdy Shank
+				i(218333),	-- Recruit's Sturdy Longblade
+				i(218334),	-- Recruit's Sturdy Saber
+				i(218335),	-- Recruit's Sturdy Crescent
+				i(219381),	-- Fate Weaver
+				i(218125),	-- Reactive Webbed Escutcheon
+				i(218126),	-- Befouler's Syringe
+				i(219382),	-- Fateweaved Needle
+				i(219780),	-- 11.0 Leveling Quest Template - Axe2H - Str
+				i(219781),	-- 11.0 Leveling Quest Template - FistWeapon - Agi
+				i(219782),	-- 11.0 Leveling Quest Template - Sword1H - Int
+				i(219791),	-- 11.0 Leveling Quest Template - Mace1H - Int
+				i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
+				i(219919),	-- Blade of Hatred
+				i(219923),	-- Blade of Hatred
+				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 			}),
 			filter(TOYS, {
 				i(211931),	-- Abyss Caller Horn (TOY!)
@@ -1359,1800 +2765,425 @@ root(ROOTS.Unsorted, {
 				---
 				i(215146),	-- JC Gemcutting Toy
 			}),
-			i(217965),	-- Repair Kit
-			i(217970),	-- Dormant Runestone
-			i(217971),	-- Deadly Cypher
-			i(217972),	-- Deadly Cypher
-			i(217973),	-- Deadly Cypher
-			i(217974),	-- Quick Cypher
-			i(217975),	-- Quick Cypher
-			i(217976),	-- Quick Cypher
-			i(217977),	-- Masterful Cypher
-			i(217978),	-- Masterful Cypher
-			i(217979),	-- Masterful Cypher
-			i(217980),	-- Versatile Cypher
-			i(217981),	-- Versatile Cypher
-			i(217982),	-- Versatile Cypher
-			i(217984),	-- Miner's Rune of Decyphering
-			i(217986),	-- "Delicious" Egg Parts
-			i(217991),	-- Recruit's Sturdy Greaves
-			i(217996),	-- Sureki Tithe
-			i(217999),	-- Tasty Mussel
-			i(218000),	-- Sack of Spices
-			i(218002),	-- Priceless Pumpkin
-			i(218024),	-- Recruit's Sturdy Greaves
-			i(218025),	-- Recruit's Sturdy Chestplate
-			i(218026),	-- Recruit's Sturdy Stompers
-			i(218027),	-- Recruit's Sturdy Crushers
-			i(218028),	-- Recruit's Sturdy Greathelm
-			i(218029),	-- Recruit's Sturdy Pauldrons
-			i(218030),	-- Recruit's Sturdy Girdle
-			i(218031),	-- Recruit's Sturdy Vambraces
-			i(218032),	-- Recruit's Sturdy Cape
-			i(218034),	-- Recruit's Sturdy Chestplate
-			i(218035),	-- Recruit's Sturdy Stompers
-			i(218036),	-- Recruit's Sturdy Crushers
-			i(218037),	-- Recruit's Sturdy Greathelm
-			i(218038),	-- Recruit's Sturdy Pauldrons
-			i(218039),	-- Recruit's Sturdy Girdle
-			i(218040),	-- Recruit's Sturdy Vambraces
-			i(218041),	-- Recruit's Sturdy Cape
-			i(218078),	-- Dalaran Defender's Cape
-			i(218079),	-- Dalaran Defender's Shawl
-			i(218080),	-- Dalaran Defender's Cloak
-			i(218081),	-- Dalaran Defender's Drape
-			i(218084),	-- Crumpled Note
-			i(218104),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
-			i(218122),	-- Stolen Relic \\ Stolen Shard
-			i(218123),	-- Glowing Shard
-			i(218124),	-- Element Extractor
-			i(218125),	-- Reactive Webbed Escutcheon
-			i(218126),	-- Befouler's Syringe
-			i(218127),	-- Ever-Blossoming Fungi
-			i(218129),	-- Porcelain Arrowhead Idol \\ Curio Test \\ Test Curio
-			i(218132),	-- 11.0 Zone Uncommon Template - Vestment
-			i(218133),	-- 11.0 Zone Uncommon Template - Sandals
-			i(218134),	-- 11.0 Zone Uncommon Template - Handwraps
-			i(218135),	-- 11.0 Zone Uncommon Template - Cowl
-			i(218136),	-- 11.0 Zone Uncommon Template - Leggings
-			i(218137),	-- 11.0 Zone Uncommon Template - Cord
-			i(218138),	-- 11.0 Zone Uncommon Template - Cuffs
-			i(218139),	-- 11.0 Zone Uncommon Template - Waders
-			i(218140),	-- 11.0 Zone Uncommon Template - Grips
-			i(218141),	-- 11.0 Zone Uncommon Template - Helm
-			i(218142),	-- 11.0 Zone Uncommon Template - Breeches
-			i(218143),	-- 11.0 Zone Uncommon Template - Sash
-			i(218144),	-- 11.0 Zone Uncommon Template - Bindings
-			i(218145),	-- 11.0 Zone Uncommon Template - Chainmail
-			i(218146),	-- 11.0 Zone Uncommon Template - Striders
-			i(218147),	-- 11.0 Zone Uncommon Template - Grips
-			i(218148),	-- 11.0 Zone Uncommon Template - Coif
-			i(218149),	-- 11.0 Zone Uncommon Template - Greaves
-			i(218150),	-- 11.0 Zone Uncommon Template - Shoulderguards
-			i(218151),	-- 11.0 Zone Uncommon Template - Cinch
-			i(218152),	-- 11.0 Zone Uncommon Template - Bracers
-			i(218153),	-- 11.0 Zone Uncommon Template - Helm
-			i(218154),	-- 11.0 Zone Uncommon Template - Breastplate
-			i(218155),	-- 11.0 Zone Uncommon Template - Sabatons
-			i(218156),	-- 11.0 Zone Uncommon Template - Gauntlets
-			i(218157),	-- 11.0 Zone Uncommon Template - Legguards
-			i(218158),	-- 11.0 Zone Uncommon Template - Mantle
-			i(218159),	-- 11.0 Zone Uncommon Template - Girdle
-			i(218160),	-- 11.0 Zone Uncommon Template - Armplates
-			i(218161),	-- 11.0 Zone Uncommon Template - Vest
-			i(218162),	-- 11.0 Zone Uncommon Template - Epaulets
-			i(218163),	-- 11.0 Zone Uncommon Template - Shoulderpads
-			i(218164),	-- 11.0 Zone Uncommon Template - Shield
-			i(218165),	-- 11.0 Zone Uncommon Template - Offhand
-			i(218166),	-- 11.0 Zone Uncommon Template - Polearm
-			i(218167),	-- 11.0 Zone Uncommon Template - Gun
-			i(218168),	-- 11.0 Zone Uncommon Template - Kris
-			i(218169),	-- 11.0 Zone Uncommon Template - Mace
-			i(218170),	-- 11.0 Zone Uncommon Template - Shank
-			i(218171),	-- 11.0 Zone Uncommon Template - Sword
-			i(218172),	-- 11.0 Zone Uncommon Template - Blade
-			i(218173),	-- 11.0 Zone Uncommon Template - Great Mace
-			i(218174),	-- 11.0 Zone Uncommon Template - Band
-			i(218175),	-- 11.0 Zone Uncommon Template - Signet
-			i(218176),	-- 11.0 Zone Uncommon Template - Cudgel
-			i(218177),	-- 11.0 Zone Uncommon Template - Cudgel
-			i(218178),	-- 11.0 Zone Uncommon Template - Stave
-			i(218179),	-- 11.0 Zone Uncommon Template - Halberd
-			i(218180),	-- 11.0 Zone Uncommon Template - Staff
-			i(218181),	-- 11.0 Zone Uncommon Template - Warglaive
-			i(218182),	-- 11.0 Zone Uncommon Template - Trinket
-			i(218183),	-- 11.0 Zone Uncommon Template - Band
-			i(218184),	-- 11.0 Zone Uncommon Template - Belt
-			i(218185),	-- 11.0 Zone Uncommon Template - Shawl
-			i(218186),	-- 11.0 Zone Uncommon Template - Choker
-			i(218189),	-- 11.0 Leveling Quest Template - Vestment
-			i(218190),	-- 11.0 Leveling Quest Template - Sandals
-			i(218191),	-- 11.0 Leveling Quest Template - Handwraps
-			i(218192),	-- 11.0 Leveling Quest Template - Cowl
-			i(218193),	-- 11.0 Leveling Quest Template - Leggings
-			i(218194),	-- 11.0 Leveling Quest Template - Cord
-			i(218195),	-- 11.0 Leveling Quest Template - Cuffs
-			i(218196),	-- 11.0 Leveling Quest Template - Waders
-			i(218197),	-- 11.0 Leveling Quest Template - Grips
-			i(218198),	-- 11.0 Leveling Quest Template - Helm
-			i(218199),	-- 11.0 Leveling Quest Template - Breeches
-			i(218200),	-- 11.0 Leveling Quest Template - Sash
-			i(218201),	-- 11.0 Leveling Quest Template - Bindings
-			i(218202),	-- 11.0 Leveling Quest Template - Chainmail
-			i(218203),	-- 11.0 Leveling Quest Template - Striders
-			i(218204),	-- 11.0 Leveling Quest Template - Grips
-			i(218205),	-- 11.0 Leveling Quest Template - Coif
-			i(218206),	-- 11.0 Leveling Quest Template - Greaves
-			i(218207),	-- 11.0 Leveling Quest Template - Shoulderguards
-			i(218208),	-- 11.0 Leveling Quest Template - Cinch
-			i(218209),	-- 11.0 Leveling Quest Template - Bracers
-			i(218210),	-- 11.0 Leveling Quest Template - Helm
-			i(218211),	-- 11.0 Leveling Quest Template - Breastplate
-			i(218212),	-- 11.0 Leveling Quest Template - Sabatons
-			i(218213),	-- 11.0 Leveling Quest Template - Gauntlets
-			i(218214),	-- 11.0 Leveling Quest Template - Legguards
-			i(218215),	-- 11.0 Leveling Quest Template - Mantle
-			i(218216),	-- 11.0 Leveling Quest Template - Girdle
-			i(218217),	-- 11.0 Leveling Quest Template - Armplates
-			i(218218),	-- 11.0 Leveling Quest Template - Vest
-			i(218219),	-- 11.0 Leveling Quest Template - Epaulets
-			i(218220),	-- 11.0 Leveling Quest Template - Shoulderpads
-			i(218221),	-- 11.0 Leveling Quest Template - Shield - Shield
-			i(218222),	-- 11.0 Leveling Quest Template - Generic - Holdable
-			i(218223),	-- 11.0 Leveling Quest Template - Polearms - Agi
-			i(218224),	-- 11.0 Leveling Quest Template - Guns - Agi
-			i(218225),	-- 11.0 Leveling Quest Template - Dagger - Int
-			i(218226),	-- 11.0 Leveling Quest Template - Mace2H - Int
-			i(218227),	-- 11.0 Leveling Quest Template - Dagger - Agi
-			i(218228),	-- 11.0 Leveling Quest Template - Sword1H - Str
-			i(218229),	-- 11.0 Leveling Quest Template - Sword1H - Agi
-			i(218230),	-- 11.0 Leveling Quest Template - Mace2H - Str
-			i(218231),	-- 11.0 Leveling Quest Template - Band
-			i(218232),	-- 11.0 Leveling Quest Template - Signet
-			i(218233),	-- 11.0 Leveling Quest Template - Mace1H - Str
-			i(218234),	-- 11.0 Leveling Quest Template - Mace1H - Agi
-			i(218235),	-- 11.0 Leveling Quest Template - Staff - Agi
-			i(218236),	-- 11.0 Leveling Quest Template - Polearms - Str
-			i(218237),	-- 11.0 Leveling Quest Template - Staff - Int
-			i(218238),	-- 11.0 Leveling Quest Template - Warglaive - Agi
-			i(218239),	-- 11.0 Leveling Quest Template - Trinket
-			i(218240),	-- 11.0 Leveling Quest Template - Band
-			i(218241),	-- 11.0 Leveling Quest Template - Belt
-			i(218242),	-- 11.0 Leveling Quest Template - Shawl
-			i(218243),	-- 11.0 Leveling Quest Template - Choker
-			i(218250),	-- Recruit's Sturdy Chainmail
-			i(218251),	-- Recruit's Sturdy Striders
-			i(218252),	-- Recruit's Sturdy Gauntlets
-			i(218253),	-- Recruit's Sturdy Cowl
-			i(218254),	-- Recruit's Sturdy Kilt
-			i(218255),	-- Recruit's Sturdy Spaulders
-			i(218256),	-- Recruit's Sturdy Cinch
-			i(218257),	-- Recruit's Sturdy Bracers
-			i(218258),	-- Recruit's Sturdy Drape
-			i(218259),	-- Recruit's Sturdy Chainmail
-			i(218260),	-- Recruit's Sturdy Striders
-			i(218261),	-- Recruit's Sturdy Gauntlets
-			i(218262),	-- Recruit's Sturdy Cowl
-			i(218263),	-- Recruit's Sturdy Kilt
-			i(218264),	-- Recruit's Sturdy Spaulders
-			i(218265),	-- Recruit's Sturdy Cinch
-			i(218266),	-- Recruit's Sturdy Bracers
-			i(218267),	-- Recruit's Sturdy Drape
-			i(218271),	-- Recruit's Sturdy Raiment
-			i(218272),	-- Recruit's Sturdy Treads
-			i(218273),	-- Recruit's Sturdy Gloves
-			i(218274),	-- Recruit's Sturdy Mask
-			i(218275),	-- Recruit's Sturdy Leggings
-			i(218276),	-- Recruit's Sturdy Epaulets
-			i(218277),	-- Recruit's Sturdy Cincture
-			i(218278),	-- Recruit's Sturdy Wristbands
-			i(218279),	-- Recruit's Sturdy Cloak
-			i(218280),	-- Recruit's Sturdy Raiment
-			i(218281),	-- Recruit's Sturdy Treads
-			i(218282),	-- Recruit's Sturdy Gloves
-			i(218283),	-- Recruit's Sturdy Mask
-			i(218284),	-- Recruit's Sturdy Leggings
-			i(218285),	-- Recruit's Sturdy Epaulets
-			i(218286),	-- Recruit's Sturdy Cincture
-			i(218287),	-- Recruit's Sturdy Wristbands
-			i(218288),	-- Recruit's Sturdy Cloak
-			i(218289),	-- Recruit's Sturdy Robes
-			i(218290),	-- Recruit's Sturdy Slippers
-			i(218291),	-- Recruit's Sturdy Mitts
-			i(218292),	-- Recruit's Sturdy Hood
-			i(218293),	-- Recruit's Sturdy Breeches
-			i(218294),	-- Recruit's Sturdy Mantle
-			i(218295),	-- Recruit's Sturdy Sash
-			i(218296),	-- Recruit's Sturdy Bindings
-			i(218297),	-- Recruit's Sturdy Wrap
-			i(218298),	-- Recruit's Sturdy Robes
-			i(218299),	-- Recruit's Sturdy Slippers
-			i(218300),	-- Recruit's Sturdy Mitts
-			i(218301),	-- Recruit's Sturdy Hood
-			i(218302),	-- Recruit's Sturdy Breeches
-			i(218303),	-- Recruit's Sturdy Mantle
-			i(218304),	-- Recruit's Sturdy Sash
-			i(218305),	-- Recruit's Sturdy Bindings
-			i(218306),	-- Recruit's Sturdy Wrap
-			i(218308),	-- Winter Veil Cracker
-			i(218309),	-- Gently Shaken Gift
-			i(218311),	-- Winter Veil Gift
-			i(218312),	-- Recruit's Sturdy Polearm \\ Recruit's Sturdy Poleaxe
-			i(218313),	-- Recruit's Sturdy Greatsword
-			i(218314),	-- Recruit's Sturdy Tome \\ Recruit's Sturdy Scroll
-			i(218315),	-- Recruit's Sturdy Bow \\ Recruit's Sturdy Ballista
-			i(218316),	-- Recruit's Sturdy Maul
-			i(218317),	-- Recruit's Sturdy Shield
-			i(218318),	-- Recruit's Sturdy Rod
-			i(218319),	-- Recruit's Sturdy Mallet
-			i(218320),	-- Recruit's Sturdy Shank
-			i(218321),	-- Recruit's Sturdy Longblade
-			i(218322),	-- Recruit's Sturdy Saber
-			i(218323),	-- Recruit's Sturdy Crescent
-			i(218324),	-- Recruit's Sturdy Polearm \\ Recruit's Sturdy Poleaxe
-			i(218325),	-- Recruit's Sturdy Greataxe \\ Recruit's Sturdy Greatsword
-			i(218326),	-- Recruit's Sturdy Tome \\ Recruit's Sturdy Scroll
-			i(218327),	-- Recruit's Sturdy Bow \\ Recruit's Sturdy Ballista
-			i(218328),	-- Recruit's Sturdy Maul
-			i(218329),	-- Recruit's Sturdy Shield
-			i(218330),	-- Recruit's Sturdy Rod
-			i(218331),	-- Recruit's Sturdy Mallet
-			i(218332),	-- Recruit's Sturdy Shank
-			i(218333),	-- Recruit's Sturdy Longblade
-			i(218334),	-- Recruit's Sturdy Saber
-			i(218335),	-- Recruit's Sturdy Crescent
-			i(218340),	-- Chest of Playtest Equipment
-			i(218347),	-- Thread-Bearer's Pauldrons \\ [DNT] Nerubian Renown Shoulders
-			i(218348),	-- Thread-Bearer's Cloak \\ [DNT] Nerubian Renown Cloak
-			i(218349),	-- Tabard of The Severed Threads \\ [DNT] Nerubian Renown Tabard
-			i(218350),	-- Expeditionary Spaulders \\ [DNT] Arathi Renown Shoulders
-			i(218351),	-- Expeditionary Cape \\ [DNT] Arathi Renown Cloak
-			i(218352),	-- Expeditionary Tabard \\ [DNT] Arathi Renown Tabard
-			i(218354),	-- Clammer's Pry Bar
-			i(218456),	-- Precious Gems
-			i(218457),	-- Special Silk
-			i(218458),	-- Important Info Scrolls
-			i(218459),	-- TBD
-			i(218911),	-- [DNT] EarthenCivilian Robe Copper
-			i(218912),	-- [DNT] EarthenCivilian Robe Dark
-			i(218913),	-- [DNT] EarthenCivilian Robe Gold
-			i(218914),	-- [DNT] EarthenCivilian Robe Silver
-			i(218915),	-- [DNT] EarthenCivilian Robe Skardyn
-			i(218916),	-- [DNT] EarthenCivilian Robe White
-			i(219065),	-- [DNT] Ensemble: CivilianScholar
-			i(219066),	-- [DNT] Ensemble: CivilianScholar
-			i(219067),	-- [DNT] Ensemble: CivilianScholar
-			i(219068),	-- [DNT] Ensemble: CivilianScholar
-			i(219069),	-- [DNT] Ensemble: CivilianScholar
-			i(219070),	-- [DNT] Ensemble: CivilianPeasant
-			i(219071),	-- [DNT] Ensemble: CivilianPeasant
-			i(219072),	-- [DNT] Ensemble: CivilianPeasant
-			i(219073),	-- [DNT] Ensemble: CivilianPeasant
-			i(219074),	-- [DNT] Ensemble: CivilianPeasant
-			i(219075),	-- [DNT] Ensemble: CivilianNoble
-			i(219076),	-- [DNT] Ensemble: CivilianNoble
-			i(219077),	-- [DNT] Ensemble: CivilianNoble
-			i(219078),	-- [DNT] Ensemble: CivilianNoble
-			i(219079),	-- [DNT] Ensemble: CivilianNoble
-			i(219080),	-- [DNT] Ensemble: CivilianMerchant
-			i(219081),	-- [DNT] Ensemble: CivilianMerchant
-			i(219082),	-- [DNT] Ensemble: CivilianMerchant
-			i(219083),	-- [DNT] Ensemble: CivilianMerchant
-			i(219084),	-- [DNT] Ensemble: CivilianMerchant
-			i(219085),	-- [DNT] Ensemble: CivilianLaborer
-			i(219086),	-- [DNT] Ensemble: CivilianLaborer
-			i(219087),	-- [DNT] Ensemble: CivilianLaborer
-			i(219088),	-- [DNT] Ensemble: CivilianLaborer
-			i(219089),	-- [DNT] Ensemble: CivilianLaborer
-			i(219090),	-- [DNT] Ensemble: CivilianCraftsperson
-			i(219091),	-- [DNT] Ensemble: CivilianCraftsperson
-			i(219092),	-- [DNT] Ensemble: CivilianCraftsperson
-			i(219093),	-- [DNT] Ensemble: CivilianCraftsperson
-			i(219094),	-- [DNT] Ensemble: CivilianCraftsperson
-			i(219095),	-- [DNT] Ensemble: CivilianAdventurer
-			i(219096),	-- [DNT] Ensemble: CivilianAdventurer
-			i(219097),	-- [DNT] Ensemble: CivilianAdventurer
-			i(219098),	-- [DNT] Ensemble: CivilianAdventurer
-			i(219099),	-- [DNT] Ensemble: CivilianAdventurer
-			iensemble(219115),	-- Versatile Peddler's Trinkets
-			iensemble(219120),	-- Toiler's Khaki Uniform
-			iensemble(219125),	-- Formed Artisan's Talent
-			iensemble(219132),	-- Crimson Cartographer's Orientation
-			i(219138),	-- Delve Experience
-			i(219139),	-- Set Keystone Map: Priory of the Sacred Flame
-			i(219140),	-- Set Keystone Map: The Rookery
-			i(219141),	-- Set Keystone Map: City of Threads
-			i(219142),	-- Set Keystone Map: Ara-Kara, City of Echoes
-			i(219143),	-- Set Keystone Map: Darkflame Cleft
-			i(219144),	-- Set Keystone Map: The Dawnbreaker
-			i(219145),	-- Set Keystone Map: Cinderbrew Meadery
-			i(219146),	-- Set Keystone Map: Stonevault
-			i(219150),	-- Pile of Rusted Scrap
-			i(219151),	-- Handguards of Hidden Stars
-			i(219152),	-- Charmbelt of Hidden Stars
-			i(219153),	-- Pauldrons of Hidden Stars
-			i(219154),	-- Legplates of Hidden Stars
-			i(219155),	-- Visage of Hidden Stars
-			i(219156),	-- Fists of Hidden Stars
-			i(219157),	-- Sollerets of Hidden Stars
-			i(219158),	-- Raiment of Hidden Stars
-			i(219159),	-- Wrist Bindings of the Stygian Sea
-			i(219160),	-- Sash of the Stygian Sea
-			i(219161),	-- Spaulders of the Stygian Sea
-			i(219162),	-- Poleyns of the Stygian Sea
-			i(219163),	-- Bascinet of the Stygian Sea
-			i(219164),	-- Grasps of the Stygian Sea
-			i(219165),	-- Treads of the Stygian Sea
-			i(219166),	-- Hauberk of the Stygian Sea
-			i(219167),	-- Myconic Wristbands
-			i(219168),	-- Myconic Strap
-			i(219169),	-- Myconic Shoulderstrap
-			i(219170),	-- Myconic Chausses
-			i(219171),	-- Myconic Hood
-			i(219172),	-- Myconic Clutches
-			i(219173),	-- Myconic Waders
-			i(219174),	-- Myconic Frock
-			i(219175),	-- Unkindled Waxweave Clasps
-			i(219176),	-- Unkindled Waxweave Belt
-			i(219177),	-- Unkindled Waxweave Shoulderpads
-			i(219178),	-- Unkindled Waxweave Buskins
-			i(219179),	-- Unkindled Waxweave Veil
-			i(219180),	-- Unkindled Waxweave Mitts
-			i(219181),	-- Unkindled Waxweave Slippers
-			i(219182),	-- Unkindled Waxweave Garb
-			i(219183),	-- Amice of Hidden Stars
-			i(219184),	-- Enkindled Locket
-			i(219185),	-- Serape of the Stygian Sea
-			i(219186),	-- Myconic Wrap
-			i(219187),	-- Bone-Carved Circlet
-			i(219188),	-- Dark Abyss Hoop
-			i(219189),	-- Fuzzy Molding Halo
-			i(219190),	-- Unkindled Waxweave Mozzetta
-			i(219191),	-- Hastily Scrawled Notes \\ Hastily Scribbled Notes
-			i(219192),	-- Comprehensibly Organized Ideas
-			i(219194),	-- Magical Mulch
-			i(219195),	-- Imbued Mulch
-			i(219196),	-- Empowered Mulch
-			i(219197),	-- Black Blood Residue
-			i(219199),	-- Radiant Steelglaives
-			i(219200),	-- Unscathed Rampart
-			i(219201),	-- Vessel of Sacred Flame
-			i(219202),	-- Lamplighter's Mercy
-			i(219203),	-- Arathi Holy Standard
-			i(219204),	-- Imperial Flarebolt
-			i(219205),	-- Shooting Starquebus
-			i(219206),	-- Hand of Piety
-			i(219207),	-- Flame-Bearing Crozier
-			i(219208),	-- Pyretic Star
-			i(219209),	-- Worshipper's Poniard
-			i(219210),	-- Sanctifier's Startierce
-			i(219214),	-- Cooling Wax
-			i(219215),	-- Wax Puddle
-			i(219217),	-- Gold-Thread Choker
-			i(219221),	-- Ceremonial Song Ring
-			i(219255),	-- Puntable Rotten Little Helper
-			i(219286),	-- Puntable Globe Yeti
-			i(219289),	-- Puntable Tiny Snowman
-			i(219291),	-- Puntable Baby Greench
-			i(219292),	-- Perplexing Contraband
-			i(219293),	-- Sureki Intelligence
-			i(219322),	-- Malodorous Philter
-			i(219323),	-- Gelatinous Unguent
-			i(219324),	-- Roiling Elixir
-			i(219325),	-- Band of Radiant Echoes
-			i(219346),	-- Camp Supplies
-			i(219350),	-- Maddening Manifest
-			i(219351),	-- Mana-Lined Slab Slicer
-			i(219352),	-- Skypiercing Drillstaff
-			i(219353),	-- Trailblazer's Hookshoot
-			i(219354),	-- Mountain Shaper's Greataxe
-			i(219355),	-- Bedrock Breaker
-			i(219356),	-- Torchlit Pickaxe
-			i(219381),	-- Fate Weaver
-			i(219382),	-- Fateweaved Needle
-			i(219384),	-- Tenir and the Order of Night
-			i(219385),	-- Antiparalytic Serum
-			i(219388),	-- Sacred Flame Torch
-			i(219390),	-- Set Keystone Map: Grim Batol
-			i(219393),	-- Earthen Shoulders
-			i(219394),	-- Earthen Trousers
-			i(219395),	-- Earthen Grips
-			i(219396),	-- Earthen Vest
-			i(219397),	-- Earthen Boots
-			i(219398),	-- Earthen Chain
-			i(219400),	-- Faerin's Torch of Holy Flame
-			i(219407),	-- Earthen Chestpiece
-			i(219408),	-- Earthen Striders
-			i(219409),	-- Earthen Handguards
-			i(219410),	-- Earthen Coif
-			i(219411),	-- Earthen Greaves
-			i(219412),	-- Earthen Belt
-			i(219416),	-- Earthen Helm
-			i(219417),	-- Earthen Breastplate
-			i(219418),	-- Earthen Sabatons
-			i(219419),	-- Earthen Gauntlets
-			i(219420),	-- Earthen Legguards
-			i(219421),	-- Earthen Mantle
-			i(219422),	-- Earthen Girdle
-			i(219423),	-- Earthen Vestment
-			i(219424),	-- Earthen Sandals
-			i(219425),	-- Earthen Handbraces
-			i(219426),	-- Earthen Hood
-			i(219427),	-- Earthen Kilt
-			i(219428),	-- Earthen Waistguard
-			i(219430),	-- Earthen Collar
-			i(219431),	-- Earthen Slippers
-			i(219432),	-- Earthen Gloves
-			i(219433),	-- Earthen Waistcoat
-			i(219434),	-- Earthen Toolbelt
-			i(219435),	-- Earthen Cogwheel
-			i(219436),	-- Earthen Chestguard
-			i(219437),	-- Earthen Footguards
-			i(219438),	-- Earthen Handwraps
-			i(219439),	-- Earthen Mining Hat
-			i(219440),	-- Earthen Leggings
-			i(219441),	-- Earthen Cord
-			i(219443),	-- Paralytic Draught
-			i(219455),	-- Earthen Traveler's Shield
-			i(219458),	-- Earthen Traveler's Dagger
-			i(219460),	-- Earthen Traveler's Handaxe
-			i(219464),	-- Earthen Traveler's Boomstick
-			i(219465),	-- Earthen Traveler's Crossbow
-			i(219467),	-- Earthen Traveler's Fist \\ Earthen Traveler's Fist Weapon
-			i(219469),	-- Fog Beast Tracker
-			i(219494),	-- Ritual Flame
-			i(219500),	-- Fang Adornments
-			i(219522),	-- Radiant Fuel Crystal
-			i(219676),	-- Common Fish A
-			i(219677),	-- Common Fish B
-			i(219678),	-- Common Fish C
-			i(219679),	-- Common Fish D
-			i(219680),	-- Uncommon Fish A
-			i(219681),	-- Uncommon Fish B
-			i(219682),	-- Uncommon Fish C
-			i(219683),	-- Uncoomon Fish D
-			i(219684),	-- Rare Fish A
-			i(219685),	-- Rare Fish B
-			i(219686),	-- Rare Fish C
-			i(219687),	-- Rare Fish D
-			i(219688),	-- Rare Fish E
-			i(219689),	-- Rare Fish F
-			i(219690),	-- Trophy Common Fish A
-			i(219691),	-- Trophy Common Fish B
-			i(219692),	-- Trophy Uncommon Fish A
-			i(219693),	-- Trophy Uncommon Fish B
-			i(219694),	-- Trophy Uncommon Fish C
-			i(219695),	-- Trophy Uncoomon Fish D
-			i(219696),	-- Trophy Rare Fish A
-			i(219697),	-- Trophy Rare Fish B
-			i(219698),	-- Trophy Rare Fish C
-			i(219699),	-- Trophy Rare Fish D
-			i(219700),	-- Trophy Rare Fish E
-			i(219701),	-- Trophy Rare Fish F
-			i(219702),	-- Cooked Meat T1 A
-			i(219703),	-- Cooked Meat T1 B
-			i(219704),	-- Cooked Meat T1 C
-			i(219705),	-- Cooked Meat T1
-			i(219706),	-- Fish Palte Haste
-			i(219707),	-- Fish Plate Crit
-			i(219708),	-- Fish Plate Verse
-			i(219709),	-- Fish Plate Mastery
-			i(219710),	-- Fish Plate Haste/Crit
-			i(219711),	-- Fish Plate Haste/Verse
-			i(219712),	-- Fish Plate Haste/Mastery
-			i(219713),	-- Fish Plate Crit/Verse
-			i(219714),	-- Fish Plate Crit/Mastery
-			i(219715),	-- Fish Plate Vers/Mastery
-			i(219716),	-- Fish Plate Stam Str
-			i(219717),	-- Fish Plate Stam Agi
-			i(219718),	-- Fish Plate Stam Int
-			i(219719),	-- Feast
-			i(219720),	-- Prepared Algari Steak \\ Prepared Algarian Steak
-			i(219721),	-- Prepared Algari Filet \\ Prepared Algarian Filet
-			i(219722),	-- Prepared Algari Poultry \\ Prepared Algarian Poultry
-			i(219723),	-- Hearty Cooked Meat T1 A
-			i(219724),	-- Hearty Cooked Meat T1 B
-			i(219725),	-- Hearty Cooked Meat T1 C
-			i(219726),	-- Hearty Cooked Meat T1
-			i(219727),	-- Hearty Fish Palte Haste
-			i(219728),	-- Hearty Fish Plate Crit
-			i(219729),	-- Hearty Fish Plate Verse
-			i(219730),	-- Hearty Fish Plate Mastery
-			i(219731),	-- Hearty Fish Plate Haste/Crit
-			i(219732),	-- Hearty Fish Plate Haste/Verse
-			i(219733),	-- Hearty Fish Plate Haste/Mastery
-			i(219734),	-- Hearty Fish Plate Crit/Verse
-			i(219735),	-- Hearty Fish Plate Crit/Mastery
-			i(219736),	-- Hearty Fish Plate Vers/Mastery
-			i(219737),	-- Hearty Fish Plate Stam Str
-			i(219738),	-- Hearty Fish Plate Stam Agi
-			i(219739),	-- Hearty Fish Plate Stam Int
-			i(219740),	-- Hearty Fish Plate Stam
-			i(219741),	-- Algari Mineral \\ Algarian Mineral
-			i(219742),	-- Algari Spices \\ Algarian Spices
-			i(219743),	-- Khaz Algar Olive (Vendor)
-			i(219744),	-- Khaz Algar Vegetable
-			i(219745),	-- Olive Oil
-			i(219780),	-- 11.0 Leveling Quest Template - Axe2H - Str
-			i(219781),	-- 11.0 Leveling Quest Template - FistWeapon - Agi
-			i(219782),	-- 11.0 Leveling Quest Template - Sword1H - Int
-			i(219791),	-- 11.0 Leveling Quest Template - Mace1H - Int
-			i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
-			i(219804),	-- [DNT] Antiparalytic Serum
-			i(219808),	-- Ethereal Sugar
-			i(219916),	-- Bronzebeard Family Compass
-			i(219919),	-- Blade of Hatred
-			i(219923),	-- Blade of Hatred
-			i(219931),	-- Algari Competitor's Medallion \\ Vicious Competitor's Medallion
-			i(219934),	-- Spark of War
-			i(219939),	-- Alleria's Crystal
-			i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
-			i(219942),	-- 11.0 Stalwart's Sandals
-			i(219960),	-- Honey Drone Vac
-			i(220107),	-- Tower-Keeper's Shoes
-			i(220109),	-- Chainmail of Sina's Stalwarts
-			i(220112),	-- Cowl of Sina's Stalwarts
-			i(220113),	-- Tower-Keeper's Shoulderguards
-			i(220116),	-- Completed Market Audit
-			i(220118),	-- Arathi Demolition Charge
-			i(220119),	-- Lamplighter's Handwraps
-			i(220122),	-- Offering of Pure Water
-			i(220123),	-- Ominous Offering
-			i(220124),	-- Jar of Mucus
-			i(220126),	-- Lamplighter's Cinch
-			i(220128),	-- Vestment of the Reckoning's Vengeance
-			i(220130),	-- Pure Fire Honey
-			i(220131),	-- Coif of the Reckoning's Vengeance
-			i(220134),	-- Dilly-Dally Dace
-			i(220135),	-- Bloody Perch
-			i(220136),	-- Crystalline Sturgeon
-			i(220137),	-- Bismuth Bitterling
-			i(220138),	-- Nibbling Minnow
-			i(220139),	-- Whispering Stargazer
-			i(220140),	-- Goldengill Trout
-			i(220141),	-- Specular Rainbowfish
-			i(220142),	-- Quiet River Bass
-			i(220144),	-- Roaring Anglerseeker
-			i(220145),	-- Arathor Hammerfish
-			i(220146),	-- Regal Dottyback
-			i(220147),	-- Kaheti Slum Shark \\ Azj-Kahet Slum Shark
-			i(220148),	-- Pale Huskfish
-			i(220149),	-- Sanguine Dogfish
-			i(220150),	-- Spiked Sea Raven
-			i(220151),	-- Queen's Lurefish
-			i(220152),	-- Cursed Ghoulfish
-			i(220153),	-- Awoken Coelecanth \\ Kah, King of the Deep
-			i(220156),	-- Bubbling Wax
-			i(220157),	-- Lightbringer's Amulet \\ [PH] The Cool Arathi Necklace (Stage 2)
-			i(220158),	-- Lightbringer's Amulet \\ [PH] The Cool Arathi Necklace (Stage 3)
-			i(220212),	-- Aelric's Corrupted Tinderbox
-			i(220215),	-- Unidentified Tinderbox
-			i(220218),	-- Sticky Wax
-			i(220220),	-- Ornate Pipe
-			i(220221),	-- Void Pebble
-			i(220222),	-- Everburning Lump
-			i(220225),	-- Tattered Standard
-			i(220232),	-- Worm-Eaten Burlap Robe
-			i(220233),	-- Extinguished Icon
-			i(220235),	-- Electrified Teeth
-			i(220238),	-- Keen Fang
-			i(220239),	-- Severed Spiraled Tail
-			i(220240),	-- Night's Litany
-			i(220241),	-- Softly Glowing Shard
-			i(220245),	-- Charged Antennae
-			i(220250),	-- Filthy Handkerchief
-			i(220260),	-- Corroded Golem Graspers
-			i(220265),	-- Slitted Eye
-			i(220269),	-- Ionized Feather
-			i(220273),	-- Shed Skin
-			i(220274),	-- Chipped Hammer
-			i(220276),	-- Wax-Covered Helmet
-			i(220278),	-- Well-Worn Leather Sole
-			i(220284),	-- Darkened Crystal
-			i(220285),	-- Moldy Rucksack
-			i(220286),	-- Tarnished Medallion
-			i(220293),	-- Very Soft Wool
-			i(220294),	-- Strangely Glowing Filament
-			i(220298),	-- Melted Candle Stump
-			i(220300),	-- Translucent Wing
-			i(220301),	-- Crystallized Honey
-			i(220303),	-- Decayed Flesh
-
-			i(220306),	-- Fresh Fillet
-			i(220339),	-- Chopped Mycobloom
-			i(220340),	-- Meatball Cluster
-			i(220341),	-- Portioned Steak
-			i(220342),	-- Spiced Stock
-			i(220359),	-- Aelric's Corrupted Tinderbox
-			i(220377),	-- Growing Void Mass
-			i(220382),	-- Chopped Mycobloom
-			i(220383),	-- Portioned Steak
-			i(220384),	-- Spiced Meat Stock
-			i(220385),	-- Cluster of Meatballs
-			i(220386),	-- Fresh Fillet
-			i(220387),	-- Twined Herbs
-			i(220388),	-- Crunchy Peppers
-			i(220389),	-- Coreway Dust
-			i(220390),	-- Surface Olive
-			i(220391),	-- Khaz Algar Tomato
-			i(220392),	-- Granulated Spices
-			i(220393),	-- Clumped Flour
-			i(220394),	-- Skewered Fillet
-			i(220395),	-- Meatball Hold-Me-Over
-			i(220396),	-- Unseasoned Field Steak
-			i(220397),	-- Roasted Mycobloom
-			i(220398),	-- Pan Seared Mycobloom
-			i(220399),	-- Hallowfall Chili
-			i(220400),	-- Coreway Kabob
-			i(220401),	-- Flash Fire Fillet
-			i(220402),	-- Meat and Potatoes
-			i(220403),	-- Rib Stickers
-			i(220404),	-- Sweet and Sour Meatballs
-			i(220405),	-- Grilled Pepper Steak
-			i(220406),	-- Zesty Nibblers
-			i(220407),	-- Fiery Fish Sticks
-			i(220408),	-- Ginger Glazed Fillet
-			i(220409),	-- Salty Fish Pie
-			i(220410),	-- Deepfin Patty
-			i(220411),	-- Underbelly Soup
-			i(220413),	-- Fish and Chips
-			i(220414),	-- Salt Baked Seafood
-			i(220415),	-- Angler's Delight
-			i(220416),	-- Mycobloom Risotto
-			i(220417),	-- Stuffed Cave Peppers
-			i(220418),	-- Sizzling Honey Roast
-			i(220419),	-- Marinated Tenderloins
-			i(220420),	-- The Breakfast Sampler
-			i(220421),	-- Daylight Delicacy
-			i(220422),	-- Nightfall Nourishment
-			i(220423),	-- Late Night Snack
-			i(220424),	-- Feast of the Divine Day
-			i(220425),	-- Feast of the Midnight Masquerade
-			i(220426),	-- Village Potluck
-			i(220427),	-- Everything Stew
-			i(220428),	-- Chippy Tea
-			i(220429),	-- Citrus Refresher
-			i(220430),	-- Blessing Blossom Tea
-			i(220431),	-- Crisp Ringing Water
-			i(220432),	-- Pep-In-Your-Step
-			i(220433),	-- Savory Evening Tart
-			i(220434),	-- Rockslide Shake
-			i(220435),	-- Olive Oil Ice Cream
-			i(220438),	-- Root-Staff Splinter
-			i(220439),	-- Half-Eaten Fish
-			i(220440),	-- Kelp Necklace
-			i(220441),	-- Hardened Pearl
-			i(220442),	-- Weighty Shovel
-			i(220443),	-- Desecrated Arathi Tinderbox
-			i(220444),	-- Gnawed Spine
-			i(220445),	-- Illusionary Charm
-			i(220447),	-- Broken Trident Prong
-			i(220448),	-- Cerulean Orb
-			i(220483),	-- Tuning Wand
-			i(220484),	-- Bowl of Pulsing Goo
-			i(220485),	-- Candlefly Luminescence \\ Candlefly Luminesence
-			i(220486),	-- Collection of Shiny Shells
-			i(220491),	-- Wicked Blade Shard
-			i(220520),	-- Radiant Echo \\ Radiant Chord
-			i(220756),	-- Flickering Torch \\ Fading Torch
-			i(220767),	-- Triumphant Satchel of Carved Harbinger Crests \\ Triumphant Satchel of Carved Harbinger Crests (TODO: Fix Icon)
-			i(220769),	-- Algari Token of Merit \\ Algarian Token of Merit
-			i(220770),	-- Void-Scarred Stormhammer
-			i(220773),	-- Celebratory Pack of Runed Harbinger Crests \\ Celebratory Pack of Runed Harbinger Crests (TODO: Fix Icon)
-			i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
-			i(221033),	-- Hyperactive Stormclaw
-			i(221066),	-- Template - Accessory - Finger
-			i(221093),	-- Deeply Corrupted Coil
-			i(221204),	-- Spore Giant's Stompers
-			i(221205),	-- Vest of the River
-
-			i(221208),	-- Unseen Cutthroat's Tunic \\ Fel Assassin Tunic
-			i(221209),	-- Flame Trader's Gloves
-			i(221210),	-- Grips of the Earth
-			i(221211),	-- Grasp of the Shallows
-			i(221214),	-- Chitin Chain Headpiece
-			i(221215),	-- Taskmaster's Mining Cap
-			i(221216),	-- Bruin Strength Legplates
-			i(221218),	-- Reinforced Construct's Greaves
-			i(221219),	-- Silkwing Trousers
-			i(221220),	-- Basilisk Scale Pauldrons
-			i(221222),	-- Water-Imbued Spaulders
-			i(221223),	-- Bog Beast Mantle
-			i(221224),	-- Bouldershell Waistguard
-			i(221225),	-- Benevolent Hornstag Cinch
-			i(221227),	-- Monstrous Fungal Cord
-			i(221228),	-- Infested Fungal Wristwraps
-			i(221229),	-- Perchfather's Cuffs
-			i(221230),	-- Storm Bindings
-			i(221231),	-- Steam-Powered Wristwatch
-			i(221232),	-- Polished Goblin Bling
-			i(221233),	-- Deephunter's Bloody Hook
-			i(221234),	-- Tidal Pendant
-			i(221235),	-- Dark Agent's Cloak \\ Fel Soldier's Cloak
-			i(221236),	-- Stormbreaker's Shield
-			i(221237),	-- Lamentable Vagrant's Lantern
-			i(221238),	-- Pillar of Constructs
-			i(221239),	-- Spider Blasting Blunderbuss
-			i(221240),	-- Nerubian Stagshell Gouger
-			i(221241),	-- Priestly Agent's Knife
-			i(221242),	-- Forgeborn Helm
-			i(221244),	-- Flamekeeper's Footpads
-			i(221246),	-- Fierce Beast Staff
-			i(221248),	-- Deep Terror Carver
-			i(221250),	-- Creeping Lasher Machete
-			i(221251),	-- Bestial Underground Cleaver
-			i(221252),	-- Nerubian Slayer's Claymore
-			i(221253),	-- Cultivator's Plant Puncher
-			i(221254),	-- Earthshatter Lance
-			i(221263),	-- Nerubian Venom-Tipped Dart
-			i(221264),	-- Fungarian Mystic's Cluster
-			i(221265),	-- Charm of the Underground Beast
-			i(221269),	-- Crimson Valorstone \\ Crimson Valorstone (TODO: Fix Icon) (Maybe fix name too?)
-			i(221502),	-- Adventurer's Warbound Battlegear Drop
-			i(221503),	-- Explorer's Warbound Battlegear Drop
-			i(221505),	-- [DNT] Rare Cloth - Robe
-			i(221506),	-- Arachnid's Web-Sown Guise
-			i(221507),	-- Earth Golem's Wrap
-			i(221508),	-- Pelt of Beledar's Strength
-			i(221751),	-- DO NOT USE Prismatic Codex
-			i(221754),	-- Ringing Deeps Ingot
-			i(221757),	-- Gloomfathom Hide
-			i(221758),	-- Profaned Tinderbox
-			i(221763),	-- Viridian Charmcap
-			i(221777),	-- Pearlescent Shellcrab
-			i(221778),	-- [PH] Firefly2Mount (Yellow)
-			i(221786),	-- Spring-Loaded Bismuth Fabric Cutters \\ Tailoring Tool T1 [DNT]
-			i(221787),	-- Spring-Loaded Aqirite Fabric Cutters \\ Tailoring Tool T2 [DNT]
-			i(221788),	-- Bismuth Brainwave Projector \\ Engineering Helm T1 [DNT]
-			i(221789),	-- Aqirite Brainwave Projector \\ Engineering Helm T2 [DNT]
-			i(221790),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
-			i(221791),	-- Aqirite Fisherfriend \\ Fishing Tool T2 [DNT]
-			i(221792),	-- Lapidary's Bismuth Clamps \\ Jewelcrafting Tool T1 [DNT]
-			i(221793),	-- Lapidary's Aqirite Clamps \\ Jewelcrafting Tool T2 [DNT]
-			i(221795),	-- Bismuth Miner's Headgear \\ Mining Helmet T1 [DNT]
-			i(221796),	-- Aqirite Miner's Headgear \\ Mining Hlmet T2 [DNT]
-			i(221797),	-- Bismuth Fueled Samophlange \\ Engineering Tool T1 [DNT]
-			i(221798),	-- Aqirite Fueled Samophlange \\ Engineering Tool T2 [DNT]
-			i(221799),	-- Miner's Bismuth Hoard \\ Mining Backpack T1 [DNT]
-			i(221800),	-- Miner's Aqirite Hoard \\ Mining Backpack T2 [DNT]
-			i(221801),	-- Studious Brilliance Expeditor \\ ENG - Cloth Goggles [DNT]
-			i(221802),	-- Overclocked Idea Generator \\ ENG - Leather Goggles [DNT]
-			i(221803),	-- Supercharged Thought Enhancer \\ ENG - Mail Goggles [DNT]
-			i(221804),	-- Dangerous Distraction Inhibitor \\ ENG - Plate Goggles [DNT]
-			i(221805),	-- Blasting Bracers
-			i(221806),	-- Venting Vambraces
-			i(221807),	-- Whirring Wristwraps
-			i(221808),	-- Clanking Cuffs
-			i(221812),	-- Player Experience
-			i(221852),	-- [PH] MoleMount (Pink Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
-			i(221853),	-- Handful of Bismuth Bolts
-			i(221854),	-- Handful of Bismuth Bolts
-			i(221855),	-- Handful of Bismuth Bolts
-			i(221856),	-- Whimsical Wiring
-			i(221857),	-- Whimsical Wiring
-			i(221858),	-- Whimsical Wiring
-			i(221859),	-- Gyrating Gear
-			i(221860),	-- Gyrating Gear
-			i(221861),	-- Gyrating Gear
-			i(221862),	-- Safety Switch
-			i(221863),	-- Safety Switch
-			i(221864),	-- Safety Switch
-			i(221865),	-- Chaos Circuit
-			i(221866),	-- Chaos Circuit
-			i(221867),	-- Chaos Circuit
-			i(221868),	-- Entropy Enhancer
-			i(221869),	-- Entropy Enhancer
-			i(221870),	-- Entropy Enhancer
-			i(221871),	-- Prototype: Potion Bomb of Speed
-			i(221872),	-- Potion Bomb of Speed
-			i(221873),	-- Potion Bomb of Speed
-			i(221874),	-- Potion Bomb of Speed
-			i(221875),	-- Prototype: Potion Bomb of Recovery
-			i(221876),	-- Potion Bomb of Recovery
-			i(221877),	-- Potion Bomb of Recovery
-			i(221878),	-- Potion Bomb of Recovery
-			i(221879),	-- Prototype: Potion Bomb of Power
-			i(221880),	-- Potion Bomb of Power
-			i(221881),	-- Potion Bomb of Power
-			i(221882),	-- Potion Bomb of Power
-			i(221883),	-- Prototype: Stasis Mine
-			i(221884),	-- Stasis Mine
-			i(221885),	-- Stasis Mine
-			i(221886),	-- Stasis Mine
-			i(221887),	-- Prototype: Gravity Mine
-			i(221888),	-- Gravity Mine
-			i(221889),	-- Gravity Mine
-			i(221890),	-- Gravity Mine
-			i(221891),	-- Prototype: Explosive Mine
-			i(221892),	-- Explosive Mine
-			i(221893),	-- Explosive Mine
-			i(221894),	-- Explosive Mine
-			i(221895),	-- Prototype: Tinker: Lightning Tether \\ Prototype: Tinker: Lightning  Tether
-			i(221896),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
-			i(221897),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
-			i(221898),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
-			i(221899),	-- Prototype: Tinker: Overclocked S.E.L.F.I.E. Camera
-			i(221900),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-			i(221901),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-			i(221902),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-			i(221903),	-- Prototype: Tinker: Earthen Delivery Drill
-			i(221904),	-- Tinker: Earthen Delivery Drill
-			i(221905),	-- Tinker: Earthen Delivery Drill
-			i(221906),	-- Tinker: Earthen Delivery Drill
-			i(221907),	-- Prototype: Tinker: Heartseeking Health Injector
-			i(221908),	-- Tinker: Heartseeking Health Injector
-			i(221909),	-- Tinker: Heartseeking Health Injector
-			i(221910),	-- Tinker: Heartseeking Health Injector
-			i(221911),	-- Serrated Cogwheel
-			i(221912),	-- Serrated Cogwheel
-			i(221913),	-- Serrated Cogwheel
-			i(221914),	-- Overclocked Cogwheel
-			i(221915),	-- Overclocked Cogwheel
-			i(221916),	-- Overclocked Cogwheel
-			i(221917),	-- Impeccable Cogwheel
-			i(221918),	-- Impeccable Cogwheel
-			i(221919),	-- Impeccable Cogwheel
-			i(221920),	-- Adjustable Cogwheel
-			i(221921),	-- Adjustable Cogwheel
-			i(221922),	-- Adjustable Cogwheel
-			i(221923),	-- Recalibrated Safety Switch
-			i(221924),	-- Recalibrated Safety Switch
-			i(221925),	-- Recalibrated Safety Switch
-			i(221926),	-- Blame Redirection Device \\ Blame Redistribution Device
-			i(221927),	-- Blame Redirection Device \\ Blame Redistribution Device
-			i(221928),	-- Blame Redirection Device \\ Blame Redistribution Device
-			i(221929),	-- Overclocked Circuit Board
-			i(221930),	-- Overclocked Circuit Board
-			i(221931),	-- Overclocked Circuit Board
-			i(221932),	-- Complicated Fuse Box
-			i(221933),	-- Complicated Fuse Box
-			i(221934),	-- Complicated Fuse Box
-			i(221935),	-- Pouch of Pocket Grenades
-			i(221936),	-- Pouch of Pocket Grenades
-			i(221937),	-- Pouch of Pocket Grenades
-			i(221938),	-- Concealed Chaos Module
-			i(221939),	-- Concealed Chaos Module
-			i(221940),	-- Concealed Chaos Module
-			i(221941),	-- Energy Redistribution Beacon
-			i(221942),	-- Energy Redistribution Beacon
-			i(221943),	-- Energy Redistribution Beacon
-			i(221944),	-- Prototype: Irresistible Red Button
-			i(221945),	-- Irresistible Red Button
-			i(221946),	-- Irresistible Red Button
-			i(221947),	-- Irresistible Red Button
-			i(221948),	-- Prototype: Pausing Pylon
-			i(221949),	-- Pausing Pylon
-			i(221950),	-- Pausing Pylon
-			i(221951),	-- Pausing Pylon
-			i(221952),	-- Prototype: Convincingly Realistic Jumper Cables
-			i(221953),	-- Convincingly Realistic Jumper Cables
-			i(221954),	-- Convincingly Realistic Jumper Cables
-			i(221955),	-- Convincingly Realistic Jumper Cables
-			i(221956),	-- Prototype: Algari Repair Bot 11O \\ Prototype: Repair Bot
-			i(221957),	-- Algari Repair Bot 11O \\ Repair Bot
-			i(221958),	-- Prototype: Portable Profession Possibility Projector
-			i(221959),	-- Portable Profession Possibility Projector
-			i(221960),	-- Prototype: Barrel of Fireworks
-			i(221961),	-- Prototype: Defective Escape Pod
-			i(221963),	-- Prototype: Filmless Camera \\ Prototype: Malfunctioning Navigation Beacon
-			i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
-			i(221965),	-- Prototype: Wormhole Generator: Khaz Algar
-			i(221968),	-- Legibly Scribbled Notes
-			i(221969),	-- P.0.W. x2
-			i(222089),	-- Bloody Perch
-			i(222090),	-- Crystalline Sturgeon
-			i(222091),	-- Bismuth Bitterling
-			i(222092),	-- Dornish Pike
-			i(222093),	-- Quiet River Bass
-			i(222094),	-- Arathor Hammerfish
-			i(222095),	-- Azj-Kahet Slum Shark
-			i(222096),	-- Goldengill Trout
-			i(222097),	-- Nibbling Minnow
-			i(222098),	-- Pale Huskfish
-			i(222099),	-- Regal Dottyback
-			i(222100),	-- Roaring Anglerseeker
-			i(222101),	-- Specular Rainbowfish
-			i(222102),	-- Whispering Stargazer
-			i(222103),	-- Sanguine Dogfish
-			i(222104),	-- Spiked Sea Raven
-			i(222105),	-- Queen's Lurefish
-			i(222106),	-- Cursed Ghoulfish
-			i(222107),	-- Kah, King of the Deeps
-			i(222250),	-- Chopped Mycobloom
-			i(222251),	-- Portioned Steak
-			i(222252),	-- Spiced Meat Stock
-			i(222253),	-- Cluster of Meatballs
-			i(222254),	-- Fresh Fillet
-			i(222255),	-- Twined Herbs
-			i(222256),	-- Crunchy Peppers
-			i(222257),	-- Coreway Dust
-			i(222258),	-- Surface Olive
-			i(222259),	-- Khaz Algar Tomato
-			i(222260),	-- Granulated Spices
-			i(222261),	-- Clumped Flour
-			i(222262),	-- Skewered Fillet
-			i(222263),	-- Meatball Hold-Me-Over
-			i(222264),	-- Unseasoned Field Steak
-			i(222265),	-- Roasted Mycobloom
-			i(222266),	-- Pan Seared Mycobloom
-			i(222267),	-- Hallowfall Chili
-			i(222268),	-- Coreway Kabob
-			i(222269),	-- Flash Fire Fillet
-			i(222270),	-- Meat and Potatoes
-			i(222271),	-- Rib Stickers
-			i(222272),	-- Sweet and Sour Meatballs
-			i(222273),	-- NYI NAME NEEDED
-			i(222274),	-- Zesty Nibblers
-			i(222275),	-- Fiery Fish Sticks
-			i(222276),	-- Ginger Glazed Fillet
-			i(222277),	-- Salty Fish Pie (Revise)
-			i(222278),	-- Fish Cake (Revise)
-			i(222279),	-- Fish Soup (Revise)
-			i(222281),	-- Fish and Chips
-			i(222282),	-- Salt Baked Seafood
-			i(222283),	-- Angler's Delight
-			i(222284),	-- NYI NAME NEEDED
-			i(222285),	-- NYI NAME NEEDED
-			i(222286),	-- NYI NAME NEEDED
-			i(222287),	-- NYI NAME NEEDED
-			i(222288),	-- The Breakfast Sampler
-			i(222289),	-- Daylight Delicacy
-			i(222290),	-- Nightfall Nourishment
-			i(222291),	-- Late Night Snack
-			i(222292),	-- Shadow-Infused Gumbo
-			i(222293),	-- NYI NAME NEEDED
-			i(222294),	-- NYI NAME NEEDED
-			i(222295),	-- Chippy Tea
-			i(222296),	-- NYI NAME NEEDED
-			i(222297),	-- NYI NAME NEEDED
-			i(222298),	-- NYI NAME NEEDED
-			i(222299),	-- NYI NAME NEEDED
-			i(222300),	-- Pep-In-Your-Step
-			i(222301),	-- NYI NAME NEEDED
-			i(222302),	-- Rockslide Shake
-			i(222303),	-- NYI NAME NEEDED
-			i(222304),	-- NYI NAME NEEDED
-			i(222305),	-- Hearty Skewered Fillet
-			i(222306),	-- Hearty Meatball Hold-Me-Over
-			i(222307),	-- Hearty Unseasoned Field Steak
-			i(222308),	-- Hearty Roasted Mycobloom
-			i(222309),	-- Hearty Pan Seared Mycobloom
-			i(222310),	-- Hearty Hallowfall Chili
-			i(222311),	-- Hearty Coreway Kabob
-			i(222312),	-- Hearty Flash Fire Fillet
-			i(222313),	-- Hearty Meat and Potatoes
-			i(222314),	-- Hearty Rib Stickers
-			i(222315),	-- Hearty Sweet and Sour Meatballs
-			i(222316),	-- Hearty NYI NAME NEEDED
-			i(222317),	-- Hearty Zesty Nibblers
-			i(222318),	-- Hearty Fiery Fish Sticks
-			i(222319),	-- Hearty Ginger Glazed Fillet
-			i(222320),	-- Hearty Salty Fish Pie (Revise)
-			i(222321),	-- Hearty Fish Cake (Revise)
-			i(222322),	-- Hearty Fish Soup (Revise)
-			i(222324),	-- Hearty Fish and Chips
-			i(222325),	-- Hearty Salt Baked Seafood
-			i(222326),	-- Hearty Angler's Delight
-			i(222327),	-- Hearty NYI NAME NEEDED
-			i(222328),	-- Hearty NYI NAME NEEDED
-			i(222329),	-- Hearty NYI NAME NEEDED
-			i(222330),	-- Hearty NYI NAME NEEDED
-			i(222331),	-- Hearty The Breakfast Sampler
-			i(222332),	-- Hearty Daylight Delicacy
-			i(222333),	-- Hearty Nightfall Nourishment
-			i(222334),	-- Hearty Late Night Snack
-			i(222335),	-- Hearty Shadow-Infused Gumbo
-			i(222336),	-- Hearty NYI NAME NEEDED
-			i(222337),	-- Hearty NYI NAME NEEDED
-			i(222338),	-- Hearty Chippy Tea
-			i(222339),	-- Hearty NYI NAME NEEDED
-			i(222340),	-- Hearty NYI NAME NEEDED
-			i(222341),	-- Hearty NYI NAME NEEDED
-			i(222342),	-- Hearty NYI NAME NEEDED
-			i(222343),	-- Hearty Pep-In-Your-Step
-			i(222344),	-- Hearty NYI NAME NEEDED
-			i(222345),	-- Hearty Rockslide Shake
-			i(222346),	-- Hearty NYI NAME NEEDED
-			i(222347),	-- Hearty NYI NAME NEEDED
-			i(222526),	-- Bloody Perch
-			i(222527),	-- Crystalline Sturgeon
-			i(222528),	-- Bismuth Bitterling
-			i(222529),	-- Dornish Pike
-			i(222530),	-- Quiet River Bass
-			i(222531),	-- Arathor Hammerfish
-			i(222532),	-- Azj-Kahet Slum Shark
-			i(222534),	-- Nibbling Minnow
-			i(222535),	-- Pale Huskfish
-			i(222536),	-- Regal Dottyback
-			i(222537),	-- Roaring Anglerseeker
-			i(222538),	-- Specular Rainbowfish
-			i(222539),	-- Whispering Stargazer
-			i(222540),	-- Sanguine Dogfish
-			i(222541),	-- Spiked Sea Raven
-			i(222542),	-- Queen's Lurefish
-			i(222543),	-- Cursed Ghoulfish
-			i(222544),	-- Kah, King of the Deeps
-			i(222690),	-- Chopped Mycobloom
-			i(222691),	-- Portioned Steak
-			i(222692),	-- Spiced Meat Stock
-			i(222693),	-- Hearty Meals
-			i(222694),	-- Fresh Fillet
-			i(222695),	-- Twined Herbs
-			i(222696),	-- Crunchy Peppers
-			i(222697),	-- Coreway Dust
-			i(222698),	-- Surface Olive
-			i(222699),	-- Khaz Algar Tomato
-			i(222700),	-- Granulated Spices
-			i(222701),	-- Clumped Flour
-			i(222702),	-- Skewered Fillet
-			i(222703),	-- Simple Stew
-			i(222704),	-- Unseasoned Field Steak
-			i(222705),	-- Roasted Mycobloom
-			i(222706),	-- Pan Seared Mycobloom
-			i(222707),	-- Hallowfall Chili
-			i(222708),	-- Coreway Kabob
-			i(222709),	-- Flash Fire Fillet
-			i(222710),	-- Meat and Potatoes
-			i(222711),	-- Rib Stickers
-			i(222712),	-- Sweet and Sour Meatballs
-			i(222713),	-- Tender Twilight Jerky
-			i(222714),	-- Zesty Nibblers
-			i(222715),	-- Fiery Fish Sticks
-			i(222716),	-- Ginger Glazed Fillet
-			i(222717),	-- Salty Dog \\ Salty Fish Pie
-			i(222718),	-- Deepfin Patty
-			i(222719),	-- Sweet and Spicy Soup
-			i(222720),	-- The Sushi Special
-			i(222721),	-- Fish and Chips
-			i(222722),	-- Salt Baked Seafood
-			i(222723),	-- Marinated Tenderloins
-			i(222724),	-- Sizzling Honey Roast
-			i(222725),	-- Mycobloom Risotto
-			i(222726),	-- Stuffed Cave Peppers
-			i(222727),	-- Angler's Delight
-			i(222728),	-- Beledar's Bounty \\ Emperor's Bounty
-			i(222729),	-- Empress' Farewell
-			i(222730),	-- Jester's Board
-			i(222731),	-- Outsider's Provisions
-			i(222732),	-- Feast of the Divine Day
-			i(222733),	-- Feast of the Midnight Masquerade
-			i(222734),	-- Village Potluck
-			i(222735),	-- Everything Stew
-			i(222736),	-- Chippy Tea
-			i(222737),	-- Chopped Mycobloom
-			i(222738),	-- Portioned Steak
-			i(222739),	-- Spiced Meat Stock
-			i(222740),	-- Hearty Meals
-			i(222741),	-- Fresh Fillet
-			i(222742),	-- Luminous Lemonade
-			i(222743),	-- Blessing Blossom Tea
-			i(222744),	-- Cinder Nectar \\ Warm Honey Water
-			i(222745),	-- Pep-In-Your-Step
-			i(222746),	-- Tasty Pocket Tart \\ Eclipse Eclair
-			i(222747),	-- Rockslide Shake
-			i(222748),	-- Sticky Sweet Treat \\ Olive Oil Ice Cream
-			i(222749),	-- Melted Candlebar \\ Late Night Snack
-			i(222750),	-- Hearty Skewered Fillet
-			i(222751),	-- Hearty Simple Stew \\ Hearty Meatball Hold-Me-Over
-			i(222752),	-- Hearty Unseasoned Field Steak
-			i(222753),	-- Hearty Roasted Mycobloom
-			i(222754),	-- Hearty Pan-Seared Mycobloom \\ Hearty Pan Seared Mycobloom
-			i(222755),	-- Hearty Hallowfall Chili
-			i(222756),	-- Hearty Coreway Kabob
-			i(222757),	-- Hearty Flash Fire Fillet
-			i(222758),	-- Hearty Meat and Potatoes
-			i(222759),	-- Hearty Rib Stickers
-			i(222760),	-- Hearty Sweet and Sour Meatballs
-			i(222761),	-- Hearty Tender Twilight Jerky
-			i(222762),	-- Hearty Zesty Nibblers
-			i(222763),	-- Hearty Fiery Fish Sticks
-			i(222764),	-- Hearty Ginger Glazed Fillet
-			i(222765),	-- Hearty Salty Dog \\ Hearty Salty Fish Pie
-			i(222766),	-- Hearty Deepfin Patty
-			i(222767),	-- Hearty Sweet and Spicy Soup
-			i(222768),	-- Hearty Sushi Special \\ Hearty Fish Stir Fry (Revise)
-			i(222769),	-- Hearty Fish and Chips
-			i(222770),	-- Hearty Salt Baked Seafood
-			i(222771),	-- Hearty Marinated Tenderloins
-			i(222772),	-- Hearty Sizzling Honey Roast
-			i(222773),	-- Hearty Mycobloom Risotto
-			i(222774),	-- Hearty Stuffed Cave Peppers
-			i(222775),	-- Hearty Angler's Delight
-			i(222776),	-- Hearty Beledar's Bounty \\ Hearty Emperor's Bounty
-			i(222777),	-- Hearty Empress' Farewell
-			i(222778),	-- Hearty Jester's Board
-			i(222779),	-- Hearty Outsider's Provisions
-			i(222780),	-- Hearty Feast of the Divine Day
-			i(222781),	-- Hearty Feast of the Midnight Masquerade
-			i(222782),	-- Hearty Village Potluck
-			i(222783),	-- Hearty Everything Stew
-			i(222784),	-- Hearty Chippy Tea
-			i(222785),	-- zzold cooking recipe
-			i(222786),	-- zzold cooking recipe
-			i(222787),	-- zzold cooking recipe
-			i(222898),	-- [PH] Mount - Unicorn Moose (Blue) (Gold Saddle) (Player Mount)
-			i(222899),	-- [UNUSED] Faerin's Shield
-			i(222901),	-- [PH] Mount - Unicorn Moose (Brown) (Copper Saddle) (Player Mount)
-			i(222902),	-- [PH] Mount - Unicorn Moose (Crimson) (Dark Saddle) (Player Mount)
-			i(222903),	-- [PH] Mount - Unicorn Moose (Ivory) (Silver Saddle) (Player Mount)
-			i(222904),	-- [PH] Mount - Unicorn Moose (Yellow) (White Saddle) (Player Mount)
-			i(222928),	-- Coin Coffer
-			i(222929),	-- Carved Coin Coffer \\ Large Coin Coffer
-			i(222951),	-- Eagle Fillet \\ Eagle Breast
-			i(222953),	-- Light-Bathed Lotus Cuttings
-			i(222954),	-- Runed Coin Coffer \\ Coin Coffer
-			i(222955),	-- Player Experience
-			i(222956),	-- Player Experience
-			i(222963),	-- Lava Globs
-			i(222976),	-- Flame-Tempered Harpoon
-			i(222977),	-- Scorched Junk
-			i(222982),	-- Earthen Satchel
-			i(222988),	-- [PH] Firefly2Mount (Green)
-			i(222990),	-- Earthen Spire
-			i(222991),	-- [PH] Firefly2Mount (Purple)
-			i(222992),	-- Earthen Handaxe \\ Earthen Gavel
-			i(222993),	-- Earthen Shiv
-			i(222994),	-- Earthen Staff
-			i(222995),	-- Earthen Bulwark
-			i(222998),	-- Earthen Blade \\ Earthen Handaxe
-			i(222999),	-- Earthen Cleaver
-			i(223000),	-- Earthen Blunderbuss
-			i(223001),	-- Earthen Shillelagh \\ Earthen Pummel
-			i(223005),	-- String of Fungal Fruits
-			i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
-			i(223082),	-- Design: Ominous Energy Crystal \\ Design: Engineering Finishing Reagent (DNT) \\ Pattern: Artisan Gardening Hat
-			i(223083),	-- Design: Elemental Focusing Lens \\ Pattern: Artisan Fishing Cap
-			i(223084),	-- Design: Prismatic Null Stone \\ Pattern: Artisan Enchanter's Hat
-			i(223085),	-- Design: Fractured Gemstone Locket \\ Pattern: Artisan Alchemist's Robe
-			i(223086),	-- Design: Insightful Blasphemite \\ Pattern: Artisan's Chef's Hat
-			i(223087),	-- Design: Culminating Blasphemite \\ Pattern: Alchemy Bag
-			i(223088),	-- Design: Elusive Blasphemite \\ Pattern: Blacksmithing Bag
-			i(223089),	-- Design: Jewelcrafting T2 Helm (DNT) \\ Pattern: Leatherworking Bag
-			i(223090),	-- Design: Enchanting T2 Focus (DNT) \\ Pattern: Enchanting Bag
-			i(223091),	-- Design: Inscription T2 Magnifying Glass (DNT) \\ Pattern: Engineering Bag
-			i(223092),	-- Design: Inscription T2 Glasses (DNT) \\ Pattern: Inscription Bag
-			i(223093),	-- Design: Beautification Iris \\ Pattern: Herbalism Bag
-			i(223094),	-- Design: Magnificent Jeweler's Setting \\ Pattern: Mining Bag
-			i(223152),	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
-			i(223154),	-- [PH] Firebee Mount (White Skin, White Saddle)
-			i(223157),	-- Blacksmith's Breastplate
-			i(223159),	-- [PH] Firebee Mount (Blue Variant)
-			i(223220),	-- Kaheti All-Purpose Cleanser
-			i(223247),	-- Ryton Blackholme's Breastplate
-			i(223265),	-- [PH] FlyingNerubian2 Mount (Tan Body, Orange Saddle)
-			i(223268),	-- [PH] DwarvenMechBoss (Gold)
-			i(223271),	-- [PH] Gryphon_Air_Mount (White Skin, Gold Saddle)
-			i(223272),	-- [PH] CaveBorerWormMount (Blue Skin, Purple Saddle)
-			i(223273),	-- [PH] CaveBorerWormMount (Forest Skin, Blue Saddle)
-			i(223275),	-- [PH] CaveBorerWormMount (Nocturne Skin, Red Saddle)
-			i(223276),	-- [PH] SpiderUndergroundMount (Red)
-			i(223277),	-- [PH] SpiderUndergroundMount (Green)
-			i(223278),	-- [PH] SpiderUndergroundMount (Blue)
-			i(223279),	-- [PH] SpiderUndergroundMount (Yellow)
-			i(223296),	-- Battleplate of Dimming Fluorescence
-			i(223297),	-- Vest of Fading Luminescence
-			i(223298),	-- Chainmail of Depleting Brilliance
-			i(223299),	-- Tunic of Irradiating Imprisonment
-			i(223308),	-- Bracers of Depleting Brilliance
-			i(223309),	-- Bindings of Irradiating Imprisonment
-			i(223310),	-- Wristwraps of Fading Luminescence
-			i(223311),	-- Armguards of Dimming Fluorescence
-			i(223313),	-- [PH] Shadow Elemental (Black)
-			i(223316),	-- Trusty Hat
-			i(223318),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
-			i(223319),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
-			i(223320),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
-			i(223321),	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
-			i(223352),	-- Waterskipper's Legplates
-			i(223354),	-- Waterskipper's Chain Leggings
-			i(223361),	-- Flying Kobold's Seatbelt
-			i(223362),	-- Flying Kobold's Seatbelt
-			i(223363),	-- Flying Kobold's Seatbelt
-			i(223369),	-- Webspeaker's Spiritual Cloak
-			i(223371),	-- Slippers of Shallow Waters
-			i(223372),	-- Sabatons of Shallow Waters
-			i(223374),	-- Nerubian Weaver's Gown
-			i(223380),	-- Nerubian Weaver's Chainmail
-			i(223382),	-- Murkshade Grips
-			i(223383),	-- Murkshade Handguards
-			i(223384),	-- Murkshade Gloves
-			i(223385),	-- Murkshade Gauntlets
-			i(223386),	-- Vilewing Crown
-			i(223387),	-- Vilewing Chain Helm
-			i(223390),	-- Leggings of Dark Hunger
-			i(223391),	-- Legguards of Dark Hunger
-			i(223395),	-- Deepfiend Shoulderpads
-			i(223396),	-- Deepfiend Shoulder Shells
-			i(223398),	-- Abyssal Hunter's Sash
-			i(223399),	-- Abyssal Hunter's Chain
-			i(223406),	-- Slippers of the Nerubian Twins
-			i(223407),	-- Sabatons of the Nerubian Twins
-			i(223408),	-- Treads of the Nerubian Twins
-			i(223424),	-- [PH] 11.0 - Cord
-			i(223427),	-- Lightning-Scarred Cowl
-			i(223428),	-- Stormrider's Cuffs
-			i(223431),	-- The Fallen Queen's Band
-			i(223432),	-- Commemorative Light's Gambit Championship Signet \\ [PH] 11.0 - Signet
-			i(223436),	-- Light Boots of the Ringing Deeps
-			i(223437),	-- Handwraps of the Weaver
-			i(223438),	-- Algari Warden's Vestment
-			i(223439),	-- [PH] 11.0 - Leggings
-			i(223440),	-- Saboteur's Shoulderpads
-			i(223441),	-- [PH] 11.0 - Waders
-			i(223443),	-- Algari Warden's Hood
-			i(223444),	-- [PH] 11.0 - Breeches
-			i(223446),	-- Stormrider's Bindings
-			i(223450),	-- [PH] 11.0 - Chainmail
-			i(223451),	-- Saboteur's Striders
-			i(223452),	-- Grips of the Ringing Deeps
-			i(223453),	-- Lightning-Scarred Coif
-			i(223454),	-- Algari Warden's Greaves
-			i(223455),	-- Shoulderguards of the Weaver
-			i(223456),	-- [PH] 11.0 - Cinch
-			i(223457),	-- Stormrider's Bracers
-			i(223458),	-- [PH] 11.0 - Belt
-			i(223461),	-- Algari Warden's Helm
-			i(223462),	-- [PH] 11.0 - Breastplate
-			i(223463),	-- Sabatons of the Ringing Deeps
-			i(223464),	-- [PH] 11.0 - Gauntlets
-			i(223465),	-- Lightning-Scarred Legguards
-			i(223466),	-- Mantle of the Weaver
-			i(223467),	-- Saboteur's Girdle
-			i(223468),	-- Stormrider's Armplates
-			i(223472),	-- Drape of the Lamplighter
-			i(223500),	-- [PH] MoleMount (Gray Skin, Purple Saddle, Teeth Tusks, Nose Base)
-			i(223502),	-- [PH] MoleMount (Brown Skin, Red Saddle, Teeth Tusks, Nose Pointed)
-			i(223503),	-- [PH] MoleMountBasic (Blue Skin, Purple Saddle, Teeth Tusks, Nose Base)
-			i(223504),	-- [PH] MoleMountBasic (Green Skin, Black Saddle, Teeth Tusks, Nose Star)
-			i(223506),	-- [PH] MoleMountBasic (Yellow Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
-			i(223507),	-- Recruit's Pocket Watch
-			i(223508),	-- Recruit's Whetstone
-			i(223510),	-- Airship Schematic: Template
-			i(223512),	-- Basically Beef
-			i(223515),	-- Breastplate and Tinderbox
-			i(223516),	-- Recruit's Trumpet
-			i(223517),	-- Recruit's Warhorn
-			i(223547),	-- Algari Heavy Staff
-			i(223548),	-- Algari Rifle
-			i(223569),	-- Algari Spellcleaver
-			i(223573),	-- [PH] Proto Ram Earthen (Sand Skin, Grand Horns, Dark Saddle)
-			i(223574),	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle)
-			i(223584),	-- Algari Scepter
-			i(223585),	-- [PH] Algari Bladefist
-			i(223587),	-- [PH] Silver Armored Fel Bat Gladiator Mount
-			i(223588),	-- Algari Fighting Knife
-			i(223627),	-- Scout's Dog Tags
-			i(223628),	-- Marksman's Dog Tags
-			i(223629),	-- Marksman's War-Chain
-			i(223630),	-- Scout's War-Chain
-			i(223631),	-- Adventurer's Lucky Ring
-			i(223632),	-- Signet of Lion's Favor
-			i(223633),	-- Signet of Wolf's Favor
-			i(223638),	-- Arathi Trade Goods
-			i(223641),	-- Essence of Northrend
-			i(223642),	-- Memory of Northrend
-			i(223643),	-- Essence of Kalimdor
-			i(223644),	-- Memory of Kalimdor
-			i(223645),	-- Essence of the Eastern Kingdoms
-			i(223646),	-- Memory of the  Eastern Kingdoms \\ Memory ofthe  Eastern Kingdoms
-			i(223804),	-- [DNT] Zone 1 Placeholder Treasure
-			i(223805),	-- Bag Test A
-			i(223806),	-- Bag Test B
-			i(223869),	-- DO NOT USE Prismatic Codex
-			i(223871),	-- Algari Heavy Axe
-			i(223872),	-- Algari Mace
-			i(223873),	-- Algari Shield
-			i(223874),	-- Algari Dagger
-			i(223876),	-- Algari Warglaive
-			i(223877),	-- Algari Hatchet
-			i(223889),	-- Flame Touched Weaponry
-			i(223897),	-- Ruptured Engine \\ Ruptered Engine
-			i(223898),	-- Loose Bolts
-			i(223900),	-- Bottled Darkness
-			i(223915),	-- Nerubian Orator's Stiletto
-			i(223916),	-- Nerubian Cutthroat's Reach
-			i(223917),	-- Nerubian Covert's Cloak
-			i(223918),	-- Specter Stalker's Shotgun
-			i(223919),	-- Abducted Lawman's Gavel
-			i(223920),	-- Slime Deflecting Stopper
-			i(223921),	-- Ever-Oozing Signet
-			i(223922),	-- Cinder Pollen Cloak
-			i(223923),	-- Gilded Cryptlord's Sabatons
-			i(223924),	-- Chitin-Inscribed Vest
-			i(223925),	-- Blood Hungerer's Chestplate
-			i(223926),	-- Earthgorger's Chain Bib
-			i(223927),	-- Vinewrapped Leather Tunic
-			i(223928),	-- Crop Cutter's Gauntlets
-			i(223929),	-- Honey Sweetener's Squeezers
-			i(223930),	-- Monstrous Chain Pincers
-			i(223931),	-- Black Blood Cowl
-			i(223932),	-- Scarab's Carapace Cap
-			i(223933),	-- Slime Goliath's Cap
-			i(223934),	-- Makrura's Foreboding Legplates
-			i(223935),	-- Cabbage Harvester's Pantaloons
-			i(223936),	-- Shadow Bog Trousers
-			i(223937),	-- Honey Deliverer's Leggings
-			i(223938),	-- Marsh Hopper's Spaulders
-			i(223939),	-- Esteemed Nerubian's Mantle
-			i(223940),	-- Deranged Fungarian's Epaulets
-			i(223941),	-- Nerubian Cultivator's Girdle
-			i(223943),	-- Cord of the Earthbreaker
-			i(223944),	-- [PH] Infested Fungal Wristwraps
-			i(223945),	-- [PH] Perchfather's Cuffs
-			i(223946),	-- [PH] Storm Bindings
-			i(223947),	-- [PH] Steam-Powered Wristwatch
-			i(223949),	-- Dark Depth Stompers
-			i(223950),	-- Corruption Sifter's Treads
-			i(223952),	-- Singed Plush
-			i(223955),	-- Recipe: Fine Egg Powder
-			i(223961),	-- Recipe: Azj-Kahet Special
-			i(223965),	-- Fine Egg Powder
-			i(223966),	-- Everything-On-A-Stick
-			i(223967),	-- Protein Slurp
-			i(223968),	-- Spongey Scramble
-			i(223969),	-- Secret Sauce
-			i(223971),	-- Azj-Kahet Special
-			i(223977),	-- Coagulated Yolk
-			i(223978),	-- Double Packed Yolk
-			i(223989),	-- Arsenal: Hellbloom Club
-			i(223990),	-- Arsenal: Hellbloom Hammer
-			i(223991),	-- Arsenal: Hellbloom Knife
-			i(223992),	-- Arsenal: Hellbloom Wand
-			i(223993),	-- Arsenal: Hellbloom Polearm
-			i(223994),	-- Arsenal: Hellbloom Shield
-			i(223995),	-- Arsenal: Hellbloom Staff
-			i(223996),	-- Arsenal: Hellbloom Bow
-			i(223997),	-- Arsenal: Hellbloom Warglaive
-			i(223998),	-- Arsenal: Hellbloom Sword
-			i(223999),	-- Arsenal: Hellbloom Greatsword
-			i(224000),	-- Arsenal: Hellbloom Axe
-			i(224001),	-- Arsenal: Hellbloom Branch
-			i(224011),	-- Signet of the Thousand Scars
-			i(224012),	-- Signet of the Thousand Scars
-			i(224013),	-- Signet of the Thousand Scars
-			i(224014),	-- Signet of the Skeinspiner
-			i(224015),	-- Signet of the Skeinspiner
-			i(224016),	-- Signet of the Skeinspiner
-			i(224027),	-- Bottomless Bag of Khaz Algar Herbs
-			i(224028),	-- Bottomless Bag of Khaz Algar Ore
-			i(224029),	-- Bottomless Bag of Khaz Algar Skins
-			i(224030),	-- Bottomless Bag of Khaz Algar Alchemy Goods
-			i(224031),	-- Bottomless Bag of Khaz Algar Blacksmithing Goods
-			i(224032),	-- Bottomless Bag of Khaz Algar Enchanting Goods
-			i(224033),	-- Bottomless Bag of Khaz Algar Engineering Goods
-			i(224034),	-- Bottomless Bag of Khaz Algar Inscription Goods
-			i(224035),	-- Bottomless Bag of Khaz Algar Jewelcrafting Goods
-			i(224037),	-- Bottomless Bag of Khaz Algar Leatherworking Goods
-			i(224039),	-- Bottomless Bag of Khaz Algar Tailoring Goods
-			i(224040),	-- Bottomless Bag of Khaz Algar Optional Goods
-			i(224041),	-- Holy Brigade
-			i(224042),	-- Voracious Residue
-			i(224043),	-- Famished Residue
-			i(224044),	-- Devouring Residue
-			i(224045),	-- Kelp Grasp
-			i(224046),	-- Sand Tornado
-			i(224047),	-- Water Blast
-			i(224048),	-- Electric Shock
-			i(224049),	-- Web Pull
-			i(224051),	-- Slightly Chewed Harvest Bounty
-			i(224057),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Alchemy
-			i(224058),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Blacksmithing
-			i(224059),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Enchanting
-			i(224060),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Engineering
-			i(224061),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Herbalism
-			i(224062),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Inscription
-			i(224063),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Jewelcrafting
-			i(224064),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Leatherworking
-			i(224065),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Mining
-			i(224066),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Skinning
-			i(224067),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Tailoring
-			i(224068),	-- Professor Instructaur's Brain Pertaining to Khaz Algar
-			i(224084),	-- Tentacled Hat
-			i(224085),	-- Hightfish Cap
-			i(224086),	-- Nat's Drinking Hat
-			i(224087),	-- Boots of the Bay
-			i(224088),	-- Worn Fishing Hat
-			i(224089),	-- Nat Pagle's Extreme Anglin' Boots
-			i(224090),	-- Weather-Beaten Fishing Hat
-			i(224091),	-- Nat's Hat
-			i(224092),	-- Darkmoon Fishing Cap
-			i(224093),	-- Anglin' Art's Stompers
-			i(224094),	-- Anglin' Art's Waders
-			i(224095),	-- Anglin' Art's Treads
-			i(224096),	-- Anglin' Art's Sandals
-			i(224097),	-- Lucky Fishing Hat
-			i(224100),	-- Bottomless Bag of Khaz Algar General Goods
-			i(224117),	-- Ghoulfish Delight
-			i(224148),	-- [PH] NerubianWarbeastMount (Cyan)
-			i(224149),	-- [PH] NerubianWarbeastMount (Orange)
-			i(224156),	-- Bottomless Bag of Khaz Algar General Goods
-			i(224165),	-- Dornogal Tabard \\ Gilded Earthen Tabard \\ [PH] Earthen Tabard
-			i(224166),	-- Awakened Tabard \\ Awakening Tabard \\ Copper Earthen Tabard \\ [PH] Earthen Tabard
-			i(224167),	-- Gundargaz Tabard \\ Dark Earthen Tabard \\ [PH] Earthen Tabard
-			i(224168),	-- Stonebound Tabard \\ Silver Earthen Tabard \\ [PH] Earthen Tabard
-			i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
-			i(224170),	-- Wildercloth Fishing Cap
-			i(224171),	-- Master's Wildercloth Fishing Cap
-			i(224179),	-- Swamplogged Letter
-			i(224180),	-- Worn Journal
-			i(224182),	-- Webbed Ingots
-			i(224183),	-- Bleak Chum
-			i(224184),	-- Crusty Spyglass
-			i(224186),	-- Hymns of the Flame
-			i(224187),	-- Dented Spearhead
-			i(224188),	-- Filigreed Cleric \\ Gambit Piece
-			i(224189),	-- Ivory Tinderbox
-			i(221476),	-- Engineering - 1H Wrench [DNT]
-			i(221477),	-- Engineering - 2H Wrench [DNT]
-			i(224195),	-- Earthen Shoulders
-			i(224196),	-- Earthen Trousers
-			i(224197),	-- Earthen Grips
-			i(224198),	-- Earthen Vest
-			i(224199),	-- Earthen Boots
-			i(224200),	-- Earthen Chain
-			i(224201),	-- Earthen Chestpiece
-			i(224202),	-- Earthen Striders
-			i(224203),	-- Earthen Handguards
-			i(224204),	-- Earthen Coif
-			i(224205),	-- Earthen Greaves
-			i(224206),	-- Earthen Belt
-			i(224207),	-- Earthen Helm
-			i(224208),	-- Earthen Breastplate
-			i(224209),	-- Earthen Sabatons
-			i(224210),	-- Earthen Gauntlets
-			i(224211),	-- Earthen Legguards
-			i(224212),	-- Earthen Mantle
-			i(224213),	-- Earthen Girdle
-			i(224214),	-- Earthen Vestment
-			i(224215),	-- Earthen Sandals
-			i(224216),	-- Earthen Handbraces
-			i(224217),	-- Earthen Hood
-			i(224218),	-- Earthen Kilt
-			i(224219),	-- Earthen Waistguard
-			i(224220),	-- Earthen Collar
-			i(224221),	-- Earthen Slippers
-			i(224222),	-- Earthen Gloves
-			i(224223),	-- Earthen Waistcoat
-			i(224224),	-- Earthen Toolbelt
-			i(224225),	-- Earthen Cogwheel
-			i(224226),	-- Earthen Chestguard
-			i(224227),	-- Earthen Footguards
-			i(224228),	-- Earthen Handwraps
-			i(224229),	-- Earthen Mining Hat
-			i(224230),	-- Earthen Leggings
-			i(224231),	-- Earthen Cord
-			i(224238),	-- Worn Coin
-			i(224239),	-- Pile of Leather String
-			i(224241),	-- Earthen Spire
-			i(224242),	-- Earthen Handaxe
-			i(224243),	-- Earthen Shiv
-			i(224244),	-- Earthen Staff
-			i(224245),	-- Earthen Bulwark
-			i(224246),	-- Earthen Blade
-			i(224247),	-- Earthen Cleaver
-			i(224248),	-- Earthen Blunderbuss
-			i(224249),	-- Earthen Shillelagh
-			i(224250),	-- Toy Fish
-			i(224252),	-- Calcified Journal
-			i(224254),	-- Wooden Figure
-			i(224257),	-- Sturdy Locket
-			i(224266),	-- Ivory Tinderbox
-			i(224267),	-- Dented Spearhead
-			i(224268),	-- Filigreed Cleric
-			i(224269),	-- [DNT] 11.0 Food/Drink Template - Food Only - Level 75 - Required Level 70
-			i(224272),	-- Calcified Journal
-			i(224273),	-- Wooden Figure
-			i(224274),	-- Sturdy Locket
-			i(224292),	-- Radiant Fuel Shard
-			i(224395),	-- Secret Garlic
-			i(224396),	-- Mangled Taro
-			i(224397),	-- Pristine Taro
-			i(224412),	-- Companion Experience
-			i(224413),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
-			i(224414),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green)
-			i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
-			i(224419),	-- Recipe: Jester's Board \\ Recipe: All-Day Banquet
-			i(224453),	-- City Guard's Coronet \\ Dalaran Cowl
-			i(224454),	-- City Guard's Mask \\ Dalaran Hood
-			i(224455),	-- City Guard's Chainmail \\ Dalaran Chestguard
-			i(224456),	-- City Guard's Greaves \\ Dalaran Greaves
-			i(224457),	-- Lil Piggy
-			i(224460),	-- The Lost Diary
-			i(224462),	-- The Ear
-			i(224463),	-- Lily's Locket
-			i(224464),	-- Demonic Healthstone
-			i(224465),	-- Unusual Potato
-			i(224466),	-- Wilber The Chicken \\ The Chicken
-			i(224467),	-- Forgotten Axe
-			i(224486),	-- Uncle's Eye
-			i(224545),	-- Plowhead
-			i(224548),	-- Nerubian Device
-			i(224553),	-- Beledar's Attunement
-			i(224556),	-- Victorious Contender's Strongbox
-			i(224557),	-- Field Medic's Hazard Payout
-			i(224572),	-- Crystallized Augment Rune
-			i(224573),	-- Crystal Satchel of Cooperation
-			i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
-			i(224586),	-- Box o' Booms
-			i(224587),	-- Box o' Booms
-			i(224588),	-- Box o' Booms
-			i(224592),	-- Spinner's Hoop \\ [PH] The Fallen Queen's Band
-			i(224593),	-- Spinner's Circlet \\ [PH] 11.0 - Signet
-			i(224594),	-- Spinner's Amulet \\ [PH] Element-Attuned Pendant
-			i(224624),	-- Spinner's Shawl \\ [PH] Drape of the Lamplighter
-			i(224628),	-- Arathi Claymore \\ [PH] Algari Greatsword
-			i(224629),	-- Arathi Hatchet \\ [PH] Algari Short Axe
-			i(224632),	-- Underscout's Kukri \\ [PH] Algari Fighting Knife
-			i(224634),	-- Arathi Mace \\ [PH] Algari Mace
-			i(224635),	-- Expeditionary Bulwark \\ [PH] Algari Shield
-			i(224636),	-- Deep-Dweller's Dirk \\ [PH] Algari Dagger
-			i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
-			i(224640),	-- Invent
-			i(224655),	-- Void-Lit Jewelcrafting Notes \\ [DNT] Renown Jewelcrafting Knowledge
-			i(224656),	-- Void-Lit Herbalism Notes \\ [DNT] Renown Herbalism Knowledge
-			i(224657),	-- Void-Lit Skinning Notes \\ [DNT] Renown Skinning Knowledge
-			i(224658),	-- Void-Lit Leatherworking Notes \\ [DNT] Renown Leatherworking Knowledge \\ [DNT] Renown Leatherworking Knowldge
-			i(224659),	-- Secret-Woven Silk
-			i(224661),	-- Gem-Studded Signet
-			i(224662),	-- Gem-Studded Ring
-			i(224682),	-- Chitinoid Chainmail
-			i(224683),	-- Chitinoid Striders
-			i(224684),	-- Chitinoid Grips
-			i(224685),	-- Chitinoid Coif
-			i(224686),	-- Chitinoid Greaves
-			i(224687),	-- Chitinoid Shoulderguards
-			i(224688),	-- Chitinoid Belt
-			i(224689),	-- Chitinoid Bracers
-			i(224698),	-- Ancient Forged Shank
-			i(224699),	-- Ancient Forged Ritual Knife
-			i(224700),	-- Ancient Forged Cudgel
-			i(224701),	-- Ancient Forged Hammer
-			i(224702),	-- Ancient Forged Blade
-			i(224703),	-- Ancient Forged Sword
-			i(224704),	-- Ancient Forged Slugthrower
-			i(224705),	-- Ancient Forged Mace
-			i(224706),	-- Ancient Forged Warhammer
-			i(224708),	-- Ancient Forged Polearm
-			i(224709),	-- Ancient Forged Staff
-			i(224710),	-- Ancient Forged Spellstaff
-			i(224711),	-- Ancient Forged Curio
-			i(224712),	-- Ancient Forged Shield
-			i(224713),	-- Ancient Forged Glaive
-			i(224642),	-- Firelight Ruby
-			i(224650),	-- Wax Sealed Pouch
-			i(224716),	-- [PH] Skewered Slum Shark
-			i(224717),	-- Ensemble: Cerulean Dredger \\ [PH] Ensemble: Cerulean Dredger
-			i(224718),	-- [PH] Surface Tipper's Toes
-			i(224719),	-- [PH] Evasive Angler's Treads
-			i(224720),	-- [PH] Keen Angler's Eye
-			i(224728),	-- Rollin' Barrel \\ [PH] Rollin' Barrel
-			i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
-			i(224730),	-- [PH] Derby Dashers
-			i(224762),	-- Delver's Waterskin
-			i(224764),	-- Mosswool Thread
-			i(224767),	-- Giant Candle Parts
-			i(224768),	-- Airship: Wing-Mounted Propeller
-			i(224769),	-- Airship: Rotor Blades
-			i(224770),	-- Airship: Front-Mounted Propeller
-			i(224771),	-- Airship: Empennage
-			i(224773),	-- Knicknack's Red Candle
-			i(224774),	-- Knicknack's Potion Bottle
-			i(224775),	-- Knicknack's Definitely Rubies
-			i(224777),	-- Sureki Shadecaster
-			i(224778),	-- Knicknack's Enbiggener
-			i(224779),	-- Alhainr's Skull
-			i(224782),	-- Razor Talon
-			i(224786),	-- Skeleton King Outfit
-			i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
-			i(224792),	-- Sanguine Aristocrat Outfit
-			i(224807),	-- Algari Skinning Notes
-			i(224809),	-- Earthen Plumber's Pipe
-			i(224810),	-- Woodworm Elixir
-			i(224814),	-- Adventurer's Warbound Boots
-			i(224822),	-- Scour Through Scrap
-			i(224831),	-- Cube of Infinite Inventions (PTR Only)
-			i(224835),	-- Deepgrove Roots
-			i(224839),	-- Adventurer's Warbound Wrists \\ Warbound Adventurer's Wrists
-			i(224840),	-- Adventurer's Warbound Waist
-			i(224841),	-- Adventurer's Warbound Shoulders
-			i(224842),	-- Adventurer's Warbound Legs
-			i(224843),	-- Adventurer's Warbound Headpiece
-			i(224844),	-- Adventurer's Warbound Gloves
-			i(224845),	-- Adventurer's Warbound Chestpiece
-			i(223081),	-- Design: Sifted Cave Sand \\ Design: Inscription Finishing Reagent (DNT)
-			i(224861),	-- Dornogal Crown
-			i(224862),	-- Dornogal Mantle
-			i(224863),	-- Dornogal Cheststraps
-			i(224864),	-- Dornogal Girdle
-			i(224865),	-- Dornogal Legcoat
-			i(224866),	-- Dornogal Sabatons
-			i(224867),	-- Dornogal Cuffs
-			i(224868),	-- Dornogal Gauntlets
-			i(224869),	-- Earthen Drape
-			i(224876),	-- Freywold Crown
-			i(224877),	-- Freywold Mantle
-			i(224878),	-- Freywold Cheststraps
-			i(224879),	-- Freywold Girdle
-			i(224880),	-- Freywold Legcoat
-			i(224881),	-- Freywold Sabatons
-			i(224882),	-- Freywold Cuffs
-			i(224883),	-- Freywold Gauntlets
-			i(224884),	-- Gundargaz Crown
-			i(224885),	-- Gundargaz Mantle
-			i(224886),	-- Gundargaz Cheststraps
-			i(224887),	-- Gundargaz Girdle
-			i(224888),	-- Gundargaz Legcoat
-			i(224889),	-- Gundargaz Sabatons
-			i(224890),	-- Gundargaz Cuffs
-			i(224891),	-- Gundargaz Gauntlets
-			i(224913),	-- Radiant Fuel Cache
-			i(224941),	-- Radiant Fuel Cache
-			i(224960),	-- Airship: Lantern Wing
-			i(224979),	-- Airship: Zeppelin
-			i(224980),	-- Airship: Front-Mounted Lantern
-			i(224981),	-- Airship: Brown Paint \\ Airship: Brown
-			i(224982),	-- Airship: Exhaust \\ Airship: Multi-Exhaust
-			i(225065),	-- Torchbearer's Haversack
-			i(225066),	-- Trail Blazer's Haversack
-			i(225067),	-- Shadowlit Haversack
-			i(225123),	-- Companion Experience
-			i(225180),	-- Stained and Tattered Page
-			i(225202),	-- Pilfer Through Parts
-			i(225203),	-- Beledar- The Emperor's Vision \\ Beledar
-			i(225204),	-- Shadow Curfew Guidelines \\ Rules of Survival
-			i(225205),	-- Shadow Curfew Journal \\ Shadow
-			i(225206),	-- Light's Gambit Playbook
-			i(225208),	-- From the Depths They Come \\ Notebook of Kobyss Movements
-			i(225209),	-- Sacred Flame Prayers
-			i(225210),	-- Priory Theses
-			i(225211),	-- Airship Operations Manual
-			i(225212),	-- The Big Book of Arathi Idioms \\ Fungal Growths
-			i(225213),	-- Tenir
-			i(225214),	-- List of Activities
-			i(225215),	-- The Song of Renilash \\ The Book
-			i(225217),	-- 500 Dishes Using Cave Fish and Mushrooms
-			i(225220),	-- Umbral Bone Needle
-			i(225221),	-- Primalweave Spindle
-			i(225222),	-- Studded Leather Band \\ Preserved Animal Parts
-			i(225223),	-- Sturdy Nerubian Carapace \\ Molted Dragon Scales
-			i(225224),	-- Ancient Gem Fragments
-			i(225225),	-- Chipped Tyrstone
-			i(225226),	-- Phoenix Feather Quill
-			i(225227),	-- Iskaaran Trading Ledger
-			i(225228),	-- Eroded Titan Gizmo
-			i(225229),	-- Watcher Power Core
-			i(225230),	-- Prismatic Focusing Shard
-			i(225231),	-- Primal Dust
-			i(225232),	-- Valdrakken Weapon Chain
-			i(225233),	-- Draconium Blade Sharpener
-			i(225234),	-- Experimental Substance
-			i(225235),	-- Reawakened Catalyst
-			i(225239),	-- Overflowing Council of Dornogal Trove
-			i(225240),	-- PH_1
-			i(225241),	-- Refurbished Tinker: Alarm-O-Turret
-			i(225242),	-- Refurbished Tinker: Plane Displacer
-			i(225243),	-- Refurbished Tinker: Supercollide-O-Tron
-			i(225244),	-- Refurbished Tinker: Shadowflame Rockets
-			i(225245),	-- Overflowing Trove of the Deeps
-			i(225246),	-- Overflowing Hallowfall Trove
-			i(225247),	-- Overflowing Severed Threads Trove
-			i(225251),	-- Disassemble Invention
-			i(225336),	-- A Lost Shoe
-			i(225338),	-- Glyph of Jab
-			i(225339),	-- Chicken Eggs
-			i(225341),	-- Incriminating Dagger
-			i(225342),	-- Incriminating Script
-			i(225343),	-- Incriminating Journal Entry
-			i(225344),	-- Incriminating Evidence
+			n(SPECIAL, {	-- Weird Sets?
+				-- These is something special...
+				-- 4 Sets Hidden Stars, Stygian Sea, Myconic, Waxweave?
+				i(219151),	-- Handguards of Hidden Stars
+				i(219152),	-- Charmbelt of Hidden Stars
+				i(219153),	-- Pauldrons of Hidden Stars
+				i(219154),	-- Legplates of Hidden Stars
+				i(219155),	-- Visage of Hidden Stars
+				i(219156),	-- Fists of Hidden Stars
+				i(219157),	-- Sollerets of Hidden Stars
+				i(219158),	-- Raiment of Hidden Stars
+				i(219159),	-- Wrist Bindings of the Stygian Sea
+				i(219160),	-- Sash of the Stygian Sea
+				i(219161),	-- Spaulders of the Stygian Sea
+				i(219162),	-- Poleyns of the Stygian Sea
+				i(219163),	-- Bascinet of the Stygian Sea
+				i(219164),	-- Grasps of the Stygian Sea
+				i(219165),	-- Treads of the Stygian Sea
+				i(219166),	-- Hauberk of the Stygian Sea
+				i(219167),	-- Myconic Wristbands
+				i(219168),	-- Myconic Strap
+				i(219169),	-- Myconic Shoulderstrap
+				i(219170),	-- Myconic Chausses
+				i(219171),	-- Myconic Hood
+				i(219172),	-- Myconic Clutches
+				i(219173),	-- Myconic Waders
+				i(219174),	-- Myconic Frock
+				i(219175),	-- Unkindled Waxweave Clasps
+				i(219176),	-- Unkindled Waxweave Belt
+				i(219177),	-- Unkindled Waxweave Shoulderpads
+				i(219178),	-- Unkindled Waxweave Buskins
+				i(219179),	-- Unkindled Waxweave Veil
+				i(219180),	-- Unkindled Waxweave Mitts
+				i(219181),	-- Unkindled Waxweave Slippers
+				i(219182),	-- Unkindled Waxweave Garb
+				i(219183),	-- Amice of Hidden Stars
+				i(219184),	-- Enkindled Locket
+				i(219185),	-- Serape of the Stygian Sea
+				i(219186),	-- Myconic Wrap
+				i(219187),	-- Bone-Carved Circlet
+				i(219188),	-- Dark Abyss Hoop
+				i(219189),	-- Fuzzy Molding Halo
+				i(219190),	-- Unkindled Waxweave Mozzetta
+				i(219199),	-- Radiant Steelglaives
+				i(219200),	-- Unscathed Rampart
+				i(219201),	-- Vessel of Sacred Flame
+				i(219202),	-- Lamplighter's Mercy
+				i(219203),	-- Arathi Holy Standard
+				i(219204),	-- Imperial Flarebolt
+				i(219205),	-- Shooting Starquebus
+				i(219206),	-- Hand of Piety
+				i(219207),	-- Flame-Bearing Crozier
+				i(219208),	-- Pyretic Star
+				i(219209),	-- Worshipper's Poniard
+				i(219210),	-- Sanctifier's Startierce
+				i(219217),	-- Gold-Thread Choker
+				i(219221),	-- Ceremonial Song Ring
+			}),
+			filter(HEIRLOOMS_F, {
+				i(219325),	-- Band of Radiant Echoes
+			}),
+			race(EARTHEN_ALLIANCE, {
+				-- My Guess?? Earthen Starting Gear?
+				i(219393),	-- Earthen Shoulders
+				i(219394),	-- Earthen Trousers
+				i(219395),	-- Earthen Grips
+				i(219396),	-- Earthen Vest
+				i(219397),	-- Earthen Boots
+				i(219398),	-- Earthen Chain
+				i(219407),	-- Earthen Chestpiece
+				i(219408),	-- Earthen Striders
+				i(219409),	-- Earthen Handguards
+				i(219410),	-- Earthen Coif
+				i(219411),	-- Earthen Greaves
+				i(219412),	-- Earthen Belt
+				i(219416),	-- Earthen Helm
+				i(219417),	-- Earthen Breastplate
+				i(219418),	-- Earthen Sabatons
+				i(219419),	-- Earthen Gauntlets
+				i(219420),	-- Earthen Legguards
+				i(219421),	-- Earthen Mantle
+				i(219422),	-- Earthen Girdle
+				i(219423),	-- Earthen Vestment
+				i(219424),	-- Earthen Sandals
+				i(219425),	-- Earthen Handbraces
+				i(219426),	-- Earthen Hood
+				i(219427),	-- Earthen Kilt
+				i(219428),	-- Earthen Waistguard
+				i(219430),	-- Earthen Collar
+				i(219431),	-- Earthen Slippers
+				i(219432),	-- Earthen Gloves
+				i(219433),	-- Earthen Waistcoat
+				i(219434),	-- Earthen Toolbelt
+				i(219435),	-- Earthen Cogwheel
+				i(219436),	-- Earthen Chestguard
+				i(219437),	-- Earthen Footguards
+				i(219438),	-- Earthen Handwraps
+				i(219439),	-- Earthen Mining Hat
+				i(219440),	-- Earthen Leggings
+				i(219441),	-- Earthen Cord
+				i(219455),	-- Earthen Traveler's Shield
+				i(219458),	-- Earthen Traveler's Dagger
+				i(219460),	-- Earthen Traveler's Handaxe
+				i(219464),	-- Earthen Traveler's Boomstick
+				i(219465),	-- Earthen Traveler's Crossbow
+				i(219467),	-- Earthen Traveler's Fist \\ Earthen Traveler's Fist Weapon
+				i(222990),	-- Earthen Spire
+				i(222992),	-- Earthen Handaxe \\ Earthen Gavel
+				i(222993),	-- Earthen Shiv
+				i(222994),	-- Earthen Staff
+				i(222995),	-- Earthen Bulwark
+				i(222998),	-- Earthen Blade \\ Earthen Handaxe
+				i(222999),	-- Earthen Cleaver
+				i(223000),	-- Earthen Blunderbuss
+				i(223001),	-- Earthen Shillelagh \\ Earthen Pummel
+				-- Earthen stuff again? Maybe erm.. Heritage?
+				i(224195),	-- Earthen Shoulders
+				i(224196),	-- Earthen Trousers
+				i(224197),	-- Earthen Grips
+				i(224198),	-- Earthen Vest
+				i(224199),	-- Earthen Boots
+				i(224200),	-- Earthen Chain
+				i(224201),	-- Earthen Chestpiece
+				i(224202),	-- Earthen Striders
+				i(224203),	-- Earthen Handguards
+				i(224204),	-- Earthen Coif
+				i(224205),	-- Earthen Greaves
+				i(224206),	-- Earthen Belt
+				i(224207),	-- Earthen Helm
+				i(224208),	-- Earthen Breastplate
+				i(224209),	-- Earthen Sabatons
+				i(224210),	-- Earthen Gauntlets
+				i(224211),	-- Earthen Legguards
+				i(224212),	-- Earthen Mantle
+				i(224213),	-- Earthen Girdle
+				i(224214),	-- Earthen Vestment
+				i(224215),	-- Earthen Sandals
+				i(224216),	-- Earthen Handbraces
+				i(224217),	-- Earthen Hood
+				i(224218),	-- Earthen Kilt
+				i(224219),	-- Earthen Waistguard
+				i(224220),	-- Earthen Collar
+				i(224221),	-- Earthen Slippers
+				i(224222),	-- Earthen Gloves
+				i(224223),	-- Earthen Waistcoat
+				i(224224),	-- Earthen Toolbelt
+				i(224225),	-- Earthen Cogwheel
+				i(224226),	-- Earthen Chestguard
+				i(224227),	-- Earthen Footguards
+				i(224228),	-- Earthen Handwraps
+				i(224229),	-- Earthen Mining Hat
+				i(224230),	-- Earthen Leggings
+				i(224231),	-- Earthen Cord
+				i(224241),	-- Earthen Spire
+				i(224242),	-- Earthen Handaxe
+				i(224243),	-- Earthen Shiv
+				i(224244),	-- Earthen Staff
+				i(224245),	-- Earthen Bulwark
+				i(224246),	-- Earthen Blade
+				i(224247),	-- Earthen Cleaver
+				i(224248),	-- Earthen Blunderbuss
+				i(224249),	-- Earthen Shillelagh
+				i(224861),	-- Dornogal Crown
+				i(224862),	-- Dornogal Mantle
+				i(224863),	-- Dornogal Cheststraps
+				i(224864),	-- Dornogal Girdle
+				i(224865),	-- Dornogal Legcoat
+				i(224866),	-- Dornogal Sabatons
+				i(224867),	-- Dornogal Cuffs
+				i(224868),	-- Dornogal Gauntlets
+				i(224869),	-- Earthen Drape
+				i(224876),	-- Freywold Crown
+				i(224877),	-- Freywold Mantle
+				i(224878),	-- Freywold Cheststraps
+				i(224879),	-- Freywold Girdle
+				i(224880),	-- Freywold Legcoat
+				i(224881),	-- Freywold Sabatons
+				i(224882),	-- Freywold Cuffs
+				i(224883),	-- Freywold Gauntlets
+				i(224884),	-- Gundargaz Crown
+				i(224885),	-- Gundargaz Mantle
+				i(224886),	-- Gundargaz Cheststraps
+				i(224887),	-- Gundargaz Girdle
+				i(224888),	-- Gundargaz Legcoat
+				i(224889),	-- Gundargaz Sabatons
+				i(224890),	-- Gundargaz Cuffs
+				i(224891),	-- Gundargaz Gauntlets
+			}),
+			n(RARES, {
+				i(221033),	-- Hyperactive Stormclaw
+				i(221066),	-- Template - Accessory - Finger
+				i(221093),	-- Deeply Corrupted Coil
+				i(221204),	-- Spore Giant's Stompers
+				i(221205),	-- Vest of the River
+				i(221208),	-- Unseen Cutthroat's Tunic \\ Fel Assassin Tunic
+				i(221209),	-- Flame Trader's Gloves
+				i(221210),	-- Grips of the Earth
+				i(221211),	-- Grasp of the Shallows
+				i(221214),	-- Chitin Chain Headpiece
+				i(221215),	-- Taskmaster's Mining Cap
+				i(221216),	-- Bruin Strength Legplates
+				i(221218),	-- Reinforced Construct's Greaves
+				i(221219),	-- Silkwing Trousers
+				i(221220),	-- Basilisk Scale Pauldrons
+				i(221222),	-- Water-Imbued Spaulders
+				i(221223),	-- Bog Beast Mantle
+				i(221224),	-- Bouldershell Waistguard
+				i(221227),	-- Monstrous Fungal Cord
+				i(221228),	-- Infested Fungal Wristwraps
+				i(221229),	-- Perchfather's Cuffs
+				i(221230),	-- Storm Bindings
+				i(221231),	-- Steam-Powered Wristwatch
+				i(221232),	-- Polished Goblin Bling
+				i(221233),	-- Deephunter's Bloody Hook
+				i(221234),	-- Tidal Pendant
+				i(221235),	-- Dark Agent's Cloak \\ Fel Soldier's Cloak
+				i(221236),	-- Stormbreaker's Shield
+				i(221237),	-- Lamentable Vagrant's Lantern
+				i(221238),	-- Pillar of Constructs
+				i(221239),	-- Spider Blasting Blunderbuss
+				i(221240),	-- Nerubian Stagshell Gouger
+				i(221241),	-- Priestly Agent's Knife
+				i(221242),	-- Forgeborn Helm
+				i(221244),	-- Flamekeeper's Footpads
+				i(221246),	-- Fierce Beast Staff
+				i(221248),	-- Deep Terror Carver
+				i(221250),	-- Creeping Lasher Machete
+				i(221251),	-- Bestial Underground Cleaver
+				i(221252),	-- Nerubian Slayer's Claymore
+				i(221253),	-- Cultivator's Plant Puncher
+				i(221254),	-- Earthshatter Lance
+				i(221263),	-- Nerubian Venom-Tipped Dart
+				i(221264),	-- Fungarian Mystic's Cluster
+				i(221265),	-- Charm of the Underground Beast
+				i(221505),	-- [DNT] Rare Cloth - Robe
+				i(221506),	-- Arachnid's Web-Sown Guise
+				i(221507),	-- Earth Golem's Wrap
+				i(221508),	-- Pelt of Beledar's Strength
+				i(223005),	-- String of Fungal Fruits
+				i(223352),	-- Waterskipper's Legplates
+				i(223354),	-- Waterskipper's Chain Leggings
+				i(223361),	-- Flying Kobold's Seatbelt
+				i(223362),	-- Flying Kobold's Seatbelt
+				i(223363),	-- Flying Kobold's Seatbelt
+				i(223369),	-- Webspeaker's Spiritual Cloak
+				i(223371),	-- Slippers of Shallow Waters
+				i(223372),	-- Sabatons of Shallow Waters
+				i(223374),	-- Nerubian Weaver's Gown
+				i(223380),	-- Nerubian Weaver's Chainmail
+				i(223382),	-- Murkshade Grips
+				i(223383),	-- Murkshade Handguards
+				i(223384),	-- Murkshade Gloves
+				i(223385),	-- Murkshade Gauntlets
+				i(223386),	-- Vilewing Crown
+				i(223387),	-- Vilewing Chain Helm
+				i(223390),	-- Leggings of Dark Hunger
+				i(223391),	-- Legguards of Dark Hunger
+				i(223395),	-- Deepfiend Shoulderpads
+				i(223396),	-- Deepfiend Shoulder Shells
+				i(223398),	-- Abyssal Hunter's Sash
+				i(223399),	-- Abyssal Hunter's Chain
+				i(223406),	-- Slippers of the Nerubian Twins
+				i(223407),	-- Sabatons of the Nerubian Twins
+				i(223408),	-- Treads of the Nerubian Twins
+				i(223915),	-- Nerubian Orator's Stiletto
+				i(223916),	-- Nerubian Cutthroat's Reach
+				i(223917),	-- Nerubian Covert's Cloak
+				i(223918),	-- Specter Stalker's Shotgun
+				i(223919),	-- Abducted Lawman's Gavel
+				i(223920),	-- Slime Deflecting Stopper
+				i(223921),	-- Ever-Oozing Signet
+				i(223922),	-- Cinder Pollen Cloak
+				i(223923),	-- Gilded Cryptlord's Sabatons
+				i(223924),	-- Chitin-Inscribed Vest
+				i(223925),	-- Blood Hungerer's Chestplate
+				i(223926),	-- Earthgorger's Chain Bib
+				i(223927),	-- Vinewrapped Leather Tunic
+				i(223928),	-- Crop Cutter's Gauntlets
+				i(223929),	-- Honey Sweetener's Squeezers
+				i(223930),	-- Monstrous Chain Pincers
+				i(223931),	-- Black Blood Cowl
+				i(223932),	-- Scarab's Carapace Cap
+				i(223933),	-- Slime Goliath's Cap
+				i(223934),	-- Makrura's Foreboding Legplates
+				i(223935),	-- Cabbage Harvester's Pantaloons
+				i(223936),	-- Shadow Bog Trousers
+				i(223937),	-- Honey Deliverer's Leggings
+				i(223938),	-- Marsh Hopper's Spaulders
+				i(223939),	-- Esteemed Nerubian's Mantle
+				i(223940),	-- Deranged Fungarian's Epaulets
+				i(223941),	-- Nerubian Cultivator's Girdle
+				i(223943),	-- Cord of the Earthbreaker
+				i(223944),	-- [PH] Infested Fungal Wristwraps
+				i(223945),	-- [PH] Perchfather's Cuffs
+				i(223946),	-- [PH] Storm Bindings
+				i(223947),	-- [PH] Steam-Powered Wristwatch
+				i(223949),	-- Dark Depth Stompers
+				i(223950),	-- Corruption Sifter's Treads
+				i(224467),	-- Forgotten Axe
+			}),
+			n(REWARDS, {
+				i(223296),	-- Battleplate of Dimming Fluorescence
+				i(223297),	-- Vest of Fading Luminescence
+				i(223298),	-- Chainmail of Depleting Brilliance
+				i(223299),	-- Tunic of Irradiating Imprisonment
+				i(223308),	-- Bracers of Depleting Brilliance
+				i(223309),	-- Bindings of Irradiating Imprisonment
+				i(223310),	-- Wristwraps of Fading Luminescence
+				i(223311),	-- Armguards of Dimming Fluorescence
+				i(223424),	-- [PH] 11.0 - Cord
+				i(223427),	-- Lightning-Scarred Cowl
+				i(223428),	-- Stormrider's Cuffs
+				i(223431),	-- The Fallen Queen's Band
+				i(223432),	-- Commemorative Light's Gambit Championship Signet \\ [PH] 11.0 - Signet
+				i(223436),	-- Light Boots of the Ringing Deeps
+				i(223437),	-- Handwraps of the Weaver
+				i(223438),	-- Algari Warden's Vestment
+				i(223439),	-- [PH] 11.0 - Leggings
+				i(223440),	-- Saboteur's Shoulderpads
+				i(223441),	-- [PH] 11.0 - Waders
+				i(223443),	-- Algari Warden's Hood
+				i(223444),	-- [PH] 11.0 - Breeches
+				i(223446),	-- Stormrider's Bindings
+				i(223450),	-- [PH] 11.0 - Chainmail
+				i(223451),	-- Saboteur's Striders
+				i(223452),	-- Grips of the Ringing Deeps
+				i(223453),	-- Lightning-Scarred Coif
+				i(223454),	-- Algari Warden's Greaves
+				i(223455),	-- Shoulderguards of the Weaver
+				i(223456),	-- [PH] 11.0 - Cinch
+				i(223457),	-- Stormrider's Bracers
+				i(223458),	-- [PH] 11.0 - Belt
+				i(223461),	-- Algari Warden's Helm
+				i(223462),	-- [PH] 11.0 - Breastplate
+				i(223463),	-- Sabatons of the Ringing Deeps
+				i(223464),	-- [PH] 11.0 - Gauntlets
+				i(223465),	-- Lightning-Scarred Legguards
+				i(223466),	-- Mantle of the Weaver
+				i(223467),	-- Saboteur's Girdle
+				i(223468),	-- Stormrider's Armplates
+				i(223472),	-- Drape of the Lamplighter
+				i(220118),	-- Arathi Demolition Charge
+				i(223547),	-- Algari Heavy Staff
+				i(223548),	-- Algari Rifle
+				i(223569),	-- Algari Spellcleaver
+				i(223584),	-- Algari Scepter
+				i(223585),	-- [PH] Algari Bladefist
+				i(223588),	-- Algari Fighting Knife
+				i(223627),	-- Scout's Dog Tags
+				i(223628),	-- Marksman's Dog Tags
+				i(223629),	-- Marksman's War-Chain
+				i(223630),	-- Scout's War-Chain
+				i(223631),	-- Adventurer's Lucky Ring
+				i(223632),	-- Signet of Lion's Favor
+				i(223633),	-- Signet of Wolf's Favor
+				i(223871),	-- Algari Heavy Axe
+				i(223872),	-- Algari Mace
+				i(223873),	-- Algari Shield
+				i(223874),	-- Algari Dagger
+				i(223876),	-- Algari Warglaive
+				i(223877),	-- Algari Hatchet
+				i(224453),	-- City Guard's Coronet \\ Dalaran Cowl
+				i(224454),	-- City Guard's Mask \\ Dalaran Hood
+				i(224455),	-- City Guard's Chainmail \\ Dalaran Chestguard
+				i(224456),	-- City Guard's Greaves \\ Dalaran Greaves
+			}),
+			n(DRAKEWATCHER_MANUSCRIPTS, {
+				i(223510),	-- Airship Schematic: Template
+				i(224768),	-- Airship: Wing-Mounted Propeller
+				i(224769),	-- Airship: Rotor Blades
+				i(224770),	-- Airship: Front-Mounted Propeller
+				i(224771),	-- Airship: Empennage
+				i(224960),	-- Airship: Lantern Wing
+				i(224979),	-- Airship: Zeppelin
+				i(224980),	-- Airship: Front-Mounted Lantern
+				i(224981),	-- Airship: Brown Paint \\ Airship: Brown
+				i(224982),	-- Airship: Exhaust \\ Airship: Multi-Exhaus
+				i(225542),	-- Delver's Dirigible Schematic: Void
+			}),
+			filter(MISC, {
+				i(224592),	-- Spinner's Hoop \\ [PH] The Fallen Queen's Band
+				i(224593),	-- Spinner's Circlet \\ [PH] 11.0 - Signet
+				i(224594),	-- Spinner's Amulet \\ [PH] Element-Attuned Pendant
+				i(224624),	-- Spinner's Shawl \\ [PH] Drape of the Lamplighter
+				i(224628),	-- Arathi Claymore \\ [PH] Algari Greatsword
+				i(224629),	-- Arathi Hatchet \\ [PH] Algari Short Axe
+				i(224632),	-- Underscout's Kukri \\ [PH] Algari Fighting Knife
+				i(224634),	-- Arathi Mace \\ [PH] Algari Mace
+				i(224635),	-- Expeditionary Bulwark \\ [PH] Algari Shield
+				i(224636),	-- Deep-Dweller's Dirk \\ [PH] Algari Dagger
+				i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
+				i(224655),	-- Void-Lit Jewelcrafting Notes \\ [DNT] Renown Jewelcrafting Knowledge
+				i(224656),	-- Void-Lit Herbalism Notes \\ [DNT] Renown Herbalism Knowledge
+				i(224657),	-- Void-Lit Skinning Notes \\ [DNT] Renown Skinning Knowledge
+				i(224658),	-- Void-Lit Leatherworking Notes \\ [DNT] Renown Leatherworking Knowledge \\ [DNT] Renown Leatherworking Knowldge
+				-- Snuffling
+				i(224642),	-- Firelight Ruby
+				i(224650),	-- Wax Sealed Pouch
+			}),
+			n(ACHIEVEMENTS, {
+				i(225203),	-- Beledar- The Emperor's Vision \\ Beledar
+				i(225204),	-- Shadow Curfew Guidelines \\ Rules of Survival
+				i(225205),	-- Shadow Curfew Journal \\ Shadow
+				i(225206),	-- Light's Gambit Playbook
+				i(225208),	-- From the Depths They Come \\ Notebook of Kobyss Movements
+				i(225209),	-- Sacred Flame Prayers
+				i(225210),	-- Priory Theses
+				i(225211),	-- Airship Operations Manual
+				i(225212),	-- The Big Book of Arathi Idioms \\ Fungal Growths
+				i(225213),	-- Tenir
+				i(225214),	-- List of Activities
+				i(225215),	-- The Song of Renilash \\ The Book
+				i(225217),	-- 500 Dishes Using Cave Fish and Mushrooms
+			}),
+			-- Toy
 			i(225347),	-- Web-Vandal's Spinning Wheel
-			i(225354),	-- Kaheti Confiscated Dirk
-			i(225356),	-- Kaheti Confiscated Crossbow
-			i(225359),	-- Kaheti Confiscated Mallet
-			i(225364),	-- Kaheti Confiscated Blade
-			i(225365),	-- PH_3
-			i(225370),	-- Algari Competitor's Rifle \\ Vicious Competitor's Rifle
-			i(225379),	-- Torchbearer's Chainmail
-			i(225380),	-- Torchbearer's Cinch
-			i(225381),	-- Torchbearer's Striders
-			i(225382),	-- Torchbearer's Grips
-			i(225383),	-- Torchbearer's Coif
-			i(225384),	-- Torchbearer's Greaves
-			i(225385),	-- Torchbearer's Shoulderguards
-			i(225386),	-- Torchbearer's Bracers
-			i(225387),	-- Cave Topographer's Vestment
-			i(225388),	-- Cave Topographer's Sandals
-			i(225389),	-- Cave Topographer's Handwraps
-			i(225390),	-- Cave Topographer's Cowl
-			i(225391),	-- Cave Topographer's Leggings
-			i(225392),	-- Cave Topographer's Shoulders
-			i(225393),	-- Cave Topographer's Cord
-			i(225394),	-- Cave Topographer's Cuffs
-			i(225395),	-- Treasure-Seeker's Vest
-			i(225396),	-- Treasure-Seeker's Boots
-			i(225397),	-- Treasure-Seeker's Grips
-			i(225398),	-- Treasure-Seeker's Helm
-			i(225399),	-- Treasure-Seeker's Breeches
-			i(225400),	-- Treasure-Seeker's Epaulets
-			i(225401),	-- Treasure-Seeker's Sash
-			i(225402),	-- Treasure-Seeker's Bindings
-			i(225403),	-- Secret-Dredger's Breastplate
-			i(225404),	-- Secret-Dredger's Sabatons
-			i(225405),	-- Secret-Dredger's Gauntlets
-			i(225406),	-- Secret-Dredger's Helm
-			i(225407),	-- Secret-Dredger's Legguards
-			i(225408),	-- Secret-Dredger's Mantle
-			i(225409),	-- Secret-Dredger's Girdle
-			i(225410),	-- Secret-Dredger's Armplates
-			i(225411),	-- Secret-Dredger's Cloak
-			i(225412),	-- Torchbearer's Greatcloak
-			i(225413),	-- Treasure-Seeker's Shawl
-			i(225414),	-- Cave Topographer's Drape
-			i(225416),	-- Green Hills of Stranglethorn - Page 26
-			i(225417),	-- Green Hills of Stranglethorn - Page 6
-			i(225418),	-- Green Hills of Stranglethorn - Page 8
-			i(225419),	-- Green Hills of Stranglethorn - Page 27
-			i(225420),	-- Green Hills of Stranglethorn - Page 11
-			i(225421),	-- Green Hills of Stranglethorn - Page 16
-			i(225422),	-- Green Hills of Stranglethorn - Page 10
-			i(225423),	-- Green Hills of Stranglethorn - Page 4
-			i(225424),	-- Green Hills of Stranglethorn - Page 21
-			i(225425),	-- Green Hills of Stranglethorn - Page 18
-			i(225426),	-- Green Hills of Stranglethorn - Page 25
-			i(225427),	-- Green Hills of Stranglethorn - Page 20
-			i(225428),	-- Green Hills of Stranglethorn - Page 1
-			i(225429),	-- Green Hills of Stranglethorn - Page 24
-			i(225430),	-- Green Hills of Stranglethorn - Page 14
-			i(225431),	-- Design: Vicious Jeweler's Setting
-			i(225432),	-- Design: Vicious Bloodstone Signet
-			i(225433),	-- Design: Vicious Bloodstone Amulet
-			i(225467),	-- Schematic: Algari Competitor's Cloth Goggles \\ Schematic: Vicious Competitor's Cloth Goggles
-			i(225468),	-- Schematic: Algari Competitor's Leather Goggles \\ Schematic: Vicious Competitor's Leather Goggles
-			i(225469),	-- Schematic: Algari Competitor's Mail Goggles \\ Schematic: Vicious Competitor's Mail Goggles
-			i(225470),	-- Schematic: Algari Competitor's Plate Goggles \\ Schematic: Vicious Competitor's Plate Goggles
-			i(225471),	-- Schematic: Algari Competitor's Cloth Bracers \\ Schematic: Vicious Competitor's Cloth Bracers
-			i(225472),	-- Schematic: Algari Competitor's Leather Bracers \\ Schematic: Vicious Competitor's Leather Bracers
-			i(225473),	-- Schematic: Algari Competitor's Mail Bracers \\ Schematic: Vicious Competitor's Mail Bracers
-			i(225474),	-- Schematic: Algari Competitor's Plate Bracers \\ Schematic: Vicious Competitor's Plate Bracers
-			i(225482),	-- Schematic: Algari Competitor's Rifle \\ Schematic: Vicious Competitor's Rifle
-			i(225493),	-- Medal of Conquest
-			i(225495),	-- Brilliant Beacon
-			i(225496),	-- Unhinged Vault-Hatch
-			i(225497),	-- Torchlit Pickaxe
-			i(225498),	-- Umbral Artist's Chisel
-			i(225499),	-- Lapidarius Gemcutter
-			i(225500),	-- Bedrock Breaker
-			i(225501),	-- Pathfinder's Stonecarver
-			i(225502),	-- Mountain Shaper's Greataxe
-			i(225503),	-- Trailblazer's Hookshoot
-			i(225504),	-- Skypiercing Drillstaff
-			i(225505),	-- Luminous Lampspire
-			i(225506),	-- Mana-Lined Slab Slicer
-			i(225507),	-- Brilliant Beacon
-			i(225508),	-- Unhinged Vault-Hatch
-			i(225509),	-- [PH] Armor Vestment
-			i(225510),	-- [PH] Armor Sandals
-			i(225511),	-- [PH] Armor Handwraps
-			i(225512),	-- [PH] Armor Cowl
-			i(225514),	-- Webweave Belt
-			i(225515),	-- General's Pungent Wraps
-			i(225517),	-- [PH] Armor Grips
-			i(225518),	-- [PH] Armor Helm
-			i(225519),	-- [PH] Armor Breeches
-			i(225522),	-- [PH] Armor Chainmail
-			i(225523),	-- Smuggled Nerubian Boots
-			i(225524),	-- Rescued Aeroknight's Gloves
-			i(225525),	-- [PH] Armor Coif
-			i(225526),	-- General's Pungent Legguards
-			i(225527),	-- [PH] Armor Shoulderguards
-			i(225528),	-- [PH] Armor Cinch
-			i(225529),	-- Webweave Wristguards
-			i(225531),	-- [PH] Armor Breastplate
-			i(225532),	-- [PH] Armor Sabatons
-			i(225534),	-- [PH] Armor Legguards
-			i(225536),	-- [PH] Armor Girdle
-			i(225538),	-- General's Pungent Armor
-			i(225539),	-- [PH] Armor Epaulets
-			i(225540),	-- Rescued Aeroknight's Mantle
+
+
+
 			i(225541),	-- PH_4
 			i(225543),	-- Bloodied Idol
 			i(225553),	-- PH_5
@@ -3643,8 +3674,6 @@ root(ROOTS.Unsorted, {
 			i(219503),	-- Honorary Tinderbox
 			i(219783),	-- Arachnophobic Spelunker's Bow
 			i(219797),	-- Cured Terracotta Pummeler
-			i(220157),	-- Darkened Tinderbox
-			i(220158),	-- Empowered Tinderbox
 			i(223439),	-- Mereldar Scholar's Leggings
 			i(223444),	-- Arathi Defender's Breeches
 			i(223450),	-- Honored Soldier's Chainmail

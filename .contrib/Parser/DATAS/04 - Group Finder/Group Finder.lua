@@ -846,5 +846,10 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 			i(201325),	-- Draconic Augment Rune
 		}),
 	})),
+	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		i(224573, {	-- Crystal Satchel of Cooperation
+			i(224572),	-- Crystallized Augment Rune
+		}),
+	})),
 }));
 -- #endif
