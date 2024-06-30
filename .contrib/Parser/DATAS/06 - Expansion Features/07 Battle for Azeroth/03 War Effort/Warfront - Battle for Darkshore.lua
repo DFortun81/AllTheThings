@@ -1205,15 +1205,11 @@ root(ROOTS.ExpansionFeatures,
 												--	["classes"] = { MAGE, PRIEST, WARLOCK },
 													["description"] = "This might be only available as Cloth class.",
 												}),
-												i(166759, {	-- Darkwood Sentinel's Drape
-													["description"] = "This might be only available as Leather class.",
-												}),
+												i(166759),	-- Darkwood Sentinel's Drape
 												i(166760, {	-- Kaldorei Archer's Greatcloak
 													["description"] = "This might be only available as Mail class.",
 												}),
-												i(166761, {	-- Wardenguard's Drape
-													["description"] = "This might be only available as Plate class.",
-												}),
+												i(166761),	-- Wardenguard's Drape
 												i(166572),	-- Moonpriest's Visor
 												i(165435),	-- Moonpriest's Coronet
 												i(166558),	-- Moonpriest's Epaulets
