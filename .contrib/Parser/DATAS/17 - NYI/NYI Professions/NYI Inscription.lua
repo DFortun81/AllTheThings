@@ -261,12 +261,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(219556),	-- Darkmoon Sigil: Evolution
 					i(219557),	-- Darkmoon Sigil: Evolution
 					i(222124),	-- Darkmoon Sigil: Evolution
-					i(222561),	-- Darkmoon Sigil: Evolution
+					i(222561),	-- Darkmoon Sigil: Ascension
 					i(219558),	-- Darkmoon Sigil: Shine
 					i(219559),	-- Darkmoon Sigil: Shine
 					i(219560),	-- Darkmoon Sigil: Shine
 					i(222125),	-- Darkmoon Sigil: Shine
-					i(222562),	-- Darkmoon Sigil: Shine
+					i(222562),	-- Darkmoon Sigil: Radiance
 					i(219561),	-- Darkmoon Sigil: Symbiosis
 					i(219562),	-- Darkmoon Sigil: Symbiosis
 					i(219563),	-- Darkmoon Sigil: Symbiosis

@@ -757,7 +757,7 @@ TWW_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		r(445384),	-- Glimmering Haste
 		r(445381),	-- Glimmering Mastery
 		r(445340),	-- Glimmering Versatility
-		r(445351),	-- Oathsworn Tenacity
+		r(445351),	-- Oathsworn's Tenacity
 		r(445392),	-- Whisper of Armored Avoidance
 		r(445374),	-- Whisper of Armored Leech
 		r(445376),	-- Whisper of Armored Speed

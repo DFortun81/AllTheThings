@@ -38,8 +38,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					r(430598),	-- Frontline Potion
 					r(430596),	-- Grotesque Vial
 					r(430617),	-- Phial of Bountiful Seasons
+					r(430614),	-- Phial of Concentrated Ingenuity
 					r(430616),	-- Phial of Enhanced Ambidextry
-					r(430614),	-- Phial of Focused Inspiration
 					r(430615),	-- Phial of Truesight
 					r(430600),	-- Potion of the Reborn Cheetah
 					r(430597),	-- Potion of Unwavering Focus
@@ -173,12 +173,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212314),	-- Phial of Bountiful Seasons+
 			i(212315),	-- Phial of Bountiful Seasons++
 			i(212316),	-- Phial of Bountiful Seasons+++
+			i(212305),	-- Phial of Concentrated Ingenuity+
+			i(212306),	-- Phial of Concentrated Ingenuity++
+			i(212307),	-- Phial of Concentrated Ingenuity+++
 			i(212311),	-- Phial of Enhanced Ambidextry+
 			i(212312),	-- Phial of Enhanced Ambidextry++
 			i(212313),	-- Phial of Enhanced Ambidextry+++
-			i(212305),	-- Phial of Focused Inspiration+
-			i(212306),	-- Phial of Focused Inspiration++
-			i(212307),	-- Phial of Focused Inspiration+++
 			i(212308),	-- Phial of Truesight+
 			i(212309),	-- Phial of Truesight++
 			i(212310),	-- Phial of Truesight+++
@@ -236,8 +236,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(QuestID, 430611);	-- Vicious Flask of Wrecking Ball
 			-- Phials
 			FirstCraft(81121, 430617);	-- Phial of Bountiful Seasons
+			FirstCraft(81118, 430614);	-- Phial of Concentrated Ingenuity
 			FirstCraft(81120, 430616);	-- Phial of Enhanced Ambidextry
-			FirstCraft(81118, 430614);	-- Phial of Focused Inspiration
 			FirstCraft(81119, 430615);	-- Phial of Truesight
 			-- Transmutations
 			FirstCraft(81145, 449938);	-- Gleaming Chaos
@@ -674,7 +674,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81051, 445379);	-- Council's Guile
 			FirstCraft(80995, 445322);	-- Council's Intellect
 			FirstCraft(81006, 445333);	-- Crystalline Radiance
-			FirstCraft(81024, 445351);	-- Oathsworn Tenacity
+			FirstCraft(81024, 445351);	-- Oathsworn's Tenacity
 			FirstCraft(80994, 445321);	-- Oathsworn's Strength
 			FirstCraft(81057, 445385);	-- Stonebound Artistry
 			FirstCraft(81026, 445353);	-- Stormrider's Agility
@@ -790,9 +790,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(224322),	-- Gleeful Glamour - Worgen+
 			i(224346),	-- Gleeful Glamour - Worgen++
 			i(224370),	-- Gleeful Glamour - Worgen+++
-			i(224323),	-- Gleeful Glamour - Zaldalari Troll+
-			i(224347),	-- Gleeful Glamour - Zaldalari Troll++
-			i(224371),	-- Gleeful Glamour - Zaldalari Troll+++
+			i(224323),	-- Gleeful Glamour - Zandalari Troll+
+			i(224347),	-- Gleeful Glamour - Zandalari Troll++
+			i(224371),	-- Gleeful Glamour - Zandalari Troll+++
 			i(223746),	-- Illusory Adornment: Crystal+
 			i(223745),	-- Illusory Adornment: Crystal++
 			i(223747),	-- Illusory Adornment: Crystal+++
@@ -862,9 +862,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(223757),	-- Enchant Weapon - Council's Guile+
 			i(223758),	-- Enchant Weapon - Council's Guile++
 			i(223759),	-- Enchant Weapon - Council's Guile+++
-			i(223766),	-- Enchant Weapon - Oathsworn Tenacity+
-			i(223767),	-- Enchant Weapon - Oathsworn Tenacity++
-			i(223768),	-- Enchant Weapon - Oathsworn Tenacity+++
+			i(223766),	-- Enchant Weapon - Oathsworn's Tenacity+
+			i(223767),	-- Enchant Weapon - Oathsworn's Tenacity++
+			i(223768),	-- Enchant Weapon - Oathsworn's Tenacity+++
 			i(223763),	-- Enchant Weapon - Stonebound Artistry+
 			i(223764),	-- Enchant Weapon - Stonebound Artistry++
 			i(223765),	-- Enchant Weapon - Stonebound Artistry+++
@@ -1120,9 +1120,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222606),	-- Contract: The Severed Threads+
 			i(222607),	-- Contract: The Severed Threads++
 			i(222608),	-- Contract: The Severed Threads+++
-			i(226022),	-- Darkmoon Sigil: Evolution+
-			i(226023),	-- Darkmoon Sigil: Evolution++
-			i(226024),	-- Darkmoon Sigil: Evolution+++
+			i(226022),	-- Darkmoon Sigil: Ascension+
+			i(226023),	-- Darkmoon Sigil: Ascension++
+			i(226024),	-- Darkmoon Sigil: Ascension+++
 			i(226025),	-- Darkmoon Sigil: Radiance+
 			i(226026),	-- Darkmoon Sigil: Radiance++
 			i(226027),	-- Darkmoon Sigil: Radiance+++
@@ -1158,15 +1158,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222610),	-- Shadow Ink++
 			i(222611),	-- Shadow Ink+++
 		}),
-		spell(444224, {	-- Transcribe: Evolution
-			i(222681),	-- Ace of Evolution
-			i(222682),	-- Two of Evolution
-			i(222683),	-- Three of Evolution
-			i(222684),	-- Four of Evolution
-			i(222685),	-- Five of Evolution
-			i(222686),	-- Six of Evolution
-			i(222687),	-- Seven of Evolution
-			i(222688),	-- Eight of Evolution
+		spell(444224, {	-- Transcribe: Ascension
+			i(222681),	-- Ace of Ascension
+			i(222682),	-- Two of Ascension
+			i(222683),	-- Three of Ascension
+			i(222684),	-- Four of Ascension
+			i(222685),	-- Five of Ascension
+			i(222686),	-- Six of Ascension
+			i(222687),	-- Seven of Ascension
+			i(222688),	-- Eight of Ascension
 		}),
 		spell(444227, {	-- Transcribe: Radiance
 			i(222663),	-- Ace of Radiance
@@ -1201,7 +1201,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		filter(TRINKET_F, {
 			i(219933),	-- Algari Competitor's Emblem
 			i(219932),	-- Algari Competitor's Insignia of Alacrity
-			i(222680),	-- Darkmoon Deck: Evolve
+			i(222680),	-- Darkmoon Deck: Ascend
 			i(219672),	-- Darkmoon Deck: Radiance
 			i(222653),	-- Darkmoon Deck: Symbiosis
 			i(222671),	-- Darkmoon Deck: Vivacity
@@ -1699,11 +1699,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222890),	-- Weavercloth Spellthread+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(222850),	-- Artisan's Alchemist's Robe
-			i(222851),	-- Artisan's Chef's Hat
-			i(222849),	-- Artisan's Enchanter's Hat
-			i(222848),	-- Artisan's Fishing Cap
-			i(222847),	-- Artisan's Gardening Hat
+			i(222850),	-- Artisan Alchemist's Robe
+			i(222851),	-- Artisan Chef's Hat
+			i(222849),	-- Artisan Enchanter's Hat
+			i(222848),	-- Artisan Fishing Cap
+			i(222847),	-- Artisan Gardening Hat
 			i(222852),	-- Artisan Tailor's Coat
 			i(222845),	-- Weavercloth Alchemist's Robe
 			i(222846),	-- Weavercloth Chef's Hat

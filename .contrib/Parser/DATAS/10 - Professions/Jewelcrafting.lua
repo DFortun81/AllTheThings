@@ -745,7 +745,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 43.4, 33.3, EMERALD_DREAM },
 				["questID"] = 78283,
 				["g"] = {
-					i(210201),	-- Handful of Pebbles
+					i(210201),	-- Handful of Tiny Pebbles
 				},
 			})),
 		}),

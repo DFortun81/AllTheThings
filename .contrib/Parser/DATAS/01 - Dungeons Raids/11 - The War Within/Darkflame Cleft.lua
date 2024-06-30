@@ -21,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221097),	-- Arcane Scuttle
 						i(219304),	-- Conductor's Wax Whistle
 						i(221098),	-- Mole Knight's Grimemail
-						i(221096),	-- Rail Rider's Bisecter
+						i(221096),	-- Rail Rider's Bisector
 						i(221099),	-- Wick's Golden Loop
 					},
 				}),

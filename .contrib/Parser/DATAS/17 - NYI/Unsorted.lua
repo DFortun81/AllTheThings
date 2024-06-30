@@ -316,7 +316,7 @@ root(ROOTS.Unsorted, {
 					i(222108),	-- Khaz Algar Milling
 					i(219599),	-- Fortuitous Essence
 					i(219632),	-- Scribe Water
-					i(222622),	-- Transcribe to Evolution \\ Extraction: Evolve
+					i(222622),	-- Transcribe to Ascension
 					i(222623),	-- Transcribe to Vivacity \\ Extraction: Vivacity
 					i(222624),	-- Transcribe to Symbiosis \\ Extraction: Symbiosis
 					i(222625),	-- Transcribe to Radiance \\ Extraction: Shine
@@ -461,10 +461,10 @@ root(ROOTS.Unsorted, {
 					i(215134),	-- Fractured Gemstone Locket
 					i(215135),	-- Ring of Earthen Craftsmanship
 					i(215136),	-- Amulet of Earthen Craftsmanship
-					i(215137),	-- Vicious Bloodstone Signet
+					i(215137),	-- Algari Competitor's Signet
 					i(215139),	-- Copy Copy Elemental Lariat
 					i(215143),	-- Copy Copy Elemental Lariat
-					i(215144),	-- Vicious Bloodstone Amulet
+					i(215144),	-- Algari Competitor's Amulet
 					i(215236),	-- Bloodstone
 					i(217113),	-- Cubic Blasphemia
 					i(217114),	-- Cubic Blasphemia
@@ -492,7 +492,7 @@ root(ROOTS.Unsorted, {
 					i(222416),	-- Shredded Weavercloth
 					i(224823),	-- Shredded Weavercloth
 					i(222348),	-- Unraveling
-					i(222788),	-- Unraveling
+					i(222788),	-- Khaz Algar Unraveling
 					--------
 					r(446975),	-- Artisan Tailor's Coat
 					i(224434),	-- Pattern: Dawnthread Lining (RECIPE!)
@@ -501,197 +501,7 @@ root(ROOTS.Unsorted, {
 				}),
 			}),
 			header(HEADERS.LFGDungeon, 1273, {
-				i(211979),	-- Warsculptor's Cloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Generic - Cloak
-				i(211980),	-- Warsculptor's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Wrist
-				i(211981),	-- Warsculptor's Buckle \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Waist
-				i(211982),	-- Warsculptor's Horned Spaulders \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Shoulder
-				i(211983),	-- Warsculptor's Cuisses \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Legs
-				i(211984),	-- Warsculptor's Tusks \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Head
-				i(211985),	-- Warsculptor's Crushers \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Hand
-				i(211986),	-- Warsculptor's Carved Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Feet
-				i(211987),	-- Warsculptor's Fur Plate \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Chest
-				i(211988),	-- Entombed Seraph's Greatcloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Generic - Cloak
-				i(211989),	-- Entombed Seraph's Shackles \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Wrist
-				i(211990),	-- Entombed Seraph's Waistguard \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Waist
-				i(211991),	-- Entombed Seraph's Chained Plumes \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Shoulder
-				i(211992),	-- Entombed Seraph's Greaves \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Legs
-				i(211993),	-- Entombed Seraph's Casque \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Head
-				i(211994),	-- Entombed Seraph's Castigation \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Hand
-				i(211995),	-- Entombed Seraph's Sabatons \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Feet
-				i(211996),	-- Entombed Seraph's Casket \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Chest
-				i(211997),	-- Exhumed Centurion's Drape \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Generic - Cloak
-				i(211998),	-- Exhumed Centurion's Manacles \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Wrist
-				i(211999),	-- Exhumed Centurion's Baltea \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Waist
-				i(212000),	-- Exhumed Centurion's Spikes \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Shoulder
-				i(212001),	-- Exhumed Centurion's Chausses \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Legs
-				i(212002),	-- Exhumed Centurion's Galea \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Head
-				i(212003),	-- Exhumed Centurion's Gauntlets \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Hand
-				i(212004),	-- Exhumed Centurion's Sollerets \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Feet
-				i(212005),	-- Exhumed Centurion's Breastplate \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Chest
-				i(212006),	-- Mist of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Generic - Cloak
-				i(212007),	-- Embrace of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Wrist
-				i(212008),	-- Wrappings of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Waist
-				i(212009),	-- Concourse of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Shoulder
-				i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
-				i(212011),	-- Noetic of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Head
-				i(212012),	-- Covenant of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Hand
-				i(212013),	-- Shoes of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Feet
-				i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
-				i(212015),	-- Lightless Scavenger's Hide \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Generic - Cloak
-				i(212016),	-- Lightless Scavenger's Wristguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Wrist
-				i(212017),	-- Lightless Scavenger's Bonegirdle \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Waist
-				i(212018),	-- Lightless Scavenger's Taxidermy \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Shoulder
-				i(212019),	-- Lightless Scavenger's Stalkings \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Legs
-				i(212020),	-- Lightless Scavenger's Skull \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Head
-				i(212021),	-- Lightless Scavenger's Mitts \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Hand
-				i(212022),	-- Lightless Scavenger's Footpads \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Feet
-				i(212023),	-- Lightless Scavenger's Tunic \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Chest
-				i(212024),	-- Cape of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Generic - Cloak
-				i(212025),	-- Wristblades of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Wrist
-				i(212026),	-- Core of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Waist
-				i(212027),	-- Fumaroles of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Shoulder
-				i(212028),	-- Legguards of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Legs
-				i(212029),	-- Horns of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Head
-				i(212030),	-- Rippers of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Hand
-				i(212031),	-- Talons of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Feet
-				i(212032),	-- Scales of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Chest
-				i(212033),	-- K'areshi Phantom's Breeze \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Generic - Cloak
-				i(212034),	-- K'areshi Phantom's Cuffs \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Wrist
-				i(212035),	-- K'areshi Phantom's Belt \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Waist
-				i(212036),	-- K'areshi Phantom's Shoulderpads \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Shoulder
-				i(212037),	-- K'areshi Phantom's Leggings \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Legs
-				i(212038),	-- K'areshi Phantom's Emptiness \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Head
-				i(212039),	-- K'areshi Phantom's Gloves \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Hand
-				i(212040),	-- K'areshi Phantom's Footwraps \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Feet
-				i(212041),	-- K'areshi Phantom's Nexus Wraps \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Chest
-				i(212042),	-- Gatecrasher's Mantle \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Generic - Cloak
-				i(212043),	-- Gatecrasher's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Wrist
-				i(212044),	-- Gatecrasher's Cord \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Waist
-				i(212045),	-- Gatecrasher's Enduring Effigy \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Shoulder
-				i(212046),	-- Gatecrasher's Kilt \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Legs
-				i(212047),	-- Gatecrasher's Horns \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Head
-				i(212048),	-- Gatecrasher's Protectors \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Hand
-				i(212049),	-- Gatecrasher's Tabi \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Feet
-				i(212050),	-- Gatecrasher's Gi \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Chest
-				i(212051),	-- Cloak of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Generic - Cloak
-				i(212052),	-- Great Links of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Wrist
-				i(212053),	-- Faulds of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Waist
-				i(212054),	-- Maw of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Shoulder
-				i(212055),	-- Leggings of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Legs
-				i(212056),	-- Mask of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Head
-				i(212057),	-- Eviscerators of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Hand
-				i(212058),	-- Treads of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Feet
-				i(212059),	-- Hide of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Chest
-				i(212060),	-- Drape of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Generic - Cloak
-				i(212061),	-- Armguards of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Wrist
-				i(212062),	-- Waistguard of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Waist
-				i(212063),	-- War-Mantle of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Shoulder
-				i(212064),	-- Trousers of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Legs
-				i(212065),	-- Impalers of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Head
-				i(212066),	-- Claws of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Hand
-				i(212067),	-- Talons of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Feet
-				i(212068),	-- Chestguard of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Chest
-				i(212069),	-- Hexflame Coven's Shawl \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Generic - Cloak
-				i(212070),	-- Hexflame Coven's Wristlace \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Wrist
-				i(212071),	-- Hexflame Coven's Dormant Eye \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Waist
-				i(212072),	-- Hexflame Coven's Altar \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Shoulder
-				i(212073),	-- Hexflame Coven's Leggings \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Legs
-				i(212074),	-- Hexflame Coven's All-Seeing Eye \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Head
-				i(212075),	-- Hexflame Coven's Sleeves \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Hand
-				i(212076),	-- Hexflame Coven's Treads \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth - Feet
-				i(212077),	-- Hexflame Coven's Ritual Harness \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth - Robe
-				i(212078),	-- Living Luster's Glow \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Generic - Cloak
-				i(212079),	-- Living Luster's Crystbands \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Wrist
-				i(212080),	-- Living Luster's Lightbelt \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Waist
-				i(212081),	-- Living Luster's Dominion \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Shoulder
-				i(212082),	-- Living Luster's Trousers \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Legs
-				i(212083),	-- Living Luster's Semblance \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Head
-				i(212084),	-- Living Luster's Touch \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Hand
-				i(212085),	-- Living Luster's Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth - Feet
-				i(212086),	-- Living Luster's Raiment \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth - Robe
-				i(212087),	-- Ward of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Generic - Cloak
-				i(212088),	-- Bracelets of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Wrist
-				i(212089),	-- Sigil of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Waist
-				i(212090),	-- Beacons of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Shoulder
-				i(212091),	-- Coattails of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Legs
-				i(212092),	-- Hood of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Head
-				i(212093),	-- Jeweled Gauntlets of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Hand
-				i(212094),	-- Slippers of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth - Feet
-				i(212095),	-- Runecoat of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth - Chest
 
-
-				i(212386),	-- Husk of Swallowing Darkness \\ 11.0 Raid Template - Shield - Shield
-				i(212387),	-- Broodtwister's Grim Catalyst \\ 11.0 Raid Template - Generic - Holdable
-				i(212388),	-- Ulgrax's Morsel-Masher \\ 11.0 Raid Template - Mace2H - Str - 2 Hand
-				i(212389),	-- Spire of Transfused Horrors \\ 11.0 Raid Template - Staff - Agi - 2 Hand
-				i(212390),	-- 11.0 Raid Template - Guns - RangedRight
-				i(212391),	-- Predator's Feasthooks \\ 11.0 Raid Template - Warglaives - Weapon
-				i(212392),	-- Duelist's Dancing Steel \\ 11.0 Raid Template - Sword1H - Str - Weapon \\ 11.0 Raid Template - Sword1H - Str -Weapon
-				i(212393),	-- 11.0 Raid Template - Polearms - Int - 2 Hand
-				i(212394),	-- Sovereign's Disdain \\ 11.0 Raid Template - Dagger - Int - Weapon
-				i(212395),	-- Blood-Kissed Kukri \\ 11.0 Raid Template - Dagger - Agi - Weapon
-				i(212396),	-- Monster Weapon - 1H Sword \\ 11.0 Raid Template - Sword1H - Agi - Weapon
-				i(212397),	-- Takazj's Entropic Edict \\ 11.0 Raid Template - Staff - Int - 2 Hand
-				i(212398),	-- Bludgeons of Blistering Wind \\ 11.0 Raid Template - Mace1H - Agi - Weapon
-				i(212399),	-- Splintershot Silkbow \\ 11.0 Raid Template - Bows - Ranged
-				i(212400),	-- Shade-Touched Silencer \\ 11.0 Raid Template - Crossbow - RangedRight
-				i(212401),	-- Ansurek's Final Judgment \\ 11.0 Raid Template - Axe1H - Str - Weapon
-				i(212402),	-- 11.0 Raid Template - Axe1H - Agi - Weapon
-				i(212403),	-- 11.0 Raid Template - Axe1H - Int - Weapon
-				i(212404),	-- Scepter of Manifested Miasma \\ 11.0 Raid Template - Mace1H - Int - Weapon
-				i(212405),	-- Flawless Phase Blade \\ 11.0 Raid Template - Sword1H - Int - Weapon
-				i(212406),	-- 11.0 Raid Template - Mace1H - Str - Weapon
-				i(212407),	-- Anub'arash's Colossal Mandible \\ 11.0 Raid Template - Axe2H - Str - 2 Hand
-				i(212408),	-- 11.0 Raid Template - Sword2H - Str - 2 Hand
-				i(212409),	-- Venom-Etched Claw \\ 11.0 Raid Template - FistWeapon - Weapon
-				i(212410),	-- 11.0 Raid Template - Mace2H - Int - 2 Hand
-				i(212411),	-- 11.0 Raid Template - Sword2H - Int - 2 Hand
-				i(212412),	-- 11.0 Raid Template - Wand - RangedRight
-				i(212413),	-- Honored Executioner's Perforator \\ 11.0 Raid Template - Polearms - Agi - 2 Hand
-				i(212414),	-- Lost Watcher's Remains \\ 11.0 Raid Template - Mail - Waist
-				i(212415),	-- Throne Defender's Bangles \\ 11.0 Raid Template - Mail - Wrist
-				i(212416),	-- Cosmic-Tinged Treads \\ 11.0 Raid Template - Cloth - Feet
-				i(212417),	-- Beyond's Dark Visage \\ 11.0 Raid Template - Leather - Head
-				i(212418),	-- Black Blood Injectors \\ 11.0 Raid Template - Plate - Hand
-				i(212419),	-- Bile-Soaked Harness \\ 11.0 Raid Template - Cloth - Chest
-				i(212420),	-- Queenguards's Carapace \\ 11.0 Raid Template - Plate - Chest
-				i(212421),	-- Goresplattered Membrane \\ 11.0 Raid Template - Mail - Chest
-				i(212422),	-- Bloodbound Horror's Legplates \\ 11.0 Raid Template - Plate - Legs
-				i(212423),	-- Rebel's Drained Marrowslacks \\ 11.0 Raid Template - Leather - Legs
-				i(212424),	-- Seasoned Earthen Boulderplates \\ 11.0 Raid Template - Plate - Shoulder
-				i(212425),	-- Devourer's Taut Innards \\ 11.0 Raid Template - Leather - Waist
-				i(212426),	-- Crunchy Intruder's Wristband \\ 11.0 Raid Template - Cloth - Wrist
-				i(212427),	-- Visor of the Evolved Captain \\ 11.0 Raid Template - Plate - Head
-				i(212428),	-- Final Meal's Horns \\ 11.0 Raid Template - Mail - Head
-				i(212429),	-- Whispering Voidlight Spaulders \\ 11.0 Raid Template - Mail - Shoulder
-				i(212430),	-- Shattered Eye Cincture \\ 11.0 Raid Template - Cloth - Waist
-				i(212431),	-- Undermoth-Lined Footpads \\ 11.0 Raid Template - Mail - Feet
-				i(212432),	-- Thousand-Scar Impalers \\ 11.0 Raid Template - Leather - Hand
-				i(212433),	-- Omnivore's Venomous Camouflage \\ 11.0 Raid Template - Leather - Chest
-				i(212434),	-- Voidspoken Sarong \\ 11.0 Raid Template - Cloth - Legs
-				i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
-				i(212436),	-- Clutches of Paranoia \\ 11.0 Raid Template - Mail - Hand
-				i(212437),	-- Ravaged Lamplighter's Manacles \\ 11.0 Raid Template - Plate - Wrist
-				i(212438),	-- Polluted Spectre's Cover \\ 11.0 Raid Template - Leather - Wrist
-				i(212439),	-- Beacons of the False Dawn \\ 11.0 Raid Template - Cloth - Shoulder
-				i(212440),	-- Devotee's Discarded Headdress \\ 11.0 Raid Template - Cloth - Head
-				i(212441),	-- Bindings of the Starless Night \\ 11.0 Raid Template - Cloth - Hand
-				i(212442),	-- Greatbelt of the Hungerer \\ 11.0 Raid Template - Plate - Waist
-				i(212443),	-- Shattershell Greaves \\ 11.0 Raid Template - Plate - Feet
-				i(212444),	-- Frame of Felled Insurgents \\ 11.0 Raid Template - Leather - Shoulder
-				i(212445),	-- Chitin-Spiked Jackboots \\ 11.0 Raid Template - Leather - Feet
-				i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
-				i(212447),	-- Key to the Unseeming \\ 11.0 Raid Template - Generic - Finger
-				i(212448),	-- Locket of Broken Memories \\ 11.0 Raid Template - Generic - Neck
-				i(212449),	-- Sikran's Endless Arsenal \\ Sikran's Shadow Arsenal \\ Sik'ran's Shadow Arsenal
-				i(212450),	-- Swarmlord's Authority
-				i(212451),	-- Aberrant Spellforge
-				i(212452),	-- Gruesome Syringe
-				i(212453),	-- Skyterror's Corrosive Organ \\ Rasha'nan's Acid Gland \\ Gigantic Acid Gland
-				i(212454),	-- Mad Queen's Mandate \\ Abyssal Effigy
-				i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
-				i(212456),	-- Void Reaper's Contract \\ Void Reaper's Chime
-				i(212457),	-- 11.0 Raid Template - INT - Trinket
 			}),
 			n(SPECIAL, {	-- Delves
 				i(207390),	-- Delve Ring
@@ -742,7 +552,7 @@ root(ROOTS.Unsorted, {
 				i(211059),	-- Luminous Lampspire
 				i(211060),	-- Delver's Warglaive
 				i(211062),	-- Treasure-Seeker's Shawl
-				i(211063),	-- Long Lost Choker
+				i(211063),	-- Long-Lost Choker
 				i(211142),	-- Delves Keystone
 			}),
 			filter(COSMETIC, {
@@ -926,9 +736,462 @@ root(ROOTS.Unsorted, {
 				i(217894),	-- Nerubian Pheromone Secreter
 			}),
 			n(PVP, {
-				i(210221),	-- Aspirant's Heraldry
-				i(210232),	-- Combatant's Heraldry
-				i(210233),	-- Gladiator's Heraldry
+				i(210221),	-- Forged Combatant's Heraldry
+				i(210232),	-- Forged Aspirant's Heraldry
+				i(210233),	-- Forged Gladiator's Heraldry
+				i(218357),	-- Forged Aspirant's Plate Helm \\ PH Copy Draconic Aspirant's Plate Helm
+				i(218358),	-- Forged Aspirant's Silk Robe \\ PH Copy Draconic Aspirant's Silk Robe
+				i(218359),	-- Forged Aspirant's Chestplate \\ Forged Aspirant's Plate Chestplate \\ PH Copy Draconic Aspirant's Plate Chestplate
+				i(218360),	-- Forged Aspirant's Armored Vest \\ Forged Aspirant's Chain Vest \\ PH Copy Draconic Aspirant's Chain Vest
+				i(218361),	-- Forged Aspirant's Leather Vest \\ PH Copy Draconic Aspirant's Leather Vest
+				i(218362),	-- Forged Aspirant's Plate Warboots \\ PH Copy Draconic Aspirant's Plate Warboots
+				i(218363),	-- Forged Aspirant's Silk Treads \\ PH Copy Draconic Aspirant's Silk Treads
+				i(218364),	-- Forged Aspirant's Chain Sabatons \\ PH Copy Draconic Aspirant's Chain Sabatons
+				i(218365),	-- Forged Aspirant's Leather Boots \\ PH Copy Draconic Aspirant's Leather Boots
+				i(218366),	-- Forged Aspirant's Leather Gloves \\ PH Copy Draconic Aspirant's Leather Gloves
+				i(218367),	-- Forged Aspirant's Plate Gauntlets \\ PH Copy Draconic Aspirant's Plate Gauntlets
+				i(218368),	-- Forged Aspirant's Silk Gloves \\ PH Copy Draconic Aspirant's Silk Gloves
+				i(218369),	-- Forged Aspirant's Chain Gauntlets \\ PH Copy Draconic Aspirant's Chain Gauntlets
+				i(218370),	-- Forged Aspirant's Silk Hood \\ PH Copy Draconic Aspirant's Silk Hood
+				i(218371),	-- Forged Aspirant's Chain Helm \\ PH Copy Draconic Aspirant's Chain Helm
+				i(218372),	-- Forged Aspirant's Leather Helm \\ PH Copy Draconic Aspirant's Leather Helm
+				i(218373),	-- Forged Aspirant's Plate Legguards \\ PH Copy Draconic Aspirant's Plate Legguards
+				i(218374),	-- Forged Aspirant's Silk Leggings \\ PH Copy Draconic Aspirant's Silk Leggings
+				i(218375),	-- Forged Aspirant's Chain Leggings \\ PH Copy Draconic Aspirant's Chain Leggings
+				i(218376),	-- Forged Aspirant's Leather Breeches \\ PH Copy Draconic Aspirant's Leather Breeches
+				i(218377),	-- Forged Aspirant's Leather Spaulders \\ PH Copy Draconic Aspirant's Leather Spaulders
+				i(218378),	-- Forged Aspirant's Plate Shoulders \\ PH Copy Draconic Aspirant's Plate Shoulders
+				i(218379),	-- Forged Aspirant's Silk Mantle \\ PH Copy Draconic Aspirant's Silk Mantle
+				i(218380),	-- Forged Aspirant's Chain Spaulders \\ PH Copy Draconic Aspirant's Chain Spaulders
+				i(218381),	-- Forged Aspirant's Plate Girdle \\ PH Copy Draconic Aspirant's Plate Girdle
+				i(218382),	-- Forged Aspirant's Silk Cord \\ PH Copy Draconic Aspirant's Silk Cord
+				i(218383),	-- Forged Aspirant's Chain Belt \\ PH Copy Draconic Aspirant's Chain Belt
+				i(218384),	-- Forged Aspirant's Leather Belt \\ PH Copy Draconic Aspirant's Leather Belt
+				i(218385),	-- Forged Aspirant's Silk Wristwraps \\ PH Copy Draconic Aspirant's Silk Wristwraps
+				i(218386),	-- Forged Aspirant's Plate Cuffs \\ PH Copy Draconic Aspirant's Plate Cuffs
+				i(218387),	-- Forged Aspirant's Chain Wristwraps \\ PH Copy Draconic Aspirant's Chain Wristwraps
+				i(218388),	-- Forged Aspirant's Leather Wristwraps \\ PH Copy Draconic Aspirant's Leather Wristwraps
+				i(218389),	-- Forged Aspirant's Plate Headguard \\ PH Copy Draconic Aspirant's Plate Headguard
+				i(218390),	-- Forged Aspirant's Silk Shirt \\ Forged Aspirant's Silk Vestments \\ PH Copy Draconic Aspirant's Silk Vestments
+				i(218391),	-- Forged Aspirant's Plate Armor \\ PH Copy Draconic Aspirant's Plate Armor
+				i(218392),	-- Forged Aspirant's Armored Tunic \\ Forged Aspirant's Chain Tunic \\ PH Copy Draconic Aspirant's Chain Tunic
+				i(218393),	-- Forged Aspirant's Leather Tunic \\ PH Copy Draconic Aspirant's Leather Tunic
+				i(218394),	-- Forged Aspirant's Plate Stompers \\ PH Copy Draconic Aspirant's Plate Stompers
+				i(218395),	-- Forged Aspirant's Silk Footwraps \\ PH Copy Draconic Aspirant's Silk Footwraps
+				i(218396),	-- Forged Aspirant's Chain Stompers \\ PH Copy Draconic Aspirant's Chain Stompers
+				i(218397),	-- Forged Aspirant's Leather Footpads \\ PH Copy Draconic Aspirant's Leather Footpads
+				i(218398),	-- Forged Aspirant's Leather Grips \\ PH Copy Draconic Aspirant's Leather Grips
+				i(218399),	-- Forged Aspirant's Plate Handguards \\ PH Copy Draconic Aspirant's Plate Handguards
+				i(218400),	-- Forged Aspirant's Silk Handwraps \\ PH Copy Draconic Aspirant's Silk Handwraps
+				i(218401),	-- Forged Aspirant's Chain Handguards \\ PH Copy Draconic Aspirant's Chain Handguards
+				i(218402),	-- Forged Aspirant's Silk Cover \\ PH Copy Draconic Aspirant's Silk Cover
+				i(218403),	-- Forged Aspirant's Chain Headguard \\ PH Copy Draconic Aspirant's Chain Headguard
+				i(218404),	-- Forged Aspirant's Leather Mask \\ PH Copy Draconic Aspirant's Leather Mask
+				i(218405),	-- Forged Aspirant's Plate Wargreaves \\ PH Copy Draconic Aspirant's Plate Wargreaves
+				i(218406),	-- Forged Aspirant's Silk Legwraps \\ PH Copy Draconic Aspirant's Silk Legwraps
+				i(218407),	-- Forged Aspirant's Chain Wargreaves \\ PH Copy Draconic Aspirant's Chain Wargreaves
+				i(218408),	-- Forged Aspirant's Leather Leggings \\ PH Copy Draconic Aspirant's Leather Leggings
+				i(218409),	-- Forged Aspirant's Leather Mantle \\ PH Copy Draconic Aspirant's Leather Mantle
+				i(218410),	-- Forged Aspirant's Plate Pauldrons \\ PH Copy Draconic Aspirant's Plate Pauldrons
+				i(218411),	-- Forged Aspirant's Silk Shawl \\ PH Copy Draconic Aspirant's Silk Shawl
+				i(218412),	-- Forged Aspirant's Chain Shoulderguards \\ PH Copy Draconic Aspirant's Chain Shoulderguards
+				i(218413),	-- Forged Aspirant's Plate Greatbelt \\ PH Copy Draconic Aspirant's Plate Greatbelt
+				i(218414),	-- Forged Aspirant's Silk Belt \\ PH Copy Draconic Aspirant's Silk Belt
+				i(218415),	-- Forged Aspirant's Chain Clasp \\ PH Copy Draconic Aspirant's Chain Clasp
+				i(218416),	-- Forged Aspirant's Leather Cord \\ PH Copy Draconic Aspirant's Leather Cord
+				i(218417),	-- Forged Aspirant's Silk Bindings \\ PH Copy Draconic Aspirant's Silk Bindings
+				i(218418),	-- Forged Aspirant's Plate Armguards \\ PH Copy Draconic Aspirant's Plate Armguards
+				i(218419),	-- Forged Aspirant's Chain Bracer \\ PH Copy Draconic Aspirant's Chain Bracer
+				i(218420),	-- Forged Aspirant's Leather Armguards \\ PH Copy Draconic Aspirant's Leather Armguards
+				i(218421),	-- Forged Aspirant's Badge of Ferocity \\ PH Copy Draconic Aspirant's Badge of Ferocity
+				i(218422),	-- Forged Aspirant's Medallion \\ PH Copy Draconic Aspirant's Medallion
+				i(218423),	-- Forged Aspirant's Insignia of Alacrity \\ PH Copy Draconic Aspirant's Insignia of Alacrity
+				i(218424),	-- Forged Aspirant's Emblem \\ PH Copy Draconic Aspirant's Emblem
+				i(218425),	-- Forged Aspirant's Sigil of Adaptation \\ PH Copy Draconic Aspirant's Sigil of Adaptation
+				i(218426),	-- Forged Aspirant's Ring \\ PH Copy Draconic Aspirant's Ring
+				i(218427),	-- Forged Aspirant's Band \\ PH Copy Draconic Aspirant's Band
+				i(218428),	-- Forged Aspirant's Signet \\ PH Copy Draconic Aspirant's Signet
+				i(218429),	-- Forged Aspirant's Necklace \\ PH Copy Draconic Aspirant's Necklace
+				i(218430),	-- Forged Aspirant's Choker \\ PH Copy Draconic Aspirant's Choker
+				i(218431),	-- Forged Aspirant's Pendant \\ PH Copy Draconic Aspirant's Pendant
+				i(218432),	-- Forged Aspirant's Drape \\ PH Copy Draconic Aspirant's Drape
+				i(218433),	-- Forged Aspirant's Cloak \\ PH Copy Draconic Aspirant's Cloak
+				i(218434),	-- Forged Aspirant's Cape \\ PH Copy Draconic Aspirant's Cape
+				i(218435),	-- Forged Aspirant's Greatcloak \\ PH Copy Draconic Aspirant's Greatcloak
+				i(218436),	-- Forged Aspirant's Battleaxe \\ PH Copy Draconic Aspirant's Battleaxe
+				i(218437),	-- Forged Aspirant's Dagger \\ PH Copy Draconic Aspirant's Dagger
+				i(218438),	-- Forged Aspirant's Mace \\ PH Copy Draconic Aspirant's Mace
+				i(218439),	-- Forged Aspirant's Polearm \\ PH Copy Draconic Aspirant's Polearm
+				i(218440),	-- Forged Aspirant's Staff \\ PH Copy Draconic Aspirant's Staff
+				i(218441),	-- Forged Aspirant's Greatsword \\ PH Copy Draconic Aspirant's Greatsword
+				i(218442),	-- Forged Aspirant's Censer \\ PH Copy Draconic Aspirant's Censer
+				i(218443),	-- Forged Aspirant's Warglaive \\ PH Copy Draconic Aspirant's Warglaive
+				i(218444),	-- Forged Aspirant's Scepter \\ PH Copy Draconic Aspirant's Scepter
+				i(218445),	-- Forged Aspirant's Shield \\ PH Copy Draconic Aspirant's Shield
+				i(218446),	-- Forged Aspirant's Rifle \\ PH Copy Draconic Aspirant's Rifle
+				i(218447),	-- Forged Aspirant's Halberd \\ PH Copy Draconic Aspirant's Halberd
+				i(218448),	-- Forged Aspirant's Morningstar \\ PH Copy Draconic Aspirant's Morningstar
+				i(218449),	-- Forged Aspirant's Knife \\ PH Copy Draconic Aspirant's Knife
+				i(218451),	-- Forged Aspirant's Chopper \\ PH Copy Draconic Aspirant's Chopper
+				i(218452),	-- Forged Aspirant's Wand \\ PH Copy Draconic Aspirant's Wand
+				i(218460),	-- Forged Gladiator's Silk Tunic \\ PH Copy Draconic Gladiator's Silk Tunic
+				i(218461),	-- Forged Gladiator's Silk Blouse \\ PH Copy Draconic Gladiator's Silk Blouse
+				i(218462),	-- Forged Gladiator's Silk Slippers \\ PH Copy Draconic Gladiator's Silk Slippers
+				i(218463),	-- Forged Gladiator's Silk Treads \\ PH Copy Draconic Gladiator's Silk Treads
+				i(218464),	-- Forged Gladiator's Silk Gloves \\ PH Copy Draconic Gladiator's Silk Gloves
+				i(218465),	-- Forged Gladiator's Silk Handwraps \\ PH Copy Draconic Gladiator's Silk Handwraps
+				i(218466),	-- Forged Gladiator's Silk Hat \\ PH Copy Draconic Gladiator's Silk Hat
+				i(218467),	-- Forged Gladiator's Silk Cap \\ PH Copy Draconic Gladiator's Silk Cap
+				i(218468),	-- Forged Gladiator's Silk Leggings \\ PH Copy Draconic Gladiator's Silk Leggings
+				i(218469),	-- Forged Gladiator's Silk Trousers \\ PH Copy Draconic Gladiator's Silk Trousers
+				i(218470),	-- Forged Gladiator's Silk Mantle \\ PH Copy Draconic Gladiator's Silk Mantle
+				i(218471),	-- Forged Gladiator's Silk Amice \\ PH Copy Draconic Gladiator's Silk Amice
+				i(218472),	-- Forged Gladiator's Silk Cord \\ PH Copy Draconic Gladiator's Silk Cord
+				i(218473),	-- Forged Gladiator's Silk Belt \\ PH Copy Draconic Gladiator's Silk Belt
+				i(218474),	-- Forged Gladiator's Silk Wristwraps \\ PH Copy Draconic Gladiator's Silk Wristwraps
+				i(218475),	-- Forged Gladiator's Silk Armbands \\ PH Copy Draconic Gladiator's Silk Armbands
+				i(218476),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218477),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218478),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218479),	-- Forged Gladiator's Silk Robes \\ Forged Gladiator's Silk Tunic \\ PH Copy Draconic Gladiator's Silk Tunic
+				i(218480),	-- Forged Gladiator's Silk Vestments \\ Forged Gladiator's Silk Blouse \\ PH Copy Draconic Gladiator's Silk Blouse
+				i(218481),	-- Forged Gladiator's Silk Slippers \\ PH Copy Draconic Gladiator's Silk Slippers
+				i(218482),	-- Forged Gladiator's Silk Treads \\ PH Copy Draconic Gladiator's Silk Treads
+				i(218483),	-- Forged Gladiator's Silk Gloves \\ PH Copy Draconic Gladiator's Silk Gloves
+				i(218484),	-- Forged Gladiator's Silk Handwraps \\ PH Copy Draconic Gladiator's Silk Handwraps
+				i(218485),	-- Forged Gladiator's Silk Hood \\ PH Copy Draconic Gladiator's Silk Hood
+				i(218486),	-- Forged Gladiator's Silk Guise \\ PH Copy Draconic Gladiator's Silk Guise
+				i(218487),	-- Forged Gladiator's Silk Leggings \\ PH Copy Draconic Gladiator's Silk Leggings
+				i(218488),	-- Forged Gladiator's Silk Trousers \\ PH Copy Draconic Gladiator's Silk Trousers
+				i(218489),	-- Forged Gladiator's Silk Mantle \\ PH Copy Draconic Gladiator's Silk Mantle
+				i(218490),	-- Forged Gladiator's Silk Amice \\ PH Copy Draconic Gladiator's Silk Amice
+				i(218491),	-- Forged Gladiator's Silk Cord \\ PH Copy Draconic Gladiator's Silk Cord
+				i(218492),	-- Forged Gladiator's Silk Belt \\ PH Copy Draconic Gladiator's Silk Belt
+				i(218493),	-- Forged Gladiator's Silk Wristwraps \\ PH Copy Draconic Gladiator's Silk Wristwraps
+				i(218494),	-- Forged Gladiator's Silk Armbands \\ PH Copy Draconic Gladiator's Silk Armbands
+				i(218495),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218496),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218497),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218498),	-- Forged Gladiator's Silk Raiment \\ Forged Gladiator's Silk Robe \\ PH Copy Draconic Gladiator's Silk Robe
+				i(218499),	-- Forged Gladiator's Silk Vestments \\ PH Copy Draconic Gladiator's Silk Vestments
+				i(218500),	-- Forged Gladiator's Silk Slippers \\ PH Copy Draconic Gladiator's Silk Slippers
+				i(218501),	-- Forged Gladiator's Silk Treads \\ PH Copy Draconic Gladiator's Silk Treads
+				i(218502),	-- Forged Gladiator's Silk Gloves \\ PH Copy Draconic Gladiator's Silk Gloves
+				i(218503),	-- Forged Gladiator's Silk Handwraps \\ PH Copy Draconic Gladiator's Silk Handwraps
+				i(218504),	-- Forged Gladiator's Silk Hood \\ PH Copy Draconic Gladiator's Silk Hood
+				i(218505),	-- Forged Gladiator's Silk Guise \\ PH Copy Draconic Gladiator's Silk Guise
+				i(218506),	-- Forged Gladiator's Silk Leggings \\ PH Copy Draconic Gladiator's Silk Leggings
+				i(218507),	-- Forged Gladiator's Silk Trousers \\ PH Copy Draconic Gladiator's Silk Trousers
+				i(218508),	-- Forged Gladiator's Silk Mantle \\ PH Copy Draconic Gladiator's Silk Mantle
+				i(218509),	-- Forged Gladiator's Silk Amice \\ PH Copy Draconic Gladiator's Silk Amice
+				i(218510),	-- Forged Gladiator's Silk Cord \\ PH Copy Draconic Gladiator's Silk Cord
+				i(218511),	-- Forged Gladiator's Silk Belt \\ PH Copy Draconic Gladiator's Silk Belt
+				i(218512),	-- Forged Gladiator's Silk Wristwraps \\ PH Copy Draconic Gladiator's Silk Wristwraps
+				i(218513),	-- Forged Gladiator's Silk Armbands \\ PH Copy Draconic Gladiator's Silk Armbands
+				i(218514),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218515),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218516),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218517),	-- Forged Gladiator's Leather Vest \\ Forged Gladiator's Leather Robe \\ PH Copy Draconic Gladiator's Leather Robe
+				i(218518),	-- Forged Gladiator's Leather Vestments \\ PH Copy Draconic Gladiator's Leather Vestments
+				i(218519),	-- Forged Gladiator's Leather Boots \\ PH Copy Draconic Gladiator's Leather Boots
+				i(218520),	-- Forged Gladiator's Leather Treads \\ PH Copy Draconic Gladiator's Leather Treads
+				i(218521),	-- Forged Gladiator's Leather Gloves \\ PH Copy Draconic Gladiator's Leather Gloves
+				i(218522),	-- Forged Gladiator's Leather Grips \\ PH Copy Draconic Gladiator's Leather Grips
+				i(218523),	-- Forged Gladiator's Leather Helm \\ PH Copy Draconic Gladiator's Leather Helm
+				i(218524),	-- Forged Gladiator's Leather Mask \\ PH Copy Draconic Gladiator's Leather Mask
+				i(218525),	-- Forged Gladiator's Leather Breeches \\ PH Copy Draconic Gladiator's Leather Breeches
+				i(218526),	-- Forged Gladiator's Leather Legwraps \\ PH Copy Draconic Gladiator's Leather Legwraps
+				i(218527),	-- Forged Gladiator's Leather Spaulders \\ PH Copy Draconic Gladiator's Leather Spaulders
+				i(218528),	-- Forged Gladiator's Leather Shoulderpads \\ PH Copy Draconic Gladiator's Leather Shoulderpads
+				i(218529),	-- Forged Gladiator's Leather Belt \\ PH Copy Draconic Gladiator's Leather Belt
+				i(218530),	-- Forged Gladiator's Leather Strap \\ PH Copy Draconic Gladiator's Leather Strap
+				i(218531),	-- Forged Gladiator's Leather Wristwraps \\ PH Copy Draconic Gladiator's Leather Wristwraps
+				i(218532),	-- Forged Gladiator's Leather Wristguards \\ PH Copy Draconic Gladiator's Leather Wristguards
+				i(218533),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218534),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218535),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218536),	-- Forged Gladiator's Leather Vest \\ PH Copy Draconic Gladiator's Leather Vest
+				i(218537),	-- Forged Gladiator's Leather Jerkin \\ PH Copy Draconic Gladiator's Leather Jerkin
+				i(218538),	-- Forged Gladiator's Leather Boots \\ PH Copy Draconic Gladiator's Leather Boots
+				i(218539),	-- Forged Gladiator's Leather Treads \\ PH Copy Draconic Gladiator's Leather Treads
+				i(218540),	-- Forged Gladiator's Leather Gloves \\ PH Copy Draconic Gladiator's Leather Gloves
+				i(218541),	-- Forged Gladiator's Leather Grips \\ PH Copy Draconic Gladiator's Leather Grips
+				i(218542),	-- Forged Gladiator's Leather Helm \\ PH Copy Draconic Gladiator's Leather Helm
+				i(218543),	-- Forged Gladiator's Leather Mask \\ PH Copy Draconic Gladiator's Leather Mask
+				i(218544),	-- Forged Gladiator's Leather Breeches \\ PH Copy Draconic Gladiator's Leather Breeches
+				i(218545),	-- Forged Gladiator's Leather Legwraps \\ PH Copy Draconic Gladiator's Leather Legwraps
+				i(218546),	-- Forged Gladiator's Leather Spaulders \\ PH Copy Draconic Gladiator's Leather Spaulders
+				i(218547),	-- Forged Gladiator's Leather Shoulderpads \\ PH Copy Draconic Gladiator's Leather Shoulderpads
+				i(218548),	-- Forged Gladiator's Leather Belt \\ PH Copy Draconic Gladiator's Leather Belt
+				i(218549),	-- Forged Gladiator's Leather Strap \\ PH Copy Draconic Gladiator's Leather Strap
+				i(218550),	-- Forged Gladiator's Leather Wristwraps \\ PH Copy Draconic Gladiator's Leather Wristwraps
+				i(218551),	-- Forged Gladiator's Leather Wristguards \\ PH Copy Draconic Gladiator's Leather Wristguards
+				i(218552),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218553),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218554),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218555),	-- Forged Gladiator's Leather Vest \\ PH Copy Draconic Gladiator's Leather Vest
+				i(218556),	-- Forged Gladiator's Leather Jerkin \\ PH Copy Draconic Gladiator's Leather Jerkin
+				i(218557),	-- Forged Gladiator's Leather Boots \\ PH Copy Draconic Gladiator's Leather Boots
+				i(218558),	-- Forged Gladiator's Leather Treads \\ PH Copy Draconic Gladiator's Leather Treads
+				i(218559),	-- Forged Gladiator's Leather Gloves \\ PH Copy Draconic Gladiator's Leather Gloves
+				i(218560),	-- Forged Gladiator's Leather Grips \\ PH Copy Draconic Gladiator's Leather Grips
+				i(218561),	-- Forged Gladiator's Leather Helm \\ PH Copy Draconic Gladiator's Leather Helm
+				i(218562),	-- Forged Gladiator's Leather Mask \\ PH Copy Draconic Gladiator's Leather Mask
+				i(218563),	-- Forged Gladiator's Leather Breeches \\ PH Copy Draconic Gladiator's Leather Breeches
+				i(218564),	-- Forged Gladiator's Leather Legwraps \\ PH Copy Draconic Gladiator's Leather Legwraps
+				i(218565),	-- Forged Gladiator's Leather Spaulders \\ PH Copy Draconic Gladiator's Leather Spaulders
+				i(218566),	-- Forged Gladiator's Leather Shoulderpads \\ PH Copy Draconic Gladiator's Leather Shoulderpads
+				i(218567),	-- Forged Gladiator's Leather Belt \\ PH Copy Draconic Gladiator's Leather Belt
+				i(218568),	-- Forged Gladiator's Leather Strap \\ PH Copy Draconic Gladiator's Leather Strap
+				i(218569),	-- Forged Gladiator's Leather Wristwraps \\ PH Copy Draconic Gladiator's Leather Wristwraps
+				i(218570),	-- Forged Gladiator's Leather Wristguards \\ PH Copy Draconic Gladiator's Leather Wristguards
+				i(218571),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218572),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218573),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218574),	-- Forged Gladiator's Leather Vest \\ PH Copy Draconic Gladiator's Leather Vest
+				i(218575),	-- Forged Gladiator's Leather Jerkin \\ PH Copy Draconic Gladiator's Leather Jerkin
+				i(218576),	-- Forged Gladiator's Leather Boots \\ PH Copy Draconic Gladiator's Leather Boots
+				i(218577),	-- Forged Gladiator's Leather Treads \\ PH Copy Draconic Gladiator's Leather Treads
+				i(218578),	-- Forged Gladiator's Leather Gloves \\ PH Copy Draconic Gladiator's Leather Gloves
+				i(218579),	-- Forged Gladiator's Leather Grips \\ PH Copy Draconic Gladiator's Leather Grips
+				i(218580),	-- Forged Gladiator's Leather Helm \\ PH Copy Draconic Gladiator's Leather Helm
+				i(218581),	-- Forged Gladiator's Leather Mask \\ PH Copy Draconic Gladiator's Leather Mask
+				i(218582),	-- Forged Gladiator's Leather Breeches \\ PH Copy Draconic Gladiator's Leather Breeches
+				i(218583),	-- Forged Gladiator's Leather Legwraps \\ PH Copy Draconic Gladiator's Leather Legwraps
+				i(218584),	-- Forged Gladiator's Leather Spaulders \\ PH Copy Draconic Gladiator's Leather Spaulders
+				i(218585),	-- Forged Gladiator's Leather Shoulderpads \\ PH Copy Draconic Gladiator's Leather Shoulderpads
+				i(218586),	-- Forged Gladiator's Leather Belt \\ PH Copy Draconic Gladiator's Leather Belt
+				i(218587),	-- Forged Gladiator's Leather Strap \\ PH Copy Draconic Gladiator's Leather Strap
+				i(218588),	-- Forged Gladiator's Leather Wristwraps \\ PH Copy Draconic Gladiator's Leather Wristwraps
+				i(218589),	-- Forged Gladiator's Leather Wristguards \\ PH Copy Draconic Gladiator's Leather Wristguards
+				i(218590),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218591),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218592),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218593),	-- Forged Gladiator's Armored Scales \\ Forged Gladiator's Chain Robe \\ PH Copy Draconic Gladiator's Chain Robe
+				i(218594),	-- Forged Gladiator's Scaleguard \\ Forged Gladiator's Chain Vestments \\ PH Copy Draconic Gladiator's Chain Vestments
+				i(218595),	-- Forged Gladiator's Chain Sabatons \\ PH Copy Draconic Gladiator's Chain Sabatons
+				i(218596),	-- Forged Gladiator's Chain Boots \\ PH Copy Draconic Gladiator's Chain Boots
+				i(218597),	-- Forged Gladiator's Chain Gauntlets \\ PH Copy Draconic Gladiator's Chain Gauntlets
+				i(218598),	-- Forged Gladiator's Chain Handguards \\ PH Copy Draconic Gladiator's Chain Handguards
+				i(218599),	-- Forged Gladiator's Chain Helm \\ PH Copy Draconic Gladiator's Chain Helm
+				i(218600),	-- Forged Gladiator's Chain Faceguard \\ PH Copy Draconic Gladiator's Chain Faceguard
+				i(218601),	-- Forged Gladiator's Chain Leggings \\ PH Copy Draconic Gladiator's Chain Leggings
+				i(218602),	-- Forged Gladiator's Chain Breeches \\ PH Copy Draconic Gladiator's Chain Breeches
+				i(218603),	-- Forged Gladiator's Chain Monnion \\ PH Copy Draconic Gladiator's Chain Monnion
+				i(218604),	-- Forged Gladiator's Chain Shoulderguard \\ PH Copy Draconic Gladiator's Chain Shoulderguard
+				i(218605),	-- Forged Gladiator's Chain Belt \\ PH Copy Draconic Gladiator's Chain Belt
+				i(218606),	-- Forged Gladiator's Chain Girdle \\ PH Copy Draconic Gladiator's Chain Girdle
+				i(218607),	-- Forged Gladiator's Chain Wristguards \\ PH Copy Draconic Gladiator's Chain Wristguards
+				i(218608),	-- Forged Gladiator's Chain Bracers \\ PH Copy Draconic Gladiator's Chain Bracers
+				i(218609),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218610),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218611),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218612),	-- Forged Gladiator's Chain Vest \\ PH Copy Draconic Gladiator's Chain Vest
+				i(218613),	-- Forged Gladiator's Chain Tunic \\ PH Copy Draconic Gladiator's Chain Tunic
+				i(218614),	-- Forged Gladiator's Chain Sabatons \\ PH Copy Draconic Gladiator's Chain Sabatons
+				i(218615),	-- Forged Gladiator's Chain Boots \\ PH Copy Draconic Gladiator's Chain Boots
+				i(218616),	-- Forged Gladiator's Chain Gauntlets \\ PH Copy Draconic Gladiator's Chain Gauntlets
+				i(218617),	-- Forged Gladiator's Chain Handguards \\ PH Copy Draconic Gladiator's Chain Handguards
+				i(218618),	-- Forged Gladiator's Chain Helm \\ PH Copy Draconic Gladiator's Chain Helm
+				i(218619),	-- Forged Gladiator's Chain Faceguard \\ PH Copy Draconic Gladiator's Chain Faceguard
+				i(218620),	-- Forged Gladiator's Chain Leggings \\ PH Copy Draconic Gladiator's Chain Leggings
+				i(218621),	-- Forged Gladiator's Chain Breeches \\ PH Copy Draconic Gladiator's Chain Breeches
+				i(218622),	-- Forged Gladiator's Chain Monnion \\ PH Copy Draconic Gladiator's Chain Monnion
+				i(218623),	-- Forged Gladiator's Chain Shoulderguard \\ PH Copy Draconic Gladiator's Chain Shoulderguard
+				i(218624),	-- Forged Gladiator's Chain Belt \\ PH Copy Draconic Gladiator's Chain Belt
+				i(218625),	-- Forged Gladiator's Chain Girdle \\ PH Copy Draconic Gladiator's Chain Girdle
+				i(218626),	-- Forged Gladiator's Chain Wristguards \\ PH Copy Draconic Gladiator's Chain Wristguards
+				i(218627),	-- Forged Gladiator's Chain Bracers \\ PH Copy Draconic Gladiator's Chain Bracers
+				i(218628),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218629),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218630),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218631),	-- Forged Gladiator's Chain Vest \\ PH Copy Draconic Gladiator's Chain Vest
+				i(218632),	-- Forged Gladiator's Chain Tunic \\ PH Copy Draconic Gladiator's Chain Tunic
+				i(218633),	-- Forged Gladiator's Chain Sabatons \\ PH Copy Draconic Gladiator's Chain Sabatons
+				i(218634),	-- Forged Gladiator's Chain Boots \\ PH Copy Draconic Gladiator's Chain Boots
+				i(218635),	-- Forged Gladiator's Chain Gauntlets \\ PH Copy Draconic Gladiator's Chain Gauntlets
+				i(218636),	-- Forged Gladiator's Chain Handguards \\ PH Copy Draconic Gladiator's Chain Handguards
+				i(218637),	-- Forged Gladiator's Chain Helm \\ PH Copy Draconic Gladiator's Chain Helm
+				i(218638),	-- Forged Gladiator's Chain Faceguard \\ PH Copy Draconic Gladiator's Chain Faceguard
+				i(218639),	-- Forged Gladiator's Chain Leggings \\ PH Copy Draconic Gladiator's Chain Leggings
+				i(218640),	-- Forged Gladiator's Chain Breeches \\ PH Copy Draconic Gladiator's Chain Breeches
+				i(218641),	-- Forged Gladiator's Chain Monnion \\ PH Copy Draconic Gladiator's Chain Monnion
+				i(218642),	-- Forged Gladiator's Chain Shoulderguard \\ PH Copy Draconic Gladiator's Chain Shoulderguard
+				i(218643),	-- Forged Gladiator's Chain Belt \\ PH Copy Draconic Gladiator's Chain Belt
+				i(218644),	-- Forged Gladiator's Chain Girdle \\ PH Copy Draconic Gladiator's Chain Girdle
+				i(218645),	-- Forged Gladiator's Chain Wristguards \\ PH Copy Draconic Gladiator's Chain Wristguards
+				i(218646),	-- Forged Gladiator's Chain Bracers \\ PH Copy Draconic Gladiator's Chain Bracers
+				i(218647),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218648),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218649),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218650),	-- Forged Gladiator's Chestguard \\ Forged Gladiator's Plate Chestguard \\ PH Copy Draconic Gladiator's Plate Chestguard
+				i(218651),	-- Forged Gladiator's Chestplate \\ Forged Gladiator's Plate Chestplate \\ PH Copy Draconic Gladiator's Plate Chestplate
+				i(218652),	-- Forged Gladiator's Plate Warboots \\ PH Copy Draconic Gladiator's Plate Warboots
+				i(218653),	-- Forged Gladiator's Plate Stompers \\ PH Copy Draconic Gladiator's Plate Stompers
+				i(218654),	-- Forged Gladiator's Plate Gauntlets \\ PH Copy Draconic Gladiator's Plate Gauntlets
+				i(218655),	-- Forged Gladiator's Plate Handguards \\ PH Copy Draconic Gladiator's Plate Handguards
+				i(218656),	-- Forged Gladiator's Plate Helm \\ PH Copy Draconic Gladiator's Plate Helm
+				i(218657),	-- Forged Gladiator's Plate Helmet \\ PH Copy Draconic Gladiator's Plate Helmet
+				i(218658),	-- Forged Gladiator's Plate Legguards \\ PH Copy Draconic Gladiator's Plate Legguards
+				i(218659),	-- Forged Gladiator's Plate Wargreaves \\ PH Copy Draconic Gladiator's Plate Wargreaves
+				i(218660),	-- Forged Gladiator's Plate Shoulders \\ PH Copy Draconic Gladiator's Plate Shoulders
+				i(218661),	-- Forged Gladiator's Plate Pauldrons \\ PH Copy Draconic Gladiator's Plate Pauldrons
+				i(218662),	-- Forged Gladiator's Plate Girdle \\ PH Copy Draconic Gladiator's Plate Girdle
+				i(218663),	-- Forged Gladiator's Plate Greatbelt \\ PH Copy Draconic Gladiator's Plate Greatbelt
+				i(218664),	-- Forged Gladiator's Plate Wristguards \\ PH Copy Draconic Gladiator's Plate Wristguards
+				i(218665),	-- Forged Gladiator's Plate Vambraces \\ PH Copy Draconic Gladiator's Plate Vambraces
+				i(218666),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218667),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218668),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218669),	-- Forged Gladiator's Chestguard \\ Forged Gladiator's Plate Chestguard \\ PH Copy Draconic Gladiator's Plate Chestguard
+				i(218670),	-- Forged Gladiator's Chestplate \\ Forged Gladiator's Plate Chestplate \\ PH Copy Draconic Gladiator's Plate Chestplate
+				i(218671),	-- Forged Gladiator's Plate Warboots \\ PH Copy Draconic Gladiator's Plate Warboots
+				i(218672),	-- Forged Gladiator's Plate Stompers \\ PH Copy Draconic Gladiator's Plate Stompers
+				i(218673),	-- Forged Gladiator's Plate Gauntlets \\ PH Copy Draconic Gladiator's Plate Gauntlets
+				i(218674),	-- Forged Gladiator's Plate Handguards \\ PH Copy Draconic Gladiator's Plate Handguards
+				i(218675),	-- Forged Gladiator's Plate Helm \\ PH Copy Draconic Gladiator's Plate Helm
+				i(218676),	-- Forged Gladiator's Plate Helmet \\ PH Copy Draconic Gladiator's Plate Helmet
+				i(218677),	-- Forged Gladiator's Plate Legguards \\ PH Copy Draconic Gladiator's Plate Legguards
+				i(218678),	-- Forged Gladiator's Plate Tasses \\ PH Copy Draconic Gladiator's Plate Tasses
+				i(218679),	-- Forged Gladiator's Plate Shoulders \\ PH Copy Draconic Gladiator's Plate Shoulders
+				i(218680),	-- Forged Gladiator's Plate Pauldrons \\ PH Copy Draconic Gladiator's Plate Pauldrons
+				i(218681),	-- Forged Gladiator's Plate Girdle \\ PH Copy Draconic Gladiator's Plate Girdle
+				i(218682),	-- Forged Gladiator's Plate Greatbelt \\ PH Copy Draconic Gladiator's Plate Greatbelt
+				i(218683),	-- Forged Gladiator's Plate Wristguards \\ PH Copy Draconic Gladiator's Plate Wristguards
+				i(218684),	-- Forged Gladiator's Plate Vambraces \\ PH Copy Draconic Gladiator's Plate Vambraces
+				i(218685),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218686),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218687),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218688),	-- Forged Gladiator's Chestguard \\ Forged Gladiator's Plate Chestguard \\ PH Copy Draconic Gladiator's Plate Chestguard
+				i(218689),	-- Forged Gladiator's Chestplate \\ Forged Gladiator's Plate Chestplate \\ PH Copy Draconic Gladiator's Plate Chestplate
+				i(218690),	-- Forged Gladiator's Plate Warboots \\ PH Copy Draconic Gladiator's Plate Warboots
+				i(218691),	-- Forged Gladiator's Plate Stompers \\ PH Copy Draconic Gladiator's Plate Stompers
+				i(218692),	-- Forged Gladiator's Plate Gauntlets \\ PH Copy Draconic Gladiator's Plate Gauntlets
+				i(218693),	-- Forged Gladiator's Plate Handguards \\ PH Copy Draconic Gladiator's Plate Handguards
+				i(218694),	-- Forged Gladiator's Plate Helm \\ PH Copy Draconic Gladiator's Plate Helm
+				i(218695),	-- Forged Gladiator's Plate Helmet \\ PH Copy Draconic Gladiator's Plate Helmet
+				i(218696),	-- Forged Gladiator's Plate Legguards \\ PH Copy Draconic Gladiator's Plate Legguards
+				i(218697),	-- Forged Gladiator's Plate Wargreaves \\ PH Copy Draconic Gladiator's Plate Wargreaves
+				i(218698),	-- Forged Gladiator's Plate Shoulders \\ PH Copy Draconic Gladiator's Plate Shoulders
+				i(218699),	-- Forged Gladiator's Plate Pauldrons \\ PH Copy Draconic Gladiator's Plate Pauldrons
+				i(218700),	-- Forged Gladiator's Plate Girdle \\ PH Copy Draconic Gladiator's Plate Girdle
+				i(218701),	-- Forged Gladiator's Plate Greatbelt \\ PH Copy Draconic Gladiator's Plate Greatbelt
+				i(218702),	-- Forged Gladiator's Plate Wristguards \\ PH Copy Draconic Gladiator's Plate Wristguards
+				i(218703),	-- Forged Gladiator's Plate Vambraces \\ PH Copy Draconic Gladiator's Plate Vambraces
+				i(218704),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
+				i(218705),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
+				i(218706),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
+				i(218707),	-- Forged Gladiator's Ring \\ PH Copy Draconic Gladiator's Ring
+				i(218708),	-- Forged Gladiator's Band \\ PH Copy Draconic Gladiator's Band
+				i(218709),	-- Forged Gladiator's Signet \\ PH Copy Draconic Gladiator's Signet
+				i(218710),	-- Forged Gladiator's Necklace \\ PH Copy Draconic Gladiator's Necklace
+				i(218711),	-- Forged Gladiator's Pendant \\ PH Copy Draconic Gladiator's Pendant
+				i(218712),	-- Forged Gladiator's Amulet \\ PH Copy Draconic Gladiator's Amulet
+				i(218713),	-- Forged Gladiator's Badge of Ferocity \\ PH Copy Draconic Gladiator's Badge of Ferocity
+				i(218714),	-- Forged Gladiator's Insignia of Alacrity \\ PH Copy Draconic Gladiator's Insignia of Alacrity
+				i(218715),	-- Forged Gladiator's Emblem \\ PH Copy Draconic Gladiator's Emblem
+				i(218716),	-- Forged Gladiator's Medallion \\ PH Copy Draconic Gladiator's Medallion
+				i(218717),	-- Forged Gladiator's Sigil of Adaptation \\ PH Copy Draconic Gladiator's Sigil of Adaptation
+				i(218718),	-- Forged Gladiator's Splitter \\ PH Copy Draconic Gladiator's Splitter
+				i(218719),	-- Forged Gladiator's Dagger \\ PH Copy Draconic Gladiator's Dagger
+				i(218720),	-- Forged Gladiator's Warglaive \\ PH Copy Draconic Gladiator's Warglaive
+				i(218721),	-- Forged Gladiator's Spear \\ Forged Gladiator's Scythe \\ PH Copy Draconic Gladiator's Scythe
+				i(218722),	-- Forged Gladiator's Staff \\ PH Copy Draconic Gladiator's Staff
+				i(218723),	-- Forged Gladiator's Bow \\ Forged Gladiator's Rifle \\ PH Copy Draconic Gladiator's Rifle
+				i(218724),	-- Forged Gladiator's Scepter \\ PH Copy Draconic Gladiator's Scepter
+				i(218725),	-- Forged Gladiator's Focus \\ Forged Gladiator's Censer \\ PH Copy Draconic Gladiator's Censer
+				i(218726),	-- Forged Gladiator's Shield \\ PH Copy Draconic Gladiator's Shield
+				i(218727),	-- Forged Gladiator's Axe \\ PH Copy Draconic Gladiator's Axe
+				i(218728),	-- Forged Gladiator's Pincer \\ Forged Gladiator's Sickle \\ PH Copy Draconic Gladiator's Sickle
+				i(218729),	-- Forged Gladiator's Claws \\ PH Copy Draconic Gladiator's Claws
+				i(218730),	-- Forged Gladiator's Crossbow \\ Forged Gladiator's Bow \\ PH Copy Draconic Gladiator's Bow
+				i(218731),	-- Forged Gladiator's Greatstaff \\ PH Copy Draconic Gladiator's Greatstaff
+				i(218732),	-- Forged Gladiator's Bulwark \\ PH Copy Draconic Gladiator's Bulwark
+				i(218733),	-- Forged Gladiator's Greataxe \\ Forged Gladiator's Greatsword \\ PH Copy Draconic Gladiator's Greatsword
+				i(218734),	-- Forged Gladiator's Pulverizer \\ PH Copy Draconic Gladiator's Pulverizer
+				i(218735),	-- Forged Gladiator's Sword \\ PH Copy Draconic Gladiator's Sword
+				i(218736),	-- Forged Gladiator's Skewer \\ Forged Gladiator's Shotel \\ PH Copy Draconic Gladiator's Shotel
+				i(218737),	-- Forged Gladiator's Battlestaff \\ Forged Gladiator's Axestaff \\ PH Copy Draconic Gladiator's Axestaff
+				i(220378),	-- Forged Equipment Chest \\ PH War Within Equipment Chest
+				i(223807),	-- Forged Warmonger's Garb \\ X Warmonger's Garb
+				i(223808),	-- Forged Warmonger's Slippers \\ X Warmonger's Slippers
+				i(223809),	-- Forged Warmonger's Gloves \\ X Warmonger's Gloves
+				i(223810),	-- Forged Warmonger's Crown \\ X Warmonger's Crown
+				i(223811),	-- Forged Warmonger's Pants \\ X Warmonger's Pants
+				i(223812),	-- Forged Warmonger's Cord \\ X Warmonger's Cord
+				i(223813),	-- Forged Warmonger's Bindings \\ X Warmonger's Bindings
+				i(223814),	-- Forged Warmonger's Mantle \\ X Warmonger's Mantle
+				i(223815),	-- Forged Warmonger's Boots \\ X Warmonger's Boots
+				i(223816),	-- Forged Warmonger's Handwraps \\ X Warmonger's Handwraps
+				i(223817),	-- Forged Warmonger's Hood \\ X Warmonger's Hood
+				i(223818),	-- Forged Warmonger's Breeches \\ X Warmonger's Breeches
+				i(223819),	-- Forged Warmonger's Belt \\ X Warmonger's Belt
+				i(223820),	-- Forged Warmonger's Wraps \\ X Warmonger's Wraps
+				i(223821),	-- Forged Warmonger's Jerkin \\ X Warmonger's Jerkin
+				i(223822),	-- Forged Warmonger's Shoulderguard \\ X Warmonger's Shoulderguard
+				i(223823),	-- Forged Warmonger's Faceplate \\ X Warmonger's Faceplate
+				i(223824),	-- Forged Warmonger's Cuirass \\ X Warmonger's Cuirass
+				i(223825),	-- Forged Warmonger's Sabatons \\ X Warmonger's Sabatons
+				i(223826),	-- Forged Warmonger's Gauntlets \\ X Warmonger's Gauntlets
+				i(223827),	-- Forged Warmonger's Legguards \\ X Warmonger's Legguards
+				i(223828),	-- Forged Warmonger's Spaulders \\ X Warmonger's Spaulders
+				i(223829),	-- Forged Warmonger's Clasp \\ X Warmonger's Clasp
+				i(223830),	-- Forged Warmonger's Bracers \\ X Warmonger's Bracers
+				i(223831),	-- Forged Warmonger's Chestguard \\ Forged Warmonger's Chainmail \\ X Warmonger's Chainmail
+				i(223832),	-- Forged Warmonger's Greaves \\ X Warmonger's Greaves
+				i(223833),	-- Forged Warmonger's Grips \\ X Warmonger's Grips
+				i(223834),	-- Forged Warmonger's Helm \\ X Warmonger's Helm
+				i(223835),	-- Forged Warmonger's Leggings \\ X Warmonger's Leggings
+				i(223836),	-- Forged Warmonger's Epaulets \\ X Warmonger's Epaulets
+				i(223837),	-- Forged Warmonger's Cinch \\ X Warmonger's Cinch
+				i(223838),	-- Forged Warmonger's Armguards \\ X Warmonger's Armguards
+				i(223839),	-- Forged Warmonger's Cape \\ X Warmonger's Cape
+				i(223840),	-- Forged Warmonger's Shawl \\ X Warmonger's Shawl
+				i(223841),	-- Forged Warmonger's Cloak \\ X Warmonger's Cloak
+				i(223842),	-- Forged Warmonger's Drape \\ X Warmonger's Drape
+				i(223844),	-- Forged Warmonger's Battleaxe \\ X Warmonger's Battleaxe
+				i(223845),	-- Forged Warmonger's Hatchet \\ X Warmonger's Hatchet
+				i(223846),	-- Forged Warmonger's Carver \\ X Warmonger's Carver
+				i(223847),	-- Forged Warmonger's Flameshot \\ X Warmonger's Flameshot
+				i(223848),	-- Forged Warmonger's Twinblade \\ X Warmonger's Twinblade
+				i(223851),	-- Forged Warmonger's Branch \\ X Warmonger's Branch
+				i(223852),	-- Forged Warmonger's Spire \\ X Warmonger's Spire
+				i(223853),	-- Forged Warmonger's Battlestaff \\ X Warmonger's Battlestaff
+				i(223854),	-- Forged Warmonger's Greatsword \\ X Warmonger's Greatsword
+				i(223855),	-- Forged Warmonger's Broadsword \\ X Warmonger's Broadsword
+				i(223856),	-- Forged Warmonger's Club \\ X Warmonger's Club
+				i(223857),	-- Forged Warmonger's Hammer \\ X Warmonger's Hammer
+				i(223858),	-- Forged Warmonger's Cudgel \\ X Warmonger's Cudgel
+				i(223859),	-- Forged Warmonger's Aegis \\ X Warmonger's Aegis
+				i(223860),	-- Forged Warmonger's Impaler \\ X Warmonger's Impaler
+				i(223861),	-- Forged Warmonger's Spear \\ X Warmonger's Spear
+				i(223862),	-- Forged Warmonger's Wand \\ X Warmonger's Wand
+				i(223863),	-- Forged Warmonger's Mace \\ X Warmonger's Mace
+				i(223864),	-- Forged Warmonger's Crusher \\ X Warmonger's Crusher
+				i(223865),	-- Forged Warmonger's Scepter \\ X Warmonger's Scepter
+				i(223867),	-- Forged Warmonger's Dagger \\ X Warmonger's Dagger
+				i(223868),	-- Forged Warmonger's Dirk \\ X Warmonger's Dirk
+				i(223616),	-- Forged Gladiator's Tabard \\ [PH] 11.0 PVP - Gladiator's Tabard
+				i(223617),	-- Forged Gladiator's Prestigious Cloak \\ [PH] 11.0 Gladiator's Prestigious Cloak
+				i(225856),	-- Forged Gladiator's Axe
+				i(225857),	-- Forged Gladiator's Dagger
+				i(225858),	-- Forged Gladiator's Pincer
+				i(225859),	-- Forged Gladiator's Warglaive
+				i(225860),	-- Forged Gladiator's Spear
+				i(225861),	-- Forged Gladiator's Staff
+				i(225862),	-- Forged Gladiator's Greatstaff
+				i(225863),	-- Forged Gladiator's Battlestaff
+				i(225864),	-- Forged Gladiator's Crossbow
+				i(225865),	-- Forged Gladiator's Scepter
+				i(225866),	-- Forged Gladiator's Focus
+				i(225867),	-- Forged Gladiator's Shield
+				i(225868),	-- Forged Gladiator's Bulwark
+				i(225869),	-- Forged Gladiator's Claws
+				i(225870),	-- Forged Gladiator's Bow
+				i(225871),	-- Forged Gladiator's Greataxe \\ Forged Gladiator's Greatsword
+				i(225872),	-- Forged Gladiator's Pulverizer
+				i(225873),	-- Forged Gladiator's Sword
+				i(225874),	-- Forged Gladiator's Wither-Blade \\ Forged Gladiator's Shotel
 			}),
 			n(MISC, {
 				i(206134),	-- Potion of Healing
@@ -988,7 +1251,7 @@ root(ROOTS.Unsorted, {
 				i(206601),	-- Dark-Nurtured Scallions
 				i(207084),	-- Auebry's Marker Pistol
 				i(208948),	-- [DNT] Club Chest Key \\ Club Chest Key
-				i(208957),	-- Totem of the Southern Storm
+				i(208957),	-- Conduit of the Southern Storm
 				i(209857),	-- Unusual Seeds
 				i(210745),	-- Firelight Spud
 				i(211209),	-- Suspicious Candle
@@ -1079,8 +1342,6 @@ root(ROOTS.Unsorted, {
 				---
 				i(215146),	-- JC Gemcutting Toy
 			}),
-
-			--
 			i(217965),	-- Repair Kit
 			i(217970),	-- Dormant Runestone
 			i(217971),	-- Deadly Cypher
@@ -1298,7 +1559,6 @@ root(ROOTS.Unsorted, {
 			i(218306),	-- Recruit's Sturdy Wrap
 			i(218308),	-- Winter Veil Cracker
 			i(218309),	-- Gently Shaken Gift
-
 			i(218311),	-- Winter Veil Gift
 			i(218312),	-- Recruit's Sturdy Polearm \\ Recruit's Sturdy Poleaxe
 			i(218313),	-- Recruit's Sturdy Greatsword
@@ -1332,383 +1592,10 @@ root(ROOTS.Unsorted, {
 			i(218351),	-- Expeditionary Cape \\ [DNT] Arathi Renown Cloak
 			i(218352),	-- Expeditionary Tabard \\ [DNT] Arathi Renown Tabard
 			i(218354),	-- Clammer's Pry Bar
-			i(218357),	-- Forged Aspirant's Plate Helm \\ PH Copy Draconic Aspirant's Plate Helm
-			i(218358),	-- Forged Aspirant's Silk Robe \\ PH Copy Draconic Aspirant's Silk Robe
-			i(218359),	-- Forged Aspirant's Chestplate \\ Forged Aspirant's Plate Chestplate \\ PH Copy Draconic Aspirant's Plate Chestplate
-			i(218360),	-- Forged Aspirant's Armored Vest \\ Forged Aspirant's Chain Vest \\ PH Copy Draconic Aspirant's Chain Vest
-			i(218361),	-- Forged Aspirant's Leather Vest \\ PH Copy Draconic Aspirant's Leather Vest
-			i(218362),	-- Forged Aspirant's Plate Warboots \\ PH Copy Draconic Aspirant's Plate Warboots
-			i(218363),	-- Forged Aspirant's Silk Treads \\ PH Copy Draconic Aspirant's Silk Treads
-			i(218364),	-- Forged Aspirant's Chain Sabatons \\ PH Copy Draconic Aspirant's Chain Sabatons
-			i(218365),	-- Forged Aspirant's Leather Boots \\ PH Copy Draconic Aspirant's Leather Boots
-			i(218366),	-- Forged Aspirant's Leather Gloves \\ PH Copy Draconic Aspirant's Leather Gloves
-			i(218367),	-- Forged Aspirant's Plate Gauntlets \\ PH Copy Draconic Aspirant's Plate Gauntlets
-			i(218368),	-- Forged Aspirant's Silk Gloves \\ PH Copy Draconic Aspirant's Silk Gloves
-			i(218369),	-- Forged Aspirant's Chain Gauntlets \\ PH Copy Draconic Aspirant's Chain Gauntlets
-			i(218370),	-- Forged Aspirant's Silk Hood \\ PH Copy Draconic Aspirant's Silk Hood
-			i(218371),	-- Forged Aspirant's Chain Helm \\ PH Copy Draconic Aspirant's Chain Helm
-			i(218372),	-- Forged Aspirant's Leather Helm \\ PH Copy Draconic Aspirant's Leather Helm
-			i(218373),	-- Forged Aspirant's Plate Legguards \\ PH Copy Draconic Aspirant's Plate Legguards
-			i(218374),	-- Forged Aspirant's Silk Leggings \\ PH Copy Draconic Aspirant's Silk Leggings
-			i(218375),	-- Forged Aspirant's Chain Leggings \\ PH Copy Draconic Aspirant's Chain Leggings
-			i(218376),	-- Forged Aspirant's Leather Breeches \\ PH Copy Draconic Aspirant's Leather Breeches
-			i(218377),	-- Forged Aspirant's Leather Spaulders \\ PH Copy Draconic Aspirant's Leather Spaulders
-			i(218378),	-- Forged Aspirant's Plate Shoulders \\ PH Copy Draconic Aspirant's Plate Shoulders
-			i(218379),	-- Forged Aspirant's Silk Mantle \\ PH Copy Draconic Aspirant's Silk Mantle
-			i(218380),	-- Forged Aspirant's Chain Spaulders \\ PH Copy Draconic Aspirant's Chain Spaulders
-			i(218381),	-- Forged Aspirant's Plate Girdle \\ PH Copy Draconic Aspirant's Plate Girdle
-			i(218382),	-- Forged Aspirant's Silk Cord \\ PH Copy Draconic Aspirant's Silk Cord
-			i(218383),	-- Forged Aspirant's Chain Belt \\ PH Copy Draconic Aspirant's Chain Belt
-			i(218384),	-- Forged Aspirant's Leather Belt \\ PH Copy Draconic Aspirant's Leather Belt
-			i(218385),	-- Forged Aspirant's Silk Wristwraps \\ PH Copy Draconic Aspirant's Silk Wristwraps
-			i(218386),	-- Forged Aspirant's Plate Cuffs \\ PH Copy Draconic Aspirant's Plate Cuffs
-			i(218387),	-- Forged Aspirant's Chain Wristwraps \\ PH Copy Draconic Aspirant's Chain Wristwraps
-			i(218388),	-- Forged Aspirant's Leather Wristwraps \\ PH Copy Draconic Aspirant's Leather Wristwraps
-			i(218389),	-- Forged Aspirant's Plate Headguard \\ PH Copy Draconic Aspirant's Plate Headguard
-			i(218390),	-- Forged Aspirant's Silk Shirt \\ Forged Aspirant's Silk Vestments \\ PH Copy Draconic Aspirant's Silk Vestments
-			i(218391),	-- Forged Aspirant's Plate Armor \\ PH Copy Draconic Aspirant's Plate Armor
-			i(218392),	-- Forged Aspirant's Armored Tunic \\ Forged Aspirant's Chain Tunic \\ PH Copy Draconic Aspirant's Chain Tunic
-			i(218393),	-- Forged Aspirant's Leather Tunic \\ PH Copy Draconic Aspirant's Leather Tunic
-			i(218394),	-- Forged Aspirant's Plate Stompers \\ PH Copy Draconic Aspirant's Plate Stompers
-			i(218395),	-- Forged Aspirant's Silk Footwraps \\ PH Copy Draconic Aspirant's Silk Footwraps
-			i(218396),	-- Forged Aspirant's Chain Stompers \\ PH Copy Draconic Aspirant's Chain Stompers
-			i(218397),	-- Forged Aspirant's Leather Footpads \\ PH Copy Draconic Aspirant's Leather Footpads
-			i(218398),	-- Forged Aspirant's Leather Grips \\ PH Copy Draconic Aspirant's Leather Grips
-			i(218399),	-- Forged Aspirant's Plate Handguards \\ PH Copy Draconic Aspirant's Plate Handguards
-			i(218400),	-- Forged Aspirant's Silk Handwraps \\ PH Copy Draconic Aspirant's Silk Handwraps
-			i(218401),	-- Forged Aspirant's Chain Handguards \\ PH Copy Draconic Aspirant's Chain Handguards
-			i(218402),	-- Forged Aspirant's Silk Cover \\ PH Copy Draconic Aspirant's Silk Cover
-			i(218403),	-- Forged Aspirant's Chain Headguard \\ PH Copy Draconic Aspirant's Chain Headguard
-			i(218404),	-- Forged Aspirant's Leather Mask \\ PH Copy Draconic Aspirant's Leather Mask
-			i(218405),	-- Forged Aspirant's Plate Wargreaves \\ PH Copy Draconic Aspirant's Plate Wargreaves
-			i(218406),	-- Forged Aspirant's Silk Legwraps \\ PH Copy Draconic Aspirant's Silk Legwraps
-			i(218407),	-- Forged Aspirant's Chain Wargreaves \\ PH Copy Draconic Aspirant's Chain Wargreaves
-			i(218408),	-- Forged Aspirant's Leather Leggings \\ PH Copy Draconic Aspirant's Leather Leggings
-			i(218409),	-- Forged Aspirant's Leather Mantle \\ PH Copy Draconic Aspirant's Leather Mantle
-			i(218410),	-- Forged Aspirant's Plate Pauldrons \\ PH Copy Draconic Aspirant's Plate Pauldrons
-			i(218411),	-- Forged Aspirant's Silk Shawl \\ PH Copy Draconic Aspirant's Silk Shawl
-			i(218412),	-- Forged Aspirant's Chain Shoulderguards \\ PH Copy Draconic Aspirant's Chain Shoulderguards
-			i(218413),	-- Forged Aspirant's Plate Greatbelt \\ PH Copy Draconic Aspirant's Plate Greatbelt
-			i(218414),	-- Forged Aspirant's Silk Belt \\ PH Copy Draconic Aspirant's Silk Belt
-			i(218415),	-- Forged Aspirant's Chain Clasp \\ PH Copy Draconic Aspirant's Chain Clasp
-			i(218416),	-- Forged Aspirant's Leather Cord \\ PH Copy Draconic Aspirant's Leather Cord
-			i(218417),	-- Forged Aspirant's Silk Bindings \\ PH Copy Draconic Aspirant's Silk Bindings
-			i(218418),	-- Forged Aspirant's Plate Armguards \\ PH Copy Draconic Aspirant's Plate Armguards
-			i(218419),	-- Forged Aspirant's Chain Bracer \\ PH Copy Draconic Aspirant's Chain Bracer
-			i(218420),	-- Forged Aspirant's Leather Armguards \\ PH Copy Draconic Aspirant's Leather Armguards
-			i(218421),	-- Forged Aspirant's Badge of Ferocity \\ PH Copy Draconic Aspirant's Badge of Ferocity
-			i(218422),	-- Forged Aspirant's Medallion \\ PH Copy Draconic Aspirant's Medallion
-			i(218423),	-- Forged Aspirant's Insignia of Alacrity \\ PH Copy Draconic Aspirant's Insignia of Alacrity
-			i(218424),	-- Forged Aspirant's Emblem \\ PH Copy Draconic Aspirant's Emblem
-			i(218425),	-- Forged Aspirant's Sigil of Adaptation \\ PH Copy Draconic Aspirant's Sigil of Adaptation
-			i(218426),	-- Forged Aspirant's Ring \\ PH Copy Draconic Aspirant's Ring
-			i(218427),	-- Forged Aspirant's Band \\ PH Copy Draconic Aspirant's Band
-			i(218428),	-- Forged Aspirant's Signet \\ PH Copy Draconic Aspirant's Signet
-			i(218429),	-- Forged Aspirant's Necklace \\ PH Copy Draconic Aspirant's Necklace
-			i(218430),	-- Forged Aspirant's Choker \\ PH Copy Draconic Aspirant's Choker
-			i(218431),	-- Forged Aspirant's Pendant \\ PH Copy Draconic Aspirant's Pendant
-			i(218432),	-- Forged Aspirant's Drape \\ PH Copy Draconic Aspirant's Drape
-			i(218433),	-- Forged Aspirant's Cloak \\ PH Copy Draconic Aspirant's Cloak
-			i(218434),	-- Forged Aspirant's Cape \\ PH Copy Draconic Aspirant's Cape
-			i(218435),	-- Forged Aspirant's Greatcloak \\ PH Copy Draconic Aspirant's Greatcloak
-			i(218436),	-- Forged Aspirant's Battleaxe \\ PH Copy Draconic Aspirant's Battleaxe
-			i(218437),	-- Forged Aspirant's Dagger \\ PH Copy Draconic Aspirant's Dagger
-			i(218438),	-- Forged Aspirant's Mace \\ PH Copy Draconic Aspirant's Mace
-			i(218439),	-- Forged Aspirant's Polearm \\ PH Copy Draconic Aspirant's Polearm
-			i(218440),	-- Forged Aspirant's Staff \\ PH Copy Draconic Aspirant's Staff
-			i(218441),	-- Forged Aspirant's Greatsword \\ PH Copy Draconic Aspirant's Greatsword
-			i(218442),	-- Forged Aspirant's Censer \\ PH Copy Draconic Aspirant's Censer
-			i(218443),	-- Forged Aspirant's Warglaive \\ PH Copy Draconic Aspirant's Warglaive
-			i(218444),	-- Forged Aspirant's Scepter \\ PH Copy Draconic Aspirant's Scepter
-			i(218445),	-- Forged Aspirant's Shield \\ PH Copy Draconic Aspirant's Shield
-			i(218446),	-- Forged Aspirant's Rifle \\ PH Copy Draconic Aspirant's Rifle
-			i(218447),	-- Forged Aspirant's Halberd \\ PH Copy Draconic Aspirant's Halberd
-			i(218448),	-- Forged Aspirant's Morningstar \\ PH Copy Draconic Aspirant's Morningstar
-			i(218449),	-- Forged Aspirant's Knife \\ PH Copy Draconic Aspirant's Knife
-			i(218451),	-- Forged Aspirant's Chopper \\ PH Copy Draconic Aspirant's Chopper
-			i(218452),	-- Forged Aspirant's Wand \\ PH Copy Draconic Aspirant's Wand
 			i(218456),	-- Precious Gems
 			i(218457),	-- Special Silk
 			i(218458),	-- Important Info Scrolls
 			i(218459),	-- TBD
-			i(218460),	-- Forged Gladiator's Silk Tunic \\ PH Copy Draconic Gladiator's Silk Tunic
-			i(218461),	-- Forged Gladiator's Silk Blouse \\ PH Copy Draconic Gladiator's Silk Blouse
-			i(218462),	-- Forged Gladiator's Silk Slippers \\ PH Copy Draconic Gladiator's Silk Slippers
-			i(218463),	-- Forged Gladiator's Silk Treads \\ PH Copy Draconic Gladiator's Silk Treads
-			i(218464),	-- Forged Gladiator's Silk Gloves \\ PH Copy Draconic Gladiator's Silk Gloves
-			i(218465),	-- Forged Gladiator's Silk Handwraps \\ PH Copy Draconic Gladiator's Silk Handwraps
-			i(218466),	-- Forged Gladiator's Silk Hat \\ PH Copy Draconic Gladiator's Silk Hat
-			i(218467),	-- Forged Gladiator's Silk Cap \\ PH Copy Draconic Gladiator's Silk Cap
-			i(218468),	-- Forged Gladiator's Silk Leggings \\ PH Copy Draconic Gladiator's Silk Leggings
-			i(218469),	-- Forged Gladiator's Silk Trousers \\ PH Copy Draconic Gladiator's Silk Trousers
-			i(218470),	-- Forged Gladiator's Silk Mantle \\ PH Copy Draconic Gladiator's Silk Mantle
-			i(218471),	-- Forged Gladiator's Silk Amice \\ PH Copy Draconic Gladiator's Silk Amice
-			i(218472),	-- Forged Gladiator's Silk Cord \\ PH Copy Draconic Gladiator's Silk Cord
-			i(218473),	-- Forged Gladiator's Silk Belt \\ PH Copy Draconic Gladiator's Silk Belt
-			i(218474),	-- Forged Gladiator's Silk Wristwraps \\ PH Copy Draconic Gladiator's Silk Wristwraps
-			i(218475),	-- Forged Gladiator's Silk Armbands \\ PH Copy Draconic Gladiator's Silk Armbands
-			i(218476),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218477),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218478),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218479),	-- Forged Gladiator's Silk Robes \\ Forged Gladiator's Silk Tunic \\ PH Copy Draconic Gladiator's Silk Tunic
-			i(218480),	-- Forged Gladiator's Silk Vestments \\ Forged Gladiator's Silk Blouse \\ PH Copy Draconic Gladiator's Silk Blouse
-			i(218481),	-- Forged Gladiator's Silk Slippers \\ PH Copy Draconic Gladiator's Silk Slippers
-			i(218482),	-- Forged Gladiator's Silk Treads \\ PH Copy Draconic Gladiator's Silk Treads
-			i(218483),	-- Forged Gladiator's Silk Gloves \\ PH Copy Draconic Gladiator's Silk Gloves
-			i(218484),	-- Forged Gladiator's Silk Handwraps \\ PH Copy Draconic Gladiator's Silk Handwraps
-			i(218485),	-- Forged Gladiator's Silk Hood \\ PH Copy Draconic Gladiator's Silk Hood
-			i(218486),	-- Forged Gladiator's Silk Guise \\ PH Copy Draconic Gladiator's Silk Guise
-			i(218487),	-- Forged Gladiator's Silk Leggings \\ PH Copy Draconic Gladiator's Silk Leggings
-			i(218488),	-- Forged Gladiator's Silk Trousers \\ PH Copy Draconic Gladiator's Silk Trousers
-			i(218489),	-- Forged Gladiator's Silk Mantle \\ PH Copy Draconic Gladiator's Silk Mantle
-			i(218490),	-- Forged Gladiator's Silk Amice \\ PH Copy Draconic Gladiator's Silk Amice
-			i(218491),	-- Forged Gladiator's Silk Cord \\ PH Copy Draconic Gladiator's Silk Cord
-			i(218492),	-- Forged Gladiator's Silk Belt \\ PH Copy Draconic Gladiator's Silk Belt
-			i(218493),	-- Forged Gladiator's Silk Wristwraps \\ PH Copy Draconic Gladiator's Silk Wristwraps
-			i(218494),	-- Forged Gladiator's Silk Armbands \\ PH Copy Draconic Gladiator's Silk Armbands
-			i(218495),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218496),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218497),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218498),	-- Forged Gladiator's Silk Raiment \\ Forged Gladiator's Silk Robe \\ PH Copy Draconic Gladiator's Silk Robe
-			i(218499),	-- Forged Gladiator's Silk Vestments \\ PH Copy Draconic Gladiator's Silk Vestments
-			i(218500),	-- Forged Gladiator's Silk Slippers \\ PH Copy Draconic Gladiator's Silk Slippers
-			i(218501),	-- Forged Gladiator's Silk Treads \\ PH Copy Draconic Gladiator's Silk Treads
-			i(218502),	-- Forged Gladiator's Silk Gloves \\ PH Copy Draconic Gladiator's Silk Gloves
-			i(218503),	-- Forged Gladiator's Silk Handwraps \\ PH Copy Draconic Gladiator's Silk Handwraps
-			i(218504),	-- Forged Gladiator's Silk Hood \\ PH Copy Draconic Gladiator's Silk Hood
-			i(218505),	-- Forged Gladiator's Silk Guise \\ PH Copy Draconic Gladiator's Silk Guise
-			i(218506),	-- Forged Gladiator's Silk Leggings \\ PH Copy Draconic Gladiator's Silk Leggings
-			i(218507),	-- Forged Gladiator's Silk Trousers \\ PH Copy Draconic Gladiator's Silk Trousers
-			i(218508),	-- Forged Gladiator's Silk Mantle \\ PH Copy Draconic Gladiator's Silk Mantle
-			i(218509),	-- Forged Gladiator's Silk Amice \\ PH Copy Draconic Gladiator's Silk Amice
-			i(218510),	-- Forged Gladiator's Silk Cord \\ PH Copy Draconic Gladiator's Silk Cord
-			i(218511),	-- Forged Gladiator's Silk Belt \\ PH Copy Draconic Gladiator's Silk Belt
-			i(218512),	-- Forged Gladiator's Silk Wristwraps \\ PH Copy Draconic Gladiator's Silk Wristwraps
-			i(218513),	-- Forged Gladiator's Silk Armbands \\ PH Copy Draconic Gladiator's Silk Armbands
-			i(218514),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218515),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218516),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218517),	-- Forged Gladiator's Leather Vest \\ Forged Gladiator's Leather Robe \\ PH Copy Draconic Gladiator's Leather Robe
-			i(218518),	-- Forged Gladiator's Leather Vestments \\ PH Copy Draconic Gladiator's Leather Vestments
-			i(218519),	-- Forged Gladiator's Leather Boots \\ PH Copy Draconic Gladiator's Leather Boots
-			i(218520),	-- Forged Gladiator's Leather Treads \\ PH Copy Draconic Gladiator's Leather Treads
-			i(218521),	-- Forged Gladiator's Leather Gloves \\ PH Copy Draconic Gladiator's Leather Gloves
-			i(218522),	-- Forged Gladiator's Leather Grips \\ PH Copy Draconic Gladiator's Leather Grips
-			i(218523),	-- Forged Gladiator's Leather Helm \\ PH Copy Draconic Gladiator's Leather Helm
-			i(218524),	-- Forged Gladiator's Leather Mask \\ PH Copy Draconic Gladiator's Leather Mask
-			i(218525),	-- Forged Gladiator's Leather Breeches \\ PH Copy Draconic Gladiator's Leather Breeches
-			i(218526),	-- Forged Gladiator's Leather Legwraps \\ PH Copy Draconic Gladiator's Leather Legwraps
-			i(218527),	-- Forged Gladiator's Leather Spaulders \\ PH Copy Draconic Gladiator's Leather Spaulders
-			i(218528),	-- Forged Gladiator's Leather Shoulderpads \\ PH Copy Draconic Gladiator's Leather Shoulderpads
-			i(218529),	-- Forged Gladiator's Leather Belt \\ PH Copy Draconic Gladiator's Leather Belt
-			i(218530),	-- Forged Gladiator's Leather Strap \\ PH Copy Draconic Gladiator's Leather Strap
-			i(218531),	-- Forged Gladiator's Leather Wristwraps \\ PH Copy Draconic Gladiator's Leather Wristwraps
-			i(218532),	-- Forged Gladiator's Leather Wristguards \\ PH Copy Draconic Gladiator's Leather Wristguards
-			i(218533),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218534),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218535),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218536),	-- Forged Gladiator's Leather Vest \\ PH Copy Draconic Gladiator's Leather Vest
-			i(218537),	-- Forged Gladiator's Leather Jerkin \\ PH Copy Draconic Gladiator's Leather Jerkin
-			i(218538),	-- Forged Gladiator's Leather Boots \\ PH Copy Draconic Gladiator's Leather Boots
-			i(218539),	-- Forged Gladiator's Leather Treads \\ PH Copy Draconic Gladiator's Leather Treads
-			i(218540),	-- Forged Gladiator's Leather Gloves \\ PH Copy Draconic Gladiator's Leather Gloves
-			i(218541),	-- Forged Gladiator's Leather Grips \\ PH Copy Draconic Gladiator's Leather Grips
-			i(218542),	-- Forged Gladiator's Leather Helm \\ PH Copy Draconic Gladiator's Leather Helm
-			i(218543),	-- Forged Gladiator's Leather Mask \\ PH Copy Draconic Gladiator's Leather Mask
-			i(218544),	-- Forged Gladiator's Leather Breeches \\ PH Copy Draconic Gladiator's Leather Breeches
-			i(218545),	-- Forged Gladiator's Leather Legwraps \\ PH Copy Draconic Gladiator's Leather Legwraps
-			i(218546),	-- Forged Gladiator's Leather Spaulders \\ PH Copy Draconic Gladiator's Leather Spaulders
-			i(218547),	-- Forged Gladiator's Leather Shoulderpads \\ PH Copy Draconic Gladiator's Leather Shoulderpads
-			i(218548),	-- Forged Gladiator's Leather Belt \\ PH Copy Draconic Gladiator's Leather Belt
-			i(218549),	-- Forged Gladiator's Leather Strap \\ PH Copy Draconic Gladiator's Leather Strap
-			i(218550),	-- Forged Gladiator's Leather Wristwraps \\ PH Copy Draconic Gladiator's Leather Wristwraps
-			i(218551),	-- Forged Gladiator's Leather Wristguards \\ PH Copy Draconic Gladiator's Leather Wristguards
-			i(218552),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218553),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218554),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218555),	-- Forged Gladiator's Leather Vest \\ PH Copy Draconic Gladiator's Leather Vest
-			i(218556),	-- Forged Gladiator's Leather Jerkin \\ PH Copy Draconic Gladiator's Leather Jerkin
-			i(218557),	-- Forged Gladiator's Leather Boots \\ PH Copy Draconic Gladiator's Leather Boots
-			i(218558),	-- Forged Gladiator's Leather Treads \\ PH Copy Draconic Gladiator's Leather Treads
-			i(218559),	-- Forged Gladiator's Leather Gloves \\ PH Copy Draconic Gladiator's Leather Gloves
-			i(218560),	-- Forged Gladiator's Leather Grips \\ PH Copy Draconic Gladiator's Leather Grips
-			i(218561),	-- Forged Gladiator's Leather Helm \\ PH Copy Draconic Gladiator's Leather Helm
-			i(218562),	-- Forged Gladiator's Leather Mask \\ PH Copy Draconic Gladiator's Leather Mask
-			i(218563),	-- Forged Gladiator's Leather Breeches \\ PH Copy Draconic Gladiator's Leather Breeches
-			i(218564),	-- Forged Gladiator's Leather Legwraps \\ PH Copy Draconic Gladiator's Leather Legwraps
-			i(218565),	-- Forged Gladiator's Leather Spaulders \\ PH Copy Draconic Gladiator's Leather Spaulders
-			i(218566),	-- Forged Gladiator's Leather Shoulderpads \\ PH Copy Draconic Gladiator's Leather Shoulderpads
-			i(218567),	-- Forged Gladiator's Leather Belt \\ PH Copy Draconic Gladiator's Leather Belt
-			i(218568),	-- Forged Gladiator's Leather Strap \\ PH Copy Draconic Gladiator's Leather Strap
-			i(218569),	-- Forged Gladiator's Leather Wristwraps \\ PH Copy Draconic Gladiator's Leather Wristwraps
-			i(218570),	-- Forged Gladiator's Leather Wristguards \\ PH Copy Draconic Gladiator's Leather Wristguards
-			i(218571),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218572),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218573),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218574),	-- Forged Gladiator's Leather Vest \\ PH Copy Draconic Gladiator's Leather Vest
-			i(218575),	-- Forged Gladiator's Leather Jerkin \\ PH Copy Draconic Gladiator's Leather Jerkin
-			i(218576),	-- Forged Gladiator's Leather Boots \\ PH Copy Draconic Gladiator's Leather Boots
-			i(218577),	-- Forged Gladiator's Leather Treads \\ PH Copy Draconic Gladiator's Leather Treads
-			i(218578),	-- Forged Gladiator's Leather Gloves \\ PH Copy Draconic Gladiator's Leather Gloves
-			i(218579),	-- Forged Gladiator's Leather Grips \\ PH Copy Draconic Gladiator's Leather Grips
-			i(218580),	-- Forged Gladiator's Leather Helm \\ PH Copy Draconic Gladiator's Leather Helm
-			i(218581),	-- Forged Gladiator's Leather Mask \\ PH Copy Draconic Gladiator's Leather Mask
-			i(218582),	-- Forged Gladiator's Leather Breeches \\ PH Copy Draconic Gladiator's Leather Breeches
-			i(218583),	-- Forged Gladiator's Leather Legwraps \\ PH Copy Draconic Gladiator's Leather Legwraps
-			i(218584),	-- Forged Gladiator's Leather Spaulders \\ PH Copy Draconic Gladiator's Leather Spaulders
-			i(218585),	-- Forged Gladiator's Leather Shoulderpads \\ PH Copy Draconic Gladiator's Leather Shoulderpads
-			i(218586),	-- Forged Gladiator's Leather Belt \\ PH Copy Draconic Gladiator's Leather Belt
-			i(218587),	-- Forged Gladiator's Leather Strap \\ PH Copy Draconic Gladiator's Leather Strap
-			i(218588),	-- Forged Gladiator's Leather Wristwraps \\ PH Copy Draconic Gladiator's Leather Wristwraps
-			i(218589),	-- Forged Gladiator's Leather Wristguards \\ PH Copy Draconic Gladiator's Leather Wristguards
-			i(218590),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218591),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218592),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218593),	-- Forged Gladiator's Armored Scales \\ Forged Gladiator's Chain Robe \\ PH Copy Draconic Gladiator's Chain Robe
-			i(218594),	-- Forged Gladiator's Scaleguard \\ Forged Gladiator's Chain Vestments \\ PH Copy Draconic Gladiator's Chain Vestments
-			i(218595),	-- Forged Gladiator's Chain Sabatons \\ PH Copy Draconic Gladiator's Chain Sabatons
-			i(218596),	-- Forged Gladiator's Chain Boots \\ PH Copy Draconic Gladiator's Chain Boots
-			i(218597),	-- Forged Gladiator's Chain Gauntlets \\ PH Copy Draconic Gladiator's Chain Gauntlets
-			i(218598),	-- Forged Gladiator's Chain Handguards \\ PH Copy Draconic Gladiator's Chain Handguards
-			i(218599),	-- Forged Gladiator's Chain Helm \\ PH Copy Draconic Gladiator's Chain Helm
-			i(218600),	-- Forged Gladiator's Chain Faceguard \\ PH Copy Draconic Gladiator's Chain Faceguard
-			i(218601),	-- Forged Gladiator's Chain Leggings \\ PH Copy Draconic Gladiator's Chain Leggings
-			i(218602),	-- Forged Gladiator's Chain Breeches \\ PH Copy Draconic Gladiator's Chain Breeches
-			i(218603),	-- Forged Gladiator's Chain Monnion \\ PH Copy Draconic Gladiator's Chain Monnion
-			i(218604),	-- Forged Gladiator's Chain Shoulderguard \\ PH Copy Draconic Gladiator's Chain Shoulderguard
-			i(218605),	-- Forged Gladiator's Chain Belt \\ PH Copy Draconic Gladiator's Chain Belt
-			i(218606),	-- Forged Gladiator's Chain Girdle \\ PH Copy Draconic Gladiator's Chain Girdle
-			i(218607),	-- Forged Gladiator's Chain Wristguards \\ PH Copy Draconic Gladiator's Chain Wristguards
-			i(218608),	-- Forged Gladiator's Chain Bracers \\ PH Copy Draconic Gladiator's Chain Bracers
-			i(218609),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218610),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218611),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218612),	-- Forged Gladiator's Chain Vest \\ PH Copy Draconic Gladiator's Chain Vest
-			i(218613),	-- Forged Gladiator's Chain Tunic \\ PH Copy Draconic Gladiator's Chain Tunic
-			i(218614),	-- Forged Gladiator's Chain Sabatons \\ PH Copy Draconic Gladiator's Chain Sabatons
-			i(218615),	-- Forged Gladiator's Chain Boots \\ PH Copy Draconic Gladiator's Chain Boots
-			i(218616),	-- Forged Gladiator's Chain Gauntlets \\ PH Copy Draconic Gladiator's Chain Gauntlets
-			i(218617),	-- Forged Gladiator's Chain Handguards \\ PH Copy Draconic Gladiator's Chain Handguards
-			i(218618),	-- Forged Gladiator's Chain Helm \\ PH Copy Draconic Gladiator's Chain Helm
-			i(218619),	-- Forged Gladiator's Chain Faceguard \\ PH Copy Draconic Gladiator's Chain Faceguard
-			i(218620),	-- Forged Gladiator's Chain Leggings \\ PH Copy Draconic Gladiator's Chain Leggings
-			i(218621),	-- Forged Gladiator's Chain Breeches \\ PH Copy Draconic Gladiator's Chain Breeches
-			i(218622),	-- Forged Gladiator's Chain Monnion \\ PH Copy Draconic Gladiator's Chain Monnion
-			i(218623),	-- Forged Gladiator's Chain Shoulderguard \\ PH Copy Draconic Gladiator's Chain Shoulderguard
-			i(218624),	-- Forged Gladiator's Chain Belt \\ PH Copy Draconic Gladiator's Chain Belt
-			i(218625),	-- Forged Gladiator's Chain Girdle \\ PH Copy Draconic Gladiator's Chain Girdle
-			i(218626),	-- Forged Gladiator's Chain Wristguards \\ PH Copy Draconic Gladiator's Chain Wristguards
-			i(218627),	-- Forged Gladiator's Chain Bracers \\ PH Copy Draconic Gladiator's Chain Bracers
-			i(218628),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218629),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218630),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218631),	-- Forged Gladiator's Chain Vest \\ PH Copy Draconic Gladiator's Chain Vest
-			i(218632),	-- Forged Gladiator's Chain Tunic \\ PH Copy Draconic Gladiator's Chain Tunic
-			i(218633),	-- Forged Gladiator's Chain Sabatons \\ PH Copy Draconic Gladiator's Chain Sabatons
-			i(218634),	-- Forged Gladiator's Chain Boots \\ PH Copy Draconic Gladiator's Chain Boots
-			i(218635),	-- Forged Gladiator's Chain Gauntlets \\ PH Copy Draconic Gladiator's Chain Gauntlets
-			i(218636),	-- Forged Gladiator's Chain Handguards \\ PH Copy Draconic Gladiator's Chain Handguards
-			i(218637),	-- Forged Gladiator's Chain Helm \\ PH Copy Draconic Gladiator's Chain Helm
-			i(218638),	-- Forged Gladiator's Chain Faceguard \\ PH Copy Draconic Gladiator's Chain Faceguard
-			i(218639),	-- Forged Gladiator's Chain Leggings \\ PH Copy Draconic Gladiator's Chain Leggings
-			i(218640),	-- Forged Gladiator's Chain Breeches \\ PH Copy Draconic Gladiator's Chain Breeches
-			i(218641),	-- Forged Gladiator's Chain Monnion \\ PH Copy Draconic Gladiator's Chain Monnion
-			i(218642),	-- Forged Gladiator's Chain Shoulderguard \\ PH Copy Draconic Gladiator's Chain Shoulderguard
-			i(218643),	-- Forged Gladiator's Chain Belt \\ PH Copy Draconic Gladiator's Chain Belt
-			i(218644),	-- Forged Gladiator's Chain Girdle \\ PH Copy Draconic Gladiator's Chain Girdle
-			i(218645),	-- Forged Gladiator's Chain Wristguards \\ PH Copy Draconic Gladiator's Chain Wristguards
-			i(218646),	-- Forged Gladiator's Chain Bracers \\ PH Copy Draconic Gladiator's Chain Bracers
-			i(218647),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218648),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218649),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218650),	-- Forged Gladiator's Chestguard \\ Forged Gladiator's Plate Chestguard \\ PH Copy Draconic Gladiator's Plate Chestguard
-			i(218651),	-- Forged Gladiator's Chestplate \\ Forged Gladiator's Plate Chestplate \\ PH Copy Draconic Gladiator's Plate Chestplate
-			i(218652),	-- Forged Gladiator's Plate Warboots \\ PH Copy Draconic Gladiator's Plate Warboots
-			i(218653),	-- Forged Gladiator's Plate Stompers \\ PH Copy Draconic Gladiator's Plate Stompers
-			i(218654),	-- Forged Gladiator's Plate Gauntlets \\ PH Copy Draconic Gladiator's Plate Gauntlets
-			i(218655),	-- Forged Gladiator's Plate Handguards \\ PH Copy Draconic Gladiator's Plate Handguards
-			i(218656),	-- Forged Gladiator's Plate Helm \\ PH Copy Draconic Gladiator's Plate Helm
-			i(218657),	-- Forged Gladiator's Plate Helmet \\ PH Copy Draconic Gladiator's Plate Helmet
-			i(218658),	-- Forged Gladiator's Plate Legguards \\ PH Copy Draconic Gladiator's Plate Legguards
-			i(218659),	-- Forged Gladiator's Plate Wargreaves \\ PH Copy Draconic Gladiator's Plate Wargreaves
-			i(218660),	-- Forged Gladiator's Plate Shoulders \\ PH Copy Draconic Gladiator's Plate Shoulders
-			i(218661),	-- Forged Gladiator's Plate Pauldrons \\ PH Copy Draconic Gladiator's Plate Pauldrons
-			i(218662),	-- Forged Gladiator's Plate Girdle \\ PH Copy Draconic Gladiator's Plate Girdle
-			i(218663),	-- Forged Gladiator's Plate Greatbelt \\ PH Copy Draconic Gladiator's Plate Greatbelt
-			i(218664),	-- Forged Gladiator's Plate Wristguards \\ PH Copy Draconic Gladiator's Plate Wristguards
-			i(218665),	-- Forged Gladiator's Plate Vambraces \\ PH Copy Draconic Gladiator's Plate Vambraces
-			i(218666),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218667),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218668),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218669),	-- Forged Gladiator's Chestguard \\ Forged Gladiator's Plate Chestguard \\ PH Copy Draconic Gladiator's Plate Chestguard
-			i(218670),	-- Forged Gladiator's Chestplate \\ Forged Gladiator's Plate Chestplate \\ PH Copy Draconic Gladiator's Plate Chestplate
-			i(218671),	-- Forged Gladiator's Plate Warboots \\ PH Copy Draconic Gladiator's Plate Warboots
-			i(218672),	-- Forged Gladiator's Plate Stompers \\ PH Copy Draconic Gladiator's Plate Stompers
-			i(218673),	-- Forged Gladiator's Plate Gauntlets \\ PH Copy Draconic Gladiator's Plate Gauntlets
-			i(218674),	-- Forged Gladiator's Plate Handguards \\ PH Copy Draconic Gladiator's Plate Handguards
-			i(218675),	-- Forged Gladiator's Plate Helm \\ PH Copy Draconic Gladiator's Plate Helm
-			i(218676),	-- Forged Gladiator's Plate Helmet \\ PH Copy Draconic Gladiator's Plate Helmet
-			i(218677),	-- Forged Gladiator's Plate Legguards \\ PH Copy Draconic Gladiator's Plate Legguards
-			i(218678),	-- Forged Gladiator's Plate Tasses \\ PH Copy Draconic Gladiator's Plate Tasses
-			i(218679),	-- Forged Gladiator's Plate Shoulders \\ PH Copy Draconic Gladiator's Plate Shoulders
-			i(218680),	-- Forged Gladiator's Plate Pauldrons \\ PH Copy Draconic Gladiator's Plate Pauldrons
-			i(218681),	-- Forged Gladiator's Plate Girdle \\ PH Copy Draconic Gladiator's Plate Girdle
-			i(218682),	-- Forged Gladiator's Plate Greatbelt \\ PH Copy Draconic Gladiator's Plate Greatbelt
-			i(218683),	-- Forged Gladiator's Plate Wristguards \\ PH Copy Draconic Gladiator's Plate Wristguards
-			i(218684),	-- Forged Gladiator's Plate Vambraces \\ PH Copy Draconic Gladiator's Plate Vambraces
-			i(218685),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218686),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218687),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218688),	-- Forged Gladiator's Chestguard \\ Forged Gladiator's Plate Chestguard \\ PH Copy Draconic Gladiator's Plate Chestguard
-			i(218689),	-- Forged Gladiator's Chestplate \\ Forged Gladiator's Plate Chestplate \\ PH Copy Draconic Gladiator's Plate Chestplate
-			i(218690),	-- Forged Gladiator's Plate Warboots \\ PH Copy Draconic Gladiator's Plate Warboots
-			i(218691),	-- Forged Gladiator's Plate Stompers \\ PH Copy Draconic Gladiator's Plate Stompers
-			i(218692),	-- Forged Gladiator's Plate Gauntlets \\ PH Copy Draconic Gladiator's Plate Gauntlets
-			i(218693),	-- Forged Gladiator's Plate Handguards \\ PH Copy Draconic Gladiator's Plate Handguards
-			i(218694),	-- Forged Gladiator's Plate Helm \\ PH Copy Draconic Gladiator's Plate Helm
-			i(218695),	-- Forged Gladiator's Plate Helmet \\ PH Copy Draconic Gladiator's Plate Helmet
-			i(218696),	-- Forged Gladiator's Plate Legguards \\ PH Copy Draconic Gladiator's Plate Legguards
-			i(218697),	-- Forged Gladiator's Plate Wargreaves \\ PH Copy Draconic Gladiator's Plate Wargreaves
-			i(218698),	-- Forged Gladiator's Plate Shoulders \\ PH Copy Draconic Gladiator's Plate Shoulders
-			i(218699),	-- Forged Gladiator's Plate Pauldrons \\ PH Copy Draconic Gladiator's Plate Pauldrons
-			i(218700),	-- Forged Gladiator's Plate Girdle \\ PH Copy Draconic Gladiator's Plate Girdle
-			i(218701),	-- Forged Gladiator's Plate Greatbelt \\ PH Copy Draconic Gladiator's Plate Greatbelt
-			i(218702),	-- Forged Gladiator's Plate Wristguards \\ PH Copy Draconic Gladiator's Plate Wristguards
-			i(218703),	-- Forged Gladiator's Plate Vambraces \\ PH Copy Draconic Gladiator's Plate Vambraces
-			i(218704),	-- Forged Gladiator's Cloak \\ PH Copy Draconic Gladiator's Cloak
-			i(218705),	-- Forged Gladiator's Drape \\ PH Copy Draconic Gladiator's Drape
-			i(218706),	-- Forged Gladiator's Shawl \\ PH Copy Draconic Gladiator's Shawl
-			i(218707),	-- Forged Gladiator's Ring \\ PH Copy Draconic Gladiator's Ring
-			i(218708),	-- Forged Gladiator's Band \\ PH Copy Draconic Gladiator's Band
-			i(218709),	-- Forged Gladiator's Signet \\ PH Copy Draconic Gladiator's Signet
-			i(218710),	-- Forged Gladiator's Necklace \\ PH Copy Draconic Gladiator's Necklace
-			i(218711),	-- Forged Gladiator's Pendant \\ PH Copy Draconic Gladiator's Pendant
-			i(218712),	-- Forged Gladiator's Amulet \\ PH Copy Draconic Gladiator's Amulet
-			i(218713),	-- Forged Gladiator's Badge of Ferocity \\ PH Copy Draconic Gladiator's Badge of Ferocity
-			i(218714),	-- Forged Gladiator's Insignia of Alacrity \\ PH Copy Draconic Gladiator's Insignia of Alacrity
-			i(218715),	-- Forged Gladiator's Emblem \\ PH Copy Draconic Gladiator's Emblem
-			i(218716),	-- Forged Gladiator's Medallion \\ PH Copy Draconic Gladiator's Medallion
-			i(218717),	-- Forged Gladiator's Sigil of Adaptation \\ PH Copy Draconic Gladiator's Sigil of Adaptation
-			i(218718),	-- Forged Gladiator's Splitter \\ PH Copy Draconic Gladiator's Splitter
-			i(218719),	-- Forged Gladiator's Dagger \\ PH Copy Draconic Gladiator's Dagger
-			i(218720),	-- Forged Gladiator's Warglaive \\ PH Copy Draconic Gladiator's Warglaive
-			i(218721),	-- Forged Gladiator's Spear \\ Forged Gladiator's Scythe \\ PH Copy Draconic Gladiator's Scythe
-			i(218722),	-- Forged Gladiator's Staff \\ PH Copy Draconic Gladiator's Staff
-			i(218723),	-- Forged Gladiator's Bow \\ Forged Gladiator's Rifle \\ PH Copy Draconic Gladiator's Rifle
-			i(218724),	-- Forged Gladiator's Scepter \\ PH Copy Draconic Gladiator's Scepter
-			i(218725),	-- Forged Gladiator's Focus \\ Forged Gladiator's Censer \\ PH Copy Draconic Gladiator's Censer
-			i(218726),	-- Forged Gladiator's Shield \\ PH Copy Draconic Gladiator's Shield
-			i(218727),	-- Forged Gladiator's Axe \\ PH Copy Draconic Gladiator's Axe
-			i(218728),	-- Forged Gladiator's Pincer \\ Forged Gladiator's Sickle \\ PH Copy Draconic Gladiator's Sickle
-			i(218729),	-- Forged Gladiator's Claws \\ PH Copy Draconic Gladiator's Claws
-			i(218730),	-- Forged Gladiator's Crossbow \\ Forged Gladiator's Bow \\ PH Copy Draconic Gladiator's Bow
-			i(218731),	-- Forged Gladiator's Greatstaff \\ PH Copy Draconic Gladiator's Greatstaff
-			i(218732),	-- Forged Gladiator's Bulwark \\ PH Copy Draconic Gladiator's Bulwark
-			i(218733),	-- Forged Gladiator's Greataxe \\ Forged Gladiator's Greatsword \\ PH Copy Draconic Gladiator's Greatsword
-			i(218734),	-- Forged Gladiator's Pulverizer \\ PH Copy Draconic Gladiator's Pulverizer
-			i(218735),	-- Forged Gladiator's Sword \\ PH Copy Draconic Gladiator's Sword
-			i(218736),	-- Forged Gladiator's Skewer \\ Forged Gladiator's Shotel \\ PH Copy Draconic Gladiator's Shotel
-			i(218737),	-- Forged Gladiator's Battlestaff \\ Forged Gladiator's Axestaff \\ PH Copy Draconic Gladiator's Axestaff
 			i(218911),	-- [DNT] EarthenCivilian Robe Copper
 			i(218912),	-- [DNT] EarthenCivilian Robe Dark
 			i(218913),	-- [DNT] EarthenCivilian Robe Gold
@@ -1993,7 +1880,6 @@ root(ROOTS.Unsorted, {
 			i(220109),	-- Chainmail of Sina's Stalwarts
 			i(220112),	-- Cowl of Sina's Stalwarts
 			i(220113),	-- Tower-Keeper's Shoulderguards
-
 			i(220116),	-- Completed Market Audit
 			i(220118),	-- Arathi Demolition Charge
 			i(220119),	-- Lamplighter's Handwraps
@@ -2028,7 +1914,7 @@ root(ROOTS.Unsorted, {
 			i(220158),	-- Lightbringer's Amulet \\ [PH] The Cool Arathi Necklace (Stage 3)
 			i(220202),	-- Spymaster's Web
 			i(220212),	-- Aelric's Corrupted Tinderbox
-			i(220215),	-- Unknown's Tinderbox
+			i(220215),	-- Unidentified Tinderbox
 			i(220218),	-- Sticky Wax
 			i(220220),	-- Ornate Pipe
 			i(220221),	-- Void Pebble
@@ -2067,7 +1953,6 @@ root(ROOTS.Unsorted, {
 			i(220342),	-- Spiced Stock
 			i(220359),	-- Aelric's Corrupted Tinderbox
 			i(220377),	-- Growing Void Mass
-			i(220378),	-- Forged Equipment Chest \\ PH War Within Equipment Chest
 			i(220382),	-- Chopped Mycobloom
 			i(220383),	-- Portioned Steak
 			i(220384),	-- Spiced Meat Stock
@@ -2143,13 +2028,13 @@ root(ROOTS.Unsorted, {
 			i(220770),	-- Void-Scarred Stormhammer
 			i(220773),	-- Celebratory Pack of Runed Harbinger Crests \\ Celebratory Pack of Runed Harbinger Crests (TODO: Fix Icon)
 			i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
-			i(221023),	-- Field Operative's Transmitter \\ Malfunctioning Ethereum Module \\ Malfunctioning Cartel Communicator
+			i(221023),	-- Treacherous Transmitter
 			i(221033),	-- Hyperactive Stormclaw
 			i(221066),	-- Template - Accessory - Finger
 			i(221093),	-- Deeply Corrupted Coil
 			i(221204),	-- Spore Giant's Stompers
 			i(221205),	-- Vest of the River
-			i(221207),	-- Denmother's Chestpiece
+
 			i(221208),	-- Unseen Cutthroat's Tunic \\ Fel Assassin Tunic
 			i(221209),	-- Flame Trader's Gloves
 			i(221210),	-- Grips of the Earth
@@ -2726,8 +2611,6 @@ root(ROOTS.Unsorted, {
 			i(223585),	-- [PH] Algari Bladefist
 			i(223587),	-- [PH] Silver Armored Fel Bat Gladiator Mount
 			i(223588),	-- Algari Fighting Knife
-			i(223616),	-- Forged Gladiator's Tabard \\ [PH] 11.0 PVP - Gladiator's Tabard
-			i(223617),	-- Forged Gladiator's Prestigious Cloak \\ [PH] 11.0 Gladiator's Prestigious Cloak
 			i(223627),	-- Scout's Dog Tags
 			i(223628),	-- Marksman's Dog Tags
 			i(223629),	-- Marksman's War-Chain
@@ -2745,64 +2628,6 @@ root(ROOTS.Unsorted, {
 			i(223804),	-- [DNT] Zone 1 Placeholder Treasure
 			i(223805),	-- Bag Test A
 			i(223806),	-- Bag Test B
-			i(223807),	-- Forged Warmonger's Garb \\ X Warmonger's Garb
-			i(223808),	-- Forged Warmonger's Slippers \\ X Warmonger's Slippers
-			i(223809),	-- Forged Warmonger's Gloves \\ X Warmonger's Gloves
-			i(223810),	-- Forged Warmonger's Crown \\ X Warmonger's Crown
-			i(223811),	-- Forged Warmonger's Pants \\ X Warmonger's Pants
-			i(223812),	-- Forged Warmonger's Cord \\ X Warmonger's Cord
-			i(223813),	-- Forged Warmonger's Bindings \\ X Warmonger's Bindings
-			i(223814),	-- Forged Warmonger's Mantle \\ X Warmonger's Mantle
-			i(223815),	-- Forged Warmonger's Boots \\ X Warmonger's Boots
-			i(223816),	-- Forged Warmonger's Handwraps \\ X Warmonger's Handwraps
-			i(223817),	-- Forged Warmonger's Hood \\ X Warmonger's Hood
-			i(223818),	-- Forged Warmonger's Breeches \\ X Warmonger's Breeches
-			i(223819),	-- Forged Warmonger's Belt \\ X Warmonger's Belt
-			i(223820),	-- Forged Warmonger's Wraps \\ X Warmonger's Wraps
-			i(223821),	-- Forged Warmonger's Jerkin \\ X Warmonger's Jerkin
-			i(223822),	-- Forged Warmonger's Shoulderguard \\ X Warmonger's Shoulderguard
-			i(223823),	-- Forged Warmonger's Faceplate \\ X Warmonger's Faceplate
-			i(223824),	-- Forged Warmonger's Cuirass \\ X Warmonger's Cuirass
-			i(223825),	-- Forged Warmonger's Sabatons \\ X Warmonger's Sabatons
-			i(223826),	-- Forged Warmonger's Gauntlets \\ X Warmonger's Gauntlets
-			i(223827),	-- Forged Warmonger's Legguards \\ X Warmonger's Legguards
-			i(223828),	-- Forged Warmonger's Spaulders \\ X Warmonger's Spaulders
-			i(223829),	-- Forged Warmonger's Clasp \\ X Warmonger's Clasp
-			i(223830),	-- Forged Warmonger's Bracers \\ X Warmonger's Bracers
-			i(223831),	-- Forged Warmonger's Chestguard \\ Forged Warmonger's Chainmail \\ X Warmonger's Chainmail
-			i(223832),	-- Forged Warmonger's Greaves \\ X Warmonger's Greaves
-			i(223833),	-- Forged Warmonger's Grips \\ X Warmonger's Grips
-			i(223834),	-- Forged Warmonger's Helm \\ X Warmonger's Helm
-			i(223835),	-- Forged Warmonger's Leggings \\ X Warmonger's Leggings
-			i(223836),	-- Forged Warmonger's Epaulets \\ X Warmonger's Epaulets
-			i(223837),	-- Forged Warmonger's Cinch \\ X Warmonger's Cinch
-			i(223838),	-- Forged Warmonger's Armguards \\ X Warmonger's Armguards
-			i(223839),	-- Forged Warmonger's Cape \\ X Warmonger's Cape
-			i(223840),	-- Forged Warmonger's Shawl \\ X Warmonger's Shawl
-			i(223841),	-- Forged Warmonger's Cloak \\ X Warmonger's Cloak
-			i(223842),	-- Forged Warmonger's Drape \\ X Warmonger's Drape
-			i(223844),	-- Forged Warmonger's Battleaxe \\ X Warmonger's Battleaxe
-			i(223845),	-- Forged Warmonger's Hatchet \\ X Warmonger's Hatchet
-			i(223846),	-- Forged Warmonger's Carver \\ X Warmonger's Carver
-			i(223847),	-- Forged Warmonger's Flameshot \\ X Warmonger's Flameshot
-			i(223848),	-- Forged Warmonger's Twinblade \\ X Warmonger's Twinblade
-			i(223851),	-- Forged Warmonger's Branch \\ X Warmonger's Branch
-			i(223852),	-- Forged Warmonger's Spire \\ X Warmonger's Spire
-			i(223853),	-- Forged Warmonger's Battlestaff \\ X Warmonger's Battlestaff
-			i(223854),	-- Forged Warmonger's Greatsword \\ X Warmonger's Greatsword
-			i(223855),	-- Forged Warmonger's Broadsword \\ X Warmonger's Broadsword
-			i(223856),	-- Forged Warmonger's Club \\ X Warmonger's Club
-			i(223857),	-- Forged Warmonger's Hammer \\ X Warmonger's Hammer
-			i(223858),	-- Forged Warmonger's Cudgel \\ X Warmonger's Cudgel
-			i(223859),	-- Forged Warmonger's Aegis \\ X Warmonger's Aegis
-			i(223860),	-- Forged Warmonger's Impaler \\ X Warmonger's Impaler
-			i(223861),	-- Forged Warmonger's Spear \\ X Warmonger's Spear
-			i(223862),	-- Forged Warmonger's Wand \\ X Warmonger's Wand
-			i(223863),	-- Forged Warmonger's Mace \\ X Warmonger's Mace
-			i(223864),	-- Forged Warmonger's Crusher \\ X Warmonger's Crusher
-			i(223865),	-- Forged Warmonger's Scepter \\ X Warmonger's Scepter
-			i(223867),	-- Forged Warmonger's Dagger \\ X Warmonger's Dagger
-			i(223868),	-- Forged Warmonger's Dirk \\ X Warmonger's Dirk
 			i(223869),	-- DO NOT USE Prismatic Codex
 			i(223871),	-- Algari Heavy Axe
 			i(223872),	-- Algari Mace
@@ -3095,7 +2920,6 @@ root(ROOTS.Unsorted, {
 			i(224730),	-- [PH] Derby Dashers
 			i(224762),	-- Delver's Waterskin
 			i(224764),	-- Mosswool Thread
-
 			i(224767),	-- Giant Candle Parts
 			i(224768),	-- Airship: Wing-Mounted Propeller
 			i(224769),	-- Airship: Rotor Blades
@@ -3216,12 +3040,7 @@ root(ROOTS.Unsorted, {
 			i(225359),	-- Kaheti Confiscated Mallet
 			i(225364),	-- Kaheti Confiscated Blade
 			i(225365),	-- PH_3
-
-
 			i(225370),	-- Algari Competitor's Rifle \\ Vicious Competitor's Rifle
-
-
-
 			i(225379),	-- Torchbearer's Chainmail
 			i(225380),	-- Torchbearer's Cinch
 			i(225381),	-- Torchbearer's Striders
@@ -3284,10 +3103,7 @@ root(ROOTS.Unsorted, {
 			i(225472),	-- Schematic: Algari Competitor's Leather Bracers \\ Schematic: Vicious Competitor's Leather Bracers
 			i(225473),	-- Schematic: Algari Competitor's Mail Bracers \\ Schematic: Vicious Competitor's Mail Bracers
 			i(225474),	-- Schematic: Algari Competitor's Plate Bracers \\ Schematic: Vicious Competitor's Plate Bracers
-
-
 			i(225482),	-- Schematic: Algari Competitor's Rifle \\ Schematic: Vicious Competitor's Rifle
-
 			i(225493),	-- Medal of Conquest
 			i(225495),	-- Brilliant Beacon
 			i(225496),	-- Unhinged Vault-Hatch
@@ -3344,44 +3160,6 @@ root(ROOTS.Unsorted, {
 			i(225568),	-- Slum Shark Scrap
 			i(225569),	-- Clipped Bird Wing
 			i(225570),	-- Algari Fowlfeather
-			i(225574),	-- Wings of Shattered Sorrow \\ 11.0 Raid Template - Generic - Cloak
-			i(225575),	-- Silken Advisor's Favor \\ 11.0 Raid Template - Generic - Neck
-			i(225576),	-- Writhing Ringworm \\ 11.0 Raid Template - Generic - Finger
-			i(225577),	-- Sureki Zealot's Insignia \\ 11.0 Raid Template - Generic - Neck
-			i(225578),	-- Seal of the Poisoned Pact \\ 11.0 Raid Template - Generic - Finger
-			i(225579),	-- Crest of the Caustic Despot \\ 11.0 Raid Template - Shield - Shield
-			i(225580),	-- Accelerated Evolution Coil \\ 11.0 Raid Template - Mail - Waist
-			i(225581),	-- Ky'veza's Covert Clasps \\ 11.0 Raid Template - Mail - Wrist
-			i(225582),	-- Assimilated Eggshell Slippers \\ 11.0 Raid Template - Cloth - Feet
-			i(225583),	-- Behemoth's Eroded Cinch \\ 11.0 Raid Template - Leather - Waist
-			i(225584),	-- Skeinspinner's Duplicitous Cuffs \\ 11.0 Raid Template - Cloth - Wrist
-			i(225585),	-- Acrid Ascendant's Sash \\ 11.0 Raid Template - Cloth - Waist
-			i(225586),	-- Rasha'nan's Grotesque Talons \\ 11.0 Raid Template - Mail - Feet
-			i(225587),	-- Devoted Offering's Irons \\ 11.0 Raid Template - Plate - Wrist
-			i(225588),	-- Sanguine Experiment's Bandages \\ 11.0 Raid Template - Leather - Wrist
-			i(225589),	-- Nether Bounty's Greatbelt \\ 11.0 Raid Template - Plate - Waist
-			i(225590),	-- Boots of the Black Bulwark \\ 11.0 Raid Template - Plate - Feet
-			i(225591),	-- Fleeting Massacre Footpads \\ 11.0 Raid Template - Leather - Feet
-			i(225614),	-- Dreadful Empty Egg \\ Dreadful Adjective Thing
-			i(225615),	-- Mystic Empty Egg \\ Mystic Adjective Thing
-			i(225616),	-- Venerated Empty Egg \\ Venerated Adjective Thing
-			i(225617),	-- Zenith Empty Egg \\ Zenith Adjective Thing
-			i(225618),	-- Dreadful Vile Egg \\ Dreadful Adjective Thing
-			i(225619),	-- Mystic Vile Egg \\ Mystic Adjective Thing
-			i(225620),	-- Venerated Vile Egg \\ Venerated Adjective Thing
-			i(225621),	-- Zenith Vile Egg \\ Zenith Adjective Thing
-			i(225622),	-- Dreadful Chittering Egg \\ Dreadful Adjective Thing
-			i(225623),	-- Mystic Chittering Egg \\ Mystic Adjective Thing
-			i(225624),	-- Venerated Chittering Egg \\ Venerated Adjective Thing
-			i(225625),	-- Zenith Chittering Egg \\ Zenith Adjective Thing
-			i(225626),	-- Dreadful Warped Egg \\ Dreadful Adjective Thing
-			i(225627),	-- Mystic Warped Egg \\ Mystic Adjective Thing
-			i(225628),	-- Venerated Warped Egg \\ Venerated Adjective Thing
-			i(225629),	-- Zenith Warped Egg \\ Zenith Adjective Thing
-			i(225630),	-- Dreadful Acid-Pocked Egg \\ Dreadful Adjective Thing
-			i(225631),	-- Mystic Acid-Pocked Egg \\ Mystic Adjective Thing
-			i(225632),	-- Venerated Acid-Pocked Egg \\ Venerated Adjective Thing
-			i(225633),	-- Zenith Acid-Pocked Egg \\ Zenith Adjective Thing
 			i(225635),	-- Zev'kall's Attrition Log
 			i(211494),	-- Spark of Beginnings
 			i(224727),	-- Dasher's Trophy Fish
@@ -3489,25 +3267,6 @@ root(ROOTS.Unsorted, {
 			i(225853),	-- Broken Stirrup
 			i(225854),	-- Muddied Amulet
 			i(225855),	-- Ghoulfish Delight
-			i(225856),	-- Forged Gladiator's Axe
-			i(225857),	-- Forged Gladiator's Dagger
-			i(225858),	-- Forged Gladiator's Pincer
-			i(225859),	-- Forged Gladiator's Warglaive
-			i(225860),	-- Forged Gladiator's Spear
-			i(225861),	-- Forged Gladiator's Staff
-			i(225862),	-- Forged Gladiator's Greatstaff
-			i(225863),	-- Forged Gladiator's Battlestaff
-			i(225864),	-- Forged Gladiator's Crossbow
-			i(225865),	-- Forged Gladiator's Scepter
-			i(225866),	-- Forged Gladiator's Focus
-			i(225867),	-- Forged Gladiator's Shield
-			i(225868),	-- Forged Gladiator's Bulwark
-			i(225869),	-- Forged Gladiator's Claws
-			i(225870),	-- Forged Gladiator's Bow
-			i(225871),	-- Forged Gladiator's Greataxe \\ Forged Gladiator's Greatsword
-			i(225872),	-- Forged Gladiator's Pulverizer
-			i(225873),	-- Forged Gladiator's Sword
-			i(225874),	-- Forged Gladiator's Wither-Blade \\ Forged Gladiator's Shotel
 			i(225875),	-- Pitted Armor Plating
 			i(225876),	-- Fine Egg Powder
 			i(225878),	-- The Fifty Rules of Commerce, Fourth Edition
@@ -3725,7 +3484,6 @@ root(ROOTS.Unsorted, {
 			i(226388),	-- Battle-tested Obsidian Warhammer
 			i(226389),	-- Dark Iron Battle Mace
 			i(226390),	-- Aerie Battle Mace
-
 			i(226425),	-- Harvester's Claw
 			i(226426),	-- Harvester's Claw
 			i(226427),	-- Harvester's Claw
@@ -3792,26 +3550,9 @@ root(ROOTS.Unsorted, {
 			i(226696),	-- Mighty Advisor's Favor
 			i(226800),	-- Earthen Backpack
 			-----------------------------------
-			i(205148),	-- Soot-Stained Shalewing
-			i(210221),	-- Forged Combatant's Heraldry
-			i(210232),	-- Forged Aspirant's Heraldry
-			i(210233),	-- Forged Gladiator's Heraldry
-			i(212039),	-- K'areshi Phantom's Grips
-			i(212040),	-- K'areshi Phantom's Netherwalkers
-			i(212254),	-- Grotesque Vial
-			i(212255),	-- Grotesque Vial
-			i(212256),	-- Grotesque Vial
-			i(212324),	-- QA Grotesque Vial
-			i(212960),	-- Fleeting Grotesque Vial
-			i(212961),	-- Fleeting Grotesque Vial
-			i(212962),	-- Fleeting Grotesque Vial
-			i(215137),	-- Algari Competitor's Signet
-			i(215144),	-- Algari Competitor's Amulet
-			i(216882),	-- Log Entry 467-21-5
-			i(220215),	-- Unidentified Tinderbox
-			i(221023),	-- Treacherous Transmitter
-			i(221096),	-- Rail Rider's Bisector
-			i(221207),	-- Den Mother's Chestpiece
+
+
+
 			i(223089),	-- Design: Extravagant Loupes
 			i(223090),	-- Design: Enchanter's Crystal
 			i(223091),	-- Design: Forger's Font Inspector
@@ -3832,26 +3573,6 @@ root(ROOTS.Unsorted, {
 			i(225432),	-- Design: Algari Competitor's Signet
 			i(225433),	-- Design: Algari Competitor's Amulet
 			i(225542),	-- Delver's Dirigible Schematic: Void
-			i(225614),	-- Dreadful Blasphemer's Effigy
-			i(225615),	-- Mystic Blasphemer's Effigy
-			i(225616),	-- Venerated Blasphemer's Effigy
-			i(225617),	-- Zenith Blasphemer's Effigy
-			i(225618),	-- Dreadful Stalwart's Emblem
-			i(225619),	-- Mystic Stalwart's Emblem
-			i(225620),	-- Venerated Stalwart's Emblem
-			i(225621),	-- Zenith Stalwart's Emblem
-			i(225622),	-- Dreadful Conniver's Badge
-			i(225623),	-- Mystic Conniver's Badge
-			i(225624),	-- Venerated Conniver's Badge
-			i(225625),	-- Zenith Conniver's Badge
-			i(225626),	-- Dreadful Slayer's Icon
-			i(225627),	-- Mystic Slayer's Icon
-			i(225628),	-- Venerated Slayer's Icon
-			i(225629),	-- Zenith Slayer's Icon
-			i(225630),	-- Dreadful Obscenity's Idol
-			i(225631),	-- Mystic Obscenity's Idol
-			i(225632),	-- Venerated Obscenity's Idol
-			i(225633),	-- Zenith Obscenity's Idol
 			i(226810),	-- Infiltrator's Shroud
 			i(226811),	-- Marinated Maggots
 			i(226813),	-- Golden Valorstone
@@ -3914,8 +3635,7 @@ root(ROOTS.Unsorted, {
 			i(227545),	-- Begrimed Mace
 			i(227546),	-- Begrimed Dagger
 			-----------------------------------
-			i(184205),	-- Long-Lost Crown
-			i(184238),	-- Doubt-Tinged Warglaive
+
 			i(198534),	-- Draconic Missive of Ingenuity
 			i(198535),	-- Draconic Missive of Ingenuity
 			i(198536),	-- Draconic Missive of Ingenuity
@@ -3923,14 +3643,7 @@ root(ROOTS.Unsorted, {
 			i(200005),	-- Enchant Tool - Draconic Ingenuity
 			i(200047),	-- Enchant Tool - Draconic Ingenuity
 			i(200599),	-- Technique: Draconic Missive of Ingenuity
-			i(208957),	-- Conduit of the Southern Storm
-			i(210201),	-- Handful of Tiny Pebbles
-			i(211984),	-- Warsculptor's Barbute
-			i(211987),	-- Warsculptor's Furred Plastron
-			i(211991),	-- Entombed Seraph's Plumes
-			i(211996),	-- Entombed Seraph's Breastplate
-			i(212064),	-- Pantaloons of the Hypogeal Nemesis
-			i(212438),	-- Polluted Spectre's Wraps
+
 			i(213780),	-- Algari Amber Prism
 			i(213781),	-- Algari Amber Prism
 			i(213783),	-- Algari Emerald Prism
@@ -3947,17 +3660,6 @@ root(ROOTS.Unsorted, {
 			i(219797),	-- Cured Terracotta Pummeler
 			i(220157),	-- Darkened Tinderbox
 			i(220158),	-- Empowered Tinderbox
-			i(222561),	-- Darkmoon Sigil: Ascension
-			i(222622),	-- Transcribe to Ascension
-			i(222680),	-- Darkmoon Deck: Ascend
-			i(222681),	-- Ace of Ascension
-			i(222682),	-- Two of Ascension
-			i(222683),	-- Three of Ascension
-			i(222684),	-- Four of Ascension
-			i(222685),	-- Five of Ascension
-			i(222686),	-- Six of Ascension
-			i(222687),	-- Seven of Ascension
-			i(222688),	-- Eight of Ascension
 			i(223439),	-- Mereldar Scholar's Leggings
 			i(223444),	-- Arathi Defender's Breeches
 			i(223450),	-- Honored Soldier's Chainmail
@@ -3967,9 +3669,6 @@ root(ROOTS.Unsorted, {
 			i(225580),	-- Accelerated Ascension Coil
 			i(225654),	-- Imperfect Ascendancy Serum
 			i(225927),	-- Emerald Necklace
-			i(226022),	-- Darkmoon Sigil: Ascension
-			i(226023),	-- Darkmoon Sigil: Ascension
-			i(226024),	-- Darkmoon Sigil: Ascension
 			i(226150),	-- Gem-Studded Candelabra
 			i(226175),	-- Traditional Nuptial Shoulderpads
 			i(227542),	-- Preserved Arathi Sword
@@ -4032,13 +3731,6 @@ root(ROOTS.Unsorted, {
 			i(228159),	-- Living Luster's Semblance
 			i(228161),	-- Hood of Violet Rebirth
 			-----------------------------------
-			i(57394),	-- Long-Lost Wand
-			i(194374),	-- Explorers' League Rifle
-			i(198728),	-- Explorers' League Banner
-			i(211063),	-- Long-Lost Choker
-			i(212305),	-- Phial of Concentrated Ingenuity
-			i(212306),	-- Phial of Concentrated Ingenuity
-			i(212307),	-- Phial of Concentrated Ingenuity
 			i(215236),	-- Vicious Bloodstone
 			i(216526),	-- Resplendent Shield
 			i(217168),	-- Chocolate Coins
@@ -4048,29 +3740,7 @@ root(ROOTS.Unsorted, {
 			i(219429),	-- Ritual Kobyss Spear
 			i(220424),	-- zzOldFeast of the Divine Day
 			i(221492),	-- Moss Skipper
-			i(221697),	-- Artisan Gardening Hat
-			i(221699),	-- Artisan Enchanter's Hat
 			i(221762),	-- Frenzied Bloodtick
-			i(222562),	-- Darkmoon Sigil: Radiance
-			i(222788),	-- Khaz Algar Unraveling
-			i(222847),	-- Artisan Gardening Hat
-			i(222848),	-- Artisan Fishing Cap
-			i(222849),	-- Artisan Enchanter's Hat
-			i(222850),	-- Artisan Alchemist's Robe
-			i(222851),	-- Artisan Chef's Hat
-			i(223766),	-- Enchant Weapon - Oathsworn's Tenacity
-			i(223767),	-- Enchant Weapon - Oathsworn's Tenacity
-			i(223768),	-- Enchant Weapon - Oathsworn's Tenacity
-			i(224323),	-- Gleeful Glamour - Zandalari Troll
-			i(224347),	-- Gleeful Glamour - Zandalari Troll
-			i(224371),	-- Gleeful Glamour - Zandalari Troll
-			i(224616),	-- Earthforged Greathelm
-			i(224617),	-- Earthforged Haubergeon
-			i(224618),	-- Earthforged Sabatons
-			i(224619),	-- Earthforged Handguards
-			i(224620),	-- Earthforged Faulds
-			i(224621),	-- Earthforged Shoulder Scales
-			i(224623),	-- Earthforged Cuffs
 			i(224650),	-- Wax-Sealed Pouch
 			i(224721),	-- Wax-Sealed Box
 			i(224722),	-- Waxy Bundle of Resonance Crystals
@@ -4078,8 +3748,6 @@ root(ROOTS.Unsorted, {
 			i(224724),	-- Waxy Bundle of Dust
 			i(224725),	-- Waxy Bundle of Herbs
 			i(224726),	-- Waxy Box of Rocks
-			i(224824),	-- Duskweave
-			i(224826),	-- Dawnweave
 			i(225220),	-- Chitin Needle
 			i(225221),	-- Spool of Webweave
 			i(225222),	-- Stone-Leather Swatch

@@ -986,7 +986,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "o", 428135 },	-- Discarded Botanist Notes
 				["coord"] = { 31.9, 83.6, ISLE_OF_DORN },
 				["g"] = {
-					i(216882),	-- Log Entry: 467-21-5 (QI!)
+					i(216882),	-- Log Entry 467-21-5 (QI!)
 					i(216888),	-- Log Entry 652-12-3 (QI!)
 					i(216889),	-- Log Entry 893-03-9 (QI!)
 				},

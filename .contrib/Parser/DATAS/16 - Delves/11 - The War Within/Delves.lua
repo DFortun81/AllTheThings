@@ -603,7 +603,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(228072),	-- Companion Experience (blue)
 		i(228073),	-- Companion Experience (epic)
 		--
-		i(221756),	-- Vial of Kaheti Oils (Maybe Only Nerubian Themed Delves?)
 		-- Gear
 		i(211005),	-- Cave Topographer's Drape
 		i(215169),	-- Everburning Lantern

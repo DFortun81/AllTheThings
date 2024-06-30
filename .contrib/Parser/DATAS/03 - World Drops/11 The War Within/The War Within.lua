@@ -66,14 +66,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 			i(220324),	-- Begrimed Sabatons
 			i(220332),	-- Begrimed Sabatons
 			i(220338),	-- Begrimed Vambraces
-			i(224617),	-- Stalwart Breastplate
-			i(224623),	-- Stalwart Cuffs
-			i(224620),	-- Stalwart Faulds
+			i(224617),	-- Earthforged Haubergeon
+			i(224623),	-- Earthforged Cuffs
+			i(224620),	-- Earthforged Faulds
 			i(224622),	-- Stalward Girdle (TODO: re-check name in future build, probably mistypo)
-			i(224616),	-- Stalwart Greathelm
-			i(224619),	-- Stalwart Handguards
-			i(224618),	-- Stalwart Sabatons
-			i(224621),	-- Stalwart Shoulder Scales
+			i(224616),	-- Earthforged Greathelm
+			i(224619),	-- Earthforged Handguards
+			i(224618),	-- Earthforged Sabatons
+			i(224621),	-- Earthforged Shoulder Scales
 		}),
 	}),
 	n(WEAPONS, {
@@ -98,8 +98,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(220376),	-- Bismuth Lockbox
 	}),
 	filter(REAGENTS, {
-		i(224826),	-- Dawnweave Scraps
-		i(224824),	-- Duskweave Scraps
+		i(224826),	-- Dawnweave
+		i(224824),	-- Duskweave
+		i(221756),	-- Vial of Kaheti Oils
 		i(224828),	-- Weavercloth
 	}),
 	filter(RECIPES, {

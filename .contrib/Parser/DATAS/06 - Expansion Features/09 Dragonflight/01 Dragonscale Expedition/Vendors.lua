@@ -432,7 +432,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 18 --
 					}, {	-- RENOWN 19 --
-						i(198728, {	-- Explorer's League Banner (TOY!)
+						i(198728, {	-- Explorers' League Banner (TOY!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 150 },
 								{ "i", WILDERCLOTH, 20 },
