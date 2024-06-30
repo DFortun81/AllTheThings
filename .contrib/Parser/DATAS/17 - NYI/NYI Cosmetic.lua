@@ -226,45 +226,45 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190559),	-- Helm of the Swift
 			}),
 			n(SETS, {
-				i(200917),	-- Ensemble: Tidecaller's Chainmail
+				iensemble(200917),	-- Ensemble: Tidecaller's Chainmail
 
 				------ Vagabond's Cloudy Threads ------
-				i(206328),	-- Ensemble: Vagabond's Cloudy Threads
+				iensemble(206328),	-- Ensemble: Vagabond's Cloudy Threads
 				i(206284),	-- Vagabond's Cloudy Cape
 				i(206295),	-- Vagabond's Cloudy Hood
 
 				------ Vagabond's Faded Threads ------
-				i(206324),	-- Ensemble: Vagabond's Faded Threads
+				iensemble(206324),	-- Ensemble: Vagabond's Faded Threads
 				i(206280),	-- Vagabond's Faded Cape
 				i(206291),	-- Vagabond's Faded Hood
 
 				------ Vagabond's Grassy Threads ------
-				i(206329),	-- Ensemble: Vagabond's Grassy Threads
+				iensemble(206329),	-- Ensemble: Vagabond's Grassy Threads
 				i(206285),	-- Vagabond's Grassy Cape
 				i(206296),	-- Vagabond's Grassy Hood
 
 				------ Vagabond's Plum Threads ------
-				i(206323),	-- Ensemble: Vagabond's Plum Threads
+				iensemble(206323),	-- Ensemble: Vagabond's Plum Threads
 				i(206279),	-- Vagabond's Plum Cape
 				i(206290),	-- Vagabond's Plum Hood
 
 				------ Wanderer's Cloudy Trappings ------
-				i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
+				iensemble(206339),	-- Ensemble: Wanderer's Cloudy Trappings
 				i(206317),	-- Wanderer's Cloudy Cloak
 				i(206306),	-- Wanderer's Cloudy Scarf
 
 				------ Wanderer's Faded Trappings ------
-				i(206335),	-- Ensemble: Wanderer's Faded Trappings
+				iensemble(206335),	-- Ensemble: Wanderer's Faded Trappings
 				i(206313),	-- Wanderer's Faded Cloak
 				i(206302),	-- Wanderer's Faded Scarf
 
 				------ Wanderer's Grassy Trappings ------
-				i(206340),	-- Ensemble: Wanderer's Grassy Trappings
+				iensemble(206340),	-- Ensemble: Wanderer's Grassy Trappings
 				i(206318),	-- Wanderer's Grassy Cloak
 				i(206307),	-- Wanderer's Grassy Scarf
 
 				------ Wanderer's Plum Trappings ------
-				i(206334),	-- Ensemble: Wanderer's Plum Trappings
+				iensemble(206334),	-- Ensemble: Wanderer's Plum Trappings
 				i(206312),	-- Wanderer's Plum Cloak
 				i(206301),	-- Wanderer's Plum Scarf
 			}),
@@ -284,8 +284,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(211069),	-- Azure Treads of the Kalu'ak
 				i(210867),	-- Blademaster's Lively Stones
-				i(210999),	-- Ruby Faced Mobile Timepiece
-				i(211001),	-- Sapphire Faced Mobile Timepiece
 				i(210849),	-- Trader's Azure Sarong
 				i(210854),	-- Trader's Camo Sarong
 				i(210856),	-- Trader's Faded Sarong
@@ -328,19 +326,18 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(212717),	-- Spring Reveler's Cornsilk Sun Hat
 				i(212612),	-- Wings of the Amethyst Monarch
 				i(212610),	-- Wings of the Emerald Monarch
-				i(212611),	-- Wings of the Tourmaline Monarch
 			}),
 			n(SETS, {
 				i(190924),	-- Arsenal: Ruby Felfire Armaments
-				i(190920),	-- Ensemble: Battleplate of the Honored Valarjar
-				i(200910),	-- Ensemble: Val'sharah Protector's Battleplate
-				i(200918),	-- Ensemble: Void-Bound Raiment
-				i(200924),	-- Ensemble: Void-Bound Battlegear
-				i(201000),	-- Ensemble: Void-Bound Chains
-				i(201001),	-- Ensemble: Void-Bound Warplate
+				iensemble(190920),	-- Ensemble: Battleplate of the Honored Valarjar
+				iensemble(200910),	-- Ensemble: Val'sharah Protector's Battleplate
+				iensemble(200918),	-- Ensemble: Void-Bound Raiment
+				iensemble(200924),	-- Ensemble: Void-Bound Battlegear
+				iensemble(201000),	-- Ensemble: Void-Bound Chains
+				iensemble(201001),	-- Ensemble: Void-Bound Warplate
 
 				------ Dark Ranger General ------
-				i(213158),	-- Ensemble: Dark Ranger General's Kit
+				iensemble(213158),	-- Ensemble: Dark Ranger General's Kit
 				i(213150),	-- Dark Ranger General's Boots
 				i(213153),	-- Dark Ranger General's Bracers
 				i(213146),	-- Dark Ranger General's Breastplate
@@ -354,7 +351,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(213148),	-- Dark Ranger General's Spaulders
 
 				------ Sky Witch's Attire ------
-				i(212221),	-- Ensemble: Sky Witch's Attire
+				iensemble(212221),	-- Ensemble: Sky Witch's Attire
 				i(212204),	-- Sky Witch's Blouse
 				i(212205),	-- Sky Witch's Boots
 				i(212206),	-- Sky Witch's Gloves

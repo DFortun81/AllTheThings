@@ -4480,7 +4480,6 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(224576),	-- Lil' Flameo (PET!)
 				i(223499),	-- Lil' Manny (PET!)
-				i(223474),	-- Worgli the Apprehensive (PET!)
 			}),
 			filter(COSMETIC, {
 				i(220655),	-- Water Blaster P.K.
@@ -4534,9 +4533,6 @@ root(ROOTS.Unsorted, {
 				i(220757),	-- Sparking Stormhammer
 				i(220758),	-- Champion Stormhammer
 				i(220759),	-- Arsenal: Stormrider's Bronze Stormhammers
-				i(220760),	-- Shining Stormhammer
-				i(220761),	-- Shocking Stormhammer
-				i(220762),	-- Arsenal: Stormrider's Silver Stormhammers
 				i(221520),	-- Black Tropical Shirt
 				i(221521),	-- Black Tropical Trunks
 				i(221522),	-- Black Tropical Wristwraps
@@ -4587,26 +4583,12 @@ root(ROOTS.Unsorted, {
 				i(223258),	-- Deep Diver's Wristguard
 				i(223259),	-- Green Diver's Wristguard
 				i(223409),	-- The Coward's Violet Target
-				i(223410),	-- Scarlet Shanker
-				i(223411),	-- Sapphire Shanker
-				i(223412),	-- Scarlet Warglaive
-				i(223413),	-- Sapphire Warglaive
-				i(223414),	-- Scarlet Axe of Asymmetry
-				i(223415),	-- Sapphire Axe of Asymmetry
 				i(223416),	-- Seaborn Blade
 				i(223417),	-- Radiant Seaborn Blade
 				i(223418),	-- Arsenal: Seaborn Blades
 				i(223419),	-- Fireborn Blade
 				i(223420),	-- Radiant Fireborn Blade
 				i(223421),	-- Arsenal: Fireborn Blades
-				i(223422),	-- Scarlet Bladed Blunderbuss
-				i(223423),	-- Sapphire Bladed Blunderbuss
-				i(223425),	-- Simple Scarlet Wand
-				i(223426),	-- Simple Sapphire Wand
-				i(223429),	-- Conjurer's Scarlet Staff
-				i(223430),	-- Conjurer's Sapphire  Staff
-				i(223433),	-- Sunreaver's Scarlet Tome
-				i(223434),	-- The Sapphire Thalassian Tome
 				i(221011),	-- Purple Snugglefin Murloc Pullover
 				i(221012),	-- Purple Snugglefin Murloc Slippers
 				i(221013),	-- Purple Snugglefin Murloc Mittens
@@ -4635,12 +4617,10 @@ root(ROOTS.Unsorted, {
 				i(224574),	-- Savage Ebony Battle Turtle (MOUNT!) [Trading Post?]
 				i(223471),	-- [PH] Alliance Wolf Mount Purple (MOUNT!)
 				i(223470),	-- [PH] Alliance Wolf Mount Red (MOUNT!)
-				i(223469),	-- [PH] Alliance Wolf Mount White (MOUNT!)
 				i(223282),	-- [PH] Blue Old God Fish Mount (MOUNT!)
 				i(221270),	-- [PH] Goblin Surfboard (MOUNT!) [Trading Post?]
 				i(223284),	-- [PH] Green Old God Fish Mount (MOUNT!)
 				i(223459),	-- [PH] Nightsaber Horde Mount Black (MOUNT!)
-				i(223449),	-- [PH] Nightsaber Horde Mount Red (MOUNT!)
 				i(223460),	-- [PH] Nightsaber Horde Mount White (MOUNT!)
 				i(223286),	-- [PH] Red Old God Fish Mount (MOUNT!)
 			}),

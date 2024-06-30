@@ -2164,14 +2164,84 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(AUGUST bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1 } }, {
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1 } }, {
 			n(MONTHLY_REWARD, {
+				i(223409),	-- The Cowards Violet Target (COSMETIC!)
 			}),
 			filter(BATTLE_PETS, {
+				i(223474, {	-- Worgli The Apprehensive (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
 			}),
 			filter(MOUNTS, {
+				i(54811, {	-- Celestial Steed (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 900}},
+				}),
+				i(118515, {	-- Cindermane Charger (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 900}},
+				}),
+				i(223469, {	-- Sentinel War Wolf (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+				i(223449, {	-- Korkron Warsaber (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
 			}),
 			filter(COSMETIC, {
+				iensemble(220762, {	-- Arsenal Stormriders Silver Stormhammers
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+				i(223430, {	-- Conjurers Sapphire Staff
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(223429, {	-- Conjurers Scarlet Staff
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(210999, {	-- Ruby Faced Mobile Timepiece
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(223415, {	-- Sapphire Axe Of Asymmetry
+					["cost"] = {{"c", TRADERS_TENDER, 180}},
+				}),
+				i(223423, {	-- Sapphire Bladed Blunderbuss
+					["cost"] = {{"c", TRADERS_TENDER, 130}},
+				}),
+				i(211001, {	-- Sapphire Faced Mobile Timepiece
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(223411, {	-- Sapphire Shanker
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(223413, {	-- Sapphire Warglaive
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(223414, {	-- Scarlet Axe Of Asymmetry
+					["cost"] = {{"c", TRADERS_TENDER, 180}},
+				}),
+				i(223422, {	-- Scarlet Bladed Blunderbuss
+					["cost"] = {{"c", TRADERS_TENDER, 130}},
+				}),
+				i(223410, {	-- Scarlet Shanker
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(223412, {	-- Scarlet Warglaive
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(223426, {	-- Simple Sapphire Wand
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(223425, {	-- Simple Scarlet Wand
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(223433, {	-- Sunreavers Scarlet Tome
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(223434, {	-- The Sapphire Thalassian Tome
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(212611, {	-- Wings Of The Tourmaline Monarch
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
 			}),
 		})),
 	}),
@@ -2471,8 +2541,6 @@ root(ROOTS.NeverImplemented, {
 				n(ARMOR, {
 					i(211069),	-- Azure Treads of the Kalu'ak
 					i(210867),	-- Blademaster's Lively Stones
-					i(210999),	-- Ruby Faced Mobile Timepiece
-					i(211001),	-- Sapphire Faced Mobile Timepiece
 					i(210849),	-- Trader's Azure Sarong
 					i(210854),	-- Trader's Camo Sarong
 					i(210856),	-- Trader's Faded Sarong
@@ -2511,7 +2579,6 @@ root(ROOTS.NeverImplemented, {
 					i(212717),	-- Spring Reveler's Cornsilk Sun Hat
 					i(212612),	-- Wings of the Amethyst Monarch
 					i(212610),	-- Wings of the Emerald Monarch
-					i(212611),	-- Wings of the Tourmaline Monarch
 				}),
 				n(SETS, {
 					i(190924),	-- Arsenal: Ruby Felfire Armaments

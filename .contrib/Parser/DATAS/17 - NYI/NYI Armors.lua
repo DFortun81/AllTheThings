@@ -1943,11 +1943,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(182306),	-- Monster Mantle
 			}),
 			expansion(EXPANSION.SL, 1.0, {
-				i(186500),	-- Ensemble: Garb of the Twilight Grove(quest:63596)
-				i(186518),	-- Ensemble: Forsworn Aspirant's Regalia(quest:63600)
-				i(186505),	-- Ensemble: Rogue Necromancer's Vestments(quest:63629)
-				i(186513),	-- Ensemble: Radiant Court Attire(quest:63632)
-				i(186514),	-- Ensemble: Redeemed Inquisitor's Vestments(quest:63636)
+				iensemble(186500),	-- Ensemble: Garb of the Twilight Grove(quest:63596)
+				iensemble(186518),	-- Ensemble: Forsworn Aspirant's Regalia(quest:63600)
+				iensemble(186505),	-- Ensemble: Rogue Necromancer's Vestments(quest:63629)
+				iensemble(186513),	-- Ensemble: Radiant Court Attire(quest:63632)
+				iensemble(186514),	-- Ensemble: Redeemed Inquisitor's Vestments(quest:63636)
 				i(185774),	-- PH Green Head Candle
 				i(186093),	-- Shaded Spectacles
 			}),
