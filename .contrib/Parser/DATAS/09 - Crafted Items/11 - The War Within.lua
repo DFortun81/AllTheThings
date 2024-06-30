@@ -278,230 +278,229 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(BLACKSMITHING, {
-	n(ARMOR, {
-		i(222430), -- Everforged Breastplate
-		i(222437), -- Everforged Gauntlets
-		i(222431), -- Everforged Greatbelt
-		i(222433), -- Everforged Helm
-		i(222434), -- Everforged Legplates
-		i(222436), -- Everforged Pauldrons
-		i(222429), -- Everforged Sabatons
-		i(222435), -- Everforged Vambraces
-		i(222475), -- Dredger's Developed Helm
-		i(222478), -- Dredger's Developed Pauldrons
-		i(222476), -- Dredger's Developed Legplates
-		i(222479), -- Dredger's Developed Gauntlets
-		i(222473), -- Dredger's Developed Greatbelt
-		i(222474), -- Dredger's Developed Defender
-		i(222477), -- Dredger's Developed Vambraces
-		i(222472), -- Dredger's Developed Breastplate
-		i(222471), -- Dredger's Developed Sabatons
-		i(217150), -- Algari Competitor's Plate Armguards
-		i(217143), -- Algari Competitor's Plate Breatplate
-		i(217145), -- Algari Competitor's Plate Gauntlets
-		i(217147), -- Algari Competitor's Plate Greaves
-		i(217146), -- Algari Competitor's Plate Helm
-		i(217148), -- Algari Competitor's Plate Pauldrons
-		i(217144), -- Algari Competitor's Plate Sabatons
-		i(217149), -- Algari Competitor's Plate Waistguard
-		i(222458),	-- Sanctified Steps
-	}),
-	n(FIRST_CRAFTS_HEADER, sharedData({
-		["requireSkill"] = BLACKSMITHING,
-		},{
+		n(ARMOR, {
+			i(217150),	-- Algari Competitor's Plate Armguards
+			i(217143),	-- Algari Competitor's Plate Breatplate
+			i(217145),	-- Algari Competitor's Plate Gauntlets
+			i(217147),	-- Algari Competitor's Plate Greaves
+			i(217146),	-- Algari Competitor's Plate Helm
+			i(217148),	-- Algari Competitor's Plate Pauldrons
+			i(217144),	-- Algari Competitor's Plate Sabatons
+			i(217149),	-- Algari Competitor's Plate Waistguard
+			i(222472),	-- Dredger's Developed Breastplate
+			i(222474),	-- Dredger's Developed Defender
+			i(222479),	-- Dredger's Developed Gauntlets
+			i(222473),	-- Dredger's Developed Greatbelt
+			i(222475),	-- Dredger's Developed Helm
+			i(222476),	-- Dredger's Developed Legplates
+			i(222478),	-- Dredger's Developed Pauldrons
+			i(222471),	-- Dredger's Developed Sabatons
+			i(222477),	-- Dredger's Developed Vambraces
+			i(222430),	-- Everforged Breastplate
+			i(222437),	-- Everforged Gauntlets
+			i(222431),	-- Everforged Greatbelt
+			i(222433),	-- Everforged Helm
+			i(222434),	-- Everforged Legplates
+			i(222436),	-- Everforged Pauldrons
+			i(222429),	-- Everforged Sabatons
+			i(222435),	-- Everforged Vambraces
+			i(222458),	-- Sanctified Steps
+		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = BLACKSMITHING,
+			},{
 			-- Smelting
-			FirstCraft(80492, 450216); -- Core Alloy
-			FirstCraft(80595, 450217); -- Charged Alloy
-			FirstCraft(80596, 450218); -- Sanctified Alloy
-			FirstCraft(80597, 450219); -- Ironclaw Alloy
+			FirstCraft(80492, 450216);	-- Core Alloy
+			FirstCraft(80595, 450217);	-- Charged Alloy
+			FirstCraft(80596, 450218);	-- Sanctified Alloy
+			FirstCraft(80597, 450219);	-- Ironclaw Alloy
 			-- Armor
-			FirstCraft(80598, 450220); -- Everforged Sabatons
-			FirstCraft(80599, 450221); -- Everforged Breastplate
-			FirstCraft(80600, 450222); -- Everforged Greatbelt
-			FirstCraft(80601, 450223); -- Everforged Defender
-			FirstCraft(80602, 450224); -- Everforged Helm
-			FirstCraft(80603, 450225); -- Everforged Legplates
-			FirstCraft(80604, 450226); -- Everforged Vambraces
-			FirstCraft(80605, 450227); -- Everforged Pauldrons
-			FirstCraft(80606, 450228); -- Everforged Gauntlets
-			--FirstCraft(XXXXX, 450250); -- Siphoning Stiletto
-			--FirstCraft(XXXXX, 450245); -- Sanctified Steps
-			--FirstCraft(XXXXX, 450246); -- Beledar's Bulwark
-			FirstCraft(80636, 450258); -- Dredger's Plate Sabatons
-			FirstCraft(80637, 450259); -- Dredger's Plate Breastplate
-			FirstCraft(80638, 450260); -- Dredger's Developed Greatbelt
-			FirstCraft(80639, 450261); -- Dredger's Developed Defender
-			FirstCraft(80640, 450262); -- Dredger's Developed Helm
-			FirstCraft(80641, 450263); -- Dredger's Developed Legplates
-			FirstCraft(80642, 450264); -- Dredger's Plate Vambraces
-			FirstCraft(80643, 450265); -- Dredger's Developed Pauldrons
-			FirstCraft(80644, 450266); -- Dredger's Developed Gauntlets
+			FirstCraft(80598, 450220);	-- Everforged Sabatons
+			FirstCraft(80599, 450221);	-- Everforged Breastplate
+			FirstCraft(80600, 450222);	-- Everforged Greatbelt
+			FirstCraft(80601, 450223);	-- Everforged Defender
+			FirstCraft(80602, 450224);	-- Everforged Helm
+			FirstCraft(80603, 450225);	-- Everforged Legplates
+			FirstCraft(80604, 450226);	-- Everforged Vambraces
+			FirstCraft(80605, 450227);	-- Everforged Pauldrons
+			FirstCraft(80606, 450228);	-- Everforged Gauntlets
+			--FirstCraft(XXXXX, 450250);	-- Siphoning Stiletto
+			--FirstCraft(XXXXX, 450245);	-- Sanctified Steps
+			--FirstCraft(XXXXX, 450246);	-- Beledar's Bulwark
+			FirstCraft(80636, 450258);	-- Dredger's Plate Sabatons
+			FirstCraft(80637, 450259);	-- Dredger's Plate Breastplate
+			FirstCraft(80638, 450260);	-- Dredger's Developed Greatbelt
+			FirstCraft(80639, 450261);	-- Dredger's Developed Defender
+			FirstCraft(80640, 450262);	-- Dredger's Developed Helm
+			FirstCraft(80641, 450263);	-- Dredger's Developed Legplates
+			FirstCraft(80642, 450264);	-- Dredger's Plate Vambraces
+			FirstCraft(80643, 450265);	-- Dredger's Developed Pauldrons
+			FirstCraft(80644, 450266);	-- Dredger's Developed Gauntlets
 			-- Weapons
-			FirstCraft(80607, 450229); -- Everforged Stabber
-			FirstCraft(80608, 450230); -- Everforged Dagger
-			FirstCraft(80609, 450231); -- Everforged Longsword
-			FirstCraft(80611, 450233); -- Everforged Mace
-			FirstCraft(80612, 450234); -- Everforged Greataxe
-			FirstCraft(80610, 450232); -- Everforged Warglaive
-			FirstCraft(80616, 450238); -- Charged Claymore
-			--FirstCraft(XXXXX, 450242); -- Charged Slicers
-			--FirstCraft(XXXXX, 450236); -- Charged Runeaxe
-			--FirstCraft(XXXXX, 450237); -- Charged Facesmasher
-			--FirstCraft(XXXXX, 450240); -- Charged Crusher
-			FirstCraft(80613, 450235); -- Charged Hexsword
-			FirstCraft(80617, 450239); -- Charged Halberd
-			FirstCraft(80619, 450241); -- Charged Invoker
-			FirstCraft(80629, 450251); -- Ironclaw Stiletto
-			FirstCraft(80630, 450252); -- Ironclaw Dirk
-			FirstCraft(80631, 450253); -- Ironclaw Sword
-			FirstCraft(80632, 450254); -- Ironclaw Knuckles
-			FirstCraft(80633, 450255); -- Ironclaw Great Mace
-			FirstCraft(80634, 450256); -- Ironclaw Axe
-			FirstCraft(80635, 450257); -- Ironclaw Great Axe
+			FirstCraft(80607, 450229);	-- Everforged Stabber
+			FirstCraft(80608, 450230);	-- Everforged Dagger
+			FirstCraft(80609, 450231);	-- Everforged Longsword
+			FirstCraft(80611, 450233);	-- Everforged Mace
+			FirstCraft(80612, 450234);	-- Everforged Greataxe
+			FirstCraft(80610, 450232);	-- Everforged Warglaive
+			FirstCraft(80616, 450238);	-- Charged Claymore
+			--FirstCraft(XXXXX, 450242);	-- Charged Slicers
+			--FirstCraft(XXXXX, 450236);	-- Charged Runeaxe
+			--FirstCraft(XXXXX, 450237);	-- Charged Facesmasher
+			--FirstCraft(XXXXX, 450240);	-- Charged Crusher
+			FirstCraft(80613, 450235);	-- Charged Hexsword
+			FirstCraft(80617, 450239);	-- Charged Halberd
+			FirstCraft(80619, 450241);	-- Charged Invoker
+			FirstCraft(80629, 450251);	-- Ironclaw Stiletto
+			FirstCraft(80630, 450252);	-- Ironclaw Dirk
+			FirstCraft(80631, 450253);	-- Ironclaw Sword
+			FirstCraft(80632, 450254);	-- Ironclaw Knuckles
+			FirstCraft(80633, 450255);	-- Ironclaw Great Mace
+			FirstCraft(80634, 450256);	-- Ironclaw Axe
+			FirstCraft(80635, 450257);	-- Ironclaw Great Axe
 			-- PVP
-			--FirstCraft(XXXXX, 455003); -- Algari Competitor's Greatsword
-			--FirstCraft(XXXXX, 455004); -- Algari Competitor's Sword
-			--FirstCraft(XXXXX, 455002); -- Algari Competitor's Sickle
-			--FirstCraft(XXXXX, 455000); -- Algari Competitor's Shield
-			--FirstCraft(XXXXX, 454999); -- Algari Competitor's Scepter
-			--FirstCraft(XXXXX, 454998); -- Algari Competitor's Dagger
-			--FirstCraft(XXXXX, 455001); -- Algari Competitor's Axe
-			--FirstCraft(XXXXX, 454997); -- Algari Competitor's Splitter
-			--FirstCraft(XXXXX, 438914); -- Algari Competitor's Plate Breastplate
-			--FirstCraft(XXXXX, 438920); -- Algari Competitor's Plate Waistguard
-			--FirstCraft(XXXXX, 438915); -- Algari Competitor's Plate Sabatons
-			--FirstCraft(XXXXX, 438916); -- Algari Competitor's Plate Gauntlets
-			--FirstCraft(XXXXX, 438917); -- Algari Competitor's Plate Helm
-			--FirstCraft(XXXXX, 438919); -- Algari Competitor's Plate Pauldrons
-			--FirstCraft(XXXXX, 438921); -- Algari Competitor's Plate Armguards
-			--FirstCraft(XXXXX, 438918); -- Algari Competitor's Plate Greaves
+			--FirstCraft(XXXXX, 455003);	-- Algari Competitor's Greatsword
+			--FirstCraft(XXXXX, 455004);	-- Algari Competitor's Sword
+			--FirstCraft(XXXXX, 455002);	-- Algari Competitor's Sickle
+			--FirstCraft(XXXXX, 455000);	-- Algari Competitor's Shield
+			--FirstCraft(XXXXX, 454999);	-- Algari Competitor's Scepter
+			--FirstCraft(XXXXX, 454998);	-- Algari Competitor's Dagger
+			--FirstCraft(XXXXX, 455001);	-- Algari Competitor's Axe
+			--FirstCraft(XXXXX, 454997);	-- Algari Competitor's Splitter
+			--FirstCraft(XXXXX, 438914);	-- Algari Competitor's Plate Breastplate
+			--FirstCraft(XXXXX, 438920);	-- Algari Competitor's Plate Waistguard
+			--FirstCraft(XXXXX, 438915);	-- Algari Competitor's Plate Sabatons
+			--FirstCraft(XXXXX, 438916);	-- Algari Competitor's Plate Gauntlets
+			--FirstCraft(XXXXX, 438917);	-- Algari Competitor's Plate Helm
+			--FirstCraft(XXXXX, 438919);	-- Algari Competitor's Plate Pauldrons
+			--FirstCraft(XXXXX, 438921);	-- Algari Competitor's Plate Armguards
+			--FirstCraft(XXXXX, 438918);	-- Algari Competitor's Plate Greaves
 			-- Profession Equipment
-			FirstCraft(80645, 450267); -- Proficient Sickle
-			FirstCraft(80646, 450268); -- Proficient Pickaxe
-			FirstCraft(80647, 450269); -- Proficient Skinning Knife
-			FirstCraft(80648, 450270); -- Proficient Needle Set
-			FirstCraft(80649, 450271); -- Proficient Leatherworker's Knife
-			FirstCraft(80650, 450272); -- Proficient Leatherworker's Toolset
-			FirstCraft(80651, 450273); -- Proficient Blacksmith's Hammer
-			FirstCraft(80652, 450274); -- Proficient Blacksmith's Toolbox
-			FirstCraft(80659, 450281); -- Artisan Blacksmith's Hammer
-			FirstCraft(80660, 450282); -- Artisan Blacksmith's Toolbox
+			FirstCraft(80645, 450267);	-- Proficient Sickle
+			FirstCraft(80646, 450268);	-- Proficient Pickaxe
+			FirstCraft(80647, 450269);	-- Proficient Skinning Knife
+			FirstCraft(80648, 450270);	-- Proficient Needle Set
+			FirstCraft(80649, 450271);	-- Proficient Leatherworker's Knife
+			FirstCraft(80650, 450272);	-- Proficient Leatherworker's Toolset
+			FirstCraft(80651, 450273);	-- Proficient Blacksmith's Hammer
+			FirstCraft(80652, 450274);	-- Proficient Blacksmith's Toolbox
+			FirstCraft(80659, 450281);	-- Artisan Blacksmith's Hammer
+			FirstCraft(80660, 450282);	-- Artisan Blacksmith's Toolbox
 			--FirstCraft(XXXXX, 450277);  -- Artisan Skinning Knife
 			--FirstCraft(XXXXX, 450276);  -- Artisan Pickaxe
 			--FirstCraft(XXXXX, 450275);  -- Artisan Sickle
 			--FirstCraft(XXXXX, 450279);  -- Artisan Leatherworker's Knife
 			--FirstCraft(XXXXX, 450278);  -- Artisan Needle Set
 			--FirstCraft(XXXXX, 450280);  -- Artisan Leatherworker's Toolset
-			FirstCraft(80661, 450283); -- Earthen Master's Hammer
+			FirstCraft(80661, 450283);	-- Earthen Master's Hammer
 			-- Stonework
-			FirstCraft(80663, 450285); -- Ironclaw Whetstone
-			FirstCraft(80664, 450286); -- Ironclaw Razorstone
-			FirstCraft(80665, 450287); -- Ironclaw Weightstone
-			--Frameworks
-			FirstCraft(80662, 450284); -- Forged Framework
-			FirstCraft(80666, 450288); -- Adjustable Framework
-			FirstCraft(80667, 450289); -- Tempered Framework
+			FirstCraft(80663, 450285);	-- Ironclaw Whetstone
+			FirstCraft(80664, 450286);	-- Ironclaw Razorstone
+			FirstCraft(80665, 450287);	-- Ironclaw Weightstone
+			-- Frameworks
+			FirstCraft(80662, 450284);	-- Forged Framework
+			FirstCraft(80666, 450288);	-- Adjustable Framework
+			FirstCraft(80667, 450289);	-- Tempered Framework
 			-- Other
-			FirstCraft(83398, 450291); -- Coreforged Repair Hammer
+			FirstCraft(83398, 450291);	-- Coreforged Repair Hammer
 		})),
 		filter(MISC, {
-			i(222520), -- Coreforged Repair Hammer+
-			i(222522), -- Coreforged Repair Hammer++
-			i(222521), -- Coreforged Repair Hammer+++
-			i(222505), -- Ironclaw Razorstone+
-			i(222506), -- Ironclaw Razorstone++
-			i(222507), -- Ironclaw Razorstone+++
-			i(222508), -- Ironclaw Weightstone+
-			i(222509), -- Ironclaw Weightstone++
-			i(222510), -- Ironclaw Weightstone+++
-			i(222502), -- Ironclaw Whetstone+
-			i(222503), -- Ironclaw Whetstone++
-			i(222504), -- Ironclaw Whetstone+++
-			i(222523), -- Coreforged Skeleton Key
-			i(224765), -- Everburning Ignition
-			i(225660), -- Earthern Master's Hammer
+			i(222520),	-- Coreforged Repair Hammer+
+			i(222522),	-- Coreforged Repair Hammer++
+			i(222521),	-- Coreforged Repair Hammer+++
+			i(222523),	-- Coreforged Skeleton Key
 			i(225660),	-- Earthen Master's Hammer
+			i(224765),	-- Everburning Ignition
+			i(222505),	-- Ironclaw Razorstone+
+			i(222506),	-- Ironclaw Razorstone++
+			i(222507),	-- Ironclaw Razorstone+++
+			i(222508),	-- Ironclaw Weightstone+
+			i(222509),	-- Ironclaw Weightstone++
+			i(222510),	-- Ironclaw Weightstone+++
+			i(222502),	-- Ironclaw Whetstone+
+			i(222503),	-- Ironclaw Whetstone++
+			i(222504),	-- Ironclaw Whetstone+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(222480, {["requireSkill"] = HERBALISM}), -- Proficient Sickle
-			i(222487, {["requireSkill"] = BLACKSMITHING}), -- Proficient Blacksmith's Toolbox
-			i(222486, {["requireSkill"] = BLACKSMITHING}), -- Proficient Blacksmith's Hammer
-			i(222483, {["requireSkill"] = TAILORING}), -- Proficient Needle Set
-			i(222484, {["requireSkill"] = LEATHERWORKING}),	-- Proficient Leatherworker's Knife
-			i(222485, {["requireSkill"] = LEATHERWORKING}),	-- Proficient Leatherworker's Toolset
-			i(222482, {["requireSkill"] = SKINNING}), -- Proficient Skinning Knife
-			i(222481, {["requireSkill"] = MINING}),	-- Proficient Pickaxe
-			i(222488, {["requireSkill"] = HERBALISM}), -- Artisan Sickle
-			i(222495, {["requireSkill"] = BLACKSMITHING}), -- Artisan Blacksmith's Toolbox
-			i(222494, {["requireSkill"] = BLACKSMITHING}), -- Artisan Blacksmith's Hammer
-			i(222491, {["requireSkill"] = TAILORING}), -- Artisan Needle Set
+			i(222494, {["requireSkill"] = BLACKSMITHING}),	-- Artisan Blacksmith's Hammer
+			i(222495, {["requireSkill"] = BLACKSMITHING}),	-- Artisan Blacksmith's Toolbox
 			i(222492, {["requireSkill"] = LEATHERWORKING}),	-- Artisan Leatherworker's Knife
 			i(222493, {["requireSkill"] = LEATHERWORKING}),	-- Artisan Leatherworker's Toolset
-			i(222490, {["requireSkill"] = SKINNING}), -- Artisan Skinning Knife
+			i(222491, {["requireSkill"] = TAILORING}),	-- Artisan Needle Set
 			i(222489, {["requireSkill"] = MINING}),	-- Artisan Pickaxe
+			i(222488, {["requireSkill"] = HERBALISM}),	-- Artisan Sickle
+			i(222490, {["requireSkill"] = SKINNING}),	-- Artisan Skinning Knife
+			i(222486, {["requireSkill"] = BLACKSMITHING}),	-- Proficient Blacksmith's Hammer
+			i(222487, {["requireSkill"] = BLACKSMITHING}),	-- Proficient Blacksmith's Toolbox
+			i(222484, {["requireSkill"] = LEATHERWORKING}),	-- Proficient Leatherworker's Knife
+			i(222485, {["requireSkill"] = LEATHERWORKING}),	-- Proficient Leatherworker's Toolset
+			i(222483, {["requireSkill"] = TAILORING}),	-- Proficient Needle Set
+			i(222481, {["requireSkill"] = MINING}),	-- Proficient Pickaxe
+			i(222480, {["requireSkill"] = HERBALISM}),	-- Proficient Sickle
+			i(222482, {["requireSkill"] = SKINNING}),	-- Proficient Skinning Knife
 		}),
 		filter(REAGENTS, {
-			i(222423), -- Sanctified Alloy+
-			i(222424), -- Sanctified Alloy++
-			i(222425), -- Sanctified Alloy+++
-			i(222420), -- Charged Alloy+
-			i(222421), -- Charged Alloy++
-			i(222422), -- Charged Alloy+++
-			i(222426), -- Ironclaw Alloy+
-			i(222427), -- Ironclaw Alloy++
-			i(222428), -- Ironclaw Alloy+++
-			i(222417), -- Core Alloy+
-			i(222418), -- Core Alloy++
-			i(222419), -- Core Alloy+++
-			i(222511), -- Adjustable Framework+
-			i(222512), -- Adjustable Framework++
-			i(222513), -- Adjustable Framework+++
-			i(222514), -- Tempered Framework+
-			i(222515), -- Tempered Framework++
-			i(222516), -- Tempered Framework+++
-			i(222499), -- Forged Framework+
-			i(222500), -- Forged Framework++
-			i(222501), -- Forged Framework+++
+			i(222511),	-- Adjustable Framework+
+			i(222512),	-- Adjustable Framework++
+			i(222513),	-- Adjustable Framework+++
+			i(222420),	-- Charged Alloy+
+			i(222421),	-- Charged Alloy++
+			i(222422),	-- Charged Alloy+++
+			i(222417),	-- Core Alloy+
+			i(222418),	-- Core Alloy++
+			i(222419),	-- Core Alloy+++
+			i(222499),	-- Forged Framework+
+			i(222500),	-- Forged Framework++
+			i(222501),	-- Forged Framework+++
+			i(222426),	-- Ironclaw Alloy+
+			i(222427),	-- Ironclaw Alloy++
+			i(222428),	-- Ironclaw Alloy+++
+			i(222423),	-- Sanctified Alloy+
+			i(222424),	-- Sanctified Alloy++
+			i(222425),	-- Sanctified Alloy+++
+			i(222514),	-- Tempered Framework+
+			i(222515),	-- Tempered Framework++
+			i(222516),	-- Tempered Framework+++
 		}),
 		n(WEAPONS, {
-			i(222439), -- Charged Dagger
-			i(222440), -- Charged Longsword
-			i(222441), -- Charged Warglaive
-			i(222442), -- Charged Mace
-			i(222443), -- Charged Greataxe
-			i(222444), -- Charged Hexsword
-			i(222445), -- Charged Runeaxe
-			i(222446), -- Charged Facesmaher
-			i(222447), -- Charged Claymore
-			i(222448), -- Charged Halberd
-			i(222449), -- Charged Crusher
-			i(222450), -- Charged Invoker
-			i(222451), -- Charged Slicer
-			i(222464), -- Ironclaw Stiletto
-			i(222465), -- Ironclaw Dirk
-			i(222466), -- Ironclaw Sword
-			i(222467), -- Ironclaw Knuckles
-			i(222468), -- Ironclaw Great Mace
-			i(222469), -- Ironclaw Axe
-			i(222470), -- Ironclaw Great Axe
-			i(225366), -- Algari Competitor's Splitter
-			i(225367), -- Algari Competitor's Dagger
-			i(225371), -- Algari Competitor's Scepter
-			i(225373), -- Algari Competitor's Shield
-			i(225374), -- Algari Competitor's Axe
-			i(225375), -- Algari Competitor's Sickle
-			i(225377), -- Algari Competitor's Sword
+			i(225374),	-- Algari Competitor's Axe
+			i(225367),	-- Algari Competitor's Dagger
 			i(225376),	-- Algari Competitor's Greatsword
+			i(225371),	-- Algari Competitor's Scepter
+			i(225373),	-- Algari Competitor's Shield
+			i(225375),	-- Algari Competitor's Sickle
+			i(225366),	-- Algari Competitor's Splitter
+			i(225377),	-- Algari Competitor's Sword
 			i(222459),	-- Beledar's Bulwark
+			i(222447),	-- Charged Claymore
+			i(222449),	-- Charged Crusher
+			i(222439),	-- Charged Dagger
+			i(222446),	-- Charged Facesmaher
 			i(222446),	-- Charged Facesmasher
-			i(222463),	-- Siphoning Stiletto
+			i(222443),	-- Charged Greataxe
+			i(222448),	-- Charged Halberd
+			i(222444),	-- Charged Hexsword
+			i(222450),	-- Charged Invoker
+			i(222440),	-- Charged Longsword
+			i(222442),	-- Charged Mace
+			i(222445),	-- Charged Runeaxe
+			i(222451),	-- Charged Slicer
+			i(222441),	-- Charged Warglaive
 			i(222439),	-- Everforged Dagger
-			i(222432), -- Everforged Defender
+			i(222432),	-- Everforged Defender
 			i(222443),	-- Everforged Greataxe
 			i(222440),	-- Everforged Longsword
 			i(222442),	-- Everforged Mace
 			i(222438),	-- Everforged Stabber
 			i(222441),	-- Everforged Warglaive
+			i(222469),	-- Ironclaw Axe
+			i(222465),	-- Ironclaw Dirk
+			i(222470),	-- Ironclaw Great Axe
+			i(222468),	-- Ironclaw Great Mace
+			i(222467),	-- Ironclaw Knuckles
+			i(222464),	-- Ironclaw Stiletto
+			i(222466),	-- Ironclaw Sword
+			i(222463),	-- Siphoning Stiletto
 		}),
 	}),
 	--[[
@@ -1758,9 +1757,9 @@ root(ROOTS.HiddenQuestTriggers, {
 						-- Randomly when crafting Thaumaturgy
 		}),
 		prof(BLACKSMITHING, {
-			q(83111), -- 10/40 Everburning Forge
-			q(83112), -- 20/40 Everburning Forge
-			q(83131), -- 30/40 Everburning Forge
+			q(83111),	-- 10/40 Everburning Forge
+			q(83112),	-- 20/40 Everburning Forge
+			q(83131),	-- 30/40 Everburning Forge
 		}),
 	}),
 });
