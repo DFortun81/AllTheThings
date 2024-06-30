@@ -2975,6 +2975,14 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						{ "c", BRONZE, 38500 },
 						{ "i", BONES_OF_MANNOROTH, 20 }
 					},
+					["timeline"] = { "removed 10.2.7.55142" },
+				}),
+				i(227550, {	-- Tusks of Mannoroth
+					["cost"] = {
+						{ "c", BRONZE, 38500 },
+						{ "i", BONES_OF_MANNOROTH, 20 }
+					},
+					["timeline"] = { "added 10.2.7.55142" },
 				}),
 				-- Classes
 				clWithoutLock(DEATHKNIGHT, {

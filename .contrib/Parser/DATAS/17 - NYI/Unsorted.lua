@@ -4373,7 +4373,6 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 				i(224270),	-- Tattered Technique: Certificate of Ownership
 			}),
-			i(227550),	-- Tusks of Mannoroth
 		})),
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 			------ Next Check 10.2.7 ------
