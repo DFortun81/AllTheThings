@@ -59,11 +59,27 @@ local EncounterToLoot = {
 		i(212430),	-- Shattered Eye Cincture
 	};
 	[SIKRAN] = {
-		--- HAND
-		i(225618),	-- Dreadful Stalwart's Emblem
-		i(225619),	-- Mystic Stalwart's Emblem
-		i(225620),	-- Venerated Stalwart's Emblem
-		i(225621),	-- Zenith Stalwart's Emblem
+		i(225618, {	-- Dreadful Stalwart's Emblem
+			i(212003),	-- Exhumed Centurion's Gauntlets
+			i(212066),	-- Claws of the Hypogeal Nemesis
+			i(212075),	-- Hexflame Coven's Sleeves
+		}),
+		i(225619, {	-- Mystic Stalwart's Emblem
+			i(212057),	-- Eviscerators of the Greatlynx
+			i(212021),	-- Lightless Scavenger's Mitts
+			i(212093),	-- Jeweled Gauntlets of Violet Rebirth
+		}),
+		i(225620, {	-- Venerated Stalwart's Emblem
+			i(211994),	-- Entombed Seraph's Castigation
+			i(212084),	-- Living Luster's Touch
+			i(212012),	-- Covenant of the Forgotten Reservoir
+		}),
+		i(225621, {	-- Zenith Stalwart's Emblem
+			i(212030),	-- Rippers of the Destroyer
+			i(212048),	-- Gatecrasher's Protectors
+			i(212039),	-- K'areshi Phantom's Grips
+			i(211985),	-- Warsculptor's Crushers
+		}),
 		i(212445),	-- Chitin-Spiked Jackboots
 		i(212416),	-- Cosmic-Tinged Treads
 		i(212392),	-- Duelist's Dancing Steel
@@ -76,11 +92,27 @@ local EncounterToLoot = {
 		i(212427),	-- Visor of the Evolved Captain
 	};
 	[RASHANAN] = {
-		--- Shoulder
-		i(225630),	-- Dreadful Obscenity's Idol
-		i(225631),	-- Mystic Obscenity's Idol
-		i(225632),	-- Venerated Obscenity's Idol
-		i(225633),	-- Zenith Obscenity's Idol
+		i(225630, {	-- Dreadful Obscenity's Idol
+			i(212000),	-- Exhumed Centurion's Spikes
+			i(212063),	-- War-Mantle of the Hypogeal Nemesis
+			i(212072),	-- Hexflame Coven's Altar
+		}),
+		i(225631, {	-- Mystic Obscenity's Idol
+			i(212054),	-- Maw of the Greatlynx
+			i(212018),	-- Lightless Scavenger's Taxidermy
+			i(212090),	-- Beacons of Violet Rebirth
+		}),
+		i(225632, {	-- Venerated Obscenity's Idol
+			i(211991),	-- Entombed Seraph's Plumes
+			i(212081),	-- Living Luster's Dominion
+			i(212009),	-- Concourse of the Forgotten Reservoir
+		}),
+		i(225633, {	-- Zenith Obscenity's Idol
+			i(212027),	-- Fumaroles of the Destroyer
+			i(212045),	-- Gatecrasher's Enduring Effigy
+			i(212036),	-- K'areshi Phantom's Shoulderpads
+			i(211982),	-- Warsculptor's Horned Spaulders
+		}),
 		i(225583),	-- Behemoth's Eroded Cinch
 		i(212398),	-- Bludgeons of Blistering Wind
 		i(212440),	-- Devotee's Discarded Headdress
@@ -92,11 +124,27 @@ local EncounterToLoot = {
 		i(225574),	-- Wings of Shattered Sorrow
 	};
 	[OVINAX] = {
-		--- Chest
-		i(225614),	-- Dreadful Blasphemer's Effigy
-		i(225615),	-- Mystic Blasphemer's Effigy
-		i(225616),	-- Venerated Blasphemer's Effigy
-		i(225617),	-- Zenith Blasphemer's Effigy
+		i(225614, {	-- Dreadful Blasphemer's Effigy
+			i(212005),	-- Exhumed Centurion's Breastplate
+			i(212068),	-- Chestguard of the Hypogeal Nemesis
+			i(212077),	-- Hexflame Coven's Ritual Harness
+		}),
+		i(225615, {	-- Mystic Blasphemer's Effigy
+			i(212059),	-- Hide of the Greatlynx
+			i(212023),	-- Lightless Scavenger's Tunic
+			i(212095),	-- Runecoat of Violet Rebirth
+		}),
+		i(225616, {	-- Venerated Blasphemer's Effigy
+			i(211996),	-- Entombed Seraph's Breastplate
+			i(212086),	-- Living Luster's Raiment
+			i(212014),	-- Vestments of the Forgotten Reservoir
+		}),
+		i(225617, {	-- Zenith Blasphemer's Effigy
+			i(212032),	-- Scales of the Destroyer
+			i(212050),	-- Gatecrasher's Gi
+			i(212041),	-- K'areshi Phantom's Nexus Wraps
+			i(211987),	-- Warsculptor's Furred Plastron
+		}),
 		i(225580),	-- Accelerated Ascension Coil
 		i(225582),	-- Assimilated Eggshell Slippers
 		i(212418),	-- Black Blood Injectors
@@ -108,11 +156,27 @@ local EncounterToLoot = {
 		i(225576),	-- Writhing Ringworm
 	};
 	[KYVEZA] = {
-		-- Leg
-		i(225626),	-- Dreadful Slayer's Icon
-		i(225627),	-- Mystic Slayer's Icon
-		i(225628),	-- Venerated Slayer's Icon
-		i(225629),	-- Zenith Slayer's Icon
+		i(225626, {	-- Dreadful Slayer's Icon
+			i(212001),	-- Exhumed Centurion's Chausses
+			i(212064),	-- Pantaloons of the Hypogeal Nemesis
+			i(212073),	-- Hexflame Coven's Leggings
+		}),
+		i(225627, {	-- Mystic Slayer's Icon
+			i(212055),	-- Leggings of the Greatlynx
+			i(212019),	-- Lightless Scavenger's Stalkings
+			i(212091),	-- Coattails of Violet Rebirth
+		}),
+		i(225628, {	-- Venerated Slayer's Icon
+			i(211992),	-- Entombed Seraph's Greaves
+			i(212082),	-- Living Luster's Trousers
+			i(212010),	-- Sarong of the Forgotten Reservoir
+		}),
+		i(225629, {	-- Zenith Slayer's Icon
+			i(212028),	-- Legguards of the Destroyer
+			i(212046),	-- Gatecrasher's Kilt
+			i(212037),	-- K'areshi Phantom's Leggings
+			i(211983),	-- Warsculptor's Cuisses
+		}),
 		i(212441),	-- Bindings of the Starless Night
 		i(225591),	-- Fleeting Massacre Footpads
 		i(225581),	-- Ky'veza's Covert Clasps
@@ -124,11 +188,27 @@ local EncounterToLoot = {
 		i(219877),	-- Void Reaper's Warp Blade
 	};
 	[SILKEN_COURT] = {
-		-- head
-		i(225622),	-- Dreadful Conniver's Badge
-		i(225623),	-- Mystic Conniver's Badge
-		i(225624),	-- Venerated Conniver's Badge
-		i(225625),	-- Zenith Conniver's Badge
+		i(225622, {	-- Dreadful Conniver's Badge
+			i(212002),	-- Exhumed Centurion's Galea
+			i(212065),	-- Impalers of the Hypogeal Nemesis
+			i(212074),	-- Hexflame Coven's All-Seeing Eye
+		}),
+		i(225623, {	-- Mystic Conniver's Badge
+			i(212056),	-- Mask of the Greatlynx
+			i(212020),	-- Lightless Scavenger's Skull
+			i(212092),	-- Hood of Violet Rebirth
+		}),
+		i(225624, {	-- Venerated Conniver's Badge
+			i(211993),	-- Entombed Seraph's Casque
+			i(212083),	-- Living Luster's Semblance
+			i(212011),	-- Noetic of the Forgotten Reservoir
+		}),
+		i(225625, {	-- Zenith Conniver's Badge
+			i(212029),	-- Horns of the Destroyer
+			i(212047),	-- Gatecrasher's Horns
+			i(212038),	-- K'areshi Phantom's Emptiness
+			i(211984),	-- Warsculptor's Barbute
+		}),
 		i(212407),	-- Anub'arash's Colossal Mandible
 		i(212443),	-- Shattershell Greaves
 		i(225575),	-- Silken Advisor's Favor
@@ -164,6 +244,12 @@ local ZoneDropLoot = {
 local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
 local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
 InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
+
+InstanceHelper.UpgradeMapping = {
+	[DIFFICULTY.RAID.LFR] = 3,
+	[DIFFICULTY.RAID.NORMAL] = 5,
+	[DIFFICULTY.RAID.HEROIC] = 6,
+};
 
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1273, {	-- Nerub'ar Palace
@@ -378,7 +464,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 
 				}),
 				BossOnly(ANSUREK, {
-					aach(40266),	-- Missed 'Em by That Much
+					ach(40266),	-- Missed 'Em by That Much
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
