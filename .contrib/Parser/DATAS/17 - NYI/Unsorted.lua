@@ -96,6 +96,36 @@ root(ROOTS.Unsorted, {
 					i(211808),	-- Gilded Vial
 				}),
 				prof(BLACKSMITHING, {
+					i(225486),	-- Plans: Algari Competitor's Axe (RECIPE!)
+					i(225479),	-- Plans: Algari Competitor's Dagger (RECIPE!)
+					i(225488),	-- Plans: Algari Competitor's Greatsword (RECIPE!)
+					i(225466),	-- Plans: Algari Competitor's Plate Armguards (RECIPE!)
+					i(225459),	-- Plans: Algari Competitor's Plate Breastplate (RECIPE!)
+					i(225461),	-- Plans: Algari Competitor's Plate Gauntlets (RECIPE!)
+					i(225463),	-- Plans: Algari Competitor's Plate Greaves (RECIPE!)
+					i(225462),	-- Plans: Algari Competitor's Plate Helm (RECIPE!)
+					i(225464),	-- Plans: Algari Competitor's Plate Pauldrons (RECIPE!)
+					i(225460),	-- Plans: Algari Competitor's Plate Sabatons (RECIPE!)
+					i(225465),	-- Plans: Algari Competitor's Plate Waistguard (RECIPE!)
+					i(225483),	-- Plans: Algari Competitor's Scepter (RECIPE!)
+					i(225485),	-- Plans: Algari Competitor's Shield (RECIPE!)
+					i(225487),	-- Plans: Algari Competitor's Sickle (RECIPE!)
+					i(225478),	-- Plans: Algari Competitor's Splitter (RECIPE!)
+					i(225489),	-- Plans: Algari Competitor's Sword (RECIPE!)
+					i(223053),	-- Plans: Artisan Leatherworker's Knife (RECIPE!)
+					i(223054),	-- Plans: Artisan Leatherworker's Toolset (RECIPE!)
+					i(223052),	-- Plans: Artisan Needle Set (RECIPE!)
+					i(223050),	-- Plans: Artisan Pickaxe (RECIPE!)
+					i(223049),	-- Plans: Artisan Sickle (RECIPE!)
+					i(223051),	-- Plans: Artisan Skinning Knife (RECIPE!)
+					i(226643),	-- Plans: Beledar's Bulwark (RECIPE!)
+					i(223040),	-- Plans: Charged Crusher (RECIPE!)
+					i(223037),	-- Plans: Charged Facesmasher (RECIPE!)
+					i(223036),	-- Plans: Charged Runeaxe (RECIPE!)
+					i(223042),	-- Plans: Charged Slicer (RECIPE!)
+					i(223043),	-- Plans: Sanctified Steps (RECIPE!)
+					i(223048),	-- Plans: Siphoning Stiletto (RECIPE!)
+
 					i(217847),	-- Everforged Hands
 					i(217848),	-- Everforged Wrists
 					i(217849),	-- Everforged Waist
@@ -161,12 +191,13 @@ root(ROOTS.Unsorted, {
 					i(217935),	-- Artisan Leatherworker's Scalpel
 					i(217936),	-- Artisan Smithing Toolbox
 					i(217937),	-- Proficient Tailor's Needle Set
-					i(217938),	-- Artisan Leatherworker's Toolset
+
+
 					i(217939),	-- Proficient Skinner's Knife
 					i(217940),	-- Artisan Miner's Pickaxe
 					i(217941),	-- Artisan Skinner's Knife
 					i(217942),	-- Artisan Smithing Hammer
-					i(217943),	-- Proficient Leatherworker's Toolset
+
 					i(217944),	-- Artisan Herbalist's Sickle
 					i(217945),	-- Proficient Miner's Pickaxe
 					i(217946),	-- Plans: <Epic Smithing Hammer>
@@ -179,14 +210,9 @@ root(ROOTS.Unsorted, {
 					i(217953),	-- Plans: Hematic Alloy Sickle
 					i(217954),	-- Plans: Hematic Alloy Needle Set
 					i(217955),	-- Plans: Hematic Alloy Skinning Knife
-					i(217143),	-- Algari Competitor's Plate Breastplate \\ Vicious Competitor's Plate Breastplate
-					i(217144),	-- Algari Competitor's Plate Sabatons \\ Vicious Competitor's Plate Sabatons
-					i(217145),	-- Algari Competitor's Plate Gauntlets \\ Vicious Competitor's Plate Gauntlets
-					i(217146),	-- Algari Competitor's Plate Helm \\ Vicious Competitor's Plate Helm
-					i(217147),	-- Algari Competitor's Plate Greaves \\ Vicious Competitor's Plate Greaves
-					i(217148),	-- Algari Competitor's Plate Pauldrons \\ Vicious Competitor's Plate Pauldrons
-					i(217149),	-- Algari Competitor's Plate Waistguard \\ Vicious Competitor's Plate Waistguard
-					i(217150),	-- Algari Competitor's Plate Armguards \\ Vicious Competitor's Plate Armguards
+
+
+
 				}),
 				prof(ENCHANTING, {
 					i(223113),	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
@@ -1030,6 +1056,7 @@ root(ROOTS.Unsorted, {
 			i(218080),	-- Dalaran Defender's Cloak
 			i(218081),	-- Dalaran Defender's Drape
 			i(218084),	-- Crumpled Note
+			--- BLACKSMITHING ---
 			i(218087),	-- <Pressurized Core Alloy>
 			i(218088),	-- <Pressurized Core Alloy>
 			i(218089),	-- <Endgame Alloy C>
@@ -1047,6 +1074,7 @@ root(ROOTS.Unsorted, {
 			i(218101),	-- Plans: <PVP Alloy>
 			i(218102),	-- Bloodstained Plans: <PVP Alloy>
 			i(218103),	-- Plans: <Endgame Alloy C>
+			--- BLACKSMITHING ---
 			i(218104),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 			i(218122),	-- Stolen Relic \\ Stolen Shard
 			i(218123),	-- Glowing Shard
@@ -1949,30 +1977,20 @@ root(ROOTS.Unsorted, {
 			i(220156),	-- Bubbling Wax
 			i(220157),	-- Lightbringer's Amulet \\ [PH] The Cool Arathi Necklace (Stage 2)
 			i(220158),	-- Lightbringer's Amulet \\ [PH] The Cool Arathi Necklace (Stage 3)
-			i(220174),	-- Core Alloy
-			i(220175),	-- Core Alloy
-			i(220176),	-- Core Alloy
-			i(220177),	-- Charged Alloy
-			i(220178),	-- Charged Alloy
-			i(220179),	-- Charged Alloy
+			--- BLACKSMITHING ---
+
+
 			i(220180),	-- Earthen Master's Arsenal
 			i(220181),	-- Earthen Master's Arsenal
 			i(220182),	-- Earthen Master's Arsenal
-			i(220183),	-- Seasoned Skillet
-			i(220184),	-- Seasoned Skillet
-			i(220185),	-- Seasoned Skillet
-			i(220186),	-- Forged Framework
-			i(220187),	-- Forged Framework
-			i(220188),	-- Forged Framework
-			i(220189),	-- Sanctified Alloy
-			i(220190),	-- Sanctified Alloy
-			i(220191),	-- Sanctified Alloy
-			i(220192),	-- Ironclaw Alloy
-			i(220193),	-- Ironclaw Alloy
-			i(220194),	-- Ironclaw Alloy
+
+
+
+
 			i(220195),	-- Echoing Impact Seal
 			i(220196),	-- Echoing Impact Seal
 			i(220197),	-- Echoing Impact Seal
+			--- BLACKSMITHING ---
 			i(220202),	-- Spymaster's Web
 			i(220212),	-- Aelric's Corrupted Tinderbox
 			i(220215),	-- Unknown's Tinderbox
@@ -2089,26 +2107,18 @@ root(ROOTS.Unsorted, {
 			i(220769),	-- Algari Token of Merit \\ Algarian Token of Merit
 			i(220770),	-- Void-Scarred Stormhammer
 			i(220773),	-- Celebratory Pack of Runed Harbinger Crests \\ Celebratory Pack of Runed Harbinger Crests (TODO: Fix Icon)
-			i(220774),	-- Goblin Mini Fridge
 			i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
-			i(220943),	-- Reinforced Handle
-			i(220944),	-- Reinforced Handle
-			i(220945),	-- Reinforced Handle
-			i(220946),	-- Weighted Lure
-			i(220947),	-- Weighted Lure
-			i(220948),	-- Weighted Lure
-			i(220949),	-- Ironclaw Weapon Stone
-			i(220950),	-- Ironclaw Weapon Stone
-			i(220951),	-- Ironclaw Weapon Stone
+
+			--- BLACKSMITHING
 			i(220952),	-- Webbed Fishing Line
 			i(220953),	-- Webbed Fishing Line
 			i(220954),	-- Webbed Fishing Line
-			i(220955),	-- Crystal Gazer's Gauntlets
-			i(220956),	-- Lightwatcher's Visor
+
+
 			i(220957),	-- Echoing Tuncheon
 			i(220958),	-- Haunting Void
 			i(220959),	-- Entangling Cutlass
-			i(220960),	-- Siphoning Stiletto
+
 			i(220961),	-- Arathor Armor Patch
 			i(220962),	-- Arathor Armor Patch
 			i(220963),	-- Arathor Armor Patch
@@ -2313,112 +2323,68 @@ root(ROOTS.Unsorted, {
 			i(221965),	-- Prototype: Wormhole Generator: Khaz Algar
 			i(221968),	-- Legibly Scribbled Notes
 			i(221969),	-- P.0.W. x2
-			i(221983),	-- Core Alloy
-			i(221984),	-- Core Alloy
-			i(221985),	-- Core Alloy
-			i(221986),	-- Core Alloy
-			i(221987),	-- Charged Alloy
-			i(221988),	-- Charged Alloy
-			i(221989),	-- Charged Alloy
-			i(221990),	-- Sanctified Alloy
-			i(221991),	-- Sanctified Alloy
-			i(221992),	-- Sanctified Alloy
-			i(221993),	-- Ironclaw Alloy
-			i(221994),	-- Ironclaw Alloy
-			i(221995),	-- Ironclaw Alloy
-			i(221996),	-- Everforged Sabatons
-			i(221997),	-- Everforged Breastplate
-			i(221998),	-- Everforged Greatbelt
-			i(221999),	-- Everforged Defender
-			i(222000),	-- Everforged Helm
-			i(222001),	-- Everforged Legplates
-			i(222002),	-- Everforged Vambraces
-			i(222003),	-- Everforged Pauldrons
-			i(222004),	-- Everforged Gauntlets
-			i(222005),	-- Everforged Shortblade
-			i(222006),	-- Everforged Spellblade
-			i(222007),	-- Everforged Longsword
-			i(222008),	-- Everforged Warglaive
-			i(222009),	-- Everforged Mace
-			i(222010),	-- Everforged Greataxe
-			i(222011),	-- Charged Hexsword
-			i(222012),	-- Charged Runeaxe
-			i(222013),	-- Charged Facesmasher
-			i(222014),	-- Charged Claymore
-			i(222015),	-- Charged Halberd
-			i(222016),	-- Charged Crusher
-			i(222017),	-- Charged Invoker
-			i(222018),	-- Charged Slicer
+			--- BLACKSMITHING ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			i(222019),	-- Echoing Impact Seal
 			i(222020),	-- Arathor Armor Patch
-			i(222021),	-- Crystal Gazer's Gauntlets
-			i(222022),	-- Lightwatcher's Visor
+
+
 			i(222023),	-- Echoing Truncheon
 			i(222024),	-- Entangling Cutlass
 			i(222025),	-- Haunting Void
-			i(222026),	-- Siphoning Stiletto
-			i(222027),	-- Ironclaw Stiletto
-			i(222028),	-- Ironclaw Dirk
-			i(222029),	-- Ironclaw Sword
-			i(222030),	-- Ironclaw Knuckles
-			i(222031),	-- Ironclaw Great Mace
-			i(222032),	-- Ironclaw Axe
-			i(222033),	-- Ironclaw Great Axe
-			i(222034),	-- Ironclaw Sabatons
-			i(222035),	-- Ironclaw Breastplate
-			i(222036),	-- Ironclaw Greatbelt
-			i(222037),	-- Ironclaw Defender
-			i(222038),	-- Ironclaw Helm
-			i(222039),	-- Ironclaw Legplates
-			i(222040),	-- Ironclaw Vambraces
-			i(222041),	-- Ironclaw Pauldrons
-			i(222042),	-- Ironclaw Gauntlets
-			i(222043),	-- Proficient Sickle
-			i(222044),	-- Proficient Pickaxe
-			i(222045),	-- Proficient Skinning Knife
-			i(222046),	-- Proficient Needle Set
-			i(222047),	-- Proficient Leatherworker's Knife
-			i(222048),	-- Proficient Leatherworker's Toolset
-			i(222049),	-- Proficient Blacksmith's Hammer
-			i(222050),	-- Proficient Blacksmith's Toolbox
-			i(222051),	-- Artisan Sickle
-			i(222052),	-- Artisan Pickaxe
-			i(222053),	-- Artisan Skinning Knife
-			i(222054),	-- Artisan Needle Set
-			i(222055),	-- Artisan Leatherworker's Knife
-			i(222056),	-- Artisan Leatherworker's Toolset
-			i(222057),	-- Artisan Blacksmith's Hammer
-			i(222058),	-- Artisan Blacksmith's Toolbox
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			i(222059),	-- Earthen Master's Arsenal
 			i(222060),	-- Earthen Master's Arsenal
 			i(222061),	-- Earthen Master's Arsenal
-			i(222062),	-- Forged Framework
-			i(222063),	-- Forged Framework
-			i(222064),	-- Forged Framework
-			i(222065),	-- Ironclaw Weapon Stone
-			i(222066),	-- Ironclaw Weapon Stone
-			i(222067),	-- Ironclaw Weapon Stone
-			i(222068),	-- Reinforced Handle
-			i(222069),	-- Reinforced Handle
-			i(222070),	-- Reinforced Handle
-			i(222071),	-- Seasoned Skillet
-			i(222072),	-- Seasoned Skillet
-			i(222073),	-- Seasoned Skillet
+
+
 			i(222074),	-- Webbed Fishing Line
 			i(222075),	-- Webbed Fishing Line
 			i(222076),	-- Webbed Fishing Line
-			i(222077),	-- Weighted Lure
-			i(222078),	-- Weighted Lure
-			i(222079),	-- Weighted Lure
-			i(222080),	-- Earthen Master's Hammer
-			i(222081),	-- Earthen Master's Hammer
-			i(222082),	-- Earthen Master's Hammer
-			i(222083),	-- Coreforged Repair Hammer
-			i(222084),	-- Coreforged Repair Hammer
-			i(222085),	-- Coreforged Repair Hammer
-			i(222086),	-- Coreforged Skeleton Key
-			i(222087),	-- Coreforged Skeleton Key
-			i(222088),	-- Coreforged Skeleton Key
+
+
+
+
+			--- BLACKSMITHING ---
 			i(222089),	-- Bloody Perch
 			i(222090),	-- Crystalline Sturgeon
 			i(222091),	-- Bismuth Bitterling
@@ -2534,115 +2500,52 @@ root(ROOTS.Unsorted, {
 			i(222345),	-- Hearty Rockslide Shake
 			i(222346),	-- Hearty NYI NAME NEEDED
 			i(222347),	-- Hearty NYI NAME NEEDED
-			i(222417),	-- Core Alloy
-			i(222418),	-- Core Alloy
-			i(222419),	-- Core Alloy
-			i(222420),	-- Charged Alloy
-			i(222421),	-- Charged Alloy
-			i(222422),	-- Charged Alloy
-			i(222423),	-- Sanctified Alloy
-			i(222424),	-- Sanctified Alloy
-			i(222425),	-- Sanctified Alloy
-			i(222426),	-- Ironclaw Alloy
-			i(222427),	-- Ironclaw Alloy
-			i(222428),	-- Ironclaw Alloy
-			i(222429),	-- Everforged Sabatons
-			i(222430),	-- Everforged Breastplate
-			i(222431),	-- Everforged Greatbelt
-			i(222432),	-- Everforged Defender
-			i(222433),	-- Everforged Helm
-			i(222434),	-- Everforged Legplates
-			i(222435),	-- Everforged Vambraces
-			i(222436),	-- Everforged Pauldrons
-			i(222437),	-- Everforged Gauntlets
-			i(222438),	-- Everforged Stabber \\ Everforged Shortblade
-			i(222439),	-- Everforged Dagger \\ Everforged Spellblade
-			i(222440),	-- Everforged Longsword
-			i(222441),	-- Everforged Warglaive
-			i(222442),	-- Everforged Mace
-			i(222443),	-- Everforged Greataxe
-			i(222444),	-- Charged Hexsword
-			i(222445),	-- Charged Runeaxe
-			i(222446),	-- Charged Facesmasher
-			i(222447),	-- Charged Claymore
-			i(222448),	-- Charged Halberd
-			i(222449),	-- Charged Crusher
-			i(222450),	-- Charged Invoker
-			i(222451),	-- Charged Slicer
+			--- BLACKSMITHING ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			i(222452),	-- Echoing Impact Seal
 			i(222453),	-- Echoing Impact Seal
 			i(222454),	-- Echoing Impact Seal
 			i(222455),	-- Arathor Armor Patch
 			i(222456),	-- Arathor Armor Patch
 			i(222457),	-- Arathor Armor Patch
-			i(222458),	-- Sanctified Steps \\ Crystal Gazer's Gauntlets
-			i(222459),	-- Beledar's Bulwark \\ Lightwatcher's Visor
+
+
 			i(222460),	-- Echoing Truncheon
 			i(222461),	-- Entangling Cutlass
 			i(222462),	-- Haunting Void
-			i(222463),	-- Siphoning Stiletto
-			i(222464),	-- Ironclaw Stiletto
-			i(222465),	-- Ironclaw Dirk
-			i(222466),	-- Ironclaw Sword
-			i(222467),	-- Ironclaw Knuckles
-			i(222468),	-- Ironclaw Great Mace
-			i(222469),	-- Ironclaw Axe
-			i(222470),	-- Ironclaw Great Axe
-			i(222471),	-- Dredger's Plate Sabatons \\ Ironclaw Sabatons
-			i(222472),	-- Dredger's Plate Breastplate \\ Dredger's Developed Breastplate \\ Ironclaw Breastplate
-			i(222473),	-- Dredger's Developed Greatbelt \\ Dredger's Plate Greatbelt \\ Ironclaw Greatbelt
-			i(222474),	-- Dredger's Developed Defender \\ Ironclaw Defender
-			i(222475),	-- Dredger's Developed Helm \\ Ironclaw Helm
-			i(222476),	-- Dredger's Developed Legplates \\ Ironclaw Legplates
-			i(222477),	-- Dredger's Plate Vambraces \\ Ironclaw Vambraces
-			i(222478),	-- Dredger's Developed Pauldrons \\ Ironclaw Pauldrons
-			i(222479),	-- Dredger's Developed Gauntlets \\ Ironclaw Gauntlets
-			i(222480),	-- Proficient Sickle
-			i(222481),	-- Proficient Pickaxe
-			i(222482),	-- Proficient Skinning Knife
-			i(222483),	-- Proficient Needle Set
-			i(222484),	-- Proficient Leatherworker's Knife
-			i(222485),	-- Proficient Leatherworker's Toolset
-			i(222486),	-- Proficient Blacksmith's Hammer
-			i(222487),	-- Proficient Blacksmith's Toolbox
-			i(222488),	-- Artisan Sickle
-			i(222489),	-- Artisan Pickaxe
-			i(222490),	-- Artisan Skinning Knife
-			i(222491),	-- Artisan Needle Set
-			i(222492),	-- Artisan Leatherworker's Knife
-			i(222493),	-- Artisan Leatherworker's Toolset
-			i(222494),	-- Artisan Blacksmith's Hammer
-			i(222495),	-- Artisan Blacksmith's Toolbox
+
+
+
+
+
+
 			i(222496),	-- Earthen Master's Arsenal
 			i(222497),	-- Earthen Master's Arsenal
 			i(222498),	-- Earthen Master's Arsenal
-			i(222499),	-- Forged Framework
-			i(222500),	-- Forged Framework
-			i(222501),	-- Forged Framework
-			i(222502),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
-			i(222503),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
-			i(222504),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
-			i(222505),	-- Ironclaw Razorstone \\ Reinforced Handle
-			i(222506),	-- Ironclaw Razorstone \\ Reinforced Handle
-			i(222507),	-- Ironclaw Razorstone \\ Reinforced Handle
-			i(222508),	-- Ironclaw Weightstone \\ Seasoned Skillet
-			i(222509),	-- Ironclaw Weightstone \\ Seasoned Skillet
-			i(222510),	-- Ironclaw Weightstone \\ Seasoned Skillet
-			i(222511),	-- Adjustable Framework \\ Webbed Fishing Line
-			i(222512),	-- Adjustable Framework \\ Webbed Fishing Line
-			i(222513),	-- Adjustable Framework \\ Webbed Fishing Line
-			i(222514),	-- Tempered Framework \\ Weighted Lure
-			i(222515),	-- Tempered Framework \\ Weighted Lure
-			i(222516),	-- Tempered Framework \\ Weighted Lure
+
+
+
 			i(222517),	-- Core Framework \\ Earthen Master's Hammer
 			i(222518),	-- Core Framework \\ Earthen Master's Hammer
 			i(222519),	-- Core Framework \\ Earthen Master's Hammer
-			i(222520),	-- Coreforged Repair Hammer
-			i(222521),	-- Coreforged Repair Hammer
-			i(222522),	-- Coreforged Repair Hammer
-			i(222523),	-- Coreforged Skeleton Key
-			i(222524),	-- Coreforged Skeleton Key
-			i(222525),	-- Coreforged Skeleton Key
+
+
+			--- BLACKSMITHING ---
 			i(222526),	-- Bloody Perch
 			i(222527),	-- Crystalline Sturgeon
 			i(222528),	-- Bismuth Bitterling
@@ -2788,55 +2691,41 @@ root(ROOTS.Unsorted, {
 			i(223000),	-- Earthen Blunderbuss
 			i(223001),	-- Earthen Shillelagh \\ Earthen Pummel
 			i(223005),	-- String of Fungal Fruits
-			i(223008),	-- Plans: Charged Hexsword
-			i(223009),	-- Plans: Charged Runeaxe
-			i(223010),	-- Plans: Charged Facesmasher
-			i(223011),	-- Plans: Charged Claymore
-			i(223012),	-- Plans: Charged Halberd
-			i(223013),	-- Plans: Charged Crusher
-			i(223014),	-- Plans: Charged Invoker
-			i(223015),	-- Plans: Charged Slicer
-			i(223016),	-- Plans: Crystal Gazer's Gauntlets
-			i(223017),	-- Plans: Lightwatcher's Visor
+			--- BLACKSMITHING
+
+
+
+
 			i(223018),	-- Plans: Echoing Truncheon
 			i(223019),	-- Plans: Entangling Cutlass
 			i(223020),	-- Plans: Haunting Void
-			i(223021),	-- Plans: Siphoning Stiletto
-			i(223022),	-- Plans: Artisan Sickle
-			i(223023),	-- Plans: Artisan Pickaxe
-			i(223024),	-- Plans: Artisan Skinning Knife
-			i(223025),	-- Plans: Artisan Needle Set
-			i(223026),	-- Plans: Artisan Leatherworker's Knife
-			i(223027),	-- Plans: Artisan Leatherworker's Toolset
-			i(223028),	-- Plans: Seasoned Skillet
+
+
+
+
+
+
+
+
 			i(223029),	-- Plans: Webbed Fishing Line
-			i(223030),	-- Plans: Weighted Lure
-			i(223031),	-- Plans: Coreforged Skeleton Key
 
 
 
-			i(223035),	-- Plans: Charged Hexsword
-			i(223036),	-- Plans: Charged Runeaxe
-			i(223037),	-- Plans: Charged Facesmasher
-			i(223038),	-- Plans: Charged Claymore
-			i(223039),	-- Plans: Charged Halberd
-			i(223040),	-- Plans: Charged Crusher
-			i(223041),	-- Plans: Charged Invoker
-			i(223042),	-- Plans: Charged Slicer
-			i(223043),	-- Plans: Crystal Gazer's Gauntlets
-			i(223044),	-- Plans: Lightwatcher's Visor
+
+
+
+
+
+
+
+
+
 			i(223045),	-- Plans: Burning Binding \\ Plans: Echoing Truncheon
 			i(223046),	-- Plans: Entangling Cutlass
 			i(223047),	-- Plans: Haunting Void
-			i(223048),	-- Plans: Siphoning Stiletto
-			i(223049),	-- Plans: Artisan Sickle
-			i(223050),	-- Plans: Artisan Pickaxe
-			i(223051),	-- Plans: Artisan Skinning Knife
-			i(223052),	-- Plans: Artisan Needle Set
-			i(223053),	-- Plans: Artisan Leatherworker's Knife
-			i(223054),	-- Plans: Artisan Leatherworker's Toolset
-			i(223055),	-- Plans: Seasoned Skillet
-			i(223057),	-- Plans: Weighted Lure
+
+
+
 			i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
 			i(223082),	-- Design: Ominous Energy Crystal \\ Design: Engineering Finishing Reagent (DNT) \\ Pattern: Artisan Gardening Hat
 			i(223083),	-- Design: Elemental Focusing Lens \\ Pattern: Artisan Fishing Cap
@@ -3112,8 +3001,6 @@ root(ROOTS.Unsorted, {
 			i(224014),	-- Signet of the Skeinspiner
 			i(224015),	-- Signet of the Skeinspiner
 			i(224016),	-- Signet of the Skeinspiner
-			i(224025),	-- Crackling Shard
-			i(224026),	-- Storm Vessel
 			i(224027),	-- Bottomless Bag of Khaz Algar Herbs
 			i(224028),	-- Bottomless Bag of Khaz Algar Ore
 			i(224029),	-- Bottomless Bag of Khaz Algar Skins
@@ -3331,7 +3218,7 @@ root(ROOTS.Unsorted, {
 			i(224730),	-- [PH] Derby Dashers
 			i(224762),	-- Delver's Waterskin
 			i(224764),	-- Mosswool Thread
-			i(224765),	-- Everburning Ignition
+
 			i(224767),	-- Giant Candle Parts
 			i(224768),	-- Airship: Wing-Mounted Propeller
 			i(224769),	-- Airship: Rotor Blades
@@ -3452,15 +3339,12 @@ root(ROOTS.Unsorted, {
 			i(225359),	-- Kaheti Confiscated Mallet
 			i(225364),	-- Kaheti Confiscated Blade
 			i(225365),	-- PH_3
-			i(225366),	-- Algari Competitor's Splitter \\ Vicious Competitor's Splitter
-			i(225367),	-- Algari Competitor's Dagger \\ Vicious Competitor's Dagger
+
+
 			i(225370),	-- Algari Competitor's Rifle \\ Vicious Competitor's Rifle
-			i(225371),	-- Algari Competitor's Scepter \\ Vicious Competitor's Scepter
-			i(225373),	-- Algari Competitor's Shield \\ Vicious Competitor's Shield
-			i(225374),	-- Algari Competitor's Axe \\ Vicious Competitor's Axe
-			i(225375),	-- Algari Competitor's Sickle \\ Vicious Competitor's Sickle
-			i(225376),	-- Algari Competitor's Greatsword \\ Vicious Competitor's Greatsword
-			i(225377),	-- Algari Competitor's Sword \\ Vicious Competitor's Sword
+
+
+
 			i(225379),	-- Torchbearer's Chainmail
 			i(225380),	-- Torchbearer's Cinch
 			i(225381),	-- Torchbearer's Striders
@@ -3515,14 +3399,6 @@ root(ROOTS.Unsorted, {
 			i(225431),	-- Design: Vicious Jeweler's Setting
 			i(225432),	-- Design: Vicious Bloodstone Signet
 			i(225433),	-- Design: Vicious Bloodstone Amulet
-			i(225459),	-- Plans: Algari Competitor's Plate Breastplate \\ Plans: Vicious Competitor's Plate Breastplate
-			i(225460),	-- Plans: Algari Competitor's Plate Sabatons \\ Plans: Vicious Competitor's Plate Sabatons
-			i(225461),	-- Plans: Algari Competitor's Plate Gauntlets \\ Plans: Vicious Competitor's Plate Gauntlets
-			i(225462),	-- Plans: Algari Competitor's Plate Helm \\ Plans: Vicious Competitor's Plate Helm
-			i(225463),	-- Plans: Algari Competitor's Plate Greaves \\ Plans: Vicious Competitor's Plate Greaves
-			i(225464),	-- Plans: Algari Competitor's Plate Pauldrons \\ Plans: Vicious Competitor's Plate Pauldrons
-			i(225465),	-- Plans: Algari Competitor's Plate Waistguard \\ Plans: Vicious Competitor's Plate Waistguard
-			i(225466),	-- Plans: Algari Competitor's Plate Armguards \\ Plans: Vicious Competitor's Plate Armguards
 			i(225467),	-- Schematic: Algari Competitor's Cloth Goggles \\ Schematic: Vicious Competitor's Cloth Goggles
 			i(225468),	-- Schematic: Algari Competitor's Leather Goggles \\ Schematic: Vicious Competitor's Leather Goggles
 			i(225469),	-- Schematic: Algari Competitor's Mail Goggles \\ Schematic: Vicious Competitor's Mail Goggles
@@ -3531,15 +3407,10 @@ root(ROOTS.Unsorted, {
 			i(225472),	-- Schematic: Algari Competitor's Leather Bracers \\ Schematic: Vicious Competitor's Leather Bracers
 			i(225473),	-- Schematic: Algari Competitor's Mail Bracers \\ Schematic: Vicious Competitor's Mail Bracers
 			i(225474),	-- Schematic: Algari Competitor's Plate Bracers \\ Schematic: Vicious Competitor's Plate Bracers
-			i(225478),	-- Plans: Algari Competitor's Splitter \\ Plans: Vicious Competitor's Splitter
-			i(225479),	-- Plans: Algari Competitor's Dagger \\ Plans: Vicious Competitor's Dagger
+
+
 			i(225482),	-- Schematic: Algari Competitor's Rifle \\ Schematic: Vicious Competitor's Rifle
-			i(225483),	-- Plans: Algari Competitor's Scepter \\ Plans: Vicious Competitor's Scepter
-			i(225485),	-- Plans: Algari Competitor's Shield \\ Plans: Vicious Competitor's Shield
-			i(225486),	-- Plans: Algari Competitor's Axe \\ Plans: Vicious Competitor's Axe
-			i(225487),	-- Plans: Algari Competitor's Sickle \\ Plans: Vicious Competitor's Sickle
-			i(225488),	-- Plans: Algari Competitor's Greatsword \\ Plans: Vicious Competitor's Greatsword
-			i(225489),	-- Plans: Algari Competitor's Sword \\ Plans: Vicious Competitor's Sword
+
 			i(225493),	-- Medal of Conquest
 			i(225495),	-- Brilliant Beacon
 			i(225496),	-- Unhinged Vault-Hatch
@@ -3654,7 +3525,6 @@ root(ROOTS.Unsorted, {
 			i(225656),	-- Goldenglow Censer
 			i(225657),	-- Detachable Fang
 			i(225659),	-- Arathi Book Collection \\ Arathor Book Collection
-			i(225660),	-- Earthen Master's Hammer
 			i(225661),	-- Burning Binding
 			i(225668),	-- Unstable Power Suit Core
 			i(225669),	-- Brute Force Idol
@@ -3978,9 +3848,7 @@ root(ROOTS.Unsorted, {
 			i(226388),	-- Battle-tested Obsidian Warhammer
 			i(226389),	-- Dark Iron Battle Mace
 			i(226390),	-- Aerie Battle Mace
-			i(226422),	-- Ironclaw Whetstone
-			i(226423),	-- Ironclaw Whetstone
-			i(226424),	-- Ironclaw Whetstone
+
 			i(226425),	-- Harvester's Claw
 			i(226426),	-- Harvester's Claw
 			i(226427),	-- Harvester's Claw
@@ -4036,7 +3904,6 @@ root(ROOTS.Unsorted, {
 			i(226521),	-- Reinforced-Wax Plating
 			i(226524),	-- Partially-Charged Hologem
 			i(226539),	-- Scroll of Momentum
-			i(226643),	-- Plans: Beledar' Bulwark
 			i(226672),	-- Band of Elemental Chaos
 			i(226681),	-- Sizzling Cinderpollen
 			i(226683),	-- Malfunctioning Mechsuit
@@ -4068,7 +3935,6 @@ root(ROOTS.Unsorted, {
 			i(221023),	-- Treacherous Transmitter
 			i(221096),	-- Rail Rider's Bisector
 			i(221207),	-- Den Mother's Chestpiece
-			i(223043),	-- Plans: Sanctified Steps
 			i(223089),	-- Design: Extravagant Loupes
 			i(223090),	-- Design: Enchanter's Crystal
 			i(223091),	-- Design: Forger's Font Inspector
@@ -4109,7 +3975,6 @@ root(ROOTS.Unsorted, {
 			i(225631),	-- Mystic Obscenity's Idol
 			i(225632),	-- Venerated Obscenity's Idol
 			i(225633),	-- Zenith Obscenity's Idol
-			i(226643),	-- Plans: Beledar's Bulwark
 			i(226810),	-- Infiltrator's Shroud
 			i(226811),	-- Marinated Maggots
 			i(226813),	-- Golden Valorstone

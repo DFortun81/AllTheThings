@@ -4,6 +4,163 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(BLACKSMITHING, {
 		n(CRAFTABLES, {
+			i(223028),	-- Plans: Seasoned Skillet
+			i(223055),	-- Plans: Seasoned Skillet
+			i(220177),	-- Charged Alloy
+			i(220178),	-- Charged Alloy
+			i(220179),	-- Charged Alloy
+			i(221987),	-- Charged Alloy
+			i(221988),	-- Charged Alloy
+			i(221989),	-- Charged Alloy
+			i(220174),	-- Core Alloy
+			i(220175),	-- Core Alloy
+			i(220176),	-- Core Alloy
+			i(221983),	-- Core Alloy
+			i(221984),	-- Core Alloy
+			i(221985),	-- Core Alloy
+			i(221986),	-- Core Alloy
+			i(222083),	-- Coreforged Repair Hammer
+			i(222084),	-- Coreforged Repair Hammer
+			i(222085),	-- Coreforged Repair Hammer
+			i(222037),	-- Ironclaw Defender
+			i(222034),	-- Ironclaw Sabatons
+			i(222035),	-- Ironclaw Breastplate
+			i(222036),	-- Ironclaw Greatbelt
+
+			i(222038),	-- Ironclaw Helm
+			i(222039),	-- Ironclaw Legplates
+			i(222040),	-- Ironclaw Vambraces
+			i(222041),	-- Ironclaw Pauldrons
+			i(222042),	-- Ironclaw Gauntlets
+			i(222080),	-- Earthen Master's Hammer
+			i(222081),	-- Earthen Master's Hammer
+			i(222082),	-- Earthen Master's Hammer
+			i(220186),	-- Forged Framework
+			i(220187),	-- Forged Framework
+			i(220188),	-- Forged Framework
+			i(222062),	-- Forged Framework
+			i(222063),	-- Forged Framework
+			i(222064),	-- Forged Framework
+			i(220192),	-- Ironclaw Alloy
+			i(220193),	-- Ironclaw Alloy
+			i(220194),	-- Ironclaw Alloy
+			i(221993),	-- Ironclaw Alloy
+			i(221994),	-- Ironclaw Alloy
+			i(221995),	-- Ironclaw Alloy
+			i(222027),	-- Ironclaw Stiletto
+			i(222028),	-- Ironclaw Dirk
+			i(222029),	-- Ironclaw Sword
+			i(222030),	-- Ironclaw Knuckles
+			i(222031),	-- Ironclaw Great Mace
+			i(222032),	-- Ironclaw Axe
+			i(222033),	-- Ironclaw Great Axe
+			i(220943),	-- Reinforced Handle
+			i(220944),	-- Reinforced Handle
+			i(220945),	-- Reinforced Handle
+			i(222068),	-- Reinforced Handle
+			i(222069),	-- Reinforced Handle
+			i(222070),	-- Reinforced Handle
+			i(220183),	-- Seasoned Skillet
+			i(220184),	-- Seasoned Skillet
+			i(220185),	-- Seasoned Skillet
+			i(222071),	-- Seasoned Skillet
+			i(222072),	-- Seasoned Skillet
+			i(222073),	-- Seasoned Skillet
+			i(226422),	-- Ironclaw Whetstone
+			i(226423),	-- Ironclaw Whetstone
+			i(226424),	-- Ironclaw Whetstone
+			i(220949),	-- Ironclaw Weapon Stone
+			i(220950),	-- Ironclaw Weapon Stone
+			i(220951),	-- Ironclaw Weapon Stone
+			i(222065),	-- Ironclaw Weapon Stone
+			i(222066),	-- Ironclaw Weapon Stone
+			i(222067),	-- Ironclaw Weapon Stone
+			i(222049),	-- Proficient Blacksmith's Hammer
+			i(222050),	-- Proficient Blacksmith's Toolbox
+			i(222047),	-- Proficient Leatherworker's Knife
+			i(217943),	-- Proficient Leatherworker's Toolset
+			i(222048),	-- Proficient Leatherworker's Toolset
+			i(222046),	-- Proficient Needle Set
+			i(222044),	-- Proficient Pickaxe
+			i(222043),	-- Proficient Sickle
+			i(222045),	-- Proficient Skinning Knife
+			i(220189),	-- Sanctified Alloy
+			i(220190),	-- Sanctified Alloy
+			i(220191),	-- Sanctified Alloy
+			i(221990),	-- Sanctified Alloy
+			i(221991),	-- Sanctified Alloy
+			i(221992),	-- Sanctified Alloy
+			i(222055),	-- Artisan Leatherworker's Knife
+			i(222056),	-- Artisan Leatherworker's Toolset
+			i(217938),	-- Artisan Leatherworker's Toolset
+			i(222054),	-- Artisan Needle Set
+			i(222052),	-- Artisan Pickaxe
+			i(222051),	-- Artisan Sickle
+			i(222053),	-- Artisan Skinning Knife
+			i(223044),	-- Plans: Lightwatcher's Visor
+			i(223017),	-- Plans: Lightwatcher's Visor
+			i(222022),	-- Lightwatcher's Visor
+			i(220956),	-- Lightwatcher's Visor
+			i(222016),	-- Charged Crusher
+			i(223013),	-- Plans: Charged Crusher
+			i(222012),	-- Charged Runeaxe
+			i(223009),	-- Plans: Charged Runeaxe
+			i(222013),	-- Charged Facesmasher
+			i(223010),	-- Plans: Charged Facesmasher
+			i(222018),	-- Charged Slicer
+			i(223015),	-- Plans: Charged Slicer
+			i(222086),	-- Coreforged Skeleton Key
+			i(222087),	-- Coreforged Skeleton Key
+			i(222088),	-- Coreforged Skeleton Key
+			i(222524),	-- Coreforged Skeleton Key
+			i(222525),	-- Coreforged Skeleton Key
+			i(223031),	-- Plans: Coreforged Skeleton Key
+			i(220955),	-- Crystal Gazer's Gauntlets
+					i(223016),	-- Plans: Crystal Gazer's Gauntlets
+					i(222021),	-- Crystal Gazer's Gauntlets
+					i(220960),	-- Siphoning Stiletto
+			i(222026),	-- Siphoning Stiletto
+			i(223021),	-- Plans: Siphoning Stiletto
+			i(222057),	-- Artisan Blacksmith's Hammer
+			i(222058),	-- Artisan Blacksmith's Toolbox
+			i(222014),	-- Charged Claymore
+			i(223011),	-- Plans: Charged Claymore
+			i(223038),	-- Plans: Charged Claymore
+			i(222015),	-- Charged Halberd
+			i(223012),	-- Plans: Charged Halberd
+			i(223039),	-- Plans: Charged Halberd
+			i(223008),	-- Plans: Charged Hexsword
+			i(222011),	-- Charged Hexsword
+			i(223035),	-- Plans: Charged Hexsword
+			i(222017),	-- Charged Invoker
+			i(223014),	-- Plans: Charged Invoker
+			i(223041),	-- Plans: Charged Invoker
+			i(221997),	-- Everforged Breastplate
+			i(222006),	-- Everforged Spellblade
+			i(221999),	-- Everforged Defender
+			i(222004),	-- Everforged Gauntlets
+			i(222010),	-- Everforged Greataxe
+			i(221998),	-- Everforged Greatbelt
+			i(222008),	-- Everforged Warglaive
+
+
+			i(222002),	-- Everforged Vambraces
+			i(221996),	-- Everforged Sabatons
+			i(222007),	-- Everforged Longsword
+			i(222000),	-- Everforged Helm
+			i(222001),	-- Everforged Legplates
+			i(222009),	-- Everforged Mace
+			i(222003),	-- Everforged Pauldrons
+			i(222005),	-- Everforged Shortblade
+
+
+
+			i(223023),	-- Plans: Artisan Pickaxe
+			i(223022),	-- Plans: Artisan Sickle
+			i(223024),	-- Plans: Artisan Skinning Knife
+			i(223026),	-- Plans: Artisan Leatherworker's Knife
+			i(223027),	-- Plans: Artisan Leatherworker's Toolset
+			i(223025),	-- Plans: Artisan Needle Set
 			expansion(EXPANSION.CLASSIC, {
 				i(12795),	-- Blood Talon
 				i(12772),	-- Inlaid Thorium Hammer
