@@ -17,5 +17,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				i(227538),	-- Unbound Legend's Pennant (TOY)
 			},
 		}),
-	}),
+		filter(RECIPES, {
+		}),
+	})),
 }))));
