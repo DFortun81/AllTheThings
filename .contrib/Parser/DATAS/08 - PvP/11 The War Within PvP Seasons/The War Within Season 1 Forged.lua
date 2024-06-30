@@ -34,6 +34,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			-- RBG
 			ach(40795, {	-- Battleground Blitz Medic: The War Within
 				["classes"] = HEALERS,
+				["g"] = {
+					i(227539),	-- Unbound Strategist's Pennant (TOY)
+				},
 			}),
 			ach(40383, {	-- Hero of the Alliance: Forged	(0.5%)
 				["races"] = ALLIANCE_ONLY,
@@ -54,7 +57,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				},
 			}),
 			ach(40233, {	-- The Strategist: The War Within Season 1	(25 Wins)
-				-- toy here?
+				i(225933),	-- Forged Legend's Pennant (TOY)
 			}),
 			-- Solo
 			ach(40395, {	-- Legend: The War Within Season 1			(100 Wins)
@@ -68,6 +71,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			}),
 			ach(40792, {	-- Solo Shuffle Medic: The War Within
 				["classes"] = HEALERS,
+				["g"] = {
+					i(227538),	-- Unbound Legend's Pennant (TOY)
+				},
 			}),
 			-- Fashion
 			ach(40728),	-- Forged Finery

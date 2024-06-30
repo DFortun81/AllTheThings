@@ -20,8 +20,6 @@ i(226191),	-- Web Pet Leash
 i(226519),	-- General's Expertise
 11.0.0.55087
 i(226810),	-- Infiltrator's Shroud
-i(227538),	-- Unbound Legend's Pennant
-i(227539),	-- Unbound Strategist's Pennant
 11.0.0.55288
 i(228413),	-- Lampyridae Caller
 
