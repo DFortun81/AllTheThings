@@ -1,14 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-DREAMSURGE = createHeader({
-	readable = "Dreamsurge",
-	icon = "Interface\\Icons\\Ability_xavius_dreamsimulacrum",
-	text = {
-		en = "Dreamsurge",
-		ru = "Приливы снов",
-	},
-});
 -- Most Dreambound Item only turns into a single other Item
 local function DreamboundBOA(itemID, vendorItemID)
 	local i = i(itemID);

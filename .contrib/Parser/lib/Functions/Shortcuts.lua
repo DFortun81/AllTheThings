@@ -1087,6 +1087,29 @@ end
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	if not id then
 		print("NPC ID Missing for n() header");
+		--[[
+		-- Uncomment this if something from retail sneaks past the header checker again.
+		for i,o in ipairs(t) do
+			print("  " .. i .. ": ");
+			for key,value in pairs(o) do
+				if key == "groups" or key == "g" then
+					print("    " .. key .. ": ");
+					for j,p in ipairs(value) do
+						print("    " .. j .. ": ");
+						for key2,value2 in pairs(p) do
+							if key2 == "groups" or key2 == "g" then
+								print("    " .. key2 .. ": TRIMMED");
+							else
+								print("    " .. key2 .. " - " .. tostring(value2));
+							end
+						end
+					end
+				else
+					print("    " .. key .. " - " .. tostring(value));
+				end
+			end
+		end
+		]]--
 		if t then
 			return unpack(t);
 		else
