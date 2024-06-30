@@ -3787,7 +3787,6 @@ root(ROOTS.Unsorted, {
 			i(216696),	-- Hidden Pants
 			i(225927),	-- Emerald Necakle
 			i(225930),	-- Glimmering Crystal
-			i(225933),	-- Forged Legend's Pennant
 			i(225937),	-- Putrid Goop
 			i(225945),	-- Airship Captain's Cloak
 			i(225946),	-- Slightly Singed Arathi Tabard
@@ -3796,7 +3795,6 @@ root(ROOTS.Unsorted, {
 			i(225949),	-- Adult-Sized Arathi Epaulets
 			i(225950),	-- Nerubian Chitin \\ [PH] Nerubian Growth Serum
 			i(225952),	-- Vial of Tka'ktath's Blood \\ Nerubian Skyrazor Egg
-			i(225969),	-- Forged Flag of Victory
 			i(225974),	-- Swabbie's Cap \\ Teal Beanie
 			i(225975),	-- Alchemist's Bandolier
 			i(225976),	-- Fine Gloves of the Forest
@@ -4168,8 +4166,6 @@ root(ROOTS.Unsorted, {
 			i(227447),	-- Invigorating Fragrance
 			i(227448),	-- Volatile Fragrance
 			i(227449),	-- Robust Fragrance
-			i(227538),	-- Unbound Legend's Pennant
-			i(227539),	-- Unbound Strategist's Pennant
 			i(227542),	-- Begrimed Blade
 			i(227543),	-- Begrimed Hatchet
 			i(227544),	-- Begrimed Staff

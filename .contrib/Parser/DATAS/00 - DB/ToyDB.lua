@@ -1345,8 +1345,12 @@ i(204405);	-- Stuffed Bear
 -- PATCH 11.0.0 --
 ------------------
 i(224552);	-- Cave Spelunker's Torch
+i(225969);	-- Forged Flag of Victory
+i(225933);	-- Forged Legend's Pennant
 i(224585);	-- Hanna's Locket
 i(224643);	-- Pet-Sized Candle
+i(227538);	-- Unbound Legend's Pennant
+i(227539);	-- Unbound Strategist's Pennant
 i(216665);	-- Warband Bank Distance Inhibitor
 -- UNSORTED --
 i(211931);	-- Abyss Caller Horn

@@ -249,7 +249,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			})),
 			ach(40095),	-- Sparking Battle (x5)
 			ach(40096, {	-- Sparking Battle (x20)
-				i(225969),	-- Forged Flag of Victory (TOY)
+				i(225969),	-- Forged Flag of Victory (TOY!)
 			}),
 			ach(40089),	-- Spoiled Goods
 			ach(40090),	-- Spoiled Goods

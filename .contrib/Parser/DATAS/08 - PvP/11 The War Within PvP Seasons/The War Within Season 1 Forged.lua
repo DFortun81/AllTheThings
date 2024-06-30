@@ -51,11 +51,11 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				},
 			}),
 			ach(40233, {	-- The Strategist: The War Within Season 1	(25 Wins)
-				i(225933),	-- Forged Legend's Pennant (TOY)
+				i(225933),	-- Forged Legend's Pennant (TOY!)
 			}),
 			-- Solo
 			ach(40395, {	-- Legend: The War Within Season 1			(100 Wins)
-				i(225933),	-- Forged Legend's Pennant (TOY)
+				i(225933),	-- Forged Legend's Pennant (TOY!)
 			}),
 			ach(40381, {	-- Forged Legend: The War Within Season 1	(0.1%)
 				title(559),	-- Forged Legend <Name>
