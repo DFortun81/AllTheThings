@@ -4,6 +4,14 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		n(TREASURES, {
+			-- Repeatable
+			o(444065, {	-- Elemental Geode
+				["coord"] = { 77.1, 35.7, ISLE_OF_DORN },
+				["g"] = {
+					-- Contains Coffer Key Shard, Profession Knowledge
+				},
+			}),
+			--
 			o(442814, {	-- Boskroot Cap
 				["coords"] = {
 					{ 52.4, 67.3, ISLE_OF_DORN },
@@ -26,13 +34,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["cost"] = {
 					{"i", 220143, 5},	-- 5x Dornish Pike
 					{"i", 222533, 1},	-- 1x Goldengill Trout
-				},
-			}),
-			o(444065, {	-- Elemental Geode
-				--["questID"] = x,	-- no qid
-				["coord"] = { 77.1, 35.7, ISLE_OF_DORN },
-				["g"] = {
-					i(223484),	-- Kobold Mastermind's Pivel
 				},
 			}),
 			o(442718, {	-- Elemental Pearl
@@ -64,13 +65,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					}),
 				},
 			}),
-			o(441183, {	-- Galan's Edict (achievement crit)
+			o(441183, {	-- Galan's Edict
 				["coord"] = { 37.3, 52.5, ISLE_OF_DORN },
 				["questID"] = 82038,
 			}),
 			o(446473, {	-- Infused Cinderbrew
-				["questID"] = 82714,
 				["coord"] = { 56.2, 60.9, ISLE_OF_DORN },
+				["questID"] = 82714,
 				["g"] = {
 					i(224263),	-- Infused Cinderbrew
 				},
@@ -126,12 +127,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					}),
 				},
 			}),
-			o(444894, {	-- Opal Lily
+			o(444894, {	-- Shimmering Opal Lily
 				["description"] = "In pit of this shaft",
-				["questID"] = 82326,
 				["coord"] = { 48.9, 60.9, ISLE_OF_DORN },
+				["questID"] = 82326,
 			}),
-			o(441223, {	-- Stone of The Unbound (achievement crit)
+			o(441223, {	-- Stone of The Unbound
 				["coord"] = { 44.1, 30.1, ISLE_OF_DORN },
 				["questID"] = 82046,
 			}),
@@ -149,7 +150,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					}),
 				},
 			}),
-			o(441231, {	-- Titan Console (achievement crit)
+			o(441231, {	-- Titan Console
 				["coord"] = { 78.1, 27.9, ISLE_OF_DORN },
 				["questID"] = 82045,
 			}),
@@ -163,11 +164,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					}),
 				},
 			}),
-			o(441284, {	-- Watcher of the North (achievement crit)
+			o(441284, {	-- Watcher of the North
 				["coord"] = { 57.2, 20.0, ISLE_OF_DORN },
 				["questID"] = 82047,
 			}),
-			o(441278, {	-- Watcher of the South (achievement crit)
+			o(441278, {	-- Watcher of the South
 				["coord"] = { 42.1, 80.2, ISLE_OF_DORN },
 				["questID"] = 82048,
 			}),
@@ -185,8 +186,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(446476, {	-- Web-wrapped Axe
-				["questID"] = 82715,
 				["coord"] = { 59.1, 23.5, ISLE_OF_DORN },
+				["questID"] = 82715,
 				["g"] = {
 					i(224290),	-- Storm Defender's Axe
 				},
