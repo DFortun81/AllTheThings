@@ -3959,7 +3959,7 @@ i(205023, 3522);	-- Savage Lobstrok
 i(205164, 3554);	-- Senega
 i(205150, 3544);	-- Shalewing Devourer
 i(205035, 3526);	-- Snapjaw Lurker
-i(205148, 3542);	-- Soot-stanined Shalewing
+i(205148, 3542);	-- Soot-Stained Shalewing
 i(205157, 3550);	-- Undermoth
 i(205037, 3527);	-- Void Lurker
 i(205232, 0);		-- [DNT] REUSE

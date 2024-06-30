@@ -154,28 +154,11 @@ r(55924),	-- Duskweave Boots
 r(55925),	-- Black Duskweave Leggings
 r(55941),	-- Black Duskweave Robe
 r(55943),	-- Black Duskweave Wristwraps
-r(55995),	-- Yellow Lumberjack Shirt
-r(56000),	-- Green Workman's Shirt
-r(56001),	-- Moonshroud
-r(56002),	-- Ebonweave
-r(56003),	-- Spellweave
-r(56007),	-- Frostweave Bag
 r(56008),	-- Shining Spellthread
 r(56010),	-- Azure Spellthread
 r(56014),	-- Cloak of the Moon
 r(56015),	-- Cloak of Frozen Spirits
-r(56018),	-- Hat of Wintry Doom
-r(56019),	-- Silky Iceshard Boots
 r(56020),	-- Deep Frozen Cord
-r(56021),	-- Frostmoon Pants
-r(56022),	-- Light Blessed Mittens
-r(56023),	-- Aurora Slippers
-r(56024),	-- Moonshroud Robe
-r(56025),	-- Moonshroud Gloves
-r(56026),	-- Ebonweave Robe
-r(56027),	-- Ebonweave Gloves
-r(56028),	-- Spellweave Robe
-r(56029),	-- Spellweave Gloves
 r(56030),	-- Frostwoven Leggings
 r(56031),	-- Frostwoven Wristwraps
 r(56034),	-- Master's Spellthread
@@ -386,18 +369,14 @@ r(257106),	-- Tidespray Linen Cloak of the Feather \\ Sun-Bleached Linen Cloak o
 r(257107),	-- Tidespray Linen Cloak \\ Tidespray Linen Cloak of Discretion \\ Sun-Bleached Linen Cloak of Discretion
 r(257108),	-- Embroidered Deep Sea Cloak of Resilience
 r(257109),	-- Embroidered Deep Sea Cloak of Resilience
-r(257110),	-- Embroidered Deep Sea Cloak of Resilience
 r(257111),	-- Embroidered Deep Sea Cloak of the Feather
 r(257112),	-- Embroidered Deep Sea Cloak of the Feather
-r(257113),	-- Embroidered Deep Sea Cloak of the Feather
 r(257114),	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion
 r(257115),	-- Embroidered Deep Sea Cloak \\ Embroidered Deep Sea Cloak of Discretion
 r(257118),	-- Embroidered Deep Sea Gloves
 r(257120),	-- Imbued Deep Sea Gloves \\ Embroidered Deep Sea Gloves
-r(257121),	-- Emblazoned Deep Sea Gloves \\ Embroidered Deep Sea Gloves
 r(257122),	-- Embroidered Deep Sea Breeches
 r(257123),	-- Imbued Deep Sea Breeches \\ Embroidered Deep Sea Breeches
-r(257124),	-- Emblazoned Deep Sea Breeches \\ Embroidered Deep Sea Breeches
 r(257125),	-- Deep Sea Bag
 r(257126),	-- Deep Sea Bag
 r(257131),	-- Battle Flag: Spirit of Freedom

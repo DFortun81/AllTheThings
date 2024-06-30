@@ -1280,7 +1280,7 @@ i(0, 445381);		-- Glimmering Mastery
 i(0, 445340);		-- Glimmering Versatility
 i(0, 445360);		-- Illusory Adornment: Runes
 i(0, 445371);		-- Mirror Powder
-i(0, 445351);		-- Oathsworn Tenacity
+i(0, 445351);		-- Oathsworn's Tenacity
 i(0, 425138);		-- Recraft Equipment
 i(0, 445361);		-- Runed Bismuth Rod
 i(0, 445385);		-- Stonebound Artistry

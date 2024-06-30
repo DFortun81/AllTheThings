@@ -3,14 +3,6 @@ r(460460),	-- Sulfuron Hammer
 11.0.0.54311
 r(423332),	-- Khaz Algar Blacksmithing
 r(425136),	-- Recraft Equipment
-r(438914),	-- Algari Competitor's Plate Breastplate \\ Vicious Competitor's Plate Breastplate
-r(438915),	-- Algari Competitor's Plate Sabatons \\ Vicious Competitor's Plate Sabatons
-r(438916),	-- Algari Competitor's Plate Gauntlets \\ Vicious Competitor's Plate Gauntlets
-r(438917),	-- Algari Competitor's Plate Helm \\ Vicious Competitor's Plate Helm
-r(438918),	-- Algari Competitor's Plate Greaves \\ Vicious Competitor's Plate Greaves
-r(438919),	-- Algari Competitor's Plate Pauldrons \\ Vicious Competitor's Plate Pauldrons
-r(438920),	-- Algari Competitor's Plate Waistguard \\ Vicious Competitor's Plate Waistguard
-r(438921),	-- Algari Competitor's Plate Armguards \\ Vicious Competitor's Plate Armguards
 r(450216),	-- Core Alloy
 r(450217),	-- Charged Alloy
 r(450218),	-- Sanctified Alloy
@@ -31,21 +23,14 @@ r(450232),	-- Everforged Warglaive
 r(450233),	-- Everforged Mace
 r(450234),	-- Everforged Greataxe
 r(450235),	-- Charged Hexsword
-r(450236),	-- Charged Runeaxe
-r(450237),	-- Charged Facesmasher
 r(450238),	-- Charged Claymore
 r(450239),	-- Charged Halberd
-r(450240),	-- Charged Crusher
 r(450241),	-- Charged Invoker
-r(450242),	-- Charged Slicer
 r(450243),	-- Echoing Impact \\ Echoing Impact Seal
 r(450244),	-- Burning Binding \\ Arathor Armor Patch
-r(450245),	-- Sanctified Steps \\ Crystal Gazer's Gauntlets
-r(450246),	-- Beledar's Bulwark \\ Lightwatcher's Visor
 r(450247),	-- Echoing Truncheon
 r(450248),	-- Entangling Cutlass
 r(450249),	-- Haunting Void
-r(450250),	-- Siphoning Stiletto
 r(450251),	-- Ironclaw Stiletto
 r(450252),	-- Ironclaw Dirk
 r(450253),	-- Ironclaw Sword
@@ -70,12 +55,6 @@ r(450271),	-- Proficient Leatherworker's Knife
 r(450272),	-- Proficient Leatherworker's Toolset
 r(450273),	-- Proficient Blacksmith's Hammer
 r(450274),	-- Proficient Blacksmith's Toolbox
-r(450275),	-- Artisan Sickle
-r(450276),	-- Artisan Pickaxe
-r(450277),	-- Artisan Skinning Knife
-r(450278),	-- Artisan Needle Set
-r(450279),	-- Artisan Leatherworker's Knife
-r(450280),	-- Artisan Leatherworker's Toolset
 r(450281),	-- Artisan Blacksmith's Hammer
 r(450282),	-- Artisan Blacksmith's Toolbox
 r(450283),	-- Earthen Master's Hammer \\ Earthen Master's Arsenal
@@ -87,18 +66,8 @@ r(450288),	-- Adjustable Framework \\ Webbed Fishing Line
 r(450289),	-- Tempered Framework \\ Weighted Lure
 r(450290),	-- Core Framework \\ Earthen Master's Hammer
 r(450291),	-- Coreforged Repair Hammer
-r(450292),	-- Coreforged Skeleton Key
 11.0.0.54521
 r(453727),	-- Everburning Ignition
-11.0.0.54605
-r(454997),	-- Algari Competitor's Splitter \\ Vicious Competitor's Splitter
-r(454998),	-- Algari Competitor's Dagger \\ Vicious Competitor's Dagger
-r(454999),	-- Algari Competitor's Scepter \\ Vicious Competitor's Scepter
-r(455000),	-- Algari Competitor's Shield \\ Vicious Competitor's Shield
-r(455001),	-- Algari Competitor's Axe \\ Vicious Competitor's Axe
-r(455002),	-- Algari Competitor's Sickle \\ Vicious Competitor's Sickle
-r(455003),	-- Algari Competitor's Greatsword \\ Vicious Competitor's Greatsword
-r(455004),	-- Algari Competitor's Sword \\ Vicious Competitor's Sword
 
 
 
@@ -108,101 +77,10 @@ Missing in Blacksmithing.lua
 1.15.3.55112
 r(460460),	-- Sulfuron Hammer
 11.0.0.54311
-r(423332),	-- Khaz Algar Blacksmithing
 r(425136),	-- Recraft Equipment
-r(438914),	-- Algari Competitor's Plate Breastplate \\ Vicious Competitor's Plate Breastplate
-r(438915),	-- Algari Competitor's Plate Sabatons \\ Vicious Competitor's Plate Sabatons
-r(438916),	-- Algari Competitor's Plate Gauntlets \\ Vicious Competitor's Plate Gauntlets
-r(438917),	-- Algari Competitor's Plate Helm \\ Vicious Competitor's Plate Helm
-r(438918),	-- Algari Competitor's Plate Greaves \\ Vicious Competitor's Plate Greaves
-r(438919),	-- Algari Competitor's Plate Pauldrons \\ Vicious Competitor's Plate Pauldrons
-r(438920),	-- Algari Competitor's Plate Waistguard \\ Vicious Competitor's Plate Waistguard
-r(438921),	-- Algari Competitor's Plate Armguards \\ Vicious Competitor's Plate Armguards
-r(450216),	-- Core Alloy
-r(450217),	-- Charged Alloy
-r(450218),	-- Sanctified Alloy
-r(450219),	-- Ironclaw Alloy
-r(450220),	-- Everforged Sabatons
-r(450221),	-- Everforged Breastplate
-r(450222),	-- Everforged Greatbelt
-r(450223),	-- Everforged Defender
-r(450224),	-- Everforged Helm
-r(450225),	-- Everforged Legplates
-r(450226),	-- Everforged Vambraces
-r(450227),	-- Everforged Pauldrons
-r(450228),	-- Everforged Gauntlets
-r(450229),	-- Everforged Stabber \\ Everforged Shortblade
-r(450230),	-- Everforged Dagger \\ Everforged Spellblade
-r(450231),	-- Everforged Longsword
-r(450232),	-- Everforged Warglaive
-r(450233),	-- Everforged Mace
-r(450234),	-- Everforged Greataxe
-r(450235),	-- Charged Hexsword
-r(450236),	-- Charged Runeaxe
-r(450237),	-- Charged Facesmasher
-r(450238),	-- Charged Claymore
-r(450239),	-- Charged Halberd
-r(450240),	-- Charged Crusher
-r(450241),	-- Charged Invoker
-r(450242),	-- Charged Slicer
 r(450243),	-- Echoing Impact \\ Echoing Impact Seal
 r(450244),	-- Burning Binding \\ Arathor Armor Patch
-r(450245),	-- Sanctified Steps \\ Crystal Gazer's Gauntlets
-r(450246),	-- Beledar's Bulwark \\ Lightwatcher's Visor
 r(450247),	-- Echoing Truncheon
 r(450248),	-- Entangling Cutlass
 r(450249),	-- Haunting Void
-r(450250),	-- Siphoning Stiletto
-r(450251),	-- Ironclaw Stiletto
-r(450252),	-- Ironclaw Dirk
-r(450253),	-- Ironclaw Sword
-r(450254),	-- Ironclaw Knuckles
-r(450255),	-- Ironclaw Great Mace
-r(450256),	-- Ironclaw Axe
-r(450257),	-- Ironclaw Great Axe
-r(450258),	-- Dredger's Plate Sabatons \\ Ironclaw Sabatons
-r(450259),	-- Dredger's Plate Breastplate \\ Ironclaw Breastplate
-r(450260),	-- Dredger's Developed Greatbelt \\ Ironclaw Greatbelt
-r(450261),	-- Dredger's Developed Defender \\ Ironclaw Defender
-r(450262),	-- Dredger's Developed Helm \\ Ironclaw Helm
-r(450263),	-- Dredger's Developed Legplates \\ Ironclaw Legplates
-r(450264),	-- Dredger's Plate Vambraces \\ Ironclaw Vambraces
-r(450265),	-- Dredger's Developed Pauldrons \\ Ironclaw Pauldrons
-r(450266),	-- Dredger's Developed Gauntlets \\ Ironclaw Gauntlets
-r(450267),	-- Proficient Sickle
-r(450268),	-- Proficient Pickaxe
-r(450269),	-- Proficient Skinning Knife
-r(450270),	-- Proficient Needle Set
-r(450271),	-- Proficient Leatherworker's Knife
-r(450272),	-- Proficient Leatherworker's Toolset
-r(450273),	-- Proficient Blacksmith's Hammer
-r(450274),	-- Proficient Blacksmith's Toolbox
-r(450275),	-- Artisan Sickle
-r(450276),	-- Artisan Pickaxe
-r(450277),	-- Artisan Skinning Knife
-r(450278),	-- Artisan Needle Set
-r(450279),	-- Artisan Leatherworker's Knife
-r(450280),	-- Artisan Leatherworker's Toolset
-r(450281),	-- Artisan Blacksmith's Hammer
-r(450282),	-- Artisan Blacksmith's Toolbox
-r(450283),	-- Earthen Master's Hammer \\ Earthen Master's Arsenal
-r(450284),	-- Forged Framework
-r(450285),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
-r(450286),	-- Ironclaw Razorstone \\ Reinforced Handle
-r(450287),	-- Ironclaw Weightstone \\ Seasoned Skillet
-r(450288),	-- Adjustable Framework \\ Webbed Fishing Line
-r(450289),	-- Tempered Framework \\ Weighted Lure
 r(450290),	-- Core Framework \\ Earthen Master's Hammer
-r(450291),	-- Coreforged Repair Hammer
-r(450292),	-- Coreforged Skeleton Key
-11.0.0.54521
-r(453727),	-- Everburning Ignition
-11.0.0.54605
-r(454997),	-- Algari Competitor's Splitter \\ Vicious Competitor's Splitter
-r(454998),	-- Algari Competitor's Dagger \\ Vicious Competitor's Dagger
-r(454999),	-- Algari Competitor's Scepter \\ Vicious Competitor's Scepter
-r(455000),	-- Algari Competitor's Shield \\ Vicious Competitor's Shield
-r(455001),	-- Algari Competitor's Axe \\ Vicious Competitor's Axe
-r(455002),	-- Algari Competitor's Sickle \\ Vicious Competitor's Sickle
-r(455003),	-- Algari Competitor's Greatsword \\ Vicious Competitor's Greatsword
-r(455004),	-- Algari Competitor's Sword \\ Vicious Competitor's Sword

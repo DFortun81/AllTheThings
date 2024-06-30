@@ -22512,7 +22512,6 @@ i(95483),	-- Ghost Iron Picks \\ t Iron Picks
 i(95484),	-- Ghost Iron Frames \\ t Iron Frames
 i(95485),	-- Ghost Iron Pans \\ t Iron Pans
 i(95486),	-- Ghost Iron Statue \\ t Iron Statue
-i(95496),	-- Shado-Pan Assault Insignia \\ o-Pan Assault Insignia
 i(95509),	-- Mantid Artifact Sonic Locator \\ id Artifact Sonic Locator
 i(95559),	-- Grand Commendation of the Shado-Pan Assault \\ d Commendation of the Shado-Pan Assault
 i(95622),	-- Arcane Trove \\ ne Trove
@@ -32535,6 +32534,195 @@ i(188188),	-- Worldbinder Tricorne
 i(188189),	-- Shadowwrap Leggings
 i(188190),	-- Shoulderpads of the Primordial
 11.0.0.54311
+i(211979),	-- Warsculptor's Cloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Generic - Cloak
+i(211980),	-- Warsculptor's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Wrist
+i(211981),	-- Warsculptor's Buckle \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Waist
+i(211982),	-- Warsculptor's Horned Spaulders \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Shoulder
+i(211983),	-- Warsculptor's Cuisses \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Legs
+i(211984),	-- Warsculptor's Barbute \\ Warsculptor's Tusks \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Head
+i(211985),	-- Warsculptor's Crushers \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Hand
+i(211986),	-- Warsculptor's Carved Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Feet
+i(211987),	-- Warsculptor's Furred Plastron \\ Warsculptor's Fur Plate \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Chest
+i(211988),	-- Entombed Seraph's Greatcloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Generic - Cloak
+i(211989),	-- Entombed Seraph's Shackles \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Wrist
+i(211990),	-- Entombed Seraph's Waistguard \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Waist
+i(211991),	-- Entombed Seraph's Plumes \\ Entombed Seraph's Chained Plumes \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Shoulder
+i(211992),	-- Entombed Seraph's Greaves \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Legs
+i(211993),	-- Entombed Seraph's Casque \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Head
+i(211994),	-- Entombed Seraph's Castigation \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Hand
+i(211995),	-- Entombed Seraph's Sabatons \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Feet
+i(211996),	-- Entombed Seraph's Breastplate \\ Entombed Seraph's Casket \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Chest
+i(211997),	-- Exhumed Centurion's Drape \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Generic - Cloak
+i(211998),	-- Exhumed Centurion's Manacles \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Wrist
+i(211999),	-- Exhumed Centurion's Baltea \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Waist
+i(212000),	-- Exhumed Centurion's Spikes \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Shoulder
+i(212001),	-- Exhumed Centurion's Chausses \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Legs
+i(212002),	-- Exhumed Centurion's Galea \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Head
+i(212003),	-- Exhumed Centurion's Gauntlets \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Hand
+i(212004),	-- Exhumed Centurion's Sollerets \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Feet
+i(212005),	-- Exhumed Centurion's Breastplate \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Chest
+i(212006),	-- Mist of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Generic - Cloak
+i(212007),	-- Embrace of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Wrist
+i(212008),	-- Wrappings of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Waist
+i(212009),	-- Concourse of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Shoulder
+i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
+i(212011),	-- Noetic of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Head
+i(212012),	-- Covenant of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Hand
+i(212013),	-- Shoes of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Feet
+i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
+i(212015),	-- Lightless Scavenger's Hide \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Generic - Cloak
+i(212016),	-- Lightless Scavenger's Wristguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Wrist
+i(212017),	-- Lightless Scavenger's Bonegirdle \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Waist
+i(212018),	-- Lightless Scavenger's Taxidermy \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Shoulder
+i(212019),	-- Lightless Scavenger's Stalkings \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Legs
+i(212020),	-- Lightless Scavenger's Skull \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Head
+i(212021),	-- Lightless Scavenger's Mitts \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Hand
+i(212022),	-- Lightless Scavenger's Footpads \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Feet
+i(212023),	-- Lightless Scavenger's Tunic \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Chest
+i(212024),	-- Cape of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Generic - Cloak
+i(212025),	-- Wristblades of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Wrist
+i(212026),	-- Core of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Waist
+i(212027),	-- Fumaroles of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Shoulder
+i(212028),	-- Legguards of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Legs
+i(212029),	-- Horns of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Head
+i(212030),	-- Rippers of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Hand
+i(212031),	-- Talons of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Feet
+i(212032),	-- Scales of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Chest
+i(212033),	-- K'areshi Phantom's Breeze \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Generic - Cloak
+i(212034),	-- K'areshi Phantom's Cuffs \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Wrist
+i(212035),	-- K'areshi Phantom's Belt \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Waist
+i(212036),	-- K'areshi Phantom's Shoulderpads \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Shoulder
+i(212037),	-- K'areshi Phantom's Leggings \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Legs
+i(212038),	-- K'areshi Phantom's Emptiness \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Head
+i(212039),	-- K'areshi Phantom's Grips \\ K'areshi Phantom's Gloves \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Hand
+i(212040),	-- K'areshi Phantom's Netherwalkers \\ K'areshi Phantom's Footwraps \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Feet
+i(212041),	-- K'areshi Phantom's Nexus Wraps \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Chest
+i(212042),	-- Gatecrasher's Mantle \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Generic - Cloak
+i(212043),	-- Gatecrasher's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Wrist
+i(212044),	-- Gatecrasher's Cord \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Waist
+i(212045),	-- Gatecrasher's Enduring Effigy \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Shoulder
+i(212046),	-- Gatecrasher's Kilt \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Legs
+i(212047),	-- Gatecrasher's Horns \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Head
+i(212048),	-- Gatecrasher's Protectors \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Hand
+i(212049),	-- Gatecrasher's Tabi \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Feet
+i(212050),	-- Gatecrasher's Gi \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Chest
+i(212051),	-- Cloak of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Generic - Cloak
+i(212052),	-- Great Links of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Wrist
+i(212053),	-- Faulds of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Waist
+i(212054),	-- Maw of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Shoulder
+i(212055),	-- Leggings of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Legs
+i(212056),	-- Mask of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Head
+i(212057),	-- Eviscerators of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Hand
+i(212058),	-- Treads of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Feet
+i(212059),	-- Hide of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Chest
+i(212060),	-- Drape of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Generic - Cloak
+i(212061),	-- Armguards of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Wrist
+i(212062),	-- Waistguard of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Waist
+i(212063),	-- War-Mantle of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Shoulder
+i(212064),	-- Pantaloons of the Hypogeal Nemesis \\ Trousers of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Legs
+i(212065),	-- Impalers of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Head
+i(212066),	-- Claws of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Hand
+i(212067),	-- Talons of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Feet
+i(212068),	-- Chestguard of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Chest
+i(212069),	-- Hexflame Coven's Shawl \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Generic - Cloak
+i(212070),	-- Hexflame Coven's Wristlace \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Wrist
+i(212071),	-- Hexflame Coven's Dormant Eye \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Waist
+i(212072),	-- Hexflame Coven's Altar \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Shoulder
+i(212073),	-- Hexflame Coven's Leggings \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Legs
+i(212074),	-- Hexflame Coven's All-Seeing Eye \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Head
+i(212075),	-- Hexflame Coven's Sleeves \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Hand
+i(212076),	-- Hexflame Coven's Treads \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth - Feet
+i(212077),	-- Hexflame Coven's Ritual Harness \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth - Robe
+i(212078),	-- Living Luster's Glow \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Generic - Cloak
+i(212079),	-- Living Luster's Crystbands \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Wrist
+i(212080),	-- Living Luster's Lightbelt \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Waist
+i(212081),	-- Living Luster's Dominion \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Shoulder
+i(212082),	-- Living Luster's Trousers \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Legs
+i(212083),	-- Living Luster's Semblance \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Head
+i(212084),	-- Living Luster's Touch \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Hand
+i(212085),	-- Living Luster's Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth - Feet
+i(212086),	-- Living Luster's Raiment \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth - Robe
+i(212087),	-- Ward of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Generic - Cloak
+i(212088),	-- Bracelets of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Wrist
+i(212089),	-- Sigil of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Waist
+i(212090),	-- Beacons of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Shoulder
+i(212091),	-- Coattails of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Legs
+i(212092),	-- Hood of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Head
+i(212093),	-- Jeweled Gauntlets of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Hand
+i(212094),	-- Slippers of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth - Feet
+i(212095),	-- Runecoat of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth - Chest
+i(212386),	-- Husk of Swallowing Darkness \\ 11.0 Raid Template - Shield - Shield
+i(212387),	-- Broodtwister's Grim Catalyst \\ 11.0 Raid Template - Generic - Holdable
+i(212388),	-- Ulgrax's Morsel-Masher \\ 11.0 Raid Template - Mace2H - Str - 2 Hand
+i(212389),	-- Spire of Transfused Horrors \\ 11.0 Raid Template - Staff - Agi - 2 Hand
+i(212390),	-- 11.0 Raid Template - Guns - RangedRight
+i(212391),	-- Predator's Feasthooks \\ 11.0 Raid Template - Warglaives - Weapon
+i(212392),	-- Duelist's Dancing Steel \\ 11.0 Raid Template - Sword1H - Str - Weapon \\ 11.0 Raid Template - Sword1H - Str -Weapon
+i(212393),	-- 11.0 Raid Template - Polearms - Int - 2 Hand
+i(212394),	-- Sovereign's Disdain \\ 11.0 Raid Template - Dagger - Int - Weapon
+i(212395),	-- Blood-Kissed Kukri \\ 11.0 Raid Template - Dagger - Agi - Weapon
+i(212396),	-- Monster Weapon - 1H Sword \\ 11.0 Raid Template - Sword1H - Agi - Weapon
+i(212397),	-- Takazj's Entropic Edict \\ 11.0 Raid Template - Staff - Int - 2 Hand
+i(212398),	-- Bludgeons of Blistering Wind \\ 11.0 Raid Template - Mace1H - Agi - Weapon
+i(212399),	-- Splintershot Silkbow \\ 11.0 Raid Template - Bows - Ranged
+i(212400),	-- Shade-Touched Silencer \\ 11.0 Raid Template - Crossbow - RangedRight
+i(212401),	-- Ansurek's Final Judgment \\ 11.0 Raid Template - Axe1H - Str - Weapon
+i(212402),	-- 11.0 Raid Template - Axe1H - Agi - Weapon
+i(212403),	-- 11.0 Raid Template - Axe1H - Int - Weapon
+i(212404),	-- Scepter of Manifested Miasma \\ 11.0 Raid Template - Mace1H - Int - Weapon
+i(212405),	-- Flawless Phase Blade \\ 11.0 Raid Template - Sword1H - Int - Weapon
+i(212406),	-- 11.0 Raid Template - Mace1H - Str - Weapon
+i(212407),	-- Anub'arash's Colossal Mandible \\ 11.0 Raid Template - Axe2H - Str - 2 Hand
+i(212408),	-- 11.0 Raid Template - Sword2H - Str - 2 Hand
+i(212409),	-- Venom-Etched Claw \\ 11.0 Raid Template - FistWeapon - Weapon
+i(212410),	-- 11.0 Raid Template - Mace2H - Int - 2 Hand
+i(212411),	-- 11.0 Raid Template - Sword2H - Int - 2 Hand
+i(212412),	-- 11.0 Raid Template - Wand - RangedRight
+i(212413),	-- Honored Executioner's Perforator \\ 11.0 Raid Template - Polearms - Agi - 2 Hand
+i(212414),	-- Lost Watcher's Remains \\ 11.0 Raid Template - Mail - Waist
+i(212415),	-- Throne Defender's Bangles \\ 11.0 Raid Template - Mail - Wrist
+i(212416),	-- Cosmic-Tinged Treads \\ 11.0 Raid Template - Cloth - Feet
+i(212417),	-- Beyond's Dark Visage \\ 11.0 Raid Template - Leather - Head
+i(212418),	-- Black Blood Injectors \\ 11.0 Raid Template - Plate - Hand
+i(212419),	-- Bile-Soaked Harness \\ 11.0 Raid Template - Cloth - Chest
+i(212420),	-- Queenguards's Carapace \\ 11.0 Raid Template - Plate - Chest
+i(212421),	-- Goresplattered Membrane \\ 11.0 Raid Template - Mail - Chest
+i(212422),	-- Bloodbound Horror's Legplates \\ 11.0 Raid Template - Plate - Legs
+i(212423),	-- Rebel's Drained Marrowslacks \\ 11.0 Raid Template - Leather - Legs
+i(212424),	-- Seasoned Earthen Boulderplates \\ 11.0 Raid Template - Plate - Shoulder
+i(212425),	-- Devourer's Taut Innards \\ 11.0 Raid Template - Leather - Waist
+i(212426),	-- Crunchy Intruder's Wristband \\ 11.0 Raid Template - Cloth - Wrist
+i(212427),	-- Visor of the Evolved Captain \\ 11.0 Raid Template - Plate - Head
+i(212428),	-- Final Meal's Horns \\ 11.0 Raid Template - Mail - Head
+i(212429),	-- Whispering Voidlight Spaulders \\ 11.0 Raid Template - Mail - Shoulder
+i(212430),	-- Shattered Eye Cincture \\ 11.0 Raid Template - Cloth - Waist
+i(212431),	-- Undermoth-Lined Footpads \\ 11.0 Raid Template - Mail - Feet
+i(212432),	-- Thousand-Scar Impalers \\ 11.0 Raid Template - Leather - Hand
+i(212433),	-- Omnivore's Venomous Camouflage \\ 11.0 Raid Template - Leather - Chest
+i(212434),	-- Voidspoken Sarong \\ 11.0 Raid Template - Cloth - Legs
+i(212435),	-- Liquified Defector's Leggings \\ 11.0 Raid Template - Mail - Legs
+i(212436),	-- Clutches of Paranoia \\ 11.0 Raid Template - Mail - Hand
+i(212437),	-- Ravaged Lamplighter's Manacles \\ 11.0 Raid Template - Plate - Wrist
+i(212438),	-- Polluted Spectre's Wraps \\ Polluted Spectre's Cover \\ 11.0 Raid Template - Leather - Wrist
+i(212439),	-- Beacons of the False Dawn \\ 11.0 Raid Template - Cloth - Shoulder
+i(212440),	-- Devotee's Discarded Headdress \\ 11.0 Raid Template - Cloth - Head
+i(212441),	-- Bindings of the Starless Night \\ 11.0 Raid Template - Cloth - Hand
+i(212442),	-- Greatbelt of the Hungerer \\ 11.0 Raid Template - Plate - Waist
+i(212443),	-- Shattershell Greaves \\ 11.0 Raid Template - Plate - Feet
+i(212444),	-- Frame of Felled Insurgents \\ 11.0 Raid Template - Leather - Shoulder
+i(212445),	-- Chitin-Spiked Jackboots \\ 11.0 Raid Template - Leather - Feet
+i(212446),	-- Royal Emblem of Nerub-ar \\ 11.0 Raid Template - Generic - Cloak
+i(212447),	-- Key to the Unseeming \\ 11.0 Raid Template - Generic - Finger
+i(212448),	-- Locket of Broken Memories \\ 11.0 Raid Template - Generic - Neck
+i(212449),	-- Sikran's Endless Arsenal \\ Sikran's Shadow Arsenal \\ Sik'ran's Shadow Arsenal
+i(212450),	-- Swarmlord's Authority
+i(212451),	-- Aberrant Spellforge
+i(212452),	-- Gruesome Syringe
+i(212453),	-- Skyterror's Corrosive Organ \\ Rasha'nan's Acid Gland \\ Gigantic Acid Gland
+i(212454),	-- Mad Queen's Mandate \\ Abyssal Effigy
+i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
+i(212456),	-- Void Reaper's Contract \\ Void Reaper's Chime
+i(212457),	-- 11.0 Raid Template - INT - Trinket
 i(216664),	-- Threadling Lure \\ Threading Lure
 i(218741),	-- Mossy Cartographer's Doublet
 i(218742),	-- Deep Cartographer's Doublet
@@ -32804,5 +32992,42 @@ i(223948),	-- Stubborn Wolf's Greathelm
 i(224435),	-- Pattern: Duskthread Lining
 11.0.0.54605
 i(225256),	-- PH_2
+i(225574),	-- Wings of Shattered Sorrow \\ 11.0 Raid Template - Generic - Cloak
+i(225575),	-- Silken Advisor's Favor \\ 11.0 Raid Template - Generic - Neck
+i(225576),	-- Writhing Ringworm \\ 11.0 Raid Template - Generic - Finger
+i(225577),	-- Sureki Zealot's Insignia \\ 11.0 Raid Template - Generic - Neck
+i(225578),	-- Seal of the Poisoned Pact \\ 11.0 Raid Template - Generic - Finger
+i(225579),	-- Crest of the Caustic Despot \\ 11.0 Raid Template - Shield - Shield
+i(225581),	-- Ky'veza's Covert Clasps \\ 11.0 Raid Template - Mail - Wrist
+i(225582),	-- Assimilated Eggshell Slippers \\ 11.0 Raid Template - Cloth - Feet
+i(225583),	-- Behemoth's Eroded Cinch \\ 11.0 Raid Template - Leather - Waist
+i(225584),	-- Skeinspinner's Duplicitous Cuffs \\ 11.0 Raid Template - Cloth - Wrist
+i(225585),	-- Acrid Ascendant's Sash \\ 11.0 Raid Template - Cloth - Waist
+i(225586),	-- Rasha'nan's Grotesque Talons \\ 11.0 Raid Template - Mail - Feet
+i(225587),	-- Devoted Offering's Irons \\ 11.0 Raid Template - Plate - Wrist
+i(225588),	-- Sanguine Experiment's Bandages \\ 11.0 Raid Template - Leather - Wrist
+i(225589),	-- Nether Bounty's Greatbelt \\ 11.0 Raid Template - Plate - Waist
+i(225590),	-- Boots of the Black Bulwark \\ 11.0 Raid Template - Plate - Feet
+i(225591),	-- Fleeting Massacre Footpads \\ 11.0 Raid Template - Leather - Feet
+i(225614),	-- Dreadful Blasphemer's Effigy \\ Dreadful Empty Egg \\ Dreadful Adjective Thing
+i(225615),	-- Mystic Blasphemer's Effigy \\ Mystic Empty Egg \\ Mystic Adjective Thing
+i(225616),	-- Venerated Blasphemer's Effigy \\ Venerated Empty Egg \\ Venerated Adjective Thing
+i(225617),	-- Zenith Blasphemer's Effigy \\ Zenith Empty Egg \\ Zenith Adjective Thing
+i(225618),	-- Dreadful Stalwart's Emblem \\ Dreadful Vile Egg \\ Dreadful Adjective Thing
+i(225619),	-- Mystic Stalwart's Emblem \\ Mystic Vile Egg \\ Mystic Adjective Thing
+i(225620),	-- Venerated Stalwart's Emblem \\ Venerated Vile Egg \\ Venerated Adjective Thing
+i(225621),	-- Zenith Stalwart's Emblem \\ Zenith Vile Egg \\ Zenith Adjective Thing
+i(225622),	-- Dreadful Conniver's Badge \\ Dreadful Chittering Egg \\ Dreadful Adjective Thing
+i(225623),	-- Mystic Conniver's Badge \\ Mystic Chittering Egg \\ Mystic Adjective Thing
+i(225624),	-- Venerated Conniver's Badge \\ Venerated Chittering Egg \\ Venerated Adjective Thing
+i(225625),	-- Zenith Conniver's Badge \\ Zenith Chittering Egg \\ Zenith Adjective Thing
+i(225626),	-- Dreadful Slayer's Icon \\ Dreadful Warped Egg \\ Dreadful Adjective Thing
+i(225627),	-- Mystic Slayer's Icon \\ Mystic Warped Egg \\ Mystic Adjective Thing
+i(225628),	-- Venerated Slayer's Icon \\ Venerated Warped Egg \\ Venerated Adjective Thing
+i(225629),	-- Zenith Slayer's Icon \\ Zenith Warped Egg \\ Zenith Adjective Thing
+i(225630),	-- Dreadful Obscenity's Idol \\ Dreadful Acid-Pocked Egg \\ Dreadful Adjective Thing
+i(225631),	-- Mystic Obscenity's Idol \\ Mystic Acid-Pocked Egg \\ Mystic Adjective Thing
+i(225632),	-- Venerated Obscenity's Idol \\ Venerated Acid-Pocked Egg \\ Venerated Adjective Thing
+i(225633),	-- Zenith Obscenity's Idol \\ Zenith Acid-Pocked Egg \\ Zenith Adjective Thing
 11.0.0.54675
 i(225652),	-- Enchant Ring - Glimmering Haste

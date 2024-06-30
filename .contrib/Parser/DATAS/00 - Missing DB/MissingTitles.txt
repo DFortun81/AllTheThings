@@ -7,8 +7,6 @@ title(560),	-- %s Ascension Breaker
 11.0.0.54675
 title(561),	-- %s, Famed Slayer of Ansurek
 title(562),	-- %s, Slayer of the Deeps
-11.0.0.54774
-title(563),	-- Deephauler %s
 11.0.0.54935
 title(564),	-- Machine Whisperer %s
 title(565),	-- Honorary Councilmember %s
