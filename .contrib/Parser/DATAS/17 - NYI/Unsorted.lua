@@ -54,7 +54,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(223264),	-- Aquamarine Swarmite (MOUNT!)
-				i(224151),	-- Ascendant Skyrazor (MOUNT!)
 				i(223315),	-- Beledar's Spawn (MOUNT!)
 				i(221967),	-- Crowd Pummeler 2-30 (MOUNT!)
 				i(219391),	-- Delver's Dirigible (MOUNT!)
@@ -69,12 +68,10 @@ root(ROOTS.Unsorted, {
 				i(226044),	-- Plunderlord's Weathered Crocolisk (MOUNT!)
 				i(223158),	-- Raging Cinderbee (MOUNT!)
 				i(223314),	-- Shackled Shadow (MOUNT!)
-				i(223266),	-- Shadowed Swarmite (MOUNT!)
 				i(224150),	-- Siesbarg (MOUNT!)
 				i(223572),	-- Slatestone Ramolith (MOUNT!)
 				i(223153),	-- Soaring Meaderbee (MOUNT!)
 				i(221765),	-- Stonevault Mechsuit (MOUNT!)
-				i(224147),	-- Sureki Skyrazor (MOUNT!)
 				i(223317),	-- Vermillion Imperial Lynx (MOUNT!)
 				i(225548),	-- Wick's Lead (MOUNT!)
 				---
@@ -501,7 +498,153 @@ root(ROOTS.Unsorted, {
 				}),
 			}),
 			header(HEADERS.LFGDungeon, 1273, {
+				i(211979),	-- Warsculptor's Cloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Generic - Cloak
+				i(211980),	-- Warsculptor's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Wrist
+				i(211981),	-- Warsculptor's Buckle \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Waist
+				i(211982),	-- Warsculptor's Horned Spaulders \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Shoulder
+				i(211983),	-- Warsculptor's Cuisses \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Legs
+				i(211984),	-- Warsculptor's Barbute \\ Warsculptor's Tusks \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Head
+				i(211985),	-- Warsculptor's Crushers \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Hand
+				i(211986),	-- Warsculptor's Carved Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Feet
+				i(211987),	-- Warsculptor's Furred Plastron \\ Warsculptor's Fur Plate \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Chest
+				i(211988),	-- Entombed Seraph's Greatcloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Generic - Cloak
+				i(211989),	-- Entombed Seraph's Shackles \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Wrist
+				i(211990),	-- Entombed Seraph's Waistguard \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Waist
+				i(211991),	-- Entombed Seraph's Plumes \\ Entombed Seraph's Chained Plumes \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Shoulder
+				i(211992),	-- Entombed Seraph's Greaves \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Legs
+				i(211993),	-- Entombed Seraph's Casque \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Head
+				i(211994),	-- Entombed Seraph's Castigation \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Hand
+				i(211995),	-- Entombed Seraph's Sabatons \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Feet
+				i(211996),	-- Entombed Seraph's Breastplate \\ Entombed Seraph's Casket \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Chest
+				i(211997),	-- Exhumed Centurion's Drape \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Generic - Cloak
+				i(211998),	-- Exhumed Centurion's Manacles \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Wrist
+				i(211999),	-- Exhumed Centurion's Baltea \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Waist
+				i(212000),	-- Exhumed Centurion's Spikes \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Shoulder
+				i(212001),	-- Exhumed Centurion's Chausses \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Legs
+				i(212002),	-- Exhumed Centurion's Galea \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Head
+				i(212003),	-- Exhumed Centurion's Gauntlets \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Hand
+				i(212004),	-- Exhumed Centurion's Sollerets \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Feet
+				i(212005),	-- Exhumed Centurion's Breastplate \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Chest
+				i(212006),	-- Mist of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Generic - Cloak
+				i(212007),	-- Embrace of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Wrist
+				i(212008),	-- Wrappings of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Waist
+				i(212009),	-- Concourse of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Shoulder
+				i(212010),	-- Sarong of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Legs
+				i(212011),	-- Noetic of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Head
+				i(212012),	-- Covenant of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Hand
+				i(212013),	-- Shoes of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Feet
+				i(212014),	-- Vestments of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Chest
+				i(212015),	-- Lightless Scavenger's Hide \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Generic - Cloak
+				i(212016),	-- Lightless Scavenger's Wristguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Wrist
+				i(212017),	-- Lightless Scavenger's Bonegirdle \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Waist
+				i(212018),	-- Lightless Scavenger's Taxidermy \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Shoulder
+				i(212019),	-- Lightless Scavenger's Stalkings \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Legs
+				i(212020),	-- Lightless Scavenger's Skull \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Head
+				i(212021),	-- Lightless Scavenger's Mitts \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Hand
+				i(212022),	-- Lightless Scavenger's Footpads \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Feet
+				i(212023),	-- Lightless Scavenger's Tunic \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Chest
+				i(212024),	-- Cape of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Generic - Cloak
+				i(212025),	-- Wristblades of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Wrist
+				i(212026),	-- Core of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Waist
+				i(212027),	-- Fumaroles of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Shoulder
+				i(212028),	-- Legguards of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Legs
+				i(212029),	-- Horns of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Head
+				i(212030),	-- Rippers of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Hand
+				i(212031),	-- Talons of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Feet
+				i(212032),	-- Scales of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Chest
+				i(212033),	-- K'areshi Phantom's Breeze \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Generic - Cloak
+				i(212034),	-- K'areshi Phantom's Cuffs \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Wrist
+				i(212035),	-- K'areshi Phantom's Belt \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Waist
+				i(212036),	-- K'areshi Phantom's Shoulderpads \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Shoulder
+				i(212037),	-- K'areshi Phantom's Leggings \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Legs
+				i(212038),	-- K'areshi Phantom's Emptiness \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Head
+				i(212039),	-- K'areshi Phantom's Grips \\ K'areshi Phantom's Gloves \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Hand
+				i(212040),	-- K'areshi Phantom's Netherwalkers \\ K'areshi Phantom's Footwraps \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Feet
+				i(212041),	-- K'areshi Phantom's Nexus Wraps \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Chest
+				i(212042),	-- Gatecrasher's Mantle \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Generic - Cloak
+				i(212043),	-- Gatecrasher's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Wrist
+				i(212044),	-- Gatecrasher's Cord \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Waist
+				i(212045),	-- Gatecrasher's Enduring Effigy \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Shoulder
+				i(212046),	-- Gatecrasher's Kilt \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Legs
+				i(212047),	-- Gatecrasher's Horns \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Head
+				i(212048),	-- Gatecrasher's Protectors \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Hand
+				i(212049),	-- Gatecrasher's Tabi \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Feet
+				i(212050),	-- Gatecrasher's Gi \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Chest
+				i(212051),	-- Cloak of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Generic - Cloak
+				i(212052),	-- Great Links of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Wrist
+				i(212053),	-- Faulds of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Waist
+				i(212054),	-- Maw of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Shoulder
+				i(212055),	-- Leggings of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Legs
+				i(212056),	-- Mask of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Head
+				i(212057),	-- Eviscerators of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Hand
+				i(212058),	-- Treads of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Feet
+				i(212059),	-- Hide of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Chest
+				i(212060),	-- Drape of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Generic - Cloak
+				i(212061),	-- Armguards of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Wrist
+				i(212062),	-- Waistguard of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Waist
+				i(212063),	-- War-Mantle of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Shoulder
+				i(212064),	-- Pantaloons of the Hypogeal Nemesis \\ Trousers of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Legs
+				i(212065),	-- Impalers of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Head
+				i(212066),	-- Claws of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Hand
+				i(212067),	-- Talons of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Feet
+				i(212068),	-- Chestguard of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Chest
+				i(212069),	-- Hexflame Coven's Shawl \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Generic - Cloak
+				i(212070),	-- Hexflame Coven's Wristlace \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Wrist
+				i(212071),	-- Hexflame Coven's Dormant Eye \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Waist
+				i(212072),	-- Hexflame Coven's Altar \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Shoulder
+				i(212073),	-- Hexflame Coven's Leggings \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Legs
+				i(212074),	-- Hexflame Coven's All-Seeing Eye \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Head
+				i(212075),	-- Hexflame Coven's Sleeves \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Hand
+				i(212076),	-- Hexflame Coven's Treads \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth - Feet
+				i(212077),	-- Hexflame Coven's Ritual Harness \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth - Robe
+				i(212078),	-- Living Luster's Glow \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Generic - Cloak
+				i(212079),	-- Living Luster's Crystbands \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Wrist
+				i(212080),	-- Living Luster's Lightbelt \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Waist
+				i(212081),	-- Living Luster's Dominion \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Shoulder
+				i(212082),	-- Living Luster's Trousers \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Legs
+				i(212083),	-- Living Luster's Semblance \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Head
+				i(212084),	-- Living Luster's Touch \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Hand
+				i(212085),	-- Living Luster's Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth - Feet
+				i(212086),	-- Living Luster's Raiment \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth - Robe
+				i(212087),	-- Ward of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Generic - Cloak
+				i(212088),	-- Bracelets of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Wrist
+				i(212089),	-- Sigil of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Waist
+				i(212090),	-- Beacons of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Shoulder
+				i(212091),	-- Coattails of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Legs
+				i(212092),	-- Hood of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Head
+				i(212093),	-- Jeweled Gauntlets of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Hand
+				i(212094),	-- Slippers of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth - Feet
+				i(212095),	-- Runecoat of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth - Chest
 
+
+
+
+
+
+				i(212390),	-- 11.0 Raid Template - Guns - RangedRight
+				i(212393),	-- 11.0 Raid Template - Polearms - Int - 2 Hand
+				i(212396),	-- Monster Weapon - 1H Sword \\ 11.0 Raid Template - Sword1H - Agi - Weapon
+				i(212402),	-- 11.0 Raid Template - Axe1H - Agi - Weapon
+				i(212403),	-- 11.0 Raid Template - Axe1H - Int - Weapon
+				i(212406),	-- 11.0 Raid Template - Mace1H - Str - Weapon
+				i(212408),	-- 11.0 Raid Template - Sword2H - Str - 2 Hand
+				i(212410),	-- 11.0 Raid Template - Mace2H - Int - 2 Hand
+				i(212411),	-- 11.0 Raid Template - Sword2H - Int - 2 Hand
+				i(212412),	-- 11.0 Raid Template - Wand - RangedRight
+				i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
+				i(212457),	-- 11.0 Raid Template - INT - Trinket
+				i(225720),	-- 11.0 Raid Template - Cloth - Head
+				i(225721),	-- 11.0 Raid Template - Cloth - Feet
+				i(225722),	-- 11.0 Raid Template - Leather - Shoulder
+				i(225723),	-- 11.0 Raid Template - Leather - Waist
+				i(225724),	-- 11.0 Raid Template - Mail - Shoulder
+				i(225725),	-- 11.0 Raid Template - Mail - Waist
+				i(225726),	-- 11.0 Raid Template - Plate - Waist
+				i(225727),	-- 11.0 Raid Template - Plate - Head
+				i(225728),	-- 11.0 Raid Template - Generic - Finger
+				i(225736),	-- 11.0 Raid Template - Plate - Head
+				i(225737),	-- 11.0 Raid Template - Plate - Feet
+				i(225744),	-- 11.0 Raid Template - Plate - Feet
 			}),
 			n(SPECIAL, {	-- Delves
 				i(207390),	-- Delve Ring
@@ -1864,10 +2007,7 @@ root(ROOTS.Unsorted, {
 			i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
 			i(219804),	-- [DNT] Antiparalytic Serum
 			i(219808),	-- Ethereal Sugar
-			i(219877),	-- Void Reaper's Warp Blade
-			i(219915),	-- Foul Behemoth's Chelicera
 			i(219916),	-- Bronzebeard Family Compass
-			i(219917),	-- Creeping Coagulum
 			i(219919),	-- Blade of Hatred
 			i(219923),	-- Blade of Hatred
 			i(219931),	-- Algari Competitor's Medallion \\ Vicious Competitor's Medallion
@@ -1912,7 +2052,6 @@ root(ROOTS.Unsorted, {
 			i(220156),	-- Bubbling Wax
 			i(220157),	-- Lightbringer's Amulet \\ [PH] The Cool Arathi Necklace (Stage 2)
 			i(220158),	-- Lightbringer's Amulet \\ [PH] The Cool Arathi Necklace (Stage 3)
-			i(220202),	-- Spymaster's Web
 			i(220212),	-- Aelric's Corrupted Tinderbox
 			i(220215),	-- Unidentified Tinderbox
 			i(220218),	-- Sticky Wax
@@ -1945,7 +2084,7 @@ root(ROOTS.Unsorted, {
 			i(220300),	-- Translucent Wing
 			i(220301),	-- Crystallized Honey
 			i(220303),	-- Decayed Flesh
-			i(220305),	-- Ovinax's Mercurial Egg
+
 			i(220306),	-- Fresh Fillet
 			i(220339),	-- Chopped Mycobloom
 			i(220340),	-- Meatball Cluster
@@ -2028,7 +2167,6 @@ root(ROOTS.Unsorted, {
 			i(220770),	-- Void-Scarred Stormhammer
 			i(220773),	-- Celebratory Pack of Runed Harbinger Crests \\ Celebratory Pack of Runed Harbinger Crests (TODO: Fix Icon)
 			i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
-			i(221023),	-- Treacherous Transmitter
 			i(221033),	-- Hyperactive Stormclaw
 			i(221066),	-- Template - Accessory - Finger
 			i(221093),	-- Deeply Corrupted Coil
@@ -3164,7 +3302,6 @@ root(ROOTS.Unsorted, {
 			i(211494),	-- Spark of Beginnings
 			i(224727),	-- Dasher's Trophy Fish
 			i(225555),	-- Periapt of Pure Flame
-			i(225636),	-- Regicide \\ 11.0 Raid Template - Dagger - Agi - Weapon
 			i(225637),	-- Poisoned Dagger
 			i(225638),	-- Spelunker's Waning Candle
 			i(225640),	-- Abyssal Lure
@@ -3192,23 +3329,8 @@ root(ROOTS.Unsorted, {
 			i(225685),	-- Relic of Sentience
 			i(225692),	-- Glowglow Cap
 			i(225719),	-- Light's Mantle
-			i(225720),	-- 11.0 Raid Template - Cloth - Head
-			i(225721),	-- 11.0 Raid Template - Cloth - Feet
-			i(225722),	-- 11.0 Raid Template - Leather - Shoulder
-			i(225723),	-- 11.0 Raid Template - Leather - Waist
-			i(225724),	-- 11.0 Raid Template - Mail - Shoulder
-			i(225725),	-- 11.0 Raid Template - Mail - Waist
-			i(225726),	-- 11.0 Raid Template - Plate - Waist
-			i(225727),	-- 11.0 Raid Template - Plate - Head
-			i(225728),	-- 11.0 Raid Template - Generic - Finger
-			i(225736),	-- 11.0 Raid Template - Plate - Head
-			i(225737),	-- 11.0 Raid Template - Plate - Feet
 			i(225738),	-- Kaheti Warblade
 			i(225739),	-- Algari Distinguishment
-			i(225744),	-- 11.0 Raid Template - Plate - Feet
-			i(225748),	-- Seal of the Silent Vigil \\ 11.0 Raid Template - Generic - Finger
-			i(225749),	-- Seal of the Void-Touched \\ 11.0 Raid Template - Generic - Finger
-			i(225750),	-- Seal of the Abyssal Terror \\ 11.0 Raid Template - Generic - Finger
 			i(225752),	-- Dornogal Defender
 			i(225753),	-- Dornogal Guard's Splitter
 			i(225754),	-- Dornogal Guard's Hammer
@@ -3573,7 +3695,6 @@ root(ROOTS.Unsorted, {
 			i(225432),	-- Design: Algari Competitor's Signet
 			i(225433),	-- Design: Algari Competitor's Amulet
 			i(225542),	-- Delver's Dirigible Schematic: Void
-			i(226810),	-- Infiltrator's Shroud
 			i(226811),	-- Marinated Maggots
 			i(226813),	-- Golden Valorstone
 			i(226814),	-- Chest of Gold
@@ -3666,7 +3787,7 @@ root(ROOTS.Unsorted, {
 			i(223462),	-- Honorable Arathi Breastplate
 			i(223870),	-- Cache Key
 			i(224780),	-- Toughened Tempest Pelt
-			i(225580),	-- Accelerated Ascension Coil
+
 			i(225654),	-- Imperfect Ascendancy Serum
 			i(225927),	-- Emerald Necklace
 			i(226150),	-- Gem-Studded Candelabra
@@ -3879,6 +4000,274 @@ root(ROOTS.Unsorted, {
 			i(228456),	-- Bouldercloth
 			i(228457),	-- Lightspark Sky Academy Gradebook
 			i(228458),	-- Bouldercloth Bag
+
+
+
+
+
+
+
+
+
+
+
+
+			------------------- THESE ARE ALREADY SORTED (IN ENSEMBLES) -----------------
+			i(218741),	-- Mossy Cartographer's Doublet
+			i(218742),	-- Deep Cartographer's Doublet
+			i(218743),	-- Crimson Cartographer's Doublet
+			i(218744),	-- Oceanic Cartographer's Doublet
+			i(218745),	-- Saffron Cartographer's Doublet
+			i(218746),	-- Sooty Artisan's Apron
+			i(218747),	-- Stained Artisan's Apron
+			i(218748),	-- Cast Artisan's Apron
+			i(218749),	-- Woven Artisan's Apron
+			i(218750),	-- Formed Artisan's Apron
+			i(218751),	-- Toiler's Navy Jerkin
+			i(218752),	-- Toiler's Beige Jerkin
+			i(218753),	-- Toiler's Burgundy Jerkin
+			i(218754),	-- Toiler's Ochre Jerkin
+			i(218755),	-- Toiler's Khaki Jerkin
+			i(218756),	-- Occult Peddler's Tunic
+			i(218757),	-- Peculiar Peddler's Tunic
+			i(218758),	-- Curious Peddler's Tunic
+			i(218759),	-- Arcane Peddler's Tunic
+			i(218760),	-- Versatile Peddler's Tunic
+			i(218761),	-- Court Patron's Blazer
+			i(218762),	-- Celestial Patron's Blazer
+			i(218763),	-- Verdant Patron's Blazer
+			i(218764),	-- Royal Patron's Blazer
+			i(218765),	-- Vermillion Patron's Blazer
+			i(218766),	-- Taupe Quotidian Shirt
+			i(218767),	-- Umber Quotidian Shirt
+			i(218768),	-- Earthy Quotidian Shirt
+			i(218769),	-- Maroon Quotidian Shirt
+			i(218770),	-- Sandy Quotidian Shirt
+			i(218771),	-- Midnight Educator's Vest
+			i(218772),	-- Cobalt Educator's Vest
+			i(218773),	-- Leafy Educator's Vest
+			i(218774),	-- Lilac Educator's Vest
+			i(218775),	-- Cardinal Educator's Vest
+			i(218776),	-- Mossy Cartographer's Trailblazers
+			i(218777),	-- Deep Cartographer's Trailblazers
+			i(218778),	-- Crimson Cartographer's Trailblazers
+			i(218779),	-- Oceanic Cartographer's Trailblazers
+			i(218780),	-- Saffron Cartographer's Trailblazers
+			i(218781),	-- Sooty Artisan's Steel-Toes
+			i(218782),	-- Stained Artisan's Steel-Toes
+			i(218783),	-- Cast Artisan's Steel-Toes
+			i(218784),	-- Woven Artisan's Steel-Toes
+			i(218785),	-- Formed Artisan's Steel-Toes
+			i(218786),	-- Toiler's Navy Footwraps
+			i(218787),	-- Toiler's Beige Footwraps
+			i(218788),	-- Toiler's Burgundy Footwraps
+			i(218789),	-- Toiler's Ochre Footwraps
+			i(218790),	-- Toiler's Khaki Footwraps
+			i(218791),	-- Occult Peddler's Galoshes
+			i(218792),	-- Peculiar Peddler's Galoshes
+			i(218793),	-- Curious Peddler's Galoshes
+			i(218794),	-- Arcane Peddler's Galoshes
+			i(218795),	-- Versatile Peddler's Galoshes
+			i(218796),	-- Court Patron's Boots
+			i(218797),	-- Celestial Patron's Boots
+			i(218798),	-- Verdant Patron's Boots
+			i(218799),	-- Royal Patron's Boots
+			i(218800),	-- Vermillion Patron's Boots
+			i(218801),	-- Taupe Quotidian Waders
+			i(218802),	-- Umber Quotidian Waders
+			i(218803),	-- Earthy Quotidian Waders
+			i(218804),	-- Maroon Quotidian Waders
+			i(218805),	-- Sandy Quotidian Waders
+			i(218806),	-- Midnight Educator's Moccasins
+			i(218807),	-- Cobalt Educator's Moccasins
+			i(218808),	-- Leafy Educator's Moccasins
+			i(218809),	-- Lilac Educator's Moccasins
+			i(218810),	-- Cardinal Educator's Moccasins
+			i(218811),	-- Mossy Cartographer's Handguards
+			i(218812),	-- Deep Cartographer's Handguards
+			i(218813),	-- Crimson Cartographer's Handguards
+			i(218814),	-- Oceanic Cartographer's Handguards
+			i(218815),	-- Saffron Cartographer's Handguards
+			i(218816),	-- Sooty Artisan's Mitts
+			i(218817),	-- Stained Artisan's Mitts
+			i(218818),	-- Cast Artisan's Mitts
+			i(218819),	-- Woven Artisan's Mitts
+			i(218820),	-- Formed Artisan's Mitts
+			i(218821),	-- Toiler's Navy Wraps
+			i(218822),	-- Toiler's Beige Wraps
+			i(218823),	-- Toiler's Burgundy Wraps
+			i(218824),	-- Toiler's Ochre Wraps
+			i(218825),	-- Toiler's Khaki Wraps
+			i(218826),	-- Taupe Quotidian Handcovers
+			i(218827),	-- Umber Quotidian Handcovers
+			i(218828),	-- Earthy Quotidian Handcovers
+			i(218829),	-- Maroon Quotidian Handcovers
+			i(218830),	-- Sandy Quotidian Handcovers
+			i(218831),	-- Midnight Educator's Gloves
+			i(218832),	-- Cobalt Educator's Gloves
+			i(218833),	-- Leafy Educator's Gloves
+			i(218834),	-- Lilac Educator's Gloves
+			i(218835),	-- Cardinal Educator's Gloves
+			i(218836),	-- Mossy Cartographer's Cap
+			i(218837),	-- Deep Cartographer's Cap
+			i(218838),	-- Crimson Cartographer's Cap
+			i(218839),	-- Oceanic Cartographer's Cap
+			i(218840),	-- Saffron Cartographer's Cap
+			i(218841),	-- Sooty Artisan's Goggles
+			i(218842),	-- Stained Artisan's Goggles
+			i(218843),	-- Cast Artisan's Goggles
+			i(218844),	-- Woven Artisan's Goggles
+			i(218845),	-- Formed Artisan's Goggles
+			i(218846),	-- Toiler's Navy Headband
+			i(218847),	-- Toiler's Beige Headband
+			i(218848),	-- Toiler's Ochre Headband
+			i(218849),	-- Toiler's Khaki Headband
+			i(218850),	-- Toiler's Burgundy Headband
+			i(218851),	-- Occult Peddler's Turban
+			i(218852),	-- Peculiar Peddler's Turban
+			i(218853),	-- Curious Peddler's Turban
+			i(218854),	-- Arcane Peddler's Turban
+			i(218855),	-- Versatile Peddler's Turban
+			i(218856),	-- Court Patron's Top Hat
+			i(218857),	-- Celestial Patron's Top Hat
+			i(218858),	-- Verdant Patron's Top Hat
+			i(218859),	-- Royal Patron's Top Hat
+			i(218860),	-- Vermillion Patron's Top Hat
+			i(218861),	-- Taupe Quotidian Hood
+			i(218862),	-- Umber Quotidian Hood
+			i(218863),	-- Earthy Quotidian Hood
+			i(218864),	-- Maroon Quotidian Hood
+			i(218865),	-- Sandy Quotidian Hood
+			i(218866),	-- Midnight Educator's Crown
+			i(218867),	-- Cobalt Educator's Crown
+			i(218868),	-- Leafy Educator's Crown
+			i(218869),	-- Lilac Educator's Crown
+			i(218870),	-- Cardinal Educator's Crown
+			i(218871),	-- Mossy Cartographer's Pantaloons
+			i(218872),	-- Deep Cartographer's Pantaloons
+			i(218873),	-- Crimson Cartographer's Pantaloons
+			i(218874),	-- Oceanic Cartographer's Pantaloons
+			i(218875),	-- Saffron Cartographer's Pantaloons
+			i(218876),	-- Sooty Artisan's Leggings
+			i(218877),	-- Stained Artisan's Leggings
+			i(218878),	-- Cast Artisan's Leggings
+			i(218879),	-- Woven Artisan's Leggings
+			i(218880),	-- Formed Artisan's Leggings
+			i(218881),	-- Toiler's Navy Chaps
+			i(218882),	-- Toiler's Beige Chaps
+			i(218883),	-- Toiler's Burgundy Chaps
+			i(218884),	-- Toiler's Ochre Chaps
+			i(218885),	-- Toiler's Khaki Chaps
+			i(218886),	-- Occult Peddler's Breeches
+			i(218887),	-- Peculiar Peddler's Breeches
+			i(218888),	-- Curious Peddler's Breeches
+			i(218889),	-- Arcane Peddler's Breeches
+			i(218890),	-- Versatile Peddler's Breeches
+			i(218891),	-- Court Patron's Tights
+			i(218892),	-- Celestial Patron's Tights
+			i(218893),	-- Verdant Patron's Tights
+			i(218894),	-- Royal Patron's Tights
+			i(218895),	-- Vermillion Patron's Tights
+			i(218896),	-- Taupe Quotidian Trousers
+			i(218897),	-- Umber Quotidian Trousers
+			i(218898),	-- Earthy Quotidian Trousers
+			i(218899),	-- Maroon Quotidian Trousers
+			i(218900),	-- Sandy Quotidian Trousers
+			i(218901),	-- Midnight Educator's Pants
+			i(218902),	-- Cobalt Educator's Pants
+			i(218903),	-- Leafy Educator's Pants
+			i(218904),	-- Lilac Educator's Pants
+			i(218905),	-- Cardinal Educator's Pants
+			i(218906),	-- Midnight Educator's Robe
+			i(218907),	-- Cobalt Educator's Robe
+			i(218908),	-- Leafy Educator's Robe
+			i(218909),	-- Lilac Educator's Robe
+			i(218910),	-- Cardinal Educator's Robe
+			i(218917),	-- Mossy Cartographer's Shoulderguards
+			i(218918),	-- Deep Cartographer's Shoulderguards
+			i(218919),	-- Crimson Cartographer's Shoulderguards
+			i(218920),	-- Oceanic Cartographer's Shoulderguards
+			i(218921),	-- Saffron Cartographer's Shoulderguards
+			i(218922),	-- Sooty Artisan's Shoulderpads
+			i(218923),	-- Stained Artisan's Shoulderpads
+			i(218924),	-- Cast Artisan's Shoulderpads
+			i(218925),	-- Woven Artisan's Shoulderpads
+			i(218926),	-- Formed Artisan's Shoulderpads
+			i(218927),	-- Occult Peddler's Pauldrons
+			i(218928),	-- Peculiar Peddler's Pauldrons
+			i(218929),	-- Curious Peddler's Pauldrons
+			i(218930),	-- Arcane Peddler's Pauldrons
+			i(218931),	-- Versatile Peddler's Pauldrons
+			i(218932),	-- Court Patron's Epaulettes
+			i(218933),	-- Celestial Patron's Epaulettes
+			i(218934),	-- Verdant Patron's Epaulettes
+			i(218935),	-- Royal Patron's Epaulettes
+			i(218936),	-- Vermillion Patron's Epaulettes
+			i(218937),	-- Midnight Educator's Mantle
+			i(218938),	-- Cobalt Educator's Mantle
+			i(218939),	-- Leafy Educator's Mantle
+			i(218940),	-- Lilac Educator's Mantle
+			i(218941),	-- Cardinal Educator's Mantle
+			i(218942),	-- Mossy Cartographer's Compass
+			i(218943),	-- Deep Cartographer's Compass
+			i(218944),	-- Crimson Cartographer's Compass
+			i(218945),	-- Oceanic Cartographer's Compass
+			i(218946),	-- Saffron Cartographer's Compass
+			i(218947),	-- Sooty Artisan's Tools
+			i(218948),	-- Stained Artisan's Tools
+			i(218949),	-- Cast Artisan's Tools
+			i(218950),	-- Woven Artisan's Tools
+			i(218951),	-- Formed Artisan's Tools
+			i(218952),	-- Toiler's Navy Belt
+			i(218953),	-- Toiler's Beige Belt
+			i(218954),	-- Toiler's Burgundy Belt
+			i(218955),	-- Toiler's Ochre Belt
+			i(218956),	-- Toiler's Khaki Belt
+			i(218957),	-- Occult Peddler's Merchandise
+			i(218958),	-- Peculiar Peddler's Merchandise
+			i(218959),	-- Curious Peddler's Merchandise
+			i(218960),	-- Arcane Peddler's Merchandise
+			i(218961),	-- Versatile Peddler's Merchandise
+			i(218962),	-- Court Patron's Emblem
+			i(218963),	-- Celestial Patron's Emblem
+			i(218964),	-- Verdant Patron's Emblem
+			i(218965),	-- Royal Patron's Emblem
+			i(218966),	-- Vermillion Patron's Emblem
+			i(218967),	-- Taupe Quotidian Sash
+			i(218968),	-- Umber Quotidian Sash
+			i(218969),	-- Earthy Quotidian Sash
+			i(218970),	-- Maroon Quotidian Sash
+			i(218971),	-- Sandy Quotidian Sash
+			i(218972),	-- Midnight Educator's Scrolls
+			i(218973),	-- Cobalt Educator's Scrolls
+			i(218974),	-- Leafy Educator's Scrolls
+			i(218975),	-- Lilac Educator's Scrolls
+			i(218976),	-- Cardinal Educator's Scrolls
+			i(218977),	-- Mossy Cartographer's Bracers
+			i(218978),	-- Deep Cartographer's Bracers
+			i(218979),	-- Crimson Cartographer's Bracers
+			i(218980),	-- Oceanic Cartographer's Bracers
+			i(218981),	-- Saffron Cartographer's Bracers
+			i(218982),	-- Sooty Artisan's Bindings
+			i(218983),	-- Stained Artisan's Bindings
+			i(218984),	-- Cast Artisan's Bindings
+			i(218985),	-- Woven Artisan's Bindings
+			i(218986),	-- Formed Artisan's Bindings
+			i(218987),	-- Toiler's Navy Wristbands
+			i(218988),	-- Toiler's Beige Wristbands
+			i(218989),	-- Toiler's Burgundy Wristbands
+			i(218990),	-- Toiler's Ochre Wristbands
+			i(218991),	-- Toiler's Khaki Wristbands
+			i(218992),	-- Taupe Quotidian Wristguards
+			i(218993),	-- Umber Quotidian Wristguards
+			i(218994),	-- Earthy Quotidian Wristguards
+			i(218995),	-- Maroon Quotidian Wristguards
+			i(218996),	-- Sandy Quotidian Wristguards
+			i(218997),	-- Midnight Educator's Wraps
+			i(218998),	-- Cobalt Educator's Wraps
+			i(218999),	-- Leafy Educator's Wraps
+			i(219000),	-- Lilac Educator's Wraps
+			i(219001),	-- Cardinal Educator's Wraps
 		})),
 	}),
 	expansion(EXPANSION.DF, {

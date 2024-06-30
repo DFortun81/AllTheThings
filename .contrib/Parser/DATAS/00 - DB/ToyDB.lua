@@ -1348,6 +1348,7 @@ i(224552);	-- Cave Spelunker's Torch
 i(225969);	-- Forged Flag of Victory
 i(225933);	-- Forged Legend's Pennant
 i(224585);	-- Hanna's Locket
+i(226810);	-- Infiltrator's Shroud
 i(224643);	-- Pet-Sized Candle
 i(227538);	-- Unbound Legend's Pennant
 i(227539);	-- Unbound Strategist's Pennant
