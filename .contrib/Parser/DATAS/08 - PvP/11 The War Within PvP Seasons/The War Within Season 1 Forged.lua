@@ -12,20 +12,27 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
 			}),
-			ach(40385),		-- Combatant I: The War Within Season 1
+			ach(40385, {		-- Combatant I: The War Within Season 1
+				-- TODO: Add title reward
+			}),
 			ach(40386),		-- Combatant II: The War Within Season 1
-			ach(40387),		-- Challenger I: The War Within Season 1
+			ach(40387, {	-- Challenger I: The War Within Season 1
+				-- TODO: Add title reward
+			}),
 			ach(40388),		-- Challenger II: The War Within Season 1
-			ach(40389),		-- Rival I: The War Within Season 1
+			ach(40389, {	-- Rival I: The War Within Season 1
+				-- TODO: Add title reward
+			}),
 			ach(40390),		-- Rival II: The War Within Season 1
 			ach(40391, {	-- Duelist: The War Within Season 1
-
+				-- TODO: Add title reward
 			}),
 			ach(40392, {	-- Elite: The War Within Season 1
-
+				-- TODO: Add title reward
 			}),
 			ach(40393, {	-- Gladiator: The War Within Season 1		(50 Wins)
 				i(223586),	-- Forged Gladiator's Fel Bat (MOUNT!)
+				-- TODO: Add title reward + customasation
 			}),
 			ach(40398),		-- Forged Gladiator's Fel Bat
 			ach(40380, {	-- Forged Gladiator: The War Within Season 1 (0.1%)
@@ -47,15 +54,17 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			ach(40234, {	-- Forged Warlord: The War Within Season 1	(0.1%)
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					title(554),	-- Forged Warlord <Nem>
+					title(554),	-- Forged Warlord <Name>
 				},
 			}),
 			ach(40233, {	-- The Strategist: The War Within Season 1	(25 Wins)
+				-- TODO: Add title reward
 				i(225933),	-- Forged Legend's Pennant (TOY!)
 			}),
 			-- Solo
 			ach(40395, {	-- Legend: The War Within Season 1			(100 Wins)
 				i(225933),	-- Forged Legend's Pennant (TOY!)
+				-- TODO: Add title reward
 			}),
 			ach(40381, {	-- Forged Legend: The War Within Season 1	(0.1%)
 				title(559),	-- Forged Legend <Name>

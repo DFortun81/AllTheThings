@@ -194,6 +194,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				40166, 	-- Isle of Dorn Glyph Hunter
 				40703, 	-- The Ringing Deeps Glyph Hunter
 			}},
+			["g"] = {
+				i(223267),	-- Swarmite Skyhunter (MOUNT!)
+			}
 		}),
 		ach(40762),		-- Khaz Algar Lore Hunter (automated)
 		petbattle(ach(40194, {	-- Khaz Algar Safari

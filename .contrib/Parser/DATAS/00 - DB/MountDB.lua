@@ -1798,7 +1798,6 @@ i(223459, 449132);	-- [PH] Nightsaber Horde Mount Black
 i(223449, 449126);	-- [PH] Nightsaber Horde Mount Red
 i(223460, 449133);	-- [PH] Nightsaber Horde Mount White
 i(223285, 448851);	-- [PH] Purple Old God Fish Mount
-i(223286, 448850);	-- [PH] Red Old God Fish Mount
 
 ------------------
 -- PATCH 11.0.0 --
@@ -1811,11 +1810,14 @@ i(226357, 458335);	-- Diamond Mechsuit
 i(0, 453785);		-- Earthen Judicator's Ramolith
 i(223274, 447957);	-- Ferocious Jawcrawler
 i(223586, 449466);	-- Forged Gladiator's Fel Bat
+i(223286, 448850);	-- Kah, Legend of the Deep
+i(223269, 448188);	-- Machine Defense Unit 1-11
 i(217985, 441324);	-- Remembered Golden Gryphon
 i(217987, 441325);	-- Remembered Wind Rider
 i(223266, 447190);	-- Shadowed Swarmite
 i(223571, 449418);	-- Shale Ramolith
 i(221753, 447057);	-- Smoldering Cinderbee
+i(223267, 447195);	-- Swarmite Skyhunter
 i(224147, 451486);	-- Sureki Skyrazor
 i(223511, 449325);	-- Vicious Skyflayer [A]
 i(221813, 447405);	-- Vicious Skyflayer [H]
@@ -1828,7 +1830,6 @@ i(223570, 449416);	-- Ebonhide Ramolith
 i(226506, 459193);	-- Hand of Reshkigaal
 i(224415, 452779);	-- Ivory Goliathus
 i(226041, 457654);	-- Keg Leg's Radiant Crocolisk
-i(223269, 448188);	-- Machine Defense Unit 1-11
 i(223501, 449258);	-- Ol' Mole Rufus
 i(226040, 457650);	-- Plunderlord's Golden Crocolisk
 i(226042, 457656);	-- Plunderlord's Midnight Crocolisk

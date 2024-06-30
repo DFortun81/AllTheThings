@@ -59,9 +59,7 @@ root(ROOTS.Unsorted, {
 				i(219391),	-- Delver's Dirigible (MOUNT!)
 				i(223570),	-- Ebonhide Ramolith (MOUNT!)
 				i(226506),	-- Hand of Reshkigaal (MOUNT!)
-				i(224415),	-- Ivory Goliathus (MOUNT!)
 				i(226041),	-- Keg Leg's Radiant Crocolisk (MOUNT!)
-				i(223269),	-- Machine Defense Unit 1-11 (MOUNT!)
 				i(223501),	-- Ol' Mole Rufus (MOUNT!)
 				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!)
 				i(226042),	-- Plunderlord's Midnight Crocolisk (MOUNT!)
@@ -1351,7 +1349,6 @@ root(ROOTS.Unsorted, {
 				i(215147),	-- Beautification Iris (TOY!)
 				i(218310),	-- Box of Puntables (TOY!)
 				i(221962),	-- Defective Escape Pod (TOY!)
-				i(224251),	-- Memory Chord (TOY!)
 				i(215145),	-- Remembrance Stone (TOY!)
 				i(224554),	-- Silver Linin' Scepter (TOY!)
 				i(219403),	-- Stonebound Lantern (TOY!)
@@ -1657,7 +1654,6 @@ root(ROOTS.Unsorted, {
 			i(219097),	-- [DNT] Ensemble: CivilianAdventurer
 			i(219098),	-- [DNT] Ensemble: CivilianAdventurer
 			i(219099),	-- [DNT] Ensemble: CivilianAdventurer
-			iensemble(219110),	-- Vermillion Patron's Elegance
 			iensemble(219115),	-- Versatile Peddler's Trinkets
 			iensemble(219120),	-- Toiler's Khaki Uniform
 			iensemble(219125),	-- Formed Artisan's Talent
@@ -2524,7 +2520,6 @@ root(ROOTS.Unsorted, {
 			i(223220),	-- Kaheti All-Purpose Cleanser
 			i(223247),	-- Ryton Blackholme's Breastplate
 			i(223265),	-- [PH] FlyingNerubian2 Mount (Tan Body, Orange Saddle)
-			i(223267),	-- [PH] FlyingNerubian2 Mount (Purple Body, Red Saddle)
 			i(223268),	-- [PH] DwarvenMechBoss (Gold)
 			i(223271),	-- [PH] Gryphon_Air_Mount (White Skin, Gold Saddle)
 			i(223272),	-- [PH] CaveBorerWormMount (Blue Skin, Purple Saddle)
@@ -3159,9 +3154,7 @@ root(ROOTS.Unsorted, {
 			i(225539),	-- [PH] Armor Epaulets
 			i(225540),	-- Rescued Aeroknight's Mantle
 			i(225541),	-- PH_4
-			i(225542),	-- Airship Schematic: Void \\ Airship: Void
 			i(225543),	-- Bloodied Idol
-			i(225547),	-- Toxic Victory
 			i(225553),	-- PH_5
 			i(225554),	-- Sunless Lure \\ Sunless Orb
 			i(225557),	-- Sizzling Cinderpollen
@@ -3384,10 +3377,6 @@ root(ROOTS.Unsorted, {
 			i(226202),	-- Echoing Flux
 			i(226204),	-- Fresh Parchment
 			i(226205),	-- Purified Water
-			i(226218),	-- Machine-Warden's Cloak
-			i(226220),	-- Machine-Warden's Tabard
-			i(226221),	-- Machine-Warden's Pauldrons
-			i(226224),	-- Luminous Nerubian Catalyst Stone
 			i(226256),	-- Token of the Remembrancers
 			i(226257),	-- Delver's Pouch of Valorstones
 			i(226258),	-- Delver's Pouch of Reagents
@@ -3556,7 +3545,6 @@ root(ROOTS.Unsorted, {
 			i(223090),	-- Design: Enchanter's Crystal
 			i(223091),	-- Design: Forger's Font Inspector
 			i(223092),	-- Design: Novelist's Specs
-			i(223267),	-- Swarmite Skyhunter
 			i(223510),	-- Delver's Dirigible Schematic: Template
 			i(223646),	-- Memory of the Eastern Kingdoms
 			i(224768),	-- Delver's Dirigible Schematic: Wing-Mounted Propeller
@@ -3571,7 +3559,6 @@ root(ROOTS.Unsorted, {
 			i(225213),	-- Sky-Captain Lancekat's Curse
 			i(225432),	-- Design: Algari Competitor's Signet
 			i(225433),	-- Design: Algari Competitor's Amulet
-			i(225542),	-- Delver's Dirigible Schematic: Void
 			i(226811),	-- Marinated Maggots
 			i(226813),	-- Golden Valorstone
 			i(226814),	-- Chest of Gold
@@ -4294,7 +4281,6 @@ root(ROOTS.Unsorted, {
 				i(223284),	-- [PH] Green Old God Fish Mount (MOUNT!)
 				i(223459),	-- [PH] Nightsaber Horde Mount Black (MOUNT!)
 				i(223460),	-- [PH] Nightsaber Horde Mount White (MOUNT!)
-				i(223286),	-- [PH] Red Old God Fish Mount (MOUNT!)
 			}),
 			n(PVP, {
 				-- This is all broken as of 10.2.7. Currently added a placeholder data to the SL PvP vendor.

@@ -47,8 +47,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}},
 			}),
 			ach(40729),		-- Light's Gambit Champion
-			ach(40360),		-- Life on the Farm (automated)
-			ach(40618),		-- Lost and Found (automated)
+			ach(40360, {	-- Life on the Farm (automated)
+				-- TODO: Add "Hillhelm Farmhand's Equipment" reward
+			}),
+			ach(40618, {	-- Lost and Found (automated)
+				iensemble(219105),	-- Sandy Quotidian Wear
+			}),
 			ach(40151),		-- Mereldar Menace
 			ach(40082),		-- Never Enough
 			ach(40685, {	-- Skyriding Glyphs: Bleak Sand

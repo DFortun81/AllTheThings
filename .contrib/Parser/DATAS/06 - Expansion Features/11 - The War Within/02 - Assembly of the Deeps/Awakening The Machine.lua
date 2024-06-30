@@ -14,10 +14,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			n(ACHIEVEMENTS, {
 				ach(40509),	-- Awakening The Machine: Wave 10
 				ach(40586),	-- Awakening The Machine: Wave 20
-				ach(40587),	-- Awakening The Machine: Wave 30
-				ach(40588),	-- Awakening The Machine: Wave 40
-				ach(40589),	-- Awakening The Machine: Wave 50
-				ach(40662),	-- It's Not Much, But It's Honest Work
+				ach(40587, {	-- Awakening The Machine: Wave 30
+					i(226220),	-- Machine-Warden's Tabard
+				}),
+				ach(40588, {	-- Awakening The Machine: Wave 40
+					i(226221),	-- Machine-Warden's Pauldrons
+				}),
+				ach(40589, {	-- Awakening The Machine: Wave 50
+					title(568),	-- <Name>, Machine-Warden
+					i(226218),	-- Machine-Warden's Cloak
+				}),
+				ach(40662, {	-- It's Not Much, But It's Honest Work
+					i(223269),	-- Machine Defense Unit 1-11 (MOUNT!)
+				}),
 			}),
 			n(VENDORS, {
 				n(225189, {	-- R-K-MEDES <Awakening The Machine>

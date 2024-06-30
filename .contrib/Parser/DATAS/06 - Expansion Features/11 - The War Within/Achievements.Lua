@@ -51,7 +51,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
             -- TODO
             --title(),	-- Echochaser <Name>
         })),
-        ach(40314), -- Fragments of Memories (automated)
+        ach(40314, {    -- Fragments of Memories (automated)
+            i(224251),	-- Memory Chord (TOY!)
+        }),
         ach(40107, {	-- Harbinger of the Carved
             -- TODO
             -- ["timeline"] = { removed_when },
@@ -66,6 +68,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
         }),
         ach(40591, {	-- Khaz Algar Diplomat
             ["sym"] = {{ "achievement_criteria" }},
+            ["g"] = {
+                iensemble(219110),	-- Vermillion Patron's Elegance
+            },
         }),
         ach(40251),	-- Many Echoes
         ach(40250),	-- The First Echo
@@ -73,9 +78,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
             crit(67375), -- Attained 1600+ Rated PVP rating
             crit(66890), -- Attained 2000+ Mythic Plus rating
             crit(67597), -- Defeated Queen Ansurek on Heroic or Mythic difficulty
+            i(226206),	-- Mark of the Spelunker Supreme
         })),
         ach(40723, {	-- Web-Wrapped in the Finest Silks (automated)
             ["timeline"] = { REMOVED_11_1_0 },
+            ["g"] = {
+                i(226224),	-- Luminous Nerubian Catalyst Stone
+            },
         }),
     }),
 })));

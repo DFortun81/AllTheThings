@@ -333,11 +333,11 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		}),
 	})),
 	race(EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH }, ["races"] = { EARTHEN_ALLIANCE } }, {
-		-- TODO: Questline
+		-- TODO: Questline + heritage armor
 		ach(40309),	-- Heritage of the Earthen
 	})),
 	race(EARTHEN_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH }, ["races"] = { EARTHEN_HORDE } }, {
-		-- TODO: Questline
+		-- TODO: Questline + heritage armor
 		ach(40309),	-- Heritage of the Earthen
 	})),
 	race(GNOME, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }, ["races"] = { GNOME } }, {

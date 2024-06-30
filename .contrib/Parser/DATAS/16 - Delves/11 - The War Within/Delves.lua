@@ -106,14 +106,23 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				--40506,	-- Leave No Treasure Unfound
 				40103,	-- Nemesis
 			}},
+			["g"] = {
+				i(224415),	-- Ivory Goliathus (MOUNT!)
+			},
 		}),
 		ach(40524),	-- Good Deed Delver
 		ach(40732),	-- Heavy-Handed
 		ach(40431, {	-- Hunting the Hunter
 			["timeline"] = { REMOVED_11_1_0 },
+			["g"] = {
+				i(225547),	-- Toxic Victory (TOY!)
+			},
 		}),
 		ach(40433, {	-- Hunting the Hunter (Solo)
 			["timeline"] = { REMOVED_11_1_0 },
+			["g"] = {
+				i(225542),	-- Delver's Dirigible Schematic: Void
+			},
 		}),
 		ach(40098),	-- Immortal Spelunker
 		ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
@@ -141,6 +150,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				40811,	-- Tak-Rethan Abyss Discoveries
 				40815,	-- The Underkeep Discoveries
 			}},
+			["g"] = {
+				title(570),	-- <Name>, Seeker of Loot
+			},
 		}),
 		ach(40523, {	-- On Brand
 			["timeline"] = { REMOVED_11_1_0 },
@@ -164,7 +176,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40519),	-- War Within Delves: Tier 8
 		ach(40520),	-- War Within Delves: Tier 9
 		ach(40521),	-- War Within Delves: Tier 10
-		ach(40726),	-- War Within Delves: Tier 11
+		ach(40726, {	-- War Within Delves: Tier 11
+			title(550),	-- High Explorer <Name>
+		}),
 		ach(40436),	-- You're Getting a Delve!
 	}),
 	n(QUESTS, {
