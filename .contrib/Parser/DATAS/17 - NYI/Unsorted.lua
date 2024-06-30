@@ -96,6 +96,7 @@ root(ROOTS.Unsorted, {
 					i(211808),	-- Gilded Vial
 				}),
 				prof(BLACKSMITHING, {
+					--- Attached SpellID Recipes!
 					i(225486),	-- Plans: Algari Competitor's Axe (RECIPE!)
 					i(225479),	-- Plans: Algari Competitor's Dagger (RECIPE!)
 					i(225488),	-- Plans: Algari Competitor's Greatsword (RECIPE!)
@@ -126,6 +127,8 @@ root(ROOTS.Unsorted, {
 					i(223043),	-- Plans: Sanctified Steps (RECIPE!)
 					i(223048),	-- Plans: Siphoning Stiletto (RECIPE!)
 
+
+					--- Probably mostly NYI...
 					i(217847),	-- Everforged Hands
 					i(217848),	-- Everforged Wrists
 					i(217849),	-- Everforged Waist
@@ -191,13 +194,10 @@ root(ROOTS.Unsorted, {
 					i(217935),	-- Artisan Leatherworker's Scalpel
 					i(217936),	-- Artisan Smithing Toolbox
 					i(217937),	-- Proficient Tailor's Needle Set
-
-
 					i(217939),	-- Proficient Skinner's Knife
 					i(217940),	-- Artisan Miner's Pickaxe
 					i(217941),	-- Artisan Skinner's Knife
 					i(217942),	-- Artisan Smithing Hammer
-
 					i(217944),	-- Artisan Herbalist's Sickle
 					i(217945),	-- Proficient Miner's Pickaxe
 					i(217946),	-- Plans: <Epic Smithing Hammer>
@@ -210,9 +210,77 @@ root(ROOTS.Unsorted, {
 					i(217953),	-- Plans: Hematic Alloy Sickle
 					i(217954),	-- Plans: Hematic Alloy Needle Set
 					i(217955),	-- Plans: Hematic Alloy Skinning Knife
-
-
-
+					---
+					i(218087),	-- <Pressurized Core Alloy>
+					i(218088),	-- <Pressurized Core Alloy>
+					i(218089),	-- <Endgame Alloy C>
+					i(218090),	-- <Endgame Alloy C>
+					i(218091),	-- <Pressurized Core Alloy>
+					i(218092),	-- <Endgame Alloy B>
+					i(218093),	-- <Vendor Reagent A>
+					i(218094),	-- <PVP Alloy>
+					i(218095),	-- <Endgame Alloy B>
+					i(218096),	-- <PVP Alloy>
+					i(218097),	-- <Endgame Alloy B>
+					i(218098),	-- <Endgame Alloy C>
+					i(218099),	-- <PVP Alloy>
+					i(218100),	-- Plans: <Optional Reagnt A>
+					i(218101),	-- Plans: <PVP Alloy>
+					i(218102),	-- Bloodstained Plans: <PVP Alloy>
+					i(218103),	-- Plans: <Endgame Alloy C>
+					---
+					i(220180),	-- Earthen Master's Arsenal
+					i(220181),	-- Earthen Master's Arsenal
+					i(220182),	-- Earthen Master's Arsenal
+					i(220195),	-- Echoing Impact Seal
+					i(220196),	-- Echoing Impact Seal
+					i(220197),	-- Echoing Impact Seal
+					---
+					i(220952),	-- Webbed Fishing Line
+					i(220953),	-- Webbed Fishing Line
+					i(220954),	-- Webbed Fishing Line
+					i(220957),	-- Echoing Tuncheon
+					i(220958),	-- Haunting Void
+					i(220959),	-- Entangling Cutlass
+					i(220961),	-- Arathor Armor Patch
+					i(220962),	-- Arathor Armor Patch
+					i(220963),	-- Arathor Armor Patch
+					---
+					i(222019),	-- Echoing Impact Seal
+					i(222020),	-- Arathor Armor Patch
+					i(222023),	-- Echoing Truncheon
+					i(222024),	-- Entangling Cutlass
+					i(222025),	-- Haunting Void
+					i(222059),	-- Earthen Master's Arsenal
+					i(222060),	-- Earthen Master's Arsenal
+					i(222061),	-- Earthen Master's Arsenal
+					i(222074),	-- Webbed Fishing Line
+					i(222075),	-- Webbed Fishing Line
+					i(222076),	-- Webbed Fishing Line
+					---
+					i(222452),	-- Echoing Impact Seal
+					i(222453),	-- Echoing Impact Seal
+					i(222454),	-- Echoing Impact Seal
+					i(222455),	-- Arathor Armor Patch
+					i(222456),	-- Arathor Armor Patch
+					i(222457),	-- Arathor Armor Patch
+					i(222460),	-- Echoing Truncheon
+					i(222461),	-- Entangling Cutlass
+					i(222462),	-- Haunting Void
+					i(222496),	-- Earthen Master's Arsenal
+					i(222497),	-- Earthen Master's Arsenal
+					i(222498),	-- Earthen Master's Arsenal
+					i(222517),	-- Core Framework \\ Earthen Master's Hammer
+					i(222518),	-- Core Framework \\ Earthen Master's Hammer
+					i(222519),	-- Core Framework \\ Earthen Master's Hammer
+					---
+					i(223018),	-- Plans: Echoing Truncheon
+					i(223019),	-- Plans: Entangling Cutlass
+					i(223020),	-- Plans: Haunting Void
+					i(223029),	-- Plans: Webbed Fishing Line
+					i(223045),	-- Plans: Burning Binding \\ Plans: Echoing Truncheon
+					i(223046),	-- Plans: Entangling Cutlass
+					i(223047),	-- Plans: Haunting Void
 				}),
 				prof(ENCHANTING, {
 					i(223113),	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
@@ -1056,25 +1124,6 @@ root(ROOTS.Unsorted, {
 			i(218080),	-- Dalaran Defender's Cloak
 			i(218081),	-- Dalaran Defender's Drape
 			i(218084),	-- Crumpled Note
-			--- BLACKSMITHING ---
-			i(218087),	-- <Pressurized Core Alloy>
-			i(218088),	-- <Pressurized Core Alloy>
-			i(218089),	-- <Endgame Alloy C>
-			i(218090),	-- <Endgame Alloy C>
-			i(218091),	-- <Pressurized Core Alloy>
-			i(218092),	-- <Endgame Alloy B>
-			i(218093),	-- <Vendor Reagent A>
-			i(218094),	-- <PVP Alloy>
-			i(218095),	-- <Endgame Alloy B>
-			i(218096),	-- <PVP Alloy>
-			i(218097),	-- <Endgame Alloy B>
-			i(218098),	-- <Endgame Alloy C>
-			i(218099),	-- <PVP Alloy>
-			i(218100),	-- Plans: <Optional Reagnt A>
-			i(218101),	-- Plans: <PVP Alloy>
-			i(218102),	-- Bloodstained Plans: <PVP Alloy>
-			i(218103),	-- Plans: <Endgame Alloy C>
-			--- BLACKSMITHING ---
 			i(218104),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 			i(218122),	-- Stolen Relic \\ Stolen Shard
 			i(218123),	-- Glowing Shard
@@ -1977,20 +2026,6 @@ root(ROOTS.Unsorted, {
 			i(220156),	-- Bubbling Wax
 			i(220157),	-- Lightbringer's Amulet \\ [PH] The Cool Arathi Necklace (Stage 2)
 			i(220158),	-- Lightbringer's Amulet \\ [PH] The Cool Arathi Necklace (Stage 3)
-			--- BLACKSMITHING ---
-
-
-			i(220180),	-- Earthen Master's Arsenal
-			i(220181),	-- Earthen Master's Arsenal
-			i(220182),	-- Earthen Master's Arsenal
-
-
-
-
-			i(220195),	-- Echoing Impact Seal
-			i(220196),	-- Echoing Impact Seal
-			i(220197),	-- Echoing Impact Seal
-			--- BLACKSMITHING ---
 			i(220202),	-- Spymaster's Web
 			i(220212),	-- Aelric's Corrupted Tinderbox
 			i(220215),	-- Unknown's Tinderbox
@@ -2108,20 +2143,6 @@ root(ROOTS.Unsorted, {
 			i(220770),	-- Void-Scarred Stormhammer
 			i(220773),	-- Celebratory Pack of Runed Harbinger Crests \\ Celebratory Pack of Runed Harbinger Crests (TODO: Fix Icon)
 			i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
-
-			--- BLACKSMITHING
-			i(220952),	-- Webbed Fishing Line
-			i(220953),	-- Webbed Fishing Line
-			i(220954),	-- Webbed Fishing Line
-
-
-			i(220957),	-- Echoing Tuncheon
-			i(220958),	-- Haunting Void
-			i(220959),	-- Entangling Cutlass
-
-			i(220961),	-- Arathor Armor Patch
-			i(220962),	-- Arathor Armor Patch
-			i(220963),	-- Arathor Armor Patch
 			i(221023),	-- Field Operative's Transmitter \\ Malfunctioning Ethereum Module \\ Malfunctioning Cartel Communicator
 			i(221033),	-- Hyperactive Stormclaw
 			i(221066),	-- Template - Accessory - Finger
@@ -2317,74 +2338,11 @@ root(ROOTS.Unsorted, {
 			i(221959),	-- Portable Profession Possibility Projector
 			i(221960),	-- Prototype: Barrel of Fireworks
 			i(221961),	-- Prototype: Defective Escape Pod
-
 			i(221963),	-- Prototype: Filmless Camera \\ Prototype: Malfunctioning Navigation Beacon
 			i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
 			i(221965),	-- Prototype: Wormhole Generator: Khaz Algar
 			i(221968),	-- Legibly Scribbled Notes
 			i(221969),	-- P.0.W. x2
-			--- BLACKSMITHING ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			i(222019),	-- Echoing Impact Seal
-			i(222020),	-- Arathor Armor Patch
-
-
-			i(222023),	-- Echoing Truncheon
-			i(222024),	-- Entangling Cutlass
-			i(222025),	-- Haunting Void
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			i(222059),	-- Earthen Master's Arsenal
-			i(222060),	-- Earthen Master's Arsenal
-			i(222061),	-- Earthen Master's Arsenal
-
-
-			i(222074),	-- Webbed Fishing Line
-			i(222075),	-- Webbed Fishing Line
-			i(222076),	-- Webbed Fishing Line
-
-
-
-
-			--- BLACKSMITHING ---
 			i(222089),	-- Bloody Perch
 			i(222090),	-- Crystalline Sturgeon
 			i(222091),	-- Bismuth Bitterling
@@ -2500,52 +2458,6 @@ root(ROOTS.Unsorted, {
 			i(222345),	-- Hearty Rockslide Shake
 			i(222346),	-- Hearty NYI NAME NEEDED
 			i(222347),	-- Hearty NYI NAME NEEDED
-			--- BLACKSMITHING ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			i(222452),	-- Echoing Impact Seal
-			i(222453),	-- Echoing Impact Seal
-			i(222454),	-- Echoing Impact Seal
-			i(222455),	-- Arathor Armor Patch
-			i(222456),	-- Arathor Armor Patch
-			i(222457),	-- Arathor Armor Patch
-
-
-			i(222460),	-- Echoing Truncheon
-			i(222461),	-- Entangling Cutlass
-			i(222462),	-- Haunting Void
-
-
-
-
-
-
-			i(222496),	-- Earthen Master's Arsenal
-			i(222497),	-- Earthen Master's Arsenal
-			i(222498),	-- Earthen Master's Arsenal
-
-
-
-			i(222517),	-- Core Framework \\ Earthen Master's Hammer
-			i(222518),	-- Core Framework \\ Earthen Master's Hammer
-			i(222519),	-- Core Framework \\ Earthen Master's Hammer
-
-
-			--- BLACKSMITHING ---
 			i(222526),	-- Bloody Perch
 			i(222527),	-- Crystalline Sturgeon
 			i(222528),	-- Bismuth Bitterling
@@ -2691,41 +2603,6 @@ root(ROOTS.Unsorted, {
 			i(223000),	-- Earthen Blunderbuss
 			i(223001),	-- Earthen Shillelagh \\ Earthen Pummel
 			i(223005),	-- String of Fungal Fruits
-			--- BLACKSMITHING
-
-
-
-
-			i(223018),	-- Plans: Echoing Truncheon
-			i(223019),	-- Plans: Entangling Cutlass
-			i(223020),	-- Plans: Haunting Void
-
-
-
-
-
-
-
-
-			i(223029),	-- Plans: Webbed Fishing Line
-
-
-
-
-
-
-
-
-
-
-
-
-			i(223045),	-- Plans: Burning Binding \\ Plans: Echoing Truncheon
-			i(223046),	-- Plans: Entangling Cutlass
-			i(223047),	-- Plans: Haunting Void
-
-
-
 			i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
 			i(223082),	-- Design: Ominous Energy Crystal \\ Design: Engineering Finishing Reagent (DNT) \\ Pattern: Artisan Gardening Hat
 			i(223083),	-- Design: Elemental Focusing Lens \\ Pattern: Artisan Fishing Cap
