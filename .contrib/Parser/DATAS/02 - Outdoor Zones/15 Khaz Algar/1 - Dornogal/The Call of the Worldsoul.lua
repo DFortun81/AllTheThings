@@ -4,8 +4,6 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(DORNOGAL, {
 		header(HEADERS.Quest, 82448, {	-- The Call of the Worldsoul
-			-- Weekly
-			-- 71243 / 72892 also likely possible weekly quests. completed with all of the other below
 			n(QUESTS, sharedData({
 				["sourceQuestNumRequired"] = 1,
 				["sourceQuests"] = {

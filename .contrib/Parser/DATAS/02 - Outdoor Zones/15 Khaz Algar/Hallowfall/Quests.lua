@@ -203,7 +203,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(217995),	-- Order of Night Propaganda (QI!)
 					i(217993),	-- Order of Night Propaganda (QI!)
 					i(217900),	-- Order of Night Propaganda (QI!)
-					-- possibly more?
 				},
 			}),
 			q(78626, {	-- Spar Day
@@ -875,23 +874,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			--
-			--Delves?
-			q(83767, {	-- DELVER'S CALL: The Sinkhole
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "o", 455704 },	-- DELVER'S CALL: The Sinkhole
-				["coord"] = { 48.7, 39.5, HALLOWFALL },
-				["g"] = {
-					--c(2815),	-- 100x Resonance Crystals
-				},
-			}),
-			q(83755, {	-- Delves: Nightfall Sanctum
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 227523 },	-- Brann Bronzebeard
-				["coord"] = { 43.5, 56.3, HALLOWFALL },
-				["g"] = {
-					--c(2815),	-- 100x Resonance Crystals
-				},
-			}),
 			--new sides
 			q(78686, {	-- Lights Out
 				--["sourceQuests"] = { x },	-- ?

@@ -113,12 +113,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		ach(40524),	-- Good Deed Delver
 		ach(40732),	-- Heavy-Handed
-		ach(40431, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {	-- Hunting the Hunter
-			i(225547),	-- Toxic Victory (TOY!)
-		})),
-		ach(40433, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {	-- Hunting the Hunter (Solo)
-			i(225542),	-- Delver's Dirigible Schematic: Void (DM!)
-		})),
+
 		ach(40098),	-- Immortal Spelunker
 		ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
 		ach(40446),	-- I TAKE Candle!
@@ -126,9 +121,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40789),	-- I've Got More Flying Machine?! (automated)
 		ach(40788),	-- I Got the Keys
 		ach(40452),	-- Just Keep Swimming
-		ach(40103, {	-- Nemesis
-			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
-		}),
 		ach(40506, {	-- Leave No Treasure Unfound
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -242,6 +234,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["sym"] = {{ "achievement_criteria" }},
 				})),
 			}),
+			n(QUESTS, {
+				q(83758, {	-- Delver's Call: Fungal Folly
+					["provider"] = { "o", 455716 },
+					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+				}),
+			}),
 			n(TREASURES, {
 				o(455516, {	-- Sturdy Chest
 					["coord"] = { 32.7, 74.2, 2249 },
@@ -278,6 +276,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["sym"] = {{ "achievement_criteria" }},
 				})),
 			}),
+			n(QUESTS, {
+				q(83759, {	-- Delver's Call: Kriegval's Rest
+					["provider"] = { "o", 455713 },
+					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+				}),
+			}),
 			n(TREASURES, {
 				o(455510, {	-- Sturdy Chest
 					["coord"] = { 46.2, 19.8, 2250 },
@@ -298,6 +302,154 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		},
 	}),
+	m(2312, {	-- Mycomancer Cavern
+		["coord"] = { 71.1, 31.1, HALLOWFALL },
+		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(40808),	-- Mycomancer Cavern Discoveries
+				ach(40531, bubbleDown({ ["_noautomation"] = true, }, {	-- Mycomancer Cavern Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
+			}),
+			n(QUESTS, {
+				q(83769, {	-- Delver's Call: Mycomancer Cavern
+					["provider"] = { "o", 455690 },	-- Delver's Call: Mycomancer Cavern
+					["coord"] = { 68.9, 44.4, HALLOWFALL },
+				}),
+			}),
+			n(RARES, {
+				-- rares - wraith and sporecap
+			}),
+			n(TREASURES, {
+				o(455497, {	-- Sturdy Chest
+					["coord"] = { 63.3, 45.3, 2312 },
+					["questID"] = 83691,
+				}),
+				o(455534, {	-- Sturdy Chest
+					["coord"] = { 50.0, 21.5, 2312 },
+					["questID"] = 83652,
+				}),
+				o(454202, {	-- Sturdy Chest
+					["coord"] = { 68.8, 40.6, 2312 },
+					["questID"] = 83455,
+				}),
+				o(455517, {	-- Sturdy Chest
+					["coord"] = { 40.2, 62.1, 2312 },
+					["questID"] = 83672,
+				}),
+			}),
+		},
+	}),
+	m(2277, {	-- Nightfall Sanctum
+		["coord"] = { 34.6, 46.8, HALLOWFALL },
+		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(40809),	-- Nightfall Sanctum Discoveries
+				ach(40530, bubbleDown({ ["_noautomation"] = true, }, {	-- Nightfall Sanctum Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
+			}),
+			n(QUESTS, {
+				q(83755, {	-- Delves: Nightfall Sanctum
+					["provider"] = { "n", 227523 },	-- Brann Bronzebeard
+					["coord"] = { 43.5, 56.3, HALLOWFALL },
+				}),
+			}),
+			n(TREASURES, {
+				o(455494, {	-- Sturdy Chest
+					["coord"] = { 51.9, 57.0, 2277 },
+					["questID"] = 83688,
+				}),
+				o(454201, {	-- Sturdy Chest
+					["coord"] = { 39.2, 74.4, 2277 },
+					["questID"] = 83454,
+				}),
+				o(455526, {	-- Sturdy Chest
+					["coord"] = { 40.0, 36.7, 2277 },
+					["questID"] = 83701,
+				}),
+			}),
+		},
+	}),
+	m(2310, {	-- Skittering Breach
+		["coord"] = { 65.5, 61.5, HALLOWFALL },
+		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(40810),	-- Skittering Breach Discoveries
+				ach(40533, bubbleDown({ ["_noautomation"] = true, }, {	-- Skittering Breach Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
+			}),
+			n(QUESTS, {
+				q(83768, {	-- Delver's Call: The Skittering Breach
+					["provider"] = { "o", 455694 },	-- Delver's Call: The Skittering Breach
+					["coord"] = { 67.8, 45.7, HALLOWFALL },
+				}),
+			}),
+			n(RARES, {
+				-- rare was - wraith
+			}),
+			n(TREASURES, {
+				o(455914, {	-- Sturdy Chest
+					["coord"] = { 48.1, 61.8, 2310 },
+					["questID"] = 83679,
+				}),
+				o(455505, {	-- Sturdy Chest
+					["coord"] = { 27.4, 26.4, 2310 },
+					["questID"] = 83660,
+				}),
+				o(455522, {	-- Sturdy Chest
+					["coord"] = { 56.1, 24.1, 2310 },
+					["questID"] = 83696,
+				}),
+				o(455486, {	-- Sturdy Chest
+					["coord"] = { 66.7, 14.5, 2310 },
+					["questID"] = 83680,
+				}),
+			}),
+		},
+	}),
+	m(2259, {	-- Tak-Rethan Abyss
+		["coord"] = { 55.5, 74.9, AZJ_KAHET },
+		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(40811),	-- Tak-Rethan Abyss Discoveries
+				ach(40535, bubbleDown({ ["_noautomation"] = true, }, {	-- Tak-Rethan Abyss Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
+			}),
+			n(QUESTS, {
+				q(83771, {	-- Delver's Call: Tak-Rethan Abyss
+					["provider"] = { "o", 455720 },	-- Delver's Call: Tak-Rethan Abyss
+					["coord"] = { 57.2, 45.3, AZJ_KAHET },
+				}),
+			}),
+			n(RARES, {
+				-- rare - wraith
+			}),
+			n(TREASURES, {
+				o(455533, {	-- Sturdy Chest
+					["coord"] = { 57.5, 18.5, 2259 },
+					["questID"] = 83651,
+				}),
+				o(455514, {	-- Sturdy Chest
+					["coord"] = { 61.3, 39.2, 2259 },
+					["questID"] = 83669,
+				}),
+				o(455492, {	-- Sturdy Chest
+					["coord"] = { 44.3, 39.9, 2259 },
+					["questID"] = 83686,
+				}),
+				o(455493, {	-- Sturdy Chest
+					["coord"] = { 55.0, 62.7, 2259 },
+					["questID"] = 83687,
+				}),
+			}),
+			filter(MISC, {
+				i(211776),	-- Damp Repair Kit (QI!)
+			})
+		},
+	}),
 	m(2302, {	-- The Dread Pit
 		["coord"] = { 74.1, 37.7, THE_RINGING_DEEPS },
 		["g"] = {
@@ -306,6 +458,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40529, bubbleDown({ ["_noautomation"] = true, }, {	-- The Dread Pit Stories
 					["sym"] = {{ "achievement_criteria" }},
 				})),
+			}),
+			n(QUESTS, {
+				q(83766, {	-- Delver's Call: Dread Pit
+					["provider"] = { "n", 227477 },	-- Brann Bronzebeard
+					["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
+				}),
 			}),
 			n(RARES, {
 				-- rare was - Treasure Wraith (n: 208728)
@@ -330,6 +488,112 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			})
 		},
 	}),
+	m(2301, {	-- The Sinkhole
+		["coord"] = { 50.6, 53.2, HALLOWFALL },
+		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(40813),	-- The Sinkhole Discoveries
+				ach(40532, bubbleDown({ ["_noautomation"] = true, }, {	-- The Sinkhole Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
+			}),
+			n(QUESTS, {
+				q(83767, {	-- Delver's Call: The Sinkhole
+					["provider"] = { "o", 455704 },	-- Delver's Call: The Sinkhole
+					["coord"] = { 48.7, 39.5, HALLOWFALL },
+				}),
+			}),
+			n(TREASURES, {
+				--o(xx, {	-- Sturdy Chest // bugged/uninteractable?
+				--	["coord"] = { 49.8, 40.0, 2301 },
+				--	["questID"] = x,
+				--}),
+				o(455513, {	-- Sturdy Chest
+					["coord"] = { 44.3, 69.9, 2301 },
+					["questID"] = 83668,
+				}),
+				o(455525, {	-- Sturdy Chest
+					["coord"] = { 62.6, 70.3, 2301 },
+					["questID"] = 83700,
+				}),
+				o(455491, {	-- Sturdy Chest
+					["coord"] = { 47.4, 75.4, 2301 },
+					["questID"] = 83685,
+				}),
+			}),
+		},
+	}),
+	m(2347, {	-- The Spiral Weave
+		["coord"] = { 46.6, 25.7, AZJ_KAHET },
+		["g"] = {
+			i(216772),	-- Whispering Explosives (QI!)
+			n(ACHIEVEMENTS, {
+				ach(40814),	-- The Spiral Weave Discoveries
+				ach(40536, bubbleDown({ ["_noautomation"] = true, }, {	-- The Spiral Weave Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
+			}),
+			n(QUESTS, {
+				q(83770, {	-- Delver's Call: Spiral Weave
+					["provider"] = { "n", 211721 },	-- Sir Jonathan Trueheart
+					["coord"] = { 59.2, 25.1, AZJ_KAHET },
+				}),
+			}),
+			n(TREASURES, {
+				o(455487, {	-- Sturdy Chest
+					["coord"] = { 46.0, 46.4, 2347 },
+					["questID"] = 83681,
+				}),
+				o(455531, {	-- Sturdy Chest
+					["coord"] = { 50.0, 46.2, 2347 },
+					["questID"] = 83649,
+				}),
+				o(455506, {	-- Sturdy Chest
+					["coord"] = { 36.3, 10.5, 2347 },
+					["questID"] = 83661,
+				}),
+				-- same objectID as other chest
+				--o(413590, {	-- Bountiful Coffer
+				--	["coord"] = { 48.2, 48.2, 2347 },
+				--	["questID"] = 83320,
+				--	["g"] = {
+				--		i(220520),	-- Radiant Echo (TODO: remove when more nice source gonna be found out)
+				--	},
+				--}),
+			}),
+		},
+	}),
+	m(2299, {	-- The Underkeep
+		["coord"] = { 58.1, 65.8, 2213 },
+		["g"] = {
+			n(ACHIEVEMENTS, {
+				ach(40815),	-- The Underkeep Discoveries
+				ach(40534, bubbleDown({ ["_noautomation"] = true, }, {	-- The Underkeep Stories
+					["sym"] = {{ "achievement_criteria" }},
+				})),
+			}),
+			n(QUESTS, {
+				q(83761, {	-- Delves: The Underkeep
+					["provider"] = { "n", 227544 },	-- Brann Bronzebeard
+					["coord"] = { 55.9, 38.1, AZJ_KAHET },
+				}),
+			}),
+			n(TREASURES, {
+				o(455509, {	-- Sturdy Chest
+					["coord"] = { 35.9, 34.6, 2299 },
+					["questID"] = 83664,
+				}),
+				--o(455488, {	-- Sturdy Chest
+				--	["coord"] = { x, y, 2299 },	-- after first room map is broken, there no mapID and coords after it
+				--	["questID"] = 83682,
+				--}),
+				---o(, {	-- Sturdy Chest
+				---	["coord"] = { x, y, 2299 },
+				---	["questID"] = 83697,
+				---}),
+			}),
+		},
+	}),
 	m(2251, {	-- The Waterworks
 		["coord"] = { 46.3, 48.5, THE_RINGING_DEEPS },
 		["g"] = {
@@ -338,6 +602,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40528, bubbleDown({ ["_noautomation"] = true, }, {	-- The Waterworks Stories
 					["sym"] = {{ "achievement_criteria" }},
 				})),
+			}),
+			n(QUESTS, {
+				q(83749, {	-- Delves: The Waterworks
+					["provider"] = { "n", 227477 },	-- Brann Bronzebeard
+					["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
+				}),
 			}),
 			n(RARES, {
 				-- rare was - murloc, wraith
@@ -369,216 +639,29 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		},
 	}),
-	m(2310, {	-- Skittering Breach
-		["coord"] = { 65.5, 61.5, HALLOWFALL },
+	m(2348, {	-- Zekvir's Lair
+		["coord"] = { 46.3, 48.5, THE_RINGING_DEEPS },
 		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(40810),	-- Skittering Breach Discoveries
-				ach(40533, bubbleDown({ ["_noautomation"] = true, }, {	-- Skittering Breach Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {
+				ach(40431, {	-- Hunting the Hunter
+					i(225547),	-- Toxic Victory (TOY!)
+				}),
+				ach(40433, {	-- Hunting the Hunter (Solo)
+					i(225542),	-- Delver's Dirigible Schematic: Void (DM!)
+				}),
+				ach(40103, {	-- Nemesis
+					i(212171),	-- Zekvir's Raptorial Spine
+				}),
+			})),
+			n(QUESTS, {
+				q(83752, {	-- Threats of Zekvir
+					["provider"] = { "n", 227492 },	-- Brann Bronzebeard
+					["coord"] = { 46.2, 48.0, THE_RINGING_DEEPS },
+				}),
 			}),
 			n(RARES, {
-				-- rare was - wraith
 			}),
 			n(TREASURES, {
-				o(455914, {	-- Sturdy Chest
-					["coord"] = { 48.1, 61.8, 2310 },
-					["questID"] = 83679,
-				}),
-				o(455505, {	-- Sturdy Chest
-					["coord"] = { 27.4, 26.4, 2310 },
-					["questID"] = 83660,
-				}),
-				o(455522, {	-- Sturdy Chest
-					["coord"] = { 56.1, 24.1, 2310 },
-					["questID"] = 83696,
-				}),
-				o(455486, {	-- Sturdy Chest
-					["coord"] = { 66.7, 14.5, 2310 },
-					["questID"] = 83680,
-				}),
-			}),
-		},
-	}),
-	m(2301, {	-- The Sinkhole
-		["coord"] = { 50.6, 53.2, HALLOWFALL },
-		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(40813),	-- The Sinkhole Discoveries
-				ach(40532, bubbleDown({ ["_noautomation"] = true, }, {	-- The Sinkhole Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
-			}),
-			n(TREASURES, {
-				--o(xx, {	-- Sturdy Chest // bugged/uninteractable?
-				--	["coord"] = { 49.8, 40.0, 2301 },
-				--	["questID"] = x,
-				--}),
-				o(455513, {	-- Sturdy Chest
-					["coord"] = { 44.3, 69.9, 2301 },
-					["questID"] = 83668,
-				}),
-				o(455525, {	-- Sturdy Chest
-					["coord"] = { 62.6, 70.3, 2301 },
-					["questID"] = 83700,
-				}),
-				o(455491, {	-- Sturdy Chest
-					["coord"] = { 47.4, 75.4, 2301 },
-					["questID"] = 83685,
-				}),
-			}),
-		},
-	}),
-	m(2277, {	-- Nightfall Sanctum
-		["coord"] = { 34.6, 46.8, HALLOWFALL },
-		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(40809),	-- Nightfall Sanctum Discoveries
-				ach(40530, bubbleDown({ ["_noautomation"] = true, }, {	-- Nightfall Sanctum Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
-			}),
-			n(TREASURES, {
-				o(455494, {	-- Sturdy Chest
-					["coord"] = { 51.9, 57.0, 2277 },
-					["questID"] = 83688,
-				}),
-				o(454201, {	-- Sturdy Chest
-					["coord"] = { 39.2, 74.4, 2277 },
-					["questID"] = 83454,
-				}),
-				o(455526, {	-- Sturdy Chest
-					["coord"] = { 40.0, 36.7, 2277 },
-					["questID"] = 83701,
-				}),
-			}),
-		},
-	}),
-	m(2312, {	-- Mycomancer Cavern
-		["coord"] = { 71.1, 31.1, HALLOWFALL },
-		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(40808),	-- Mycomancer Cavern Discoveries
-				ach(40531, bubbleDown({ ["_noautomation"] = true, }, {	-- Mycomancer Cavern Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
-			}),
-			n(RARES, {
-				-- rares - wraith and sporecap
-			}),
-			n(TREASURES, {
-				o(455497, {	-- Sturdy Chest
-					["coord"] = { 63.3, 45.3, 2312 },
-					["questID"] = 83691,
-				}),
-				o(455534, {	-- Sturdy Chest
-					["coord"] = { 50.0, 21.5, 2312 },
-					["questID"] = 83652,
-				}),
-				o(454202, {	-- Sturdy Chest
-					["coord"] = { 68.8, 40.6, 2312 },
-					["questID"] = 83455,
-				}),
-				o(455517, {	-- Sturdy Chest
-					["coord"] = { 40.2, 62.1, 2312 },
-					["questID"] = 83672,
-				}),
-			}),
-		},
-	}),
-	m(2347, {	-- The Spiral Weave
-		["coord"] = { 46.6, 25.7, AZJ_KAHET },
-		["g"] = {
-			i(216772),	-- Whispering Explosives (QI!)
-			n(ACHIEVEMENTS, {
-				ach(40814),	-- The Spiral Weave Discoveries
-				ach(40536, bubbleDown({ ["_noautomation"] = true, }, {	-- The Spiral Weave Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
-			}),
-			-- no rares
-			n(TREASURES, {
-				o(455487, {	-- Sturdy Chest
-					["coord"] = { 46.0, 46.4, 2347 },
-					["questID"] = 83681,
-				}),
-				o(455531, {	-- Sturdy Chest
-					["coord"] = { 50.0, 46.2, 2347 },
-					["questID"] = 83649,
-				}),
-				o(455506, {	-- Sturdy Chest
-					["coord"] = { 36.3, 10.5, 2347 },
-					["questID"] = 83661,
-				}),
-				-- same objectID as other chest
-				--o(413590, {	-- Bountiful Coffer
-				--	["coord"] = { 48.2, 48.2, 2347 },
-				--	["questID"] = 83320,
-				--	["g"] = {
-				--		i(220520),	-- Radiant Echo (TODO: remove when more nice source gonna be found out)
-				--	},
-				--}),
-			}),
-		},
-	}),
-	m(2259, {	-- Tak-Rethan Abyss
-		["coord"] = { 55.5, 74.9, AZJ_KAHET },
-		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(40811),	-- Tak-Rethan Abyss Discoveries
-				ach(40535, bubbleDown({ ["_noautomation"] = true, }, {	-- Tak-Rethan Abyss Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
-			}),
-			n(RARES, {
-				-- rare - wraith
-			}),
-			n(TREASURES, {
-				o(455533, {	-- Sturdy Chest
-					["coord"] = { 57.5, 18.5, 2259 },
-					["questID"] = 83651,
-				}),
-				o(455514, {	-- Sturdy Chest
-					["coord"] = { 61.3, 39.2, 2259 },
-					["questID"] = 83669,
-				}),
-				o(455492, {	-- Sturdy Chest
-					["coord"] = { 44.3, 39.9, 2259 },
-					["questID"] = 83686,
-				}),
-				o(455493, {	-- Sturdy Chest
-					["coord"] = { 55.0, 62.7, 2259 },
-					["questID"] = 83687,
-				}),
-			}),
-			filter(MISC, {
-				i(211776),	-- Damp Repair Kit (QI!)
-			})
-		},
-	}),
-	m(2299, {	-- The Underkeep
-		["coord"] = { 58.1, 65.8, 2213 },
-		["g"] = {
-			n(ACHIEVEMENTS, {
-				ach(40815),	-- The Underkeep Discoveries
-				ach(40534, bubbleDown({ ["_noautomation"] = true, }, {	-- The Underkeep Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
-			}),
-			n(TREASURES, {
-				o(455509, {	-- Sturdy Chest
-					["coord"] = { 35.9, 34.6, 2299 },
-					["questID"] = 83664,
-				}),
-				--o(455488, {	-- Sturdy Chest
-				--	["coord"] = { x, y, 2299 },	-- after first room map is broken, there no mapID and coords after it
-				--	["questID"] = 83682,
-				--}),
-				---o(, {	-- Sturdy Chest
-				---	["coord"] = { x, y, 2299 },
-				---	["questID"] = 83697,
-				---}),
 			}),
 		},
 	}),

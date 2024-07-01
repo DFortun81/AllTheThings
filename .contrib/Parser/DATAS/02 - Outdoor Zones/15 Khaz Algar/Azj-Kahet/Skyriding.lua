@@ -227,9 +227,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80282, {	-- Siegehold Scuttle
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 42.0, 37.5, AZJ_KAHET },
+					["provider"] = { "n", 219570 },	-- Bronze Timekeeper
+					["coord"] = { 42.0, 32.2, AZJ_KAHET },
 					["g"] = {
 						ach(20466),	-- Siegehold Scuttle: Bronze
 						ach(20467),	-- Siegehold Scuttle: Silver
@@ -237,9 +236,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80288, {	-- Siegehold Scuttle - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 42.0, 37.5, AZJ_KAHET },
+					["provider"] = { "n", 219570 },	-- Bronze Timekeeper
+					["coord"] = { 42.0, 32.2, AZJ_KAHET },
 					["g"] = {
 						ach(20469),	-- Siegehold Scuttle Advanced: Bronze
 						ach(20470),	-- Siegehold Scuttle Advanced: Silver
@@ -247,9 +245,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80294, {	-- Siegehold Scuttle - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 42.0, 37.5, AZJ_KAHET },
+					["provider"] = { "n", 219570 },	-- Bronze Timekeeper
+					["coord"] = { 42.0, 32.2, AZJ_KAHET },
 					["g"] = {
 						ach(20472),	-- Siegehold Scuttle Reverse: Bronze
 						ach(20473),	-- Siegehold Scuttle Reverse: Silver
@@ -257,9 +254,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80279, {	-- The Weaver's Wing
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 53.7, 41.2, AZJ_KAHET },
+					["provider"] = { "n", 219567 },	-- Bronze Timekeeper
+					["coord"] = { 53.0, 36.2, AZJ_KAHET },
 					["g"] = {
 						ach(20439),	-- The Weaver's Wing: Bronze
 						ach(20440),	-- The Weaver's Wing: Silver
@@ -267,9 +263,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80285, {	-- The Weaver's Wing - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 53.7, 41.2, AZJ_KAHET },
+					["provider"] = { "n", 219567 },	-- Bronze Timekeeper
+					["coord"] = { 53.0, 36.2, AZJ_KAHET },
 					["g"] = {
 						ach(20442),	-- The Weaver's Wing Advanced: Bronze
 						ach(20443),	-- The Weaver's Wing Advanced: Silver
@@ -277,9 +272,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80291, {	-- The Weaver's Wing - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 53.7, 41.2, AZJ_KAHET },
+					["provider"] = { "n", 219567 },	-- Bronze Timekeeper
+					["coord"] = { 53.0, 36.2, AZJ_KAHET },
 					["g"] = {
 						ach(20445),	-- The Weaver's Wing Reverse: Bronze
 						ach(20446),	-- The Weaver's Wing Reverse: Silver

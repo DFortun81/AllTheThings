@@ -4,17 +4,6 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(AZJ_KAHET, {
 		n(VENDORS, {
-			n(220864, {	-- Y'tekhl <Severed Threads Quatermaster> // probably gonna need to move him later into faction vendor
-				["coord"] = { 57.7, 47.0, AZJ_KAHET },
-				["g"] = {
-					i(222972, {	-- Jump Jump (PET!)	/ Renown 16
-						["cost"] = {{"c", KEJ, 2250}},
-					}),
-					i(223274, {	-- Ferocious Jawcrawler (MOUNT!)	/ Renown 23
-						["cost"] = {{"c", KEJ, 2815 }},
-					}),
-				},
-			}),
 			n(226214, {	-- Ka'muko <Kej Currency Exchanger> // probably gonna need to move him later into faction vendor
 				["coord"] = { 57.1, 47.4, AZJ_KAHET },
 				["g"] = {

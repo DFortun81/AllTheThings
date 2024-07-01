@@ -1100,11 +1100,46 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		}),
 		n(TREASURES, {
+			o(456021, {	-- Chemist's Purified Water
+				["coord"] = { 42.7, 55.1, HALLOWFALL },
+				["questID"] = 83844,
+				["g"] = {
+					i(226269),	-- Chemist's Purified Water
+				},
+			}),
+			o(456018, {	-- Dark Apothecary's Vial
+				["coord"] = { 42.9, 57.3, AZJ_KAHET },
+				["questID"] = 83847,
+				["g"] = {
+					i(226272),	-- Dark Apothecary's Vial
+				},
+			}),
 			o(456025, {	-- Earthen Iron Powder
 				["coord"] = { 47.3, 70.4, DORNOGAL },
 				["questID"] = 83840,
 				["g"] = {
 					i(226265),	-- Earthen Iron Powder
+				},
+			}),
+			o(456019, {	-- Nerubian Mixing Salts
+				["coord"] = { 45.4, 13.2, AZJ_KAHET },
+				["questID"] = 83846,
+				["g"] = {
+					i(226271),	-- Nerubian Mixing Salts
+				},
+			}),
+			o(456023, {	-- Reinforced Beaker
+				["coord"] = { 42.2, 24.1, THE_RINGING_DEEPS },
+				["questID"] = 83842,
+				["g"] = {
+					i(226267),	-- Reinforced Beaker
+				},
+			}),
+			o(456020, {	-- Sanctified Mortar and Pestle
+				["coord"] = { 41.7, 55.8, HALLOWFALL },
+				["questID"] = 83845,
+				["g"] = {
+					i(226270),	-- Sanctified Mortar and Pestle
 				},
 			}),
 		}),

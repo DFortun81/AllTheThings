@@ -826,19 +826,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 227158 },	-- Hannan
 				["coord"] = { 62.5, 80.5, 2256 },
 			}),
-			-- Delves
-			q(83771, {	-- DELVER'S CALL: Tak-Rethan Abyss
-				["provider"] = { "o", 455720 },	-- DELVER'S CALL: Tak-Rethan Abyss
-				["coord"] = { 57.2, 45.3, AZJ_KAHET },
-			}),
-			q(83770, {	-- DELVER'S CALL: Spiral Weave
-				["provider"] = { "n", 211721 },	-- Sir Jonathan Trueheart
-				["coord"] = { 59.2, 25.1, AZJ_KAHET },
-			}),
-			q(83761, {	-- Delves: The Underkeep
-				["provider"] = { "n", 227544 },	-- Brann Bronzebeard
-				["coord"] = { 55.9, 38.1, AZJ_KAHET },
-			}),
 			--Zone Drop quest?
 			q(80378, {	-- A Light of the Dark
 				["provider"] = { "i", 217390 },	-- Coagulated Black Blood Clot

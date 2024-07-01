@@ -4117,6 +4117,7 @@ i(222974, 4543);	-- Sir Shady Mrgglton Junior
 i(221494, 4495);	-- Skippy
 i(221811, 4524);	-- Starkstripe Hopper
 i(224260, 4591);	-- Thundo
+i(221848, 4463);	-- Tiberius
 i(221849, 4465);	-- Vanilla
 i(221761, 4511);	-- Venomwing
 i(224760, 4597);	-- Wobbles
@@ -4158,7 +4159,6 @@ i(222980, 4542);	-- Slim
 i(223624, 4575);	-- Sneef
 i(222966, 4473);	-- Spinner
 i(220782, 4462);	-- Thunder
-i(221848, 4463);	-- Tiberius
 i(225337, 4506);	-- Violet Sporbit
 i(221495, 4497);	-- Waddles
 i(221821, 4517);	-- Waxwick

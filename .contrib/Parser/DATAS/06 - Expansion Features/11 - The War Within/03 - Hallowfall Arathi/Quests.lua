@@ -8,12 +8,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 2 --
 			}, {	-- RENOWN 3 --
 			}, {	-- RENOWN 4 --
+				q(82335, {	-- Crystals
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+				}),
 			}, {	-- RENOWN 5 --
 			}, {	-- RENOWN 6 --
 			}, {	-- RENOWN 7 --
 			}, {	-- RENOWN 8 --
 			}, {	-- RENOWN 9 --
 			}, {	-- RENOWN 10 --
+				i(218352),	-- Expeditionary Tabard
 			}, {	-- RENOWN 11 --
 			}, {	-- RENOWN 12 --
 			}, {	-- RENOWN 13 --
@@ -27,6 +32,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 21 --
 			}, {	-- RENOWN 22 --
 			}, {	-- RENOWN 23 --
+				i(224553),	-- Beledar's Attunement (CI!)
 			}, {	-- RENOWN 24 --
 			}, {	-- RENOWN 25 --
 			},

@@ -33,7 +33,6 @@ root(ROOTS.Unsorted, {
 				i(223624),	-- Sneef (PET!)
 				i(222966),	-- Spinner (PET!)
 				i(220782),	-- Thunder (PET!)
-				i(221848),	-- Tiberius (PET!)
 				i(225337),	-- Violet Sporbit (PET!)
 				i(221495),	-- Waddles (PET!)
 				i(221821),	-- Waxwick (PET!)
@@ -64,12 +63,10 @@ root(ROOTS.Unsorted, {
 				i(226042),	-- Plunderlord's Midnight Crocolisk (MOUNT!)
 				i(226044),	-- Plunderlord's Weathered Crocolisk (MOUNT!)
 				i(223158),	-- Raging Cinderbee (MOUNT!)
-				i(223314),	-- Shackled Shadow (MOUNT!)
 				i(224150),	-- Siesbarg (MOUNT!)
 				i(223572),	-- Slatestone Ramolith (MOUNT!)
 				i(223153),	-- Soaring Meaderbee (MOUNT!)
 				i(221765),	-- Stonevault Mechsuit (MOUNT!)
-				i(223317),	-- Vermillion Imperial Lynx (MOUNT!)
 				i(225548),	-- Wick's Lead (MOUNT!)
 				---
 				i(220786),	-- Delver's Dirigible (MOUNT!) (Double Up!?)
@@ -117,7 +114,6 @@ root(ROOTS.Unsorted, {
 				i(224413),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
 				i(224414),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green)
 				i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
-				i(224553),	-- Beledar's Attunement
 			}),
 			n(PROFESSIONS, {
 				i(211296),	-- Spark of Omens
@@ -585,7 +581,6 @@ root(ROOTS.Unsorted, {
 				i(224730),	-- [PH] Derby Dashers
 				i(224764),	-- Mosswool Thread
 				prof(ALCHEMY, {
-					i(223080),	-- Recipe: Algari Alchemist Stone (RECIPE!)
 					i(211807),	-- Gilded Vial
 					i(211808),	-- Gilded Vial
 				}),
@@ -778,7 +773,7 @@ root(ROOTS.Unsorted, {
 				}),
 				prof(ENCHANTING, {
 					i(223113),	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
-					i(223114),	-- Formula: Enchant Boots - Scout's March (RECIPE!)
+
 					i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
 					i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
 					i(223139),	-- Formula: Enchant Cloak - Chant of Leeching Fangs (RECIPE!)
@@ -787,7 +782,6 @@ root(ROOTS.Unsorted, {
 					i(223133),	-- Formula: Illusory Adornment: Crystal (RECIPE!)
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 					i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
-					i(223125),	-- Formula: Oil of Deep Toxins (RECIPE!)
 				}),
 				prof(ENGINEERING, {
 					i(217151),	-- Algari Competitor's Cloth Goggles \\ Vicious Competitor's Cloth Goggles
@@ -918,7 +912,7 @@ root(ROOTS.Unsorted, {
 					i(217105),	-- Refine Khaz Algar Herbs
 				}),
 				prof(INSCRIPTION, {
-					i(223064),	-- Technique: Contract: Hallowfall Arathi (RECIPE!)
+
 					i(225355),	-- Technique: Contract: The Severed Threads (RECIPE!)
 					i(223060),	-- Technique: Patient Alchemist's Mixing Rod (RECIPE!) [Fungarian Delve Drop?]
 					i(222545),	-- Khaz Algar Milling
@@ -1225,15 +1219,14 @@ root(ROOTS.Unsorted, {
 				i(212168),	-- Cinderbee Wax Candle Hat \\ Cultlight Kobold Helm [PH]
 				i(212169),	-- Mint-Scented Candle Hat \\ Candelabra Kobold Helm [PH]
 				i(212170),	-- Bronzebeard's Spare Hat \\ Bronzebeard Hat [PH]
-				i(212171),	-- Zekvir's Raptorial Spine \\ Xev'zikk's Spine
 				i(212173),	-- Rulk'Nerub Raptorial Spine \\ Rulk'Nerub Backpiece [PH]
 
 				i(218347),	-- Thread-Bearer's Pauldrons \\ [DNT] Nerubian Renown Shoulders
 				i(218348),	-- Thread-Bearer's Cloak \\ [DNT] Nerubian Renown Cloak
 				i(218349),	-- Tabard of The Severed Threads \\ [DNT] Nerubian Renown Tabard
-				i(218350),	-- Expeditionary Spaulders \\ [DNT] Arathi Renown Shoulders
-				i(218351),	-- Expeditionary Cape \\ [DNT] Arathi Renown Cloak
-				i(218352),	-- Expeditionary Tabard \\ [DNT] Arathi Renown Tabard
+
+
+
 				i(218911),	-- [DNT] EarthenCivilian Robe Copper
 				i(218912),	-- [DNT] EarthenCivilian Robe Dark
 				i(218913),	-- [DNT] EarthenCivilian Robe Gold
@@ -2696,9 +2689,6 @@ root(ROOTS.Unsorted, {
 				i(219217),	-- Gold-Thread Choker
 				i(219221),	-- Ceremonial Song Ring
 			}),
-			filter(HEIRLOOMS_F, {
-
-			}),
 			race(EARTHEN_ALLIANCE, {
 				-- My Guess?? Earthen Starting Gear?
 				i(219393),	-- Earthen Shoulders
@@ -2939,14 +2929,6 @@ root(ROOTS.Unsorted, {
 				i(224467),	-- Forgotten Axe
 			}),
 			n(REWARDS, {
-				i(223296),	-- Battleplate of Dimming Fluorescence
-				i(223297),	-- Vest of Fading Luminescence
-				i(223298),	-- Chainmail of Depleting Brilliance
-				i(223299),	-- Tunic of Irradiating Imprisonment
-				i(223308),	-- Bracers of Depleting Brilliance
-				i(223309),	-- Bindings of Irradiating Imprisonment
-				i(223310),	-- Wristwraps of Fading Luminescence
-				i(223311),	-- Armguards of Dimming Fluorescence
 				i(223424),	-- [PH] 11.0 - Cord
 				i(223427),	-- Lightning-Scarred Cowl
 				i(223428),	-- Stormrider's Cuffs
@@ -3029,10 +3011,7 @@ root(ROOTS.Unsorted, {
 				i(224635),	-- Expeditionary Bulwark \\ [PH] Algari Shield
 				i(224636),	-- Deep-Dweller's Dirk \\ [PH] Algari Dagger
 				i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
-				i(224655),	-- Void-Lit Jewelcrafting Notes \\ [DNT] Renown Jewelcrafting Knowledge
-				i(224656),	-- Void-Lit Herbalism Notes \\ [DNT] Renown Herbalism Knowledge
-				i(224657),	-- Void-Lit Skinning Notes \\ [DNT] Renown Skinning Knowledge
-				i(224658),	-- Void-Lit Leatherworking Notes \\ [DNT] Renown Leatherworking Knowledge \\ [DNT] Renown Leatherworking Knowldge
+
 				-- Snuffling
 				i(224642),	-- Firelight Ruby
 				i(224650),	-- Wax Sealed Pouch
@@ -3285,12 +3264,7 @@ root(ROOTS.Unsorted, {
 			i(226260),	-- Delver's Pouch of Gold
 			i(226263),	-- Theater Troupe's Trove
 			i(226266),	-- Metal Dornogal Frame
-			i(226267),	-- Reinforced Beaker
 			i(226268),	-- Engraved Stirring Rod
-			i(226269),	-- Chemist's Purified Water
-			i(226270),	-- Sanctified Mortar and Pestle
-			i(226271),	-- Nerubian Mixing Salts
-			i(226272),	-- Dark Apothecary's Vial
 			i(226276),	-- Ancient Earthen Anvil
 			i(226277),	-- Dornogal Hammer
 			i(226278),	-- Ringing Hammer Vise
@@ -3300,12 +3274,7 @@ root(ROOTS.Unsorted, {
 			i(226282),	-- Nerubian Smith's Kit
 			i(226283),	-- Spiderling's Wire Brush
 			i(226284),	-- Grinded Earthen Gem
-			i(226285),	-- Silver Dornogal Rod
-			i(226286),	-- Soot-Coated Orb
-			i(226288),	-- Essence of Holy Fire
 			i(226289),	-- Enchanted Arathi Scroll
-			i(226290),	-- Book of Dark Magic
-			i(226291),	-- Void Shard
 			i(226292),	-- Rock Engineer's Wrench
 			i(226293),	-- Dornogal Spectacles
 			i(226294),	-- Inert Mining Bomb
@@ -3651,10 +3620,6 @@ root(ROOTS.Unsorted, {
 			i(226313),	-- Calligrapher's Chiseled Marker
 			i(226339),	-- Nerubian Mining Supplies
 			i(226430),	-- Navigations of The Soul
-			i(227675),	-- Satchel of Surplus Herbs
-			i(227676),	-- Satchel of Surplus Ore
-			i(227681),	-- Satchel of Surplus Leather
-			i(227682),	-- Satchel of Surplus Cloth
 			i(227771),	-- Blinker Fluid
 			i(227772),	-- Cataclysmic Converter
 			i(227773),	-- Pummel-Proof Plating
@@ -3675,7 +3640,6 @@ root(ROOTS.Unsorted, {
 			i(228236),	-- Dawnweave
 			i(228320),	-- Design: Binding of Binding
 			i(228329),	-- Design: Remembrance Stone
-			i(228337),	-- Satchel of Surplus Dust
 			i(228338),	-- Soul Sigil I
 			i(228339),	-- Soul Sigil II
 			i(228361),	-- Seasoned Adventurer's Cache
@@ -3724,16 +3688,13 @@ root(ROOTS.Unsorted, {
 			i(228416),	-- Steelvein's Manifesto
 			i(228417),	-- Emergency Healthstone
 			i(228418),	-- Noncandescent Smithing Choker
-			i(228419),	-- Mineral-Sparkled Cape
-			i(228420),	-- Unsevered Thread
+
+
 			i(228421),	-- Recipe: Melted Candlebar
 			i(228422),	-- Recipe: Ghoulfish Delight
 			i(228423),	-- Recipe: Pep-In-Your-Step
 			i(228424),	-- Recipe: Cinder Nectar
-			i(228425),	-- Grips of Fading Luminescence
-			i(228426),	-- Gloves of Irradiating Imprisonment
-			i(228427),	-- Wraps of Depleting Brilliance
-			i(228428),	-- Gauntlets of Dimming Fluorescence
+
 			i(228429),	-- Reflective Rock
 			i(228430),	-- Mucky Rock
 			i(228431),	-- Rock Buddy

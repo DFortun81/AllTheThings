@@ -412,11 +412,37 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["provider"] = { "n", 219126 },	-- Merrix
 					["coord"] = { 62.2, 39.6, DORNOGAL },
 				}),
-				q(79526),	-- Sedition
-				q(79527),	-- Damage Mitigation
-				q(79528),	-- Dispelling Rumors
-				q(79529),	-- Forcing My Hand
-				q(79530),	-- Bad Business
+				q(79526, {	-- Sedition
+					["sourceQuests"] = {
+						79546,	-- The Machine Speakeasy
+						78630,	-- The Reckoning
+					},
+					["provider"] = { "o", 429303 },	-- Angrily-Scrawled Poster
+					["coord"] = { 45.7, 55.5, DORNOGAL },
+				}),
+				q(79527, {	-- Damage Mitigation
+					["sourceQuests"] = { 79526 },	-- Sedition
+					["provider"] = { "n", 219400 },	-- Merrix
+					["coord"] = { 56.7, 8.7, DORNOGAL },
+				}),
+				q(79528, {	-- Dispelling Rumors
+					["sourceQuests"] = { 79526 },	-- Sedition
+					["provider"] = { "n", 219400 },	-- Merrix
+					["coord"] = { 56.7, 8.7, DORNOGAL },
+				}),
+				q(79529, {	-- Forcing My Hand
+					["sourceQuests"] = {
+						79527,	-- Damage Mitigation
+						79528,	-- Dispelling Rumors
+					},
+					["provider"] = { "n", 219400 },	-- Merrix
+					["coord"] = { 56.7, 8.7, DORNOGAL },
+				}),
+				q(79530, {	-- Bad Business
+					["sourceQuests"] = { 79529 },	-- Forcing My Hand
+					["provider"] = { "n", 219475 },	-- Steelvein
+					["coord"] = { 56.7, 8.7, DORNOGAL },
+				}),
 			}),
 			header(HEADERS.AchCriteria, 20595.03, {	-- Seven Soldiers
 				q(78996, {	-- Weapons and Warriors
@@ -990,14 +1016,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(216888),	-- Log Entry 652-12-3 (QI!)
 					i(216889),	-- Log Entry 893-03-9 (QI!)
 				},
-			}),
-			q(83758, {	-- DELVER'S CALL: Fungal Folly
-				["provider"] = { "o", 455716 },
-				["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
-			}),
-			q(83759, {	-- DELVER'S CALL: Kriegval's Rest
-				["provider"] = { "o", 455713 },
-				["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
 			}),
 			q(84220, {	-- Passage to the Ringing Deeps
 				["sourceQuests"] = { 78546 },	-- Recompense

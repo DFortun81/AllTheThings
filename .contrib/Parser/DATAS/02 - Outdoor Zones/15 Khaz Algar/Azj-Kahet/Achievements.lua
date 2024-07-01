@@ -110,8 +110,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 70.4, 19.4, AZJ_KAHET },
 			}),
 			ach(40701, {	-- Skyriding Glyphs: Untamed Valley
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 65.4, 51.7, AZJ_KAHET },
 			}),
 			-- TODO: Remove _noautomation when possible
 			ach(40542, bubbleDown({ ["_noautomation"] = true, }, {	-- Smelling History
@@ -231,7 +230,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- 	}),
 			-- }),
 			ach(40833),		-- The General's Salute
-			ach(40633),		-- The Unseeming
+			ach(40633, {	-- The Unseeming
+				["description"] = "Stand in the pool.",
+				["coord"] = { 67.2, 28.4, AZJ_KAHET },
+			}),
 			pvp(ach(40086)),	-- Tour of Duty: Azj-Kahet
 			ach(40828),		-- Treasures of Azj-Kahet (automated)
 			ach(40835),		-- Vizier than Ever

@@ -17,6 +17,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				ach(40311),		-- Sharing the Light (automated)
 				ach(40312),		-- Starting the Flames
 			}),
+			i(206350),	-- Radiant Remnant
 		}),
 	}),
 })));

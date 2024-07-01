@@ -38,6 +38,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(224103),	-- Uncertain Kobyss Innards (QI!)
 					},
 				}),
+				q(82468, {	-- Let Them Win
+					["coord"] = { 30.4, 44.1, AZJ_KAHET },
+				}),
 				q(81825, {	-- Skyrider Racing - Maddening Deep Dip
 					-- normal - 80278 / advanced - 80284 / reverse - 80290
 					["coord"] = { 76.6, 81.0, AZJ_KAHET },

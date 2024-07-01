@@ -39,7 +39,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			n(219051, {	-- Lyrendal <Artisan's Consortium Quartermaster>
-				--["coord"] = { 52.1, 42.2, DORNOGAL },
+				["coord"] = { 61.3, 65.8, DORNOGAL },
 				["g"] = {
 					i(223129, {	-- Formula: Enchant Tool - Algari Deftness (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
@@ -200,6 +200,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					}),
 					i(227432, {	-- Pristine Tailor's Diagrams (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+					}),
+					-- Surplus Bags
+					i(227682, {	-- Satchel of Surplus Cloth
+						["cost"] = {{"i", ARTISANS_ACUITY, 600}},
+					}),
+					i(228337, {	-- Satchel of Surplus Dust
+						["cost"] = {{"i", ARTISANS_ACUITY, 600}},
+					}),
+					i(227675, {	-- Satchel of Surplus Herbs
+						["cost"] = {{"i", ARTISANS_ACUITY, 600}},
+					}),
+					i(227681, {	-- Satchel of Surplus Leather
+						["cost"] = {{"i", ARTISANS_ACUITY, 600}},
+					}),
+					i(227676, {	-- Satchel of Surplus Ore
+						["cost"] = {{"i", ARTISANS_ACUITY, 600}},
 					}),
 				},
 			}),

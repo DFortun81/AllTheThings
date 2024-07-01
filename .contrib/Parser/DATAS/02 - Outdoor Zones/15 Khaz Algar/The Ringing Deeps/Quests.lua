@@ -922,30 +922,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--c(2902),	-- The Assembly of the Deeps Commendation, one-time Warband bonus
 				},
 			}),
-
-			-- Delves
-			q(83766, {	-- DELVER'S CALL: Dread Pit
-				["provider"] = { "n", 227477 },	-- Brann Bronzebeard
-				["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
-				["g"] = {
-					--c(2815),	-- x100 Resonance Crystals
-				},
-			}),
-			q(83749, {	-- Delves: The Waterworks
-				["provider"] = { "n", 227477 },	-- Brann Bronzebeard
-				["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
-				["g"] = {
-					--c(2815),	-- x100 Resonance Crystals
-				},
-			}),
-			q(83752, {	-- Threats of Zekvir
-				["sourceQuests"] = { 83749 },	-- Delves: The Waterworks
-				["provider"] = { "n", 227492 },	-- Brann Bronzebeard
-				["coord"] = { 46.2, 48.0, THE_RINGING_DEEPS },
-				["g"] = {
-					--c(2815),	-- x100 Resonance Crystals
-				},
-			}),
 			-- Area where Janky quest leads (New Home, New Candle)
 			q(82952, {	-- An Opportunity to Relax
 				--["sourceQuests"] = { x },	-- ?

@@ -488,6 +488,7 @@ iq(216902, 80089);					-- Yellow Duck Disguise
 ------------------
 -- PATCH 11.0.0 --
 ------------------
+iq(224553,82998);					-- Beledar's Attunement
 iq(227420, 81147);					-- Exceptional Alchemist's Research
 iq(227418, 84227);					-- Exceptional Blacksmith's Diagrams
 iq(227422, 81077);					-- Exceptional Enchanter's Research
@@ -528,3 +529,7 @@ iq(227438, 81392);					-- Pristine Miner's Notes
 iq(227430, 80751);					-- Pristine Scribe's Runic Drawings
 iq(227439, 84234);					-- Pristine Skinner's Notes
 iq(227432, 80873);					-- Pristine Tailor's Diagrams
+iq(224656, 83066);					-- Void-Lit Herbalism Notes
+iq(224655, 83065);					-- Void-Lit Jewelcrafting Notes
+iq(224658, 83068);					-- Void-Lit Leatherworking Notes
+iq(224657, 83067);					-- Void-Lit Skinning Notes

@@ -1814,11 +1814,13 @@ i(223286, 448850);	-- Kah, Legend of the Deep
 i(223269, 448188);	-- Machine Defense Unit 1-11
 i(217985, 441324);	-- Remembered Golden Gryphon
 i(217987, 441325);	-- Remembered Wind Rider
+i(223314, 448939);	-- Shackled Shadow
 i(223266, 447190);	-- Shadowed Swarmite
 i(223571, 449418);	-- Shale Ramolith
 i(221753, 447057);	-- Smoldering Cinderbee
 i(223267, 447195);	-- Swarmite Skyhunter
 i(224147, 451486);	-- Sureki Skyrazor
+i(223317, 448978);	-- Vermillion Imperial Lynx
 i(223511, 449325);	-- Vicious Skyflayer [A]
 i(221813, 447405);	-- Vicious Skyflayer [H]
 --- UNSORTED ---
@@ -1835,10 +1837,8 @@ i(226040, 457650);	-- Plunderlord's Golden Crocolisk
 i(226042, 457656);	-- Plunderlord's Midnight Crocolisk
 i(226044, 457659);	-- Plunderlord's Weathered Crocolisk
 i(223158, 447160);	-- Raging Cinderbee
-i(223314, 448939);	-- Shackled Shadow
 i(224150, 451489);	-- Siesbarg
 i(223572, 449415);	-- Slatestone Ramolith
 i(223153, 447151);	-- Soaring Meaderbee
 i(221765, 442358);	-- Stonevault Mechsuit
-i(223317, 448978);	-- Vermillion Imperial Lynx
 i(225548, 449264);	-- Wick's Lead

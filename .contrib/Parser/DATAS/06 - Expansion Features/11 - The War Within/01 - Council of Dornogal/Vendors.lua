@@ -9,6 +9,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["g"] = bubbleDownRep(FACTION_COUNCIL_OF_DORNOGAL, {
 					{		-- RENOWN 1 --
 					}, {	-- RENOWN 2 --
+						i(228419, {	-- Mineral-Sparkled Cape
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 250}},
+						}),
 						i(218345, {	-- Honorary Councilmember's Cloak
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
 						}),

@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(HALLOWFALL, {
 		n(FLIGHT_PATHS, {
-			fp(2944, {	-- Dunelle's Kindness, Hallowfall
+			fp(2922, {	-- Dunelle's Kindness, Hallowfall
 				["coord"] = { 67.5, 44.6, HALLOWFALL },
 				["cr"] = 217639,	-- Auro Flitter
 			}),

@@ -254,7 +254,7 @@ InstanceHelper.UpgradeMapping = {
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1273, {	-- Nerub'ar Palace
 		["isRaid"] = true,
-		--["coord"] = { X, Y, AZJ_KAHET },
+		["coord"] = { 35.6, 71.6, AZJ_KAHET },
 		["maps"] = {
 			2291,	-- The Pulsing Pit
 			2292,	-- Grand Rampart

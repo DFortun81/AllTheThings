@@ -82,8 +82,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
 			ach(40681, {	-- Skyriding Glyphs: The Fangs
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 62.9, 51.8, HALLOWFALL },
 			}),
 			ach(40690, {	-- Skyriding Glyphs: Tenir's Ascent
 				["coord"] = { 57.6, 64.6, HALLOWFALL },
