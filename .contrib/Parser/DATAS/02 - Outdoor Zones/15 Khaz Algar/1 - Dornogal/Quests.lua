@@ -442,45 +442,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(225741),	-- Titan Disk Fragment (QI!)
 				},
 			}),
-			--This one is wrapper for other quests? Probably also will be fired after turn in 'actual' quests
-			--q(xx, {	-- The Call of the Worldsoul
-			--	["isWeekly"] = true,
-			--	["provider"] = { "n", 223875 },	-- Faerin Lothar
-			--	["coord"] = { 46.1, 49.6, DORNOGAL },
-			--}),
-			--actual quests from npc, could be more than this quests per week? new ATA like?
-			q(82452, {	-- Worldsoul: World Quests
-				["isWeekly"] = true,
-				["provider"] = { "n", 223875 },	-- Faerin Lothar
-				["coord"] = { 46.1, 49.6, DORNOGAL },
-				["g"] = {
-					currency(3029),	-- Treasure Trove Key (x2)
-				},
-			}),
-			q(82483, {	-- Worldsoul: Spreading the Light
-				["isWeekly"] = true,
-				["provider"] = { "n", 223875 },	-- Faerin Lothar
-				["coord"] = { 46.1, 49.6, DORNOGAL },
-				["g"] = {
-					currency(3029),	-- Treasure Trove Key (x2)
-				},
-			}),
-			q(82488, {	-- Worldsoul: Darkflame Cleft
-				["isWeekly"] = true,
-				["provider"] = { "n", 223875 },	-- Faerin Lothar
-				["coord"] = { 46.1, 49.6, DORNOGAL },
-				["g"] = {
-					currency(3029),	-- Treasure Trove Key (x2)
-				},
-			}),
-			q(82512, {	-- Worldsoul: World Boss
-				["isWeekly"] = true,
-				["provider"] = { "n", 223875 },	-- Faerin Lothar
-				["coord"] = { 46.1, 49.6, DORNOGAL },
-				["g"] = {
-					currency(3029),	-- Treasure Trove Key (x2)
-				},
-			}),
+
 
 			-- Stay awhile and listen
 			q(84335, {	-- Stay awhile and listen: Alleria
@@ -504,7 +466,8 @@ root(ROOTS.HiddenQuestTriggers, {
 	--^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
 	q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
 	-- WQs unlock
-	q(79573),	-- Adventure Mode (spellID 434027) & Unlock Content Scaling (spellID 434024)
+	--q(79573),	-- Adventure Mode (spellID 434027) & Unlock Content Scaling (spellID 434024)
+	q(79573, {["name"] = "The War Within Campaign Completed [Account]"}),	-- triggered after completing 'Surface Bound' (questID 79197)
 	--
 	q(84009),	-- 'Stay awhile and listen' - Alleria Windrunner (n: 216148) - during questID 82153 (Embassies and Envoys)
 	q(82542),	-- 'Stay awhile and listen' -  Rooktender Lufsela (n: 215039) - during questID 81914 (81914)
