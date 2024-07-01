@@ -4113,6 +4113,7 @@ i(218086, 4450);	-- Remembered Riverpaw
 i(218246, 4452);	-- Remembered Spawn
 i(222978, 4546);	-- Sandstone Ramolith
 i(224579, 3362);	-- Sapphire Crab
+i(222974, 4543);	-- Sir Shady Mrgglton Junior
 i(221494, 4495);	-- Skippy
 i(221811, 4524);	-- Starkstripe Hopper
 i(224260, 4591);	-- Thundo
@@ -4153,7 +4154,6 @@ i(223802, 4581);	-- Purple Stagshell
 i(225935, 4582);	-- Rak-Ush Battleshell
 i(221759, 4512);	-- Sceaduthax
 i(221819, 4472);	-- Shadowbog Hopper
-i(222974, 4543);	-- Sir Shady Mrgglton Junior
 i(222980, 4542);	-- Slim
 i(223624, 4575);	-- Sneef
 i(222966, 4473);	-- Spinner

@@ -1,11 +1,12 @@
+local UNDERCOIN = 2803;
 root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		ach(40817),		-- A Delver's Bounty
 		ach(40538, {	-- Brann Development
-			["timeline"] = { REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
 		}),
 		ach(40635, {	-- Branntastic
-			["timeline"] = { REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(40461),	-- Buddy System VI
@@ -112,18 +113,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		ach(40524),	-- Good Deed Delver
 		ach(40732),	-- Heavy-Handed
-		ach(40431, {	-- Hunting the Hunter
-			["timeline"] = { REMOVED_11_1_0 },
-			["g"] = {
-				i(225547),	-- Toxic Victory (TOY!)
-			},
-		}),
-		ach(40433, {	-- Hunting the Hunter (Solo)
-			["timeline"] = { REMOVED_11_1_0 },
-			["g"] = {
-				i(225542),	-- Delver's Dirigible Schematic: Void
-			},
-		}),
+		ach(40431, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {	-- Hunting the Hunter
+			i(225547),	-- Toxic Victory (TOY!)
+		})),
+		ach(40433, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {	-- Hunting the Hunter (Solo)
+			i(225542),	-- Delver's Dirigible Schematic: Void (DM!)
+		})),
 		ach(40098),	-- Immortal Spelunker
 		ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
 		ach(40446),	-- I TAKE Candle!
@@ -132,7 +127,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40788),	-- I Got the Keys
 		ach(40452),	-- Just Keep Swimming
 		ach(40103, {	-- Nemesis
-			["timeline"] = { REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
 		}),
 		ach(40506, {	-- Leave No Treasure Unfound
 			-- Meta Achievement
@@ -155,11 +150,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			},
 		}),
 		ach(40523, {	-- On Brand
-			["timeline"] = { REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(40820, {	-- Raisin' Brann
-			["timeline"] = { REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
 		}),
 		ach(40458),	-- Rare Finding
 		ach(40819),	-- Ready to Turn
@@ -233,9 +228,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			filter(MISC, {
-				-- Equipment?
 				i(226222),	-- Webbed Hookshot
-				i(212868),	-- Precious Ore (QI!)
+				i(212868),	-- Precious Ore
 			})
 		},
 	}),
@@ -589,62 +583,411 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	n(REWARDS, {
-		i(224181),	-- Companion Experience (Tier 1-2)
-		i(224411),	-- Companion Experience (Tier 3)
-		i(222922),	-- Expeditionary Spoils (Tier 1)
-		i(222923),	-- Expeditionary Spoils (Tier 2)
-		i(225178),	-- Expeditionary Spoils (Tier 3)
-		i(222916),	-- Player Experience (Tier 1-2)
-		i(222917),	-- Player Experience (Tier 3)
-		i(222927),	-- Weathered Coin Coffer
-		-- Consumable
-		i(226132),	-- Deployable Recovery Keg
 		-- Curio
 		i(225902),	-- Idol of Final Will
 		i(225906),	-- Lifeless Necrotic Relic
 		i(225900),	-- Light-Touched Idol
 		i(218129),	-- Porcelain Arrowhead Idol
 		i(225899),	-- Unbreakable Iron Idol
-		-- Miscellaneous
-		i(223287),	-- Atomized Salien Slime
-		i(218121),	-- Candle Light
-		i(226110),	-- Elemental Fusion Bomb
-		i(226107),	-- Homebrewed Blink Vial
-		i(225249),	-- Rattling Bag'o'gold
-		i(226109),	-- Squirming Swarm Sac
-		--Mislaid Curiosity (green sacks)
-		i(228071),	-- Companion Experience (green)
-		i(228072),	-- Companion Experience (blue)
-		i(228073),	-- Companion Experience (epic)
-		--
-		-- Gear
-		i(211005),	-- Cave Topographer's Drape
-		i(215169),	-- Everburning Lantern
-		i(211047),	-- Lapidarius Gemcutter
-		i(211036),	-- Secret-Dredger's Armplates
-		i(211030),	-- Secret-Dredger's Breastplate
-		i(211006),	-- Secret-Dredger's Cloak
-		i(211029),	-- Secret-Dredger's Helm
-		i(211032),	-- Secret-Dredger's Gauntlets
-		i(211035),	-- Secret-Dredger's Girdle
-		i(211033),	-- Secret-Dredger's Legguards
-		i(211034),	-- Secret-Dredger's Mantle
-		i(211031),	-- Secret-Dredger's Sabatons
-		i(225653),	-- Siphoning Lightbrand
-		i(211028),	-- Torchbearer's Bracers
-		i(211007),	-- Torchbearer's Greatcloak
-		i(211022),	-- Torchbearer's Striders
-		i(211018),	-- Treasure-Seeker's Breeches
-		i(211061),	-- Unearthed Relic Band
-		-- Cosmetic
-		i(212172),	-- Ajul'Nerub Raptorial Spine (COSMETIC!) (was looted in Skittering Breach & The Underkeep)
-		i(225066),	-- Trailblazer's Haversack (COSMETIC!) (was looted in Nightfall Sanctum)
-		i(212163),	-- Soporific Shroom Cap (COSMETIC!) (was looted in Mycomancer Cavern)
-		-- Rare Treasure Finds?
-		i(226002),	-- Expensive-Looking Find (was looted from Sturdy Chest (objectID) 454091)
-		i(226003),	-- Snake Oil (was looted from Sturdy Chest (objectID) 454091, 455496)
-		i(226001),	-- Pure Gold Stein (was looted from Sturdy Chest (objectID) 455489)
-		i(226004),	-- Odlen Text (was looted from Sturdy Chest (objectID) 455495)
-		i(226005),	-- Ancient Tool (was looted from Sturdy Chest (objectID) 455914)
+		filter(MISC, {
+			i(224181),	-- Companion Experience (Tier 1-2)
+			i(224411),	-- Companion Experience (Tier 3)
+			i(222922),	-- Expeditionary Spoils (Tier 1)
+			i(222923),	-- Expeditionary Spoils (Tier 2)
+			i(225178),	-- Expeditionary Spoils (Tier 3)
+			i(222916),	-- Player Experience (Tier 1-2)
+			i(222917),	-- Player Experience (Tier 3)
+			i(222927),	-- Weathered Coin Coffer
+			i(228071),	-- Companion Experience (Uncommon)
+			i(228072),	-- Companion Experience (Rare)
+			i(228073),	-- Companion Experience (Epic)
+			i(223287),	-- Atomized Salien Slime
+			i(218121),	-- Candle Light
+			i(226132),	-- Deployable Recovery Keg
+			i(226110),	-- Elemental Fusion Bomb
+			i(226107),	-- Homebrewed Blink Vial
+			i(225249),	-- Rattling Bag'o'gold
+			i(226109),	-- Squirming Swarm Sac
+			--
+			i(226002),	-- Expensive-Looking Find (was looted from Sturdy Chest (objectID) 454091)
+			i(226003),	-- Snake Oil (was looted from Sturdy Chest (objectID) 454091, 455496)
+			i(226001),	-- Pure Gold Stein (was looted from Sturdy Chest (objectID) 455489)
+			i(226004),	-- Odlen Text (was looted from Sturdy Chest (objectID) 455495)
+			i(226005),	-- Ancient Tool (was looted from Sturdy Chest (objectID) 455914)
+		}),
+		filter(BACK_F, {
+			i(211005),	-- Cave Topographer's Drape
+			i(211006),	-- Secret-Dredger's Cloak
+			i(211007),	-- Torchbearer's Greatcloak
+			i(211062),	-- Treasure-Seeker's Shawl
+		}),
+		filter(CLOTH, {
+			i(211013),	-- Cave Topographer's Cord
+			i(211011),	-- Cave Topographer's Cowl
+			i(211014),	-- Cave Topographer's Cuffs
+			i(211010),	-- Cave Topographer's Handwraps
+			i(211012),	-- Cave Topographer's Leggings
+			i(211009),	-- Cave Topographer's Sandals
+			i(211039),	-- Cave Topographer's Shoulders
+			i(211008),	-- Cave Topographer's Vestment
+		}),
+		filter(COSMETIC, {
+			i(212172),	-- Ajul'Nerub Raptorial Spine
+			i(212163),	-- Soporific Shroom Cap
+			i(225066),	-- Trailblazer's Haversack
+		}),
+		filter(FINGER_F, {
+			i(211051),	-- Loop of Vestigial Power
+			i(211052),	-- Olden Signet
+			i(211061),	-- Unearthed Relic Band
+		}),
+		filter(LEATHER, {
+			i(211020),	-- Treasure-Seeker's Bindings
+			i(211015),	-- Treasure-Seeker's Boots
+			i(211018),	-- Treasure-Seeker's Breeches
+			i(211038),	-- Treasure-Seeker's Epaulets
+			i(211016),	-- Treasure-Seeker's Grips
+			i(211017),	-- Treasure-Seeker's Helm
+			i(211019),	-- Treasure-Seeker's Sash
+			i(211037),	-- Treasure-Seeker's Vest
+		}),
+		filter(MAIL, {
+			i(211028),	-- Torchbearer's Bracers
+			i(211021),	-- Torchbearer's Chainmail
+			i(211027),	-- Torchbearer's Cinch
+			i(211024),	-- Torchbearer's Coif
+			i(211025),	-- Torchbearer's Greaves
+			i(211023),	-- Torchbearer's Grips
+			i(211026),	-- Torchbearer's Shoulderguards
+			i(211022),	-- Torchbearer's Striders
+		}),
+		filter(NECK_F, {
+			i(211063),	-- Long-Lost Choker
+		}),
+		filter(PLATE, {
+			i(211036),	-- Secret-Dredger's Armplates
+			i(211030),	-- Secret-Dredger's Breastplate
+			i(211032),	-- Secret-Dredger's Gauntlets
+			i(211035),	-- Secret-Dredger's Girdle
+			i(211029),	-- Secret-Dredger's Helm
+			i(211033),	-- Secret-Dredger's Legguards
+			i(211034),	-- Secret-Dredger's Mantle
+			i(211031),	-- Secret-Dredger's Sabatons
+		}),
+		filter(TRINKET_F, {
+			i(225653),	-- Siphoning Lightbrand
+		}),
+		n(WEAPONS, {
+			i(219355),	-- Bedrock Breaker
+			i(211041),	-- Brilliant Beacon
+			i(215169),	-- Everburning Lantern
+			i(211047),	-- Lapidarius Gemcutter
+			i(211059),	-- Luminous Lampspire
+			i(219351),	-- Mana-Lined Slab Slicer
+			i(219354),	-- Mountain Shaper's Greataxe
+			i(211048),	-- Pathfinder's Stonecarver
+			i(219352),	-- Skypiercing Drillstaff
+			i(219356),	-- Torchlit Pickaxe
+			i(219353),	-- Trailblazer's Hookshoot
+			i(211046),	-- Umbral Artist's Chisel
+			i(211040),	-- Unhinged Vault-Hatch
+		}),
+	}),
+	n(VENDORS, {
+		n(226250, {	-- Reno Jackson <Delve Treasures>
+			filter(TOYS, {
+				i(223312, {	-- Trusty Hat (TOY!)
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+				}),
+			}),
+			n(DRAKEWATCHER_MANUSCRIPTS, {	-- Airship (Redo DM! Later)
+				i(224981, {	-- Delver's Dirigible Schematic: Brown Paint (DM!)
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+				}),
+				i(224982, {	-- Delver's Dirigible Schematic: Exhaust (DM!)
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+				}),
+				i(224980, {	-- Delver's Dirigible Schematic: Front-Mounted Lantern (DM!)
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+				}),
+				i(224960, {	-- Delver's Dirigible Schematic: Lantern Wing (DM!)
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+				}),
+				i(224979, {	-- Delver's Dirigible Schematic: Zeppelin (DM!)
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
+				}),
+			}),
+			filter(CLOTH, {
+				i(225393, {	-- Cave Topographer's Cord
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 750}},
+				}),
+				i(225390, {	-- Cave Topographer's Cowl
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+				i(225394, {	-- Cave Topographer's Cuffs
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 750}},
+				}),
+				i(225389, {	-- Cave Topographer's Handwraps
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+				i(225391, {	-- Cave Topographer's Leggings
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+				i(225388, {	-- Cave Topographer's Sandals
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+				i(225392, {	-- Cave Topographer's Shoulders
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+				i(225387, {	-- Cave Topographer's Vestment
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+			}),
+			filter(LEATHER, {
+				i(225402, {	-- Treasure-Seeker's Bindings
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 750}},
+				}),
+				i(225396, {	-- Treasure-Seeker's Boots
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+				i(225399, {	-- Treasure-Seeker's Breeches
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+				i(225400, {	-- Treasure-Seeker's Epaulets
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+				i(225397, {	-- Treasure-Seeker's Grips
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+				i(225398, {	-- Treasure-Seeker's Helm
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+				i(225401, {	-- Treasure-Seeker's Sash
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 750}},
+				}),
+				i(225395, {	-- Treasure-Seeker's Vest
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+			}),
+			filter(MAIL, {
+				i(225386, {	-- Torchbearer's Bracers
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 750}},
+				}),
+				i(225379, {	-- Torchbearer's Chainmail
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+				i(225380, {	-- Torchbearer's Cinch
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 750}},
+				}),
+				i(225383, {	-- Torchbearer's Coif
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+				i(225384, {	-- Torchbearer's Greaves
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+				i(225382, {	-- Torchbearer's Grips
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+				i(225385, {	-- Torchbearer's Shoulderguards
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+				i(225381, {	-- Torchbearer's Striders
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+			}),
+			filter(PLATE, {
+				i(225410, {	-- Secret-Dredger's Armplates
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 750}},
+				}),
+				i(225403, {	-- Secret-Dredger's Breastplate
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+				i(225405, {	-- Secret-Dredger's Gauntlets
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+				i(225409, {	-- Secret-Dredger's Girdle
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 750}},
+				}),
+				i(225406, {	-- Secret-Dredger's Helm
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+				i(225407, {	-- Secret-Dredger's Legguards
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1250}},
+				}),
+				i(225408, {	-- Secret-Dredger's Mantle
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+				i(225404, {	-- Secret-Dredger's Sabatons
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
+				}),
+			}),
+			n(WEAPONS, {
+				i(225500, {	-- Bedrock Breaker
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 2000}},
+				}),
+				i(225507, {	-- Brilliant Beacon
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 2000}},
+				}),
+				i(225499, {	-- Lapidarius Gemcutter
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 2000}},
+				}),
+				i(225505, {	-- Luminous Lampspire
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 4000}},
+				}),
+				i(225506, {	-- Mana-Lined Slab Slicer
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 4000}},
+				}),
+				i(225502, {	-- Mountain Shaper's Greataxe
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 4000}},
+				}),
+				i(225501, {	-- Pathfinder's Stonecarver
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 2000}},
+				}),
+				i(225504, {	-- Skypiercing Drillstaff
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 4000}},
+				}),
+				i(225497, {	-- Torchlit Pickaxe
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 2000}},
+				}),
+				i(225503, {	-- Trailblazer's Hookshoot
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 4000}},
+				}),
+				i(225498, {	-- Umbral Artist's Chisel
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 2000}},
+				}),
+				i(225508, {	-- Unhinged Vault-Hatch
+					["cost"] = {{"c", RESONANCE_CRYSTALS, 2000}},
+				}),
+			}),
+		}),
+		n(208070, {	-- Sir Finley Mrgglton <Delve Treasures>
+			i(224172, {	-- Restored Coffer Key
+				["cost"] = {{"c", UNDERCOIN, 1000}},
+			}),
+			n(DRAKEWATCHER_MANUSCRIPTS, {	-- Airship (Redo DM! Later)
+				i(224771, {	-- Delver's Dirigible Schematic: Empennage (DM!)
+					["cost"] = {{"c", UNDERCOIN, 1000}},
+				}),
+				i(224770, {	-- Delver's Dirigible Schematic: Front-Mounted Propeller (DM!)
+					["cost"] = {{"c", UNDERCOIN, 2500}},
+				}),
+				i(224769, {	-- Delver's Dirigible Schematic: Rotor Blades (DM!)
+					["cost"] = {{"c", UNDERCOIN, 3000}},
+				}),
+				i(224768, {	-- Delver's Dirigible Schematic: Wing-Mounted Propeller (DM!)
+					["cost"] = {{"c", UNDERCOIN, 2500}},
+				}),
+			}),
+			filter(BATTLE_PETS, {
+				i(222974, {	-- Sir Shady Mrgglton Junior (PET!)
+					["cost"] = {{"c", UNDERCOIN, 10000}},
+				}),
+			}),
+			filter(TOYS, {
+				i(211931, {	-- Abyss Caller Horn (TOY!)
+					["cost"] = {{"c", UNDERCOIN, 500}},
+				}),
+				i(225910, {	-- Pileus Delight (TOY!)
+					["cost"] = {{"c", UNDERCOIN, 500}},
+				}),
+			}),
+			n(ARMOR, {
+				filter(BACK_F, {
+					i(211005, {	-- Cave Topographer's Drape
+						["cost"] = {{"c", UNDERCOIN, 500}},
+					}),
+					i(211006, {	-- Secret-Dredger's Cloak
+						["cost"] = {{"c", UNDERCOIN, 500}},
+					}),
+					i(211007, {	-- Torchbearer's Greatcloak
+						["cost"] = {{"c", UNDERCOIN, 500}},
+					}),
+					i(211062, {	-- Treasure-Seeker's Shawl
+						["cost"] = {{"c", UNDERCOIN, 500}},
+					}),
+				}),
+				filter(FINGER_F, {
+					i(211051, {	-- Loop of Vestigial Power
+						["cost"] = {{"c", UNDERCOIN, 500}},
+					}),
+					i(211052, {	-- Olden Signet
+						["cost"] = {{"c", UNDERCOIN, 500}},
+					}),
+					i(211061, {	-- Unearthed Relic Band
+						["cost"] = {{"c", UNDERCOIN, 500}},
+					}),
+				}),
+				filter(NECK_F, {
+					i(211063, {	-- Long-Lost Choker
+						["cost"] = {{"c", UNDERCOIN, 500}},
+					}),
+				}),
+				i(221502, {	-- Adventurer's Warbound Battlegear Drop
+					["cost"] = {{"c", UNDERCOIN, 5000}},
+				}),
+				i(224814, {	-- Adventurer's Warbound Boots
+					["cost"] = {{"c", UNDERCOIN, 750}},
+				}),
+				i(224845, {	-- Adventurer's Warbound Chestpiece
+					["cost"] = {{"c", UNDERCOIN, 875}},
+				}),
+				i(224844, {	-- Adventurer's Warbound Gloves
+					["cost"] = {{"c", UNDERCOIN, 750}},
+				}),
+				i(224843, {	-- Adventurer's Warbound Headpiece
+					["cost"] = {{"c", UNDERCOIN, 875}},
+				}),
+				i(224842, {	-- Adventurer's Warbound Legs
+					["cost"] = {{"c", UNDERCOIN, 875}},
+				}),
+				i(224841, {	-- Adventurer's Warbound Shoulders
+					["cost"] = {{"c", UNDERCOIN, 750}},
+				}),
+				i(224840, {	-- Adventurer's Warbound Waist
+					["cost"] = {{"c", UNDERCOIN, 625}},
+				}),
+				i(224839, {	-- Adventurer's Warbound Wrists
+					["cost"] = {{"c", UNDERCOIN, 625}},
+				}),
+			}),
+			n(WEAPONS, {
+				i(219355, {	-- Bedrock Breaker
+					["cost"] = {{"c", UNDERCOIN, 1250}},
+				}),
+				i(211041, {	-- Brilliant Beacon
+					["cost"] = {{"c", UNDERCOIN, 1250}},
+				}),
+				i(211047, {	-- Lapidarius Gemcutter
+					["cost"] = {{"c", UNDERCOIN, 1250}},
+				}),
+				i(211059, {	-- Luminous Lampspire
+					["cost"] = {{"c", UNDERCOIN, 3000}},
+				}),
+				i(219351, {	-- Mana-Lined Slab Slicer
+					["cost"] = {{"c", UNDERCOIN, 3000}},
+				}),
+				i(219354, {	-- Mountain Shaper's Greataxe
+					["cost"] = {{"c", UNDERCOIN, 3000}},
+				}),
+				i(211048, {	-- Pathfinder's Stonecarver
+					["cost"] = {{"c", UNDERCOIN, 1250}},
+				}),
+				i(219352, {	-- Skypiercing Drillstaff
+					["cost"] = {{"c", UNDERCOIN, 3000}},
+				}),
+				i(219356, {	-- Torchlit Pickaxe
+					["cost"] = {{"c", UNDERCOIN, 1250}},
+				}),
+				i(219353, {	-- Trailblazer's Hookshoot
+					["cost"] = {{"c", UNDERCOIN, 3000}},
+				}),
+				i(211046, {	-- Umbral Artist's Chisel
+					["cost"] = {{"c", UNDERCOIN, 1250}},
+				}),
+				i(211040, {	-- Unhinged Vault-Hatch
+					["cost"] = {{"c", UNDERCOIN, 1250}},
+				}),
+			}),
+		}),
 	}),
 })));

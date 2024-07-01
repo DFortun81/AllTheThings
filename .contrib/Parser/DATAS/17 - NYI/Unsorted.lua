@@ -29,7 +29,6 @@ root(ROOTS.Unsorted, {
 				i(225935),	-- Rak-Ush Battleshell (PET!)
 				i(221759),	-- Sceaduthax (PET!)
 				i(221819),	-- Shadowbog Hopper (PET!)
-				i(222974),	-- Sir Shady Mrgglton Junior (PET!)
 				i(222980),	-- Slim (PET!)
 				i(223624),	-- Sneef (PET!)
 				i(222966),	-- Spinner (PET!)
@@ -1186,115 +1185,32 @@ root(ROOTS.Unsorted, {
 				i(210693),	-- Delves Keystone
 				i(210698),	-- Rare Delve Key
 				i(210699),	-- Epic Delve Key
-				i(211006),	-- Secret-Dredger's Cloak
-				i(211007),	-- Torchbearer's Greatcloak
-				i(211008),	-- Cave Topographer's Vestment
-				i(211009),	-- Cave Topographer's Sandals
-				i(211010),	-- Cave Topographer's Handwraps
-				i(211011),	-- Cave Topographer's Cowl
-				i(211012),	-- Cave Topographer's Leggings
-				i(211013),	-- Cave Topographer's Cord
-				i(211014),	-- Cave Topographer's Cuffs
-				i(211015),	-- Treasure-Seeker's Boots
-				i(211016),	-- Treasure-Seeker's Grips
-				i(211017),	-- Treasure-Seeker's Helm
-				i(211019),	-- Treasure-Seeker's Sash
-				i(211020),	-- Treasure-Seeker's Bindings
-				i(211021),	-- Torchbearer's Chainmail
-				i(211023),	-- Torchbearer's Grips
-				i(211024),	-- Torchbearer's Coif
-				i(211025),	-- Torchbearer's Greaves
-				i(211026),	-- Torchbearer's Shoulderguards
-				i(211027),	-- Torchbearer's Cinch
-				i(211037),	-- Treasure-Seeker's Vest
-				i(211038),	-- Treasure-Seeker's Epaulets
-				i(211039),	-- Cave Topographer's Shoulders
-				i(211040),	-- Unhinged Vault-Hatch
-				i(211041),	-- Brilliant Beacon
 				i(211042),	-- Delver's Wand
 				i(211043),	-- Delver's Polearm
 				i(211044),	-- Delver's Rifle
 				i(211045),	-- Delver's Spellblade
-				i(211046),	-- Umbral Artist's Chisel
-				i(211048),	-- Pathfinder's Stonecarver
 				i(211049),	-- Delver's Blade
 				i(211050),	-- Delver's Greatsword
-				i(211051),	-- Loop of Vestigial Power
-				i(211052),	-- Olden Signet
 				i(211053),	-- Delver's Hacker
 				i(211054),	-- Delver's Cleaver
 				i(211055),	-- Delver's Censer
 				i(211056),	-- Delver's Mallet
 				i(211057),	-- Delver's Cudgel
 				i(211058),	-- Delver's Halberd
-				i(211059),	-- Luminous Lampspire
 				i(211060),	-- Delver's Warglaive
-				i(211062),	-- Treasure-Seeker's Shawl
-				i(211063),	-- Long-Lost Choker
 				i(211142),	-- Delves Keystone
-				i(218129),	-- Porcelain Arrowhead Idol \\ Curio Test \\ Test Curio
 				i(219138),	-- Delve Experience
-				i(219351),	-- Mana-Lined Slab Slicer
-				i(219352),	-- Skypiercing Drillstaff
-				i(219353),	-- Trailblazer's Hookshoot
-				i(219354),	-- Mountain Shaper's Greataxe
-				i(219355),	-- Bedrock Breaker
-				i(219356),	-- Torchlit Pickaxe
 				i(219916),	-- Bronzebeard Family Compass
 				i(225065),	-- Torchbearer's Haversack
 				i(225066),	-- Trail Blazer's Haversack
 				i(225067),	-- Shadowlit Haversack
 				i(225123),	-- Companion Experience
-				i(225379),	-- Torchbearer's Chainmail
-				i(225380),	-- Torchbearer's Cinch
-				i(225381),	-- Torchbearer's Striders
-				i(225382),	-- Torchbearer's Grips
-				i(225383),	-- Torchbearer's Coif
-				i(225384),	-- Torchbearer's Greaves
-				i(225385),	-- Torchbearer's Shoulderguards
-				i(225386),	-- Torchbearer's Bracers
-				i(225387),	-- Cave Topographer's Vestment
-				i(225388),	-- Cave Topographer's Sandals
-				i(225389),	-- Cave Topographer's Handwraps
-				i(225390),	-- Cave Topographer's Cowl
-				i(225391),	-- Cave Topographer's Leggings
-				i(225392),	-- Cave Topographer's Shoulders
-				i(225393),	-- Cave Topographer's Cord
-				i(225394),	-- Cave Topographer's Cuffs
-				i(225395),	-- Treasure-Seeker's Vest
-				i(225396),	-- Treasure-Seeker's Boots
-				i(225397),	-- Treasure-Seeker's Grips
-				i(225398),	-- Treasure-Seeker's Helm
-				i(225399),	-- Treasure-Seeker's Breeches
-				i(225400),	-- Treasure-Seeker's Epaulets
-				i(225401),	-- Treasure-Seeker's Sash
-				i(225402),	-- Treasure-Seeker's Bindings
-				i(225403),	-- Secret-Dredger's Breastplate
-				i(225404),	-- Secret-Dredger's Sabatons
-				i(225405),	-- Secret-Dredger's Gauntlets
-				i(225406),	-- Secret-Dredger's Helm
-				i(225407),	-- Secret-Dredger's Legguards
-				i(225408),	-- Secret-Dredger's Mantle
-				i(225409),	-- Secret-Dredger's Girdle
-				i(225410),	-- Secret-Dredger's Armplates
 				i(225411),	-- Secret-Dredger's Cloak
 				i(225412),	-- Torchbearer's Greatcloak
 				i(225413),	-- Treasure-Seeker's Shawl
 				i(225414),	-- Cave Topographer's Drape
-				i(225495),	-- Brilliant Beacon
+				i(225495),	-- Brilliant Beacon (Weird..)
 				i(225496),	-- Unhinged Vault-Hatch
-				i(225497),	-- Torchlit Pickaxe
-				i(225498),	-- Umbral Artist's Chisel
-				i(225499),	-- Lapidarius Gemcutter
-				i(225500),	-- Bedrock Breaker
-				i(225501),	-- Pathfinder's Stonecarver
-				i(225502),	-- Mountain Shaper's Greataxe
-				i(225503),	-- Trailblazer's Hookshoot
-				i(225504),	-- Skypiercing Drillstaff
-				i(225505),	-- Luminous Lampspire
-				i(225506),	-- Mana-Lined Slab Slicer
-				i(225507),	-- Brilliant Beacon
-				i(225508),	-- Unhinged Vault-Hatch
 			}),
 			filter(COSMETIC, {
 				i(217706),	-- Learn Warglaives Test Item (DNT)
@@ -1775,14 +1691,7 @@ root(ROOTS.Unsorted, {
 				i(220157),	-- Darkened Tinderbox
 				i(220158),	-- Empowered Tinderbox
 				-- Armor Generator
-				i(224814),	-- Adventurer's Warbound Boots
-				i(224839),	-- Adventurer's Warbound Wrists \\ Warbound Adventurer's Wrists
-				i(224840),	-- Adventurer's Warbound Waist
-				i(224841),	-- Adventurer's Warbound Shoulders
-				i(224842),	-- Adventurer's Warbound Legs
-				i(224843),	-- Adventurer's Warbound Headpiece
-				i(224844),	-- Adventurer's Warbound Gloves
-				i(224845),	-- Adventurer's Warbound Chestpiece
+
 			}),
 			n(PVP, {
 				i(224556),	-- Victorious Contender's Strongbox
@@ -2312,7 +2221,6 @@ root(ROOTS.Unsorted, {
 				i(218308),	-- Winter Veil Cracker
 				i(218309),	-- Gently Shaken Gift
 				i(218311),	-- Winter Veil Gift
-				i(221502),	-- Adventurer's Warbound Battlegear Drop
 				i(221503),	-- Explorer's Warbound Battlegear Drop
 				i(221777),	-- Pearlescent Shellcrab
 				i(221812),	-- Player Experience
@@ -2717,7 +2625,6 @@ root(ROOTS.Unsorted, {
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 			}),
 			filter(TOYS, {
-				i(211931),	-- Abyss Caller Horn (TOY!)
 				i(219387),	-- Barrel of Fireworks (TOY!)
 				i(215147),	-- Beautification Iris (TOY!)
 				i(218310),	-- Box of Puntables (TOY!)
@@ -2726,7 +2633,6 @@ root(ROOTS.Unsorted, {
 				i(224554),	-- Silver Linin' Scepter (TOY!)
 				i(219403),	-- Stonebound Lantern (TOY!)
 				i(212174),	-- The Warband Map to Everywhere All At Once (TOY!)
-				i(223312),	-- Trusty Hat (TOY!)
 				i(221966),	-- Wormhole Generator: Khaz Algar (TOY!)
 
 				---
@@ -3100,16 +3006,16 @@ root(ROOTS.Unsorted, {
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(223510),	-- Airship Schematic: Template
-				i(224768),	-- Airship: Wing-Mounted Propeller
-				i(224769),	-- Airship: Rotor Blades
-				i(224770),	-- Airship: Front-Mounted Propeller
-				i(224771),	-- Airship: Empennage
-				i(224960),	-- Airship: Lantern Wing
-				i(224979),	-- Airship: Zeppelin
-				i(224980),	-- Airship: Front-Mounted Lantern
-				i(224981),	-- Airship: Brown Paint \\ Airship: Brown
-				i(224982),	-- Airship: Exhaust \\ Airship: Multi-Exhaus
-				i(225542),	-- Delver's Dirigible Schematic: Void
+
+
+
+
+
+
+
+
+
+
 			}),
 			filter(MISC, {
 				i(224592),	-- Spinner's Hoop \\ [PH] The Fallen Queen's Band
@@ -3277,7 +3183,6 @@ root(ROOTS.Unsorted, {
 			i(225905),	-- Olden Seeker Relic
 			i(225907),	-- Relic of Sentience
 			i(225908),	-- Relicblood of Zekvir
-			i(225910),	-- Pileus Delight
 			i(225911),	-- Cinderbee Belly
 			i(225912),	-- Hot Honeycomb
 			i(216696),	-- Hidden Pants
@@ -3544,15 +3449,15 @@ root(ROOTS.Unsorted, {
 			i(223091),	-- Design: Forger's Font Inspector
 			i(223092),	-- Design: Novelist's Specs
 			i(223510),	-- Delver's Dirigible Schematic: Template
-			i(224768),	-- Delver's Dirigible Schematic: Wing-Mounted Propeller
-			i(224769),	-- Delver's Dirigible Schematic: Rotor Blades
-			i(224770),	-- Delver's Dirigible Schematic: Front-Mounted Propeller
-			i(224771),	-- Delver's Dirigible Schematic: Empennage
-			i(224960),	-- Delver's Dirigible Schematic: Lantern Wing
-			i(224979),	-- Delver's Dirigible Schematic: Zeppelin
-			i(224980),	-- Delver's Dirigible Schematic: Front-Mounted Lantern
-			i(224981),	-- Delver's Dirigible Schematic: Brown Paint
-			i(224982),	-- Delver's Dirigible Schematic: Exhaust
+
+
+
+
+
+
+
+
+
 			i(225213),	-- Sky-Captain Lancekat's Curse
 			i(225432),	-- Design: Algari Competitor's Signet
 			i(225433),	-- Design: Algari Competitor's Amulet
