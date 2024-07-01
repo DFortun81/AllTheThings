@@ -586,7 +586,11 @@ root(ROOTS.Zones, {
 									["races"] = { BLOODELF, ORC, UNDEAD },
 								}),
 								q(32292, {	-- Forge Ahead! (H)
-								--	possibly Horde races other than Blood Elf, Orc, and Undead?
+								--	possibly Horde races other than Blood Elf, Orc, and Undead? Vupera
+									["sourceQuest"] = 32209,	-- Save Our Scouts! (H)
+									["groups"] = {
+										i(93731),	-- Mogu Codex Fragment (QI!)
+									},
 								}),
 								q(32201, {	-- Grave Circumstances (H)
 								}),
@@ -629,12 +633,23 @@ root(ROOTS.Zones, {
 								q(32305, {	-- Overpowered (H)
 								}),
 								q(32494, {	-- Power Play (H)
+									["groups"] = {
+										i(93733),	-- Mask of the Spirit-Caller (QI!)
+										i(93734),	-- Mask of the Dark Mystic (QI!)
+									},
 								}),
 								q(32227, {	-- Preventing a Future Threat (H)
 								}),
 								q(32216, {	-- Pterrible Ptorment (H)
 								}),
 								q(32677, {	-- Raiding the Vault (H)
+									["sourceQuest"] = 32292,	-- Forge Ahead (H)
+									["groups"] = {
+										i(95374),	-- Hoard-Keeper's Key (QI!)
+										o(218853, {	-- Stormy Chest
+											i(95372),	-- Choker of Storms (QI!)
+										}),
+									},
 								}),
 								q(32294, {	-- Raining Bones (H)
 								}),
@@ -642,7 +657,11 @@ root(ROOTS.Zones, {
 								}),
 								q(32207, {	-- Saur Loser (H)
 								}),
-								q(32209, {	-- Save Our Scouts!
+								q(32209, {	-- Save Our Scouts! (H)
+									["provider"] = { "n", 67986 },	-- Magister Edien Sunhollow
+									["groups"] = {
+										i(93761),	-- Arcane Emancipator (QI!)
+									},
 								}),
 								q(32220, {	-- Soul Surrender (H)
 								}),
@@ -691,6 +710,13 @@ root(ROOTS.Zones, {
 								q(32206, {	-- This Just Won't Do
 								}),
 								q(32233, {	-- Very Disarming
+									["groups"] = {
+										o_repeated({
+											i(93736),	-- Loa-Infused Blade (QI!)
+											o(218055),	-- Loa-Infused Blade
+											o(218056),	-- Loa-Infused Blade
+										}),
+									},
 								}),
 								q(32232, {	-- What's Inside Counts
 								}),
