@@ -106,6 +106,7 @@ src\Classes\Spell.lua
 src\Classes\CharacterUnlock.lua
 
 # Item Sub-Classes
+src\Classes\Heirloom.lua
 src\Classes\Toys.lua
 
 # Expansion specific source files

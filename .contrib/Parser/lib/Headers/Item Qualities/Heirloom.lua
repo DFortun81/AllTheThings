@@ -9,6 +9,7 @@ QUALITY_HEIRLOOM = createHeader({
 -- Plural form
 HEIRLOOMS = createHeader({
 	readable = "Heirlooms",
+	constant = "HEIRLOOMS",
 	icon = [[~_.asset("Weapon_Type_Heirloom")]],
 	text = {
 		en = [[~HEIRLOOMS]],
