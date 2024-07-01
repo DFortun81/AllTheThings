@@ -31,7 +31,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						},
 					}),
 					i(202196, {	-- Zskera Vault Key
-						["timeline"] = { ADDED_10_2_0 }
+						["timeline"] = { ADDED_10_2_0 },
 						["cost"] = {
 							{ "c", DRAGON_ISLES_SUPPLIES, 50 },
 						},
@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						},
 					}),
 					i(202196, {	-- Zskera Vault Key
-						["timeline"] = { ADDED_10_2_0 }
+						["timeline"] = { ADDED_10_2_0 },
 						["cost"] = {
 							{ "c", DRAGON_ISLES_SUPPLIES, 50 },
 						},
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						},
 					}),
 					i(202196, {	-- Zskera Vault Key
-						["timeline"] = { ADDED_10_2_0 }
+						["timeline"] = { ADDED_10_2_0 },
 						["cost"] = {
 							{ "c", DRAGON_ISLES_SUPPLIES, 50 },
 						},
@@ -394,7 +394,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						},
 					}),
 					i(202196, {	-- Zskera Vault Key
-						["timeline"] = { ADDED_10_2_0 }
+						["timeline"] = { ADDED_10_2_0 },
 						["cost"] = {
 							{ "c", DRAGON_ISLES_SUPPLIES, 50 },
 						},
