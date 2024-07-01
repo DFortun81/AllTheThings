@@ -1554,12 +1554,6 @@ root(ROOTS.Unsorted, {
 				i(218040),	-- Recruit's Sturdy Vambraces
 				i(218041),	-- Recruit's Sturdy Cape
 
-				-- Dalaran Defender?
-				i(218078),	-- Dalaran Defender's Cape
-				i(218079),	-- Dalaran Defender's Shawl
-				i(218080),	-- Dalaran Defender's Cloak
-				i(218081),	-- Dalaran Defender's Drape
-
 				i(218132),	-- 11.0 Zone Uncommon Template - Vestment
 				i(218133),	-- 11.0 Zone Uncommon Template - Sandals
 				i(218134),	-- 11.0 Zone Uncommon Template - Handwraps
@@ -1750,53 +1744,32 @@ root(ROOTS.Unsorted, {
 				-- Armor
 				i(224661),	-- Gem-Studded Signet
 				i(224662),	-- Gem-Studded Ring
-				i(224682),	-- Chitinoid Chainmail
-				i(224683),	-- Chitinoid Striders
-				i(224684),	-- Chitinoid Grips
-				i(224685),	-- Chitinoid Coif
-				i(224686),	-- Chitinoid Greaves
-				i(224687),	-- Chitinoid Shoulderguards
-				i(224688),	-- Chitinoid Belt
-				i(224689),	-- Chitinoid Bracers
-				i(224698),	-- Ancient Forged Shank
-				i(224699),	-- Ancient Forged Ritual Knife
-				i(224700),	-- Ancient Forged Cudgel
-				i(224701),	-- Ancient Forged Hammer
-				i(224702),	-- Ancient Forged Blade
-				i(224703),	-- Ancient Forged Sword
-				i(224704),	-- Ancient Forged Slugthrower
-				i(224705),	-- Ancient Forged Mace
-				i(224706),	-- Ancient Forged Warhammer
-				i(224708),	-- Ancient Forged Polearm
-				i(224709),	-- Ancient Forged Staff
-				i(224710),	-- Ancient Forged Spellstaff
-				i(224711),	-- Ancient Forged Curio
-				i(224712),	-- Ancient Forged Shield
-				i(224713),	-- Ancient Forged Glaive
+
+
 				i(225509),	-- [PH] Armor Vestment
 				i(225510),	-- [PH] Armor Sandals
 				i(225511),	-- [PH] Armor Handwraps
 				i(225512),	-- [PH] Armor Cowl
-				i(225514),	-- Webweave Belt
-				i(225515),	-- General's Pungent Wraps
+
+
 				i(225517),	-- [PH] Armor Grips
 				i(225518),	-- [PH] Armor Helm
 				i(225519),	-- [PH] Armor Breeches
 				i(225522),	-- [PH] Armor Chainmail
-				i(225523),	-- Smuggled Nerubian Boots
-				i(225524),	-- Rescued Aeroknight's Gloves
+
+
 				i(225525),	-- [PH] Armor Coif
-				i(225526),	-- General's Pungent Legguards
+
 				i(225527),	-- [PH] Armor Shoulderguards
 				i(225528),	-- [PH] Armor Cinch
-				i(225529),	-- Webweave Wristguards
+
 				i(225531),	-- [PH] Armor Breastplate
 				i(225532),	-- [PH] Armor Sabatons
 				i(225534),	-- [PH] Armor Legguards
 				i(225536),	-- [PH] Armor Girdle
-				i(225538),	-- General's Pungent Armor
+
 				i(225539),	-- [PH] Armor Epaulets
-				i(225540),	-- Rescued Aeroknight's Mantle
+
 
 				i(219942),	-- 11.0 Stalwart's Sandals
 				i(220157),	-- Darkened Tinderbox
@@ -2438,12 +2411,6 @@ root(ROOTS.Unsorted, {
 				i(219286),	-- Puntable Globe Yeti
 				i(219289),	-- Puntable Tiny Snowman
 				i(219291),	-- Puntable Baby Greench
-				i(223641),	-- Essence of Northrend
-				i(223642),	-- Memory of Northrend
-				i(223643),	-- Essence of Kalimdor
-				i(223644),	-- Memory of Kalimdor
-				i(223645),	-- Essence of the Eastern Kingdoms
-				i(223646),	-- Memory of the  Eastern Kingdoms \\ Memory ofthe  Eastern Kingdoms
 				i(223804),	-- [DNT] Zone 1 Placeholder Treasure
 				i(223805),	-- Bag Test A
 				i(223806),	-- Bag Test B
@@ -2824,7 +2791,7 @@ root(ROOTS.Unsorted, {
 				i(219221),	-- Ceremonial Song Ring
 			}),
 			filter(HEIRLOOMS_F, {
-				i(219325),	-- Band of Radiant Echoes
+
 			}),
 			race(EARTHEN_ALLIANCE, {
 				-- My Guess?? Earthen Starting Gear?
@@ -3185,7 +3152,7 @@ root(ROOTS.Unsorted, {
 
 
 			i(225541),	-- PH_4
-			i(225543),	-- Bloodied Idol
+
 			i(225553),	-- PH_5
 			i(225554),	-- Sunless Lure \\ Sunless Orb
 			i(225557),	-- Sizzling Cinderpollen
@@ -3577,7 +3544,6 @@ root(ROOTS.Unsorted, {
 			i(223091),	-- Design: Forger's Font Inspector
 			i(223092),	-- Design: Novelist's Specs
 			i(223510),	-- Delver's Dirigible Schematic: Template
-			i(223646),	-- Memory of the Eastern Kingdoms
 			i(224768),	-- Delver's Dirigible Schematic: Wing-Mounted Propeller
 			i(224769),	-- Delver's Dirigible Schematic: Rotor Blades
 			i(224770),	-- Delver's Dirigible Schematic: Front-Mounted Propeller

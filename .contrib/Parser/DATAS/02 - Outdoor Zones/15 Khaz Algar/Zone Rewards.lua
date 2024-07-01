@@ -4,12 +4,10 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ZONE_REWARDS, {
 		filter(BACK_F, {
-			--- wqs gear green/blue (move to zone reward if needed)
 			i(224664),	-- Gem-Woven Cloak
 			i(224663),	-- Gem-Woven Shawl
 		}),
 		filter(CLOTH, {
-			-- wq gear
 			i(224672),	-- Alighted Cord
 			i(224669),	-- Alighted Cowl
 			i(224673),	-- Alighted Cuffs
@@ -19,8 +17,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			i(224667),	-- Alighted Sandals
 			i(224671),	-- Alighted Shoulderpads
 		}),
+		filter(FINGER_F, {
+			i(224660),	-- Gem-Studded Band
+		}),
 		filter(LEATHER, {
-			--wq gear
 			i(224681),	-- Lockstitch Bindings
 			i(224678),	-- Lockstitch Breeches
 			i(224679),	-- Lockstitch Epaulets
@@ -31,10 +31,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			i(224675),	-- Lockstitch Waders
 		}),
 		filter(MAIL, {
-			--wq gear
+			i(224688),	-- Chitinoid Belt
+			i(224689),	-- Chitinoid Bracers
+			i(224682),	-- Chitinoid Chainmail
+			i(224685),	-- Chitinoid Coif
+			i(224686),	-- Chitinoid Greaves
+			i(224684),	-- Chitinoid Grips
+			i(224687),	-- Chitinoid Shoulderguards
+			i(224683),	-- Chitinoid Striders
+		}),
+		filter(NECK_F, {
+			i(224665),	-- Gem-Studded Pendant
 		}),
 		filter(PLATE, {
-			--wqs gear
 			i(224697),	-- Sedimentary Armplates
 			i(224690),	-- Sedimentary Breastplate
 			i(224692),	-- Sedimentary Gauntlets
@@ -45,14 +54,27 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			i(224691),	-- Sedimentary Sabatons
 		}),
 		filter(TRINKET_F, {
-			i(224665),	-- Gem-Studded Pendant // Unsure if it is zone specific (Hallowfall) or generic xpac rewards, neck
-			i(224660),	-- Gem-Studded Band // Isle of Dorn, ring
-			i(225649),	-- Quickwick Candlestick // Hallowfall, trinket
-			i(225647),	-- Shining Arathor Insignia // Hallowfall, trinket, received instead of trinket above from WQs
-			i(225654),	-- Rapid Evolution Serum // Hallowfall, trinket
+			i(225649),	-- Quickwick Candlestick
+			i(225647),	-- Shining Arathor Insignia
+			i(225654),	-- Rapid Evolution Serum
 		}),
 		n(WEAPONS, {
-			i(224707),	-- Ancient Forged Spear // unsure if it zone specific (Azj-Kahet) or genereic xpac reward
+			i(224702),	-- Ancient Forged Blade
+			i(224700),	-- Ancient Forged Cudgel
+			i(224711),	-- Ancient Forged Curio
+			i(224713),	-- Ancient Forged Glaive
+			i(224701),	-- Ancient Forged Hammer
+			i(224705),	-- Ancient Forged Mace
+			i(224708),	-- Ancient Forged Polearm
+			i(224699),	-- Ancient Forged Ritual Knife
+			i(224698),	-- Ancient Forged Shank
+			i(224712),	-- Ancient Forged Shield
+			i(224704),	-- Ancient Forged Slugthrower
+			i(224707),	-- Ancient Forged Spear
+			i(224710),	-- Ancient Forged Spellstaff
+			i(224709),	-- Ancient Forged Staff
+			i(224703),	-- Ancient Forged Sword
+			i(224706),	-- Ancient Forged Warhammer
 		}),
 		--
 		i(224784, {	-- Pinnacle Cache

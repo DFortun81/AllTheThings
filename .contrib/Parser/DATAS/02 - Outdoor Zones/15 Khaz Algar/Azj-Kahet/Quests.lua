@@ -33,8 +33,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 211699 },	-- Faerin
 				["coord"] = { 32.1, 46.6, AZJ_KAHET },
 				["g"] = {
-					i(225521),	-- Rescued Aeroknight's Vambraces
+					i(225524),	-- Rescued Aeroknight's Gloves
 					i(225530),	-- Rescued Aeroknight's Helmet
+					i(225540),	-- Rescued Aeroknight's Mantle
+					i(225521),	-- Rescued Aeroknight's Vambraces
 				},
 			}),
 			q(78348, {	-- Friends in Low Places
@@ -72,8 +74,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 216213 },	-- Spindle
 				["coord"] = { 45.7, 60.1, AZJ_KAHET },
 				["g"] = {
+					i(225514),	-- Webweave Belt
 					i(225533),	-- Webweave Grips
 					i(225516),	-- Webweave Stompers
+					i(225529),	-- Webweave Wristguards
 				},
 			}),
 			q(78392, {	-- The Tangled Web
@@ -166,7 +170,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 46.9, 26.2, AZJ_KAHET },
 				["g"] = {
 					i(225538),	-- General's Pungent Armor
+					i(225526),	-- General's Pungent Legguards
 					i(225535),	-- General's Pungent Mantle
+					i(225515),	-- General's Pungent Wraps
 				},
 			}),
 			q(78250, {	-- General Admission
@@ -216,7 +222,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 48.6, 29.9, AZJ_KAHET },
 				["g"] = {
 					i(225520),	-- Smuggled Nerubian Belt
+					i(225523),	-- Smuggled Nerubian Boots
 					i(225537),	-- Smuggled Nerubian Cuffs
+					i(225513),	-- Smuggled Nerubian Trousers
 				},
 			}),
 			q(78256, {	-- The General's Consensus

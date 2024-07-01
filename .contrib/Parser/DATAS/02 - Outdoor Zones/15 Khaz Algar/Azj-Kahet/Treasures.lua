@@ -113,7 +113,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 31.6, 20.7, 2213 },
 				["questID"] = 82720,
 				["g"] = {
-					i(225513),	-- Bloodied Idol
+					i(225543),	-- Bloodied Idol
 					i(223899),	-- Shadowed Appendage
 				},
 			}),
