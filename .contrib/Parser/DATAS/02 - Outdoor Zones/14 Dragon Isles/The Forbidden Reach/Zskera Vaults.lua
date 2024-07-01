@@ -515,7 +515,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 30.5, 57.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75146,
 							["g"] = {
-								i(204405),	-- Stuffed Bear
+								i(204405, {	-- Stuffed Bear
+									-- #if BEFORE 11.0
+									["description"] = "This will be a Toy in 11.0.",
+									-- #endif
+								}),
 							},
 						}),
 						o(9000000, {	-- Wind Sculpted Stone	--TODO: fake ID
