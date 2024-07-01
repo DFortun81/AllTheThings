@@ -30,6 +30,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							i(191915),	-- Shaggy (PET!)
 						},
 					}),
+					i(202196, {	-- Zskera Vault Key
+						["timeline"] = { ADDED_10_2_0 }
+						["cost"] = {
+							{ "c", DRAGON_ISLES_SUPPLIES, 50 },
+						},
+					}),
 				},
 			}),
 			n(200987, {	-- Fusethrian <Munitions & Aspiring Sous-chef>
@@ -64,6 +70,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					i(197626, {	-- Windborne Velocidrake: Exposed Finned Neck (DM!)
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 2500 },
+						},
+					}),
+					i(202196, {	-- Zskera Vault Key
+						["timeline"] = { ADDED_10_2_0 }
+						["cost"] = {
+							{ "c", DRAGON_ISLES_SUPPLIES, 50 },
 						},
 					}),
 				},
@@ -252,6 +264,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							{ "c", ELEMENTAL_OVERFLOW, 100000 },
 						},
 					}),
+					i(202196, {	-- Zskera Vault Key
+						["timeline"] = { ADDED_10_2_0 }
+						["cost"] = {
+							{ "c", DRAGON_ISLES_SUPPLIES, 50 },
+						},
+					}),
 				},
 			}),
 			n(202445, {	-- Trader Hag'arth
@@ -373,6 +391,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					i(204481, {	-- Morqut Hearth Totem
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 2000 },
+						},
+					}),
+					i(202196, {	-- Zskera Vault Key
+						["timeline"] = { ADDED_10_2_0 }
+						["cost"] = {
+							{ "c", DRAGON_ISLES_SUPPLIES, 50 },
 						},
 					}),
 				},
