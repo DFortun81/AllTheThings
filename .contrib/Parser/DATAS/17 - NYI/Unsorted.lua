@@ -3275,8 +3275,6 @@ root(ROOTS.Unsorted, {
 			i(226176),	-- Love's Last Grasp
 			i(226177),	-- Recipe: Outsider's Provisions
 			i(226191),	-- Web Pet Leash
-			i(226193),	-- Cache of Nerubian Treasures
-			i(226194),	-- Cache of Nerubian Treasures
 			i(226202),	-- Echoing Flux
 			i(226204),	-- Fresh Parchment
 			i(226205),	-- Purified Water

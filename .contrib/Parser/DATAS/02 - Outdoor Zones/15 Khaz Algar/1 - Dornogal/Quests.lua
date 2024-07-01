@@ -442,13 +442,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(225741),	-- Titan Disk Fragment (QI!)
 				},
 			}),
-			-- Weekly Events area?
-			q(83366, {	-- The World Awaits
-				["isWeekly"] = true,
-				["provider"] = { "n", 226919 },	-- Archivist Frithrun
-				["coord"] = { 46.5, 49.3, DORNOGAL },
-			}),
-			--
 			--This one is wrapper for other quests? Probably also will be fired after turn in 'actual' quests
 			--q(xx, {	-- The Call of the Worldsoul
 			--	["isWeekly"] = true,
