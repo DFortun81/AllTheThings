@@ -135,7 +135,7 @@ app.HandleEvent = function(eventName, ...)
 	-- to the refresh event. would rather spread that out over multiple frames so it remains unnoticeable
 	-- additionally, since some events can process on a Runner, then following Events need to also be pushed onto
 	-- the Event Runner so that they execute in the expected sequence
-	if RunnerEvents[eventName] or Runner.IsRunning() then
+	if RunnerEvents[eventName] --[[or Runner.IsRunning()]] then
 		-- app.PrintDebug("HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.LockedWarning),...)
 		-- Runner.Run(EventStart, eventName, ...)
 		for i,handler in ipairs(EventHandlers[eventName]) do
