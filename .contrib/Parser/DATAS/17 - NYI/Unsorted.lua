@@ -2921,7 +2921,7 @@ root(ROOTS.Unsorted, {
 				i(224891),	-- Gundargaz Gauntlets
 			}),
 			n(RARES, {
-				i(221033),	-- Hyperactive Stormclaw
+
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
 				i(221204),	-- Spore Giant's Stompers

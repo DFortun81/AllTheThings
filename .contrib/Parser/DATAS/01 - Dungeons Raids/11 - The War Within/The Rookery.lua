@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["g"] = {
 						i(221037),	-- Charged Rookfeather Wraps
 						i(219294),	-- Charged Stormrook Plume
-						i(224707),	-- Hyperactive Stormclaw
+						i(221033),	-- Hyperactive Stormclaw
 						i(221036),	-- Tempestwind Handlers
 						i(221034),	-- Thunder-Clad Legguards
 						i(221035),	-- Treads of the Galvanic Skysoarer
