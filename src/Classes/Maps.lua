@@ -201,14 +201,13 @@ if app.GameBuildVersion < 30000 then
 		app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
 	end
 else
-	local Callback, DelayedCallback = app.CallbackHandlers.Callback, app.CallbackHandlers.DelayedCallback
 	-- After Wrath Classic you don't need to wait for a bit before checking.
-	local function RawUpdateLocation()
+	local UpdateLocationCoroutine = function()
 		-- Acquire the new map ID.
-		local mapID = GetCurrentMapID() or 0
-		if mapID == 0 then
-			Callback(RawUpdateLocation)
-			return
+		local mapID = GetCurrentMapID();
+		while not mapID do
+			coroutine.yield();
+			mapID = GetCurrentMapID();
 		end
 		if CurrentMapID ~= mapID then
 			CurrentMapID = mapID;
@@ -217,9 +216,8 @@ else
 			app.HandleEvent("OnCurrentMapIDChanged");
 		end
 	end
-	-- Some of these location events trigger tons of times all at once
 	UpdateLocation = function()
-		DelayedCallback(RawUpdateLocation, 0.25)
+		app:StartATTCoroutine("UpdateLocation", UpdateLocationCoroutine);
 	end
 end
 app.AddEventHandler("OnReady", UpdateLocation);
