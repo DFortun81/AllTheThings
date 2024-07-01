@@ -2983,6 +2983,9 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						{ "i", BONES_OF_MANNOROTH, 20 }
 					},
 					["timeline"] = { "added 10.2.7.55142" },
+					["g"] = {
+						i(224459),	-- Tusks of Mannoroth
+					},
 				}),
 				-- Classes
 				clWithoutLock(DEATHKNIGHT, {
@@ -3503,7 +3506,4 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			})),
 		},
 	}),
-}))));
-root(ROOTS.HiddenQuestTriggers,  applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
-	q(84258),	-- Upon using item 224459 (Tusks of Mannoroth) SpellID 460105
 }))));
