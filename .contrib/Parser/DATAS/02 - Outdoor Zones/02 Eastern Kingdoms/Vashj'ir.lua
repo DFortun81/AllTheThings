@@ -154,11 +154,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #endif
 				}),
-				achWithRep(4881, 1135),	-- The Earthen Ring
+				achWithRep(4881, 1135, {	-- The Earthen Ring
+					["maps"] = {
+						VASHJIR_ABYSSAL_DEPTHS,
+						VASHJIR_KELPTHAR_FOREST,
+						VASHJIR_SHIMMERING_EXPANSE,
+					},
+				}),
 			}),
 			n(FACTIONS, {
 				faction(1135, {	-- The Earthen Ring
 					["icon"] = "Interface\\Icons\\inv_misc_tabard_tolvir",
+					["maps"] = {
+						VASHJIR_ABYSSAL_DEPTHS,
+						VASHJIR_KELPTHAR_FOREST,
+						VASHJIR_SHIMMERING_EXPANSE,
+					},
 				}),
 			}),
 			m(VASHJIR_ABYSSAL_DEPTHS, {
@@ -674,34 +685,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					}),
 					n(RARES, {
-						n(50005, {	-- Poseidus
-							["coords"] = {
-								{ 39.4, 71.9, VASHJIR_ABYSSAL_DEPTHS },
-								{ 40.4, 73.8, VASHJIR_ABYSSAL_DEPTHS },
-								{ 41.0, 76.6, VASHJIR_ABYSSAL_DEPTHS },
-								{ 42.2, 76.0, VASHJIR_ABYSSAL_DEPTHS },
-								{ 41.8, 73.4, VASHJIR_ABYSSAL_DEPTHS },
-							},
-							["groups"] = {
-								i(67151),	-- Subdued Seahorse (MOUNT!)
-								i(67132),	-- Grips of the Failed Immortal
-								i(67140),	-- Drape of Inimitable Fate
-								i(67131),	-- Ritssyn's Ruminous Drape
-								i(67150),	-- Arrowsinger Legguards
-								i(67143),	-- Icebone Hauberk
-								i(67147),	-- Je'Tze's Sparkling Tiara
-								i(67146),	-- Woundsplicer Handwraps
-								i(67149),	-- Heartbound Tome
-								i(67148),	-- Kilt of Trollish Dreams
-								i(67144),	-- Pauldrons of Edward the Odd
-								i(67142),	-- Zom's Electrostatic Cloak
-								i(67141),	-- Corefire Legplates
-								i(67133),	-- Dizze's Whirling Robe
-								i(67134),	-- Dory's Finery
-								i(67129),	-- Signet of High Arcanist Savor
-								i(67130),	-- Dorian's Lost Necklace
-							},
-						}),
 						n(50050, {	-- Shok'sharak
 							["coords"] = {
 								{ 41.8, 32.8, VASHJIR_ABYSSAL_DEPTHS },
@@ -728,9 +711,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 19.0, 77.4, VASHJIR_ABYSSAL_DEPTHS },
 							},
 						}),
-					}),
-					n(ZONE_DROPS, {
-						i(65649),	-- Technique: Origami Slime
 					}),
 				},
 			}),
@@ -1266,31 +1246,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					}),
+					-- #if AFTER 5.3.0
+					-- These vendors have nothing useful to show until after 5.3.0.
 					n(VENDORS, {
 						n(36915, {	-- Erunak Stonespeaker <The Earthen Ring>
 							["coord"] = { 45.0, 23.2, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
-							-- #if AFTER 5.3.0
 							["sym"] = {
 								{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster> },
 								{ "pop" },						-- Pop the Headers
 							},
-							-- #endif
 						}),
 						n(41618, {	-- Erunak Stonespeaker <The Earthen Ring>
 							["coord"] = { 38.8, 31.6, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
-							-- #if AFTER 5.3.0
 							["sym"] = {
 								{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster> },
 								{ "pop" },						-- Pop the Headers
 							},
-							-- #endif
 						}),
 					}),
-					n(ZONE_DROPS, {
-						i(65649),	-- Technique: Origami Slime
-					}),
+					-- #endif
 				},
 			}),
 			m(VASHJIR_SHIMMERING_EXPANSE, {
@@ -2316,33 +2292,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					}),
 					n(RARES, {
-						n(50005, {	-- Poseidus
-							["coords"] = {
-								{ 66.4, 44.2, VASHJIR_SHIMMERING_EXPANSE },
-								{ 46.2, 48.6, VASHJIR_SHIMMERING_EXPANSE },
-								{ 57.2, 80.8, VASHJIR_SHIMMERING_EXPANSE },
-								{ 38.5, 67.0, VASHJIR_SHIMMERING_EXPANSE },
-							},
-							["groups"] = {
-								i(67151),	-- Subdued Seahorse (MOUNT!)
-								i(67132),	-- Grips of the Failed Immortal
-								i(67140),	-- Drape of Inimitable Fate
-								i(67131),	-- Ritssyn's Ruminous Drape
-								i(67150),	-- Arrowsinger Legguards
-								i(67143),	-- Icebone Hauberk
-								i(67147),	-- Je'Tze's Sparkling Tiara
-								i(67146),	-- Woundsplicer Handwraps
-								i(67149),	-- Heartbound Tome
-								i(67148),	-- Kilt of Trollish Dreams
-								i(67144),	-- Pauldrons of Edward the Odd
-								i(67142),	-- Zom's Electrostatic Cloak
-								i(67141),	-- Corefire Legplates
-								i(67133),	-- Dizze's Whirling Robe
-								i(67134),	-- Dory's Finery
-								i(67129),	-- Signet of High Arcanist Savor
-								i(67130),	-- Dorian's Lost Necklace
-							},
-						}),
 						n(50052, {	-- Burgy Blackheart
 							["coord"] = { 57.0, 69.6, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
@@ -2363,16 +2312,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
+					-- #if AFTER 9.2.5
 					n(SPECIAL, {
 						o(373438, {	-- Coilclutch Vine
-							["timeline"] = { ADDED_9_2_5 },
 							["coord"] = { 34.7, 75, VASHJIR_SHIMMERING_EXPANSE },
 							["cost"] = {{"i",187662,1}},	-- Strange Goop
+							["timeline"] = { ADDED_9_2_5 },
 							["g"] = {
 								i(187916),	-- Coilclutch Vine
 							},
 						}),
 					}),
+					-- #endif
 					n(VENDORS, {
 						n(50324, {	-- Provisioner Arok <Earthen Ring Quartermaster>
 							["coord"] = { 49.1, 42.1, VASHJIR_SHIMMERING_EXPANSE },
@@ -2393,11 +2344,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					}),
-					n(ZONE_DROPS, {
-						-- Crieve NOTE: And this... literally copy+pasted.
-						-- Might touch this up before Cataclysm Classic after all.
-						i(65649),	-- Technique: Origami Slime
-					}),
+				},
+			}),
+			n(ZONE_DROPS, {
+				["maps"] = {
+					VASHJIR_ABYSSAL_DEPTHS,
+					VASHJIR_KELPTHAR_FOREST,
+					VASHJIR_SHIMMERING_EXPANSE,
+				},
+				["groups"] = {
+					i(65649),	-- Technique: Origami Slime
 				},
 			}),
 		},

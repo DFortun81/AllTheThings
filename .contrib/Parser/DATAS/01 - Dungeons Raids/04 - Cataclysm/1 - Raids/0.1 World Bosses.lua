@@ -24,6 +24,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					50056,	-- Garr
 					50089,	-- Julak-Doom
 					50009,	-- Mobus
+					50005,	-- Poseidus
 					50061,	-- Xariona
 				},
 				["groups"] = {
@@ -120,6 +121,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						["OnUpdate"] = CATA_CLASSIC_WORLD_BOSS_ONUPDATE,
 						-- #endif
 					}),
+				},
+			}),
+			n(50005, {	-- Poseidus
+				["coords"] = {
+					{ 39.4, 71.9, VASHJIR_ABYSSAL_DEPTHS },
+					{ 40.4, 73.8, VASHJIR_ABYSSAL_DEPTHS },
+					{ 41.0, 76.6, VASHJIR_ABYSSAL_DEPTHS },
+					{ 42.2, 76.0, VASHJIR_ABYSSAL_DEPTHS },
+					{ 41.8, 73.4, VASHJIR_ABYSSAL_DEPTHS },
+					{ 66.4, 44.2, VASHJIR_SHIMMERING_EXPANSE },
+					{ 46.2, 48.6, VASHJIR_SHIMMERING_EXPANSE },
+					{ 57.2, 80.8, VASHJIR_SHIMMERING_EXPANSE },
+					{ 38.5, 67.0, VASHJIR_SHIMMERING_EXPANSE },
+				},
+				["maps"] = { VASHJIR },
+				["isRaid"] = true,
+				["groups"] = {
+					i(67151),	-- Subdued Seahorse (MOUNT!)
 				},
 			}),
 			n(50061, {	-- Xariona
