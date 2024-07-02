@@ -232,7 +232,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(20, {	-- Grom'gol, Stranglethorn
 					["cr"] = 1387,	-- Thysta <Wind Rider Master>
-					["coord"] = {
+					["coords"] = {
 						-- #if AFTER CATA
 						{ 39.0, 51.2, NORTHERN_STRANGLETHORN },
 						-- #else
