@@ -334,6 +334,7 @@ HeaderAssignments = {
 	["Sinister Gladiator: Battle for Azeroth Season 2"] = -1000909,
 	["Skyriding"] = -1000920,
 	["Sniffenseeking"] = -1000938,
+	["Snuffling"] = -1000963,
 	["SOD - Soul Brokers"] = -1000378,
 	["SOD - Wild Polymorph"] = -1000377,
 	["Soulshape Forms"] = -1000090,
@@ -474,4 +475,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000962;
+NextHeaderID = -1000964;
