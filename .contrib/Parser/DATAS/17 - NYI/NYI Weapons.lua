@@ -746,43 +746,37 @@ root(ROOTS.NeverImplemented, {
 		})),
 	}),
 	n(WEAPONS, {
-		i(77559),	-- Replica Grand Marshal's left Hand Blade
-		i(77583),	-- Replica High Warlords Left Claw
-		i(77588),	-- Replica High Warlord's Quickblade
-		i(77586),	-- Replica High Warlord's Spellblade
-		i(77570),	-- Replica High Warlord's Battle Mace
-		i(77587),	-- Replica High Warlord's Destroyer
-		i(32187),	-- Chancellor's Heavy Crossbow
-		i(32188),	-- Chancellor's Fleshslicer
-		i(32189),	-- Chancellor's Ripper
-		i(32191),	-- Chancellor's Battletome
-		i(32185),	-- Chancellor's War Staff
-		i(32178),	-- Chancellor's Shanker
-		i(32184),	-- Chancellor's Painsaw
-		i(32181),	-- Chancellor's Bonegrinder
-		i(32174),	-- Chancellor's Cleaver
-		i(32182),	-- Chancellor's Decapitator
-		i(32177),	-- Chancellor's Quickblade
-		i(32180),	-- Chancellor's Slicer
-		i(32192),	-- Chancellor's Barricade
-		i(32175),	-- Chancellor's Hacker
-		i(32190),	-- Chancellor's Spellblade
-		i(32183),	-- Chancellor's Maul
-		i(32186),	-- Chancellor's Warblade
-		i(32173),	-- Chancellor's Bonecracker
-		i(32176),	-- Chancellor's Pummeler
-		i(32179),	-- Chancellor's Shiv
-		i(23458),	-- High Warlord's Spellblade
-		i(23462),	-- High Warlord's Tome of Destruction
-		i(23463),	-- High Warlord's Tome of Mending
-		i(23457),	-- High Warlord's Destroyer
-		i(23461),	-- High Warlord's Quickblade
-		i(23459),	-- High Warlord's Battle Mace
-		i(120272),	-- High Warlord's Razor
-		i(120273),	-- High Warlord's Razor
-	}),
-	n(WEAPONS, {
 		expansion(EXPANSION.TBC, {
+			-- 2.x.x
+			n(P2xx, {
+				i(32187),	-- Chancellor's Heavy Crossbow
+				i(32188),	-- Chancellor's Fleshslicer
+				i(32189),	-- Chancellor's Ripper
+				i(32191),	-- Chancellor's Battletome
+				i(32185),	-- Chancellor's War Staff
+				i(32178),	-- Chancellor's Shanker
+				i(32184),	-- Chancellor's Painsaw
+				i(32181),	-- Chancellor's Bonegrinder
+				i(32174),	-- Chancellor's Cleaver
+				i(32182),	-- Chancellor's Decapitator
+				i(32177),	-- Chancellor's Quickblade
+				i(32180),	-- Chancellor's Slicer
+				i(32192),	-- Chancellor's Barricade
+				i(32175),	-- Chancellor's Hacker
+				i(32190),	-- Chancellor's Spellblade
+				i(32183),	-- Chancellor's Maul
+				i(32186),	-- Chancellor's Warblade
+				i(32173),	-- Chancellor's Bonecracker
+				i(32176),	-- Chancellor's Pummeler
+				i(32179),	-- Chancellor's Shiv
+				i(23458),	-- High Warlord's Spellblade
+				i(23462),	-- High Warlord's Tome of Destruction
+				i(23463),	-- High Warlord's Tome of Mending
+				i(23457),	-- High Warlord's Destroyer
+				i(23461),	-- High Warlord's Quickblade
+				i(23459),	-- High Warlord's Battle Mace
+			}),
+
 			-- 2.0.1
 			expansion(EXPANSION.TBC, 0.1, bubbleDown({ ["timeline"] = { CREATED_2_0_1 } }, {
 				-- #if BEFORE 4.0.1
@@ -823,6 +817,15 @@ root(ROOTS.NeverImplemented, {
 			})),
 		}),
 		expansion(EXPANSION.CATA, {
+			-- 4.x.x
+			n(P4xx, {
+				i(77559),	-- Replica Grand Marshal's left Hand Blade
+				i(77583),	-- Replica High Warlords Left Claw
+				i(77588),	-- Replica High Warlord's Quickblade
+				i(77586),	-- Replica High Warlord's Spellblade
+				i(77570),	-- Replica High Warlord's Battle Mace
+				i(77587),	-- Replica High Warlord's Destroyer
+			}),
 			n(SEASON_VICIOUS, {
 				i(64693),	-- Bloodthirsty Gladiator's Barrier
 				i(64694),	-- Bloodthirsty Gladiator's Baton of Light
@@ -863,6 +866,114 @@ root(ROOTS.NeverImplemented, {
 			i(54553),	-- Kliklak's Fearsome Greatsword
 		}),
 		expansion(EXPANSION.MOP, {
+			n(SEASON_PRIDEFUL, {
+				i(102611),	-- Prideful Gladiator's Bonegrinder
+				i(102613),	-- Prideful Gladiator's Heavy Crossbow
+				i(102595),	-- Prideful Gladiator's Staff
+				i(103337),	-- Prideful Gladiator's Bonegrinder
+				i(103375),	-- Prideful Gladiator's Heavy Crossbow
+				i(103394),	-- Prideful Gladiator's Staff
+				i(102985),	-- Prideful Gladiator's Bonegrinder
+				i(103003),	-- Prideful Gladiator's Heavy Crossbow
+				i(103021),	-- Prideful Gladiator's Staff
+				i(105955),	-- Wrathful Gladiator's Razor (Elite, added in 5.4 ????)??
+				i(105956),	-- Wrathful Gladiator's Razor [Not implemented, other version was instead]
+			}),
+			n(SEASON_GRIEVOUS, {
+				i(100185),	-- Grievous Gladiator's Bonegrinder
+				i(100241),	-- Grievous Gladiator's Heavy Crossbow
+				i(100278),	-- Grievous Gladiator's Staff
+				i(100554),	-- Grievous Gladiator's Bonegrinder
+				i(103178),	-- Grievous Gladiator's Heavy Crossbow
+				i(103197),	-- Grievous Gladiator's
+				i(103140),	-- Grievous Gladiator's Bonegrinder
+				i(100556),	-- Grievous Gladiator's Heavy Crossbow
+				i(100537),	-- Grievous Gladiator's Staff
+				i(102808),	-- Grievous Gladiator's Bonegrinder
+				i(102810),	-- Grievous Gladiator's Heavy Crossbow
+				i(102792),	-- Grievous Gladiator's Staff
+				i(100186),	-- Grievous Gladiator's Bonegrinder
+				i(100242),	-- Grievous Gladiator's Heavy Crossbow
+				i(100279),	-- Grievous Gladiator's Staff
+				i(100535),	-- Grievous Gladiator's Touch of Defeat
+				i(100536),	-- Grievous Gladiator's Spellblade
+			}),
+			n(SEASON_TYRANNICAL, {
+				i(91089),	-- Tyrannical Gladiator's Bonegrinder
+				i(91394),	-- Tyrannical Gladiator's Fleshslicer
+				i(91107),	-- Tyrannical Gladiator's Longbow
+				i(91307),	-- Tyrannical Gladiator's Pike
+				i(91201),	-- Tyrannical Gladiator's Rifle
+				i(99833),	-- Tyrannical Gladiator's Shiv
+				i(99939),	-- Tyrannical Gladiator's Baton of Light
+				i(99767),	-- Tyrannical Gladiator's Bonegrinder
+				i(99934),	-- Tyrannical Gladiator's Fleshslicer
+				i(99780),	-- Tyrannical Gladiator's Longbow
+				i(99892),	-- Tyrannical Gladiator's Pike
+				i(99834),	-- Tyrannical Gladiator's Rifle
+				i(99804),	-- Tyrannical Gladiator's Touch of Deafeat
+				i(94324),	-- Tyrannical Gladiator's Bonegrinder
+				i(94314),	-- Tyrannical Gladiator's Fleshslicer
+				i(94303),	-- Tyrannical Gladiator's Longbow
+				i(94319),	-- Tyrannical Gladiator's Pike
+				i(94309),	-- Tyrannical Gladiator's Rifle
+				i(99962),	-- Tyrannical Gladiator's Shiv
+				i(99969),	-- Tyrannical Gladiator's Baton of Light
+				i(99985),	-- Tyrannical Gladiator's Bonegrinder
+				i(99975),	-- Tyrannical Gladiator's Fleshslicer
+				i(99964),	-- Tyrannical Gladiator's Longbow
+				i(99980),	-- Tyrannical Gladiator's Pike
+				i(99970),	-- Tyrannical Gladiator's Rifle
+				i(99966),	-- Tyrannical Gladiator's Touch of Deafeat
+				i(91200),	-- Tyrannical Gladiator's Shiv
+			}),
+			n(SEASON_MALEVOLENT, {
+				i(84714),	-- Dreadful Gladiator's Barrier
+				i(84704),	-- Dreadful Gladiator's Baton of Light
+				i(84723),	-- Dreadful Gladiator's Battle Staff
+				i(84719),	-- Dreadful Gladiator's Bonecracker
+				i(84721),	-- Dreadful Gladiator's Bonegrinder
+				i(84701),	-- Dreadful Gladiator's Cleaver
+				i(84707),	-- Dreadful Gladiator's Decapitator
+				i(84711),	-- Dreadful Gladiator's Endgame
+				i(84724),	-- Dreadful Gladiator's Energy Staff
+				i(84697),	-- Dreadful Gladiator's Fleshslicer
+				i(84720),	-- Dreadful Gladiator's Gavel
+				i(84717),	-- Dreadful Gladiator's Greatsword
+				i(84702),	-- Dreadful Gladiator's Hacker
+				i(84718),	-- Dreadful Gladiator's Heavy Crossbow
+				i(84705),	-- Dreadful Gladiator's Longbow
+				i(84722),	-- Dreadful Gladiator's Pike
+				i(84700),	-- Dreadful Gladiator's Pummeler
+				i(84716),	-- Dreadful Gladiator's Quickblade
+				i(84715),	-- Dreadful Gladiator's Redoubt
+				i(84699),	-- Dreadful Gladiator's Render
+				i(84712),	-- Dreadful Gladiator's Reprieve
+				i(84706),	-- Dreadful Gladiator's Rifle
+				i(84696),	-- Dreadful Gladiator's Ripper
+				i(84708),	-- Dreadful Gladiator's Shanker
+				i(84713),	-- Dreadful Gladiator's Shield Wall
+				i(84709),	-- Dreadful Gladiator's Shiv
+				i(84698),	-- Dreadful Gladiator's Slasher
+				i(84710),	-- Dreadful Gladiator's Slicer
+				i(84695),	-- Dreadful Gladiator's Spellblade
+				i(84725),	-- Dreadful Gladiator's Staff
+				i(84703),	-- Dreadful Gladiator's Touch of Defeat
+				i(84899),	-- Malevolent Gladiator's Baton of Light
+				i(84897),	-- Malevolent Gladiator's Heavy Crossbow
+				i(85118),	-- Malevolent Gladiator's Shiv
+				i(84895),	-- Malevolent Gladiator's Shiv
+				i(97846),	-- Malevolent Gladiator's Spellblade
+				i(84898),	-- Malevolent Gladiator's Touch of Defeat
+				i(91747),	-- Malevolent Gladiator's Fleshslicer
+				i(91751),	-- Malevolent Gladiator's Slasher
+				i(84893),	-- Malevolent Gladiator's Fleshslicer
+				i(84968),	-- Malevolent Gladiator's Slicer
+				i(94899),	-- Malevolent Gladiator's Baton of Light
+				i(94898),	-- Malevolent Gladiator's Touch of Death
+				--i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- in NYI Sourceless
+			}),
+			--
 			i(84085),	-- Dreadwaste Meditation Staff
 			i(84086),	-- Dreadwaste Diviner's Rod
 			i(84527),	-- Hidden Pass Meditation Staff
@@ -871,6 +982,11 @@ root(ROOTS.NeverImplemented, {
 			i(80981),	-- Scavenged Rotor Blade
 		}),
 		expansion(EXPANSION.WOD, {
+			-- 6.0.2
+			expansion(EXPANSION.WOD, 0.2, bubbleDown({ ["timeline"] = { CREATED_6_0_2 } }, {
+				i(120272),	-- High Warlord's Razor
+				i(120273),	-- High Warlord's Razor
+			})),
 			n(SEASON_PRIMAL, {
 				i(180460),	-- Primal Combatant's Decapitator
 				i(111076),	-- Primal Gladiator's Staff (H), none elite

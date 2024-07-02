@@ -2080,6 +2080,15 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			}),
 		})),
 
+		-- 5.1.0
+		expansion(EXPANSION.MOP, 1.0, bubbleDown({ ["timeline"] = { CREATED_5_1_0 } }, {
+			n(SEASON_TYRANNICAL, {
+				cl(SHAMAN, {
+					i(91799),	-- Tyrannical Gladiator's Mail Leggings
+				}),
+			}),
+		})),
+
 		-- 5.2.0
 		expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { CREATED_5_2_0 } }, {
 			-- Throne of Thunder (Thunderforged & Heroic Thunderforged)
