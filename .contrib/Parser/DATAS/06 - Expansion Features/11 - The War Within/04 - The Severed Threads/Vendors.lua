@@ -6,7 +6,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		n(VENDORS, {
 			n(220867, {	-- Y'tekhi
 				["coord"] = { 57.3, 42.5, AZJ_KAHET },
-				["g"] = bubbleDownRep(FACTION_SEVERED_THEADS, {
+				["g"] = bubbleDownRep(FACTION_THE_SEVERED_THREADS, {
 					{		-- RENOWN 1 --
 					}, {	-- RENOWN 2 --
 						i(228420, {	-- Unsevered Thread
