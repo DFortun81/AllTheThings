@@ -1534,9 +1534,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(8892, {	-- Situation at Sunsail Anchorage
 					["qg"] = 15939,	-- Ranger Degolien
-					-- #if BEFORE LEGION
-					["sourceQuest"] = 9256,	-- Fairbreeze Village	-- TODO: Confirm this on Beta?
-					-- #endif
+					["sourceQuest"] = 9256,	-- Fairbreeze Village
 					["coord"] = { 43.3, 70.8, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),
