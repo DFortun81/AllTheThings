@@ -615,7 +615,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			["description"] = "Can only be caught in Deadwind Pass.",
 			["timeline"] = {ADDED_2_3_0},
 		})),
-		applyclassicphase(TBC_PHASE_FOUR, i(33823, {	-- Crescent-Tail Skullfish
+		applyclassicphase(TBC_PHASE_FOUR, i(33824, {	-- Crescent-Tail Skullfish
 			["description"] = "Can only be caught in Deadwind Pass.",
 			["timeline"] = {ADDED_2_3_0},
 		})),
