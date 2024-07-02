@@ -22,8 +22,8 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 			title(66),	-- Iron Chef <Name>
 		})),
 
-		-- Unknown
-		n(P3xx, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+		-- 3.x.x
+		n(P3xx, {
 			title(83),	-- <Name>, Champion of Elune
 			title(91),	-- <Name>, Hero of Northrend
 			title(84),	-- <Name>, Hero of Orgrimmar
@@ -36,7 +36,7 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 			title(63),	-- Assassin <Name>
 			title(85),	-- Plainsrunner <Name>
 			title(57),	-- Prophet <Name>
-		})),
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3

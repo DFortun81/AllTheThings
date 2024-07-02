@@ -569,6 +569,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		}),
 	}),
 	expansion(EXPANSION.CATA, {
+		-- TODO: Sort into patches
 		q(26559),	-- [NYI] Breaking Out is Hard to Do
 		q(29033),	-- [PH] Bridle Buy-In
 		q(27543),	-- [TEMP PH] What We Have Done
@@ -1817,7 +1818,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 6.x.x
-		n(P6xx, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+		n(P6xx, {
 			q(32785),
 			q(32786),
 			q(32787),
@@ -2066,7 +2067,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(36869),
 			q(36910),
 			q(36949),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.1
@@ -3190,7 +3191,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 7.x.x
-		n(P7xx, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+		n(P7xx, {
 			q(39286, { ["name"] = "A Gruesome Task", }),	-- A Gruesome Task
 			q(41044, { ["name"] = "Attack and Assail!", }),	-- Attack and Assail!
 			q(45631, { ["name"] = "Avocation of Antonidas", }),	-- Avocation of Antonidas
@@ -3232,7 +3233,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(41883, { ["name"] = "Whispers from the Shadows", }),	-- Whispers from the Shadows
 			q(47811, { ["name"] = "Whispers from the Shadows", }),	-- Whispers from the Shadows
 			q(48395, { ["name"] = "Whispers from the Shadows", }),	-- Whispers from the Shadows
-		})),
+		}),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
@@ -5724,7 +5725,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 
 		-- 8.x.x
-		n(P8xx, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+		n(P8xx, {
 			q(54168, {
 				["description"] = "Category: |cFFf09f26Free T-Shirt Day|r",
 				["isDaily"] = 1,
@@ -5745,7 +5746,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["description"] = "Type: |cFFf09f26PvP|r\nCategory: |cFFf09f26Korrak's Revenge|r",
 				["lvl"] = 10,
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1

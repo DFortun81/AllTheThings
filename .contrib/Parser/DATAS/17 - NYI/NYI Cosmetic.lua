@@ -3,11 +3,14 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	expansion(EXPANSION.CLASSIC, {
-		i(6834),	-- Black Tuxedo
+		-- 1.x.x
+		n(P1xx, {
+			i(6834),	-- Black Tuxedo
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, 2.0, bubbleDown({ ["timeline"] = { CREATED_7_2_0 } }, {
+		expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
 			i(147379),	-- Wooden Toy Axe [H] used to apply the mog
 			i(147378),	-- Wooden Toy Sword [A] (Visual usage for toy weapon set)
 			--
@@ -18,7 +21,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 			i(162641),	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			i(162640),	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			i(162638),	-- Wooden Toy Helm [H] (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
@@ -27,7 +30,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			i(194318),	-- Book of Ancient Lore
 			i(193069),	-- Climber's Pack
 			i(194329),	-- Elaborate Reliquary Candelabra
@@ -100,7 +103,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.0.5
-		expansion(EXPANSION.DF, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+		expansion(EXPANSION.DF, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 				------ TRADING POST ------
 			n(ARMOR, {
 				i(190672),	-- Deathguard Acolyte's Cloak
@@ -206,7 +209,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				------ TRADING POST ------
 			n(SETS, {
 				i(190796),	-- Ensemble: Slumbering Caldera Regalia
@@ -218,7 +221,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
 				------ TRADING POST ------
@@ -274,12 +277,12 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			i(209053),	-- Green Brewfest Bulwark
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 				------ Trading Post ------
 			n(ARMOR, {
 				i(211069),	-- Azure Treads of the Kalu'ak
@@ -298,7 +301,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			i(212338),	-- DNT - Hearthstone - Loot - Hat (Needs Art)
 			i(212532),	-- Reno's Hat
 			i(211926),	-- Riders of Azeroth Tabard
@@ -387,8 +390,9 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190889),	-- Woodsman's Hatchet
 			}),
 		})),
+
 		-- 10.2.6
-		expansion(EXPANSION.DF, 2.6, bubbleDown({ ["timeline"] = { CREATED_10_2_6 } }, {
+		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
 			n(WEAPONS, {
 				i(217635),	-- Dream Raider's Azure Razor
 			}),

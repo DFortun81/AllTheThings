@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 	expansion(EXPANSION.CLASSIC, {
-		--- 1.x.x
+		-- 1.x.x
 		n(P1xx, {
 			fp(1, {["description"] = "Northshire Abbey"}),
 			fp(3, {["description"] = "Programmer Isle"}),
@@ -29,6 +29,7 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 		}),
 	}),
 	expansion(EXPANSION.TBC, {
+		-- 2.x.x
 		n(P2xx, {
 			fp(81, {["description"] = "Filming"}),
 			fp(88, {["description"] = "Transport, Exodar"}),

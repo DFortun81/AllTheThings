@@ -4,17 +4,21 @@
 -- #if AFTER CATA
 root(ROOTS.NeverImplemented, n(HEIRLOOMS, {
 	expansion(EXPANSION.CATA, {
-		expansion(EXPANSION.CATA, 0.3, {
+		-- 4.0.3
+		expansion(EXPANSION.CATA, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
 			i(62035),	-- Antique Myrmidon's Signet
 			i(62036),	-- Ornate Band of Accuria
 			i(62037),	-- Gleaming seal of the archmagus
-		}),
-		expansion(EXPANSION.CATA, 1.0, {
+		})),
+
+		-- 4.1.0
+		expansion(EXPANSION.CATA, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_1_0 } }, {
 			i(69891),	-- Burnished Dark Iron Ring
-		}),
+		})),
 	}),
 	expansion(EXPANSION.SL, {
-		expansion(EXPANSION.SL, 0.1, {
+		-- 9.0.1
+		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			i(183143),	-- Heirloom Chestpiece
 			i(183146),	-- Heirloom Cloak
 			i(183144),	-- Heirloom Helm
@@ -25,7 +29,7 @@ root(ROOTS.NeverImplemented, n(HEIRLOOMS, {
 			i(183145),	-- Heirloom Shoulders
 			i(183150),	-- Heirloom Trinket
 			i(183160),	-- Heirloom Trinket
-		}),
+		})),
 	}),
 }));
 -- #endif
