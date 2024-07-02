@@ -7655,6 +7655,9 @@ function app:CreateMiniListForGroup(group)
 			end
 			self:BaseUpdate(force or got, got);
 		end
+		-- Add Timerunning filter to the popout
+		popout.Filters = app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
+
 		-- Create groups showing Appearance information
 		app.BuildSourceInformationForPopout(group);
 		if showing and ((group.key == "questID" and group.questID) or group.sourceQuests) then
