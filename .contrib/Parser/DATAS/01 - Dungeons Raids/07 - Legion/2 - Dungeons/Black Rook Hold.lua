@@ -24,7 +24,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						}),
 						crit(31360, {	-- Singed Page read
 							["provider"] = { "o", 252388 },	-- Singed Page
-							["description"] = "Found in Rookshold, the room filled with Wyrmtongue Tricker, on a table by three bookshelves and two weapon racks.",
+							["description"] = "Found in Ravenshold, the room filled with Wyrmtongue Trickster, on a table by three bookshelves and two weapon racks.",
 						}),
 						crit(31361, {	-- Ink-Splattered Page read
 							["provider"] = { "o", 252390 },	-- Ink-splattered Page
