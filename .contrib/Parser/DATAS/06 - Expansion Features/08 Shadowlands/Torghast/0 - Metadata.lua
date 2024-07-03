@@ -95,7 +95,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 			1618,	-- Torghast
 			1620,	-- Torghast
 			1632,	-- Floor 29
-			1656,	-- Floor 10
 			1660,	-- Alpha_TG_R04
 			1705,	-- Torghast Entrance
 			1728,	-- The Rundecarver
