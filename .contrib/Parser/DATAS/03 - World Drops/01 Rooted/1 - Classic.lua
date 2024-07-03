@@ -2472,6 +2472,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(871),		-- Flurry Axe
 			i(790),		-- Forester's Axe
 			i(863),		-- Gloom Reaper
+			i(1819),	-- Gouging Pick
 			i(15234),	-- Greater Scythe
 			i(4568),	-- Grunt Axe
 			i(15232),	-- Hacking Cleaver
