@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["cr"] = 216979,	-- Roughrider Tany
 			}),
 			fp(2893, {	-- The Burrows, Azj-Kahet
-				["coord"] = { 54.0, 44.4, 2216 },
+				["coord"] = { 54.0, 44.4, NERUBAR_LOWER },
 				["cr"] = 209330,	-- Tekazza of the Aimless Few
 			}),
 			fp(2882, {	-- Waver's Lair, Azj-Kahet

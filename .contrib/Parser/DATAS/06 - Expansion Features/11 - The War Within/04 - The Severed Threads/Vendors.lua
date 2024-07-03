@@ -4,7 +4,49 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(THE_SEVERED_THREADS, {
 		n(VENDORS, {
-			n(220867, {	-- Y'tekhi
+			n(226214, {	-- Ka'muko <Kej Currency Exchanger>
+				["coord"] = { 57.1, 47.4, AZJ_KAHET },
+				["g"] = {
+					i(226195, {	--Resonance Crystal Cluster
+						["cost"] = {{"c", KEJ, 200}},
+						["g"] = {
+							currency(RESONANCE_CRYSTALS),
+						},
+					}),
+					i(226198, {	--Resonance Crystal Agglomeration
+						["cost"] = {{"c", KEJ, 2000}},
+						["g"] = {
+							currency(RESONANCE_CRYSTALS),
+						},
+					}),
+					i(226196, {	--Silk Kej Pouch
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 800}},
+						["minReputation"] = { FACTION_THE_SEVERED_THREADS, 8 },
+						["g"] = {
+							currency(KEJ),
+						},
+					}),
+					i(226199, {	--Silk Kej Purse
+						["cost"] = {{"c", RESONANCE_CRYSTALS, 8000}},
+						["minReputation"] = { FACTION_THE_SEVERED_THREADS, 8 },
+						["g"] = {
+							currency(KEJ),
+						},
+					}),
+				},
+			}),
+			n(228184, {	-- Yamas the Provider <Pact Information & Supplies>
+				["coord"] = { 57.1, 42.5, AZJ_KAHET },
+				["g"] = {
+					i(226519, {	-- General's Expertise (TOY!)
+						["cost"] = {{"c", KEJ, 2250}},
+					}),
+					i(226520, {	-- Queen's Pheromone (CI!)
+						["cost"] = {{"c", KEJ, 1000000}},
+					}),
+				},
+			}),
+			n(220867, {	-- Y'tekhi <Severed Threads Quartermaster>
 				["coord"] = { 57.3, 42.5, AZJ_KAHET },
 				["g"] = bubbleDownRep(FACTION_THE_SEVERED_THREADS, {
 					{		-- RENOWN 1 --

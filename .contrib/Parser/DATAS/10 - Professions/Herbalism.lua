@@ -1475,14 +1475,14 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				},
 			}),
 			o(455986, {	-- Tunneler's Shovel
-				["coord"] = { 46.8, 16.1, 2213 },
+				["coord"] = { 46.8, 16.1, NERUBAR },
 				["questID"] = 83881,
 				["g"] = {
 					i(226307),	-- Tunneler's Shovel
 				},
 			}),
 			o(455987, {	-- Web-Entangled Lotus
-				["coord"] = { 54.6, 20.9, 2213 },
+				["coord"] = { 54.6, 20.9, NERUBAR },
 				["questID"] = 83880,
 				["g"] = {
 					i(226306),	-- Web-Entangled Lotus

@@ -1122,7 +1122,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			o(456019, {	-- Nerubian Mixing Salts
-				["coord"] = { 45.4, 13.2, AZJ_KAHET },
+				["coord"] = { 45.4, 13.2, NERUBAR },
 				["questID"] = 83846,
 				["g"] = {
 					i(226271),	-- Nerubian Mixing Salts

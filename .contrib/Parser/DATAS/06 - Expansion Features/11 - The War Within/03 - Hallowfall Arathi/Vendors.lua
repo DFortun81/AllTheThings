@@ -57,10 +57,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},
 						}),
 					}, {	-- RENOWN 14 --
-						i(224656),	-- Void-Lit Herbalism Notes (CI!)
-						i(224655),	-- Void-Lit Jewelcrafting Notes (CI!)
-						i(224658),	-- Void-Lit Leatherworking Notes (CI!)
-						i(224657),	-- Void-Lit Skinning Notes (CI!)
+						i(224656, {	-- Void-Lit Herbalism Notes (CI!)
+							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+							["requireSkill"] = HERBALISM,
+						}),
+						i(224655, {	-- Void-Lit Jewelcrafting Notes (CI!)
+							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+							["requireSkill"] = JEWELCRAFTING,
+						}),
+						i(224658, {	-- Void-Lit Leatherworking Notes (CI!)
+							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+							["requireSkill"] = LEATHERWORKING,
+						}),
+						i(224657, {	-- Void-Lit Skinning Notes (CI!)
+							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+							["requireSkill"] = SKINNING,
+						}),
 					}, {	-- RENOWN 15 --
 						i(221848, {	-- Tiberius (PET!)
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 6500}},

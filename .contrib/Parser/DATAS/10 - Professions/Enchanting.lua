@@ -839,7 +839,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			}),
 			o(456003, {	-- Book of Dark Magic
-				["coord"] = { 61.7, 22.0, AZJ_KAHET },
+				["coord"] = { 61.7, 22.0, NERUBAR },
 				["questID"] = 83864,
 				["g"] = {
 					i(226290),	-- Book of Dark Magic
@@ -867,7 +867,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			}),
 			o(456002, {	-- Void Shard
-				["coord"] = { 57.4, 44.1, AZJ_KAHET },
+				["coord"] = { 57.4, 44.1, NERUBAR },
 				["questID"] = 83865,
 				["g"] = {
 					i(226291),	-- Void Shard

@@ -763,15 +763,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			header(HEADERS.AchCriteria, 20595.09, {	-- Brotherhood in the Skolzgal Wood
 				q(80456, {	-- A Sassy Arathi
-					--["sourceQuests"] = { x },	-- ?
-					--["isBreadcrumb"] = true,	-- ?
+					["sourceQuests"] = { 78630 },	-- The Reckoning
 					["provider"] = { "n", 219437 },	-- Dornogal CItizen
 					["coord"] = { 55.3, 55.7, ISLE_OF_DORN },
+					["isBreadcrumb"] = true,
 				}),
 				q(80209, {	-- An Oddball in Dornogal
 					["sourceQuests"] = { 80456 },	-- A Sassy Arathi
 					["provider"] = { "n", 222224 },	-- Peacekeeper Leif
-					["coord"] = { 54.3, 19.2, DORNOGAL },
+					["coord"] = { 55.2, 24.1, DORNOGAL },
 				}),
 				q(80210, {	-- Found Around the Unbound
 					["sourceQuests"] = { 80209 },	-- An Oddball in Dornogal

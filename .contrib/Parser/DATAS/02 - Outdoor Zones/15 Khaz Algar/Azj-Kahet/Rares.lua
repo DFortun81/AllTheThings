@@ -123,8 +123,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(216039, {	-- Xishorr (vignette -  Lurking Hunter)
 				["description"] = "In cave.",
 				["coords"] = {
-					{ 72.3, 57.0, 2216 },	-- Cave entrance
-					{ 68.7, 59.3, 2216 },	-- Rare spot
+					{ 72.3, 57.0, NERUBAR_LOWER },	-- Cave entrance
+					{ 68.7, 59.3, NERUBAR_LOWER },	-- Rare spot
 				},
 				["questID"] = 81701,	-- in addition 84070
 				["g"] = {
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			n(216038, {	-- The Groundskeeper (vignette - Chitin Hulk)
-				["coord"] = { 30.6, 55.5, 2213 },	-- Nerub'ar
+				["coord"] = { 30.6, 55.5, NERUBAR },
 				["questID"] = 81634,	-- in addition 84069
 				["g"] = {
 					--

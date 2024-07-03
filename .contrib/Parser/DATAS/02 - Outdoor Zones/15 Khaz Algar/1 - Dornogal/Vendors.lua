@@ -104,102 +104,135 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- Profession Books
 					i(227420, {	-- Exceptional Alchemist's Research (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["requireSkill"] = ALCHEMY,
 					}),
 					i(227418, {	-- Exceptional Blacksmith's Diagrams (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["requireSkill"] = BLACKSMITHING,
 					}),
 					i(227422, {	-- Exceptional Enchanter's Research (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["requireSkill"] = ENCHANTING,
 					}),
 					i(227423, {	-- Exceptional Engineer's Scribblings (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["requireSkill"] = ENGINEERING,
 					}),
 					i(227426, {	-- Exceptional Herbalist's Notes (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["requireSkill"] = HERBALISM,
 					}),
 					i(227424, {	-- Exceptional Jeweler's Illustrations (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					i(227425, {	-- Exceptional Leatherworker's Diagrams (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["requireSkill"] = LEATHERWORKING,
 					}),
 					i(227427, {	-- Exceptional Miner's Notes (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["requireSkill"] = MINING,
 					}),
 					i(227419, {	-- Exceptional Scribe's Runic Drawings (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["requireSkill"] = INSCRIPTION,
 					}),
 					i(227428, {	-- Exceptional Skinner's Notes (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["requireSkill"] = SKINNING,
 					}),
 					i(227421, {	-- Exceptional Tailor's Diagrams (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 300}},
+						["requireSkill"] = TAILORING,
 					}),
 					i(227409, {	-- Faded Alchemist's Research (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["requireSkill"] = ALCHEMY,
 					}),
 					i(227407, {	-- Faded Blacksmith's Diagrams (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["requireSkill"] = BLACKSMITHING,
 					}),
 					i(227411, {	-- Faded Enchanter's Research (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["requireSkill"] = ENCHANTING,
 					}),
 					i(227412, {	-- Faded Engineer's Scribblings (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["requireSkill"] = ENGINEERING,
 					}),
 					i(227415, {	-- Faded Herbalist's Notes (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["requireSkill"] = HERBALISM,
 					}),
 					i(227413, {	-- Faded Jeweler's Illustrations (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					i(227414, {	-- Faded Leatherworker's Diagrams (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["requireSkill"] = LEATHERWORKING,
 					}),
 					i(227416, {	-- Faded Miner's Notes (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["requireSkill"] = MINING,
 					}),
 					i(227408, {	-- Faded Scribe's Runic Drawings (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["requireSkill"] = INSCRIPTION,
 					}),
 					i(227417, {	-- Faded Skinner's Notes (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["requireSkill"] = SKINNING,
 					}),
 					i(227410, {	-- Faded Tailor's Diagrams (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 200}},
+						["requireSkill"] = TAILORING,
 					}),
 					i(227431, {	-- Pristine Alchemist's Research (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["requireSkill"] = ALCHEMY,
 					}),
 					i(227429, {	-- Pristine Blacksmith's Diagrams (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["requireSkill"] = BLACKSMITHING,
 					}),
 					i(227433, {	-- Pristine Enchanter's Research (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["requireSkill"] = ENCHANTING,
 					}),
 					i(227434, {	-- Pristine Engineer's Scribblings (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["requireSkill"] = ENGINEERING,
 					}),
 					i(227437, {	-- Pristine Herbalist's Notes (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["requireSkill"] = HERBALISM,
 					}),
 					i(227435, {	-- Pristine Jeweler's Illustrations (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["requireSkill"] = JEWELCRAFTING,
 					}),
 					i(227436, {	-- Pristine Leatherworker's Diagrams (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["requireSkill"] = LEATHERWORKING,
 					}),
 					i(227438, {	-- Pristine Miner's Notes (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["requireSkill"] = MINING,
 					}),
 					i(227430, {	-- Pristine Scribe's Runic Drawings (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["requireSkill"] = INSCRIPTION,
 					}),
 					i(227439, {	-- Pristine Skinner's Notes (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["requireSkill"] = SKINNING,
 					}),
 					i(227432, {	-- Pristine Tailor's Diagrams (CI!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 400}},
+						["requireSkill"] = TAILORING,
 					}),
 					-- Surplus Bags
 					i(227682, {	-- Satchel of Surplus Cloth

@@ -197,12 +197,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(79230, {	-- Creeping Through Corridors
 				["sourceQuests"] = { 79227 },	-- A Spider's-Eye View
 				["provider"] = { "n", 215626 },	-- Lilian Voss
-				["coord"] = { 69.5, 71.7, 2213 },
+				["coord"] = { 69.5, 71.7, NERUBAR },
 			}),
 			q(79233, {	-- Lab Access
 				["sourceQuests"] = { 79227 },	-- A Spider's-Eye View
 				["provider"] = { "n", 215637 },	-- Y'tekhi
-				["coord"] = { 69.5, 72.2, 2213 },
+				["coord"] = { 69.5, 72.2, NERUBAR },
 				["g"] = {
 					i(215457),	-- Loyalist Secretions (QI!)
 				},
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					79233,	-- Lab Access
 				},
 				["provider"] = { "n", 215628 },	-- Lilian Voss
-				["coord"] = { 56.7, 90.6, 2213 },
+				["coord"] = { 56.7, 90.6, NERUBAR },
 				["g"] = {
 					i(223431),	-- The Fallen Queen's Band
 				},
@@ -221,22 +221,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(79239, {	-- The Queen's Chains
 				["sourceQuests"] = { 79237 },	-- Making of a Monster
 				["provider"] = { "n", 215659 },	-- Y'tekhi
-				["coord"] = { 57.1, 91.0, 2213 },
+				["coord"] = { 57.1, 91.0, NERUBAR },
 			}),
 			q(79240, {	-- Rogue Agent
 				["sourceQuests"] = { 79239 },	-- The Queen's Chains
 				["provider"] = { "n", 215661 },	-- Lilian Voss
-				["coord"] = { 78.8, 57.3, 2213 },
+				["coord"] = { 78.8, 57.3, NERUBAR },
 			}),
 			q(79241, {	-- Go Loud
 				["sourceQuests"] = { 79240 },	-- Rogue Agent
 				["provider"] = { "n", 215662 },	-- Lilian Voss
-				["coord"] = { 78.6, 39.6, 2213 },
+				["coord"] = { 78.6, 39.6, NERUBAR },
 			}),
 			q(79243, {	-- Manufactured Mutiny
 				["sourceQuests"] = { 79240 },	-- Rogue Agent
 				["provider"] = { "n", 215662 },	-- Lilian Voss
-				["coord"] = { 78.6, 39.6, 2213 },
+				["coord"] = { 78.6, 39.6, NERUBAR },
 			}),
 			q(79244, {	-- News From Below
 				["sourceQuests"] = {
@@ -332,22 +332,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 220928 },	-- High Speaker Brinthe
 				["coord"] = { 56.1, 77.6, THE_RINGING_DEEPS },
 			}),
-			-- tbc
-			-- renown quests can be turned in @ 39.1, 24.3, in additional to their zone specific area.
-			-- Vaskarn
-			q(82042, {	-- The Better Part of Valorstones
-				--["sourceQuests"] = { },	-- ?
-				["provider"] = { "n", 219226 },	-- Vaskarn
-				["coord"] = { 52.1, 42.2, DORNOGAL },
+			------ Miscellaneous ------
+			q(82747, {	-- Crossroads Plaza
+				["provider"] = { "n", 224544 },	-- Rannida
+				["coord"] = { 46.8, 33.0, DORNOGAL },
+				["isBreadcrumb"] = true,	-- but need to confirm
 			}),
-			--[[
-			q(, {	-- The Hardbringer of Crests // missing this quest on alpha as of 19/05 build
-				["sourceQuests"] = { 82042 },	-- The Better Part of Valorstones
-				["provider"] = { "n", 219226 },	-- Vaskarn
-				["coord"] = { 52.1, 42.2, DORNOGAL },
-			}),
-			--]]
-			-- Enchanting tutorial but some data uses placeholder data
 			q(83275, {	-- Gear Enchanting
 				["provider"] = { "n", 226287 },	-- Ellerdin
 				["coord"] = { 51.8, 48.7, DORNOGAL },
@@ -355,96 +345,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(226245),	-- Hollow Ring
 				},
 			}),
-			-- Crossroads Plaza
-			q(82747, {	-- Crossroads Plaza
-				["provider"] = { "n", 224544 },	-- Rannida
-				["coord"] = { 46.8, 33.0, DORNOGAL },
-				["isBreadcrumb"] = true,	-- but need to confirm
+			q(82042, {	-- The Better Part of Valorstones
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["coord"] = { 52.1, 42.2, DORNOGAL },
 			}),
-			-- end
-			-- Dungeon quest, seems like once per week in different dungeon, but didn't have (w) mark in-game?
-			q(83465, {	-- Ara-Kara, City of Echoes
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.7, 48.3, DORNOGAL },
+			q(82050, {	-- The Hardbringer of Crests
+				["sourceQuests"] = { 82042 },	-- The Better Part of Valorstones
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["coord"] = { 52.1, 42.2, DORNOGAL },
 			}),
-			q(83436, {	-- Cinderbrew Meadery
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.7, 48.3, DORNOGAL },
+			q(82059, {	-- Transmutation Station
+				["sourceQuests"] = { 82050 },	-- The Hardbringer of Crests
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["coord"] = { 52.1, 42.2, DORNOGAL },
 			}),
-			q(83458, {	-- Priory of the Sacred Flame
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 44.7, 47.2, DORNOGAL },	-- probably moved in new builds
-			}),
-			-- end
-			-- Crafting Orders
-			q(84260, {	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-			}),
-			q(84288, {	-- Crafting Orders: Alchemy
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = ALCHEMY,
-			}),
-			q(84274, {	-- Crafting Orders: Blacksmithing
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = BLACKSMITHING,
-			}),
-			q(84285, {	-- Crafting Orders: Engineering
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = ENGINEERING,
-			}),
-			q(84287, {	-- Crafting Orders: Inscription
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = INSCRIPTION,
-			}),
-			q(84279, {	-- Crafting Orders: Jewelcrafting
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = JEWELCRAFTING,
-			}),
-			q(84280, {	-- Crafting Orders: Leatherworking
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = LEATHERWORKING,
-			}),
-			q(84281, {	-- Crafting Orders: Tailoring
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = TAILORING,
-			}),
-			-- Delves: Khaz Algar Research // move it to delves expansion feature, I guess?
-			q(82706, {	-- Delves: Khaz Algar Research
-				--["sourceQuests"] = { x },	-- ?
-				["isWeekly"] = true,
-				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
-				["coord"] = { 47.4, 44.4, DORNOGAL },
-			}),
-			q(82678, {	-- Archives: The First Disk
-				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
-				["coord"] = { 46.3, 49.3, DORNOGAL },
-				["g"] = {
-					currency(3029),	-- Treasure Trove Key (x2)
-					i(224784),	-- Pinnacle Cache
-					i(225741),	-- Titan Disk Fragment (QI!)
-				},
-			}),
-
-
-			-- Stay awhile and listen
+			------ Stay awhile and listen ------
 			q(84335, {	-- Stay awhile and listen: Alleria
 				["name"] = "Stay awhile and listen: Alleria",
 				["sourceQuests"] = { 78546 },	-- Recompense
@@ -457,6 +372,34 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
 				["coord"] = { 29.8, 60.0, DORNOGAL },
 			}),
+			n(QUESTS, sharedData({
+				["isWeekly"] = true,
+			}, {
+				q(83465, {	-- Ara-Kara, City of Echoes
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
+				q(83436, {	-- Cinderbrew Meadery
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
+				q(83443, {	-- Darkflame Cleft
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
+				q(83458, {	-- Priory of the Sacred Flame
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
+
+				q(82678, {	-- Archives: The First Disk
+					["provider"] = { "n", 226511 },	-- High Speaker Brinthe
+					["coord"] = { 46.3, 49.3, DORNOGAL },
+					["g"] = {
+						i(225741),	-- Titan Disk Fragment (QI!)
+					},
+				}),
+			})),
 		}),
 	}),
 })));

@@ -182,6 +182,27 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		--q(77727),	-- Level 10 (was already attached to achievement 40455 (Buddy System), but I not sure where it grab it from?)
 		q(77728),	-- Level 11
 	}),
+	n(QUESTS, sharedData({
+		["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+		["coord"] = { 47.4, 44.4, DORNOGAL },
+		["weekly"] = true,
+	}, {
+		q(82707),	-- Delves: Earthen Defense
+		q(82706),	-- Delves: Khaz Algar Research
+		q(82711, {	-- Delves: Lost and Found
+			["g"] = {
+				i(224159),	-- Brann's Compass
+				i(224160),	-- Brann's Hat
+				i(224158),	-- Brann's Letter Opener
+			},
+		}),
+		q(82709, {	-- Delves: Percussive Archaeology
+			["g"] = {
+				i(224146),	-- Khaz Algar Archaeological Fragments (QI!)
+			},
+		}),
+		q(82712),	-- Delves: Trouble Up and Down Khaz Algar
+	})),
 	m(2269, {	-- Earthcrawl Mines
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
 		["g"] = {

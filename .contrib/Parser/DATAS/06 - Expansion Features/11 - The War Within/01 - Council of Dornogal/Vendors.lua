@@ -48,15 +48,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}, {	-- RENOWN 12 --
 						i(224645, {	-- Jewel-Etched Alchemy Notes (CI!)
 							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+							["requireSkill"] = ALCHEMY,
 						}),
 						i(224647, {	-- Jewel-Etched Blacksmithing Notes (CI!)
 							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+							["requireSkill"] = BLACKSMITHING,
 						}),
 						i(224652, {	-- Jewel-Etched Enchanting Notes (CI!)
 							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+							["requireSkill"] = ENCHANTING,
 						}),
 						i(224648, {	-- Jewel-Etched Tailoring Notes (CI!)
 							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+							["requireSkill"] = TAILORING,
 						}),
 					}, {	-- RENOWN 13 --
 						i(222965, {	-- Loamy (PET!)

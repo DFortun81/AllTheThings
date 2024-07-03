@@ -913,7 +913,7 @@ root(ROOTS.Unsorted, {
 				}),
 				prof(INSCRIPTION, {
 
-					i(225355),	-- Technique: Contract: The Severed Threads (RECIPE!)
+
 					i(223060),	-- Technique: Patient Alchemist's Mixing Rod (RECIPE!) [Fungarian Delve Drop?]
 					i(222545),	-- Khaz Algar Milling
 					i(222108),	-- Khaz Algar Milling
@@ -1221,9 +1221,8 @@ root(ROOTS.Unsorted, {
 				i(212170),	-- Bronzebeard's Spare Hat \\ Bronzebeard Hat [PH]
 				i(212173),	-- Rulk'Nerub Raptorial Spine \\ Rulk'Nerub Backpiece [PH]
 
-				i(218347),	-- Thread-Bearer's Pauldrons \\ [DNT] Nerubian Renown Shoulders
-				i(218348),	-- Thread-Bearer's Cloak \\ [DNT] Nerubian Renown Cloak
-				i(218349),	-- Tabard of The Severed Threads \\ [DNT] Nerubian Renown Tabard
+
+
 
 
 
@@ -2821,7 +2820,7 @@ root(ROOTS.Unsorted, {
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
 				i(221204),	-- Spore Giant's Stompers
-				i(221205),	-- Vest of the River
+
 				i(221208),	-- Unseen Cutthroat's Tunic \\ Fel Assassin Tunic
 				i(221209),	-- Flame Trader's Gloves
 				i(221210),	-- Grips of the Earth
@@ -2867,14 +2866,9 @@ root(ROOTS.Unsorted, {
 				i(221507),	-- Earth Golem's Wrap
 				i(221508),	-- Pelt of Beledar's Strength
 				i(223005),	-- String of Fungal Fruits
-				i(223352),	-- Waterskipper's Legplates
-				i(223354),	-- Waterskipper's Chain Leggings
-				i(223361),	-- Flying Kobold's Seatbelt
-				i(223362),	-- Flying Kobold's Seatbelt
-				i(223363),	-- Flying Kobold's Seatbelt
+
 				i(223369),	-- Webspeaker's Spiritual Cloak
-				i(223371),	-- Slippers of Shallow Waters
-				i(223372),	-- Sabatons of Shallow Waters
+
 				i(223374),	-- Nerubian Weaver's Gown
 				i(223380),	-- Nerubian Weaver's Chainmail
 				i(223382),	-- Murkshade Grips
@@ -3083,7 +3077,6 @@ root(ROOTS.Unsorted, {
 			i(225692),	-- Glowglow Cap
 			i(225719),	-- Light's Mantle
 			i(225738),	-- Kaheti Warblade
-			i(225739),	-- Algari Distinguishment
 			i(225752),	-- Dornogal Defender
 			i(225753),	-- Dornogal Guard's Splitter
 			i(225754),	-- Dornogal Guard's Hammer
@@ -3380,20 +3373,6 @@ root(ROOTS.Unsorted, {
 			i(226482),	-- Ensemble: Grimy Harvest Golem
 			i(226483),	-- Ensemble: Battered Harvest Golem
 			i(226505),	-- Nerubian Gemweaver
-			i(226507),	-- Venom Dahn's Webscrub
-			i(226508),	-- Vizier's Influence
-			i(226509),	-- General's Insight
-			i(226510),	-- Weaver's Facade
-			i(226511),	-- Nerubimorph Poultice
-			i(226512),	-- Treasure Map: Forgotten Memorial
-			i(226513),	-- Treasure Map: Kaheti Excavation
-			i(226514),	-- Treasure Map: Weave-Rat Cache
-			i(226515),	-- Rumor Map: Bounties
-			i(226516),	-- Rumor Map: Disruption
-			i(226517),	-- Rumor Map: Espionage
-			i(226518),	-- Phero-Escape
-			i(226519),	-- General's Expertise
-			i(226520),	-- Queen's Pheromone
 			i(226521),	-- Reinforced-Wax Plating
 			i(226524),	-- Partially-Charged Hologem
 			i(226539),	-- Scroll of Momentum

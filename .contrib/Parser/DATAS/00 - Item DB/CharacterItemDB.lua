@@ -488,7 +488,12 @@ iq(216902, 80089);					-- Yellow Duck Disguise
 ------------------
 -- PATCH 11.0.0 --
 ------------------
-iq(224553,82998);					-- Beledar's Attunement
+iq(224055, 82614);					-- A Rocky Start
+iq(224036, 82634);					-- And That's A Web-Wrap!
+iq(224553, 82998);					-- Beledar's Attunement
+iq(224052, 82632);					-- Clocks, Gears, Sprockets, and Legs
+iq(224053, 82636);					-- Eight Views on Defense against Hostile Runes
+iq(224054, 82637);					-- Emergent Crystals of the Surface-Dwellers
 iq(227420, 81147);					-- Exceptional Alchemist's Research
 iq(227418, 84227);					-- Exceptional Blacksmith's Diagrams
 iq(227422, 81077);					-- Exceptional Enchanter's Research
@@ -511,6 +516,7 @@ iq(227416, 81390);					-- Faded Miner's Notes
 iq(227408, 80749);					-- Faded Scribe's Runic Drawings
 iq(227417, 84232);					-- Faded Skinner's Notes
 iq(227410, 80871);					-- Faded Tailor's Diagrams
+iq(224023, 82630);					-- Herbal Embalming Techniques
 iq(224645, 83058);					-- Jewel-Etched Alchemy Notes
 iq(224647, 83059);					-- Jewel-Etched Blacksmithing Notes
 iq(224652, 83060);					-- Jewel-Etched Enchanting Notes
@@ -529,7 +535,13 @@ iq(227438, 81392);					-- Pristine Miner's Notes
 iq(227430, 80751);					-- Pristine Scribe's Runic Drawings
 iq(227439, 84234);					-- Pristine Skinner's Notes
 iq(227432, 80873);					-- Pristine Tailor's Diagrams
+iq(226520, 84006);					-- Queen's Pheromone
+iq(224038, 82631);					-- Smithing After Saronite
+iq(224024, 82633);					-- Theories of Bodily Transmutation, Chapter 8
+iq(224056, 82626);					-- Uses for Leftover Husks (After You Take Them Apart)
+iq(224007, 82596);					-- Uses for Leftover Husks (How to Take Them Apart)
 iq(224656, 83066);					-- Void-Lit Herbalism Notes
 iq(224655, 83065);					-- Void-Lit Jewelcrafting Notes
 iq(224658, 83068);					-- Void-Lit Leatherworking Notes
 iq(224657, 83067);					-- Void-Lit Skinning Notes
+iq(224050, 82635);					-- Web Sparkles: Pretty and Powerful

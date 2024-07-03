@@ -48,12 +48,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}, {	-- RENOWN 12 --
 						i(224653, {	-- Machine-Learned Engineering Notes
 							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+							["requireSkill"] = ENGINEERING,
 						}),
 						i(224654, {	-- Machine-Learned Inscription Notes
 							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+							["requireSkill"] = INSCRIPTION,
 						}),
 						i(224651, {	-- Machine-Learned Mining Notes
 							["cost"] = {{"i", ARTISANS_ACUITY, 50}},
+							["requireSkill"] = MINING,
 						}),
 					}, {	-- RENOWN 13 --
 					}, {	-- RENOWN 14 --

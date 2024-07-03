@@ -996,37 +996,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 70.7, 39.8, THE_RINGING_DEEPS },
 				}),
 			}),
-			--
-			-- Rares / Bonus Objectives / One times
-			-- need to move into rares if this is not case
-			q(80560, {	-- Cragmund
-				["provider"] = { "n", 220269 },	-- Cragmund
-				["coord"] = { 47.1, 46.9, THE_RINGING_DEEPS },
-				["g"] = {
-
-				},
-			}),
-			q(80507, {	-- Terror of the Forge
-				["provider"] = { "n", 220271 },	-- Terror of the Forge
-				["coord"] = { 46.0, 12.0, THE_RINGING_DEEPS },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			q(80506, {	-- Basilisk Matriarch
-				["provider"] = { "n", 220270 },	-- Basilisk Matriarch
-				["coord"] = { 52.7, 27.8, THE_RINGING_DEEPS },
-				["g"] = {
-					-- no loot
-				},
-			}),
-			q(81674, {	-- Optimized Construct
-				["provider"] = { "n", 220265 },	-- Optimized Construct
-				["coord"] = { 52.6, 19.9, THE_RINGING_DEEPS },
-				["g"] = {
-					-- no loot
-				},
-			}),
 		}),
 	}),
 })));

@@ -1337,7 +1337,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				},
 			}),
 			o(455955, {	-- Heavy Spider Crusher
-				["coord"] = { 46.8, 21.7, 2213 },
+				["coord"] = { 46.8, 21.7, NERUBAR },
 				["questID"] = 83912,
 				["g"] = {
 					i(226338),	-- Heavy Spider Crusher

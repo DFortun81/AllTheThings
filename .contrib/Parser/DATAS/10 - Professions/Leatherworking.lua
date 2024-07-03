@@ -1413,7 +1413,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			o(455963, {	-- Nerubian Tanning Mallet
-				["coord"] = { 55.0, 27.0, 2213 },
+				["coord"] = { 55.0, 27.0, NERUBAR },
 				["questID"] = 83904,
 				["g"] = {
 					i(226330),	-- Nerubian Tanning Mallet
