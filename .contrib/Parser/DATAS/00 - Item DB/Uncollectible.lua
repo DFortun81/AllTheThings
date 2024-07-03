@@ -1293,6 +1293,7 @@ i(200811);	-- Congealed Sap Droplet
 i(200814);	-- Congealing Shard
 i(198832);	-- Conjured Blubbery Muffin
 i(198833);	-- Conjured Celebratory Cake
+i(204846);	-- Conjured Rocks on the Rocks
 i(198831);	-- Conjured Snow in a Cone
 i(198830);	-- Conjured Tasty Hatchling's Treat
 i(200967);	-- Conquest

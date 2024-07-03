@@ -1311,7 +1311,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(206158),	-- Add Keystone Affix: Shielding
 			i(205903),	-- Barter Pebble
 			i(204885),	-- Boulder Breakdown Mixture
-			i(204846),	-- Conjured Rocks on the Rocks
 			i(205220),	-- Corroded Key
 			i(204890),	-- Dampening Emitter
 			i(205198),	-- Detailed Titan Key
