@@ -7653,10 +7653,10 @@ function app:CreateMiniListForGroup(group)
 				self.ExpireTime = time() + 300;
 				-- app.PrintDebug("Expire Refreshed",popout.Suffix)
 			end
+			-- Add Timerunning filter to the popout
+			popout.Filters = app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
 			self:BaseUpdate(force or got, got);
 		end
-		-- Add Timerunning filter to the popout
-		popout.Filters = app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
 
 		-- Create groups showing Appearance information
 		app.BuildSourceInformationForPopout(group);
