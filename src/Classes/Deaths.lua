@@ -44,7 +44,7 @@ local fields = {
 		return OnTooltipForDeathTracker;
 	end,
 };
-if C_GameRules and C_GameRules.IsHardcoreActive() then
+if not C_GameRules then
 	fields.description = function(t)
 		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Try Again!'\n";
 	end;

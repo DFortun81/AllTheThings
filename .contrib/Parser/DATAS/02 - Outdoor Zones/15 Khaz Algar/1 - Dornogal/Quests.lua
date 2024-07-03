@@ -391,6 +391,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["provider"] = { "n", 226623 },	-- Biergoth
 					["coord"] = { 46.6, 56.8, DORNOGAL },
 				}),
+				q(83457, {	-- The Stonevault
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
 
 				q(82678, {	-- Archives: The First Disk
 					["provider"] = { "n", 226511 },	-- High Speaker Brinthe

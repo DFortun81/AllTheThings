@@ -772,16 +772,16 @@ root(ROOTS.Unsorted, {
 					i(223047),	-- Plans: Haunting Void
 				}),
 				prof(ENCHANTING, {
-					i(223113),	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
 
-					i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
-					i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
-					i(223139),	-- Formula: Enchant Cloak - Chant of Leeching Fangs (RECIPE!)
-					i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
-					i(223119),	-- Formula: Enchant Weapon - Authority of Air (RECIPE!)
-					i(223133),	-- Formula: Illusory Adornment: Crystal (RECIPE!)
-					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
-					i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
+
+
+
+
+
+
+
+
+
 				}),
 				prof(ENGINEERING, {
 					i(217151),	-- Algari Competitor's Cloth Goggles \\ Vicious Competitor's Cloth Goggles
@@ -2170,7 +2170,7 @@ root(ROOTS.Unsorted, {
 				i(210697),	-- Luckstone
 				i(211348),	-- Awkward Potion
 				i(211349),	-- Mundane Potion
-				i(211474),	-- Shadowblind Grouper
+
 				i(211529),	-- Test Big Bag (DNT)
 				i(211776),	-- Damp Repair Kit
 				i(212340),	-- Strange Jar
@@ -2197,8 +2197,6 @@ root(ROOTS.Unsorted, {
 				i(216603),	-- Boots of the Light
 				i(216708),	-- Holy Candle
 				i(216982),	-- Spy List
-				i(217012),	-- Novice Actor's Chest
-				i(217013),	-- Expert Actor's Chest
 				i(217040),	-- Kobold Earwax
 				i(217386),	-- Discarded Memory Gem
 				i(217401),	-- Wormcaller's Resonator
@@ -2399,21 +2397,18 @@ root(ROOTS.Unsorted, {
 			n(QUEST_ITEMS, {
 				i(206348),	-- Fragmented Flame
 				i(206349),	-- Fragmented Reagent
-				i(206601),	-- Dark-Nurtured Scallions
+
 				i(207084),	-- Auebry's Marker Pistol
 				i(208948),	-- [DNT] Club Chest Key \\ Club Chest Key
 				i(208957),	-- Conduit of the Southern Storm
 				i(209857),	-- Unusual Seeds
-				i(210745),	-- Firelight Spud
 				i(211209),	-- Suspicious Candle
 				i(211210),	-- Blacksmith Boss' Head
 				i(211291),	-- Decorative Bones
 				i(211304),	-- Bone Key
 				i(211407),	-- The Book of Bob
 				i(211469),	-- Squash Hook
-				i(211475),	-- Twilight Spice
-				i(211478),	-- Darkroot Persimmon
-				i(211479),	-- Frog-Kissed Caviar
+
 				i(211481),	-- Stomping Shoes \\ Stompin' Shoes
 				i(211797),	-- Expedition Map
 				i(211861),	-- Umbral Eggplant
@@ -2423,13 +2418,14 @@ root(ROOTS.Unsorted, {
 				i(211960),	-- Game Piece
 				i(211961),	-- Rocket-Powered Impact Wrench
 				i(211963),	-- Ceiling Sweeper
-				i(211964),	-- Stillstone Catch
-				i(211966),	-- Nerubian Sealed Crate
-				i(211967),	-- Large Sealed Crate
-				i(211968),	-- Blueprint Bundle
-				i(211969),	-- Arathi-Locked Chest
-				i(211973),	-- Spider-Touched Bag
-				i(211974),	-- Rolled Arathi Rug
+
+
+
+
+
+
+
+
 				i(212223),	-- Elemental Essence
 				i(212224),	-- Titan Relics
 				i(212331),	-- The Unusual Bug
@@ -2456,7 +2452,7 @@ root(ROOTS.Unsorted, {
 				i(213538),	-- Wood-Worm Tonic \\ Wood-Worm Liqueur \\ Necrotic Dart
 				i(213557),	-- Lost Journal Tablet
 				i(215159),	-- Pillaged Trophy
-				i(215447),	-- Duskstem
+
 				i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 				i(216682),	-- The Vizier's Invitation
 				i(216683),	-- Earthen Rifle
@@ -2498,7 +2494,6 @@ root(ROOTS.Unsorted, {
 				i(219469),	-- Fog Beast Tracker
 				i(219522),	-- Radiant Fuel Crystal
 				i(219804),	-- [DNT] Antiparalytic Serum
-				i(219808),	-- Ethereal Sugar
 				i(219934),	-- Spark of War
 				i(219939),	-- Alleria's Crystal
 				i(219960),	-- Honey Drone Vac
@@ -2879,8 +2874,7 @@ root(ROOTS.Unsorted, {
 				i(223387),	-- Vilewing Chain Helm
 				i(223390),	-- Leggings of Dark Hunger
 				i(223391),	-- Legguards of Dark Hunger
-				i(223395),	-- Deepfiend Shoulderpads
-				i(223396),	-- Deepfiend Shoulder Shells
+
 				i(223398),	-- Abyssal Hunter's Sash
 				i(223399),	-- Abyssal Hunter's Chain
 				i(223406),	-- Slippers of the Nerubian Twins
@@ -2899,7 +2893,7 @@ root(ROOTS.Unsorted, {
 				i(223925),	-- Blood Hungerer's Chestplate
 				i(223926),	-- Earthgorger's Chain Bib
 				i(223927),	-- Vinewrapped Leather Tunic
-				i(223928),	-- Crop Cutter's Gauntlets
+
 				i(223929),	-- Honey Sweetener's Squeezers
 				i(223930),	-- Monstrous Chain Pincers
 				i(223931),	-- Black Blood Cowl
@@ -2997,13 +2991,13 @@ root(ROOTS.Unsorted, {
 				i(224592),	-- Spinner's Hoop \\ [PH] The Fallen Queen's Band
 				i(224593),	-- Spinner's Circlet \\ [PH] 11.0 - Signet
 				i(224594),	-- Spinner's Amulet \\ [PH] Element-Attuned Pendant
-				i(224624),	-- Spinner's Shawl \\ [PH] Drape of the Lamplighter
-				i(224628),	-- Arathi Claymore \\ [PH] Algari Greatsword
+
+
 				i(224629),	-- Arathi Hatchet \\ [PH] Algari Short Axe
-				i(224632),	-- Underscout's Kukri \\ [PH] Algari Fighting Knife
-				i(224634),	-- Arathi Mace \\ [PH] Algari Mace
+
+
 				i(224635),	-- Expeditionary Bulwark \\ [PH] Algari Shield
-				i(224636),	-- Deep-Dweller's Dirk \\ [PH] Algari Dagger
+
 				i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
 
 				-- Snuffling
@@ -3255,7 +3249,6 @@ root(ROOTS.Unsorted, {
 			i(226258),	-- Delver's Pouch of Reagents
 			i(226259),	-- Delver's Pouch of Resonance Crystals
 			i(226260),	-- Delver's Pouch of Gold
-			i(226263),	-- Theater Troupe's Trove
 			i(226266),	-- Metal Dornogal Frame
 			i(226268),	-- Engraved Stirring Rod
 			i(226276),	-- Ancient Earthen Anvil

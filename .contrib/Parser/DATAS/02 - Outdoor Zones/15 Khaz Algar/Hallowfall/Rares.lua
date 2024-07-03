@@ -57,14 +57,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- no loot
 				},
 			}),
-			n(206514, {	-- Crazed Cabbage Smacker
-				--was walking near Whirring Field Keyflame
-				["coord"] = { 64.9, 29.4, HALLOWFALL },
-				["questID"] = 82558,
-				["g"] = {
-					-- no loot
-				},
-			}),
 			n(206184, {	-- Deathpetal
 				--was walking near Fungal Field Keyflame
 				["coord"] = { 63.8, 32.0, HALLOWFALL },
@@ -92,8 +84,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 72.1, 64.3, HALLOWFALL },
 				["questID"] = 80011,
 				["g"] = {
-					i(223393),	-- Deepfiend Spaulders
 					i(223394),	-- Deepfiend Pauldrons
+					i(223396),	-- Deepfiend Shoulder Shells
+					i(223395),	-- Deepfiend Shoulderpads
+					i(223393),	-- Deepfiend Spaulders
 				},
 			}),
 			n(218426, {	-- Ixlorb the Spinner

@@ -603,9 +603,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["provider"] = { "n", 225583 },	-- Machinist Kilton
 					["coord"] = { 41.1, 21.4, THE_RINGING_DEEPS },
 					["g"] = {
-						i(219463),	-- Earthen Traveler's Javelin
 						i(219456),	-- Earthen Traveler's Scepter
-						i(219459),	-- Earthen Traveler's Staff
 					},
 				}),
 			}),

@@ -35,6 +35,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 215407 },
 					["g"] = {
 						ach(40370),	-- Ara-Kara, City of Echoes
+						i(223141),	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
+						i(223142),	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
+						i(223143),	-- Formula: Enchant Ring - Cursed Versatility (RECIPE!)
 						i(221164),	-- Archaic Venomancer's Footwraps
 						i(221160),	-- Blight Hunter's Scalpelglaive
 						i(221162),	-- Claws of Tainted Ichor

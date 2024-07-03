@@ -35,6 +35,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 39.1, 24.0, DORNOGAL },
 				}),
 			}, {	-- RENOWN 8 --
+				q(84403, {	-- A Small Bundle of Goods
+					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
+					["coord"] = { 39.1, 24.0, DORNOGAL },
+				}),
 			}, {	-- RENOWN 9 --
 			}, {	-- RENOWN 10 --
 				q(82347, {	-- Assistant Councilmember

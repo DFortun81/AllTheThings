@@ -52,6 +52,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 216658 },	-- Izo, the Grand Splicer
 					["g"] = {
 						ach(40376),	-- City of Threads
+						i(223141),	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
+						i(223142),	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
+						i(223143),	-- Formula: Enchant Ring - Cursed Versatility (RECIPE!)
 						i(219321),	-- Cirral Concoctory
 						i(221186),	-- Entwined Chimeric Legguards
 						i(221189),	-- Experiment 08752's Band

@@ -3,6 +3,9 @@
 -----------------------------------------------------
 root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ARMOR, {
+		filter(BACK_F, {
+			i(224624),	-- Spinner's Shawl
+		}),
 		filter(CLOTH, {
 			i(220314),	-- Moth-Ridden Armlets
 			i(220310),	-- Moth-Ridden Hood
@@ -79,19 +82,19 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 	n(WEAPONS, {
 		--TODO: uncomment & remove from unsorted if it drop
 		i(224627),	-- Arathi Arquebus
-		--i(224628),	-- Arathi Claymore \\ [PH] Algari Greatsword
+		i(224628),	-- Arathi Claymore
 		--i(224629),	-- Arathi Hatchet \\ [PH] Algari Short Axe
 		i(224633),	-- Arathi Greataxe
-		--i(224634),	-- Arathi Mace \\ [PH] Algari Mace
+		i(224634),	-- Arathi Mace
 		i(224630),	-- Deep-Dweller's Battleaxe
 		i(224631),	-- Deep-Dweller's Cudgel
-		--i(224636),	-- Deep-Dweller's Dirk \\ [PH] Algari Dagger
+		i(224636),	-- Deep-Dweller's Dirk
 		i(224637),	-- Deep-Dweller's Orb
 		i(224626),	-- Deep-Dweller's Staff
 		--i(224635),	-- Expeditionary Bulwark \\ [PH] Algari Shield
 		--i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
 		i(224625),	-- Expeditionary Spear
-		--i(224632),	-- Underscout's Kukri \\ [PH] Algari Fighting Knife
+		i(224632),	-- Underscout's Kukri
 		i(224638),	-- Underscout's Glaive
 	}),
 	filter(MISC, {
@@ -105,9 +108,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 	}),
 	filter(RECIPES, {
 		i(223140),	-- Formula: Enchant Cloak - Chant of Burrowing Rapidity (RECIPE!)
-		i(223141),	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
-		i(223142),	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
-		i(223143),	-- Formula: Enchant Ring - Cursed Versatility (RECIPE!)
 		i(223123),	-- Formula: Enchanted Gilded Harbinger Crest (RECIPE!)
 		i(223122),	-- Formula: Enchanted Runed Harbinger Crest (RECIPE!)
 		i(223121),	-- Formula: Enchanted Weathered Harbinger Crest (RECIPE!)

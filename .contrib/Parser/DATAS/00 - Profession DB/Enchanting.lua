@@ -1272,7 +1272,6 @@ i(0, 455970);		-- Disenchant [The War Within]
 i(0, 445338);		-- Algari Mana Oil
 i(0, 445379);		-- Council's Guile
 i(0, 445324);		-- Enchanted Spearwood Wand
-i(0, 445382);		-- Gleeful Glamour - Earthen
 i(0, 445365);		-- Gleeful Glamour - Pandaren
 i(0, 445358);		-- Glimmering Critical Strike
 i(0, 445384);		-- Glimmering Haste
@@ -1296,11 +1295,15 @@ i(223129, 445364);	-- Algari Deftness
 i(223130, 445328);	-- Algari Finesse
 i(223131, 445380);	-- Algari Perception
 i(223132, 445398);	-- Algari Resourcefulness
+i(223119, 445331);	-- Authority of Air
 i(223120, 445339);	-- Authority of Radiant Power
 i(223144, 445341);	-- Authority of the Depths
+i(223113, 445335);	-- Cavalry's March
 i(223136, 445334);	-- Chant of Armored Avoidance
 i(223137, 445325);	-- Chant of Armored Leech
 i(223140, 445389);	-- Chant of Burrowing Rapidity
+i(223139, 445393);	-- Chant of Leeching Fangs
+i(223138, 445386);	-- Chant of Winged Grace
 i(223127, 445322);	-- Council's Intellect
 i(223141, 445394);	-- Cursed Critical Strike
 i(223142, 445359);	-- Cursed Mastery
@@ -1308,11 +1311,19 @@ i(223143, 445383);	-- Cursed Versatility
 i(223123, 445354);	-- Enchanted Gilded Harbinger Crest
 i(223122, 445347);	-- Enchanted Runed Harbinger Crest
 i(223121, 445399);	-- Enchanted Weathered Harbinger Crest
+i(228708, 445382);	-- Gleeful Glamour - Earthen
+i(223133, 445327);	-- Illusory Adornment: Crystal
+i(223134, 445401);	-- Illusory Adornment: Radiance
+i(223135, 445337);	-- Illusory Adornment: Shadow
+i(223128, 445321);	-- Oathsworn's Strength
+i(223125, 445346);	-- Oil of Deep Toxins
 i(223115, 445387);	-- Radiant Critical Strike
 i(223116, 445320);	-- Radiant Haste
 i(223117, 445375);	-- Radiant Mastery
 i(223118, 445349);	-- Radiant Versatility
 i(223124, 445323);	-- Runed Null Stone Rod
+i(223114, 445368);	-- Scout's March
+i(223126, 445353);	-- Stormrider's Agility
 --- SPECIALIZATION ---
 i(0, 445378);		-- Algari Ingenuity
 i(0, 445403);		-- Authority of Fiery Resolve
@@ -1348,15 +1359,3 @@ i(0, 445318);		-- Oil of Beledar's Grace
 i(0, 445372);		-- Runed Ironclaw Rod
 i(0, 445355);		-- Scepter of Radiant Magics
 i(0, 445466);		-- Shatter Essence
--- Unknown
-i(223119, 445331);	-- Authority of Air
-i(223113, 445335);	-- Cavalry's March
-i(223139, 445393);	-- Chant of Leeching Fangs
-i(223138, 445386);	-- Chant of Winged Grace
-i(223133, 445327);	-- Illusory Adornment: Crystal
-i(223134, 445401);	-- Illusory Adornment: Radiance
-i(223135, 445337);	-- Illusory Adornment: Shadow
-i(223128, 445321);	-- Oathsworn's Strength
-i(223125, 445346);	-- Oil of Deep Toxins
-i(223114, 445368);	-- Scout's March
-i(223126, 445353);	-- Stormrider's Agility

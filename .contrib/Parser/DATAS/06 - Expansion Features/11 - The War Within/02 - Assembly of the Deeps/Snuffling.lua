@@ -13,6 +13,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		n(SNUFFLING, {
 			n(TREASURES, {
 				-- Coffer Key
+				i(223133),	-- Formula: Illusory Adornment: Crystal (RECIPE!)
 			}),
 			n(VENDORS, {
 			}),

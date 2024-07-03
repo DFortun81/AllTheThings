@@ -197,8 +197,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80259, {	-- Stillstone Slalom
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219560 },	-- Bronze Timekeeper
 					["coord"] = { 60.4, 26.0, HALLOWFALL },
 					["g"] = {
 						ach(20390),	-- Stillstone Slalom: Bronze
@@ -207,8 +206,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80268, {	-- Stillstone Slalom - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219560 },	-- Bronze Timekeeper
 					["coord"] = { 60.4, 26.0, HALLOWFALL },
 					["g"] = {
 						ach(20393),	-- Stillstone Slalom Advanced: Bronze
@@ -217,8 +215,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 				skyridingrace(80274, {	-- Stillstone Slalom - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219560 },	-- Bronze Timekeeper
 					["coord"] = { 60.4, 26.0, HALLOWFALL },
 					["g"] = {
 						ach(20396),	-- Stillstone Slalom Reverse: Bronze

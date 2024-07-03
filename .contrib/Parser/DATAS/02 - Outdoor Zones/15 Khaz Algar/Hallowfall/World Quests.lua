@@ -21,6 +21,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82133, {	-- Documenting: Field Manual Edition
 					["coord"] = { 39.9, 74.7, HALLOWFALL },
 				}),
+				q(81862, {	-- Feline Frenzy
+					["coord"] = { 41.9, 58.1, HALLOWFALL },
+				}),
 				q(82259, {	-- Honoring Our Fallen
 					["coord"] = { 71.8, 61.0, HALLOWFALL },
 					["g"] = {
@@ -81,9 +84,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["g"] = {
 						i(225655),	-- Fragrant Mirespores (QI!)
 					},
-				}),
-				q(76586, {	-- Spreading The Light
-					["coord"] = { 55.3, 14.5, HALLOWFALL },	-- should be other from actual quest report popup
 				}),
 				q(82288, {	-- Work Hard, Play Hard
 					["coord"] = { 41.8, 55.3, HALLOWFALL },

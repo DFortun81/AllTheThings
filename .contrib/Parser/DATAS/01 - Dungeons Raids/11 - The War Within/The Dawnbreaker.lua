@@ -35,6 +35,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 224552 },	-- Rasha'nan
 					["g"] = {
 						ach(40599),	-- The Dawnbreaker
+						i(223115),	-- Formula: Enchant Ring - Radiant Critical Strike (RECIPE!)
+						i(223116),	-- Formula: Enchant Ring - Radiant Haste (RECIPE!)
+						i(223117),	-- Formula: Enchant Ring - Radiant Mastery (RECIPE!)
+						i(223118),	-- Formula: Enchant Ring - Radiant Versatility (RECIPE!)
+						i(223119),	-- Formula: Enchant Weapon - Authority of Air (RECIPE!)
 						i(221148),	-- Epaulets of the Clipped Wings
 						i(221147),	-- Goliath's Chitinous Chainmail
 						i(221149),	-- Membranous Slippers

@@ -7,9 +7,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			o(444798, {	-- Arathi Treasure Hoard
 				["maps"] = { HALLOWFALL },
 				--["questID"] = xx,
-				["g"] = {
-					i(206350),	-- Radiant Remnant
-				},
 			}),
 			o(444801, {	-- Brimming Arathi Treasure Hoard // not sure what about brimming stuff
 				["coord"] = { 53.6, 63.0, HALLOWFALL },

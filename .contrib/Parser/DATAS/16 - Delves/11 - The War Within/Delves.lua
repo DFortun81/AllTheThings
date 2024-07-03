@@ -693,6 +693,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(225900),	-- Light-Touched Idol
 		i(218129),	-- Porcelain Arrowhead Idol
 		i(225899),	-- Unbreakable Iron Idol
+		filter(RECIPES, {
+			i(223139),	-- Formula: Enchant Cloak - Chant of Leeching Fangs (RECIPE!)
+		}),
 		filter(MISC, {
 			i(224181),	-- Companion Experience (Tier 1-2)
 			i(224411),	-- Companion Experience (Tier 3)
