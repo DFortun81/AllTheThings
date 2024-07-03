@@ -1038,7 +1038,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 		n(QUESTS, {
 			i(198156, {	-- Wyrmhole Generator: Dragon Isles (TOY!)
-				["description"] = "You can collect additional portal options.\nOHN’AHRAN PLAINS = Clomp your hooves, imaginary or otherwise...\nRANDOM LOCATION = Carelessly leap into the portal...\nTHALDRASZUS = Audibly spell out 'Thaldraszus'...\nTHE AZURE SPAN = Ensure your arrival at the Azure Span...\nTHE WAKING SHORES = Pray return to the Waking Shores.",
+				["description"] = "You can collect additional portal options.\nRANDOM LOCATION = Carelessly leap into the portal...\nTHE WAKING SHORES = Pray return to the Waking Shores.\nOHN’AHRAN PLAINS = Clomp your hooves, imaginary or otherwise...\nTHE AZURE SPAN = Ensure your arrival at the Azure Span...\nTHALDRASZUS = Audibly spell out 'Thaldraszus'...\nTHE FORBIDDEN REACH = Disregard the word 'Forbidden' and venture...\nZARALEK CAVERN = Flip the portal horizontally...\nEMERALD DREAM = Close your eyes and snore loudly.",
 				-- Object IDs and quest IDs are put at random to each other.
 				-- There seems to be no way of getting the correct object ID for the Deactivated Signal Transmitter in game. (does not matter for ATT purpose)
 				["g"] = {
