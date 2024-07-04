@@ -744,11 +744,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["sourceQuestNumRequired"] = 1,]]--
 				["provider"] = { "n", 211328 },	-- Vaskarn
 				["coord"] = { 49.8, 61.6, EMERALD_DREAM },
+				["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
 			}),
 			q(78271, {	-- Dreaming of Crests
 				["sourceQuests"] = { 78262 },	-- It Starts With a Stone
 				["provider"] = { "n", 211328 },	-- Vaskarn
 				["coord"] = { 49.8, 61.6, EMERALD_DREAM },
+				["timeline"] = { REMOVED_10_2_6_SEASON_FOUR },
 				["g"] = {
 					i(210180),	-- Emerald Flightstone
 					i(210917),	-- Pouch of Whelpling's Dreaming Crests
