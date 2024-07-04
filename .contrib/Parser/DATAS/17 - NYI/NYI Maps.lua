@@ -368,8 +368,6 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 
 		-- 10.2.0
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-			-- 0 (World)
-			m(2211),	-- Aberrus, the Shadowed Crucible
 			-- 2 (Taxi and Adventure)
 			m(2252),	-- Dragon Isles
 			m(2241),	-- Emerald Dream

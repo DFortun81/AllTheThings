@@ -387,6 +387,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			2168,	-- Defiant Ramparts
 			2169,	-- Neltharion's Sanctum
 			2170,	-- Edge of Oblivion
+			2211,	-- Aberrus, the Shadowed Crucible (reported in #retail-errors on 3-July-2024)
 		},
 		["g"] = {
 			header(HEADERS.Item, 204177, {	-- Nasz'uro, the Unbound Legacy
