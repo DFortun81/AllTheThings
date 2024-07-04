@@ -13,24 +13,24 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		-- 4.x.x
 		n(P4xx, {
 			-- 0 (World)
-			m(218), -- Ruins of Gilneas City
-			m(233), -- Zul'Gurub
+			m(218),	-- Ruins of Gilneas City
+			m(233),	-- Zul'Gurub
 		}),
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.x.x
 		n(P5xx, {
 			-- 0 (World)
-			m(426), -- Echo Ridge Mine
-			m(449), -- Temple of Kotmogu
+			m(426),	-- Echo Ridge Mine
+			m(449),	-- Temple of Kotmogu
 		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.x.x
 		n(P7xx, {
 			-- 0 (World)
-			m(645), -- Twisting Nether
-			m(696), -- Stormheim
+			m(645),	-- Twisting Nether
+			m(696),	-- Stormheim
 		}),
 	}),
 	expansion(EXPANSION.BFA, {
