@@ -1552,10 +1552,6 @@ profession(ENGINEERING, {
 					["recipeID"] = 3944,
 				},
 				{
-					["name"] = "Force Reactive Disk",
-					["recipeID"] = 22797,
-				},
-				{
 					["name"] = "Gnomish Cloaking Device",
 					["recipeID"] = 3971,
 				},
@@ -1671,6 +1667,12 @@ profession(ENGINEERING, {
 					["name"] = "Snowmaster 9000",
 					["recipeID"] = 21940,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Soul Vessel",
+					["recipeID"] = 431362,
+				}),
+				-- #endif
 				{
 					["name"] = "Steam Tonk Controller",
 					["timeline"] = { CREATED_1_10_0, ADDED_2_0_1 },
@@ -1735,6 +1737,12 @@ profession(ENGINEERING, {
 					["name"] = "EZ-Thro Dynamite II",
 					["recipeID"] = 23069,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Ez-Thro Radiation Bomb",
+					["recipeID"] = 435966,
+				}),
+				-- #endif
 				{
 					["name"] = "Flash Bomb",
 					["recipeID"] = 8243,
@@ -1751,6 +1759,12 @@ profession(ENGINEERING, {
 					["name"] = "Hi-Explosive Bomb",
 					["recipeID"] = 12619,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "High-Yield Radiation Bomb",
+					["recipeID"] = 435964,
+				}),
+				-- #endif
 				{
 					["name"] = "Iron Grenade",
 					["recipeID"] = 3962,
@@ -1957,6 +1971,36 @@ profession(ENGINEERING, {
 				},
 			},
 		},
+		-- #if SEASON_OF_DISCOVERY
+		{
+			["name"] = "Bracers",
+			["categoryID"] = 222,
+			["groups"] = {
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Void-Powered Invoker's Vambraces",
+					["recipeID"] = 446236,
+				}),
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Void-Powered Protector's Vambraces",
+					["recipeID"] = 446238,
+				}),
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Void-Powered Slayer's Vambraces",
+					["recipeID"] = 446237,
+				}),
+			},
+		},
+		{
+			["name"] = "Belts",
+			["categoryID"] = 223,
+			["groups"] = {
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Hyperconductive Goldwap",
+					["recipeID"] = 435960,
+				}),
+			},
+		},
+		-- #endif
 		{
 			["name"] = "Guns & Bows",
 			["categoryID"] = 189,
@@ -2007,6 +2051,22 @@ profession(ENGINEERING, {
 					["name"] = "Thorium Rifle",
 					["recipeID"] = 19792,
 				},
+			},
+		},
+		{
+			["name"] = "Shields",
+			["categoryID"] = 226,
+			["groups"] = {
+				{
+					["name"] = "Force Reactive Disk",
+					["recipeID"] = 22797,
+				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Whirling Truesilver Gearwall",
+					["recipeID"] = 435958,
+				}),
+				-- #endif
 			},
 		},
 		{
@@ -2108,6 +2168,12 @@ profession(ENGINEERING, {
 					["name"] = "Whirring Bronze Gizmo",
 					["recipeID"] = 3942,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Polished Truesilver Gears",
+					["recipeID"] = 435956,
+				}),
+				-- #endif
 			},
 		},
 		{
