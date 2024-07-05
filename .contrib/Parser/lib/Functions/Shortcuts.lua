@@ -1030,8 +1030,6 @@ inst = function(id, t)									-- Create an INSTANCE Object
 				--error("Instance Missing a MapID: " .. id);
 			end
 		end
-	else
-		t = { ["npcID"] = -1, ["groups"] = t };
 	end
 	-- #endif
 	return t;
