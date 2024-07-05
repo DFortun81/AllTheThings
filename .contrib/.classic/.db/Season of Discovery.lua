@@ -24,11 +24,11 @@ SetItemFilter(219024, FINGER_F);	-- Messenger's Ring
 SetItemFilter(219135, NECK_F);	-- Curiosity Pendant
 SetItemFilter(219137, NECK_F);	-- Initiative Pendant
 SetItemFilter(219136, NECK_F);	-- Tenacity Pendant
-SetItemFilter(223160, TRINKET);	-- Bargain Bush
-SetItemFilter(223161, TRINKET);	-- Empty Supply Crate
-SetItemFilter(220639, TRINKET);	-- Lledra's Inanimator
-SetItemFilter(211420, TRINKET);	-- Shifting Scale Talisman
-SetItemFilter(223186, TRINKET);	-- Supply Expediter
+SetItemFilter(223160, TRINKET_F);	-- Bargain Bush
+SetItemFilter(223161, TRINKET_F);	-- Empty Supply Crate
+SetItemFilter(220639, TRINKET_F);	-- Lledra's Inanimator
+SetItemFilter(211420, TRINKET_F);	-- Shifting Scale Talisman
+SetItemFilter(223186, TRINKET_F);	-- Supply Expediter
 
 -- Crafted Items
 SetItemFilter(215111, CLOTH);	-- Gneuro-Linked Arcano-Filament Monocle (Phase 2)
