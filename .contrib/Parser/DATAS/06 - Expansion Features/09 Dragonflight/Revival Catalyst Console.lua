@@ -3884,8 +3884,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}),
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Tier Slots"
-					["description"] = "These items are obtained by choosing them from your weekly vault after reaching 2400 in any bracket.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
-					-- Check if they are possible to obtain from vault
+					["description"] = "These items are obtained by catalysing a PVP from the Great Vault after reaching 2400 in any bracket.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(217221),	-- Casket of the Risen Nightmare
@@ -3980,10 +3979,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					},
 				})),
-				-- Unknown bonus or mod ID. Need to wait for confirmation - Darkal
-				--[[
 				n(PVP_ELITE, bubbleDown({ ["bonusID"] = 7532 }, {	-- "Off Slots"
-					["description"] = "These items are obtained by upgrading your Catalyst PvP Gear to 9/9 upgrades.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
+					["description"] = "These items are obtained by catalysing a PVP from the Great Vault after reaching 2400 in any bracket.\n|CFFFF0000Requires 2400 rating in any PvP Bracket.|r",
 					["groups"] = {
 						cl(DEATHKNIGHT, {
 							i(207202),	-- Graveboots of the Risen Nightmare
@@ -4065,7 +4062,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					},
 				})),
-				]]--
 			}))),
 			n(QUESTS, {
 				q(72360, {	-- Reviving the Machine
