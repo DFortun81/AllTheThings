@@ -412,6 +412,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(223186, {	-- Supply Expediter
 					["cost"] = 5521,	-- 55s 21c
+					["b"] = 2,	-- BoA
 				})),
 				applyclassicphase(SOD_PHASE_THREE, i(220639, {	-- Lledra's Inanimator
 					["cost"] = 83793,	-- 8g 37s 93c
