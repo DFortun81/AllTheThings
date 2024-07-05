@@ -866,7 +866,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				-- #if AFTER 10.0.2
 				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert LFR Mode Non-set items from the Sepulcher of the First Ones Raid into your class' LFR Transmog Set.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+					["description"] = "The Creation Catalyst is a system that lets you convert Items bought with Sandworn Relics in Zereth Morthis & LFR Mode Non-set items from the Sepulcher of the First Ones Raid into your class' LFR Transmog Set.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
 					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
 						cl(DEATHKNIGHT, {
