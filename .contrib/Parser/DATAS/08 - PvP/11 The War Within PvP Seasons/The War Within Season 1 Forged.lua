@@ -13,22 +13,17 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				["collectible"] = false,
 			}),
 			ach(40385, {		-- Combatant I: The War Within Season 1
-				-- TODO: Add title reward
 			}),
 			ach(40386),		-- Combatant II: The War Within Season 1
 			ach(40387, {	-- Challenger I: The War Within Season 1
-				-- TODO: Add title reward
 			}),
 			ach(40388),		-- Challenger II: The War Within Season 1
 			ach(40389, {	-- Rival I: The War Within Season 1
-				-- TODO: Add title reward
 			}),
 			ach(40390),		-- Rival II: The War Within Season 1
 			ach(40391, {	-- Duelist: The War Within Season 1
-				-- TODO: Add title reward
 			}),
 			ach(40392, {	-- Elite: The War Within Season 1
-				-- TODO: Add title reward
 			}),
 			ach(40393, {	-- Gladiator: The War Within Season 1		(50 Wins)
 				i(223586),	-- Forged Gladiator's Fel Bat (MOUNT!)
@@ -64,7 +59,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			-- Solo
 			ach(40395, {	-- Legend: The War Within Season 1			(100 Wins)
 				i(225933),	-- Forged Legend's Pennant (TOY!)
-				-- TODO: Add title reward
 			}),
 			ach(40381, {	-- Forged Legend: The War Within Season 1	(0.1%)
 				title(559),	-- Forged Legend <Name>
