@@ -1180,6 +1180,12 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 24266
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Insulating Gniodine",
+					["recipeID"] = 435969,
+				}),
+				-- #endif
 			}
 		},
 		{
@@ -1338,6 +1344,12 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["name"] = "Mighty Troll's Blood Potion",
 					["recipeID"] = 3451
 				},
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Mildly Irradiated Rejuvenation Potion",
+					["recipeID"] = 435971,
+				}),
 				-- #endif
 				{
 					["name"] = "Minor Healing Potion",
@@ -1590,6 +1602,12 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["name"] = "Greater Arcane Elixir",
 					["recipeID"] = 17573
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Lesser Arcane Elixir",
+					["recipeID"] = 439960,
+				}),
+				-- #endif
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Mageblood Elixir",
@@ -1634,11 +1652,27 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["name"] = "Flask of Distilled Wisdom",
 					["recipeID"] = 17636
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, {
+					["name"] = "Flask of Everlasting Nightmares",
+					["recipeID"] = 446226,
+				}),
+				applyclassicphase(SOD_PHASE_THREE, {
+					["name"] = "Flask of Nightmarish Mojo",
+					["recipeID"] = 446851,
+				}),
+				-- #endif
 				-- #if BEFORE TBC
 				{
 					["name"] = "Flask of Petrification / Potion of Petrification",
 					["recipeID"] = 17634
 				},
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, {
+					["name"] = "Flask of Restless Dreams",
+					["recipeID"] = 448085,
+				}),
 				-- #endif
 				{
 					["name"] = "Flask of Supreme Power",
@@ -1647,7 +1681,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				{
 					["name"] = "Flask of the Titans",
 					["recipeID"] = 17635
-				}
+				},
 			}
 		},
 		{
