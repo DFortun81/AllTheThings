@@ -7,12 +7,28 @@ local SetItemFilter = function(itemID, f)
 	Items[itemID] = item;
 	return item;
 end
+SetItemFilter(223164, CLOTH);	-- Curiosity Cowl
 SetItemFilter(212588, CLOTH);	-- Provisioner's Gloves
 SetItemFilter(212589, LEATHER);	-- Courier Treads
+SetItemFilter(223167, LEATHER);	-- Initiative Cap
+SetItemFilter(223169, LEATHER);	-- Tenacity Cap
 SetItemFilter(212590, MAIL);	-- Hoist Strap
+SetItemFilter(223169, MAIL);	-- Tenacity Chain
+SetItemFilter(223162, BAGS);	-- Handy Courier Haversack
+SetItemFilter(219021, BAGS);	-- Hefty Courier Pack
 SetItemFilter(211382, BAGS);	-- Small Courier Satchel
 SetItemFilter(211384, BAGS);	-- Sturdy Courier Bag
+SetItemFilter(219023, FINGER_F);	-- Clerk's Ring
+SetItemFilter(219022, FINGER_F);	-- Hauler's Ring
+SetItemFilter(219024, FINGER_F);	-- Messenger's Ring
+SetItemFilter(219135, NECK_F);	-- Curiosity Pendant
+SetItemFilter(219137, NECK_F);	-- Initiative Pendant
+SetItemFilter(219136, NECK_F);	-- Tenacity Pendant
+SetItemFilter(223160, TRINKET);	-- Bargain Bush
+SetItemFilter(223161, TRINKET);	-- Empty Supply Crate
+SetItemFilter(220639, TRINKET);	-- Lledra's Inanimator
 SetItemFilter(211420, TRINKET);	-- Shifting Scale Talisman
+SetItemFilter(223186, TRINKET);	-- Supply Expediter
 
 -- Crafted Items
 SetItemFilter(215111, CLOTH);	-- Gneuro-Linked Arcano-Filament Monocle (Phase 2)
@@ -91,6 +107,10 @@ local OnTooltipFor_ACA_SDL = [[function(t, tooltipInfo)
 			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 40 - Crafted (Tier 4)]", 1000, ]] .. REVERED .. [[);
 			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 40 - Crafted (Tier 3)]", 850, ]] .. REVERED .. [[);
 			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 40 - Gathered]", 700, ]] .. REVERED .. [[);
+		elseif reputation < ]] .. EXALTED .. [[ and _.GameBuildVersion >= 11502 then
+			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 50 - Crafted (Tier 6)]", 1850, ]] .. EXALTED .. [[);
+			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 50 - Crafted (Tier 5)]", 1300, ]] .. EXALTED .. [[);
+			addRepInfo(tooltipInfo, reputation, "A Full Shipment [iLvl 50 - Gathered]", 950, ]] .. EXALTED .. [[);
 		end
 	end
 end]];
@@ -122,18 +142,6 @@ local DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS = {	-- Durotar Supply and Logistics
 		{ 64.6, 38.2, UNDERCITY },
 	},
 };
-local applyRuneReputationCosts = function(rune)
-	-- #if CLASSIC
-	-- After 2023-12-12 Hotfix
-	rune.minReputation = { 2586, FRIENDLY };	-- ACA / DSL, Friendly.
-	rune.cost = 20000;	-- 2g
-	-- #else
-	-- Before 2023-12-12 Hotfix
-	rune.minReputation = { 2586, HONORED };	-- ACA / DSL, Honored.
-	rune.cost = 45000;	-- 4.5g
-	-- #endif
-	return rune;
-end
 
 local SEASON_OF_DISCOVERY_HEADER = createHeader({	-- Season of Discovery
 	readable = "Season of Discovery",
@@ -181,90 +189,235 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 		["aqd"] = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
 		["hqd"] = faction(2587, DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS),
 		["OnInit"] = [[function(t) _.ResolveQuestData(t); local rep = t.factionID; for index,child in ipairs(t.g) do if child.minReputation then child.minReputation[1] = rep; end end return t; end]],
-		["groups"] = {
-			i(211382, {	-- Small Courier Satchel
-				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
-				["cost"] = 4746,	-- 47s 36c
-			}),
-			i(212588, {	-- Provisioner's Gloves
-				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
-				["cost"] = 1325,	-- 13s 25c
-			}),
-			i(212590, {	-- Hoist Strap
-				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
-				["cost"] = 2555,	-- 25s 55c
-			}),
-			i(212589, {	-- Courier Treads
-				["minReputation"] = { 2586, FRIENDLY },	-- ACA / DSL, Friendly.
-				["cost"] = 2214,	-- 22s 14c
-			}),
-			applyRuneReputationCosts(i(211386, {	-- Spell Notes: Arcane Surge
-				["classes"] = { MAGE },
-				["groups"] = {
-					recipe(425171),	-- Engrave Pants - Arcane Surge
-				},
-			})),
-			applyRuneReputationCosts(i(211387, {	-- Rune of Beckoning Light
-				["classes"] = { PALADIN },
-				["groups"] = {
-					recipe(409999),	-- Engrave Gloves - Beacon of Light
-				},
-			})),
-			applyRuneReputationCosts(i(211392, {	-- Rune of Everlasting Affliction
-				["classes"] = { WARLOCK },
-				["groups"] = {
-					recipe(416008),	-- Engrave Pants - Everlasting Affliction
-				},
-			})),
-			applyRuneReputationCosts(i(211391, {	-- Rune of Healing Rain
-				["classes"] = { SHAMAN },
-				["groups"] = {
-					recipe(416057),	-- Engrave Chest - Healing Rain
-				},
-			})),
-			applyRuneReputationCosts(i(211385, {	-- Rune of Serpent Spread
-				["classes"] = { HUNTER },
-				["groups"] = {
-					recipe(425760),	-- Engrave Pants - Serpent Spread
-				},
-			})),
-			applyRuneReputationCosts(i(211393, {	-- Rune of Single-Minded Fury
-				["classes"] = { WARRIOR },
-				["groups"] = {
-					recipe(416003),	-- Engrave Gloves - Single-Minded Fury
-				},
-			})),
-			applyRuneReputationCosts(i(206992, {	-- Rune of Skull Bash
-				["classes"] = { DRUID },
-				["groups"] = {
-					recipe(416046),	-- Engrave Pants - Skull Bash
-				},
-			})),
-			applyRuneReputationCosts(i(211390, {	-- Rune of Teasing
-				["classes"] = { ROGUE },
-				["groups"] = {
-					recipe(400082),	-- Engrave Chest - Just a Flesh Wound
-				},
-			})),
-			applyRuneReputationCosts(i(205950, {	-- Tenebrous Epiphany
-				["classes"] = { PRIEST },
-				["groups"] = {
-					recipe(415996),	-- Engrave Gloves - Mind Sear
-				},
-			})),
-			i(211247, {	-- Pattern: Phoenix Bindings
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["cost"] = 67500,	-- 6.75g
-			}),
-			i(210779, {	-- Plans: Mantle of the Second War
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["cost"] = 67500,	-- 6.75g
-			}),
-			i(211384, {	-- Sturdy Courier Bag
-				["minReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
-				["cost"] = 19350,	-- 1g 93s 50c
-			}),
-		},
+		["groups"] = bubbleDownClassicRep(2586, {	-- ACA / DSL
+			{	-- Neutral
+				
+			},
+			{	-- Friendly
+				i(211382, {	-- Small Courier Satchel
+					["cost"] = 4746,	-- 47s 36c
+				}),
+				i(212588, {	-- Provisioner's Gloves
+					["cost"] = 1325,	-- 13s 25c
+				}),
+				i(212590, {	-- Hoist Strap
+					["cost"] = 2555,	-- 25s 55c
+				}),
+				i(212589, {	-- Courier Treads
+					["cost"] = 2214,	-- 22s 14c
+				}),
+				
+				-- After 2023-12-12 Hotfix, Runes were moved from Honored to Friendly with a reduced price.
+				i(211387, {	-- Rune of Beckoning Light
+					["classes"] = { PALADIN },
+					["cost"] = 20000,	-- 2g
+					["groups"] = {
+						recipe(409999),	-- Engrave Gloves - Beacon of Light
+					},
+				}),
+				i(211392, {	-- Rune of Everlasting Affliction
+					["classes"] = { WARLOCK },
+					["cost"] = 20000,	-- 2g
+					["groups"] = {
+						recipe(416008),	-- Engrave Pants - Everlasting Affliction
+					},
+				}),
+				i(211391, {	-- Rune of Healing Rain
+					["classes"] = { SHAMAN },
+					["cost"] = 20000,	-- 2g
+					["groups"] = {
+						recipe(416057),	-- Engrave Chest - Healing Rain
+					},
+				}),
+				i(211385, {	-- Rune of Serpent Spread
+					["classes"] = { HUNTER },
+					["cost"] = 20000,	-- 2g
+					["groups"] = {
+						recipe(425760),	-- Engrave Pants - Serpent Spread
+					},
+				}),
+				i(211393, {	-- Rune of Single-Minded Fury
+					["classes"] = { WARRIOR },
+					["cost"] = 20000,	-- 2g
+					["groups"] = {
+						recipe(416003),	-- Engrave Gloves - Single-Minded Fury
+					},
+				}),
+				i(206992, {	-- Rune of Skull Bash
+					["classes"] = { DRUID },
+					["cost"] = 20000,	-- 2g
+					["groups"] = {
+						recipe(416046),	-- Engrave Pants - Skull Bash
+					},
+				}),
+				i(211390, {	-- Rune of Teasing
+					["classes"] = { ROGUE },
+					["cost"] = 20000,	-- 2g
+					["groups"] = {
+						recipe(400082),	-- Engrave Chest - Just a Flesh Wound
+					},
+				}),
+				i(211386, {	-- Spell Notes: Arcane Surge
+					["classes"] = { MAGE },
+					["cost"] = 20000,	-- 2g
+					["groups"] = {
+						recipe(425171),	-- Engrave Pants - Arcane Surge
+					},
+				}),
+				i(205950, {	-- Tenebrous Epiphany
+					["classes"] = { PRIEST },
+					["cost"] = 20000,	-- 2g
+					["groups"] = {
+						recipe(415996),	-- Engrave Gloves - Mind Sear
+					},
+				}),
+			},
+			{	-- Honored
+				i(211384, {	-- Sturdy Courier Bag
+					["cost"] = 19350,	-- 1g 93s 50c
+				}),
+				-- Prior to the 2023-12-12 Hotfix, Runes were Honored and cost 4.5g each.
+				--[[
+				i(211387, {	-- Rune of Beckoning Light
+					["classes"] = { PALADIN },
+					["cost"] = 45000,	-- 4.5g
+					["groups"] = {
+						recipe(409999),	-- Engrave Gloves - Beacon of Light
+					},
+				}),
+				i(211392, {	-- Rune of Everlasting Affliction
+					["classes"] = { WARLOCK },
+					["cost"] = 45000,	-- 4.5g
+					["groups"] = {
+						recipe(416008),	-- Engrave Pants - Everlasting Affliction
+					},
+				}),
+				i(211391, {	-- Rune of Healing Rain
+					["classes"] = { SHAMAN },
+					["cost"] = 45000,	-- 4.5g
+					["groups"] = {
+						recipe(416057),	-- Engrave Chest - Healing Rain
+					},
+				}),
+				i(211385, {	-- Rune of Serpent Spread
+					["classes"] = { HUNTER },
+					["cost"] = 45000,	-- 4.5g
+					["groups"] = {
+						recipe(425760),	-- Engrave Pants - Serpent Spread
+					},
+				}),
+				i(211393, {	-- Rune of Single-Minded Fury
+					["classes"] = { WARRIOR },
+					["cost"] = 45000,	-- 4.5g
+					["groups"] = {
+						recipe(416003),	-- Engrave Gloves - Single-Minded Fury
+					},
+				}),
+				i(206992, {	-- Rune of Skull Bash
+					["classes"] = { DRUID },
+					["cost"] = 45000,	-- 4.5g
+					["groups"] = {
+						recipe(416046),	-- Engrave Pants - Skull Bash
+					},
+				}),
+				i(211390, {	-- Rune of Teasing
+					["classes"] = { ROGUE },
+					["cost"] = 45000,	-- 4.5g
+					["groups"] = {
+						recipe(400082),	-- Engrave Chest - Just a Flesh Wound
+					},
+				}),
+				i(211386, {	-- Spell Notes: Arcane Surge
+					["classes"] = { MAGE },
+					["cost"] = 45000,	-- 4.5g
+					["groups"] = {
+						recipe(425171),	-- Engrave Pants - Arcane Surge
+					},
+				}),
+				i(205950, {	-- Tenebrous Epiphany
+					["classes"] = { PRIEST },
+					["cost"] = 45000,	-- 4.5g
+					["groups"] = {
+						recipe(415996),	-- Engrave Gloves - Mind Sear
+					},
+				}),
+				]]--
+				i(211247, {	-- Pattern: Phoenix Bindings
+					["cost"] = 67500,	-- 6.75g
+				}),
+				i(210779, {	-- Plans: Mantle of the Second War
+					["cost"] = 67500,	-- 6.75g
+				}),
+				applyclassicphase(SOD_PHASE_TWO, i(212230, {	-- Schematic: Soul Vessel
+					["cost"] = 22500,	-- 2g 25s
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(219023, {	-- Clerk's Ring
+					["cost"] = 36562,	-- 3g 65s 62c
+					["b"] = 2,	-- BoA
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(219022, {	-- Hauler's Ring
+					["cost"] = 36562,	-- 3g 65s 62c
+					["b"] = 2,	-- BoA
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(219024, {	-- Messenger's Ring
+					["cost"] = 36562,	-- 3g 65s 62c
+					["b"] = 2,	-- BoA
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(223160, {	-- Bargain Bush
+					["cost"] = 11890,	-- 1g 18s 90c
+				})),
+			},
+			{	-- Revered
+				applyclassicphase(SOD_PHASE_TWO, i(219021, {	-- Hefty Courier Pack
+					["cost"] = 48937,	-- 4g 89s 37c
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(217399, {	-- Recipe: Lesser Arcane Elixir
+					["cost"] = 22500,	-- 2g 25s
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(219135, {	-- Curiosity Pendant
+					["cost"] = 72562,	-- 7g 25s 62c
+					["b"] = 2,	-- BoA
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(219137, {	-- Initiative Pendant
+					["cost"] = 72562,	-- 7g 25s 62c
+					["b"] = 2,	-- BoA
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(219136, {	-- Tenacity Pendant
+					["cost"] = 72562,	-- 7g 25s 62c
+					["b"] = 2,	-- BoA
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(223161, {	-- Empty Supply Crate
+					["cost"] = 33661,	-- 3g 36s 61c
+				})),
+			},
+			{	-- Exalted
+				applyclassicphase(SOD_PHASE_THREE, i(223162, {	-- Handy Courier Haversack
+					["cost"] = 101882,	-- 10g 18s 82c
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(223164, {	-- Curiosity Cowl
+					["cost"] = 72562,	-- 7g 25s 62c
+					["b"] = 2,	-- BoA
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(223167, {	-- Initiative Cap
+					["cost"] = 72562,	-- 7g 25s 62c
+					["b"] = 2,	-- BoA
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(223169, {	-- Tenacity Cap
+					["cost"] = 72562,	-- 7g 25s 62c
+					["b"] = 2,	-- BoA
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(223169, {	-- Tenacity Chain
+					["cost"] = 72562,	-- 7g 25s 62c
+					["b"] = 2,	-- BoA
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(223186, {	-- Supply Expediter
+					["cost"] = 5521,	-- 55s 21c
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220639, {	-- Lledra's Inanimator
+					["cost"] = 83793,	-- 8g 37s 93c
+				})),
+			},
+		}),
 	}),
 	n(createHeader({	-- Comprehension
 		readable = "Comprehension",
@@ -1196,13 +1349,20 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					["repeatable"] = true,
 					["lvl"] = 18,
 				}),
-				q(80307, {	-- A Full Shipment [iLvl 40 - Gathered]
+				applyclassicphase(SOD_PHASE_TWO, q(80307, {	-- A Full Shipment [iLvl 40 - Gathered]
 					["provider"] = { "i", 217337 },	-- Supply Shipment [iLvl 40 - Gathered]
 					["maxReputation"] = { 2586, REVERED },	-- ACA / DSL, Revered.
 					["description"] = "Grants 700 reputation.",
 					["repeatable"] = true,
 					["lvl"] = 28,
-				}),
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(82307, {	-- A Full Shipment [iLvl 50 - Gathered]
+					["provider"] = { "i", 221008 },	-- Supply Shipment [iLvl 50 - Gathered]
+					["maxReputation"] = { 2586, EXALTED },	-- ACA / DSL, Exalted.
+					["description"] = "Grants 950 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 42,
+				})),
 				q(79102, {	-- A Full Shipment [iLvl 25 - Crafted (Tier 1)]
 					["provider"] = { "i", 211840 },	-- Supply Shipment [iLvl 25 - Crafted (Tier 1)]
 					["maxReputation"] = { 2586, HONORED },	-- ACA / DSL, Honored.
@@ -1217,20 +1377,34 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					["repeatable"] = true,
 					["lvl"] = 25,
 				}),
-				q(80308, {	-- A Full Shipment [iLvl 40 - Crafted (Tier 3)]
+				applyclassicphase(SOD_PHASE_TWO, q(80308, {	-- A Full Shipment [iLvl 40 - Crafted (Tier 3)]
 					["provider"] = { "i", 217338 },	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					["maxReputation"] = { 2586, REVERED },	-- ACA / DSL, Revered.
 					["description"] = "Grants 850 reputation.",
 					["repeatable"] = true,
 					["lvl"] = 35,
-				}),
-				q(80309, {	-- A Full Shipment [iLvl 40 - Crafted (Tier 4)]
+				})),
+				applyclassicphase(SOD_PHASE_TWO, q(80309, {	-- A Full Shipment [iLvl 40 - Crafted (Tier 4)]
 					["provider"] = { "i", 217339 },	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					["maxReputation"] = { 2586, REVERED },	-- ACA / DSL, Revered.
 					["description"] = "Grants 1000 reputation.",
 					["repeatable"] = true,
 					["lvl"] = 40,
-				}),
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(82308, {	-- A Full Shipment [iLvl 50 - Crafted (Tier 5)]
+					["provider"] = { "i", 221009 },	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					["maxReputation"] = { 2586, EXALTED },	-- ACA / DSL, Exalted.
+					["description"] = "Grants 1300 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 45,
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(82309, {	-- A Full Shipment [iLvl 50 - Crafted (Tier 6)]
+					["provider"] = { "i", 221010 },	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
+					["maxReputation"] = { 2586, EXALTED },	-- ACA / DSL, Exalted.
+					["description"] = "Grants 1850 reputation.",
+					["repeatable"] = true,
+					["lvl"] = 50,
+				})),
 				-- These were only in Phase 1, in Phase 2 you can only hand in full shipments (but you can carry multiple empty ones)
 				q(79100, {	-- A Waylaid Shipment [iLvl 10]
 					["providers"] = {
@@ -1461,142 +1635,137 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				}),
 
 				-- iLvl 40 - Crafted Supplies (Tier 3)
-				i(215407, {	-- Waylaid Supplies: Barbaric Shoulders
+				applyclassicphase(SOD_PHASE_TWO, i(215407, {	-- Waylaid Supplies: Barbaric Shoulders
 					["cost"] = { { "i", 5964, 4 } },	-- Barbaric Shoulders
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215402, { -- Waylaid Supplies: Big Iron Bombs
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215402, {	-- Waylaid Supplies: Big Iron Bombs
 					["cost"] = { { "i", 4394, 8 } },	-- Big Iron Bomb
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215401, {	-- Waylaid Supplies: Compact Harvest Reaper Kits
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215401, {	-- Waylaid Supplies: Compact Harvest Reaper Kits
 					["cost"] = { { "i", 4391, 2 } },	-- Compact Harvest Reaper Kits
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215414, {	-- Waylaid Supplies: Crimson Silk Pantaloons
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215414, {	-- Waylaid Supplies: Crimson Silk Pantaloons
 					["cost"] = { { "i", 7062, 4 } },	-- Crimson Silk Pantaloons
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215403, { -- Waylaid Supplies: Deadly Scopes
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215403, {	-- Waylaid Supplies: Deadly Scopes
 					["cost"] = { { "i", 10546, 4 } },	-- Deadly Scopes
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215410, {	-- Waylaid Supplies: Dusky Belts
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215410, {	-- Waylaid Supplies: Dusky Belts
 					-- TODO: Cost is currently bugged ingame. Fix when Blizzard also does.
 					["cost"] = { { "i", 2840, 20 } },	-- Dusky Belts
+					["timeline"] = { "created 1.15.1" },
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215395, {	-- Waylaid Supplies: Elixirs of Agility
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215395, {	-- Waylaid Supplies: Elixirs of Agility
 					["cost"] = { { "i", 8949, 12 } },	-- Elixirs of Agility
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215413, { -- Waylaid Supplies: Formal White Shirts
-					["cost"] = { { "i", 4334, 3 } },	-- Formal White Shirts
-					["groups"] = {
-						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
-					},
-				}),
-				i(215411, { -- Waylaid Supplies: Frost Leather Cloaks
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215411, {	-- Waylaid Supplies: Frost Leather Cloaks
 					["cost"] = { { "i", 7377, 3 } },	-- Frost Leather Cloaks
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215385, {	-- Waylaid Supplies: Gold Bars
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215385, {	-- Waylaid Supplies: Gold Bars
 					["cost"] = { { "i", 3577, 4 } },	-- Gold Bars
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215393, {	-- Waylaid Supplies: Greater Healing Potions
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215393, {	-- Waylaid Supplies: Greater Healing Potions
 					["cost"] = { { "i", 1710, 16 } },	-- Greater Healing Potions
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215398, { -- Waylaid Supplies: Green Iron Bracers
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215398, {	-- Waylaid Supplies: Green Iron Bracers
 					["cost"] = { { "i", 3835, 5 } },	-- Green Iron Bracers
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215408, { -- Waylaid Supplies: Guardian Gloves
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215408, {	-- Waylaid Supplies: Guardian Gloves
 					["cost"] = { { "i", 5966, 6 } },	-- Guardian Gloves
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215399, {	-- Waylaid Supplies: Heavy Mithril Gauntlets
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215399, {	-- Waylaid Supplies: Heavy Mithril Gauntlets
 					["cost"] = { { "i", 7919, 4 } },	-- Heavy Mithril Gauntlets
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215415, {	-- Waylaid Supplies: Rich Purple Silk Shirts
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215415, {	-- Waylaid Supplies: Rich Purple Silk Shirts
 					["cost"] = { { "i", 4335, 5 } },	-- Rich Purple Silk Shirts
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215412, {	-- Waylaid Supplies: Shadowskin Gloves
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215412, {	-- Waylaid Supplies: Shadowskin Gloves
 					-- TODO: Cost is currently bugged ingame. Fix when Blizzard also does.
 					["cost"] = { { "i", 2840, 20 } },	-- Dusky Belts
+					["timeline"] = { "created 1.15.1" },
 					["groups"] = {
 						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
 					},
-				}),
-				i(215400, { -- Waylaid Supplies: Solid Grinding Stones
-					["cost"] = { { "i", 7966, 10 } },	-- Solid Grinding Stones
-					["groups"] = {
-						i(217338),	-- Supply Shipment [iLvl 40 - Crafted (Tier 3)]
-					},
-				}),
-
+				})),
+				
 				-- iLvl 40 - Crafted Supplies (Tier 4)
-				i(215396, { -- Waylaid Supplies: Elixirs of Greater Defense
+				applyclassicphase(SOD_PHASE_TWO, i(215396, { -- Waylaid Supplies: Elixirs of Greater Defense
 					["cost"] = { { "i", 8951, 14 } },	-- Elixir of Greater Defense
 					["groups"] = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
-				}),
-				i(215397, { -- Waylaid Supplies: Massive Iron Axes
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215397, { -- Waylaid Supplies: Massive Iron Axes
 					["cost"] = { { "i", 3855, 2 } },	-- Massive Iron Axe
 					["groups"] = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
-				}),
-				i(215404, { -- Waylaid Supplies: Mithril Blunderbuss
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215404, { -- Waylaid Supplies: Mithril Blunderbuss
 					["cost"] = { { "i", 10508, 2 } },	-- Mithril Blunderbuss
 					["groups"] = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
-				}),
-				i(215416, { -- Waylaid Supplies: White Bandit Masks
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215416, { -- Waylaid Supplies: White Bandit Masks
 					["cost"] = { { "i", 10008, 4 } },	-- White Bandit Mask
 					["groups"] = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
-				}),
-				i(215409, { -- Waylaid Supplies: Turtle Scale Bracers
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215409, { -- Waylaid Supplies: Turtle Scale Bracers
 					["cost"] = { { "i", 8198, 3 } },	-- Turtle Scale Bracers
 					["groups"] = {
 						i(217339),	-- Supply Shipment [iLvl 40 - Crafted (Tier 4)]
 					},
-				}),
+				})),
+				
+				-- iLvl 50 - Crafted Supplies (Tier 5)
+				
+				-- iLvl 50 - Crafted Supplies (Tier 6)
+				
 			}),
 			n(createHeader({	-- Gathering
 				readable = "Gathering",
@@ -1728,78 +1897,92 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				}),
 
 				-- iLvl 40 - Gathering Supplies
-				i(215389, {	-- Waylaid Supplies: Fadeleaf
+				applyclassicphase(SOD_PHASE_TWO, i(215389, {	-- Waylaid Supplies: Fadeleaf
 					["cost"] = { { "i", 3818, 16 } },	-- Fadeleaf
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
-				i(215421, {	-- Waylaid Supplies: Fire Oil
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215421, {	-- Waylaid Supplies: Fire Oil
 					["cost"] = { { "i", 6371, 10 } },	-- Fire Oil
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
-				i(215387, {	-- Waylaid Supplies: Heavy Hide
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215413, {	-- Waylaid Supplies: Formal White Shirts
+					["cost"] = { { "i", 4334, 3 } },	-- Formal White Shirts
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215387, {	-- Waylaid Supplies: Heavy Hide
 					["cost"] = { { "i", 4235, 5 } },	-- Heavy Hide
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
-				i(215419, {	-- Waylaid Supplies: Heavy Silk Bandages
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215419, {	-- Waylaid Supplies: Heavy Silk Bandages
 					["cost"] = { { "i", 6451, 10 } },	-- Heavy Silk Bandages
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
-				i(215390, {	-- Waylaid Supplies: Khadgar's Whisker
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215390, {	-- Waylaid Supplies: Khadgar's Whisker
 					["cost"] = { { "i", 3358, 10 } },	-- Khadgar's Whisker
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
-				i(215386, {	-- Waylaid Supplies: Mithril Bars
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215386, {	-- Waylaid Supplies: Mithril Bars
 					["cost"] = { { "i", 3860, 6 } },	-- Mithril Bars
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
-				i(215392, {	-- Waylaid Supplies: Purple Lotus
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215392, {	-- Waylaid Supplies: Purple Lotus
 					["cost"] = { { "i", 8831, 8 } },	-- Purple Lotus
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
-				i(215420, {	-- Waylaid Supplies: Rockscale Cod
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215420, {	-- Waylaid Supplies: Rockscale Cod
 					["cost"] = { { "i", 4594, 40 } },	-- Rockscale Cod
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
-				i(215417, {	-- Waylaid Supplies: Soothing Turtle Bisque
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215400, {	-- Waylaid Supplies: Solid Grinding Stones
+					["cost"] = { { "i", 7966, 10 } },	-- Solid Grinding Stones
+					["groups"] = {
+						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215417, {	-- Waylaid Supplies: Soothing Turtle Bisque
 					["cost"] = { { "i", 3729, 10 } },	-- Soothing Turtle Bisque
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
-				i(215418, {	-- Waylaid Supplies: Spider Sausages
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215418, {	-- Waylaid Supplies: Spider Sausages
 					["cost"] = { { "i", 17222, 10 } },	-- Spider Sausages
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
-				i(215388, {	-- Waylaid Supplies: Thick Leather
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215388, {	-- Waylaid Supplies: Thick Leather
 					["cost"] = { { "i", 4304, 10 } },	-- Thick Leather
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
-				i(215391, {	-- Waylaid Supplies: Wintersbite
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(215391, {	-- Waylaid Supplies: Wintersbite
 					["cost"] = { { "i", 3819, 20 } },	-- Wintersbite
 					["groups"] = {
 						i(217337),	-- Supply Shipment [iLvl 40 - Gathered]
 					},
-				}),
+				})),
+				
+				-- iLvl 50 - Gathering Supplies
 			}),
 		},
 	}),
