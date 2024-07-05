@@ -10539,39 +10539,48 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					}),
 					cl(EVOKER, {
 						i(200378),	-- Hauberk of the Awakened
-						i(200379),	-- Treads of the Awakened
 						i(200380),	-- Gauntlets of the Awakened
 						i(200381),	-- Crown of the Awakened
 						i(200382),	-- Legguards of the Awakened
 						i(200383),	-- Talons of the Awakened
-						i(200384),	-- Chain of the Awakened
+						-- #if BEFORE 10.2.6
+						-- Added as a season 4 Elite Items in Catalyst
 						i(200385),	-- Bracers of the Awakened
+						i(200384),	-- Chain of the Awakened
 						i(200386),	-- Shroud of the Awakened
+						i(200379),	-- Treads of the Awakened
+						-- #endif
 					}),
 					cl(HUNTER, {
 						i(200387),	-- Stormwing Harrier's Cuirass
-						i(200388),	-- Stormwing Harrier's Sabatons
 						i(200389),	-- Stormwing Harrier's Handguards
 						i(200390),	-- Stormwing Harrier's Skullmask
 						i(200391),	-- Stormwing Harrier's Greaves
 						i(200392),	-- Stormwing Harrier's Pinions
+						-- #if BEFORE 10.2.6
+						-- Added as a season 4 Elite Items in Catalyst
 						i(200393),	-- Stormwing Harrier's Belt
-						i(200394),	-- Stormwing Harrier's Wristguards
 						i(200395),	-- Stormwing Harrier's Plumage
+						i(200388),	-- Stormwing Harrier's Sabatons
+						i(200394),	-- Stormwing Harrier's Wristguards
+						-- #endif
 					}),
 					cl(MAGE, {
 						-- NO ITEMS
 					}),
 					cl(MONK, {
 						i(200360),	-- Chestwrap of the Waking Fist
-						i(200361),	-- Gaiters of the Waking Fist
 						i(200362),	-- Palms of the Waking Fist
 						i(200363),	-- Gaze of the Waking Fist
 						i(200364),	-- Legguards of the Waking Fist
 						i(200365),	-- Mantle of the Waking Fist
-						i(200366),	-- Girdle of the Waking Fist
+						-- #if BEFORE 10.2.6
+						-- Added as a season 4 Elite Items in Catalyst
 						i(200367),	-- Cuffs of the Waking Fist
 						i(200368),	-- Drape of the Waking Fist
+						i(200361),	-- Gaiters of the Waking Fist
+						i(200366),	-- Girdle of the Waking Fist
+						-- #endif
 					}),
 					cl(PALADIN, {
 						i(200414),	-- Virtuous Silver Breastplate
