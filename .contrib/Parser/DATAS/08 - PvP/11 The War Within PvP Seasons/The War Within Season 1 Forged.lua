@@ -384,7 +384,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 
 		})),
 		filter(RECIPES, {
-		-- Under any Season
+		-- Under any Season as Blizzard stated there will be no new recipes, but an item required to craft higher itemlevel versions for s2, s3 and so on.
 		}),
 		--]]
 	}),
