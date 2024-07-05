@@ -998,17 +998,17 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(416046),	-- Engrave Pants - Skull Bash
 			recipe(424718),	-- Engrave Pants - Starsurge
 			-- Phase 2
-			recipe(424760),	-- Engrave Belt - Berserk
-			recipe(410029),	-- Engrave Belt - Eclipse
-			recipe(410059),	-- Engrave Belt - Nourish
-			recipe(410060),	-- Engrave Boots - Dreamstate
-			recipe(424765),	-- Engrave Boots - King of the Jungle
-			recipe(410027),	-- Engrave Boots - Survival Instincts
-			recipe(431468),	-- Engrave Bracers - Efflorescence
-			recipe(431461),	-- Engrave Bracers - Improved Frenzied Regeneration
-			recipe(431451),	-- Engrave Helm - Gale Winds
-			recipe(431447),	-- Engrave Helm - Gore
-			recipe(431449),	-- Engrave Helm - Improved Barkskin
+			applyclassicphase(SOD_PHASE_TWO, recipe(424760)),	-- Engrave Belt - Berserk
+			applyclassicphase(SOD_PHASE_TWO, recipe(410029)),	-- Engrave Belt - Eclipse
+			applyclassicphase(SOD_PHASE_TWO, recipe(410059)),	-- Engrave Belt - Nourish
+			applyclassicphase(SOD_PHASE_TWO, recipe(410060)),	-- Engrave Boots - Dreamstate
+			applyclassicphase(SOD_PHASE_TWO, recipe(424765)),	-- Engrave Boots - King of the Jungle
+			applyclassicphase(SOD_PHASE_TWO, recipe(410027)),	-- Engrave Boots - Survival Instincts
+			applyclassicphase(SOD_PHASE_TWO, recipe(431468)),	-- Engrave Bracers - Efflorescence
+			applyclassicphase(SOD_PHASE_TWO, recipe(431461)),	-- Engrave Bracers - Improved Frenzied Regeneration
+			applyclassicphase(SOD_PHASE_TWO, recipe(431451)),	-- Engrave Helm - Gale Winds
+			applyclassicphase(SOD_PHASE_TWO, recipe(431447)),	-- Engrave Helm - Gore
+			applyclassicphase(SOD_PHASE_TWO, recipe(431449)),	-- Engrave Helm - Improved Barkskin
 		}),
 		classHeader(HUNTER, {
 			-- Phase 1
@@ -1025,14 +1025,14 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(425760),	-- Engrave Pants - Serpent Spread
 			recipe(416091),	-- Engrave Pants - Sniper Training
 			-- Phase 2
-			recipe(410114),	-- Engrave Belt - Expose Weakness
-			recipe(416086),	-- Engrave Belt - Melee Specialist
-			recipe(410109),	-- Engrave Belt - Steady Shot
-			recipe(410116),	-- Engrave Boots - Dual Wield Specialization
-			recipe(416089),	-- Engrave Boots - Invigoration
-			recipe(410118),	-- Engrave Boots - Trap Launcher
-			recipe(431601),	-- Engrave Bracers - Focus Fire
-			recipe(431611),	-- Engrave Bracers - T.N.T.
+			applyclassicphase(SOD_PHASE_TWO, recipe(410114)),	-- Engrave Belt - Expose Weakness
+			applyclassicphase(SOD_PHASE_TWO, recipe(416086)),	-- Engrave Belt - Melee Specialist
+			applyclassicphase(SOD_PHASE_TWO, recipe(410109)),	-- Engrave Belt - Steady Shot
+			applyclassicphase(SOD_PHASE_TWO, recipe(410116)),	-- Engrave Boots - Dual Wield Specialization
+			applyclassicphase(SOD_PHASE_TWO, recipe(416089)),	-- Engrave Boots - Invigoration
+			applyclassicphase(SOD_PHASE_TWO, recipe(410118)),	-- Engrave Boots - Trap Launcher
+			applyclassicphase(SOD_PHASE_TWO, recipe(431601)),	-- Engrave Bracers - Focus Fire
+			applyclassicphase(SOD_PHASE_TWO, recipe(431611)),	-- Engrave Bracers - T.N.T.
 		}),
 		classHeader(MAGE, {
 			-- Phase 1
@@ -1049,18 +1049,18 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(401768),	-- Engrave Pants - Living Flame
 			recipe(415939),	-- Engrave Pants - Mass Regeneration
 			-- Phase 2
-			recipe(401762),	-- Engrave Belt - Frostfire Bolt
-			recipe(401749),	-- Engrave Belt - Hot Streak
-			recipe(401763),	-- Engrave Belt - Missile Barrage
-			recipe(415948),	-- Engrave Belt - Spellfrost Bolt
-			recipe(401752),	-- Engrave Boots - Brain Freeze
-			recipe(425189),	-- Engrave Boots - Chronostatic Preservation
-			recipe(415934),	-- Engrave Boots - Spell Power
-			recipe(429311),	-- Engrave Bracers - Balefire Bolt
-			recipe(429309),	-- Engrave Bracers - Displacement
-			recipe(429308),	-- Engrave Bracers - Molten Armor
-			recipe(429304),	-- Engrave Helm - Deep Freeze
-			recipe(429306),	-- Engrave Helm - Temporal Anomaly
+			applyclassicphase(SOD_PHASE_TWO, recipe(401762)),	-- Engrave Belt - Frostfire Bolt
+			applyclassicphase(SOD_PHASE_TWO, recipe(401749)),	-- Engrave Belt - Hot Streak
+			applyclassicphase(SOD_PHASE_TWO, recipe(401763)),	-- Engrave Belt - Missile Barrage
+			applyclassicphase(SOD_PHASE_TWO, recipe(415948)),	-- Engrave Belt - Spellfrost Bolt
+			applyclassicphase(SOD_PHASE_TWO, recipe(401752)),	-- Engrave Boots - Brain Freeze
+			applyclassicphase(SOD_PHASE_TWO, recipe(425189)),	-- Engrave Boots - Chronostatic Preservation
+			applyclassicphase(SOD_PHASE_TWO, recipe(415934)),	-- Engrave Boots - Spell Power
+			applyclassicphase(SOD_PHASE_TWO, recipe(429311)),	-- Engrave Bracers - Balefire Bolt
+			applyclassicphase(SOD_PHASE_TWO, recipe(429309)),	-- Engrave Bracers - Displacement
+			applyclassicphase(SOD_PHASE_TWO, recipe(429308)),	-- Engrave Bracers - Molten Armor
+			applyclassicphase(SOD_PHASE_TWO, recipe(429304)),	-- Engrave Helm - Deep Freeze
+			applyclassicphase(SOD_PHASE_TWO, recipe(429306)),	-- Engrave Helm - Temporal Anomaly
 		}),
 		classHeader(PALADIN, {
 			-- Phase 1
@@ -1077,18 +1077,18 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(410011),	-- Engrave Pants - Inspiration Exemplar
 			recipe(425621),	-- Engrave Pants - Rebuke
 			-- Phase 2
-			recipe(426175),	-- Engrave Belt - Enlightened Judgements
-			recipe(426180),	-- Engrave Belt - Infusion of Light
-			recipe(426178),	-- Engrave Belt - Sheath of Light
-			recipe(416035),	-- Engrave Boots - Guarded by the Light
-			recipe(416028),	-- Engrave Boots - Sacred Shield
-			recipe(416031),	-- Engrave Boots - The Art of War
-			recipe(429261),	-- Engrave Bracers - Improved Hammer of Wrath
-			recipe(429255),	-- Engrave Bracers - Purifying Power
-			recipe(429251),	-- Engrave Helm - Fanaticism
-			recipe(429247),	-- Engrave Helm - Improved Sanctuary
-			recipe(429242),	-- Engrave Helm - Light's Grace
-			recipe(429249),	-- Engrave Helm - Wrath
+			applyclassicphase(SOD_PHASE_TWO, recipe(426175)),	-- Engrave Belt - Enlightened Judgements
+			applyclassicphase(SOD_PHASE_TWO, recipe(426180)),	-- Engrave Belt - Infusion of Light
+			applyclassicphase(SOD_PHASE_TWO, recipe(426178)),	-- Engrave Belt - Sheath of Light
+			applyclassicphase(SOD_PHASE_TWO, recipe(416035)),	-- Engrave Boots - Guarded by the Light
+			applyclassicphase(SOD_PHASE_TWO, recipe(416028)),	-- Engrave Boots - Sacred Shield
+			applyclassicphase(SOD_PHASE_TWO, recipe(416031)),	-- Engrave Boots - The Art of War
+			applyclassicphase(SOD_PHASE_TWO, recipe(429261)),	-- Engrave Bracers - Improved Hammer of Wrath
+			applyclassicphase(SOD_PHASE_TWO, recipe(429255)),	-- Engrave Bracers - Purifying Power
+			applyclassicphase(SOD_PHASE_TWO, recipe(429251)),	-- Engrave Helm - Fanaticism
+			applyclassicphase(SOD_PHASE_TWO, recipe(429247)),	-- Engrave Helm - Improved Sanctuary
+			applyclassicphase(SOD_PHASE_TWO, recipe(429242)),	-- Engrave Helm - Light's Grace
+			applyclassicphase(SOD_PHASE_TWO, recipe(429249)),	-- Engrave Helm - Wrath
 		}),
 		classHeader(PRIEST, {
 			-- Phase 1
@@ -1105,16 +1105,16 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(402848),	-- Engrave Pants - Prayer of Mending
 			recipe(402854),	-- Engrave Pants - Shared Pain
 			-- Phase 2
-			recipe(425309),	-- Engrave Belt - Empowered Renew
-			recipe(431663),	-- Engrave Belt - Mind Spike
-			recipe(425310),	-- Engrave Belt - Renewed Hope
-			recipe(425314),	-- Engrave Boots - Dispersion
-			recipe(402855),	-- Engrave Boots - Pain Suppression
-			recipe(425312),	-- Engrave Boots - Spirit of the Redeemer
-			recipe(431673),	-- Engrave Bracers - Despair
-			recipe(431669),	-- Engrave Bracers - Surge of Light
-			recipe(431705),	-- Engrave Bracers - Void Zone
-			recipe(431650),	-- Engrave Helm - Divine Aegis
+			applyclassicphase(SOD_PHASE_TWO, recipe(425309)),	-- Engrave Belt - Empowered Renew
+			applyclassicphase(SOD_PHASE_TWO, recipe(431663)),	-- Engrave Belt - Mind Spike
+			applyclassicphase(SOD_PHASE_TWO, recipe(425310)),	-- Engrave Belt - Renewed Hope
+			applyclassicphase(SOD_PHASE_TWO, recipe(425314)),	-- Engrave Boots - Dispersion
+			applyclassicphase(SOD_PHASE_TWO, recipe(402855)),	-- Engrave Boots - Pain Suppression
+			applyclassicphase(SOD_PHASE_TWO, recipe(425312)),	-- Engrave Boots - Spirit of the Redeemer
+			applyclassicphase(SOD_PHASE_TWO, recipe(431673)),	-- Engrave Bracers - Despair
+			applyclassicphase(SOD_PHASE_TWO, recipe(431669)),	-- Engrave Bracers - Surge of Light
+			applyclassicphase(SOD_PHASE_TWO, recipe(431705)),	-- Engrave Bracers - Void Zone
+			applyclassicphase(SOD_PHASE_TWO, recipe(431650)),	-- Engrave Helm - Divine Aegis
 		}),
 		classHeader(ROGUE, {
 			-- Phase 1
@@ -1132,15 +1132,15 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			--recipe(401488),	-- Engrave Pants - Cutty's Rune [This may be NYI?]
 			recipe(400102),	-- Engrave Pants - Envenom
 			-- Phase 2
-			recipe(425102),	-- Engrave Belt - Poisoned Knife
-			recipe(400101),	-- Engrave Belt - Shadowstep
-			recipe(400096),	-- Engrave Belt - Shuriken Toss
-			recipe(425103),	-- Engrave Boots - Master of Subtlety
-			recipe(400093),	-- Engrave Boots - Rolling with the Punches
-			recipe(415926),	-- Engrave Boots - Waylay
-			recipe(432293),	-- Engrave Helm - Combat Potency
-			recipe(432291),	-- Engrave Helm - Focused Attacks
-			recipe(432295),	-- Engrave Helm - Honor Among Thieves
+			applyclassicphase(SOD_PHASE_TWO, recipe(425102)),	-- Engrave Belt - Poisoned Knife
+			applyclassicphase(SOD_PHASE_TWO, recipe(400101)),	-- Engrave Belt - Shadowstep
+			applyclassicphase(SOD_PHASE_TWO, recipe(400096)),	-- Engrave Belt - Shuriken Toss
+			applyclassicphase(SOD_PHASE_TWO, recipe(425103)),	-- Engrave Boots - Master of Subtlety
+			applyclassicphase(SOD_PHASE_TWO, recipe(400093)),	-- Engrave Boots - Rolling with the Punches
+			applyclassicphase(SOD_PHASE_TWO, recipe(415926)),	-- Engrave Boots - Waylay
+			applyclassicphase(SOD_PHASE_TWO, recipe(432293)),	-- Engrave Helm - Combat Potency
+			applyclassicphase(SOD_PHASE_TWO, recipe(432291)),	-- Engrave Helm - Focused Attacks
+			applyclassicphase(SOD_PHASE_TWO, recipe(432295)),	-- Engrave Helm - Honor Among Thieves
 		}),
 		classHeader(SHAMAN, {
 			-- Phase 1
@@ -1157,12 +1157,12 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(425343),	-- Engrave Pants - Shamanistic Rage
 			recipe(410107),	-- Engrave Pants - Way of Earth
 			-- Phase 2
-			recipe(410093),	-- Engrave Belt - Fire Nova
-			recipe(410100),	-- Engrave Belt - Maelstrom Weapon
-			recipe(416054),	-- Engrave Belt - Power Surge
-			recipe(425883),	-- Engrave Boots - Ancestral Awakening
-			recipe(425882),	-- Engrave Boots - Decoy Totem
-			recipe(410103),	-- Engrave Boots - Spirit of the Alpha
+			applyclassicphase(SOD_PHASE_TWO, recipe(410093)),	-- Engrave Belt - Fire Nova
+			applyclassicphase(SOD_PHASE_TWO, recipe(410100)),	-- Engrave Belt - Maelstrom Weapon
+			applyclassicphase(SOD_PHASE_TWO, recipe(416054)),	-- Engrave Belt - Power Surge
+			applyclassicphase(SOD_PHASE_TWO, recipe(425883)),	-- Engrave Boots - Ancestral Awakening
+			applyclassicphase(SOD_PHASE_TWO, recipe(425882)),	-- Engrave Boots - Decoy Totem
+			applyclassicphase(SOD_PHASE_TWO, recipe(410103)),	-- Engrave Boots - Spirit of the Alpha
 		}),
 		classHeader(WARLOCK, {
 			-- Phase 1
@@ -1179,17 +1179,17 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(416008),	-- Engrave Pants - Everlasting Affliction
 			recipe(416015),	-- Engrave Pants - Incinerate
 			-- Phase 2
-			recipe(426445),	-- Engrave Belt - Grimoire of Synergy
-			recipe(426443),	-- Engrave Belt - Invocation
-			recipe(426452),	-- Engrave Belt - Shadow and Flame
-			recipe(416017),	-- Engrave Boots - Dance of the Wicked
-			recipe(416014),	-- Engrave Boots - Demonic Knowledge
-			recipe(426467),	-- Engrave Boots - Shadowflame
-			recipe(431758),	-- Engrave Bracers - Immolation Aura
-			recipe(431756),	-- Engrave Bracers - Summon Felguard
-			recipe(431747),	-- Engrave Bracers - Unstable Affliction
-			recipe(431745),	-- Engrave Helm - Backdraft
-			recipe(431743),	-- Engrave Helm - Pandemic
+			applyclassicphase(SOD_PHASE_TWO, recipe(426445)),	-- Engrave Belt - Grimoire of Synergy
+			applyclassicphase(SOD_PHASE_TWO, recipe(426443)),	-- Engrave Belt - Invocation
+			applyclassicphase(SOD_PHASE_TWO, recipe(426452)),	-- Engrave Belt - Shadow and Flame
+			applyclassicphase(SOD_PHASE_TWO, recipe(416017)),	-- Engrave Boots - Dance of the Wicked
+			applyclassicphase(SOD_PHASE_TWO, recipe(416014)),	-- Engrave Boots - Demonic Knowledge
+			applyclassicphase(SOD_PHASE_TWO, recipe(426467)),	-- Engrave Boots - Shadowflame
+			applyclassicphase(SOD_PHASE_TWO, recipe(431758)),	-- Engrave Bracers - Immolation Aura
+			applyclassicphase(SOD_PHASE_TWO, recipe(431756)),	-- Engrave Bracers - Summon Felguard
+			applyclassicphase(SOD_PHASE_TWO, recipe(431747)),	-- Engrave Bracers - Unstable Affliction
+			applyclassicphase(SOD_PHASE_TWO, recipe(431745)),	-- Engrave Helm - Backdraft
+			applyclassicphase(SOD_PHASE_TWO, recipe(431743)),	-- Engrave Helm - Pandemic
 		}),
 		classHeader(WARRIOR, {
 			-- Phase 1
@@ -1206,18 +1206,18 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(425447),	-- Engrave Pants - Frenzied Assault
 			recipe(403476),	-- Engrave Pants - Furious Thunder
 			-- Phase 2
-			recipe(416004),	-- Engrave Belt - Blood Surge
-			recipe(409163),	-- Engrave Belt - Focused Rage
-			recipe(416005),	-- Engrave Belt - Precise Timing
-			recipe(403467),	-- Engrave Boots - Enraged Regeneration
-			recipe(403472),	-- Engrave Boots - Intervene
-			recipe(426491),	-- Engrave Boots - Rallying Cry
-			recipe(427081),	-- Engrave Bracers - Rampage
-			recipe(427082),	-- Engrave Bracers - Sword and Board
-			recipe(427084),	-- Engrave Bracers - Wrecking Crew
-			recipe(427080),	-- Engrave Helm - Shield Mastery
-			recipe(427076),	-- Engrave Helm - Taste for Blood
-			recipe(427078),	-- Engrave Helm - Vigilance
+			applyclassicphase(SOD_PHASE_TWO, recipe(416004)),	-- Engrave Belt - Blood Surge
+			applyclassicphase(SOD_PHASE_TWO, recipe(409163)),	-- Engrave Belt - Focused Rage
+			applyclassicphase(SOD_PHASE_TWO, recipe(416005)),	-- Engrave Belt - Precise Timing
+			applyclassicphase(SOD_PHASE_TWO, recipe(403467)),	-- Engrave Boots - Enraged Regeneration
+			applyclassicphase(SOD_PHASE_TWO, recipe(403472)),	-- Engrave Boots - Intervene
+			applyclassicphase(SOD_PHASE_TWO, recipe(426491)),	-- Engrave Boots - Rallying Cry
+			applyclassicphase(SOD_PHASE_TWO, recipe(427081)),	-- Engrave Bracers - Rampage
+			applyclassicphase(SOD_PHASE_TWO, recipe(427082)),	-- Engrave Bracers - Sword and Board
+			applyclassicphase(SOD_PHASE_TWO, recipe(427084)),	-- Engrave Bracers - Wrecking Crew
+			applyclassicphase(SOD_PHASE_TWO, recipe(427080)),	-- Engrave Helm - Shield Mastery
+			applyclassicphase(SOD_PHASE_TWO, recipe(427076)),	-- Engrave Helm - Taste for Blood
+			applyclassicphase(SOD_PHASE_TWO, recipe(427078)),	-- Engrave Helm - Vigilance
 		}),
 	}),
 	n(createHeader({	-- Soul Brokers
