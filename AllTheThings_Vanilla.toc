@@ -70,6 +70,7 @@ src\Modules\Vignette.lua
 # Expansion specific localization files
 db\Classic\ExplorationDB.lua
 db\Classic\LocalizationDB.lua
+db\Classic\Season of Discovery\LocalizationDB.lua
 # db\Classic\en_auto.lua
 # db\Classic\ReagentsDB.lua
 db\Presets.lua
@@ -127,6 +128,7 @@ src\UI\Classic Window Logic.lua
 
 # Load expansion specific category database.
 db\Classic\Categories.lua
+db\Classic\Season of Discovery\Categories.lua
 
 # Window Definitions
 src\UI\Windows\Windows.xml

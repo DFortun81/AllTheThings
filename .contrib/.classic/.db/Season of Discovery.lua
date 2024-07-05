@@ -2139,6 +2139,29 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	}),
 }))));
 
+-- Dungeon & Raid Phase Requirements
+root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
+	applyclassicphase(SOD_PHASE_TWO, inst(239)),	-- Uldaman
+	applyclassicphase(SOD_PHASE_TWO, inst(233)),	-- Razorfen Downs
+	applyclassicphase(SOD_PHASE_THREE, inst(232)),	-- Maraudon
+	applyclassicphase(SOD_PHASE_THREE, inst(241)),	-- Zul'Farrak
+	applyclassicphase(SOD_PHASE_THREE, inst(237)),	-- The Temple of Atal'hakkar
+	applyclassicphase(SOD_PHASE_THREE, inst(228)),	-- Blackrock Depths
+	applyclassicphase(SOD_PHASE_FOUR, inst(229)),	-- Blackrock Spire
+	applyclassicphase(SOD_PHASE_FOUR, inst(230)),	-- Dire Maul
+	applyclassicphase(SOD_PHASE_FOUR, inst(246)),	-- Scholomance
+	applyclassicphase(SOD_PHASE_FOUR, inst(236)),	-- Stratholme
+	applyclassicphase(SOD_PHASE_FOUR, n(TIER_ZERO_POINT_FIVE_SETS)),	-- Tier 0.5
+	applyclassicphase(SOD_PHASE_FOUR, n(WORLD_BOSSES)),	-- World Bosses
+	applyclassicphase(SOD_PHASE_FOUR, inst(741)),	-- Molten Core
+	applyclassicphase(SOD_PHASE_FOUR, inst(760)),	-- Onyxia's Lair
+	applyclassicphase(SOD_PHASE_FIVE, inst(742)),	-- Blackwing Lair
+	applyclassicphase(SOD_PHASE_SIX, inst(76)),		-- Zul'Gurub
+	applyclassicphase(SOD_PHASE_SEVEN, inst(743)),	-- Ruins of Ahn'Qiraj
+	applyclassicphase(SOD_PHASE_SEVEN, inst(744)),	-- Temple of Ahn'Qiraj
+	applyclassicphase(SOD_PHASE_EIGHT, inst(754)),	-- Naxxramas
+}));
+
 root(ROOTS.NeverImplemented, {
 	applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
 		i(211445),	-- Barbaric Recurve
