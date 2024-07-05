@@ -1312,6 +1312,7 @@ namespace ATT
 
                 var filename = Path.Combine(directory, "Categories.lua");
                 var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString().Replace("\r\n", "\n").Trim();
+                if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
                 if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
             }
 
@@ -1343,6 +1344,7 @@ for k,t in pairs(keys) do
 end");
 
                     string content = locale.ToString();
+                    if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
                     if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
                 }
             }
@@ -1369,6 +1371,7 @@ end");
                     data.Append(");");
 
                     string content = data.ToString();
+                    if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
                     if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
                 }
             }
