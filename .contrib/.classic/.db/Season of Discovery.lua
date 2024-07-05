@@ -1763,8 +1763,98 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				})),
 				
 				-- iLvl 50 - Crafted Supplies (Tier 5)
+				applyclassicphase(SOD_PHASE_THREE, i(220940, {	-- Waylaid Supplies: Black Mageweave Headbands
+					["cost"] = { { "i", 10024, 5 } },	-- Black Mageweave Headband
+					["groups"] = {
+						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220928, {	-- Waylaid Supplies: Enchanted Thorium Bars
+					["cost"] = { { "i", 12655, 4 } },	-- Enchanted Thorium Bar
+					["groups"] = {
+						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220931, {	-- Waylaid Supplies: Hi-Explosive Bombs
+					["cost"] = { { "i", 10562, 16 } },	-- Hi-Explosive Bomb
+					["groups"] = {
+						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220930, {	-- Waylaid Supplies: Major Healing Potions
+					["cost"] = { { "i", 13446, 8 } },	-- Major Healing Potion
+					["groups"] = {
+						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220934, {	-- Waylaid Supplies: Mithril Coifs
+					["cost"] = { { "i", 7931, 3 } },	-- Mithril Coif
+					["groups"] = {
+						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220937, {	-- Waylaid Supplies: Rugged Armor Kits
+					["cost"] = { { "i", 15564, 12 } },	-- Rugged Armor Kit
+					["groups"] = {
+						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220929, {	-- Waylaid Supplies: Superior Mana Potions
+					["cost"] = { { "i", 13443, 6 } },	-- Superior Mana Potion
+					["groups"] = {
+						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220935, {	-- Waylaid Supplies: Thorium Belts
+					["cost"] = { { "i", 12406, 5 } },	-- Thorium Belt
+					["groups"] = {
+						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220942, {	-- Waylaid Supplies: Tuxedo Shirts
+					["cost"] = { { "i", 10034, 4 } },	-- Tuxedo Shirt
+					["groups"] = {
+						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220938, {	-- Waylaid Supplies: Wicked Leather Bracers
+					["cost"] = { { "i", 15084, 6 } },	-- Wicked Leather Bracer
+					["groups"] = {
+						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220932, {	-- Waylaid Supplies: Thorium Grenades
+					["cost"] = { { "i", 15993, 3 } },	-- Thorium Grenade
+					["groups"] = {
+						i(221009),	-- Supply Shipment [iLvl 50 - Crafted (Tier 5)]
+					},
+				})),
 				
 				-- iLvl 50 - Crafted Supplies (Tier 6)
+				applyclassicphase(SOD_PHASE_THREE, i(220941, {	-- Waylaid Supplies: Runecloth Belts
+					["cost"] = { { "i", 13856, 6 } },	-- Runecloth Belt
+					["groups"] = {
+						i(221010),	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220939, {	-- Waylaid Supplies: Runic Leather Bracers
+					["cost"] = { { "i", 15092, 5 } },	-- Runic Leather Bracer
+					["groups"] = {
+						i(221010),	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220933, {	-- Waylaid Supplies: Thorium Rifles
+					["cost"] = { { "i", 15995, 2 } },	-- Thorium Rifle
+					["groups"] = {
+						i(221010),	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220936, {	-- Waylaid Supplies: Truesilver Gauntlets
+					["cost"] = { { "i", 7938, 2 } },	-- Truesilver Gauntlet
+					["groups"] = {
+						i(221010),	-- Supply Shipment [iLvl 50 - Crafted (Tier 6)]
+					},
+				})),
 				
 			}),
 			n(createHeader({	-- Gathering
@@ -1983,6 +2073,66 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				})),
 				
 				-- iLvl 50 - Gathering Supplies
+				applyclassicphase(SOD_PHASE_THREE, i(220923, {	-- Waylaid Supplies: Dreamfoil
+					["cost"] = { { "i", 13463, 6 } },	-- Dreamfoil
+					["groups"] = {
+						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220921, {	-- Waylaid Supplies: Heavy Mageweave Bandages
+					["cost"] = { { "i", 8545, 14 } },	-- Heavy Mageweave Bandage
+					["groups"] = {
+						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220919, {	-- Waylaid Supplies: Nightfin Soup
+					["cost"] = { { "i", 13931, 8 } },	-- Nightfin Soup
+					["groups"] = {
+						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220926, {	-- Waylaid Supplies: Rugged Leather
+					["cost"] = { { "i", 8170, 14 } },	-- Rugged Leather
+					["groups"] = {
+						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220922, {	-- Waylaid Supplies: Sungrass
+					["cost"] = { { "i", 8838, 15 } },	-- Sungrass
+					["groups"] = {
+						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220920, {	-- Waylaid Supplies: Tender Wolf Steaks
+					["cost"] = { { "i", 18045, 12 } },	-- Tender Wolf Steak
+					["groups"] = {
+						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220927, {	-- Waylaid Supplies: Thick Hide
+					["cost"] = { { "i", 8169, 8 } },	-- Thick Hide
+					["groups"] = {
+						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220925, {	-- Waylaid Supplies: Thorium Bars
+					["cost"] = { { "i", 12359, 16 } },	-- Thorium Bars
+					["groups"] = {
+						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220924, {	-- Waylaid Supplies: Truesilver Bars
+					["cost"] = { { "i", 6037, 12 } },	-- Truesilver Bars
+					["groups"] = {
+						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, i(220918, {	-- Waylaid Supplies: Undermine Clam Chowder
+					["cost"] = { { "i", 16766, 16 } },	-- Undermine Clam Chowder
+					["groups"] = {
+						i(221008),	-- Supply Shipment [iLvl 50 - Gathered]
+					},
+				})),
 			}),
 		},
 	}),
