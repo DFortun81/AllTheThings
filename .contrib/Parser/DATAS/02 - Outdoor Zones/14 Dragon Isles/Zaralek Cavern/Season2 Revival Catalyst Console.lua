@@ -1,6 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local ABERRUS_THE_SHADOWED_CRUCIBLE = 2403;
+
+local SymRaidAberrus = function(ClassID, DiffID)
+	return {{"sub","instance_tier",1208,DiffID,ClassID}};
+end
+
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 --[[ Uncomment me once DF Awakened is over

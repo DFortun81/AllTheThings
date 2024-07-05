@@ -12,6 +12,12 @@ local MAGMORAX = 2527;
 local NELTHARION = 2523;
 local SARKARETH = 2520;
 
+local ABERRUS_THE_SHADOWED_CRUCIBLE = 2403;
+
+local SymRaidAberrus = function(ClassID, DiffID)
+	return {{"sub","instance_tier",1208,DiffID,ClassID}};
+end
+
 ------ EncounterToCRS ------
 local EncounterToCRS = {
 	[KAZZARA] = { 201261 },	-- Kazzara, the Hellforged
@@ -360,10 +366,6 @@ local EncounterToLoot = {
 		i(204465),	-- Voice of the Silent Star
 	},
 };
-
-local SymRaidAberrus = function(ClassID, DiffID)
-	return {{"sub","instance_tier",1208,DiffID,ClassID}};
-end
 
 ------ Zone Drops ----------
 local ZoneDropLoot = {

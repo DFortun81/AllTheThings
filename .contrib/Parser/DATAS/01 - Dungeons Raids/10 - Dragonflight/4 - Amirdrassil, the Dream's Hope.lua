@@ -12,6 +12,12 @@ local SMOLDERON = 2563;
 local TINDRAL = 2565;
 local FYRAKK = 2519;
 
+local ADMIRDRASSIL_THE_DREAMS_HOPE = 2502;
+
+local SymRaidAdmirdrassil = function(ClassID, DiffID)
+	return {{"sub","instance_tier",1207,DiffID,ClassID}}
+end
+
 ------ EncounterToCRS ------
 local EncounterToCRS = {
 	[GNARLROOT] = { 209333 },	-- Gnarlroot
@@ -961,6 +967,131 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 				}),
+				--[[ Uncomment me once DF Awakened is over
+				o(382621, {	-- Revival Catalyst Console	-- LFR	--
+					["description"] = "The Revival Catalyst is a system that lets you convert Emerald Dream Items & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles. Make sure to equip your item first before converting it.",
+					["coord"] = { 60.6, 53.8, THALDRASZUS },
+					["modelScale"] = 4,
+					["g"] = bubbleDown({ ["modID"] = 4 }, {
+						cl(DEATHKNIGHT, {
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207202),	-- Graveboots of the Risen Nightmare
+								i(207197),	-- Seal of the Risen Nightmare
+								i(207195),	-- Shroud of the Risen Nightmare
+								i(207196),	-- Vambraces of the Risen Nightmare
+							},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207259),	-- Screaming Torchfiend's Armlets
+								i(207260),	-- Screaming Torchfiend's Clasp
+								i(207265),	-- Screaming Torchfiend's Clutches
+								i(207258),	-- Screaming Torchfiend's Shawl
+							},
+						}),
+						cl(DRUID, {
+							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207249),	-- Benevolent Embersage's Featherdrape
+								i(207256),	-- Benevolent Embersage's Lined Boots
+								i(207251),	-- Benevolent Embersage's Sagacious Sash
+								i(207250),	-- Benevolent Embersage's Wristwraps
+							},
+						}),
+						cl(EVOKER, {
+							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
+								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
+								i(207229),	-- Weyrnkeeper's Timeless Treads
+								i(207223),	-- Weyrnkeeper's Timeless Wristlets
+							},
+						}),
+						cl(HUNTER, {
+							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207214),	-- Blazing Dreamstalker's Bracers
+								i(207215),	-- Blazing Dreamstalker's Spined Girdle
+								i(207213),	-- Blazing Dreamstalker's Staghide
+								i(207220),	-- Blazing Dreamstalker's Striders
+							},
+						}),
+						cl(MAGE, {
+							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207286),	-- Wayward Chronomancer's Cuffs
+								i(207285),	-- Wayward Chronomancer's Stole
+								i(207292),	-- Wayward Chronomancer's Strapped Boots
+								i(207287),	-- Wayward Chronomancer's Synchronous Belt
+							},
+						}),
+						cl(MONK, {
+							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207242),	-- Mystic Heron's Belt
+								i(207240),	-- Mystic Heron's Feathered Mantle
+								i(207241),	-- Mystic Heron's Fisticuffs
+								i(207247),	-- Mystic Heron's Tabi
+							},
+						}),
+						cl(PALADIN, {
+							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207186),	-- Zealous Pyreknight's Banner
+								i(207193),	-- Zealous Pyreknight's Dreamstompers
+								i(207188),	-- Zealous Pyreknight's Emblem
+								i(207187),	-- Zealous Pyreknight's Flameguards
+							},
+						}),
+						cl(PRIEST, {
+							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207278),	-- Cincture of Lunar Communion
+								i(207276),	-- Cloak of Lunar Communion
+								i(207283),	-- Poulaines of Lunar Communion
+								i(207277),	-- Wristwraps of Lunar Communion
+							},
+						}),
+						cl(ROGUE, {
+							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207233),	-- Lucid Shadewalker's Baldric
+								i(207232),	-- Lucid Shadewalker's Bracers
+								i(207231),	-- Lucid Shadewalker's Cape
+								i(207238),	-- Lucid Shadewalker's Sollerets
+							},
+						}),
+						cl(SHAMAN, {
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207204),	-- Greatwolf Outcast's Chainweave
+								i(207211),	-- Greatwolf Outcast's Footpads
+								i(207206),	-- Greatwolf Outcast's Sigil Belt
+								i(207205),	-- Greatwolf Outcast's Wristguards
+							},
+						}),
+						cl(WARLOCK, {
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207268),	-- Devout Ashdevil's Bracelets
+								i(207269),	-- Devout Ashdevil's Fanged Sash
+								i(207267),	-- Devout Ashdevil's Fiendcloak
+								i(207274),	-- Devout Ashdevil's Slippers
+							},
+						}),
+						cl(WARRIOR, {
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.LFR),
+							["g"] = {
+								i(207179),	-- Molten Vanguard's Chains
+								i(207184),	-- Molten Vanguard's Greatboots
+								i(207177),	-- Molten Vanguard's Manacles
+								i(207176),	-- Molten Vanguard's Thermal Cape
+							},
+						}),
+					}),
+				}),--]]
 				header(HEADERS.Achievement, 19344, {	-- Incarnate's Wake
 					Boss(GNARLROOT),
 					Boss(IGIRA),
@@ -1036,6 +1167,131 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
+				--[[ Uncomment me once DF Awakened is over
+				o(382621, {	-- Revival Catalyst Console	-- NORMAL	--
+					["description"] = "The Revival Catalyst is a system that lets you convert Normal Mode Non-set items from the Amirdrassil Raid into your class' Normal Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles. Make sure to equip your item first before converting it.",
+					["coord"] = { 60.6, 53.8, THALDRASZUS },
+					["modelScale"] = 4,
+					["g"] = {
+						cl(DEATHKNIGHT, {
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207202),	-- Graveboots of the Risen Nightmare
+								i(207197),	-- Seal of the Risen Nightmare
+								i(207195),	-- Shroud of the Risen Nightmare
+								i(207196),	-- Vambraces of the Risen Nightmare
+							},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207259),	-- Screaming Torchfiend's Armlets
+								i(207260),	-- Screaming Torchfiend's Clasp
+								i(207265),	-- Screaming Torchfiend's Clutches
+								i(207258),	-- Screaming Torchfiend's Shawl
+							},
+						}),
+						cl(DRUID, {
+							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207249),	-- Benevolent Embersage's Featherdrape
+								i(207256),	-- Benevolent Embersage's Lined Boots
+								i(207251),	-- Benevolent Embersage's Sagacious Sash
+								i(207250),	-- Benevolent Embersage's Wristwraps
+							},
+						}),
+						cl(EVOKER, {
+							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
+								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
+								i(207229),	-- Weyrnkeeper's Timeless Treads
+								i(207223),	-- Weyrnkeeper's Timeless Wristlets
+							},
+						}),
+						cl(HUNTER, {
+							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207214),	-- Blazing Dreamstalker's Bracers
+								i(207215),	-- Blazing Dreamstalker's Spined Girdle
+								i(207213),	-- Blazing Dreamstalker's Staghide
+								i(207220),	-- Blazing Dreamstalker's Striders
+							},
+						}),
+						cl(MAGE, {
+							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207286),	-- Wayward Chronomancer's Cuffs
+								i(207285),	-- Wayward Chronomancer's Stole
+								i(207292),	-- Wayward Chronomancer's Strapped Boots
+								i(207287),	-- Wayward Chronomancer's Synchronous Belt
+							},
+						}),
+						cl(MONK, {
+							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207242),	-- Mystic Heron's Belt
+								i(207240),	-- Mystic Heron's Feathered Mantle
+								i(207241),	-- Mystic Heron's Fisticuffs
+								i(207247),	-- Mystic Heron's Tabi
+							},
+						}),
+						cl(PALADIN, {
+							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207186),	-- Zealous Pyreknight's Banner
+								i(207193),	-- Zealous Pyreknight's Dreamstompers
+								i(207188),	-- Zealous Pyreknight's Emblem
+								i(207187),	-- Zealous Pyreknight's Flameguards
+							},
+						}),
+						cl(PRIEST, {
+							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207278),	-- Cincture of Lunar Communion
+								i(207276),	-- Cloak of Lunar Communion
+								i(207283),	-- Poulaines of Lunar Communion
+								i(207277),	-- Wristwraps of Lunar Communion
+							},
+						}),
+						cl(ROGUE, {
+							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207233),	-- Lucid Shadewalker's Baldric
+								i(207232),	-- Lucid Shadewalker's Bracers
+								i(207231),	-- Lucid Shadewalker's Cape
+								i(207238),	-- Lucid Shadewalker's Sollerets
+							},
+						}),
+						cl(SHAMAN, {
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207204),	-- Greatwolf Outcast's Chainweave
+								i(207211),	-- Greatwolf Outcast's Footpads
+								i(207206),	-- Greatwolf Outcast's Sigil Belt
+								i(207205),	-- Greatwolf Outcast's Wristguards
+							},
+						}),
+						cl(WARLOCK, {
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207268),	-- Devout Ashdevil's Bracelets
+								i(207269),	-- Devout Ashdevil's Fanged Sash
+								i(207267),	-- Devout Ashdevil's Fiendcloak
+								i(207274),	-- Devout Ashdevil's Slippers
+							},
+						}),
+						cl(WARRIOR, {
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.NORMAL),
+							["g"] = {
+								i(207179),	-- Molten Vanguard's Chains
+								i(207184),	-- Molten Vanguard's Greatboots
+								i(207177),	-- Molten Vanguard's Manacles
+								i(207176),	-- Molten Vanguard's Thermal Cape
+							},
+						}),
+					},
+				}),--]]
 				ZoneDrops({
 				}),
 				Boss(GNARLROOT),
@@ -1094,6 +1350,131 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
+				--[[ Uncomment me once DF Awakened is over
+				o(382621, {	-- Revival Catalyst Console	-- HEROIC	--
+					["description"] = "The Revival Catalyst is a system that lets you convert Heroic Mode Non-set items from the Amirdrassil Raid into your class' Heroic Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles. Make sure to equip your item first before converting it.",
+					["coord"] = { 60.6, 53.8, THALDRASZUS },
+					["modelScale"] = 4,
+					["g"] = bubbleDown({ ["modID"] = 5 }, {
+						cl(DEATHKNIGHT, {
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207202),	-- Graveboots of the Risen Nightmare
+								i(207197),	-- Seal of the Risen Nightmare
+								i(207195),	-- Shroud of the Risen Nightmare
+								i(207196),	-- Vambraces of the Risen Nightmare
+							},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207259),	-- Screaming Torchfiend's Armlets
+								i(207260),	-- Screaming Torchfiend's Clasp
+								i(207265),	-- Screaming Torchfiend's Clutches
+								i(207258),	-- Screaming Torchfiend's Shawl
+							},
+						}),
+						cl(DRUID, {
+							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207249),	-- Benevolent Embersage's Featherdrape
+								i(207256),	-- Benevolent Embersage's Lined Boots
+								i(207251),	-- Benevolent Embersage's Sagacious Sash
+								i(207250),	-- Benevolent Embersage's Wristwraps
+							},
+						}),
+						cl(EVOKER, {
+							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
+								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
+								i(207229),	-- Weyrnkeeper's Timeless Treads
+								i(207223),	-- Weyrnkeeper's Timeless Wristlets
+							},
+						}),
+						cl(HUNTER, {
+							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207214),	-- Blazing Dreamstalker's Bracers
+								i(207215),	-- Blazing Dreamstalker's Spined Girdle
+								i(207213),	-- Blazing Dreamstalker's Staghide
+								i(207220),	-- Blazing Dreamstalker's Striders
+							},
+						}),
+						cl(MAGE, {
+							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207286),	-- Wayward Chronomancer's Cuffs
+								i(207285),	-- Wayward Chronomancer's Stole
+								i(207292),	-- Wayward Chronomancer's Strapped Boots
+								i(207287),	-- Wayward Chronomancer's Synchronous Belt
+							},
+						}),
+						cl(MONK, {
+							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207242),	-- Mystic Heron's Belt
+								i(207240),	-- Mystic Heron's Feathered Mantle
+								i(207241),	-- Mystic Heron's Fisticuffs
+								i(207247),	-- Mystic Heron's Tabi
+							},
+						}),
+						cl(PALADIN, {
+							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207186),	-- Zealous Pyreknight's Banner
+								i(207193),	-- Zealous Pyreknight's Dreamstompers
+								i(207188),	-- Zealous Pyreknight's Emblem
+								i(207187),	-- Zealous Pyreknight's Flameguards
+							},
+						}),
+						cl(PRIEST, {
+							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207278),	-- Cincture of Lunar Communion
+								i(207276),	-- Cloak of Lunar Communion
+								i(207283),	-- Poulaines of Lunar Communion
+								i(207277),	-- Wristwraps of Lunar Communion
+							},
+						}),
+						cl(ROGUE, {
+							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207233),	-- Lucid Shadewalker's Baldric
+								i(207232),	-- Lucid Shadewalker's Bracers
+								i(207231),	-- Lucid Shadewalker's Cape
+								i(207238),	-- Lucid Shadewalker's Sollerets
+							},
+						}),
+						cl(SHAMAN, {
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207204),	-- Greatwolf Outcast's Chainweave
+								i(207211),	-- Greatwolf Outcast's Footpads
+								i(207206),	-- Greatwolf Outcast's Sigil Belt
+								i(207205),	-- Greatwolf Outcast's Wristguards
+							},
+						}),
+						cl(WARLOCK, {
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207268),	-- Devout Ashdevil's Bracelets
+								i(207269),	-- Devout Ashdevil's Fanged Sash
+								i(207267),	-- Devout Ashdevil's Fiendcloak
+								i(207274),	-- Devout Ashdevil's Slippers
+							},
+						}),
+						cl(WARRIOR, {
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.HEROIC),
+							["g"] = {
+								i(207179),	-- Molten Vanguard's Chains
+								i(207184),	-- Molten Vanguard's Greatboots
+								i(207177),	-- Molten Vanguard's Manacles
+								i(207176),	-- Molten Vanguard's Thermal Cape
+							},
+						}),
+					}),
+				}),--]]
 				ZoneDrops({
 				}),
 				Boss(GNARLROOT),
@@ -1130,6 +1511,131 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
+				--[[ Uncomment me once DF Awakened is over
+				o(382621, {	-- Revival Catalyst Console	-- MYTHIC	--
+					["description"] = "The Revival Catalyst is a system that lets you convert Mythic Mode Non-set items from the Amirdrassil Raid into your class' Mythic Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles. Make sure to equip your item first before converting it.",
+					["coord"] = { 60.6, 53.8, THALDRASZUS },
+					["modelScale"] = 4,
+					["g"] = bubbleDown({ ["modID"] = 6 }, {
+						cl(DEATHKNIGHT, {
+							["sym"] = SymRaidAdmirdrassil(DEATHKNIGHT, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207202),	-- Graveboots of the Risen Nightmare
+								i(207197),	-- Seal of the Risen Nightmare
+								i(207195),	-- Shroud of the Risen Nightmare
+								i(207196),	-- Vambraces of the Risen Nightmare
+							},
+						}),
+						cl(DEMONHUNTER, {
+							["sym"] = SymRaidAdmirdrassil(DEMONHUNTER, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207259),	-- Screaming Torchfiend's Armlets
+								i(207260),	-- Screaming Torchfiend's Clasp
+								i(207265),	-- Screaming Torchfiend's Clutches
+								i(207258),	-- Screaming Torchfiend's Shawl
+							},
+						}),
+						cl(DRUID, {
+							["sym"] = SymRaidAdmirdrassil(DRUID, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207249),	-- Benevolent Embersage's Featherdrape
+								i(207256),	-- Benevolent Embersage's Lined Boots
+								i(207251),	-- Benevolent Embersage's Sagacious Sash
+								i(207250),	-- Benevolent Embersage's Wristwraps
+							},
+						}),
+						cl(EVOKER, {
+							["sym"] = SymRaidAdmirdrassil(EVOKER, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207224),	-- Weyrnkeeper's Timeless Adorned Sash
+								i(207222),	-- Weyrnkeeper's Timeless Ornamented Cloak
+								i(207229),	-- Weyrnkeeper's Timeless Treads
+								i(207223),	-- Weyrnkeeper's Timeless Wristlets
+							},
+						}),
+						cl(HUNTER, {
+							["sym"] = SymRaidAdmirdrassil(HUNTER, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207214),	-- Blazing Dreamstalker's Bracers
+								i(207215),	-- Blazing Dreamstalker's Spined Girdle
+								i(207213),	-- Blazing Dreamstalker's Staghide
+								i(207220),	-- Blazing Dreamstalker's Striders
+							},
+						}),
+						cl(MAGE, {
+							["sym"] = SymRaidAdmirdrassil(MAGE, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207286),	-- Wayward Chronomancer's Cuffs
+								i(207285),	-- Wayward Chronomancer's Stole
+								i(207292),	-- Wayward Chronomancer's Strapped Boots
+								i(207287),	-- Wayward Chronomancer's Synchronous Belt
+							},
+						}),
+						cl(MONK, {
+							["sym"] = SymRaidAdmirdrassil(MONK, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207242),	-- Mystic Heron's Belt
+								i(207240),	-- Mystic Heron's Feathered Mantle
+								i(207241),	-- Mystic Heron's Fisticuffs
+								i(207247),	-- Mystic Heron's Tabi
+							},
+						}),
+						cl(PALADIN, {
+							["sym"] = SymRaidAdmirdrassil(PALADIN, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207186),	-- Zealous Pyreknight's Banner
+								i(207193),	-- Zealous Pyreknight's Dreamstompers
+								i(207188),	-- Zealous Pyreknight's Emblem
+								i(207187),	-- Zealous Pyreknight's Flameguards
+							},
+						}),
+						cl(PRIEST, {
+							["sym"] = SymRaidAdmirdrassil(PRIEST, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207278),	-- Cincture of Lunar Communion
+								i(207276),	-- Cloak of Lunar Communion
+								i(207283),	-- Poulaines of Lunar Communion
+								i(207277),	-- Wristwraps of Lunar Communion
+							},
+						}),
+						cl(ROGUE, {
+							["sym"] = SymRaidAdmirdrassil(ROGUE, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207233),	-- Lucid Shadewalker's Baldric
+								i(207232),	-- Lucid Shadewalker's Bracers
+								i(207231),	-- Lucid Shadewalker's Cape
+								i(207238),	-- Lucid Shadewalker's Sollerets
+							},
+						}),
+						cl(SHAMAN, {
+							["sym"] = SymRaidAdmirdrassil(SHAMAN, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207204),	-- Greatwolf Outcast's Chainweave
+								i(207211),	-- Greatwolf Outcast's Footpads
+								i(207206),	-- Greatwolf Outcast's Sigil Belt
+								i(207205),	-- Greatwolf Outcast's Wristguards
+							},
+						}),
+						cl(WARLOCK, {
+							["sym"] = SymRaidAdmirdrassil(WARLOCK, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207268),	-- Devout Ashdevil's Bracelets
+								i(207269),	-- Devout Ashdevil's Fanged Sash
+								i(207267),	-- Devout Ashdevil's Fiendcloak
+								i(207274),	-- Devout Ashdevil's Slippers
+							},
+						}),
+						cl(WARRIOR, {
+							["sym"] = SymRaidAdmirdrassil(WARRIOR, DIFFICULTY.RAID.MYTHIC),
+							["g"] = {
+								i(207179),	-- Molten Vanguard's Chains
+								i(207184),	-- Molten Vanguard's Greatboots
+								i(207177),	-- Molten Vanguard's Manacles
+								i(207176),	-- Molten Vanguard's Thermal Cape
+							},
+						}),
+					}),
+				}),--]]
 				ZoneDrops({
 				}),
 				n(ZONE_DROPS, sharedData({	-- First 2 week BoP version drops
