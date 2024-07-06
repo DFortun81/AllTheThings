@@ -3205,6 +3205,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, n(222413, {	-- Zalgo the Explorer <Purveyor of Lost Goods>
+					["coord"] = { 28.4, 75.8, STRANGLETHORN_VALE },
+					["groups"] = {
+						i(224409, {	-- Serpent's Striker (2.6 speed)
+							["cost"] = {{ "i", 220589, 1 }},	-- Serpent's Striker (1.5 speed)
+						}),
+						i(220589, {	-- Serpent's Striker (1.5 speed)
+							["cost"] = {{ "i", 224409, 1 }},	-- Serpent's Striker (2.6 speed)
+						}),
+						-- TODO: https://www.wowhead.com/classic/npc=222413/zalgo-the-explorer
+					},
+				})),
+				-- #endif
 				n(2482, {	-- Zarena Cromwind <Superior Weaponsmith>
 					["coords"] = {
 						-- #if AFTER CATA
