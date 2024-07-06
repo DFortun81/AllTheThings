@@ -1298,12 +1298,18 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(426491)),	-- Engrave Boots - Rallying Cry
 			
 			-- Phase 3
+			applyclassicphase(SOD_PHASE_THREE, recipe(416002)),	-- Engrave Boots - Gladiator Stance
 			applyclassicphase(SOD_PHASE_THREE, recipe(427081)),	-- Engrave Bracers - Rampage
 			applyclassicphase(SOD_PHASE_THREE, recipe(427082)),	-- Engrave Bracers - Sword and Board
 			applyclassicphase(SOD_PHASE_THREE, recipe(427084)),	-- Engrave Bracers - Wrecking Crew
 			applyclassicphase(SOD_PHASE_THREE, recipe(427080)),	-- Engrave Helm - Shield Mastery
 			applyclassicphase(SOD_PHASE_THREE, recipe(427076)),	-- Engrave Helm - Taste for Blood
 			applyclassicphase(SOD_PHASE_THREE, recipe(427078)),	-- Engrave Helm - Vigilance
+			
+			-- Phase 4
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440492)),	-- Engrave Cloak - Fresh Meat
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440496)),	-- Engrave Cloak - Shockwave
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440494)),	-- Engrave Cloak - Sudden Death
 		}),
 	}),
 	n(createHeader({	-- Soul Brokers
