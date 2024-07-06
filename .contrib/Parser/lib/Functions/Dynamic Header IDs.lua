@@ -361,6 +361,7 @@ HeaderAssignments = {
 	["The Arachnid Quarter"] = -1000049,
 	["The Argent Tournament"] = -1000231,
 	["The Assembly of the Deeps"] = -1000956,
+	["The Blood Moon"] = -1000968,
 	["The Construct Quarter"] = -1000050,
 	["The Crimson Halls"] = -1000188,
 	["The Four Horsemen"] = -1000168,
@@ -478,4 +479,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000968;
+NextHeaderID = -1000969;

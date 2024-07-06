@@ -83,6 +83,33 @@ local OnTooltipForBootyBay = [[function(t, tooltipInfo)
 		tinsert(tooltipInfo, { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 });
 	end
 end]];
+-- #if SEASON_OF_DISCOVERY
+bloodcoin_c = function(cost, item)	-- Assign a Copper Blood Coin cost to an item.
+	applycost(item, { "i", 213168, cost });
+	return item;
+end
+bloodcoin_s = function(cost, item)	-- Assign a Silver Blood Coin cost to an item.
+	applycost(item, { "i", 213169, cost });
+	return item;
+end
+bloodcoin_g = function(cost, item)	-- Assign a Gold Blood Coin cost to an item.
+	applycost(item, { "i", 213170, cost });
+	return item;
+end
+
+massacrecoin_c = function(cost, item)	-- Assign a Copper Massacre Coin cost to an item.
+	applycost(item, { "i", 221364, cost });
+	return item;
+end
+massacrecoin_s = function(cost, item)	-- Assign a Silver Massacre Coin cost to an item.
+	applycost(item, { "i", 221365, cost });
+	return item;
+end
+massacrecoin_g = function(cost, item)	-- Assign a Gold Massacre Coin cost to an item.
+	applycost(item, { "i", 221366, cost });
+	return item;
+end
+-- #endif
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(STRANGLETHORN_VALE, {
 		["lore"] = "The Stranglethorn Vale is a vast jungle south of Duskwood.\n\nJungle trolls patrol this steaming rainforest. Ancient Gurubashi trolls once ruled the region, and the ruins of their great cities crumble in the jungle's heat and growth. Naga hunt along the coast and vicious animals and plants, including the eponymous strangle-thorns, make travel dangerous. The Arena, a center for gladiatorial games set in a ruined Gurubashi fighting stadium, draws shady characters of all races. The Blackwater Raiders, a vile group of pirates, make their home in Booty Bay, on the Stranglethorn's southern coast.",
@@ -2548,6 +2575,40 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, pvp(n(createHeader({	-- The Blood Moon
+				readable = "The Blood Moon",
+				icon = 237513,
+				text = {
+					en = "The Blood Moon",
+					--[[
+					es = "",
+					de = "",
+					fr = "",
+					it = "",
+					pt = "",
+					ru = "",
+					ko = "",
+					cn = "",
+					]]--
+				},
+				description = {
+					en = "This is a free-for-all PvP event that takes place in Stranglethorn Vale for 30 minutes once every 3 hours starting at midnight server time.\n\nKill players to receive the stacking buff Blood for the Blood Loa. This stacks 255 times.\nYou receive 5 stacks of blood per kill.\nYou can lose blood from dying.\nTravel to blood altars |cffffffff(red flag on map)|r to exchange Blood for the Blood Loa stacks for Copper Blood Coin, Silver Blood Coin, Gold Blood Coin. You simply walk up to the altar and the coins will automatically appear in your bags.\n\nYou can opt out of the event by speaking to a Zandalarian Emissary.",
+				},
+			}), {
+				i(213168, {	-- Copper Blood Coin
+					["description"] = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Blood Coin per 1 blood stack.",
+					["timeline"] = { "removed 1.15.2" },
+				}),
+				bloodcoin_c(100, i(213169)),	-- Silver Blood Coin
+				bloodcoin_s(100, i(213170)),	-- Gold Blood Coin
+				applyclassicphase(SOD_PHASE_THREE, i(221364, {	-- Copper Massacre Coin
+					["description"] = "Bring Blood for the Loa stacks to a blood altar on the map to exchange for this coin.\n\nThe ratio is 1 Copper Massacre Coin per 1 blood stack.",
+				})),
+				applyclassicphase(SOD_PHASE_THREE, massacrecoin_c(100, i(221365))),	-- Silver Massacre Coin
+				applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(100, i(221366))),	-- Gold Massacre Coin
+			}))),
+			-- #endif
 			n(VENDORS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 					["coords"] = {
@@ -2747,6 +2808,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, pvp(n(218115, {	-- Mai'zin <Gurubashi Bloodchanger>
+					["coord"] = { 31.2, 48.4, STRANGLETHORN_VALE },
+					["groups"] = {
+						massacrecoin_s(1, i(213169)),	-- Silver Blood Coin
+						massacrecoin_g(1, i(213170)),	-- Gold Blood Coin
+						bloodcoin_s(1, i(216491)),	-- Shipment of Stranglethorn Lumber
+						bloodcoin_g(1, i(216570)),	-- Reins of the Golden Sabercat
+						bloodcoin_g(1, i(216492)),	-- Whistle of the Mottled Blood Raptor
+						bloodcoin_g(1, i(216972, {	-- Satchel of Silver Blood Coins
+							["sym"] = {{ "select","itemID", 213169 }},	-- Silver Blood Coin
+						})),
+					},
+				}))),
+				-- #endif
 				n(2685, {	-- Mazk Snipeshot <Engineering Supplies>
 					["coords"] = {
 						-- #if AFTER CATA

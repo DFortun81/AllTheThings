@@ -16,6 +16,10 @@ end
 i(211499, 429857);	-- Trainee's Outrider Wolf
 i(211498, 429856);	-- Trainee's Sentinel Nightsaber
 
+-- Phase 2
+i(216570, 436329);	-- Reins of the Golden Sabercat
+i(216492, 436288);	-- Whistle of the Mottled Blood Raptor
+
 -- TBC Classic --
 i(184865, 348459);	-- Reawakened Phase-Hunter
 
