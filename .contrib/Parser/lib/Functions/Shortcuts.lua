@@ -466,7 +466,7 @@ chefsaward = function(cost, item)						-- Assign a Chef's Award or Epicurean's A
 	-- #endif
 	return item;
 end
-conquestpoints = function(cost, item)					-- Assign a Conquest cost to an item.
+conquestpoints = function(cost, item)					-- Assign a Conquest Points cost to an item.
 	if cost > 0 then applycost(item, { "c", CONQUEST, cost }); end
 	return item;
 end
@@ -526,20 +526,15 @@ gold = function(cost, item)								-- Assign a Gold cost to an item.
 	applycost(item, { "g", cost * 10000 });	-- Gold
 	return item;
 end
-honor = function(cost, item)							-- Assign a Honor cost to an item with proper timeline requirements.
+honor = function(cost, item)							-- Assign a Honor cost to an item with proper timeline requirements. (pre-Cata costs)
 	-- #if BEFORE CATA
 	-- TODO: Add the before Cata Honor System
 	--applycost(item, { "c", , cost });	-- Honor
 	-- #endif
 	return item;
 end
-honorpoints = function(cost, item)						-- Assign a Honor Points cost to an item with proper timeline requirements.
-	-- #if BEFORE 7.0.3.22248
-	-- #if AFTER CATA
-	-- TODO: Add the CATA > Legion Honor Point System
-	--applycost(item, { "c", , cost });	-- Honor Points
-	-- #endif
-	-- #endif
+honorpoints = function(cost, item)						-- Assign a Honor Points cost to an item. (modern)
+	if cost > 0 then applycost(item, { "c", HONOR, cost }); end
 	return item;
 end
 moh = function(cost, item)								-- Assign a Mark of Honor cost to an item with proper timeline requirements.
