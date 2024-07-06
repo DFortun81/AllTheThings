@@ -841,9 +841,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			})),
-			applyclassicphase(SOD_PHASE_THREE, d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDownSelf({ ["timeline"] = { "added 1.15.2", REMOVED_2_0_1 }, }, {
+			applyclassicphase(SOD_PHASE_THREE, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ ["timeline"] = { "added 1.15.2", REMOVED_2_0_1 }, }, {
 				["description"] = "This instance was converted from a normal difficulty dungeon into a 20-player raid instance.",
-				["difficulties"] = { DIFFICULTY.SOD.PLAYER20 },
 				["lvl"] = 50,
 				["groups"] = {
 					n(QUESTS, {

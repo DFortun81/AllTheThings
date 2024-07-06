@@ -41,7 +41,7 @@ local DifficultyIcons = {
 	[33] = app.asset("Difficulty_Timewalking"),
 };
 local DifficultyMap = {
-	[1] = { 9, 148, 173 },
+	[1] = { 9, 148, 173, 201 },
 	[2] = { 174 },
 	[3] = { 175, 198 },
 	[4] = { 176 },
@@ -52,6 +52,7 @@ local DifficultyMap = {
 	[175] = { 3 },
 	[176] = { 4 },
 	[198] = { 3 },
+	[201] = { 1 },
 };
 local blacklistedDifficulties = {
 	[3] = true,
@@ -66,6 +67,7 @@ if not GetDifficultyInfo(3) then
 		[1] = "Normal",
 		[3] = "10-Player",
 		[198] = "10-Player",
+		[201] = "20-Player",
 	};
 	local oldGetDifficultyInfo = GetDifficultyInfo;
 	GetDifficultyInfo = function(difficultyID)
