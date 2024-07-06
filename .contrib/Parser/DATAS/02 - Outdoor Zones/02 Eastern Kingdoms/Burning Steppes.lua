@@ -539,8 +539,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = lvlsquish(56, 56, 20),
+					["isBreadcrumb"] = true,
+					-- #if AFTER 10.0.1
 					-- this quest was level locked for characters above level 56 before Shadowlands level squish
+					["lvl"] = lvlsquish(56, 56, 20),
+					-- #else
+					["lvl"] = { 48, 57 },
+					-- #endif
 				}),
 				q(28069, {	-- Adventurers Wanted: Blackrock Depths (H)
 					["provider"] = { "o", 207303 },	-- Adventure Board
@@ -548,12 +553,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 					-- #if AFTER 10.0.1
+					-- this quest was level locked for characters above level 56 before Shadowlands level squish
 					["lvl"] = lvlsquish(56, 56, 20),
 					-- #else
 					["lvl"] = { 48, 57 },
 					-- #endif
-					-- this quest was level locked for characters above level 56 before Shadowlands level squish
 				}),
 				q(7630, {	-- Arcanite
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
