@@ -466,6 +466,10 @@ chefsaward = function(cost, item)						-- Assign a Chef's Award or Epicurean's A
 	-- #endif
 	return item;
 end
+conquestpoints = function(cost, item)					-- Assign a Conquest cost to an item.
+	applycost(item, { "c", CONQUEST, cost });
+	return item;
+end
 daljewelcraftingtoken = function(cost, item)			-- Assign a Dalaran Jewelcrafter's Token cost to an item.
 	applycost(item, { "c", 61, cost });
 	return item;
