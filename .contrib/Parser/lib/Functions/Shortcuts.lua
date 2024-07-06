@@ -168,6 +168,10 @@ applyTimelineEvent = function(epoch, t)
 					end					
 				end
 				if not after then
+					-- We don't want to circumvent the timeline's ability to strip out data that's not supposed to be in the game yet.
+					if i == 1 and parts[1] == "added" and epochParts[1] == "removed" then
+						return;
+					end
 					--[[
 					-- Uncomment to Test:
 					local summary = "";
@@ -327,6 +331,9 @@ bubbleDownTimelineEvent = function(epoch, t)
 		end
 		return t;
 	end
+end
+bubbleDownTimelineEventSelf = function(epoch, t)
+	return bubbleDownTimelineEvent(epoch, togroups(t));
 end
 -- Validates and returns 't' (expected 'groups' content) ensuring that contained content is in the expected formats
 validateGroups = function(t)
