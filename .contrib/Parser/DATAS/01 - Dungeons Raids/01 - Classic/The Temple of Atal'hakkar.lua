@@ -21,6 +21,9 @@ local ATALAI_DEFENDERS = createHeader({
 		ru = "Защитники Атал'ай",
 		cn = "阿塔莱防御者",
 	},
+	description = {
+		en = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
+	},
 });
 local ESSENCE_OF_ERANIKUS_PART_TWO_OnUpdate = [[function(t)
 	if not t.collected and _.IsQuestFlaggedCompleted(3373) and ]] .. WOWAPI_GetItemCount(10455) .. [[ < 1 then
@@ -42,6 +45,41 @@ local ESSENCE_OF_ERANIKUS_OWN_WORDS_OnUpdate = [[function(t)
 		t.description = "|cffaa0000You deleted the item needed to complete the previous quest. As such, you'll be unable to complete this one. Sorry!|r";
 	end
 end]];
+local SUNKEN_TEMPLE_ZONE_DROPS = n(ZONE_DROPS, {
+	i(11318, {	-- Atal'ai Haze
+		["crs"] = {
+			8384,	-- Deep Lurker
+			5226,	-- Murk Worm
+			5228,	-- Saturated Ooze
+		},
+	}),
+	i(6181),	-- Fetish of Hakkar
+	i(16216, {	-- Formula: Enchant Cloak - Greater Resistance
+		["timeline"] = { DELETED_4_0_3 },
+		["cr"] = 5259,	-- Atal'ai Witch Doctor
+	}),
+	i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version) (RECIPE!)
+		["timeline"] = { ADDED_4_3_0 },
+	}),
+	i(15733, {	-- Pattern: Green Dragonscale Leggings (Old Version) (RECIPE!)
+		["timeline"] = { REMOVED_4_0_3 },
+	}),
+	i(78345, {	-- Pattern: Green Dragonscale Leggings (New Version) (RECIPE!)
+		["timeline"] = { ADDED_4_3_0 },
+	}),
+	i(10627),	-- Bludgeon of the Grinning Dog
+	i(10628),	-- Deathblow
+	i(10626),	-- Ragehammer
+	i(10625),	-- Stealthblade
+	i(10624),	-- Stinging Bow
+	i(10623),	-- Winter's Bite
+	i(10630),	-- Soulcatcher Halo
+	i(10632),	-- Slimescale Bracers
+	i(10631),	-- Murkwater Gauntlets
+	i(10633),	-- Silvershell Leggings
+	i(10629),	-- Mistwalker Boots
+	i(10634),	-- Mindseye Circle
+});
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(237, {	-- The Temple of Atal'hakkar
 		-- #if BEFORE MOP
@@ -58,111 +96,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		},
 		["mapID"] = TEMPLE_OF_ATALHAKKAR,
+		-- #if SEASON_OF_DISCOVERY
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
+		-- #endif
 		["lvl"] = 45,
 		["groups"] = {
+			-- #if SEASON_OF_DISCOVERY
+			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownTimelineEventSelf("removed 1.15.1", {
+			-- #endif
 			n(QUESTS, {
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_THREE, q(82021, {	-- A Fortuitous Turn of Events
-					["qg"] = 222188,	-- Shadowy Figure
-					["sourceQuest"] = 82020,	-- Return to Moonglade
-					["coord"] = { 52.0, 40.6, MOONGLADE },
-					["lvl"] = 50,
-				})),
-				applyclassicphase(SOD_PHASE_THREE, q(82017, {	-- An Amalagamation of Nightmares
-					["providers"] = {
-						{ "n", 222198 },	-- Nightmare Amalgamation
-						{ "n", 221477 },	-- Field Captain Hannalah
-					},
-					["coords"] = {
-						{ 88.6, 68.2, ASHENVALE },
-						{ 89.6, 40.6, ASHENVALE },
-					},
-					["description"] = "You need a debuff from the Nightmare Amalgam for the Field Captain to offer this quest. (do not engage it, just run away)",
-					["maps"] = { MOONGLADE },
-					["lvl"] = 40,
-					["groups"] = {
-						objective(1, {	-- Seek out Loganaar in Moonglade
-							["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
-							["coord"] = { 52.4, 40.4, MOONGLADE },
-						}),
-					},
-				})),
-				applyclassicphase(SOD_PHASE_THREE, q(82018, {	-- Itharius
-					["qg"] = 12042,	-- Loganaar <Druid Trainer>
-					["sourceQuest"] = 82017,	-- An Amalagamation of Nightmares
-					["coord"] = { 52.4, 40.4, MOONGLADE },
-					["maps"] = { SWAMP_OF_SORROWS },
-					["lvl"] = 40,
-					["groups"] = {
-						objective(1, {	-- Seek out Itharius in the Swamp of Sorrows
-							["provider"] = { "n", 5353 },	-- Itharius
-							["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
-						}),
-					},
-				})),
-				applyclassicphase(SOD_PHASE_THREE, q(82019, {	-- Going Under
-					["qg"] = 5353,	-- Itharius
-					["sourceQuest"] = 82018,	-- Itharius
-					["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
-					["lvl"] = 40,
-				})),
-				applyclassicphase(SOD_PHASE_THREE, q(82020, {	-- Return to Moonglade
-					["qg"] = 5353,	-- Itharius
-					["sourceQuest"] = 82019,	-- Going Under
-					["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
-					["maps"] = { MOONGLADE },
-					["lvl"] = 50,
-					["groups"] = {
-						objective(1, {	-- Seek out Loganaar in Moonglade
-							["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
-							["coord"] = { 52.4, 40.4, MOONGLADE },
-						}),
-					},
-				})),
-				applyclassicphase(SOD_PHASE_THREE, q(82022, {	-- The Bad News...
-					["qg"] = 222188,	-- Shadowy Figure
-					["sourceQuest"] = 82021,	-- A Fortuitous Turn of Events
-					["coord"] = { 52.0, 40.6, MOONGLADE },
-					["maps"] = { STRANGLETHORN_VALE },
-					["lvl"] = 50,
-					["groups"] = {
-						q(82023, {	-- The Lost Vambraces
-							["qg"] = 222444,	-- Injured Gnome <Knight of Some Renown>
-							["coord"] = { 26.8, 77.2, STRANGLETHORN_VALE },
-							["repeatable"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/1 Decharged Void-Powered Vambraces
-									["questID"] = 82022,	-- The Bad News...
-									["providers"] = {
-										{ "i", 220964 },	-- Decharged Void-Powered Vambraces
-										{ "o", 441848 },	-- Small Burrow
-									},
-									["coord"] = { 40.8, 85.6, STRANGLETHORN_VALE },
-									["cr"] = 222451,	-- Itty Bitty Murloc
-								}),
-							},
-						}),
-						i(220689),	-- Void-Powered Vambraces
-					},
-				})),
-				applyclassicphase(SOD_PHASE_THREE, q(81986, {	-- Waking the Nightmare
-					["qg"] = 222188,	-- Shadowy Figure
-					["sourceQuest"] = 82022,	-- The Bad News...
-					["coord"] = { 52.0, 40.6, MOONGLADE },
-					["maps"] = { ASHENVALE },
-					["lvl"] = 50,
-					["groups"] = {
-						objective(1, {	-- 0/1 Nightmare Amalgamation slain
-							["provider"] = { "n", 222198 },	-- Nightmare Amalgamation
-							["coord"] = { 88.6, 68.2, ASHENVALE },
-						}),
-						objective(2, {	-- 0/1 Mantle of Nightmares
-							["provider"] = { "i", 220570 },	-- Mantle of Nightmares
-						}),
-						i(220688),	-- Inert Mantle of Nightmares
-					},
-				})),
-				-- #endif
 				applyclassicphase(PHASE_FOUR, q(9053, {	-- A Better Ingredient
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 9051,  -- Toxic Test
@@ -678,41 +622,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(20381),	-- Dreamscale
 			})),
 			-- #endif
-			n(ZONE_DROPS, {
-				i(11318, {	-- Atal'ai Haze
-					["crs"] = {
-						8384,	-- Deep Lurker
-						5226,	-- Murk Worm
-						5228,	-- Saturated Ooze
-					},
-				}),
-				i(6181),	-- Fetish of Hakkar
-				i(16216, {	-- Formula: Enchant Cloak - Greater Resistance
-					["timeline"] = { DELETED_4_0_3 },
-					["cr"] = 5259,	-- Atal'ai Witch Doctor
-				}),
-				i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version) (RECIPE!)
-					["timeline"] = { ADDED_4_3_0 },
-				}),
-				i(15733, {	-- Pattern: Green Dragonscale Leggings (Old Version) (RECIPE!)
-					["timeline"] = { REMOVED_4_0_3 },
-				}),
-				i(78345, {	-- Pattern: Green Dragonscale Leggings (New Version) (RECIPE!)
-					["timeline"] = { ADDED_4_3_0 },
-				}),
-				i(10627),	-- Bludgeon of the Grinning Dog
-				i(10628),	-- Deathblow
-				i(10626),	-- Ragehammer
-				i(10625),	-- Stealthblade
-				i(10624),	-- Stinging Bow
-				i(10623),	-- Winter's Bite
-				i(10630),	-- Soulcatcher Halo
-				i(10632),	-- Slimescale Bracers
-				i(10631),	-- Murkwater Gauntlets
-				i(10633),	-- Silvershell Leggings
-				i(10629),	-- Mistwalker Boots
-				i(10634),	-- Mindseye Circle
-			}),
+			-- #if NOT SEASON_OF_DISCOVERY
+			SUNKEN_TEMPLE_ZONE_DROPS,
 			n(COMMON_BOSS_DROPS, {
 				i(20606, {	-- Amber Voodoo Feather
 					["crs"] = {
@@ -733,6 +644,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 			}),
+			-- #endif
 			n(5708, {	-- Spawn of Hakkar
 				["timeline"] = { REMOVED_4_0_3 },
 				["groups"] = {
@@ -795,7 +707,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			n(ATALAI_DEFENDERS, {
-				["description"] = "You must kill all 6 mini bosses around the room in order to unlock the way to Jammal'an the Prophet.",
 				["providers"] = {
 					{ "n", 5713 },	-- Gasher
 					{ "n", 5715 },	-- Hukku
@@ -928,6 +839,359 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(10829),	-- Dragon's Eye [Classic] / The Dragon's Eye [WRATH+]
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			})),
+			applyclassicphase(SOD_PHASE_THREE, d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDownSelf({ ["timeline"] = { "added 1.15.2", REMOVED_2_0_1 }, }, {
+				["description"] = "This instance was converted from a normal difficulty dungeon into a 20-player raid instance.",
+				["difficulties"] = { DIFFICULTY.SOD.PLAYER20 },
+				["lvl"] = 50,
+				["groups"] = {
+					n(QUESTS, {
+						q(82021, {	-- A Fortuitous Turn of Events
+							["qg"] = 222188,	-- Shadowy Figure
+							["sourceQuest"] = 82020,	-- Return to Moonglade
+							["coord"] = { 52.0, 40.6, MOONGLADE },
+							["lvl"] = 50,
+						}),
+						q(82017, {	-- An Amalagamation of Nightmares
+							["providers"] = {
+								{ "n", 222198 },	-- Nightmare Amalgamation
+								{ "n", 221477 },	-- Field Captain Hannalah
+							},
+							["coords"] = {
+								{ 88.6, 68.2, ASHENVALE },
+								{ 89.6, 40.6, ASHENVALE },
+							},
+							["description"] = "You need a debuff from the Nightmare Amalgam for the Field Captain to offer this quest. (do not engage it, just run away)",
+							["maps"] = { MOONGLADE },
+							["lvl"] = 40,
+							["groups"] = {
+								objective(1, {	-- Seek out Loganaar in Moonglade
+									["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
+									["coord"] = { 52.4, 40.4, MOONGLADE },
+								}),
+							},
+						}),
+						q(82019, {	-- Going Under
+							["qg"] = 5353,	-- Itharius
+							["sourceQuest"] = 82018,	-- Itharius
+							["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
+							["lvl"] = 40,
+						}),
+						q(82018, {	-- Itharius
+							["qg"] = 12042,	-- Loganaar <Druid Trainer>
+							["sourceQuest"] = 82017,	-- An Amalagamation of Nightmares
+							["coord"] = { 52.4, 40.4, MOONGLADE },
+							["maps"] = { SWAMP_OF_SORROWS },
+							["lvl"] = 40,
+							["groups"] = {
+								objective(1, {	-- Seek out Itharius in the Swamp of Sorrows
+									["provider"] = { "n", 5353 },	-- Itharius
+									["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
+								}),
+							},
+						}),
+						q(82020, {	-- Return to Moonglade
+							["qg"] = 5353,	-- Itharius
+							["sourceQuest"] = 82019,	-- Going Under
+							["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
+							["maps"] = { MOONGLADE },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- Seek out Loganaar in Moonglade
+									["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
+									["coord"] = { 52.4, 40.4, MOONGLADE },
+								}),
+							},
+						}),
+						q(82022, {	-- The Bad News...
+							["qg"] = 222188,	-- Shadowy Figure
+							["sourceQuest"] = 82021,	-- A Fortuitous Turn of Events
+							["coord"] = { 52.0, 40.6, MOONGLADE },
+							["maps"] = { STRANGLETHORN_VALE },
+							["lvl"] = 50,
+							["groups"] = {
+								q(82023, {	-- The Lost Vambraces
+									["qg"] = 222444,	-- Injured Gnome <Knight of Some Renown>
+									["coord"] = { 26.8, 77.2, STRANGLETHORN_VALE },
+									["repeatable"] = true,
+									["groups"] = {
+										objective(1, {	-- 0/1 Decharged Void-Powered Vambraces
+											["questID"] = 82022,	-- The Bad News...
+											["providers"] = {
+												{ "i", 220964 },	-- Decharged Void-Powered Vambraces
+												{ "o", 441848 },	-- Small Burrow
+											},
+											["coord"] = { 40.8, 85.6, STRANGLETHORN_VALE },
+											["cr"] = 222451,	-- Itty Bitty Murloc
+										}),
+									},
+								}),
+								i(220689),	-- Void-Powered Vambraces
+							},
+						}),
+						q(81986, {	-- Waking the Nightmare
+							["qg"] = 222188,	-- Shadowy Figure
+							["sourceQuest"] = 82022,	-- The Bad News...
+							["coord"] = { 52.0, 40.6, MOONGLADE },
+							["maps"] = { ASHENVALE },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/1 Nightmare Amalgamation slain
+									["provider"] = { "n", 222198 },	-- Nightmare Amalgamation
+									["coord"] = { 88.6, 68.2, ASHENVALE },
+								}),
+								objective(2, {	-- 0/1 Mantle of Nightmares
+									["provider"] = { "i", 220570 },	-- Mantle of Nightmares
+								}),
+								i(220688),	-- Inert Mantle of Nightmares
+							},
+						}),
+					}),
+					SUNKEN_TEMPLE_ZONE_DROPS,
+					n(COMMON_BOSS_DROPS, {
+						i(20606, {	-- Amber Voodoo Feather
+							["crs"] = {
+								221637,	-- Gasher
+								221640,	-- Zul'Lor
+							},
+						}),
+						i(20607, {	-- Blue Voodoo Feather
+							["crs"] = {
+								218922,	-- Hukku
+								218868,	-- Mijan
+							},
+						}),
+						i(20608, {	-- Green Voodoo Feather
+							["crs"] = {
+								221638,	-- Loro
+								221639,	-- Zolo
+							},
+						}),
+					}),
+					n(222290, {	-- Unfortunate Adventurer
+						["description"] = "RIP Guzu <Demon>.\n\nGo watch 'The Fall of Guzu' by Hurricane on YouTube for context!",
+					}),
+					n(218624, {	-- Atal'alarion <Guardian of the Idol>
+						["description"] = "Atal'alarion has three main abilities.\n\nThe primary danger on this boss is the Pillars of Might stacking 5% damage buff. To remove this, use his Demolishing Smash to get knocked back into the pillars from Pillars of Might. The player bodies will then destroy the pillars and reduce the stacking damage buff. Spreading out around the boss helps to minimize the total movement required to destroy every pillar.\n\nBeyond the pillars mechanic, this is just a tank and spank boss.",
+						["groups"] = {
+							i(221312),	-- Flask of Atal'ai Mojo
+							i(220636),	-- Atal'ai Blood Icon
+							i(220637),	-- Atal'ai Ritual Token
+							i(220635),	-- Atal'alarion's Enchanted Boulder
+							i(220539),	-- Warbands of Sacrifice
+							i(220554),	-- Atal'alarion's Tusk Band
+							i(220529),	-- Spaulders of Fanaticism
+							i(220527),	-- Atal'ai Berserker's Mantle
+							i(220561),	-- Tenacious Troll Kickers
+							i(220567),	-- Bloodied Headspike
+							i(220580),	-- Madness of the Avatar
+							i(220602),	-- Sewer Turtle Half-Shell
+							i(220511),	-- Greathelm of the Nightmare
+							i(220615),	-- Panther Fur Cloak
+							i(220568),	-- Temple Explorer's Gun Axe
+							i(220537),	-- Dreamer's Darkwater Bracers
+							i(221297),	-- Eight of Dunes
+							i(221296),	-- Seven of Dunes
+							i(221278),	-- Seven of Wilds
+							i(221277),	-- Six of Wilds
+							i(221303),	-- Five of Nightmares
+							i(221276),	-- Five of Wilds
+							i(221295),	-- Six of Dunes
+						},
+					}),
+					n(218819, {	-- Festering Rotslime
+						["description"] = "Festering Rotslime's strategy involves basically just kiting the boss through the corridor where he's located.\n\nTo do this, players should focus on continuously moving between Gunk casts, since this will leave poison pools on the floor that slow and deal damage. The Gunk must be cleansed as soon as possible to allow players to move.\n\nThe boss will gain speed from Slime Time throughout the fight, to stop this: kill the Atal'ai Slab, Atal'ai Mask, Atal'ai Candle, and Atal'ai Drum objects which are located along the corridor. Ideally, have the melee focus on this to avoid getting Devoured themselves.",
+						["groups"] = {
+							i(221312),	-- Flask of Atal'ai Mojo
+							i(221021),	-- Nightmare Seed
+							i(220636),	-- Atal'ai Blood Icon
+							i(220637),	-- Atal'ai Ritual Token
+							i(220552),	-- Waistguard of Pain
+							i(220540),	-- Corruption Laden Handguards
+							i(220545),	-- Foul Smelling Fighter's Gloves
+							i(220542),	-- Polluted Murkwater Gauntlets
+							i(220569),	-- Blistering Ragehammer
+							i(220538),	-- Cursed Slimescale Bracers
+							i(220571),	-- Stinging Longbow
+							i(220518),	-- Ba'ham's Dusty Hat
+							i(220541),	-- Disease-Ridden Plate Fists
+							i(220565),	-- Ethereal Mistwalker Boots
+							i(220546),	-- Hands of the Tormented
+							i(220550),	-- Temple Looter's Waistband
+							i(221484),	-- Witch Doctor's Hex Stick
+							i(221281),	-- Ace of Plagues
+							i(221288),	-- Eight of Plagues
+							i(221294),	-- Five of Dunes
+							i(221285),	-- Five of Plagues
+							i(221277),	-- Six of Wilds
+						},
+					}),
+					n(ATALAI_DEFENDERS, {
+						["description"] = "The Atal'ai Defenders are the third boss encounter in The Temple of Atal'Hakkar.\n\nGasher & Mijan's abilities are the most threatening.\n\nOnce killed, each boss will respawn as an undead version of itself. These can be handled very easily through hard CCs such as Shackle Undead and Freezing Trap.\n\nMake sure that everyone knows ahead of time to not multi-dot the undead adds at all or it will break their crowd control.",
+						["groups"] = {
+							n(221637, {	-- Gasher
+								["description"] = "|cffff0000Fervor|r can cause him to deal a lot of damage, focus him down fast; if needed, the tank can run away from Gasher while still in range of casters to minimize the damage taken if Gasher gets high stacks.\n\nSpinning Axes - Spawns spinning axes around him, this deals minor cleave damage.",
+								["groups"] = {
+									i(220636),	-- Atal'ai Blood Icon
+									i(220637),	-- Atal'ai Ritual Token
+									i(221021),	-- Nightmare Seed
+									i(220533),	-- Reforged Atal'ai Breastplate
+									i(220528),	-- Atal'ai Huntsman's Shoulders
+									i(220516),	-- Gasher's Forgotten Visor
+									i(220572),	-- Rinzo's Rapid Repeater
+									i(220555),	-- Atal'ai Serpentscale Girdle
+									i(220532),	-- Reinforced Atal'ai Spaulders
+									i(220522),	-- Soulcatcher Crown
+									i(220591),	-- Mijan's Restorative Rod
+									i(220558),	-- Atal'ai Assassin's Leggings
+									i(220638),	-- Unorthodox Hex Stick
+									i(220611),	-- Hukku's Hex Cape
+									i(220560),	-- Silvershell Legplates
+									i(220674),	-- Debased Stealthblade
+									i(220548),	-- Atal'ai Hexxer's Gloves
+									i(221296),	-- Seven of Dunes
+									i(221304),	-- Six of Nightmares
+								},
+							}),
+							n(218922, {	-- Hukku
+								["description"] = "Curse of Blood - Dispellable curse which increases a player's damage taken. This can be interrupted.",
+							}),
+							n(221638, {	-- Loro
+								["description"] = "Demoralizing Shout - Interruptable AoE debuff which reduces player's attack power by 40.",
+							}),
+							n(218868, {	-- Mijan
+								["description"] = "|cffff0000Mijan's Atal'ai Serpent Totems|r should be interrupted and killed asap in order to minimize damage taken. These can deal a fair bit of damage if they happen to focus the same player.\n\nRenew - Interruptable self heal ability, make sure to have someone focused on kicking this to increase kill time.\n\nThorns - Dispellable self thorns buff, should be removed to minimize melee players' damage taken.",
+							}),
+							n(221639, {	-- Zolo
+								["description"] = "Chain lightning increases damage which each subsequent hit, this can be interrupted.",
+							}),
+							n(221640, {	-- Zul'Lor
+								["description"] = "Frailty - Reduces all attributes of nearby enemies by 10 for 1 min. Can be dispelled.",
+							}),
+						},
+					}),
+					n(220833, {	-- Dreamscythe
+						["provider"] = { "n", 220864 },	-- Weaver
+						["description"] = "This is technically a three phase encounter. The first two phases just involve fighting Dreamscythe solo up to 80% of the boss's health, followed up by only fighting Weaver up to 60% health. That's when the real encounter begins and you'll have to fight both at the same time. At this point make sure you have two tanks in order to minimize the tank damage, as well as the possible mess caused by Acid Breath.\n\nThe main strategy involves having the tanks pointing the bosses outwards from the middle to avoid killing the raid with Acid Breath.\n\nOtherwise the entire raid can just stand in the middle and DPS the bosses throughout the fight. Making sure that the entire raid is properly stacked will be very helpful for the tanks.\n\nFor positioning, you really want to avoid getting knocked back into both the outside poison pool which surrounds the boss arena, as well as the middle pit which will cause you to die from fall damage by either of the wing buffet abilities. To avoid the pit you should either stand next to it so that you get knocked back parallel to it; or stand right against it to get knocked over to the opposite side of it. Doing either, depending on what's easier for you at that moment, will gain you uptime on casting.\n\nIdeally, have all of the damage dealers focusing a single boss as the bosses share health pools. This way you'll be focusing a fully debuffed target.",
+						["groups"] = {
+							i(221021),	-- Nightmare Seed
+							i(220636),	-- Atal'ai Blood Icon
+							i(220637),	-- Atal'ai Ritual Token
+							i(220587),	-- Sacrificial Dream Dagger
+							i(220536),	-- Atal'ai Medicine Man's Wrists
+							i(220551),	-- Devotee's Sash of the Emerald Dream
+							i(220609),	-- Drape of Nightfall
+							i(220519),	-- Voodoo Feathered Headdress
+							i(220566),	-- Smolder Claw
+							i(220544),	-- Bloodflare Talons
+							i(220584),	-- Flamebreath Blade
+							i(220521),	-- Hakkari Ritualist's Headdress
+							i(220594),	-- Scythe of the Dream
+							i(220581),	-- Snake Clobberer
+							i(220549),	-- Dawnspire Strap
+							i(221298),	-- Ace of Nightmares
+						},
+					}),
+					n(218721, {	-- Jammal'an the Prophet
+						["provider"] = { "n", 218718 },	-- Ogom the Wretched
+						["description"] = "This fight has two different versions which rotate every week.\n\nOne where Ogom the Wretched dies first, making Jammal'an the Prophet the main boss.\n Mass Penance is a spoopy mechanic.\n\nThe other where Jammal'an the Prophet dies first, making Ogom the Wretched the main boss.\n Avoid Consecration.",
+						["groups"] = {
+							i(220636),	-- Atal'ai Blood Icon
+							i(220637),	-- Atal'ai Ritual Token
+							i(221312),	-- Flask of Atal'ai Mojo
+							i(220576),	-- Axe of the Atal'ai Executioner
+							i(220547),	-- Gloves of the Fallen Atal'ai Prophet
+							i(220556),	-- Kilt of the Fallen Atal'ai Prophet
+							i(220583),	-- Vile Blade of the Wretched
+							i(220578),	-- Fist of the Forsaken
+							i(220601),	-- Hakkari Witch Doctor's Guard
+							i(220535),	-- Garments of the Atal'ai Prophet
+							i(220586),	-- Hubris the Bandit Brander
+							i(220575),	-- Eater of the Damned
+							i(220624),	-- Bloodstained Charm of Valor
+							i(220623),	-- Jin'do's Lost Locket
+							i(220625),	-- Resilience of the Exiled
+							i(220605),	-- Libram of Sacrilege
+							i(220515),	-- Enchanted Emerald Helmet
+							i(221296),	-- Seven of Dunes
+							i(221305),	-- Seven of Nightmares
+							i(221306),	-- Eight of Nightmares
+						},
+					}),
+					n(221943, {	-- Hazzas
+						["provider"] = { "n", 221942 },	-- Morphaz
+						["description"] = "Keep the boss stationary to avoid the frontal Corrupted Breath and Backfire from the tail. Tanks swap every 2-3 stacks. Big heals for Dreamer's Lament ability!\n\nAt 80%, Hazzas will cast Animate Flame which will summon elementals. Stack & nuke them. They also drop fire on the floor. You can use the fire to avoid being sent downstairs to Morphaz during Lucid Dreaming.\n\nAt 30%, Hazzas will cast Lucid Dreaming again and then begin casting Eternal Slumber. You must bear the damage check and the cast will be canceled.\n\nDodge Falling Rocks.",
+						["groups"] = {
+							i(221021),	-- Nightmare Seed
+							i(220636),	-- Atal'ai Blood Icon
+							i(220637),	-- Atal'ai Ritual Token
+							i(220514),	-- Visor of Verdant Feathers
+							i(220543),	-- Emerald Scalemail Gloves
+							i(220559),	-- Revitalized Drake Scale Leggings
+							i(220965),	-- Scalebane Greataxe
+							i(220563),	-- Boots of the Atal'ai Blood Shaman
+							i(220606),	-- Idol of the Dream
+							i(220553),	-- Belt of the Forsaken Worshipper
+							i(220589),	-- Serpent's Striker
+							i(220596),	-- Ancient Divining Rod
+							i(220597),	-- Drakestone of the Dream Harbinger
+							i(220598),	-- Drakestone of the Nightmare Harbinger
+							i(220599),	-- Drakestone of the Blood Prophet
+							i(220512),	-- Immaculate Goldsteel Helmet
+							i(220607),	-- Totem of Tormented Ancestry
+							i(221298),	-- Ace of Nightmares
+						},
+					}),
+					n(218571, {	-- Shade of Eranikus
+						["description"] = "",
+						["groups"] = {
+							i(221021),	-- Nightmare Seed
+							i(220637),	-- Atal'ai Ritual Token
+							i(220636),	-- Atal'ai Blood Icon
+							i(220564),	-- Restored Slitherscale Boots
+							i(220523),	-- Visage of the Exiled
+							i(220604),	-- Nightmare Trophy
+							i(221475),	-- Essence of Eranikus
+							i(220622),	-- Perfectly Preserved Dragon's Eye
+							i(220603),	-- Rod of Irreversible Corrosion
+							i(220574),	-- Sharpened Tooth of Eranikus
+							i(220600),	-- Crest of Preeminence
+							i(220573),	-- Dreadstalker's Hunting Bow
+							i(220585),	-- Degraded Dire Nail
+							i(220582),	-- Dragon's Cry
+							i(220595),	-- Nightmare Focus Staff
+							i(220579),	-- Witch Doctor's Stick of Mojo
+							i(221298),	-- Ace of Nightmares
+						},
+					}),
+					n(221394, {	-- Avatar of Hakkar
+						["description"] = "Have all the ranged stacked and then kill the four Atal'ai Ritualists.\n\nOnce Hakkari Bloodkeeper casts Bubbling Blood, move out of it. He'll ocasionally cast Spirit Chains, move out of the group before getting dispelled. (it will spread otherwise) Frightsome Howl should be dispelled immediately.\n\nAfter 33 seconds the Bloodkeeper will resurrect Hakkar and pass on some of the damage dealt to him during that time.\n\nDecurse Curse of Tongues, and dispel the Insanity mind control that'll happen once in a while.\n\nThe boss will occasionally cast Corrupted Blood, afflicted players should move out of the raid as fast as they can, and move to the front of the boss (away from the tank) to then get hit by Drain Blood. This will dispel the debuff. Move back afterwards and then kill the boss.",
+						["groups"] = {
+							i(220636),	-- Atal'ai Blood Icon
+							i(221312),	-- Flask of Atal'ai Mojo
+							i(220637),	-- Atal'ai Ritual Token
+							i(221346),	-- Scapula of the Fallen Avatar
+							i(221021),	-- Nightmare Seed
+							i(221363),	-- Scapula of the Fallen Avatar
+							i(220634),	-- Atal'ai Blood Ritual Charm
+							i(220632),	-- Atal'ai Blood Ritual Medallion
+							i(220633),	-- Atal'ai Blood Ritual Badge
+							i(220590),	-- Spire of Hakkari Worship
+							i(220686),	-- Chieftain's Bane
+							i(220588),	-- Cobra Fang Claw
+							i(220534),	-- Eternal Embrace of the Wind Serpent
+							i(220620),	-- Wind Serpent Skull
+							i(220562),	-- Bloodshot Battle Greaves
+							i(220557),	-- Cursed Windscale Sarong
+							i(220608),	-- Featherskin Drape
+							i(220577),	-- Might of the Blood Loa
+							i(220530),	-- Will of the Atal'ai Warrior
+						},
+					}),
+				},
+			}))),
+			-- #endif	
 		},
 	}),
 }));

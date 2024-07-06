@@ -27,6 +27,7 @@ DIFFICULTY = {
 	},
 	SOD = {
 		PLAYER10 = 198,
+		PLAYER20 = 201,
 	},
 };
 
