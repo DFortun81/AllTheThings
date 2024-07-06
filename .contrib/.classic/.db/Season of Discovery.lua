@@ -1095,14 +1095,14 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			-- Phase 1
 			recipe(425619),	-- Engrave Chest - Aegis
 			recipe(410014),	-- Engrave Chest - Divine Storm
-			recipe(425618),	-- Engrave Chest - Horn of Lordaeron
-			recipe(410015),	-- Engrave Chest - Seal of Martyrdom
+			recipe(425618),	-- Engrave Chest - Horn of Lordaeron / Hallowed Ground
+			recipe(410015),	-- Engrave Chest - Seal of Martyrdom / Divine Light
 			recipe(409999),	-- Engrave Gloves - Beacon of Light
 			recipe(410002),	-- Engrave Gloves - Crusader Strike
 			recipe(410001),	-- Engrave Gloves - Hand of Reckoning
 			recipe(410008),	-- Engrave Pants - Avenger's Shield
 			recipe(410010),	-- Engrave Pants - Divine Sacrifice
-			recipe(416037),	-- Engrave Pants - Exorcist
+			recipe(416037),	-- Engrave Pants - Exorcist / Aura Mastery
 			recipe(410011),	-- Engrave Pants - Inspiration Exemplar
 			recipe(425621),	-- Engrave Pants - Rebuke
 			
@@ -1115,12 +1115,18 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(416031)),	-- Engrave Boots - The Art of War
 			
 			-- Phase 3
+			applyclassicphase(SOD_PHASE_THREE, recipe(410013)),	-- Engrave Bracers - Hammer of the Righteous
 			applyclassicphase(SOD_PHASE_THREE, recipe(429261)),	-- Engrave Bracers - Improved Hammer of Wrath
+			applyclassicphase(SOD_PHASE_THREE, recipe(429242)),	-- Engrave Bracers - Light's Grace
 			applyclassicphase(SOD_PHASE_THREE, recipe(429255)),	-- Engrave Bracers - Purifying Power
 			applyclassicphase(SOD_PHASE_THREE, recipe(429251)),	-- Engrave Helm - Fanaticism
 			applyclassicphase(SOD_PHASE_THREE, recipe(429247)),	-- Engrave Helm - Improved Sanctuary
-			applyclassicphase(SOD_PHASE_THREE, recipe(429242)),	-- Engrave Helm - Light's Grace
 			applyclassicphase(SOD_PHASE_THREE, recipe(429249)),	-- Engrave Helm - Wrath
+			
+			-- Phase 4
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440792)),	-- Engrave Cloak - Righteous Vengeance
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440788)),	-- Engrave Cloak - Shield of Righteousness
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440790)),	-- Engrave Cloak - Shock and Awe
 		}),
 		classHeader(PRIEST, {
 			-- Phase 1
