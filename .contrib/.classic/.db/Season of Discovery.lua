@@ -56,6 +56,81 @@ SetItemFilter(210794, MAIL);	-- Shifting Silver Breastplate
 SetItemFilter(209420, ONE_HANDED_MACES);	-- Gillsbane
 SetItemFilter(210696, ONE_HANDED_SWORDS);	-- Rot Bane
 
+-- Nightmare Incursions
+SetItemFilter(221441, TWO_HANDED_MACES);	-- Warden of the Dream
+SetItemFilter(220649, CLOTH);	-- Merithra's Inheritence
+SetItemFilter(221439, LEATHER);	-- Armor of the Emerald Slumber
+SetItemFilter(221402, MAIL);	-- Emerald Chain Helmet
+SetItemFilter(221400, MAIL);	-- Emerald Chain Shoulders
+SetItemFilter(221404, MAIL);	-- Emerald Chain Breastplate
+SetItemFilter(221403, MAIL);	-- Emerald Chain Gauntlets
+SetItemFilter(221401, MAIL);	-- Emerald Chain Leggings
+SetItemFilter(221405, MAIL);	-- Emerald Chain Boots
+SetItemFilter(221376, PLATE);	-- Emerald Dream Helm
+SetItemFilter(221381, PLATE);	-- Emerald Dream Pauldrons
+SetItemFilter(221380, PLATE);	-- Emerald Dream Breastplate
+SetItemFilter(221378, PLATE);	-- Emerald Dream Gauntlets
+SetItemFilter(221377, PLATE);	-- Emerald Dream Legplates
+SetItemFilter(221379, PLATE);	-- Emerald Dream Sabatons
+SetItemFilter(221413, LEATHER);	-- Emerald Dreamkeeper Helm
+SetItemFilter(221416, LEATHER);	-- Emerald Dreamkeeper Shoulders
+SetItemFilter(221417, LEATHER);	-- Emerald Dreamkeeper Chest
+SetItemFilter(221412, LEATHER);	-- Emerald Dreamkeeper Gloves
+SetItemFilter(221414, LEATHER);	-- Emerald Dreamkeeper Pants
+SetItemFilter(221415, LEATHER);	-- Emerald Dreamkeeper Boots
+SetItemFilter(221425, CLOTH);	-- Emerald Enchanted Circlet
+SetItemFilter(221431, CLOTH);	-- Emerald Enchanted Shoulders
+SetItemFilter(221430, CLOTH);	-- Emerald Enchanted Robes
+SetItemFilter(221427, CLOTH);	-- Emerald Enchanted Gloves
+SetItemFilter(221429, CLOTH);	-- Emerald Enchanted Pants
+SetItemFilter(221426, CLOTH);	-- Emerald Enchanted Boots
+SetItemFilter(221384, PLATE);	-- Emerald Encrusted Helmet
+SetItemFilter(221386, PLATE);	-- Emerald Encrusted Spaulders
+SetItemFilter(221382, PLATE);	-- Emerald Encrusted Battleplate
+SetItemFilter(221383, PLATE);	-- Emerald Encrusted Handguards
+SetItemFilter(221385, PLATE);	-- Emerald Encrusted Legplates
+SetItemFilter(221387, PLATE);	-- Emerald Encrusted Plate Boots
+SetItemFilter(221397, MAIL);	-- Emerald Laden Helmet
+SetItemFilter(221399, MAIL);	-- Emerald Laden Shoulders
+SetItemFilter(221395, MAIL);	-- Emerald Laden Breastplate
+SetItemFilter(221396, MAIL);	-- Emerald Laden Gauntlets
+SetItemFilter(221398, MAIL);	-- Emerald Laden Leggings
+SetItemFilter(221394, MAIL);	-- Emerald Laden Boots
+SetItemFilter(221408, LEATHER);	-- Emerald Leather Helm
+SetItemFilter(221411, LEATHER);	-- Emerald Leather Shoulders
+SetItemFilter(221406, LEATHER);	-- Emerald Leather Vest
+SetItemFilter(221407, LEATHER);	-- Emerald Leather Gloves
+SetItemFilter(221410, LEATHER);	-- Emerald Leather Pants
+SetItemFilter(221409, LEATHER);	-- Emerald Leather Sabatons
+SetItemFilter(221391, MAIL);	-- Emerald Scalemail Helmet
+SetItemFilter(221392, MAIL);	-- Emerald Scalemail Shoulders
+SetItemFilter(221390, MAIL);	-- Emerald Scalemail Breastplate
+SetItemFilter(221389, MAIL);	-- Emerald Scalemail Gauntlets
+SetItemFilter(221388, MAIL);	-- Emerald Scalemail Leggings
+SetItemFilter(221393, MAIL);	-- Emerald Scalemail Boots
+SetItemFilter(221422, LEATHER);	-- Emerald Watcher Helm
+SetItemFilter(221424, LEATHER);	-- Emerald Watcher Shoulders
+SetItemFilter(221419, LEATHER);	-- Emerald Watcher Vest
+SetItemFilter(221421, LEATHER);	-- Emerald Watcher Gloves
+SetItemFilter(221423, LEATHER);	-- Emerald Watcher Leggings
+SetItemFilter(221420, LEATHER);	-- Emerald Watcher Boots
+SetItemFilter(221437, CLOTH);	-- Emerald Woven Circlet
+SetItemFilter(221432, CLOTH);	-- Emerald Woven Mantle
+SetItemFilter(221434, CLOTH);	-- Emerald Woven Robes
+SetItemFilter(221436, CLOTH);	-- Emerald Woven Gloves
+SetItemFilter(221435, CLOTH);	-- Emerald Woven Pants
+SetItemFilter(221438, CLOTH);	-- Emerald Woven Boots
+SetItemFilter(224004, FINGER_F);	-- Emerald Ring
+SetItemFilter(224005, FINGER_F);	-- Emerald Ring
+SetItemFilter(221193, FINGER_F);	-- Emerald Ring
+SetItemFilter(224006, FINGER_F);	-- Emerald Ring
+SetItemFilter(221440, FINGER_F);	-- Roar of the Dream
+SetItemFilter(221374, TRINKET_F);	-- Anguish of the Dream
+SetItemFilter(220621, TRINKET_F);	-- Nightmare Resonance Crystal
+SetItemFilter(221369, TRINKET_F);	-- Nightmare Siphon
+SetItemFilter(221443, TRINKET_F);	-- Roar of the Grove
+SetItemFilter(221442, TRINKET_F);	-- Roar of the Guardian
+
 -- NYI
 SetItemFilter(211445, BOWS);	-- Barbaric Recurve
 SetItemFilter(211443, TWO_HANDED_SWORDS);	-- Blade of Rage
@@ -79,6 +154,10 @@ SetItemFilter(221316, SHIRTS);	-- Premo's Poise-Demanding Uniform (Phase 3)
 
 local classHeader = function(classID, g)
 	return cl(classID, bubbleDown({ ["classes"] = { classID } }, g));
+end
+local emeraldchip = function(cost, item)	-- Assign an Emerald Chip cost to an item.
+	applycost(item, { "i", 219927, cost });
+	return item;
 end
 local OnTooltipFor_ACA_SDL = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
@@ -184,9 +263,6 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
 			["races"] = HORDE_ONLY,
 		}),
-		applyclassicphase(SOD_PHASE_THREE, faction(2641, {	-- Emerald Wardens
-			["maps"] = { ASHENVALE, DUSKWOOD, FERALAS, THE_HINTERLANDS },
-		})),
 	}),
 	n(COMMON_VENDOR_ITEMS, {
 		["aqd"] = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
@@ -980,7 +1056,490 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			en = "This event focuses on the portals found across Azeroth, typically hosting an Emerald Dragon World Boss. These new events are PvE focused, asking players to complete quests around and inside the portals.\n\nThe event is intended to provide both endgame content and variation, with a new faction, the Emerald Wardens as well as new items and sets, but also to supplement the leveling experience. As early as level 25, players will be able to start doing Nightmare Incursions for experience and reputation.\n\nIncursions are also intended to be done in a group, with quests being shareable to up to 4 other players. Some quests will also require killing boss-type enemies, or require you to utilize gathering professions. This doesn't mean that you can't do them solo, it is just unlikely to be very efficient.",
 		},
 	}), {
+		n(FACTIONS, {
+			faction(2641, {	-- Emerald Wardens
+				["maps"] = { ASHENVALE, DUSKWOOD, FERALAS, THE_HINTERLANDS },
+			}),
+		}),
+		n(QUESTS, {
+			
+		}),
+		n(REWARDS, {
 		
+		}),
+		n(COMMON_VENDOR_ITEMS, {
+			["crs"] = {
+				222685,	-- Quartermaster Kyleen
+				222684,	-- Quartermaster Falinar
+				222687,	-- Quartermaster Valdane
+				222686,	-- Quartermaster Alandra
+			},
+			["coords"] = {
+				{ 89.6, 40.6, ASHENVALE },	-- Quartermaster Kyleen
+				{ 45.6, 51.2, DUSKWOOD },	-- Quartermaster Falinar
+				{ 48.6, 12.6, FERALAS },	-- Quartermaster Valdane
+				{ 61.4, 34.6, THE_HINTERLANDS },	-- Quartermaster Alandra
+			},
+			["groups"] = bubbleDownClassicRep(2641, {	-- Emerald Wardens
+				{	-- Neutral
+					i(223914, {	-- Greater Healing Potion
+						["cost"] = 562,	-- 5s 62c
+					}),
+					i(223913, {	-- Major Healing Potion
+						["cost"] = 2812,	-- 28s 12c
+					}),
+					i(223912, {	-- Purification Potion
+						["cost"] = 2250,	-- 22s 50c
+					}),
+				},
+				{	-- Friendly
+					i(223648, {	-- Dream Imbued Arrow
+						["cost"] = {{ "i", 10513, 200 }},	-- Mithril Gyro-Shot
+						["lvl"] = 44,
+					}),
+					i(221362, {	-- Weapon Cleaning Cloth
+						["cost"] = 2250,	-- 22s 50c
+					}),
+					i(212568, {	-- Wolfshead Trophy
+						["cost"] = {{ "i", 8345, 1 }},	-- Wolfshead Helm
+						["classes"] = { DRUID },
+						["lvl"] = 40,
+					}),
+					i(221481, {	-- Nihilist Epiphany
+						["classes"] = { PRIEST },
+						["cost"] = 18000,	-- 1g 80s
+						["groups"] = {
+							recipe(431705),	-- Engrave Bracers - Void Zone
+						},
+					}),
+					i(221482, {	-- Rune of Affliction
+						["classes"] = { WARLOCK },
+						["cost"] = 18000,	-- 1g 80s
+						["groups"] = {
+							recipe(431747),	-- Engrave Bracers - Unstable Affliction
+						},
+					}),
+					i(221512, {	-- Rune of Alacrity
+						["classes"] = { ROGUE },
+						["cost"] = 18000,	-- 1g 80s
+						["groups"] = {
+							recipe(432297),	-- Engrave Bracers - Cut to the Chase
+						},
+					}),
+					i(221517, {	-- Rune of Bloodshed
+						["classes"] = { DRUID },
+						["cost"] = 18000,	-- 1g 80s
+						["groups"] = {
+							recipe(431447),	-- Engrave Helm - Gore
+						},
+					}),
+					i(221483, {	-- Rune of Burn
+						["classes"] = { SHAMAN },
+						["cost"] = 18000,	-- 1g 80s
+						["groups"] = {
+							recipe(416066),	-- Engrave Helm - Burn
+						},
+					}),
+					i(221515, {	-- Rune of Detonation
+						["classes"] = { HUNTER },
+						["cost"] = 18000,	-- 1g 80s
+						["groups"] = {
+							recipe(431611),	-- Engrave Bracers - T.N.T.
+						},
+					}),
+					i(223288, {	-- Rune of the Hammer
+						["classes"] = { PALADIN },
+						["cost"] = 18000,	-- 1g 80s
+						["groups"] = {
+							recipe(429261),	-- Engrave Bracers - Improved Hammer of Wrath
+						},
+					}),
+					i(221511, {	-- Rune of the Protector
+						["classes"] = { WARRIOR },
+						["cost"] = 18000,	-- 1g 80s
+						["groups"] = {
+							recipe(427080),	-- Engrave Helm - Shield Mastery
+						},
+					}),
+					i(221480, {	-- Spell Notes: Molten Armor
+						["classes"] = { MAGE },
+						["cost"] = 18000,	-- 1g 80s
+						["groups"] = {
+							recipe(429308),	-- Engrave Bracers - Molten Armor
+						},
+					}),
+					
+					i(221400, {	-- Emerald Chain Shoulders
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221403, {	-- Emerald Chain Gauntlets
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221405, {	-- Emerald Chain Boots
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					
+					i(221381, {	-- Emerald Dream Pauldrons
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { WARRIOR, PALADIN },
+						["lvl"] = 50,
+					}),
+					i(221378, {	-- Emerald Dream Gauntlets
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { WARRIOR, PALADIN },
+						["lvl"] = 50,
+					}),
+					i(221379, {	-- Emerald Dream Sabatons
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { WARRIOR, PALADIN },
+						["lvl"] = 50,
+					}),
+					
+					i(221416, {	-- Emerald Dreamkeeper Shoulders
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					i(221412, {	-- Emerald Dreamkeeper Gloves
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					i(221415, {	-- Emerald Dreamkeeper Boots
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					
+					i(221431, {	-- Emerald Enchanted Shoulders
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { PRIEST, MAGE, WARLOCK },
+						["lvl"] = 50,
+					}),
+					i(221427, {	-- Emerald Enchanted Gloves
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { PRIEST, MAGE, WARLOCK },
+						["lvl"] = 50,
+					}),
+					i(221426, {	-- Emerald Enchanted Boots
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { PRIEST, MAGE, WARLOCK },
+						["lvl"] = 50,
+					}),
+					
+					i(221386, {	-- Emerald Encrusted Spaulders
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { PALADIN },
+						["lvl"] = 50,
+					}),
+					i(221383, {	-- Emerald Encrusted Handguards
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { PALADIN },
+						["lvl"] = 50,
+					}),
+					i(221387, {	-- Emerald Encrusted Plate Boots
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { PALADIN },
+						["lvl"] = 50,
+					}),
+					
+					i(221399, {	-- Emerald Laden Shoulders
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221396, {	-- Emerald Laden Gauntlets
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221394, {	-- Emerald Laden Boots
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					
+					i(221411, {	-- Emerald Leather Shoulders
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { ROGUE, DRUID },
+						["lvl"] = 50,
+					}),
+					i(221407, {	-- Emerald Leather Gloves
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { ROGUE, DRUID },
+						["lvl"] = 50,
+					}),
+					i(221409, {	-- Emerald Leather Sabatons
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { ROGUE, DRUID },
+						["lvl"] = 50,
+					}),
+					
+					i(221392, {	-- Emerald Scalemail Shoulders
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { HUNTER, SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221389, {	-- Emerald Scalemail Gauntlets
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { HUNTER, SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221393, {	-- Emerald Scalemail Boots
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { HUNTER, SHAMAN },
+						["lvl"] = 50,
+					}),
+					
+					i(221424, {	-- Emerald Watcher Shoulders
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					i(221421, {	-- Emerald Watcher Gloves
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					i(221420, {	-- Emerald Watcher Boots
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					
+					i(221432, {	-- Emerald Woven Mantle
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { PRIEST, MAGE },
+						["lvl"] = 50,
+					}),
+					i(221436, {	-- Emerald Woven Gloves
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { PRIEST, MAGE },
+						["lvl"] = 50,
+					}),
+					i(221438, {	-- Emerald Woven Boots
+						["cost"] = 33750,	-- 3g 37s 50c
+						["classes"] = { PRIEST, MAGE },
+						["lvl"] = 50,
+					}),
+					
+					i(224004, {	-- Emerald Ring
+						["cost"] = 4761,	-- 47s 61c
+						["lvl"] = 20,
+					}),
+					i(224005, {	-- Emerald Ring
+						["cost"] = 4761,	-- 47s 61c
+						["lvl"] = 20,
+					}),
+					i(221374, {	-- Anguish of the Dream
+						["cost"] = 9332,	-- 93s 32c
+						["lvl"] = 30,
+					}),
+					i(221369, {	-- Nightmare Siphon
+						["cost"] = 5521,	-- 55s 21c
+						["lvl"] = 20,
+					}),
+				},
+				{	-- Honored
+					i(213407, {	-- Catnip
+						["cost"] = 5625,	-- 56s 25c
+						["classes"] = { DRUID },
+					}),
+					
+					i(221402, {	-- Emerald Chain Helmet
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221404, {	-- Emerald Chain Breastplate
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221401, {	-- Emerald Chain Leggings
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					
+					i(221376, {	-- Emerald Dream Helm
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { WARRIOR, PALADIN },
+						["lvl"] = 50,
+					}),
+					i(221380, {	-- Emerald Dream Breastplate
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { WARRIOR, PALADIN },
+						["lvl"] = 50,
+					}),
+					i(221377, {	-- Emerald Dream Legplates
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { WARRIOR, PALADIN },
+						["lvl"] = 50,
+					}),
+					
+					i(221413, {	-- Emerald Dreamkeeper Helm
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					i(221417, {	-- Emerald Dreamkeeper Chest
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					i(221414, {	-- Emerald Dreamkeeper Pants
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					
+					i(221425, {	-- Emerald Enchanted Circlet
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { PRIEST, MAGE, WARLOCK },
+						["lvl"] = 50,
+					}),
+					i(221430, {	-- Emerald Enchanted Robes
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { PRIEST, MAGE, WARLOCK },
+						["lvl"] = 50,
+					}),
+					i(221429, {	-- Emerald Enchanted Pants
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { PRIEST, MAGE, WARLOCK },
+						["lvl"] = 50,
+					}),
+					
+					i(221384, {	-- Emerald Encrusted Helmet
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { PALADIN },
+						["lvl"] = 50,
+					}),
+					i(221382, {	-- Emerald Encrusted Battleplate
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { PALADIN },
+						["lvl"] = 50,
+					}),
+					i(221385, {	-- Emerald Encrusted Legplates
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { PALADIN },
+						["lvl"] = 50,
+					}),
+					
+					i(221397, {	-- Emerald Laden Helmet
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221395, {	-- Emerald Laden Breastplate
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221398, {	-- Emerald Laden Leggings
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { SHAMAN },
+						["lvl"] = 50,
+					}),
+					
+					i(221408, {	-- Emerald Leather Helm
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { ROGUE, DRUID },
+						["lvl"] = 50,
+					}),
+					i(221406, {	-- Emerald Leather Vest
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { ROGUE, DRUID },
+						["lvl"] = 50,
+					}),
+					i(221410, {	-- Emerald Leather Pants
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { ROGUE, DRUID },
+						["lvl"] = 50,
+					}),
+					
+					i(221391, {	-- Emerald Scalemail Helmet
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { HUNTER, SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221390, {	-- Emerald Scalemail Breastplate
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { HUNTER, SHAMAN },
+						["lvl"] = 50,
+					}),
+					i(221388, {	-- Emerald Scalemail Leggings
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { HUNTER, SHAMAN },
+						["lvl"] = 50,
+					}),
+					
+					i(221422, {	-- Emerald Watcher Helm
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					i(221419, {	-- Emerald Watcher Vest
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					i(221423, {	-- Emerald Watcher Leggings
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { DRUID },
+						["lvl"] = 50,
+					}),
+					
+					i(221437, {	-- Emerald Woven Circlet
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { PRIEST, MAGE },
+						["lvl"] = 50,
+					}),
+					i(221434, {	-- Emerald Woven Robes
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { PRIEST, MAGE },
+						["lvl"] = 50,
+					}),
+					i(221435, {	-- Emerald Woven Pants
+						["cost"] = 67500,	-- 6g 75s
+						["classes"] = { PRIEST, MAGE },
+						["lvl"] = 50,
+					}),
+					
+					i(221193, {	-- Emerald Ring
+						["cost"] = 63512,	-- 6g 35s 12c
+						["lvl"] = 45,
+					}),
+					i(224006, {	-- Emerald Ring
+						["cost"] = 63512,	-- 6g 35s 12c
+						["lvl"] = 45,
+					}),
+				},
+				{	-- Revered
+					i(221441, {	-- Warden of the Dream
+						["cost"] = 88752,	-- 8g 87s 52c
+						["lvl"] = 43,
+					}),
+					emeraldchip(50, i(221439, { ["lvl"] = 50 })),	-- Armor of the Emerald Slumber
+					emeraldchip(50, i(220649, { ["lvl"] = 50 })),	-- Merithra's Inheritence
+				},
+				{	-- Exalted
+					emeraldchip(75, i(220621, {	-- Nightmare Resonance Crystal
+						["description"] = "Allows you to see and pick resonating herbs in any of the incursions. Herbalism not required.",
+						["lvl"] = 50,
+					})),
+					emeraldchip(75, i(221440, { ["lvl"] = 50 })),	-- Roar of the Dream
+					emeraldchip(75, i(221443, { ["lvl"] = 50 })),	-- Roar of the Grove
+					emeraldchip(75, i(221442, { ["lvl"] = 50 })),	-- Roar of the Guardian
+				},
+			}),
+		}),
 	})),
 	n(createHeader({	-- Rune Engraving
 		readable = "Rune Engraving",
