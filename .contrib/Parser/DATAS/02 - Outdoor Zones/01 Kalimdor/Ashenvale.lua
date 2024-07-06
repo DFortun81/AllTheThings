@@ -742,7 +742,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
 					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
+					-- #if AFTER 1.15.2
+					["isDaily"] = true,
+					-- #else
 					["isWeekly"] = true,
+					-- #endif
 					["lvl"] = 18,
 					["groups"] = {
 						i(211816),	-- Warsong Battle Drum
@@ -2141,7 +2145,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
 					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER 1.15.2
+					["isDaily"] = true,
+					-- #else
 					["isWeekly"] = true,
+					-- #endif
 					["lvl"] = 18,
 					["groups"] = {
 						i(211815),	-- Silverwing Battle Hymn
