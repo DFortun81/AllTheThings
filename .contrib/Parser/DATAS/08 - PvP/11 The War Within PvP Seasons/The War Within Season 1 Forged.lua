@@ -383,245 +383,91 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				["g"] = {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
-							i(218650, {	-- Forged Gladiator's Chestguard
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218651, {	-- Forged Gladiator's Chestplate
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218666, {	-- Forged Gladiator's Cloak
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218667, {	-- Forged Gladiator's Drape
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218654, {	-- Forged Gladiator's Plate Gauntlets
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218662, {	-- Forged Gladiator's Plate Girdle
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218663, {	-- Forged Gladiator's Plate Greatbelt
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218655, {	-- Forged Gladiator's Plate Handguards
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218656, {	-- Forged Gladiator's Plate Helm
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218657, {	-- Forged Gladiator's Plate Helmet
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218658, {	-- Forged Gladiator's Plate Legguards
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218661, {	-- Forged Gladiator's Plate Pauldrons
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218660, {	-- Forged Gladiator's Plate Shoulders
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218653, {	-- Forged Gladiator's Plate Stompers
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218665, {	-- Forged Gladiator's Plate Vambraces
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218652, {	-- Forged Gladiator's Plate Warboots
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218659, {	-- Forged Gladiator's Plate Wargreaves
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218664, {	-- Forged Gladiator's Plate Wristguards
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218668, {	-- Forged Gladiator's Shawl
-								["cost"] = {{"c", CONQUEST, }},
-							}),
+							conquestpoints(0, i(218650)),	-- Forged Gladiator's Chestguard
+							conquestpoints(0, i(218651)),	-- Forged Gladiator's Chestplate
+							conquestpoints(0, i(218666)),	-- Forged Gladiator's Cloak
+							conquestpoints(0, i(218667)),	-- Forged Gladiator's Drape
+							conquestpoints(0, i(218654)),	-- Forged Gladiator's Plate Gauntlets
+							conquestpoints(0, i(218662)),	-- Forged Gladiator's Plate Girdle
+							conquestpoints(0, i(218663)),	-- Forged Gladiator's Plate Greatbelt
+							conquestpoints(0, i(218655)),	-- Forged Gladiator's Plate Handguards
+							conquestpoints(0, i(218656)),	-- Forged Gladiator's Plate Helm
+							conquestpoints(0, i(218657)),	-- Forged Gladiator's Plate Helmet
+							conquestpoints(0, i(218658)),	-- Forged Gladiator's Plate Legguards
+							conquestpoints(0, i(218661)),	-- Forged Gladiator's Plate Pauldrons
+							conquestpoints(0, i(218660)),	-- Forged Gladiator's Plate Shoulders
+							conquestpoints(0, i(218653)),	-- Forged Gladiator's Plate Stompers
+							conquestpoints(0, i(218665)),	-- Forged Gladiator's Plate Vambraces
+							conquestpoints(0, i(218652)),	-- Forged Gladiator's Plate Warboots
+							conquestpoints(0, i(218659)),	-- Forged Gladiator's Plate Wargreaves
+							conquestpoints(0, i(218664)),	-- Forged Gladiator's Plate Wristguards
+							conquestpoints(0, i(218668)),	-- Forged Gladiator's Shawl
 						}),
 						cl(DEMONHUNTER, {
-							i(218552, {	-- Forged Gladiator's Cloak
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218553, {	-- Forged Gladiator's Drape
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218548, {	-- Forged Gladiator's Leather Belt
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218538, {	-- Forged Gladiator's Leather Boots
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218544, {	-- Forged Gladiator's Leather Breeches
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218540, {	-- Forged Gladiator's Leather Gloves
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218541, {	-- Forged Gladiator's Leather Grips
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218542, {	-- Forged Gladiator's Leather Helm
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218537, {	-- Forged Gladiator's Leather Jerkin
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218545, {	-- Forged Gladiator's Leather Legwraps
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218543, {	-- Forged Gladiator's Leather Mask
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218547, {	-- Forged Gladiator's Leather Shoulderpads
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218546, {	-- Forged Gladiator's Leather Spaulders
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218549, {	-- Forged Gladiator's Leather Strap
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218539, {	-- Forged Gladiator's Leather Treads
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218536, {	-- Forged Gladiator's Leather Vest
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218551, {	-- Forged Gladiator's Leather Wristguards
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218550, {	-- Forged Gladiator's Leather Wristwraps
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218554, {	-- Forged Gladiator's Shawl
-								["cost"] = {{"c", CONQUEST, }},
-							}),
+							conquestpoints(0, i(218552)),	-- Forged Gladiator's Cloak
+							conquestpoints(0, i(218553)),	-- Forged Gladiator's Drape
+							conquestpoints(0, i(218548)),	-- Forged Gladiator's Leather Belt
+							conquestpoints(0, i(218538)),	-- Forged Gladiator's Leather Boots
+							conquestpoints(0, i(218544)),	-- Forged Gladiator's Leather Breeches
+							conquestpoints(0, i(218540)),	-- Forged Gladiator's Leather Gloves
+							conquestpoints(0, i(218541)),	-- Forged Gladiator's Leather Grips
+							conquestpoints(0, i(218542)),	-- Forged Gladiator's Leather Helm
+							conquestpoints(0, i(218537)),	-- Forged Gladiator's Leather Jerkin
+							conquestpoints(0, i(218545)),	-- Forged Gladiator's Leather Legwraps
+							conquestpoints(0, i(218543)),	-- Forged Gladiator's Leather Mask
+							conquestpoints(0, i(218547)),	-- Forged Gladiator's Leather Shoulderpads
+							conquestpoints(0, i(218546)),	-- Forged Gladiator's Leather Spaulders
+							conquestpoints(0, i(218549)),	-- Forged Gladiator's Leather Strap
+							conquestpoints(0, i(218539)),	-- Forged Gladiator's Leather Treads
+							conquestpoints(0, i(218536)),	-- Forged Gladiator's Leather Vest
+							conquestpoints(0, i(218551)),	-- Forged Gladiator's Leather Wristguards
+							conquestpoints(0, i(218550)),	-- Forged Gladiator's Leather Wristwraps
+							conquestpoints(0, i(218554)),	-- Forged Gladiator's Shawl
 						}),
 						cl(DRUID, {
-							i(218533, {	-- Forged Gladiator's Cloak
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218534, {	-- Forged Gladiator's Drape
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218529, {	-- Forged Gladiator's Leather Belt
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218519, {	-- Forged Gladiator's Leather Boots
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218525, {	-- Forged Gladiator's Leather Breeches
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218521, {	-- Forged Gladiator's Leather Gloves
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218522, {	-- Forged Gladiator's Leather Grips
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218523, {	-- Forged Gladiator's Leather Helm
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218526, {	-- Forged Gladiator's Leather Legwraps
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218524, {	-- Forged Gladiator's Leather Mask
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218528, {	-- Forged Gladiator's Leather Shoulderpads
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218527, {	-- Forged Gladiator's Leather Spaulders
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218530, {	-- Forged Gladiator's Leather Strap
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218520, {	-- Forged Gladiator's Leather Treads
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218517, {	-- Forged Gladiator's Leather Vest
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218518, {	-- Forged Gladiator's Leather Vestments
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218532, {	-- Forged Gladiator's Leather Wristguards
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218531, {	-- Forged Gladiator's Leather Wristwraps
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218535, {	-- Forged Gladiator's Shawl
-								["cost"] = {{"c", CONQUEST, }},
-							}),
+							conquestpoints(0, i(218533)),	-- Forged Gladiator's Cloak
+							conquestpoints(0, i(218534)),	-- Forged Gladiator's Drape
+							conquestpoints(0, i(218529)),	-- Forged Gladiator's Leather Belt
+							conquestpoints(0, i(218519)),	-- Forged Gladiator's Leather Boots
+							conquestpoints(0, i(218525)),	-- Forged Gladiator's Leather Breeches
+							conquestpoints(0, i(218521)),	-- Forged Gladiator's Leather Gloves
+							conquestpoints(0, i(218522)),	-- Forged Gladiator's Leather Grips
+							conquestpoints(0, i(218523)),	-- Forged Gladiator's Leather Helm
+							conquestpoints(0, i(218526)),	-- Forged Gladiator's Leather Legwraps
+							conquestpoints(0, i(218524)),	-- Forged Gladiator's Leather Mask
+							conquestpoints(0, i(218528)),	-- Forged Gladiator's Leather Shoulderpads
+							conquestpoints(0, i(218527)),	-- Forged Gladiator's Leather Spaulders
+							conquestpoints(0, i(218530)),	-- Forged Gladiator's Leather Strap
+							conquestpoints(0, i(218520)),	-- Forged Gladiator's Leather Treads
+							conquestpoints(0, i(218517)),	-- Forged Gladiator's Leather Vest
+							conquestpoints(0, i(218518)),	-- Forged Gladiator's Leather Vestments
+							conquestpoints(0, i(218532)),	-- Forged Gladiator's Leather Wristguards
+							conquestpoints(0, i(218531)),	-- Forged Gladiator's Leather Wristwraps
+							conquestpoints(0, i(218535)),	-- Forged Gladiator's Shawl
 						}),
 						cl(EVOKER, {
-							i(218593, {	-- Forged Gladiator's Armored Scales
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218605, {	-- Forged Gladiator's Chain Belt
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218596, {	-- Forged Gladiator's Chain Boots
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218608, {	-- Forged Gladiator's Chain Bracers
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218602, {	-- Forged Gladiator's Chain Breeches
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218600, {	-- Forged Gladiator's Chain Faceguard
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218597, {	-- Forged Gladiator's Chain Gauntlets
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218606, {	-- Forged Gladiator's Chain Girdle
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218598, {	-- Forged Gladiator's Chain Handguards
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218599, {	-- Forged Gladiator's Chain Helm
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218601, {	-- Forged Gladiator's Chain Leggings
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218603, {	-- Forged Gladiator's Chain Monnion
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218595, {	-- Forged Gladiator's Chain Sabatons
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218604, {	-- Forged Gladiator's Chain Shoulderguard
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218607, {	-- Forged Gladiator's Chain Wristguards
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218609, {	-- Forged Gladiator's Cloak
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218610, {	-- Forged Gladiator's Drape
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218594, {	-- Forged Gladiator's Scaleguard
-								["cost"] = {{"c", CONQUEST, }},
-							}),
-							i(218611, {	-- Forged Gladiator's Shawl
-								["cost"] = {{"c", CONQUEST, }},
-							}),
+							conquestpoints(0, i(218593)),	-- Forged Gladiator's Armored Scales
+							conquestpoints(0, i(218605)),	-- Forged Gladiator's Chain Belt
+							conquestpoints(0, i(218596)),	-- Forged Gladiator's Chain Boots
+							conquestpoints(0, i(218608)),	-- Forged Gladiator's Chain Bracers
+							conquestpoints(0, i(218602)),	-- Forged Gladiator's Chain Breeches
+							conquestpoints(0, i(218600)),	-- Forged Gladiator's Chain Faceguard
+							conquestpoints(0, i(218597)),	-- Forged Gladiator's Chain Gauntlets
+							conquestpoints(0, i(218606)),	-- Forged Gladiator's Chain Girdle
+							conquestpoints(0, i(218598)),	-- Forged Gladiator's Chain Handguards
+							conquestpoints(0, i(218599)),	-- Forged Gladiator's Chain Helm
+							conquestpoints(0, i(218601)),	-- Forged Gladiator's Chain Leggings
+							conquestpoints(0, i(218603)),	-- Forged Gladiator's Chain Monnion
+							conquestpoints(0, i(218595)),	-- Forged Gladiator's Chain Sabatons
+							conquestpoints(0, i(218604)),	-- Forged Gladiator's Chain Shoulderguard
+							conquestpoints(0, i(218607)),	-- Forged Gladiator's Chain Wristguards
+							conquestpoints(0, i(218609)),	-- Forged Gladiator's Cloak
+							conquestpoints(0, i(218610)),	-- Forged Gladiator's Drape
+							conquestpoints(0, i(218594)),	-- Forged Gladiator's Scaleguard
+							conquestpoints(0, i(218611)),	-- Forged Gladiator's Shawl
 						}),
 						cl(HUNTER, {
-							i(218624, {	-- Forged Gladiator's Chain Belt
-								["cost"] = {{"c", CONQUEST, }},
-							}),
+							conquestpoints(0, i(218624)),	-- Forged Gladiator's Chain Belt
 						}),
 					}),
 				}
