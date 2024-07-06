@@ -3085,6 +3085,75 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(214954, {	-- Rix Xizzix <Lost and Found>
+					["coord"] = { 28.4, 75.8, STRANGLETHORN_VALE },
+					["groups"] = {
+						applyclassicphase(SOD_PHASE_THREE, i(220688, {	-- Inert Mantle of Nightmares
+							["sourceQuest"] = 81986,	-- Waking the Nightmare
+							["cost"] = 100000,	-- 10g
+						})),
+						applyclassicphase(SOD_PHASE_THREE, i(219147, {	-- Rune of Grace
+							--["sourceQuest"] = ,	-- 
+							["description"] = "You need to complete the Frix Xizzix quest first. (Crieve TODO: Document the quest chain!)",
+							["classes"] = { PALADIN },
+							["cost"] = 10000,	-- 1g
+							["groups"] = {
+								recipe(429242),	-- Engrave Bracers - Light's Grace
+							},
+						})),
+						applyclassicphase(SOD_PHASE_THREE, i(19141, {	-- Luffa
+							["sourceQuest"] = 7727,	-- Incendosaurs? Whateverosaur is More Like It
+							["cost"] = 66451,	-- 6g 64s 51c
+						})),
+						applyclassicphase(SOD_PHASE_THREE, i(221418, {	-- Agamaggan's Roar
+							["sourceQuest"] = 82043,	-- The Wild Gods
+							["cost"] = 11500,	-- 1g 15s
+						})),
+						applyclassicphase(SOD_PHASE_THREE, i(11122, {	-- Carrot on a Stick
+							["sourceQuest"] = 2770,	-- Gahz'rilla
+							["cost"] = 28650,	-- 2g 86s 50c
+						})),
+						applyclassicphase(SOD_PHASE_THREE, i(10418, {	-- Glimmering Mithril Insignia
+							["sourceQuest"] = 3321,	-- Did You Lose This?
+							["cost"] = 65859,	-- 6g 58s 59c
+						})),
+						applyclassicphase(SOD_PHASE_TWO, i(2820, {	-- Nifty Stopwatch
+							["sourceQuest"] = 778,	-- This Is Going to Be Hard
+							["cost"] = 18650,	-- 1g 86s 50c
+						})),
+						applyclassicphase(SOD_PHASE_TWO, i(4984, {	-- Skull of Impending Doom
+							["sourceQuest"] = 737,	-- Forbidden Knowledge
+							["cost"] = 22520,	-- 2g 25s 20c
+						})),
+						i(211451, {	-- Acolyte's Void Pearl
+							["sourceQuests"] = {
+								78916,	-- The Heart of the Void (A)
+								78917,	-- The Heart of the Void (H)
+							},
+							["cost"] = 750000,	-- 75g
+						}),
+						i(211449, {	-- Avenger's Void Pearl
+							["sourceQuests"] = {
+								78916,	-- The Heart of the Void (A)
+								78917,	-- The Heart of the Void (H)
+							},
+							["cost"] = 750000,	-- 75g
+						}),
+						i(211450, {	-- Invoker's Void Pearl
+							["sourceQuests"] = {
+								78916,	-- The Heart of the Void (A)
+								78917,	-- The Heart of the Void (H)
+							},
+							["cost"] = 750000,	-- 75g
+						}),
+						i(211420, {	-- Shifting Scale Talisman
+							["sourceQuest"] = 78909,	-- Shifting Scale Talisman
+							["cost"] = 25000,	-- 2g 50s
+						}),
+					},
+				})),
+				-- #endif
 				n(1149, {	-- Uthok <General Supplies>
 					["coords"] = {
 						-- #if AFTER CATA
