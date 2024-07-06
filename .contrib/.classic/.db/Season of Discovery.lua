@@ -290,6 +290,7 @@ local OnTooltip_EMERALD_WARDENS = [[function(t, tooltipInfo)
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		addRepInfo(tooltipInfo, reputation, "Defeat Incursion Bosses", 200, ]] .. EXALTED .. [[);
 		addRepInfo(tooltipInfo, reputation, "Complete Incursion Quests", 75, ]] .. EXALTED .. [[);
+		if app.GameBuildVersion >= 11503 then addRepInfo(tooltipInfo, reputation, "Complete Resource Quests", 100, ]] .. EXALTED .. [[); end
 		
 		local fight = t.fight;
 		if not fight then
@@ -1143,6 +1144,266 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 		}),
 		n(QUESTS, {
+			ashenvalequest(81768, {	-- Ashenvale Mission I: Defeat Satyrs [75 Rep]
+				["providers"] = {
+					{ "i", 219999 },	-- Nightmare Incursions: Ashenvale Mission I
+					{ "i", 220053 },	-- Deputization Authorization: Ashenvale Mission I
+				},
+				["groups"] = {
+					objective(1, {	-- 0/10 Dreamfire Hellcaller slain
+						["provider"] = { "n", 221262 },	-- Dreamfire Hellcaller
+						["coord"] = { 80.4, 48.4, ASHENVALE },
+					}),
+					objective(2, {	-- 0/10 Dreamfire Betrayer slain
+						["provider"] = { "n", 221261 },	-- Dreamfire Betrayer
+						["coord"] = { 79.4, 51.0, ASHENVALE },
+					}),
+				},
+			}),
+			ashenvalequest(81769, {	-- Ashenvale Mission II: Defeat Treants [75 Rep]
+				["providers"] = {
+					{ "i", 220000 },	-- Nightmare Incursions: Ashenvale Mission II
+					{ "i", 220054 },	-- Deputization Authorization: Ashenvale Mission II
+				},
+				["groups"] = {
+					objective(1, {	-- 0/7 Vengeful Ancient slain
+						["provider"] = { "n", 221263 },	-- Vengeful Ancient
+						["coord"] = { 86.8, 59.2, ASHENVALE },
+					}),
+				},
+			}),
+			ashenvalequest(81770, {	-- Ashenvale Mission III: Defeat Dragonkin [75 Rep]
+				["providers"] = {
+					{ "i", 220001 },	-- Nightmare Incursions: Ashenvale Mission III
+					{ "i", 220055 },	-- Deputization Authorization: Ashenvale Mission III
+				},
+				["groups"] = {
+					objective(1, {	-- 0/3 Wyrmkin Nightstalker slain
+						["provider"] = { "n", 221259 },	-- Wyrmkin Nightstalker
+						["coord"] = { 85.8, 46.6, ASHENVALE },
+					}),
+					objective(2, {	-- 0/10 Terror Whelp slain
+						["provider"] = { "n", 221260 },	-- Terror Whelp
+						["coord"] = { 87.0, 44.6, ASHENVALE },
+					}),
+				},
+			}),
+			ashenvalequest(81771, {	-- Ashenvale Mission IV: Dragon Intelligence [75 Rep]
+				["providers"] = {
+					{ "i", 220002 },	-- Nightmare Incursions: Ashenvale Mission IV
+					{ "i", 220056 },	-- Deputization Authorization: Ashenvale Mission IV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: Forest Song
+						["provider"] = { "i", 219924 },	-- Intelligence Report: Forest Song
+						["coord"] = { 83.6, 45.4, ASHENVALE },
+						["cr"] = 221271,	-- Dreamwarden Ellodar
+					}),
+				},
+			}),
+			ashenvalequest(81772, {	-- Ashenvale Mission V: Satyr Intelligence [75 Rep]
+				["providers"] = {
+					{ "i", 220003 },	-- Nightmare Incursions: Ashenvale Mission V
+					{ "i", 220057 },	-- Deputization Authorization: Ashenvale Mission V
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: Satyrnaar
+						["provider"] = { "i", 219925 },	-- Intelligence Report: Satyrnaar
+						["coord"] = { 81.6, 48.6, ASHENVALE },
+						["cr"] = 221272,	-- Dreamwarden Mandoran
+					}),
+				},
+			}),
+			ashenvalequest(81773, {	-- Ashenvale Mission VI: Treant Intelligence [75 Rep]
+				["providers"] = {
+					{ "i", 220004 },	-- Nightmare Incursions: Ashenvale Mission VI
+					{ "i", 220058 },	-- Deputization Authorization: Ashenvale Mission VI
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: Warsong Lumber Camp
+						["provider"] = { "i", 219926 },	-- Intelligence Report: Warsong Lumber Camp
+						["coord"] = { 91.2, 58.0, ASHENVALE },
+						["cr"] = 221273,	-- Dreamwarden Lanaria
+					}),
+				},
+			}),
+			ashenvalequest(81774, {	-- Ashenvale Mission VII: Recover Dreamengine [75 Rep]
+				["providers"] = {
+					{ "i", 220005 },	-- Nightmare Incursions: Ashenvale Mission VII
+					{ "i", 220059 },	-- Deputization Authorization: Ashenvale Mission VII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Dreamengine
+						["providers"] = {
+							{ "i", 219448 },	-- Dreamengine
+							{ "o", 441128 },	-- Vibrating Crate
+						},
+						["coord"] = { 88.4, 55.5, ASHENVALE },
+					}),
+				},
+			}),
+			ashenvalequest(81775, {	-- Ashenvale Mission VIII: Recover Azsharan Prophecy [75 Rep]
+				["providers"] = {
+					{ "i", 220006 },	-- Nightmare Incursions: Ashenvale Mission VIII
+					{ "i", 220060 },	-- Deputization Authorization: Ashenvale Mission VIII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Azsharan Prophecy
+						["providers"] = {
+							{ "i", 219449 },	-- Azsharan Prophecy
+							{ "o", 441129 },	-- Azsharan Prophecy
+						},
+						["coord"] = { 80.7, 48.9, ASHENVALE },
+					}),
+				},
+			}),
+			ashenvalequest(81776, {	-- Ashenvale Mission IX: Recover Dream-Touched Dragonegg [75 Rep]
+				["providers"] = {
+					{ "i", 220007 },	-- Nightmare Incursions: Ashenvale Mission IX
+					{ "i", 220061 },	-- Deputization Authorization: Ashenvale Mission IX
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Dream-Touched Dragon Egg
+						["providers"] = {
+							{ "i", 219447 },	-- Dream-Touched Dragon Egg
+							{ "o", 441124 },	-- Dream-Touched Dragon Egg
+						},
+						["coord"] = { 86.1, 45.9, ASHENVALE },
+					}),
+				},
+			}),
+			ashenvalequest(81777, {	-- Ashenvale Mission X: Dreamroot [75 Rep]
+				["providers"] = {
+					{ "i", 220008 },	-- Nightmare Incursions: Ashenvale Mission X
+					{ "i", 220062 },	-- Deputization Authorization: Ashenvale Mission X
+				},
+				["requireSkill"] = HERBALISM,
+				["learnedAt"] = 205,
+				["groups"] = {
+					objective(1, {	-- 0/10 Dreamroot
+						["providers"] = {
+							{ "i", 219444 },	-- Dreamroot
+							{ "o", 439627 },	-- Dreamroot
+						},
+						["coords"] = {
+							{ 93.5, 38.3, ASHENVALE },
+							{ 81.0, 44.8, ASHENVALE },
+							{ 85.9, 56.5, ASHENVALE },
+						},
+					}),
+				},
+			}),
+			ashenvalequest(81778, {	-- Ashenvale Mission XI: Fool's Gold Dust [75 Rep]
+				["providers"] = {
+					{ "i", 220009 },	-- Nightmare Incursions: Ashenvale Mission XI
+					{ "i", 220063 },	-- Deputization Authorization: Ashenvale Mission XI
+				},
+				["requireSkill"] = MINING,
+				["learnedAt"] = 205,
+				["groups"] = {
+					objective(1, {	-- 0/10 Fool's Gold Dust
+						["providers"] = {
+							{ "i", 219445 },	-- Fool's Gold Dust
+							{ "o", 439628 },	-- Fool's Gold Vein
+						},
+						["coords"] = {
+							{ 91.3, 37.6, ASHENVALE },
+							{ 82.7, 45.8, ASHENVALE },
+							{ 88.1, 62.1, ASHENVALE },
+						},
+					}),
+				},
+			}),
+			ashenvalequest(81779, {	-- Ashenvale Mission XII: Dream-Infused Dragonscale [75 Rep]
+				["providers"] = {
+					{ "i", 220010 },	-- Nightmare Incursions: Ashenvale Mission XII
+					{ "i", 220064 },	-- Deputization Authorization: Ashenvale Mission XII
+				},
+				["requireSkill"] = SKINNING,
+				["learnedAt"] = 205,
+				["groups"] = {
+					objective(1, {	-- 0/10 Dream-Infused Dragonscale
+						["provider"] = { "i", 219446 },	-- Dream-Infused Dragonscale
+						["coord"] = { 86.8, 46.6, ASHENVALE },
+						["crs"] = {
+							221259,	-- Wyrmkin Nightstalker
+							221260,	-- Terror Whelp
+						},
+					}),
+				},
+			}),
+			ashenvalequest(81780, {	-- Ashenvale Mission XIII: Defeat Larsera [200 Rep]
+				["providers"] = {
+					{ "i", 220011 },	-- Nightmare Incursions: Ashenvale Mission XIII
+					{ "i", 220065 },	-- Deputization Authorization: Ashenvale Mission XVIII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Larsera slain
+						["provider"] = { "n", 221265 },	-- Larsera
+						["coord"] = { 86.6, 44.6, ASHENVALE },
+					}),
+				},
+			}),
+			ashenvalequest(81781, {	-- Ashenvale Mission XIV: Defeat Zalius [75 Rep]
+				["providers"] = {
+					{ "i", 220012 },	-- Nightmare Incursions: Ashenvale Mission XIV
+					{ "i", 220066 },	-- Deputization Authorization: Ashenvale Mission XIV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Zalius slain
+						["provider"] = { "n", 221266 },	-- Zalius <Dreamfire Elder>
+						["coord"] = { 81.0, 50.6, ASHENVALE },
+					}),
+				},
+			}),
+			ashenvalequest(81782, {	-- Ashenvale Mission XV: Defeat Shredder 9000 [75 Rep]
+				["providers"] = {
+					{ "i", 220013 },	-- Nightmare Incursions: Ashenvale Mission XV
+					{ "i", 220067 },	-- Deputization Authorization: Ashenvale Mission XV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Shredder 9000 slain
+						["provider"] = { "n", 221267 },	-- Shredder 9000
+						["coord"] = { 86.8, 62.6, ASHENVALE },
+					}),
+				},
+			}),
+			ashenvalequest(81783, {	-- Ashenvale Mission XVI: Rescue Alyssian Windcaller [75 Rep]
+				["providers"] = {
+					{ "i", 220014 },	-- Nightmare Incursions: Ashenvale Mission XVI
+					{ "i", 220068 },	-- Deputization Authorization: Ashenvale Mission XVI
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue Alyssian Windcaller
+						["provider"] = { "n", 221270 },	-- Alyssian Windcaller <Druid of the Claw>
+						["coord"] = { 92, 54, ASHENVALE },
+					}),
+				},
+			}),
+			ashenvalequest(81784, {	-- Ashenvale Mission XVII: Rescue Doran Dreambough [75 Rep]
+				["providers"] = {
+					{ "i", 220015 },	-- Nightmare Incursions: Ashenvale Mission XVII
+					{ "i", 220069 },	-- Deputization Authorization: Ashenvale Mission XVII
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue Doran Dreambough
+						["provider"] = { "n", 221268 },	-- Doran Dreambough <Druid of the Claw>
+						["coord"] = { 87.2, 43.6, ASHENVALE },
+					}),
+				},
+			}),
+			ashenvalequest(81785, {	-- Ashenvale Mission XVIII: Rescue Maseara Autumnmoon [75 Rep]
+				["providers"] = {
+					{ "i", 220016 },	-- Nightmare Incursions: Ashenvale Mission XVIII
+					{ "i", 220070 },	-- Deputization Authorization: Ashenvale Mission XVIII
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue Maseara Autumnmoon
+						["provider"] = { "n", 221269 },	-- Maseara Autumnmoon <Druid of the Claw>
+						["coord"] = { 81, 50, ASHENVALE },
+					}),
+				},
+			}),
 			duskwoodquest(81730, {	-- Duskwood Mission I: Defeat Worgen [75 Rep]
 				["providers"] = {
 					{ "i", 219962 },	-- Nightmare Incursions: Duskwood Mission I
@@ -1420,6 +1681,58 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["isDaily"] = true,
 				["lvl"] = 47,
 			}),
+			applyclassicphase(SOD_PHASE_FOUR, q(84013, {	-- More Starshells
+				["qg"] = 221479,	-- Field Captain Korlian
+				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
+				["maxReputation"] = { 2641, EXALTED };	-- Emerald Wardens
+				["cost"] = {{ "i", 219487, 10 }},	-- Starshell
+				["requireSkill"] = SKINNING,
+				["learnedAt"] = 250,
+				["lvl"] = 53,
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, q(84012, {	-- More Starsilver Ore
+				["qg"] = 221479,	-- Field Captain Korlian
+				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
+				["maxReputation"] = { 2641, EXALTED };	-- Emerald Wardens
+				["cost"] = {{ "i", 219486, 10 }},	-- Starsilver Ore
+				["requireSkill"] = MINING,
+				["learnedAt"] = 250,
+				["lvl"] = 53,
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, q(84011, {	-- More Star Lotus
+				["qg"] = 221479,	-- Field Captain Korlian
+				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
+				["maxReputation"] = { 2641, EXALTED };	-- Emerald Wardens
+				["cost"] = {{ "i", 219454, 10 }},	-- Star Lotus
+				["requireSkill"] = HERBALISM,
+				["learnedAt"] = 250,
+				["lvl"] = 53,
+			})),
+			q(81727, {	-- Recover Incursion Field Report: Ashenvale
+				["qg"] = 221477,	-- Field Captain Hannalah
+				["coord"] = { 89.6, 40.6, ASHENVALE },
+				["lvl"] = 37,
+				["groups"] = {
+					objective(1, {	-- 0/1 Gemeron's Field Report
+						["provider"] = { "i", 219770 },	-- Gemeron's Field Report
+						["coord"] = { 93.8, 35.2, ASHENVALE },
+						["cr"] = 221482,	-- Scout Gemeron
+					}),
+					objective(2, {	-- 0/12 Dreampyre Imp slain
+						["provider"] = { "n", 221283 },	-- Dreampyre Imp
+						["coord"] = { 93.4, 39.6, ASHENVALE },
+					}),
+					objective(3, {	-- 0/4 Emberspark Dreamsworn slain
+						["provider"] = { "n", 221282 },	-- Emberspark Dreamsworn
+						["coord"] = { 94.0, 39.8, ASHENVALE },
+					}),
+					objective(4, {	-- 0/4 Dreamhunter Hound slain
+						["provider"] = { "n", 221292 },	-- Dreamhunter Hound
+						["coord"] = { 93.6, 39.6, ASHENVALE },
+					}),
+					i(219773),	-- Mission Brief: Ashenvale
+				},
+			}),
 			q(81716, {	-- Recover Incursion Field Report: Duskwood
 				["qg"] = 221471,	-- Field Captain Palandar
 				["coord"] = { 45.6, 51.2, DUSKWOOD },
@@ -1445,8 +1758,96 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					i(219526),	-- Mission Brief: Duskwood
 				},
 			}),
+			q(81729, {	-- Recover Incursion Field Report: Feralas
+				["qg"] = 221480,	-- Field Captain Arunnel
+				["coord"] = { 48.6, 12.4, FERALAS },
+				["lvl"] = 47,
+				["groups"] = {
+					objective(1, {	-- 0/1 Thandros' Field Report
+						["provider"] = { "i", 219771 },	-- Thandros' Field Report
+						["coord"] = { 51.0, 10.6, FERALAS },
+						["cr"] = 221484,	-- Scout Thandros
+					}),
+					objective(2, {	-- 0/12 Dreamshadow Imp slain
+						["provider"] = { "n", 221407 },	-- Dreamshadow Imp
+						["coord"] = { 50.2, 12.6, FERALAS },
+					}),
+					objective(3, {	-- 0/4 Moonwalker Betrayer slain
+						["provider"] = { "n", 221406 },	-- Moonwalker Betrayer
+						["coord"] = { 48.8, 11.4, FERALAS },
+					}),
+					objective(4, {	-- 0/4 Night Hunter slain
+						["provider"] = { "n", 221408 },	-- Night Hunter
+						["coord"] = { 51.6, 12.6, FERALAS },
+					}),
+					i(219775),	-- Mission Brief: Feralas
+				},
+			}),
+			q(81728, {	-- Recover Incursion Field Report: Hinterlands
+				["qg"] = 221479,	-- Field Captain Korlian
+				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
+				["lvl"] = 47,
+				["groups"] = {
+					objective(1, {	-- 0/1 Fallia's Field Report
+						["provider"] = { "i", 219772 },	-- Fallia's Field Report
+						["coord"] = { 61.8, 24.0, THE_HINTERLANDS },
+						["cr"] = 221483,	-- Scout Fallia
+					}),
+					objective(2, {	-- 0/12 Stardust Imp slain
+						["provider"] = { "n", 221357 },	-- Stardust Imp
+						["coord"] = { 62.6, 30.8, THE_HINTERLANDS },
+					}),
+					objective(3, {	-- 0/4 Doomspark Starsworn slain
+						["provider"] = { "n", 221356 },	-- Doomspark Starsworn
+						["coord"] = { 63.6, 27.6, THE_HINTERLANDS },
+					}),
+					objective(4, {	-- 0/4 Starkiller Hound slain
+						["provider"] = { "n", 221360 },	-- Starkiller Hound
+						["coord"] = { 62.8, 25.8, THE_HINTERLANDS },
+					}),
+					i(219774),	-- Mission Brief: Hinterlands
+				},
+			}),
 		}),
 		n(REWARDS, {
+			i(219773, {	-- Mission Brief: Ashenvale
+				i(220053),	-- Deputization Authorization: Ashenvale Mission I
+				i(220054),	-- Deputization Authorization: Ashenvale Mission II
+				i(220055),	-- Deputization Authorization: Ashenvale Mission III
+				i(220056),	-- Deputization Authorization: Ashenvale Mission IV
+				i(220057),	-- Deputization Authorization: Ashenvale Mission V
+				i(220058),	-- Deputization Authorization: Ashenvale Mission VI
+				i(220059),	-- Deputization Authorization: Ashenvale Mission VII
+				i(220060),	-- Deputization Authorization: Ashenvale Mission VIII
+				i(220061),	-- Deputization Authorization: Ashenvale Mission IX
+				i(220062),	-- Deputization Authorization: Ashenvale Mission X
+				i(220063),	-- Deputization Authorization: Ashenvale Mission XI
+				i(220064),	-- Deputization Authorization: Ashenvale Mission XII
+				i(220065),	-- Deputization Authorization: Ashenvale Mission XIII
+				i(220066),	-- Deputization Authorization: Ashenvale Mission XIV
+				i(220067),	-- Deputization Authorization: Ashenvale Mission XV
+				i(220068),	-- Deputization Authorization: Ashenvale Mission XVI
+				i(220069),	-- Deputization Authorization: Ashenvale Mission XVII
+				i(220070),	-- Deputization Authorization: Ashenvale Mission XVIII
+				i(219999),	-- Nightmare Incursions: Ashenvale Mission I
+				i(220000),	-- Nightmare Incursions: Ashenvale Mission II
+				i(220001),	-- Nightmare Incursions: Ashenvale Mission III
+				i(220002),	-- Nightmare Incursions: Ashenvale Mission IV
+				i(220003),	-- Nightmare Incursions: Ashenvale Mission V
+				i(220004),	-- Nightmare Incursions: Ashenvale Mission VI
+				i(220005),	-- Nightmare Incursions: Ashenvale Mission VII
+				i(220006),	-- Nightmare Incursions: Ashenvale Mission VIII
+				i(220007),	-- Nightmare Incursions: Ashenvale Mission IX
+				i(220008),	-- Nightmare Incursions: Ashenvale Mission X
+				i(220009),	-- Nightmare Incursions: Ashenvale Mission XI
+				i(220010),	-- Nightmare Incursions: Ashenvale Mission XII
+				i(220011),	-- Nightmare Incursions: Ashenvale Mission XIII
+				i(220012),	-- Nightmare Incursions: Ashenvale Mission XIV
+				i(220013),	-- Nightmare Incursions: Ashenvale Mission XV
+				i(220014),	-- Nightmare Incursions: Ashenvale Mission XVI
+				i(220015),	-- Nightmare Incursions: Ashenvale Mission XVII
+				i(220016),	-- Nightmare Incursions: Ashenvale Mission XVIII
+			}),
 			i(219526, {	-- Mission Brief: Duskwood
 				i(219963),	-- Deputization Authorization: Duskwood Mission I
 				i(219965),	-- Deputization Authorization: Duskwood Mission II
@@ -1484,6 +1885,82 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				i(219980),	-- Nightmare Incursions: Duskwood Mission XVI
 				i(219981),	-- Nightmare Incursions: Duskwood Mission XVII
 				i(219982),	-- Nightmare Incursions: Duskwood Mission XVIII
+			}),
+			i(219775, {	-- Mission Brief: Feralas
+				i(220089),	-- Deputization Authorization: Feralas Mission I
+				i(220090),	-- Deputization Authorization: Feralas Mission II
+				i(220091),	-- Deputization Authorization: Feralas Mission III
+				i(220092),	-- Deputization Authorization: Feralas Mission IV
+				i(220093),	-- Deputization Authorization: Feralas Mission V
+				i(220094),	-- Deputization Authorization: Feralas Mission VI
+				i(220095),	-- Deputization Authorization: Feralas Mission VII
+				i(220096),	-- Deputization Authorization: Feralas Mission VIII
+				i(220097),	-- Deputization Authorization: Feralas Mission IX
+				i(220098),	-- Deputization Authorization: Feralas Mission X
+				i(220099),	-- Deputization Authorization: Feralas Mission XI
+				i(220100),	-- Deputization Authorization: Feralas Mission XII
+				i(220101),	-- Deputization Authorization: Feralas Mission XIII
+				i(220102),	-- Deputization Authorization: Feralas Mission XIV
+				i(220103),	-- Deputization Authorization: Feralas Mission XV
+				i(220104),	-- Deputization Authorization: Feralas Mission XVI
+				i(220105),	-- Deputization Authorization: Feralas Mission XVII
+				i(220106),	-- Deputization Authorization: Feralas Mission XVIII
+				i(220035),	-- Nightmare Incursions: Feralas Mission I
+				i(220036),	-- Nightmare Incursions: Feralas Mission II
+				i(220037),	-- Nightmare Incursions: Feralas Mission III
+				i(220038),	-- Nightmare Incursions: Feralas Mission IV
+				i(220039),	-- Nightmare Incursions: Feralas Mission V
+				i(220040),	-- Nightmare Incursions: Feralas Mission VI
+				i(220041),	-- Nightmare Incursions: Feralas Mission VII
+				i(220042),	-- Nightmare Incursions: Feralas Mission VIII
+				i(220043),	-- Nightmare Incursions: Feralas Mission IX
+				i(220044),	-- Nightmare Incursions: Feralas Mission X
+				i(220045),	-- Nightmare Incursions: Feralas Mission XI
+				i(220046),	-- Nightmare Incursions: Feralas Mission XII
+				i(220047),	-- Nightmare Incursions: Feralas Mission XIII
+				i(220048),	-- Nightmare Incursions: Feralas Mission XIV
+				i(220049),	-- Nightmare Incursions: Feralas Mission XV
+				i(220050),	-- Nightmare Incursions: Feralas Mission XVI
+				i(220051),	-- Nightmare Incursions: Feralas Mission XVII
+				i(220052),	-- Nightmare Incursions: Feralas Mission XVIII
+			}),
+			i(219774, {	-- Mission Brief: Hinterlands
+				i(220071),	-- Deputization Authorization: Hinterlands Mission I
+				i(220072),	-- Deputization Authorization: Hinterlands Mission II
+				i(220073),	-- Deputization Authorization: Hinterlands Mission III
+				i(220074),	-- Deputization Authorization: Hinterlands Mission IV
+				i(220075),	-- Deputization Authorization: Hinterlands Mission V
+				i(220076),	-- Deputization Authorization: Hinterlands Mission VI
+				i(220077),	-- Deputization Authorization: Hinterlands Mission VII
+				i(220078),	-- Deputization Authorization: Hinterlands Mission VIII
+				i(220079),	-- Deputization Authorization: Hinterlands Mission IX
+				i(220080),	-- Deputization Authorization: Hinterlands Mission X
+				i(220081),	-- Deputization Authorization: Hinterlands Mission XI
+				i(220082),	-- Deputization Authorization: Hinterlands Mission XII
+				i(220083),	-- Deputization Authorization: Hinterlands Mission XIII
+				i(220084),	-- Deputization Authorization: Hinterlands Mission XIV
+				i(220085),	-- Deputization Authorization: Hinterlands Mission XV
+				i(220086),	-- Deputization Authorization: Hinterlands Mission XVI
+				i(220087),	-- Deputization Authorization: Hinterlands Mission XVII
+				i(220088),	-- Deputization Authorization: Hinterlands Mission XVIII
+				i(220017),	-- Nightmare Incursions: Hinterlands Mission I
+				i(220018),	-- Nightmare Incursions: Hinterlands Mission II
+				i(220019),	-- Nightmare Incursions: Hinterlands Mission III
+				i(220020),	-- Nightmare Incursions: Hinterlands Mission IV
+				i(220021),	-- Nightmare Incursions: Hinterlands Mission V
+				i(220022),	-- Nightmare Incursions: Hinterlands Mission VI
+				i(220023),	-- Nightmare Incursions: Hinterlands Mission VII
+				i(220024),	-- Nightmare Incursions: Hinterlands Mission VIII
+				i(220025),	-- Nightmare Incursions: Hinterlands Mission IX
+				i(220026),	-- Nightmare Incursions: Hinterlands Mission X
+				i(220027),	-- Nightmare Incursions: Hinterlands Mission XI
+				i(220028),	-- Nightmare Incursions: Hinterlands Mission XII
+				i(220029),	-- Nightmare Incursions: Hinterlands Mission XIII
+				i(220030),	-- Nightmare Incursions: Hinterlands Mission XIV
+				i(220031),	-- Nightmare Incursions: Hinterlands Mission XV
+				i(220032),	-- Nightmare Incursions: Hinterlands Mission XVI
+				i(220033),	-- Nightmare Incursions: Hinterlands Mission XVII
+				i(220034),	-- Nightmare Incursions: Hinterlands Mission XVIII
 			}),
 		}),
 		n(COMMON_VENDOR_ITEMS, {
