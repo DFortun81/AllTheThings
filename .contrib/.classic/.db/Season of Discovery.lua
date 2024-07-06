@@ -1668,6 +1668,269 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					}),
 				},
 			}),
+			--[[
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220035 },	-- Nightmare Incursions: Feralas Mission I
+					{ "i", 220089 },	-- Deputization Authorization: Feralas Mission I
+				},
+				["groups"] = {
+					objective(1, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+					objective(2, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220036 },	-- Nightmare Incursions: Feralas Mission II
+					{ "i", 220090 },	-- Deputization Authorization: Feralas Mission II
+				},
+				["groups"] = {
+					objective(1, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+					objective(2, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220037 },	-- Nightmare Incursions: Feralas Mission III
+					{ "i", 220091 },	-- Deputization Authorization: Feralas Mission III
+				},
+				["groups"] = {
+					objective(1, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+					objective(2, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220038 },	-- Nightmare Incursions: Feralas Mission IV
+					{ "i", 220092 },	-- Deputization Authorization: Feralas Mission IV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: 
+						["provider"] = { "i",  },	-- Intelligence Report: 
+						["coord"] = { , FERALAS },
+						["cr"] = ,	-- 
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220039 },	-- Nightmare Incursions: Feralas Mission V
+					{ "i", 220093 },	-- Deputization Authorization: Feralas Mission V
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: 
+						["provider"] = { "i",  },	-- Intelligence Report: 
+						["coord"] = { , FERALAS },
+						["cr"] = ,	-- 
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220040 },	-- Nightmare Incursions: Feralas Mission VI
+					{ "i", 220094 },	-- Deputization Authorization: Feralas Mission VI
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: 
+						["provider"] = { "i",  },	-- Intelligence Report: 
+						["coord"] = { , FERALAS },
+						["cr"] = ,	-- 
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220041 },	-- Nightmare Incursions: Feralas Mission VII
+					{ "i", 220095 },	-- Deputization Authorization: Feralas Mission VII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220042 },	-- Nightmare Incursions: Feralas Mission VIII
+					{ "i", 220096 },	-- Deputization Authorization: Feralas Mission VIII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220043 },	-- Nightmare Incursions: Feralas Mission IX
+					{ "i", 220097 },	-- Deputization Authorization: Feralas Mission IX
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220044 },	-- Nightmare Incursions: Feralas Mission X
+					{ "i", 220098 },	-- Deputization Authorization: Feralas Mission X
+				},
+				["groups"] = {
+					objective(1, {	-- 0/10 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coords"] = {
+							{ , FERALAS },
+							{ , FERALAS },
+							{ , FERALAS },
+						},
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220045 },	-- Nightmare Incursions: Feralas Mission XI
+					{ "i", 220099 },	-- Deputization Authorization: Feralas Mission XI
+				},
+				["groups"] = {
+					objective(1, {	-- 0/10 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coords"] = {
+							{ , FERALAS },
+							{ , FERALAS },
+							{ , FERALAS },
+						},
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220046 },	-- Nightmare Incursions: Feralas Mission XII
+					{ "i", 220100 },	-- Deputization Authorization: Feralas Mission XII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/10 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coords"] = {
+							{ , FERALAS },
+							{ , FERALAS },
+							{ , FERALAS },
+						},
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220047 },	-- Nightmare Incursions: Feralas Mission XIII
+					{ "i", 220101 },	-- Deputization Authorization: Feralas Mission XIII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1  slain
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220048 },	-- Nightmare Incursions: Feralas Mission XIV
+					{ "i", 220102 },	-- Deputization Authorization: Feralas Mission XIV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1  slain
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220049 },	-- Nightmare Incursions: Feralas Mission XV
+					{ "i", 220103 },	-- Deputization Authorization: Feralas Mission XV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1  slain
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220050 },	-- Nightmare Incursions: Feralas Mission XVI
+					{ "i", 220104 },	-- Deputization Authorization: Feralas Mission XVI
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220051 },	-- Nightmare Incursions: Feralas Mission XVII
+					{ "i", 220105 },	-- Deputization Authorization: Feralas Mission XVII
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			feralasquest(, {	-- 
+				["providers"] = {
+					{ "i", 220052 },	-- Nightmare Incursions: Feralas Mission XVIII
+					{ "i", 220106 },	-- Deputization Authorization: Feralas Mission XVIII
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , FERALAS },
+					}),
+				},
+			}),
+			]]--
 			q(82068, {	-- Fight the Nightmare Incursions
 				["qgs"] = {
 					221480,	-- Field Captain Arunnel
@@ -1681,6 +1944,269 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["isDaily"] = true,
 				["lvl"] = 47,
 			}),
+			--[[
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220017 },	-- Nightmare Incursions: Hinterlands Mission I
+					{ "i", 220071 },	-- Deputization Authorization: Hinterlands Mission I
+				},
+				["groups"] = {
+					objective(1, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+					objective(2, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220018 },	-- Nightmare Incursions: Hinterlands Mission II
+					{ "i", 220072 },	-- Deputization Authorization: Hinterlands Mission II
+				},
+				["groups"] = {
+					objective(1, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+					objective(2, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220019 },	-- Nightmare Incursions: Hinterlands Mission III
+					{ "i", 220073 },	-- Deputization Authorization: Hinterlands Mission III
+				},
+				["groups"] = {
+					objective(1, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+					objective(2, {	-- 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220020 },	-- Nightmare Incursions: Hinterlands Mission IV
+					{ "i", 220074 },	-- Deputization Authorization: Hinterlands Mission IV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: 
+						["provider"] = { "i",  },	-- Intelligence Report: 
+						["coord"] = { , THE_HINTERLANDS },
+						["cr"] = ,	-- 
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220021 },	-- Nightmare Incursions: Hinterlands Mission V
+					{ "i", 220075 },	-- Deputization Authorization: Hinterlands Mission V
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: 
+						["provider"] = { "i",  },	-- Intelligence Report: 
+						["coord"] = { , THE_HINTERLANDS },
+						["cr"] = ,	-- 
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220022 },	-- Nightmare Incursions: Hinterlands Mission VI
+					{ "i", 220076 },	-- Deputization Authorization: Hinterlands Mission VI
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: 
+						["provider"] = { "i",  },	-- Intelligence Report: 
+						["coord"] = { , THE_HINTERLANDS },
+						["cr"] = ,	-- 
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220023 },	-- Nightmare Incursions: Hinterlands Mission VII
+					{ "i", 220077 },	-- Deputization Authorization: Hinterlands Mission VII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220024 },	-- Nightmare Incursions: Hinterlands Mission VIII
+					{ "i", 220078 },	-- Deputization Authorization: Hinterlands Mission VIII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220025 },	-- Nightmare Incursions: Hinterlands Mission IX
+					{ "i", 220079 },	-- Deputization Authorization: Hinterlands Mission IX
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220026 },	-- Nightmare Incursions: Hinterlands Mission X
+					{ "i", 220080 },	-- Deputization Authorization: Hinterlands Mission X
+				},
+				["groups"] = {
+					objective(1, {	-- 0/10 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coords"] = {
+							{ , THE_HINTERLANDS },
+							{ , THE_HINTERLANDS },
+							{ , THE_HINTERLANDS },
+						},
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220027 },	-- Nightmare Incursions: Hinterlands Mission XI
+					{ "i", 220081 },	-- Deputization Authorization: Hinterlands Mission XI
+				},
+				["groups"] = {
+					objective(1, {	-- 0/10 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coords"] = {
+							{ , THE_HINTERLANDS },
+							{ , THE_HINTERLANDS },
+							{ , THE_HINTERLANDS },
+						},
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220028 },	-- Nightmare Incursions: Hinterlands Mission XII
+					{ "i", 220082 },	-- Deputization Authorization: Hinterlands Mission XII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/10 
+						["providers"] = {
+							{ "i",  },	-- 
+							{ "o",  },	-- 
+						},
+						["coords"] = {
+							{ , THE_HINTERLANDS },
+							{ , THE_HINTERLANDS },
+							{ , THE_HINTERLANDS },
+						},
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220029 },	-- Nightmare Incursions: Hinterlands Mission XIII
+					{ "i", 220083 },	-- Deputization Authorization: Hinterlands Mission XIII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1  slain
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220030 },	-- Nightmare Incursions: Hinterlands Mission XIV
+					{ "i", 220084 },	-- Deputization Authorization: Hinterlands Mission XIV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1  slain
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220031 },	-- Nightmare Incursions: Hinterlands Mission XV
+					{ "i", 220085 },	-- Deputization Authorization: Hinterlands Mission XV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1  slain
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220032 },	-- Nightmare Incursions: Hinterlands Mission XVI
+					{ "i", 220086 },	-- Deputization Authorization: Hinterlands Mission XVI
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220033 },	-- Nightmare Incursions: Hinterlands Mission XVII
+					{ "i", 220087 },	-- Deputization Authorization: Hinterlands Mission XVII
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			hinterlandsquest(, {	-- 
+				["providers"] = {
+					{ "i", 220034 },	-- Nightmare Incursions: Hinterlands Mission XVIII
+					{ "i", 220088 },	-- Deputization Authorization: Hinterlands Mission XVIII
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue 
+						["provider"] = { "n",  },	-- 
+						["coord"] = { , THE_HINTERLANDS },
+					}),
+				},
+			}),
+			]]--
 			applyclassicphase(SOD_PHASE_FOUR, q(84013, {	-- More Starshells
 				["qg"] = 221479,	-- Field Captain Korlian
 				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
