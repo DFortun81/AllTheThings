@@ -2214,6 +2214,25 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["lvl"] = 25,
 			})),
 		}),
+		cl(HUNTER, {
+			applyclassicphase(SOD_PHASE_TWO, i(216770, {	-- Treatise on Aspect of the Viper
+				["recipeID"] = 415423,	-- Aspect of the Viper
+				["classes"] = { HUNTER },
+				["lvl"] = 25,
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, i(226401, {	-- Treatise on the Heart of the Lion
+				["recipeID"] = 409580,	-- Heart of the Lion
+				["classes"] = { HUNTER },
+				["lvl"] = 10,
+			})),
+		}),
+		cl(MAGE, {
+			applyclassicphase(SOD_PHASE_TWO, i(216740, {	-- Tome of Expanded Intellect
+				["recipeID"] = 436949,	-- Expanded Intellect
+				["classes"] = { MAGE },
+				["lvl"] = 25,
+			})),
+		}),
 		cl(PALADIN, {
 			applyclassicphase(SOD_PHASE_FOUR, i(226399, {	-- Testament of Avenging Wrath
 				["recipeID"] = 407788,	-- Avenging Wrath
