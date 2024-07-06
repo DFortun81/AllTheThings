@@ -92,7 +92,51 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				--["coord"] = { X, Y, HALLOWFALL },
 			}),
 			ach(40844),		-- Sojourner of Hallowfall (automated)
-			ach(40625),		-- The Missing Lynx (automated)
+			ach(40625, {	-- The Missing Lynx
+				-- TODO: Braghe please add coords for all the kitties :)
+				crit(68975, {	-- Magpie
+					--["coord"] = { 1, 1, HALLOWFALL },
+				}),
+				crit(68998, {	-- Evan
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(68999, {	-- Emery
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69000, {	-- Jinx
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69001, {	-- Moog
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69002, {	-- Iggy
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69003, {	-- Nightclaw
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69004, {	-- Purrlock
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69005, {	-- Shadowpouncer
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69006, {	-- Miral Murder-Mittens
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69007, {	-- Fuzzy
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69008, {	-- Furball
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69009, {	-- Dander
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+				crit(69010, {	-- Gobbo
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
+			}),
 			pvp(ach(40085)),	-- Tour of Duty: Hallowfall
 			ach(40848),		-- Treasures of Hallowfall (automated)
 		}),
