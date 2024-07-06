@@ -13,6 +13,13 @@ profession(POISONS, {
 					["recipeID"] = 26786,
 					["lvl"] = 68,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Atrophic Poison",
+					["recipeID"] = 439503,
+					["lvl"] = 60,
+				}),
+				-- #endif
 				-- #if CLASSIC
 				{
 					["name"] = "Blinding Powder",
@@ -117,6 +124,24 @@ profession(POISONS, {
 					["recipeID"] = 11400,
 					["lvl"] = 52,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Numbing Poison",
+					["recipeID"] = 439505,
+					["lvl"] = 60,
+				}),
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Occult Poison I",
+					["description"] = "This 'Occult Poison' might not be in the game. @Crieve if P4 rolls around and this isn't in the game.",
+					["recipeID"] = 458822,
+					["lvl"] = 60,
+				}),
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Sebacious Poison",
+					["recipeID"] = 439500,
+					["lvl"] = 60,
+				}),
+				-- #endif
 				{
 					["name"] = "Wound Poison",
 					["recipeID"] = 13220,

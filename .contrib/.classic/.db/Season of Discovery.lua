@@ -2194,6 +2194,126 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	applyclassicphase(SOD_PHASE_EIGHT, inst(754)),	-- Naxxramas
 }));
 
+-- World Drop Recipes
+root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
+	filter(RECIPES, {
+		cl(DRUID, {
+			applyclassicphase(SOD_PHASE_TWO, i(216764, {	-- Leaflet of Deeper Wilds
+				["recipeID"] = 436956,	-- Deeper Wilds
+				["classes"] = { DRUID },
+				["lvl"] = 25,
+			})),
+			applyclassicphase(SOD_PHASE_TWO, i(216771, {	-- Leaflet of Enhanced Restoration
+				["recipeID"] = 417123,	-- Enhanced Restoration
+				["classes"] = { DRUID },
+				["lvl"] = 25,
+			})),
+			applyclassicphase(SOD_PHASE_TWO, i(216767, {	-- Leaflet of Revive
+				["recipeID"] = 437138,	-- Revive
+				["classes"] = { DRUID },
+				["lvl"] = 25,
+			})),
+		}),
+		cl(PALADIN, {
+			applyclassicphase(SOD_PHASE_FOUR, i(226399, {	-- Testament of Avenging Wrath
+				["recipeID"] = 407788,	-- Avenging Wrath
+				["classes"] = { PALADIN },
+				["lvl"] = 25,
+			})),
+			applyclassicphase(SOD_PHASE_TWO, i(216768, {	-- Testament of Enhanced Blessings
+				["recipeID"] = 435984,	-- Enhanced Blessings
+				["classes"] = { PALADIN },
+				["lvl"] = 25,
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, i(226398, {	-- Testament of Martyrdom
+				["recipeID"] = 407798,	-- Seal of Martyrdom
+				["classes"] = { PALADIN },
+				["lvl"] = 10,
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, i(226400, {	-- Testament of the Exorcist
+				["recipeID"] = 415076,	-- Exorcist
+				["classes"] = { PALADIN },
+				["lvl"] = 10,
+			})),
+		}),
+		cl(PRIEST, {
+			applyclassicphase(SOD_PHASE_TWO, i(216744, {	-- Scroll of Increased Fortitude
+				["recipeID"] = 436951,	-- Increased Fortitude
+				["classes"] = { PRIEST },
+				["lvl"] = 25,
+			})),
+			applyclassicphase(SOD_PHASE_TWO, i(216745, {	-- Scroll of Shadowfiend
+				["recipeID"] = 401977,	-- Shadowfiend
+				["classes"] = { PRIEST },
+				["lvl"] = 25,
+			})),
+		}),
+		cl(ROGUE, {
+			applyclassicphase(SOD_PHASE_FOUR, i(226394, {	-- Manual of Atrophic Poison
+				["recipeID"] = 439503,	-- Atrophic Poison
+				["classes"] = { ROGUE },
+				["lvl"] = 60,
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, i(226395, {	-- Manual of Numbing Poison
+				["recipeID"] = 439505,	-- Numbing Poison
+				["classes"] = { ROGUE },
+				["lvl"] = 60,
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, i(226396, {	-- Manual of Occult Poison
+				["recipeID"] = 458822,	-- Occult Poison I
+				["classes"] = { ROGUE },
+				["lvl"] = 60,
+			})),
+			applyclassicphase(SOD_PHASE_TWO, i(216738, {	-- Manual of Redirect
+				["recipeID"] = 438040,	-- Redirect
+				["classes"] = { ROGUE },
+				["lvl"] = 25,
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, i(226397, {	-- Manual of Sebacious Poison
+				["recipeID"] = 439500,	-- Sebacious Poison
+				["classes"] = { ROGUE },
+				["lvl"] = 60,
+			})),
+		}),
+		cl(SHAMAN, {
+			applyclassicphase(SOD_PHASE_FOUR, i(226402, {	-- Revelation of Shamanistic Rage
+				["recipeID"] = 425336,	-- Shamanistic Rage
+				["classes"] = { SHAMAN },
+				["lvl"] = 10,
+			})),
+			applyclassicphase(SOD_PHASE_TWO, i(216769, {	-- Revelation of Totemic Projection
+				["recipeID"] = 437009,	-- Totemic Projection
+				["classes"] = { SHAMAN },
+				["lvl"] = 25,
+			})),
+		}),
+		cl(WARLOCK, {
+			applyclassicphase(SOD_PHASE_TWO, i(216748, {	-- Grimoire of Portal of Summoning
+				["recipeID"] = 437169,	-- Portal of Summoning
+				["classes"] = { WARLOCK },
+				["lvl"] = 25,
+			})),
+			applyclassicphase(SOD_PHASE_TWO, i(216747, {	-- Grimoire of Soul Harvesting
+				["recipeID"] = 437032,	-- Soul Harvesting
+				["classes"] = { WARLOCK },
+				["lvl"] = 25,
+			})),
+		}),
+		cl(WARRIOR, {
+			applyclassicphase(SOD_PHASE_TWO, i(216746, {	-- Handbook of Commanding Shout
+				["recipeID"] = 403215,	-- Commanding Shout
+				["classes"] = { WARRIOR },
+				["lvl"] = 25,
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, i(226403, {	-- Handbook of Meathook
+				["recipeID"] = 403228,	-- Meathook
+				["classes"] = { WARRIOR },
+				["lvl"] = 40,
+			})),
+		}),
+	}),
+}));
+
 root(ROOTS.NeverImplemented, {
 	applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCOVERY_HEADER, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 } }, {
 		i(211445),	-- Barbaric Recurve
