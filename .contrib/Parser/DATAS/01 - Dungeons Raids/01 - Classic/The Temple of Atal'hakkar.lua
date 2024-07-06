@@ -972,7 +972,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["description"] = "RIP Guzu <Demon>.\n\nGo watch 'The Fall of Guzu' by Hurricane on YouTube for context!",
 					}),
 					n(218624, {	-- Atal'alarion <Guardian of the Idol>
-						["description"] = "Atal'alarion has three main abilities.\n\nThe primary danger on this boss is the Pillars of Might stacking 5% damage buff. To remove this, use his Demolishing Smash to get knocked back into the pillars from Pillars of Might. The player bodies will then destroy the pillars and reduce the stacking damage buff. Spreading out around the boss helps to minimize the total movement required to destroy every pillar.\n\nBeyond the pillars mechanic, this is just a tank and spank boss.",
+						["description"] = "Atal'alarion has three main abilities.\n\nThe primary danger on this boss is the Pillars of Might stacking 5% damage buff. To remove this, use his Demolishing Smash to get knocked back into the pillars from Pillars of Might. The player bodies will then destroy the pillars and reduce the stacking damage buff. Spreading out around the boss helps to minimize the total movement required to destroy every pillar.",
 						["groups"] = {
 							i(221312),	-- Flask of Atal'ai Mojo
 							i(220636),	-- Atal'ai Blood Icon
@@ -1000,7 +1000,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(218819, {	-- Festering Rotslime
-						["description"] = "Festering Rotslime's strategy involves basically just kiting the boss through the corridor where he's located.\n\nTo do this, players should focus on continuously moving between Gunk casts, since this will leave poison pools on the floor that slow and deal damage. The Gunk must be cleansed as soon as possible to allow players to move.\n\nThe boss will gain speed from Slime Time throughout the fight, to stop this: kill the Atal'ai Slab, Atal'ai Mask, Atal'ai Candle, and Atal'ai Drum objects which are located along the corridor. Ideally, have the melee focus on this to avoid getting Devoured themselves.",
+						["description"] = "Kite the boss through the corridor.\n\nPlayers should focus on continuously moving between Gunk casts to avoid the poison pools. Gunk must be cleansed ASAP.\n\nThe boss will gain speed from Slime Time throughout the fight, to stop this: kill the Atal'ai Slab, Atal'ai Mask, Atal'ai Candle, and Atal'ai Drum objects which are located along the corridor. Ideally, have the melee focus on this to avoid getting Devoured themselves.",
 						["groups"] = {
 							i(221312),	-- Flask of Atal'ai Mojo
 							i(221021),	-- Nightmare Seed
@@ -1027,7 +1027,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(ATALAI_DEFENDERS, {
-						["description"] = "The Atal'ai Defenders are the third boss encounter in The Temple of Atal'Hakkar.\n\nGasher & Mijan's abilities are the most threatening.\n\nOnce killed, each boss will respawn as an undead version of itself. These can be handled very easily through hard CCs such as Shackle Undead and Freezing Trap.\n\nMake sure that everyone knows ahead of time to not multi-dot the undead adds at all or it will break their crowd control.",
+						["description"] = "The Atal'ai Defenders are the third boss encounter in The Temple of Atal'Hakkar.\n\nGasher & Mijan's abilities are the most threatening.\n\nOnce killed, each boss will respawn as an undead. Do not attack them, instead use Shackle Undead and Freezing Trap to CC them.",
 						["groups"] = {
 							n(221637, {	-- Gasher
 								["description"] = "|cffff0000Fervor|r can cause him to deal a lot of damage, focus him down fast; if needed, the tank can run away from Gasher while still in range of casters to minimize the damage taken if Gasher gets high stacks.\n\nSpinning Axes - Spawns spinning axes around him, this deals minor cleave damage.",
@@ -1072,7 +1072,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					n(220833, {	-- Dreamscythe
 						["provider"] = { "n", 220864 },	-- Weaver
-						["description"] = "This is technically a three phase encounter. The first two phases just involve fighting Dreamscythe solo up to 80% of the boss's health, followed up by only fighting Weaver up to 60% health. That's when the real encounter begins and you'll have to fight both at the same time. At this point make sure you have two tanks in order to minimize the tank damage, as well as the possible mess caused by Acid Breath.\n\nThe main strategy involves having the tanks pointing the bosses outwards from the middle to avoid killing the raid with Acid Breath.\n\nOtherwise the entire raid can just stand in the middle and DPS the bosses throughout the fight. Making sure that the entire raid is properly stacked will be very helpful for the tanks.\n\nFor positioning, you really want to avoid getting knocked back into both the outside poison pool which surrounds the boss arena, as well as the middle pit which will cause you to die from fall damage by either of the wing buffet abilities. To avoid the pit you should either stand next to it so that you get knocked back parallel to it; or stand right against it to get knocked over to the opposite side of it. Doing either, depending on what's easier for you at that moment, will gain you uptime on casting.\n\nIdeally, have all of the damage dealers focusing a single boss as the bosses share health pools. This way you'll be focusing a fully debuffed target.",
+						["description"] = "The bosses cast Acid Breath, so you should two tank this fight. DPS Dreamscythe to 80% and Weaver to 60%. Avoid facing either boss into the raid.\n\nFor positioning, you really want to avoid getting knocked back into both the outside poison pool which surrounds the boss arena, as well as the middle pit which will cause you to die from fall damage by either of the wing buffet abilities. To avoid the pit you should either stand next to it so that you get knocked back parallel to it; or stand right against it to get knocked over to the opposite side of it. Doing either, depending on what's easier for you at that moment, will gain you uptime on casting.\n\nIdeally, have all of the damage dealers focusing a single boss as the bosses share health pools. This way you'll be focusing a fully debuffed target.",
 						["groups"] = {
 							i(221021),	-- Nightmare Seed
 							i(220636),	-- Atal'ai Blood Icon
@@ -1143,7 +1143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						},
 					}),
 					n(218571, {	-- Shade of Eranikus
-						["description"] = "",
+						["description"] = "The boss casts Corrosive Breath and has a tail sweep. Tanks should swap after each breath.\n\nDispell Lethargic Poison. Interupt Bellowing Roar!\n\nWhen the boss casts Deep Slumber, you'll want everyone to stack close to the boss so that when the boss casts Waking Nightmare, everyone can jump into the pool and to get afflicted and then move out asap to avoid getting CC'd again.\n\nAt 70%, the boss will summon two Lumbering Dreamwalkers. Kill them and interupt their Deep Slumber casts. Kill any whelplings that spawn.\n\nAt 40%, he'll repeat this and then summon two Nightmare Scalebanes. These cast Acid Rain that can be interupted, so the raid should spread out to avoid this.",
 						["groups"] = {
 							i(221021),	-- Nightmare Seed
 							i(220637),	-- Atal'ai Ritual Token
