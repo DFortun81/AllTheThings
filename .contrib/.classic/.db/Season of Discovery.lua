@@ -288,9 +288,11 @@ local OnTooltip_EMERALD_WARDENS = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		addRepInfo(tooltipInfo, reputation, "Defeat Incursion Bosses", 200, ]] .. EXALTED .. [[);
-		addRepInfo(tooltipInfo, reputation, "Complete Incursion Quests", 75, ]] .. EXALTED .. [[);
-		if app.GameBuildVersion >= 11503 then addRepInfo(tooltipInfo, reputation, "Complete Resource Quests", 100, ]] .. EXALTED .. [[); end
+		addRepInfo(tooltipInfo, reputation, "Defeat Incursion Dragon Bosses", 200, ]] .. EXALTED .. [[);
+		addRepInfo(tooltipInfo, reputation, "Incursion Kill Quests (Feralas & Hinterlands)", 150, ]] .. EXALTED .. [[);
+		addRepInfo(tooltipInfo, reputation, "Incursion Quests (Feralas & Hinterlands)", 100, ]] .. EXALTED .. [[);
+		addRepInfo(tooltipInfo, reputation, "Incursion Quests (Duskwood & Ashenvale)", 75, ]] .. EXALTED .. [[);
+		if app.GameBuildVersion >= 11503 then addRepInfo(tooltipInfo, reputation, "Incursion Resource Quests", 100, ]] .. EXALTED .. [[); end
 		
 		local fight = t.fight;
 		if not fight then
@@ -1668,269 +1670,275 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					}),
 				},
 			}),
-			--[[
-			feralasquest(, {	-- 
+			feralasquest(81855, {	-- Feralas Mission I: Defeat Children of Cenarius [150 Rep]
 				["providers"] = {
 					{ "i", 220035 },	-- Nightmare Incursions: Feralas Mission I
 					{ "i", 220089 },	-- Deputization Authorization: Feralas Mission I
 				},
 				["groups"] = {
-					objective(1, {	-- 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(1, {	-- 0/10 Lost Daughter slain
+						["provider"] = { "n", 221375 },	-- Lost Daughter
+						["coord"] = { 45.6, 22.2, FERALAS },
 					}),
-					objective(2, {	-- 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(2, {	-- 0/10 Vengeful Son slain
+						["provider"] = { "n", 221377 },	-- Vengeful Son
+						["coord"] = { 46.4, 14.4, FERALAS },
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81856, {	-- Feralas Mission II: Defeat Harpies [150 Rep]
 				["providers"] = {
 					{ "i", 220036 },	-- Nightmare Incursions: Feralas Mission II
 					{ "i", 220090 },	-- Deputization Authorization: Feralas Mission II
 				},
 				["groups"] = {
-					objective(1, {	-- 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(1, {	-- 0/10 Dreamspring Roguefeather slain
+						["provider"] = { "n", 221370 },	-- Dreamspring Roguefeather
+						["coord"] = { 39.8, 12.6, FERALAS },
 					}),
-					objective(2, {	-- 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(2, {	-- 0/10 Dreamspring Stormcaller slain
+						["provider"] = { "n", 221371 },	-- Dreamspring Stormcaller
+						["coord"] = { 39.0, 13.4, FERALAS },
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81857, {	-- Feralas Mission III: Defeat Dragonkin [150 Rep]
 				["providers"] = {
 					{ "i", 220037 },	-- Nightmare Incursions: Feralas Mission III
 					{ "i", 220091 },	-- Deputization Authorization: Feralas Mission III
 				},
 				["groups"] = {
-					objective(1, {	-- 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(1, {	-- 0/10 Frenzied Whelp slain
+						["provider"] = { "n", 221369 },	-- Frenzied Whelp
+						["coord"] = { 51.6, 19.6, FERALAS },
 					}),
-					objective(2, {	-- 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(2, {	-- 0/3 Wyrmkin Berserker slain
+						["provider"] = { "n", 221367 },	-- Wyrmkin Berserker
+						["coord"] = { 51.6, 14.8, FERALAS },
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81858, {	-- Feralas Mission IV: Dragon Intelligence [100 Rep]
 				["providers"] = {
 					{ "i", 220038 },	-- Nightmare Incursions: Feralas Mission IV
 					{ "i", 220092 },	-- Deputization Authorization: Feralas Mission IV
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 Intelligence Report: 
-						["provider"] = { "i",  },	-- Intelligence Report: 
-						["coord"] = { , FERALAS },
-						["cr"] = ,	-- 
+					objective(1, {	-- 0/1 Intelligence Report: Oneiros
+						["provider"] = { "i", 219957 },	-- Intelligence Report: Oneiros
+						["coord"] = { 50.6, 19.8, FERALAS },
+						["cr"] = 221401,	-- Dreamwarden Sheldryn
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81859, {	-- Feralas Mission V: Cenarion Intelligence [100 Rep]
 				["providers"] = {
 					{ "i", 220039 },	-- Nightmare Incursions: Feralas Mission V
 					{ "i", 220093 },	-- Deputization Authorization: Feralas Mission V
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 Intelligence Report: 
-						["provider"] = { "i",  },	-- Intelligence Report: 
-						["coord"] = { , FERALAS },
-						["cr"] = ,	-- 
+					objective(1, {	-- 0/1 Intelligence Report: Twin Colossals
+						["provider"] = { "i", 219958 },	-- Intelligence Report: Twin Colossals
+						["coord"] = { 47.0, 21.6, FERALAS },
+						["cr"] = 221402,	-- Dreamwarden Gorlas
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81860, {	-- Feralas Mission VI: Harpy Intelligence [100 Rep]
 				["providers"] = {
 					{ "i", 220040 },	-- Nightmare Incursions: Feralas Mission VI
 					{ "i", 220094 },	-- Deputization Authorization: Feralas Mission VI
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 Intelligence Report: 
-						["provider"] = { "i",  },	-- Intelligence Report: 
-						["coord"] = { , FERALAS },
-						["cr"] = ,	-- 
+					objective(1, {	-- 0/1 Intelligence Report: Ruins of Ravenwind
+						["provider"] = { "i", 219959 },	-- Intelligence Report: Ruins of Ravenwind
+						["coord"] = { 37.6, 12.0, FERALAS },
+						["cr"] = 221404,	-- Dreamwarden Anadelle
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81861, {	-- Feralas Mission VII: Recover Moonglow Dragonegg [100 Rep]
 				["providers"] = {
 					{ "i", 220041 },	-- Nightmare Incursions: Feralas Mission VII
 					{ "i", 220095 },	-- Deputization Authorization: Feralas Mission VII
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 
+					objective(1, {	-- 0/1 Moonglow Dragonegg
 						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
+							{ "i", 219520 },	-- Moonglow Dragonegg
+							{ "o", 441310 },	-- Moonglow Dragonegg
 						},
-						["coord"] = { , FERALAS },
+						["coord"] = { 50.7, 17.2, FERALAS },
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81863, {	-- Feralas Mission VIII: Recover Keeper's Notes [100 Rep]
 				["providers"] = {
 					{ "i", 220042 },	-- Nightmare Incursions: Feralas Mission VIII
 					{ "i", 220096 },	-- Deputization Authorization: Feralas Mission VIII
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 
+					objective(1, {	-- 0/1 Mad Keeper's Notes
 						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
+							{ "i", 219519 },	-- Mad Keeper's Notes
+							{ "o", 441312 },	-- Mad Keeper's Notes
 						},
-						["coord"] = { , FERALAS },
+						["coord"] = { 45.0, 20.0, FERALAS },
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81864, {	-- Feralas Mission IX: Recover Harpy Screed [100 Rep]
 				["providers"] = {
 					{ "i", 220043 },	-- Nightmare Incursions: Feralas Mission IX
 					{ "i", 220097 },	-- Deputization Authorization: Feralas Mission IX
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 
+					objective(1, {	-- 0/1 Harpy Screed
 						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
+							{ "i", 219518 },	-- Harpy Screed
+							{ "o", 441314 },	-- Harpy Screed
 						},
-						["coord"] = { , FERALAS },
+						["coord"] = { 38.6, 15.7, FERALAS },
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81865, {	-- Feralas Mission X: Moonroot [100 Rep]
 				["providers"] = {
 					{ "i", 220044 },	-- Nightmare Incursions: Feralas Mission X
 					{ "i", 220098 },	-- Deputization Authorization: Feralas Mission X
 				},
+				["requireSkill"] = HERBALISM,
+				["learnedAt"] = 250,
 				["groups"] = {
-					objective(1, {	-- 0/10 
+					objective(1, {	-- 0/10 Moonroot
 						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
+							{ "i", 219514 },	-- Moonroot
+							{ "o", 439810 },	-- Moonroot
 						},
 						["coords"] = {
-							{ , FERALAS },
-							{ , FERALAS },
-							{ , FERALAS },
+							{ 40.5, 11.5, FERALAS },
+							{ 44.7, 23.1, FERALAS },
+							{ 53.6, 17.5, FERALAS },
+							{ 54.9, 6.9, FERALAS },
 						},
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81866, {	-- Feralas Mission XI: Greater Moonstone [100 Rep]
 				["providers"] = {
 					{ "i", 220045 },	-- Nightmare Incursions: Feralas Mission XI
 					{ "i", 220099 },	-- Deputization Authorization: Feralas Mission XI
 				},
+				["requireSkill"] = MINING,
+				["learnedAt"] = 250,
 				["groups"] = {
-					objective(1, {	-- 0/10 
+					objective(1, {	-- 0/10 Greater Moonstone
 						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
+							{ "i", 219515 },	-- Greater Moonstone
+							{ "o", 439815 },	-- Greater Moonstone Formation
 						},
 						["coords"] = {
-							{ , FERALAS },
-							{ , FERALAS },
-							{ , FERALAS },
+							{ 40.8, 9.9, FERALAS },
+							{ 37.7, 20.5, FERALAS },
+							{ 54.0, 13.5, FERALAS },
 						},
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81867, {	-- Feralas Mission XII: Greater Moondragon Scales [100 Rep]
 				["providers"] = {
 					{ "i", 220046 },	-- Nightmare Incursions: Feralas Mission XII
 					{ "i", 220100 },	-- Deputization Authorization: Feralas Mission XII
 				},
+				["requireSkill"] = SKINNING,
+				["learnedAt"] = 250,
 				["groups"] = {
-					objective(1, {	-- 0/10 
-						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
-						},
+					objective(1, {	-- 0/10 Moondragon Scale
+						["provider"] = { "i", 219517 },	-- Moondragon Scale
 						["coords"] = {
-							{ , FERALAS },
-							{ , FERALAS },
-							{ , FERALAS },
+							{ 46.6, 12.8, FERALAS },
+							{ 51.0, 24.0, FERALAS },
+							{ 53.4, 14.6, FERALAS },
+						},
+						["crs"] = {
+							221369,	-- Frenzied Whelp
+							221367,	-- Wyrmkin Berserker
 						},
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81868, {	-- Feralas Mission XIII: Defeat Tyrannikus [200 Rep]
 				["providers"] = {
 					{ "i", 220047 },	-- Nightmare Incursions: Feralas Mission XIII
 					{ "i", 220101 },	-- Deputization Authorization: Feralas Mission XIII
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1  slain
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(1, {	-- 0/1 Tyrannikus slain
+						["provider"] = { "n", 221393 },	-- Tyrannikus
+						["coord"] = { 53.6, 17.0, FERALAS },
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81870, {	-- Feralas Mission XIV: Defeat Alondrius [150 Rep]
 				["providers"] = {
 					{ "i", 220048 },	-- Nightmare Incursions: Feralas Mission XIV
 					{ "i", 220102 },	-- Deputization Authorization: Feralas Mission XIV
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1  slain
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(1, {	-- 0/1 Alondrius slain
+						["provider"] = { "n", 221389 },	-- Alondrius <Keeper of the Nightmare>
+						["coord"] = { 47.6, 15.6, FERALAS },
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81871, {	-- Feralas Mission XV: Defeat Slirena [150 Rep]
 				["providers"] = {
 					{ "i", 220049 },	-- Nightmare Incursions: Feralas Mission XV
 					{ "i", 220103 },	-- Deputization Authorization: Feralas Mission XV
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1  slain
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(1, {	-- 0/1 Slirena slain
+						["provider"] = { "n", 221391 },	-- Slirena <Harpy Queen>
+						["coord"] = { 39.6, 13.8, FERALAS },
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81872, {	-- Feralas Mission XVI: Rescue Mellias Earthtender [100 Rep]
 				["providers"] = {
 					{ "i", 220050 },	-- Nightmare Incursions: Feralas Mission XVI
 					{ "i", 220104 },	-- Deputization Authorization: Feralas Mission XVI
 				},
 				["groups"] = {
-					objective(1, {	-- Rescue 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(1, {	-- Rescue Mellias Earthtender
+						["provider"] = { "n", 221395 },	-- Mellias Earthtender <Druid of the Claw>
+						["coord"] = { 49.6, 15.5, FERALAS },
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81873, {	-- Feralas Mission XVII: Rescue Nerene Brooksinger [100 Rep]
 				["providers"] = {
 					{ "i", 220051 },	-- Nightmare Incursions: Feralas Mission XVII
 					{ "i", 220105 },	-- Deputization Authorization: Feralas Mission XVII
 				},
 				["groups"] = {
-					objective(1, {	-- Rescue 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(1, {	-- Rescue Nerene Brooksinger
+						["provider"] = { "n", 221398 },	-- Nerene Brooksinger <Druid of the Claw>
+						["coord"] = { 45, 16, FERALAS },
 					}),
 				},
 			}),
-			feralasquest(, {	-- 
+			feralasquest(81874, {	-- Feralas Mission XVIII: Rescue Jamniss Treemender [100 Rep]
 				["providers"] = {
 					{ "i", 220052 },	-- Nightmare Incursions: Feralas Mission XVIII
 					{ "i", 220106 },	-- Deputization Authorization: Feralas Mission XVIII
 				},
 				["groups"] = {
-					objective(1, {	-- Rescue 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , FERALAS },
+					objective(1, {	-- Rescue Jamniss Treemender
+						["provider"] = { "n", 221399 },	-- Jamniss Treemender <Druid of the Claw>
+						["coord"] = { 40.6, 8.2, FERALAS },
 					}),
 				},
 			}),
-			]]--
 			q(82068, {	-- Fight the Nightmare Incursions
 				["qgs"] = {
 					221480,	-- Field Captain Arunnel
@@ -1951,11 +1959,11 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					{ "i", 220071 },	-- Deputization Authorization: Hinterlands Mission I
 				},
 				["groups"] = {
-					objective(1, {	-- 
+					objective(1, {	-- 0/10  slain
 						["provider"] = { "n",  },	-- 
 						["coord"] = { , THE_HINTERLANDS },
 					}),
-					objective(2, {	-- 
+					objective(2, {	-- 0/10  slain
 						["provider"] = { "n",  },	-- 
 						["coord"] = { , THE_HINTERLANDS },
 					}),
@@ -1967,11 +1975,11 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					{ "i", 220072 },	-- Deputization Authorization: Hinterlands Mission II
 				},
 				["groups"] = {
-					objective(1, {	-- 
+					objective(1, {	-- 0/10  slain
 						["provider"] = { "n",  },	-- 
 						["coord"] = { , THE_HINTERLANDS },
 					}),
-					objective(2, {	-- 
+					objective(2, {	-- 0/10  slain
 						["provider"] = { "n",  },	-- 
 						["coord"] = { , THE_HINTERLANDS },
 					}),
@@ -2082,6 +2090,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					{ "i", 220026 },	-- Nightmare Incursions: Hinterlands Mission X
 					{ "i", 220080 },	-- Deputization Authorization: Hinterlands Mission X
 				},
+				["requireSkill"] = HERBALISM,
+				["learnedAt"] = 250,
 				["groups"] = {
 					objective(1, {	-- 0/10 
 						["providers"] = {
@@ -2101,6 +2111,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					{ "i", 220027 },	-- Nightmare Incursions: Hinterlands Mission XI
 					{ "i", 220081 },	-- Deputization Authorization: Hinterlands Mission XI
 				},
+				["requireSkill"] = MINING,
+				["learnedAt"] = 250,
 				["groups"] = {
 					objective(1, {	-- 0/10 
 						["providers"] = {
@@ -2120,6 +2132,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					{ "i", 220028 },	-- Nightmare Incursions: Hinterlands Mission XII
 					{ "i", 220082 },	-- Deputization Authorization: Hinterlands Mission XII
 				},
+				["requireSkill"] = SKINNING,
+				["learnedAt"] = 250,
 				["groups"] = {
 					objective(1, {	-- 0/10 
 						["providers"] = {
