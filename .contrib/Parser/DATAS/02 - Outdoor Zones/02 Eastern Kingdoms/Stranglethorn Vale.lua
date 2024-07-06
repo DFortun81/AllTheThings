@@ -84,7 +84,6 @@ local OnTooltipForBootyBay = [[function(t, tooltipInfo)
 	end
 end]];
 -- #if SEASON_OF_DISCOVERY
--- Item Database of blood moon items.
 local Items = ItemDBConditional;
 local SODItem = function(itemID, f)
 	if not f then error("ERROR: Missing 'f' for item " .. itemID); end
@@ -108,22 +107,18 @@ SODItem(221456, ONE_HANDED_SWORDS);	-- Eclipsed Sanguine Saber
 SODItem(216497, ONE_HANDED_SWORDS);	-- Exsanguinar
 SODItem(216506, TWO_HANDED_SWORDS);	-- Bloodlight Avenger's Edge
 SODItem(220173, TWO_HANDED_SWORDS);	-- Parasomnia
-
 SODItem(216498, HELD_IN_OFF_HAND);	-- Enchanted Sanguine Grimoire
 SODItem(221447, HELD_IN_OFF_HAND);	-- Ritualist's Bloodmoon Grimoire
 SODItem(216501, SHIELDS);			-- Bloodstorm Barrier
 SODItem(221468, SHIELDS);	-- Wall of Whispers
-
 SODItem(216516, BOWS);	-- Bloodlash Bow
 SODItem(221450, BOWS);	-- Gurubashi Pit Fighter's Bow
 SODItem(221451, CROSSBOWS);	-- Bloodthirst Crossbow
 SODItem(221469, THROWN);	-- Headhunter's Barbed Spear
-
 SODItem(216621, CLOAKS);	-- Blooddrenched Drape
 SODItem(216620, CLOAKS);	-- Bloodrot Cloak
 SODItem(216623, CLOAKS);	-- Cape of Hemostasis
 SODItem(216622, CLOAKS);	-- Coagulated Cloak
-
 SODItem(221453, FINGER_F);	-- Band of Boiling Blood
 SODItem(216518, FINGER_F);	-- Blood Covenant Seal
 SODItem(216510, FINGER_F);	-- Blood Resonance Circle
@@ -138,7 +133,6 @@ SODItem(216519, FINGER_F);	-- Sanguine Shadow Band
 SODItem(221459, FINGER_F);	-- Seal of the Sacrificed
 SODItem(221458, FINGER_F);	-- Shadowy Band of Victory
 SODItem(216507, FINGER_F);	-- Umbral Bloodseal
-
 SODItem(216615, TRINKET_F);	-- Ancestral Bloodstorm Beacon
 SODItem(221463, TRINKET_F);	-- Ancestral Voodoo Doll
 SODItem(216500, TRINKET_F);	-- Bloodbonded Grove Talisman
@@ -150,10 +144,8 @@ SODItem(216509, TRINKET_F);	-- Infernal Pact Essence
 SODItem(216517, TRINKET_F);	-- Sanguine Sanctuary
 SODItem(221448, TRINKET_F);	-- Talisman of the Corrupted Grove
 SODItem(216513, TRINKET_F);	-- Tigerblood Talisman
-
 SODItem(221457, LIBRAMS);	-- Libram of Draconic Destruction
 SODItem(221464, RELICS_F);	-- Totem of Fiery Precision
-
 SODItem(216515, BAGS);	-- Sanguine Ammo Pouch
 SODItem(216514, BAGS);	-- Sanguine Quiver
 

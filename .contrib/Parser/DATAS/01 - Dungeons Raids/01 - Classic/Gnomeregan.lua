@@ -36,7 +36,6 @@ SetItemFilter(213542, HELD_IN_OFF_HAND);	-- The Necro-Gnomicon
 SetItemFilter(213412, SHIELDS);	-- Dielectric Safety Shield
 SetItemFilter(213351, SHIELDS);	-- Irradiated Tower Shield
 
--- BOWS
 SetItemFilter(213355, CROSSBOWS);	-- Falco's Sting
 SetItemFilter(213293, GUNS);	-- Hi-tech Supergun Mk.VII
 SetItemFilter(213356, GUNS);	-- Thermaplugg's Custom Blaster
@@ -139,15 +138,7 @@ SetItemFilter(213350, TRINKET_F);	-- Wirdal's Hardened Core
 SetItemFilter(216490, IDOLS);		-- Idol of Wrath
 SetItemFilter(215435, LIBRAMS);		-- Libram of Benediction
 SetItemFilter(215436, RELICS_F);	-- Totem of Invigorating Flame
--- BAGS
 
-local SOD_DISABLE_NORMAL_MODE = [[function(t)
-	if getmetatable(AllTheThingsSettings.Unobtainable).__index[1605] then
-		local function recurse(o) o.u = 2; if o.g then for i,p in ipairs(o.g) do recurse(p); end end end
-		recurse(t);
-		t.OnUpdate = nil;
-	end
-end]];
 -- #endif
 local MATRIX_PUNCHOGRAPH_A = o(142345, {	-- Matrix Punchograph 3005-A
 	["description"] = "This is located outside of the instance just to the north of both the elevator or the transporter.",
@@ -238,7 +229,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["cr"] = 6212,	-- Dark Iron Agent
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_TWO, i(216634)),	-- GG12-082 Cartridge Fuse
+				applyclassicphase(SOD_PHASE_TWO, i(216634, { ["timeline"] = { "added 1.15.1", REMOVED_2_0_1 } })),	-- GG12-082 Cartridge Fuse
 				-- #endif
 				i(9490, {	-- Gizmotron Megachopper
 					["crs"] = {
@@ -262,19 +253,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(9308),	-- Grime-Encrusted Object
 				i(9326, {	-- Grime-Encrusted Ring
 					-- #if SEASON_OF_DISCOVERY
-					["OnUpdate"] = SOD_DISABLE_NORMAL_MODE,
+					["timeline"] = { "removed 1.15.1" },
 					-- #endif
 					["cr"] = 6212,	-- Dark Iron Agent
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, i(216661, {	-- Grime-Encrusted Ring
+					["timeline"] = { "added 1.15.1", REMOVED_2_0_1 },
 					["crs"] = {
 						6212,	-- Dark Iron Agent
 						6228,	-- Dark Iron Ambassador
 					},
 				})),
-				applyclassicphase(SOD_PHASE_TWO, i(216661)),	-- Grime-Encrusted Salvage
-				applyclassicphase(SOD_PHASE_TWO, i(215430)),	-- Gnomeregan Fallout
+				applyclassicphase(SOD_PHASE_TWO, i(216661, { ["timeline"] = { "added 1.15.1", REMOVED_2_0_1 } })),	-- Grime-Encrusted Salvage
+				applyclassicphase(SOD_PHASE_TWO, i(215430, { ["timeline"] = { "added 1.15.1", REMOVED_2_0_1 } })),	-- Gnomeregan Fallout
 				-- #endif
 				i(9489, {	-- Gyromatic Icemaker
 					["crs"] = {
@@ -435,9 +427,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			MATRIX_PUNCHOGRAPH_C,
 			MATRIX_PUNCHOGRAPH_D,
 			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				["OnUpdate"] = SOD_DISABLE_NORMAL_MODE,
-				["groups"] = {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownTimelineEventSelf("removed 1.15.1", {
 			-- #endif
 			n(QUESTS, {
 				q(2904, {	-- A Fine Mess
@@ -1086,8 +1076,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			}}),
-			applyclassicphase(SOD_PHASE_TWO, d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 }, }, {
+			})),
+			applyclassicphase(SOD_PHASE_TWO, d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDownSelf({ ["timeline"] = { "added 1.15.1", REMOVED_2_0_1 }, }, {
 				["description"] = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
 				["difficulties"] = { DIFFICULTY.SOD.PLAYER10 },
 				["lvl"] = 40,

@@ -129,13 +129,6 @@ SetItemFilter(209575, RELICS_F);	-- Carved Driftwood Icon
 SetItemFilter(211491, BAGS);	-- Bottomless Murloc Skin Bag
 SetItemFilter(211492, BAGS);	-- Kelris's Satchel
 
-local SOD_DISABLE_NORMAL_MODE = [[function(t)
-	if getmetatable(AllTheThingsSettings.Unobtainable).__index[1605] then
-		local function recurse(o) o.u = 2; if o.g then for i,p in ipairs(o.g) do recurse(p); end end end
-		recurse(t);
-		t.OnUpdate = nil;
-	end
-end]];
 -- #endif
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(227, {	-- Blackfathom Deeps
@@ -181,9 +174,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
-			d(DIFFICULTY.DUNGEON.NORMAL, {
-				["OnUpdate"] = SOD_DISABLE_NORMAL_MODE,
-				["groups"] = {
+			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownTimelineEventSelf("removed 1.15.0", {
 			-- #endif
 			n(QUESTS, {
 				q(6564, {	-- Allegiance to the Old Gods (1/2)
@@ -840,8 +831,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
-			}}),
-			applyclassicphase(SOD_PHASE_ONE, d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDownSelf({ ["timeline"] = { REMOVED_2_0_1 }, }, {
+			})),
+			applyclassicphase(SOD_PHASE_ONE, d(DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL, bubbleDownSelf({ ["timeline"] = { "added 1.15.0", REMOVED_2_0_1 }, }, {
 				["description"] = "This instance was converted from a normal difficulty dungeon into a 10-player raid instance.",
 				["difficulties"] = { DIFFICULTY.SOD.PLAYER10 },
 				["lvl"] = 25,
