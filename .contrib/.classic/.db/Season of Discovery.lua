@@ -155,10 +155,6 @@ SetItemFilter(221316, SHIRTS);	-- Premo's Poise-Demanding Uniform (Phase 3)
 local classHeader = function(classID, g)
 	return cl(classID, bubbleDown({ ["classes"] = { classID } }, g));
 end
-local emeraldchip = function(cost, item)	-- Assign an Emerald Chip cost to an item.
-	applycost(item, { "i", 219927, cost });
-	return item;
-end
 local OnTooltipFor_ACA_SDL = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
@@ -221,6 +217,57 @@ local DUROTAR_SUPPLY_AND_LOGISTICS_VENDORS = {	-- Durotar Supply and Logistics
 		{ 64.6, 38.2, UNDERCITY },
 	},
 };
+
+-- Nightmare Incursions
+local emeraldchip = function(cost, item)	-- Assign an Emerald Chip cost to an item.
+	applycost(item, { "i", 219927, cost });
+	return item;
+end
+local questShortcut = function(qg, coord, brief, lvl, id, t)
+	local groups = t.groups or t.g;
+	if not groups then
+		groups = {};
+		t.groups = groups;
+	end
+	local providers = t.providers;
+	if not providers then
+		providers = {};
+		t.providers = providers;
+		local provider = t.provider;
+		if provider then
+			table.insert(providers, provider);
+			t.provider = nil;
+		else
+			provider = t.qg;
+			if provider then
+				table.insert(providers, { "n", provider });
+				t.qg = nil;
+			end
+		end
+	end
+	table.insert(providers, { "n", qg });
+	table.insert(groups, i(brief));
+	t.maxReputation = { 2641, EXALTED };	-- Emerald Wardens
+	t.isDaily = true;
+	t.lvl = lvl;
+	return q(id, t);
+end
+local duskwoodquest = function(id, t)
+	return questShortcut(
+		221471,	-- Field Captain Palandar
+		{ 45.6, 51.2, DUSKWOOD },
+		219526,	-- Mission Brief: Duskwood
+		23, id, t);
+end
+local OnTooltip_EMERALD_WARDENS = [[function(t, tooltipInfo)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		addRepInfo(tooltipInfo, reputation, "Duskwood: Defeat Ylanthrius", 200, ]] .. EXALTED .. [[);
+		addRepInfo(tooltipInfo, reputation, "Duskwood: Complete Quests", 75, ]] .. EXALTED .. [[);
+	end
+end]];
+
 
 local SEASON_OF_DISCOVERY_HEADER = createHeader({	-- Season of Discovery
 	readable = "Season of Discovery",
@@ -1058,14 +1105,315 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	}), {
 		n(FACTIONS, {
 			faction(2641, {	-- Emerald Wardens
+				["OnTooltip"] = OnTooltip_EMERALD_WARDENS,
 				["maps"] = { ASHENVALE, DUSKWOOD, FERALAS, THE_HINTERLANDS },
 			}),
 		}),
 		n(QUESTS, {
-			
+			duskwoodquest(81730, {	-- Duskwood Mission I: Defeat Worgen [75 Rep]
+				["providers"] = {
+					{ "i", 219962 },	-- Nightmare Incursions: Duskwood Mission I
+					{ "i", 219963 },	-- Deputization Authorization: Duskwood Mission I
+				},
+				["groups"] = {
+					objective(1, {	-- 0/10 Nightmare Runner slain
+						["provider"] = { "n", 221171 },	-- Nightmare Runner
+						["coord"] = { 63.2, 72.2, DUSKWOOD },
+					}),
+					objective(2, {	-- 0/10 Nightmare Weaver slain
+						["provider"] = { "n", 221172 },	-- Nightmare Weaver
+						["coord"] = { 65.8, 66.2, DUSKWOOD },
+					}),
+				},
+			}),
+			duskwoodquest(81731, {	-- Duskwood Mission II: Defeat Ogres [75 Rep]
+				["providers"] = {
+					{ "i", 219966 },	-- Nightmare Incursions: Duskwood Mission II
+					{ "i", 219965 },	-- Deputization Authorization: Duskwood Mission II
+				},
+				["groups"] = {
+					objective(1, {	-- 0/3 Deranged Ogre slain
+						["provider"] = { "n", 221174 },	-- Deranged Ogre
+						["coord"] = { 37.6, 71.6, DUSKWOOD },
+					}),
+					objective(2, {	-- 0/3 Demented Fire Weaver slain
+						["provider"] = { "n", 221175 },	-- Demented Fire Weaver
+						["coord"] = { 34.6, 77.8, DUSKWOOD },
+					}),
+				},
+			}),
+			duskwoodquest(81732, {	-- Duskwood Mission III: Defeat Dragonkin [75 Rep]
+				["providers"] = {
+					{ "i", 219967 },	-- Nightmare Incursions: Duskwood Mission III
+					{ "i", 219983 },	-- Deputization Authorization: Duskwood Mission III
+				},
+				["groups"] = {
+					objective(1, {	-- 0/3 Wyrmkin Terrorwalker slain
+						["provider"] = { "n", 221200 },	-- Wyrmkin Terrorwalker
+						["coord"] = { 49.0, 71.8, DUSKWOOD },
+					}),
+					objective(2, {	-- 0/10 Nightterror Whelp slain
+						["provider"] = { "n", 221176 },	-- Nightterror Whelp
+						["coord"] = { 49.6, 75.2, DUSKWOOD },
+					}),
+				},
+			}),
+			duskwoodquest(81733, {	-- Duskwood Mission IV: Ogre Intelligence [75 Rep]
+				["providers"] = {
+					{ "i", 219968 },	-- Nightmare Incursions: Duskwood Mission IV
+					{ "i", 219984 },	-- Deputization Authorization: Duskwood Mission IV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: Vul'gol Ogre Mound
+						["provider"] = { "i", 219776 },	-- Intelligence Report: Vul'gol Ogre Mound
+						["coord"] = { 36.6, 83.8, DUSKWOOD },
+						["cr"] = 221222,	-- Dreamwarden Thalinar
+					}),
+				},
+			}),
+			duskwoodquest(81734, {	-- Duskwood Mission V: Worgen Intelligence [75 Rep]
+				["providers"] = {
+					{ "i", 219969 },	-- Nightmare Incursions: Duskwood Mission V
+					{ "i", 219985 },	-- Deputization Authorization: Duskwood Mission V
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: Rotting Orchard
+						["provider"] = { "i", 219778 },	-- Intelligence Report: Rotting Orchard
+						["coord"] = { 66.2, 76.0, DUSKWOOD },
+						["cr"] = 221221,	-- Dreamwarden Dorilar
+					}),
+				},
+			}),
+			duskwoodquest(81735, {	-- Duskwood Mission VI: Dragon Intelligence [75 Rep]
+				["providers"] = {
+					{ "i", 219970 },	-- Nightmare Incursions: Duskwood Mission VI
+					{ "i", 219986 },	-- Deputization Authorization: Duskwood Mission VI
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Intelligence Report: Yorgen Farmstead
+						["provider"] = { "i", 219803 },	-- Intelligence Report: Yorgen Farmstead
+						["coord"] = { 50.6, 77.0, DUSKWOOD },
+						["cr"] = 221220,	-- Dreamwarden Amalia
+					}),
+				},
+			}),
+			duskwoodquest(81736, {	-- Duskwood Mission VII: Recover Shadowscythe [75 Rep]
+				["providers"] = {
+					{ "i", 219971 },	-- Nightmare Incursions: Duskwood Mission VII
+					{ "i", 219987 },	-- Deputization Authorization: Duskwood Mission VII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Shadowscythe
+						["providers"] = {
+							{ "i", 219404 },	-- Shadowscythe
+							{ "o", 441114 },	-- Mysterious Box
+						},
+						["coord"] = { 65.7, 67.5, DUSKWOOD },
+					}),
+				},
+			}),
+			duskwoodquest(81737, {	-- Duskwood Mission VIII: Recover Ogre Magi Text [75 Rep]
+				["providers"] = {
+					{ "i", 219972 },	-- Nightmare Incursions: Duskwood Mission VIII
+					{ "i", 219988 },	-- Deputization Authorization: Duskwood Mission VIII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Ogre Magi Text
+						["providers"] = {
+							{ "i", 219405 },	-- Ogre Magi Text
+							{ "o", 441113 },	-- Ogre Magi Text
+						},
+						["coord"] = { 35.7, 80.1, DUSKWOOD },
+					}),
+				},
+			}),
+			duskwoodquest(81738, {	-- Duskwood Mission IX: Recover Dragon Egg [75 Rep]
+				["providers"] = {
+					{ "i", 219973 },	-- Nightmare Incursions: Duskwood Mission IX
+					{ "i", 219989 },	-- Deputization Authorization: Duskwood Mission IX
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Unhatched Green Dragon Egg
+						["providers"] = {
+							{ "i", 219406 },	-- Unhatched Green Dragon Egg
+							{ "o", 441119 },	-- Unhatched Green Dragon Egg
+						},
+						["coord"] = { 49.5, 72.5, DUSKWOOD },
+					}),
+				},
+			}),
+			duskwoodquest(81739, {	-- Duskwood Mission X: Nightmare Moss [75 Rep]
+				["providers"] = {
+					{ "i", 219974 },	-- Nightmare Incursions: Duskwood Mission X
+					{ "i", 219990 },	-- Deputization Authorization: Duskwood Mission X
+				},
+				["requireSkill"] = HERBALISM,
+				["learnedAt"] = 125,
+				["groups"] = {
+					objective(1, {	-- 0/10 Nightmare Moss
+						["providers"] = {
+							{ "i", 219399 },	-- Nightmare Moss
+							{ "o", 439557 },	-- Nightmare Moss
+						},
+						["coords"] = {
+							{ 47.8, 42.9, DUSKWOOD },
+							{ 61.6, 75.8, DUSKWOOD },
+							{ 35.1, 72.0, DUSKWOOD },
+						},
+					}),
+				},
+			}),
+			duskwoodquest(81740, {	-- Duskwood Mission XI: Cold Iron Ore [75 Rep]
+				["providers"] = {
+					{ "i", 219975 },	-- Nightmare Incursions: Duskwood Mission XI
+					{ "i", 219991 },	-- Deputization Authorization: Duskwood Mission XI
+				},
+				["requireSkill"] = MINING,
+				["learnedAt"] = 125,
+				["groups"] = {
+					objective(1, {	-- 0/10 Cold Iron Ore
+						["providers"] = {
+							{ "i", 219401 },	-- Cold Iron Ore
+							{ "o", 439558 },	-- Cold Iron Deposit
+						},
+						["coords"] = {
+							{ 42.5, 34.6, DUSKWOOD },
+							{ 67.6, 78.1, DUSKWOOD },
+							{ 35.5, 68.0, DUSKWOOD },
+						},
+					}),
+				},
+			}),
+			duskwoodquest(81741, {	-- Duskwood Mission XII: Dream-Touched Dragonscale [75 Rep]
+				["providers"] = {
+					{ "i", 219976 },	-- Nightmare Incursions: Duskwood Mission XII
+					{ "i", 219992 },	-- Deputization Authorization: Duskwood Mission XII
+				},
+				["requireSkill"] = SKINNING,
+				["learnedAt"] = 125,
+				["groups"] = {
+					objective(1, {	-- 0/10 Dream-Touched Dragonscale
+						["provider"] = { "i", 219402 },	-- Dream-Touched Dragonscale
+						["coord"] = { 48.8, 74.4, DUSKWOOD },
+						["crs"] = {
+							221176,	-- Nightterror Whelp
+							221200,	-- Wyrmkin Terrorwalker
+						},
+					}),
+				},
+			}),
+			duskwoodquest(81742, {	-- Duskwood Mission XIII: Defeat Ylanthrius [200 Rep]
+				["providers"] = {
+					{ "i", 219977 },	-- Nightmare Incursions: Duskwood Mission XIII
+					{ "i", 219993 },	-- Deputization Authorization: Duskwood Mission XIII
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Ylanthrius slain
+						["provider"] = { "n", 221204 },	-- Ylanthrius
+						["coord"] = { 48.2, 73.4, DUSKWOOD },
+					}),
+				},
+			}),
+			duskwoodquest(81743, {	-- Duskwood Mission XIV: Defeat Vvarc'zul [75 Rep]
+				["providers"] = {
+					{ "i", 219978 },	-- Nightmare Incursions: Duskwood Mission XIV
+					{ "i", 219994 },	-- Deputization Authorization: Duskwood Mission XIV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Vvarc'zul slain
+						["provider"] = { "n", 221206 },	-- Vvarc' Zul <King of The Woods>
+						["coord"] = { 37.0, 83.4, DUSKWOOD },
+					}),
+				},
+			}),
+			duskwoodquest(81744, {	-- Duskwood Mission XV: Defeat Amokarok [75 Rep]
+				["providers"] = {
+					{ "i", 219979 },	-- Nightmare Incursions: Duskwood Mission XV
+					{ "i", 219995 },	-- Deputization Authorization: Duskwood Mission XV
+				},
+				["groups"] = {
+					objective(1, {	-- 0/1 Amokarok slain
+						["provider"] = { "n", 221207 },	-- Amokarok <Lord of the Hunt>
+						["coord"] = { 66.2, 76.6, DUSKWOOD },
+					}),
+				},
+			}),
+			duskwoodquest(81745, {	-- Duskwood Mission XVI: Rescue Kroll Mountainshade [75 Rep]
+				["providers"] = {
+					{ "i", 219980 },	-- Nightmare Incursions: Duskwood Mission XVI
+					{ "i", 219996 },	-- Deputization Authorization: Duskwood Mission XVI
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue Kroll Mountainshade
+						["provider"] = { "n", 221210 },	-- Kroll Mountainshade <Druid of the Claw>
+						["coord"] = { 66.0, 69.2, DUSKWOOD },
+					}),
+				},
+			}),
+			duskwoodquest(81746, {	-- Duskwood Mission XVII: Rescue Alara Grovemender [75 Rep]
+				["providers"] = {
+					{ "i", 219981 },	-- Nightmare Incursions: Duskwood Mission XVII
+					{ "i", 219997 },	-- Deputization Authorization: Duskwood Mission XVII
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue Alara Grovemender
+						["provider"] = { "n", 221215 },	-- Alara Grovemender <Druid of the Claw>
+						["coord"] = { 49.15, 77.55, DUSKWOOD },
+					}),
+				},
+			}),
+			duskwoodquest(81747, {	-- Duskwood Mission XVIII: Rescue Elenora Marshwalker [75 Rep]
+				["providers"] = {
+					{ "i", 219982 },	-- Nightmare Incursions: Duskwood Mission XVIII
+					{ "i", 219998 },	-- Deputization Authorization: Duskwood Mission XVIII
+				},
+				["groups"] = {
+					objective(1, {	-- Rescue Elenora Marshwalker
+						["provider"] = { "n", 221216 },	-- Elenora Marshwalker
+						["coord"] = { 32.39, 69.48, DUSKWOOD },
+					}),
+				},
+			}),
 		}),
 		n(REWARDS, {
-		
+			i(219526, {	-- Mission Brief: Duskwood
+				i(219963),	-- Deputization Authorization: Duskwood Mission I
+				i(219965),	-- Deputization Authorization: Duskwood Mission II
+				i(219983),	-- Deputization Authorization: Duskwood Mission III
+				i(219984),	-- Deputization Authorization: Duskwood Mission IV
+				i(219985),	-- Deputization Authorization: Duskwood Mission V
+				i(219986),	-- Deputization Authorization: Duskwood Mission VI
+				i(219987),	-- Deputization Authorization: Duskwood Mission VII
+				i(219988),	-- Deputization Authorization: Duskwood Mission VIII
+				i(219989),	-- Deputization Authorization: Duskwood Mission IX
+				i(219990),	-- Deputization Authorization: Duskwood Mission X
+				i(219991),	-- Deputization Authorization: Duskwood Mission XI
+				i(219992),	-- Deputization Authorization: Duskwood Mission XII
+				i(219993),	-- Deputization Authorization: Duskwood Mission XIII
+				i(219994),	-- Deputization Authorization: Duskwood Mission XIV
+				i(219995),	-- Deputization Authorization: Duskwood Mission XV
+				i(219996),	-- Deputization Authorization: Duskwood Mission XVI
+				i(219997),	-- Deputization Authorization: Duskwood Mission XVII
+				i(219998),	-- Deputization Authorization: Duskwood Mission XVIII
+				i(219962),	-- Nightmare Incursions: Duskwood Mission I
+				i(219966),	-- Nightmare Incursions: Duskwood Mission II
+				i(219967),	-- Nightmare Incursions: Duskwood Mission III
+				i(219968),	-- Nightmare Incursions: Duskwood Mission IV
+				i(219969),	-- Nightmare Incursions: Duskwood Mission V
+				i(219970),	-- Nightmare Incursions: Duskwood Mission VI
+				i(219971),	-- Nightmare Incursions: Duskwood Mission VII
+				i(219972),	-- Nightmare Incursions: Duskwood Mission VIII
+				i(219973),	-- Nightmare Incursions: Duskwood Mission IX
+				i(219974),	-- Nightmare Incursions: Duskwood Mission X
+				i(219975),	-- Nightmare Incursions: Duskwood Mission XI
+				i(219976),	-- Nightmare Incursions: Duskwood Mission XII
+				i(219977),	-- Nightmare Incursions: Duskwood Mission XIII
+				i(219978),	-- Nightmare Incursions: Duskwood Mission XIV
+				i(219979),	-- Nightmare Incursions: Duskwood Mission XV
+				i(219980),	-- Nightmare Incursions: Duskwood Mission XVI
+				i(219981),	-- Nightmare Incursions: Duskwood Mission XVII
+				i(219982),	-- Nightmare Incursions: Duskwood Mission XVIII
+			}),
 		}),
 		n(COMMON_VENDOR_ITEMS, {
 			["crs"] = {

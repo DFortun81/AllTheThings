@@ -1535,6 +1535,11 @@ _.ObjectNames = {
 	[424075] = "Quadrangulation Beacon 002",
 	[424076] = "Quadrangulation Beacon 003",
 	[424077] = "Quadrangulation Beacon 004",
+	[439557] = "Nightmare Moss",
+	[439558] = "Cold Iron Deposit",
+	[441113] = "Ogre Magi Text",
+	[441114] = "Mysterious Box",
+	[441119] = "Unhatched Green Dragon Egg",
 	[100000000] = "Archaeologist's Cart",
 	[100000001] = "Unlit Torch",
 }
@@ -2569,6 +2574,11 @@ _.ObjectModels = {
 	[424075] = 197768,
 	[424076] = 197768,
 	[424077] = 197768,
+	[439557] = 219463,
+	[439558] = 219532,
+	[441113] = 198021,
+	[441114] = 196976,
+	[441119] = 200964,
 	[100000001] = 201129,
 }
 
@@ -3340,6 +3350,11 @@ localize(_.ObjectNames, {
 	[422483] = "Der Wiederverwertungsmat 9000",
 	[424074] = "Quadrangulationssignalgeber 001",
 	[424075] = "Quadrangulationssignalgeber 002",
+	[439557] = "Alptraummoos",
+	[439558] = "Kalteisenvorkommen",
+	[441113] = "Ogermagiertext",
+	[441114] = "Geheimnisvolle Kiste",
+	[441119] = "Ungeschlüpftes grünes Drachenei",
 	[100000001] = "Nicht angezündete Fackel",
 });
 end
@@ -4072,6 +4087,8 @@ localize(_.ObjectNames, {
 	[415614] = "Fórmulas misteriosas",
 	[424074] = "Baliza de cuadrangulación 001",
 	[424075] = "Baliza de cuadrangulación 002",
+	[439557] = "Musgo de la Pesadilla",
+	[439558] = "Depósito de hierro frío",
 	[100000001] = "Antorcha apagada",
 });
 end
@@ -4850,6 +4867,11 @@ localize(_.ObjectNames, {
 	[422483] = "Recycle-o-Matic 9000",
 	[424074] = "Balise de quandrangulation 001",
 	[424075] = "Balise de quandrangulation 002",
+	[439557] = "Mousse des cauchemars",
+	[439558] = "Gisement de fer froid",
+	[441113] = "Texte de l’ogre magi",
+	[441114] = "Boîte mystérieuse",
+	[441119] = "Œuf de dragon vert non-éclos",
 	[100000001] = "Torche éteinte",
 });
 end
@@ -5956,6 +5978,7 @@ localize(_.ObjectNames, {
 	[424074] = "사각 측량 신호기 001",
 	[424075] = "사각 측량 신호기 002",
 	[424077] = "사각 측량 신호기 004",
+	[439557] = "악몽 이끼",
 	[100000001] = "불을 붙이지 않은 횃불",
 });
 end
@@ -6596,6 +6619,11 @@ localize(_.ObjectNames, {
 	[406736] = "Estoque Perdido",
 	[408014] = "Tomo Gnômico",
 	[424074] = "Sinalizador de Quadrangulação 001",
+	[439557] = "Musgo do Pesadelo",
+	[439558] = "Depósito de Ferro Frio",
+	[441113] = "Texto de Magus Ogro",
+	[441114] = "Caixa Misteriosa",
+	[441119] = "Ovo de Dragão Verde Choco",
 	[100000001] = "Tocha Apagada",
 });
 end
