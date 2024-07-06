@@ -136,9 +136,9 @@ SetItemFilter(213348, TRINKET_F);	-- Gyromatic Experiment 420b
 SetItemFilter(213347, TRINKET_F);	-- Miniaturized Combustion Chamber
 SetItemFilter(215437, TRINKET_F);	-- Trogg Transfigurator 3000
 SetItemFilter(213350, TRINKET_F);	-- Wirdal's Hardened Core
-SetItemFilter(216490, IDOLS);	-- Idol of Wrath
-SetItemFilter(215435, LIBRAMS);	-- Libram of Benediction
-SetItemFilter(215436, TOTEMS);	-- Totem of Invigorating Flame
+SetItemFilter(216490, IDOLS);		-- Idol of Wrath
+SetItemFilter(215435, LIBRAMS);		-- Libram of Benediction
+SetItemFilter(215436, RELICS_F);	-- Totem of Invigorating Flame
 -- BAGS
 
 local SOD_DISABLE_NORMAL_MODE = [[function(t)

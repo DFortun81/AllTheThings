@@ -84,6 +84,79 @@ local OnTooltipForBootyBay = [[function(t, tooltipInfo)
 	end
 end]];
 -- #if SEASON_OF_DISCOVERY
+-- Item Database of blood moon items.
+local Items = ItemDBConditional;
+local SODItem = function(itemID, f)
+	if not f then error("ERROR: Missing 'f' for item " .. itemID); end
+	local item = { ["b"] = 1, ["f"] = f };
+	Items[itemID] = item;
+	return item;
+end
+SODItem(216522, DAGGERS);	-- Blood Spattered Stiletto
+SODItem(216520, DAGGERS);	-- Bloodharvest Blade
+SODItem(221460, DAGGERS);	-- Gurubashi Backstabber
+SODItem(216521, FIST_WEAPONS);	-- Swift Sanguine Strikers
+SODItem(216496, ONE_HANDED_MACES);	-- Sanguine Skullcrusher
+SODItem(216499, TWO_HANDED_MACES);	-- Bloodbark Crusher
+SODItem(216502, TWO_HANDED_MACES);	-- Bloodstorm War Totem
+SODItem(221465, TWO_HANDED_MACES);	-- Corrupted Smashbringer
+SODItem(221446, TWO_HANDED_MACES);	-- Ritualist's Hammer
+SODItem(216495, TWO_HANDED_MACES);	-- Sanguine Crusher
+SODItem(221462, ONE_HANDED_SWORDS);	-- Bloodied Sword of Speed
+SODItem(216504, ONE_HANDED_SWORDS);	-- Eclipsed Bloodlight Saber
+SODItem(221456, ONE_HANDED_SWORDS);	-- Eclipsed Sanguine Saber
+SODItem(216497, ONE_HANDED_SWORDS);	-- Exsanguinar
+SODItem(216506, TWO_HANDED_SWORDS);	-- Bloodlight Avenger's Edge
+SODItem(220173, TWO_HANDED_SWORDS);	-- Parasomnia
+
+SODItem(216498, HELD_IN_OFF_HAND);	-- Enchanted Sanguine Grimoire
+SODItem(221447, HELD_IN_OFF_HAND);	-- Ritualist's Bloodmoon Grimoire
+SODItem(216501, SHIELDS);			-- Bloodstorm Barrier
+SODItem(221468, SHIELDS);	-- Wall of Whispers
+
+SODItem(216516, BOWS);	-- Bloodlash Bow
+SODItem(221450, BOWS);	-- Gurubashi Pit Fighter's Bow
+SODItem(221451, CROSSBOWS);	-- Bloodthirst Crossbow
+SODItem(221469, THROWN);	-- Headhunter's Barbed Spear
+
+SODItem(216621, CLOAKS);	-- Blooddrenched Drape
+SODItem(216620, CLOAKS);	-- Bloodrot Cloak
+SODItem(216623, CLOAKS);	-- Cape of Hemostasis
+SODItem(216622, CLOAKS);	-- Coagulated Cloak
+
+SODItem(221453, FINGER_F);	-- Band of Boiling Blood
+SODItem(216518, FINGER_F);	-- Blood Covenant Seal
+SODItem(216510, FINGER_F);	-- Blood Resonance Circle
+SODItem(221452, FINGER_F);	-- Bloodfocused Arcane Band
+SODItem(216511, FINGER_F);	-- Emberblood Seal
+SODItem(221467, FINGER_F);	-- Eye of the Bloodmoon
+SODItem(221454, FINGER_F);	-- Glacial Blood Band
+SODItem(216508, FINGER_F);	-- Infernal Bloodcoil Band
+SODItem(221466, FINGER_F);	-- Loop of Burning Blood
+SODItem(216512, FINGER_F);	-- Loop of Chilled Veins
+SODItem(216519, FINGER_F);	-- Sanguine Shadow Band
+SODItem(221459, FINGER_F);	-- Seal of the Sacrificed
+SODItem(221458, FINGER_F);	-- Shadowy Band of Victory
+SODItem(216507, FINGER_F);	-- Umbral Bloodseal
+
+SODItem(216615, TRINKET_F);	-- Ancestral Bloodstorm Beacon
+SODItem(221463, TRINKET_F);	-- Ancestral Voodoo Doll
+SODItem(216500, TRINKET_F);	-- Bloodbonded Grove Talisman
+SODItem(216505, TRINKET_F);	-- Bloodlight Crusader's Radiance
+SODItem(216607, TRINKET_F);	-- Bloodlight Offering
+SODItem(221455, TRINKET_F);	-- Bloodlight Reverence
+SODItem(216503, TRINKET_F);	-- Bloodstorm Jewel
+SODItem(216509, TRINKET_F);	-- Infernal Pact Essence
+SODItem(216517, TRINKET_F);	-- Sanguine Sanctuary
+SODItem(221448, TRINKET_F);	-- Talisman of the Corrupted Grove
+SODItem(216513, TRINKET_F);	-- Tigerblood Talisman
+
+SODItem(221457, LIBRAMS);	-- Libram of Draconic Destruction
+SODItem(221464, RELICS_F);	-- Totem of Fiery Precision
+
+SODItem(216515, BAGS);	-- Sanguine Ammo Pouch
+SODItem(216514, BAGS);	-- Sanguine Quiver
+
 bloodcoin_c = function(cost, item)	-- Assign a Copper Blood Coin cost to an item.
 	applycost(item, { "i", 213168, cost });
 	return item;
@@ -2811,14 +2884,112 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_TWO, pvp(n(218115, {	-- Mai'zin <Gurubashi Bloodchanger>
 					["coord"] = { 31.2, 48.4, STRANGLETHORN_VALE },
+					["lvl"] = 40,
 					["groups"] = {
-						massacrecoin_s(1, i(213169)),	-- Silver Blood Coin
-						massacrecoin_g(1, i(213170)),	-- Gold Blood Coin
+						applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(1, i(213169))),	-- Silver Blood Coin
+						applyclassicphase(SOD_PHASE_THREE, massacrecoin_g(1, i(213170))),	-- Gold Blood Coin
+						bloodcoin_g(1, i(216972, {	-- Satchel of Silver Blood Coins
+							-- TODO: Check if this is still there.
+							["sym"] = {{ "select","itemID", 213169 }},	-- Silver Blood Coin
+						})),
+						bloodcoin_s(1, i(216971, {	-- Satchel of Copper Blood Coins
+							-- TODO: Check if this is still there.
+							["sym"] = {{ "select","itemID", 213168 }},	-- Copper Blood Coin
+						})),
+						applyclassicphase(SOD_PHASE_THREE, massacrecoin_g(1, i(221368, {	-- Satchel of Silver Massacre Coins
+							["sym"] = {{ "select","itemID", 221365 }},	-- Silver Massacre Coin
+						}))),
+						applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(1, i(221367, {	-- Satchel of Copper Massacre Coins
+							["sym"] = {{ "select","itemID", 221364 }},	-- Copper Massacre Coin
+						}))),
+						applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(1, i(223283))),	-- Bloodstained Commendation
+						bloodcoin_c(25, i(216914, {	-- Bloodstained Commendation / Tarnished Commendation
+							["timeline"] = { "removed 1.15.2" },
+						})),
 						bloodcoin_s(1, i(216491)),	-- Shipment of Stranglethorn Lumber
 						bloodcoin_g(1, i(216570)),	-- Reins of the Golden Sabercat
 						bloodcoin_g(1, i(216492)),	-- Whistle of the Mottled Blood Raptor
-						bloodcoin_g(1, i(216972, {	-- Satchel of Silver Blood Coins
-							["sym"] = {{ "select","itemID", 213169 }},	-- Silver Blood Coin
+						
+						-- Phase 2
+						bloodcoin_s(2, i(216621)),	-- Blooddrenched Drape
+						bloodcoin_s(2, i(216620)),	-- Bloodrot Cloak
+						bloodcoin_s(2, i(216623)),	-- Cape of Hemostasis
+						bloodcoin_s(2, i(216622)),	-- Coagulated Cloak
+						
+						-- Class Items (Blood Harvest)
+						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(220173, {	-- Parasomnia
+							["classes"] = { WARRIOR, PALADIN },
+							["lvl"] = 50,
+						}))),
+						cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221446, { ["lvl"] = 50 }))),	-- Ritualist's Hammer
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221447, { ["lvl"] = 50 }))),	-- Ritualist's Bloodmoon Grimoire
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221448, { ["lvl"] = 50 }))),	-- Talisman of the Corrupted Grove
+							bloodcoin_s(15, i(216499)),	-- Bloodbark Crusher
+							bloodcoin_s(5, i(216498)),	-- Enchanted Sanguine Grimoire
+							bloodcoin_s(5, i(216500)),	-- Bloodbonded Grove Talisman
+						})),
+						cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221451, { ["lvl"] = 50 }))),	-- Bloodthirst Crossbow
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221450, { ["lvl"] = 50 }))),	-- Gurubashi Pit Fighter's Bow
+							bloodcoin_s(5, i(216516)),	-- Bloodlash Bow
+							bloodcoin_s(5, i(216513)),	-- Tigerblood Talisman
+							bloodcoin_s(3, i(216515)),	-- Sanguine Ammo Pouch
+							bloodcoin_s(3, i(216514)),	-- Sanguine Quiver
+						})),
+						cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221453, { ["lvl"] = 50 }))),	-- Band of Boiling Blood
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221452, { ["lvl"] = 50 }))),	-- Bloodfocused Arcane Band
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221454, { ["lvl"] = 50 }))),	-- Glacial Blood Band
+							bloodcoin_s(5, i(216510)),	-- Blood Resonance Circle
+							bloodcoin_s(5, i(216511)),	-- Emberblood Seal
+							bloodcoin_s(5, i(216512)),	-- Loop of Chilled Veins
+						})),
+						cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221456, { ["lvl"] = 50 }))),	-- Eclipsed Sanguine Saber
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221457, { ["lvl"] = 50 }))),	-- Libram of Draconic Destruction
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221455, { ["lvl"] = 50 }))),	-- Bloodlight Reverence
+							bloodcoin_s(15, i(216506)),	-- Bloodlight Avenger's Edge
+							bloodcoin_s(15, i(216504)),	-- Eclipsed Bloodlight Saber
+							bloodcoin_s(5, i(216505)),	-- Bloodlight Crusader's Radiance
+							bloodcoin_s(5, i(216607)),	-- Bloodlight Offering
+						})),
+						cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221459, { ["lvl"] = 50 }))),	-- Seal of the Sacrificed
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221458, { ["lvl"] = 50 }))),	-- Shadowy Band of Victory
+							bloodcoin_s(5, i(216518)),	-- Blood Covenant Seal
+							bloodcoin_s(5, i(216517)),	-- Sanguine Sanctuary
+							bloodcoin_s(5, i(216519)),	-- Sanguine Shadow Band
+						})),
+						cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221462, { ["lvl"] = 50 }))),	-- Bloodied Sword of Speed
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221460, { ["lvl"] = 50 }))),	-- Gurubashi Backstabber
+							bloodcoin_s(10, i(216520)),	-- Bloodharvest Blade
+							bloodcoin_s(5, i(216522)),	-- Blood Spattered Stiletto
+							bloodcoin_s(5, i(216521)),	-- Swift Sanguine Strikers
+						})),
+						cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221465, { ["lvl"] = 50 }))),	-- Corrupted Smashbringer
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221464, { ["lvl"] = 50 }))),	-- Totem of Fiery Precision
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221463, { ["lvl"] = 50 }))),	-- Ancestral Voodoo Doll
+							bloodcoin_s(15, i(216502)),	-- Bloodstorm War Totem
+							bloodcoin_s(5, i(216501)),	-- Bloodstorm Barrier
+							bloodcoin_s(5, i(216615)),	-- Ancestral Bloodstorm Beacon
+							bloodcoin_s(5, i(216503)),	-- Bloodstorm Jewel
+						})),
+						cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221467, { ["lvl"] = 50 }))),	-- Eye of the Bloodmoon
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221466, { ["lvl"] = 50 }))),	-- Loop of Burning Blood
+							bloodcoin_s(5, i(216508)),	-- Infernal Bloodcoil Band
+							bloodcoin_s(5, i(216507)),	-- Umbral Bloodseal
+							bloodcoin_s(5, i(216509)),	-- Infernal Pact Essence
+						})),
+						cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(221469, { ["lvl"] = 50 }))),	-- Headhunter's Barbed Spear
+							applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(15, i(221468, { ["lvl"] = 50 }))),	-- Wall of Whispers
+							bloodcoin_s(15, i(216497)),	-- Exsanguinar
+							bloodcoin_s(15, i(216495)),	-- Sanguine Crusher
+							bloodcoin_s(10, i(216496)),	-- Sanguine Skullcrusher
 						})),
 					},
 				}))),

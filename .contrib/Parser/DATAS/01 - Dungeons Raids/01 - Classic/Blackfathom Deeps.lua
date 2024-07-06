@@ -123,8 +123,8 @@ SetItemFilter(209816, TRINKET_F);	-- Fetish of Mischief
 SetItemFilter(211450, TRINKET_F);	-- Invoker's Void Pearl
 SetItemFilter(209576, TRINKET_F);	-- Mind-Expanding Mushroom
 
-SetItemFilter(209574, LIBRAMS);	-- Discarded Tenets of the Silver Hand
-SetItemFilter(209575, TOTEMS);	-- Carved Driftwood Icon
+SetItemFilter(209574, LIBRAMS);		-- Discarded Tenets of the Silver Hand
+SetItemFilter(209575, RELICS_F);	-- Carved Driftwood Icon
 
 SetItemFilter(211491, BAGS);	-- Bottomless Murloc Skin Bag
 SetItemFilter(211492, BAGS);	-- Kelris's Satchel
