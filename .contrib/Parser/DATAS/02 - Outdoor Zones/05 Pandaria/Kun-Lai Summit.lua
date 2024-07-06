@@ -477,6 +477,17 @@ root(ROOTS.Zones, {
 							30569,	-- Trouble on the Farmstead (A)
 							30570,	-- Trouble on the Farmstead (H)
 						},
+						["groups"] = {
+							o_repeated({
+								i(80227),	-- Root Vegetable (QI!)
+								o(211017),	-- Root Vegetable
+								o(211018),	-- Root Vegetable
+								o(211019),	-- Root Vegetable
+							}),
+							o(211023, {	-- Cast Iron Pot
+								i(80230),	-- Cast Iron Pot (QI!)
+							}),
+						},
 					}),
 					q(30746, {	-- A Fair Trade
 						["coord"] = { 42.4, 69.6, KUN_LAI_SUMMIT },
@@ -502,6 +513,14 @@ root(ROOTS.Zones, {
 					q(30808, {	-- A Grummle's Luck
 						["coord"] = { 64.7, 61.7, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59371 },	-- Lucky Eightcoins
+						["groups"] = {
+							o_repeated({
+								i(81293),	-- Stolen Luckydos (QI!)
+								o(211536),	-- Stolen Bag of Luckydos
+								o(211537),	-- Stolen Bag of Luckydos
+								o(211538),	-- Stolen Bag of Luckydos
+							}),
+						},
 					}),
 					q(30715, {	-- A Line Unbroken
 						["coord"] = { 35.1, 59.6, KUN_LAI_SUMMIT },
@@ -529,6 +548,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 29.2, 62.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 61820 },	-- Lao-Chin the Iron Belly
 						["sourceQuest"] = 30724,	-- To the Wall!
+						["groups"] = {
+							o(212003, {	-- Yaungol Oil Barrel
+								i(82799),	-- Yaungol Oil Barrel (QI!)
+							}),
+						},
 					}),
 					q(30506, {	-- Admiral Taylor has Awakened (3 versions of this quest from 3 different npc's but completing one gives credit for all 3)
 						["coord"] = { 70.8, 90.4, KUN_LAI_SUMMIT },
@@ -563,6 +587,11 @@ root(ROOTS.Zones, {
 					q(30459, {	-- All of the Arrows
 						["coord"] = { 70.7, 90.3, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59076 },	-- Commander Hsieh
+						["groups"] = {
+							o(210759, {	-- Arrow for Commander Hsieh
+								i(79806),	-- Arrow for Commander Hsieh (QI!)
+							}),
+						},
 					}),
 					q(30796, {	-- An End to Everything
 						["coord"] = { 57.3, 48.0, KUN_LAI_SUMMIT },
@@ -633,6 +662,9 @@ root(ROOTS.Zones, {
 							30620,	-- Mogu?! Oh No-gu!
 						},
 						["g"] = {
+							o(211312, {	-- Explosives Barrel
+								i(80528),	-- Explosives Barrel (QI!)
+							}),
 							i(88577),	-- Explosive Barrel
 						},
 					}),
@@ -641,6 +673,9 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 59448 },	-- Rivett Clutchpop
 						["sourceQuest"] = 30515,	-- Challenge Accepted
+						["groups"] = {
+							i(80245),	-- Kun-Lai Meaty Bits (QI!)
+						},
 					}),
 					q(31847, {	-- Better Dead than Dread
 						["coord"] = { 34.6, 59.0, KUN_LAI_SUMMIT },
@@ -879,6 +914,9 @@ root(ROOTS.Zones, {
 					q(30489, {	-- Fresh Needle Scent
 						["coord"] = { 71.6, 70.2, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59353 },	-- Lao Muskpaw
+						["groups"] = {
+							i(79952),	-- Pungent Sprite Needles (QI!)
+						},
 					}),
 					q(30967, {	-- Free the Dissenters
 						["coord"] = { 75.1, 87.9, KUN_LAI_SUMMIT },
@@ -950,6 +988,9 @@ root(ROOTS.Zones, {
 					q(30460, {	-- Hit Medicine
 						["coord"] = { 71.5, 92.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59077 },	-- Apothecary Cheng
+						["groups"] = {
+							i(79819),	-- Dit Da Jow (QI!)
+						},
 					}),
 					q(30682, {	-- Holed Up
 						["coord"] = { 42.9, 88.3, KUN_LAI_SUMMIT },
@@ -998,6 +1039,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.2, 61.1, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59696 },	-- Uncle Cloverleaf
 						["sourceQuest"] = 30999,	-- Path Less Traveled
+						["groups"] = {
+							i(80308),	-- Fire Lotus Incense (QI!)
+						},
 					}),
 					q(31030, {	-- Into the Monastery
 						["coord"] = { 36.6, 47.7, KUN_LAI_SUMMIT },
@@ -1169,6 +1213,10 @@ root(ROOTS.Zones, {
 					q(30614, {	-- Oil Stop
 						["coord"] = { 65.4, 60.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59402 },	-- Slimy Inkstain
+						["groups"] = {
+							i(80312),	-- Empty Oil Vial (QI!)
+							i(80311),	-- Filled Oil Vial (QI!)
+						},
 					}),
 					q(30683, {	-- One Traveler's Misfortune
 						["coord"] = { 48.1, 49.0, KUN_LAI_SUMMIT },
@@ -1253,6 +1301,14 @@ root(ROOTS.Zones, {
 					q(30595, {	-- Profiting off of the Past
 						["coord"] = { 59.6, 78.2, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59821 },	-- Bao Jian
+						["groups"] = {
+							o_repeated({
+								i(80294),	-- Mogu Relic (QI!)
+								o(211143),	-- Mogu Relic
+								o(211147),	-- Mogu Relic
+								o(211148),	-- Mogu Relic
+							}),
+						},
 					}),
 					q(30469, {	-- Repossession
 						["coord"] = { 74.9, 88.8, KUN_LAI_SUMMIT },
@@ -1854,6 +1910,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 44.4, 89.9, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 60161 },	-- Shado-Master Chong
 						["sourceQuest"] = 30457,	-- Call Out Their Leader
+						["groups"] = {
+							i(81713),	-- Blind Rage Essence (QI!)
+						},
 					}),
 					q(30752, {	-- Unbelievable!
 						["coord"] = { 35.3, 49.5, KUN_LAI_SUMMIT },
@@ -1884,6 +1943,7 @@ root(ROOTS.Zones, {
 							30670,	-- Turnabout
 						},
 						["g"] = {
+							i(81741),	-- Blinding Rage Trap (QI!)
 							i(88079),	-- Waterfall Cap
 							i(88078),	-- Mushan Hide Cap
 							i(88077),	-- Dreaming Spirit Cap
