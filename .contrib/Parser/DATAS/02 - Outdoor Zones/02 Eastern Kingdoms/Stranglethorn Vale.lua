@@ -3212,9 +3212,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(224409, {	-- Serpent's Striker (2.6 speed)
 							["cost"] = {{ "i", 220589, 1 }},	-- Serpent's Striker (1.5 speed)
 						}),
+						--[[
+						-- CRIEVE NOTE: Yeah, this is on the vendor, but also causes a stack overflow. Let's not.
 						i(220589, {	-- Serpent's Striker (1.5 speed)
 							["cost"] = {{ "i", 224409, 1 }},	-- Serpent's Striker (2.6 speed)
 						}),
+						]]
 						-- TODO: https://www.wowhead.com/classic/npc=222413/zalgo-the-explorer
 					},
 				})),

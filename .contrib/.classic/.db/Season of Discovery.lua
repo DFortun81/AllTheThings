@@ -266,12 +266,38 @@ local duskwoodquest = function(id, t)
 		219526,	-- Mission Brief: Duskwood
 		23, id, t);
 end
+local feralasquest = function(id, t)
+	t = questShortcut(
+		221480,	-- Field Captain Arunnel
+		{ 48.6, 12.4, FERALAS },
+		219775,	-- Mission Brief: Feralas
+		47, id, t);
+	table.insert(t, i(219927));	-- Emerald Chip
+	return t;
+end
+local hinterlandsquest = function(id, t)
+	t = questShortcut(
+		221479,	-- Field Captain Korlian
+		{ 61.4, 34.6, THE_HINTERLANDS },
+		219774,	-- Mission Brief: Hinterlands
+		47, id, t);
+	table.insert(t, i(219927));	-- Emerald Chip
+	return t;
+end
 local OnTooltip_EMERALD_WARDENS = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
 		addRepInfo(tooltipInfo, reputation, "Defeat Incursion Bosses", 200, ]] .. EXALTED .. [[);
-		addRepInfo(tooltipInfo, reputation, "Complete Quests", 75, ]] .. EXALTED .. [[);
+		addRepInfo(tooltipInfo, reputation, "Complete Incursion Quests", 75, ]] .. EXALTED .. [[);
+		
+		local fight = t.fight;
+		if not fight then
+			fight = _.SearchForField("questID", 82068)[1];
+			t.fight = fight;
+		end
+		_.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo, "%s", fight, 1000);
+		addRepInfo(tooltipInfo, reputation, " ", 1000, 42000);
 	end
 end]];
 
@@ -1380,6 +1406,19 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						["coord"] = { 32.39, 69.48, DUSKWOOD },
 					}),
 				},
+			}),
+			q(82068, {	-- Fight the Nightmare Incursions
+				["qgs"] = {
+					221480,	-- Field Captain Arunnel
+					221479,	-- Field Captain Korlian
+				},
+				["coords"] = {
+					{ 48.6, 12.4, FERALAS },
+					{ 61.4, 34.6, THE_HINTERLANDS },
+				},
+				["maxReputation"] = { 2641, EXALTED };	-- Emerald Wardens
+				["isDaily"] = true,
+				["lvl"] = 47,
 			}),
 			q(81716, {	-- Recover Incursion Field Report: Duskwood
 				["qg"] = 221471,	-- Field Captain Palandar
