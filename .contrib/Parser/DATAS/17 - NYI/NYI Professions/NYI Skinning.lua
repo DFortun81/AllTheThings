@@ -4,7 +4,7 @@
 root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(SKINNING, {
 		filter(MISC, {
-			expansion(EXPANSION.SL, {
+			expansion(EXPANSION.DF, {
 				-- 10.0.2
 				expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 					i(194076),	-- Exotic Resilient Leather
