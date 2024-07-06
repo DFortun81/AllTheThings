@@ -1213,7 +1213,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(410097),	-- Engrave Gloves - Water Shield
 			recipe(410099),	-- Engrave Pants - Ancestral Guidance
 			recipe(410101),	-- Engrave Pants - Earth Shield
-			recipe(425343),	-- Engrave Pants - Shamanistic Rage
+			recipe(425343),	-- Engrave Pants - Shamanistic Rage / Greater Ghost Wolf
 			recipe(410107),	-- Engrave Pants - Way of Earth
 			
 			-- Phase 2
@@ -1225,6 +1225,18 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(410103)),	-- Engrave Boots - Spirit of the Alpha
 			
 			-- Phase 3
+			applyclassicphase(SOD_PHASE_THREE, recipe(432241)),	-- Engrave Bracers - Overcharged
+			applyclassicphase(SOD_PHASE_THREE, recipe(410105)),	-- Engrave Bracers - Riptide
+			applyclassicphase(SOD_PHASE_THREE, recipe(432236)),	-- Engrave Bracers - Rolling Thunder
+			applyclassicphase(SOD_PHASE_THREE, recipe(432238)),	-- Engrave Bracers - Static Shock
+			applyclassicphase(SOD_PHASE_THREE, recipe(416066)),	-- Engrave Helm - Burn
+			applyclassicphase(SOD_PHASE_THREE, recipe(416055)),	-- Engrave Helm - Mental Dexterity
+			applyclassicphase(SOD_PHASE_THREE, recipe(432234)),	-- Engrave Helm - Tidal Waves
+			
+			-- Phase 4
+			applyclassicphase(SOD_PHASE_FOUR, recipe(416062)),	-- Engrave Cloak - Coherence
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440630)),	-- Engrave Cloak - Feral Spirit
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440634)),	-- Engrave Cloak - Storm, Earth, and Fire
 		}),
 		classHeader(WARLOCK, {
 			-- Phase 1
