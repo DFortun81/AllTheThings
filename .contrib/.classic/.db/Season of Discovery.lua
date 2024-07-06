@@ -272,7 +272,7 @@ local feralasquest = function(id, t)
 		{ 48.6, 12.4, FERALAS },
 		219775,	-- Mission Brief: Feralas
 		47, id, t);
-	table.insert(t, i(219927));	-- Emerald Chip
+	table.insert(t.groups, i(219927));	-- Emerald Chip
 	return t;
 end
 local hinterlandsquest = function(id, t)
@@ -281,7 +281,7 @@ local hinterlandsquest = function(id, t)
 		{ 61.4, 34.6, THE_HINTERLANDS },
 		219774,	-- Mission Brief: Hinterlands
 		47, id, t);
-	table.insert(t, i(219927));	-- Emerald Chip
+	table.insert(t.groups, i(219927));	-- Emerald Chip
 	return t;
 end
 local OnTooltip_EMERALD_WARDENS = [[function(t, tooltipInfo)

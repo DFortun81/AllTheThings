@@ -137,6 +137,58 @@ applyData = function(data, t)
 		end
 	end
 end
+splitTimelineEvent = function(epoch)
+	local words = {};
+	for word in epoch:gmatch("%S+") do table.insert(words, word) end
+	for i=2,#words,1 do words[i] = tonumber(words[i]) or words[i]; end
+	return words;
+end
+-- Applies the timeline event (epoch) to the object.
+applyTimelineEvent = function(epoch, t)
+	if epoch and t then
+		local timeline = t.timeline;
+		if not timeline then
+			-- Nothing there already, simply assign a new timeline.
+			t.timeline = { epoch };
+		else
+			-- More complicated... (merge the data!)
+			local index = -1;
+			local epochParts = splitTimelineEvent(epoch);
+			for i,currentEpoch in ipairs(timeline) do
+				if currentEpoch == epoch then
+					-- Epoch already present. Don't duplicate it.
+					return;
+				end
+				local after = true;
+				local parts = splitTimelineEvent(currentEpoch);
+				for j=2,math.min(#epochParts, #parts),1 do
+					if epochParts[j] < parts[j] then
+						after = false;
+						break;
+					end					
+				end
+				if not after then
+					--[[
+					-- Uncomment to Test:
+					local summary = "";
+					for j=1,i - 1,1 do
+						summary = summary .. "  [" .. j .. "]: '" .. timeline[j] .. "'\n";
+					end
+					summary = summary .. "  >>> '" .. epoch .. "'\n  [" .. i .. "]: '" .. currentEpoch .. "'";
+					print(summary);
+					]]--
+					index = i;
+					break;
+				end
+			end
+			if index >= 0 then
+				table.insert(timeline, index, epoch);
+			else
+				table.insert(timeline, epoch);
+			end
+		end
+	end
+end
 -- Applies a copy of the provided data into the tables of the provided array/group
 sharedData = function(data, t)
 	if not data then
@@ -248,6 +300,33 @@ bubbleDownSelf = function(data, t)
 	t = togroups(t);
 	-- then apply regular bubbleDown on the group
 	return bubbleDown(data, t);
+end
+-- Applies the timeline event (epoch) to all sub-groups of the provided table/array
+bubbleDownTimelineEvent = function(epoch, t)
+	if not epoch then
+		print("bubbleDownTimelineEvent: No Epoch")
+	end
+	if not t then
+		print("bubbleDownTimelineEvent: No Source 't'")
+	end
+	if t then
+		if t.g or t.groups then
+			applyTimelineEvent(epoch, t);
+			if t.groups then
+				bubbleDownTimelineEvent(epoch, t.groups);
+			end
+			if t.g then
+				bubbleDownTimelineEvent(epoch, t.g);
+			end
+		elseif isarray(t) then
+			for _,group in ipairs(t) do
+				bubbleDownTimelineEvent(epoch, group);
+			end
+		else
+			applyTimelineEvent(epoch, t);
+		end
+		return t;
+	end
 end
 -- Validates and returns 't' (expected 'groups' content) ensuring that contained content is in the expected formats
 validateGroups = function(t)

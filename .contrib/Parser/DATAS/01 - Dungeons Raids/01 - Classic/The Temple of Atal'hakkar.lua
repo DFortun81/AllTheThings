@@ -12,7 +12,7 @@ local SetItemFilter = function(itemID, f)
 end
 SetItemFilter(220689, CLOTH);	-- Void-Powered Vambraces
 -- #endif
-ATALAI_DEFENDERS = createHeader({
+local ATALAI_DEFENDERS = createHeader({
 	readable = "Atal'ai Defenders",
 	icon = "Interface\\Icons\\Inv_misc_head_troll_01",
 	text = {

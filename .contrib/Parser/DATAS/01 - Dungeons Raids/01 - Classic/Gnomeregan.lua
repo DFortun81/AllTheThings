@@ -148,13 +148,6 @@ local SOD_DISABLE_NORMAL_MODE = [[function(t)
 		t.OnUpdate = nil;
 	end
 end]];
-local SOD_TURN_GNOMER_INTO_RAID = [[function(t)
-	if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-		t.sharedLockout = 1;
-		t.isRaid = true;
-	end
-	t.OnUpdate = nil;
-end]];
 -- #endif
 local MATRIX_PUNCHOGRAPH_A = o(142345, {	-- Matrix Punchograph 3005-A
 	["description"] = "This is located outside of the instance just to the north of both the elevator or the transporter.",
@@ -213,7 +206,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["mapID"] = GNOMEREGAN,
 		["maps"] = { 227, 228, 229 },
 		-- #if SEASON_OF_DISCOVERY
-		["OnUpdate"] = SOD_TURN_GNOMER_INTO_RAID,
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
 		-- #endif
 		["lvl"] = lvlsquish(19, 19, 10),
 		["groups"] = {

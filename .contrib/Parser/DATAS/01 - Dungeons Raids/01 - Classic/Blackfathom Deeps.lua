@@ -136,13 +136,6 @@ local SOD_DISABLE_NORMAL_MODE = [[function(t)
 		t.OnUpdate = nil;
 	end
 end]];
-local SOD_TURN_BFD_INTO_RAID = [[function(t)
-	if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
-		t.sharedLockout = 1;
-		t.isRaid = true;
-	end
-	t.OnUpdate = nil;
-end]];
 -- #endif
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	inst(227, {	-- Blackfathom Deeps
@@ -162,7 +155,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		-- #endif
 		["maps"] = { BLACKFATHOM_DEEPS, BLACKFATHOM_DEEPS_LEVEL2, BLACKFATHOM_DEEPS_LEVEL3 },
 		-- #if SEASON_OF_DISCOVERY
-		["OnUpdate"] = SOD_TURN_BFD_INTO_RAID,
+		["sharedLockout"] = 1,
+		["isRaid"] = true,
 		-- #endif
 		["lvl"] = lvlsquish(19, 19, 10),
 		["groups"] = {
