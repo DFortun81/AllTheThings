@@ -231,6 +231,8 @@
 1.15.2.53941
 2897@@@Pet - Core Hound
 2898@@@Explorer Imp
+1.15.3.55244
+2904@@@Astral Perfect Victory
 2.0.0.6080
 755@@@Jewelcrafting
 756@@@Blood Elf Racial

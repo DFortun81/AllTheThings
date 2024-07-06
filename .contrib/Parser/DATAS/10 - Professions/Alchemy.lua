@@ -1100,11 +1100,46 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		}),
 		n(TREASURES, {
+			o(456021, {	-- Chemist's Purified Water
+				["coord"] = { 42.7, 55.1, HALLOWFALL },
+				["questID"] = 83844,
+				["g"] = {
+					i(226269),	-- Chemist's Purified Water
+				},
+			}),
+			o(456018, {	-- Dark Apothecary's Vial
+				["coord"] = { 42.9, 57.3, AZJ_KAHET },
+				["questID"] = 83847,
+				["g"] = {
+					i(226272),	-- Dark Apothecary's Vial
+				},
+			}),
 			o(456025, {	-- Earthen Iron Powder
 				["coord"] = { 47.3, 70.4, DORNOGAL },
 				["questID"] = 83840,
 				["g"] = {
 					i(226265),	-- Earthen Iron Powder
+				},
+			}),
+			o(456019, {	-- Nerubian Mixing Salts
+				["coord"] = { 45.4, 13.2, NERUBAR },
+				["questID"] = 83846,
+				["g"] = {
+					i(226271),	-- Nerubian Mixing Salts
+				},
+			}),
+			o(456023, {	-- Reinforced Beaker
+				["coord"] = { 42.2, 24.1, THE_RINGING_DEEPS },
+				["questID"] = 83842,
+				["g"] = {
+					i(226267),	-- Reinforced Beaker
+				},
+			}),
+			o(456020, {	-- Sanctified Mortar and Pestle
+				["coord"] = { 41.7, 55.8, HALLOWFALL },
+				["questID"] = 83845,
+				["g"] = {
+					i(226270),	-- Sanctified Mortar and Pestle
 				},
 			}),
 		}),
@@ -1145,6 +1180,12 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 24266
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Insulating Gniodine",
+					["recipeID"] = 435969,
+				}),
+				-- #endif
 			}
 		},
 		{
@@ -1303,6 +1344,12 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["name"] = "Mighty Troll's Blood Potion",
 					["recipeID"] = 3451
 				},
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Mildly Irradiated Rejuvenation Potion",
+					["recipeID"] = 435971,
+				}),
 				-- #endif
 				{
 					["name"] = "Minor Healing Potion",
@@ -1555,6 +1602,12 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["name"] = "Greater Arcane Elixir",
 					["recipeID"] = 17573
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Lesser Arcane Elixir",
+					["recipeID"] = 439960,
+				}),
+				-- #endif
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Mageblood Elixir",
@@ -1599,11 +1652,27 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["name"] = "Flask of Distilled Wisdom",
 					["recipeID"] = 17636
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, {
+					["name"] = "Flask of Everlasting Nightmares",
+					["recipeID"] = 446226,
+				}),
+				applyclassicphase(SOD_PHASE_THREE, {
+					["name"] = "Flask of Nightmarish Mojo",
+					["recipeID"] = 446851,
+				}),
+				-- #endif
 				-- #if BEFORE TBC
 				{
 					["name"] = "Flask of Petrification / Potion of Petrification",
 					["recipeID"] = 17634
 				},
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, {
+					["name"] = "Flask of Restless Dreams",
+					["recipeID"] = 448085,
+				}),
 				-- #endif
 				{
 					["name"] = "Flask of Supreme Power",
@@ -1612,7 +1681,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				{
 					["name"] = "Flask of the Titans",
 					["recipeID"] = 17635
-				}
+				},
 			}
 		},
 		{

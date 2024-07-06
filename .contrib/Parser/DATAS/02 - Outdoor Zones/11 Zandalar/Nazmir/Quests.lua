@@ -579,6 +579,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(48090, {	-- Krag'wa's Chosen
+				["sourceQuest"] = 47918,	-- To Serve Krag'wa
 				["provider"] = { "n", 125317 },	-- Shadow Hunter Narez
 				["coord"] = { 77.7, 53.2, NAZMIR },
 				["races"] = HORDE_ONLY,
@@ -1275,6 +1276,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(48092, {	-- Vengeance of the Frogs
+				["sourceQuest"] = 47918,	-- To Serve Krag'wa
 				["provider"] = { "n", 125317 },	-- Shadow Hunter Narez
 				["coord"] = { 77.7, 53.2, NAZMIR },
 				["races"] = HORDE_ONLY,

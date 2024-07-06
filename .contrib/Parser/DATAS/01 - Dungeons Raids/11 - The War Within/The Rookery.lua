@@ -19,7 +19,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["g"] = {
 						i(221037),	-- Charged Rookfeather Wraps
 						i(219294),	-- Charged Stormrook Plume
-						i(224707),	-- Hyperactive Stormclaw
+						i(221033),	-- Hyperactive Stormclaw
 						i(221036),	-- Tempestwind Handlers
 						i(221034),	-- Thunder-Clad Legguards
 						i(221035),	-- Treads of the Galvanic Skysoarer
@@ -42,6 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2568, {	-- Voidstone Monstrosity
 					["crs"] = { 207207 },	-- Voidstone Monstrosity
 					["g"] = {
+						ach(40621),	-- The Rookery
 						i(223096),	-- Pattern: Roiling Thunderstrike Talons (RECIPE!)
 						i(221048),	-- Amice of Oblivion
 						i(221050),	-- Ancient Hardened Legwraps
@@ -51,6 +52,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221049),	-- Jerkin of Awakened Stone
 						i(221047),	-- Monstrosity's Gaze
 						i(221044),	-- Shadowskean of the Colossus
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				e(2568, {	-- Voidstone Monstrosity
+					["crs"] = { 207207 },	-- Voidstone Monstrosity
+					["g"] = {
+						ach(40637),	-- Heroic: The Rookery
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				e(2568, {	-- Voidstone Monstrosity
+					["crs"] = { 207207 },	-- Voidstone Monstrosity
+					["g"] = {
+						ach(40642),	-- Mythic: The Rookery
 					},
 				}),
 			}),

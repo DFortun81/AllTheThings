@@ -1545,6 +1545,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["provider"] = { "n", 199185 },	-- Zeros
 						["sourceQuests"] = { 72529 },	-- Information is King
 						["coord"] = { 42.8, 74.0, THE_CAPE_OF_STRANGLETHORN },
+						["groups"] = {
+							i(202271),	-- Pouch of Gold Coins (QI!)
+						},
 					}),
 					q(72532, {	-- Money, Money, Money!
 						["provider"] = { "n", 199185 },	-- Zeros

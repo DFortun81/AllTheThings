@@ -50,6 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2589, {	-- Goldie Baronbottom
 					["crs"] = { 218523 },	-- Goldie Baronbottom <BEE.E.O.>
 					["g"] = {
+						ach(40361),	-- Cinderbrew Meadery
 						i(223102),	-- Pattern: Busy Bee's Buckle (RECIPE!)
 						i(224424),	-- Pattern: Artisan Chef's Hat (RECIPE!)
 						i(221070),	-- "Azeroth's Greatest BEO" Cap
@@ -59,6 +60,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221068),	-- Profit Divider
 						i(221069),	-- Slashproof Business Plate
 						i(219299),	-- Synergistic Brewterializer
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				e(2589, {	-- Goldie Baronbottom
+					["crs"] = { 218523 },	-- Goldie Baronbottom <BEE.E.O.>
+					["g"] = {
+						ach(40363),	-- Heroic: Cinderbrew Meadery
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				e(2589, {	-- Goldie Baronbottom
+					["crs"] = { 218523 },	-- Goldie Baronbottom <BEE.E.O.>
+					["g"] = {
+						ach(40366),	-- Mythic: Cinderbrew Meadery
 					},
 				}),
 			}),

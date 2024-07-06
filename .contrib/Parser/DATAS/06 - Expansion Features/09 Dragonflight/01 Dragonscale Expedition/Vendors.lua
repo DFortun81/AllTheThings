@@ -151,7 +151,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(194326, {	-- Trusty Sweeper
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 600 },
-								{ "i", TALLSTRIDER_SINEW, 5 },
+								{ "i", TUFT_OF_PRIMAL_WOOL, 3 },
 							},
 						}),
 					}, {	-- RENOWN 8 --
@@ -432,7 +432,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 18 --
 					}, {	-- RENOWN 19 --
-						i(198728, {	-- Explorer's League Banner (TOY!)
+						i(198728, {	-- Explorers' League Banner (TOY!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 150 },
 								{ "i", WILDERCLOTH, 20 },

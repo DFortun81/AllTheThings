@@ -136,11 +136,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(10, {	-- The Sepulcher, Silverpine Forest
 					["cr"] = 2226,	-- Karos Razok <Bat Handler>
-					-- #if AFTER CATA
-					["coord"] = { 45.4, 42.4, SILVERPINE_FOREST },
-					-- #else
-					["coord"] = { 45.6, 42.6, SILVERPINE_FOREST },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 45.4, 42.4, SILVERPINE_FOREST },
+						-- #else
+						{ 45.6, 42.6, SILVERPINE_FOREST },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 			}),
@@ -1506,20 +1508,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(12431, {	-- Gorefang
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 60.2, 9.6, SILVERPINE_FOREST },
 						{ 57.8, 16.2, SILVERPINE_FOREST },
 						{ 56.6, 24.0, SILVERPINE_FOREST },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 60.2, 10.0, SILVERPINE_FOREST },
 						{ 47.6, 17.6, SILVERPINE_FOREST },
 						{ 51.8, 19.6, SILVERPINE_FOREST },
 						{ 48.0, 25.8, SILVERPINE_FOREST },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(211736, {	-- Grizzled Protector
@@ -1541,19 +1541,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(12433, {	-- Krethis the Shadowspinner
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 38.6, 16.0, SILVERPINE_FOREST },
 						{ 37.0, 14.6, SILVERPINE_FOREST },
 						{ 34.6, 15.6, SILVERPINE_FOREST },
 						{ 35.6, 18.2, SILVERPINE_FOREST },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 35.6, 9.0, SILVERPINE_FOREST },
 						{ 37.2, 15.6, SILVERPINE_FOREST },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(211146, {	-- Lost Adventurer
@@ -1602,11 +1600,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				n(2283, {	-- Ravenclaw Regent
-					-- #if AFTER 10.1.7
-					["coord"] = { 57.4, 31.2, SILVERPINE_FOREST },
-					-- #else
-					["coord"] = { 57.6, 69.8, SILVERPINE_FOREST },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER 10.1.7
+						{ 57.4, 31.2, SILVERPINE_FOREST },
+						-- #else
+						{ 57.6, 69.8, SILVERPINE_FOREST },
+						-- #endif
+					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["groups"] = {
 						i(6628, {	-- Raven's Claws
@@ -1725,11 +1725,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(VENDORS, {
 				n(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
-					-- #if AFTER CATA
-					["coord"] = { 44.6, 39.6, SILVERPINE_FOREST },
-					-- #else
-					["coord"] = { 44.6, 39.2, SILVERPINE_FOREST },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.6, 39.6, SILVERPINE_FOREST },
+						-- #else
+						{ 44.6, 39.2, SILVERPINE_FOREST },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4788, {	-- Agile Boots
@@ -1780,11 +1782,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(5748, {	-- Killian Sanatha <Fisherman>
-					-- #if AFTER CATA
-					["coord"] = { 59.4, 33.4, SILVERPINE_FOREST },
-					-- #else
-					["coord"] = { 33.0, 17.8, SILVERPINE_FOREST },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 59.4, 33.4, SILVERPINE_FOREST },
+						-- #else
+						{ 33.0, 17.8, SILVERPINE_FOREST },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6328),	-- Recipe: Longjaw Mud Snapper (RECIPE!)
@@ -1792,11 +1796,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 53.8, 82.2, SILVERPINE_FOREST },
-					-- #else
-					["coord"] = { 54.0, 82.2, SILVERPINE_FOREST },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.8, 82.2, SILVERPINE_FOREST },
+						-- #else
+						{ 54.0, 82.2, SILVERPINE_FOREST },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect (RECIPE!)
@@ -1814,11 +1820,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(5757, {	-- Lilly <Enchanting Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 46.8, 40.6, SILVERPINE_FOREST },
-					-- #else
-					["coord"] = { 43.0, 50.8, SILVERPINE_FOREST },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 46.8, 40.6, SILVERPINE_FOREST },
+						-- #else
+						{ 43.0, 50.8, SILVERPINE_FOREST },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6346),	-- Formula: Enchant Chest - Lesser Mana (RECIPE!)
@@ -1834,11 +1842,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(9553, {	-- Nadia Vernon <Bowyer>
-					-- #if AFTER CATA
-					["coord"] = { 44.8, 39.8, SILVERPINE_FOREST },
-					-- #else
-					["coord"] = { 45.0, 39.4, SILVERPINE_FOREST },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.8, 39.8, SILVERPINE_FOREST },
+						-- #else
+						{ 45.0, 39.4, SILVERPINE_FOREST },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11304, {	-- Fine Longbow
@@ -1847,11 +1857,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(3534, {	-- Wallace the Blind <Weaponsmith>
-					-- #if AFTER CATA
-					["coord"] = { 33.0, 17.8, SILVERPINE_FOREST },
-					-- #else
-					["coord"] = { 46.4, 86.4, SILVERPINE_FOREST },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 33.0, 17.8, SILVERPINE_FOREST },
+						-- #else
+						{ 46.4, 86.4, SILVERPINE_FOREST },
+						-- #endif
+					},
 					["groups"] = {
 						i(4817, {	-- Blessed Claymore
 							["isLimited"] = true,
@@ -1904,8 +1916,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #endif
 				i(5110, {	-- Dalaran Wizard's Robe
 					["description"] = "This item is only naturally accessible to Horde players due to the allegiance of the mobs that drop this item.",
-					-- #if BEFORE 4.0.3
 					["crs"] = {
+						-- #if BEFORE 4.0.3
 						2120,	-- Archmage Ataeric
 						1867,	-- Dalaran Apprentice
 						3577,	-- Dalaran Brewmaster
@@ -1917,15 +1929,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						1913,	-- Dalaran Warder
 						1888,	-- Dalaran Watcher
 						1889,	-- Dalaran Wizard
-					},
-					-- #else
-					["crs"] = {
+						-- #else
 						45753,	-- Ambermill Portal Guardian
 						1913,	-- Ambermill Warder
 						3577,	-- Ambermill Brewmaster
 						1914,	-- Ambermill Magister
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(3164, {	-- Discolored Worg Heart
 					["crs"] = {

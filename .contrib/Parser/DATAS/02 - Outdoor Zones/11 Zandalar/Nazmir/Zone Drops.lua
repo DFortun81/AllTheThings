@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			i(154823),	-- Etched Bone Ring
 		}),
-		n(ZONE_DROPS, bubbleDown({["bonusID"] = 4796, }, {
+		n(ZONE_DROPS, {
 			i(154814),	-- Morass Prowler's Cloak
 			i(154833),	-- Bloodhex Hood
 			i(154838),	-- Bloodhex Mantle
@@ -61,6 +61,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(154808),	-- Torgashell Greatbelt
 			i(154810),	-- Torgashell Legguards
 			i(154812),	-- Torgashell Warboots
-		})),
+		}),
 	}),
 })));

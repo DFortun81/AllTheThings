@@ -154,11 +154,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #endif
 				}),
-				achWithRep(4881, 1135),	-- The Earthen Ring
+				achWithRep(4881, 1135, {	-- The Earthen Ring
+					["maps"] = {
+						VASHJIR_ABYSSAL_DEPTHS,
+						VASHJIR_KELPTHAR_FOREST,
+						VASHJIR_SHIMMERING_EXPANSE,
+					},
+				}),
 			}),
 			n(FACTIONS, {
 				faction(1135, {	-- The Earthen Ring
 					["icon"] = "Interface\\Icons\\inv_misc_tabard_tolvir",
+					["maps"] = {
+						VASHJIR_ABYSSAL_DEPTHS,
+						VASHJIR_KELPTHAR_FOREST,
+						VASHJIR_SHIMMERING_EXPANSE,
+					},
 				}),
 			}),
 			m(VASHJIR_ABYSSAL_DEPTHS, {
@@ -674,34 +685,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					}),
 					n(RARES, {
-						n(50005, {	-- Poseidus
-							["coords"] = {
-								{ 39.4, 71.9, VASHJIR_ABYSSAL_DEPTHS },
-								{ 40.4, 73.8, VASHJIR_ABYSSAL_DEPTHS },
-								{ 41.0, 76.6, VASHJIR_ABYSSAL_DEPTHS },
-								{ 42.2, 76.0, VASHJIR_ABYSSAL_DEPTHS },
-								{ 41.8, 73.4, VASHJIR_ABYSSAL_DEPTHS },
-							},
-							["groups"] = {
-								i(67151),	-- Subdued Seahorse (MOUNT!)
-								i(67132),	-- Grips of the Failed Immortal
-								i(67140),	-- Drape of Inimitable Fate
-								i(67131),	-- Ritssyn's Ruminous Drape
-								i(67150),	-- Arrowsinger Legguards
-								i(67143),	-- Icebone Hauberk
-								i(67147),	-- Je'Tze's Sparkling Tiara
-								i(67146),	-- Woundsplicer Handwraps
-								i(67149),	-- Heartbound Tome
-								i(67148),	-- Kilt of Trollish Dreams
-								i(67144),	-- Pauldrons of Edward the Odd
-								i(67142),	-- Zom's Electrostatic Cloak
-								i(67141),	-- Corefire Legplates
-								i(67133),	-- Dizze's Whirling Robe
-								i(67134),	-- Dory's Finery
-								i(67129),	-- Signet of High Arcanist Savor
-								i(67130),	-- Dorian's Lost Necklace
-							},
-						}),
 						n(50050, {	-- Shok'sharak
 							["coords"] = {
 								{ 41.8, 32.8, VASHJIR_ABYSSAL_DEPTHS },
@@ -728,9 +711,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 19.0, 77.4, VASHJIR_ABYSSAL_DEPTHS },
 							},
 						}),
-					}),
-					n(ZONE_DROPS, {
-						i(65649),	-- Technique: Origami Slime
 					}),
 				},
 			}),
@@ -771,9 +751,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 46458,	-- Budd
 							["sourceQuest"] = 25670,	-- DUN-dun-DUN-dun-DUN-dun
 							["coord"] = { 58.3, 48.6, VASHJIR_KELPTHAR_FOREST },
+							["groups"] = {
+								objective(1, {	-- 0/1 The Pewter Pounder
+									["provider"] = { "i", 55805 },	-- The Pewter Pounder
+									["coord"] = { 53.6, 57.6, VASHJIR_KELPTHAR_FOREST },
+									["cr"] = 41018,	-- King Gurboggle
+								}),
+							}
 						}),
 						q(25388, {	-- Crate of Crab Meat
-							["provider"] = { "o", 202871 },	-- Sunken Crate
+							["providers"] = {
+								{ "o", 202871 },	-- Sunken Crate
+								{ "i",  53061 },	-- Crate of Crab Meat
+							},
 							["sourceQuest"] = 25587,	-- Gimme Shelter
 							["coord"] = { 49.6, 40.8, VASHJIR_KELPTHAR_FOREST },
 						}),
@@ -781,9 +771,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 41341,	-- Erunak Stonespeaker
 							["sourceQuest"] = 27708,	-- The Warden's Time
 							["coord"] = { 63.8, 59.9, VASHJIR_KELPTHAR_FOREST },
+							["maps"] = { VASHJIR_SHIMMERING_EXPANSE },
 						}),
 						q(25638, {	-- A Desperate Plea
-							["provider"] = { "o", 203128 },	-- Broken Bottle
+							["providers"] = {
+								{ "o", 203128 },	-- Broken Bottle
+								{ "i",  62137 },	-- Soggy Note
+							},
 							["sourceQuest"] = 25459,	-- Ophidophobia
 							["coord"] = { 56.4, 30.0, VASHJIR_KELPTHAR_FOREST },
 						}),
@@ -792,6 +786,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 25598,	-- Ain't Too Proud to Beg
 							["coord"] = { 57.1, 28.7, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
+								objective(1, {	-- 0/6 Adarrah's Keepsake
+									["providers"] = {
+										{ "i",  53074 },	-- Adarrah's Keepsake
+										{ "o", 202775 },	-- Adarrah's Jewelry Box
+									},
+									["coord"] = { 50.5, 42.6, VASHJIR_KELPTHAR_FOREST },
+								}),
 								i(59793),	-- Hippolyte's Glittering Necklace
 								i(59794),	-- Signet of Galathea
 								i(59792),	-- Petrified Spider Crab
@@ -801,11 +802,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 39883,	-- Adarrah
 							["sourceQuest"] = 25598,	-- Ain't Too Proud to Beg
 							["coord"] = { 57.1, 28.7, VASHJIR_KELPTHAR_FOREST },
+							["groups"] = {
+								objective(1, {	-- 0/4 Clacksnap Tail
+									["provider"] = { "i", 53073 },	-- Clacksnap Tail
+									["coord"] = { 49.6, 43.0, VASHJIR_KELPTHAR_FOREST },
+									["cr"] = 39918,	-- Clacksnap Pincer
+								}),
+							}
 						}),
 						q(25598, {	-- Ain't Too Proud to Beg
 							["qg"] = 39883,	-- Adarrah
 							["sourceQuest"] = 25587,	-- Gimme Shelter
 							["coord"] = { 57.1, 28.8, VASHJIR_KELPTHAR_FOREST },
+							["groups"] = {
+								objective(1, {	-- Mack and Samir Rescued
+									["provider"] = { "n", 39669 },	-- Captain Samir
+									["coord"] = { 48.2, 39.6, VASHJIR_KELPTHAR_FOREST },
+								}),
+							},
 						}),
 						q(25558, {	-- All or Nothing
 							["qg"] = 40690,	-- Captain Taylor
@@ -826,7 +840,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ 54.0, 49.0, VASHJIR_KELPTHAR_FOREST },
 								{ 55.8, 53.0, VASHJIR_KELPTHAR_FOREST },
 							},
-							["crs"] = { 40987 },	-- Gnash
+							["cr"] = 40987,	-- Gnash
 						}),
 						q(25477, {	-- Better Late Than Dead
 							["qg"] = 41248,	-- Moanah Stormhoof
@@ -835,12 +849,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								25949,	-- Blood and Thunder! (H)
 							},
 							["coord"] = { 46.0, 46.8, VASHJIR_KELPTHAR_FOREST },
+							["groups"] = {
+								objective(1, {	-- Sea Turtle Mounted
+									["provider"] = { "i", 54462 },	-- Moanah's Baitstick
+									["coord"] = { 53.6, 46.6, VASHJIR_KELPTHAR_FOREST },
+									["cr"] = 40223,	-- Speckled Sea Turtle
+								}),
+							},
 						}),
 						q(25503, {	-- Blackfin's Booty
 							["provider"] = { "i", 54639 },	-- Waterlogged Journal
 							["coord"] = { 51.1, 52.0, VASHJIR_KELPTHAR_FOREST },
-							["crs"] = { 41183 },	-- Gilblingle
+							["cr"] = 41183,	-- Gilblingle
 							["groups"] = {
+								objective(1, {	-- 0/1 Gilblingle's Map
+									["provider"] = { "i", 54640 },	-- Gilblingle's Map
+									["coord"] = { 56.6, 54.8, VASHJIR_KELPTHAR_FOREST },
+									["cr"] = 40466,	-- Blackfin
+								}),
 								i(59781),	-- Calanoid Shoulders
 								i(59780),	-- Polychaete Leggings
 								i(59779),	-- Girdle of Calcified Blackfin
@@ -867,18 +893,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 39.0, 32.0, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
 						}),
-						q(25357, {	-- Buy Us Some Time (A)
-							["qg"] = 39887,	-- Captain Taylor
-							["sourceQuest"] = 25405,	-- Rest For the Weary
-							["coord"] = { 44.7, 22.5, VASHJIR_KELPTHAR_FOREST },
-							["races"] = ALLIANCE_ONLY,
-						}),
-						q(25942, {	-- Buy Us Some Time (H)
-							["qg"] = 41711,	-- Legionnaire Nazgrim
-							["sourceQuest"] = 25941,	-- Rest For the Weary
-							["coord"] = { 39.0, 32.0, VASHJIR_KELPTHAR_FOREST },
-							["races"] = HORDE_ONLY,
-						}),
+						{	-- Buy Us Some Time
+							["allianceQuestData"] = q(25357, {	-- Buy Us Some Time (A)
+								["qg"] = 39887,	-- Captain Taylor
+								["sourceQuest"] = 25405,	-- Rest For the Weary (A)
+								["coord"] = { 44.7, 22.5, VASHJIR_KELPTHAR_FOREST },
+							}),
+							["hordeQuestData"] = q(25942, {	-- Buy Us Some Time (A)
+								["qg"] = 41711,	-- Legionnaire Nazgrim
+								["sourceQuest"] = 25941,	-- Rest For the Weary (H)
+								["coord"] = { 39.0, 32.0, VASHJIR_KELPTHAR_FOREST },
+							}),
+							["groups"] = {
+								objective(1, {	-- 0/8 Zin'jatar Raider slain
+									["provider"] = { "n", 39313 },	-- Zin'jatar Raider
+								}),
+							},
+						},
 						q(14482, {	-- Call of Duty
 							["qg"] = 36799,	-- Recruiter Burns
 							["sourceQuests"] = {
@@ -894,12 +925,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 39884,	-- Captain Samir
 							["sourceQuest"] = 25598,	-- Ain't Too Proud to Beg
 							["coord"] = { 57.3, 28.9, VASHJIR_KELPTHAR_FOREST },
+							["groups"] = {
+								objective(1, {	-- 0/1 Keg of Gunpowder
+									["providers"] = {
+										{ "i",  55143 },	-- Keg of Gunpowder
+										{ "o", 203113 },	-- Keg of Gunpowder
+									},
+									["coord"] = { 55.5, 38.9, VASHJIR_KELPTHAR_FOREST },
+								}),
+							},
 						}),
 						q(25884, {	-- Come Hell or High Water
 							["qg"] = 41344,	-- Rendel Firetongue
 							["sourceQuest"] = 25887,	-- Wake of Destruction
 							["coord"] = { 64.2, 59.9, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
+								objective(1, {	-- 0/12 Zin'jatar Naga Slain
+									["providers"] = {
+										{ "n", 41477 },	-- Zin'jatar Pearlbinder
+										{ "n", 41481 },	-- Zin'jatar Guardian
+										{ "n", 41549 },	-- Zin'jatar Overseer
+									},
+									["coord"] = { 58.6, 74.6, VASHJIR_KELPTHAR_FOREST },
+								}),
 								i(59778),	-- Medusoid Staff
 								i(59777),	-- Conch-Inlaid Gauntlets
 								i(59776),	-- Pipefish Bracers
@@ -909,24 +957,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["qg"] = 46338,	-- Budd
 							["sourceQuest"] = 25651,	-- Oh, the Insanity!
 							["coord"] = { 55.2, 38.8, VASHJIR_KELPTHAR_FOREST },
+							["groups"] = {
+								objective(1, {	-- Explosive Grub fed to Gnaws
+									["provider"] = { "i", 55190 },	-- Booby-Trapped Bait
+									["cr"] = 41057,	-- Gnaws
+								}),
+							},
 						}),
 						q(25824, {	-- Debriefing (A)
 							["qg"] = 41341,	-- Erunak Stonespeaker
 							["sourceQuest"] = 25812,	-- Spelunking
 							["coord"] = { 63.8, 59.9, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								objective(1, {	-- Private Pollard Debriefed
+									["provider"] = { "n", 41340 },	-- Private Pollard
+									["coord"] = { 63.8, 59.8, VASHJIR_KELPTHAR_FOREST },
+								}),
+							}
 						}),
 						q(26007, {	-- Debriefing (H)
 							["qg"] = 41341,	-- Erunak Stonespeaker
 							["sourceQuest"] = 26000,	-- Spelunking
 							["coord"] = { 63.8, 59.9, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
+							["groups"] = {
+								objective(1, {	-- Gurrok Debriefed
+									["provider"] = { "n", 41885 },	-- Gurrok
+									["coord"] = { 63.8, 59.8, VASHJIR_KELPTHAR_FOREST },
+								}),
+							}
 						}),
 						q(25743, {	-- Decisions, Decisions
 							["qg"] = 46458,	-- Budd
 							["sourceQuest"] = 25732,	-- A Bone To Pick
 							["coord"] = { 58.3, 48.6, VASHJIR_KELPTHAR_FOREST },
 							["groups"] = {
+								objective(1, {	-- The Pewter Prophet Destroyed
+									["provider"] = { "i", 55806 },	-- The Pewter Pounder
+									["coord"] = { 58.3, 48.6, VASHJIR_KELPTHAR_FOREST },
+									["cr"] = 41192,	-- The Pewter Prophet
+								}),
 								i(59787),	-- God-Grinding Grips
 								i(59786),	-- Wristguards of Prophetic Perishing
 								i(59785),	-- Pounded Pewter Links
@@ -1249,6 +1320,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["sourceQuest"] = 25887,	-- Wake of Destruction
 							["coord"] = { 63.9, 59.8, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
+							["groups"] = {
+								objective(1, {	-- 0/7 Wiggleweed Sprout
+									["provider"] = { "i", 56167 },	-- Wiggleweed Sprout
+									["coord"] = { 58.4, 74.5, VASHJIR_KELPTHAR_FOREST },
+									["crs"] = {
+										46474,	-- Shimmerspine Harvester
+										41481,	-- Zin'jatar Guardian
+										41549,	-- Zin'jatar Overseer
+										41477,	-- Zin'jatar Pearlbinder
+									},
+								}),
+							},
 						}),
 					}),
 					n(RARES, {
@@ -1266,31 +1349,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					}),
+					-- #if AFTER 5.3.0
+					-- These vendors have nothing useful to show until after 5.3.0.
 					n(VENDORS, {
 						n(36915, {	-- Erunak Stonespeaker <The Earthen Ring>
 							["coord"] = { 45.0, 23.2, VASHJIR_KELPTHAR_FOREST },
 							["races"] = ALLIANCE_ONLY,
-							-- #if AFTER 5.3.0
 							["sym"] = {
 								{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster> },
 								{ "pop" },						-- Pop the Headers
 							},
-							-- #endif
 						}),
 						n(41618, {	-- Erunak Stonespeaker <The Earthen Ring>
 							["coord"] = { 38.8, 31.6, VASHJIR_KELPTHAR_FOREST },
 							["races"] = HORDE_ONLY,
-							-- #if AFTER 5.3.0
 							["sym"] = {
 								{ "select", "npcID", 71304 },	-- Iris Moondreamer <Quartermaster> },
 								{ "pop" },						-- Pop the Headers
 							},
-							-- #endif
 						}),
 					}),
-					n(ZONE_DROPS, {
-						i(65649),	-- Technique: Origami Slime
-					}),
+					-- #endif
 				},
 			}),
 			m(VASHJIR_SHIMMERING_EXPANSE, {
@@ -2316,33 +2395,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					}),
 					n(RARES, {
-						n(50005, {	-- Poseidus
-							["coords"] = {
-								{ 66.4, 44.2, VASHJIR_SHIMMERING_EXPANSE },
-								{ 46.2, 48.6, VASHJIR_SHIMMERING_EXPANSE },
-								{ 57.2, 80.8, VASHJIR_SHIMMERING_EXPANSE },
-								{ 38.5, 67.0, VASHJIR_SHIMMERING_EXPANSE },
-							},
-							["groups"] = {
-								i(67151),	-- Subdued Seahorse (MOUNT!)
-								i(67132),	-- Grips of the Failed Immortal
-								i(67140),	-- Drape of Inimitable Fate
-								i(67131),	-- Ritssyn's Ruminous Drape
-								i(67150),	-- Arrowsinger Legguards
-								i(67143),	-- Icebone Hauberk
-								i(67147),	-- Je'Tze's Sparkling Tiara
-								i(67146),	-- Woundsplicer Handwraps
-								i(67149),	-- Heartbound Tome
-								i(67148),	-- Kilt of Trollish Dreams
-								i(67144),	-- Pauldrons of Edward the Odd
-								i(67142),	-- Zom's Electrostatic Cloak
-								i(67141),	-- Corefire Legplates
-								i(67133),	-- Dizze's Whirling Robe
-								i(67134),	-- Dory's Finery
-								i(67129),	-- Signet of High Arcanist Savor
-								i(67130),	-- Dorian's Lost Necklace
-							},
-						}),
 						n(50052, {	-- Burgy Blackheart
 							["coord"] = { 57.0, 69.6, VASHJIR_SHIMMERING_EXPANSE },
 							["groups"] = {
@@ -2363,16 +2415,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
+					-- #if AFTER 9.2.5
 					n(SPECIAL, {
 						o(373438, {	-- Coilclutch Vine
-							["timeline"] = { ADDED_9_2_5 },
 							["coord"] = { 34.7, 75, VASHJIR_SHIMMERING_EXPANSE },
 							["cost"] = {{"i",187662,1}},	-- Strange Goop
+							["timeline"] = { ADDED_9_2_5 },
 							["g"] = {
 								i(187916),	-- Coilclutch Vine
 							},
 						}),
 					}),
+					-- #endif
 					n(VENDORS, {
 						n(50324, {	-- Provisioner Arok <Earthen Ring Quartermaster>
 							["coord"] = { 49.1, 42.1, VASHJIR_SHIMMERING_EXPANSE },
@@ -2393,11 +2447,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 					}),
-					n(ZONE_DROPS, {
-						-- Crieve NOTE: And this... literally copy+pasted.
-						-- Might touch this up before Cataclysm Classic after all.
-						i(65649),	-- Technique: Origami Slime
-					}),
+				},
+			}),
+			n(ZONE_DROPS, {
+				["maps"] = {
+					VASHJIR_ABYSSAL_DEPTHS,
+					VASHJIR_KELPTHAR_FOREST,
+					VASHJIR_SHIMMERING_EXPANSE,
+				},
+				["groups"] = {
+					i(65649),	-- Technique: Origami Slime
 				},
 			}),
 		},

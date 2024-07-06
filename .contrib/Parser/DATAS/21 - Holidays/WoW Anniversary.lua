@@ -688,6 +688,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(171600, {	-- Pride of the Kor'kron
 									["races"] = HORDE_ONLY,
 								}),
+								i(171528, {	-- Reign of the Dead
+									["races"] = HORDE_ONLY,
+								}),
+								i(171549, {	-- Reign of the Unliving
+									["races"] = ALLIANCE_ONLY,
+								}),
 								i(171611, {	-- Robes of the Sleepless
 									["races"] = HORDE_ONLY,
 								}),

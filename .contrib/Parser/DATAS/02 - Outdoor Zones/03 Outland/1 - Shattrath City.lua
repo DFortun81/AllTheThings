@@ -1021,7 +1021,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22429,	-- Vekax
 						["coord"] = { 47.7, 18.8, SHATTRATH_CITY },
 						["timeline"] = { ADDED_8_2_5 },
-						["minReputation"] = { 1011, HONORED },	-- Lower City, Honored.
+						["minReputation"] = { 1011, EXALTED },	-- Lower City, Exalted.
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["repeatable"] = true,
 						["groups"] = {

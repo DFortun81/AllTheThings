@@ -22,7 +22,6 @@ root(ROOTS.Zones, {
 						crit(19799),	-- Amber (Dread Wastes)
 						crit(19800),	-- The Empress (Dread Wastes)
 					}),
-					ach(6545),	-- Klaxxi
 					ach(7316, {	-- Over Their Heads
 						crit(20511, {		-- Garalon
 							["crs"] = { 63667 },
@@ -89,18 +88,6 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					ach(7321),	-- Spreading the Warmth
-					ach(7313, {	-- Stay Klaxxi
-						crit(20951),	-- Angel of Death
-						crit(20952),	-- Master of Puppets
-						crit(20953),	-- Painkiller
-						crit(20954),	-- Seek and Destroy
-						crit(20955),	-- Raining Blood
-						crit(20956),	-- Iron Mantid
-						crit(20957),	-- Silent Lucidity
-						crit(20958),	-- Speed
-						crit(20959),	-- Children of the Grave
-						crit(20960),	-- Battle Hymn
-					}),
 					ach(7314),	-- Test Drive
 					ach(8023, {		-- Wakener
 						-- Meta Achievement
@@ -153,7 +140,23 @@ root(ROOTS.Zones, {
 					exploration(6444),	-- Zan'vess
 				}),
 				n(FACTIONS, {
-					faction(1337),	-- The Klaxxi
+					faction(1337, {	-- The Klaxxi
+						n(ACHIEVEMENTS, {
+							ach(6545),	-- The Klaxxi
+							ach(7313, {	-- Stay Klaxxi
+								crit(20951),	-- Angel of Death
+								crit(20952),	-- Master of Puppets
+								crit(20953),	-- Painkiller
+								crit(20954),	-- Seek and Destroy
+								crit(20955),	-- Raining Blood
+								crit(20956),	-- Iron Mantid
+								crit(20957),	-- Silent Lucidity
+								crit(20958),	-- Speed
+								crit(20959),	-- Children of the Grave
+								crit(20960),	-- Battle Hymn
+							}),
+						}),
+					}),
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1070, {	-- Klaxxi'vess, Dread Wastes
@@ -194,6 +197,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 25.7, 50.2, DREAD_WASTES },
 						["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 						["sourceQuest"] = 31175,	-- Skeer the Bloodseeker
+						["groups"] = {
+							i(85229),	-- Volatile Blood (QI!)
+						},
 					}),
 					q(31066, {	-- A Cry From Darkness
 						["coord"] = { 54.7, 34.0, DREAD_WASTES },
@@ -230,6 +236,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.6, 42.1, DREAD_WASTES },
 						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 						["sourceQuest"] = 31018,	-- Beneath the Heart of Fear
+						["groups"] = {
+							o(213267, {	-- Dreadshade
+								i(85573),	-- Dreadshade (QI!)
+							}),
+						},
 					}),
 					q(31661, {	-- A Source of Terrifying Power
 						["coord"] = { 44.5, 41.3, DREAD_WASTES },
@@ -240,6 +251,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 25.7, 50.2, DREAD_WASTES },
 						["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 						["sourceQuest"] = 31175,	-- Skeer the Bloodseeker
+						["groups"] = {
+							o_repeated({
+								i(85211),	-- Starfish Meat (QI!)
+								o(212987),	-- Spiny Starfish
+								o(212988),	-- Spiny Starfish
+							}),
+						},
 					}),
 					q(56617, {	-- A Unified Swarm
 						["lvl"] = 120,
@@ -257,6 +275,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 						["sourceQuest"] = 31006,	-- The Klaxxi Council
 						["g"] = {
+							i(83135),	-- Amber Blade (QI!)
 							i(88122),	-- Motherseed Shoes
 							i(88121),	-- Sapfly Shoes
 							i(88120),	-- Withered Wood Shoes
@@ -339,6 +358,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 31679,	-- Extending Our Coverage
 						["description"] = "This version is available if Kor'ik has been killed.",
 						["g"] = {
+							o(212923, {	-- Amber Collector
+								i(85159),	-- Amber-Filled Jar (QI!)
+							}),
 							i(84635),	-- Amberglow Locket
 							i(84636),	-- Amberglow Choker
 							i(84637),	-- Amberglow Necklace
@@ -360,6 +382,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.1, 17.1, DREAD_WASTES },
 						["provider"] = { "n", 62666 },	-- Sapmaster Vu
 						["sourceQuest"] = 31084,	-- Bind the Glamour
+						["groups"] = {
+							o(212902, {	-- Solidified Amber
+								i(84779),	-- Chunk of Solidified Amber (QI!)
+							}),
+						},
 					}),
 					q(31069, {	-- Bound With Shade
 						["coord"] = { 51.2, 11.3, DREAD_WASTES },
@@ -379,6 +406,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							31070,	-- Daggers of the Great Ones
 							31069,	-- Bound With Shade
+						},
+						["groups"] = {
+							i(84118),	-- Fragrant Corewood (QI!)
 						},
 					}),
 					q(31238, {	-- Brain Food
@@ -410,6 +440,9 @@ root(ROOTS.Zones, {
 							31090,	-- Better With Age
 							31088,	-- Crime and Punishment
 						},
+						["groups"] = {
+							i(84119),	-- Klaxxi Tuning Fork (QI!)
+						},
 					}),
 					q(31107, {	-- Citizens of a New Empire
 						["coord"] = { 55.0, 35.4, DREAD_WASTES },
@@ -419,11 +452,19 @@ root(ROOTS.Zones, {
 							31660,	-- Not Fit to Swarm
 							31007,	-- The Dread Clutches
 						},
+						["groups"] = {
+							o(214170, {	-- Vorthik Egg
+								i(86598),	-- Vor'thik Eggs (QI!)
+							}),
+						},
 					}),
 					q(31108, {	-- Concentrated Fear
 						["coord"] = { 55.0, 35.5, DREAD_WASTES },
 						["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 						["sourceQuest"] = 31661,	-- A Source of Terrifying Power
+						["groups"] = {
+							i(86616),	-- Dread Amber Focus (QI!)
+						},
 					}),
 					q(31441, {	-- Corruption Runs Deep
 						["coord"] = { 56.2, 58.2, DREAD_WASTES },
@@ -462,6 +503,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.1, 11.2, DREAD_WASTES },
 						["provider"] = { "n", 62668 },	-- Olon
 						["sourceQuest"] = 31068,	-- Sacred Recipe
+						["groups"] = {
+							i(84107),	-- Large Mushan Tooth (QI!)
+						},
 					}),
 					q(31458, {	-- Damage Control
 						["coord"] = { 56.2, 58.2, DREAD_WASTES },
@@ -469,6 +513,9 @@ root(ROOTS.Zones, {
 						["providers"] = {
 							{ "n", 64705 },	-- Hisek the Swarmkeeper
 							{ "n", 65454 },	-- Hisek the Swarmkeeper
+						},
+						["groups"] = {
+							i(87269),	-- Kypari Ik Resonating Crystal (QI!)
 						},
 					}),
 					q(31216, {	-- Dark Skies
@@ -481,11 +528,17 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.6, 42.1, DREAD_WASTES },
 						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 						["sourceQuest"] = 31018,	-- Beneath the Heart of Fear
+						["groups"] = {
+							i(85572),	-- Scarab Wing (QI!)
+						},
 					}),
 					q(31009, {	-- Dead Zone
 						["coord"] = { 54.7, 34.0, DREAD_WASTES },
 						["provider"] = { "n", 64815 },	-- Kor'ik
 						["sourceQuest"] = 31006,	-- The Klaxxi Council
+						["groups"] = {
+							i(83276),	-- Klaxxi Resonating Crystal (QI!)
+						},
 					}),
 					q(31237, {	-- Debugging the Terrace
 						["coord"] = { 54.8, 36.2, DREAD_WASTES },
@@ -522,6 +575,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 64815 },	-- Kor'ik
 						["minReputation"] = { 1337, REVERED },
 						["sourceQuest"] = 31066,	-- A Cry From Darkness
+						["groups"] = {
+							i(87202),	-- Klaxxi Tuning Fork (QI!)
+						},
 					}),
 					q(31111, {	-- Eradicating the Zan'thik
 						["coord"] = { 55.0, 35.8, DREAD_WASTES },
@@ -559,6 +615,7 @@ root(ROOTS.Zones, {
 							{ "n", 65454 },	-- Hisek the Swarmkeeper
 						},
 						["g"] = {
+							i(87263),	-- Venom-Coated Mandible (QI!)
 							i(88140),	-- Motherseed Wristwraps
 							i(88139),	-- Sapfly Wristwraps
 							i(88138),	-- Withered Wood Wristwraps
@@ -595,6 +652,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 214062 },	-- Glowing Amber
 						["sourceQuest"] = 31091,	-- Reunited
 						["g"] = {
+							i(86533),	-- Glowing Amber (QI!)
 							i(84626),	-- Sunset Satin Robe
 							i(84627),	-- Sunset Hide Robes
 							i(84628),	-- Withered Wood Breastplate
@@ -624,6 +682,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 41.7, 72.0, DREAD_WASTES },
 						["provider"] = { "n", 64344 },	-- Kaz'tik the Manipulator
 						["sourceQuest"] = 31091,	-- Reunited
+						["groups"] = {
+							i(86489),	-- Succulent Turtle Filet (QI!)
+						},
 					}),
 					q(31020, {	-- Feeding the Beast
 						["coord"] = { 66.8, 65.3, DREAD_WASTES },
@@ -637,17 +698,24 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.1, 17.1, DREAD_WASTES },
 						["provider"] = { "n", 62668 },	-- Olon
 						["sourceQuest"] = 31075,	-- Sunset Kings
+						["groups"] = {
+							i(84239),	-- Flitterling Dust (QI!)
+						},
 					}),
 					q(31177, {	-- Fine Dining
 						["coord"] = { 25.7, 50.2, DREAD_WASTES },
 						["provider"] = { "n", 63071 },	-- Skeer the Bloodseeker
 						["sourceQuest"] = 31175,	-- Skeer the Bloodseeker
+						["groups"] = {
+							i(85212),	-- Clacker Tail (QI!)
+						},
 					}),
 					q(31085, {	-- Fires and Fears of Old
 						["coord"] = { 38.2, 17.1, DREAD_WASTES },
 						["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 						["sourceQuest"] = 31084,	-- Bind the Glamour
 						["g"] = {
+							i(84771),	-- Ruining Fork (QI!)
 							i(84019),	-- Motherseed Treads
 							i(84020),	-- Sapfly Footguards
 							i(84021),	-- Withered Wood Sabatons
@@ -673,6 +741,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 63349 },	-- Deck Boss Arie
 						["sourceQuest"] = 31265,	-- Mazu's Breath
 						["g"] = {
+							i(85230),	-- Sea Monarch Chunks (QI!)
 							i(84001),	-- Motherseed Robe
 							i(84002),	-- Sapfly Tunic
 							i(84003),	-- Withered Wood Armor
@@ -695,6 +764,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 38.6, 17.2, DREAD_WASTES },
 						["provider"] = { "n", 62771 },	-- Chief Rikkitun
 						["sourceQuest"] = 31075,	-- Sunset Kings
+						["groups"] = {
+							i(84267),	-- Rikkitun Bell (QI!)
+						},
 					}),
 					q(31078, {	-- Han Stormstout
 						["coord"] = { 50.1, 10.2, DREAD_WASTES },
@@ -717,6 +789,17 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.1, 11.1, DREAD_WASTES },
 						["provider"] = { "n", 62859 },	-- Thirsty Missho
 						["sourceQuest"] = 31068,	-- Sacred Recipe
+						["groups"] = {
+							o(212540, {	-- Lost Keg
+								i(83781),	-- Lost Keg (QI!)
+							}),
+							o(212541, {	-- Lost Mugs
+								i(83782),	-- Lost Mugs (QI!)
+							}),
+							o(212553, {	-- Lost Picnic Supplies
+								i(83783),	-- Lost Picnic Supplies (QI!)
+							}),
+						},
 					}),
 					q(31010, {	-- In Her Clutch
 						["coord"] = { 40.0, 39.0, DREAD_WASTES },
@@ -789,6 +872,11 @@ root(ROOTS.Zones, {
 							{ "n", 62232 },	-- Korven the Prime
 							{ "n", 63328 },	-- Korven the Prime
 						},
+						["groups"] = {
+							o(212009, {	-- Amber Fragment
+								i(82864),	-- Living Amber (QI!)
+							}),
+						},
 					}),
 					q(31354, {	-- Mazu's Bounty
 						["coord"] = { 56.5, 75.8, DREAD_WASTES },
@@ -801,6 +889,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = {
 							31066,	-- A Cry From Darkness
 							31727,	-- Gambling Problem
+						},
+						["groups"] = {
+							i(85869),	-- Potion of Mazu's Breath (QI!)
 						},
 					}),
 					q(31183, {	-- Meet the Cap'n
@@ -854,11 +945,19 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.6, 72.4, DREAD_WASTES },
 						["provider"] = { "n", 63317 },	-- Captain "Soggy" Su-Dao
 						["sourceQuest"] = 31183,	-- Meet the Cap'n
+						["groups"] = {
+							o(213454, {	-- Soggy's Footlocker
+								i(85886),	-- Sealed Charter Tube (QI!)
+							}),
+						},
 					}),
 					q(31187, {	-- On the Crab
 						["coord"] = { 54.7, 72.1, DREAD_WASTES },
 						["provider"] = { "n", 63349 },	-- Deck Boss Arie
 						["sourceQuest"] = 31183,	-- Meet the Cap'n
+						["groups"] = {
+							i(85972),	-- Mist-Hopper Emergency Buoy (QI!)
+						},
 					}),
 					q(56616, {	-- Old Faces, New Problems
 						["lvl"] = 120,
@@ -914,6 +1013,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 73.6, 27.5, DREAD_WASTES },
 						["provider"] = { "n", 62203 },	-- Klaxxi'va Tik
 						["sourceQuest"] = 31003,	-- Psycho Mantid
+						["groups"] = {
+							i(83062),	-- Klaxxi Tuning Fork (QI!)
+						},
 					}),
 					q(31083, {	-- Promises of Gold
 						["coord"] = { 27.4, 16.2, DREAD_WASTES },
@@ -970,12 +1072,19 @@ root(ROOTS.Zones, {
 						["cr"] = 61970,	-- Mistblade Ripper
 						["coord"] = { 62.9, 57.8, DREAD_WASTES },
 						["provider"] = { "i", 82870 },	-- Strange Relic
+						["groups"] = {
+							o(212079, {	-- Mantid Relic
+								i(82867),	-- Mantid Relic (QI!)
+							}),
+						},
 					}),
 					q(31072, {	-- Rending Daggers
 						["coord"] = { 50.7, 11.7, DREAD_WASTES },
 						["provider"] = { "n", 62667 },	-- Lya of Ten Songs
 						["sourceQuest"] = 31068,	-- Sacred Recipe
 						["g"] = {
+							i(84111),	-- Blade of Kz'Kzik (QI!)
+							i(84112),	-- Blade of Ilikkax (QI!)
 							i(88131),	-- Motherseed Handwraps
 							i(88130),	-- Sapfly Handwraps
 							i(88129),	-- Withered Wood Handguards
@@ -1021,6 +1130,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 31398,	-- Falling to Pieces
 						["description"] = "Must be on or have completed |cFFFFD700The Heavens Hum With War|r.",
 						["g"] = {
+							i(84586),	-- Scroll of Auspice (QI!)
 							i(84071),	-- Charm of Ten Songs
 							i(84072),	-- Braid of Ten Songs
 							i(84073),	-- Knot of Ten Songs
@@ -1072,6 +1182,11 @@ root(ROOTS.Zones, {
 						["providers"] = {
 							{ "n", 63349 },	-- Deck Boss Arie
 							{ "n", 64259 },	-- Master Angler Ju Lien
+						},
+						["groups"] = {
+							i(85998, {	-- Thresher Jaw (QI!)
+								i(85999),	-- Thresher Teeth (QI!)
+							}),
 						},
 					}),
 					q(31503, {	-- Shortcut to Ruin
@@ -1310,6 +1425,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 28.6, 42.1, DREAD_WASTES },
 						["provider"] = { "n", 62151 },	-- Xaril the Poisoned Mind
 						["sourceQuest"] = 31018,	-- Beneath the Heart of Fear
+						["groups"] = {
+							i(85571),	-- Venomous Stinger (QI!)
+						},
 					}),
 					q(31505, {	-- Vess-Guard Duty
 						["coord"] = { 55.0, 35.8, DREAD_WASTES },
@@ -1321,6 +1439,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 70.1, 25.6, DREAD_WASTES },
 						["provider"] = { "n", 62202 },	-- Kil'ruk the Wind-Reaver
 						["sourceQuest"] = 31004,	-- Preserved in Amber
+						["groups"] = {
+							i(83075),	-- Sapfly Bits (QI!)
+						},
 					}),
 					q(31185, {	-- Walking Dog
 						["coord"] = { 55.6, 72.4, DREAD_WASTES },
@@ -1364,6 +1485,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.7, 72.1, DREAD_WASTES },
 						["provider"] = { "n", 63349 },	-- Deck Boss Arie
 						["sourceQuest"] = 31265,	-- Mazu's Breath
+						["groups"] = {
+							i(85231),	-- Bag of Clams (QI!)
+						},
 					}),
 				}),
 				n(RARES, {

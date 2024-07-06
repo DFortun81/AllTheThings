@@ -3,7 +3,6 @@ i(216893),	-- Goblin Town-in-a-Box
 11.0.0.54311
 i(216887),	--
 11.0.0.54521
-i(224643),	-- Pet-Sized Candle
 i(224783),	-- Sovereign's Finery Chest \\ Sovereign Finery Chest
 i(224809),	-- Earthen Plumber's Pipe
 11.0.0.54605
@@ -14,9 +13,6 @@ i(225547),	-- Toxic Victory
 i(225641),	-- Illusive Kobyss Lure
 i(225659),	-- Arathi Book Collection \\ Arathor Book Collection
 i(225910),	-- Pileus Delight
-11.0.0.54774
-i(225933),	-- Forged Legend's Pennant
-i(225969),	-- Forged Flag of Victory
 11.0.0.54935
 i(225556),	-- Ancient Construct
 i(226191),	-- Web Pet Leash
@@ -24,8 +20,8 @@ i(226191),	-- Web Pet Leash
 i(226519),	-- General's Expertise
 11.0.0.55087
 i(226810),	-- Infiltrator's Shroud
-i(227538),	-- Unbound Legend's Pennant
-i(227539),	-- Unbound Strategist's Pennant
+11.0.0.55288
+i(228413),	-- Lampyridae Caller
 
 
 
@@ -35,7 +31,6 @@ Missing in ToyDB.lua
 11.0.0.54311
 i(216887),	--
 11.0.0.54521
-i(224643),	-- Pet-Sized Candle
 i(224783),	-- Sovereign's Finery Chest \\ Sovereign Finery Chest
 i(224809),	-- Earthen Plumber's Pipe
 11.0.0.54605
@@ -46,9 +41,6 @@ i(225547),	-- Toxic Victory
 i(225641),	-- Illusive Kobyss Lure
 i(225659),	-- Arathi Book Collection \\ Arathor Book Collection
 i(225910),	-- Pileus Delight
-11.0.0.54774
-i(225933),	-- Forged Legend's Pennant
-i(225969),	-- Forged Flag of Victory
 11.0.0.54935
 i(225556),	-- Ancient Construct
 i(226191),	-- Web Pet Leash
@@ -56,5 +48,5 @@ i(226191),	-- Web Pet Leash
 i(226519),	-- General's Expertise
 11.0.0.55087
 i(226810),	-- Infiltrator's Shroud
-i(227538),	-- Unbound Legend's Pennant
-i(227539),	-- Unbound Strategist's Pennant
+11.0.0.55288
+i(228413),	-- Lampyridae Caller

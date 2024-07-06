@@ -448,3 +448,18 @@ i(224163, 82741);	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor
 i(210471, 78401);	-- Flourishing Whimsydrake: Body Armor (might be already 10.2.0)
 i(207760, 77131);	-- Grotto Netherwing Drake: Armor (might be already 10.2.0)
 i(213561, 79690);	-- Winding Slitherdrake: Void Scales
+
+
+
+
+--- This File Will Be Renamed to include all Mount Mods!
+i(224981, 82187);	-- Delver's Dirigible Schematic: Brown Paint
+i(224771, 82181);	-- Delver's Dirigible Schematic: Empennage
+i(224982, 82179);	-- Delver's Dirigible Schematic: Exhaust
+i(224980, 82170);	-- Delver's Dirigible Schematic: Front-Mounted Lantern
+i(224770, 82167);	-- Delver's Dirigible Schematic: Front-Mounted Propeller
+i(224960, 82176);	-- Delver's Dirigible Schematic: Lantern Wing
+i(224769, 82183);	-- Delver's Dirigible Schematic: Rotor Blades
+i(225542, 83308);	-- Delver's Dirigible Schematic: Void
+i(224768, 82171);	-- Delver's Dirigible Schematic: Wing-Mounted Propeller
+i(224979, 82185);	-- Delver's Dirigible Schematic: Zeppelin

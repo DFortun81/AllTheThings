@@ -79,20 +79,20 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
 				expansion(EXPANSION.TWW, 0.01, bubbleDown({ ["timeline"] = { CREATED_11_0_0 } }, {
-					i(212725), -- Fleeting Flask of Tempered Aggression+
-					i(212727), -- Fleeting Flask of Tempered Aggression++
-					i(212728), -- Fleeting Flask of Tempered Aggression+++
-					i(212324), -- QA Agonizing Potion
-					i(212318), -- QA Algari Healing Potion
-					i(212319), -- QA Algari Mana Potion
-					i(212320), -- QA Cavedweller's Delight
-					i(212323), -- QA Draught of Shocking Revelations
-					i(212322), -- QA Draught of Silent Footfalls
-					i(212326), -- QA Frontline Potion
-					i(212328), -- QA Potion of the Reborn Cheetah
-					i(212325), -- QA Potion of Unwavering Focus
-					i(212321), -- QA Slumbering Soul Serum
-					i(212327), -- QA Tempered Potion
+					i(212725),	-- Fleeting Flask of Tempered Aggression+
+					i(212727),	-- Fleeting Flask of Tempered Aggression++
+					i(212728),	-- Fleeting Flask of Tempered Aggression+++
+					i(212318),	-- QA Algari Healing Potion
+					i(212319),	-- QA Algari Mana Potion
+					i(212320),	-- QA Cavedweller's Delight
+					i(212323),	-- QA Draught of Shocking Revelations
+					i(212322),	-- QA Draught of Silent Footfalls
+					i(212326),	-- QA Frontline Potion
+					i(212324),	-- QA Grotesque Vial
+					i(212328),	-- QA Potion of the Reborn Cheetah
+					i(212325),	-- QA Potion of Unwavering Focus
+					i(212321),	-- QA Slumbering Soul Serum
+					i(212327),	-- QA Tempered Potion
 				})),
 			}),
 		}),

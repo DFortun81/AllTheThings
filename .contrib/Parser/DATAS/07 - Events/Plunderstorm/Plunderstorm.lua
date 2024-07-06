@@ -25,49 +25,52 @@ PLUNDERSTORM = createHeader({
 -- #if NOT ANYCLASSIC
 root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"] = { ADDED_10_2_6, REMOVED_PLUNDERSTORM_END } }, {
 	n(PLUNDERSTORM, {
-		n(ACHIEVEMENTS, {
-			ach(20509),	-- Plunderking
-			ach(20508),	-- Plunder Wonder
-		}),
-		n(QUESTS, sharedData({
-			["repeatable"] = true,
-		},{
-		--	q(81679),	-- Daily Doubloons
-		})),
-		n(QUESTS, sharedData({
-			["isWorldQuest"] = true,
-		},{
-			q(79246),	-- Captain's Orders: Coffer Collector
-			q(80081),	-- Captain's Orders: Flood and Plunder
-			q(79249),	-- Captain's Orders: Kill Haul
-			q(79379),	-- Captain's Orders: No Prey, No Pay
-			q(79382),	-- Captain's Orders: Plunderstudy
-			q(79381),	-- Captain's Orders: X Marks the Spot
-			q(79965),	-- Learn the Ropes or Walk the Plank
-		})),
-		n(VENDORS, {
-			n(219760, {	-- Da'kash Grimledger <Quartermaster>
-				["sourceQuests"] = { 80384 },	-- xx
-				["coord"] = { 46.5, 45.1, VALDRAKKEN },
-				["groups"] = {
-					i(217411, {	-- Blackened Flightstone
-						["cost"] = {{"i", 217397, 1}},	-- 1x Keg-Stamped Coin
-					}),
-					i(217412, {	-- Blackened Flightstone
-						["cost"] = {{"i", 217397, 1}},	-- 1x Keg-Stamped Coin
-					}),
-					i(217419, {	-- Large Satchel of Drake's Dreaming Crests
-						["cost"] = {{"i", 217397, 2}},	-- 2x Keg-Stamped Coin
-					}),
-					i(217420, {	-- Large Pouch of Whelpling's Awakened Crests
-						["cost"] = {{"i", 217397, 2}},	-- 2x Keg-Stamped Coin
-					}),
-					i(217705, {	-- Pirate's Booty
-						["cost"] = 18	-- 18c
-					}),
-				},
+		["maps"] = { 2257 },	-- Arathi Highlands
+		["groups"] = {
+			n(ACHIEVEMENTS, {
+				ach(20509),	-- Plunderking
+				ach(20508),	-- Plunder Wonder
 			}),
-		}),
+			n(QUESTS, sharedData({
+				["repeatable"] = true,
+			},{
+			--	q(81679),	-- Daily Doubloons
+			})),
+			n(QUESTS, sharedData({
+				["isWorldQuest"] = true,
+			},{
+				q(79246),	-- Captain's Orders: Coffer Collector
+				q(80081),	-- Captain's Orders: Flood and Plunder
+				q(79249),	-- Captain's Orders: Kill Haul
+				q(79379),	-- Captain's Orders: No Prey, No Pay
+				q(79382),	-- Captain's Orders: Plunderstudy
+				q(79381),	-- Captain's Orders: X Marks the Spot
+				q(79965),	-- Learn the Ropes or Walk the Plank
+			})),
+			n(VENDORS, {
+				n(219760, {	-- Da'kash Grimledger <Quartermaster>
+					["sourceQuests"] = { 80384 },	-- xx
+					["coord"] = { 46.5, 45.1, VALDRAKKEN },
+					["groups"] = {
+						i(217411, {	-- Blackened Flightstone
+							["cost"] = {{"i", 217397, 1}},	-- 1x Keg-Stamped Coin
+						}),
+						i(217412, {	-- Blackened Flightstone
+							["cost"] = {{"i", 217397, 1}},	-- 1x Keg-Stamped Coin
+						}),
+						i(217419, {	-- Large Satchel of Drake's Dreaming Crests
+							["cost"] = {{"i", 217397, 2}},	-- 2x Keg-Stamped Coin
+						}),
+						i(217420, {	-- Large Pouch of Whelpling's Awakened Crests
+							["cost"] = {{"i", 217397, 2}},	-- 2x Keg-Stamped Coin
+						}),
+						i(217705, {	-- Pirate's Booty
+							["cost"] = 18	-- 18c
+						}),
+					},
+				}),
+			}),
+		},
 	}),
 	-- Renown Rewards
 	n(PLUNDERSTORM, {

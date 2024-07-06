@@ -3,34 +3,37 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 	expansion(EXPANSION.CLASSIC, {
-		-- Without SpeciesID Attached
-		i(21168, {	-- Baby Shark (PET!)
+		-- 1.x.x
+		n(P1xx, {
+			-- Without SpeciesID Attached
+			i(21168, {	-- Baby Shark (PET!)
 			["displayID"] = 21168,
-		}),
-		i(11903, {	-- Cat Carrier (Corrupted Kitten) (PET!)
+			}),
+			i(11903, {	-- Cat Carrier (Corrupted Kitten) (PET!)
 			["displayID"] = 9209,
-		}),
-		i(18963, {	-- Turtle Egg (Albino)
+			}),
+			i(18963, {	-- Turtle Egg (Albino)
 			-- ["displayID"] = ,
-		}),
-		i(18964, {	-- Loggerhead Snapjaw / Turtle Egg (Loggerhead) (PET!)
+			}),
+			i(18964, {	-- Loggerhead Snapjaw / Turtle Egg (Loggerhead) (PET!)
 			["displayID"] = 14657,
-		}),
-		i(18965, {	-- Turtle Egg (Hawksbill)
+			}),
+			i(18965, {	-- Turtle Egg (Hawksbill)
 			-- ["displayID"] = ,
-		}),
-		i(18966, {	-- Turtle Egg (Leatherback)
+			}),
+			i(18966, {	-- Turtle Egg (Leatherback)
 			-- ["displayID"] = ,
-		}),
-		i(18967, {	-- Turtle Egg (Olive)
+			}),
+			i(18967, {	-- Turtle Egg (Olive)
 			-- ["displayID"] = ,
-		}),
+			}),
 
-		i(13342, {	-- Pet Fish (PET!)
+			i(13342, {	-- Pet Fish (PET!)
 			-- ["displayID"] = ,
-		}),
-		i(13343, {	-- Pet Stone (PET!)
+			}),
+			i(13343, {	-- Pet Stone (PET!)
 			-- ["displayID"] = ,
+			}),
 		}),
 	}),
 	expansion(EXPANSION.TBC, {
@@ -1210,9 +1213,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 				["name"] = "Red Dragon Whelp",
 				["displayID"] = 107464,
 			}),
-			pet(3362, {	-- Sapphire Crab (PET!)
-				["displayID"] = 107826,
-			}),
 			pet(3364, {	-- Striped Snakebiter (PET!)
 				["displayID"] = 107830,
 			}),
@@ -1400,7 +1400,7 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(205035, {	-- Snapjaw Lurker (PET!)
 				["displayID"] = 112163,
 			}),
-			i(205148, {	-- Soot-stanined Shalewing (PET!)
+			i(205148, {	-- Soot-Stained Shalewing (PET!)
 				["displayID"] = 112186,
 			}),
 			i(205157, {	-- Undermoth (PET!)
@@ -1419,10 +1419,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(3609),	-- Sporeflower (PET!)
 			pet(3975),	-- Midnight Terrorwing (PET!)
 			pet(4237),	-- Treanthony (PET!)
-			-- With SpeciesID Attached
-			i(206174, {	-- Blub (PET!)
-				["displayID"] = 112678,
-			}),
 		})),
 
 		-- 10.2.5

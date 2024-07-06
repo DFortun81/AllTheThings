@@ -4,17 +4,22 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		n(ACHIEVEMENTS, {
-			ach(20118, {	-- The Isle of Dorn
-				crit(66214, {	-- Breaking Point
-					["sourceQuest"] = 78536,	-- Impossible Odds
-				}),
-				crit(66215, {	-- Earthen Fissures
-					["sourceQuest"] = 78471,	-- Convergence
-				}),
-				crit(66216, {	-- The First Blow
-					["sourceQuest"] = 78546,	-- Recompense
-				}),
+			ach(40435),		-- Adventurer of the Isle of Dorn (automated)
+			ach(40831, {	-- Explore the Isle of Dorn
+				-- TODO: These criteria look unfinished
+				crit(69608),	-- Ruptured Lake
+				crit(69608),	-- Lightless Channels
+				crit(69608),	-- Crawling Chasm
+				crit(69608),	-- The Weaver's Lair
+				crit(69608),	-- Untamed Valley
+				crit(69608),	-- Twitching Gorge
+				crit(69608),	-- Rak-Ush
+				crit(69608),	-- The Skeins
+				crit(69608),	-- Umbral Bazaar
+				crit(69608),	-- High Hollows
 			}),
+			ach(40630),		-- For the Collective
+			ach(40623),		-- I Only Need One Trip
 			ach(40166, {	-- Isle of Dorn Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -30,49 +35,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					40152,	-- Skyriding Glyphs: The Three Shields
 				}},
 			}),
-			ach(20595, {	-- Sojourner of Isle of Dorn
-				crit(67054, {	-- Spores of Dread
-					["sourceQuest"] = 78574,	-- Boss of the Bosk
-				}),
-				crit(67055, {	-- Behind Closed Doors
-					-- Remove when the quest below is uncommented
-					["_noautomation"] = true,
-					--["sourceQuest"] = 79530,	-- TODO: quest name (could be HQT?)
-				}),
-				crit(67059, {	-- Seven Soldiers
-					["sourceQuest"] = 78999,	-- Heart of a Hero
-				}),
-				crit(67066, {	-- Lost Lord of the Storm
-					["sourceQuest"] = 78294,	-- Thunderhead Butt
-				}),
-				crit(67074, {	-- Hope, An Anomaly
-					["sourceQuest"] = 79703,	-- Hope, An Anomaly
-				}),
-				crit(67075, {	-- The Hermit
-					["sourceQuest"] = 78759,	-- To Wake a Giant
-				}),
-				crit(67085, {	-- A Titanic Expedition
-					["sourceQuest"] = 79728,	-- It's Probably Nothing
-				}),
-				crit(68162, {	-- Remember Me, Earthen
-					["sourceQuest"] = 82895,	-- The Weight of Duty
-				}),
-				crit(67056, {	-- Brotherhood in the Skolzgal Wood
-					-- Remove when the quest below is uncommented
-					["_noautomation"] = true,
-					--	["sourceQuest"] = 80218,	-- TODO: quest name (could be HQT?)
-				}),
-				crit(68254, {	-- Brotherhood in the Skolzgal Wood
-					-- Intentionally did not add _noautomation here because showing the name portion of the criteriatree is enough
-					--	["sourceQuest"] = 83181,	-- TODO: quest name (could be HQT?)
-				}),
-				crit(69433, {	-- All Ore Nothing
-					-- Remove noautomation here once new wago files are added, this criteria doesn't exist in the current exports so the parser is unhappy
-					["_noautomation"] = true,
-					["sourceQuest"] = 82801,	-- Beetlejeweled
-				}),
-			}),
-			pvp(ach(40083)),	-- Tour of Duty: Isle of Dorn
 			ach(40665, {	-- Skyriding Glyphs: Dhar Durgaz
 				-- TODO
 				--["coord"] = { X, Y, ISLE_OF_DORN },
@@ -108,6 +70,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			ach(40152, {	-- Skyriding Glyphs: The Three Shields
 				["coord"] = { 75.7, 22.2, ISLE_OF_DORN },
 			}),
+			ach(20595),		-- Sojourner of Isle of Dorn (automated)
+			ach(20118, {	-- The Isle of Dorn
+				crit(66214, {	-- Breaking Point
+					["sourceQuest"] = 78536,	-- Impossible Odds
+				}),
+				crit(66215, {	-- Earthen Fissures
+					["sourceQuest"] = 78471,	-- Convergence
+				}),
+				crit(66216, {	-- The First Blow
+					["sourceQuest"] = 78546,	-- Recompense
+				}),
+			}),
+			pvp(ach(40083)),	-- Tour of Duty: Isle of Dorn
+			ach(40434),		-- Treasures of the Isle of Dorn (automated)
 		}),
 	}),
 })));

@@ -1038,7 +1038,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 		n(QUESTS, {
 			i(198156, {	-- Wyrmhole Generator: Dragon Isles (TOY!)
-				["description"] = "You can collect additional portal options.\nOHN’AHRAN PLAINS = Clomp your hooves, imaginary or otherwise...\nRANDOM LOCATION = Carelessly leap into the portal...\nTHALDRASZUS = Audibly spell out 'Thaldraszus'...\nTHE AZURE SPAN = Ensure your arrival at the Azure Span...\nTHE WAKING SHORES = Pray return to the Waking Shores.",
+				["description"] = "You can collect additional portal options.\nRANDOM LOCATION = Carelessly leap into the portal...\nTHE WAKING SHORES = Pray return to the Waking Shores.\nOHN’AHRAN PLAINS = Clomp your hooves, imaginary or otherwise...\nTHE AZURE SPAN = Ensure your arrival at the Azure Span...\nTHALDRASZUS = Audibly spell out 'Thaldraszus'...\nTHE FORBIDDEN REACH = Disregard the word 'Forbidden' and venture...\nZARALEK CAVERN = Flip the portal horizontally...\nEMERALD DREAM = Close your eyes and snore loudly.",
 				-- Object IDs and quest IDs are put at random to each other.
 				-- There seems to be no way of getting the correct object ID for the Deactivated Signal Transmitter in game. (does not matter for ATT purpose)
 				["g"] = {
@@ -1552,10 +1552,6 @@ profession(ENGINEERING, {
 					["recipeID"] = 3944,
 				},
 				{
-					["name"] = "Force Reactive Disk",
-					["recipeID"] = 22797,
-				},
-				{
 					["name"] = "Gnomish Cloaking Device",
 					["recipeID"] = 3971,
 				},
@@ -1671,6 +1667,12 @@ profession(ENGINEERING, {
 					["name"] = "Snowmaster 9000",
 					["recipeID"] = 21940,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Soul Vessel",
+					["recipeID"] = 431362,
+				}),
+				-- #endif
 				{
 					["name"] = "Steam Tonk Controller",
 					["timeline"] = { CREATED_1_10_0, ADDED_2_0_1 },
@@ -1735,6 +1737,12 @@ profession(ENGINEERING, {
 					["name"] = "EZ-Thro Dynamite II",
 					["recipeID"] = 23069,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Ez-Thro Radiation Bomb",
+					["recipeID"] = 435966,
+				}),
+				-- #endif
 				{
 					["name"] = "Flash Bomb",
 					["recipeID"] = 8243,
@@ -1751,6 +1759,12 @@ profession(ENGINEERING, {
 					["name"] = "Hi-Explosive Bomb",
 					["recipeID"] = 12619,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "High-Yield Radiation Bomb",
+					["recipeID"] = 435964,
+				}),
+				-- #endif
 				{
 					["name"] = "Iron Grenade",
 					["recipeID"] = 3962,
@@ -1957,6 +1971,36 @@ profession(ENGINEERING, {
 				},
 			},
 		},
+		-- #if SEASON_OF_DISCOVERY
+		{
+			["name"] = "Bracers",
+			["categoryID"] = 222,
+			["groups"] = {
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Void-Powered Invoker's Vambraces",
+					["recipeID"] = 446236,
+				}),
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Void-Powered Protector's Vambraces",
+					["recipeID"] = 446238,
+				}),
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Void-Powered Slayer's Vambraces",
+					["recipeID"] = 446237,
+				}),
+			},
+		},
+		{
+			["name"] = "Belts",
+			["categoryID"] = 223,
+			["groups"] = {
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Hyperconductive Goldwap",
+					["recipeID"] = 435960,
+				}),
+			},
+		},
+		-- #endif
 		{
 			["name"] = "Guns & Bows",
 			["categoryID"] = 189,
@@ -2007,6 +2051,22 @@ profession(ENGINEERING, {
 					["name"] = "Thorium Rifle",
 					["recipeID"] = 19792,
 				},
+			},
+		},
+		{
+			["name"] = "Shields",
+			["categoryID"] = 226,
+			["groups"] = {
+				{
+					["name"] = "Force Reactive Disk",
+					["recipeID"] = 22797,
+				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Whirling Truesilver Gearwall",
+					["recipeID"] = 435958,
+				}),
+				-- #endif
 			},
 		},
 		{
@@ -2108,6 +2168,12 @@ profession(ENGINEERING, {
 					["name"] = "Whirring Bronze Gizmo",
 					["recipeID"] = 3942,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Polished Truesilver Gears",
+					["recipeID"] = 435956,
+				}),
+				-- #endif
 			},
 		},
 		{

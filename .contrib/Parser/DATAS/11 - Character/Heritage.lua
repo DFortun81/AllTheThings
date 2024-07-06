@@ -233,7 +233,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["g"] = {
 					i(210455),	-- Draenic Hologem (TOY!)
 					i(211313, {	-- Ensemble: Heritage of the Draenei
-						i(211333),	-- Amethyst Bands of Telhamat	
+						i(211333),	-- Amethyst Bands of Telhamat
 						i(211340),	-- Amethyst Chestplate of Telhamat
 						i(211338),	-- Amethyst Grips of Telhamat
 						i(211335),	-- Amethyst Sentinels of Telhamat
@@ -331,6 +331,14 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				},
 			}),
 		}),
+	})),
+	race(EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH }, ["races"] = { EARTHEN_ALLIANCE } }, {
+		-- TODO: Questline + heritage armor
+		ach(40309),	-- Heritage of the Earthen
+	})),
+	race(EARTHEN_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH }, ["races"] = { EARTHEN_HORDE } }, {
+		-- TODO: Questline + heritage armor
+		ach(40309),	-- Heritage of the Earthen
 	})),
 	race(GNOME, bubbleDown({ ["timeline"] = { ADDED_8_2_0 }, ["races"] = { GNOME } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",

@@ -197,12 +197,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(79230, {	-- Creeping Through Corridors
 				["sourceQuests"] = { 79227 },	-- A Spider's-Eye View
 				["provider"] = { "n", 215626 },	-- Lilian Voss
-				["coord"] = { 69.5, 71.7, 2213 },
+				["coord"] = { 69.5, 71.7, NERUBAR },
 			}),
 			q(79233, {	-- Lab Access
 				["sourceQuests"] = { 79227 },	-- A Spider's-Eye View
 				["provider"] = { "n", 215637 },	-- Y'tekhi
-				["coord"] = { 69.5, 72.2, 2213 },
+				["coord"] = { 69.5, 72.2, NERUBAR },
 				["g"] = {
 					i(215457),	-- Loyalist Secretions (QI!)
 				},
@@ -213,7 +213,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					79233,	-- Lab Access
 				},
 				["provider"] = { "n", 215628 },	-- Lilian Voss
-				["coord"] = { 56.7, 90.6, 2213 },
+				["coord"] = { 56.7, 90.6, NERUBAR },
 				["g"] = {
 					i(223431),	-- The Fallen Queen's Band
 				},
@@ -221,22 +221,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(79239, {	-- The Queen's Chains
 				["sourceQuests"] = { 79237 },	-- Making of a Monster
 				["provider"] = { "n", 215659 },	-- Y'tekhi
-				["coord"] = { 57.1, 91.0, 2213 },
+				["coord"] = { 57.1, 91.0, NERUBAR },
 			}),
 			q(79240, {	-- Rogue Agent
 				["sourceQuests"] = { 79239 },	-- The Queen's Chains
 				["provider"] = { "n", 215661 },	-- Lilian Voss
-				["coord"] = { 78.8, 57.3, 2213 },
+				["coord"] = { 78.8, 57.3, NERUBAR },
 			}),
 			q(79241, {	-- Go Loud
 				["sourceQuests"] = { 79240 },	-- Rogue Agent
 				["provider"] = { "n", 215662 },	-- Lilian Voss
-				["coord"] = { 78.6, 39.6, 2213 },
+				["coord"] = { 78.6, 39.6, NERUBAR },
 			}),
 			q(79243, {	-- Manufactured Mutiny
 				["sourceQuests"] = { 79240 },	-- Rogue Agent
 				["provider"] = { "n", 215662 },	-- Lilian Voss
-				["coord"] = { 78.6, 39.6, 2213 },
+				["coord"] = { 78.6, 39.6, NERUBAR },
 			}),
 			q(79244, {	-- News From Below
 				["sourceQuests"] = {
@@ -332,22 +332,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 220928 },	-- High Speaker Brinthe
 				["coord"] = { 56.1, 77.6, THE_RINGING_DEEPS },
 			}),
-			-- tbc
-			-- renown quests can be turned in @ 39.1, 24.3, in additional to their zone specific area.
-			-- Vaskarn
-			q(82042, {	-- The Better Part of Valorstones
-				--["sourceQuests"] = { },	-- ?
-				["provider"] = { "n", 219226 },	-- Vaskarn
-				["coord"] = { 52.1, 42.2, DORNOGAL },
+			------ Miscellaneous ------
+			q(82747, {	-- Crossroads Plaza
+				["provider"] = { "n", 224544 },	-- Rannida
+				["coord"] = { 46.8, 33.0, DORNOGAL },
+				["isBreadcrumb"] = true,	-- but need to confirm
 			}),
-			--[[
-			q(, {	-- The Hardbringer of Crests // missing this quest on alpha as of 19/05 build
-				["sourceQuests"] = { 82042 },	-- The Better Part of Valorstones
-				["provider"] = { "n", 219226 },	-- Vaskarn
-				["coord"] = { 52.1, 42.2, DORNOGAL },
-			}),
-			--]]
-			-- Enchanting tutorial but some data uses placeholder data
 			q(83275, {	-- Gear Enchanting
 				["provider"] = { "n", 226287 },	-- Ellerdin
 				["coord"] = { 51.8, 48.7, DORNOGAL },
@@ -355,192 +345,65 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(226245),	-- Hollow Ring
 				},
 			}),
-			-- Crossroads Plaza
-			q(82747, {	-- Crossroads Plaza
-				["provider"] = { "n", 224544 },	-- Rannida
-				["coord"] = { 46.8, 33.0, DORNOGAL },
-				["isBreadcrumb"] = true,	-- but need to confirm
+			q(82042, {	-- The Better Part of Valorstones
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["coord"] = { 52.1, 42.2, DORNOGAL },
 			}),
-			-- end
-			-- Dungeon quest, seems like once per week in different dungeon, but didn't have (w) mark in-game?
-			q(83465, {	-- Ara-Kara, City of Echoes
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.7, 48.3, DORNOGAL },
+			q(82050, {	-- The Hardbringer of Crests
+				["sourceQuests"] = { 82042 },	-- The Better Part of Valorstones
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["coord"] = { 52.1, 42.2, DORNOGAL },
 			}),
-			q(83436, {	-- Cinderbrew Meadery
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.7, 48.3, DORNOGAL },
+			q(82059, {	-- Transmutation Station
+				["sourceQuests"] = { 82050 },	-- The Hardbringer of Crests
+				["provider"] = { "n", 219226 },	-- Vaskarn
+				["coord"] = { 52.1, 42.2, DORNOGAL },
 			}),
-			q(83458, {	-- Priory of the Sacred Flame
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 44.7, 47.2, DORNOGAL },	-- probably moved in new builds
-			}),
-			-- end
-			-- How Scandalous! (not sure when this one pop, but I think it wasn't here when I runing first time around here)
-			q(80207, {	-- How Scandalous!
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 219393 },	-- Aldra
-				["coord"] = { 62.7, 21.7, DORNOGAL },
-			}),
-			q(79521, {	-- Seizing Evidence
-				["sourceQuests"] = { 80207 },	-- How Scandalous!
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
-				["g"] = {
-					i(217499),	-- Assorted Chisels (QI!)
-					i(217500),	-- High-Quality Coal (QI!)
-					i(217501),	-- Moleskin Apron (QI!)
-					i(217498),	-- Seized Shipment (QI!)
-				},
-			}),
-			q(79522, {	-- Withheld Information
-				["sourceQuests"] = { 79521 },	-- Seizing Evidence
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
-			}),
-			q(79523, {	-- Something Hidden
-				["sourceQuests"] = { 79522 },	-- Withheld Information
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
-				["g"] = {
-					i(217505),	-- Bag of Glowing Shards (QI!)
-					i(217504),	-- Bundle of Receipts (QI!)
-					i(217502),	-- Infused Underclay (QI!)
-					i(217503),	-- Nerubian Silk Ropes (QI!)
-				},
-			}),
-			q(79525, {	-- Report to the Councilward
-				["sourceQuests"] = { 79523 },	-- Something Hidden
-				["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
-				["coord"] = { 49.9, 49.3, DORNOGAL },
-			}),
-			-- end
-			-- Crafting Orders
-			q(84260, {	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-			}),
-			q(84288, {	-- Crafting Orders: Alchemy
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = ALCHEMY,
-			}),
-			q(84274, {	-- Crafting Orders: Blacksmithing
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = BLACKSMITHING,
-			}),
-			q(84285, {	-- Crafting Orders: Engineering
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = ENGINEERING,
-			}),
-			q(84287, {	-- Crafting Orders: Inscription
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = INSCRIPTION,
-			}),
-			q(84279, {	-- Crafting Orders: Jewelcrafting
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = JEWELCRAFTING,
-			}),
-			q(84280, {	-- Crafting Orders: Leatherworking
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = LEATHERWORKING,
-			}),
-			q(84281, {	-- Crafting Orders: Tailoring
-				["sourceQuests"] = { 84260 },	-- Crafting to Order
-				["provider"] = { "n", 219108 },	-- Roldira
-				["coord"] = { 59.1, 55.8, DORNOGAL },
-				["requireSkill"] = TAILORING,
-			}),
-			-- Delves: Khaz Algar Research // move it to delves expansion feature, I guess?
-			q(82706, {	-- Delves: Khaz Algar Research
-				--["sourceQuests"] = { x },	-- ?
-				["isWeekly"] = true,
-				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
-				["coord"] = { 47.4, 44.4, DORNOGAL },
-			}),
-			q(82678, {	-- Archives: The First Disk
-				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
-				["coord"] = { 46.3, 49.3, DORNOGAL },
-				["g"] = {
-					currency(3029),	-- Treasure Trove Key (x2)
-					i(224784),	-- Pinnacle Cache
-					i(225741),	-- Titan Disk Fragment (QI!)
-				},
-			}),
-			-- Weekly Events area?
-			q(83366, {	-- The World Awaits
-				["isWeekly"] = true,
-				["provider"] = { "n", 226919 },	-- Archivist Frithrun
-				["coord"] = { 46.5, 49.3, DORNOGAL },
-			}),
-			--
-			--This one is wrapper for other quests? Probably also will be fired after turn in 'actual' quests
-			--q(xx, {	-- The Call of the Worldsoul
-			--	["isWeekly"] = true,
-			--	["provider"] = { "n", 223875 },	-- Faerin Lothar
-			--	["coord"] = { 46.1, 49.6, DORNOGAL },
-			--}),
-			--actual quests from npc, could be more than this quests per week? new ATA like?
-			q(82452, {	-- Worldsoul: World Quests
-				["isWeekly"] = true,
-				["provider"] = { "n", 223875 },	-- Faerin Lothar
-				["coord"] = { 46.1, 49.6, DORNOGAL },
-				["g"] = {
-					currency(3029),	-- Treasure Trove Key (x2)
-				},
-			}),
-			q(82483, {	-- Worldsoul: Spreading the Light
-				["isWeekly"] = true,
-				["provider"] = { "n", 223875 },	-- Faerin Lothar
-				["coord"] = { 46.1, 49.6, DORNOGAL },
-				["g"] = {
-					currency(3029),	-- Treasure Trove Key (x2)
-				},
-			}),
-			q(82488, {	-- Worldsoul: Darkflame Cleft
-				["isWeekly"] = true,
-				["provider"] = { "n", 223875 },	-- Faerin Lothar
-				["coord"] = { 46.1, 49.6, DORNOGAL },
-				["g"] = {
-					currency(3029),	-- Treasure Trove Key (x2)
-				},
-			}),
-			q(82512, {	-- Worldsoul: World Boss
-				["isWeekly"] = true,
-				["provider"] = { "n", 223875 },	-- Faerin Lothar
-				["coord"] = { 46.1, 49.6, DORNOGAL },
-				["g"] = {
-					currency(3029),	-- Treasure Trove Key (x2)
-				},
-			}),
-
-			-- Stay awhile and listen
+			------ Stay awhile and listen ------
 			q(84335, {	-- Stay awhile and listen: Alleria
 				["name"] = "Stay awhile and listen: Alleria",
-				["sourceQuests"] = { 78546 },	-- Recompense // NOTE SURE
+				["sourceQuests"] = { 78546 },	-- Recompense
 				["provider"] = { "n", 228493 },	-- Alleria Windrunner
 				["coord"] = { 32.0, 60.5, DORNOGAL },
 			}),
 			q(82461, {	-- Stay awhile and listen: Dagran
 				["name"] = "Stay awhile and listen: Dagran",
-				["sourceQuests"] = { 78546 },	-- Recompense // NOTE SURE
+				["sourceQuests"] = { 78546 },	-- Recompense
 				["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
 				["coord"] = { 29.8, 60.0, DORNOGAL },
 			}),
+			n(QUESTS, sharedData({
+				["isWeekly"] = true,
+			}, {
+				q(83465, {	-- Ara-Kara, City of Echoes
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
+				q(83436, {	-- Cinderbrew Meadery
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
+				q(83443, {	-- Darkflame Cleft
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
+				q(83458, {	-- Priory of the Sacred Flame
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
+				q(83457, {	-- The Stonevault
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
+
+				q(82678, {	-- Archives: The First Disk
+					["provider"] = { "n", 226511 },	-- High Speaker Brinthe
+					["coord"] = { 46.3, 49.3, DORNOGAL },
+					["g"] = {
+						i(225741),	-- Titan Disk Fragment (QI!)
+					},
+				}),
+			})),
 		}),
 	}),
 })));
@@ -550,7 +413,8 @@ root(ROOTS.HiddenQuestTriggers, {
 	--^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
 	q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
 	-- WQs unlock
-	q(79573),	-- Adventure Mode (spellID 434027) & Unlock Content Scaling (spellID 434024)
+	--q(79573),	-- Adventure Mode (spellID 434027) & Unlock Content Scaling (spellID 434024)
+	q(79573, {["name"] = "The War Within Campaign Completed [Account]"}),	-- triggered after completing 'Surface Bound' (questID 79197)
 	--
 	q(84009),	-- 'Stay awhile and listen' - Alleria Windrunner (n: 216148) - during questID 82153 (Embassies and Envoys)
 	q(82542),	-- 'Stay awhile and listen' -  Rooktender Lufsela (n: 215039) - during questID 81914 (81914)

@@ -26,11 +26,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(8336, {	-- A Fistful of Slivers
 							["qg"] = 15296,	-- Arcanist Ithanas
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
-							-- #if AFTER MOP
-							["coord"] = { 61.8, 39.4, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 38.3, 19.1, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 61.8, 39.4, SUNSTRIDER_ISLE },
+								-- #else
+								{ 38.3, 19.1, EVERSONG_WOODS },
+								-- #endif
+							},
 							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_1_12_1, REMOVED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
@@ -49,11 +51,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 							["qg"] = 15296,	-- Arcanist Ithanas
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
 							["altQuests"] = { 8336 },	-- A Fistful of Slivers (original)
-							-- #if AFTER MOP
-							["coord"] = { 61.8, 39.4, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 38.3, 19.1, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER MOP
+								{ 61.8, 39.4, SUNSTRIDER_ISLE },
+								-- #else
+								{ 38.3, 19.1, EVERSONG_WOODS },
+								-- #endif
+							},
 							["races"] = { BLOODELF },
 							["timeline"] = { ADDED_6_0_2 },
 							["lvl"] = lvlsquish(2, 2, 1),
@@ -71,11 +75,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(8334, {	-- Aggression
 							["qg"] = 15281,	-- Lanthan Perilon
 							["sourceQuest"] = 8327,	-- Report to Lanthan Perilon
-							-- #if AFTER LEGION
-							["coord"] = { 52.8, 49.8, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 35.4, 22.4, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 52.8, 49.8, SUNSTRIDER_ISLE },
+								-- #else
+								{ 35.4, 22.4, EVERSONG_WOODS },
+								-- #endif
+							},
 							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(1, 1, 1),
 							["groups"] = {
@@ -95,11 +101,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(8347, {	-- Aiding the Outrunners
 							["qg"] = 15281,	-- Lanthan Perilon
 							["sourceQuest"] = 8335,	-- Felendren the Banished
-							-- #if AFTER LEGION
-							["coord"] = { 52.8, 49.7, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 35.4, 22.5, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 52.8, 49.8, SUNSTRIDER_ISLE },
+								-- #else
+								{ 35.4, 22.4, EVERSONG_WOODS },
+								-- #endif
+							},
 							["races"] = { BLOODELF },
 							["isBreadcrumb"] = true,
 							["lvl"] = lvlsquish(3, 3, 1),
@@ -109,11 +117,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(10068, {	-- Arcane Missiles (TBC) / Frost Nova (MOP) / Well Watcher Solanian (TBC)
 							["qg"] = 15279,	-- Julia Sunstriker <Mage Trainer>
 							["sourceQuest"] = 8328,	-- Mage Training
-							-- #if AFTER LEGION
-							["coord"] = { 64.6, 46.4, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 39.2, 21.5, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 64.6, 46.4, SUNSTRIDER_ISLE },
+								-- #else
+								{ 39.2, 21.5, EVERSONG_WOODS },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
@@ -128,11 +138,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(27091, {	-- Charge! (Cata+) / Well Watcher Solanian (TBC)
 							["qg"] = 43010,	-- Delios Silverblade
 							["sourceQuest"] = 8329,	-- Warrior Training
-							-- #if AFTER LEGION
-							["coord"] = { 64.8, 42.6, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 39.3, 20.1, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 64.8, 42.6, SUNSTRIDER_ISLE },
+								-- #else
+								{ 39.3, 20.1, EVERSONG_WOODS },
+								-- #endif
+							},
 							["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
 							["classes"] = { WARRIOR },
 							["races"] = { BLOODELF },
@@ -147,11 +159,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(10073, {	-- Corruption (MOP) / Immolation (TBC) / Well Watcher Solanian (TBC)
 							["qg"] = 15283,	-- Summoner Teli'Larien <Warlock Trainer>
 							["sourceQuest"] = 8563,	-- Warlock Training
-							-- #if AFTER LEGION
-							["coord"] = { 63.8, 46.2, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 38.9, 21.4, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 63.8, 46.2, SUNSTRIDER_ISLE },
+								-- #else
+								{ 38.9, 21.4, EVERSONG_WOODS },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
@@ -166,11 +180,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(10071, {	-- Evisceration (Cata+) / Well Watcher Solanian (TBC)
 							["qg"] = 15285,	-- Pathstalker Avokor <Rogue Trainer>
 							["sourceQuest"] = 9392,	-- Rogue Training
-							-- #if AFTER LEGION
-							["coord"] = { 63.8, 42.2, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 38.9, 20.0, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 63.8, 42.2, SUNSTRIDER_ISLE },
+								-- #else
+								{ 38.9, 20.0, EVERSONG_WOODS },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { ROGUE },
 							["races"] = { BLOODELF },
@@ -185,11 +201,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(8335, {	-- Felendren the Banished
 							["qg"] = 15281,	-- Lanthan Perilon
 							["sourceQuest"] = 8334,	-- Aggression
-							-- #if AFTER LEGION
-							["coord"] = { 52.8, 49.7, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 35.4, 22.4, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 52.8, 49.8, SUNSTRIDER_ISLE },
+								-- #else
+								{ 35.4, 22.4, EVERSONG_WOODS },
+								-- #endif
+							},
 							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(3, 3, 1),
 							["groups"] = {
@@ -210,11 +228,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(10068, {	-- Frost Nova (MOP) / Arcane Missiles (Cata+) / Well Watcher Solanian (TBC)
 							["qg"] = 15279,	-- Julia Sunstriker <Mage Trainer>
 							["sourceQuest"] = 8328,	-- Mage Training
-							-- #if AFTER LEGION
-							["coord"] = { 64.6, 46.4, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 39.2, 21.5, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 64.6, 46.4, SUNSTRIDER_ISLE },
+								-- #else
+								{ 39.2, 21.5, EVERSONG_WOODS },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
@@ -269,11 +289,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(10073, {	-- Immolation (Cata+) / Corruption (MOP) / Well Watcher Solanian (TBC)
 							["qg"] = 15283,	-- Summoner Teli'Larien <Warlock Trainer>
 							["sourceQuest"] = 8563,	-- Warlock Training
-							-- #if AFTER LEGION
-							["coord"] = { 63.8, 46.2, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 38.9, 21.4, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 63.8, 46.2, SUNSTRIDER_ISLE },
+								-- #else
+								{ 38.9, 21.4, EVERSONG_WOODS },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
@@ -724,11 +746,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(10071, {	-- Well Watcher Solanian (TBC) / Evisceration (Cata+)
 							["qg"] = 15285,	-- Pathstalker Avokor <Rogue Trainer>
 							["sourceQuest"] = 9392,	-- Rogue Training
-							-- #if AFTER LEGION
-							["coord"] = { 63.8, 42.2, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 38.9, 20.0, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 63.8, 42.2, SUNSTRIDER_ISLE },
+								-- #else
+								{ 38.9, 20.0, EVERSONG_WOODS },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { ROGUE },
 							["races"] = { BLOODELF },
@@ -742,11 +766,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(10068, {	-- Well Watcher Solanian (TBC) / Frost Nova (MOP) / Arcane Missiles (Cata+)
 							["qg"] = 15279,	-- Julia Sunstriker <Mage Trainer>
 							["sourceQuest"] = 8328,	-- Mage Training
-							-- #if AFTER LEGION
-							["coord"] = { 64.6, 46.4, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 39.2, 21.5, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 64.6, 46.4, SUNSTRIDER_ISLE },
+								-- #else
+								{ 39.2, 21.5, EVERSONG_WOODS },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { MAGE },
 							["races"] = { BLOODELF },
@@ -760,11 +786,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						q(10073, {	-- Well Watcher Solanian (TBC) / Immolation (Cata+) / Corruption (MOP)
 							["qg"] = 15283,	-- Summoner Teli'Larien <Warlock Trainer>
 							["sourceQuest"] = 8563,	-- Warlock Training
-							-- #if AFTER LEGION
-							["coord"] = { 63.8, 46.2, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 38.9, 21.4, EVERSONG_WOODS },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER LEGION
+								{ 63.8, 46.2, SUNSTRIDER_ISLE },
+								-- #else
+								{ 38.9, 21.4, EVERSONG_WOODS },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_7_0_3 },
 							["classes"] = { WARLOCK },
 							["races"] = { BLOODELF },
@@ -1534,9 +1562,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(8892, {	-- Situation at Sunsail Anchorage
 					["qg"] = 15939,	-- Ranger Degolien
-					-- #if BEFORE LEGION
-					["sourceQuest"] = 9256,	-- Fairbreeze Village	-- TODO: Confirm this on Beta?
-					-- #endif
+					["sourceQuest"] = 9256,	-- Fairbreeze Village
 					["coord"] = { 43.3, 70.8, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 5, 1),

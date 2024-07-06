@@ -3106,6 +3106,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 		-- 10.2.6
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
+			ach(19579),	-- The Awakened Aspects
+			ach(19577),	-- The Awakened Drake
+			ach(19578),	-- The Awakened Wyrm
 			ach(19538),	-- Whelpling's Awakened Crests earned
 			ach(19539),	-- Drake's Awakened Crests earned
 			ach(19540),	-- Wyrm's Awakened Crests earned
@@ -3559,6 +3562,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 			-- 11.0.0.55185
 			ach(40800),	-- Warband Tutorial Complete - Teach Warband Bank Summon (DNT)
+
+			-- 11.0.0.55288
+			ach(40839),	-- Delve PTR Cheat
 		})),
 	}),
 });

@@ -1948,7 +1948,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.99999" } }, {
+		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.55261" } }, {
 			n(MONTHLY_REWARD, {
 				i(220692),	-- X-treme Water Blaster Display (TOY!)
 			}),
@@ -2057,6 +2057,190 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 				i(220357, {	-- Water Blaster B.L.
 					["cost"] = {{"c", TRADERS_TENDER, 330}},
+				}),
+			}),
+		})),
+		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 10.2.7.55261", REMOVED_11_0_1 } }, {
+			n(MONTHLY_REWARD, {
+				i(223339),	-- Trishi (PET!)
+			}),
+			filter(BATTLE_PETS, {
+				i(206174, {	-- Blub (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+			}),
+			filter(MOUNTS, {
+				i(210919, {	-- Crimson Glimmerfur (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+				i(223285, {	-- Underlight Corrupted Behemoth (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 800}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(223185, {	-- Blade Of The Riptide
+					["cost"] = {{"c", TRADERS_TENDER, 80}},
+				}),
+				i(223170, {	-- Classic Deep Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(223233, {	-- Copper Divers Belt
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(223230, {	-- Copper Divers Bonnet
+					["cost"] = {{"c", TRADERS_TENDER, 220}},
+				}),
+				i(223235, {	-- Copper Divers Boots
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(223232, {	-- Copper Divers Corselet
+					["cost"] = {{"c", TRADERS_TENDER, 80}},
+				}),
+				i(223236, {	-- Copper Divers Gloves
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(223234, {	-- Copper Divers Greaves
+					["cost"] = {{"c", TRADERS_TENDER, 80}},
+				}),
+				i(223231, {	-- Copper Divers Pauldrons
+					["cost"] = {{"c", TRADERS_TENDER, 80}},
+				}),
+				i(223252, {	-- Copper Divers Tank
+					["cost"] = {{"c", TRADERS_TENDER, 160}},
+				}),
+				i(223257, {	-- Copper Divers Wrist Seal
+					["cost"] = {{"c", TRADERS_TENDER, 10}},
+				}),
+				i(223166, {	-- Deepsea Treasure Pack
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(212624, {	-- Duelers Deep Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				iensemble(223244, {	-- Ensemble Deepest Depths Diver Suit
+					["cost"] = {{"c", TRADERS_TENDER, 800}},
+				}),
+				iensemble(206327, {	-- Ensemble Vagabonds Deep Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(206338, {	-- Ensemble Wanderers Deep Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(211130, {	-- Errant Crusaders Helm
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(223188, {	-- Riptide Basher
+					["cost"] = {{"c", TRADERS_TENDER, 80}},
+				}),
+				i(223187, {	-- Riptide Bulwark
+					["cost"] = {{"c", TRADERS_TENDER, 80}},
+				}),
+				i(223179, {	-- Riptide Dagger
+					["cost"] = {{"c", TRADERS_TENDER, 125}},
+				}),
+				i(223176, {	-- Riptide Gut Puncher
+					["cost"] = {{"c", TRADERS_TENDER, 125}},
+				}),
+				i(223189, {	-- Riptide Slicer
+					["cost"] = {{"c", TRADERS_TENDER, 125}},
+				}),
+				i(223184, {	-- Riptide Staff
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(213161, {	-- Titan Thunderbow
+					["cost"] = {{"c", TRADERS_TENDER, 180}},
+				}),
+				i(210853, {	-- Traders Deep Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(223191, {	-- Trident Of The Riptide
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(223165, {	-- Vengeful Crusaders Helm
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(223190, {	-- Wand Of The Riptide
+					["cost"] = {{"c", TRADERS_TENDER, 125}},
+				}),
+			}),
+		})),
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1 } }, {
+			n(MONTHLY_REWARD, {
+				i(223409),	-- The Cowards Violet Target (COSMETIC!)
+			}),
+			filter(BATTLE_PETS, {
+				i(223474, {	-- Worgli The Apprehensive (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+			}),
+			filter(MOUNTS, {
+				i(54811, {	-- Celestial Steed (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 900}},
+				}),
+				i(118515, {	-- Cindermane Charger (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 900}},
+				}),
+				i(223469, {	-- Sentinel War Wolf (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+				i(223449, {	-- Korkron Warsaber (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+			}),
+			filter(COSMETIC, {
+				iensemble(220762, {	-- Arsenal Stormriders Silver Stormhammers
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+				i(223430, {	-- Conjurers Sapphire Staff
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(223429, {	-- Conjurers Scarlet Staff
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(210999, {	-- Ruby Faced Mobile Timepiece
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(223415, {	-- Sapphire Axe Of Asymmetry
+					["cost"] = {{"c", TRADERS_TENDER, 180}},
+				}),
+				i(223423, {	-- Sapphire Bladed Blunderbuss
+					["cost"] = {{"c", TRADERS_TENDER, 130}},
+				}),
+				i(211001, {	-- Sapphire Faced Mobile Timepiece
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(223411, {	-- Sapphire Shanker
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(223413, {	-- Sapphire Warglaive
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(223414, {	-- Scarlet Axe Of Asymmetry
+					["cost"] = {{"c", TRADERS_TENDER, 180}},
+				}),
+				i(223422, {	-- Scarlet Bladed Blunderbuss
+					["cost"] = {{"c", TRADERS_TENDER, 130}},
+				}),
+				i(223410, {	-- Scarlet Shanker
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(223412, {	-- Scarlet Warglaive
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(223426, {	-- Simple Sapphire Wand
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(223425, {	-- Simple Scarlet Wand
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(223433, {	-- Sunreavers Scarlet Tome
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(223434, {	-- The Sapphire Thalassian Tome
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(212611, {	-- Wings Of The Tourmaline Monarch
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
 				}),
 			}),
 		})),
@@ -2305,7 +2489,6 @@ root(ROOTS.NeverImplemented, {
 					i(206295),	-- Vagabond's Cloudy Hood
 
 					------ Vagabond's Deep Threads ------
-					i(206327),	-- Ensemble: Vagabond's Deep Threads
 					i(206283),	-- Vagabond's Deep Cape
 					i(206294),	-- Vagabond's Deep Hood
 
@@ -2330,7 +2513,6 @@ root(ROOTS.NeverImplemented, {
 					i(206306),	-- Wanderer's Cloudy Scarf
 
 					------ Wanderer's Deep Trappings ------
-					i(206338),	-- Ensemble: Wanderer's Deep Trappings
 					i(206316),	-- Wanderer's Deep Cloak
 					i(206305),	-- Wanderer's Deep Scarf
 
@@ -2359,11 +2541,8 @@ root(ROOTS.NeverImplemented, {
 				n(ARMOR, {
 					i(211069),	-- Azure Treads of the Kalu'ak
 					i(210867),	-- Blademaster's Lively Stones
-					i(210999),	-- Ruby Faced Mobile Timepiece
-					i(211001),	-- Sapphire Faced Mobile Timepiece
 					i(210849),	-- Trader's Azure Sarong
 					i(210854),	-- Trader's Camo Sarong
-					i(210853),	-- Trader's Deep Sarong
 					i(210856),	-- Trader's Faded Sarong
 					i(210851),	-- Trader's Grassy Sarong
 					i(210848),	-- Trader's Midnight Sarong
@@ -2386,7 +2565,6 @@ root(ROOTS.NeverImplemented, {
 					i(212627),	-- Dueler's Azure Shoulder Cape
 					i(212622),	-- Dueler's Camo Shoulder Cape
 					i(212617),	-- Dueler's Crimson Shoulder Cape
-					i(212624),	-- Dueler's Deep Shoulder Cape
 					i(212620),	-- Dueler's Faded Shoulder Cape
 					i(212625),	-- Dueler's Grassy Shoulder Cape
 					i(212618),	-- Dueler's Plum Shoulder Cape
@@ -2401,7 +2579,6 @@ root(ROOTS.NeverImplemented, {
 					i(212717),	-- Spring Reveler's Cornsilk Sun Hat
 					i(212612),	-- Wings of the Amethyst Monarch
 					i(212610),	-- Wings of the Emerald Monarch
-					i(212611),	-- Wings of the Tourmaline Monarch
 				}),
 				n(SETS, {
 					i(190924),	-- Arsenal: Ruby Felfire Armaments
@@ -2458,7 +2635,6 @@ root(ROOTS.NeverImplemented, {
 					i(190891),	-- Shabby Battleaxe
 					i(190903),	-- Soulburner Warscythe
 					i(190818),	-- Steamwheedle Artifact Extractor
-					i(213161),	-- Titan Thunderbow
 					i(213067),	-- Violet Floral Edge
 					i(190902),	-- Will of the Titanforged
 					i(190889),	-- Woodsman's Hatchet

@@ -45,6 +45,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(225481),	-- Technique: Algari Competitor's Staff (RECIPE!)
 					}),
 				}),
+				n(219217, {	-- Velerd <Honor Quartermaster>
+					["coord"] = { 55.0, 76.5, DORNOGAL },
+					["g"] = {
+						i(225739, {	-- Algari Distinguishment
+							["cost"] = {{"c", HONOR, 2000}},
+							["g"] = {
+								i(137642),	-- Mark of Honor
+							},
+						}),
+					},
+				}),
 			}),
 		})),
 	}),

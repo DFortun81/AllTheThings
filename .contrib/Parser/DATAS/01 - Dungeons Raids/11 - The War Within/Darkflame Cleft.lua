@@ -3,10 +3,17 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1210, {	-- Darkflame Cleft
-		--["coord"] = { X, Y, THE_RINGING_DEEPS },
+		["coord"] = { 59.6, 21.6, THE_RINGING_DEEPS },
 		["maps"] = { 2303 },	-- Darkflame Cleft
 		["g"] = {
 			i(223061),	-- Technique: Inscribed Rolling Pin (RECIPE!) [Wax-Encrusted Chest?]
+			n(QUESTS, {
+				q(83154, {	-- Knicknack's Knickknacks
+					--["sourceQuests"] = { x },	-- ?
+					["provider"] = { "n", 225555 },	-- Knicknack
+					["coord"] = { 46.5, 30.3, THE_RINGING_DEEPS },
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2569, {	-- Ol' Waxbeard
 					["crs"] = { 210149 },	-- Ol' Waxbeard
@@ -14,7 +21,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221097),	-- Arcane Scuttle
 						i(219304),	-- Conductor's Wax Whistle
 						i(221098),	-- Mole Knight's Grimemail
-						i(221096),	-- Rail Rider's Bisecter
+						i(221096),	-- Rail Rider's Bisector
 						i(221099),	-- Wick's Golden Loop
 					},
 				}),
@@ -43,6 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2561, {	-- The Darkness
 					["crs"] = { 210797 },	-- The Darkness
 					["g"] = {
+						ach(40427),	-- Darkflame Cleft
 						i(221112),	-- Caliginous Claspers
 						i(221110),	-- Crepuscular Carver
 						i(221113),	-- Gloaming Visage
@@ -50,6 +58,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221111),	-- Poleaxe of Somber Fate
 						i(219307),	-- Remnant of Darkness
 						i(221114),	-- Shadowspawn Leggings
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				e(2561, {	-- The Darkness
+					["crs"] = { 210797 },	-- The Darkness
+					["g"] = {
+						ach(40428),	-- Heroic: Darkflame Cleft
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				e(2561, {	-- The Darkness
+					["crs"] = { 210797 },	-- The Darkness
+					["g"] = {
+						ach(40429),	-- Mythic: Darkflame Cleft
 					},
 				}),
 			}),

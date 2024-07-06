@@ -422,6 +422,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(79837),	-- Ensemble: Yaungol Slayer Battlegear
 		q(82140),	-- Ensemble: Yellow Tropical
 		q(82233),	-- Ensemble: Yellow Tropical Swimwear
+		q(84258),	-- Tusks of Mannoroth (itemID 227550)
 
 		-- Arsenals
 		q(80467),	-- Arsenal: Aldrachi Blasphemer's Glaives

@@ -3,11 +3,14 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	expansion(EXPANSION.CLASSIC, {
-		i(6834),	-- Black Tuxedo
+		-- 1.x.x
+		n(P1xx, {
+			i(6834),	-- Black Tuxedo
+		}),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, 2.0, bubbleDown({ ["timeline"] = { CREATED_7_2_0 } }, {
+		expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
 			i(147379),	-- Wooden Toy Axe [H] used to apply the mog
 			i(147378),	-- Wooden Toy Sword [A] (Visual usage for toy weapon set)
 			--
@@ -18,7 +21,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 			i(162641),	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			i(162640),	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			i(162638),	-- Wooden Toy Helm [H] (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
@@ -27,7 +30,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			i(194318),	-- Book of Ancient Lore
 			i(193069),	-- Climber's Pack
 			i(194329),	-- Elaborate Reliquary Candelabra
@@ -100,7 +103,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.0.5
-		expansion(EXPANSION.DF, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+		expansion(EXPANSION.DF, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 				------ TRADING POST ------
 			n(ARMOR, {
 				i(190672),	-- Deathguard Acolyte's Cloak
@@ -206,7 +209,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				------ TRADING POST ------
 			n(SETS, {
 				i(190796),	-- Ensemble: Slumbering Caldera Regalia
@@ -218,7 +221,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
 				------ TRADING POST ------
@@ -226,55 +229,45 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190559),	-- Helm of the Swift
 			}),
 			n(SETS, {
-				i(200917),	-- Ensemble: Tidecaller's Chainmail
+				iensemble(200917),	-- Ensemble: Tidecaller's Chainmail
 
 				------ Vagabond's Cloudy Threads ------
-				i(206328),	-- Ensemble: Vagabond's Cloudy Threads
+				iensemble(206328),	-- Ensemble: Vagabond's Cloudy Threads
 				i(206284),	-- Vagabond's Cloudy Cape
 				i(206295),	-- Vagabond's Cloudy Hood
 
-				------ Vagabond's Deep Threads ------
-				i(206327),	-- Ensemble: Vagabond's Deep Threads
-				i(206283),	-- Vagabond's Deep Cape
-				i(206294),	-- Vagabond's Deep Hood
-
 				------ Vagabond's Faded Threads ------
-				i(206324),	-- Ensemble: Vagabond's Faded Threads
+				iensemble(206324),	-- Ensemble: Vagabond's Faded Threads
 				i(206280),	-- Vagabond's Faded Cape
 				i(206291),	-- Vagabond's Faded Hood
 
 				------ Vagabond's Grassy Threads ------
-				i(206329),	-- Ensemble: Vagabond's Grassy Threads
+				iensemble(206329),	-- Ensemble: Vagabond's Grassy Threads
 				i(206285),	-- Vagabond's Grassy Cape
 				i(206296),	-- Vagabond's Grassy Hood
 
 				------ Vagabond's Plum Threads ------
-				i(206323),	-- Ensemble: Vagabond's Plum Threads
+				iensemble(206323),	-- Ensemble: Vagabond's Plum Threads
 				i(206279),	-- Vagabond's Plum Cape
 				i(206290),	-- Vagabond's Plum Hood
 
 				------ Wanderer's Cloudy Trappings ------
-				i(206339),	-- Ensemble: Wanderer's Cloudy Trappings
+				iensemble(206339),	-- Ensemble: Wanderer's Cloudy Trappings
 				i(206317),	-- Wanderer's Cloudy Cloak
 				i(206306),	-- Wanderer's Cloudy Scarf
 
-				------ Wanderer's Deep Trappings ------
-				i(206338),	-- Ensemble: Wanderer's Deep Trappings
-				i(206316),	-- Wanderer's Deep Cloak
-				i(206305),	-- Wanderer's Deep Scarf
-
 				------ Wanderer's Faded Trappings ------
-				i(206335),	-- Ensemble: Wanderer's Faded Trappings
+				iensemble(206335),	-- Ensemble: Wanderer's Faded Trappings
 				i(206313),	-- Wanderer's Faded Cloak
 				i(206302),	-- Wanderer's Faded Scarf
 
 				------ Wanderer's Grassy Trappings ------
-				i(206340),	-- Ensemble: Wanderer's Grassy Trappings
+				iensemble(206340),	-- Ensemble: Wanderer's Grassy Trappings
 				i(206318),	-- Wanderer's Grassy Cloak
 				i(206307),	-- Wanderer's Grassy Scarf
 
 				------ Wanderer's Plum Trappings ------
-				i(206334),	-- Ensemble: Wanderer's Plum Trappings
+				iensemble(206334),	-- Ensemble: Wanderer's Plum Trappings
 				i(206312),	-- Wanderer's Plum Cloak
 				i(206301),	-- Wanderer's Plum Scarf
 			}),
@@ -284,21 +277,18 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.1.7
-		expansion(EXPANSION.DF, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			i(209053),	-- Green Brewfest Bulwark
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 				------ Trading Post ------
 			n(ARMOR, {
 				i(211069),	-- Azure Treads of the Kalu'ak
 				i(210867),	-- Blademaster's Lively Stones
-				i(210999),	-- Ruby Faced Mobile Timepiece
-				i(211001),	-- Sapphire Faced Mobile Timepiece
 				i(210849),	-- Trader's Azure Sarong
 				i(210854),	-- Trader's Camo Sarong
-				i(210853),	-- Trader's Deep Sarong
 				i(210856),	-- Trader's Faded Sarong
 				i(210851),	-- Trader's Grassy Sarong
 				i(210848),	-- Trader's Midnight Sarong
@@ -311,7 +301,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			i(212338),	-- DNT - Hearthstone - Loot - Hat (Needs Art)
 			i(212532),	-- Reno's Hat
 			i(211926),	-- Riders of Azeroth Tabard
@@ -325,7 +315,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(212627),	-- Dueler's Azure Shoulder Cape
 				i(212622),	-- Dueler's Camo Shoulder Cape
 				i(212617),	-- Dueler's Crimson Shoulder Cape
-				i(212624),	-- Dueler's Deep Shoulder Cape
 				i(212620),	-- Dueler's Faded Shoulder Cape
 				i(212625),	-- Dueler's Grassy Shoulder Cape
 				i(212618),	-- Dueler's Plum Shoulder Cape
@@ -340,19 +329,18 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(212717),	-- Spring Reveler's Cornsilk Sun Hat
 				i(212612),	-- Wings of the Amethyst Monarch
 				i(212610),	-- Wings of the Emerald Monarch
-				i(212611),	-- Wings of the Tourmaline Monarch
 			}),
 			n(SETS, {
 				i(190924),	-- Arsenal: Ruby Felfire Armaments
-				i(190920),	-- Ensemble: Battleplate of the Honored Valarjar
-				i(200910),	-- Ensemble: Val'sharah Protector's Battleplate
-				i(200918),	-- Ensemble: Void-Bound Raiment
-				i(200924),	-- Ensemble: Void-Bound Battlegear
-				i(201000),	-- Ensemble: Void-Bound Chains
-				i(201001),	-- Ensemble: Void-Bound Warplate
+				iensemble(190920),	-- Ensemble: Battleplate of the Honored Valarjar
+				iensemble(200910),	-- Ensemble: Val'sharah Protector's Battleplate
+				iensemble(200918),	-- Ensemble: Void-Bound Raiment
+				iensemble(200924),	-- Ensemble: Void-Bound Battlegear
+				iensemble(201000),	-- Ensemble: Void-Bound Chains
+				iensemble(201001),	-- Ensemble: Void-Bound Warplate
 
 				------ Dark Ranger General ------
-				i(213158),	-- Ensemble: Dark Ranger General's Kit
+				iensemble(213158),	-- Ensemble: Dark Ranger General's Kit
 				i(213150),	-- Dark Ranger General's Boots
 				i(213153),	-- Dark Ranger General's Bracers
 				i(213146),	-- Dark Ranger General's Breastplate
@@ -366,7 +354,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(213148),	-- Dark Ranger General's Spaulders
 
 				------ Sky Witch's Attire ------
-				i(212221),	-- Ensemble: Sky Witch's Attire
+				iensemble(212221),	-- Ensemble: Sky Witch's Attire
 				i(212204),	-- Sky Witch's Blouse
 				i(212205),	-- Sky Witch's Boots
 				i(212206),	-- Sky Witch's Gloves
@@ -397,14 +385,14 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190891),	-- Shabby Battleaxe
 				i(190903),	-- Soulburner Warscythe
 				i(190818),	-- Steamwheedle Artifact Extractor
-				i(213161),	-- Titan Thunderbow
 				i(213067),	-- Violet Floral Edge
 				i(190902),	-- Will of the Titanforged
 				i(190889),	-- Woodsman's Hatchet
 			}),
 		})),
+
 		-- 10.2.6
-		expansion(EXPANSION.DF, 2.6, bubbleDown({ ["timeline"] = { CREATED_10_2_6 } }, {
+		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
 			n(WEAPONS, {
 				i(217635),	-- Dream Raider's Azure Razor
 			}),

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1267, {	-- Priory of the Sacred Flame
-		--["coord"] = { X, Y, HALLOWFALL },
+		["coord"] = { 41.3, 49.3, HALLOWFALL },
 		["maps"] = {
 			2308,	-- Sanctified Grounds
 			2309,	-- Priory of the Sacred Flame
@@ -36,6 +36,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2573, {	-- Prioress Murrpray
 					["crs"] = { 207940 },	-- Prioress Murrpray
 					["g"] = {
+						ach(40590),	-- Priory of the Sacred Flame
 						i(223115),	-- Formula: Enchant Ring - Radiant Critical Strike (RECIPE!)
 						i(223116),	-- Formula: Enchant Ring - Radiant Haste (RECIPE!)
 						i(223117),	-- Formula: Enchant Ring - Radiant Mastery (RECIPE!)
@@ -49,6 +50,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221203),	-- Reanimator's Pyreforged Shoulders
 						i(221130),	-- Seraphic Legwraps of the Ordained
 						i(221128),	-- Starforged Seraph's Mace
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				e(2573, {	-- Prioress Murrpray
+					["crs"] = { 207940 },	-- Prioress Murrpray
+					["g"] = {
+						ach(40592),	-- Heroic: Priory of the Sacred Flame
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				e(2573, {	-- Prioress Murrpray
+					["crs"] = { 207940 },	-- Prioress Murrpray
+					["g"] = {
+						ach(40596),	-- Mythic: Priory of the Sacred Flame
 					},
 				}),
 			}),

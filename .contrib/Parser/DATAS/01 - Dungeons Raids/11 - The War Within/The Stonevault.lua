@@ -3,9 +3,16 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	inst(1269, {	-- The Stonevault
-		--["coord"] = { X, Y, THE_RINGING_DEEPS },
+		["coord"] = { 46.8, 8.5, THE_RINGING_DEEPS },
 		["maps"] = { 2341 },	-- The Stonevault
 		["g"] = {
+			n(QUESTS, {
+				q(83108, {	-- Daily Diagnostics
+					["sourceQuests"] = { 79354 },	-- The Machine Speakers
+					["provider"] = { "n", 225533 },	-- Therkan
+					["coord"] = { 47.3, 31.6, THE_RINGING_DEEPS },
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2572, {	-- E.D.N.A.
 					["crs"] = { 210108 },	-- E.D.N.A
@@ -48,6 +55,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2582, {	-- Void Speaker Eirich
 					["crs"] = { 219440 },	-- High Speaker Eirich
 					["g"] = {
+						ach(40643),	-- The Stonevault
 						i(221091),	-- Cutting-Edge Sermon
 						i(221090),	-- Eirich's Fist of Deception
 						i(219303),	-- High Speaker's Accretion
@@ -55,6 +63,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221095),	-- Shadowed Orator's Tunic
 						i(221089),	-- Silver-Tongued Boltcaster
 						i(221094),	-- Whispering Umbral Mantle
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				e(2582, {	-- Void Speaker Eirich
+					["crs"] = { 219440 },	-- High Speaker Eirich
+					["g"] = {
+						ach(40644),	-- Heroic: The Stonevault
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				e(2582, {	-- Void Speaker Eirich
+					["crs"] = { 219440 },	-- High Speaker Eirich
+					["g"] = {
+						ach(40648),	-- Mythic: The Stonevault
 					},
 				}),
 			}),

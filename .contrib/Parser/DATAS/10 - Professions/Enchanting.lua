@@ -830,6 +830,50 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				r(445466),	-- Shatter Essence
 			}),
 		}),
+		n(TREASURES, {
+			o(456006, {	-- Animated Enchanting Dust
+				["coord"] = { 67.2, 65.9, THE_RINGING_DEEPS },
+				["questID"] = 83861,
+				["g"] = {
+					i(226287),	-- Animated Enchanting Dust
+				},
+			}),
+			o(456003, {	-- Book of Dark Magic
+				["coord"] = { 61.7, 22.0, NERUBAR },
+				["questID"] = 83864,
+				["g"] = {
+					i(226290),	-- Book of Dark Magic
+				},
+			}),
+			o(456005, {	-- Essence of Holy Fire
+				["coord"] = { 40.1, 70.5, HALLOWFALL },
+				["questID"] = 83862,
+				["g"] = {
+					i(226288),	-- Essence of Holy Fire
+				},
+			}),
+			o(456008, {	-- Silver Dornogal Rod
+				["coord"] = { 59.4, 66.5, DORNOGAL },
+				["questID"] = 83859,
+				["g"] = {
+					i(226285),	-- Silver Dornogal Rod
+				},
+			}),
+			o(456007, {	-- Soot-Coated Orb
+				["coord"] = { 44.6, 22.1, THE_RINGING_DEEPS },
+				["questID"] = 83860,
+				["g"] = {
+					i(226286),	-- Soot-Coated Orb
+				},
+			}),
+			o(456002, {	-- Void Shard
+				["coord"] = { 57.4, 44.1, NERUBAR },
+				["questID"] = 83865,
+				["g"] = {
+					i(226291),	-- Void Shard
+				},
+			}),
+		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {

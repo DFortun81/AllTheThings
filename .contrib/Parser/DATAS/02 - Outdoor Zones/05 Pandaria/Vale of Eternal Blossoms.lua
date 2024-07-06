@@ -1996,6 +1996,13 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					i(85582, {	-- Shao-Tien Cage Key
+						["crs"] = {
+							63641,	-- Shao-Tien Torturer
+							63610,	-- Shao-Tien Dominator
+							63611,	-- Shao-Tien Soul-Caller
+						},
+					}),
 					i(86547),	-- Skyshard
 					i(86546, {	-- Sky Crystal
 						["cost"] = { { "i", 86547, 10 } },	-- Skyshard

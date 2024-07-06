@@ -1,7 +1,5 @@
 -- Build NYI
 root(ROOTS.NeverImplemented, {
-	expansion(EXPANSION.MOP),
-	expansion(EXPANSION.SL),
 	n(ACHIEVEMENTS, {["timeline"] = {CREATED_3_0_2}}),					-- Completed up to 10.2.5
 	n(ARMOR),															-- Not Completed and Not Sorted
 	filter(BAGS),														-- Not Completed and Not Sorted
@@ -16,7 +14,7 @@ root(ROOTS.NeverImplemented, {
 	n(FOLLOWERS, {["timeline"] = {CREATED_6_0_2}}),						-- Completed up to 10.2.5
 	n(HEIRLOOMS, {["timeline"] = {CREATED_4_0_1}}),						-- Not Completed and Not Sorted
 	filter(ILLUSIONS, {["timeline"] = {CREATED_8_0_1}}),				-- Completed up to 10.2.5
-	n(MAPS, {["timeline"] = {CREATED_7_2_0}}),							-- Not Completed
+	n(MAPS),															-- Completed up to 10.2.5
 	filter(MISC),														-- Not Completed and Not Sorted
 	filter(MOUNTS),														-- Completed up to 10.2.5
 	n(PROFESSIONS, {													-- Not Completed and Not Sorted

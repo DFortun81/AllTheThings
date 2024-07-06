@@ -1183,15 +1183,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		ach(17978),	-- Stones Can Fly!
 		ach(17977),	-- Stones Can Try To Fly!
 		ach(17830),	-- Stones Can't Fly!
-		ach(19579, {	-- The Awakened Aspects
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
-		}),
-		ach(19577, {	-- The Awakened Drake
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
-		}),
-		ach(19578, {	-- The Awakened Wyrm
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
-		}),
 	}),
 })));
 

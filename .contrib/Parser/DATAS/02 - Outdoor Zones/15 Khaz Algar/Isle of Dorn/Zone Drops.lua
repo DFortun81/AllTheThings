@@ -4,11 +4,17 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		n(ZONE_DROPS, {
-			-- Alex: currently unsure if only for this zone, leave them here for now and in unsorted
-			i(224633), -- Arathi Greataxe (weapon)
-			i(224630), -- Deep-Dweller's Battleaxe (weapon)
-			i(224613), -- Expeditionary Epaulets (mail)
-			i(224619), -- Stalwart Handguards (plate)
+			i(224025, {	-- Crackling Shard
+				["crs"] = { 223657 },	-- Igneous Elemental
+				["coord"] = { 32.6, 77.6, ISLE_OF_DORN },
+			}),
+			i(222906, {	-- Plump Snapcrab
+				["crs"] = { 223159 },	-- Plump Snapcrab
+				["coord"] = { 40.6, 59.9, ISLE_OF_DORN },
+			}),
+			i(224026, {	-- Storm Vessel
+				["cost"] = {{"i", 224025, 10}},	-- 10x Crackling Shard
+			}),
 		}),
 	}),
 })));

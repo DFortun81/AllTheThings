@@ -10,6 +10,7 @@ local GetTitleName, UnitName, CALENDAR_PLAYER_NAME, IsTitleKnown, GetNumTitles =
 -- Module
 
 -- App
+local Colorize = app.Modules.Color.Colorize
 
 -- Title Lib!
 local KEY, CACHE = "titleID", "Titles"
@@ -82,36 +83,38 @@ local OnUpdateForSpecificGender = function(t, parent, defaultUpdate)
 	return true;
 end
 app.CreateTitle = app.CreateClass("Title", "titleID", {
-	["icon"] = function(t)
+	icon = function(t)
 		return app.asset("Category_Titles");
 	end,
-	["description"] = function(t)
+	description = function(t)
 		return L.TITLES_DESC;
 	end,
-	["text"] = function(t)
-		return "|c" .. app.Colors.Account .. t.name .. "|r";
+	text = function(t)
+		return Colorize(t.name, app.Colors.Account)
 	end,
-	["name"] = function(t)
-		return StylizePlayerTitle(t.titleName, t.style, UnitName("player"));
+	name = function(t)
+		local name = StylizePlayerTitle(t.titleName, t.style, UnitName("player"))
+		t.name = name
+		return name
 	end,
-	["titleName"] = function(t)
+	titleName = function(t)
 		return GetTitleName(t[KEY]);
 	end,
-	["title"] = function(t)
+	title = function(t)
 		return StylizePlayerTitle(t.titleName, t.style, "("..CALENDAR_PLAYER_NAME..")");
 	end,
-	["style"] = function(t)
+	style = function(t)
 		local style = CalculateTitleStyle(t.titleName);
 		if style then
 			t.style = style;
 			return style;
 		end
 	end,
-	["collectible"] = function(t)
+	collectible = function(t)
 		return app.Settings.Collectibles.Titles;
 	end,
-	["trackable"] = app.ReturnTrue,
-	["collected"] = app.IsClassic and function(t)
+	trackable = app.ReturnTrue,
+	collected = app.IsClassic and function(t)
 		local titleID = t[KEY];
 		return app.SetCollected(t, "Titles", titleID, IsTitleKnown(titleID));
 	end or function(t)
@@ -121,10 +124,10 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 		-- account-wide collected
 		if app.IsAccountTracked(CACHE, id) then return 2; end
 	end,
-	["saved"] = function(t)
+	saved = function(t)
 		return IsTitleKnown(t[KEY]);
 	end,
-	["OnUpdate"] = function(t)
+	OnUpdate = function(t)
 		return t.gender and OnUpdateForSpecificGender;
 	end
 });

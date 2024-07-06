@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(194389),	-- Brush Clearing Axe
 						i(194392),	-- Expedition Defender's Blade
 						i(194378),	-- Explorer's Belt Knife
-						i(194374),	-- Explorer's League Rifle
+						i(194374),	-- Explorers' League Rifle
 						i(194375),	-- Explorer's Short Sword
 						i(194373),	-- Field Explorer's Stave
 						i(194394),	-- Persistent Threat Cleaver

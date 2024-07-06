@@ -15,33 +15,33 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.1.0
-		expansion(EXPANSION.WRATH, 1.0, bubbleDown({ ["timeline"] = { CREATED_3_1_0 } }, {
+		expansion(EXPANSION.WRATH, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_1_0 } }, {
 			i(42147),	-- Force Reaction Frost Giants
 			i(40796),	-- Force Reaction Frost Vrykul
 		})),
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.3
-		expansion(EXPANSION.CATA, 0.3, bubbleDown({ ["timeline"] = { CREATED_4_0_3 } }, {
+		expansion(EXPANSION.CATA, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
 			i(45818),	-- Force Quest Phase 1
 			i(46056),	-- Force Quest Phase 2
 		})),
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.2.0
-		expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { CREATED_5_2_0 } }, {
+		expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
 			i(93660),	-- Thunder-Laced Egg
 		})),
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, 0.1, bubbleDown({ ["timeline"] = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 			i(109012),	-- Frostwolf Ancestral Totem
 		})),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, 2.0, bubbleDown({ ["timeline"] = { CREATED_7_2_0 } }, {
+		expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
 			i(142362),	-- ZZZ OLD Fel-Etched Bone
 			i(142376),	-- ZZZ OLD Glowing Bloodthistle Petal
 			i(142371),	-- ZZZ OLD Inferno Stone
@@ -51,7 +51,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 			i(157772),	-- A Royal Concern
 			i(157775),	-- A Royal Concern
 			i(157788),	-- Saurid Egg
@@ -59,17 +59,17 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 8.1.0
-		expansion(EXPANSION.BFA, 1.0, bubbleDown({ ["timeline"] = { CREATED_8_1_0 } }, {
+		expansion(EXPANSION.BFA, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_0 } }, {
 			i(164764),	-- Trident Head
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, 1.5, bubbleDown({ ["timeline"] = { CREATED_8_1_5 } }, {
+		expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
 			i(164776),	-- Schematic: The Ub3r-Spanner
 		})),
 
 		-- 8.2.0
-		expansion(EXPANSION.BFA, 2.0, bubbleDown({ ["timeline"] = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 			i(169326),	-- Abyssal Shard
 			i(167652),	-- Blueprint: Hundred-Fathom Lure
 			i(168023),	-- DNT- Smashed Transport Relay
@@ -89,7 +89,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			i(175265),	-- Belt of Prime Command
 			i(181139),	-- Blueprint: Charm of Alacrity
 			i(181241),	-- Blueprint: Charm of Buff 7
@@ -104,7 +104,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, 0.2, bubbleDown({ ["timeline"] = { CREATED_9_0_2 } }, {
+		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_2 } }, {
 			i(175841),	-- Ani-Matter Orb
 			i(175013),	-- Bug Dissolver
 			i(181824),	-- Corrosive Bile
@@ -126,7 +126,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, 1.0, bubbleDown({ ["timeline"] = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 			i(185732),	-- Archive Tablet
 			i(187004),	-- Bone Chew
 			i(185736),	-- Brilliant Golden Feather
@@ -143,7 +143,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, 2.0, bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 			i(187688),	-- [DNT] Rinanji's Key
 			i(187686),	-- [DNT] Suspicious Badge
 			i(187274),	-- Ancient Alloy
@@ -192,7 +192,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			i(194445),	-- [DNT] Ceremonial Necklace
 			i(191633),	-- A Shard of Crystallized Mana
 			i(191023),	-- Mudcaked Necklace
@@ -344,7 +344,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 			i(194706),	-- [DEPRECATED]Illusionary Key
 			i(191069),	-- Beacon of the Black Prince
 			i(198848),	-- Flyspawn Thorax
@@ -354,7 +354,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 			i(204089),	-- Atrenosh's Spellsworn Sigil
 			i(203998),	-- Beetle Juice
 			i(202396),	-- Plains Timber
@@ -366,7 +366,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 			i(201956),	-- [DNT] Snakey Eyes
 			i(204351),	-- Animated Crystal Shard
 			i(204349),	-- Bigger Wrench
@@ -375,7 +375,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(204711),	-- Crystal Focus
 			i(204331),	-- Djaradin Pillar Shard
 			i(204347),	-- Pool Contaminant
-			i(202271),	-- Pouch of Gold Coins
 			i(205410),	-- Pungent Morsel
 			i(202239),	-- Senegos's Old Spellbook
 			i(204197),	-- Shard of an Earth Portal
@@ -384,11 +383,10 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(202875),	-- Snail Lasso
 			i(204327),	-- Titan Machine Part
 			i(204175),	-- Unknown Core
-			i(203707),	-- Water Bucket
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			i(202270),	-- [DNT] Twice-Woven Rope
 			i(202313),	-- Echolocator
 			i(202312),	-- Juicy Mammoth Steak
@@ -402,7 +400,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(206378),	-- [DNT] Test Loot
 			i(206379),	-- [DNT] Test Loot
 			i(208703),	-- Blacksmith Bammer
@@ -417,7 +415,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			i(211266),	-- Archivist's Fire Totem
 			i(210720),	-- Delicate Flower
 			i(210721),	-- Fanciful Flower
@@ -427,7 +425,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, 2.7, bubbleDown({ ["timeline"] = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 			i(213173),	-- Thread of Power
 		})),
 	}),

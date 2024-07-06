@@ -2219,11 +2219,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 				}),
 				n(574, {  -- Naraxis
-					-- #if AFTER CATA
-					["coord"] = { 86.36, 47.32, DUSKWOOD },
-					-- #else
-					["coord"] = { 86.6, 49.6, DUSKWOOD },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 86.36, 47.32, DUSKWOOD },
+						-- #else
+						{ 86.6, 49.6, DUSKWOOD },
+						-- #endif
+					},
 					["groups"] = {
 						i(4448, {	-- Husk of Naraxis
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2425,37 +2427,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2014, {	-- Black Metal Greatsword
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 					["cr"] = 1270,	-- Fetid Corpse
-					-- #if BEFORE 4.0.3
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 78.4, 36.0, DUSKWOOD },
 						{ 79.8, 32.8, DUSKWOOD },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 81.6, 32.2, DUSKWOOD },
 						{ 81.6, 33.6, DUSKWOOD },
 						{ 76.8, 31.0, DUSKWOOD },
 						{ 74.8, 32.8, DUSKWOOD },
 						{ 75.2, 37.6, DUSKWOOD },
 						{ 76.6, 36.6, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(886, {	-- Black Metal Shortsword
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- 02.09.2023 Data Discord
 					["cr"] = 210,	-- Bone Chewer
-					-- #if BEFORE 4.0.3
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 25.6, 32.4, DUSKWOOD },
 						{ 24.4, 37.4, DUSKWOOD },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 15.8, 35.0, DUSKWOOD },
 						{ 17.0, 31.2, DUSKWOOD },
 						{ 23.4, 35.4, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(2015, {	-- Black Metal War Axe
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2520,19 +2518,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2232, {	-- Dark Runner Boots
 					["cr"] = 205,	-- Nightbane Dark Runner
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 62.4, 42.6, DUSKWOOD },
 						{ 64.0, 49.6, DUSKWOOD },
 						{ 64.2, 74.0, DUSKWOOD },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 66.4, 33.0, DUSKWOOD },
 						{ 61.8, 38.0, DUSKWOOD },
 						{ 65.6, 49.0, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(1077, {	-- Defias Mage Ring
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2664,32 +2660,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(897, {	-- Madwolf Bracers
 					["cr"] = 206,	-- Nightbane Vile Fang
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 73.6, 72.0, DUSKWOOD },
 						{ 62.4, 80.4, DUSKWOOD },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 74.2, 71.0, DUSKWOOD },
 						{ 72.2, 74.6, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(2234, {	-- Nightwalker Armor
 					["cr"] = 920,	-- Nightbane Tainted One
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 74.0, 74.2, DUSKWOOD },
 						{ 62.8, 80.2, DUSKWOOD },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 73.6, 73.0, DUSKWOOD },
 						{ 73.8, 78.8, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(2226, {	-- Ogremage Staff
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2727,18 +2719,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(2233, {	-- Shadow Weaver Leggings
 					["cr"] = 533,	-- Nightbane Shadow Weaver
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 67.2, 75.4, DUSKWOOD },
 						{ 63.6, 70.6, DUSKWOOD },
 						{ 64.8, 46.2, DUSKWOOD },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 65.6, 69.4, DUSKWOOD },
 						{ 64.0, 75.8, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(2018, {	-- Skeletal Longsword
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2783,20 +2773,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(899, {	-- Venom Web Fang
 					["cr"] = 217,	-- Venom Web Spider
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 28.8, 29.6, DUSKWOOD },
 						{ 18.8, 27.8, DUSKWOOD },
-					},
-					-- #elseif AFTER 10.1.7
-					["coords"] = {
+						-- #elseif AFTER 10.1.7
 						{ 43.0, 20.4, DUSKWOOD },
 						{ 58.6, 20.6, DUSKWOOD },
 						{ 67.6, 48.0, DUSKWOOD },
 						{ 72.6, 24.6, DUSKWOOD },
 						{ 79.0, 21.8, DUSKWOOD },
+						-- #endif
 					},
-					-- #endif
 				}),
 				-- #if BEFORE 10.1.7
 				i(920, {	-- Wicked Spiked Mace

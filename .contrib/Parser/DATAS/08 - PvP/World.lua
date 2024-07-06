@@ -215,6 +215,54 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			i(202184),	-- Trophy of Strife
 		}),
 	})),
+	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		n(ACHIEVEMENTS, {
+			ach(40088),	-- A Champion's Tour: The War Within (automated)
+			ach(40464),	-- Bounty Master
+			ach(40097, {	-- Ruffious's Bid
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					40088,	-- A Champion's Tour: Dragon Isles
+					40096,	-- Sparking Battle
+					40086,	-- Tour of Duty: Azj-Kahet
+					40085,	-- Tour of Duty: Hallowfall
+					40083,	-- Tour of Duty: Isle of Dorn
+					40084,	-- Tour of Duty: The Ringing Deeps
+					40087,	-- Unbound Battle
+				}},
+			}),
+			-- TODO: check if _noautomation still needed once all criteriaIDs are correct
+			ach(40091, bubbleDown({ ["_noautomation"] = true, }, {	-- Slightly Spoiled
+				crit(66982, {	-- Isle of Dorn
+					["maps"] = { ISLE_OF_DORN },
+				}),
+				crit(66983, {	-- The Ringing Deeps
+					["maps"] = { THE_RINGING_DEEPS },
+				}),
+				-- TODO: Blizzard done goofed with the criteriaIDs here, fix after they do
+				-- crit(66982, {	-- Hallowfall
+				-- 	["maps"] = { HALLOWFALL },
+				-- }),
+				crit(66984, {	-- Azj-kahet
+					["maps"] = { AZJ_KAHET },
+				}),
+			})),
+			ach(40095),	-- Sparking Battle (x5)
+			ach(40096, {	-- Sparking Battle (x20)
+				i(225969),	-- Forged Flag of Victory (TOY!)
+			}),
+			ach(40089),	-- Spoiled Goods
+			ach(40090),	-- Spoiled Goods
+			ach(40087),	-- Unbound Battle (automated)
+			ach(40465, {	-- Unbound Bounty
+				-- TODO: Check criteria work when this isn't pointing to DF zones anymore
+				["sym"] = {{ "achievement_criteria" }},
+			}),
+			ach(40466),	-- Unbound Glory
+			ach(40467),	-- Unbound Glory
+			ach(40468),	-- Unbound Glory
+		}),
+	})),
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

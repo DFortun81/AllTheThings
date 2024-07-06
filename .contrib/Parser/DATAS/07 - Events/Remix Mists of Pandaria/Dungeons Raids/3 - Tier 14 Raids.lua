@@ -3,6 +3,7 @@
 -----------------------------------------------------
 TIER_14_RAIDS = createHeader({
 	readable = "Tier 14 Raids",
+	constant = "TIER_14_RAIDS",
 	icon = [[~_.asset("Category_D&R")]],
 	text = {
 		en = "Tier 14 Raids",
@@ -136,7 +137,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				n(WEAPONS, {
 					i(215582),	-- Blade of the Seven Stars (HoF LFR (1st wing) / ToES LFR)
 					i(215584),	-- Blade of the Seven Stars (MSV LFR)
-					i(215793),	-- Bo-Ris, Spear of Night (HoF LFR)
 					i(210641),	-- Bo-Ris, Spear of Night
 					i(215839),	-- Brazier of the Eternal Empire (MSV LFR / ToES LFR)
 					i(215842),	-- Brazier of the Eternal Empire (HoF LFR)

@@ -32,6 +32,7 @@ api.FACTION_RACES = {
 		34,	-- Dark Iron
 		37,	-- Mechagnome
 		52, -- Dracthyr [Alliance]
+		85,	-- Earthen [Alliance]
 	},
 	[2] = {
 		2,	-- Orc
@@ -47,6 +48,7 @@ api.FACTION_RACES = {
 		35,	-- Vulpera
 		36,	-- Mag'har
 		70, -- Dracthyr [Horde]
+		84,	-- Earthen [Horde]
 	}
 };
 
@@ -116,4 +118,3 @@ api.AddQuestsTooltipWithReputation = function(tooltipInfo, text, quests, repPerT
 	return repPerTurnIn;
 end
 
-        

@@ -2,8 +2,8 @@ local appName, app = ...
 local L = app.L;
 
 -- Global locals
-local ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type
-	= ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type;
+local ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type, tinsert
+	= ipairs, pairs, rawset, select, setmetatable, tonumber, tostring, type, tinsert;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
 
 -- WoW API Cache
@@ -463,23 +463,55 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 			wipe(heirloomIDs);
 		end
 	end
-
-	local CreateHeirloom = app.ExtendClass("Item", "Heirloom", "heirloomID", heirloomFields,
-	"AsTransmog", {
-		collectible = function(t)
-			return t.collectibleAsCost or app.Settings.Collectibles.Transmog;
-		end,
-		collected = function(t)
-			if t.collectedAsCost == false then
-				return;
+	
+	-- Heirlooms are containers for unlocks & upgrade levels.
+	local heirloomDefinition = { "Item", "Heirloom", "heirloomID", heirloomFields };
+	if gameBuildVersion < 40000 then
+		-- Prior to Cataclysm, we need to collect transmog the same way as we do for items.
+		tinsert(heirloomDefinition, "AsTransmog");
+		tinsert(heirloomDefinition, {
+			collectible = function(t)
+				return t.collectibleAsCost or app.Settings.Collectibles.Transmog;
+			end,
+			collected = function(t)
+				if t.collectedAsCost == false then
+					return;
+				end
+				return collectedAsTransmog(t);
+			end,
+			description = function()
+				return "This item also has a sourceID with it, keep at least one somewhere on your account. I'm not sure if Blizzard is planning on deprecating this completely before transmog comes out or not!\n\n  - Crieve";
+			end,
+		});
+		tinsert(heirloomDefinition, isCollectibleTransmog);
+	else
+		-- After the Cataclysm, we can use the transmog API.
+		local AccountSources;
+		tinsert(heirloomDefinition, "AsTransmog");
+		tinsert(heirloomDefinition, {
+			collectible = function(t)
+				return t.collectibleAsCost or app.Settings.Collectibles.Transmog;
+			end,
+			collected = function(t)
+				if t.collectedAsCost == false then
+					return;
+				end
+				return AccountSources[t.sourceID];
+			end,
+		});
+		tinsert(heirloomDefinition, isCollectibleTransmog);
+		app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+			AccountSources = accountWideData.Sources;
+			if not AccountSources then
+				AccountSources = {};
+				accountWideData.Sources = AccountSources;
 			end
-			return collectedAsTransmog(t);
-		end,
-		description = function()
-			return "This item also has a sourceID with it, keep at least one somewhere on your account. I'm not sure if Blizzard is planning on deprecating this completely before transmog comes out or not!\n\n  - Crieve";
-		end,
-	}, isCollectibleTransmog,
-	"WithFaction", {
+		end);
+	end
+	
+	-- Faction Extension.
+	tinsert(heirloomDefinition, "WithFaction");
+	tinsert(heirloomDefinition, {
 		collectible = function(t)
 			return t.collectibleAsCost or app.Settings.Collectibles.Reputations;
 		end,
@@ -502,7 +534,10 @@ if C_Heirloom and app.GameBuildVersion >= 30000 then
 			if app.CurrentCharacter.Factions[t.factionID] then return 1; end
 			if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
 		end,
-	}, (function(t) return t.factionID; end));
+	});
+	tinsert(heirloomDefinition, function(t) return t.factionID; end);
+	
+	local CreateHeirloom = app.ExtendClass(unpack(heirloomDefinition));
 	app.CreateHeirloom = function(id, t)
 		t = CreateHeirloom(id, t);
 		--t.b = 2;	-- Heirlooms are always BoA

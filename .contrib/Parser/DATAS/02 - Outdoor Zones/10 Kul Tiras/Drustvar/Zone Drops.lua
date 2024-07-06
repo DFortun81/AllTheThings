@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 		}),
-		n(ZONE_DROPS, bubbleDown({["bonusID"] = 4796, }, {
+		n(ZONE_DROPS, {
 			i(168127),	-- Lingering Drust Essence
 			i(154848),	-- Heartsbane Greatcloak
 			i(154853),	-- Crimsonwood Cowl
@@ -49,6 +49,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(154847),	-- Corlain Vambraces
 			i(154842),	-- Corlain Girdle
 			i(154844),	-- Corlain Greaves
-		})),
+		}),
 	}),
 })));

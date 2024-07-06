@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["questID"] = 52859,
 			}),
 		}),
-		n(ZONE_DROPS, bubbleDown({["bonusID"] = 4796, }, {
+		n(ZONE_DROPS, {
 			i(159184),	-- Foxhollow Circlet
 			i(159189),	-- Foxhollow Amice
 			i(159166),	-- Foxhollow Drape
@@ -40,6 +40,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(159158),	-- Ashvane Company Chestplate
 			i(159162),	-- Ashvane Company Greaves
 			i(159164),	-- Ashvane Company Sabatons
-		})),
+		}),
 	}),
 })));

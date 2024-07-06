@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(451603, {	-- Forgotten Memorial
-				["coord"] = { 7.8, 25.7, 2213 },	-- Nureb'ar
+				["coord"] = { 7.8, 25.7, NERUBAR },
 				--["questID"] = xx,
 				["g"] = {
 					-- bugged, uninteractable.
@@ -110,10 +110,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(446101, {	-- Nerubian Offerings
-				["coord"] = { 31.6, 20.7, 2213 },
+				["coord"] = { 31.6, 20.7, NERUBAR },
 				["questID"] = 82720,
 				["g"] = {
-					i(225513),	-- Bloodied Idol
+					i(225543),	-- Bloodied Idol
 					i(223899),	-- Shadowed Appendage
 				},
 			}),
@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			o(444800, {	-- Sureki Strongbox
 				["coords"] = {
 					{ 74.9, 56.3, AZJ_KAHET },
-					{ 78.0, 49.3, 2213 },	-- Nerub'ar // more than one spot or have daily lockout because didn't fire qID
+					{ 78.0, 49.3, NERUBAR },
 					{ 76.3, 43.4, AZJ_KAHET },
 					{ 73.5, 45.2, AZJ_KAHET },
 				},
@@ -165,7 +165,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			o(446421, {	-- Trapped Trove
-				["coord"] = { 67.4, 74.4, 2213 },	-- Nerub'ar
+				["coord"] = { 67.4, 74.4, NERUBAR },
 				["questID"] = 82727,
 				["g"] = {
 					i(222966),	-- Spinner (PET!)
@@ -220,8 +220,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 224895 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82862,
 				["coords"] = {
-					{ 75.2, 48.3, 2213 },	-- Thimble
-					{ 73.6, 29.0, 2213 },	-- cache spot
+					{ 75.2, 48.3, NERUBAR },	-- Thimble
+					{ 73.6, 29.0, NERUBAR },	-- cache spot
 				},
 				["g"] = {
 					currency(3056),	-- Kej
@@ -232,8 +232,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 224891 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82858,
 				["coords"] = {
-					{ 69.9, 82.8, 2213 },	-- Thimble
-					{ 63.9, 85.7, 2213 },	-- cache spot
+					{ 69.9, 82.8, NERUBAR },	-- Thimble
+					{ 63.9, 85.7, NERUBAR },	-- cache spot
 				},
 				["g"] = {
 					currency(3056),	-- Kej
@@ -273,7 +273,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 82067,
 			}),
 			n(222304, {	-- Neglected Shadecaster
-				["coord"] = { 8.6, 30.6, 2213 },
+				["coord"] = { 8.6, 30.6, NERUBAR },
 				["questID"] = 82085,
 			}),
 			n(222283, {	-- Weathered Shadecaster

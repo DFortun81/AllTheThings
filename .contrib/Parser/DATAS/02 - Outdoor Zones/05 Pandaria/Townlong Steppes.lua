@@ -1042,6 +1042,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.1, 82.4, TOWNLONG_STEPPES },
 						["provider"] = { "n", 62802 },	-- Taoshi
 						["sourceQuests"] = { 30968 },	-- The Sha of Hatred
+						["isBreadcrumb"] = true,
 					}),
 					q(30787, {	-- The Torches
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },

@@ -76,13 +76,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 				["questID"] = 81694,
 				["g"] = {
-					i(223392),	-- Trousers of Dark Hunger
+					i(223378),	-- Footguards of the Nerubian Twins
 					i(223408),	-- Treads of the Nerubian Twins
 				},
 			}),
 			n(214151, {	-- Ahg'zagall
 				["coord"] = { 40.0, 47.3, AZJ_KAHET },
-				["questID"] = 81698,
+				["questID"] = 81698,	-- 78905 on 80s 2nd character??
 				["g"] = {
 					i(223375),	-- Clattering Chitin Necklace
 				},
@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					{ 62.7, 43.6, AZJ_KAHET },	-- Mid
 					{ 68.7, 54.8, AZJ_KAHET },	-- End
 				},
-				["questID"] = 81702,	-- in addition 84071 (84071 didn't fire on secodn kill / on 80s)
+				["questID"] = 81702,	-- in addition 84071 (84071 didn't fire on second kill on 80s same character / fire on alt 77 level)
 				["g"] = {
 					i(221206),	-- Reinforced Chitin Chestpiece
 				},
@@ -123,8 +123,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(216039, {	-- Xishorr (vignette -  Lurking Hunter)
 				["description"] = "In cave.",
 				["coords"] = {
-					{ 72.3, 57.0, 2216 },	-- Cave entrance
-					{ 68.7, 59.3, 2216 },	-- Rare spot
+					{ 72.3, 57.0, NERUBAR_LOWER },	-- Cave entrance
+					{ 68.7, 59.3, NERUBAR_LOWER },	-- Rare spot
 				},
 				["questID"] = 81701,	-- in addition 84070
 				["g"] = {
@@ -132,7 +132,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			n(216038, {	-- The Groundskeeper (vignette - Chitin Hulk)
-				["coord"] = { 30.6, 55.5, 2213 },	-- Nerub'ar
+				["coord"] = { 30.6, 55.5, NERUBAR },
 				["questID"] = 81634,	-- in addition 84069
 				["g"] = {
 					--
@@ -143,6 +143,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["questID"] = 81704,	-- in addition 84073
 				["g"] = {
 					i(221212),	-- Death Burrower Handguards
+				},
+			}),
+			n(216045, {	-- Enduring Gutterface
+				["coord"] = { 58.4, 65.0, AZJ_KAHET },
+				["questID"] = 81707,	-- in addition 84076
+				["g"] = {
+					i(221243),	-- Slippers of Delirium (alpha data)
+				},
+			}),
+			n(216044, {	-- Maddened Siegebomber
+				--TODO: need more coords, flying around
+				["coord"] = { 66.4, 56.4, AZJ_KAHET },
+				["questID"] = 81706,	-- in addition 84075
+				["g"] = {
+					i(221217),	-- Nerubian Bomber's Leggings
 				},
 			}),
 		})),

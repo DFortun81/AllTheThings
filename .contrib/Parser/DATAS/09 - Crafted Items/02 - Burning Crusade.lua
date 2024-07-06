@@ -608,21 +608,48 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 	}),
 	-- #endif
 	prof(FISHING, {
-		i(27422),	-- Barbed Gill Trout
-		applyclassicphase(TBC_PHASE_FOUR, i(33823, {["timeline"] = {ADDED_2_3_0}})),	-- Bloodfin Catfish
-		applyclassicphase(TBC_PHASE_FOUR, i(33824, {["timeline"] = {ADDED_2_3_0}})),	-- Crescent-Tail Skullfish
+		i(27422, {	-- Barbed Gill Trout
+			["description"] = "Can be caught in open waters around Outland and Deadwind Pass.",
+		}),
+		applyclassicphase(TBC_PHASE_FOUR, i(33823, {	-- Bloodfin Catfish
+			["description"] = "Can only be caught in Deadwind Pass.",
+			["timeline"] = {ADDED_2_3_0},
+		})),
+		applyclassicphase(TBC_PHASE_FOUR, i(33824, {	-- Crescent-Tail Skullfish
+			["description"] = "Can only be caught in Deadwind Pass.",
+			["timeline"] = {ADDED_2_3_0},
+		})),
 		i(27513),	-- Curious Crate
-		i(27516),	-- Enormous Barbed Gill Trout
-		i(27435),	-- Figluster's Mudfish
-		i(27439),	-- Furious Crawdad
-		applyclassicphase(TBC_PHASE_FIVE, i(35285, {["timeline"] = {ADDED_2_4_0}})),	-- Giant Sunfish
-		i(27438),	-- Golden Darter
+		i(27516, {	-- Enormous Barbed Gill Trout
+			["description"] = "Can be caught from fishing schools in Nagrand, Terokkar Forest and Zangarmarsh.",
+		}),
+		i(27435, {	-- Figluster's Mudfish
+			["description"] = "Can be caught from Mudfish Schools in Nagrand.",
+		}),
+		i(27439, {	-- Furious Crawdad
+			["description"] = "Can be caught from Highland Mixed Schools in Terokkar Forest.",
+		}),
+		applyclassicphase(TBC_PHASE_FIVE, i(35285, {	-- Giant Sunfish
+			["description"] = "Can only be caught in open sea waters around Isle of Quel'Danas.",
+			["timeline"] = {ADDED_2_4_0},
+		})),
+		i(27438, {	-- Golden Darter
+			["description"] = "Can be caught from School of Darter in Terokkar Forest.",
+		}),
 		i(27481),	-- Heavy Supply Crate
-		i(27515),	-- Huge Spotted Feltail
-		i(27437),	-- Icefin Bluefish
+		i(27515, {	-- Huge Spotted Feltail
+			["description"] = "Can be caught from fishing schools in Nagrand, Terokkar Forest and Zangarmarsh.",
+		}),
+		i(27437, {	-- Icefin Bluefish
+			["description"] = "Can be caught from Bluefish Schools in Nagrand.",
+		}),
 		i(27511),	-- Inscribed Scrollcase
-		i(27425),	-- Spotted Feltail
-		i(27429),	-- Zangarian Sporefish
+		i(27425, {	-- Spotted Feltail
+			["description"] = "Can be caught in open waters in Terokkar Forest and Zangarmarsh.",
+		}),
+		i(27429, {	-- Zangarian Sporefish
+			["description"] = "Can be caught from Sporefish Schools in Zangarmarsh.",
+		}),
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",

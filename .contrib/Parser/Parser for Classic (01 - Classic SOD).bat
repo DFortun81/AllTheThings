@@ -1,0 +1,1 @@
+"Parser.exe" config=parser.classic.sod.config

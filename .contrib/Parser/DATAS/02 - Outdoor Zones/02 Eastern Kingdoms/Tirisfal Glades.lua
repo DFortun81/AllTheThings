@@ -672,48 +672,58 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3295, {	-- Deadman Blade
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1919,	-- Samuel Fipps
-							-- #if AFTER CATA
-							["coord"] = { 70.8, 38.4, DEATHKNELL },
-							-- #else
-							["coord"] = { 36.6, 61.6, TIRISFAL_GLADES },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 70.8, 38.4, DEATHKNELL },
+								-- #else
+								{ 36.6, 61.6, TIRISFAL_GLADES },
+								-- #endif
+							},
 						}),
 						i(3293, {	-- Deadman Cleaver
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1917,	-- Daniel Ulfman
-							-- #if AFTER CATA
-							["coord"] = { 70.8, 41.0, DEATHKNELL },
-							-- #else
-							["coord"] = { 36.6, 61.8, TIRISFAL_GLADES },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 70.8, 41.0, DEATHKNELL },
+								-- #else
+								{ 36.6, 61.8, TIRISFAL_GLADES },
+								-- #endif
+							},
 						}),
 						i(3294, {	-- Deadman Club
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1918,	-- Karrel Grayves
-							-- #if AFTER CATA
-							["coord"] = { 71.2, 40.6, DEATHKNELL },
-							-- #else
-							["coord"] = { 36.6, 61.6, TIRISFAL_GLADES },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 71.2, 40.6, DEATHKNELL },
+								-- #else
+								{ 36.6, 61.6, TIRISFAL_GLADES },
+								-- #endif
+							},
 
 						}),
 						i(3296, {	-- Deadman Dagger
-							-- #if AFTER CATA
-							["coord"] = { 70.0, 40.6, DEATHKNELL },
-							-- #else
-							["coord"] = { 36.6, 61.6, TIRISFAL_GLADES },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 70.0, 40.6, DEATHKNELL },
+								-- #else
+								{ 36.6, 61.6, TIRISFAL_GLADES },
+								-- #endif
+							},
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1916,	-- Stephen Bhartec
 						}),
 						i(3262, {	-- Putrid Wooden Hammer
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1890,	-- Rattlecage Skeleton
-							-- #if AFTER CATA
-							["coord"] = { 52.8, 42.8, DEATHKNELL },
-							-- #else
-							["coord"] = { 33.0, 63.6, TIRISFAL_GLADES },
-							-- #endif
+							["coords"] = {
+								-- #if AFTER CATA
+								{ 52.8, 42.8, DEATHKNELL },
+								-- #else
+								{ 33.0, 63.6, TIRISFAL_GLADES },
+								-- #endif
+							},
 						}),
 						-- #if BEFORE 10.1.7
 						i(3260, {	-- Scarlet Initiate Robes
@@ -753,11 +763,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(3263, {	-- Webbed Pants
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1505,	-- Night Web Spider
-							-- #if BEFORE CATA
-							["coord"] = { 27.6, 59.2, TIRISFAL_GLADES },
-							-- #else
-							["coord"] = { 26.8, 31.8, DEATHKNELL },
-							-- #endif
+							["coords"] = {
+								-- #if BEFORE CATA
+								{ 27.6, 59.2, TIRISFAL_GLADES },
+								-- #else
+								{ 26.8, 31.8, DEATHKNELL },
+								-- #endif
+							},
 						}),
 					}),
 				},
@@ -2337,19 +2349,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(1531, {	-- Lost Soul
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 53.6, 45.4, TIRISFAL_GLADES },
 						{ 53.6, 48.8, TIRISFAL_GLADES },
 						{ 49.2, 32.6, TIRISFAL_GLADES },
 						{ 45.0, 37.6, TIRISFAL_GLADES },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 48.6, 36.2, TIRISFAL_GLADES },
 						{ 53.6, 48.6, TIRISFAL_GLADES },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(3322, {	-- Wispy Cloak
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2496,11 +2506,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			n(VENDORS, {
 				n(2118, {	-- Abigail Shiel <Trade Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 61.0, 51.0, TIRISFAL_GLADES },
-					-- #else
-					["coord"] = { 61.0, 52.4, TIRISFAL_GLADES },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.0, 51.0, TIRISFAL_GLADES },
+						-- #else
+						{ 61.0, 52.4, TIRISFAL_GLADES },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12226),	-- Recipe: Crispy Bat Wing (RECIPE!)
@@ -2517,11 +2529,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
-					-- #if AFTER CATA
-					["coord"] = { 83.2, 68.0, TIRISFAL_GLADES },
-					-- #else
-					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 83.2, 68.0, TIRISFAL_GLADES },
+						-- #else
+						{ 83.2, 68.2, TIRISFAL_GLADES },
+						-- #endif
+					},
 					["sym"] = {{ "select", "itemID", 206584 }},	-- Archived Crafting Techniques
 					["groups"] = {
 						i(22014, {	-- Hallowed Brazier
@@ -2634,11 +2648,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 83.2, 69.4, TIRISFAL_GLADES },
-					-- #else
-					["coord"] = { 83.2, 69.6, TIRISFAL_GLADES },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 83.2, 69.4, TIRISFAL_GLADES },
+						-- #else
+						{ 83.2, 69.6, TIRISFAL_GLADES },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(15741, {	-- Pattern: Stormshroud Pants (RECIPE!)
@@ -2650,11 +2666,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(4731, {	-- Zachariah Post <Undead Horse Merchant>
-					-- #if AFTER CATA
-					["coord"] = { 61.8, 51.8, TIRISFAL_GLADES },
-					-- #else
-					["coord"] = { 59.8, 52.6, TIRISFAL_GLADES },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 61.8, 51.8, TIRISFAL_GLADES },
+						-- #else
+						{ 59.8, 52.6, TIRISFAL_GLADES },
+						-- #endif
+					},
 					-- Available to Undead without faction requirements.
 					["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
 					["OnInit"] = [[function(t)
@@ -2947,36 +2965,32 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3325, {	-- Vile Fin Battle Axe
 					["cr"] = 1545,	-- Vile Fin Muckdweller
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 36.6, 38.6, TIRISFAL_GLADES },
 						{ 34.8, 44.8, TIRISFAL_GLADES },
 						{ 62.8, 29.6, TIRISFAL_GLADES },
 						{ 27.8, 38.0, TIRISFAL_GLADES },
 						{ 27.6, 46.6, TIRISFAL_GLADES },
-					},
-					-- #elseif AFTER CATA
-					["coords"] = {
+						-- #elseif AFTER CATA
 						{ 60.2, 27.8, TIRISFAL_GLADES },
 						{ 72.0, 26.6, TIRISFAL_GLADES },
+						-- #endif
 					},
-					-- #endif
 				}),
 				i(3327, {	-- Vile Fin Oracle Staff
 					["cr"] = 1544,	-- Vile Fin Minor Oracle
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-					-- #if BEFORE 4.0.3
 					["coords"] = {
+						-- #if BEFORE 4.0.3
 						{ 36.6, 38.6, TIRISFAL_GLADES },
 						{ 34.8, 44.8, TIRISFAL_GLADES },
 						{ 62.8, 29.6, TIRISFAL_GLADES },
-					},
-					-- #elseif AFTER CATA
-					["coords"] = {
+						-- #elseif AFTER CATA
 						{ 36.6, 38.6, TIRISFAL_GLADES },
 						{ 34.8, 44.8, TIRISFAL_GLADES },
+						-- #endif
 					},
-					-- #endif
 				}),
 			}),
 		},

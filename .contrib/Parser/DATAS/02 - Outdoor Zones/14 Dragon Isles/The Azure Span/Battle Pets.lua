@@ -20,7 +20,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["coord"] = { 10.8, 48.0, THE_AZURE_SPAN },
 				}),
-				pet(3351),	-- Grizzlefur Cub (PET!)
+				pet(3351,	{ -- Grizzlefur Cub (PET!)
+					["coords"] = {
+						{ 48.4, 56.0, THALDRASZUS },
+						{ 68.6, 52.0, THALDRASZUS },
+						{ 37.0, 33.0, THE_AZURE_SPAN }, 
+					},
+				}),
 				pet(3335, {	-- Pale Baby Vorquin (PET!)
 					["description"] = "Click the |cFFefc400Magical Creature Manual|r to see this pet.",
 					["coord"] = { 45.9, 38.3, THE_AZURE_SPAN },

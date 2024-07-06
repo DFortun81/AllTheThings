@@ -54,6 +54,7 @@ namespace ATT
             // Key-Value Pair   // Classic Release Phase
             { "UNKNOWN", 0 },   // Unknown, invalid data.
             { "CLASSIC", 11 },  // PHASE_ONE
+            { "SEASON_OF_DISCOVERY", 16 },      // PHASE_SIX (SOD uses sub-phases for this phase)
             { "TBC", 17 },      // TBC_PHASE_ONE
             { "WRATH", 30 },    // WRATH_PHASE_ONE
             { "CATA", 40 },     // CATA_PHASE_ONE
@@ -77,6 +78,7 @@ namespace ATT
             // Key-Value Pair   // Classic Release Phase
             { "UNKNOWN", 10 },   // Unknown, invalid data.
             { "CLASSIC", 16 },  // PHASE_SIX
+            { "SEASON_OF_DISCOVERY", 16 },      // PHASE_SIX (SOD uses sub-phases for this phase)
             { "TBC", 29 },      // TBC_PHASE_SIX?
             { "WRATH", 39 },    // WRATH_PHASE_SIX?
             { "CATA", 49 },     // CATA_PHASE_SIX?
@@ -101,6 +103,7 @@ namespace ATT
             // Key-Value Pair   // Classic Release Version
             { "UNKNOWN", new int[] { 0, 0, 0, 0 } },        // Unknown, invalid data.
             { "CLASSIC", new int[] { 1, 0, 0, 22248 } },    // NOTE: Values for WoW-Classic
+            { "SEASON_OF_DISCOVERY", new int[] { 1, 15, 0, 22248 } },
             { "TBC", new int[] { 2, 0, 1, 22248 } },        // NOTE: Values for TBC-Classic
             { "WRATH", new int[] { 3, 0, 2, 9056 } },       // NOTE: Values for Wrath-Classic
             { "CATA", new int[] { 4, 0, 1, 13164 } },
@@ -124,7 +127,8 @@ namespace ATT
         {
             // Key-Value Pair   // Classic Release Version
             { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },    // Unknown, invalid data.
-            { "CLASSIC", new int[] { 1, 15, 7, 22248 } },   // NOTE: Values for WoW-Classic
+            { "CLASSIC", new int[] { 1, 14, 0, 22248 } },   // NOTE: Values for WoW-Classic
+            { "SEASON_OF_DISCOVERY", new int[] { 1, 15, 7, 22248 } },
             { "TBC", new int[] { 2, 5, 5, 43638 } },        // NOTE: Values for TBC-Classic
             { "WRATH", new int[] { 3, 4, 5, 51666 } },      // NOTE: Values for Wrath-Classic
             { "CATA", new int[] { 4, 4, 5, 54481 } },
@@ -160,6 +164,12 @@ namespace ATT
         /// The last patch version of the current build type excluding the explicit build number. [Format: ABBCC]
         /// </summary>
         public static long CURRENT_SHORT_RELEASE_VERSION { get; private set; }
+
+        /// <summary>
+        /// The data requirements to execute this set of database files. (Null = no requirements)
+        /// This will generate an if-statement that needs to be evaluated as true before it will parse the file.
+        /// </summary>
+        public static string DATA_REQUIREMENTS = null;
 
         /// <summary>
         /// The maximum available Phase Identifier.
@@ -661,6 +671,7 @@ namespace ATT
             {
                 LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME] = configPatch;
             }
+            DATA_REQUIREMENTS = Config["DataRequirements"] ?? null;
             CURRENT_RELEASE_PHASE = FIRST_EXPANSION_PHASE[CURRENT_RELEASE_PHASE_NAME];
             CURRENT_RELEASE_VERSION = LAST_EXPANSION_PATCH[CURRENT_RELEASE_PHASE_NAME].ConvertVersion();
             CURRENT_SHORT_RELEASE_VERSION = CURRENT_RELEASE_VERSION.ConvertToGameVersion();
@@ -2242,8 +2253,9 @@ namespace ATT
                 }
 
                 // Prepare a Localization Database file.
-                StringBuilder localizationDatabase = new StringBuilder()
-                    .AppendLine("---@diagnostic disable: deprecated")
+                StringBuilder localizationDatabase = new StringBuilder().AppendLine("---@diagnostic disable: deprecated");
+                if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) localizationDatabase.Append("if not (").Append(DATA_REQUIREMENTS).AppendLine(") then return; end");
+                localizationDatabase
                     .AppendLine("-----------------------------------------------------------------")
                     .AppendLine("--   L O C A L I Z A T I O N   D A T A B A S E   M O D U L E   --")
                     .AppendLine("-----------------------------------------------------------------")
@@ -2261,7 +2273,6 @@ namespace ATT
                     // Generate a string builder for each language. (an empty builder at the end will not be exported)
                     localizationByLocale[language] = new StringBuilder();
                 }
-
 
                 // Export the Category DB file.
                 if (CATEGORIES_WITH_REFERENCES.Any())

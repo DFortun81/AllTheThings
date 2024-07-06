@@ -1052,3 +1052,8 @@ settings.CreateInformationType("modItemID", {
 	text = "DEBUG: modItemID",
 	HideCheckBox = not app.Debugging,
 })
+settings.CreateInformationType("hash", {
+	priority = 99999,
+	text = "DEBUG: hash",
+	HideCheckBox = not app.Debugging,
+})

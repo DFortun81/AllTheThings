@@ -18,6 +18,7 @@ root(ROOTS.Zones, {
 				386,	-- Ruins of Korune (Upper Floor)
 				387,	-- Ruins of Korune (Lower Floor)
 				434,	-- The Ancient Passage
+				843,	-- Shadow-Pan Showdown
 			},
 			["groups"] = {
 				n(-362, bubbleDownSelf({	-- Peak of Serenity
@@ -1141,7 +1142,10 @@ root(ROOTS.Zones, {
 					q(30467, {	-- My Son...
 						["coord"] = { 74.9, 88.8, KUN_LAI_SUMMIT },
 						["provider"] = { "n", 59263 },	-- Merchant Shi
-						["sourceQuest"] = 31451,	-- The Missing Merchant
+						["sourceQuests"] = {
+							31451,	-- The Missing Merchant (H)
+							31452,	-- The Missing Merchant (A)
+						},
 					}),
 					q(57071, {	-- No Brew Left Behind
 						["lvl"] = 120,
@@ -1551,7 +1555,7 @@ root(ROOTS.Zones, {
 							i(82549),	-- Wallwatcher Gauntlets
 						},
 					}),
-					q(31452, {	-- The Missing Merchant
+					q(31452, {	-- The Missing Merchant (A)
 						["coord"] = { 54.1, 83.4, KUN_LAI_SUMMIT },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 63542 },	-- Elder Tsulan
@@ -1563,7 +1567,7 @@ root(ROOTS.Zones, {
 							30662,	-- The Ordo Warbringer
 						},
 					}),
-					q(31451, {	-- The Missing Merchant
+					q(31451, {	-- The Missing Merchant (H)
 						["coord"] = { 62.3, 79.6, KUN_LAI_SUMMIT },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 63535 },	-- Elder Shiao

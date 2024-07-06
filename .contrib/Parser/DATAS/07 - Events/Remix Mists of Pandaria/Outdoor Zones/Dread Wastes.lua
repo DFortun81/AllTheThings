@@ -41,13 +41,19 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					crit(66005),	-- Writhingwood
 					crit(66006),	-- Zan'vess
 				})),
-				ach(19915),		-- The Klaxxi
 				ach(19967, {	-- Tour Dread Wastes
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
 						19998,	-- Elusive Foes: Dread Wastes
 						20031,	-- Explore Dread Wastes
 					}},
+				}),
+			}),
+			n(FACTIONS, {
+				faction(1337, {	-- The Klaxxi
+					n(ACHIEVEMENTS, {
+						ach(19915),		-- The Klaxxi
+					}),
 				}),
 			}),
 			n(QUESTS, {
@@ -114,6 +120,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215748),	-- Fireblaze Mace
 					i(216002),	-- Grummle Rod (wowhead)
 					i(215600),	-- Grummle Shortblade
+					i(215676),	-- Hopebringer's Lantern
 					i(215656),	-- Hozen Fetish
 					i(215762),	-- Hozen Smasher
 					i(210640),	-- Icon of Hope

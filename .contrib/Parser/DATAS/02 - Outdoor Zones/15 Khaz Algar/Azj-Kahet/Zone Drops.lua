@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			n(216199, {	-- Siege Spinner (but could be also n: 220294 (Siege Skitterer)?)
-				--["coord"] = { 61.1, 76.4, 2213 },	-- 63.9, 76.3, AZJ_KAHET
+				--["coord"] = { 61.1, 76.4, NERUBAR },
 				["g"] = {
 					i(226164),	-- Invitation: Grand Auction (QS!)/(QI!)
 				},

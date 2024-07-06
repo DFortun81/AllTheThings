@@ -708,11 +708,11 @@ local function ClearTooltip(tooltip)
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATT_AttachComplete = nil;
 end
-local HexToARGB = app.Modules.Color.HexToARGB
 local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
 	app.SetSkipLevel(1);
 	local status, group, working = pcall(app.GetCachedSearchResults, method, ...)
+	app.SetSkipLevel(0);
 	if status then
 		if group then
 			-- If nothing was put into the tooltip initially, mark the text of the source.
@@ -740,11 +740,10 @@ local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 			AttachTooltipInformation(tooltip, tooltipInfo);
 		end
 	else
-		print(status, group);
+		app.print(status, group);
 		app.PrintDebug("pcall tooltip failed",group)
 	end
 	tooltip.ATT_AttachComplete = not (working or (group and group.working));
-	app.SetSkipLevel(0);
 end
 
 -- Battle Pet Tooltips

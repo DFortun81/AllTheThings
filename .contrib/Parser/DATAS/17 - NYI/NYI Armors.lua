@@ -609,6 +609,22 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 	}),
 	expansion(EXPANSION.MOP, {
 		filter(CLOTH, {
+			expansion(EXPANSION.MOP, 0.1, {
+				i(80948),	-- Peacebreaker's Silk Cowl
+				i(80949),	-- Peacebreaker's Satin Hood
+				i(80988),	-- Scavenger's Silk Amice
+				i(80989),	-- Scavenger's Satin Mantle
+				i(81033),	-- Scavenger's Silk Handguards
+				i(81034),	-- Scavenger's Satin Gloves
+				i(81042),	-- Scavenger's Silk Cuffs
+				i(81043),	-- Scavenger's Satin Cuffs
+				i(80997),	-- Silk Robe of Eminent Domain
+				i(80998),	-- Satin Robe of Eminent Domain
+				i(81006),	-- Honorary Combat Engineer's Silk Trousers
+				i(81007),	-- Honorary Combat Engineer's Satin Leggings
+				i(81015),	-- Landfall Silk Treads
+				i(81016),	-- Landfall Satin Treads
+			}),
 			-- #if BEFORE 10.2.7
 			-- All was added into MoP: Remix Throne of Thunder Ensembles
 			expansion(EXPANSION.MOP, 2.0, {
@@ -624,6 +640,22 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			-- #endif
 		}),
 		filter(LEATHER, {
+			expansion(EXPANSION.MOP, 0.1, {
+				i(80946),	-- Peacebreaker's Leather Helm
+				i(80950),	-- Peacebreaker's Hide Helm
+				i(80986),	-- Scavenger's Leather Spaulders
+				i(80990),	-- Scavenger's Hide Spaulders
+				i(81031),	-- Scavenger's Leather Gloves
+				i(81035),	-- Scavenger's Hide Gloves
+				i(81040),	-- Scavenger's Leather Armwraps
+				i(81044),	-- Scavenger's Hide Bindings
+				i(80995),	-- Leather Tunic of Eniment Domain
+				i(80999),	-- Hide Tunic of Eminent Domain
+				i(81004),	-- Honorary Combat Engineer's Leather Trousers
+				i(81008),	-- Honorary Combat Engineer's Hide Leggings
+				i(81013),	-- Landfall Leather Boots
+				i(81017),	-- Landfall Moccasins
+			}),
 			-- #if BEFORE 10.2.7
 			-- All was added into MoP: Remix Throne of Thunder Ensembles
 			expansion(EXPANSION.MOP, 2.0, {
@@ -642,6 +674,22 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 		}),
 		filter(MAIL, {
+			expansion(EXPANSION.MOP, 0.1, {
+				i(80947),	-- Peacebreaker's Chain Helm
+				i(80951),	-- Peacebreaker's Ringmail Helm
+				i(80987),	-- Scavenger's Chain Spaulders
+				i(80991),	-- Scavenger's Ringmail Spaulders
+				i(81032),	-- Scavenger's Chain Gauntlets
+				i(81036),	-- Scavenger's Ringmail Gauntlets
+				i(81041),	-- Scavenger's Chain Wristguards
+				i(81045),	-- Scavenger's Ringmail Armbands
+				i(80996),	-- Chain Armor of Eminent Domain (not added version)
+				i(81000),	-- Ringmail Armor of Eminent Domain (not added version)
+				i(81005),	-- Honorary Combat Engineer's Chain Leggings
+				i(81009),	-- Honorary Combat Engineer's Ringmail Leggings
+				i(81014),	-- Landfall Chain Boots
+				i(81018),	-- Landfall Sabatons
+			}),
 			-- #if BEFORE 10.2.7
 			-- All was added into MoP: Remix Throne of Thunder Ensembles
 			expansion(EXPANSION.MOP, 2.0, {
@@ -660,6 +708,27 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			expansion(EXPANSION.MOP, 0.1, {
 				i(81709),	-- Belt of Broken Bones
 				i(81710),	-- Grinning Skull Greatboots
+				i(80952),	-- Peacebreaker's Burnished Headcover
+				i(80953),	-- Peacebreaker's Armored Helm
+				i(80954),	-- Peacebreaker's Heavy Helm
+				i(80992),	-- Scavenger's Burnished Spaulders
+				i(80993),	-- Scavenger's Armored Shoulders
+				i(80994),	-- Scavenger's Heavy Shoulders
+				i(81037),	-- Scavenger's Burnished Gloves
+				i(81038),	-- Scavenger's Armored Gauntlets
+				i(81039),	-- Scavenger's Heavy Gauntlets
+				i(81046),	-- Scavenger's Burnished Bracers
+				i(81047),	-- Scavenger's Armored Bracers
+				i(81048),	-- Scavenger's Heavy Armplates
+				i(81001),	-- Burnished Chestguard of Eminent Domain
+				i(81002),	-- Armored Chestpiece of Eminent Domain
+				i(81003),	-- Heavy Chestpiece of Eminent Domain
+				i(81010),	-- Honorary Combat Engineer's Burnished Legplates
+				i(81011),	-- Honorary Combat Engineer's Legguards
+				i(81012),	-- Honorary Combat Engineer's Heavy Legplates
+				i(81019),	-- Landfall Burnished Greaves
+				i(81020),	-- Landfall Warboots
+				i(81021),	-- Landfall Plate Boots
 			}),
 			-- #if BEFORE 10.2.7
 			-- All was added into MoP: Remix Throne of Thunder Ensembles
@@ -679,8 +748,35 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			-- #endif
 		}),
-		filter(FINGER_F, {
+		n(BACK, {
+			expansion(EXPANSION.MOP, 0.1, {
+				i(80965),	-- Scavenger's Cape
+				i(80966),	-- Scavenger's Drape
+				i(80967),	-- Scavenger's Shawl
+				i(80968),	-- Scavenger's Cloak
+				i(80969),	-- Scavenger's Manteau
+			}),
 			expansion(EXPANSION.MOP, 3.0, {
+				i(97518),	-- Dreadful Gladiator's Drape of Prowess
+				i(97926),	-- Malevolent Gladiator's Drape of Prowess
+				i(97836),	-- Malevolent Gladiator's Drape of Prowess
+			}),
+		}),
+		filter(FINGER_F, {
+			expansion(EXPANSION.MOP, 0.1, {
+				i(80955),	-- Scavenger's Loop
+				i(80956),	-- Scavenger's Ring
+				i(80957),	-- Scavenger's Band
+				i(80958),	-- Scavenger's Seal
+				i(80959),	-- Scavenger's Signet
+			}),
+			expansion(EXPANSION.MOP, 3.0, {
+				i(97527),	-- Dreadful Gladiator's Band of Meditation
+				i(97529),	-- Dreadful Gladiator's Band of Meditation
+				i(97844),	-- Malevolent Gladiator's Band of Accuracy
+				i(97933),	-- Malevolent Gladiator's Band of Cruelty
+				i(97843),	-- Malevolent Gladiator's Band of Cruelty
+				i(97528),	-- Malevolent Gladiator's Band of Cruelty
 				i(98037),	-- QA Test Finger Dodge
 				i(98038),	-- QA Test Finger Parry
 			}),
@@ -689,13 +785,77 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(103897),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Str Tank Ring
 			}),
 		}),
+		filter(NECK_F, {
+			expansion(EXPANSION.MOP, 0.1, {
+				i(81049),	-- Scavenger's Necklace
+				i(81050),	-- Scavenger's Choker
+				i(81051),	-- Scavenger's Locket
+				i(81052),	-- Scavenger's Amulet
+				i(81053),	-- Scavenger's Pendant
+			}),
+			expansion(EXPANSION.MOP, 3.0, {
+				i(97516),	-- Dreadful Gladiator's Pendant of Meditation
+				i(97924),	-- Malevolent Gladiator's Pendant of Cruelty
+				i(97834),	-- Malevolent Gladiator's Pendant of Cruelty
+			}),
+		}),
 		filter(TRINKET_F, {
+			expansion(EXPANSION.MOP, 0.1, {
+				i(80960),	-- Scavenger's Medal
+				i(80961),	-- Scavenger's Emblem
+				i(80962),	-- Scavenger's Medallion
+				i(80963),	-- Scavenger's Badge
+				i(80964),	-- Scavenger's Insignia
+			}),
+			expansion(EXPANSION.MOP, 1.0, {
+				i(91330),	-- Tyrannical Gladiator's Medallion of Cruelty [H]
+				i(91334),	-- Tyrannical Gladiator's Medallion of Meditation [H]
+				i(91332),	-- Tyrannical Gladiator's Medallion of Tenacity [H]
+				i(91329),	-- Tyrannical Gladiator's Medallion of Cruelty [A]
+				i(91333),	-- Tyrannical Gladiator's Medallion of Meditation [A]
+				i(91331),	-- Tyrannical Gladiator's Medallion of Tenacity [A]
+				i(91329),	-- Tyrannical Gladiator's Medallion of Cruelty [A]
+				i(91333),	-- Tyrannical Gladiator's Medallion of Meditation [A]
+				i(91331),	-- Tyrannical Gladiator's Medallion of Tenacity [A]
+				i(91330),	-- Tyrannical Gladiator's Medallion of Cruelty [H]
+				i(91334),	-- Tyrannical Gladiator's Medallion of Meditation [H]
+				i(91332),	-- Tyrannical Gladiator's Medallion of Tenacity [H]
+			}),
+			expansion(EXPANSION.MOP, 3.0, {
+				i(97531),	-- Malevolent Gladiator's Badge of Dominance
+				i(97532),	-- Malevolent Gladiator's Badge of Dominance
+				i(97936),	-- Malevolent Gladiator's Badge of Dominance
+				i(97533),	-- Malevolent Gladiator's Medallion of Cruelty [H]
+				i(97845),	-- Malevolent Gladiator's Medallion of Cruelty [H]
+				i(97935),	-- Malevolent Gladiator's Medallion of Cruelty [H]
+			}),
 			expansion(EXPANSION.MOP, 4.0, {
 				i(102312),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Agi DPS Trinket (5)
 				i(102313),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Hit Trinket (5)
 				i(102314),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Versatility Trinket (5)
 				i(102315),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Str DPS Trinket (5)
 				i(102316),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Tank Trinket (5)
+			}),
+		}),
+		-- These have no armor type
+		n(WRIST, {
+			expansion(EXPANSION.MOP, 3.0, {
+				i(97838),	-- Malevolent Gladiator's Cuffs of Accuracy
+				i(97521),	-- Malevolent Gladiator's Cuffs of Meditation
+			}),
+		}),
+		n(WAIST, {
+			expansion(EXPANSION.MOP, 3.0, {
+				i(97930),	-- Malevolent Gladiator's Cord of Accuracy
+				i(97840),	-- Malevolent Gladiator's Cord of Accuracy
+				i(97523),	-- Malevolent Gladiator's Cord of Cruelty
+			}),
+		}),
+		n(FEET, {
+			expansion(EXPANSION.MOP, 3.0, {
+				i(97526),	-- Malevolent Gladiator's Treads of Alacrity
+				i(97842),	-- Malevolent Gladiator's Treads of Cruelty
+				i(97932),	-- Malevolent Gladiator's Treads of Cruelty
 			}),
 		}),
 	}),
@@ -1642,10 +1802,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(158572),	-- Shimmering Rune
 				i(157766),	-- Vial of Nightmare Fog
 			}),
-			expansion(EXPANSION.BFA, 2.5, {
-				i(171528),	-- Reign of the Dead
-				i(171549),	-- Reign of the Unliving
-			}),
 			expansion(EXPANSION.BFA, 3.0, {
 				i(173426),	-- Black Empire trinkets
 			}),
@@ -1947,11 +2103,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(182306),	-- Monster Mantle
 			}),
 			expansion(EXPANSION.SL, 1.0, {
-				i(186500),	-- Ensemble: Garb of the Twilight Grove(quest:63596)
-				i(186518),	-- Ensemble: Forsworn Aspirant's Regalia(quest:63600)
-				i(186505),	-- Ensemble: Rogue Necromancer's Vestments(quest:63629)
-				i(186513),	-- Ensemble: Radiant Court Attire(quest:63632)
-				i(186514),	-- Ensemble: Redeemed Inquisitor's Vestments(quest:63636)
+				iensemble(186500),	-- Ensemble: Garb of the Twilight Grove(quest:63596)
+				iensemble(186518),	-- Ensemble: Forsworn Aspirant's Regalia(quest:63600)
+				iensemble(186505),	-- Ensemble: Rogue Necromancer's Vestments(quest:63629)
+				iensemble(186513),	-- Ensemble: Radiant Court Attire(quest:63632)
+				iensemble(186514),	-- Ensemble: Redeemed Inquisitor's Vestments(quest:63636)
 				i(185774),	-- PH Green Head Candle
 				i(186093),	-- Shaded Spectacles
 			}),

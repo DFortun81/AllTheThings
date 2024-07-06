@@ -57,7 +57,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
 					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
 					["g"] = {
+						-- Still available from the One-Time Quests, but since 10.2 its also buyable from a vendor
+						-- #if BEFORE 10.2.0
 						i(202196),	-- Zskera Vault Key
+						-- #endif
 					},
 				}),
 				q(72953, {	-- Zskera Vault: Az
@@ -85,7 +88,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
 					["coord"] = { 29.1, 53.0, THE_FORBIDDEN_REACH },
 					["g"] = {
+						-- Still available from the One-Time Quests, but since 10.2 its also buyable from a vendor
+						-- #if BEFORE 10.2.0
 						i(202196),	-- Zskera Vault Key
+						-- #endif
 					},
 				}),
 				q(73089, {	-- What's Behind The Next Door
@@ -196,7 +202,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["isWeekly"] = true,
 					["g"] = {
 						i(202294),	-- Recipe Pages
+						-- Still available from Quest, but since 10.2 its also buyable from a vendor
+						-- #if BEFORE 10.2.0
 						i(202196),	-- Zskera Vault Key
+						-- #endif
 					},
 				}),
 				q(74869, {	-- Primordial Answers
@@ -210,7 +219,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						i(204210),	-- Primordial Storm Core
 						i(204212),	-- Primordial Water Core
 						i(203701),	-- Neltharion Gift Token
+						-- Still available from Quest, but since 10.2 its also buyable from a vendor
+						-- #if BEFORE 10.2.0
 						i(202196),	-- Zskera Vault Key
+						-- #endif
 					},
 				}),
 				q(73155, {	-- The Forgotten Ring
@@ -515,7 +527,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							["coord"] = { 30.5, 57.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75146,
 							["g"] = {
-								i(204405),	-- Stuffed Bear
+								i(204405, {	-- Stuffed Bear
+									-- #if BEFORE 11.0
+									["description"] = "This will be a Toy in 11.0.",
+									-- #endif
+								}),
 							},
 						}),
 						o(9000000, {	-- Wind Sculpted Stone	--TODO: fake ID

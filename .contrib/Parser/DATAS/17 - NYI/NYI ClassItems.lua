@@ -3,7 +3,10 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, n(CLASSES, {
 	expansion(EXPANSION.CLASSIC, {
-		i(4144),	-- Tome of Polymorph: Cow (CI!)
+		-- 1.x.x
+		n(P1xx, {
+			i(4144),	-- Tome of Polymorph: Cow (CI!)
+		}),
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.3

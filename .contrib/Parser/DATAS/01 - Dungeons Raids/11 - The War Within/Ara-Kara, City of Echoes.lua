@@ -34,6 +34,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				e(2585, {	-- Ki'katal the Harvester
 					["crs"] = { 215407 },
 					["g"] = {
+						ach(40370),	-- Ara-Kara, City of Echoes
+						i(223141),	-- Formula: Enchant Ring - Cursed Critical Strike (RECIPE!)
+						i(223142),	-- Formula: Enchant Ring - Cursed Mastery (RECIPE!)
+						i(223143),	-- Formula: Enchant Ring - Cursed Versatility (RECIPE!)
 						i(221164),	-- Archaic Venomancer's Footwraps
 						i(221160),	-- Blight Hunter's Scalpelglaive
 						i(221162),	-- Claws of Tainted Ichor
@@ -42,6 +46,22 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221159),	-- Harvester's Interdiction
 						i(221165),	-- Unceremonious Bloodletter
 						i(221163),	-- Whispering Mask
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				e(2585, {	-- Ki'katal the Harvester
+					["crs"] = { 215407 },
+					["g"] = {
+						ach(40374),	-- Heroic: Ara-Kara, City of Echoes
+					},
+				}),
+			}),
+			d(DIFFICULTY.DUNGEON.MYTHIC, {
+				e(2585, {	-- Ki'katal the Harvester
+					["crs"] = { 215407 },
+					["g"] = {
+						ach(40375),	-- Mythic: Ara-Kara, City of Echoes
 					},
 				}),
 			}),

@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 			},
 		}),
-		n(ZONE_DROPS, bubbleDown({["bonusID"] = 4796, }, {
+		n(ZONE_DROPS, {
 			i(160127),	-- Pterroleather Cloak
 			i(160146),	-- Saurifeather Crest
 			i(160151),	-- Saurifeather Mantle
@@ -64,6 +64,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			i(160121),	-- Direbone Frill Greatbelt
 			i(160123),	-- Direbone Frill Legplates
 			i(160125),	-- Direbone Frill Stompers
-		})),
+		}),
 	}),
 })));

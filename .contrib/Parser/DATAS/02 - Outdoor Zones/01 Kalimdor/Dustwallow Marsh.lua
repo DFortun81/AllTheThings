@@ -214,19 +214,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4794,	-- Morgan Stern
 					["sourceQuest"] = 1204,	-- Mudrock Soup and Bugs
 					["coord"] = { 66.4, 45.4, DUSTWALLOW_MARSH },
+					-- #if BEFORE 4.0.3.13277
 					["maps"] = { SWAMP_OF_SORROWS },
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(33, 33, 15),
 					["groups"] = {
 						objective(1, {	-- 0/12 Pristine Crawler Leg
 							["provider"] = { "i", 5938 },	-- Pristine Crawler Leg
+							-- #if AFTER 4.0.3.13277
+							["cr"] = 44390,	-- Spiny Rock Crab
+							-- #else
 							["crs"] = {
-								-- #if AFTER 4.0.3.13277
-								44390,	-- Spiny Rock Crab
-								-- #endif
 								1088,	-- Monstrous Crawler
 								922,	-- Silt Crawler
 							},
+							-- #endif
+							
 						}),
 						i(57843, {	-- Baroque Shield
 							["timeline"] = { ADDED_4_0_3 },

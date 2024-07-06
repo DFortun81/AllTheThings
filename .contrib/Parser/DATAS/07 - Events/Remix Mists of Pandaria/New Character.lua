@@ -77,7 +77,10 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			i(210642),	-- Timerunner's Greatsword
 		}),
 		cl(WARLOCK, {
-			-- TODO
+			i(210276),	-- Spirit-Waker Leggings
+			i(208494),	-- Spirit-Waker Robe
+			i(210268),	-- Spirit-Waker Treads
+			i(210339),	-- Timerunner's Staff
 		}),
 		n(REWARDS, {
 			["description"] = "These items are in the box you get when you make a new character. Their IDs are different than the starter gear that is on you!",

@@ -617,7 +617,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(18542),	-- Dragonflight Keystone Master: Season Two	-- shows as completed together with ach(17844), but this version is NYI
 		})),
 
-		--10.1.7
+		-- 10.1.7
 		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			ach(6313),	-- [DNT] UTILITY: Promotion - China (Cenarion Hatchling)
 			ach(9030),	-- Login Tracking Achievement [SERVER ONLY]
@@ -629,22 +629,31 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(19028),	-- Lil' Frostwing
 		})),
 
-		--10.2.5
+		-- 10.2.5
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			ach(19031),	-- Fyrn
 			ach(19696),	-- Hearthstone Anniversary Mail
 		})),
 
-		--10.2.7
+		-- 10.2.7
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 			ach(40227),	-- Realm First! Mythic Garrosh
 			ach(40226),	-- Realm First! Timerunner
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
-		--11.0.0
+		-- 11.0.0
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			ach(18830),	-- Level 2
+			ach(20512),	-- Herding Cats
+			ach(40099),	-- That Extra Push Over the Cliff
+			ach(40101),	-- Hitting one's Stride
+			ach(40102),	-- Dawn of a new Delve
+			ach(40306),	-- Allied Races: Earthen
+			ach(40432),	-- Nemesis (Solo)
+			ach(40505),	-- Fate of the Kirin Tor
+			ach(40510),	-- One Ping Only
+			ach(40511),	-- Rare Within
 		})),
 	}),
 }));

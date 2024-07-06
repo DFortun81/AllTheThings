@@ -2421,7 +2421,8 @@ local SourceLocationSettingsKey = setmetatable({
 		return "SourceLocations:Things";
 	end
 });
-local UnobtainableTexture = " |T" .. app.asset("status-unobtainable.blp") .. ":0|t";
+local UnobtainableTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[1]..":0|t"
+local NotCurrentCharacterTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[0]..":0|t"
 local function HasCost(group, idType, id)
 	-- check if the group has a cost which includes the given parameters
 	if group.cost and type(group.cost) == "table" then
@@ -2523,10 +2524,10 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 					sourcesToShow = FilterSettings(parent) and character or unavailable
 					-- from obtainable, different character source
 					if not FilterCharacter(parent) then
-						sourcesToShow[#sourcesToShow + 1] = text.." |TInterface\\FriendsFrame\\StatusIcon-Away:0|t"
+						sourcesToShow[#sourcesToShow + 1] = text..NotCurrentCharacterTexture
 					else
 						-- check if this needs a status icon even though it's being shown
-						right = GetUnobtainableTexture(FirstParent(j, "e") or FirstParent(j, "u") or j)
+						right = GetUnobtainableTexture(FirstParent(j, "e", true) or FirstParent(j, "u", true) or j)
 							or (j.rwp and app.asset("status-prerequisites"))
 						if right then
 							sourcesToShow[#sourcesToShow + 1] = text.." |T" .. right .. ":0|t"
@@ -3092,25 +3093,34 @@ local function GetSearchResults(method, paramA, paramB, ...)
 									-- if only a few maps, list them all
 									local count = #id;
 									if count == 1 then
-										id = id[1];
-										locationGroup = C_Map_GetMapInfo(id);
-										locationName = locationGroup and TryColorizeName(locationGroup, locationGroup.name);
+										locationName = app.GetMapName(id[1]);
 									else
-										local mapsConcat, names, name = {}, {}, nil;
+										-- instead of listing individual zone names, just list zone count for brevity
+										local names = {__count=0}
+										local name
 										for j=1,count,1 do
 											name = app.GetMapName(id[j]);
 											if name and not names[name] then
-												names[name] = true;
-												tinsert(mapsConcat, name);
+												names.__count = names.__count + 1
 											end
 										end
-										-- up to 3 unqiue map names displayed
-										if #mapsConcat < 4 then
-											locationName = app.TableConcat(mapsConcat, nil, nil, "/");
-										else
-											mapsConcat[4] = "+++";
-											locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 4);
-										end
+										locationName = "["..names.__count.." "..BRAWL_TOOLTIP_MAPS.."]"
+										-- old: list 3 zones/+++
+										-- local mapsConcat, names, name = {}, {}, nil;
+										-- for j=1,count,1 do
+										-- 	name = app.GetMapName(id[j]);
+										-- 	if name and not names[name] then
+										-- 		names[name] = true;
+										-- 		mapsConcat[#mapsConcat + 1] = name
+										-- 	end
+										-- end
+										-- -- 1 unique map name displayed
+										-- if #mapsConcat < 2 then
+										-- 	locationName = app.TableConcat(mapsConcat, nil, nil, "/");
+										-- else
+										-- 	mapsConcat[2] = "+"..(count - 1);
+										-- 	locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 2);
+										-- end
 									end
 								else
 									locationGroup = SearchForObject(field, id, "field") or (id and field == "mapID" and C_Map_GetMapInfo(id));
@@ -5700,264 +5710,6 @@ end	-- Flight Path Lib
 
 -- Item Lib
 (function()
--- Heirloom Lib
-do
-local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;
-local C_Heirloom_GetHeirloomLink = C_Heirloom.GetHeirloomLink;
-local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
-local C_Heirloom_GetHeirloomMaxUpgradeLevel = C_Heirloom.GetHeirloomMaxUpgradeLevel;
-local heirloomIDs = {};
-local fields = {
-	["name"] = function(t)
-		return L.HEIRLOOM_TEXT;
-	end,
-	["icon"] = function(t)
-		return "Interface/ICONS/Achievement_GuildPerk_WorkingOvertime_Rank2";
-	end,
-	["description"] = function(t)
-		return L.HEIRLOOM_TEXT_DESC;
-	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.Heirlooms;
-	end,
-	["saved"] = function(t)
-		return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
-	end,
-	["trackable"] = app.ReturnTrue,
-};
-fields.collected = fields.saved;
-local CreateHeirloomUnlock = app.CreateClass("HeirloomUnlock", "heirloomUnlockID", fields);
-
-local armorTextures = {
-	"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
-	"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
-	"Interface/ICONS/Inv_leather_draenordungeon_c_01shoulder",
-	"Interface/ICONS/inv_mail_draenorquest90_b_01shoulder",
-	"Interface/ICONS/inv_leather_warfrontsalliance_c_01_shoulder",
-	"Interface/ICONS/inv_shoulder_armor_dragonspawn_c_02",
-};
-local weaponTextures = {
-	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon01",
-	"Interface/ICONS/INV_Icon_HeirloomToken_Weapon02",
-	"Interface/ICONS/inv_weapon_shortblade_112",
-	"Interface/ICONS/inv_weapon_shortblade_111",
-	"Interface/ICONS/inv_weapon_shortblade_102",
-	"Interface/ICONS/inv_weapon_shortblade_84",
-};
-
-local weaponFilterIDs = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
-local hierloomLevelFields = {
-	["level"] = function(t)
-		return 1;
-	end,
-	["name"] = function(t)
-		t.name = HEIRLOOM_UPGRADE_TOOLTIP_FORMAT:format(t.level, t.levelMax);
-		return t.name;
-	end,
-	["icon"] = function(t)
-		return t.isWeapon and weaponTextures[t.level] or armorTextures[t.level];
-	end,
-	["description"] = function(t)
-		return L.HEIRLOOMS_UPGRADES_DESC;
-	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.Heirlooms and app.Settings.Collectibles.HeirloomUpgrades;
-	end,
-	["saved"] = function(t)
-		local itemID = t.heirloomLevelID;
-		if itemID then
-			if t.level <= (ATTAccountWideData.HeirloomRanks[itemID] or 0) then return true; end
-			local level = select(5, C_Heirloom_GetHeirloomInfo(itemID));
-			if level then
-				ATTAccountWideData.HeirloomRanks[itemID] = level;
-				if t.level <= level then return true; end
-			end
-		end
-	end,
-	["trackable"] = app.ReturnTrue,
-	["isWeapon"] = function(t)
-		local isWeapon = t.f and contains(weaponFilterIDs, t.f);
-		t.isWeapon = isWeapon;
-		return isWeapon;
-	end,
-};
-hierloomLevelFields.collected = hierloomLevelFields.saved;
-local CreateHeirloomLevel = app.CreateClass("HeirloomLevel", "heirloomLevelID", hierloomLevelFields);
-
--- Heirloom Item
-local createHeirloom = app.ExtendClass("Item", "Heirloom", "heirloomID", {
-	itemID = function(t) return t.heirloomID; end,
-	icon = function(t) return select(4, C_Heirloom_GetHeirloomInfo(t.itemID)) or GetItemIcon(t.itemID); end,
-	link = function(t) return C_Heirloom_GetHeirloomLink(t.itemID) or select(2, GetItemInfo(t.itemID)); end,
-	collectibleAsCost = app.ReturnFalse,
-	collectible = function(t)
-		-- Heirloom Token for a Reputation
-		if t.factionID and app.Settings.Collectibles.Reputations then return true; end
-		-- Heirloom Appearance
-		if t.sourceID and app.Settings.Collectibles.Transmog then return true; end
-		-- Otherwise the Heirloom Item itself is not inherently collectible
-	end,
-	collected = function(t)
-		if t.factionID then
-			if t.repeatable then
-				return (app.CurrentCharacter.Factions[t.factionID] and 1)
-					or (ATTAccountWideData.Factions[t.factionID] and 2);
-			else
-				-- This is used for the Grand Commendations unlocking Bonus Reputation
-				if ATTAccountWideData.FactionBonus[t.factionID] then return 1; end
-				if GetFactionBonusReputation(t.factionID) then
-					ATTAccountWideData.FactionBonus[t.factionID] = 1;
-					return 1;
-				end
-			end
-		end
-		if t.sourceID and ATTAccountWideData.Sources[t.sourceID] then return 1; end
-	end,
-	saved = function(t)
-		return t.collected == 1;
-	end,
-	isWeapon = hierloomLevelFields.isWeapon,
-	g = function(t)
-		-- unlocking the heirloom is the only thing contained in the heirloom
-		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
-			local unlock = CreateHeirloomUnlock(t.itemID, {
-				e = t.e,
-				u = t.u
-			});
-			unlock.parent = t;
-			t.g = { unlock };
-			return t.g;
-		end
-	end
-});
-app.CreateHeirloom = function(id, t)
-	tinsert(heirloomIDs, id);
-	if t then t.b = 2; end	-- Heirlooms are always BoA
-	return createHeirloom(id, t);
-end
-
--- Will retrieve all the cached entries by itemID for existing heirlooms and generate their
--- upgrade levels into the respective upgrade tokens
-local function CacheHeirlooms()
-	-- app.PrintDebug("CacheHeirlooms",#heirloomIDs)
-	if #heirloomIDs < 1 or not C_Heirloom_GetHeirloomMaxUpgradeLevel then return; end
-
-	-- Are heirloom upgrades available? (6.1.0.19445)
-	local gameBuildVersion = app.GameBuildVersion;
-	if gameBuildVersion > 60100 then
-		-- Setup upgrade tokens that contain levels for the heirlooms. Order matters.
-		-- Ranks 1 & 2 were added with WOD (6.1.0.19445)
-		local armorTokenItemIDs = {
-			122338,	-- Rank 1: Ancient Heirloom Armor Casing
-			122340,	-- Rank 2: Timeworn Heirloom Armor Casing
-		};
-		local weaponTokenItemIDs = {
-			122339,	-- Rank 1: Ancient Heirloom Scabbard
-			122341,	-- Rank 2: Timeworn Heirloom Scabbard
-		};
-
-		-- Rank 3 was added with Legion (7.2.5.24076)
-		if gameBuildVersion > 70205 then
-			tinsert(armorTokenItemIDs, 151614);		-- Weathered Heirloom Armor Casing
-			tinsert(weaponTokenItemIDs, 151615);		-- Weathered Heirloom Scabbard
-
-			-- Rank 4 was added with BFA (8.1.5.29701)
-			if gameBuildVersion > 80105 then
-				tinsert(armorTokenItemIDs, 167731);		-- Battle-Hardened Heirloom Armor Casing
-				tinsert(weaponTokenItemIDs, 167732);		-- Battle-Hardened Heirloom Scabbard
-
-				-- Rank 5 was added with Shadowlands (9.1.5.40871)
-				if gameBuildVersion > 90105 then
-					tinsert(armorTokenItemIDs, 187997);		-- Eternal Heirloom Armor Casing
-					tinsert(weaponTokenItemIDs, 187998);		-- Eternal Heirloom Scabbard
-
-					-- Rank 6 was added with Dragonflight (10.1.0.49407)
-					if gameBuildVersion > 100100 then
-						tinsert(armorTokenItemIDs, 204336);		-- Awakened Heirloom Armor Casing
-						tinsert(weaponTokenItemIDs, 204337);		-- Awakened Heirloom Scabbard
-					end
-				end
-			end
-		end
-
-		-- Build headers that will contain each type.
-		local armorTokens, weaponTokens = {}, {};
-		for i=#armorTokenItemIDs,1,-1 do
-			tinsert(armorTokens, app.CreateItem(armorTokenItemIDs[i], {
-				collectible = false,
-				g = {},
-			}));
-			tinsert(weaponTokens, app.CreateItem(weaponTokenItemIDs[i], {
-				collectible = false,
-				g = {},
-			}));
-		end
-
-
-		-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
-		local uniques, heirloom, upgrades = {}, nil, nil;
-		for _,itemID in ipairs(heirloomIDs) do
-			if not uniques[itemID] then
-				uniques[itemID] = true;
-				heirloom = SearchForObject("itemID", itemID, "field");
-				if heirloom then
-					upgrades = C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
-					if upgrades and upgrades > 0 then
-						local meta = { __index = heirloom };
-						local tokenType = heirloom.isWeapon and weaponTokens or armorTokens;
-						for i=1,upgrades,1 do
-							-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
-							tinsert(tokenType[upgrades + 1 - i].g,
-							setmetatable({ collectible = false, g = {
-								CreateHeirloomLevel(itemID, {
-									levelMax = upgrades,
-									level = i,
-									f = heirloom.f,
-									e = heirloom.e,
-									u = heirloom.u,
-								})
-							}}, meta));
-						end
-					end
-				end
-			end
-		end
-
-		-- build groups for each upgrade token
-		-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
-		-- where the sources of the upgrade tokens exist
-		for i,item in ipairs(armorTokens) do
-			for _,token in ipairs(SearchForField("itemID", item.itemID)) do
-				-- ensure the tokens do not have a modID attached
-				token.modID = nil;
-				token.modItemID = nil;
-				if not token.sym then
-					for _,heirloom in ipairs(item.g) do
-						NestObject(token, heirloom, true);
-					end
-					AssignChildren(token);
-				end
-			end
-		end
-		for i,item in ipairs(weaponTokens) do
-			for _,token in ipairs(SearchForField("itemID", item.itemID)) do
-				-- ensure the tokens do not have a modID attached
-				token.modID = nil;
-				token.modItemID = nil;
-				if not token.sym then
-					for _,heirloom in ipairs(item.g) do
-						NestObject(token, heirloom, true);
-					end
-					AssignChildren(token);
-				end
-			end
-		end
-
-		wipe(heirloomIDs);
-	end
-end
-app.AddEventHandler("OnInit", CacheHeirlooms)
-end -- Heirloom Lib
 
 local HarvestedItemDatabase;
 local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
@@ -6883,15 +6635,22 @@ local function UpdateGroup(group, parent)
 	-- if debug then print("UG",group.hash,parent and parent.hash) end
 
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
-	local valid;
+	-- Things which are determined to be a cost for something else which meets user filters will
+	-- be shown anyway, so don't need to undergo a filtering pass
+	local valid = group.isCost
+	if valid then
+		-- app.PrintDebug("Pre-valid group as from cost/upgrade",group.isCost,group.isUpgrade,app:SearchLink(group))
+	end
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
 	-- so need to verify filtering based on that instead of only itself
-	if group.sourceParent then
-		valid = RecursiveGroupRequirementsFilter(group);
-		-- if debug then print("UG.RGRF",valid,"=>",group.sourceParent.hash) end
-	else
-		valid = GroupFilter(group);
-		-- if debug then print("UG.GF",valid) end
+	if not valid then
+		if group.sourceParent then
+			valid = RecursiveGroupRequirementsFilter(group);
+			-- if debug then print("UG.RGRF",valid,"=>",group.sourceParent.hash) end
+		else
+			valid = GroupFilter(group);
+			-- if debug then print("UG.GF",valid) end
+		end
 	end
 
 	if valid then
@@ -7894,8 +7653,11 @@ function app:CreateMiniListForGroup(group)
 				self.ExpireTime = time() + 300;
 				-- app.PrintDebug("Expire Refreshed",popout.Suffix)
 			end
+			-- Add Timerunning filter to the popout
+			popout.Filters = app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") and { Timerunning = true } or nil
 			self:BaseUpdate(force or got, got);
 		end
+
 		-- Create groups showing Appearance information
 		app.BuildSourceInformationForPopout(group);
 		if showing and ((group.key == "questID" and group.questID) or group.sourceQuests) then
@@ -10709,7 +10471,8 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			[app.HeaderConstants.RAIDS] = true,
 			[app.HeaderConstants.SCENARIOS] = true,
 			[app.HeaderConstants.SCENARIO_COMPLETION] = true,
-			[app.HeaderConstants.REMIX_MOP] = true
+			[app.HeaderConstants.REMIX_MOP] = true,
+			[app.HeaderConstants.TIER_14_RAIDS] = true,
 		};
 		-- self.Rebuild
 		(function()
@@ -10797,11 +10560,11 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 					-- app.PrintDebug(group.hash,group.text)
 					nested = nil;
 
-					-- Cache the difficultyID, if there is one and we are in an actual instance where the group is being mapped
-					difficultyID = isInInstance and GetRelativeValue(group, "difficultyID");
-
 					-- Get the header chain for the group
 					nextParent = group.parent;
+
+					-- Cache the difficultyID, if there is one and we are in an actual instance where the group is being mapped
+					difficultyID = isInInstance and GetRelativeValue(nextParent, "difficultyID");
 
 					-- Building the header chain for each mapped Thing
 					topHeader = nil;
@@ -14677,13 +14440,12 @@ local function InitDataCoroutine()
 	-- warning about debug logging in case it sneaks in we can realize quicker
 	app.PrintDebug("NOTE: ATT debug prints enabled!")
 
-	-- finally can say the app is ready
-	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
-	app.IsReady = true;
-	-- app.PrintDebug("ATT is Ready!");
-
 	-- Execute the OnReady handlers.
 	app.HandleEvent("OnReady")
+
+	-- finally can say the app is ready
+	app.IsReady = true;
+	-- app.PrintDebug("ATT is Ready!");
 
 	-- app.PrintMemoryUsage("InitDataCoroutine:Done")
 end

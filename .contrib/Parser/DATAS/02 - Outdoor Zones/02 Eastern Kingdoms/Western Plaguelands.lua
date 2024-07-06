@@ -2835,62 +2835,64 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				n(1839, {	-- Scarlet High Clerist
-					-- #if AFTER CATA
-					["coord"] = { 41.6, 53.2, WESTERN_PLAGUELANDS },
-					-- #else
-					["coord"] = { 55.0, 23.6, WESTERN_PLAGUELANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 41.6, 53.2, WESTERN_PLAGUELANDS },
+						-- #else
+						{ 55.0, 23.6, WESTERN_PLAGUELANDS },
+						-- #endif
+					},
 				}),
 				n(1838, {	-- Scarlet Interrogator
-					-- #if AFTER CATA
-					["coord"] = { 45.0, 52.0, WESTERN_PLAGUELANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 45.0, 52.0, WESTERN_PLAGUELANDS },
+						-- #else
 						{ 43.6, 16.6, WESTERN_PLAGUELANDS },
 						{ 44.2, 18.6, WESTERN_PLAGUELANDS },
 						{ 47.6, 13.8, WESTERN_PLAGUELANDS },
 						{ 47.8, 18.8, WESTERN_PLAGUELANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(1837, {	-- Scarlet Judge
-					-- #if AFTER CATA
-					["coord"] = { 69.2, 49.8, WESTERN_PLAGUELANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 69.2, 49.8, WESTERN_PLAGUELANDS },
+						-- #else
 						{ 43.2, 10.6, WESTERN_PLAGUELANDS },
 						{ 43.2, 16.6, WESTERN_PLAGUELANDS },
 						{ 45.8, 20.8, WESTERN_PLAGUELANDS },
 						{ 41.0, 14.6, WESTERN_PLAGUELANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(1885, {	-- Scarlet Smith
-					-- #if AFTER CATA
-					["coord"] = { 53.8, 44.2, WESTERN_PLAGUELANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 53.8, 44.2, WESTERN_PLAGUELANDS },
+						-- #else
 						{ 43.0, 12.8, WESTERN_PLAGUELANDS },
 						{ 46.8, 12.0, WESTERN_PLAGUELANDS },
 						{ 47.6, 13.6, WESTERN_PLAGUELANDS },
 						{ 47.0, 17.8, WESTERN_PLAGUELANDS },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(12719),	-- Plans: Runic Plate Leggings (RECIPE!)
 					},
 				}),
 				n(1851, {	-- The Husk
-					-- #if AFTER CATA
-					["coord"] = { 64.0, 83.6, WESTERN_PLAGUELANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.0, 83.6, WESTERN_PLAGUELANDS },
+						-- #else
 						{ 66.6, 42.6, WESTERN_PLAGUELANDS },
 						{ 65.0, 38.6, WESTERN_PLAGUELANDS },
 						{ 61.8, 37.6, WESTERN_PLAGUELANDS },
 						{ 64.2, 33.4, WESTERN_PLAGUELANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(51031, {	-- Tracker
 					["coord"] = { 62.6, 47.6, WESTERN_PLAGUELANDS },

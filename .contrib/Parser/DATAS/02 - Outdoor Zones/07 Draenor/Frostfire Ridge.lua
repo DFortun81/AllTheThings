@@ -1157,6 +1157,7 @@ root(ROOTS.Zones, {
 						["description"] = "Currently no verified way to actually obtain this quest on a character which has established their Garrison.\n\nOther characters will be able to obtain this Quest from the Warboard after completion of 'The Home of the Frostwolves' (33868) if completing the Tanaan intro quests, or possibly from the Warboard during WoD Chromie Time.",
 						["timeline"] = { ADDED_7_3_5 },
 						["races"] = HORDE_ONLY,
+						["sourceQuest"]	= 33868,	-- The Home of the Frostwolves
 						-- It's reported you can somehow find this quest on the Warboard simply by being in WoD Chromie Time, but this was not the case for a new lvl 10
 						-- Taking the initial quest to the Dark Portal, then returning to Orgrimmar to access the Warboard also did not help
 						-- Additionally, it can be shared to a character who has not established their Garrison without any known pre-requisites being completed

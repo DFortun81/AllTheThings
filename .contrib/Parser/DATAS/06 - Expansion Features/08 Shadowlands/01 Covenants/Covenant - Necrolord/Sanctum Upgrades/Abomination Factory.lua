@@ -268,7 +268,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 								}),
 								crit(50553, {	-- Unworthy Crown
 									["cost"] = {
-										{ "i", 184205, 1 },	-- 1 Long Lost Crown
+										{ "i", 184205, 1 },	-- 1 Long-Lost Crown
 										{ "i", 171840, 5 },	-- 5 Porous Stone
 									},
 								}),
@@ -869,7 +869,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										167828,	-- Salvageable Items (lootable treasure in world)
 									},
 									["g"] = {
-										i(184205),	-- Long Lost Crown
+										i(184205),	-- Long-Lost Crown
 										i(184204),	-- Otherworld Hat
 									},
 								}),

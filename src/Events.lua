@@ -79,9 +79,9 @@ end)
 
 -- Represents Events whose individual handlers should be processed over multiple frames to reduce potential stutter
 local RunnerEvents = {
-	OnRefreshCollections = true,
-	OnRecalculate = true,
-	OnUpdateWindows = true,
+	OnRefreshCollections = app.IsRetail,
+	OnRecalculate = app.IsRetail,
+	OnUpdateWindows = app.IsRetail,
 	-- OnRefreshWindows = true,
 }
 -- Represents Events which should always fire upon completion of a prior Event. These cannot be passed arguments currently
@@ -123,15 +123,10 @@ local Runner = app.CreateRunner("events")
 -- Runner.SetPerFrameDefault(5)
 local Callback = app.CallbackHandlers.Callback
 local function EventStart(eventName,...)
-	app.PrintDebug("HandleEvent:Start",app.Modules.Color.Colorize(eventName,app.Colors.Alliance),...)
+	app.PrintDebug("HandleEvent:Start",app.Modules.Color.Colorize(eventName,app.Colors.Time),...)
 end
 local function EventDone(eventName,...)
 	app.PrintDebug("HandleEvent:Done",app.Modules.Color.Colorize(eventName,app.Colors.Horde),...)
-end
-local function HandleSequenceEvents(sequenceEvents)
-	for _,event in ipairs(sequenceEvents) do
-		app.HandleEvent(event)
-	end
 end
 
 app.HandleEvent = function(eventName, ...)
@@ -149,7 +144,9 @@ app.HandleEvent = function(eventName, ...)
 		-- Runner.Run(EventDone, eventName)
 		if sequenceEvents then
 			-- run the sequence events immediately when in a Runner
-			HandleSequenceEvents(sequenceEvents)
+			for _,event in ipairs(sequenceEvents) do
+				app.HandleEvent(event)
+			end
 		end
 	else
 		-- app.PrintDebug("HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.Renown),...)
@@ -159,8 +156,11 @@ app.HandleEvent = function(eventName, ...)
 		end
 		-- EventDone(eventName)
 		if sequenceEvents then
+			-- app.PrintDebug("HandleSequenceEvents:",app.Modules.Color.Colorize(eventName,app.Colors.Alliance),...)
 			-- run the sequence events on the next frame when not in a Runner
-			Callback(HandleSequenceEvents, sequenceEvents)
+			for _,event in ipairs(sequenceEvents) do
+				app.CallbackEvent(event)
+			end
 		end
 	end
 end
@@ -175,5 +175,6 @@ end})
 -- Allows performing an Event on the next frame instead of immediately.
 -- Also enforces that a single handle of that Event is performed that frame, thus for clarity, parameters are NOT supported
 app.CallbackEvent = function(eventName)
+	-- app.PrintDebug("CallbackEvent:",app.Modules.Color.Colorize(eventName,app.Colors.ChatLinkHQT))
 	Callback(CallbackEventFunctions[eventName], eventName)
 end

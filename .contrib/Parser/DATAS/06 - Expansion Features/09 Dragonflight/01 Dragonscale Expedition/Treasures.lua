@@ -89,6 +89,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					{ "o", 383733 },	-- Disturbed Dirt (vignette)
 					{ "o", 382029 },	-- Disturbed Dirt (vignette)
 				},
+				["cost"] = {{"i",191304,1}},	-- Sturdy Expedition Shovel
 				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
 				["sym"] = {{"select","itemID",
 					199061, -- A Guide to Rare Fish
@@ -181,7 +182,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					i(201390),	-- Devastating Drakonid Waraxe
 					i(201393),	-- Dragonspawn Spellweaver's Focus
 					i(201392),	-- Drakonid Striker's Cutlass
-					
+
 					i(191384),	-- Aerated Mana Potion +
 					i(191393),	-- Potion of the Hushed Zephyr +
 

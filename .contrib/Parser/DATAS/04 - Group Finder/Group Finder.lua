@@ -351,6 +351,7 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 					["isBounty"] = true,
 					-- #endif
 				}),
+				i(113718),	-- Ravaged Leather Chestguard	— 03/31/24
 				i(113724),	-- Ravaged Leather Gauntlets	— 01/18/22
 				i(113700, {	-- Ravaged Leather Helm
 					["timeline"] = { REMOVED_7_3_5 },
@@ -843,6 +844,11 @@ applyclassicphase(WRATH_PHASE_FOUR, root(ROOTS.GroupFinder, {
 	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		i(201326, {	-- Draconic Satchel of Cooperation
 			i(201325),	-- Draconic Augment Rune
+		}),
+	})),
+	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+		i(224573, {	-- Crystal Satchel of Cooperation
+			i(224572),	-- Crystallized Augment Rune
 		}),
 	})),
 }));

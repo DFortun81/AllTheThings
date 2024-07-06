@@ -137,7 +137,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				},
 				["g"] = {
 					i(146411),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 1]
-					i(146412),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 2]
 					i(146413),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 3]
 				},
 			}),
@@ -413,6 +412,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
 								["timeline"] = { ADDED_7_2_5 },
 							}),
+							i(146412),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 2]
 							i(147034),	-- Shadow-Scarred Headcover
 							i(146988),	-- Gloves of Furtive Oppression
 							i(147048),	-- Vicegrip of the Unrepentant
@@ -451,6 +451,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(151539, {	-- Technique: Glyph of Ember Shards (RECIPE!)
 							["timeline"] = { ADDED_7_2_5 },
 						}),
+						i(146412),	-- Vantus Rune Technique: Tomb of Sargeras [Rank 2]
 					},
 				}),
 			}),

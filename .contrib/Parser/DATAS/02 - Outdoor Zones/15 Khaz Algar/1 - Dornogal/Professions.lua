@@ -4,6 +4,54 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(DORNOGAL, {
 		n(PROFESSIONS, {
+			n(QUESTS, {
+				q(84260, {	-- Crafting to Order
+					["provider"] = { "n", 219108 },	-- Roldira
+					["coord"] = { 59.1, 55.8, DORNOGAL },
+				}),
+				q(84288, {	-- Crafting Orders: Alchemy
+					["sourceQuests"] = { 84260 },	-- Crafting to Order
+					["provider"] = { "n", 219108 },	-- Roldira
+					["coord"] = { 59.1, 55.8, DORNOGAL },
+					["requireSkill"] = ALCHEMY,
+				}),
+				q(84274, {	-- Crafting Orders: Blacksmithing
+					["sourceQuests"] = { 84260 },	-- Crafting to Order
+					["provider"] = { "n", 219108 },	-- Roldira
+					["coord"] = { 59.1, 55.8, DORNOGAL },
+					["requireSkill"] = BLACKSMITHING,
+				}),
+				q(84285, {	-- Crafting Orders: Engineering
+					["sourceQuests"] = { 84260 },	-- Crafting to Order
+					["provider"] = { "n", 219108 },	-- Roldira
+					["coord"] = { 59.1, 55.8, DORNOGAL },
+					["requireSkill"] = ENGINEERING,
+				}),
+				q(84287, {	-- Crafting Orders: Inscription
+					["sourceQuests"] = { 84260 },	-- Crafting to Order
+					["provider"] = { "n", 219108 },	-- Roldira
+					["coord"] = { 59.1, 55.8, DORNOGAL },
+					["requireSkill"] = INSCRIPTION,
+				}),
+				q(84279, {	-- Crafting Orders: Jewelcrafting
+					["sourceQuests"] = { 84260 },	-- Crafting to Order
+					["provider"] = { "n", 219108 },	-- Roldira
+					["coord"] = { 59.1, 55.8, DORNOGAL },
+					["requireSkill"] = JEWELCRAFTING,
+				}),
+				q(84280, {	-- Crafting Orders: Leatherworking
+					["sourceQuests"] = { 84260 },	-- Crafting to Order
+					["provider"] = { "n", 219108 },	-- Roldira
+					["coord"] = { 59.1, 55.8, DORNOGAL },
+					["requireSkill"] = LEATHERWORKING,
+				}),
+				q(84281, {	-- Crafting Orders: Tailoring
+					["sourceQuests"] = { 84260 },	-- Crafting to Order
+					["provider"] = { "n", 219108 },	-- Roldira
+					["coord"] = { 59.1, 55.8, DORNOGAL },
+					["requireSkill"] = TAILORING,
+				}),
+			}),
 			prof(ALCHEMY, {
 				n(219092, {	-- Tarig <Alchemy Trainer>
 					["coord"] = { 47.3, 70.4, DORNOGAL },

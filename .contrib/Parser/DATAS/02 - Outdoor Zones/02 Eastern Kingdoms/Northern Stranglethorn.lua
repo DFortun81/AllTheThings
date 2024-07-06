@@ -242,11 +242,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9457, {	-- An Unusual Patron
 					["qg"] = 17094,	-- Nemeth Hawkeye
 					["sourceQuest"] = 9436,	-- Bloodscalp Insight
-					-- #if AFTER CATA
-					["coord"] = { 38.1, 50.0, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 32, 28.6, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 38.1, 50.0, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 32, 28.6, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["timeline"] = { ADDED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -413,11 +415,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						197,	-- Raptor Mastery
 						188,	-- Tiger Mastery
 					},
-					-- #if AFTER CATA
-					["coord"] = { 44.1, 22.9, NORTHERN_STRANGLETHORN },
-					-- #else
-					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 44.1, 22.9, NORTHERN_STRANGLETHORN },
+						-- #else
+						{ 35.7, 10.8, STRANGLETHORN_VALE },
+						-- #endif
+					},
 					["lvl"] = lvlsquish(28, 28, 10),
 					["groups"] = {
 						objective(1, {	-- 0/1 Head of Bangalash

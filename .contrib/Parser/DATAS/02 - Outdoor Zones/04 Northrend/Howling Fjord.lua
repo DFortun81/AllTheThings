@@ -214,11 +214,19 @@ root(ROOTS.Zones, {
 					}},
 					["groups"] = {
 						pet(523, {	-- Devouring Maggot (PET!)
-							["description"] = "Can be found in the Utgarde Catacombs at the very bottom in the zombie pit, occasionally as a second pet to Maggots above ground."
+							["description"] = "Can be found in the Utgarde Catacombs at the very bottom of the zombie pit, as well as occaasionally as a secondary pet.",
+							["coord"] = { 56.5, 51.0, HOWLING_FJORD },
 						}),
-						pet(644),	-- Fjord Rat (PET!)
-						pet(529),	-- Fjord Worg Pup (PET!)
+						pet(644, {	-- Fjord Rat (PET!)
+							["description"] = "Found in Wyrmskull Village outside Utgarde Keep as well as occasionally as a secondary pet.",
+							["coord"] = { 58.0, 52.0, HOWLING_FJORD },
+						}),
+						pet(529, {	-- Fjord Worg Pup (PET!)
+							["description"] = "Found around Kamagua, on The Isle of Spears.",
+							["coord"] = { 30.0, 62.0, HOWLING_FJORD },
+						}),
 						pet(525, {	-- Turkey (PET!)
+							["description"] = "Found inside the Alliance settlements Valgarde and Westguard Keep, as well as occasionally as secondary pet.",
 							["coords"] = {
 								{ 32.2, 42.4, HOWLING_FJORD },
 								{ 60.6, 62.8, HOWLING_FJORD },
@@ -226,6 +234,12 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
+				-- #if AFTER 10.2.7
+				n(26540, {	-- Drenk Spannerspark <Tirisfal Glades Zeppelin Master>
+					["description"] = "Seems like blizzard neglected to actually provide a portal back to Tirisfal Glades."
+					-- This have probably been broken for multiple expansions.
+				}),
+				-- #endif
 				explorationHeader({
 					exploration(4062),	-- Apothecary Camp
 					exploration(3996),	-- Baelgun's Excavation Site

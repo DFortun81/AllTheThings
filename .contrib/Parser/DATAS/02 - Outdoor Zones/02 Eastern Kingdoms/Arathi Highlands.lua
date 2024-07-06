@@ -137,11 +137,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["cr"] = 2851,	-- Urda <Wind Rider Master>
 					-- #endif
-					-- #if AFTER CATA
-					["coord"] = { 68.2, 33.4, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 73.0, 32.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.2, 33.4, ARATHI_HIGHLANDS },
+						-- #else
+						{ 73.0, 32.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 				fp(16, {	-- Refuge Pointe, Arathi
@@ -153,11 +155,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["cr"] = 2835,	-- Cedrik Prose <Gryphon Master>
 					-- #endif
-					-- #if AFTER CATA
-					["coord"] = { 39.6, 47.0, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 45.8, 46.2, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 39.6, 47.0, ARATHI_HIGHLANDS },
+						-- #else
+						{ 45.8, 46.2, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -2010,33 +2014,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(2598, {	-- Darbel Montrose <Shadow Council Warlock>
-					-- #if AFTER CATA
-					["coord"] = { 19.6, 64.2, ARATHI_HIGHLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 19.6, 64.2, ARATHI_HIGHLANDS },
+						-- #else
 						{ 29.8, 60.2, ARATHI_HIGHLANDS },
 						{ 27.0, 65.2, ARATHI_HIGHLANDS },
 						{ 27.8, 66.4, ARATHI_HIGHLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(2601, {	-- Foulbelly
-					-- #if AFTER CATA
-					["coord"] = { 15.2, 68.2, ARATHI_HIGHLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 15.2, 68.2, ARATHI_HIGHLANDS },
+						-- #else
 						{ 19.4, 64.0, ARATHI_HIGHLANDS },
 						{ 20.0, 66.6, ARATHI_HIGHLANDS },
 						{ 21.6, 65.4, ARATHI_HIGHLANDS },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(2609, {	-- Geomancer Flintdagger
-					-- #if AFTER CATA
-					["coord"] = { 79.6, 29.6, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 84.6, 28.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 79.6, 29.6, ARATHI_HIGHLANDS },
+						-- #else
+						{ 84.6, 28.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["groups"] = {
 						i(5742, {	-- Gemstone Dagger
 							["timeline"] = { CREATED_1_11_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_10_1_7 },	-- Att disc 07.09.2023
@@ -2051,11 +2057,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(2603, {	-- Kovork
-					-- #if AFTER CATA
-					["coord"] = { 24.6, 44.8, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 31.6, 45.8, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 24.6, 44.8, ARATHI_HIGHLANDS },
+						-- #else
+						{ 31.6, 45.8, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["groups"] = {
 						i(5256, {	-- Kovork's Rattle
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2063,11 +2071,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2604, {	-- Molok the Crusher
-					-- #if AFTER CATA
-					["coord"] = { 48.0, 76.2, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 54.6, 79.0, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 48.0, 76.2, ARATHI_HIGHLANDS },
+						-- #else
+						{ 54.6, 79.0, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 				}),
 				n(2606, {	-- Nimar the Slayer <Warband Leader>
 					-- #if AFTER CATA
@@ -2092,20 +2102,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2779, {	-- Prince Nazjak
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 14.2, 86.1, ARATHI_HIGHLANDS },
 						{ 16.8, 91.6, ARATHI_HIGHLANDS },
-						{ 14.2, 92.8, ARATHI_HIGHLANDS }
-					},
-					-- #else
-					["coords"] = {
+						{ 14.2, 92.8, ARATHI_HIGHLANDS },
+						-- #else
 						{ 21.6, 82.8, ARATHI_HIGHLANDS },
 						{ 23.6, 83.8, ARATHI_HIGHLANDS },
 						{ 19.8, 88.8, ARATHI_HIGHLANDS },
 						{ 23.6, 89.4, ARATHI_HIGHLANDS },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(1404, {	-- Tidal Charm
 							["timeline"] = { REMOVED_4_0_3 },
@@ -2124,27 +2132,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(2602, {	-- Ruul Onestone
-					-- #if AFTER CATA
-					["coord"] = { 19.6, 30.6, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 18.2, 68.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 19.6, 30.6, ARATHI_HIGHLANDS },
+						-- #else
+						{ 18.2, 68.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 				}),
 				n(50865, {	-- Saurix
 					["coord"] = { 42.2, 35.8, ARATHI_HIGHLANDS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(2600, {	-- Singer
-					-- #if AFTER CATA
-					["coord"] = { 27.4, 27.8, ARATHI_HIGHLANDS },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 27.4, 27.8, ARATHI_HIGHLANDS },
+						-- #else
 						{ 31.4, 26.6, ARATHI_HIGHLANDS },
 						{ 33.6, 27.8, ARATHI_HIGHLANDS },
 						{ 31.8, 31.8, ARATHI_HIGHLANDS },
 						{ 34.8, 31.4, ARATHI_HIGHLANDS },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(5180, {	-- Necklace of Harmony
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
@@ -2163,11 +2173,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(2605, {	-- Zalas Witherbark <Warband Leader>
-					-- #if AFTER CATA
-					["coord"] = { 62.8, 81.0, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 69.2, 79.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 62.8, 81.0, ARATHI_HIGHLANDS },
+						-- #else
+						{ 69.2, 79.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 				}),
 				n(50770, {	-- Zorn
 					["coord"] = { 22.0, 14.0, ARATHI_HIGHLANDS },
@@ -2176,11 +2188,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(VENDORS, {
 				n(2816, {	-- Androd Fadran <Leatherworking Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 39.2, 48.2, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 45.1, 46.8, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 39.2, 48.2, ARATHI_HIGHLANDS },
+						-- #else
+						{ 45.1, 46.8, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(13288, {	-- Pattern: Raptor Hide Belt (RECIPE!)
@@ -2254,11 +2268,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				n(2812, {	-- Drovnar Strongbrew <Alchemy Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 40.6, 48.2, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 46.4, 47.0, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.6, 48.2, ARATHI_HIGHLANDS },
+						-- #else
+						{ 46.4, 47.0, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6056, {	-- Recipe: Frost Protection Potion (RECIPE!)
@@ -2267,11 +2283,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2810, {	-- Hammon Karwn <Superior Tradesman>
-					-- #if AFTER CATA
-					["coord"] = { 40.4, 48.8, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 46.5, 47.4, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.4, 48.8, ARATHI_HIGHLANDS },
+						-- #else
+						{ 46.5, 47.4, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select", "itemID",
 						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
@@ -2286,11 +2304,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(1471, {	-- Jannos Ironwill <Superior Macecrafter>
-					-- #if AFTER CATA
-					["coord"] = { 40.8, 48.0, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 46.0, 47.7, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 40.8, 48.0, ARATHI_HIGHLANDS },
+						-- #else
+						{ 46.0, 47.7, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(10858, {	-- Plans: Solid Iron Maul (RECIPE!)
@@ -2299,11 +2319,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(6574, {	-- Jun'ha <Tailoring Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 67.8, 37.4, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 72.8, 36.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.8, 37.4, ARATHI_HIGHLANDS },
+						-- #else
+						{ 72.8, 36.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(7089, {	-- Pattern: Azure Silk Cloak
@@ -2312,11 +2334,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2821, {	-- Keena <Trade Goods>
-					-- #if AFTER CATA
-					["coord"] = { 69.2, 33.6, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 74.0, 32.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 69.2, 33.6, ARATHI_HIGHLANDS },
+						-- #else
+						{ 74.0, 32.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["sym"] = {{"select", "itemID",
 						5973,	-- Pattern: Barbaric Leggings (RECIPE!)
@@ -2335,11 +2359,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(9555, {	-- Mu'uta <Bowyer>
-					-- #if AFTER CATA
-					["coord"] = { 67.6, 34.2, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 72.6, 33.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 67.6, 34.2, ARATHI_HIGHLANDS },
+						-- #else
+						{ 72.6, 33.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11305, {	-- Dense Shortbow
@@ -2348,22 +2374,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				n(2814, {	-- Narj Deepslice <Butcher>
-					-- #if AFTER CATA
-					["coord"] = { 39.6, 48.8, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 45.6, 47.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 39.6, 48.8, ARATHI_HIGHLANDS },
+						-- #else
+						{ 45.6, 47.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4609),	-- Recipe: Barbecued Buzzard Wing (RECIPE!)
 					},
 				}),
 				n(2819, {	-- Tunkk <Leatherworking Supplies>
-					-- #if AFTER CATA
-					["coord"] = { 70.0, 35.4, ARATHI_HIGHLANDS },
-					-- #else
-					["coord"] = { 74.8, 34.6, ARATHI_HIGHLANDS },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 70.0, 35.4, ARATHI_HIGHLANDS },
+						-- #else
+						{ 74.8, 34.6, ARATHI_HIGHLANDS },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(13287, {	-- Pattern: Raptor Hide Harness (RECIPE!)

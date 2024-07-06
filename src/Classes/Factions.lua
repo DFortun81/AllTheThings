@@ -26,8 +26,8 @@ local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
 local GetFactionReputationCeiling = app.WOWAPI.GetFactionReputationCeiling;
 
 -- Faction API Implementation
-app.AddEventHandler("OnStartup", function()
-	ATTAccountWideData = app.LocalizeGlobalIfAllowed("ATTAccountWideData", true);
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	ATTAccountWideData = accountWideData
 end)
 
 

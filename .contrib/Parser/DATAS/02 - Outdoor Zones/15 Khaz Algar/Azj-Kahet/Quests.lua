@@ -33,8 +33,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 211699 },	-- Faerin
 				["coord"] = { 32.1, 46.6, AZJ_KAHET },
 				["g"] = {
-					i(225521),	-- Rescued Aeroknight's Vambraces
+					i(225524),	-- Rescued Aeroknight's Gloves
 					i(225530),	-- Rescued Aeroknight's Helmet
+					i(225540),	-- Rescued Aeroknight's Mantle
+					i(225521),	-- Rescued Aeroknight's Vambraces
 				},
 			}),
 			q(78348, {	-- Friends in Low Places
@@ -72,8 +74,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 216213 },	-- Spindle
 				["coord"] = { 45.7, 60.1, AZJ_KAHET },
 				["g"] = {
+					i(225514),	-- Webweave Belt
 					i(225533),	-- Webweave Grips
 					i(225516),	-- Webweave Stompers
+					i(225529),	-- Webweave Wristguards
 				},
 			}),
 			q(78392, {	-- The Tangled Web
@@ -133,13 +137,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(211769),	-- Orders from Siegehold (QI!)
 						i(212159),	-- Vial of Stinky Pheromones (QI!)
 					}),
+					i(225364),	-- Kaheti Confiscated Blade
 					i(225349),	-- Kaheti Confiscated Borers
 					i(225358),	-- Kaheti Confiscated Buckler
+					i(225356),	-- Kaheti Confiscated Crossbow
+					i(225354),	-- Kaheti Confiscated Dirk
 					i(225360),	-- Kaheti Confiscated Hatchet
 					i(225362),	-- Kaheti Confiscated Knife
 					i(225357),	-- Kaheti Confiscated Lantern
+					i(225359),	-- Kaheti Confiscated Mallet
 					i(225353),	-- Kaheti Confiscated Spade
 					i(225361),	-- Kaheti Confiscated Staff
+					i(225363),	-- Kaheti Confiscated Sword
 				},
 			}),
 			q(78237, {	-- Let Fly!
@@ -161,7 +170,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 46.9, 26.2, AZJ_KAHET },
 				["g"] = {
 					i(225538),	-- General's Pungent Armor
+					i(225526),	-- General's Pungent Legguards
 					i(225535),	-- General's Pungent Mantle
+					i(225515),	-- General's Pungent Wraps
 				},
 			}),
 			q(78250, {	-- General Admission
@@ -211,7 +222,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 48.6, 29.9, AZJ_KAHET },
 				["g"] = {
 					i(225520),	-- Smuggled Nerubian Belt
+					i(225523),	-- Smuggled Nerubian Boots
 					i(225537),	-- Smuggled Nerubian Cuffs
+					i(225513),	-- Smuggled Nerubian Trousers
 				},
 			}),
 			q(78256, {	-- The General's Consensus
@@ -234,12 +247,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(78228, {	-- Into a Skittering City
 				["sourceQuests"] = { 78226 },	-- A Most Intriguing Invitation
 				["provider"] = { "n", 211351 },	-- Anduin Wrynn
-				["coord"] = { 67.1, 31.5, 2216 },	-- Nerub'ar Lower
+				["coord"] = { 67.1, 31.5, NERUBAR_LOWER },
 			}),
 			q(78232, {	-- Rewriting the Rewritten
 				["sourceQuests"] = { 78228 },	-- Into a Skittering City
 				["provider"] = { "n", 211499 },	-- Executor Nizrek
-				["coord"] = { 67.5, 32.5, 2216 },	-- Nerub'ar Lower
+				["coord"] = { 67.5, 32.5, NERUBAR_LOWER },
 				["g"] = {
 					i(225970),	-- Nizrek's Holographic Manipulator
 				},
@@ -247,7 +260,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(78231, {	-- Like a Spider on the Wall
 				["sourceQuests"] = { 78228 },	-- Into a Skittering City
 				["provider"] = { "n", 211351 },	-- Anduin Wrynn
-				["coord"] = { 66.9, 31.9, 2216 },	-- Nerub'ar Lower
+				["coord"] = { 66.9, 31.9, NERUBAR_LOWER },
 			}),
 			q(78244, {	-- Kahet Hospitality
 				["sourceQuests"] = {
@@ -255,7 +268,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					78232,	-- Rewriting the Rewritten
 				},
 				["provider"] = { "n", 217386 },	-- Anduin Wrynn
-				["coord"] = { 55.3, 46.1, 2213 },	-- Nerub'ar
+				["coord"] = { 55.3, 46.1, NERUBAR },
 				--["maps"] = { xx },	-- I expect there separate mapID for scenario but currently it is same (2213)
 				["g"] = {
 					i(225561),	-- Queensfang Choker
@@ -263,7 +276,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(225563),	-- Threadmaestro's Collar
 				},
 			}),
-			q(78248, {	-- Beginning Anew From Rock Bottom
+			q(78248, {	-- What We Still Have
 				["sourceQuests"] = { 78244 },	-- Kahet Hospitality
 				["provider"] = { "n", 217385 },	-- Alleria Windrunner
 				["coord"] = { 60.7, 71.1, AZJ_KAHET },
@@ -274,7 +287,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- this is potentially main story quest but they pop in next build (when all zones become available)
 			-- in player journal treated as The War Withing Campaign
 			q(79197, {	-- Surface Bound
-				["sourceQuests"] = { 78248 },	-- Beginning Anew From Rock Bottom / TODO: unsure
+				["sourceQuests"] = { 78248 },	-- What We Still Have / TODO: unsure
 				["provider"] = { "n", 219252 },	-- Alleria Windrunner
 				["coord"] = { 56.2, 48.5, AZJ_KAHET },
 			}),
@@ -464,29 +477,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(82340, {	-- Loss of Limb
 				--["sourceQuests"] = { xx },	-- ? / Unsure when this one pop up, it was out of minimap range :c
 				["provider"] = { "n", 223723 },	-- Mr. Sunflower
-				["coord"] = { 63.3, 37.4, 2216 },	-- Nerub'ar Lower
+				["coord"] = { 63.3, 37.4, NERUBAR_LOWER },
 			}),
 			q(83057, {	-- Setting Boundaries
 				["sourceQuests"] = { 82340 },	-- Loss of Limb
 				["provider"] = { "n", 223723 },	-- Mr. Sunflower
-				["coord"] = { 55.0, 39.1, 2216 },	-- Nerub'ar Lower
+				["coord"] = { 55.0, 39.1, NERUBAR_LOWER },
 			}),
 			-- End of some random spider quest #1
 			-- Some spider quest #2
 			q(79630, {	-- Searching the Web
 				--["sourceQuests"] = { xx },	-- ? / Unsure when this one pop up, it was out of minimap range :c
 				["provider"] = { "n", 217356 },	-- Arax'ne
-				["coord"] = { 64.1, 15.9, 2213 },	-- Nerub'ar
+				["coord"] = { 64.1, 15.9, NERUBAR },
 			}),
 			q(79631, {	-- Klaskin's Great Escape
 				["sourceQuests"] = { 79630 },	-- Searching the Web
 				["provider"] = { "n", 217355 },	-- Klaskin
-				["coord"] = { 47.9, 13.2, 2213 },	-- Nerub'ar
+				["coord"] = { 47.9, 13.2, NERUBAR },
 			}),
 			q(80502, {	-- Don't Cry for Me, Azi-Kahet
 				["sourceQuests"] = { 79631 },	-- Klaskin's Great Escape
 				["provider"] = { "n", 220690 },	-- Klaskin
-				["coord"] = { 63.9, 16.3, 2213 },	-- Nerub'ar
+				["coord"] = { 63.9, 16.3, NERUBAR },
 			}),
 			-- End of some random spider quest #2
 			-- Some spider quest #3
@@ -600,7 +613,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(83177, {	-- Socialized Medicine
 				--["sourceQuests"] = { xx },	-- // somewhere after 78226 (A Most Intriguing Invitation) or 78228 (Into a Skittering City)?
 				["provider"] = { "n", 208782 },	-- Executor Nizrek
-				["coord"] = { 52.9, 46.2, 2213 },
+				["coord"] = { 52.9, 46.2, NERUBAR },
 				["g"] = {
 					i(224799),	-- Nizrek's potion (QI!)
 				},
@@ -608,12 +621,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(83178, {	-- Ascended Assassin
 				["sourceQuests"] = { 83177 },	-- Socialized Medicine
 				["provider"] = { "n", 208782 },	-- Executor Nizrek
-				["coord"] = { 52.9, 46.2, 2213 },
+				["coord"] = { 52.9, 46.2, NERUBAR },
 			}),
 			-- End of some random spider quest #5
 			-- crit 'Subterfuge in Silk'
 			q(81686, {	-- Subterfuge in Silk
-				--["sourceQuests"] = {  },	-- unsure, probably somewhere around last story chapter or after it
+				--["sourceQuests"] = {  },	-- unsure 78248 or quest before it
 				["isBreadcrumb"] = true,	-- unless it is now required for spawn next quests/npc
 				["provider"] = { "n", 207471 },	-- Window Arak'nal
 				["coord"] = { 56.2, 48.2, AZJ_KAHET },
@@ -676,6 +689,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			-- End of crit 'Subterfuge in Silk'
+			-- missing header! (in quest log)
+			q(83276, {	-- Saving Private Spindle
+				--["sourceQuests"] = {  },	-- ?
+				--["isBreadcrumb"] = true,
+				["provider"] = { "n", 207471 },	-- Window Arak'nal
+				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+			}),
+			--
 			-- ZONE DUNGEON QUESTS (80 only)
 			q(83166, {	-- Ara-Kara, the City of Echoes: Harverst's End
 				--["sourceQuests"] = { xx },	-- ?
@@ -805,15 +826,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 227158 },	-- Hannan
 				["coord"] = { 62.5, 80.5, 2256 },
 			}),
-			-- Delves
-			q(83771, {	-- DELVER'S CALL: Tak-Rethan Abyss
-				["provider"] = { "o", 455720 },	-- DELVER'S CALL: Tak-Rethan Abyss
-				["coord"] = { 57.2, 45.3, AZJ_KAHET },
-			}),
-			q(83770, {	-- DELVER'S CALL: Spiral Weave
-				["provider"] = { "n", 211721 },	-- Sir Jonathan Trueheart
-				["coord"] = { 59.2, 25.1, AZJ_KAHET },
-			}),
 			--Zone Drop quest?
 			q(80378, {	-- A Light of the Dark
 				["provider"] = { "i", 217390 },	-- Coagulated Black Blood Clot
@@ -826,17 +838,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			-- ?
 			q(79955, {	-- ...And Now I'm Arachnophobic
 				["provider"] = { "n", 217640 },	-- Albert
-				["coord"] = { 66.8, 54.9, 2216 },
+				["coord"] = { 66.8, 54.9, NERUBAR_LOWER },
 			}),
 			q(79956, {	-- Legs in the Ceiling
 				["sourceQuests"] = { 79955 },	-- ...And Now I'm Arachnophobic
 				["provider"] = { "n", 217640 },	-- Albert
-				["coord"] = { 69.9, 63.3, 2216 },
+				["coord"] = { 69.9, 63.3, NERUBAR_LOWER },
 			}),
 			q(79957, {	-- Maggots in Your Eyes
 				["sourceQuests"] = { 79956 },	-- Legs in the Ceiling
 				["provider"] = { "n", 217994 },	-- Albert
-				["coord"] = { 68.7, 62.3, 2216 },
+				["coord"] = { 68.7, 62.3, NERUBAR_LOWER },
 				["g"] = {
 					--crit 'Pillar-nest of Horrors'
 					i(216689),	-- Albert's Head (QI!)
@@ -849,7 +861,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(82286, {	-- Worldsoul Memory: Old Gods Forsaken
 				--thing supposed to be repeatable and probably gonna be need to move as expansion feature?
 				["provider"] = { "n", 222165 },	-- Worldsoul Memory (vignette -- Radiant Echo)
-				["coord"] = { 21.1, 45.5, 2213 },
+				["coord"] = { 21.1, 45.5, NERUBAR },
 				["g"] = {
 					--I'm currently unsure if rares are spot/mode/zone specific
 					--loot is just gold from npcs
@@ -857,7 +869,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--this was rotation of 'rares' for this event and then start spawning again
 					--so it was Vin'ris > Yoh'nath > Spin'za > Queen >  Vil'vim > Vin'ris (timer is out)
 					n(222628, {	-- Vin'ris The Corruptor
-						["coord"] = { 21.5, 43.4, 2213 },
+						["coord"] = { 21.5, 43.4, NERUBAR },
 					}),
 					i(220693),	-- Coffer Key Shard
 				},
@@ -891,7 +903,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(81491, {	-- Armaments: Arbalests
 				["isDaily"] = true,
 				["provider"] = { "n", 224171 },	-- Eirzay
-				["coord"] = { 63.0, 38.1, 2216 },
+				["coord"] = { 63.0, 38.1, NERUBAR_LOWER },
 			}),
 			q(81492, {	-- Armaments: Smithing Tools
 				["isDaily"] = true,
@@ -901,42 +913,42 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(81477, {	-- Armaments: Weaponry
 				["isDaily"] = true,
 				["provider"] = { "n", 224170 },	-- Eirzay
-				["coord"] = { 58.1, 39.3, 2216 },
+				["coord"] = { 58.1, 39.3, NERUBAR_LOWER },
 			}),
 			q(81490, {	-- Bounty: Balaxir the Bully
 				["isDaily"] = true,
 				["provider"] = { "n", 224168 },	-- Eirzay
-				["coord"] = { 48.6, 50.5, 2216 },
+				["coord"] = { 48.6, 50.5, NERUBAR_LOWER },
 			}),
 			q(81476, {	-- Bounty: Goliath
 				["isDaily"] = true,
 				["provider"] = { "n", 224166 },	-- Eirzay
-				["coord"] = { 36.1, 50.2, 2213 },
+				["coord"] = { 36.1, 50.2, NERUBAR },
 			}),
 			q(81489, {	-- Bounty: Zorikal the Patron
 				["isDaily"] = true,
 				["provider"] = { "n", 224167 },	-- Eirzay
-				["coord"] = { 15.6, 45.9, 2213 },
+				["coord"] = { 15.6, 45.9, NERUBAR },
 			}),
 			q(81475, {	-- Breaking the Phalanx: Royal Appointments
 				["isDaily"] = true,
 				["provider"] = { "n", 224161 },	-- Eirzay
-				["coord"] = { 43.0, 47.1, 2213 },
+				["coord"] = { 43.0, 47.1, NERUBAR },
 			}),
 			q(81488, {	-- Breaking the Phalanx: Sages
 				["isDaily"] = true,
 				["provider"] = { "n", 224163 },	-- Eirzay
-				["coord"] = { 27.7, 57.8, 2213 },
+				["coord"] = { 27.7, 57.8, NERUBAR },
 			}),
 			q(81487, {	-- Breaking the Phalanx: Venomblades
 				["isDaily"] = true,
 				["provider"] = { "n", 224162 },	-- Eirzay
-				["coord"] = { 30.6, 42.6, 2213 },
+				["coord"] = { 30.6, 42.6, NERUBAR },
 			}),
 			q(81494, {	-- Relics of War: Rak-Ahat
 				["isDaily"] = true,
 				["provider"] = { "n", 224176 },	-- Eirzay
-				["coord"] = { 63.8, 26.3, 2216 },	-- bugged, 2 npc in exactly same place
+				["coord"] = { 63.8, 26.3, NERUBAR_LOWER },	-- bugged, 2 npc in exactly same place
 			}),
 			q(81478, {	-- Relics of War: The Ruptired Lake
 				["isDaily"] = true,
@@ -949,7 +961,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(81493, {	-- Relics of War: The Salien Gutter Conflict
 				["isDaily"] = true,
 				["provider"] = { "n", 224174 },	-- Eirzay
-				["coord"] = { 63.8, 26.3, 2216 },	-- bugged, 2 npc in exactly same place
+				["coord"] = { 63.8, 26.3, NERUBAR_LOWER },	-- bugged, 2 npc in exactly same place
 				["g"] = {
 					i(219429),	-- Pristine Kobyss Spear (QI!)
 				},
@@ -959,7 +971,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(81471, {	-- Dropping Eaves: Saving the Past
 				["isDaily"] = true,
 				["provider"] = { "n", 224195 },	-- Ru'murh
-				["coord"] = { 73.3, 50.9, 2213 },
+				["coord"] = { 73.3, 50.9, NERUBAR },
 				["g"] = {
 					i(219347),	-- Kaheti Etching (QI!)
 				},
@@ -967,7 +979,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(81470, {	-- Dropping Eaves: Thieving Weave
 				["isDaily"] = true,
 				["provider"] = { "n", 224194 },	-- Ru'murh
-				["coord"] = { 70.3, 31.8, 2213 },
+				["coord"] = { 70.3, 31.8, NERUBAR },
 				["g"] = {
 					i(219344),	-- Immaculate Spidersilk (QI!)
 				},
@@ -975,12 +987,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(81472, {	-- Information Control: Ansurek's Truth
 				["isDaily"] = true,
 				["provider"] = { "n", 224197 },	-- Ru'murh
-				["coord"] = { 39.8, 26.6, 2213 },
+				["coord"] = { 39.8, 26.6, NERUBAR },
 			}),
 			q(81483, {	-- Infiltration: Production Blocker
 				["isDaily"] = true,
 				["provider"] = { "n", 224199 },	-- Ru'murh
-				["coord"] = { 45.6, 51.0, 2216 },
+				["coord"] = { 45.6, 51.0, NERUBAR_LOWER },
 			}),
 			q(81504, {	-- Infiltration: Hidden Figures
 				["isDaily"] = true,
@@ -1001,22 +1013,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			--
-			--	Rares / Bonus Objectives / Once per character?
-			--	need to be moved into rares if didn't get bonus objective
-			q(81707, {	-- Gutter Carver
-				["provider"] = { "n", 216045 },	-- Gutter Carver
-				["coord"] = { 58.4, 65.0, AZJ_KAHET },
-				["g"] = {
-					i(221243),	-- Slippers of Delirium
-				},
-			}),
-			q(81706, {	-- Bomb Beetle
-				["provider"] = { "n", 216044 },	-- Siegefire Bomber
-				["coord"] = { 60.7, 74.4, AZJ_KAHET },
-				["g"] = {
-					-- no loot
-				},
-			}),
 		}),
 	}),
 })));
@@ -1030,13 +1026,16 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(81623),	-- triggered during questID 78228 (Into a Skittering City) when apply Azi-Kahet Pheromones
 	-- Dialogs
 	q(81946),	-- 'Stay awhile and listen' - Anduin Wrynn - druing questID 78231 (Like a Spider on the Wall)
-	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (Beginning Anew From Rock Bottom)
+	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (What We Still Have)
 	-- Reps with zone dudes, probably gonna need to move into expansion feature?
 	q(81601),	-- [DNT] General - Level 1 Unlock (spellID 443677)
+	q(81602),	-- [DNT] General - Level 2 Unlock (spellID 443679)
+	q(81626),	-- [DNT] General - Level 2 Unlock (spellID 443679)
 	q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
 	q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
 	q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
 	q(81627),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
+	q(81599),	-- [DNT] Weaver - Level 3 Unlock (spellID 443675)
 	--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
 	q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
 	q(82646),	-- pop questIDs: 81492 (General), 81499 (?), 81506 (?)
@@ -1073,4 +1072,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Vizier
 	--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID 81480 (Wild Reagents: Maddening Deep)
 	-- Missing 11 total quest data/givers, 81505 81498 81497 81502 81482 (and 5 more)
+	-- Special Assignment unlocks tracker
+	q(82159),	-- Special Assignment: A Pound of Cure (but it is Bombs from Behind?)
 });

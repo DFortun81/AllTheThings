@@ -33,6 +33,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82580, {	-- Courier Mission: Ore Recovery
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 				}),
+				q(83538, {	-- Excavation Liberation (TODO: probably pvp?)
+					["coord"] = { 62.0, 84.9, THE_RINGING_DEEPS },
+				}),
 				q(83079, {	-- Mineral Buildup
 					["coord"] = { 45.8, 42.8, THE_RINGING_DEEPS },
 				}),
@@ -62,6 +65,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 				q(83028, {	-- Thieving Snufflers
 					["coord"] = { 53.7, 34.9, THE_RINGING_DEEPS },
+				}),
+				q(83048, {	-- Wayward Walkers
+					["coord"] = { 42.3, 31.4, THE_RINGING_DEEPS },
 				}),
 				q(82519, {	-- You Go Take Candle
 					["coord"] = { 58.8, 24.9, THE_RINGING_DEEPS },

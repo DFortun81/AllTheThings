@@ -1537,7 +1537,7 @@ root(ROOTS.Zones, {
 				}),
 				n(REWARDS, {
 					i(35348, bubbleDownSelf({ ["timeline"] = { ADDED_2_4_0 } }, {	-- Bag of Fishing Treasures
-						["description"] = "This bag is exclusive to the Crocolisk in the City Daily Quest.",
+						["description"] = "This bag is exclusive to the daily quest 'Crocolisk in the City'.",
 						["groups"] = {
 							i(34834),	-- Recipe: Captain Rumsey's Lager (RECIPE!)
 							i(34828),	-- Antique Silver Cufflinks
@@ -1694,7 +1694,11 @@ root(ROOTS.Zones, {
 				}),
 				n(ZONE_DROPS, {
 					i(25719, {	-- Arakkoa Feather
-						["description"] = "Drops commonly from any Arakkoa in Terokkar Forest, except the Sethekk Halls. Can be turned in to the NPC named Vekax for Outcast's Cache and reputation with the Lower City. Each turn in requires 30 Arakkoa Feathers. Vekax can be found in the northwestern section of the Lower City in Shattrath.",
+						-- #if BEFORE 8.2.5
+						["description"] = "Drops commonly from any Arakkoa in Terokkar Forest, except the Sethekk Halls. Can be turned in to the NPC named Vekax for Outcast's Cache and reputation with the Lower City up to Honored. Each turn in requires 30 Arakkoa Feathers. Vekax can be found in the northwestern section of the Lower City in Shattrath.",
+						-- #else
+						["description"] = "Drops commonly from any Arakkoa in Terokkar Forest, except the Sethekk Halls. Can be turned in to the NPC named Vekax for Outcast's Cache and reputation with the Lower City up to Honored, and again when at Exalted. Each turn in requires 30 Arakkoa Feathers. Vekax can be found in the northwestern section of the Lower City in Shattrath.",
+						-- #endif
 					}),
 					i(34491, {    -- Pattern: Bag of Many Hides (RECIPE!)
 						["crs"] = {

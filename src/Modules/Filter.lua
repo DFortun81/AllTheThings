@@ -400,15 +400,8 @@ end
 local function PrintExclusionCause(name, o)
 	app.PrintDebug("F-EX",name,o.hash,o.link or o.name)
 end
-local function SettingsAccountFilters(o)
-	for name,filter in pairs(AccountFilters) do
-		-- if not filter(o) then PrintExclusionCause(name, o) return end
-		if not filter(o) then return end
-	end
-	return true;
-end
-local function SettingsCharacterFilters(o)
-	for name,filter in pairs(CharacterFilters) do
+local function ApplySettingsFilters(o, filters)
+	for name,filter in pairs(filters) do
 		-- if not filter(o) then PrintExclusionCause(name, o) return end
 		if not filter(o) then return end
 	end
@@ -417,16 +410,31 @@ end
 
 -- Represents filters which should be applied during Updates to groups
 local function SettingsFilters(item)
-	if SettingsAccountFilters(item) then
+	if ApplySettingsFilters(item, AccountFilters) then
 		-- BoE can skip Character trait filters
 		if SettingsFilterItemUnbound(item) then return true; end
-		return SettingsCharacterFilters(item)
+		return ApplySettingsFilters(item, CharacterFilters)
+	end
+end
+local function SettingsExtraFilters(item, extraFilters)
+	if SettingsFilters(item) then
+		if extraFilters then
+			local filter
+			for name,_ in pairs(extraFilters) do
+				filter = api.Filters[name]
+				if filter then
+					-- if not filter(item) then PrintExclusionCause(name, item) return end
+					if not filter(item) then return end
+				end
+			end
+		end
+		return true;
 	end
 end
 -- Represents filters which should be applied during Updates to groups, but skips the BoE filter
 local function SettingsFilters_IgnoreBoEFilter(item)
-	if SettingsAccountFilters(item) then
-		return SettingsCharacterFilters(item)
+	if ApplySettingsFilters(item, AccountFilters) then
+		return ApplySettingsFilters(item, CharacterFilters)
 	end
 end
 api.SettingsFilters.IgnoreBoEFilter = SettingsFilters_IgnoreBoEFilter
@@ -447,6 +455,7 @@ api.Get.Group = function()
 end
 api.Set.Group = function(active)
 	app.GroupFilter = active and SettingsFilters or NoFilter;
+	app.GroupExtraFilter = active and SettingsExtraFilters or NoFilter;
 end
 -- Used to show completed Groups
 api.Filters.CompletedGroups = FilterCompletion
@@ -480,6 +489,16 @@ local function RecursiveGroupRequirementsFilter(group)
 	return true;
 end
 app.RecursiveGroupRequirementsFilter = RecursiveGroupRequirementsFilter;
+-- Recursively check outwards to find if any parent group restricts the filter for the current settings
+local function RecursiveGroupRequirementsExtraFilter(group, extraFilters)
+	local Filter = app.GroupExtraFilter;
+	while group do
+		if not Filter(group, extraFilters) then return; end
+		group = group.sourceParent or group.parent;
+	end
+	return true;
+end
+app.RecursiveGroupRequirementsExtraFilter = RecursiveGroupRequirementsExtraFilter;
 -- Recursively check outwards within the direct parent chain only to find if any parent group restricts the filter for this character
 local function RecursiveDirectGroupRequirementsFilter(group)
 	local Filter = app.GroupFilter;

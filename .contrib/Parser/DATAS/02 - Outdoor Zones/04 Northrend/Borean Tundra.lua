@@ -1064,15 +1064,23 @@ root(ROOTS.Zones, {
 							{ 41.6, 53.9, BOREAN_TUNDRA },
 							{ 43.0, 55.6, BOREAN_TUNDRA },
 						},
+						["altQuests"] = { 11586 },	-- Hellscream's Vigil
+						["sourceQuests"] = {
+							28711,	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
+							10172,	-- There Is No Hope
+						},
 					}),
 					q(11586, {	-- Hellscream's Vigil
 						["qg"] = 25273,	-- Warsong Recruitment Officer
+						["races"] = HORDE_ONLY,
 						["coords"] = {
 							{ 41.6, 53.9, BOREAN_TUNDRA },
 							{ 43.0, 55.6, BOREAN_TUNDRA },
 						},
-						["races"] = HORDE_ONLY,
-						["description"] = "This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently."
+						["altQuests"] = { 11585 },	-- Hellscream's Vigil
+						["lockCriteria"] = { 1, "questID", 10172 },	-- There Is No Hope
+						["description"] = "This version of the quest is only available if you have NOT completed the quest 'There Is No Hope' from Greatmother Geyah in Nagrand (Outland). However, it seems that everyone is receiving this version curently.",
+						["sourceQuest"] = 28711,	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
 					}),
 					q(11876, {	-- Help Those That Cannot Help Themselves
 						["qg"] = 25809,	-- Archdruid Lathorius

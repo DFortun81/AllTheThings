@@ -53,6 +53,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 70.1, 61.0, HALLOWFALL },
 				["g"] = {
 					i(213191),	-- Arathi Tinderbox (QI!)
+					i(220109),	-- Chainmail of Sina's Stalwarts
+					i(220112),	-- Cowl of Sina's Stalwarts
 					i(220110),	-- Greaves of Sina's Stalwarts
 					i(220108),	-- Helm of Sina's Stalwarts
 				},
@@ -98,6 +100,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["g"] = {
 					--crit 'The Guilding Star' for achievement 'Hallowfall'
 					i(220111),	-- Tower-Keeper's Grips
+					i(220107),	-- Tower-Keeper's Shoes
+					i(220113),	-- Tower-Keeper's Shoulderguards
 					i(220114),	-- Tower-Keeper's Waistguard
 					--c(2899),	-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
@@ -171,7 +175,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 55.8, 43.4, HALLOWFALL },
 				["g"] = {
 					--	crit 'Gathering Shadows' for achievement 'Hallowfall'
+					i(220126),	-- Lamplighter's Cinch
 					i(220125),	-- Lamplighter's Epaulets
+					i(220119),	-- Lamplighter's Handwraps
 					i(220127),	-- Lamplighter's Sabatons
 					-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
@@ -197,7 +203,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(217995),	-- Order of Night Propaganda (QI!)
 					i(217993),	-- Order of Night Propaganda (QI!)
 					i(217900),	-- Order of Night Propaganda (QI!)
-					-- possibly more?
 				},
 			}),
 			q(78626, {	-- Spar Day
@@ -275,6 +280,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- crit 'Hope in Solidarity' for achievement 'Hallowfall'.
 					i(220132),	-- Breastplate of the Reckoning's Vengeance
 					i(220129),	-- Breeches of the Reckoning's Vengeance
+					i(220131),	-- Coif of the Reckoning's Vengeance
+					i(220128),	-- Vestment of the Reckoning's Vengeance
 					-- Hallowfall Arathi Commendation (Wrbound Reputation), [2.5k rep], "this is one-time Warbound bonus"
 				},
 			}),
@@ -537,134 +544,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(217352),	-- Gasping Fish (QI!)
 				},
 			}),
-			-- AchievementID 40311 'Sharing the Light' quests
-			q(79471, {	-- Bleak Sand
-				--["sourceQuests"] = { xx },	-- After flare up Bleak Sand Keyflame
-				["isWeekly"] = true,
-				["coord"] = { 61.6, 12.8, HALLOWFALL },
-				["g"] = {
-					i(211073),	-- Sentry Flare (QI!)
-				},
-			}),
-			q(79470, {	-- Water of War
-				--["sourceQuests"] = { xx },	-- After flare up Faded Shore keyflame
-				["isWeekly"] = true,
-				["coord"] = { 62.6, 17.0, HALLOWFALL },
-				["g"] = {
-					i(211073),	-- Sentry Flare (QI!)
-				},
-			}),
-			q(78657, {	-- The Midnight Sentry
-				--["sourceQuests"] = { xx },	-- After flare up Torchlight Mine Keyflame
-				["isWeekly"] = true,
-				["coord"] = { 63.9, 19.6, HALLOWFALL },
-				["g"] = {
-					i(211073),	-- Sentry Flare (QI!)
-				},
-			}),
-			q(79380, {	-- Bog Beast Banishment
-				--["sourceQuests"] = { xx },	-- After flare up Stillstone Pond Keyflame
-				["isWeekly"] = true,
-				["coord"] = { 66.5, 24.0, HALLOWFALL },
-			}),
-			q(76338, {	-- A Better Cabbage Smacker
-				--["sourceQuests"] = { xx },	-- After flare up Whirring Field Keyflame
-				["isWeekly"] = true,
-				["coord"] = { 65.0, 29.3, HALLOWFALL },
-				["g"] = {
-					i(206519),	-- Cleanbrass Bolts (QI!)
-					i(206518),	-- Gyro-Optic Spring (QI!)
-				},
-			}),
-			q(79329, {	-- Glowing Harvest
-				--["sourceQuests"] = { xx },	-- After flare up Light's Blooming Keyflame
-				["isWeekly"] = true,
-				["coord"] = { 63.4, 28.5, HALLOWFALL },
-				["g"] = {
-					i(217755),	-- Remnant Satchel (QI!)
-				},
-			}),
-			q(78590, {	-- Cutting Edge
-				--["sourceQuests"] = { xx },	-- After flare up Fungal Field Keyflame
-				["isWeekly"] = true,
-				["coord"] = { 63.8, 31.9, HALLOWFALL },
-			}),
-			q(79469, {	-- Lurking Below
-				--["sourceQuests"] = { xx },	-- After flare up Duskrise Acerage Keyflame
-				["isWeekly"] = true,
-				["coord"] = { 61.9, 32.0, HALLOWFALL },
-				["g"] = {
-					i(215467),	-- Dirt-Cracker Pick (QI!)
-				},
-			}),
-			-- End AchievementID 40311 'Sharing the Light' quests
-			--
-			q(80004, {	-- Crab Grab
-				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Faded Shore Keyflame
-				--["isWeekly"] = true,	-- ?
-				["provider"] = { "o", 424347 },	-- Empty Crab Cage
-				["coord"] = { 61.5, 17.4, HALLOWFALL },
-				["g"] = {
-					i(216693),	-- Shadowtide Crab (QI!)
-				},
-			}),
-			q(76169, {	-- Glow in the Dark
-				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Torchlight Mine Keyflame
-				--["isWeekly"] = true,	-- ?
-				["provider"] = { "n", 212419 },	-- Attica Whiskervale
-				["coord"] = { 64.5, 18.8, HALLOWFALL },
-				["g"] = {
-					i(219198),	-- Attica's Cave Torch (QI!)
-					i(206203),	-- Dauntless Draught (QI!)
-					i(217342),	-- Dauntless Draught
-				},
-			}),
-			q(78656, {	-- Hose It Down
-				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Stillstone Pond Keyflame
-				--["isWeekly"] = true,	-- ?
-				["provider"] = { "n", 215956 },	-- Taerry Bligestone
-				["coord"] = { 65.8, 24.4, HALLOWFALL },
-				["g"] = {
-					i(211942),	-- Water Hose (QI!)
-				},
-			}),
-			q(79158, {	-- Seeds of Salvation
-				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Whirring Field Keyflame
-				--["isWeekly"] = true,	-- ?
-				["provider"] = { "n", 206441 },	-- Auebry Irongear
-				["coord"] = { 65.2, 28.1, HALLOWFALL },
-				["g"] = {
-					i(211947),	-- Harvest Seed Supply (QI!)
-				},
-			}),
-			q(76997, {	-- Lost in Shadows
-				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Whirring Field Keyflame
-				--["isWeekly"] = true,	-- ?
-				["provider"] = { "n", 208186 },	-- Yorbvas Flintstrike
-				["coord"] = { 64.6, 30.7, HALLOWFALL },
-				["g"] = {
-					i(211872),	-- Patrol Torch (QI!)
-				},
-			}),
-			q(79173, {	-- Supply the Effort
-				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Light's Blooming Keyflame
-				--["isWeekly"] = true,	-- ?
-				["provider"] = { "n", 206150 },	-- Erol Ellimoore
-				["coord"] = { 63.2, 29.4, HALLOWFALL },
-				["g"] = {
-					i(211975),	-- Arathi Toolkit (QI!)
-					i(211971),	-- Fallow Corn (QI!)
-					i(211970),	-- Harvest Wine (QI!)
-					i(211972),	-- Hallowfall Farm Supplies (QI!)
-				},
-			}),
-			q(78972, {	-- Harvest Havoc
-				--["sourceQuests"] = { xx },	-- Flare up lesser keyflame near Fungal Field Keyflame
-				--["isWeekly"] = true,	-- ?
-				["provider"] = { "n", 214428 },	-- Seraphine Seedheart
-				["coord"] = { 63.7, 33.9, HALLOWFALL },
-			}),
-			--
 			-- Defender of the Flame quest chain?
 			q(81990, {	-- The Light's Call
 				["isBreadcrumb"] = true,
@@ -738,14 +617,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(209854),	-- Hillhelm Remnant Supply (QI!)
 				},
 			}),
-			--q(79107, {	-- Seeds of Evil // should be other questID as of beta build
-			--	--["sourceQuests"] = { x },	-- x
-			--	["provider"] = { "n", 206528 },	-- Aliya Hillhelm
-			--	["coord"] = { 61.2, 30.5, HALLOWFALL },
-			--	["g"] = {
-			--		i(212153),	-- Corrupted Shadowleaf Seed (QI!)
-			--	},
-			--}),
+			q(79108, {	-- Seeds of Evil
+				--["sourceQuests"] = { x },	-- x
+				["provider"] = { "n", 206528 },	-- Aliya Hillhelm
+				["coord"] = { 61.2, 30.5, HALLOWFALL },
+				["g"] = {
+					i(212153),	-- Corrupted Shadowleaf Seed (QI!)
+				},
+			}),
 			q(80382, {	-- Eggs In One Basket
 				--["sourceQuests"] = { x },	-- x
 				["provider"] = { "o", 430581 },	-- Egg Basket
@@ -757,7 +636,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(50690, {	-- A Flickering of Hope (don't ask me about this questID, ask Blizzard, it is also currently in HQTs)
 				["sourceQuests"] = {
 					--80382,	-- Eggs In One Basket
-					--79107,	-- Seeds of Evil
+					79108,	-- Seeds of Evil
 					76247,	-- Keep The Home Fires Burning // either all 3 or only this one required
 				},
 				["provider"] = { "n", 206528 },	-- Aliya Hillhelm
@@ -766,7 +645,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(79109, {	-- Follow Miral
 				["sourceQuests"] = {
 					80382,	-- Eggs In One Basket // unsure about this one
-					--79107,	-- Seeds of Evil (TODO: fix to new questID)
+					79108,	-- Seeds of Evil
 				},
 				["provider"] = { "n", 206528 },	-- Aliya Hillhelm
 				["coord"] = { 61.2, 30.5, HALLOWFALL },
@@ -867,23 +746,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			--
-			--Delves?
-			q(83767, {	-- DELVER'S CALL: The Sinkhole
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "o", 455704 },	-- DELVER'S CALL: The Sinkhole
-				["coord"] = { 48.7, 39.5, HALLOWFALL },
-				["g"] = {
-					--c(2815),	-- 100x Resonance Crystals
-				},
-			}),
-			q(83755, {	-- Delves: Nightfall Sanctum
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 227523 },	-- Brann Bronzebeard
-				["coord"] = { 43.5, 56.3, HALLOWFALL },
-				["g"] = {
-					--c(2815),	-- 100x Resonance Crystals
-				},
-			}),
 			--new sides
 			q(78686, {	-- Lights Out
 				--["sourceQuests"] = { x },	-- ?
@@ -1020,10 +882,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- During questing
 	q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
 	q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
-	--q(81594),	-- [DNT] Complete Tracking Quest (spellID 443002), after turn in questID 78932 (Fickle Fiendish Fish) (could be rp unlock for 'Stay a while and listen' Faerin during Blades of the Arathi? Activation of this dialog didn't fire any quest)
+	q(81594),	-- [DNT] Complete Tracking Quest (spellID 443002), after turn in questID 78932 (Fickle Fiendish Fish) (could be rp unlock for 'Stay a while and listen' Faerin during Blades of the Arathi? Activation of this dialog didn't fire any quest)
 	q(79971),	-- Stay a while and listen - Alleria Windrunner, during questID 79971 (Nightwatch)
 	q(79706),	-- Stay a while and listen - Faerin Lothar, during questID 79971 (Nightwatch)
-	q(82538),	-- Stay a while and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
+	--q(82538),	-- Stay a while and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
 	q(81636),	-- Stay a while and listen - General Steelstrike, after turn in questID 78626 (Spar Day)
 	q(81631),	-- Stay a while and listen - Faerin Lothar, after pick up questID 80049 (The Flame Still Burns)
 	--
@@ -1033,15 +895,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82749),	-- triggered after turn in questID 80678 (Time Lost) (spellID 452551 - Flag Timer)
 	-- Some dude with question, which require you to loot something in world?
 	--q(80068),	-- [DNT] Infirmary Tracker, fire near Caesper (n: 225948 @ 41.8, 58.3) and Ryfus Sacredpyr (n: 221630  @ 40.0, 51.1)
-	-- Keyflames
-	q(80005),	-- Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
-	q(78472),	-- Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
-	q(79295),	-- Hose 'Em Down - Activate, after flare up lesser keyflame @ 65.8, 24.4
-	q(76599),	-- Right Between Gyro-Optics - Activate, after flare up lesser keyflame @ 65.4, 28.1
-	q(78452),	-- Reinforcements - Activate, after flare up lesser keyflame @ 64.6, 30.6
-	q(79383),	-- Web of Manipulation - Activate, after flare up lesser keyflame @ 63.3, 29.4
-	q(78466),	-- Shadows of Flavor - Activate, after flare up lesser keyflame @ 64.4, 30.9
-	q(78458),	-- Harvest Havoc - Activator, after flare up lesser keyflame @ 63.6, 33.6
+
 	-- Radiant Remnants
 	q(80337),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 66.1, 16.6
 	q(80347),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.7, 16.5

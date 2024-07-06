@@ -16,6 +16,8 @@ i(147349);	-- Spiked Armor Set \\ ed Armor Set
 -- BFA Minor Visions
 i(169294);	-- Resilient Soul
 i(173888);	-- Shard of Self Sacrifice \\ Lingering Soul
+-- SL
+i(187603);	-- The Mad Duke's Tea
 
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 
@@ -1291,6 +1293,7 @@ i(200811);	-- Congealed Sap Droplet
 i(200814);	-- Congealing Shard
 i(198832);	-- Conjured Blubbery Muffin
 i(198833);	-- Conjured Celebratory Cake
+i(204846);	-- Conjured Rocks on the Rocks
 i(198831);	-- Conjured Snow in a Cone
 i(198830);	-- Conjured Tasty Hatchling's Treat
 i(200967);	-- Conquest
@@ -1814,6 +1817,7 @@ i(220271);	-- Downy Clump
 i(225836);	-- Drained Elemental Mote
 i(225792);	-- Elegant Pedipalp Wrappings
 i(220262);	-- Elongated Proboscis
+i(220243);	-- Eloquent Tailfeather
 i(213265);	-- Empty Antidote Vial
 i(220355);	-- Enlarged Ear
 i(220222);	-- Everburning Lump
@@ -1834,8 +1838,10 @@ i(225830);	-- Irreparably Bent Spoon
 i(225791);	-- Jar of Alchemical Solvent
 i(220264);	-- Jaw with Barbed Teeth
 i(220234);	-- Leaden Vial
+i(225849);	-- Long-Forgotten Glove
 i(225820);	-- Lovingly Worn Chisel
 i(225803);	-- Lynx Tag Collar
+i(220248);	-- Mass of Melted Wax
 i(223886);	-- Mercurial Herbs
 i(223883);	-- Mercurial Transmutation
 i(225850);	-- Moldy Rations
@@ -1846,12 +1852,14 @@ i(224153);	-- Nibbled Shroomcap
 i(213258);	-- Odorant Oddity
 i(223887);	-- Ominous Herbs
 i(223885);	-- Ominous Transmutation
+i(228099);	-- Oversized Chelicera
 i(220244);	-- Oversized Claw
 i(220251);	-- Pale Gills
 i(225787);	-- Pheromone-Covered Missive
 i(220283);	-- Pileus Puff
 i(220247);	-- Polishing Powder
 i(220258);	-- Rotting Bones
+i(220227);	-- Pristine Ventral Fin
 i(220257);	-- Pulsing Pustules
 i(220230);	-- Punctured Intestine
 i(220261);	-- Pungent Mushroom
@@ -1871,7 +1879,9 @@ i(220299);	-- Sleek Beak
 i(220226);	-- Slime-Coated Membrane
 i(225810);	-- Smoked Visor
 i(220268);	-- Spiraled Horn
+i(226692);	-- Splintered Stone
 i(213262);	-- Stained Glass Fragment
+i(225800);	-- Stone Singing Bowl
 i(220363);	-- Straw-Stuffed Hat
 i(220292);	-- Stretched Wing
 i(225821);	-- Tattered Theater Hood
@@ -1892,3 +1902,17 @@ i(223884);	-- Volatile Transmutation
 i(220263);	-- Wax Miner's Sack
 i(225802);	-- Well-Worn Darning Needle
 i(217163);	-- Well Worn Doll
+
+
+i(226507);	-- Venom Dahn's Webscrub
+i(226508);	-- Vizier's Influence
+i(226509);	-- General's Insight
+i(226510);	-- Weaver's Facade
+i(226511);	-- Nerubimorph Poultice
+i(226512);	-- Treasure Map: Forgotten Memorial
+i(226513);	-- Treasure Map: Kaheti Excavation
+i(226514);	-- Treasure Map: Weave-Rat Cache
+i(226515);	-- Rumor Map: Bounties
+i(226516);	-- Rumor Map: Disruption
+i(226517);	-- Rumor Map: Espionage
+i(226518);	-- Phero-Escape

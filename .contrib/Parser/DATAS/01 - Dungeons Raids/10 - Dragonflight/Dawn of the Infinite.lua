@@ -633,6 +633,9 @@ local QUANTUM_GROUP = sharedData({
 		}),
 		ig(134613),	-- Scorching Quickblade					(NYI)
 		ig(166364),	-- Song of the Fallen					(NYI)
+		ig(187056, {-- The Devouring Cold					(NYI or maybe Removed)
+			["modID"] = 4, -- LFR Raid
+		}),
 		ig(155074),	-- Toll Enforcer						(NYI)
 
 		ig(68195),	-- Bazzalan's Blade						(Removed)

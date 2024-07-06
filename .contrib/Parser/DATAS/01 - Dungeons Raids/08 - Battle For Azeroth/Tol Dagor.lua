@@ -33,7 +33,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				e(2097, {	-- The Sand Queen
 					["crs"] = { 127479 },	-- The Sand Queen
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159656),	-- Halberd of the Unwary Guard
 						i(160110),	-- Warglaive of the Sand Queen
 						i(159668),	-- Rattling Jar of Eyes
@@ -41,11 +41,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(160215),	-- Sewer Grate Girdle
 						i(159392),	-- Gaoler's Chainmail Gaiters
 						i(159460),	-- Overseer's Lost Seal
-					}),
+					},
 				}),
 				e(2098, {	-- Jes Howlis
 					["crs"] = { 127484 },	-- Jes Howlis
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(168145),	-- Sly Rogue's Decanter (for Silas' Sphere of Transmutation)
 						i(159131),	-- Howlis' Crystal Shiv
 						i(159666),	-- Improvised Riot Shield
@@ -54,11 +54,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159306),	-- Singe-Blotched Britches
 						i(159363),	-- Gnawed Iron Fetters
 						i(159627),	-- Jes' Howler
-					}),
+					},
 				}),
 				e(2099, {	-- Knight Captain Valyri
 					["crs"] = { 127490 },	-- Knight Captain Valyri
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						i(159441),	-- Valyri's Fire-Proof Bracers
 						i(159389),	-- Flint-Linked Wristguards
 						i(159390),	-- Sure-Grip Munition Handlers
@@ -68,11 +68,11 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159444),	-- Gunpowder-Scoured Sabatons
 						i(159343),	-- Spark Dampening Footpads
 						i(159615),	-- Ignition Mage's Fuse
-					}),
+					},
 				}),
 				e(2096, {	-- Overseer Korgus
 					["crs"] = { 127503 },	-- Overseer Korgus
-					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = {
 						ach(12840),	-- Tol Dagor
 						i(159129),	-- Flamecaster Botefeux
 						i(159658),	-- Cudgel of Correctional Oversight
@@ -85,7 +85,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						i(159440),	-- Ashvane Warden's Cuirass
 						i(159268),	-- Inmate's Straight Robe
 						i(159628),	-- Kul Tiran Cannonball Runner
-					}),
+					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.HEROIC, {

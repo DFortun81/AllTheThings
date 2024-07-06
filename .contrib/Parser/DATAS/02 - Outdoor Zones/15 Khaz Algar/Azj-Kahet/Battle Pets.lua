@@ -26,12 +26,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				pet(xx, {	-- Azure Flickerfly (PET!)
 					["coords"] = {
 						{ x, y, HALLOWFALL },	-- copy-paste, saw in previous build in Hallowfall too
-						{ 22.2, 24.2, 2213 },
+						{ 22.2, 24.2, NERUBAR },
 					},
 				}),
 				pet(xx, {	-- Ebon Ploughworm (PET!)
 					["coords"] = {
-						{ 44.2, 64.8, 2216 },
+						{ 44.2, 64.8, NERUBAR_LOWER },
 					},
 				}),
 				pet(xx, {	-- Shadowy Oozeling (PET!)

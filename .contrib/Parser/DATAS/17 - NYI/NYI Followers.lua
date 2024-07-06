@@ -5,7 +5,7 @@
 root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_6_0_2} }, {
+		expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 			follower(6),	-- Alliance:Horde:Orc Male \\ Horde:Human Male
 			follower(7),	-- Alliance:Horde:Abyssal \\ Horde:Rytama
 			follower(8),	-- Alliance:Horde:Abyssal \\ Horde:Genn Greymane
@@ -59,7 +59,7 @@ root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.1
-		expansion(EXPANSION.LEGION, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_7_0_3} }, {
+		expansion(EXPANSION.LEGION, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 			follower(497),	-- Druid Champion 1
 			follower(585),	-- Alliance:Commander Lynore Windstryke \\ Horde:Nazgrel
 			follower(587),	-- Eitrigg
@@ -107,7 +107,7 @@ root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_8_0_1} }, {
+		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 			follower(1074),	-- Alliance:Magister Umbric \\ Horde:Arcanist Valtrois
 			follower(1075),	-- Alliance:Recruit Alliance Troops \\ Horde:Recruit Horde Troops
 			follower(1188),	-- Alliance:Ankoan Tidehunters \\ Horde:Unshackled Mercenaries
@@ -134,7 +134,7 @@ root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_9_0_1} }, {
+		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			follower(1208),	-- Nadjia the Mistblade
 			follower(1211),	-- Eli the Brazen
 			follower(1212),	-- Anjali
@@ -155,7 +155,7 @@ root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = {CREATED_9_1_0} }, {
+		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 			follower(1340),	-- Ella
 			follower(1344),	-- Ben Howell
 		})),

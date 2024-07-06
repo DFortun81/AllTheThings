@@ -466,7 +466,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 	}),
 	--	Gear
 	n(ZONE_DROPS, {
-		["g"] = bubbleDown({["bonusID"] = 4796, ["lvl"] = 120}, {
+		["g"] = {
 			i(170116),	-- Darkened Slicer
 			i(169402),	-- Deeptide Amice
 			i(169403),	-- Deeptide Cinch
@@ -512,6 +512,6 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			i(169422),	-- Wavecrash Smashers
 			i(169429),	-- Wavecrash Wristguards
 			i(170118),  -- Centurion's Shortsword
-		}),
+		},
 	}),
 })));

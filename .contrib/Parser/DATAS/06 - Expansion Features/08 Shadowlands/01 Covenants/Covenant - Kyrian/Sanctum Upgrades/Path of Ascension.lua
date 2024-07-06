@@ -1635,7 +1635,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									i(177857, {	-- Doubt Tinged Warbow
 										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
-									i(184238, {	-- Doubt Tinged Warglaive
+									i(184238, {	-- Doubt-Tinged Warglaive
 										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
 								}),

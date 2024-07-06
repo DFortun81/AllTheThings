@@ -2430,6 +2430,11 @@ namespace ATT
                     Incorporate_EnsembleTransmogSetItems(data);
                 }
             }
+
+            if (data.TryGetValue("tmogSetID", out long tmogSetID) && TryGetTypeDBObject(tmogSetID, out TransmogSet tmogSet))
+            {
+                Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
+            }
         }
 
         private static void Incorporate_EnsembleTransmogSetItems(IDictionary<string, object> data)

@@ -108,11 +108,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(70, {	-- Flame Crest, Burning Steppes
 					["cr"] = 13177,	-- Vahgruk <Wind Rider Master>
-					-- #if AFTER CATA
-					["coord"] = { 54.2, 24.2, BURNING_STEPPES },
-					-- #else
-					["coord"] = { 65.6, 24.2, BURNING_STEPPES },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 54.2, 24.2, BURNING_STEPPES },
+						-- #else
+						{ 65.6, 24.2, BURNING_STEPPES },
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 				}),
 				fp(675, {	-- Flamestar Post, Burning Steppes
@@ -122,11 +124,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				fp(71, {	-- Morgan's Vigil, Burning Steppes
 					["cr"] = 2299,	-- Borgus Stoutarm <Gryphon Master>
-					-- #if AFTER CATA
-					["coord"] = { 72.2, 65.6, BURNING_STEPPES },
-					-- #else
-					["coord"] = { 84.4, 68.2, BURNING_STEPPES },
-					-- #endif
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 72.2, 65.6, BURNING_STEPPES },
+						-- #else
+						{ 84.4, 68.2, BURNING_STEPPES },
+						-- #endif
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -2108,23 +2112,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(10077, {	-- Deathmaw
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 63.2, 32.2, BURNING_STEPPES },
 						{ 70.6, 31.0, BURNING_STEPPES },
 						{ 73.3, 51.7, BURNING_STEPPES },
 						{ 68.4, 55.2, BURNING_STEPPES },
 						{ 70.2, 56.8, BURNING_STEPPES },
 						{ 72.2, 59.0, BURNING_STEPPES },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 75.2, 33.2, BURNING_STEPPES },
 						{ 82.6, 31.0, BURNING_STEPPES },
 						{ 87.6, 50.6, BURNING_STEPPES },
 						{ 81.2, 59.2, BURNING_STEPPES },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50810, {	-- Favored of Isiset
 					["coords"] = {
@@ -2135,54 +2137,52 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(9604, {	-- Gorgon'och
-					-- #if AFTER CATA
-					["coord"] = { 64.0, 46.4, BURNING_STEPPES },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 64.0, 46.4, BURNING_STEPPES },
+						-- #else
 						{ 77.2, 43.0, BURNING_STEPPES },
 						{ 80.8, 44.8, BURNING_STEPPES },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8979, {	-- Gruklash
-					-- #if AFTER CATA
-					["coord"] = { 33.6, 37.0, BURNING_STEPPES },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 33.6, 37.0, BURNING_STEPPES },
+						-- #else
 						{ 16.0, 30.2, BURNING_STEPPES },
 						{ 40.6, 35.8, BURNING_STEPPES },
 						{ 42.6, 51.4, BURNING_STEPPES },
 						{ 48.0, 62.2, BURNING_STEPPES },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(9602, {	-- Hahk'Zor
-					-- #if AFTER CATA
-					["coord"] = { 68.6, 40.6, BURNING_STEPPES },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 68.6, 40.6, BURNING_STEPPES },
+						-- #else
 						{ 79.2, 42.2, BURNING_STEPPES },
 						{ 78.6, 44.6, BURNING_STEPPES },
 						{ 80.8, 48.6, BURNING_STEPPES },
 						{ 82.8, 42.8, BURNING_STEPPES },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8976, {	-- Hematos
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 26.4, 58.2, BURNING_STEPPES },
 						{ 27.6, 59.4, BURNING_STEPPES },
 						{ 28.0, 60.0, BURNING_STEPPES },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 18.2, 46.8, BURNING_STEPPES },
 						{ 16.6, 56.2, BURNING_STEPPES },
 						{ 24.8, 58.6, BURNING_STEPPES },
 						{ 34.2, 53.4, BURNING_STEPPES },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50855, {	-- Jaxx the Rabid
 					["coord"] = { 47.0, 24.2, BURNING_STEPPES },
@@ -2197,21 +2197,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 				n(8981, {	-- Malfunctioning Reaver
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 51.0, 36.8, BURNING_STEPPES },
 						{ 52.6, 38.6, BURNING_STEPPES },
 						{ 55.2, 43.0, BURNING_STEPPES },
 						{ 53.6, 36.6, BURNING_STEPPES },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 76.6, 30.6, BURNING_STEPPES },
 						{ 87.4, 31.0, BURNING_STEPPES },
 						{ 90.6, 46.8, BURNING_STEPPES },
 						{ 86.2, 57.4, BURNING_STEPPES },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50361, {	-- Ornat
 					["coord"] = { 50.6, 60.6, BURNING_STEPPES },
@@ -2226,51 +2224,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10078, {	-- Terrorspark
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 57.0, 31.4, BURNING_STEPPES },
 						{ 56.2, 33.0, BURNING_STEPPES },
 						{ 58.0, 33.6, BURNING_STEPPES },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 16.4, 24.2, BURNING_STEPPES },
 						{ 42.0, 46.2, BURNING_STEPPES },
 						{ 47.6, 43.2, BURNING_STEPPES },
 						{ 51.8, 43.6, BURNING_STEPPES },
 						{ 63.6, 37.6, BURNING_STEPPES },
 						{ 69.4, 32.6, BURNING_STEPPES },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(8978, {	-- Thauris Balgarr
-					-- #if AFTER CATA
-					["coord"] = { 43.8, 39.8, BURNING_STEPPES },
-					-- #else
 					["coords"] = {
+						-- #if AFTER CATA
+						{ 43.8, 39.8, BURNING_STEPPES },
+						-- #else
 						{ 53.2, 40.6, BURNING_STEPPES },
 						{ 56.2, 35.2, BURNING_STEPPES },
 						{ 55.2, 43.2, BURNING_STEPPES },
 						{ 61.8, 37.6, BURNING_STEPPES },
 						{ 66.6, 44.8, BURNING_STEPPES },
 						{ 71.8, 36.4, BURNING_STEPPES },
+						-- #endif
 					},
-					-- #endif
 				}),
 				n(50730, {	-- Venomspine
 					["coord"] = { 5.8, 38.2, BURNING_STEPPES },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				n(10119, {	-- Volchan
-					-- #if AFTER CATA
 					["coords"] = {
+						-- #if AFTER CATA
 						{ 19.6, 42.6, BURNING_STEPPES },
 						{ 19.8, 41.4, BURNING_STEPPES },
 						{ 21.2, 42.4, BURNING_STEPPES },
 						{ 22.6, 41.8, BURNING_STEPPES },
-					},
-					-- #else
-					["coords"] = {
+						-- #else
 						{ 77.0, 31.2, BURNING_STEPPES },
 						{ 91.2, 33.4, BURNING_STEPPES },
 						{ 90.2, 45.6, BURNING_STEPPES },
@@ -2279,8 +2273,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 72.0, 55.6, BURNING_STEPPES },
 						{ 72.0, 43.6, BURNING_STEPPES },
 						{ 73.8, 35.6, BURNING_STEPPES },
+						-- #endif
 					},
-					-- #endif
 					["groups"] = {
 						i(12828, {	-- Plans: Volcanic Hammer (RECIPE!)
 							["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3, ADDED_10_1_7 },	-- Kamboozle DATA Discord 1.10.2023
