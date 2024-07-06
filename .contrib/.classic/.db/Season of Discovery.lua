@@ -184,6 +184,9 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
 			["races"] = HORDE_ONLY,
 		}),
+		applyclassicphase(SOD_PHASE_THREE, faction(2641, {	-- Emerald Wardens
+			["maps"] = { ASHENVALE, DUSKWOOD, FERALAS, THE_HINTERLANDS },
+		})),
 	}),
 	n(COMMON_VENDOR_ITEMS, {
 		["aqd"] = faction(2586, AZEROTH_COMMERCE_AUTHORITY_VENDORS),
@@ -957,6 +960,28 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 		},
 	}),
+	applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Nightmare Incursions
+		readable = "SOD - Nightmare Incursions",
+		icon = 134108,
+		text = {
+			en = "Nightmare Incursions",
+			--[[
+			es = "",
+			de = "",
+			fr = "",
+			it = "",
+			pt = "",
+			ru = "",
+			ko = "",
+			cn = "",
+			]]--
+		},
+		description = {
+			en = "This event focuses on the portals found across Azeroth, typically hosting an Emerald Dragon World Boss. These new events are PvE focused, asking players to complete quests around and inside the portals.\n\nThe event is intended to provide both endgame content and variation, with a new faction, the Emerald Wardens as well as new items and sets, but also to supplement the leveling experience. As early as level 25, players will be able to start doing Nightmare Incursions for experience and reputation.\n\nIncursions are also intended to be done in a group, with quests being shareable to up to 4 other players. Some quests will also require killing boss-type enemies, or require you to utilize gathering professions. This doesn't mean that you can't do them solo, it is just unlikely to be very efficient.",
+		},
+	}), {
+		
+	})),
 	n(createHeader({	-- Rune Engraving
 		readable = "Rune Engraving",
 		icon = "Interface\\Icons\\trade_engraving",

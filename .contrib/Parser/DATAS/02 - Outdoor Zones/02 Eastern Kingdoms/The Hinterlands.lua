@@ -284,9 +284,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["minReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
 					["races"] = ALLIANCE_ONLY,
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_THREE, faction(2641)),	-- Emerald Wardens
-				-- #endif
 			}),
 			-- #endif
 			n(FLIGHT_PATHS, {

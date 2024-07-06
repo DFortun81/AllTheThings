@@ -126,11 +126,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2520, {["timeline"] = { ADDED_4_0_1 }}),	-- Woodpaw Den
 				exploration(2519),	-- Woodpaw Hills
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(FACTIONS, {
-				applyclassicphase(SOD_PHASE_THREE, faction(2641)),	-- Emerald Wardens
-			}),
-			-- #endif
 			n(FLIGHT_PATHS, {
 				fp(568, {	-- Camp Ataya, Feralas
 					["cr"] = 40473,	-- Tono <Wind Rider Master>
