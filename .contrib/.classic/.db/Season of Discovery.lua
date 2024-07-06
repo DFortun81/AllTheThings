@@ -1189,9 +1189,17 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(415926)),	-- Engrave Boots - Waylay
 			
 			-- Phase 3
+			applyclassicphase(SOD_PHASE_THREE, recipe(432299)),	-- Engrave Bracers - Carnage
+			applyclassicphase(SOD_PHASE_THREE, recipe(432297)),	-- Engrave Bracers - Cut to the Chase
+			applyclassicphase(SOD_PHASE_THREE, recipe(432301)),	-- Engrave Bracers - Unfair Advantage
 			applyclassicphase(SOD_PHASE_THREE, recipe(432293)),	-- Engrave Helm - Combat Potency
 			applyclassicphase(SOD_PHASE_THREE, recipe(432291)),	-- Engrave Helm - Focused Attacks
 			applyclassicphase(SOD_PHASE_THREE, recipe(432295)),	-- Engrave Helm - Honor Among Thieves
+			
+			-- Phase 4
+			applyclassicphase(SOD_PHASE_FOUR, recipe(415922)),	-- Engrave Cloak - Blunderbuss
+			applyclassicphase(SOD_PHASE_FOUR, recipe(415918)),	-- Engrave Cloak - Crimson Tempest
+			applyclassicphase(SOD_PHASE_FOUR, recipe(436609)),	-- Engrave Cloak - Fan of Knives
 		}),
 		classHeader(SHAMAN, {
 			-- Phase 1
