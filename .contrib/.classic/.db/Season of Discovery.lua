@@ -1044,6 +1044,10 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			-- Phase 3
 			applyclassicphase(SOD_PHASE_THREE, recipe(431601)),	-- Engrave Bracers - Focus Fire
 			applyclassicphase(SOD_PHASE_THREE, recipe(431611)),	-- Engrave Bracers - T.N.T.
+			applyclassicphase(SOD_PHASE_THREE, recipe(416093)),	-- Engrave Bracers - Raptor Fury
+			applyclassicphase(SOD_PHASE_THREE, recipe(416085)),	-- Engrave Helm - Lock and Load
+			applyclassicphase(SOD_PHASE_THREE, recipe(416083)),	-- Engrave Helm - Catlike Reflexes
+			applyclassicphase(SOD_PHASE_THREE, recipe(416090)),	-- Engrave Helm - Rapid Killing
 		}),
 		classHeader(MAGE, {
 			-- Phase 1
