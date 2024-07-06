@@ -1082,8 +1082,14 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(429311)),	-- Engrave Bracers - Balefire Bolt
 			applyclassicphase(SOD_PHASE_THREE, recipe(429309)),	-- Engrave Bracers - Displacement
 			applyclassicphase(SOD_PHASE_THREE, recipe(429308)),	-- Engrave Bracers - Molten Armor
+			applyclassicphase(SOD_PHASE_THREE, recipe(401754)),	-- Engrave Helm - Advanced Warding
 			applyclassicphase(SOD_PHASE_THREE, recipe(429304)),	-- Engrave Helm - Deep Freeze
 			applyclassicphase(SOD_PHASE_THREE, recipe(429306)),	-- Engrave Helm - Temporal Anomaly
+			
+			-- Phase 4
+			applyclassicphase(SOD_PHASE_FOUR, recipe(401722)),	-- Engrave Cloak - Arcane Barrage
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440858)),	-- Engrave Cloak - Frozen Orb
+			applyclassicphase(SOD_PHASE_FOUR, recipe(401764)),	-- Engrave Cloak - Overheat
 		}),
 		classHeader(PALADIN, {
 			-- Phase 1
