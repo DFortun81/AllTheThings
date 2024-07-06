@@ -1952,140 +1952,131 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["isDaily"] = true,
 				["lvl"] = 47,
 			}),
-			--[[
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81786, {	-- Hinterlands Mission I: Defeat Moonkin [150 Rep]
 				["providers"] = {
 					{ "i", 220017 },	-- Nightmare Incursions: Hinterlands Mission I
 					{ "i", 220071 },	-- Deputization Authorization: Hinterlands Mission I
 				},
 				["groups"] = {
-					objective(1, {	-- 0/10  slain
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
-					}),
-					objective(2, {	-- 0/10  slain
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
+					objective(1, {	-- 0/20 Fallen Moonkin slain
+						["provider"] = { "n", 221330 },	-- Fallen Moonkin
+						["coord"] = { 58.0, 42.5, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81787, {	-- Hinterlands Mission II: Defeat Giant Turtles [150 Rep]
 				["providers"] = {
 					{ "i", 220018 },	-- Nightmare Incursions: Hinterlands Mission II
 					{ "i", 220072 },	-- Deputization Authorization: Hinterlands Mission II
 				},
 				["groups"] = {
-					objective(1, {	-- 0/10  slain
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
-					}),
-					objective(2, {	-- 0/10  slain
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
+					objective(1, {	-- 0/20 Dreamwater Vicejaw slain
+						["provider"] = { "n", 221328 },	-- Dreamwater Vicejaw
+						["coord"] = { 65.0, 44.8, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81788, {	-- Hinterlands Mission III: Defeat Dragonkin [150 Rep]
 				["providers"] = {
 					{ "i", 220019 },	-- Nightmare Incursions: Hinterlands Mission III
 					{ "i", 220073 },	-- Deputization Authorization: Hinterlands Mission III
 				},
 				["groups"] = {
-					objective(1, {	-- 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
+					objective(1, {	-- 0/10 Wrath Whelp slain
+						["provider"] = { "n", 221326 },	-- Wrath Whelp
+						["coord"] = { 47.6, 41.0, THE_HINTERLANDS },
 					}),
-					objective(2, {	-- 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
+					objective(2, {	-- 0/3 Wyrmkin Starhunter slain
+						["provider"] = { "n", 221325 },	-- Wyrmkin Starhunter
+						["coord"] = { 47.0, 41.6, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81789, {	-- Hinterlands Mission IV: Dragon Intelligence [100 Rep]
 				["providers"] = {
 					{ "i", 220020 },	-- Nightmare Incursions: Hinterlands Mission IV
 					{ "i", 220074 },	-- Deputization Authorization: Hinterlands Mission IV
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 Intelligence Report: 
-						["provider"] = { "i",  },	-- Intelligence Report: 
-						["coord"] = { , THE_HINTERLANDS },
-						["cr"] = ,	-- 
+					objective(1, {	-- 0/1 Intelligence Report: Agol'watha
+						["provider"] = { "i", 219928 },	-- Intelligence Report: Agol'watha
+						["coord"] = { 46.8, 41.2, THE_HINTERLANDS },
+						["cr"] = 221353,	-- Dreamwarden Laninar
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81817, {	-- Hinterlands Mission V: Turtle Intelligence [100 Rep]
 				["providers"] = {
 					{ "i", 220021 },	-- Nightmare Incursions: Hinterlands Mission V
 					{ "i", 220075 },	-- Deputization Authorization: Hinterlands Mission V
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 Intelligence Report: 
-						["provider"] = { "i",  },	-- Intelligence Report: 
-						["coord"] = { , THE_HINTERLANDS },
-						["cr"] = ,	-- 
+					objective(1, {	-- 0/1 Intelligence Report: Shaol'watha
+						["provider"] = { "i", 219937 },	-- Intelligence Report: Shaol'watha
+						["coord"] = { 73.2, 54.0, THE_HINTERLANDS },
+						["cr"] = 221352,	-- Dreamwarden Sanathel
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81820, {	-- Hinterlands Mission VI: Moonkin Intelligence [100 Rep]
 				["providers"] = {
 					{ "i", 220022 },	-- Nightmare Incursions: Hinterlands Mission VI
 					{ "i", 220076 },	-- Deputization Authorization: Hinterlands Mission VI
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 Intelligence Report: 
-						["provider"] = { "i",  },	-- Intelligence Report: 
-						["coord"] = { , THE_HINTERLANDS },
-						["cr"] = ,	-- 
+					objective(1, {	-- 0/1 Intelligence Report: Skulk Rock
+						["provider"] = { "i", 219938 },	-- Intelligence Report: Skulk Rock
+						["coord"] = { 56.6, 43.2, THE_HINTERLANDS },
+						["cr"] = 221351,	-- Dreamwarden Valori
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81826, {	-- Hinterlands Mission VII: Recover Star-Touched Dragonegg [100 Rep]
 				["providers"] = {
 					{ "i", 220023 },	-- Nightmare Incursions: Hinterlands Mission VII
 					{ "i", 220077 },	-- Deputization Authorization: Hinterlands Mission VII
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 
+					objective(1, {	-- 0/1 Star-Touched Dragonegg
 						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
+							{ "i", 219488 },	-- Star-Touched Dragonegg
+							{ "o", 441133 },	-- Star-Touched Dragonegg
 						},
-						["coord"] = { , THE_HINTERLANDS },
+						["coord"] = { 45.5, 38.7, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81830, {	-- Hinterlands Mission VIII: Recover Elunar Relic [100 Rep]
 				["providers"] = {
 					{ "i", 220024 },	-- Nightmare Incursions: Hinterlands Mission VIII
 					{ "i", 220078 },	-- Deputization Authorization: Hinterlands Mission VIII
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 
+					objective(1, {	-- 0/1 Elunar Relic
 						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
+							{ "i", 219490 },	-- Elunar Relic
+							{ "o", 441140 },	-- Humming Box
 						},
-						["coord"] = { , THE_HINTERLANDS },
+						["coord"] = { 57.8, 43.3, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81832, {	-- Hinterlands Mission IX: Recover Dreampearl [100 Rep]
 				["providers"] = {
 					{ "i", 220025 },	-- Nightmare Incursions: Hinterlands Mission IX
 					{ "i", 220079 },	-- Deputization Authorization: Hinterlands Mission IX
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1 
+					objective(1, {	-- 0/1 Dreampearl
 						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
+							{ "i", 219491 },	-- Dreampearl
+							{ "o", 441141 },	-- Dreampearl
 						},
-						["coord"] = { , THE_HINTERLANDS },
+						["coord"] = { 72.7, 54.2, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81833, {	-- Hinterlands Mission X: Star Lotus [100 Rep]
 				["providers"] = {
 					{ "i", 220026 },	-- Nightmare Incursions: Hinterlands Mission X
 					{ "i", 220080 },	-- Deputization Authorization: Hinterlands Mission X
@@ -2093,20 +2084,20 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["requireSkill"] = HERBALISM,
 				["learnedAt"] = 250,
 				["groups"] = {
-					objective(1, {	-- 0/10 
+					objective(1, {	-- 0/10 Star Lotus
 						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
+							{ "i", 219454 },	-- Star Lotus
+							{ "o", 439762 },	-- Star Lotus
 						},
 						["coords"] = {
-							{ , THE_HINTERLANDS },
-							{ , THE_HINTERLANDS },
-							{ , THE_HINTERLANDS },
+							{ 46.1, 38.5, THE_HINTERLANDS },
+							{ 61.8, 25.3, THE_HINTERLANDS },
+							{ 70.5, 45.5, THE_HINTERLANDS },
 						},
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81834, {	-- Hinterlands Mission XI: Starsilver Ore [100 Rep]
 				["providers"] = {
 					{ "i", 220027 },	-- Nightmare Incursions: Hinterlands Mission XI
 					{ "i", 220081 },	-- Deputization Authorization: Hinterlands Mission XI
@@ -2114,20 +2105,20 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["requireSkill"] = MINING,
 				["learnedAt"] = 250,
 				["groups"] = {
-					objective(1, {	-- 0/10 
+					objective(1, {	-- 0/10 Starsilver Ore
 						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
+							{ "i", 219486 },	-- Starsilver Ore
+							{ "o", 439778 },	-- Starsilver Vein
 						},
 						["coords"] = {
-							{ , THE_HINTERLANDS },
-							{ , THE_HINTERLANDS },
-							{ , THE_HINTERLANDS },
+							{ 45.4, 39.5, THE_HINTERLANDS },
+							{ 56.9, 43.5, THE_HINTERLANDS },
+							{ 72.2, 52.3, THE_HINTERLANDS },
 						},
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81835, {	-- Hinterlands Mission XII: Starshells [100 Rep]
 				["providers"] = {
 					{ "i", 220028 },	-- Nightmare Incursions: Hinterlands Mission XII
 					{ "i", 220082 },	-- Deputization Authorization: Hinterlands Mission XII
@@ -2135,92 +2126,85 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				["requireSkill"] = SKINNING,
 				["learnedAt"] = 250,
 				["groups"] = {
-					objective(1, {	-- 0/10 
-						["providers"] = {
-							{ "i",  },	-- 
-							{ "o",  },	-- 
-						},
-						["coords"] = {
-							{ , THE_HINTERLANDS },
-							{ , THE_HINTERLANDS },
-							{ , THE_HINTERLANDS },
-						},
+					objective(1, {	-- 0/10 Starshell
+						["provider"] = { "i", 219487 },	-- Starshell
+						["coord"] = { 63.4, 42.2, THE_HINTERLANDS },
+						["cr"] = 221328,	-- Dreamwater Vicejaw
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81837, {	-- Hinterlands Mission XIII: Defeat Florius [200 Rep]
 				["providers"] = {
 					{ "i", 220029 },	-- Nightmare Incursions: Hinterlands Mission XIII
 					{ "i", 220083 },	-- Deputization Authorization: Hinterlands Mission XIII
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1  slain
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
+					objective(1, {	-- 0/1 Florius slain
+						["provider"] = { "n", 221331 },	-- Florius
+						["coord"] = { 46.6, 40.6, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81838, {	-- Hinterlands Mission XIV: Defeat Doomkin [150 Rep]
 				["providers"] = {
 					{ "i", 220030 },	-- Nightmare Incursions: Hinterlands Mission XIV
 					{ "i", 220084 },	-- Deputization Authorization: Hinterlands Mission XIV
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1  slain
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
+					objective(1, {	-- 0/1 Doomkin slain
+						["provider"] = { "n", 221333 },	-- Doomkin
+						["coord"] = { 58.0, 42.2, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81839, {	-- Hinterlands Mission XV: Defeat Ghamoo-Raja [150 Rep]
 				["providers"] = {
 					{ "i", 220031 },	-- Nightmare Incursions: Hinterlands Mission XV
 					{ "i", 220085 },	-- Deputization Authorization: Hinterlands Mission XV
 				},
 				["groups"] = {
-					objective(1, {	-- 0/1  slain
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
+					objective(1, {	-- 0/1 Ghamoo-Raja slain
+						["provider"] = { "n", 221334 },	-- Ghamoo-Raja
+						["coord"] = { 72.0, 53.2, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81850, {	-- Hinterlands Mission XVI: Rescue Elianar Shadowdrinker [100 Rep]
 				["providers"] = {
 					{ "i", 220032 },	-- Nightmare Incursions: Hinterlands Mission XVI
 					{ "i", 220086 },	-- Deputization Authorization: Hinterlands Mission XVI
 				},
 				["groups"] = {
-					objective(1, {	-- Rescue 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
+					objective(1, {	-- Rescue Elianar Shadowdrinker
+						["provider"] = { "n", 221335 },	-- Elianar Shadowdrinker <Druid of the Claw>
+						["coord"] = { 53.59, 39.0, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81851, {	-- Hinterlands Mission XVII: Rescue Serlina Starbright [100 Rep]
 				["providers"] = {
 					{ "i", 220033 },	-- Nightmare Incursions: Hinterlands Mission XVII
 					{ "i", 220087 },	-- Deputization Authorization: Hinterlands Mission XVII
 				},
 				["groups"] = {
-					objective(1, {	-- Rescue 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
+					objective(1, {	-- Rescue Serlina Starbright
+						["provider"] = { "n", 221336 },	-- Serlina Starbright <Druid of the Claw>
+						["coord"] = { 70.94, 47.36, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			hinterlandsquest(, {	-- 
+			hinterlandsquest(81852, {	-- Hinterlands Mission XVIII: Rescue Veanna Cloudsleeper [100 Rep]
 				["providers"] = {
 					{ "i", 220034 },	-- Nightmare Incursions: Hinterlands Mission XVIII
 					{ "i", 220088 },	-- Deputization Authorization: Hinterlands Mission XVIII
 				},
 				["groups"] = {
-					objective(1, {	-- Rescue 
-						["provider"] = { "n",  },	-- 
-						["coord"] = { , THE_HINTERLANDS },
+					objective(1, {	-- Rescue Veanna Cloudsleeper
+						["provider"] = { "n", 221337 },	-- Veanna Cloudsleeper <Druid of the Claw>
+						["coord"] = { 57.31, 42.84, THE_HINTERLANDS },
 					}),
 				},
 			}),
-			]]--
 			applyclassicphase(SOD_PHASE_FOUR, q(84013, {	-- More Starshells
 				["qg"] = 221479,	-- Field Captain Korlian
 				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
