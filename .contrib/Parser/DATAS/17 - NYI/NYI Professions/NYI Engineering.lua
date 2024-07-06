@@ -5,11 +5,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(ENGINEERING, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.CLASSIC, {
-				i(10579),	-- Explosive Arrow
-				i(10723),	-- Gnomish Ham Radio
-				i(10580),	-- Goblin "Boom" Box
-				i(10585),	-- Goblin Radio
-				i(10719),	-- Mobile Alarm
+				-- 1.x.x
+				n(P1xx, {
+					i(10579),	-- Explosive Arrow
+					i(10723),	-- Gnomish Ham Radio
+					i(10580),	-- Goblin "Boom" Box
+					i(10585),	-- Goblin Radio
+					i(10719),	-- Mobile Alarm
+				}),
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.0.1
@@ -44,7 +47,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					i(153591),	-- Belt Enchant: Holographic Horror Projector
 					i(159829),	-- Belt Enchant: Miniaturized Plasma Shield
 					i(153592),	-- Belt Enchant: Personal Space Amplifier
@@ -58,7 +61,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(172911),	-- [DNT] [REUSE ME] \\ M.O.T.E. Collector
 					i(176448),	-- [DNT] [REUSE ME] \\ Soul Battery
 					i(172916),	-- [DNT] [REUSE ME] \\ Soul Extractomatic [NYI]
@@ -88,7 +91,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(198836),	-- Arclight Vital Correctors
 					i(198250),	-- Convincingly Realistic Jumper Cables+
 					i(198251),	-- Convincingly Realistic Jumper Cables++
@@ -115,19 +118,22 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.0.5
-				expansion(EXPANSION.DF, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+				expansion(EXPANSION.DF, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 					i(203382),	-- Peripheral Vision Projectors
 				})),
 			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
-				r(12719),	-- Explosive Arrow
-				r(6441),	-- Explosive Shells
-				r(12904),	-- Gnomish Ham Radio
-				r(12720),	-- Goblin "Boom" Box
-				r(12722),	-- Goblin Radio
-				r(12900),	-- Mobile Alarm
+				-- 1.x.x
+				n(P1xx, {
+					r(12719),	-- Explosive Arrow
+					r(6441),	-- Explosive Shells
+					r(12904),	-- Gnomish Ham Radio
+					r(12720),	-- Goblin "Boom" Box
+					r(12722),	-- Goblin Radio
+					r(12900),	-- Mobile Alarm
+				}),
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.0.1
@@ -217,7 +223,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					r(269205),	-- Belt Enchant: Holographic Horror Projector
 					r(269126),	-- Belt Enchant: Miniaturized Plasma Shield
 					r(269208),	-- Belt Enchant: Personal Space Amplifier
@@ -252,7 +258,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(310488),	-- Disposable Ectoplasmic Specs
 					r(310480),	-- Faerie Glider Kit
 					r(310515),	-- Hydrodynamic Accelerators \\ Phaevon Alloy
@@ -272,7 +278,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382581),	-- Opening
 					r(382352),	-- Perfectly Calibrated Lenses
 					r(382360),	-- Tinker Removal Kit

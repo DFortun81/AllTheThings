@@ -7,7 +7,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		filter(RECIPES, {
 			expansion(EXPANSION.SL, {
 				-- 9.2.0
-				expansion(EXPANSION.SL, 2.0, bubbleDown({ ["timeline"] = { CREATED_9_2_0 } }, {
+				expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 					r(365061),	-- Patient Bufonid
 					i(189455),	-- Schematic: Pale Regal Cervid
 					i(189470),	-- Schematic: Patient Bufonid

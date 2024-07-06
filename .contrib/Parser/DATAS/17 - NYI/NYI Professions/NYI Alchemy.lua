@@ -5,8 +5,11 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(ALCHEMY, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.CLASSIC, {
-				i(5632),	-- Cowardly Flight Potion
-				i(17967),	-- Refined Scale of Onyxia
+				-- 1.x.x
+				n(P1xx, {
+					i(5632),	-- Cowardly Flight Potion
+					i(17967),	-- Refined Scale of Onyxia
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
@@ -63,7 +66,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(202116),	-- Alacritous Alchemist Stone
 					i(191535),	-- Alchemical Flavor Pocket+
 					i(191536),	-- Alchemical Flavor Pocket++
@@ -78,7 +81,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDown({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(212725),	-- Fleeting Flask of Tempered Aggression+
 					i(212727),	-- Fleeting Flask of Tempered Aggression++
 					i(212728),	-- Fleeting Flask of Tempered Aggression+++
@@ -98,12 +101,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
-				r(11447),	-- Elixir of Waterwalking
-				r(22430),	-- Refined Scale of Onyxia
-				-- With SpellID attched
-				i(5641),	-- Recipe: Cowardly Flight Potion
-				i(2556),	-- Recipe: Elixir of Tongues
-				i(13500),	-- Recipe: Greater Holy Protection Potion
+				-- 1.x.x
+				n(P1xx, {
+					r(11447),	-- Elixir of Waterwalking
+					r(22430),	-- Refined Scale of Onyxia
+					-- With SpellID attched
+					i(5641),	-- Recipe: Cowardly Flight Potion
+					i(2556),	-- Recipe: Elixir of Tongues
+					i(13500),	-- Recipe: Greater Holy Protection Potion
+				}),
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.3.0
@@ -219,7 +225,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(371635),	-- Demonstration Item Recipe
 					r(370771),	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
 					r(382571),	-- Opening

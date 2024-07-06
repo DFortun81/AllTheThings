@@ -5,9 +5,9 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 	--[[
 	Maps are devided into 4 categories which are used ingame
 	0 = World - Might be available and missing from ATT currently
-	1 = [DEPRECATED] Legacy Taxi - Hiding this here in NYI, it's not possible to collect anything or enter this Map
-	2 = Taxi and Adventure - Hiding this here in NYI, it's not possible to collect anything or enter this Map
-	3 = Minimap - Hiding this here in NYI, it's not possible to collect anything or enter this Map
+	1 = [DEPRECATED] Legacy Taxi - Hiding this here in NYI, it's not possible to collect anything there or enter this Map
+	2 = Taxi and Adventure - Hiding this here in NYI, it's not possible to collect anything there or enter this Map
+	3 = Minimap - Hiding this here in NYI, it's not possible to collect anything there or enter this Map
 	]]--
 	expansion(EXPANSION.CATA, {
 		-- 4.x.x

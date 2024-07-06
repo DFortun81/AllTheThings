@@ -5,7 +5,10 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(COOKING, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.CLASSIC, {
-				i(23683),	-- Crystal Flake Throat Lozenge
+				-- 1.x.x
+				n(P1xx, {
+					i(23683),	-- Crystal Flake Throat Lozenge
+				}),
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.4.0
@@ -31,7 +34,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(172064),	-- zzOldArdenweald Zonewich
 					i(172065),	-- zzOldBastion Zonewich
 					i(172066),	-- zzOldMaldraxxus Zonewich
@@ -41,34 +44,36 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(198396),	-- Ribbed Mollusk Meat
 				})),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 					i(206188),	-- Druidic Dreamsalad
 					i(206189),	-- Fine Taladorian Cheese Platter
 					i(206187),	-- Highly Spiced Haunch
-				--	i(xxxxxx),	-- Lemon Silverleaf Tea
 					i(206192),	-- Picante Pomfruit Cake
 					i(206191),	-- Roquefort-Stuffed Peppers
 					i(206190),	-- Venrik's Goat Milk
 				})),
 
 				-- 10.2.0
-				expansion(EXPANSION.DF, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+				expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 					i(210495),	-- Slumbering Peacebloom Tea
 				})),
 			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
-				-- With SpellID attached
-				i(23690),	-- Recipe: Crystal Flake Throat Lozenge / Crystal Throat Lozenge
-				-- Without SpellID attached
-				i(16073),	-- Artisan Cookbook
-				i(6891),	-- Recipe: Herb Baked Egg
+				-- 1.x.x
+				n(P1xx, {
+					-- With SpellID attached
+					i(23690),	-- Recipe: Crystal Flake Throat Lozenge / Crystal Throat Lozenge
+					-- Without SpellID attached
+					i(16073),	-- Artisan Cookbook
+					i(6891),	-- Recipe: Herb Baked Egg
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
@@ -129,7 +134,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(308421),	-- Ardenweald Zonewich
 					r(308422),	-- Bastion Zonewich
 					r(308423),	-- Maldraxxus Zonewich
@@ -139,7 +144,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					-- Without SpellID attached
 					i(198118),	-- Recipe: Aromatic Seafood Platter (RECIPE!)
 					i(198100),	-- Recipe: Assorted Exotic Spices (RECIPE!)
@@ -166,7 +171,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 					r(412533),	-- Druidic Dreamsalad (RECIPE!)
 					r(412534),	-- Fine Taladorian Cheese Platter (RECIPE!)
 					r(412531),	-- Highly Spiced Haunch (RECIPE!)
@@ -177,7 +182,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.2.0
-				expansion(EXPANSION.DF, 2.0, sharedDataSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+				expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 					-- Without SpellID attached
 					i(210496),	-- Recipe: Slumbering Peacebloom Tea
 				})),

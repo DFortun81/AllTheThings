@@ -540,7 +540,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					-- #if AFTER 10.0.1
+					-- #if AFTER SHADOWLANDS
 					-- this quest was level locked for characters above level 56 before Shadowlands level squish
 					["lvl"] = lvlsquish(56, 56, 20),
 					-- #else
@@ -554,7 +554,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { BLACKROCK_DEPTHS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					-- #if AFTER 10.0.1
+					-- #if AFTER SHADOWLANDS
 					-- this quest was level locked for characters above level 56 before Shadowlands level squish
 					["lvl"] = lvlsquish(56, 56, 20),
 					-- #else

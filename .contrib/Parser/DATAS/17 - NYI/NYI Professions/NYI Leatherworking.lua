@@ -5,12 +5,15 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(LEATHERWORKING, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.CLASSIC, {
-				i(8195),	-- Nightscape Cloak
-				i(15141),	-- Onyxia Scale Breastplate
+				-- 1.x.x
+				n(P1xx, {
+					i(8195),	-- Nightscape Cloak
+					i(15141),	-- Onyxia Scale Breastplate
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, 0.2, bubbleDown({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 					i(41264),	-- Deflecting Bracers
 					i(39710),	-- Verdant Tundra Belt
 					i(39709),	-- Verdant Tundra Boots
@@ -61,7 +64,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					i(161974),	-- Honorable Combatant's Cestus [A]
 					i(159895),	-- Honorable Combatant's Cestus [H]
 					i(161973),	-- Honorable Combatant's Striker [A]
@@ -70,7 +73,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(172342),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 05
 					i(172343),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 06
 					i(172344),	-- [DNT] REUSE ME \\ Leatherworking - Modified Crafting Reagent 07
@@ -144,7 +147,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(193475),	-- Masterwork Riding Crop
 					i(193495),	-- Savage Bow
 				})),
@@ -152,17 +155,20 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
-				-- With SpellID attached
-				i(8388),	-- Pattern: Nightscape Cloak
-				i(15780),	-- Pattern: Onyxia Scale Breastplate
-				-- Without SpellID attached
-				i(22698),	-- Pattern: Icy Scale Bracers
-				i(22696),	-- Pattern: Icy Scale Breastplate
-				i(22697),	-- Pattern: Icy Scale Gauntlets
-				i(4997),	-- Deprecated Recipe: Kodo Skin Bag
-				i(22695),	-- Pattern: Polar Bracers
-				i(22694),	-- Pattern: Polar Gloves
-				i(22692),	-- Pattern: Polar Tunic
+				-- 1.x.x
+				n(P1xx, {
+					-- With SpellID attached
+					i(8388),	-- Pattern: Nightscape Cloak
+					i(15780),	-- Pattern: Onyxia Scale Breastplate
+					-- Without SpellID attached
+					i(22698),	-- Pattern: Icy Scale Bracers
+					i(22696),	-- Pattern: Icy Scale Breastplate
+					i(22697),	-- Pattern: Icy Scale Gauntlets
+					i(4997),	-- Deprecated Recipe: Kodo Skin Bag
+					i(22695),	-- Pattern: Polar Bracers
+					i(22694),	-- Pattern: Polar Gloves
+					i(22692),	-- Pattern: Polar Tunic
+				}),
 			}),
 			-- #if ANYCLASSIC
 			expansion(EXPANSION.TBC, {
@@ -300,7 +306,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					r(269549),	-- Honorable Combatant's Cestus [Rank 1]
 					r(269546),	-- Honorable Combatant's Striker [Rank 1]
 					-- With SpellID attached
@@ -322,7 +328,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, 0.1, bubbleDown({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(338261),	-- Almost Thing (RECIPE!)
 					r(309293),	-- Bonerivetted Armguards (RECIPE!)
 					r(309288),	-- Bonerivetted Gauntlets (RECIPE!)
@@ -393,7 +399,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(375175),	-- Deathchill Hide (RECIPE!)
 					r(375177),	-- Drygrate Scales (RECIPE!)
 					r(375170),	-- Masterwork Riding Crop (RECIPE!)

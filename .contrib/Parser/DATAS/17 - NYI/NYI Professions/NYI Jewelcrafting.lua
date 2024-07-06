@@ -6,7 +6,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.TBC, {
 				-- 2.1.3
-				expansion(EXPANSION.TBC, 1.3, bubbleDown({ ["timeline"] = { CREATED_2_1_3 } }, {
+				expansion(EXPANSION.TBC, 1.3, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_3 } }, {
 					i(21793),	-- Arcanite Sword Pendant
 					i(21780),	-- Blood Crown
 					i(20956),	-- Silver Rose Pendant
@@ -14,7 +14,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.1
-				expansion(EXPANSION.CATA, 0.1, bubbleDown({ ["timeline"] = { CREATED_4_0_1 } }, {
+				expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
 					i(52107),	-- Resolute Hessonite
 					i(52150),	-- Perfect Resolute Hessonite
 					i(52092),	-- Mystic Alicite
@@ -23,7 +23,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.2.0
-				expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { CREATED_5_2_0 } }, {
+				expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
 					i(93597),	-- Crafted Dreadful Gladiator's Fleshslicer
 					i(93599),	-- Crafted Dreadful Gladiator's Slasher
 				})),
@@ -52,7 +52,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(191629),	-- 10.0 Jewelcrafting Gem Template (DNT)
 					i(193034),	-- Ludicrously Luxurious Lucky Loop
 					i(194112),	-- Straddling Illimited Diamond
@@ -101,7 +101,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, sharedDataSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382584),	-- Opening (RECIPE!)
 					r(391784),	-- Wisp of Tyr (RECIPE!)
 					-- With SpellID attached
@@ -161,13 +161,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.0.7
-				expansion(EXPANSION.DF, 0.7, sharedDataSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+				expansion(EXPANSION.DF, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 					-- With SpellID attached
 					i(204218),	-- Design: Primordial Pulverizing (RECIPE!)
 				})),
 
 				-- 10.1.5
-				expansion(EXPANSION.DF, 1.5, sharedDataSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+				expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 					r(412557),	-- TEST CRUSHING (DNT) (RECIPE!)
 				})),
 			}),
@@ -177,24 +177,24 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(JEWELCRAFTING, {
 		expansion(EXPANSION.TBC, {
 			-- 2.1.0
-			expansion(EXPANSION.TBC, 1.0, bubbleDownSelf({ ["timeline"] = {CREATED_2_1_0} }, {
+			expansion(EXPANSION.TBC, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_0 } }, {
 				i(32412),	-- Design: Relentless Earthstorm Diamond
 			})),
 
 			-- 2.1.3
-			expansion(EXPANSION.TBC, 1.3, bubbleDownSelf({ ["timeline"] = {CREATED_2_1_3} }, {
+			expansion(EXPANSION.TBC, 1.3, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_3 } }, {
 				i(21958),	-- Design: Arcanite Sword Pendant
 				i(21959),	-- Design: Blood Crown
 				i(25888),	-- Primal Stone Statue
 			})),
 
 			-- 2.3.0
-			expansion(EXPANSION.TBC, 3.0, bubbleDownSelf({ ["timeline"] = {CREATED_2_3_0} }, {
+			expansion(EXPANSION.TBC, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_3_0 } }, {
 				i(34221),	-- Design: Chaotic Skyfire Diamond
 			})),
 
 			-- 2.4.0
-			expansion(EXPANSION.TBC, 4.0, bubbleDownSelf({ ["timeline"] = {CREATED_2_4_0} }, {
+			expansion(EXPANSION.TBC, 4.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_4_0 } }, {
 				i(35533),	-- Design: Amulet of Flowing Life
 				i(35534),	-- Hard Khorium Band
 				i(35535),	-- Hard Khorium Choker
@@ -209,14 +209,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		expansion(EXPANSION.CATA, {
 			-- 4.0.1
-			expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_4_0_1} }, {
+			expansion(EXPANSION.CATA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_1 } }, {
 				r(73259),	-- Resolute Hessonite
 				r(73233),	-- Mystic Alicite
 			})),
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.1
-			expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_6_0_2} }, {
+			expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 				i(116080),	-- Design: Greater Taladite Amplifier
 			})),
 		}),

@@ -5,17 +5,23 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(FIRST_AID, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.CLASSIC, {
-				i(23684),	-- Crystal Infused Bandage
-				i(8546),	-- Powerful Smelling Salts
+				-- 1.x.x
+				n(P1xx, {
+					i(23684),	-- Crystal Infused Bandage
+					i(8546),	-- Powerful Smelling Salts
+				}),
 			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
-				-- With SpellID attached
-				i(8547),	-- Formula: Powerful Smelling Salts (RECIPE!)
-				i(23689),	-- Manual: Crystal Infused Bandage (RECIPE!)
-				-- Without SpellID attached
-				i(16085),	-- Artisan First Aid - Heal Thyself
+				-- 1.x.x
+				n(P1xx, {
+					-- With SpellID attached
+					i(8547),	-- Formula: Powerful Smelling Salts (RECIPE!)
+					i(23689),	-- Manual: Crystal Infused Bandage (RECIPE!)
+					-- Without SpellID attached
+					i(16085),	-- Artisan First Aid - Heal Thyself
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2

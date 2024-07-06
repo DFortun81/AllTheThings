@@ -7,7 +7,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		filter(RECIPES, {
 			expansion(EXPANSION.DF, {
 				-- 10.2.0
-				expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+				expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 					r(424899),	-- Islefin Dorado Shipment
 					r(424881),	-- Hide Shipment
 					r(424529),	-- Hochenblume Shipment

@@ -5,16 +5,19 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(BLACKSMITHING, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.CLASSIC, {
-				i(12795),	-- Blood Talon
-				i(12772),	-- Inlaid Thorium Hammer
-				i(6730),	-- Ironforge Chain
-				i(6733),	-- Ironforge Gauntlets
-				i(7925),	-- Mithril Scale Gloves
-				i(2867),	-- Rough Bronze Bracers
-				i(12779),	-- Rune Edge
-				i(12764),	-- Thorium Greatsword
-				i(5517),	-- Tiny Bronze Key
-				i(5518),	-- Tiny Iron Key
+				-- 1.x.x
+				n(P1xx, {
+					i(12795),	-- Blood Talon
+					i(12772),	-- Inlaid Thorium Hammer
+					i(6730),	-- Ironforge Chain
+					i(6733),	-- Ironforge Gauntlets
+					i(7925),	-- Mithril Scale Gloves
+					i(2867),	-- Rough Bronze Bracers
+					i(12779),	-- Rune Edge
+					i(12764),	-- Thorium Greatsword
+					i(5517),	-- Tiny Bronze Key
+					i(5518),	-- Tiny Iron Key
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
@@ -345,7 +348,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(191070),	-- Blacksmithing Gloves
 					i(191025),	-- Blacksmith Hammer - DO NOT USE
 					i(191033),	-- Blacksmith Hammer 2 - DO NOT USE
@@ -361,13 +364,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.0.2
-				expansion(EXPANSION.DF, 0.2, bubbleDown({ ["timeline"] = { CREATED_10_0_2 } }, {
+				expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 					i(191882),	-- Serevite Repair Hammer
 					i(191883),	-- Serevite Repair Hammer
 				})),
 
 				-- 10.1.0
-				expansion(EXPANSION.DF, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+				expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 					i(205040),	-- Shadowed Belt Buckle
 					i(205041),	-- Shadowed Belt Buckle
 					i(205042),	-- Shadowed Belt Buckle
@@ -378,7 +381,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDown({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(222057), -- Artisan Blacksmith's Hammer
 					i(222058), -- Artisan Blacksmith's Toolbox
 					i(222055), -- Artisan Leatherworker's Knife
@@ -516,27 +519,30 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
-				r(6470),	-- Tiny Bronze Key
-				r(6471),	-- Tiny Iron Key
-				-- With SpellID attched
-				i(12831),	-- Plans: Blood Talon
-				i(12818),	-- Plans: Inlaid Thorium Hammer
-				i(6734),	-- Plans: Ironforge Chain
-				i(6736),	-- Plans: Ironforge Gauntlets
-				i(7977),	-- Plans: Mithril Scale Gloves
-				i(5577),	-- Plans: Rough Bronze Bracers
-				i(12826),	-- Plans: Rune Edge
-				i(12816),	-- Plans: Thorium Greatsword
-				-- Without SpellID attached
-				i(12817),	-- Plans: Bleakwood Hew
-				i(12832),	-- Plans: Darkspear
-				i(22705),	-- Plans: Icebane Bracers
-				i(22703),	-- Plans: Icebane Breastplate
-				i(22704),	-- Plans: Icebane Gauntlets
-				i(7994),	-- Plans: Orcish War Leggings
-				i(7988),	-- Plans: Ornate Mithril Boots
-				i(7986),	-- Plans: Ornate Mithril Breastplate
-				i(7987),	-- Plans: Ornate Mithril Helm
+				-- 1.x.x
+				n(P1xx, {
+					r(6470),	-- Tiny Bronze Key
+					r(6471),	-- Tiny Iron Key
+					-- With SpellID attched
+					i(12831),	-- Plans: Blood Talon
+					i(12818),	-- Plans: Inlaid Thorium Hammer
+					i(6734),	-- Plans: Ironforge Chain
+					i(6736),	-- Plans: Ironforge Gauntlets
+					i(7977),	-- Plans: Mithril Scale Gloves
+					i(5577),	-- Plans: Rough Bronze Bracers
+					i(12826),	-- Plans: Rune Edge
+					i(12816),	-- Plans: Thorium Greatsword
+					-- Without SpellID attached
+					i(12817),	-- Plans: Bleakwood Hew
+					i(12832),	-- Plans: Darkspear
+					i(22705),	-- Plans: Icebane Bracers
+					i(22703),	-- Plans: Icebane Breastplate
+					i(22704),	-- Plans: Icebane Gauntlets
+					i(7994),	-- Plans: Orcish War Leggings
+					i(7988),	-- Plans: Ornate Mithril Boots
+					i(7986),	-- Plans: Ornate Mithril Breastplate
+					i(7987),	-- Plans: Ornate Mithril Helm
+				}),
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.1.0
@@ -856,7 +862,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(371396),	-- Draconium Repair Hammer
 					r(382579),	-- Opening
 					r(376698),	-- Wisp of Tyr
@@ -889,7 +895,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDown({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(223026), -- Plans: Artisan Leatherworker's Knife
 					i(223027), -- Plans: Artisan Leatherworker's Toolset
 					i(223025), -- Plans: Artisan Needle Set

@@ -6,15 +6,18 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(198439),	-- Aged Recipe in a Bottle
 				})),
 			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
-				-- Without SpellID attached
-				i(16082),	-- Artisan Fishing - The Way of the Lure
+				-- 1.x.x
+				n(P1xx, {
+					-- Without SpellID attached
+					i(16082),	-- Artisan Fishing - The Way of the Lure
+				}),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.1.0

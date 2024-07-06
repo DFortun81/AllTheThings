@@ -54,7 +54,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(191422),	-- Crystal Magical Lockpick
 					i(198483),	-- jrz 10.0 enchanting test [DNT]
 					i(198677),	-- jrz test vellum quality 1 [DNT]
@@ -65,21 +65,24 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
-				r(7864),	-- Enchant Boots - Minor Stamina
-				r(7769),	-- CLASSIC: Imbue Bracers - Minor Wisdom OLD
-				r(7855),	-- CLASSIC: Imbue Chest - Absorb
-				r(7853),	-- CLASSIC: Imbue Chest - Lesser Spirit
-				r(7448),	-- CLASSIC: Imbue Chest - Lesser Absorb
-				r(7865),	-- CLASSIC: Imbue Cloak - Lesser Protection
-				r(7439),	-- CLASSIC: Imbue Cloak - Minor Resistance
-				r(7434),	-- CLASSIC: Imbue Weapon - Beastslayer
-				r(22434),	-- Charged Scale of Onyxia
-				-- With SpellID attached
-				i(6376),	-- Formula: Enchant Boots - Minor Stamina
-				i(6343),	-- Formula: Imbue Chest - Minor Spirit
-				-- Without SpellID attached
-				i(6222),	-- Formula: Imbue Chest - Minor Spirit
-				i(6345),	-- Formula: Imbue Cloak - Protection
+				-- 1.x.x
+				n(P1xx, {
+					r(7864),	-- Enchant Boots - Minor Stamina
+					r(7769),	-- CLASSIC: Imbue Bracers - Minor Wisdom OLD
+					r(7855),	-- CLASSIC: Imbue Chest - Absorb
+					r(7853),	-- CLASSIC: Imbue Chest - Lesser Spirit
+					r(7448),	-- CLASSIC: Imbue Chest - Lesser Absorb
+					r(7865),	-- CLASSIC: Imbue Cloak - Lesser Protection
+					r(7439),	-- CLASSIC: Imbue Cloak - Minor Resistance
+					r(7434),	-- CLASSIC: Imbue Weapon - Beastslayer
+					r(22434),	-- Charged Scale of Onyxia
+					-- With SpellID attached
+					i(6376),	-- Formula: Enchant Boots - Minor Stamina
+					i(6343),	-- Formula: Imbue Chest - Minor Spirit
+					-- Without SpellID attached
+					i(6222),	-- Formula: Imbue Chest - Minor Spirit
+					i(6345),	-- Formula: Imbue Cloak - Protection
+				}),
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.0.1
@@ -126,7 +129,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				expansion(EXPANSION.WRATH, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_3_2_0 } }, {
 					i(37335),	-- Formula: Enchant Cloak - Superior Agility
 				})),
-
 
 				-- 3.2.2
 				expansion(EXPANSION.WRATH, 2.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_2_2 } }, {
@@ -258,7 +260,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382580),	-- Opening
 					r(391200),	-- Wisp of Tyr
 					r(383736),	-- Unknown
@@ -267,7 +269,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.2.6
-				expansion(EXPANSION.DF, 2.6, bubbleDown({ ["timeline"] = { CREATED_10_2_6 } }, {
+				expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
 					-- Without SpellID attached
 					i(211525),	-- Formula: Enchanted Aspect's Awakened Crest
 					i(211526),	-- Formula: Enchanted Whelpling's Awakened Crest

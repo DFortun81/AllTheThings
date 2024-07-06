@@ -7,14 +7,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.MOP, {
 				-- 5.2.0
-				expansion(EXPANSION.MOP, 2.0, bubbleDown({ ["timeline"] = { CREATED_5_2_0 } }, {
+				expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
 					i(93440),	-- Crafted Dreadful Gladiator's Endgame
 					i(93450),	-- Crafted Dreadful Gladiator's Reprieve
 				})),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					i(161937),	-- Honorable Combatant's Inked Vessel [A]
 					i(159941),	-- Honorable Combatant's Inked Vessel [H]
 					i(161935),	-- Inked Vessel of Robust Regeneration [A]
@@ -39,7 +39,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(194843),	-- Explorer's Barding Manuscript
 					i(192464),	-- Darkmoon Deck: Ysera
 					i(191783),	-- Draconic Treatise on Blacksmithing
@@ -49,7 +49,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDown({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(222241),	-- Ace of Evolution
 					i(222223),	-- Ace of Shining
 					i(222214),	-- Ace of Symbiosis
@@ -365,7 +365,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		filter(RECIPES, {
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, 0.1, bubbleDown({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					r(269744),	-- Honorable Combatant's Inked Vessel [Rank 1]
 					r(256250),	-- Inked Vessel of Robust Regeneration [Rank 1]
 					r(256251),	-- Inked Vessel of Robust Regeneration [Rank 2]
@@ -378,7 +378,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 8.2.0
-				expansion(EXPANSION.BFA, 2.0, bubbleDown({ ["timeline"] = { CREATED_8_2_0 } }, {
+				expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 					r(299666),	-- Contract: Ankoan [Rank 2]
 					r(299667),	-- Contract: Ankoan [Rank 3]
 					r(299669),	-- Contract: Unshackled [Rank 2]
@@ -407,7 +407,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382583),	-- Opening
 					r(391783),	-- Wisp of Tyr
 					r(388458),	-- Unknown
@@ -480,7 +480,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDown({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					-- With SpellID attached
 					i(223072),	-- Technique: Colors of the Wind [DEPRECATED] (RECIPE!)
 					i(223059),	-- Technique: Lexicon of Mysteries (RECIPE!)

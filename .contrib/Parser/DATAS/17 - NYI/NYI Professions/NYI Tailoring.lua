@@ -5,18 +5,21 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(TAILORING, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.CLASSIC, {
-				i(7027),	-- Boots of Darkness
-				i(6243),	-- Green Woolen Robe
-				i(10039),	-- Stormcloth Boots
-				i(10011),	-- Stormcloth Gloves
-				i(10032),	-- Stormcloth Headband
-				i(10010),	-- Stormcloth Pants
-				i(10038),	-- Stormcloth Shoulders
-				i(10020),	-- Stormcloth Vest
+				-- 1.x.x
+				n(P1xx, {
+					i(7027),	-- Boots of Darkness
+					i(6243),	-- Green Woolen Robe
+					i(10039),	-- Stormcloth Boots
+					i(10011),	-- Stormcloth Gloves
+					i(10032),	-- Stormcloth Headband
+					i(10010),	-- Stormcloth Pants
+					i(10038),	-- Stormcloth Shoulders
+					i(10020),	-- Stormcloth Vest
+				}),
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.1.3
-				expansion(EXPANSION.TBC, 1.3, bubbleDown({ ["timeline"] = { CREATED_2_1_3 } }, {
+				expansion(EXPANSION.TBC, 1.3, bubbleDownSelf({ ["timeline"] = { CREATED_2_1_3 } }, {
 					i(30464),	-- Lifeblood Bracers
 					i(30463),	-- Lifeblood Belt
 					i(30465),	-- Lifeblood Leggings
@@ -91,14 +94,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(193531),	-- Blue Dragon Rider's Robe
 					i(193535),	-- Bronze Dragon Rider's Wraps
 					i(194051),	-- Wildercloth Weapon Upholstery
 				})),
 
 				-- 10.1.0
-				expansion(EXPANSION.DF, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+				expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 					i(205034),	-- Enormous Ball of Yarn (TOY!)
 					i(205027),	-- Explorer's Banner (TOY!)
 					i(205028),	-- Explorer's Banner of Comradery++
@@ -110,7 +113,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDown({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(221575),	-- Adaptive Delver's Shawl
 					i(221663),	-- Adaptive Delver's Shawl
 					i(222813),	-- Adaptive Delver's Shawl
@@ -436,7 +439,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382588);	-- Opening
 					r(376697),	-- Pattern: Wisp of Tyr
 					-- With SpellID attached
@@ -448,7 +451,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.1.0
-				expansion(EXPANSION.DF, 1.0, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+				expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 					r(408316),	-- Spore-Infused Combat Bandage
 					-- With SpellID attached
 					i(205141),	-- Pattern: Explorer's Banner (RECIPE!)
@@ -457,7 +460,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDown({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					r(446936),	-- Adaptive Delver's Shawl
 					r(446980),	-- Satchel of the Long Day
 					r(446981),	-- Satchel of the Long Night
@@ -480,6 +483,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	-- Needs Sorting
 	prof(TAILORING, {
 		expansion(EXPANSION.CLASSIC, {
+			-- Add patch header
 			i(7093),	-- Pattern: Boots of Darkness
 			r(8778),	-- Boots of Darkness
 			i(6273),	-- Pattern: Green Woolen Robe
@@ -499,6 +503,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			i(21369),	-- Pattern: Felcloth Bag
 		}),
 		expansion(EXPANSION.TBC, {
+			-- Add patch header
 			i(24315),	-- Pattern: Heavy Netherweave Net
 			i(29120),	-- Pattern: Truefaith Vestments
 			i(30474),	-- Pattern: Lifeblood Bracers
@@ -515,6 +520,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			r(36665),	-- Netherflame Robe
 		}),
 		expansion(EXPANSION.WRATH, {
+			-- Add patch header
 			i(42196),	-- Pattern: Aurora Slippers
 			i(42190),	-- Pattern: Deathchill Cloak
 			i(42180),	-- Pattern: Ebonweave
@@ -537,7 +543,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.1
-			expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_6_0_2} }, {
+			expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 				i(114867),	-- Pattern: Miniature Flying Carpet - NYI
 				r(168851),	-- Miniature Flying Carpet
 				i(114872),	-- Pattern: Greater Hexweave Essence
@@ -548,14 +554,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {CREATED_7_0_3} }, {
+			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 				i(137981),	-- Pattern: Silkweave Cloak
 				i(151746),	-- Pattern: Lightweave Breeches
 			})),
 		}),
 		expansion(EXPANSION.BFA, {
 			-- 8.0.1
-			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_8_0_1} }, {
+			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 				i(162424),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
 				i(162770),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
 				i(162426),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
@@ -566,7 +572,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		}),
 		expansion(EXPANSION.SL, {
 			-- 9.0.1
-			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_9_0_1} }, {
+			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 				i(183871),	-- [DNT][REUSE ME] Pattern: Crafter's Mark III
 			})),
 		}),

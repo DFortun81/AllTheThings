@@ -188,7 +188,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215892),	-- Staff of the Black Ox
 					i(216571),	-- Tian Deflector
 					i(215959),	-- Tian Monastery Sword (drop)
-					i(215675),	-- Wakener's Lantern (quest cache)
 					i(215514),	-- Wallwatcher's Longaxe
 					--i(215804),	-- Wallwatcher's Partisan (drop, not on wowhead)
 					i(215510),	-- Warbringer's Chopper

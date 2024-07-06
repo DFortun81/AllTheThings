@@ -232,7 +232,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 		})),
 
 		-- 2.x.x
-		n(P2xx, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_1 } }, {
+		n(P2xx, {
 			mount(44317, {	-- Merciless Nether Drake (MOUNT!)
 				["displayID"] = 20344,
 			}),
@@ -247,7 +247,7 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(27853, {	-- Crazy Raptor 150 (MOUNT!)
 				["displayID"] = 15289,
 			}),
-		})),
+		}),
 	}),
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.2

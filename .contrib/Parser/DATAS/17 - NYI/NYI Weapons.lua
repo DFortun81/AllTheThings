@@ -52,7 +52,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		-- #if AFTER 10.0.1
 		filter(PROFESSION_EQUIPMENT, {
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
@@ -60,7 +59,6 @@ root(ROOTS.NeverImplemented, {
 				}),
 			}),
 		}),
-		-- #endif
 		filter(FIST_WEAPONS, {
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
