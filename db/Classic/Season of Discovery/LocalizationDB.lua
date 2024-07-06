@@ -1540,6 +1540,7 @@ _.ObjectNames = {
 	[441113] = "Ogre Magi Text",
 	[441114] = "Mysterious Box",
 	[441119] = "Unhatched Green Dragon Egg",
+	[441848] = "Small Burrow",
 	[100000000] = "Archaeologist's Cart",
 	[100000001] = "Unlit Torch",
 }
@@ -2579,6 +2580,7 @@ _.ObjectModels = {
 	[441113] = 198021,
 	[441114] = 196976,
 	[441119] = 200964,
+	[441848] = 189528,
 	[100000001] = 201129,
 }
 
@@ -3355,6 +3357,7 @@ localize(_.ObjectNames, {
 	[441113] = "Ogermagiertext",
 	[441114] = "Geheimnisvolle Kiste",
 	[441119] = "Ungeschlüpftes grünes Drachenei",
+	[441848] = "Kleiner Bau",
 	[100000001] = "Nicht angezündete Fackel",
 });
 end
@@ -4089,6 +4092,7 @@ localize(_.ObjectNames, {
 	[424075] = "Baliza de cuadrangulación 002",
 	[439557] = "Musgo de la Pesadilla",
 	[439558] = "Depósito de hierro frío",
+	[441848] = "Madriguera pequeña",
 	[100000001] = "Antorcha apagada",
 });
 end
@@ -4872,6 +4876,7 @@ localize(_.ObjectNames, {
 	[441113] = "Texte de l’ogre magi",
 	[441114] = "Boîte mystérieuse",
 	[441119] = "Œuf de dragon vert non-éclos",
+	[441848] = "Petit terrier",
 	[100000001] = "Torche éteinte",
 });
 end
@@ -7403,6 +7408,7 @@ localize(_.ObjectNames, {
 	[414663] = "Идол Пронзающего Копья",
 	[415614] = "Таинственные формулы",
 	[424075] = "Квадрангуляционный маяк 002",
+	[441848] = "Маленькая яма",
 	[100000001] = "Незажженный факел",
 });
 end
@@ -8053,6 +8059,7 @@ localize(_.ObjectNames, {
 	[424075] = "四边定位信标002",
 	[424076] = "四边定位信标003",
 	[424077] = "四边定位信标004",
+	[441848] = "小地洞",
 	[100000001] = "未点燃的火把",
 });
 end

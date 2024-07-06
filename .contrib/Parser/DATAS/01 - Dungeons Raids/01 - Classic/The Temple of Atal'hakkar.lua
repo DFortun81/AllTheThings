@@ -1,6 +1,17 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- #if SEASON_OF_DISCOVERY
+-- Item Database of drops in the Sunken Temple raid.
+local Items = ItemDBConditional;
+local SetItemFilter = function(itemID, f)
+	if not f then error("ERROR: Missing 'f' for item " .. itemID); end
+	local item = { ["b"] = 1, ["f"] = f };
+	Items[itemID] = item;
+	return item;
+end
+SetItemFilter(220689, CLOTH);	-- Void-Powered Vambraces
+-- #endif
 ATALAI_DEFENDERS = createHeader({
 	readable = "Atal'ai Defenders",
 	icon = "Interface\\Icons\\Inv_misc_head_troll_01",
@@ -50,6 +61,108 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lvl"] = 45,
 		["groups"] = {
 			n(QUESTS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(82021, {	-- A Fortuitous Turn of Events
+					["qg"] = 222188,	-- Shadowy Figure
+					["sourceQuest"] = 82020,	-- Return to Moonglade
+					["coord"] = { 52.0, 40.6, MOONGLADE },
+					["lvl"] = 50,
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(82017, {	-- An Amalagamation of Nightmares
+					["providers"] = {
+						{ "n", 222198 },	-- Nightmare Amalgamation
+						{ "n", 221477 },	-- Field Captain Hannalah
+					},
+					["coords"] = {
+						{ 88.6, 68.2, ASHENVALE },
+						{ 89.6, 40.6, ASHENVALE },
+					},
+					["description"] = "You need a debuff from the Nightmare Amalgam for the Field Captain to offer this quest. (do not engage it, just run away)",
+					["maps"] = { MOONGLADE },
+					["lvl"] = 40,
+					["groups"] = {
+						objective(1, {	-- Seek out Loganaar in Moonglade
+							["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
+							["coord"] = { 52.4, 40.4, MOONGLADE },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(82018, {	-- Itharius
+					["qg"] = 12042,	-- Loganaar <Druid Trainer>
+					["sourceQuest"] = 82017,	-- An Amalagamation of Nightmares
+					["coord"] = { 52.4, 40.4, MOONGLADE },
+					["maps"] = { SWAMP_OF_SORROWS },
+					["lvl"] = 40,
+					["groups"] = {
+						objective(1, {	-- Seek out Itharius in the Swamp of Sorrows
+							["provider"] = { "n", 5353 },	-- Itharius
+							["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(82019, {	-- Going Under
+					["qg"] = 5353,	-- Itharius
+					["sourceQuest"] = 82018,	-- Itharius
+					["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
+					["lvl"] = 40,
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(82020, {	-- Return to Moonglade
+					["qg"] = 5353,	-- Itharius
+					["sourceQuest"] = 82019,	-- Going Under
+					["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
+					["maps"] = { MOONGLADE },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- Seek out Loganaar in Moonglade
+							["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
+							["coord"] = { 52.4, 40.4, MOONGLADE },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(82022, {	-- The Bad News...
+					["qg"] = 222188,	-- Shadowy Figure
+					["sourceQuest"] = 82021,	-- A Fortuitous Turn of Events
+					["coord"] = { 52.0, 40.6, MOONGLADE },
+					["maps"] = { STRANGLETHORN_VALE },
+					["lvl"] = 50,
+					["groups"] = {
+						q(82023, {	-- The Lost Vambraces
+							["qg"] = 222444,	-- Injured Gnome <Knight of Some Renown>
+							["coord"] = { 26.8, 77.2, STRANGLETHORN_VALE },
+							["repeatable"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Decharged Void-Powered Vambraces
+									["questID"] = 82022,	-- The Bad News...
+									["providers"] = {
+										{ "i", 220964 },	-- Decharged Void-Powered Vambraces
+										{ "o", 441848 },	-- Small Burrow
+									},
+									["coord"] = { 40.8, 85.6, STRANGLETHORN_VALE },
+									["cr"] = 222451,	-- Itty Bitty Murloc
+								}),
+							},
+						}),
+						i(220689),	-- Void-Powered Vambraces
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(81986, {	-- Waking the Nightmare
+					["qg"] = 222188,	-- Shadowy Figure
+					["sourceQuest"] = 82022,	-- The Bad News...
+					["coord"] = { 52.0, 40.6, MOONGLADE },
+					["maps"] = { ASHENVALE },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Nightmare Amalgamation slain
+							["provider"] = { "n", 222198 },	-- Nightmare Amalgamation
+							["coord"] = { 88.6, 68.2, ASHENVALE },
+						}),
+						objective(2, {	-- 0/1 Mantle of Nightmares
+							["provider"] = { "i", 220570 },	-- Mantle of Nightmares
+						}),
+						i(220688),	-- Inert Mantle of Nightmares
+					},
+				})),
+				-- #endif
 				applyclassicphase(PHASE_FOUR, q(9053, {	-- A Better Ingredient
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 9051,  -- Toxic Test

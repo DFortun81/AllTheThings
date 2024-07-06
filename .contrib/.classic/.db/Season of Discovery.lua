@@ -252,6 +252,13 @@ local questShortcut = function(qg, coord, brief, lvl, id, t)
 	t.lvl = lvl;
 	return q(id, t);
 end
+local ashenvalequest = function(id, t)
+	return questShortcut(
+		221477,	-- Field Captain Hannalah
+		{ 89.6, 40.6, ASHENVALE },
+		219773,	-- Mission Brief: Ashenvale
+		37, id, t);
+end
 local duskwoodquest = function(id, t)
 	return questShortcut(
 		221471,	-- Field Captain Palandar
@@ -263,8 +270,8 @@ local OnTooltip_EMERALD_WARDENS = [[function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		addRepInfo(tooltipInfo, reputation, "Duskwood: Defeat Ylanthrius", 200, ]] .. EXALTED .. [[);
-		addRepInfo(tooltipInfo, reputation, "Duskwood: Complete Quests", 75, ]] .. EXALTED .. [[);
+		addRepInfo(tooltipInfo, reputation, "Defeat Incursion Bosses", 200, ]] .. EXALTED .. [[);
+		addRepInfo(tooltipInfo, reputation, "Complete Quests", 75, ]] .. EXALTED .. [[);
 	end
 end]];
 
@@ -1106,7 +1113,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 		n(FACTIONS, {
 			faction(2641, {	-- Emerald Wardens
 				["OnTooltip"] = OnTooltip_EMERALD_WARDENS,
-				["maps"] = { ASHENVALE, DUSKWOOD, FERALAS, THE_HINTERLANDS },
+				["maps"] = { ASHENVALE, DUSKWOOD, FERALAS, TEMPLE_OF_ATALHAKKAR, THE_HINTERLANDS },
 			}),
 		}),
 		n(QUESTS, {
@@ -1372,6 +1379,31 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						["provider"] = { "n", 221216 },	-- Elenora Marshwalker
 						["coord"] = { 32.39, 69.48, DUSKWOOD },
 					}),
+				},
+			}),
+			q(81716, {	-- Recover Incursion Field Report: Duskwood
+				["qg"] = 221471,	-- Field Captain Palandar
+				["coord"] = { 45.6, 51.2, DUSKWOOD },
+				["lvl"] = 23,
+				["groups"] = {
+					objective(1, {	-- 0/1 Charla's Field Report
+						["provider"] = { "i", 219759 },	-- Charla's Field Report
+						["coord"] = { 47.0, 36.0, DUSKWOOD },
+						["cr"] = 221472,	-- Scout Charla
+					}),
+					objective(2, {	-- 0/12 Firestarter Imp slain
+						["provider"] = { "n", 221226 },	-- Firestarter Imp
+						["coord"] = { 47.6, 40.0, DUSKWOOD },
+					}),
+					objective(3, {	-- 0/4 Duskblaze Shadowstalker slain
+						["provider"] = { "n", 221223 },	-- Duskblaze Shadowstalker
+						["coord"] = { 46.6, 42.2, DUSKWOOD },
+					}),
+					objective(4, {	-- 0/4 Nightmare Hound slain
+						["provider"] = { "n", 221227 },	-- Nightmare Hound
+						["coord"] = { 44.8, 40.8, DUSKWOOD },
+					}),
+					i(219526),	-- Mission Brief: Duskwood
 				},
 			}),
 		}),
