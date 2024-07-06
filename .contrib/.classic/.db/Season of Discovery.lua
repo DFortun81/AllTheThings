@@ -1156,6 +1156,13 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(431669)),	-- Engrave Bracers - Surge of Light
 			applyclassicphase(SOD_PHASE_THREE, recipe(431705)),	-- Engrave Bracers - Void Zone
 			applyclassicphase(SOD_PHASE_THREE, recipe(431650)),	-- Engrave Helm - Divine Aegis
+			applyclassicphase(SOD_PHASE_THREE, recipe(402864)),	-- Engrave Helm - Eye of the Void
+			applyclassicphase(SOD_PHASE_THREE, recipe(415991)),	-- Engrave Helm - Pain and Suffering
+			
+			-- Phase 4
+			applyclassicphase(SOD_PHASE_FOUR, recipe(402853)),	-- Engrave Cloak - Binding Heal
+			applyclassicphase(SOD_PHASE_FOUR, recipe(402850)),	-- Engrave Cloak - Soul Warding
+			applyclassicphase(SOD_PHASE_FOUR, recipe(402857)),	-- Engrave Cloak - Vampiric Touch
 		}),
 		classHeader(ROGUE, {
 			-- Phase 1
