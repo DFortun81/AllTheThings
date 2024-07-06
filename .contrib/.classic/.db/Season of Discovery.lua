@@ -1021,7 +1021,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 		classHeader(HUNTER, {
 			-- Phase 1
 			recipe(425759),	-- Engrave Chest - Cobra Strikes
-			recipe(410115),	-- Engrave Chest - Heart of the Lion
+			recipe(410115),	-- Engrave Chest - Heart of the Lion / Cobra Slayer
 			recipe(410122),	-- Engrave Chest - Lone Wolf
 			recipe(410113),	-- Engrave Chest - Master Marksman
 			recipe(410110),	-- Engrave Gloves - Beast Mastery
@@ -1029,7 +1029,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			recipe(410121),	-- Engrave Gloves - Chimera Shot
 			recipe(410123),	-- Engrave Gloves - Explosive Shot
 			recipe(425762),	-- Engrave Pants - Flanking Strike
-			recipe(410111),	-- Engrave Pants - Kill Command
+			recipe(410111),	-- Engrave Pants - Kill Command / Kill Shot
 			recipe(425760),	-- Engrave Pants - Serpent Spread
 			recipe(416091),	-- Engrave Pants - Sniper Training
 			
@@ -1038,7 +1038,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_TWO, recipe(416086)),	-- Engrave Belt - Melee Specialist
 			applyclassicphase(SOD_PHASE_TWO, recipe(410109)),	-- Engrave Belt - Steady Shot
 			applyclassicphase(SOD_PHASE_TWO, recipe(410116)),	-- Engrave Boots - Dual Wield Specialization
-			applyclassicphase(SOD_PHASE_TWO, recipe(416089)),	-- Engrave Boots - Invigoration
+			applyclassicphase(SOD_PHASE_TWO, recipe(416089)),	-- Engrave Boots - Invigoration / Wyvern Strike
 			applyclassicphase(SOD_PHASE_TWO, recipe(410118)),	-- Engrave Boots - Trap Launcher
 			
 			-- Phase 3
@@ -1048,6 +1048,11 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_THREE, recipe(416085)),	-- Engrave Helm - Lock and Load
 			applyclassicphase(SOD_PHASE_THREE, recipe(416083)),	-- Engrave Helm - Catlike Reflexes
 			applyclassicphase(SOD_PHASE_THREE, recipe(416090)),	-- Engrave Helm - Rapid Killing
+			
+			-- Phase 4
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440560)),	-- Engrave Cloak - Improved Volley
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440557)),	-- Engrave Cloak - Resourcefulness
+			applyclassicphase(SOD_PHASE_FOUR, recipe(440563)),	-- Engrave Cloak - Hit and Run
 		}),
 		classHeader(MAGE, {
 			-- Phase 1
