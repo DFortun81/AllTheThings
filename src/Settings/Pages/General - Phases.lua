@@ -73,7 +73,7 @@ ClassicPhasesLabel:Show();
 
 -- Classic Phases
 local last, yoffset, spacing, vspacing = ClassicPhasesLabel, -4, 8, 1;
-for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, 0, -vspacing }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, spacing, -vspacing }, { 1502, spacing }, { 1503, spacing }, { 1504, spacing }, { 16, 0, -vspacing }, { 1601, spacing, -vspacing }, { 1602, spacing }, { 1603, 0, -vspacing }, { 1604, 0, -vspacing }, { 1605, 0, -vspacing }, { 1606, spacing, -vspacing }, { 1607, spacing }, { 1608, spacing }, { 1609, spacing }, }) do
+for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, 0, -vspacing }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, spacing, -vspacing }, { 1502, spacing }, { 1503, spacing }, { 1504, spacing }, { 16, 0, -vspacing }, { 1601, spacing, -vspacing }, { 1602, spacing }, { 1603, 0, -vspacing * 2 }, { 1604, 0, -vspacing * 2 }, { 1605, 0, -vspacing * 2 }, { 1606, spacing, -vspacing }, { 1607, spacing }, { 1608, spacing }, { 1609, spacing }, { 1610, spacing }, { 1611, spacing }, { 1612, spacing }, }) do
 	local u = o[1];
 	yoffset = o[3] or 6;
 	local reason = conditions[u];

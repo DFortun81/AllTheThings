@@ -669,11 +669,13 @@ for key,value in pairs({
 		
 		-- Season of Discovery Phases
 		[1605] = {2, "|CFFAAFFAAThis was not available until Phase 1 of Season of Discovery.|r", "Season of Discovery", 11500, nil, "\n \n|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
-		[1606] = {2, "|CFFAAFFAAThis was not available until Phase 2 of Season of Discovery.|r", "SOD P2", 11501, nil, "\n \n|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
-		[1607] = {2, "|CFFAAFFAAThis was not available until Phase 3 of Season of Discovery.|r", "SOD P3", 11502, nil, "\n \n|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
-		[1608] = {2, "|CFFAAFFAAThis was not available until Phase 4 of Season of Discovery.|r", "SOD P4", 11503, nil, "\n \n|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
-		[1609] = {2, "|CFFAAFFAAThis was not available until Phase 5 of Season of Discovery.|r", "SOD P5", 11504, nil, "\n \n|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
-		[1610] = {2, "|CFFAAFFAAThis was not available until Phase 6 of Season of Discovery.|r", "SOD P6", 11505, nil, "\n \n|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
+		[1606] = {2, "|CFFAAFFAAThis was not available until Phase 2 of Season of Discovery.|r", "Phase 2", 11501, nil, "\n \n|CFFFFAAAAIf Phase 2 of Season of Discovery is active on your server, simply turn this on.|r" },
+		[1607] = {2, "|CFFAAFFAAThis was not available until Phase 3 of Season of Discovery.|r", "Phase 3", 11502, nil, "\n \n|CFFFFAAAAIf Phase 3 of Season of Discovery is active on your server, simply turn this on.|r" },
+		[1608] = {2, "|CFFAAFFAAThis was not available until Phase 4 of Season of Discovery.|r", "Phase 4", 11503, nil, "\n \n|CFFFFAAAAIf Phase 4 of Season of Discovery is active on your server, simply turn this on.|r" },
+		[1609] = {2, "|CFFAAFFAAThis was not available until Phase 5 of Season of Discovery.|r", "Phase 5", 11504, nil, "\n \n|CFFFFAAAAIf Phase 5 of Season of Discovery is active on your server, simply turn this on.|r" },
+		[1610] = {2, "|CFFAAFFAAThis was not available until Phase 6 of Season of Discovery.|r", "Phase 6", 11505, nil, "\n \n|CFFFFAAAAIf Phase 6 of Season of Discovery is active on your server, simply turn this on.|r" },
+		[1611] = {2, "|CFFAAFFAAThis was not available until Phase 7 of Season of Discovery.|r", "Phase 7", 11506, nil, "\n \n|CFFFFAAAAIf Phase 7 of Season of Discovery is active on your server, simply turn this on.|r" },
+		[1612] = {2, "|CFFAAFFAAThis was not available until Phase 8 of Season of Discovery.|r", "Phase 8", 11507, nil, "\n \n|CFFFFAAAAIf Phase 8 of Season of Discovery is active on your server, simply turn this on.|r" },
 		
 		-- TBC Classic Phases
 		[17] = {2, "|CFFAAFFAAThis was not available until Phase 1 of TBC Classic.|r", "Phase 1", 20501, 20501, "\n \n|CFFFFAAAAIncluded Karazhan, Magtheridon's Lair, and Gruul's Lair.|r" },
