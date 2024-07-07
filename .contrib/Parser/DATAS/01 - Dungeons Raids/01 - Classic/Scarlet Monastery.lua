@@ -311,11 +311,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				}),
 				n(ZONE_DROPS, {
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(215374, {	-- Ancestral Sword
+						["timeline"] = { "added 1.15.1" },
+					})),
+					-- #endif
 					i(7759),	-- Archon Chestpiece
 					i(7728),	-- Beguiler Robes
 					i(7753),	-- Bloodspiller
 					i(7729),	-- Chesterfall Musket
 					i(7730),	-- Cobalt Crusher
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(215376, {	-- Crusader's Mace
+						["timeline"] = { "added 1.15.1" },
+					})),
+					-- #endif
 					i(7752),	-- Dreamslayer
 					i(7736),	-- Fight Club
 					i(7755),	-- Flintrock Shoulders
@@ -330,10 +340,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(10328),	-- Scarlet Chestpiece
 					i(10331),	-- Scarlet Gauntlets
 					i(10333),	-- Scarlet Wristguards
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(215373, {	-- Silver Hand Training Hammer
+						["timeline"] = { "added 1.15.1" },
+					})),
+					-- #endif
 					i(5756),	-- Sliverblade
 					i(7761),	-- Steelclaw Reaver
 					i(5819),	-- Sunblaze Coif
 					i(1992),	-- Swampchill Fetish
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(215375, {	-- Tactician's Staff
+						["timeline"] = { "added 1.15.1" },
+					})),
+					-- #endif
 					i(8225),	-- Tainted Pierce
 					i(8226),	-- The Butcher
 					i(7760),	-- Warchief Kilt

@@ -2174,6 +2174,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_2_3_0 },	-- Learned at trainer
 					["cr"] = 2642,	-- Vilebranch Shadowcaster
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, i(220912, {	-- Geode Hammer
+					["provider"] = { "i", 220914 },	-- Broken Geode Hammer
+					["description"] = "Wield this hammer until it breaks, revealing the rune inside!",
+					["timeline"] = { "added 1.15.2" },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						2649,	-- Witherbark Scalper
+						2653,	-- Witherbark Sadist
+						2650,	-- Witherbark Zealot
+						2651,	-- Witherbark Hideskinner
+						2652,	-- Witherbark Venomblood
+						2654,	-- Witherbark Caller
+					},
+					["groups"] = {
+						i(220913, {	-- Rune of Demolition
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(427084),	-- Engrave Bracers - Wrecking Crew
+							},
+						}),
+					},
+				})),
+				-- #endif
 				-- #if BEFORE CATA
 				i(4589, {	-- Long Elegant Feather
 					["crs"] = {

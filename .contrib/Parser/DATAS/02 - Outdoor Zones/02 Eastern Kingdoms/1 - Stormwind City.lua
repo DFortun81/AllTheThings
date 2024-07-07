@@ -2779,7 +2779,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(81762, {	-- Some Good News
 					["qg"] = 218160,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-					--["sourceQuest"] = ,	-- 
+					["sourceQuest"] = 79970,	-- Aeonas the Vindicated
 					["coord"] = { 37.6, 31.6, STORMWIND_CITY },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,

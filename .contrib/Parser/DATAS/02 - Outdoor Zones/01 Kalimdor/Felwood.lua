@@ -2045,6 +2045,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 81885,	-- The Ritual
 					["coord"] = { 45, 52, FELWOOD },
+					["maps"] = { STORMWIND_CITY },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 44,
