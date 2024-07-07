@@ -326,70 +326,55 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		ach(40762),		-- Khaz Algar Lore Hunter (automated)
 		petbattle(ach(40194, {	-- Khaz Algar Safari
 			crit(67292, {	-- Chitin Burrower
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222071 },
 			}),
 			crit(67293, {	-- Arachnoid Hatchling
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222066 },
 			}),
 			crit(67294, {	-- Fallowspark Glowfly
-				["crs"] = { 219267 },
+				["crs"] = { 222613 },
 			}),
 			crit(67295, {	-- Azure Flickerfly
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222614 },
 			}),
 			crit(67296, {	-- Vibrant Glowfly
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222615 },
 			}),
 			crit(67297, {	-- Aubergine Scootlefish
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222325 },
 			}),
 			crit(67298, {	-- Verdant Scootlefish
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222344 },
 			}),
 			crit(67299, {	-- Voidling Ooze
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222354 },
 			}),
 			crit(67300, {	-- Shadowy Oozeling
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222351 },
 			}),
 			crit(67301, {	-- Common Ploughworm
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222584 },
 			}),
 			crit(67302, {	-- Ebon Ploughworm
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222582 },
 			}),
 			crit(67303, {	-- Greenlands Chicken
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222194 },
 			}),
 			crit(67304, {	-- Arathi Chicken
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222195 },
 			}),
 			crit(67305, {	-- Meek Bloodlasher
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222875 },
 			}),
 			crit(67306, {	-- Ghostcap Menace
 				["crs"] = { 222877 },
 			}),
 			crit(67307, {	-- Winged Arachnoid
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222608 },
 			}),
 			crit(67308, {	-- Vile Bloodtick
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222421 },
 			}),
 			crit(67309, {	-- Magmashell Crawler
 				["crs"] = { 222713 },
@@ -398,12 +383,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["crs"] = { 223090 },
 			}),
 			crit(67310, {	-- Mossy Snail
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 222499 },
 			}),
-			crit(67311, {	-- Subterranean Dartwog
-				-- TODO
-				--["crs"] = { x },
+			crit(67311, {	-- Subterranean Dartswog
+				["crs"] = { 222736 },
 			}),
 			crit(67312, {	-- Troglofrog
 				["crs"] = { 222739 },
@@ -418,8 +401,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["crs"] = { 222778 },
 			}),
 			crit(67316, {	-- Umbral Amalgam
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 223136 },
 			}),
 			crit(67318, {	-- Cobalt Ramolith
 				["crs"] = { 223094 },
@@ -431,8 +413,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["crs"] = { 223092 },
 			}),
 			crit(68269, {	-- Snuffling
-				-- TODO
-				--["crs"] = { x },
+				["crs"] = { 223715 },
 			}),
 			crit(68270, {	-- Cinderhoney Emberstinger
 				["crs"] = { 223698 },
@@ -449,18 +430,48 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}},
 		}),
 		petbattle(ach(40163, {	-- Magic Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67166, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67167, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67168, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67169, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 		petbattle(ach(40164, {	-- Mechanical Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67170, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67171, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67172, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67173, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 		ach(20597, {	-- The War Within
 			crit(66989, {	-- Against the Current
@@ -492,11 +503,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}},
 		}),
 		petbattle(ach(40165, {	-- Undead Battler of Khaz Algar
-			-- TODO
-			-- crit(x, {	-- x
-			-- 	["crs"] = { x },
-			-- 	["coord"] = { x, y, map },
-			-- }),
+			crit(67174, {	-- Collector Dyna
+				["crs"] = { 223446 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67175, {	-- Friendhaver Grem
+				["crs"] = { 223444 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67176, {	-- Kyrie
+				["crs"] = { 223442 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
+			crit(67177, {	-- Ziriak
+				["crs"] = { 223443 },
+				-- TODO
+				--["coord"] = { x, y, map },
+			}),
 		})),
 	}),
 })));
