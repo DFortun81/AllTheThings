@@ -1753,6 +1753,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(19287),	-- Darkmoon Card: Heroism
 				},
 			})),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, q(82058, {	-- Darkmoon Wilds Deck
+				["providers"] = {
+					{ "i", 221272 },	-- Wilds Deck
+					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
+				},
+				-- #if AFTER 4.3.0
+				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
+				-- #else
+				["coords"] = {
+					{ 41.2, 69.8, ELWYNN_FOREST },
+					{ 36.4, 38.0, MULGORE },
+					-- #if AFTER TBC
+					{ 34.2, 34.4, TEROKKAR_FOREST },
+					-- #endif
+				},
+				-- #endif
+				["maxReputation"] = DECK_MAX_REPUTATION,
+				["repeatable"] = true,
+				["groups"] = {
+					i(221308, { ["lvl"] = 50 }),	-- Darkmoon Card: Overgrowth
+				},
+			})),
+			-- #endif
 			applyclassicphase(WRATH_PHASE_ONE, q(13311, {	-- Demons Deck
 				["providers"] = {
 					{ "i", 44158 },	-- Demons Deck
@@ -4504,6 +4528,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 19265, 1 },	-- Eight of Warlords
 				},
 			})),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, i(221272, {	-- Wilds Deck
+				["cost"] = {
+					{ "i", 221271, 1 },	-- Ace of Wilds
+					{ "i", 221273, 1 },	-- Two of Wilds
+					{ "i", 221274, 1 },	-- Three of Wilds
+					{ "i", 221275, 1 },	-- Four of Wilds
+					{ "i", 221276, 1 },	-- Five of Wilds
+					{ "i", 221277, 1 },	-- Six of Wilds
+					{ "i", 221278, 1 },	-- Seven of Wilds
+					{ "i", 221279, 1 },	-- Eight of Wilds
+				},
+			})),
+			-- #endif
 		}),
 	},
 })));

@@ -3410,6 +3410,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19263),	-- Six of Warlords
 		i(19264),	-- Seven of Warlords
 		i(19265),	-- Eight of Warlords
+		
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_THREE, i(221273)),	-- Two of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221274)),	-- Three of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221275)),	-- Four of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221276)),	-- Five of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221277)),	-- Six of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221278)),	-- Seven of Wilds
+		applyclassicphase(SOD_PHASE_THREE, i(221279)),	-- Eight of Wilds
+		-- #endif
 	})),
 	filter(TOYS, {
 		i(1973),	-- Orb of Deception (TOY!)

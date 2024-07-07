@@ -2515,6 +2515,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, n(223265, {	-- Delirious Ancient
+					["description"] = "Spawns after defeating High Interrogator Gerstahn, Houndmaster Grebmar, Ring of Law in the Dark Iron Highway.",
+					["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
+					["groups"] = {
+						i(221271),	-- Ace of Wilds
+						i(221262),	-- Wild Offering
+					},
+				})),
+				-- #endif
 				e(377, {	-- Bael'gar
 					["creatureID"] = 9016,
 					["groups"] = {

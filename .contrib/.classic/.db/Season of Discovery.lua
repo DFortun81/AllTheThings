@@ -52,6 +52,20 @@ SetItemFilter(211423, LEATHER);	-- Void-Touched Leather Gloves
 SetItemFilter(210773, MAIL);	-- Mantle of the Second War
 SetItemFilter(210794, MAIL);	-- Shifting Silver Breastplate
 
+-- DMF Trinkets
+SetItemFilter(221308, TRINKET_F);	-- Darkmoon Card: Overgrowth
+
+-- Maraudon
+SetItemFilter(223520, ONE_HANDED_SWORDS);	-- Inventor's Focal Sword
+SetItemFilter(223542, GUNS);	-- Megashot Rifle
+SetItemFilter(223545, SHIELDS);	-- Gizlock's Hypertech Buckler
+SetItemFilter(223521, CLOTH);	-- Rotgrip Mantle
+SetItemFilter(223964, DAGGERS);	-- Blade of Eternal Darkness
+SetItemFilter(223518, DAGGERS);	-- Charstone Dirk
+SetItemFilter(221780, TWO_HANDED_MACES);	-- Princess Theradras' Scepter
+SetItemFilter(223519, CLOTH);	-- Eye of Theradras
+SetItemFilter(223541, NECK_F);	-- Gemshard Heart
+
 -- Quest Items for Runes
 SetItemFilter(209420, ONE_HANDED_MACES);	-- Gillsbane
 SetItemFilter(210696, ONE_HANDED_SWORDS);	-- Rot Bane

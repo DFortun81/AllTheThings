@@ -287,6 +287,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(9243),	-- Shriveled Troll Heart
 				i(9523),	-- Troll Temper
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, n(222573, {	-- Delirious Ancient
+				["description"] = "Clear any 3 bosses to spawn this.",
+				["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
+				["groups"] = {
+					i(221271),	-- Ace of Wilds
+					i(221262),	-- Wild Offering
+				},
+			})),
+			-- #endif
 			n(10080, {	-- Sandarr Dunereaver
 				["description"] = "This is a rare that is not always present.\n\nItems listed for this NPC 'technically' can drop from other creatures in the dungeon, but are extremely rare in comparison.",
 				["groups"] = {
