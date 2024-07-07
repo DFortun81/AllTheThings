@@ -15,10 +15,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			["coord"] = { 56.4, 51.4, ISLE_OF_DORN },
 			["g"] = {
 				n(ACHIEVEMENTS, {
-					--[[ Let Myr Check These
-					ach(40860),	-- A Star of Dorn
-					ach(40859),	-- We're Here All Night
-					--]]
+					ach(40860),	-- A Star of Dorn (automated)
+					ach(40859),	-- We're Here All Night (automated)
 				}),
 				n(QUESTS, {
 					q(82781, {	-- Attention-Getter
