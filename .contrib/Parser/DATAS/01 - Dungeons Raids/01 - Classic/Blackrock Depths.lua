@@ -2401,7 +2401,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["creatureID"] = 9018,
 					["groups"] = {
 						i(11140),	-- Prison Cell Key
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_THREE, i(223539)),	-- Enthralled Sphere
+						i(11625, {	-- Enthralled Sphere
+							["timeline"] = { "removed 1.15.2" },
+						}),
+						-- #else
 						i(11625),	-- Enthralled Sphere
+						-- #endif
 						i(11626),	-- Blackveil Cape
 						i(11624),	-- Kentic Amice
 						applyclassicphase(PHASE_FIVE, i(22240)),	-- Greaves of Withering Despaire
@@ -2434,8 +2441,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				e(371, {	-- Houndmaster Grebmar
 					["creatureID"] = 9319,
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_THREE, i(223982)),	-- Houndmaster's Rifle
+						applyclassicphase(SOD_PHASE_THREE, i(223540)),	-- Houndmaster's Bow
+						i(11629, {	-- Houndmaster's Rifle
+							["timeline"] = { "removed 1.15.2" },
+						}),
+						i(11628, {	-- Houndmaster's Bow
+							["timeline"] = { "removed 1.15.2" },
+						}),
+						-- #else
 						i(11629),	-- Houndmaster's Rifle
 						i(11628),	-- Houndmaster's Bow
+						-- #endif
 						i(11627),	-- Fleetfoot Greaves
 						i(11623),	-- Spritecaster Cape
 					},
@@ -2472,13 +2490,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["creatureID"] = 10096,	-- High Justice Grimstone
 					["groups"] = {
 						n(9031, {	-- Anub'shiah
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223986)),	-- Graverot Cape
+							i(11677, {	-- Graverot Cape
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(11677),	-- Graverot Cape
+							-- #endif
 							i(11678),	-- Carapace of Anub'shiah
 							i(11731),	-- Savage Gladiator Greaves
 							i(11675),	-- Shadefiend Boots
 						}),
 						n(9029, {	-- Eviscerator
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223987)),	-- Splinthide Shoulders
+							i(11685, {	-- Splinthide Shoulders
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(11685),	-- Splinthide Shoulders
+							-- #endif
 							-- #if BEFORE 7.3.2
 							i(11679),	-- Rubicund Armguards
 							-- #endif
@@ -2497,7 +2529,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						n(9028, {	-- Grizzle
 							i(11610),	-- Plans: Dark Iron Pulverizer (RECIPE!)
 							i(11702),	-- Grizzle's Skinner
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223544)),	-- Dregmetal Spaulders
+							i(11722, {	-- Dregmetal Spaulders
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(11722),	-- Dregmetal Spaulders
+							-- #endif
 							i(11703),	-- Stonewall Girdle
 							applyclassicphase(PHASE_FIVE, i(22270)),	-- Entrenching Boots
 						}),
@@ -2505,13 +2544,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(11635),	-- Hookfang Shanker
 							i(11729),	-- Savage Gladiator Helm
 							i(11633),	-- Spiderfang Carapace
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223984)),	-- Silkweb Gloves
+							i(11634, {	-- Silkweb Gloves
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(11634),	-- Silkweb Gloves
+							-- #endif
 						}),
 						n(9030, {	-- Ok'thor the Breaker
 							i(11665),	-- Ogreseer Fists
 							i(11662),	-- Ban'thok Sash
 							i(11728),	-- Savage Gladiator Leggings
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223985)),	-- Cyclopean Band
+							i(11824, {	-- Cyclopean Band
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(11824),	-- Cyclopean Band
+							-- #endif
 						}),
 					},
 				}),
@@ -2577,10 +2630,28 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["creatureID"] = 9024,
 					["groups"] = {
 						i(11207),	-- Formula: Enchant Weapon - Fiery Weapon (RECIPE!)
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_THREE, i(223538)),	-- Kindling Stave
+						i(11750, {	-- Kindling Stave
+							["timeline"] = { "removed 1.15.2" },
+						}),
+						-- #else
 						i(11750),	-- Kindling Stave
+						-- #endif
 						i(11748),	-- Pyric Caduceus
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_THREE, i(223981)),	-- Flamestrider Robes
+						applyclassicphase(SOD_PHASE_THREE, i(223980)),	-- Searingscale Leggings
+						i(11747, {	-- Flamestrider Robes
+							["timeline"] = { "removed 1.15.2" },
+						}),
+						i(11749, {	-- Searingscale Leggings
+							["timeline"] = { "removed 1.15.2" },
+						}),
+						-- #else
 						i(11747),	-- Flamestrider Robes
 						i(11749),	-- Searingscale Leggings
+						-- #endif
 						-- #if AFTER 7.3.2
 						applyclassicphase(PHASE_FIVE, i(22270)),	-- Entrenching Boots
 						-- #endif
@@ -2589,7 +2660,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				e(375, {	-- Warder Stilgiss
 					["creatureID"] = 9041,
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_THREE, i(223983)),	-- Arbiter's Blade
+						i(11784, {	-- Arbiter's Blade
+							["timeline"] = { "removed 1.15.2" },
+						}),
+						-- #else
 						i(11784),	-- Arbiter's Blade
+						-- #endif
 						i(11782),	-- Boreal Mantle
 						applyclassicphase(PHASE_FIVE, i(22241)),	-- Dark Warder's Pauldrons
 						i(11783),	-- Chillsteel Girdle

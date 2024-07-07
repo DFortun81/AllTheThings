@@ -423,7 +423,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					["cost"] = 72562,	-- 7g 25s 62c
 					["b"] = 2,	-- BoA
 				})),
-				applyclassicphase(SOD_PHASE_THREE, i(223169, {	-- Tenacity Chain
+				applyclassicphase(SOD_PHASE_THREE, i(223172, {	-- Tenacity Chain
 					["cost"] = 72562,	-- 7g 25s 62c
 					["b"] = 2,	-- BoA
 				})),
