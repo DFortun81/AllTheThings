@@ -84,28 +84,37 @@ local OnTooltipForBootyBay = [[function(t, tooltipInfo)
 	end
 end]];
 -- #if SEASON_OF_DISCOVERY
-bloodcoin_c = function(cost, item)	-- Assign a Copper Blood Coin cost to an item.
+local bloodicon = function(item)	-- Assign an Atal'ai Blood Icon cost to an item.
+	applycost(item, { "i", 220636, 1 });
+	return item;
+end
+local ritualicon = function(item)	-- Assign an Atal'ai Ritual Icon cost to an item.
+	applycost(item, { "i", 220637, 1 });
+	return item;
+end
+
+local bloodcoin_c = function(cost, item)	-- Assign a Copper Blood Coin cost to an item.
 	applycost(item, { "i", 213168, cost });
 	return item;
 end
-bloodcoin_s = function(cost, item)	-- Assign a Silver Blood Coin cost to an item.
+local bloodcoin_s = function(cost, item)	-- Assign a Silver Blood Coin cost to an item.
 	applycost(item, { "i", 213169, cost });
 	return item;
 end
-bloodcoin_g = function(cost, item)	-- Assign a Gold Blood Coin cost to an item.
+local bloodcoin_g = function(cost, item)	-- Assign a Gold Blood Coin cost to an item.
 	applycost(item, { "i", 213170, cost });
 	return item;
 end
 
-massacrecoin_c = function(cost, item)	-- Assign a Copper Massacre Coin cost to an item.
+local massacrecoin_c = function(cost, item)	-- Assign a Copper Massacre Coin cost to an item.
 	applycost(item, { "i", 221364, cost });
 	return item;
 end
-massacrecoin_s = function(cost, item)	-- Assign a Silver Massacre Coin cost to an item.
+local massacrecoin_s = function(cost, item)	-- Assign a Silver Massacre Coin cost to an item.
 	applycost(item, { "i", 221365, cost });
 	return item;
 end
-massacrecoin_g = function(cost, item)	-- Assign a Gold Massacre Coin cost to an item.
+local massacrecoin_g = function(cost, item)	-- Assign a Gold Massacre Coin cost to an item.
 	applycost(item, { "i", 221366, cost });
 	return item;
 end
@@ -3145,7 +3154,48 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cost"] = {{ "i", 224409, 1 }},	-- Serpent's Striker (2.6 speed)
 						}),
 						]]
-						-- TODO: https://www.wowhead.com/classic/npc=222413/zalgo-the-explorer
+						bloodicon(i(220642)),	-- Banished Martyr's Plate Armor
+						bloodicon(i(220643)),	-- Banished Martyr's Plate Legguards
+						bloodicon(i(220648)),	-- Banished Martyr's Plate Boots
+						ritualicon(i(220683)),	-- Benevolent Prophet's Vest
+						ritualicon(i(220684)),	-- Benevolent Prophet's Leggings
+						ritualicon(i(220685)),	-- Benevolent Prophet's Sandals
+						bloodicon(i(220676)),	-- Blood Corrupted Tunic
+						bloodicon(i(220678)),	-- Blood Corrupted Pants
+						bloodicon(i(220677)),	-- Blood Corrupted Boots
+						ritualicon(i(220779)),	-- Coagulated Bloodguard Tunic
+						ritualicon(i(220778)),	-- Coagulated Bloodguard Pants
+						ritualicon(i(220780)),	-- Coagulated Bloodguard Boots
+						bloodicon(i(220665)),	-- Corrupted Spiritweaver's Breastplate
+						bloodicon(i(220663)),	-- Corrupted Spiritweaver's Leggings
+						bloodicon(i(220664)),	-- Corrupted Spiritweaver's Sabatons
+						bloodicon(i(220666)),	-- Dread Hunter's Chainmail
+						bloodicon(i(220667)),	-- Dread Hunter's Chausses
+						bloodicon(i(220668)),	-- Dread Hunter's Greaves
+						ritualicon(i(220669)),	-- Exiled Prophet's Jerkin
+						ritualicon(i(220671)),	-- Exiled Prophet's Leather Pants
+						ritualicon(i(220670)),	-- Exiled Prophet's Slippers
+						ritualicon(i(220672)),	-- Lost Worshipper's Harness
+						ritualicon(i(220673)),	-- Lost Worshipper's Leggings
+						ritualicon(i(220675)),	-- Lost Worshipper's Treads
+						ritualicon(i(220680)),	-- Malevolent Prophet's Vest
+						ritualicon(i(220679)),	-- Malevolent Prophet's Leggings
+						ritualicon(i(220681)),	-- Malevolent Prophet's Sandals
+						ritualicon(i(220783)),	-- Nightmare Prophet's Vestments
+						ritualicon(i(220781)),	-- Nightmare Prophet's Leggings
+						ritualicon(i(220784)),	-- Nightmare Prophet's Sandals
+						bloodicon(i(220650)),	-- Obsessed Prophet's Chestplate
+						bloodicon(i(220651)),	-- Obsessed Prophet's Legguards
+						bloodicon(i(220652)),	-- Obsessed Prophet's Ornate Boots
+						bloodicon(i(220657)),	-- Ostracized Berserker's Hauberk
+						bloodicon(i(220658)),	-- Ostracized Berserker's Legplates
+						bloodicon(i(220659)),	-- Ostracized Berserker's Chain Greaves
+						bloodicon(i(220660)),	-- Shunned Devotee's Chainshirt
+						bloodicon(i(220661)),	-- Shunned Devotee's Legguards
+						bloodicon(i(220662)),	-- Shunned Devotee's Scale Boots
+						bloodicon(i(220653)),	-- Wailing Berserker's Chestplate
+						bloodicon(i(220654)),	-- Wailing Berserker's Legplates
+						bloodicon(i(220656)),	-- Wailing Berserker's Battleboots
 					},
 				})),
 				-- #endif
