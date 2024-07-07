@@ -26,7 +26,7 @@ app:CreateWindow("Unsorted", {
 		if not self.data then
 			local unsorted = app.Categories.Unsorted;
 			if unsorted then
-				self.data = {
+				self.data = app.CacheFields({
 					text = L.UNSORTED,
 					title = L.UNSORTED .. DESCRIPTION_SEPARATOR .. app.Version,
 					icon = app.asset("WindowIcon_Unsorted"),
@@ -35,7 +35,7 @@ app:CreateWindow("Unsorted", {
 					expanded = true,
 					visible = true,
 					g = unsorted,
-				};
+				});
 				tinsert(unsorted, self.achievementHeader);
 				return true;
 			end
