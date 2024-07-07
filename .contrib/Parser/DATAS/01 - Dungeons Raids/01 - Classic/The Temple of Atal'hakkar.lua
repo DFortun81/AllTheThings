@@ -1030,36 +1030,36 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(218624, {	-- Atal'alarion <Guardian of the Idol>
 						["description"] = "Atal'alarion has three main abilities.\n\nThe primary danger on this boss is the Pillars of Might stacking 5% damage buff. To remove this, use his Demolishing Smash to get knocked back into the pillars from Pillars of Might. The player bodies will then destroy the pillars and reduce the stacking damage buff. Spreading out around the boss helps to minimize the total movement required to destroy every pillar.",
 						["groups"] = {
-							i(220635),	-- Atal'alarion's Enchanted Boulder
-							i(220539),	-- Warbands of Sacrifice
-							i(220554),	-- Atal'alarion's Tusk Band
-							i(220529),	-- Spaulders of Fanaticism
-							i(220527),	-- Atal'ai Berserker's Mantle
-							i(220561),	-- Tenacious Troll Kickers
 							i(220567),	-- Bloodied Headspike
 							i(220580),	-- Madness of the Avatar
+							i(220568),	-- Temple Explorer's Gun Axe
 							i(220602),	-- Sewer Turtle Half-Shell
 							i(220511),	-- Greathelm of the Nightmare
 							i(220615),	-- Panther Fur Cloak
-							i(220568),	-- Temple Explorer's Gun Axe
+							i(220527),	-- Atal'ai Berserker's Mantle
+							i(220529),	-- Spaulders of Fanaticism
 							i(220537),	-- Dreamer's Darkwater Bracers
+							i(220539),	-- Warbands of Sacrifice
+							i(220554),	-- Atal'alarion's Tusk Band
+							i(220561),	-- Tenacious Troll Kickers
+							i(220635),	-- Atal'alarion's Enchanted Boulder
 						},
 					}),
 					n(218819, {	-- Festering Rotslime
 						["description"] = "Kite the boss through the corridor.\n\nPlayers should focus on continuously moving between Gunk casts to avoid the poison pools. Gunk must be cleansed ASAP.\n\nThe boss will gain speed from Slime Time throughout the fight, to stop this: kill the Atal'ai Slab, Atal'ai Mask, Atal'ai Candle, and Atal'ai Drum objects which are located along the corridor. Ideally, have the melee focus on this to avoid getting Devoured themselves.",
 						["groups"] = {
-							i(220552),	-- Waistguard of Pain
-							i(220540),	-- Corruption Laden Handguards
-							i(220545),	-- Foul Smelling Fighter's Gloves
-							i(220542),	-- Polluted Murkwater Gauntlets
 							i(220569),	-- Blistering Ragehammer
-							i(220538),	-- Cursed Slimescale Bracers
 							i(220571),	-- Stinging Longbow
 							i(220518),	-- Ba'ham's Dusty Hat
+							i(220538),	-- Cursed Slimescale Bracers
+							i(220540),	-- Corruption Laden Handguards
 							i(220541),	-- Disease-Ridden Plate Fists
-							i(220565),	-- Ethereal Mistwalker Boots
+							i(220545),	-- Foul Smelling Fighter's Gloves
 							i(220546),	-- Hands of the Tormented
+							i(220542),	-- Polluted Murkwater Gauntlets
 							i(220550),	-- Temple Looter's Waistband
+							i(220552),	-- Waistguard of Pain
+							i(220565),	-- Ethereal Mistwalker Boots
 							i(221484),	-- Witch Doctor's Hex Stick
 							i(221281),	-- Ace of Plagues
 						},
@@ -1070,20 +1070,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							n(221637, {	-- Gasher
 								["description"] = "|cffff0000Fervor|r can cause him to deal a lot of damage, focus him down fast; if needed, the tank can run away from Gasher while still in range of casters to minimize the damage taken if Gasher gets high stacks.\n\nSpinning Axes - Spawns spinning axes around him, this deals minor cleave damage.",
 								["groups"] = {
-									i(220533),	-- Reforged Atal'ai Breastplate
-									i(220528),	-- Atal'ai Huntsman's Shoulders
-									i(220516),	-- Gasher's Forgotten Visor
-									i(220572),	-- Rinzo's Rapid Repeater
-									i(220555),	-- Atal'ai Serpentscale Girdle
-									i(220532),	-- Reinforced Atal'ai Spaulders
-									i(220522),	-- Soulcatcher Crown
-									i(220591),	-- Mijan's Restorative Rod
-									i(220558),	-- Atal'ai Assassin's Leggings
-									i(220638),	-- Unorthodox Hex Stick
-									i(220611),	-- Hukku's Hex Cape
-									i(220560),	-- Silvershell Legplates
 									i(220674),	-- Debased Stealthblade
+									i(220591),	-- Mijan's Restorative Rod
+									i(220572),	-- Rinzo's Rapid Repeater
+									i(220516),	-- Gasher's Forgotten Visor
+									i(220522),	-- Soulcatcher Crown
+									i(220611),	-- Hukku's Hex Cape
+									i(220528),	-- Atal'ai Huntsman's Shoulders
+									i(220532),	-- Reinforced Atal'ai Spaulders
+									i(220533),	-- Reforged Atal'ai Breastplate
 									i(220548),	-- Atal'ai Hexxer's Gloves
+									i(220555),	-- Atal'ai Serpentscale Girdle
+									i(220558),	-- Atal'ai Assassin's Leggings
+									i(220560),	-- Silvershell Legplates
+									i(220638),	-- Unorthodox Hex Stick
 								},
 							}),
 							n(218922, {	-- Hukku
@@ -1107,18 +1107,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["provider"] = { "n", 220864 },	-- Weaver
 						["description"] = "The bosses cast Acid Breath, so you should two tank this fight. DPS Dreamscythe to 80% and Weaver to 60%. Avoid facing either boss into the raid.\n\nFor positioning, you really want to avoid getting knocked back into both the outside poison pool which surrounds the boss arena, as well as the middle pit which will cause you to die from fall damage by either of the wing buffet abilities. To avoid the pit you should either stand next to it so that you get knocked back parallel to it; or stand right against it to get knocked over to the opposite side of it. Doing either, depending on what's easier for you at that moment, will gain you uptime on casting.\n\nIdeally, have all of the damage dealers focusing a single boss as the bosses share health pools. This way you'll be focusing a fully debuffed target.",
 						["groups"] = {
-							i(220587),	-- Sacrificial Dream Dagger
-							i(220536),	-- Atal'ai Medicine Man's Wrists
-							i(220551),	-- Devotee's Sash of the Emerald Dream
-							i(220609),	-- Drape of Nightfall
-							i(220519),	-- Voodoo Feathered Headdress
-							i(220566),	-- Smolder Claw
-							i(220544),	-- Bloodflare Talons
 							i(220584),	-- Flamebreath Blade
-							i(220521),	-- Hakkari Ritualist's Headdress
+							i(220587),	-- Sacrificial Dream Dagger
 							i(220594),	-- Scythe of the Dream
+							i(220566),	-- Smolder Claw
 							i(220581),	-- Snake Clobberer
+							i(220521),	-- Hakkari Ritualist's Headdress
+							i(220519),	-- Voodoo Feathered Headdress
+							i(220609),	-- Drape of Nightfall
+							i(220536),	-- Atal'ai Medicine Man's Wrists
+							i(220544),	-- Bloodflare Talons
 							i(220549),	-- Dawnspire Strap
+							i(220551),	-- Devotee's Sash of the Emerald Dream
 							i(221298),	-- Ace of Nightmares
 						},
 					}),
@@ -1127,38 +1127,38 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["description"] = "This fight has two different versions which rotate every week.\n\nOne where Ogom the Wretched dies first, making Jammal'an the Prophet the main boss.\n Mass Penance is a spoopy mechanic.\n\nThe other where Jammal'an the Prophet dies first, making Ogom the Wretched the main boss.\n Avoid Consecration.",
 						["groups"] = {
 							i(220576),	-- Axe of the Atal'ai Executioner
-							i(220547),	-- Gloves of the Fallen Atal'ai Prophet
-							i(220556),	-- Kilt of the Fallen Atal'ai Prophet
-							i(220583),	-- Vile Blade of the Wretched
-							i(220578),	-- Fist of the Forsaken
-							i(220601),	-- Hakkari Witch Doctor's Guard
-							i(220535),	-- Garments of the Atal'ai Prophet
-							i(220586),	-- Hubris the Bandit Brander
 							i(220575),	-- Eater of the Damned
+							i(220578),	-- Fist of the Forsaken
+							i(220586),	-- Hubris the Bandit Brander
+							i(220583),	-- Vile Blade of the Wretched
+							i(220601),	-- Hakkari Witch Doctor's Guard
+							i(220515),	-- Enchanted Emerald Helmet
 							i(220624),	-- Bloodstained Charm of Valor
 							i(220623),	-- Jin'do's Lost Locket
 							i(220625),	-- Resilience of the Exiled
+							i(220535),	-- Garments of the Atal'ai Prophet
+							i(220547),	-- Gloves of the Fallen Atal'ai Prophet
+							i(220556),	-- Kilt of the Fallen Atal'ai Prophet
 							i(220605),	-- Libram of Sacrilege
-							i(220515),	-- Enchanted Emerald Helmet
 						},
 					}),
 					n(221943, {	-- Hazzas
 						["provider"] = { "n", 221942 },	-- Morphaz
 						["description"] = "Keep the boss stationary to avoid the frontal Corrupted Breath and Backfire from the tail. Tanks swap every 2-3 stacks. Big heals for Dreamer's Lament ability!\n\nAt 80%, Hazzas will cast Animate Flame which will summon elementals. Stack & nuke them. They also drop fire on the floor. You can use the fire to avoid being sent downstairs to Morphaz during Lucid Dreaming.\n\nAt 30%, Hazzas will cast Lucid Dreaming again and then begin casting Eternal Slumber. You must bear the damage check and the cast will be canceled.\n\nDodge Falling Rocks.",
 						["groups"] = {
-							i(220514),	-- Visor of Verdant Feathers
-							i(220543),	-- Emerald Scalemail Gloves
-							i(220559),	-- Revitalized Drake Scale Leggings
-							i(220965),	-- Scalebane Greataxe
-							i(220563),	-- Boots of the Atal'ai Blood Shaman
-							i(220606),	-- Idol of the Dream
-							i(220553),	-- Belt of the Forsaken Worshipper
-							i(220589),	-- Serpent's Striker
 							i(220596),	-- Ancient Divining Rod
+							i(220965),	-- Scalebane Greataxe
+							i(220589),	-- Serpent's Striker
+							i(220599),	-- Drakestone of the Blood Prophet
 							i(220597),	-- Drakestone of the Dream Harbinger
 							i(220598),	-- Drakestone of the Nightmare Harbinger
-							i(220599),	-- Drakestone of the Blood Prophet
 							i(220512),	-- Immaculate Goldsteel Helmet
+							i(220514),	-- Visor of Verdant Feathers
+							i(220543),	-- Emerald Scalemail Gloves
+							i(220553),	-- Belt of the Forsaken Worshipper
+							i(220559),	-- Revitalized Drake Scale Leggings
+							i(220563),	-- Boots of the Atal'ai Blood Shaman
+							i(220606),	-- Idol of the Dream
 							i(220607),	-- Totem of Tormented Ancestry
 							i(221298),	-- Ace of Nightmares
 						},
@@ -1166,19 +1166,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(218571, {	-- Shade of Eranikus
 						["description"] = "The boss casts Corrosive Breath and has a tail sweep. Tanks should swap after each breath.\n\nDispell Lethargic Poison. Interupt Bellowing Roar!\n\nWhen the boss casts Deep Slumber, you'll want everyone to stack close to the boss so that when the boss casts Waking Nightmare, everyone can jump into the pool and to get afflicted and then move out asap to avoid getting CC'd again.\n\nAt 70%, the boss will summon two Lumbering Dreamwalkers. Kill them and interupt their Deep Slumber casts. Kill any whelplings that spawn.\n\nAt 40%, he'll repeat this and then summon two Nightmare Scalebanes. These cast Acid Rain that can be interupted, so the raid should spread out to avoid this.",
 						["groups"] = {
-							i(220564),	-- Restored Slitherscale Boots
-							i(220523),	-- Visage of the Exiled
-							i(220604),	-- Nightmare Trophy
 							i(221475),	-- Essence of Eranikus
-							i(220622),	-- Perfectly Preserved Dragon's Eye
-							i(220603),	-- Rod of Irreversible Corrosion
-							i(220574),	-- Sharpened Tooth of Eranikus
-							i(220600),	-- Crest of Preeminence
-							i(220573),	-- Dreadstalker's Hunting Bow
 							i(220585),	-- Degraded Dire Nail
 							i(220582),	-- Dragon's Cry
+							i(220573),	-- Dreadstalker's Hunting Bow
 							i(220595),	-- Nightmare Focus Staff
+							i(220574),	-- Sharpened Tooth of Eranikus
 							i(220579),	-- Witch Doctor's Stick of Mojo
+							i(220600),	-- Crest of Preeminence
+							i(220604),	-- Nightmare Trophy
+							i(220603),	-- Rod of Irreversible Corrosion
+							i(220523),	-- Visage of the Exiled
+							i(220622),	-- Perfectly Preserved Dragon's Eye
+							i(220564),	-- Restored Slitherscale Boots
 							i(221298),	-- Ace of Nightmares
 						},
 					}),
@@ -1187,19 +1187,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["groups"] = {
 							i(221346),	-- Scapula of the Fallen Avatar
 							i(221363),	-- Scapula of the Fallen Avatar
-							i(220634),	-- Atal'ai Blood Ritual Charm
-							i(220632),	-- Atal'ai Blood Ritual Medallion
-							i(220633),	-- Atal'ai Blood Ritual Badge
-							i(220590),	-- Spire of Hakkari Worship
+							i(220620),	-- Wind Serpent Skull (PET!)
 							i(220686),	-- Chieftain's Bane
 							i(220588),	-- Cobra Fang Claw
-							i(220534),	-- Eternal Embrace of the Wind Serpent
-							i(220620),	-- Wind Serpent Skull
-							i(220562),	-- Bloodshot Battle Greaves
-							i(220557),	-- Cursed Windscale Sarong
-							i(220608),	-- Featherskin Drape
 							i(220577),	-- Might of the Blood Loa
+							i(220590),	-- Spire of Hakkari Worship
+							i(220608),	-- Featherskin Drape
+							i(220534),	-- Eternal Embrace of the Wind Serpent
 							i(220530),	-- Will of the Atal'ai Warrior
+							i(220557),	-- Cursed Windscale Sarong
+							i(220562),	-- Bloodshot Battle Greaves
+							i(220633),	-- Atal'ai Blood Ritual Badge
+							i(220634),	-- Atal'ai Blood Ritual Charm
+							i(220632),	-- Atal'ai Blood Ritual Medallion
 						},
 					}),
 				},
