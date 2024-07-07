@@ -285,6 +285,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["cr"] = 7996,	-- Qiaga the Keeper
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, i(223526, {	-- Sul'thraze the Lasher
+					["description"] = "You must take both of the swords and combine them to form this weapon.",
+					["cost"] = {
+						{ "i", 11086, 1 },	-- Jang'thraze the Protector
+						{ "i", 9379, 1 },	-- Sang'thraze the Deflector
+					},
+					["crs"] = {
+						8127,	-- Antu'sul
+						7267,	-- Chief Ukorz Sandscalp
+					},
+				})),
+				i(9372, {	-- Sul'thraze the Lasher
+					["timeline"] = { "removed 1.15.2" },
+				}),
+				-- #else
 				i(9372, {	-- Sul'thraze the Lasher
 					["description"] = "You must take both of the swords and combine them to form this weapon.",
 					["cost"] = {
@@ -296,12 +312,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						7267,	-- Chief Ukorz Sandscalp
 					},
 				}),
+				-- #endif
 			}),
 			n(ZONE_DROPS, {
 				i(142402, {	-- Plans: Light Earthforged Blade (RECIPE!)
 					["timeline"] = { ADDED_7_1_5 },
 				}),
-				i(9243),	-- Shriveled Troll Heart
+				i(9243),	-- Shriveled Heart / Shriveled Troll Heart
 				i(9523),	-- Troll Temper
 			}),
 			-- #if SEASON_OF_DISCOVERY
@@ -334,7 +351,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(10082, {	-- Zerillis
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_THREE, i(223962)),	-- Sandstalker Ankleguards
+					i(12470, {	-- Sandstalker Ankleguards
+						["timeline"] = { "removed 1.15.2" },
+					}),
+					-- #else
 					i(12470),	-- Sandstalker Ankleguards
+					-- #endif
 				},
 			}),
 			e(485, {	-- Theka the Martyr
@@ -351,7 +375,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(9379),	-- Sang'thraze the Deflector
 					i(9639),	-- The Hand of Antu'sul
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_THREE, i(223532)),	-- Lifeblood Amulet
+					i(9641, {	-- Lifeblood Amulet
+						["timeline"] = { "removed 1.15.2" },
+					}),
+					-- #else
 					i(9641),	-- Lifeblood Amulet
+					-- #endif
 					i(9640),	-- Vice Grips
 				},
 			}),
@@ -362,17 +393,31 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(151457, {	-- Witch Doctor's Ritual Collar
 						["timeline"] = { ADDED_7_3_0 },
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_THREE, i(223534)),	-- Jumanza Grips
+					i(18083, {	-- Jumanza Grips
+						["timeline"] = { "removed 1.15.2" },
+					}),
+					-- #else
 					i(18083),	-- Jumanza Grips
+					-- #endif
 				},
 			}),
 			n(10081, {	-- Dustwraith
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_THREE, i(223533)),	-- Desertwalker Cane
+					i(12471, {	-- Desertwalker Cane
+						["timeline"] = { "removed 1.15.2" },
+					}),
+					-- #else
 					i(12471, {	-- Desertwalker Cane
 						-- #if AFTER LEGION
 						["description"] = "This item is available only in personal loot.",
 						-- #endif
 					}),
+					-- #endif
 				},
 			}),
 			-- #if BEFORE MOP
@@ -402,11 +447,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 					i(9475),	-- Diabolic Skiver
 					i(9470),	-- Bad Mojo Mask
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_THREE, i(223529)),	-- Jinxed Hoodoo Skin
+					applyclassicphase(SOD_PHASE_THREE, i(223530)),	-- Jinxed Hoodoo Kilt
+					i(9473, {	-- Jinxed Hoodoo Skin
+						["timeline"] = { "removed 1.15.2" },
+					}),
+					i(9474, {	-- Jinxed Hoodoo Kilt
+						["timeline"] = { "removed 1.15.2" },
+					}),
+					-- #else
 					i(9473),	-- Jinxed Hoodoo Skin
 					i(151459, {	-- Nekrum's Witherguard
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(9474),	-- Jinxed Hoodoo Kilt
+					-- #endif
 					i(151458, {	-- Sezz'ziz's Captive Kickers
 						["timeline"] = { ADDED_7_3_0 },
 					}),
@@ -445,8 +501,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(11086),	-- Jang'thraze the Protector
 					i(9478),	-- Ripsaw
 					i(9477),	-- The Chief's Enforcer
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_THREE, i(223963)),	-- Embrace of the Lycan
+					applyclassicphase(SOD_PHASE_THREE, i(223531)),	-- Big Bad Pauldrons
+					i(9479, {	-- Embrace of the Lycan
+						["timeline"] = { "removed 1.15.2" },
+					}),
+					i(9476, {	-- Big Bad Pauldrons
+						["timeline"] = { "removed 1.15.2" },
+					}),
+					-- #else
 					i(9479),	-- Embrace of the Lycan
 					i(9476),	-- Big Bad Pauldrons
+					-- #endif
 					i(151460, {	-- Farraki Ceremonial Robes
 						["timeline"] = { ADDED_7_3_0 },
 					}),
@@ -476,11 +543,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { ADDED_10_0_7 },
 					}),
 					i(8707),	-- Gahz'rilla's Electrified Scale
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_THREE, i(223527)),	-- Gahz'rilla Fang
+					applyclassicphase(SOD_PHASE_THREE, i(223528)),	-- Gahz'rilla Scale Armor
+					i(9467, {	-- Gahz'rilla Fang
+						["timeline"] = { "removed 1.15.2" },
+					}),
+					i(9469, {	-- Gahz'rilla Scale Armor
+						["timeline"] = { "removed 1.15.2" },
+					}),
+					-- #else
 					i(9467),	-- Gahz'rilla Fang
 					i(151455, {	-- Gahz'rilla Scale Cloak
 						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(9469),	-- Gahz'rilla Scale Armor
+					-- #endif
 				},
 			}),
 		},
