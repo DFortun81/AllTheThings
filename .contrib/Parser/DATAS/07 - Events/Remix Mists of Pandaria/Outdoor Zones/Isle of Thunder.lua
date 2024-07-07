@@ -6,7 +6,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\spell_nature_callstorm",
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(19892, bubbleDown({ ["_noautomation"] = true, }, {	-- Campaign: Isle of Thunder
+				achraw(19892, {	-- Campaign: Isle of Thunder
 					crit(67270, {	-- Assault the Shipyard
 						["_quests"] = { 32655 },
 					}),
@@ -43,7 +43,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					crit(67287, {	-- Take the Forge
 						["_quests"] = { 32277 },
 					}),
-				})),
+				}),
 				ach(20000),		-- Elusive Foes: Isle of Thunder
 				ach(19880, {	-- Isle of Thunder
 					-- Meta Achievement

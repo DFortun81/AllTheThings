@@ -4,7 +4,7 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
         ach(40252),	-- A Series of Echoes (automated)
-        ach(40222, bubbleDownSelf({ ["_noautomation"] = true, }, {	-- Echoes of Danger
+        achraw(40222, {	-- Echoes of Danger
             -- TODO: All of these need their creatures attached, especially the combo ones at the end to get a proper name
             crit(67509),	-- Aqu'yinra
             crit(67510),	-- S'toth The Insatiable
@@ -48,9 +48,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
             crit(67554),	-- Dregbile and Soulboil
             crit(67539),	-- Zeeben and Zillix
             crit(68240),	-- Zeeben and Zillix
-            -- TODO
-            --title(),	-- Echochaser <Name>
-        })),
+            title(258),	-- Echochaser <Name>
+        }),
         ach(40314, {    -- Fragments of Memories (automated)
             i(224251),	-- Memory Chord (TOY!)
         }),
@@ -74,7 +73,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
         }),
         ach(40251),	-- Many Echoes
         ach(40250),	-- The First Echo
-        ach(40660, bubbleDownSelf({ ["_noautomation"] = true, ["timeline"] = { REMOVED_11_1_0 }, }, {	-- The War Within Season 1: Spelunker Supreme
+        achraw(40660, bubbleDownSelf({ ["timeline"] = { REMOVED_11_1_0 }, }, {	-- The War Within Season 1: Spelunker Supreme
             crit(67375), -- Attained 1600+ Rated PVP rating
             crit(66890), -- Attained 2000+ Mythic Plus rating
             crit(67597), -- Defeated Queen Ansurek on Heroic or Mythic difficulty

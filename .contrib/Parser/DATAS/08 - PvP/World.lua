@@ -231,8 +231,8 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					40087,	-- Unbound Battle
 				}},
 			}),
-			-- TODO: check if _noautomation still needed once all criteriaIDs are correct
-			ach(40091, bubbleDown({ ["_noautomation"] = true, }, {	-- Slightly Spoiled
+			-- TODO: check if achraw still needed once all criteriaIDs are correct
+			achraw(40091, {	-- Slightly Spoiled
 				crit(66982, {	-- Isle of Dorn
 					["maps"] = { ISLE_OF_DORN },
 				}),
@@ -246,7 +246,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				crit(66984, {	-- Azj-kahet
 					["maps"] = { AZJ_KAHET },
 				}),
-			})),
+			}),
 			ach(40095),	-- Sparking Battle (x5)
 			ach(40096, {	-- Sparking Battle (x20)
 				i(225969),	-- Forged Flag of Victory (TOY!)

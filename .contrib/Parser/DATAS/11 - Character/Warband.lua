@@ -18,7 +18,7 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_
 		ach(19477),	-- Five Warband Mentors: The War Within
 		ach(40142),	-- Learning to Share
 		ach(40145),	-- So Much Sharing
-		ach(40725, bubbleDownSelf({ ["_noautomation"] = true, ["timeline"] = { REMOVED_11_1_0 }, }, {	-- War Within Delves: Endgame
+		achraw(40725, bubbleDownSelf({ ["timeline"] = { REMOVED_11_1_0 }, }, {	-- War Within Delves: Endgame
 			ach(40514),		-- War Within Delves: Tier 3
 			crit(68716),	-- Complete the Khaz Algar main story campaign
 			crit(67101),	-- Chest

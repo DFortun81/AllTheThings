@@ -15,7 +15,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40451),	-- Buddy System III
 		ach(40450),	-- Buddy System II
 		ach(40455),	-- Buddy System
-		ach(40437, bubbleDown({ ["_noautomation"] = true, }, {	-- Delver of the Depths
+		achraw(40437, {	-- Delver of the Depths
 			crit(68295),	-- Earthcrawl Mines
 			crit(68296),	-- Fungal Folly
 			crit(68297),	-- Kriegval's Rest
@@ -28,8 +28,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			crit(68304),	-- The Spiral Weave
 			crit(68305),	-- The Underkeep
 			crit(68306),	-- The Waterworks
-		})),
-		ach(40447, bubbleDown({ ["_noautomation"] = true, }, {		-- Delver of the Depths II
+		}),
+		achraw(40447, {		-- Delver of the Depths II
 			crit(68307),	-- Earthcrawl Mines
 			crit(68308),	-- Fungal Folly
 			crit(68309),	-- Kriegval's Rest
@@ -42,8 +42,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			crit(68316),	-- The Spiral Weave
 			crit(68317),	-- The Underkeep
 			crit(68318),	-- The Waterworks
-		})),
-		ach(40448, bubbleDown({ ["_noautomation"] = true, }, {		-- Delver of the Depths III
+		}),
+		achraw(40448, {		-- Delver of the Depths III
 			crit(68319),	-- Earthcrawl Mines
 			crit(68320),	-- Fungal Folly
 			crit(68321),	-- Kriegval's Rest
@@ -56,8 +56,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			crit(68328),	-- The Spiral Weave
 			crit(68329),	-- The Underkeep
 			crit(68330),	-- The Waterworks
-		})),
-		ach(40449, bubbleDown({ ["_noautomation"] = true, }, {		-- Delver of the Depths IV
+		}),
+		achraw(40449, {		-- Delver of the Depths IV
 			crit(68331),	-- Earthcrawl Mines
 			crit(68332),	-- Fungal Folly
 			crit(68333),	-- Kriegval's Rest
@@ -70,7 +70,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			crit(68340),	-- The Spiral Weave
 			crit(68341),	-- The Underkeep
 			crit(68342),	-- The Waterworks
-		})),
+		}),
 		ach(40454),	-- Daystormer
 		ach(40460),	-- Delve Deep
 		ach(40462),	-- Delve Deeper

@@ -8,7 +8,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(ACHIEVEMENTS, {
 				ach(19884),		-- Campaign: Valley of the Four Winds
 				ach(19994),		-- Elusive Foes: Valley of the Four Winds
-				ach(20027, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Valley of the Four Winds
+				achraw(20027, {	-- Explore Valley of the Four Winds
 					crit(65936),	-- Winds' Edge
 					crit(65937),	-- Dustback Gorge
 					crit(65938),	-- Gilded Fan
@@ -27,7 +27,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					crit(65951),	-- The Heartland
 					crit(65952),	-- Thunderfoot Ranch
 					crit(65953),	-- Zhu's Descent
-				})),
+				}),
 				ach(19978, {	-- Hidden Treasures: Valley of the Four Winds
 					crit(65495, {	-- Virmen Treasure Cache
 						["_quests"] = { 31405 },

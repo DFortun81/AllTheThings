@@ -27,7 +27,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 				ach(19998),		-- Elusive Foes: Dread Wastes
-				ach(20031, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Dread Wastes
+				achraw(20031, {	-- Explore Dread Wastes
 					crit(65995),	-- Heart of Fear
 					crit(65996),	-- Klaxxi'vess
 					crit(65997),	-- Kypari Vor
@@ -40,7 +40,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					crit(66004),	-- The Sunset Brewgarden
 					crit(66005),	-- Writhingwood
 					crit(66006),	-- Zan'vess
-				})),
+				}),
 				ach(19967, {	-- Tour Dread Wastes
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

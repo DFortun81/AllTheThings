@@ -6,7 +6,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\inv_pet_scorchedstone",
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(20001, bubbleDown({ ["_noautomation"] = true, }, {	-- Elusive Foes: Timeless Isle
+				achraw(20001, {	-- Elusive Foes: Timeless Isle
 					crit(65661, {	-- Spirit of Jadefire
 						["crs"] = { 72769 },
 					}),
@@ -49,7 +49,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					crit(65676, {	-- Ironfur Steelhorn
 						["crs"] = { 73160 },
 					}),
-				})),
+				}),
 				ach(19922),		-- Emperor Shaohao
 				ach(19982, {	-- Hidden Treasures: Timeless Isle
 					crit(65819, {	-- Flameheart Shawl
@@ -93,7 +93,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						20025,	-- Ordos
 					}},
 				}),
-				ach(20002, bubbleDown({ ["_noautomation"] = true, }, {	-- Powerful Enemies: Timeless Isle
+				achraw(20002, {	-- Powerful Enemies: Timeless Isle
 					crit(65642, {	-- Rockmoss
 						["crs"] = { 73157 },
 					}),
@@ -148,7 +148,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					crit(65660, {	-- Champion of the Black Flame
 						["crs"] = { 73171 },
 					}),
-				}));
+				}),
 				ach(20003, {	-- Timeless Isle
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

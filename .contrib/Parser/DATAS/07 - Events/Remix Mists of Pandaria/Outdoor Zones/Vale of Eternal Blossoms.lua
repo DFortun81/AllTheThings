@@ -6,7 +6,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\achievement_zone_valeofeternalblossoms",
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(20069, bubbleDown({ ["_noautomation"] = true, }, {	-- Elusive Foes: Vale of Eternal Blossoms
+				achraw(20069, {	-- Elusive Foes: Vale of Eternal Blossoms
 					crit(66114, {	-- Major Nanners
 						["crs"] = { 50840 },
 					}),
@@ -31,7 +31,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					crit(66121, {	-- Yorik Sharpeye
 						["crs"] = { 50336 },
 					}),
-				})),
+				}),
 				ach(19916),		-- Golden Lotus
 				ach(20014, {	-- Looking For Group: Vale of Eternal Blossoms
 					-- Meta Achievement

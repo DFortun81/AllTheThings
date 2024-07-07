@@ -28,9 +28,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(40215),	-- Deepwind Ravine Shutout
 				ach(40211),	-- Deephaul Ravine Veteran
 				ach(40210),	-- Deephaul Ravine Victory
-				ach(40613, {	-- Resilient Runner
-					["_noautomation"] = true,	-- Shows a criteria otherwise
-				}),
+				achraw(40613),	-- Resilient Runner
 				ach(40608),	-- Running in the Ravine
 				ach(40612),	-- Sprinting in the Ravine
 				ach(40615),	-- Unexpected Arrival

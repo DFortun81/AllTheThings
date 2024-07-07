@@ -13,7 +13,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["races"] = HORDE_ONLY,
 				}),
 				ach(19996),		-- Elusive Foes: Kun-Lai Summit
-				ach(20029, bubbleDown({ ["_noautomation"] = true, }, {	-- Explore Kun-Lai Summit
+				achraw(20029, {	-- Explore Kun-Lai Summit
 					crit(65970),	-- Binan Village
 					crit(65971),	-- Firebough Nook
 					crit(65972),	-- Gate of the August Celestials
@@ -28,7 +28,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					crit(65981),	-- The Burlap Trail
 					crit(65982),	-- Valley of Emperors
 					crit(65983),	-- Zouchin Village
-				})),
+				}),
 				ach(19980, {	-- Hidden Treasures: Kun-Lai Summit
 					crit(65484, {	-- Hozen Treasure Cache
 						["_quests"] = { 31414 },

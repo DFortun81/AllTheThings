@@ -268,7 +268,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(40217, {	-- Battleground Blitzer
 		["timeline"] = { ADDED_11_0_1_LAUNCH },
 	}),
-	ach(40219, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } , ["_noautomation"] = true, }, {	-- Battleground Blitzest
+	achraw(40219, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH }, }, {	-- Battleground Blitzest
 		crit(67431),	-- Arathi Basin
 		crit(67425),	-- Deephaul Ravine
 		crit(67430),	-- Deepwind Gorge
