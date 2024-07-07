@@ -338,6 +338,7 @@ HeaderAssignments = {
 	["Skyriding"] = -1000920,
 	["Sniffenseeking"] = -1000938,
 	["Snuffling"] = -1000963,
+	["SOD - Aeonas: Journey to Felwood"] = -1000971,
 	["SOD - Nightmare Incursions"] = -1000969,
 	["SOD - Soul Brokers"] = -1000378,
 	["SOD - Wild Polymorph"] = -1000377,
@@ -481,4 +482,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000971;
+NextHeaderID = -1000972;

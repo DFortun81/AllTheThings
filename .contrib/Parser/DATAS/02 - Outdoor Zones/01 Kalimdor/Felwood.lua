@@ -1266,6 +1266,54 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81790, {	-- Materials of Significance
+					["qg"] =  221636,	-- Gregory <Truthbearer>
+					-- TODO: There might be a "Speak to Aeonas" step between the bloody missive and this quest.
+					["sourceQuest"] = 81766,	-- The Bloody Missive
+					["coord"] = { 44.6, 52, FELWOOD },
+					["maps"] = { MARAUDON, HILLSBRAD_FOOTHILLS, BLACKROCK_DEPTHS },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+					["groups"] = {
+						objective(1, {	-- 0/3 Fiery Infernal Core
+							["provider"] = { "i", 220166 },	-- Fiery Infernal Core
+							["coord"] = { 42.8, 43.6, FELWOOD },
+							["crs"] = {
+								7135,	-- Infernal Bodyguard
+								7136,	-- Infernal Sentry
+								9878,	-- Entropic Beast
+								9879,	-- Entropic Horror
+							},
+						}),
+						objective(2, {	-- 0/1 Shimmering Grave Dust
+							["providers"] = {
+								{ "i", 220167 },	-- Shimmering Grave Dust
+								{ "o", 441222 },	-- Grave Mound
+							},
+							["description"] = "You can find this after killing Princess in Maraudon, right in front of Zaetar's Spirit next to his feet.",
+						}),
+						objective(3, {	-- 0/1 Triple-Brewed Molten Lager
+							["provider"] = { "i", 220168 },	-- Triple-Brewed Molten Lager
+							["description"] = "Sold by Plugger Spazzring in Blackrock Depths.",
+						}),
+						q(81944, {	-- A Newly Discovered Purpose...
+							["qg"] = 214529,	-- Brave Stonetorch
+							["coord"] = { 67.4, 14.8, HILLSBRAD_FOOTHILLS },
+							["classes"] = { PALADIN },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 44,
+							["groups"] = {
+								objective(4, {	-- 0/1 Symbol of Faith
+									["questID"] = 81790,	-- Materials of Significance
+									["provider"] = { "i", 220169 },	-- Symbol of Faith
+								}),
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(5085, {	-- Mystery Goo
 					["providers"] = {
 						{ "o", 176091 },	-- Deadwood Cauldron
@@ -1989,6 +2037,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.7, 25.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(82135, {	-- The Price of Hope
+					["providers"] = {
+						{ "n", 221587 },	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+						{ "i", 221519 },	-- Mannoroc Orb
+					},
+					["sourceQuest"] = 81885,	-- The Ritual
+					["coord"] = { 45, 52, FELWOOD },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+					["groups"] = {
+						i(221518),	-- Whisper
+					},
+				})),
+				-- #endif
 				q(5385, {	-- The Remains of Trey Lightforge
 					["providers"] = {
 						{ "n", 11020 },	-- Remains of Trey Lightforge
@@ -2007,6 +2071,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81885, {	-- The Ritual
+					["qg"] =  221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					["sourceQuest"] = 81790,	-- Materials of Significance
+					["coord"] = { 45, 52, FELWOOD },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+					["groups"] = {
+						objective(1, {	-- Complete the Ritual
+							["provider"] = { "n", 221636 },	-- Gregory
+							["coord"] = { 44.6, 52.0, FELWOOD },
+						}),
+						recipe(410013),	-- Engrave Bracers - Hammer of the Righteous
+					},
+				})),
+				-- #endif
 				q(28337, {	-- The Shredders of Irontree
 					["qg"] = 48493,	-- Alton Redding
 					["sourceQuest"] = 28384,	-- Into the Clearing

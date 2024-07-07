@@ -1857,6 +1857,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79939, {	-- The Broken Hammer
+					["providers"] = {
+						{ "i", 215441 },	-- Broken Hammer
+						{ "o", 423703 },	-- Broken Warhammer
+					},
+					["sourceQuest"] = 78093,	-- Return to Delgren
+					["coord"] = { 52.7, 84.8, DESOLACE },
+					["maps"] = { STORMWIND_CITY },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["groups"] = {
+						objective(1, {	-- 0/1 Torn Letter
+							["provider"] = { "i", 216956 },	-- Torn Letter
+							["coord"] = { 54.2, 78.0, DESOLACE },
+							["crs"] = {
+								4668,	-- Burning Blade Summoner
+								4705,	-- Burning Blade Invoker
+							},
+						}),
+						objective(2, {	-- 	Find someone who can tell you about the hammer
+							["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
+							["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+						}),
+					},
+				})),
+				-- #endif
 				q(1435, {	-- The Burning of Spirits
 					["qg"] = 4498,	-- Maurin Bonesplitter
 					["sourceQuest"] = 1433,	-- Alliance Relations (3/4)

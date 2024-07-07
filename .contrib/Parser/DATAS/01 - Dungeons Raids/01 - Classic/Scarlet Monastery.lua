@@ -105,6 +105,39 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				-- #endif
 				n(QUESTS, {
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, q(79946, {	-- A Brother In Need
+						["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
+						["sourceQuest"] = 79945,	-- Orders from the Grand Crusader
+						["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+						["classes"] = { PALADIN },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 26,
+						["groups"] = {
+							objective(1, {	-- Learn more about Aeonas from Katherine
+								["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
+							}),
+							objective(2, {	-- Find Aeonas in the Scarlet Monastery
+								["provider"] = { "n", 217996 },	-- Aeonas <Former Paladin of the Silver Hand>
+							}),
+						},
+					})),
+					applyclassicphase(SOD_PHASE_TWO, q(79970, {	-- Aeonas the Vindicated
+						["qg"] = 217996,	-- Aeonas <Former Paladin of the Silver Hand>
+						["sourceQuest"] = 79963,	-- By The Light's Grace
+						["maps"] = { STORMWIND_CITY },
+						["classes"] = { PALADIN },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 26,
+						["groups"] = {
+							objective(1, {	-- Meet Aeonas at the Cathedral of Light in Stormwind
+								["provider"] = { "n", 218160 },	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+								["coord"] = { 37.6, 31.6, STORMWIND_CITY },
+							}),
+							recipe(426178),	-- Engrave Belt - Sheath of Light
+						},
+					})),
+					-- #endif
 					q(31513, {	-- Blades of the Anointed
 						["qg"] = 64827,	-- Hooded Crusader
 						["timeline"] = { ADDED_5_0_4 },
@@ -115,6 +148,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 						},
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, q(79963, {	-- By The Light's Grace
+						["qg"] = 217996,	-- Aeonas <Former Paladin of the Silver Hand>
+						["sourceQuest"] = 79946,	-- A Brother In Need
+						["classes"] = { PALADIN },
+						["races"] = ALLIANCE_ONLY,
+						["lvl"] = 26,
+						["groups"] = {
+							objective(1, {	-- Heal Aeonas
+								["provider"] = { "n", 217996 },	-- Aeonas <Former Paladin of the Silver Hand>
+							}),
+						},
+					})),
+					-- #endif
 					q(1113, {	-- Hearts of Zeal
 						["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 						["sourceQuest"] = 1109,	-- Going, Going, Guano!
@@ -226,6 +273,30 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 						},
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, q(79945, {	-- Orders from the Grand Crusader
+						["providers"] = {
+							{ "i", 215468 },	-- Orders from the Grand Crusader
+							{ "i", 216610 },	-- Orders from the Grand Crusader
+						},
+						-- TODO: There's definitely a step between A Lost Brother and this quest.
+						-- Next, head to Menethil Harbor in Wetlands, and speak to Harold Riggs on the docks, /way 8.2 58.6. (Some players have reported a progression blocking bug here). 
+						-- From here, you will need to swim south along the coastline of the Wetlands to Newman's Landing in Dun Morogh, /way 18.0, 74.5. You'll need to swim until you reach the docks, and then look for the body of a fallen crusader. Defeat your would-be ambushers, pick up Orders from the Grand Crusader and accept the next quest Orders from the Grand Crusader. This will take you back to Stormwind's Cathedral and Katherine the Pure.
+						["sourceQuest"] = 79940,	-- A Lost Brother
+						["coord"] = { 18.0, 74.5, DUN_MOROGH },
+						["maps"] = { STORMWIND_CITY },
+						["classes"] = { PALADIN },
+						["races"] = ALLIANCE_ONLY,
+						["cr"] = 218908,	-- Scarlet Crusade Assassin
+						["lvl"] = 26,
+						["groups"] = {
+							objective(1, {	-- Report back to Katherine the Pure
+								["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
+								["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+							}),
+						},
+					})),
+					-- #endif
 					q(31514, {	-- Unto Dust Thou Shalt Return
 						["qg"] = 64854,	-- Blade of the Anointed
 						["sourceQuest"] = 31513,	-- Blades of the Anointed

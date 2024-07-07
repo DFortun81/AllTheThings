@@ -483,6 +483,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79940, {	-- A Lost Brother
+					["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
+					["sourceQuest"] = 79939,	-- The Broken Hammer
+					["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 26,
+					["groups"] = {
+						objective(1, {	-- Speak with Katherine and Learn More
+							["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
+						}),
+					},
+				})),
+				-- #endif
 				q(212, {	-- A Meal Served Cold
 					["qg"] = 1141,	-- Angus Stern
 					["coords"] = {
@@ -670,6 +685,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Aeonas: Journey to Felwood
+					readable = "SOD - Aeonas: Journey to Felwood",
+					icon = "Interface\\CURSOR\\Taxi",
+					text = {
+						en = "Aeonas: Journey to Felwood",
+					},
+				}), {
+					["qg"] = 218160,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					["questID"] = 81879,	-- Aeonas: Journey to Felwood HQT
+					["sourceQuest"] = 81764,	-- The Mysterious Merchant
+					["coord"] = { 37.6, 31.6, STORMWIND_CITY },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+				})),
+				-- #endif
 				q(11451, {	-- Alicia's Poem
 					["providers"] = {
 						{ "n", 24729 },	-- Alicia
@@ -2745,6 +2777,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81762, {	-- Some Good News
+					["qg"] = 218160,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					--["sourceQuest"] = ,	-- 
+					["coord"] = { 37.6, 31.6, STORMWIND_CITY },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+					["groups"] = {
+						objective(1, {	-- Speak with Katherine the Pure
+							["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
+							["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to Brother Romulus
 					readable = "Speak to Brother Romulus",
 					icon = "Interface\\CURSOR\\Speak",

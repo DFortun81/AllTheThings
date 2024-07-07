@@ -2823,6 +2823,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(151410, {	-- Bottle-Popper Ring
 							["timeline"] = { ADDED_7_3_0 },
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_THREE, i(220168)),	-- Triple-Brewed Molten Lager
+						-- #endif
 					},
 				}),
 				applyclassicphase(TBC_PHASE_FOUR, n(28067, {	-- Dark Iron Brewer
