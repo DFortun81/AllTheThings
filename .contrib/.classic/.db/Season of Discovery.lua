@@ -147,7 +147,7 @@ local OnTooltip_EMERALD_WARDENS = [[function(t, tooltipInfo)
 		addRepInfo(tooltipInfo, reputation, "Incursion Kill Quests (Feralas & Hinterlands)", 150, ]] .. EXALTED .. [[);
 		addRepInfo(tooltipInfo, reputation, "Incursion Quests (Feralas & Hinterlands)", 100, ]] .. EXALTED .. [[);
 		addRepInfo(tooltipInfo, reputation, "Incursion Quests (Duskwood & Ashenvale)", 75, ]] .. EXALTED .. [[);
-		if app.GameBuildVersion >= 11503 then addRepInfo(tooltipInfo, reputation, "Incursion Resource Quests", 100, ]] .. EXALTED .. [[); end
+		if _.GameBuildVersion >= 11503 then addRepInfo(tooltipInfo, reputation, "Incursion Resource Quests", 100, ]] .. EXALTED .. [[); end
 		
 		local fight = t.fight;
 		if not fight then
