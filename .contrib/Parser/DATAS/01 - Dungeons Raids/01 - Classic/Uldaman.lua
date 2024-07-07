@@ -631,7 +631,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(9400),	-- Baelog's Shortbow
 					i(9403),	-- Battered Viking Shield
 					i(151396, {	-- Erik's High-Performance Armbands
-						["timeline"] = { ADDED_7_3_0},
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(9394),	-- Horned Viking Helmet
 					i(9401),	-- Nordic Longshank
@@ -657,7 +657,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["groups"] = {
 					i(9394),	-- Horned Viking Helmet
 					i(151396, {	-- Erik's High-Performance Armbands
-						["timeline"] = { ADDED_7_3_0},
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(132734, {	-- Viking Chain Boots
 						["timeline"] = { ADDED_7_0_3},
@@ -705,30 +705,63 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { REMOVED_4_1_0 },
 					}),
 					i(132736, {	-- Revelosh's Pauldrons
-						["timeline"] = { ADDED_7_0_3},
+						["timeline"] = { ADDED_7_0_3 },
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(217307)),	-- Revelosh's Spaulders
+					applyclassicphase(SOD_PHASE_TWO, i(217305)),	-- Revelosh's Armguards
+					applyclassicphase(SOD_PHASE_TWO, i(217304)),	-- Revelosh's Gloves
+					applyclassicphase(SOD_PHASE_TWO, i(217306)),	-- Revelosh's Boots
+					i(9389, {	-- Revelosh's Spaulders
+						["timeline"] = { "removed 1.15.1" },
+					}),
+					i(9388, {	-- Revelosh's Armguards
+						["timeline"] = { "removed 1.15.1" },
+					}),
+					i(9390, {	-- Revelosh's Gloves
+						["timeline"] = { "removed 1.15.1" },
+					}),
+					i(9387, {	-- Revelosh's Boots
+						["timeline"] = { "removed 1.15.1" },
+					}),
+					-- #else
 					i(9389),	-- Revelosh's Spaulders
 					i(9388),	-- Revelosh's Armguards
 					i(9390),	-- Revelosh's Gloves
 					i(151395, {	-- Revelosh's Girdle
-						["timeline"] = { ADDED_7_3_0},
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(9387),	-- Revelosh's Boots
+					-- #endif
 				},
 			}),
 			e(469, {	-- Ironaya
 				["creatureID"] = 7228,
 				["cost"] = { { "i", 7733, 1 } },	-- Staff of Prehistoria
 				["groups"] = {
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(217704)),	-- Ironshod Bludgeon
+					i(9408, {	-- Ironshod Bludgeon
+						["timeline"] = { "removed 1.15.1" },
+					}),
+					-- #else
 					i(9408),	-- Ironshod Bludgeon
+					-- #endif
 					i(151398, {	-- Hood of the Idle Architect
-						["timeline"] = { ADDED_7_3_0},
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151420, {	-- Vault-Watcher's Breastplate
-						["timeline"] = { ADDED_7_3_0},
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(9409),	-- Ironaya's Bracers
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(217303)),	-- Stoneweaver Leggings
+					i(9407, {	-- Stoneweaver Leggings
+						["timeline"] = { "removed 1.15.1" },
+					}),
+					-- #else
 					i(9407),	-- Stoneweaver Leggings
+					-- #endif
 				},
 			}),
 			e(748, {	-- Obsidian Sentinel
@@ -739,7 +772,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(8053),	-- Obsidian Power Source
 					i(151399, {	-- Splintered Obsidian Shard
-						["timeline"] = { ADDED_7_3_0},
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -755,10 +788,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					i(9410),	-- Cragfists
 					i(151401, {	-- Titanic Stone Legguards
-						["timeline"] = { ADDED_7_3_0},
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(151400, {	-- Sand-Scoured Treads
-						["timeline"] = { ADDED_7_3_0},
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 				},
 			}),
@@ -787,10 +820,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 4854,
 				["groups"] = {
 					i(7670),	-- Shattered Necklace Sapphire
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_TWO, i(223536)),	-- Grimlock's Charge
+					applyclassicphase(SOD_PHASE_TWO, i(223535)),	-- Grimlock's Tribal Vestments
+					i(9416, {	-- Grimlock's Charge
+						["timeline"] = { "removed 1.15.1" },
+					}),
+					i(9415, {	-- Grimlock's Tribal Vestments
+						["timeline"] = { "removed 1.15.1" },
+					}),
+					-- #else
 					i(9416),	-- Grimlock's Charge
 					i(9415),	-- Grimlock's Tribal Vestments
+					-- #endif
 					i(151402, {	-- Grimlock's Jagged Wristguards
-						["timeline"] = { ADDED_7_3_0},
+						["timeline"] = { ADDED_7_3_0 },
 					}),
 					i(132735, {	-- Grimlock's Chain Chaps
 						["timeline"] = { ADDED_7_0_3},
