@@ -1559,6 +1559,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 27.8, 62.0, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_5_1_0 },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
+					["provider"] = { "i", 216941 },	-- Ariden's Sigil
+					["coord"] = { 69, 28, SWAMP_OF_SORROWS },
+					["groups"] = {
+						i(216948),	-- Odd Dalaran Relic
+					},
+				})),
+				-- #endif
 				n(5348, {	-- Dreamwatcher Forktongue <Victim of the Nightmare> [CATA+]
 					["coord"] = { 18.0, 69.8, SWAMP_OF_SORROWS },
 					["timeline"] = { ADDED_4_0_3 },

@@ -2024,6 +2024,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
+					["provider"] = { "i", 216941 },	-- Ariden's Sigil
+					["coord"] = { 60, 40, ARATHI_HIGHLANDS },
+					["groups"] = {
+						i(216947),	-- Whirring Dalaran Relic
+					},
+				})),
+				-- #endif
 				n(2601, {	-- Foulbelly
 					["coords"] = {
 						-- #if AFTER CATA

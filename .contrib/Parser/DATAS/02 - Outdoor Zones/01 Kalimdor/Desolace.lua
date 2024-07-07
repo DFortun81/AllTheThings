@@ -2261,6 +2261,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.8, 62.6, DESOLACE },
 					-- #endif
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
+					["provider"] = { "i", 216941 },	-- Ariden's Sigil
+					["coord"] = { 65, 25, DESOLACE },
+					["groups"] = {
+						i(216950),	-- Creepy Dalaran Relic
+					},
+				})),
+				-- #endif
 				n(14228, {	-- Giggler
 					-- #if AFTER CATA
 					["coords"] = {

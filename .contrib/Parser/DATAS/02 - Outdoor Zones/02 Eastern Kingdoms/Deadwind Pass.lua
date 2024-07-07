@@ -63,6 +63,152 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(QUESTS, {
+				applyclassicphase(SOD_PHASE_TWO, q(80120, {	-- A Service to Dalaran
+					["qg"] = 218920,	-- Dalaran Agent <Violet Eye>
+					["sourceQuests"] = {
+						80148,	-- Curious Dalaran Relic [Arathi Highlands]
+						80152,	-- Curious Dalaran Relic [Badlands]
+						80098,	-- Curious Dalaran Relic [Deadwind Pass]
+						80151,	-- Curious Dalaran Relic [Desolace]
+						80147,	-- Curious Dalaran Relic [Duskwood]
+						80149,	-- Curious Dalaran Relic [Swamp of Sorrows]
+						80150,	-- Curious Dalaran Relic [The Barrens]
+					},
+					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["groups"] = {
+						i(217014, {	-- Supply Bag
+							i(213144, {	-- Luminous Epiphany
+								["classes"] = { PRIEST },
+								["groups"] = {
+									recipe(425312),	-- Engrave Boots - Spirit of the Redeemer
+								},
+							}),
+							i(213124, {	-- Rune of Close Combat
+								["classes"] = { HUNTER },
+								["groups"] = {
+									recipe(416086),	-- Engrave Belt - Melee Specialist
+								},
+							}),
+							i(213100, {	-- Rune of Forbidden Knowledge
+								["classes"] = { WARLOCK },
+								["groups"] = {
+									recipe(416014),	-- Engrave Boots - Demonic Knowledge
+								},
+							}),
+							i(213130, {	-- Rune of Infusions
+								["classes"] = { PALADIN },
+								["groups"] = {
+									recipe(426180),	-- Engrave Belt - Infusion of Light
+								},
+							}),
+							i(213104, {	-- Rune of Ruthless Precision
+								["classes"] = { WARRIOR },
+								["groups"] = {
+									recipe(416005),	-- Engrave Belt - Precise Timing
+								},
+							}),
+							i(213137, {	-- Rune of the Assailant
+								["classes"] = { ROGUE },
+								["groups"] = {
+									recipe(415926),	-- Engrave Boots - Waylay
+								},
+							}),
+							i(213118, {	-- Rune of the Jungle King
+								["classes"] = { DRUID },
+								["groups"] = {
+									recipe(424765),	-- Engrave Boots - King of the Jungle
+								},
+							}),
+							i(216606, {	-- Rune of Two-Handed Mastery
+								["classes"] = { SHAMAN },
+								["groups"] = {
+									recipe(436368),	-- Engrave Chest - Two-Handed Mastery
+								},
+							}),
+							i(213112, {	-- Spell Notes: Missile Barrage
+								["classes"] = { MAGE },
+								["groups"] = {
+									recipe(401763),	-- Engrave Belt - Missile Barrage
+								},
+							}),
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_TWO, q(80148, {	-- Curious Dalaran Relic [Arathi Highlands]
+					["providers"] = {
+						{ "i", 216947 },	-- Whirring Dalaran Relic
+						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
+					},
+					--["sourceQuest"] = ,	-- 
+					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["maps"] = { ARATHI_HIGHLANDS },
+				})),
+				applyclassicphase(SOD_PHASE_TWO, q(80152, {	-- Curious Dalaran Relic [Badlands]
+					["providers"] = {
+						{ "i", 216951 },	-- Slippery Dalaran Relic
+						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
+					},
+					--["sourceQuest"] = ,	-- 
+					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["maps"] = { BADLANDS },
+				})),
+				applyclassicphase(SOD_PHASE_TWO, q(80098, {	-- Curious Dalaran Relic [Deadwind Pass]
+					["providers"] = {
+						{ "i", 216945 },	-- Curious Dalaran Relic
+						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
+					},
+					--["sourceQuest"] = ,	-- 
+					["coord"] = { 52, 34.2, DEADWIND_PASS },
+				})),
+				applyclassicphase(SOD_PHASE_TWO, q(80151, {	-- Curious Dalaran Relic [Desolace]
+					["providers"] = {
+						{ "i", 216950 },	-- Creepy Dalaran Relic
+						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
+					},
+					--["sourceQuest"] = ,	-- 
+					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["maps"] = { DESOLACE },
+				})),
+				applyclassicphase(SOD_PHASE_TWO, q(80147, {	-- Curious Dalaran Relic [Duskwood]
+					["providers"] = {
+						{ "i", 216946 },	-- Glittering Dalaran Relic
+						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
+					},
+					--["sourceQuest"] = ,	-- 
+					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["maps"] = { DUSKWOOD },
+				})),
+				applyclassicphase(SOD_PHASE_TWO, q(80149, {	-- Curious Dalaran Relic [Swamp of Sorrows]
+					["providers"] = {
+						{ "i", 216948 },	-- Odd Dalaran Relic
+						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
+					},
+					--["sourceQuest"] = ,	-- 
+					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["maps"] = { SWAMP_OF_SORROWS },
+				})),
+				applyclassicphase(SOD_PHASE_TWO, q(80150, {	-- Curious Dalaran Relic [The Barrens]
+					["providers"] = {
+						{ "i", 216949 },	-- Heavy Dalaran Relic
+						{ "n", 218920 },	-- Dalaran Agent <Violet Eye>
+					},
+					--["sourceQuest"] = ,	-- 
+					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["maps"] = { THE_BARRENS },
+				})),
+			}),
+			n(RARES, {
+				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
+					["provider"] = { "i", 216941 },	-- Ariden's Sigil
+					["coord"] = { 43, 29, DEADWIND_PASS },
+					["groups"] = {
+						i(216945),	-- Curious Dalaran Relic
+					},
+				})),
+			}),
+			-- #endif
 			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 				--o(xxxxx, {	-- Carved Eye
 					["coord"] = { 43.9, 72.8, DEADWIND_PASS },
@@ -71,6 +217,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				--}),
 			})),
+			-- #if SEASON_OF_DISCOVERY
+			n(VENDORS, {
+				applyclassicphase(SOD_PHASE_TWO, n(218920, {	-- Dalaran Agent <Violet Eye>
+					["coord"] = { 52, 34.2, DEADWIND_PASS },
+					["groups"] = {
+						-- TODO: This might be a quest, gonna need to see if it triggers a questID when you talk to them.
+						i(216941),	-- Ariden's Sigil
+					},
+				})),
+			}),
+			-- #endif
 			-- #if AFTER TBC
 			n(VENDORS, {
 				applyclassicphase(TBC_PHASE_ONE, n(18255, {  -- Mage Darius

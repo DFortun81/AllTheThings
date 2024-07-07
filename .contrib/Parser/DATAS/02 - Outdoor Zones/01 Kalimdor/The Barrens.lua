@@ -3687,6 +3687,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
+					["provider"] = { "i", 216941 },	-- Ariden's Sigil
+					["coord"] = { 52, 36, THE_BARRENS },
+					["groups"] = {
+						i(216949),	-- Heavy Dalaran Relic
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, n(209742, {	-- Desert Mirage
 					["description"] = "Cast Dispel or Purge on it.",
 					["coord"] = { 55.0, 35.4, THE_BARRENS },

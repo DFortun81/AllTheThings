@@ -2102,6 +2102,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, n(218931, {	-- Dark Rider
+					["provider"] = { "i", 216941 },	-- Ariden's Sigil
+					["coord"] = { 23, 47, DUSKWOOD },
+					["groups"] = {
+						i(216946),	-- Glittering Dalaran Relic
+					},
+				})),
+				-- #endif
 				n(45801, {	-- Eliza <Bride of the Embalmer>
 					["coord"] = { 27.6, 31.6, DUSKWOOD },
 					["timeline"] = { ADDED_4_0_3 },
