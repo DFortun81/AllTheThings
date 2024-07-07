@@ -569,7 +569,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(9431),	-- Papal Fez
 				i(9425),	-- Pendulum of Doom
 				i(9422),	-- Shadowforge Bushmaster
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, i(223537)),	-- Skullplate Bracers
+				i(9432, {	-- Skullplate Bracers
+					["timeline"] = { "removed 1.15.2" },
+				}),
+				-- #else
 				i(9432),	-- Skullplate Bracers
+				-- #endif
 				i(9430),	-- Spaulders of a Lost Age
 				i(9406, {	-- Spirewind Fetter
 					["crs"] = OUTDOOR_ULDAMAN_CRS,
