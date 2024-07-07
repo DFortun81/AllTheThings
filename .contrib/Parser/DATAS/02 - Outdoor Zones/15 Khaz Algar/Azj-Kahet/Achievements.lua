@@ -48,17 +48,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}),
 			}),
 			ach(40822, {	-- Explore Azj-Kahet
-				-- TODO: These criteria look unfinished
-				crit(69608),	-- Ruptured Lake
-				crit(69608),	-- Lightless Channels
-				crit(69608),	-- Crawling Chasm
-				crit(69608),	-- The Weaver's Lair
-				crit(69608),	-- Untamed Valley
-				crit(69608),	-- Twitching Gorge
-				crit(69608),	-- Rak-Ush
-				crit(69608),	-- The Skeins
-				crit(69608),	-- Umbral Bazaar
-				crit(69608),	-- High Hollows
+				crit(69757),	-- Ruptured Lake
+				crit(69758),	-- Lightless Channels
+				crit(69759),	-- Crawling Chasm
+				crit(69760),	-- The Weaver's Lair
+				crit(69761),	-- Untamed Valley
+				crit(69762),	-- Twitching Gorge
+				crit(69763),	-- Rak-Ush
+				crit(69764),	-- The Skeins
+				crit(69808),	-- Umbral Bazaar
+				crit(69765),	-- High Hollows
 			}),
 			ach(40624),		-- Itsy Bitsy Spider (automated)
 			ach(40832),		-- Leave it to Weaver
