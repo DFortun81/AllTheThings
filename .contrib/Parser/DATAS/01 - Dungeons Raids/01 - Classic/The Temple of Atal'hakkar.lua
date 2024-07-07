@@ -51,12 +51,21 @@ local SUNKEN_TEMPLE_ZONE_DROPS = n(ZONE_DROPS, {
 			8384,	-- Deep Lurker
 			5226,	-- Murk Worm
 			5228,	-- Saturated Ooze
+			-- #if SEASON_OF_DISCOVERY
+			224243,	-- Deep Lurker
+			224242,	-- Saturated Ooze
+			-- #endif
 		},
 	}),
 	i(6181),	-- Fetish of Hakkar
 	i(16216, {	-- Formula: Enchant Cloak - Greater Resistance
 		["timeline"] = { DELETED_4_0_3 },
-		["cr"] = 5259,	-- Atal'ai Witch Doctor
+		["crs"] = {
+			5259,	-- Atal'ai Witch Doctor
+			-- #if SEASON_OF_DISCOVERY
+			224263,	-- Atal'ai Witch Doctor
+			-- #endif
+		},
 	}),
 	i(78346, {	-- Pattern: Green Dragonscale Breastplate (New Version) (RECIPE!)
 		["timeline"] = { ADDED_4_3_0 },
@@ -967,6 +976,64 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								221639,	-- Zolo
 							},
 						}),
+						i(220636, {	-- Atal'ai Blood Icon
+							["crs"] = {
+								218624,	-- Atal'alarion <Guardian of the Idol>
+								218819,	-- Festering Rotslime
+								221637,	-- Gasher
+								220833,	-- Dreamscythe
+								218721,	-- Jammal'an the Prophet
+								221943,	-- Hazzas
+								218571,	-- Shade of Eranikus
+								221394,	-- Avatar of Hakkar
+							},
+						}),
+						i(220637, {	-- Atal'ai Ritual Token
+							["crs"] = {
+								218624,	-- Atal'alarion <Guardian of the Idol>
+								218819,	-- Festering Rotslime
+								221637,	-- Gasher
+								220833,	-- Dreamscythe
+								218721,	-- Jammal'an the Prophet
+								221943,	-- Hazzas
+								218571,	-- Shade of Eranikus
+								221394,	-- Avatar of Hakkar
+							},
+						}),
+						i(221312, {	-- Flask of Atal'ai Mojo
+							["crs"] = {
+								218624,	-- Atal'alarion <Guardian of the Idol>
+								218819,	-- Festering Rotslime
+								218721,	-- Jammal'an the Prophet
+								218718,	-- Ogom the Wretched
+								221394,	-- Avatar of Hakkar
+								224260,	-- Atal'ai Corpse Eater
+								224259,	-- Atal'ai Deathwalker
+								224258,	-- Atal'ai High Priest
+								5269,	-- Atal'ai Priest
+								224250,	-- Atal'ai Warrior
+								224263,	-- Atal'ai Witch Doctor
+								5243,	-- Cursed Atal'ai
+								5261,	-- Enthralled Atal'ai
+								221924,	-- Kazkaz the Unholy
+								5263,	-- Mummified Atal'ai
+								224262,	-- Unliving Atal'ai
+							},
+						}),
+						i(221021, {	-- Nightmare Seed
+							["crs"] = {
+								218819,	-- Festering Rotslime
+								221637,	-- Gasher
+								220833,	-- Dreamscythe
+								221943,	-- Hazzas
+								218571,	-- Shade of Eranikus
+								221394,	-- Avatar of Hakkar
+								224255,	-- Nightmare Scalebane
+								224253,	-- Nightmare Wanderer
+								224256,	-- Nightmare Whelp
+								224254,	-- Nightmare Wyrmkin
+							},
+						}),
 					}),
 					n(222290, {	-- Unfortunate Adventurer
 						["description"] = "RIP Guzu <Demon>.\n\nGo watch 'The Fall of Guzu' by Hurricane on YouTube for context!",
@@ -974,9 +1041,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(218624, {	-- Atal'alarion <Guardian of the Idol>
 						["description"] = "Atal'alarion has three main abilities.\n\nThe primary danger on this boss is the Pillars of Might stacking 5% damage buff. To remove this, use his Demolishing Smash to get knocked back into the pillars from Pillars of Might. The player bodies will then destroy the pillars and reduce the stacking damage buff. Spreading out around the boss helps to minimize the total movement required to destroy every pillar.",
 						["groups"] = {
-							i(221312),	-- Flask of Atal'ai Mojo
-							i(220636),	-- Atal'ai Blood Icon
-							i(220637),	-- Atal'ai Ritual Token
 							i(220635),	-- Atal'alarion's Enchanted Boulder
 							i(220539),	-- Warbands of Sacrifice
 							i(220554),	-- Atal'alarion's Tusk Band
@@ -1002,10 +1066,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(218819, {	-- Festering Rotslime
 						["description"] = "Kite the boss through the corridor.\n\nPlayers should focus on continuously moving between Gunk casts to avoid the poison pools. Gunk must be cleansed ASAP.\n\nThe boss will gain speed from Slime Time throughout the fight, to stop this: kill the Atal'ai Slab, Atal'ai Mask, Atal'ai Candle, and Atal'ai Drum objects which are located along the corridor. Ideally, have the melee focus on this to avoid getting Devoured themselves.",
 						["groups"] = {
-							i(221312),	-- Flask of Atal'ai Mojo
-							i(221021),	-- Nightmare Seed
-							i(220636),	-- Atal'ai Blood Icon
-							i(220637),	-- Atal'ai Ritual Token
 							i(220552),	-- Waistguard of Pain
 							i(220540),	-- Corruption Laden Handguards
 							i(220545),	-- Foul Smelling Fighter's Gloves
@@ -1032,9 +1092,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							n(221637, {	-- Gasher
 								["description"] = "|cffff0000Fervor|r can cause him to deal a lot of damage, focus him down fast; if needed, the tank can run away from Gasher while still in range of casters to minimize the damage taken if Gasher gets high stacks.\n\nSpinning Axes - Spawns spinning axes around him, this deals minor cleave damage.",
 								["groups"] = {
-									i(220636),	-- Atal'ai Blood Icon
-									i(220637),	-- Atal'ai Ritual Token
-									i(221021),	-- Nightmare Seed
 									i(220533),	-- Reforged Atal'ai Breastplate
 									i(220528),	-- Atal'ai Huntsman's Shoulders
 									i(220516),	-- Gasher's Forgotten Visor
@@ -1074,9 +1131,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["provider"] = { "n", 220864 },	-- Weaver
 						["description"] = "The bosses cast Acid Breath, so you should two tank this fight. DPS Dreamscythe to 80% and Weaver to 60%. Avoid facing either boss into the raid.\n\nFor positioning, you really want to avoid getting knocked back into both the outside poison pool which surrounds the boss arena, as well as the middle pit which will cause you to die from fall damage by either of the wing buffet abilities. To avoid the pit you should either stand next to it so that you get knocked back parallel to it; or stand right against it to get knocked over to the opposite side of it. Doing either, depending on what's easier for you at that moment, will gain you uptime on casting.\n\nIdeally, have all of the damage dealers focusing a single boss as the bosses share health pools. This way you'll be focusing a fully debuffed target.",
 						["groups"] = {
-							i(221021),	-- Nightmare Seed
-							i(220636),	-- Atal'ai Blood Icon
-							i(220637),	-- Atal'ai Ritual Token
 							i(220587),	-- Sacrificial Dream Dagger
 							i(220536),	-- Atal'ai Medicine Man's Wrists
 							i(220551),	-- Devotee's Sash of the Emerald Dream
@@ -1096,9 +1150,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["provider"] = { "n", 218718 },	-- Ogom the Wretched
 						["description"] = "This fight has two different versions which rotate every week.\n\nOne where Ogom the Wretched dies first, making Jammal'an the Prophet the main boss.\n Mass Penance is a spoopy mechanic.\n\nThe other where Jammal'an the Prophet dies first, making Ogom the Wretched the main boss.\n Avoid Consecration.",
 						["groups"] = {
-							i(220636),	-- Atal'ai Blood Icon
-							i(220637),	-- Atal'ai Ritual Token
-							i(221312),	-- Flask of Atal'ai Mojo
 							i(220576),	-- Axe of the Atal'ai Executioner
 							i(220547),	-- Gloves of the Fallen Atal'ai Prophet
 							i(220556),	-- Kilt of the Fallen Atal'ai Prophet
@@ -1122,9 +1173,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["provider"] = { "n", 221942 },	-- Morphaz
 						["description"] = "Keep the boss stationary to avoid the frontal Corrupted Breath and Backfire from the tail. Tanks swap every 2-3 stacks. Big heals for Dreamer's Lament ability!\n\nAt 80%, Hazzas will cast Animate Flame which will summon elementals. Stack & nuke them. They also drop fire on the floor. You can use the fire to avoid being sent downstairs to Morphaz during Lucid Dreaming.\n\nAt 30%, Hazzas will cast Lucid Dreaming again and then begin casting Eternal Slumber. You must bear the damage check and the cast will be canceled.\n\nDodge Falling Rocks.",
 						["groups"] = {
-							i(221021),	-- Nightmare Seed
-							i(220636),	-- Atal'ai Blood Icon
-							i(220637),	-- Atal'ai Ritual Token
 							i(220514),	-- Visor of Verdant Feathers
 							i(220543),	-- Emerald Scalemail Gloves
 							i(220559),	-- Revitalized Drake Scale Leggings
@@ -1145,9 +1193,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(218571, {	-- Shade of Eranikus
 						["description"] = "The boss casts Corrosive Breath and has a tail sweep. Tanks should swap after each breath.\n\nDispell Lethargic Poison. Interupt Bellowing Roar!\n\nWhen the boss casts Deep Slumber, you'll want everyone to stack close to the boss so that when the boss casts Waking Nightmare, everyone can jump into the pool and to get afflicted and then move out asap to avoid getting CC'd again.\n\nAt 70%, the boss will summon two Lumbering Dreamwalkers. Kill them and interupt their Deep Slumber casts. Kill any whelplings that spawn.\n\nAt 40%, he'll repeat this and then summon two Nightmare Scalebanes. These cast Acid Rain that can be interupted, so the raid should spread out to avoid this.",
 						["groups"] = {
-							i(221021),	-- Nightmare Seed
-							i(220637),	-- Atal'ai Ritual Token
-							i(220636),	-- Atal'ai Blood Icon
 							i(220564),	-- Restored Slitherscale Boots
 							i(220523),	-- Visage of the Exiled
 							i(220604),	-- Nightmare Trophy
@@ -1167,11 +1212,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(221394, {	-- Avatar of Hakkar
 						["description"] = "Have all the ranged stacked and then kill the four Atal'ai Ritualists.\n\nOnce Hakkari Bloodkeeper casts Bubbling Blood, move out of it. He'll ocasionally cast Spirit Chains, move out of the group before getting dispelled. (it will spread otherwise) Frightsome Howl should be dispelled immediately.\n\nAfter 33 seconds the Bloodkeeper will resurrect Hakkar and pass on some of the damage dealt to him during that time.\n\nDecurse Curse of Tongues, and dispel the Insanity mind control that'll happen once in a while.\n\nThe boss will occasionally cast Corrupted Blood, afflicted players should move out of the raid as fast as they can, and move to the front of the boss (away from the tank) to then get hit by Drain Blood. This will dispel the debuff. Move back afterwards and then kill the boss.",
 						["groups"] = {
-							i(220636),	-- Atal'ai Blood Icon
-							i(221312),	-- Flask of Atal'ai Mojo
-							i(220637),	-- Atal'ai Ritual Token
 							i(221346),	-- Scapula of the Fallen Avatar
-							i(221021),	-- Nightmare Seed
 							i(221363),	-- Scapula of the Fallen Avatar
 							i(220634),	-- Atal'ai Blood Ritual Charm
 							i(220632),	-- Atal'ai Blood Ritual Medallion
