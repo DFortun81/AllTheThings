@@ -4573,6 +4573,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(3444, {	-- The Stone Circle
+					["qg"] = 7771,	-- Marvon Rivetseeker
+					["sourceQuests"] = {
+						3445,	-- The Sunken Temple [Alliance]
+						3380,	-- The Sunken Temple [Horde]
+					},
+					["coord"] = { 52.6, 45.8, TANARIS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { THE_BARRENS },
+					["lvl"] = 46,
+					["groups"] = {
+						objective(1, {	-- 0/1 Stone Circle
+							["providers"] = {
+								{ "i",  10556 },	-- Stone Circle
+								{ "o", 149036 },	-- Marvon's Chest
+							},
+							["coord"] = { 62.5, 38.5, THE_BARRENS },
+						}),
+					},
+				}),
+				q(3445, {	-- The Sunken Temple [Alliance]
+					["qg"] = 7900,	-- Angelas Moonbreeze
+					["coord"] = { 31.8, 45.6, FERALAS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 46,
+				}),
+				q(3380, {	-- The Sunken Temple [Horde]
+					["qg"] = 8115,	-- Witch Doctor Uzer'i
+					["coord"] = { 74.4, 43.4, FERALAS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 46,
+				}),
 				q(2741, {	-- The Super Egg-O-Matic
 					["provider"] = { "o", 142071 },	-- Egg-O-Matic
 					["timeline"] = { REMOVED_4_0_3 },

@@ -360,24 +360,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				
-				q(4787, {	-- The Ancient Egg
-					["qg"] = 8579,	-- Yeh'kinya
-					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
-					["coord"] = { 67, 22.4, TANARIS },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_HINTERLANDS },
-					["lvl"] = 40,
-					["groups"] = {
-						objective(1, {	-- 0/1 Ancient Egg
-							["providers"] = {
-								{ "i",  12402 },	-- Ancient Egg
-								{ "o", 175889 },	-- Ancient Egg
-							},
-							["coord"] = { 57.5, 86.7, THE_HINTERLANDS },
-						}),
-					},
-				}),
 				applyclassicphase(PHASE_FOUR, q(8236, {	-- The Azure Key
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8235,	-- Encoded Fragments
@@ -492,40 +474,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				q(3444, {	-- The Stone Circle
-					["qg"] = 7771,	-- Marvon Rivetseeker
-					["sourceQuests"] = {
-						3445,	-- The Sunken Temple [Alliance]
-						3380,	-- The Sunken Temple [Horde]
-					},
-					["coord"] = { 52.6, 45.8, TANARIS },
-					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { THE_BARRENS },
-					["lvl"] = 46,
-					["groups"] = {
-						objective(1, {	-- 0/1 Stone Circle
-							["providers"] = {
-								{ "i",  10556 },	-- Stone Circle
-								{ "o", 149036 },	-- Marvon's Chest
-							},
-							["coord"] = { 62.5, 38.5, THE_BARRENS },
-						}),
-					},
-				}),
-				q(3445, {	-- The Sunken Temple [Alliance]
-					["qg"] = 7900,	-- Angelas Moonbreeze
-					["coord"] = { 31.8, 45.6, FERALAS },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 46,
-				}),
-				q(3380, {	-- The Sunken Temple [Horde]
-					["qg"] = 8115,	-- Witch Doctor Uzer'i
-					["coord"] = { 74.4, 43.4, FERALAS },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 46,
-				}),
 				q(1445, {	-- The Temple of Atal'Hakkar
 					["qg"] = 1443,	-- Fel'zerul
 					["sourceQuest"] = 1424,	-- Pool of Tears
@@ -844,6 +792,60 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["lvl"] = 50,
 				["groups"] = {
 					n(QUESTS, {
+						q(82112, {	-- A Better Ingredient
+							["qg"] = 9619,	-- Torwa Pathfinder
+							--["sourceQuest"] = 9051,  -- Toxic Test
+							["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+							["classes"] = { DRUID },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/1 Putrid Vine
+									["provider"] = { "i", 22444 },	-- Putrid Vine
+									["cr"] = 218624,	-- Atal'alarion
+								}),
+								i(22458, {	-- Moonshadow Stave
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(22272, {	-- Forest's Embrace
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(22274, {	-- Grizzled Pelt
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+							},
+						}),
+						q(82081, {	-- A Broken Ritual (A)
+							["providers"] = {
+								{ "i", 221346 },	-- Scapula of the Fallen Avatar (A)
+								{ "n",  14875 },	-- Molthor <Hand of Rastakhan>
+							},
+							["coord"] = { 15.0, 15.2, STRANGLETHORN_VALE },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 50,
+							["groups"] = {
+								i(220626),	-- Drakeclaw Band of the Berserker
+								i(220629),	-- Drakeclaw Band of the Blood Prophet
+								i(220628),	-- Drakeclaw Band of the Harbinger
+								i(220630),	-- Drakeclaw Band of the Juggernaut
+								i(220627),	-- Drakeclaw Band of the Stalker
+							},
+						}),
+						q(82083, {	-- A Broken Ritual (H)
+							["providers"] = {
+								{ "i", 221363 },	-- Scapula of the Fallen Avatar (H)
+								{ "n",  14875 },	-- Molthor <Hand of Rastakhan>
+							},
+							["coord"] = { 15.0, 15.2, STRANGLETHORN_VALE },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 50,
+							["groups"] = {
+								i(220626),	-- Drakeclaw Band of the Berserker
+								i(220629),	-- Drakeclaw Band of the Blood Prophet
+								i(220628),	-- Drakeclaw Band of the Harbinger
+								i(220630),	-- Drakeclaw Band of the Juggernaut
+								i(220627),	-- Drakeclaw Band of the Stalker
+							},
+						}),
 						q(82021, {	-- A Fortuitous Turn of Events
 							["qg"] = 222188,	-- Shadowy Figure
 							["sourceQuest"] = 82020,	-- Return to Moonglade
@@ -869,11 +871,143 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 							},
 						}),
+						q(82111, {	-- Blood of Morphaz
+							["qg"] = 8405,	-- Ogtinc
+							--["sourceQuest"] = 8256,	-- The Ichor of Undeath
+							["coord"] = { 42.2, 42.6, AZSHARA },
+							["classes"] = { PRIEST },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/1 Blood of Morphaz
+									["provider"] = { "i", 20025 },	-- Blood of Morphaz
+									["cr"] = 221942,	-- Morphaz
+								}),
+								i(19990, {	-- Blessed Prayer Beads
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20006, {	-- Circle of Hope
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20082, {	-- Woestave
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+							},
+						}),
+						q(82113, {	-- Da Voodoo
+							["qg"] = 6176,	-- Bath'rah the Windwatcher
+							--["sourceQuest"] = 8412,	-- Spirit Totem
+							["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+							-- #if BEFORE TBC
+							["races"] = HORDE_ONLY,
+							-- #endif
+							["classes"] = { SHAMAN },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/2 Amber Voodoo Feather
+									["provider"] = { "i", 20606 },	-- Amber Voodoo Feather
+								}),
+								objective(2, {	-- 0/2 Blue Voodoo Feather
+									["provider"] = { "i", 20607 },	-- Blue Voodoo Feather
+								}),
+								objective(3, {	-- 0/2 Green Voodoo Feather
+									["provider"] = { "i", 20608 },	-- Green Voodoo Feather
+								}),
+								i(20369, {	-- Azurite Fists
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20503, {	-- Enamored Water Spirit
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20556, {	-- Wildstaff
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+							},
+						}),
+						q(82114, {	-- Destroy Morphaz
+							["qg"] = 8379,	-- Archmage Xylem
+							--["sourceQuest"] = 8252,	-- The Siren's Coral
+							["coord"] = { 29.6, 40.6, AZSHARA },
+							["classes"] = { MAGE },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/1 Arcane Shard
+									["provider"] = { "i", 20085 },	-- Arcane Shard
+									["cr"] = 221942,	-- Morphaz
+								}),
+								i(20035, {	-- Glacial Spike
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20036, {	-- Fire Ruby
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20037, {	-- Arcane Crystal Pendant
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+							},
+						}),
+						q(82106, {	-- Forging the Mightstone
+							["qg"] = 10838,	-- Commander Ashlam Valorfist
+							--["sourceQuest"] = 8416,	-- Inert Scourgestones
+							["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
+							["classes"] = { PALADIN },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/2 Amber Voodoo Feather
+									["provider"] = { "i", 20606 },	-- Amber Voodoo Feather
+								}),
+								objective(2, {	-- 0/2 Blue Voodoo Feather
+									["provider"] = { "i", 20607 },	-- Blue Voodoo Feather
+								}),
+								objective(3, {	-- 0/2 Green Voodoo Feather
+									["provider"] = { "i", 20608 },	-- Green Voodoo Feather
+								}),
+								i(20504, {	-- Lightforged Blade
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20505, {	-- Chivalrous Signet
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20512, {	-- Sanctified Orb
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20620, {	-- Holy Mightstone
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+							},
+						}),
 						q(82019, {	-- Going Under
 							["qg"] = 5353,	-- Itharius
 							["sourceQuest"] = 82018,	-- Itharius
 							["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
 							["lvl"] = 40,
+						}),
+						q(82096, {	-- Into the Depths
+							["providers"] = {
+								{ "n",  7771 },	-- Marvon Rivetseeker
+								{ "i",  10466 },	-- Atal'ai Stone Circle
+								{ "o", 148836 },	-- Altar of Hakkar
+							},
+							["coord"] = { 52.6, 45.8, TANARIS },
+							["lvl"] = 50,
+						}),
+						q(82098, {	-- Into The Temple of Atal'Hakkar
+							["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
+							["coord"] = { 64.2, 20.8, STORMWIND_CITY },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/10 Atal'ai Tablet
+									["providers"] = {
+										{ "i", 6288 },	-- Atal'ai Tablet
+										{ "o", 37099 },	-- Atal'ai Tablet
+									},
+									["description"] = "Scattered around the inside and outside of the instance.",
+								}),
+								i(1490, {	-- Guardian Talisman
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+							},
 						}),
 						q(82018, {	-- Itharius
 							["qg"] = 12042,	-- Loganaar <Druid Trainer>
@@ -888,6 +1022,18 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								}),
 							},
 						}),
+						q(82104, {	-- Jammal'an the Prophet
+							["qg"] = 5598,	-- Atal'ai Exile
+							["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/1 Head of Jammal'an
+									["provider"] = { "i", 6212 },	-- Head of Jammal'an
+								}),
+								i(221782),	-- Helm of Exile
+								i(223324),	-- Rainstrider Leggings
+							},
+						}),
 						q(82020, {	-- Return to Moonglade
 							["qg"] = 5353,	-- Itharius
 							["sourceQuest"] = 82019,	-- Going Under
@@ -898,6 +1044,44 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								objective(1, {	-- Seek out Loganaar in Moonglade
 									["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
 									["coord"] = { 52.4, 40.4, MOONGLADE },
+								}),
+							},
+						}),
+						q(82097, {	-- Secret of the Circle
+							["providers"] = {
+								{ "n",   7771 },	-- Marvon Rivetseeker
+								{ "o", 148838 },	-- Idol of Hakkar
+							},
+							["coord"] = { 52.6, 45.8, TANARIS },
+							["lvl"] = 50,
+							["groups"] = {
+								i(10773, {	-- Hakkari Urn
+									i(223325),	-- Hakkari Breastplate
+									i(223326),	-- Hakkari Shroud
+									i(223327),	-- Mark of Hakkar
+								}),
+							},
+						}),
+						q(82110, {	-- The Azure Key
+							["qg"] = 8379,	-- Archmage Xylem
+							--["sourceQuest"] = 8235,	-- Encoded Fragments
+							["coord"] = { 29.6, 40.6, AZSHARA },
+							["maps"] = { HILLSBRAD_FOOTHILLS },
+							["classes"] = { ROGUE },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/1 Azure Key
+									["provider"] = { "i", 20022 },	-- Azure Key
+									["cr"] = 221942,	-- Morphaz
+								}),
+								i(19982, {	-- Duskbat Drape
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(19984, {	-- Ebon Mask
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20255, {	-- Whisperwalk Boots
+									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
 						}),
@@ -925,6 +1109,125 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									},
 								}),
 								i(220689),	-- Void-Powered Vambraces
+							},
+						}),
+						q(82095, {	-- The God Hakkar
+							["qg"] = 8579,	-- Yeh'kinya
+							["coord"] = { 66.8, 22.4, TANARIS },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/1 Filled Egg of Hakkar
+									["provider"] = { "i", 10662 },	-- Filled Egg of Hakkar
+									["cr"] = 8443,	-- Avatar of Hakkar
+									["cost"] = {
+										{ "i", 10465, 1 },	-- Egg of Hakkar
+										{ "i", 10663, 1 },	-- Essence of Hakkar
+									},
+								}),
+								i(221781),	-- Avenguard Helm
+								i(223329),	-- Lifeforce Dirk
+								i(223328),	-- Gemburst Circlet
+							},
+						}),
+						q(82108, {	-- The Green Drake
+							["qg"] = 8405,	-- Ogtinc
+							--["sourceQuest"] = 8231,	-- Wavethrashing
+							["coord"] = { 42.2, 42.6, AZSHARA },
+							["classes"] = { HUNTER },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/1 Tooth of Morphaz
+									["provider"] = { "i", 20019 },	-- Tooth of Morphaz
+									["cr"] = 221942,	-- Morphaz
+								}),
+								i(19991, {	-- Devilsaur Eye
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(19992, {	-- Devilsaur Tooth
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20083, {	-- Hunting Spear
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+							},
+						}),
+						q(82102, {	-- The Essence of Eranikus
+							["providers"] = {
+								{ "i", 221475 },	-- Essence of Eranikus
+								{ "o", 148512 },	-- Essence Font
+							},
+							["description"] = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
+							["lvl"] = 50,
+							["groups"] = {
+								i(221474),	-- Chained Essence of Eranikus
+							},
+						}),
+						q(82100, {	-- The Temple of Atal'Hakkar
+							["qg"] = 1443,	-- Fel'zerul
+							["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
+							["races"] = HORDE_ONLY,
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/20 Fetish of Hakkar
+									["provider"] = { "i", 6181 },	-- Fetish of Hakkar
+								}),
+								i(1490, {	-- Guardian Talisman
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+							},
+						}),
+						q(82115, {	-- Trolls of a Feather
+							["qg"] = 14470,	-- Impsy <Niby's Minion>
+							--["sourceQuest"] = 8421,	-- The Wrong Stuff
+							["coord"] = { 41.6, 45.0, FELWOOD },
+							["classes"] = { WARLOCK },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/2 Amber Voodoo Feather
+									["provider"] = { "i", 20606 },	-- Amber Voodoo Feather
+								}),
+								objective(2, {	-- 0/2 Blue Voodoo Feather
+									["provider"] = { "i", 20607 },	-- Blue Voodoo Feather
+								}),
+								objective(3, {	-- 0/2 Green Voodoo Feather
+									["provider"] = { "i", 20608 },	-- Green Voodoo Feather
+								}),
+								i(20534, {	-- Abyss Shard
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20530, {	-- Robes of Servitude
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20536, {	-- Soul Harvester
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+							},
+						}),
+						q(82107, {	-- Voodoo Feathers
+							["qg"] = 7572,	-- Fallen Hero of the Horde
+							--["sourceQuest"] = 8424,	-- War on the Shadowsworn
+							["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+							["classes"] = { WARRIOR },
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/2 Amber Voodoo Feather
+									["provider"] = { "i", 20606 },	-- Amber Voodoo Feather
+								}),
+								objective(2, {	-- 0/2 Blue Voodoo Feather
+									["provider"] = { "i", 20607 },	-- Blue Voodoo Feather
+								}),
+								objective(3, {	-- 0/2 Green Voodoo Feather
+									["provider"] = { "i", 20608 },	-- Green Voodoo Feather
+								}),
+								i(20130, {	-- Diamond Flask
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20517, {	-- Razorsteel Shoulders
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
+								i(20521, {	-- Fury Visor
+									["timeline"] = { REMOVED_4_0_3 },
+								}),
 							},
 						}),
 						q(81986, {	-- Waking the Nightmare
@@ -1185,8 +1488,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					n(221394, {	-- Avatar of Hakkar
 						["description"] = "Have all the ranged stacked and then kill the four Atal'ai Ritualists.\n\nOnce Hakkari Bloodkeeper casts Bubbling Blood, move out of it. He'll ocasionally cast Spirit Chains, move out of the group before getting dispelled. (it will spread otherwise) Frightsome Howl should be dispelled immediately.\n\nAfter 33 seconds the Bloodkeeper will resurrect Hakkar and pass on some of the damage dealt to him during that time.\n\nDecurse Curse of Tongues, and dispel the Insanity mind control that'll happen once in a while.\n\nThe boss will occasionally cast Corrupted Blood, afflicted players should move out of the raid as fast as they can, and move to the front of the boss (away from the tank) to then get hit by Drain Blood. This will dispel the debuff. Move back afterwards and then kill the boss.",
 						["groups"] = {
-							i(221346),	-- Scapula of the Fallen Avatar
-							i(221363),	-- Scapula of the Fallen Avatar
+							i(221346),	-- Scapula of the Fallen Avatar (A)
+							i(221363),	-- Scapula of the Fallen Avatar (H)
 							i(220620),	-- Wind Serpent Skull (PET!)
 							i(220686),	-- Chieftain's Bane
 							i(220588),	-- Cobra Fang Claw

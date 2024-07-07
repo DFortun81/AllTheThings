@@ -857,9 +857,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						q(78917, {	-- The Heart of the Void (H)
 							["providers"] = {
 								{ "i", 211452 },	-- Perfect Blackfathom Pearl
-								--{ "n",  },	-- CRIEVE NOTE: Not sure what the NPC is or where they are.
+								{ "n",   9087 },	-- Bashana Runetotem
 							},
-							["maps"] = { THUNDER_BLUFF },
+							["coord"] = { 70.8, 33.8, THUNDER_BLUFF },
 							["races"] = HORDE_ONLY,
 							["lvl"] = 25,
 							["groups"] = {

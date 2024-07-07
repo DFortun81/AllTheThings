@@ -4131,6 +4131,9 @@ root(ROOTS.NeverImplemented, {
 		i(211940),	-- Ecks'av's Tribal Guardian
 		i(211944),	-- Tojara's Will
 		i(211941),	-- Windwalker's Yari
+		
+		-- Phase 3
+		applyclassicphase(SOD_PHASE_THREE, i(220619)),	-- Atal'ai Blood Ceremony
 	}))),
 });
 -- #endif

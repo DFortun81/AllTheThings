@@ -167,6 +167,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 40,
 				}),
+				q(4787, {	-- The Ancient Egg
+					["qg"] = 8579,	-- Yeh'kinya
+					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
+					["coord"] = { 67, 22.4, TANARIS },
+					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { THE_HINTERLANDS },
+					["lvl"] = 40,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ancient Egg
+							["providers"] = {
+								{ "i",  12402 },	-- Ancient Egg
+								{ "o", 175889 },	-- Ancient Egg
+							},
+							["coord"] = { 57.5, 86.7, THE_HINTERLANDS },
+						}),
+					},
+				}),
 				q(2769, {	-- The Brassbolts Brothers
 					["qg"] = 6169,	-- Klockmort Spannerspan
 					["coord"] = { 68.2, 46.2, IRONFORGE },
