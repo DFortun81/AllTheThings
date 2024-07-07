@@ -3987,135 +3987,112 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 	filter(RECIPES, {
 		cl(DRUID, {
 			applyclassicphase(SOD_PHASE_TWO, i(216764, {	-- Leaflet of Deeper Wilds
-				["recipeID"] = 436956,	-- Deeper Wilds
-				["classes"] = { DRUID },
-				["lvl"] = 25,
+				["spellID"] = 436956,	-- Deeper Wilds
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216771, {	-- Leaflet of Enhanced Restoration
-				["recipeID"] = 417123,	-- Enhanced Restoration
-				["classes"] = { DRUID },
-				["lvl"] = 25,
+				["spellID"] = 417123,	-- Enhanced Restoration
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216767, {	-- Leaflet of Revive
-				["recipeID"] = 437138,	-- Revive
-				["classes"] = { DRUID },
-				["lvl"] = 25,
+				["spellID"] = 437138,	-- Revive
+				["f"] = RECIPES,
 			})),
 		}),
 		cl(HUNTER, {
 			applyclassicphase(SOD_PHASE_TWO, i(216770, {	-- Treatise on Aspect of the Viper
-				["recipeID"] = 415423,	-- Aspect of the Viper
-				["classes"] = { HUNTER },
-				["lvl"] = 25,
+				["spellID"] = 415423,	-- Aspect of the Viper
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226401, {	-- Treatise on the Heart of the Lion
-				["recipeID"] = 409580,	-- Heart of the Lion
-				["classes"] = { HUNTER },
-				["lvl"] = 10,
+				["spellID"] = 409580,	-- Heart of the Lion
+				["f"] = RECIPES,
 			})),
 		}),
 		cl(MAGE, {
 			applyclassicphase(SOD_PHASE_TWO, i(216740, {	-- Tome of Expanded Intellect
-				["recipeID"] = 436949,	-- Expanded Intellect
-				["classes"] = { MAGE },
-				["lvl"] = 25,
+				["spellID"] = 436949,	-- Expanded Intellect
+				["f"] = RECIPES,
 			})),
 		}),
 		cl(PALADIN, {
 			applyclassicphase(SOD_PHASE_FOUR, i(226399, {	-- Testament of Avenging Wrath
-				["recipeID"] = 407788,	-- Avenging Wrath
-				["classes"] = { PALADIN },
-				["lvl"] = 25,
+				["spellID"] = 407788,	-- Avenging Wrath
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216768, {	-- Testament of Enhanced Blessings
-				["recipeID"] = 435984,	-- Enhanced Blessings
-				["classes"] = { PALADIN },
-				["lvl"] = 25,
+				["spellID"] = 435984,	-- Enhanced Blessings
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226398, {	-- Testament of Martyrdom
-				["recipeID"] = 407798,	-- Seal of Martyrdom
-				["classes"] = { PALADIN },
-				["lvl"] = 10,
+				["spellID"] = 407798,	-- Seal of Martyrdom
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226400, {	-- Testament of the Exorcist
-				["recipeID"] = 415076,	-- Exorcist
-				["classes"] = { PALADIN },
-				["lvl"] = 10,
+				["spellID"] = 415076,	-- Exorcist
+				["f"] = RECIPES,
 			})),
 		}),
 		cl(PRIEST, {
 			applyclassicphase(SOD_PHASE_TWO, i(216744, {	-- Scroll of Increased Fortitude
-				["recipeID"] = 436951,	-- Increased Fortitude
-				["classes"] = { PRIEST },
-				["lvl"] = 25,
+				["spellID"] = 436951,	-- Increased Fortitude
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216745, {	-- Scroll of Shadowfiend
-				["recipeID"] = 401977,	-- Shadowfiend
-				["classes"] = { PRIEST },
-				["lvl"] = 25,
+				["spellID"] = 401977,	-- Shadowfiend
+				["f"] = RECIPES,
 			})),
 		}),
 		cl(ROGUE, {
 			applyclassicphase(SOD_PHASE_FOUR, i(226394, {	-- Manual of Atrophic Poison
-				["recipeID"] = 439503,	-- Atrophic Poison
-				["classes"] = { ROGUE },
-				["lvl"] = 60,
+				["spellID"] = 439503,	-- Atrophic Poison
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226395, {	-- Manual of Numbing Poison
-				["recipeID"] = 439505,	-- Numbing Poison
-				["classes"] = { ROGUE },
-				["lvl"] = 60,
+				["spellID"] = 439505,	-- Numbing Poison
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226396, {	-- Manual of Occult Poison
-				["recipeID"] = 458822,	-- Occult Poison I
-				["classes"] = { ROGUE },
-				["lvl"] = 60,
+				["spellID"] = 458822,	-- Occult Poison I
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216738, {	-- Manual of Redirect
-				["recipeID"] = 438040,	-- Redirect
-				["classes"] = { ROGUE },
-				["lvl"] = 25,
+				["spellID"] = 438040,	-- Redirect
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226397, {	-- Manual of Sebacious Poison
-				["recipeID"] = 439500,	-- Sebacious Poison
-				["classes"] = { ROGUE },
-				["lvl"] = 60,
+				["spellID"] = 439500,	-- Sebacious Poison
+				["f"] = RECIPES,
 			})),
 		}),
 		cl(SHAMAN, {
 			applyclassicphase(SOD_PHASE_FOUR, i(226402, {	-- Revelation of Shamanistic Rage
-				["recipeID"] = 425336,	-- Shamanistic Rage
-				["classes"] = { SHAMAN },
-				["lvl"] = 10,
+				["spellID"] = 425336,	-- Shamanistic Rage
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216769, {	-- Revelation of Totemic Projection
-				["recipeID"] = 437009,	-- Totemic Projection
-				["classes"] = { SHAMAN },
-				["lvl"] = 25,
+				["spellID"] = 437009,	-- Totemic Projection
+				["f"] = RECIPES,
 			})),
 		}),
 		cl(WARLOCK, {
 			applyclassicphase(SOD_PHASE_TWO, i(216748, {	-- Grimoire of Portal of Summoning
-				["recipeID"] = 437169,	-- Portal of Summoning
-				["classes"] = { WARLOCK },
-				["lvl"] = 25,
+				["spellID"] = 437169,	-- Portal of Summoning
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216747, {	-- Grimoire of Soul Harvesting
-				["recipeID"] = 437032,	-- Soul Harvesting
-				["classes"] = { WARLOCK },
-				["lvl"] = 25,
+				["spellID"] = 437032,	-- Soul Harvesting
+				["f"] = RECIPES,
 			})),
 		}),
 		cl(WARRIOR, {
 			applyclassicphase(SOD_PHASE_TWO, i(216746, {	-- Handbook of Commanding Shout
-				["recipeID"] = 403215,	-- Commanding Shout
-				["classes"] = { WARRIOR },
-				["lvl"] = 25,
+				["spellID"] = 403215,	-- Commanding Shout
+				["f"] = RECIPES,
 			})),
 			applyclassicphase(SOD_PHASE_FOUR, i(226403, {	-- Handbook of Meathook
-				["recipeID"] = 403228,	-- Meathook
-				["classes"] = { WARRIOR },
-				["lvl"] = 40,
+				["spellID"] = 403228,	-- Meathook
+				["f"] = RECIPES,
 			})),
 		}),
 	}),
