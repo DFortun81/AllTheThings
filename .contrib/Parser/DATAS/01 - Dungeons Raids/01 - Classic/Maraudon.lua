@@ -342,7 +342,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(132563, {	-- Chloro-Stained Britches
 								["timeline"] = { ADDED_7_0_3 },
 							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223543)),	-- Vinerot Sandals
+							i(17748, {	-- Vinerot Sandals
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(17748),	-- Vinerot Sandals
+							-- #endif
 						},
 					}),
 				},
@@ -403,16 +410,38 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(132561, {	-- Corrupted Keeper's Band
 								["timeline"] = { ADDED_7_0_3 },
 							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223525)),	-- Soothsayer's Headdress
+							i(17740, {	-- Soothsayer's Headdress
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(17740),	-- Soothsayer's Headdress
+							-- #endif
 							i(17739),	-- Grovekeeper's Drape
 						},
 					}),
 					e(429, {	-- Landslide
 						["creatureID"] = 12203,
 						["groups"] = {
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(223524)),	-- Fist of Stone
+							applyclassicphase(SOD_PHASE_THREE, i(223523)),	-- Cloud Stone
+							applyclassicphase(SOD_PHASE_THREE, i(223522)),	-- Helm of the Mountain
+							i(17943, {	-- Fist of Stone
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							i(17737, {	-- Cloud Stone
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							i(17734, {	-- Helm of the Mountain
+								["timeline"] = { "removed 1.15.2" },
+							}),
+							-- #else
 							i(17943),	-- Fist of Stone
 							i(17737),	-- Cloud Stone
 							i(17734),	-- Helm of the Mountain
+							-- #endif
 							i(17736),	-- Rockgrip Gauntlets
 							-- #if AFTER MOP
 							-- I'm actually unsure of when this item moved to Landslide.
