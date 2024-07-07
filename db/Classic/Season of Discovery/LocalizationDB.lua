@@ -319,6 +319,7 @@ localize(L.HEADER_NAMES, {
 	[-1000904] = "Source IDs",
 	[-1000968] = "The Blood Moon",
 	[-1000969] = "Nightmare Incursions",
+	[-1000970] = "Tier 3",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -483,6 +484,7 @@ localize(L.HEADER_ICONS, {
 	[-1000904] = "Interface/Icons/Inv_misc_questionmark",
 	[-1000968] = "237513",
 	[-1000969] = "134108",
+	[-1000970] = "Interface/ICONS/inv_scroll_11",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -2653,6 +2655,7 @@ localize(L.HEADER_NAMES, {
 	[-1000377] = "Wilder Polymorph",
 	[-1000378] = "Seelenvermittler",
 	[-1000380] = "Kopfgeld",
+	[-1000970] = "Stufe 3",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -3436,6 +3439,7 @@ localize(L.HEADER_NAMES, {
 	[-1000377] = "Polimorfo Salvaje",
 	[-1000378] = "Corredores de Almas",
 	[-1000380] = "Prima",
+	[-1000970] = "Nivel 3",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
@@ -4201,6 +4205,7 @@ localize(L.HEADER_NAMES, {
 	[-1000377] = "Polymorphe Sauvage",
 	[-1000378] = "Courtiers D'âmes",
 	[-1000380] = "Prime",
+	[-1000970] = "Étage 3",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -4982,6 +4987,7 @@ localize(L.HEADER_NAMES, {
 	[-1000377] = "Polimorfo Selvaggio",
 	[-1000378] = "Broker Dell'anima",
 	[-1000380] = "Premio",
+	[-1000970] = "Livello 3",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000273] = "Questa stagione porta un limite di livello iniziale di 25 e un nuovo gioco finale di livello 25, incluso un raid di Blackfathom Deeps per 10 giocatori con nuove meccaniche, boss nuovi e reinventati per sfidare le tattiche e le strategie dei giocatori e nuove ricompense.",
@@ -5412,6 +5418,7 @@ localize(L.HEADER_NAMES, {
 	[-1000377] = "야생 변이",
 	[-1000378] = "소울 브로커",
 	[-1000380] = "하사품",
+	[-1000970] = "층 3",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -6107,6 +6114,7 @@ localize(L.HEADER_NAMES, {
 	[-1000377] = "Polimorfo Selvagem",
 	[-1000378] = "Corretores de Almas",
 	[-1000380] = "Recompensa",
+	[-1000970] = "Nível 3",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -6787,6 +6795,7 @@ localize(L.HEADER_NAMES, {
 	[-1000378] = "Душевные брокеры",
 	[-1000380] = "Премия",
 	[-1000872] = "Пиратская буря",
+	[-1000970] = "Уровень 3",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -7568,6 +7577,7 @@ localize(L.HEADER_NAMES, {
 	[-1000377] = "野生多晶型物",
 	[-1000378] = "灵魂经纪人",
 	[-1000380] = "赏金任务",
+	[-1000970] = "等级 3",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

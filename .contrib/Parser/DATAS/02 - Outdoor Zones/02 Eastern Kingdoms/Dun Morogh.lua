@@ -1060,7 +1060,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(2195),	-- Anvilmar Knife
 								i(12446, {	-- Anvilmar Musket
-									["timeline"] = { ADDED_4_0_3 },
+									["timeline"] = { "created 1.11.1", ADDED_4_0_3 },
 								}),
 								i(5761),	-- Anvilmar Sledge
 								i(961),	-- Healing Herb

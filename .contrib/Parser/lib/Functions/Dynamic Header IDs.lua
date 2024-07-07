@@ -93,6 +93,7 @@ HeaderAssignments = {
 	["Comprehension"] = -1000274,
 	["Comprehension - Tier 1"] = -1000275,
 	["Comprehension - Tier 2"] = -1000276,
+	["Comprehension - Tier 3"] = -1000970,
 	["Corrupted Area"] = -1000901,
 	["Corrupted Gladiator: Battle for Azeroth Season 4"] = -1000928,
 	["Cosmic Gladiator: Shadowlands Season 3"] = -1000912,
@@ -480,4 +481,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000970;
+NextHeaderID = -1000971;

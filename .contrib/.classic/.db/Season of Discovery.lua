@@ -536,6 +536,52 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 						}),
 					},
 				}),
+				applyclassicphase(SOD_PHASE_TWO, n(createHeader({	-- Tier 3
+					readable = "Comprehension - Tier 3",
+					icon = "Interface\\ICONS\\inv_scroll_11",
+					text = {
+						en = "Tier 3",
+						es = "Nivel 3",
+						de = "Stufe 3",
+						fr = "Étage 3",
+						it = "Livello 3",
+						pt = "Nível 3",
+						ru = "Уровень 3",
+						ko = "층 3",
+						cn = "等级 3",
+					},
+				}), {
+					["cost"] = {
+						{ "i", 211779, 1 },	-- Comprehension Charm
+						{ "i", 213545, 1 },	-- Scroll: PEATCHY ATTAX
+						{ "i", 213546, 1 },	-- Scroll: SHOOBEEDOOP
+						{ "i", 213547, 1 },	-- Scroll: THAW WORDS
+						{ "i", 213544, 1 },	-- Scroll: TOPAZ YORAK
+						{ "i", 213543, 1 },	-- Scroll: UPDOG
+					},
+					["groups"] = {
+						i(217496, {	-- Scroll of the Blade
+							["cost"] = {{ "i", 7714, 1 }},	-- Hypnotic Blade
+							["classes"] = { MAGE },
+							["groups"] = {
+								i(217497),	-- Narpas Sword
+							},
+						}),
+						i(213548, {	-- Scroll of Liminal Passage
+							["classes"] = { MAGE },
+						}),
+						i(215257, {	-- Scroll of Comprehension
+							["classes"] = { MAGE },
+						}),
+						i(217495, {	-- Scroll of Cryoblast
+							["classes"] = { MAGE },
+						}),
+						i(213550, {	-- Scroll of Polymorph: Odd Melon
+							["classes"] = { MAGE },
+						}),
+						applyclassicphase(SOD_PHASE_THREE, i(220792)),	-- Scroll of Spatial Mending
+					},
+				})),
 				i(203747, {	-- Spell Notes: Fingers of Frost
 					["cost"] = {
 						{ "i", 211779, 1 },	-- Comprehension Charm

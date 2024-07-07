@@ -3371,6 +3371,21 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			["description"] = "This might just be a Pee Wee Herman quote.",
 			["classes"] = { MAGE },
 		})),
+		applyclassicphase(SOD_PHASE_TWO, i(213545, {	-- PEATCHY ATTAX
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_TWO, i(213546, {	-- Scroll: SHOOBEEDOOP
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_TWO, i(213547, {	-- Scroll: THAW WORDS
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_TWO, i(213544, {	-- Scroll: TOPAZ YORAK
+			["classes"] = { MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_TWO, i(213543, {	-- Scroll: UPDOG
+			["classes"] = { MAGE },
+		})),
 		-- #endif
 		-- #if BEFORE 5.0.4
 		applyclassicphase(PHASE_FIVE, i(23199, {	-- Totem of the Storm [Phase 5/6]
