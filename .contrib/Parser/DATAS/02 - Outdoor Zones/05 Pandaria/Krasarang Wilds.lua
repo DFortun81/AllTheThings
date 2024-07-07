@@ -1878,6 +1878,14 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 30666 },	-- Sudden, Unexpected Crocolist Aggression
 						["provider"] = { "n", 60173 },	-- Jay Cloudfall
 						["coord"] = { 51.6, 76.8, KRASARANG_WILDS },
+						["groups"] = {
+							o(211379, {	-- Spare Plank
+								i(80685),	-- Spare Plank (QI!)
+							}),
+							o(211382, {	-- Tough Kelp
+								i(80804),	-- Tough Kelp (QI!)
+							}),
+						},
 					}),
 					q(30675, {	-- Buried Hozen Treasure
 						["provider"] = { "i", 80827 },	-- Confusing Treasure Map
@@ -1888,6 +1896,9 @@ root(ROOTS.Zones, {
 							60358,	-- Unga Villager
 						},
 						["g"] = {
+							o(211420, {	-- Lump of Sand
+								i(80817),	-- Buried Hozen Treasure (QI!)
+							}),
 							i(80822),	-- The Golden Banana (TOY!)
 						},
 					}),
@@ -2137,6 +2148,11 @@ root(ROOTS.Zones, {
 					q(30667, {	-- Particular Plumage
 						["provider"] = { "n", 60182 },	-- Tony Tuna
 						["coord"] = { 53.7, 74.4, KRASARANG_WILDS },
+						["groups"] = {
+							i(80677),	-- Emerald Tailfeather (QI!)
+							i(80678),	-- Crimson Tailfeather (QI!)
+							i(80679),	-- Dusky Tailfeather (QI!)
+						},
 					}),
 					q(30179, {	-- Poisoned!
 						["sourceQuests"] = {
@@ -2206,6 +2222,12 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56112 },	-- Kang Bramblestaff
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							o_repeated({
+								i(79120),	-- Mogu Artifact (QI!)
+								o(210416),	-- Mogu Artifact
+								o(210417),	-- Mogu Artifact
+								o(210418),	-- Mogu Artifact
+							}),
 							i(81503),	-- Nayeli Cuffs
 							i(81504),	-- Mortbreateh Bindings
 							i(81505),	-- Deepwild Armguards
@@ -2454,6 +2476,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 58607 },	-- Sunwalker Dezco
 						["coord"] = { 15.2, 36.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(79163),	-- Imperial Lotus Poultice (QI!)
+						},
 					}),
 					q(30445, {	-- The Waters of Youth
 						["sourceQuests"] = { 30359 },	-- The Lord Reclaimer
@@ -2618,6 +2643,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 60139 },	-- Wise Ana Wu
 						["coord"] = { 47.6, 78.1, KRASARANG_WILDS },
 						["g"] = {
+							i(80810),	-- Shark Fillet (QI!)
 							i(88043),	-- Nayeli Shoes
 							i(88042),	-- Mortbreath Shoes
 							i(88041),	-- Deepwild Greaves
