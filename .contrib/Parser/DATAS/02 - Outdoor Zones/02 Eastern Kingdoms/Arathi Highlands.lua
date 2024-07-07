@@ -2195,6 +2195,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_TWO, i(213447, {	-- Rosary of the Light
+					["description"] = "Combine the 3 divine prayer beads and then bring it to Brother Atticus.",
+					["timeline"] = { "added 1.15.1" },
+					["cost"] = {
+						{ "i", 213448, 1 },	-- Divine Prayer Bead I
+						{ "i", 213449, 1 },	-- Divine Prayer Bead II
+						{ "i", 213450, 1 },	-- Divine Prayer Bead III
+					},
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(213128, {	-- Rune of Piety
+					["provider"] = { "i", 213447 },	-- Rosary of the Light
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						recipe(426175),	-- Engrave Belt - Malleable Protection
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(2816, {	-- Androd Fadran <Leatherworking Supplies>
 					["coords"] = {
@@ -2524,6 +2548,35 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(3345, {	-- Silk Wizard Hat
 					["cr"] = 2591,	-- Syndicate Magus
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, i(213444, {	-- Tarnished Prayer Bead I
+					["description"] = "With this in your inventory and while in combat, cast Blessing of Might and then kill an enemy that grants XP.",
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(213448),	-- Divine Prayer Bead I
+					},
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(213445, {	-- Tarnished Prayer Bead II
+					["description"] = "With this in your inventory and while in combat with less than 10% health, cast Divine Shield.",
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(213449),	-- Divine Prayer Bead II
+					},
+				})),
+				applyclassicphase(SOD_PHASE_TWO, i(213446, {	-- Tarnished Prayer Bead III
+					["description"] = "With this in your inventory and while in combat, cast Seal of Justice and then cast Judgement AS THE MOB IS RUNNING AWAY. Judging the enemy before they run will not work.",
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(213450),	-- Divine Prayer Bead III
+					},
+				})),
+				-- #endif
 				i(4480, {	-- Thundering Charm
 					["crs"] = {
 						2762,	-- Thundering Exile

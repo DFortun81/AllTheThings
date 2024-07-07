@@ -102,6 +102,7 @@ local questShortcut = function(qg, coord, brief, lvl, id, t)
 	end
 	table.insert(providers, { "n", qg });
 	table.insert(groups, i(brief));
+	t.coord = coord;
 	t.maxReputation = { 2641, EXALTED };	-- Emerald Wardens
 	t.isDaily = true;
 	t.lvl = lvl;
