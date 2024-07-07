@@ -149,7 +149,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						19894,	-- Temple of the Jade Serpent
 					}},
 				}),
-				ach(19912),		-- Order of the Cloud Serpent
 				ach(19872, {	-- The Jade Forest
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
@@ -170,6 +169,13 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}},
 				}),
 
+			}),
+			n(FACTIONS, {
+				faction(1271, {	-- Order of the Cloud Serpent
+					n(ACHIEVEMENTS, {
+						ach(19912),		-- Order of the Cloud Serpent
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(81638, {	-- Home Is Where the Hearthstone Is

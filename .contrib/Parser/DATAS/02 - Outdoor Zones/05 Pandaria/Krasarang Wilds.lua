@@ -1714,6 +1714,13 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 60529 },	-- Yan Quillpaw
 									["isDaily"] = true,
 									["coord"] = { 32.0, 61.8, KRASARANG_WILDS },
+									["groups"] = {
+										o_repeated({
+											i(80938),	-- Gift of the Great Crane (QI!)
+											o(211451),	-- Cerulean Gift of the Crane
+											o(211452),	-- Bronze Gift of the Crane
+										}),
+									},
 								}),
 								q(30729, {	-- Julia Bates
 									["provider"] = { "n", 60506 },	-- Thelonius

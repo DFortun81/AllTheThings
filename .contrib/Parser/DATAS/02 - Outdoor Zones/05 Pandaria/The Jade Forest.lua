@@ -184,6 +184,14 @@ root(ROOTS.Zones, {
 									["sourceQuests"] = { 30134 },	-- Wild Things
 									["provider"] = { "n", 58225 },	-- Instructor Tong
 									["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
+									["groups"] = {
+										o_repeated({
+											i(78959),	-- Serpent Egg (QI!)
+											o(210238),	-- Serpent Egg
+											o(210239),	-- Serpent Egg
+											o(210240),	-- Serpent Egg
+										}),
+									},
 								}),
 								q(30157, {	-- Emptier Nests
 									["minReputation"] = { 1271, HONORED },
@@ -195,6 +203,9 @@ root(ROOTS.Zones, {
 									["sourceQuests"] = { 30134 },	-- Wild Things
 									["provider"] = { "n", 58225 },	-- Instructor Tong
 									["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
+									["groups"] = {
+										i(78947),	-- Silken Rope (QI!)
+									},
 								}),
 								q(30156, {	-- Feeding Time
 									["minReputation"] = { 1271, HONORED },
@@ -286,10 +297,50 @@ root(ROOTS.Zones, {
 									["coord"] = { 57.6, 44.9, THE_JADE_FOREST },
 								}),
 								q(31784, {	-- Onyx To Goodness
+									["maxReputation"] = { 1271, EXALTED },
 									["repeatable"] = true,
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
-									["cost"] = { { "i", 89155, 1 } },	-- 1x Onyx Egg
+									["groups"] = {
+										o(214945, {	-- Onyx Egg
+											["description"] = "Collect Onyx Eggs until exalted for turn-in reputation with the Order of the Cloud Serpent's",
+											["coords"] = {
+												{ 62.0, 29.6, THE_JADE_FOREST },
+												{ 62.2, 29.3, THE_JADE_FOREST },
+												{ 62.2, 31.2, THE_JADE_FOREST },
+												{ 62.3, 28.1, THE_JADE_FOREST },
+												{ 62.4, 32.4, THE_JADE_FOREST },
+												{ 62.4, 32.8, THE_JADE_FOREST },
+												{ 62.5, 30.1, THE_JADE_FOREST },
+												{ 62.5, 32.4, THE_JADE_FOREST },
+												{ 62.8, 28.9, THE_JADE_FOREST },
+												{ 63.0, 22.0, THE_JADE_FOREST },
+												{ 63.3, 27.4, THE_JADE_FOREST },
+												{ 63.7, 21.9, THE_JADE_FOREST },
+												{ 64.2, 23.9, THE_JADE_FOREST },
+												{ 65.1, 26.2, THE_JADE_FOREST },
+												{ 65.2, 24.8, THE_JADE_FOREST },
+												{ 65.4, 23.4, THE_JADE_FOREST },
+												{ 65.6, 25.1, THE_JADE_FOREST },
+												{ 66.0, 30.7, THE_JADE_FOREST },
+												{ 66.2, 33.4, THE_JADE_FOREST },
+												{ 66.4, 29.4, THE_JADE_FOREST },
+												{ 66.6, 31.6, THE_JADE_FOREST },
+												{ 67.0, 30.2, THE_JADE_FOREST },
+												{ 67.0, 32.7, THE_JADE_FOREST },
+												{ 67.1, 25.0, THE_JADE_FOREST },
+												{ 67.1, 33.8, THE_JADE_FOREST },
+												{ 67.5, 33.4, THE_JADE_FOREST },
+												{ 67.5, 33.5, THE_JADE_FOREST },
+												{ 69.7, 31.6, THE_JADE_FOREST },
+												{ 70.4, 28.6, THE_JADE_FOREST },
+												{ 70.5, 29.0, THE_JADE_FOREST },
+											},
+											["groups"] = {
+												i(89155),	-- Onyx Egg
+											},
+										}),
+									},
 								}),
 								q(31704, {	-- Pooped
 									["minReputation"] = { 1271, HONORED },
@@ -319,6 +370,14 @@ root(ROOTS.Zones, {
 									["provider"] = { "n", 58510 },	-- Suchi the Sweet
 									["isDaily"] = true,
 									["coord"] = { 58.4, 44.7, THE_JADE_FOREST },
+									["groups"] = {
+										o_repeated({
+											i(79067),	-- Stolen Egg (QI!)
+											o(210238),	-- Serpent Egg
+											o(210239),	-- Serpent Egg
+											o(210240),	-- Serpent Egg
+										}),
+									},
 								}),
 								q(30155, {	-- Restoring the Balance
 									["minReputation"] = { 1271, HONORED },
