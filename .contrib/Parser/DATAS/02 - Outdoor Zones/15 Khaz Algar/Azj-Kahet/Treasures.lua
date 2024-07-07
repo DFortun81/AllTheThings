@@ -272,6 +272,54 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				-- TODO
 				--["coord"] = { X, Y, AZJ_KAHET },
 			}),
+			o(454343, {	-- Ethos of War, Part 1
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(454344, {	-- Ethos of War, Part 2
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(454348, {	-- Ethos of War, Part 3
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(454350, {	-- Ethos of War, Part 4
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(454320, {	-- Queen Anub'izek
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(454313, {	-- Queen Xekatha
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(454316, {	-- Queen Zaltra
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(454328, {	-- Strands of Memory
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(456928, {	-- Treatise on Forms: Ascended
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(456927, {	-- Treatise on Forms: Lords
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(454332, {	-- Treatise on Forms: Sages
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(454330, {	-- Treatise on Forms: Skitterlings
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
 			n(222634, {	-- Forgotten Shadecaster
 				["coord"] = { 58.7, 90.1, AZJ_KAHET },
 				["questID"] = 82079,
