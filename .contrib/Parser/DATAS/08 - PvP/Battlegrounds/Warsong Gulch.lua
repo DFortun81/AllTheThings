@@ -1,28 +1,6 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
--- #if SEASON_OF_DISCOVERY
--- Item Database of new pvp items.
-local Items = ItemDBConditional;
-local SODItem = function(itemID, f)
-	if not f then error("ERROR: Missing 'f' for item " .. itemID); end
-	local item = { ["b"] = 1, ["f"] = f };
-	Items[itemID] = item;
-	return item;
-end
-SODItem(212587, DAGGERS);	-- Scout's Blade
-SODItem(212583, DAGGERS);	-- Sentinel's Blade
-SODItem(212584, STAVES);	-- Advisor's Gnarled Staff
-SODItem(212580, STAVES);	-- Lorekeeper's Staff
-SODItem(212586, ONE_HANDED_SWORDS);	-- Legionnaire's Sword
-SODItem(212582, ONE_HANDED_SWORDS);	-- Protector's Sword
-SODItem(212585, BOWS);	-- Outrider's Bow
-SODItem(212581, BOWS);	-- Outrunner's Bow
-
-SODItem(211500, CLOTH);	-- Resilient Cloth Headband
-SODItem(211857, LEATHER);	-- Resilient Leather Mask
-SODItem(211856, MAIL);	-- Resilient Mail Coif
--- #endif
 local ALLIANCE_FIGHT_FOR_WSG_TIER_1 = {
 	8372,	-- Fight for Warsong Gulch
 	8399,	-- Fight for Warsong Gulch

@@ -1,17 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
--- #if SEASON_OF_DISCOVERY
--- Item Database of drops in the Sunken Temple raid.
-local Items = ItemDBConditional;
-local SetItemFilter = function(itemID, f)
-	if not f then error("ERROR: Missing 'f' for item " .. itemID); end
-	local item = { ["b"] = 1, ["f"] = f };
-	Items[itemID] = item;
-	return item;
-end
-SetItemFilter(220689, CLOTH);	-- Void-Powered Vambraces
--- #endif
 local ATALAI_DEFENDERS = createHeader({
 	readable = "Atal'ai Defenders",
 	icon = "Interface\\Icons\\Inv_misc_head_troll_01",
