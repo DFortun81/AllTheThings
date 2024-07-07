@@ -280,8 +280,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if BEFORE TBC
 			n(FACTIONS, {
 				faction(471, {	-- Wildhammer Clan
-					["description"] = "This faction gets removed completely with the TBC prepatch.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game in a few weeks, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",
+					-- #if CLASSICERA
+					["description"] = "You can grind to 11999/12000 by just killing trolls and then you can grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces. @Blackbear on the ATT Discord proposed for Classic Era that the goal for this should be Exalted. Be mad at him! :)",
+					-- #else
+					["description"] = "This faction gets removed completely with the TBC prepatch, so grinding this to Exalted makes no sense.\n\nYou can grind to 11999/12000 by just killing trolls and then you can *technically* grind to Exalted by turning in Troll Necklaces at a rate of 2 Reputation per 5 necklaces, but rather than encourage you to totally waste your life on a Reputation that gets ultimately removed from the game after the season is over, I'll artificially cap the goal in ATT to Revered.\n\nGodspeed.",
 					["minReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
+					-- #endif
+					["OnTooltip"] = [[function(t, tooltipInfo)
+						local reputation = t.reputation;
+						if reputation < 42000 then
+							local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+							if reputation < ]] .. (REVERED - 1) .. [[ then
+								addRepInfo(tooltipInfo, reputation, "Kill Trolls in the Hinterlands (Stops at Revered)", 5, ]] .. (REVERED - 1) .. [[, ]] .. NEUTRAL .. [[);
+								tinsert(tooltipInfo, { left = " * PROTIP: Do NOT turn in the necklaces until after Revered!", r = 1, g = 0.5, b = 0.5 });
+							else
+								local repPer, remainingTurnIns = addRepInfo(tooltipInfo, reputation, "Turn in Troll Tribal Necklaces (x5)", 2, 42000);
+								local remaining = ((remainingTurnIns * 5) - ]] .. WOWAPI_GetItemCount(9259) .. [[);
+								if remaining > 0 then
+									tinsert(tooltipInfo, { left = "You need " .. remaining .. " more necklaces for Exalted.", r = 1, g = 1, b = 0 });
+								end
+							end
+						end
+					end]],
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -1762,7 +1782,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 2880,	-- Troll Necklace Bounty
 					["coord"] = { 14.8, 44.6, THE_HINTERLANDS },
 					["timeline"] = { REMOVED_2_0_3 },
-					-- #if BEFORE TBC
+					-- #if CLASSICERA
+					["maxReputation"] = { 471, EXALTED },	-- Wildhammer Clan, Exalted.
+					-- #elseif BEFORE TBC
 					["maxReputation"] = { 471, REVERED },	-- Wildhammer Clan, Revered.
 					-- #endif
 					["cost"] = { { "i", 9259, 5 } },	-- Troll Tribal Necklace
