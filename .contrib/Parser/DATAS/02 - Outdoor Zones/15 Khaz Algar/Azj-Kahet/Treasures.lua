@@ -260,6 +260,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				},
 			}),
 			-- achievement
+			o(454335, {	-- Entomological Essay on Grubs, Volume 1
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(454336, {	-- Entomological Essay on Grubs, Volume 2
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
+			o(454338, {	-- Entomological Essay on Grubs, Volume 3
+				-- TODO
+				--["coord"] = { X, Y, AZJ_KAHET },
+			}),
 			n(222634, {	-- Forgotten Shadecaster
 				["coord"] = { 58.7, 90.1, AZJ_KAHET },
 				["questID"] = 82079,

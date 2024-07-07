@@ -36,21 +36,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}},
 			}),
 			ach(40620),		-- Back to the Wall
-			-- TODO: Remove _noautomation when possible
-			ach(40629, bubbleDown({ ["_noautomation"] = true, }, {	-- Bookworm
+			achraw(40629, {	-- Bookworm
 				crit(68983, {	-- Entomological Essay on Grubs, Volume 1
-					-- TODO: Add this provider somewhere
-					--["provider"] = { "o", 454335 },
+					["provider"] = { "o", 454335 },
 				}),
 				crit(68989, {	-- Entomological Essay on Grubs, Volume 2
-					-- TODO: Add this provider somewhere
-					--["provider"] = { "o", 454336 },
+					["provider"] = { "o", 454336 },
 				}),
 				crit(68990, {	-- Entomological Essay on Grubs, Volume 3
-					-- TODO: Add this provider somewhere
-					--["provider"] = { "o", 454338 },
+					["provider"] = { "o", 454338 },
 				}),
-			})),
+			}),
 			ach(40822, {	-- Explore Azj-Kahet
 				-- TODO: These criteria look unfinished
 				crit(69608),	-- Ruptured Lake
