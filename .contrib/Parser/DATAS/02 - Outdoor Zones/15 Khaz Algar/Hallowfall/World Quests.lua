@@ -13,6 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 57.4, 62.8, HALLOWFALL },
 				})),
 				petbattle(q(82298, {	-- The Thing from the Swamp
+					["provider"] = { "n", 223409 },	-- Guttergunk
 					["coord"] = { 61.1, 69.0, HALLOWFALL },
 				})),
 				q(82041, {	-- Beledar's Blessing

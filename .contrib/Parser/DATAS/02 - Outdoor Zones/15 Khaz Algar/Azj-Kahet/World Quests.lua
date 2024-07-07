@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			--},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 				petbattle(q(82297, {	-- One Hungry Worm
+					["provider"] = { "n", 223406 },	-- Zaedu
 					["coord"] = { 53.9, 37.0, AZJ_KAHET },
 				})),
 				petbattle(q(82295, {	-- Ziriak

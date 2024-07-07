@@ -13,6 +13,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 61.6, 37.6, THE_RINGING_DEEPS },
 				})),
 				petbattle(q(82300, {	-- Major Malfunction
+					["provider"] = { "n", 222535 },	-- Haywire Servobot
 					["coord"] = { 66.9, 58.1, THE_RINGING_DEEPS },
 				})),
 				q(82552, {	-- All Worked Up	// could be bonus objective
