@@ -1430,6 +1430,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(79330),	-- Relic of Chi-Ji
 				},
 			})),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, q(82055, {	-- Darkmoon Dunes Deck
+				["providers"] = {
+					{ "i", 221289 },	-- Dunes Deck
+					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
+				},
+				-- #if AFTER 4.3.0
+				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
+				-- #else
+				["coords"] = {
+					{ 41.2, 69.8, ELWYNN_FOREST },
+					{ 36.4, 38.0, MULGORE },
+					-- #if AFTER TBC
+					{ 34.2, 34.4, TEROKKAR_FOREST },
+					-- #endif
+				},
+				-- #endif
+				["maxReputation"] = DECK_MAX_REPUTATION,
+				["repeatable"] = true,
+				["groups"] = {
+					i(221309),	-- Darkmoon Card: Sandstorm
+				},
+			})),
+			-- #endif
 			applyclassicphase(CATA_PHASE_ONE, q(27667, {	-- Darkmoon Earthquake Deck
 				["providers"] = {
 					{ "i", 62046 },	-- Earthquake Deck
@@ -1525,6 +1549,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(31859),	-- Darkmoon Card: Madness
 				},
 			})),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, q(82056, {	-- Darkmoon Nightmares Deck
+				["providers"] = {
+					{ "i", 221299 },	-- Nightmares Deck
+					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
+				},
+				-- #if AFTER 4.3.0
+				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
+				-- #else
+				["coords"] = {
+					{ 41.2, 69.8, ELWYNN_FOREST },
+					{ 36.4, 38.0, MULGORE },
+					-- #if AFTER TBC
+					{ 34.2, 34.4, TEROKKAR_FOREST },
+					-- #endif
+				},
+				-- #endif
+				["maxReputation"] = DECK_MAX_REPUTATION,
+				["repeatable"] = true,
+				["groups"] = {
+					i(221310),	-- Darkmoon Card: Torment
+				},
+			})),
+			-- #endif
 			applyclassicphase(WRATH_PHASE_ONE, q(13326, {	-- Darkmoon Nobles Deck
 				["providers"] = {
 					{ "i", 44326 },	-- Nobles Deck
@@ -1586,6 +1634,30 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 				},
 			})),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, q(82057, {	-- Darkmoon Plagues Deck
+				["providers"] = {
+					{ "i", 221280 },	-- Plagues Deck
+					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
+				},
+				-- #if AFTER 4.3.0
+				["coord"] = { 51.9, 60.9, DARKMOON_ISLAND },
+				-- #else
+				["coords"] = {
+					{ 41.2, 69.8, ELWYNN_FOREST },
+					{ 36.4, 38.0, MULGORE },
+					-- #if AFTER TBC
+					{ 34.2, 34.4, TEROKKAR_FOREST },
+					-- #endif
+				},
+				-- #endif
+				["maxReputation"] = DECK_MAX_REPUTATION,
+				["repeatable"] = true,
+				["groups"] = {
+					i(221307),	-- Darkmoon Card: Decay
+				},
+			})),
+			-- #endif
 			applyclassicphase(PHASE_THREE, q(7927, {	-- Darkmoon Portals Deck
 				["providers"] = {
 					{ "i", 19277 },	-- Portals Deck
@@ -1773,7 +1845,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				["maxReputation"] = DECK_MAX_REPUTATION,
 				["repeatable"] = true,
 				["groups"] = {
-					i(221308, { ["lvl"] = 50 }),	-- Darkmoon Card: Overgrowth
+					i(221308),	-- Darkmoon Card: Overgrowth
 				},
 			})),
 			-- #endif
@@ -4296,6 +4368,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 44157, 1 },	-- Five of Demons
 				},
 			})),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, i(221289, {	-- Dunes Deck
+				["cost"] = {
+					{ "i", 221290, 1 },	-- Ace of Dunes
+					{ "i", 221291, 1 },	-- Two of Dunes
+					{ "i", 221292, 1 },	-- Three of Dunes
+					{ "i", 221293, 1 },	-- Four of Dunes
+					{ "i", 221294, 1 },	-- Five of Dunes
+					{ "i", 221295, 1 },	-- Six of Dunes
+					{ "i", 221296, 1 },	-- Seven of Dunes
+					{ "i", 221297, 1 },	-- Eight of Dunes
+				},
+			})),
+			-- #endif
 			applyclassicphase(CATA_PHASE_ONE, i(62046, {	-- Earthquake Deck
 				["timeline"] = { ADDED_4_0_3 },
 				["cost"] = {
@@ -4370,6 +4456,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 44147, 1 },	-- Five of Mages
 				},
 			})),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, i(221299, {	-- Nightmares Deck
+				["cost"] = {
+					{ "i", 221298, 1 },	-- Ace of Nightmares
+					{ "i", 221300, 1 },	-- Two of Nightmares
+					{ "i", 221301, 1 },	-- Three of Nightmares
+					{ "i", 221302, 1 },	-- Four of Nightmares
+					{ "i", 221303, 1 },	-- Five of Nightmares
+					{ "i", 221304, 1 },	-- Six of Nightmares
+					{ "i", 221305, 1 },	-- Seven of Nightmares
+					{ "i", 221306, 1 },	-- Eight of Nightmares
+				},
+			})),
+			-- #endif
 			applyclassicphase(WRATH_PHASE_ONE, i(44326, {	-- Nobles Deck
 				["timeline"] = { ADDED_3_0_2 },
 				["cost"] = {
@@ -4396,6 +4496,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 79298, 1 },	-- Eight of Oxen
 				},
 			})),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, i(221280, {	-- Plagues Deck
+				["cost"] = {
+					{ "i", 221281, 1 },	-- Ace of Plagues
+					{ "i", 221282, 1 },	-- Two of Plagues
+					{ "i", 221283, 1 },	-- Three of Plagues
+					{ "i", 221284, 1 },	-- Four of Plagues
+					{ "i", 221285, 1 },	-- Five of Plagues
+					{ "i", 221286, 1 },	-- Six of Plagues
+					{ "i", 221287, 1 },	-- Seven of Plagues
+					{ "i", 221288, 1 },	-- Eight of Plagues
+				},
+			})),
+			-- #endif
 			applyclassicphase(PHASE_THREE, i(19277, {	-- Portals Deck
 				["cost"] = {
 					{ "i", 19276, 1 },	-- Ace of Portals

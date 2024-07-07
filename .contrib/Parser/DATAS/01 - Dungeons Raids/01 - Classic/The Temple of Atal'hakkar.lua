@@ -1043,13 +1043,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(220615),	-- Panther Fur Cloak
 							i(220568),	-- Temple Explorer's Gun Axe
 							i(220537),	-- Dreamer's Darkwater Bracers
-							i(221297),	-- Eight of Dunes
-							i(221296),	-- Seven of Dunes
-							i(221278),	-- Seven of Wilds
-							i(221277),	-- Six of Wilds
-							i(221303),	-- Five of Nightmares
-							i(221276),	-- Five of Wilds
-							i(221295),	-- Six of Dunes
 						},
 					}),
 					n(218819, {	-- Festering Rotslime
@@ -1069,10 +1062,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(220550),	-- Temple Looter's Waistband
 							i(221484),	-- Witch Doctor's Hex Stick
 							i(221281),	-- Ace of Plagues
-							i(221288),	-- Eight of Plagues
-							i(221294),	-- Five of Dunes
-							i(221285),	-- Five of Plagues
-							i(221277),	-- Six of Wilds
 						},
 					}),
 					n(ATALAI_DEFENDERS, {
@@ -1095,8 +1084,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									i(220560),	-- Silvershell Legplates
 									i(220674),	-- Debased Stealthblade
 									i(220548),	-- Atal'ai Hexxer's Gloves
-									i(221296),	-- Seven of Dunes
-									i(221304),	-- Six of Nightmares
 								},
 							}),
 							n(218922, {	-- Hukku
@@ -1153,9 +1140,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(220625),	-- Resilience of the Exiled
 							i(220605),	-- Libram of Sacrilege
 							i(220515),	-- Enchanted Emerald Helmet
-							i(221296),	-- Seven of Dunes
-							i(221305),	-- Seven of Nightmares
-							i(221306),	-- Eight of Nightmares
 						},
 					}),
 					n(221943, {	-- Hazzas

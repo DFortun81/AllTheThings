@@ -292,6 +292,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["description"] = "Clear any 3 bosses to spawn this.",
 				["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
 				["groups"] = {
+					i(221290),	-- Ace of Dunes
 					i(221271),	-- Ace of Wilds
 					i(221262),	-- Wild Offering
 				},
@@ -435,6 +436,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(151461, {	-- Ukorz's Chain Leggings
 						["timeline"] = { ADDED_7_3_0 },
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_THREE, i(221290)),	-- Ace of Dunes
+					-- #endif
 				},
 			}),
 			n(7795, {	-- Hydromancer Velratha

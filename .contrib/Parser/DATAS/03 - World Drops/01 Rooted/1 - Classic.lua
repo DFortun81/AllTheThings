@@ -3386,6 +3386,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19234),	-- Six of Beasts
 		i(19235),	-- Seven of Beasts
 		i(19236),	-- Eight of Beasts
+		
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_THREE, i(221291)),	-- Two of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221292)),	-- Three of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221293)),	-- Four of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221294)),	-- Five of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221295)),	-- Six of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221296)),	-- Seven of Dunes
+		applyclassicphase(SOD_PHASE_THREE, i(221297)),	-- Eight of Dunes
+		-- #endif
 
 		i(19269),	-- Two of Elementals
 		i(19270),	-- Three of Elementals
@@ -3394,6 +3404,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19273),	-- Six of Elementals
 		i(19274),	-- Seven of Elementals
 		i(19275),	-- Eight of Elementals
+		
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_THREE, i(221300)),	-- Two of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221301)),	-- Three of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221302)),	-- Four of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221303)),	-- Five of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221304)),	-- Six of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221305)),	-- Seven of Nightmares
+		applyclassicphase(SOD_PHASE_THREE, i(221306)),	-- Eight of Nightmares
+		
+		applyclassicphase(SOD_PHASE_THREE, i(221282)),	-- Two of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221283)),	-- Three of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221284)),	-- Four of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221285)),	-- Five of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221286)),	-- Six of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221287)),	-- Seven of Plagues
+		applyclassicphase(SOD_PHASE_THREE, i(221288)),	-- Eight of Plagues
+		-- #endif
 
 		i(19278),	-- Two of Portals
 		i(19279),	-- Three of Portals

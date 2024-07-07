@@ -322,6 +322,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { ADDED_7_3_0 },
 							}),
 							i(17744),	-- Heart of Noxxion
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_THREE, i(221281)),	-- Ace of Plagues
+							-- #endif
 						},
 					}),
 					e(424, {	-- Razorlash
