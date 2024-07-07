@@ -383,9 +383,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									i(7690, {	-- Ebon Vise
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
+									-- #if SEASON_OF_DISCOVERY
+									applyclassicphase(SOD_PHASE_TWO, i(217294)),	-- Embalmed Shroud
+									i(7691, {	-- Embalmed Shroud
+										["timeline"] = { "removed 1.15.1" },
+									}),
+									-- #else
 									i(7691, {	-- Embalmed Shroud
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
+									-- #endif
 									i(7689, {	-- Morbid Dawn
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
@@ -397,12 +404,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									i(7709, {	-- Blighted Leggings
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
+									-- #if SEASON_OF_DISCOVERY
+									applyclassicphase(SOD_PHASE_TWO, i(217296)),	-- Ghostshard Talisman
+									applyclassicphase(SOD_PHASE_TWO, i(217295)),	-- Necrotic Wand
+									i(7731, {	-- Ghostshard Talisman
+										["timeline"] = { "removed 1.15.1" },
+									}),
+									i(7708, {	-- Necrotic Wand
+										["timeline"] = { "removed 1.15.1" },
+									}),
+									-- #else
 									i(7731, {	-- Ghostshard Talisman
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
 									i(7708, {	-- Necrotic Wand
 										["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 									}),
+									-- #endif
 								},
 							}),
 							n(6489, {	-- Ironspine
@@ -626,6 +644,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								i(7714, {	-- Hypnotic Blade
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
+								-- #if SEASON_OF_DISCOVERY
+								applyclassicphase(SOD_PHASE_TWO, i(217299)),	-- Illusionary Rod
+								applyclassicphase(SOD_PHASE_TWO, i(217298)),	-- Mantle of Doan
+								applyclassicphase(SOD_PHASE_TWO, i(217297)),	-- Robe of Doan
+								i(7713, {	-- Illusionary Rod
+									["timeline"] = { "removed 1.15.1" },
+								}),
+								i(7712, {	-- Mantle of Doan
+									["timeline"] = { "removed 1.15.1" },
+								}),
+								i(7711, {	-- Robe of Doan
+									["timeline"] = { "removed 1.15.1" },
+								}),
+								-- #else
 								i(7713, {	-- Illusionary Rod
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
@@ -635,6 +667,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								i(7711, {	-- Robe of Doan
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
+								-- #endif
 								i(34227, {	-- Deadman's Hand
 									["timeline"] = { ADDED_2_3_0, REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
@@ -900,9 +933,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								i(7724, {	-- Gauntlets of Divinity
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
+								-- #if SEASON_OF_DISCOVERY
+								applyclassicphase(SOD_PHASE_TWO, i(217302)),	-- Mograine's Might
+								i(7723, {	-- Mograine's Might
+									["timeline"] = { "removed 1.15.1" },
+								}),
+								-- #else
 								i(7723, {	-- Mograine's Might
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
+								-- #endif
 								i(10330, {	-- Scarlet Leggings
 									["timeline"] = { REMOVED_5_0_4, ADDED_10_1_7 },
 								}),
@@ -913,12 +953,23 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(7721, {	-- Hand of Righteousness
 								["timeline"] = { REMOVED_5_0_4 },
 							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_TWO, i(217301)),	-- Triune Amulet
+							applyclassicphase(SOD_PHASE_TWO, i(217300)),	-- Whitemane's Chapeau
+							i(7722, {	-- Triune Amulet
+								["timeline"] = { "removed 1.15.1" },
+							}),
+							i(7720, {	-- Whitemane's Chapeau
+								["timeline"] = { "removed 1.15.1" },
+							}),
+							-- #else
 							i(7722, {	-- Triune Amulet
 								["timeline"] = { REMOVED_5_0_4 },
 							}),
 							i(7720, {	-- Whitemane's Chapeau
 								["timeline"] = { REMOVED_5_0_4 },
 							}),
+							-- #endif
 						}),
 					},
 				}),
