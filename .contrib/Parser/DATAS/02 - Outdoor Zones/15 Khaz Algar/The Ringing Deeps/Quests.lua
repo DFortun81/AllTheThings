@@ -607,7 +607,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.09, {	-- Kobold Culture and Integration
+			-- TODO: This is currently broken in the ingame API, which returns different indexes than Wago has in the db2 files. Commented out as temp fix. Uncomment and probably adjust further numbering when Blizzard corrects this. Maybe manual header as temp fix?
+			--header(HEADERS.AchCriteria, 40799, {	-- Kobold Culture and Integration
 				q(79504, {	-- Dripsy Forgot Her Candle
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
@@ -652,8 +653,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(219224),	-- Prooftelling Flower (QI!)
 					},
 				}),
-			}),
-			header(HEADERS.AchCriteria, 40799.10, {	-- Rampage at Nibelgaz Mine
+			--}),
+			header(HEADERS.AchCriteria, 40799.09, {	-- Rampage at Nibelgaz Mine
 				q(79148, {	-- The Nibelgaz Refinery
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 215208 },	-- Orsenth
@@ -699,9 +700,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--["maps"] = { THE_RINGING_DEEPS },
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.11, {	-- Abysmal Extraction
+			header(HEADERS.AchCriteria, 40799.10, {	-- Abysmal Extraction
 			}),
-			header(HEADERS.AchCriteria, 40799.12, {	-- Revenge in the Rumbling Wastes
+			header(HEADERS.AchCriteria, 40799.11, {	-- Revenge in the Rumbling Wastes
 				q(81655, {	-- Juicy Krolusk Meat
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 220417 },	-- Kagfritha
@@ -727,7 +728,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					},
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.13, {	-- Tired of Rest
+			header(HEADERS.AchCriteria, 40799.12, {	-- Tired of Rest
 				q(80576, {	-- Listener Lost
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 220600 },	-- Haimaz
@@ -785,7 +786,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 57.4, 43.1, THE_RINGING_DEEPS },
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.14, {	-- Frolicking in the Fetid Grotto
+			header(HEADERS.AchCriteria, 40799.13, {	-- Frolicking in the Fetid Grotto
 				q(81693, {	-- Desparately Seeking Skorthuz
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 220415 },	-- Hrandaz
