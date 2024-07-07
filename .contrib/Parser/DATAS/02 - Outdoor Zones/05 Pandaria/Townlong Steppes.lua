@@ -212,11 +212,17 @@ root(ROOTS.Zones, {
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuest"] = 30787,	-- The Torches
+						["groups"] = {
+							i(81319),	-- Stack of Torches (QI!)
+						},
 					}),
 					q(30791, {	-- Arconiss Thirsts
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuest"] = 30815,	-- The Death Of Me
+						["groups"] = {
+							i(81260),	-- Clotted Rodent's Blood (QI!)
+						},
 					}),
 					q(31114, {	-- Assault Deadtalker's Plateau
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
@@ -232,6 +238,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 75.8, 83.1, TOWNLONG_STEPPES },
 						["provider"] = { "n", 61470 },	-- Septi the Herbalist
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
+						["groups"] = {
+							i(82787),	-- Citron-Infused Bandages (QI!)
+						},
 					}),
 					q(30929, {	-- Bad Yak
 						["coord"] = { 39.2, 62.0, TOWNLONG_STEPPES },
@@ -260,6 +269,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 79.4, 84.4, TOWNLONG_STEPPES },
 						["provider"] = { "n", 61468 },	-- Taoshi
 						["sourceQuest"] = 30887,	-- Unwelcome Intruders
+						["groups"] = {
+							i(81925),	-- Shado-Pan Flare (QI!)
+						},
 					}),
 					q(31044, {	-- Bronze Claws
 						["provider"] = { "n", 62304 },	-- Ban Bearheart
@@ -281,6 +293,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 62573 },	-- Marksman Ye
 						["sourceQuest"] = 30976,	-- Joining the Hunt
 						["g"] = {
+							i(83768),	-- Wu Kao Torch (QI!)
 							i(88589),	-- Cremating Torch (TOY!)
 						},
 					}),
@@ -288,6 +301,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 76.4, 82.4, TOWNLONG_STEPPES },
 						["provider"] = { "n", 61066 },	-- Taran Zhu
 						["sourceQuests"] = { 30895 },	-- Improvised Ammunition
+						["groups"] = {
+							o_repeated({
+								i(82723),	-- Volatile Dread Orb (QI!)
+								o(211871),	-- Dread Orb
+								o(211872),	-- Dread Orb
+								o(211873),	-- Dread Orb
+							}),
+						},
 					}),
 					q(31043, {	-- Dark Arts
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
@@ -383,11 +404,21 @@ root(ROOTS.Zones, {
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuest"] = 30787,	-- The Torches
+						["groups"] = {
+							i(81319),	-- Stack of Torches (QI!)
+						},
 					}),
 					q(30790, {	-- Golgoss Hungers
 						["coord"] = { 67.9, 67.6, TOWNLONG_STEPPES },
 						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuest"] = 30815,	-- The Death Of Me
+						["groups"] = {
+							o_repeated({
+								i(81250),	-- Snarlvine (QI!)
+								o(211517),	-- Snarlvine
+								o(211518),	-- Snarlvine
+							}),
+						},
 					}),
 					q(31048, {	-- Grave Consequences
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
@@ -415,6 +446,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
 						["sourceQuest"] = 30827,	-- What Lies Beneath
 						["g"] = {
+							i(81417),	-- Totem of Harmony (QI!)
 							i(88584),	-- Totem of Harmony (TOY!)
 						},
 					}),
@@ -451,6 +483,9 @@ root(ROOTS.Zones, {
 							30893,	-- The Endless Swarm
 						},
 						["g"] = {
+							o(211863, {
+								i(82722),	-- Krik'thik Limb (QI!)
+							}),
 							i(88104),	-- Mistborne Pantaloons
 							i(88103),	-- Mistlurker Pantaloons
 							i(88102),	-- Earthmover Kilt
@@ -476,6 +511,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.0, 78.0, TOWNLONG_STEPPES },
 						["provider"] = { "n", 62274 },	-- Taran Zhu
 						["sourceQuests"] = { 30976 },	-- Joining the Hunt
+						["groups"] = {
+							i(83023),	-- Shado-Pan Crossbow Bolt Bundle (QI!)
+						},
 					}),
 					q(31049, {	-- In Sprite Of Everything
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
@@ -491,6 +529,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 70.3, 86.6, TOWNLONG_STEPPES },
 						["provider"] = { "n", 61880 },	-- Initiate Chao
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
+						["groups"] = {
+							i(82783),	-- Initiate Chao's Sword (QI!)
+						},
 					}),
 					q(30972, {	-- Joining the Fight
 						["coord"] = { 67.3, 80.6, TOWNLONG_STEPPES },
@@ -584,6 +625,9 @@ root(ROOTS.Zones, {
 							30923,	-- Set the Mantid Back
 							30921,	-- The Motives of the Mantid
 						},
+						["groups"] = {
+							i(81891),	-- Gunpowder Casks (QI!)
+						},
 						-- Note: this may be more dependent on phasing than sourceQuest, but this reliably made Ku-mo show up
 					}),
 					q(30922, {	-- Natural Antiseptic
@@ -621,6 +665,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 71.1, 56.6, TOWNLONG_STEPPES },
 						["provider"] = { "n", 60688 },	-- Taran Zhu
 						["sourceQuest"] = 30814,	-- A Foot in the Door
+						["groups"] = {
+							o_repeated({
+								i(81174),	-- Dark Pitch (QI!)
+								o(211506),	-- Pitch Pot
+								o(211507),	-- Pitch Pot
+							}),
+						},
 					}),
 					q(30930, {	-- Pick a Yak
 						["coord"] = { 35.4, 56.7, TOWNLONG_STEPPES },
@@ -639,6 +690,7 @@ root(ROOTS.Zones, {
 							30770,	-- Running Rampant
 						},
 						["g"] = {
+							i(81193),	-- Ban's Explosives (QI!)
 							i(88583),	-- Ban's Bag of Bombs
 						},
 					}),
@@ -649,6 +701,9 @@ root(ROOTS.Zones, {
 							30769,	-- First Assault
 							30771,	-- Perfect Pitch
 							30770,	-- Running Rampant
+						},
+						["groups"] = {
+							i(81178),	-- Stone Key (QI!)
 						},
 					}),
 					q(30960, {	-- Returning from the Pass
@@ -750,6 +805,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 67.3, 80.6, TOWNLONG_STEPPES },
 						["provider"] = { "n", 62124 },	-- Initiate Pao-Me
 						["sourceQuest"] = 30901,	-- Along the Southern Front
+						["groups"] = {
+							o_repeated({
+								i(83024),	-- Shadow-Pan Fire Arrows (QI!)
+								o(212135),	-- Shadow-Pan Fire Arrows
+								o(212136),	-- Shadow-Pan Fire Arrows
+							}),
+						},
 					}),
 					q(30981, {	-- Taoshi and Korvexxis
 						["coord"] = { 54.0, 77.8, TOWNLONG_STEPPES },
@@ -943,6 +1005,7 @@ root(ROOTS.Zones, {
 							30782,	-- Spiteful Spirits
 						},
 						["g"] = {
+							i(81430),	-- Totem of Harmony (QI!)
 							i(83662),	-- Mistborne Robe
 							i(83663),	-- Mistlurker Tunic
 							i(83664),	-- Earthmover Armor
@@ -1049,6 +1112,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 60857 },	-- Orbiss
 						["sourceQuests"] = { 30786 },	-- A Spear Through My Side, A Chain Through My Soul
 						["g"] = {
+							i(81176),	-- Mist-Shaman's Torch (QI!)
 							i(84605),	-- Mist-Shaman Necklace
 							i(84606),	-- Pendant of Orbiss
 							i(84607),	-- Locket of the Sumprushes
@@ -1068,6 +1132,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 70.4, 86.3, TOWNLONG_STEPPES },
 						["provider"] = { "n", 61881 },	-- Initiate Feng
 						["sourceQuest"] = 30891,	-- Treatment for the Troops
+						["groups"] = {
+							o_repeated({
+								i(82342),	-- Violet Citron (QI!)
+								o(211719),	-- Violet Citron
+								o(211721),	-- Violet Citron
+							}),
+						},
 					}),
 					q(31687, {	-- Thinning the Sik'thik
 						["coord"] = { 53.9, 78.1, TOWNLONG_STEPPES },
@@ -1089,6 +1160,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 82.5, 73.0, TOWNLONG_STEPPES },
 						["provider"] = { "n", 60864 },	-- Yalia Sagewhisper
 						["sourceQuest"] = 30777,	-- In Search of Suna
+						["groups"] = {
+							o(211566, {	-- Palewind Totem
+								i(81355),	-- Palewind Totem (QI!)
+							}),
+						},
 					}),
 					q(30889, {	-- Trap Setting
 						["coord"] = { 79.3, 84.4, TOWNLONG_STEPPES },
@@ -1109,6 +1185,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 62273 },	-- Taran Zhu
 						["sourceQuest"] = 30972,	-- Joining the Fight
 						["g"] = {
+							i(83136),	-- Quiver of Shado-Pan Fire Arrows (QI!)
 							i(88113),	-- Mistborne Waistband
 							i(88112),	-- Mistlurker Waistband
 							i(88111),	-- Earthmover Belt
@@ -1139,6 +1216,9 @@ root(ROOTS.Zones, {
 							30781,	-- Last Toll of the Yaungol
 							30779,	-- Slaying the Scavengers
 							30780,	-- Totemic Research
+						},
+						["groups"] = {
+							i(81356),	-- Shadow-Pan Torch (QI!)
 						},
 					}),
 					q(31062, {	-- When The Dead Speak

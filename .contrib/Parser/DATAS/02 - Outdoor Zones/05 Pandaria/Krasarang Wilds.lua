@@ -1784,6 +1784,7 @@ root(ROOTS.Zones, {
 					-- try to figure out where the alternate versions of "Into the Wilds" come from for each faction.  i picked up 30178 on Alliance and 30133 on Horde after completeing all the Zhu's Watch quests.  the quest text is slightly different (one version for each says "I suspect they'll know something about what happened here" and the other says "They should be told of what happened here," and one version for each provides Zhu's Watch Supplies, while the other doesn't.  possibly there are different versions if you abandon/re-pick up, or if you start questing elsewhere in the zone?  completing one completed all four of these, so unless there's an issue with one version not doing the same then it should be good for all users.
 					-- try to figure out where the second version of "Going on the Offensive" comes from.  does it have different SQs?  is it from starting somewhere else in the zone, or doing it in a different order?  the quest text is slightly different (one version says "I want you to look for my scout. I sent her to investigate the Crane Temple but she hasn't returned.  Get her report and rendezvous with us at the Sentinel Basecamp further west."  the other doesn't mention a scout at all, and just says "We are pressing westward and could use your help. Meet us at the Sentinel Basecamp further west when you are ready.")
 					-- same as above but with "Going West" for Horde, as opposed to "Going on the Offensive" for Alliance.  i picked up 30132, unsure what needs to happen to pick up 30464
+					-- ShadowBrooks -- NOTE FOR CRIEVE see changes for 30132 and 30464
 					q(30695, {	-- Ahead on the Way
 						["sourceQuests"] = {
 							30270,	-- Blinding the Riverblades
@@ -1808,6 +1809,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56115 },	-- Ken-Ken
 						["coord"] = { 80.1, 0.98, KRASARANG_WILDS },
 						["g"] = {
+							i(79021),	-- Ken-Ken's Mask (QI!)
 							i(81467),	-- Nayeli Leggings
 							i(81468),	-- Mortbreath Legguards
 							i(81469),	-- Deepwild Legguards
@@ -1868,6 +1870,9 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 30091 },	-- Tears of Pandaria
 						["provider"] = { "n", 57744 },	-- Mei Barrelbottom
 						["coord"] = { 79.7, 1.56, KRASARANG_WILDS },
+						["groups"] = {
+							i(78928),	-- Flame of Zhu's Watch (QI!)
+						},
 					}),
 					q(30668, {	-- Build Your Own Raft
 						["sourceQuests"] = { 30666 },	-- Sudden, Unexpected Crocolist Aggression
@@ -1969,14 +1974,18 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(30132, {	-- Going West
+						["description"] = "This version is available if you have not completed the Temple of the Red Crane questline.",
 						["sourceQuests"] = { 30131 },	-- Life
 						["provider"] = { "n", 58113 },	-- Sunwalker Dezco
 						["coord"] = { 63.1, 20.7, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
+						["lockCriteria"] = { 1, "questID", 30273 },	-- In the House of the Red Crane
 					}),
 					q(30464, {	-- Going West
-					--	does this have different SQs than the version above?
-						["sourceQuests"] = { 30131 },	-- Life
+						["sourceQuests"] = {
+							30131,	-- Life
+							30273,	-- In the House of the Red Crane
+						},
 						["provider"] = { "n", 58113 },	-- Sunwalker Dezco
 						["coord"] = { 63.1, 20.7, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
@@ -1989,6 +1998,11 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 58113 },	-- Sunwalker Dezco
 						["coord"] = { 62.6, 20.0, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							o(210209, {	-- Imperial Lotus
+								i(78918),	-- Imperial Lotus Leaves (QI!)
+							}),
+						},
 					}),
 					heroscall(q(49558, {	-- Hero's Call: Krasarang Wilds!
 						["timeline"] = { ADDED_7_3_5 },
@@ -2060,6 +2074,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 79.8, 1.57, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
+						["groups"] = {
+							i(79825),	-- Zhu's Watch Supplies (QI!)
+						},
 					}),
 					q(30461, {	-- Into the Wilds
 					--	does this have different SQs than the previous version?
@@ -2094,6 +2111,17 @@ root(ROOTS.Zones, {
 						},
 						["provider"] = { "n", 56115 },	-- Ken-ken
 						["coord"] = { 80.2, 1.00, KRASARANG_WILDS },
+						["groups"] = {
+							o_repeated({
+								i(78877),	-- Slick Mudfish (QI!)
+								o(210184),	-- Slick Mudfish
+								o(210186),	-- Slick Mudfish
+							}),
+							o(210188, {	-- Chunk of Honeycomb
+								i(78881),	-- Chunk of Honeycomb (QI!)
+							}),
+							i(78880),	-- Salty Core (QI!)
+						},
 					}),
 					q(30691, {	-- Misery
 						["sourceQuests"] = { 30669 },	-- The Lorewalker on the Lake
@@ -2118,6 +2146,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 60.4, 25.4, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							i(79252),	-- Mogu Poisoned Blade (QI!)
 							i(81522),	-- Ring of the Pools of Youth
 							i(81523),	-- Ring of Tears
 							i(81524),	-- Toothrow Band
@@ -2233,6 +2262,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56112 },	-- Kang Bramblestaff
 						["coord"] = { 62.7, 20.3, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(78911),	-- Intact Skitterer Glands (QI!)
+						},
 					}),
 					q(30350, {	-- Squirmy Delight
 						["sourceQuests"] = { 30274 },	-- The Arcanic Oubliette
@@ -2351,12 +2383,16 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56112 },	-- Kang Bramblestaff
 						["coord"] = { 62.7, 20.1, KRASARANG_WILDS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							i(78917),	-- Dojani Orders (QI!)
+						},
 					}),
 					q(30268, {	-- The Murksweats
 						["sourceQuests"] = { 30269 },	-- Unsafe Passage
 						["provider"] = { "n", 58609 },	-- Anduin Wrynn
 						["coord"] = { 41.6, 30.5, KRASARANG_WILDS },
 						["g"] = {
+							i(79199),	-- Murkscale Head (QI!)
 							i(81517),	-- Murksweat Ward
 							i(81518),	-- Lory Feather Band
 							i(81519),	-- Snakejaw Band
@@ -2382,6 +2418,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 58206 },	-- Kang Bramblestaff
 						["races"] = HORDE_ONLY,
 						["g"] = {
+							o(210229, {	-- Water of Youth
+								i(78934),	-- The Water of Youth (QI!)
+							}),
 							i(81537),	-- Drape of the Lagoon
 							i(81538),	-- Waterfall Drape
 							i(81539),	-- Canopy Drape
@@ -2474,6 +2513,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 59138 },	-- Koro Mistwalker
 						["coord"] = { 41.8, 29.6, KRASARANG_WILDS },
 						["g"] = {
+							i(80828),	-- "Scrutiny" (QI!)
 							i(84272),	-- Mistwalker Satin Leggings
 							i(84273),	-- Mistwalker Hide leggaurds
 							i(84274),	-- Deepwild Leg Armor
@@ -2558,6 +2598,10 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56115 },	-- Ken-Ken
 						["coord"] = { 80.2, 0.94, KRASARANG_WILDS },
 						["g"] = {
+							i(78941),	-- Huge Panther Fang (QI!)
+							o(210228, {	-- Jar of Pigment
+								i(78942),	-- Jar of Pigment (QI!)
+							}),
 							i(88061),	-- Nayeli Handwraps
 							i(88060),	-- Mortbreath Handwraps
 							i(88059),	-- Deepwild Handguards
@@ -2590,6 +2634,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 56115 },	-- Ken-Ken
 						["coord"] = { 80.2, 1.00, KRASARANG_WILDS },
 						["g"] = {
+							i(79057),	-- Ken'Ken's Mask (QI!)
 							i(88580),	-- Ken-Ken's Mask (TOY!)
 						},
 					}),
