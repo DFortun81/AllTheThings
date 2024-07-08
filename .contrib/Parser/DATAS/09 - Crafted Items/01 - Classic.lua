@@ -2828,7 +2828,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4324),	-- Azure Silk Vest
 			i(2578),	-- Barbaric Linen Vest
 			i(10001),	-- Black Mageweave Robe
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217246)),	-- Black Mageweave Vest
+			i(9998, {	-- Black Mageweave Vest
+				["timeline"] = { "removed 1.15.1" },
+			}),
+			-- #else
 			i(9998),	-- Black Mageweave Vest
+			-- #endif
 			applyclassicphase(PHASE_FOUR, i(19682, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Vest
 			i(6242),	-- Blue Linen Robe
 			i(6240),	-- Blue Linen Vest

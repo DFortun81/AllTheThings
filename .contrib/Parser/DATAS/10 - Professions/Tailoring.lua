@@ -1233,10 +1233,23 @@ profession(TAILORING, {
 					["name"] = "Black Mageweave Robe",
 					["recipeID"] = 12050
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["timeline"] = { "added 1.15.1" },
+					["name"] = "Black Mageweave Vest",
+					["recipeID"] = 439086
+				}),
+				{	-- 
+					["timeline"] = { "removed 1.15.1" },
+					["name"] = "Black Mageweave Vest",
+					["recipeID"] = 12048
+				},
+				-- #else
 				{
 					["name"] = "Black Mageweave Vest",
 					["recipeID"] = 12048
 				},
+				-- #endif
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Vest",
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
