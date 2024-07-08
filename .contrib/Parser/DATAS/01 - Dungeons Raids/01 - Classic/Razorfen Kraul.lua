@@ -161,6 +161,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 				q(1100, {	-- Lonebrow's Journal
 					["providers"] = {
+						{ "i", 5791 },	-- Henrig Lonebrow's Journal
 						{ "i", 5790 },	-- Henrig Lonebrow's Journal
 						{ "o", 19861 },	-- Henrig Lonebrow's Journal
 					},
