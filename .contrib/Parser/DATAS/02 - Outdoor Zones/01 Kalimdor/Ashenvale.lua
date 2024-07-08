@@ -376,6 +376,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.8, 75.0, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ran Bloodtooth's Skull
+							["provider"] = { "i", 5388 },	-- Ran Bloodtooth's Skull
+							["cr"] = 3696,	-- Ran Bloodtooth
+						}),
+					},
 				}),
 				q(13874, {	-- A Not-So-Charmed Life
 					["qg"] = 34239,	-- Hephaestus Pilgrim
@@ -458,6 +464,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Overseer Gorthak slain
+							["provider"] = { "n", 17304 },	-- Overseer Gorthak
+						}),
+						objective(2, {	-- 0/12 Horde at the Warsong Lumber Camp slain
+							["providers"] = {
+								{ "n", 11682},	-- Warsong Grunt
+								{ "n", 11681},	-- Warsong Logger
+								{ "n", 11683},	-- Warsong Shaman
+								{ "n", 11684},	-- Goblin Deforester
+							},
+						}),
 						i(56642, {	-- Starwhisper Monnions
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -624,6 +641,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Venison Steak
+							["provider"] = { "i", 46392 },	-- Venison Steak
+							["cr"] = 3816,	-- Wild Buck
+						}),
 						i(56721, {	-- Meat Packer Ribbon
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -649,16 +670,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(21, 21, 7),
-					-- #if BEFORE CATA
 					["groups"] = {
+                        -- #if BEFORE CATA
 						objective(1, {	-- 0/12 Thistlefur Avenger slain
 							["provider"] = { "n", 3925 },	-- Thistlefur Avenger
 						}),
 						objective(2, {	-- 0/12 Thistlefur Shaman slain
 							["provider"] = { "n", 3924 },	-- Thistlefur Shaman
 						}),
+						-- #else
+						objective(1, {	-- 0/15 Thistlefur Village Furbolgs killed
+							["providers"] = {
+								{ "n", 3925},	-- Thistlefur Avenger
+								{ "n", 3924},	-- Thistlefur Shaman
+								{ "n", 3926},	-- Thistlefur Pathfinder
+							},
+						}),
+						-- #endif
 					},
-					-- #endif
 				}),
 				q(13947, {	-- Blastranaar!
 					["qg"] = 34359,	-- Captain Goggath
@@ -670,6 +699,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/20 Astranaar Sentinels slain
+							["provider"] = { "n", 34494 },	-- Astranaar Sentinel
+						}),
+						objective(2, {	-- 0/10 Astranaar Throwers destroyed
+							["provider"] = { "n", 34492 },	-- Astranaar Thrower
+						}),
 						i(56661, {	-- Preemptive Striker
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -698,6 +733,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/10 Astranaar Skirmishers slain
+							["provider"] = { "n", 34419 },	-- Astranaar Skirmisher
+						}),
+						objective(2, {	-- 0/3 Astranaar Officers slain
+							["provider"] = { "n", 34420 },	-- Astranaar Officer
+						}),
 						i(56667, {	-- Cloak of Readiness
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -754,6 +795,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 17.9, 60.0, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Demons at Fire Scar Shrine slain
+							["providers"] = {
+								{ "n", 3774},	-- Felslayer
+								{ "n", 3772},	-- Lesser Felguard
+								{ "n", 3773},	-- Akkrilus
+							},
+						}),
+					},
 				}),
 				q(13766, {	-- Closure is Only Natural
 					["qg"] = 17310,	-- Gnarl
@@ -761,6 +811,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 83.7, 63.1, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Demon Gates closed
+							["provider"] = { "n", 33767 },	-- Demon Gate Master Bunny
+						}),
+					},
 				}),
 				q(13958, {	-- Condition Critical!
 					["qg"] = 34359,	-- Captain Goggath
@@ -788,6 +843,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Gorka accompanied to Mor'shan Ramparts
+							["provider"] = { "n", 33507 },	-- Gorka
+						}),
 						i(56639, {	-- Mourner's Stole
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -807,6 +865,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.6, 49.5, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Thistlefur Village furbolgs killed
+							["providers"] = {
+								{ "n", 3925},	-- Thistlefur Avenger
+								{ "n", 3924},	-- Thistlefur Shaman
+								{ "n", 3926},	-- Thistlefur Pathfinder
+							},
+						}),
+					},
 				}),
 				q(1054, {	-- Culling the Threat
 					["qg"] = 3691,	-- Raene Wolfrunner
@@ -838,6 +905,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 73.8, 62.4, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Night Elf Ghosts Slain
+							["providers"] = {
+								{ "n", 3803},	-- Severed Keeper
+								{ "n", 3799},	-- Severed Druid
+							},
+						}),
+					},
 				}),
 				q(13901, {	-- Deep Despair
 					["qg"] = 12719,	-- Marukai
@@ -845,6 +920,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 12.6, 35.3, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Blackfathom Tide Priestesses slain
+							["provider"] = { "n", 4802 },	-- Blackfathom Tide Priestess
+						}),
+					},
 				}),
 				q(13935, {	-- Defend the Tree!
 					["qg"] = 34377,	-- Halannia
@@ -853,6 +933,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/50 Warsong enemies destroyed
+							["providers"] = {
+								{ "n", 32856},	-- Warsong Invader
+								{ "n", 32850},	-- Warsong Demolisher
+								{ "n", 34390},	-- Warsong Trampler
+							},
+						}),
 						i(56670, {	-- Raynewood Shield
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -886,6 +973,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 84.0, 62.7, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Demons slain
+							["providers"] = {
+								{ "n", 11697},	-- Mannoroc Lasher
+								{ "n", 6073},	-- Searing Infernal
+								{ "n", 6115},	-- Roaming Felguard
+							},
+						}),
+					},
 				}),
 				q(9516, {	-- Destroy the Legion [Alliance]
 					["qg"] = 17303,	-- Vindicator Vedaar <Hand of Argus>
@@ -910,6 +1006,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 73.1, 60.1, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Demons Slain
+							["providers"] = {
+								{ "n", 11697},	-- Mannoroc Lasher
+								{ "n", 6073},	-- Searing Infernal
+								{ "n", 6115},	-- Roaming Felguard
+							},
+						}),
+					},
 				}),
 				q(9534, {	-- Destroy the Legion [Horde]
 					["qg"] = 17355,	-- Valusha
@@ -1169,6 +1274,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Horde Explosives destroyed
+							["provider"] = { "o", 194482 },	-- Horde Explosives
+						}),
 						i(56646, {	-- Shredder Blade
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1266,6 +1374,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.4, 71.2, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Gerenzo Wrenchwhistle slain
+							["provider"] = { "n", 4202 },	-- Gerenzo Wrenchwhistle
+						}),
+					},
 				}),
 				q(13877, {	-- Go With The Flow
 					["qg"] = 34239,	-- Hephaestus Pilgrim
@@ -1368,6 +1481,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 17.9, 60.0, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Heart of Kaliva
+							["provider"] = { "i", 46774 },	-- Heart of Kaliva
+							["cr"] = 34602,	-- Kaliva
+						}),
+					},
 				}),
 				q(13922, {	-- In the Hands of the Perverse
 					["qg"] = 34335,	-- Avrus Illwhisper
@@ -1378,6 +1497,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.0, 59.9, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Fallen Moonstone
+							["provider"] = { "i", 5508 },	-- Fallen Moonstone
+							["crs"] = {
+								3758,	-- Felmusk Satyr
+								3759,	-- Felmusk Rogue
+								3762,	-- Felmusk Felsworn
+								3763,	-- Felmusk Shadowstalker
+							},
+						}),
+					},
 				}),
 				q(26472, {	-- Insane Druids
 					["qg"] = 33777,	-- Gaivan Shadewalker
@@ -1386,6 +1516,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Taneel Darkwood slain
+							["provider"] = { "n", 3940 },	-- Taneel Darkwood
+						}),
+						objective(2, {	-- 0/1 Uthil Mooncall slain
+							["provider"] = { "n", 3941 },	-- Uthil Mooncall
+						}),
+						objective(3, {	-- 0/1 Mavoris Cloudsbreak slain
+							["provider"] = { "n", 3942 },	-- Mavoris Cloudsbreak
+						}),
 						i(5813),	-- Emil's Brand
 						i(156959, {	-- Emil's Staff
 							["timeline"] = { ADDED_7_3_5 },
@@ -1489,6 +1628,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Chief Murgut slain
+							["provider"] = { "n", 12918 },	-- Chief Murgut
+						}),
 						i(56706, {	-- Greenpaw Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1610,6 +1752,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 18.2, 20.4, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Wrathtail naga slain
+							["providers"] = {
+								{ "n", 3711},	-- Wrathtail Myrmidon
+								{ "n", 3712},	-- Wrathtail Razortail
+								{ "n", 3713},	-- Wrathtail Wave Rider
+								{ "n", 3715},	-- Wrathtail Sea Witch
+								{ "n", 3717},	-- Wrathtail Sorceress
+								{ "n", 3944},	-- Wrathtail Priestess
+							},
+						}),
+					},
 				}),
 				q(6442, {	-- Naga at the Zoram Strand
 					["qg"] = 12719,	-- Marukai
@@ -1642,6 +1796,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.9, 80.4, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Natural Oil
+							["provider"] = { "i", 45071 },	-- Natural Oil
+							["cr"] = 3928,	-- Rotting Slime
+						}),
+					},
 				}),
 				q(26445, {	-- Never Again! [Alliance]
 					["qg"] = 17303,	-- Vindicator Vedaar
@@ -1650,6 +1810,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Gorgannon's Flaming Blade
+							["provider"] = { "i", 45477 },	-- Gorgannon's Flaming Blade
+							["cr"] = 17300,	-- Gorgannon
+						}),
+						objective(2, {	-- 0/1 Seeker's Fel Spear
+							["provider"] = { "i", 45476 },	-- Seeker's Fel Spear
+							["cr"] = 6072,	-- Diathorus the Seeker
+						}),
 						i(24119, {	-- Band of Argas
 							["timeline"] = { ADDED_2_0_1 },
 						}),
@@ -1697,6 +1865,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Gorgannon's Flaming Blade
+							["provider"] = { "i", 45477 },	-- Gorgannon's Flaming Blade
+							["cr"] = 17300,	-- Gorgannon
+						}),
+						objective(2, {	-- 0/1 Seeker's Fel Spear
+							["provider"] = { "i", 45476 },	-- Seeker's Fel Spear
+							["cr"] = 6072,	-- Diathorus the Seeker
+						}),
 						i(24119, {	-- Band of Argas
 							["timeline"] = { ADDED_2_0_1 },
 						}),
@@ -1740,6 +1916,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.0, 24.3, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Bathran's corpse burned
+							["provider"] = { "n", 33183 },	-- Bathran's Corpse
+						}),
+					},
 				}),
 				q(26474, {	-- Orendil's Cure
 					["qg"] = 3847,	-- Orendil Broadleaf
@@ -1856,6 +2037,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.0, 56.7, ASHENVALE },
 					["sourceQuestNumRequired"] = 1,
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/10 Lava Rager slain
+							["provider"] = { "n", 34314 },	-- Lava Rager
+						}),
+					},
 				}),
 				q(991, {	-- Raene's Cleansing (1/11) [Vanilla] / Finding Teronis [CATA]
 					["qg"] = 3691,	-- Raene Wolfrunner
@@ -2095,6 +2281,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.2, 35.5, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Furbolg at the Ruins of Ordil'Aran slain
+							["providers"] = {
+								{ "n", 33389},	-- Thistlefur Wise One
+								{ "n", 33390},	-- Thistlefur Warrior
+							},
+						}),
+					},
 				}),
 				q(26446, {	-- Reclaiming Felfire Hill
 					["qg"] = 17310,	-- Gnarl
@@ -2205,6 +2399,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.6, 71.4, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+                    ["groups"] = {
+						objective(1, {	-- 0/12 Befouled Water Elemental slain
+							["provider"] = { "n", 3917 },	-- Befouled Water Elemental
+						}),
+						objective(2, {	-- 0/1 Tideress slain
+							["provider"] = { "n", 12759 },	-- Tideress
+						}),
+					},
 				}),
 				-- #if AFTER CATA
 				q(1016, {	-- Retaking Mystral Lake [CATA+] / Elemental Bracers [Vanilla]
@@ -2280,6 +2482,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Ring of Zoram
+							["provider"] = { "i", 5445 },	-- Ring of Zoram
+							["cr"] = 3943,	-- Ruuzel
+						}),
 						i(5812),	-- Robes of Antiquity
 					},
 				}),
@@ -2348,6 +2554,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 87.0, 43.4, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/16 Satyr Horns
+							["provider"] = { "i", 5481 },	-- Satyr Horns
+							["crs"] = {
+								3752,	-- Xavian Rogue
+								3754,	-- Xavian Betrayer
+								3755,	-- Xavian Felsworn
+								3757,	-- Xavian Hellcaller
+								3758,	-- Felmusk Satyr
+								3759,	-- Felmusk Rogue
+								3762,	-- Felmusk Felsworn
+								3763,	-- Felmusk Shadowstalker
+								3765,	-- Bleakheart Satyr
+								3767,	-- Bleakheart Trickster
+								3770,	-- Bleakheart Shadowstalker
+								3771,	-- Bleakheart Hellcaller
+								3898,	-- Aligar the Tormentor
+								3899,	-- Balizar the Umbrage
+								3900,	-- Caedakar the Vicious
+								4619,	-- Geltharis
+								10647,	-- Prince Raze
+							},
+						}),
+					},
 				}),
 				q(1032, {	-- Satyr Slaying!
 					["qg"] = 3901,	-- Illiyana
@@ -2395,6 +2625,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Kaldorei Assassin's Head
+							["provider"] = { "i", 46147 },	-- Kaldorei Assassin's Head
+							["cr"] = 34206,	-- Kaldorei Assassin
+						}),
 						i(56718, {	-- Detective Buckler
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2542,6 +2776,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Harbinger Aphotic slain
+							["provider"] = { "n", 33444 },	-- Harbinger Aphotic
+						}),
 						i(56652, {	-- Ablution Slippers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2630,6 +2867,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Branch of Cenarius
+							["provider"] = { "i", 5461 },	-- Branch of Cenarius
+							["cr"] = 4619,	-- Geltharis
+						}),
 						i(5820),	-- Faerie Mantle
 						i(11229),	-- Brightplate Girdle
 					},
@@ -2690,6 +2931,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Sploder's Head
+							["provider"] = { "i", 46768 },	-- Sploder's Head
+							["cr"] = 34591,	-- Chief Bombgineer Sploder
+						}),
 						i(56703, {	-- Jalin's Recompense
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2741,6 +2986,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/30 Demonic Invader slain
+							["provider"] = { "n", 34609 },	-- Demonic Invader
+						}),
 						i(56689, {	-- Adansonian Cloak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2784,6 +3032,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Glowing Gem
+							["provider"] = { "i", 5463 },	-- Glowing Gem
+							["crs"] = {
+								3737,	-- Saltspittle Puddlejumper
+								3739,	-- Saltspittle Warrior
+								3740,	-- Saltspittle Muckdweller
+								3742,	-- Saltspittle Oracle
+								33419,	-- Tendril from Below
+								33444,	-- Harbinger Aphotic
+							},
+						}),
 						i(56624, {	-- Falathim-Washed Robes
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3032,6 +3291,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/12 Ashenvale Assassin slain
+							["provider"] = { "n", 34603 },	-- Ashenvale Assassin
+						}),
 						i(56692, {	-- Weaponized Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3045,6 +3307,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.8, 65.2, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Furbolg Ear
+							["provider"] = { "i", 46741 },	-- Furbolg Ear
+							["crs"] = {
+								3743,	-- Foulweald Warrior
+								3745,	-- Foulweald Pathfinder
+								3746,	-- Foulweald Den Watcher
+								3749,	-- Foulweald Ursa
+								3750,	-- Foulweald Totemic
+								52161,	-- Foulweald Pathfinder
+							},
+						}),
+					},
 				}),
 				q(13976, {	-- Three Friends of the Forest
 					["qg"] = 24739,	-- Benjari Edune
@@ -3098,6 +3373,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Bloodclaw's Collection
+							["provider"] = { "i", 5544 },	-- Bloodclaw's Collection
+							["cr"] = 3987,	-- Dal Bloodclaw
+						}),
 						i(56622, {	-- Thistle Ring
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3368,6 +3647,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Protector Endolar slain
+							["provider"] = { "n", 34208 },	-- Protector Endolar
+						}),
+						objective(2, {	-- 0/1 Protector Dorinar slain
+							["provider"] = { "n", 34294 },	-- Protector Dorinar
+						}),
+						objective(3, {	-- 0/1 Protector Arminon slain
+							["provider"] = { "n", 34204 },	-- Protector Arminon
+						}),
+						objective(4, {	-- 0/12 Ashenvale Scouts defeated
+							["provider"] = { "n", 34177 },	-- Ashenvale Scout
+						}),
 						i(56724, {	-- Wet Work Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
