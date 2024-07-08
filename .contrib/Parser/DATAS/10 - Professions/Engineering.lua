@@ -2936,6 +2936,9 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Agile Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = LEATHER_CLASSES,
+					-- #endif
 					["recipeID"] = 81722,
 				},
 				{
@@ -2944,26 +2947,44 @@ profession(ENGINEERING, {
 				},
 				{
 					["name"] = "Camouflage Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = { DRUID },
+					-- #endif
 					["recipeID"] = 81724,
 				},
 				{
 					["name"] = "Deadly Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = MAIL_CLASSES,
+					-- #endif
 					["recipeID"] = 81716,
 				},
 				{
 					["name"] = "Energized Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = { SHAMAN },
+					-- #endif
 					["recipeID"] = 81720,
 				},
 				{
 					["name"] = "Lightweight Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = CLOTH_CLASSES,
+					-- #endif
 					["recipeID"] = 81725,
 				},
 				{
 					["name"] = "Reinforced Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = PLATE_CLASSES,
+					-- #endif
 					["recipeID"] = 81714,
 				},
 				{
 					["name"] = "Specialized Bio-Optic Killshades",
+					-- #if BEFORE 7.3.0
+					["classes"] = { PALADIN },
+					-- #endif
 					["recipeID"] = 81715,
 				},
 			},
