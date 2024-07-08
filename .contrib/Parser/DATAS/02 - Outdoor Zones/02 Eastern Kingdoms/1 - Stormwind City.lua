@@ -3043,13 +3043,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				q(29439, {	-- The Call of the World-Shaman
-					["qg"] = 45226,	-- Naraat the Earthspeaker
-					["coord"] = { 74.4, 18.8, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_2_0 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(39691, {	-- The Call of War
 					["qg"] = 97296,	-- Archmage Khadgar
 					["coord"] = { 72.4, 47.2, STORMWIND_CITY },

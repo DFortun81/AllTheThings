@@ -1,4 +1,11 @@
 ﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[203187] = {
+		readable = "Harpy Signal Fire",
+		model = 200932,
+		text = {
+			en = "Harpy Signal Fire",
+		},
+	},
 	[454313] = {
 		readable = "Queen Xekatha",
 		text = {

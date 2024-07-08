@@ -354,12 +354,13 @@ root(ROOTS.Zones, {
 							26762,	--  Reactivate the Constructs
 						},
 					}),
-					q(29329, {	-- Elemental Bonds: Patience
-						["lvl"] = 85,
+					applyclassicphase(CATA_PHASE_THREE, q(29329, {	-- Elemental Bonds: Patience
 						["qg"] = 53738,	-- Aggra
-						["coord"] = { 56.5, 12.4, DEEPHOLM },
 						["sourceQuest"] = 29337,	-- Into Constant Earth
-					}),
+						["coord"] = { 56.5, 12.4, DEEPHOLM },
+						["timeline"] = { ADDED_4_2_0 },
+						["lvl"] = 85,
+					})),
 					q(27136, {	-- Elemental Energy
 						["lvl"] = 82,
 						["qg"] = 43397,	-- Seer Kormo
@@ -556,12 +557,13 @@ root(ROOTS.Zones, {
 						["qg"] = 44010,	-- Stormcaller Mylra
 						["coord"] = { 64.4, 82.2, DEEPHOLM },
 					}),
-					q(29338, {	-- Into Unrelenting Flame
-						["lvl"] = 85,
+					applyclassicphase(CATA_PHASE_THREE, q(29338, {	-- Into Unrelenting Flame
 						["qg"] = 53738,	-- Aggra
-						["coord"] = { 64.0, 46.0, DEEPHOLM },
 						["sourceQuest"] = 29329,	-- Elemental Bonds: Patience
-					}),
+						["coord"] = { 64.0, 46.0, DEEPHOLM },
+						["timeline"] = { ADDED_4_2_0 },
+						["lvl"] = 85,
+					})),
 					q(26755, {	-- Keep Them off the Front
 						["lvl"] = 82,
 						["qg"] = 43897,	-- Pyrium Lodestone

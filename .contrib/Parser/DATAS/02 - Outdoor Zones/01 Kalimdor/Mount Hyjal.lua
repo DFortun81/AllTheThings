@@ -189,6 +189,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 42.1, 45.4, MOUNT_HYJAL },
 					["groups"] = {
+						objective(1, {	-- Marion Wormwing Captured
+							["provider"] = { "o", 203187 },	-- Harpy Signal Fire
+							["coord"] = { 38.3, 44.2, MOUNT_HYJAL },
+						}),
+						objective(2, {	-- Marion Wormwing Interrogated
+							["provider"] = { "n", 41112 },	-- Marion Wormwing
+							["coord"] = { 38.4, 44.0, MOUNT_HYJAL },
+						}),
 						i(57333),	-- Punishing Shoulders
 						i(57332),	-- Legplates of Persuasion
 						i(57334),	-- Pinpoint Choker
@@ -198,16 +206,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39406,	-- Instructor Devoran
 					["sourceQuest"] = 25294,	-- Walking the Dog
 					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Spiked Basilisk Hide
+							["provider"] = { "i", 54610 },	-- Spiked Basilisk Hide
+							["coord"] = { 84.5, 46.6, MOUNT_HYJAL },
+							["cr"] = 40403,	-- Spinescale Matriarch
+						}),
+					},
 				}),
 				q(25758, {	-- A Gap in Their Armor
 					["qg"] = 41006,	-- Thisalee Crow
 					["sourceQuest"] = 25740,	-- Fact-Finding Mission
 					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/8 Twilight Armor Plate
+							["providers"] = {
+								{ "i",  55809 },	-- Twilight Armor Plate
+								{ "o", 203197 },	-- Twilight Armor Plate
+								{ "o", 203198 },	-- Twilight Armor Plate
+							},
+							["coord"] = { 30.8, 79.5, MOUNT_HYJAL },
+							["cr"] = 41030,	-- Twilight Dragonkin Armorer
+						}),
+					},
 				}),
 				q(25411, {	-- A New Master
 					["qg"] = 39933,	-- Tyrus Blackhorn
 					["sourceQuest"] = 25408,	-- Seeds of Their Demise
 					["coord"] = { 22.2, 44.9, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Twilight Inferno Lord Subjugated
+							["provider"] = { "i", 53120 },	-- Bottled Bileberry Brew
+							["coord"] = { 12.2, 39.8, MOUNT_HYJAL },
+							["cr"] = 39974,	-- Twilight Inferno Lord
+						}),
+					},
 				}),
 				q(25665, {	-- A Plea From Beyond
 					["qg"] = 41068,	-- Mysterious Winged Spirit
@@ -223,6 +256,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 44.4, 46.2, MOUNT_HYJAL },
 					["groups"] = {
+						objective(1, {	-- 0/1 Ancient Feather
+							["providers"] = {
+								{ "i", 55210 },	-- Ancient Feather
+								{ "i", 55211 },	-- Enormous Bird Call
+							},
+							["coords"] = {
+								{ 35.6, 42.2, MOUNT_HYJAL },
+								{ 40.2, 37.2, MOUNT_HYJAL },
+								{ 44.6, 38.0, MOUNT_HYJAL },
+							},
+							["cr"] = 41084,	-- Blaithe <Aviana's Consort>
+						}),
 						i(57341),	-- Shoulderpads of Dead Memories
 						i(57340),	-- Griefsoul Wristguards
 						i(57339),	-- Heartcrush Greathammer
@@ -239,6 +284,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.1, 54.4, MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
+					["groups"] = {
+						objective(1, {	-- Open the portal to the Firelands
+							["provider"] = { "n", 52863 },	-- Leyara
+							["coord"] = { 27.4, 55.6, MOUNT_HYJAL },
+						}),
+					},
 				})),
 				q(25372, {	-- Aessina's Miracle
 					["qg"] = 41381,	-- Nordu
@@ -259,11 +310,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25509,	-- Physical Training: Forced Labor
 					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 				}),
-				q(29284, {	-- Aid of the Ancients
+				applyclassicphase(CATA_PHASE_THREE, q(29284, {	-- Aid of the Ancients
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29283,	-- Calling the Ancients
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-				}),
+					["timeline"] = { ADDED_4_2_0 },
+				})),
 				q(25520, {	-- An Ancient Awakens
 					["qg"] = 40341,	-- Tortolla
 					["sourceQuests"] = {
@@ -353,18 +405,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 				}),
-				q(29199, {	-- Calling for Reinforcements
+				applyclassicphase(CATA_PHASE_THREE, q(29199, {	-- Calling for Reinforcements
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
-				}),
-				q(29197, {	-- Caught Unawares
+				})),
+				applyclassicphase(CATA_PHASE_THREE, q(29197, {	-- Caught Unawares
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29196,	-- To the Sanctuary!
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
-				}),
+				})),
 				q(25519, {	-- Children of Tortolla
 					["qg"] = 40341,	-- Tortolla
 					["sourceQuest"] = 25510,	-- Tortolla Speaks
@@ -658,6 +712,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29066, {	-- Good News... and Bad News
+					["qg"] = 39928,	-- Matoclaw
 					["sourceQuest"] = 25428,	-- Black Heart of Flame
 					["coord"] = { 22.2, 44.9, MOUNT_HYJAL },
 					["isBreadcrumb"] = true,
@@ -672,33 +727,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25494,	-- A Champion's Collar
 					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
 				}),
-				heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
+				applyclassicphase(CATA_PHASE_THREE, heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
 					["description"] = "Only available to players who have not quested through Mount Hyjal.",
 					["timeline"] = { ADDED_4_2_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 85,
 					["u"] = REMOVED_FROM_GAME,
-				})),
-				warchiefscommand(q(29390, {	-- Guardians of Hyjal: Call of the Ancients (H)
+				}))),
+				applyclassicphase(CATA_PHASE_THREE, warchiefscommand(q(29390, {	-- Guardians of Hyjal: Call of the Ancients (H)
 					["description"] = "Only available to players who have not quested through Mount Hyjal.",
 					["timeline"] = { ADDED_4_2_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 85,
 					["u"] = REMOVED_FROM_GAME,
-				})),
-				heroscall(q(29387, {	-- Guardians of Hyjal: Firelands Invasion! (A)
+				}))),
+				applyclassicphase(CATA_PHASE_THREE, heroscall(q(29387, {	-- Guardians of Hyjal: Firelands Invasion! (A)
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 85,
-				})),
-				warchiefscommand(q(29388, {	-- Guardians of Hyjal: Firelands Invasion! (H)
+				}))),
+				applyclassicphase(CATA_PHASE_THREE, warchiefscommand(q(29388, {	-- Guardians of Hyjal: Firelands Invasion! (H)
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 85,
-				})),
-				q(29389, {	-- Guardians of Hyjal: Firelands Invasion!
+				}))),
+				applyclassicphase(CATA_PHASE_THREE, q(29389, {	-- Guardians of Hyjal: Firelands Invasion!
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuests"] = {
 						25372,	-- Aessina's Miracle
@@ -708,9 +763,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["coord"] = { 19.5, 37.8, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_2_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 85,
-				}),
+				})),
 				q(25255, {	-- Harrying the Hunters
 					["qg"] = 39429,	-- Oomla Whitehorn
 					["sourceQuest"] = 25584,	-- The Return of the Ancients
@@ -776,11 +832,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40278,	-- Tholo Whitehoof
 					["coord"] = { 64.0, 22.4, MOUNT_HYJAL },
 				}),
-				q(29335, {	-- Into Slashing Winds
+				applyclassicphase(CATA_PHASE_THREE, q(29335, {	-- Into Slashing Winds
 					["qg"] = 54312,	-- Aggra
 					["sourceQuest"] = 29326,	-- The Nordrassil Summit
 					["coord"] = { 60.2, 30.1, MOUNT_HYJAL },
-				}),
+					["timeline"] = { ADDED_4_2_0 },
+				})),
 				q(25624, {	-- Into the Maw!
 					["qg"] = 39432,	-- Takrik Ragehowl
 					["altQuests"] = { 25617 },	-- Into the Maw!
@@ -822,12 +879,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 19.03, 37.01, MOUNT_HYJAL },	-- Matoclaw
 					},
 				}),
-				q(29200, {	-- Leyara
+				applyclassicphase(CATA_PHASE_THREE, q(29200, {	-- Leyara
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 29199,	-- Calling for Reinforcements
 					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
-				}),
+				})),
 				q(25355, {	-- Lightning in a Bottle
 					["qg"] = 39432,	-- Takrik Ragehowl
 					["sourceQuest"] = 25277,	-- Cleaning House
@@ -909,11 +967,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				q(29280, {	-- Nourishing Waters
+				applyclassicphase(CATA_PHASE_THREE, q(29280, {	-- Nourishing Waters
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29279,	-- Filling the Moonwell
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-				}),
+					["timeline"] = { ADDED_4_2_0 },
+				})),
 				q(25392, {	-- Oh, Deer!
 					["qg"] = 39930,	-- Mylune
 					["sourceQuest"] = 25385,	-- Save the Wee Animals
@@ -1205,6 +1264,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 				}),
+				applyclassicphase(CATA_PHASE_THREE, q(29439, {	-- The Call of the World-Shaman (A)
+					["qg"] = 45226,	-- Naraat the Earthspeaker
+					["coord"] = { 74.4, 18.8, STORMWIND_CITY },
+					["timeline"] = { ADDED_4_2_0 },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				})),
+				applyclassicphase(CATA_PHASE_THREE, q(29440, {	-- The Call of the World-Shaman (H)
+					["qg"] = 45244,	-- Farseer Krogar
+					["coord"] = { 50.4, 38.2, ORGRIMMAR },
+					["timeline"] = { ADDED_4_2_0 },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				})),
 				q(25320, {	-- The Captured Scout
 					["qg"] = 38917,	-- Alysra
 					["sourceQuest"] = 25430,	-- Emerald Allies
@@ -1229,17 +1302,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
 					["coord"] = { 28.6, 30.2, MOUNT_HYJAL },
 				}),
-				q(29437, {	-- The Fallen Guardian
+				applyclassicphase(CATA_PHASE_THREE, q(29437, {	-- The Fallen Guardian
 					["qg"] = 40289,	-- Ysera
 					["sourceQuest"] = 29326,	-- The Nordrassil Summit	-- verify
 					["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
-				}),
-				q(29202, {	-- The Fate of Runetotem
+					["timeline"] = { ADDED_4_2_0 },
+				})),
+				applyclassicphase(CATA_PHASE_THREE, q(29202, {	-- The Fate of Runetotem
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
-				}),
+				})),
 				q(25551, {	-- The Firelord
 					["qg"] = 40773,	-- Cenarius
 					["sourceQuests"] = {
@@ -1293,11 +1368,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25807,	-- An Ancient Reborn
 					["coord"] = { 44.1, 45.9, MOUNT_HYJAL },
 				}),
-				q(29215, {	-- The Hunt Begins
+				applyclassicphase(CATA_PHASE_THREE, q(29215, {	-- The Hunt Begins
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29214,	-- The Shadow Wardens
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-				}),
+					["timeline"] = { ADDED_4_2_0 },
+				})),
 				q(25830, {	-- The Last Living Lorekeeper
 					["providers"] = {
 						{ "n", 40289 },	-- Ysera
@@ -1333,14 +1409,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "To get this quest DO NOT accept another version from Subjugated Inferno Lord after \"A New Master\", instead head back to Tyrus Blackhorn.",
 					["coord"] = { 22.2, 44.8, MOUNT_HYJAL },
 				}),
-				q(29326, {	-- The Nordrassil Summit
+				applyclassicphase(CATA_PHASE_THREE, q(29326, {	-- The Nordrassil Summit
 					["qg"] = 54313,	-- Thrall
 					["sourceQuests"] = {
 						29439,	-- The Call of the World-Shaman (A)
 						29440,	-- The Call of the World-Shaman (H)
 					},
 					["coord"] = { 60.6, 31.4, MOUNT_HYJAL },
-				}),
+					["timeline"] = { ADDED_4_2_0 },
+				})),
 				q(29126, {	-- The Power of Malorne
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29125,	-- Between the Trees
@@ -1369,17 +1446,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25578,	-- Return to Nordrassil
 					["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 				}),
-				q(29198, {	-- The Sanctuary Must Not Fall
+				applyclassicphase(CATA_PHASE_THREE, q(29198, {	-- The Sanctuary Must Not Fall
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 29197,	-- Caught Unawares
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
 					["groups"] = {
 						ach(5866, {	-- The Molten Front Offensive / Stop the assault on the Sanctuary of Malorne
 							["sym"] = {{ "achievement_criteria" }},
 						}),
 					},
-				}),
+				})),
 				q(25549, {	-- The Sanctum of the Prophets
 					["qg"] = 40772,	-- Commander Jarod Shadowsong
 					["sourceQuest"] = 25548,	-- Might of the Firelord
@@ -1460,21 +1538,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57286),	-- Dreamrending Dagger
 					},
 				}),
-				q(29201, {	-- Through the Gates of Hell
+				applyclassicphase(CATA_PHASE_THREE, q(29201, {	-- Through the Gates of Hell
 					["qg"] = 52845,	-- Malfurion Stormrage
 					["sourceQuest"] = 29200,	-- Leyara
 					["coord"] = { 27.0, 62.7, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
 					["groups"] = {
 						ach(5866, crit(17814)),	-- The Molten Front Offensive / Gain access to the Molten Front
 					},
-				}),
-				q(29196, {	-- To the Sanctuary!
+				})),
+				applyclassicphase(CATA_PHASE_THREE, q(29196, {	-- To the Sanctuary!
 					["qg"] = 52845,	-- Malfurion Stormrage
 					["sourceQuest"] = 29195,	-- A Ritual of Flame
 					["coord"] = { 27.3, 55.2, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
-				}),
+				})),
 				q(25510, {	-- Tortolla Speaks
 					["qg"] = 39858,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 25507,	-- Hell's Shells

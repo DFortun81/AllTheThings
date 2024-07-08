@@ -1670,13 +1670,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 				}),
-				q(29440, {	-- The Call of the World-Shaman
-					["qg"] = 45244,	-- Farseer Krogar
-					["coord"] = { 50.4, 38.2, ORGRIMMAR },
-					["timeline"] = { ADDED_4_2_0 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(28805, {	-- The Eye of the Storm
 					["qg"] = 45244,	-- Farseer Krogar
 					["sourceQuest"] = 28790,	-- A Personal Summons
