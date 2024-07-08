@@ -866,7 +866,7 @@ root(ROOTS.WorldDrops, applyclassicphase(WRATH_PHASE_ONE, expansion(EXPANSION.WR
 			i(37804),	-- Bloodwood Greatstaff
 			i(37806),	-- Zabra's Misplaced Staff
 			i(36603, {	-- Archaic Longspear
-				["timeline"] = { CREATED_4_0_1, ADDED_10_0_7 },	-- Might have dropped since 4.0.1. Unsure
+				["timeline"] = { CREATED_3_0_2, ADDED_4_0_1, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
 			}),
 			i(36547, {	-- Jester's Stick
 				["timeline"] = { CREATED_2_0_3, ADDED_3_0_2, REMOVED_6_0_3, ADDED_10_0_7 },	-- Maybe never removed, have to check in WoD Classic
