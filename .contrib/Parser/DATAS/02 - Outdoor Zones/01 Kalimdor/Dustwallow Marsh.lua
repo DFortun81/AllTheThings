@@ -293,6 +293,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Withervine slain
+							["providers"] = {
+								{ "n", 4382},	-- Withervine Creeper
+								{ "n", 4385},	-- Withervine Rager
+							},
+						}),
+					},
 				}),
 				q(6625, {	-- Alliance Trauma
 					["qg"] = 5150,	-- Nissa Firestone
@@ -401,6 +409,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 23579,	-- Brogg
 					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/5 Bloodfen Feather
+							["provider"] = { "i", 33085 },	-- Bloodfen Feather
+							["crs"] = {
+								4356,	-- Bloodfen Razormaw
+								4357,	-- Bloodfen Lashtail
+								23873,	-- Goreclaw the Ravenous
+							},
+						}),
+					},
 				}),
 				q(11158, {	-- Bloodfen Feathers
 					["qg"] = 23579,	-- Brogg <Stonemaul Survivor>
@@ -547,6 +565,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Stonemaul Clan Avenged
+							["provider"] = { "n", 23789 },	-- Smolderwing
+						}),
 						i(33231, {	-- Oversized Stonemaul Hood
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -594,6 +615,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Witch Hill Cleansed
+							["provider"] = { "n", 23864 },	-- Zelfrax
+						}),
 						i(33229, {	-- Mordant's Travel Tunic
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -657,6 +681,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 53.5, 56.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/10 Oozes Dissolved
+							["provider"] = { "n", 23797 },	-- Moxie Steelgrille
+						}),
 						i(33233, {	-- Cobalt-threaded Gloves
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -744,6 +771,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.7, 41.0, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Defias Orders
+							["provider"] = { "i", 33037 },	-- Defias Orders
+							["cr"] = 23679,	-- Garn Mathers
+						}),
+					},
 				}),
 				q(11137, {	-- Defias in Dustwallow?
 					["qg"] = 5086,	-- Captain Wymor
@@ -782,6 +815,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.0, 57.4, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/12 Direhorn Grimtotems killed
+							["providers"] = {
+								{ "n", 23594},	-- Grimtotem Destroyer
+								{ "n", 23595},	-- Grimtotem Earthbinder
+							},
+						}),
 						i(33240, {	-- Grimtotem Earthbinder's Tunic
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -805,6 +844,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_2_3_0, REMOVED_4_0_3 },
 					["lvl"] = 35,
 					["groups"] = {
+						objective(1, {	-- 0/12 Direhorn Grimtotems killed
+							["providers"] = {
+								{ "n", 23594},	-- Grimtotem Destroyer
+								{ "n", 23595},	-- Grimtotem Earthbinder
+							},
+						}),
 						i(33240, {	-- Grimtotem Earthbinder's Tunic
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -822,6 +867,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Leaflets Distributed
+							["provider"] = { "n", 4979 },	-- Theramore Guard
+						}),
+					},
 				}),
 				q(11133, {	-- Discrediting the Deserters
 					["qg"] = 23566,	-- Calia Hastings <SI:7>
@@ -952,6 +1002,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/8 Mirefin Head
+							["provider"] = { "i", 5847 },	-- Mirefin Head
+							["crs"] = {
+								4358,	-- Mirefin Puddlejumper
+								4359,	-- Mirefin Murloc
+								4360,	-- Mirefin Warrior
+								4361,	-- Mirefin Muckdweller
+								4362,	-- Mirefin Coastrunner
+								4363,	-- Mirefin Oracle
+								14230,	-- Burgle Eye
+								23841,	-- Razorspine
+							},
+						}),
 						i(9518),	-- Mud's Crushers
 						i(9519),	-- Durtfeet Stompers
 						i(131651, {	-- Mud's Chain Boots
@@ -965,6 +1028,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/7 Searing Tongue
+							["provider"] = { "i", 5840 },	-- Searing Tongue
+							["crs"] = {
+								4323,	-- Searing Hatchling
+								4324,	-- Searing Whelp
+							},
+						}),
+						objective(2, {	-- 0/7 Searing Heart
+							["provider"] = { "i", 5841 },	-- Searing Heart
+							["crs"] = {
+								4323,	-- Searing Hatchling
+								4324,	-- Searing Whelp
+							},
+						}),
 						i(57833, {	-- Brooding Mask
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1120,6 +1197,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Razorspine's Sword
+							["provider"] = { "i", 33110 },	-- Razorspine's Sword
+							["cr"] = 23841,	-- Razorspine
+						}),
 						i(57835, {	-- "Swamp Eye" Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1155,6 +1236,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27183,	-- Marsh Frog Legs
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/20 Unpopped Darkmist Eye
+							["provider"] = { "i", 5884 },	-- Unpopped Darkmist Eye
+							["crs"] = {
+								4376,	-- Darkmist Spider
+								4378,	-- Darkmist Recluse
+								4379,	-- Darkmist Silkspinner
+								4380,	-- Darkmist Widow
+							},
+						}),
+					},
 				}),
 				q(1206, {	-- Jarl Needs Eyes
 					["qg"] = 4792,	-- "Swamp Eye" Jarl
@@ -1369,6 +1461,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/10 Marsh Frog Leg
+							["provider"] = { "i", 33202 },	-- Marsh Frog Leg
+							["cr"] = 23979,	-- Giant Marsh Frog
+						}),
 						i(57834, {	-- Frog Boots
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1491,6 +1587,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.6, 60.2, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Fish Paste Tested
+							["provider"] = { "n", 23928 },	-- Lurking Shark
+						}),
+					},
 				}),
 				q(11209, {	-- Nat's Bargain
 					["qg"] = 12919,	-- Nat Pagle
@@ -1637,6 +1738,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Wreath Laid at Hyal Monument
+							["provider"] = { "n", 23768 },	-- Lynn Hyal
+						}),
 						i(33271, {	-- Battlecaster's Edge
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -1681,6 +1785,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Theramore Prisoners Freed
+							["provider"] = { "n", 23720 },	-- Theramore Prisoner
+						}),
+					},
 				}),
 				q(11145, {	-- Prisoners of the Grimtotems
 					["qg"] = 23723,	-- Sergeant Lukas
@@ -2090,6 +2199,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 37.4, 31.5, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Broodqueen Pedipalp
+							["provider"] = { "i", 60883 },	-- Broodqueen Pedipalp
+							["cr"] = 45227,	-- Darkmist Broodqueen
+						}),
+					},
 				}),
 				q(27410, {	-- Spirits of Stonemaul Hold
 					["qg"] = 23579,	-- Brogg
@@ -2348,6 +2463,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.5, 30.8, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Acidic Venom Sac
+							["provider"] = { "i", 5959 },	-- Acidic Venom Sac
+							["crs"] = {
+								4376,	-- Darkmist Spider
+								4378,	-- Darkmist Recluse
+								4379,	-- Darkmist Silkspinner
+								4380,	-- Darkmist Widow
+							},
+						}),
+					},
 				}),
 				q(27257, {	-- The Black Shield (4/5) [H]
 					["qg"] = 5087,	-- Do'gol
@@ -2806,6 +2932,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.0, 57.2, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/6 Marsh Venom
+							["provider"] = { "i", 33103 },	-- Marsh Venom
+							["crs"] = {
+								4348,	-- Noxious Shredder
+								4412,	-- Darkfang Creeper
+							},
+						}),
 						i(33273, {	-- Seasoned Marshwood Bow
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -2959,6 +3092,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.1, 47.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/4 Thresher Oil
+							["provider"] = { "i", 33126 },	-- Thresher Oil
+							["cr"] = 4388,	-- Young Murk Thresher
+						}),
+					},
 				}),
 				q(11192, {	-- Thresher Oil
 					["qg"] = 23892,	-- Babs Fizzletorque
@@ -2983,6 +3122,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Deserter Agitator Exposed
+							["provider"] = { "n", 23602 },	-- Deserter Agitator
+						}),
+					},
 				}),
 				q(11126, {	-- Traitors Among Us
 					["qg"] = 23566,	-- Calia Hastings <SI:7>
@@ -3108,6 +3252,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.7, 73.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Goreclaw the Ravenous slain
+							["provider"] = { "n", 23873 },	-- Goreclaw the Ravenous
+						}),
 						i(33258, {	-- Protective Engineer's Leggings
 							["timeline"] = { ADDED_2_3_0 },
 						}),
@@ -3157,6 +3304,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 23843,	-- Mordant Grimsby
 					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/10 Information Gathered
+							["provider"] = { "n", 23861 },	-- Restless Apparition
+						}),
+					},
 				}),
 				q(11180, {	-- What's Haunting Witch Hill?
 					["qg"] = 23843,	-- Mordant Grimsby
