@@ -374,12 +374,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 		n(ARMOR, {
 			i(59455),	-- Agile Bio-Optic Killshades
 			i(60222),	-- Authentic Jr. Engineer Goggles
-			i(59453),	-- Camouflage Bio-Optic Killshades
+			i(59453, {	-- Camouflage Bio-Optic Killshades
+				-- #if BEFORE 7.3.0
+				["classes"] = { DRUID },
+				-- #endif
+			}),
 			i(59456),	-- Deadly Bio-Optic Killshades
-			i(59458),	-- Energized Bio-Optic Killshades
+			i(59458, {	-- Energized Bio-Optic Killshades
+				-- #if BEFORE 7.3.0
+				["classes"] = { SHAMAN },
+				-- #endif
+			}),
 			i(59449),	-- Lightweight Bio-Optic Killshades
 			i(59359),	-- Reinforced Bio-Optic Killshades
-			i(59448),	-- Specialized Bio-Optic Killshades
+			i(59448, {	-- Specialized Bio-Optic Killshades
+				-- #if BEFORE 7.3.0
+				["classes"] = { PALADIN },
+				-- #endif
+			}),
 		}),
 		filter(MISC, {
 			i(67494, {	-- Electrostatic Condenser
