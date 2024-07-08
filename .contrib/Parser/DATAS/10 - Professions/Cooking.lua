@@ -208,17 +208,34 @@ root(ROOTS.Professions, prof(COOKING, bubbleDownSelf({ ["requireSkill"] = COOKIN
 	})),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 		ach(4916),	-- Cataclysmic Cook
-		ach(5845, {	-- A Bunch of Lunch
+		ach(5845, {	-- A Bunch of Lunch (A)
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				5842,	-- Let's Do Lunch: Darnassus
 				5841,	-- Let's Do Lunch: Ironforge
-				5475,	-- Let's Do Lunch: Orgrimmar
 				5474,	-- Let's Do Lunch: Stormwind
+				-- #if AFTER 5.0.4
+				5475,	-- Let's Do Lunch: Orgrimmar
+				5843,	-- Let's Do Lunch: Thunder Bluff
+				5844,	-- Let's Do Lunch: Undercity
+				-- #endif
+			}},
+			["timeline"] = { ADDED_4_2_0 },
+			-- #if BEFORE 5.0.4
+			["races"] = ALLIANCE_ONLY,
+			-- #endif
+		}),
+		ach(5846, {	-- A Bunch of Lunch (H)
+			-- Meta Achievement
+			-- #if BEFORE 5.0.4
+			["sym"] = {{"meta_achievement",
+				5475,	-- Let's Do Lunch: Orgrimmar
 				5843,	-- Let's Do Lunch: Thunder Bluff
 				5844,	-- Let's Do Lunch: Undercity
 			}},
-			["timeline"] = { ADDED_4_2_0 },
+			-- #endif
+			["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+			["races"] = HORDE_ONLY,
 		}),
 		ach(5779, {	-- You'll Feel Right as Rain
 			["cost"] = {{"i", 62680, 91}},	-- 91x Chocolate Cookie

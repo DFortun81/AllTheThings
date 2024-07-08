@@ -186,7 +186,7 @@ root(ROOTS.Zones, {
 						12429,	-- Wetlands Quests
 					}},
 				}),
-				ach(1676, {	-- Loremaster of Eastern Kingdoms
+				ach(1676, {	-- Loremaster of Eastern Kingdoms (A)
 					-- #if AFTER CATA
 					["sym"] = {{"meta_achievement",
 						4896,	-- Arathi Highlands Quests
@@ -203,11 +203,18 @@ root(ROOTS.Zones, {
 						4894,	-- Silverpine Forest Quests
 						4902,	-- Redridge Mountains Quests
 						4895,	-- Hillsbrad Foothills Quests
+						-- #if AFTER 5.0.4
 						4908,	-- Ghostlands Quests
-						-- #IF AFTER 7.3.5.25727
+						-- #endif
+						-- #if AFTER 7.3.5.25727
 						12455,	-- Westfall & Duskwood Quests
 						12456,	-- Loch Modan & Wetlands Quests
-						-- #ENDIF
+						-- #else
+						4907,	-- Duskwood Quests
+						4903,	-- Westfall Quests
+						4899,	-- Loch Modan Quests
+						4898,	-- Wetlands Quests
+						-- #endif
 					}},
 					-- #else
 					-- #if BEFORE WRATH
@@ -217,11 +224,30 @@ root(ROOTS.Zones, {
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. EASTERN_KINGDOMS .. [[); end]],
+					-- #endif
+					-- #if BEFORE 5.0.4
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
-				ach(1677, {	-- Loremaster of Eastern Kingdoms
-					-- #if BEFORE CATA
+				ach(1677, {	-- Loremaster of Eastern Kingdoms (H)
+					-- #if AFTER CATA
+					["sym"] = {{"meta_achievement",
+						4896,	-- Arathi Highlands Quests
+						4900,	-- Badlands Quests
+						4909,	-- Blasted Lands Quests
+						4901,	-- Burning Steppes Quests
+						4905,	-- Cape of Stranglethorn Quests
+						4892,	-- Eastern Plaguelands Quests
+						4908,	-- Ghostlands Quests
+						4895,	-- Hillsbrad Foothills Quests
+						4897,	-- Hinterlands Quests
+						4906,	-- Northern Stranglethorn Quests
+						4910,	-- Searing Gorge Quests
+						4904,	-- Swamp of Sorrows Quests
+						4893,	-- Western Plaguelands Quests
+						4894,	-- Silverpine Forest Quests
+					}},
+					-- #else
 					-- #if BEFORE WRATH
 					["description"] = "Complete 550 quests in Eastern Kingdoms.",
 					["rank"] = 550,
@@ -230,7 +256,7 @@ root(ROOTS.Zones, {
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. EASTERN_KINGDOMS .. [[); end]],
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(5518, bubbleDownSelf({["timeline"] = { ADDED_4_0_3_LAUNCH } }, {	-- Stood in the Fire

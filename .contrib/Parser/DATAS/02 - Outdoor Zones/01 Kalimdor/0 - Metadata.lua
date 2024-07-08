@@ -180,22 +180,32 @@ root(ROOTS.Zones, {
 					-- #if AFTER CATA
 					["sym"] = {{"meta_achievement",
 						4925,	-- Ashenvale Quests (Alliance)
+						-- #if AFTER 5.0.4
 						4976,	-- Ashenvale Quests (Horde)
-						4926,	-- Bloodmyst Isle Quests
-						4933,	-- Northern Barrens Quests
-						4928,	-- Darkshore Quests
 						4927,	-- Azshara Quests
+						-- #endif
+						4926,	-- Bloodmyst Isle Quests
+						4928,	-- Darkshore Quests
 						4930,	-- Desolace Quests
 						4929,	-- Dustwallow Marsh Quests (Alliance)
+						-- #if AFTER 5.0.4
 						4978,	-- Dustwallow Marsh Quests (Horde)
+						-- #endif
 						4931,	-- Felwood Quests
 						4932,	-- Feralas Quests (Alliance)
+						-- #if AFTER 5.0.4
 						4979,	-- Feralas Quests (Horde)
+						4933,	-- Northern Barrens Quests
+						-- #endif
 						4934,	-- Silithus Quests
 						4937,	-- Southern Barrens Quests (Alliance)
+						-- #if AFTER 5.0.4
 						4981,	-- Southern Barrens Quests (Horde)
+						-- #endif
 						4936,	-- Stonetalon Mountains Quests (Alliance)
+						-- #if AFTER 5.0.4
 						4980,	-- Stonetalon Mountains Quests (Horde)
+						-- #endif
 						4935,	-- Tanaris Quests
 						4938,	-- Thousand Needles Quests
 						4939,	-- Un'Goro Crater Quests
@@ -214,11 +224,30 @@ root(ROOTS.Zones, {
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. KALIMDOR .. [[); end]],
+					-- #endif
+					-- #if BEFORE 5.0.4
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
 				ach(1680, {	-- Loremaster of Kalimdor (H)
-					-- #if BEFORE CATA
+					-- #if AFTER CATA
+					["sym"] = {{"meta_achievement",
+						4976,	-- Ashenvale Quests (Horde)
+						4927,	-- Azshara Quests
+						4930,	-- Desolace Quests
+						4978,	-- Dustwallow Marsh Quests (Horde)
+						4931,	-- Felwood Quests
+						4979,	-- Feralas Quests (Horde)
+						4933,	-- Northern Barrens Quests
+						4934,	-- Silithus Quests
+						4981,	-- Southern Barrens Quests (Horde)
+						4980,	-- Stonetalon Mountains Quests (Horde)
+						4935,	-- Tanaris Quests
+						4938,	-- Thousand Needles Quests
+						4939,	-- Un'Goro Crater Quests
+						4940,	-- Winterspring Quests
+					}},
+					-- #else
 					-- #if BEFORE WRATH
 					-- #if AFTER TBC
 					["description"] = "Complete 685 quests in Kalimdor.",
@@ -232,7 +261,7 @@ root(ROOTS.Zones, {
 					["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnUpdate(t, ]] .. KALIMDOR .. [[); end]],
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(5518, bubbleDownSelf({["timeline"] = { ADDED_4_0_3_LAUNCH } }, {	-- Stood in the Fire

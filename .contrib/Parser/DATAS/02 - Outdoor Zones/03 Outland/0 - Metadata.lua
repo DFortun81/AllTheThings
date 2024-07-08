@@ -79,7 +79,7 @@ root(ROOTS.Zones, {
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1194, 1190, 1192, 1193, 1195, 1191, 1189); end]],
-					-- #elseif AFTER 4.0.3
+					-- #elseif AFTER 5.0.4
 					["sym"] = {{"meta_achievement",
 						1189,	-- To Hellfire and Back (Alliance)
 						1271,	-- To Hellfire and Back (Horde)
@@ -95,7 +95,7 @@ root(ROOTS.Zones, {
 					-- #else
 					["sym"] = { {"meta_achievement", 1194, 1190, 1192, 1193, 1195, 1191, 1189 } },
 					-- #endif
-					-- #if BEFORE 4.0.3
+					-- #if BEFORE 5.0.4
 					["races"] = ALLIANCE_ONLY,
 					-- #endif
 				}),
@@ -108,7 +108,7 @@ root(ROOTS.Zones, {
 					-- #else
 					["sym"] = { {"meta_achievement", 1194, 1190, 1273, 1193, 1195, 1272, 1271 } },
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = { REMOVED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(1311, {	-- Medium Rare

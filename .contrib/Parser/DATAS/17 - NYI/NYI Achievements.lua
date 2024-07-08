@@ -321,7 +321,6 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	expansion(EXPANSION.CATA, {
 		-- 4.x.x
 		n(P4xx, {
-			ach(5846),	-- A Bunch of Lunch
 			ach(5133),	-- Active Duty
 			ach(5365),	-- Bloom and Doom
 			ach(4783),	-- Cataclysm Dungeon Explorer
