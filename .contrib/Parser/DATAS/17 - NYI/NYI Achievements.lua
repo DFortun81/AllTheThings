@@ -329,7 +329,6 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(4876),	-- Eastern Kingdoms Dungeon Explorer
 			ach(4867),	-- Explore Tol Barad NYI
 			ach(4953),	-- Guild Gladiator
-			ach(5852),	-- Gone Fishin'
 			ach(4877),	-- Kalimdor Dungeon Explorer
 			ach(4983),	-- Loremaster of Cataclysm
 			ach(4880),	-- Master of Battle for Gilneas
