@@ -1758,10 +1758,23 @@ profession(TAILORING, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },
 					["recipeID"] = 24093,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["timeline"] = { "added 1.15.1" },
+					["name"] = "Boots of the Enchanter",
+					["recipeID"] = 439097
+				}),
+				{
+					["timeline"] = { "removed 1.15.1" },
+					["name"] = "Boots of the Enchanter",
+					["recipeID"] = 3860
+				},
+				-- #else
 				{
 					["name"] = "Boots of the Enchanter",
 					["recipeID"] = 3860
 				},
+				-- #endif
 				{
 					["name"] = "Cindercloth Boots",
 					["recipeID"] = 12088

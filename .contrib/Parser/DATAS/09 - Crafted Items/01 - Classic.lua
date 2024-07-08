@@ -2992,7 +2992,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_THREE, i(19056)),	-- Argent Boots
 			i(10026),	-- Black Mageweave Boots
 			applyclassicphase(PHASE_FOUR, i(19684, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Boots
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217253)),	-- Boots of the Enchanter
+			i(4325, {	-- Boots of the Enchanter
+				["timeline"] = { "removed 1.15.1" },
+			}),
+			-- #else
 			i(4325),	-- Boots of the Enchanter
+			-- #endif
 			i(10044),	-- Cindercloth Boots
 			i(6836),	-- Dress Shoes
 			-- #if SEASON_OF_DISCOVERY

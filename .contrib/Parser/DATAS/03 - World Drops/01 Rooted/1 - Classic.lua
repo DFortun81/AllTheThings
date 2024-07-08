@@ -3722,7 +3722,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		}),
 		prof(TAILORING, {
 			i(7085),	-- Pattern: Azure Shoulders
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217254)),	-- Pattern: Boots of the Enchanter
+			i(4352, {	-- Pattern: Boots of the Enchanter
+				["timeline"] = { "removed 1.15.1" },
+			}),
+			-- #else
 			i(4352),	-- Pattern: Boots of the Enchanter
+			-- #endif
 			i(14510),	-- Pattern: Bottomless Bag
 			i(14484, {	-- Pattern: Brightcloth Cloak
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
