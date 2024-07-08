@@ -2373,6 +2373,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_TWO, i(213513, {	-- Libram of Deliverance
+					["provider"] = { "o", 423695 },	-- Libram of Deliverance
+					["coord"] = { 66.5, 7.5, DESOLACE },
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						recipe(416028),	-- Engrave Boots - Sacred Shield
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(12045, {	-- Hae'Wilani <Axecrafter>
 					-- #if AFTER CATA

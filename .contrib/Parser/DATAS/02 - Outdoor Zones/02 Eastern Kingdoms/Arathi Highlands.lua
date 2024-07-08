@@ -2209,7 +2209,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(SOD_PHASE_TWO, i(213128, {	-- Rune of Piety
-					["provider"] = { "i", 213447 },	-- Rosary of the Light
+					["providers"] = {
+						{ "i", 213447 },	-- Rosary of the Light
+						{ "n", 217387 },	-- Brother Atticus
+					},
+					["coord"] = { 27.0, 57.0, ARATHI_HIGHLANDS },
 					["timeline"] = { "added 1.15.1" },
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
