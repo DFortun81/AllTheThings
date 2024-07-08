@@ -327,6 +327,9 @@ root(ROOTS.Zones, {
 								}),
 								q(32587, {	-- Forge Ahead! (A)
 								--	possibly races other than Draenei / Worgen and classes other than Paladin and Warlock?
+									["groups"] = {
+										i(93731),	-- Mogu Codex Fragment (QI!)
+									},
 								}),
 								q(32527, {	-- Grave Circumstances (A)
 								}),
@@ -365,8 +368,18 @@ root(ROOTS.Zones, {
 								q(32301, {	-- Old Enemies (A)
 								}),
 								q(32588, {	-- On Her Magic-ey Secret Service (A)
+									["groups"] = {
+										i(93761),	-- Arcane Emancipator (QI!)
+									},
 								}),
 								q(32557, {	-- Out of Enemy Hands (A)
+									["groups"] = {
+										o_repeated({
+											i(93736),	-- Loa-Infused Blade (QI!)
+											o(218055),	-- Loa-Infused Blade
+											o(218056),	-- Loa-Infused Blade
+										}),
+									},
 								}),
 								q(32637, {	-- Overpowered (A)
 								}),
@@ -375,6 +388,12 @@ root(ROOTS.Zones, {
 								q(32544, {	-- Pterrible Ptorment (A)
 								}),
 								q(32608, {	-- Raiding the Vault (A)
+									["groups"] = {
+										i(95374),	-- Hoard-Keeper's Key (QI!)
+										o(218853, {	-- Stormy Chest
+											i(95372),	-- Choker of Storms (QI!)
+										}),
+									},
 								}),
 								q(32582, {	-- Raining Bones (A)
 								}),
