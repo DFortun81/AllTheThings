@@ -725,7 +725,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		filter(HELD_IN_OFF_HAND, {
 			i(44210),	-- Faces of Doom
 			i(38322),	-- Iron-Bound Tome
-			i(45854),	-- Rituals of the New Moon
+			i(45854, {	-- Rituals of the New Moon
+				["description"] = "This specific version appears to have never been added to the game.",
+				["timeline"] = { CREATED_3_1_0 },
+			}),
 			i(45850),	-- Rituals of the New Moon
 			i(45851),	-- Rituals of the New Moon
 			i(45852),	-- Rituals of the New Moon
