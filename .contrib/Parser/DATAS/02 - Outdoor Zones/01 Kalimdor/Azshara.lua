@@ -224,6 +224,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.4, 74.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Mutilated Mistwing Carcass
+							["provider"] = { "i", 49208 },	-- Mutilated Mistwing Carcass
+							["cr"] = 36304,	-- Mistwing Cliffdweller
+						}),
+					},
 				}),
 				q(24458, {	-- A Hello to Arms
 					["qg"] = 36379,	-- Hobart Grapplehammer
@@ -269,6 +275,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.4, 23.6, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Briaroot Brew
+							["provider"] = { "i", 49365 },	-- Briaroot Brew
+							["crs"] = {
+								36012,	-- Blackmaw Shaman
+								36013,	-- Blackmaw Warrior
+								36015,	-- Blackmaw Pathfinder
+							},
+						}),
+					},
 				}),
 				q(46177, {	-- A Portal Away
 					["qg"] = 116048,	-- Joanna
@@ -316,6 +332,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.6, 23.7, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Amberwind's Journal
+							["provider"] = { "i", 49356 },	-- Amberwind's Journal
+							["cr"] = 36594,	-- Lorekeeper Amberwind
+						}),
+					},
 				}),
 				q(3564, {	-- Andron's Payment to Jediga
 					["providers"] = {
@@ -346,6 +368,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Talrendis Ancient slain
+							["provider"] = { "n", 35198 },	-- Talrendis Ancient
+						}),
 						i(53452, {	-- Woodchipper Dagger
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -363,6 +388,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.5, 28.7, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Attuned Runestone
+							["provider"] = { "i", 49359 },	-- Attuned Runestone
+							["crs"] = {
+								36592,	-- Apprentice Investigator
+								36593,	-- Apprentice Illuminator
+							},
+						}),
+					},
 				}),
 				q(14407, {	-- Azshara Blues
 					["qg"] = 36999,	-- Teemo
@@ -398,6 +432,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.3, 74.3, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(2, {	-- 0/1 Giant-Sized Laxative
+							["providers"] = {
+								{ "i", 49230 },	-- Giant-Sized Laxative
+								{ "o", 196462 },	-- Giant-Sized Laxative
+							},
+                            ["coord"] = { 39.9, 84.7, AZSHARA },
+						}),
+					},
 				}),
 				q(14388, {	-- Azsharite Experiment Number Two
 					["qg"] = 36077,	-- Assistant Greely
@@ -411,6 +454,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.0, 75.5, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Static-Charged Hippogryph slain
+							["provider"] = { "n", 36147 },	-- Static-Charged Hippogryph
+						}),
+					},
 				}),
 				q(14161, {	-- Basilisk Bashin'
 					["qg"] = 35091,	-- Horzak Zignibble
@@ -418,6 +466,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.1, 66.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Greystone Basilisk slain
+							["provider"] = { "n", 35245 },	-- Greystone Basilisk
+						}),
+					},
 				}),
 				q(26337, {	-- Beating the Market
 					["provider"] = { "o", 204050 },	-- Foebreaker Blueprints
@@ -508,6 +561,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 14.4, 65.7, AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Talrendis Glaive Thrower slain
+							["provider"] = { "n", 36890 },	-- Talrendis Glaive Thrower
+						}),
+					},
 				}),
 				q(3508, {	-- Breaking the Ward
 					["qg"] = 7783,	-- Loramus Thalipedes
@@ -553,6 +611,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 14135,	-- Up a Tree
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/20 Talrendis Raider slain
+							["provider"] = { "n", 35177 },	-- Talrendis Raider
+						}),
+					},
 				}),
 				q(3542, {	-- Delivery to Andron Gant
 					["providers"] = {
@@ -604,6 +667,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.4, 23.6, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Blackmaw Meeting Agenda
+							["providers"] = {
+								{ "i", 49367 },	-- Blackmaw Meeting Agenda
+								{ "o", 196835 },	-- Important Documents
+							},
+                            ["coord"] = { 29.8, 38.5, AZSHARA },
+						}),
+						objective(2, {	-- 0/1 Ambassador's Robes
+							["provider"] = { "i", 49366 },	-- Ambassador's Robes
+							["cr"] = 36614,	-- Talrendis Ambassador
+						}),
+					},
 				}),
 				q(14423, {	-- Dozercism
 					["qg"] = 35088,	-- Custer Clubnik
@@ -612,6 +688,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Clubnik's Dozer Exorcised
+							["provider"] = { "n", 35526 },	-- Clubnik's Dozer
+						}),
 						i(53447, {	-- Standard Issue Airborne Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -646,6 +725,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/30 Spitelash Naga slain
+							["providers"] = {
+								{ "n", 7885},	-- Spitelash Battlemaster
+								{ "n", 6194},	-- Spitelash Serpent Guard
+								{ "n", 7886},	-- Spitelash Enchantress
+								{ "n", 36873},	-- High Priestess Silthera
+							},
+						}),
 						i(53453, {	-- Wrenchmen Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -661,6 +748,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Twilight Lord Katrana slain
+							["provider"] = { "n", 36638 },	-- Twilight Lord Katrana
+						}),
+						objective(2, {	-- 0/1 Malicion slain
+							["provider"] = { "n", 36649 },	-- Malicion
+						}),
 						i(53402, {	-- Blue Hide Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -711,6 +804,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/60 Spitelash Attackers blown to bits
+							["providers"] = {
+								{ "n", 6196},	-- Spitelash Myrmidon
+								{ "n", 6193},	-- Spitelash Screamer
+							},
+						}),
 						i(53422, {	-- Kaboom Leggings
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -766,6 +865,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Globe of Boiling Water
+							["provider"] = { "i", 49174 },	-- Globe of Boiling Water
+							["cr"] = 36130,	-- Scalding Water Lord
+						}),
 						i(53445, {	-- Spongy Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -789,6 +892,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.6, 66.8, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ectosplatter Sample
+							["provider"] = { "i", 48780 },	-- Ectosplatter Sample
+							["cr"] = 35558,	-- Ectoplasmic Exhaust
+						}),
+					},
 				}),
 				q(14430, {	-- Hacking the Construct
 					["provider"] = { "o", 196833 },	-- Lower Scrying Stone
@@ -815,6 +924,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Wounded Soldier rescued
+							["provider"] = { "n", 36922 },	-- Wounded Soldier
+						}),
 						i(53410, {	-- Disposable Cloak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -832,6 +944,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.4, 57.6, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Military Supplies
+							["provider"] = { "i", 49599 },	-- Military Supplies
+							["cr"] = 36756,	-- Dead Soldier
+						}),
+					},
 				}),
 				q(14486, {	-- Handling the Goods
 					["qg"] = 36894,	-- Tora Halotrix
@@ -857,6 +975,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 34.4, 44.7, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Lord Kassarus slain
+							["provider"] = { "n", 36822 },	-- Lord Kassarus
+						}),
+					},
 				}),
 				q(14261, {	-- Ice Cold
 					["qg"] = 37064,	-- Feno Blastnoggin
@@ -864,6 +987,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.5, 19.6, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Sable Drake slain
+							["provider"] = { "n", 36640 },	-- Sable Drake
+						}),
+					},
 				}),
 				q(45570, {	-- In Safer Hands
 					["qg"] = 117252,	-- Archmage Xylem
@@ -880,6 +1008,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.3, 57.6, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Enslaved Son of Arkkoroc slain
+							["provider"] = { "n", 36868 },	-- Enslaved Son of Arkkoroc
+						}),
+					},
 				}),
 				q(14267, {	-- Investigating the Sea Shrine
 					["qg"] = 35657,	-- Torg Twocrush
@@ -957,6 +1090,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 14.0, 64.8, AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Talrendis Defender slain
+							["provider"] = { "n", 36816 },	-- Talrendis Defender
+						}),
+						objective(2, {	-- 0/6 Talrendis Sentinel slain
+							["provider"] = { "n", 36914 },	-- Talrendis Sentinel
+						}),
+					},
 				}),
 				q(14464, {	-- Lightning Strike Assassination
 					["qg"] = 36729,	-- Slinky Sharpshiv
@@ -965,6 +1106,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Grunwald's Head
+							["provider"] = { "i", 49540 },	-- Grunwald's Head
+							["cr"] = 36680,	-- Captain Grunwald
+						}),
 						i(53425, {	-- Low-Altitude Parachute
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1074,6 +1219,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.3, 57.6, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Warlord Krellian slain
+							["provider"] = { "n", 8408 },	-- Warlord Krellian
+						}),
+						objective(2, {	-- 0/1 SFG
+							["providers"] = {
+								{ "i", 49700 },	-- SFG
+								{ "o", 201572 },	-- SFG
+							},
+                            ["coord"] = { 27.7, 51.9, AZSHARA },
+						}),
+					},
 				}),
 				q(24435, {	-- Mop Up
 					["qg"] = 36920,	-- Lieutenant Drex
@@ -1081,6 +1238,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.5, 53.6, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Defending Naga slain
+							["providers"] = {
+								{ "n", 6190},	-- Spitelash Warrior
+								{ "n", 6195},	-- Spitelash Siren
+							},
+						}),
+					},
 				}),
 				q(14258, {	-- Mortar the Point
 					["qg"] = 35817,	-- Bombardier Captian Smooks
@@ -1143,6 +1308,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 					["groups"] = {
+						objective(2, {	-- 0/1 Secret Rocket Plans
+							["provider"] = { "i", 49204 },	-- Secret Rocket Plans
+							["cr"] = 36156,	-- Mutant Goblin
+						}),
 						objective(1, {	-- 0/4 Healthy Courser Gland
 							["provider"] = { "i", 20027 },	-- Healthy Courser Gland
 							["cr"] = 8761,	-- Mosshoof Courser
@@ -1249,6 +1418,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.3, 20.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/4 Bilgewater Laborer rescued
+							["provider"] = { "n", 36722 },	-- Bilgewater Laborer
+						}),
+					},
 				}),
 				q(14477, {	-- Push the Button!
 					["qg"] = 36785,	-- Bombardier Captain Smooks
@@ -1295,6 +1469,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.0, 50.4, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 AWOL Grunt Disciplined
+							["provider"] = { "n", 42893 },	-- AWOL Grunt Disciplined
+						}),
+					},
 				}),
 				q(26335, {	-- Ready the Navy
 					["qg"] = 42641,	-- Warlord Krogg
@@ -1310,6 +1489,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Mountainfoot Miner Destoned
+							["provider"] = { "n", 35375 },	-- Mountainfoot Miner Destoned Counter
+						}),
 						i(53449, {	-- Stonifying Gun
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1373,6 +1555,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.0, 77.0, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Runaway Shredder Captured
+							["provider"] = { "n", 35111 },	-- Runaway Shredder
+						}),
+					},
 				}),
 				q(14310, {	-- Segmentation Fault: Core Dumped
 					["provider"] = { "o", 195676 },	-- Secret Lab Squawkbox
@@ -1388,6 +1575,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/80 Pristine Thunderhead Feather
+							["provider"] = { "i", 49068 },	-- Pristine Thunderhead Feather
+							["crs"] = {
+								6375,	-- Thunderhead Hippogryph
+								6377,	-- Thunderhead Stagwing
+							},
+						}),
 						i(53439, {	-- Scissor Blade
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1439,6 +1633,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Lady Silisthra slain
+							["provider"] = { "n", 35880 },	-- Lady Silisthra
+						}),
+						objective(2, {	-- 0/1 Lady Vesthra slain
+							["provider"] = { "n", 35881 },	-- Lady Vesthra
+						}),
 						i(53440, {	-- Sea Sister Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1544,6 +1744,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 70.3, 36.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Ruins of Arkkoran Makrinni slain
+							["provider"] = { "n", 6370 },	-- Makrinni Scrabbler
+						}),
+					},
 				}),
 				q(44924, {	-- The Archmage Accosted
 					["sourceQuest"] = 44920,	-- Order of Incantations
@@ -1567,6 +1772,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(2, {	-- 0/4 Blackmaw Warrior slain
+							["provider"] = { "n", 36013 },	-- Blackmaw Warrior
+						}),
+						objective(3, {	-- 0/4 Blackmaw Shaman slain
+							["provider"] = { "n", 36012 },	-- Blackmaw Shaman
+						}),
 						i(53450, {	-- Treaty Breaker Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1586,6 +1797,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.4, 23.5, AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Talrendis Biologist slain
+							["provider"] = { "n", 36611 },	-- Talrendis Biologist
+						}),
+						objective(2, {	-- 0/1 Blackmaw Intelligence
+							["provider"] = { "i", 49364 },	-- Blackmaw Intelligence
+							["cr"] = 36611,	-- Talrendis Biologist
+						}),
+					},
 				}),
 				q(14134, {	-- The Captain's Logs
 					["sourceQuest"] = 14129,	-- Runaway Shredder!
@@ -1602,6 +1822,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 The Head of Jarrodenus
+							["provider"] = { "i", 49674 },	-- The Head of Jarrodenus
+							["cr"] = 36884,	-- Commander Jarrodenus
+						}),
 						i(53443, {	-- Shield of Talrendis Point
 							["timeline"] = { ADDED_4_0_1 },
 						}),
@@ -1619,6 +1843,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Talrendis Scout slain
+							["provider"] = { "n", 35095 },	-- Talrendis Scout
+						}),
 						i(53416, {	-- Hill's Eye Wand
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1736,6 +1963,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.1, 66.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Crystal Pendant
+							["provider"] = { "i", 47819 },	-- Crystal Pendant
+							["cr"] = 35312,	-- Talrendis Saboteur
+						}),
+					},
 				}),
 				q(14413, {	-- The Pinnacle of Learning
 					["qg"] = 35187,	-- Image of Archmage Xylem
@@ -1768,6 +2001,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Bingham Gadgetspring slain
+							["provider"] = { "n", 36407 },	-- Bingham Gadgetspring
+						}),
+						objective(2, {	-- 0/4 Netgun Gnome slain
+							["provider"] = { "n", 36385 },	-- Netgun Gnome
+						}),
+						objective(3, {	-- 0/6 Zapper Gnome slain
+							["provider"] = { "n", 36384 },	-- Zapper Gnome
+						}),
 						i(53417, {	-- Hobart's Spare Hubcap
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1817,6 +2059,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.6, 75.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Spitelash Stormfury slain
+							["provider"] = { "n", 35831 },	-- Spitelash Stormfury
+						}),
+						objective(2, {	-- 0/6 Spitelash Seacaller slain
+							["provider"] = { "n", 35832 },	-- Spitelash Seacaller
+						}),
+					},
 				}),
 				q(14226, {	-- Trouble Under Foot
 					["qg"] = 35187,	-- Image of Archmage Xylem
@@ -1828,6 +2078,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.2, 20.8, AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Polymorphed Cockroach slain
+							["provider"] = { "n", 35628 },	-- Polymorphed Cockroach
+						}),
+					},
 				}),
 				q(14391, {	-- Turning the Tables
 					["qg"] = 36436,	-- Spirit of Azuregos
@@ -1871,12 +2126,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.0, 77.0, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/9 Talrendis Sniper slain
+							["provider"] = { "n", 35149 },	-- Talrendis Sniper
+						}),
+					},
 				}),
 				q(14118, {	-- Venison for the Troops
 					["qg"] = 8576,	-- Ag'tor Bloodfist
 					["coord"] = { 26.8, 76.9, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Slab of Venison
+							["provider"] = { "i", 47038 },	-- Slab of Venison
+							["cr"] = 35096,	-- Weakened Mosshoof Stag
+						}),
+					},
 				}),
 				q(9362, {	-- Warlord Krellian
 					["qg"] = 8379,	-- Archmage Xylem
