@@ -382,7 +382,7 @@ i(0, 56464);		-- Overcharged Capacitor
 i(0, 63770);		-- Reticulated Armor Webbing [REMOVED: 6.0.2]
 i(0, 56475);		-- Saronite Razorheads [REMOVED: 4.0.1]
 i(0, 56466);		-- Sonic Booster
-i(0, 63765);		-- Springy Arachnoweave [REMOVED: 6.0.2]
+i(0, 63765);		-- Springy Arachnoweave [REMOVED: 4.0.1]
 i(0, 56470);		-- Sun Scope
 i(0, 56574);		-- Truesight Ice Blinders
 i(0, 56484);		-- Visage Liquification Goggles
