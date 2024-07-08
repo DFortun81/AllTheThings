@@ -183,11 +183,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(QUESTS, {
 				q(25731, {	-- A Bird in Hand
 					["qg"] = 41006,	-- Thisalee Crow
-					["coord"] = { 42.1, 45.4, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25656,	-- Scrambling For Eggs
 						25655,	-- The Wormwing Problem
 					},
+					["coord"] = { 42.1, 45.4, MOUNT_HYJAL },
 					["groups"] = {
 						i(57333),	-- Punishing Shoulders
 						i(57332),	-- Legplates of Persuasion
@@ -196,32 +196,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25494, {	-- A Champion's Collar
 					["qg"] = 39406,	-- Instructor Devoran
-					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
 					["sourceQuest"] = 25294,	-- Walking the Dog
+					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
 				}),
 				q(25758, {	-- A Gap in Their Armor
 					["qg"] = 41006,	-- Thisalee Crow
-					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 					["sourceQuest"] = 25740,	-- Fact-Finding Mission
+					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 				}),
 				q(25411, {	-- A New Master
 					["qg"] = 39933,	-- Tyrus Blackhorn
-					["coord"] = { 22.2, 44.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25408,	-- Seeds of Their Demise
+					["coord"] = { 22.2, 44.9, MOUNT_HYJAL },
 				}),
 				q(25665, {	-- A Plea From Beyond
 					["qg"] = 41068,	-- Mysterious Winged Spirit
-					["coord"] = { 40.3, 44.3, MOUNT_HYJAL },
 					["sourceQuest"] = 25663,	-- An Offering For Aviana
+					["coord"] = { 40.3, 44.3, MOUNT_HYJAL },
 					["isBreadcrumb"] = true,
 				}),
 				q(25664, {	-- A Prayer and a Wing
 					["qg"] = 41005,	-- Choluna
-					["coord"] = { 44.4, 46.2, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25663,	-- An Offering For Aviana
 						25665,	-- A Plea From Beyond
 					},
+					["coord"] = { 44.4, 46.2, MOUNT_HYJAL },
 					["groups"] = {
 						i(57341),	-- Shoulderpads of Dead Memories
 						i(57340),	-- Griefsoul Wristguards
@@ -230,22 +230,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25324, {	-- A Prisoner of Interest
 					["qg"] = 38917,	-- Alysra
-					["coord"] = { 48.4, 18.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25424,	-- Return to Alysra
+					["coord"] = { 48.4, 18.9, MOUNT_HYJAL },
 				}),
-				q(29195, {	-- A Ritual of Flame
+				applyclassicphase(CATA_PHASE_THREE, q(29195, {	-- A Ritual of Flame
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-					["lvl"] = 85,
-					["coord"] = { 27.1, 54.4, MOUNT_HYJAL },
 					["sourceQuest"] = 29145,	-- Opening the Door
-				}),
+					["coord"] = { 27.1, 54.4, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_2_0 },
+					["lvl"] = 85,
+				})),
 				q(25372, {	-- Aessina's Miracle
 					["qg"] = 41381,	-- Nordu
-					["coord"] = { 27.3, 55.5, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25381,	-- Fighting Fire With ... Anything
 						25842,	-- Firefight
 					},
+					["coord"] = { 27.3, 55.5, MOUNT_HYJAL },
 					["groups"] = {
 						i(57267),	-- Rebirth Spaulders
 						i(57266),	-- Gloves of Nurtured Truth
@@ -255,26 +256,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25499, {	-- Agility Training: Run Like Hell!
 					["qg"] = 39413,	-- Instructor Mylva
-					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25509,	-- Physical Training: Forced Labor
+					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 				}),
 				q(29284, {	-- Aid of the Ancients
 					["qg"] = 52669,	-- Matoclaw
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["sourceQuest"] = 29283,	-- Calling the Ancients
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(25520, {	-- An Ancient Awakens
 					["qg"] = 40341,	-- Tortolla
-					["coord"] = { 24.6, 55.6, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25514,	-- Breaking the Bonds
 						25519,	-- Children of Tortolla
 					},
+					["coord"] = { 24.6, 55.6, MOUNT_HYJAL },
 				}),
 				q(25807, {	-- An Ancient Reborn
 					["qg"] = 41005,	-- Choluna
-					["coord"] = { 44.4, 46.2, MOUNT_HYJAL },
 					["sourceQuest"] = 25795,	-- Return to the Shrine
+					["coord"] = { 44.4, 46.2, MOUNT_HYJAL },
 					["groups"] = {
 						i(57336),	-- Skygrip Handguards
 						i(57337),	-- Heraldcall Censer
@@ -283,12 +284,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25663, {	-- An Offering for Aviana
 					["qg"] = 41005,	-- Choluna
-					["coord"] = { 44.4, 46.2, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						27874,	-- Aviana's Legacy
 						25584,	-- The Return of the Ancients
 						25985,	-- Wings Over Mount Hyjal
 					},
+					["coord"] = { 44.4, 46.2, MOUNT_HYJAL },
 				}),
 				q(25316, {	-- As Hyjal Burns
 					["qg"] = 39865,	-- Emissary Windsong
@@ -305,26 +306,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(27874, {	-- Aviana's Legacy
 					["qg"] = 40289,	-- Ysera
-					["coord"] = { 62.0, 24.8, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25611,	-- Return from the Firelands (A)
 						25612,	-- Return from the Firelands (H)
 					},
+					["coord"] = { 62.0, 24.8, MOUNT_HYJAL },
 					["isBreadcrumb"] = true,
 				}),
 				q(29125, {	-- Between the Trees
 					["qg"] = 52669,	-- Matoclaw
-					["isDaily"] = true,
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
 				}),
 				q(25428, {	-- Black Heart of Flame
 					["qg"] = 39933,	-- Tyrus Blackhorn
-					["coord"] = { 22.2, 44.9, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25412,	-- The Name Never Spoken
 						25443,	-- The Name Never Spoken
 					},
+					["coord"] = { 22.2, 44.9, MOUNT_HYJAL },
 					["groups"] = {
 						i(57321),	-- Charbite Hood
 						i(57320),	-- Embercrusher Grips
@@ -333,41 +334,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25514, {	-- Breaking the Bonds
 					["qg"] = 40341,	-- Tortolla
-					["coord"] = { 24.6, 55.6, MOUNT_HYJAL },
 					["sourceQuest"] = 25510,	-- Tortolla Speaks
+					["coord"] = { 24.6, 55.6, MOUNT_HYJAL },
 				}),
 				q(25899, {	-- Breakthrough
 					["qg"] = 41507,	-- Niden
-					["coord"] = { 42.2, 60.5, MOUNT_HYJAL },
 					["sourceQuest"] = 25843,	-- Tortolla's Revenge
+					["coord"] = { 42.2, 60.5, MOUNT_HYJAL },
 				}),
 				q(25552, {	-- Brood of Evil
 					["qg"] = 40816,	-- Aronus
-					["coord"] = { 72.2, 73.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25644,	-- The Twilight Egg
+					["coord"] = { 72.2, 73.9, MOUNT_HYJAL },
 				}),
 				q(29147, {	-- Call the Flock
 					["qg"] = 52669,	-- Matoclaw
-					["isDaily"] = true,
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
 				}),
 				q(29199, {	-- Calling for Reinforcements
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-					["lvl"] = 85,
-					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
+					["lvl"] = 85,
 				}),
 				q(29197, {	-- Caught Unawares
 					["qg"] = 52669,	-- Matoclaw
-					["lvl"] = 85,
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["sourceQuest"] = 29196,	-- To the Sanctuary!
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["lvl"] = 85,
 				}),
 				q(25519, {	-- Children of Tortolla
 					["qg"] = 40341,	-- Tortolla
-					["coord"] = { 24.6, 55.6, MOUNT_HYJAL },
 					["sourceQuest"] = 25510,	-- Tortolla Speaks
+					["coord"] = { 24.6, 55.6, MOUNT_HYJAL },
 					["groups"] = {
 						i(57280),	-- Kilt of Reborn Future
 						i(57279),	-- Boots of Infinite Possibility
@@ -377,39 +378,39 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25599, {	-- Cindermaul, the Portal Master
 					["qg"] = 40834,	-- Jordan Olafson
-					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25577,	-- Crushing the Cores
 						25575,	-- Forged of Shadow and Flame
 						25576,	-- Rage of the Wolf Ancient
 					},
+					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 				}),
 				q(25277, {	-- Cleaning House
 					["qg"] = 39432,	-- Takrik Ragehowl
+					["sourceQuest"] = 25279,	-- The Shrine Reclaimed
 					["coord"] = { 28.4, 29.8, MOUNT_HYJAL },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25279,	-- The Shrine Reclaimed
 				}),
 				q(25278, {	-- Cleaning House
 					["qg"] = 39433,	-- Ian Duran
+					["sourceQuest"] = 25280,	-- The Shrine Reclaimed
 					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25280,	-- The Shrine Reclaimed
 				}),
 				q(25597, {	-- Commander Jarod Shadowsong
 					["qg"] = 40289,	-- Ysera
-					["coord"] = { 62.0, 24.8, MOUNT_HYJAL },
 					["sourceQuest"] = 25653,	-- The Ancients are With Us
+					["coord"] = { 62.0, 24.8, MOUNT_HYJAL },
 				}),
 				q(25577, {	-- Crushing the Cores
 					["qg"] = 40834,	-- Jordan Olafson
-					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25617,	-- Into the Maw! H1
 						25618,	-- Into the Maw! A1
 						25623,	-- Into the Maw! A2
 						25624,	-- Into the Maw! H2
 					},
+					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 					["groups"] = {
 						i(57358),	-- Coreforged Girdle
 						i(57357),	-- Anvilcrush Bracers
@@ -418,8 +419,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25553, {	-- Death to the Broodmother
 					["qg"] = 40816,	-- Aronus
-					["coord"] = { 72.2, 73.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25552,	-- Brood of Evil
+					["coord"] = { 72.2, 73.9, MOUNT_HYJAL },
 					["groups"] = {
 						i(57302),	-- Maggotproof Gloves
 						i(57301),	-- Matriarch-Hide Wristguards
@@ -428,8 +429,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25761, {	-- Disassembly
 					["qg"] = 41006,	-- Thisalee Crow
-					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 					["sourceQuest"] = 25758,	-- A Gap In Their Armor
+					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 					["groups"] = {
 						i(57314),	-- Nimble-Knife Chestguard
 						i(57313),	-- Bladerip Girdle
@@ -439,8 +440,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25382, {	-- Disrupting the Rituals
 					["qg"] = 39927,	-- Laina Nightsky
-					["coord"] = { 19.0, 40.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25584,	-- The Return of the Ancients
+					["coord"] = { 19.0, 40.9, MOUNT_HYJAL },
 					["groups"] = {
 						i(57331),	-- Ring of the Quenched Inferno
 						i(57330),	-- Lordbane Scepter
@@ -449,15 +450,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25491, {	-- Durable Seeds
 					["qg"] = 39858,	-- Archdruid Hamuul Runetotem
-					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
 					["sourceQuest"] = 25490,	-- Smashing Through Ashes
+					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
 				}),
-				q(29122, {	-- Echoes of Nemesis
+				applyclassicphase(CATA_PHASE_TWO, q(29122, {	-- Echoes of Nemesis
 					["qg"] = 52671,	-- Mylune
-					["lvl"] = 85,
-					["coord"] = { 27.1, 61.9, MOUNT_HYJAL },
-					["isDaily"] = true,
 					["sourceQuest"] = 29101,	-- Punting Season
+					["coord"] = { 27.1, 61.9, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_1_0 },
+					["isDaily"] = true,
+					["lvl"] = 85,
 					["groups"] = {
 						n(52383, {	-- Nemesis <Echo of the Usurper>
 							crit(17834, {	-- Infernal Ambassadors (Slay Nemesis at Ashen Lake without taking damage from Molten Fury)
@@ -465,14 +467,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}),
 						}),
 					},
-				}),
+				})),
 				q(25764, {	-- Egg Hunt
 					["qg"] = 41006,	-- Thisalee Crow
-					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25746,	-- Sethria's Brood
 						25763,	-- The Codex of Shadows
 					},
+					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 					["groups"] = {
 						i(57319),	-- Lightheart Sandals
 						i(57318),	-- Tunic of Soaring Safety
@@ -482,8 +484,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25560, {	-- Egg Wave
 					["qg"] = 40578,	-- Farden Talonshrike
-					["coord"] = { 37.2, 56.1, MOUNT_HYJAL },
 					["sourceQuest"] = 25544,	-- Wave Two
+					["coord"] = { 37.2, 56.1, MOUNT_HYJAL },
 					["groups"] = {
 						ach(4959),	-- Beware of the 'Unbeatable?' Pterodactyl
 						i(65662),	-- Gold Mini Jouster (PET!)
@@ -491,9 +493,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25303, {	-- Elementary!
-					["coord"] = { 25.8, 41.6, MOUNT_HYJAL },
 					["provider"] = { "o", 202712 },	-- The Twilight Apocrypha
 					["sourceQuest"] = 25301,	-- Mastering Puppets
+					["coord"] = { 25.8, 41.6, MOUNT_HYJAL },
 					["groups"] = {
 						i(57382),	-- Apocryhphic Bindings
 						i(57381),	-- Chestguard of Inscrutability
@@ -502,38 +504,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25430, {	-- Emerald Allies
 					["qg"] = 39869,	-- Windspeaker Tamila
-					["coord"] = { 47.6, 35.5, MOUNT_HYJAL },
 					["sourceQuest"] = 25464,	-- The Return of Baron Geddon
+					["coord"] = { 47.6, 35.5, MOUNT_HYJAL },
 				}),
 				q(25233, {	-- End of the Supply Line
 					["qg"] = 39427,	-- Jadi Falaryn
-					["coord"] = { 35.7, 19.6, MOUNT_HYJAL },
 					["sourceQuest"] = 25584,	-- The Return of the Ancients
+					["coord"] = { 35.7, 19.6, MOUNT_HYJAL },
 				}),
 				q(25740, {	-- Fact-Finding Mission
 					["qg"] = 40997,	-- Skylord Omnuron
-					["coord"] = { 43.5, 45.8, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25731,	-- A Bird In Hand
 						25664,	-- A Prayer and a Wing
 					},
+					["coord"] = { 43.5, 45.8, MOUNT_HYJAL },
 				}),
 				q(25381, {	-- Fighting Fire With ... Anything
 					["qg"] = 39927,	-- Laina Nightsky
-					["coord"] = { 19.0, 40.9, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25584,	-- The Return of the Ancients
 						25630,	-- The Fires of Mount Hyjal
 					},
+					["coord"] = { 19.0, 40.9, MOUNT_HYJAL },
 					["isBreadcrumb"] = true,
 				}),
 				q(25923, {	-- Finish Nemesis
 					["qg"] = 41498,	-- Garunda Mountainpeak
-					["coord"] = { 64.2, 53.5, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25915,	-- The Strength of Tortolla
 						25910,	-- The Time for Mercy has Passed
 					},
+					["coord"] = { 64.2, 53.5, MOUNT_HYJAL },
 					["groups"] = {
 						i(57263),	-- Liberating Crown
 						i(57262),	-- Leggings of the Vanquished Usurper
@@ -543,26 +545,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25492, {	-- Firebreak
 					["qg"] = 40331,	-- Rayne Feathersong
-					["coord"] = { 27.0, 63.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25490,	-- Smashing Through Ashes
+					["coord"] = { 27.0, 63.0, MOUNT_HYJAL },
 				}),
 				q(25842, {	-- Firefight
 					["qg"] = 41381,	-- Nordu
-					["coord"] = { 27.3, 55.5, MOUNT_HYJAL },
 					["sourceQuest"] = 25830,	-- The Last Living Lorekeeper
+					["coord"] = { 27.3, 55.5, MOUNT_HYJAL },
 				}),
 				q(25323, {	-- Flamebreaker
 					["qg"] = 39857,	-- Malfurion Stormrage
-					["coord"] = { 47.7, 35.5, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25472,	-- The Flameseer's Staff
 						25319,	-- War on the Twilight's Hammer
 					},
+					["coord"] = { 47.7, 35.5, MOUNT_HYJAL },
 				}),
 				q(25574, {	-- Flames from Above
 					["qg"] = 40278,	-- Tholo Whitehoof
-					["coord"] = { 64.0, 22.4, MOUNT_HYJAL },
 					["sourceQuest"] = 25370,	-- Inciting the Elements
+					["coord"] = { 64.0, 22.4, MOUNT_HYJAL },
 					["groups"] = {
 						i(57296),	-- Girdle of Nullified Infiltration
 						i(57295),	-- Hornblower's Legguards
@@ -571,32 +573,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25523, {	-- Flight in the Firelands
 					["qg"] = 40578,	-- Farden Talonshrike
-					["coord"] = { 37.2, 56.2, MOUNT_HYJAL },
 					["sourceQuest"] = 25810,	-- The Hatchery Must Burn
+					["coord"] = { 37.2, 56.2, MOUNT_HYJAL },
 					["groups"] = {
 						i(52716),	-- Twilight Firelance
 					},
 				}),
-				q(29182, {	-- Flight of the Storm Crows
+				applyclassicphase(CATA_PHASE_TWO, q(29182, {	-- Flight of the Storm Crows
+					["providers"] = {
+						{ "n", 50068 },	-- Isara Riverstride
+						{ "n", 52669 },	-- Matoclaw
+					},
 					["sourceQuest"] = 29181,	-- Druids of the Talon
 					["coords"] = {
 						{ 27.1, 62.5, MOUNT_HYJAL },
 						{ 42.6, 45.6, MOUNT_HYJAL },
 					},
-					["providers"] = {
-						{ "n", 50068 },	-- Isara Riverstride
-						{ "n", 52669 },	-- Matoclaw
-					},
-				}),
+					["timeline"] = { ADDED_4_1_0 },
+				})),
 				q(25575, {	-- Forged of Shadow and Flame
 					["qg"] = 40834,	-- Jordan Olafson
-					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25617,	-- Into the Maw!
+					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 				}),
 				q(25600, {	-- Foremaster Pyrendius
 					["qg"] = 40834,	-- Jordan Olafson
-					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25599,	-- Cindermaul, the Portal Master
+					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 					["groups"] = {
 						i(57270),	-- Wolfking Spaulders
 						i(57269),	-- Helm of Terrorizing Fangs
@@ -604,9 +607,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25298, {	-- Free Your Mind, the Rest Follows
-					["coord"] = { 28.4, 36.4, MOUNT_HYJAL },
 					["provider"] = { "o", 202706 },	-- Twilight Cauldron
 					["sourceQuest"] = 25297,	-- From the Mouth of Madness
+					["coord"] = { 28.4, 36.4, MOUNT_HYJAL },
 					["groups"] = {
 						i(57364),	-- Purifying Spaulders
 						i(57363),	-- Invidious Casque
@@ -615,8 +618,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25493, {	-- Fresh Bait
 					["qg"] = 39858,	-- Archdruid Hamuul Runetotem
-					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
 					["sourceQuest"] = 25490,	-- Smashing Through Ashes
+					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
 					["groups"] = {
 						i(57352),	-- Gore-Stained Shoulderpads
 						i(57351),	-- Gutrip Gauntlets
@@ -625,23 +628,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25297, {	-- From the Mouth of Madness
 					["qg"] = 39434,	-- Rio Duran
-					["coord"] = { 28.1, 29.8, MOUNT_HYJAL },
 					["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
+					["coord"] = { 28.1, 29.8, MOUNT_HYJAL },
 				}),
 				q(25328, {	-- Gar'gol's Gotta Go
 					["qg"] = 39640,	-- Kristoff Manheim
-					["coord"] = { 27.2, 40.7, MOUNT_HYJAL },
 					["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
+					["coord"] = { 27.2, 40.7, MOUNT_HYJAL },
 				}),
 				q(25296, {	-- Gather the Intelligence
-					["coord"] = { 88.2, 58.5, MOUNT_HYJAL },
 					["provider"] = { "o", 202701 },	-- Outhouse Hideout
 					["sourceQuest"] = 25291,	-- Twilight Training
+					["coord"] = { 88.2, 58.5, MOUNT_HYJAL },
 				}),
 				q(25332, {	-- Get Me Outta Here!
 					["qg"] = 39640,	-- Kristoff Manheim
-					["coord"] = { 27.2, 40.7, MOUNT_HYJAL },
 					["sourceQuest"] = 25328,	-- Gar'gol's Gotta Go
+					["coord"] = { 27.2, 40.7, MOUNT_HYJAL },
 					["groups"] = {
 						i(57362),	-- Hood of Misplaced Dreams
 						i(57361),	-- Neglected Footpads
@@ -650,24 +653,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25271, {	-- Goldrinn's Ferocity
 					["qg"] = 39433,	-- Ian Duran
+					["sourceQuest"] = 25268,	-- The Voice of Goldrinn
 					["coord"] = { 30.12, 31.33, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25268,	-- The Voice of Goldrinn
 				}),
 				q(29066, {	-- Good News... and Bad News
-					["coord"] = { 22.2, 44.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25428,	-- Black Heart of Flame
+					["coord"] = { 22.2, 44.9, MOUNT_HYJAL },
 					["isBreadcrumb"] = true,
 				}),
 				q(25315, {	-- Graduation Speech
 					["qg"] = 39413,	-- Instructor Mylva
-					["coord"] = { 59.5, 59.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25601,	-- Head of the Class
+					["coord"] = { 59.5, 59.0, MOUNT_HYJAL },
 				}),
 				q(25496, {	-- Grudge Match
 					["qg"] = 39406,	-- Instructor Devoran
-					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
 					["sourceQuest"] = 25494,	-- A Champion's Collar
+					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
 				}),
 				heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
 					["description"] = "Only available to players who have not quested through Mount Hyjal.",
@@ -710,18 +713,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25255, {	-- Harrying the Hunters
 					["qg"] = 39429,	-- Oomla Whitehorn
-					["coord"] = { 35.6, 19.4, MOUNT_HYJAL },
 					["sourceQuest"] = 25584,	-- The Return of the Ancients
+					["coord"] = { 35.6, 19.4, MOUNT_HYJAL },
 				}),
 				q(25601, {	-- Head of the Class
-					["coord"] = { 88.2, 58.5, MOUNT_HYJAL },
 					["provider"] = { "o", 202701 },	-- Outhouse Hideout
 					["sourceQuest"] = 25314,	-- Speech Writing for Dummies
+					["coord"] = { 88.2, 58.5, MOUNT_HYJAL },
 				}),
 				q(25507, {	-- Hell's Shells
 					["qg"] = 39858,	-- Archdruid Hamuul Runetotem
-					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
 					["sourceQuest"] = 25493,	-- Fresh Bait
+					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
 				}),
 				heroscall(q(27726, {	-- Hero's Call: Mount Hyjal! (max level 100)
 					["timeline"] = { ADDED_4_0_3 },
@@ -735,14 +738,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25270, {	-- Howling Mad
 					["qg"] = 39432,	-- Takrik Ragehowl
+					["sourceQuest"] = 25269,	-- The Voice of Lo'Gosh
 					["coord"] = { 30.1, 31.7, MOUNT_HYJAL },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25269,	-- The Voice of Lo'Gosh
 				}),
 				q(25901, {	-- Hyjal Recycling Program
 					["qg"] = 41497,	-- Logram
-					["coord"] = { 56.8, 56.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25372,	-- Aessina's Miracle
+					["coord"] = { 56.8, 56.0, MOUNT_HYJAL },
 					["groups"] = {
 						i(57347),	-- Bloodbolt Crossbow
 						i(57345),	-- Razorproof Greaves
@@ -751,18 +754,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25404, {	-- If You're Not Against Us...
 					["qg"] = 39928,	-- Matoclaw
-					["coord"] = { 19.0, 36.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25584,	-- The Return of the Ancients
+					["coord"] = { 19.0, 36.9, MOUNT_HYJAL },
 				}),
 				q(25224, {	-- In Bloom
 					["qg"] = 39442,	-- Condenna the Pitiless
-					["coord"] = { 76.9, 62.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25276,	-- Your New Identity
+					["coord"] = { 76.9, 62.0, MOUNT_HYJAL },
 				}),
 				q(25234, {	-- In the Rear With the Gear
 					["qg"] = 39427,	-- Jadi Falaryn
-					["coord"] = { 35.7, 19.6, MOUNT_HYJAL },
 					["sourceQuest"] = 25584,	-- The Return of the Ancients
+					["coord"] = { 35.7, 19.6, MOUNT_HYJAL },
 					["groups"] = {
 						i(57385),	-- Repurposed Twilight Girdle
 						i(57384),	-- Rust-Scrivened Leggings
@@ -775,80 +778,80 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(29335, {	-- Into Slashing Winds
 					["qg"] = 54312,	-- Aggra
-					["coord"] = { 60.2, 30.1, MOUNT_HYJAL },
 					["sourceQuest"] = 29326,	-- The Nordrassil Summit
+					["coord"] = { 60.2, 30.1, MOUNT_HYJAL },
 				}),
 				q(25624, {	-- Into the Maw!
-					["altQuests"] = { 25617 },	-- Into the Maw!
 					["qg"] = 39432,	-- Takrik Ragehowl
+					["altQuests"] = { 25617 },	-- Into the Maw!
+					["sourceQuest"] = 25355,	-- Lightning in a Bottle
 					["coord"] = { 28.4, 29.8, MOUNT_HYJAL },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25355,	-- Lightning in a Bottle
 				}),
 				q(25617, {	-- Into the Maw!
-					["altQuests"] = { 25624 },	-- Into the Maw!
 					["qg"] = 39622,	-- Spirit of Lo'Gosh
+					["altQuests"] = { 25624 },	-- Into the Maw!
+					["sourceQuest"] = 25355,	-- Lightning in a Bottle
 					["coord"] = { 28.6, 39.2, MOUNT_HYJAL },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25355,	-- Lightning in a Bottle
 				}),
 				q(25623, {	-- Into the Maw!
 					["qg"] = 39433,	-- Ian Duran
-					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = { 25618 },
+					["altQuests"] = { 25618 },	-- Into the Maw!
 					["sourceQuest"] = 25353,	-- Lightning in a Bottle
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25618, {	-- Into the Maw!
 					["qg"] = 39627,	-- Spirit of Goldrinn
-					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = { 25623 },
+					["altQuests"] = { 25623 },	-- Into the Maw!
 					["sourceQuest"] = 25353,	-- Lightning in a Bottle
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25940, {	-- Last Stand at Whistling Grove
 					["providers"] = {
 						{ "n", 39927 },	-- Laina Nightsky
 						{ "n", 39928 },	-- Matoclaw
 					},
-					["coords"] = {
-						{ 19.0, 40.9, MOUNT_HYJAL },	-- Laina Nightsky
-						{ 19.03, 37.01, MOUNT_HYJAL },	-- Matoclaw
-					},
 					["sourceQuests"] = {
 						25382,	-- Disrupting the Rituals
 						25392,	-- Oh, Deer!
 						25428,	-- Black Heart of Flame
 					},
+					["coords"] = {
+						{ 19.0, 40.9, MOUNT_HYJAL },	-- Laina Nightsky
+						{ 19.03, 37.01, MOUNT_HYJAL },	-- Matoclaw
+					},
 				}),
 				q(29200, {	-- Leyara
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-					["lvl"] = 85,
-					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
 					["sourceQuest"] = 29199,	-- Calling for Reinforcements
+					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
+					["lvl"] = 85,
 				}),
 				q(25355, {	-- Lightning in a Bottle
 					["qg"] = 39432,	-- Takrik Ragehowl
-					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25277,	-- Cleaning House
 					["description"] = "Before using Totem of Lo'Gosh to turn in the quest, get back to the camp and stand next to Takrik Ragehowl. Summon Spirit of Lo'Gosh, turn in your quest and without going anywhere pick up Into the Maw! from Takrik Ragehowl and then pick up Into the Maw! from Spirit of Lo'Gosh (in this order). Congratulations, you got two quests for the price of one!",
+					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25353, {	-- Lightning in a Bottle
 					["qg"] = 39433,	-- Ian Duran
-					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25278,	-- Cleaning House
 					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
+					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25881, {	-- Lost Wardens
 					["qg"] = 41507,	-- Niden
-					["coord"] = { 42.2, 60.5, MOUNT_HYJAL },
 					["sourceQuest"] = 25843,	-- Tortolla's Revenge
+					["coord"] = { 42.2, 60.5, MOUNT_HYJAL },
 				}),
 				q(25273, {	-- Lycanthoth the Corruptor
 					["qg"] = 39433,	-- Ian Duran
+					["sourceQuest"] = 25271,	-- Goldrinn's Ferocity
 					["coord"] = { 30.12, 31.33, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25271,	-- Goldrinn's Ferocity
 					["groups"] = {
 						i(57379),	-- Clutches of the Worgen Spirit
 						i(57378),	-- Primal Force Girdle
@@ -857,9 +860,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25272, {	-- Lycanthoth the Corruptor
 					["qg"] = 39432,	-- Takrik Ragehowl
+					["sourceQuest"] = 25270,	-- Howling Mad
 					["coord"] = { 30.1, 31.7, MOUNT_HYJAL },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25270,	-- Howling Mad
 					["groups"] = {
 						i(57376),	-- Handguards of Restrained Brutality
 						i(57375),	-- Wrap of Furious Pride
@@ -868,35 +871,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25550, {	-- Magma Monarch
 					["qg"] = 40772,	-- Commander Jarod Shadowsong
-					["coord"] = { 72.0, 74.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25549,	-- The Sanctum of the Prophets
+					["coord"] = { 72.0, 74.0, MOUNT_HYJAL },
 				}),
 				q(25301, {	-- Mastering Puppets
-					["coord"] = { 27.1, 35.2, MOUNT_HYJAL },
 					["provider"] = { "o", 202697 },	-- Eye of Twilight
 					["sourceQuest"] = 25300,	-- The Eye of Twilight
+					["coord"] = { 27.1, 35.2, MOUNT_HYJAL },
 				}),
 				q(25299, {	-- Mental Training: Speaking the Truth to Power
 					["qg"] = 39413,	-- Instructor Mylva
-					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25499,	-- Agility Training: Run Like Hell!
+					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 				}),
 				q(25548, {	-- Might of the Firelord
 					["qg"] = 40772,	-- Commander Jarod Shadowsong
-					["coord"] = { 72.0, 74.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25608,	-- Slash and Burn
+					["coord"] = { 72.0, 74.0, MOUNT_HYJAL },
 					["groups"] = {
 						i(57289),	-- Flamesear Leggings
 						i(57288),	-- Subjugator's Shoulderguards
 						i(57287),	-- Gauntlets of Guerilla Fury
 					},
 				}),
-				q(29162, {	-- Nature's Blessing
+				applyclassicphase(CATA_PHASE_TWO, q(29162, {	-- Nature's Blessing
 					["qg"] = 52671,	-- Mylune
-					["lvl"] = 85,
-					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
-					["isDaily"] = true,
 					["sourceQuest"] = 29161,	-- Those Bears Up There
+					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_1_0 },
+					["isDaily"] = true,
+					["lvl"] = 85,
 					["groups"] = {
 						n(52749, {	-- Pyrachnis <Beth'tilac Lieutenant>
 							crit(17829, {	-- Infernal Ambassadors (Slay Pyrachnis without using the Emerald of Aessina)
@@ -904,23 +908,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							}),
 						}),
 					},
-				}),
+				})),
 				q(29280, {	-- Nourishing Waters
 					["qg"] = 52669,	-- Matoclaw
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["sourceQuest"] = 29279,	-- Filling the Moonwell
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(25392, {	-- Oh, Deer!
 					["qg"] = 39930,	-- Mylune
-					["coord"] = { 19.2, 37.8, MOUNT_HYJAL },
 					["sourceQuest"] = 25385,	-- Save the Wee Animals
+					["coord"] = { 19.2, 37.8, MOUNT_HYJAL },
 					["groups"] = {
 						i(57327),	-- Deer-Savior Leggings
 						i(57326),	-- Salt-Lick Chestguard
 						i(57328),	-- Cloak of Cheerful Flowers
 					},
 				}),
-				q(29145, {	-- Opening the Door
+				applyclassicphase(CATA_PHASE_TWO, q(29145, {	-- Opening the Door
 					["qg"] = 52669,	-- Matoclaw
 					-- #if AFTER 4.2.0
 					["sourceQuests"] = {
@@ -930,23 +934,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_1_0 },
 					["lvl"] = 85,
-				}),
+				})),
 				q(29164, {	-- Perfecting Your Howl
 					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 				}),
 				q(25509, {	-- Physical Training: Forced Labor
 					["qg"] = 39413,	-- Instructor Mylva
-					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25291,	-- Twilight Training
+					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 				}),
 				q(25502, {	-- Prepping the Soil
 					["qg"] = 40331,	-- Rayne Feathersong
-					["coord"] = { 27.0, 63.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25492,	-- Firebreak
+					["coord"] = { 27.0, 63.0, MOUNT_HYJAL },
 					["groups"] = {
 						i(57349),	-- Helm of the Mendicant
 						i(57348),	-- Flameward Cloak
@@ -955,54 +960,56 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25886, {	-- Pressing the Advantage
 					["qg"] = 41492,	-- Captain Irontree
-					["coord"] = { 57.1, 55.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25881,	-- Lost Wardens
+					["coord"] = { 57.1, 55.9, MOUNT_HYJAL },
 				}),
 				q(25317, {	-- Protect the World Tree
-					["description"] = "If the NPC is not visible and Magni is there instead, you will need to complete the quest 'Do It the Azerite Way' [55521] to restore the proper phasing to pick up this quest.",
 					["qg"] = 40289,	-- Ysera
-					["coord"] = { 62.0, 24.8, MOUNT_HYJAL },
 					["sourceQuest"] = 25316,	-- As Hyjal Burns
+					["coord"] = { 62.0, 24.8, MOUNT_HYJAL },
+					-- #if AFTER BFA
+					["description"] = "If the NPC is not visible and Magni is there instead, you will need to complete the quest 'Do It the Azerite Way' [55521] to restore the proper phasing to pick up this quest.",
+					-- #endif
 				}),
 				q(29101, {	-- Punting Season
 					["qg"] = 52671,	-- Mylune
-					["lvl"] = 85,
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					["coord"] = { 27.1, 61.9, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["lvl"] = 85,
 				}),
 				q(29123, {	-- Rage Against the Flames
 					["qg"] = 52669,	-- Matoclaw
-					["lvl"] = 85,
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["lvl"] = 85,
 				}),
 				q(29127, {	-- Rage Against the Flames
 					["qg"] = 52669,	-- Matoclaw
-					["lvl"] = 85,
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["lvl"] = 85,
 				}),
 				q(29149, {	-- Rage Against the Flames
 					["qg"] = 52669,	-- Matoclaw
-					["lvl"] = 85,
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["lvl"] = 85,
 				}),
 				q(29163, {	-- Rage Against the Flames
 					["qg"] = 52669,	-- Matoclaw
-					["lvl"] = 85,
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["lvl"] = 85,
 				}),
 				q(25576, {	-- Rage of the Wolf Ancient
 					["qg"] = 40837,	-- Yargra Blackscar
-					["coord"] = { 26.3, 41.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25617,	-- Into the Maw!
+					["coord"] = { 26.3, 41.9, MOUNT_HYJAL },
 				}),
 				q(29248, {	-- Releasing the Pressure	-- todo: unknown source quest
 					["qg"] = 52986,	-- Dorda'en Nightweaver
@@ -1016,25 +1023,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25611, {	-- Return from the Firelands (A)
 					["qg"] = 40834,	-- Jordan Olafson
+					["sourceQuest"] = 25600,	-- Forgemaster Pyrendius
 					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25600,	-- Forgemaster Pyrendius
 				}),
 				q(25612, {	-- Return from the Firelands (H)
 					["qg"] = 40834,	-- Jordan Olafson
+					["sourceQuest"] = 25600,	-- Forgemaster Pyrendius
 					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25600,	-- Forgemaster Pyrendius
 				}),
 				q(25424, {	-- Return to Alysra
 					["qg"] = 40096,	-- Scout Larandia
-					["coord"] = { 44.4, 18.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25321,	-- Twilight Captivity
+					["coord"] = { 44.4, 18.9, MOUNT_HYJAL },
 				}),
 				q(25832, {	-- Return to Aviana
 					["qg"] = 40578,	-- Farden Talonshrike
-					["coord"] = { 37.2, 56.1, MOUNT_HYJAL },
 					["sourceQuest"] = 25560,	-- Egg Wave
+					["coord"] = { 37.2, 56.1, MOUNT_HYJAL },
 					["groups"] = {
 						i(57273),	-- Blinkered Hood
 						i(57272),	-- Sky-Knight Handguards
@@ -1042,44 +1049,44 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(25312, {	-- Return to Duskwhisper
-					["coord"] = { 25.8, 41.6, MOUNT_HYJAL },
 					["provider"] = { "o", 202712 },	-- The Twilight Apocrypha
 					["sourceQuest"] = 25303,	-- Elementary!
+					["coord"] = { 25.8, 41.6, MOUNT_HYJAL },
 				}),
 				q(25578, {	-- Return to Nordrassil
 					["qg"] = 40178,	-- Alysra
-					["coord"] = { 52.1, 17.4, MOUNT_HYJAL },
 					["sourceQuest"] = 25325,	-- Through the Dream
+					["coord"] = { 52.1, 17.4, MOUNT_HYJAL },
 				}),
 				q(25795, {	-- Return to the Shrine
 					["qg"] = 41006,	-- Thisalee Crow
-					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 					["sourceQuest"] = 25776,	-- Sethria's Demise
+					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 				}),
 				q(25385, {	-- Save the Wee Animals
 					["qg"] = 39930,	-- Mylune
-					["coord"] = { 19.2, 37.8, MOUNT_HYJAL },
 					["sourceQuest"] = 25578,	-- Return to Nordrassil
+					["coord"] = { 19.2, 37.8, MOUNT_HYJAL },
 				}),
 				q(25656, {	-- Scrambling for Eggs
 					["qg"] = 41006,	-- Thisalee Crow
-					["coord"] = { 42.1, 45.4, MOUNT_HYJAL },
 					["sourceQuest"] = 25578,	-- Return to Nordrassil
+					["coord"] = { 42.1, 45.4, MOUNT_HYJAL },
 				}),
 				q(25554, {	-- Secrets of the Flame
 					["qg"] = 40773,	-- Cenarius
-					["coord"] = { 71.9, 74.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25608,	-- Slash and Burn
+					["coord"] = { 71.9, 74.0, MOUNT_HYJAL },
 				}),
 				q(25308, {	-- Seeds of Discord
-					["coord"] = { 88.2, 58.5, MOUNT_HYJAL },
 					["provider"] = { "o", 202701 },	-- Outhouse Hideout
 					["sourceQuest"] = 25296,	-- Gather the Intelligence
+					["coord"] = { 88.2, 58.5, MOUNT_HYJAL },
 				}),
 				q(25408, {	-- Seeds of Their Demise
 					["qg"] = 39933,	-- Tyrus Blackhorn
-					["coord"] = { 22.2, 44.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25404,	-- If You're Not Against Us...
+					["coord"] = { 22.2, 44.9, MOUNT_HYJAL },
 					["groups"] = {
 						i(57325),	-- Bileberry Smelling Salts
 						i(57324),	-- Seedfilter Deflector
@@ -1088,45 +1095,45 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25746, {	-- Sethria's Brood
 					["qg"] = 41006,	-- Thisalee Crow
-					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 					["sourceQuest"] = 25740,	-- Fact-Finding Mission
+					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 				}),
 				q(25776, {	-- Sethria's Demise
 					["qg"] = 41006,	-- Thisalee Crow
-					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25761,	-- Disassembly
 						25764,	-- Egg Hunt
 					},
+					["coord"] = { 32.7, 70.7, MOUNT_HYJAL },
 				}),
 				q(25274, {	-- Signed in Blood
 					["qg"] = 39621,	-- Elementalist Ortell
-					["coord"] = { 71.9, 58.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25597,	-- Commander Jarod Shadowsong
+					["coord"] = { 71.9, 58.0, MOUNT_HYJAL },
 				}),
 				q(25608, {	-- Slash and Burn
 					["qg"] = 40772,	-- Commander Jarod Shadowsong
-					["coord"] = { 72.2, 74.7, MOUNT_HYJAL },
 					["sourceQuest"] = 25531,	-- Twilight Riot
+					["coord"] = { 72.2, 74.7, MOUNT_HYJAL },
 				}),
 				q(25490, {	-- Smashing Through Ashes
 					["qg"] = 39932,	-- Keeper Taldros
-					["coord"] = { 13.6, 32.7, MOUNT_HYJAL },
 					["sourceQuest"] = 25462,	-- The Bears Up There
+					["coord"] = { 13.6, 32.7, MOUNT_HYJAL },
 				}),
 				q(25314, {	-- Speech Writing for Dummies
-					["coord"] = { 88.2, 58.5, MOUNT_HYJAL },
 					["provider"] = { "o", 202701 },	-- Outhouse Hideout
 					["sourceQuests"] = {
 						25310,	-- The Greater of Two Evils
 						25311,	-- Twilight Territory
 						25308,	-- Seeds of Discord
 					},
+					["coord"] = { 88.2, 58.5, MOUNT_HYJAL },
 				}),
 				q(25309, {	-- Spiritual Training: Mercy is for the Weak
 					["qg"] = 39413,	-- Instructor Mylva
-					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25299,	-- Mental Training: Speaking the Truth to Power
+					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 					["groups"] = {
 						i(57308),	-- Supplicant's Discarded Bracer
 						i(57307),	-- Belt of Swift Failure
@@ -1135,13 +1142,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(29166, {	-- Supplies for the Other Side
 					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 				}),
 				q(25352, {	-- Sweeping the Shelf
-					["sourceQuest"] = 25278,	-- Cleaning House
 					["qg"] = 39433,	-- Ian Duran
+					["sourceQuest"] = 25278,	-- Cleaning House
 					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -1153,9 +1160,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25354, {	-- Sweeping the Shelf
 					["qg"] = 39432,	-- Takrik Ragehowl
+					["sourceQuest"] = 25277,	-- Cleaning House
 					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25277,	-- Cleaning House
 					["groups"] = {
 						i(57368),	-- Wolfcaller Bracers
 						i(57367),	-- Treads of the Dreamwolf
@@ -1165,27 +1172,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25653, {	-- The Ancients are With Us
 					["qg"] = 41504,	-- Tortolla
-					["coord"] = { 41.9, 60.7, MOUNT_HYJAL },
 					["sourceQuest"] = 25928,	-- Tortolla's Triumph
+					["coord"] = { 41.9, 60.7, MOUNT_HYJAL },
 				}),
 				q(27398, {	-- The Battle Is Won, The War Goes On
 					["qg"] = 40772,	-- Commander Jarod Shadowsong
+					["sourceQuest"] = 25551,	-- The Firelord
 					["coord"] = { 71.9, 74.0, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25551,	-- The Firelord
 					["isBreadcrumb"] = true,
 				}),
 				q(27399, {	-- The Battle Is Won, The War Goes On
 					["qg"] = 40772,	-- Commander Jarod Shadowsong
+					["sourceQuest"] = 25551,	-- The Firelord
 					["coord"] = { 71.9, 74.0, MOUNT_HYJAL },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25551,	-- The Firelord
 					["isBreadcrumb"] = true,
 				}),
 				q(25462, {	-- The Bears Up There
 					["qg"] = 39932,	-- Keeper Taldros
-					["coord"] = { 13.6, 32.7, MOUNT_HYJAL },
 					["sourceQuest"] = 25940,	-- Last Stand at Whistling Grove
+					["coord"] = { 13.6, 32.7, MOUNT_HYJAL },
 					["groups"] = {
 						i(57356),	-- Stickyfoot Sandals
 						i(57355),	-- Treegrip Pants
@@ -1194,19 +1201,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(29165, {	-- The Call of the Pack
 					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29164,	-- Perfecting Your Howl
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29164,	-- Perfecting Your Howl
 				}),
 				q(25320, {	-- The Captured Scout
 					["qg"] = 38917,	-- Alysra
-					["coord"] = { 48.4, 18.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25430,	-- Emerald Allies
+					["coord"] = { 48.4, 18.9, MOUNT_HYJAL },
 				}),
 				q(25763, {	-- The Codex of Shadows
-					["coord"] = { 31.2, 76.9, MOUNT_HYJAL },
 					["provider"] = { "o", 203207 },	-- Codex of Shadows
 					["sourceQuest"] = 25740,	-- Fact-Finding Mission
+					["coord"] = { 31.2, 76.9, MOUNT_HYJAL },
 				}),
 				q(25460, {	-- The Earth Rises
 					["qg"] = 39925,	-- Anren Shadowseeker
@@ -1219,28 +1226,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25300, {	-- The Eye of Twilight
 					["qg"] = 39435,	-- Royce Duskwhisper
-					["coord"] = { 28.6, 30.2, MOUNT_HYJAL },
 					["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
+					["coord"] = { 28.6, 30.2, MOUNT_HYJAL },
 				}),
 				q(29437, {	-- The Fallen Guardian
 					["qg"] = 40289,	-- Ysera
-					["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 					["sourceQuest"] = 29326,	-- The Nordrassil Summit	-- verify
+					["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 				}),
 				q(29202, {	-- The Fate of Runetotem
 					["qg"] = 52669,	-- Matoclaw
-					["lvl"] = 85,
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["lvl"] = 85,
 				}),
 				q(25551, {	-- The Firelord
 					["qg"] = 40773,	-- Cenarius
-					["coord"] = { 71.9, 74.0, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25553,	-- Death to the Broodmother
 						25550,	-- Magma Monarch
 						25555,	-- The Gatekeeper
 					},
+					["coord"] = { 71.9, 74.0, MOUNT_HYJAL },
 					["groups"] = {
 						i(57275),	-- Hyjal Savior's Pendant
 						i(57276),	-- Hyjal Savior's Signet
@@ -1249,20 +1256,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25630, {	-- The Fires of Mount Hyjal
 					["qg"] = 39434,	-- Rio Duran
-					["coord"] = { 28.1, 29.8, MOUNT_HYJAL },
 					["sourceQuest"] = 25612,	-- Return from the Firelands
-					["isBreadcrumb"] = true,
 					["lockCriteria"] = { 1, "questID", 25372 },	-- Aessina's Miracle
+					["coord"] = { 28.1, 29.8, MOUNT_HYJAL },
+					["isBreadcrumb"] = true,
 				}),
 				q(25472, {	-- The Flameseer's Staff
 					["qg"] = 39869,	-- Windspeaker Tamila
-					["coord"] = { 47.6, 35.5, MOUNT_HYJAL },
 					["sourceQuest"] = 25317,	-- Protect the World Tree
+					["coord"] = { 47.6, 35.5, MOUNT_HYJAL },
 				}),
 				q(25555, {	-- The Gatekeeper
 					["qg"] = 40773,	-- Cenarius
-					["coord"] = { 71.9, 74.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25554,	-- Secrets of the Flame
+					["coord"] = { 71.9, 74.0, MOUNT_HYJAL },
 					["groups"] = {
 						i(57299),	-- Torque of the Herald
 						i(57298),	-- Gatekeeper Treads
@@ -1270,32 +1277,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25310, {	-- The Greater of Two Evils
 					["qg"] = 39413,	-- Instructor Mylva
-					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25496,	-- Grudge Match
 						25309,	-- Spiritual Training: Mercy is the for Weak
 					},
+					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 				}),
 				q(25904, {	-- The Hammer and the Key
 					["qg"] = 41504,	-- Tortolla
-					["coord"] = { 41.9, 60.8, MOUNT_HYJAL },
 					["sourceQuest"] = 25843,	-- Tortolla's Revenge
+					["coord"] = { 41.9, 60.8, MOUNT_HYJAL },
 				}),
 				q(25810, {	-- The Hatchery Must Burn
 					["qg"] = 41003,	-- Morthis Whisperwing
-					["coord"] = { 44.1, 45.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25807,	-- An Ancient Reborn
+					["coord"] = { 44.1, 45.9, MOUNT_HYJAL },
 				}),
 				q(29215, {	-- The Hunt Begins
 					["qg"] = 52669,	-- Matoclaw
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["sourceQuest"] = 29214,	-- The Shadow Wardens
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(25830, {	-- The Last Living Lorekeeper
-					["coords"] = {	-- there 4 possible coords here, one for each ancient. Need to determine the remaining two [Pr3vention]
-						{ 62.0, 24.8, MOUNT_HYJAL },
-						{ 27.0, 62.6, MOUNT_HYJAL },
-					},
 					["providers"] = {
 						{ "n", 40289 },	-- Ysera
 						{ "n", 46987 },	-- Vision of Ysera
@@ -1313,44 +1316,48 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25611,	-- Return from the Firelands (A)
 						25612,	-- Return from the Firelands (H)
 					},
+					["coords"] = {	-- there 4 possible coords here, one for each ancient. Need to determine the remaining two [Pr3vention]
+						{ 62.0, 24.8, MOUNT_HYJAL },
+						{ 27.0, 62.6, MOUNT_HYJAL },
+					},
 				}),
 				q(25412, {	-- The Name Never Spoken
 					["qg"] = 40093,	-- Subjugated Inferno Lord
-					["sourceQuest"] = 25411,	-- A New Master
 					["altQuests"] = { 25443 },	-- The Name Never Spoken
+					["sourceQuest"] = 25411,	-- A New Master
 				}),
 				q(25443, {	-- The Name Never Spoken
 					["qg"] = 39933,	-- Tyrus Blackhorn
-					["coord"] = { 22.2, 44.8, MOUNT_HYJAL },
-					["sourceQuest"] = 25411,	-- A New Master
 					["altQuests"] = { 25412 },	-- The Name Never Spoken
+					["sourceQuest"] = 25411,	-- A New Master
 					["description"] = "To get this quest DO NOT accept another version from Subjugated Inferno Lord after \"A New Master\", instead head back to Tyrus Blackhorn.",
+					["coord"] = { 22.2, 44.8, MOUNT_HYJAL },
 				}),
 				q(29326, {	-- The Nordrassil Summit
 					["qg"] = 54313,	-- Thrall
-					["coord"] = { 60.6, 31.4, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						29439,	-- The Call of the World-Shaman (A)
 						29440,	-- The Call of the World-Shaman (H)
 					},
+					["coord"] = { 60.6, 31.4, MOUNT_HYJAL },
 				}),
 				q(29126, {	-- The Power of Malorne
 					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29125,	-- Between the Trees
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29125,	-- Between the Trees
 				}),
 				q(29128, {	-- The Protectors of Hyjal
 					["qg"] = 53073,	-- Captain Soren Moonclaw
-					["lvl"] = 85,
+					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 27.1, 61.6, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["lvl"] = 85,
 				}),
 				q(25464, {	-- The Return of Baron Geddon
 					["qg"] = 39857,	-- Malfurion Stormrage
-					["coord"] = { 47.7, 35.5, MOUNT_HYJAL },
 					["sourceQuest"] = 25323,	-- Flamebreaker
+					["coord"] = { 47.7, 35.5, MOUNT_HYJAL },
 					["groups"] = {
 						i(57303),	-- Heatbinder Wristplates
 						i(57305),	-- Axe of Grounded Flame
@@ -1359,14 +1366,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25584, {	-- The Return of the Ancients
 					["qg"] = 40289,	-- Ysera
-					["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25578,	-- Return to Nordrassil
+					["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 				}),
 				q(29198, {	-- The Sanctuary Must Not Fall
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-					["lvl"] = 85,
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["sourceQuest"] = 29197,	-- Caught Unawares
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["lvl"] = 85,
 					["groups"] = {
 						ach(5866, {	-- The Molten Front Offensive / Stop the assault on the Sanctuary of Malorne
 							["sym"] = {{ "achievement_criteria" }},
@@ -1375,30 +1382,30 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25549, {	-- The Sanctum of the Prophets
 					["qg"] = 40772,	-- Commander Jarod Shadowsong
-					["coord"] = { 72.0, 74.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25548,	-- Might of the Firelord
+					["coord"] = { 72.0, 74.0, MOUNT_HYJAL },
 				}),
 				q(25280, {	-- The Shrine Reclaimed
 					["qg"] = 39627,	-- Spirit of Goldrinn
+					["sourceQuest"] = 25273,	-- Lycanthoth the Corruptor
 					["coord"] = { 29.63, 29.30, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25273,	-- Lycanthoth the Corruptor
 				}),
 				q(25279, {	-- The Shrine Reclaimed
 					["qg"] = 39622,	-- Spirit of Lo'Gosh
+					["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
 					["coord"] = { 29.6, 29.2, MOUNT_HYJAL },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
 				}),
 				q(25915, {	-- The Strength of Tortolla
 					["qg"] = 41498,	-- Garunda Mountainpeak
-					["coord"] = { 64.2, 53.5, MOUNT_HYJAL },
 					["sourceQuest"] = 25906,	-- The Third Flamegate
+					["coord"] = { 64.2, 53.5, MOUNT_HYJAL },
 				}),
 				q(25906, {	-- The Third Flamegate
 					["qg"] = 41504,	-- Tortolla
-					["coord"] = { 41.9, 60.7, MOUNT_HYJAL },
 					["sourceQuest"] = 25904,	-- The Hammer and the Key
+					["coord"] = { 41.9, 60.7, MOUNT_HYJAL },
 					["groups"] = {
 						i(57343),	-- Leggings of Fiery Travail
 						i(57342),	-- Rescuers Shoulderguards
@@ -1407,46 +1414,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25910, {	-- The Time for Mercy has Passed
 					["qg"] = 41498,	-- Garunda Mountainpeak
-					["coord"] = { 64.2, 53.5, MOUNT_HYJAL },
 					["sourceQuest"] = 25906,	-- The Third Flamegate
+					["coord"] = { 64.2, 53.5, MOUNT_HYJAL },
 				}),
 				q(25644, {	-- The Twilight Egg
-					["coord"] = { 59.1, 83.8, MOUNT_HYJAL },
 					["provider"] = { "o", 207359 },	-- Pure Twilight Egg
 					["sourceQuest"] = 25608,	-- Slash and Burn
+					["coord"] = { 59.1, 83.8, MOUNT_HYJAL },
 				}),
 				q(25268, {	-- The Voice of Goldrinn
 					["qg"] = 39427,	-- Jadi Falaryn
+					["sourceQuest"] = 25233,	-- End of the Supply Line
 					["coord"] = { 35.6, 19.6, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 25233,	-- End of the Supply Line
 				}),
 				q(25269, {	-- The Voice of Lo'Gosh
 					["qg"] = 39429,	-- Oomla Whitehorn
-					["coord"] = { 35.6, 19.4, MOUNT_HYJAL },
-					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						25233,	-- End of the Supply Line
 						25255,	-- Harrying the Hunters
 						25234,	-- In the Rear With the Gear
 					},
+					["coord"] = { 35.6, 19.4, MOUNT_HYJAL },
+					["races"] = HORDE_ONLY,
 				}),
 				q(25655, {	-- The Wormwing Problem
 					["qg"] = 41006,	-- Thisalee Crow
-					["coord"] = { 42.1, 45.4, MOUNT_HYJAL },
 					["sourceQuest"] = 25584,	-- The Return of the Ancients
+					["coord"] = { 42.1, 45.4, MOUNT_HYJAL },
 				}),
 				q(29161, {	-- Those Bears Up There
 					["qg"] = 52671,	-- Mylune
-					["lvl"] = 85,
-					["isDaily"] = true,
-					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["lvl"] = 85,
 				}),
 				q(25325, {	-- Through the Dream
 					["qg"] = 40139,	-- Captain Saynna Stormrunner
-					["coord"] = { 56.7, 18.8, MOUNT_HYJAL },
 					["sourceQuest"] = 25324,	-- A Prisoner of Interest
+					["coord"] = { 56.7, 18.8, MOUNT_HYJAL },
 					["groups"] = {
 						i(57285),	-- Muffling Hood
 						i(57284),	-- Grips of Arcane Imprisonment
@@ -1455,33 +1462,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(29201, {	-- Through the Gates of Hell
 					["qg"] = 52845,	-- Malfurion Stormrage
-					["lvl"] = 85,
-					["coord"] = { 27.0, 62.7, MOUNT_HYJAL },
 					["sourceQuest"] = 29200,	-- Leyara
+					["coord"] = { 27.0, 62.7, MOUNT_HYJAL },
+					["lvl"] = 85,
 					["groups"] = {
 						ach(5866, crit(17814)),	-- The Molten Front Offensive / Gain access to the Molten Front
 					},
 				}),
 				q(29196, {	-- To the Sanctuary!
 					["qg"] = 52845,	-- Malfurion Stormrage
-					["lvl"] = 85,
-					["coord"] = { 27.3, 55.2, MOUNT_HYJAL },
 					["sourceQuest"] = 29195,	-- A Ritual of Flame
+					["coord"] = { 27.3, 55.2, MOUNT_HYJAL },
+					["lvl"] = 85,
 				}),
 				q(25510, {	-- Tortolla Speaks
 					["qg"] = 39858,	-- Archdruid Hamuul Runetotem
-					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
 					["sourceQuest"] = 25507,	-- Hell's Shells
+					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
 				}),
 				q(25843, {	-- Tortolla's Revenge
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
-					["coord"] = { 19.5, 37.8, MOUNT_HYJAL },
 					["sourceQuest"] = 25372,	-- Aessina's Miracle
+					["coord"] = { 19.5, 37.8, MOUNT_HYJAL },
 				}),
 				q(25928, {	-- Tortolla's Triumph
 					["qg"] = 41498,	-- Garunda Mountainpeak
-					["coord"] = { 64.2, 53.5, MOUNT_HYJAL },
 					["sourceQuest"] = 25923,	-- Finish Nemesis
+					["coord"] = { 64.2, 53.5, MOUNT_HYJAL },
 				}),
 				q(29247, {	-- Treating the Wounds	-- todo: unknown source quest
 					["qg"] = 52986,	-- Dorda'en Nightweaver
@@ -1490,8 +1497,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25223, {	-- Trial By Fire
 					["qg"] = 39442,	-- Condenna the Pitiless
-					["coord"] = { 76.9, 62.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25276,	-- Your New Identity
+					["coord"] = { 76.9, 62.0, MOUNT_HYJAL },
 					["groups"] = {
 						i(57310),	-- Impressive Greaves
 						i(57309),	-- Chestplate of Exceptional Expectations
@@ -1504,46 +1511,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25321, {	-- Twilight Captivity
 					["qg"] = 40096,	-- Scout Larandia
-					["coord"] = { 44.4, 18.9, MOUNT_HYJAL },
 					["sourceQuest"] = 25320,	-- The Captured Scout
+					["coord"] = { 44.4, 18.9, MOUNT_HYJAL },
 				}),
 				q(25531, {	-- Twilight Riot
 					["qg"] = 40619,	-- Commander Jarod Shadowsong
-					["coord"] = { 95.3, 51.3, MOUNT_HYJAL },
 					["sourceQuest"] = 25315,	-- Graduation Speech
+					["coord"] = { 95.3, 51.3, MOUNT_HYJAL },
 				}),
 				q(25311, {	-- Twilight Territory
 					["qg"] = 39413,	-- Instructor Mylva
-					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25496,	-- Grudge Match
 						25309,	-- Spiritual Training: Mercy is the for Weak
 					},
+					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 				}),
 				q(25291, {	-- Twilight Training
 					["qg"] = 39442,	-- Condenna the Pitiless
-					["coord"] = { 76.9, 62.0, MOUNT_HYJAL },
 					["sourceQuests"] = {
 						25224,	-- In Bloom
 						25223,	-- Trial By Fire
 						25330,	-- Waste of Flesh
 					},
+					["coord"] = { 76.9, 62.0, MOUNT_HYJAL },
 				}),
 				q(29177, {	-- Vigilance on Wings
 					["qg"] = 40578,	-- Farden Talonshrike
+					["sourceQuest"] = 25560,	-- Egg Wave
 					["coord"] = { 37.2, 56.1, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 25560,	-- Egg Wave
 				}),
 				q(25294, {	-- Walking the Dog
 					["qg"] = 39406,	-- Instructor Devoran
-					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
 					["sourceQuest"] = 25291,	-- Twilight Training
+					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
 				}),
 				q(25319, {	-- War on the Twilight's Hammer
 					["qg"] = 39857,	-- Malfurion Stormrage
-					["coord"] = { 47.7, 35.5, MOUNT_HYJAL },
 					["sourceQuest"] = 25317,	-- Protect the World Tree
+					["coord"] = { 47.7, 35.5, MOUNT_HYJAL },
 					["groups"] = {
 						i(57291),	-- Naturelord Helm
 						i(57290),	-- Druidic Guardian Plate
@@ -1553,24 +1560,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25330, {	-- Waste of Flesh
 					["qg"] = 39451,	-- Instructor Cargall
-					["coord"] = { 77.0, 62.1, MOUNT_HYJAL },
 					["sourceQuest"] = 25276,	-- Your New Identity
+					["coord"] = { 77.0, 62.1, MOUNT_HYJAL },
 				}),
 				q(25525, {	-- Wave One
 					["qg"] = 40578,	-- Farden Talonshrike
-					["coord"] = { 37.2, 56.1, MOUNT_HYJAL },
 					["sourceQuest"] = 25523,	-- Flight in the Firelands
+					["coord"] = { 37.2, 56.1, MOUNT_HYJAL },
 				}),
 				q(25544, {	-- Wave Two
 					["qg"] = 40578,	-- Farden Talonshrike
-					["coord"] = { 37.2, 56.1, MOUNT_HYJAL },
 					["sourceQuest"] = 25525,	-- Wave One
+					["coord"] = { 37.2, 56.1, MOUNT_HYJAL },
 				}),
 				q(29148, {	-- Wings Aflame
 					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29147,	-- Call the Flock
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
-					["sourceQuest"] = 29147,	-- Call the Flock
 				}),
 				q(25985, {	-- Wings Over Mount Hyjal
 					["qg"] = 40833,	-- Tiala Whitemane
@@ -1579,8 +1586,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(25276, {	-- Your New Identity
 					["qg"] = 39621,	-- Elementalist Ortell
-					["coord"] = { 71.9, 58.0, MOUNT_HYJAL },
 					["sourceQuest"] = 25274,	-- Signed in Blood
+					["coord"] = { 71.9, 58.0, MOUNT_HYJAL },
 				}),
 			}),
 			petbattles({
@@ -1589,7 +1596,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(RARES, {
-				n(54318, {	-- Ankha
+				applyclassicphase(CATA_PHASE_THREE, n(54318, {	-- Ankha
 					["coords"] = {
 						{ 28.0, 52.0, MOUNT_HYJAL },
 						{ 30.0, 51.4, MOUNT_HYJAL },
@@ -1599,8 +1606,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 39.2, 54.8, MOUNT_HYJAL },
 						{ 41.2, 54.0, MOUNT_HYJAL },
 					},
-				}),
-				n(54320, {	-- Ban'thalos
+					["description"] = "This spirit beast is a rare tamable cat with a unique silver spectral skin. It is one of the \"challenge\" tames added in 4.2: Spirit Claw will one-shot players wearing armor.",
+					["timeline"] = { ADDED_4_2_0 },
+				})),
+				applyclassicphase(CATA_PHASE_THREE, n(54320, {	-- Ban'thalos
 					["coords"] = {
 						{ 27.2, 64.2, MOUNT_HYJAL },
 						{ 28.0, 62.2, MOUNT_HYJAL },
@@ -1608,7 +1617,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 25.8, 61.2, MOUNT_HYJAL },
 						{ 26.2, 62.8, MOUNT_HYJAL },
 					},
-				}),
+					["description"] = "This spirit beast is a rare tamable spawn with a unique spectral owl model. It is one of the \"challenge\" tames added in 4.2: the challenge is that he flies very high, so you will need to creatively find ways to aggro and tame without taking lethal fall damage.",
+					["timeline"] = { ADDED_4_2_0 },
+				})),
 				n(50057, {	-- Blazewing
 					["coords"] = {
 						{ 45.0, 60.4, MOUNT_HYJAL },
@@ -1619,7 +1630,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(67236),	-- Blazewing's Furious Kilt
 					},
 				}),
-				n(54319, {	-- Magria
+				applyclassicphase(CATA_PHASE_THREE, n(54319, {	-- Magria
 					["coords"] = {
 						{ 28.0, 52.0, MOUNT_HYJAL },
 						{ 30.0, 51.4, MOUNT_HYJAL },
@@ -1629,7 +1640,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 39.2, 54.8, MOUNT_HYJAL },
 						{ 41.2, 54.0, MOUNT_HYJAL },
 					},
-				}),
+					["description"] = "This spirit beast is a rare tamable cat with a unique blue/white striped skin. It is one of the \"challenge\" tames added in 4.2: Spirit Claw will one-shot players wearing armor.",
+					["timeline"] = { ADDED_4_2_0 },
+				})),
 				n(50053, {	-- Thartuk the Exile
 					["coords"] = {
 						{ 59.2, 37.6, MOUNT_HYJAL },
@@ -1658,6 +1671,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 53.8, 82.0, MOUNT_HYJAL },
 						{ 52.2, 83.2, MOUNT_HYJAL },
 					},
+					["description"] = "This turtle is a rare tamable spawn with a unique fiery shell.",
 				}),
 			}),
 			n(VENDORS, {
