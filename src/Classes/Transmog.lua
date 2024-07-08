@@ -668,7 +668,7 @@ do
 			return sourceInfo and sourceInfo.visualID
 		end,
 		-- directly-created source objects can attempt to determine & save their providing ItemID to benefit from the attached Item fields
-		itemID = function(t)
+		itemID = app.IsRetail and function(t)
 			if t.__autolink then return; end
 			-- async generation of the proper Item Link
 			-- itemID is set when Link is determined, so rawset in the group prior so that additional async calls are skipped

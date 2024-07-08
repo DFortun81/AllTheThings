@@ -313,3 +313,4 @@ app.CreateRunner = function(name)
 	return app.Runners[name] or CreateRunner(name)
 end
 app.Runners = {}
+app.FunctionRunner = CreateRunner("default");
