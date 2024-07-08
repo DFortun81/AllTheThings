@@ -27,7 +27,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29659, {	-- Lost Treasure
-					["description"] = "Automatically provided after killing either Gatewatcher.",
+					["qg"] = 18481,	-- A'dal
+					-- #if AFTER MOP
+					["description"] = "Automatically provided after killing either Gatewatcher. If autocomplete doesn't work, you can turn in at A'dal in Shattrath City.",
+					-- #else
+					["description"] = "Automatically provided after killing either Gatewatcher. This appears to be bugged.",
+					-- #endif
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
@@ -37,7 +42,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29658, {	-- The Calculator
+					["qg"] = 18481,	-- A'dal
 					["sourceQuest"] = 29657,	-- With Great Power, Comes Great Responsibility
+					["description"] = "Automatically provided upon stepping into the final hallway. If autocomplete doesn't work, you can turn in at A'dal in Shattrath City.",
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
@@ -47,7 +54,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					},
 				}),
 				q(29657, {	-- With Great Power, Comes Great Responsibility
-					["description"] = "Automatically provided upon starting the instance.",
+					["qg"] = 18481,	-- A'dal
+					["description"] = "Automatically provided upon starting the instance. If autocomplete doesn't work, you can turn in at A'dal in Shattrath City.",
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(67, 67, 20),
 					["groups"] = {
