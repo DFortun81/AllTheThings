@@ -3476,6 +3476,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81877, {	-- Fight Night
+					["qg"] = 220984,	-- Fizbuz Mithril
+					["sourceQuest"] = 81801,	-- Return to the Arena
+					["coord"] = { 51.6, 27.6, TANARIS },
+					["timeline"] = { "added 1.15.2" },
+					["classes"] = { WARRIOR },
+					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- Arena Victory
+							["provider"] = { "n", 221829 },	-- Kajind <Arena Champion>
+						}),
+						i(220164, {	-- Rune of the Gladiator
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(416002),	-- Engrave Boots - Gladiator Stance
+							},
+						}),
+						i(219223),	-- Blademaster's Fury
+					},
+				})),
+				-- #endif
 				q(26887, {	-- Filling Our Pockets (A)
 					["qg"] = 38704,	-- Kelsey Steelspark
 					["sourceQuests"] = {
@@ -4517,6 +4539,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81682, {	-- The Old Champ
+					["qg"] = 220984,	-- Fizbuz Mithril
+					["coord"] = { 51.6, 27.6, TANARIS },
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { AZSHARA },
+					["classes"] = { WARRIOR },
+					["lvl"] = 45,
+				})),
+				-- #endif
 				q(3638, {	-- The Pledge of Secrecy
 					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 					["altQuests"] = {

@@ -549,6 +549,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81697, {	-- Defanged
+					["qg"] = 221400,	-- Kajind
+					["sourceQuest"] = 81682,	-- The Old Champ
+					["coord"] = { 25.4, 66.2, AZSHARA },
+					["timeline"] = { "added 1.15.2" },
+					["classes"] = { WARRIOR },
+					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 Kajind's Blade
+							["provider"] = { "i", 219935 },	-- Kajind's Blade
+							["coord"] = { 39.6, 71.2, AZSHARA },
+							["cr"] = 221651,	-- Ceruleos
+						}),
+					},
+				})),
+				-- #endif
 				q(14146, {	-- Defend the Gates!
 					["sourceQuest"] = 14135,	-- Up a Tree
 					["timeline"] = { ADDED_4_0_3 },
@@ -1353,6 +1370,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81801, {	-- Return to the Arena
+					["qg"] = 221400,	-- Kajind
+					["sourceQuest"] = 81697,	-- Defanged
+					["coord"] = { 25.4, 66.2, AZSHARA },
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { TANARIS },
+					["classes"] = { WARRIOR },
+					["lvl"] = 45,
+				})),
+				-- #endif
 				q(3421, {	-- Return Trip
 					["qg"] = 8399,	-- Nyrill <Xylem's Apprentice>
 					["coord"] = { 26.4, 46.2, AZSHARA },
