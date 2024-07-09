@@ -631,6 +631,46 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				}),
 			}),
 			n(QUESTS, {
+				applyclassicphase(SOD_PHASE_THREE, q(82084, {	-- A Lesson in Literacy
+					["altQuests"] = { 82086 },	-- A Lesson in Literacy (HQT?)
+					["providers"] = {
+						{ "n", 211033 },	-- Garion Wendell <Librarian>
+						{ "n", 211022 },	-- Owen Thadd <Librarian>
+					},
+					["coords"] = {
+						{ 37.8, 80.2, STORMWIND_CITY },
+						{ 73.6, 33, UNDERCITY },
+					},
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { FERALAS, THE_HINTERLANDS, ZULFARRAK },
+					["lvl"] = 42,
+					["groups"] = {
+						objective(1, {	-- 0/1 Pristine Owlbeast Quill
+							["provider"] = { "i", 221359 },	-- Pristine Owlbeast Quill
+							["coord"] = { 40.6, 55.6, THE_HINTERLANDS },
+							["crs"] = {
+								2928,	-- Primitive Owlbeast
+								2929,	-- Savage Owlbeast
+								2927,	-- Vicious Owlbeast
+							},
+						}),
+						objective(2, {	-- 0/5 Zukk'ash Resin
+							["provider"] = { "i", 221361 },	-- Zukk'ash Resin
+							["coord"] = { 75.0, 59.2, FERALAS },
+							["crs"] = {
+								5246,	-- Zukk'ash Worker
+								5245,	-- Zukk'ash Wasp
+								5247,	-- Zukk'ash Tunneler
+								5244,	-- Zukk'ash Stinger
+							},
+						}),
+						objective(3, {	-- 0/8 Farraki Papyrus
+							["provider"] = { "i", 221360 },	-- Farraki Papyrus
+							["cr"] = 7286,	-- Zul'Farrak Zombie
+						}),
+						i(221344),	-- Personal Spellbook
+					},
+				})),
 				q(78145, {	-- Arcanic Systems Manual
 					["providers"] = {
 						{ "i", 209847 },	-- Arcanic Systems Manual
