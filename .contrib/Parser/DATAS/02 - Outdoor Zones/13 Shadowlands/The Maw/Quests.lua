@@ -520,6 +520,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(62234, {	-- Power of the Colossus
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
+				["g"] = {
+					i(183042),    -- Colossal Power Core (QI!)
+				},
 			}),
 			q(64541, {	-- The Cost of Death
 				["provider"] = { "n", 162804 },	-- Ve'nari

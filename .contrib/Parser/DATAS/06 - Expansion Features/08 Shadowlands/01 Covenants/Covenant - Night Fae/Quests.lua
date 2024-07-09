@@ -574,6 +574,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 59063 },	-- Curses!
 				["provider"] = { "n", 160262 },	-- Ysera
 				["coord"] = { 44.7, 39.0, THE_TRUNK },
+				["g"] = {
+					i(175149),    -- A Small Carving of Ysera (QI!)
+				},
 			}),
 			q(59071, {	-- Mending a Broken Hart
 				["sourceQuests"] = {
