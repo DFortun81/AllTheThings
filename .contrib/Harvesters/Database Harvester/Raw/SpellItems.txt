@@ -2536,6 +2536,17 @@
 6856@@@Hand of Sacrifice
 7015@@@Cutthroat
 7270@@@Shock and Awe
+1.15.3.55515
+6796@@@Damaged Rune
+6808@@@Damaged Rune
+6955@@@Damaged Rune
+7023@@@Damaged Rune
+7274@@@Damaged Rune
+7588@@@Endless Rage
+7589@@@Power Word: Barrier
+7590@@@Soul Siphon
+7591@@@Incinerate
+7592@@@Mark of Chaos
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
