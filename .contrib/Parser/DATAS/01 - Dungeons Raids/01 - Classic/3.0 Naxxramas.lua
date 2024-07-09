@@ -49,6 +49,14 @@ applyclassicphase(PHASE_SIX,
 				["lvl"] = 60,
 				["groups"] = {
 			-- #endif
+					-- #if ANYCLASSIC
+					n(ACHIEVEMENTS, {
+						applyclassicphase(SOM_PHASE_ONE, i(191481, {	-- Tabard of Mastery
+							["description"] = "This was obtained from killing Kel'Thuzad in Naxxramas40 on 'Season of Mastery' realms, while entire raid having the buff Undying Vanquisher that meant no one died before killing Kel'Thuzad in that raid lockout, (you could obtain Rune of Teleportation: Frostwyrm's Lair to bypass most of the raid making it so you only had to kill Sapphiron and Kel'Thuzad to obtain this aswell)\n\nSince 'Season of Mastery' servers are no longer available, this tabard is now unobtainable in classic, maybe it comes back in 'Season of Discovery?' who knows.",
+							["timeline"] = { "added 1.14.3", "removed 1.15.0" },	-- Might not be available in SOD.
+						})),
+					}),
+					-- #endif
 					n(QUALITY_LEGENDARY, {
 						["title"] = "Atiesh, Greatstaff of the Guardian",
 						["icon"] = "Interface\\Icons\\INV_Staff_Medivh",
