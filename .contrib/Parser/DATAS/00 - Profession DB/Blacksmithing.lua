@@ -2226,11 +2226,9 @@ i(0, 450252);		-- Ironclaw Dirk
 i(0, 450257);		-- Ironclaw Great Axe
 i(0, 450255);		-- Ironclaw Great Mace
 i(0, 450254);		-- Ironclaw Knuckles
-i(0, 450286);		-- Ironclaw Razorstone
 i(0, 450251);		-- Ironclaw Stiletto
 i(0, 450253);		-- Ironclaw Sword
 i(0, 450287);		-- Ironclaw Weightstone
-i(0, 450285);		-- Ironclaw Whetstone
 i(0, 450273);		-- Proficient Blacksmith's Hammer
 i(0, 450274);		-- Proficient Blacksmith's Toolbox
 i(0, 450271);		-- Proficient Leatherworker's Knife
@@ -2294,4 +2292,6 @@ i(0, 450220);		-- Everforged Sabatons
 i(0, 450229);		-- Everforged Stabber
 i(0, 450226);		-- Everforged Vambraces
 i(0, 450232);		-- Everforged Warglaive
+i(0, 450286);		-- Ironclaw Razorstone
+i(0, 450285);		-- Ironclaw Whetstone
 i(0, 450289);		-- Tempered Framework

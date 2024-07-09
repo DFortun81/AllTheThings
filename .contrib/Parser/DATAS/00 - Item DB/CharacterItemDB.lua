@@ -492,6 +492,9 @@ iq(224055, 82614);					-- A Rocky Start
 iq(224036, 82634);					-- And That's A Web-Wrap!
 iq(224553, 82998);					-- Beledar's Attunement
 iq(224052, 82632);					-- Clocks, Gears, Sprockets, and Legs
+iq(225237, 83254);					-- Echoing Fragment: Azj-Kahet
+iq(225218, 83249);					-- Echoing Fragment: Hallowfall
+iq(225219, 83251);					-- Echoing Fragment: The Ringing Deeps
 iq(224053, 82636);					-- Eight Views on Defense against Hostile Runes
 iq(224054, 82637);					-- Emergent Crystals of the Surface-Dwellers
 iq(227420, 81147);					-- Exceptional Alchemist's Research

@@ -16,6 +16,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 						}),
 					}, {	-- RENOWN 3 --
+						i(225995, {	-- Pattern: Hideseeker's Tote (RECIPE!)
+							["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						}),
 						i(218342, {	-- Shawl of the Assembly
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 1625}},
 						}),

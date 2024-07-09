@@ -1473,6 +1473,7 @@ i(0, 423343);		-- Khaz Algar Tailoring
 i(0, 446926);		-- Unraveling
 i(0, 425143);		-- Recraft Equipment
 i(0, 456706);		-- Algari Weaverline
+i(0, 446975);		-- Artisan Tailor's Coat
 i(0, 446996);		-- Bright Polishing Cloth
 i(0, 454397);		-- Exquisite Weavercloth Bolt
 i(0, 446998);		-- Gritty Polishing Cloth
@@ -1513,6 +1514,7 @@ i(224421, 446971);	-- Artisan Fishing Cap
 i(224420, 446970);	-- Artisan Gardening Hat
 i(224425, 446982);	-- Concoctor's Clutch
 i(224430, 446987);	-- Darkmoon Duffle
+i(224434, 446991);	-- Dawnthread Lining
 i(224435, 446992);	-- Duskthread Lining
 i(224432, 446989);	-- Excavator's Haversack
 i(224431, 446988);	-- Gardener's Seed Satchel
@@ -1535,21 +1537,18 @@ i(0, 446937);		-- Consecrated Slippers
 i(0, 446935);		-- Cool Sunset Bracers
 i(0, 446928);		-- Dawnweave Bolt
 i(0, 446977);		-- Dawnweave Reagent Bag
+i(0, 447001);		-- Daybreak Spellthread
 i(0, 446979);		-- Duskweave Bag
 i(0, 446927);		-- Duskweave Bolt
 i(0, 446932);		-- Gloves of the Woven Dusk
 i(0, 446930);		-- Grips of the Woven Dawn
 i(0, 446995);		-- Preserving Embroidery Thread
 i(0, 446933);		-- Slippers of the Woven Dusk
+i(0, 447000);		-- Sunset Spellthread
 i(0, 454431);		-- The Severed Satchel
 i(0, 446931);		-- Treads of the Woven Dawn
 i(0, 446934);		-- Warm Sunrise Bracers
 i(0, 446997);		-- Weavercloth Embroidery Thread
---- UNKNOWN ---
-i(0, 446975);		-- Artisan Tailor's Coat
-i(224434, 446991);	-- Dawnthread Lining
-i(0, 447001);		-- Daybreak Spellthread
-i(0, 447000);		-- Sunset Spellthread
 --- NYI ---
 i(0, 446936);		-- Adaptive Delver's Shawl
 i(0, 446980);		-- Satchel of the Long Day

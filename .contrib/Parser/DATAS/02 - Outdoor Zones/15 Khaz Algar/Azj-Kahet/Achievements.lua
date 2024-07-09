@@ -66,40 +66,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			ach(40632),		-- No Harm Ever Came From Reading A Book
 			ach(40727),		-- Skittershaw Spin
 			ach(40691, {	-- Skyriding Glyphs: Arathi's End
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 63.4, 17.0, AZJ_KAHET },
 			}),
 			ach(40696, {	-- Skyriding Glyphs: Deepwalker Pass
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 58.6, 89.8, NERUBAR },
 			}),
 			ach(40694, {	-- Skyriding Glyphs: Eye of Ansurek
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 43.1, 57.0, AZJ_KAHET },
 			}),
 			ach(40695, {	-- Skyriding Glyphs: Old Sacrificial Pit
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 13.3, 33.5, NERUBAR },
 			}),
 			ach(40698, {	-- Skyriding Glyphs: Rak-Ush
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 73.2, 84.1, AZJ_KAHET },
 			}),
 			ach(40693, {	-- Skyriding Glyphs: Ruptured Lake
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 25.1, 40.6, AZJ_KAHET },
 			}),
 			ach(40692, {	-- Skyriding Glyphs: Siegehold
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 46.7, 21.3, AZJ_KAHET },
 			}),
 			ach(40699, {	-- Skyriding Glyphs: Silken Ward
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 57.6, 57.6, AZJ_KAHET },
 			}),
 			ach(40697, {	-- Skyriding Glyphs: The Maddening Deep
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 66.3, 85.1, AZJ_KAHET },
 			}),
 			ach(40700, {	-- Skyriding Glyphs: Trickling Abyss
 				["coord"] = { 70.4, 19.4, AZJ_KAHET },

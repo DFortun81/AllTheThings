@@ -111,5 +111,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(223123),	-- Formula: Enchanted Gilded Harbinger Crest (RECIPE!)
 		i(223122),	-- Formula: Enchanted Runed Harbinger Crest (RECIPE!)
 		i(223121),	-- Formula: Enchanted Weathered Harbinger Crest (RECIPE!)
+		i(223100),	-- Pattern: Vambraces of Deepening Darkness (RECIPE!)
+		i(223043),	-- Plans: Sanctified Steps (RECIPE!)
 	}),
 })));

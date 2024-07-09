@@ -223,6 +223,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(RADIANT_REMNANT),
 					i(226264),	-- Radiant Cache
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
+					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
 				}),
 				n(VENDORS, {
 					n(212419, {	-- Attica Whiskervale

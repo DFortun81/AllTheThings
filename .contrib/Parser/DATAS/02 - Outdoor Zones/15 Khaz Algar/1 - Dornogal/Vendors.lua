@@ -80,6 +80,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(223108, {	-- Pattern: Stonebound Herbalist's Pack (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
+					i(223053, {	-- Plans: Artisan Leatherworker's Knife (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223054, {	-- Plans: Artisan Leatherworker's Toolset (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223052, {	-- Plans: Artisan Needle Set (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223050, {	-- Plans: Artisan Pickaxe (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
+					i(223049, {	-- Plans: Artisan Sickle (RECIPE!)
+						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+					}),
 					i(223068, {	-- Technique: Algari Missive of Crafting Speed (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),

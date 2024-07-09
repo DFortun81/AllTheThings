@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(DORNOGAL, {
-		header(HEADERS.Quest, 82448, {	-- The Call of the Worldsoul
+		header(HEADERS.Quest, 82449, {	-- The Call of the Worldsoul
 			n(QUESTS, sharedData({
 				["sourceQuestNumRequired"] = 1,
 				["sourceQuests"] = {
@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["isWeekly"] = true,
 				["_drop"] = { "g" },
 			},{
-				q(82448),	-- The Call of the Worldsoul
+				q(82449),	-- The Call of the Worldsoul
 				q(82491),	-- Worldsoul: Ara-Kara, City of Echoes [N]
 				q(82494),	-- Worldsoul: Ara-Kara, City of Echoes [H]
 				q(82502),	-- Worldsoul: Ara-Kara, City of Echoes [M]
@@ -55,6 +55,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				q(82484),	--
 				q(82513),	--
 				q(82514),	--
+				q(82515),	--
+				q(82039),	--
 				--]]
 			})),
 		}),

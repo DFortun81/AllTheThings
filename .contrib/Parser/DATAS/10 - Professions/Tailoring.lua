@@ -839,12 +839,14 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				r(446935),	-- Cool Sunset Bracers
 				r(446928),	-- Dawnweave Bolt
 				r(446977),	-- Dawnweave Reagent Bag
+				r(447001),	-- Daybreak Spellthread
 				r(446979),	-- Duskweave Bag
 				r(446927),	-- Duskweave Bolt
 				r(446932),	-- Gloves of the Woven Dusk
 				r(446930),	-- Grips of the Woven Dawn
 				r(446995),	-- Preserving Embroidery Thread
 				r(446933),	-- Slippers of the Woven Dusk
+				r(447000),	-- Sunset Spellthread
 				r(454431),	-- The Severed Satchel
 				r(446931),	-- Treads of the Woven Dawn
 				r(446934),	-- Warm Sunrise Bracers
@@ -1253,7 +1255,7 @@ profession(TAILORING, {
 					["name"] = "Black Mageweave Vest",
 					["recipeID"] = 439086
 				}),
-				{	-- 
+				{	--
 					["timeline"] = { "removed 1.15.1" },
 					["name"] = "Black Mageweave Vest",
 					["recipeID"] = 12048

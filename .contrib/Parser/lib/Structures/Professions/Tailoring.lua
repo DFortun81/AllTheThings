@@ -207,6 +207,7 @@ TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		r(446978),	-- Weavercloth Reagent Bag
 	}),
 	filter(PROFESSION_EQUIPMENT, {
+		r(446975),	-- Artisan Tailor's Coat
 		r(446968),	-- Weavercloth Alchemist's Robe
 		r(446969),	-- Weavercloth Chef's Hat
 		r(446966),	-- Weavercloth Enchanter's Hat

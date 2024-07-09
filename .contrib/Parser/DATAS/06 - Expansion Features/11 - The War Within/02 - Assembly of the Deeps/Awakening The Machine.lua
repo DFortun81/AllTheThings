@@ -31,8 +31,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(223269),	-- Machine Defense Unit 1-11 (MOUNT!)
 					}),
 				}),
+				n(QUESTS, {
+					q(83333, {	-- Gearing Up for Trouble
+						["provider"] = { "n", 216164 },	-- Gnawbles
+						["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
+						["isWeekly"] = true,
+						["g"] = {
+							i(226273),	-- Awakened Mechanical Cache
+						},
+					}),
+				}),
 				n(REWARDS, {
 					i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
+					i(224426),	-- Pattern: Ignition Satchel (RECIPE!)
+					i(223040),	-- Plans: Charged Crusher (RECIPE!)
 				}),
 				n(VENDORS, {
 					n(225189, {	-- R-K-MEDES <Awakening The Machine>

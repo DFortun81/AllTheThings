@@ -40,6 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(223117),	-- Formula: Enchant Ring - Radiant Mastery (RECIPE!)
 						i(223118),	-- Formula: Enchant Ring - Radiant Versatility (RECIPE!)
 						i(223119),	-- Formula: Enchant Weapon - Authority of Air (RECIPE!)
+						i(226643),	-- Plans: Beledar's Bulwark (RECIPE!)
 						i(221148),	-- Epaulets of the Clipped Wings
 						i(221147),	-- Goliath's Chitinous Chainmail
 						i(221149),	-- Membranous Slippers

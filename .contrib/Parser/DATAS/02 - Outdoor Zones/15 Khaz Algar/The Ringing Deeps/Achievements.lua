@@ -80,8 +80,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 56.2, 56.2, THE_RINGING_DEEPS },
 			}),
 			ach(40680, {	-- Skyriding Glyphs: The Waterworks
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 46.5, 51.8, THE_RINGING_DEEPS },
 			}),
 			ach(40799),		-- Sojourner of The Ringing Deeps (automated)
 			ach(40585),		-- Super Size Snuffling

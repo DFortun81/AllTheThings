@@ -35,12 +35,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}},
 			}),
 			ach(40665, {	-- Skyriding Glyphs: Dhar Durgaz
-				-- TODO
-				--["coord"] = { X, Y, ISLE_OF_DORN },
+				["coord"] = { 44.5, 79.7, ISLE_OF_DORN },
 			}),
 			ach(40669, {	-- Skyriding Glyphs: Cinderbrew Meadery
-				-- TODO
-				--["coord"] = { X, Y, ISLE_OF_DORN },
+				["coord"] = { 78.2, 42.6, ISLE_OF_DORN },
 			}),
 			ach(40663, {	-- Skyriding Glyphs: Dhar Oztan
 				["coord"] = { 23.1, 58.5, ISLE_OF_DORN },
@@ -49,16 +47,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 71.9, 47.2, ISLE_OF_DORN },
 			}),
 			ach(40666, {	-- Skyriding Glyphs: Sunken Shield
-				-- TODO
-				--["coord"] = { X, Y, ISLE_OF_DORN },
+				["coord"] = { 68.3, 71.8, ISLE_OF_DORN },
 			}),
 			ach(40664, {	-- Skyriding Glyphs: Storm's Watch
-				-- TODO
-				--["coord"] = { X, Y, ISLE_OF_DORN },
+				["coord"] = { 37.9, 40.9, ISLE_OF_DORN },
 			}),
 			ach(40668, {	-- Skyriding Glyphs: Thunderhead Peak
-				-- TODO
-				--["coord"] = { X, Y, ISLE_OF_DORN },
+				["coord"] = { 56.2, 17.8, ISLE_OF_DORN },
 			}),
 			ach(40667, {	-- Skyriding Glyphs: Thul Medran
 				["coord"] = { 47.9, 26.6, ISLE_OF_DORN },

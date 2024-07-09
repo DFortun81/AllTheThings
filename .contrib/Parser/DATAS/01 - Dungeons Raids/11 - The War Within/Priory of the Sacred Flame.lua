@@ -42,6 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(223117),	-- Formula: Enchant Ring - Radiant Mastery (RECIPE!)
 						i(223118),	-- Formula: Enchant Ring - Radiant Versatility (RECIPE!)
 						i(223120),	-- Formula: Enchant Weapon - Authority of Radiant Power (RECIPE!)
+						i(223098),	-- Pattern: Waders of the Unifying Flame (RECIPE!)
 						i(219310),	-- Bursting Lightshard
 						i(221129),	-- Divine Pyrewalkers
 						i(221131),	-- Elysian Flame Crown

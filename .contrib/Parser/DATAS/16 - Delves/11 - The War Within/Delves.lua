@@ -1,3 +1,10 @@
+BOUNTIFUL = createHeader({
+	readable = "Bountiful",
+	--icon = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",
+	text = {
+		en = "Bountiful",
+	},
+});
 local UNDERCOIN = 2803;
 root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
@@ -169,8 +176,25 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40436),	-- You're Getting a Delve!
 	}),
 	n(QUESTS, {
-		-- Brann Bronzebeard leveling quest, probably better to move to hqts?
-		q(82772),	-- First time finishing delves (tutorial end flag/compation unlock?)
+		q(81514, {	-- Bountiful Delves
+			["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard,
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+		}),
+		q(81510, {	-- Ship It!
+			["sourceQuests"] = { 81514 },	-- Bountiful Delves
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard,
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+			["g"] = {
+				i(219391),	-- Delver's Dirigible (MOUNT!)
+			},
+		}),
+		q(81593, {	-- Maximum Potential
+			["sourceQuests"] = { 81510 },	-- Ship It!
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard,
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+		}),
+		-- Brann Bronzebeard leveling quest,
 		q(77716),	-- Level 2
 		q(77718),	-- Level 3
 		q(77719),	-- Level 4
@@ -179,7 +203,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77722),	-- Level 7
 		q(77723),	-- Level 8
 		q(77724),	-- Level 9
-		--q(77727),	-- Level 10 (was already attached to achievement 40455 (Buddy System), but I not sure where it grab it from?)
+		q(77727),	-- Level 10
 		q(77728),	-- Level 11
 	}),
 	n(QUESTS, sharedData({
@@ -203,6 +227,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		q(82712),	-- Delves: Trouble Up and Down Khaz Algar
 	})),
+	n(RARES, {
+		n(207482),	-- Invasive Sporecap
+		n(209721),	-- Secret Treasure
+		n(228030),	-- Sir Finley Mrgglton
+		n(223541),	-- Stolen Loader
+		n(208728),	-- Treasure Wraith
+	}),
 	m(2269, {	-- Earthcrawl Mines
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
 		["g"] = {
@@ -211,11 +242,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40527, bubbleDown({ ["_noautomation"] = true, }, {	-- Earthcrawl Mines Stories
 					["sym"] = {{ "achievement_criteria" }},
 				})),
-			}),
-			n(RARES, {
-				n(223541),	-- Stolen Loader
-				n(207482),	-- Invasive Sporecap
-				n(228030),	-- Sir Finley Mrgglton
 			}),
 			n(TREASURES, {
 				-- Seems like two rare treasures in this dungeon? Can have different IDs
@@ -338,9 +364,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 68.9, 44.4, HALLOWFALL },
 				}),
 			}),
-			n(RARES, {
-				-- rares - wraith and sporecap
-			}),
 			n(TREASURES, {
 				o(455497, {	-- Sturdy Chest
 					["coord"] = { 63.3, 45.3, 2312 },
@@ -407,9 +430,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 67.8, 45.7, HALLOWFALL },
 				}),
 			}),
-			n(RARES, {
-				-- rare was - wraith
-			}),
 			n(TREASURES, {
 				o(455914, {	-- Sturdy Chest
 					["coord"] = { 48.1, 61.8, 2310 },
@@ -444,9 +464,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "o", 455720 },	-- Delver's Call: Tak-Rethan Abyss
 					["coord"] = { 57.2, 45.3, AZJ_KAHET },
 				}),
-			}),
-			n(RARES, {
-				-- rare - wraith
 			}),
 			n(TREASURES, {
 				o(455533, {	-- Sturdy Chest
@@ -485,9 +502,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 227477 },	-- Brann Bronzebeard
 					["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
 				}),
-			}),
-			n(RARES, {
-				-- rare was - Treasure Wraith (n: 208728)
 			}),
 			n(TREASURES, {
 				o(455482, {	-- Sturdy Chest
@@ -630,9 +644,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
 				}),
 			}),
-			n(RARES, {
-				-- rare was - murloc, wraith
-			}),
 			n(TREASURES, {
 				o(455490, {	-- Sturdy Chest
 					["coord"] = { 48.0, 25.6, 2251 },
@@ -680,8 +691,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 46.2, 48.0, THE_RINGING_DEEPS },
 				}),
 			}),
-			n(RARES, {
-			}),
 			n(TREASURES, {
 			}),
 		},
@@ -695,6 +704,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(225899),	-- Unbreakable Iron Idol
 		filter(RECIPES, {
 			i(223139),	-- Formula: Enchant Cloak - Chant of Leeching Fangs (RECIPE!)
+			i(224434),	-- Pattern: Dawnthread Lining (RECIPE!)
+			i(223101),	-- Pattern: Reinforced Setae Flyers (RECIPE!)
+			i(223051),	-- Plans: Artisan Skinning Knife (RECIPE!)
+			i(223060),	-- Technique: Patient Alchemist's Mixing Rod (RECIPE!)
 		}),
 		filter(MISC, {
 			i(224181),	-- Companion Experience (Tier 1-2)
@@ -799,6 +812,81 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(211046),	-- Umbral Artist's Chisel
 			i(211040),	-- Unhinged Vault-Hatch
 		}),
+		n(BOUNTIFUL, bubbleDownFiltered({
+			["cost"] = {{"c", RESTORED_COFFER_KEY, 1}},
+		},FILTERFUNC_itemID,{
+			i(220520),	-- Radiant Echo
+			filter(BACK_F, {
+				i(219183),	-- Amice of Hidden Stars
+				i(219185),	-- Serape of the Stygian Sea
+				i(219186),	-- Myconic Wrap
+				i(219190),	-- Unkindled Waxweave Mozzetta
+			}),
+			filter(CLOTH, {
+				i(219175),	-- Unkindled Waxweave Clasps
+				i(219176),	-- Unkindled Waxweave Belt
+				i(219177),	-- Unkindled Waxweave Shoulderpads
+				i(219178),	-- Unkindled Waxweave Buskins
+				i(219179),	-- Unkindled Waxweave Veil
+				i(219180),	-- Unkindled Waxweave Mitts
+				i(219181),	-- Unkindled Waxweave Slippers
+				i(219182),	-- Unkindled Waxweave Garb
+			}),
+			filter(FINGER_F, {
+				i(219187),	-- Bone-Carved Circlet
+				i(219221),	-- Ceremonial Song Ring
+				i(219188),	-- Dark Abyss Hoop
+				i(219189),	-- Fuzzy Molding Halo
+			}),
+			filter(LEATHER, {
+				i(219167),	-- Myconic Wristbands
+				i(219168),	-- Myconic Strap
+				i(219169),	-- Myconic Shoulderstrap
+				i(219170),	-- Myconic Chausses
+				i(219171),	-- Myconic Hood
+				i(219172),	-- Myconic Clutches
+				i(219173),	-- Myconic Waders
+				i(219174),	-- Myconic Frock
+			}),
+			filter(MAIL, {
+				i(219159),	-- Wrist Bindings of the Stygian Sea
+				i(219160),	-- Sash of the Stygian Sea
+				i(219161),	-- Spaulders of the Stygian Sea
+				i(219162),	-- Poleyns of the Stygian Sea
+				i(219163),	-- Bascinet of the Stygian Sea
+				i(219164),	-- Grasps of the Stygian Sea
+				i(219165),	-- Treads of the Stygian Sea
+				i(219166),	-- Hauberk of the Stygian Sea
+			}),
+			filter(NECK_F, {
+				i(219184),	-- Enkindled Locket
+				i(219217),	-- Gold-Thread Choker
+			}),
+			filter(PLATE, {
+				i(219151),	-- Handguards of Hidden Stars
+				i(219152),	-- Charmbelt of Hidden Stars
+				i(219153),	-- Pauldrons of Hidden Stars
+				i(219154),	-- Legplates of Hidden Stars
+				i(219155),	-- Visage of Hidden Stars
+				i(219156),	-- Fists of Hidden Stars
+				i(219157),	-- Sollerets of Hidden Stars
+				i(219158),	-- Raiment of Hidden Stars
+			}),
+			n(WEAPONS, {
+				i(219199),	-- Radiant Steelglaives
+				i(219200),	-- Unscathed Rampart
+				i(219201),	-- Vessel of Sacred Flame
+				i(219202),	-- Lamplighter's Mercy
+				i(219203),	-- Arathi Holy Standard
+				i(219204),	-- Imperial Flarebolt
+				i(219205),	-- Shooting Starquebus
+				i(219206),	-- Hand of Piety
+				i(219207),	-- Flame-Bearing Crozier
+				i(219208),	-- Pyretic Star
+				i(219209),	-- Worshipper's Poniard
+				i(219210),	-- Sanctifier's Startierce
+			}),
+		})),
 	}),
 	n(VENDORS, {
 		n(226250, {	-- Reno Jackson <Delve Treasures>
@@ -1098,3 +1186,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, {
+	q(82772),	-- First Time per day? (Got Unflagged at reset)
+});

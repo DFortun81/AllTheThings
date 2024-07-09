@@ -2435,12 +2435,18 @@ i(223102, 443958);	-- Busy Bee's Buckle
 i(223107, 444111);	-- Charged Scrapmaster's Gauntlets
 i(223111, 444121);	-- Deep Tracker's Cap
 i(223112, 444119);	-- Deep Tracker's Pack
+i(223104, 444103);	-- Defender's Armor Kit
 i(223106, 444108);	-- Earthen Forgemaster's Apron
 i(223109, 444115);	-- Earthen Jeweler's Cover
 i(223105, 444106);	-- Nerubian Alchemist's Hat
+i(223101, 443960);	-- Reinforced Setae Flyers
 i(223096, 443950);	-- Roiling Thunderstrike Talons
+i(223095, 443949);	-- Rook Feather Wristwraps
+i(223099, 444073);	-- Sanctified Torchbearer's Grips
 i(223108, 444113);	-- Stonebound Herbalist's Pack
 i(223103, 444102);	-- Stormbound Armor Kit
+i(223100, 444068);	-- Vambraces of Deepening Darkness
+i(223098, 444071);	-- Waders of the Unifying Flame
 --- SPECIALIZATION ---
 i(0, 441460);		-- Blessed Weapon Grip
 i(0, 441065);		-- Glyph-Etched Binding
@@ -2459,13 +2465,6 @@ i(0, 441055);		-- Rune-Branded Legwraps
 i(0, 441056);		-- Rune-Branded Mantle
 i(0, 441051);		-- Rune-Branded Tunic
 i(0, 441057);		-- Rune-Branded Waistband
-i(0, 441461);		-- Writhing Armor Banding
---- UNKNOWN ---
-i(223104, 444103);	-- Defender's Armor Kit
-i(223101, 443960);	-- Reinforced Setae Flyers
-i(223095, 443949);	-- Rook Feather Wristwraps
-i(223099, 444073);	-- Sanctified Torchbearer's Grips
 i(0, 443961);		-- Smoldering Pollen Hauberk
-i(223100, 444068);	-- Vambraces of Deepening Darkness
-i(223098, 444071);	-- Waders of the Unifying Flame
 i(0, 443951);		-- Weathered Stormfront Vest
+i(0, 441461);		-- Writhing Armor Banding

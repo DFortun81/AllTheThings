@@ -1366,6 +1366,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				r(441056),	-- Rune-Branded Mantle
 				r(441051),	-- Rune-Branded Tunic
 				r(441057),	-- Rune-Branded Waistband
+				r(443961),	-- Smoldering Pollen Hauberk
+				r(443951),	-- Weathered Stormfront Vest
 				r(441461),	-- Writhing Armor Banding
 			}),
 		}),

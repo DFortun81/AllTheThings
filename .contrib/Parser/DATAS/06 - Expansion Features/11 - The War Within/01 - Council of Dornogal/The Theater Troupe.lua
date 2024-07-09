@@ -61,6 +61,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(226263),	-- Theater Troupe's Trove
 					i(228708),	-- Formula: Gleeful Glamour - Earthen (RECIPE!)
 					i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
+					i(223095),	-- Pattern: Rook Feather Wristwraps (RECIPE!)
+					i(223036),	-- Plans: Charged Runeaxe (RECIPE!)
 				}),
 			},
 		})),

@@ -19,7 +19,6 @@ root(ROOTS.Unsorted, {
 				i(222979),	-- Clay Stonecharger (PET!)
 				i(224766),	-- Faithful Dog (PET!) [These is wowhead guide!]
 				i(222964),	-- Fathom Incher (PET!)
-				i(221850),	-- Freshly Webbed Kebab /Bean (PET!)
 				i(222970),	-- Fuzzy (PET!)
 				i(220771),	-- Hallowed Glowfly (PET!)
 				i(221195),	-- Illskitter (PET!)
@@ -54,7 +53,7 @@ root(ROOTS.Unsorted, {
 				i(223264),	-- Aquamarine Swarmite (MOUNT!)
 				i(223315),	-- Beledar's Spawn (MOUNT!)
 				i(221967),	-- Crowd Pummeler 2-30 (MOUNT!)
-				i(219391),	-- Delver's Dirigible (MOUNT!)
+
 				i(223570),	-- Ebonhide Ramolith (MOUNT!)
 				i(226506),	-- Hand of Reshkigaal (MOUNT!)
 				i(226041),	-- Keg Leg's Radiant Crocolisk (MOUNT!)
@@ -586,35 +585,9 @@ root(ROOTS.Unsorted, {
 				}),
 				prof(BLACKSMITHING, {
 					--- Attached SpellID Recipes!
-					i(225486),	-- Plans: Algari Competitor's Axe (RECIPE!)
-					i(225479),	-- Plans: Algari Competitor's Dagger (RECIPE!)
-					i(225488),	-- Plans: Algari Competitor's Greatsword (RECIPE!)
-					i(225466),	-- Plans: Algari Competitor's Plate Armguards (RECIPE!)
-					i(225459),	-- Plans: Algari Competitor's Plate Breastplate (RECIPE!)
-					i(225461),	-- Plans: Algari Competitor's Plate Gauntlets (RECIPE!)
-					i(225463),	-- Plans: Algari Competitor's Plate Greaves (RECIPE!)
-					i(225462),	-- Plans: Algari Competitor's Plate Helm (RECIPE!)
-					i(225464),	-- Plans: Algari Competitor's Plate Pauldrons (RECIPE!)
-					i(225460),	-- Plans: Algari Competitor's Plate Sabatons (RECIPE!)
-					i(225465),	-- Plans: Algari Competitor's Plate Waistguard (RECIPE!)
-					i(225483),	-- Plans: Algari Competitor's Scepter (RECIPE!)
-					i(225485),	-- Plans: Algari Competitor's Shield (RECIPE!)
-					i(225487),	-- Plans: Algari Competitor's Sickle (RECIPE!)
-					i(225478),	-- Plans: Algari Competitor's Splitter (RECIPE!)
-					i(225489),	-- Plans: Algari Competitor's Sword (RECIPE!)
-					i(223053),	-- Plans: Artisan Leatherworker's Knife (RECIPE!)
-					i(223054),	-- Plans: Artisan Leatherworker's Toolset (RECIPE!)
-					i(223052),	-- Plans: Artisan Needle Set (RECIPE!)
-					i(223050),	-- Plans: Artisan Pickaxe (RECIPE!)
-					i(223049),	-- Plans: Artisan Sickle (RECIPE!)
-					i(223051),	-- Plans: Artisan Skinning Knife (RECIPE!)
-					i(226643),	-- Plans: Beledar's Bulwark (RECIPE!)
-					i(223040),	-- Plans: Charged Crusher (RECIPE!)
-					i(223037),	-- Plans: Charged Facesmasher (RECIPE!)
-					i(223036),	-- Plans: Charged Runeaxe (RECIPE!)
 					i(223042),	-- Plans: Charged Slicer (RECIPE!)
-					i(223043),	-- Plans: Sanctified Steps (RECIPE!)
-					i(223048),	-- Plans: Siphoning Stiletto (RECIPE!)
+
+
 
 
 					--- Probably mostly NYI...
@@ -771,18 +744,6 @@ root(ROOTS.Unsorted, {
 					i(223046),	-- Plans: Entangling Cutlass
 					i(223047),	-- Plans: Haunting Void
 				}),
-				prof(ENCHANTING, {
-
-
-
-
-
-
-
-
-
-
-				}),
 				prof(ENGINEERING, {
 					i(217151),	-- Algari Competitor's Cloth Goggles \\ Vicious Competitor's Cloth Goggles
 					i(217152),	-- Algari Competitor's Leather Goggles \\ Vicious Competitor's Leather Goggles
@@ -914,7 +875,6 @@ root(ROOTS.Unsorted, {
 				prof(INSCRIPTION, {
 
 
-					i(223060),	-- Technique: Patient Alchemist's Mixing Rod (RECIPE!) [Fungarian Delve Drop?]
 					i(222545),	-- Khaz Algar Milling
 					i(222108),	-- Khaz Algar Milling
 					i(219599),	-- Fortuitous Essence
@@ -1098,14 +1058,6 @@ root(ROOTS.Unsorted, {
 					i(223093),	-- Design: Beautification Iris \\ Pattern: Herbalism Bag
 					i(223094),	-- Design: Magnificent Jeweler's Setting \\ Pattern: Mining Bag
 				}),
-				prof(LEATHERWORKING, {
-					i(223104),	-- Pattern: Defender's Armor Kit (RECIPE!)
-					i(223101),	-- Pattern: Reinforced Setae Flyers (RECIPE!)
-					i(223095),	-- Pattern: Rook Feather Wristwraps (RECIPE!)
-					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
-					i(223100),	-- Pattern: Vambraces of Deepening Darkness (RECIPE!)
-					i(223098),	-- Pattern: Waders of the Unifying Flame (RECIPE!)
-				}),
 				prof(MINING, {
 					i(210940),	-- Null Stone
 					i(210941),	-- Null Stone
@@ -1123,7 +1075,7 @@ root(ROOTS.Unsorted, {
 					i(222788),	-- Khaz Algar Unraveling
 					--------
 					r(446975),	-- Artisan Tailor's Coat
-					i(224434),	-- Pattern: Dawnthread Lining (RECIPE!)
+
 					r(447001),	-- Daybreak Spellthread
 					r(447000),	-- Sunset Spellthread
 				}),
@@ -2628,60 +2580,7 @@ root(ROOTS.Unsorted, {
 			n(SPECIAL, {	-- Weird Sets?
 				-- These is something special...
 				-- 4 Sets Hidden Stars, Stygian Sea, Myconic, Waxweave?
-				i(219151),	-- Handguards of Hidden Stars
-				i(219152),	-- Charmbelt of Hidden Stars
-				i(219153),	-- Pauldrons of Hidden Stars
-				i(219154),	-- Legplates of Hidden Stars
-				i(219155),	-- Visage of Hidden Stars
-				i(219156),	-- Fists of Hidden Stars
-				i(219157),	-- Sollerets of Hidden Stars
-				i(219158),	-- Raiment of Hidden Stars
-				i(219159),	-- Wrist Bindings of the Stygian Sea
-				i(219160),	-- Sash of the Stygian Sea
-				i(219161),	-- Spaulders of the Stygian Sea
-				i(219162),	-- Poleyns of the Stygian Sea
-				i(219163),	-- Bascinet of the Stygian Sea
-				i(219164),	-- Grasps of the Stygian Sea
-				i(219165),	-- Treads of the Stygian Sea
-				i(219166),	-- Hauberk of the Stygian Sea
-				i(219167),	-- Myconic Wristbands
-				i(219168),	-- Myconic Strap
-				i(219169),	-- Myconic Shoulderstrap
-				i(219170),	-- Myconic Chausses
-				i(219171),	-- Myconic Hood
-				i(219172),	-- Myconic Clutches
-				i(219173),	-- Myconic Waders
-				i(219174),	-- Myconic Frock
-				i(219175),	-- Unkindled Waxweave Clasps
-				i(219176),	-- Unkindled Waxweave Belt
-				i(219177),	-- Unkindled Waxweave Shoulderpads
-				i(219178),	-- Unkindled Waxweave Buskins
-				i(219179),	-- Unkindled Waxweave Veil
-				i(219180),	-- Unkindled Waxweave Mitts
-				i(219181),	-- Unkindled Waxweave Slippers
-				i(219182),	-- Unkindled Waxweave Garb
-				i(219183),	-- Amice of Hidden Stars
-				i(219184),	-- Enkindled Locket
-				i(219185),	-- Serape of the Stygian Sea
-				i(219186),	-- Myconic Wrap
-				i(219187),	-- Bone-Carved Circlet
-				i(219188),	-- Dark Abyss Hoop
-				i(219189),	-- Fuzzy Molding Halo
-				i(219190),	-- Unkindled Waxweave Mozzetta
-				i(219199),	-- Radiant Steelglaives
-				i(219200),	-- Unscathed Rampart
-				i(219201),	-- Vessel of Sacred Flame
-				i(219202),	-- Lamplighter's Mercy
-				i(219203),	-- Arathi Holy Standard
-				i(219204),	-- Imperial Flarebolt
-				i(219205),	-- Shooting Starquebus
-				i(219206),	-- Hand of Piety
-				i(219207),	-- Flame-Bearing Crozier
-				i(219208),	-- Pyretic Star
-				i(219209),	-- Worshipper's Poniard
-				i(219210),	-- Sanctifier's Startierce
-				i(219217),	-- Gold-Thread Choker
-				i(219221),	-- Ceremonial Song Ring
+
 			}),
 			race(EARTHEN_ALLIANCE, {
 				-- My Guess?? Earthen Starting Gear?
@@ -2918,8 +2817,8 @@ root(ROOTS.Unsorted, {
 			}),
 			n(REWARDS, {
 				i(223424),	-- [PH] 11.0 - Cord
-				i(223427),	-- Lightning-Scarred Cowl
-				i(223428),	-- Stormrider's Cuffs
+
+
 				i(223431),	-- The Fallen Queen's Band
 				i(223432),	-- Commemorative Light's Gambit Championship Signet \\ [PH] 11.0 - Signet
 				i(223436),	-- Light Boots of the Ringing Deeps
@@ -2930,29 +2829,28 @@ root(ROOTS.Unsorted, {
 				i(223441),	-- [PH] 11.0 - Waders
 				i(223443),	-- Algari Warden's Hood
 				i(223444),	-- [PH] 11.0 - Breeches
-				i(223446),	-- Stormrider's Bindings
 				i(223450),	-- [PH] 11.0 - Chainmail
 				i(223451),	-- Saboteur's Striders
 				i(223452),	-- Grips of the Ringing Deeps
-				i(223453),	-- Lightning-Scarred Coif
+
 				i(223454),	-- Algari Warden's Greaves
 				i(223455),	-- Shoulderguards of the Weaver
 				i(223456),	-- [PH] 11.0 - Cinch
-				i(223457),	-- Stormrider's Bracers
+
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223461),	-- Algari Warden's Helm
 				i(223462),	-- [PH] 11.0 - Breastplate
 				i(223463),	-- Sabatons of the Ringing Deeps
 				i(223464),	-- [PH] 11.0 - Gauntlets
-				i(223465),	-- Lightning-Scarred Legguards
+
 				i(223466),	-- Mantle of the Weaver
 				i(223467),	-- Saboteur's Girdle
-				i(223468),	-- Stormrider's Armplates
+
 				i(223472),	-- Drape of the Lamplighter
 				i(220118),	-- Arathi Demolition Charge
-				i(223547),	-- Algari Heavy Staff
+
 				i(223548),	-- Algari Rifle
-				i(223569),	-- Algari Spellcleaver
+
 				i(223584),	-- Algari Scepter
 				i(223585),	-- [PH] Algari Bladefist
 				i(223588),	-- Algari Fighting Knife

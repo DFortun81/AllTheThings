@@ -6,5 +6,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		["icon"] = 5901551,
 		--["lore"] = "",
 		["isRaid"] = true,
+		["maps"] = {
+			VAULT_OF_MEMORY,
+		},
 	}),
 })));

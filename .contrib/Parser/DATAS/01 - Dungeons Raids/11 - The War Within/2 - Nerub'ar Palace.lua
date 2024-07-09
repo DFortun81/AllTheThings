@@ -406,7 +406,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					i(224435),	-- Pattern: Duskthread Lining (RECIPE!)
 				}),
 				BossOnly(OVINAX),
-				BossOnly(KYVEZA),
+				BossOnly(KYVEZA, {
+					i(223048),	-- Plans: Siphoning Stiletto (RECIPE!)
+				}),
 				BossOnly(SILKEN_COURT),
 				BossOnly(ANSUREK, {
 					i(224147),	-- Sureki Skyrazor (MOUNT!)

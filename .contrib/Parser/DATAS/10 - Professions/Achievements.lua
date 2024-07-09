@@ -376,6 +376,8 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, bubbleDownSelf({ ["timeline"] = { ADD
 	}),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 		i(223113),	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
+		i(223104),	-- Pattern: Defender's Armor Kit (RECIPE!)
+		i(223037),	-- Plans: Charged Facesmasher (RECIPE!)
 	})),
 })));
 

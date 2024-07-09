@@ -3,6 +3,10 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ZONE_REWARDS, {
+		i(220693),	-- Coffer Key Shard
+		currency(RESTORED_COFFER_KEY, {
+			["cost"] = {{"i", 220693, 100}},	-- 100x Coffer Key Shard
+		}),
 		filter(BACK_F, {
 			i(224664),	-- Gem-Woven Cloak
 			i(224663),	-- Gem-Woven Shawl

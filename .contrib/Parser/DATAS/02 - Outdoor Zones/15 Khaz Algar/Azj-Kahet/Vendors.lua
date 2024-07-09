@@ -72,12 +72,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 							{"c", KEJ, 1500},
 						},
 					}),
-					i(225995, {	-- Pattern: Hideseeker's Tote (RECIPE!)
-						["cost"] = {
-							{"i", ARTISANS_ACUITY, 150},
-							{"c", KEJ, 1500},
-						},
-					}),
 					i(224427, {	-- Pattern: Hideshaper's Workbag (RECIPE!)
 						["cost"] = {
 							{"i", ARTISANS_ACUITY, 150},
@@ -133,6 +127,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(218198, {	-- Pelefien <Clerk>
 				["coord"] = { 50.5, 26.3, NERUBAR },
 				["g"] = {
+					i(221850, {	-- Bean (PET!)
+						["cost"] = {{"c", KEJ, 2250}},
+						["isLimited"] = true,
+					}),
 					i(223956, {	-- Recipe: Everything-On-A-Stick (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
@@ -160,12 +158,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						["requireSkill"] = MINING,
 					}),
 					i(224432, {	-- Pattern: Excavator's Haversack (RECIPE!)
-						["cost"] = {
-							{"i", ARTISANS_ACUITY, 150},
-							{"c", KEJ, 1500},
-						},
-					}),
-					i(224426, {	-- Pattern: Ignition Satchel (RECIPE!)
 						["cost"] = {
 							{"i", ARTISANS_ACUITY, 150},
 							{"c", KEJ, 1500},

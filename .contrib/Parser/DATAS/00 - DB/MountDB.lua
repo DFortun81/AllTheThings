@@ -1811,6 +1811,7 @@ i(224151, 451491);	-- Ascendant Skyrazor
 i(223505, 449269);	-- Crimson Mudnose
 i(222989, 447176);	-- Cyan Glowmite
 i(226357, 458335);	-- Diamond Mechsuit
+i(219391, 446052);	-- Delver's Dirigible
 i(0, 453785);		-- Earthen Judicator's Ramolith
 i(223274, 447957);	-- Ferocious Jawcrawler
 i(223586, 449466);	-- Forged Gladiator's Fel Bat
@@ -1831,7 +1832,6 @@ i(221813, 447405);	-- Vicious Skyflayer [H]
 i(223264, 447185);	-- Aquamarine Swarmite
 i(223315, 448941);	-- Beledar's Spawn
 i(221967, 448186);	-- Crowd Pummeler 2-30
-i(219391, 446052);	-- Delver's Dirigible
 i(223570, 449416);	-- Ebonhide Ramolith
 i(226506, 459193);	-- Hand of Reshkigaal
 i(224415, 452779);	-- Ivory Goliathus

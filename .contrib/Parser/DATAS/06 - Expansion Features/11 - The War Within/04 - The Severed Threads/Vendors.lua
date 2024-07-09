@@ -35,18 +35,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 				},
 			}),
-			n(228184, {	-- Yamas the Provider <Pact Information & Supplies>
-				["coord"] = { 57.1, 42.5, AZJ_KAHET },
-				["g"] = {
-					i(226519, {	-- General's Expertise (TOY!)
-						["cost"] = {{"c", KEJ, 2250}},
-					}),
-					i(226520, {	-- Queen's Pheromone (CI!)
-						["cost"] = {{"c", KEJ, 1000000}},
-					}),
-				},
-			}),
-			n(220867, {	-- Y'tekhi <Severed Threads Quartermaster>
+			n(223750, {	-- Lady Vinazian <Severed Threads Quartermaster>
 				["coord"] = { 57.3, 42.5, AZJ_KAHET },
 				["g"] = bubbleDownRep(FACTION_THE_SEVERED_THREADS, {
 					{		-- RENOWN 1 --
@@ -100,6 +89,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}, {	-- RENOWN 25 --
 					},
 				}),
+			}),
+			n(228184, {	-- Yamas the Provider <Pact Information & Supplies>
+				["coord"] = { 57.1, 42.5, AZJ_KAHET },
+				["g"] = {
+					i(226519, {	-- General's Expertise (TOY!)
+						["cost"] = {{"c", KEJ, 2250}},
+					}),
+					i(226520, {	-- Queen's Pheromone (CI!)
+						["cost"] = {{"c", KEJ, 1000000}},
+					}),
+				},
 			}),
 		}),
 	}),

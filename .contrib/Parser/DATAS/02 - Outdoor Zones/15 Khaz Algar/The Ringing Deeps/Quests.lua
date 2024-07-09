@@ -816,16 +816,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					--c(2902),	-- The Assembly of the Deeps Commendation, this is one-time Warband bonus
 				},
 			}),
-			q(83333, {	-- Gearing Up for Trouble
-				["isDaily"] = true,
-				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// yet I'm unsure
-				["provider"] = { "n", 216164 },	-- Gnawbles
-				["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
-				["g"] = {
-					i(226273),	-- Awakened Mechanical Cache
-					i(220693),	-- Coffer Key Shard
-				},
-			}),
 			q(79343, {	-- Everyday I'm Snufflin'
 				["isDaily"] = true,
 				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// renown 2?
@@ -1005,8 +995,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
 	-- Side quests
 	q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
-	-- Special Assignment unlocks tracker
-	q(82156),	-- 'Special Assignment: When the Deeps Stir'	/ callings or emissary actually
 	-- ?
 	--q(82957),	-- 'Thanks for the Wax' accepted every time when you fly in zone
 	q(83475),	-- [DNT] Repair Console (spellID 455981) Water Console (o: 226624) @ 45.3, 46.4, THE_RINGING_DEEPS)
