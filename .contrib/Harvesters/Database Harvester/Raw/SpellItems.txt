@@ -2532,6 +2532,10 @@
 7567@@@Flametongue 6
 7568@@@Rockbiter 7
 7569@@@Windfury 4
+1.15.3.55391
+6856@@@Hand of Sacrifice
+7015@@@Cutthroat
+7270@@@Shock and Awe
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
