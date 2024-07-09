@@ -5413,9 +5413,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.0, 27.3, TANARIS },
 					-- #endif
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_TWO, i(217244, {	-- Pattern: Crimson Silk Robe
+							["timeline"] = { "added 1.15.1" },
+							["isLimited"] = true,
+						})),
+						i(7088, {	-- Pattern: Crimson Silk Robe
+							["timeline"] = { "removed 1.15.1" },
+							["isLimited"] = true,
+						}),
+						-- #else
 						i(7088, {	-- Pattern: Crimson Silk Robe
 							["isLimited"] = true,
 						}),
+						-- #endif
 						i(21358),	-- Pattern: Soul Pouch
 					},
 				}),

@@ -185,6 +185,7 @@ i("Black Mageweave Vest", 0, 439086);
 i("Black Mageweave Lessings", 0, 439088);
 i("Boots of the Enchanter", 217254, 439097);
 i("Crimson Silk Shoulders", 217251, 439093);
+i("Crimson Silk Robe", 217244, 439085);
 -- #endif
 
 -------------------

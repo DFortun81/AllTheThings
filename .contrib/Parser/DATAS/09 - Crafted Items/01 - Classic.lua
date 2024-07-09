@@ -2852,7 +2852,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(2568),	-- Brown Linen Vest
 			i(10042),	-- Cindercloth Robe
 			i(14042),	-- Cindercloth Vest
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217245, {	-- Crimson Silk Robe
+				["timeline"] = { "added 1.15.1" },
+			})),
+			i(7063, {	-- Crimson Silk Robe
+				["timeline"] = { "removed 1.15.1" },
+			}),
+			-- #else
 			i(7063),	-- Crimson Silk Robe
+			-- #endif
 			i(7058),	-- Crimson Silk Vest
 			i(10021),	-- Dreamweave Vest
 			i(7051),	-- Earthen Vest

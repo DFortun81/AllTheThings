@@ -1300,10 +1300,23 @@ profession(TAILORING, {
 					["name"] = "Cindercloth Vest",
 					["recipeID"] = 18408
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["timeline"] = { "added 1.15.1" },
+					["name"] = "Crimson Silk Robe",
+					["recipeID"] = 8802
+				}),
+				{
+					["timeline"] = { "removed 1.15.1" },
+					["name"] = "Crimson Silk Robe",
+					["recipeID"] = 8802
+				},
+				-- #else
 				{
 					["name"] = "Crimson Silk Robe",
 					["recipeID"] = 8802
 				},
+				-- #endif
 				{
 					["name"] = "Crimson Silk Vest",
 					["recipeID"] = 8791
