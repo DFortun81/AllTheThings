@@ -1574,6 +1574,9 @@ _.ObjectNames = {
 	[441312] = "Mad Keeper's Notes",
 	[441314] = "Harpy Screed",
 	[441848] = "Small Burrow",
+	[441946] = "Shrine of the Moon",
+	[441947] = "Shrine of the Beast",
+	[441948] = "Shrine of the Warden",
 	[100000000] = "Archaeologist's Cart",
 	[100000001] = "Unlit Torch",
 }
@@ -2641,6 +2644,9 @@ _.ObjectModels = {
 	[441312] = 198036,
 	[441314] = 201113,
 	[441848] = 189528,
+	[441946] = 201267,
+	[441947] = 201267,
+	[441948] = 201267,
 	[100000001] = 201129,
 }
 
@@ -3446,6 +3452,9 @@ localize(_.ObjectNames, {
 	[441312] = "Notizen des wahnsinnigen Bewahrers",
 	[441314] = "Harpyienschrift",
 	[441848] = "Kleiner Bau",
+	[441946] = "Schrein des Mondes",
+	[441947] = "Schrein des Tieres",
+	[441948] = "Schrein des Wächters",
 	[100000001] = "Nicht angezündete Fackel",
 });
 end
@@ -4207,6 +4216,9 @@ localize(_.ObjectNames, {
 	[441312] = "Notas del vigilante demente",
 	[441314] = "Desvaríos de arpía",
 	[441848] = "Madriguera pequeña",
+	[441946] = "Santuario de la luna",
+	[441947] = "Santuario de la bestia",
+	[441948] = "Santuario del celador",
 	[100000001] = "Antorcha apagada",
 });
 end
@@ -5020,6 +5032,9 @@ localize(_.ObjectNames, {
 	[441312] = "Notes du gardien fou",
 	[441314] = "Diatribe de harpie",
 	[441848] = "Petit terrier",
+	[441946] = "Sanctuaire de la Lune",
+	[441947] = "Sanctuaire de la Bête",
+	[441948] = "Sanctuaire du gardien",
 	[100000001] = "Torche éteinte",
 });
 end
@@ -6154,6 +6169,9 @@ localize(_.ObjectNames, {
 	[441310] = "달빛너울 용의 알",
 	[441312] = "광기 어린 수호자의 기록",
 	[441314] = "하피의 장광설",
+	[441946] = "달의 제단",
+	[441947] = "야수의 제단",
+	[441948] = "감시관의 제단",
 	[100000001] = "불을 붙이지 않은 횃불",
 });
 end
@@ -6820,6 +6838,8 @@ localize(_.ObjectNames, {
 	[441310] = "Ovo de Dragão do Brilho da Lua",
 	[441312] = "Anotações do Guardião Louco",
 	[441314] = "Escrito das Harpias",
+	[441947] = "Altar da Fera",
+	[441948] = "Altar do Guardião",
 	[100000001] = "Tocha Apagada",
 });
 end
@@ -7615,6 +7635,9 @@ localize(_.ObjectNames, {
 	[441128] = "Вибрирующий ящик",
 	[441129] = "Азшарское пророчество",
 	[441848] = "Маленькая яма",
+	[441946] = "Святилище луны",
+	[441947] = "Святилище зверя",
+	[441948] = "Святилище стража",
 	[100000001] = "Незажженный факел",
 });
 end
@@ -8281,6 +8304,8 @@ localize(_.ObjectNames, {
 	[441124] = "梦触龙蛋",
 	[441128] = "震动的箱子",
 	[441848] = "小地洞",
+	[441947] = "野兽神龛",
+	[441948] = "守护神龛",
 	[100000001] = "未点燃的火把",
 });
 end

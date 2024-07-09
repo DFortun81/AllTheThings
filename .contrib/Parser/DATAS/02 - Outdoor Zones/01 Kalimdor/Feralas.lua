@@ -2406,6 +2406,52 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(81924, {	-- Wisdom of the Guardians
+					["qg"] = 221985,	-- Tyrisius
+					["coord"] = { 57.2, 69, FERALAS },
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { THE_HINTERLANDS, AZSHARA },
+					["classes"] = { DRUID },
+					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- Guardian of Feralas
+							["providers"] = {
+								{ "o", 441948 },	-- Shrine of the Warden
+								{ "n", 221935 },	-- Treant Avatar
+								{ "n", 222705 },	-- Blightbark <Guardian of Feralas>
+							},
+							["coord"] = { 58.6, 52.2, FERALAS },
+							["description"] = "Click the shrine to receive a buff called Duty of the Warden.\n\nFight a Gordunni Warlock until it casts Shrink on you. Cast Remove Curse to receive a buff that says 'You have cast out what corrupts the spirit.\n\nFight a Zukkash Wasp until it Poisons you. Cast Abolish Poison to receive a buff that says 'Your duty is fulfilled.'\n\nReturn to the Shrine and then defeat the Treant Avatar that spawns once you approach it.",
+						}),
+						objective(2, {	-- Guardian of the Hinterlands
+							["providers"] = {
+								{ "o", 441946 },	-- Shrine of the Moon
+								{ "n", 221933 },	-- Moonkin Avatar
+								{ "n", 222704 },	-- Sagefeather <Guardian of the Hinterlands>
+							},
+							["coord"] = { 66.2, 53.1, THE_HINTERLANDS },
+							["description"] = "Click on the shrine to see the message 'The calm comes before the storm.'\n\nCast Tranquility followed by Hurricane.\n\nDefeat the avatar and receive its blessing.",
+						}),
+						objective(3, {	-- Guardian of Azshara
+							["providers"] = {
+								{ "o", 441947 },	-- Shrine of the Beast
+								{ "n", 221928 },	-- Hippogryph Avatar
+								{ "n", 222703 },	-- Whisperwing <Guardian of Azshara>
+							},
+							["coord"] = { 34.6, 49.0, AZSHARA },
+							["description"] = "Click on the shrine to see the message 'Hunt the white stag with tooth and claw.'\n\nFight a White Stag with only physical attacks while in feral form and then loo the Sacred Stag Heart.\n\nReturn to the shrine and use the heart. Defeat the avatar and receive its blessing.",
+						}),
+						i(220360, {	-- Rune of Efflorescence
+							["classes"] = { DRUID },
+							["groups"] = {
+								recipe(431468),	-- Engrave Bracers - Efflorescence
+							},
+						}),
+						i(219326),	-- Seed of Renewal
+					},
+				})),
+				-- #endif
 				q(25365, {	-- Woodpaw Investigation
 					["qg"] = 7875,	-- Hadoken Swiftstrider
 					["sourceQuest"] = 25363,	-- War on the Woodpaw
