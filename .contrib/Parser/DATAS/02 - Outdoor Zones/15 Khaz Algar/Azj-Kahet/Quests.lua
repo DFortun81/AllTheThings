@@ -923,7 +923,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 224174 },	-- Eirzay
 				["coord"] = { 63.8, 26.3, NERUBAR_LOWER },	-- bugged, 2 npc in exactly same place
 				["g"] = {
-					i(219429),	-- Pristine Kobyss Spear (QI!)
+					i(219429),	-- Ritual Kobyss Spear (QI!)
 				},
 			}),
 			--

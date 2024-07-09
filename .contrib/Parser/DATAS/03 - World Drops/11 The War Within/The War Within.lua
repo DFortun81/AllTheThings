@@ -101,10 +101,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(220376),	-- Bismuth Lockbox
 	}),
 	filter(REAGENTS, {
-		i(224826),	-- Dawnweave
-		i(224824),	-- Duskweave
+		i(224826),	-- Dawnweave+
+		i(228235),	-- Dawnweave++
+		i(228236),	-- Dawnweave+++
+		i(224824),	-- Duskweave+
+		i(228233),	-- Duskweave++
+		i(228234),	-- Duskweave+++
 		i(221756),	-- Vial of Kaheti Oils
-		i(224828),	-- Weavercloth
+		i(224828),	-- Weavercloth+
+		i(228231),	-- Weavercloth++
+		i(228232),	-- Weavercloth+++
 	}),
 	filter(RECIPES, {
 		i(223140),	-- Formula: Enchant Cloak - Chant of Burrowing Rapidity (RECIPE!)

@@ -8,19 +8,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(225249, {	-- Scritchscratch <Ruby Vendor>
 				["coord"] = { 47.7, 35.9, THE_RINGING_DEEPS },
 				["g"] = {
-					i(224726, {	-- Box of Rocks
+					i(224726, {	-- Waxy Box of Rocks
 						["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
 					}),
-					i(224724, {	-- Bundle of Dust
+					i(224724, {	-- Waxy Bundle of Dust
 						["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
 					}),
-					i(224725, {	-- Bundle of Herbs
+					i(224725, {	-- Waxy Bundle of Herbs
 						["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
 					}),
-					i(224723, {	-- Bundle of Leather
+					i(224723, {	-- Waxy Bundle of Leather
 						["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
 					}),
-					i(224722, {	-- Bundle of Resonant Crystals
+					i(224722, {	-- Waxy Bundle of Resonant Crystals
 						["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
 					}),
 					i(224646, {	-- Coppers (PET!)
@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(224649, {	-- Wax Arsenal
 						["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
 					}),
-					i(224721, {	-- Wax Sealed Box
+					i(224721, {	-- Wax-Sealed Box
 						["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
 					}),
 					i(224760, {	-- Wobbles (PET!)

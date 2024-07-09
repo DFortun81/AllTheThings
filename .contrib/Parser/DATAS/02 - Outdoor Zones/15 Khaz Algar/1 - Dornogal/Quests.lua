@@ -300,7 +300,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["provider"] = { "n", 226511 },	-- High Speaker Brinthe
 					["coord"] = { 46.3, 49.3, DORNOGAL },
 					["g"] = {
-						i(225741),	-- Titan Disk Fragment (QI!)
+						i(225741),	-- Titan Disc Fragment (QI!)
 					},
 				}),
 			})),

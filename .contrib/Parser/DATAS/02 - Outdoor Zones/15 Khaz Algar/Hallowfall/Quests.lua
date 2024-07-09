@@ -574,7 +574,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 215527 },	-- Keyrra Flamestonge
 				["coord"] = { 65.5, 32.2, HALLOWFALL },
 				["g"] = {
-					i(219503),	-- Lightbringer's Amulet
+					i(219503),	-- Honorary Tinderbox
 				},
 			}),
 			-- End Defender of the Flame

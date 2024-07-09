@@ -301,21 +301,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["provider"] = { "n", 215039 },	-- Rooktender Lufsela
 					["coord"] = { 37.4, 82.2, DORNOGAL },
 				}),
-				q(79124, {	-- Totem of the Southern Storm
+				q(79124, {	-- Conduit of the Southern Storm
 					["sourceQuests"] = { 81914 },	-- Dhar Oztan
 					["provider"] = { "n", 214995 },	-- Olbarig
 					["coord"] = { 28.5, 61.0, ISLE_OF_DORN },
 					["g"] = {
-						i(218455),	-- Totem of the Southern Storm (QI!)
+						i(218455),	-- Conduit of the Southern Storm (QI!)
 					},
 				}),
 				q(79475, {	-- Charging Up That Hill
-					["sourceQuests"] = { 79124 },	-- Totem of the Southern Storm
+					["sourceQuests"] = { 79124 },	-- Conduit of the Southern Storm
 					["provider"] = { "n", 214995 },	-- Olbarig
 					["coord"] = { 27.6, 60.5, ISLE_OF_DORN },
 				}),
 				q(79476, {	-- Heeding the Call
-					["sourceQuests"] = { 79124 },	-- Totem of the Southern Storm
+					["sourceQuests"] = { 79124 },	-- Conduit of the Southern Storm
 					["provider"] = { "n", 214995 },	-- Olbarig
 					["coord"] = { 27.6, 60.5, ISLE_OF_DORN },
 				}),
