@@ -100,6 +100,37 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(80453, {	-- Best Laid Plans
+					["providers"] = {
+						{ "n",   6707 },	-- Fahrad <Grand Master Rogue>
+						{ "i", 217609 },	-- Talisman of Kazdor
+					},
+					["sourceQuest"] = 80411,	-- The Talisman of Kazdor
+					["coord"] = { 84.4, 80.2, ALTERAC_MOUNTAINS },
+					["timeline"] = { "added 1.15.2" },
+					["classes"] = { ROGUE },
+					["lvl"] = 45,
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(80455, {	-- Biding Our Time
+					["provider"] = { "o", 410369 },	-- Dead Drop
+					["sourceQuest"] = 80454,	-- One Last Drop
+					["coord"] = { 47.1, 71.1, SILVERPINE_FOREST },
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { ALTERAC_MOUNTAINS },
+					["classes"] = { ROGUE },
+					["lvl"] = 45,
+					["groups"] = {
+						i(217736, {	-- Rune of the Coterie
+							["classes"] = { ROGUE },
+							["groups"] = {
+								recipe(432295),	-- Engrave Helm - Honor Among Thieves
+							},
+						}),
+						i(219343),	-- Filcher's Cowl
+					},
+				})),
+				-- #endif
 				q(506, {	-- Blackmoore's Legacy
 					["qg"] = 2316,	-- Gol'dir
 					["sourceQuest"] = 503,	-- Gol'dir
@@ -288,6 +319,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(80526, {	-- Fool Me Twice
+					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
+					["coord"] = { 84.4, 80.2, ALTERAC_MOUNTAINS },
+					["timeline"] = { "added 1.15.2" },
+					["classes"] = { ROGUE },
+					["lvl"] = 45,
+				})),
+				-- #endif
 				q(510, {	-- Foreboding Plans
 					["providers"] = {
 						{ "o", 1738 },	-- Syndicate Documents
@@ -417,6 +457,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(80454, {	-- One Last Drop
+					["providers"] = {
+						{ "n",   6777 },	-- Zan Shivsproket <Speciality Engineer>
+						{ "i", 217737 },	-- Modified Talisman
+					},
+					["sourceQuest"] = 80453,	-- Best Laid Plans
+					["coord"] = { 86, 80, ALTERAC_MOUNTAINS },
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { SILVERPINE_FOREST },
+					["classes"] = { ROGUE },
+					["lvl"] = 45,
+				})),
+				-- #endif
 				applyclassicphase(PHASE_FOUR, q(8234, {	-- Sealed Azure Bag
 					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
 					["sourceQuest"] = 8233,	-- A Simple Request
@@ -645,6 +699,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(80411, {	-- The Talisman of Kazdor
+					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
+					["sourceQuest"] = 80526,	-- Fool Me Twice
+					["coord"] = { 84.4, 80.2, ALTERAC_MOUNTAINS },
+					["description"] = "You'll need to find 2 Vile Concoctions and the Hollow Emblem.\n\n- The Hollow Emblem is on the second from the left upper hut on the right wall if you're facing the pyramid. You can climb the hill to the right of the pyramid to get there.\n\n- 1 Vile Concoction is inside the hut closest to the pyramid and the other is inside a hut on the corner of the left path after the first fork of the dungeon(that left path that no group ever takes).\n\n- Use one Vile Concoction on the cauldron of Witch Doctor Zum'rah (it doesn't break stealth) to kill him and loot the satchel beside him to loot a trinket. Equip the trinket to see which grave contains the Offering of Blood.\n\n- Use the other Vile Concoction on the cauldron of Antu'sul and loot the Offering of Bone beside him.\n\n- Combine both offerings, then use the Hollow Emblem to make the Emblem of Blood Magic Emblem of Blood Magic. This is the key to open the chest on the top of the pyramid to finally get the Talisman for the quest.",
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { ZULFARRAK },
+					["classes"] = { ROGUE },
+					["lvl"] = 45,
+					["groups"] = {
+						objective(1, {	-- 0/1 Talisman of Kazdor
+							["providers"] = {
+								{ "i", 217609 },	-- Talisman of Kazdor
+								{ "o", 433596 },	-- Spellbound War Chest
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(535, {	-- Valik
 					["qg"] = 2333,	-- Henchman Valik
 					["altQuests"] = { 533 },	-- Infiltration (Can only be completed while on this quest)

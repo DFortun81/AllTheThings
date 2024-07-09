@@ -3136,6 +3136,11 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					recipe(403920),	-- Engrave Chest - Soul Siphon
 				},
 			}),
+			applyclassicphase(SOD_PHASE_THREE, i(221978, {	-- Explorer's Soul
+				["description"] = "Casting Drain Soul on any mob will reward you with this.",
+				["spellID"] = 445459,	-- Explorer Imp
+				["f"] = RECIPE,
+			})),
 			i(205020, {	-- Pure Soul Shard
 				["description"] = "Casting Drain Soul on any critter will reward you with this.",
 			}),
