@@ -1658,6 +1658,23 @@ profession(TAILORING, {
 					["name"] = "Black Mageweave Leggings",
 					["recipeID"] = 12049
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["timeline"] = { "added 1.15.1" },
+					["name"] = "Black Mageweave Leggings",
+					["recipeID"] = 439088
+				}),
+				{
+					["timeline"] = { "removed 1.15.1" },
+					["name"] = "Black Mageweave Leggings",
+					["recipeID"] = 12049
+				},
+				-- #else
+				{
+					["name"] = "Black Mageweave Leggings",
+					["recipeID"] = 12049
+				},
+				-- #endif
 				applyclassicphase(PHASE_FOUR, {
 					["name"] = "Bloodvine Leggings",
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_7 },

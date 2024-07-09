@@ -2967,7 +2967,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		category(240, {	-- Pants
 			i(7046),	-- Azure Silk Pants
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217247)),	-- Black Mageweave Leggings
+			i(9999, {	-- Black Mageweave Leggings
+				["timeline"] = { "removed 1.15.1" },
+			}),
+			-- #else
 			i(9999),	-- Black Mageweave Leggings
+			-- #endif
 			applyclassicphase(PHASE_FOUR, i(19683, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Leggings
 			i(14104),	-- Brightcloth Pants
 			i(4343),	-- Brown Linen Pants
