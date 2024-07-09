@@ -1125,6 +1125,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Shadoweave Mask",
+					["timeline"] = { REMOVED_4_0_3, ADDED_7_3_0 },
 					["recipeID"] = 12086
 				},
 				{
@@ -6261,7 +6262,7 @@ itemrecipe("Pattern: Tuxedo Shirt", 10321, 12085);
 itemrecipe("Pattern: Tuxedo Pants", 10323, 12089);
 itemrecipe("Pattern: White Wedding Dress", 10325, 12091);
 itemrecipe("Pattern: Tuxedo Jacket", 10326, 12093);
-itemrecipe("Pattern: Shadoweave Mask", 10463, 12086, REMOVED_4_0_3);
+itemrecipe("Pattern: Shadoweave Mask", 10463, 12086);
 itemrecipe("Pattern: Black Swashbuckler's Shirt", 10728, 3873);
 itemrecipe("Pattern: Frostweave Tunic", 14466, 18403);
 itemrecipe("Pattern: Frostweave Robe", 14467, 18404);
