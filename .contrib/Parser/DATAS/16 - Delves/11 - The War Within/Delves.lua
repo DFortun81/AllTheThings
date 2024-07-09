@@ -718,9 +718,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(222916),	-- Player Experience (Tier 1-2)
 			i(222917),	-- Player Experience (Tier 3)
 			i(222927),	-- Weathered Coin Coffer
-			i(228071),	-- Companion Experience (Uncommon)
-			i(228072),	-- Companion Experience (Rare)
-			i(228073),	-- Companion Experience (Epic)
+			i(228071),	-- Chunk of Companion Experience (Uncommon)
+			i(228072),	-- Chunk of Companion Experience (Rare)
+			i(228073),	-- Chunk of Companion Experience (Epic)
 			i(223287),	-- Atomized Salien Slime
 			i(218121),	-- Candle Light
 			i(226132),	-- Deployable Recovery Keg

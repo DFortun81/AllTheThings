@@ -14,7 +14,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 8 --
 			}, {	-- RENOWN 9 --
 			}, {	-- RENOWN 10 --
-				i(218349),	-- Tabard of The Severed Threads
+				i(218349),	-- Tabard of the Severed Threads
 			}, {	-- RENOWN 11 --
 			}, {	-- RENOWN 12 --
 			}, {	-- RENOWN 13 --

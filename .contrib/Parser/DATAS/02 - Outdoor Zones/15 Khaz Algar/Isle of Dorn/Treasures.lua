@@ -69,11 +69,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 37.3, 52.5, ISLE_OF_DORN },
 				["questID"] = 82038,
 			}),
-			o(446473, {	-- Infused Cinderbrew
+			o(446473, {	-- Infused Fire-Honey Milk
 				["coord"] = { 56.2, 60.9, ISLE_OF_DORN },
 				["questID"] = 82714,
 				["g"] = {
-					i(224263),	-- Infused Cinderbrew
+					i(224263),	-- Infused Fire-Honey Milk
 				},
 			}),
 			o(444773, {	-- Jade Pearl

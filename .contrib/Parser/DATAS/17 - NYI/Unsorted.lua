@@ -8,23 +8,6 @@ root(ROOTS.Unsorted, {
 	i(183835),	-- Crate of Zandalari Archaeology Fragments
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-			i(212311),	-- Phial of Enhanced Ambidexterity
-			i(212312),	-- Phial of Enhanced Ambidexterity
-			i(212313),	-- Phial of Enhanced Ambidexterity
-			i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
-			i(220157),	-- Empowered Tinderbox
-			i(220158),	-- Darkened Tinderbox
-			i(222680),	-- Darkmoon Deck: Ascension
-			i(222693),	-- Hearty Food
-			i(222834),	-- Pioneer's Cloth Cord
-			i(222835),	-- Pioneer's Cloth Cloak
-			i(222836),	-- Pioneer's Cloth Hood
-			i(224018),	-- Recipe: Vicious Flask of Classical Spirits
-			i(224263),	-- Infused Fire-Honey Milk
-			i(228071),	-- Chunk of Companion Experience
-			i(228072),	-- Chunk of Companion Experience
-			i(228073),	-- Chunk of Companion Experience
-			i(228413),	-- Lampyridae Lure
 			i(228507),	-- Swarmite Eggsac
 			i(228509),	-- Diaphanous Webbing
 			i(228510),	-- Ripped Swarmite Wing
@@ -494,7 +477,7 @@ root(ROOTS.Unsorted, {
 				i(222690),	-- Chopped Mycobloom
 				i(222691),	-- Portioned Steak
 				i(222692),	-- Spiced Meat Stock
-				i(222693),	-- Hearty Meals
+				i(222693),	-- Hearty Food
 				i(222694),	-- Fresh Fillet
 				i(222695),	-- Twined Herbs
 				i(222696),	-- Crunchy Peppers
@@ -1985,8 +1968,8 @@ root(ROOTS.Unsorted, {
 
 
 				i(219942),	-- 11.0 Stalwart's Sandals
-				i(220157),	-- Darkened Tinderbox
-				i(220158),	-- Empowered Tinderbox
+				i(220157),	-- Empowered Tinderbox
+				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
 				i(225638),	-- Spelunker's Waning Candle
 				i(225648),	-- Candle Confidant
@@ -2926,7 +2909,7 @@ root(ROOTS.Unsorted, {
 				i(228454),	-- Collector's Commemorative Proscenium Playbill
 				i(228455),	-- Bolt of Bouldercloth
 				i(228456),	-- Bouldercloth
-				i(228457),	-- Lightspark Sky Academy Gradebook
+				i(228457),	-- Lightspark Grade Book
 				i(228458),	-- Bouldercloth Bag
 			}),
 			n(QUEST_ITEMS, {
@@ -2966,7 +2949,7 @@ root(ROOTS.Unsorted, {
 				i(212331),	-- The Unusual Bug
 				i(212333),	-- Expedition Tinderbox
 				i(212339),	-- A Small Bag of Seeds
-				i(212349),	-- Sizzling Spring Water
+				i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
 				i(212344),	-- Chest Key
 				i(212520),	-- Shadow-Tainted Tinderbox
 				i(212755),	-- Remnant Satchel
@@ -3192,7 +3175,7 @@ root(ROOTS.Unsorted, {
 				i(225659),	-- Arathi Book Collection \\ Arathor Book Collection
 				i(226191),	-- Web Pet Leash
 				i(228412),	-- Scouting Map: The Skies of the Dragon Isles
-				i(228413),	-- Lampyridae Caller
+				i(228413),	-- Lampyridae Lure
 			}),
 			race(EARTHEN_ALLIANCE, {
 				-- My Guess?? Earthen Starting Gear?
@@ -3562,7 +3545,6 @@ root(ROOTS.Unsorted, {
 				i(228225),	-- do not use
 			}),
 			--------
-			i(218349),	-- Tabard of the Severed Threads
 			i(228457),	-- Lightspark Grade Book
 			i(228481),	-- Tiny Fathomclam
 			i(228482),	-- Cracked Iridescent Pearl

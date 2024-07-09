@@ -1206,7 +1206,7 @@ i(0, 430596);		-- Grotesque Vial
 i(0, 430345);		-- Meticulous Experimentation
 i(0, 430617);		-- Phial of Bountiful Seasons
 i(0, 430614);		-- Phial of Concentrated Ingenuity
-i(0, 430616);		-- Phial of Enhanced Ambidextry
+i(0, 430616);		-- Phial of Enhanced Ambidexterity
 i(0, 430615);		-- Phial of Truesight
 i(0, 430600);		-- Potion of the Reborn Cheetah
 i(0, 430597);		-- Potion of Unwavering Focus

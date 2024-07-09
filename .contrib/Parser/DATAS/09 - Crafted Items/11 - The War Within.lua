@@ -39,7 +39,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					r(430596),	-- Grotesque Vial
 					r(430617),	-- Phial of Bountiful Seasons
 					r(430614),	-- Phial of Concentrated Ingenuity
-					r(430616),	-- Phial of Enhanced Ambidextry
+					r(430616),	-- Phial of Enhanced Ambidexterity
 					r(430615),	-- Phial of Truesight
 					r(430600),	-- Potion of the Reborn Cheetah
 					r(430597),	-- Potion of Unwavering Focus
@@ -176,9 +176,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212305),	-- Phial of Concentrated Ingenuity+
 			i(212306),	-- Phial of Concentrated Ingenuity++
 			i(212307),	-- Phial of Concentrated Ingenuity+++
-			i(212311),	-- Phial of Enhanced Ambidextry+
-			i(212312),	-- Phial of Enhanced Ambidextry++
-			i(212313),	-- Phial of Enhanced Ambidextry+++
+			i(212311),	-- Phial of Enhanced Ambidexterity+
+			i(212312),	-- Phial of Enhanced Ambidexterity++
+			i(212313),	-- Phial of Enhanced Ambidexterity+++
 			i(212308),	-- Phial of Truesight+
 			i(212309),	-- Phial of Truesight++
 			i(212310),	-- Phial of Truesight+++
@@ -237,7 +237,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Phials
 			FirstCraft(81121, 430617);	-- Phial of Bountiful Seasons
 			FirstCraft(81118, 430614);	-- Phial of Concentrated Ingenuity
-			FirstCraft(81120, 430616);	-- Phial of Enhanced Ambidextry
+			FirstCraft(81120, 430616);	-- Phial of Enhanced Ambidexterity
 			FirstCraft(81119, 430615);	-- Phial of Truesight
 			-- Transmutations
 			FirstCraft(81145, 449938);	-- Gleaming Chaos
@@ -1201,7 +1201,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		filter(TRINKET_F, {
 			i(219933),	-- Algari Competitor's Emblem
 			i(219932),	-- Algari Competitor's Insignia of Alacrity
-			i(222680),	-- Darkmoon Deck: Ascend
+			i(222680),	-- Darkmoon Deck: Ascension
 			i(219672),	-- Darkmoon Deck: Radiance
 			i(222653),	-- Darkmoon Deck: Symbiosis
 			i(222671),	-- Darkmoon Deck: Vivacity
@@ -1638,10 +1638,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222833),	-- Pioneer's Cloth Cuffs
 			i(222837),	-- Pioneer's Cloth Robe
 			i(222832),	-- Pioneer's Cloth Slippers
-			i(222835),	-- Pioneer's Perfected Cloak
-			i(222834),	-- Pioneer's Perfected Cord
+			i(222835),	-- Pioneer's Cloth Cloak
+			i(222834),	-- Pioneer's Cloth Cord
 			i(222840),	-- Pioneer's Perfected Gloves
-			i(222836),	-- Pioneer's Perfected Hood
+			i(222836),	-- Pioneer's Cloth Hood
 			i(222838),	-- Pioneer's Perfected Leggings
 			i(222839),	-- Pioneer's Perfected Mantle
 			i(222810),	-- Slippers of the Woven Dusk
