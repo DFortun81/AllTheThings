@@ -3565,6 +3565,10 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 			-- 11.0.0.55288
 			ach(40839),	-- Delve PTR Cheat
+
+			-- 11.0.2.55399
+			ach(40857),	-- Warbands: Bank Quest Unlock
+			ach(40861),	-- Mislaid Curiosities looted
 		})),
 	}),
 });
