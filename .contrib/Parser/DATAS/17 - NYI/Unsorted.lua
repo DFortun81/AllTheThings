@@ -3502,6 +3502,24 @@ root(ROOTS.Unsorted, {
 				i(227710),	-- Tome of Polymorph: Mosswool
 				i(228225),	-- do not use
 			}),
+			--------
+			i(218349),	-- Tabard of the Severed Threads
+			i(228457),	-- Lightspark Grade Book
+			i(228481),	-- Tiny Fathomclam
+			i(228482),	-- Cracked Iridescent Pearl
+			i(228483),	-- Lovingly Carved Ramolith
+			i(228485),	-- Carver's Spare Whittling Knife
+			i(228487),	-- Freshly Fallen Sticks
+			i(228488),	-- Small Glass Vase
+			i(228489),	-- Fashionable Flask
+			i(228490),	-- Fresh Grazing Rocks
+			i(228491),	-- Ramolith Bedding Material
+			i(228492),	-- Spicy Rubies
+			i(228493),	-- Sour Topaz Bites
+			i(228494),	-- Crunchy Rock Candy
+			i(228495),	-- Well-Used Potter's Wheel
+			i(228496),	-- Cracked Lantern
+			i(228497),	-- Rusted Airship Cog
 			------------------- THESE ARE ALREADY SORTED (IN ENSEMBLES) -----------------
 			i(218741),	-- Mossy Cartographer's Doublet
 			i(218742),	-- Deep Cartographer's Doublet

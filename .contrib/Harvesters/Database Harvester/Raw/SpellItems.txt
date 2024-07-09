@@ -12265,3 +12265,8 @@
 7446@@@Oathsworn's Tenacity |A:Professions-ChatIcon-Quality-Tier1:20:20|a
 7447@@@Oathsworn's Tenacity |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 7448@@@Oathsworn's Tenacity |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+11.0.0.55419
+7214@@@+$k1 Primary Stat and +0.15% Critical Effect per unique Algari gem color
+7215@@@+$k1 Primary Stat and +0.15% Critical Effect per unique Algari gem color
+7216@@@+$k1 Primary Stat and +0.15% Critical Effect per unique Algari gem color
+7587@@@Thunderstrike Ward
