@@ -90,17 +90,232 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
 		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+			i(172176),	-- Abomination Service Stub
+			i(183137),	-- Acolyte's Corpse
+			i(181463),	-- Alchemist's Crate of the Anonymous Buyer
+			i(175082),	-- Amulet of the Realms
+			i(174062),	-- Ancient Anima Staff
+			i(174940),	-- Ancient Heartwood
+			i(183722),	-- Ancient Insignia
+			i(172024),	-- Ancient Maldracite Weapon
+			i(181365),	-- Anh'Qiraj Statue
+			i(174058),	-- Anima Reserve
+			i(175972),	-- Anima-Infused Venom
+			i(180447),	-- Animacone
+			i(181683),	-- Anointed Talisman
+			i(178031),	-- Anointing Chime
+			i(182473),	-- Archivam Tome
+			i(182479),	-- Ashfallen Key
+			i(173013),	-- Bag of Faerie Dust
+			i(180439),	-- Bagged Frog
+			i(178493),	-- Baine Bloodhoof
+			i(174385),	-- Battle Supplies
 			i(175265),	-- Belt of Prime Command
+			i(178463),	-- Bestial Epigraph
+			i(182249),	-- Bindings of Fleshcrafting
+			i(172889),	-- Blackthorn Antidote
 			i(181139),	-- Blueprint: Charm of Alacrity
 			i(181241),	-- Blueprint: Charm of Buff 7
+			i(173700),	-- Bonebinder Zal's Key
+			i(179317),	-- Bonemetal
 			i(182654),	-- Bonescript Dispatches
+			i(173380),	-- Book of the Unspeakable
+			i(172900),	-- Bounty Notes
+			i(174854),	-- Brimming Animus Core
+			i(174023),	-- Calibrated Mawstone
+			i(174024),	-- Calibrated Mawstone
+			i(173965),	-- Calibrated Mawstone
+			i(172456),	-- Chipped Fel Core
+			i(171961),	-- Cleansing Chime
+			i(172969),	-- Codex of Impossibilities
+			i(181350),	-- Collaborator's Robes
+			i(173364),	-- Collect Dummy
+			i(175977),	-- Command Lattice Mir
+			i(173004),	-- Command Lattice Omu
+			i(175978),	-- Command Lattice Pio
+			i(136851),	-- Commander Domitille's Helm
+			i(180785),	-- Condensed Essence
+			i(178142),	-- Condensed Stygia
+			i(178875),	-- Corpsehound Whistle
+			i(175839),	-- Corrupted Anima
+			i(167209),	-- Crude Map
+			i(173267),	-- Crystalized Gormgris
+			i(180446),	-- Curiously Corrosive Concoction
+			i(180607),	-- Cypher of Blinding
+			i(180626),	-- Cypher of Melody
+			i(175012),	-- Dancing Cricket
+			i(171967),	-- Dark Cowl
+			i(177818),	-- Dark Mojo
+			i(174357),	-- Death Lotus Petal
+			i(172970),	-- Debris Searched
+			i(172967),	-- Deciphering Lens
+			i(170585),	-- Depleted Anima Core
 			i(175253),	-- Desiccating Formula
+			i(171990),	-- Dormant Maldracite
+			i(174492),	-- Dripping Fangs
+			i(174923),	-- Duskmire Elixir
+			i(177894),	-- Earthen Jar
+			i(181699),	-- Echthra's Notes
+			i(175411),	-- Effused Powder
+			i(173532),	-- Elwynn Forest Scroll
+			i(180809),	-- Elysian Horn
 			i(174075),	-- Emeni's Magnificent Skin
+			i(168803),	-- Emergency Supplies
+			i(173149),	-- Empty Anima Crystal
+			i(182363),	-- Enchanted Trickster Dust
+			i(181496),	-- Endmire Blossom
+			i(175793),	-- Enlarged Gluegland
+			i(180898),	-- Ephemeral Draught
+			i(180471),	-- Essence Dust
+			i(174991),	-- Everlife Root Fiber
+			i(177950),	-- Falk's Note
+			i(174275),	-- Fallen Purian
+			i(172454),	-- Fel Merchandise
+			i(172460),	-- Fel Poultice
+			i(172513),	-- Fel Trigger
+			i(174775),	-- Fix-It-Stick
+			i(176814),	-- Fleshcrafter's Maldracite
+			i(171106),	-- Gathered Necrotic Shards
+			i(174331),	-- Goliath Gauntlet
+			i(183961),	-- Gorm "Juice"
+			i(172951),	-- Gormherd Branch
+			i(173385),	-- Greenflame Candle
+			i(181861),	-- Ground Twilight Bark
+			i(174877),	-- Grubby's Silk
+			i(172901),	-- Hakone's Signet
+			i(172455),	-- Hardened Fel Shards
+			i(175132),	-- Havoc Chains
+			i(174341),	-- Heart of the Fallen Tree
+			i(179929),	-- Heart of the Fallen Tree
+			i(172035),	-- Heart of Tirna Rowen
+			i(174658),	-- Imprisoned Soul
+			i(175974),	-- Intact Femur
+			i(171373),	-- Introspection
+			i(173693),	-- Jar of Maggots
+			i(178567),	-- Kein's Runeblade
+			i(175478),	-- Korrim's Journal
+			i(173923),	-- Kyrian Boots
+			i(173922),	-- Kyrian Chestplate
+			i(173924),	-- Kyrian Helmet
+			i(180127),	-- Kyrian Javelin
+			i(173925),	-- Kyrian Pauldrons
+			i(173708),	-- Kyrian Shield
+			i(176321),	-- Lady Moonberry's Hairbrush
+			i(172457),	-- Legion Orders
+			i(170551),	-- Light of Bastion
 			i(183074),	-- Lost Animacone
+			i(172205),	-- Maldracite Crystal
+			i(180480),	-- Maldraxxi Throwing Axe
+			i(178214),	-- Mantle of the Primus
+			i(174643),	-- Marileth's Journal - Cover
+			i(174948),	-- Marileth's Mystery Potion
+			i(173728),	-- Meaty Exopods
+			i(180437),	-- Medallion of Dominion
 			i(174750),	-- Memetic Anima
+			i(172220),	-- Mirror Fragment
+			i(180800),	-- Misshapen Cypher of Relocation
+			i(180262),	-- Missing Eye
+			i(173899),	-- Mysterious Hooks
+			i(178729),	-- Necromancy Focus
+			i(171146),	-- Necrotic Deathward
+			i(170552),	-- Necrotic Fetish
+			i(171105),	-- Necrotic Shard
+			i(174778),	-- Neonate Bonetooth
+			i(173694),	-- Night Market Template
+			i(172464),	-- Nimleaf
+			i(171969),	-- Nondescript Robe
+			i(177834),	-- Obliterated Soul Shard
+			i(175797),	-- Ossein Resin
+			i(175276),	-- Phylactery of Kel'Thuzad
+			i(171368),	-- Pitch-Perfect Alloy
+			i(177961),	-- Plague Sample
+			i(176056),	-- Plague Samples
+			i(174801),	-- Plain Lockbox
+			i(173952),	-- Pomagrave
+			i(173896),	-- Portable Spy Kit
+			i(172453),	-- Prisoner Transfer Orders
+			i(178467),	-- Profane Shadestone
+			i(180828),	-- Promissory Note
+			i(173973),	-- Purian
+			i(177963),	-- Purified Armor Fragments
+			i(183733),	-- Purified Nectar
+			i(175973),	-- Ravager Talon
 			i(174073),	-- Regenerative Frame
+			i(179313),	-- Registrar's Records
+			i(174332),	-- Replenished Anima Container
+			i(180443),	-- Researcher's Notes
+			i(171963),	-- Resilient Spark Slot
+			i(175134),	-- Resistance Boots
+			i(175794),	-- Ring of Keys
 			i(169937),	-- Ritual Components
+			i(174939),	-- Ritual Supplies
+			i(173266),	-- Ritual Vestments
+			i(179984),	-- Rituals and Rites of the Eternal Army
+			i(173392),	-- Runed Dagger
+			i(172968),	-- Runed Latchpick
+			i(178141),	-- Runic Codex
+			i(173897),	-- Runic Fastener
+			i(174343),	-- Scroll of Binding
+			i(173898),	-- Sealed Scrolls
+			i(176215),	-- Shard of the Countess
+			i(180440),	-- Sigil of Discipline
+			i(180441),	-- Sigil of Sacrifice
+			i(180295),	-- Sigil of Shadow
+			i(173047),	-- Silkstrider Larvae
+			i(173045),	-- Silkstrider Silk
+			i(171369),	-- Singing Wood
+			i(173894),	-- Sludge-Camouflaged Pants
+			i(173893),	-- Sludge-Covered Belt
+			i(181460),	-- Soul Mirror
+			i(182580),	-- Soul Mirror
+			i(181701),	-- Soul Mirror
+			i(181472),	-- Soul Mirror
+			i(181782),	-- Soul Mirror
+			i(182623),	-- Soul Mirror
+			i(182965),	-- Soul Mirror
+			i(181795),	-- Soul Mirror
+			i(182467),	-- Soul Mirror
+			i(182969),	-- Soul Mirror
+			i(175131),	-- Soulmending Patches
+			i(174329),	-- Soulshatter Arrow
+			i(173901),	-- Specialized Gutting Knife
+			i(180297),	-- Spellbound Notes
+			i(173148),	-- Steel Cleaver
+			i(178515),	-- Stitched Surprise Cake
+			i(172226),	-- Stolen Anima
+			i(176808),	-- Stringy Growth
+			i(180271),	-- Stringy Spore
+			i(175976),	-- Supervisor's Plans
+			i(176813),	-- Surgeon's Maldracite
+			i(181351),	-- Tattered Cloth
+			i(181352),	-- Tattered Leather
+			i(171104),	-- The Accuser's Sinstone
+			i(183874),	-- The Darkwing Flight Soars With Us!
+			i(183875),	-- The Tithes are a Lie!
+			i(177947),	-- Theotar's Lost Parasol
+			i(173270),	-- Toc's Bag of Parts
+			i(171367),	-- Tonal Mallet
+			i(171440),	-- Torghast Door Key
 			i(174489),	-- Treated Animacone
+			i(177949),	-- Tubbins's Lost Teapot
+			i(174844),	-- Tuft of Prowler Fur
+			i(178685),	-- Twisted Mawsteel
+			i(171991),	-- Unadorned Weapon
+			i(175971),	-- Unexploded Blight Bomb
+			i(180272),	-- Upper Reaches Key
+			i(173900),	-- Vanishing Ink
+			i(176085),	-- Venthyr Clothing
+			i(173157),	-- Vial of Caustic Goo
+			i(177845),	-- Vial of Plague
+			i(174629),	-- Viridian Stone
+			i(173313),	-- Vopath's Key
+			i(173271),	-- Vopath's Stolen Items
+			i(173357),	-- Voracious Maggot
+			i(177948),	-- Vulca's Lost Toolkit
+			i(168811),	-- Wand of Absorption
+			i(177895),	-- Warm Earthen Jar
+			i(178466),	-- Wicked Spirit Shard
+			i(172458),	-- Worn Legion Chit
 		})),
 
 		-- 9.0.2

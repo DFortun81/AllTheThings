@@ -159,7 +159,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			o(355286, {	-- Memorial Offerings
-				["description"] = "Purchase |cFFFFFFFFMemorial Wine|r from Kobri, a steward at Hero's Rest.  Place the wine in the Drink Tray at |cFFFFFFFF56.8, 19.0|r to get the key to the chest.",
+				["description"] = "Purchase |cFFFFFFFFMemorial Wine|r from Kobri, a steward at Hero's Rest.  Place the wine in the Drink Tray at |cFFFFFFFF56.8, 19.0|r to get the key from Honor Steward to the Memorial Offerings chest.",
 				["coord"] = { 56.5, 17.2, BASTION },
 				["questID"] = 61150,
 				["cost"] = {
@@ -183,7 +183,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			o_repeated({	-- Silver Strongbox
 				["sourceQuests"] = { 62733 },	-- The Sweetest Tribute
 				["cost"] = {
-					{ "i", 178915, 1 },	-- 1x Ripe Purian
 					{ "i", 180049, 1 },	-- 1x Steward's Silver Key
 				},
 				["g"] = sharedData({
@@ -255,7 +254,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["isDaily"] = true,
 				["crs"] = { 170284 },	-- Elios
 				["cost"] = {
-					{ "i", 178915, 1 },	-- 1x Ripe Purian
 					{ "i", 180285, 1 },	-- 1x Steward's Golden Key
 				},
 			}),

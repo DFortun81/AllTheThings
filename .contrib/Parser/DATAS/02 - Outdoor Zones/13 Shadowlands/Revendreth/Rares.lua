@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["description"] = "Collect 4 |cFF0070ddMortegore Scrolls|r from nearby Maldraxxi and use them to activate |cFFFFFFFFMortegore Sigils|r to summon the rare.",
 				["coord"] = { 75.8, 61.4, REVENDRETH },
 				["questID"] = 58633,
-				["cost"] = { { "i", 174378, 4 } },	-- 4 Mortegore Scroll
+				["cost"] = { { "i", 174378, 4 } },	-- 4x Mortegore Scroll
 				["g"] = {
 					i(180501),	-- Skull-Formed Headcage
 				},

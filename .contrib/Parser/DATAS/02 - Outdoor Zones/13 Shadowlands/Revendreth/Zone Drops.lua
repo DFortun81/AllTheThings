@@ -94,6 +94,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 				},
 			}),
+			i(174378, {	-- Mortegore Scroll
+				["crs"] = {
+					161248,	-- Big Shiny
+					161294,	-- Carved Sniffer
+					161246,	-- Heftor
+					173013,	-- Lichsworn Necromancer
+					161180,	-- Maldraxxi Defector
+					169876,	-- Retained Lookout
+					161179,	-- Retained Supplier
+					161178,	-- Retained Trafficker
+					161257,	-- Stacka
+				},
+			}),
 			i(183430, {	-- Researcher's Right Slipper
 				["classes"] = { MAGE, PRIEST, WARLOCK },
 				["g"] = {
