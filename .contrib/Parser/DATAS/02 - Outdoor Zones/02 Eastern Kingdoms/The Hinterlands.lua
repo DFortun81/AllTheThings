@@ -2220,6 +2220,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 61.2, 68.4, THE_HINTERLANDS },
 					},
 				}),
+				-- #if BEFORE 4.0.3
+				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+					["timeline"] = { REMOVED_4_0_1 },
+				}),
+				-- #endif
 				i(9259, {	-- Troll Tribal Necklace
 					-- #if BEFORE 4.0.3
 					["description"] = "Can drop from any troll in The Hinterlands.",
@@ -2229,11 +2235,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(8153, {	-- Wildvine
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
-				-- #if BEFORE 4.0.3
-				i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
-					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
-					["timeline"] = { REMOVED_4_0_1 },
-				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, i(221261, {	-- Wildwhisper Draught
+					["description"] = "Dropped by any elite troll at Jintha'Alor.\n\nRequired for 'The Wild Gods'. Bring this to Razorfen Downs and use it after defeating the Coldbringer (the last boss).",
+					["timeline"] = { "added 1.15.2" },
+				})),
 				-- #endif
 			}),
 		},

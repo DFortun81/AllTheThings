@@ -2115,6 +2115,85 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, q(82043, {	-- The Wild Gods (1/2)
+					["qg"] = 222408,	-- Shadowtooth Emissary
+					["coord"] = { 51.4, 82, FELWOOD },
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { THE_HINTERLANDS, RAZORFEN_DOWNS },
+					["cost"] = {{ "i", 221261, 1 }},	-- Wildwhisper Draught
+					["lvl"] = 40,
+					["groups"] = {
+						i(221418),	-- Agamaggan's Roar
+					},
+				})),
+				applyclassicphase(SOD_PHASE_THREE, q(82044, {	-- The Wild Gods (2/2)
+					["qg"] = 222522,	-- Spirit of Agamaggan
+					["sourceQuest"] = 82043,	-- The Wild Gods (1/2)
+					["timeline"] = { "added 1.15.2" },
+					["maps"] = { RAZORFEN_DOWNS, ZULFARRAK, MARAUDON, BLACKROCK_DEPTHS },
+					["lvl"] = 40,
+					["groups"] = {
+						objective(1, {	-- 0/3 Wild Offering
+							["provider"] = { "i", 221262 },	-- Wild Offering
+							["description"] = "Zul'Farrak - Clear any 3 bosses to spawn Delirious Ancient\nMaraudon - Kill Princess Theradras to spawn Delirious Ancient\nBlackrock Depths - Kill all three boss encounters - High Interrogator Gerstahn, Houndmaster Grebmar & High Justice Grimstone - to spawn Delirious Ancient\n\nUse Agamaggan's Roar Agamaggan's Roar on any of the ghostly spawns to summon dungeon-respective Delirious Ancient.",
+						}),
+						i(222962, {	-- Hyjal's Wisdom
+							recipe(429247, {	-- Engrave Helm - Improved Sanctuary
+								["classes"] = { PALADIN },
+							}),
+							i(221488, {	-- Resolute Epiphany
+								["classes"] = { PRIEST },
+								["groups"] = {
+									recipe(431650),	-- Engrave Helm - Divine Aegis
+								},
+							}),
+							i(221514, {	-- Rune of Firepower
+								["classes"] = { HUNTER },
+								["groups"] = {
+									recipe(416085),	-- Engrave Helm - Lock and Load
+								},
+							}),
+							i(221513, {	-- Rune of Potency
+								["classes"] = { ROGUE },
+								["groups"] = {
+									recipe(432293),	-- Engrave Helm - Combat Potency
+								},
+							}),
+							i(221516, {	-- Rune of Primal Energy
+								["classes"] = { DRUID },
+								["groups"] = {
+									recipe(431461),	-- Engrave Bracers - Improved Frenzied Regeneration
+								},
+							}),
+							i(221490, {	-- Rune of Riptide
+								["classes"] = { SHAMAN },
+								["groups"] = {
+									recipe(410105),	-- Engrave Bracers - Riptide
+								},
+							}),
+							i(221510, {	-- Rune of the Knight
+								["classes"] = { WARRIOR },
+								["groups"] = {
+									recipe(427082),	-- Engrave Bracers - Sword and Board
+								},
+							}),
+							i(221489, {	-- Rune of Vengeance
+								["classes"] = { WARLOCK },
+								["groups"] = {
+									recipe(426470),	-- Engrave Helm - Vengeance
+								},
+							}),
+							i(221487, {	-- Spell Notes: Advanced Warding
+								["classes"] = { MAGE },
+								["groups"] = {
+									recipe(401754),	-- Engrave Helm - Advanced Warding
+								},
+							}),
+						}),
+					},
+				})),
+				-- #endif
 				applyclassicphase(PHASE_FOUR, q(8421, {	-- The Wrong Stuff
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["sourceQuests"] = {
@@ -2562,6 +2641,68 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(16110),	-- Recipe: Monster Omelet (RECIPE!)
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, n(222408, {	-- Shadowtooth Emissary
+					["sourceQuest"] = 82044,	-- The Wild Gods (2/2)
+					["coord"] = { 51.4, 82, FELWOOD },
+					["timeline"] = { "added 1.15.2" },
+					["lvl"] = 40,
+					["groups"] = {
+						i(221491, {	-- Shadowtooth Bag
+							["description"] = "Random non-Ace card from the new DMF decks.",
+							["cost"] = {{ "i", 221262, 10 }},	-- 10x Wild Offering
+							["sym"] = {{ "select", "itemID", 
+								221291,	-- Two of Dunes
+								221292,	-- Three of Dunes
+								221293,	-- Four of Dunes
+								221294,	-- Five of Dunes
+								221295,	-- Six of Dunes
+								221296,	-- Seven of Dunes
+								221297,	-- Eight of Dunes
+								221300,	-- Two of Nightmares
+								221301,	-- Three of Nightmares
+								221302,	-- Four of Nightmares
+								221303,	-- Five of Nightmares
+								221304,	-- Six of Nightmares
+								221305,	-- Seven of Nightmares
+								221306,	-- Eight of Nightmares
+								221282,	-- Two of Plagues
+								221283,	-- Three of Plagues
+								221284,	-- Four of Plagues
+								221285,	-- Five of Plagues
+								221286,	-- Six of Plagues
+								221287,	-- Seven of Plagues
+								221288,	-- Eight of Plagues
+								221273,	-- Two of Wilds
+								221274,	-- Three of Wilds
+								221275,	-- Four of Wilds
+								221276,	-- Five of Wilds
+								221277,	-- Six of Wilds
+								221278,	-- Seven of Wilds
+								221279,	-- Eight of Wilds
+							}},
+						}),
+						i(223197, {	-- Defender of the Wilds
+							["cost"] = {{ "i", 221262, 15 }},	-- 12x Wild Offering
+						}),
+						i(223193, {	-- Crown of the Dreamweaver
+							["cost"] = {{ "i", 221262, 15 }},	-- 15x Wild Offering
+						}),
+						i(223192, {	-- Cord of the Untamed
+							["cost"] = {{ "i", 221262, 15 }},	-- 15x Wild Offering
+						}),
+						i(223196, {	-- Godslayer's Greaves
+							["cost"] = {{ "i", 221262, 15 }},	-- 15x Wild Offering
+						}),
+						i(223194, {	-- Band of the Wilds
+							["cost"] = {{ "i", 221262, 12 }},	-- 12x Wild Offering
+						}),
+						i(223195, {	-- Breadth of the Beast
+							["cost"] = {{ "i", 221262, 12 }},	-- 12x Wild Offering
+						}),
+					},
+				})),
+				-- #endif
 				n(14522, {	-- Ur'dan
 					["sourceQuest"] = 7625,	-- Xorothian Stardust
 					["coord"] = { 36.2, 44.6, FELWOOD },
