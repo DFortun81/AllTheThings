@@ -566,7 +566,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/1 Stonemaul Clan Avenged
-							["provider"] = { "n", 23789 },	-- Smolderwing
+							["provider"] = { "i", 33095 },	-- Stonemaul Banner
+							["coord"] = { 52.0, 75.4, DUSTWALLOW_MARSH },
+							["cr"] = 23789,	-- Smolderwing
 						}),
 						i(33231, {	-- Oversized Stonemaul Hood
 							["timeline"] = { ADDED_2_3_0 },
@@ -682,7 +684,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
 						objective(1, {	-- 0/10 Oozes Dissolved
-							["provider"] = { "n", 23797 },	-- Moxie Steelgrille
+							["provider"] = { "i", 33108 },	-- Ooze Buster
+							["crs"] = {
+								4393,	-- Acidic Swamp Ooze
+								4394,	-- Bubbling Swamp Ooze
+							},
 						}),
 						i(33233, {	-- Cobalt-threaded Gloves
 							["timeline"] = { ADDED_2_3_0 },
@@ -1588,8 +1594,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						objective(1, {	-- 0/1 Fish Paste Tested
-							["provider"] = { "n", 23928 },	-- Lurking Shark
+						objective(1, {	-- Fish Paste Tested
+							["provider"] = { "i", 33166 },	-- Pagle's Fish Paste, Extra Strength
+							["cr"] = 23928, -- Lurking Shark
 						}),
 					},
 				}),
@@ -1738,8 +1745,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						objective(1, {	-- 0/1 Wreath Laid at Hyal Monument
-							["provider"] = { "n", 23768 },	-- Lynn Hyal
+						objective(1, {	-- Wreath Laid at Hyal Monument
+							["providers"] = {
+								{ "i",  33082 },	-- Wreath
+								{ "o", 186322 },	-- Hyal Family Monument
+							},
+							["coord"] = { 63.6, 42.8, DUSTWALLOW_MARSH },
+							["cr"] = 23768,	-- Lynn Hyal
 						}),
 						i(33271, {	-- Battlecaster's Edge
 							["timeline"] = { ADDED_2_3_0 },

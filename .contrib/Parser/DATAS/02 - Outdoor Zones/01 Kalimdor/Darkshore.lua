@@ -665,6 +665,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Use the Aetherion Ritual Orb
 							["provider"] = { "o", 194145 },	-- Aetherion Ritual Orb
+							["coord"] = { 36.4, 41.0, DARKSHORE },
 						}),
 						objective(2, {	-- 0/1 Aetherion's Essence
 							["provider"] = { "i", 44929 },	-- Aetherion's Essence
@@ -2130,7 +2131,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 45944 },	-- Narassin's Tome
 								{ "o", 194787 },	-- Charred Book
 							},
-                            ["coord"] = { 58.2, 24.0, DARKSHORE },
+							["coord"] = { 58.2, 24.0, DARKSHORE },
 						}),
 						i(52623, {	-- Wild Bark Boots
 							["timeline"] = { ADDED_4_0_3 },

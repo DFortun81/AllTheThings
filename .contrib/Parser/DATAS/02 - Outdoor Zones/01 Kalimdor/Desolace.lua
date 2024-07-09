@@ -1465,7 +1465,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Portals Banished
-							["provider"] = { "n", 11937 },	-- Demon Portal Guardian
+							["providers"] = {
+								{ "i",  14547 },	-- Hand of Iruxos
+								{ "o", 177243 },	-- Demon Portal
+							},
+							["cr"] = 11937,	-- Demon Portal Guardian
 						}),
 						i(55937, {	-- Bracer of Portals
 							["timeline"] = { ADDED_4_0_3 },

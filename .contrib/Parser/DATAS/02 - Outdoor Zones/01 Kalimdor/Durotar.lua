@@ -2194,7 +2194,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								3108,	-- Encrusted Surf Crawler
 								39004,	-- Pygmy Surf Crawler
 								3106,	-- Surf Crawler
-                                3228,	-- Corrupted Surf Crawler
+								3228,	-- Corrupted Surf Crawler
 							},
 						}),
 					},
@@ -2654,7 +2654,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["crs"] = {
 								39452,	-- Dreadmaw Toothgnasher
 								3110,	-- Dreadmaw Crocolisk
-                                3231,	-- Corrupted Dreadmaw Crocolisk
+								3231,	-- Corrupted Dreadmaw Crocolisk
 							},
 						}),
 						i(53372, {	-- Hand Woven Vest

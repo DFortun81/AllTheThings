@@ -438,7 +438,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 49230 },	-- Giant-Sized Laxative
 								{ "o", 196462 },	-- Giant-Sized Laxative
 							},
-                            ["coord"] = { 39.9, 84.7, AZSHARA },
+							["coord"] = { 39.9, 84.7, AZSHARA },
 						}),
 					},
 				}),
@@ -673,7 +673,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 49367 },	-- Blackmaw Meeting Agenda
 								{ "o", 196835 },	-- Important Documents
 							},
-                            ["coord"] = { 29.8, 38.5, AZSHARA },
+							["coord"] = { 29.8, 38.5, AZSHARA },
 						}),
 						objective(2, {	-- 0/1 Ambassador's Robes
 							["provider"] = { "i", 49366 },	-- Ambassador's Robes
@@ -1228,7 +1228,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 49700 },	-- SFG
 								{ "o", 201572 },	-- SFG
 							},
-                            ["coord"] = { 27.7, 51.9, AZSHARA },
+							["coord"] = { 27.7, 51.9, AZSHARA },
 						}),
 					},
 				}),

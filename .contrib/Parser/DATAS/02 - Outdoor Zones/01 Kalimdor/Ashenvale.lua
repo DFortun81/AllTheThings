@@ -671,7 +671,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(21, 21, 7),
 					["groups"] = {
-                        -- #if BEFORE CATA
+						-- #if BEFORE CATA
 						objective(1, {	-- 0/12 Thistlefur Avenger slain
 							["provider"] = { "n", 3925 },	-- Thistlefur Avenger
 						}),
@@ -811,11 +811,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 83.7, 63.1, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						objective(1, {	-- 0/10 Demon Gates closed
-							["provider"] = { "n", 33767 },	-- Demon Gate Master Bunny
-						}),
-					},
 				}),
 				q(13958, {	-- Condition Critical!
 					["qg"] = 34359,	-- Captain Goggath
@@ -2399,7 +2394,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.6, 71.4, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-                    ["groups"] = {
+					["groups"] = {
 						objective(1, {	-- 0/12 Befouled Water Elemental slain
 							["provider"] = { "n", 3917 },	-- Befouled Water Elemental
 						}),
