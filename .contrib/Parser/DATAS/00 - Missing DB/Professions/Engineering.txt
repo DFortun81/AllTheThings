@@ -1,3 +1,5 @@
+1.15.3.55348
+r(461710),	-- Fiery Core Sharpshooter Rifle
 11.0.0.54311
 r(423335),	-- Khaz Algar Engineering
 r(425139),	-- Recraft Equipment
@@ -92,6 +94,8 @@ r(459299),	-- Bottled Brilliance
 
 Missing in Engineering.lua
 
+1.15.3.55348
+r(461710),	-- Fiery Core Sharpshooter Rifle
 11.0.0.54311
 r(423335),	-- Khaz Algar Engineering
 r(425139),	-- Recraft Equipment

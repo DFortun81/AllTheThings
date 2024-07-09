@@ -112,6 +112,13 @@ r(439102),	-- Enchanter's Cowl
 r(446193),	-- Fractured Mind Pauldrons
 r(446194),	-- Mantle of Insanity
 r(446195),	-- Shoulderpads of the Deranged
+1.15.3.55348
+r(461692),	-- Synthetic Gordok Ogre Suit
+r(461708),	-- Incandescent Mooncloth Robe
+r(461727),	-- Leather-Reinforced Runecloth Bag
+r(461747),	-- Incandescent Mooncloth Vest
+r(461750),	-- Incandescent Mooncloth Circlet
+r(461752),	-- Incandescent Mooncloth Leggings
 2.0.0.6080
 r(26745),	-- Bolt of Netherweave
 r(26746),	-- Netherweave Bag
@@ -492,8 +499,6 @@ r(330258),	-- Relic of the Past II
 r(330259),	-- Relic of the Past III
 r(330260),	-- Relic of the Past IV
 r(330261),	-- Relic of the Past V
-11.0.0.54311
-r(446992),	-- Duskthread Lining
 
 
 
@@ -749,6 +754,13 @@ r(439102),	-- Enchanter's Cowl
 r(446193),	-- Fractured Mind Pauldrons
 r(446194),	-- Mantle of Insanity
 r(446195),	-- Shoulderpads of the Deranged
+1.15.3.55348
+r(461692),	-- Synthetic Gordok Ogre Suit
+r(461708),	-- Incandescent Mooncloth Robe
+r(461727),	-- Leather-Reinforced Runecloth Bag
+r(461747),	-- Incandescent Mooncloth Vest
+r(461750),	-- Incandescent Mooncloth Circlet
+r(461752),	-- Incandescent Mooncloth Leggings
 3.0.1.8874
 r(56016),	-- Wispcloak
 r(56017),	-- Deathchill Cloak

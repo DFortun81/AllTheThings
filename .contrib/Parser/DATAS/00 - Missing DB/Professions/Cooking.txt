@@ -38,7 +38,7 @@ r(445116),	-- Chippy Tea
 r(445117),	-- Chopped Mycobloom
 r(445118),	-- Portioned Steak
 r(445119),	-- Spiced Meat Stock
-r(445120),	-- Hearty Meals
+r(445120),	-- Hearty Food \\ Hearty Meals
 r(445127),	-- Fresh Fillet
 r(445477),	-- Luminous Lemonade
 r(445478),	-- Blessing Blossom Tea
@@ -58,6 +58,8 @@ r(447874),	-- Little Buddy Biscuits
 r(447875),	-- Azj-Kahet Special
 r(447876),	-- Ghoulfish Delight
 r(455424),	-- Exquisitely Eviscerated Muscle
+11.0.2.55399
+r(462857),	-- Hearty Feast
 
 
 
@@ -104,7 +106,7 @@ r(445116),	-- Chippy Tea
 r(445117),	-- Chopped Mycobloom
 r(445118),	-- Portioned Steak
 r(445119),	-- Spiced Meat Stock
-r(445120),	-- Hearty Meals
+r(445120),	-- Hearty Food \\ Hearty Meals
 r(445127),	-- Fresh Fillet
 r(445477),	-- Luminous Lemonade
 r(445478),	-- Blessing Blossom Tea
@@ -124,3 +126,5 @@ r(447874),	-- Little Buddy Biscuits
 r(447875),	-- Azj-Kahet Special
 r(447876),	-- Ghoulfish Delight
 r(455424),	-- Exquisitely Eviscerated Muscle
+11.0.2.55399
+r(462857),	-- Hearty Feast

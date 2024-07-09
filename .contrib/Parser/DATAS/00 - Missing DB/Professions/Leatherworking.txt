@@ -1,9 +1,25 @@
 1.15.2.54332
 r(451706),	-- Screaming Chain Pauldrons
-11.0.0.54311
-r(443951),	-- Weathered Stormfront Vest
-r(443961),	-- Smoldering Pollen Hauberk
-r(444070),	-- Adrenal Surge Clasp
+1.15.3.55348
+r(461645),	-- Honed Blue Dragonscale Shoulders
+r(461649),	-- Living Green Dragonscale Leggings
+r(461653),	-- Brilliant Chromatic Cloak
+r(461655),	-- Hardened Black Dragonscale Breastplate
+r(461657),	-- Hardened Black Dragonscale Leggings
+r(461659),	-- Hardened Black Dragonscale Shoulders
+r(461661),	-- Masterwork Volcanic Breastplate
+r(461663),	-- Masterwork Volcanic Shoulders
+r(461665),	-- Masterwork Volcanic Leggings
+r(461673),	-- Honed Blue Dragonscale Breastplate
+r(461677),	-- Living Green Dragonscale Gauntlets \\ Living Green Dragonscale Leggings
+r(461690),	-- Mastercrafted Shifting Cloak
+r(461692),	-- Synthetic Gordok Ogre Suit
+r(461706),	-- Swift Flight Vambraces
+r(461720),	-- Living Green Dragonscale Breastplate
+r(461722),	-- Devilcore Gauntlets
+r(461724),	-- Devilcore Leggings
+r(461754),	-- Girdle of Arcane Insight
+r(462227),	-- Honed Blue Dragonscale Leggings
 
 
 
@@ -12,3 +28,23 @@ Missing in Leatherworking.lua
 
 1.15.2.54332
 r(451706),	-- Screaming Chain Pauldrons
+1.15.3.55348
+r(461645),	-- Honed Blue Dragonscale Shoulders
+r(461649),	-- Living Green Dragonscale Leggings
+r(461653),	-- Brilliant Chromatic Cloak
+r(461655),	-- Hardened Black Dragonscale Breastplate
+r(461657),	-- Hardened Black Dragonscale Leggings
+r(461659),	-- Hardened Black Dragonscale Shoulders
+r(461661),	-- Masterwork Volcanic Breastplate
+r(461663),	-- Masterwork Volcanic Shoulders
+r(461665),	-- Masterwork Volcanic Leggings
+r(461673),	-- Honed Blue Dragonscale Breastplate
+r(461677),	-- Living Green Dragonscale Gauntlets \\ Living Green Dragonscale Leggings
+r(461690),	-- Mastercrafted Shifting Cloak
+r(461692),	-- Synthetic Gordok Ogre Suit
+r(461706),	-- Swift Flight Vambraces
+r(461720),	-- Living Green Dragonscale Breastplate
+r(461722),	-- Devilcore Gauntlets
+r(461724),	-- Devilcore Leggings
+r(461754),	-- Girdle of Arcane Insight
+r(462227),	-- Honed Blue Dragonscale Leggings

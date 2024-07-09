@@ -1,5 +1,10 @@
-11.0.0.54311
-r(445341),	-- Authority of the Depths
+11.0.2.55399
+r(455488),	-- Glimmering Haste
 
 
-Nothing is Missing in Enchanting.lua! Good Work!
+
+
+Missing in Enchanting.lua
+
+11.0.2.55399
+r(455488),	-- Glimmering Haste

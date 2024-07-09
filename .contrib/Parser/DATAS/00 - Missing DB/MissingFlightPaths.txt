@@ -1,12 +1,5 @@
 11.0.0.54311
-fp(2882),	-- Weaver's Lair, Azj-Kahet
-fp(2889),	-- Wildcamp Or'lay, Azj-Kahet
-fp(2893),	-- The Burrows, Azj-Kahet
 fp(2894),	-- 11.0  - TEST - Dorn Batol, Khaz Algar - (LWB)
-fp(2919),	-- Wildcamp Ul'ar, Azj-Kahet
-fp(2920),	-- Faerin's Advance, Azj-Kahet
-fp(2921),	-- Mmarl, Azj-Kahet
-fp(2922),	-- Dunelle's Kindness, Hallowfall
 fp(2933),	-- Grand Rampart \\ Front Gate, Nerub'ar Palace
 fp(2934),	-- The Pulsing Pit \\ Slime Pit, Nerub'ar Palace
 fp(2935),	-- Terrace of Majesty \\ Barracks, Nerub'ar Palace

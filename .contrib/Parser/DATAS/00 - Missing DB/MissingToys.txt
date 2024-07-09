@@ -8,20 +8,14 @@ i(224809),	-- Earthen Plumber's Pipe
 11.0.0.54605
 i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
 i(225347),	-- Web-Vandal's Spinning Wheel
-i(225547),	-- Toxic Victory
 11.0.0.54675
 i(225641),	-- Illusive Kobyss Lure
 i(225659),	-- Arathi Book Collection \\ Arathor Book Collection
-i(225910),	-- Pileus Delight
 11.0.0.54935
 i(225556),	-- Ancient Construct
 i(226191),	-- Web Pet Leash
-11.0.0.55000
-i(226519),	-- General's Expertise
-11.0.0.55087
-i(226810),	-- Infiltrator's Shroud
 11.0.0.55288
-i(228413),	-- Lampyridae Caller
+i(228413),	-- Lampyridae Lure \\ Lampyridae Caller
 
 
 
@@ -36,17 +30,11 @@ i(224809),	-- Earthen Plumber's Pipe
 11.0.0.54605
 i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
 i(225347),	-- Web-Vandal's Spinning Wheel
-i(225547),	-- Toxic Victory
 11.0.0.54675
 i(225641),	-- Illusive Kobyss Lure
 i(225659),	-- Arathi Book Collection \\ Arathor Book Collection
-i(225910),	-- Pileus Delight
 11.0.0.54935
 i(225556),	-- Ancient Construct
 i(226191),	-- Web Pet Leash
-11.0.0.55000
-i(226519),	-- General's Expertise
-11.0.0.55087
-i(226810),	-- Infiltrator's Shroud
 11.0.0.55288
-i(228413),	-- Lampyridae Caller
+i(228413),	-- Lampyridae Lure \\ Lampyridae Caller

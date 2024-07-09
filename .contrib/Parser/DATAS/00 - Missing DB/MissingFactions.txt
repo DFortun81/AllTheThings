@@ -1,5 +1,8 @@
 1.15.3.55112
 faction(2650),	-- S03 - 60 - Western Plaguelands - Mage Runecarving
+1.15.3.55391
+faction(2660),	-- Elemental (The Molten Core Adds)
+faction(2661),	-- Hydraxian (The Molten Core Adds)
 11.0.0.54311
 faction(2569),	-- The War Within \\ (11.0 Header) The War Within
 faction(2579),	-- zzOldDelves: Season 1 \\ Delves: Season 1
