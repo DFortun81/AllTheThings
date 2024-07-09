@@ -96,7 +96,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					pet(483),	-- Horny Toad (PET!)
 					pet(482),	-- Rock Viper (PET!)
 					pet(485, {	-- Stone Armadillo (PET!)
-						["description"] = "This wild pet can be found in the southeastern area of Desolace. It only spawns at night.",
+						-- #if BEFORE 5.1.0
+						["description"] = "Found in the southeastern area of Desolace. It only spawns during the night between 6:30pm to 6:30am realm time.",
+						-- #else
+						["description"] = "Found in the southeastern area of Desolace. It only spawns during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE).",
+						-- #endif
 					}),
 					pet(480),	-- Topaz Shale Hatchling (PET!)
 				},

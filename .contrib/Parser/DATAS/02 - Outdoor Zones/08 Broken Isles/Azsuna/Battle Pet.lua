@@ -23,10 +23,10 @@ root(ROOTS.Zones, {
 					pet(1708),	-- Albatross Chick (PET!)
 					pet(1914),	-- Coastal Sandpiper (PET!)
 					pet(1774, {	-- Eldritch Manafiend (PET!)
-						["description"] = "This pet can only spawn during the night between 8:30pm to 6:30am server time.",
+						["description"] = "This pet can only spawn during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE).",
 					}),
 					pet(1773, {	-- Erudite Manafiend (PET!)
-						["description"] = "This pet can only spawn during the day between 6:30am to 8:30pm server time.",
+						["description"] = "This pet can only spawn during the day between 6:30am to 6:30pm PST(US)/CEST(EU)/AEST(OCE).",
 					}),
 					pet(1709, {	-- Fledgling Kingfeather (PET!)
 						["coord"] = { 44.4, 23.6, AZSUNA },

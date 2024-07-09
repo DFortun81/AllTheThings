@@ -32,7 +32,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_1_0 },
 				}),
 				pet(439, {	-- Restless Shadeling (PET!)
-					["description"] = "Spawns in |cFFFFD700The Master's Cellar|r at midnight server time for a very limited amount of time.",
+					-- #if BEFORE 5.1.0
+					["description"] = "Spawns in |cFFFFD700The Master's Cellar|r during the early morning between midnight and 9:00am realm time.",
+					-- #else
+					["description"] = "Spawns in |cFFFFD700The Master's Cellar|r during the early morning between midnight and 9:00am PST(US)/CEST(EU)/AEST(OCE).",
+					-- #endif
 				}),
 			}),
 			explorationHeader({
