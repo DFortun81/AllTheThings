@@ -1161,10 +1161,23 @@ profession(TAILORING, {
 					["name"] = "Black Mageweave Shoulders",
 					["recipeID"] = 12074
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["timeline"] = { "added 1.15.1" },
+					["name"] = "Crimson Silk Shoulders",
+					["recipeID"] = 439093
+				}),
+				{
+					["timeline"] = { "removed 1.15.1" },
+					["name"] = "Crimson Silk Shoulders",
+					["recipeID"] = 8793
+				},
+				-- #else
 				{
 					["name"] = "Crimson Silk Shoulders",
 					["recipeID"] = 8793
 				},
+				-- #endif
 				{
 					["name"] = "Double-stitched Woolen Shoulders",
 					["recipeID"] = 3848

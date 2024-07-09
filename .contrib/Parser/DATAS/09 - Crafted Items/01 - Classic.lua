@@ -2806,7 +2806,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_THREE, i(19059)),	-- Argent Shoulders
 			i(7060),	-- Azure Shoulders
 			i(10027),	-- Black Mageweave Shoulders
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217250)),	-- Crimson Silk Shoulders
+			i(7059, {	-- Crimson Silk Shoulders
+				["timeline"] = { "removed 1.15.1" },
+			}),
+			-- #else
 			i(7059),	-- Crimson Silk Shoulders
+			-- #endif
 			i(4314),	-- Double-stitched Woolen Shoulders
 			i(14112),	-- Felcloth Shoulders
 			i(16980),	-- Flarecore Mantle

@@ -3742,7 +3742,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { REMOVED_4_0_3 },	-- Taught by trainer
 			}),
 			i(10316),	-- Pattern: Colorful Kilt
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217251)),	-- Pattern: Crimson Silk Shoulders
+			i(7084, {	-- Pattern: Crimson Silk Shoulders
+				["timeline"] = { "removed 1.15.1" },
+			}),
+			-- #else
 			i(7084),	-- Pattern: Crimson Silk Shoulders
+			-- #endif
 			i(7086),	-- Pattern: Earthen Silk Belt
 			i(14492, {	-- Pattern: Felcloth Boots
 				["timeline"] = { REMOVED_2_0_3 },	-- Taught by trainer

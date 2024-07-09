@@ -182,7 +182,9 @@ i(211247, 428424);	-- Phoenix Bindings
 i(215149, 435610);	-- Gneuro-Linked Arcano-Filament Monocle
 i(215368, 435827);	-- Hyperconductive Arcano-Filament
 i("Black Mageweave Vest", 0, 439086);
+i("Black Mageweave Lessings", 0, 439088);
 i("Boots of the Enchanter", 217254, 439097);
+i("Crimson Silk Shoulders", 217251, 439093);
 -- #endif
 
 -------------------
