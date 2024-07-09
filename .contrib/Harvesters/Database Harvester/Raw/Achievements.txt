@@ -15276,3 +15276,11 @@
 40845@@@Hallowfall Arathi
 40848@@@Treasures of Hallowfall
 40851@@@Adventurer of Hallowfall
+11.0.2.55399
+40764@@@Powers from Strange Disturbances obtained
+40836@@@Assembly of the Deeps
+40856@@@Council of Dornogal
+40857@@@Warbands: Bank Quest Unlock
+40859@@@We're Here All Night
+40860@@@A Star of Dorn
+40861@@@Mislaid Curiosities looted

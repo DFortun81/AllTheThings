@@ -7,6 +7,65 @@ root(ROOTS.Unsorted, {
 	i(183834),	-- Crate of Drust Archaeology Fragments
 	i(183835),	-- Crate of Zandalari Archaeology Fragments
 	expansion(EXPANSION.TWW, {
+		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+			i(212311),	-- Phial of Enhanced Ambidexterity
+			i(212312),	-- Phial of Enhanced Ambidexterity
+			i(212313),	-- Phial of Enhanced Ambidexterity
+			i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
+			i(220157),	-- Empowered Tinderbox
+			i(220158),	-- Darkened Tinderbox
+			i(222680),	-- Darkmoon Deck: Ascension
+			i(222693),	-- Hearty Food
+			i(222834),	-- Pioneer's Cloth Cord
+			i(222835),	-- Pioneer's Cloth Cloak
+			i(222836),	-- Pioneer's Cloth Hood
+			i(224018),	-- Recipe: Vicious Flask of Classical Spirits
+			i(224263),	-- Infused Fire-Honey Milk
+			i(228071),	-- Chunk of Companion Experience
+			i(228072),	-- Chunk of Companion Experience
+			i(228073),	-- Chunk of Companion Experience
+			i(228413),	-- Lampyridae Lure
+			i(228507),	-- Swarmite Eggsac
+			i(228509),	-- Diaphanous Webbing
+			i(228510),	-- Ripped Swarmite Wing
+			i(228560),	-- Ancient Curio
+			i(228580),	-- Brute Force Idol
+			i(228581),	-- Ancient Curio
+			i(228582),	-- Streamlined Relic
+			i(228608),	-- On the Application of Arathi Technology to Earthen Life
+			i(228609),	-- Rock Roasting for Dummies
+			i(228610),	-- Artisan's Consortium Payout
+			i(228611),	-- Artisan's Consortium Payout
+			i(228612),	-- Artisan's Consortium Payout
+			i(228623),	-- Blue's Request
+			i(228624),	-- Depleted Awakened Flightstone
+			i(228625),	-- Depleted Ruby Flightstone
+			i(228626),	-- Depleted Blackened Flightstone
+			i(228627),	-- Lively Clutch of Wyrm's Awakened Crests
+			i(228628),	-- Yawning Basket of Aspect's Awakened Crests
+			i(228629),	-- Restless Satchel of Drake's Awakened Crests
+			i(228630),	-- Pouch of Whelpling's Awakened Crests
+			i(228631),	-- Satchel of Drake's Awakened Crests
+			i(228632),	-- Clutch of Wyrm's Awakened Crests
+			i(228633),	-- Large Pouch of Whelpling's Awakened Crests
+			i(228654),	-- Scrit's Handmade Shoes
+			i(228655),	-- Scrit's Handmade Gloves
+			i(228656),	-- Scrit's Handmade Shoulders
+			i(228657),	-- Scrit's Handmade Girdle
+			i(228658),	-- Batzvara's Gratitude
+			i(228668),	-- Compiler's Handwraps
+			i(228671),	-- Compiler's Shoulderguards
+			i(228673),	-- Compiler's Chain Clasp
+			i(228674),	-- Compiler's Greaves
+			i(228698),	-- Candleflexer's Dumbbell
+			i(228705),	-- Arachnoserum
+			i(228706),	-- Rockslidomancer's Stone
+			i(228707),	-- Trial of Burning Light
+			i(228708),	-- Formula: Gleeful Glamour - Earthen
+			i(228711),	-- Small Candle
+			i(228720),	-- Nascent Gemstone
+			i(228721),	-- Hearty Feast
+		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(BATTLE_PETS, {
 				i(222969),	-- Anub'Rekyute (PET!)
