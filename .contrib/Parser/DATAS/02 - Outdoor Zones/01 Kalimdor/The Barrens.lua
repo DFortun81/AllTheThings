@@ -108,6 +108,25 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(QUESTS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79007, {	-- ...and that note you found (H)
+					["providers"] = {
+						{ "o", 415106 },	-- Burned-Out Remains
+						{ "o", 424010 },	-- Nailed Plank
+					},
+					["coords"] = {
+						{ 46.4, 73.9, THE_BARRENS },
+						{ 37.5, 50.8, WESTFALL },
+					},
+					["timeline"] = { "added 1.15.1" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
+					["groups"] = {
+						i(2459),	-- Swiftness Potion
+						i(3388),	-- Strong Troll's Blood Potion
+					},
+				})),
+				-- #endif
 				q(1153, {	-- A New Ore Sample
 					["qg"] = 3433,	-- Tatternack Steelforge
 					["sourceQuest"] = 893,	-- Weapons of Choice
@@ -2608,6 +2627,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 14,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79192, {	-- Stepping Stones
+					["providers"] = {
+						{ "o", 417072 },	-- Nailed Plank
+						{ "o", 424010 },	-- Nailed Plank
+					},
+					["sourceQuests"] = {
+						79008,	-- ...and that note you found (A)
+						79007,	-- ...and that note you found (H)
+					},
+					["coords"] = {
+						{ 46.4, 73.8, THE_BARRENS },
+						{ 37.5, 50.8, WESTFALL },
+					},
+					["maps"] = { STONETALON_MOUNTAINS },
+					["timeline"] = { "added 1.15.1" },
+					["lvl"] = 14,
+					["groups"] = {
+						i(3334),	-- Farmer's Shovel
+					},
+				})),
+				-- #endif
 				q(888, {	-- Stolen Booty
 					["qg"] = 3391,	-- Gazlowe
 					["sourceQuest"] = 892,	-- The Missing Shipment (2/2)

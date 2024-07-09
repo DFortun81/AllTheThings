@@ -587,6 +587,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79975, {	-- Eagle's Fist
+					["provider"] = { "o", 424007 },	-- Carved Figurine
+					["sourceQuest"] = 79974,	-- Wet Job
+					["coord"] = { 49.5, 12.8, LOCH_MODAN },
+					["timeline"] = { "added 1.15.1" },
+					["maps"] = { ARATHI_HIGHLANDS },
+					["lvl"] = 14,
+				})),
+				-- #endif
 				q(298, {	-- Excavation Progress Report
 					["providers"] = {
 						{ "n", 1344 },	-- Prospector Ironband

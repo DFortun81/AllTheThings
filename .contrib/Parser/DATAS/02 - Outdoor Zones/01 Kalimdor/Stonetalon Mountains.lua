@@ -2064,6 +2064,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79980, {	-- Scramble
+					["provider"] = { "o", 424005 },	-- Pocket Litter
+					["sourceQuest"] = 79192,	-- Stepping Stones
+					["coord"] = { 40.8, 52.5, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 1.15.1" },
+					["lvl"] = 14,
+					["groups"] = {
+						i(216619, {	-- Student Fodder
+							["description"] = "This item gives you 4 bars of Rested Experience when consumed.",
+						}),
+						i(217314),	-- Moonsight Rifle
+						i(217315),	-- Precision Bow
+						i(3463),	-- Silver Star
+					},
+				})),
+				-- #endif
 				q(26009, {	-- Seek and Destroy
 					["qg"] = 41023,	-- Overlord Krom'gar
 					["altQuests"] = { 26115 },	-- To Be Horde...
@@ -2585,6 +2602,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79974, {	-- Wet Job
+					["provider"] = { "o", 424012 },	-- Mound of Dirt
+					["sourceQuest"] = 79980,	-- Scramble
+					["coord"] = { 39.6, 49.9, STONETALON_MOUNTAINS },
+					["timeline"] = { "added 1.15.1" },
+					["maps"] = { LOCH_MODAN },
+					["lvl"] = 14,
+					["groups"] = {
+						i(20709),	-- Rumsey Rum Light
+					},
+				})),
+				-- #endif
 				q(26044, {	-- Where Are the Parts?
 					["qg"] = 40902,	-- Chief Blastgineer Bombgutz
 					["sourceQuest"] = 26020,	-- Report to Bombgutz

@@ -1628,6 +1628,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maps"] = { BADLANDS },
 					["lvl"] = 30,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79976, {	-- This Must Be The Place
+					["providers"] = {
+						{ "o", 406918 },	-- Messenger Bag
+						{ "o", 424006 },	-- Hastily Rolled-Up Satchel
+					},
+					["sourceQuest"] = 79975,	-- Eagle's Fist
+					["coord"] = { 22.5, 24.2, ARATHI_HIGHLANDS },
+					["timeline"] = { "added 1.15.1" },
+					["lvl"] = 14,
+					["groups"] = {
+						i(211527),	-- Cozy Sleeping Bag
+						i(216619),	-- Student Fodder
+					},
+				})),
+				-- #endif
 				q(26428, {	-- To Steal From Thieves
 					["qg"] = 4486,	-- Genavie Callow
 					["coord"] = { 13.7, 33.9, ARATHI_HIGHLANDS },

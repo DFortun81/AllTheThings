@@ -160,6 +160,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(QUESTS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79008, {	-- ...and that note you found (A)
+					["providers"] = {
+						{ "o", 415107 },	-- Burned-Out Remains
+						{ "o", 417072 },	-- Nailed Plank
+					},
+					["coords"] = {
+						{ 37.5, 50.7, WESTFALL },
+						{ 46.4, 73.8, THE_BARRENS },
+					},
+					["timeline"] = { "added 1.15.1" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 14,
+					["groups"] = {
+						i(2459),	-- Swiftness Potion
+						i(3388),	-- Strong Troll's Blood Potion
+					},
+				})),
+				-- #endif
 				q(6181, {	-- A Swift Message
 					["providers"] = {
 						{ "n", 491 },	-- Quartermaster Lewis
