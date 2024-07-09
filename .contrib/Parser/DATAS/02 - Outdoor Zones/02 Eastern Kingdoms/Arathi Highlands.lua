@@ -184,6 +184,43 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(QUESTS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79677, {	-- A Quick Grocery Run
+					["qg"] = 217300,	-- Skonk <Amateur Chef>
+					["sourceQuest"] = 79624,	-- Anyone Can Cook
+					["coord"] = { 57.6, 74.6, ARATHI_HIGHLANDS },
+					["timeline"] = { "added 1.15.1" },
+					["maps"] = { HILLSBRAD_FOOTHILLS, SWAMP_OF_SORROWS, BADLANDS },
+					["classes"] = { WARRIOR },
+					["lvl"] = 26,
+					["groups"] = {
+						objective(1, {	-- 0/1 Hybrid Haunch
+							["provider"] = { "i", 213526 },	-- Hybrid Haunch
+							["coord"] = { 83.0, 36.0, HILLSBRAD_FOOTHILLS },
+							["cr"] = 2347,	-- Wild Gryphon
+						}),
+						objective(2, {	-- 0/1 Smuggler's Spice Blend
+							["providers"] = {
+								{ "i", 213527 },	-- Smuggler's Spice Blend
+								{ "o", 422911 },	-- Sealed Barrel
+							},
+							["coord"] = { 21.5, 83.9, ARATHI_HIGHLANDS },
+						}),
+						objective(3, {	-- 0/1 Balmy Brew
+							["providers"] = {
+								{ "i", 213528 },	-- Balmy Brew
+								{ "o", 422919 },	-- Tapped Shadowforge Keg
+							},
+							["coord"] = { 41.5, 28.1, BADLANDS },
+						}),
+						objective(4, {	-- 0/1 Viscous Venom
+							["provider"] = { "i", 213529 },	-- Viscous Venom
+							["coord"] = { 70.0, 72.0, SWAMP_OF_SORROWS },
+							["cr"] = 769,	-- Deathstrike Tarantula
+						}),
+					},
+				})),
+				-- #endif
 				q(26081, {	-- Alina's Reward
 					["qg"] = 41944,	-- Galen Trollbane
 					["sourceQuest"] = 26033,	-- Trol'kalar
@@ -222,6 +259,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79624, {	-- Anyone Can Cook
+					["providers"] = {
+						{ "i", 213422 },	-- Illegible Recipe
+						{ "n", 217300 },	-- Skonk <Amateur Chef>
+					},
+					["coord"] = { 20.0, 67.4, ARATHI_HIGHLANDS },
+					["timeline"] = { "added 1.15.1" },
+					["maps"] = { ALTERAC_MOUNTAINS },
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						2569,	-- Boulderfist Mauler
+						2254,	-- Crushridge Mauler
+						2570,	-- Boulderfist Shaman
+						2255,	-- Crushridge Mage
+						2256,	-- Crushridge Enforcer
+						2571,	-- Boulderfist Lord
+						2287,	-- Crushridge Warmonger
+					},
+					["lvl"] = 26,
+				})),
+				-- #endif
 				q(696, {	-- Attack on the Tower
 					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 695,	-- An Apprentice's Enchantment
@@ -1410,6 +1469,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79678, {	-- Taste Testing
+					["qg"] = 217300,	-- Skonk <Amateur Chef>
+					["sourceQuest"] = 79677,	-- A Quick Grocery Run
+					["coord"] = { 57.6, 74.6, ARATHI_HIGHLANDS },
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { WARRIOR },
+					["lvl"] = 26,
+					["groups"] = {
+						i(213103, {	-- 
+							["classes"] = { WARRIOR },
+							["groups"] = {
+								recipe(416004),	-- Engrave Belt - Blood Surge
+							},
+						}),
+						i(213105),	-- Shawarmageddon
+					},
+				})),
+				-- #endif
 				q(640, {	-- The Broken Sigil
 					["qg"] = 2703,	-- Zengu
 					["sourceQuest"] = 639,	-- Sigil of Strom
