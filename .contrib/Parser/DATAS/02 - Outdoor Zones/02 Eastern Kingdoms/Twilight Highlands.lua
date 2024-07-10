@@ -2263,7 +2263,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 48265,	-- Lauriel Trueblade
 				}),
 				q(27486, {	-- Warm Welcome (H)
-					["qg"] = 46264,	-- Golluck Rockfist
+					["qg"] = 48264,	-- Golluck Rockfist
 					["coord"] = { 44.0, 10.5, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27380,	-- Nightmare
