@@ -1443,6 +1443,74 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
 			}),
 		})),
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TWW_ENGINEERING_KNOWLEDGE, 1 }} }, {
+				r(447356),	-- Adjustable Cogwheel
+				r(447365),	-- Box o' Booms
+				r(447355),	-- Impeccable Cogwheel
+				r(447354),	-- Overclocked Cogwheel
+				r(447353),	-- Serrated Cogwheel
+			}),
+		}),
+		n(TREASURES, {
+			o(456001, {	-- Rock Engineer's Wrench
+			["coord"] = { 61.3, 69.5, ISLE_OF_DORN },
+			--["questID"] = XXXXX,
+			["g"] = {
+				i(226292),	-- Rock Engineer's Wrench
+			},
+			}),
+			o(455996, {	-- Arathi Safety Gloves
+			["coord"] = { 41.5, 48.9, HALLOWFALL },
+			--["questID"] = XXXXX,
+			["g"] = {
+				i(226297),	-- Arathi Safety Gloves
+			},
+			}),
+			o(456000, {	-- Dornogal Spectacles
+			["coord"] = { 49.3, 55.6, DORNOGAL },
+			--["questID"] = XXXXX,
+			["g"] = {
+				i(226293),	-- Dornogal Spectacles
+			},
+			}),
+			o(455998, {	-- Earthen Construct Blueprints
+			["coord"] = { 64.5, 58.8, THE_RINGING_DEEPS },
+			--["questID"] = XXXXX,
+			["g"] = {
+				i(226295),	-- Earthen Construct Blueprints
+			},
+			}),
+			o(455994, {	-- Emptied Venom Canister
+			["coord"] = { 61.1, 11.3, AZJ_KAHET },
+			--["questID"] = XXXXX,
+			["g"] = {
+				i(226299),	-- Emptied Venom Canister
+			},
+			}),
+			o(455997, {	-- Holy Firework Dud
+			["coord"] = { 44.3, 61.4, HALLOWFALL },
+			--["questID"] = XXXXX,
+			["g"] = {
+				i(226296),	-- Holy Firework Dud
+			},
+			}),
+			o(455999, {	-- Inert Mining Bomb
+			["coord"] = { 42.6, 27.3, THE_RINGING_DEEPS },
+			--["questID"] = 83844,
+			["g"] = {
+				i(226294),	-- Inert Mining Bomb
+			},
+			}),
+			o(455995, {	-- Puppeted Mechanical Spider
+			["coord"] = { 46.9, 38.6, AZJ_KAHET },
+			--["questID"] = 83844,
+			["g"] = {
+				i(226298),	-- Puppeted Mechanical Spider
+			},
+			}),
+		}),
 	})),
 })));
 

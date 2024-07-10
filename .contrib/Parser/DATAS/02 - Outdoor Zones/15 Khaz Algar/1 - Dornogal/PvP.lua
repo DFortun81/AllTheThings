@@ -59,6 +59,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 						i(225475),	-- Technique: Algari Competitor's Medallion (RECIPE!)
 						i(225480),	-- Technique: Algari Competitor's Scythe (RECIPE!)
 						i(225481),	-- Technique: Algari Competitor's Staff (RECIPE!)
+						i(225471),	-- Schematic: Algari Competitor's Cloth Bracers (RECIPE!)
+						i(225467),	-- Schematic: Algari Competitor's Cloth Goggles (RECIPE!)
+						i(225472),	-- Schematic: Algari Competitor's Leather Bracers (RECIPE!)
+						i(225468),	-- Schematic: Algari Competitor's Leather Goggles (RECIPE!)
+						i(225473),	-- Schematic: Algari Competitor's Mail Bracers (RECIPE!)
+						i(225469),	-- Schematic: Algari Competitor's Mail Goggles (RECIPE!)
+						i(225474),	-- Schematic: Algari Competitor's Plate Bracers (RECIPE!)
+						i(225470),	-- Schematic: Algari Competitor's Plate Goggles (RECIPE!)
+						i(225482),	-- Schematic: Algari Competitor's Rifle (RECIPE!)
 					}),
 				}),
 				n(219217, {	-- Velerd <Honor Quartermaster>

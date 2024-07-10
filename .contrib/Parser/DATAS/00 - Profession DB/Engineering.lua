@@ -1274,3 +1274,84 @@ i(211616, 430093);	-- Draconic Combatant's Cloth Goggles
 i(211617, 430094);	-- Draconic Combatant's Leather Goggles
 i(211618, 430095);	-- Draconic Combatant's Mail Goggles
 i(211619, 430096);	-- Draconic Combatant's Plate Goggles
+
+------------------
+-- PATCH 11.0.1 --
+------------------
+--- TRAINER ---
+i(0, 423335);	-- Khaz Algar Engineering
+i(0, 447375);	-- Acolyte's Goggles
+i(0, 447378);	-- Dredger's Goggles
+i(0, 447376);	-- Spelunker's Goggles
+i(0, 447377);	-- Tracker's Goggles
+i(0, 447379);	-- 4UT0-41M3R
+i(0, 447311);	-- Pilfer Through Parts
+i(0, 447332);	-- Bismuth Fueled Samophlange
+i(0, 447316);	-- Supercharged Thought Enhancer
+i(0, 447320);	-- Whirring Wristwraps
+
+--- ITEM ---
+i(225471, 438926);	-- Algari Competitor's Cloth Bracers
+i(225467, 438922);	-- Algari Competitor's Cloth Goggles
+i(225472, 438927);	-- Algari Competitor's Leather Bracers
+i(225468, 438923);	-- Algari Competitor's Leather Goggles
+i(225473, 438928);	-- Algari Competitor's Mail Bracers
+i(225469, 438924);	-- Algari Competitor's Mail Goggles
+i(225474, 438929);	-- Algari Competitor's Plate Bracers
+i(225470, 438925);	-- Algari Competitor's Plate Goggles
+i(225482, 455005);	-- Algari Competitor's Rifle
+
+--- DISCOVERY ---
+i(0, 447367);	-- Algari Repair Bot 11O
+i(0, 447325);	-- Aqirite Brainwave Projector
+i(0, 447327);	-- Aqirite Fisherfriend
+i(0, 447331);	-- Aqirite Miner's Headgear
+i(0, 447369);	-- Barrel of Fireworks
+i(0, 447358);	-- Blame Redirection Device
+i(0, 447318);	-- Blasting Bracers
+i(0, 459299);	-- Bottled Brilliance
+i(0, 447340);	-- Chaos Circuit
+i(0, 447321);	-- Clanking Cuffs
+i(0, 447360);	-- Complicated Fuse Box
+i(0, 447362);	-- Concealed Chaos Module
+i(0, 447366);	-- Convincingly Realistic Jumper Cables
+i(0, 447317);	-- Dangerous Distraction Inhibitor
+i(0, 447370);	-- Defective Escape Pod
+i(0, 447313);	-- Disassemble Invention
+i(0, 447363);	-- Energy Redistribution Beacon
+i(0, 447341);	-- Entropy Enhancer
+i(0, 447371);	-- Filmless Camera
+i(0, 447372);	-- Generate Wormhole
+i(0, 447338);	-- Gyrating Gear
+i(0, 447336);	-- Handful of Bismuth Bolts
+i(0, 447312);	-- Invent
+i(0, 447364);	-- Irresistible Red Button
+i(0, 447329);	-- Lapidary's Aqirite Clamps
+i(0, 447335);	-- Miner's Aqirite Hoard
+i(0, 447315);	-- Overclocked Idea Generator
+i(0, 447365);	-- Pausing Pylon
+i(0, 447344);	-- Potion Bomb of Power
+i(0, 447343);	-- Potion Bomb of Recovery
+i(0, 447342);	-- Potion Bomb of Speed
+i(0, 447361);	-- Pouch of Pocket Grenades
+i(0, 447357);	-- Recalibrated Safety Switch
+i(0, 447339);	-- Safety Switch
+i(0, 447323);	-- Spring-Loaded Aqirite Fabric Cutters
+i(0, 447314);	-- Studious Brilliance Expeditor
+i(0, 447368);	-- Summon Portable Profession Possibility
+i(0, 447316);	-- Supercharged Thought Enhancer
+i(0, 447350);	-- Tinker: Earthen Delivery Drill
+i(0, 447351);	-- Tinker: Heartseeking Health Injector
+i(0, 447319);	-- Venting Vambraces
+i(0, 447337);	-- Whimsical Wiring
+i(0, 447320);	-- Whirring Wristwraps
+
+--- SPECIALIZATION ---
+i(0, 447356);	-- Adjustable Cogwheel
+i(0, 447365);   -- Box o' Booms
+i(0, 447353);	-- Serrated Cogwheel
+i(0, 447355);	-- Impeccable Cogwheel
+i(0, 447354);	-- Overclocked Cogwheel
+
+--- QUEST ---
+i(0, 443570);

@@ -1345,7 +1345,10 @@ i(204405);	-- Stuffed Bear
 -- PATCH 11.0.0 --
 ------------------
 i(211931);	-- Abyss Caller Horn
+i(219387);	-- Barrel of Fireworks
 i(224552);	-- Cave Spelunker's Torch
+i(221962);	-- Defective Escape Pod
+i(221964);	-- Filmless Camera
 i(225969);	-- Forged Flag of Victory
 i(225933);	-- Forged Legend's Pennant
 i(226519);	-- General's Expertise
@@ -1354,18 +1357,16 @@ i(226810);	-- Infiltrator's Shroud
 i(224251);	-- Memory Chord
 i(224643);	-- Pet-Sized Candle
 i(225910);	-- Pileus Delight
+i(219403);	-- Stonebound Lantern
 i(225547);	-- Toxic Victory
 i(223312);	-- Trusty Hat
 i(227538);	-- Unbound Legend's Pennant
 i(227539);	-- Unbound Strategist's Pennant
 i(216665);	-- Warband Bank Distance Inhibitor
+i(221966);	-- Wormhole Generator: Khaz Algar
 -- UNSORTED --
-i(219387);	-- Barrel of Fireworks
 i(215147);	-- Beautification Iris
 i(218310);	-- Box of Puntables
-i(221962);	-- Defective Escape Pod
 i(215145);	-- Remembrance Stone
 i(224554);	-- Silver Linin' Scepter
-i(219403);	-- Stonebound Lantern
 i(212174);	-- The Warband Map to Everywhere All At Once
-i(221966);	-- Wormhole Generator: Khaz Algar

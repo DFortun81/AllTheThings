@@ -833,57 +833,6 @@ root(ROOTS.Unsorted, {
 					i(228424),	-- Recipe: Cinder Nectar
 				}),
 				prof(ENGINEERING, {
-					i(217151),	-- Algari Competitor's Cloth Goggles \\ Vicious Competitor's Cloth Goggles
-					i(217152),	-- Algari Competitor's Leather Goggles \\ Vicious Competitor's Leather Goggles
-					i(217153),	-- Algari Competitor's Mail Goggles \\ Vicious Competitor's Mail Goggles
-					i(217154),	-- Algari Competitor's Plate Goggles \\ Vicious Competitor's Plate Goggles
-					i(217155),	-- Algari Competitor's Cloth Bracers \\ Vicious Competitor's Cloth Bracers
-					i(217156),	-- Algari Competitor's Leather Bracers \\ Vicious Competitor's Leather Bracers
-					i(217157),	-- Algari Competitor's Mail Bracers \\ Vicious Competitor's Mail Bracers
-					i(217158),	-- Algari Competitor's Plate Bracers \\ Vicious Competitor's Plate Bracers
-
-					i(221853),	-- Handful of Bismuth Bolts
-					i(221854),	-- Handful of Bismuth Bolts
-					i(221855),	-- Handful of Bismuth Bolts
-					i(221856),	-- Whimsical Wiring
-					i(221857),	-- Whimsical Wiring
-					i(221858),	-- Whimsical Wiring
-					i(221859),	-- Gyrating Gear
-					i(221860),	-- Gyrating Gear
-					i(221861),	-- Gyrating Gear
-					i(221862),	-- Safety Switch
-					i(221863),	-- Safety Switch
-					i(221864),	-- Safety Switch
-					i(221865),	-- Chaos Circuit
-					i(221866),	-- Chaos Circuit
-					i(221867),	-- Chaos Circuit
-					i(221868),	-- Entropy Enhancer
-					i(221869),	-- Entropy Enhancer
-					i(221870),	-- Entropy Enhancer
-					i(221871),	-- Prototype: Potion Bomb of Speed
-					i(221872),	-- Potion Bomb of Speed
-					i(221873),	-- Potion Bomb of Speed
-					i(221874),	-- Potion Bomb of Speed
-					i(221875),	-- Prototype: Potion Bomb of Recovery
-					i(221876),	-- Potion Bomb of Recovery
-					i(221877),	-- Potion Bomb of Recovery
-					i(221878),	-- Potion Bomb of Recovery
-					i(221879),	-- Prototype: Potion Bomb of Power
-					i(221880),	-- Potion Bomb of Power
-					i(221881),	-- Potion Bomb of Power
-					i(221882),	-- Potion Bomb of Power
-					i(221883),	-- Prototype: Stasis Mine
-					i(221884),	-- Stasis Mine
-					i(221885),	-- Stasis Mine
-					i(221886),	-- Stasis Mine
-					i(221887),	-- Prototype: Gravity Mine
-					i(221888),	-- Gravity Mine
-					i(221889),	-- Gravity Mine
-					i(221890),	-- Gravity Mine
-					i(221891),	-- Prototype: Explosive Mine
-					i(221892),	-- Explosive Mine
-					i(221893),	-- Explosive Mine
-					i(221894),	-- Explosive Mine
 					i(221895),	-- Prototype: Tinker: Lightning Tether \\ Prototype: Tinker: Lightning  Tether
 					i(221896),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
 					i(221897),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
@@ -892,81 +841,10 @@ root(ROOTS.Unsorted, {
 					i(221900),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
 					i(221901),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
 					i(221902),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-					i(221903),	-- Prototype: Tinker: Earthen Delivery Drill
-					i(221904),	-- Tinker: Earthen Delivery Drill
-					i(221905),	-- Tinker: Earthen Delivery Drill
-					i(221906),	-- Tinker: Earthen Delivery Drill
-					i(221907),	-- Prototype: Tinker: Heartseeking Health Injector
-					i(221908),	-- Tinker: Heartseeking Health Injector
-					i(221909),	-- Tinker: Heartseeking Health Injector
-					i(221910),	-- Tinker: Heartseeking Health Injector
-					i(221911),	-- Serrated Cogwheel
-					i(221912),	-- Serrated Cogwheel
-					i(221913),	-- Serrated Cogwheel
-					i(221914),	-- Overclocked Cogwheel
-					i(221915),	-- Overclocked Cogwheel
-					i(221916),	-- Overclocked Cogwheel
-					i(221917),	-- Impeccable Cogwheel
-					i(221918),	-- Impeccable Cogwheel
-					i(221919),	-- Impeccable Cogwheel
-					i(221920),	-- Adjustable Cogwheel
-					i(221921),	-- Adjustable Cogwheel
-					i(221922),	-- Adjustable Cogwheel
-					i(221923),	-- Recalibrated Safety Switch
-					i(221924),	-- Recalibrated Safety Switch
-					i(221925),	-- Recalibrated Safety Switch
-					i(221926),	-- Blame Redirection Device \\ Blame Redistribution Device
-					i(221927),	-- Blame Redirection Device \\ Blame Redistribution Device
-					i(221928),	-- Blame Redirection Device \\ Blame Redistribution Device
-					i(221929),	-- Overclocked Circuit Board
-					i(221930),	-- Overclocked Circuit Board
-					i(221931),	-- Overclocked Circuit Board
-					i(221932),	-- Complicated Fuse Box
-					i(221933),	-- Complicated Fuse Box
-					i(221934),	-- Complicated Fuse Box
-					i(221935),	-- Pouch of Pocket Grenades
-					i(221936),	-- Pouch of Pocket Grenades
-					i(221937),	-- Pouch of Pocket Grenades
-					i(221938),	-- Concealed Chaos Module
-					i(221939),	-- Concealed Chaos Module
-					i(221940),	-- Concealed Chaos Module
-					i(221941),	-- Energy Redistribution Beacon
-					i(221942),	-- Energy Redistribution Beacon
-					i(221943),	-- Energy Redistribution Beacon
-					i(221944),	-- Prototype: Irresistible Red Button
-					i(221945),	-- Irresistible Red Button
-					i(221946),	-- Irresistible Red Button
-					i(221947),	-- Irresistible Red Button
-					i(221948),	-- Prototype: Pausing Pylon
-					i(221949),	-- Pausing Pylon
-					i(221950),	-- Pausing Pylon
-					i(221951),	-- Pausing Pylon
-					i(221952),	-- Prototype: Convincingly Realistic Jumper Cables
-					i(221953),	-- Convincingly Realistic Jumper Cables
-					i(221954),	-- Convincingly Realistic Jumper Cables
-					i(221955),	-- Convincingly Realistic Jumper Cables
-					i(221956),	-- Prototype: Algari Repair Bot 11O \\ Prototype: Repair Bot
-					i(221957),	-- Algari Repair Bot 11O \\ Repair Bot
-					i(221958),	-- Prototype: Portable Profession Possibility Projector
-					i(221959),	-- Portable Profession Possibility Projector
-					i(221960),	-- Prototype: Barrel of Fireworks
-					i(221961),	-- Prototype: Defective Escape Pod
-					i(221963),	-- Prototype: Filmless Camera \\ Prototype: Malfunctioning Navigation Beacon
-					i(221964),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
-					i(221965),	-- Prototype: Wormhole Generator: Khaz Algar
 					i(221968),	-- Legibly Scribbled Notes
-					i(221969),	-- P.0.W. x2
-					i(225642),	-- Acolyte's Goggles \\ Leveling Cloth Goggles (DNT)
-					i(225643),	-- Spelunker's Goggles \\ Leveling Leather Goggles (DNT)
-					i(225644),	-- Tracker's Goggles \\ Leveling Mail Goggles (DNT)
-					i(225645),	-- Dredger's Goggles \\ Leveling Plate Goggles (DNT)
-					i(225646),	-- 4UT0-41M3R \\ Leveling  Gun (DNT)
 					i(225984),	-- Assorted Choking Hazards
 					i(225985),	-- Assorted Choking Hazards
 					i(225986),	-- Assorted Choking Hazards
-					i(225987),	-- Bottled Brilliance
-					i(225988),	-- Bottled Brilliance
-					i(225989),	-- Bottled Brilliance
 				}),
 				prof(HERBALISM, {
 					i(217105),	-- Refine Khaz Algar Herbs
