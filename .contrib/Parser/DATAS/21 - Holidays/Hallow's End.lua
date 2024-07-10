@@ -1933,6 +1933,67 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 			}
 		}),
+		ach(40862, {	-- Tricks and Treats of Khaz Algar
+			["timeline"] = { ADDED_11_0_2 },
+			["g"] = {
+				-- TODO: Uncomment _quests when quests are put in place (they already exist so someone can already source them).
+				-- INFO: Could technically also work via automation, these criteria don't need to be written out, but they do require the quests to be sourced for that + the Wago file to be updated.
+				crit(69826, {	-- Azj-Kahet, Faerin's Advance
+					--["_quests"] = { 84579 },	-- Candy Bucket — Azj-Kahet, Faerin's Advance
+				}),
+				crit(69827, {	-- Azj-Kahet, Mmarl
+					--["_quests"] = { 84580 },	-- Candy Bucket — Azj-Kahet, Mmarl
+				}),
+				crit(69829, {	-- Azj-Kahet, Weaver's Lair
+					--["_quests"] = { 84582 },	-- Candy Bucket — Azj-Kahet, Weaver's Lair
+				}),
+				crit(69828, {	-- Azj-Kahet, Wildcamp Ul'ar
+					--["_quests"] = { 84581 },	-- Candy Bucket — Azj-Kahet, Wildcamp Ul'ar
+				}),
+				crit(69823, {	-- City of Threads, High Hollows
+					--["_quests"] = { 84576 },	-- Candy Bucket — City of Threads, High Hollows
+				}),
+				crit(69825, {	-- City of Threads, Umbral Bazzar
+					--["_quests"] = { 84578 },	-- Candy Bucket — City of Threads, Umbral Bazzar
+				}),
+				crit(69824, {	-- City of Threads - Lower, The Burrows
+					--["_quests"] = { 84577 },	-- Candy Bucket — City of Threads - Lower, The Burrows
+				}),
+				crit(69819, {	-- Hallowfall, Dunelle's Kindness
+					--["_quests"] = { 84572 },	-- Candy Bucket — Hallowfall, Dunelle's Kindness
+				}),
+				crit(69821, {	-- Hallowfall, Light's Redoubt
+					--["_quests"] = { 84574 },	-- Candy Bucket — Hallowfall, Light's Redoubt
+				}),
+				crit(69820, {	-- Hallowfall, Lorel's Crossing
+					--["_quests"] = { 84573 },	-- Candy Bucket — Hallowfall, Lorel's Crossing
+				}),
+				crit(69822, {	-- Hallowfall, Mereldar
+					--["_quests"] = { 84575 },	-- Candy Bucket — Hallowfall, Mereldar
+				}),
+				crit(69812, {	-- Isle of Dorn, Dornogal
+					--["_quests"] = { 84564 },	-- Candy Bucket — Isle of Dorn, Dornogal
+				}),
+				crit(69813, {	-- Isle of Dorn, Freywold Village
+					--["_quests"] = { 84566 },	-- Candy Bucket — Isle of Dorn, Freywold Village
+				}),
+				crit(69814, {	-- Isle of Dorn, Rambleshire
+					--["_quests"] = { 84567 },	-- Candy Bucket — Isle of Dorn, Rambleshire
+				}),
+				crit(69815, {	-- The Ringing Deeps, Camp Murroch
+					--["_quests"] = { 84568 },	-- Candy Bucket — The Ringing Deeps, Camp Murroch
+				}),
+				crit(69816, {	-- The Ringing Deeps, Gundargaz
+					--["_quests"] = { 84569 },	-- Candy Bucket — The Ringing Deeps, Gundargaz
+				}),
+				crit(69817, {	-- The Ringing Deeps, Opportunity Point
+					--["_quests"] = { 84570 },	-- Candy Bucket — The Ringing Deeps, Opportunity Point
+				}),
+				crit(69818, {	-- The Ringing Deeps, Shadowvein Point
+					--["_quests"] = { 84571 },	-- Candy Bucket — The Ringing Deeps, Shadowvein Point
+				}),
+			},
+		}),
 	}),
 	-- #endif
 	n(23682, {	-- Headless Horseman
