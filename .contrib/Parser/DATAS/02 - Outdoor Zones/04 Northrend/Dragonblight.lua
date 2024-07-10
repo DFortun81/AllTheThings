@@ -2466,12 +2466,14 @@ root(ROOTS.Zones, {
 					i(120137, {	-- Tome of Polymorph: Polar Bear Cub (CI!)
 						["timeline"] = { ADDED_6_0_2 },
 						["crs"] = { 26482 },	-- Arctic Grizzly
+						["description"] = "Expect to kill hundreds of Actic Grizzly bears before seeing this tome drop.",
 					}),
 					i(38262, {	-- Well-Worn Bat
 						["coord"] = { 68.2, 74.2, DRAGONBLIGHT },
 						["crs"] = {
 							27238,	-- Foreman Kaleiki
 						},
+						["description"] = "Only drops from Foreman Kaleiki, who spawns during the Horde quest 'A Means to an End'. The questline starts at Venomspite, and Foreman Kaleiki can be spawned as many times as needed.",
 					}),
 				}),
 			},
