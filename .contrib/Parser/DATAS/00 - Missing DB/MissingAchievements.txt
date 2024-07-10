@@ -1,5 +1,3 @@
 3.4.3.55417
 ach(40821),	-- Successfully Stress Test CN Realms
 ach(40841),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
-11.0.0.54774
-ach(40614),	-- Gobblin' with Glublurp

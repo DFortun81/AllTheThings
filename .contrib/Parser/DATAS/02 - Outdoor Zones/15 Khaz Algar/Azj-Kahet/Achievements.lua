@@ -59,6 +59,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(69808),	-- Umbral Bazaar
 				crit(69765),	-- High Hollows
 			}),
+			ach(40614),		-- Gobblin' with Glublurp
 			ach(40624),		-- Itsy Bitsy Spider (automated)
 			ach(40832),		-- Leave it to Weaver
 			ach(40619),		-- Mine Poppin'
