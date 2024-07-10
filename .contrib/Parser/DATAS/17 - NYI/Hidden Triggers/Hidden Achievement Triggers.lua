@@ -3572,6 +3572,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 			-- 11.0.2.55399
 			ach(40857),	-- Warbands: Bank Quest Unlock
 			ach(40861),	-- Mislaid Curiosities looted
+
+			-- 11.0.2.55522
+			ach(40865),	-- Puzzles completed
 		})),
 	}),
 });

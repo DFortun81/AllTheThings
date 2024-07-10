@@ -152,6 +152,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
+		ach(40863),	-- Perplexing Puzzle
+		ach(40864),	-- Plentiful Perplexing Puzzles
 		ach(40820, {	-- Raisin' Brann
 			["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
 		}),

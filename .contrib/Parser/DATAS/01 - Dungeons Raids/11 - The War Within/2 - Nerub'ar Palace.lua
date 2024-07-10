@@ -380,11 +380,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				ach(40469),	-- I'm Bringing Nerub-ack
 				ach(40256),	-- Nerub-ar Palace Guild Run
 				ach(40257),	-- Heroic: Nerub-ar Palace Guild Run
-				-- TODO: Sort this :D
-				-- Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS, {
-					ach(40265),	-- [PH] The Silken Court Achievement
-					ach(40730),	-- Love is in the Lair (TODO: maybe replaces [PH] The Silken Court Achievement?)
-				-- }),
 			}),
 			n(SPECIAL, {
 				n(228081, {	-- Ethereum Void Reaper
@@ -463,7 +458,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					ach(40264),	-- Kill Streak
 				}),
 				BossOnly(SILKEN_COURT, {
-
+					ach(40730),	-- Love is in the Lair
 				}),
 				BossOnly(ANSUREK, {
 					ach(40266),	-- Missed 'Em by That Much

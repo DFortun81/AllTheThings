@@ -647,6 +647,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(40099),	-- That Extra Push Over the Cliff
 			ach(40101),	-- Hitting one's Stride
 			ach(40102),	-- Dawn of a new Delve
+			ach(40265),	-- [PH] The Silken Court Achievement
 			ach(40306),	-- Allied Races: Earthen
 			ach(40432),	-- Nemesis (Solo)
 			ach(40505),	-- Fate of the Kirin Tor
