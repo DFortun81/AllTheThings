@@ -1289,7 +1289,6 @@ i(0, 447311);	-- Pilfer Through Parts
 i(0, 447332);	-- Bismuth Fueled Samophlange
 i(0, 447316);	-- Supercharged Thought Enhancer
 i(0, 447320);	-- Whirring Wristwraps
-
 --- ITEM ---
 i(225471, 438926);	-- Algari Competitor's Cloth Bracers
 i(225467, 438922);	-- Algari Competitor's Cloth Goggles
@@ -1300,7 +1299,6 @@ i(225469, 438924);	-- Algari Competitor's Mail Goggles
 i(225474, 438929);	-- Algari Competitor's Plate Bracers
 i(225470, 438925);	-- Algari Competitor's Plate Goggles
 i(225482, 455005);	-- Algari Competitor's Rifle
-
 --- DISCOVERY ---
 i(0, 447367);	-- Algari Repair Bot 11O
 i(0, 447325);	-- Aqirite Brainwave Projector
@@ -1345,13 +1343,11 @@ i(0, 447351);	-- Tinker: Heartseeking Health Injector
 i(0, 447319);	-- Venting Vambraces
 i(0, 447337);	-- Whimsical Wiring
 i(0, 447320);	-- Whirring Wristwraps
-
 --- SPECIALIZATION ---
 i(0, 447356);	-- Adjustable Cogwheel
 i(0, 447365);   -- Box o' Booms
 i(0, 447353);	-- Serrated Cogwheel
 i(0, 447355);	-- Impeccable Cogwheel
 i(0, 447354);	-- Overclocked Cogwheel
-
 --- QUEST ---
 i(0, 443570);
