@@ -60,7 +60,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				crit(69765),	-- High Hollows
 			}),
 			ach(40614),		-- Gobblin' with Glublurp
-			ach(40624),		-- Itsy Bitsy Spider (automated)
+			ach(40624, {	-- Itsy Bitsy Spider
+				-- TODO: Braghe please add spider coords, thanks
+				crit(68972, {	-- Webster
+					--["coord"] = { 1, 1, AZJ_KAHET },
+				}),
+				crit(68973, {	-- Spindle
+					--["coord"] = { 1, 1, AZJ_KAHET },
+				}),
+				crit(68974, {	-- Swift
+					--["coord"] = { 1, 1, AZJ_KAHET },
+				}),
+				crit(68976, {	-- Ru'murh
+					--["coord"] = { 1, 1, AZJ_KAHET },
+				}),
+				crit(68977, {	-- Thimble
+					--["coord"] = { 1, 1, AZJ_KAHET },
+				}),
+				crit(68978, {	-- Scampering Weave-Rat
+					--["coord"] = { 1, 1, AZJ_KAHET },
+				}),
+				crit(68979, {	-- General's Scouting Shadecaster
+					--["coord"] = { 1, 1, AZJ_KAHET },
+				}),
+			}),
 			ach(40832),		-- Leave it to Weaver
 			ach(40619),		-- Mine Poppin'
 			ach(40843),		-- Mine Poppin'
