@@ -547,14 +547,21 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		q(64516),	--
 		-- 9.1.5
 		q(64975),	--
-		expansion(EXPANSION.DF, {
-			expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
-				q(64764),	-- Flag Quest [DNT] (spellID 396726)
-				q(67045),	--
-				q(71054),	--
-			})),
-		}),
+		-- 10.0.0
+		q(64764),	-- Flag Quest [DNT] (spellID 396726)
+		q(66034),	-- On Fail, Reset Player [DNT] (spellID 374750) / MDI Quest Trigger
+		q(67045),	--
+		q(71054),	--
 		-- 10.0.5
 		q(74897),	-- L70 Human Hunter Achieved Duelist and Clock Mog 2023-03-15
+		-- 10.1.0
+		q(75443),	-- Flag Tracking Quest (spellID 431951)
+		-- 10.1.5
+		q(76267),	--
+		-- 10.2.5
+		q(78976),	--
+		q(79125),	--
+		q(79126),	--
+		q(79353),	--
 	}),
 }));

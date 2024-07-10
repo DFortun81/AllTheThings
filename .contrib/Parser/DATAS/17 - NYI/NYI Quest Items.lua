@@ -641,6 +641,8 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 
 		-- 10.2.7
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+			i(217349),	-- DEPRECATED - Arcane Dust
+			i(221266),	-- Precious Belonging [DNT]
 			i(213173),	-- Thread of Power
 		})),
 	}),

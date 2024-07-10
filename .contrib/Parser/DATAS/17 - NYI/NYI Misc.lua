@@ -517,6 +517,8 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(180621),	-- Court of Harvesters Tribute
 			i(181514),	-- Court of Harvesters Tribute
 			i(178566),	-- Cracked Hand Mirror
+			i(183834),	-- Crate of Drust Archaeology Fragments
+			i(183835),	-- Crate of Zandalari Archaeology Fragments
 			i(175030),	-- Critical Swiftmend
 			i(180463),	-- Crusty Scepter
 			i(178139),	-- Cypher of Relocation
@@ -1526,11 +1528,21 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(220205),	-- Satchel of Drake's Dreaming Crests
 			i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
 			i(220208),	-- Viridescent Bouquet of Aspect's Dreaming Crests
+			--
+			i(212175),	-- Draconic Commendation
 		})),
 
 		-- 10.2.7
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 			i(218120),	-- Arsenal: Exodar Peacekeeper's Armaments
+			i(223475),	-- Set Keystone Level: 2
+			i(223476),	-- Set Keystone Level: 3
+			i(223477),	-- Set Keystone Level: 4
+			i(223478),	-- Set Keystone Level: 5
+			i(223479),	-- Set Keystone Level: 6
+			i(223480),	-- Set Keystone Level: 7
+			i(223481),	-- Set Keystone Level: 8
+			i(223482),	-- Set Keystone Level: 9
 		})),
 	}),
 }));

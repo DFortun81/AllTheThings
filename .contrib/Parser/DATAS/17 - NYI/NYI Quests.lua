@@ -7439,79 +7439,205 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
 		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
-			q(70045),	-- Truths and Revelations [H]
-			q(70044),	-- Truths and Revelations [A]
-			q(70053),	-- Lessons From Our Past [A]
-			q(70054),	-- Lessons From Our Past [H]
-		})),
-		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
-			-- 10.0.0.44649
-			q(63520),	-- Winging It
-			q(64159),	-- Repatriate Rare Supplies
-			q(64162),	-- Ritual Rival
-			q(64163),	-- Revenge Against Renegades
-			q(64259),	--
-			q(64523),	-- Speed Talent 1 Quest Flag (spellID 357790)
-			q(64524),	-- Speed Talent 2 Quest Flag (spellID 357791)
-			q(64525),	-- Speed Talent 3 Quest Flag (spellID 357792)
+			q(70390),	-- (DNT) Chloe's Onboarding Kill Quest
+			q(65894),	-- [DNT] - Removed - Eggs Benediction
+			q(65897),	-- [DNT] - Removed - Focus Locus
+			q(66818),	-- [DNT] The Windy Springs
+			q(66962),	-- [DNT] 10.0 Explorers - Ch1 - Fake Quest Requirement (SMART)
+			q(66987),	-- [DNT] 10.0 Explorers - Ch2 - Fake Quest Requirement (SMART)
+			q(64856),	-- [DNT] A Little Pruning
+			q(70177),	-- [DNT] Bird Watcher Test
+			q(66824),	-- [DNT] Curious Treasure
+			q(70222),	-- [DNT] Death to Onboarding
+			q(67000),	-- [DNT] Game, Set, Match
+			q(67112),	-- [DNT] Kill those Bandits
+			q(66277, {["_drop"] = {"g"}}),	-- [DNT] Making Quest
+			q(67070),	-- [DNT] My First Quest
+			q(70443),	-- [DNT] Stay Awhile RP (spellID 385931)
+			q(67017),	-- [DNT] Training: Nothing Like a Strider Wing
+			q(66706),	-- [DNT]QuestNameHere
+			q(66713),	-- [DNT]QuestNameHere
+			q(66714),	-- [DNT]QuestNameHere
+			q(66550),	-- [PH] More Storms!
+			q(65106),	-- [TEMP] Intro Cinematic
+			q(67220),	-- 10.0 [DNT] [GAMEPLAY TEST] - [SPAWNTRACKING] (JSS)
+			q(65874),	-- A Rotten Revelation
+			q(66504),	-- A Shard of Crystalized Mana
+			q(66842),	-- A Shard of the Past
+			q(70173),	-- A Taste of Home
+			q(67025),	-- Activate Map: Apex Canopy (spellID 376949)
+			q(66584),	-- Additional Waygate Energy
+			q(66113),	-- An Inconspicuous Conveyance
+			q(66132),	-- Ancient Stone (spellID 370152)
+			q(66434),	-- Ancient Sword Design
+			q(70153),	-- Arcane Devourer
+			q(70643),	-- Arcane Explosives
+			q(65438),	-- Awesome Quest Start
+			q(66519),	-- Azure Basilisk Belly
+			q(70542),	-- Azure Span Rally
+			q(65936),	-- Break the Storm
+			q(66707),	-- Calming the Storm
+			q(66162),	-- Cataloging Wildlife
+			q(70829),	-- Cataloging Expeditions
+			q(66682),	-- Centaur Legends
+			q(66611),	-- Clearing the Skies
+			q(70642),	-- Clopper Wizbang's Lost Gear
+			q(66729),	-- Conditionals
+			q(71147),	-- Continued Waygate Exploration
+			q(70733),	-- Djaradin War Party
+			q(71926),	-- DNT - Knowledge Purchase - Valdrakken Accord (spellID 393200)
+			q(71927),	-- DNT - Knowledge Purchase - Dragonscale Expedition (spellID 393201)
+			q(71928),	-- DNT - Knowledge Purchase - Iskaara Tuskarr (spellID 393202)
+			q(71929),	-- DNT - Knowledge Purchase - Maruuk Centaur (spellID 393203)
+			q(66522),	-- Draconium Blade Sharpener
+			q(70715),	-- Dragonflight (70) E
+			q(65042),	-- Dragons!
+			q(66490),	-- Dragons!
 			q(64537),	-- Duration Talent Quest 1 Flag (spellID 357793)
 			q(64538),	-- Duration Talent Quest 2 Flag (spellID 357794)
 			q(64539),	-- Duration Talent Quest 3 Flag (spellID 357795)
 			q(64540),	-- Duration Talent Quest Unlimited Flag (spellID 357796)
+			q(66367),	-- Elaborate Lace Cuff
+			q(66176),	-- Elemental Experimentation
+			q(66109),	-- Enchanted Compass
+			q(69840),	-- Enraged Sapphire
+			q(69849),	-- Enraged Steamburst Elemental
+			q(65569),	-- Ensemble: Twisted Arcanum Regalia
+			q(65671),	-- Ensemble: Darkmoon Harlequin's Bells
+			q(65675),	-- Ensemble: Trapper's Munitions
+			q(65676),	-- Ensemble: Chains of the Honored Valarjar
+			q(65716),	-- Ensemble: Vestments of the Nightmare Forest
+			q(65734),	-- Ensemble: Battleplate of the Honored Valarjar
+			q(65738),	-- Ensemble: Dashing Buccaneer's Slops
+			q(70596),	-- Essence of Arcana
+			q(66496),	-- Expedition Task Accepted (spellID 372078)
+			q(66497),	-- Expedition Task Accepted (spellID 372095)
+			q(70178),	-- Expedition Supply Kit
+			q(70811),	-- Expert Excavation Tools
+			q(66355),	-- Flag Tracking Quest (spellID 371096)
+			q(66161),	-- For the Future [NYI]
+			q(70508),	-- Fueling the Engine: Second Spark
+			q(70630),	-- Fueling the Engine: Third Spark
+			q(66004),	-- Galgresh
+			q(72093),	-- Greeter Flowers Off [DNT] (spellID 392630)
+			q(70718),	-- Gushgut the Beaksinker
+			q(65372),	-- Hanging Marmoset Treasure
+			q(69887),	-- Hanmuk
+			q(70213),	-- Harkyn Grymstone
+			q(70713),	-- Highlands Fishing
+			q(66575),	-- Item as Questgiver: Vial
+			q(70890),	-- I'm Going on an Adventure!
+			q(71226),	-- Kill Rock Snails
+			q(66484),	-- Know Your Enemy: Proto-Dragons
+			q(70053),	-- Lessons From Our Past [A]
+			q(70054),	-- Lessons From Our Past [H]
+			q(65777),	-- Mudcaked Necklace
+			q(65099),	-- Neltharion's Final Command
+			q(70010),	-- New Moves
+			q(70886),	-- Now THIS is Dragon Racing!
+			q(66206),	-- Nozdormu, I've Come to Bargain
+			q(70526),	-- Ohn'ahran Plains Rally
+			q(67054),	-- Our Present, Our History
+			q(66366),	-- Overly Loud Pocketwatch
+			q(70830),	-- Packing for a Climb
+			q(66509),	-- Paranoid 1
+			q(69292),	-- PH
+			q(69669),	-- PH
+			q(65085),	-- Primalist Rage
+			q(70340),	-- Professions Quest - Part 5 - Challenge 2
+			q(66518),	-- Reinforced Scales
+			q(64159),	-- Repatriate Rare Supplies
+			q(67069),	-- Reset Hunting Party 001 Tracking Quest (spellID 377517)
+			q(64163),	-- Revenge Against Renegades
+			q(64162),	-- Ritual Rival
+			q(69863),	-- Scav Notail
+			q(66482),	-- Scout for Trophies: Terramaw
+			q(66424),	-- Scraps to Upgrades
+			q(69980),	-- Seavine: Fisherman Tinnak's Gift
+			q(65086),	-- Second Thoughts
+			q(67744),	-- Shezra
+			q(65876),	-- Shiverweb Silk
+			q(72191, {["_drop"] = {"g"}}),	-- Short-Supply Reward
+			q(66515),	-- Sizzling Nuggets
+			q(69854),	-- Solethus' Gravestone
+			q(64523),	-- Speed Talent 1 Quest Flag (spellID 357790)
+			q(64524),	-- Speed Talent 2 Quest Flag (spellID 357791)
+			q(64525),	-- Speed Talent 3 Quest Flag (spellID 357792)
+			q(66205),	-- Spell It Out For Me
+			q(69879),	-- Spellwrought Snowman
+			q(65786),	-- Spirit Journey (spellID 368793)
+			q(65787),	-- Spirit Journey (spellID 368812)
+			q(66520),	-- Stolen Weapon Mold
+			q(66521),	-- Stolen Valdrakken Weapon
+			q(72061),	-- Stormcaller Veldra
+			q(70245),	-- Studies of Wild Magic
+			q(70951),	-- Tackling the Tackle Box
+			q(70884),	-- Taking Back
+			q(67011),	-- Tale of an Adventure: Molten Core
+			q(67044),	-- Tale of a Hero: Yanikk
+			q(70022),	-- Tale of Korave
+			q(70644),	-- Taming the Wild Goat
+			q(65639),	-- Tarasek
+			q(66371),	-- Test Set - Dracthyr Quest B (spellID 371196)
+			q(66241),	-- Thaldraszus Rally
+			q(66158),	-- The Mountains Move [NYI]
+			q(66982),	-- The Queen of Dragons
+			q(70375),	-- The Rewards of Onboarding
+			q(65865),	-- They've Got Us Pinned Down!
+			q(72307),	-- Thieving Gnolls
+			q(69841),	-- Thunderous Matriarch
+			q(70852),	-- Tongue of Silver, Tongue of Flame
+			q(66349),	-- Training Rock
+			q(65422),	-- Treasure Hunting Ain't Easy
+			q(65912),	-- Treasure Map: Ohn'ahran Plains (spellID 369403)
+			q(66926),	-- Treasure Map: The Waking Shores (spellID 375918)
+			q(66927),	-- Treasure Map: The Azure Span (spellID 375926)
+			q(66928),	-- Treasure Map: Thaldraszus (spellID 375920)
+			q(70816, {["_drop"] = {"g"}}),	-- Treasure Tracking Techniques
+			q(70044),	-- Truths and Revelations [A]
+			q(70045),	-- Truths and Revelations [H]
+			q(66549),	-- Waking Shores Rally
+			q(66691),	-- Waking Shores - Race 01 - Intermediate
+			q(70640),	-- WANTED: Boss
+			q(70706),	-- Waygate: Shady Sanctuary
+			q(67743),	-- Whelpling Hide 'n Seek
+			q(65051),	-- Who We Were
+			q(69948),	-- Wilrive
+			q(63520),	-- Winging It
+			q(65283),	-- Zip Line Treasure
+			q(64259),	--
 			q(64558),	--
 			q(64559),	--
 			q(64580),	--
 			q(64855),	--
-			q(64856),	-- [DNT] A Little Pruning
 			q(64981),	--
-			q(65042),	-- Dragons!
-			q(65051),	-- Who We Were
 			q(65083),	--
-			q(65085),	-- Primalist Rage
-			q(65086),	-- Second Thoughts
-			q(65099),	-- Neltharion's Final Command
-			q(65106),	-- [TEMP] Intro Cinematic
-			q(65283),	-- Zip Line Treasure
 			q(65296),	--
 			q(65304),	--
 			q(65365),	--
 			q(65369),	--
-			q(65372),	-- Hanging Marmoset Treasure
-			q(65422),	-- Treasure Hunting Ain't Easy
 			q(65428),	--
-			q(65438),	-- Awesome Quest Start
 			q(65442),	--
 			q(65446),	--
 			q(65454),	--
 			q(65458),	--
 			q(65459),	--
-			q(65569),	-- Ensemble: Twisted Arcanum Regalia
 			q(65596),	--
 			q(65599),	--
 			q(65608),	--
-			q(65639),	-- Tarasek
 			q(65642),	--
 			q(65654),	--
-			q(65671),	-- Ensemble: Darkmoon Harlequin's Bells
-			q(65675),	-- Ensemble: Trapper's Munitions
-			q(65676),	-- Ensemble: Chains of the Honored Valarjar
 			q(65692),	--
 			q(65710),	--
 			q(65712),	--
 			q(65714),	--
-			q(65716),	-- Ensemble: Vestments of the Nightmare Forest
 			q(65719),	--
 			q(65722),	--
-			q(65734),	-- Ensemble: Battleplate of the Honored Valarjar
-			q(65738),	-- Ensemble: Dashing Buccaneer's Slops
 			q(65740),	--
 			q(65759),	--
 			q(65765),	--
 			q(65766),	--
-			q(65777),	-- Mudcaked Necklace
 			q(65781),	--
-			q(65786),	-- Spirit Journey (spellID 368793)
-			q(65787),	-- Spirit Journey (spellID 368812)
 			q(65790),	--
 			q(65797),	--
 			q(65799),	--
@@ -7524,9 +7650,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(65851),	--
 			q(65853),	--
 			q(65863),	--
-			q(65865),	-- They've Got Us Pinned Down!
-			q(65874),	-- A Rotten Revelation
-			q(65876),	-- Shiverweb Silk
 			q(65877),	--
 			q(65878),	--
 			q(65879),	--
@@ -7537,9 +7660,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(65884),	--
 			q(65885),	--
 			q(65889),	--
-			q(65894),	-- [DNT] - Removed - Eggs Benediction
-			q(65897),	-- [DNT] - Removed - Focus Locus
-			q(65912),	-- Treasure Map: Ohn'ahran Plains (spellID 369403)
 			q(65915),	--
 			q(65917),	--
 			q(65919),	--
@@ -7551,7 +7671,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(65932),	--
 			q(65933),	--
 			q(65934),	--
-			q(65936),	-- Break the Storm
 			q(65941),	--
 			q(65942),	--
 			q(65945),	--
@@ -7559,9 +7678,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(65961),	--
 			q(65964),	--
 			q(66002),	--
-			q(66004),	-- Galgresh
 			q(66008),	--
-			q(66034),	-- On Fail, Reset Player [DNT] (spellID 374750) / MDI Quest Trigger
 			q(66043),	--
 			q(66045),	--
 			q(66051),	--
@@ -7578,25 +7695,18 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66092),	--
 			q(66099),	--
 			q(66102),	--
-			q(66109),	-- Enchanted Compass
-			q(66113),	-- An Inconspicuous Conveyance
 			q(66120),	--
 			q(66125),	--
 			q(66127),	--
-			q(66132),	-- Ancient Stone (spellID 370152)
 			q(66142),	--
 			q(66143),	--
 			q(66144),	--
 			q(66146),	--
 			q(66153),	--
 			q(66157),	--
-			q(66158),	-- The Mountains Move [NYI]
-			q(66161),	-- For the Future [NYI]
-			q(66162),	-- Cataloging Wildlife
 			q(66168),	--
 			q(66171),	--
 			q(66172),	--
-			q(66176),	-- Elemental Experimentation
 			q(66192),	--
 			q(66194),	--
 			q(66195),	--
@@ -7605,8 +7715,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66200),	--
 			q(66202),	--
 			q(66204),	--
-			q(66205),	-- Spell It Out For Me
-			q(66206),	-- Nozdormu, I've Come to Bargain
 			q(66207),	--
 			q(66208),	--
 			q(66209),	--
@@ -7620,14 +7728,12 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66234),	--
 			q(66238),	--
 			q(66240),	--
-			q(66241),	-- Thaldraszus Rally
 			q(66255),	--
 			q(66260),	--
 			q(66271),	--
 			q(66273),	--
 			q(66274),	--
 			q(66276),	--
-			q(66277, {["_drop"] = {"g"}}),	-- [DNT] Making Quest
 			q(66284),	--
 			q(66300),	--
 			q(66301),	--
@@ -7653,25 +7759,18 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66346),	--
 			q(66347),	--
 			q(66348),	--
-			q(66349),	-- Training Rock
 			q(66350),	--
-			q(66355),	-- Flag Tracking Quest (spellID 371096)
 			q(66357),	--
 			q(66358),	--
 			q(66365),	--
-			q(66366),	-- Overly Loud Pocketwatch
-			q(66367),	-- Elaborate Lace Cuff
 			q(66370),	--
-			q(66371),	-- Test Set - Dracthyr Quest B (spellID 371196)
 			q(66372),	--
 			q(66403),	--
 			q(66404),	--
 			q(66405),	--
 			q(66407),	--
 			q(66408),	--
-			q(66424),	-- Scraps to Upgrades
 			q(66433),	--
-			q(66434),	-- Ancient Sword Design
 			q(66446),	--
 			q(66450),	--
 			q(66451),	--
@@ -7687,33 +7786,20 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66477),	--
 			q(66479),	--
 			q(66481),	--
-			q(66482),	-- Scout for Trophies: Terramaw
 			q(66483),	--
-			q(66484),	-- Know Your Enemy: Proto-Dragons
 			q(66485),	--
 			q(66486),	--
 			q(66487),	--
-			q(66490),	-- Dragons!
 			q(66491),	--
 			q(66492),	--
 			q(66494),	--
 			q(66495),	--
-			q(66496),	-- Expedition Task Accepted (spellID 372078)
-			q(66497),	-- Expedition Task Accepted (spellID 372095)
 			q(66498),	--
 			q(66499),	--
 			q(66502),	--
-			q(66504),	-- A Shard of Crystalized Mana
 			q(66506),	--
-			q(66509),	-- Paranoid 1
 			q(66510),	--
 			q(66514),	--
-			q(66515),	-- Sizzling Nuggets
-			q(66518),	-- Reinforced Scales
-			q(66519),	-- Azure Basilisk Belly
-			q(66520),	-- Stolen Weapon Mold
-			q(66521),	-- Stolen Valdrakken Weapon
-			q(66522),	-- Draconium Blade Sharpener
 			q(66530),	--
 			q(66531),	--
 			q(66532),	--
@@ -7730,12 +7816,9 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66544),	--
 			q(66545),	--
 			q(66548),	--
-			q(66549),	-- Waking Shores Rally
-			q(66550),	-- [PH] More Storms!
 			q(66572),	--
 			q(66573),	--
 			q(66574),	--
-			q(66575),	-- Item as Questgiver: Vial
 			q(66576),	--
 			q(66580),	--
 			q(66581),	--
@@ -7756,7 +7839,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66608),	--
 			q(66609),	--
 			q(66610),	--
-			q(66611),	-- Clearing the Skies
 			q(66623),	--
 			q(66624),	--
 			q(66625),	--
@@ -7790,22 +7872,15 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66674),	--
 			q(66677),	--
 			q(66678),	--
-			q(66682),	-- Centaur Legends
 			q(66685),	--
 			q(66686),	--
-			q(66691),	-- Waking Shores - Race 01 - Intermediate
 			q(66697),	--
 			q(66701),	--
 			q(66702),	--
 			q(66705),	--
-			q(66706),	-- [DNT]QuestNameHere
-			q(66707),	-- Calming the Storm
-			q(66713),	-- [DNT]QuestNameHere
-			q(66714),	-- [DNT]QuestNameHere
 			q(66716),	--
 			q(66717),	--
 			q(66723),	--
-			q(66729),	-- Conditionals
 			q(66731),	--
 			q(66736),	--
 			q(66739),	--
@@ -7871,15 +7946,12 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66815),	--
 			q(66816),	--
 			q(66817),	--
-			q(66818),	-- [DNT] The Windy Springs
 			q(66819),	--
 			q(66820),	--
 			q(66821),	--
 			q(66822),	--
 			q(66823),	--
-			q(66824),	-- [DNT] Curious Treasure
 			q(66832),	--
-			q(66842),	-- A Shard of the Past
 			q(66849),	--
 			q(66850),	--
 			q(66851),	--
@@ -7887,42 +7959,28 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66853),	--
 			q(66857),	--
 			q(66859),	--
-			q(66926),	-- Treasure Map: The Waking Shores (spellID 375918)
-			q(66927),	-- Treasure Map: The Azure Span (spellID 375926)
-			q(66928),	-- Treasure Map: Thaldraszus (spellID 375920)
 			q(66930),	--
 			q(66954),	--
 			q(66955),	--
-			q(66962),	-- [DNT] 10.0 Explorers - Ch1 - Fake Quest Requirement (SMART)
 			q(66976),	--
 			q(66977),	--
 			q(66978),	--
 			q(66979),	--
 			q(66980),	--
 			q(66981),	--
-			q(66982),	-- The Queen of Dragons
 			q(66986),	--
-			q(66987),	-- [DNT] 10.0 Explorers - Ch2 - Fake Quest Requirement (SMART)
-			q(67000),	-- [DNT] Game, Set, Match
 			q(67001),	--
-			q(67011),	-- Tale of an Adventure: Molten Core
 			q(67016),	--
-			q(67017),	-- [DNT] Training: Nothing Like a Strider Wing
 			q(67019),	--
 			q(67020),	--
 			q(67022),	--
 			q(67023),	--
-			q(67025),	-- Activate Map: Apex Canopy (spellID 376949)
 			q(67028),	--
 			q(67029),	--
 			q(67037),	--
 			q(67040),	--
 			q(67042),	--
-			q(67044),	-- Tale of a Hero: Yanikk
 			q(67052),	--
-			q(67054),	-- Our Present, Our History
-			q(67069),	-- Reset Hunting Party 001 Tracking Quest (spellID 377517)
-			q(67070),	-- [DNT] My First Quest
 			q(67085),	--
 			q(67086),	--
 			q(67087),	--
@@ -7932,7 +7990,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(67091),	--
 			q(67092),	--
 			q(67098),	--
-			q(67112),	-- [DNT] Kill those Bandits
 			q(67114),	--
 			q(67115),	--
 			q(67138),	--
@@ -7948,30 +8005,18 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(67166),	--
 			q(67171),	--
 			q(67172),	--
-			q(67220),	-- 10.0 [DNT] [GAMEPLAY TEST] - [SPAWNTRACKING] (JSS)
 			q(67223),	--
 			q(67224),	--
 			q(67225),	--
 			q(67226),	--
 			q(67227),	--
 			q(67228),	--
-			q(67743),	-- Whelpling Hide 'n Seek
-			q(67744),	-- Shezra
 			q(67749),	--
 			q(68086),	--
-			q(69292),	-- PH
 			q(69556),	--
-			q(69669),	-- PH
-			q(69840),	-- Enraged Sapphire
-			q(69841),	-- Thunderous Matriarch
-			q(69849),	-- Enraged Steamburst Elemental
 			q(69853),	--
-			q(69854),	-- Solethus' Gravestone
 			q(69860),	--
-			q(69863),	-- Scav Notail
-			q(69879),	-- Spellwrought Snowman
 			q(69881),	--
-			q(69887),	-- Hanmuk
 			q(69903),	--
 			q(69905),	--
 			q(69906),	--
@@ -7981,22 +8026,18 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(69920),	--
 			q(69945),	--
 			q(69947),	--
-			q(69948),	-- Wilrive
 			q(69977),	--
 			q(69978),	--
-			q(69980),	-- Seavine: Fisherman Tinnak's Gift
 			q(69982),	--
 			q(69985),	--
 			q(69989),	--
 			q(69997),	--
 			q(70008),	--
-			q(70010),	-- New Moves
 			q(70013),	--
 			q(70014),	--
 			q(70017),	--
 			q(70019),	--
 			q(70020),	--
-			q(70022),	-- Tale of Korave
 			q(70038),	--
 			q(70046),	--
 			q(70056),	--
@@ -8020,17 +8061,10 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(70145),	--
 			q(70147),	--
 			q(70151),	--
-			-- 10.0.0.44707
-			q(70153),	-- Arcane Devourer
 			q(70165),	--
 			q(70167),	--
-			q(70173),	-- A Taste of Home
-			q(70177),	-- [DNT] Bird Watcher Test
-			q(70178),	-- Expedition Supply Kit
 			q(70205),	--
-			q(70213),	-- Harkyn Grymstone
 			q(70216),	--
-			q(70222),	-- [DNT] Death to Onboarding
 			q(70225),	--
 			q(70226),	--
 			q(70227),	--
@@ -8038,25 +8072,15 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(70249),	--
 			q(70257),	--
 			q(70276),	--
-			-- 10.0.0.44795
-			q(70340),	-- Professions Quest - Part 5 - Challenge 2
-			q(70375),	-- The Rewards of Onboarding
 			q(70387),	--
 			q(70388),	--
-			q(70390),	-- (DNT) Chloe's Onboarding Kill Quest
 			q(70393),	--
 			q(70394),	--
 			q(70403),	--
 			q(70404),	--
 			q(70405),	--
 			q(70406),	--
-			-- 10.0.0.44895
-			q(70245),	-- Studies of Wild Magic
-			q(70443),	-- [DNT] Stay Awhile RP (spellID 385931)
 			q(70447),	--
-			q(70508),	-- Fueling the Engine: Second Spark
-			q(70526),	-- Ohn'ahran Plains Rally
-			q(70542),	-- Azure Span Rally
 			q(70551),	--
 			q(70552),	--
 			q(70553),	--
@@ -8065,44 +8089,20 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(70556),	--
 			q(70588),	--
 			q(70590),	--
-			q(70596),	-- Essence of Arcana
 			q(70597),	--
 			q(70626),	--
 			q(70628),	--
-			q(70630),	-- Fueling the Engine: Third Spark
 			q(70635),	--
 			q(70637),	--
-			q(70640),	-- WANTED: Boss
-			q(70642),	-- Clopper Wizbang's Lost Gear
-			q(70643),	-- Arcane Explosives
-			q(70644),	-- Taming the Wild Goat
-			-- 10.0.0.44999
 			q(70645),	--
 			q(70657),	--
 			q(70660, {["_noautomation"] = true}),	--
-			q(70706),	-- Waygate: Shady Sanctuary
 			q(70707),	--
-			q(70713),	-- Highlands Fishing
-			q(70715),	-- Dragonflight (70) E
-			q(70718),	-- Gushgut the Beaksinker
-			q(70733),	-- Djaradin War Party
-			-- 10.0.0.45141
-			q(70811),	-- Expert Excavation Tools
-			q(70816, {["_drop"] = {"g"}}),	-- Treasure Tracking Techniques
-			q(70829),	-- Cataloging Expeditions
-			q(70830),	-- Packing for a Climb
 			q(70836),	--
 			q(70844),	--
-			q(70852),	-- Tongue of Silver, Tongue of Flame
-			q(70884),	-- Taking Back
-			q(70886),	-- Now THIS is Dragon Racing!
-			q(70890),	-- I'm Going on an Adventure!
 			q(70898),	--
 			q(70923),	--
 			q(70949),	--
-			q(70951),	-- Tackling the Tackle Box
-			-- 10.0.0.45232
-			q(66584),	-- Additional Waygate Energy
 			q(71055),	--
 			q(71056),	--
 			q(71057),	--
@@ -8127,13 +8127,10 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(71086),	--
 			q(71087),	--
 			q(71088),	--
-			q(71147),	-- Continued Waygate Exploration
-			-- 10.0.0.45335
 			q(70993),	--
 			q(71186),	--
 			q(71201),	--
 			q(71214),	--
-			q(71226),	-- Kill Rock Snails
 			q(71236),	--
 			q(71237),	--
 			q(71262),	--
@@ -8163,72 +8160,45 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(71785),	--
 			q(71856),	--
 			q(71867),	--
-			q(71926),	-- DNT - Knowledge Purchase - Valdrakken Accord (spellID 393200)
-			q(71927),	-- DNT - Knowledge Purchase - Dragonscale Expedition (spellID 393201)
-			q(71928),	-- DNT - Knowledge Purchase - Iskaara Tuskarr (spellID 393202)
-			q(71929),	-- DNT - Knowledge Purchase - Maruuk Centaur (spellID 393203)
 			q(71949),	--
 			q(71968),	--
-			-- 10.0.0.45454
 			q(71996),	--
 			q(72000),	--
 			q(72004),	--
 			q(72012),	--
-			q(72061),	-- Stormcaller Veldra
 			q(72062),	--
 			q(72066),	--
 			q(72073),	--
 			q(72076),	--
 			q(72077),	--
 			q(72078),	--
-			-- 10.0.0.45570
-			q(72093),	-- Greeter Flowers Off [DNT] (spellID 392630)
 			q(72106),	--
 			q(72107),	--
 			q(72108),	--
 			q(72109),	--
 			q(72111),	--
-			-- 10.0.0.45661
 			q(72153),	--
 			q(72180),	--
-			q(72191, {["_drop"] = {"g"}}),	-- Short-Supply Reward
 			q(72255),	--
 			q(72257),	--
-			q(72307),	-- Thieving Gnolls
 		})),
 
 		-- 10.0.2
 		expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
-			-- 10.0.2.45779
-			q(72350),	--
+			q(72365),	-- [test] Learn to spend talent points
+			q(72643, {["_drop"] = {"g"}}),	-- Dragon Isles Supplies
 			q(72357),	-- Review Box Used [DNT] (spellID 374484)
+			q(72434),	-- Ruby Lifeshrine Loop
+			q(72350),	--
 			q(72359),	--
 			q(72361),	--
-			q(72365),	-- [test] Learn to spend talent points
 			q(72368),	--
 			q(72370),	--
 			q(72379),	--
-			-- 10.0.2.45969
-			q(72434),	-- Ruby Lifeshrine Loop
-			-- 10.0.2.46091
 			q(72491),	--
 			q(72492),	--
 			q(72493),	--
 			q(72499),	--
-			q(72539, {["_drop"] = {"g"}}),	-- Dragonflight (61-69) E
-			q(72544),	-- Dragonflight (70) E
-			q(72550),	-- Dragonflight (61-69) E
-			q(72557),	-- Dragonflight (70) E
-			q(72567),	-- Dragonflight (70) E
-			q(72572),	-- Dragonflight (70) E
-			q(72575),	-- Dragonflight (70) E
-			q(72580),	-- Dragonflight (70) E
-			q(72583),	-- Dragonflight (70) E
-			-- 10.0.2.46259
-			q(72623, {["_drop"] = {"g"}}),	-- Dragonflight (61-69) E
-			q(72628),	-- Dragonflight (70) E
-			q(72631),	-- Dragonflight (70) E
-			q(72643, {["_drop"] = {"g"}}),	-- Dragon Isles Supplies
 			q(72683),	--
 			q(72684),	--
 			q(72731),	--
@@ -8240,13 +8210,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(72774),	--
 			q(72775),	--
 			q(72780),	--
-			-- 10.0.2.46420
-			q(72817),	-- Dragonflight (70) E
-			q(72819),	-- Shadowlands (60) E
 			q(72837),	--
-			-- 10.0.2.46781
 			q(73224),	--
-			-- 10.0.2.46879
 			q(72119),	--
 			q(73897),	--
 			q(73905),	--
@@ -8286,7 +8251,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(74099),	--
 			q(74100),	--
 			q(74101),	--
-			-- 10.0.2.46924
 			q(67082),	--
 			q(67083),	--
 			q(74123),	--
@@ -8310,43 +8274,45 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(74227),	--
 			q(74239),	--
 			q(74240),	--
-			-- 10.0.2.46999
 			q(66093),	--
 			q(66095),	--
 			q(66096),	--
 			q(66097),	--
 			q(66098),	--
 			q(69876),	--
-			-- 10.0.2.47067
-			-- 10.0.2.47120
 			q(71213),	--
-			-- 10.0.2.47213
 			q(74416),	--
 		})),
 
 		-- 10.0.5
 		expansion(EXPANSION.DF, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
-			-- 10.0.5.47799
 			q(66925),	-- [DNT] Boar-B-Q
+			q(72384),	-- Valdrakken Tour
 			q(72085),	--
 			q(72092),	--
-			q(72384),	-- Valdrakken Tour
 			q(72829),	--
 			q(72830),	--
-			-- 10.0.5.47871
 			q(74898),	--
 		})),
 
 		-- 10.0.7
 		expansion(EXPANSION.DF, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+			q(73549),	-- [DNT] Complete Clan Tracking Quest (spellID 399498)
+			q(73177),	-- [DNT] Injured Youth Kill Credit (spellID 398844)
+			q(74384),	-- [DNT] Placeholder Broadcast: Finale (spellID 398724)
+			q(72906),	-- [DNT] Storm Pet Battle
 			q(74955, { ["_drop"] = { "g" }, }),	-- An Egg-centric Discovery
+			q(75065),	-- Campaign Testing - Dummy Quest
 			q(74363),	-- Ensemble: Cloudburst Regalia
-			q(74364),	-- Ensemble: Dust Devil Armor
 			q(74365),	-- Ensemble: Cyclonic Battlegear
+			q(74364),	-- Ensemble: Dust Devil Armor
 			q(74366),	-- Ensemble: Firestorm Armor
-		})),
-		expansion(EXPANSION.DF, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
-			-- 10.0.7.47910
+			q(74361),	-- Deprecated Quest
+			q(74362),	-- Deprecated Quest
+			q(74774, {["_drop"] = {"g"}}),	-- More Keys
+			q(74116),	-- Reach North
+			q(74392),	-- Reach South
+			q(74360),	-- Signed, Sealed, Delivered
 			q(72425),	--
 			q(72520),	--
 			q(72521),	--
@@ -8354,17 +8320,10 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(72608),	--
 			q(72716),	--
 			q(72718),	--
-			q(72906),	-- [DNT] Storm Pet Battle
-			q(74116),	-- Reach North
 			q(74309),	--
 			q(74314),	--
 			q(74316),	--
 			q(74317),	--
-			q(74360),	-- Signed, Sealed, Delivered
-			q(74361),	-- Deprecated Quest
-			q(74362),	-- Deprecated Quest
-			q(74384),	-- [DNT] Placeholder Broadcast: Finale (spellID 398724)
-			q(74392),	-- Reach South
 			q(74418),	--
 			q(74427),	--
 			q(74478),	--
@@ -8381,21 +8340,15 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(74761),	--
 			q(74762),	--
 			q(74763),	--
-			q(74774, {["_drop"] = {"g"}}),	-- More Keys
 			q(74890),	--
-			-- 10.0.7.47983
 			q(75034),	--
-			q(75065),	-- Campaign Testing - Dummy Quest
-			-- 10.0.7.48076
 			q(75202),	--
 			q(75224),	--
-			-- 10.0.7.48295
 			q(75426),	--
 			q(75427),	--
 			q(75428),	--
 			q(75432),	--
 			q(75457),	--
-			-- 10.0.7.48439
 			q(75520),	--
 			q(75521),	--
 			q(75522),	--
@@ -8405,31 +8358,36 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75531),	--
 			q(75532),	--
 			q(75533),	--
-			-- 10.0.7.48749
-			q(73177),	-- [DNT] Injured Youth Kill Credit (spellID 398844)
-			q(73549),	-- [DNT] Complete Clan Tracking Quest (spellID 399498)
 			q(74672),	--
 			q(74677),	--
-			-- 10.0.7.48966
 			q(75449),	--
 		})),
 
 		-- 10.1.0
 		expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
-			q(75528),	-- A Tester's Guide to Entering Zaralek
-		})),
-		expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
-			-- 10.1.0.48480
-			q(71053),	-- Hermit Kill Quest
+			q(75719),	-- [DNT] Test Quest
 			q(72027),	-- [DNT] Training Kill Quest JKP
 			q(72480),	-- [DNT] Training Collect Quest
-			q(72885),	-- Loamm Placeholder Quest
-			q(72887),	--
-			q(72932),	-- Our Father's Legacy - DEPRECATED
-			q(72957),	-- A Sundered Road [DNT]
 			q(72960),	-- [NYI] Refti Cleaning
-			q(73099),	--
+			q(72957),	-- A Sundered Road [DNT]
+			q(75528),	-- A Tester's Guide to Entering Zaralek
+			q(75027),	-- Aerial Domination
+			q(75831),	-- Barter Up
+			q(76111),	-- Ensemble: Enmity Hood and Cloak
+			q(75391),	-- Epilogue Scene (DNT) (spellID 406790)
+			q(75576),	-- Grim Guzzler Invasion!
+			q(75314),	-- Hadexia
 			q(73151),	-- Hats Off
+			q(71053),	-- Hermit Kill Quest
+			q(75342),	-- Kronkapace
+			q(75338),	-- Lavermix
+			q(72885),	-- Loamm Placeholder Quest
+			q(75937, {["_drop"] = {"g"}}),	-- No Time Like The Present
+			q(72932),	-- Our Father's Legacy - DEPRECATED
+			q(75726),	-- Sweaty Armor
+			q(75022),	-- Vinyeti
+			q(72887),	--
+			q(73099),	--
 			q(73195),	--
 			q(73695),	--
 			q(73712),	--
@@ -8444,22 +8402,16 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(74958),	--
 			q(75017),	--
 			q(75021),	--
-			q(75022),	-- Vinyeti
-			q(75027),	-- Aerial Domination
 			q(75203),	--
 			q(75226),	--
 			q(75229),	--
 			q(75242),	--
 			q(75313),	--
-			q(75314),	-- Hadexia
 			q(75337),	--
-			q(75338),	-- Lavermix
 			q(75341),	--
-			q(75342),	-- Kronkapace
 			q(75389),	--
 			q(75429),	--
 			q(75442),	--
-			q(75443),	--
 			q(75445),	--
 			q(75446),	--
 			q(75452),	--
@@ -8492,7 +8444,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75571),	--
 			q(75572),	--
 			q(75574),	--
-			q(75576),	-- Grim Guzzler Invasion!
 			q(75588),	--
 			q(75591),	--
 			q(75592),	--
@@ -8502,17 +8453,11 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75615),	--
 			q(75616),	--
 			q(75618),	--
-			-- 10.1.0.48537
 			q(75631),	--
-			-- 10.1.0.48661
-			q(75719),	-- [DNT] Test Quest
-			q(75726),	-- Sweaty Armor
 			q(75763),	--
 			q(75774),	--
 			q(75775),	--
 			q(75818),	--
-			q(75831),	-- Barter Up
-			-- 10.1.0.48776
 			q(75894),	--
 			q(75896),	--
 			q(75897),	--
@@ -8524,7 +8469,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75909),	--
 			q(75911),	--
 			q(75912),	--
-			q(75937, {["_drop"] = {"g"}}),	-- No Time Like The Present
 			q(75995),	--
 			q(75999),	--
 			q(76001),	--
@@ -8536,30 +8480,27 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(76009),	--
 			q(76010),	--
 			q(76012),	--
-			-- 10.1.0.48898
 			q(76082),	--
-			q(76111),	-- Ensemble: Enmity Hood and Cloak
 			q(76123),	--
-			-- 10.1.0.49092
 			q(76172),	--
 			q(76173),	--
 			q(76174),	--
 			q(76200),	--
 			q(76202),	--
-			-- 10.1.0.49679
 			q(75659),	--
-			-- 10.1.0.49741
 			q(72943),	--
 			q(75054),	--
-			q(75391),	-- Epilogue Scene (DNT) (spellID 406790)
-			-- 10.1.0.49890
-				q(75059),	--
+			q(75059),	--
 		})),
 
 		-- 10.1.5
 		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
-			--10.1.5.49516
 			q(73022),	-- [DNT] Custom Delays
+			q(75714),	-- A Trainee's Test [DNT]
+			q(76021),	-- Basic Kill Quest [DNT]
+			q(76024),	-- Basic Kill Quest [DNT]
+			q(77094),	-- Basic Kill Quest [DNT]
+			q(77092),	-- Test Quest (DNT)
 			q(73087),	--
 			q(73088),	--
 			q(73116),	--
@@ -8570,9 +8511,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75460),	--
 			q(75536),	--
 			q(75605),	--
-			q(75714),	-- A Trainee's Test [DNT]
-			q(76021),	-- Basic Kill Quest [DNT]
-			q(76024),	-- Basic Kill Quest [DNT]
 			q(76198),	--
 			q(76218),	--
 			q(76219),	--
@@ -8601,9 +8539,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(76360),	--
 			q(76371),	--
 			q(76374),	--
-			--10.1.5.49595
 			q(76555),	--
-			--10.1.5.49719
 			q(76561),	--
 			q(76563),	--
 			q(76636),	--
@@ -8626,29 +8562,20 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(76731),	--
 			q(76732),	--
 			q(76981),	--
-			--10.1.5.49824
-			q(77092),	-- Test Quest (DNT)
-			q(77094),	-- Basic Kill Quest [DNT]
 			q(77174),	--
 			q(77184),	--
 			q(77185),	--
 			q(77199),	--
-			--10.1.5.50006
 			q(77358),	--
 			q(77364),	--
 			q(77418),	--
 			q(77419),	--
-			--10.1.5.50130
 			q(77435),	--
 			q(77506),	--
 			q(77567),	--
-			--10.1.5.50199
 			q(77691),	--
-			--10.1.5.50355
 			q(76157),	--
-			--10.1.5.50469
 			q(77883),	--
-			--10.1.5.51130
 			q(77333),	--
 			q(77336),	--
 			q(77337),	--
@@ -8657,10 +8584,11 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 
 		-- 10.1.7
 		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
-			-- 10.1.7.50442
-			q(75938),	-- Test
-			q(77485),	-- Technoscrying: Back to Eadweard!
+			q(76560),	-- [PH] Cogs Breadcrumb
 			q(77488),	-- Excavation: Back to Eadweard!
+			q(77485),	-- Technoscrying: Back to Eadweard!
+			q(75938),	-- Test
+			q(75369),	-- Use Your Coin!
 			q(77615),	--
 			q(77699),	--
 			q(77700),	--
@@ -8676,49 +8604,214 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(77710),	--
 			q(77790),	--
 			q(77861),	--
-			-- 10.1.7.50893
 			q(78161),	--
-			-- 10.1.7.51059
 			q(78300),	--
 			q(78323),	--
 			q(78324),	--
-			-- 10.1.7.51187
 			q(76405),	--
 			q(76455),	--
 			q(76511),	--
 			q(76553),	--
-			q(76560),	-- [PH] Cogs Breadcrumb
 			q(77569),	--
-			-- 10.1.7.51237
 			q(76210),	--
 			q(76211),	--
 			q(76408),	--
 			q(77848),	--
 			q(77849),	--
-			-- 10.1.7.51421
 			q(78110),	--
-			-- 10.1.7.51754
 			q(73053),	--
 			q(73063),	--
 			q(73954),	--
 			q(74288),	--
 			q(74289),	--
 			q(74846),	--
-			q(75369),	-- Use Your Coin!
 		})),
 
 		-- 10.2.0
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
-			q(78012),	-- Rune of Adaptive Binding
+			q(78001),	-- [DEPRECATED] 10.2 Enchanting
+			q(78268),	-- [DNT] Test Quest
+			q(76167),	-- A Place of Refuge
+			q(76168),	-- A Place of Refuge
+			q(78096),	-- A Silver Lining
+			q(76164),	-- Bovan's Last Hope
+			q(76201),	-- Clone Ownership Verification [DNT]
 			q(78013),	-- Concentrated Sophic Vellum
+			q(76161),	-- Conversation Testing [DNT]
+			q(77101),	-- Ingredient Quest Template
+			q(78012),	-- Rune of Adaptive Binding
+			q(77832),	-- Shadows upon shadows
+			q(76432),	-- Slay Corrupted Denizens
+			q(75272),	-- Test
+			q(75610),	--
+			q(76259),	--
+			q(76346),	--
+			q(76349),	--
+			q(76466),	--
+			q(76467),	--
+			q(76468),	--
+			q(77161),	--
+			q(77162),	--
+			q(77177),	--
+			q(77196),	--
+			q(77319),	--
+			q(77320),	--
+			q(77321),	--
+			q(77351),	--
+			q(77546),	--
+			q(77547),	--
+			q(77548),	--
+			q(77549),	--
+			q(77550),	--
+			q(77551),	--
+			q(77552),	--
+			q(77553),	--
+			q(77554),	--
+			q(77555),	--
+			q(77556),	--
+			q(77557),	--
+			q(77558),	--
+			q(77559),	--
+			q(77560),	--
+			q(77561),	--
+			q(77562),	--
+			q(77563),	--
+			q(77564),	--
+			q(77565),	--
+			q(77566),	--
+			q(77650),	--
+			q(77663),	--
+			q(77683),	--
+			q(77693),	--
+			q(77694),	--
+			q(77695),	--
+			q(77738),	--
+			q(77740),	--
+			q(77741),	--
+			q(77742),	--
+			q(77748),	--
+			q(77749),	--
+			q(77750),	--
+			q(77751),	--
+			q(77752),	--
+			q(77753),	--
+			q(77758),	--
+			q(77773),	--
+			q(77803),	--
+			q(77814),	--
+			q(77847),	--
+			q(77925),	--
+			q(77926),	--
+			q(77939),	--
+			q(77988),	--
+			q(77991),	--
+			q(77992),	--
+			q(77995),	--
+			q(78067),	--
+			q(78087),	--
+			q(78209),	--
+			q(78217),	--
+			q(78218),	--
+			q(78247),	--
+			q(78252),	--
+			q(78253),	--
+			q(78331),	--
+			q(78357),	--
+			q(78362),	--
+			q(78366),	--
+			q(78377),	--
+			q(78380),	--
+			q(78420),	--
+			q(78432),	--
+			q(78433),	--
+			q(78554),	--
+			q(78576),	--
+			q(78577),	--
+			q(78578),	--
+			q(78617),	--
+			q(78644),	--
+			q(78711),	--
+			q(78712),	--
+			q(78720),	--
+			q(78725),	--
+			q(78731),	--
+			q(78732),	--
+			q(78737),	--
+			q(78789),	--
+			q(78822),	--
+			q(78825),	--
+			q(78829),	--
+			q(78891),	--
+			q(78899),	--
+			q(78906),	--
+			q(78928),	--
+			q(78955),	--
+			q(77952),	--
+			q(77837),	--
+			q(78048),	--
+			q(76383),	--
+			q(78176),	--
+			q(76279),	--
+			q(77980),	--
+			q(77993),	--
+			q(78004),	--
+			q(78122),	--
 		})),
 
 		-- 10.2.5
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+			q(79314),	-- Arsenal: Quel'Serrar Skyborn Blades
+			q(77764),	-- Curious Find: Apprentice Astrologist Homework
+			q(79517),	-- Ensemble: Dark Ranger General's Kit
+			q(79210),	-- Ensemble: Sky Witch's Attire
 			q(80059),	-- Ensemble: Spring Reveler's Dandelion Collection
 			q(80060),	-- Ensemble: Spring Reveler's Dandelion Collection
 			q(80061),	-- Ensemble: Spring Reveler's Turquoise Collection
 			q(80064),	-- Ensemble: Spring Reveler's Turquoise Collection
+			q(80065),	-- Ensemble: Spring Reveler's Cornsilk Collection
+			q(80066),	-- Ensemble: Spring Reveler's Cornsilk Collection
+			q(78272, { ["_drop"] = { "g" }, }),	-- Interrupting Duck
+			q(79350),	-- Intro Dummy Quest Week 1 (Text Only)
+			q(79537),	-- Jrz Test Currency Quest
+			q(76391),	--
+			q(76392),	--
+			q(76393),	--
+			q(78174),	--
+			q(78683),	--
+			q(78903),	--
+			q(79155),	--
+			q(79278),	--
+			q(79378),	--
+			q(79404),	--
+			q(79418),	--
+			q(79621),	--
+			q(79676),	--
+			q(77868),	--
+			q(77870),	--
+			q(77873),	--
+			q(78179),	--
+			q(79474),	--
+		})),
+
+		-- 10.2.6
+		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
+			q(79462),	-- [DNT] Renown Reward 001
+			q(79464),	-- [DNT] Renown Reward 002
+			q(79465),	-- [DNT] Renown Reward 003
+			q(79466),	-- [DNT] Renown Reward 004
+			q(80172),	-- Ensemble: Gladiator's Battered Armor
+			q(79254),	-- Everspout
+			q(79319),	-- Frenzied Owlbeast
+			q(79320),	-- Gorthak Grimtusk
+			q(79315),	-- Lord Harlbrand
+			q(79316),	-- Malfunctioning Harvester
+			q(79317),	-- Morkus Grimlock
+			q(79318),	-- Narla Thunderhoof
+			q(79248),	--
+			q(79251),	--
+			q(79252),	--
+			q(79253),	--
+			q(79988),	--
 		})),
 
 		-- 10.2.7

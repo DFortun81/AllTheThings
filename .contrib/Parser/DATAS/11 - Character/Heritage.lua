@@ -220,8 +220,10 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					i(210579),	-- Boros's Memory Stone (QI!)
 					i(210575),	-- Hatuun's Memory Stone (QI!)
 					i(210581),	-- Ishanah's Memory Stone (QI!)
+					i(210582),	-- Jadaar's Memory Stone (QI!)
 					i(210584),	-- Naielle's Memory Stone (QI!)
 					i(210580),	-- Nobundo's Memory Stone (QI!)
+					i(210588),	-- Oman's Memory Stone (QI!)
 					i(210576),	-- Romuul's Memory Stone (QI!)
 					i(210538),	-- Velen's Memory Stone (QI!)
 				},

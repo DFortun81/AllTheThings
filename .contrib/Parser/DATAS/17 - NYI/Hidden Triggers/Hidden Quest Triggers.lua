@@ -2050,10 +2050,26 @@ root(ROOTS.HiddenQuestTriggers, {
 	--      DF      --
 	------------------
 	expansion(EXPANSION.DF, {
-		-- Timewalking - Master of Timeways Triggers
-		q(78204),	-- First Week Trigger (spellID 423861)
+		-- DUNGEONS & RAIDS
+		q(72539, {["_drop"] = {"g"}}),	-- Dragonflight (61-69) E
+		q(72550),	-- Dragonflight (61-69) E
+		q(72623, {["_drop"] = {"g"}}),	-- Dragonflight (61-69) E
+		q(72544),	-- Dragonflight (70) E
+		q(72557),	-- Dragonflight (70) E
+		q(72567),	-- Dragonflight (70) E
+		q(72572),	-- Dragonflight (70) E
+		q(72575),	-- Dragonflight (70) E
+		q(72580),	-- Dragonflight (70) E
+		q(72583),	-- Dragonflight (70) E
+		q(72628),	-- Dragonflight (70) E
+		q(72631),	-- Dragonflight (70) E
+		q(72817),	-- Dragonflight (70) E
+		q(78763),	-- Dragonflight (70) E
+		q(72819),	-- Shadowlands (60) E
 		-- PVP
 		q(79332, {["repeatable"]=true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when theres an elistment bonus?)
+		-- Timewalking - Master of Timeways Triggers
+		q(78204),	-- First Week Trigger (spellID 423861)
 	}),
 
 	--------------------

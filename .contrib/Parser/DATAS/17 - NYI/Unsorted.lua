@@ -3,9 +3,6 @@
 -----------------------------------
 -- Everything in this file hasn't been sorted yet.
 root(ROOTS.Unsorted, {
-	--- I dont think these made it to live // Braghe
-	i(183834),	-- Crate of Drust Archaeology Fragments
-	i(183835),	-- Crate of Zandalari Archaeology Fragments
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			i(228507),	-- Swarmite Eggsac
@@ -3823,17 +3820,8 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				------ Grey ------
 				i(211768),	-- Hastily Scrawled Satyr Ravings
-
 				i(217010),	-- Fragmented Medallion of the Draenei
 				i(218130),	-- Adventurer's Footlocker
-				i(223475),	-- Set Keystone Level: 2
-				i(223476),	-- Set Keystone Level: 3
-				i(223477),	-- Set Keystone Level: 4
-				i(223478),	-- Set Keystone Level: 5
-				i(223479),	-- Set Keystone Level: 6
-				i(223480),	-- Set Keystone Level: 7
-				i(223481),	-- Set Keystone Level: 8
-				i(223482),	-- Set Keystone Level: 9
 			}),
 			filter(MOUNTS, {
 				i(224574),	-- Savage Ebony Battle Turtle (MOUNT!) [Trading Post?]
@@ -3848,23 +3836,12 @@ root(ROOTS.Unsorted, {
 			n(PVP, {
 				-- This is all broken as of 10.2.7. Currently added a placeholder data to the SL PvP vendor.
 				i(223769),	-- Eternal Aspirant's Cape
-				-- HQTs
-				q(82343),	-- Ensemble: Unburied Aspirant's Cloak Rack
-				q(82409),	-- Ensemble: Unburied Aspirant's Cloak Rack
-				q(82410),	-- Ensemble: Unburied Aspirant's Cloak Rack
-				q(82411),	-- Ensemble: Unburied Aspirant's Cloak Rack
-				q(82412),	-- Ensemble: Unburied Aspirant's Cloak Rack
-				q(82413),	-- Ensemble: Unburied Aspirant's Cloak Rack
 			}),
 			filter(QUEST_ITEMS, {
-				i(217349),	-- DEPRECATED - Arcane Dust
-				i(210582),	-- Jadaar's Memory Stone
 				i(210583),	-- Kuros's Memory Stone
 				i(210585),	-- Aesom's Memory Stone
 				i(210587),	-- Nemuraan's Memory Stone
-				i(210588),	-- Oman's Memory Stone
 				i(210591),	-- Tishamaat Memory Stones
-				i(221266),	-- Precious Belonging [DNT]
 				i(220737),	-- Storm Spirit
 			}),
 			n(SPECIAL, {	-- Timerunning
@@ -3933,12 +3910,8 @@ root(ROOTS.Unsorted, {
 			n(ARMOR, {
 				i(219904),	-- Romuul's Controllable Shoulderplate
 			}),
-			n(PROFESSIONS, {
-				i(224270),	-- Tattered Technique: Certificate of Ownership
-			}),
 		})),
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
-			------ Next Check 10.2.7 ------
 			filter(COSMETIC, {
 				------ Dragonriding Cup ------
 				i(212686),	-- Azure Riders of Azeroth Tabard
@@ -3967,35 +3940,8 @@ root(ROOTS.Unsorted, {
 				i(217376),	-- Frenzied Hat of the Murky Waters
 				i(217374),	-- Frenzied Hat of the Shallows
 			}),
-			filter(MISC, {
-				------ Crests?? ------
-				i(212383),	-- Yawning Basket of Aspect's Awakened Crests
-				------ Unknown ------
-				i(212175),	-- Draconic Commendation
-			}),
-			n(QUESTS, {
-				-- 10.2.6.53840
-				q(79248),	--
-				q(79251),	--
-				q(79252),	--
-				q(79253),	--
-				q(79254),	-- Everspout
-				q(79315),	-- Lord Harlbrand
-				q(79316),	-- Malfunctioning Harvester
-				q(79317),	-- Morkus Grimlock
-				q(79318),	-- Narla Thunderhoof
-				q(79319),	-- Frenzied Owlbeast
-				q(79320),	-- Gorthak Grimtusk
-				q(79462),	-- [DNT] Renown Reward 001
-				q(79464),	-- [DNT] Renown Reward 002
-				q(79465),	-- [DNT] Renown Reward 003
-				q(79466),	-- [DNT] Renown Reward 004
-				q(79988),	--
-				q(80172),	-- Ensemble: Gladiator's Battered Armor
-			}),
 		})),
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-			------ Next Check 10.2.7 ------
 			n(SPECIAL, {	-- Timerunning: Pandamonium [Probably 10.2.7]
 				filter(FINGER_F, {
 					i(210257),	-- Bamboo Band
@@ -4053,48 +3999,9 @@ root(ROOTS.Unsorted, {
 				i(210531),	-- Timerunning Shoulderpads
 				i(210533),	-- Timerunning Staff
 			}),
-			n(QUESTS, {
-				-- 10.2.5.52206
-				q(76391),	--
-				q(76392),	--
-				q(76393),	--
-				q(77764),	-- Curious Find: Apprentice Astrologist Homework
-				q(78174),	--
-				q(78272),	-- Interrupting Duck
-				q(78683),	--
-				q(78903),	--
-				q(78976),	--
-				q(79125),	--
-				q(79126),	--
-				q(79155),	--
-				q(79210),	-- Ensemble: Sky Witch's Attire
-				q(79278),	--
-				q(79314),	-- Arsenal: Quel'Serrar Skyborn Blades
-				-- 10.2.5.52330
-				q(79350),	-- Intro Dummy Quest Week 1 (Text Only)
-				q(79353),	--
-				q(79378),	--
-				q(79404),	--
-				q(79418),	--
-				-- 10.2.5.52432
-				q(79517),	-- Ensemble: Dark Ranger General's Kit
-				q(79537),	-- Jrz Test Currency Quest
-				q(79621),	--
-				-- 10.2.5.52554
-				q(79676),	--
-				-- 10.2.5.52968
-				q(77868),	--
-				q(77870),	--
-				q(77873),	--
-				q(78179),	--
-				q(79474),	--
-				q(80065),	-- Ensemble: Spring Reveler's Cornsilk Collection
-				q(80066),	-- Ensemble: Spring Reveler's Cornsilk Collection
-			}),
 		})),
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-			------ Next Check 10.2.7 ------
-			-- Class Trial [Darkal]
+			-- Level 70 boost [Darkal]
 			i(208878),	-- Adventurer's Footlocker
 			filter(MISC, {
 				------ Tame Hunter Pets ------
@@ -4105,151 +4012,6 @@ root(ROOTS.Unsorted, {
 				i(209866),	-- Thornspeaker Ritual Knife
 				i(209867),	-- Thornspeaker Ritual Knife
 				i(209868),	-- Thornspeaker Ritual Knife
-			}),
-			n(QUESTS, {
-				-- 10.2.0.51239
-				q(75272),	-- Test
-				q(75610),	--
-				q(76161),	-- Conversation Testing [DNT]
-				q(76164),	-- Bovan's Last Hope
-				q(76167),	-- PTR:A Place of Refuge
-				q(76168),	-- PTR:A Place of Refuge
-				q(76201),	-- Clone Ownership Verification [DNT]
-				q(76259),	--
-				q(76346),	--
-				q(76349),	--
-				q(76432),	-- PTR:Slay Corrupted Denizens
-				q(76466),	--
-				q(76467),	--
-				q(76468),	--
-				q(77101),	-- Ingredient Quest Template
-				q(77161),	--
-				q(77162),	--
-				q(77177),	--
-				q(77196),	--
-				q(77319),	--
-				q(77320),	--
-				q(77321),	--
-				q(77351),	--
-				q(77546),	--
-				q(77547),	--
-				q(77548),	--
-				q(77549),	--
-				q(77550),	--
-				q(77551),	--
-				q(77552),	--
-				q(77553),	--
-				q(77554),	--
-				q(77555),	--
-				q(77556),	--
-				q(77557),	--
-				q(77558),	--
-				q(77559),	--
-				q(77560),	--
-				q(77561),	--
-				q(77562),	--
-				q(77563),	--
-				q(77564),	--
-				q(77565),	--
-				q(77566),	--
-				q(77650),	--
-				q(77663),	--
-				q(77683),	--
-				q(77693),	--
-				q(77694),	--
-				q(77695),	--
-				q(77738),	--
-				q(77740),	--
-				q(77741),	--
-				q(77742),	--
-				q(77748),	--
-				q(77749),	--
-				q(77750),	--
-				q(77751),	--
-				q(77752),	--
-				q(77753),	--
-				q(77758),	--
-				q(77773),	--
-				q(77803),	--
-				q(77814),	--
-				q(77832),	-- Shadows upon shadows
-				q(77847),	--
-				q(77925),	--
-				q(77926),	--
-				q(77939),	--
-				q(77988),	--
-				q(77991),	--
-				q(77992),	--
-				q(77995),	--
-				q(78067),	--
-				q(78087),	--
-				q(78096),	-- PTR:A Silver Lining
-				q(78209),	--
-				q(78217),	--
-				q(78218),	--
-				q(78247),	--
-				q(78252),	--
-				q(78253),	--
-				q(78268),	-- [DNT] Test Quest
-				q(78331),	--
-				q(78357),	--
-				q(78362),	--
-				q(78366),	--
-				q(78377),	--
-				q(78380),	--
-				q(78420),	--
-				q(78432),	--
-				q(78433),	--
-				q(78554),	--
-				q(78576),	--
-				q(78577),	--
-				q(78578),	--
-				-- 10.2.0.51297
-				-- 10.2.0.51425
-				q(78617),	--
-				q(78644),	--
-				-- 10.2.0.51521
-				q(78711),	--
-				q(78712),	--
-				q(78720),	--
-				q(78725),	--
-				q(78731),	--
-				q(78732),	--
-				q(78737),	--
-				q(78763),	-- Dragonflight (70) E
-				q(78789),	--
-				q(78822),	--
-				q(78825),	--
-				q(78829),	--
-				-- 10.2.0.51601
-				q(78891),	--
-				q(78899),	--
-				q(78906),	--
-				-- 10.2.0.51685
-				q(78928),	--
-				q(78955),	--
-				-- 10.2.0.51973
-				q(77952),	--
-				-- 10.2.0.52038
-				q(77837),	--
-				q(78048),	--
-				-- 10.2.0.52095
-				q(76383),	--
-				q(78176),	--
-				-- 10.2.0.52188
-				q(76279),	--
-				-- 10.2.0.52301
-				q(77980),	--
-				q(77993),	--
-				q(78001),	-- [DEPRECATED] 10.2 Enchanting
-				q(78004),	--
-				q(78122),	--
-			}),
-		})),
-		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
-			n(QUESTS, {
-				-- 10.1.5.49516
-				q(76267),	--
 			}),
 		})),
 	}),

@@ -695,24 +695,24 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 45.5, 55.9, VALDRAKKEN },
 				["g"] = {
 					-- Trade Up
-					--i(xx, {	-- xx
-					--	["cost"] = {{ "c", xx, 90 }},
-					--	["g"] = {
-					--		currency(xx),
-					--	},
-					--}),
-					--i(xx, {	-- xx
-					--	["cost"] = {{ "c", xx, 50 }},
-					--	["g"] = {
-					--		currency(xx),
-					--	},
-					--}),
-					--i(xx, {	-- xx
-					--	["cost"] = {{ "c", xx, 30 }},
-					--	["g"] = {
-					--		currency(xx),
-					--	},
-					--}),
+					i(211950, {	-- Lively Clutch of Wyrm's Awakened Crests
+						["cost"] = {{ "c", 2807, 90 }},	-- Drake's Awakened Crests x90
+						["g"] = {
+							currency(2809),	-- Wyrm's Awakened Crest
+						},
+					}),
+					i(212384, {	-- Restless Satchel of Drake's Awakened Crests
+						["cost"] = {{ "c", 2806, 90 }},	-- Whelpling's Awakened Crest x90
+						["g"] = {
+							currency(2807),	-- Drake's Awakened Crest
+						},
+					}),
+					i(212383, {	-- Yawning Basket of Aspect's Awakened Crests
+						["cost"] = {{ "c", 2809, 90 }},	-- Wyrm's Awakened Crests x90
+						["g"] = {
+							currency(2812),	-- Aspect's Awakened Crest
+						},
+					}),
 					-- Trade Down
 					i(212367, {	-- Clutch of Wyrm's Awakened Crests
 						["cost"] = {{ "c", 2812, 15 }},	-- Aspect's Awakened Crests x15
