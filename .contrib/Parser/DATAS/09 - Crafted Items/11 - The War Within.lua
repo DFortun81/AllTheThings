@@ -878,230 +878,247 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(ENGINEERING, {
-	n(DISCOVERY, {
-		spell(447310, {	-- Scour Through Scrap
-			i(224822, {	-- Scour Through Scrap
-				r(447340),	-- Chaos Circuit
-				r(447313),	-- Disassemble Invention
-				r(447341),	-- Entropy Enhancer
-				r(447338),	-- Gyrating Gear
-				r(447336),	-- Handful of Bismuth Bolts
-				r(447312),	-- Invent
-				r(447339),	-- Safety Switch
-				r(447337),	-- Whimsical Wiring
-				i(227890, { -- Unrecognizable Prototype
-				i(221956, { -- Prototype: Algari Repair Bot 11O
-					r(447367), -- Algari Repair Bot 11O
-				}),
-				i(221960, { -- Prototype: Barrel of Fireworks
-					r(447369), -- Barrel of Fireworks
-				}),
-				i(221952, { -- Prototype: Convincingly Realistic Jumper Cables
-					r(447366), -- Convincingly Realistic Jumper Cables
-				}),
-				i(221961, { -- Prototype: Defective Escape Pod
-					r(447370), -- Defective Escape Pod
-				}),
-				i(221963, { -- Prototype: Filmless Camera
-					r(447371), -- Filmless Camera
-				}),
-				i(221965, { -- Prototype: Generate Wormhole
-					r(447372), -- Generate Wormhole
-				}),
-				i(221958, { -- Prototype: Summon Portable Profession Possibility Projector
-					r(447368), -- Summon Portable Profession Possibility Projector
-				}),
-				i(221875, { -- Prototype: Potion Bomb of Recovery
-					r(447343), -- Potion Bomb of Recovery
-				}),
-				i(221948, { -- Prototype: Pausing Pylon
-					r(447365), -- Pausing Pylon
-				}),
-				i(221879, { -- Prototype: Potion Bomb of Power
-					r(447344), -- Potion Bomb of Power
-				}),
-				i(221871, { -- Prototype: Potion Bomb of Speed
-					r(447342), -- Potion Bomb of Speed
-				}),
-				i(221945, { -- Prototype: Irresistible Red Button
-					r(447364), -- Irresistible Red Button
-				}),
-				i(221903, { -- Prototype: Earthen Delivery Drill
-					r(447350), -- Tinker: Earthen Delivery Drill
-				}),
-				i(221907, { -- Prototype: Heartseeking Health Injector
-					r(447351), -- Tinker: Heartseeking Health Injector
-				}),
+		n(DISCOVERY, {
+			spell(447310, {	-- Scour Through Scrap
+				i(224822, {	-- Scour Through Scrap
+					r(447340),	-- Chaos Circuit
+					r(447313),	-- Disassemble Invention
+					r(447341),	-- Entropy Enhancer
+					r(447338),	-- Gyrating Gear
+					r(447336),	-- Handful of Bismuth Bolts
+					r(447312),	-- Invent
+					r(447339),	-- Safety Switch
+					r(447337),	-- Whimsical Wiring
+					i(227890, { -- Unrecognizable Prototype
+					i(221956, { -- Prototype: Algari Repair Bot 11O
+						r(447367), -- Algari Repair Bot 11O
+					}),
+					i(221960, { -- Prototype: Barrel of Fireworks
+						r(447369), -- Barrel of Fireworks
+					}),
+					i(221952, { -- Prototype: Convincingly Realistic Jumper Cables
+						r(447366), -- Convincingly Realistic Jumper Cables
+					}),
+					i(221961, { -- Prototype: Defective Escape Pod
+						r(447370), -- Defective Escape Pod
+					}),
+					i(221963, { -- Prototype: Filmless Camera
+						r(447371), -- Filmless Camera
+					}),
+					i(221965, { -- Prototype: Generate Wormhole
+						r(447372), -- Generate Wormhole
+					}),
+					i(221958, { -- Prototype: Summon Portable Profession Possibility Projector
+						r(447368), -- Summon Portable Profession Possibility Projector
+					}),
+					i(221875, { -- Prototype: Potion Bomb of Recovery
+						r(447343), -- Potion Bomb of Recovery
+					}),
+					i(221948, { -- Prototype: Pausing Pylon
+						r(447365), -- Pausing Pylon
+					}),
+					i(221879, { -- Prototype: Potion Bomb of Power
+						r(447344), -- Potion Bomb of Power
+					}),
+					i(221871, { -- Prototype: Potion Bomb of Speed
+						r(447342), -- Potion Bomb of Speed
+					}),
+					i(221945, { -- Prototype: Irresistible Red Button
+						r(447364), -- Irresistible Red Button
+					}),
+					i(221903, { -- Prototype: Earthen Delivery Drill
+						r(447350), -- Tinker: Earthen Delivery Drill
+					}),
+					i(221907, { -- Prototype: Heartseeking Health Injector
+						r(447351), -- Tinker: Heartseeking Health Injector
+					}),
+					}),
 				}),
 			}),
-		}),
-		i(219191, {
 			i(219192, {	-- Comprehensibly Organized Ideas
-				["description"] = "NOTE: Some of theese require a specific specialization to discover.",
+				["description"] = "NOTE: Some of these require a specific specialization to discover.",
 				["g"] = {
 					r(447325, {	-- Aqirite Brainwave Projector
-						["description"] = "Requires specialization - Proffesion Gear to discover"
+						["description"] = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447327, {	-- Aqirite Fisherfriend
-						["description"] = "Requires specialization - Proffesion Gear to discover"
+						["description"] = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447331, { -- Aqirite Miner's Headgear
-						["description"] = "Requires specialization - Proffesion Gear to discover"
-					}),
-					r(447358),	-- Blame Redirection Device
-					r(447318, {	-- Blasting Bracers
-						["description"] = "Requires specialization - Bracers to discover"
-					}),
-					r(459299),	-- Bottled Brilliance
-					r(447321, {	-- Clanking Cuffs
-						["description"] = "Requires specialization - Bracers to discover"
-					}),
-					r(447360),	-- Complicated Fuse Box
-					r(447362),	-- Concealed Chaos Module
-					r(447317, {	-- Dangerous Distraction Inhibitor
-						["description"] = "Requires specialization - Goggles to discover"
-					}),
-					r(447363),	-- Energy Redistribution Beacon
-					r(447329, {	-- Lapidary's Aqirite Clamps
-						["description"] = "Requires specialization - Proffesion Gear to discover"
-					}),
-					r(447335, {	-- Miner's Aqirite Hoard
-						["description"] = "Requires specialization - Proffesion Gear to discover"
-					}),
-					r(447315, {	-- Overclocked Idea Generator
-						["description"] = "Requires specialization - Goggles to discover"
-					}),
-					r(447361),	-- Pouch of Pocket Grenades
-					r(447357),	-- Recalibrated Safety Switch
-					r(447323, {	-- Spring-Loaded Aqirite Fabric Cutters
-						["description"] = "Requires specialization - Proffesion Gear to discover"
-					}),
-					r(447314, { -- Studious Brilliance Expeditor
-						["description"] = "Requires specialization - Goggles to discover"
-					}),
-					r(447316, {	-- Supercharged Thought Enhancer
-						["description"] = "Requires specialization - Goggles to discover"
-					}),
-					r(447319, {	-- Venting Vambraces
-						["description"] = "Requires specialization - Bracers to discover"
-					}),
-					r(447320, {	-- Whirring Wristwraps
-						["description"] = "Requires specialization - Bracers to discover"
+						["description"] = "Requires specialization - Profession Gear to discover",
 					}),
 					r(447324),	-- Bismuth Brainwave Projector
 					r(447332),	-- Bismuth Fueled Samophlange
 					r(447330),	-- Bismuth Miner's Headgear
-					r(447334),	-- Miner's Bismuth Hoard
+					r(447358),	-- Blame Redirection Device
+					r(447318, {	-- Blasting Bracers
+						["description"] = "Requires specialization - Bracers to discover",
+					}),
+					r(459299),	-- Bottled Brilliance
+					r(447321, {	-- Clanking Cuffs
+						["description"] = "Requires specialization - Bracers to discover",
+					}),
+					r(447360),	-- Complicated Fuse Box
+					r(447362),	-- Concealed Chaos Module
+					r(447317, {	-- Dangerous Distraction Inhibitor
+						["description"] = "Requires specialization - Goggles to discover",
+					}),
+					r(447363),	-- Energy Redistribution Beacon
+					r(447329, {	-- Lapidary's Aqirite Clamps
+						["description"] = "Requires specialization - Profession Gear to discover",
+					}),
 					r(447328),	-- Lapidary's Bismuth Clamps
+					r(447335, {	-- Miner's Aqirite Hoard
+						["description"] = "Requires specialization - Profession Gear to discover",
+					}),
+					r(447334),	-- Miner's Bismuth Hoard
+					r(447315, {	-- Overclocked Idea Generator
+						["description"] = "Requires specialization - Goggles to discover",
+					}),
+					r(447361),	-- Pouch of Pocket Grenades
+					r(447357),	-- Recalibrated Safety Switch
+					r(447323, {	-- Spring-Loaded Aqirite Fabric Cutters
+						["description"] = "Requires specialization - Profession Gear to discover",
+					}),
 					r(447322),	-- Spring-Loaded Bismuth Fabric Cutters
+					r(447314, { -- Studious Brilliance Expeditor
+						["description"] = "Requires specialization - Goggles to discover",
+					}),
+					r(447316, {	-- Supercharged Thought Enhancer
+						["description"] = "Requires specialization - Goggles to discover",
+					}),
+					r(447319, {	-- Venting Vambraces
+						["description"] = "Requires specialization - Bracers to discover",
+					}),
+					r(447320, {	-- Whirring Wristwraps
+						["description"] = "Requires specialization - Bracers to discover",
+					}),
 				},
 			}),
 		}),
-	}),
-	n(ARMOR, {
-		i(225642),	-- Acolyte's Goggles
-		i(217155),	-- Algari Competitor's Cloth Bracers
-		i(217151),	-- Algari Competitor's Cloth Goggles
-		i(217156),	-- Algari Competitor's Leather Bracers
-		i(217152),	-- Algari Competitor's Leather Goggles
-		i(217157),	-- Algari Competitor's Mail Bracers
-		i(217153),	-- Algari Competitor's Mail Goggles
-		i(217158),	-- Algari Competitor's Plate Bracers
-		i(217154),	-- Algari Competitor's Plate Goggles
-		i(221805),	-- Blasting Bracers
-		i(221808),	-- Clanking Cuffs
-		i(221804),	-- Dangerous Distraction Inhibitor
-		i(225645),	-- Dredger's Goggles
-		i(221802),	-- Overclocked Idea Generator
-		i(225643),	-- Spelunker's Goggles
-		i(221801),	-- Studious Brilliance Expeditor
-		i(221803),	-- Supercharged Thought Enhancer
-		i(225644),	-- Tracker's Goggles
-		i(221806),	-- Venting Vambraces
-		i(221807),	-- Whirring Wristwraps
-	}),
-	n(FIRST_CRAFTS_HEADER, sharedData({
-		["requireSkill"] = ENGINEERING,
-		},{
-			-- MISC
-			FirstCraft(81357, 447368),	-- Algari Repair Bot 11O Projector
-			FirstCraft(81353, 447364),	-- Blame Redirection Device
-			FirstCraft(81354, 447365),	-- Box o' Booms
-			FirstCraft(81339, 447350),	-- Complicated Fuse Box
-			FirstCraft(81363, 447374),	-- Concealed Chaos Module
-			FirstCraft(81333, 447344),	-- Energy Redistribution Beacon
-			FirstCraft(81331, 447342),	-- Invent
-			FirstCraft(81332, 447343),	-- Irresistible Red Button
-			FirstCraft(81356, 447367),	-- Pausing Pylon
-			FirstCraft(81340, 447351),	-- Potion Bomb of Power
-			FirstCraft(81301, 447312),	-- Potion Bomb of Recovery
-			FirstCraft(81347, 447358),	-- Potion Bomb of Speed
-			FirstCraft(81349, 447360),	-- Pouch of Pocket Grenades
-			FirstCraft(81346, 447357),	-- Recalibrated Safety Switch
-			FirstCraft(81351, 447362),	-- Summon Portable Profession Possibility
-			FirstCraft(81352, 447363),	-- Tinker: Earthen Delivery Drill
-			FirstCraft(81350, 447361),	-- Tinker: Heartseeking Health Injector
-			-- REAGENTS
-			FirstCraft(84019, 459299),	-- Bottled Brilliance
-			FirstCraft(81329, 447340),	-- Chaos Circuit
-			FirstCraft(81330, 447341),	-- Entropy Enhancer
-			FirstCraft(81327, 447338),	-- Gyrating Gear
-			FirstCraft(81325, 447336),	-- Handful of Bismuth Bolts
-			FirstCraft(81328, 447339),	-- Safety Switch
-			FirstCraft(81326, 447337),	-- Whimsical Wiring
-			-- TOYS
-			FirstCraft(81382, 447369),	-- Barrel of Fireworks
-			FirstCraft(81358, 447370),	-- Defective Escape Pod
-			FirstCraft(81298, 443570),	-- Stonebound Lantern
-			FirstCraft(81359, 447371),	-- Filmless Camera
-			FirstCraft(81360, 447372),	-- Wormhole Generator: Khaz Algar
-			--	Mounts
-			FirstCraft(81361, 447373),	-- Crowd Pummeler 2-30
-			-- Cogwheels
-			FirstCraft(81345, 447356),	-- Adjustable Cogwheel
-			FirstCraft(81342, 447353),	-- Serrated Cogwheel
-			FirstCraft(81344, 447355),	-- Impeccable Cogwheel
-			FirstCraft(81343, 447354),	-- Overclocked Cogwheel
-			-- Armor
-			FirstCraft(81294, 438926),	-- Algari Competitor's Cloth Bracers
-			FirstCraft(81290, 438922),	-- Algari Competitor's Cloth Goggles
-			FirstCraft(81295, 438927),	-- Algari Competitor's Leather Bracers
-			FirstCraft(81291, 438923),	-- Algari Competitor's Leather Goggles
-			FirstCraft(81296, 438928),	-- Algari Competitor's Mail Bracers
-			FirstCraft(81292, 438924),	-- Algari Competitor's Mail Goggles
-			FirstCraft(81297, 438929),	-- Algari Competitor's Plate Bracers
-			FirstCraft(81293, 438925),	-- Algari Competitor's Plate Goggles
-			FirstCraft(81307, 447318),	-- Blasting Bracers
-			FirstCraft(81310, 447321),	-- Clanking Cuffs
-			FirstCraft(81306, 447317),	-- Dangerous Distraction Inhibitor
-			FirstCraft(81304, 447315),	-- Overclocked Idea Generator
-			FirstCraft(81303, 447314),	-- Studious Brilliance Expeditor
-			FirstCraft(81305, 447316),	-- Supercharged Thought Enhancer
-			FirstCraft(81308, 447319),	-- Venting Vambraces
-			FirstCraft(81309, 447320),	-- Whirring Wristwraps
-			FirstCraft(81364, 447375),	-- Acolyte's Goggles
-			FirstCraft(81387, 447378),	-- Dredger's Goggles
-			FirstCraft(81365, 447376),	-- Spelunker's Goggles
-			FirstCraft(81366, 447377),	-- Tracker's Goggles
-			-- Weapons
-			FirstCraft(81388, 447379),	-- 4UT0-41M3R
-			FirstCraft(81386, 455005),	-- Algari Competitor's Rifle
-			FirstCraft(81341, 447352),	-- P.0.W. x2
-			-- Profession Equipment
-			FirstCraft(81314, 447325),	-- Aqirite Brainwave Projector
-			FirstCraft(81316, 447327),	-- Aqirite Fisherfriend
-			FirstCraft(81322, 447333),	-- Aqirite Fueled Samophlange
-			FirstCraft(81320, 447331),	-- Aqirite Miner's Headgear
-			FirstCraft(81318, 447329),	-- Lapidary's Aqirite Clamps
-			FirstCraft(81324, 447335),	-- Miner's Aqirite Hoard
-			FirstCraft(81312, 447323),	-- Spring-Loaded Aqirite Fabric Cutters
-			FirstCraft(81313, 447324),	-- Bismuth Brainwave Projector
-			FirstCraft(81321, 447332),	-- Bismuth Fueled Samophlange
-			FirstCraft(81319, 447330),	-- Bismuth Miner's Headgear
-			FirstCraft(81323, 447334),	-- Miner's Bismuth Hoard
-			FirstCraft(81317, 447328),	-- Lapidary's Bismuth Clamps
-			FirstCraft(81311, 447322),	-- Spring-Loaded Bismuth Fabric Cutters
+		n(ARMOR, {
+			i(225642),	-- Acolyte's Goggles
+			i(217155),	-- Algari Competitor's Cloth Bracers
+			i(217151),	-- Algari Competitor's Cloth Goggles
+			i(217156),	-- Algari Competitor's Leather Bracers
+			i(217152),	-- Algari Competitor's Leather Goggles
+			i(217157),	-- Algari Competitor's Mail Bracers
+			i(217153),	-- Algari Competitor's Mail Goggles
+			i(217158),	-- Algari Competitor's Plate Bracers
+			i(217154),	-- Algari Competitor's Plate Goggles
+			i(221805),	-- Blasting Bracers
+			i(221808),	-- Clanking Cuffs
+			i(221804),	-- Dangerous Distraction Inhibitor
+			i(225645),	-- Dredger's Goggles
+			i(221802),	-- Overclocked Idea Generator
+			i(225643),	-- Spelunker's Goggles
+			i(221801),	-- Studious Brilliance Expeditor
+			i(221803),	-- Supercharged Thought Enhancer
+			i(225644),	-- Tracker's Goggles
+			i(221806),	-- Venting Vambraces
+			i(221807),	-- Whirring Wristwraps
+		}),
+		filter(CONSUMABLES, {
+			i(221880),	-- Potion Bomb of Power+
+			i(221881),	-- Potion Bomb of Power++
+			i(221882),	-- Potion Bomb of Power+++
+			i(221872),	-- Potion Bomb of Speed+
+			i(221873),	-- Potion Bomb of Speed++
+			i(221874),	-- Potion Bomb of Speed+++
+			i(221876),	-- Potion Bomb of Recovery+
+			i(221877),	-- Potion Bomb of Recovery++
+			i(221878),	-- Potion Bomb of Recovery+++
+		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = ENGINEERING,
+			},{
+				-- Miscellaneous
+				FirstCraft(81357, 447368),	-- Algari Repair Bot 11O Projector
+				FirstCraft(81353, 447364),	-- Blame Redirection Device
+				FirstCraft(81354, 447365),	-- Box o' Booms
+				FirstCraft(81339, 447350),	-- Complicated Fuse Box
+				FirstCraft(81363, 447374),	-- Concealed Chaos Module
+				FirstCraft(81333, 447344),	-- Energy Redistribution Beacon
+				FirstCraft(81331, 447342),	-- Invent
+				FirstCraft(81332, 447343),	-- Irresistible Red Button
+				FirstCraft(81356, 447367),	-- Pausing Pylon
+				FirstCraft(81340, 447351),	-- Potion Bomb of Power
+				FirstCraft(81301, 447312),	-- Potion Bomb of Recovery
+				FirstCraft(81347, 447358),	-- Potion Bomb of Speed
+				FirstCraft(81349, 447360),	-- Pouch of Pocket Grenades
+				FirstCraft(81346, 447357),	-- Recalibrated Safety Switch
+				FirstCraft(81351, 447362),	-- Summon Portable Profession Possibility
+				FirstCraft(81352, 447363),	-- Tinker: Earthen Delivery Drill
+				FirstCraft(81350, 447361),	-- Tinker: Heartseeking Health Injector
+				-- Reagents
+				FirstCraft(84019, 459299),	-- Bottled Brilliance
+				FirstCraft(81329, 447340),	-- Chaos Circuit
+				FirstCraft(81330, 447341),	-- Entropy Enhancer
+				FirstCraft(81327, 447338),	-- Gyrating Gear
+				FirstCraft(81325, 447336),	-- Handful of Bismuth Bolts
+				FirstCraft(81328, 447339),	-- Safety Switch
+				FirstCraft(81326, 447337),	-- Whimsical Wiring
+				-- Toys
+				FirstCraft(81382, 447369),	-- Barrel of Fireworks
+				FirstCraft(81358, 447370),	-- Defective Escape Pod
+				FirstCraft(81298, 443570),	-- Stonebound Lantern
+				FirstCraft(81359, 447371),	-- Filmless Camera
+				FirstCraft(81360, 447372),	-- Wormhole Generator: Khaz Algar
+				-- Mounts
+				FirstCraft(81361, 447373),	-- Crowd Pummeler 2-30
+				-- Cogwheels
+				FirstCraft(81345, 447356),	-- Adjustable Cogwheel
+				FirstCraft(81342, 447353),	-- Serrated Cogwheel
+				FirstCraft(81344, 447355),	-- Impeccable Cogwheel
+				FirstCraft(81343, 447354),	-- Overclocked Cogwheel
+				-- Armor
+				FirstCraft(81294, 438926),	-- Algari Competitor's Cloth Bracers
+				FirstCraft(81290, 438922),	-- Algari Competitor's Cloth Goggles
+				FirstCraft(81295, 438927),	-- Algari Competitor's Leather Bracers
+				FirstCraft(81291, 438923),	-- Algari Competitor's Leather Goggles
+				FirstCraft(81296, 438928),	-- Algari Competitor's Mail Bracers
+				FirstCraft(81292, 438924),	-- Algari Competitor's Mail Goggles
+				FirstCraft(81297, 438929),	-- Algari Competitor's Plate Bracers
+				FirstCraft(81293, 438925),	-- Algari Competitor's Plate Goggles
+				FirstCraft(81307, 447318),	-- Blasting Bracers
+				FirstCraft(81310, 447321),	-- Clanking Cuffs
+				FirstCraft(81306, 447317),	-- Dangerous Distraction Inhibitor
+				FirstCraft(81304, 447315),	-- Overclocked Idea Generator
+				FirstCraft(81303, 447314),	-- Studious Brilliance Expeditor
+				FirstCraft(81305, 447316),	-- Supercharged Thought Enhancer
+				FirstCraft(81308, 447319),	-- Venting Vambraces
+				FirstCraft(81309, 447320),	-- Whirring Wristwraps
+				FirstCraft(81364, 447375),	-- Acolyte's Goggles
+				FirstCraft(81387, 447378),	-- Dredger's Goggles
+				FirstCraft(81365, 447376),	-- Spelunker's Goggles
+				FirstCraft(81366, 447377),	-- Tracker's Goggles
+				-- Weapons
+				FirstCraft(81388, 447379),	-- 4UT0-41M3R
+				FirstCraft(81386, 455005),	-- Algari Competitor's Rifle
+				FirstCraft(81341, 447352),	-- P.0.W. x2
+				-- Profession Equipment
+				FirstCraft(81314, 447325),	-- Aqirite Brainwave Projector
+				FirstCraft(81316, 447327),	-- Aqirite Fisherfriend
+				FirstCraft(81322, 447333),	-- Aqirite Fueled Samophlange
+				FirstCraft(81320, 447331),	-- Aqirite Miner's Headgear
+				FirstCraft(81318, 447329),	-- Lapidary's Aqirite Clamps
+				FirstCraft(81324, 447335),	-- Miner's Aqirite Hoard
+				FirstCraft(81312, 447323),	-- Spring-Loaded Aqirite Fabric Cutters
+				FirstCraft(81313, 447324),	-- Bismuth Brainwave Projector
+				FirstCraft(81321, 447332),	-- Bismuth Fueled Samophlange
+				FirstCraft(81319, 447330),	-- Bismuth Miner's Headgear
+				FirstCraft(81323, 447334),	-- Miner's Bismuth Hoard
+				FirstCraft(81317, 447328),	-- Lapidary's Bismuth Clamps
+				FirstCraft(81311, 447322),	-- Spring-Loaded Bismuth Fabric Cutters
 		})),
+		filter(GEMS, {
+			i(221904),	-- Tinker: Earthen Delivery Drill+
+			i(221905),	-- Tinker: Earthen Delivery Drill++
+			i(221906),	-- Tinker: Earthen Delivery Drill+++
+			i(221908),	-- Tinker: Heartseeking Health Injector+
+			i(221909),	-- Tinker: Heartseeking Health Injector++
+			i(221910),	-- Tinker: Heartseeking Health Injector+++
+		}),
 		filter(MISC, {
 			i(221957),	-- Algari Repair Bot 11O
 			i(224586),	-- Box o' Booms+
@@ -1110,14 +1127,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221945),	-- Irresistible Red Button
 			i(221959),	-- Summon Portable Profession Possibility Projector
 			i(221949),	-- Pausing Pylon
-		}),
-		filter(GEMS, {
-			i(221904),	-- Tinker: Earthen Delivery Drill+
-			i(221905),	-- Tinker: Earthen Delivery Drill++
-			i(221906),	-- Tinker: Earthen Delivery Drill+++
-			i(221908),	-- Tinker: Heartseeking Health Injector+
-			i(221909),	-- Tinker: Heartseeking Health Injector++
-			i(221910),	-- Tinker: Heartseeking Health Injector+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
 			i(221789),	-- Aqirite Brainwave Projector
@@ -1134,16 +1143,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221792),	-- Lapidary's Bismuth Clamps
 			i(221786),	-- Spring-Loaded Bismuth Fabric Cutters
 		}),
-		filter(CONSUMABLES, {
-			i(221880),	-- Potion Bomb of Power+
-			i(221881),	-- Potion Bomb of Power++
-			i(221882),	-- Potion Bomb of Power+++
-			i(221872),	-- Potion Bomb of Speed+
-			i(221873),	-- Potion Bomb of Speed++
-			i(221874),	-- Potion Bomb of Speed+++
-			i(221876),	-- Potion Bomb of Recovery+
-			i(221877),	-- Potion Bomb of Recovery++
-			i(221878),	-- Potion Bomb of Recovery+++
+		filter(MOUNTS, {
+			i(221967),	-- Crowd Pummeler 2-30 (MOUNT!)
 		}),
 		filter(REAGENTS, {
 			i(221920),	-- Adjustable Cogwheel+
@@ -1199,14 +1200,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221858),	-- Whimsical Wiring+++
 		}),
 		filter(TOYS, {
-			i(219387),	-- Barrel of Fireworks
-			i(221962),	-- Defective Escape Pod
-			i(221964),	-- Filmless Camera
-			i(221966),	-- Wormhole Generator: Khaz Algar
-			i(219403),	-- Stonebound Lantern
-		}),
-		filter(MOUNTS, {
-			i(221967),	-- Crowd Pummeler 2-30
+			i(219387),	-- Barrel of Fireworks (TOY!)
+			i(221962),	-- Defective Escape Pod (TOY!)
+			i(221964),	-- Filmless Camera (TOY!)
+			i(221966),	-- Wormhole Generator: Khaz Algar (TOY!)
+			i(219403),	-- Stonebound Lantern (TOY!)
 		}),
 		n(WEAPONS, {
 			i(225646),	-- 4UT0-41M3R

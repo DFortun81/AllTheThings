@@ -98,7 +98,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(223264),	-- Aquamarine Swarmite (MOUNT!)
 				i(223315),	-- Beledar's Spawn (MOUNT!)
-				i(221967),	-- Crowd Pummeler 2-30 (MOUNT!)
 
 				i(223570),	-- Ebonhide Ramolith (MOUNT!)
 				i(226506),	-- Hand of Reshkigaal (MOUNT!)
@@ -316,28 +315,7 @@ root(ROOTS.Unsorted, {
 				i(221757),	-- Gloomfathom Hide
 				i(221758),	-- Profaned Tinderbox
 				i(221763),	-- Viridian Charmcap
-				i(221786),	-- Spring-Loaded Bismuth Fabric Cutters \\ Tailoring Tool T1 [DNT]
-				i(221787),	-- Spring-Loaded Aqirite Fabric Cutters \\ Tailoring Tool T2 [DNT]
-				i(221788),	-- Bismuth Brainwave Projector \\ Engineering Helm T1 [DNT]
-				i(221789),	-- Aqirite Brainwave Projector \\ Engineering Helm T2 [DNT]
 				i(221790),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
-				i(221791),	-- Aqirite Fisherfriend \\ Fishing Tool T2 [DNT]
-				i(221792),	-- Lapidary's Bismuth Clamps \\ Jewelcrafting Tool T1 [DNT]
-				i(221793),	-- Lapidary's Aqirite Clamps \\ Jewelcrafting Tool T2 [DNT]
-				i(221795),	-- Bismuth Miner's Headgear \\ Mining Helmet T1 [DNT]
-				i(221796),	-- Aqirite Miner's Headgear \\ Mining Hlmet T2 [DNT]
-				i(221797),	-- Bismuth Fueled Samophlange \\ Engineering Tool T1 [DNT]
-				i(221798),	-- Aqirite Fueled Samophlange \\ Engineering Tool T2 [DNT]
-				i(221799),	-- Miner's Bismuth Hoard \\ Mining Backpack T1 [DNT]
-				i(221800),	-- Miner's Aqirite Hoard \\ Mining Backpack T2 [DNT]
-				i(221801),	-- Studious Brilliance Expeditor \\ ENG - Cloth Goggles [DNT]
-				i(221802),	-- Overclocked Idea Generator \\ ENG - Leather Goggles [DNT]
-				i(221803),	-- Supercharged Thought Enhancer \\ ENG - Mail Goggles [DNT]
-				i(221804),	-- Dangerous Distraction Inhibitor \\ ENG - Plate Goggles [DNT]
-				i(221805),	-- Blasting Bracers
-				i(221806),	-- Venting Vambraces
-				i(221807),	-- Whirring Wristwraps
-				i(221808),	-- Clanking Cuffs
 				i(222089),	-- Bloody Perch
 				i(222090),	-- Crystalline Sturgeon
 				i(222091),	-- Bismuth Bitterling
@@ -571,7 +549,6 @@ root(ROOTS.Unsorted, {
 				i(222787),	-- zzold cooking recipe
 				i(219150),	-- Pile of Rusted Scrap
 				i(219191),	-- Hastily Scrawled Notes \\ Hastily Scribbled Notes
-				i(219192),	-- Comprehensibly Organized Ideas
 				i(219194),	-- Magical Mulch
 				i(219195),	-- Imbued Mulch
 				i(219196),	-- Empowered Mulch
@@ -597,25 +574,12 @@ root(ROOTS.Unsorted, {
 				i(225242),	-- Refurbished Tinker: Plane Displacer
 				i(225243),	-- Refurbished Tinker: Supercollide-O-Tron
 				i(225244),	-- Refurbished Tinker: Shadowflame Rockets
-				i(225370),	-- Algari Competitor's Rifle \\ Vicious Competitor's Rifle
 				i(225251),	-- Disassemble Invention
 				i(225338),	-- Glyph of Jab
 				i(225431),	-- Design: Vicious Jeweler's Setting
 				i(225432),	-- Design: Algari Competitor's Signet
 				i(225433),	-- Design: Algari Competitor's Amulet
-				i(225467),	-- Schematic: Algari Competitor's Cloth Goggles \\ Schematic: Vicious Competitor's Cloth Goggles
-				i(225468),	-- Schematic: Algari Competitor's Leather Goggles \\ Schematic: Vicious Competitor's Leather Goggles
-				i(225469),	-- Schematic: Algari Competitor's Mail Goggles \\ Schematic: Vicious Competitor's Mail Goggles
-				i(225470),	-- Schematic: Algari Competitor's Plate Goggles \\ Schematic: Vicious Competitor's Plate Goggles
-				i(225471),	-- Schematic: Algari Competitor's Cloth Bracers \\ Schematic: Vicious Competitor's Cloth Bracers
-				i(225472),	-- Schematic: Algari Competitor's Leather Bracers \\ Schematic: Vicious Competitor's Leather Bracers
-				i(225473),	-- Schematic: Algari Competitor's Mail Bracers \\ Schematic: Vicious Competitor's Mail Bracers
-				i(225474),	-- Schematic: Algari Competitor's Plate Bracers \\ Schematic: Vicious Competitor's Plate Bracers
-				i(225482),	-- Schematic: Algari Competitor's Rifle \\ Schematic: Vicious Competitor's Rifle
 				i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
-				i(224586),	-- Box o' Booms
-				i(224587),	-- Box o' Booms
-				i(224588),	-- Box o' Booms
 				i(224640),	-- Invent
 				i(224716),	-- [PH] Skewered Slum Shark
 				i(224718),	-- [PH] Surface Tipper's Toes
@@ -3033,15 +2997,11 @@ root(ROOTS.Unsorted, {
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),
 			filter(TOYS, {
-				i(219387),	-- Barrel of Fireworks (TOY!)
 				i(215147),	-- Beautification Iris (TOY!)
 				i(218310),	-- Box of Puntables (TOY!)
-				i(221962),	-- Defective Escape Pod (TOY!)
 				i(215145),	-- Remembrance Stone (TOY!)
 				i(224554),	-- Silver Linin' Scepter (TOY!)
-				i(219403),	-- Stonebound Lantern (TOY!)
 				i(212174),	-- The Warband Map to Everywhere All At Once (TOY!)
-				i(221966),	-- Wormhole Generator: Khaz Algar (TOY!)
 
 				---
 				i(215146),	-- JC Gemcutting Toy
