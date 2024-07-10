@@ -639,7 +639,7 @@ app:CreateWindow("ItemFinder", {
 				progress = 0,
 				total = 0,
 				back = 1,
-				currentItemID = 228797,
+				currentItemID = 228955,
 				minimumItemID = 0,
 				g = { },
 				OnUpdate = function(header)
