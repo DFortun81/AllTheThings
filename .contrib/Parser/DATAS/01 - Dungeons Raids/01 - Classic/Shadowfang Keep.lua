@@ -1886,9 +1886,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(60872, {	-- Moonsteel Ingots
+						["provider"] = { "o", 205477 },	-- Moonsteel Ingots
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(60871, {	-- Moontouched Wood
+						["provider"] = { "o", 205479 },	-- Moontouched Wood
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					i(1935),	-- Assassin's Blade
