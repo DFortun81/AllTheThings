@@ -2604,6 +2604,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28575, {	-- Warchief's Command: Western Plaguelands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 38. (TODO: Test max level)
+					["lvl"] = { 34, 38 },
+					-- #endif
+				})),
 				q(26937, {	-- When Death is Not Enough
 					["qg"] = 44466,	-- Lindsay Ravensun
 					["sourceQuest"] = 26979,	-- Strange New Faces

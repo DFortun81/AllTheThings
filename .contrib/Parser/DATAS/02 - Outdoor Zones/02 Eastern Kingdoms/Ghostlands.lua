@@ -1005,12 +1005,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9327, {	-- The Forsaken [Blood Elf Only]
 					["qg"] = 16197,	-- Arcanist Vandril
+					-- #if AFTER 4.0.3
+					["sourceQuest"] = 28560,	-- Warchief's Command: Ghostlands!
+					-- #endif
 					["coord"] = { 46.5, 28.4, GHOSTLANDS },
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(9, 9, 1),
 				}),
 				q(9329, {	-- The Forsaken [Non-Blood Elf Only]
 					["qg"] = 16197,	-- Arcanist Vandril
+					-- #if AFTER 4.0.3
+					["sourceQuest"] = 28560,	-- Warchief's Command: Ghostlands!
+					-- #endif
 					["coord"] = { 46.5, 28.4, GHOSTLANDS },
 					["races"] = exclude(BLOODELF, HORDE_ONLY),
 					["lvl"] = lvlsquish(9, 9, 1),
@@ -1299,6 +1305,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28560, {	-- Warchief's Command: Ghostlands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY },	-- Only found in Silvermoon City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 9. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 18. (TODO: Test max level)
+					["lvl"] = { 9, 18 },
+					-- #endif
+				})),
 				q(9140, {	-- Windrunner Village
 					["qg"] = 16197,	-- Arcanist Vandril
 					["sourceQuest"] = 9139,	-- Goldenmist Village

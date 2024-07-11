@@ -1929,6 +1929,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28574, {	-- Warchief's Command: The Hinterlands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33. (TODO: Test max level)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
 				q(2988, {	-- Witherbark Cages
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },

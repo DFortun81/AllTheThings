@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = {
 						28582,	-- Hero's Call: Searing Gorge
 						28512,	-- To the Aid of the Thorium Brotherhood
-						28581,	-- Warchief's Command: Searing Gorge
+						28581,	-- Warchief's Command: Searing Gorge!
 					},
 					["coord"] = { 68.5, 53.3, SEARING_GORGE },
 					["timeline"] = { ADDED_4_0_3 },
@@ -1435,6 +1435,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28581, {	-- Warchief's Command: Searing Gorge!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 47. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 48. (TODO: Test max level)
+					["lvl"] = { 47, 48 },
+					-- #endif
+				})),
 				q(28064, {	-- Welcome to the Brotherhood
 					["qg"] = 14625,	-- Overseer Oilfist <The Thorium Brotherhood>
 					["sourceQuest"] = 28062,	-- From Whence He Came

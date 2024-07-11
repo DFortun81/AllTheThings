@@ -1963,6 +1963,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28580, {	-- Warchief's Command: Badlands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 47. (TODO: Test max level)
+					["lvl"] = { 44, 47 },
+					-- #endif
+				})),
 				q(27775, {	-- When the Going Gets Tough, Cheat
 					["qg"] = 46653,	-- Garyanne Fleezlebop
 					["coord"] = { 64.2, 38.1, BADLANDS },

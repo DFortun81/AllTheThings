@@ -4940,6 +4940,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 40,
 					-- #endif
 				}),
+				warchiefscommand(q(28509, {	-- Warchief's Command: Tanaris!
+					["timeline"] = { ADDED_4_0_3, REMOVED_10_2_6 },	-- possibly earlier, but currently unable to be obtained
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level . (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level . (TODO: Test max level)
+					["lvl"] = { 44, 48 },
+					-- #endif
+				})),
 				q(1690, {	-- Wastewander Justice
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
 					["coord"] = { 52.5, 28.5, TANARIS },

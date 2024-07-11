@@ -1498,6 +1498,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
+				warchiefscommand(q(28677, {	-- Warchief's Command: Swamp of Sorrows!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 51. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 53. (TODO: Test max level)
+					["lvl"] = { 51, 53 },
+					-- #endif
+				})),
 				applyclassicphase(PHASE_FOUR, q(8423, {	-- Warrior Kinship
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8417,	-- A Troubled Spirit

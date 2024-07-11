@@ -2147,16 +2147,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 				}),
-				q(25924, {	-- Call of Duty
-					["qg"] = 41621,	-- Commander Thorak
-					["sourceQuests"] = {
-						28816,	-- To the Depths
-						27718,	-- Warchief's Command: Vashj'ir!
-					},
-					["coord"] = { 55.9, 12.3, DUROTAR },
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-				}),
 				q(791, {	-- Carry Your Weight
 					["qg"] = 3147,	-- Furl Scornbrow
 					["coord"] = { 49.8, 40.4, DUROTAR },

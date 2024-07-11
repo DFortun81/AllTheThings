@@ -2476,6 +2476,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.8, 56.4, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
+				warchiefscommand(q(28704, {	-- Warchief's Command: The Cape of Stranglethorn!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33. (TODO: Test max level)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
 				q(601, {	-- Water Elementals
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 578,	-- The Stone of the Tides

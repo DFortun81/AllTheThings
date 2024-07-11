@@ -3312,6 +3312,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28554, {	-- Warchief's Command: Dustwallow Marsh!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 38. (TODO: Test max level)
+					["lvl"] = { 34, 38 },
+					-- #endif
+				})),
 				-- #if BEFORE WRATH
 				q(11222, {	-- Warn Bolvar! / Proof of Treachery [WRATH+]
 					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>

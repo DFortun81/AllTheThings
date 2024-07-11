@@ -1198,6 +1198,15 @@ root(ROOTS.Zones, {
 							26377,	-- Unsolid Ground
 						},
 					}),
+					warchiefscommand(q(27722, {	-- Warchief's Command: Deepholm!
+						["timeline"] = { ADDED_4_0_3 },
+						["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },	-- Only found in Orgrimmar, Thunder Bluff, & Undercity in Cataclysm.
+						["isBreadcrumb"] = true,
+						-- #if BEFORE 7.3.5
+						-- Cataclysm: Minimum is level 82. (TODO: Confirm this.)
+						["lvl"] = 82,
+						-- #endif
+					})),
 					q(26500, {	-- We're Surrounded
 						["lvl"] = 82,
 						["qg"] = 43160,	-- Earthbreaker Dolomite

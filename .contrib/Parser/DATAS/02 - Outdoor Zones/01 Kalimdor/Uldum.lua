@@ -1056,6 +1056,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65802),	-- Shining Scorpid Eye
 					},
 				}),
+				warchiefscommand(q(28557, {	-- Warchief's Command: Uldum!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },	-- Only found in Orgrimmar, Thunder Bluff, & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 83. (TODO: Confirm this.)
+					["lvl"] = 83,
+					-- #endif
+				})),
 			}),
 			n(RARES, {
 				n(50065, {	-- Armagedillo

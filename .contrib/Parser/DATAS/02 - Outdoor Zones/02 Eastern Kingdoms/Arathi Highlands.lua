@@ -2027,8 +2027,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 26 and 35, 30 is based on Wowpedia info)
-					["lvl"] = { 24, 30 },
+					-- Cataclysm: Maximum is level 28 (TODO: Test max level between 26 and 35)
+					["lvl"] = { 24, 28 },
 					-- #endif
 				})),
 				warchiefscommand(q(28619, {	-- Warchief's Command: Arathi Highlands! (Hillsbrad)
@@ -2037,8 +2037,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 26 and 35, 30 is based on Wowpedia info)
-					["lvl"] = { 24, 30 },
+					-- This version apparently doesn't have a max level.
+					["lvl"] = 24,
 					-- #endif
 				})),
 				q(691, {	-- Worth Its Weight in Gold

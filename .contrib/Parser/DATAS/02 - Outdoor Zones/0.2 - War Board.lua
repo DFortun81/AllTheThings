@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
--- #if AFTER CATA
+-- #if AFTER 7.3.5
 root(ROOTS.Zones, {
 	header(HEADERS.Object, 206109, sharedDataSelf({	-- Warchief's Command Board
 		["races"] = HORDE_ONLY,
@@ -36,113 +36,6 @@ root(ROOTS.Zones, {
 				["isBreadcrumb"] = true,
 				["u"] = REMOVED_FROM_GAME,
 			})),
-			q(28493, {	-- Warchief's Command: Ashenvale!
-				["isBreadcrumb"] = true,
-			}),
-			q(28496, {	-- Warchief's Command: Azshara!
-				["isBreadcrumb"] = true,
-			}),
-			q(28580, {	-- Warchief's Command: Badlands!
-				["isBreadcrumb"] = true,
-			}),
-			q(28711, {	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
-				["isBreadcrumb"] = true,
-			}),
-			q(28671, {	-- Warchief's Command: Blasted Lands!
-				["isBreadcrumb"] = true,
-			}),
-			q(28667, {	-- Warchief's Command: Burning Steppes!
-				["isBreadcrumb"] = true,
-			}),
-			q(27722, {	-- Warchief's Command: Deepholm!
-				["isBreadcrumb"] = true,
-				["races"] = HORDE_ONLY,
-			}),
-			q(28548, {	-- Warchief's Command: Desolace!
-				["isBreadcrumb"] = true,
-			}),
-			q(28554, {	-- Warchief's Command: Dustwallow Marsh!
-				["isBreadcrumb"] = true,
-			}),
-			q(28577, {	-- Warchief's Command: Eastern Plaguelands!
-				["isBreadcrumb"] = true,
-			}),
-			q(28542, {	-- Warchief's Command: Felwood!
-				["isBreadcrumb"] = true,
-			}),
-			q(28510, {	-- Warchief's Command: Feralas!
-				["isBreadcrumb"] = true,
-			}),
-			q(28560, {	-- Warchief's Command: Ghostlands!
-				["isBreadcrumb"] = true,
-				["description"] = "Flagged complete when completing |cffffffffMissing in the Ghostlands|r [9144].",
-			}),
-			q(28571, {	-- Warchief's Command: Hillsbrad Foothills!
-				["isBreadcrumb"] = true,
-			}),
-			q(27721, {	-- Warchief's Command: Mount Hyjal!
-				["isBreadcrumb"] = true,
-				["races"] = HORDE_ONLY,
-			}),
-			q(28494, {	-- Warchief's Command: Northern Barrens!
-				["isBreadcrumb"] = true,
-				["altQuests"] = { 26642 },	-- Preserving the Barrens
-			}),
-			q(28688, {	-- Warchief's Command: Northern Stranglethorn Vale!
-				["isBreadcrumb"] = true,
-			}),
-			q(28705, {	-- Warchief's Command: Outland!
-				["isBreadcrumb"] = true,
-			}),
-			q(28581, {	-- Warchief's Command: Searing Gorge!
-				["isBreadcrumb"] = true,
-			}),
-			q(28527, {	-- Warchief's Command: Silithus!
-				["isBreadcrumb"] = true,
-			}),
-			q(28568, {	-- Warchief's Command: Silverpine Forest!
-				["isBreadcrumb"] = true,
-			}),
-			q(28549, {	-- Warchief's Command: Southern Barrens!
-				["isBreadcrumb"] = true,
-			}),
-			q(28532, {	-- Warchief's Command: Stonetalon Mountains!
-				["isBreadcrumb"] = true,
-			}),
-			q(28677, {	-- Warchief's Command: Swamp of Sorrows!
-				["isBreadcrumb"] = true,
-			}),
-			q(28509, {	-- Warchief's Command: Tanaris!
-				["isBreadcrumb"] = true,
-				["timeline"] = { ADDED_4_0_3, REMOVED_10_2_6 },	-- possibly earlier, but currently unable to be obtained
-			}),
-			q(28704, {	-- Warchief's Command: The Cape of Stranglethorn!
-				["isBreadcrumb"] = true,
-			}),
-			q(28574, {	-- Warchief's Command: The Hinterlands!
-				["isBreadcrumb"] = true,
-			}),
-			q(28504, {	-- Warchief's Command: Thousand Needles!
-				["isBreadcrumb"] = true,
-			}),
-			q(28717, {	-- Warchief's Command: Twilight Highlands!
-				["isBreadcrumb"] = true,
-			}),
-			q(28557, {	-- Warchief's Command: Uldum!
-				["isBreadcrumb"] = true,
-			}),
-			q(28526, {	-- Warchief's Command: Un'Goro Crater!
-				["isBreadcrumb"] = true,
-			}),
-			q(27718, {	-- Warchief's Command: Vashj'ir!
-				["isBreadcrumb"] = true,
-			}),
-			q(28575, {	-- Warchief's Command: Western Plaguelands!
-				["isBreadcrumb"] = true,
-			}),
-			q(28545, {	-- Warchief's Command: Winterspring!
-				["isBreadcrumb"] = true,
-			}),
 		},
 	})),
 	header(HEADERS.Object, 206111, sharedDataSelf({	-- Hero's Call Board
@@ -156,8 +49,6 @@ root(ROOTS.Zones, {
 	},{
 		["description"] = "These quests can be obtained from any city or town to lead the Character to a specific Zone.",
 		["g"] = {
-			--
-			
 			q(49865, {	-- Cataclysm First Responder (Alliance)
 				["sourceQuest"] = 49846,	-- War on Two Fronts (Cataclysm)
 				["timeline"] = { ADDED_7_3_5 },

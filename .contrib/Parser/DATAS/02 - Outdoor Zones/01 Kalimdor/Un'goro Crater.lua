@@ -1756,6 +1756,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28526, {	-- Warchief's Command: Un'Goro Crater!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 53. (TODO: Test max level)
+					["lvl"] = { 49, 53 },
+					-- #endif
+				})),
 				q(45044, {	-- Weapon No More
 					["provider"] = { "i", 142377 },	-- Badly Broken Dark Spear
 					["timeline"] = { ADDED_7_2_0 },

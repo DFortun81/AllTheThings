@@ -1916,7 +1916,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(26311, {	-- Unfamiliar Waters
 					["qg"] = 42637,	-- Sauranok the Mystic
-					["sourceQuest"] = 28909,	-- Sauranok Will Paint the Way
+					["sourceQuest"] = 28909,	-- Sauranok Will Point the Way
 					["coord"] = { 48.0, 71.0, ORGRIMMAR },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
@@ -1939,6 +1939,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_8_3_0 },
 					["races"] = HORDE_ONLY,
 				}),
+				warchiefscommand(q(28717, {	-- Warchief's Command: Twilight Highlands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { --[[ORGRIMMAR,]] THUNDER_BLUFF, UNDERCITY },	-- Only found in Orgrimmar, Thunder Bluff, & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 84. (TODO: Confirm this.)
+					["lvl"] = 84,
+					-- #endif
+				})),
 				q(60968, {	-- Warlords of Draenor: Onward to Adventure in Draenor
 					["qg"] = 167032,	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },

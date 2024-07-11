@@ -1493,6 +1493,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28671, {	-- Warchief's Command: Blasted Lands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { UNDERCITY },	-- Only found in Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 57. (TODO: Test max level)
+					["lvl"] = { 54, 57 },
+					-- #endif
+				})),
 				q(25714, {	-- Watcher Mahar Ba
 					["providers"] = {
 						{ "n", 5393 },	-- Quartermaster Lungertz

@@ -2514,6 +2514,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28542, {	-- Warchief's Command: Felwood!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 48. (TODO: Test max level)
+					["lvl"] = { 44, 48 },
+					-- #endif
+				})),
 				q(28374, {	-- Weeding the Lawn
 					["qg"] = 48459,	-- Tender Puregrove
 					["sourceQuests"] = {

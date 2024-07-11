@@ -3602,6 +3602,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28493, {	-- Warchief's Command: Ashenvale!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 23. (TODO: Test max level)
+					["lvl"] = { 19, 23 },
+					-- #endif
+				})),
+				warchiefscommand(q(28494, {	-- Warchief's Command: Northern Barrens!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 9. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 18. (TODO: Test max level)
+					["lvl"] = { 9, 18 },
+					-- #endif
+				})),
 				q(972, {	-- Water Sapta [The Barrens]
 					["qg"] = 5901,	-- Islen Waterseer
 					["sourceQuest"] = 220,	-- Call of Water (6/9)

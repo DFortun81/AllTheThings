@@ -2172,6 +2172,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28496, {	-- Warchief's Command: Azshara!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 9. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 18. (TODO: Test max level)
+					["lvl"] = { 9, 18 },
+					-- #endif
+				})),
 				q(9362, {	-- Warlord Krellian
 					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, AZSHARA },

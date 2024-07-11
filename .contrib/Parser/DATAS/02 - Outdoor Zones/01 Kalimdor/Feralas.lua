@@ -2507,6 +2507,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28510, {	-- Warchief's Command: Feralas!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 38. (TODO: Test max level)
+					["lvl"] = { 34, 38 },
+					-- #endif
+				})),
 				q(25391, {	-- Weapons of Spirit
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
 					["sourceQuest"] = 25346,	-- Mountain Giant Muisek

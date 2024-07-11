@@ -2047,6 +2047,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20647),	-- Black Crystal Dagger
 					},
 				}),
+				warchiefscommand(q(28527, {	-- Warchief's Command: Silithus!
+					["isBreadcrumb"] = true,
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 57. (TODO: Test max level)
+					["lvl"] = { 54, 57 },
+					-- #endif
+				})),
 			}),
 			n(RARES, {
 				o(180456, {	-- Lesser Wind Stone

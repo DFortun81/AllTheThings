@@ -2950,6 +2950,16 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					warchiefscommand(q(28705, {	-- Warchief's Command: Outland!
+						["timeline"] = { ADDED_4_0_3 },
+						["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+						["isBreadcrumb"] = true,
+						-- #if BEFORE 7.3.5
+						-- Cataclysm: Minimum is level 58. (TODO: Confirm this.)
+						-- Cataclysm: Maximum is level 67. (TODO: Test max level)
+						["lvl"] = { 58, 67 },
+						-- #endif
+					})),
 					q(10485, {	-- Warlord of the Bleeding Hollow
 						["qg"] = 21133,	-- Corporal Ironridge
 						["sourceQuest"] = 10484,	-- Cursed Talismans

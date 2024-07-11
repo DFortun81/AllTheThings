@@ -3551,6 +3551,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28532, {	-- Warchief's Command: Stonetalon Mountains!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 28. (TODO: Test max level)
+					["lvl"] = { 24, 28 },
+					-- #endif
+				})),
 				q(6571, {	-- Warsong Supplies
 					["qg"] = 11820,	-- Locke Okarr
 					["coord"] = { 71.40, 67.64, ASHENVALE },

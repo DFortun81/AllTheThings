@@ -1697,6 +1697,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28545, {	-- Warchief's Command: Winterspring!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 53. (TODO: Test max level)
+					["lvl"] = { 49, 53 },
+					-- #endif
+				})),
 				q(28718, {	-- Where There's Smoke, There's Delicious Meat
 					["qg"] = 49402,	-- Sana Curtainfire
 					["sourceQuest"] = 28710,	-- Spray it One More Time

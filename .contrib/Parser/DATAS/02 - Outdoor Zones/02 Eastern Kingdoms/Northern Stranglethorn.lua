@@ -2639,6 +2639,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28688, {	-- Warchief's Command: Northern Stranglethorn!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 28. (TODO: Test max level)
+					["lvl"] = { 24, 28 },
+					-- #endif
+				})),
 				q(26729, {	-- Water Elementals
 					["providers"] = {
 						{ "n", 43885 },	-- Emerine Junis

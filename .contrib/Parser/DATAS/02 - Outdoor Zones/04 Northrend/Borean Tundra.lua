@@ -2352,6 +2352,15 @@ root(ROOTS.Zones, {
 							i(37352),	-- Regenerative Hide Harness
 						},
 					}),
+					warchiefscommand(q(28711, {	-- Warchief's Command: Borean Tundra! [7.3.5+] / Warchief's Command: Northrend!
+						["timeline"] = { ADDED_4_0_3 },
+						["isBreadcrumb"] = true,
+						-- #if BEFORE 7.3.5
+						-- Cataclysm: Minimum is level 68. (TODO: Confirm this.)
+						-- Cataclysm: Maximum is level 77. (TODO: Test max level)
+						["lvl"] = { 68, 77 },
+						-- #endif
+					})),
 					q(11592, {	-- We Strike!
 						["qg"] = 25335,	-- Longrunner Proudhoof
 						["coord"] = { 48.3, 19.7, BOREAN_TUNDRA },

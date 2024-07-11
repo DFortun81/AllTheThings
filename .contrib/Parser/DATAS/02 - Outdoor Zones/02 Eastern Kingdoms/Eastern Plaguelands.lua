@@ -3899,6 +3899,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
+				warchiefscommand(q(28577, {	-- Warchief's Command: Eastern Plaguelands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 39. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 43. (TODO: Test max level)
+					["lvl"] = { 39, 43 },
+					-- #endif
+				})),
 				q(27371, {	-- What I Do Best
 					["qg"] = 45429,	-- Tarenar Sunstrike
 					["sourceQuest"] = 27370,	-- Tarenar Sunstrike

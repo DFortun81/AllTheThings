@@ -2038,6 +2038,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28667, {	-- Warchief's Command: Burning Steppes!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 51. (TODO: Test max level)
+					["lvl"] = { 49, 51 },
+					-- #endif
+				})),
 				{	-- Warlocks Have the Neatest Stuff
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
 					["allianceQuestData"] = q(28181, {	-- Warlocks Have the Neatest Stuff (A)

@@ -2956,6 +2956,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				warchiefscommand(q(28571, {	-- Warchief's Command: Hillsbrad Foothills!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { SILVERMOON_CITY, UNDERCITY },	-- Only found in Silvermoon City & Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 23. (TODO: Test max level)
+					["lvl"] = { 19, 23 },
+					-- #endif
+				})),
 				q(28089, {	-- Warchief's Command: Hillsbrad Foothills!
 					["qg"] = 44640,	-- High Warlord Cromush
 					["altQuests"] = { 27746 },	-- Empire of Dirt
@@ -2968,13 +2978,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 19,
 				}),
 				q(28096, {	-- Welcome to the Machine
 					["providers"] = {
 						{ "n", 2215 },	-- High Executor Darthalia
 						{ "i", 62932 },	-- Daily Report - Hillsbrad Foothills
 					},
-					["sourceQuest"] = 28089,	-- Warchief's Command: Hillsbrad Foothills!
+					["sourceQuests"] = {
+						28571,	-- Warchief's Command: Hillsbrad Foothills!
+						28089,	-- Warchief's Command: Hillsbrad Foothills!
+					},
 					["coord"] = { 29.2, 63.3, HILLSBRAD_FOOTHILLS },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,

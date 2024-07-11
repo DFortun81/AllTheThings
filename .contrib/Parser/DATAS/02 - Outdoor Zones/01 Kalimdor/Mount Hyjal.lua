@@ -1638,6 +1638,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57292),	-- Repurposed Twilight Stave
 					},
 				}),
+				warchiefscommand(q(27721, {	-- Warchief's Command: Mount Hyjal!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 80. (TODO: Confirm this.)
+					["lvl"] = 80,
+					-- #endif
+				})),
 				q(25330, {	-- Waste of Flesh
 					["qg"] = 39451,	-- Instructor Cargall
 					["sourceQuest"] = 25276,	-- Your New Identity

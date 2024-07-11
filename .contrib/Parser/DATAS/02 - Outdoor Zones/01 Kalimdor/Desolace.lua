@@ -2365,6 +2365,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
+				warchiefscommand(q(28548, {	-- Warchief's Command: Desolace!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },	-- Only found in Orgrimmar & Thunder Bluff in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33. (TODO: Test max level)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
 				q(14264, {	-- Wetter Than Wet
 					["qg"] = 35827,	-- Valishj
 					["sourceQuest"] = 14260,	-- Going Deep

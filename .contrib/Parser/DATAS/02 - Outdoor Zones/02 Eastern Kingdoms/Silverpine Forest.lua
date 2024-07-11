@@ -1213,7 +1213,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26965, {	-- The Warchief Cometh
 					["qg"] = 44615,	-- Grand Executor Mortuus
-					["sourceQuest"] = 26964,	-- Warchief's Command: Silverpine Forest!
+					["sourceQuests"] = {
+						26964,	-- Warchief's Command: Silverpine Forest!
+						28568,	-- Warchief's Command: Silverpine Forest!
+					},
 					["coord"] = { 57.4, 10.1, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
@@ -1383,6 +1386,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 9,
 				}),
+				warchiefscommand(q(28568, {	-- Warchief's Command: Silverpine Forest!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { UNDERCITY },	-- Only found in Undercity in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 9. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 18. (TODO: Test max level)
+					["lvl"] = { 9, 18 },
+					-- #endif
+				})),
 				q(429, {	-- Wild Hearts
 					["qg"] = 1950,	-- Rane Yorick
 					["sourceQuest"] = 428,	-- Lost Deathstalkers
