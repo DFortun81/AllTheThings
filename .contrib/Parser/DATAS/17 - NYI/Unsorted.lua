@@ -548,7 +548,6 @@ root(ROOTS.Unsorted, {
 				i(222786),	-- zzold cooking recipe
 				i(222787),	-- zzold cooking recipe
 				i(219150),	-- Pile of Rusted Scrap
-				i(219191),	-- Hastily Scrawled Notes \\ Hastily Scribbled Notes
 				i(219194),	-- Magical Mulch
 				i(219195),	-- Imbued Mulch
 				i(219196),	-- Empowered Mulch

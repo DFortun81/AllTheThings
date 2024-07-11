@@ -935,65 +935,67 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					}),
 				}),
 			}),
-			i(219192, {	-- Comprehensibly Organized Ideas
-				["description"] = "NOTE: Some of these require a specific specialization to discover.",
-				["g"] = {
-					r(447325, {	-- Aqirite Brainwave Projector
-						["description"] = "Requires specialization - Profession Gear to discover",
-					}),
-					r(447327, {	-- Aqirite Fisherfriend
-						["description"] = "Requires specialization - Profession Gear to discover",
-					}),
-					r(447331, { -- Aqirite Miner's Headgear
-						["description"] = "Requires specialization - Profession Gear to discover",
-					}),
-					r(447324),	-- Bismuth Brainwave Projector
-					r(447332),	-- Bismuth Fueled Samophlange
-					r(447330),	-- Bismuth Miner's Headgear
-					r(447358),	-- Blame Redirection Device
-					r(447318, {	-- Blasting Bracers
-						["description"] = "Requires specialization - Bracers to discover",
-					}),
-					r(459299),	-- Bottled Brilliance
-					r(447321, {	-- Clanking Cuffs
-						["description"] = "Requires specialization - Bracers to discover",
-					}),
-					r(447360),	-- Complicated Fuse Box
-					r(447362),	-- Concealed Chaos Module
-					r(447317, {	-- Dangerous Distraction Inhibitor
-						["description"] = "Requires specialization - Goggles to discover",
-					}),
-					r(447363),	-- Energy Redistribution Beacon
-					r(447329, {	-- Lapidary's Aqirite Clamps
-						["description"] = "Requires specialization - Profession Gear to discover",
-					}),
-					r(447328),	-- Lapidary's Bismuth Clamps
-					r(447335, {	-- Miner's Aqirite Hoard
-						["description"] = "Requires specialization - Profession Gear to discover",
-					}),
-					r(447334),	-- Miner's Bismuth Hoard
-					r(447315, {	-- Overclocked Idea Generator
-						["description"] = "Requires specialization - Goggles to discover",
-					}),
-					r(447361),	-- Pouch of Pocket Grenades
-					r(447357),	-- Recalibrated Safety Switch
-					r(447323, {	-- Spring-Loaded Aqirite Fabric Cutters
-						["description"] = "Requires specialization - Profession Gear to discover",
-					}),
-					r(447322),	-- Spring-Loaded Bismuth Fabric Cutters
-					r(447314, { -- Studious Brilliance Expeditor
-						["description"] = "Requires specialization - Goggles to discover",
-					}),
-					r(447316, {	-- Supercharged Thought Enhancer
-						["description"] = "Requires specialization - Goggles to discover",
-					}),
-					r(447319, {	-- Venting Vambraces
-						["description"] = "Requires specialization - Bracers to discover",
-					}),
-					r(447320, {	-- Whirring Wristwraps
-						["description"] = "Requires specialization - Bracers to discover",
-					}),
-				},
+			i(219191, {	-- Hastily Scrawled Notes
+				i(219192, {	-- Comprehensibly Organized Ideas
+					["description"] = "NOTE: Some of these require a specific specialization to discover.",
+					["g"] = {
+						r(447325, {	-- Aqirite Brainwave Projector
+							["description"] = "Requires specialization - Profession Gear to discover",
+						}),
+						r(447327, {	-- Aqirite Fisherfriend
+							["description"] = "Requires specialization - Profession Gear to discover",
+						}),
+						r(447331, { -- Aqirite Miner's Headgear
+							["description"] = "Requires specialization - Profession Gear to discover",
+						}),
+						r(447324),	-- Bismuth Brainwave Projector
+						r(447332),	-- Bismuth Fueled Samophlange
+						r(447330),	-- Bismuth Miner's Headgear
+						r(447358),	-- Blame Redirection Device
+						r(447318, {	-- Blasting Bracers
+							["description"] = "Requires specialization - Bracers to discover",
+						}),
+						r(459299),	-- Bottled Brilliance
+						r(447321, {	-- Clanking Cuffs
+							["description"] = "Requires specialization - Bracers to discover",
+						}),
+						r(447360),	-- Complicated Fuse Box
+						r(447362),	-- Concealed Chaos Module
+						r(447317, {	-- Dangerous Distraction Inhibitor
+							["description"] = "Requires specialization - Goggles to discover",
+						}),
+						r(447363),	-- Energy Redistribution Beacon
+						r(447329, {	-- Lapidary's Aqirite Clamps
+							["description"] = "Requires specialization - Profession Gear to discover",
+						}),
+						r(447328),	-- Lapidary's Bismuth Clamps
+						r(447335, {	-- Miner's Aqirite Hoard
+							["description"] = "Requires specialization - Profession Gear to discover",
+						}),
+						r(447334),	-- Miner's Bismuth Hoard
+						r(447315, {	-- Overclocked Idea Generator
+							["description"] = "Requires specialization - Goggles to discover",
+						}),
+						r(447361),	-- Pouch of Pocket Grenades
+						r(447357),	-- Recalibrated Safety Switch
+						r(447323, {	-- Spring-Loaded Aqirite Fabric Cutters
+							["description"] = "Requires specialization - Profession Gear to discover",
+						}),
+						r(447322),	-- Spring-Loaded Bismuth Fabric Cutters
+						r(447314, { -- Studious Brilliance Expeditor
+							["description"] = "Requires specialization - Goggles to discover",
+						}),
+						r(447316, {	-- Supercharged Thought Enhancer
+							["description"] = "Requires specialization - Goggles to discover",
+						}),
+						r(447319, {	-- Venting Vambraces
+							["description"] = "Requires specialization - Bracers to discover",
+						}),
+						r(447320, {	-- Whirring Wristwraps
+							["description"] = "Requires specialization - Bracers to discover",
+						}),
+					},
+				}),
 			}),
 		}),
 		n(ARMOR, {
