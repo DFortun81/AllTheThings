@@ -1812,6 +1812,7 @@ i(220255);	-- Darkened Residue
 i(225813);	-- Darkened Ritual Stone
 i(220280);	-- Dense Five-Pound Stone
 i(225795);	-- Dented Pocketwatch
+i(228509);	-- Diaphanous Webbing
 i(220229);	-- Dormant Core
 i(220271);	-- Downy Clump
 i(225836);	-- Drained Elemental Mote
@@ -1823,6 +1824,7 @@ i(220355);	-- Enlarged Ear
 i(220222);	-- Everburning Lump
 i(225814);	-- Feather-on-a-Stick
 i(220302);	-- Fractured Casing
+i(225829);	-- Fractured Interface Crystal
 i(225677);	-- Gleaming Chaos
 i(220259);	-- Gob of Mucus
 i(220509);	-- Gossamer Web
@@ -1878,6 +1880,7 @@ i(220231);	-- Skiatic Vessel
 i(220299);	-- Sleek Beak
 i(220226);	-- Slime-Coated Membrane
 i(225810);	-- Smoked Visor
+i(220241);	-- Softly Glowing Shard
 i(220268);	-- Spiraled Horn
 i(226692);	-- Splintered Stone
 i(213262);	-- Stained Glass Fragment
@@ -1899,9 +1902,11 @@ i(218453);	-- Unusable Fragment
 i(220289);	-- Venomous Stinger
 i(220270);	-- Vile Catalyst
 i(223884);	-- Volatile Transmutation
+i(220276);	-- Wax-Covered Helmet
 i(220263);	-- Wax Miner's Sack
 i(225802);	-- Well-Worn Darning Needle
 i(217163);	-- Well Worn Doll
+i(220232);	-- Worm-Eaten Burlap Robe
 
 
 i(226507);	-- Venom Dahn's Webscrub

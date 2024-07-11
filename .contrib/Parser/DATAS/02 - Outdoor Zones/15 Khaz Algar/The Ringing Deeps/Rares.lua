@@ -93,6 +93,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(220287, {	-- Kelpmire
 				["coord"] = { 46.8, 46.8, THE_RINGING_DEEPS },
 				["questID"] = 81485,
+				["g"] = {
+					i(221204),	-- Spore Giant's Stompers
+				},
 			}),
 			n(220273, {	-- Rampaging Skardyn
 				["coord"] = { 57.0, 54.7, THE_RINGING_DEEPS },

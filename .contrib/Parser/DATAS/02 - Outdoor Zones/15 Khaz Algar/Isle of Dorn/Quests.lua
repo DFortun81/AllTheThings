@@ -349,6 +349,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 33.3, 63.3, ISLE_OF_DORN },
 					["g"] = {
 						i(223875),	-- Algari Censer
+						i(223871),	-- Algari Heavy Axe
+						i(223872),	-- Algari Mace
+						i(223873),	-- Algari Shield
 					},
 				}),
 				q(81915, {	-- Home to Roost
@@ -1189,6 +1192,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
 	q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
 	q(82462),	-- 'Stay awhile and listen' - Moira Thaurissan (n: 217878), after turn in questID 78462 (Echoes of Compassion)
+	q(82541),	-- 'Stay awhile and listen' - Merrix (n: 214916), after turn in 79157 (or after accept 79224)
 	-- Side quests
 	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
 	-- Special Assignment unlocks tracker

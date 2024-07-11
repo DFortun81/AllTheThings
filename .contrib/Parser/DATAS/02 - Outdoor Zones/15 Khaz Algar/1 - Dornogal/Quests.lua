@@ -125,6 +125,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 56.3, 48.5, AZJ_KAHET },
 				["g"] = {
 					--crit 'News from Below'
+					i(223466),	-- Mantle of the Weaver
 					i(223445),	-- Sash of the Weaver
 				},
 			}),
@@ -144,6 +145,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["coord"] = { 56.3, 74.9, THE_RINGING_DEEPS },
 				["g"] = {
 					i(223448),	-- Epaulets of the Ringing Deeps
+					i(223463),	-- Sabatons of the Ringing Deeps
 				},
 			}),
 			q(79217, {	-- Back to Base
@@ -202,6 +204,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["provider"] = { "n", 214663 },	-- High Speaker Brinthe
 				["coord"] = { 56.3, 74.9, THE_RINGING_DEEPS },
 				["g"] = {
+					i(223467),	-- Saboteur's Girdle
 					i(223442),	-- Saboteur's Grips
 				},
 			}),
@@ -209,6 +212,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["sourceQuests"] = { 79029 },	-- It's Sabotage
 				["provider"] = { "n", 220928 },	-- High Speaker Brinthe
 				["coord"] = { 56.1, 77.6, THE_RINGING_DEEPS },
+				["g"] = {
+					-- crit 'The Machines March to War'
+				},
 			}),
 			------ Miscellaneous ------
 			q(82747, {	-- Crossroads Plaza

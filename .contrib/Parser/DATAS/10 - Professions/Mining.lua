@@ -1288,6 +1288,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 		},{
 			q(83103),	-- Acquiring Aqirite
+			q(83106),	-- Null Pebble Excavation
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",

@@ -1422,6 +1422,8 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				i(224817),	-- Algari Herbalism Notes
 			},
 		},{
+			q(82962),	-- A handful of Luredrops
+			q(82965),	-- Light and Shadow
 			q(82916),	-- When Fungi Bloom
 		})),
 		filter(RECIPES, {

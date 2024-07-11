@@ -180,12 +180,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	n(QUESTS, {
 		q(81514, {	-- Bountiful Delves
 			["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard,
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 		}),
 		q(81510, {	-- Ship It!
 			["sourceQuests"] = { 81514 },	-- Bountiful Delves
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard,
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 			["g"] = {
 				i(219391),	-- Delver's Dirigible (MOUNT!)
@@ -193,8 +193,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		q(81593, {	-- Maximum Potential
 			["sourceQuests"] = { 81510 },	-- Ship It!
-			["provider"] = { "n", 206017 },	-- Brann Bronzebeard,
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
+		}),
+		q(84519, {	-- Ancient Curiosity: Combat
+			["provider"] = { "i", 228560 },	-- Ancient Curio (TODO: providers ids could be swapped)
+			["g"] = {
+				i(228580),	-- Brute Force Idol
+			},
+		}),
+		q(84520, {	-- Ancient Curiosity: Utility
+			["provider"] = { "i", 228581 },	-- Ancient Curio (TODO: providers ids could be swapped)
+			["g"] = {
+				i(228582),	-- Streamlined Relic
+			},
+		}),
+		q(84370, {	-- The Key to Success
+			["provider"] = { "i", 227794 },	-- Archaic Cipher Key
+			["repeatable"] = true,	-- TODO: weekly? seasonal?
 		}),
 		-- Brann Bronzebeard leveling quest,
 		q(77716),	-- Level 2
@@ -207,6 +223,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77724),	-- Level 9
 		q(77727),	-- Level 10
 		q(77728),	-- Level 11
+		q(77729),	-- Level 12
 	}),
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard
@@ -699,6 +716,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	}),
 	n(REWARDS, {
 		-- Curio
+		i(228560),	-- Ancient Curio (QI!/QS!)
+		i(228581),	-- Ancient Curio (QI!/QS!)
 		i(225902),	-- Idol of Final Will
 		i(225906),	-- Lifeless Necrotic Relic
 		i(225900),	-- Light-Touched Idol
@@ -724,6 +743,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(228072),	-- Chunk of Companion Experience (Rare)
 			i(228073),	-- Chunk of Companion Experience (Epic)
 			i(223287),	-- Atomized Salien Slime
+			i(227794),	-- Archaic Cipher Key (QI!/QS!)
 			i(218121),	-- Candle Light
 			i(226132),	-- Deployable Recovery Keg
 			i(226110),	-- Elemental Fusion Bomb

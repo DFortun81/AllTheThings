@@ -6,12 +6,7 @@ root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			i(228507),	-- Swarmite Eggsac
-			i(228509),	-- Diaphanous Webbing
 			i(228510),	-- Ripped Swarmite Wing
-			i(228560),	-- Ancient Curio
-			i(228580),	-- Brute Force Idol
-			i(228581),	-- Ancient Curio
-			i(228582),	-- Streamlined Relic
 			i(228608),	-- On the Application of Arathi Technology to Earthen Life
 			i(228609),	-- Rock Roasting for Dummies
 			i(228610),	-- Artisan's Consortium Payout
@@ -2382,13 +2377,11 @@ root(ROOTS.Unsorted, {
 				i(220221),	-- Void Pebble
 				i(220222),	-- Everburning Lump
 				i(220225),	-- Tattered Standard
-				i(220232),	-- Worm-Eaten Burlap Robe
 				i(220233),	-- Extinguished Icon
 				i(220235),	-- Electrified Teeth
 				i(220238),	-- Keen Fang
 				i(220239),	-- Severed Spiraled Tail
 				i(220240),	-- Night's Litany
-				i(220241),	-- Softly Glowing Shard
 				i(220245),	-- Charged Antennae
 				i(220250),	-- Filthy Handkerchief
 				i(220260),	-- Corroded Golem Graspers
@@ -2396,7 +2389,6 @@ root(ROOTS.Unsorted, {
 				i(220269),	-- Ionized Feather
 				i(220273),	-- Shed Skin
 				i(220274),	-- Chipped Hammer
-				i(220276),	-- Wax-Covered Helmet
 				i(220278),	-- Well-Worn Leather Sole
 				i(220284),	-- Darkened Crystal
 				i(220285),	-- Moldy Rucksack
@@ -2583,7 +2575,6 @@ root(ROOTS.Unsorted, {
 				i(225824),	-- Sand Sculpting Comb
 				i(225825),	-- Ground Snacking Stone
 				i(225826),	-- Broken Elevator Cog
-				i(225829),	-- Fractured Interface Crystal
 				i(225831),	-- Glittering Rock
 				i(225832),	-- Smelly Backscratcher
 				i(225833),	-- Weathered Skipping Stone
@@ -2937,7 +2928,6 @@ root(ROOTS.Unsorted, {
 				i(226135),	-- Nerubian Venom
 				i(226136),	-- Nerubian Blood
 				i(226683),	-- Malfunctioning Mechsuit
-				i(227794),	-- Archaic Cipher Key
 				i(228378),	-- Pristine Council's Seal
 				i(228409),	-- Valrin's Sweetrolls
 			}),
@@ -3142,7 +3132,6 @@ root(ROOTS.Unsorted, {
 
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
-				i(221204),	-- Spore Giant's Stompers
 
 				i(221208),	-- Unseen Cutthroat's Tunic \\ Fel Assassin Tunic
 				i(221209),	-- Flame Trader's Gloves
@@ -3248,7 +3237,6 @@ root(ROOTS.Unsorted, {
 				i(223424),	-- [PH] 11.0 - Cord
 
 
-				i(223431),	-- The Fallen Queen's Band
 				i(223432),	-- Commemorative Light's Gambit Championship Signet \\ [PH] 11.0 - Signet
 				i(223436),	-- Light Boots of the Ringing Deeps
 				i(223437),	-- Handwraps of the Weaver
@@ -3271,11 +3259,7 @@ root(ROOTS.Unsorted, {
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223461),	-- Algari Warden's Helm
 
-				i(223463),	-- Sabatons of the Ringing Deeps
 				i(223464),	-- [PH] 11.0 - Gauntlets
-
-				i(223466),	-- Mantle of the Weaver
-				i(223467),	-- Saboteur's Girdle
 
 				i(223472),	-- Drape of the Lamplighter
 				i(220118),	-- Arathi Demolition Charge
@@ -3292,9 +3276,6 @@ root(ROOTS.Unsorted, {
 				i(223631),	-- Adventurer's Lucky Ring
 				i(223632),	-- Signet of Lion's Favor
 				i(223633),	-- Signet of Wolf's Favor
-				i(223871),	-- Algari Heavy Axe
-				i(223872),	-- Algari Mace
-				i(223873),	-- Algari Shield
 				i(223874),	-- Algari Dagger
 				i(223876),	-- Algari Warglaive
 				i(223877),	-- Algari Hatchet
