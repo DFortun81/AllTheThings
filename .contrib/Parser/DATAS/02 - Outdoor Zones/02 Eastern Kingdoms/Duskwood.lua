@@ -673,12 +673,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				heroscall(q(28564, {	-- Hero's Call: Duskwood!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 23 (TODO: Test max level between 22 and 32)
+					["lvl"] = { 19, 23 },
+					-- #endif
+				})),
 				q(26728, {	-- Hero's Call: Duskwood!
 					["qg"] = 900,	-- Bailiff Conacher
 					["coord"] = { 28.7, 40.9, REDRIDGE_MOUNTAINS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 19,
 				}),
 				q(26669, {	-- In A Dark Corner
 					["qg"] = 267,	-- Clerk Daltry

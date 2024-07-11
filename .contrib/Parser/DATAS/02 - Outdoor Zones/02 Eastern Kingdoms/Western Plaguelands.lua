@@ -1221,6 +1221,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
+				heroscall(q(28576, {	-- Hero's Call: Western Plaguelands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 38 (TODO: Test max level between 36 and 44)
+					["lvl"] = { 34, 38 },
+					-- #endif
+				})),
 				q(26956, {	-- I Ain't Sayin' You a Gourd-Digger...
 					["qg"] = 44457,	-- Selyria Groenveld
 					["coord"] = { 48.5, 54.9, WESTERN_PLAGUELANDS },

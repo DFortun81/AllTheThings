@@ -1157,6 +1157,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				},
+				heroscall(q(28666, {	-- Hero's Call: Burning Steppes!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 50 (TODO: Test max level between 53 and 60)
+					["lvl"] = { 49, 50 },
+					-- #endif
+				})),
 				{	-- I Am the Law and I Am the Lash
 					["allianceQuestData"] = q(28278, {	-- I Am the Law and I Am the Lash (A)
 						["sourceQuest"] = 28266,	-- Trial by Magma (A)

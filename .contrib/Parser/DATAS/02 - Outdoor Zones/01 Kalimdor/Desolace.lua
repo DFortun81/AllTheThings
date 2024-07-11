@@ -1075,8 +1075,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 34 (TODO: Test max level between 32 and 37, 34 is based on Wowpedia info)
-					["lvl"] = { 29, 34 },
+					-- Cataclysm: Maximum is level 33 (TODO: Test max level between 32 and 37)
+					["lvl"] = { 29, 33 },
 					-- #endif
 				})),
 				q(14378, {	-- Hunting Brendol

@@ -497,6 +497,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(183188),	-- Chromie's Scroll (H) (QI!)
 					},
 				}),
+				warchiefscommand(q(28790, {	-- A Personal Summons (Vashj'ir Starter Quest)
+					["qg"] = 45244,	-- Farseer Krogar
+					["coord"] = { 50.4, 38.2, ORGRIMMAR },
+					["timeline"] = { ADDED_4_0_1, REMOVED_8_3_0 },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(80, 80, 30),
+				})),
 				q(25160, {	-- A Present for Lila
 					["qg"] = 50482,	-- Marith Lazuria
 					["coord"] = { 72.4, 34.6, ORGRIMMAR },

@@ -2226,6 +2226,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				heroscall(q(28578, {	-- Hero's Call: Eastern Plaguelands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 39. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 43 (TODO: Test max level between 42 and 52)
+					["lvl"] = { 39, 43 },
+					-- #endif
+				})),
 				q(5168, {	-- Heroes of Darrowshire
 					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuest"] = 5210,	-- Brother Carlin

@@ -816,8 +816,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 9. (Confirmed by Hurieve, Crieve's Level 9 Hunter.)
-					-- Cataclysm: Maximum is level 20 (TODO: Test max level between 16 and 25, 20 is based on Wowpedia info)
-					["lvl"] = { 9, 20 },
+					-- Cataclysm: Maximum is level 18 (TODO: Test max level between 16 and 25)
+					["lvl"] = { 9, 18 },
 					-- #endif
 				})),
 				-- #if BEFORE 4.0.3

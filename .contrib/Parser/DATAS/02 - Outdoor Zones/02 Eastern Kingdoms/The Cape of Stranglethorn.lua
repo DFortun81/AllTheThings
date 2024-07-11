@@ -905,6 +905,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				heroscall(q(28702, {	-- Hero's Call: The Cape of Stranglethorn!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { STORMWIND_CITY },	-- Only found in Stormwind City in Cataclysm.
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33 (TODO: Test max level between 32 and 39)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
 				{	-- High Priestess Jeklik
 					["allianceQuestData"] = q(26812, {	-- High Priestess Jeklik (A)
 						["providers"] = {

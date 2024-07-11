@@ -581,6 +581,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_7_2_0 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				heroscall(q(28825, {	-- A Personal Summons (Vashj'ir Starter Quest)
+					["qg"] = 45226,	-- Naraat the Earthspeaker
+					["coord"] = { 74.6, 18.8, STORMWIND_CITY },
+					["timeline"] = { ADDED_4_0_1, REMOVED_8_3_0 },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(80, 80, 30),
+				})),
 				q(25154, {	-- A Present for Lila
 					["qg"] = 50480,	-- Isabel Jones
 					["coord"] = { 63.8, 61.2, STORMWIND_CITY },

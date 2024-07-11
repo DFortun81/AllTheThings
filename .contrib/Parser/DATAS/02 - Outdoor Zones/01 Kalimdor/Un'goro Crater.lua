@@ -787,6 +787,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = {{ "i", 11315, 10 }},	-- Bloodpetal Sprout
 					["repeatable"] = true,
 				}),
+				heroscall(q(28525, {	-- Hero's Call: Un'Goro Crater! (breadcrumb quest for 24740, not available if 24911 is completed) (max level 53)
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 53 (TODO: Test max level between 53 and 60)
+					["lvl"] = { 49, 53 },
+					-- #endif
+				})),
 				q(24697, {	-- How to Make Meat Fresh Again
 					["qg"] = 38270,	-- Nolen Tacker
 					["coord"] = { 55.0, 60.5, UNGORO_CRATER },

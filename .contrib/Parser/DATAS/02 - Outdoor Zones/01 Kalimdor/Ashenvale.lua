@@ -1430,8 +1430,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 25 (TODO: Test max level between 22 and 32, 25 is based on Wowpedia info)
-					["lvl"] = { 19, 25 },
+					-- Cataclysm: Maximum is level 23 (TODO: Test max level between 22 and 32)
+					["lvl"] = { 19, 23 },
 					-- #endif
 				})),
 				-- #if SEASON_OF_DISCOVERY

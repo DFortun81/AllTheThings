@@ -427,6 +427,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				heroscall(q(28582, {	-- Hero's Call: Searing Gorge!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 47. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 48 (TODO: Test max level between 49 and 58)
+					["lvl"] = { 47, 48 },
+					-- #endif
+				})),
 				q(27986, {	-- In the Hall of the Mountain-Lord
 					["qg"] = 14627,	-- Hansel Heavyhands
 					["sourceQuests"] = {

@@ -645,6 +645,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				heroscall(q(28565, {	-- Hero's Call: Wetlands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE },	-- Only found in Ironforge in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 19. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 23 (TODO: Test max level between 22 and 32)
+					["lvl"] = { 19, 23 },
+					-- #endif
+				})),
 				q(25857, {	-- Hunting Horrorjaw
 					["qg"] = 41433,	-- James Halloran
 					["sourceQuest"] = 25856,	-- Crocolisk Hides

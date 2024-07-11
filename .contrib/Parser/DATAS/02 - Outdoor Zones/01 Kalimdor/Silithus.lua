@@ -1067,6 +1067,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						LOGISTICS_ASSIGNMENT_H,
 					},
 				})),
+				heroscall(q(28528, {	-- Hero's Call: Silithus! (breadcrumb quest for 8280, not available if 28859,28856,28527 are completed) (max level 58)
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 54. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 57 (TODO: Test max level between 57 and 65)
+					["lvl"] = { 54, 57 },
+					-- #endif
+				})),
 				q(1126, {	-- Hive in the Tower
 					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind

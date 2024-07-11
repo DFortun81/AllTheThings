@@ -1092,7 +1092,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						-- #if BEFORE 7.3.5
 						-- Cataclysm: Minimum is level 68. (TODO: Confirm this.)
-						-- Cataclysm: Maximum is level 78 (TODO: Test max level between 74 and 79, 78 is based on Wowpedia info)
+						-- Cataclysm: Maximum is level 78 (TODO: Test max level between 74 and 79)
 						["lvl"] = { 68, 78 },
 						-- #endif
 					})),

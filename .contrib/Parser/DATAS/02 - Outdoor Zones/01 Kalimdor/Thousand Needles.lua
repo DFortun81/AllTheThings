@@ -1147,6 +1147,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 28,
 				}),
+				heroscall(q(28503, {	-- Hero's Call: Thousand Needles!
+					["altQuests"] = {
+						-- 28503,	-- Hero's Call: Thousand Needles!
+						25479,	-- To New Thalanaar [Dustwallow Marsh]
+						25481,	-- To New Thalanaar [Feralas]
+					},
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 39. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 43 (TODO: Test max level between 42 and 50)
+					["lvl"] = { 39, 43 },
+					-- #endif
+				})),
 				q(4770, {	-- Homeward Bound
 					["qg"] = 10427,	-- Pao'ka Swiftmountain
 					["coord"] = { 17.8, 40.6, THOUSAND_NEEDLES },

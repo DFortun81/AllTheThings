@@ -498,6 +498,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
 				}),
+				heroscall(q(28675, {	-- Hero's Call: Swamp of Sorrows!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 51. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 52 (TODO: Test max level between 51 and 60)
+					["lvl"] = { 51, 52 },
+					-- #endif
+				})),
 				q(2702, {	-- Heroes of Old (1/2)
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2681,	-- The Stones That Bind Us

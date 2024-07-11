@@ -947,6 +947,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(38, 38, 15),
 				}),
+				heroscall(q(28552, {	-- Hero's Call: Dustwallow Marsh!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, STORMWIND_CITY, THE_EXODAR },	-- Only found in Darnassus & Stormwind City & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 38 (TODO: Test max level between 36 and 44)
+					["lvl"] = { 34, 38 },
+					-- #endif
+				})),
 				q(1949, {	-- Hidden Secrets
 					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 1947,	-- Journey to the Marsh

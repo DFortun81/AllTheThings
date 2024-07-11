@@ -367,7 +367,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26547, {	-- A Mangy Threat
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
-					["sourceQuest"] = 26542,	-- Hero's Call: The Hinterlands!
+					["sourceQuests"] = {
+						26542,	-- Hero's Call: The Hinterlands!
+						-- #if AFTER 6.0.2
+						38931,	-- Hero's Call: The Hinterlands!
+						-- #endif
+					},
 					["coord"] = { 9.9, 44.2, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -785,6 +790,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
+				heroscall(q(26542, {	-- Hero's Call: The Hinterlands!
+					["qg"] = 2700,	-- Captain Nials
+					["coord"] = { 40, 48.8, ARATHI_HIGHLANDS },
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE },	-- Only found in Ironforge in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33 (TODO: Test max level between 32 and 39)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
+				heroscall(q(38931, {	-- Hero's Call: The Hinterlands!
+					["timeline"] = { CREATED_6_2_0 },
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 33 (TODO: Test max level between 32 and 39)
+					["lvl"] = { 29, 33 },
+					-- #endif
+				})),
 				q(26526, {	-- Hunt the Keeper (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
 					["sourceQuest"] = 26517,	-- Summit of Fate

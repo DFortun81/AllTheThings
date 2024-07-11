@@ -764,6 +764,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				heroscall(q(28579, {	-- Hero's Call: Badlands!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { IRONFORGE, STORMWIND_CITY },	-- Only found in Ironforge & Stormwind City in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 46 (TODO: Test max level between 48 and 55)
+					["lvl"] = { 44, 46 },
+					-- #endif
+				})),
 				q(1108, {	-- Indurium
 					["qg"] = 4618,	-- Martek the Exiled
 					["sourceQuest"] = 1106,	-- Martek the Exiled

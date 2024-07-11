@@ -841,6 +841,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.8, 49.1, WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
+				heroscall(q(28544, {	-- Hero's Call: Winterspring! (breadcrumb quest for ???, not available if 28524,28545,28768 are completed) (max level 53)
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 49. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 53 (TODO: Test max level between 54 and 60)
+					["lvl"] = { 49, 53 },
+					-- #endif
+				})),
 				q(28470, {	-- High Chief Winterfall
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 28469,	-- Winterfall Runners

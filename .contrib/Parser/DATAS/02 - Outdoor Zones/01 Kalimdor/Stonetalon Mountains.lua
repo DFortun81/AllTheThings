@@ -1290,14 +1290,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				heroscall(q(28539, {	-- Hero's Call: Stonetalon Mountains!  (max level 28)
+				heroscall(q(28539, {	-- Hero's Call: Stonetalon Mountains!
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 27 and 35, 30 is based on Wowpedia info)
-					["lvl"] = { 24, 30 },
+					-- Cataclysm: Maximum is level 28 (TODO: Test max level between 27 and 35)
+					["lvl"] = { 24, 28 },
 					-- #endif
 				})),
 				q(25935, {	-- Hungry Pups

@@ -852,6 +852,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				heroscall(q(28511, {	-- Hero's Call: Feralas!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 34. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 38 (TODO: Test max level between 36 and 44)
+					["lvl"] = { 34, 38 },
+					-- #endif
+				})),
 				q(25337, {	-- Hippogryph Muisek
 					["qg"] = 39894,	-- Gombana
 					["sourceQuest"] = 25336,	-- Testing the Vessel

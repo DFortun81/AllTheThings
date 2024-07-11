@@ -1253,6 +1253,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				heroscall(q(28543, {	-- Hero's Call: Felwood!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 48 (TODO: Test max level between 48 and 55)
+					["lvl"] = { 44, 48 },
+					-- #endif
+				})),
 				q(8420, {	-- Hot and Itchy
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["altQuests"] = { 8419 },	-- An Imp's Request

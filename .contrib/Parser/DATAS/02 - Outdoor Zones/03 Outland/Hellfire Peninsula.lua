@@ -1597,6 +1597,16 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
+					heroscall(q(28708, {	-- Hero's Call: Outland!
+						["timeline"] = { ADDED_4_0_3 },
+						["maps"] = { DARNASSUS, IRONFORGE, STORMWIND_CITY, THE_EXODAR },	-- Only found in Darnassus & Ironforge & Stormwind City & The Exodar in Cataclysm.
+						["isBreadcrumb"] = true,
+						-- #if BEFORE 7.3.5
+						-- Cataclysm: Minimum is level 58. (TODO: Confirm this.)
+						-- Cataclysm: Maximum is level 67 (TODO: Test max level between 60 and 70)
+						["lvl"] = { 58, 67 },
+						-- #endif
+					})),
 					q(10258, {	-- Honor the Fallen
 						["qg"] = 19736,	-- Althen the Historian
 						["sourceQuest"] = 10250,	-- Bloody Vengeance

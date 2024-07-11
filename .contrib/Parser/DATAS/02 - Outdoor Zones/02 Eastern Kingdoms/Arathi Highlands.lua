@@ -819,8 +819,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					-- #if BEFORE 7.3.5
 					-- Cataclysm: Minimum is level 24. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 30 (TODO: Test max level between 28 and 35, 30 is based on Wowpedia info)
-					["lvl"] = { 24, 30 },
+					-- Cataclysm: Maximum is level 28 (TODO: Test max level between 28 and 35)
+					["lvl"] = { 24, 28 },
 					-- #endif
 				})),
 				q(659, {	-- Hints of a New Plague? (1/5)

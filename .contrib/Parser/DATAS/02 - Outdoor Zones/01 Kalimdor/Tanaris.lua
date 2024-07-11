@@ -3637,6 +3637,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				heroscall(q(28507, {	-- Hero's Call: Tanaris!
+					["timeline"] = { ADDED_4_0_3 },
+					["maps"] = { DARNASSUS, THE_EXODAR },	-- Only found in Darnassus & The Exodar in Cataclysm.
+					["isBreadcrumb"] = true,
+					-- #if BEFORE 7.3.5
+					-- Cataclysm: Minimum is level 44. (TODO: Confirm this.)
+					-- Cataclysm: Maximum is level 48 (TODO: Test max level between 48 and 55)
+					["lvl"] = { 44, 48 },
+					-- #endif
+				})),
 				q(25521, {	-- I'm With Scorpid
 					["qg"] = 40580,	-- Gus Rustflutter
 					["coord"] = { 42.4, 24.2, TANARIS },
