@@ -33,6 +33,7 @@ app:CreateWindow("Maps", {
 						collectible = true,
 						collected = true
 					});
+					mapObject.sym = {{ "select", "mapID", mapID }};
 					mapsByID[mapID] = mapObject;
 					mapObject.g = {};	-- Doing this prevents the CreateMap function from creating an exploration header.
 				end

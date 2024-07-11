@@ -1523,6 +1523,7 @@ local getTimestamp = function(t)
 		minute=t.minute,
 	});
 end
+local SECONDS_IN_A_WEEK = 604800;
 createHeader = function(data)
 	if not data then
 		print("INVALID HEADER: You must pass data into the createHeader function.");
@@ -1694,6 +1695,79 @@ createHeader = function(data)
 						month = 1;
 						year = year + 1;
 					end
+				end
+			elseif data.eventSchedule[1] == 3 then	-- Recurring every two weeks, lasting a week.
+				-- START_YEAR, START_MONTH, START_DAY
+				-- Example: 2023, 12, 4
+				local eventIDs = data.eventIDs;
+				if not eventIDs then
+					print("INVALID HEADER", data.readable, " INVALID SCHEDULE, MISSING EVENT IDs!");
+					return;
+				end
+				local totalEventIDs = #eventIDs;
+				if totalEventIDs < 1 then
+					print("INVALID HEADER", data.readable, " INVALID SCHEDULE, EVENT IDs EMPTY!");
+					return;
+				end
+
+				-- Specify the first recorded event matching the first eventID.
+				local startTimeStamp = getTimestamp({
+					year=data.eventSchedule[2],
+					month=data.eventSchedule[3] or 1,
+					monthDay=data.eventSchedule[4] or 1,
+					--weekday=7,	-- generated below
+					hour=0,
+					minute=0,
+				});
+				
+				-- Calculate the difference between the first recorded event to now.
+				local currentYear, currentMonth = currentDate.year, currentDate.month;
+				local currentTimeStamp = os.time(currentDate);
+				local totalOffset, SECONDS_IN_TWO_WEEKS = 0, SECONDS_IN_A_WEEK * 2;
+				while true do
+					startTimeStamp = startTimeStamp + SECONDS_IN_TWO_WEEKS;
+					if startTimeStamp < currentTimeStamp then
+						totalOffset = totalOffset + 1;
+					else
+						-- We want at least one event behind us if it is still active.
+						startTimeStamp = startTimeStamp - SECONDS_IN_TWO_WEEKS;
+						break;
+					end
+				end
+				
+				-- Now generate a full years worth of events going forward.
+				local veryfirst = true;
+				for week = 0,26,1 do
+					if veryfirst then
+						veryfirst = false;
+					else
+						schedule = schedule .. ",";
+					end
+					
+					-- Determine when the event is supposed to end.
+					local startTime = os.date("*t", startTimeStamp);
+					local endTime = os.date("*t", startTimeStamp + SECONDS_IN_A_WEEK);
+
+					-- Append the schedule
+					schedule = schedule .. "\n\t_.Modules.Events.CreateSchedule(" .. concatKeyPairs({
+						year=startTime.year,
+						month=startTime.month,
+						monthDay=startTime.day,
+						weekday=startTime.wday,
+						hour=0,
+						minute=0,
+					}) .. "," .. concatKeyPairs({
+						year=endTime.year,
+						month=endTime.month,
+						monthDay=endTime.day,
+						weekday=endTime.wday,
+						hour=0,
+						minute=0,
+					}) .. ",{[\"remappedID\"]=" .. eventIDs[(totalOffset % totalEventIDs) + 1] .. "})";
+
+					-- Adjust by 2 weeks.
+					startTimeStamp = startTimeStamp + SECONDS_IN_TWO_WEEKS;
+					totalOffset = totalOffset + 1;
 				end
 			else
 				print("INVALID HEADER", data.readable, " INVALID SCHEDULE TYPE", data.eventSchedule[1]);

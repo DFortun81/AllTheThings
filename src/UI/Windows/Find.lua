@@ -405,83 +405,6 @@ app:CreateWindow("AchievementFinder", {
 	end,
 });
 end
-app:CreateWindow("SpellFinder", {
-	HideFromSettings = true,
-	Commands = { "attfindspells" },
-	OnRebuild = function(self, ...)
-		if not self.data then
-			local CreateSpellHarvester = app.ExtendClass("Spell", "SpellHarvester", "spellID", {
-				collectible = app.ReturnFalse,
-				collected = app.ReturnTrue,
-			},
-			"AsPending", {
-				collectible = app.ReturnTrue,
-				collected = app.ReturnFalse,
-				text = function(t)
-					local link = t.name;
-					if link and link ~= "" and link ~= " " then
-						return link;
-					end
-					
-					t.retries = (t.retries or 0) + 1;
-					if t.retries > 30 then
-						rawset(t, "collected", true);
-					end
-					return RETRIEVING_DATA;
-				end,
-			},
-			function(t)
-				return #SearchForField("spellID", t.spellID) == 0;
-			end);
-			self.data = {
-				text = "Spell Finder",
-				icon = app.asset("WindowIcon_RaidAssistant"),
-				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
-				visible = true,
-				expanded = true,
-				progress = 0,
-				total = 0,
-				back = 1,
-				currentID = 450000,
-				minimumID = 0,
-				g = { },
-				OnUpdate = function(header)
-					local g = header.g;
-					if g then
-						local count = #g;
-						if count > 0 then
-							for i=count,1,-1 do
-								if g[i].collected then
-									tremove(g, i);
-								end
-							end
-						end
-						for count=#g,5000 do
-							local i = header.currentID - 1;
-							if i > header.minimumID then
-								header.currentID = i;
-								tinsert(g, CreateSpellHarvester(i, {
-									parent = header
-								}));
-							end
-						end
-					end
-				end
-			};
-		end
-	end,
-	OnUpdate = function(self, ...)
-		self.data.progress = 0;
-		self.data.total = 0;
-		UpdateGroups(self.data, self.data.g);
-		self:DefaultUpdate(...);
-		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-	end,
-	OnRefresh = function(self, ...)
-		self:DelayedUpdate();
-		return true;
-	end,
-});
 app:CreateWindow("ItemFinder", {
 	HideFromSettings = true,
 	Commands = { "attfinditems" },
@@ -658,6 +581,83 @@ app:CreateWindow("ItemFinder", {
 							if i > header.minimumItemID then
 								header.currentItemID = i;
 								tinsert(g, CreateItemHarvester(i, {
+									parent = header
+								}));
+							end
+						end
+					end
+				end
+			};
+		end
+	end,
+	OnUpdate = function(self, ...)
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		self:DefaultUpdate(...);
+		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+	end,
+	OnRefresh = function(self, ...)
+		self:DelayedCall("Update", 5);
+		return true;
+	end,
+});
+app:CreateWindow("QuestFinder", {
+	HideFromSettings = true,
+	Commands = { "attfindquests" },
+	OnRebuild = function(self, ...)
+		if not self.data then
+			local CreateQuestHarvester = app.ExtendClass("Quest", "QuestHarvester", "questID", {
+				collectible = app.ReturnFalse,
+				collected = app.ReturnTrue,
+			},
+			"AsPending", {
+				collectible = app.ReturnTrue,
+				collected = app.ReturnFalse,
+				text = function(t)
+					local link = t.name;
+					if link and link ~= "" and link ~= " " and not IsRetrieving(link) then
+						return link;
+					end
+					
+					t.retries = (t.retries or 0) + 1;
+					if t.retries > 30 then
+						rawset(t, "collected", true);
+					end
+					return RETRIEVING_DATA;
+				end,
+			},
+			function(t)
+				return #SearchForField("questID", t.questID) == 0;
+			end);
+			self.data = {
+				text = "Quest Finder",
+				icon = app.asset("WindowIcon_RaidAssistant"),
+				description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.",
+				visible = true,
+				expanded = true,
+				progress = 0,
+				total = 0,
+				back = 1,
+				currentID = 90000,
+				minimumID = 78295,
+				g = { },
+				OnUpdate = function(header)
+					local g = header.g;
+					if g then
+						local count = #g;
+						if count > 0 then
+							for i=count,1,-1 do
+								if g[i].collected then
+									tremove(g, i);
+								end
+							end
+						end
+						for count=#g,5000 do
+							local i = header.currentID - 1;
+							if i > header.minimumID then
+								header.currentID = i;
+								tinsert(g, CreateQuestHarvester(i, {
 									parent = header
 								}));
 							end
