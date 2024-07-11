@@ -230,10 +230,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81106, 430601);	-- Flask of Tempered Aggression
 			FirstCraft(81107, 430602);	-- Flask of Tempered Swiftness
 			-- Vicious Flasks
-			--FirstCraft(QuestID, 430607);	-- Vicious Flask of Classical Spirits
-			--FirstCraft(QuestID, 430608);	-- Vicious Flask of Honor
-			--FirstCraft(QuestID, 430610);	-- Vicious Flask of Manifested Fury
-			--FirstCraft(QuestID, 430611);	-- Vicious Flask of Wrecking Ball
+			FirstCraft(81112, 430607);	-- Vicious Flask of Classical Spirits
+			FirstCraft(81113, 430608);	-- Vicious Flask of Honor
+			FirstCraft(81114, 430610);	-- Vicious Flask of Manifested Fury
+			FirstCraft(81115, 430611);	-- Vicious Flask of Wrecking Ball
 			-- Phials
 			FirstCraft(81121, 430617);	-- Phial of Bountiful Seasons
 			FirstCraft(81118, 430614);	-- Phial of Concentrated Ingenuity
@@ -324,9 +324,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80604, 450226);	-- Everforged Vambraces
 			FirstCraft(80605, 450227);	-- Everforged Pauldrons
 			FirstCraft(80606, 450228);	-- Everforged Gauntlets
-			--FirstCraft(XXXXX, 450250);	-- Siphoning Stiletto
-			--FirstCraft(XXXXX, 450245);	-- Sanctified Steps
-			--FirstCraft(XXXXX, 450246);	-- Beledar's Bulwark
+			FirstCraft(80628, 450250);	-- Siphoning Stiletto
+			FirstCraft(80623, 450245);	-- Sanctified Steps
+			FirstCraft(80624, 450246);	-- Beledar's Bulwark
 			FirstCraft(80636, 450258);	-- Dredger's Plate Sabatons
 			FirstCraft(80637, 450259);	-- Dredger's Plate Breastplate
 			FirstCraft(80638, 450260);	-- Dredger's Developed Greatbelt
@@ -344,10 +344,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80612, 450234);	-- Everforged Greataxe
 			FirstCraft(80610, 450232);	-- Everforged Warglaive
 			FirstCraft(80616, 450238);	-- Charged Claymore
-			--FirstCraft(XXXXX, 450242);	-- Charged Slicers
-			--FirstCraft(XXXXX, 450236);	-- Charged Runeaxe
-			--FirstCraft(XXXXX, 450237);	-- Charged Facesmasher
-			--FirstCraft(XXXXX, 450240);	-- Charged Crusher
+			FirstCraft(80620, 450242);	-- Charged Slicers
+			FirstCraft(80614, 450236);	-- Charged Runeaxe
+			FirstCraft(80615, 450237);	-- Charged Facesmasher
+			FirstCraft(80618, 450240);	-- Charged Crusher
 			FirstCraft(80613, 450235);	-- Charged Hexsword
 			FirstCraft(80617, 450239);	-- Charged Halberd
 			FirstCraft(80619, 450241);	-- Charged Invoker
@@ -359,22 +359,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80634, 450256);	-- Ironclaw Axe
 			FirstCraft(80635, 450257);	-- Ironclaw Great Axe
 			-- PVP
-			--FirstCraft(XXXXX, 455003);	-- Algari Competitor's Greatsword
-			--FirstCraft(XXXXX, 455004);	-- Algari Competitor's Sword
-			--FirstCraft(XXXXX, 455002);	-- Algari Competitor's Sickle
-			--FirstCraft(XXXXX, 455000);	-- Algari Competitor's Shield
-			--FirstCraft(XXXXX, 454999);	-- Algari Competitor's Scepter
-			--FirstCraft(XXXXX, 454998);	-- Algari Competitor's Dagger
-			--FirstCraft(XXXXX, 455001);	-- Algari Competitor's Axe
-			--FirstCraft(XXXXX, 454997);	-- Algari Competitor's Splitter
-			--FirstCraft(XXXXX, 438914);	-- Algari Competitor's Plate Breastplate
-			--FirstCraft(XXXXX, 438920);	-- Algari Competitor's Plate Waistguard
-			--FirstCraft(XXXXX, 438915);	-- Algari Competitor's Plate Sabatons
-			--FirstCraft(XXXXX, 438916);	-- Algari Competitor's Plate Gauntlets
-			--FirstCraft(XXXXX, 438917);	-- Algari Competitor's Plate Helm
-			--FirstCraft(XXXXX, 438919);	-- Algari Competitor's Plate Pauldrons
-			--FirstCraft(XXXXX, 438921);	-- Algari Competitor's Plate Armguards
-			--FirstCraft(XXXXX, 438918);	-- Algari Competitor's Plate Greaves
+			FirstCraft(83296, 455003);	-- Algari Competitor's Greatsword
+			FirstCraft(83297, 455004);	-- Algari Competitor's Sword
+			FirstCraft(83295, 455002);	-- Algari Competitor's Sickle
+			FirstCraft(83293, 455000);	-- Algari Competitor's Shield
+			FirstCraft(83292, 454999);	-- Algari Competitor's Scepter
+			FirstCraft(83291, 454998);	-- Algari Competitor's Dagger
+			FirstCraft(83294, 455001);	-- Algari Competitor's Axe
+			FirstCraft(83290, 454997);	-- Algari Competitor's Splitter
+			FirstCraft(80625, 438914);	-- Algari Competitor's Plate Breastplate
+			FirstCraft(80668, 438920);	-- Algari Competitor's Plate Waistguard
+			FirstCraft(80626, 438915);	-- Algari Competitor's Plate Sabatons
+			FirstCraft(80627, 438916);	-- Algari Competitor's Plate Gauntlets
+			FirstCraft(84695, 438917);	-- Algari Competitor's Plate Helm
+			FirstCraft(84697, 438919);	-- Algari Competitor's Plate Pauldrons
+			FirstCraft(80669, 438921);	-- Algari Competitor's Plate Armguards
+			FirstCraft(84696, 438918);	-- Algari Competitor's Plate Greaves
 			-- Profession Equipment
 			FirstCraft(80645, 450267);	-- Proficient Sickle
 			FirstCraft(80646, 450268);	-- Proficient Pickaxe
@@ -386,12 +386,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80652, 450274);	-- Proficient Blacksmith's Toolbox
 			FirstCraft(80659, 450281);	-- Artisan Blacksmith's Hammer
 			FirstCraft(80660, 450282);	-- Artisan Blacksmith's Toolbox
-			--FirstCraft(XXXXX, 450277);  -- Artisan Skinning Knife
-			--FirstCraft(XXXXX, 450276);  -- Artisan Pickaxe
-			--FirstCraft(XXXXX, 450275);  -- Artisan Sickle
-			--FirstCraft(XXXXX, 450279);  -- Artisan Leatherworker's Knife
-			--FirstCraft(XXXXX, 450278);  -- Artisan Needle Set
-			--FirstCraft(XXXXX, 450280);  -- Artisan Leatherworker's Toolset
+			FirstCraft(80655, 450277);  -- Artisan Skinning Knife
+			FirstCraft(80654, 450276);  -- Artisan Pickaxe
+			FirstCraft(80653, 450275);  -- Artisan Sickle
+			FirstCraft(80657, 450279);  -- Artisan Leatherworker's Knife
+			FirstCraft(80656, 450278);  -- Artisan Needle Set
+			FirstCraft(80658, 450280);  -- Artisan Leatherworker's Toolset
 			FirstCraft(80661, 450283);	-- Earthen Master's Hammer
 			-- Stonework
 			FirstCraft(80663, 450285);	-- Ironclaw Whetstone
@@ -625,7 +625,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81072, 445400);	-- Gleeful Glamour - Dark Iron Dwarf
 			FirstCraft(81063, 445391);	-- Gleeful Glamour - Draenei
 			FirstCraft(81074, 445402);	-- Gleeful Glamour - Dwarf
-			--FirstCraft(xx, 445382);	-- Gleeful Glamour - Earthen
+			FirstCraft(81054, 445382);	-- Gleeful Glamour - Earthen
 			FirstCraft(81035, 445362);	-- Gleeful Glamour - Gnome
 			FirstCraft(81005, 445332);	-- Gleeful Glamour - Goblin
 			FirstCraft(81049, 445377);	-- Gleeful Glamour - Highmountain Tauren
@@ -703,16 +703,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81045, 445373);	-- Whisper of Silken Speed
 			-- Reagents
 			FirstCraft(81067, 445395);	-- Concentration Concentrate
-			--FirstCraft(xx, 445354);	-- Enchanted Gilded Harbinger Crest
-			--FirstCraft(xx, 445347);	-- Enchanted Runed Harbinger Crest
-			--FirstCraft(xx, 445399);	-- Enchanted Weathered Harbinger Crest
+			FirstCraft(81027, 445354);	-- Enchanted Gilded Harbinger Crest
+			FirstCraft(81020, 445347);	-- Enchanted Runed Harbinger Crest
+			FirstCraft(81071, 445399);	-- Enchanted Weathered Harbinger Crest
 			FirstCraft(81043, 445371);	-- Mirror Powder
 			-- Rods and Wants
-			--FirstCraft(xx, 445324);	-- Enchanted Spearwood Wand
+			FirstCraft(80997, 445324);	-- Enchanted Spearwood Wand
 			FirstCraft(81034, 445361);	-- Runed Bismuth Rod
 			FirstCraft(81044, 445372);	-- Runed Ironclaw Rod
 			FirstCraft(80996, 445323);	-- Runed Null Stone Rod
-			--FirstCraft(xx, 445355);	-- Scepter of Radiant Magics
+			FirstCraft(81028, 445355);	-- Scepter of Radiant Magics
 		})),
 		filter(ILLUSIONS, {
 		}),
@@ -1369,6 +1369,71 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = INSCRIPTION,
 		},{
+			-- Competitor's Crafts (PvP)
+			FirstCraft(80743, 455006); -- Algari Competitor's Censer
+			FirstCraft(80748, 444338); -- Algari Competitor's Emblem
+			FirstCraft(80747, 444337); -- Algari Competitor's Insignia of Alacrity
+			FirstCraft(80746, 444336); -- Algari Competitor's Medallion
+			FirstCraft(80744, 455007); -- Algari Competitor's Scythe
+			FirstCraft(80745, 455008); -- Algari Competitor's Staff
+			-- Combat Stats
+			FirstCraft(80719, 444210); -- Algari Missive of the Aurora
+			FirstCraft(80720, 444211); -- Algari Missive of the Feverflare
+			FirstCraft(80721, 444212); -- Algari Missive of the Fireflash
+			FirstCraft(80722, 444213); -- Algari Missive of the Harmonious
+			FirstCraft(80723, 444214); -- Algari Missive of the Peerless
+			FirstCraft(80724, 444215); -- Algari Missive of the Quickblade
+			-- Contracts
+			FirstCraft(80725, 444217); -- Contract: Assembly of the Deeps
+			FirstCraft(80726, 444218); -- Contract: Hallowfall Arathi
+			FirstCraft(80727, 444219); -- Contract: The Severed Threads
+			FirstCraft(80728, 444220); -- Contract: Council of Dornogal
+			-- Embellishments
+			FirstCraft(80704, 444195); -- Darkmoon Sigil: Vivacity
+			FirstCraft(80701, 444192); -- Darkmoon Sigil: Ascension
+			FirstCraft(80703, 444194); -- Darkmoon Sigil: Symbiosis
+			FirstCraft(80702, 444193); -- Darkmoon Sigil: Radiance
+			-- Inks
+			FirstCraft(80730, 444222);	-- Apricate Ink
+			FirstCraft(80729, 444221);	-- Shadow Ink
+			-- Reagents
+			FirstCraft(80699, 444190); -- Codified Greenwood
+			FirstCraft(80700, 444191); -- Boundless Cipher
+			-- Runes
+			FirstCraft(80712, 444203); -- Vantus Rune: Nerub-ar Palace
+			-- Profession Stats
+			FirstCraft(80735, 444232); -- Algari Missive of Crafting Speed
+			FirstCraft(80738, 444235); -- Algari Missive of Deftness
+			FirstCraft(80736, 444233); -- Algari Missive of Finesse
+			FirstCraft(80732, 444229); -- Algari Missive of Ingenuity
+			FirstCraft(80734, 444231); -- Algari Missive of Multicraft
+			FirstCraft(80737, 444234); -- Algari Missive of Perception
+			FirstCraft(80733, 444230); -- Algari Missive of Resourcefulness
+			-- Profession Treatises
+			FirstCraft(80690, 444187);	-- Algari Treatise on Alchemy
+			FirstCraft(80698, 444184);	-- Algari Treatise on Blacksmithing
+			FirstCraft(80694, 444188);	-- Algari Treatise on Enchanting
+			FirstCraft(80731, 444223);	-- Algari Treatise on Engineering
+			FirstCraft(80696, 444182);	-- Algari Treatise on Herbalism
+			FirstCraft(80695, 444189);	-- Algari Treatise on Jewelcrafting
+			FirstCraft(80693, 444185);	-- Algari Treatise on Leatherworking
+			FirstCraft(80697, 444183);	-- Algari Treatise on Mining
+			FirstCraft(80739, 444236);	-- Algari Treatise on Skinning
+			FirstCraft(80691, 444186);	-- Algari Treatise on Tailoring
+			-- Profession Equipment
+			FirstCraft(80718, 444209); -- Inscribed Rolling Pin
+			FirstCraft(80714, 444205); -- Silver Tongue's Quill
+			FirstCraft(80716, 444207); -- Patient Alchemist's Mixing Rod
+			FirstCraft(80715, 444206); -- Hasty Alchemist's Mixing Rod
+			FirstCraft(80713, 444204); -- Lightweight Scribe's Quill
+			FirstCraft(80717, 444208); -- Burnt Rolling Pin
+			-- Weapons
+			FirstCraft(80708, 444199); -- Vagabond's Bounding Baton
+			FirstCraft(80707, 444198); -- Vagabond's Careful Crutch
+			FirstCraft(80706, 444197); -- Vagabond's Torch
+			FirstCraft(80710, 444201); -- Inquisitor's Baton
+			FirstCraft(80709, 444200); -- Inquisitor's Crutch
+			FirstCraft(80705, 444196); -- Inquisitor's Torch
 		})),
 		filter(GLYPHS, {
 		}),
@@ -1632,23 +1697,23 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80959, 443961);	-- Smoldering Pollen Hauberk
 			FirstCraft(80957, 443951);	-- Weathered Stormfront Vest
 			-- Competitor's Leather (PvP)
-			--FirstCraft(xx, 438902);	-- Algari Competitor's Leather Belt
-			--FirstCraft(xx, 438898);	-- Algari Competitor's Leather Boots
-			--FirstCraft(xx, 438899);	-- Algari Competitor's Leather Chestpiece
-			--FirstCraft(xx, 438904);	-- Algari Competitor's Leather Gloves
-			--FirstCraft(xx, 438900);	-- Algari Competitor's Leather Mask
-			--FirstCraft(xx, 438901);	-- Algari Competitor's Leather Shoulderpads
-			--FirstCraft(xx, 438903);	-- Algari Competitor's Leather Trousers
-			--FirstCraft(xx, 438905);	-- Algari Competitor's Leather Wristwraps
+			FirstCraft(80968, 438902);	-- Algari Competitor's Leather Belt
+			FirstCraft(80962, 438898);	-- Algari Competitor's Leather Boots
+			FirstCraft(80963, 438899);	-- Algari Competitor's Leather Chestpiece
+			FirstCraft(80964, 438904);	-- Algari Competitor's Leather Gloves
+			FirstCraft(80965, 438900);	-- Algari Competitor's Leather Mask
+			FirstCraft(80967, 438901);	-- Algari Competitor's Leather Shoulderpads
+			FirstCraft(80966, 438903);	-- Algari Competitor's Leather Trousers
+			FirstCraft(80969, 438905);	-- Algari Competitor's Leather Wristwraps
 			-- Competitor's Mail (PvP)
-			--FirstCraft(xx, 438907);	-- Algari Competitor's Chain Chainmail
-			--FirstCraft(xx, 438908);	-- Algari Competitor's Chain Cowl
-			--FirstCraft(xx, 438913);	-- Algari Competitor's Chain Cuffs
-			--FirstCraft(xx, 438909);	-- Algari Competitor's Chain Epaulets
-			--FirstCraft(xx, 438912);	-- Algari Competitor's Chain Gauntlets
-			--FirstCraft(xx, 438910);	-- Algari Competitor's Chain Girdle
-			--FirstCraft(xx, 438911);	-- Algari Competitor's Chain Leggings
-			--FirstCraft(xx, 438906);	-- Algari Competitor's Chain Treads
+			FirstCraft(80971, 438907);	-- Algari Competitor's Chain Chainmail
+			FirstCraft(80973, 438908);	-- Algari Competitor's Chain Cowl
+			FirstCraft(80977, 438913);	-- Algari Competitor's Chain Cuffs
+			FirstCraft(80975, 438909);	-- Algari Competitor's Chain Epaulets
+			FirstCraft(80972, 438912);	-- Algari Competitor's Chain Gauntlets
+			FirstCraft(80976, 438910);	-- Algari Competitor's Chain Girdle
+			FirstCraft(80974, 438911);	-- Algari Competitor's Chain Leggings
+			FirstCraft(80970, 438906);	-- Algari Competitor's Chain Treads
 			-- Consumables
 			FirstCraft(80953, 444103);	-- Defender's Armor Kit
 			FirstCraft(80955, 444104);	-- Dual Layered Armor Kit
@@ -1666,8 +1731,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80913, 443702);	-- Spelunker's Leather Bands
 			FirstCraft(80907, 443696);	-- Spelunker's Leather Footpads
 			FirstCraft(80906, 443695);	-- Spelunker's Leather Jerkin
-			--FirstCraft(80910, 443699);	-- Spelunker's Practiced Britches
-			--FirstCraft(80909, 443698);	-- Spelunker's Practiced Hat
+			FirstCraft(80910, 443699);	-- Spelunker's Practiced Britches
+			FirstCraft(80909, 443698);	-- Spelunker's Practiced Hat
 			FirstCraft(80908, 443697);	-- Spelunker's Practiced Mitts
 			FirstCraft(80912, 443701);	-- Spelunker's Practiced Sash
 			FirstCraft(80911, 443700);	-- Spelunker's Practiced Shoulders
@@ -1708,7 +1773,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80929, 444106);	-- Nerubian Alchemist's Hat
 			FirstCraft(80932, 444110);	-- Scrapsmith's Gloves
 			FirstCraft(80930, 444107);	-- Steelsmith's Apron
-			--FirstCraft(xx, 444113);	-- Stonebound Herbalist's Pack
+			FirstCraft(80935, 444113);	-- Stonebound Herbalist's Pack
 			-- Reagents
 			FirstCraft(80945, 444075);	-- Carapace-Backed Hide
 			FirstCraft(80944, 444086);	-- Chitin Armor Banding
