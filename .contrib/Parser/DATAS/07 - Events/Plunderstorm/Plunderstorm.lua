@@ -94,7 +94,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				i(216989),	-- Quilted Breeches
 			},{ -- RENOWN 5 --
 				i(216776),	-- Calcified Claymore
-				q(80384, {	-- TODO: need english name (wowhead missing it) (account wide quest!)
+				q(80384, {	-- A Keg-Stamped Package (account wide quest!)
 					-- pop asap as r5 is obtained with no providers
 					["g"] = {
 						i(217397),	-- Keg-Stamped Coin x15
