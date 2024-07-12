@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Herald's Incense Burned
 							["provider"] = { "i", 56016 },	-- Herald's Incense
 							["coord"] = { 44.2, 47.6, MOUNT_HYJAL },
-							["cr"] = 41300,    -- Aviana's Egg
+							["cr"] = 41300,	-- Aviana's Egg
 						}),
 						i(57336),	-- Skygrip Handguards
 						i(57337),	-- Heraldcall Censer
@@ -636,7 +636,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 202712 },	-- The Twilight Apocrypha
 					["sourceQuest"] = 25301,	-- Mastering Puppets
 					["coord"] = { 25.8, 41.6, MOUNT_HYJAL },
-                    ["description"] = "Activate in order 1. Fire, 2. Earth, 3. Air and 4. Water.",
+					["description"] = "Activate in order 1. Fire, 2. Earth, 3. Air and 4. Water.",
 					["groups"] = {
 						objective(1, {	-- 0/1 Crucible of Earth Activated
 							["provider"] = { "n", 39737 },	-- Crucible of Earth
