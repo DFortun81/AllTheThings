@@ -245,70 +245,70 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		}),
 		ach(40430, {	-- Khaz Algar Flight Master
 			crit(68170, {	-- Dornogal, Isle of Dorn
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2928),	-- Dornogal, Isle of Dorn
 			}),
 			crit(68172, {	-- Durgaz Cabin, Isle of Dorn
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2931),	-- Durgaz Cabin, Isle of Dorn
 			}),
 			crit(68171, {	-- Freywold Village, Isle of Dorn
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2929),	-- Freywold Village, Isle of Dorn
 			}),
 			crit(68173, {	-- Rambleshire, Isle of Dorn
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2932),	-- Rambleshire, Isle of Dorn
 			}),
 			crit(68184, {	-- Camp Murroch, The Ringing Deeps
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2926),	-- Camp Murroch, The Ringing Deeps
 			}),
 			crit(68190, {	-- Gundargaz, The Ringing Deeps
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2962),	-- Gundargaz, The Ringing Deeps
 			}),
 			crit(68183, {	-- Opportunity Point, Ringing Deeps
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2925),	-- Opportunity Point, The Ringing Deeps
 			}),
 			crit(68191, {	-- Shadowvein Point, The Ringing Deeps
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2963),	-- Shadowvein Point, The Ringing Deeps
 			}),
 			crit(68180, {	-- Dunelle's Kindness, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2922),	-- Dunelle's Kindness, Hallowfall
 			}),
 			crit(68182, {	-- Light's Redoubt, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2944),	-- Hillhelm Family Farm, Hallowfall
 			}),
 			crit(68188, {	-- Hillhelm Family Farm, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2924),	-- Light's Redoubt, Hallowfall
 			}),
 			crit(68181, {	-- Lightspark, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2923),	-- Lightspark, Hallowfall
 			}),
 			crit(68187, {	-- Lorel's Crossing, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2943),	-- Lorel's Crossing, Hallowfall
 			}),
 			crit(68185, {	-- Mereldar, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2941),	-- Mereldar, Hallowfall
 			}),
 			crit(68189, {	-- The Aegis Wall, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2942),	-- Priory of the Sacred Flame, Hallowfall
 			}),
 			crit(68186, {	-- Priory of the Sacred Flame, Hallowfall
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2943),	-- The Aegis Wall, Hallowfall
 			}),
 			crit(68178, {	-- Faerin's Advance, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2920),	-- Faerin's Advance, Azj-Kahet
 			}),
 			crit(68179, {	-- Mmarl, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2921),	-- Mmarl, Azj-Kahet
 			}),
 			crit(68176, {	-- The Burrows, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2893),	-- The Burrows, Azj-Kahet
 			}),
 			crit(68174, {	-- Weaver's Lair, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2882),	-- Waver's Lair, Azj-Kahet
 			}),
 			crit(68175, {	-- Wildcamp Or'lay, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2889),	-- Wildcamp Or'lay, Azj-Kahet
 			}),
 			crit(68177, {	-- Wildcamp Ul'ar, Azj-Kahet
-				-- TODO: Connect to the relevant flightpath somehow
+				fp(2919),	-- Wildcamp Ul'ar, Azj-Kahet
 			}),
 		}),
 		ach(40702, {	-- Khaz Algar Glyph Hunter
