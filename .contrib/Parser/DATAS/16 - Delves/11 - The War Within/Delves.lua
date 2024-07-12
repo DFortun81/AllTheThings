@@ -22,62 +22,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40451),	-- Buddy System III
 		ach(40450),	-- Buddy System II
 		ach(40455),	-- Buddy System
-		achraw(40437, {	-- Delver of the Depths
-			crit(68295),	-- Earthcrawl Mines
-			crit(68296),	-- Fungal Folly
-			crit(68297),	-- Kriegval's Rest
-			crit(68298),	-- Mycomancer Cavern
-			crit(68299),	-- Nightfall Sanctum
-			crit(68300),	-- Skittering Breach
-			crit(68303),	-- Tak-Rethan Abyss
-			crit(68302),	-- The Dread Pit
-			crit(68301),	-- The Sinkhole
-			crit(68304),	-- The Spiral Weave
-			crit(68305),	-- The Underkeep
-			crit(68306),	-- The Waterworks
-		}),
-		achraw(40447, {		-- Delver of the Depths II
-			crit(68307),	-- Earthcrawl Mines
-			crit(68308),	-- Fungal Folly
-			crit(68309),	-- Kriegval's Rest
-			crit(68310),	-- Mycomancer Cavern
-			crit(68311),	-- Nightfall Sanctum
-			crit(68312),	-- Skittering Breach
-			crit(68313),	-- Tak-Rethan Abyss
-			crit(68314),	-- The Dread Pit
-			crit(68315),	-- The Sinkhole
-			crit(68316),	-- The Spiral Weave
-			crit(68317),	-- The Underkeep
-			crit(68318),	-- The Waterworks
-		}),
-		achraw(40448, {		-- Delver of the Depths III
-			crit(68319),	-- Earthcrawl Mines
-			crit(68320),	-- Fungal Folly
-			crit(68321),	-- Kriegval's Rest
-			crit(68322),	-- Mycomancer Cavern
-			crit(68323),	-- Nightfall Sanctum
-			crit(68324),	-- Skittering Breach
-			crit(68325),	-- Tak-Rethan Abyss
-			crit(68326),	-- The Dread Pit
-			crit(68327),	-- The Sinkhole
-			crit(68328),	-- The Spiral Weave
-			crit(68329),	-- The Underkeep
-			crit(68330),	-- The Waterworks
-		}),
-		achraw(40449, {		-- Delver of the Depths IV
-			crit(68331),	-- Earthcrawl Mines
-			crit(68332),	-- Fungal Folly
-			crit(68333),	-- Kriegval's Rest
-			crit(68334),	-- Mycomancer Cavern
-			crit(68335),	-- Nightfall Sanctum
-			crit(68336),	-- Skittering Breach
-			crit(68337),	-- Tak-Rethan Abyss
-			crit(68338),	-- The Dread Pit
-			crit(68339),	-- The Sinkhole
-			crit(68340),	-- The Spiral Weave
-			crit(68341),	-- The Underkeep
-			crit(68342),	-- The Waterworks
-		}),
+		ach(40437),	-- Delver of the Depths (automated)
+		ach(40447),	-- Delver of the Depths II (automated)
+		ach(40448),	-- Delver of the Depths III (automated)
+		ach(40449),	-- Delver of the Depths IV (automated)
 		ach(40454),	-- Daystormer
 		ach(40460),	-- Delve Deep
 		ach(40462),	-- Delve Deeper
@@ -258,9 +206,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40806),	-- Earthcrawl Mines Discoveries
-				ach(40527, bubbleDown({ ["_noautomation"] = true, }, {	-- Earthcrawl Mines Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40527),	-- Earthcrawl Mines Stories (automated)
 			}),
 			n(TREASURES, {
 				-- Seems like two rare treasures in this dungeon? Can have different IDs
@@ -296,9 +242,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40803),	-- Fungal Folly Discoveries
-				ach(40525, bubbleDown({ ["_noautomation"] = true, }, {	-- Fungal Folly Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40525),	-- Fungal Folly Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83758, {	-- Delver's Call: Fungal Folly
@@ -338,9 +282,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40807),	-- Kriegval's Rest Discoveries
-				ach(40526, bubbleDown({ ["_noautomation"] = true, }, {	-- Kriegval's Rest Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40526),	-- Kriegval's Rest Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83759, {	-- Delver's Call: Kriegval's Rest
@@ -373,9 +315,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40808),	-- Mycomancer Cavern Discoveries
-				ach(40531, bubbleDown({ ["_noautomation"] = true, }, {	-- Mycomancer Cavern Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40531),	-- Mycomancer Cavern Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83769, {	-- Delver's Call: Mycomancer Cavern
@@ -408,9 +348,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40809),	-- Nightfall Sanctum Discoveries
-				ach(40530, bubbleDown({ ["_noautomation"] = true, }, {	-- Nightfall Sanctum Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40530),	-- Nightfall Sanctum Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83755, {	-- Delves: Nightfall Sanctum
@@ -439,9 +377,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40810),	-- Skittering Breach Discoveries
-				ach(40533, bubbleDown({ ["_noautomation"] = true, }, {	-- Skittering Breach Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40533),	-- Skittering Breach Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83768, {	-- Delver's Call: The Skittering Breach
@@ -474,9 +410,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40811),	-- Tak-Rethan Abyss Discoveries
-				ach(40535, bubbleDown({ ["_noautomation"] = true, }, {	-- Tak-Rethan Abyss Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40535),	-- Tak-Rethan Abyss Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83771, {	-- Delver's Call: Tak-Rethan Abyss
@@ -512,9 +446,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40812),	-- The Dread Pit Discoveries
-				ach(40529, bubbleDown({ ["_noautomation"] = true, }, {	-- The Dread Pit Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40529),	-- The Dread Pit Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83766, {	-- Delver's Call: Dread Pit
@@ -547,9 +479,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40813),	-- The Sinkhole Discoveries
-				ach(40532, bubbleDown({ ["_noautomation"] = true, }, {	-- The Sinkhole Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40532),	-- The Sinkhole Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83767, {	-- Delver's Call: The Sinkhole
@@ -583,9 +513,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(216772),	-- Whispering Explosives (QI!)
 			n(ACHIEVEMENTS, {
 				ach(40814),	-- The Spiral Weave Discoveries
-				ach(40536, bubbleDown({ ["_noautomation"] = true, }, {	-- The Spiral Weave Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40536),	-- The Spiral Weave Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83770, {	-- Delver's Call: Spiral Weave
@@ -622,9 +550,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40815),	-- The Underkeep Discoveries
-				ach(40534, bubbleDown({ ["_noautomation"] = true, }, {	-- The Underkeep Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40534),	-- The Underkeep Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83761, {	-- Delves: The Underkeep
@@ -653,9 +579,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40816),	-- The Waterworks Discoveries
-				ach(40528, bubbleDown({ ["_noautomation"] = true, }, {	-- The Waterworks Stories
-					["sym"] = {{ "achievement_criteria" }},
-				})),
+				ach(40528),	-- The Waterworks Stories (automated)
 			}),
 			n(QUESTS, {
 				q(83749, {	-- Delves: The Waterworks
