@@ -268,17 +268,20 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(40217, {	-- Battleground Blitzer
 		["timeline"] = { ADDED_11_0_1_LAUNCH },
 	}),
-	achraw(40219, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH }, }, {	-- Battleground Blitzest
-		crit(67431),	-- Arathi Basin
-		crit(67425),	-- Deephaul Ravine
-		crit(67430),	-- Deepwind Gorge
-		crit(67432),	-- Eye of the Storm
-		crit(67428),	-- Silvershard Mines
-		crit(67429),	-- Temple of Kotmogu
-		crit(67433),	-- The Battle for Gilneas
-		crit(67427),	-- Twin Peaks
-		crit(67426),	-- Warsong Gulch
-	})),
+	ach(40219, {	-- Battleground Blitzest
+		["timeline"] = { ADDED_11_0_1_LAUNCH },
+		["g"] = {
+			crit(67431),	-- Arathi Basin
+			crit(67425),	-- Deephaul Ravine
+			crit(67430),	-- Deepwind Gorge
+			crit(67432),	-- Eye of the Storm
+			crit(67428),	-- Silvershard Mines
+			crit(67429),	-- Temple of Kotmogu
+			crit(67433),	-- The Battle for Gilneas
+			crit(67427),	-- Twin Peaks
+			crit(67426),	-- Warsong Gulch
+		},
+	}),
 	ach(611, {		-- Bleeding Bloodhoof
 		["providers"] = {
 			-- #if AFTER CATA

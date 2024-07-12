@@ -36,17 +36,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				}},
 			}),
 			ach(40620),		-- Back to the Wall
-			achraw(40629, {	-- Bookworm
-				crit(68983, {	-- Entomological Essay on Grubs, Volume 1
-					["provider"] = { "o", 454335 },
-				}),
-				crit(68989, {	-- Entomological Essay on Grubs, Volume 2
-					["provider"] = { "o", 454336 },
-				}),
-				crit(68990, {	-- Entomological Essay on Grubs, Volume 3
-					["provider"] = { "o", 454338 },
-				}),
-			}),
+			ach(40629),		-- Bookworm (automated)
 			ach(40822, {	-- Explore Azj-Kahet
 				crit(69757),	-- Ruptured Lake
 				crit(69758),	-- Lightless Channels
@@ -122,44 +112,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			ach(40701, {	-- Skyriding Glyphs: Untamed Valley
 				["coord"] = { 65.4, 51.7, AZJ_KAHET },
 			}),
-			achraw(40542, {	-- Smelling History
-				crit(68818, {	-- Strands of Memory
-					--["provider"] = { "o", 454328 },
-				}),
-				crit(68971, {	-- Ethos of War, Part 1
-					--["provider"] = { "o", 454343 },
-				}),
-				crit(68980, {	-- Ethos of War, Part 2
-					--["provider"] = { "o", 454344 },
-				}),
-				crit(68981, {	-- Ethos of War, Part 3
-					--["provider"] = { "o", 454348 },
-				}),
-				crit(68982, {	-- Ethos of War, Part 4
-					--["provider"] = { "o", 454350 },
-				}),
-				crit(68984, {	-- Queen Xekatha
-					--["provider"] = { "o", 454313 },
-				}),
-				crit(68985, {	-- Queen Anub'izek
-					--["provider"] = { "o", 454320 },
-				}),
-				crit(68986, {	-- Queen Zaltra
-					--["provider"] = { "o", 454316 },
-				}),
-				crit(68987, {	-- Treatise on Forms: Sages
-					--["provider"] = { "o", 454332 },
-				}),
-				crit(68988, {	-- Treatise on Forms: Skitterlings
-					--["provider"] = { "o", 454330 },
-				}),
-				crit(69446, {	-- Treatise on Forms: Lords
-					--["provider"] = { "o", 456927 },
-				}),
-				crit(69447, {	-- Treatise on Forms: Ascended
-					--["provider"] = { "o", 456928 },
-				}),
-			}),
+			ach(40542),		-- Smelling History (automated)
 			ach(40636),		-- Sojourner of Azj-Kahet (automated)
 			ach(40833),		-- The General's Salute
 			ach(40633, {	-- The Unseeming

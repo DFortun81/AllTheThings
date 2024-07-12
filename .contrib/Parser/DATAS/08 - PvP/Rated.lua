@@ -84,7 +84,7 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 				}),
 			},
 		}),
-		achraw(6942, {	-- Hero of the Alliance
+		ach(6942, {	-- Hero of the Alliance
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				title(182, {	-- Hero of the Alliance
@@ -92,7 +92,7 @@ root(ROOTS.PVP, pvp(n(-240, {	-- Rated
 				}),
 			},
 		}),
-		achraw(6941, {	-- Hero of the Horde
+		ach(6941, {	-- Hero of the Horde
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				title(183, {	-- Hero of the Horde
