@@ -329,6 +329,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25795,	-- Return to the Shrine
 					["coord"] = { 44.4, 46.2, MOUNT_HYJAL },
 					["groups"] = {
+						objective(1, {	-- 0/1 Herald's Incense Burned
+							["provider"] = { "i", 56016 },	-- Herald's Incense
+							["coord"] = { 44.2, 47.6, MOUNT_HYJAL },
+							["cr"] = 41300,    -- Aviana's Egg
+						}),
 						i(57336),	-- Skygrip Handguards
 						i(57337),	-- Heraldcall Censer
 						i(57335),	-- Signet of Fragrant Summoning
@@ -342,6 +347,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						25985,	-- Wings Over Mount Hyjal
 					},
 					["coord"] = { 44.4, 46.2, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Nectar Offered
+							["provider"] = { "i", 55208 },	-- Sacred Nectar
+							["coord"] = { 40, 44, MOUNT_HYJAL },
+						}),
+					},
 				}),
 				q(25316, {	-- As Hyjal Burns
 					["qg"] = 39865,	-- Emissary Windsong
@@ -392,16 +403,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40341,	-- Tortolla
 					["sourceQuest"] = 25510,	-- Tortolla Speaks
 					["coord"] = { 24.6, 55.6, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/1 First Rod of Subjugation Disabled
+							["provider"] = { "o", 202954 },	-- Rod of Subjugation
+							["cr"] = 40551, -- Twilight Dominator
+						}),
+						objective(2, {	-- 0/1 Second Rod of Subjugation Disabled
+							["provider"] = { "o", 202955 },	-- Rod of Subjugation
+							["cr"] = 40551, -- Twilight Dominator
+						}),
+					},
 				}),
 				q(25899, {	-- Breakthrough
 					["qg"] = 41507,	-- Niden
 					["sourceQuest"] = 25843,	-- Tortolla's Revenge
 					["coord"] = { 42.2, 60.5, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/10 Twilight Scorchlord slain
+							["provider"] = { "n", 41500 },	-- Twilight Scorchlord
+						}),
+					},
 				}),
 				q(25552, {	-- Brood of Evil
 					["qg"] = 40816,	-- Aronus
 					["sourceQuest"] = 25644,	-- The Twilight Egg
 					["coord"] = { 72.2, 73.9, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Young Twilight Drake Skull
+							["provider"] = { "i", 54973 },	-- Young Twilight Drake Skull
+							["crs"] = {
+								40687,	-- Young Twilight Drake
+								40974,	-- Desperiona
+							},
+						}),
+					},
 				}),
 				q(29147, {	-- Call the Flock
 					["qg"] = 52669,	-- Matoclaw
@@ -428,6 +463,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25510,	-- Tortolla Speaks
 					["coord"] = { 24.6, 55.6, MOUNT_HYJAL },
 					["groups"] = {
+						objective(1, {	-- 0/6 Tortolla's Eggs Saved
+							["provider"] = { "n", 40561 },	-- Deep Corruptor
+						}),
 						i(57280),	-- Kilt of Reborn Future
 						i(57279),	-- Boots of Infinite Possibility
 						i(57278),	-- Shadow-Cleanser Bracers
@@ -495,6 +533,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 					["groups"] = {
+						objective(1, {	-- 0/8 Smoldering Core Destroyed
+							["providers"] = {
+								{ "i", 55123 },	-- Smoldering Corecrusher
+								{ "o", 203067 },	-- Twilight Anvil
+							},
+							["cr"] = 40841,	-- Searing Guardian
+						}),
 						i(57358),	-- Coreforged Girdle
 						i(57357),	-- Anvilcrush Bracers
 						i(57359),	-- Drape of Smoldering Dreams
@@ -591,7 +636,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 202712 },	-- The Twilight Apocrypha
 					["sourceQuest"] = 25301,	-- Mastering Puppets
 					["coord"] = { 25.8, 41.6, MOUNT_HYJAL },
+                    ["description"] = "Activate in order 1. Fire, 2. Earth, 3. Air and 4. Water.",
 					["groups"] = {
+						objective(1, {	-- 0/1 Crucible of Earth Activated
+							["provider"] = { "n", 39737 },	-- Crucible of Earth
+						}),
+						objective(2, {	-- 0/1 Crucible of Air Activated
+							["provider"] = { "n", 39736 },	-- Crucible of Air
+						}),
+						objective(3, {	-- 0/1 Crucible of Fire Activated
+							["provider"] = { "n", 39730 },	-- Crucible of Fire
+						}),
+						objective(4, {	-- 0/1 Crucible of Water Activated
+							["provider"] = { "n", 39738 },	-- Crucible of Water
+						}),
 						i(57382),	-- Apocryhphic Bindings
 						i(57381),	-- Chestguard of Inscrutability
 						i(57380),	-- Girdle of Gar'gol
@@ -689,6 +747,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25370,	-- Inciting the Elements
 					["coord"] = { 64.0, 22.4, MOUNT_HYJAL },
 					["groups"] = {
+						objective(1, {	-- 0/1 Infiltrators' encampment burnt
+							["provider"] = { "i", 55122 },	-- Tholo's Horn
+							["coord"] = { 56.0, 16.0, MOUNT_HYJAL },
+						}),
 						i(57296),	-- Girdle of Nullified Infiltration
 						i(57295),	-- Hornblower's Legguards
 						i(57294),	-- Poisonfire Greatsword
@@ -718,12 +780,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40834,	-- Jordan Olafson
 					["sourceQuest"] = 25617,	-- Into the Maw!
 					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/10 Twilight Arms Crate Destroyed
+							["provider"] = { "o", 203066 },	-- Twilight Arms Crate
+						}),
+					},
 				}),
 				q(25600, {	-- Foremaster Pyrendius
 					["qg"] = 40834,	-- Jordan Olafson
 					["sourceQuest"] = 25599,	-- Cindermaul, the Portal Master
 					["coord"] = { 26.2, 41.9, MOUNT_HYJAL },
 					["groups"] = {
+						objective(1, {	-- 0/1 Forgemaster Pyrendius slain
+							["provider"] = { "n", 40845 },	-- Forgemaster Pyrendius
+						}),
 						i(57270),	-- Wolfking Spaulders
 						i(57269),	-- Helm of Terrorizing Fangs
 						i(57268),	-- Forgemaster's Shattered Shackle
@@ -856,6 +926,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39429,	-- Oomla Whitehorn
 					["sourceQuest"] = 25584,	-- The Return of the Ancients
 					["coord"] = { 35.6, 19.4, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/6 Twilight Hunter slain
+							["provider"] = { "n", 39437 },	-- Twilight Hunter
+						}),
+					},
 				}),
 				q(25601, {	-- Head of the Class
 					["provider"] = { "o", 202701 },	-- Outhouse Hideout
@@ -1797,6 +1872,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25323,	-- Flamebreaker
 					["coord"] = { 47.7, 35.5, MOUNT_HYJAL },
 					["groups"] = {
+						objective(1, {	-- 0/20 Baron Geddon Weakened
+							["provider"] = { "i", 54463 },	-- Flameseer's Staff
+							["cr"] = 40147,	-- Baron Geddon
+						}),
 						i(57303),	-- Heatbinder Wristplates
 						i(57305),	-- Axe of Grounded Flame
 						i(57304),	-- Druidic Channeler's Mace
@@ -1851,6 +1930,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41498,	-- Garunda Mountainpeak
 					["sourceQuest"] = 25906,	-- The Third Flamegate
 					["coord"] = { 64.2, 53.5, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Nemesis Crystal Examined
+							["provider"] = { "o", 203375 },	-- Nemesis Crystal
+						}),
+					},
 				}),
 				q(25906, {	-- The Third Flamegate
 					["qg"] = 41504,	-- Tortolla
@@ -2043,6 +2127,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39406,	-- Instructor Devoran
 					["sourceQuest"] = 25291,	-- Twilight Training
 					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/5 Spawn of Smolderos Fed
+							["provider"] = { "i", 52708 },	-- Charred Basilisk Meat
+							["crs"] = {
+								39658,	-- Spinescale Basilisk
+								40403,	-- Spinescale Matriarch
+								48724,	-- Spinescale Basilisk
+							},
+						}),
+					},
 				}),
 				q(25319, {	-- War on the Twilight's Hammer
 					["qg"] = 39857,	-- Malfurion Stormrage
