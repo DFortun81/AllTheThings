@@ -27,20 +27,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 				ach(19998),		-- Elusive Foes: Dread Wastes
-				achraw(20031, {	-- Explore Dread Wastes
-					crit(65995),	-- Heart of Fear
-					crit(65996),	-- Klaxxi'vess
-					crit(65997),	-- Kypari Vor
-					crit(65998),	-- Kypari Zar
-					crit(65999),	-- Rikkitun Village
-					crit(66000),	-- Soggy's Gamble
-					crit(66001),	-- Terrace of Gurthan
-					crit(66002),	-- The Briny Muck
-					crit(66003),	-- The Clutches of Shek'zeer
-					crit(66004),	-- The Sunset Brewgarden
-					crit(66005),	-- Writhingwood
-					crit(66006),	-- Zan'vess
-				}),
+				ach(20031),		-- Explore Dread Wastes (automated)
 				ach(19967, {	-- Tour Dread Wastes
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

@@ -6,32 +6,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["icon"] = "Interface\\Icons\\achievement_zone_valeofeternalblossoms",
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				achraw(20069, {	-- Elusive Foes: Vale of Eternal Blossoms
-					crit(66114, {	-- Major Nanners
-						["crs"] = { 50840 },
-					}),
-					crit(66115, {	-- Sahn Tidehunter
-						["crs"] = { 50780 },
-					}),
-					crit(66116, {	-- Kal'tik the Blight
-						["crs"] = { 50749 },
-					}),
-					crit(66117, {	-- Kang the Soul Thief
-						["crs"] = { 50349 },
-					}),
-					crit(66118, {	-- Urgolax
-						["crs"] = { 50359 },
-					}),
-					crit(66119, {	-- Ai-Ran the Shifting Cloud
-						["crs"] = { 50822 },
-					}),
-					crit(66120, {	-- Moldo One-Eye
-						["crs"] = { 50806 },
-					}),
-					crit(66121, {	-- Yorik Sharpeye
-						["crs"] = { 50336 },
-					}),
-				}),
+				ach(20069),		-- Elusive Foes: Vale of Eternal Blossoms (automated)
 				ach(19916),		-- Golden Lotus
 				ach(20014, {	-- Looking For Group: Vale of Eternal Blossoms
 					-- Meta Achievement

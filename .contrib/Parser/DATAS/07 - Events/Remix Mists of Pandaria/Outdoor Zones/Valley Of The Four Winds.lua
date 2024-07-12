@@ -8,26 +8,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(ACHIEVEMENTS, {
 				ach(19884),		-- Campaign: Valley of the Four Winds
 				ach(19994),		-- Elusive Foes: Valley of the Four Winds
-				achraw(20027, {	-- Explore Valley of the Four Winds
-					crit(65936),	-- Winds' Edge
-					crit(65937),	-- Dustback Gorge
-					crit(65938),	-- Gilded Fan
-					crit(65939),	-- The Imperial Granary
-					crit(65940),	-- Halfhill
-					crit(65941),	-- Stoneplow
-					crit(65942),	-- Kunzen Village
-					crit(65943),	-- Mudmug's Place
-					crit(65944),	-- Nesingwary Safari
-					crit(65945),	-- Paoquan Hollow
-					crit(65946),	-- Pools of Purity
-					crit(65947),	-- Rumbling Terrace
-					crit(65948),	-- Silken Fields
-					crit(65949),	-- Singing Marshes
-					crit(65950),	-- Stormstout Brewery
-					crit(65951),	-- The Heartland
-					crit(65952),	-- Thunderfoot Ranch
-					crit(65953),	-- Zhu's Descent
-				}),
+				ach(20027),	-- Explore Valley of the Four Winds (automated)
 				ach(19978, {	-- Hidden Treasures: Valley of the Four Winds
 					crit(65495, {	-- Virmen Treasure Cache
 						["_quests"] = { 31405 },

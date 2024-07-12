@@ -108,25 +108,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 				}),
 				ach(19993),		-- Elusive Foes: The Jade Forest
-				achraw(20026, {	-- Explore Jade Forest
-					crit(65919),	-- Tian Monastery
-					crit(65920),	-- Dawn's Blossom
-					crit(65921),	-- Dreamer's Pavillion
-					crit(65922),	-- Emperor's Omen
-					crit(65923),	-- Pearl Lake
-					crit(65924),	-- Grookin Hill
-					crit(65925),	-- Greenstone Quarry
-					crit(65926),	-- Nectarbreeze Orchard
-					crit(65927),	-- Camp Nooka Nooka
-					crit(65928),	-- Terrace of Ten Thunders
-					crit(65929),	-- Serpent's Heart
-					crit(65930),	-- Slingtail Pits
-					crit(65931),	-- Temple of the Jade Serpent
-					crit(65932),	-- The Arboretum
-					crit(65933),	-- Garrosh'ar Point
-					crit(65934),	-- Windward Isle
-					crit(65935),	-- Honeydew Village
-				}),
+				ach(20026),		-- Explore Jade Forest (automated)
 				ach(19977, {	-- Hidden Treasures: The Jade Forest
 					crit(65478, {	-- Ship's Storage
 						["_quests"] = { 31396 },
