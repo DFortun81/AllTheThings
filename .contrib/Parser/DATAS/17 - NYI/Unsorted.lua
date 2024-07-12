@@ -5,6 +5,10 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+			explorationHeader({
+				exploration(15667),	-- Delves
+				exploration(15552),	-- The Undersea
+			}),
 			i(228507),	-- Swarmite Eggsac
 			i(228510),	-- Ripped Swarmite Wing
 			i(228608),	-- On the Application of Arathi Technology to Earthen Life
@@ -3358,6 +3362,315 @@ root(ROOTS.Unsorted, {
 			cl(MAGE, {
 				i(227710),	-- Tome of Polymorph: Mosswool
 				i(228225),	-- do not use
+			}),
+			explorationHeader({
+				exploration(15551),	-- The Fangs
+				exploration(15550),	-- Stagnant Mire
+				exploration(15549),	-- Dayspring Fields
+				exploration(15548),	-- The Hungering Pool
+				exploration(15547),	-- Beledar's Bounty
+				exploration(15546),	-- Veneration Grounds
+				exploration(15545),	-- Mereldar
+				exploration(15544),	-- Tenir's Ascent
+				exploration(15525),	-- The Great Sea
+				exploration(15517),	-- The Royal Apothecary
+				exploration(15514),	-- Silkwood Grotto
+				exploration(15513),	-- Pocket Dimension
+				exploration(15474),	-- Deepwalker Pass
+				exploration(15470),	-- Laboratory of the Grand Splicer
+				exploration(15460),	-- Sanctified Grounds
+				exploration(15453),	-- Rock Bottom Inn
+				exploration(15451),	-- Untamed Valley
+				exploration(15450),	-- Keeper's Breath
+				exploration(15387),	-- Warband Camp
+				exploration(15386),	-- Sunken Shield
+				exploration(15385),	-- Sunrise Shadow
+				exploration(15384),	-- Whispering Pool
+				exploration(15381),	-- The Archive
+				exploration(15380),	-- Awakening Machine
+				exploration(15379),	-- Procedural Forum
+				exploration(15378),	-- Bulwark of Authorization
+				exploration(15377),	-- Analysis Interface
+				exploration(15376),	-- Crown of Shadows
+				exploration(15375),	-- Silken Court
+				exploration(15374),	-- Hall of Whispers
+				exploration(15373),	-- Gossamer Gallery
+				exploration(15372),	-- Brood Pens
+				exploration(15371),	-- Skittering Cavern
+				exploration(15370),	-- The Narthex
+				exploration(15369),	-- The Swaying Span
+				exploration(15368),	-- Kili-zar Arena
+				exploration(15367),	-- Terrace of Majesty
+				exploration(15366),	-- The Ascending Reach
+				exploration(15365),	-- The Congealing Pool
+				exploration(15364),	-- The Pulsing Pit
+				exploration(15363),	-- Grand Rampart
+				exploration(15362),	-- Nerub-ar Gatehouse
+				exploration(15361),	-- Gemvein Tunnels
+				exploration(15360),	-- Wanderer's Landing
+				exploration(15359),	-- Sundered's Crucible
+				exploration(15358),	-- Discordant Sieve
+				exploration(15357),	-- Candleslag Quarry
+				exploration(15356),	-- Ancient Falls
+				exploration(15354),	-- The Hallowfall Gate
+				exploration(15346),	-- The Hanging Gateway
+				exploration(15345),	-- Shimmermist Falls
+				exploration(15343),	-- KVigue Test
+				exploration(15342),	-- Hall of Awakening
+				exploration(15341),	-- The BEE.E.O. Suite
+				exploration(15340),	-- The Buzz Barns
+				exploration(15339),	-- The Stills
+				exploration(15338),	-- The Flaming Taps
+				exploration(15337),	-- Priory of the Sacred Flame
+				exploration(15335),	-- Morgaen's Tears
+				exploration(15330),	-- Old Sacrificial Pit
+				exploration(15329),	-- Delver's Headquarters
+				exploration(15328),	-- The Rookery Landing
+				exploration(15327),	-- Tak-Rethan Abyss
+				exploration(15326),	-- Growling Hollow
+				exploration(15185),	-- Thraegar Rest
+				exploration(15184),	-- Stoneshaper's Atrium
+				exploration(15183),	-- Oath Gate
+				exploration(15182),	-- Stoneward's Rise
+				exploration(15181),	-- The Fissure
+				exploration(15180),	-- 11.0 warband camp
+				exploration(15179),	-- Fortune's Fall
+				exploration(15178),	-- Crossroads Plaza
+				exploration(15177),	-- Dalaran
+				exploration(15176),	-- Sanguine Grasps
+				exploration(15175),	-- The Sinkhole
+				exploration(15174),	-- Restless Estuary
+				exploration(15172),	-- Councilward's Rise
+				exploration(15171),	-- Deepforge Manufacturing Bay
+				exploration(15170),	-- Shadowvein Mine
+				exploration(15169),	-- Shadowvein Power Station
+				exploration(15166),	-- Isaec's Folly
+				exploration(15158),	-- Coldshadow Cave
+				exploration(15157),	-- The Meadyard
+				exploration(15156),	-- The Undercache
+				exploration(15155),	-- Echoing Overlook
+				exploration(15154),	-- The Shredded Strands
+				exploration(15153),	-- Salien Gutters
+				exploration(15152),	-- The Harrowing Depths
+				exploration(15150),	-- Priory of the Sacred Flame
+				exploration(15149),	-- Mereldar
+				exploration(15148),	-- Velhan's Claim
+				exploration(15147),	-- Veneration Grounds
+				exploration(15146),	-- The Undersea
+				exploration(15145),	-- Hallowfall
+				exploration(15144),	-- Annihilation Interface
+				exploration(15143),	-- Processing Unit
+				exploration(15142),	-- Firewall of Negation
+				exploration(15141),	-- Awakening Machine
+				exploration(15140),	-- Gloomcrag Bower
+				exploration(15134),	-- The Burrows
+				exploration(15133),	-- Awakening The Machine
+				exploration(15114),	-- Shadowgrove Vineyards
+				exploration(15113),	-- The Transformatory
+				exploration(15112),	-- High Hollows
+				exploration(15111),	-- Umbral Bazaar
+				exploration(15110),	-- Contender's Gate
+				exploration(15108),	-- Dev Map - Exile's Reach - Tower
+				exploration(15107),	-- Lorel's Crossing
+				exploration(15106),	-- Bleak Sand
+				exploration(15104),	-- Taelloch
+				exploration(15103),	-- Cinderbrew Meadery
+				exploration(15101),	-- Junction
+				exploration(15100),	-- The Earthenworks
+				exploration(15099),	-- The Waterworks
+				exploration(15097),	-- Sina's Yearning
+				exploration(15094),	-- Duskrise Acreage
+				exploration(15093),	-- Ara-Kara, City of Echoes
+				exploration(15055),	-- zzoldPriory of the Sacred Flame
+				exploration(15052),	-- Darkflame Cleft
+				exploration(15051),	-- Chamber of Heart
+				exploration(15048),	-- Hall of Awakening
+				exploration(15047),	-- Fallside Outpost
+				exploration(15046),	-- The Coreway
+				exploration(15045),	-- Thul Medran
+				exploration(15044),	-- Foundation Hall
+				exploration(15043),	-- The Forgegrounds
+				exploration(15042),	-- Keepers Terrace
+				exploration(15040),	-- The Three Shields
+				exploration(15039),	-- Dhar Durgaz
+				exploration(15038),	-- Cliffside Beacon
+				exploration(15037),	-- Light's Blooming
+				exploration(15036),	-- The Hungering Pool
+				exploration(15035),	-- Sunless Strand
+				exploration(15034),	-- Lightspark
+				exploration(15033),	-- The Ragged Front
+				exploration(15032),	-- Shadowmire
+				exploration(15031),	-- Shadowvein Extraction Site
+				exploration(15030),	-- Deepforge Golemworks
+				exploration(15029),	-- Thunderhead Peak
+				exploration(15027),	-- 2510 Coreway
+				exploration(15025),	-- The Faded Shore
+				exploration(15024),	-- Torchlight Mine
+				exploration(15023),	-- Lightless Depths
+				exploration(15022),	-- Hall of the Candle King
+				exploration(15021),	-- The Waxatory
+				exploration(15020),	-- Sprawling Trackyard
+				exploration(15019),	-- Hewn Passage
+				exploration(15009),	-- The Underkeep
+				exploration(15008),	-- Tak-Rethan Abyss
+				exploration(15007),	-- The Spiral Weave
+				exploration(15006),	-- The Sinkhole
+				exploration(15005),	-- Nightfall Sanctum
+				exploration(15004),	-- Skittering Breach
+				exploration(15003),	-- The Dread Pit
+				exploration(15002),	-- The Waterworks
+				exploration(15001),	-- Zekvir's Lair
+				exploration(15000),	-- Kriegval's Rest
+				exploration(14999),	-- Earthcrawl Mines
+				exploration(14998),	-- Mycomancer Cavern
+				exploration(14990),	-- Deephaul Ravine
+				exploration(14980),	-- Nerub-ar Palace
+				exploration(14979),	-- City of Threads
+				exploration(14971),	-- Hallowfall
+				exploration(14958),	-- Wildcamp Or'lay
+				exploration(14957),	-- Fungal Folly
+				exploration(14954),	-- Priory of the Sacred Flame
+				exploration(14953),	-- The Threading Way
+				exploration(14952),	-- Crawling Chasm
+				exploration(14951),	-- The Silken Path
+				exploration(14950),	-- Eye of Ansurek
+				exploration(14949),	-- Lightless Channels
+				exploration(14948),	-- Pillar-nest Xesh
+				exploration(14947),	-- Pillar-nest Noth
+				exploration(14946),	-- Pillar-nest Vosh
+				exploration(14945),	-- Faerin's Advance
+				exploration(14944),	-- The Undersea
+				exploration(14938),	-- The Rookery
+				exploration(14930),	-- Tenir's Ascent
+				exploration(14929),	-- Livia's Patience
+				exploration(14928),	-- Light's Redoubt
+				exploration(14927),	-- Lothar's Landing
+				exploration(14926),	-- Velhan's Claim
+				exploration(14925),	-- Veneration Grounds
+				exploration(14924),	-- Rumshackle
+				exploration(14923),	-- The Fangs
+				exploration(14922),	-- Dayspring Fields
+				exploration(14921),	-- Beledar's Bounty
+				exploration(14920),	-- The Basin
+				exploration(14919),	-- Stagnant Mire
+				exploration(14918),	-- Priory of the Sacred Flame
+				exploration(14917),	-- Mereldar
+				exploration(14916),	-- Dunelle's Kindness
+				exploration(14908),	-- 11.0 - Underground Test
+				exploration(14903),	-- Deepstrike Point
+				exploration(14902),	-- The Whispering Chasm
+				exploration(14901),	-- The Blood Pits
+				exploration(14883),	-- The Stonevault
+				exploration(14882),	-- Darkflame Cleft
+				exploration(14875),	-- Boulder Springs
+				exploration(14855),	-- 11Test7
+				exploration(14854),	-- Hillhelm Stead
+				exploration(14853),	-- Test Dungeon
+				exploration(14852),	-- Stillstone Pond
+				exploration(14851),	-- Fungal Fields
+				exploration(14850),	-- The Whirring Field
+				exploration(14848),	-- The Aegis Wall
+				exploration(14839),	-- Grudge Grotto
+				exploration(14838),	-- Hallowfall
+				exploration(14837),	-- Durgaz Cabin
+				exploration(14836),	-- <Unnamed POI 020>
+				exploration(14835),	-- <Unnamed POI 019>
+				exploration(14834),	-- <Unnamed POI 018>
+				exploration(14833),	-- <Unnamed POI 017>
+				exploration(14832),	-- <Unnamed POI 016>
+				exploration(14831),	-- <Unnamed POI 015>
+				exploration(14830),	-- <Unnamed POI 014>
+				exploration(14829),	-- <Unnamed POI 013>
+				exploration(14828),	-- <Unnamed POI 012>
+				exploration(14827),	-- <Unnamed POI 011>
+				exploration(14826),	-- <Unnamed POI 010>
+				exploration(14825),	-- <Unnamed POI 009>
+				exploration(14824),	-- <Unnamed POI 008>
+				exploration(14823),	-- <Unnamed POI 007>
+				exploration(14822),	-- Pillarstone Spire
+				exploration(14821),	-- Fetid Grotto
+				exploration(14820),	-- Shadowvein Point
+				exploration(14819),	-- Abyssal Excavation
+				exploration(14818),	-- Darkflame Cleft Exterior
+				exploration(14817),	-- The Stonevault Exterior
+				exploration(14816),	-- Obsidian Hollow
+				exploration(14815),	-- Taelloch Mine
+				exploration(14814),	-- Camp Murroch
+				exploration(14813),	-- Lightless Chasm
+				exploration(14812),	-- Opportunity Point
+				exploration(14811),	-- The Living Grotto
+				exploration(14810),	-- The Cataract River
+				exploration(14809),	-- High Hollows
+				exploration(14808),	-- The Rumbling Wastes
+				exploration(14807),	-- The Glittering Shelf
+				exploration(14805),	-- Brunwin's Terrace
+				exploration(14804),	-- Chittering Den
+				exploration(14803),	-- The Warrens
+				exploration(14802),	-- Lost Mines
+				exploration(14801),	-- Nibelgaz Mine
+				exploration(14800),	-- The Earthenworks
+				exploration(14799),	-- The Hallowfall Gate
+				exploration(14798),	-- The Waterworks
+				exploration(14797),	-- Ironhaul Station
+				exploration(14796),	-- Gundargaz
+				exploration(14795),	-- The Ringing Deeps
+				exploration(14794),	-- The Burrows
+				exploration(14793),	-- The Skeins
+				exploration(14792),	-- Nerub-ar Palace
+				exploration(14791),	-- Umbral Bazaar
+				exploration(14790),	-- The Transformatory
+				exploration(14789),	-- Dhar Oztan
+				exploration(14788),	-- The Opalcreg
+				exploration(14787),	-- Mourning Rise
+				exploration(14786),	-- Cinderwold
+				exploration(14785),	-- Skolzgal Mill
+				exploration(14784),	-- Rambleshire
+				exploration(14783),	-- Dhar Kazhad
+				exploration(14782),	-- Ironwold
+				exploration(14781),	-- Cinderbrew Meadery
+				exploration(14780),	-- Dhar Bandar
+				exploration(14779),	-- Golgrin's Reach
+				exploration(14778),	-- Glimmering Shore
+				exploration(14777),	-- Boskroot Basin
+				exploration(14776),	-- The Proscenium
+				exploration(14775),	-- Storm's Watch
+				exploration(14774),	-- Tranquil Strand
+				exploration(14773),	-- The Orecreg
+				exploration(14772),	-- Freywold Village
+				exploration(14771),	-- Dornogal
+				exploration(14769),	-- The Maddening Deep
+				exploration(14768),	-- Rak-Ush
+				exploration(14767),	-- Mmarl
+				exploration(14766),	-- Wildcamp Ul'ar
+				exploration(14765),	-- Twitching Gorge
+				exploration(14764),	-- Eastern Span
+				exploration(14763),	-- Breathing Pit
+				exploration(14762),	-- Ruptured Lake
+				exploration(14761),	-- Silken Ward
+				exploration(14760),	-- Rak-Zakaz
+				exploration(14759),	-- Trickling Abyss
+				exploration(14758),	-- Arathi's End
+				exploration(14757),	-- Rak-Ahat
+				exploration(14756),	-- Siegehold
+				exploration(14755),	-- The Weaver's Lair
+				exploration(14754),	-- The Wormlands
+				exploration(14753),	-- City of Threads
+				exploration(14752),	-- Azj-Kahet
+				exploration(14748),	-- Khaz Algar
+				exploration(14747),	-- Zone 4 Dev Land
+				exploration(14730),	-- Abandoned Creche
+				exploration(14723),	-- 11Test6
+				exploration(14717),	-- Isle of Dorn
+				exploration(14665),	-- Khaz Algar
+				exploration(14662),	-- 11Test5
+				exploration(14661),	-- 11Test4
+				exploration(14658),	-- 11Test3
+				exploration(14616),	-- Darkglow Hollows
+				exploration(14615),	-- 11Test2
+				exploration(14523),	-- 11 Zone3
+				exploration(14517),	-- 11Test1
+				exploration(14512),	-- RebornTree
+				exploration(14484),	-- 10.2 Devland
 			}),
 			--------
 			i(228457),	-- Lightspark Grade Book
