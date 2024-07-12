@@ -1030,6 +1030,122 @@ local function SortByCraftTypeID(a, b)
 	return craftTypeA > craftTypeB;
 end
 
+local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group)
+	if group and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
+		--print("SourceLocations", paramA, paramB);
+		local temp, text, parent = {}, nil, nil;
+		local unfiltered, right = {}, nil;
+		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
+		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
+		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
+		local FilterUnobtainable, FilterCharacter, FirstParent
+			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
+		local abbrevs = L["ABBREVIATIONS"];
+		
+		-- Include Cost Sources
+		local sourceGroups = group;
+		if #sourceGroups == 0 and (paramA == "itemID" or paramA == "currencyID") then
+			local costGroups = SearchForField(paramA .. "AsCost", paramB);
+			if costGroups and #costGroups > 0 then
+				local regroup = {};
+				for i,g in ipairs(sourceGroups) do
+					tinsert(regroup, g);
+				end
+				for i,g in ipairs(costGroups) do
+					tinsert(regroup, g);
+				end
+				sourceGroups = regroup;
+			end
+		end
+		
+		for _,j in ipairs(sourceGroups) do
+			parent = j.parent;
+			if parent and not FirstParent(j, "hideText") and parent.parent
+				and (showCompleted or not app.IsComplete(j))
+				and not HasCost(j, paramA, paramB)
+			then
+				text = app.GenerateSourcePathForTooltip(parent);
+				if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
+					for source,replacement in pairs(abbrevs) do
+						text = text:gsub(source, replacement);
+					end
+					-- doesn't meet current unobtainable filters
+					if not FilterUnobtainable(parent) then
+						tinsert(unfiltered, { text, UnobtainableTexture });
+					-- from obtainable, different character source
+					elseif not FilterCharacter(parent) then
+						tinsert(unfiltered, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+					else
+						-- check if this needs an unobtainable icon even though it's being shown
+						right = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
+						tinsert(temp, { text, right and ("|T" .. right .. ":0|t") });
+					end
+				end
+			end
+		end
+		-- if in Debug or no sources visible, add any unfiltered sources
+		if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
+			for _,data in ipairs(unfiltered) do
+				tinsert(temp, data);
+			end
+		end
+		if #temp > 0 then
+			local listing = {};
+			local maximum = app.Settings:GetTooltipSetting("Locations");
+			local count = 0;
+			app.Sort(temp, app.SortDefaults.IndexOneStrings);
+			for _,data in ipairs(temp) do
+				text = data[1];
+				right = data[2];
+				if right and right:len() > 0 then
+					text = text .. " " .. right;
+				end
+				if not contains(listing, text) then
+					count = count + 1;
+					if count <= maximum then
+						tinsert(listing, text);
+					end
+				end
+			end
+			if count > maximum then
+				tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
+			end
+			if #listing > 0 then
+				tooltipInfo.hasSourceLocations = true;
+				for _,text in ipairs(listing) do
+					if not working and IsRetrieving(text) then working = true; end
+					local left, right = DESCRIPTION_SEPARATOR:split(text);
+					tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
+				end
+			end
+		end
+	end
+end
+app.Settings.CreateInformationType("SourceLocations", {
+	priority = 2.7,
+	text = "Source Locations",
+	HideCheckBox = true,
+	keys = {
+		["autoID"] = false,
+		["creatureID"] = true,
+		["expansionID"] = false,
+		["explorationID"] = true,
+		["factionID"] = true,
+		["flightPathID"] = true,
+		["headerID"] = false,
+		["itemID"] = true,
+		["speciesID"] = true,
+		["titleID"] = true,
+	},
+	Process = function(t, data, tooltipInfo)
+		local key, id = data.key, data[data.key];
+		if key and id and t.keys[key] then
+			if tooltipInfo.hasSourceLocations then return; end
+			AddSourceLinesForTooltip(tooltipInfo, key, id, app.SearchForField(key, id));
+		end
+	end
+})
+
 ---@param method function
 ---@param paramA string
 ---@param paramB number
@@ -1243,90 +1359,8 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 	
 	-- Create a list of sources
-	if isTopLevelSearch and app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or app.Settings:GetTooltipSetting(SourceLocationSettingsKey[paramA])) then
-		local temp, text, parent = {}, nil, nil;
-		local unfiltered, right = {}, nil;
-		local showUnsorted = app.Settings:GetTooltipSetting("SourceLocations:Unsorted");
-		local showCompleted = app.Settings:GetTooltipSetting("SourceLocations:Completed");
-		local wrap = app.Settings:GetTooltipSetting("SourceLocations:Wrapping");
-		local FilterUnobtainable, FilterCharacter, FirstParent
-			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
-		local abbrevs = L["ABBREVIATIONS"];
-		
-		-- Include Cost Sources
-		local sourceGroups = group;
-		if #sourceGroups == 0 and (paramA == "itemID" or paramA == "currencyID") then
-			local costGroups = SearchForField(paramA .. "AsCost", paramB);
-			if costGroups and #costGroups > 0 then
-				local regroup = {};
-				for i,g in ipairs(sourceGroups) do
-					tinsert(regroup, g);
-				end
-				for i,g in ipairs(costGroups) do
-					tinsert(regroup, g);
-				end
-				sourceGroups = regroup;
-			end
-		end
-		
-		for _,j in ipairs(sourceGroups) do
-			parent = j.parent;
-			if parent and not FirstParent(j, "hideText") and parent.parent
-				and (showCompleted or not app.IsComplete(j))
-				and not HasCost(j, paramA, paramB)
-			then
-				text = app.GenerateSourcePathForTooltip(parent);
-				if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
-					for source,replacement in pairs(abbrevs) do
-						text = text:gsub(source, replacement);
-					end
-					-- doesn't meet current unobtainable filters
-					if not FilterUnobtainable(parent) then
-						tinsert(unfiltered, { text, UnobtainableTexture });
-					-- from obtainable, different character source
-					elseif not FilterCharacter(parent) then
-						tinsert(unfiltered, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
-					else
-						-- check if this needs an unobtainable icon even though it's being shown
-						right = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));
-						tinsert(temp, { text, right and ("|T" .. right .. ":0|t") });
-					end
-				end
-			end
-		end
-		-- if in Debug or no sources visible, add any unfiltered sources
-		if app.MODE_DEBUG or (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) then
-			for _,data in ipairs(unfiltered) do
-				tinsert(temp, data);
-			end
-		end
-		if #temp > 0 then
-			local listing = {};
-			local maximum = app.Settings:GetTooltipSetting("Locations");
-			local count = 0;
-			app.Sort(temp, app.SortDefaults.IndexOneStrings);
-			for _,data in ipairs(temp) do
-				text = data[1];
-				right = data[2];
-				if right and right:len() > 0 then
-					text = text .. " " .. right;
-				end
-				if not contains(listing, text) then
-					count = count + 1;
-					if count <= maximum then
-						tinsert(listing, text);
-					end
-				end
-			end
-			if count > maximum then
-				tinsert(listing, (L.AND_OTHER_SOURCES):format(count - maximum));
-			end
-			for _,text in ipairs(listing) do
-				if not working and IsRetrieving(text) then working = true; end
-				local left, right = DESCRIPTION_SEPARATOR:split(text);
-				tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
-			end
-		end
+	if isTopLevelSearch then
+		AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group);
 	end
 
 	-- Create an unlinked version of the object.

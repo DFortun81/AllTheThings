@@ -2573,20 +2573,47 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 		if count > maximum then
 			listing[#listing + 1] = (L.AND_OTHER_SOURCES):format(count - maximum)
 		end
-		local wrap = settings:GetTooltipSetting("SourceLocations:Wrapping");
-		local working
-		for _,text in ipairs(listing) do
-			for source,replacement in pairs(abbrevs) do
-				text = text:gsub(source, replacement);
+		if #listing > 0 then
+			local wrap = settings:GetTooltipSetting("SourceLocations:Wrapping");
+			local working
+			for _,text in ipairs(listing) do
+				for source,replacement in pairs(abbrevs) do
+					text = text:gsub(source, replacement);
+				end
+				if not working and IsRetrieving(text) then working = true; end
+				local left, right = DESCRIPTION_SEPARATOR:split(text);
+				tooltipInfo[#tooltipInfo + 1] = { left = left, right = right, wrap = wrap }
 			end
-			if not working and IsRetrieving(text) then working = true; end
-			local left, right = DESCRIPTION_SEPARATOR:split(text);
-			tooltipInfo[#tooltipInfo + 1] = { left = left, right = right, wrap = wrap }
+			tooltipInfo.hasSourceLocations = true;
+			return working
 		end
-		return working
 	end
 end
 app.AddSourceLinesForTooltip = AddSourceLinesForTooltip
+app.Settings.CreateInformationType("SourceLocations", {
+	priority = 2.7,
+	text = "Source Locations",
+	HideCheckBox = true,
+	keys = {
+		["autoID"] = false,
+		["creatureID"] = true,
+		["expansionID"] = false,
+		["explorationID"] = true,
+		["factionID"] = true,
+		["flightPathID"] = true,
+		["headerID"] = false,
+		["itemID"] = true,
+		["speciesID"] = true,
+		["titleID"] = true,
+	},
+	Process = function(t, data, tooltipInfo)
+		local key, id = data.key, data[data.key];
+		if key and id and t.keys[key] then
+			if tooltipInfo.hasSourceLocations then return; end
+			AddSourceLinesForTooltip(tooltipInfo, key, id --[[, app.SearchForField(key, id)]]);
+		end
+	end
+})
 
 local function GetSearchResults(method, paramA, paramB, ...)
 	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
