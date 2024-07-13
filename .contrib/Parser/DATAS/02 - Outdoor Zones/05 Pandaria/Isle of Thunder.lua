@@ -606,7 +606,11 @@ root(ROOTS.Zones, {
 								}),
 								q(32292, {	-- Forge Ahead! (H)
 								--	possibly Horde races other than Blood Elf, Orc, and Undead? Vupera
-									["sourceQuest"] = 32209,	-- Save Our Scouts! (H)
+									["sourceQuests"] = {
+										32208,	-- Maximum Capacitor
+										32209,	-- Save Our Scouts! (H)
+									},
+									["sourceQuestNumRequired"] = 1,
 									["groups"] = {
 										i(93731),	-- Mogu Codex Fragment (QI!)
 									},
