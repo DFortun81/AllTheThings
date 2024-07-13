@@ -889,6 +889,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Flatland Cougar Femur
+							["provider"] = { "i", 4805 },	-- Flatland Cougar Femur
+							["cr"] = 3035,	-- Flatland Cougar
+						}),
 						i(57209, {	-- Belt of the Prairie Wolf
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -988,6 +992,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.6, 59.5, MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
+					["groups"] = {
+						objective(1, {	-- 0/6 Prairie Wolf Paw
+							["provider"] = { "i", 4758 },	-- Prairie Wolf Paw
+							["crs"] = {
+								2958,	-- Prairie Wolf
+								2959,	-- Prairie Stalker
+								2960,	-- Prairie Wolf Alpha
+							},
+						}),
+						objective(2, {	-- 0/4 Plainstrider Talon
+							["provider"] = { "i", 4759 },	-- Plainstrider Talon
+							["crs"] = {
+								2956,	-- Adult Plainstrider
+								2957,	-- Elder Plainstrider
+								3068,	-- Mazzranache
+							},
+						}),
+					},
 				}),
 				q(748, {	-- Poison Water
 					["qg"] = 2948,	-- Mull Thunderhorn
@@ -1067,6 +1089,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
 					["groups"] = {
+						objective(1, {	-- 0/1 Water of Vision consumed
+							["provider"] = { "i", 49651 },	-- Water of Vision
+						}),
 						i(57206, {	-- Earthmother's Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1199,6 +1224,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/15 Palemane Gnolls
+							["providers"] = {
+								{ "n", 42354},	-- Palemane Gnoll Kill Credit
+								{ "n", 2949},	-- Palemane Tanner
+								{ "n", 2950},	-- Palemane Skinner
+								{ "n", 2951},	-- Palemane Poacher
+								{ "n", 5786},	-- Snagglespear
+							},
+						}),
 						i(57204, {	-- Thunderhorn Cloak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1229,6 +1263,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Fizsprocket's Clipboard
+							["provider"] = { "i", 4819 },	-- Fizsprocket's Clipboard
+							["coord"] = { 64.8, 43.4, MULGORE },
+							["cr"] = 3051,	-- Supervisor Fizsprocket
+						}),
 						i(57242, {	-- Goblin Masher
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1425,6 +1464,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Spirits Calmed
+							["provider"] = { "i", 49647 },	-- Drum of the Soothed Earth
+							["cr"] = 36845,	-- Agitated Earth Spirit
+						}),
 						i(57223, {	-- Chestguard of the Beating Drum
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1442,6 +1485,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 57.0, 60.4, MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Venture Co. Worker slain
+							["provider"] = { "n", 2978 },	-- Venture Co. Worker
+						}),
+					},
 				}),
 				q(764, {	-- The Venture Co.
 					["qg"] = 2988,	-- Morin Cloudstalker
@@ -1450,6 +1498,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
+					["groups"] = {
+						objective(1, {	-- 0/14 Venture Co. Worker slain
+							["provider"] = { "n", 2978 },	-- Venture Co. Worker
+						}),
+						objective(2, {	-- 0/6 Venture Co. Supervisor slain
+							["provider"] = { "n", 2979 },	-- Venture Co. Supervisor
+						}),
+					},
 				}),
 				q(24456, {	-- Thunderhorn Cleansing
 					["qg"] = 2948,	-- Mull Thunderhorn
@@ -1495,6 +1551,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.6, 59.8, MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
+					["groups"] = {
+						objective(1, {	-- 0/6 Stalker Claws
+							["provider"] = { "i", 4801 },	-- Stalker Claws
+							["cr"] = 2959,	-- Prairie Stalker
+						}),
+						objective(2, {	-- 0/6 Cougar Claws
+							["provider"] = { "i", 4802 },	-- Cougar Claws
+							["cr"] = 3035,	-- Flatland Cougar
+						}),
+					},
 				}),
 				q(756, {	-- Thunderhorn Totem
 					["qg"] = 2948,	-- Mull Thunderhorn
@@ -1603,6 +1669,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.4, 17.4, MULGORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = { TAUREN },
+					["groups"] = {
+						objective(1, {	-- 0/4 Prairie Alpha Tooth
+							["provider"] = { "i", 4803 },	-- Prairie Alpha Tooth
+							["cr"] = 2960,	-- Prairie Wolf Alpha
+						}),
+					},
 				}),
 				q(759, {	-- Wildmane Totem
 					["qg"] = 2948,	-- Mull Thunderhorn
