@@ -2994,6 +2994,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/8 Goblins rescued
+							["provider"] = { "n", 39081 },	-- Hazzali Cocoon
+						}),
 						i(56855, {	-- Dangerous Machinery Piece
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3043,6 +3046,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24933,	-- Chicken of the Desert
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Swarmer Wrangled
+							["provider"] = { "i", 52031 },	-- Bootlegger Bug Bait
+							["cr"] = 5451,	-- Hazzali Swarmer
+						}),
+					},
 				}),
 				q(26889, {	-- All Cheered Out
 					["qg"] = 38704,	-- Kelsey Steelspark
@@ -3082,6 +3091,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Sandstone Golem slain
+							["provider"] = { "n", 38914 },	-- Sandstone Golem
+						}),
 						i(56903, {	-- Gatewatcher Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3103,6 +3115,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Sandstone Golem slain
+							["provider"] = { "n", 38914 },	-- Sandstone Golem
+						}),
 						i(56906, {	-- Gatewatcher Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3231,6 +3246,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Captain Dreadbeard slain
+							["provider"] = { "n", 38749 },	-- Captain Dreadbeard
+						}),
 						i(56867, {	-- Pretty Please Robes
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3256,6 +3274,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Captain Dreadbeard slain
+							["provider"] = { "n", 38749 },	-- Captain Dreadbeard
+						}),
 						i(56871, {	-- Flirtation Robes
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3275,6 +3296,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24932,	-- Cutting Losses
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/6 Hyena Chunk
+							["provider"] = { "i", 51778 },	-- Hyena Chunk
+							["cr"] = 5427,	-- Rabid Blisterpaw
+						}),
+					},
 				}),
 				q(6610, {	-- Clamlette Surprise
 					-- #if BEFORE 4.0.3
@@ -3352,6 +3379,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 40,
 					["groups"] = {
+						objective(1, {	-- 0/1 Cuergo's Key
+							["provider"] = { "i", 9275 },	-- Cuergo's Key
+							["crs"] = {
+								7899,	-- Treasure Hunting Pirate
+								7901,	-- Treasure Hunting Swashbuckler
+								7902,	-- Treasure Hunting Buccaneer
+							},
+						}),
 						i(9265, {	-- Cuergo's Hidden Treasure
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
@@ -3374,12 +3409,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 55.6, 60.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/15 Hazzali Silithid slain
+							["providers"] = {
+								{ "n", 39170},	-- Hazzali Silithid Credit Bunny
+								{ "n", 5441},	-- Hazzali Wasp
+								{ "n", 5450},	-- Hazzali Stinger
+								{ "n", 5451},	-- Hazzali Swarmer
+								{ "n", 5452},	-- Hazzali Worker
+								{ "n", 5453},	-- Hazzali Tunneler
+								{ "n", 5454},	-- Hazzali Sandreaver
+							},
+						}),
+					},
 				}),
 				q(25026, {	-- Darkest Mojo
 					["qg"] = 38927,	-- Mazoga
 					["sourceQuest"] = 25025,	-- Sang'thraze the Deflector
 					["coord"] = { 42.2, 23.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/6 Darkest Mojo
+							["provider"] = { "i", 52072 },	-- Darkest Mojo
+							["crs"] = {
+								38909,	-- Sandfury Zombie
+								44557,	-- Sandfury Zombie
+							},
+						}),
+					},
 				}),
 				q(25052, {	-- Dead Man's Chest (A)
 					["qg"] = 38704,	-- Kelsey Steelspark
@@ -3388,6 +3445,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/15 Southsea Pirates slain
+							["providers"] = {
+								{ "n", 39026},	-- Southsea Freebooter Credit Bunny
+								{ "n", 7855},	-- Southsea Pirate
+								{ "n", 7856},	-- Southsea Freebooter
+								{ "n", 7858},	-- Southsea Swashbuckler
+							},
+						}),
 						i(56875, {	-- Southsea Hood
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3409,6 +3474,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/15 Southsea Freebooters slain
+							["providers"] = {
+								{ "n", 39026},	-- Southsea Freebooter Credit Bunny
+								{ "n", 7855},	-- Southsea Pirate
+								{ "n", 7856},	-- Southsea Freebooter
+								{ "n", 7858},	-- Southsea Swashbuckler
+							},
+						}),
 						i(56879, {	-- Southsea Hood
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3429,6 +3502,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.9, 82.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Crazed Bilgewater Survivor slain
+							["provider"] = { "n", 39020 },	-- Crazed Bilgewater Survivor
+						}),
+					},
 				}),
 				q(2661, {	-- Delivery for Marin
 					["providers"] = {
@@ -3507,6 +3585,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.1, 45.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/20 Gold Filling
+							["provider"] = { "i", 54829 },	-- Gold Filling
+							["crs"] = {
+								40632,	-- Southsea Musketeer
+								40635,	-- Southsea Strongarm
+								44762,	-- Drenched Southsea Musketeer
+								44763,	-- Drowned Southsea Strongarm
+							},
+						}),
+					},
 				}),
 				q(25541, {	-- Filling Our Pockets (H)
 					["qg"] = 38703,	-- Megs Dreadshredder
@@ -3514,6 +3603,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/20 Gold Filling
+							["provider"] = { "i", 54829 },	-- Gold Filling
+							["crs"] = {
+								40632,	-- Southsea Musketeer
+								40635,	-- Southsea Strongarm
+								44762,	-- Drenched Southsea Musketeer
+								44763,	-- Drowned Southsea Strongarm
+							},
+						}),
+					},
 				}),
 				q(351, {	-- Find OOX-17/TN!
 					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
@@ -3575,6 +3675,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.4, 24.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Gargantapid's Poison Gland
+							["provider"] = { "i", 54855 },	-- Gargantapid's Poison Gland
+							["cr"] = 40581,	-- Gargantapid
+						}),
 						i(56847, {	-- Chelsea's Nightmare
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3591,6 +3695,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24932,	-- Cutting Losses
 					["coord"] = { 55.2, 60.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/5 Ocular Crystal
+							["provider"] = { "i", 51793 },	-- Ocular Crystal
+							["cr"] = 5420,	-- Glasshide Gazer
+						}),
+					},
 				}),
 				q(24957, {	-- Get The Centipaarty Started
 					["qg"] = 38849,	-- Megs Dreadshredder
@@ -3598,6 +3708,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.5, 52.6, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/20 Centipaarts
+							["provider"] = { "i", 52041 },	-- Centipaarts
+							["crs"] = {
+								5455,	-- Centipaar Wasp
+								5456,	-- Centipaar Stinger
+								5457,	-- Centipaar Swarmer
+								5458,	-- Centipaar Worker
+								5459,	-- Centipaar Tunneler
+								5460,	-- Centipaar Sandreaver
+							},
+						}),
+					},
 				}),
 				q(26886, {	-- Going Off-Task (A)
 					["qg"] = 38704,	-- Kelsey Steelspark
@@ -3605,6 +3728,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.1, 45.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Southsea Taskmaster slain
+							["provider"] = { "n", 40593 },	-- Southsea Taskmaster
+						}),
+					},
 				}),
 				q(25534, {	-- Going Off-Task (H)
 					["qg"] = 38703,	-- Megs Dreadshredder
@@ -3612,6 +3740,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Southsea Taskmaster slain
+							["provider"] = { "n", 40593 },	-- Southsea Taskmaster
+						}),
+					},
 				}),
 				q(3022, {	-- Handle With Care
 					["providers"] = {
@@ -3651,6 +3784,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40580,	-- Gus Rustflutter
 					["coord"] = { 42.4, 24.2, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/6 Duneclaw Stinger
+							["provider"] = { "i", 54856 },	-- Duneclaw Stinger
+							["crs"] = {
+								40656,	-- Duneclaw Matriarch
+								40717,	-- Duneclaw Lasher
+							},
+						}),
+					},
 				}),
 				q(10891, {	-- Imperial Plate Armor [A]
 					["qg"] = 11145,	-- Myolor Sunderfury
@@ -3852,6 +3994,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.1, 76.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Reliquary Digger slain
+							["provider"] = { "n", 38997 },	-- Reliquary Digger
+						}),
+					},
 				}),
 				q(25019, {	-- Laying Claim (H)
 					["qg"] = 38922,	-- Examiner Andoren Dawnrise
@@ -3859,6 +4006,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 33.2, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Explorer's League Digger slain
+							["provider"] = { "n", 38998 },	-- Explorer's League Digger
+						}),
+					},
 				}),
 				q(3914, {	-- Linken's Sword
 					["providers"] = {
@@ -3884,6 +4036,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.5, 52.6, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Ogres Fed
+							["provider"] = { "i", 52044 },	-- Bilgewater Cartel Promotional Delicacy Morsels
+							["crs"] = {
+								5474,	-- Dunemaul Brute
+								5472,	-- Dunemaul Enforcer
+								5471,	-- Dunemaul Ogre
+								5473,	-- Dunemaul Ogre Mage
+								5475,	-- Dunemaul Warlock
+							},
+						}),
+					},
 				}),
 				q(25121, {	-- Momentum (A)
 					["qg"] = 38535,	-- Kelsey Steelspark
@@ -4002,6 +4166,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Tidal Strider slain
+							["provider"] = { "n", 39022 },	-- Tidal Strider
+						}),
+					},
 				}),
 				q(24907, {	-- Puddle Stomping (H)
 					["qg"] = 38534,	-- Megs Dreadshredder
@@ -4009,6 +4178,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Tidal Strider slain
+							["provider"] = { "n", 39022 },	-- Tidal Strider
+						}),
+					},
 				}),
 				q(53818, {	-- Re-parrot / Programming On The Fly
 					-- Quest shows up in-game as "Re-parrot" currently, but Wowhead redirects to the second quest name listed
@@ -4138,6 +4312,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Sandscraper slain
+							["provider"] = { "n", 38880 },	-- Sandscraper
+						}),
 						i(56887, {	-- Knuckle Down
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -4173,6 +4350,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.2, 23.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Sealed Sang'thraze
+							["provider"] = { "i", 52069 },	-- Sealed Sang'thraze
+							["cr"] = 40648,	-- Zakkaru
+						}),
 						i(56844, {	-- Bone Valley Mace
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -4466,6 +4647,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.9, 82.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Turtle-Digested Key
+							["provider"] = { "i", 52282 },	-- Turtle-Digested Key
+							["cr"] = 5431,	-- Surf Glider
+						}),
+					},
 				}),
 				q(25068, {	-- The Crumbling Past
 					["qg"] = 38922,	-- Examiner Andoren Dawnrise
@@ -4473,6 +4660,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 33.2, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Earthen Jewel
+							["provider"] = { "i", 52284 },	-- Earthen Jewel
+							["cr"] = 38916,	-- Sandstone Earthen
+						}),
+					},
 				}),
 				q(5863, {	-- The Dunemaul Compound
 					["qg"] = 11758,	-- Andi Lynn
@@ -4994,6 +5187,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 37.8, 82.4, TANARIS },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Antechamber Guardian slain
+							["provider"] = { "n", 39077 },	-- Antechamber Guardian
+						}),
+					},
 				}),
 				q(25062, {	-- What We Came For
 					["qg"] = 39059,	-- Kelsey Steelspark
@@ -5009,6 +5207,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Meatface's Locked Chest
+							["provider"] = { "i", 52281 },	-- Meatface's Locked Chest
+							["cr"] = 39061,	-- Meatface
+						}),
 						i(56883, {	-- Meatface Pummeler
 							["timeline"] = { ADDED_4_0_3 },
 						}),
