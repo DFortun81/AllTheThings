@@ -189,6 +189,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.2, 25.0, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Burning Blade Slain
+							["providers"] = {
+								{ "n", 3379},	-- Burning Blade Bruiser
+								{ "n", 3380},	-- Burning Blade Acolyte
+								{ "n", 52196},	-- Burning Blade Bruiser
+							},
+						}),
+					},
 				}),
 				q(891, {	-- A Captain's Vengeance [CATA+] / The Guns of Northwatch
 					["qg"] = 3339,	-- Captain Thalo'thas Brightsun
@@ -258,6 +267,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 37.5, 45.8, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Kolkar Centaur Killed
+							["providers"] = {
+								{ "n", 34614},	-- Kolkar Counter
+								{ "n", 3272},	-- Kolkar Wrangler
+								{ "n", 3273},	-- Kolkar Stormer
+							},
+						}),
+					},
 				}),
 				q(14049, {	-- A Most Unusual Map
 					["qg"] = 3467,	-- Baron Longshore
@@ -385,6 +403,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.5, 40.4, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Razormane Prisoner Interrogated
+							["provider"] = { "n", 34523 },	-- Captured Razormane
+						}),
+					},
 				}),
 				q(1522, {	-- Call of Fire (1/5) [Orgrimmar]
 					["qg"] = 5892,	-- Searn Firewarder
@@ -868,6 +891,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.3, 17.4, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Sputtervalve's Blueprints
+							["provider"] = { "i", 68820 },	-- Sputtervalve's Blueprints
+							["crs"] = {
+								3282,	-- Venture Co. Mercenary
+								3284,	-- Venture Co. Drudger
+								3285,	-- Venture Co. Peon
+								52356,	-- Venture Co. Drudger
+								52357,	-- Venture Co. Mercenary
+							},
+						}),
+					},
 				}),
 				q(1796, {	-- Components for the Enchanted Gold Bloodrobe (1/5)
 					["qg"] = 6266,	-- Menara Voidrender
@@ -1368,6 +1403,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 77.2, 91.3, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Glomp's Booty
+							["provider"] = { "i", 46834 },	-- Glomp's Booty
+							["cr"] = 34747,	-- Glomp
+						}),
+					},
 				}),
 				q(13621, {	-- Gorat's Vengeance
 					["qg"] = 33263,	-- Dinah Halfmoon
@@ -1376,6 +1417,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Captain Elendilad slain
+							["provider"] = { "n", 33302 },	-- Captain Elendilad
+						}),
 						i(56644, {	-- Gorat's Bequest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1393,6 +1437,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.2, 15.2, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Brutusk mounted
+							["provider"] = { "n", 33374 },	-- Brutusk
+						}),
+					},
 				}),
 				q(13969, {	-- Grol'dom's Missing Kodo
 					["qg"] = 5907,	-- Kranal Fiss
@@ -1441,6 +1490,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(12, 12, 5),
 					["groups"] = {
+						-- #if AFTER CATA
+						objective(1, {	-- 0/6 Witchwing Talon
+							["provider"] = { "i", 5064 },	-- Witchwing Talon
+							["crs"] = {
+								3276,	-- Witchwing Harpy
+								3277,	-- Witchwing Roguefeather
+								3278,	-- Witchwing Slayer
+								3279,	-- Witchwing Ambusher
+								3280,	-- Witchwing Windcaller
+								3452,	-- Serena Bloodfeather
+							},
+						}),
+						-- #else
 						objective(1, {	-- 0/8 Witchwing Talon
 							["provider"] = { "i", 5064 },	-- Witchwing Talon
 							["crs"] = {
@@ -1452,6 +1514,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								3280,	-- Witchwing Windcaller
 							},
 						}),
+						-- #endif
 					},
 				}),
 				q(852, {	-- Hezrul Bloodmark
@@ -1530,10 +1593,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 10, 5),
 					["groups"] = {
+						-- #if AFTER CATA
+						objective(1, {	-- 0/5 Huntress Claws
+							["provider"] = { "i", 5096 },	-- Huntress Claws
+							["cr"] = 3415,	-- Savannah Huntress
+						}),
+						-- #else
 						objective(1, {	-- 0/7 Prowler Claws
 							["provider"] = { "i", 5096 },	-- Prowler Claws
 							["cr"] = 3425,	-- Savannah Prowler
 						}),
+						-- #endif
 					},
 				}),
 				q(29088, {	-- Hyena Extermination
@@ -1541,6 +1611,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.5, 16.7, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Hecklefang Hyena slain
+							["provider"] = { "n", 4127 },	-- Hecklefang Hyena
+						}),
+					},
 				}),
 				q(871, {	-- In Defense of Far Watch [CATA+] / Disrupt the Attacks
 					-- #if AFTER CATA
@@ -1812,6 +1887,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.1, 78.4, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Kurak slain
+							["provider"] = { "n", 34635 },	-- Kurak
+						}),
+					},
 				}),
 				q(4967, {	-- Knowledge of the Orb of Orahil [Orgrimmar]
 					["qg"] = 3326,	-- Zevrost
@@ -1900,6 +1980,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 68.4, 69.0, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Bellipotent Mined
+							["providers"] = {
+								{ "i", 46829 },	-- Limpet Mine
+								{ "o", 195202 },	-- Thinnest Part of the Hull
+							},
+						}),
+					},
 				}),
 				q(4921, {	-- Lost in Battle
 					["qg"] = 3432,	-- Mankrik
@@ -1947,6 +2035,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Cats Eye Emerald
+							["provider"] = { "i", 5097 },	-- Cats Eye Emerald
+							["crs"] = {
+								3283,	-- Venture Co. Enforcer
+								3286,	-- Venture Co. Overseer
+								9336,	-- Boss Copperplug
+							},
+						}),
 						i(59570, {	-- Bargain Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2068,6 +2164,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.7, 14.9, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Ashenvale Skirmishers Slain
+							["provider"] = { "n", 33193 },	-- Ashenvale Skirmisher
+						}),
+						objective(2, {	-- 0/5 Ashenvale Bowmen Slain
+							["provider"] = { "n", 33195 },	-- Ashenvale Bowman
+						}),
+					},
 				}),
 				q(3301, {	-- Mura Runetotem
 					["qg"] = 3448,	-- Tonga Runetotem
@@ -2099,6 +2203,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Maiden's Dagger Captured
+							["provider"] = { "n", 34782 },	-- Alicia Cuthbert
+						}),
 						i(59573, {	-- Bachelor's Dagger
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2261,6 +2368,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 68.4, 69.0, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Board the Riverboat to Nozzlepot
+							["provider"] = { "n", 44057 },	-- Riverboat
+						}),
+					},
 				}),
 				q(14006, {	-- Read the Manual
 					["qg"] = 3442,	-- Sputtervalve
@@ -2306,6 +2418,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Wounded Mor'shan Defenders Rescued
+							["provider"] = { "i", 45001 },	-- Medicated Salve
+							["cr"] = 33266,	-- Wounded Mor'shan Defender
+						}),
 						i(56633, {	-- Leggings of the Traveling Medic
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2412,6 +2528,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.3, 25.6, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Console Key
+							["provider"] = { "i", 5089 },	-- Console Key
+							["cr"] = 3471,	-- Tinkerer Sniggles
+						}),
+					},
 				}),
 				q(29024, {	-- Samophlange (4/4)
 					["provider"] = { "o", 4141 },	-- Control Console
@@ -2671,6 +2793,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Sludge Beast slain
+							["provider"] = { "n", 52165 },	-- Sludge Beast
+						}),
 						i(69220, {	-- Nozzlepot's Vest
 							["timeline"] = { ADDED_4_1_0 },
 						}),
@@ -2687,6 +2812,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.5, 16.7, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Muddy Tracks Examined
+							["provider"] = { "n", 52166 },	-- Muddy Tracks
+						}),
+					},
 				}),
 				q(887, {	-- Southsea Freebooters
 					-- #if AFTER CATA
@@ -2902,6 +3032,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 69.9, 85.1, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Deal Struck with Baron Longshore
+							["provider"] = { "n", 3467 },	-- Baron Longshore
+						}),
+					},
 				}),
 				q(886, {	-- The Barrens Oases
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
@@ -3094,6 +3229,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.0, 41.2, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Razormane Pillager slain
+							["provider"] = { "n", 34503 },	-- Razormane Pillager
+						}),
+					},
 				}),
 				q(1718, {	-- The Islander
 					["allianceQuestData"] = {
@@ -3180,6 +3320,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Rocket Ride Taken
+							["provider"] = { "n", 52203 },	-- Silver Bullet X-831
+						}),
 						i(69217, {	-- Test Pilot Britches
 							["timeline"] = { ADDED_4_1_0 },
 						}),
@@ -3224,6 +3367,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Sunscale Ravager slain
+							["provider"] = { "n", 44164 },	-- Sunscale Ravager
+						}),
+						objective(2, {	-- 0/4 Sunscale Scytheclaw slain
+							["provider"] = { "n", 3256 },	-- Sunscale Scytheclaw
+						}),
+						objective(3, {	-- 0/1 Stolen Silver
+							["providers"] = {
+								{ "i", 5061 },	-- Stolen Silver
+								{ "o", 147557 },	-- Stolen Silver
+								{ "o", 195224 },	-- Stolen Silver Lockbox
+							},
+						}),
 						i(59554, {	-- Silver-Edged Blade
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3242,6 +3398,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Tortusk slain
+							["provider"] = { "n", 34544 },	-- Tortusk
+						}),
 						i(59533, {	-- Wand of Separation
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3300,6 +3459,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/3 Wolves Freed
+							["providers"] = {
+								{ "o", 195001 },	-- Wolf Chains
+								{ "o", 195003 },	-- Wolf Chains
+								{ "o", 195004 },	-- Wolf Chains
+							},
+						}),
 						i(59529, {	-- Flame Retardant Sheet
 							["timeline"] = { ADDED_4_0_3 },
 						}),
