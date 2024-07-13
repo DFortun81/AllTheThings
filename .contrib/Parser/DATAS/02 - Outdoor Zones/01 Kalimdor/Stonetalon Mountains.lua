@@ -2720,6 +2720,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 35.3, 71.1, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Filthy Goblin Technology
+							["provider"] = { "i", 55144 },	-- Filthy Goblin Technology
+							["cr"] = 34590,	-- Goblin Technician
+						}),
+					},
 				}),
 				q(1483, {	-- Ziz Fizziks
 					["qg"] = 3442,	-- Sputtervalve
