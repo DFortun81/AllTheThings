@@ -587,11 +587,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	}),
 	-- #endif
 	prof(FISHING, {
-		i(41812),	-- Barrelhead Goby
-		i(41808),	-- Bonescale Snapper
-		i(41805),	-- Borean Man O' War
-		i(41800),	-- Deep Sea Monsterbelly
-		i(41807),	-- Dragonfin Angelfish
+		i(41812, {	-- Barrelhead Goby
+			["description"] = "Can be caught in open waters in Sholazar Basin.",
+		}),
+		i(41808, {	-- Bonescale Snapper
+			["description"] = "Can be caught in open waters around Northrend.",
+		}),
+		i(41805, {	-- Borean Man O' War
+			["description"] = "Can be caught in 'Borean Man O' War Schools' around Borean Tundra.",
+		}),
+		i(41800, {	-- Deep Sea Monsterbelly
+			["description"] = "Can be caught in 'Deep Sea Monsterbelly Schools' around icebergs on the shoreside of Borean Tundra, Dragonblight and Howling Fjord.",
+		}),
+		i(41807, {	-- Dragonfin Angelfish
+			["description"] = "Can be caught in 'Dragonfin Angelfish Schools' in inland waters in Dragonblight.",
+		}),
 		i(44505, {	-- Dustbringer
 			["description"] = "Can be caught in schools or open water in Northrend.",
 			["providers"] = {
@@ -607,16 +617,36 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				{ "o", 192057 },	-- Nettlefish School
 			},
 		}),
-		i(41810),	-- Fangtooth Herring
-		i(43646),	-- Fountain Goldfish
-		i(41809),	-- Glacial Salmon
-		i(41814),	-- Glassfin Minnow
-		i(41802),	-- Imperial Manta Ray
-		i(43572),	-- Magic Eater
-		i(41801),	-- Moonglow Cuttlefish
-		i(41806),	-- Musselback Sculpin
-		i(41813),	-- Nettlefish
-		i(41803),	-- Rockfin Grouper
+		i(41810, {	-- Fangtooth Herring
+			["description"] = "Can be caught in 'Fangtooth Herring Schools' in inland waters in Howling Fjord.",
+		}),
+		i(43646, {	-- Fountain Goldfish
+			["description"] = "Can be caught in the fountain on WotLK Dalaran.",
+		}),
+		i(41809, {	-- Glacial Salmon
+			["description"] = "Can be caught in 'Glacial Salmon Schools' in inland waters in Grizzly Hills.",
+		}),
+		i(41814, {	-- Glassfin Minnow
+			["description"] = "Can be caught in 'Glassfin Minnow Schools' in Crystalsong Forest.",
+		}),
+		i(41802, {	-- Imperial Manta Ray
+			["description"] = "Can be caught in 'Imperial Manta Ray Schools' on the shoreside of Borean Tundra, Dragonblight, Howling Fjord and Grizzly Hills.",
+		}),
+		i(43572, {	-- Magic Eater
+			["description"] = "Can be caught in any waters on both WotLK and Legion Dalaran.",
+		}),
+		i(41801, {	-- Moonglow Cuttlefish
+			["description"] = "Can be caught in 'Moonglow Cuttlefish Schools' around icebergs on the shoreside of Borean Tundra, Dragonblight and Howling Fjord.",
+		}),
+		i(41806, {	-- Musselback Sculpin
+			["description"] = "Can be caught in 'Musselback Sculpin Schools' in inland waters in Borean Tundra.",
+		}),
+		i(41813, {	-- Nettlefish
+			["description"] = "Can be caught in 'Nettlefish Schools' in inland waters in Sholazar Basin.",
+		}),
+		i(41803, {	-- Rockfin Grouper
+			["description"] = "Can be caught in open sea waters around Northrend.",
+		}),
 		i(46109, {	-- Sea Turtle (MOUNT!)
 			["providers"] = {
 				{ "o", 192051 },	-- Borean Man O' War School
@@ -639,9 +669,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 				SHOLAZAR_BASIN,
 			},
 		}),
-		i(43571),	-- Sewer Carp
-		i(43647),	-- Shimmering Minnow
-		i(43652),	-- Slippery Eel
+		i(43571, {	-- Sewer Carp
+			["description"] = "Can be caught in any waters on both WotLK and Legion Dalaran.",
+		}),
+		i(43647, {	-- Shimmering Minnow
+			["description"] = "Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",
+		}),
+		i(43652, {	-- Slippery Eel
+			["description"] = "Can be caught outside Violet Hold on both WotLK and Legion Dalaran.",
+		}),
 		filter(RECIPES, {
 			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
 				["description"] = "Can be fished from schools.",
