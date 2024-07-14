@@ -2467,18 +2467,23 @@ end
 local GetRawField = app.GetRawField
 local SourceSearcher = setmetatable({
 	itemID = function(field, id)
-		local results = GetRawField(field, id)
-		local costResults = GetRawField("itemIDAsCost", id)
-		if results or costResults then return ArrayAppend({}, results, costResults) end
+		local results = SearchForObject(field, id, "field", true)
+		-- Original logic did not include cost matches, then I added cost matches when revising the logic
+		-- I'm not sure on why that should be the case... so removing for now
+		-- local costResults = GetRawField("itemIDAsCost", id)
+		-- if results or costResults then return ArrayAppend({}, results, costResults) end
+		if results then return results end
 		local baseItemID = GetItemIDAndModID(id)
-		results = GetRawField(field, baseItemID)
-		costResults = GetRawField("itemIDAsCost", baseItemID)
-		if results or costResults then return ArrayAppend({}, results, costResults) end
+		results = SearchForObject(field, baseItemID, "field", true)
+		-- costResults = GetRawField("itemIDAsCost", baseItemID)
+		-- if results or costResults then return ArrayAppend({}, results, costResults) end
+		return results
 	end,
 	currencyID = function(field, id)
-		local results = GetRawField(field, id)
-		local costResults = GetRawField("currencyIDAsCost", id)
-		if results or costResults then return ArrayAppend({}, results, costResults) end
+		local results = SearchForObject(field, id, "field", true)
+		-- local costResults = GetRawField("currencyIDAsCost", id)
+		-- if results or costResults then return ArrayAppend({}, results, costResults) end
+		return results
 	end
 },{
 	__index = function(t, field)
