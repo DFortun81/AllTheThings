@@ -190,6 +190,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/15 Southsea pirates slain
+							["providers"] = {
+								{ "n", 40092},	-- Southsea Sailor
+								{ "n", 40432},	-- Southsea Parrot Handler
+							},
+						}),
 						i(63574, {	-- Paper Roll Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -211,6 +217,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/15 Southsea pirates slain
+							["providers"] = {
+								{ "n", 40092},	-- Southsea Sailor
+								{ "n", 40432},	-- Southsea Parrot Handler
+							},
+						}),
 						i(63578, {	-- Paper Roll Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -367,6 +379,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 30.4, 49.2, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Codemaster Deethuk assassinated
+							["provider"] = { "n", 47602 },	-- Codemaster Deethuk
+						}),
+						objective(2, {	-- 0/1 Commander Fastfuse assassinated
+							["provider"] = { "n", 47620 },	-- Commander Fastfuse
+						}),
+						objective(3, {	-- 0/1 Elementalist Starion assassinated
+							["provider"] = { "n", 47619 },	-- Elementalist Starion
+						}),
 						i(63659, {	-- Starion's Slippers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -506,6 +527,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/20 Grimtotem on Darkcloud Pinnacle slain
+							["providers"] = {
+								{ "n", 45381},	-- Grimtotem Geomancer
+								{ "n", 45383},	-- Grimtotem Stomper
+								{ "n", 45385},	-- Grimtotem Reaver
+							},
+						}),
 						i(63595, {	-- Amulet of Spilling Blood
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -527,6 +555,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/20 Grimtotem on Darkcloud Pinnacle slain
+							["providers"] = {
+								{ "n", 45381},	-- Grimtotem Geomancer
+								{ "n", 45383},	-- Grimtotem Stomper
+								{ "n", 45385},	-- Grimtotem Reaver
+							},
+						}),
 						i(63599, {	-- Reaper's Amulet
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -547,6 +582,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 12.8, 33.9, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/8 Trapper Net
+							["provider"] = { "i", 62924 },	-- Trapper Net
+							["cr"] = 47479,	-- Twilight Trapper
+						}),
 						i(63648, {	-- Swift Mountain Boots
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -690,6 +729,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 91.4, 57.6, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Splithoof Heights centaurs slain
+							["providers"] = {
+								{ "n", 40062},	-- Galak Mauler
+								{ "n", 40061},	-- Galak Stormer
+								{ "n", 40063},	-- Galak Wrangler
+								{ "n", 41302},	-- Galak Mauler
+								{ "n", 41305},	-- Galak Stormer
+								{ "n", 41306},	-- Galak Wrangler
+							},
+						}),
+					},
 				}),
 				q(25797, {	-- Eminent Domain [H]
 					["qg"] = 41184,	-- Riznek
@@ -697,6 +748,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Splithoof Heights centaurs slain
+							["providers"] = {
+								{ "n", 40062},	-- Galak Mauler
+								{ "n", 40061},	-- Galak Stormer
+								{ "n", 40063},	-- Galak Wrangler
+								{ "n", 41302},	-- Galak Mauler
+								{ "n", 41305},	-- Galak Stormer
+								{ "n", 41306},	-- Galak Wrangler
+							},
+						}),
+					},
 				}),
 				q(1107, {	-- Encrusted Tail Fins
 					["qg"] = 4453,	-- Wizzle Brassbolts
@@ -819,6 +882,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28085,	-- Trouble at Highperch
 					["coord"] = { 12.8, 33.9, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/12 Pridelings freed
+							["provider"] = { "n", 47481 },	-- Highperch Prideling
+						}),
+					},
 				}),
 				q(28047, {	-- Freezing the Pipes
 					["qg"] = 47383,	-- Brivelthwerp
@@ -828,6 +896,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 First pipe frozen
+							["provider"] = { "o", 206638 },	-- Refrigeration Pipe
+						}),
+						objective(2, {	-- 0/1 Second pipe frozen
+							["provider"] = { "o", 206639 },	-- Refrigeration Pipe
+						}),
+						objective(3, {	-- 0/1 Third pipe frozen
+							["provider"] = { "o", 206640 },	-- Refrigeration Pipe
+						}),
+						objective(4, {	-- 0/1 Fourth pipe frozen
+							["provider"] = { "o", 206641 },	-- Refrigeration Pipe
+						}),
+					},
 				}),
 				q(25757, {	-- Get Koalbeard!
 					["qg"] = 41184,	-- Riznek
@@ -889,6 +971,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 91.4, 57.6, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Blow the horn
+							["provider"] = { "o", 203248 },	-- Horn Mouthpiece
+						}),
+						objective(2, {	-- 0/1 Whrrrl slain
+							["provider"] = { "n", 41334 },	-- Whrrrl
+						}),
+					},
 				}),
 				q(25814, {	-- Go Blow that Horn [H]
 					["qg"] = 41184,	-- Riznek
@@ -899,6 +989,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Blow the horn
+							["provider"] = { "o", 203248 },	-- Horn Mouthpiece
+						}),
+						objective(2, {	-- 0/1 Whrrrl slain
+							["provider"] = { "n", 41334 },	-- Whrrrl
+						}),
+					},
 				}),
 				q(1178, {	-- Goblin Sponsorship (1/5)
 					["qg"] = 4630,	-- Pozzik
@@ -962,6 +1060,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Elder Stormhoof slain
+							["provider"] = { "n", 45410 },	-- Elder Stormhoof
+						}),
 						i(63600, {	-- Hands of the Chosen
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -983,6 +1084,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Elder Stormhoof slain
+							["provider"] = { "n", 45410 },	-- Elder Stormhoof
+						}),
 						i(63604, {	-- Hands of the Chosen
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1002,6 +1106,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27318,	-- Grimtotem Chiefs: Elder Stormhoof [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Grundig Darkcloud slain
+							["provider"] = { "n", 45418 },	-- Grundig Darkcloud
+						}),
+					},
 				}),
 				q(27324, {	-- Grimtotem Chiefs: Grundig Darkcloud [H]
 					["qg"] = 45278,	-- Freewind Brave
@@ -1009,12 +1118,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["coord"] = { 39.0, 41.1, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Grundig Darkcloud slain
+							["provider"] = { "n", 45418 },	-- Grundig Darkcloud
+						}),
+					},
 				}),
 				q(27314, {	-- Grimtotem Chiefs: Isha Gloomaxe [A]
 					["qg"] = 45277,	-- Feralas Sentinel
 					["sourceQuest"] = 27275,	-- Together Again
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Isha Gloomaxe slain
+							["provider"] = { "n", 45387 },	-- Isha Gloomaxe
+						}),
+					},
 				}),
 				q(27315, {	-- Grimtotem Chiefs: Isha Gloomaxe [H]
 					["qg"] = 45278,	-- Freewind Brave
@@ -1022,6 +1141,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.2, 48.0, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Isha Gloomaxe slain
+							["provider"] = { "n", 45387 },	-- Isha Gloomaxe
+						}),
+					},
 				}),
 				q(27327, {	-- Grimtotem Chiefs: The Chief of Chiefs [A]
 					["qg"] = 45277,	-- Feralas Sentinel
@@ -1029,6 +1153,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Arnak Grimtotem slain
+							["provider"] = { "n", 45438 },	-- Arnak Grimtotem
+						}),
 						i(63634, {	-- Lasting Peace
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1047,6 +1174,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Arnak Grimtotem slain
+							["provider"] = { "n", 45438 },	-- Arnak Grimtotem
+						}),
 						i(63637, {	-- Lasting Peace
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1064,6 +1194,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.4, 57.8, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Grimtotem Invader slain
+							["provider"] = { "n", 41431 },	-- Grimtotem Invader
+						}),
+					},
 				}),
 				q(25870, {	-- Grimtotem in the Post [H]
 					["qg"] = 41446,	-- Thalia Amberhide
@@ -1071,6 +1206,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.3, 57.7, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Grimtotem Invader slain
+							["provider"] = { "n", 41431 },	-- Grimtotem Invader
+						}),
+					},
 				}),
 				q(5064, {	-- Grimtotem Spying
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
@@ -1176,6 +1316,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Longhorn's Horn
+							["provider"] = { "i", 56139 },	-- Longhorn's Horn
+							["cr"] = 41458,	-- Cliffwatcher Longhorn
+						}),
 						i(63632, {	-- Horn of the Traitor
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1188,6 +1332,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Longhorn's Horn
+							["provider"] = { "i", 56139 },	-- Longhorn's Horn
+							["cr"] = 41458,	-- Cliffwatcher Longhorn
+						}),
 						i(63633, {	-- Horn of the Traitor
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1216,6 +1364,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 79.5, 75.0, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Use the crowbar on the outhouse
+							["providers"] = {
+								{ "i", 54821},	-- Pirate's Crowbar
+								{ "o", 202975},	-- Submerged Outhouse
+							},
+							["cr"] = 40449,	-- Southsea Treasure Hunter
+						}),
+					},
 				}),
 				q(25526, {	-- In the Outhouse [H]
 					["provider"] = { "o", 202975 },	-- Submerged Outhouse
@@ -1223,6 +1380,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 79.5, 75.0, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Use the crowbar on the outhouse
+							["providers"] = {
+								{ "i", 54821},	-- Pirate's Crowbar
+								{ "o", 202975},	-- Submerged Outhouse
+							},
+							["cr"] = 40449,	-- Southsea Treasure Hunter
+						}),
+					},
 				}),
 				q(1192, {	-- Indurium Ore
 					["qg"] = 4630,	-- Pozzik
@@ -1240,6 +1406,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Arikara defeated
+							["provider"] = { "n", 45447 },	-- Arikara
+						}),
 						i(63640, {	-- Windsong Rifle
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1264,6 +1433,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Arikara defeated
+							["provider"] = { "n", 45447 },	-- Arikara
+						}),
 						i(63644, {	-- Windsong Rifle
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1475,6 +1647,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.4, 73.6, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Holdfast Cannons destroyed
+							["provider"] = { "n", 40869 },	-- Holdfast Cannon
+						}),
+					},
 				}),
 				q(25586, {	-- Quiet the Cannons [H]
 					["qg"] = 40487,	-- Razzeric
@@ -1482,6 +1659,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 77.1, 74.4, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Holdfast Cannons destroyed
+							["provider"] = { "n", 40869 },	-- Holdfast Cannon
+						}),
+					},
 				}),
 				q(1187, {	-- Razzeric's Tweaking
 					["qg"] = 4706,	-- Razzeric
@@ -1508,6 +1690,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 12.8, 33.9, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Heartrazor released
+							["provider"] = { "n", 47487 },	-- Twilight Subduer
+						}),
+					},
 				}),
 				q(1122, {	-- Report Back to Fizzlebub
 					["providers"] = {
@@ -1624,6 +1811,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.8, 56.0, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Captured Feralas Sentinel freed
+							["provider"] = { "n", 41463 },	-- Captured Feralas Sentinel
+						}),
+					},
 				}),
 				q(4865, {	-- Serpent Wild
 					["qg"] = 10539,	-- Hagar Lightninghoof
@@ -1639,6 +1831,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 30.4, 49.2, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/10 Twilight's Hammer Armor
+							["provider"] = { "i", 63035 },	-- Twilight's Hammer Armor
+							["crs"] = {
+								47583,	-- Bulwark Defender
+								47585,	-- Twilight Magus
+								47630,	-- Twilight Jailer
+							},
+						}),
 						i(63656, {	-- Lakota's Mace
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1857,6 +2057,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Hive Controller slain
+							["provider"] = { "n", 47389 },	-- Hive Controller
+						}),
 						i(63621, {	-- Ice Cream Churner
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1877,6 +2080,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 90.0, 53.0, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 The Ancient Brazier reignited
+							["providers"] = {
+								{ "i", 55986 },	-- Splithoof Brand
+								{ "o", 203221 },	-- The Ancient Brazier
+							},
+						}),
+						objective(2, {	-- 0/1 The Sacred Flame
+							["provider"] = { "i", 55979 },	-- The Sacred Flame
+							["cr"] = 41236,	-- Aquarian
+						}),
 						i(63608, {	-- Shroud of Contempt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1904,6 +2117,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.7, 56.0, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Captured Freewind Brave freed
+							["provider"] = { "n", 41460 },	-- Captured Freewind Brave
+						}),
+					},
 				}),
 				q(27357, {	-- The Captive Bride [A]
 					["qg"] = 45277,	-- Feralas Sentinel
@@ -1934,6 +2152,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.1, 62.5, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 The Doomstone
+							["provider"] = { "i", 63096 },	-- The Doomstone
+							["cr"] = 47777,	-- Animus
+						}),
 						i(63663, {	-- Bracers of Safe Keeping
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1975,6 +2197,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 30.4, 49.2, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Controller disabled
+							["provider"] = { "o", 206767 },	-- Magatha's Bonds Controller
+						}),
+					},
 				}),
 				q(28045, {	-- The Greatest Flavor in the World!
 					["qg"] = 47383,	-- Brivelthwerp
@@ -1984,6 +2211,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/8 Scoop of Silithid Goo
+							["provider"] = { "i", 62911 },	-- Scoop of Silithid Goo
+							["crs"] = {
+								47388,	-- Silithid Ravager
+								48177,	-- Silithid Ravager
+								48178,	-- Silithid Ravager
+							},
+						}),
+					},
 				}),
 				q(25486, {	-- The Grimtotem are Coming [H]
 					["qg"] = 39946,	-- Caryssia Moonhunter
@@ -1995,6 +2232,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 86.1, 45.3, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Grimtotem Marauder slain
+							["provider"] = { "n", 39949 },	-- Grimtotem Marauder
+						}),
+					},
 				}),
 				q(25487, {	-- The Grimtotem are Coming [H]
 					["qg"] = 39895,	-- Kanati Greycloud
@@ -2005,6 +2247,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 11.1, 11.2, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Grimtotem Pillager slain
+							["provider"] = { "n", 39947 },	-- Grimtotem Pillager
+						}),
+					},
 				}),
 				q(25704, {	-- The Mad Magus
 					["qg"] = 41060,	-- Ajamon Ghostcaller
@@ -2012,6 +2259,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 96.8, 72.4, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Mad Magus Tirth's soul extracted
+							["provider"] = { "n", 41130 },	-- The Mad Magus Kill Credit
+						}),
 						i(63588, {	-- Magus Tirth's Robe
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2246,6 +2496,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Rusted Cage Key
+							["provider"] = { "i", 55160 },	-- Rusted Cage Key
+							["cr"] = 40958,	-- Tony Two-Tusk
+						}),
 						i(63624, {	-- Buoyant Shoulderpads
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2267,6 +2521,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Rusted Cage Key
+							["provider"] = { "i", 55160 },	-- Rusted Cage Key
+							["cr"] = 40958,	-- Tony Two-Tusk
+						}),
 						i(63628, {	-- Buoyant Shoulderpads
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2286,6 +2544,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28142,	-- To the Withering
 					["coord"] = { 50.1, 62.5, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Bound Fury unbound
+							["provider"] = { "n", 47763 },	-- Bound Fury
+						}),
+						objective(2, {	-- 0/1 Bound Vortex unbound
+							["provider"] = { "n", 47766 },	-- Bound Vortex
+						}),
+					},
 				}),
 				q(5147, {	-- Wanted - Arnak Grimtotem
 					["provider"] = { "o", 176115 },	-- Wanted Poster - Arnak Grimtotem
@@ -2326,6 +2592,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 69.8, 85.1, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/10 Dead Employees hooked
+							["provider"] = { "n", 47446 },	-- Dead Employee
+						}),
 						i(63582, {	-- Brivelthwerp's Signet
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2411,6 +2680,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 96.8, 72.4, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Evil Dolly's Heart
+							["provider"] = { "i", 55196 },	-- Evil Dolly's Heart
+							["cr"] = 41076,	-- Evil Dolly
+						}),
+						objective(2, {	-- 0/1 Seadog Fajardo's Lungs
+							["provider"] = { "i", 55197 },	-- Seadog Fajardo's Lungs
+							["cr"] = 41081,	-- Seadog Fajardo
+						}),
+						objective(3, {	-- 0/1 Lilly Landlubber's Liver
+							["provider"] = { "i", 55199 },	-- Lilly Landlubber's Liver
+							["cr"] = 41082,	-- Lilly Landlubber
+						}),
 						i(63617, {	-- Evil Dolly's Cuffs
 							["timeline"] = { ADDED_4_0_3 },
 						}),
