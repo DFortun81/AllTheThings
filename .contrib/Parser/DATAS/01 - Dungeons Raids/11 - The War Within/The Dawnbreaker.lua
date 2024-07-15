@@ -6,6 +6,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 		["coord"] = { 54.8, 62.9, HALLOWFALL },
 		["maps"] = { 2359 },	-- The Dawnbreaker
 		["g"] = {
+			n(QUESTS, {
+				q(83322, {	-- The Dawnbreaker: The Christening
+				-- ["sourceQuests"] = { xx },	-- TODO: figure out when they become available
+				["provider"] = { "n", 215335 },	-- General Steelstrike
+				["coord"] = { 40.5, 50.8, HALLOWFALL },
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2580, {	-- Speaker Shadowcrown
 					["crs"] = { 211087 },	-- Speaker Shadowcrown

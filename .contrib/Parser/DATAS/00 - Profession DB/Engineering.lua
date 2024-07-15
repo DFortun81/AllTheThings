@@ -1299,6 +1299,7 @@ i(225469, 438924);	-- Algari Competitor's Mail Goggles
 i(225474, 438929);	-- Algari Competitor's Plate Bracers
 i(225470, 438925);	-- Algari Competitor's Plate Goggles
 i(225482, 455005);	-- Algari Competitor's Rifle
+i(219413, 443570);	-- Stonebound Lantern
 --- DISCOVERY ---
 i(0, 447367);	-- Algari Repair Bot 11O
 i(0, 447325);	-- Aqirite Brainwave Projector
@@ -1349,5 +1350,3 @@ i(0, 447365);   -- Box o' Booms
 i(0, 447353);	-- Serrated Cogwheel
 i(0, 447355);	-- Impeccable Cogwheel
 i(0, 447354);	-- Overclocked Cogwheel
---- QUEST ---
-i(0, 443570);

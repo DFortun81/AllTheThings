@@ -13,6 +13,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 41.2, 53.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 5 --
+				q(81990, {	-- The Light's Call
+					["provider"] = { "o", 441740 },	-- The Light's Call
+					["coord"] = { 42.5, 55.6, HALLOWFALL },
+					["isBreadcrumb"] = true,
+				}),
+				q(76588, {	-- Defender of the Flame
+					["sourceQuests"] = { 81990 },	-- The Light's Call
+					["provider"] = { "n", 215527 },	-- Keyrra Flamestonge
+					["coord"] = { 65.5, 32.2, HALLOWFALL },
+				}),
+				q(79232, {	-- Those that Fell
+					["sourceQuests"] = { 81990 },	-- The Light's Call
+					["provider"] = { "n", 215527 },	-- Keyrra Flamestonge
+					["coord"] = { 65.5, 32.2, HALLOWFALL },
+					["g"] = {
+						i(219499),	-- Dalian Ironlink's Tinderbox (QI!)
+						i(219453),	-- Idona Seerstone's Tinderbox (QI!)
+						i(219451),	-- Oskaer Daleclash's Tinderbox (QI!)
+					},
+				}),
+				q(81673, {	-- Honor Your Efforts
+					["sourceQuests"] = {
+						76588,	-- Defender of the Flame
+						79232,	-- Those that Fell
+					},
+					["provider"] = { "n", 215527 },	-- Keyrra Flamestonge
+					["coord"] = { 65.5, 32.2, HALLOWFALL },
+					["g"] = {
+						i(219503),	-- Honorary Tinderbox
+					},
+				}),
 			}, {	-- RENOWN 6 --
 			}, {	-- RENOWN 7 --
 			}, {	-- RENOWN 8 --
