@@ -1808,6 +1808,7 @@ i(223285, 448851);	-- [PH] Purple Old God Fish Mount
 ------------------
 i(223270, 447213);	-- Alunira
 i(224151, 451491);	-- Ascendant Skyrazor
+i(223315, 448941);	-- Beledar's Spawn
 i(223505, 449269);	-- Crimson Mudnose
 i(222989, 447176);	-- Cyan Glowmite
 i(226357, 458335);	-- Diamond Mechsuit
@@ -1830,7 +1831,6 @@ i(223511, 449325);	-- Vicious Skyflayer [A]
 i(221813, 447405);	-- Vicious Skyflayer [H]
 --- UNSORTED ---
 i(223264, 447185);	-- Aquamarine Swarmite
-i(223315, 448941);	-- Beledar's Spawn
 i(221967, 448186);	-- Crowd Pummeler 2-30
 i(223570, 449416);	-- Ebonhide Ramolith
 i(226506, 459193);	-- Hand of Reshkigaal

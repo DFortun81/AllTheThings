@@ -96,7 +96,7 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(223264),	-- Aquamarine Swarmite (MOUNT!)
-				i(223315),	-- Beledar's Spawn (MOUNT!)
+
 
 				i(223570),	-- Ebonhide Ramolith (MOUNT!)
 				i(226506),	-- Hand of Reshkigaal (MOUNT!)
@@ -3180,24 +3180,19 @@ root(ROOTS.Unsorted, {
 				i(221505),	-- [DNT] Rare Cloth - Robe
 				i(221506),	-- Arachnid's Web-Sown Guise
 				i(221507),	-- Earth Golem's Wrap
-				i(221508),	-- Pelt of Beledar's Strength
+
 				i(223005),	-- String of Fungal Fruits
 
 				i(223369),	-- Webspeaker's Spiritual Cloak
 
-				i(223374),	-- Nerubian Weaver's Gown
-				i(223380),	-- Nerubian Weaver's Chainmail
-				i(223382),	-- Murkshade Grips
-				i(223383),	-- Murkshade Handguards
-				i(223384),	-- Murkshade Gloves
-				i(223385),	-- Murkshade Gauntlets
+
+
 				i(223386),	-- Vilewing Crown
 				i(223387),	-- Vilewing Chain Helm
 				i(223390),	-- Leggings of Dark Hunger
 				i(223391),	-- Legguards of Dark Hunger
 
-				i(223398),	-- Abyssal Hunter's Sash
-				i(223399),	-- Abyssal Hunter's Chain
+
 				i(223406),	-- Slippers of the Nerubian Twins
 				i(223407),	-- Sabatons of the Nerubian Twins
 				i(223408),	-- Treads of the Nerubian Twins

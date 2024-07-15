@@ -218,6 +218,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(223928),	-- Crop Cutter's Gauntlets
 						},
 					}),
+					n(214757, {	-- Croakit
+						["coord"] = { 67.3, 23.5, HALLOWFALL },
+						["questID"] = 82560,
+					}),
+					n(206184, {	-- Deathpetal
+						["coord"] = { 63.8, 32.0, HALLOWFALL },
+						["questID"] = 82559,
+					}),
+					n(221179, {	-- Duskshadow
+						["coord"] = { 64.1, 19.5, HALLOWFALL },
+						["questID"] = 82562,
+					}),
+					n(207780, {	-- Finclaw Bloodtide
+						["provider"] = { "n", 220492 },	-- Finclaw Bloodtide
+						--["coord"] = { X, Y, HALLOWFALL },
+						["questID"] = 82564,
+					}),
+					n(206203, {	-- Moth'ethk
+						["coord"] = { 63.5, 28.5, HALLOWFALL },
+						["questID"] = 82557,
+					}),
+					n(220771, {	-- Murkspike
+						["coord"] = { 62.4, 13.3, HALLOWFALL },
+						["questID"] = 82565,
+					}),
+					n(206977, {	-- Parasidious
+						--["coord"] = { X, Y, HALLOWFALL },
+						["questID"] = 82563,
+					}),
+					n(207826, {	-- Ravageant
+						["coord"] = { 59.8, 21.4, HALLOWFALL },
+						["questID"] = 82566,
+					}),
+					n(207803, {	-- Toadstomper
+						["coord"] = { 66.7, 24.1, HALLOWFALL },
+						["questID"] = 82561,
+					}),
 				}),
 				n(REWARDS, {
 					i(RADIANT_REMNANT),
