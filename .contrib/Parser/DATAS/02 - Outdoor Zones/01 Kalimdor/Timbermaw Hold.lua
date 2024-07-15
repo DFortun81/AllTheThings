@@ -114,6 +114,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.0, 10.3, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/15 Deadwood Furbolg slain
+							["providers"] = {
+								{ "n", 7156},	-- Deadwood Den Watcher
+								{ "n", 7157},	-- Deadwood Avenger
+								{ "n", 7158},	-- Deadwood Shaman
+							},
+						}),
 						i(21317),	-- Helm of the Pathfinder
 						i(21316),	-- Leggings of the Ursa
 					},
@@ -298,6 +305,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 60.5, 9.5, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Drizle's Key
+							["provider"] = { "i", 63695 },	-- Drizle's Key
+							["cr"] = 9462,	-- Chieftain Bloodmaw
+						}),
 						i(65293, {	-- Leggings of Mischief
 							["timeline"] = { ADDED_4_0_3 },
 						}),
