@@ -4002,8 +4002,6 @@ i(0, 3608);			-- Lifelike Mechanical Turtle
 i(0, 3609);			-- Sporeflower
 i(0, 3975);			-- Midnight Terrorwing
 i(0, 4237);			-- Treanthony
---- NYI ---
-i(206174, 3582);	-- Blub
 
 ------------------
 -- PATCH 10.1.7 --
@@ -4076,6 +4074,7 @@ i(208446, 4264);	-- Fyrn
 -- PATCH 10.2.6 --
 ------------------
 i(210409, 4286);	-- Aura
+i(206174, 3582);	-- Blub
 i(0, 4426);			-- Bubbles
 i(0, 4437);			-- Fathom
 i(0, 4425);			-- Glamrok
@@ -4086,12 +4085,13 @@ i(217043, 4436);	-- Pokee
 -- PATCH 10.2.7 --
 ------------------
 i(221818, 4580);	-- Astral Emperor's Serpentling
-i(224576, 4595);	-- Lil' Flameo
-i(223499, 4569);	-- Lil' Manny
 i(223145, 4548);	-- Marrlok
 i(221817, 4579);	-- Muskpaw Calf
 i(223339, 4565);	-- Trishi
 i(223474, 4566);	-- Worgli the Apprehensive
+--- NYI ---
+i(224576, 4595);	-- Lil' Flameo
+i(223499, 4569);	-- Lil' Manny
 
 ------------------
 -- PATCH 11.0.0 --

@@ -2117,13 +2117,13 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(212624, {	-- Duelers Deep Shoulder Cape
 					["cost"] = {{"c", TRADERS_TENDER, 75}},
 				}),
-				iensemble(223244, {	-- Ensemble Deepest Depths Diver Suit
+				iensemble(223244, {	-- Ensemble: Deepest Depths Diver Suit
 					["cost"] = {{"c", TRADERS_TENDER, 800}},
 				}),
-				iensemble(206327, {	-- Ensemble Vagabonds Deep Threads
+				iensemble(206327, {	-- Ensemble: Vagabonds Deep Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
-				iensemble(206338, {	-- Ensemble Wanderers Deep Trappings
+				iensemble(206338, {	-- Ensemble: Wanderers Deep Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
 				i(211130, {	-- Errant Crusaders Helm
@@ -2188,7 +2188,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 			filter(COSMETIC, {
-				iensemble(220762, {	-- Arsenal Stormriders Silver Stormhammers
+				iensemble(220762, {	-- Arsenal: Stormriders Silver Stormhammers
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
 				}),
 				i(223430, {	-- Conjurers Sapphire Staff

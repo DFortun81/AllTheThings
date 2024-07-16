@@ -393,8 +393,181 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 		-- 10.2.6
 		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
+			i(217635),	-- Dream Raider's Azure Razor
+
+			------ Dragonriding Cup ------
+			i(212686),	-- Azure Riders of Azeroth Tabard
+			i(212874),	-- Drake Racer's Azure Jersey
+			i(212875),	-- Drake Racer's Azure Handwraps
+			i(212876),	-- Drake Racer's Azure Belt
+			i(212877),	-- Drake Racer's Azure Leggings
+			i(212878),	-- Drake Racer's Azure Boots
+			i(212879),	-- Drake Racer's Azure Scarf
+			i(212880),	-- Drake Racer's Azure Shoulderpads
+			i(212881),	-- Drake Racer's Azure Helmet
+
+			------ Gladiator's Battered ------
+			i(217038),	-- Ensemble: Gladiator's Battered Armor
+			i(217037),	-- Gladiator's Battered Belt
+			i(217030),	-- Gladiator's Battered Chest
+			i(217033),	-- Gladiator's Battered Grips
+			i(217034),	-- Gladiator's Battered Headband
+			i(217035),	-- Gladiator's Battered Leggings
+			i(217036),	-- Gladiator's Battered Shoulderpads
+			i(217031),	-- Gladiator's Battered Treads
+
+			------ Single Pieces ------
+			i(217375),	-- Frenzied Hat of the Crimson Seas
+			i(217373),	-- Frenzied Hat of the Dark Depths
+			i(217376),	-- Frenzied Hat of the Murky Waters
+			i(217374),	-- Frenzied Hat of the Shallows
+		})),
+
+		-- 10.2.7
+		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+			n(SETS, {
+				i(223243), -- Ensemble: Blue Diver Suit
+				i(221541), -- Ensemble: Blue Tropical
+				i(223246), -- Ensemble: Copper Diver Suit
+				i(222959), -- Ensemble: Tropical Sunrise Swimwear
+				------ Black Tropical Set ------
+				i(221540), -- Ensemble: Black Tropical
+				i(221847), -- Ensemble: Black Tropical Swimwear
+				i(221826), -- Black Tropical Airy Sandals
+				i(221825), -- Black Tropical Beads
+				i(221524), -- Black Tropical Floater
+				i(221822), -- Black Tropical Halter Top
+				i(221523), -- Black Tropical Sandals
+				i(221827), -- Black Tropical Sash
+				i(221520), -- Black Tropical Shirt
+				i(221824), -- Black Tropical Skirt
+				i(221828), -- Black Tropical Sunshade
+				i(221521), -- Black Tropical Trunks
+				i(221522), -- Black Tropical Wristwraps
+
+				------ Champion Stormrider Set ------
+				i(220710), -- Champion Stormrider's Boots
+				i(220709), -- Champion Stormrider's Breastplate
+				i(220716), -- Champion Stormrider's Buckle
+				i(220711), -- Champion Stormrider's Cape
+				i(220715), -- Champion Stormrider's Epaulets
+				i(220712), -- Champion Stormrider's Grips
+				i(220713), -- Champion Stormrider's Helmet
+				i(220714), -- Champion Stormrider's Pants
+				i(220717), -- Champion Stormrider's Wristguards
+
+				------ Deep Diver Set ------
+				i(223202), -- Deep Diver's Belt
+				i(223199), -- Deep Diver's Bonnet
+				i(223205), -- Deep Diver's Boots
+				i(223201), -- Deep Diver's Corselet
+				i(223206), -- Deep Diver's Gloves
+				i(223204), -- Deep Diver's Greaves
+				i(223200), -- Deep Diver's Pauldrons
+				i(223255), -- Deep Diver's Tank
+				i(223258), -- Deep Diver's Wrist Seal
+
+				------ Deep Stormrider Set ------
+				i(220696), -- Deep Stormrider's Boots
+				i(220695), -- Deep Stormrider's Breastplate
+				i(220702), -- Deep Stormrider's Buckle
+				i(220697), -- Deep Stormrider's Cape
+				i(220701), -- Deep Stormrider's Epaulets
+				i(220698), -- Deep Stormrider's Grips
+				i(220699), -- Deep Stormrider's Helmet
+				i(220700), -- Deep Stormrider's Pants
+				i(220703), -- Deep Stormrider's Wristguards
+
+				------ Frenzied Stormrider Set ------
+				i(220708), -- Frenzied Stormrider's Breastplate
+				i(220706), -- Frenzied Stormrider's Buckle
+				i(220705), -- Frenzied Stormrider's Epaulets
+				i(220707), -- Frenzied Stormrider's Grips
+				i(220704), -- Frenzied Stormrider's Helmet
+
+				------ Green Diver Set ------
+				i(223245), -- Ensemble: Green Diver Suit
+				i(223226), -- Green Diver's Belt
+				i(223223), -- Green Diver's Bonnet
+				i(223228), -- Green Diver's Boots
+				i(223225), -- Green Diver's Corselet
+				i(223229), -- Green Diver's Gloves
+				i(223227), -- Green Diver's Greaves
+				i(223224), -- Green Diver's Pauldrons
+				i(223253), -- Green Diver's Tank
+				i(223259), -- Green Diver's Wrist Seal
+
+				------ Pink Tropical Set ------
+				i(221543), -- Ensemble: Pink Tropical
+				i(222960), -- Ensemble: Pink Tropical Swimwear
+				i(221838), -- Pink Tropical Airy Sandals
+				i(221837), -- Pink Tropical Beads
+				i(221534), -- Pink Tropical Floater
+				i(221835), -- Pink Tropical Halter Top
+				i(221533), -- Pink Tropical Sandals
+				i(221839), -- Pink Tropical Sash
+				i(221530), -- Pink Tropical Shirt
+				i(221836), -- Pink Tropical Skirt
+				i(221840), -- Pink Tropical Sunshade
+				i(221531), -- Pink Tropical Trunks
+				i(221532), -- Pink Tropical Wristwraps
+
+				------ Purple Snugglefin Murloc Set ------
+				i(223486), -- Ensemble: Purple Snugglefin Murloc Romper
+				i(221015), -- Angry Purple Snugglefin Murloc Hood
+				i(221016), -- Happy Purple Snugglefin Murloc Hood
+				i(221479), -- Purple Snugglefin Murloc Backpack
+				i(221013), -- Purple Snugglefin Murloc Mittens
+				i(221011), -- Purple Snugglefin Murloc Pullover
+				i(221012), -- Purple Snugglefin Murloc Slippers
+				i(221014), -- Purple Snugglefin Murloc Sweatpants
+
+				------ Shining Stormrider Set ------
+				i(220719), -- Shining Stormrider's Boots
+				i(220718), -- Shining Stormrider's Breastplate
+				i(220725), -- Shining Stormrider's Buckle
+				i(220720), -- Shining Stormrider's Cape
+				i(220724), -- Shining Stormrider's Epaulets
+				i(220721), -- Shining Stormrider's Grips
+				i(220722), -- Shining Stormrider's Helmet
+				i(220723), -- Shining Stormrider's Pants
+				i(220726), -- Shining Stormrider's Wristguards
+
+				------ Shocking Stormrider Set ------
+				i(220736), -- Shocking Stormrider's Breastplate
+				i(220734), -- Shocking Stormrider's Buckle
+				i(220733), -- Shocking Stormrider's Epaulets
+				i(220735), -- Shocking Stormrider's Grips
+				i(220732), -- Shocking Stormrider's Helmet
+
+				------ Sparking Stormrider Set ------
+				i(220731), -- Sparking Stormrider's Breastplate
+				i(220729), -- Sparking Stormrider's Buckle
+				i(220728), -- Sparking Stormrider's Epaulets
+				i(220730), -- Sparking Stormrider's Grips
+				i(220727), -- Sparking Stormrider's Helmet
+			}),
 			n(WEAPONS, {
-				i(217635),	-- Dream Raider's Azure Razor
+				i(220759), -- Arsenal: Stormrider's Bronze Stormhammers
+				i(220755), -- Arsenal: Stormrider's Dark Stormhammers
+				------ Fireborn Blades ------
+				i(223421), -- Arsenal: Fireborn Blades
+				i(223419), -- Fireborn Blade
+				i(223420), -- Radiant Fireborn Blade
+
+				------ Seaborn Blades ------
+				i(223418), -- Arsenal: Seaborn Blades
+				i(223417), -- Radiant Seaborn Blade
+				i(223416), -- Seaborn Blade
+
+				------ Single Pieces ------
+				i(220758), -- Champion Stormhammer
+				i(220753), -- Deep Stormhammer
+				i(220752), -- Frenzied Stormhammer
+				i(220757), -- Sparking Stormhammer
+				i(220655), -- Water Blaster P.K.
+				i(220690), -- Water Blaster P.R.
+				i(220691), -- Water Blaster Y.L.
 			}),
 		})),
 	}),

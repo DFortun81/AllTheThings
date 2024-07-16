@@ -641,9 +641,14 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 
 		-- 10.2.7
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+			i(210585),	-- Aesom's Memory Stone
 			i(217349),	-- DEPRECATED - Arcane Dust
+			i(210583),	-- Kuros's Memory Stone
+			i(210587),	-- Nemuraan's Memory Stone
 			i(221266),	-- Precious Belonging [DNT]
+			i(220737),	-- Storm Spirit
 			i(213173),	-- Thread of Power
+			i(210591),	-- Tishamaat Memory Stones
 		})),
 	}),
 }));

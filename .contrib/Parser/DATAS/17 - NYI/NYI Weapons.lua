@@ -742,6 +742,12 @@ root(ROOTS.NeverImplemented, {
 			i(210005),	-- 10.2 Monster - Weapon - Staff - 10.1.5 Weapon Staff - Staff_2H_Druid_C_02_Color1
 			i(211260),	-- Crimson Gladiator's Spear
 		})),
+
+		-- 10.2.5
+		expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+			i(211162),	-- Klaxxi Longsword
+			i(210533),	-- Timerunning Staff
+		})),
 	}),
 	n(WEAPONS, {
 		expansion(EXPANSION.TBC, {

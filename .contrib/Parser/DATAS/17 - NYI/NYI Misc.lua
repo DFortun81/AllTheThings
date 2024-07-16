@@ -1431,6 +1431,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 10.2.0
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+			i(208878),	-- Adventurer's Footlocker
 			i(208692),	-- Ancient Roottwined Tome
 			i(210441),	-- Behemoth's Feather
 			i(208840),	-- Concentrated Sophic Vellum
@@ -1476,7 +1477,13 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		-- 10.2.5
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			i(212784),	-- Destroyed Relic
+			i(211104),	-- Ephemeral Fractured Emerald
+			i(211112),	-- Ephemeral Swift Emerald
+			i(211111),	-- Ephemeral Swift Ruby
+			i(208822),	-- Infinite Hearthstone
 			i(215160),	-- The Big Dig Rig
+			i(210988),	-- Thread of Regeneration
+			i(211388),	-- Timerunner's Starter Kit
 		})),
 
 		-- 10.2.6
@@ -1534,7 +1541,15 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 10.2.7
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+			i(218130),	-- Adventurer's Footlocker
 			i(218120),	-- Arsenal: Exodar Peacekeeper's Armaments
+			i(210881),	-- Cunning Charm
+			i(213530),	-- Entropic Crystal
+			i(217016),	-- Fragmented Medallion of the Darkspear
+			i(217010),	-- Fragmented Medallion of the Draenei
+			i(213540),	-- Ghostly Motes
+			i(211768),	-- Hastily Scrawled Satyr Ravings
+			i(213531),	-- Nether Sands
 			i(223475),	-- Set Keystone Level: 2
 			i(223476),	-- Set Keystone Level: 3
 			i(223477),	-- Set Keystone Level: 4
@@ -1543,6 +1558,8 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(223480),	-- Set Keystone Level: 7
 			i(223481),	-- Set Keystone Level: 8
 			i(223482),	-- Set Keystone Level: 9
+			i(213532),	-- Void Rune
+			i(213537),	-- Void Tendril
 		})),
 	}),
 }));

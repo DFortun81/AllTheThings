@@ -3,7 +3,7 @@
 ---------------------------------------------------------------
 root(ROOTS.NeverImplemented, n(ARMOR, {
 	expansion(EXPANSION.CLASSIC, {
-		n(BACK, {
+		filter(BACK_F, {
 			i(22230),	-- Frightmaw Hide
 		}),
 		filter(CLOTH, {
@@ -82,7 +82,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 	}),
 	expansion(EXPANSION.TBC, {
-		n(BACK, {
+		filter(BACK_F, {
 			n(P2xx, {
 				i(28045),	-- Cloak of the Demon Stalker
 			}),
@@ -175,7 +175,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 	}),
 	expansion(EXPANSION.WRATH, {
-		n(BACK, {
+		filter(BACK_F, {
 			n(P3xx, {
 				i(37174),	-- Rippling Azure Cloak
 				i(35876),	-- Talbuk Cape
@@ -309,7 +309,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(59600),	-- Phosphora Fedora
 			}),
 		}),
-		n(BACK, {
+		filter(BACK_F, {
 			expansion(EXPANSION.CATA, 0.3, {
 				i(56355),	-- Skin of Stone
 				i(65815),	-- Drape of the Mortal Guardians
@@ -744,11 +744,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(96722),	-- Locksmasher Greaves
 				i(97094),	-- Locksmasher Greaves
 				i(96712),	-- Vaultwalker Sabatons
-				i(97084),	-- Vaultwalker Sabatons				
+				i(97084),	-- Vaultwalker Sabatons
 			}),
 			-- #endif
 		}),
-		n(BACK, {
+		filter(BACK_F, {
 			expansion(EXPANSION.MOP, 0.1, {
 				i(80965),	-- Scavenger's Cape
 				i(80966),	-- Scavenger's Drape
@@ -860,7 +860,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 	}),
 	expansion(EXPANSION.WOD, {
-		n(BACK, {
+		filter(BACK_F, {
 			expansion(EXPANSION.WOD, 0.1, {
 				i(114421),	-- Arrowleaf Longcloak
 				i(114301),	-- Axebreak Darkcloak
@@ -1274,7 +1274,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(130327),	-- Artful Britches
 			}),
 		}),
-		n(BACK, {
+		filter(BACK_F, {
 			expansion(EXPANSION.LEGION, 0.3, {
 				i(134579),	-- Vanguard Cape
 				i(134605),	-- Vanguard Cloak
@@ -1454,7 +1454,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(150515),	-- Nadina's Pendant of Purity
 			}),
 		}),
-		n(BACK, {
+		filter(BACK_F, {
 			expansion(EXPANSION.BFA, 0.1, {
 				i(153397),	-- Salt Starched Shawl
 				i(154968),	-- Drape of the Golden City
@@ -1818,7 +1818,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		}),
 	}),
 	expansion(EXPANSION.SL, {
-		n(BACK, {
+		filter(BACK_F, {
 			expansion(EXPANSION.SL, 0.1, {
 				i(169822),	-- Flowing Cloak
 			}),
@@ -2506,7 +2506,7 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 		i(178758),	-- Plague Experimenter's Gloves
 	}),
 	expansion(EXPANSION.DF, {
-		n(BACK, {
+		filter(BACK_F, {
 			-- 10.0.0
 			expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 				i(189669),	-- 10.0 Dungeon Template - Generic - Cloak
@@ -2540,6 +2540,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207161, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Mantle of Blazing Sacrifice [Mythic]
 					}),
 				}),
+			})),
+
+			-- 10.2.5
+			expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+				i(210525),	-- Timerunner's Cloak
 			})),
 		}),
 		cl(DRUID, {
@@ -2663,6 +2668,17 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				}),
 			})),
 
+			-- 10.2.5
+			expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+				i(210528),	-- Timerunning Belt
+				i(210529),	-- Timerunning Boots
+				i(210527),	-- Timerunning Bracers
+				i(210524),	-- Timerunning Cover
+				i(210532),	-- Timerunning Gloves
+				i(210530),	-- Timerunning Pants
+				i(210531),	-- Timerunning Shoulderpads
+			})),
+
 			-- 10.2.7
 			expansion(EXPANSION.DF, 2.7, bubbleDown({ ["timeline"] = { CREATED_10_2_7 } }, {
 				i(215074),	-- REUSE
@@ -2776,6 +2792,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(208420, { ["bonusID"] = 6897, ["modID"] = 0, }),	-- Visage of the Devouring Flame [Mythic]
 					}),
 				}),
+			})),
+
+			-- 10.2.5
+			expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+				i(210279),	-- Thunderpaw Spaulders
 			})),
 		}),
 		filter(MAIL, {
@@ -2910,6 +2931,24 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207143, { ["bonusID"] = 8107 }),	-- Twisted Flamecuffs [Elite]
 					}),
 				}),
+			})),
+
+			-- 10.2.5
+			expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+				i(210285),	-- Jade Guardian's Belt
+				i(210289),	-- Jade Guardian's Bracers
+				i(210271),	-- Jade Guardian's Gauntlets
+				i(210273),	-- Jade Guardian's Helm
+				i(210282),	-- Jade Guardian's Monnion
+				i(210621),	-- Reedstalker Wristguards
+				i(210914),	-- Timerunner's Bands
+				i(210910),	-- Timerunner's Chain
+				i(210892),	-- Timerunner's Chestguard
+				i(210898),	-- Timerunner's Coif
+				i(210896),	-- Timerunner's Grips
+				i(210902),	-- Timerunner's Legguards
+				i(210907),	-- Timerunner's Monnion
+				i(210894),	-- Timerunner's Sabatons
 			})),
 		}),
 		filter(PLATE, {
@@ -3048,6 +3087,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					}),
 				}),
 			})),
+
+			-- 10.2.7
+			expansion(EXPANSION.DF, 2.7, bubbleDown({ ["timeline"] = { CREATED_10_2_7 } }, {
+				i(219904),	-- Romuul's Controllable Shoulderplate
+			})),
 		}),
 		filter(COSMETIC, {
 			-- 10.0.0
@@ -3075,6 +3119,16 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(189624),	-- 10.0 Raid Template - Generic - Neck
 				i(189005),	-- 10.0 Zone Uncommon Template <Descriptor> Necklace
 			})),
+
+			-- 10.2.5
+			expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+				i(208489),	-- Ankh of Reincarnation
+				i(210262),	-- Divine Prayer Beads
+				i(211346),	-- Gigantifier
+				i(211345),	-- Knick of Time
+				i(211344),	-- Miniaturizer
+				i(211347),	-- Scarab's Shell
+			})),
 		}),
 		filter(FINGER_F, {
 			-- 10.0.0
@@ -3095,6 +3149,12 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(189002),	-- 10.0 Zone Uncommon Template <Descriptor> Signet
 				i(200280),	-- Decaying Ghostly Band
 				i(197933),	-- Lutokk's Wedding Ring
+			})),
+
+			-- 10.2.5
+			expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+				i(210257),	-- Bamboo Band
+				i(210256),	-- Cloud-Rider Seal
 			})),
 		}),
 		filter(TRINKET_F, {
@@ -3130,6 +3190,12 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			expansion(EXPANSION.DF, 0.7, bubbleDown({ ["timeline"] = { CREATED_10_0_7 } }, {
 				i(204192),	-- Ascendancy
 				i(203680),	-- Totem Toss
+			})),
+
+			-- 10.2.5
+			expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+				i(208556),	-- Flicker Blossom
+				i(208553),	-- Timerunner's Chalice
 			})),
 		}),
 		-- 10.0.0

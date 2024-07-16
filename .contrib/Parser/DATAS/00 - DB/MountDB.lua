@@ -1774,6 +1774,7 @@ i(213601, 435115);	-- Guardian Quilen
 i(213621, 435147);	-- Jade Pterrordax
 i(87784, 127178);	-- Jungle Riding Crane
 i(84753, 123182);	-- Kafa Yak
+i(223449, 449126);	-- Korkron Warsaber
 i(213609, 435133);	-- Little Red Riding Goat
 i(213607, 435124);	-- Luxurious Riding Crane
 i(213600, 435118);	-- Marble Quilen
@@ -1786,22 +1787,22 @@ i(221814, 447413);	-- Pearlescent Goblin Wave Shredder
 i(213626, 435153);	-- Purple Shado-Pan Riding Tiger
 i(213628, 435160);	-- Riverwalker Mushan
 i(213605, 435127);	-- Rose Riding Crane
-i(224574, 453255);	-- Savage Ebony Battle Turtle
+i(223469, 449140);	-- Sentinel War Wolf
 i(213606, 435126);	-- Silver Riding Crane
 i(213582, 435084);	-- Sky Surfer
 i(213608, 435131);	-- Snowy Riding Goat
 i(224374, 132036);	-- Thundering Ruby Cloud Serpent
 i(213604, 435125);	-- Tropical Riding Crane
+i(223285, 448851);	-- Underlight Corrupted Behemoth
+--- NYI ---
 i(223471, 449142);	-- [PH] Alliance Wolf Mount Purple
 i(223470, 449141);	-- [PH] Alliance Wolf Mount Red
-i(223469, 449140);	-- [PH] Alliance Wolf Mount White
 i(223282, 448845);	-- [PH] Blue Old God Fish Mount
 i(221270, 446352);	-- [PH] Goblin Surfboard - Blue
-i(223284, 448849);	-- [PH] Green Old God Fish Mount
 i(223459, 449132);	-- [PH] Nightsaber Horde Mount Black
-i(223449, 449126);	-- [PH] Nightsaber Horde Mount Red
 i(223460, 449133);	-- [PH] Nightsaber Horde Mount White
-i(223285, 448851);	-- [PH] Purple Old God Fish Mount
+i(224574, 453255);	-- Savage Ebony Battle Turtle
+i(223284, 448849);	-- Underlight Shorestalker
 
 ------------------
 -- PATCH 11.0.0 --

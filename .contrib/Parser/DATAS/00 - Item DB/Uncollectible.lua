@@ -1679,8 +1679,14 @@ i(210445);	-- Ash Pouch
 i(210554);	-- Blazing Feather
 i(210444);	-- Burning Flower
 i(210451);	-- Imp Tail
+i(209863);	-- Moontouched Thorns
+i(209864);	-- Moontouched Thorns
+i(209865);	-- Moontouched Thorns
 i(211270);	-- Pristine Core Leather
 i(210452);	-- Small Demon Horn
+i(209866);	-- Thornspeaker Ritual Knife
+i(209867);	-- Thornspeaker Ritual Knife
+i(209868);	-- Thornspeaker Ritual Knife
 
 ------------------
 -- PATCH 10.2.5 --
