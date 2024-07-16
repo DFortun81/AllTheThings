@@ -1639,7 +1639,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		}),
 		i(13759, {	-- Raw Nightfin Snapper
-			-- #if AFTER 4.0.3
+			-- #if AFTER 9.0.1
+			["description"] = "Can be caught in open inland waters in Blasted Lands, Eastern Plaguelands, Feralas, and Moonglade.",
+			-- #elseif AFTER 4.0.3
 			["description"] = "Can be caught in open inland waters in Blasted Lands, Eastern Plaguelands, Feralas, and Moonglade. Can only be caught during night time: 18:00/6pm to 12:00/12pm server time.",
 			-- #endif
 		}),
@@ -1679,7 +1681,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		}),
 		i(13760, {	-- Raw Sunscale Salmon
-			-- #if AFTER 4.0.3
+			-- #if AFTER 9.0.1
+			["description"] = "Can be caught in open inland waters in Blasted Lands, Eastern Plaguelands, Feralas, and Moonglade.",
+			-- #elseif AFTER 4.0.3
 			["description"] = "Can be caught in open inland waters in Blasted Lands, Eastern Plaguelands, Feralas, and Moonglade. Can only be caught during day time: 06:00/6am to 00:00/12am server time.",
 			-- #endif
 		}),
