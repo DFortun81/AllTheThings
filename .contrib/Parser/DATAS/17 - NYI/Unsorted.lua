@@ -44,6 +44,99 @@ root(ROOTS.Unsorted, {
 			i(228711),	-- Small Candle
 			i(228720),	-- Nascent Gemstone
 			i(228721),	-- Hearty Feast
+			-----------
+			i(212775),	-- zzOldFleeting Flask of Tempered Aggression
+			i(212776),	-- zzOldFleeting Flask of Tempered Aggression
+			i(212777),	-- zzOldFleeting Flask of Tempered Aggression
+			i(219450),	-- Charming Courier
+			i(220153),	-- Awoken Coelacanth
+			i(222808),	-- Treads of the Woven Dawn
+			i(222809),	-- Gloves of the Woven Dusk
+			i(223276),	-- Widow's Undercrawler
+			i(223278),	-- Heritage Undercrawler
+			i(223279),	-- Royal Court Undercrawler
+			i(223318),	-- Dauntless Imperial Lynx
+			i(223424),	-- Algari-weave Cord
+			i(223441),	-- Algari Scouting Boots
+			i(223456),	-- Algari Cinch
+			i(223464),	-- Algari Heavy Gauntlets
+			i(223498),	-- Charismatic Courier
+			i(223585),	-- Algari Bladefist
+			i(224556),	-- Glorious Contender's Strongbox
+			i(224807),	-- Algari Skinner's Notes
+			i(224817),	-- Algari Herbalist's Notes
+			i(224818),	-- Algari Miner's Notes
+			i(225227),	-- Wax-Sealed Records
+			i(225720),	-- Web Acolyte's Hood
+			i(225721),	-- Prime Slime Slippers
+			i(225722),	-- Adorned Lynxborne Pauldrons
+			i(225723),	-- Venom Stalker's Strap
+			i(225724),	-- Shrillwing Hunter's Prey
+			i(225725),	-- Lurking Marauder's Binding
+			i(225727),	-- Captured Earthen's Ironhorns
+			i(225728),	-- Acidic Attendant's Loop
+			i(225744),	-- Heritage Militia's Stompers
+			i(227667),	-- Algari Enchanter's Folio
+			i(227770),	-- Assorted Whirligigs
+			i(228723),	-- Earthen Pet Rock
+			i(228724),	-- Flicker of Alchemy Knowledge
+			i(228725),	-- Glimmer of Alchemy Knowledge
+			i(228726),	-- Flicker of Blacksmithing Knowledge
+			i(228727),	-- Glimmer of Blacksmithing Knowledge
+			i(228728),	-- Flicker of Enchanting Knowledge
+			i(228729),	-- Glimmer of Enchanting Knowledge
+			i(228730),	-- Flicker of Engineering Knowledge
+			i(228731),	-- Glimmer of Engineering Knowledge
+			i(228732),	-- Flicker of Inscription Knowledge
+			i(228733),	-- Glimmer of Inscription Knowledge
+			i(228734),	-- Flicker of Jewelcrafting Knowledge
+			i(228735),	-- Glimmer of Jewelcrafting Knowledge
+			i(228736),	-- Flicker of Leatherworking Knowledge
+			i(228737),	-- Glimmer of Leatherworking Knowledge
+			i(228738),	-- Flicker of Tailoring Knowledge
+			i(228739),	-- Glimmer of Tailoring Knowledge
+			i(228741),	-- Lamplighter Supply Satchel
+			i(228742),	-- Unidentifiable Cloth
+			i(228743),	-- Damp Weavercloth
+			i(228744),	-- Golbin Twist-Rag
+			i(228745),	-- Aurora Strand
+			i(228756),	-- Bonus Snuffling Experience
+			i(228758),	-- Parrlok
+			i(228761),	-- Classic Brick Tabard
+			i(228762),	-- Classic Lively Tabard
+			i(228763),	-- Classic Crimson Tabard
+			i(228764),	-- Classic Sunny Tabard
+			i(228765),	-- Gummi
+			i(228773),	-- Algari Alchemist's Notebook
+			i(228774),	-- Algari Blacksmith's Journal
+			i(228775),	-- Algari Engineer's Notepad
+			i(228776),	-- Algari Scribe's Journal
+			i(228777),	-- Algari Jewelcrafter's Notebook
+			i(228778),	-- Algari Leatherworker's Journal
+			i(228779),	-- Algari Tailor's Notebook
+			i(228914),	-- Arachnophile Spectacles
+			i(228916),	-- Algari Tailor's Satchel
+			i(228917),	-- Satchel of Ore
+			i(228918),	-- Satchel of Leather
+			i(228919),	-- Satchel of Algari Herbs
+			i(228920),	-- Satchel of Chitin
+			i(228921),	-- Griftah's Heavy-Duty Embellishing Powder
+			i(228930),	-- Adorning Ribbon
+			i(228931),	-- Algari Enchanter's Satchel
+			i(228932),	-- Algari Engineer's Satchel
+			i(228933),	-- Algari Leatherworker's Satchel
+			i(228940),	-- Notorious Thread's Hearthstone
+			i(228942),	-- Bountiful Coffer
+			i(228943),	-- Spymaster's Severed Thread
+			i(228944),	-- Crypt Lord's Severed Thread
+			i(228945),	-- Executor's Severed Thread
+			i(228946),	-- Weaver's Lair Profession Table
+			i(228947),	-- Weaver's Lair Profession Table
+			i(228949),	-- Rumor Map
+			i(228950),	-- Rumor Map Bundle
+			i(228951),	-- Pact Treasure Map
+			i(228952),	-- Pact Treasure Map Bundle
+			i(228954),	-- Angler's Guide
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(BATTLE_PETS, {
