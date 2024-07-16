@@ -15284,3 +15284,11 @@
 40859@@@We're Here All Night
 40860@@@A Star of Dorn
 40861@@@Mislaid Curiosities looted
+11.0.2.55522
+40215@@@Deephaul Ravine Shutout
+40789@@@Flying in Style
+40862@@@Tricks and Treats of Khaz Algar
+40863@@@Perplexing Puzzle
+40864@@@Plentiful Perplexing Puzzles
+40865@@@Puzzles completed
+40869@@@Worm Theory

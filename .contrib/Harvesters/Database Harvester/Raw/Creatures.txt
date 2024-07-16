@@ -21899,3 +21899,21 @@
 229512@@@Nerubian Swarmite
 229696@@@Targeting Bunny
 229697@@@Targeting Bunny
+11.0.2.55522
+214297@@@Nerubian Saboteur
+222831@@@Nerubian Venomspitter
+223691@@@Charismatic Courier
+229744@@@Executor Nizrek
+229795@@@Anub'azal
+229797@@@Widow Arak'nai
+229804@@@Swarming Screamer
+229841@@@Turalyon
+229842@@@Locus Walker
+229843@@@Anduin Wrynn
+229844@@@Archmage Khadgar
+229846@@@Parrlok
+229860@@@Gummi
+229869@@@Adelgonn
+230029@@@Supplier Wei
+230030@@@Supplier Wei
+230098@@@Spindle
