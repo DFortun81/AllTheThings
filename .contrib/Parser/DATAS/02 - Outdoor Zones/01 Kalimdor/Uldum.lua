@@ -171,6 +171,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["provider"] = { "o", 206293 },	-- A.I.D.A. Terminal
 					["sourceQuest"] = 27760,	-- Artificial Intelligence
 					["groups"] = {
+						objective(1, {	-- 0/1 First Bomb Cluster disarmed
+							["provider"] = { "o", 206395 },	-- First Bomb Cluster
+						}),
+						objective(2, {	-- 0/1 Second Bomb Cluster disarmed
+							["provider"] = { "o", 206396 },	-- Second Bomb Cluster
+						}),
+						objective(3, {	-- 0/1 Third Bomb Cluster disarmed
+							["provider"] = { "o", 206397 },	-- Third Bomb Cluster
+						}),
+						objective(4, {	-- 0/4 Unstable Bomb Bot deactivated
+							["provider"] = { "n", 46888 },	-- Unstable Bomb Bot
+						}),
 						i(65843),	-- Brainrot Grips
 						i(65842),	-- Treads of the Starry Obelisk
 						i(65841),	-- Tomb-Curse Chestplate
@@ -181,6 +193,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 24.3, 64.5, ULDUM },
 					["sourceQuest"] = 27926,	-- Eastern Hospitality
 					["groups"] = {
+						objective(1, {	-- 0/5 Desert Coyote Pelt
+							["provider"] = { "i", 62776 },	-- Desert Coyote Pelt
+							["cr"] = 47190,	-- Shaggy Desert Coyote
+						}),
 						i(65867),	-- Pristine Coyote Spaulders
 						i(65866),	-- Flenser's Leggings
 						i(65865),	-- Ankh-Inscribed Bracers
@@ -265,11 +281,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48564,	-- King Phaoris
 					["coord"] = { 52.0, 65.4, ULDUM },
 					["sourceQuest"] = 28623,	-- The Push Westward
+					["groups"] = {
+						objective(1, {	-- 0/10 Neferset Insignia
+							["provider"] = { "i", 64352 },	-- Neferset Insignia
+							["crs"] = {
+								47722,	-- Neferset Armorer
+								47727,	-- Neferset Blade Twister
+								47729,	-- Neferset Savage
+								47738,	-- Neferset Snake Charmer
+								47741,	-- Neferset Venom Keeper
+								47760,	-- Neferset Cursebringer
+								47762,	-- Neferset Ritualist
+								48625,	-- Neferset Scryer
+								48626,	-- Neferset Raider
+								48757,	-- Neferset Intruder credit
+							},
+						}),
+					},
 				}),
 				q(27924, {	-- Budd's Plan
 					["qg"] = 46875,	-- Budd
 					["coord"] = { 59.5, 72.0, ULDUM },
 					["sourceQuest"] = 27922,	-- Traitors!
+					["groups"] = {
+						objective(1, {	-- 0/6 Neferset Armor
+							["provider"] = { "i", 62821 },	-- Neferset Armor
+							["crs"] = {
+								47306,	-- Neferset Sentinel
+								48267,	-- Neferset Denizen
+							},
+						}),
+					},
 				}),
 				q(27549, {	-- By the Light of the Stars
 					["qg"] = 45296,	-- Harrison Jones
@@ -289,32 +331,76 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48431,	-- Sullah
 					["coord"] = { 29.6, 21.8, ULDUM },
 					["sourceQuest"] = 28274,	-- Two Tents
+					["groups"] = {
+						objective(1, {	-- 0/3 Wild Camels captured
+							["provider"] = { "i", 67241 }	-- Sullah's Camel Harness
+							["cr"] = 51193,	-- Wild Camel
+						}),
+					},
 				}),
 				q(27623, {	-- Colossal Guardians
 					["coord"] = { 39.6, 45.4, ULDUM },
 					["provider"] = { "o", 205874 },	-- Sand-Covered Hieroglyphs
 					["sourceQuest"] = 27602,	-- The Prophet's Dying Words
+					["groups"] = {
+						objective(1, {	-- 0/1 Stone of the Moon
+							["provider"] = { "i", 61970 },	-- Stone of the Moon
+							["cr"] = 46042,	-- Colossus of the Moon
+						}),
+						objective(2, {	-- 0/1 Stone of the Sun
+							["provider"] = { "i", 61971 },	-- Stone of the Sun
+							["cr"] = 46041,	-- Colossus of the Sun
+						}),
+					},
 				}),
 				q(27777, {	-- Core Access Codes
 					["coord"] = { 74.1, 64.4, ULDUM },
 					["provider"] = { "o", 206293 },	-- A.I.D.A. Terminal
 					["sourceQuest"] = 27760,	-- Artificial Intelligence
+					["groups"] = {
+						objective(1, {	-- 0/1 Core Access Codes
+							["provider"] = { "i", 62399 },	-- Core Access Codes
+							["cr"] = 46587,	-- Twizzleflux the Insane
+						}),
+					},
 				}),
 				q(28002, {	-- Crisis Management
 					["qg"] = 47670,	-- Belloc Brightblade
 					["coord"] = { 24.3, 64.5, ULDUM },
 					["sourceQuest"] = 27969,	-- Make Yourself Useful
+					["groups"] = {
+						objective(1, {	-- 0/1 Prolific Writer Questioned
+							["provider"] = { "n", 47516 },	-- Prolific Writer
+						}),
+						objective(2, {	-- 0/1 Privileged Socialite Soothed
+							["provider"] = { "n", 47519 },	-- Privileged Socialite
+						}),
+						objective(3, {	-- 0/1 Pretentious Businessman Chastened
+							["provider"] = { "n", 47520 },	-- Pretentious Businessman
+						}),
+						objective(4, {	-- 0/1 Budding Artist Counseled
+							["provider"] = { "n", 47707 },	-- Budding Artist
+						}),
+					},
 				}),
 				q(27940, {	-- Dirty Birds
 					["qg"] = 47202,	-- Diseased Vulture
 					["sourceQuest"] = 27926,	-- Eastern Hospitality
 					["description"] = "This quest is auto-accepted when you kill a Diseased Vulture after accepting The Desert Fox or A Favor for the Furrier."
+					["groups"] = {
+						objective(1, {	-- 0/8 Diseased Vultures Slain
+							["provider"] = { "n", 47202 },	-- Diseased Vulture
+						}),
+					},
 				}),
 				q(27669, {	-- Do the Honors
 					["qg"] = 45296,	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, ULDUM },
 					["sourceQuest"] = 27624,	-- After the Fall
 					["groups"] = {
+						objective(1, {	-- 0/1 Obelisk of the Stars Reactivated
+							["provider"] = { "i", 62054 },	-- Orbs of the Stars
+						}),
 						i(65863),	-- Chain Reaction Hood
 						i(65862),	-- Crashing Idol Headguard
 						i(65861),	-- Statue Climbers
@@ -325,11 +411,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45202,	-- Mangy Hyena
 					["sourceQuest"] = 27141,	-- Harrison Jones
 					["description"] = "This quest is auto-accepted when you kill a Mangy Hyena after accepting A Strange Disc or Field Work."
+					["groups"] = {
+						objective(1, {	-- 0/12 Mangy Hyenas Eradicated
+							["providers"] = {
+								{ "n", 45202},	-- Mangy Hyena
+								{ "n", 45204},	-- Skarf
+							},
+						}),
+					},
 				}),
 				q(27926, {	-- Eastern Hospitality
 					["qg"] = 47670,	-- Belloc Brightblade
 					["coord"] = { 24.3, 64.5, ULDUM },
 					["sourceQuest"] = 28132,	-- Efficient Excavations
+					["groups"] = {
+						objective(1, {	-- 0/1 Mingled with Ambassador Laurent
+							["provider"] = { "n", 47176 },	-- Ambassador Laurent
+						}),
+						objective(2, {	-- 0/1 Mingled with a Refined Gentleman
+							["provider"] = { "n", 47185 },	-- Refined Gentleman
+						}),
+						objective(3, {	-- 0/1 Mingled with a Budding Artist
+							["provider"] = { "n", 47187 },	-- Budding Artist
+						}),
+						objective(4, {	-- 0/1 Mingled with an Aspiring Starlet
+							["provider"] = { "n", 47189 },	-- Aspiring Starlet
+						}),
+					},
 				}),
 				q(27003, {	-- Easy Money
 					["qg"] = 44833,	-- Adarrah
@@ -385,6 +493,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28112,	-- Escape From the Lost City
 						27141,	-- Exploding Through
 					},
+					["groups"] = {
+						objective(1, {	-- 0/10 Ornate Tablet Fragment
+							["provider"] = { "i", 60860 },	-- Ornate Tablet Fragment
+							["cr"] = 45190,	-- Sand Pygmy
+						}),
+					},
 				}),
 				q(28497, {	-- Fire From the Sky
 					["qg"] = 48698,	-- Harrison Jones
@@ -419,6 +533,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.1, 15.7, ULDUM },
 					["sourceQuest"] = 28613,	-- See You on the Other Side!
 					["groups"] = {
+						objective(1, {	-- 0/1 Obsidian Colossus Defeated
+							["provider"] = { "n", 46646 },	-- Obsidian Colossus
+						}),
 						i(65786),	-- Colossus Smasher Breastplate
 						i(65788),	-- Arrowspike Launcher
 						i(65787),	-- Harrison's Climbing Hook
@@ -479,6 +596,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 38.9, 23.2, ULDUM },
 					["sourceQuest"] = 28403,	-- Bad Datas
 					["groups"] = {
+						objective(1, {	-- 0/1 Titanic Guardian Defeated
+							["provider"] = { "n", 48437 },	-- Titanic Guardian
+						}),
 						i(65873),	-- Titanic Treads
 						i(65885),	-- Gauntlets of Ahmtul
 						i(65871),	-- Guardian-Killer Waistplate
@@ -491,6 +611,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27669,	-- Do the Honors
 						27899,	-- That Gleam in his Eye
 					},
+					["groups"] = {
+						objective(1, {	-- 0/10 Schnottz Air Troopers Slain
+							["provider"] = { "n", 46979 },	-- Schnottz Air Trooper
+						}),
+					},
 				}),
 				q(27942, {	-- Idolatry
 					["qg"] = 47159,	-- Commander Schnottz
@@ -501,6 +626,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 46978,	-- Harrison Jones
 					["coord"] = { 43.9, 57.0, ULDUM },
 					["sourceQuest"] = 27901,	-- They Don't Know What They've Got Here
+					["groups"] = {
+						objective(1, {	-- 0/1 Lens of the Sun
+							["provider"] = { "i", 62705 },	-- Lens of the Sun
+							["cr"] = 47032,	-- Titanic Guardian
+						}),
+					},
 				}),
 				q(28134, {	-- Impending Retribution
 					["qg"] = 47684,	-- King Phaoris
@@ -512,6 +643,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 29327,	-- Elemental Bonds: Doubt
 					["coord"] = { 34.3, 77.6, ULDUM },
 					["timeline"] = { ADDED_4_2_0 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Speak with Nomarch Teneth
+							["provider"] = { "n", 46603 },	-- Nomarch Teneth
+						}),
+						objective(2, {	-- 0/1 Speak with Sun Priest Asaris
+							["provider"] = { "n", 47715 },	-- Sun Priest Asaris
+						}),
+						objective(3, {	-- 0/1 Speak with Asaq
+							["provider"] = { "n", 47930 },	-- Asaq
+						}),
+					},
 				})),
 				q(28353, {	-- Jonesy Sent For You
 					["qg"] = 48431,	-- Sullah
@@ -523,11 +665,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27431,	-- Tipping the Balance
 					["description"] = "This quest is auto-accepted when you kill any color Scarab after completing Tipping the Balance.",
 					["coord"] = { 64.4, 29.6, ULDUM },
-					["crs"] = {
-						46129,	-- Amethyst Scarab
-						46128,	-- Emerald Scarab
-						46127,	-- Sapphire Scarab
-						46126,	-- Turquoise Scarab
+					["groups"] = {
+						objective(1, {	-- 0/5 Amethyst Scarabs Slain
+							["provider"] = { "n", 46129 },	-- Amethyst Scarab
+						}),
+						objective(2, {	-- 0/5 Emerald Scarabs Slain
+							["provider"] = { "n", 46128 },	-- Emerald Scarab
+						}),
+						objective(3, {	-- 0/5 Sapphire Scarabs Slain
+							["provider"] = { "n", 46127 },	-- Sapphire Scarab
+						}),
+						objective(4, {	-- 0/5 Turquoise Scarabs Slain
+							["provider"] = { "n", 46126 },	-- Turquoise Scarab
+						}),
 					},
 				}),
 				q(27176, {	-- A Strange Disc
@@ -549,6 +699,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.5, 72.0, ULDUM },
 					["sourceQuest"] = 27922,	-- Traitors!
 					["groups"] = {
+						objective(1, {	-- 0/1 Neferset Key
+							["provider"] = { "i", 62817 },	-- Neferset Key
+							["cr"] = 47567,	-- Kavem the Callous
+						}),
 						i(65820),	-- Keythief Handwraps
 						i(65819),	-- Kavem's Trimmed Chestguard
 						i(65821),	-- Pearl-Handled Long Gun
@@ -564,6 +718,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.0, 65.4, ULDUM },
 					["sourceQuest"] = 28623,	-- The Push Westward
 					["groups"] = {
+						objective(1, {	-- 0/1 Scorpion-Lord Namkhare slain
+							["provider"] = { "n", 47742 },	-- Scorpion-Lord Namkhare
+						}),
+						objective(2, {	-- 0/1 High Priest Sekhemet slain
+							["provider"] = { "n", 47730 },	-- High Priest Sekhemet
+						}),
 						i(65813),	-- Scarab-Inlaid Crossbow
 						i(65814),	-- Sekhemet's Seal
 					},
@@ -578,6 +738,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 24.4, 64.0, ULDUM },
 					["sourceQuest"] = 27950,	-- Gobbles!
 					["groups"] = {
+						objective(1, {	-- 0/6 Slackers Motivated
+							["provider"] = { "n", 47292 },	-- Slacking Laborer
+						}),
 						i(65857),	-- Shoulders of the Obelisk
 						i(65856),	-- Chestguard of Vigorous Motivation
 						i(65855),	-- Mongoose-Hide Waistguard
@@ -587,6 +750,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48431,	-- Sullah
 					["coord"] = { 29.6, 21.8, ULDUM },
 					["sourceQuest"] = 28274,	-- Two Tents
+					["groups"] = {
+						objective(1, {	-- 0/5 Meat Scrap
+							["provider"] = { "i", 63541 },	-- Meat Scrap
+							["crs"] = {
+								45202,	-- Mangy Hyena
+								45321,	-- Riverbed Crocolisk
+								45859,	-- Venomblood Scorpid
+								46317,	-- Neferset Crocolisk
+								47202,	-- Diseased Vulture
+								47720,	-- Camel
+								47726,	-- Tiger
+								47737,	-- Venomscale Scorpid
+								47740,	-- Viper
+								47803,	-- Sand Scorpid
+								48199,	-- Bloodsnarl Scavenger
+								48209,	-- Bloodsnarl Scavenger
+								48239,	-- Armadillo
+								50862,	-- Deathsting Scorpid
+								50866,	-- Desert Lion
+								50873,	-- Majestic Duneprawler
+								51193,	-- Wild Camel
+								51199,	-- Wild Camel PROXY (DO NOT LOCALIZE)
+								51675,	-- Oasis Crocolisk
+							},
+						}),
+					},
 				}),
 				q(28269, {	-- Meet Me In Vir'sar
 					["qg"] = 48162,	-- Harrison Jones
@@ -612,6 +801,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 45.2, 37.9, ULDUM },
 					["sourceQuest"] = 28135,	-- Al'Akir's Vengeance
 					["groups"] = {
+						objective(1, {	-- 0/6 Scion of Al'Akir slain
+							["provider"] = { "n", 45755 },	-- Scion of Al'Akir
+						}),
 						i(65810),	-- Asp-Clasp Bracers
 						i(65809),	-- Gloves of the Stela
 						i(65811),	-- Cenotaph Choker
@@ -654,6 +846,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 46134,	-- High Commander Kamses
 					["coord"] = { 58.8, 46.1, ULDUM },
 					["sourceQuest"] = 27631,	-- The High Commander's Vote
+					["groups"] = {
+						objective(1, {	-- 0/8 Ramkahen Laborer recruited
+							["provider"] = { "n", 46333 },	-- Ramkahen Laborer
+						}),
+					},
 				}),
 				q(27141, {	-- Exploding Through
 					["qg"] = 44860,	-- Harrison Jones
@@ -665,6 +862,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.3, 42.7, ULDUM },
 					["sourceQuest"] = 28561,	-- Nahom Must Hold
 					["groups"] = {
+						objective(1, {	-- 0/10 Neferset intruder slain
+							["providers"] = {
+								{ "n", 48757},	-- Neferset Intruder credit
+								{ "n", 48625},	-- Neferset Scryer
+								{ "n", 48626},	-- Neferset Raider
+								{ "n", 48627},	-- Neferset Looter
+							},
+						}),
 						i(65818),	-- Leggings of the Unforgiving Tomb
 						i(65817),	-- Grave Protector Shoulderplates
 						i(65816),	-- Ramkahen Ceremonial Hammer
@@ -682,11 +887,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28353,	-- Jonesy Sent For You
 						28350,	-- Master Trapper
 					},
+					["groups"] = {
+						objective(1, {	-- 0/15 Schnottz Employees Killed at Obelisk of the Moon
+							["providers"] = {
+								{ "n", 48204},	-- Schnottz Excavator
+								{ "n", 48205},	-- Schnottz Overseer
+								{ "n", 48443},	-- Schnottz Elite Trooper
+								{ "n", 48488},	-- Schnottz Elite Trooper Corpse
+								{ "n", 48534},	-- Schnottz Elite Trooper Corpse
+								{ "n", 48631},	-- Schnottz Elite Infantryman
+								{ "n", 48668},	-- Schnottz Elite Trooper
+								{ "n", 48720},	-- Schnottz Elite Infantryman
+								{ "n", 49114},	-- Schnottz Elite Infantryman Corpse
+								{ "n", 49115},	-- Schnottz Infantryman Corpse
+								{ "n", 49173},	-- Schnottz Elite Infantryman Corpse
+								{ "n", 50659},	-- Schnottz Overseer
+								{ "n", 50660},	-- Schnottz Overseer
+								{ "n", 50661},	-- Schnottz Overseer
+								{ "n", 50671},	-- Schnottz Elite Trooper
+								{ "n", 50672},	-- Schnottz Elite Trooper
+								{ "n", 50673},	-- Schnottz Elite Trooper
+								{ "n", 51753},	-- Schnottz Overseer
+							},
+						}),
+					},
 				}),
 				q(28141, {	-- Relics of the Sun King
 					["qg"] = 47715,	-- Sun Priest Asaris
 					["coord"] = { 52.9, 27.7, ULDUM },
 					["sourceQuest"] = 28112,	-- Escape From the Lost City
+					["groups"] = {
+						objective(1, {	-- 0/4 Relic of the Sun King
+							["provider"] = { "i", 63081 },	-- Relic of the Sun King
+							["cr"] = 45905,	-- Wastewander Outrider
+						}),
+					},
 				}),
 				q(28291, {	-- Return to Camp
 					["qg"] = 48237,	-- Salhet
@@ -717,6 +952,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48186,	-- Harrison Jones
 					["coord"] = { 27.0, 7.5, ULDUM },
 					["sourceQuest"] = 28367,	-- Shroud of the Makers
+					["groups"] = {
+						objective(1, {	-- 0/10 Schnottz Elite Troopers Slain
+							["provider"] = { "n", 48668 },	-- Schnottz Elite Trooper
+						}),
+					},
 				}),
 				q(28613, {	-- See You on the Other Side!
 					["qg"] = 48698,	-- Harrison Jones
@@ -732,11 +972,27 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47972,	-- Commander Schnottz
 					["coord"] = { 22.5, 63.1, ULDUM },
 					["sourceQuest"] = 28193,	-- Lockdown!
+					["groups"] = {
+						objective(1, {	-- 0/1 Captain Margun Killed
+							["provider"] = { "n", 47981 },	-- Captain Margun
+						}),
+						objective(2, {	-- 0/1 Captain Cork Killed
+							["provider"] = { "n", 47980 },	-- Captain Cork
+						}),
+						objective(3, {	-- 0/1 Captain Kronkh Killed
+							["provider"] = { "n", 47978 },	-- Captain Kronkh
+						}),
+					},
 				}),
 				q(28210, {	-- Shaping Up
 					["qg"] = 46883,	-- Salhet
 					["coord"] = { 59.5, 47.3, ULDUM },
 					["sourceQuest"] = 28198,	-- The Weakest Link
+					["groups"] = {
+						objective(1, {	-- 0/8 Help Salhet defeat Bloodsnarl Hyenas
+							["provider"] = { "n", 45353 },	-- Bloodsnarl Hyena
+						}),
+					},
 				}),
 				q(28367, {	-- Shroud of the Makers
 					["qg"] = 48431,	-- Sullah
@@ -795,6 +1051,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.6, 53.5, ULDUM },
 					["sourceQuest"] = 27629,	-- The Vizier's Vote
 					["groups"] = {
+						objective(1, {	-- 0/1 Vir'Naal Delta Map
+							["provider"] = { "i", 62280 },	-- Vir'Naal Delta Map
+							["cr"] = 46340,	-- Neferset Guard
+						}),
 						i(65794),	-- Marshseeker Gloves
 						i(65793),	-- Hamatep Legguards
 						i(65795),	-- Vir'naal Guardsman's Axe
@@ -812,6 +1072,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 53.0, 27.7, ULDUM },
 					["sourceQuest"] = 28141,	-- Relics of the Sun King
 					["groups"] = {
+						objective(1, {	-- 0/1 Warlord Ihsenn slain
+							["provider"] = { "n", 47755 },	-- Warlord Ihsenn
+						}),
 						i(65798),	-- Bandit Scourge Bracers
 						i(65797),	-- Heptu Headguard
 						i(65796),	-- Qebnet Greaves
@@ -828,6 +1091,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.3, 42.7, ULDUM },
 					["sourceQuest"] = 28501,	-- The Defense of Nahom
 					["groups"] = {
+						objective(1, {	-- 0/6 Crazed Digger slain
+							["provider"] = { "n", 46590 },	-- Crazed Digger
+						}),
+						objective(2, {	-- 0/1 Mekgineer Mixeltweed slain
+							["provider"] = { "n", 46592 },	-- Mekgineer Mixeltweed
+						}),
 						i(65847),	-- Robes of Khintaset
 						i(65846),	-- Bracers of the Verdant Cradle
 						i(65845),	-- Misappropriated Girdle of Khartut
@@ -842,6 +1111,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28499,	-- Punish the Trespassers
 						28498,	-- The Secret of Nahom
 					},
+					["groups"] = {
+						objective(1, {	-- 0/1 The Cypher of Keset
+							["provider"] = { "i", 64649 },	-- The Cypher of Keset
+							["cr"] = 49214,	-- Raider Lord Havat
+						}),
+					},
 				}),
 				q(28501, {	-- The Defense of Nahom
 					["qg"] = 48761,	-- Salhet
@@ -855,6 +1130,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27836,	-- Stopping the Spread
 						27837,	-- Trespassers in the Water
 					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Neferset Ritual stopped
+							["provider"] = { "n", 49148 },	-- Dark Ritualist Zakahn
+						}),
+					},
 				}),
 				q(27939, {	-- The Desert Fox
 					["qg"] = 47159,	-- Commander Schnottz
@@ -866,6 +1146,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.9, 46.1, ULDUM },
 					["sourceQuest"] = 27631,	-- The High Commander's Vote
 					["groups"] = {
+						objective(1, {	-- 0/20 Hardened Crocolisk Hide
+							["provider"] = { "i", 63256 },	-- Hardened Crocolisk Hide
+							["crs"] = {
+								45321,	-- Riverbed Crocolisk
+								46317,	-- Neferset Crocolisk
+								51675,	-- Oasis Crocolisk
+							},
+						}),
 						i(65839),	-- Sarcophagus Bracers
 						i(65838),	-- Cartouche-Inscribed Spaulders
 						i(65837),	-- Legplates of Heilopolis
@@ -881,6 +1169,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						28486,	-- Salhet's Gambit
 					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Dark Pharaoh Tekahn slain
+							["provider"] = { "n", 47753 },	-- Dark Pharaoh Tekahn
+						}),
 						i(65741),	-- Wrap of the Fallen City
 						i(65740),	-- Fallen Brotherhood Gauntlets
 						i(65742),	-- Drape of Neferset Destruction
@@ -892,6 +1183,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 21.8, 64.0, ULDUM },
 					["sourceQuest"] = 28187,	-- Missed Me By Zhat Much!
 					["groups"] = {
+						objective(1, {	-- 0/6 Fresh Sailor Uniform
+							["provider"] = { "i", 63248 },	-- Fresh Sailor Uniform
+							["cr"] = 47982,	-- Schnottz Sea Trooper
+						}),
 						i(65850),	-- Mirror-Polished Boots
 						i(65849),	-- Gauntlets of the Obelisk
 						i(65848),	-- False-Face Mask
@@ -961,6 +1256,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.1, 41.8, ULDUM },
 					["sourceQuest"] = 28611,	-- The Defiler's Ritual
 					["groups"] = {
+						objective(1, {	-- 0/1 Scalemother Hevna slain
+							["provider"] = { "n", 46871 },	-- Scalemother Hevna
+						}),
 						i(65823),	-- Scales of the Scalemother
 						i(65822),	-- Hevna's Eye Socket
 						i(65824),	-- Corrupted Eggshell Drape
@@ -1026,6 +1324,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.1, 41.8, ULDUM },
 					["sourceQuest"] = 27630,	-- The High Priest's Vote
 					["groups"] = {
+						objective(1, {	-- 0/8 Stillwater Slitherer slain
+							["provider"] = { "n", 46868 },	-- Stillwater Slitherer
+						}),
 						i(65827),	-- Vir'naal Spaulders
 						i(65826),	-- Sandals of Corrupted Water
 						i(65825),	-- Helm of the Siltwater Slayer
