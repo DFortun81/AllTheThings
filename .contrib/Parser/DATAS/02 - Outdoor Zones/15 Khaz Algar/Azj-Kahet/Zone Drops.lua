@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 	m(AZJ_KAHET, {
 		n(ZONE_DROPS, {
 			n(223116, {	-- Discordant Skittering
-				--["coord"] = { 62.5, 80.7, 2256 },	-- in this area
+				--["coord"] = { 62.5, 80.7, AZJ_KAHET_LOWER },	-- in this area
 				["g"] = {
 					i(217390),	-- Coagulated Black Blood Clot (QS!)/(QI!)
 				},

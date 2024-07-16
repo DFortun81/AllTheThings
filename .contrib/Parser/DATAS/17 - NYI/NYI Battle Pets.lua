@@ -1442,5 +1442,26 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 				["displayID"] = 119700,
 			}),
 		})),
+
+		-- 11.0.2
+		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_1_LAUNCH } }, {
+			-- Trainer Pets --
+			pet(4561),	-- Awakened Custodian (PET!)
+			pet(4554),	-- Bubs (PET!)
+			pet(4559),	-- Flicker (PET!)
+			pet(4558),	-- Four-Legs (PET!)
+			pet(4562),	-- Guttergunk (PET!)
+			pet(4488),	-- Haywire Servobot (PET!)
+			pet(4552),	-- Mini Airship (PET!)
+			pet(4551),	-- Ridge (PET!)
+			pet(4564),	-- Rufus (PET!)
+			pet(4555),	-- Sir Pounce (PET!)
+			pet(4550),	-- Stratus (PET!)
+			pet(4557),	-- Swoopgrasp (PET!)
+			pet(4553),	-- Takey-Take (PET!)
+			pet(4556),	-- Tickler (PET!)
+			pet(4549),	-- Tiny Cragling (PET!)
+			pet(4560),	-- Zaedu (PET!)
+		})),
 	}),
 }));

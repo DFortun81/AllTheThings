@@ -1487,7 +1487,7 @@ i(187682, 359407);	-- Wastewarped Deathwalker
 i(190768, 368158);	-- Zereth Overseer
 --- NYI ---
 i(0, 356802);		-- Holy Lightstrider
-i(187674, 0);		-- [PH] Progenitor Jellyfish (Dark)
+i(187674, 359380);	-- Depthstalker
 
 -----------------
 -- PATCH 9.2.5 --
@@ -1762,6 +1762,7 @@ i(220768, 446022);	-- Astral Emperor's Serpent
 i(220766, 446017);	-- August Phoenix
 i(87786, 127209);	-- Black Riding Yak
 i(213623, 435145);	-- Bloody Skyscreamer
+i(219450, 443660);	-- Charming Courier
 i(213624, 435149);	-- Cobalt Juggernaut
 i(213598, 435103);	-- Dashing Windsteed
 i(213596, 435108);	-- Daystorm Windsteed
@@ -1808,42 +1809,46 @@ i(223284, 448849);	-- Underlight Shorestalker
 -- PATCH 11.0.0 --
 ------------------
 i(223270, 447213);	-- Alunira
+i(223264, 447185);	-- Aquamarine Swarmite
 i(224151, 451491);	-- Ascendant Skyrazor
 i(223315, 448941);	-- Beledar's Spawn
 i(223505, 449269);	-- Crimson Mudnose
+i(221967, 448186);	-- Crowd Pummeler 2-30
 i(222989, 447176);	-- Cyan Glowmite
+i(223318, 448979);	-- Dauntless Imperial Lynx
 i(226357, 458335);	-- Diamond Mechsuit
 i(219391, 446052);	-- Delver's Dirigible
-i(0, 453785);		-- Earthen Judicator's Ramolith
+i(0, 453785);		-- Earthen Ordinant's Ramolith
 i(223274, 447957);	-- Ferocious Jawcrawler
 i(223586, 449466);	-- Forged Gladiator's Fel Bat
+i(224415, 452779);	-- Ivory Goliathus
 i(223286, 448850);	-- Kah, Legend of the Deep
 i(223269, 448188);	-- Machine Defense Unit 1-11
+i(223501, 449258);	-- Ol' Mole Rufus
 i(217985, 441324);	-- Remembered Golden Gryphon
 i(217987, 441325);	-- Remembered Wind Rider
+i(223158, 447160);	-- Raging Cinderbee
 i(223314, 448939);	-- Shackled Shadow
 i(223266, 447190);	-- Shadowed Swarmite
 i(223571, 449418);	-- Shale Ramolith
+i(224150, 451489);	-- Siesbarg
 i(221753, 447057);	-- Smoldering Cinderbee
-i(223267, 447195);	-- Swarmite Skyhunter
+i(223153, 447151);	-- Soaring Meaderbee
+i(221765, 442358);	-- Stonevault Mechsuit
 i(224147, 451486);	-- Sureki Skyrazor
+i(223267, 447195);	-- Swarmite Skyhunter
 i(223317, 448978);	-- Vermillion Imperial Lynx
 i(223511, 449325);	-- Vicious Skyflayer [A]
 i(221813, 447405);	-- Vicious Skyflayer [H]
+i(225548, 449264);	-- Wick's Lead
 --- UNSORTED ---
-i(223264, 447185);	-- Aquamarine Swarmite
-i(221967, 448186);	-- Crowd Pummeler 2-30
 i(223570, 449416);	-- Ebonhide Ramolith
 i(226506, 459193);	-- Hand of Reshkigaal
-i(224415, 452779);	-- Ivory Goliathus
+i(223278, 448685);	-- Heritage Undercrawler
 i(226041, 457654);	-- Keg Leg's Radiant Crocolisk
-i(223501, 449258);	-- Ol' Mole Rufus
 i(226040, 457650);	-- Plunderlord's Golden Crocolisk
 i(226042, 457656);	-- Plunderlord's Midnight Crocolisk
 i(226044, 457659);	-- Plunderlord's Weathered Crocolisk
-i(223158, 447160);	-- Raging Cinderbee
-i(224150, 451489);	-- Siesbarg
+i(223279, 448689);	-- Royal Court Undercrawler
 i(223572, 449415);	-- Slatestone Ramolith
-i(223153, 447151);	-- Soaring Meaderbee
-i(221765, 442358);	-- Stonevault Mechsuit
-i(225548, 449264);	-- Wick's Lead
+i(223276, 448680);	-- Widow's Undercrawler

@@ -647,6 +647,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(225900),	-- Light-Touched Idol
 		i(218129),	-- Porcelain Arrowhead Idol
 		i(225899),	-- Unbreakable Iron Idol
+		filter(BATTLE_PETS, {
+			i(222971),	-- Bouncer (PET!) [Nerubian?]
+			i(223624),	-- Sneef (PET!) [Kobold?]
+			i(225337),	-- Violet Sporbit (PET!) [Fungarian]
+			i(221496),	-- Wriggle (PET!) [Kobyss]
+		}),
 		filter(RECIPES, {
 			i(223139),	-- Formula: Enchant Cloak - Chant of Leeching Fangs (RECIPE!)
 			i(224434),	-- Pattern: Dawnthread Lining (RECIPE!)
@@ -762,6 +768,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["cost"] = {{"c", RESTORED_COFFER_KEY, 1}},
 		},FILTERFUNC_itemID,{
 			i(220520),	-- Radiant Echo
+			filter(BATTLE_PETS, {
+				i(221820),	-- Chester (PET!)
+			}),
 			filter(BACK_F, {
 				i(219183),	-- Amice of Hidden Stars
 				i(219185),	-- Serape of the Stygian Sea

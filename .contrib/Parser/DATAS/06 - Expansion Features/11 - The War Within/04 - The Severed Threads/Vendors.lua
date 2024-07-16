@@ -81,9 +81,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}, {	-- RENOWN 20 --
 					}, {	-- RENOWN 21 --
 					}, {	-- RENOWN 22 --
-					}, {	-- RENOWN 23 --
 						i(223274, {	-- Ferocious Jawcrawler (MOUNT!)
 							["cost"] = {{"c", KEJ, 2815}},
+						}),
+					}, {	-- RENOWN 23 --
+						i(223264, {	-- Aquamarine Swarmite (MOUNT!)
+							["cost"] = {{"c", KEJ, 3940}},
 						}),
 					}, {	-- RENOWN 24 --
 					}, {	-- RENOWN 25 --

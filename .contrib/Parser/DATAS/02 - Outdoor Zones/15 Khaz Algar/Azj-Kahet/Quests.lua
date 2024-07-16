@@ -794,7 +794,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(80571, {	-- Decipher the Cacophony
 				["sourceQuests"] = { 80568 },	-- Leave No Trace
 				["provider"] = { "n", 220610 },	-- Orweyna
-				["coord"] = { 62.5, 80.6, 2256 },
+				["coord"] = { 62.5, 80.6, AZJ_KAHET_LOWER },
 				["g"] = {
 					i(221776),	-- Discordant Essence (QI!)
 				},
@@ -802,7 +802,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			q(80570, {	-- Staunch the Flow
 				["sourceQuests"] = { 80568 },	-- Leave No Trace
 				["provider"] = { "n", 220610 },	-- Orweyna
-				["coord"] = { 62.5, 80.6, 2256 },
+				["coord"] = { 62.5, 80.6, AZJ_KAHET_LOWER },
 			}),
 			q(80572, {	-- Discordant Measure
 				["sourceQuests"] = {
@@ -810,7 +810,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					80570,	-- Decipher the Cacophony
 				},
 				["provider"] = { "n", 220610 },	-- Orweyna
-				["coord"] = { 62.5, 80.6, 2256 },
+				["coord"] = { 62.5, 80.6, AZJ_KAHET_LOWER },
 				["g"] = {
 					i(225696),	-- Corrupted Heart (QI!)
 					i(225698),	-- Root Sliver (QI!)
@@ -824,7 +824,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					80570,	-- Decipher the Cacophony
 				},
 				["provider"] = { "n", 227158 },	-- Hannan
-				["coord"] = { 62.5, 80.5, 2256 },
+				["coord"] = { 62.5, 80.5, AZJ_KAHET_LOWER },
 			}),
 			--Zone Drop quest?
 			q(80378, {	-- A Light of the Dark
@@ -972,7 +972,36 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(219228),	-- Fetid Slime Sac (QI!)
 				},
 			}),
-			--
+			header(HEADERS.Item, 224150, {	-- Siegbarg
+				q(83627, {	-- The Beginning of Something Beautiful
+					["provider"] = { "i", 225952 },	-- 1x Vial of Tka'ktath's Blood
+				}),
+				q(83719, {	-- Those Are Chitin Words
+					["sourceQuests"] = { 83627 },	-- The Beginning of Something Beautiful
+					--["provider"] = { "n", XXXXX },	-- XXXXX
+					--["coord"] = { X, Y, MAP },
+					["g"] = {
+						i(225950),	-- Nerubian Chitin
+					},
+				}),
+				q(83720, {	-- Venom? More Like Get 'Em
+					["sourceQuests"] = { 83719 },	-- Those Are Chitin Words
+					--["provider"] = { "n", XXXXX },	-- XXXXX
+					--["coord"] = { X, Y, MAP },
+					["g"] = {
+						i(226135),	-- Nerubian Venom
+					},
+				}),
+				q(83721, {	-- A Small Ocean's Worth of Blood
+					["sourceQuests"] = { 83720 },	-- Venom? More Like Get 'Em
+					--["provider"] = { "n", XXXXX },	-- XXXXX
+					--["coord"] = { X, Y, MAP },
+					["g"] = {
+						i(226136),	-- Nerubian Blood
+					},
+				}),
+				i(224150),	-- Siesbarg (MOUNT!)
+			}),
 		}),
 	}),
 })));

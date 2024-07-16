@@ -4,53 +4,40 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(AZJ_KAHET, {
 		petbattle(filter(BATTLE_PETS, {
-			--["sym"] = {{"select","speciesID",
-
-			--}},
-			--[[
+			["sym"] = {{"select","speciesID",
+				4456,	-- Arachnoid Hatchling (PET!)
+				4515,	-- Azure Flickerfly (PET!)
+				4499,	-- Common Ploughworm (PET!)
+				4498,	-- Ebon Ploughworm (PET!)
+				4510,	-- Winged Arachnoid (PET!)
+			}},
 			["g"] = {
-				pet(xx, {	-- Arachnoid Hatchling (PET!)
-					["coords"] = {
-						{ x, y, HALLOWFALL },	-- copy-paste, saw in previous build in Hallowfall too
-						{ 42.7, 50.7, AZJ_KAHET },
-
-					},
-				}),
-				pet(xx, {	-- Aubergine Scootlefish (PET!)
+				pet(4471, {	-- Aubergine Scootlefish (PET!)
 					["coords"] = {
 						{ 59.7, 70.2, AZJ_KAHET },
 						{ 37.4, 54.2, AZJ_KAHET },
 						{ 43.5, 64.2, AZJ_KAHET },
 					},
 				}),
-				pet(xx, {	-- Azure Flickerfly (PET!)
-					["coords"] = {
-						{ x, y, HALLOWFALL },	-- copy-paste, saw in previous build in Hallowfall too
-						{ 22.2, 24.2, NERUBAR },
-					},
-				}),
-				pet(xx, {	-- Ebon Ploughworm (PET!)
-					["coords"] = {
-						{ 44.2, 64.8, NERUBAR_LOWER },
-					},
-				}),
-				pet(xx, {	-- Shadowy Oozeling (PET!)
+				pet(4480, {	-- Shadowy Oozeling (PET!)
 					["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see this pet",
-					["coord"] = { 63.6, 88.1, 2256 },
+					["coord"] = { 63.6, 88.1, AZJ_KAHET_LOWER },
 				}),
-				pet(xx, {	-- Verdant Scootlefish (PET!)
+				pet(4477, {	-- Verdant Scootlefish (PET!)
 					["coords"] = {
 						{ 56.4, 48.3, AZJ_KAHET },
 						{ 38.5, 56.1, AZJ_KAHET },
 						{ 44.3, 65.0, AZJ_KAHET },
 					},
 				}),
-				pet(xx, {	-- Voidling Ooze (PET!)
+				pet(4483, {	-- Vile Bloodtick (PET!)
+					-- ["coord"] = { X, Y, AZJ_KAHET },
+				}),
+				pet(4481, {	-- Voidling Ooze (PET!)
 					["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see this pet",
-					["coord"] = { 56.4, 48.3, 2256 },
+					["coord"] = { 56.4, 48.3, AZJ_KAHET_LOWER },
 				}),
 			},
-			--]]
 		})),
 	}),
 })));

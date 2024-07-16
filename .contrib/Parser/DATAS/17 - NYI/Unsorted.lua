@@ -45,39 +45,25 @@ root(ROOTS.Unsorted, {
 			i(228720),	-- Nascent Gemstone
 			i(228721),	-- Hearty Feast
 			-----------
-			i(212775),	-- zzOldFleeting Flask of Tempered Aggression
-			i(212776),	-- zzOldFleeting Flask of Tempered Aggression
-			i(212777),	-- zzOldFleeting Flask of Tempered Aggression
-			i(219450),	-- Charming Courier
-			i(220153),	-- Awoken Coelacanth
-			i(222808),	-- Treads of the Woven Dawn
-			i(222809),	-- Gloves of the Woven Dusk
-			i(223276),	-- Widow's Undercrawler
-			i(223278),	-- Heritage Undercrawler
-			i(223279),	-- Royal Court Undercrawler
-			i(223318),	-- Dauntless Imperial Lynx
-			i(223424),	-- Algari-weave Cord
-			i(223441),	-- Algari Scouting Boots
-			i(223456),	-- Algari Cinch
-			i(223464),	-- Algari Heavy Gauntlets
-			i(223498),	-- Charismatic Courier
-			i(223585),	-- Algari Bladefist
-			i(224556),	-- Glorious Contender's Strongbox
-			i(224807),	-- Algari Skinner's Notes
+
+
+
+
+
+
+			filter(BATTLE_PETS, {
+				i(223498),	-- Charismatic Courier (PET!) [In-Game Shop?]
+				i(228765),	-- Gummi (PET!) [Promotion?]
+				i(228758),	-- Parrlok (PET!) [Trading Post?]
+			}),
+
+			-- Profession Knowledge Notes
 			i(224817),	-- Algari Herbalist's Notes
 			i(224818),	-- Algari Miner's Notes
-			i(225227),	-- Wax-Sealed Records
-			i(225720),	-- Web Acolyte's Hood
-			i(225721),	-- Prime Slime Slippers
-			i(225722),	-- Adorned Lynxborne Pauldrons
-			i(225723),	-- Venom Stalker's Strap
-			i(225724),	-- Shrillwing Hunter's Prey
-			i(225725),	-- Lurking Marauder's Binding
-			i(225727),	-- Captured Earthen's Ironhorns
-			i(225728),	-- Acidic Attendant's Loop
-			i(225744),	-- Heritage Militia's Stompers
-			i(227667),	-- Algari Enchanter's Folio
-			i(227770),	-- Assorted Whirligigs
+			--
+
+
+
 			i(228723),	-- Earthen Pet Rock
 			i(228724),	-- Flicker of Alchemy Knowledge
 			i(228725),	-- Glimmer of Alchemy Knowledge
@@ -101,12 +87,12 @@ root(ROOTS.Unsorted, {
 			i(228744),	-- Golbin Twist-Rag
 			i(228745),	-- Aurora Strand
 			i(228756),	-- Bonus Snuffling Experience
-			i(228758),	-- Parrlok
+
 			i(228761),	-- Classic Brick Tabard
 			i(228762),	-- Classic Lively Tabard
 			i(228763),	-- Classic Crimson Tabard
 			i(228764),	-- Classic Sunny Tabard
-			i(228765),	-- Gummi
+
 			i(228773),	-- Algari Alchemist's Notebook
 			i(228774),	-- Algari Blacksmith's Journal
 			i(228775),	-- Algari Engineer's Notepad
@@ -142,68 +128,44 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(222969),	-- Anub'Rekyute (PET!)
 				i(221851),	-- Argos (PET!)
-				i(223155),	-- Bop (PET!)
-				i(222971),	-- Bouncer (PET!)
 				i(221764),	-- Burntram (PET!)
-				i(221820),	-- Chester (PET!)
-				i(226104),	-- Claudius (PET!)
+				i(226104),	-- Claudius (PET!) [Trading Post?]
 				i(222979),	-- Clay Stonecharger (PET!)
-				i(224766),	-- Faithful Dog (PET!) [These is wowhead guide!]
-				i(222964),	-- Fathom Incher (PET!)
+				i(221762),	-- Frenzied Bloodtick (PET!)
 				i(222970),	-- Fuzzy (PET!)
-				i(220771),	-- Hallowed Glowfly (PET!)
 				i(221195),	-- Illskitter (PET!)
 				i(225934),	-- Lil' Bonechewer (PET!)
-				i(221546),	-- Nightfarm Growthling (PET!)
-				i(223802),	-- Purple Stagshell (PET!)
+				i(221492),	-- Moss Skipper (PET!)
 				i(225935),	-- Rak-Ush Battleshell (PET!)
 				i(221759),	-- Sceaduthax (PET!)
 				i(221819),	-- Shadowbog Hopper (PET!)
-				i(222980),	-- Slim (PET!)
-				i(223624),	-- Sneef (PET!)
-				i(222966),	-- Spinner (PET!)
-				i(220782),	-- Thunder (PET!)
-				i(225337),	-- Violet Sporbit (PET!)
 				i(221495),	-- Waddles (PET!)
-				i(221821),	-- Waxwick (PET!)
 				i(222967),	-- Webbers (PET!)
-				i(221496),	-- Wriggle (PET!)
-				i(223487),	-- Writhing Transmutagen (PET!)
-				------
+				------------
+				i(221760),	-- Bonedrinker (PET!) (Pillarnest Bonedrinker) [The Item is sourced but keeping here since the item and pet name dont match...]
+				------ Have no source and Naming Weird.. ------
 				i(221493),	-- Admiral (PET!) (Redthroat Skipling)
 				i(221486),	-- Baleclaw (PET!) (Rak-Ush Threadling)
 				i(223803),	-- Blue Stagshell (PET!) (Rak-Ush Battleshell)
-				i(221760),	-- Bonedrinker (PET!) (Pillarnest Bonedrinker)
-				i(221492),	-- Bup (PET!) (Moss Skipper)
-				i(221762),	-- Clot (PET!) (Frenzied Bloodtick)
 				i(221022),	-- Cowboy Bee[DNT] (PET!) (Bop???)
-				i(223626),	-- Embersting (PET!) (Couldnt find)
+				i(223626),	-- Embersting (PET!) (Cinderhoney Emberstinger)
 				i(222975),	-- Umbral Amalgam [DNT] (PET!) (Couldnt find)
-				-- Check These duplicates (same ID)
-				i(221492),	-- Moss Skipper
-				i(221762),	-- Frenzied Bloodtick
-				------
+				-- Did blizz add new Outdoor Pets but also created items for them??!
 				i(228096),	-- Vibrant Firefly
 				i(228097),	-- Pinkskin Burrower
 				i(228098),	-- Troglofrog
 			}),
 			filter(MOUNTS, {
-				i(223264),	-- Aquamarine Swarmite (MOUNT!)
-
-
 				i(223570),	-- Ebonhide Ramolith (MOUNT!)
-				i(226506),	-- Hand of Reshkigaal (MOUNT!)
-				i(226041),	-- Keg Leg's Radiant Crocolisk (MOUNT!)
-				i(223501),	-- Ol' Mole Rufus (MOUNT!)
-				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!)
-				i(226042),	-- Plunderlord's Midnight Crocolisk (MOUNT!)
-				i(226044),	-- Plunderlord's Weathered Crocolisk (MOUNT!)
-				i(223158),	-- Raging Cinderbee (MOUNT!)
-				i(224150),	-- Siesbarg (MOUNT!)
+				i(226506),	-- Hand of Reshkigaal (MOUNT!) [Trading Post?]
+				i(223278),	-- Heritage Undercrawler (MOUNT!)
+				i(226041),	-- Keg Leg's Radiant Crocolisk (MOUNT!) [Trading Post?]
+				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!) [Trading Post?]
+				i(226042),	-- Plunderlord's Midnight Crocolisk (MOUNT!) [Trading Post?]
+				i(226044),	-- Plunderlord's Weathered Crocolisk (MOUNT!) [Trading Post?]
+				i(223279),	-- Royal Court Undercrawler (MOUNT!)
 				i(223572),	-- Slatestone Ramolith (MOUNT!)
-				i(223153),	-- Soaring Meaderbee (MOUNT!)
-				i(221765),	-- Stonevault Mechsuit (MOUNT!)
-				i(225548),	-- Wick's Lead (MOUNT!)
+				i(223276),	-- Widow's Undercrawler (MOUNT!)
 				---
 				i(220786),	-- Delver's Dirigible (MOUNT!) (Double Up!?)
 				i(207104),	-- Morsel Sniffer Reins (MOUNT!) (couldnt find)
@@ -212,7 +174,6 @@ root(ROOTS.Unsorted, {
 				i(221778),	-- [PH] Firefly2Mount (Yellow)
 				i(221852),	-- [PH] MoleMount (Pink Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
 				i(222898),	-- [PH] Mount - Unicorn Moose (Blue) (Gold Saddle) (Player Mount)
-
 				i(222901),	-- [PH] Mount - Unicorn Moose (Brown) (Copper Saddle) (Player Mount)
 				i(222902),	-- [PH] Mount - Unicorn Moose (Crimson) (Dark Saddle) (Player Mount)
 				i(222903),	-- [PH] Mount - Unicorn Moose (Ivory) (Silver Saddle) (Player Mount)
@@ -228,12 +189,8 @@ root(ROOTS.Unsorted, {
 				i(223272),	-- [PH] CaveBorerWormMount (Blue Skin, Purple Saddle)
 				i(223273),	-- [PH] CaveBorerWormMount (Forest Skin, Blue Saddle)
 				i(223275),	-- [PH] CaveBorerWormMount (Nocturne Skin, Red Saddle)
-				i(223276),	-- [PH] SpiderUndergroundMount (Red)
 				i(223277),	-- [PH] SpiderUndergroundMount (Green)
-				i(223278),	-- [PH] SpiderUndergroundMount (Blue)
-				i(223279),	-- [PH] SpiderUndergroundMount (Yellow)
 				i(223313),	-- [PH] Shadow Elemental (Black)
-				i(223318),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
 				i(223319),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
 				i(223320),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
 				i(223321),	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
@@ -349,7 +306,7 @@ root(ROOTS.Unsorted, {
 				i(220150),	-- Spiked Sea Raven
 				i(220151),	-- Queen's Lurefish
 				i(220152),	-- Cursed Ghoulfish
-				i(220153),	-- Awoken Coelecanth \\ Kah, King of the Deep
+				i(220153),	-- Awoken Coelacanth
 				i(220382),	-- Chopped Mycobloom
 				i(220383),	-- Portioned Steak
 				i(220384),	-- Spiced Meat Stock
@@ -1129,9 +1086,10 @@ root(ROOTS.Unsorted, {
 					r(447001),	-- Daybreak Spellthread
 					r(447000),	-- Sunset Spellthread
 				}),
+				--- Notes
+				i(224807),	-- Algari Skinner's Notes
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
-				i(224807),	-- Algari Skinning Notes
 				i(224835),	-- Deepgrove Roots
 				i(225220),	-- Chitin Needle
 				i(225221),	-- Spool of Webweave
@@ -1139,7 +1097,7 @@ root(ROOTS.Unsorted, {
 				i(225224),	-- Diaphanous Gem Shards
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
-				i(225227),	-- Wax-sealed Records
+				i(225227),	-- Wax-Sealed Records
 				i(225228),	-- Rust-Locked Mechanism
 				i(225229),	-- Earthen Induction Coil
 				i(225230),	-- Crystalline Repository
@@ -1204,9 +1162,13 @@ root(ROOTS.Unsorted, {
 				i(227659),	-- Fleeting Arcane Manifestation
 				i(227661),	-- Gleaming Telluric Crystal
 				i(227662),	-- Shimmering Dust
-				i(227667),	-- Algari Enchanting Folio
+				i(227667),	-- Algari Enchanter's Folio
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
+
+
+
+				--
 				i(212390),	-- 11.0 Raid Template - Guns - RangedRight
 				i(212393),	-- 11.0 Raid Template - Polearms - Int - 2 Hand
 				i(212396),	-- Monster Weapon - 1H Sword \\ 11.0 Raid Template - Sword1H - Agi - Weapon
@@ -1219,18 +1181,15 @@ root(ROOTS.Unsorted, {
 				i(212412),	-- 11.0 Raid Template - Wand - RangedRight
 				i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
 				i(212457),	-- 11.0 Raid Template - INT - Trinket
-				i(225720),	-- 11.0 Raid Template - Cloth - Head
-				i(225721),	-- 11.0 Raid Template - Cloth - Feet
-				i(225722),	-- 11.0 Raid Template - Leather - Shoulder
-				i(225723),	-- 11.0 Raid Template - Leather - Waist
-				i(225724),	-- 11.0 Raid Template - Mail - Shoulder
-				i(225725),	-- 11.0 Raid Template - Mail - Waist
+
+
+
+
 				i(225726),	-- 11.0 Raid Template - Plate - Waist
-				i(225727),	-- 11.0 Raid Template - Plate - Head
-				i(225728),	-- 11.0 Raid Template - Generic - Finger
+
 				i(225736),	-- 11.0 Raid Template - Plate - Head
 				i(225737),	-- 11.0 Raid Template - Plate - Feet
-				i(225744),	-- 11.0 Raid Template - Plate - Feet
+
 				-- Extra Head Tierpieces!?!
 				i(228148),	-- Warsculptor's Barbute
 				i(228149),	-- Entombed Seraph's Casque
@@ -1928,7 +1887,7 @@ root(ROOTS.Unsorted, {
 				i(226696),	-- Mighty Advisor's Favor
 			}),
 			n(PVP, {
-				i(224556),	-- Victorious Contender's Strongbox
+				i(224556),	-- Glorious Contender's Strongbox
 				i(224557),	-- Field Medic's Hazard Payout
 				i(225493),	-- Medal of Conquest
 				i(210221),	-- Forged Combatant's Heraldry
@@ -2635,7 +2594,7 @@ root(ROOTS.Unsorted, {
 				i(225541),	-- PH_4
 				i(225553),	-- PH_5
 				i(225554),	-- Sunless Lure \\ Sunless Orb
-				i(225557),	-- Sizzling Cinderpollen
+
 				i(225558),	-- Murkfin Lure \\ Murkfin Scales
 				i(225559),	-- Hungering Shimmerfin \\ Hungering Orb
 				i(225560),	-- Ragefin Necrostaff \\ Darkwater Crook
@@ -2787,7 +2746,7 @@ root(ROOTS.Unsorted, {
 				i(227680),	-- Satchel of Jewelcrafting Surplus
 				i(227713),	-- Artisan's Consortium Payout
 				i(227769),	-- Bountiful Bolts
-				i(227770),	-- Assorted Whirlygigs
+				i(227770),	-- Assorted Whirligigs
 				i(227771),	-- Blinker Fluid
 				i(227772),	-- Cataclysmic Converter
 				i(227773),	-- Pummel-Proof Plating
@@ -3019,12 +2978,12 @@ root(ROOTS.Unsorted, {
 				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
 				i(225738),	-- Kaheti Warblade
 				i(225927),	-- Emerald Necklace
-				i(225950),	-- Nerubian Chitin \\ [PH] Nerubian Growth Serum
-				i(225952),	-- Vial of Tka'ktath's Blood \\ Nerubian Skyrazor Egg
+
+
 				i(226020),	-- Ancient Titan Salvage
-				i(226135),	-- Nerubian Venom
-				i(226136),	-- Nerubian Blood
-				i(226683),	-- Malfunctioning Mechsuit
+
+
+
 				i(228378),	-- Pristine Council's Seal
 				i(228409),	-- Valrin's Sweetrolls
 			}),
@@ -3326,7 +3285,7 @@ root(ROOTS.Unsorted, {
 				i(224467),	-- Forgotten Axe
 			}),
 			n(REWARDS, {
-				i(223424),	-- [PH] 11.0 - Cord
+				i(223424),	-- Algari-Weave Cord
 
 
 				i(223432),	-- Commemorative Light's Gambit Championship Signet \\ [PH] 11.0 - Signet
@@ -3338,7 +3297,7 @@ root(ROOTS.Unsorted, {
 				i(223450),	-- Honored Soldier's Chainmail
 				i(223462),	-- Honorable Arathi Breastplate
 				i(223440),	-- Saboteur's Shoulderpads
-				i(223441),	-- [PH] 11.0 - Waders
+				i(223441),	-- Algari Scouting Boots
 				i(223443),	-- Algari Warden's Hood
 
 				i(223451),	-- Saboteur's Striders
@@ -3351,7 +3310,7 @@ root(ROOTS.Unsorted, {
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223461),	-- Algari Warden's Helm
 
-				i(223464),	-- [PH] 11.0 - Gauntlets
+				i(223464),	-- Algari Heavy Gauntlets
 
 				i(223472),	-- Drape of the Lamplighter
 				i(220118),	-- Arathi Demolition Charge
@@ -3359,7 +3318,7 @@ root(ROOTS.Unsorted, {
 				i(223548),	-- Algari Rifle
 
 				i(223584),	-- Algari Scepter
-				i(223585),	-- [PH] Algari Bladefist
+				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
 				i(223627),	-- Scout's Dog Tags
 				i(223628),	-- Marksman's Dog Tags

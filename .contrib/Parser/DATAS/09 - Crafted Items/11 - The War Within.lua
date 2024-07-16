@@ -48,6 +48,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			}),
 			spell(430315, {	-- Thaumaturgy
 				i(211796, {	-- Thaumaturgy
+					i(223487),	-- Writhing Transmutagen (PET!)
 					r(430618),	-- Mercurial Blessings
 					r(449571),	-- Mercurial Herbs
 					r(430619),	-- Mercurial Storms
@@ -71,7 +72,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212719, {	-- Algari Flask Cauldron+
 				i(212739),	-- Fleeting Flask of Alchemical Chaos+
 				i(212745),	-- Fleeting Flask of Saving Graces+
-				i(212775),	-- Fleeting Flask of Tempered Aggression+
+				i(212725),	-- Fleeting Flask of Tempered Aggression+
 				i(212735),	-- Fleeting Flask of Tempered Mastery+
 				i(212729),	-- Fleeting Flask of Tempered Swiftness+
 				i(212732),	-- Fleeting Flask of Tempered Versatility+
@@ -79,7 +80,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212720, {	-- Algari Flask Cauldron++
 				i(212740),	-- Fleeting Flask of Alchemical Chaos++
 				i(212746),	-- Fleeting Flask of Saving Graces++
-				i(212776),	-- Fleeting Flask of Tempered Aggression++
+				i(212727),	-- Fleeting Flask of Tempered Aggression++
 				i(212736),	-- Fleeting Flask of Tempered Mastery++
 				i(212730),	-- Fleeting Flask of Tempered Swiftness++
 				i(212733),	-- Fleeting Flask of Tempered Versatility++
@@ -87,7 +88,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212721, {	-- Algari Flask Cauldron+++
 				i(212741),	-- Fleeting Flask of Alchemical Chaos+++
 				i(212747),	-- Fleeting Flask of Saving Graces+++
-				i(212777),	-- Fleeting Flask of Tempered Aggression+++
+				i(212728),	-- Fleeting Flask of Tempered Aggression+++
 				i(212738),	-- Fleeting Flask of Tempered Mastery+++
 				i(212731),	-- Fleeting Flask of Tempered Swiftness+++
 				i(212734),	-- Fleeting Flask of Tempered Versatility+++

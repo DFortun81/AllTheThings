@@ -565,6 +565,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 54.5, 25.3, HALLOWFALL },
 					["g"] = {
 						i(217816),	-- Rehydated Fish (QI!)
+						i(222964),	-- Fathom Incher (PET!)
 					},
 				}),
 			}),

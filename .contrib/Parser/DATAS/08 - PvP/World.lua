@@ -217,7 +217,9 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 	})),
 	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
-			ach(40088),	-- A Champion's Tour: The War Within (automated)
+			ach(40088, {	-- A Champion's Tour: The War Within (automated)
+				i(223802),	-- Purple Stagshell (PET!)
+			}),
 			ach(40464),	-- Bounty Master
 			ach(40097, {	-- Ruffious's Bid
 				-- Meta Achievement
@@ -230,6 +232,9 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					40084,	-- Tour of Duty: The Ringing Deeps
 					40087,	-- Unbound Battle
 				}},
+				["g"] = {
+					i(223158),	-- Raging Cinderbee (MOUNT!)
+				},
 			}),
 			-- TODO: check if achraw still needed once all criteriaIDs are correct
 			achraw(40091, {	-- Slightly Spoiled

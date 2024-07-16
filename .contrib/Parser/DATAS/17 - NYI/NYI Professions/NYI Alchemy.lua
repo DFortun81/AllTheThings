@@ -82,9 +82,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
 				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
-					i(212725),	-- Fleeting Flask of Tempered Aggression+
-					i(212727),	-- Fleeting Flask of Tempered Aggression++
-					i(212728),	-- Fleeting Flask of Tempered Aggression+++
+					i(212775),	-- zzOldFleeting Flask of Tempered Aggression
+					i(212776),	-- zzOldFleeting Flask of Tempered Aggression
+					i(212777),	-- zzOldFleeting Flask of Tempered Aggression
 					i(212318),	-- QA Algari Healing Potion
 					i(212319),	-- QA Algari Mana Potion
 					i(212320),	-- QA Cavedweller's Delight

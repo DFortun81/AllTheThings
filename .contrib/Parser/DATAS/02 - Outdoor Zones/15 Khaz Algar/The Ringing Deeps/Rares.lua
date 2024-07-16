@@ -132,6 +132,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(220285, {	-- Lurker of the Deeps <Displaced Sea Horror>
 				--["coord"] = { X, Y, THE_RINGING_DEEPS },
 				--["questID"] = ,
+				["g"] = {
+					i(223501),	-- Ol' Mole Rufus (MOUNT!)
+				},
 			}),
 			n(220270, {	-- Zilthara <The Deepflayer Devourer>
 				["coord"] = { 52.7, 27.8, THE_RINGING_DEEPS },

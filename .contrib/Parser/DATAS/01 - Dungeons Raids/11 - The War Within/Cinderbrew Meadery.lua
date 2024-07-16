@@ -51,6 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 218523 },	-- Goldie Baronbottom <BEE.E.O.>
 					["g"] = {
 						ach(40361),	-- Cinderbrew Meadery
+						i(223155),	-- Bop (PET!)
 						i(223102),	-- Pattern: Busy Bee's Buckle (RECIPE!)
 						i(224424),	-- Pattern: Artisan Chef's Hat (RECIPE!)
 						i(221070),	-- "Azeroth's Greatest BEO" Cap

@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(216049, {	-- Black BLood Slime
 				--seems like not here?
 				["questID"] = 82035,
-				["coord"] = { 62.2, 90.5, 2256 },	-- Azj-Kahet Lower
+				["coord"] = { 62.2, 90.5, AZJ_KAHET_LOWER },
 				["g"] = {
 					i(223006),	-- Signet of Dark Horizons (warbound)
 				},
@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			n(216048, {	-- Jix'ak the Crazed (vignette - Contaminated Harverster)
 				--["description"] = "Patrol in area, can be killed by Harverster Qixt",
 				--["questID"] = xx,	-- didn't fire
-				["coord"] = { 65.1, 85.7, 2256},
+				["coord"] = { 65.1, 85.7, AZJ_KAHET_LOWER},
 				["g"] = {
 					-- no loot
 				},
@@ -28,9 +28,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["description"] = "Patrol in area",
 				--["questID"] = xx,	-- didn't fire
 				["coords"] = {
-					{ 62.4, 86.4, 2256},	-- Start
-					{ 64.3, 86.0, 2256},	-- Mid
-					{ 65.5, 81.9, 2256},	-- End
+					{ 62.4, 86.4, AZJ_KAHET_LOWER},	-- Start
+					{ 64.3, 86.0, AZJ_KAHET_LOWER},	-- Mid
+					{ 65.5, 81.9, AZJ_KAHET_LOWER},	-- End
 				},
 				["g"] = {
 					-- no loot
@@ -160,6 +160,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					i(221217),	-- Nerubian Bomber's Leggings
 				},
 			}),
+			-- from Tka'ktath
+			i(225952),	-- Vial of Tka'ktath's Blood (QS!)
 		})),
 	}),
 })));

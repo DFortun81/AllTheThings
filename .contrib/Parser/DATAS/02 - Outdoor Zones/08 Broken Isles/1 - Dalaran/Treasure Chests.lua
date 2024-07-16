@@ -11,6 +11,12 @@ root(ROOTS.Zones, {
 					["coord"] = { 28.7, 64.4, LEGION_DALARAN },
 					["classes"] = { ROGUE },
 				}),
+				o(269037, {	-- Loose Pebble
+					["description"] = "Need to move Dog from Garrison into Dalaran.",
+					["g"] = {
+						i(147420),	-- Pebble
+					},
+				}),
 				o(244965, {	-- Sheddle's Chest
 					["description"] = "Item spawns shortly after midnight on Saturday and stays up for 2 hours (during the Saturday to Sunday transition). To find this chest you go to the upper level of the |cFFFFD700Photonic Playground|r, which is connected to the toy shop (you will know it's the right area if you see |cFFFFD700Shandy Glossgleam|r there with his pool). You will either want to fly past |cFFFFD700Shandy Glossgleam|r or go up the stairs to reach the area. Once you walk in you will see the chest in between a white chair and a brown chair.",
 					["icon"] = "Interface\\Icons\\Garrison_SilverChest",

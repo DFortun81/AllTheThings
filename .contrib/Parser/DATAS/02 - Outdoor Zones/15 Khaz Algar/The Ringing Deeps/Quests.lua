@@ -806,6 +806,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					["coord"] = { 64.9, 41.5, THE_RINGING_DEEPS },
 				}),
 			}),
+			header(HEADERS.Item, 221765, {	-- Stonevault Mechsuit
+				q(84020, {	-- A Mech in Need
+					["provider"] = { "i", 226683 },	-- Malfunctioning Mechsuit
+				}),
+				i(221765),	-- Stonevault Mechsuit (MOUNT!)
+			}),
 			-- Kobolds quests
 			q(82946, {	-- Rollin' Down In the Deeps
 				["isDaily"] = true,

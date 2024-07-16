@@ -4097,21 +4097,30 @@ i(223499, 4569);	-- Lil' Manny
 -- PATCH 11.0.0 --
 ------------------
 --- ITEM ---
+i(221850, 4464);	-- Bean
 i(221548, 4536);	-- Blightbud
+i(223155, 4469);	-- Bop
+i(222971, 4489);	-- Bouncer
 i(224101, 4586);	-- Brown Leafbug
+i(221820, 4537);	-- Chester
 i(223625, 4570);	-- Cinderwold Sizzlestinger
 i(224646, 4598);	-- Coppers
 i(224549, 4594);	-- Dalaran Sewer Turtle
+i(224766, 4596);	-- Faithful Dog
+i(222964, 4520);	-- Fathom Incher
 i(224259, 4590);	-- Flash
 i(222973, 4492);	-- Fringe
 i(224261, 4589);	-- Gale
 i(223623, 4576);	-- Guacamole
+i(220771, 4467);	-- Hallowed Glowfly
 i(222968, 4476);	-- Itchbite
 i(222972, 4491);	-- Jump Jump
 i(224450, 4527);	-- Lil' Moss Rosy
 i(222965, 4530);	-- Loamy
 i(225544, 4599);	-- Mind Slurp
+i(221546, 4534);	-- Nightfarm Growthling
 i(224439, 4470);	-- Oop'lajax
+i(223802, 4581);	-- Purple Stagshell
 i(218245, 4451);	-- Remembered Construct
 i(218086, 4450);	-- Remembered Riverpaw
 i(218246, 4452);	-- Remembered Spawn
@@ -4119,53 +4128,74 @@ i(222978, 4546);	-- Sandstone Ramolith
 i(224579, 3362);	-- Sapphire Crab
 i(222974, 4543);	-- Sir Shady Mrgglton Junior
 i(221494, 4495);	-- Skippy
+i(222980, 4542);	-- Slim
+i(223624, 4575);	-- Sneef
+i(222966, 4473);	-- Spinner
 i(221811, 4524);	-- Starkstripe Hopper
+i(220782, 4462);	-- Thunder
 i(224260, 4591);	-- Thundo
 i(221848, 4463);	-- Tiberius
 i(221849, 4465);	-- Vanilla
 i(221761, 4511);	-- Venomwing
+i(225337, 4506);	-- Violet Sporbit
+i(221821, 4517);	-- Waxwick
 i(224760, 4597);	-- Wobbles
+i(221496, 4496);	-- Wriggle
+i(223487, 4482);	-- Writhing Transmutagen
 --- NPC ---
 n(223092, 4540);	-- Alabaster Stonecharger
+n(222066, 4456);	-- Arachnoid Hatchling
+n(222195, 4460);	-- Arathi Chicken
+n(222325, 4471);	-- Aubergine Scootlefish
+n(222614, 4515);	-- Azure Flickerfly
 n(223090, 4541);	-- Bedrock Stonecharger
+n(222071, 4457);	-- Chitin Burrower
 n(223698, 4577);	-- Cinderhoney Emberstinger
 n(223094, 4538);	-- Cobalt Ramolith
+n(222584, 4499);	-- Common Ploughworm
+n(222582, 4498);	-- Ebon Ploughworm
 n(219267, 4514);	-- Fallowspark Glowfly
 n(222774, 4525);	-- Fragrant Stonelamb
 n(222877, 4535);	-- Ghostcap Menace
 n(223093, 4539);	-- Granite Ramolith
+n(222194, 4461);	-- Greenlands Chicken
+n(222535, 4488);	-- Haywire Servobot
 n(222713, 4518);	-- Magmashell Crawler
+n(222875, 4533);	-- Meek Bloodlasher
+n(223706, 4571);	-- Pinkskin Burrower
 n(222775, 4526);	-- Sandstone Mosswool
+n(222351, 4480);	-- Shadowy Oozeling
 n(222778, 4529);	-- Shale Mosswool
+n(223712, 4573);	-- Skittish Sniffler
+n(223715, 4574);	-- Snuffling
+n(222736, 4521);	-- Subterranean Dartswog
 n(222739, 4522);	-- Troglofrog
+n(223136, 4544);	-- Umbral Amalgam
+n(222344, 4477);	-- Verdant Scootlefish
+n(222615, 4516);	-- Vibrant Glowfly
+n(222421, 4483);	-- Vile Bloodtick
+n(222354, 4481);	-- Voidling Ooze
+n(222608, 4510);	-- Winged Arachnoid
 --- UNSORTED ---
 i(222969, 4474);	-- Anub'Rekyute
 i(221851, 4466);	-- Argos
-i(223155, 4469);	-- Bop
-i(222971, 4489);	-- Bouncer
 i(221764, 4519);	-- Burntram
-i(221820, 4537);	-- Chester
 i(226104, 4602);	-- Claudius
 i(222979, 4545);	-- Clay Stonecharger
-i(224766, 4596);	-- Faithful Dog
-i(222964, 4520);	-- Fathom Incher
-i(221850, 4464);	-- Freshly Webbed Kebab /BEAN
+i(221762, 4484);	-- Frenzied Bloodtick
 i(222970, 4490);	-- Fuzzy
-i(220771, 4467);	-- Hallowed Glowfly
 i(221195, 4458);	-- Illskitter
 i(225934, 4500);	-- Lil' Bonechewer
-i(221546, 4534);	-- Nightfarm Growthling
-i(223802, 4581);	-- Purple Stagshell
+i(221492, 4459);	-- Moss Skipper
 i(225935, 4582);	-- Rak-Ush Battleshell
 i(221759, 4512);	-- Sceaduthax
 i(221819, 4472);	-- Shadowbog Hopper
-i(222980, 4542);	-- Slim
-i(223624, 4575);	-- Sneef
-i(222966, 4473);	-- Spinner
-i(220782, 4462);	-- Thunder
-i(225337, 4506);	-- Violet Sporbit
 i(221495, 4497);	-- Waddles
-i(221821, 4517);	-- Waxwick
 i(222967, 4475);	-- Webbers
-i(221496, 4496);	-- Wriggle
-i(223487, 4482);	-- Writhing Transmutagen
+
+------------------
+-- PATCH 11.0.2 --
+------------------
+i(223498, 4568);	-- Charismatic Courier
+i(228765, 4616);	-- Gummi
+i(228758, 4615);	-- Parrlok

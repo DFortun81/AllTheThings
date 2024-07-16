@@ -71,6 +71,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 				})),
+				n(QUESTS, {
+					-- TODO: Expand this /maybe SpeciaL?
+					q(82007, {	-- Tale of Tails
+						i(220782),	-- Thunder (PET!)
+					}),
+
+				}),
 				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 					q(79346, {	-- Chew On That
 						["sourceQuests"] = { 79295 },	-- Keyflame: Taerry Bligestone
@@ -259,8 +266,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(REWARDS, {
 					i(RADIANT_REMNANT),
 					i(226264),	-- Radiant Cache
+					i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
+				}),
+				n(TREASURES, {
+					o(441795, {	-- Hallowfall Sparkfly
+						["coord"] = { 66.8, 25.3, HALLOWFALL },
+						--["questID"] = ,
+						["cost"] = {{"i", 218107, 1}},	-- 1x Sparkbug Jar
+						["g"] = {
+							i(220771),	-- Hallowed Glowfly (PET!)
+						},
+					}),
+					o(453186, {	-- Nightfarm Growthling
+						--["coord"] = { 66.8, 25.3, HALLOWFALL },
+						--["questID"] = ,
+						["g"] = {
+							i(221546),	-- Nightfarm Growthling (PET!)
+						},
+					})
 				}),
 				n(VENDORS, {
 					n(212419, {	-- Attica Whiskervale

@@ -74,6 +74,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 210797 },	-- The Darkness
 					["g"] = {
 						ach(40429),	-- Mythic: Darkflame Cleft
+						i(225548),	-- Wick's Lead (MOUNT!)
 					},
 				}),
 			}),

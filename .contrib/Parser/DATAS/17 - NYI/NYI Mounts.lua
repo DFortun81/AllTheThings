@@ -646,8 +646,8 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			mount(356802, {	-- Holy Lightstrider (MOUNT!)
 				["displayID"] = 101577,
 			}),
-			-- Without MountID Attached
-			i(187674, {	-- [PH] Progenitor Jellyfish (Dark) (MOUNT!)
+			-- With MountID Attached
+			i(187674, {	-- Depthstalker (MOUNT!)
 				-- ["displayID"] = ,
 			}),
 		})),

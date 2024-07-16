@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 				["crs"] = { 223159 },	-- Plump Snapcrab
 				["coord"] = { 40.6, 59.9, ISLE_OF_DORN },
 			}),
+			i(225557),	-- Sizzling Cinderpollen
 			i(224026, {	-- Storm Vessel
 				["cost"] = {{"i", 224025, 10}},	-- 10x Crackling Shard
 			}),

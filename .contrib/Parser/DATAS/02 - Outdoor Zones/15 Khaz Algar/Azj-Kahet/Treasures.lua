@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 			o(446404, {	-- Memory Cache
 				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 5x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
-				["coord"] = { 62.7, 88.7, 2256 },	-- Azj-Kaher Lower
+				["coord"] = { 62.7, 88.7, AZJ_KAHET_LOWER },
 				["questID"] = 82723,
 				["g"] = {
 					i(223870),	-- Cache Key

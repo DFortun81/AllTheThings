@@ -1,29 +1,37 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local COLLECTOR_DYNA = {
+	["crs"] = { 223446 },
+	["coord"] = { 34.9, 85.6, ISLE_OF_DORN },
+};
+local FRIENDHAVER_GERM = {
+	["crs"] = { 223444 },
+	["coord"] = { 61.6, 37.6, THE_RINGING_DEEPS },
+};
+local KYRIE = {
+	["crs"] = { 223442 },
+	["coord"] = { 57.4, 62.8, HALLOWFALL },
+};
+local ZIRIAK = {
+	["crs"] = { 223443 },
+	--["coord"] = { X, Y, MAP },
+};
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
 		petbattle(ach(40154, {	-- Aquatic Battler of Khaz Algar
-			crit(67139, {	-- Collector Dyna
-				["crs"] = { 223446 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67140, {	-- Friendhaver Grem
-				["crs"] = { 223444 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67141, {	-- Kyrie
-				["crs"] = { 223442 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67142, {	-- Ziriak
-				["crs"] = { 223443 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
+			crit(67139, -- Collector Dyna
+				COLLECTOR_DYNA
+			),
+			crit(67140,	-- Friendhaver Grem
+				FRIENDHAVER_GERM
+			),
+			crit(67141,	-- Kyrie
+				KYRIE
+			),
+			crit(67142,	-- Ziriak
+				ZIRIAK
+			),
 		})),
 		petbattle(achraw(40153, {	-- Battle on Khaz Algar
 			crit(67131, {	-- Awakened Custodian
@@ -52,136 +60,88 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}),
 		})),
 		petbattle(ach(40155, {	-- Beast Battler of Khaz Algar
-			crit(67143, {	-- Collector Dyna
-				["crs"] = { 223446 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67144, {	-- Friendhaver Grem
-				["crs"] = { 223444 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67145, {	-- Kyrie
-				["crs"] = { 223442 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67146, {	-- Ziriak
-				["crs"] = { 223443 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
+			crit(67143, -- Collector Dyna
+				COLLECTOR_DYNA
+			),
+			crit(67144,	-- Friendhaver Grem
+				FRIENDHAVER_GERM
+			),
+			crit(67145,	-- Kyrie
+				KYRIE
+			),
+			crit(67146,	-- Ziriak
+				ZIRIAK
+			),
 		})),
 		petbattle(ach(40156, {	-- Critter Battler of Khaz Algar
-			crit(67147, {	-- Collector Dyna
-				["crs"] = { 223446 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67148, {	-- Friendhaver Grem
-				["crs"] = { 223444 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67149, {	-- Kyrie
-				["crs"] = { 223442 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67150, {	-- Ziriak
-				["crs"] = { 223443 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
+			crit(67147, -- Collector Dyna
+				COLLECTOR_DYNA
+			),
+			crit(67148,	-- Friendhaver Grem
+				FRIENDHAVER_GERM
+			),
+			crit(67149,	-- Kyrie
+				KYRIE
+			),
+			crit(67150,	-- Ziriak
+				ZIRIAK
+			),
 		})),
 		petbattle(ach(40157, {	-- Dragonkin Battler of Khaz Algar
-			crit(67151, {	-- Collector Dyna
-				["crs"] = { 223446 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67152, {	-- Friendhaver Grem
-				["crs"] = { 223444 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67153, {	-- Kyrie
-				["crs"] = { 223442 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67154, {	-- Ziriak
-				["crs"] = { 223443 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
+			crit(67151, -- Collector Dyna
+				COLLECTOR_DYNA
+			),
+			crit(67152,	-- Friendhaver Grem
+				FRIENDHAVER_GERM
+			),
+			crit(67153,	-- Kyrie
+				KYRIE
+			),
+			crit(67154,	-- Ziriak
+				ZIRIAK
+			),
 		})),
 		petbattle(ach(40158, {	-- Elemental Battler of Khaz Algar
-			crit(67155, {	-- Collector Dyna
-				["crs"] = { 223446 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67156, {	-- Friendhaver Grem
-				["crs"] = { 223444 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67157, {	-- Kyrie
-				["crs"] = { 223442 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67158, {	-- Ziriak
-				["crs"] = { 223443 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
+			crit(67155, -- Collector Dyna
+				COLLECTOR_DYNA
+			),
+			crit(67156,	-- Friendhaver Grem
+				FRIENDHAVER_GERM
+			),
+			crit(67157,	-- Kyrie
+				KYRIE
+			),
+			crit(67158,	-- Ziriak
+				ZIRIAK
+			),
 		})),
 		petbattle(ach(40161, {	-- Flying Battler of Khaz Algar
-			crit(67159, {	-- Collector Dyna
-				["crs"] = { 223446 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67160, {	-- Friendhaver Grem
-				["crs"] = { 223444 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67161, {	-- Kyrie
-				["crs"] = { 223442 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67162, {	-- Ziriak
-				["crs"] = { 223443 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
+			crit(67159, -- Collector Dyna
+				COLLECTOR_DYNA
+			),
+			crit(67160,	-- Friendhaver Grem
+				FRIENDHAVER_GERM
+			),
+			crit(67161,	-- Kyrie
+				KYRIE
+			),
+			crit(67162,	-- Ziriak
+				ZIRIAK
+			),
 		})),
 		petbattle(ach(40162, {	-- Humanoid Battler of Khaz Algar
-			crit(67163, {	-- Collector Dyna
-				["crs"] = { 223446 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67160, {	-- Friendhaver Grem
-				["crs"] = { 223444 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67164, {	-- Kyrie
-				["crs"] = { 223442 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67165, {	-- Ziriak
-				["crs"] = { 223443 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
+			crit(67163, -- Collector Dyna
+				COLLECTOR_DYNA
+			),
+			crit(67160,	-- Friendhaver Grem
+				FRIENDHAVER_GERM
+			),
+			crit(67164,	-- Kyrie
+				KYRIE
+			),
+			crit(67165,	-- Ziriak
+				ZIRIAK
+			),
 		})),
 		ach(40352, {	-- Khaz Algar Completionist: Bronze
 			-- Meta Achievement
@@ -325,6 +285,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 		}),
 		ach(40762),		-- Khaz Algar Lore Hunter (automated)
 		petbattle(ach(40194, {	-- Khaz Algar Safari
+			i(221821),	-- Waxwick (PET!)
 			crit(67292, {	-- Chitin Burrower
 				["crs"] = { 222071 },
 			}),
@@ -430,48 +391,32 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}},
 		}),
 		petbattle(ach(40163, {	-- Magic Battler of Khaz Algar
-			crit(67166, {	-- Collector Dyna
-				["crs"] = { 223446 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67167, {	-- Friendhaver Grem
-				["crs"] = { 223444 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67168, {	-- Kyrie
-				["crs"] = { 223442 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67169, {	-- Ziriak
-				["crs"] = { 223443 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
+			crit(67166, -- Collector Dyna
+				COLLECTOR_DYNA
+			),
+			crit(67167,	-- Friendhaver Grem
+				FRIENDHAVER_GERM
+			),
+			crit(67168,	-- Kyrie
+				KYRIE
+			),
+			crit(67169,	-- Ziriak
+				ZIRIAK
+			),
 		})),
 		petbattle(ach(40164, {	-- Mechanical Battler of Khaz Algar
-			crit(67170, {	-- Collector Dyna
-				["crs"] = { 223446 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67171, {	-- Friendhaver Grem
-				["crs"] = { 223444 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67172, {	-- Kyrie
-				["crs"] = { 223442 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67173, {	-- Ziriak
-				["crs"] = { 223443 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
+			crit(67170, -- Collector Dyna
+				COLLECTOR_DYNA
+			),
+			crit(67171,	-- Friendhaver Grem
+				FRIENDHAVER_GERM
+			),
+			crit(67172,	-- Kyrie
+				KYRIE
+			),
+			crit(67173,	-- Ziriak
+				ZIRIAK
+			),
 		})),
 		ach(20597, {	-- The War Within
 			crit(66989, {	-- Against the Current
@@ -503,26 +448,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 			}},
 		}),
 		petbattle(ach(40165, {	-- Undead Battler of Khaz Algar
-			crit(67174, {	-- Collector Dyna
-				["crs"] = { 223446 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67175, {	-- Friendhaver Grem
-				["crs"] = { 223444 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67176, {	-- Kyrie
-				["crs"] = { 223442 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
-			crit(67177, {	-- Ziriak
-				["crs"] = { 223443 },
-				-- TODO
-				--["coord"] = { x, y, map },
-			}),
+			crit(67174, -- Collector Dyna
+				COLLECTOR_DYNA
+			),
+			crit(67175,	-- Friendhaver Grem
+				FRIENDHAVER_GERM
+			),
+			crit(67176,	-- Kyrie
+				KYRIE
+			),
+			crit(67177,	-- Ziriak
+				ZIRIAK
+			),
 		})),
 	}),
 })));

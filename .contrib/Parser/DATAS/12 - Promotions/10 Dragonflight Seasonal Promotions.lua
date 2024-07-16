@@ -176,6 +176,10 @@ root(ROOTS.Promotions, {
 				["description"] = "The Great Push returns in Dragonflight Season 4\n\nInstead of teams fighting to beat their opponent's time, The Great Push is focused on teams pushing keys as high as they can, striving to out survive their competitors and be crowned the champion!\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Smoldering Banner of the Aspects to use in-game!\nSign-ups close 15 Jun 2024 and The Proving Grounds are on 19-24 June (US).",
 				["timeline"] = { ADDED_10_2_6_SEASON_FOUR, "removed 10.2.7.99999" },
 			}),
+			i(219450, {	-- Charming Courier (MOUNT!)
+				["description"] = "Obtained if you set up a 6-Month WoW Subscription.",
+				["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+			}),
 		},
 	}),
 });

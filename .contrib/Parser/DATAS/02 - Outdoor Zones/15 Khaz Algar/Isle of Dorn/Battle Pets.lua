@@ -4,9 +4,10 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		petbattle(filter(BATTLE_PETS, {
-			--["sym"] = {{"select","speciesID",
-
-			--}},
+			["sym"] = {{"select","speciesID",
+				4533,	-- Meek Bloodlasher (PET!)
+				4521,	-- Subterranean Dartswog (PET!)
+			}},
 			["g"] = {
 				pet(4540, {	-- Alabaster Stonecharger (PET!)
 					["coord"] = { 47.0, 29.6, ISLE_OF_DORN },

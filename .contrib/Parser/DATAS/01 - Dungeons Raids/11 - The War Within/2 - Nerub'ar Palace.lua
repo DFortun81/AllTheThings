@@ -238,6 +238,15 @@ local EncounterToLoot = {
 
 ------ Zone Drops ----------
 local ZoneDropLoot = {
+	i(225728),	-- Acidic Attendant's Loop
+	i(225722),	-- Adorned Lynxborne Pauldrons
+	i(225727),	-- Captured Earthen's Ironhorns
+	i(225744),	-- Heritage Militia's Stompers
+	i(225725),	-- Lurking Marauder's Binding
+	i(225721),	-- Prime Slime Slippers
+	i(225724),	-- Shrillwing Hunter's Prey
+	i(225723),	-- Venom Stalker's Strap
+	i(225720),	-- Web Acolyte's Hood
 }
 
 ------ Boss Functions ------
