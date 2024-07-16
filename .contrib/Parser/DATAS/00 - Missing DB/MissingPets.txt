@@ -52,6 +52,10 @@ pet(4573),	-- Skittish Sniffler
 pet(4574),	-- Snuffling
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
+11.0.2.55522
+pet(4568),	-- Charismatic Courier
+pet(4615),	-- Parrlok
+pet(4616),	-- Gummi
 
 
 
@@ -112,3 +116,7 @@ pet(4573),	-- Skittish Sniffler
 pet(4574),	-- Snuffling
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
+11.0.2.55522
+pet(4568),	-- Charismatic Courier
+pet(4615),	-- Parrlok
+pet(4616),	-- Gummi

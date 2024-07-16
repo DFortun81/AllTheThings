@@ -3,91 +3,26 @@ r(461710),	-- Fiery Core Sharpshooter Rifle
 11.0.0.54311
 r(423335),	-- Khaz Algar Engineering
 r(425139),	-- Recraft Equipment
-r(438922),	-- Algari Competitor's Cloth Goggles \\ Vicious Competitor's Cloth Goggles
-r(438923),	-- Algari Competitor's Leather Goggles \\ Vicious Competitor's Leather Goggles
-r(438924),	-- Algari Competitor's Mail Goggles \\ Vicious Competitor's Mail Goggles
-r(438925),	-- Algari Competitor's Plate Goggles \\ Vicious Competitor's Plate Goggles
-r(438926),	-- Algari Competitor's Cloth Bracers \\ Vicious Competitor's Cloth Bracers
-r(438927),	-- Algari Competitor's Leather Bracers \\ Vicious Competitor's Leather Bracers
-r(438928),	-- Algari Competitor's Mail Bracers \\ Vicious Competitor's Mail Bracers
-r(438929),	-- Algari Competitor's Plate Bracers \\ Vicious Competitor's Plate Bracers
-r(443570),	-- Stonebound Lantern
 r(447310),	-- Scour Through Scrap
 r(447311),	-- Pilfer Through Parts
-r(447312),	-- Invent
-r(447313),	-- Disassemble Invention
-r(447314),	-- Studious Brilliance Expeditor \\ ENG - Cloth Goggles [DNT]
-r(447315),	-- Overclocked Idea Generator \\ ENG - Leather Goggles [DNT]
-r(447316),	-- Supercharged Thought Enhancer \\ ENG - Mail Goggles [DNT]
-r(447317),	-- Dangerous Distraction Inhibitor \\ ENG - Plate Goggles [DNT]
-r(447318),	-- Blasting Bracers
-r(447319),	-- Venting Vambraces
-r(447320),	-- Whirring Wristwraps
-r(447321),	-- Clanking Cuffs
-r(447322),	-- Spring-Loaded Bismuth Fabric Cutters \\ Tailoring Tool T1 [DNT]
-r(447323),	-- Spring-Loaded Aqirite Fabric Cutters \\ Tailoring Tool T2 [DNT]
-r(447324),	-- Bismuth Brainwave Projector \\ Engineering Helm T1 [DNT]
-r(447325),	-- Aqirite Brainwave Projector \\ Engineering Helm T2 [DNT]
 r(447326),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
-r(447327),	-- Aqirite Fisherfriend \\ Fishing Tool T2 [DNT]
-r(447328),	-- Lapidary's Bismuth Clamps \\ Jewelcrafting Tool T1 [DNT]
-r(447329),	-- Lapidary's Aqirite Clamps \\ Jewelcrafting Tool T2 [DNT]
-r(447330),	-- Bismuth Miner's Headgear \\ Mining Helmet T1 [DNT]
-r(447331),	-- Aqirite Miner's Headgear \\ Mining Hlmet T2 [DNT]
-r(447332),	-- Bismuth Fueled Samophlange \\ Engineering Tool T1 [DNT]
 r(447333),	-- Aqirite Fueled Samophlange \\ Engineering Tool T2 [DNT]
-r(447334),	-- Miner's Bismuth Hoard \\ Mining Backpack T1 [DNT]
-r(447335),	-- Miner's Aqirite Hoard \\ Mining Backpack T2 [DNT]
-r(447336),	-- Handful of Bismuth Bolts
-r(447337),	-- Whimsical Wiring
-r(447338),	-- Gyrating Gear
-r(447339),	-- Safety Switch
-r(447340),	-- Chaos Circuit
-r(447341),	-- Entropy Enhancer
-r(447342),	-- Potion Bomb of Speed
-r(447343),	-- Potion Bomb of Recovery
-r(447344),	-- Potion Bomb of Power
 r(447345),	-- Stasis Mine
 r(447346),	-- Gravity Mine
 r(447347),	-- Explosive Mine
 r(447348),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
 r(447349),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-r(447350),	-- Tinker: Earthen Delivery Drill
-r(447351),	-- Tinker: Heartseeking Health Injector
 r(447352),	-- P.0.W. x2
-r(447353),	-- Serrated Cogwheel
-r(447354),	-- Overclocked Cogwheel
-r(447355),	-- Impeccable Cogwheel
-r(447356),	-- Adjustable Cogwheel
-r(447357),	-- Recalibrated Safety Switch
-r(447358),	-- Blame Redirection Device \\ Blame Redistribution Device
 r(447359),	-- Overclocked Circuit Board
-r(447360),	-- Complicated Fuse Box
-r(447361),	-- Pouch of Pocket Grenades
-r(447362),	-- Concealed Chaos Module
-r(447363),	-- Energy Redistribution Beacon
-r(447364),	-- Irresistible Red Button
-r(447365),	-- Pausing Pylon
-r(447366),	-- Convincingly Realistic Jumper Cables
-r(447367),	-- Algari Repair Bot 11O \\ Repair Bot
-r(447368),	-- Portable Profession Possibility Projector
-r(447369),	-- Barrel of Fireworks
-r(447370),	-- Defective Escape Pod
-r(447371),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
-r(447372),	-- Wormhole Generator: Khaz Algar
 r(447373),	-- Crowd Pummeler 2-30
 11.0.0.54361
 r(447374),	-- Box o' Booms \\ PH Engineering Recipe
-11.0.0.54605
-r(455005),	-- Algari Competitor's Rifle \\ Vicious Competitor's Rifle
 11.0.0.54675
 r(447375),	-- Acolyte's Goggles \\ Cloth Leveling Goggles (DNT) \\ PH Engineering Recipe
 r(447376),	-- Spelunker's Goggles \\ Leather Leveling Goggles (DNT) \\ PH Engineering Recipe
 r(447377),	-- Tracker's Goggles \\ Mail Leveling Goggles (DNT) \\ PH Engineering Recipe
 r(447378),	-- Dredger's Goggles \\ Plate Leveling Goggles (DNT) \\ PH Engineering Recipe
 r(447379),	-- 4UT0-41M3R \\ Leveling Gun (DNT) \\ PH Engineering Recipe
-11.0.0.55000
-r(459299),	-- Bottled Brilliance
 
 
 
@@ -97,90 +32,22 @@ Missing in Engineering.lua
 1.15.3.55348
 r(461710),	-- Fiery Core Sharpshooter Rifle
 11.0.0.54311
-r(423335),	-- Khaz Algar Engineering
 r(425139),	-- Recraft Equipment
-r(438922),	-- Algari Competitor's Cloth Goggles \\ Vicious Competitor's Cloth Goggles
-r(438923),	-- Algari Competitor's Leather Goggles \\ Vicious Competitor's Leather Goggles
-r(438924),	-- Algari Competitor's Mail Goggles \\ Vicious Competitor's Mail Goggles
-r(438925),	-- Algari Competitor's Plate Goggles \\ Vicious Competitor's Plate Goggles
-r(438926),	-- Algari Competitor's Cloth Bracers \\ Vicious Competitor's Cloth Bracers
-r(438927),	-- Algari Competitor's Leather Bracers \\ Vicious Competitor's Leather Bracers
-r(438928),	-- Algari Competitor's Mail Bracers \\ Vicious Competitor's Mail Bracers
-r(438929),	-- Algari Competitor's Plate Bracers \\ Vicious Competitor's Plate Bracers
-r(443570),	-- Stonebound Lantern
 r(447310),	-- Scour Through Scrap
-r(447311),	-- Pilfer Through Parts
-r(447312),	-- Invent
-r(447313),	-- Disassemble Invention
-r(447314),	-- Studious Brilliance Expeditor \\ ENG - Cloth Goggles [DNT]
-r(447315),	-- Overclocked Idea Generator \\ ENG - Leather Goggles [DNT]
-r(447316),	-- Supercharged Thought Enhancer \\ ENG - Mail Goggles [DNT]
-r(447317),	-- Dangerous Distraction Inhibitor \\ ENG - Plate Goggles [DNT]
-r(447318),	-- Blasting Bracers
-r(447319),	-- Venting Vambraces
-r(447320),	-- Whirring Wristwraps
-r(447321),	-- Clanking Cuffs
 r(447322),	-- Spring-Loaded Bismuth Fabric Cutters \\ Tailoring Tool T1 [DNT]
-r(447323),	-- Spring-Loaded Aqirite Fabric Cutters \\ Tailoring Tool T2 [DNT]
 r(447324),	-- Bismuth Brainwave Projector \\ Engineering Helm T1 [DNT]
-r(447325),	-- Aqirite Brainwave Projector \\ Engineering Helm T2 [DNT]
 r(447326),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
-r(447327),	-- Aqirite Fisherfriend \\ Fishing Tool T2 [DNT]
 r(447328),	-- Lapidary's Bismuth Clamps \\ Jewelcrafting Tool T1 [DNT]
-r(447329),	-- Lapidary's Aqirite Clamps \\ Jewelcrafting Tool T2 [DNT]
 r(447330),	-- Bismuth Miner's Headgear \\ Mining Helmet T1 [DNT]
-r(447331),	-- Aqirite Miner's Headgear \\ Mining Hlmet T2 [DNT]
-r(447332),	-- Bismuth Fueled Samophlange \\ Engineering Tool T1 [DNT]
 r(447333),	-- Aqirite Fueled Samophlange \\ Engineering Tool T2 [DNT]
 r(447334),	-- Miner's Bismuth Hoard \\ Mining Backpack T1 [DNT]
-r(447335),	-- Miner's Aqirite Hoard \\ Mining Backpack T2 [DNT]
-r(447336),	-- Handful of Bismuth Bolts
-r(447337),	-- Whimsical Wiring
-r(447338),	-- Gyrating Gear
-r(447339),	-- Safety Switch
-r(447340),	-- Chaos Circuit
-r(447341),	-- Entropy Enhancer
-r(447342),	-- Potion Bomb of Speed
-r(447343),	-- Potion Bomb of Recovery
-r(447344),	-- Potion Bomb of Power
 r(447345),	-- Stasis Mine
 r(447346),	-- Gravity Mine
 r(447347),	-- Explosive Mine
 r(447348),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
 r(447349),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-r(447350),	-- Tinker: Earthen Delivery Drill
-r(447351),	-- Tinker: Heartseeking Health Injector
 r(447352),	-- P.0.W. x2
-r(447353),	-- Serrated Cogwheel
-r(447354),	-- Overclocked Cogwheel
-r(447355),	-- Impeccable Cogwheel
-r(447356),	-- Adjustable Cogwheel
-r(447357),	-- Recalibrated Safety Switch
-r(447358),	-- Blame Redirection Device \\ Blame Redistribution Device
 r(447359),	-- Overclocked Circuit Board
-r(447360),	-- Complicated Fuse Box
-r(447361),	-- Pouch of Pocket Grenades
-r(447362),	-- Concealed Chaos Module
-r(447363),	-- Energy Redistribution Beacon
-r(447364),	-- Irresistible Red Button
-r(447365),	-- Pausing Pylon
-r(447366),	-- Convincingly Realistic Jumper Cables
-r(447367),	-- Algari Repair Bot 11O \\ Repair Bot
-r(447368),	-- Portable Profession Possibility Projector
-r(447369),	-- Barrel of Fireworks
-r(447370),	-- Defective Escape Pod
-r(447371),	-- Filmless Camera \\ Malfunctioning Navigation Beacon
-r(447372),	-- Wormhole Generator: Khaz Algar
 r(447373),	-- Crowd Pummeler 2-30
 11.0.0.54361
 r(447374),	-- Box o' Booms \\ PH Engineering Recipe
-11.0.0.54605
-r(455005),	-- Algari Competitor's Rifle \\ Vicious Competitor's Rifle
-11.0.0.54675
-r(447375),	-- Acolyte's Goggles \\ Cloth Leveling Goggles (DNT) \\ PH Engineering Recipe
-r(447376),	-- Spelunker's Goggles \\ Leather Leveling Goggles (DNT) \\ PH Engineering Recipe
-r(447377),	-- Tracker's Goggles \\ Mail Leveling Goggles (DNT) \\ PH Engineering Recipe
-r(447378),	-- Dredger's Goggles \\ Plate Leveling Goggles (DNT) \\ PH Engineering Recipe
-r(447379),	-- 4UT0-41M3R \\ Leveling Gun (DNT) \\ PH Engineering Recipe
-11.0.0.55000
-r(459299),	-- Bottled Brilliance

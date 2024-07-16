@@ -20,12 +20,12 @@ mount(447938),	-- [PH] CaveBorerWormMount (Blue Skin, Purple Saddle)
 mount(447956),	-- [PH] CaveBorerWormMount (Forest Skin, Blue Saddle)
 mount(447958),	-- [PH] CaveBorerWormMount (Nocturne Skin, Red Saddle)
 mount(448265),	-- [PH] Firebee Blue Variant
-mount(448680),	-- [PH] SpiderUnderground (Red)
+mount(448680),	-- Widow's Undercrawler \\ [PH] SpiderUnderground (Red)
 mount(448682),	-- [PH] SpiderUnderground (Green)
-mount(448685),	-- [PH] SpiderUnderground (Blue)
-mount(448689),	-- [PH] SpiderUnderground (Yellow)
+mount(448685),	-- Heritage Undercrawler \\ [PH] SpiderUnderground (Blue)
+mount(448689),	-- Royal Court Undercrawler \\ [PH] SpiderUnderground (Yellow)
 mount(448934),	-- [PH] Shadow Elemental (Black)
-mount(448979),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
+mount(448979),	-- Dauntless Imperial Lynx \\ [PH] ArathiLynxMount (Brown Fur, Dark Armor)
 mount(448980),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
 mount(448981),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
 mount(448984),	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
@@ -44,6 +44,8 @@ mount(452777),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green
 mount(452780),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 11.0.0.55000
 mount(359380),	-- Depthstalker
+11.0.2.55522
+mount(443660),	-- Charming Courier
 
 
 
@@ -72,12 +74,12 @@ mount(447938),	-- [PH] CaveBorerWormMount (Blue Skin, Purple Saddle)
 mount(447956),	-- [PH] CaveBorerWormMount (Forest Skin, Blue Saddle)
 mount(447958),	-- [PH] CaveBorerWormMount (Nocturne Skin, Red Saddle)
 mount(448265),	-- [PH] Firebee Blue Variant
-mount(448680),	-- [PH] SpiderUnderground (Red)
+mount(448680),	-- Widow's Undercrawler \\ [PH] SpiderUnderground (Red)
 mount(448682),	-- [PH] SpiderUnderground (Green)
-mount(448685),	-- [PH] SpiderUnderground (Blue)
-mount(448689),	-- [PH] SpiderUnderground (Yellow)
+mount(448685),	-- Heritage Undercrawler \\ [PH] SpiderUnderground (Blue)
+mount(448689),	-- Royal Court Undercrawler \\ [PH] SpiderUnderground (Yellow)
 mount(448934),	-- [PH] Shadow Elemental (Black)
-mount(448979),	-- [PH] ArathiLynxMount (Brown Fur, Dark Armor)
+mount(448979),	-- Dauntless Imperial Lynx \\ [PH] ArathiLynxMount (Brown Fur, Dark Armor)
 mount(448980),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
 mount(448981),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
 mount(448984),	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
@@ -96,3 +98,5 @@ mount(452777),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green
 mount(452780),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 11.0.0.55000
 mount(359380),	-- Depthstalker
+11.0.2.55522
+mount(443660),	-- Charming Courier
