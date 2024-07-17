@@ -1073,6 +1073,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/4 Vicious Night Web Spider Venom
+							["provider"] = { "i", 2872 },	-- Vicious Night Web Spider Venom
+							["cr"] = 1555,	-- Vicious Night Web Spider
+						}),
 						i(57167, {	-- Night Web Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1173,17 +1177,48 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 52.5, 54.8, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Putrid Claw
+							["provider"] = { "i", 2855 },	-- Putrid Claw
+							["crs"] = {
+								1525,	-- Rotting Dead
+								1526,	-- Ravaged Corpse
+							},
+						}),
+					},
 				}),
 				q(24979, {	-- A Scarlet Letter
 					["provider"] = { "i", 52079 },	-- A Scarlet Letter
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Find the Scarlet Prisoner
+							["provider"] = { "n", 38999 },	-- Lilian Voss
+						}),
+					},
 				}),
 				q(24981, {	-- A Thorn in our Side
 					["qg"] = 1515,	-- Executor Zygand
 					["coord"] = { 60.5, 51.8, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/3 Scarlet Zealot slain
+							["provider"] = { "n", 1537 },	-- Scarlet Zealot
+						}),
+						objective(2, {	-- 0/3 Scarlet Missionary slain
+							["provider"] = { "n", 1536 },	-- Scarlet Missionary
+						}),
+						objective(3, {	-- 0/1 Urgent Scarlet Memorandum
+							["provider"] = { "i", 52077 },	-- Urgent Scarlet Memorandum
+							["crs"] = {
+								1536,	-- Scarlet Missionary
+								1537,	-- Scarlet Zealot
+								1662,	-- Captain Perrine
+								39086,	-- Slain Scarlet Zealot
+							},
+						}),
+					},
 				}),
 				q(26930, {	-- After the Crusade
 					["qg"] = 10837,	-- High Executor Derrington
@@ -1239,6 +1274,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Worgen Infiltrator slain
+							["provider"] = { "n", 38967 },	-- Worgen Infiltrator
+						}),
 						i(57155, {	-- Worgen Slaying Sword
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1362,6 +1400,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 60.1, 52.6, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Darkhound Blood
+							["provider"] = { "i", 2858 },	-- Darkhound Blood
+							["crs"] = {
+								1547,	-- Decrepit Darkhound
+								1548,	-- Cursed Darkhound
+								1549,	-- Ravenous Darkhound
+							},
+						}),
+					},
 				}),
 				q(354, {	-- Deaths in the Family
 					["qg"] = 1500,	-- Coleman Farthing
@@ -1397,6 +1445,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Nissa's Remains
+							["provider"] = { "i", 2828 },	-- Nissa's Remains
+							["cr"] = 1655,	-- Nissa Agamand
+						}),
+						objective(2, {	-- 0/1 Gregor's Remains
+							["provider"] = { "i", 2829 },	-- Gregor's Remains
+							["cr"] = 1654,	-- Gregor Agamand
+						}),
+						objective(3, {	-- 0/1 Thurman's Remains
+							["provider"] = { "i", 2830 },	-- Thurman's Remains
+							["cr"] = 1656,	-- Thurman Agamand
+						}),
+						objective(4, {	-- 0/1 Devlin's Remains
+							["provider"] = { "i", 2831 },	-- Devlin's Remains
+							["cr"] = 1657,	-- Devlin Agamand
+						}),
 						i(3446),	-- Darkwood Staff
 						i(3440),	-- Bonecracker
 					},
@@ -1580,6 +1644,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Rot Hide Graverobber slain
+							["provider"] = { "n", 1941 },	-- Rot Hide Graverobber
+						}),
+						objective(2, {	-- 0/5 Rot Hide Mongrel slain
+							["provider"] = { "n", 1675 },	-- Rot Hide Mongrel
+						}),
+						objective(3, {	-- 0/6 Embalming Ichor
+							["provider"] = { "i", 2834 },	-- Embalming Ichor
+							["crs"] = {
+								1674,	-- Rot Hide Gnoll
+								1675,	-- Rot Hide Mongrel
+								1941,	-- Rot Hide Graverobber
+							},
+						}),
 						i(6063),	-- Cold Steel Gauntlets
 						i(3439),	-- Zombie Skin Boots
 					},
@@ -1589,6 +1667,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Plagued Bruin Hide
+							["provider"] = { "i", 52270 },	-- Plagued Bruin Hide
+							["cr"] = 39049,	-- Plagued Bruin
+						}),
+					},
 				}),
 				q(25039, {	-- Have You Seen Anything Weird Out There?
 					["qg"] = 6785,	-- Ratslin Maime
@@ -1692,6 +1776,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Maggot Eye's Paw
+							["provider"] = { "i", 3635 },	-- Maggot Eye's Paw
+							["cr"] = 1753,	-- Maggot Eye
+						}),
 						i(57158, {	-- Foul Gnoll Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1713,6 +1801,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Vile Fin Scale
+							["provider"] = { "i", 2859 },	-- Vile Fin Scale
+							["crs"] = {
+								1541,	-- Vile Fin Murloc
+								1543,	-- Vile Fin Puddlejumper
+								1544,	-- Vile Fin Minor Oracle
+								1545,	-- Vile Fin Muckdweller
+							},
+						}),
 						i(57149, {	-- Cauldron Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1728,6 +1825,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.6, 34.3, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Vile Fin Tadpoles frightened
+							["provider"] = { "n", 38937 },	-- Vile Fin Tadpole
+						}),
+					},
 				}),
 				q(374, {	-- Proof of Demise
 					["qg"] = 1652,	-- Deathguard Burgess
@@ -1808,6 +1910,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/10 Tirisfal Farmer slain
+							["providers"] = {
+								{ "n", 1934},	-- Tirisfal Farmer
+								{ "n", 1935},	-- Tirisfal Farmhand
+								{ "n", 1936},	-- Farmer Solliden
+							},
+						}),
 						i(57146, {	-- Scythe Blade
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1955,6 +2064,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Duskbat Pelt
+							["provider"] = { "i", 2876 },	-- Duskbat Pelt
+							["crs"] = {
+								1553,	-- Greater Duskbat
+								1554,	-- Vampiric Duskbat
+							},
+						}),
 						i(57151, {	-- Gretchen's Slippers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2001,6 +2117,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Wailing Ancestor slain
+							["provider"] = { "n", 1534 },	-- Wailing Ancestor
+						}),
+						objective(2, {	-- 0/5 Rotting Ancestor slain
+							["provider"] = { "n", 1530 },	-- Rotting Ancestor
+						}),
 						i(57161, {	-- Agamand Family Leggings
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2102,6 +2224,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 54.5, 29.8, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Notched Rib
+							["provider"] = { "i", 3162 },	-- Notched Rib
+							["crs"] = {
+								1520,	-- Rattlecage Soldier
+								1523,	-- Cracked Skull Soldier
+							},
+						}),
+						objective(2, {	-- 0/3 Blackened Skull
+							["provider"] = { "i", 3163 },	-- Blackened Skull
+							["cr"] = 1522,	-- Darkeye Bonecaster
+						}),
+					},
 				}),
 				q(24982, {	-- The New Forsaken
 					["qg"] = 1496,	-- Deathguard Dillinger
@@ -2142,6 +2277,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.7, 53.6, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Scarlet Warrior slain
+							["provider"] = { "n", 1535 },	-- Scarlet Warrior
+						}),
+					},
 				}),
 				q(25011, {	-- To Bigger and Better Things
 					["qg"] = 10837,	-- High Executor Derrington
@@ -2173,6 +2313,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/4 Marrowpetal
+							["provider"] = { "i", 52067 },	-- Marrowpetal
+						}),
+						objective(2, {	-- 0/4 Xavren's Thorn
+							["provider"] = { "i", 52066 },	-- Xavren's Thorn
+						}),
+						objective(3, {	-- 0/8 Briny Sea Cucumber
+							["provider"] = { "i", 52068 },	-- Briny Sea Cucumber
+							["cr"] = 38933,	-- Briny Sea Cucumber
+						}),
 						i(57147, {	-- Xavren's Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
