@@ -160,7 +160,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					["groups"] = {
 						objective(1, {	-- 0/14 Largo's Overlook Ghosts Slain
 							["providers"] = {
-								{ "n", 47303},	-- Wildlife Kill Credit - Tol Barad Quest - Largo's Overlook
 								{ "n", 47181},	-- Overlook Spirit
 								{ "n", 47182},	-- Overlook Spectre
 								{ "n", 47183},	-- Ghastly Worker
@@ -174,7 +173,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					["groups"] = {
 						objective(1, {	-- 0/14 Largo's Overlook Ghosts Slain
 							["providers"] = {
-								{ "n", 47303},	-- Wildlife Kill Credit - Tol Barad Quest - Largo's Overlook
 								{ "n", 47181},	-- Overlook Spirit
 								{ "n", 47182},	-- Overlook Spectre
 								{ "n", 47183},	-- Ghastly Worker
@@ -412,7 +410,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				q(28694, {	-- Watch Out For Splinters! [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-				}),
 					["groups"] = {
 						objective(1, {	-- 0/15 Shipyard Lumber
 							["provider"] = { "i", 62811 },	-- Shipyard Lumber
@@ -424,6 +421,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 					},
+				}),
 			})),
 			n(PROFESSIONS, {
 				prof(FISHING, {
