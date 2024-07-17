@@ -333,7 +333,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28274,	-- Two Tents
 					["groups"] = {
 						objective(1, {	-- 0/3 Wild Camels captured
-							["provider"] = { "i", 67241 }	-- Sullah's Camel Harness
+							["provider"] = { "i", 67241 },	-- Sullah's Camel Harness
 							["cr"] = 51193,	-- Wild Camel
 						}),
 					},
@@ -386,7 +386,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27940, {	-- Dirty Birds
 					["qg"] = 47202,	-- Diseased Vulture
 					["sourceQuest"] = 27926,	-- Eastern Hospitality
-					["description"] = "This quest is auto-accepted when you kill a Diseased Vulture after accepting The Desert Fox or A Favor for the Furrier."
+					["description"] = "This quest is auto-accepted when you kill a Diseased Vulture after accepting The Desert Fox or A Favor for the Furrier.",
 					["groups"] = {
 						objective(1, {	-- 0/8 Diseased Vultures Slain
 							["provider"] = { "n", 47202 },	-- Diseased Vulture
@@ -410,7 +410,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(27187, {	-- Do the World a Favor
 					["qg"] = 45202,	-- Mangy Hyena
 					["sourceQuest"] = 27141,	-- Harrison Jones
-					["description"] = "This quest is auto-accepted when you kill a Mangy Hyena after accepting A Strange Disc or Field Work."
+					["description"] = "This quest is auto-accepted when you kill a Mangy Hyena after accepting A Strange Disc or Field Work.",
 					["groups"] = {
 						objective(1, {	-- 0/12 Mangy Hyenas Eradicated
 							["providers"] = {
