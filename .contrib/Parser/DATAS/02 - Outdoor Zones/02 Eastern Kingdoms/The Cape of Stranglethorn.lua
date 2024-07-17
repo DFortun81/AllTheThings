@@ -336,6 +336,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
 					["lvl"] = lvlsquish(55, 55, 10),
 					["groups"] = {
+						objective(1, {	-- 0/1 Baron Revilgaz slain
+							["provider"] = { "n", 2496 },	-- Baron Revilgaz
+						}),
+						objective(2, {	-- 0/1 Fleet Master Seahorn slain
+							["provider"] = { "n", 2487 },	-- Fleet Master Seahorn
+						}),
 						i(12185),	-- Bloodsail Admiral's Hat
 					},
 				}),
@@ -1163,6 +1169,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								2546,	-- Fleet Master Firallon
 								2549,	-- Garr Salthoof
 								2547,	-- Ironpatch
+								43364,	-- Bloodsail Hooch-Hound
+								43454,	-- "Good-Boy" Bruce
+								43542,	-- Lime Thief
+								43636,	-- Bloodsail Corsair
+								43726,	-- Bloodsail Corsair
+								44178,	-- Sweet Gary Guns
+								44179,	-- Harry No-Hooks
+								44182,	-- Gurlgrl
 							},
 						}),
 						i(4114),	-- Darktide Cape
@@ -2410,6 +2424,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								2546,	-- Fleet Master Firallon
 								2549,	-- Garr Salthoof
 								2547,	-- Ironpatch
+								43364,	-- Bloodsail Hooch-Hound
+								43454,	-- "Good-Boy" Bruce
+								43542,	-- Lime Thief
+								43636,	-- Bloodsail Corsair
+								43726,	-- Bloodsail Corsair
+								44178,	-- Sweet Gary Guns
+								44179,	-- Harry No-Hooks
+								44182,	-- Gurlgrl
 							},
 						}),
 					},
