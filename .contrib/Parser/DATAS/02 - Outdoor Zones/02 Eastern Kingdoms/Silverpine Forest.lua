@@ -157,6 +157,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 7th Legion Battle Plan
+							["provider"] = { "i", 61510 },	-- 7th Legion Battle Plan
+							["crs"] = {
+								45855,	-- Dwarven Infantry
+								45995,	-- General Marstone
+							},
+						}),
+					},
 				}),
 				q(530, {	-- A Husband's Revenge
 					["qg"] = 2050,	-- Raleigh Andrean
@@ -273,6 +282,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/10 Inconspicuous Bear slain
+							["provider"] = { "n", 45750 },	-- Inconspicuous Bear
+						}),
 						i(62885, {	-- Unmistakable Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -535,6 +547,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Skitterweb Matriarch slain
+							["provider"] = { "n", 44906 },	-- Skitterweb Matriarch
+						}),
 						i(62850, {	-- Drunken Style Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -574,6 +589,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 46.1, 50.2, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Bloodfang Stalker slain
+							["provider"] = { "n", 45195 },	-- Bloodfang Stalker
+						}),
+					},
 				}),
 				q(27575, {	-- From the Belly of the Beast
 					["qg"] = 45878,	-- Lord Godfrey
@@ -583,6 +603,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Dempsey's Torso
+							["provider"] = { "i", 61506 },	-- Dempsey's Torso
+							["cr"] = 45896,	-- Marsh Crocolisk
+						}),
+						objective(2, {	-- 0/1 Dempsey's Appendages
+							["provider"] = { "i", 61507 },	-- Dempsey's Appendages
+							["cr"] = 45896,	-- Marsh Crocolisk
+						}),
+						objective(3, {	-- 0/1 Dempsey's Giblets
+							["provider"] = { "i", 61508 },	-- Dempsey's Giblets
+							["cr"] = 45896,	-- Marsh Crocolisk
+						}),
 						i(131679, {	-- Better, Stronger, Faster Bracers
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -603,6 +635,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.9, 21.2, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Bloodfang Scavenger slain
+							["providers"] = {
+								{ "n", 44547},	-- Bloodfang Scavenger
+								{ "n", 44549},	-- Bloodfang Scavenger
+							},
+						}),
+					},
 				}),
 				q(26995, {	-- Guts and Gore
 					["qg"] = 44784,	-- High Apothecary Shana T'veen
@@ -610,6 +650,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.2, 8.3, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 "Clean" Beast Guts
+							["provider"] = { "i", 60742 },	-- "Clean" Beast Guts
+							["crs"] = {
+								1765,	-- Worg
+								1778,	-- Ferocious Grizzled Bear
+							},
+						}),
+					},
 				}),
 				q(27226, {	-- Hair of the Dog
 					["qg"] = 44917,	-- Warlord Torok
@@ -618,6 +667,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Orc Sea Dog roused
+							["provider"] = { "n", 45196 },	-- Orc Sea Dog
+						}),
 						i(62846, {	-- Ale-Soaked Robes
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -657,6 +709,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Bat requisitioned from Bat Handler Maggotbreath
+							["provider"] = { "n", 44825 },	-- Bat Handler Maggotbreath
+						}),
+						objective(2, {	-- 0/50 Vile Fin Murloc slain
+							["providers"] = {
+								{ "n", 1908},	-- Vile Fin Oracle
+								{ "n", 1768},	-- Vile Fin Tidehunter
+								{ "n", 46574},	-- Vile Fin Tidehunter
+							},
+						}),
 						i(131629, {	-- Maggot-Ridden Greaves
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -678,6 +740,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Forest Ettin slain
+							["provider"] = { "n", 44367 },	-- Forest Ettin
+						}),
 						i(62843, {	-- Bush Chicken Remote Injector
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -726,6 +791,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 7th Legion Scout slain
+							["provider"] = { "n", 45883 },	-- 7th Legion Scout
+						}),
+					},
 				}),
 				q(27098, {	-- Lordaeron
 					["qg"] = 44365,	-- Lady Sylvanas Windrunner
@@ -751,6 +821,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.0, 21.3, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Orc Sea Dog rescued
+							["provider"] = { "n", 44942 },	-- Orc Sea Dog
+						}),
+					},
 				}),
 				q(478, {	-- Maps and Runes
 					["providers"] = {
@@ -808,6 +883,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Cowering Trooper rescued
+							["provider"] = { "n", 45910 },	-- Cowering Trooper
+						}),
+					},
 				}),
 				q(27594, {	-- On Her Majesty's Secret Service
 					["qg"] = 45878,	-- Lord Godfrey
@@ -857,6 +937,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.7, 20.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Diseased Organ
+							["provider"] = { "i", 60793 },	-- Diseased Organ
+							["crs"] = {
+								1766,	-- Rabid Worg
+								1797,	-- Giant Rabid Bear
+							},
+						}),
+					},
 				}),
 				q(27483, {	-- Practical Vengeance
 					["qg"] = 1938,	-- Dalar Dawnweaver
@@ -865,6 +954,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/12 Dalaran Human slain
+							["providers"] = {
+								{ "n", 2358},	-- Dalaran Summoner
+								{ "n", 2271},	-- Dalaran Shield Guard
+								{ "n", 2272},	-- Dalaran Theurgist
+								{ "n", 2628},	-- Dalaran Worker
+								{ "n", 45734},	-- Relios the Relic Keeper
+							},
+						}),
 						i(62880, {	-- Axe of Practical Vengeance
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -934,6 +1032,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 45.8, 41.9, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Hillsbrad Worgen slain
+							["providers"] = {
+								{ "n", 45254},	-- Hillsbrad Worgen
+								{ "n", 45255},	-- Hillsbrad Worgen
+							},
+						}),
+					},
 				}),
 				q(27478, {	-- Relios the Relic Keeper
 					["qg"] = 1938,	-- Dalar Dawnweaver
@@ -942,6 +1048,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Dalaran Archmage's Signet Ring
+							["provider"] = { "i", 61312 },	-- Dalaran Archmage's Signet Ring
+							["cr"] = 45734,	-- Relios the Relic Keeper
+						}),
 						i(62875, {	-- Betrayal's Sting
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1066,6 +1176,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.8, 41.6, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Smithers' Logbook
+							["provider"] = { "i", 60867 },	-- Smithers' Logbook
+							["cr"] = 45219,	-- Caretaker Smithers
+						}),
+					},
 				}),
 				q(27095, {	-- Skitterweb Menace
 					["qg"] = 44917,	-- Warlord Torok
@@ -1076,6 +1192,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.9, 21.2, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Skitterweb Spider slain
+							["providers"] = {
+								{ "n", 1781},	-- Skitterweb Lurker
+								{ "n", 1780},	-- Skitterweb Striker
+								{ "n", 46751},	-- Skitterweb Spiderling
+							},
+						}),
+					},
 				}),
 				q(27580, {	-- Sowing Discord
 					["qg"] = 45878,	-- Lord Godfrey
@@ -1087,6 +1212,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 General Marstone slain
+							["provider"] = { "n", 45995 },	-- General Marstone
+						}),
+					},
 				}),
 				q(3221, {	-- Speak with Renferrel
 					["qg"] = 1952,	-- High Executor Hadrec
@@ -1189,6 +1319,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/10 Worgen Renegade slain
+							["provider"] = { "n", 44793 },	-- Worgen Renegade
+						}),
 						i(62839, {	-- Nubly Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1235,6 +1368,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/50 Hillsbrad Worgen slain
+							["provider"] = { "n", 45270 },	-- Hillsbrad Worgen
+						}),
 						i(62853, {	-- Blood Offering Platter
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1254,6 +1390,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
+						-- FIX_ME!!!
+						objective(1, {	-- 0/1 Ataeric's Staff
+							["provider"] = { "i", 3515 },	-- Ataeric's Staff
+							["cr"] = 2120,	-- Archmage Ataeric
+						}),
 						objective(1, {	-- 0/1 Ataeric's Staff
 							["provider"] = { "i", 3515 },	-- Ataeric's Staff
 							["coord"] = { 63.6, 64.0, SILVERPINE_FOREST },
@@ -1308,6 +1449,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/20 Ambermill Mage slain
+							["providers"] = {
+								{ "n", 45756},	-- Ambermill Mage Proxy
+								{ "n", 1888},	-- Ambermill Watcher
+								{ "n", 1889},	-- Ambermill Witchalok
+								{ "n", 1912},	-- Ambermill Protector
+								{ "n", 1913},	-- Ambermill Warder
+								{ "n", 1914},	-- Ambermill Magister
+								{ "n", 1915},	-- Ambermill Conjuror
+								{ "n", 1920},	-- Ambermill Spellscribe
+								{ "n", 3577},	-- Ambermill Brewmaster
+								{ "n", 3578},	-- Ambermill Miner
+							},
+						}),
+					},
 				}),
 				q(27518, {	-- Transdimensional Warfare: Chapter III
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
@@ -1333,6 +1490,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.8, 64.7, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Servitor Core
+							["provider"] = { "i", 61307 },	-- Servitor Core
+							["crs"] = {
+								45711,	-- Elemental Servitor
+								47009,	-- Aquarius the Unbound
+							},
+						}),
+					},
 				}),
 				q(27045, {	-- Waiting to Exsanguinate
 					["provider"] = { "o", 205143 },	-- Abandoned Outhouse
