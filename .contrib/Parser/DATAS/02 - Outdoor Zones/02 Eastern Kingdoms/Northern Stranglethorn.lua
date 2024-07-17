@@ -2256,6 +2256,201 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Green Hills of Stranglethorn - Page 14
 							["provider"] = { "i", 57990 },	-- Green Hills of Stranglethorn - Page 14
+							["crs"] = {
+								587,	-- Bloodscalp Warrior
+								588,	-- Bloodscalp Scout
+								595,	-- Bloodscalp Hunter
+								597,	-- Bloodscalp Berserker
+								660,	-- Bloodscalp Witch Doctor
+								667,	-- Skullsplitter Warrior
+								669,	-- Skullsplitter Hunter
+								670,	-- Skullsplitter Witch Doctor
+								671,	-- Bloodscalp Headhunter
+								672,	-- Skullsplitter Spiritchaser
+								674,	-- Venture Co. Strip Miner
+								675,	-- Venture Co. Foreman
+								676,	-- Venture Co. Surveyor
+								677,	-- Venture Co. Tinkerer
+								678,	-- Mosh'Ogg Mauler
+								679,	-- Mosh'Ogg Shaman
+								680,	-- Mosh'Ogg Lord
+								681,	-- Young Stranglethorn Tiger
+								682,	-- Stranglethorn Tiger
+								683,	-- Young Panther
+								684,	-- Shadowmaw Panther
+								685,	-- Stranglethorn Raptor
+								686,	-- Lashtail Raptor
+								687,	-- Jungle Stalker
+								688,	-- Stone Maw Basilisk
+								689,	-- Crystal Spine Basilisk
+								690,	-- Cold Eye Basilisk
+								691,	-- Lesser Water Elemental
+								694,	-- Bloodscalp Axe Thrower
+								696,	-- Skullsplitter Axe Thrower
+								697,	-- Bloodscalp Shaman
+								698,	-- Bloodscalp Tiger
+								699,	-- Bloodscalp Beastmaster
+								700,	-- Bloodscalp Panther
+								701,	-- Bloodscalp Mystic
+								702,	-- Bloodscalp Scavenger
+								709,	-- Mosh'Ogg Warmonger
+								710,	-- Mosh'Ogg Spellcrafter
+								723,	-- Mosh'Ogg Butcher
+								728,	-- Bhag'thera
+								729,	-- Sin'Dall
+								730,	-- Tethis
+								731,	-- King Bangalash
+								736,	-- Panther
+								756,	-- Skullsplitter Panther
+								758,	-- Skullsplitter Tiger
+								772,	-- Stranglethorn Tigress
+								775,	-- Kurzen's Agent
+								780,	-- Skullsplitter Mystic
+								781,	-- Skullsplitter Headhunter
+								782,	-- Skullsplitter Scout
+								783,	-- Skullsplitter Berserker
+								784,	-- Skullsplitter Beastmaster
+								813,	-- Colonel Kurzen
+								814,	-- Sergeant Malthus
+								815,	-- Bookie Herod
+								818,	-- Mai'Zoth
+								854,	-- Young Jungle Stalker
+								855,	-- Young Stranglethorn Raptor
+								856,	-- Young Lashtail Raptor
+								871,	-- Saltscale Warrior
+								873,	-- Saltscale Oracle
+								875,	-- Saltscale Tide Lord
+								877,	-- Saltscale Forager
+								879,	-- Saltscale Hunter
+								905,	-- Sharptooth Frenzy
+								921,	-- Venture Co. Lumberjack
+								937,	-- Kurzen Jungle Fighter
+								938,	-- Kurzen Commando
+								939,	-- Kurzen Elite
+								940,	-- Kurzen Medicine Man
+								941,	-- Kurzen Headshrinker
+								942,	-- Kurzen Witch Doctor
+								943,	-- Kurzen Wrangler
+								976,	-- Kurzen War Tiger
+								977,	-- Kurzen War Panther
+								978,	-- Kurzen Subchief
+								979,	-- Kurzen Shadow Hunter
+								1059,	-- Ana'thek the Cruel
+								1060,	-- Mogh the Undying
+								1061,	-- Gan'zulah
+								1062,	-- Nezzliok the Dire
+								1085,	-- Elder Stranglethorn Tiger
+								1094,	-- Venture Co. Miner
+								1095,	-- Venture Co. Workboss
+								1096,	-- Venture Co. Geologist
+								1097,	-- Venture Co. Mechanic
+								1108,	-- Mistvale Gorilla
+								1114,	-- Jungle Thunderer
+								1142,	-- Mosh'Ogg Brute
+								1144,	-- Mosh'Ogg Witch Doctor
+								1150,	-- River Crocolisk
+								1151,	-- Saltwater Crocolisk
+								1152,	-- Snapjaw Crocolisk
+								1421,	-- Private Merle
+								1488,	-- Zanzil Zombie
+								1489,	-- Zanzil Hunter
+								1490,	-- Zanzil Witch Doctor
+								1491,	-- Zanzil Naga
+								1492,	-- Gorlash
+								1493,	-- Mok'rash the Cleaver
+								1550,	-- Thrashtail Basilisk
+								1551,	-- Ironjaw Basilisk
+								1552,	-- Scale Belly
+								1557,	-- Elder Mistvale Gorilla
+								1558,	-- Silverback Patriarch
+								1559,	-- King Mukla
+								1561,	-- Bloodsail Raider
+								1562,	-- Bloodsail Mage
+								1563,	-- Bloodsail Swashbuckler
+								1564,	-- Bloodsail Warlock
+								1565,	-- Bloodsail Sea Dog
+								1653,	-- Bloodsail Elder Magus
+								1713,	-- Elder Shadowmaw Panther
+								1907,	-- Naga Explorer
+								2521,	-- Skymane Gorilla
+								2522,	-- Jaguero Stalker
+								2530,	-- Yenniku
+								2534,	-- Zanzil the Outcast
+								2535,	-- Maury "Club Foot" Wilkins
+								2536,	-- Jon-Jon the Crow
+								2537,	-- Chucky "Ten Thumbs"
+								2541,	-- Lord Sakrasis
+								2544,	-- Southern Sand Crawler
+								2545,	-- "Pretty Boy" Duncan
+								2546,	-- Fleet Master Firallon
+								2547,	-- Ironpatch
+								2548,	-- Captain Keelhaul
+								2549,	-- Garr Salthoof
+								2550,	-- Captain Stillwater
+								2551,	-- Brutus
+								2624,	-- Gazban
+								2635,	-- Elder Snapjaw Crocolisk
+								4260,	-- Venture Co. Shredder
+								4457,	-- Murkgill Forager
+								4458,	-- Murkgill Hunter
+								4459,	-- Murkgill Oracle
+								4460,	-- Murkgill Coldbringer
+								4461,	-- Murkgill Warrior
+								4505,	-- Bloodsail Deckhand
+								4506,	-- Bloodsail Swabby
+								4723,	-- Foreman Cozzle
+								11346,	-- Hakkari Oracle
+								11355,	-- Gurubashi Warrior
+								11383,	-- High Priestess Hai'watna
+								14487,	-- Gluggl
+								14488,	-- Roloch
+								14490,	-- Rippa
+								14491,	-- Kurmokk
+								14492,	-- Verifonix
+								17411,	-- Shadowmaw Alpha Transform
+								31636,	-- Jungle Panther
+								42858,	-- Braddok
+								43050,	-- Vale Howler
+								43223,	-- Zanzil Mindslave
+								43245,	-- Zanzil the Outcast
+								43255,	-- Zanzil the Outcast
+								43322,	-- Zanzil the Outcast
+								43364,	-- Bloodsail Hooch-Hound
+								43376,	-- Freewheelin' Juntz Fitztittle
+								43377,	-- Ephram "Midriff" Moonfall
+								43417,	-- Skymane Bonobo
+								43454,	-- "Good-Boy" Bruce
+								43536,	-- Southsea Mako
+								43542,	-- Lime Thief
+								43553,	-- Ninja
+								43556,	-- "Dead-Eye" Drederick McGumm
+								43605,	-- Bloodsail Oarsman
+								43636,	-- Bloodsail Corsair
+								43659,	-- Long John Copper
+								43660,	-- Enormous Shawn Stooker
+								43661,	-- Wailing Mary Smitts
+								43663,	-- Long John Copper (Worgen Form)
+								43664,	-- Enormous Shawn Stooker (Worgen Form)
+								43665,	-- Wailing Mary Smitts (Worgen Form)
+								43716,	-- Brashtide Raider
+								43726,	-- Bloodsail Corsair
+								43849,	-- Garley Lightrider
+								43910,	-- Chief Anders
+								43911,	-- Chief Gaulus
+								43912,	-- Chief Esquivel
+								43913,	-- Chief Miranda
+								44112,	-- Airwyn Bantamflax
+								44113,	-- Ironjaw Behemoth
+								44178,	-- Sweet Gary Guns
+								44179,	-- Harry No-Hooks
+								44182,	-- Gurlgrl
+								51658,	-- Mogh the Dead
+								51661,	-- Tsul'Kalu
+								51662,	-- Mahamba
+								51663,	-- Pogeyan
+								52173,	-- Razzashi Serpent
+								52224,	-- Jungle Serpent
+							},
 						}),
 					},
 				}),
@@ -2426,6 +2621,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								939,	-- Kurzen Elite
 								941,	-- Kurzen Headshrinker
 								942,	-- Kurzen Witch Doctor
+								978,	-- Kurzen Subchief
+								979,	-- Kurzen Shadow Hunter
 							},
 						}),
 					},
@@ -2589,7 +2786,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/5 Tumbled Crystal
 							["provider"] = { "i", 4106 },	-- Tumbled Crystal
-							["cr"] = 1096,	-- Venture Co. Geologist
+							["crs"] = {
+								1096,	-- Venture Co. Geologist
+								4260,	-- Venture Co. Shredder
+							},
 						}),
 						i(61073, {	-- Spare Metal Pauldrons
 							["timeline"] = { ADDED_4_0_3 },
@@ -2620,7 +2820,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						objective(1, {	-- 0/5 Tumbled Crystal
 							["provider"] = { "i", 4106 },	-- Tumbled Crystal
-							["cr"] = 1096,	-- Venture Co. Geologist
+							["crs"] = {
+								1096,	-- Venture Co. Geologist
+								4260,	-- Venture Co. Shredder
+							},
 						}),
 						i(61105, {	-- Scrap Metal Pauldrons
 							["timeline"] = { ADDED_4_0_3 },
@@ -2754,6 +2957,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 782 },	-- Skullsplitter Scout
 								{ "n", 672 },	-- Skullsplitter Spiritchaser
 								{ "n", 670 },	-- Skullsplitter Witch Doctor
+								{ "n", 43024},	-- Skullsplitter Troll
+								{ "n", 42858},	-- Braddok
 							},
 						}),
 						i(61076, {	-- Pauldrons of the Wayward Tribe
@@ -2790,6 +2995,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 782 },	-- Skullsplitter Scout
 								{ "n", 672 },	-- Skullsplitter Spiritchaser
 								{ "n", 670 },	-- Skullsplitter Witch Doctor
+								{ "n", 43024},	-- Skullsplitter Troll
+								{ "n", 42858},	-- Braddok
 							},
 						}),
 						i(61119, {	-- Pauldrons of the Wayward Tribe
