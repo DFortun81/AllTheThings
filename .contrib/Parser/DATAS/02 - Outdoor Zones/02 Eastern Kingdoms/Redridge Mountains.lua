@@ -1038,6 +1038,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								{ "n", 615 },	-- Blackrock Tracker
 								{ "n", 4064 },	-- Blackrock Scout
 								{ "n", 4463 },	-- Blackrock Summoner
+								{ "n", 43327},	-- Murdunk
+								{ "n", 43329},	-- Homurk
+								{ "n", 43350},	-- Utroka the Keymistress
 							},
 							["coord"] = { 28.2, 13, REDRIDGE_MOUNTAINS },
 						}),
