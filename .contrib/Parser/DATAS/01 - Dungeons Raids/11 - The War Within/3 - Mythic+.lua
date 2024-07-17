@@ -43,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 		})),
 		-- Future season
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_1, ADDED_11_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH, ADDED_11_1_0 } }, {
 			ach(20579),	-- Keystone Hero: The Rookery
 			ach(20581),	-- Keystone Hero: Priory of the Sacred Flame
 			ach(20583),	-- Keystone Hero: Cinderbrew Meadery
