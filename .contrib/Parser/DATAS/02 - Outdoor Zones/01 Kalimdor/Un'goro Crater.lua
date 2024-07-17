@@ -165,6 +165,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 31.8, 50.2, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Durrin's Archaeological Findings
+							["provider"] = { "i", 50410 },	-- Durrin's Archaeological Findings
+							["cr"] = 38329,	-- Durrin Direshovel
+						}),
 						i(53600, {	-- Careful Coverings
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -201,6 +205,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 76.4, 48.3, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/11 Bloodpetal slain
+							["providers"] = {
+								{ "n", 38358},	-- Bloodpetal
+								{ "n", 6509},	-- Bloodpetal Lasher
+								{ "n", 6510},	-- Bloodpetal Flayer
+								{ "n", 6511},	-- Bloodpetal Thresher
+								{ "n", 6512},	-- Bloodpetal Trapper
+								{ "n", 38506},	-- Illusory Bloodpetal
+							},
+						}),
 						i(53569, {	-- Confiscated Poacher's Gun
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -274,6 +288,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.0, 62.2, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Blazerunner slain
+							["provider"] = { "n", 9376 },	-- Blazerunner
+						}),
 						i(53574, {	-- Blazerunner Leggings
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -348,6 +365,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24689,	-- Flowing to the North
 					["coord"] = { 76.4, 48.3, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/6 Pack of Juvenile Bloodpetals slain
+							["provider"] = { "n", 38214 },	-- Pack of Juvenile Bloodpetals
+						}),
+					},
 				}),
 				q(24686, {	-- Carried on the Waves
 					["qg"] = 38274,	-- Garl Stormclaw
@@ -388,6 +410,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 70.8, 76.6, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/5 White Ravasaur Claw
+							["provider"] = { "i", 11477 },	-- White Ravasaur Claw
+							["crs"] = {
+								6505,	-- Ravasaur
+								6506,	-- Ravasaur Runner
+								6507,	-- Ravasaur Hunter
+								6508,	-- Venomhide Ravasaur
+								6581,	-- Ravasaur Matriarch
+								9683,	-- Lar'korwi Mate
+								9684,	-- Lar'korwi
+							},
+						}),
 						i(53557, {	-- White Bone Pummeler
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -664,6 +698,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 83.5, 46.0, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Bloodpetal Observation
+							["provider"] = { "o", 202187 },	-- Bloodpetal Observation Lever
+						}),
+						objective(2, {	-- 0/1 Diemetradon Observation
+							["provider"] = { "o", 202197 },	-- Diemetradon Observation Lever
+						}),
+						objective(3, {	-- 0/1 Gorilla Observation
+							["provider"] = { "o", 202196 },	-- Gorilla Observation Lever
+						}),
+						objective(4, {	-- 0/1 Pterrordax Observation
+							["provider"] = { "o", 202195 },	-- Pterrordax Observation Lever
+						}),
 						i(53594, {	-- Amulet of Newfound Knowledge
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -685,6 +731,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10302,	-- Krakle
 					["coord"] = { 55.3, 62.4, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- Find the hottest area of Fire Plume Ridge
+							["providers"] = {
+								{ "i",  12472 },	-- Krackle's Thermometer
+								{ "o", 148503 },	-- Fire Plume Ridge Hot Spot
+							},
+							["coord"] = { 48.4, 43.3, UNGORO_CRATER },
+						}),
+					},
 				}),
 				q(974, {	-- Finding the Source
 					["qg"] = 10302,	-- Krakle
@@ -802,6 +857,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.0, 60.5, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/4 Dinosaurs Baited
+							["provider"] = { "i", 50430 },	-- Scraps of Rotting Meat
+							["crs"] = {
+								6501,	-- Stegodon
+								6502,	-- Plated Stegodon
+								6503,	-- Spiked Stegodon
+								6504,	-- Thunderstomp Stegodon
+								9162,	-- Young Diemetradon
+								9163,	-- Diemetradon
+								9164,	-- Elder Diemetradon
+							},
+						}),
 						i(53563, {	-- Stegodon Tusk Mace
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1089,6 +1156,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24690,	-- Blazerunner
 					["coord"] = { 54.8, 63.8, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/96 Silithid Leg
+							["provider"] = { "i", 50371 },	-- Silithid Leg
+							["crs"] = {
+								6551,	-- Gorishi Wasp
+								6552,	-- Gorishi Worker
+								6553,	-- Gorishi Reaver
+								6554,	-- Gorishi Stinger
+								6555,	-- Gorishi Tunneler
+								6582,	-- Clutchmother Zavas
+								38305,	-- Gorishi Fledgling Colossus
+							},
+						}),
+					},
 				}),
 				q(13904, {	-- Poached, Scrambled, Or Raw?
 					["providers"] = {
@@ -1154,6 +1235,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 31.8, 50.2, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/8 Dinosaur Bone
+							["provider"] = { "i", 11114 },	-- Dinosaur Bone
+							["crs"] = {
+								6501,	-- Stegodon
+								6502,	-- Plated Stegodon
+								6503,	-- Spiked Stegodon
+								6504,	-- Thunderstomp Stegodon
+								9162,	-- Young Diemetradon
+								9163,	-- Diemetradon
+								9164,	-- Elder Diemetradon
+							},
+						}),
 						i(53585, {	-- Archaeologist's Utility Boots
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1268,6 +1361,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Picking up or completing this quest will make |cFFFFD700Speak with Spraggle|r unavailable, making its quest chain and rewards unobtainable.",
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/35 Webbed Pterrordax Scale
+							["provider"] = { "i", 11831 },	-- Webbed Pterrordax Scale
+							["crs"] = {
+								9165,	-- Fledgling Pterrordax
+								9166,	-- Pterrordax
+								9167,	-- Frenzied Pterrordax
+							},
+						}),
 						i(53589, {	-- Shizzle's Nozzle Cleaner
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1331,6 +1432,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24701,	-- Marshal's Refuse
 					["coord"] = { 43.2, 41.0, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/2 Un'Goro Gorilla Pelt
+							["provider"] = { "i", 11478 },	-- Un'Goro Gorilla Pelt
+							["cr"] = 6514,	-- Un'Goro Gorilla
+						}),
+						objective(2, {	-- 0/2 Un'Goro Stomper Pelt
+							["provider"] = { "i", 11479 },	-- Un'Goro Stomper Pelt
+							["cr"] = 6513,	-- Un'Goro Stomper
+						}),
+						objective(3, {	-- 0/2 Un'Goro Thunderer Pelt
+							["provider"] = { "i", 11480 },	-- Un'Goro Thunderer Pelt
+							["cr"] = 6516,	-- Un'Goro Thunderer
+						}),
+					},
 				}),
 				q(4289, {	-- The Apes of Un'Goro
 					["qg"] = 9619,	-- Torwa Pathfinder
@@ -1358,6 +1473,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.2, 76.5, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Lar'korwi's Head
+							["provider"] = { "i", 11510 },	-- Lar'korwi's Head
+							["cr"] = 9684,	-- Lar'korwi
+						}),
 						i(53587, {	-- Plainstalker Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1402,6 +1521,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Un'Goro's Broodmother slain
+							["provider"] = { "n", 38708 },	-- Devilsaur Queen
+						}),
 						i(53597, {	-- Toy Windmill
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1440,6 +1562,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24703,	-- An Important Lesson
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/15 "Dragon" slain
+							["providers"] = {
+								{ "n", 38252},	-- "Dragon"
+								{ "n", 6498},	-- Devilsaur
+								{ "n", 6499},	-- Ironhide Devilsaur
+								{ "n", 6500},	-- Tyrant Devilsaur
+								{ "n", 6501},	-- Stegodon
+								{ "n", 6502},	-- Plated Stegodon
+								{ "n", 6503},	-- Spiked Stegodon
+								{ "n", 6504},	-- Thunderstomp Stegodon
+								{ "n", 6505},	-- Ravasaur
+								{ "n", 6506},	-- Ravasaur Runner
+								{ "n", 6507},	-- Ravasaur Hunter
+								{ "n", 6508},	-- Venomhide Ravasaur
+								{ "n", 6581},	-- Ravasaur Matriarch
+								{ "n", 6583},	-- Gruff
+								{ "n", 6584},	-- King Mosh
+								{ "n", 9162},	-- Young Diemetradon
+								{ "n", 9163},	-- Diemetradon
+								{ "n", 9164},	-- Elder Diemetradon
+								{ "n", 9165},	-- Fledgling Pterrordax
+								{ "n", 9166},	-- Pterrordax
+								{ "n", 9167},	-- Frenzied Pterrordax
+								{ "n", 9683},	-- Lar'korwi Mate
+								{ "n", 9684},	-- Lar'korwi
+								{ "n", 38509},	-- Illusory Pterrordax
+								{ "n", 46291},	-- And a Dinosaur
+								{ "n", 46691},	-- And a Dinosaur - Hologram
+							},
+						}),
+					},
 				}),
 				q(24731, {	-- The Fare of Lar'korwi
 					["qg"] = 9619,	-- Torwa Pathfinder
@@ -1467,6 +1621,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.0, 62.2, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Gorishi Fledgling Colossus slain
+							["provider"] = { "n", 38305 },	-- Gorishi Fledgling Colossus
+						}),
 						i(53577, {	-- Bud-Nipping Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1491,6 +1648,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.2, 41.6, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 U'cha's Pelt
+							["provider"] = { "i", 11476 },	-- U'cha's Pelt
+							["cr"] = 9622,	-- U'cha
+						}),
 						i(53583, {	-- Beast Clobberer
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1554,6 +1715,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24731,	-- The Fare of Lar'korwi
 					["coord"] = { 71.2, 76.5, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/2 Ravasaur Pheromone Gland
+							["provider"] = { "i", 11509 },	-- Ravasaur Pheromone Gland
+							["cr"] = 9683,	-- Lar'korwi Mate
+						}),
+					},
 				}),
 				q(4291, {	-- The Scent of Lar'korwi
 					["qg"] = 9619,	-- Torwa Pathfinder
@@ -1589,6 +1756,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						24704,	-- The Evil Dragons of Un'Goro Crater
 					},
 					["timeline"] = { ADDED_4_0_3 },
+					["description"] = "Engage, but do not kill Steaming Fury until Maximillian finished his prayer.",
+					["groups"] = {
+						objective(1, {	-- 0/2 Prayers
+							["provider"] = { "n", 38254 },	-- Steaming Fury
+						}),
+					},
 				}),
 				q(3909, {	-- The Videre Elixir
 					["qg"] = 9298,	-- Donova Snowden
@@ -1700,6 +1873,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24703,	-- An Important Lesson
 					["coord"] = { 30.6, 51.1, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Damsel by the Shore saved
+							["provider"] = { "n", 38238 },	-- Damsel by the Shore
+						}),
+						objective(2, {	-- 0/1 Damsel in the Cliffs saved
+							["provider"] = { "n", 38239 },	-- Damsel in the Cliffs
+						}),
+						objective(3, {	-- 0/1 Damsel of the North saved
+							["provider"] = { "n", 38240 },	-- Damsel of the North
+						}),
+					},
 				}),
 				q(24911, {	-- Tropical Paradise Beckons
 					["providers"] = {
@@ -1739,6 +1923,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 55.0, 62.2, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/9 Un'Goro Ash
+							["provider"] = { "i", 11829 },	-- Un'Goro Ash
+							["crs"] = {
+								6520,	-- Scorching Elemental
+								6521,	-- Living Blaze
+								9376,	-- Blazerunner
+								14460,	-- Blazing Invader
+								14461,	-- Baron Charr
+							},
+						}),
+					},
 				}),
 				q(4502, {	-- Volcanic Activity
 					["qg"] = 8496,	-- Liv Rizzlefix
