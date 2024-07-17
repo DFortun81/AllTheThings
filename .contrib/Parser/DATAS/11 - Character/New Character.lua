@@ -97,6 +97,11 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		ach(7382, {	-- Dynamic Duo
 			["timeline"] = { ADDED_5_0_4 },
+			["g"] = {
+				i(212174, {	-- The Warband Map to Everywhere All At Once (TOY!)
+					["timeline"] = { ADDED_11_PH_PREPATCH },
+				}),
+			},
 		}),
 		-- #if AFTER TBC
 		ach(889, {	-- Fast and Furious

@@ -1599,10 +1599,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222566),	-- Vagabond's Torch
 		}),
 	}),
-	--[[
 	prof(JEWELCRAFTING, {
-		spell(, {	--
-		}),
+		--spell(, {	--
+		--}),
 		n(ARMOR, {
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
@@ -1617,8 +1616,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 		filter(REAGENTS, {
 		}),
+		filter(TOYS, {
+			i(215147),	-- Beautification Iris (TOY!)
+			i(215145),	-- Remembrance Stone (TOY!)
+		}),
 	}),
-	--]]
 	prof(LEATHERWORKING, {
 		n(ARMOR, {
 			filter(LEATHER, {

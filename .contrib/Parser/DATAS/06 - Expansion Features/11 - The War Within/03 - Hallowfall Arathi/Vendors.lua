@@ -79,6 +79,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 					}, {	-- RENOWN 16 --
 					}, {	-- RENOWN 17 --
+						i(228707, {	-- Trial of Burning Light (TOY!)
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+						}),
 						i(223317, {	-- Vermillion Imperial Lynx (MOUNT!)
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 8125}},
 						}),

@@ -3,7 +3,6 @@ i(216893),	-- Goblin Town-in-a-Box
 11.0.0.54311
 i(216887),	--
 11.0.0.54521
-i(224783),	-- Sovereign's Finery Chest \\ Sovereign Finery Chest
 i(224809),	-- Earthen Plumber's Pipe
 11.0.0.54605
 i(225347),	-- Web-Vandal's Spinning Wheel
@@ -30,7 +29,6 @@ Missing in ToyDB.lua
 11.0.0.54311
 i(216887),	--
 11.0.0.54521
-i(224783),	-- Sovereign's Finery Chest \\ Sovereign Finery Chest
 i(224809),	-- Earthen Plumber's Pipe
 11.0.0.54605
 i(225347),	-- Web-Vandal's Spinning Wheel

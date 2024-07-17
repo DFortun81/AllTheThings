@@ -250,6 +250,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
 				}),
 			}),
+			filter(TOYS, {
+				i(225556),	-- Ancient Construct (TOY!) [Might be from Only QuestID 83452]
+			}),
 			n(TREASURES, {
 				o(455516, {	-- Sturdy Chest
 					["coord"] = { 32.7, 74.2, 2249 },
@@ -266,9 +269,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				o(454093, {	-- Sturdy Chest
 					["coord"] = { 49.6, 35.7, 2249 },
 					["questID"] = 83452,
-					["g"] = {
-						i(225556),	-- Ancient Construct (TOY!) (TODO: figure out if it is static or random)
-					},
 				}),
 				o(455496, {	-- Sturdy Chest
 					["coord"] = { 35.5, 20.1, 2249 },
@@ -1035,6 +1035,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			filter(TOYS, {
 				i(211931, {	-- Abyss Caller Horn (TOY!)
+					["cost"] = {{"c", UNDERCOIN, 500}},
+				}),
+				i(228413, {	-- Lampyridae Lure (TOY!)
 					["cost"] = {{"c", UNDERCOIN, 500}},
 				}),
 				i(225910, {	-- Pileus Delight (TOY!)

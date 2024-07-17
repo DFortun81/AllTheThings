@@ -1344,12 +1344,18 @@ i(220692);	-- X-treme Water Blaster Display
 -- #if AFTER TWW
 i(204405);	-- Stuffed Bear
 -- #endif
+i(212174);	-- The Warband Map to Everywhere All At Once
 
 ------------------
 -- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 i(211931);	-- Abyss Caller Horn
+i(225556);	-- Ancient Construct
+i(228705);	-- Arachnoserum
+i(225659);	-- Arathi Book Collection
 i(219387);	-- Barrel of Fireworks
+i(215147);	-- Beautification Iris
+i(228698);	-- Candleflexer's Dumbbell
 i(224552);	-- Cave Spelunker's Torch
 i(221962);	-- Defective Escape Pod
 i(221964);	-- Filmless Camera
@@ -1357,24 +1363,36 @@ i(225969);	-- Forged Flag of Victory
 i(225933);	-- Forged Legend's Pennant
 i(226519);	-- General's Expertise
 i(224585);	-- Hanna's Locket
+i(225641);	-- Illusive Kobyss Lure
 i(226810);	-- Infiltrator's Shroud
+i(228413);	-- Lampyridae Lure
 i(224251);	-- Memory Chord
 i(224643);	-- Pet-Sized Candle
 i(225910);	-- Pileus Delight
+i(215145);	-- Remembrance Stone
+i(228706);	-- Rockslidomancer's Stone
+i(224554);	-- Silver Linin' Scepter
+i(224783);	-- Sovereign's Finery Chest
 i(219403);	-- Stonebound Lantern
 i(225547);	-- Toxic Victory
+i(228707);	-- Trial of Burning Light
 i(223312);	-- Trusty Hat
 i(227538);	-- Unbound Legend's Pennant
 i(227539);	-- Unbound Strategist's Pennant
 i(216665);	-- Warband Bank Distance Inhibitor
+i(226191);	-- Web Pet Leash
 i(221966);	-- Wormhole Generator: Khaz Algar
 
 ------------------
 -- PATCH 11.0.0 --
 ------------------
 -- UNSORTED --
-i(215147);	-- Beautification Iris
 i(218310);	-- Box of Puntables
-i(215145);	-- Remembrance Stone
-i(224554);	-- Silver Linin' Scepter
-i(212174);	-- The Warband Map to Everywhere All At Once
+i(224809);	-- Earthen Plumber's Pipe
+i(225347);	-- Web-Vandal's Spinning Wheel
+
+------------------
+-- PATCH 11.0.2 --
+------------------
+-- UNSORTED --
+i(228914);	-- Arachnophile Spectacles

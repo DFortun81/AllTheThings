@@ -30,6 +30,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					}),
 				},
 			}),
+			n(227607, {	-- Fliq'ri <Mistress of Minions>
+				--["coord"] = { X, Y, MAP },
+				["g"] = {
+					i(226191),	-- Web Pet Leash (TOY!)
+				},
+			}),
 			n(218193, {	-- Iliani <Enchanting Supplies>
 				["coord"] = { 45.4, 33.3, NERUBAR },
 				["g"] = {

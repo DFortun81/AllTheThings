@@ -73,6 +73,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"c", KEJ, 2250}},
 						}),
 					}, {	-- RENOWN 17 --
+						i(228705, {	-- Arachnoserum (TOY!)
+							["cost"] = {{"c", KEJ, 3940}},
+						}),
 						i(218347, {	-- Thread-Bearer's Pauldrons
 							["cost"] = {{"c", KEJ, 1125}},
 						}),

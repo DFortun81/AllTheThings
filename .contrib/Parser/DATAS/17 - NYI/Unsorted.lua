@@ -9,120 +9,125 @@ root(ROOTS.Unsorted, {
 				exploration(15667),	-- Delves
 				exploration(15552),	-- The Undersea
 			}),
-			i(228507),	-- Swarmite Eggsac
-			i(228510),	-- Ripped Swarmite Wing
-			i(228608),	-- On the Application of Arathi Technology to Earthen Life
-			i(228609),	-- Rock Roasting for Dummies
-			i(228610),	-- Artisan's Consortium Payout
-			i(228611),	-- Artisan's Consortium Payout
-			i(228612),	-- Artisan's Consortium Payout
-			i(228623),	-- Blue's Request
-			i(228624),	-- Depleted Awakened Flightstone
-			i(228625),	-- Depleted Ruby Flightstone
-			i(228626),	-- Depleted Blackened Flightstone
-			i(228627),	-- Lively Clutch of Wyrm's Awakened Crests
-			i(228628),	-- Yawning Basket of Aspect's Awakened Crests
-			i(228629),	-- Restless Satchel of Drake's Awakened Crests
-			i(228630),	-- Pouch of Whelpling's Awakened Crests
-			i(228631),	-- Satchel of Drake's Awakened Crests
-			i(228632),	-- Clutch of Wyrm's Awakened Crests
-			i(228633),	-- Large Pouch of Whelpling's Awakened Crests
-			i(228654),	-- Scrit's Handmade Shoes
-			i(228655),	-- Scrit's Handmade Gloves
-			i(228656),	-- Scrit's Handmade Shoulders
-			i(228657),	-- Scrit's Handmade Girdle
-			i(228658),	-- Batzvara's Gratitude
-			i(228668),	-- Compiler's Handwraps
-			i(228671),	-- Compiler's Shoulderguards
-			i(228673),	-- Compiler's Chain Clasp
-			i(228674),	-- Compiler's Greaves
-			i(228698),	-- Candleflexer's Dumbbell
-			i(228705),	-- Arachnoserum
-			i(228706),	-- Rockslidomancer's Stone
-			i(228707),	-- Trial of Burning Light
-			i(228708),	-- Formula: Gleeful Glamour - Earthen
-			i(228711),	-- Small Candle
-			i(228720),	-- Nascent Gemstone
-			i(228721),	-- Hearty Feast
-			-----------
-
-
-
-
-
-
+			filter(MISC, {
+				i(228507),	-- Swarmite Eggsac
+				i(228510),	-- Ripped Swarmite Wing
+				i(228608),	-- On the Application of Arathi Technology to Earthen Life
+				i(228609),	-- Rock Roasting for Dummies
+				i(228624),	-- Depleted Awakened Flightstone
+				i(228625),	-- Depleted Ruby Flightstone
+				i(228626),	-- Depleted Blackened Flightstone
+				i(228627),	-- Lively Clutch of Wyrm's Awakened Crests
+				i(228628),	-- Yawning Basket of Aspect's Awakened Crests
+				i(228629),	-- Restless Satchel of Drake's Awakened Crests
+				i(228630),	-- Pouch of Whelpling's Awakened Crests
+				i(228631),	-- Satchel of Drake's Awakened Crests
+				i(228632),	-- Clutch of Wyrm's Awakened Crests
+				i(228633),	-- Large Pouch of Whelpling's Awakened Crests
+				i(228711),	-- Small Candle
+				i(228720),	-- Nascent Gemstone
+				i(228723),	-- Earthen Pet Rock
+				i(228741),	-- Lamplighter Supply Satchel
+				i(228742),	-- Unidentifiable Cloth
+				i(228743),	-- Damp Weavercloth
+				i(228744),	-- Golbin Twist-Rag
+				i(228745),	-- Aurora Strand
+				i(228756),	-- Bonus Snuffling Experience
+				i(228940),	-- Notorious Thread's Hearthstone
+				i(228942),	-- Bountiful Coffer
+				-- Have QuestID attached
+				i(228943),	-- Spymaster's Severed Thread
+				i(228944),	-- Crypt Lord's Severed Thread
+				i(228945),	-- Executor's Severed Thread
+				i(228946),	-- Weaver's Lair Profession Table
+				i(228947),	-- Weaver's Lair Profession Table
+				---
+				i(228949),	-- Rumor Map
+				i(228950),	-- Rumor Map Bundle
+				i(228951),	-- Pact Treasure Map
+				i(228952),	-- Pact Treasure Map Bundle
+				i(228954),	-- Angler's Guide [New Weather-Beaten Journal?!]
+			}),
+			filter(QUEST_ITEMS, {
+				i(228623),	-- Blue's Request
+			}),
+			n(ARMOR, {
+				-- Probably from Quests
+				i(228654),	-- Scrit's Handmade Shoes
+				i(228655),	-- Scrit's Handmade Gloves
+				i(228656),	-- Scrit's Handmade Shoulders
+				i(228657),	-- Scrit's Handmade Girdle
+				i(228658),	-- Batzvara's Gratitude
+				i(228668),	-- Compiler's Handwraps
+				i(228671),	-- Compiler's Shoulderguards
+				i(228673),	-- Compiler's Chain Clasp
+				i(228674),	-- Compiler's Greaves
+			}),
 			filter(BATTLE_PETS, {
 				i(223498),	-- Charismatic Courier (PET!) [In-Game Shop?]
 				i(228765),	-- Gummi (PET!) [Promotion?]
 				i(228758),	-- Parrlok (PET!) [Trading Post?]
 			}),
+			filter(TOYS, {
+				i(228914),	-- Arachnophile Spectacles (TOY!)
+			}),
+			n(PROFESSIONS, {
+				prof(COOKING, {
+					i(228721),	-- Hearty Feast
+				}),
+				prof(TAILORING, {
+					i(228930),	-- Adorning Ribbon
+				}),
+				i(228921),	-- Griftah's Heavy-Duty Embellishing Powder
+				-- Profession Knowledge Notes
+				i(224817),	-- Algari Herbalist's Notes
+				i(224818),	-- Algari Miner's Notes
+				i(228773),	-- Algari Alchemist's Notebook
+				i(228774),	-- Algari Blacksmith's Journal
+				i(228775),	-- Algari Engineer's Notepad
+				i(228776),	-- Algari Scribe's Journal
+				i(228777),	-- Algari Jewelcrafter's Notebook
+				i(228778),	-- Algari Leatherworker's Journal
+				i(228779),	-- Algari Tailor's Notebook
 
-			-- Profession Knowledge Notes
-			i(224817),	-- Algari Herbalist's Notes
-			i(224818),	-- Algari Miner's Notes
-			--
+				-- I wonder if this has to do with Crafting Orders..
+				i(228724),	-- Flicker of Alchemy Knowledge
+				i(228725),	-- Glimmer of Alchemy Knowledge
+				i(228726),	-- Flicker of Blacksmithing Knowledge
+				i(228727),	-- Glimmer of Blacksmithing Knowledge
+				i(228728),	-- Flicker of Enchanting Knowledge
+				i(228729),	-- Glimmer of Enchanting Knowledge
+				i(228730),	-- Flicker of Engineering Knowledge
+				i(228731),	-- Glimmer of Engineering Knowledge
+				i(228732),	-- Flicker of Inscription Knowledge
+				i(228733),	-- Glimmer of Inscription Knowledge
+				i(228734),	-- Flicker of Jewelcrafting Knowledge
+				i(228735),	-- Glimmer of Jewelcrafting Knowledge
+				i(228736),	-- Flicker of Leatherworking Knowledge
+				i(228737),	-- Glimmer of Leatherworking Knowledge
+				i(228738),	-- Flicker of Tailoring Knowledge
+				i(228739),	-- Glimmer of Tailoring Knowledge
 
+				-- Same with these
+				i(228916),	-- Algari Tailor's Satchel
+				i(228917),	-- Satchel of Ore
+				i(228918),	-- Satchel of Leather
+				i(228919),	-- Satchel of Algari Herbs
+				i(228920),	-- Satchel of Chitin
+				i(228931),	-- Algari Enchanter's Satchel
+				i(228932),	-- Algari Engineer's Satchel
+				i(228933),	-- Algari Leatherworker's Satchel
 
-
-			i(228723),	-- Earthen Pet Rock
-			i(228724),	-- Flicker of Alchemy Knowledge
-			i(228725),	-- Glimmer of Alchemy Knowledge
-			i(228726),	-- Flicker of Blacksmithing Knowledge
-			i(228727),	-- Glimmer of Blacksmithing Knowledge
-			i(228728),	-- Flicker of Enchanting Knowledge
-			i(228729),	-- Glimmer of Enchanting Knowledge
-			i(228730),	-- Flicker of Engineering Knowledge
-			i(228731),	-- Glimmer of Engineering Knowledge
-			i(228732),	-- Flicker of Inscription Knowledge
-			i(228733),	-- Glimmer of Inscription Knowledge
-			i(228734),	-- Flicker of Jewelcrafting Knowledge
-			i(228735),	-- Glimmer of Jewelcrafting Knowledge
-			i(228736),	-- Flicker of Leatherworking Knowledge
-			i(228737),	-- Glimmer of Leatherworking Knowledge
-			i(228738),	-- Flicker of Tailoring Knowledge
-			i(228739),	-- Glimmer of Tailoring Knowledge
-			i(228741),	-- Lamplighter Supply Satchel
-			i(228742),	-- Unidentifiable Cloth
-			i(228743),	-- Damp Weavercloth
-			i(228744),	-- Golbin Twist-Rag
-			i(228745),	-- Aurora Strand
-			i(228756),	-- Bonus Snuffling Experience
-
-			i(228761),	-- Classic Brick Tabard
-			i(228762),	-- Classic Lively Tabard
-			i(228763),	-- Classic Crimson Tabard
-			i(228764),	-- Classic Sunny Tabard
-
-			i(228773),	-- Algari Alchemist's Notebook
-			i(228774),	-- Algari Blacksmith's Journal
-			i(228775),	-- Algari Engineer's Notepad
-			i(228776),	-- Algari Scribe's Journal
-			i(228777),	-- Algari Jewelcrafter's Notebook
-			i(228778),	-- Algari Leatherworker's Journal
-			i(228779),	-- Algari Tailor's Notebook
-			i(228914),	-- Arachnophile Spectacles
-			i(228916),	-- Algari Tailor's Satchel
-			i(228917),	-- Satchel of Ore
-			i(228918),	-- Satchel of Leather
-			i(228919),	-- Satchel of Algari Herbs
-			i(228920),	-- Satchel of Chitin
-			i(228921),	-- Griftah's Heavy-Duty Embellishing Powder
-			i(228930),	-- Adorning Ribbon
-			i(228931),	-- Algari Enchanter's Satchel
-			i(228932),	-- Algari Engineer's Satchel
-			i(228933),	-- Algari Leatherworker's Satchel
-			i(228940),	-- Notorious Thread's Hearthstone
-			i(228942),	-- Bountiful Coffer
-			i(228943),	-- Spymaster's Severed Thread
-			i(228944),	-- Crypt Lord's Severed Thread
-			i(228945),	-- Executor's Severed Thread
-			i(228946),	-- Weaver's Lair Profession Table
-			i(228947),	-- Weaver's Lair Profession Table
-			i(228949),	-- Rumor Map
-			i(228950),	-- Rumor Map Bundle
-			i(228951),	-- Pact Treasure Map
-			i(228952),	-- Pact Treasure Map Bundle
-			i(228954),	-- Angler's Guide
+				i(228610),	-- Artisan's Consortium Payout [Uncommon]
+				i(228611),	-- Artisan's Consortium Payout [Rare]
+				i(228612),	-- Artisan's Consortium Payout [Epic]
+			}),
+			filter(COSMETIC, {
+				i(228761),	-- Classic Brick Tabard
+				i(228762),	-- Classic Lively Tabard
+				i(228763),	-- Classic Crimson Tabard
+				i(228764),	-- Classic Sunny Tabard
+			}),
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(BATTLE_PETS, {
@@ -2565,7 +2570,7 @@ root(ROOTS.Unsorted, {
 				i(224786),	-- Skeleton King Outfit
 				i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
 				i(224792),	-- Sanguine Aristocrat Outfit
-				i(224809),	-- Earthen Plumber's Pipe
+
 				i(224913),	-- Radiant Fuel Cache
 				i(224941),	-- Radiant Fuel Cache
 				i(225240),	-- PH_1
@@ -2593,11 +2598,11 @@ root(ROOTS.Unsorted, {
 				i(225430),	-- Green Hills of Stranglethorn - Page 14
 				i(225541),	-- PH_4
 				i(225553),	-- PH_5
-				i(225554),	-- Sunless Lure \\ Sunless Orb
 
-				i(225558),	-- Murkfin Lure \\ Murkfin Scales
-				i(225559),	-- Hungering Shimmerfin \\ Hungering Orb
-				i(225560),	-- Ragefin Necrostaff \\ Darkwater Crook
+
+
+
+
 				i(225564),	-- Meaty Muscle
 				i(225565),	-- Massive Worm Flank
 				i(225566),	-- Warped Wing
@@ -2744,7 +2749,7 @@ root(ROOTS.Unsorted, {
 				i(227678),	-- Satchel of Engineering Surplus
 				i(227679),	-- Satchel of Inscription Surplus
 				i(227680),	-- Satchel of Jewelcrafting Surplus
-				i(227713),	-- Artisan's Consortium Payout
+				i(227713),	-- Artisan's Consortium Payout [Common]
 				i(227769),	-- Bountiful Bolts
 				i(227770),	-- Assorted Whirligigs
 				i(227771),	-- Blinker Fluid
@@ -3042,20 +3047,12 @@ root(ROOTS.Unsorted, {
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),
 			filter(TOYS, {
-				i(215147),	-- Beautification Iris (TOY!)
 				i(218310),	-- Box of Puntables (TOY!)
-				i(215145),	-- Remembrance Stone (TOY!)
-				i(224554),	-- Silver Linin' Scepter (TOY!)
-				i(212174),	-- The Warband Map to Everywhere All At Once (TOY!)
-
+				i(224809),	-- Earthen Plumber's Pipe (TOY!)
+				i(225347),	-- Web-Vandal's Spinning Wheel (TOY!)
 				---
 				i(215146),	-- JC Gemcutting Toy
-				i(225347),	-- Web-Vandal's Spinning Wheel
-				i(225641),	-- Illusive Kobyss Lure
-				i(225659),	-- Arathi Book Collection \\ Arathor Book Collection
-				i(226191),	-- Web Pet Leash
 				i(228412),	-- Scouting Map: The Skies of the Dragon Isles
-				i(228413),	-- Lampyridae Lure
 			}),
 			race(EARTHEN_ALLIANCE, {
 				-- My Guess?? Earthen Starting Gear?

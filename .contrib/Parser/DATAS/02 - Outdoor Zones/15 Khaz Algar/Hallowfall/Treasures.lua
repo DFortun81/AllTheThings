@@ -190,6 +190,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					{ "i", 225212, 1 },	-- The Big Book of Arathi Idioms / Question 6
 				},
 				["g"] = {
+					i(225659),	-- Arathi Book Collection (TOY!)
 					q(83300, {	-- Question 1
 						["name"] = "Get Palawltar's Codex of Dimensional Structure for right answer on 1st question"
 					}),
@@ -208,8 +209,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					q(83305, {	-- Question 6
 						["name"] = "Get The Big Book of Arathi Idioms for right answer on 6th question"
 					}),
-					--
-					i(225659),	-- Arathi Book Collection (TOY!)
 				},
 			}),
 			-- achievement crits
@@ -232,6 +231,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			o(441628, {	-- Captain's Chest
 				["coord"] = { 25.7, 38.4, HALLOWFALL },
 				["questID"] = 82061,
+			}),
+			o(441800, {	-- Sunken Cache
+				["sourceQuests"] = { 82012, 82024, 82025, 82026 },	-- Talk to all Sky-Captains
+				["coord"] = { 45.9, 45.1, HALLOWFALL },
+				["questID"] = 82005,
+				["g"] = {
+					i(224554),	-- Silver Linin' Scepter (TOY!)
+				},
 			}),
 		}),
 	}),

@@ -789,6 +789,42 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["provider"] = { "n", 215335 },	-- General Steelstrike
 				["coord"] = { 40.5, 50.8, HALLOWFALL },
 			}),
+			q(82025, {	-- Talk with Sky-Captain Aerthin
+				["name"] = "Talk with Sky-Captain Aerthin",
+				["description"] = "This NPC is Patrolling",
+				["provider"] = { "n", 222323 },	-- Sky-Captain Aerthin
+				["coords"] = {
+					{ 33.0, 43.0, HALLOWFALL },
+					{ 34.2, 45.4, HALLOWFALL },
+				},
+			}),
+			q(82024, {	-- Talk with Sky-Captain Clairmonte
+				["name"] = "Talk with Sky-Captain Clairmonte",
+				["description"] = "This NPC is Patrolling",
+				["provider"] = { "n", 222311 },	-- Sky-Captain Clairmonte
+				["coords"] = {
+					{ 44.6, 45.8, HALLOWFALL },
+					{ 34.2, 45.4, HALLOWFALL },
+				},
+			}),
+			q(82012, {	-- Talk with Sky-Captain Dornald
+				["name"] = "Talk with Sky-Captain Dornald",
+				["description"] = "This NPC is Patrolling",
+				["provider"] = { "n", 222333 },	-- Sky-Captain Dornald
+				["coords"] = {
+					{ 45.4, 47.4, HALLOWFALL },
+					{ 58.0, 40.2, HALLOWFALL },
+				},
+			}),
+			q(82026, {	-- Talk with Sky-Captain Onaro
+				["name"] = "Talk with Sky-Captain Onaro",
+				["description"] = "This NPC is Patrolling",
+				["provider"] = { "n", 222337 },	-- Sky-Captain Onaro
+				["coords"] = {
+					{ 45.4, 47.4, HALLOWFALL },
+					{ 58.0, 40.2, HALLOWFALL },
+				},
+			}),
 			n(BONUS_OBJECTIVES, {
 				q(81568, {	-- Release the Beasts
 					["coord"] = { 55.2, 26.8, HALLOWFALL },

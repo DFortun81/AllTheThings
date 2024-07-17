@@ -67,6 +67,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 6500}},
 						}),
 					}, {	-- RENOWN 14 --
+						i(228706, {	-- Rockslidomancer's Stone (TOY!)
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+						}),
 					}, {	-- RENOWN 15 --
 						i(218344, {	-- Honorary Councilmember's Spaulders
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 3250}},

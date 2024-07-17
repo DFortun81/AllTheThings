@@ -73,6 +73,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 6500}},
 						}),
 					}, {	-- RENOWN 18 --
+						i(228698, {	-- Candleflexer's Dumbbell (TOY!)
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
+						}),
 						i(223306, {	-- Inflammable Forging Cinch
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
 						}),
