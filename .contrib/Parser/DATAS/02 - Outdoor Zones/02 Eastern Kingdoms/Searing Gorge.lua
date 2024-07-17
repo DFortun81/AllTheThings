@@ -1396,6 +1396,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								5861,	-- Twilight Fire Guard
 								5862,	-- Twilight Geomancer
 								8419,	-- Twilight Idolater
+								47309,	-- Minister Kiyuubi
+								47310,	-- Minister Letherio
+								47311,	-- Minister Finister
 							},
 						}),
 					},
