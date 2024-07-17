@@ -1166,19 +1166,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
-						-- FIX_ME!!!
-						objective(1, {	-- 0/8 Tunnel Rat Ear
-							["provider"] = { "i", 3110 },	-- Tunnel Rat Ear
-							["crs"] = {
-								1172,	-- Tunnel Rat Vermin
-								1173,	-- Tunnel Rat Scout
-								1174,	-- Tunnel Rat Geomancer
-								1175,	-- Tunnel Rat Digger
-								1176,	-- Tunnel Rat Forager
-								1177,	-- Tunnel Rat Surveyor
-								1202,	-- Tunnel Rat Kobold
-							},
-						}),
 						objective(1, {	-- 0/12 Tunnel Rat Ear
 							["provider"] = { "i", 3110 },	-- Tunnel Rat Ear
 							["crs"] = {
@@ -1635,13 +1622,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.6, 64.7, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-				}),
 					["groups"] = {
 						objective(1, {	-- 0/3 Pristine Flight Feather
 							["provider"] = { "i", 60792 },	-- Pristine Flight Feather
 							["cr"] = 44628,	-- Golden Eagle
 						}),
 					},
+				}),
 			}),
 			n(RARES, {
 				n(45380, {	-- Ashtail
