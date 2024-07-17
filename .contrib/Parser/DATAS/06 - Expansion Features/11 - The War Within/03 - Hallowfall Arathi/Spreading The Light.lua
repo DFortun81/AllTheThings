@@ -269,6 +269,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
+					i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
 				}),
 				n(TREASURES, {
 					o(441795, {	-- Hallowfall Sparkfly

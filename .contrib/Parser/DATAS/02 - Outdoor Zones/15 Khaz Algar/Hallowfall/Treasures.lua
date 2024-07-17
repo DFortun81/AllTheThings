@@ -41,7 +41,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				},
 				["questID"] = 83263,
 				["g"] = {
-					i(225592),	-- Exquisitely Eviscerated Muscle
 					i(225639),	-- Recipe: Exquisitely Eviscerated Muscle (RECIPE!)
 				},
 			}),

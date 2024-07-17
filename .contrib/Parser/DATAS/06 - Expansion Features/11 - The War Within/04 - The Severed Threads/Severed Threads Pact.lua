@@ -14,6 +14,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			n(REWARDS, {
 				i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 				i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
+				i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
 			}),
 		}),
 	}),

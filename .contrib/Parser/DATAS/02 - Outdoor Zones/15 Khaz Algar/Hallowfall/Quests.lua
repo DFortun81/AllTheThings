@@ -468,7 +468,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					},
 				}),
 				q(82219),	-- Spice Up Your Life
-				q(82223),	-- A Home Cooked Meal
+				q(82223, {	-- A Home Cooked Meal
+					i(225894),	-- Recipe: Beledar's Bounty (RECIPE!)
+				}),
 				q(82220),	-- Eagle Eye, Eagle Die
 				q(82221),	-- Full Dress
 				q(82222),	-- Cooking With Style

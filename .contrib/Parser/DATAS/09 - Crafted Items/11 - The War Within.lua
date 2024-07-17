@@ -504,10 +504,64 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222463),	-- Siphoning Stiletto
 		}),
 	}),
-	--[[
 	prof(COOKING, {
+		i(222727),	-- Angler's Delight
+		i(223971),	-- Azj-Kahet Special
+		i(222728),	-- Beledar's Bounty
+		i(222736),	-- Chippy Tea
+		i(222744),	-- Cinder Nectar
+		i(222708),	-- Coreway Kabob
+		i(222718),	-- Deepfin Patty
+		i(222729),	-- Empress' Farewell
+		i(222735),	-- Everything Stew
+		i(225592),	-- Exquisitely Eviscerated Muscle
+		i(222732),	-- Feast of the Divine Day
+		i(222733),	-- Feast of the Midnight Masquerade
+		i(222715),	-- Fiery Fish Sticks
+		i(222721),	-- Fish and Chips
+		i(222709),	-- Flash Fire Fillet
+		i(225855),	-- Ghoulfish Delight
+		i(222716),	-- Ginger Glazed Fillet
+		i(222707),	-- Hallowfall Chili
+		i(222776),	-- Hearty Beledar's Bounty
+		i(222775),	-- Hearty Angler's Delight
+		i(222784),	-- Hearty Chippy Tea
+		i(222756),	-- Hearty Coreway Kabob
+		i(222766),	-- Hearty Deepfin Patty
+		i(222777),	-- Hearty Empress' Farewell
+		i(222783),	-- Hearty Everything Stew
+		i(222780),	-- Hearty Feast of the Divine Day
+		i(222781),	-- Hearty Feast of the Midnight Masquerade
+		i(222763),	-- Hearty Fiery Fish Sticks
+		i(222769),	-- Hearty Fish and Chips
+		i(222757),	-- Hearty Flash Fire Fillet
+		i(222764),	-- Hearty Ginger Glazed Fillet
+		i(222755),	-- Hearty Hallowfall Chili
+		i(222778),	-- Hearty Jester's Board
+		i(222771),	-- Hearty Marinated Tenderloins
+		i(222758),	-- Hearty Meat and Potatoes
+		i(222773),	-- Hearty Mycobloom Risotto
+		i(222779),	-- Hearty Outsider's Provisions
+		i(222754),	-- Hearty Pan-Seared Mycobloom
+		i(222759),	-- Hearty Rib Stickers
+
+
+
+		i(222730),	-- Jester's Board
+		i(223970),	-- Little Buddy Biscuits
+		i(222723),	-- Marinated Tenderloins
+		i(222710),	-- Meat and Potatoes
+		i(222749),	-- Melted Candlebar
+		i(222725),	-- Mycobloom Risotto
+		i(222731),	-- Outsider's Provisions
+		i(222706),	-- Pan-Seared Mycobloom
+		i(222745),	-- Pep-In-Your-Step
+		i(223967),	-- Protein Slurp
+		i(222711),	-- Rib Stickers
+		filter(REAGENTS, {
+			i(222737),	-- Chopped Mycobloom
+		}),
 	}),
-	--]]
 	prof(ENCHANTING, {
 		spell(455970, {	-- Disenchant
 			i(219949),	-- Gleaming Shard+

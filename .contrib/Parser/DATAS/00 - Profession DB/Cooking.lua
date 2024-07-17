@@ -847,3 +847,75 @@ i(0, 412535);		-- Venrik's Goat Milk
 i(210242, 416001);	-- Slumbering Peacebloom Tea
 --- NYI ---
 i(210496, 0);		-- Slumbering Peacebloom Tea
+
+--[[
+------------------
+-- PATCH ADDED_11_PH_LAUNCH --
+------------------
+--- TRAINER ---
+r(423333), -- Khaz Algar Cooking
+r(445107), -- Angler's Delight
+r(445116), -- Chippy Tea
+r(445117), -- Chopped Mycobloom
+r(445088), -- Coreway Kabob
+r(445098), -- Deepfin Patty
+r(445095), -- Fiery Fish Sticks
+r(445101), -- Fish and Chips
+r(445089), -- Flash Fire Fillet
+r(445127), -- Fresh Fillet
+r(445096), -- Ginger Glazed Fillet
+r(445087), -- Hallowfall Chili
+r(462857),	-- Hearty Feast
+r(445120), -- Hearty Food \\ Hearty Meals
+r(445110), -- Jester's Board
+r(445103), -- Marinated Tenderloins
+r(445090), -- Meat and Potatoes
+r(445105), -- Mycobloom Risotto
+r(445086), -- Pan-Seared Mycobloom
+r(445118), -- Portioned Steak
+r(445091), -- Rib Stickers
+--- ITEM ---
+i(223961, 447875), -- Azj-Kahet Special
+i(225894, 445108), -- Beledar's Bounty
+i(223961, 445479), -- Cinder Nectar
+i(224152, 445109), -- Empress' Farewell
+i(224418, 445115), -- Everything Stew
+i(225639, 455424), -- Exquisitely Eviscerated Muscle
+i(227283, 445112), -- Feast of the Divine Day
+i(227281, 445113);	-- Feast of the Midnight Masquerade
+i(228422, 447876), -- Ghoulfish Delight
+i(223960, 447874), -- Little Buddy Biscuits
+i(228421, 445484), -- Melted Candlebar
+i(226177, 445111), -- Outsider's Provisions
+i(228423, 445480), -- Pep-In-Your-Step
+i(223957, 447871), -- Protein Slurp
+
+--[[
+r(445085), -- Roasted Mycobloom
+r(445482), -- Rockslide Shake
+r(445102), -- Salt Baked Seafood
+r(445097), -- Salty Dog \\ Salty Fish Pie
+r(447873), -- Secret Sauce
+r(445083), -- Simple Stew
+r(445104), -- Sizzling Honey Roast
+r(445082), -- Skewered Fillet
+r(445119), -- Spiced Meat Stock
+r(447872), -- Spongey Scramble
+r(445483), -- Sticky Sweet Treat \\ Olive Oil Ice Cream
+r(445106), -- Stuffed Cave Peppers
+r(445092), -- Sweet and Sour Meatballs
+r(445099), -- Sweet and Spicy Soup
+r(445481), -- Tasty Pocket Tart \\ Eclipse Eclair
+r(445093), -- Tender Twilight Jerky
+r(445100), -- The Sushi Special
+r(445084), -- Unseasoned Field Steak
+r(445114), -- Village Potluck
+r(445094), -- Zesty Nibblers
+
+-- Unsorted
+i(223956, 447870), -- Everything-On-A-Stick
+i(223955, 447869), -- Fine Egg Powders
+--nyi
+r(445478), -- Blessing Blossom Tea
+r(445477), -- Luminous Lemonade
+--]]
