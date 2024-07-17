@@ -255,6 +255,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Grawmug slain
+							["provider"] = { "n", 42230 },	-- Grawmug
+						}),
 						i(58989, {	-- Belt of the Valley of Kings
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -327,6 +330,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 34.7, 49.1, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Intact Crocolisk Jaw
+							["provider"] = { "i", 57131 },	-- Intact Crocolisk Jaw
+							["cr"] = 1693,	-- Loch Crocolisk
+						}),
+					},
 				}),
 				q(26846, {	-- A Nasty Exploit
 					["qg"] = 44200,	-- Scout Dorli
@@ -334,6 +343,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 25.5, 17.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Tunnel Rat Geomancer slain
+							["provider"] = { "n", 1174 },	-- Tunnel Rat Geomancer
+						}),
+					},
 				}),
 				q(26843, {	-- A Tiny, Clever Commander
 					["qg"] = 1343,	-- Mountaineer Stormpike
@@ -341,6 +355,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 "Commander" Nazrim slain
+							["provider"] = { "n", 44197 },	-- "Commander" Nazrim
+						}),
+					},
 				}),
 				q(454, {	-- After the Ambush
 					["qg"] = 2057,	-- Huldar
@@ -451,6 +470,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Stonesplinter Shaman slain
+							["provider"] = { "n", 1197 },	-- Stonesplinter Shaman
+						}),
+						objective(2, {	-- 0/8 Stonesplinter Bonesnapper slain
+							["provider"] = { "n", 1164 },	-- Stonesplinter Bonesnapper
+						}),
 						i(58995, {	-- Bonesnapper Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -528,6 +553,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.0, 46.5, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Loch Buzzard slain
+							["provider"] = { "n", 44184 },	-- Loch Buzzard
+						}),
+					},
 				}),
 				q(26137, {	-- Checking on the Boys
 					["qg"] = 1343,	-- Mountaineer Stormpike
@@ -714,6 +744,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.7, 61.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Fluffy Fox Tail
+							["provider"] = { "i", 60755 },	-- Fluffy Fox Tail
+							["crs"] = {
+								44635,	-- Hill Fox
+								45380,	-- Ashtail
+							},
+						}),
+					},
 				}),
 				q(297, {	-- Gathering Idols
 					["qg"] = 1345,	-- Magmar Fellhew
@@ -748,6 +787,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Carved Stone Idol
+							["provider"] = { "i", 2636 },	-- Carved Stone Idol
+							["crs"] = {
+								1165,	-- Stonesplinter Geomancer
+								1167,	-- Stonesplinter Digger
+								1393,	-- Berserk Trogg
+							},
+						}),
 						i(58997, {	-- Carved Stone Mace
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -771,6 +818,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.1, 26.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Gor'kresh slain
+							["provider"] = { "n", 44771 },	-- Gor'kresh
+						}),
+					},
 				}),
 				q(13661, {	-- Heartfelt Appreciation
 					["qg"] = 1153,	-- Torren Squarejaw
@@ -836,6 +888,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.7, 61.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Glassy Hornet Wing
+							["provider"] = { "i", 60754 },	-- Glassy Hornet Wing
+							["crs"] = {
+								44620,	-- Marsh Hornet
+								45402,	-- Nix
+							},
+						}),
+					},
 				}),
 				q(224, {	-- In Defense of the King's Lands (1/4)
 					["qg"] = 1089,	-- Mountaineer Cobbleflint
@@ -925,6 +986,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/12 Stonesplinter Trogg slain
+							["providers"] = {
+								{ "n", 1161},	-- Stonesplinter Trogg
+								{ "n", 1162},	-- Stonesplinter Scout
+							},
+						}),
 						i(131490, {	-- Greaves of Uncanny Courage
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -971,12 +1038,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Tunnel Rat Surveyor slain
+							["provider"] = { "n", 1177 },	-- Tunnel Rat Surveyor
+						}),
+						objective(2, {	-- 0/5 Tunnel Rat Forager slain
+							["provider"] = { "n", 1176 },	-- Tunnel Rat Forager
+						}),
+					},
 				}),
 				q(25118, {	-- Looking for Lurkers
 					["qg"] = 1777,	-- Dakk Blunderblast
 					["coord"] = { 36.0, 44.2, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Forest Lurker slain
+							["provider"] = { "n", 1195 },	-- Forest Lurker
+						}),
+					},
 				}),
 				q(255, {	-- Mercenaries
 					["qg"] = 1139,	-- Magistrate Bluntnose
@@ -1027,6 +1107,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.0, 46.5, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Mosshide Ear
+							["provider"] = { "i", 60402 },	-- Mosshide Ear
+							["crs"] = {
+								44161,	-- Mosshide Scout
+								44162,	-- Mosshide Basher
+								45384,	-- Sagepaw
+							},
+						}),
+					},
 				}),
 				q(302, {	-- Powder to Ironband
 					["qg"] = 1356,	-- Prospector Stormpike
@@ -1076,6 +1166,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
+						-- FIX_ME!!!
+						objective(1, {	-- 0/8 Tunnel Rat Ear
+							["provider"] = { "i", 3110 },	-- Tunnel Rat Ear
+							["crs"] = {
+								1172,	-- Tunnel Rat Vermin
+								1173,	-- Tunnel Rat Scout
+								1174,	-- Tunnel Rat Geomancer
+								1175,	-- Tunnel Rat Digger
+								1176,	-- Tunnel Rat Forager
+								1177,	-- Tunnel Rat Surveyor
+								1202,	-- Tunnel Rat Kobold
+							},
+						}),
 						objective(1, {	-- 0/12 Tunnel Rat Ear
 							["provider"] = { "i", 3110 },	-- Tunnel Rat Ear
 							["crs"] = {
@@ -1160,6 +1263,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.1, 26.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Mo'grosh Ogre slain
+							["providers"] = {
+								{ "n", 44758},	-- Mo'grosh Darkmauler
+								{ "n", 14267},	-- Emogg the Crusher
+								{ "n", 44760},	-- Mo'grosh Earthbender
+							},
+						}),
+					},
 				}),
 				q(27033, {	-- Skystrider's Heart
 					["qg"] = 44618,	-- Rusted Skystrider
@@ -1182,6 +1294,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 34.7, 49.1, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Murloc Scent Gland
+							["provider"] = { "i", 60511 },	-- Murloc Scent Gland
+							["crs"] = {
+								44176,	-- Bluegill Wanderer
+								44288,	-- Bluegill Copperblade
+								44292,	-- Bluegill Mudskipper
+								45401,	-- Whitefin
+							},
+						}),
+					},
 				}),
 				q(27035, {	-- Standing Up
 					["qg"] = 44870,	-- Ando Blastenheimer
@@ -1189,6 +1312,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 58.5, 29.1, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Twilight Landshaper destroyed
+							["provider"] = { "n", 44724 },	-- Twilight Landshaper
+						}),
+					},
 				}),
 				q(1338, {	-- Stormpike's Order
 					["providers"] = {
@@ -1244,6 +1372,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 83.4, 65.4, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Mudbelly Boar slain
+							["provider"] = { "n", 44627 },	-- Mudbelly Boar
+						}),
+					},
 				}),
 				q(26854, {	-- The Lost Pilot
 					["qg"] = 1960,	-- Pilot Hammerfoot
@@ -1297,6 +1430,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 23.3, 74.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Trogg Stone Tooth
+							["provider"] = { "i", 2536 },	-- Trogg Stone Tooth
+							["crs"] = {
+								1161,	-- Stonesplinter Trogg
+								1162,	-- Stonesplinter Scout
+								1163,	-- Stonesplinter Skullthumper
+								1164,	-- Stonesplinter Bonesnapper
+								1165,	-- Stonesplinter Geomancer
+								1166,	-- Stonesplinter Seer
+								1167,	-- Stonesplinter Digger
+								1197,	-- Stonesplinter Shaman
+							},
+						}),
+					},
 				}),
 				q(27116, {	-- The Winds of Loch Modan
 					["qg"] = 44870,	-- Ando Blastenheimer
@@ -1327,6 +1475,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Bear Rump
+							["provider"] = { "i", 60497 },	-- Bear Rump
+							["cr"] = 1186,	-- Black Bear
+						}),
 						i(3679),	-- Recipe: Blood Sausage (RECIPE!)
 					},
 				}),
@@ -1393,6 +1545,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.9, 64.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ol' Sooty's Head
+							["provider"] = { "i", 2713 },	-- Ol' Sooty's Head
+							["cr"] = 1225,	-- Ol' Sooty
+						}),
+					},
 				}),
 				q(27037, {	-- Vyrin's Revenge (2/2)
 					["qg"] = 1187,	-- Daryl the Youngling
@@ -1452,6 +1610,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 37.3, 46.5, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Gorick Guzzledraught slain
+							["provider"] = { "n", 33456 },	-- Gorick Guzzledraught
+						}),
+					},
 				}),
 				q(26845, {	-- Who's In Charge Here?
 					["qg"] = 1343,	-- Mountaineer Stormpike
@@ -1459,6 +1622,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Foreman Sharpsneer's Head
+							["provider"] = { "i", 60404 },	-- Foreman Sharpsneer's Head
+							["cr"] = 44198,	-- Foreman Sharpsneer
+						}),
+					},
 				}),
 				q(27031, {	-- Wing Nut
 					["qg"] = 6577,	-- Bingles Blastenheimer
@@ -1467,6 +1636,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
+					["groups"] = {
+						objective(1, {	-- 0/3 Pristine Flight Feather
+							["provider"] = { "i", 60792 },	-- Pristine Flight Feather
+							["cr"] = 44628,	-- Golden Eagle
+						}),
+					},
 			}),
 			n(RARES, {
 				n(45380, {	-- Ashtail
