@@ -41,10 +41,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				q(27948, {	-- A Sticky Task [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/4 Sticky Silk Gland
+							["provider"] = { "i", 62803 },	-- Sticky Silk Gland
+							["cr"] = 46507,	-- Darkwood Broodmother
+						}),
+					},
 				}),
 				q(28684, {	-- A Sticky Task [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/4 Sticky Silk Gland
+							["provider"] = { "i", 62803 },	-- Sticky Silk Gland
+							["cr"] = 46507,	-- Darkwood Broodmother
+						}),
+					},
 				}),
 				q(28275, {	-- Bombs Away! [A]
 					["timeline"] = { ADDED_4_0_3 },
@@ -73,50 +85,122 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				q(27970, {	-- Captain P. Harris [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Captain P. Harris slain
+							["provider"] = { "n", 47287 },	-- Captain P. Harris
+						}),
+					},
 				}),
 				q(28678, {	-- Captain P. Harris [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Captain P. Harris slain
+							["provider"] = { "n", 47287 },	-- Captain P. Harris
+						}),
+					},
 				}),
 				q(28059, {	-- Claiming The Keep [A]
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Keep Lord Farson slain
+							["provider"] = { "n", 47447 },	-- Keep Lord Farson
+						}),
+					},
 				}),
 				q(28682, {	-- Claiming The Keep [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Keep Lord Farson slain
+							["provider"] = { "n", 47447 },	-- Keep Lord Farson
+						}),
+					},
 				}),
 				q(28046, {	-- Finish The Job [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Restless Infantry slain
+							["provider"] = { "n", 46823 },	-- Restless Infantry
+						}),
+					},
 				}),
 				q(28693, {	-- Finish The Job [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Restless Soldier slain
+							["provider"] = { "n", 46825 },	-- Restless Soldier
+						}),
+					},
 				}),
 				q(27967, {	-- First Lieutenant Connor [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 First Lieutenant Connor slain
+							["provider"] = { "n", 46571 },	-- First Lieutenant Connor
+						}),
+					},
 				}),
 				q(28691, {	-- First Lieutenant Connor [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 First Lieutenant Connor slain
+							["provider"] = { "n", 46571 },	-- First Lieutenant Connor
+						}),
+					},
 				}),
 				q(27978, {	-- Ghostbuster [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/14 Largo's Overlook Ghosts Slain
+							["providers"] = {
+								{ "n", 47303},	-- Wildlife Kill Credit - Tol Barad Quest - Largo's Overlook
+								{ "n", 47181},	-- Overlook Spirit
+								{ "n", 47182},	-- Overlook Spectre
+								{ "n", 47183},	-- Ghastly Worker
+							},
+						}),
+					},
 				}),
 				q(28697, {	-- Ghostbuster [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/14 Largo's Overlook Ghosts Slain
+							["providers"] = {
+								{ "n", 47303},	-- Wildlife Kill Credit - Tol Barad Quest - Largo's Overlook
+								{ "n", 47181},	-- Overlook Spirit
+								{ "n", 47182},	-- Overlook Spectre
+								{ "n", 47183},	-- Ghastly Worker
+							},
+						}),
+					},
 				}),
 				q(28063, {	-- Leave No Weapon Behind [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Rusty Rifle
+							["provider"] = { "i", 62921 },	-- Rusty Rifle
+							["cr"] = 47130,	-- Crazed Guard
+						}),
+					},
 				}),
 				q(28685, {	-- Leave No Weapon Behind [H]
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Rusty Rifle
+							["provider"] = { "i", 62921 },	-- Rusty Rifle
+							["cr"] = 47130,	-- Crazed Guard
+						}),
+					},
 				}),
 				q(27992, {	-- Magnets, How Do They Work? [A]
 					["timeline"] = { ADDED_4_0_3 },
@@ -129,50 +213,134 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				q(28130, {	-- Not The Friendliest Town [A]
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/14 Rustberg Village Residents
+							["providers"] = {
+								{ "n", 47627},	-- Rustberg Bandit
+								{ "n", 47642},	-- Rustberg Fisherman
+								{ "n", 47657},	-- Suspicious Villager
+								{ "n", 47659},	-- Apprehensive Worker
+							},
+						}),
+					},
 				}),
 				q(28686, {	-- Not The Friendliest Town [H]
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/14 Rustberg Village Residents
+							["providers"] = {
+								{ "n", 47627},	-- Rustberg Bandit
+								{ "n", 47642},	-- Rustberg Fisherman
+								{ "n", 47657},	-- Suspicious Villager
+								{ "n", 47659},	-- Apprehensive Worker
+							},
+						}),
+					},
 				}),
 				q(27971, {	-- Rattling Their Cages [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Shipwrecked Sailor slain
+							["provider"] = { "n", 46605 },	-- Shipwrecked Sailor
+						}),
+					},
 				}),
 				q(28679, {	-- Rattling Their Cages [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Shipwrecked Sailor slain
+							["provider"] = { "n", 46605 },	-- Shipwrecked Sailor
+						}),
+					},
 				}),
 				q(27966, {	-- Salvaging the Remains [A]
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/9 Cursed Femur
+							["provider"] = { "i", 62808 },	-- Cursed Femur
+							["crs"] = {
+								46569,	-- Forgotten Ghoul
+								46582,	-- Hungry Ghoul
+								46586,	-- Wandering Soul
+								46597,	-- Skeletal Beastmaster
+							},
+						}),
+					},
 				}),
 				q(28690, {	-- Salvaging the Remains [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/9 Cursed Femur
+							["provider"] = { "i", 62808 },	-- Cursed Femur
+							["crs"] = {
+								46569,	-- Forgotten Ghoul
+								46582,	-- Hungry Ghoul
+								46586,	-- Wandering Soul
+								46597,	-- Skeletal Beastmaster
+							},
+						}),
+					},
 				}),
 				q(28050, {	-- Shark Tank [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Tank slain
+							["provider"] = { "n", 46608 },	-- Tank
+						}),
+					},
 				}),
 				q(28681, {	-- Shark Tank [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Tank slain
+							["provider"] = { "n", 46608 },	-- Tank
+						}),
+					},
 				}),
 				q(27991, {	-- Taking the Overlook Back [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Commander Largo slain
+							["provider"] = { "n", 47304 },	-- Commander Largo
+						}),
+					},
 				}),
 				q(28700, {	-- Taking the Overlook Back [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Commander Largo slain
+							["provider"] = { "n", 47304 },	-- Commander Largo
+						}),
+					},
 				}),
 				q(28137, {	-- Teach A Man To Fish.... Or Steal [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/22 Rustberg Seabass
+							["provider"] = { "i", 63047 },	-- Rustberg Seabass
+							["cr"] = 47642,	-- Rustberg Fisherman
+						}),
+					},
 				}),
 				q(28687, {	-- Teach A Man To Fish.... Or Steal [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/22 Rustberg Seabass
+							["provider"] = { "i", 63047 },	-- Rustberg Seabass
+							["cr"] = 47642,	-- Rustberg Fisherman
+						}),
+					},
 				}),
 				q(27949, {	-- The Forgotten [A]
 					["timeline"] = { ADDED_4_0_3 },
@@ -185,18 +353,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				q(27944, {	-- Thinning the Brood [A]
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Darkwood Lurker slain
+							["provider"] = { "n", 46508 },	-- Darkwood Lurker
+						}),
+					},
 				}),
 				q(28683, {	-- Thinning the Brood [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Darkwood Lurker slain
+							["provider"] = { "n", 46508 },	-- Darkwood Lurker
+						}),
+					},
 				}),
 				q(27975, {	-- WANTED: Foreman Wellson [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Foreman Wellson slain
+							["provider"] = { "n", 46648 },	-- Foreman Wellson
+						}),
+					},
 				}),
 				q(28695, {	-- WANTED: Foreman Wellson [H]
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Foreman Wellson slain
+							["provider"] = { "n", 46648 },	-- Foreman Wellson
+						}),
+					},
 				}),
 				q(28065, {	-- Walk A Mile In Their Shoes [A]
 					["timeline"] = { ADDED_4_0_3 },
@@ -209,11 +397,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				q(27973, {	-- Watch Out For Splinters! [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Shipyard Lumber
+							["provider"] = { "i", 62811 },	-- Shipyard Lumber
+							["crs"] = {
+								46630,	-- Accursed Longshoreman
+								46641,	-- Ghastly Dockhand
+								46643,	-- Accursed Shipbuilder
+								48285,	-- Accursed Supplyman
+							},
+						}),
+					},
 				}),
 				q(28694, {	-- Watch Out For Splinters! [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
+					["groups"] = {
+						objective(1, {	-- 0/15 Shipyard Lumber
+							["provider"] = { "i", 62811 },	-- Shipyard Lumber
+							["crs"] = {
+								46630,	-- Accursed Longshoreman
+								46641,	-- Ghastly Dockhand
+								46643,	-- Accursed Shipbuilder
+								48285,	-- Accursed Supplyman
+							},
+						}),
+					},
 			})),
 			n(PROFESSIONS, {
 				prof(FISHING, {
