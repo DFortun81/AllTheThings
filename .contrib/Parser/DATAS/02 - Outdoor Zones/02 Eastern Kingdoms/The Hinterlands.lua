@@ -376,6 +376,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 9.9, 44.2, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Mangy Silvermane slain
+							["provider"] = { "n", 2923 },	-- Mangy Silvermane
+						}),
+					},
 				}),
 				q(77, {	-- A Sticky Situation
 					["qg"] = 7801,	-- Gilveradin Sunchaser
@@ -628,6 +633,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Vilebranch Berserker slain
+							["provider"] = { "n", 2643 },	-- Vilebranch Berserker
+						}),
+						objective(2, {	-- 0/5 Vilebranch Shadowcaster slain
+							["provider"] = { "n", 2642 },	-- Vilebranch Shadowcaster
+						}),
+					},
 				}),
 				q(26307, {	-- Death to the Vilebranch (H)
 					["qg"] = 42642,	-- Death to the Vilebranch
@@ -635,6 +648,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Vilebranch Berserker slain
+							["provider"] = { "n", 2643 },	-- Vilebranch Berserker
+						}),
+						objective(2, {	-- 0/1 Vilebranch Shadowcaster slain
+							["provider"] = { "n", 2642 },	-- Vilebranch Shadowcaster
+						}),
+					},
 				}),
 				q(26496, {	-- Down with the Vilebranch
 					["qg"] = 43108,	-- Kerr Ironsight
@@ -733,6 +754,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Katoom's Best Lure
+							["provider"] = { "i", 19023 },	-- Katoom's Best Lure
+							["cr"] = 7977,	-- Gammerita
+						}),
 						i(59274, {	-- Katoom's Mask
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -753,6 +778,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Gan'dranda slain
+							["provider"] = { "n", 42609 },	-- Gan'dranda
+						}),
 						i(59242, {	-- Ironsight Crossbow
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -783,6 +811,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Umboda's Head
+							["provider"] = { "i", 58236 },	-- Umboda's Head
+							["cr"] = 42724,	-- Umboda Three-Heads
+						}),
+					},
 				}),
 				q(26366, {	-- Heads Up (H)
 					["qg"] = 42642,	-- Primal Torntusk
@@ -818,6 +852,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Tablet of Shadra
+							["provider"] = { "i", 58241 },	-- Tablet of Shadra
+							["cr"] = 42877,	-- Morta'gya the Keeper
+						}),
 						i(59256, {	-- Unkeeper Blade
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -845,6 +883,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Tablet of Shadra
+							["provider"] = { "i", 58241 },	-- Tablet of Shadra
+							["cr"] = 42877,	-- Morta'gya the Keeper
+						}),
 						i(59284, {	-- Unkeeper Blade
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -883,6 +925,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.1, 79.5, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Savage Owlbeast slain
+							["provider"] = { "n", 2929 },	-- Savage Owlbeast
+						}),
+					},
 				}),
 				q(27625, {	-- In Defense of Quel'Danil
 					["qg"] = 46475,	-- Anchorite Traska
@@ -890,6 +937,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 32.1, 42.5, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/16 Deathstalker Invader slain
+							["provider"] = { "n", 43541 },	-- Deathstalker Invader
+						}),
+					},
 				}),
 				q(9476, {	-- In Pursuit of Featherbeard
 					["provider"] = { "o", 181649 },	-- Featherbeard's Journal
@@ -906,6 +958,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Vilebranch Soul Eater slain
+							["provider"] = { "n", 2647 },	-- Vilebranch Soul Eater
+						}),
+						objective(2, {	-- 0/5 Vilebranch Blood Drinker slain
+							["provider"] = { "n", 2646 },	-- Vilebranch Blood Drinker
+						}),
 						i(59246, {	-- Blood Drinker Staff
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -927,6 +985,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Vilebranch Soul Eater slain
+							["provider"] = { "n", 2647 },	-- Vilebranch Soul Eater
+						}),
+						objective(2, {	-- 0/5 Vilebranch Blood Drinker slain
+							["provider"] = { "n", 2646 },	-- Vilebranch Blood Drinker
+						}),
 						i(59291, {	-- Blood Drinker Staff
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -997,6 +1061,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Lard's Lunch
+							["provider"] = { "i", 19034 },	-- Lard's Lunch
+							["cr"] = 14748,	-- Vilebranch Kidnapper
+						}),
 						i(19035, {	-- Lard's Special Picnic Basket
 							["description"] = "Contains a random world drop and some consumables.",
 						}),
@@ -1031,6 +1099,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ongo'longo enraged
+							["provider"] = { "n", 42815 },	-- Ongo'longo
+						}),
+					},
 				}),
 				q(26367, {	-- Ongo'longo's Revenge (H)
 					["qg"] = 42642,	-- Primal Torntusk
@@ -1041,6 +1114,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ongo'longo Enraged
+							["provider"] = { "n", 42815 },	-- Ongo'longo
+						}),
+					},
 				}),
 				q(26548, {	-- Out to the Front
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
@@ -1077,6 +1155,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Direglob Sample
+							["provider"] = { "i", 58082 },	-- Direglob Sample
+							["cr"] = 42592,	-- The Direglob
+						}),
 						i(59239, {	-- Wand of Oomph
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1104,6 +1186,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Direglob Sample
+							["provider"] = { "i", 58082 },	-- Direglob Sample
+							["cr"] = 42592,	-- The Direglob
+						}),
 						i(59277, {	-- Research Assistant's Wand
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1140,6 +1226,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/7 Trained Razorbeak fed
+							["provider"] = { "i", 58935 },	-- 	Gryphon Chow
+							["cr"] = 2657,	-- Trained Razorbeak
+						}),
 						i(59236, {	-- Gryphon-Down Scarf
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1385,6 +1475,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Shadra slain
+							["provider"] = { "n", 43007 },	-- Shadra
+						}),
 						i(59269, {	-- Veil of Aerie Peak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1412,6 +1505,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Shadra slain
+							["provider"] = { "n", 43007 },	-- Shadra
+						}),
 						i(59306, {	-- Darkcleric's Veil
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1456,6 +1552,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 66.3, 44.2, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Jade Ooze slain
+							["provider"] = { "n", 2656 },	-- Jade Ooze
+						}),
+					},
 				}),
 				q(26267, {	-- Skulk Rock Clean-Up (H)
 					["qg"] = 42613,	-- Elder Torntusk
@@ -1466,6 +1567,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 78.1, 81.3, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Jade Ooze slain
+							["provider"] = { "n", 2656 },	-- Jade Ooze
+						}),
+					},
 				}),
 				q(26492, {	-- Skulk Rock Supplies (A)
 					["qg"] = 43108,	-- Kerr Ironsight
@@ -1493,6 +1599,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Snapjaw Gizzard
+							["provider"] = { "i", 58867 },	-- Snapjaw Gizzard
+							["cr"] = 2505,	-- Saltwater Snapjaw
+						}),
 						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
 					},
 				}),
@@ -1517,6 +1627,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/10 Saltwater Snapjaw slain
+							["provider"] = { "n", 2505 },	-- Saltwater Snapjaw
+						}),
 						i(19022),	-- Nat Pagle's Extreme Angler FC-5000
 					},
 				}),
@@ -1540,6 +1653,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.1, 79.5, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Silvermane Stalker slain
+							["provider"] = { "n", 2926 },	-- Silvermane Stalker
+						}),
+					},
 				}),
 				q(26306, {	-- Start Taking Back
 					["qg"] = 42642,	-- Primal Torntusk
@@ -1547,6 +1665,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Vilebranch Headhunter slain
+							["provider"] = { "n", 2641 },	-- Vilebranch Headhunter
+						}),
+						objective(2, {	-- 0/5 Vilebranch Witch Doctor slain
+							["provider"] = { "n", 2640 },	-- Vilebranch Witch Doctor
+						}),
+					},
 				}),
 				q(26643, {	-- Starvation Diet (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
@@ -1554,6 +1680,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 30.6, 47.0, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Cocooned Victim slain
+							["provider"] = { "n", 42907 },	-- Cocooned Victim
+						}),
+					},
 				}),
 				q(26387, {	-- Starvation Diet (H)
 					["qg"] = 42896,	-- Apothecary Surlis
@@ -1561,12 +1692,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 31.8, 58.5, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Cocooned Victim slain
+							["provider"] = { "n", 42907 },	-- Cocooned Victim
+						}),
+					},
 				}),
 				q(26240, {	-- Stomp To My Beat
 					["qg"] = 14739,	-- Mystic Yayo'jin
 					["coord"] = { 78.8, 78.2, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Revantusk Warriors bolstered
+							["provider"] = { "n", 42597 },	-- Revantusk Troll Drums Buff Credit Bunny
+						}),
+					},
 				}),
 				q(26517, {	-- Summit of Fate (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
@@ -1711,6 +1852,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 78.1, 81.3, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Wildhammer slain
+							["providers"] = {
+								{ "n", 42518},	-- Wildhammer Warrior
+								{ "n", 42554},	-- Wildhammer Shaman
+							},
+						}),
+					},
 				}),
 				q(26530, {	-- The Shell of Shadra (A)
 					["qg"] = 43200,	-- Gilda Cloudcaller
@@ -1719,6 +1868,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Shell of Shadra
+							["provider"] = { "i", 58779 },	-- Shell of Shadra
+							["cr"] = 42919,	-- Qiaga the Keeper
+						}),
 						i(59265, {	-- Gown of the Last Priestess
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1746,6 +1899,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Shell of Shadra
+							["provider"] = { "i", 58779 },	-- Shell of Shadra
+							["cr"] = 42919,	-- Qiaga the Keeper
+						}),
 						i(59302, {	-- Gown of the Last Priestess
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1771,6 +1928,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 66.3, 44.2, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Revantusk slain
+							["providers"] = {
+								{ "n", 42536},	-- Revantusk Stalker
+								{ "n", 42555},	-- Revantusk Hexxer
+							},
+						}),
+					},
 				}),
 				q(26263, {	-- Thornar Thunderclash
 					["qg"] = 42613,	-- Elder Torntusk
@@ -1778,6 +1943,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Thornar Thunderclash slain
+							["provider"] = { "n", 42610 },	-- Thornar Thunderclash
+						}),
 						i(59280, {	-- Voice Stealer
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1873,6 +2041,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.7, 59.9, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Spawn of Shadra slain
+							["provider"] = { "n", 42879 },	-- Spawn of Shadra
+						}),
+					},
 				}),
 				q(26368, {	-- Venomous Secrets (H)
 					["qg"] = 42622,	-- Eliza Darkgrin
@@ -1880,6 +2053,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.6, 66.6, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Shadra-Spawn Venom Sample
+							["provider"] = { "i", 58239 },	-- Shadra-Spawn Venom Sample
+							["cr"] = 42879,	-- Spawn of Shadra
+						}),
+					},
 				}),
 				q(7839, {	-- Vilebranch Hooligans
 					["qg"] = 14737,	-- Smith Slagtree <Blacksmithing Supplies>
@@ -1906,6 +2085,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.8, 59.8, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Vilebranch Headhunter slain
+							["provider"] = { "n", 2641 },	-- Vilebranch Headhunter
+						}),
+						objective(2, {	-- 0/5 Vilebranch Witch Doctor slain
+							["provider"] = { "n", 2640 },	-- Vilebranch Witch Doctor
+						}),
+					},
 				}),
 				q(7861, {	-- Wanted: Vile Priestess Hexx and Her Minions
 					["provider"] = { "o", 179913 },	-- Call to Arms!
