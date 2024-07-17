@@ -3192,8 +3192,8 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
-		-- 11.0.0
-		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		-- CREATED_11_PH_PREPATCH
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_PREPATCH } }, {
 			-- 11.0.0.54311
 			ach(19467),	-- 1st level 80 on account (DNT)
 			ach(19469),	-- 2nd level 80 on account (DNT)
@@ -3567,8 +3567,8 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(40839),	-- Delve PTR Cheat
 		})),
 
-		-- 11.0.2
-		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+		-- CREATED_11_PH_LAUNCH
+		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
 			-- 11.0.2.55399
 			ach(40857),	-- Warbands: Bank Quest Unlock
 			ach(40861),	-- Mislaid Curiosities looted

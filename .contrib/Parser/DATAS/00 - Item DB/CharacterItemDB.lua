@@ -484,9 +484,8 @@ iq(216900, 80087);					-- Pink Duck Disguise
 iq(216901, 80088);					-- White Duck Disguise
 iq(216902, 80089);					-- Yellow Duck Disguise
 
-
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 iq(224055, 82614);					-- A Rocky Start
 iq(224036, 82634);					-- And That's A Web-Wrap!

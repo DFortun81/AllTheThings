@@ -4,7 +4,7 @@
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(2345, {	-- Deephaul Ravine
 		["icon"] = "Interface\\Icons\\inv_achievement_battleground_earthen",
-		["timeline"] = { ADDED_11_0_1_LAUNCH },
+		["timeline"] = { ADDED_11_PH_LAUNCH },
 		["maps"] = {
 			2345,	-- Deephaul Ravine
 		},

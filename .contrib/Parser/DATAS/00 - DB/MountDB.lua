@@ -1806,7 +1806,14 @@ i(224574, 453255);	-- Savage Ebony Battle Turtle
 i(223284, 448849);	-- Underlight Shorestalker
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_PREPATCH --
+------------------
+i(217985, 441324);	-- Remembered Golden Gryphon
+i(217987, 441325);	-- Remembered Wind Rider
+
+
+------------------
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 i(223270, 447213);	-- Alunira
 i(223264, 447185);	-- Aquamarine Swarmite
@@ -1825,8 +1832,6 @@ i(224415, 452779);	-- Ivory Goliathus
 i(223286, 448850);	-- Kah, Legend of the Deep
 i(223269, 448188);	-- Machine Defense Unit 1-11
 i(223501, 449258);	-- Ol' Mole Rufus
-i(217985, 441324);	-- Remembered Golden Gryphon
-i(217987, 441325);	-- Remembered Wind Rider
 i(223158, 447160);	-- Raging Cinderbee
 i(223314, 448939);	-- Shackled Shadow
 i(223266, 447190);	-- Shadowed Swarmite
@@ -1841,6 +1846,10 @@ i(223317, 448978);	-- Vermillion Imperial Lynx
 i(223511, 449325);	-- Vicious Skyflayer [A]
 i(221813, 447405);	-- Vicious Skyflayer [H]
 i(225548, 449264);	-- Wick's Lead
+
+------------------
+-- PATCH 11.0.0 --
+------------------
 --- UNSORTED ---
 i(223570, 449416);	-- Ebonhide Ramolith
 i(226506, 459193);	-- Hand of Reshkigaal

@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local TEMPORARY_SOURCEQUEST = 80434;
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(THE_RINGING_DEEPS, {
 		n(QUESTS, {
 			--q(82200),	-- flagged from quest tauren when dropping you here

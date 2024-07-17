@@ -2060,7 +2060,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 10.2.7.55261", REMOVED_11_0_1 } }, {
+		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 10.2.7.55261", "removed 11.0.5" } }, {
 			n(MONTHLY_REWARD, {
 				i(223339),	-- Trishi (PET!)
 			}),
@@ -2164,7 +2164,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1 } }, {
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.0.5" } }, {
 			n(MONTHLY_REWARD, {
 				i(223409),	-- The Cowards Violet Target (COSMETIC!)
 			}),

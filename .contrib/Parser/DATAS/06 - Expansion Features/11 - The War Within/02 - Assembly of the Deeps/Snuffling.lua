@@ -8,7 +8,7 @@ SNUFFLING = createHeader({
 		en = "Snuffling",
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(THE_ASSEMBLY_OF_THE_DEEPS, {
 		n(SNUFFLING, {
 			n(TREASURES, {

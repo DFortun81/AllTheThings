@@ -404,7 +404,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 								}),
 								i(224298, {	-- Dilated Eon Canister (DF:S4)
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED },
 								}),
 								i(207002),	-- Encapsulated Destiny
 								i(207027),	-- Greater Encapsulated Destiny
@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								i(208952),	-- Soridormi's Letter of Commendation
 								i(215363, {	-- Cache of Embers
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED },
 									-- probably need symlink
 								}),
 							}),

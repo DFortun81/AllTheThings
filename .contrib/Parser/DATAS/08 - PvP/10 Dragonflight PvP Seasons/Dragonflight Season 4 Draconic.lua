@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {
 	n(SEASON_DRACONIC_PVP, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
 			ach(19501, {	-- Draconic Combatant [A]
 				["races"] = ALLIANCE_ONLY,
 				["collectible"] = false,
@@ -51,7 +51,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			-- Fashion
 			ach(19276),	-- Verdant Vogue
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
 			i(213439, {	-- Vicious Dreamtalon [A] (MOUNT!)
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -59,7 +59,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["races"] = HORDE_ONLY,
 			}),
 		})),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
 				["g"] = {
@@ -383,7 +383,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
 				["g"] = {
@@ -1271,7 +1271,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			}),
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP }, ["bonusID"] = 7532 }, {
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
 					i(216232),	-- Draconic Gladiator's Cloak
@@ -1569,9 +1569,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["g"] = {
 					elitepvp(ig(216667, {	-- Draconic Gladiator's Tabard
 						["sourceAchievement"] = 19509,	-- Elite: Dragonflight Season 4
-						["cost"] = {{"c", HONOR, 100 }, },
-					--	["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
-					--	TODO: replace s3 tabard when it will be up
+						["cost"] = {{"c", HONOR, 100 }},
 					})),
 					n(WEAPONS, {
 						elitepvp(i(217353, {	-- Draconic Gladiator's Axe

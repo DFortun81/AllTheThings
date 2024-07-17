@@ -772,7 +772,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			i(197128),	-- Highland Drake: Curled Back Horns (DM!)
 			i(197116),	-- Highland Drake: Ears (DM!)
 			pvp(i(201792, {["timeline"] = {ADDED_10_0_2_LAUNCH, REMOVED_10_1_0}})),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
-			pvp(i(216710, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0}})),	-- Highland Drake: Embodiment of the Draconic Gladiator (DM!)
+			pvp(i(216710, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP}})),	-- Highland Drake: Embodiment of the Draconic Gladiator (DM!)
 			i(206955, {["timeline"] = {ADDED_10_1_0}}),	-- Highland Drake: Embodiment of the Hellforged (DM!) [LFR, Normal, Heroic]
 			i(205876, {["timeline"] = {ADDED_10_1_0}}),	-- Highland Drake: Embodiment of the Hellforged (DM!) [Mythic]
 			i(197098),	-- Highland Drake: Finned Back (DM!)

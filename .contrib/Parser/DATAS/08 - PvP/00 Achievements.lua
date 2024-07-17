@@ -263,13 +263,13 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_10_2_0 },
 	}),
 	ach(40221, {	-- Battleground Blitz Master
-		["timeline"] = { ADDED_11_0_1_LAUNCH },
+		["timeline"] = { ADDED_11_PH_LAUNCH },
 	}),
 	ach(40217, {	-- Battleground Blitzer
-		["timeline"] = { ADDED_11_0_1_LAUNCH },
+		["timeline"] = { ADDED_11_PH_LAUNCH },
 	}),
 	ach(40219, {	-- Battleground Blitzest
-		["timeline"] = { ADDED_11_0_1_LAUNCH },
+		["timeline"] = { ADDED_11_PH_LAUNCH },
 		["g"] = {
 			crit(67431),	-- Arathi Basin
 			crit(67425),	-- Deephaul Ravine
@@ -983,7 +983,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 		},
 	}),
 	ach(40220, {	-- Setting Records
-		["timeline"]= { ADDED_11_0_1_LAUNCH },
+		["timeline"]= { ADDED_11_PH_LAUNCH },
 	}),
 	ach(11470, {	-- Slayin' to Seven
 		["timeline"] = { ADDED_7_0_3, REMOVED_8_0_1 },

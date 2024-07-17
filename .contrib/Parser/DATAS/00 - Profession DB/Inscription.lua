@@ -1590,7 +1590,7 @@ i(211610, 430091);	-- Draconic Combatant's Insignia of Alacrity
 i(211609, 430090);	-- Draconic Combatant's Medallion
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 --- TRAINER ---
 i(0, 423338);		-- Khaz Algar Inscription
@@ -1630,6 +1630,8 @@ i(223070, 444234);	-- Algari Missive of Perception
 i(223066, 444230);	-- Algari Missive of Resourcefulness
 i(223063, 444217);	-- Contract: Assembly of the Deeps
 i(223062, 444220);	-- Contract: Council of Dornogal
+i(223064, 444218);	-- Contract: Hallowfall Arathi
+i(225355, 444219);	-- Contract: The Severed Threads
 i(223061, 444209);	-- Inscribed Rolling Pin
 i(223060, 444207);	-- Patient Alchemist's Mixing Rod
 --- SPECIALIZATION ---
@@ -1657,9 +1659,10 @@ i(0, 444185);		-- Algari Treatise on Leatherworking
 i(0, 444183);		-- Algari Treatise on Mining
 i(0, 444236);		-- Algari Treatise on Skinning
 i(0, 444186);		-- Algari Treatise on Tailoring
---- Unknown ---
-i(223064, 444218);	-- Contract: Hallowfall Arathi
-i(225355, 444219);	-- Contract: The Severed Threads
+
+------------------
+-- PATCH 11.0.0 --
+------------------
 --- NYI ---
 i(0, 445068);		-- Inquisitor's Greenwood Bow
 i(0, 441318);		-- Miner's Rune of Decyphering

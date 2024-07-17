@@ -490,15 +490,21 @@ REMOVED_MOP_REMIX_END = "removed 11.1.0";				-- PlaceHolder Until we know
 --------------------
 -- THE WAR WITHIN --
 --------------------
+REMOVED_SEASON_AWAKENED = "removed 11.0.5";	-- Placeholder
+REMOVED_SEASON_PVP = "removed 11.0.5";	-- Placeholder
+REMOVED_SEASON_MYTHIC = "removed 11.0.5";	-- Placeholder
+
 CREATED_11_0_0 = "created 11.0.0";						-- The War Within 11.0.0/Pre-Patch Launch on
 ADDED_11_0_0 = "added 11.0.0";							-- The War Within 11.0.0/Pre-Patch Launch on
 REMOVED_11_0_0 = "removed 11.0.0";						-- The War Within 11.0.0/Pre-Patch Launch on
 CREATED_11_0_1 = "created 11.0.0";						-- The War Within 11.0.1/Pre-Patch Launch on
 ADDED_11_0_1 = "added 11.0.0";							-- The War Within 11.0.1/Pre-Patch Launch on
 REMOVED_11_0_1 = "removed 11.0.0";						-- The War Within 11.0.1/Pre-Patch Launch on
+ADDED_11_PH_PREPATCH = "added 11.0.0";
+CREATED_11_PH_LAUNCH = "created 11.0.0";
 CREATED_11_0_1_LAUNCH = "created 11.0.0";				-- The War Within Launch on
-ADDED_11_0_1_LAUNCH = "added 11.0.0";					-- The War Within Launch on
-REMOVED_11_0_1_LAUNCH = "removed 11.0.0";				-- The War Within Launch on
+ADDED_11_PH_LAUNCH = "added 11.0.0";					-- The War Within Launch on
+REMOVED_11_PH_LAUNCH = "removed 11.0.0";				-- The War Within Launch on
 CREATED_11_0_2 = "added 11.0.2";						-- The War Within 11.0.2 Launch on
 ADDED_11_0_2 = "added 11.0.2";							-- The War Within 11.0.2 Launch on
 CREATED_11_0_5 = "created 11.0.5";						-- The War Within 11.0.5 Launch on

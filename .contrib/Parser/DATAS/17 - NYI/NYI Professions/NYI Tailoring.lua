@@ -112,8 +112,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
-				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				-- CREATED_11_PH_LAUNCH
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
 					i(221575),	-- Adaptive Delver's Shawl
 					i(221663),	-- Adaptive Delver's Shawl
 					i(222813),	-- Adaptive Delver's Shawl
@@ -459,8 +459,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
-				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				-- CREATED_11_PH_LAUNCH
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
 					r(446936),	-- Adaptive Delver's Shawl
 					r(446980),	-- Satchel of the Long Day
 					r(446981),	-- Satchel of the Long Night

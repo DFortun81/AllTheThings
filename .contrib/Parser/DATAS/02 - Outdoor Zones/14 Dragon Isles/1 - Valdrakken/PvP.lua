@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(212538),	-- Greater Verdant Trophy of Conquest
 					},
 				})),
-				q(79074, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	-- Summoning All Soldiers!
+				q(79074, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {	-- Summoning All Soldiers!
 					["provider"] = { "i", 211690 },	-- Artisan's Consortium Brochure (QI!)
 					["g"] = {
 						i(211685),	-- Draconic Trophy of Conquest
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["cost"] = {{ "c", CONQUEST, 375 }},
 						}),
 						i(217018, {	-- Draconic Equipment Chest
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
 							["cost"] = {{ "c", CONQUEST, 375 }},
 						}),
 					},
@@ -564,7 +564,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						n(BACK, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+						n(BACK, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
 							i(217101, {	-- Draconic Warmonger's Cape
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 120 },
@@ -670,7 +670,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {	
+						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
 							i(217075, {	-- Draconic Warmonger's Bindings
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 120 },
@@ -796,7 +796,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+						filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
 							i(217081, {	-- Draconic Warmonger's Belt
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 120 },
@@ -922,7 +922,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
 							i(217100, {	-- Draconic Warmonger's Armguards
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 120 },
@@ -1048,7 +1048,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
 							i(217092, {	-- Draconic Warmonger's Bracers
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 120 },
@@ -1329,7 +1329,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
 							i(217059, {	-- Draconic Warmonger's Aegis
 								["cost"] = {
 									{ "c", BLOODY_TOKENS, 150 },
@@ -1489,7 +1489,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						})),
 						filter(RECIPES, sharedData({
 							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
 						}, {
 							i(211611),	-- Technique: Draconic Combatant's Emblem (RECIPE!)
 							i(211610),	-- Technique: Draconic Combatant's Insignia of Alacrity (RECIPE!)
@@ -1510,7 +1510,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							["cost"] = { { "c", HONOR, 5000 }, },
 							["g"] = {
 								i(211690, {	-- Artisan's Consortium Brochure (QI!)
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
 								}),
 								i(205187, {	-- Artisan's Consortium Flier (QI!)
 									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
@@ -1534,10 +1534,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 								}),
 								i(211770, {	-- Medal of Honor [A]
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
 								}),
 								i(211771, {	-- Medal of Honor [H]
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
 								}),
 								i(208571, {	-- Artisan's Consortium Leaflet (QI)
 									["timeline"] = { ADDED_10_2_0 },
@@ -1550,7 +1550,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						}),
 						i(211772, {	-- Glorious Medal of Honor
 							["cost"] = { { "c", HONOR, 2500 }, },
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
 						}),
 						i(210758, {	-- Honorable Satchel of Fabrics
 							["cost"] = { { "c", HONOR, 3000 }, },

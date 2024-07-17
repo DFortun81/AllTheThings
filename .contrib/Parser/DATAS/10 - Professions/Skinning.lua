@@ -240,7 +240,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
 		},
 	}),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 		n(TREASURES, {
 			o(455948, {	-- Arathi Craftsman's Spokeshave
 				["coord"] = { 42.2, 53.9, HALLOWFALL },

@@ -1338,11 +1338,15 @@ i(217724);	-- Kindness of Chi-ji
 i(223146);	-- Satchel of Stormborn Seeds
 i(220692);	-- X-treme Water Blaster Display
 
-
--- DF thing becomes toy
-i(204405);	-- Stuffed Bear
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_PREPATCH --
+------------------
+-- #if AFTER TWW
+i(204405);	-- Stuffed Bear
+-- #endif
+
+------------------
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 i(211931);	-- Abyss Caller Horn
 i(219387);	-- Barrel of Fireworks
@@ -1364,6 +1368,10 @@ i(227538);	-- Unbound Legend's Pennant
 i(227539);	-- Unbound Strategist's Pennant
 i(216665);	-- Warband Bank Distance Inhibitor
 i(221966);	-- Wormhole Generator: Khaz Algar
+
+------------------
+-- PATCH 11.0.0 --
+------------------
 -- UNSORTED --
 i(215147);	-- Beautification Iris
 i(218310);	-- Box of Puntables

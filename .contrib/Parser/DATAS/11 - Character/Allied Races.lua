@@ -123,10 +123,10 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 		},
 	}),
-	race(EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY, }, {
+	race(EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH }, ["races"] = ALLIANCE_ONLY, }, {
 		ach(40307),	-- Allied Races: Earthen (automated),
 	})),
-	race(EARTHEN_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH }, ["races"] = HORDE_ONLY, }, {
+	race(EARTHEN_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH }, ["races"] = HORDE_ONLY, }, {
 		ach(40307),	-- Allied Races: Earthen (automated),
 	})),
 	race(HIGHMOUNTAIN_TAUREN, {

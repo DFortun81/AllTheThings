@@ -341,7 +341,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 									["questID"] = 71047,
 								}),
 								i(215362, {	-- Cache of Storms
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED },
 								}),
 								i(193360),	-- Centaur's Trophy Necklace
 								i(194095, {	-- Ohuna Companion Color: Sepia

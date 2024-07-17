@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(DORNOGAL, {
 		n(VENDORS, {
 			n(219036, {	-- Ardgaz <Token Exchange>
@@ -310,28 +310,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNC
 					-- Season 1
 					-- Trade Down
 					i(221268, {	-- Pouch of Weathered Harbinger Crests
-						["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
+						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
 						["cost"] = {{"c", CARVED_HARBINGER_CREST, 15}},
 					}),
 					i(221373, {	-- Satchel of Carved Harbinger Crests
-						["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
+						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
 						["cost"] = {{"c", RUNED_HARBINGER_CREST, 15}},
 					}),
 					i(221375, {	-- Pack of Runed Harbinger Crests
-						["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
+						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
 						["cost"] = {{"c", GILDED_HARBINGER_CREST, 15}},
 					}),
 					-- Trade UP
 					-- i(, {	--
-					--	["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
+					--	["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
 					-- 	["cost"] = { "c", xx, 90 },
 					-- }),
 					-- i(, {	--
-					--	["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
+					--	["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
 					-- 	["cost"] = { "c", xx, 90 },
 					-- }),
 					-- i(, {	--
-					--	["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 },
+					--	["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
 					-- 	["cost"] = { "c", xx, 90 },
 					-- }),
 					-- Season 2

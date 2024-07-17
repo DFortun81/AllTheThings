@@ -39,7 +39,7 @@ i(0, 377988);	-- Heart in a Bottle
 i(0, 382587);	-- Opening
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 -- TRAINER --
 i(0, 423342);    -- Khaz Algar Skinning
@@ -47,7 +47,7 @@ i(0, 442566);    -- Gloom Chitin
 i(0, 442567);    -- Stormcharged Leather
 i(0, 442569);    -- Sunless Carapace
 i(0, 442572);    -- Thunderous Hide
--- SPECIALIZATION -- 
+-- SPECIALIZATION --
 i(0, 442654);    -- Beast Lure Scent
 i(0, 442652);    -- Elusive Creature Lure
 i(0, 442649);    -- Infusion: Crystal

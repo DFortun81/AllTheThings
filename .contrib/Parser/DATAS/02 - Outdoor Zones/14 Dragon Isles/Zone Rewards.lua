@@ -48,7 +48,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 		i(215362, {	-- Cache of Storms
 			["description"] = "Rewarded from any 'Awakened' Zone Activity",
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED },
 			["sym"] = {
 				-- DF > Zone Rewards (Armors)
 				{"select","mapID",DRAGON_ISLES},{"pop"},{"where","headerID",ZONE_REWARDS},{"pop"},

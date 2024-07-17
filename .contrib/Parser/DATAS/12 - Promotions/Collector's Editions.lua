@@ -701,7 +701,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 				i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
 				i(208883),	-- Sandbox Storm Gryphon (TOY!)
 				i(208751),	-- Squally (PET!)
-				q(82809, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- Gryphons of a Feather
+				q(82809, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {	-- Gryphons of a Feather
 					["provider"] = { "n", 209681 },	-- Squally
 					["g"] = {
 						i(224259),	-- Flash (PET!)

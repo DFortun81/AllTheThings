@@ -1443,8 +1443,8 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			}),
 		})),
 
-		-- 11.0.2
-		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_1_LAUNCH } }, {
+		-- CREATED_11_PH_LAUNCH
+		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
 			-- Trainer Pets --
 			pet(4561),	-- Awakened Custodian (PET!)
 			pet(4554),	-- Bubs (PET!)

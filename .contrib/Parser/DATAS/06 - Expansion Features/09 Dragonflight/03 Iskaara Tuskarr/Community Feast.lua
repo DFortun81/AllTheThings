@@ -24,7 +24,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["g"] = {
 						i(200652),	-- Alchemical Flavor Pocket
 						i(215362, {	-- Cache of Storms
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED },
 						}),
 						i(198131),	-- Recipe: Gral's Devotion (RECIPE!)
 						i(198129),	-- Recipe: Gral's Reverence (RECIPE!)

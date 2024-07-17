@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 local RESIDUAL_MEMORIES = 3089;
-root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_0_0, REMOVED_11_0_1_LAUNCH } }, {
+root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_PH_PREPATCH, REMOVED_11_PH_LAUNCH } }, {
 	expansion(EXPANSION.TWW, {
 		n(ACHIEVEMENTS, {
 			ach(40796),	-- This Takes Me Back
@@ -327,7 +327,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 	}),
 })));
 
-root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, {
+root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {
 	expansion(EXPANSION.TWW, {
 		n(HIDDEN_QUESTS, {
 			q(82687),	-- triggered after turn in questID 82689 (Only Darkness) // could be any weekly but lockout for first per week?

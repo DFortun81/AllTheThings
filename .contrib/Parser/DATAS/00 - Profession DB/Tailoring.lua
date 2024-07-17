@@ -1466,7 +1466,7 @@ i(211578, 430075);	-- Draconic Combatant's Wildercloth Treads
 i(211579, 430074);	-- Draconic Combatant's Wildercloth Tunic
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 --- TRAINER ---
 i(0, 423343);		-- Khaz Algar Tailoring
@@ -1549,6 +1549,10 @@ i(0, 454431);		-- The Severed Satchel
 i(0, 446931);		-- Treads of the Woven Dawn
 i(0, 446934);		-- Warm Sunrise Bracers
 i(0, 446997);		-- Weavercloth Embroidery Thread
+
+------------------
+-- PATCH 11.0.0 --
+------------------
 --- NYI ---
 i(0, 446936);		-- Adaptive Delver's Shawl
 i(0, 446980);		-- Satchel of the Long Day

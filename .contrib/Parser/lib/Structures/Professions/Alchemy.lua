@@ -514,7 +514,7 @@ DF_ALCHEMY = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 		r(370748),	-- Reclaim Concoctions
 	}),
 }));
-TWW_ALCHEMY = bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+TWW_ALCHEMY = bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	r(423321),	-- Khaz Algar Alchemy
 	r(427174),	-- Wild Experimentation
 	filter(CONSUMABLES, {

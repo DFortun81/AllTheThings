@@ -324,7 +324,7 @@ i(0, 421244);		-- Living Serevite Deposit
 i(0, 422809);		-- Overload Living Deposit
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 i(0, 423341);		-- Khaz Algar Mining
 i(0, 439705);		-- Bismuth
@@ -365,5 +365,8 @@ i(0, 442328);		-- Refine Bismuth++
 i(0, 442329);		-- Refine Bismuth+++
 i(0, 442332);		-- Refine Ironclaw Ore++
 i(0, 442333);		-- Refine Ironclaw Ore+++
--- NIY?
+
+------------------
+-- PATCH 11.0.0 --
+------------------
 i(0, 423882);		-- Overload Test Deposit

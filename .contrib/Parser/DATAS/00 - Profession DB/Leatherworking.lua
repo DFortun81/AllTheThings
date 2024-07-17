@@ -2373,7 +2373,7 @@ i(211592, 430059);	-- Draconic Combatant's Resilient Trousers
 i(211596, 430063);	-- Draconic Combatant's Resilient Wristwraps
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 --- TRAINER ---
 i(0, 423340);		-- Khaz Algar Leatherworking

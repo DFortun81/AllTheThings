@@ -1934,7 +1934,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}
 		}),
 		ach(40862, {	-- Tricks and Treats of Khaz Algar
-			["timeline"] = { ADDED_11_0_2 },
+			["timeline"] = { ADDED_11_PH_LAUNCH },
 			["g"] = {
 				-- TODO: Uncomment _quests when quests are put in place (they already exist so someone can already source them).
 				-- INFO: Could technically also work via automation, these criteria don't need to be written out, but they do require the quests to be sourced for that + the Wago file to be updated.

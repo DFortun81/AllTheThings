@@ -215,7 +215,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			i(202184),	-- Trophy of Strife
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(40088, {	-- A Champion's Tour: The War Within (automated)
 				i(223802),	-- Purple Stagshell (PET!)

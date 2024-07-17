@@ -8,7 +8,7 @@ WORLDSOUL_MEMORY = createHeader({
 		en = "Worldsoul Memory",
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(WORLDSOUL_MEMORY, {
 		["providers"] = {
 			{ "n", 222165 },	-- Worldsoul Memory

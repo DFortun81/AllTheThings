@@ -1788,7 +1788,11 @@ i(212341);	-- Twice-Dead Tusk
 i(211798);	-- Un-Raised Bone Fragments
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_PREPATCH --
+------------------
+
+------------------
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 i(220287);	-- Acid-Filled Sack
 i(217170);	-- Backup Candles

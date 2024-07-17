@@ -859,7 +859,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			}),
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
 			ach(40494),	-- 10 Algari Anglerthread
 			ach(40495),	-- 20 Algari Anglerthread

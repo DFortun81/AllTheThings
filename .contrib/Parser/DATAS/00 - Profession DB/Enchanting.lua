@@ -1265,7 +1265,7 @@ i(0, 429948);		-- Enchanted Whelpling's Awakened Crest [Shared Item]
 i(0, 429945);		-- Enchanted Wyrm's Awakened Crest [Shared Item]
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 i(0, 423334);		-- Khaz Algar Enchanting
 i(0, 455970);		-- Disenchant [The War Within]

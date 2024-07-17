@@ -229,7 +229,7 @@ i(0, 421227);	-- Overgrown Writhebark
 i(0, 422293);	-- Overload Overgrown Herb
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 --- TRAINER ---
 i(0, 441327);	-- Herb Gathering (Khaz Algar)

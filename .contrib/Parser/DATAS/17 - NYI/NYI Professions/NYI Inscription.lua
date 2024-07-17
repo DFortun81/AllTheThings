@@ -48,8 +48,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
-				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				-- CREATED_11_PH_LAUNCH
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
 					i(222241),	-- Ace of Evolution
 					i(222223),	-- Ace of Shining
 					i(222214),	-- Ace of Symbiosis
@@ -485,8 +485,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
-				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				-- CREATED_11_PH_LAUNCH
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
 					-- With SpellID attached
 					i(223072),	-- Technique: Colors of the Wind [DEPRECATED] (RECIPE!)
 					i(223059),	-- Technique: Lexicon of Mysteries (RECIPE!)

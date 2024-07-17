@@ -4094,7 +4094,14 @@ i(224576, 4595);	-- Lil' Flameo
 i(223499, 4569);	-- Lil' Manny
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH ADDED_11_PH_PREPATCH --
+------------------
+i(218245, 4451);	-- Remembered Construct
+i(218086, 4450);	-- Remembered Riverpaw
+i(218246, 4452);	-- Remembered Spawn
+
+------------------
+-- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 --- ITEM ---
 i(221850, 4464);	-- Bean
@@ -4121,9 +4128,6 @@ i(225544, 4599);	-- Mind Slurp
 i(221546, 4534);	-- Nightfarm Growthling
 i(224439, 4470);	-- Oop'lajax
 i(223802, 4581);	-- Purple Stagshell
-i(218245, 4451);	-- Remembered Construct
-i(218086, 4450);	-- Remembered Riverpaw
-i(218246, 4452);	-- Remembered Spawn
 i(222978, 4546);	-- Sandstone Ramolith
 i(224579, 3362);	-- Sapphire Crab
 i(222974, 4543);	-- Sir Shady Mrgglton Junior
@@ -4176,6 +4180,10 @@ n(222615, 4516);	-- Vibrant Glowfly
 n(222421, 4483);	-- Vile Bloodtick
 n(222354, 4481);	-- Voidling Ooze
 n(222608, 4510);	-- Winged Arachnoid
+
+------------------
+-- PATCH 11.0.0 --
+------------------
 --- UNSORTED ---
 i(222969, 4474);	-- Anub'Rekyute
 i(221851, 4466);	-- Argos
@@ -4196,6 +4204,7 @@ i(222967, 4475);	-- Webbers
 ------------------
 -- PATCH 11.0.2 --
 ------------------
+--- UNSORTED ---
 i(223498, 4568);	-- Charismatic Courier
 i(228765, 4616);	-- Gummi
 i(228758, 4615);	-- Parrlok

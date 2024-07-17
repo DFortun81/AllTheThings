@@ -1,7 +1,7 @@
 -------------------------------------------
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
-root(ROOTS.Secrets, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.Secrets, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	header(HEADERS.Item, 224766, {	-- Faithful Dog
 		["description"] = "***Debugg Mode enabled is required to see all the steps.***\n\n You need to have completed Lost and Lonely (QuestID:30526) to start this Secret!",
 		["sourceQuests"] = { 30526 },	-- Lost and Lonely

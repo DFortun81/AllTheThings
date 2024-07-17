@@ -7,109 +7,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(REWARDS, {
 				i(202079, {	-- Cache of Vault Treasures (N)
 					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
-					--[[
-					["sym"] = {
-						{"select", "instanceID", 1200},			-- Vault of the Incarnates
-						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"is","encounterID"},					-- Only Encounter Headers
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					},
-					-]]
 				}),
 				i(202080, {	-- Cache of Vault Treasures (H)
 					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
-					--[[
-					["sym"] = {
-						{"select", "instanceID", 1200},			-- Vault of the Incarnates
-						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"is","encounterID"},					-- Only Encounter Headers
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					},
-					-]]
 				}),
 				i(205966, {	-- Cache of Aberrus Treasures (N)
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
-					--[[
-					["sym"] = {
-						{"select", "instanceID", 1208},			-- Aberrus, the Shadowed Crucible
-						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"is","encounterID"},					-- Only Encounter Headers
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					},
-					-]]
 				}),
 				i(205967, {	-- Cache of Aberrus Treasures (H)
 					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
-					--[[
-					["sym"] = {
-						{"select", "instanceID", 1208},			-- Aberrus, the Shadowed Crucible
-						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"is","encounterID"},					-- Only Encounter Headers
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					},
-					-]]
 				}),
 				i(209036, {	-- Cache of Amirdrassil Treasures (N)
 					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
-					--[[
-					["sym"] = {
-						{"select", "instanceID", 1207},			-- Amirdrassil, the Dream's Hope
-						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						{"where", "difficultyID", 14},			-- Select only the Normal Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"is","encounterID"},					-- Only Encounter Headers
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					},
-					-]]
 				}),
 				i(209037, {	-- Cache of Amirdrassil Treasures (H)
 					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
-					--[[
-					["sym"] = {
-						{"select", "instanceID", 1207},			-- Amirdrassil, the Dream's Hope
-						{"pop"},								-- Discard the Instance Headers and acquire all of their children.
-						{"where", "difficultyID", 15},			-- Select only the Heroic Difficulty Headers.
-						{"pop"},								-- Discard the Difficulty Headers and acquire all of their children.
-						{"is","encounterID"},					-- Only Encounter Headers
-						{"pop"},								-- Discard the Encounter Headers and acquire all of their children.
-						{"is", "itemID"},						-- Only Items!
-						{"invtype", "INVTYPE_HEAD", "INVTYPE_NECK", "INVTYPE_SHOULDER", "INVTYPE_CLOAK", "INVTYPE_CHEST", "INVTYPE_ROBE", "INVTYPE_WRIST", "INVTYPE_HAND", "INVTYPE_WAIST", "INVTYPE_LEGS", "INVTYPE_FEET", "INVTYPE_FINGER", "INVTYPE_TRINKET", "INVTYPE_WEAPON", "INVTYPE_SHIELD", "INVTYPE_RANGED", "INVTYPE_2HWEAPON", "INVTYPE_WEAPONMAINHAND", "INVTYPE_WEAPONOFFHAND", "INVTYPE_HOLDABLE", },
-					},
-					-]]
 				}),
 				i(217728, {	-- Cache of Awakened Treasures (N)
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
-					--[[
-					["sym"] = {
-						-- TODO: need symlink?
-					},
-					-]]
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED },
 				}),
 				i(217729, {	-- Cache of Awakened Treasures (H)
-					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 },
-					--[[
-					["sym"] = {
-						-- TODO: need symlink?
-					},
-					-]]
+					["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED },
 				}),
 				i(202091, {	-- Dragonscale Expedition Insignia [Epic 2.5k]
 					["minReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },

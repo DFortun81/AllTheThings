@@ -1,9 +1,9 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_1_LAUNCH } }, {
+root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(SEASON_FORGED, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {
 			ach(40396, {	-- Forged Combatant [A]
 				["races"] = ALLIANCE_ONLY,
 				["collectible"] = false,
@@ -69,7 +69,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			-- Fashion
 			ach(40728),	-- Forged Finery
 		})),
-		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {
+		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {
 			i(223511, {	-- Vicious Skyflayer [A]
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -78,7 +78,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			}),
 		})),
 		--[[
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {
 			n(219217, {	-- Velerd <Honor Quartermaster>
 				["coord"] = { 55.0, 76.5, DORNOGAL },
 				["g"] = {
@@ -193,7 +193,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				},
 			})
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {
 			n(0, {	--
 				["coord"] = { },
 				["g"] = {
@@ -289,7 +289,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				}
 			})
 		})),
-		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_1_LAUNCH, REMOVED_11_1_0 }, ["bonusID"] = 7532 }, {
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 }, ["bonusID"] = 7532 }, {
 
 		})),
 		filter(RECIPES, {
