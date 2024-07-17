@@ -573,6 +573,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						27761,	-- A Disarming Distraction
 						27777,	-- Core Access Codes
 					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Wibson Mainframe hacked
+							["providers"] = {
+                                { "i", 62621},    -- Maintenance Axe
+                                { "o", 206532},    -- Maintenance Tools
+                                { "n", 46715},    -- Wibson Mainframe
+                            },
+						}),
+					},
 				}),
 				q(28612, {	-- Harrison Jones and the Temple of Uldum
 					["qg"] = 49151,	-- Harrison Jones
