@@ -452,10 +452,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						objective(1, {	-- 0/15 Boulderfist Shaman slain
+						objective(1, {	-- 0/7 Boulderfist Shaman slain
 							["provider"] = { "n", 2570 },	-- Boulderfist Shaman
 						}),
-						objective(2, {	-- 0/10 Boulderfist Lord slain
+						objective(2, {	-- 0/3 Boulderfist Lord slain
 							["provider"] = { "n", 2571 },	-- Boulderfist Lord
 						}),
 						i(59178, {	-- Ramshackle Bracers

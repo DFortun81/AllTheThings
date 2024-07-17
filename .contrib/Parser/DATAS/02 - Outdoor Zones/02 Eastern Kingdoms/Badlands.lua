@@ -1708,6 +1708,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Kalaran the Annihilator slain
+							["provider"] = { "n", 46859 },	-- Kalaran the Annihilator
+						}),
+						objective(2, {	-- 0/4 Darkflight Soldier slain
+							["provider"] = { "n", 46915 },	-- Darkflight Soldier
+						}),
+					},
 				}),
 				q(27894, {	-- The Wrath of a Dragonflight (H)
 					["qgs"] = {
@@ -1727,6 +1735,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Kalaran the Annihilator slain
+							["provider"] = { "n", 46859 },	-- Kalaran the Annihilator
+						}),
+						objective(2, {	-- 0/4 Darkflight Soldier slain
+							["provider"] = { "n", 46915 },	-- Darkflight Soldier
+						}),
+					},
 				}),
 				{	-- Their Hunt Continues
 					["qg"] = 46654,	-- Rhea
