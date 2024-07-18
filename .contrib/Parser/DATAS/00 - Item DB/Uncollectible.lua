@@ -18,6 +18,9 @@ i(169294);	-- Resilient Soul
 i(173888);	-- Shard of Self Sacrifice \\ Lingering Soul
 -- SL
 i(187603);	-- The Mad Duke's Tea
+-- DF
+i(195572);	-- Empty Elixir
+i(194742);	-- Worn Book
 
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 

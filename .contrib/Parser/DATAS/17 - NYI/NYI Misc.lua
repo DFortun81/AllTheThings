@@ -1057,7 +1057,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(194678),	-- Elemental Crystal
 			i(194021),	-- Emblazoned Parchment: Bottom Half
 			i(194022),	-- Emblazoned Parchment: Top Half
-			i(195572),	-- Empty Elixir
 			i(191296),	-- Enchanted Lockbox
 			i(193659),	-- Ever-Decaying Spore
 			i(198723),	-- Expedition Binoculars (NYI)
@@ -1176,7 +1175,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(200870),	-- Vorquin Essence
 			i(198733),	-- Wayfinderr's Compass (NYI)
 			i(191426),	-- Whelmed Duckling
-			i(194742),	-- Worn Book
 			i(191185),	-- Worn Parchment
 			i(187621),	-- Writ of Construction
 			i(187523),	-- Your Reward [DNT]
