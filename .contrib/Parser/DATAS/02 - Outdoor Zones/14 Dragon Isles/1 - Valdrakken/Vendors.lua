@@ -297,6 +297,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(195518),	-- Imbued Qalashi Crusher
 					i(195528),	-- Incarnate Sky-Splitter
 					i(195491),	-- Infused Stormglaives
+					i(195519),	-- Kharnalex, The First Light
 					i(194308),	-- Manic Grieftorch
 					i(195489),	-- Maul of the Earthshaper
 					i(195527),	-- Neltharax, Enemy of the Sky
