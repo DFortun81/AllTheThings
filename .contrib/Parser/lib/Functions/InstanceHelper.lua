@@ -13,7 +13,7 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	local CurrentDifficultyID
 	local ALL_BOSSES = {}
 	for _,v in pairs(crs) do
-		ALL_BOSSES = appendGroups(v, ALL_BOSSES)
+		appendAllGroups(ALL_BOSSES, v)
 	end
 	local function BossOnly(id, t)
 		local encounter = e(id, t)
@@ -54,6 +54,16 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 					["crs"] = ALL_BOSSES,
 					["groups"] = t,
 				})
+	end
+	local function RawAllBosses(groups)
+		if not groups or not isarray(groups) then
+			print("Expecting array type for AddGroups for InstanceHelper")
+			return groups
+		end
+		for _,o in ipairs(groups) do
+			o.crs = ALL_BOSSES
+		end
+		return groups
 	end
 	local function ZoneDrops(groups)
 		if groups then
@@ -101,7 +111,37 @@ CreateInstanceHelper = function(crs, loots, zonedrops)
 	helper.Difficulty = Difficulty
 	helper.CommonBossDrops = CommonBossDrops
 	helper.ZoneDrops = ZoneDrops
+	helper.RawAllBosses = RawAllBosses
 	helper.WithUpgrades = WithUpgrades
 	helper.ALL_BOSSES = ALL_BOSSES
 	return helper
+end
+
+GET_SYM_DF_S4_TIER_TOKENS = function(modID)
+	return {
+		modID and {"modID",modID} or {"myModID"},
+		{"select","modItemID",
+			217324,	-- Dreadful Decelerating Chronograph
+			217325,	-- Mystic Decelerating Chronograph
+			217326,	-- Venerated Decelerating Chronograph
+			217327,	-- Zenith Decelerating Chronograph
+			217332,	-- Dreadful Synchronous Timestrand
+			217333,	-- Mystic Synchronous Timestrand
+			217334,	-- Venerated Synchronous Timestrand
+			217335,	-- Zenith Synchronous Timestrand
+			217316,	-- Dreadful Fleeting Hourglass
+			217317,	-- Mystic Fleeting Hourglass
+			217318,	-- Venerated Fleeting Hourglass
+			217319,	-- Zenith Fleeting Hourglass
+			217320,	-- Dreadful Quickened Bronzestone
+			217321,	-- Mystic Quickened Bronzestone
+			217322,	-- Venerated Quickened Bronzestone
+			217323,	-- Zenith Quickened Bronzestone
+			217328,	-- Dreadful Ephemeral Hypersphere
+			217329,	-- Mystic Ephemeral Hypersphere
+			217330,	-- Venerated Ephemeral Hypersphere
+			217331,	-- Zenith Ephemeral Hypersphere
+		},
+		{"groupfill",true},
+		{"pop"}}
 end
