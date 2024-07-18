@@ -161,9 +161,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(224152, {	-- Recipe: Empress' Farewell (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
-					i(223959, {	-- Recipe: Secret Sauce (RECIPE!)
-						["cost"] = {{"c", KEJ, 1500}},
-					}),
 					i(223958, {	-- Recipe: Spongey Scramble (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
@@ -250,7 +247,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			n(218218, {	-- "Eight-Shaker" Sallow <Apertifologist>
 				["coord"] = { 53.4, 15.3, NERUBAR },
 				["g"] = {
-					i(223957, {-- Recipe: Protein Slurp (RECIPE)
+					i(223957, {	-- Recipe: Protein Slurp (RECIPE)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
 				},

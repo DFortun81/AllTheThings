@@ -324,30 +324,30 @@ root(ROOTS.Unsorted, {
 				i(220391),	-- Khaz Algar Tomato
 				i(220392),	-- Granulated Spices
 				i(220393),	-- Clumped Flour
-				i(220394),	-- Skewered Fillet
-				i(220395),	-- Meatball Hold-Me-Over
-				i(220396),	-- Unseasoned Field Steak
-				i(220397),	-- Roasted Mycobloom
 
 
 
 
 
 
-				i(220404),	-- Sweet and Sour Meatballs
+
+
+
+
+
 				i(220405),	-- Grilled Pepper Steak
-				i(220406),	-- Zesty Nibblers
 
 
-				i(220409),	-- Salty Fish Pie
+
+
 
 				i(220411),	-- Underbelly Soup
 
-				i(220414),	-- Salt Baked Seafood
 
 
-				i(220417),	-- Stuffed Cave Peppers
-				i(220418),	-- Sizzling Honey Roast
+
+
+
 
 				i(220420),	-- The Breakfast Sampler
 				i(220421),	-- Daylight Delicacy
@@ -355,7 +355,7 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(220426),	-- Village Potluck
+
 
 
 				i(220429),	-- Citrus Refresher
@@ -363,8 +363,8 @@ root(ROOTS.Unsorted, {
 				i(220431),	-- Crisp Ringing Water
 
 				i(220433),	-- Savory Evening Tart
-				i(220434),	-- Rockslide Shake
-				i(220435),	-- Olive Oil Ice Cream
+
+
 				i(221754),	-- Ringing Deeps Ingot
 				i(221757),	-- Gloomfathom Hide
 				i(221758),	-- Profaned Tinderbox
@@ -402,21 +402,18 @@ root(ROOTS.Unsorted, {
 				i(222259),	-- Khaz Algar Tomato
 				i(222260),	-- Granulated Spices
 				i(222261),	-- Clumped Flour
-				i(222262),	-- Skewered Fillet
-				i(222263),	-- Meatball Hold-Me-Over
-				i(222264),	-- Unseasoned Field Steak
-				i(222265),	-- Roasted Mycobloom
 
 
-				i(222272),	-- Sweet and Sour Meatballs
+
+
+
 				i(222273),	-- NYI NAME NEEDED
-				i(222274),	-- Zesty Nibblers
 
-				i(222277),	-- Salty Fish Pie (Revise)
+
+
 				i(222278),	-- Fish Cake (Revise)
 				i(222279),	-- Fish Soup (Revise)
 
-				i(222282),	-- Salt Baked Seafood
 
 				i(222284),	-- NYI NAME NEEDED
 				i(222285),	-- NYI NAME NEEDED
@@ -436,24 +433,21 @@ root(ROOTS.Unsorted, {
 				i(222299),	-- NYI NAME NEEDED
 
 				i(222301),	-- NYI NAME NEEDED
-				i(222302),	-- Rockslide Shake
+
 				i(222303),	-- NYI NAME NEEDED
 				i(222304),	-- NYI NAME NEEDED
-				i(222305),	-- Hearty Skewered Fillet
-				i(222306),	-- Hearty Meatball Hold-Me-Over
-				i(222307),	-- Hearty Unseasoned Field Steak
-				i(222308),	-- Hearty Roasted Mycobloom
 
 
-				i(222315),	-- Hearty Sweet and Sour Meatballs
+
+
+
 				i(222316),	-- Hearty NYI NAME NEEDED
-				i(222317),	-- Hearty Zesty Nibblers
 
-				i(222320),	-- Hearty Salty Fish Pie (Revise)
+
+
 				i(222321),	-- Hearty Fish Cake (Revise)
 				i(222322),	-- Hearty Fish Soup (Revise)
 
-				i(222325),	-- Hearty Salt Baked Seafood
 
 				i(222327),	-- Hearty NYI NAME NEEDED
 				i(222328),	-- Hearty NYI NAME NEEDED
@@ -473,7 +467,7 @@ root(ROOTS.Unsorted, {
 				i(222342),	-- Hearty NYI NAME NEEDED
 
 				i(222344),	-- Hearty NYI NAME NEEDED
-				i(222345),	-- Hearty Rockslide Shake
+
 				i(222346),	-- Hearty NYI NAME NEEDED
 				i(222347),	-- Hearty NYI NAME NEEDED
 				i(222526),	-- Bloody Perch
@@ -506,31 +500,6 @@ root(ROOTS.Unsorted, {
 				i(222699),	-- Khaz Algar Tomato
 				i(222700),	-- Granulated Spices
 				i(222701),	-- Clumped Flour
-				i(222702),	-- Skewered Fillet
-				i(222703),	-- Simple Stew
-				i(222704),	-- Unseasoned Field Steak
-				i(222705),	-- Roasted Mycobloom
-
-
-
-
-
-
-				i(222712),	-- Sweet and Sour Meatballs
-				i(222713),	-- Tender Twilight Jerky
-				i(222714),	-- Zesty Nibblers
-
-
-				i(222717),	-- Salty Dog \\ Salty Fish Pie
-
-				i(222719),	-- Sweet and Spicy Soup
-				i(222720),	-- The Sushi Special
-
-				i(222722),	-- Salt Baked Seafood
-
-				i(222724),	-- Sizzling Honey Roast
-
-				i(222726),	-- Stuffed Cave Peppers
 
 
 
@@ -538,7 +507,31 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(222734),	-- Village Potluck
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -550,35 +543,6 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(222746),	-- Tasty Pocket Tart \\ Eclipse Eclair
-				i(222747),	-- Rockslide Shake
-				i(222748),	-- Sticky Sweet Treat \\ Olive Oil Ice Cream
-
-				i(222750),	-- Hearty Skewered Fillet
-				i(222751),	-- Hearty Simple Stew \\ Hearty Meatball Hold-Me-Over
-				i(222752),	-- Hearty Unseasoned Field Steak
-				i(222753),	-- Hearty Roasted Mycobloom
-
-
-
-
-
-
-				i(222760),	-- Hearty Sweet and Sour Meatballs
-				i(222761),	-- Hearty Tender Twilight Jerky
-				i(222762),	-- Hearty Zesty Nibblers
-
-
-				i(222765),	-- Hearty Salty Dog \\ Hearty Salty Fish Pie
-
-				i(222767),	-- Hearty Sweet and Spicy Soup
-				i(222768),	-- Hearty Sushi Special \\ Hearty Fish Stir Fry (Revise)
-
-				i(222770),	-- Hearty Salt Baked Seafood
-
-				i(222772),	-- Hearty Sizzling Honey Roast
-
-				i(222774),	-- Hearty Stuffed Cave Peppers
 
 
 
@@ -586,7 +550,35 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(222782),	-- Hearty Village Potluck
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 				i(222785),	-- zzold cooking recipe
@@ -600,8 +592,8 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(223968),	-- Spongey Scramble
-				i(223969),	-- Secret Sauce
+
+
 
 				i(223977),	-- Coagulated Yolk
 				i(223978),	-- Double Packed Yolk
@@ -841,10 +833,19 @@ root(ROOTS.Unsorted, {
 					}),
 					i(223966),	-- Everything-On-A-Stick
 
+					-- from Polo
+					i(223959, {	-- Recipe: Secret Sauce (RECIPE!)
+						["cost"] = {{"c", KEJ, 1500}},
+					}),
+					i(223969),	-- Secret Sauce
+
 					i(223955),	-- Recipe: Fine Egg Powder
 
 					i(223965),	-- Fine Egg Powder
 					i(225876),	-- Fine Egg Powder
+
+
+					i(222746),	-- Tasty Pocket Tart
 
 					-- nyi--?
 					i(224419),	-- Recipe: Jester's Board \\ Recipe: All-Day Banquet
@@ -904,7 +905,39 @@ root(ROOTS.Unsorted, {
 					i(222276),	-- Ginger Glazed Fillet
 					i(222319),	-- Hearty Ginger Glazed Fillet
 					i(222742),	-- Luminous Lemonade
-
+					i(220426),	-- Village Potluck
+					i(222734),	-- Village Potluck
+					i(222782),	-- Hearty Village Potluck
+					i(220406),	-- Zesty Nibblers
+					i(222274),	-- Zesty Nibblers
+					i(222317),	-- Hearty Zesty Nibblers
+					i(220396),	-- Unseasoned Field Steak
+					i(222264),	-- Unseasoned Field Steak
+					i(222307),	-- Hearty Unseasoned Field Steak
+					i(220404),	-- Sweet and Sour Meatballs
+					i(222272),	-- Sweet and Sour Meatballs
+					i(222315),	-- Hearty Sweet and Sour Meatballs
+					i(220417),	-- Stuffed Cave Peppers
+					i(220435),	-- Olive Oil Ice Cream
+					i(220394),	-- Skewered Fillet
+					i(222262),	-- Skewered Fillet
+					i(222305),	-- Hearty Skewered Fillet
+					i(220418),	-- Sizzling Honey Roast
+					i(220395),	-- Meatball Hold-Me-Over
+					i(222263),	-- Meatball Hold-Me-Over
+					i(222306),	-- Hearty Meatball Hold-Me-Over
+					i(220409),	-- Salty Fish Pie
+					i(222277),	-- Salty Fish Pie (Revise)
+					i(222320),	-- Hearty Salty Fish Pie (Revise)
+					i(220414),	-- Salt Baked Seafood
+					i(222282),	-- Salt Baked Seafood
+					i(222325),	-- Hearty Salt Baked Seafood
+					i(220434),	-- Rockslide Shake
+					i(222302),	-- Rockslide Shake
+					i(222345),	-- Hearty Rockslide Shake
+					i(220397),	-- Roasted Mycobloom
+					i(222265),	-- Roasted Mycobloom
+					i(222308),	-- Hearty Roasted Mycobloom
 				}),
 				prof(ENGINEERING, {
 					i(221895),	-- Prototype: Tinker: Lightning Tether \\ Prototype: Tinker: Lightning  Tether

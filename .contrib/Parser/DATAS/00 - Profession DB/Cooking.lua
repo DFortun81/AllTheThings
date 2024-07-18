@@ -866,7 +866,7 @@ r(445127), -- Fresh Fillet
 r(445096), -- Ginger Glazed Fillet
 r(445087), -- Hallowfall Chili
 r(462857),	-- Hearty Feast
-r(445120), -- Hearty Food \\ Hearty Meals
+r(445120), -- Hearty Food
 r(445110), -- Jester's Board
 r(445103), -- Marinated Tenderloins
 r(445090), -- Meat and Potatoes
@@ -874,6 +874,21 @@ r(445105), -- Mycobloom Risotto
 r(445086), -- Pan-Seared Mycobloom
 r(445118), -- Portioned Steak
 r(445091), -- Rib Stickers
+r(445085), -- Roasted Mycobloom
+r(445482), -- Rockslide Shake
+r(445102), -- Salt Baked Seafood
+r(445097), -- Salty Dog
+r(445083), -- Simple Stew
+r(445104), -- Sizzling Honey Roast
+r(445082), -- Skewered Fillet
+r(445119), -- Spiced Meat Stock
+r(445106), -- Stuffed Cave Peppers
+r(445092), -- Sweet and Sour Meatballs
+r(445099), -- Sweet and Spicy Soup
+r(445093), -- Tender Twilight Jerky
+r(445100), -- The Sushi Special
+r(445084), -- Unseasoned Field Steak
+r(445094), -- Zesty Nibblers
 --- ITEM ---
 i(223961, 447875), -- Azj-Kahet Special
 i(225894, 445108), -- Beledar's Bounty
@@ -889,33 +904,15 @@ i(228421, 445484), -- Melted Candlebar
 i(226177, 445111), -- Outsider's Provisions
 i(228423, 445480), -- Pep-In-Your-Step
 i(223957, 447871), -- Protein Slurp
-
---[[
-r(445085), -- Roasted Mycobloom
-r(445482), -- Rockslide Shake
-r(445102), -- Salt Baked Seafood
-r(445097), -- Salty Dog \\ Salty Fish Pie
-r(447873), -- Secret Sauce
-r(445083), -- Simple Stew
-r(445104), -- Sizzling Honey Roast
-r(445082), -- Skewered Fillet
-r(445119), -- Spiced Meat Stock
-r(447872), -- Spongey Scramble
-r(445483), -- Sticky Sweet Treat \\ Olive Oil Ice Cream
-r(445106), -- Stuffed Cave Peppers
-r(445092), -- Sweet and Sour Meatballs
-r(445099), -- Sweet and Spicy Soup
-r(445481), -- Tasty Pocket Tart \\ Eclipse Eclair
-r(445093), -- Tender Twilight Jerky
-r(445100), -- The Sushi Special
-r(445084), -- Unseasoned Field Steak
-r(445114), -- Village Potluck
-r(445094), -- Zesty Nibblers
-
+i(223958, 447872), -- Spongey Scramble
+i(226190, 445483), -- Sticky Sweet Treat
 -- Unsorted
 i(223956, 447870), -- Everything-On-A-Stick
 i(223955, 447869), -- Fine Egg Powders
+i(223959, 447873), -- Secret Sauce
+r(445481), -- Tasty Pocket Tart
 --nyi
 r(445478), -- Blessing Blossom Tea
 r(445477), -- Luminous Lemonade
+r(445114), -- Village Potluck
 --]]

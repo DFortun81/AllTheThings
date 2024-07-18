@@ -409,7 +409,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(RASHANAN, {
 					i(224435),	-- Pattern: Duskthread Lining (RECIPE!)
 				}),
-				BossOnly(OVINAX),
+				BossOnly(OVINAX, {
+					i(226190),	-- Recipe: Sticky Sweet Treat (RECIPE!)
+				}),
 				BossOnly(KYVEZA, {
 					i(223048),	-- Plans: Siphoning Stiletto (RECIPE!)
 				}),

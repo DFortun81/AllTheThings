@@ -544,9 +544,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(222779),	-- Hearty Outsider's Provisions
 		i(222754),	-- Hearty Pan-Seared Mycobloom
 		i(222759),	-- Hearty Rib Stickers
-
-
-
+		i(222753),	-- Hearty Roasted Mycobloom
+		i(222770),	-- Hearty Salt Baked Seafood
+		i(222765),	-- Hearty Salty Dog
+		i(222751),	-- Hearty Simple Stew
+		i(222772),	-- Hearty Sizzling Honey Roast
+		i(222750),	-- Hearty Skewered Fillet
+		i(222774),	-- Hearty Stuffed Cave Peppers
+		i(222768),	-- Hearty Sushi Special
+		i(222760),	-- Hearty Sweet and Sour Meatballs
+		i(222767),	-- Hearty Sweet and Spicy Soup
+		i(222761),	-- Hearty Tender Twilight Jerky
+		i(222752),	-- Hearty Unseasoned Field Steak
+		i(222762),	-- Hearty Zesty Nibblers
 		i(222730),	-- Jester's Board
 		i(223970),	-- Little Buddy Biscuits
 		i(222723),	-- Marinated Tenderloins
@@ -558,6 +568,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(222745),	-- Pep-In-Your-Step
 		i(223967),	-- Protein Slurp
 		i(222711),	-- Rib Stickers
+		i(222705),	-- Roasted Mycobloom
+		i(222747),	-- Rockslide Shake
+		i(222722),	-- Salt Baked Seafood
+		i(222717),	-- Salty Dog
+		i(222703),	-- Simple Stew
+		i(222724),	-- Sizzling Honey Roast
+		i(222702),	-- Skewered Fillet
+		i(223968),	-- Spongey Scramble
+		i(222748),	-- Sticky Sweet Treat
+		i(222726),	-- Stuffed Cave Peppers
+		i(222712),	-- Sweet and Sour Meatballs
+		i(222719),	-- Sweet and Spicy Soup
+		i(222713),	-- Tender Twilight Jerky
+		i(222720),	-- The Sushi Special
+		i(222704),	-- Unseasoned Field Steak
+		i(222714),	-- Zesty Nibblers
 		filter(REAGENTS, {
 			i(222737),	-- Chopped Mycobloom
 		}),
