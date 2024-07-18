@@ -263,6 +263,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57.4, 71.4, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Dumpy Level
+							["provider"] = { "i", 55234 },	-- Dumpy Level
+							["cr"] = 41145,	-- Silty Oozeling
+						}),
+					},
 				}),
 				q(304, {	-- A Grim Task
 					["qg"] = 1071,	-- Longbraid the Grim
@@ -293,6 +299,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 11.8, 57.9, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Harbor Shredfin slain
+							["providers"] = {
+								{ "n", 41293},	-- Harbor Shredfin
+								{ "n", 44110},	-- Ocean Shredfin
+							},
+						}),
+					},
 				}),
 				q(26327, {	-- Anvilmar the Hero
 					["qg"] = 1071,	-- Longbraid the Grim
@@ -329,6 +343,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Horghast Flarecrazed slain
+							["provider"] = { "n", 41273 },	-- Horghast Flarecrazed
+						}),
 						i(59078, {	-- Flarecrazed Cloak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -392,6 +409,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/12 Bluegill Murloc slain
+							["providers"] = {
+								{ "n", 42109},	-- Bluegill Murloc Kill Credit
+								{ "n", 41425},	-- Bluegill Murloc
+								{ "n", 41426},	-- Bluegill Oracle
+								{ "n", 42110},	-- Bluegill Puddlejumper
+								{ "n", 42111},	-- Bluegill Forager
+								{ "n", 44224},	-- Two-Toes
+							},
+						}),
+						objective(2, {	-- 0/1 Gobbler's Head
+							["provider"] = { "i", 3618 },	-- Gobbler's Head
+							["cr"] = 1259,	-- Gobbler
+						}),
 						i(59082, {	-- Merchant Marine Pauldrons
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -417,6 +448,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.9, 79.2, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Dragonmaw Orc slain
+							["providers"] = {
+								{ "n", 41080},	-- Dragonmaw Scout
+								{ "n", 41072},	-- Dragonmaw Grunt
+								{ "n", 42107},	-- Dragonmaw Grunt
+							},
+						}),
+					},
 				}),
 				q(293, {	-- Cleansing the Eye
 					["providers"] = {
@@ -439,6 +479,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.7, 26.7, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Marshy Crocolisk Hide
+							["provider"] = { "i", 56087 },	-- Marshy Crocolisk Hide
+							["cr"] = 41419,	-- Wetlands Crocolisk
+						}),
+					},
 				}),
 				q(25816, {	-- Cursed to Roam
 					["qg"] = 1239,	-- First Mate Fitzsimmons
@@ -463,6 +509,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.9, 26.0, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Dark Iron Trapper slain
+							["provider"] = { "n", 41409 },	-- Dark Iron Trapper
+						}),
+					},
 				}),
 				q(474, {	-- Defeat Nek'rosh
 					["provider"] = { "o", 1609 },	-- Dragonmaw Catapult
@@ -512,6 +563,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Highland Raptors slain
+							["providers"] = {
+								{ "n", 41414},	-- Highland Raptor Kill Credit
+								{ "n", 41400},	-- Highland Razormaw
+								{ "n", 41401},	-- Highland Scytheclaw
+							},
+						}),
 						i(59095, {	-- Swiftgear Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -540,6 +598,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Glowerglare's Beard
+							["provider"] = { "i", 55988 },	-- Glowerglare's Beard
+							["cr"] = 41151,	-- Drungeld Glowerglare
+						}),
 						i(59072, {	-- Addled Blotter Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -574,6 +636,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57.5, 71.7, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Flood Elemental slain
+							["provider"] = { "n", 41132 },	-- Flood Elemental
+						}),
+					},
 				}),
 				q(277, {	-- Fire Taboo
 					["qg"] = 1244,	-- Rethiel the Greenwarden
@@ -630,6 +697,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57.5, 71.7, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Leech Stalker slain
+							["provider"] = { "n", 1111 },	-- Leech Stalker
+						}),
+						objective(2, {	-- 0/7 Cave Stalker slain
+							["provider"] = { "n", 4040 },	-- Cave Stalker
+						}),
+					},
 				}),
 				q(25855, {	-- Gizmos and Gadgets
 					["qg"] = 41435,	-- Fradd Swiftgear
@@ -661,6 +736,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.7, 26.7, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Horrorjaw's Hide
+							["provider"] = { "i", 56089 },	-- Horrorjaw's Hide
+							["cr"] = 41420,	-- Horrorjaw
+						}),
+					},
 				}),
 				q(25854, {	-- I'll Call Him Bitey
 					["qg"] = 41435,	-- Fradd Swiftgear
@@ -744,6 +825,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 15.2, 29.4, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Intrepid Strongbox Key
+							["provider"] = { "i", 2629 },	-- Intrepid Strongbox Key
+							["crs"] = {
+								1160,	-- Captain Halyndor
+								41429,	-- Captain Halyndor
+							},
+						}),
+					},
 				}),
 				q(321, {	-- Lightforge Iron
 					["qg"] = 1217,	-- Glorin Steelbrow
@@ -786,6 +876,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.3, 40.4, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Mouldering Mirebeast slain
+							["provider"] = { "n", 41424 },	-- Mouldering Mirebeast
+						}),
+					},
 				}),
 				q(465, {	-- Nek'rosh's Gambit
 					["providers"] = {
@@ -977,6 +1072,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 38.6, 39.5, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Paleolithic Elemental slain
+							["provider"] = { "n", 41389 },	-- Paleolithic Elemental
+						}),
+					},
 				}),
 				q(26980, {	-- Swiftgear Station
 					["qg"] = 2104,	-- Captain Stoutfist
@@ -1029,6 +1129,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 38.9, 39.3, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Gorfax Angerfang slain
+							["provider"] = { "n", 46122 },	-- Gorfax Angerfang
+						}),
+						objective(2, {	-- 0/16 Angerfang Dragonmaw slain
+							["providers"] = {
+								{ "n", 42151},	-- Angerfang Dragonmaw Kill Credit
+								{ "n", 1034},	-- Dragonmaw Raider
+								{ "n", 1035},	-- Dragonmaw Swamprunner
+								{ "n", 1036},	-- Dragonmaw Centurion
+								{ "n", 1038},	-- Dragonmaw Shadowwarder
+								{ "n", 1057},	-- Dragonmaw Bonewarder
+							},
+						}),
+					},
 				}),
 				q(26128, {	-- The Battle of Thandol Span
 					["qg"] = 42160,	-- Thargas Anvilmar
@@ -1037,6 +1152,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Calamoth Ashbeard slain
+							["provider"] = { "n", 41522 },	-- Calamoth Ashbeard
+						}),
 						i(59113, {	-- Khaz Modan Pauldrons (Plate)
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1063,6 +1181,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/12 Dragonmaw Whelpstealer slain
+							["provider"] = { "n", 42041 },	-- Dragonmaw Whelpstealer
+						}),
 						i(59116, {	-- Ring of Bravery
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1102,6 +1223,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Cursed Sailor slain
+							["provider"] = { "n", 41428 },	-- Cursed Sailor
+						}),
+						objective(2, {	-- 0/5 Cursed Marine slain
+							["provider"] = { "n", 41427 },	-- Cursed Marine
+						}),
 						i(59089, {	-- Curse Lifter's Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1256,6 +1383,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Ironforge Ingot
+							["provider"] = { "i", 56088 },	-- Ironforge Ingot
+							["crs"] = {
+								41390,	-- Mosshide Gnoll
+								41391,	-- Mosshide Mystic
+								44149,	-- Partially-Digested Mosshide Gnoll
+								44150,	-- Slowly Decaying Mosshide Mystic
+							},
+						}),
 						i(59098, {	-- Ingot-Handler Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1361,6 +1497,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.3, 40.4, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Rampant Fire Elemental slain
+							["provider"] = { "n", 41449 },	-- Rampant Fire Elemental
+						}),
+					},
 				}),
 				q(26127, {	-- The Twilight's Hammer Revealed
 					["qg"] = 42160,	-- Thargas Anvilmar
@@ -1368,12 +1509,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.4, 17.2, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Twilight Convert slain
+							["provider"] = { "n", 42154 },	-- Twilight Convert
+						}),
+					},
 				}),
 				q(25723, {	-- Thresh Out of Luck
 					["qg"] = 41128,	-- Dunlor Marblebeard
 					["coord"] = { 57.8, 71.4, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Threshadon Chunk
+							["provider"] = { "i", 55232 },	-- Threshadon Chunk
+							["cr"] = 41137,	-- Displaced Threshadon
+						}),
+					},
 				}),
 				q(25853, {	-- Tooling Around
 					["qg"] = 41413,	-- Merrin Rockweaver
@@ -1492,12 +1644,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 38.9, 39.3, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/20 Fossilized Bone
+							["provider"] = { "i", 56083 },	-- Fossilized Bone
+							["crs"] = {
+								41388,	-- Living Fossil
+								44226,	-- Sarltooth
+							},
+						}),
+					},
 				}),
 				q(25800, {	-- When Life Gives You Crabs
 					["qg"] = 41297,	-- Karl Boran
 					["coord"] = { 11.0, 57.7, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Meaty Crawler Claw
+							["provider"] = { "i", 56013 },	-- Meaty Crawler Claw
+							["crs"] = {
+								41295,	-- Ocean Crawler
+								44116,	-- Harbor Crawler
+							},
+						}),
+					},
 				}),
 				q(26195, {	-- Who Wards The Greenwarden
 					["qg"] = 41411,	-- Prospector Whelgar
@@ -1520,6 +1690,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Yorla Darksnare slain
+							["provider"] = { "n", 41416 },	-- Yorla Darksnare
+						}),
 						i(59102, {	-- Old Guard's Hammer
 							["timeline"] = { ADDED_4_0_3 },
 						}),
