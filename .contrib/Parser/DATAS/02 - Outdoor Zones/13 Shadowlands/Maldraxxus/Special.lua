@@ -16,7 +16,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							{"i",187915,1},	-- Pungent Blobfish
 						},
 						["questID"] = 65039,
-						["isWeekly"] = true,
 						["timeline"] = { ADDED_9_2_0 },
 					}),
 				},
