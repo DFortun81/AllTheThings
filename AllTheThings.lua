@@ -8418,6 +8418,13 @@ RowOnEnter = function (self)
 							app.SearchForRelativeItems(encounter, itemList);
 						end
 					end
+					local item
+					for i=#itemList,1,-1 do
+						item = itemList[i]
+						if item.u and item.u < 3 then
+							tremove(itemList, i)
+						end
+					end
 					local specHits = {};
 					for _,item in ipairs(itemList) do
 						local specs = item.specs;
