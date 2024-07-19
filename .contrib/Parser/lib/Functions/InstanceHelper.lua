@@ -119,7 +119,7 @@ end
 
 GET_SYM_DF_S4_TIER_TOKENS = function(modID)
 	return {
-		modID and {"modID",modID} or {"myModID"},
+		modID and {"usemodID",modID} or {"usemyModID"},
 		{"select","modItemID",
 			217324,	-- Dreadful Decelerating Chronograph
 			217325,	-- Mystic Decelerating Chronograph

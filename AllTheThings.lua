@@ -1873,11 +1873,17 @@ local ResolveFunctions = {
 	-- Instruction to apply a specific modID to any Items within the finalized search results
 	["modID"] = function(finalized, searchResults, o, cmd, modID)
 		FinalizeModID = modID
-		SelectMod = GetGroupItemIDWithModID(nil, nil, modID)
 	end,
 	-- Instruction to apply the modID from the Source object to any Items within the finalized search results
 	["myModID"] = function(finalized, searchResults, o)
 		FinalizeModID = o.modID
+	end,
+	-- Instruction to apply a specific modID to any Items within the finalized search results
+	["usemodID"] = function(finalized, searchResults, o, cmd, modID)
+		SelectMod = GetGroupItemIDWithModID(nil, nil, modID)
+	end,
+	-- Instruction to apply the modID from the Source object to any Items within the finalized search results
+	["usemyModID"] = function(finalized, searchResults, o)
 		SelectMod = GetGroupItemIDWithModID(nil, nil, o.modID)
 	end,
 	-- Instruction to use the modID from the Source object to filter matching modID on any Items within the finalized search results
@@ -2211,7 +2217,9 @@ local NonSelectCommands = {
 	achievement_criteria = true,
 	sub = true,
 	myModID = true,
-	modID = true
+	modID = true,
+	usemyModID = true,
+	usemodID = true,
 }
 local HandleCommands = app.Debugging and function(finalized, searchResults, o, oSym)
 	local cmd, cmdFunc
