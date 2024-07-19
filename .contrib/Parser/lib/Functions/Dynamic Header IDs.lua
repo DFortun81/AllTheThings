@@ -249,6 +249,7 @@ HeaderAssignments = {
 	["March of the Tadpoles"] = -1000222,
 	["May"] = -1000153,
 	["Merciless Gladiator"] = -1000128,
+	["Mereldar Fishing Derby"] = -1000977,
 	["Midsummer Fire Festival"] = -1000223,
 	["Minigames"] = -1000202,
 	["Miscellaneous"] = -1000264,
@@ -484,4 +485,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000976;
+NextHeaderID = -1000978;
