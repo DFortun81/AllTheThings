@@ -6621,12 +6621,12 @@ local function SetGroupVisibility(parent, group)
 	end
 	-- Cost
 	if not visible and ((group.costTotal or 0) > 0) then
-		visible = not group.saved;
+		visible = true
 		-- app.PrintDebug("SGV.cost",group.hash,visible,group.costTotal)
 	end
 	-- Upgrade
 	if not visible and ((group.upgradeTotal or 0) > 0) then
-		visible = not group.saved;
+		visible = true
 		-- if debug then print("SGV.hasUpgrade",group.hash,visible) end
 	end
 	-- Trackable
@@ -6666,12 +6666,12 @@ local function SetThingVisibility(parent, group)
 	end
 	-- Cost
 	if not visible and ((group.costTotal or 0) > 0) then
-		visible = not group.saved;
+		visible = true
 		-- app.PrintDebug("STV.cost",group.hash,visible,group.costTotal)
 	end
 	-- Upgrade
 	if not visible and ((group.upgradeTotal or 0) > 0) then
-		visible = not group.saved;
+		visible = true
 		-- if debug then print("STV.hasUpgrade",group.hash,visible) end
 	end
 	-- Trackable
