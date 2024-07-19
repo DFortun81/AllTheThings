@@ -691,31 +691,30 @@ namespace ATT
                     // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)
                     case "sym":
                         {
-                            // Convert the data to a list of generic objects.
-                            var newListOfLists = value as List<List<object>>;
-                            if (newListOfLists == null)
+                            // Convert the data to a list of generic objects (validation is performed elsewhere)
+                            if (value is List<List<object>> newListOfLists)
                             {
-                                var newList = value as List<object>;
-                                if (newList == null)
+                                item[field] = newListOfLists;
+                                return;
+                            }
+
+                            newListOfLists = new List<List<object>>();
+
+                            if (!( value is List<object> newList))
+                            {
+                                LogWarn($"Unable to merge 'sym' data: {ToJSON(value)}", item);
+                                return;
+                            }
+
+                            foreach (var o in newList)
+                            {
+                                if (!(o is List<object> list))
                                 {
-                                    Console.WriteLine("Incorrect format for 'sym'");
-                                    Console.WriteLine(MiniJSON.Json.Serialize(value));
-                                    Console.ReadLine();
-                                    return;
+                                    LogWarn($"Unable to merge 'sym' data: {ToJSON(o)}", item);
+                                    continue;
                                 }
-                                newListOfLists = new List<List<object>>();
-                                foreach (var o in newList)
-                                {
-                                    var list = o as List<object>;
-                                    if (list == null)
-                                    {
-                                        Console.WriteLine("Incorrect format for 'sym'");
-                                        Console.WriteLine(MiniJSON.Json.Serialize(o));
-                                        Console.ReadLine();
-                                        return;
-                                    }
-                                    newListOfLists.Add(list);
-                                }
+
+                                newListOfLists.Add(list);
                             }
                             item[field] = newListOfLists;
                             break;

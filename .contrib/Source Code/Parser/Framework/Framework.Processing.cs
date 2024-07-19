@@ -1481,8 +1481,8 @@ namespace ATT
             {
                 if (!cmdObj.TryConvert(out List<object> command))
                 {
-                    LogError($"Incorrect 'sym' command structure encountered: {ToJSON(cmdObj)}", data);
-                    break;
+                    LogError($"Incorrect 'sym' command structure encountered (expecting each command in an array): {ToJSON(cmdObj)}", data);
+                    return;
                 }
 
                 // check various commands
@@ -1494,7 +1494,7 @@ namespace ATT
                         {
                             if (previousType == commandType)
                             {
-                                LogDebugWarn($"'sym-select' can be cleaned up", data);
+                                LogDebugWarn($"'sym-select' can be cleaned up (all ID's can be passed into one 'select')", data);
                                 break;
                             }
                             else
