@@ -2173,13 +2173,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 19.1, 36.2, THE_AZURE_SPAN },
+					["lockCriteria"] = { 1, "lvl", LEVEL_DF_CURRENT_MAX },	-- not available at max DF lvl
 				}),
 				q(69895, {	-- Summoned Destroyer
 					["provider"] = { "n", 193288 },	-- Summoned Destroyer
 					["coord"] = { 70.1, 33.2, THE_AZURE_SPAN },
 				}),
 				q(67173, {	-- Thieving Gnolls
-					["providers"] = { 
+					["providers"] = {
 						{"n", 192747 },	-- Larivi (vignette)
 						{"n", 192749 },	-- Sharpfang
 					},
