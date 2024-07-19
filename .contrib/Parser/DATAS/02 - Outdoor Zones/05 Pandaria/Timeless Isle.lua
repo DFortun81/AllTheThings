@@ -574,7 +574,7 @@ root(ROOTS.Zones, {
 							{ "i", 102287, 1 },	-- Timeless Cloth Helm
 						},
 						["description"] = "Any Priest spec.",
-						["classes"] = { PRIEST },
+						["classes_display"] = { PRIEST },
 					}),
 					i(101897, {	-- Amaranthine Shoulderpads
 						["cost"] = {
@@ -582,7 +582,7 @@ root(ROOTS.Zones, {
 							{ "i", 102289, 1 },	-- Timeless Cloth Spaulders
 						},
 						["description"] = "Any Priest spec.",
-						["classes"] = { PRIEST },
+						["classes_display"] = { PRIEST },
 					}),
 					i(101895, {	-- Amaranthine Robes
 						["cost"] = {
@@ -590,7 +590,7 @@ root(ROOTS.Zones, {
 							{ "i", 102284, 1 },	-- Timeless Cloth Robes
 						},
 						["description"] = "Any Priest spec.",
-						["classes"] = { PRIEST },
+						["classes_display"] = { PRIEST },
 					}),
 					i(101899, {	-- Amaranthine Wristwraps
 						["cost"] = {
@@ -598,7 +598,7 @@ root(ROOTS.Zones, {
 							{ "i", 102321, 1 },	-- Timeless Cloth Bracers
 						},
 						["description"] = "Any Priest spec.",
-						["classes"] = { PRIEST },
+						["classes_display"] = { PRIEST },
 					}),
 					i(101892, {	-- Amaranthine Handwraps
 						["cost"] = {
@@ -606,7 +606,7 @@ root(ROOTS.Zones, {
 							{ "i", 102286, 1 },	-- Timeless Cloth Gloves
 						},
 						["description"] = "Any Priest spec.",
-						["classes"] = { PRIEST },
+						["classes_display"] = { PRIEST },
 					}),
 					i(101890, {	-- Amaranthine Cord
 						["cost"] = {
@@ -614,7 +614,7 @@ root(ROOTS.Zones, {
 							{ "i", 102290, 1 },	-- Timeless Cloth Belt
 						},
 						["description"] = "Any Priest spec.",
-						["classes"] = { PRIEST },
+						["classes_display"] = { PRIEST },
 					}),
 					i(101893, {	-- Amaranthine Leggings
 						["cost"] = {
@@ -622,7 +622,7 @@ root(ROOTS.Zones, {
 							{ "i", 102288, 1 },	-- Timeless Cloth Leggings
 						},
 						["description"] = "Any Priest spec.",
-						["classes"] = { PRIEST },
+						["classes_display"] = { PRIEST },
 					}),
 					i(101896, {	-- Amaranthine Sandals
 						["cost"] = {
@@ -630,7 +630,7 @@ root(ROOTS.Zones, {
 							{ "i", 102285, 1 },	-- Timeless Cloth Boots
 						},
 						["description"] = "Any Priest spec.",
-						["classes"] = { PRIEST },
+						["classes_display"] = { PRIEST },
 					}),
 					-- Cloudscorcher (Mage & Warlock Only)
 					i(101901, {	-- Cloudscorcher Cowl
@@ -639,7 +639,7 @@ root(ROOTS.Zones, {
 							{ "i", 102287, 1 },	-- Timeless Cloth Helm
 						},
 						["description"] = "Any Mage/Warlock spec.",
-						["classes"] = { MAGE, WARLOCK },
+						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101906, {	-- Cloudscorcher Shoulderpads
 						["cost"] = {
@@ -647,7 +647,7 @@ root(ROOTS.Zones, {
 							{ "i", 102289, 1 },	-- Timeless Cloth Spaulders
 						},
 						["description"] = "Any Mage/Warlock spec.",
-						["classes"] = { MAGE, WARLOCK },
+						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101904, {	-- Cloudscorcher Robes
 						["cost"] = {
@@ -655,7 +655,7 @@ root(ROOTS.Zones, {
 							{ "i", 102284, 1 },	-- Timeless Cloth Robes
 						},
 						["description"] = "Any Mage/Warlock spec.",
-						["classes"] = { MAGE, WARLOCK },
+						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101907, {	-- Cloudscorcher Wristwraps
 						["cost"] = {
@@ -663,7 +663,7 @@ root(ROOTS.Zones, {
 							{ "i", 102321, 1 },	-- Timeless Cloth Bracers
 						},
 						["description"] = "Any Mage/Warlock spec.",
-						["classes"] = { MAGE, WARLOCK },
+						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101902, {	-- Cloudscorcher Handwraps
 						["cost"] = {
@@ -671,7 +671,7 @@ root(ROOTS.Zones, {
 							{ "i", 102286, 1 },	-- Timeless Cloth Gloves
 						},
 						["description"] = "Any Mage/Warlock spec.",
-						["classes"] = { MAGE, WARLOCK },
+						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101900, {	-- Cloudscorcher Belt
 						["cost"] = {
@@ -679,7 +679,7 @@ root(ROOTS.Zones, {
 							{ "i", 102290, 1 },	-- Timeless Cloth Belt
 						},
 						["description"] = "Any Mage/Warlock spec.",
-						["classes"] = { MAGE, WARLOCK },
+						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101903, {	-- Cloudscorcher Leggings
 						["cost"] = {
@@ -687,7 +687,7 @@ root(ROOTS.Zones, {
 							{ "i", 102288, 1 },	-- Timeless Cloth Leggings
 						},
 						["description"] = "Any Mage/Warlock spec.",
-						["classes"] = { MAGE, WARLOCK },
+						["classes_display"] = { MAGE, WARLOCK },
 					}),
 					i(101905, {	-- Cloudscorcher Sandals
 						["cost"] = {
@@ -695,7 +695,7 @@ root(ROOTS.Zones, {
 							{ "i", 102285, 1 },	-- Timeless Cloth Boots
 						},
 						["description"] = "Any Mage/Warlock spec.",
-						["classes"] = { MAGE, WARLOCK },
+						["classes_display"] = { MAGE, WARLOCK },
 					}),
 
 					-- Leather
@@ -706,7 +706,7 @@ root(ROOTS.Zones, {
 							{ "i", 102280, 1 },	-- Timeless Leather Helm
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101955, {	-- Cranefeather Shoulders
 						["cost"] = {
@@ -714,7 +714,7 @@ root(ROOTS.Zones, {
 							{ "i", 102282, 1 },	-- Timeless Leather Spaulders
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101954, {	-- Cranefeather Jerkin
 						["cost"] = {
@@ -722,7 +722,7 @@ root(ROOTS.Zones, {
 							{ "i", 102277, 1 },	-- Timeless Leather Chestpiece
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101949, {	-- Cranefeather Bindings
 						["cost"] = {
@@ -730,7 +730,7 @@ root(ROOTS.Zones, {
 							{ "i", 102322, 1 },	-- Timeless Leather Bracers
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101952, {	-- Cranefeather Gloves
 						["cost"] = {
@@ -738,7 +738,7 @@ root(ROOTS.Zones, {
 							{ "i", 102279, 1 },	-- Timeless Leather Gloves
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101956, {	-- Cranefeather Waistband
 						["cost"] = {
@@ -746,7 +746,7 @@ root(ROOTS.Zones, {
 							{ "i", 102283, 1 },	-- Timeless Leather Belt
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101951, {	-- Cranefeather Britches
 						["cost"] = {
@@ -754,7 +754,7 @@ root(ROOTS.Zones, {
 							{ "i", 102281, 1 },	-- Timeless Leather Leggings
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["classes_display"] = LEATHER_CLASSES,
 					}),
 					i(101950, {	-- Cranefeather Boots
 						["cost"] = {
@@ -762,7 +762,7 @@ root(ROOTS.Zones, {
 							{ "i", 102278, 1 },	-- Timeless Leather Boots
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = LEATHER_CLASSES,
+						["classes_display"] = LEATHER_CLASSES,
 					}),
 					-- Fire-Chanter (Druid, Monk)
 					i(101874, {	-- Fire-Chanter Hood
@@ -771,7 +771,7 @@ root(ROOTS.Zones, {
 							{ "i", 102280, 1 },	-- Timeless Leather Helm
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101876, {	-- Fire-Chanter Shoulders
 						["cost"] = {
@@ -779,7 +779,7 @@ root(ROOTS.Zones, {
 							{ "i", 102282, 1 },	-- Timeless Leather Spaulders
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101875, {	-- Fire-Chanter Jerkin
 						["cost"] = {
@@ -787,7 +787,7 @@ root(ROOTS.Zones, {
 							{ "i", 102277, 1 },	-- Timeless Leather Chestpiece
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101870, {	-- Fire-Chanter Bindings
 						["cost"] = {
@@ -795,7 +795,7 @@ root(ROOTS.Zones, {
 							{ "i", 102322, 1 },	-- Timeless Leather Bracers
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101873, {	-- Fire-Chanter Gloves
 						["cost"] = {
@@ -803,7 +803,7 @@ root(ROOTS.Zones, {
 							{ "i", 102279, 1 },	-- Timeless Leather Gloves
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101877, {	-- Fire-Chanter Waistband
 						["cost"] = {
@@ -811,7 +811,7 @@ root(ROOTS.Zones, {
 							{ "i", 102283, 1 },	-- Timeless Leather Belt
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101872, {	-- Fire-Chanter Britches
 						["cost"] = {
@@ -819,7 +819,7 @@ root(ROOTS.Zones, {
 							{ "i", 102281, 1 },	-- Timeless Leather Leggings
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 					i(101871, {	-- Fire-Chanter Boots
 						["cost"] = {
@@ -827,7 +827,7 @@ root(ROOTS.Zones, {
 							{ "i", 102278, 1 },	-- Timeless Leather Boots
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = LEATHER_CLASSES_INTELLECT,
+						["classes_display"] = LEATHER_CLASSES_INTELLECT,
 					}),
 
 					-- Mail
@@ -838,7 +838,7 @@ root(ROOTS.Zones, {
 							{ "i", 102273, 1 },	-- Timeless Mail Helm
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = MAIL_CLASSES_AGILITY,
+						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101933, {	-- Crimsonscale Spaulders
 						["cost"] = {
@@ -846,7 +846,7 @@ root(ROOTS.Zones, {
 							{ "i", 102275, 1 },	-- Timeless Mail Shoulders
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = MAIL_CLASSES_AGILITY,
+						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101934, {	-- Crimsonscale Vest
 						["cost"] = {
@@ -854,7 +854,7 @@ root(ROOTS.Zones, {
 							{ "i", 102270, 1 },	-- Timeless Mail Chestpiece
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = MAIL_CLASSES_AGILITY,
+						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101928, {	-- Crimsonscale Bracers
 						["cost"] = {
@@ -862,7 +862,7 @@ root(ROOTS.Zones, {
 							{ "i", 102323, 1 },	-- Timeless Mail Bracers
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = MAIL_CLASSES_AGILITY,
+						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101929, {	-- Crimsonscale Gauntlets
 						["cost"] = {
@@ -870,7 +870,7 @@ root(ROOTS.Zones, {
 							{ "i", 102272, 1 },	-- Timeless Mail Gloves
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = MAIL_CLASSES_AGILITY,
+						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101927, {	-- Crimsonscale Belt
 						["cost"] = {
@@ -878,7 +878,7 @@ root(ROOTS.Zones, {
 							{ "i", 102276, 1 },	-- Timeless Mail Belt
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = MAIL_CLASSES_AGILITY,
+						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101932, {	-- Crimsonscale Legguards
 						["cost"] = {
@@ -886,7 +886,7 @@ root(ROOTS.Zones, {
 							{ "i", 102274, 1 },	-- Timeless Mail Leggings
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = MAIL_CLASSES_AGILITY,
+						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					i(101930, {	-- Crimsonscale Greaves
 						["cost"] = {
@@ -894,7 +894,7 @@ root(ROOTS.Zones, {
 							{ "i", 102271, 1 },	-- Timeless Mail Boots
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = MAIL_CLASSES_AGILITY,
+						["classes_display"] = MAIL_CLASSES_AGILITY,
 					}),
 					-- Ordon Legend-Keeper (Shaman, Evoker) [HEALER]
 					i(101923, {	-- Ordon Legend-Keeper Helm
@@ -903,7 +903,7 @@ root(ROOTS.Zones, {
 							{ "i", 102273, 1 },	-- Timeless Mail Helm
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = MAIL_CLASSES_HEALER,
+						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101925, {	-- Ordon Legend-Keeper Spaulders
 						["cost"] = {
@@ -911,7 +911,7 @@ root(ROOTS.Zones, {
 							{ "i", 102275, 1 },	-- Timeless Mail Shoulders
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = MAIL_CLASSES_HEALER,
+						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101926, {	-- Ordon Legend-Keeper Vest
 						["cost"] = {
@@ -919,7 +919,7 @@ root(ROOTS.Zones, {
 							{ "i", 102270, 1 },	-- Timeless Mail Chestpiece
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = MAIL_CLASSES_HEALER,
+						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101920, {	-- Ordon Legend-Keeper Bracers
 						["cost"] = {
@@ -927,7 +927,7 @@ root(ROOTS.Zones, {
 							{ "i", 102323, 1 },	-- Timeless Mail Bracers
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = MAIL_CLASSES_HEALER,
+						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101921, {	-- Ordon Legend-Keeper Gauntlets
 						["cost"] = {
@@ -935,7 +935,7 @@ root(ROOTS.Zones, {
 							{ "i", 102272, 1 },	-- Timeless Mail Gloves
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = MAIL_CLASSES_HEALER,
+						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101919, {	-- Ordon Legend-Keeper Belt
 						["cost"] = {
@@ -943,7 +943,7 @@ root(ROOTS.Zones, {
 							{ "i", 102276, 1 },	-- Timeless Mail Belt
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = MAIL_CLASSES_HEALER,
+						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101924, {	-- Ordon Legend-Keeper Legguards
 						["cost"] = {
@@ -951,7 +951,7 @@ root(ROOTS.Zones, {
 							{ "i", 102274, 1 },	-- Timeless Mail Leggings
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = MAIL_CLASSES_HEALER,
+						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 					i(101922, {	-- Ordon Legend-Keeper Greaves
 						["cost"] = {
@@ -959,7 +959,7 @@ root(ROOTS.Zones, {
 							{ "i", 102271, 1 },	-- Timeless Mail Boots
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = MAIL_CLASSES_HEALER,
+						["classes_display"] = MAIL_CLASSES_HEALER,
 					}),
 
 					-- Plate
@@ -970,7 +970,7 @@ root(ROOTS.Zones, {
 							{ "i", 102266, 1 },	-- Timeless Plate Helm
 						},
 						["description"] = "Set loot spec to DPS.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101885, {	-- Cliffbreaker Pauldrons
 						["cost"] = {
@@ -978,7 +978,7 @@ root(ROOTS.Zones, {
 							{ "i", 102268, 1 },	-- Timeless Plate Spaulders
 						},
 						["description"] = "Set loot spec to DPS.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101878, {	-- Cliffbreaker Breastplate
 						["cost"] = {
@@ -986,7 +986,7 @@ root(ROOTS.Zones, {
 							{ "i", 102263, 1 },	-- Timeless Plate Chestpiece
 						},
 						["description"] = "Set loot spec to DPS.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101888, {	-- Cliffbreaker Vambraces
 						["cost"] = {
@@ -994,7 +994,7 @@ root(ROOTS.Zones, {
 							{ "i", 102320, 1 },	-- Timeless Plate Bracers
 						},
 						["description"] = "Set loot spec to DPS.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101880, {	-- Cliffbreaker Gauntlets
 						["cost"] = {
@@ -1002,7 +1002,7 @@ root(ROOTS.Zones, {
 							{ "i", 102265, 1 },	-- Timeless Plate Gloves
 						},
 						["description"] = "Set loot spec to DPS.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101881, {	-- Cliffbreaker Girdle
 						["cost"] = {
@@ -1010,7 +1010,7 @@ root(ROOTS.Zones, {
 							{ "i", 102269, 1 },	-- Timeless Plate Belt
 						},
 						["description"] = "Set loot spec to DPS.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101883, {	-- Cliffbreaker Legplates
 						["cost"] = {
@@ -1018,7 +1018,7 @@ root(ROOTS.Zones, {
 							{ "i", 102267, 1 },	-- Timeless Plate Leggings
 						},
 						["description"] = "Set loot spec to DPS.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101886, {	-- Cliffbreaker Sabatons
 						["cost"] = {
@@ -1026,7 +1026,7 @@ root(ROOTS.Zones, {
 							{ "i", 102264, 1 },	-- Timeless Plate Boot
 						},
 						["description"] = "Set loot spec to DPS.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					-- Elder Tortoiseshell (Warrior, Paladin, Death Knight) [TANK]
 					i(101942, {	-- Elder Tortoiseshell Helm
@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, {
 							{ "i", 102266, 1 },	-- Timeless Plate Helm
 						},
 						["description"] = "Set loot spec to Tank.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101945, {	-- Elder Tortoiseshell Pauldrons
 						["cost"] = {
@@ -1043,7 +1043,7 @@ root(ROOTS.Zones, {
 							{ "i", 102268, 1 },	-- Timeless Plate Spaulders
 						},
 						["description"] = "Set loot spec to Tank.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101938, {	-- Elder Tortoiseshell Breastplate
 						["cost"] = {
@@ -1051,7 +1051,7 @@ root(ROOTS.Zones, {
 							{ "i", 102263, 1 },	-- Timeless Plate Chestpiece
 						},
 						["description"] = "Set loot spec to Tank.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101948, {	-- Elder Tortoiseshell Vambraces
 						["cost"] = {
@@ -1059,7 +1059,7 @@ root(ROOTS.Zones, {
 							{ "i", 102320, 1 },	-- Timeless Plate Bracers
 						},
 						["description"] = "Set loot spec to Tank.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101940, {	-- Elder Tortoiseshell Gauntlets
 						["cost"] = {
@@ -1067,7 +1067,7 @@ root(ROOTS.Zones, {
 							{ "i", 102265, 1 },	-- Timeless Plate Gloves
 						},
 						["description"] = "Set loot spec to Tank.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101941, {	-- Elder Tortoiseshell Girdle
 						["cost"] = {
@@ -1075,7 +1075,7 @@ root(ROOTS.Zones, {
 							{ "i", 102269, 1 },	-- Timeless Plate Belt
 						},
 						["description"] = "Set loot spec to Tank.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101943, {	-- Elder Tortoiseshell Legplates
 						["cost"] = {
@@ -1083,7 +1083,7 @@ root(ROOTS.Zones, {
 							{ "i", 102267, 1 },	-- Timeless Plate Leggings
 						},
 						["description"] = "Set loot spec to Tank.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					i(101946, {	-- Elder Tortoiseshell Sabatons
 						["cost"] = {
@@ -1091,7 +1091,7 @@ root(ROOTS.Zones, {
 							{ "i", 102264, 1 },	-- Timeless Plate Boot
 						},
 						["description"] = "Set loot spec to Tank.",
-						["classes"] = PLATE_CLASSES,
+						["classes_display"] = PLATE_CLASSES,
 					}),
 					-- Everbright (Paladin Only) [HEALER]
 					i(101911, {	-- Everbright Helm
@@ -1100,7 +1100,7 @@ root(ROOTS.Zones, {
 							{ "i", 102266, 1 },	-- Timeless Plate Helm
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = PLATE_CLASSES_HEALER,
+						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101913, {	-- Everbright Pauldrons
 						["cost"] = {
@@ -1108,7 +1108,7 @@ root(ROOTS.Zones, {
 							{ "i", 102268, 1 },	-- Timeless Plate Spaulders
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = PLATE_CLASSES_HEALER,
+						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101908, {	-- Everbright Breastplate
 						["cost"] = {
@@ -1116,7 +1116,7 @@ root(ROOTS.Zones, {
 							{ "i", 102263, 1 },	-- Timeless Plate Chestpiece
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = PLATE_CLASSES_HEALER,
+						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101915, {	-- Everbright Vambraces
 						["cost"] = {
@@ -1124,7 +1124,7 @@ root(ROOTS.Zones, {
 							{ "i", 102320, 1 },	-- Timeless Plate Bracers
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = PLATE_CLASSES_HEALER,
+						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101909, {	-- Everbright Gauntlets
 						["cost"] = {
@@ -1132,7 +1132,7 @@ root(ROOTS.Zones, {
 							{ "i", 102265, 1 },	-- Timeless Plate Gloves
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = PLATE_CLASSES_HEALER,
+						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101910, {	-- Everbright Girdle
 						["cost"] = {
@@ -1140,7 +1140,7 @@ root(ROOTS.Zones, {
 							{ "i", 102269, 1 },	-- Timeless Plate Belt
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = PLATE_CLASSES_HEALER,
+						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101912, {	-- Everbright Legplates
 						["cost"] = {
@@ -1148,7 +1148,7 @@ root(ROOTS.Zones, {
 							{ "i", 102267, 1 },	-- Timeless Plate Leggings
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = PLATE_CLASSES_HEALER,
+						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 					i(101914, {	-- Everbright Sabatons
 						["cost"] = {
@@ -1156,7 +1156,7 @@ root(ROOTS.Zones, {
 							{ "i", 102264, 1 },	-- Timeless Plate Boot
 						},
 						["description"] = "Set loot spec to Healer.",
-						["classes"] = PLATE_CLASSES_HEALER,
+						["classes_display"] = PLATE_CLASSES_HEALER,
 					}),
 
 					-- Cloaks
@@ -1166,7 +1166,7 @@ root(ROOTS.Zones, {
 							{ "i", 102318, 1 },	-- Timeless Cloak
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = INTELLECT_CLASSES,
+						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101879, {	-- Cliffbreaker Drape
 						["cost"] = {
@@ -1174,7 +1174,7 @@ root(ROOTS.Zones, {
 							{ "i", 102318, 1 },	-- Timeless Cloak
 						},
 						["description"] = "Set loot spec to Strength.",
-						["classes"] = STRENGTH_CLASSES,
+						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101939, {	-- Elder Tortoiseshell Drape
 						["cost"] = {
@@ -1182,7 +1182,7 @@ root(ROOTS.Zones, {
 							{ "i", 102318, 1 },	-- Timeless Cloak
 						},
 						["description"] = "Set loot spec to Strength.",
-						["classes"] = STRENGTH_CLASSES,
+						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101935, {	-- Kiln-Stoker Cloak
 						["cost"] = {
@@ -1190,7 +1190,7 @@ root(ROOTS.Zones, {
 							{ "i", 102318, 1 },	-- Timeless Cloak
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = INTELLECT_CLASSES,
+						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101917, {	-- Warmsun Cloak
 						["cost"] = {
@@ -1198,7 +1198,7 @@ root(ROOTS.Zones, {
 							{ "i", 102318, 1 },	-- Timeless Cloak
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = AGILITY_CLASSES,
+						["classes_display"] = AGILITY_CLASSES,
 					}),
 
 					-- Necklaces
@@ -1208,7 +1208,7 @@ root(ROOTS.Zones, {
 							{ "i", 104345, 1 },	-- Timeless Lavalliere
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = INTELLECT_CLASSES,
+						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101884, {	-- Cliffbreaker Neck
 						["cost"] = {
@@ -1216,7 +1216,7 @@ root(ROOTS.Zones, {
 							{ "i", 104345, 1 },	-- Timeless Lavalliere
 						},
 						["description"] = "Set loot spec to Strength.",
-						["classes"] = STRENGTH_CLASSES,
+						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101944, {	-- Elder Tortoiseshell Neck
 						["cost"] = {
@@ -1224,7 +1224,7 @@ root(ROOTS.Zones, {
 							{ "i", 104345, 1 },	-- Timeless Lavalliere
 						},
 						["description"] = "Set loot spec to Strength.",
-						["classes"] = STRENGTH_CLASSES,
+						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101936, {	-- Kiln-Stoker Collar
 						["cost"] = {
@@ -1232,7 +1232,7 @@ root(ROOTS.Zones, {
 							{ "i", 104345, 1 },	-- Timeless Lavalliere
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = INTELLECT_CLASSES,
+						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101916, {	-- Warmsun Choker
 						["cost"] = {
@@ -1240,7 +1240,7 @@ root(ROOTS.Zones, {
 							{ "i", 104345, 1 },	-- Timeless Lavalliere
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = AGILITY_CLASSES,
+						["classes_display"] = AGILITY_CLASSES,
 					}),
 
 					-- Rings
@@ -1250,7 +1250,7 @@ root(ROOTS.Zones, {
 							{ "i", 102291, 1 },	-- Timeless Signet
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = INTELLECT_CLASSES,
+						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101887, {	-- Cliffbreaker Seal
 						["cost"] = {
@@ -1258,7 +1258,7 @@ root(ROOTS.Zones, {
 							{ "i", 102291, 1 },	-- Timeless Signet
 						},
 						["description"] = "Set loot spec to Strength.",
-						["classes"] = STRENGTH_CLASSES,
+						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101947, {	-- Elder Tortoiseshell Seal
 						["cost"] = {
@@ -1266,7 +1266,7 @@ root(ROOTS.Zones, {
 							{ "i", 102291, 1 },	-- Timeless Signet
 						},
 						["description"] = "Set loot spec to Strength.",
-						["classes"] = STRENGTH_CLASSES,
+						["classes_display"] = STRENGTH_CLASSES,
 					}),
 					i(101937, {	-- Kiln-Stoker Ring
 						["cost"] = {
@@ -1274,7 +1274,7 @@ root(ROOTS.Zones, {
 							{ "i", 102291, 1 },	-- Timeless Signet
 						},
 						["description"] = "Set loot spec to Intellect.",
-						["classes"] = INTELLECT_CLASSES,
+						["classes_display"] = INTELLECT_CLASSES,
 					}),
 					i(101918, {	-- Warmsun Ring
 						["cost"] = {
@@ -1282,7 +1282,7 @@ root(ROOTS.Zones, {
 							{ "i", 102291, 1 },	-- Timeless Signet
 						},
 						["description"] = "Set loot spec to Agility.",
-						["classes"] = AGILITY_CLASSES,
+						["classes_display"] = AGILITY_CLASSES,
 					}),
 				}),
 				n(FACTIONS, {

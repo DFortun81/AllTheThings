@@ -640,8 +640,10 @@ namespace ATT
 
                     // Integer-Array Data Type Fields (stored as List<object> for usability reasons)
                     case "c":
+                    case "c_disp":
                     case "specs":
                     case "races":
+                    case "races_disp":
                     case "sourceAchievements":
                     case "sourceQuests":
                     case "altQuests":

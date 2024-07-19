@@ -968,6 +968,12 @@ namespace ATT
                         return "c";
                     }
 
+                case "c_disp":
+                case "classes_display":
+                    {
+                        return "c_disp";
+                    }
+
                 case "coord":
                 case "coordID":
                     {
@@ -1314,6 +1320,9 @@ namespace ATT
                 case "sourceQuestNumRequired":
                 case "sqreq":
                     return "sqreq";
+
+                case "races_display":
+                    return "races_disp";
 
                 // tags which are accurate already
                 case "azeriteEssenceID":
