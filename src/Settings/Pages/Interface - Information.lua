@@ -200,9 +200,14 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		-- Completed By for Quests
 		local id = reference.questID;
 		if id then
-			for _,character in pairs(ATTCharacterData) do
-				if character.Quests and character.Quests[id] then
-					tinsert(knownBy, character);
+			-- Account-Wide Quests
+			if app.AccountWideQuestsDB[id] then
+				tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE});
+			else
+				for _,character in pairs(ATTCharacterData) do
+					if character.Quests and character.Quests[id] then
+						tinsert(knownBy, character);
+					end
 				end
 			end
 			BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
