@@ -97,55 +97,55 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidNerubar(DEATHKNIGHT, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.DEATHKNIGHT,
+							["g"] = clone(NERUBAR_PALACE_TIER.DEATHKNIGHT),
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = SymRaidNerubar(DEMONHUNTER, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.DEMONHUNTER,
+							["g"] = clone(NERUBAR_PALACE_TIER.DEMONHUNTER),
 						}),
 						cl(DRUID, {
 							["sym"] = SymRaidNerubar(DRUID, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.DRUID,
+							["g"] = clone(NERUBAR_PALACE_TIER.DRUID),
 						}),
 						cl(EVOKER, {
 							["sym"] = SymRaidNerubar(EVOKER, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.EVOKER,
+							["g"] = clone(NERUBAR_PALACE_TIER.EVOKER),
 						}),
 						cl(HUNTER, {
 							["sym"] = SymRaidNerubar(HUNTER, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.HUNTER,
+							["g"] = clone(NERUBAR_PALACE_TIER.HUNTER),
 						}),
 						cl(MAGE, {
 							["sym"] = SymRaidNerubar(MAGE, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.MAGE,
+							["g"] = clone(NERUBAR_PALACE_TIER.MAGE),
 						}),
 						cl(MONK, {
 							["sym"] = SymRaidNerubar(MONK, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.MONK,
+							["g"] = clone(NERUBAR_PALACE_TIER.MONK),
 						}),
 						cl(PALADIN, {
 							["sym"] = SymRaidNerubar(PALADIN, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.PALADIN,
+							["g"] = clone(NERUBAR_PALACE_TIER.PALADIN),
 						}),
 						cl(PRIEST, {
 							["sym"] = SymRaidNerubar(PRIEST, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.PRIEST,
+							["g"] = clone(NERUBAR_PALACE_TIER.PRIEST),
 						}),
 						cl(ROGUE, {
 							["sym"] = SymRaidNerubar(ROGUE, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.ROGUE,
+							["g"] = clone(NERUBAR_PALACE_TIER.ROGUE),
 						}),
 						cl(SHAMAN, {
 							["sym"] = SymRaidNerubar(SHAMAN, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.SHAMAN,
+							["g"] = clone(NERUBAR_PALACE_TIER.SHAMAN),
 						}),
 						cl(WARLOCK, {
 							["sym"] = SymRaidNerubar(WARLOCK, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.WARLOCK,
+							["g"] = clone(NERUBAR_PALACE_TIER.WARLOCK),
 						}),
 						cl(WARRIOR, {
 							["sym"] = SymRaidNerubar(WARRIOR, DIFFICULTY.RAID.LFR),
-							["g"] = NERUBAR_PALACE_TIER.WARRIOR,
+							["g"] = clone(NERUBAR_PALACE_TIER.WARRIOR),
 						}),
 					}),
 				}),
@@ -154,55 +154,55 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["g"] = {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidNerubar(DEATHKNIGHT, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.DEATHKNIGHT,
+							["g"] = clone(NERUBAR_PALACE_TIER.DEATHKNIGHT),
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = SymRaidNerubar(DEMONHUNTER, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.DEMONHUNTER,
+							["g"] = clone(NERUBAR_PALACE_TIER.DEMONHUNTER),
 						}),
 						cl(DRUID, {
 							["sym"] = SymRaidNerubar(DRUID, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.DRUID,
+							["g"] = clone(NERUBAR_PALACE_TIER.DRUID),
 						}),
 						cl(EVOKER, {
 							["sym"] = SymRaidNerubar(EVOKER, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.EVOKER,
+							["g"] = clone(NERUBAR_PALACE_TIER.EVOKER),
 						}),
 						cl(HUNTER, {
 							["sym"] = SymRaidNerubar(HUNTER, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.HUNTER,
+							["g"] = clone(NERUBAR_PALACE_TIER.HUNTER),
 						}),
 						cl(MAGE, {
 							["sym"] = SymRaidNerubar(MAGE, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.MAGE,
+							["g"] = clone(NERUBAR_PALACE_TIER.MAGE),
 						}),
 						cl(MONK, {
 							["sym"] = SymRaidNerubar(MONK, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.MONK,
+							["g"] = clone(NERUBAR_PALACE_TIER.MONK),
 						}),
 						cl(PALADIN, {
 							["sym"] = SymRaidNerubar(PALADIN, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.PALADIN,
+							["g"] = clone(NERUBAR_PALACE_TIER.PALADIN),
 						}),
 						cl(PRIEST, {
 							["sym"] = SymRaidNerubar(PRIEST, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.PRIEST,
+							["g"] = clone(NERUBAR_PALACE_TIER.PRIEST),
 						}),
 						cl(ROGUE, {
 							["sym"] = SymRaidNerubar(ROGUE, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.ROGUE,
+							["g"] = clone(NERUBAR_PALACE_TIER.ROGUE),
 						}),
 						cl(SHAMAN, {
 							["sym"] = SymRaidNerubar(SHAMAN, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.SHAMAN,
+							["g"] = clone(NERUBAR_PALACE_TIER.SHAMAN),
 						}),
 						cl(WARLOCK, {
 							["sym"] = SymRaidNerubar(WARLOCK, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.WARLOCK,
+							["g"] = clone(NERUBAR_PALACE_TIER.WARLOCK),
 						}),
 						cl(WARRIOR, {
 							["sym"] = SymRaidNerubar(WARRIOR, DIFFICULTY.RAID.NORMAL),
-							["g"] = NERUBAR_PALACE_TIER.WARRIOR,
+							["g"] = clone(NERUBAR_PALACE_TIER.WARRIOR),
 						}),
 					},
 				}),
@@ -211,55 +211,55 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["g"] = bubbleDown({ ["modID"] = 5 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidNerubar(DEATHKNIGHT, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.DEATHKNIGHT,
+							["g"] = clone(NERUBAR_PALACE_TIER.DEATHKNIGHT),
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = SymRaidNerubar(DEMONHUNTER, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.DEMONHUNTER,
+							["g"] = clone(NERUBAR_PALACE_TIER.DEMONHUNTER),
 						}),
 						cl(DRUID, {
 							["sym"] = SymRaidNerubar(DRUID, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.DRUID,
+							["g"] = clone(NERUBAR_PALACE_TIER.DRUID),
 						}),
 						cl(EVOKER, {
 							["sym"] = SymRaidNerubar(EVOKER, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.EVOKER,
+							["g"] = clone(NERUBAR_PALACE_TIER.EVOKER),
 						}),
 						cl(HUNTER, {
 							["sym"] = SymRaidNerubar(HUNTER, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.HUNTER,
+							["g"] = clone(NERUBAR_PALACE_TIER.HUNTER),
 						}),
 						cl(MAGE, {
 							["sym"] = SymRaidNerubar(MAGE, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.MAGE,
+							["g"] = clone(NERUBAR_PALACE_TIER.MAGE),
 						}),
 						cl(MONK, {
 							["sym"] = SymRaidNerubar(MONK, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.MONK,
+							["g"] = clone(NERUBAR_PALACE_TIER.MONK),
 						}),
 						cl(PALADIN, {
 							["sym"] = SymRaidNerubar(PALADIN, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.PALADIN,
+							["g"] = clone(NERUBAR_PALACE_TIER.PALADIN),
 						}),
 						cl(PRIEST, {
 							["sym"] = SymRaidNerubar(PRIEST, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.PRIEST,
+							["g"] = clone(NERUBAR_PALACE_TIER.PRIEST),
 						}),
 						cl(ROGUE, {
 							["sym"] = SymRaidNerubar(ROGUE, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.ROGUE,
+							["g"] = clone(NERUBAR_PALACE_TIER.ROGUE),
 						}),
 						cl(SHAMAN, {
 							["sym"] = SymRaidNerubar(SHAMAN, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.SHAMAN,
+							["g"] = clone(NERUBAR_PALACE_TIER.SHAMAN),
 						}),
 						cl(WARLOCK, {
 							["sym"] = SymRaidNerubar(WARLOCK, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.WARLOCK,
+							["g"] = clone(NERUBAR_PALACE_TIER.WARLOCK),
 						}),
 						cl(WARRIOR, {
 							["sym"] = SymRaidNerubar(WARRIOR, DIFFICULTY.RAID.HEROIC),
-							["g"] = NERUBAR_PALACE_TIER.WARRIOR,
+							["g"] = clone(NERUBAR_PALACE_TIER.WARRIOR),
 						}),
 					}),
 				}),
@@ -268,55 +268,55 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["g"] = bubbleDown({ ["modID"] = 6 }, {
 						cl(DEATHKNIGHT, {
 							["sym"] = SymRaidNerubar(DEATHKNIGHT, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.DEATHKNIGHT,
+							["g"] = clone(NERUBAR_PALACE_TIER.DEATHKNIGHT),
 						}),
 						cl(DEMONHUNTER, {
 							["sym"] = SymRaidNerubar(DEMONHUNTER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.DEMONHUNTER,
+							["g"] = clone(NERUBAR_PALACE_TIER.DEMONHUNTER),
 						}),
 						cl(DRUID, {
 							["sym"] = SymRaidNerubar(DRUID, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.DRUID,
+							["g"] = clone(NERUBAR_PALACE_TIER.DRUID),
 						}),
 						cl(EVOKER, {
 							["sym"] = SymRaidNerubar(EVOKER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.EVOKER,
+							["g"] = clone(NERUBAR_PALACE_TIER.EVOKER),
 						}),
 						cl(HUNTER, {
 							["sym"] = SymRaidNerubar(HUNTER, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.HUNTER,
+							["g"] = clone(NERUBAR_PALACE_TIER.HUNTER),
 						}),
 						cl(MAGE, {
 							["sym"] = SymRaidNerubar(MAGE, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.MAGE,
+							["g"] = clone(NERUBAR_PALACE_TIER.MAGE),
 						}),
 						cl(MONK, {
 							["sym"] = SymRaidNerubar(MONK, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.MONK,
+							["g"] = clone(NERUBAR_PALACE_TIER.MONK),
 						}),
 						cl(PALADIN, {
 							["sym"] = SymRaidNerubar(PALADIN, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.PALADIN,
+							["g"] = clone(NERUBAR_PALACE_TIER.PALADIN),
 						}),
 						cl(PRIEST, {
 							["sym"] = SymRaidNerubar(PRIEST, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.PRIEST,
+							["g"] = clone(NERUBAR_PALACE_TIER.PRIEST),
 						}),
 						cl(ROGUE, {
 							["sym"] = SymRaidNerubar(ROGUE, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.ROGUE,
+							["g"] = clone(NERUBAR_PALACE_TIER.ROGUE),
 						}),
 						cl(SHAMAN, {
 							["sym"] = SymRaidNerubar(SHAMAN, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.SHAMAN,
+							["g"] = clone(NERUBAR_PALACE_TIER.SHAMAN),
 						}),
 						cl(WARLOCK, {
 							["sym"] = SymRaidNerubar(WARLOCK, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.WARLOCK,
+							["g"] = clone(NERUBAR_PALACE_TIER.WARLOCK),
 						}),
 						cl(WARRIOR, {
 							["sym"] = SymRaidNerubar(WARRIOR, DIFFICULTY.RAID.MYTHIC),
-							["g"] = NERUBAR_PALACE_TIER.WARRIOR,
+							["g"] = clone(NERUBAR_PALACE_TIER.WARRIOR),
 						}),
 					}),
 				}),
