@@ -284,10 +284,196 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 						}),
 						cl(HUNTER, {
 							conquest(0, i(218624)),	-- Forged Gladiator's Chain Belt
+							conquest(0, i(218615)),	-- Forged Gladiator's Chain Boots
+							conquest(0, i(218627)),	-- Forged Gladiator's Chain Bracers
+							conquest(0, i(218621)),	-- Forged Gladiator's Chain Breeches
+							conquest(0, i(218619)),	-- Forged Gladiator's Chain Faceguard
+							conquest(0, i(218616)),	-- Forged Gladiator's Chain Gauntlets
+							conquest(0, i(218625)),	-- Forged Gladiator's Chain Girdle
+							conquest(0, i(218617)),	-- Forged Gladiator's Chain Handguards
+							conquest(0, i(218618)),	-- Forged Gladiator's Chain Helm
+							conquest(0, i(218620)),	-- Forged Gladiator's Chain Leggings
+							conquest(0, i(218622)),	-- Forged Gladiator's Chain Monnion
+							conquest(0, i(218614)),	-- Forged Gladiator's Chain Sabatons
+							conquest(0, i(218623)),	-- Forged Gladiator's Chain Shoulderguard
+							conquest(0, i(218613)),	-- Forged Gladiator's Chain Tunic
+							conquest(0, i(218612)),	-- Forged Gladiator's Chain Vest
+							conquest(0, i(218626)),	-- Forged Gladiator's Chain Wristguards
+							conquest(0, i(218628)),	-- Forged Gladiator's Chain Cloak
+							conquest(0, i(218629)),	-- Forged Gladiator's Chain Drape
+							conquest(0, i(218630)),	-- Forged Gladiator's Chain Shawl
+						}),
+						cl(MAGE, {
+							conquest(0, i(218476)),	-- Forged Gladiator's Cloak
+							conquest(0, i(218477)),	-- Forged Gladiator's Drape
+							conquest(0, i(218478)),	-- Forged Gladiator's Shawl
+							conquest(0, i(218471)),	-- Forged Gladiator's Silk Amice
+							conquest(0, i(218475)),	-- Forged Gladiator's Silk Armbands
+							conquest(0, i(218473)),	-- Forged Gladiator's Silk Belt
+							conquest(0, i(218461)),	-- Forged Gladiator's Silk Blouse
+							conquest(0, i(218467)),	-- Forged Gladiator's Silk Cap
+							conquest(0, i(218472)),	-- Forged Gladiator's Silk Cord
+							conquest(0, i(218464)),	-- Forged Gladiator's Silk Gloves
+							conquest(0, i(218465)),	-- Forged Gladiator's Silk Handwraps
+							conquest(0, i(218466)),	-- Forged Gladiator's Silk Hat
+							conquest(0, i(218468)),	-- Forged Gladiator's Silk Leggings
+							conquest(0, i(218470)),	-- Forged Gladiator's Silk Mantle
+							conquest(0, i(218462)),	-- Forged Gladiator's Silk Slippers
+							conquest(0, i(218463)),	-- Forged Gladiator's Silk Treads
+							conquest(0, i(218469)),	-- Forged Gladiator's Silk Trousers
+							conquest(0, i(218460)),	-- Forged Gladiator's Silk Tunic
+							conquest(0, i(218474)),	-- Forged Gladiator's Silk Wristwraps
+						}),
+						cl(MONK, {
+							conquest(0, i(218571)),	-- Forged Gladiator's Cloak
+							conquest(0, i(218572)),	-- Forged Gladiator's Drape
+							conquest(0, i(218567)),	-- Forged Gladiator's Leather Belt
+							conquest(0, i(218557)),	-- Forged Gladiator's Leather Boots
+							conquest(0, i(218563)),	-- Forged Gladiator's Leather Breeches
+							conquest(0, i(218559)),	-- Forged Gladiator's Leather Gloves
+							conquest(0, i(218560)),	-- Forged Gladiator's Leather Grips
+							conquest(0, i(218561)),	-- Forged Gladiator's Leather Helm
+							conquest(0, i(218556)),	-- Forged Gladiator's Leather Jerkin
+							conquest(0, i(218564)),	-- Forged Gladiator's Leather Legwraps
+							conquest(0, i(218562)),	-- Forged Gladiator's Leather Mask
+							conquest(0, i(218566)),	-- Forged Gladiator's Leather Shoulderpads
+							conquest(0, i(218565)),	-- Forged Gladiator's Leather Spaulders
+							conquest(0, i(218568)),	-- Forged Gladiator's Leather Strap
+							conquest(0, i(218558)),	-- Forged Gladiator's Leather Treads
+							conquest(0, i(218555)),	-- Forged Gladiator's Leather Vest
+							conquest(0, i(218570)),	-- Forged Gladiator's Leather Wristguards
+							conquest(0, i(218569)),	-- Forged Gladiator's Leather Wristwraps
+							conquest(0, i(218573)),	-- Forged Gladiator's Leather Shawl
+						}),
+						cl(PALADIN, {
+							conquest(0, i(218669)),	-- Forged Gladiator's Chestguard
+							conquest(0, i(218670)),	-- Forged Gladiator's Chestplate
+							conquest(0, i(218685)),	-- Forged Gladiator's Cloak
+							conquest(0, i(218686)),	-- Forged Gladiator's Drape
+							conquest(0, i(218673)),	-- Forged Gladiator's Plate Gauntlets
+							conquest(0, i(218681)),	-- Forged Gladiator's Plate Girdle
+							conquest(0, i(218682)),	-- Forged Gladiator's Plate Greatbelt
+							conquest(0, i(218674)),	-- Forged Gladiator's Plate Handguards
+							conquest(0, i(218675)),	-- Forged Gladiator's Plate Helm
+							conquest(0, i(218676)),	-- Forged Gladiator's Plate Helmet
+							conquest(0, i(218677)),	-- Forged Gladiator's Plate Legguards
+							conquest(0, i(218680)),	-- Forged Gladiator's Plate Pauldrons
+							conquest(0, i(218679)),	-- Forged Gladiator's Plate Shoulders
+							conquest(0, i(218672)),	-- Forged Gladiator's Plate Stompers
+							conquest(0, i(218678)),	-- Forged Gladiator's Plate Tasses
+							conquest(0, i(218684)),	-- Forged Gladiator's Plate Vambraces
+							conquest(0, i(218671)),	-- Forged Gladiator's Plate Warboots
+							conquest(0, i(218683)),	-- Forged Gladiator's Plate Wristguards
+							conquest(0, i(218687)),	-- Forged Gladiator's Shawl
+						}),
+						cl(PRIEST, {
+							conquest(0, i(218495)),	-- Forged Gladiator's Cloak
+							conquest(0, i(218496)),	-- Forged Gladiator's Drape
+							conquest(0, i(218497)),	-- Forged Gladiator's Shawl
+							conquest(0, i(218490)),	-- Forged Gladiator's Silk Amice
+							conquest(0, i(218494)),	-- Forged Gladiator's Silk Armbands
+							conquest(0, i(218492)),	-- Forged Gladiator's Silk Belt
+							conquest(0, i(218491)),	-- Forged Gladiator's Silk Cord
+							conquest(0, i(218483)),	-- Forged Gladiator's Silk Gloves
+							conquest(0, i(218486)),	-- Forged Gladiator's Silk Guise
+							conquest(0, i(218484)),	-- Forged Gladiator's Silk Handwraps
+							conquest(0, i(218485)),	-- Forged Gladiator's Silk Hood
+							conquest(0, i(218487)),	-- Forged Gladiator's Silk Leggings
+							conquest(0, i(218489)),	-- Forged Gladiator's Silk Mantle
+							conquest(0, i(218479)),	-- Forged Gladiator's Silk Robes
+							conquest(0, i(218481)),	-- Forged Gladiator's Silk Slippers
+							conquest(0, i(218482)),	-- Forged Gladiator's Silk Treads
+							conquest(0, i(218488)),	-- Forged Gladiator's Silk Trousers
+							conquest(0, i(218480)),	-- Forged Gladiator's Silk Vestments
+							conquest(0, i(218493)),	-- Forged Gladiator's Silk Wristwraps
+						}),
+						cl(ROGUE, {
+							conquest(0, i(218590)),	-- Forged Gladiator's Cloak
+							conquest(0, i(218591)),	-- Forged Gladiator's Drape
+							conquest(0, i(218586)),	-- Forged Gladiator's Leather Belt
+							conquest(0, i(218576)),	-- Forged Gladiator's Leather Boots
+							conquest(0, i(218582)),	-- Forged Gladiator's Leather Breeches
+							conquest(0, i(218578)),	-- Forged Gladiator's Leather Gloves
+							conquest(0, i(218579)),	-- Forged Gladiator's Leather Grips
+							conquest(0, i(218580)),	-- Forged Gladiator's Leather Helm
+							conquest(0, i(218575)),	-- Forged Gladiator's Leather Jerkin
+							conquest(0, i(218583)),	-- Forged Gladiator's Leather Legwraps
+							conquest(0, i(218581)),	-- Forged Gladiator's Leather Mask
+							conquest(0, i(218585)),	-- Forged Gladiator's Leather Shoulderpads
+							conquest(0, i(218584)),	-- Forged Gladiator's Leather Spaulders
+							conquest(0, i(218587)),	-- Forged Gladiator's Leather Strap
+							conquest(0, i(218577)),	-- Forged Gladiator's Leather Treads
+							conquest(0, i(218574)),	-- Forged Gladiator's Leather Vest
+							conquest(0, i(218589)),	-- Forged Gladiator's Leather Wristguards
+							conquest(0, i(218588)),	-- Forged Gladiator's Leather Wristwraps
+							conquest(0, i(218592)),	-- Forged Gladiator's Shawl
+						}),
+						cl(SHAMAN, {
+							conquest(0, i(218643)),	-- Forged Gladiator's Chain Belt
+							conquest(0, i(218634)),	-- Forged Gladiator's Chain Boots
+							conquest(0, i(218646)),	-- Forged Gladiator's Chain Bracers
+							conquest(0, i(218640)),	-- Forged Gladiator's Chain Breeches
+							conquest(0, i(218638)),	-- Forged Gladiator's Chain Faceguard
+							conquest(0, i(218635)),	-- Forged Gladiator's Chain Gauntlets
+							conquest(0, i(218644)),	-- Forged Gladiator's Chain Girdle
+							conquest(0, i(218636)),	-- Forged Gladiator's Chain Handguards
+							conquest(0, i(218637)),	-- Forged Gladiator's Chain Helm
+							conquest(0, i(218639)),	-- Forged Gladiator's Chain Leggings
+							conquest(0, i(218641)),	-- Forged Gladiator's Chain Monnion
+							conquest(0, i(218633)),	-- Forged Gladiator's Chain Sabatons
+							conquest(0, i(218642)),	-- Forged Gladiator's Chain Shoulderguard
+							conquest(0, i(218632)),	-- Forged Gladiator's Chain Tunic
+							conquest(0, i(218631)),	-- Forged Gladiator's Chain Vest
+							conquest(0, i(218645)),	-- Forged Gladiator's Chain Wristguards
+							conquest(0, i(218647)),	-- Forged Gladiator's Cloak
+							conquest(0, i(218648)),	-- Forged Gladiator's Drape
+							conquest(0, i(218649)),	-- Forged Gladiator's Shawl
 						}),
 					}),
-				}
-			})
+					cl(WARLOCK, {
+						conquest(0, i(218514)),	-- Forged Gladiator's Cloak
+						conquest(0, i(218515)),	-- Forged Gladiator's Drape
+						conquest(0, i(218516)),	-- Forged Gladiator's Shawl
+						conquest(0, i(218509)),	-- Forged Gladiator's Silk Amice
+						conquest(0, i(218513)),	-- Forged Gladiator's Silk Armbands
+						conquest(0, i(218511)),	-- Forged Gladiator's Silk Belt
+						conquest(0, i(218510)),	-- Forged Gladiator's Silk Cord
+						conquest(0, i(218502)),	-- Forged Gladiator's Silk Gloves
+						conquest(0, i(218505)),	-- Forged Gladiator's Silk Guise
+						conquest(0, i(218503)),	-- Forged Gladiator's Silk Handwraps
+						conquest(0, i(218504)),	-- Forged Gladiator's Silk Hood
+						conquest(0, i(218506)),	-- Forged Gladiator's Silk Leggings
+						conquest(0, i(218508)),	-- Forged Gladiator's Silk Mantle
+						conquest(0, i(218498)),	-- Forged Gladiator's Silk Raiment
+						conquest(0, i(218500)),	-- Forged Gladiator's Silk Slippers
+						conquest(0, i(218501)),	-- Forged Gladiator's Silk Treads
+						conquest(0, i(218507)),	-- Forged Gladiator's Silk Trousers
+						conquest(0, i(218499)),	-- Forged Gladiator's Silk Vestments
+						conquest(0, i(218512)),	-- Forged Gladiator's Silk Wristwraps
+					}),
+					cl(WARRIOR, {
+						conquest(0, i(218688)),	-- Forged Gladiator's Chestguard
+						conquest(0, i(218689)),	-- Forged Gladiator's Chestplate
+						conquest(0, i(218704)),	-- Forged Gladiator's Cloak
+						conquest(0, i(218705)),	-- Forged Gladiator's Drape
+						conquest(0, i(218692)),	-- Forged Gladiator's Plate Gauntlets
+						conquest(0, i(218700)),	-- Forged Gladiator's Plate Girdle
+						conquest(0, i(218701)),	-- Forged Gladiator's Plate Greatbelt
+						conquest(0, i(218693)),	-- Forged Gladiator's Plate Handguards
+						conquest(0, i(218694)),	-- Forged Gladiator's Plate Helm
+						conquest(0, i(218695)),	-- Forged Gladiator's Plate Helmet
+						conquest(0, i(218696)),	-- Forged Gladiator's Plate Legguards
+						conquest(0, i(218699)),	-- Forged Gladiator's Plate Pauldrons
+						conquest(0, i(218698)),	-- Forged Gladiator's Plate Shoulders
+						conquest(0, i(218691)),	-- Forged Gladiator's Plate Stompers
+						conquest(0, i(218703)),	-- Forged Gladiator's Plate Vambraces
+						conquest(0, i(218690)),	-- Forged Gladiator's Plate Warboots
+						conquest(0, i(218697)),	-- Forged Gladiator's Plate Wargreaves
+						conquest(0, i(218702)),	-- Forged Gladiator's Plate Wristguards
+						conquest(0, i(218706)),	-- Forged Gladiator's Shawl
+					}),
+				},
+			}),
 		})),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 }, ["bonusID"] = 7532 }, {
 
