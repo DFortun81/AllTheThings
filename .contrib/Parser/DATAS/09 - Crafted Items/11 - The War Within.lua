@@ -505,6 +505,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(COOKING, {
+		n(DISCOVERY, {
+			spell(447869, {	-- Fine Egg Powders
+				r(447873),	-- Secret Sauce
+			}),
+		}),
 		i(222727),	-- Angler's Delight
 		i(223971),	-- Azj-Kahet Special
 		i(222728),	-- Beledar's Bounty
@@ -513,11 +518,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(222708),	-- Coreway Kabob
 		i(222718),	-- Deepfin Patty
 		i(222729),	-- Empress' Farewell
+		i(223966),	-- Everything-On-A-Stick
 		i(222735),	-- Everything Stew
 		i(225592),	-- Exquisitely Eviscerated Muscle
 		i(222732),	-- Feast of the Divine Day
 		i(222733),	-- Feast of the Midnight Masquerade
 		i(222715),	-- Fiery Fish Sticks
+		i(225876),	-- Fine Egg Powder
 		i(222721),	-- Fish and Chips
 		i(222709),	-- Flash Fire Fillet
 		i(225855),	-- Ghoulfish Delight
@@ -572,6 +579,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(222747),	-- Rockslide Shake
 		i(222722),	-- Salt Baked Seafood
 		i(222717),	-- Salty Dog
+		i(223969),	-- Secret Sauce
 		i(222703),	-- Simple Stew
 		i(222724),	-- Sizzling Honey Roast
 		i(222702),	-- Skewered Fillet
@@ -580,12 +588,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(222726),	-- Stuffed Cave Peppers
 		i(222712),	-- Sweet and Sour Meatballs
 		i(222719),	-- Sweet and Spicy Soup
+		i(222746),	-- Tasty Pocket Tart
 		i(222713),	-- Tender Twilight Jerky
 		i(222720),	-- The Sushi Special
 		i(222704),	-- Unseasoned Field Steak
 		i(222714),	-- Zesty Nibblers
 		filter(REAGENTS, {
 			i(222737),	-- Chopped Mycobloom
+			i(222741),	-- Fresh Fillet
+			i(222738),	-- Portioned Steak
+			i(222739),	-- Spiced Meat Stock
 		}),
 	}),
 	prof(ENCHANTING, {
@@ -972,46 +984,46 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					r(447337),	-- Whimsical Wiring
 					i(227890, { -- Unrecognizable Prototype
 					i(221956, { -- Prototype: Algari Repair Bot 11O
-						r(447367), -- Algari Repair Bot 11O
+						r(447367),	-- Algari Repair Bot 11O
 					}),
 					i(221960, { -- Prototype: Barrel of Fireworks
-						r(447369), -- Barrel of Fireworks
+						r(447369),	-- Barrel of Fireworks
 					}),
 					i(221952, { -- Prototype: Convincingly Realistic Jumper Cables
-						r(447366), -- Convincingly Realistic Jumper Cables
+						r(447366),	-- Convincingly Realistic Jumper Cables
 					}),
 					i(221961, { -- Prototype: Defective Escape Pod
-						r(447370), -- Defective Escape Pod
+						r(447370),	-- Defective Escape Pod
 					}),
 					i(221963, { -- Prototype: Filmless Camera
-						r(447371), -- Filmless Camera
+						r(447371),	-- Filmless Camera
 					}),
 					i(221965, { -- Prototype: Generate Wormhole
-						r(447372), -- Generate Wormhole
+						r(447372),	-- Generate Wormhole
 					}),
 					i(221958, { -- Prototype: Summon Portable Profession Possibility Projector
-						r(447368), -- Summon Portable Profession Possibility Projector
+						r(447368),	-- Summon Portable Profession Possibility Projector
 					}),
 					i(221875, { -- Prototype: Potion Bomb of Recovery
-						r(447343), -- Potion Bomb of Recovery
+						r(447343),	-- Potion Bomb of Recovery
 					}),
 					i(221948, { -- Prototype: Pausing Pylon
-						r(447365), -- Pausing Pylon
+						r(447365),	-- Pausing Pylon
 					}),
 					i(221879, { -- Prototype: Potion Bomb of Power
-						r(447344), -- Potion Bomb of Power
+						r(447344),	-- Potion Bomb of Power
 					}),
 					i(221871, { -- Prototype: Potion Bomb of Speed
-						r(447342), -- Potion Bomb of Speed
+						r(447342),	-- Potion Bomb of Speed
 					}),
 					i(221945, { -- Prototype: Irresistible Red Button
-						r(447364), -- Irresistible Red Button
+						r(447364),	-- Irresistible Red Button
 					}),
 					i(221903, { -- Prototype: Earthen Delivery Drill
-						r(447350), -- Tinker: Earthen Delivery Drill
+						r(447350),	-- Tinker: Earthen Delivery Drill
 					}),
 					i(221907, { -- Prototype: Heartseeking Health Injector
-						r(447351), -- Tinker: Heartseeking Health Injector
+						r(447351),	-- Tinker: Heartseeking Health Injector
 					}),
 					}),
 				}),
@@ -1296,13 +1308,58 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(FISHING, {
+		n(DISCOVERY, {
+			r(456154),	-- Anglerthread
+			r(444795),	-- Arathor Hammerfish
+			r(444803),	-- Awoken Coelacanth
+			r(456591),	-- Azj-Kahet
+			r(444787),	-- Bismuth Bitterling
+			r(444785),	-- Bloody Perch
+			r(444786),	-- Crystalline Sturgeon
+			r(444802),	-- Cursed Ghoulfish
+			r(444792),	-- Dilly-Dally Dace
+			r(444793),	-- Dornish Pike
+			r(454442),	-- Fishing Skill and You
+			r(444790),	-- Goldengill Trout
+			r(456590),	-- Hallowfall
+			r(444797),	-- Kaheti Slum Shark
+			r(456180),	-- Mereldar Fishing Derby
+			r(444788),	-- Nibbling Minnow
+			r(444798),	-- Pale Huskfish
+			r(444801),	-- Queen's Lurefish
+			r(454443),	-- Quiet River Bass
+			r(444796),	-- Regal Dottyback
+			r(444794),	-- Roaring Anglerseeker
+			r(444799),	-- Sanguine Dogfish
+			r(456152),	-- Seekerthread
+			r(444791),	-- Specular Rainbowfish
+			r(444800),	-- Spiked Sea Raven
+			r(456589),	-- The Ringing Deeps
+			r(444789),	-- Whispering Stargazer
+		}),
+		i(225770),	-- Algari Anglerthread
+		i(225771),	-- Algari Seekerthread
+		i(220145),	-- Arathor Hammerfish
+		i(220153),	-- Awoken Coelacanth
+		i(220137),	-- Bismuth Bitterling
+		i(220135),	-- Bloody Perch
+		i(220136),	-- Crystalline Sturgeon
+		i(220152),	-- Cursed Ghoulfish
+		i(220134),	-- Dilly-Dally Dace
 		i(220143),	-- Dornish Pike
 		i(222533),	-- Goldengill Trout
-		filter(RECIPES, {
-			i(34109, {	-- Weather-Beaten Journal (RECIPE!)
-				["description"] = "Can be fished from schools.",
-			}),
-		}),
+		i(220147),	-- Kaheti Slum Shark
+		i(220138),	-- Nibbling Minnow
+		i(220148),	-- Pale Huskfish
+		i(220151),	-- Queen's Lurefish
+		i(220142),	-- Quiet River Bass
+		i(220146),	-- Regal Dottyback
+		i(220144),	-- Roaring Anglerseeker
+		i(220149),	-- Sanguine Dogfish
+		i(224752),	-- Soaked Journal Entry
+		i(220141),	-- Specular Rainbowfish
+		i(220150),	-- Spiked Sea Raven
+		i(220139),	-- Whispering Stargazer
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering
@@ -1662,6 +1719,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		filter(TRINKET_F, {
 			i(219933),	-- Algari Competitor's Emblem
 			i(219932),	-- Algari Competitor's Insignia of Alacrity
+			i(219931),	-- Algari Competitor's Medallion
 			i(222680),	-- Darkmoon Deck: Ascension
 			i(219672),	-- Darkmoon Deck: Radiance
 			i(222653),	-- Darkmoon Deck: Symbiosis

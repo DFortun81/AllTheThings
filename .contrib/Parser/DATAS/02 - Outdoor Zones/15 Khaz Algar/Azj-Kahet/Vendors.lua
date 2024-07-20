@@ -153,12 +153,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 						["cost"] = {{"c", KEJ, 2250}},
 						["isLimited"] = true,
 					}),
+					i(223956, {	-- Recipe: Everything-On-A-Stick (RECIPE!)
+						["cost"] = {{"c", KEJ, 1500}},
+					}),
 				},
 			}),
 			n(218189, {	-- Polo <Cooking Supplies>
 				["coord"] = { 48.1, 25.3, NERUBAR },
 				["g"] = {
 					i(224152, {	-- Recipe: Empress' Farewell (RECIPE!)
+						["cost"] = {{"c", KEJ, 1500}},
+					}),
+					i(223955, {	-- Recipe: Fine Egg Powder (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
 					i(223958, {	-- Recipe: Spongey Scramble (RECIPE!)

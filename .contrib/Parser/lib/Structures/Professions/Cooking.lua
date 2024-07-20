@@ -291,3 +291,42 @@ DF_COOKING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 	r(381365),	-- Twice-Baked Potato
 	r(381381),	-- Zesty Water
 }));
+TWW_COOKING = bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+	r(423333),	-- Khaz Algar Cooking
+	r(818),		-- Cooking Fire
+	r(445107),	-- Angler's Delight
+	r(445116),	-- Chippy Tea
+	r(445117),	-- Chopped Mycobloom
+	r(445088),	-- Coreway Kabob
+	r(445098),	-- Deepfin Patty
+	r(445095),	-- Fiery Fish Sticks
+	r(445101),	-- Fish and Chips
+	r(445089),	-- Flash Fire Fillet
+	r(445127),	-- Fresh Fillet
+	r(445096),	-- Ginger Glazed Fillet
+	r(445087),	-- Hallowfall Chili
+	r(462857),	-- Hearty Feast
+	r(445120),	-- Hearty Food
+	r(445110),	-- Jester's Board
+	r(445103),	-- Marinated Tenderloins
+	r(445090),	-- Meat and Potatoes
+	r(445105),	-- Mycobloom Risotto
+	r(445086),	-- Pan-Seared Mycobloom
+	r(445118),	-- Portioned Steak
+	r(445091),	-- Rib Stickers
+	r(445085),	-- Roasted Mycobloom
+	r(445482),	-- Rockslide Shake
+	r(445102),	-- Salt Baked Seafood
+	r(445097),	-- Salty Dog
+	r(445083),	-- Simple Stew
+	r(445104),	-- Sizzling Honey Roast
+	r(445082),	-- Skewered Fillet
+	r(445119),	-- Spiced Meat Stock
+	r(445106),	-- Stuffed Cave Peppers
+	r(445092),	-- Sweet and Sour Meatballs
+	r(445099),	-- Sweet and Spicy Soup
+	r(445093),	-- Tender Twilight Jerky
+	r(445100),	-- The Sushi Special
+	r(445084),	-- Unseasoned Field Steak
+	r(445094),	-- Zesty Nibblers
+});

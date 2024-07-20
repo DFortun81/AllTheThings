@@ -1275,8 +1275,7 @@ DF_LEATHERWORKING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = 
 		r(375102),	-- Bonewrought Crossbow
 	}),
 }));
-
-TWW_LEATHERWORKING = sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+TWW_LEATHERWORKING = sharedData({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	r(423340),	-- Khaz Algar Leatherworking
 	r(425142),	-- Recraft Equipment
 	n(ARMOR, {

@@ -101,13 +101,22 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(220376),	-- Bismuth Lockbox
 	}),
 	filter(REAGENTS, {
+		i(223512),	-- Basically Beef
+		i(225567),	-- Bug Brisket
+		i(225911),	-- Cinderbee Belly
+		i(225569),	-- Clipped Bird Wing
 		i(224826),	-- Dawnweave+
 		i(228235),	-- Dawnweave++
 		i(228236),	-- Dawnweave+++
 		i(224824),	-- Duskweave+
 		i(228233),	-- Duskweave++
 		i(228234),	-- Duskweave+++
+		i(225912),	-- Hot Honeycomb
+		i(225565),	-- Massive Worm Flank
+		i(225564),	-- Meaty Muscle
+		i(225568),	-- Slum Shark Scrap
 		i(221756),	-- Vial of Kaheti Oils
+		i(225566),	-- Warped Wing
 		i(224828),	-- Weavercloth+
 		i(228231),	-- Weavercloth++
 		i(228232),	-- Weavercloth+++

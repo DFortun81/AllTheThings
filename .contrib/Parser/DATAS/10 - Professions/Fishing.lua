@@ -861,29 +861,68 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 		n(ACHIEVEMENTS, {
-			ach(40494),	-- 10 Algari Anglerthread
-			ach(40495),	-- 20 Algari Anglerthread
-			ach(40497),	-- 30 Algari Anglerthread
-			ach(40499),	-- 40 Algari Anglerthread
-			ach(40502),	-- 50 Algari Anglerthread
-			ach(40496),	-- 60 Algari Anglerthread
-			ach(40498),	-- 70 Algari Anglerthread
-			ach(40500),	-- 80 Algari Anglerthread
-			ach(40503),	-- 90 Algari Anglerthread
-			ach(40501),	-- 100 Algari Anglerthread
-			ach(40476),	-- 10 Algari Seekerthread
-			ach(40480),	-- 20 Algari Seekerthread
-			ach(40484),	-- 30 Algari Seekerthread
-			ach(40485),	-- 40 Algari Seekerthread
-			ach(40487),	-- 50 Algari Seekerthread
-			ach(40488),	-- 60 Algari Seekerthread
-			ach(40489),	-- 70 Algari Seekerthread
-			ach(40490),	-- 80 Algari Seekerthread
-			ach(40491),	-- 90 Algari Seekerthread
-			ach(40492),	-- 100 Algari Seekerthread
-			ach(19415),	-- Algari Fisherman
-			ach(40539, {	-- The Derby Dash (automated)
-				i(223286),	-- Kah, Legend of the Deep (MOUNT!)
+			ach(40494, {	-- 10 Algari Anglerthread
+				["cost"] = {{"i", 225770, 10}},	-- 10x Algari Anglerthread
+			}),
+			ach(40495, {	-- 20 Algari Anglerthread
+				["cost"] = {{"i", 225770, 20}},	-- 20x Algari Anglerthread
+			}),
+			ach(40497, {	-- 30 Algari Anglerthread
+				["cost"] = {{"i", 225770, 30}},	-- 30x Algari Anglerthread
+			}),
+			ach(40499, {	-- 40 Algari Anglerthread
+				["cost"] = {{"i", 225770, 40}},	-- 40x Algari Anglerthread
+			}),
+			ach(40502, {	-- 50 Algari Anglerthread
+				["cost"] = {{"i", 225770, 50}},	-- 50x Algari Anglerthread
+			}),
+			ach(40496, {	-- 60 Algari Anglerthread
+				["cost"] = {{"i", 225770, 60}},	-- 60x Algari Anglerthread
+			}),
+			ach(40498, {	-- 70 Algari Anglerthread
+				["cost"] = {{"i", 225770, 70}},	-- 70x Algari Anglerthread
+			}),
+			ach(40500, {	-- 80 Algari Anglerthread
+				["cost"] = {{"i", 225770, 80}},	-- 80x Algari Anglerthread
+			}),
+			ach(40503, {	-- 90 Algari Anglerthread
+				["cost"] = {{"i", 225770, 90}},	-- 90x Algari Anglerthread
+			}),
+			ach(40501, {	-- 100 Algari Anglerthread
+				["cost"] = {{"i", 225770, 100}},	-- 100x Algari Anglerthread
+			}),
+			ach(40476, {	-- 10 Algari Seekerthread
+				["cost"] = {{"i", 225771, 10}},	-- 10x Algari Seekerthread
+			}),
+			ach(40480, {	-- 20 Algari Seekerthread
+				["cost"] = {{"i", 225771, 20}},	-- 20x Algari Seekerthread
+			}),
+			ach(40484, {	-- 30 Algari Seekerthread
+				["cost"] = {{"i", 225771, 30}},	-- 30x Algari Seekerthread
+			}),
+			ach(40485, {	-- 40 Algari Seekerthread
+				["cost"] = {{"i", 225771, 40}},	-- 40x Algari Seekerthread
+			}),
+			ach(40487, {	-- 50 Algari Seekerthread
+				["cost"] = {{"i", 225771, 50}},	-- 50x Algari Seekerthread
+			}),
+			ach(40488, {	-- 60 Algari Seekerthread
+				["cost"] = {{"i", 225771, 60}},	-- 60x Algari Seekerthread
+			}),
+			ach(40489, {	-- 70 Algari Seekerthread
+				["cost"] = {{"i", 225771, 70}},	-- 70x Algari Seekerthread
+			}),
+			ach(40490, {	-- 80 Algari Seekerthread
+				["cost"] = {{"i", 225771, 80}},	-- 80x Algari Seekerthread
+			}),
+			ach(40491, {	-- 90 Algari Seekerthread
+				["cost"] = {{"i", 225771, 90}},	-- 90x Algari Seekerthread
+			}),
+			ach(40492, {	-- 100 Algari Seekerthread
+				["cost"] = {{"i", 225771, 100}},	-- 100x Algari Seekerthread
+			}),
+			ach(19415, {	-- Algari Fisherman
+				["cost"] = {{"i", 224752, 20}},	-- 20x Soaked Journal Entry
 			}),
 		}),
 	})),

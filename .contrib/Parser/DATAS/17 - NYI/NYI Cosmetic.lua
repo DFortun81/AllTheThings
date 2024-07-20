@@ -417,7 +417,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			i(217031),	-- Gladiator's Battered Treads
 
 			------ Single Pieces ------
-			i(217375),	-- Frenzied Hat of the Crimson Seas
 			i(217373),	-- Frenzied Hat of the Dark Depths
 			i(217376),	-- Frenzied Hat of the Murky Waters
 			i(217374),	-- Frenzied Hat of the Shallows
@@ -455,17 +454,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(220713),	-- Champion Stormrider's Helmet
 				i(220714),	-- Champion Stormrider's Pants
 				i(220717),	-- Champion Stormrider's Wristguards
-
-				------ Deep Diver Set ------
-				i(223202),	-- Deep Diver's Belt
-				i(223199),	-- Deep Diver's Bonnet
-				i(223205),	-- Deep Diver's Boots
-				i(223201),	-- Deep Diver's Corselet
-				i(223206),	-- Deep Diver's Gloves
-				i(223204),	-- Deep Diver's Greaves
-				i(223200),	-- Deep Diver's Pauldrons
-				i(223255),	-- Deep Diver's Tank
-				i(223258),	-- Deep Diver's Wrist Seal
 
 				------ Deep Stormrider Set ------
 				i(220696),	-- Deep Stormrider's Boots

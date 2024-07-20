@@ -1560,4 +1560,59 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(213537),	-- Void Tendril
 		})),
 	}),
+	expansion(EXPANSION.TWW, {
+		-- CREATED_11_PH_LAUNCH
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+			i(219741), -- Algari Mineral
+			i(219742), -- Algari Spices
+			i(224030), -- Bottomless Bag of Khaz Algar Alchemy Goods
+			i(224031), -- Bottomless Bag of Khaz Algar Blacksmithing Goods
+			i(224032), -- Bottomless Bag of Khaz Algar Enchanting Goods
+			i(224033), -- Bottomless Bag of Khaz Algar Engineering Goods
+			i(224100), -- Bottomless Bag of Khaz Algar General Goods
+			i(224156), -- Bottomless Bag of Khaz Algar General Goods
+			i(224027), -- Bottomless Bag of Khaz Algar Herbs
+			i(224034), -- Bottomless Bag of Khaz Algar Inscription Goods
+			i(224035), -- Bottomless Bag of Khaz Algar Jewelcrafting Goods
+			i(224037), -- Bottomless Bag of Khaz Algar Leatherworking Goods
+			i(224040), -- Bottomless Bag of Khaz Algar Optional Goods
+			i(224028), -- Bottomless Bag of Khaz Algar Ore
+			i(224029), -- Bottomless Bag of Khaz Algar Skins
+			i(224039), -- Bottomless Bag of Khaz Algar Tailoring Goods
+			i(219743), -- Khaz Algar Olive (Vendor)
+			i(219744), -- Khaz Algar Vegetable
+			i(224068), -- Professor Instructaur's Brain Pertaining to Khaz Algar
+			i(224057), -- Professor Instructaur's Top Secret Guide to Khaz Algar Alchemy
+			i(224058), -- Professor Instructaur's Top Secret Guide to Khaz Algar Blacksmithing
+			i(224059), -- Professor Instructaur's Top Secret Guide to Khaz Algar Enchanting
+			i(224060), -- Professor Instructaur's Top Secret Guide to Khaz Algar Engineering
+			i(224061), -- Professor Instructaur's Top Secret Guide to Khaz Algar Herbalism
+			i(224062), -- Professor Instructaur's Top Secret Guide to Khaz Algar Inscription
+			i(224063), -- Professor Instructaur's Top Secret Guide to Khaz Algar Jewelcrafting
+			i(224064), -- Professor Instructaur's Top Secret Guide to Khaz Algar Leatherworking
+			i(224065), -- Professor Instructaur's Top Secret Guide to Khaz Algar Mining
+			i(224066), -- Professor Instructaur's Top Secret Guide to Khaz Algar Skinning
+			i(224067), -- Professor Instructaur's Top Secret Guide to Khaz Algar Tailoring
+			i(219142), -- Set Keystone Map: Ara-Kara, City of Echoes
+			i(219145), -- Set Keystone Map: Cinderbrew Meadery
+			i(219141), -- Set Keystone Map: City of Threads
+			i(219143), -- Set Keystone Map: Darkflame Cleft
+			i(219139), -- Set Keystone Map: Priory of the Sacred Flame
+			i(219146), -- Set Keystone Map: Stonevault
+			i(219144), -- Set Keystone Map: The Dawnbreaker
+			i(219140), -- Set Keystone Map: The Rookery
+			i(219690), -- Trophy Common Fish A
+			i(219691), -- Trophy Common Fish B
+			i(219696), -- Trophy Rare Fish A
+			i(219697), -- Trophy Rare Fish B
+			i(219698), -- Trophy Rare Fish C
+			i(219699), -- Trophy Rare Fish D
+			i(219700), -- Trophy Rare Fish E
+			i(219701), -- Trophy Rare Fish F
+			i(219692), -- Trophy Uncommon Fish A
+			i(219693), -- Trophy Uncommon Fish B
+			i(219694), -- Trophy Uncommon Fish C
+			i(219695), -- Trophy Uncoomon Fish D
+		})),
+	}),
 }));

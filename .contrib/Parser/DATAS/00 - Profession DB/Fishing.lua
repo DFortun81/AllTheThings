@@ -115,3 +115,42 @@ i(0, 393063);		-- Scalebelly Mackerel
 i(0, 393065);		-- Shimmering Treasure Pool
 i(0, 393062);		-- Temporal Dragonhead School
 i(0, 393059);		-- Thousandbite Pirahna Swarm
+
+------------------
+-- PATCH ADDED_11_PH_LAUNCH --
+------------------
+--- TRAINER ---
+i(0, 423336);		-- Khaz Algar Fishing
+i(0, 454441);		-- Becoming an Algari Angler
+i(0, 456588);		-- Isle of Dorn
+i(0, 456150);		-- What is an Algari Weaverline?
+--- ITEM ---
+i(228954, 43308);	-- Find Fish
+--- DISCOVERY ---
+i(0, 456154);		-- Anglerthread
+i(0, 444795);		-- Arathor Hammerfish
+i(0, 444803);		-- Awoken Coelacanth
+i(0, 456591);		-- Azj-Kahet
+i(0, 444787);		-- Bismuth Bitterling
+i(0, 444785);		-- Bloody Perch
+i(0, 444786);		-- Crystalline Sturgeon
+i(0, 444802);		-- Cursed Ghoulfish
+i(0, 444792);		-- Dilly-Dally Dace
+i(0, 444793);		-- Dornish Pike
+i(0, 454442);		-- Fishing Skill and You
+i(0, 444790);		-- Goldengill Trout
+i(0, 456590);		-- Hallowfall
+i(0, 444797);		-- Kaheti Slum Shark
+i(0, 456180);		-- Mereldar Fishing Derby
+i(0, 444788);		-- Nibbling Minnow
+i(0, 444798);		-- Pale Huskfish
+i(0, 444801);		-- Queen's Lurefish
+i(0, 454443);		-- Quiet River Bass
+i(0, 444796);		-- Regal Dottyback
+i(0, 444794);		-- Roaring Anglerseeker
+i(0, 444799);		-- Sanguine Dogfish
+i(0, 456152);		-- Seekerthread
+i(0, 444791);		-- Specular Rainbowfish
+i(0, 444800);		-- Spiked Sea Raven
+i(0, 456589);		-- The Ringing Deeps
+i(0, 444789);		-- Whispering Stargazer

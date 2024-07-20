@@ -69,13 +69,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			prof(BLACKSMITHING, {
 				n(223644, {	-- Darean <Blacksmithing Trainer>
 					["coord"] = { 49.2, 63.6, DORNOGAL },
-					--["g"] = TWW_BLACKSMITHING,
+					["g"] = TWW_BLACKSMITHING,
 				}),
 			}),
 			prof(COOKING, {
 				n(219104, {	-- Athodas <Cooking Trainer>
 					["coord"] = { 44.2, 45.8, DORNOGAL },
-					--["g"] = TWW_COOKING,
+					["g"] = TWW_COOKING,
 				}),
 			}),
 			prof(ENCHANTING, {
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			prof(FISHING, {
 				n(219106, {	-- Drokar <Fishing Trainer>
 					["coord"] = { 50.5, 26.8, DORNOGAL },
-					--["g"] = TWW_FISHING,
+					["g"] = TWW_FISHING,
 				}),
 			}),
 			prof(HERBALISM, {

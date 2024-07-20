@@ -63,6 +63,218 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(210495),	-- Slumbering Peacebloom Tea
 				})),
 			}),
+			expansion(EXPANSION.TWW, {
+				-- CREATED_11_PH_LAUNCH
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+					i(220415),	-- Angler's Delight
+					i(222283),	-- Angler's Delight
+					i(220430),	-- Blessing Blossom Tea
+					i(222743),	-- Blessing Blossom Tea
+					i(220428),	-- Chippy Tea
+					i(222295),	-- Chippy Tea
+					i(220339),	-- Chopped Mycobloom
+					i(220382),	-- Chopped Mycobloom
+					i(222250),	-- Chopped Mycobloom
+					i(222690),	-- Chopped Mycobloom
+					i(220429),	-- Citrus Refresher
+					i(220393),	-- Clumped Flour
+					i(222261),	-- Clumped Flour
+					i(220385),	-- Cluster of Meatballs
+					i(222253),	-- Cluster of Meatballs
+					i(219705),	-- Cooked Meat T1
+					i(219702),	-- Cooked Meat T1 A
+					i(219703),	-- Cooked Meat T1 B
+					i(219704),	-- Cooked Meat T1 C
+					i(220389),	-- Coreway Dust
+					i(222257),	-- Coreway Dust
+					i(220400),	-- Coreway Kabob
+					i(222268),	-- Coreway Kabob
+					i(220431),	-- Crisp Ringing Water
+					i(220388),	-- Crunchy Peppers
+					i(222256),	-- Crunchy Peppers
+					i(220421),	-- Daylight Delicacy
+					i(222289),	-- Daylight Delicacy
+					i(220410),	-- Deepfin Patty
+					i(223978),	-- Double Packed Yolk
+					i(220427),	-- Everything Stew
+					i(219719),	-- Feast
+					i(220425),	-- Feast of the Midnight Masquerade
+					i(220407),	-- Fiery Fish Sticks
+					i(222275),	-- Fiery Fish Sticks
+					i(223965),	-- Fine Egg Powder
+					i(220413),	-- Fish and Chips
+					i(222281),	-- Fish and Chips
+					i(222278),	-- Fish Cake (Revise)
+					i(219706),	-- Fish Palte Haste
+					i(219707),	-- Fish Plate Crit
+					i(219714),	-- Fish Plate Crit/Mastery
+					i(219713),	-- Fish Plate Crit/Verse
+					i(219710),	-- Fish Plate Haste/Crit
+					i(219712),	-- Fish Plate Haste/Mastery
+					i(219711),	-- Fish Plate Haste/Verse
+					i(219709),	-- Fish Plate Mastery
+					i(219717),	-- Fish Plate Stam Agi
+					i(219718),	-- Fish Plate Stam Int
+					i(219716),	-- Fish Plate Stam Str
+					i(219708),	-- Fish Plate Verse
+					i(219715),	-- Fish Plate Vers/Mastery
+					i(222279),	-- Fish Soup (Revise)
+					i(220401),	-- Flash Fire Fillet
+					i(222269),	-- Flash Fire Fillet
+					i(220306),	-- Fresh Fillet
+					i(220386),	-- Fresh Fillet
+					i(222254),	-- Fresh Fillet
+					i(222694),	-- Fresh Fillet
+					i(224117),	-- Ghoulfish Delight
+					i(220408),	-- Ginger Glazed Fillet
+					i(222276),	-- Ginger Glazed Fillet
+					i(220392),	-- Granulated Spices
+					i(222260),	-- Granulated Spices
+					i(220405),	-- Grilled Pepper Steak
+					i(220399),	-- Hallowfall Chili
+					i(222267),	-- Hallowfall Chili
+					i(222326),	-- Hearty Angler's Delight
+					i(222338),	-- Hearty Chippy Tea
+					i(219726),	-- Hearty Cooked Meat T1
+					i(219723),	-- Hearty Cooked Meat T1 A
+					i(219724),	-- Hearty Cooked Meat T1 B
+					i(219725),	-- Hearty Cooked Meat T1 C
+					i(222311),	-- Hearty Coreway Kabob
+					i(222332),	-- Hearty Daylight Delicacy
+					i(222318),	-- Hearty Fiery Fish Sticks
+					i(222324),	-- Hearty Fish and Chips
+					i(222321),	-- Hearty Fish Cake (Revise)
+					i(219727),	-- Hearty Fish Palte Haste
+					i(219728),	-- Hearty Fish Plate Crit
+					i(219735),	-- Hearty Fish Plate Crit/Mastery
+					i(219734),	-- Hearty Fish Plate Crit/Verse
+					i(219731),	-- Hearty Fish Plate Haste/Crit
+					i(219733),	-- Hearty Fish Plate Haste/Mastery
+					i(219732),	-- Hearty Fish Plate Haste/Verse
+					i(219730),	-- Hearty Fish Plate Mastery
+					i(219740),	-- Hearty Fish Plate Stam
+					i(219738),	-- Hearty Fish Plate Stam Agi
+					i(219739),	-- Hearty Fish Plate Stam Int
+					i(219737),	-- Hearty Fish Plate Stam Str
+					i(219729),	-- Hearty Fish Plate Verse
+					i(219736),	-- Hearty Fish Plate Vers/Mastery
+					i(222322),	-- Hearty Fish Soup (Revise)
+					i(222312),	-- Hearty Flash Fire Fillet
+					i(222319),	-- Hearty Ginger Glazed Fillet
+					i(222310),	-- Hearty Hallowfall Chili
+					i(222334),	-- Hearty Late Night Snack
+					i(222313),	-- Hearty Meat and Potatoes
+					i(222306),	-- Hearty Meatball Hold-Me-Over
+					i(222333),	-- Hearty Nightfall Nourishment
+					i(222316),	-- Hearty NYI NAME NEEDED
+					i(222327),	-- Hearty NYI NAME NEEDED
+					i(222328),	-- Hearty NYI NAME NEEDED
+					i(222329),	-- Hearty NYI NAME NEEDED
+					i(222330),	-- Hearty NYI NAME NEEDED
+					i(222336),	-- Hearty NYI NAME NEEDED
+					i(222337),	-- Hearty NYI NAME NEEDED
+					i(222339),	-- Hearty NYI NAME NEEDED
+					i(222340),	-- Hearty NYI NAME NEEDED
+					i(222341),	-- Hearty NYI NAME NEEDED
+					i(222342),	-- Hearty NYI NAME NEEDED
+					i(222344),	-- Hearty NYI NAME NEEDED
+					i(222346),	-- Hearty NYI NAME NEEDED
+					i(222347),	-- Hearty NYI NAME NEEDED
+					i(222309),	-- Hearty Pan Seared Mycobloom
+					i(222343),	-- Hearty Pep-In-Your-Step
+					i(222314),	-- Hearty Rib Stickers
+					i(222308),	-- Hearty Roasted Mycobloom
+					i(222345),	-- Hearty Rockslide Shake
+					i(222325),	-- Hearty Salt Baked Seafood
+					i(222320),	-- Hearty Salty Fish Pie (Revise)
+					i(222335),	-- Hearty Shadow-Infused Gumbo
+					i(222305),	-- Hearty Skewered Fillet
+					i(222315),	-- Hearty Sweet and Sour Meatballs
+					i(222331),	-- Hearty The Breakfast Sampler
+					i(222307),	-- Hearty Unseasoned Field Steak
+					i(222782),	-- Hearty Village Potluck
+					i(222317),	-- Hearty Zesty Nibblers
+					i(220391),	-- Khaz Algar Tomato
+					i(222259),	-- Khaz Algar Tomato
+					i(220423),	-- Late Night Snack
+					i(222291),	-- Late Night Snack
+					i(222742),	-- Luminous Lemonade
+					i(220419),	-- Marinated Tenderloins
+					i(220402),	-- Meat and Potatoes
+					i(222270),	-- Meat and Potatoes
+					i(220395),	-- Meatball Hold-Me-Over
+					i(222263),	-- Meatball Hold-Me-Over
+					i(220416),	-- Mycobloom Risotto
+					i(220422),	-- Nightfall Nourishment
+					i(222290),	-- Nightfall Nourishment
+					i(222273),	-- NYI NAME NEEDED
+					i(222284),	-- NYI NAME NEEDED
+					i(222285),	-- NYI NAME NEEDED
+					i(222286),	-- NYI NAME NEEDED
+					i(222287),	-- NYI NAME NEEDED
+					i(222293),	-- NYI NAME NEEDED
+					i(222294),	-- NYI NAME NEEDED
+					i(222296),	-- NYI NAME NEEDED
+					i(222297),	-- NYI NAME NEEDED
+					i(222298),	-- NYI NAME NEEDED
+					i(222299),	-- NYI NAME NEEDED
+					i(222301),	-- NYI NAME NEEDED
+					i(222303),	-- NYI NAME NEEDED
+					i(222304),	-- NYI NAME NEEDED
+					i(219745),	-- Olive Oil
+					i(220435),	-- Olive Oil Ice Cream
+					i(220398),	-- Pan Seared Mycobloom
+					i(222266),	-- Pan Seared Mycobloom
+					i(220432),	-- Pep-In-Your-Step
+					i(222300),	-- Pep-In-Your-Step
+					i(220341),	-- Portioned Steak
+					i(220383),	-- Portioned Steak
+					i(222251),	-- Portioned Steak
+					i(222691),	-- Portioned Steak
+					i(219721),	-- Prepared Algari Filet
+					i(219722),	-- Prepared Algari Poultry
+					i(219720),	-- Prepared Algari Steak
+					i(225937),	-- Putrid Goop
+					i(220403),	-- Rib Stickers
+					i(222271),	-- Rib Stickers
+					i(220397),	-- Roasted Mycobloom
+					i(222265),	-- Roasted Mycobloom
+					i(220434),	-- Rockslide Shake
+					i(222302),	-- Rockslide Shake
+					i(220414),	-- Salt Baked Seafood
+					i(222282),	-- Salt Baked Seafood
+					i(220409),	-- Salty Fish Pie
+					i(222277),	-- Salty Fish Pie (Revise)
+					i(220433),	-- Savory Evening Tart
+					i(222292),	-- Shadow-Infused Gumbo
+					i(220418),	-- Sizzling Honey Roast
+					i(220394),	-- Skewered Fillet
+					i(222262),	-- Skewered Fillet
+					i(220384),	-- Spiced Meat Stock
+					i(222252),	-- Spiced Meat Stock
+					i(222692),	-- Spiced Meat Stock
+					i(220417),	-- Stuffed Cave Peppers
+					i(220390),	-- Surface Olive
+					i(222258),	-- Surface Olive
+					i(220404),	-- Sweet and Sour Meatballs
+					i(222272),	-- Sweet and Sour Meatballs
+					i(220420),	-- The Breakfast Sampler
+					i(222288),	-- The Breakfast Sampler
+					i(220387),	-- Twined Herbs
+					i(222255),	-- Twined Herbs
+					i(220411),	-- Underbelly Soup
+					i(220396),	-- Unseasoned Field Steak
+					i(222264),	-- Unseasoned Field Steak
+					i(220426),	-- Village Potluck
+					i(222734),	-- Village Potluck
+					i(220406),	-- Zesty Nibblers
+					i(222274),	-- Zesty Nibblers
+					i(222785),	-- zzold cooking recipe
+					i(222786),	-- zzold cooking recipe
+					i(222787),	-- zzold cooking recipe
+					i(220424),	-- zzOldFeast of the Divine Day
+				})),
+			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
@@ -185,6 +397,17 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 					-- Without SpellID attached
 					i(210496),	-- Recipe: Slumbering Peacebloom Tea
+				})),
+			}),
+			expansion(EXPANSION.TWW, {
+				-- CREATED_11_PH_LAUNCH
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+					r(445478),	-- Blessing Blossom Tea
+					r(445477),	-- Luminous Lemonade
+					r(445114),	-- Village Potluck
+					-- Without SpellID attached
+					i(224419),	-- Recipe: Jester's Board (RECIPE!)
+					i(223959),	-- Recipe: Secret Sauce (RECIPE!)
 				})),
 			}),
 		}),

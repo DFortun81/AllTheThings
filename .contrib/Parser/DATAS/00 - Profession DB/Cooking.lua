@@ -848,71 +848,72 @@ i(210242, 416001);	-- Slumbering Peacebloom Tea
 --- NYI ---
 i(210496, 0);		-- Slumbering Peacebloom Tea
 
---[[
 ------------------
 -- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 --- TRAINER ---
-r(423333), -- Khaz Algar Cooking
-r(445107), -- Angler's Delight
-r(445116), -- Chippy Tea
-r(445117), -- Chopped Mycobloom
-r(445088), -- Coreway Kabob
-r(445098), -- Deepfin Patty
-r(445095), -- Fiery Fish Sticks
-r(445101), -- Fish and Chips
-r(445089), -- Flash Fire Fillet
-r(445127), -- Fresh Fillet
-r(445096), -- Ginger Glazed Fillet
-r(445087), -- Hallowfall Chili
-r(462857),	-- Hearty Feast
-r(445120), -- Hearty Food
-r(445110), -- Jester's Board
-r(445103), -- Marinated Tenderloins
-r(445090), -- Meat and Potatoes
-r(445105), -- Mycobloom Risotto
-r(445086), -- Pan-Seared Mycobloom
-r(445118), -- Portioned Steak
-r(445091), -- Rib Stickers
-r(445085), -- Roasted Mycobloom
-r(445482), -- Rockslide Shake
-r(445102), -- Salt Baked Seafood
-r(445097), -- Salty Dog
-r(445083), -- Simple Stew
-r(445104), -- Sizzling Honey Roast
-r(445082), -- Skewered Fillet
-r(445119), -- Spiced Meat Stock
-r(445106), -- Stuffed Cave Peppers
-r(445092), -- Sweet and Sour Meatballs
-r(445099), -- Sweet and Spicy Soup
-r(445093), -- Tender Twilight Jerky
-r(445100), -- The Sushi Special
-r(445084), -- Unseasoned Field Steak
-r(445094), -- Zesty Nibblers
+i(0, 423333);		-- Khaz Algar Cooking
+i(0, 445107);		-- Angler's Delight
+i(0, 445116);		-- Chippy Tea
+i(0, 445117);		-- Chopped Mycobloom
+i(0, 445088);		-- Coreway Kabob
+i(0, 445098);		-- Deepfin Patty
+i(0, 445095);		-- Fiery Fish Sticks
+i(0, 445101);		-- Fish and Chips
+i(0, 445089);		-- Flash Fire Fillet
+i(0, 445127);		-- Fresh Fillet
+i(0, 445096);		-- Ginger Glazed Fillet
+i(0, 445087);		-- Hallowfall Chili
+i(0, 462857);		-- Hearty Feast
+i(0, 445120);		-- Hearty Food
+i(0, 445110);		-- Jester's Board
+i(0, 445103);		-- Marinated Tenderloins
+i(0, 445090);		-- Meat and Potatoes
+i(0, 445105);		-- Mycobloom Risotto
+i(0, 445086);		-- Pan-Seared Mycobloom
+i(0, 445118);		-- Portioned Steak
+i(0, 445091);		-- Rib Stickers
+i(0, 445085);		-- Roasted Mycobloom
+i(0, 445482);		-- Rockslide Shake
+i(0, 445102);		-- Salt Baked Seafood
+i(0, 445097);		-- Salty Dog
+i(0, 445083);		-- Simple Stew
+i(0, 445104);		-- Sizzling Honey Roast
+i(0, 445082);		-- Skewered Fillet
+i(0, 445119);		-- Spiced Meat Stock
+i(0, 445106);		-- Stuffed Cave Peppers
+i(0, 445092);		-- Sweet and Sour Meatballs
+i(0, 445099);		-- Sweet and Spicy Soup
+i(0, 445093);		-- Tender Twilight Jerky
+i(0, 445100);		-- The Sushi Special
+i(0, 445084);		-- Unseasoned Field Steak
+i(0, 445094);		-- Zesty Nibblers
 --- ITEM ---
-i(223961, 447875), -- Azj-Kahet Special
-i(225894, 445108), -- Beledar's Bounty
-i(223961, 445479), -- Cinder Nectar
-i(224152, 445109), -- Empress' Farewell
-i(224418, 445115), -- Everything Stew
-i(225639, 455424), -- Exquisitely Eviscerated Muscle
-i(227283, 445112), -- Feast of the Divine Day
+i(223961, 447875);	-- Azj-Kahet Special
+i(225894, 445108);	-- Beledar's Bounty
+i(223961, 445479);	-- Cinder Nectar
+i(224152, 445109);	-- Empress' Farewell
+i(223956, 447870);	-- Everything-On-A-Stick
+i(224418, 445115);	-- Everything Stew
+i(225639, 455424);	-- Exquisitely Eviscerated Muscle
+i(227283, 445112);	-- Feast of the Divine Day
 i(227281, 445113);	-- Feast of the Midnight Masquerade
-i(228422, 447876), -- Ghoulfish Delight
-i(223960, 447874), -- Little Buddy Biscuits
-i(228421, 445484), -- Melted Candlebar
-i(226177, 445111), -- Outsider's Provisions
-i(228423, 445480), -- Pep-In-Your-Step
-i(223957, 447871), -- Protein Slurp
-i(223958, 447872), -- Spongey Scramble
-i(226190, 445483), -- Sticky Sweet Treat
--- Unsorted
-i(223956, 447870), -- Everything-On-A-Stick
-i(223955, 447869), -- Fine Egg Powders
-i(223959, 447873), -- Secret Sauce
-r(445481), -- Tasty Pocket Tart
---nyi
-r(445478), -- Blessing Blossom Tea
-r(445477), -- Luminous Lemonade
-r(445114), -- Village Potluck
---]]
+i(223955, 447869);	-- Fine Egg Powders
+i(228422, 447876);	-- Ghoulfish Delight
+i(223960, 447874);	-- Little Buddy Biscuits
+i(228421, 445484);	-- Melted Candlebar
+i(226177, 445111);	-- Outsider's Provisions
+i(228423, 445480);	-- Pep-In-Your-Step
+i(223957, 447871);	-- Protein Slurp
+i(223958, 447872);	-- Spongey Scramble
+i(226190, 445483);	-- Sticky Sweet Treat
+--- DISCOVERY ---
+i(0, 447873);		-- Secret Sauce
+--- Unsorted ---
+i(0, 445481);		-- Tasty Pocket Tart
+--- NYI ---
+i(0, 445478);		-- Blessing Blossom Tea
+i(0, 445477);		-- Luminous Lemonade
+i(0, 445114);		-- Village Potluck
+i(224419, 0);		-- Recipe: Jester's Board
+i(223959, 0);		-- Recipe: Secret Sauce

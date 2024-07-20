@@ -10,6 +10,26 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(198439),	-- Aged Recipe in a Bottle
 				})),
 			}),
+			expansion(EXPANSION.TWW, {
+				-- CREATED_11_PH_LAUNCH
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+					i(219676),	-- Common Fish A
+					i(219677),	-- Common Fish B
+					i(219678),	-- Common Fish C
+					i(219679),	-- Common Fish D
+					i(219684),	-- Rare Fish A
+					i(219685),	-- Rare Fish B
+					i(219686),	-- Rare Fish C
+					i(219687),	-- Rare Fish D
+					i(219688),	-- Rare Fish E
+					i(219689),	-- Rare Fish F
+					i(220140),	-- Goldengill Trout
+					i(219680),	-- Uncommon Fish A
+					i(219681),	-- Uncommon Fish B
+					i(219682),	-- Uncommon Fish C
+					i(219683),	-- Uncoomon Fish D
+				})),
+			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {

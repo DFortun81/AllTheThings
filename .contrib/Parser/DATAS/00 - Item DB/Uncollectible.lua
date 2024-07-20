@@ -1934,3 +1934,6 @@ i(226515);	-- Rumor Map: Bounties
 i(226516);	-- Rumor Map: Disruption
 i(226517);	-- Rumor Map: Espionage
 i(226518);	-- Phero-Escape
+i(222693);	-- Hearty Food
+i(222740);	-- Hearty Meals
+i(228721);	-- Hearty Feast

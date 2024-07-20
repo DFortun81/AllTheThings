@@ -46,7 +46,7 @@ root(ROOTS.Unsorted, {
 				i(228950),	-- Rumor Map Bundle
 				i(228951),	-- Pact Treasure Map
 				i(228952),	-- Pact Treasure Map Bundle
-				i(228954),	-- Angler's Guide [New Weather-Beaten Journal?!]
+
 			}),
 			filter(QUEST_ITEMS, {
 				i(228623),	-- Blue's Request
@@ -71,9 +71,6 @@ root(ROOTS.Unsorted, {
 				i(228914),	-- Arachnophile Spectacles (TOY!)
 			}),
 			n(PROFESSIONS, {
-				prof(COOKING, {
-					i(228721),	-- Hearty Feast
-				}),
 				prof(TAILORING, {
 					i(228930),	-- Adorning Ribbon
 				}),
@@ -223,160 +220,38 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 				i(211296),	-- Spark of Omens
 				i(211297),	-- Fractured Spark of Omens
-				i(213097),	-- Test Warbound until equipped (DNT)
 				i(213610),	-- Crystalline Powder
 				i(213611),	-- Writhing Sample
 				i(213612),	-- Viridescent Spores
 				i(213613),	-- Leyline Residue
-				i(219500),	-- Fang Adornments
-				i(219676),	-- Common Fish A
-				i(219677),	-- Common Fish B
-				i(219678),	-- Common Fish C
-				i(219679),	-- Common Fish D
-				i(219680),	-- Uncommon Fish A
-				i(219681),	-- Uncommon Fish B
-				i(219682),	-- Uncommon Fish C
-				i(219683),	-- Uncoomon Fish D
-				i(219684),	-- Rare Fish A
-				i(219685),	-- Rare Fish B
-				i(219686),	-- Rare Fish C
-				i(219687),	-- Rare Fish D
-				i(219688),	-- Rare Fish E
-				i(219689),	-- Rare Fish F
-				i(219690),	-- Trophy Common Fish A
-				i(219691),	-- Trophy Common Fish B
-				i(219692),	-- Trophy Uncommon Fish A
-				i(219693),	-- Trophy Uncommon Fish B
-				i(219694),	-- Trophy Uncommon Fish C
-				i(219695),	-- Trophy Uncoomon Fish D
-				i(219696),	-- Trophy Rare Fish A
-				i(219697),	-- Trophy Rare Fish B
-				i(219698),	-- Trophy Rare Fish C
-				i(219699),	-- Trophy Rare Fish D
-				i(219700),	-- Trophy Rare Fish E
-				i(219701),	-- Trophy Rare Fish F
-				i(219702),	-- Cooked Meat T1 A
-				i(219703),	-- Cooked Meat T1 B
-				i(219704),	-- Cooked Meat T1 C
-				i(219705),	-- Cooked Meat T1
-				i(219706),	-- Fish Palte Haste
-				i(219707),	-- Fish Plate Crit
-				i(219708),	-- Fish Plate Verse
-				i(219709),	-- Fish Plate Mastery
-				i(219710),	-- Fish Plate Haste/Crit
-				i(219711),	-- Fish Plate Haste/Verse
-				i(219712),	-- Fish Plate Haste/Mastery
-				i(219713),	-- Fish Plate Crit/Verse
-				i(219714),	-- Fish Plate Crit/Mastery
-				i(219715),	-- Fish Plate Vers/Mastery
-				i(219716),	-- Fish Plate Stam Str
-				i(219717),	-- Fish Plate Stam Agi
-				i(219718),	-- Fish Plate Stam Int
-				i(219719),	-- Feast
-				i(219720),	-- Prepared Algari Steak \\ Prepared Algarian Steak
-				i(219721),	-- Prepared Algari Filet \\ Prepared Algarian Filet
-				i(219722),	-- Prepared Algari Poultry \\ Prepared Algarian Poultry
-				i(219723),	-- Hearty Cooked Meat T1 A
-				i(219724),	-- Hearty Cooked Meat T1 B
-				i(219725),	-- Hearty Cooked Meat T1 C
-				i(219726),	-- Hearty Cooked Meat T1
-				i(219727),	-- Hearty Fish Palte Haste
-				i(219728),	-- Hearty Fish Plate Crit
-				i(219729),	-- Hearty Fish Plate Verse
-				i(219730),	-- Hearty Fish Plate Mastery
-				i(219731),	-- Hearty Fish Plate Haste/Crit
-				i(219732),	-- Hearty Fish Plate Haste/Verse
-				i(219733),	-- Hearty Fish Plate Haste/Mastery
-				i(219734),	-- Hearty Fish Plate Crit/Verse
-				i(219735),	-- Hearty Fish Plate Crit/Mastery
-				i(219736),	-- Hearty Fish Plate Vers/Mastery
-				i(219737),	-- Hearty Fish Plate Stam Str
-				i(219738),	-- Hearty Fish Plate Stam Agi
-				i(219739),	-- Hearty Fish Plate Stam Int
-				i(219740),	-- Hearty Fish Plate Stam
-				i(219741),	-- Algari Mineral \\ Algarian Mineral
-				i(219742),	-- Algari Spices \\ Algarian Spices
-				i(219743),	-- Khaz Algar Olive (Vendor)
-				i(219744),	-- Khaz Algar Vegetable
-				i(219745),	-- Olive Oil
-				i(219931),	-- Algari Competitor's Medallion \\ Vicious Competitor's Medallion
-				i(220134),	-- Dilly-Dally Dace
-				i(220135),	-- Bloody Perch
-				i(220136),	-- Crystalline Sturgeon
-				i(220137),	-- Bismuth Bitterling
-				i(220138),	-- Nibbling Minnow
-				i(220139),	-- Whispering Stargazer
-				i(220140),	-- Goldengill Trout
-				i(220141),	-- Specular Rainbowfish
-				i(220142),	-- Quiet River Bass
-				i(220144),	-- Roaring Anglerseeker
-				i(220145),	-- Arathor Hammerfish
-				i(220146),	-- Regal Dottyback
-				i(220147),	-- Kaheti Slum Shark \\ Azj-Kahet Slum Shark
-				i(220148),	-- Pale Huskfish
-				i(220149),	-- Sanguine Dogfish
-				i(220150),	-- Spiked Sea Raven
-				i(220151),	-- Queen's Lurefish
-				i(220152),	-- Cursed Ghoulfish
-				i(220153),	-- Awoken Coelacanth
-				--------------- Cooking
-				i(220383),	-- Portioned Steak
-				i(220384),	-- Spiced Meat Stock
-				i(220385),	-- Cluster of Meatballs
-				i(220386),	-- Fresh Fillet
-				i(220387),	-- Twined Herbs
-				i(220388),	-- Crunchy Peppers
-				i(220389),	-- Coreway Dust
-				i(220390),	-- Surface Olive
-				i(220391),	-- Khaz Algar Tomato
-				i(220392),	-- Granulated Spices
-				i(220393),	-- Clumped Flour
-
-
-
-
-
-
-
-
-
-
-
-				i(220405),	-- Grilled Pepper Steak
-
-
-
-
-
-				i(220411),	-- Underbelly Soup
-
-
-
-
-
-
-
-				i(220420),	-- The Breakfast Sampler
-				i(220421),	-- Daylight Delicacy
-				i(220422),	-- Nightfall Nourishment
-
-
-
-
-
-
-				i(220429),	-- Citrus Refresher
-
-				i(220431),	-- Crisp Ringing Water
-
-				i(220433),	-- Savory Evening Tart
-
-
 				i(221754),	-- Ringing Deeps Ingot
 				i(221757),	-- Gloomfathom Hide
 				i(221758),	-- Profaned Tinderbox
 				i(221763),	-- Viridian Charmcap
-				i(221790),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
+				i(224764),	-- Mosswool Thread
+				i(211494),	-- Spark of Beginnings
+				i(225768),	-- Crusty Darkmoon Card
+
+				i(225772),	-- Artisan's Consortium Advertisement
+				i(225670),	-- Apprentice's Crafting License
+				i(225671),	-- Stack of Pentagold Reviews
+				i(225672),	-- Unraveled Instructions
+				i(225673),	-- Artisan's Consortium Seal of Approval
+				i(198534),	-- Draconic Missive of Ingenuity
+				i(198535),	-- Draconic Missive of Ingenuity
+				i(198536),	-- Draconic Missive of Ingenuity
+				i(199963),	-- Enchant Tool - Draconic Ingenuity
+				i(200005),	-- Enchant Tool - Draconic Ingenuity
+				i(200047),	-- Enchant Tool - Draconic Ingenuity
+				i(200599),	-- Technique: Draconic Missive of Ingenuity
+				i(228224),	-- Spark of Legacies
+				i(228338),	-- Soul Sigil I
+				i(228339),	-- Soul Sigil II
+				i(228368),	-- Relic of the Past VI
+				-- NYI Profession --
+				i(219500),	-- Fang Adornments
+				i(213097),	-- Test Warbound until equipped (DNT)
+				-- Mereldar Fishing Contest?
 				i(222089),	-- Bloody Perch
 				i(222090),	-- Crystalline Sturgeon
 				i(222091),	-- Bismuth Bitterling
@@ -396,87 +271,6 @@ root(ROOTS.Unsorted, {
 				i(222105),	-- Queen's Lurefish
 				i(222106),	-- Cursed Ghoulfish
 				i(222107),	-- Kah, King of the Deeps
-				-------- Cooking
-
-				i(222251),	-- Portioned Steak
-				i(222252),	-- Spiced Meat Stock
-				i(222253),	-- Cluster of Meatballs
-				i(222254),	-- Fresh Fillet
-				i(222255),	-- Twined Herbs
-				i(222256),	-- Crunchy Peppers
-				i(222257),	-- Coreway Dust
-				i(222258),	-- Surface Olive
-				i(222259),	-- Khaz Algar Tomato
-				i(222260),	-- Granulated Spices
-				i(222261),	-- Clumped Flour
-
-
-
-
-
-				i(222273),	-- NYI NAME NEEDED
-
-
-
-				i(222278),	-- Fish Cake (Revise)
-				i(222279),	-- Fish Soup (Revise)
-
-
-				i(222284),	-- NYI NAME NEEDED
-				i(222285),	-- NYI NAME NEEDED
-				i(222286),	-- NYI NAME NEEDED
-				i(222287),	-- NYI NAME NEEDED
-				i(222288),	-- The Breakfast Sampler
-				i(222289),	-- Daylight Delicacy
-				i(222290),	-- Nightfall Nourishment
-
-				i(222292),	-- Shadow-Infused Gumbo
-				i(222293),	-- NYI NAME NEEDED
-				i(222294),	-- NYI NAME NEEDED
-
-				i(222296),	-- NYI NAME NEEDED
-				i(222297),	-- NYI NAME NEEDED
-				i(222298),	-- NYI NAME NEEDED
-				i(222299),	-- NYI NAME NEEDED
-
-				i(222301),	-- NYI NAME NEEDED
-
-				i(222303),	-- NYI NAME NEEDED
-				i(222304),	-- NYI NAME NEEDED
-
-
-
-
-
-				i(222316),	-- Hearty NYI NAME NEEDED
-
-
-
-				i(222321),	-- Hearty Fish Cake (Revise)
-				i(222322),	-- Hearty Fish Soup (Revise)
-
-
-				i(222327),	-- Hearty NYI NAME NEEDED
-				i(222328),	-- Hearty NYI NAME NEEDED
-				i(222329),	-- Hearty NYI NAME NEEDED
-				i(222330),	-- Hearty NYI NAME NEEDED
-				i(222331),	-- Hearty The Breakfast Sampler
-				i(222332),	-- Hearty Daylight Delicacy
-				i(222333),	-- Hearty Nightfall Nourishment
-
-				i(222335),	-- Hearty Shadow-Infused Gumbo
-				i(222336),	-- Hearty NYI NAME NEEDED
-				i(222337),	-- Hearty NYI NAME NEEDED
-
-				i(222339),	-- Hearty NYI NAME NEEDED
-				i(222340),	-- Hearty NYI NAME NEEDED
-				i(222341),	-- Hearty NYI NAME NEEDED
-				i(222342),	-- Hearty NYI NAME NEEDED
-
-				i(222344),	-- Hearty NYI NAME NEEDED
-
-				i(222346),	-- Hearty NYI NAME NEEDED
-				i(222347),	-- Hearty NYI NAME NEEDED
 				i(222526),	-- Bloody Perch
 				i(222527),	-- Crystalline Sturgeon
 				i(222528),	-- Bismuth Bitterling
@@ -495,161 +289,15 @@ root(ROOTS.Unsorted, {
 				i(222542),	-- Queen's Lurefish
 				i(222543),	-- Cursed Ghoulfish
 				i(222544),	-- Kah, King of the Deeps
-				------ Cooking
-				i(222691),	-- Portioned Steak
-				i(222692),	-- Spiced Meat Stock
-				i(222693),	-- Hearty Food
-				i(222694),	-- Fresh Fillet
-				i(222695),	-- Twined Herbs
-				i(222696),	-- Crunchy Peppers
-				i(222697),	-- Coreway Dust
-				i(222698),	-- Surface Olive
-				i(222699),	-- Khaz Algar Tomato
-				i(222700),	-- Granulated Spices
-				i(222701),	-- Clumped Flour
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				i(222738),	-- Portioned Steak
-				i(222739),	-- Spiced Meat Stock
-				i(222740),	-- Hearty Meals
-				i(222741),	-- Fresh Fillet
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				i(222785),	-- zzold cooking recipe
-				i(222786),	-- zzold cooking recipe
-				i(222787),	-- zzold cooking recipe
-				i(219150),	-- Pile of Rusted Scrap
-				i(219194),	-- Magical Mulch
-				i(219195),	-- Imbued Mulch
-				i(219196),	-- Empowered Mulch
-				i(223512),	-- Basically Beef
-
-
-
-
-
-
-				i(223977),	-- Coagulated Yolk
-				i(223978),	-- Double Packed Yolk
-				i(221476),	-- Engineering - 1H Wrench [DNT]
-				i(221477),	-- Engineering - 2H Wrench [DNT]
-
-				i(224822),	-- Scour Through Scrap
-				i(224831),	-- Cube of Infinite Inventions (PTR Only)
-				i(223081),	-- Design: Sifted Cave Sand \\ Design: Inscription Finishing Reagent (DNT)
-				i(225202),	-- Pilfer Through Parts
-				i(225241),	-- Refurbished Tinker: Alarm-O-Turret
-				i(225242),	-- Refurbished Tinker: Plane Displacer
-				i(225243),	-- Refurbished Tinker: Supercollide-O-Tron
-				i(225244),	-- Refurbished Tinker: Shadowflame Rockets
-				i(225251),	-- Disassemble Invention
-				i(225338),	-- Glyph of Jab
-				i(225431),	-- Design: Vicious Jeweler's Setting
-				i(225432),	-- Design: Algari Competitor's Signet
-				i(225433),	-- Design: Algari Competitor's Amulet
-				i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
-				i(224640),	-- Invent
+				-- Misc/armor
 				i(224716),	-- [PH] Skewered Slum Shark
 				i(224718),	-- [PH] Surface Tipper's Toes
 				i(224719),	-- [PH] Evasive Angler's Treads
 				i(224720),	-- [PH] Keen Angler's Eye
+				-- Misc
 				i(224728),	-- Rollin' Barrel \\ [PH] Rollin' Barrel
 				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
 				i(224730),	-- [PH] Derby Dashers
-				i(224764),	-- Mosswool Thread
-				i(211494),	-- Spark of Beginnings
-				i(225768),	-- Crusty Darkmoon Card
-				i(225770),	-- Algari Anglerthread
-				i(225771),	-- Algari Seekerthread
-				i(225772),	-- Artisan's Consortium Advertisement
-				i(225670),	-- Apprentice's Crafting License
-				i(225671),	-- Stack of Pentagold Reviews
-				i(225672),	-- Unraveled Instructions
-				i(225673),	-- Artisan's Consortium Seal of Approval
-				i(198534),	-- Draconic Missive of Ingenuity
-				i(198535),	-- Draconic Missive of Ingenuity
-				i(198536),	-- Draconic Missive of Ingenuity
-				i(199963),	-- Enchant Tool - Draconic Ingenuity
-				i(200005),	-- Enchant Tool - Draconic Ingenuity
-				i(200047),	-- Enchant Tool - Draconic Ingenuity
-				i(200599),	-- Technique: Draconic Missive of Ingenuity
-				i(228224),	-- Spark of Legacies
-				i(228338),	-- Soul Sigil I
-				i(228339),	-- Soul Sigil II
-				i(228368),	-- Relic of the Past VI
 				prof(ALCHEMY, {
 					i(211807),	-- Gilded Vial
 					i(211808),	-- Gilded Vial
@@ -659,6 +307,7 @@ root(ROOTS.Unsorted, {
 					i(228404),	-- Petal Powder
 					i(228405),	-- Petal Powder
 					i(228406),	-- Petal Powder
+					i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
 				}),
 				prof(BLACKSMITHING, {
 					--- Attached SpellID Recipes!
@@ -822,129 +471,17 @@ root(ROOTS.Unsorted, {
 					i(223047),	-- Plans: Haunting Void
 				}),
 				prof(COOKING, {
-
-					i(225911),	-- Cinderbee Belly
-					i(225912),	-- Hot Honeycomb
-					i(225937),	-- Putrid Goop
-
-
-
-
-
-
-
-					-- Unsure
-					-- From Pelefien
-					i(223956, {	-- Recipe: Everything-On-A-Stick (RECIPE!)
-						["cost"] = {{"c", KEJ, 1500}},
-					}),
-					i(223966),	-- Everything-On-A-Stick
-
-					-- from Polo
-					i(223959, {	-- Recipe: Secret Sauce (RECIPE!)
-						["cost"] = {{"c", KEJ, 1500}},
-					}),
-					i(223969),	-- Secret Sauce
-
-					i(223955),	-- Recipe: Fine Egg Powder
-
-					i(223965),	-- Fine Egg Powder
-					i(225876),	-- Fine Egg Powder
-
-
-					i(222746),	-- Tasty Pocket Tart
-
-					-- nyi--?
-					i(224419),	-- Recipe: Jester's Board \\ Recipe: All-Day Banquet
-
-
-					-- nyi --
-					i(220403),	-- Rib Stickers
-					i(222271),	-- Rib Stickers
-					i(222314),	-- Hearty Rib Stickers
-					i(220432),	-- Pep-In-Your-Step
-					i(222300),	-- Pep-In-Your-Step
-					i(222343),	-- Hearty Pep-In-Your-Step
-					i(220398),	-- Pan Seared Mycobloom
-					i(222266),	-- Pan Seared Mycobloom
-					i(222309),	-- Hearty Pan Seared Mycobloom
-					i(220416),	-- Mycobloom Risotto
-					i(220402),	-- Meat and Potatoes
-					i(222270),	-- Meat and Potatoes
-					i(222313),	-- Hearty Meat and Potatoes
-					i(220419),	-- Marinated Tenderloins
-					i(222310),	-- Hearty Hallowfall Chili
-					i(222267),	-- Hallowfall Chili
-					i(220399),	-- Hallowfall Chili
-					i(220415),	-- Angler's Delight
-					i(222283),	-- Angler's Delight
-					i(222326),	-- Hearty Angler's Delight
-					i(220428),	-- Chippy Tea
-					i(222295),	-- Chippy Tea
-					i(222338),	-- Hearty Chippy Tea
-					i(220430),	-- Blessing Blossom Tea
-					i(222743),	-- Blessing Blossom Tea
-					i(220382),	-- Chopped Mycobloom
-					i(222250),	-- Chopped Mycobloom
-					i(222690),	-- Chopped Mycobloom
-					i(220339),	-- Chopped Mycobloom
-					i(220400),	-- Coreway Kabob
-					i(222268),	-- Coreway Kabob
-					i(222311),	-- Hearty Coreway Kabob
-					i(220410),	-- Deepfin Patty
-					i(220423),	-- Late Night Snack
-					i(222291),	-- Late Night Snack
-					i(222334),	-- Hearty Late Night Snack
-					i(220427),	-- Everything Stew
-					i(220424),	-- zzOldFeast of the Divine Day
-					i(220425),	-- Feast of the Midnight Masquerade
-					i(220407),	-- Fiery Fish Sticks
-					i(222275),	-- Fiery Fish Sticks
-					i(222318),	-- Hearty Fiery Fish Sticks
-					i(220413),	-- Fish and Chips
-					i(222281),	-- Fish and Chips
-					i(222324),	-- Hearty Fish and Chips
-					i(220401),	-- Flash Fire Fillet
-					i(222269),	-- Flash Fire Fillet
-					i(222312),	-- Hearty Flash Fire Fillet
-					i(224117),	-- Ghoulfish Delight
-					i(220408),	-- Ginger Glazed Fillet
-					i(222276),	-- Ginger Glazed Fillet
-					i(222319),	-- Hearty Ginger Glazed Fillet
-					i(222742),	-- Luminous Lemonade
-					i(220426),	-- Village Potluck
-					i(222734),	-- Village Potluck
-					i(222782),	-- Hearty Village Potluck
-					i(220406),	-- Zesty Nibblers
-					i(222274),	-- Zesty Nibblers
-					i(222317),	-- Hearty Zesty Nibblers
-					i(220396),	-- Unseasoned Field Steak
-					i(222264),	-- Unseasoned Field Steak
-					i(222307),	-- Hearty Unseasoned Field Steak
-					i(220404),	-- Sweet and Sour Meatballs
-					i(222272),	-- Sweet and Sour Meatballs
-					i(222315),	-- Hearty Sweet and Sour Meatballs
-					i(220417),	-- Stuffed Cave Peppers
-					i(220435),	-- Olive Oil Ice Cream
-					i(220394),	-- Skewered Fillet
-					i(222262),	-- Skewered Fillet
-					i(222305),	-- Hearty Skewered Fillet
-					i(220418),	-- Sizzling Honey Roast
-					i(220395),	-- Meatball Hold-Me-Over
-					i(222263),	-- Meatball Hold-Me-Over
-					i(222306),	-- Hearty Meatball Hold-Me-Over
-					i(220409),	-- Salty Fish Pie
-					i(222277),	-- Salty Fish Pie (Revise)
-					i(222320),	-- Hearty Salty Fish Pie (Revise)
-					i(220414),	-- Salt Baked Seafood
-					i(222282),	-- Salt Baked Seafood
-					i(222325),	-- Hearty Salt Baked Seafood
-					i(220434),	-- Rockslide Shake
-					i(222302),	-- Rockslide Shake
-					i(222345),	-- Hearty Rockslide Shake
-					i(220397),	-- Roasted Mycobloom
-					i(222265),	-- Roasted Mycobloom
-					i(222308),	-- Hearty Roasted Mycobloom
+					-- Needs Sources
+					i(222695),	-- Twined Herbs
+					i(222696),	-- Crunchy Peppers
+					i(222697),	-- Coreway Dust
+					i(222698),	-- Surface Olive
+					i(222699),	-- Khaz Algar Tomato
+					i(222700),	-- Granulated Spices
+					i(222701),	-- Clumped Flour
+					i(223977),	-- Coagulated Yolk
+					-- Missing Recipe Item to attach to?
+					r(445481),	-- Tasty Pocket Tart
 				}),
 				prof(ENGINEERING, {
 					i(221895),	-- Prototype: Tinker: Lightning Tether \\ Prototype: Tinker: Lightning  Tether
@@ -959,12 +496,28 @@ root(ROOTS.Unsorted, {
 					i(225984),	-- Assorted Choking Hazards
 					i(225985),	-- Assorted Choking Hazards
 					i(225986),	-- Assorted Choking Hazards
+					i(221790),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
+					i(219150),	-- Pile of Rusted Scrap
+					i(221476),	-- Engineering - 1H Wrench [DNT]
+					i(221477),	-- Engineering - 2H Wrench [DNT]
+					i(224831),	-- Cube of Infinite Inventions (PTR Only)
+					i(225202),	-- Pilfer Through Parts
+					i(225241),	-- Refurbished Tinker: Alarm-O-Turret
+					i(225242),	-- Refurbished Tinker: Plane Displacer
+					i(225243),	-- Refurbished Tinker: Supercollide-O-Tron
+					i(225244),	-- Refurbished Tinker: Shadowflame Rockets
+					i(225251),	-- Disassemble Invention
+					i(224822),	-- Scour Through Scrap
+					i(224640),	-- Invent
 				}),
 				prof(HERBALISM, {
 					i(217105),	-- Refine Khaz Algar Herbs
+					i(219194),	-- Magical Mulch
+					i(219195),	-- Imbued Mulch
+					i(219196),	-- Empowered Mulch
 				}),
 				prof(INSCRIPTION, {
-
+					i(225338),	-- Glyph of Jab
 
 					i(222545),	-- Khaz Algar Milling
 					i(222108),	-- Khaz Algar Milling
@@ -989,6 +542,10 @@ root(ROOTS.Unsorted, {
 					i(217982),	-- Versatile Cypher
 				}),
 				prof(JEWELCRAFTING, {
+					i(223081),	-- Design: Sifted Cave Sand \\ Design: Inscription Finishing Reagent (DNT)
+					i(225431),	-- Design: Vicious Jeweler's Setting
+					i(225432),	-- Design: Algari Competitor's Signet
+					i(225433),	-- Design: Algari Competitor's Amulet
 					i(212495),	-- Radiant Ruby
 					i(212498),	-- Ambivalent Amber
 					i(212505),	-- Extravagant Emerald
@@ -1428,20 +985,20 @@ root(ROOTS.Unsorted, {
 				i(224167),	-- Gundargaz Tabard \\ Dark Earthen Tabard \\ [PH] Earthen Tabard
 				i(224168),	-- Stonebound Tabard \\ Silver Earthen Tabard \\ [PH] Earthen Tabard
 				i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
-				i(224717),	-- Ensemble: Cerulean Dredger \\ [PH] Ensemble: Cerulean Dredger
-				i(224727),	-- Dasher's Trophy Fish
+
+
 				i(225752),	-- Dornogal Defender
 				i(225753),	-- Dornogal Guard's Splitter
 				i(225754),	-- Dornogal Guard's Hammer
 				i(225755),	-- Coreway Sledgehammer
 				i(225756),	-- Coreway Shovel
 				i(225757),	-- Coreway Pickaxe
-				i(225758),	-- Hallowfall Harvester's Pitchfork
+
 				i(225759),	-- Coreway Engineer's Forceps
 				i(225760),	-- Dornogal Spear
 				i(225761),	-- Jeweler's Careful Crusher
 				i(225762),	-- Coreway Engineer's Screwdriver
-				i(225763),	-- Fallen Dalaran Defender
+
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 				i(225885),	-- Garlic Knots
 				i(225945),	-- Airship Captain's Cloak
@@ -2225,10 +1782,10 @@ root(ROOTS.Unsorted, {
 				i(220301),	-- Crystallized Honey
 				i(220303),	-- Decayed Flesh
 
-				i(220306),	-- Fresh Fillet
+
 
 				i(220340),	-- Meatball Cluster
-				i(220341),	-- Portioned Steak
+
 				i(220342),	-- Spiced Stock
 				i(220377),	-- Growing Void Mass
 				i(220438),	-- Root-Staff Splinter
@@ -2264,14 +1821,7 @@ root(ROOTS.Unsorted, {
 				i(218122),	-- Stolen Relic \\ Stolen Shard
 				i(218340),	-- Chest of Playtest Equipment
 				i(218354),	-- Clammer's Pry Bar
-				i(219139),	-- Set Keystone Map: Priory of the Sacred Flame
-				i(219140),	-- Set Keystone Map: The Rookery
-				i(219141),	-- Set Keystone Map: City of Threads
-				i(219142),	-- Set Keystone Map: Ara-Kara, City of Echoes
-				i(219143),	-- Set Keystone Map: Darkflame Cleft
-				i(219144),	-- Set Keystone Map: The Dawnbreaker
-				i(219145),	-- Set Keystone Map: Cinderbrew Meadery
-				i(219146),	-- Set Keystone Map: Stonevault
+
 				i(219255),	-- Puntable Rotten Little Helper
 				i(219286),	-- Puntable Globe Yeti
 				i(219289),	-- Puntable Tiny Snowman
@@ -2283,18 +1833,7 @@ root(ROOTS.Unsorted, {
 				i(223897),	-- Ruptured Engine \\ Ruptered Engine
 				i(223898),	-- Loose Bolts
 				i(223900),	-- Bottled Darkness
-				i(224027),	-- Bottomless Bag of Khaz Algar Herbs
-				i(224028),	-- Bottomless Bag of Khaz Algar Ore
-				i(224029),	-- Bottomless Bag of Khaz Algar Skins
-				i(224030),	-- Bottomless Bag of Khaz Algar Alchemy Goods
-				i(224031),	-- Bottomless Bag of Khaz Algar Blacksmithing Goods
-				i(224032),	-- Bottomless Bag of Khaz Algar Enchanting Goods
-				i(224033),	-- Bottomless Bag of Khaz Algar Engineering Goods
-				i(224034),	-- Bottomless Bag of Khaz Algar Inscription Goods
-				i(224035),	-- Bottomless Bag of Khaz Algar Jewelcrafting Goods
-				i(224037),	-- Bottomless Bag of Khaz Algar Leatherworking Goods
-				i(224039),	-- Bottomless Bag of Khaz Algar Tailoring Goods
-				i(224040),	-- Bottomless Bag of Khaz Algar Optional Goods
+
 				i(224041),	-- Holy Brigade
 				i(224042),	-- Voracious Residue
 				i(224043),	-- Famished Residue
@@ -2304,21 +1843,7 @@ root(ROOTS.Unsorted, {
 				i(224047),	-- Water Blast
 				i(224048),	-- Electric Shock
 				i(224049),	-- Web Pull
-				i(224057),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Alchemy
-				i(224058),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Blacksmithing
-				i(224059),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Enchanting
-				i(224060),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Engineering
-				i(224061),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Herbalism
-				i(224062),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Inscription
-				i(224063),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Jewelcrafting
-				i(224064),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Leatherworking
-				i(224065),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Mining
-				i(224066),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Skinning
-				i(224067),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Tailoring
-				i(224068),	-- Professor Instructaur's Brain Pertaining to Khaz Algar
-				i(224100),	-- Bottomless Bag of Khaz Algar General Goods
 
-				i(224156),	-- Bottomless Bag of Khaz Algar General Goods
 				i(224183),	-- Bleak Chum
 				i(224266),	-- Ivory Tinderbox
 				i(224267),	-- Dented Spearhead
@@ -2367,12 +1892,7 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(225564),	-- Meaty Muscle
-				i(225565),	-- Massive Worm Flank
-				i(225566),	-- Warped Wing
-				i(225567),	-- Bug Brisket
-				i(225568),	-- Slum Shark Scrap
-				i(225569),	-- Clipped Bird Wing
+
 				i(225570),	-- Algari Fowlfeather
 				i(225555),	-- Periapt of Pure Flame
 				i(225640),	-- Abyssal Lure
@@ -3791,6 +3311,15 @@ root(ROOTS.Unsorted, {
 			i(218999),	-- Leafy Educator's Wraps
 			i(219000),	-- Lilac Educator's Wraps
 			i(219001),	-- Cardinal Educator's Wraps
+			i(223202),	-- Deep Diver's Belt
+			i(223199),	-- Deep Diver's Bonnet
+			i(223205),	-- Deep Diver's Boots
+			i(223201),	-- Deep Diver's Corselet
+			i(223206),	-- Deep Diver's Gloves
+			i(223204),	-- Deep Diver's Greaves
+			i(223200),	-- Deep Diver's Pauldrons
+			i(223255),	-- Deep Diver's Tank
+			i(223258),	-- Deep Diver's Wrist Seal
 		})),
 	}),
 	expansion(EXPANSION.DF, {
