@@ -125,7 +125,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 						honor(1, i(218404)),	-- Forged Aspirant's Leather Mask
 						honor(1, i(218377)),	-- Forged Aspirant's Leather Spaulders
 						honor(1, i(218393)),	-- Forged Aspirant's Leather Tunic
-						honor(1, i(218360)),	-- Forged Aspirant's Leather Vest
+						honor(1, i(218361)),	-- Forged Aspirant's Leather Vest
 						honor(1, i(218388)),	-- Forged Aspirant's Leather Wristwraps
 					}),
 					filter(MAIL, {
@@ -193,11 +193,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			})
 		})),
 		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {
-			--[[
-			n(0, {	--
-				["coord"] = { },
+			n(219222, {	-- Lalandi <Conquest Quartermaster>
+				["coord"] = { 55.1, 76.2, DORNOGAL },
 				["g"] = {
-				--]]
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(1, i(218650)),	-- Forged Gladiator's Chestguard
@@ -263,25 +261,25 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 							conquest(1, i(218535)),	-- Forged Gladiator's Shawl
 						}),
 						cl(EVOKER, {
-							conquest(1, i(218593)),	-- Forged Gladiator's Armored Scales
-							conquest(1, i(218605)),	-- Forged Gladiator's Chain Belt
-							conquest(1, i(218596)),	-- Forged Gladiator's Chain Boots
-							conquest(1, i(218608)),	-- Forged Gladiator's Chain Bracers
-							conquest(1, i(218602)),	-- Forged Gladiator's Chain Breeches
-							conquest(1, i(218600)),	-- Forged Gladiator's Chain Faceguard
-							conquest(1, i(218597)),	-- Forged Gladiator's Chain Gauntlets
-							conquest(1, i(218606)),	-- Forged Gladiator's Chain Girdle
-							conquest(1, i(218598)),	-- Forged Gladiator's Chain Handguards
-							conquest(1, i(218599)),	-- Forged Gladiator's Chain Helm
-							conquest(1, i(218601)),	-- Forged Gladiator's Chain Leggings
-							conquest(1, i(218603)),	-- Forged Gladiator's Chain Monnion
-							conquest(1, i(218595)),	-- Forged Gladiator's Chain Sabatons
-							conquest(1, i(218604)),	-- Forged Gladiator's Chain Shoulderguard
-							conquest(1, i(218607)),	-- Forged Gladiator's Chain Wristguards
-							conquest(1, i(218609)),	-- Forged Gladiator's Cloak
-							conquest(1, i(218610)),	-- Forged Gladiator's Drape
-							conquest(1, i(218594)),	-- Forged Gladiator's Scaleguard
-							conquest(1, i(218611)),	-- Forged Gladiator's Shawl
+							conquest(875, i(218593)),	-- Forged Gladiator's Armored Scales
+							conquest(700, i(218605)),	-- Forged Gladiator's Chain Belt
+							conquest(700, i(218596)),	-- Forged Gladiator's Chain Boots
+							conquest(525, i(218608)),	-- Forged Gladiator's Chain Bracers
+							conquest(875, i(218602)),	-- Forged Gladiator's Chain Breeches
+							conquest(875, i(218600)),	-- Forged Gladiator's Chain Faceguard
+							conquest(700, i(218597)),	-- Forged Gladiator's Chain Gauntlets
+							conquest(700, i(218606)),	-- Forged Gladiator's Chain Girdle
+							conquest(700, i(218598)),	-- Forged Gladiator's Chain Handguards
+							conquest(875, i(218599)),	-- Forged Gladiator's Chain Helm
+							conquest(875, i(218601)),	-- Forged Gladiator's Chain Leggings
+							conquest(700, i(218603)),	-- Forged Gladiator's Chain Monnion
+							conquest(700, i(218595)),	-- Forged Gladiator's Chain Sabatons
+							conquest(700, i(218604)),	-- Forged Gladiator's Chain Shoulderguard
+							conquest(525, i(218607)),	-- Forged Gladiator's Chain Wristguards
+							conquest(525, i(218609)),	-- Forged Gladiator's Cloak
+							conquest(525, i(218610)),	-- Forged Gladiator's Drape
+							conquest(875, i(218594)),	-- Forged Gladiator's Scaleguard
+							conquest(525, i(218611)),	-- Forged Gladiator's Shawl
 						}),
 						cl(HUNTER, {
 							conquest(1, i(218624)),	-- Forged Gladiator's Chain Belt
@@ -473,10 +471,45 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 							conquest(1, i(218706)),	-- Forged Gladiator's Shawl
 						}),
 					}),
-					--[[
+					filter(NECK_F, {
+						conquest(525, i(218712)),	-- Forged Gladiator's Amulet
+						conquest(525, i(218710)),	-- Forged Gladiator's Necklace
+						conquest(525, i(218711)),	-- Forged Gladiator's Pendant
+					}),
+					filter(REAGENTS, {
+						conquest(175, i(210233)),	-- Forged Gladiator's Heraldry
+					}),
+					filter(TRINKET_F, {
+						conquest(700, i(218713)),	-- Forged Gladiator's Badge of Ferocity
+						conquest(700, i(218715)),	-- Forged Gladiator's Emblem
+						conquest(700, i(218714)),	-- Forged Gladiator's Insignia of Alacrity
+						conquest(525, i(218716)),	-- Forged Gladiator's Medallion
+						conquest(525, i(218717)),	-- Forged Gladiator's Sigil of Adaptation
+					}),
+					n(WEAPONS, {
+						conquest(875, i(218727)),	-- Forged Gladiator's Axe
+						conquest(1750, i(218737)),	-- Forged Gladiator's Battlestaff
+						conquest(1750, i(218723)),	-- Forged Gladiator's Bow
+						conquest(525, i(218732)),	-- Forged Gladiator's Bulwark
+						conquest(875, i(218729)),	-- Forged Gladiator's Claws
+						conquest(1750, i(218730)),	-- Forged Gladiator's Crossbow
+						conquest(875, i(218719)),	-- Forged Gladiator's Dagger
+						conquest(525, i(218725)),	-- Forged Gladiator's Focus
+						conquest(1750, i(218733)),	-- Forged Gladiator's Greataxe
+						conquest(1750, i(218731)),	-- Forged Gladiator's Greatstaff
+						conquest(1225, i(218728)),	-- Forged Gladiator's Pincer
+						conquest(1750, i(218734)),	-- Forged Gladiator's Pulverizer
+						conquest(1225, i(218724)),	-- Forged Gladiator's Scepter
+						conquest(525, i(218726)),	-- Forged Gladiator's Shield
+						conquest(900, i(218736)),	-- Forged Gladiator's Skewer
+						conquest(1750, i(218721)),	-- Forged Gladiator's Spear
+						conquest(875, i(218718)),	-- Forged Gladiator's Splitter
+						conquest(1750, i(218722)),	-- Forged Gladiator's Staff
+						conquest(900, i(218735)),	-- Forged Gladiator's Sword
+						conquest(875, i(218720)),	-- Forged Gladiator's Warglaive
+					}),
 				},
 			}),
-			--]]
 		})),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 }, ["bonusID"] = 7532 }, {
 			n(CLASSES, {
