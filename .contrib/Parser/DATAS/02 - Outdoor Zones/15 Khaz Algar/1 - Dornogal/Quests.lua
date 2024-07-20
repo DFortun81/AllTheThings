@@ -226,6 +226,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["provider"] = { "n", 226287 },	-- Ellerdin
 				["coord"] = { 51.8, 48.7, DORNOGAL },
 				["g"] = {
+					i(225652),	-- Enchant Ring - Glimmering Haste
 					i(226245),	-- Hollow Ring
 				},
 			}),

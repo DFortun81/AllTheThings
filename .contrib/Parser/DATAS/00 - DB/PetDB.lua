@@ -4182,6 +4182,23 @@ n(222615, 4516);	-- Vibrant Glowfly
 n(222421, 4483);	-- Vile Bloodtick
 n(222354, 4481);	-- Voidling Ooze
 n(222608, 4510);	-- Winged Arachnoid
+--- TRAINER ---
+i(0, 4561);			-- Awakened Custodian
+i(0, 4554);			-- Bubs
+i(0, 4559);			-- Flicker
+i(0, 4558);			-- Four-Legs
+i(0, 4562);			-- Guttergunk
+i(0, 4488);			-- Haywire Servobot
+i(0, 4552);			-- Mini Airship
+i(0, 4551);			-- Ridge
+i(0, 4564);			-- Rufus
+i(0, 4555);			-- Sir Pounce
+i(0, 4550);			-- Stratus
+i(0, 4557);			-- Swoopgrasp
+i(0, 4553);			-- Takey-Take
+i(0, 4556);			-- Tickler
+i(0, 4549);			-- Tiny Cragling
+i(0, 4560);			-- Zaedu
 
 ------------------
 -- PATCH 11.0.0 --

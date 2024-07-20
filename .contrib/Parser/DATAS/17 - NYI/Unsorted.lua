@@ -3833,6 +3833,44 @@ root(ROOTS.Unsorted, {
 			i(228495),	-- Well-Used Potter's Wheel
 			i(228496),	-- Cracked Lantern
 			i(228497),	-- Rusted Airship Cog
+			-- Fall out.... Resort
+			i(216664),	-- Threadling Lure \\ Threading Lure
+			i(219013),	-- Superb Beast Fang
+			i(219016),	-- Coated Steel Tips
+			i(219017),	-- Silver Armor Clasps
+			i(221883),	-- Prototype: Stasis Mine
+			i(221884),	-- Stasis Mine
+			i(221885),	-- Stasis Mine
+			i(221886),	-- Stasis Mine
+			i(221887),	-- Prototype: Gravity Mine
+			i(221888),	-- Gravity Mine
+			i(221889),	-- Gravity Mine
+			i(221890),	-- Gravity Mine
+			i(221891),	-- Prototype: Explosive Mine
+			i(221892),	-- Explosive Mine
+			i(221893),	-- Explosive Mine
+			i(221894),	-- Explosive Mine
+			i(221929),	-- Overclocked Circuit Board
+			i(221930),	-- Overclocked Circuit Board
+			i(221931),	-- Overclocked Circuit Board
+			i(221944),	-- Prototype: Irresistible Red Button
+			i(221946),	-- Irresistible Red Button
+			i(221947),	-- Irresistible Red Button
+			i(221950),	-- Pausing Pylon
+			i(221951),	-- Pausing Pylon
+			i(221953),	-- Convincingly Realistic Jumper Cables
+			i(221954),	-- Convincingly Realistic Jumper Cables
+			i(221955),	-- Convincingly Realistic Jumper Cables
+			i(223032),	-- Technique: Lexicon of Mysteries
+			i(223033),	-- Technique: Patient Alchemist's Mixing Rod
+			i(223034),	-- Technique: Inscribed Rolling Pin
+			i(223056),	-- Plans: Webbed Fishing Line
+			i(223948),	-- Stubborn Wolf's Greathelm
+			i(223979),	-- Whispering Squirmworm
+			i(224240),	-- Nerubian Tombstone
+			i(225256),	-- PH_2
+
+
 			------------------- THESE ARE ALREADY SORTED (IN ENSEMBLES) -----------------
 			i(218741),	-- Mossy Cartographer's Doublet
 			i(218742),	-- Deep Cartographer's Doublet
