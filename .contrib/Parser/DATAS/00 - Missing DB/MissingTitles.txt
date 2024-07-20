@@ -9,3 +9,8 @@ title(564),	-- Machine Whisperer %s
 title(565),	-- Honorary Councilmember %s
 title(566),	-- Lamplighter %s
 title(567),	-- Thread-Spinner %s
+11.0.2.55665
+title(572),	-- Silksinger %s
+title(573),	-- Anub'%s
+title(574),	-- %s, Hand of the Vizier
+title(575),	-- %s the Bountiful

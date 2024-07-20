@@ -94,14 +94,8 @@ r(445104),	-- Sizzling Honey Roast
 r(445105),	-- Mycobloom Risotto
 r(445106),	-- Stuffed Cave Peppers
 r(445107),	-- Angler's Delight
-r(445108),	-- Beledar's Bounty \\ Emperor's Bounty
-r(445109),	-- Empress' Farewell
 r(445110),	-- Jester's Board
-r(445111),	-- Outsider's Provisions
-r(445112),	-- Feast of the Divine Day
-r(445113),	-- Feast of the Midnight Masquerade
 r(445114),	-- Village Potluck
-r(445115),	-- Everything Stew
 r(445116),	-- Chippy Tea
 r(445117),	-- Chopped Mycobloom
 r(445118),	-- Portioned Steak
@@ -110,21 +104,7 @@ r(445120),	-- Hearty Food \\ Hearty Meals
 r(445127),	-- Fresh Fillet
 r(445477),	-- Luminous Lemonade
 r(445478),	-- Blessing Blossom Tea
-r(445479),	-- Cinder Nectar \\ Warm Honey Water
-r(445480),	-- Pep-In-Your-Step
 r(445481),	-- Tasty Pocket Tart \\ Eclipse Eclair
 r(445482),	-- Rockslide Shake
-r(445483),	-- Sticky Sweet Treat \\ Olive Oil Ice Cream
-r(445484),	-- Melted Candlebar \\ A Sweet Treat
-11.0.0.54675
-r(447869),	-- Fine Egg Powder
-r(447870),	-- Everything-On-A-Stick
-r(447871),	-- Protein Slurp
-r(447872),	-- Spongey Scramble
-r(447873),	-- Secret Sauce
-r(447874),	-- Little Buddy Biscuits
-r(447875),	-- Azj-Kahet Special
-r(447876),	-- Ghoulfish Delight
-r(455424),	-- Exquisitely Eviscerated Muscle
 11.0.2.55399
 r(462857),	-- Hearty Feast

@@ -18,3 +18,5 @@ fp(2971),	-- The Pulsing Pit (One-way)
 fp(2972),	-- Jeff the Flightmaster
 11.0.0.55288
 fp(2984),	-- The Ascending Reach
+11.0.2.55665
+fp(2987),	-- The Congealing Pool (One-way)

@@ -119,6 +119,8 @@ r(461727),	-- Leather-Reinforced Runecloth Bag
 r(461747),	-- Incandescent Mooncloth Vest
 r(461750),	-- Incandescent Mooncloth Circlet
 r(461752),	-- Incandescent Mooncloth Leggings
+1.15.3.55646
+r(463972),	-- Bottomless Bag
 2.0.0.6080
 r(26745),	-- Bolt of Netherweave
 r(26746),	-- Netherweave Bag
@@ -761,6 +763,8 @@ r(461727),	-- Leather-Reinforced Runecloth Bag
 r(461747),	-- Incandescent Mooncloth Vest
 r(461750),	-- Incandescent Mooncloth Circlet
 r(461752),	-- Incandescent Mooncloth Leggings
+1.15.3.55646
+r(463972),	-- Bottomless Bag
 3.0.1.8874
 r(56016),	-- Wispcloak
 r(56017),	-- Deathchill Cloak

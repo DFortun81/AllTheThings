@@ -72,7 +72,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 			i(224617),	-- Earthforged Haubergeon
 			i(224623),	-- Earthforged Cuffs
 			i(224620),	-- Earthforged Faulds
-			i(224622),	-- Stalward Girdle (TODO: re-check name in future build, probably mistypo)
+			i(224622),	-- Stalwart Girdle (TODO: re-check name in future build, probably mistypo)
 			i(224616),	-- Earthforged Greathelm
 			i(224619),	-- Earthforged Handguards
 			i(224618),	-- Earthforged Sabatons

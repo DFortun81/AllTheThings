@@ -4290,7 +4290,7 @@ i(210967),	-- Confidential Message
 i(210968),	-- Reliquary Key
 i(210979),	-- Rune of Shadowstep \\ Rune of Blade Rush
 i(210980),	-- Rune of Metamorphosis
-i(211205),	-- Rune of Heart of the Lion \\ Rune of Aspect of the Lion
+i(211205),	-- Rune of Cobra Slayer \\ Rune of Heart of the Lion \\ Rune of Aspect of the Lion
 i(211247),	-- Pattern: Phoenix Bindings
 i(211315),	-- Waylaid Supplies: Light Leather
 i(211316),	-- Waylaid Supplies: Peacebloom
@@ -7416,6 +7416,10 @@ i(228927),	-- Tempered Dark Iron Boots
 i(228928),	-- Tempered Dark Iron Boots
 i(228929),	-- Tempered Dark Iron Boots
 i(228955),	-- Ancient Cornerstone Grimoire
+1.15.3.55646
+i(228992),	-- Onyxia Hide Backpack
+i(228993),	-- Pattern: Bottomless Bag
+i(228994),	-- Bottomless Bag
 2.5.1.38043
 i(20473),	-- The Arcanist's Compendium, Volume 4
 i(20762),	-- DEPRECATED: Crystallized Essence
@@ -13847,7 +13851,6 @@ i(50253),	-- oro Lasher Seed \\ Un'Goro Lasher Seed
 i(50258),	-- lossom Blossom \\ Tarblossom Blossom
 i(50261),	-- Biggest Egg Ever \\ The Biggest Egg Ever
 i(50288),	-- d Elf's Belongings \\ Blood Elf's Belongings
-i(50371),	-- thid Leg \\ Silithid Leg
 i(50374),	-- lievably Sticky Tar \\ Unbelievably Sticky Tar
 i(50381),	-- k Parts \\ Shark Parts
 i(50382),	-- Mechashark X-Steam
@@ -13856,9 +13859,7 @@ i(50405),	-- il-Finder 3000 \\ Fossil-Finder 3000
 i(50407),	-- mous Dinosaur Talon \\ Enormous Dinosaur Talon
 i(50408),	-- k's Shovel \\ Spark's Shovel
 i(50409),	-- Spark's Fossil Finding Kit
-i(50410),	-- in's Archaeological Findings \\ Durrin's Archaeological Findings
 i(50420),	-- Secret Goblin Raptor
-i(50430),	-- ps of Rotting Meat \\ Scraps of Rotting Meat
 i(50437),	-- ct Naga Hide \\ Intact Naga Hide
 i(50438),	-- ged Naga Hide \\ Damaged Naga Hide
 i(50441),	-- 's Net \\ Garl's Net
@@ -13897,13 +13898,9 @@ i(52051),	-- l-Worn Scroll \\ Trail-Worn Scroll
 i(52059),	-- oc Leash \\ Murloc Leash
 i(52061),	-- ent Hieroglyphs \\ Ancient Hieroglyphs
 i(52065),	-- itorial Fetish \\ Territorial Fetish
-i(52066),	-- en's Thorn \\ Xavren's Thorn
-i(52067),	-- owpetal \\ Marrowpetal
-i(52068),	-- y Sea Cucumber \\ Briny Sea Cucumber
 i(52070),	-- Strange Gem
 i(52073),	-- blestaff \\ Bramblestaff
 i(52074),	-- Sand \\ Wet Sand
-i(52077),	-- nt Scarlet Memorandum \\ Urgent Scarlet Memorandum
 i(52078),	-- s Orb \\ Chaos Orb
 i(52080),	-- h Crawler Meat \\ Fresh Crawler Meat
 i(52081),	-- Carnelian \\ Bold Carnelian
@@ -14071,7 +14068,6 @@ i(52266),	-- th Chimera's Eye \\ Smooth Chimera's Eye
 i(52267),	-- ic Chimera's Eye \\ Mystic Chimera's Eye
 i(52268),	-- k Chimera's Eye \\ Quick Chimera's Eye
 i(52269),	-- tured Chimera's Eye \\ Fractured Chimera's Eye
-i(52270),	-- ued Bruin Hide \\ Plagued Bruin Hide
 i(52277),	-- ajo Intelligence \\ Taurajo Intelligence
 i(52279),	-- -Crusted Journal \\ Salt-Crusted Journal
 i(52280),	-- hel of Grenades \\ Satchel of Grenades
@@ -14176,7 +14172,6 @@ i(52702),	-- Cataclysm Shield
 i(52703),	-- Cataclysm Shoulders
 i(52704),	-- Cataclysm Belt
 i(52705),	-- Cataclysm Bracers
-i(52710),	-- anted Conch \\ Enchanted Conch
 i(52711),	-- Cataclysm Gloves (NO LEVEL REQ)
 i(52712),	-- te Control Fireworks \\ Remote Control Fireworks
 i(52714),	-- ven Slug \\ Dwarven Slug
@@ -14263,7 +14258,6 @@ i(53050),	-- y Embersilk Bandage \\ Heavy Embersilk Bandage
 i(53051),	-- e Embersilk Bandage \\ Dense Embersilk Bandage
 i(53052),	-- ino's Modified Earthbind Totem \\ Sambino's Modified Earthbind Totem
 i(53053),	-- ered Treasure Map \\ Tattered Treasure Map
-i(53054),	-- e Chest Key \\ Horde Chest Key
 i(53059),	-- Scrap Metal \\ Rent Scrap Metal
 i(53060),	-- htened Animal \\ Frightened Animal
 i(53061),	-- of Crabs \\ Crate of Crab Meat \\ Case of Crabs
@@ -14423,7 +14417,6 @@ i(54338),	-- Art Template Cloth Belt - Robe_Common_A_03 - Green
 i(54339),	-- Art Template Cloth Boots - Robe_Common_A_03 - Green
 i(54340),	-- Art Template Cloth Wrist - Robe_Common_A_03 - Green
 i(54341),	-- Art Template Cloak - Cloth_Old_Set_02 - Green
-i(54344),	-- oded Key \\ Corroded Key
 i(54345),	-- pled Treasure Map \\ Crumpled Treasure Map
 i(54428),	-- Copy Art Template Cloth Robe  - Cloth_Old_Set_01 - Red
 i(54429),	-- Copy Art Template Cloth Tunic  - Cloth_Old_Set_01 - Red
@@ -14537,7 +14530,6 @@ i(54776),	-- Art Template Mail Shoulder - Mail_Common_A_03 - Black
 i(54777),	-- Polished Scale Vest
 i(54779),	-- Scalemail Bracers
 i(54782),	-- Scalemail Pants
-i(54785),	-- es of Tumultuous Water \\ Globes of Tumultuous Water
 i(54788),	-- ight Pick \\ Twilight Pick
 i(54790),	-- Art Template Plate Boot  - Plate_Common_C_01 - Rust
 i(54791),	-- Art Template Plate Chest  - Plate_Common_C_01 - Rust
@@ -14563,12 +14555,7 @@ i(54836),	-- y Tail Hair \\ Silky Tail Hair
 i(54837),	-- Hoof \\ Hard Hoof
 i(54840),	-- one Chemical Extraction Device \\ Anemone Chemical Extraction Device
 i(54841),	-- Stomwind Seal Spear
-i(54842),	-- mwind Helm \\ Stormwind Helm
-i(54843),	-- mwind Breastplate \\ Stormwind Breastplate
-i(54844),	-- mwind Shield \\ Stormwind Shield
-i(54845),	-- ulent Crab Meat \\ Succulent Crab Meat
 i(54846),	-- ain Taylor's Flare Gun \\ Captain Taylor's Flare Gun
-i(54851),	-- one Chemical Application Device \\ Anemone Chemical Application Device
 i(54859),	-- SUBCLASS ID TEST
 i(54861),	-- merdeep Clam \\ Glimmerdeep Clam
 i(54883),	-- erious Device \\ Mysterious Device
@@ -14593,7 +14580,6 @@ i(54905),	-- of Flame \\ Tome of Flame
 i(54906),	-- Burning Litanies \\ The Burning Litanies
 i(54907),	-- ndant's Codex \\ Ascendant's Codex
 i(54957),	-- mwind S.E.A.L. Equipment \\ Stormwind S.E.A.L. Equipment
-i(54958),	-- mwind Spear \\ Stormwind Spear
 i(54959),	-- Elemental Fire Shard
 i(54960),	-- Elemental Earth Shard
 i(54961),	-- Elemental Water Shard
@@ -14604,8 +14590,6 @@ i(55050),	-- of Lo'Gosh \\ Fang of Lo'Gosh
 i(55121),	-- r Boat \\ River Boat
 i(55137),	-- Disguise \\ Ogre Disguise
 i(55138),	-- en Treasure Chest \\ Sunken Treasure Chest
-i(55139),	-- co's Stray Parts \\ Fiasco's Stray Parts
-i(55140),	-- jaw Grouper Meat \\ Snapjaw Grouper Meat
 i(55141),	-- alung \\ Spiralung
 i(55145),	-- er Entrails \\ Pincer Entrails
 i(55147),	-- Monster - Polearm 2h Icecrown Blue (Enchanted)
@@ -14643,9 +14627,7 @@ i(55215),	-- y Grub Guts \\ Grimy Grub Guts
 i(55226),	-- ture Carcass \\ Creature Carcass
 i(55230),	-- Stick \\ Soul Stick
 i(55231),	-- d Sediment Sample \\ Flood Sediment Sample
-i(55232),	-- shadon Chunk \\ Threshadon Chunk
 i(55233),	-- ful of Fenberries \\ Handful of Fenberries
-i(55234),	-- y Level \\ Dumpy Level
 i(55240),	-- k-Proof Pick \\ Spark-Proof Pick
 i(55241),	-- ndicite Ore \\ Incendicite Ore
 i(55242),	-- gen Seismic Record \\ Thelgen Seismic Record
@@ -14695,7 +14677,6 @@ i(55983),	-- t Elemental Scintilla \\ Inert Elemental Scintilla
 i(55984),	-- t Elemental Shard \\ Inert Elemental Shard
 i(55985),	-- t Elemental Piece \\ Inert Elemental Piece
 i(55987),	-- thoof Brand \\ Splithoof Brand
-i(55988),	-- erglare's Beard \\ Glowerglare's Beard
 i(56001),	-- hing Thorns \\ Slashing Thorns
 i(56002),	-- les Pyrite Ore Chunk \\ Needles Pyrite Ore Chunk
 i(56003),	-- alee's Signal Rocket \\ Thisalee's Signal Rocket
@@ -14703,11 +14684,9 @@ i(56005),	-- chisel Report \\ Slabchisel Report
 i(56006),	-- et of "Gold" \\ Pallet of "Gold"
 i(56008),	-- Shard \\ Rift Shard
 i(56011),	-- Drilling Rig \\ Oil Drilling Rig
-i(56013),	-- y Crawler Claw \\ Meaty Crawler Claw
 i(56015),	-- TEST - holdable price
 i(56017),	-- ergarde Mine Report \\ Nethergarde Mine Report
 i(56019),	-- ordant Rune \\ Discordant Rune
-i(56020),	-- ak's Scrying Orb \\ Erunak's Scrying Orb
 i(56022),	-- Shaina's Test Item
 i(56023),	-- Shaina's Ranged Weapon Test
 i(56025),	-- ik's Package \\ Wazzik's Package
@@ -14730,11 +14709,7 @@ i(56060),	-- totem Terms of Service \\ Grimtotem Terms of Service
 i(56061),	-- ance Weapon Crates \\ Alliance Weapon Crates
 i(56081),	-- per's Key \\ Trapper's Key
 i(56082),	-- aeologist's Tools \\ Archaeologist's Tools
-i(56083),	-- ilized Bone \\ Fossilized Bone
 i(56085),	-- tgear Gizmo \\ Swiftgear Gizmo
-i(56087),	-- hy Crocolisk Hide \\ Marshy Crocolisk Hide
-i(56088),	-- forge Ingot \\ Ironforge Ingot
-i(56089),	-- orjaw's Hide \\ Horrorjaw's Hide
 i(56134),	-- sed Floodlily \\ Blessed Floodlily
 i(56146),	-- Satchel \\ Toy Satchel
 i(56149),	-- y Town-In-A-Box \\ Empty Town-In-A-Box
@@ -14747,19 +14722,16 @@ i(56160),	-- ct Tibia \\ Intact Tibia
 i(56161),	-- Grade Tail Hair \\ Bow-Grade Tail Hair
 i(56162),	-- Velvety Ear
 i(56163),	-- Old Currycomb
-i(56169),	-- thstone \\ Breathstone
 i(56176),	-- en's Arrow \\ Warden's Arrow
 i(56178),	-- n's Rope \\ Duarn's Rope
 i(56180),	-- Duarn's Net UNUSED
 i(56181),	-- ance Survival Kit \\ Alliance Survival Kit
 i(56182),	-- seeker Crab \\ Deepseeker Crab
-i(56183),	-- of Kvaldir Rope \\ Coil of Kvaldir Rope
 i(56184),	-- n's Net \\ Duarn's Net
 i(56185),	-- oined Polearm \\ Purloined Polearm
 i(56188),	-- ue Flare \\ Rescue Flare
 i(56189),	-- shy Cud \\ Squishy Cud
 i(56190),	-- p Kodo Horn \\ Sharp Kodo Horn
-i(56194),	-- erious Pearl \\ Mysterious Pearl
 i(56195),	-- tered Exoskeleton Fragment \\ Shattered Exoskeleton Fragment
 i(56196),	-- en Mandible \\ Broken Mandible
 i(56197),	-- y Maxilla \\ Hairy Maxilla
@@ -14782,9 +14754,7 @@ i(56214),	-- Art Template Plate Shoulder - Plate_Common_B_01 - Green
 i(56215),	-- Art Template Plate Wrist - Plate_Common_B_01 - Green
 i(56216),	-- Marsh Lasher Seed
 i(56217),	-- Charred Dragonscale Shoulders
-i(56227),	-- anted Conch \\ Enchanted Conch
 i(56234),	-- th Scale \\ Smooth Scale
-i(56235),	-- fin Plunder \\ Deepfin Plunder
 i(56236),	-- dy Brille \\ Cloudy Brille
 i(56237),	-- ed Scale \\ Keeled Scale
 i(56238),	-- sparent Brille \\ Transparent Brille
@@ -14792,16 +14762,9 @@ i(56239),	-- ved Fang \\ Grooved Fang
 i(56240),	-- ent Tail \\ Serpent Tail
 i(56241),	-- rred Snake Skull \\ Unmarred Snake Skull
 i(56242),	-- Swallowed Elekk
-i(56243),	-- immar Axe \\ Orgrimmar Axe
-i(56244),	-- immar Helm \\ Orgrimmar Helm
-i(56245),	-- immar Breastplate \\ Orgrimmar Breastplate
-i(56247),	-- of Crossbow Bolts \\ Box of Crossbow Bolts
 i(56248),	-- ance S.E.A.L. Equipment \\ Alliance S.E.A.L. Equipment
 i(56249),	-- rim's Flare Gun \\ Nazgrim's Flare Gun
-i(56250),	-- ance Standard \\ Alliance Standard
 i(56251),	-- e Survival Kit \\ Horde Survival Kit
-i(56254),	-- iless Head \\ Merciless Head
-i(56255),	-- e Standard \\ Horde Standard
 i(56256),	-- [DEPRECATED]Deepfin Plunder
 i(56279),	-- h of Thundering Waves \\ Conch of Thundering Waves
 i(56292),	-- acle Pendant \\ Barnacle Pendant
@@ -14831,16 +14794,13 @@ i(56474),	-- rs from Base Camp \\ Orders from Base Camp
 i(56476),	-- Savage Leather (UNUSED)
 i(56478),	-- Savage Leather (UNUSED)
 i(56560),	-- Drums of of the Wild II
-i(56568),	-- rlight Phosphora \\ Underlight Phosphora
 i(56569),	-- rlight Nibbler \\ Underlight Nibbler
 i(56570),	-- mous Eel Egg \\ Enormous Eel Egg
 i(56571),	-- mous Eel Egg \\ Enormous Eel Egg
-i(56573),	-- -Juice \\ Glow-Juice
 i(56576),	-- of Suggestion \\ Orb of Suggestion
 i(56577),	-- e of Spare Parts \\ Crate of Spare Parts
 i(56700),	-- t Circuit Band \\ Short Circuit Band
 i(56709),	-- osh's Pardon \\ Garrosh's Pardon
-i(56801),	-- ak's Confinement Totem \\ Erunak's Confinement Totem
 i(56802),	-- ong's Fish and Tips \\ Digsong's Fish and Tips
 i(56808),	-- Splosive Device \\ Eel-Splosive Device
 i(56810),	-- ding Shroom \\ Scalding Shroom
@@ -14853,7 +14813,6 @@ i(56818),	-- apin Oil \\ Terrapin Oil
 i(56819),	-- ra Oil \\ Remora Oil
 i(56820),	-- erhead Oil \\ Hammerhead Oil
 i(56821),	-- Extrusion Pump \\ Oil Extrusion Pump
-i(56822),	-- Brain of the Unfathomable \\ The Brain of the Unfathomable
 i(56823),	-- ebreaker's Report \\ Stonebreaker's Report
 i(56824),	-- apin Oil Sample \\ Terrapin Oil Sample
 i(56825),	-- ra Oil Sample \\ Remora Oil Sample
@@ -14908,7 +14867,6 @@ i(57092),	-- Art Template Plate Head  - Plate_Common_B_01 - Red
 i(57093),	-- Art Template Plate Legs  - Plate_Common_B_01 - Red
 i(57094),	-- Art Template Plate Shoulder  - Plate_Common_B_01 - Red
 i(57095),	-- Art Template Plate Wrist  - Plate_Common_B_01 - Red
-i(57096),	-- stone of Binding \\ Runestone of Binding
 i(57098),	-- Art Template Cloth Robe - Robe_Common_A_03 - Green
 i(57102),	-- ight Cage Key \\ Twilight Cage Key
 i(57110),	-- in Nurse's Gown \\ Goblin Nurse's Gown
@@ -14916,7 +14874,6 @@ i(57115),	-- Goblin Nurse Hat
 i(57116),	-- Goblin Nurse Hat 2
 i(57118),	-- ight Cage Key \\ Twilight Cage Key
 i(57121),	-- Dark Letter
-i(57131),	-- ct Crocolisk Jaw \\ Intact Crocolisk Jaw
 i(57132),	-- Iron Dispatch \\ Dark Iron Dispatch
 i(57133),	-- ewrought Schematics \\ Stonewrought Schematics
 i(57135),	-- bag \\ Sandbag
@@ -14924,7 +14881,6 @@ i(57136),	-- tter to Kasim Sharim \\ A Letter to Kasim Sharim
 i(57138),	-- eo's Mining Pick \\ Grimeo's Mining Pick
 i(57140),	-- eo's Package \\ Grimeo's Package
 i(57142),	-- mwind Cooking Award \\ Stormwind Cooking Award
-i(57172),	-- ned Runestone of Binding \\ Attuned Runestone of Binding
 i(57190),	-- icade \\ Barricade
 i(57196),	-- quary Papers \\ Reliquary Papers
 i(57225),	-- ar Pelt Boots \\ Cougar Pelt Boots
@@ -14935,7 +14891,6 @@ i(57338),	-- ter \\ Jouster
 i(57403),	-- dore's Heirloom Bracer \\ Theodore's Heirloom Bracer
 i(57404),	-- brow Chainmail Legs \\ Furlbrow Chainmail Legs
 i(57408),	-- dshard Band \\ Bloodshard Band
-i(57409),	-- ren's Shrinkage Totem \\ Valoren's Shrinkage Totem
 i(57412),	-- Boots \\ Boom Boots
 i(57441),	-- ter Uppers \\ Shutter Uppers
 i(57519),	-- ie's Special Ramlette \\ Cookie's Special Ramlette
@@ -15218,7 +15173,6 @@ i(58076),	-- Art Template Mail Wrist - Mail_Common_A_02 - Default
 i(58077),	-- Art Template Mail Hands  - Mail_Common_A_02 - Default
 i(58078),	-- Art Template Mail Feet  - Mail_Common_A_02 - Default
 i(58079),	-- Art Template Mail Waist  - Mail_Common_A_02 - Default
-i(58082),	-- glob Sample \\ Direglob Sample
 i(58095),	-- nga's Totem of Persuasion \\ Kotonga's Totem of Persuasion
 i(58119),	-- Fishing Spear (NYI)
 i(58120),	-- tering Spiderling \\ Skittering Spiderling
@@ -15237,9 +15191,6 @@ i(58208),	-- Monster - Ironforge Smasher (Light, Flaming)
 i(58209),	-- Torch \\ Tiki Torch
 i(58224),	-- ction Samophlange \\ Induction Samophlange
 i(58228),	-- er Idol \\ Spider Idol
-i(58236),	-- da's Head \\ Umboda's Head
-i(58239),	-- ra-Spawn Venom Sample \\ Shadra-Spawn Venom Sample
-i(58241),	-- et of Shadra \\ Tablet of Shadra
 i(58249),	-- or Food Pouch \\ Raptor Food Pouch
 i(58250),	-- ing Twig \\ Burning Twig
 i(58251),	-- bashi Skull \\ Gurubashi Skull
@@ -15736,7 +15687,6 @@ i(58775),	-- QA Combat Test Paladin Healer Chest 3
 i(58776),	-- QA Combat Test Agility DPS Neck 4
 i(58777),	-- QA Combat Test Healer Ring 5
 i(58778),	-- QA Combat Test Plate DPS Legs 3
-i(58779),	-- l of Shadra \\ Shell of Shadra
 i(58783),	-- Crystal Composite \\ Jade Crystal Composite
 i(58784),	-- of Shadra \\ Idol of Shadra
 i(58787),	-- tal Bass \\ Crystal Bass
@@ -15771,7 +15721,6 @@ i(58860),	-- bashi Challenge Flag \\ Gurubashi Challenge Flag
 i(58864),	-- ious Locket \\ Precious Locket
 i(58865),	-- y Ring \\ Slimy Ring
 i(58866),	-- of Rusty Keys \\ Set of Rusty Keys
-i(58867),	-- jaw Gizzard \\ Snapjaw Gizzard
 i(58881),	-- Heavy Quiver (VISUAL DND)
 i(58882),	-- y's Samples \\ Sassy's Samples
 i(58883),	-- y's Largesse \\ Sassy's Largesse
@@ -15782,7 +15731,6 @@ i(58890),	-- er's Report \\ Parker's Report
 i(58901),	-- il's Formulation \\ Zanzil's Formulation
 i(58932),	-- e of Dragonmaw Bandages \\ Crate of Dragonmaw Bandages
 i(58934),	-- trous Clam Meat \\ Monstrous Clam Meat
-i(58935),	-- hon Chow \\ Gryphon Chow
 i(58944),	-- pult Part \\ Catapult Part
 i(58945),	-- c Puddlefish \\ Toxic Puddlefish
 i(58946),	-- y Carp \\ Sandy Carp
@@ -15880,8 +15828,6 @@ i(60397),	-- tured Shell Fragment \\ Punctured Shell Fragment
 i(60398),	-- ted Basilisk Skin \\ Roasted Basilisk Skin
 i(60399),	-- d Basilisk Fang \\ Rigid Basilisk Fang
 i(60400),	-- idden Sigil \\ Forbidden Sigil
-i(60402),	-- hide Ear \\ Mosshide Ear
-i(60404),	-- man Sharpsneer's Head \\ Foreman Sharpsneer's Head
 i(60407),	-- s-Dimensional Fabricator \\ Trans-Dimensional Fabricator
 i(60483),	-- wered Crystal \\ Empowered Crystal
 i(60484),	-- Luminous Runestone
@@ -15895,14 +15841,12 @@ i(60491),	-- ly Molar \\ Pearly Molar
 i(60493),	-- red Scale \\ Scarred Scale
 i(60494),	-- h Gate Status Report \\ South Gate Status Report
 i(60495),	-- lfuss's Status Report \\ Rugelfuss's Status Report
-i(60497),	-- Rump \\ Bear Rump
 i(60498),	-- s-Dimensional Fabricator \\ Trans-Dimensional Fabricator
 i(60500),	-- man Sharpsneer's Head \\ Foreman Sharpsneer's Head
 i(60501),	-- mstone \\ Stormstone
 i(60502),	-- er Plant Disguise Kit \\ Clever Plant Disguise Kit
 i(60503),	-- nt Murloc Pheromones \\ Potent Murloc Pheromones
 i(60504),	-- ite Chunk \\ Painite Chunk
-i(60511),	-- oc Scent Gland \\ Murloc Scent Gland
 i(60574),	-- Upper World Pillar Fragment \\ The Upper World Pillar Fragment
 i(60575),	-- Middle Fragment of the World Pillar \\ The Middle Fragment of the World Pillar
 i(60576),	-- ing Fang \\ Rending Fang
@@ -15931,22 +15875,17 @@ i(60738),	-- ent Elementium Spike \\ Nascent Elementium Spike
 i(60739),	-- ight Slaver's Key \\ Twilight Slaver's Key
 i(60740),	-- Dwarven Keystone
 i(60741),	-- cious Doomweed \\ Ferocious Doomweed
-i(60742),	-- an" Beast Guts \\ "Clean" Beast Guts
 i(60743),	-- ased Beast Guts \\ Diseased Beast Guts
 i(60746),	-- No Helmet [Cap Geoset]
 i(60749),	-- Ruby Horn
 i(60751),	-- owed Note \\ Hallowed Note
 i(60752),	-- ecrated Note \\ Consecrated Note
-i(60754),	-- sy Hornet Wing \\ Glassy Hornet Wing
-i(60755),	-- fy Fox Tail \\ Fluffy Fox Tail
 i(60757),	-- ing Parts \\ Missing Parts
 i(60766),	-- ont's Report \\ Belmont's Report
 i(60767),	-- of Verlok Miracle-Grow \\ Bag of Verlok Miracle-Grow
 i(60768),	-- nkle of Verlok Miracle-Grow \\ Sprinkle of Verlok Miracle-Grow
 i(60773),	-- ped Basilisk Meat \\ Trapped Basilisk Meat
 i(60791),	-- ite Mote \\ Painite Mote
-i(60792),	-- tine Flight Feather \\ Pristine Flight Feather
-i(60793),	-- ased Organ \\ Diseased Organ
 i(60808),	-- nt Bush Chicken Cage \\ Mutant Bush Chicken Cage
 i(60809),	-- g Crate \\ Trogg Crate
 i(60810),	-- hen Ring Banner \\ Earthen Ring Banner
@@ -15965,11 +15904,9 @@ i(60855),	-- Goblin Mini Hotrod (NYI)
 i(60856),	-- Metro-Gnome Relationship Ray (NYI)
 i(60857),	-- vered Supplies \\ Recovered Supplies
 i(60859),	-- orate Disc \\ Elaborate Disc
-i(60860),	-- te Tablet Fragment \\ Ornate Tablet Fragment
 i(60862),	-- aken Insignia \\ Forsaken Insignia
 i(60865),	-- an's Staff \\ Sultan's Staff
 i(60866),	-- ered Weapons and Armor \\ Battered Weapons and Armor
-i(60867),	-- hers' Logbook \\ Smithers' Logbook
 i(60868),	-- t of the Stars \\ Shaft of the Stars
 i(60870),	-- el of Explosive Ale \\ Barrel of Explosive Ale
 i(60886),	-- let Weapon Plans \\ Scarlet Weapon Plans
@@ -16163,9 +16100,7 @@ i(61282),	-- e of Abused Parts \\ Crate of Abused Parts
 i(61290),	-- Monster - Mace, 1H Horde Covenant (Green)
 i(61291),	-- Monster - Mace, 1H Horde Covenant (Green - Med Blue Glow)
 i(61306),	-- rmill Codex \\ Ambermill Codex
-i(61307),	-- itor Core \\ Servitor Core
 i(61310),	-- ne Remnant \\ Arcane Remnant
-i(61312),	-- ran Archmage's Signet Ring \\ Dalaran Archmage's Signet Ring
 i(61314),	-- ro's Gift Box (TEST COPY) \\ Landro's Gift Box (TEST COPY)
 i(61317),	-- illion Egg \\ Vermillion Egg
 i(61319),	-- ny Stankroot \\ Thorny Stankroot
@@ -16190,10 +16125,6 @@ i(61401),	-- d Colossus Fragment \\ Rigid Colossus Fragment
 i(61437),	-- c of the Waywalker \\ Relic of the Waywalker
 i(61440),	-- c of the Waywalker \\ Relic of the Waywalker
 i(61505),	-- ially Digested Head \\ Partially Digested Head
-i(61506),	-- sey's Torso \\ Dempsey's Torso
-i(61507),	-- sey's Appendages \\ Dempsey's Appendages
-i(61508),	-- sey's Giblets \\ Dempsey's Giblets
-i(61510),	-- Legion Battle Plan \\ 7th Legion Battle Plan
 i(61511),	-- ck Signal \\ Attack Signal
 i(61634),	-- ploded Mortar Shell \\ Unexploded Mortar Shell
 i(61635),	-- QA PVP Test Caster Spirit Offhand
@@ -16501,8 +16432,6 @@ i(61954),	-- QA Combat Test Caster Relic
 i(61955),	-- QA Combat Test Healer Relic
 i(61956),	-- QA Combat Test Strength Relic
 i(61957),	-- QA Combat Test Tank Relic
-i(61970),	-- e of the Moon \\ Stone of the Moon
-i(61971),	-- e of the Sun \\ Stone of the Sun
 i(61972),	-- vale Report \\ Highvale Report
 i(61973),	-- vale Records \\ Highvale Records
 i(61974),	-- vale Notes \\ Highvale Notes
@@ -16520,7 +16449,6 @@ i(62020),	-- Itharius' Scroll
 i(62022),	-- Scroll of Hakkar
 i(62032),	-- Monster - Mace, Wildhammer Stormhammer (Lightning)
 i(62033),	-- Assassin's Pendant \\ Dark Assassin's Pendant
-i(62054),	-- of the Stars \\ Orbs of the Stars
 i(62056),	-- ed Documents \\ Forged Documents
 i(62058),	-- diated Bandages \\ Irradiated Bandages
 i(62059),	-- Gnome Pants \\ Torn Gnome Pants
@@ -16555,7 +16483,6 @@ i(62276),	-- oded Skull \\ Corroded Skull
 i(62277),	-- lting Ichor \\ Revolting Ichor
 i(62278),	-- sible Fang \\ Invisible Fang
 i(62279),	-- ker-Snack Claw \\ Snicker-Snack Claw
-i(62280),	-- Naal Delta Map \\ Vir'Naal Delta Map
 i(62281),	-- ent Elven Etching \\ Ancient Elven Etching
 i(62282),	-- ent Elven Etching \\ Ancient Elven Etching
 i(62284),	-- Wildhammer Spirit Totem
@@ -16592,7 +16519,6 @@ i(62392),	-- ntless Gladiator's Claymore (Silver) \\ Relentless Gladiator's Clay
 i(62394),	-- Portal Controller \\ Fire Portal Controller
 i(62395),	-- k Dragon Samples \\ Black Dragon Samples
 i(62398),	-- graphic Projector \\ Holographic Projector
-i(62399),	-- Access Codes \\ Core Access Codes
 i(62413),	-- d Spinneret \\ Rigid Spinneret
 i(62414),	-- y Fangs \\ Slimy Fangs
 i(62421),	-- tillating Crystals \\ Scintillating Crystals
@@ -16651,7 +16577,6 @@ i(62617),	-- Art Template Cloth Legs - Cataclysm_B_01 - Blue
 i(62618),	-- Art Template Cloth Robe - Cataclysm_B_01 - Blue
 i(62619),	-- Art Template Cloth Shoulder - Cataclysm_B_01 - Blue
 i(62620),	-- Art Template Cloth Wrist - Cataclysm_B_01 - Blue
-i(62621),	-- tenance Axe \\ Maintenance Axe
 i(62622),	-- Art Template Cloth Belt  - Cataclysm_B_01 - Purple
 i(62623),	-- Art Template Cloth Boot  - Cataclysm_B_01 - Purple
 i(62624),	-- Art Template Cloth Chest  - Cataclysm_B_01 - Purple
@@ -16688,7 +16613,6 @@ i(62693),	-- Art Template Leather Head  - Leather_Cataclysm_B_01 - Black
 i(62694),	-- Art Template Leather Legs  - Leather_Cataclysm_B_01 - Black
 i(62695),	-- Art Template Leather Shoulder  - Leather_Cataclysm_B_01 - Black
 i(62696),	-- Art Template Leather Wrist  - Leather_Cataclysm_B_01 - Black
-i(62705),	-- of the Sun \\ Lens of the Sun
 i(62706),	-- Art Template Leather Belt  - Leather_Cataclysm_B_01 - Purple
 i(62707),	-- Art Template Leather Boot  - Leather_Cataclysm_B_01 - Purple
 i(62708),	-- Art Template Leather Chest  - Leather_Cataclysm_B_01 - Purple
@@ -16744,7 +16668,6 @@ i(62771),	-- shy Chunk \\ Squishy Chunk
 i(62772),	-- of Slime \\ Drop of Slime
 i(62773),	-- Glyph of Conjuring
 i(62775),	-- ed Fleshhook \\ Barbed Fleshhook
-i(62776),	-- rt Coyote Pelt \\ Desert Coyote Pelt
 i(62777),	-- Desert Fox \\ The Desert Fox
 i(62778),	-- hened Flesh \\ Toughened Flesh
 i(62779),	-- trous Claw \\ Monstrous Claw
@@ -16764,21 +16687,16 @@ i(62793),	-- ous Spectral Essence \\ Furious Spectral Essence
 i(62794),	-- nsed Proton Accelerator Cannon \\ Licensed Proton Accelerator Cannon
 i(62795),	-- ersnap Swim Tonic \\ Silversnap Swim Tonic
 i(62796),	-- k Diamond Heart \\ Black Diamond Heart
-i(62803),	-- ky Silk Gland \\ Sticky Silk Gland
 i(62804),	-- of Twilight \\ Eye of Twilight
-i(62808),	-- ed Femur \\ Cursed Femur
 i(62810),	-- el of Southsea Rum \\ Barrel of Southsea Rum
-i(62811),	-- yard Lumber \\ Shipyard Lumber
 i(62812),	-- per Uniform 00 \\ Trooper Uniform 00
 i(62813),	-- rbished Trooper Uniform \\ Refurbished Trooper Uniform
 i(62814),	-- elmet [NO Geoset] \\ No Helmet [NO Geoset]
 i(62815),	-- per Boots \\ Trooper Boots
 i(62816),	-- houlders [NO Geoset] \\ No Shoulders [NO Geoset]
-i(62817),	-- rset Key \\ Neferset Key
 i(62818),	-- k of Cannonballs \\ Stack of Cannonballs
 i(62819),	-- bo's Honey Stick \\ Ruumbo's Honey Stick
 i(62820),	-- wood Honey Glob \\ Deadwood Honey Glob
-i(62821),	-- rset Armor \\ Neferset Armor
 i(62829),	-- etized Scrap Collector \\ Magnetized Scrap Collector
 i(62830),	-- e Engine Scrap \\ Siege Engine Scrap
 i(62899),	-- anted Imp Sack \\ Enchanted Imp Sack
@@ -16790,7 +16708,6 @@ i(62913),	-- ream Cryocannon \\ I-Scream Cryocannon
 i(62915),	-- h Gryphon Carcass \\ Fresh Gryphon Carcass
 i(62917),	-- hon Carcass Bait \\ Gryphon Carcass Bait
 i(62920),	-- eblood Potion \\ Phaseblood Potion
-i(62921),	-- y Rifle \\ Rusty Rifle
 i(62926),	-- ight Caravan Cargo Key \\ Twilight Caravan Cargo Key
 i(62927),	-- ight's Hammer Gatestone \\ Twilight's Hammer Gatestone
 i(62932),	-- y Report - Hillsbrad Foothills \\ Daily Report - Hillsbrad Foothills
@@ -16805,7 +16722,6 @@ i(63032),	-- ng Violet \\ Crying Violet
 i(63033),	-- mage Galus' Staff \\ Archmage Galus' Staff
 i(63034),	-- y Prison Journal \\ Dusty Prison Journal
 i(63036),	-- Demon Chain \\ The Demon Chain
-i(63047),	-- berg Seabass \\ Rustberg Seabass
 i(63052),	-- Monster - Staff - Ulduar Raid D04 Green
 i(63053),	-- master's Code \\ Codemaster's Code
 i(63062),	-- Art Template Plate Belt  - Plate_Cataclysm_B_01 - Silver
@@ -16825,7 +16741,6 @@ i(63076),	-- ind You!" Gloves \\ "Behind You!" Gloves
 i(63077),	-- ind You!" Boots \\ "Behind You!" Boots
 i(63078),	-- ald Shimmercap \\ Emerald Shimmercap
 i(63080),	-- Monster - Dagger, Cataclysm B01 Blue (Fiery Glow)
-i(63081),	-- c of the Sun King \\ Relic of the Sun King
 i(63083),	-- Monster - Fist, Cataclysm B02 Green (Glow)
 i(63084),	-- Monster - Staff, Feathered Black (Low Black Flame)
 i(63085),	-- speaker Charm \\ Windspeaker Charm
@@ -16854,11 +16769,9 @@ i(63149),	-- ed Shackles \\ Cursed Shackles
 i(63208),	-- sweb Spider Fangs \\ Glassweb Spider Fangs
 i(63246),	-- ami Beetle \\ Origami Beetle
 i(63247),	-- pled Parchment \\ Crumpled Parchment
-i(63248),	-- h Sailor Uniform \\ Fresh Sailor Uniform
 i(63249),	-- Battle for Hillsbrad \\ The Battle for Hillsbrad
 i(63250),	-- Battle for Hillsbrad \\ The Battle for Hillsbrad
 i(63251),	-- s Masterful Brew \\ Mei's Masterful Brew
-i(63256),	-- ened Crocolisk Hide \\ Hardened Crocolisk Hide
 i(63257),	-- Monster - Staff, Cataclysm C 02 - Purple
 i(63267),	-- Art Template Cloth Belt
 i(63268),	-- Art Template Cloth Boot
@@ -16947,7 +16860,6 @@ i(63515),	-- tree Oilcan \\ Irontree Oilcan
 i(63516),	-- tree Explosives \\ Irontree Explosives
 i(63530),	-- eshing Pineapple Punch \\ Refreshing Pineapple Punch
 i(63539),	-- Charred Glyph \\ red Glyph \\ Glyph of Living Bomb
-i(63541),	-- Scrap \\ Meat Scrap
 i(63685),	-- ent Copper Scroll \\ Ancient Copper Scroll
 i(63686),	-- erspine Attack Plans \\ Daggerspine Attack Plans
 i(63689),	-- wood Weapons \\ Deadwood Weapons
@@ -16981,7 +16893,6 @@ i(64319),	-- h Venison \\ Fresh Venison
 i(64320),	-- Rib \\ Worg Rib
 i(64341),	-- -Acting Poison \\ Fast-Acting Poison
 i(64351),	-- Monster - Staff, Cataclysm C 01 Red
-i(64352),	-- rset Insignia \\ Neferset Insignia
 i(64353),	-- y Firewater Flask \\ Empty Firewater Flask
 i(64376),	-- ir's Pick \\ Gormir's Pick
 i(64404),	-- Crystal Cluster \\ Ruby Crystal Cluster
@@ -16991,12 +16902,8 @@ i(64433),	-- Monster - Sword1H, Goblin B01 Orange (High Red Flame)
 i(64434),	-- Monster - Mace 1H, Icecrown Citadel (Fire Enchant)
 i(64435),	-- Monster - Sword, 1H Twilight's Hammer (2H Version, Fire Enchant)
 i(64439),	-- zzOLD Headdress of the First Shaman
-i(64441),	-- ry of Zin-Malor \\ Memory of Zin-Malor
 i(64446),	-- a's Basket \\ Salfa's Basket
-i(64449),	-- icious Green Sludge \\ Suspicious Green Sludge
 i(64450),	-- ings of the Dark Herald \\ Writings of the Dark Herald
-i(64463),	-- d of the Spiritspeaker \\ Shard of the Spiritspeaker
-i(64465),	-- pelt's Heart \\ Rimepelt's Heart
 i(64466),	-- Totem of Mau'ari \\ Tiny Totem of Mau'ari
 i(64490),	-- rt's Ingenious Cap of Mook Foolery \\ Hobart's Ingenious Cap of Mook Foolery
 i(64491),	-- l Reward \\ Royal Reward
@@ -17008,19 +16915,15 @@ i(64581),	-- se-Stitching Twine \\ Corpse-Stitching Twine
 i(64582),	-- k Embalming Fluid \\ Thick Embalming Fluid
 i(64584),	-- ction Samophlange \\ Induction Samophlange
 i(64585),	-- on Powder \\ Cannon Powder
-i(64586),	-- e Rubble Chunk \\ Prime Rubble Chunk
-i(64587),	-- h-Cut Frostwood \\ Fresh-Cut Frostwood
 i(64637),	-- ir's Overcharged Totem \\ Tanrir's Overcharged Totem
 i(64638),	-- der-in-a-Box \\ Boulder-in-a-Box
 i(64639),	-- ersnap Ice \\ Silversnap Ice
 i(64640),	-- ctis Puffer Sashimi \\ Infectis Puffer Sashimi
 i(64641),	-- icious" Worm Steak \\ "Delicious" Worm Steak
 i(64642),	-- het's Record Fragment \\ Atulhet's Record Fragment
-i(64649),	-- Cypher of Keset \\ The Cypher of Keset
 i(64660),	-- tlocke's Explosives \\ Flintlocke's Explosives
 i(64661),	-- r-Gro Insta-Tree \\ Super-Gro Insta-Tree
 i(64662),	-- Glacier Ice \\ Pure Glacier Ice
-i(64664),	-- homp's Pristine Horns \\ Icewhomp's Pristine Horns
 i(64665),	-- ant Ice Block \\ Instant Ice Block
 i(64666),	-- Durnholde Challenge \\ The Durnholde Challenge
 i(64667),	-- n Discs \\ Titan Discs
@@ -17159,14 +17062,12 @@ i(65899),	-- nce of the Claw-Totem \\ Essence of the Claw-Totem
 i(65900),	-- nce of the Life-Totem \\ Essence of the Life-Totem
 i(65901),	-- nce of the Moon-Totem \\ Essence of the Moon-Totem
 i(65902),	-- east Dreamcatcher \\ Owlbeast Dreamcatcher
-i(65903),	-- erwater \\ Winterwater
 i(66000),	-- of the Spire \\ Band of the Spire
 i(66010),	-- of the Fool \\ Star of the Fool
 i(66048),	-- ue of the Paragon \\ Statue of the Paragon
 i(66049),	-- of the Paragon \\ Book of the Paragon
 i(66050),	-- of the Paragon \\ Idol of the Paragon
 i(66051),	-- c of the Paragon \\ Relic of the Paragon
-i(66052),	-- -Addled Brain \\ Mana-Addled Brain
 i(66053),	-- ured Hyena \\ Captured Hyena
 i(66060),	-- wered Dreamcatcher \\ Empowered Dreamcatcher
 i(66061),	-- scale Sigil \\ Bluescale Sigil
@@ -17917,7 +17818,6 @@ i(67228),	-- ag's Slicers \\ Jadrag's Slicers
 i(67229),	-- Flank \\ Stag Flank
 i(67231),	-- scroll of Might \\ Runescroll of Might
 i(67232),	-- ah's Pygmy Pen \\ Sullah's Pygmy Pen
-i(67241),	-- ah's Camel Harness \\ Sullah's Camel Harness
 i(67247),	-- ah's Hyena Trap \\ Sullah's Hyena Trap
 i(67250),	-- hel of Helpful Goods \\ Satchel of Helpful Goods
 i(67252),	-- 'mite Flakes \\ Kaja'mite Flakes
@@ -18904,17 +18804,13 @@ i(68609),	-- -Toothed Comb \\ Fine-Toothed Comb
 i(68612),	-- ab Leg Talisman \\ Scarab Leg Talisman
 i(68626),	-- Monster - Mace, Landro
 i(68638),	-- tsaber Cub \\ Frostsaber Cub
-i(68645),	-- ed Meat \\ Smoked Meat
 i(68646),	-- erspring Cub \\ Winterspring Cub
 i(68653),	-- Kyle's Sellable Duration Test Item
 i(68660),	-- ic Cogwheel \\ Mystic Cogwheel
 i(68661),	-- ne Powered Stink Bomb Cleaner \\ Arcane Powered Stink Bomb Cleaner
-i(68662),	-- kin Feather \\ Wildkin Feather
-i(68663),	-- h Yeti Hide \\ Tough Yeti Hide
 i(68664),	-- Monster - Axe 2H, Firelands Raid D_01 (Black)
 i(68665),	-- Monster - Wand, Firelands Raid D_02 (Red)
 i(68667),	-- Monster - Mace 1H, Firelands Raid D 02 (Red)
-i(68668),	-- erspring Cat Toy \\ Winterspring Cat Toy
 i(68669),	-- y Kaja'Cola Can \\ Empty Kaja'Cola Can
 i(68672),	-- Crawler Leg \\ King Crawler Leg
 i(68674),	-- Steelback's Claw
@@ -28321,7 +28217,6 @@ i(147407),	-- Greater Adventurer's Symbol \\ ter Adventurer's Symbol
 i(147408),	-- Greater Hero's Symbol \\ ter Hero's Symbol
 i(147409),	-- Greater Champion's Symbol \\ ter Champion's Symbol
 i(147417),	-- Gladiator's Tattered Cloak \\ iator's Tattered Cloak
-i(147420),	-- Pebble \\ le
 i(147430),	-- Mysterious Runebound Scroll \\ erious Runebound Scroll
 i(147432),	-- Champion Equipment \\ pion Equipment
 i(147434),	-- Player Experience \\ er Experience
@@ -32549,58 +32444,6 @@ i(188188),	-- Worldbinder Tricorne
 i(188189),	-- Shadowwrap Leggings
 i(188190),	-- Shoulderpads of the Primordial
 11.0.0.54311
-i(211979),	-- Warsculptor's Cloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Generic - Cloak
-i(211980),	-- Warsculptor's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Wrist
-i(211981),	-- Warsculptor's Buckle \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Waist
-i(211986),	-- Warsculptor's Carved Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Warrior - Armor - Plate - Feet
-i(211988),	-- Entombed Seraph's Greatcloak \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Generic - Cloak
-i(211989),	-- Entombed Seraph's Shackles \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Wrist
-i(211990),	-- Entombed Seraph's Waistguard \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Waist
-i(211995),	-- Entombed Seraph's Sabatons \\ 11.0 Raid - Nerubian Palace - Class Sets - Paladin - Armor - Plate - Feet
-i(211997),	-- Exhumed Centurion's Drape \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Generic - Cloak
-i(211998),	-- Exhumed Centurion's Manacles \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Wrist
-i(211999),	-- Exhumed Centurion's Baltea \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Waist
-i(212004),	-- Exhumed Centurion's Sollerets \\ 11.0 Raid - Nerubian Palace - Class Sets - Death Knight - Armor - Plate - Feet
-i(212006),	-- Mist of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Generic - Cloak
-i(212007),	-- Embrace of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Wrist
-i(212008),	-- Wrappings of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Waist
-i(212013),	-- Shoes of the Forgotten Reservoir \\ 11.0 Raid - Nerubian Palace - Class Sets - Shaman - Armor - Mail - Feet
-i(212015),	-- Lightless Scavenger's Hide \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Generic - Cloak
-i(212016),	-- Lightless Scavenger's Wristguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Wrist
-i(212017),	-- Lightless Scavenger's Bonegirdle \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Waist
-i(212022),	-- Lightless Scavenger's Footpads \\ 11.0 Raid - Nerubian Palace - Class Sets - Hunter - Armor - Mail - Feet
-i(212024),	-- Cape of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Generic - Cloak
-i(212025),	-- Wristblades of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Wrist
-i(212026),	-- Core of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Waist
-i(212031),	-- Talons of the Destroyer \\ 11.0 Raid - Nerubian Palace - Class Sets - Evoker - Armor - Mail - Feet
-i(212033),	-- K'areshi Phantom's Breeze \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Generic - Cloak
-i(212034),	-- K'areshi Phantom's Cuffs \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Wrist
-i(212035),	-- K'areshi Phantom's Belt \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Waist
-i(212040),	-- K'areshi Phantom's Netherwalkers \\ K'areshi Phantom's Footwraps \\ 11.0 Raid - Nerubian Palace - Class Sets - Rogue - Armor - Leather - Feet
-i(212042),	-- Gatecrasher's Mantle \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Generic - Cloak
-i(212043),	-- Gatecrasher's Armguards \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Wrist
-i(212044),	-- Gatecrasher's Cord \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Waist
-i(212049),	-- Gatecrasher's Tabi \\ 11.0 Raid - Nerubian Palace - Class Sets - Monk - Armor - Leather - Feet
-i(212051),	-- Cloak of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Generic - Cloak
-i(212052),	-- Great Links of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Wrist
-i(212053),	-- Faulds of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Waist
-i(212058),	-- Treads of the Greatlynx \\ 11.0 Raid - Nerubian Palace - Class Sets - Druid - Armor - Leather - Feet
-i(212060),	-- Drape of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Generic - Cloak
-i(212061),	-- Armguards of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Wrist
-i(212062),	-- Waistguard of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Waist
-i(212067),	-- Talons of the Hypogeal Nemesis \\ 11.0 Raid - Nerubian Palace - Class Sets - Demon Hunter - Armor - Leather - Feet
-i(212069),	-- Hexflame Coven's Shawl \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Generic - Cloak
-i(212070),	-- Hexflame Coven's Wristlace \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Wrist
-i(212071),	-- Hexflame Coven's Dormant Eye \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth -  Waist
-i(212076),	-- Hexflame Coven's Treads \\ 11.0 Raid - Nerubian Palace - Class Sets - Warlock - Armor - Cloth - Feet
-i(212078),	-- Living Luster's Glow \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Generic - Cloak
-i(212079),	-- Living Luster's Crystbands \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Wrist
-i(212080),	-- Living Luster's Lightbelt \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth -  Waist
-i(212085),	-- Living Luster's Boots \\ 11.0 Raid - Nerubian Palace - Class Sets - Priest - Armor - Cloth - Feet
-i(212087),	-- Ward of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Generic - Cloak
-i(212088),	-- Bracelets of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Wrist
-i(212089),	-- Sigil of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth -  Waist
-i(212094),	-- Slippers of Violet Rebirth \\ 11.0 Raid - Nerubian Palace - Class Sets - Mage - Armor - Cloth - Feet
 i(212395),	-- Blood-Kissed Kukri \\ 11.0 Raid Template - Dagger - Agi - Weapon
 i(212404),	-- Scepter of Manifested Miasma \\ 11.0 Raid Template - Mace1H - Int - Weapon
 i(212414),	-- Lost Watcher's Remains \\ 11.0 Raid Template - Mail - Waist
@@ -32645,7 +32488,6 @@ i(223033),	-- Technique: Patient Alchemist's Mixing Rod
 i(223034),	-- Technique: Inscribed Rolling Pin
 i(223056),	-- Plans: Webbed Fishing Line
 i(223948),	-- Stubborn Wolf's Greathelm
-i(223970),	-- Little Buddy Biscuits
 i(223979),	-- Whispering Squirmworm
 11.0.0.54361
 i(224240),	-- Nerubian Tombstone
@@ -32654,5 +32496,3 @@ i(225256),	-- PH_2
 i(225590),	-- Boots of the Black Bulwark \\ 11.0 Raid Template - Plate - Feet
 11.0.0.54675
 i(225652),	-- Enchant Ring - Glimmering Haste
-11.0.0.54935
-i(226190),	-- Recipe: Sticky Sweet Treat

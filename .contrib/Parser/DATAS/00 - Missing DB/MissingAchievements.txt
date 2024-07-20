@@ -1,3 +1,9 @@
 3.4.3.55417
 ach(40821),	-- Successfully Stress Test CN Realms
 ach(40841),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
+11.0.2.55665
+ach(40874),	-- The Grand Tapestry
+ach(40875),	-- True Strength
+ach(40876),	-- Vox Arachni
+ach(40882),	-- Copious Coffers
+ach(40885),	-- The Key to Madness
