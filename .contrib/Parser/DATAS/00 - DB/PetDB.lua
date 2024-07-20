@@ -4089,6 +4089,8 @@ i(223145, 4548);	-- Marrlok
 i(221817, 4579);	-- Muskpaw Calf
 i(223339, 4565);	-- Trishi
 i(223474, 4566);	-- Worgli the Apprehensive
+--- UNSORTED ---
+i(223498, 4568);	-- Charismatic Courier
 --- NYI ---
 i(224576, 4595);	-- Lil' Flameo
 i(223499, 4569);	-- Lil' Manny
@@ -4204,7 +4206,5 @@ i(222967, 4475);	-- Webbers
 ------------------
 -- PATCH 11.0.2 --
 ------------------
---- UNSORTED ---
-i(223498, 4568);	-- Charismatic Courier
 i(228765, 4616);	-- Gummi
 i(228758, 4615);	-- Parrlok

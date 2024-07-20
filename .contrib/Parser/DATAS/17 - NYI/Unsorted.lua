@@ -64,7 +64,6 @@ root(ROOTS.Unsorted, {
 				i(228674),	-- Compiler's Greaves
 			}),
 			filter(BATTLE_PETS, {
-				i(223498),	-- Charismatic Courier (PET!) [In-Game Shop?]
 				i(228765),	-- Gummi (PET!) [Promotion?]
 				i(228758),	-- Parrlok (PET!) [Trading Post?]
 			}),
@@ -4086,6 +4085,9 @@ root(ROOTS.Unsorted, {
 	}),
 	expansion(EXPANSION.DF, {
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
+			filter(BATTLE_PETS, {
+				i(223498),	-- Charismatic Courier (PET!) [In-Game Shop?]
+			}),
 			n(PVP, {
 				-- This is all broken as of 10.2.7. Currently added a placeholder data to the SL PvP vendor.
 				i(223769),	-- Eternal Aspirant's Cape

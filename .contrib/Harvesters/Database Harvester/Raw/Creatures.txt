@@ -21170,6 +21170,8 @@
 223633@@@Tishamaat Celebrant
 223634@@@Tishamaat Celebrant
 223699@@@Tishamaat Celebrant
+10.2.7.55664
+223691@@@Charismatic Courier
 11.0.0.54311
 192731@@@Arcane Missile
 204271@@@Abyssal Lurker
@@ -21902,7 +21904,6 @@
 11.0.2.55522
 214297@@@Nerubian Saboteur
 222831@@@Nerubian Venomspitter
-223691@@@Charismatic Courier
 229744@@@Executor Nizrek
 229795@@@Anub'azal
 229797@@@Widow Arak'nai
