@@ -21918,3 +21918,25 @@
 230029@@@Supplier Wei
 230030@@@Supplier Wei
 230098@@@Spindle
+11.0.2.55665
+214919@@@Thrall
+214995@@@Olbarig
+215039@@@Rooktender Lufsela
+217880@@@Merrix
+217885@@@Magni Bronzebeard
+223859@@@Ruby-Eyed Stagshell
+226575@@@High Speaker Brinthe
+230155@@@Xal'atath
+230190@@@Oathsworn Earthen
+230250@@@Supplier Wei
+230251@@@Supplier Wei
+230252@@@Supplier Wei
+230253@@@Supplier Wei
+230254@@@Supplier Wei
+230255@@@Supplier Wei
+230256@@@Supplier Wei
+230257@@@Supplier Wei
+230258@@@Supplier Wei
+230259@@@Supplier Wei
+230381@@@Boost
+230388@@@Honor Guard

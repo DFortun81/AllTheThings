@@ -15292,3 +15292,9 @@
 40864@@@Plentiful Perplexing Puzzles
 40865@@@Puzzles completed
 40869@@@Worm Theory
+11.0.2.55665
+40874@@@The Grand Tapestry
+40875@@@True Strength
+40876@@@Vox Arachni
+40882@@@Copious Coffers
+40885@@@The Key to Madness

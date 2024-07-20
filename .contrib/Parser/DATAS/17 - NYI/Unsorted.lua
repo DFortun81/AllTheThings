@@ -127,6 +127,20 @@ root(ROOTS.Unsorted, {
 				i(228763),	-- Classic Crimson Tabard
 				i(228764),	-- Classic Sunny Tabard
 			}),
+			--
+			i(211872),	-- Patrol Torch
+			i(219148),	-- Patrol Torch
+			i(219802),	-- Cured Terracotta Warglaive
+			i(224622),	-- Stalwart Girdle
+			i(226367),	-- Ugly Black Boots
+			i(226368),	-- Ugly White Boots
+			i(228956),	-- Junk Bucket
+			i(228958),	-- Radiant Echo
+			i(228959),	-- Pile of Unidentified Meat
+			i(228984),	-- Unbreakable Iron Idol
+			i(229000),	-- Machine-Warden's Cog
+			i(229005),	-- Cache of Earthen Treasures
+			i(229006),	-- Cache of Earthen Treasures
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(BATTLE_PETS, {

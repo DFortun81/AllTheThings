@@ -12270,3 +12270,13 @@
 7215@@@+$k1 Primary Stat and +0.15% Critical Effect per unique Algari gem color
 7216@@@+$k1 Primary Stat and +0.15% Critical Effect per unique Algari gem color
 7587@@@Thunderstrike Ward
+11.0.2.55665
+7593@@@+$k2 Agility/Strength & +$k1 Armor |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7594@@@+$k2 Agility/Strength & +$k1 Armor |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7595@@@+$k2 Agility/Strength & +$k1 Armor |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7596@@@+$k1 Agility/Strength |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7597@@@+$k1 Agility/Strength |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7598@@@+$k1 Agility/Strength |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+7599@@@+$k2 Agility/Strength & +$k1 Stamina |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7600@@@+$k2 Agility/Strength & +$k1 Stamina |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7601@@@+$k2 Agility/Strength & +$k1 Stamina |A:Professions-ChatIcon-Quality-Tier3:20:20|a

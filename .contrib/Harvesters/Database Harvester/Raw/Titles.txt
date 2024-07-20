@@ -754,3 +754,8 @@
 568@@@%s, Machine-Warden
 11.0.0.55185
 570@@@%s, Seeker of Loot
+11.0.2.55665
+572@@@Silksinger %s
+573@@@Anub'%s
+574@@@%s, Hand of the Vizier
+575@@@%s the Bountiful
