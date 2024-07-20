@@ -34,20 +34,5 @@ pet(4508),	-- Sporbit
 pet(4509),	-- Sporbit
 pet(4513),	-- Pillarnest Bonedrinker
 pet(4528),	-- Cobalt Mosswool
-pet(4549),	-- Tiny Cragling
-pet(4550),	-- Stratus
-pet(4551),	-- Ridge
-pet(4552),	-- Mini Airship
-pet(4553),	-- Takey-Take
-pet(4554),	-- Bubs
-pet(4555),	-- Sir Pounce
-pet(4556),	-- Tickler
-pet(4557),	-- Swoopgrasp
-pet(4558),	-- Four-Legs
-pet(4559),	-- Flicker
-pet(4560),	-- Zaedu
-pet(4561),	-- Awakened Custodian
-pet(4562),	-- Guttergunk
-pet(4564),	-- Rufus
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
