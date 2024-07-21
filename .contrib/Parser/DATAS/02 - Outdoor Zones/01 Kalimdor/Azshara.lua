@@ -261,6 +261,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 70.3, 36.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Kawphi Bean
+							["providers"] = {
+								{ "i", 49162 },	-- Kawphi Bean
+								{ "o", 195686 },	-- Kawphi Plant
+							},
+						}),
+					},
 				}),
 				q(3381, {	-- A Meeting with the Master
 					["qg"] = 8399,	-- Nyrill <Xylem's Apprentice>
@@ -304,6 +312,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.1, 66.3, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/20 Mountainfoot Iron
+							["providers"] = {
+								{ "i", 48128 },	-- Mountainfoot Iron
+								{ "o", 195447 },	-- Iron Stockpile
+								{ "o", 195448 },	-- Iron Ingot
+							},
+						}),
+					},
 				}),
 				q(14201, {	-- A Thousand Stories in the Sand
 					["qg"] = 35087,	-- Malynea Skyreaver
@@ -311,6 +328,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.6, 66.8, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Recovered Artifacts
+							["providers"] = {
+								{ "i", 48525 },	-- Recovered Artifacts
+								{ "o", 195455 },	-- Ancient Debris Pile
+							},
+						}),
+					},
 				}),
 				q(14323, {	-- Absorbent
 					["qg"] = 35142,	-- Ergll
@@ -975,6 +1000,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/12 Highborne Tablet
+							["providers"] = {
+								{ "i", 49639 },	-- Highborne Tablet
+								{ "o", 199329 },	-- Highborne Tablet
+								{ "o", 199330 },	-- Highborne Tablet
+								{ "o", 199331 },	-- Highborne Tablet
+								{ "o", 199332 },	-- Highborne Tablet
+							},
+						}),
 						i(53411, {	-- Eldarath Staff
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1215,6 +1249,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.2, 21.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Abjurer's Manual
+							["providers"] = {
+								{ "i", 49012 },	-- Abjurer's Manual
+								{ "o", 195584 },	-- Stolen Manual
+							},
+						}),
+					},
 				}),
 				q(3503, {	-- Meeting with the Master
 					["qg"] = 8395,	-- Sanath Lim-yo
@@ -1269,6 +1311,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.2, 74.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Goblin Mortar Shell
+							["providers"] = {
+								{ "i", 49062 },	-- Goblin Mortar Shell
+								{ "o", 195623 },	-- Goblin Mortar Shell
+							},
+						}),
+					},
 				}),
 				q(14442, {	-- My Favorite Subject
 					["qg"] = 36146,	-- Twistex Happytongs
@@ -1284,6 +1334,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.4, 74.2, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Azsharite Sample
+							["providers"] = {
+								{ "i", 49207 },	-- Azsharite Sample
+								{ "o", 152620 },	-- Azsharite Formation
+								{ "o", 152621 },	-- Azsharite Formation
+								{ "o", 152622 },	-- Azsharite Formation
+								{ "o", 152631 },	-- Azsharite Formation
+							},
+						}),
+					},
 				}),
 				q(14216, {	-- Mystery of the Sarcen Stone
 					["sourceQuest"] = 14215,	-- Memories of the Dead
@@ -1291,6 +1352,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Sarcen Stone
+							["providers"] = {
+								{ "i", 48921 },	-- Sarcen Stone
+								{ "o", 195513 },	-- Ancient Stone Cask
+							},
+						}),
 						i(53404, {	-- Bottom-Wader Boots
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1523,6 +1590,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.2, 21.1, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Animate Basalt
+							["providers"] = {
+								{ "i", 49036 },	-- Animate Basalt
+								{ "o", 195602 },	-- Animate Besalt Chunk
+							},
+						}),
+					},
 				}),
 				q(14162, {	-- Report to Horzak
 					["qg"] = 35086,	-- Labor Captain Grabbit
@@ -1685,6 +1760,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Induction Samophlange
+							["providers"] = {
+								{ "i", 58224 },	-- Induction Samophlange
+								{ "o", 204091 },	-- Induction Samophlange
+							},
+						}),
 						i(63876, {	-- Smoot-Smacking Shoulderpads
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1752,6 +1833,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 34.3, 44.9, AZSHARA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Heart of Arkkoroc
+							["providers"] = {
+								{ "i", 49642 },	-- Heart of Arkkoroc
+								{ "o", 200298 },	-- Heart of Arkkoroc
+							},
+						}),
+					},
 				}),
 				q(14165, {	-- Stone Cold
 					["qg"] = 35091,	-- Horzak Zignibble
@@ -1942,6 +2031,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = {{ "i", 7972, 1 }},	-- Ichor of Undeath
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Keystone Shard
+							["providers"] = {
+								{ "i", 49094 },	-- Keystone Shard
+								{ "o", 201579 },	-- Keystone Shard
+							},
+						}),
+					},
 				})),
 				q(3509, {	-- The Name of the Beast (1/3)
 					["qg"] = 7783,	-- Loramus Thalipedes
@@ -2220,6 +2317,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.0, 21.0, AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Living Ire Thyme
+							["providers"] = {
+								{ "i", 49082 },	-- Living Ire Thyme
+								{ "o", 195587 },	-- Living Ire Thyme
+							},
+						}),
+					},
 				}),
 				q(14296, {	-- Watch Your Step
 					["qg"] = 36334,	-- Image of Archmage Xylem
