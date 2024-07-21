@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			prof(SKINNING, {
 				n(219083, {	-- Ginnad <Skinning Trainer>
 					["coord"] = { 54.3, 57.4, DORNOGAL },
-					--["g"] = TWW_SKINNING,
+					["g"] = TWW_SKINNING,
 				}),
 			}),
 			prof(TAILORING, {

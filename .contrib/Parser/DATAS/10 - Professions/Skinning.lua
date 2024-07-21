@@ -241,6 +241,30 @@ root(ROOTS.Professions, prof(SKINNING, {
 		},
 	}),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TWW_SKINNING_KNOWLEDGE, 1 }} }, {
+				r(442647),	-- Arathor Hammerfish Lure
+				r(442654),	-- Beast Lure Scent
+				r(442615),	-- Carve Meat
+				r(442646),	-- Dornish Pike Lure
+				r(442652),	-- Elusive Creature Lure
+				r(442649),	-- Infusion: Crystal
+				r(442650),	-- Infusion: Spores
+				r(442651),	-- Infusion: Writhing
+				r(442645),	-- Quiet River Bass Lure
+				r(440942),	-- Refine Chitin++
+				r(440943),	-- Refine Chitin+++
+				r(440929),	-- Refine Hides++
+				r(440934),	-- Refine Hides+++
+				r(440937),	-- Refine Leather++
+				r(440938),	-- Refine Leather+++
+				r(442648),	-- Roaring Anglerseeker Lure
+				r(440977),	-- Sharpen Your Knife
+				r(442644),	-- Specular Rainbowfish Lure
+				r(442655),	-- Supreme Beast Lure
+			}),
+		}),
 		n(TREASURES, {
 			o(455948, {	-- Arathi Craftsman's Spokeshave
 				["coord"] = { 42.2, 53.9, HALLOWFALL },

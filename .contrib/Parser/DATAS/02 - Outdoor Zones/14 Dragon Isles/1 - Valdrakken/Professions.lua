@@ -73,15 +73,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
 				n(193846, {	-- Ralathor the Rugged <Skinning Trainer>
 					["coord"] = { 28.6, 60.4, VALDRAKKEN },
-					["g"] = {
-						r(366259),	-- Skinning
-						r(395282),	-- Curious Hide
-						r(395706),	-- Dense Hide
-						r(392440),	-- Leather Skinning
-						r(395700),	-- Lustrous Scaled Hide
-						r(396173),	-- Saturated Bone
-						r(392445),	-- Scale Skinning
-					},
+					["g"] = DF_SKINNING,
 				}),
 			})),
 			prof(TAILORING, {
