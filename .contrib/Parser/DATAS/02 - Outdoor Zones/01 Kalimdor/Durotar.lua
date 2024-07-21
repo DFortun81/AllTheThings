@@ -2195,6 +2195,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_1, REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Disenchanted Tiki Mask
+							["providers"] = {
+								{ "i", 60732 },	-- Disenchanted Tiki Mask
+								{ "o", 205076 },	-- Disenchanted Tiki Mask
+							},
+						}),
 						i(4946, {	-- Lightweight Boots
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
@@ -2322,6 +2328,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 53.0, 43.1, DUROTAR },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Kul Tiras Treasure
+							["providers"] = {
+								{ "i", 52558 },	-- Kul Tiras Treasure
+								{ "o", 202648 },	-- Kul Tiras Treasure
+							},
+						}),
+					},
 				}),
 				q(40522, {	-- Fate of the Horde
 					["qg"] = 100453,	-- Eitrigg
@@ -3394,6 +3408,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Attack Plan: Valley of Trials burned
+							["provider"] = { "o", 3189 },	-- Attack Plan: Valley of Trials
+						}),
+						objective(2, {	-- 0/1 Attack Plan: Sen'jin Village burned
+							["provider"] = { "o", 3190 },	-- Attack Plan: Sen'jin Village
+						}),
+						objective(3, {	-- 0/1 Attack Plan: Orgrimmar burned
+							["provider"] = { "o", 3192 },	-- Attack Plan: Orgrimmar
+						}),
 						i(53391, {	-- Thwarter's Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
