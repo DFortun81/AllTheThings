@@ -1844,6 +1844,7 @@ i(220509);	-- Gossamer Web
 i(225790);	-- Half-Painted Pewter Spider
 i(220279);	-- Handful of Polished Scales
 i(220252);	-- Handful of Smooth Pebbles
+i(228400);	-- Happy Rock
 i(220246);	-- Humming Power Core
 i(220275);	-- Indigo Shard
 i(220253);	-- Inert Dust
@@ -1861,6 +1862,7 @@ i(223886);	-- Mercurial Herbs
 i(223883);	-- Mercurial Transmutation
 i(225850);	-- Moldy Rations
 i(220219);	-- Mound of Night Soil
+i(228430);	-- Mucky Rock
 i(217162);	-- Necklace of Kobold Teeth
 i(210829);	-- Neutralize Concoctions
 i(224153);	-- Nibbled Shroomcap
@@ -1885,9 +1887,11 @@ i(220242);	-- Razored Tail-Blade
 i(220297);	-- Rock-Encrusted Plates
 i(217164);	-- Royal Nailpicker
 i(225807);	-- Rune-Carved Bone
+i(228399);	-- Sad Rock
 i(220236);	-- Sanguineous Sac
 i(220266);	-- Sharpened Digging Claws
 i(220361);	-- Sharpened Steel Implement
+i(220273);	-- Shed Skin
 i(220237);	-- Shining Amethyst Cluster
 i(220231);	-- Skiatic Vessel
 i(220299);	-- Sleek Beak

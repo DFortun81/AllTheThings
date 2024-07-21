@@ -223,7 +223,6 @@ root(ROOTS.Unsorted, {
 				i(221763),	-- Viridian Charmcap
 				i(224764),	-- Mosswool Thread
 				i(211494),	-- Spark of Beginnings
-				i(225768),	-- Crusty Darkmoon Card
 
 				i(225772),	-- Artisan's Consortium Advertisement
 				i(225670),	-- Apprentice's Crafting License
@@ -975,10 +974,8 @@ root(ROOTS.Unsorted, {
 				i(225756),	-- Coreway Shovel
 				i(225757),	-- Coreway Pickaxe
 
-				i(225759),	-- Coreway Engineer's Forceps
 				i(225760),	-- Dornogal Spear
 				i(225761),	-- Jeweler's Careful Crusher
-				i(225762),	-- Coreway Engineer's Screwdriver
 
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 				i(225885),	-- Garlic Knots
@@ -1652,7 +1649,6 @@ root(ROOTS.Unsorted, {
 				i(220260),	-- Corroded Golem Graspers
 				i(220265),	-- Slitted Eye
 				i(220269),	-- Ionized Feather
-				i(220273),	-- Shed Skin
 				i(220274),	-- Chipped Hammer
 				i(220278),	-- Well-Worn Leather Sole
 				i(220284),	-- Darkened Crystal
@@ -1921,14 +1917,11 @@ root(ROOTS.Unsorted, {
 				i(228395),	-- Mud Clump
 				i(228396),	-- Dead Fish
 				i(228398),	-- Angry Rock
-				i(228399),	-- Sad Rock
-				i(228400),	-- Happy Rock
 				i(228414),	-- Frayed Wiring
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
 				i(228417),	-- Emergency Healthstone
 				i(228429),	-- Reflective Rock
-				i(228430),	-- Mucky Rock
 				i(228431),	-- Rock Buddy
 
 				i(228449),	-- Tasty Iron Bar
@@ -2334,7 +2327,6 @@ root(ROOTS.Unsorted, {
 				i(221215),	-- Taskmaster's Mining Cap
 				i(221216),	-- Bruin Strength Legplates
 				i(221218),	-- Reinforced Construct's Greaves
-				i(221219),	-- Silkwing Trousers
 				i(221220),	-- Basilisk Scale Pauldrons
 				i(221222),	-- Water-Imbued Spaulders
 				i(221223),	-- Bog Beast Mantle
@@ -2399,7 +2391,6 @@ root(ROOTS.Unsorted, {
 				i(223926),	-- Earthgorger's Chain Bib
 				i(223927),	-- Vinewrapped Leather Tunic
 
-				i(223929),	-- Honey Sweetener's Squeezers
 				i(223930),	-- Monstrous Chain Pincers
 				i(223931),	-- Black Blood Cowl
 				i(223932),	-- Scarab's Carapace Cap

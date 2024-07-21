@@ -325,4 +325,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
 
 	q(79573, {["name"] = "The War Within Campaign Completed [Account]"}),	-- triggered after completing 'Surface Bound' (questID 79197)
+
+	q(82039),	-- after turn in questID 82678 (Archives: The First Disk) as all quest below too
+	q(82679),	-- but it is normal quest, Archives: Seeking History, which I never saw on alpha/beta (could be some stupid stuff like with alt skip in df s1)
+	q(83450),	-- SpellID 455916 (Play Scene) (but nothing happen on beta)
+	q(84736),	-- last one in this chain after turn in, no idea
 });

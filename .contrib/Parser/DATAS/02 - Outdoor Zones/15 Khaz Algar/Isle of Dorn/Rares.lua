@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}),
 			n(220890, {	-- Matriarch Charfuria
 				["description"] = "Walking around in the area.",
-				["coord"] = { 76.3, 39.3, ISLE_OF_DORN },
+				["coord"] = { 73.1, 40.0, ISLE_OF_DORN },
 				["questID"] = 81921,
 			}),
 			n(220068, {	-- Malfuctioning Spire
@@ -145,8 +145,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				},
 			}),
 			n(220883, {	-- Sweetspark the Oozeful
-				["coord"] = { 72.5, 37.3, ISLE_OF_DORN },
+				["coord"] = { 69.8, 38.4, ISLE_OF_DORN },
 				["questID"] = 81922,
+				["g"] = {
+					i(223929),	-- Honey Sweetener's Squeezers
+				},
 			}),
 			n(219269, {	-- Tempest Lord Incarnus
 				["coord"] = { 57.9, 16.5, ISLE_OF_DORN },
@@ -160,6 +163,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			n(219271, {	-- Twice-Stinger the Wretched
 				["coord"] = { 57.2, 22.3, ISLE_OF_DORN },
 				["questID"] = 81904,
+				["g"] = {
+					i(221219),	-- Silkwing Trousers
+				},
 			}),
 			n(219263, {	-- Warphorn
 				["description"] = "Walking around in the area.",
@@ -198,8 +204,10 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84034),	-- Extra HQT: Flamekeeper Graz
 		q(84028),	-- Extra HQT: Gar'loc
 		q(84031),	-- Extra HQT: Kronolith, Might of the Mountain
+		q(84039),	-- Extra HQT: Matriarch Charfuria
 		q(84026),	-- Extra HQT: Plaguehart
 		q(84032),	-- Extra HQT: Shallowshell the Cracker
+		q(84038),	-- Extra HQT: Sweetspark the Oozeful
 		q(84030),	-- Extra HQT: Tempest Lord Incarnus
 		q(84033),	-- Extra HQT: Twice-Stinger the Wretched
 	}),

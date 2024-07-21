@@ -925,5 +925,10 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				["cost"] = {{"i", 224752, 20}},	-- 20x Soaked Journal Entry
 			}),
 		}),
+		n(REWARDS, {
+			i(225768),	-- Crusty Darkmoon Card [Shore Treasure]
+			i(228759),	-- Coreway Engineer's Forceps (COSMETIC!) [Shore Treasure]
+			i(225762),	-- Coreway Engineer's Screwdriver (COSMETIC!) [Shore Treasure]
+		}),
 	})),
 })));
