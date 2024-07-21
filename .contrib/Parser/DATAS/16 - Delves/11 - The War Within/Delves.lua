@@ -22,6 +22,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40451),	-- Buddy System III
 		ach(40450),	-- Buddy System II
 		ach(40455),	-- Buddy System
+		ach(40882),	-- Copious Coffers
 		ach(40437),	-- Delver of the Depths (automated)
 		ach(40447),	-- Delver of the Depths II (automated)
 		ach(40448),	-- Delver of the Depths III (automated)
@@ -109,6 +110,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40819),	-- Ready to Turn
 		ach(40453),	-- Spider Senses
 		ach(40445),	-- Sporesweeper
+		ach(40885),	-- The Key to Madness
 		ach(40100),	-- Undying Caver
 		ach(40631),	-- War Within Delves: Tier 1
 		ach(40512),	-- War Within Delves: Tier 2

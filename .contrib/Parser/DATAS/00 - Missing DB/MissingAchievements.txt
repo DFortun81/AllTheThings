@@ -1,6 +1,0 @@
-11.0.2.55665
-ach(40874),	-- The Grand Tapestry
-ach(40875),	-- True Strength
-ach(40876),	-- Vox Arachni
-ach(40882),	-- Copious Coffers
-ach(40885),	-- The Key to Madness
