@@ -2045,6 +2045,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.9, 49.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/3 Taurajo Intelligence
+							["providers"] = {
+								{ "i", 52277},	-- Taurajo Intelligence
+								{ "o", 202467},	-- Taurajo Intelligence
+							},
+						}),
+					},
+					
 				}),
 				q(857, {	-- The Tear of the Moons
 					["qg"] = 3421,	-- Feegly the Exiled
