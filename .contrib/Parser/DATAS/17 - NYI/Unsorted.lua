@@ -651,7 +651,6 @@ root(ROOTS.Unsorted, {
 					i(213775),	-- Captured Starlight
 					i(213776),	-- Captured Starlight
 					i(213777),	-- Magnificent Jeweler's Setting
-					i(213778),	-- Vicious Jeweler's Setting
 					i(213779),	-- Algari Amber Prism \\ Amber Prism (DNT)
 					i(213782),	-- Algari Emerald Prism \\ Emerald Prism (DNT)
 					i(213785),	-- Algari Ruby Prism \\ Ruby Prism (DNT)
@@ -681,7 +680,6 @@ root(ROOTS.Unsorted, {
 					i(215139),	-- Copy Copy Elemental Lariat
 					i(215143),	-- Copy Copy Elemental Lariat
 					i(215144),	-- Algari Competitor's Amulet
-					i(215236),	-- Vicious Bloodstone
 					i(217113),	-- Cubic Blasphemia
 					i(217114),	-- Cubic Blasphemia
 					i(217115),	-- Cubic Blasphemia
@@ -1532,108 +1530,10 @@ root(ROOTS.Unsorted, {
 				i(226696),	-- Mighty Advisor's Favor
 			}),
 			n(PVP, {
-				i(224556),	-- Glorious Contender's Strongbox
 				i(224557),	-- Field Medic's Hazard Payout
 				i(225493),	-- Medal of Conquest
-				i(210221),	-- Forged Combatant's Heraldry
-				i(210232),	-- Forged Aspirant's Heraldry
-				i(210233),	-- Forged Gladiator's Heraldry
-				i(218429),	-- Forged Aspirant's Necklace \\ PH Copy Draconic Aspirant's Necklace
-				i(218430),	-- Forged Aspirant's Choker \\ PH Copy Draconic Aspirant's Choker
-				i(218431),	-- Forged Aspirant's Pendant \\ PH Copy Draconic Aspirant's Pendant
 
-
-
-				i(218707),	-- Forged Gladiator's Ring \\ PH Copy Draconic Gladiator's Ring
-				i(218708),	-- Forged Gladiator's Band \\ PH Copy Draconic Gladiator's Band
-				i(218709),	-- Forged Gladiator's Signet \\ PH Copy Draconic Gladiator's Signet
-				i(218710),	-- Forged Gladiator's Necklace \\ PH Copy Draconic Gladiator's Necklace
-				i(218711),	-- Forged Gladiator's Pendant \\ PH Copy Draconic Gladiator's Pendant
-				i(218712),	-- Forged Gladiator's Amulet \\ PH Copy Draconic Gladiator's Amulet
-				i(218713),	-- Forged Gladiator's Badge of Ferocity \\ PH Copy Draconic Gladiator's Badge of Ferocity
-				i(218714),	-- Forged Gladiator's Insignia of Alacrity \\ PH Copy Draconic Gladiator's Insignia of Alacrity
-				i(218715),	-- Forged Gladiator's Emblem \\ PH Copy Draconic Gladiator's Emblem
-				i(218716),	-- Forged Gladiator's Medallion \\ PH Copy Draconic Gladiator's Medallion
-				i(218717),	-- Forged Gladiator's Sigil of Adaptation \\ PH Copy Draconic Gladiator's Sigil of Adaptation
-				i(218718),	-- Forged Gladiator's Splitter \\ PH Copy Draconic Gladiator's Splitter
-				i(218719),	-- Forged Gladiator's Dagger \\ PH Copy Draconic Gladiator's Dagger
-				i(218720),	-- Forged Gladiator's Warglaive \\ PH Copy Draconic Gladiator's Warglaive
-				i(218721),	-- Forged Gladiator's Spear \\ Forged Gladiator's Scythe \\ PH Copy Draconic Gladiator's Scythe
-				i(218722),	-- Forged Gladiator's Staff \\ PH Copy Draconic Gladiator's Staff
-				i(218723),	-- Forged Gladiator's Bow \\ Forged Gladiator's Rifle \\ PH Copy Draconic Gladiator's Rifle
-				i(218724),	-- Forged Gladiator's Scepter \\ PH Copy Draconic Gladiator's Scepter
-				i(218725),	-- Forged Gladiator's Focus \\ Forged Gladiator's Censer \\ PH Copy Draconic Gladiator's Censer
-				i(218726),	-- Forged Gladiator's Shield \\ PH Copy Draconic Gladiator's Shield
-				i(218727),	-- Forged Gladiator's Axe \\ PH Copy Draconic Gladiator's Axe
-				i(218728),	-- Forged Gladiator's Pincer \\ Forged Gladiator's Sickle \\ PH Copy Draconic Gladiator's Sickle
-				i(218729),	-- Forged Gladiator's Claws \\ PH Copy Draconic Gladiator's Claws
-				i(218730),	-- Forged Gladiator's Crossbow \\ Forged Gladiator's Bow \\ PH Copy Draconic Gladiator's Bow
-				i(218731),	-- Forged Gladiator's Greatstaff \\ PH Copy Draconic Gladiator's Greatstaff
-				i(218732),	-- Forged Gladiator's Bulwark \\ PH Copy Draconic Gladiator's Bulwark
-				i(218733),	-- Forged Gladiator's Greataxe \\ Forged Gladiator's Greatsword \\ PH Copy Draconic Gladiator's Greatsword
-				i(218734),	-- Forged Gladiator's Pulverizer \\ PH Copy Draconic Gladiator's Pulverizer
-				i(218735),	-- Forged Gladiator's Sword \\ PH Copy Draconic Gladiator's Sword
-				i(218736),	-- Forged Gladiator's Skewer \\ Forged Gladiator's Shotel \\ PH Copy Draconic Gladiator's Shotel
-				i(218737),	-- Forged Gladiator's Battlestaff \\ Forged Gladiator's Axestaff \\ PH Copy Draconic Gladiator's Axestaff
 				i(220378),	-- Forged Equipment Chest \\ PH War Within Equipment Chest
-				i(223807),	-- Forged Warmonger's Garb \\ X Warmonger's Garb
-				i(223808),	-- Forged Warmonger's Slippers \\ X Warmonger's Slippers
-				i(223809),	-- Forged Warmonger's Gloves \\ X Warmonger's Gloves
-				i(223810),	-- Forged Warmonger's Crown \\ X Warmonger's Crown
-				i(223811),	-- Forged Warmonger's Pants \\ X Warmonger's Pants
-				i(223812),	-- Forged Warmonger's Cord \\ X Warmonger's Cord
-				i(223813),	-- Forged Warmonger's Bindings \\ X Warmonger's Bindings
-				i(223814),	-- Forged Warmonger's Mantle \\ X Warmonger's Mantle
-				i(223815),	-- Forged Warmonger's Boots \\ X Warmonger's Boots
-				i(223816),	-- Forged Warmonger's Handwraps \\ X Warmonger's Handwraps
-				i(223817),	-- Forged Warmonger's Hood \\ X Warmonger's Hood
-				i(223818),	-- Forged Warmonger's Breeches \\ X Warmonger's Breeches
-				i(223819),	-- Forged Warmonger's Belt \\ X Warmonger's Belt
-				i(223820),	-- Forged Warmonger's Wraps \\ X Warmonger's Wraps
-				i(223821),	-- Forged Warmonger's Jerkin \\ X Warmonger's Jerkin
-				i(223822),	-- Forged Warmonger's Shoulderguard \\ X Warmonger's Shoulderguard
-				i(223823),	-- Forged Warmonger's Faceplate \\ X Warmonger's Faceplate
-				i(223824),	-- Forged Warmonger's Cuirass \\ X Warmonger's Cuirass
-				i(223825),	-- Forged Warmonger's Sabatons \\ X Warmonger's Sabatons
-				i(223826),	-- Forged Warmonger's Gauntlets \\ X Warmonger's Gauntlets
-				i(223827),	-- Forged Warmonger's Legguards \\ X Warmonger's Legguards
-				i(223828),	-- Forged Warmonger's Spaulders \\ X Warmonger's Spaulders
-				i(223829),	-- Forged Warmonger's Clasp \\ X Warmonger's Clasp
-				i(223830),	-- Forged Warmonger's Bracers \\ X Warmonger's Bracers
-				i(223831),	-- Forged Warmonger's Chestguard \\ Forged Warmonger's Chainmail \\ X Warmonger's Chainmail
-				i(223832),	-- Forged Warmonger's Greaves \\ X Warmonger's Greaves
-				i(223833),	-- Forged Warmonger's Grips \\ X Warmonger's Grips
-				i(223834),	-- Forged Warmonger's Helm \\ X Warmonger's Helm
-				i(223835),	-- Forged Warmonger's Leggings \\ X Warmonger's Leggings
-				i(223836),	-- Forged Warmonger's Epaulets \\ X Warmonger's Epaulets
-				i(223837),	-- Forged Warmonger's Cinch \\ X Warmonger's Cinch
-				i(223838),	-- Forged Warmonger's Armguards \\ X Warmonger's Armguards
-				i(223839),	-- Forged Warmonger's Cape \\ X Warmonger's Cape
-				i(223840),	-- Forged Warmonger's Shawl \\ X Warmonger's Shawl
-				i(223841),	-- Forged Warmonger's Cloak \\ X Warmonger's Cloak
-				i(223842),	-- Forged Warmonger's Drape \\ X Warmonger's Drape
-				i(223844),	-- Forged Warmonger's Battleaxe \\ X Warmonger's Battleaxe
-				i(223845),	-- Forged Warmonger's Hatchet \\ X Warmonger's Hatchet
-				i(223846),	-- Forged Warmonger's Carver \\ X Warmonger's Carver
-				i(223847),	-- Forged Warmonger's Flameshot \\ X Warmonger's Flameshot
-				i(223848),	-- Forged Warmonger's Twinblade \\ X Warmonger's Twinblade
-				i(223851),	-- Forged Warmonger's Branch \\ X Warmonger's Branch
-				i(223852),	-- Forged Warmonger's Spire \\ X Warmonger's Spire
-				i(223853),	-- Forged Warmonger's Battlestaff \\ X Warmonger's Battlestaff
-				i(223854),	-- Forged Warmonger's Greatsword \\ X Warmonger's Greatsword
-				i(223855),	-- Forged Warmonger's Broadsword \\ X Warmonger's Broadsword
-				i(223856),	-- Forged Warmonger's Club \\ X Warmonger's Club
-				i(223857),	-- Forged Warmonger's Hammer \\ X Warmonger's Hammer
-				i(223858),	-- Forged Warmonger's Cudgel \\ X Warmonger's Cudgel
-				i(223859),	-- Forged Warmonger's Aegis \\ X Warmonger's Aegis
-				i(223860),	-- Forged Warmonger's Impaler \\ X Warmonger's Impaler
-				i(223861),	-- Forged Warmonger's Spear \\ X Warmonger's Spear
-				i(223862),	-- Forged Warmonger's Wand \\ X Warmonger's Wand
-				i(223863),	-- Forged Warmonger's Mace \\ X Warmonger's Mace
-				i(223864),	-- Forged Warmonger's Crusher \\ X Warmonger's Crusher
-				i(223865),	-- Forged Warmonger's Scepter \\ X Warmonger's Scepter
-				i(223867),	-- Forged Warmonger's Dagger \\ X Warmonger's Dagger
-				i(223868),	-- Forged Warmonger's Dirk \\ X Warmonger's Dirk
 				i(223616),	-- Forged Gladiator's Tabard \\ [PH] 11.0 PVP - Gladiator's Tabard
 				i(223617),	-- Forged Gladiator's Prestigious Cloak \\ [PH] 11.0 Gladiator's Prestigious Cloak
 				i(225856),	-- Forged Gladiator's Axe
@@ -1813,16 +1713,6 @@ root(ROOTS.Unsorted, {
 				i(223897),	-- Ruptured Engine \\ Ruptered Engine
 				i(223898),	-- Loose Bolts
 				i(223900),	-- Bottled Darkness
-
-				i(224041),	-- Holy Brigade
-				i(224042),	-- Voracious Residue
-				i(224043),	-- Famished Residue
-				i(224044),	-- Devouring Residue
-				i(224045),	-- Kelp Grasp
-				i(224046),	-- Sand Tornado
-				i(224047),	-- Water Blast
-				i(224048),	-- Electric Shock
-				i(224049),	-- Web Pull
 
 				i(224183),	-- Bleak Chum
 				i(224266),	-- Ivory Tinderbox

@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(DORNOGAL, {
 		pvp(n(PVP, {
-			n(QUEST, {
+			n(QUESTS, {
 				q(83711, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {	-- Weapons of Conquest
 					["provider"] = { "n", 219222 },	-- Lalandi <Conquest Quartermaster>
 					["coord"] = { 55.0, 76.1, DORNOGAL },
@@ -85,13 +85,32 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 						i(225475),	-- Technique: Algari Competitor's Medallion (RECIPE!)
 						i(225480),	-- Technique: Algari Competitor's Scythe (RECIPE!)
 						i(225481),	-- Technique: Algari Competitor's Staff (RECIPE!)
+						--
+						filter(MISC, {
+							i(213778, {	-- Vicious Jeweler's Setting
+								["cost"] = {
+									{ "i", 215236, 2 },	-- Vicious Bloodstone x2
+									{ "c", HONOR, 9750 },
+								},
+								["timeline"] = { REMOVED_11_1_0 },
+							}),
+						}),
+						filter(REAGENTS, {
+							i(210221, {	-- Forged Combatant's Heraldry
+								["cost"] = {{"c", HONOR, 350}},
+								["timeline"] = { REMOVED_11_1_0 },
+							}),
+							i(215236, {	-- Vicious Bloodstone
+								["cost"] = {{"c", HONOR, 2500}},
+							}),
+						}),
 					}),
 				}),
 				n(219212, {	-- Maara <War Mode Supplies>
 					["coord"] = { 60.3, 70.0, DORNOGAL },
 					["g"] = {
 						filter(MISC, sharedData({
-							["cost"] = {{ "c", HONOR, 500 }},
+							["cost"] = {{"c", HONOR, 500}},
 						}, {
 							i(224044),	-- Devouring Residue
 							i(224048),	-- Electric Shock
@@ -112,6 +131,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 							["cost"] = {{"c", HONOR, 2000}},
 							["g"] = {
 								i(137642),	-- Mark of Honor
+							},
+						}),
+						i(224556, {	-- Glorious Contender's Strongbox
+							["cost"] = {{"c", HONOR, 5000}},
+							["g"] = {
+								--
 							},
 						}),
 					},
