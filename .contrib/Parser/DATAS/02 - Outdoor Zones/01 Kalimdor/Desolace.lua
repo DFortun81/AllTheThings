@@ -241,6 +241,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 36060,	-- Botanist Ferrah
 					["coord"] = { 58.5, 48.7, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/10 Aloe Thistle
+							["providers"] = {
+								{ "i", 49140 },	-- Aloe Thistle
+								{ "o", 195674 },	-- Aloe Thistle
+							},
+						}),
+					},
 				}),
 				q(14195, {	-- All Becoming Clearer
 					["sourceQuest"] = 14360,	-- Nothing a Couple of Melons Won't Fix
@@ -536,6 +544,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 14312,	-- An Introduction is in Order
 					["coord"] = { 58.4, 49.8, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/7 Cenarion Supply Crate
+							["providers"] = {
+								{ "i", 49164 },	-- Cenarion Supply Crate
+								{ "o", 195692 },	-- Cenarion Supply Crate
+							},
+						}),
+					},
 				}),
 				q(1387, {	-- Centaur Bounty [A]
 					["qg"] = 5752,	-- Corporal Melkins
@@ -927,11 +943,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(25, 25, 10),
-					-- #if BEFORE CATA
 					["groups"] = {
+						objective(1, {	-- 0/5 Shellfish
+							["providers"] = {
+								{ "i", 13545 },	-- Shellfish
+								{ "o", 176582 },	-- Shellfish Trap
+							},
+						}),
+						-- #if BEFORE CATA
 						i(13546),	-- Bloodbelly Fish
+						-- #endif
 					},
-					-- #endif
 				}),
 				q(14253, {	-- Fletch Me Some Plumage!
 					["qg"] = 35757,	-- Bizby
@@ -1037,6 +1059,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 35757,	-- Bizby
 					["coord"] = { 60.9, 29.0, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/15 Aged Basilisk Tail
+							["provider"] = { "i", 49030 },	-- Aged Basilisk Tail
+							["cr"] = 4728,	-- Gritjaw Basilisk
+						}),
+					},
 				}),
 				q(5381, {	-- Hand of Iruxos
 					["qg"] = 11624,	-- Taiga Wisemane
@@ -1061,6 +1089,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 14247,	-- Stubborn Lands
 					["coord"] = { 69.2, 21.3, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/7 Element 116
+							["providers"] = {
+								{ "i", 49034 },	-- Element 116
+								{ "o", 195601 },	-- Element 116
+							},
+						}),
+					},
 				}),
 				q(25938, {	-- Help for Desolace (mutually exclusive with Rerouted! and Hero's Call: Desolace!)
 					["qg"] = 41487,	-- Hierophant Malyk
@@ -2405,6 +2441,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.6, 11.0, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ancient Summoning Ritual
+							["providers"] = {
+								{ "i", 48951 },	-- Ancient Summoning Ritual
+								{ "o", 195531 },	-- Demonic Chest
+							},
+						}),
+					},
 				}),
 				q(14225, {	-- You'll Know It When You See It (H)
 					["qg"] = 35298,	-- Sorrem
