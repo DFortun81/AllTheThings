@@ -389,6 +389,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.4, 49.8, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Troll Charm
+							["providers"] = {
+								{ "i", 16602 },	-- Troll Charm
+								{ "o", 178144 },	-- Troll Chest
+							},
+						}),
+					},
 				}),
 				q(26454, {	-- A Shameful Waste
 					["qg"] = 17291,	-- Architect Nemos
@@ -396,6 +404,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 86.8, 44.8, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Satyrnaar Fel Wood
+							["providers"] = {
+								{ "i", 24081 },	-- Satyrnaar Fel Wood
+								{ "o", 181916 },	-- Satyrnaar Fel Wood
+							},
+						}),
+					},
 				}),
 				q(9517, {	-- A Shameful Waste
 					["qg"] = 17291,	-- Architect Nemos
@@ -617,6 +633,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 26.7, 21.9, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Bathran's Hair
+							["providers"] = {
+								{ "i", 5437 },	-- Bathran's Hair
+								{ "o", 17282 },	-- Bathran's Hair
+							},
+						}),
+					},
 				}),
 				q(1010, {	-- Bathran's Hair
 					["qg"] = 3847,	-- Orendil Broadleaf
@@ -759,6 +783,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 46.1, 63.2, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/3 Bronze Cog
+							["providers"] = {
+								{ "i", 46772 },	-- Bronze Cog
+								{ "o", 195136 },	-- Bronze Cog
+							},
+						}),
+						objective(2, {	-- 0/3 Copper Plating
+							["providers"] = {
+								{ "i", 46773 },	-- Copper Plating
+								{ "o", 195138 },	-- Copper Plating
+							},
+						}),
+						objective(3, {	-- 0/5 Locking Bolt
+							["providers"] = {
+								{ "i", 46771 },	-- Locking Bolt
+								{ "o", 195135 },	-- Locking Bolt
+							},
+						}),
+					},
 				}),
 				q(13965, {	-- Check in on the Edunes
 					["qg"] = 3996,	-- Faldreas Goeth'Shael
@@ -1072,6 +1116,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.2, 57.6, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Chunk of Ore
+							["providers"] = {
+								{ "i", 45576 },	-- Chunk of Ore
+								{ "o", 194566 },	-- Fresh Rubble
+							},
+						}),
+					},
 				}),
 				q(25613, {	-- Do Yourself a Favor
 					["qg"] = 40894,	-- Gnombus the X-Terminator
@@ -1244,6 +1296,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 37.3, 51.7, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Elune's Tear
+							["providers"] = {
+								{ "i", 5493 },	-- Elune's Tear
+								{ "o", 19015 },	-- Soot-Covered Elune's Tear
+							},
+						}),
+					},
 				}),
 				q(1033, {	-- Elune's Tear
 					["qg"] = 3894,	-- Pelturas Whitemoon
@@ -1469,6 +1529,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 52.3, 56.5, ASHENVALE },
 					["sourceQuestNumRequired"] = 1,
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/8 Lava fissures filled
+							["providers"] = {
+								{ "i", 46352 },	-- Gift of the Earth
+								{ "o", 195002 },	-- Lava Fissure
+							},
+						}),
+					},
 				}),
 				q(13982, {	-- In a Bind
 					["qg"] = 3698,	-- Bolyun
@@ -1668,6 +1736,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 11.4, 35.3, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Sunken Scrap Metal
+							["providers"] = {
+								{ "i", 46357 },	-- Sunken Scrap Metal
+								{ "o", 195012 },	-- Sunken Scrap Metal
+							},
+						}),
+					},
 				}),
 				q(1017, {	-- Mage Summoner
 					["qg"] = 3885,	-- Sentinel Velene Starstrike
@@ -1703,6 +1779,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Freshly Cut Wood
+							["providers"] = {
+								{ "i", 45069 },	-- Freshly Cut Wood
+								{ "o", 194349 },	-- Freshly Cut Wood
+							},
+						}),
 						i(56627, {	-- Labor Camp Frock
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1987,6 +2069,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Iron Pommel
+							["providers"] = {
+								{ "i", 5519 },	-- Iron Pommel
+								{ "o", 195111 },	-- Oso's Chest
+							},
+						}),
 						i(56664, {	-- Shael'dryn's Bracers
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2290,6 +2378,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 83.7, 63.0, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Tree Seedling Planted
+							["providers"] = {
+								{ "i",  23788 },	-- Tree Seedlings
+								{ "o", 181690 },	-- Fertile Dirt Mound
+							},
+						}),
+					},
 				}),
 				q(9526, {	-- Reclaiming Felfire Hill
 					["qg"] = 17310,	-- Gnarl <Ancient of War>
@@ -2336,6 +2432,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["lvl"] = 18,
 					["groups"] = {
+						objective(1, {	-- 0/10 Warsong Lumber
+							["providers"] = {
+								{ "i", 23776 },	-- Warsong Lumber
+								{ "o", 181686 },	-- Warsong Lumber Pile
+								{ "o", 181687 },	-- Lumber Pile
+							},
+						}),
 						i(211815),	-- Silverwing Battle Hymn
 					},
 				}))),
@@ -2612,6 +2715,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 59.0, 59.6, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Iron Shaft
+							["providers"] = {
+								{ "i", 5464 },	-- Iron Shaft
+								{ "o", 19022 },	-- Worn Chest
+							},
+						}),
+					},
 				}),
 				q(13871, {	-- Security!
 					["qg"] = 17304,	-- Overseer Gorthak
@@ -2644,6 +2755,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 37.9, 43.8, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Moon-Kissed Clay
+							["providers"] = {
+								{ "i", 46698 },	-- Moon-Kissed Clay
+								{ "o", 195077 },	-- Moon-kissed Clay
+							},
+						}),
+					},
 				}),
 				q(24, {		-- Shadumbra's Head
 					["provider"] = { "i", 16304 },	-- Shadumbra's Head
@@ -2810,6 +2929,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 18.2, 20.5, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Ancient Statuette
+							["providers"] = {
+								{ "i", 5424 },	-- Ancient Statuette
+								{ "o", 17783 },	-- Ancient Statuette
+							},
+						}),
+					},
 				}),
 				q(235, {	-- The Ashenvale Hunt (1/2) [Orgrimmar]
 					["qg"] = 10880,	-- Warcaller Gorlach
@@ -2906,6 +3033,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 The Forest Heart
+							["providers"] = {
+								{ "i", 45573 },	-- The Forest Heart
+								{ "o", 194549 },	-- The Forest Heart
+							},
+						}),
 						i(56636, {	-- Forest Grace Mantle
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3003,6 +3136,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 85.2, 44.7, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Chalice of Elune
+							["providers"] = {
+								{ "i", 23760 },	-- Chalice of Elune
+								{ "o", 181681 },	-- Chalice of Elune
+							},
+						}),
+					},
 				}),
 				q(9519, {	-- The Lost Chalice
 					["qg"] = 3848,	-- Kayneth Stillwind
@@ -3099,6 +3240,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 26.9, 36.5, ASHENVALE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Blue Moonstone deactivated
+							["provider"] = { "o", 194309 },	-- Blue Moonstone
+						}),
+						objective(2, {	-- 0/1 Green Moonstone deactivated
+							["provider"] = { "o", 194310 },	-- Green Moonstone
+						}),
+						objective(3, {	-- 0/1 Red Moonstone deactivated
+							["provider"] = { "o", 194311 },	-- Red Moonstone
+						}),
+					},
 				}),
 				q(1034, {	-- The Ruins of Stardust
 					["qg"] = 3894,	-- Pelturas Whitemoon
