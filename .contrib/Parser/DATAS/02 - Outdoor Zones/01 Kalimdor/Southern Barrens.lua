@@ -264,6 +264,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.3, 33.2, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Unusual Flower Bud
+							["providers"] = {
+								{ "i", 49815 },	-- Unusual Flower Bud
+								{ "o", 201737 },	-- Budding Flower
+								{ "o", 201738 },	-- Budding Flower
+							},
+						}),
+					},
 				}),
 				q(25022, {	-- A Failure to Communicate
 					["qg"] = 38871,	-- Corporal Teegan
@@ -563,6 +572,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.8, 9.00, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Stonetalon Supplies
+							["providers"] = {
+								{ "i", 50445 },	-- Stonetalon Supplies
+								{ "o", 202136 },	-- Stonetalon Supplies
+							},
+						}),
+					},
 				}),
 				q(24591, {	-- Changing of the Gar'dul
 					["sourceQuest"] = 24577,	-- Desolation Hold Inspection
@@ -791,12 +808,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.7, 86.8, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Bael'Dun Fortress Schematics
+							["providers"] = {
+								{ "i", 50223 },	-- Bael'Dun Fortress Schematics
+								{ "o", 201971 },	-- Bael'dun Fortress Schematics
+							},
+						}),
+					},
 				}),
 				q(24653, {	-- Echoes of Agamaggan
 					["qg"] = 37812,	-- Mahka
 					["sourceQuest"] = 24606,	-- Blood of the Barrens
 					["coord"] = { 45.1, 85.4, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/3 Polished Boar Skull
+							["providers"] = {
+								{ "i", 50044 },	-- Polished Boar Skull
+								{ "o", 201924 },	-- Boar Skull
+							},
+						}),
+					},
 				}),
 				q(907, {	-- Enraged Thunder Lizards
 					["qg"] = 3387,	-- Jorn Skyseer
@@ -1176,6 +1209,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 67.0, 46.6, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Langridge Shot
+							["providers"] = {
+								{ "i", 51957 },	-- Langridge Shot
+								{ "o", 202320 },	-- Crate of Nails
+								{ "o", 202321 },	-- Box of Cutlery
+								{ "o", 202322 },	-- Musketballs
+								{ "o", 202323 },	-- Cannoneer Whessan's Bowling Trophies
+								{ "o", 202324 },	-- Broken Bottles
+								{ "o", 202325 },	-- Screws and Gears
+							},
+						}),
+					},
 				}),
 				q(24571, {	-- Lashvine Seeds
 					["qg"] = 38314,	-- Muyoh
@@ -1435,6 +1481,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.6, 70.2, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Severed Extremity
+							["providers"] = {
+								{ "i", 49945 },	-- Severed Extremity
+								{ "o", 201904 },	-- Mutilated Remains
+							},
+						}),
+					},
 				}),
 				q(25075, {	-- Pick-a-Part
 					["qg"] = 39084,	-- Mizzy Pistonhammer
@@ -1705,6 +1759,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 61.8, 42.0, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Northwatch Supply Crate
+							["providers"] = {
+								{ "i", 52045 },	-- Northwatch Supply Crate
+								{ "o", 202405 },	-- Northwatch Supply Crate
+							},
+						}),
+					},
 				}),
 				q(24569, {	-- Siegebreaker
 					["qg"] = 37679,	-- Warlord Bloodhilt
@@ -2129,6 +2191,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 56.2, 42.6, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Unusual Flower Bud
+							["providers"] = {
+								{ "i", 49815 },	-- Unusual Flower Bud
+								{ "o", 201737 },	-- Budding Flower
+								{ "o", 201738 },	-- Budding Flower
+							},
+						}),
+					},
 				}),
 				q(25174, {	-- Twinbraid Needs to Know
 					["qg"] = 38152,	-- Weezil Slipshadow
