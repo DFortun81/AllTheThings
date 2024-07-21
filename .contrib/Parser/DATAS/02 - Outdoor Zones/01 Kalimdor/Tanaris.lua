@@ -3187,6 +3187,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 71.8, 45.4, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Pirate Booty
+							["providers"] = {
+								{ "i", 51549 },	-- Pirate Booty
+								{ "o", 202263 },	-- Pirate Booty
+								{ "o", 203019 },	-- Pirate Booty
+								{ "o", 203021 },	-- Pirate Booty
+								{ "o", 203022 },	-- Pirate Booty
+							},
+						}),
+					},
 				}),
 				q(4496, {	-- Bungle in the Jungle
 					["qg"] = 5594,	-- Alchemist Pestlezugg
@@ -3626,12 +3637,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 40.1, 76.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Ancient Hieroglyphs
+							["providers"] = {
+								{ "i", 52061 },	-- Ancient Hieroglyphs
+								{ "o", 202420 },	-- Ancient Hieroglyphs
+							},
+						}),
+					},
 				}),
 				q(25020, {	-- Fragments of Language (H)
 					["qg"] = 38922,	-- Examiner Andoren Dawnrise
 					["coord"] = { 33.2, 77.0, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Ancient Hieroglyphs
+							["providers"] = {
+								{ "i", 52061 },	-- Ancient Hieroglyphs
+								{ "o", 202420 },	-- Ancient Hieroglyphs
+							},
+						}),
+					},
 				}),
 				q(992, {	-- Gadgetzan Water Survey
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
@@ -4029,6 +4056,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 72.1, 45.1, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Pirate Booty
+							["providers"] = {
+								{ "i", 51549 },	-- Pirate Booty
+								{ "o", 202263 },	-- Pirate Booty
+								{ "o", 203019 },	-- Pirate Booty
+								{ "o", 203021 },	-- Pirate Booty
+								{ "o", 203022 },	-- Pirate Booty
+							},
+						}),
+					},
 				}),
 				q(24963, {	-- Maul 'Em With Kindness
 					["qg"] = 38849,	-- Megs Dreadshredder
@@ -4399,6 +4437,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Steamwheedle Supplies
+							["providers"] = {
+								{ "i", 50829 },	-- Steamwheedle Supplies
+								{ "o", 202198 },	-- Steamwheedle Crate
+							},
+						}),
+					},
 				}),
 				q(24906, {	-- Seaside Salvage (H)
 					["qg"] = 38534,	-- Megs Dreadshredder
@@ -4406,6 +4452,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.2, 29.9, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Steamwheedle Supplies
+							["providers"] = {
+								{ "i", 50829 },	-- Steamwheedle Supplies
+								{ "o", 202198 },	-- Steamwheedle Crate
+							},
+						}),
+					},
 				}),
 				q(25032, {	-- Secrets in the Oasis
 					["qg"] = 38927,	-- Mazoga
@@ -5199,6 +5253,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.9, 82.8, TANARIS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Salt-Crusted Journal
+							["providers"] = {
+								{ "i", 52279 },	-- Salt-Crusted Journal
+								{ "o", 202470 },	-- Bilgewater Footlocker
+							},
+						}),
+					},
 				}),
 				q(25065, {	-- You Too, Brute?
 					["qg"] = 39059,	-- Kelsey Steelspark
