@@ -1778,6 +1778,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/4 Siege Engine Destroyed
+							["provider"] = { "o", 201792 },	-- Northwatch Siege Engine
+						}),
 						i(53227, {	-- Bloodhilt Gloves
 							["timeline"] = { ADDED_4_0_3 },
 						}),
