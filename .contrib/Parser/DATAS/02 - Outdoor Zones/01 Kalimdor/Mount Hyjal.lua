@@ -589,6 +589,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39858,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 25490,	-- Smashing Through Ashes
 					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/10 Hyjal Seedling
+							["providers"] = {
+								{ "i", 54574 },	-- Hyjal Seedling
+								{ "o", 202884 },	-- Scorched Soil
+							},
+						}),
+					},
 				}),
 				applyclassicphase(CATA_PHASE_TWO, q(29122, {	-- Echoes of Nemesis
 					["qg"] = 52671,	-- Mylune
@@ -833,16 +841,58 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39434,	-- Rio Duran
 					["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
 					["coord"] = { 28.1, 29.8, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Stonebloom
+							["providers"] = {
+								{ "i", 52726 },	-- Stonebloom
+								{ "o", 202702 },	-- Stonebloom
+							},
+						}),
+						objective(2, {	-- 0/1 Bitterblossom
+							["providers"] = {
+								{ "i", 52727 },	-- Bitterblossom
+								{ "o", 202703 },	-- Bitterblossom
+							},
+						}),
+						objective(3, {	-- 0/1 Darkflame Ember
+							["providers"] = {
+								{ "i", 52728 },	-- Darkflame Ember
+								{ "o", 202705 },	-- Darkflame Ember
+							},
+						}),
+					},
 				}),
 				q(25328, {	-- Gar'gol's Gotta Go
 					["qg"] = 39640,	-- Kristoff Manheim
 					["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
 					["coord"] = { 27.2, 40.7, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Rusted Skull Key
+							["providers"] = {
+								{ "i", 52789 },	-- Rusted Skull Key
+								{ "o", 204580 },	-- Gar'gol's Personal Treasure Chest
+							},
+						}),
+					},
 				}),
 				q(25296, {	-- Gather the Intelligence
 					["provider"] = { "o", 202701 },	-- Outhouse Hideout
 					["sourceQuest"] = 25291,	-- Twilight Training
 					["coord"] = { 88.2, 58.5, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Twilight Communique
+							["providers"] = {
+								{ "i", 52724 },	-- Twilight Communique
+								{ "o", 202968 },	-- Crate of Scrolls
+							},
+						}),
+						objective(2, {	-- 0/1 Hyjal Battleplans
+							["providers"] = {
+								{ "i", 52725 },	-- Hyjal Battleplans
+								{ "o", 202969 },	-- Hyjal Battleplans
+							},
+						}),
+					},
 				}),
 				q(25332, {	-- Get Me Outta Here!
 					["qg"] = 39640,	-- Kristoff Manheim
@@ -969,6 +1019,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25372,	-- Aessina's Miracle
 					["coord"] = { 56.8, 56.0, MOUNT_HYJAL },
 					["groups"] = {
+						objective(1, {	-- 0/15 Warden's Arrow
+							["providers"] = {
+								{ "i", 56176 },	-- Warden's Arrow
+								{ "o", 203310 },	-- Warden's Arrow
+							},
+						}),
 						i(57347),	-- Bloodbolt Crossbow
 						i(57345),	-- Razorproof Greaves
 						i(57346),	-- Mindfletcher Talisman
@@ -983,12 +1039,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39442,	-- Condenna the Pitiless
 					["sourceQuest"] = 25276,	-- Your New Identity
 					["coord"] = { 76.9, 62.0, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/5 Flame Blossom
+							["providers"] = {
+								{ "i", 52537 },	-- Flame Blossom
+								{ "o", 202619 },	-- Flame Blossom
+							},
+						}),
+					},
 				}),
 				q(25234, {	-- In the Rear With the Gear
 					["qg"] = 39427,	-- Jadi Falaryn
 					["sourceQuest"] = 25584,	-- The Return of the Ancients
 					["coord"] = { 35.7, 19.6, MOUNT_HYJAL },
 					["groups"] = {
+						objective(1, {	-- 0/36 Twilight Supplies
+							["providers"] = {
+								{ "i", 52568 },	-- Twilight Supplies
+								{ "o", 202652 },	-- Twilight Supplies
+							},
+						}),
 						i(57385),	-- Repurposed Twilight Girdle
 						i(57384),	-- Rust-Scrivened Leggings
 						i(57383),	-- Sharptooth Signet
@@ -1063,6 +1133,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Before using Totem of Lo'Gosh to turn in the quest, get back to the camp and stand next to Takrik Ragehowl. Summon Spirit of Lo'Gosh, turn in your quest and without going anywhere pick up Into the Maw! from Takrik Ragehowl and then pick up Into the Maw! from Spirit of Lo'Gosh (in this order). Congratulations, you got two quests for the price of one!",
 					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Charged Condenser Jar
+							["providers"] = {
+								{ "i", 52834 },	-- Charged Condenser Jar
+								{ "o", 202731 },	-- Lightning Channel
+							},
+						}),
+					},
 				}),
 				q(25353, {	-- Lightning in a Bottle
 					["qg"] = 39433,	-- Ian Duran
@@ -1070,6 +1148,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Before using Totem of Goldrinn to turn in the quest, get back to the camp and stand next to Ian Duran. Summon Goldrinn, turn in your quest and without going anywhere pick up Into the Maw! from Ian Duran and then pick up Into the Maw! from Goldrinn (in this order). Congratulations, you got two quests for the price of one!",
 					["coord"] = { 28.22, 29.74, MOUNT_HYJAL },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Charged Condenser Jar
+							["providers"] = {
+								{ "i", 52834 },	-- Charged Condenser Jar
+								{ "o", 202731 },	-- Lightning Channel
+							},
+						}),
+					},
 				}),
 				q(25881, {	-- Lost Wardens
 					["qg"] = 41507,	-- Niden
@@ -1200,6 +1286,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39413,	-- Instructor Mylva
 					["sourceQuest"] = 25291,	-- Twilight Training
 					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/5 Darkwhisper Lodestone broken
+							["provider"] = { "o", 202952 },	-- Darkwhisper Lodestone
+						}),
+					},
 				}),
 				q(25502, {	-- Prepping the Soil
 					["qg"] = 40331,	-- Rayne Feathersong
@@ -1450,11 +1541,39 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41006,	-- Thisalee Crow
 					["sourceQuest"] = 25578,	-- Return to Nordrassil
 					["coord"] = { 42.1, 45.4, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/8 Hyjal Egg
+							["providers"] = {
+								{ "i", 55189 },	-- Hyjal Egg
+								{ "o", 203143 },	-- Stolen Hyjal Egg
+							},
+						}),
+					},
 				}),
 				q(25554, {	-- Secrets of the Flame
 					["qg"] = 40773,	-- Cenarius
 					["sourceQuest"] = 25608,	-- Slash and Burn
 					["coord"] = { 71.9, 74.0, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Ascendant's Codex
+							["providers"] = {
+								{ "i", 54907 },	-- Ascendant's Codex
+								{ "o", 203048 },	-- Ascendant's Codex
+							},
+						}),
+						objective(2, {	-- 0/1 The Burning Litanies
+							["providers"] = {
+								{ "i", 54906 },	-- The Burning Litanies
+								{ "o", 203047 },	-- Burning Litanies
+							},
+						}),
+						objective(3, {	-- 0/1 Tome of Flame
+							["providers"] = {
+								{ "i", 54905 },	-- Tome of Flame
+								{ "o", 203046 },	-- Tome of Flame
+							},
+						}),
+					},
 				}),
 				q(25308, {	-- Seeds of Discord
 					["provider"] = { "o", 202701 },	-- Outhouse Hideout
@@ -1586,6 +1705,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/7 Blueroot Vine
+							["providers"] = {
+								{ "i", 69236 },	-- Blueroot Vine
+								{ "o", 208442 },	-- Blueroot Vine
+							},
+						}),
+					},
 				}),
 				q(25352, {	-- Sweeping the Shelf
 					["qg"] = 39433,	-- Ian Duran
@@ -1745,6 +1872,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 39869,	-- Windspeaker Tamila
 					["sourceQuest"] = 25317,	-- Protect the World Tree
 					["coord"] = { 47.6, 35.5, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- 0/8 Charred Staff Fragment
+							["providers"] = {
+								{ "i", 54461 },	-- Charred Staff Fragment
+								{ "o", 202846 },	-- Charred Staff Fragment
+							},
+						}),
+					},
 				}),
 				q(25555, {	-- The Gatekeeper
 					["qg"] = 40773,	-- Cenarius
@@ -1820,6 +1955,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40093,	-- Subjugated Inferno Lord
 					["altQuests"] = { 25443 },	-- The Name Never Spoken
 					["sourceQuest"] = 25411,	-- A New Master
+					["groups"] = {
+						objective(1, {	-- 0/1 Northern Firestone Examined
+							["provider"] = { "o", 202765 },	-- Northern Firestone
+						}),
+						objective(2, {	-- 0/1 Central Firestone Examined
+							["provider"] = { "o", 202764 },	-- Central Firestone
+						}),
+						objective(3, {	-- 0/1 Southern Firestone Examined
+							["provider"] = { "o", 202763 },	-- Southern Firestone
+						}),
+					},
 				}),
 				q(25443, {	-- The Name Never Spoken
 					["qg"] = 39933,	-- Tyrus Blackhorn
@@ -1836,6 +1982,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 60.6, 31.4, MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_2_0 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Northern Firestone Examined
+							["provider"] = { "o", 202765 },	-- Northern Firestone
+						}),
+						objective(2, {	-- 0/1 Central Firestone Examined
+							["provider"] = { "o", 202764 },	-- Central Firestone
+						}),
+						objective(3, {	-- 0/1 Southern Firestone Examined
+							["provider"] = { "o", 202763 },	-- Southern Firestone
+						}),
+					},
 				})),
 				q(29126, {	-- The Power of Malorne
 					["qg"] = 52669,	-- Matoclaw
