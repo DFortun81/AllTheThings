@@ -15,6 +15,8 @@ i(  2770, "requireSkill")	-- Copper Ore
 i(  2772, "requireSkill")	-- Iron Ore
 i(  3858, "requireSkill")	-- Mithril Ore
 i( 10620, "requireSkill")	-- Thorium Ore
+i( 23424, "requireSkill")	-- Fel Iron Ore
+i( 23425, "requireSkill")	-- Adamantite Ore
 
 -- Used within multiple bubbleDown locations
 i(ARTISANS_METTLE, "requireSkill")	-- Artisan's Mettle
