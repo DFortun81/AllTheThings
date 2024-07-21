@@ -625,7 +625,6 @@ localize(L.HEADER_NAMES, {
 	[-1000967] = "Crafting Orders",
 	[-1000973] = "Worldsoul Memory",
 	[-1000975] = "Bountiful",
-	[-1000977] = "Mereldar Fishing Derby",
 	[-1000978] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-1000979] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
@@ -1140,7 +1139,6 @@ localize(L.HEADER_ICONS, {
 	[-1000958] = "Interface/Icons/ui_majorfactions_web",
 	[-1000960] = "Interface/Icons/inv_dwarvenmechboss_bronze",
 	[-1000967] = "Interface/Icons/inv_tabard_craftingorder_c_01",
-	[-1000977] = "Interface/Icons/inv_11_0_misc_darkmoonfaresigil_color5",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -6432,6 +6430,7 @@ _.ObjectNames = {
 	[446349] = "Loose Crystal Shard",
 	[446351] = "Loose Crystal Shard",
 	[446352] = "Loose Crystal Shard",
+	[446366] = "The Great Vault",
 	[446404] = "Memory Cache",
 	[446419] = "Concealed Contraband",
 	[446421] = "Trapped Trove",

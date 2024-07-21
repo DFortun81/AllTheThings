@@ -8,6 +8,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				q(84260, {	-- Crafting to Order
 					["provider"] = { "n", 219108 },	-- Roldira
 					["coord"] = { 59.1, 55.8, DORNOGAL },
+					["g"] = {
+						i(228933),	-- Algari Leatherworker's Satchel
+						i(228916),	-- Algari Tailor's Satchel
+						i(228917),	-- Satchel of Ore
+					},
 				}),
 				q(84288, {	-- Crafting Orders: Alchemy
 					["sourceQuests"] = { 84260 },	-- Crafting to Order

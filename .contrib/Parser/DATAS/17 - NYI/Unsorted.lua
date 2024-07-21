@@ -12,8 +12,6 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				i(228507),	-- Swarmite Eggsac
 				i(228510),	-- Ripped Swarmite Wing
-				i(228608),	-- On the Application of Arathi Technology to Earthen Life
-				i(228609),	-- Rock Roasting for Dummies
 				i(228624),	-- Depleted Awakened Flightstone
 				i(228625),	-- Depleted Ruby Flightstone
 				i(228626),	-- Depleted Blackened Flightstone
@@ -26,7 +24,6 @@ root(ROOTS.Unsorted, {
 				i(228633),	-- Large Pouch of Whelpling's Awakened Crests
 				i(228711),	-- Small Candle
 				i(228720),	-- Nascent Gemstone
-				i(228723),	-- Earthen Pet Rock
 				i(228741),	-- Lamplighter Supply Satchel
 				i(228742),	-- Unidentifiable Cloth
 				i(228743),	-- Damp Weavercloth
@@ -74,7 +71,6 @@ root(ROOTS.Unsorted, {
 				prof(TAILORING, {
 					i(228930),	-- Adorning Ribbon
 				}),
-				i(228921),	-- Griftah's Heavy-Duty Embellishing Powder
 				-- Profession Knowledge Notes
 				i(224817),	-- Algari Herbalist's Notes
 				i(224818),	-- Algari Miner's Notes
@@ -105,14 +101,11 @@ root(ROOTS.Unsorted, {
 				i(228739),	-- Glimmer of Tailoring Knowledge
 
 				-- Same with these
-				i(228916),	-- Algari Tailor's Satchel
-				i(228917),	-- Satchel of Ore
 				i(228918),	-- Satchel of Leather
 				i(228919),	-- Satchel of Algari Herbs
 				i(228920),	-- Satchel of Chitin
 				i(228931),	-- Algari Enchanter's Satchel
 				i(228932),	-- Algari Engineer's Satchel
-				i(228933),	-- Algari Leatherworker's Satchel
 
 				i(228610),	-- Artisan's Consortium Payout [Uncommon]
 				i(228611),	-- Artisan's Consortium Payout [Rare]
@@ -699,19 +692,11 @@ root(ROOTS.Unsorted, {
 					i(223086),	-- Design: Insightful Blasphemite \\ Pattern: Artisan's Chef's Hat
 					i(223087),	-- Design: Culminating Blasphemite \\ Pattern: Alchemy Bag
 					i(223088),	-- Design: Elusive Blasphemite \\ Pattern: Blacksmithing Bag
-					i(223089),	-- Design: Jewelcrafting T2 Helm (DNT) \\ Pattern: Leatherworking Bag
-					i(223090),	-- Design: Enchanting T2 Focus (DNT) \\ Pattern: Enchanting Bag
-					i(223091),	-- Design: Inscription T2 Magnifying Glass (DNT) \\ Pattern: Engineering Bag
-					i(223092),	-- Design: Inscription T2 Glasses (DNT) \\ Pattern: Inscription Bag
 					i(223093),	-- Design: Beautification Iris \\ Pattern: Herbalism Bag
 					i(223094),	-- Design: Magnificent Jeweler's Setting \\ Pattern: Mining Bag
 					i(225679),	-- Design: Enduring Bloodstone
 					i(225680),	-- Design: Cognitive Bloodstone
 					i(225681),	-- Design: Determined Bloodstone
-					i(223089),	-- Design: Extravagant Loupes
-					i(223090),	-- Design: Enchanter's Crystal
-					i(223091),	-- Design: Forger's Font Inspector
-					i(223092),	-- Design: Novelist's Specs
 					i(213780),	-- Algari Amber Prism
 					i(213781),	-- Algari Amber Prism
 					i(213783),	-- Algari Emerald Prism
@@ -724,8 +709,6 @@ root(ROOTS.Unsorted, {
 					i(213793),	-- Algari Sapphire Prism
 					i(228217),	-- Design: Solid Amber
 					i(228320),	-- Design: Binding of Binding
-					i(228329),	-- Design: Remembrance Stone
-					i(228379),	-- Design: Captured Starlight
 				}),
 				prof(MINING, {
 					i(210940),	-- Null Stone
@@ -1804,10 +1787,7 @@ root(ROOTS.Unsorted, {
 				i(220491),	-- Wicked Blade Shard
 				i(220520),	-- Radiant Echo \\ Radiant Chord
 				i(220756),	-- Flickering Torch \\ Fading Torch
-				i(220767),	-- Triumphant Satchel of Carved Harbinger Crests \\ Triumphant Satchel of Carved Harbinger Crests (TODO: Fix Icon)
-				i(220769),	-- Algari Token of Merit \\ Algarian Token of Merit
 				i(220770),	-- Void-Scarred Stormhammer
-				i(220773),	-- Celebratory Pack of Runed Harbinger Crests \\ Celebratory Pack of Runed Harbinger Crests (TODO: Fix Icon)
 				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
 				i(221269),	-- Crimson Valorstone \\ Crimson Valorstone (TODO: Fix Icon) (Maybe fix name too?)
 				i(217965),	-- Repair Kit
@@ -1972,47 +1952,33 @@ root(ROOTS.Unsorted, {
 				i(226259),	-- Delver's Pouch of Resonance Crystals
 				i(226260),	-- Delver's Pouch of Gold
 				i(226430),	-- Navigations of The Soul
-				i(226505),	-- Nerubian Gemweaver
 				i(226524),	-- Partially-Charged Hologem
 				i(226681),	-- Sizzling Cinderpollen
 				i(226811),	-- Marinated Maggots
-				i(226813),	-- Golden Valorstone
-				i(226814),	-- Chest of Gold
-				i(227272),	-- Rock Lobster
-				i(227273),	-- Iron Poppers
 				i(227274),	-- Candle Rock Candy
 				i(227275),	-- Koboldatouille
 				i(227297),	-- Hallowed Burger
 				i(227298),	-- Humble Pie
 				i(227299),	-- Acid Braised Beetle
 				i(227300),	-- Poison Poached Eggs
-				i(227301),	-- Crystal Tots
-				i(227302),	-- Granite Salad
 				i(227303),	-- Waxy Cheese Snack
 				i(227304),	-- Mushroom Cake
 				i(227305),	-- Airship Dog on a Bun
 				i(227306),	-- Holy Mackerel
 				i(227307),	-- Insects Bowl Mix
 				i(227308),	-- Butterflied Deepstrider
-				i(227309),	-- Titanshake
-				i(227310),	-- Magmalaid
 				i(227311),	-- Digspresso
 				i(227312),	-- Afterglow
 				i(227313),	-- Starfruit Puree
 				i(227314),	-- Coffee, Light Ice
 				i(227315),	-- Tarragon Soda
 				i(227316),	-- Eggnog
-				i(227317),	-- Lava Cola
-				i(227318),	-- Quicksilver Sipper
 				i(227319),	-- Koboldchino
 				i(227320),	-- Wicker Wisps
 				i(227321),	-- Blessed Brew
 				i(227322),	-- Sanctified Sasparilla
 				i(227323),	-- Mushroom Tea
 				i(227324),	-- Nerub'ar Nectar
-				i(227325),	-- Stone Soup
-				i(227326),	-- Chalcocite Lava Cake
-				i(227327),	-- Rocky Road
 				i(227328),	-- Wax Fondue
 				i(227329),	-- Still-Twitching Gumbo
 				i(227330),	-- Grottochunk Stew
@@ -3007,13 +2973,6 @@ root(ROOTS.Unsorted, {
 			i(228483),	-- Lovingly Carved Ramolith
 			i(228485),	-- Carver's Spare Whittling Knife
 			i(228487),	-- Freshly Fallen Sticks
-			i(228488),	-- Small Glass Vase
-			i(228489),	-- Fashionable Flask
-			i(228490),	-- Fresh Grazing Rocks
-			i(228491),	-- Ramolith Bedding Material
-			i(228492),	-- Spicy Rubies
-			i(228493),	-- Sour Topaz Bites
-			i(228494),	-- Crunchy Rock Candy
 			i(228495),	-- Well-Used Potter's Wheel
 			i(228496),	-- Cracked Lantern
 			i(228497),	-- Rusted Airship Cog

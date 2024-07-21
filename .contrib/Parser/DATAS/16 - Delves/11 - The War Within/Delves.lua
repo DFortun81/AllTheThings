@@ -144,6 +144,24 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 		}),
+		q(81595, {	-- Seasonal Start
+			["sourceQuests"] = { 81510 },	-- Ship It!
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+		}),
+		q(81596, {	-- Delve Hunter
+			["sourceQuests"] = { 81595 },	-- Seasonal Start
+			["provider"] = { "n", 226763 },	-- Naleidea Rivergleam
+			["coord"] = { 47.7, 44.5, DORNOGAL },
+		}),
+		q(83500, {	-- Zekvir, Hand of the Harbinger
+			["sourceQuests"] = { 81596 },	-- Delve Hunter
+			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+			["g"] = {
+				i(225547),	-- Toxic Victory (TOY!)
+			},
+		}),
 		q(84519, {	-- Ancient Curiosity: Combat
 			["provider"] = { "i", 228560 },	-- Ancient Curio (TODO: providers ids could be swapped)
 			["g"] = {
