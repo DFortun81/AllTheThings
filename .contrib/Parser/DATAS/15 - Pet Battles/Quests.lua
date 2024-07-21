@@ -1444,7 +1444,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 		["description"] = "Provides the Alliance Batte Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n5. 'Grand Master Payne'\n6. 'Battle Pet Tamers: Cataclysm'\n7. 'Grand Master Obalis'\n8. 'Battle Pet Tamers: Pandaria'\n9. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",
 		-- #endif
 	}),
-	n(66126, {	-- Zunta <Aspiring Pet Tamer>
+	n(63626, {	-- Varzok <Battle Pet Tamer>
 		["coord"] = { 52.6, 59.3, ORGRIMMAR },
 		["races"] = HORDE_ONLY,
 		-- #if BEFORE 9.0.3
