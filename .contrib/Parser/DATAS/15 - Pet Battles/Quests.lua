@@ -432,6 +432,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				-- Horde Shared Account-Wide Pet Battle Intro Quests
 				32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
 			},
+			["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.",
 		}),
 		q(31878, {	-- Audrey Burnhep
 			["isBreadcrumb"] = true,
@@ -482,6 +483,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["altQuests"] = {
 				-- Alliance Shared Account-Wide Pet Battle Intro Quests
 				32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
+			["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.",
 			},
 		}),
 		q(31882, {	-- Varzok
@@ -1433,6 +1435,24 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 		}),
 	})),
 	-- Pet Tamers (This section is work in progress - Danny Donkey)
+	n(63596, {	-- Audrey Burnheap <Battle Pet Tamer>
+		["coord"] = { 69.2, 25.0, STORMWIND_CITY },
+		["races"] = ALLIANCE_ONLY,
+		-- #if BEFORE 9.0.3
+		["description"] = "Provides the Alliance Batte Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n5. 'Grand Master Payne'\n6. 'Battle Pet Tamers: Cataclysm'\n7. 'Grand Master Obalis'\n8. 'Battle Pet Tamers: Pandaria'\n9. 'Grand Master Aki'\n\nNew quest might not be given until daily reset.",
+		-- #else
+		["description"] = "Provides the Alliance Batte Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n5. 'Grand Master Payne'\n6. 'Battle Pet Tamers: Cataclysm'\n7. 'Grand Master Obalis'\n8. 'Battle Pet Tamers: Pandaria'\n9. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",
+		-- #endif
+	}),
+	n(66126, {	-- Zunta <Aspiring Pet Tamer>
+		["coord"] = { 52.6, 59.3, ORGRIMMAR },
+		["races"] = HORDE_ONLY,
+		-- #if BEFORE 9.0.3
+		["description"] = "Provides the Horde Batte Pet questline, the quests are given in the following order:\n\n1. The inital quests touring middle Kalimdor\n2. 'Battle Pet Tamers: Eastern Kingdoms' + Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n5. 'Grand Master Payne'\n6. 'Battle Pet Tamers: Cataclysm'\n7. 'Grand Master Obalis'\n8. 'Battle Pet Tamers: Pandaria'\n9. 'Grand Master Aki'\n\nNew quest might not be given until daily reset.",
+		-- #else
+		["description"] = "Provides the Horde Batte Pet questline, the quests are given in the following order:\n\n1. The inital quests touring middle Kalimdor\n2. 'Battle Pet Tamers: Eastern Kingdoms' + Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n5. 'Grand Master Payne'\n6. 'Battle Pet Tamers: Cataclysm'\n7. 'Grand Master Obalis'\n8. 'Battle Pet Tamers: Pandaria'\n9. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",
+		-- #endif
+	}),
 	-- Old World tamers:
 	-- Lvl 2
 	n(64330, {	-- Julia Stevens <Aspiring Pet Tamer>
