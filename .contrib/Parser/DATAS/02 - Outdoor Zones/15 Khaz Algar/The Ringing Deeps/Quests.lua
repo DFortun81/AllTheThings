@@ -607,8 +607,115 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					},
 				}),
 			}),
-			-- TODO: This is currently broken in the ingame API, which returns different indexes than Wago has in the db2 files. Commented out as temp fix. Uncomment and probably adjust further numbering when Blizzard corrects this. Maybe manual header as temp fix?
-			--header(HEADERS.AchCriteria, 40799, {	-- Kobold Culture and Integration
+			header(HEADERS.AchCriteria, 40799.09, {	-- Kobold Candles
+				q(82946, {	-- Rollin' Down In the Deeps
+					["isDaily"] = true,
+					["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// yet I'm unsure
+					["provider"] = { "n", 216164 },	-- Gnawbles
+					["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
+					["g"] = {
+						--c(2902),	-- The Assembly of the Deeps Commendation, this is one-time Warband bonus
+					},
+				}),
+				q(79343, {	-- Everyday I'm Snufflin'
+					["isDaily"] = true,
+					["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// renown 2?
+					["provider"] = { "n", 216164 },	-- Gnawbles
+					["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
+				}),
+				q(79683, {	-- Home is Where the Candle Is
+					["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// but could be renown?
+					["provider"] = { "n", 222803 },	-- Skitter
+					["coord"] = { 47.1, 33.3, THE_RINGING_DEEPS },
+					["g"] = {
+						i(223625),	-- Cinderwold Sizzlestinger (PET!)
+					},
+				}),
+				q(81999, {	-- New Home, New Candle!
+					--["sourceQuests"] = { 80082 },	-- Back to Gundargaz
+					["provider"] = { "n", 216567 },	-- Janky
+					["coord"] = { 47.8, 35.4, THE_RINGING_DEEPS },
+				}),
+				q(79552, {	-- Hot Wax
+					["sourceQuests"] = { 81999 },	-- New Home, New Candle!
+					["provider"] = { "n", 219674 },	-- Janky
+					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+					["g"] = {
+						i(216670),	-- Fire Bee Wax (QI!)
+					},
+				}),
+				q(79998, {	-- Mite Not Right
+					["sourceQuests"] = { 81999 },	-- New Home, New Candle!
+					["provider"] = { "n", 219674 },	-- Janky
+					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+				}),
+				q(80000, {	-- Beebiter
+					["sourceQuests"] = {
+						79552,	-- How Wax
+						79998,	-- Mite Not Right
+					},
+					["provider"] = { "n", 219674 },	-- Janky
+					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+				}),
+				q(80202, {	-- Hot Pollenate-o
+					["sourceQuests"] = {
+						79552,	-- How Wax
+						79998,	-- Mite Not Right
+					},
+					["provider"] = { "n", 219674 },	-- Janky
+					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+				}),
+				q(79565, {	-- Janky Candles
+					["sourceQuests"] = {
+						80000,	-- Beebiter
+						80202,	-- Hot Pollenate-o
+					},
+					["provider"] = { "n", 219674 },	-- Janky
+					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+					["g"] = {
+						i(224262),	-- Begrudgingly Poured Cinderbrew (QI!)
+						i(224253),	-- Elementally Active Coal (QI!)
+						i(217395),	-- Freshly Smithed Tools (QI!)
+						i(216681),	-- Merchant Stall Parts (QI!)
+						i(220163),	-- [PH] Cinder Bee (PET!) (TODO: placeholder)
+					},
+				}),
+			}),
+			header(HEADERS.AchCriteria, 40799.10, {	-- Kobold Work Crew
+				q(80058, {	-- Kobold Kleanup
+					--["sourceQuests"] = { 80082 },	-- Back to Gundargaz
+					["provider"] = { "n", 216568 },	-- Fourman Grimes
+					["coord"] = { 47.8, 35.4, THE_RINGING_DEEPS },
+				}),
+				q(79556, {	-- On the Job Training
+					["sourceQuests"] = { 80058 },	-- Kobold Kleanup
+					["provider"] = { "n", 217131 },	-- Fourman Grimes
+					["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
+				}),
+				q(79680, {	-- Pipe Patching
+					["sourceQuests"] = { 79556 },	-- On the Job Training
+					["provider"] = { "n", 217131 },	-- Fourman Grimes
+					["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
+				}),
+				q(79681, {	-- Plumber Power
+					["sourceQuests"] = { 79556 },	-- On the Job Training
+					["provider"] = { "n", 217131 },	-- Fourman Grimes
+					["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
+				}),
+				q(79682, {	-- Critical Pressure!
+					["sourceQuests"] = {
+						79680,	-- Pipe Patching
+						79681,	-- Plumber Power
+					},
+					["provider"] = { "n", 217131 },	-- Fourman Grimes
+					["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
+					["g"] = {
+						i(220162),	-- [PH] Toy, Pipe Toy (TOY!) (TODO: but not really, atm)
+						--c(2902),	-- The Assembly of the Deeps Commendation, one-time Warband bonus
+					},
+				}),
+			}),
+			header(HEADERS.AchCriteria, 40799.11, {	-- Kobold Story Time
 				q(79504, {	-- Dripsy Forgot Her Candle
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
@@ -653,8 +760,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 						i(219224),	-- Prooftelling Flower (QI!)
 					},
 				}),
-			--}),
-			header(HEADERS.AchCriteria, 40799.09, {	-- Rampage at Nibelgaz Mine
+			}),
+			header(HEADERS.AchCriteria, 40799.12, {	-- Rampage at Nibelgaz Mine
 				q(79148, {	-- The Nibelgaz Refinery
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 215208 },	-- Orsenth
@@ -700,9 +807,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					--["maps"] = { THE_RINGING_DEEPS },
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.10, {	-- Abysmal Extraction
+			header(HEADERS.AchCriteria, 40799.13, {	-- Abysmal Extraction
 			}),
-			header(HEADERS.AchCriteria, 40799.11, {	-- Revenge in the Rumbling Wastes
+			header(HEADERS.AchCriteria, 40799.14, {	-- Revenge in the Rumbling Wastes
 				q(81655, {	-- Juicy Krolusk Meat
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 220417 },	-- Kagfritha
@@ -728,7 +835,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					},
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.12, {	-- Tired of Rest
+			header(HEADERS.AchCriteria, 40799.15, {	-- Tired of Rest
 				q(80576, {	-- Listener Lost
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 220600 },	-- Haimaz
@@ -786,7 +893,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 57.4, 43.1, THE_RINGING_DEEPS },
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.13, {	-- Frolicking in the Fetid Grotto
+			header(HEADERS.AchCriteria, 40799.16, {	-- Frolicking in the Fetid Grotto
 				q(81693, {	-- Desparately Seeking Skorthuz
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 220415 },	-- Hrandaz
@@ -811,111 +918,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "i", 226683 },	-- Malfunctioning Mechsuit
 				}),
 				i(221765),	-- Stonevault Mechsuit (MOUNT!)
-			}),
-			-- Kobolds quests
-			q(82946, {	-- Rollin' Down In the Deeps
-				["isDaily"] = true,
-				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// yet I'm unsure
-				["provider"] = { "n", 216164 },	-- Gnawbles
-				["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
-				["g"] = {
-					--c(2902),	-- The Assembly of the Deeps Commendation, this is one-time Warband bonus
-				},
-			}),
-			q(79343, {	-- Everyday I'm Snufflin'
-				["isDaily"] = true,
-				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// renown 2?
-				["provider"] = { "n", 216164 },	-- Gnawbles
-				["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
-			}),
-			q(79683, {	-- Home is Where the Candle Is
-				["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// but could be renown?
-				["provider"] = { "n", 222803 },	-- Skitter
-				["coord"] = { 47.1, 33.3, THE_RINGING_DEEPS },
-				["g"] = {
-					i(223625),	-- Cinderwold Sizzlestinger (PET!)
-				},
-			}),
-			q(81999, {	-- New Home, New Candle!
-				--["sourceQuests"] = { 80082 },	-- Back to Gundargaz
-				["provider"] = { "n", 216567 },	-- Janky
-				["coord"] = { 47.8, 35.4, THE_RINGING_DEEPS },
-			}),
-			q(79552, {	-- Hot Wax
-				["sourceQuests"] = { 81999 },	-- New Home, New Candle!
-				["provider"] = { "n", 219674 },	-- Janky
-				["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
-				["g"] = {
-					i(216670),	-- Fire Bee Wax (QI!)
-				},
-			}),
-			q(79998, {	-- Mite Not Right
-				["sourceQuests"] = { 81999 },	-- New Home, New Candle!
-				["provider"] = { "n", 219674 },	-- Janky
-				["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
-			}),
-			q(80000, {	-- Beebiter
-				["sourceQuests"] = {
-					79552,	-- How Wax
-					79998,	-- Mite Not Right
-				},
-				["provider"] = { "n", 219674 },	-- Janky
-				["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
-			}),
-			q(80202, {	-- Hot Pollenate-o
-				["sourceQuests"] = {
-					79552,	-- How Wax
-					79998,	-- Mite Not Right
-				},
-				["provider"] = { "n", 219674 },	-- Janky
-				["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
-			}),
-			q(79565, {	-- Janky Candles
-				["sourceQuests"] = {
-					80000,	-- Beebiter
-					80202,	-- Hot Pollenate-o
-				},
-				["provider"] = { "n", 219674 },	-- Janky
-				["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
-				["g"] = {
-					i(224262),	-- Begrudgingly Poured Cinderbrew (QI!)
-					i(224253),	-- Elementally Active Coal (QI!)
-					i(217395),	-- Freshly Smithed Tools (QI!)
-					i(216681),	-- Merchant Stall Parts (QI!)
-					i(220163),	-- [PH] Cinder Bee (PET!) (TODO: placeholder)
-				},
-			}),
-			q(80058, {	-- Kobold Kleanup
-				--["sourceQuests"] = { 80082 },	-- Back to Gundargaz
-				["provider"] = { "n", 216568 },	-- Fourman Grimes
-				["coord"] = { 47.8, 35.4, THE_RINGING_DEEPS },
-			}),
-			q(79556, {	-- On the Job Training
-				["sourceQuests"] = { 80058 },	-- Kobold Kleanup
-				["provider"] = { "n", 217131 },	-- Fourman Grimes
-				["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
-			}),
-			q(79680, {	-- Pipe Patching
-				["sourceQuests"] = { 79556 },	-- On the Job Training
-				["provider"] = { "n", 217131 },	-- Fourman Grimes
-				["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
-			}),
-			q(79681, {	-- Plumber Power
-				["sourceQuests"] = { 79556 },	-- On the Job Training
-				["provider"] = { "n", 217131 },	-- Fourman Grimes
-				["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
-			}),
-			q(79682, {	-- Critical Pressure!
-				["sourceQuests"] = {
-					79680,	-- Pipe Patching
-					79681,	-- Plumber Power
-				},
-				["provider"] = { "n", 217131 },	-- Fourman Grimes
-				["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
-				["g"] = {
-					i(220162),	-- [PH] Toy, Pipe Toy (TOY!) (TODO: but not really, atm)
-					--c(2902),	-- The Assembly of the Deeps Commendation, one-time Warband bonus
-				},
 			}),
 			-- Area where Janky quest leads (New Home, New Candle)
 			q(82952, {	-- An Opportunity to Relax
