@@ -96,10 +96,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(223132, {	-- Formula: Enchant Tool - Algari Resourcefulness (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
-					i(223132, {	-- Formula: Enchant Tool - Algari Resourcefulness (RECIPE!)
+					i(223113, {	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
-					i(223113, {	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
+					i(223124, {	-- Formula: Runed Null Stone Rod (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 					}),
 					i(223110, {	-- Pattern: Arathi Leatherworker's Smock (RECIPE!)
