@@ -507,6 +507,10 @@ root(ROOTS.Unsorted, {
 					i(219194),	-- Magical Mulch
 					i(219195),	-- Imbued Mulch
 					i(219196),	-- Empowered Mulch
+					i(214561),	-- Verdant Seed
+					i(214595),	-- Sporefused Verdant Seed
+					i(214597),	-- Irradiated Verdant Seed
+					i(214605),	-- Crystallized Verdant Seed
 				}),
 				prof(INSCRIPTION, {
 					i(225338),	-- Glyph of Jab
@@ -534,177 +538,13 @@ root(ROOTS.Unsorted, {
 					i(217982),	-- Versatile Cypher
 				}),
 				prof(JEWELCRAFTING, {
-					i(223081),	-- Design: Sifted Cave Sand \\ Design: Inscription Finishing Reagent (DNT)
-					i(225431),	-- Design: Vicious Jeweler's Setting
-					i(225432),	-- Design: Algari Competitor's Signet
-					i(225433),	-- Design: Algari Competitor's Amulet
-					i(212495),	-- Radiant Ruby
-					i(212498),	-- Ambivalent Amber
-					i(212505),	-- Extravagant Emerald
-					i(212511),	-- Ostentatious Onyx
-					i(213219),	-- Crushed Gemstones
-					i(213220),	-- Crushed Gemstones
-					i(213221),	-- Crushed Gemstones
-					i(213398),	-- Handful of Pebbles
-					i(213399),	-- Glittering Glass
-					i(213453),	-- Quick Ruby
-					i(213454),	-- Quick Ruby
-					i(213455),	-- Quick Ruby
-					i(213456),	-- Masterful Ruby
-					i(213457),	-- Masterful Ruby
-					i(213458),	-- Masterful Ruby
-					i(213459),	-- Versatile Ruby
-					i(213460),	-- Versatile Ruby
-					i(213461),	-- Versatile Ruby
-					i(213462),	-- Deadly Ruby
-					i(213463),	-- Deadly Ruby
-					i(213464),	-- Deadly Ruby
-					i(213465),	-- Deadly Sapphire
-					i(213466),	-- Deadly Sapphire
-					i(213467),	-- Deadly Sapphire
-					i(213468),	-- Quick Sapphire
-					i(213469),	-- Quick Sapphire
-					i(213470),	-- Quick Sapphire
-					i(213471),	-- Masterful Sapphire
-					i(213472),	-- Masterful Sapphire
-					i(213473),	-- Masterful Sapphire
-					i(213474),	-- Versatile Sapphire
-					i(213475),	-- Versatile Sapphire
-					i(213476),	-- Versatile Sapphire
-					i(213477),	-- Deadly Emerald
-					i(213478),	-- Deadly Emerald
-					i(213479),	-- Deadly Emerald
-					i(213480),	-- Masterful Emerald
-					i(213481),	-- Masterful Emerald
-					i(213482),	-- Masterful Emerald
-					i(213483),	-- Versatile Emerald
-					i(213484),	-- Versatile Emerald
-					i(213485),	-- Versatile Emerald
-					i(213486),	-- Quick Emerald
-					i(213487),	-- Quick Emerald
-					i(213488),	-- Quick Emerald
-					i(213489),	-- Deadly Onyx
-					i(213490),	-- Deadly Onyx
-					i(213491),	-- Deadly Onyx
-					i(213492),	-- Quick Onyx
-					i(213493),	-- Quick Onyx
-					i(213494),	-- Quick Onyx
-					i(213495),	-- Versatile Onyx
-					i(213496),	-- Versatile Onyx
-					i(213497),	-- Versatile Onyx
-					i(213498),	-- Masterful Onyx
-					i(213499),	-- Masterful Onyx
-					i(213500),	-- Masterful Onyx
-					i(213501),	-- Deadly Amber
-					i(213502),	-- Deadly Amber
-					i(213503),	-- Deadly Amber
-					i(213504),	-- Quick Amber
-					i(213505),	-- Quick Amber
-					i(213506),	-- Quick Amber
-					i(213507),	-- Masterful Amber
-					i(213508),	-- Masterful Amber
-					i(213509),	-- Masterful Amber
-					i(213510),	-- Versatile Amber
-					i(213511),	-- Versatile Amber
-					i(213512),	-- Versatile Amber
-					i(213515),	-- Solid Amber
-					i(213516),	-- Solid Amber
-					i(213517),	-- Solid Amber
-					i(213738),	-- Insightful Blasphemite
-					i(213739),	-- Insightful Blasphemite
-					i(213740),	-- Insightful Blasphemite
-					i(213741),	-- Culminating Blasphemite
-					i(213742),	-- Culminating Blasphemite
-					i(213743),	-- Culminating Blasphemite
-					i(213744),	-- Elusive Blasphemite
-					i(213745),	-- Elusive Blasphemite
-					i(213746),	-- Elusive Blasphemite
-					i(213747),	-- Enduring Bloodstone
-					i(213748),	-- Cognitive Bloodstone
-					i(213749),	-- Determined Bloodstone
-					i(213750),	-- Engraved Gemcutter
-					i(213751),	-- Engraved Gemcutter
-					i(213752),	-- Engraved Gemcutter
-					i(213753),	-- Decorative Lens
-					i(213754),	-- Decorative Lens
-					i(213755),	-- Decorative Lens
-					i(213756),	-- Marbled Stone
-					i(213757),	-- Marbled Stone
-					i(213758),	-- Marbled Stone
-					i(213759),	-- Inverted Prism
-					i(213760),	-- Inverted Prism
-					i(213761),	-- Inverted Prism
-					i(213762),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
-					i(213763),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
-					i(213764),	-- Sifted Cave Sand \\ DNT Inscription Finishing Reagent
-					i(213765),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
-					i(213766),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
-					i(213767),	-- Ominous Energy Crystal \\ DNT Engineering Finishing Reagent
-					i(213768),	-- Elemental Focusing Lens
-					i(213769),	-- Elemental Focusing Lens
-					i(213770),	-- Elemental Focusing Lens
-					i(213771),	-- Prismatic Null Stone
-					i(213772),	-- Prismatic Null Stone
-					i(213773),	-- Prismatic Null Stone
-					i(213774),	-- Captured Starlight
-					i(213775),	-- Captured Starlight
-					i(213776),	-- Captured Starlight
-					i(213777),	-- Magnificent Jeweler's Setting
-					i(213779),	-- Algari Amber Prism \\ Amber Prism (DNT)
-					i(213782),	-- Algari Emerald Prism \\ Emerald Prism (DNT)
-					i(213785),	-- Algari Ruby Prism \\ Ruby Prism (DNT)
-					i(213788),	-- Algari Onyx Prism \\ Onyx Prism (DNT)
-					i(213791),	-- Algari Sapphire Prism \\ Sapphire Prism (DNT)
+					i(213778),	-- Vicious Jeweler's Setting
 					i(214043),	-- Glittering Gemdust
-					i(214561),	-- Verdant Seed
-					i(214595),	-- Sporefused Verdant Seed
-					i(214597),	-- Irradiated Verdant Seed
-					i(214605),	-- Crystallized Verdant Seed
-					i(215117),	-- Storyteller's Glasses \\ T1 Inscription Glasses
-					i(215119),	-- Right-Handed Magnifying Glass
-					i(215120),	-- Radiant Loupes \\ T1 Jewelcrafting Head
-					i(215121),	-- Incanter's Shard \\ T1 Enchanting Focus
-					i(215122),	-- Novelist's Specs \\ T2 Inscription Glasses
-					i(215123),	-- Forger's Font Inspector \\ T2 Inscription Magnifying Glass
-					i(215124),	-- Extravagant Loupes \\ T2 Jewelcrafting Head
-					i(215125),	-- Enchanter's Crystal \\ T2 Enchanting Focus
-					i(215130),	-- Malleable Band
-					i(215131),	-- Malleable Pendant
-					i(215132),	-- Marvelous Mood Ring
-					i(215133),	-- Binding of Binding
-					i(215134),	-- Fractured Gemstone Locket
-					i(215135),	-- Ring of Earthen Craftsmanship
-					i(215136),	-- Amulet of Earthen Craftsmanship
-					i(215137),	-- Algari Competitor's Signet
 					i(215139),	-- Copy Copy Elemental Lariat
 					i(215143),	-- Copy Copy Elemental Lariat
-					i(215144),	-- Algari Competitor's Amulet
-					i(217113),	-- Cubic Blasphemia
-					i(217114),	-- Cubic Blasphemia
-					i(217115),	-- Cubic Blasphemia
-					i(223082),	-- Design: Ominous Energy Crystal \\ Design: Engineering Finishing Reagent (DNT) \\ Pattern: Artisan Gardening Hat
+					i(215236),	-- Vicious Bloodstone
 					i(223083),	-- Design: Elemental Focusing Lens \\ Pattern: Artisan Fishing Cap
 					i(223084),	-- Design: Prismatic Null Stone \\ Pattern: Artisan Enchanter's Hat
-					i(223085),	-- Design: Fractured Gemstone Locket \\ Pattern: Artisan Alchemist's Robe
-					i(223086),	-- Design: Insightful Blasphemite \\ Pattern: Artisan's Chef's Hat
-					i(223087),	-- Design: Culminating Blasphemite \\ Pattern: Alchemy Bag
-					i(223088),	-- Design: Elusive Blasphemite \\ Pattern: Blacksmithing Bag
-					i(223093),	-- Design: Beautification Iris \\ Pattern: Herbalism Bag
-					i(223094),	-- Design: Magnificent Jeweler's Setting \\ Pattern: Mining Bag
-					i(225679),	-- Design: Enduring Bloodstone
-					i(225680),	-- Design: Cognitive Bloodstone
-					i(225681),	-- Design: Determined Bloodstone
-					i(213780),	-- Algari Amber Prism
-					i(213781),	-- Algari Amber Prism
-					i(213783),	-- Algari Emerald Prism
-					i(213784),	-- Algari Emerald Prism
-					i(213786),	-- Algari Ruby Prism
-					i(213787),	-- Algari Ruby Prism
-					i(213789),	-- Algari Onyx Prism
-					i(213790),	-- Algari Onyx Prism
-					i(213792),	-- Algari Sapphire Prism
-					i(213793),	-- Algari Sapphire Prism
-					i(228217),	-- Design: Solid Amber
 					i(228320),	-- Design: Binding of Binding
 				}),
 				prof(MINING, {

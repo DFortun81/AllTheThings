@@ -530,3 +530,80 @@ i(208290, 419005);	-- Verdant Combatant's Jeweled Signet
 --- ITEM ---
 i(211588, 430055);	-- Draconic Combatant's Jeweled Amulet
 i(211589, 430056);	-- Draconic Combatant's Jeweled Signet
+
+
+------------------
+-- PATCH ADDED_11_PH_LAUNCH --
+------------------
+--- TRAINER ---
+i(0, 423339);	--  Khaz Algar Jewelcrafting
+i(0, 435337);	--  Algari Amber Prism
+i(0, 434537);	--  Deadly Amber
+i(0, 434549);	--  Deadly Ruby
+i(0, 435325);	--  Decorative Lens
+i(0, 435324);	--  Engraved Gemcutter
+i(0, 435323);	--  Gilded Vial
+i(0, 435373);	--  Incanter's Shard
+i(0, 435327);	--  Inverted Prism
+i(0, 435379);	--  Malleable Band
+i(0, 435380);	--  Malleable Pendant
+i(0, 435326);	--  Marbled Stone
+i(0, 434539);	--  Masterful Amber
+i(0, 434547);	--  Masterful Onyx
+i(0, 434538);	--  Quick Amber
+i(0, 434542);	--  Quick Emerald
+i(0, 435371);	--  Radiant Loupes
+i(0, 435375);	--  Right-Handed Magnifying Glass
+i(0, 435377);	--  Storyteller's Glasses
+i(0, 434540);	--  Versatile Amber
+i(0, 434563);	--  Versatile Sapphire
+
+--- ITEM ---
+i(225433, 435387);	--	Algari Competitor's Amulet
+i(225432, 435386);	--	Algari Competitor's Signet
+i(223093, 435391);	--	Beautification Iris (Toy)
+i(228320, 435382);	--	Binding of Binding
+i(228379, 435333);	--	Captured Starlight
+i(225680, 435321);	--	Cognitive Bloodstone
+i(224763, 435392);	--	Cubic Blasphemia
+i(223087, 435318);	--	Culminating Blasphemite
+i(225681, 435322);	--	Determined Bloodstone
+i(223088, 435319);	--	Elusive Blasphemite
+i(223090, 435374);	--	Enchanter's Crystal
+i(225679, 435320);	--	Enduring Bloodstone
+i(223089, 435372);	--	Extravagant Loupes
+i(223091, 435376);	--	Forger's Font Inspector
+i(223085, 435383);	--	Fractured Gemstone Locket
+i(223086, 435230);	--	Insightful Blasphemite
+i(223094, 435334);	--	Magnificent Jeweler's Setting
+i(223092, 435378);	--	Novelist's Specs
+i(223082, 435330);	--	Ominous Energy Crystal
+i(228329, 435389);	--	Remembrance Stone (Toy)
+i(223081, 435329);	--	Sifted Cave Sand
+
+--- SPECIALIZATION ---
+i(0, 434020);	--	Algari Crushing
+i(0, 435338);	--	Algari Emerald Prism
+i(0, 435369);	--	Algari Onyx Prism
+i(0, 434018);	--	Algari Prospecting
+i(0, 435339);	--	Algari Ruby Prism
+i(0, 435370);	--	Algari Sapphire Prism
+i(0, 435385);	--	Amulet of Earthen Craftsmanship
+i(0, 434541);	--	Deadly Emerald
+i(0, 434545);	--	Deadly Onyx
+i(0, 434553);	--	Deadly Sapphire
+i(0, 435331);	--	Elemental Focusing Lens
+i(0, 434543);	--	Masterful Emerald
+i(0, 434551);	--	Masterful Ruby
+i(0, 434555);	--	Masterful Sapphire
+i(0, 435332);	--	Prismatic Null Stone
+i(0, 434546);	--	Quick Onyx
+i(0, 434550);	--	Quick Ruby
+i(0, 434554);	--	Quick Sapphire
+i(0, 435384);	--	Ring of Earthen Craftsmanship
+i(0, 434544);	--	Versatile Emerald
+i(0, 434548);	--	Versatile Onyx
+i(0, 434552);	--	Versatile Ruby
+
+--- QUEST ---
+i(0, 434536);	-- Solid Amber

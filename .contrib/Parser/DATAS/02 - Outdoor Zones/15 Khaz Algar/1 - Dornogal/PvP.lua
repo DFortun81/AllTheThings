@@ -25,6 +25,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				n(219215, {	-- Hotharn <Competitor's Recipes>
 					["coord"] = { 55.4, 70.0, DORNOGAL },
 					["g"] = sharedData({ ["cost"] = {{"c", HONOR, 7500}} }, {
+						i(225433),	-- Design: Algari Competitor's Amulet (RECIPIE!)
+						i(225432),	-- Design: Algari Competitor's Signet (RECIPIE!)
+						i(225680),	-- Design: Cognitive Bloodstone (RECIPIE!)
+						i(225681),	-- Design: Determined Bloodstone (RECIPIE!)
+						i(225679),	-- Design: Enduring Bloodstone (RECIPIE!)
 						i(225452),	-- Pattern: Algari Competitor's Chain Chainmail (RECIPE!)
 						i(225453),	-- Pattern: Algari Competitor's Chain Cowl (RECIPE!)
 						i(225458),	-- Pattern: Algari Competitor's Chain Cuffs (RECIPE!)

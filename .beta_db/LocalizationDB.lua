@@ -6583,6 +6583,7 @@ _.ObjectNames = {
 	[456001] = "Rock Engineer's Wrench",
 	[456002] = "Void Shard",
 	[456003] = "Book of Dark Magic",
+	[456004] = "Enchanted Arathi Scroll",
 	[456005] = "Essence of Holy Fire",
 	[456006] = "Animated Enchanting Dust",
 	[456007] = "Soot-Coated Orb",

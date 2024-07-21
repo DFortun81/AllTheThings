@@ -1025,6 +1025,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 29.6, 86.5, ISLE_OF_DORN },
 					["g"] = {
 						i(223089),	-- Design: Extravagant Loupes (RECIPE!)
+						i(228217),	-- Design: Solid Amber
 					},
 				}),
 			}),

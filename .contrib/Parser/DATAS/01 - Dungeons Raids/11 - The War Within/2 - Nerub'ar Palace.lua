@@ -210,6 +210,7 @@ local EncounterToLoot = {
 			i(211984),	-- Warsculptor's Barbute
 		}),
 		i(212407),	-- Anub'arash's Colossal Mandible
+		i(223094),	-- Design: Magnificent Jeweler's Setting (RECIPE!)
 		i(212443),	-- Shattershell Greaves
 		i(225575),	-- Silken Advisor's Favor
 		i(225584),	-- Skeinspinner's Duplicitous Cuffs
