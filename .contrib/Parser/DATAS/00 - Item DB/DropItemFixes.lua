@@ -10,13 +10,24 @@ local i = function(itemID, drop)
 	return item;
 end
 
--- Classic Profession items tainted by BlizzAPI data
-i(  2770, "requireSkill")	-- Copper Ore
-i(  2772, "requireSkill")	-- Iron Ore
-i(  3858, "requireSkill")	-- Mithril Ore
-i( 10620, "requireSkill")	-- Thorium Ore
-i( 23424, "requireSkill")	-- Fel Iron Ore
-i( 23425, "requireSkill")	-- Adamantite Ore
-
--- Used within multiple bubbleDown locations
-i(ARTISANS_METTLE, "requireSkill")	-- Artisan's Mettle
+for _,itemID in ipairs({
+	  2770,	-- Copper Ore
+	  2771,	-- Tin Ore
+	  2772,	-- Iron Ore
+	  3858,	-- Mithril Ore
+	 10620,	-- Thorium Ore
+	 23424,	-- Fel Iron Ore
+	 23425,	-- Adamantite Ore
+	 36909,	-- Cobalt Ore
+	 36910,	-- Titanium Ore
+	 36912,	-- Saronite Ore
+	 52183,	-- Pyrite Ore
+	 52185,	-- Elementium Ore
+	 53038,	-- Obsidium Ore
+	 72092,	-- Ghost Iron Ore
+	 72094,	-- Black Trillium Ore
+	 72103,	-- White Trillium Ore
+	 ARTISANS_METTLE,
+}) do
+	i(itemID, "requireSkill")
+end
