@@ -323,6 +323,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/7 Blackhoof Armaments
+							["providers"] = {
+								{ "i", 33071 },	-- Blackhoof Armaments
+								{ "o", 186301 },	-- Blackhoof Armaments
+							},
+						}),
 						i(57837, {	-- Biting Greataxe
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -388,6 +394,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27407,	-- Bloodfen Feathers
 					["coord"] = { 41.8, 73.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Stonemaul Banner
+							["providers"] = {
+								{ "i", 33086 },	-- Stonemaul Banner
+								{ "o", 186329 },	-- Stonemaul Clan Banner
+							},
+						}),
+					},
 				}),
 				q(11160, {	-- Banner of the Stonemaul
 					["qg"] = 23579,	-- Brogg <Stonemaul Survivor>
@@ -752,6 +766,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.4, 31.8, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Darkmist Egg
+							["provider"] = { "o", 205267 },	-- Darkmist Egg
+						}),
+					},
 				}),
 				q(27218, {	-- Dastardly Denizens of the Deep
 					["qg"] = 23892,	-- Babs Fizzletorque
@@ -1532,6 +1551,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/7 Blackhoof Armaments
+							["providers"] = {
+								{ "i", 33071 },	-- Blackhoof Armaments
+								{ "o", 186301 },	-- Blackhoof Armaments
+							},
+						}),
 						i(57852, {	-- Grimtotem Cloak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1715,6 +1740,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Mok'Morokk's Snuff
+							["providers"] = {
+								{ "i", 5834 },	-- Mok'Morokk's Snuff
+								{ "o", 19904 },	-- Mok'Morokk's Snuff
+							},
+						}),
+						objective(2, {	-- 0/1 Mok'Morokk's Grog
+							["providers"] = {
+								{ "i", 5835 },	-- Mok'Morokk's Grog
+								{ "o", 19905 },	-- Mok'Morokk's Grog
+							},
+						}),
+						objective(3, {	-- 0/1 Mok'Morokk's Strongbox
+							["providers"] = {
+								{ "i", 5836 },	-- Mok'Morokk's Strongbox
+								{ "o", 19906 },	-- Mok'Morokk's Strongbox
+							},
+						}),
 						i(57848, {	-- Mok'Morokk's Grog Bottle
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1855,6 +1898,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Deserter Propaganda
+							["providers"] = {
+								{ "i", 33008 },	-- Deserter Propaganda
+								{ "o", 186266 },	-- Deserter Propaganda
+							},
+						}),
+					},
 				}),
 				q(11128, {	-- Propaganda War
 					["qg"] = 23566,	-- Calia Hastings <SI:7>
@@ -2136,6 +2187,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 63.8, 16.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Damaged Diving Gear
+							["providers"] = {
+								{ "i", 33038 },	-- Damaged Diving Gear
+								{ "o", 186273 },	-- Damaged Diving Gear
+							},
+						}),
+						objective(2, {	-- 0/1 Tool Kit
+							["providers"] = {
+								{ "i", 33039 },	-- Tool Kit
+								{ "o", 186272 },	-- Tool Kit
+							},
+						}),
+					},
 				}),
 				q(11139, {	-- Secondhand Diving Gear
 					["qg"] = 23569,	-- Renn McGill <SI:7 Salvage Diver>
@@ -2160,6 +2225,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27346,	-- The Zeppelin Crash
 					["coord"] = { 53.5, 56.9, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/8 Zeppelin Cargo
+							["providers"] = {
+								{ "i", 33163 },	-- Zeppelin Cargo
+								{ "o", 186450 },	-- Zeppelin Cargo
+							},
+						}),
+					},
 				}),
 				q(11207, {	-- Secure the Cargo!
 					["qg"] = 23797,	-- Moxie Steelgrille
@@ -2615,6 +2688,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Egg of Onyxia destroyed
+							["provider"] = { "o", 20359 },	-- Egg of Onyxia
+						}),
 						i(57836, {	-- Encarmine Spaulders
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -3040,6 +3116,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27188,	-- What's Haunting Witch Hill?
 					["coord"] = { 55.5, 26.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/9 Witchbane
+							["providers"] = {
+								{ "i", 33112 },	-- Witchbane
+								{ "o", 186423 },	-- Witchbane
+							},
+						}),
+					},
 				}),
 				q(11181, {	-- The Witch's Bane
 					["qg"] = 23843,	-- Mordant Grimsby
