@@ -1716,6 +1716,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.7, 17.2, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Stonetear
+							["providers"] = {
+								{ "i", 52573 },	-- Stonetear
+								{ "o", 202606 },	-- Stonetear
+							},
+						}),
+					},
 				}),
 				q(25237, {	-- Tears of Stone [H]
 					["qg"] = 39377,	-- Konu Runetotem
@@ -1723,6 +1731,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.3, 15.4, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Stonetear
+							["providers"] = {
+								{ "i", 52573 },	-- Stonetear
+								{ "o", 202606 },	-- Stonetear
+							},
+						}),
+					},
 				}),
 				q(25208, {	-- Tell Silvia
 					["qg"] = 40052,	-- Estulan
@@ -1810,6 +1826,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 65.9, 62.8, FERALAS },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/6 Glowing Soil
+							["providers"] = {
+								{ "i", 53135 },	-- Glowing Soil
+								{ "o", 202793 },	-- Loose Soil
+							},
+						}),
+					},
 				}),
 				q(25643, {	-- The Darkmist Ruins
 					["qg"] = 5390,	-- Sage Palerunner
