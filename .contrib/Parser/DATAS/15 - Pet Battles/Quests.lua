@@ -432,7 +432,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				-- Horde Shared Account-Wide Pet Battle Intro Quests
 				32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
 			},
-			["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.",
+			["description"] = "|CFFFF0000Do not|r under any circumstances abandon this quest, you cannot reobtain it.",
 		}),
 		q(31878, {	-- Audrey Burnhep
 			["isBreadcrumb"] = true,
@@ -483,8 +483,8 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["altQuests"] = {
 				-- Alliance Shared Account-Wide Pet Battle Intro Quests
 				32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
-			["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.",
 			},
+			["description"] = "|CFFFF0000Do not|r under any circumstances abandon this quest, you cannot reobtain it.",
 		}),
 		q(31882, {	-- Varzok
 			["races"] = HORDE_ONLY,
