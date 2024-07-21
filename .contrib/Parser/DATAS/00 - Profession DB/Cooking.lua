@@ -891,7 +891,7 @@ i(0, 445094);		-- Zesty Nibblers
 --- ITEM ---
 i(223961, 447875);	-- Azj-Kahet Special
 i(225894, 445108);	-- Beledar's Bounty
-i(223961, 445479);	-- Cinder Nectar
+i(228424, 445479);	-- Cinder Nectar
 i(224152, 445109);	-- Empress' Farewell
 i(223956, 447870);	-- Everything-On-A-Stick
 i(224418, 445115);	-- Everything Stew
