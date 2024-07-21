@@ -283,6 +283,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 69.9, 85.1, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Tattooed Pirate Head
+							["providers"] = {
+								{ "i", 46832 },	-- Tattooed Pirate Head
+								{ "o", 195205 },	-- Hanging Pirate Head
+							},
+						}),
+					},
 				}),
 				q(880, {	-- Altered Beings
 					-- #if AFTER CATA
@@ -310,6 +318,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Ammo Dumps Destroyed
+							["provider"] = { "o", 195203 },	-- Theramore Ammunition Stockpile
+						}),
 						i(59558, {	-- Gouging Staff
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -324,6 +335,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.0, 49.4, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Stolen Grain
+							["providers"] = {
+								{ "i", 46742 },	-- Stolen Grain
+								{ "o", 195118 },	-- Stolen Grain Sack
+							},
+						}),
+					},
 				}),
 				q(853, {	-- Apothecary Zamah
 					["providers"] = {
@@ -1146,6 +1165,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_1_0 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Demon Seed
+							["providers"] = {
+								{ "i", 68837 },	-- Demon Seed
+								{ "o", 3524 },	-- The Demon Seed
+							},
+						}),
 						i(69219, {	-- Sacrificial Blade
 							["timeline"] = { ADDED_4_1_0 },
 						}),
@@ -1234,6 +1259,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.2, 15.2, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Serviceable Arrow
+							["providers"] = {
+								{ "i", 45004 },	-- Serviceable Arrow
+								{ "o", 194263 },	-- Serviceable Arrow
+							},
+						}),
+					},
 				}),
 				q(14045, {	-- Find Baron Longshore
 					["qg"] = 3391,	-- Gazlowe
@@ -1272,6 +1305,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.1, 78.3, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/4 Centaur Intelligence
+							["providers"] = {
+								{ "i", 46857 },	-- Centaur Intelligence
+								{ "o", 195240 },	-- Centaur Intelligence
+							},
+						}),
+					},
 				}),
 				q(1503, {	-- Forged Steel
 					["qg"] = 5878,	-- Thun'grim Firegaze
@@ -1383,6 +1424,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Gazlowe's Treasure Chest
+							["providers"] = {
+								{ "i", 46833 },	-- Gazlowe's Treasure Chest
+								{ "o", 195206 },	-- Curious Pirate Landmark
+							},
+						}),
 						i(59560, {	-- Bling Cane
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1456,6 +1503,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 77.2, 91.3, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Heavy Dwarven Rifle
+							["providers"] = {
+								{ "i", 46836 },	-- Heavy Dwarven Rifle
+								{ "o", 195211 },	-- Southsea Gun Rack
+							},
+						}),
+					},
 				}),
 				q(875, {	-- Harpy Lieutenants
 					["qg"] = 3449,	-- Darsok Swiftdagger
@@ -2256,6 +2311,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.3, 24.8, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Nugget Slug
+							["providers"] = {
+								{ "i", 11143 },	-- Nugget Slug
+								{ "o", 161752 },	-- Tool Bucket
+							},
+						}),
+					},
 				}),
 				q(3922, {	-- Nugget Slugs
 					["qg"] = 9316,	-- Wenikee Boltbucket
@@ -2520,6 +2583,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.3, 25.6, NORTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_6 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Shut off Main Control Valve
+							["provider"] = { "o", 4072 },	-- Main Control Valve
+						}),
+						objective(2, {	-- 0/1 Shut off Fuel Control Valve
+							["provider"] = { "o", 61936 },	-- Fuel Control Valve
+						}),
+						objective(3, {	-- 0/1 Shut off Regulator Valve
+							["provider"] = { "o", 61935 },	-- Regulator Valve
+						}),
+					},
 				}),
 				q(29023, {	-- Samophlange (3/4)
 					["provider"] = { "o", 4141 },	-- Control Console
@@ -3754,6 +3828,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Wittle Waptor
+							["providers"] = {
+								{ "i", 46851 },	-- Wittle Waptor
+								{ "o", 195239 },	-- Woaded Waptor Twap
+							},
+						}),
 						i(59563, {	-- Waptor Thwapper
 							["timeline"] = { ADDED_4_0_3 },
 						}),
