@@ -323,6 +323,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Slain Wildkin Feather
+							["providers"] = {
+								{ "i", 44960 },	-- Slain Wildkin Feather
+								{ "o", 195007 },	-- Slain Wildkin Feather
+							},
+						}),
 						i(55133, {	-- Wildkin Feather Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1057,6 +1063,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 37.6, 82.8, DARKSHORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Salvageable Greymist Wreckage
+							["providers"] = {
+								{ "i", 46384 },	-- Salvageable Greymist Wreckage
+								{ "o", 195042 },	-- Greymist Debris
+								{ "o", 195080 },	-- Floating Greymist Debris
+							},
+						}),
+					},
 				}),
 				q(13599, {	-- Grimclaw's Return
 					["qg"] = 33048,	-- Keeper Karithus
@@ -1196,6 +1211,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Jadefire Brazier
+							["provider"] = { "o", 194150 },	-- Jadefire Brazier
+						}),
 						i(52608, {	-- Torn Fur Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1454,6 +1472,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.8, 19.5, DARKSHORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Highborne Relic
+							["providers"] = {
+								{ "i", 44830 },	-- Highborne Relic
+								{ "o", 194088 },	-- Highborne Relic
+								{ "o", 194089 },	-- Highborne Relic
+								{ "o", 194090 },	-- Highborne Relic
+							},
+						}),
+					},
 				}),
 				-- #if BEFORE CATA
 				q(6343, {	-- Return to Nessa / Return to Nyoma [CATA+]
@@ -1616,6 +1644,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 37.7, 82.9, DARKSHORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mud-Crusted Ancient Disc
+							["providers"] = {
+								{ "i", 46386 },	-- Mud-Crusted Ancient Disc
+								{ "o", 195054 },	-- Mud-Crusted Ancient Disc
+							},
+						}),
+					},
 				}),
 				q(13907, {	-- Sweeping Clean the Ruins
 					["qg"] = 34340,	-- Archaeologist Groff
@@ -1778,6 +1814,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.5, 81.0, DARKSHORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Bear's Paw
+							["providers"] = {
+								{ "i", 44850 },	-- Bear's Paw
+								{ "o", 194100 },	-- Bear's Paw
+							},
+						}),
+					},
 				}),
 				q(4763, {	-- The Blackwood Corrupted
 					["qg"] = 3649,	-- Thundris Windweaver
@@ -1849,6 +1893,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/16 Encrusted Clam Muscle
+							["providers"] = {
+								{ "i", 44864 },	-- Encrusted Clam Muscle
+								{ "o", 194107 },	-- Encrusted Clam
+							},
+						}),
 						i(131823, {	-- Diver's Waistband
 							["timeline"] = { ADDED_7_0_3 },
 						}),
@@ -2233,6 +2283,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Seed of the Earth
+							["providers"] = {
+								{ "i", 46354 },	-- Seed of the Earth
+								{ "n", 33072 },	-- Onu
+							},
+						}),
+						objective(2, {	-- 0/1 Seed of the Sea
+							["providers"] = {
+								{ "i", 46356 },	-- Seed of the Sea
+								{ "o", 195021 },	-- Glittering Shell
+							},
+						}),
+						objective(3, {	-- 0/1 Seed of the Sky
+							["providers"] = {
+								{ "i", 46355 },	-- Seed of the Sky
+								{ "n", 34306 },	-- Darkshore Wisp
+							},
+						}),
 						i(52590, {	-- Wisp-Chaser Cord
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -2567,6 +2635,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 50.3, 20.3, DARKSHORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Twilight Plans
+							["providers"] = {
+								{ "i", 44968 },	-- Twilight Plans
+								{ "o", 194204 },	-- Twilight Plans
+							},
+						}),
+					},
 				}),
 				q(13896, {	-- Unearthed Knowledge
 					["qg"] = 34404,	-- Larien
@@ -2581,6 +2657,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.9, 39.0, DARKSHORE },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Fuming Toadstool
+							["providers"] = {
+								{ "i", 44976 },	-- Fuming Toadstool
+								{ "o", 194208 },	-- Fuming Toadstool
+								{ "o", 194209 },	-- Fuming Toadstool
+							},
+						}),
+					},
 				}),
 				q(4740, {	-- WANTED: Murkdeep!
 					["provider"] = { "o", 175320 },	-- WANTED: Murkdeep!
