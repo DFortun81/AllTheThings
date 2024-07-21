@@ -28,6 +28,7 @@ for _,itemID in ipairs({
 	 72094,	-- Black Trillium Ore
 	 72103,	-- White Trillium Ore
 	 ARTISANS_METTLE,
+	 ARTISANS_ACUITY,
 }) do
 	i(itemID, "requireSkill")
 end
