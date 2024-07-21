@@ -587,6 +587,13 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(18551),	-- Gladiator: Season 8
 		-- #endif
 		-- #endif
+		--3.4.3.55417
+		-- #if ANYCLASSIC
+		-- #if AFTER 3.4.3
+		ach(40821),	-- Successfully Stress Test CN Realms
+		ach(40841),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
+		-- #endif
+		-- #endif
 	}),
 	expansion(EXPANSION.CATA, {
 		ach(5232),	-- Twin Peaks battles
