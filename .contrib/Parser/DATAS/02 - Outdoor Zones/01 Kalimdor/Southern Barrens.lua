@@ -1441,6 +1441,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.4, 67.5, SOUTHERN_BARRENS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Siege Engine Scrap
+							["providers"] = {
+								{ "i", 52285},	-- Siege Engine Scrap
+								{ "o", 202477},	-- Siege Engine Scrap
+								{ "o", 202478},	-- Siege Engine Scrap
+							},
+						}),
+					},
 				}),
 				q(25079, {	-- Powder Play
 					["qg"] = 39084,	-- Mizzy Pistonhammer
