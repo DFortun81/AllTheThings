@@ -4,10 +4,10 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(THE_RINGING_DEEPS, {
 		n(WORLD_QUESTS, {
-			--["sourceQuests"] = {
-			--	71232,	-- Renown of the Dragon Isles
-			--	DF_ACCOUNT_CAMPAIGN_QUEST,
-			--},
+			["sourceQuests"] = {
+				79197,	-- Surface Bound
+				TWW_ACCOUNT_CAMPAIGN_QUEST,
+			},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 				petbattle(q(82293, {	-- The Power of Friendship
 					["coord"] = { 61.6, 37.6, THE_RINGING_DEEPS },

@@ -4,10 +4,10 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(ISLE_OF_DORN, {
 		n(WORLD_QUESTS, {
-			--["sourceQuests"] = {
-			--	71232,	-- Renown of the Dragon Isles
-			--	DF_ACCOUNT_CAMPAIGN_QUEST,
-			--},
+			["sourceQuests"] = {
+				79197,	-- Surface Bound
+				TWW_ACCOUNT_CAMPAIGN_QUEST,
+			},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 				petbattle(q(82292, {	-- Rock Collector
 					["coord"] = { 34.9, 85.6, ISLE_OF_DORN },
@@ -62,39 +62,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					},
 				}),
 				q(81803, {	-- Skyrider Racing - Basin Bypass
-					-- normal - 80221 / advanced - 80227 / reversed - 80233
 					["coord"] = { 53.5, 64.2, ISLE_OF_DORN },
-					["g"] = {
-						i(227450),	-- Sky Racer's Purse
-					},
 				}),
 				q(81799, {	-- Skyrider Racing - Dornogal Drift
-					-- normal - 80219 / advanced - 80225 / reversed - 80231
 					["coord"] = { 43.5, 11.7, DORNOGAL },	-- probably gonna need to move out of here
-					["g"] = {
-						i(227450),	-- Sky Racer's Purse
-					},
 				}),
 				q(81802, {	-- Skyrider Racing - Storm's Watch Survey
-					-- normal - 80220 / advanced - 80226 / reversed - 80232
 					["coord"] = { 38.6, 43.6, ISLE_OF_DORN },
-					["g"] = {
-						i(227450),	-- Sky Racer's Purse
-					},
 				}),
 				q(81804, {	-- Skyrider Racing - The Wold Ways
-					-- normal - 80222 / advanced - 80228 / reversed - 80234
 					["coord"] = { 62.0, 46.0, ISLE_OF_DORN },
-					["g"] = {
-						i(227450),	-- Sky Racer's Purse
-					},
 				}),
 				q(81805, {	-- Skyrider Racing - Thunderhead Trail
-					-- normal - 80223 / advanced - 80229 / reversed - 80235
 					["coord"] = { 58.6, 21.1, ISLE_OF_DORN },
-					["g"] = {
-						i(227450),	-- Sky Racer's Purse
-					},
 				}),
 				q(81621, {	-- Tunnels Be Gone!
 					--also pop as bonus objective (and didn't show on map, but fall as world quest in quest tracker)
@@ -118,6 +98,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 71.3, 40.7, ISLE_OF_DORN },
 				}),
 				q(81649, {	-- Special Assignment: Titanic Resurgence // can bug out interface and make you character unplayable atm
+					["coord"] = { 73.0, 77.2, ISLE_OF_DORN },
+				}),
+				q(82154, {	-- Special Assignment: Titanic Resurgence
 					["coord"] = { 73.0, 77.2, ISLE_OF_DORN },
 				}),
 			}),

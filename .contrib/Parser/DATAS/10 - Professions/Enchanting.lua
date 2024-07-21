@@ -845,6 +845,13 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 					i(226290),	-- Book of Dark Magic
 				},
 			}),
+			o(456004, {	-- Enchanted Arathi Scroll
+				["coord"] = { 48.6, 64.5, HALLOWFALL },
+				["questID"] = 83863,
+				["g"] = {
+					i(226289),	-- Enchanted Arathi Scroll
+				},
+			}),
 			o(456005, {	-- Essence of Holy Fire
 				["coord"] = { 40.1, 70.5, HALLOWFALL },
 				["questID"] = 83862,
@@ -884,6 +891,10 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["name"] = "Inscription Order: Enchanting",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222550 },	-- Algari Treatise on Enchanting
+			}),
+			q(83258, {	-- Weekly Enchanting Knowledgepoint #1
+				["name"] = "TWW: Enchanting Treasure #1",
+				["provider"] =  { "i", 225231 },	-- Powdered Fulgurance
 			}),
 		})),
 	})),

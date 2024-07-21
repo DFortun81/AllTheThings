@@ -4,10 +4,10 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(AZJ_KAHET, {
 		n(WORLD_QUESTS, {
-			--["sourceQuests"] = {
-			--	71232,	-- Renown of the Dragon Isles
-			--	DF_ACCOUNT_CAMPAIGN_QUEST,
-			--},
+			["sourceQuests"] = {
+				79197,	-- Surface Bound
+				TWW_ACCOUNT_CAMPAIGN_QUEST,
+			},
 			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
 				petbattle(q(82297, {	-- One Hungry Worm
 					["provider"] = { "n", 223406 },	-- Zaedu

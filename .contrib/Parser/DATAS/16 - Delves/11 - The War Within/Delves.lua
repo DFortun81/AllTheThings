@@ -1031,6 +1031,15 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		}),
 		n(208070, {	-- Sir Finley Mrgglton <Delve Treasures>
+			i(226258, {	-- Delver's Pouch of Reagents
+				["cost"] = {{"c", UNDERCOIN, 1500}},
+			}),
+			i(226259, {	-- Delver's Pouch of Resonance Crystals
+				["cost"] = {{"c", UNDERCOIN, 2000}},
+				["g"] = {
+					currency(RESONANCE_CRYSTALS),
+				},
+			}),
 			i(224172, {	-- Restored Coffer Key
 				["cost"] = {{"c", UNDERCOIN, 1000}},
 			}),

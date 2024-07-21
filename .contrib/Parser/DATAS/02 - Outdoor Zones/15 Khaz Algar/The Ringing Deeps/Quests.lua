@@ -370,6 +370,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 44.1, 40.2, THE_RINGING_DEEPS },
 					["g"] = {
 						i(219213),	-- Unfaceted Purple Gemstone (QI!)
+						i(228658),	-- Batzvara's Gratitude
 					},
 				}),
 			}),

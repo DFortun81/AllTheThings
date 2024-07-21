@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 		currency(RESTORED_COFFER_KEY, {
 			["cost"] = {{"i", 220693, 100}},	-- 100x Coffer Key Shard
 		}),
+		i(227450),	-- Sky Racer's Purse
 		filter(BACK_F, {
 			i(224664),	-- Gem-Woven Cloak
 			i(224663),	-- Gem-Woven Shawl
@@ -89,6 +90,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			--hqt - 83280, possibly related to key but dunno (1st cache) / on beta pop before opening 1st cache and it is unflagged with weekly reset
 			--hqt - 83281, possibly related to key but dunno (2nd cache)
 		}),
-
+		n(WEEKLY_PROFESSION_KNOWLEDGE, {
+			["description"] = "Rewarded from many different treasures and activities",
+			["g"] = {
+				-- Alchemy
+				i(225234),	-- Alchemical Sediment
+				i(225235),	-- Deepstone Crucible
+				-- Enchanting
+				i(225231),	-- Powdered Fulgurance
+				-- Leatherworking
+				i(225222),	-- Stone-Leather Swatch
+				i(225223),	-- Sturdy Nerubian Carapace
+			},
+		}),
 	}),
 })));

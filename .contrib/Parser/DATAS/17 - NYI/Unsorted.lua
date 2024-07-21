@@ -54,7 +54,7 @@ root(ROOTS.Unsorted, {
 				i(228655),	-- Scrit's Handmade Gloves
 				i(228656),	-- Scrit's Handmade Shoulders
 				i(228657),	-- Scrit's Handmade Girdle
-				i(228658),	-- Batzvara's Gratitude
+
 				i(228668),	-- Compiler's Handwraps
 				i(228671),	-- Compiler's Shoulderguards
 				i(228673),	-- Compiler's Chain Clasp
@@ -735,7 +735,7 @@ root(ROOTS.Unsorted, {
 				i(224835),	-- Deepgrove Roots
 				i(225220),	-- Chitin Needle
 				i(225221),	-- Spool of Webweave
-				i(225222),	-- Stone-Leather Swatch
+
 				i(225224),	-- Diaphanous Gem Shards
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
@@ -743,12 +743,12 @@ root(ROOTS.Unsorted, {
 				i(225228),	-- Rust-Locked Mechanism
 				i(225229),	-- Earthen Induction Coil
 				i(225230),	-- Crystalline Repository
-				i(225231),	-- Powdered Fulgurance
+
 				i(225232),	-- Coreway Billet
 				i(225233),	-- Dense Bladestone
-				i(225234),	-- Alchemical Sediment
-				i(225235),	-- Deepstone Crucible
-				i(225223),	-- Sturdy Nerubian Carapace \ \ Molted DragonScales
+
+
+
 				i(226266),	-- Metal Dornogal Frame
 				i(226268),	-- Engraved Stirring Rod
 				i(226276),	-- Ancient Earthen Anvil
@@ -760,7 +760,7 @@ root(ROOTS.Unsorted, {
 				i(226282),	-- Nerubian Smith's Kit
 				i(226283),	-- Spiderling's Wire Brush
 				i(226284),	-- Grinded Earthen Gem
-				i(226289),	-- Enchanted Arathi Scroll
+
 				i(226292),	-- Rock Engineer's Wrench
 				i(226293),	-- Dornogal Spectacles
 				i(226294),	-- Inert Mining Bomb
@@ -1815,8 +1815,7 @@ root(ROOTS.Unsorted, {
 				i(226205),	-- Distilled Algari Freshwater
 				i(226256),	-- Token of the Remembrancers
 				i(226257),	-- Delver's Pouch of Valorstones
-				i(226258),	-- Delver's Pouch of Reagents
-				i(226259),	-- Delver's Pouch of Resonance Crystals
+
 				i(226260),	-- Delver's Pouch of Gold
 				i(226430),	-- Navigations of The Soul
 				i(226524),	-- Partially-Charged Hologem
