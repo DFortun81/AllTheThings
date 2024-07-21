@@ -206,6 +206,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.6, 18.3, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Irontree Explosives
+							["providers"] = {
+								{ "i", 63516 },	-- Irontree Explosives
+								{ "o", 207105 },	-- Irontree Explosive
+							},
+						}),
+					},
 				}),
 				q(28218, {	-- A Destiny of Flame and Sorrow
 					["qg"] = 47923,	-- Feronas Sindweller
@@ -275,6 +283,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28305,	-- The Fate of Bloodvenom Post
 					["coord"] = { 41.2, 49.9, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/7 Emerald Shimmercap
+							["providers"] = {
+								{ "i", 63078 },	-- Emerald Shimmercap
+								{ "o", 206764 },	-- Emerald Shimmercap
+							},
+						}),
+					},
 				}),
 				q(5202, {	-- A Strange Red Key
 					["provider"] = { "i", 13140 },	-- Blood Red Key
@@ -402,6 +418,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Irontree Explosives
+							["providers"] = {
+								{ "i", 63516 },	-- Irontree Explosives
+								{ "o", 207105 },	-- Irontree Explosive
+							},
+						}),
 						i(65342, {	-- Irontree Cloak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -861,6 +883,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28152,	-- Jaedenar Awaits
 					["coord"] = { 43.9, 61.8, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/8 Crying Violet
+							["providers"] = {
+								{ "i", 63032 },	-- Crying Violet
+								{ "o", 206706 },	-- Crying Violet
+							},
+						}),
+					},
 				}),
 				q(28148, {	-- Culling the Corrupted
 					["qg"] = 10921,	-- Taronn Redfeather
@@ -939,6 +969,18 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.3, 58.2, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/1 Extinguish the Brazier of Pain
+							["provider"] = { "o", 176158 },	-- Brazier of Pain
+						}),
+						objective(2, {	-- 0/1 Extinguish the Brazier of Malice
+							["provider"] = { "o", 176159 },	-- Brazier of Malice
+						}),
+						objective(3, {	-- 0/1 Extinguish the Brazier of Suffering
+							["provider"] = { "o", 176160 },	-- Brazier of Suffering
+						}),
+						objective(4, {	-- 0/1 Extinguish the Brazier of Hatred
+							["provider"] = { "o", 176161 },	-- Brazier of Hatred
+						}),
 						i(65281, {	-- Belt of the Lost Barrow
 							["timeline"] = { ADDED_4_0_3 },
 						}),
