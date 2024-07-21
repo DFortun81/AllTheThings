@@ -1941,3 +1941,24 @@ i(226518);	-- Phero-Escape
 i(222693);	-- Hearty Food
 i(222740);	-- Hearty Meals
 i(228721);	-- Hearty Feast
+i(228494);	-- Crunchy Rock Candy
+i(228493);	-- Sour Topaz Bites
+i(228492);	-- Spicy Rubies
+i(228489);	-- Fashionable Flask
+i(228488);	-- Small Glass Vase
+i(228608);	-- On the Application of Arathi Technology to Earthen Life
+i(228609);	-- Rock Roasting for Dummies
+i(228490);	-- Fresh Grazing Rocks
+i(228491);	-- Ramolith Bedding Material
+i(227326);	-- Chalcocite Lava Cake
+i(227301);	-- Crystal Tots
+i(227302);	-- Granite Salad
+i(227273);	-- Iron Poppers
+i(227317);	-- Lava Cola
+i(227310);	-- Magmalaid
+i(227318);	-- Quicksilver Sipper
+i(227272);	-- Rock Lobster
+i(227327);	-- Rocky Road
+i(227325);	-- Stone Soup
+i(227309);	-- Titanshake
+i(228723);	-- Earthen Pet Rock

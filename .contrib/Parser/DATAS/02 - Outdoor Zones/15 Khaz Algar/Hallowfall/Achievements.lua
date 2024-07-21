@@ -118,7 +118,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					--["coord"] = { X, Y, HALLOWFALL },
 				}),
 				crit(69005, {	-- Shadowpouncer
-					--["coord"] = { X, Y, HALLOWFALL },
+					["coord"] = { 63.3, 28.1, HALLOWFALL },
 				}),
 				crit(69006, {	-- Miral Murder-Mittens
 					--["coord"] = { X, Y, HALLOWFALL },

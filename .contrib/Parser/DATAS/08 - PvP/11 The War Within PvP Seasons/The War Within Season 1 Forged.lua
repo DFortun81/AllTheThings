@@ -12,55 +12,50 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				["races"] = HORDE_ONLY,
 				["collectible"] = false,
 			}),
-			ach(40385, {		-- Combatant I: The War Within Season 1
-			}),
+			ach(40385),		-- Combatant I: The War Within Season 1
 			ach(40386),		-- Combatant II: The War Within Season 1
-			ach(40387, {	-- Challenger I: The War Within Season 1
-			}),
+			ach(40387),		-- Challenger I: The War Within Season 1
 			ach(40388),		-- Challenger II: The War Within Season 1
-			ach(40389, {	-- Rival I: The War Within Season 1
-			}),
+			ach(40389),		-- Rival I: The War Within Season 1
 			ach(40390),		-- Rival II: The War Within Season 1
 			ach(40391, {	-- Duelist: The War Within Season 1
+				i(223617),	-- Forged Gladiator's Prestigious Cloak
 			}),
-			ach(40392, {	-- Elite: The War Within Season 1
-			}),
-			ach(40393, {	-- Gladiator: The War Within Season 1		(50 Wins)
+			ach(40392),	-- Elite: The War Within Season 1
+			ach(40393, {	-- Gladiator: The War Within Season 1
 				i(223586),	-- Forged Gladiator's Fel Bat (MOUNT!)
-				-- TODO: Add title reward + customasation
 			}),
 			ach(40398),		-- Forged Gladiator's Fel Bat
-			ach(40380, {	-- Forged Gladiator: The War Within Season 1 (0.1%)
+			ach(40380, {	-- Forged Gladiator: The War Within Season 1
 				title(558),	-- Forged Gladiator <Name>
 			}),
 			-- RBG
-			ach(40383, {	-- Hero of the Alliance: Forged	(0.5%)
+			ach(40383, {	-- Hero of the Alliance: Forged
 				["races"] = ALLIANCE_ONLY,
 			}),
-			ach(40384, {	-- Hero of the Horde: Forged	(0.5%)
+			ach(40384, {	-- Hero of the Horde: Forged
 				["races"] = HORDE_ONLY,
 			}),
-			ach(40235, {	-- Forged Marshall: The War Within Season 1	(0.1%)
+			ach(40235, {	-- Forged Marshall: The War Within Season 1
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					title(555),	-- Forged Marshall <Name>
 				},
 			}),
-			ach(40234, {	-- Forged Warlord: The War Within Season 1	(0.1%)
+			ach(40234, {	-- Forged Warlord: The War Within Season 1
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					title(554),	-- Forged Warlord <Name>
 				},
 			}),
-			ach(40233, {	-- The Strategist: The War Within Season 1	(25 Wins)
-				-- TODO: Add title reward
+			ach(40233, {	-- The Strategist: The War Within Season 1
 				i(225933),	-- Forged Legend's Pennant (TOY!)
 			}),
 			-- Solo
-			ach(40395, {	-- Legend: The War Within Season 1			(100 Wins)
+			ach(40395, {	-- Legend: The War Within Season 1
 				i(225933),	-- Forged Legend's Pennant (TOY!)
 			}),
-			ach(40381, {	-- Forged Legend: The War Within Season 1	(0.1%)
+			ach(40381, {	-- Forged Legend: The War Within Season 1
 				title(559),	-- Forged Legend <Name>
 			}),
 			ach(40472, {	-- Battle Mender: The War Within Season 1
@@ -82,10 +77,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				["coord"] = { 55.0, 76.5, DORNOGAL },
 				["g"] = {
 					filter(BACK_F, {
-						honor(525, i(218434)), -- Forged Aspirant's Cape
-						honor(525, i(218433)), -- Forged Aspirant's Cloak
-						honor(525, i(218432)), -- Forged Aspirant's Drape
-						honor(525, i(218435)), -- Forged Aspirant's Greatcloak
+						honor(525, i(218434)),	-- Forged Aspirant's Cape
+						honor(525, i(218433)),	-- Forged Aspirant's Cloak
+						honor(525, i(218432)),	-- Forged Aspirant's Drape
+						honor(525, i(218435)),	-- Forged Aspirant's Greatcloak
 					}),
 					filter(CLOTH, {
 						honor(700, i(218414)),	-- Forged Aspirant's Silk Belt
@@ -168,9 +163,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 						honor(700, i(218394)),	-- Forged Aspirant's Plate Stompers
 						honor(700, i(218362)),	-- Forged Aspirant's Plate Warboots
 						honor(875, i(218405)),	-- Forged Aspirant's Plate Wargreaves
-					}),
-					filter(REAGENTS, {
-						honor(175, i(210232)),	-- Forged Aspirant's Heraldry
 					}),
 					filter(TRINKET_F, {
 						honor(700, i(218421)),	-- Forged Aspirant's Badge of Ferocity
@@ -489,9 +481,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 						conquest(525, i(218710)),	-- Forged Gladiator's Necklace
 						conquest(525, i(218711)),	-- Forged Gladiator's Pendant
 					}),
-					filter(REAGENTS, {
-						conquest(175, i(210233)),	-- Forged Gladiator's Heraldry
-					}),
 					filter(TRINKET_F, {
 						conquest(700, i(218713)),	-- Forged Gladiator's Badge of Ferocity
 						conquest(700, i(218715)),	-- Forged Gladiator's Emblem
@@ -800,6 +789,71 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 					i(218706),	-- Forged Gladiator's Shawl
 				}),
 			}),
+			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
+				["coord"] = { 59.8, 69.3, DORNOGAL },
+				["g"] = {
+					elitepvp(ig(223616, {	-- Forged Gladiator's Tabard
+						["sourceAchievement"] = 40392,	-- Elite: The War Within Season 1
+						["cost"] = {{"c", HONOR, 100 }},
+					})),
+					n(WEAPONS, {
+						elitepvp(i(225856, {	-- Forged Gladiator's Axe
+							["cost"] = {{"i", MOH, 5}},
+						})),
+						elitepvp(i(225863, {	-- Forged Gladiator's Battlestaff
+							["cost"] = {{"i", MOH, 10}},
+						})),
+						elitepvp(i(225870, {	-- Forged Gladiator's Bow
+							["cost"] = {{"i", MOH, 10}},
+						})),
+						elitepvp(i(225868, {	-- Forged Gladiator's Bulwark
+							["cost"] = {{"i", MOH, 5}},
+						})),
+						elitepvp(i(225869, {	-- Forged Gladiator's Claws
+							["cost"] = {{"i", MOH, 5}},
+						})),
+						elitepvp(i(225864, {	-- Forged Gladiator's Crossbow
+							["cost"] = {{"i", MOH, 10}},
+						})),
+						elitepvp(i(225857, {	-- Forged Gladiator's Dagger
+							["cost"] = {{"i", MOH, 5}},
+						})),
+						elitepvp(i(225866, {	-- Forged Gladiator's Focus
+							["cost"] = {{"i", MOH, 5}},
+						})),
+						elitepvp(i(225871, {	-- Forged Gladiator's Greataxe
+							["cost"] = {{"i", MOH, 10}},
+						})),
+						elitepvp(i(225862, {	-- Forged Gladiator's Greatstaff
+							["cost"] = {{"i", MOH, 10}},
+						})),
+						elitepvp(i(225858, {	-- Forged Gladiator's Pincer
+							["cost"] = {{"i", MOH, 5}},
+						})),
+						elitepvp(i(225872, {	-- Forged Gladiator's Pulverizer
+							["cost"] = {{"i", MOH, 10}},
+						})),
+						elitepvp(i(225865, {	-- Forged Gladiator's Scepter
+							["cost"] = {{"i", MOH, 5}},
+						})),
+						elitepvp(i(225867, {	-- Forged Gladiator's Shield
+							["cost"] = {{"i", MOH, 5}},
+						})),
+						elitepvp(i(225860, {	-- Forged Gladiator's Spear
+							["cost"] = {{"i", MOH, 10}},
+						})),
+						elitepvp(i(225861, {	-- Forged Gladiator's Staff
+							["cost"] = {{"i", MOH, 10}},
+						})),
+						elitepvp(i(225859, {	-- Forged Gladiator's Warglaive
+							["cost"] = {{"i", MOH, 5}},
+						})),
+						elitepvp(i(225874, {	-- Forged Gladiator's Wither-Blade
+							["cost"] = {{"i", MOH, 5}},
+						})),
+					}),
+				},
+			}),
 		})),
 		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {
 			n(219213, {	-- Gilderann <War Mode Quartermaster>
@@ -994,8 +1048,5 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				},
 			}),
 		})),
-		filter(RECIPES, {
-		-- Under any Season as Blizzard stated there will be no new recipes, but an item required to craft higher itemlevel versions for s2, s3 and so on.
-		}),
 	}),
 }))));

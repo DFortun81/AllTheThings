@@ -115,6 +115,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 50.5, 26.8, DORNOGAL },
 					["g"] = TWW_FISHING,
 				}),
+				n(219105, {	-- Hinodin <Fishing Supplies>
+					["coord"] = { 50.6, 26.8, DORNOGAL },
+					["g"] = {
+						i(228954),	-- Angler's Guide [Find Fish] (RECIPE!)
+					},
+				}),
 			}),
 			prof(HERBALISM, {
 				n(219101, {	-- Akdan <Herbalism Trainer>

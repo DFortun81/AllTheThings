@@ -1531,27 +1531,8 @@ root(ROOTS.Unsorted, {
 				i(225493),	-- Medal of Conquest
 
 				i(220378),	-- Forged Equipment Chest \\ PH War Within Equipment Chest
-				i(223616),	-- Forged Gladiator's Tabard \\ [PH] 11.0 PVP - Gladiator's Tabard
-				i(223617),	-- Forged Gladiator's Prestigious Cloak \\ [PH] 11.0 Gladiator's Prestigious Cloak
-				i(225856),	-- Forged Gladiator's Axe
-				i(225857),	-- Forged Gladiator's Dagger
-				i(225858),	-- Forged Gladiator's Pincer
-				i(225859),	-- Forged Gladiator's Warglaive
-				i(225860),	-- Forged Gladiator's Spear
-				i(225861),	-- Forged Gladiator's Staff
-				i(225862),	-- Forged Gladiator's Greatstaff
-				i(225863),	-- Forged Gladiator's Battlestaff
-				i(225864),	-- Forged Gladiator's Crossbow
-				i(225865),	-- Forged Gladiator's Scepter
-				i(225866),	-- Forged Gladiator's Focus
-				i(225867),	-- Forged Gladiator's Shield
-				i(225868),	-- Forged Gladiator's Bulwark
-				i(225869),	-- Forged Gladiator's Claws
-				i(225870),	-- Forged Gladiator's Bow
-				i(225871),	-- Forged Gladiator's Greataxe \\ Forged Gladiator's Greatsword
-				i(225872),	-- Forged Gladiator's Pulverizer
+
 				i(225873),	-- Forged Gladiator's Sword
-				i(225874),	-- Forged Gladiator's Wither-Blade \\ Forged Gladiator's Shotel
 				i(223989),	-- Arsenal: Hellbloom Club
 				i(223990),	-- Arsenal: Hellbloom Hammer
 				i(223991),	-- Arsenal: Hellbloom Knife

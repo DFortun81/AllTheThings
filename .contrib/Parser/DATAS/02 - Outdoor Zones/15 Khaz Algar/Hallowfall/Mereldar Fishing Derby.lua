@@ -33,7 +33,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 							i(225771, {	-- Algari Seekerthread
 								["cost"] = {{"c", DERBY_MARK, 10}}
 							}),
-							i(228954),	-- Angler's Guide [Find Fish] (RECIPE!)
 							i(224727, {	-- Dasher's Trophy Fish
 								["cost"] = {{"c", DERBY_MARK, 250}}
 							}),

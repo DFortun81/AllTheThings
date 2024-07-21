@@ -12,38 +12,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 54.8, 42.5, DORNOGAL },
 				["g"] = {
 					i(220773, {	-- Celebratory Pack of Runed Harbinger Crests
-						["cost"] = {{ "i", ALGARI_TOKEN_OF_MERIT_S1 , 2 }},
-						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 2}},
+						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
 					}),
 					i(226814, {	-- Chest of Gold
-						["cost"] = {{ "i", ALGARI_TOKEN_OF_MERIT_S1 , 2 }},
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 2}},
 					}),
 					i(226813, {	-- Golden Valorstone
-						["cost"] = {{ "i", ALGARI_TOKEN_OF_MERIT_S1 , 1 }},
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 1}},
 					}),
 					i(226505, {	-- Nerubian Gemweaver
-						["cost"] = {{ "i", ALGARI_TOKEN_OF_MERIT_S1 , 6 }},
-						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 6}},
+						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
 					}),
 					i(220767, {	-- Triumphant Satchel of Carved Harbinger Crests
-						["cost"] = {{ "i", ALGARI_TOKEN_OF_MERIT_S1 , 1 }},
-						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+						["cost"] = {{"i", ALGARI_TOKEN_OF_MERIT_S1, 1}},
+						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
 					}),
-				},
-			}),
-			n(219387, {	-- Belga <Flavored Gems>
-				["coord"] = { 50.5, 68.5, DORNOGAL },
-				["g"] = {
-					i(228494),	-- Crunchy Rock Candy
-					i(228493),	-- Sour Topaz Bites
-					i(228492),	-- Spicy Rubies
-				},
-			}),
-			n(219380, {	-- Dokhan <Vase Vendor>
-				["coord"] = { 56.2, 66.0, DORNOGAL },
-				["g"] = {
-					i(228489),	-- Fashionable Flask
-					i(228488),	-- Small Glass Vase
 				},
 			}),
 			n(219230, {	-- Erani <Pet Charm Trader>
@@ -62,12 +47,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["g"] = {
 					i(224763),	-- Design: Cubic Blasphemia (RECIPE!)
 					i(228921),	-- Griftah's Heavy-Duty Embellishing Powder
-				},
-			}),
-			n(219105, {	-- Hinodin <Fishing Supplies>
-				["coord"] = { 50.6, 26.8, DORNOGAL },
-				["g"] = {
-					i(228954),	-- Angler's Guide
 				},
 			}),
 			n(219255, {	-- Karbath <Weapon Trader>
@@ -340,13 +319,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					}),
 				},
 			}),
-			n(219383, {	-- Malukh <Book Vendor>
-				["coord"] = { 53.2, 70.7, DORNOGAL },
-				["g"] = {
-					i(228608),	-- On the Application of Arathi Technology to Earthen Life
-					i(228609),	-- Rock Roasting for Dummies
-				},
-			}),
 			n(224294, {	-- Osidion <Ensemble Vendor>
 				["coord"] = { 57.3, 60.8, DORNOGAL },
 				["g"] = sharedData({
@@ -384,29 +356,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					iensemble(219126),	-- Woven Artisan's Talent
 				}),
 			}),
-			n(219285, {	-- Ramdah <Ramolith Care>
-				["coord"] = { 54.0, 64.1, DORNOGAL },
-				["g"] = {
-					i(228490),	-- Fresh Grazing Rocks
-					i(228491),	-- Ramolith Bedding Material
-				},
-			}),
-			n(212370, {	-- Ronesh <Innkeeper>
-				["coord"] = { 54.0, 64.1, DORNOGAL },
-				["g"] = {
-					i(227326),	-- Chalcocite Lava Cake
-					i(227301),	-- Crystal Tots
-					i(227302),	-- Granite Salad
-					i(227273),	-- Iron Poppers
-					i(227317),	-- Lava Cola
-					i(227310),	-- Magmalaid
-					i(227318),	-- Quicksilver Sipper
-					i(227272),	-- Rock Lobster
-					i(227327),	-- Rocky Road
-					i(227325),	-- Stone Soup
-					i(227309),	-- Titanshake
-				},
-			}),
 			n(219226, {	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
 				["g"] = {
@@ -439,12 +388,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					-- }),
 					-- Season 2
 					-- Season 3
-				},
-			}),
-			n(219316, {	-- Wurdin <Diversions>
-				["coord"] = { 59.6, 47.8, DORNOGAL },
-				["g"] = {
-					i(228723),	-- Earthen Pet Rock
 				},
 			}),
 		}),
