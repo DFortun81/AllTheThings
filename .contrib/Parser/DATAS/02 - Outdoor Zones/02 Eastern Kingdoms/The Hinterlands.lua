@@ -347,6 +347,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 66.2, 44.2, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Pupellyverbos Port
+							["providers"] = {
+								{ "i", 3900 },	-- Pupellyverbos Port
+								{ "o", 2068 },	-- Pupellyverbos Port
+							},
+						}),
+					},
 				}),
 				q(9470, {	-- A Gesture of Goodwill
 					["qg"] = 17223,	-- Ambassador Rualeth
@@ -466,6 +474,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Shadraspawn Egg
+							["providers"] = {
+								{ "i", 58252 },	-- Shadraspawn Egg
+								{ "o", 204102 },	-- Shadraspawn Egg
+							},
+						}),
 						i(59260, {	-- Shadraspawn Mantle
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -492,6 +506,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Shadraspawn Egg
+							["providers"] = {
+								{ "i", 58252 },	-- Shadraspawn Egg
+								{ "o", 204102 },	-- Shadraspawn Egg
+							},
+						}),
 						i(59298, {	-- Surlis' Mantle
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -563,6 +583,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Vessel of Tainted Blood
+							["providers"] = {
+								{ "i", 19071 },	-- Vessel of Tainted Blood
+								{ "o", 179922 },	-- Vessel of Tainted Blood
+							},
+						}),
 						i(59252, {	-- Sandals of Tainted Blood
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -595,6 +621,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/5 Vessel of Tainted Blood
+							["providers"] = {
+								{ "i", 19071 },	-- Vessel of Tainted Blood
+								{ "o", 179922 },	-- Vessel of Tainted Blood
+							},
+						}),
 						i(59294, {	-- Sandals of Tainted Blood
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -823,6 +855,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.8, 66.5, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Umboda's Head
+							["provider"] = { "i", 58236 },	-- Umboda's Head
+							["cr"] = 42724,	-- Umboda Three-Heads
+						}),
+					},
 				}),
 				heroscall(q(26542, {	-- Hero's Call: The Hinterlands!
 					["qg"] = 2700,	-- Captain Nials
@@ -1212,6 +1250,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 77.3, 79.9, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/12 Pupellyverbos Port
+							["providers"] = {
+								{ "i", 3900 },	-- Pupellyverbos Port
+								{ "o", 2068 },	-- Pupellyverbos Port
+							},
+						}),
+					},
 				}),
 				q(27725, {	-- Quel'Danil Lodge
 					["qg"] = 46476,	-- Tracker Yoro
@@ -1582,6 +1628,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 66.3, 44.2, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Ooze-Coated Supply Crate
+							["providers"] = {
+								{ "i", 57989 },	-- Ooze-Coated Supply Crate
+								{ "o", 203989 },	-- Ooze-coated Supply Crate
+							},
+						}),
+					},
 				}),
 				q(26268, {	-- Skulk Rock Supplies (H)
 					["qg"] = 42613,	-- Elder Torntusk
@@ -1592,6 +1646,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 78.1, 81.3, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Ooze-Coated Supply Crate
+							["providers"] = {
+								{ "i", 57989 },	-- Ooze-Coated Supply Crate
+								{ "o", 203989 },	-- Ooze-coated Supply Crate
+							},
+						}),
+					},
 				}),
 				q(26485, {	-- Snapjaws, Lad!
 					["qg"] = 43109,	-- Dron Blastbrew
@@ -1790,12 +1852,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 30.6, 47.0, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Eye of Shadra
+							["providers"] = {
+								{ "i", 58282 },	-- Eye of Shadra
+								{ "o", 204133 },	-- Cache of Shadra
+							},
+						}),
+					},
 				}),
 				q(26381, {	-- The Eye of Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
 					["coord"] = { 31.8, 58.3, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Eye of Shadra
+							["providers"] = {
+								{ "i", 58282 },	-- Eye of Shadra
+								{ "o", 204133 },	-- Cache of Shadra
+							},
+						}),
+					},
 				}),
 				q(26432, {	-- The Fall of Jintha'Alor
 					["qg"] = 42613,	-- Elder Torntusk
@@ -1814,6 +1892,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 30.6, 47.0, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Fang of Shadra
+							["providers"] = {
+								{ "i", 58281 },	-- Fang of Shadra
+								{ "o", 204120 },	-- Cache of Shadra
+							},
+						}),
+					},
 				}),
 				q(26406, {	-- The Fang of Shadra (H)
 					["qg"] = 42898,	-- Darkcleric Marnal
@@ -1821,6 +1907,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 31.8, 58.3, THE_HINTERLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Fang of Shadra
+							["providers"] = {
+								{ "i", 58281 },	-- Fang of Shadra
+								{ "o", 204120 },	-- Cache of Shadra
+							},
+						}),
+					},
 				}),
 				q(7843, {	-- The Final Message to the Wildhammer
 					["qg"] = 14738,	-- Otho Moji'ko <Cooking Supplier>
