@@ -1092,6 +1092,26 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28838,	-- The Owlbeast's Defense
 					["coord"] = { 57.1, 75.4, WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Essence of the Claw-Totem
+							["providers"] = {
+								{ "i", 65899 },	-- Essence of the Claw-Totem
+								{ "o", 207421 },	-- Owlbeast Claw-Totem
+							},
+						}),
+						objective(2, {	-- 0/1 Essence of the Life-Totem
+							["providers"] = {
+								{ "i", 65900 },	-- Essence of the Life-Totem
+								{ "o", 207423 },	-- Owlbeast Life-Totem
+							},
+						}),
+						objective(3, {	-- 0/1 Essence of the Moon-Totem
+							["providers"] = {
+								{ "i", 65901 },	-- Essence of the Moon-Totem
+								{ "o", 207422 },	-- Owlbeast Moon-Totem
+							},
+						}),
+					},
 				}),
 				q(9266, {	-- Making Amends
 					["qg"] = 16416,	-- Bronn Fitzwrench
@@ -1135,6 +1155,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28674,	-- Starfall Village
 					["coord"] = { 48.6, 41.0, WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/5 Starfall Relic
+							["providers"] = {
+								{ "i", 64675 },	-- Starfall Relic
+								{ "o", 207301 },	-- Ancient Urn
+							},
+						}),
+					},
 				}),
 				q(28519, {	-- Pain of the Blood Elves
 					["qg"] = 48660,	-- Sin'dorei Spirit
@@ -1622,6 +1650,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28837,	-- Altered Beasts
 					["coord"] = { 58.0, 63.7, WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Owlbeast Dreamcatcher
+							["providers"] = {
+								{ "i", 65902 },	-- Owlbeast Dreamcatcher
+								{ "o", 207424 },	-- Abandoned Research Samples
+							},
+						}),
+					},
 				}),
 				q(28638, {	-- The Owls Have It
 					["qg"] = 49537,	-- Jeb Guthrie
@@ -2092,6 +2128,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.9, 28.1, WINTERSPRING },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/40 Chillwind Egg
+							["providers"] = {
+								{ "i", 65890 },	-- Chillwind Egg
+								{ "o", 207293 },	-- Chillwind Eggs
+							},
+						}),
 						i(67220, {	-- Goodgrub Cloak
 							["timeline"] = { ADDED_4_0_3 },
 						}),
