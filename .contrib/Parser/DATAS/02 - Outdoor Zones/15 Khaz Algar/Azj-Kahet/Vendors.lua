@@ -7,13 +7,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			n(218179, {	-- Alvus Valavulu <Jewelcrafting Supplies>
 				["coord"] = { 47.8, 18.7, NERUBAR },
 				["g"] = {
-					i(223081, {	-- Design: Sifted Cave Sand (RECIPE!)
+					i(228914, {	-- Arachnophile Spectacles (TOY!)
+						["cost"] = {{"c", KEJ, 1500}},
+					}),
+					i(223082, {	-- Design: Ominous Energy Crystal (RECIPE!)
 						["cost"] = {
 							{"i", ARTISANS_ACUITY, 150},
 							{"c", KEJ, 1500},
 						},
 					}),
-					i(223082, {	-- Design: Ominous Energy Crystal (RECIPE!)
+					i(223081, {	-- Design: Sifted Cave Sand (RECIPE!)
 						["cost"] = {
 							{"i", ARTISANS_ACUITY, 150},
 							{"c", KEJ, 1500},
@@ -22,9 +25,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(224054, {	-- Emergent Crystals of the Surface-Dwellers (CI!)
 						["cost"] = {{"c", KEJ, 565}},
 						["requireSkill"] = JEWELCRAFTING,
-					}),
-					i(228914, {	-- Arachnophile Spectacles (TOY!)
-						["cost"] = {{"c", KEJ, 1500}},
 					}),
 					i(224433, {	-- Pattern: Jeweler's Purse (RECIPE!)
 						["cost"] = {

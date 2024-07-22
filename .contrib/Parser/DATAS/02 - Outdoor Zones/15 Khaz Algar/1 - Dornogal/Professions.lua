@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			prof(JEWELCRAFTING, {
 				n(219087, {	-- Makir <Jewelcrafting Trainer>
 					["coord"] = { 49.5, 70.8, DORNOGAL },
-					--["g"] = TWW_JEWELCRAFTING,
+					["g"] = TWW_JEWELCRAFTING,
 				}),
 			}),
 			prof(LEATHERWORKING, {

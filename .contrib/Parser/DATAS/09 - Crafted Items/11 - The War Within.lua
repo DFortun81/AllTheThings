@@ -1738,190 +1738,193 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 	}),
 	prof(JEWELCRAFTING, {
+		n(DISCOVERY, {
+			r(434020),	-- Algari Crushing
+		}),
 		spell(434018, {	-- Algari Prospecting
-			i(212495),	-- Radiant Ruby
 			i(212498),	-- Ambivalent Amber
 			i(212505),	-- Extravagant Emerald
-			i(212511),	-- Ostentatious Onyx
-			i(213398),	-- Handful of Pebbles
 			i(213399),	-- Glittering Glass
+			i(213398),	-- Handful of Pebbles
+			i(212511),	-- Ostentatious Onyx
+			i(212495),	-- Radiant Ruby
 		}),
 		spell(434020, {	-- Algari Crushing
-			i(213219),	-- Crushed Gemstones
-			i(213220),	-- Crushed Gemstones
-			i(213221),	-- Crushed Gemstones
+			i(213219),	-- Crushed Gemstones+
+			i(213220),	-- Crushed Gemstones++
+			i(213221),	-- Crushed Gemstones+++
 		}),
 		n(ARMOR, {
+			i(215144),	-- Algari Competitor's Amulet
+			i(215137),	-- Algari Competitor's Signet
+			i(215136),	-- Amulet of Earthen Craftsmanship
+			i(215133),	-- Binding of Binding
+			i(215134),	-- Fractured Gemstone Locket
 			i(215130),	-- Malleable Band
 			i(215131),	-- Malleable Pendant
 			i(215132),	-- Marvelous Mood Ring
-			i(215133),	-- Binding of Binding
-			i(215134),	-- Fractured Gemstone Locket
 			i(215135),	-- Ring of Earthen Craftsmanship
-			i(215136),	-- Amulet of Earthen Craftsmanship
-			i(215137),	-- Algari Competitor's Signet
-			i(215144),	-- Algari Competitor's Amulet
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = JEWELCRAFTING,
 		},{
 			-- Prisms
-			FirstCraft(81232, 435337);	--  Algari Amber Prism
-			FirstCraft(81233, 435338);	--	Algari Emerald Prism
-			FirstCraft(81235, 435369);	--	Algari Onyx Prism
-			FirstCraft(81234, 435339);	--	Algari Ruby Prism
-			FirstCraft(81236, 435370);	--	Algari Sapphire Prism
+			FirstCraft(81232, 435337);	-- Algari Amber Prism
+			FirstCraft(81233, 435338);	-- Algari Emerald Prism
+			FirstCraft(81235, 435369);	-- Algari Onyx Prism
+			FirstCraft(81234, 435339);	-- Algari Ruby Prism
+			FirstCraft(81236, 435370);	-- Algari Sapphire Prism
 			-- Basic Reagents
-			FirstCraft(81221, 435325);	--  Decorative Lens
-			FirstCraft(81220, 435324);	--  Engraved Gemcutter
-			FirstCraft(81219, 435323);	--  Gilded Vial
-			FirstCraft(81223, 435327);	--  Inverted Prism
-			FirstCraft(81222, 435326);	--  Marbled Stone
+			FirstCraft(81221, 435325);	-- Decorative Lens
+			FirstCraft(81220, 435324);	-- Engraved Gemcutter
+			FirstCraft(81219, 435323);	-- Gilded Vial
+			FirstCraft(81223, 435327);	-- Inverted Prism
+			FirstCraft(81222, 435326);	-- Marbled Stone
 			-- Radiant Rubies
-			FirstCraft(81205, 434549);	--  Deadly Ruby
-			FirstCraft(81207, 434551);	--	Masterful Ruby
-			FirstCraft(81206, 434550);	--	Quick Ruby
-			FirstCraft(81208, 434552);	--	Versatile Ruby
+			FirstCraft(81205, 434549);	-- Deadly Ruby
+			FirstCraft(81207, 434551);	-- Masterful Ruby
+			FirstCraft(81206, 434550);	-- Quick Ruby
+			FirstCraft(81208, 434552);	-- Versatile Ruby
 			-- Ambivalent Amber
-			FirstCraft(81192, 434537);	--  Deadly Amber
-			FirstCraft(81195, 434539);	--  Masterful Amber
-			FirstCraft(81194, 434538);	--  Quick Amber
-			FirstCraft(81193, 434536);	--	Solid Amber
-			FirstCraft(81196, 434540);	--  Versatile Amber
+			FirstCraft(81192, 434537);	-- Deadly Amber
+			FirstCraft(81195, 434539);	-- Masterful Amber
+			FirstCraft(81194, 434538);	-- Quick Amber
+			FirstCraft(81193, 434536);	-- Solid Amber
+			FirstCraft(81196, 434540);	-- Versatile Amber
 			-- Ostentatious Onyxes
-			FirstCraft(81201, 434545);	--	Deadly Onyx
-			FirstCraft(81203, 434547);	--  Masterful Onyx
-			FirstCraft(81202, 434546);	--	Quick Onyx
-			FirstCraft(81204, 434548);	--	Versatile Onyx
+			FirstCraft(81201, 434545);	-- Deadly Onyx
+			FirstCraft(81203, 434547);	-- Masterful Onyx
+			FirstCraft(81202, 434546);	-- Quick Onyx
+			FirstCraft(81204, 434548);	-- Versatile Onyx
 			-- Extravagant Emeralds
-			FirstCraft(81197, 434541);	--	Deadly Emerald
-			FirstCraft(81199, 434543);	--	Masterful Emerald
-			FirstCraft(81198, 434542);	--  Quick Emerald
-			FirstCraft(81200, 434544);	--	Versatile Emerald
+			FirstCraft(81197, 434541);	-- Deadly Emerald
+			FirstCraft(81199, 434543);	-- Masterful Emerald
+			FirstCraft(81198, 434542);	-- Quick Emerald
+			FirstCraft(81200, 434544);	-- Versatile Emerald
 			-- Stunning Sapphires
-			FirstCraft(81209, 434553);	--	Deadly Sapphire
-			FirstCraft(81211, 434555);	--	Masterful Sapphire
-			FirstCraft(81210, 434554);	--	Quick Sapphire
-			FirstCraft(81212, 434563);	--  Versatile Sapphire
+			FirstCraft(81209, 434553);	-- Deadly Sapphire
+			FirstCraft(81211, 434555);	-- Masterful Sapphire
+			FirstCraft(81210, 434554);	-- Quick Sapphire
+			FirstCraft(81212, 434563);	-- Versatile Sapphire
 			-- Jewelry
-			FirstCraft(81251, 435385);	--	Amulet of Earthen Craftsmanship
-			FirstCraft(81248, 435382);	--	Binding of Binding
-			FirstCraft(81245, 435379);	--  Malleable Band
-			FirstCraft(81249, 435383);	--	Fractured Gemstone Locket
-			FirstCraft(81246, 435380);	--  Malleable Pendant
-			FirstCraft(81250, 435384);	--	Ring of Earthen Craftsmanship
+			FirstCraft(81251, 435385);	-- Amulet of Earthen Craftsmanship
+			FirstCraft(81248, 435382);	-- Binding of Binding
+			FirstCraft(81245, 435379);	-- Malleable Band
+			FirstCraft(81249, 435383);	-- Fractured Gemstone Locket
+			FirstCraft(81246, 435380);	-- Malleable Pendant
+			FirstCraft(81250, 435384);	-- Ring of Earthen Craftsmanship
 			-- Profession Equipment
-			FirstCraft(81240, 435374);	--	Enchanter's Crystal
-			FirstCraft(81238, 435372);	--	Extravagant Loupes
-			FirstCraft(81242, 435376);	--	Forger's Font Inspector
-			FirstCraft(81239, 435373);	--  Incanter's Shard
-			FirstCraft(81244, 435378);	--	Novelist's Specs
-			FirstCraft(81237, 435371);	--  Radiant Loupes
-			FirstCraft(81241, 435375);	--  Right-Handed Magnifying Glass
-			FirstCraft(81243, 435377);	--  Storyteller's Glasses
+			FirstCraft(81240, 435374);	-- Enchanter's Crystal
+			FirstCraft(81238, 435372);	-- Extravagant Loupes
+			FirstCraft(81242, 435376);	-- Forger's Font Inspector
+			FirstCraft(81239, 435373);	-- Incanter's Shard
+			FirstCraft(81244, 435378);	-- Novelist's Specs
+			FirstCraft(81237, 435371);	-- Radiant Loupes
+			FirstCraft(81241, 435375);	-- Right-Handed Magnifying Glass
+			FirstCraft(81243, 435377);	-- Storyteller's Glasses
 			-- Jewelcrafting Essentials
-			FirstCraft(81229, 435334);	--	Magnificent Jeweler's Setting
+			FirstCraft(81229, 435334);	-- Magnificent Jeweler's Setting
 			-- Optional Embellishments
-			FirstCraft(81228, 435333);	--	Captured Starlight
-			FirstCraft(81226, 435331);	--	Elemental Focusing Lens
-			FirstCraft(81227, 435332);	--	Prismatic Null Stone
+			FirstCraft(81228, 435333);	-- Captured Starlight
+			FirstCraft(81226, 435331);	-- Elemental Focusing Lens
+			FirstCraft(81227, 435332);	-- Prismatic Null Stone
 			-- Finishing Reagents
-			FirstCraft(81225, 435330);	--	Ominous Energy Crystal
-			FirstCraft(81224, 435329);	--	Sifted Cave Sand
+			FirstCraft(81225, 435330);	-- Ominous Energy Crystal
+			FirstCraft(81224, 435329);	-- Sifted Cave Sand
 			-- Benevolent Blasphemite
-			FirstCraft(81258, 435392);	--	Cubic Blasphemia
-			FirstCraft(81214, 435318);	--	Culminating Blasphemite
-			FirstCraft(81215, 435319);	--	Elusive Blasphemite
-			FirstCraft(81213, 435230);	--	Insightful Blasphemite
+			FirstCraft(81258, 435392);	-- Cubic Blasphemia
+			FirstCraft(81214, 435318);	-- Culminating Blasphemite
+			FirstCraft(81215, 435319);	-- Elusive Blasphemite
+			FirstCraft(81213, 435230);	-- Insightful Blasphemite
 			-- Competitor's Crafts (PVP)
-			FirstCraft(81253, 435387);	--	Algari Competitor's Amulet
-			FirstCraft(81252, 435386);	--	Algari Competitor's Signet
-			FirstCraft(81217, 435321);	--	Cognitive Bloodstone
-			FirstCraft(81218, 435322);	--	Determined Bloodstone
-			FirstCraft(81216, 435320);	--	Enduring Bloodstone
+			FirstCraft(81253, 435387);	-- Algari Competitor's Amulet
+			FirstCraft(81252, 435386);	-- Algari Competitor's Signet
+			FirstCraft(81217, 435321);	-- Cognitive Bloodstone
+			FirstCraft(81218, 435322);	-- Determined Bloodstone
+			FirstCraft(81216, 435320);	-- Enduring Bloodstone
 			-- Lavish Luxuries
-			FirstCraft(81257, 435391);	--	Beautification Iris (Toy)
-			FirstCraft(81255, 435389);	--	Remembrance Stone (Toy)
+			FirstCraft(81257, 435391);	-- Beautification Iris
+			FirstCraft(81255, 435389);	-- Remembrance Stone
 		})),
 		filter(GEMS, {
-			i(213748),	--	Cognitive Bloodstone
-			i(217113),	--	Cubic Blasphemia+
-			i(217114),	--	Cubic Blasphemia++
-			i(217115),	--	Cubic Blasphemia+++
-			i(213741),	--	Culminating Blasphemite+
-			i(213742),	--	Culminating Blasphemite++
-			i(213743),	--	Culminating Blasphemite+++
-			i(213501),	--	Deadly Amber+
-			i(213502),	--	Deadly Amber++
-			i(213503),	--	Deadly Amber+++
-			i(213477),	--	Deadly Emerald+
-			i(213478),	--	Deadly Emerald++
-			i(213479),	--	Deadly Emerald+++
-			i(213489),	--	Deadly Onyx+
-			i(213490),	--	Deadly Onyx++
-			i(213491),	--	Deadly Onyx+++
-			i(213462),	--	Deadly Ruby+
-			i(213463),	--	Deadly Ruby++
-			i(213464),	--	Deadly Ruby+++
-			i(213465),	--	Deadly Sapphire+
-			i(213466),	--	Deadly Sapphire++
-			i(213467),	--	Deadly Sapphire+++
-			i(213749),	--	Determined Bloodstone
-			i(213744),	--	Elusive Blasphemite+
-			i(213745),	--	Elusive Blasphemite++
-			i(213746),	--	Elusive Blasphemite+++
-			i(213747),	--	Enduring Bloodstone
-			i(213738),	--	Insightful Blasphemite+
-			i(213739),	--	Insightful Blasphemite++
-			i(213740),	--	Insightful Blasphemite+++
-			i(213507),	--	Masterful Amber+
-			i(213508),	--	Masterful Amber++
-			i(213509),	--	Masterful Amber+++
-			i(213480),	--	Masterful Emerald+
-			i(213481),	--	Masterful Emerald++
-			i(213482),	--	Masterful Emerald+++
-			i(213498),	--	Masterful Onyx+
-			i(213499),	--	Masterful Onyx++
-			i(213500),	--	Masterful Onyx+++
-			i(213456),	--	Masterful Ruby+
-			i(213457),	--	Masterful Ruby++
-			i(213458),	--	Masterful Ruby+++
-			i(213471),	--	Masterful Sapphire+
-			i(213472),	--	Masterful Sapphire++
-			i(213473),	--	Masterful Sapphire+++
-			i(213504),	--	Quick Amber+
-			i(213505),	--	Quick Amber++
-			i(213506),	--	Quick Amber+++
-			i(213486),	--	Quick Emerald+
-			i(213487),	--	Quick Emerald++
-			i(213488),	--	Quick Emerald+++
-			i(213492),	--	Quick Onyx+
-			i(213493),	--	Quick Onyx++
-			i(213494),	--	Quick Onyx+++
-			i(213453),	--	Quick Ruby+
-			i(213454),	--	Quick Ruby++
-			i(213455),	--	Quick Ruby+++
-			i(213468),	--	Quick Sapphire+
-			i(213469),	--	Quick Sapphire++
-			i(213470),	--	Quick Sapphire+++
-			i(213515),	--	Solid Amber+
-			i(213516),	--	Solid Amber++
-			i(213517),	--	Solid Amber+++
-			i(213510),	--	Versatile Amber+
-			i(213511),	--	Versatile Amber++
-			i(213512),	--	Versatile Amber+++
-			i(213483),	--	Versatile Emerald+
-			i(213484),	--	Versatile Emerald++
-			i(213485),	--	Versatile Emerald+++
-			i(213495),	--	Versatile Onyx+
-			i(213496),	--	Versatile Onyx++
-			i(213497),	--	Versatile Onyx+++
-			i(213459),	--	Versatile Ruby+
-			i(213460),	--	Versatile Ruby++
-			i(213461),	--	Versatile Ruby+++
-			i(213474),	--	Versatile Sapphire+
-			i(213475),	--	Versatile Sapphire++
-			i(213476),	--	Versatile Sapphire+++
+			i(213748),	-- Cognitive Bloodstone
+			i(217113),	-- Cubic Blasphemia+
+			i(217114),	-- Cubic Blasphemia++
+			i(217115),	-- Cubic Blasphemia+++
+			i(213741),	-- Culminating Blasphemite+
+			i(213742),	-- Culminating Blasphemite++
+			i(213743),	-- Culminating Blasphemite+++
+			i(213501),	-- Deadly Amber+
+			i(213502),	-- Deadly Amber++
+			i(213503),	-- Deadly Amber+++
+			i(213477),	-- Deadly Emerald+
+			i(213478),	-- Deadly Emerald++
+			i(213479),	-- Deadly Emerald+++
+			i(213489),	-- Deadly Onyx+
+			i(213490),	-- Deadly Onyx++
+			i(213491),	-- Deadly Onyx+++
+			i(213462),	-- Deadly Ruby+
+			i(213463),	-- Deadly Ruby++
+			i(213464),	-- Deadly Ruby+++
+			i(213465),	-- Deadly Sapphire+
+			i(213466),	-- Deadly Sapphire++
+			i(213467),	-- Deadly Sapphire+++
+			i(213749),	-- Determined Bloodstone
+			i(213744),	-- Elusive Blasphemite+
+			i(213745),	-- Elusive Blasphemite++
+			i(213746),	-- Elusive Blasphemite+++
+			i(213747),	-- Enduring Bloodstone
+			i(213738),	-- Insightful Blasphemite+
+			i(213739),	-- Insightful Blasphemite++
+			i(213740),	-- Insightful Blasphemite+++
+			i(213507),	-- Masterful Amber+
+			i(213508),	-- Masterful Amber++
+			i(213509),	-- Masterful Amber+++
+			i(213480),	-- Masterful Emerald+
+			i(213481),	-- Masterful Emerald++
+			i(213482),	-- Masterful Emerald+++
+			i(213498),	-- Masterful Onyx+
+			i(213499),	-- Masterful Onyx++
+			i(213500),	-- Masterful Onyx+++
+			i(213456),	-- Masterful Ruby+
+			i(213457),	-- Masterful Ruby++
+			i(213458),	-- Masterful Ruby+++
+			i(213471),	-- Masterful Sapphire+
+			i(213472),	-- Masterful Sapphire++
+			i(213473),	-- Masterful Sapphire+++
+			i(213504),	-- Quick Amber+
+			i(213505),	-- Quick Amber++
+			i(213506),	-- Quick Amber+++
+			i(213486),	-- Quick Emerald+
+			i(213487),	-- Quick Emerald++
+			i(213488),	-- Quick Emerald+++
+			i(213492),	-- Quick Onyx+
+			i(213493),	-- Quick Onyx++
+			i(213494),	-- Quick Onyx+++
+			i(213453),	-- Quick Ruby+
+			i(213454),	-- Quick Ruby++
+			i(213455),	-- Quick Ruby+++
+			i(213468),	-- Quick Sapphire+
+			i(213469),	-- Quick Sapphire++
+			i(213470),	-- Quick Sapphire+++
+			i(213515),	-- Solid Amber+
+			i(213516),	-- Solid Amber++
+			i(213517),	-- Solid Amber+++
+			i(213510),	-- Versatile Amber+
+			i(213511),	-- Versatile Amber++
+			i(213512),	-- Versatile Amber+++
+			i(213483),	-- Versatile Emerald+
+			i(213484),	-- Versatile Emerald++
+			i(213485),	-- Versatile Emerald+++
+			i(213495),	-- Versatile Onyx+
+			i(213496),	-- Versatile Onyx++
+			i(213497),	-- Versatile Onyx+++
+			i(213459),	-- Versatile Ruby+
+			i(213460),	-- Versatile Ruby++
+			i(213461),	-- Versatile Ruby+++
+			i(213474),	-- Versatile Sapphire+
+			i(213475),	-- Versatile Sapphire++
+			i(213476),	-- Versatile Sapphire+++
 		}),
 		filter(MISC, {
 			i(213779),	-- Algari Amber Prism+
@@ -1939,45 +1942,49 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(213791),	-- Algari Sapphire Prism+
 			i(213792),	-- Algari Sapphire Prism++
 			i(213793),	-- Algari Sapphire Prism+++
-			i(213762),	-- Sifted Cave Sand+
-			i(213763),	-- Sifted Cave Sand++
-			i(213764),	-- Sifted Cave Sand+++
-			i(213765),	-- Ominous Energy Crystal+
-			i(213766),	-- Ominous Energy Crystal++
-			i(213767),	-- Ominous Energy Crystal+++
-			i(213768),	-- Elemental Focusing Lens+
-			i(213769),	-- Elemental Focusing Lens++
-			i(213770),	-- Elemental Focusing Lens+++
-			i(213771),	-- Prismatic Null Stone+
-			i(213772),	-- Prismatic Null Stone++
-			i(213773),	-- Prismatic Null Stone+++
 			i(213774),	-- Captured Starlight+
 			i(213775),	-- Captured Starlight++
 			i(213776),	-- Captured Starlight+++
+			i(213768),	-- Elemental Focusing Lens+
+			i(213769),	-- Elemental Focusing Lens++
+			i(213770),	-- Elemental Focusing Lens+++
+			i(213777),	-- Magnificent Jeweler's Setting
+			i(213765),	-- Ominous Energy Crystal+
+			i(213766),	-- Ominous Energy Crystal++
+			i(213767),	-- Ominous Energy Crystal+++
+			i(213771),	-- Prismatic Null Stone+
+			i(213772),	-- Prismatic Null Stone++
+			i(213773),	-- Prismatic Null Stone+++
+			i(213762),	-- Sifted Cave Sand+
+			i(213763),	-- Sifted Cave Sand++
+			i(213764),	-- Sifted Cave Sand+++
 		}),
 		filter(PROFESSION_EQUIPMENT, {
-			i(215117, {["requireSkill"] = INSCRIPTION}),	-- Storyteller's Glasses
-			i(215119, {["requireSkill"] = INSCRIPTION}),	-- Right-Handed Magnifying Glass
-			i(215120, {["requireSkill"] = JEWELCRAFTING}),	-- Radiant Loupes
+			i(215125, {["requireSkill"] = ENCHANTING}),		-- Enchanter's Crystal
+			i(215124, {["requireSkill"] = JEWELCRAFTING}),	-- Extravagant Loupes
+			i(215123, {["requireSkill"] = INSCRIPTION}),	-- Forger's Font Inspector
 			i(215121, {["requireSkill"] = ENCHANTING}),		-- Incanter's Shard
 			i(215122, {["requireSkill"] = INSCRIPTION}),	-- Novelist's Specs
-			i(215123, {["requireSkill"] = INSCRIPTION}),	-- Forger's Font Inspector
-			i(215124, {["requireSkill"] = JEWELCRAFTING}),	-- Extravagant Loupes
-			i(215125, {["requireSkill"] = ENCHANTING}),		-- Enchanter's Crystal
+			i(215120, {["requireSkill"] = JEWELCRAFTING}),	-- Radiant Loupes
+			i(215119, {["requireSkill"] = INSCRIPTION}),	-- Right-Handed Magnifying Glass
+			i(215117, {["requireSkill"] = INSCRIPTION}),	-- Storyteller's Glasses
 		}),
 		filter(REAGENTS, {
-			i(213753),	--	Decorative Lens+
-			i(213754),	--	Decorative Lens++
-			i(213755),	--	Decorative Lens+++
-			i(213750),	--	Engraved Gemcutter+
-			i(213751),	--	Engraved Gemcutter++
-			i(213752),	--	Engraved Gemcutter+++
-			i(213759),	--	Inverted Prism+
-			i(213760),	--	Inverted Prism++
-			i(213761),	--	Inverted Prism+++
-			i(213756),	--	Marbled Stone+
-			i(213757),	--	Marbled Stone++
-			i(213758),	--	Marbled Stone+++
+			i(213753),	-- Decorative Lens+
+			i(213754),	-- Decorative Lens++
+			i(213755),	-- Decorative Lens+++
+			i(213750),	-- Engraved Gemcutter+
+			i(213751),	-- Engraved Gemcutter++
+			i(213752),	-- Engraved Gemcutter+++
+			i(211806),	-- Gilded Vial+
+			i(211807),	-- Gilded Vial++
+			i(211808),	-- Gilded Vial+++
+			i(213759),	-- Inverted Prism+
+			i(213760),	-- Inverted Prism++
+			i(213761),	-- Inverted Prism+++
+			i(213756),	-- Marbled Stone+
+			i(213757),	-- Marbled Stone++
+			i(213758),	-- Marbled Stone+++
 		}),
 		filter(TOYS, {
 			i(215147),	-- Beautification Iris (TOY!)

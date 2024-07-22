@@ -803,6 +803,32 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{"c", TWW_JEWELCRAFTING_KNOWLEDGE, 1}} }, {
+				r(435338),	-- Algari Emerald Prism
+				r(435369),	-- Algari Onyx Prism
+				r(435339),	-- Algari Ruby Prism
+				r(435370),	-- Algari Sapphire Prism
+				r(435385),	-- Amulet of Earthen Craftsmanship
+				r(434541),	-- Deadly Emerald
+				r(434545),	-- Deadly Onyx
+				r(434553),	-- Deadly Sapphire
+				r(435331),	-- Elemental Focusing Lens
+				r(434543),	-- Masterful Emerald
+				r(434551),	-- Masterful Ruby
+				r(434555),	-- Masterful Sapphire
+				r(435332),	-- Prismatic Null Stone
+				r(434546),	-- Quick Onyx
+				r(434550),	-- Quick Ruby
+				r(434554),	-- Quick Sapphire
+				r(435384),	-- Ring of Earthen Craftsmanship
+				r(434544),	-- Versatile Emerald
+				r(434548),	-- Versatile Onyx
+				r(434552),	-- Versatile Ruby
+			}),
+		}),
+
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {

@@ -698,3 +698,37 @@ DF_JEWELCRAFTING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(374475),	-- Shimmering Clasp
 	}),
 }));
+TWW_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+	r(423339),	-- Khaz Algar Jewelcrafting
+	r(434018),	-- Algari Prospecting
+	n(ARMOR, {
+		r(435379),	-- Malleable Band
+		r(435380),	-- Malleable Pendant
+	}),
+	filter(GEMS, {
+		r(434537),	-- Deadly Amber
+		r(434549),	-- Deadly Ruby
+		r(434539),	-- Masterful Amber
+		r(434547),	-- Masterful Onyx
+		r(434538),	-- Quick Amber
+		r(434542),	-- Quick Emerald
+		r(434540),	-- Versatile Amber
+		r(434563),	-- Versatile Sapphire
+	}),
+	filter(MISC, {
+		r(435337),	-- Algari Amber Prism
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(435373),	-- Incanter's Shard
+		r(435371),	-- Radiant Loupes
+		r(435375),	-- Right-Handed Magnifying Glass
+		r(435377),	-- Storyteller's Glasses
+		}),
+	filter(REAGENTS, {
+		r(435325),	-- Decorative Lens
+		r(435324),	-- Engraved Gemcutter
+		r(435323),	-- Gilded Vial
+		r(435327),	-- Inverted Prism
+		r(435326),	-- Marbled Stone
+	}),
+});

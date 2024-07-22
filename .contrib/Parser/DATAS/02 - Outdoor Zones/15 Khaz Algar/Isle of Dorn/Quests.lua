@@ -1000,7 +1000,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 48.6, 60.9, ISLE_OF_DORN },
 				}),
 			}),
-			header(HEADERS.Item, 223089, {	-- Design: Extravagant Loupes
+			header(HEADERS.Item, 228217, {	-- Design: Solid Amber
 				q(82441, {	-- For The Love of Gems
 					--["sourceQuests"] = { x },	-- ?
 					["provider"] = { "n", 223637 },	-- Natalia Pearce
@@ -1024,8 +1024,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 223924 },	-- Natalia Pearce
 					["coord"] = { 29.6, 86.5, ISLE_OF_DORN },
 					["g"] = {
-						i(223089),	-- Design: Extravagant Loupes (RECIPE!)
-						i(228217),	-- Design: Solid Amber
+						i(228217),	-- Design: Solid Amber (RECIPE!)
 					},
 				}),
 			}),

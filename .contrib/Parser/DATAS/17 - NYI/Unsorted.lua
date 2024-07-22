@@ -286,8 +286,7 @@ root(ROOTS.Unsorted, {
 				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
 				i(224730),	-- [PH] Derby Dashers
 				prof(ALCHEMY, {
-					i(211807),	-- Gilded Vial
-					i(211808),	-- Gilded Vial
+
 					i(228401),	-- Bubbling Mycobloom Culture
 					i(228402),	-- Bubbling Mycobloom Culture
 					i(228403),	-- Bubbling Mycobloom Culture
@@ -532,14 +531,7 @@ root(ROOTS.Unsorted, {
 					i(217982),	-- Versatile Cypher
 				}),
 				prof(JEWELCRAFTING, {
-					i(213778),	-- Vicious Jeweler's Setting
 					i(214043),	-- Glittering Gemdust
-					i(215139),	-- Copy Copy Elemental Lariat
-					i(215143),	-- Copy Copy Elemental Lariat
-					i(215236),	-- Vicious Bloodstone
-					i(223083),	-- Design: Elemental Focusing Lens \\ Pattern: Artisan Fishing Cap
-					i(223084),	-- Design: Prismatic Null Stone \\ Pattern: Artisan Enchanter's Hat
-					i(228320),	-- Design: Binding of Binding
 				}),
 				prof(MINING, {
 					i(210940),	-- Null Stone

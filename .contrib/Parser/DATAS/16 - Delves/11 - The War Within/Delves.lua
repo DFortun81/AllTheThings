@@ -674,7 +674,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(221496),	-- Wriggle (PET!) [Kobyss]
 		}),
 		filter(RECIPES, {
-			i(223085),	-- Design: Fractured Gemstone Locket
+			i(223085),	-- Design: Fractured Gemstone Locket (RECIPE!)
 			i(223139),	-- Formula: Enchant Cloak - Chant of Leeching Fangs (RECIPE!)
 			i(224434),	-- Pattern: Dawnthread Lining (RECIPE!)
 			i(223101),	-- Pattern: Reinforced Setae Flyers (RECIPE!)

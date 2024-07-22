@@ -59,6 +59,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(217013),	-- Expert Actor's Chest
 					i(217012),	-- Novice Actor's Chest
 					i(226263),	-- Theater Troupe's Trove
+					i(228320),	-- Design: Binding of Binding (RECIPE!)
 					i(228708),	-- Formula: Gleeful Glamour - Earthen (RECIPE!)
 					i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
 					i(223095),	-- Pattern: Rook Feather Wristwraps (RECIPE!)
