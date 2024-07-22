@@ -385,12 +385,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 28171,	-- And the Sky Streaked Red
 					["coord"] = { 59.0, 69.8, TWILIGHT_HIGHLANDS },
 					["qg"] = 47902,	-- Lirastrasza
+					["groups"] = {
+						objective(1, {	-- 0/10 Obsidian Dragonkin slain
+							["providers"] = {
+								{ "n", 47797},	-- Obsidian Charscale
+								{ "n", 47796},	-- Obsidian Viletongue
+							},
+						}),
+					},
 				}),
 				q(27742, {	-- A Little on the Side
 					["sourceQuests"] = { 27720, 28885 },	-- Mr. Goldmine's Wild Ride (A/H)
 					["coord"] = { 38.2, 93.9, TWILIGHT_HIGHLANDS },
 					["qg"] = 46513,	-- Initiate Goldmine
 					["groups"] = {
+						objective(1, {	-- 0/6 Elementium Shard
+							["providers"] = {
+								{ "i", 62331 },	-- Elementium Shard
+								{ "o", 206295 },	-- Elementium Shard
+								{ "o", 206297 },	-- Elementium Shard
+								{ "o", 206298 },	-- Elementium Shard
+								{ "o", 206299 },	-- Elementium Shard
+							},
+						}),
 						i(63713),	-- Shard-Keeper Helm
 						i(63712),	-- Bracers of Gleaming Shards
 						i(63714),	-- Giltstone Necklace
@@ -402,6 +419,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46583,	-- Eoin Dunwald
 					["groups"] = {
+						objective(1, {	-- 0/6 Wildhammer Ale
+							["providers"] = {
+								{ "i", 62327 },	-- Wildhammer Ale
+								{ "o", 206199 },	-- Wildhammer Ale Cask
+								{ "o", 206292 },	-- Wildhammer Ale Cask
+							},
+						}),
 						i(63837),	-- Bubble-Brew Hood
 						i(63836),	-- Barrel-Belly Gauntlets
 						i(63835),	-- Dunwald's Finest Bindings
@@ -443,6 +467,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
+					["groups"] = {
+						objective(1, {	-- 0/10 Wildhammer Food Stores
+							["providers"] = {
+								{ "i", 62324 },	-- Wildhammer Food Stores
+								{ "o", 206289 },	-- Wildhammer Food Stores
+								{ "o", 206290 },	-- Wildhammer Food Stores
+								{ "o", 206291 },	-- Wildhammer Food Stores
+							},
+						}),
+					},
 				}),
 				q(27537, {	-- Any Portal in a Storm
 					["sourceQuest"] = 27516,	-- Wings Over Highbank
@@ -450,6 +484,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45167,	-- Kurdran Wildhammer
 					["groups"] = {
+						objective(1, {	-- 0/5 Whirlpool Core
+							["provider"] = { "i", 60333 },	-- Whirlpool Core
+							["cr"] = 44011,	-- Muddied Water Elemental
+						}),
 						i(63899),	-- Water-Drill Treads
 						i(63898),	-- Whirlpool Bracers
 						i(63897),	-- Coregrip Gauntlets
@@ -461,6 +499,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46175,	-- Eoin Dunwald
 					["groups"] = {
+						objective(1, {	-- 0/1 Sacred Wildhammer Ale
+							["providers"] = {
+								{ "i", 62317 },	-- Sacred Wildhammer Ale
+								{ "o", 206203 },	-- Sacred Ale Tap
+							},
+						}),
 						i(63849),	-- Aledrinker Shoulderpads
 						i(63848),	-- Brewtaster Bracers
 						i(63847),	-- Keg-Sized Chestplate
@@ -471,6 +515,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.6, 48.6, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46806,	-- Brom Forgehammer
+					["groups"] = {
+						objective(1, {	-- 0/8 Dragonmaw Weapon
+							["providers"] = {
+								{ "i", 62511 },	-- Dragonmaw Weapon
+								{ "o", 206389 },	-- Dragonmaw Weapon Crate
+								{ "o", 206672 },	-- Dragonmaw Weapon Rack
+								{ "o", 206673 },	-- Dragonmaw Weapon Axe
+							},
+						}),
+					},
 				}),
 				q(27711, {	-- Back to the Elementium Depths (A)
 					["sourceQuest"] = 27719,	-- Water of Life
@@ -499,12 +553,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27751,	-- Crushing the Wildhammer
 						27929,	-- Drag 'em Down
 					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Fresh Gryphon Carcass
+							["provider"] = { "i", 62915 },	-- Fresh Gryphon Carcass
+							["cr"] = 46158,	-- Untamed Gryphon
+						}),
+					},
 				}),
 				q(28758, {	-- Battle of Life and Death
 					["sourceQuest"] = 28712,	-- Enter the Dragon Queen
 					["coord"] = { 14.1, 15.5, TWILIGHT_HIGHLANDS },
 					["qg"] = 49810,	-- Calen
 					["groups"] = {
+						objective(1, {	-- 0/8 Twilight Shadowdrake slain
+							["provider"] = { "n", 49873 },	-- Twilight Shadowdrake
+						}),
 						i(63761),	-- Red Dragonheart Ring
 						i(63762),	-- Pendant of Victorious Fury
 						i(63760),	-- Cloak of the Red Flight
@@ -531,6 +594,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 59.0, 69.8, TWILIGHT_HIGHLANDS },
 					["qg"] = 47902,	-- Lirastrasza
 					["groups"] = {
+						objective(1, {	-- 0/8 Obsidian Pyrewing slain
+							["provider"] = { "n", 46141 },	-- Obsidian Pyrewing
+						}),
 						i(63759),	-- Dragonwing Leggings
 						i(63758),	-- Nightscale Girdle
 						i(63757),	-- Wyrmhunter Spaulders
@@ -545,6 +611,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27586,	-- Shells on the Sea Shore
 					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Fathom-Lord Heth'Jatar slain
+							["provider"] = { "n", 46009 },	-- Fathom-Lord Heth'Jatar
+						}),
 						i(63908),	-- Bracers of the Fallen Fathom-Lord
 						i(63907),	-- Heth'jatari Battlegloves
 						i(63906),	-- Conch-Sounc Waistguard
@@ -565,12 +634,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 70.2, 43.2, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27583,	-- The Northern Flank
+					["groups"] = {
+						objective(1, {	-- 0/15 Blackscale Naga Slain
+							["providers"] = {
+								{ "n", 45998},	-- Blackscale Naga Quest Tracker Horde
+								{ "n", 45984},	-- Blackscale Raider
+								{ "n", 45985},	-- Blackscale Mistress
+							},
+						}),
+					},
 				}),
 				q(27611, {	-- Blood on the Sand
 					["qg"] = 46089,	-- Rok'tar
 					["coord"] = { 78.2, 62.5, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27607,	-- The Southern Flank
+					["groups"] = {
+						objective(1, {	-- 0/12 Highbank Marine slain
+							["provider"] = { "n", 45174 },	-- Highbank Marine
+						}),
+					},
 				}),
 				q(27509, {	-- Breach in the Defenses
 					["sourceQuest"] = 27564,	-- In Defense of the Redoubt
@@ -587,6 +670,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
+					["groups"] = {
+						objective(1, {	-- 0/1 High Shaman MacKilligan slain
+							["provider"] = { "n", 46885 },	-- High Shaman MacKilligan
+						}),
+					},
 				}),
 				q(27654, {	-- Bring the Hammer Down (A)
 					["sourceQuests"] = {
@@ -596,6 +684,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.3, 66.0, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45796,	-- Master Mathias Shaw
+					["groups"] = {
+						objective(1, {	-- 0/10 Twilight Citadel cultists slain
+							["providers"] = {
+								{ "n", 46205},	-- Citadel Veteran
+								{ "n", 46203},	-- Twilight Vindicator
+								{ "n", 46204},	-- Corrupted Elementalist
+							},
+						}),
+					},
 				}),
 				q(27655, {	-- Bring the Hammer Down (H)
 					["qg"] = 45675,	-- Garona Halforcen
@@ -604,6 +701,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = {
 						27638,	-- Just You and Garona (Automatically granted)
 						27639,	-- Just You and Garona (Lady Cozwynn)
+					},
+					["groups"] = {
+						objective(1, {	-- 0/10 Twilight Citadel cultists slain
+							["providers"] = {
+								{ "n", 46205},	-- Citadel Veteran
+								{ "n", 46203},	-- Twilight Vindicator
+								{ "n", 46204},	-- Corrupted Elementalist
+							},
+						}),
 					},
 				}),
 				q(28597, {	-- Burnin' at Both Ends
@@ -644,6 +750,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 44042,	-- Ornak
 					["coord"] = { 74.2, 53.2, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Verrall River Muck
+							["providers"] = {
+								{ "i", 60337 },	-- Verrall River Muck
+								{ "o", 204880 },	-- Verrall River Muck
+							},
+						}),
+					},
 				}),
 				q(27807, {	-- Clan Mullan
 					["sourceQuest"] = 27806,	-- Honorable Bearing
@@ -657,6 +771,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45796,	-- Master Mathias Shaw
 					["groups"] = {
+						objective(1, {	-- 0/5 Coup de Grace delivered
+							["provider"] = { "n", 46416 },	-- Twilight Skyterror
+						}),
 						i(63725),	-- Throat-Slitter Gauntlets
 						i(63724),	-- Lifecrusher Treads
 						i(63726),	-- Redistributed Signet
@@ -668,6 +785,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27701,	-- Dragon, Unchained
 					["groups"] = {
+						objective(1, {	-- 0/5 Coup de Grace delivered
+							["provider"] = { "n", 46416 },	-- Twilight Skyterror
+						}),
 						i(63722),	-- Throat-Slitter Gauntlets
 						i(63721),	-- Lifecrusher Treads
 						i(63723),	-- Redestributed Signet
@@ -685,6 +805,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27690,	-- Narkrall, the Drake-Tamer
 					["groups"] = {
+						objective(1, {	-- 0/8 Wildhammer Insignia
+							["provider"] = { "i", 62325 },	-- Wildhammer Insignia
+							["crs"] = {
+								46320,	-- Wildhammer Warbrand
+								46376,	-- Gunwald Greybeard
+								46377,	-- Cliff Thundermar
+								46378,	-- Dillan MacHurley
+								46885,	-- High Shaman MacKilligan
+							},
+						}),
 						i(63823),	-- Hammered Bracers
 						i(63822),	-- Belt of Smashed Feathers
 						i(63821),	-- Dead-Dwarf Shoulderpads
@@ -696,6 +826,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
+					["groups"] = {
+						objective(1, {	-- 0/8 Wildhammer Insignia
+							["provider"] = { "i", 62325 },	-- Wildhammer Insignia
+							["crs"] = {
+								46320,	-- Wildhammer Warbrand
+								46376,	-- Gunwald Greybeard
+								46377,	-- Cliff Thundermar
+								46378,	-- Dillan MacHurley
+								46885,	-- High Shaman MacKilligan
+							},
+						}),
+					},
 				}),
 				q(26540, {	-- Dangerous Compassion
 					["qg"] = 43191,	-- Gregor
@@ -717,6 +859,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45796,	-- Master Mathias Shaw
 					["groups"] = {
+						objective(1, {	-- 0/5 Dark Assassin's Pendant
+							["provider"] = { "i", 62033 },	-- Dark Assassin's Pendant
+							["cr"] = 46202,	-- Dark Assassin
+						}),
 						i(63741),	-- Fencer's Nimblefingers
 						i(63740),	-- Muffled Bracers
 						i(63739),	-- Silenced Blunderbuss
@@ -731,6 +877,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27639,	-- Just You and Garona (Lady Cozwynn)
 					},
 					["groups"] = {
+						objective(1, {	-- 0/5 Dark Assassin's Pendant
+							["provider"] = { "i", 62033 },	-- Dark Assassin's Pendant
+							["cr"] = 46202,	-- Dark Assassin
+						}),
 						i(63738),	-- Needle-Threader Gauntlets
 						i(63737),	-- Wound-Heart Bracers
 						i(63736),	-- Muffled Blunderbuss
@@ -742,6 +892,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26621,	-- Insurrection
 					["groups"] = {
+						objective(1, {	-- 0/1 Warchief Mor'ghor slain
+							["provider"] = { "n", 43189 },	-- Warchief Mor'ghor
+						}),
 						i(63884),	-- Merchant-Rise Shoulderguards
 						i(63883),	-- Helm of Furious Uprising
 						i(63882),	-- Treads of the Common Man
@@ -752,6 +905,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.5, 48.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46850,	-- Mackay Firebeard
+					["groups"] = {
+						objective(1, {	-- 0/6 Dragonmaw Straggler defeated
+							["providers"] = {
+								{ "n", 46851},	-- Dragonmaw Straggler
+								{ "n", 47465},	-- Injured Dragonmaw Straggler
+								{ "n", 48102},	-- Gorosh the Pant Stealer
+							},
+						}),
+					},
 				}),
 				q(27377, {	-- Devoured
 					["sourceQuest"] = 27376,	-- The Maw of Iso'rath
@@ -768,6 +930,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45796,	-- Master Mathias Shaw
 					["groups"] = {
+						objective(1, {	-- 0/1 Dame Alys Finnsson slain
+							["provider"] = { "n", 46341 },	-- Dame Alys Finnsson
+						}),
+						objective(2, {	-- 0/1 Master Klem slain
+							["provider"] = { "n", 46342 },	-- Master Klem
+						}),
+						objective(3, {	-- 0/1 Mia the Rose slain
+							["provider"] = { "n", 46343 },	-- Mia the Rose
+						}),
 						i(63732),	-- Rose-Scented Hood
 						i(63731),	-- Dame's Scaled Greaves
 						i(63730),	-- Klem's Rusted Gauntlets
@@ -782,6 +953,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27653,	-- Dark Assassins
 					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Dame Alys Finnsson slain
+							["provider"] = { "n", 46341 },	-- Dame Alys Finnsson
+						}),
+						objective(2, {	-- 0/1 Master Klem slain
+							["provider"] = { "n", 46342 },	-- Master Klem
+						}),
+						objective(3, {	-- 0/1 Mia the Rose slain
+							["provider"] = { "n", 46343 },	-- Mia the Rose
+						}),
 						i(63729),	-- Rose-Scented Hood
 						i(63728),	-- Dame's Scaled Greaves
 						i(63727),	-- Klem's Rusted Gauntlets
@@ -793,6 +973,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46177,	-- Keely Dunwald
 					["groups"] = {
+						objective(1, {	-- 0/1 Darunga slain
+							["provider"] = { "n", 46624 },	-- Darunga
+						}),
 						i(63833),	-- Dunwald Winged Helm
 						i(63832),	-- Gryphon-Grip Leggings
 						i(63831),	-- Flynn's Favorite Chestplate
@@ -820,6 +1003,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 54.8, 44.2, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27690,	-- Narkrall, the Drake-Tamer
+					["groups"] = {
+						objective(1, {	-- 0/4 Thundermar Gryphon Rider slain
+							["provider"] = { "n", 46321 },	-- Thundermar Gryphon Rider
+						}),
+					},
 				}),
 				q(27700, {	-- Dragon, Unchained (A)
 					["sourceQuests"] = {
@@ -829,6 +1017,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.3, 66.0, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45796,	-- Master Mathias Shaw
+					["groups"] = {
+						objective(1, {	-- 0/1 Lirastrasza freed
+							["provider"] = { "n", 46456 },	-- Lirastrasza
+						}),
+					},
 				}),
 				q(27701, {	-- Dragon, Unchained (H)
 					["qg"] = 45675,	-- Garona Halforcen
@@ -838,12 +1031,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27689,	-- Garona Halforcen
 						27696,	-- The Elementium Axe
 					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Lirastrasza freed
+							["provider"] = { "n", 46456 },	-- Lirastrasza
+						}),
+					},
 				}),
 				q(27754, {	-- Dragonmaw Takedown
 					["coord"] = { 49.0, 29.7, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46591,	-- Colin Thundermar
 					["groups"] = {
+						objective(1, {	-- 0/8 Dragonmaw Insignia
+							["provider"] = { "i", 62332 },	-- Dragonmaw Insignia
+							["crs"] = {
+								46310,	-- Dragonmaw Marauder
+								46493,	-- Warlord Halthar
+								46756,	-- Karkrog the Exterminator
+							},
+						}),
 						i(63826),	-- Trophy-Taker Bracers
 						i(63825),	-- Belt of Bloody Dreams
 						i(63824),	-- Orc-Shock Spaulders
@@ -855,6 +1061,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28147,	-- Purple Is Your Color
 					["groups"] = {
+						objective(1, {	-- 0/10 Glopgut Ogres Slain
+							["providers"] = {
+								{ "n", 47765},	-- Glopgut Pounder
+								{ "n", 47768},	-- Glopgut Hurler
+								{ "n", 47770},	-- Thog
+								{ "n", 48475},	-- Glopgut Hurler
+								{ "n", 48480},	-- Brogg Glopgut
+							},
+						}),
 						i(63846),	-- Cult-Hide Spaulders
 						i(63845),	-- Bracers of False Night
 						i(63844),	-- Ogre-Slayer Chestplate
@@ -866,6 +1081,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46804,	-- Keegan Firebeard
 					["groups"] = {
+						objective(1, {	-- 0/12 Twilight Stormbender slain
+							["provider"] = { "n", 47199 },	-- Twilight Stormbender
+						}),
+						objective(2, {	-- 0/1 Servias Windterror slain
+							["provider"] = { "n", 46839 },	-- Servias Windterror
+						}),
 						i(63861),	-- Keegan's Windswept Chestguard
 						i(63860),	-- Hammerhead Helm
 						i(63859),	-- Stormhammer Gauntlets
@@ -882,12 +1103,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.0, 38.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 47592,	-- Master Mathias Shaw
+					["groups"] = {
+						objective(1, {	-- 0/8 Twilight Spearwarder slain
+							["providers"] = {
+								{ "n", 47490},	-- Twilight Spearwarder
+								{ "n", 47458},	-- Twilight Spearwarder
+							},
+						}),
+					},
 				}),
 				q(28091, {	-- Easy Pickings (H)
 					["qg"] = 47492,	-- Patch
 					["coord"] = { 27.3, 36.7, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27576,	-- Patchwork Command
+					["groups"] = {
+						objective(1, {	-- 0/8 Twilight Spearwarder slain
+							["providers"] = {
+								{ "n", 47490},	-- Twilight Spearwarder
+								{ "n", 47458},	-- Twilight Spearwarder
+							},
+						}),
+					},
 				}),
 				q(26538, {	-- Emergency Aid
 					["qg"] = 43193,	-- Warlord Krogg
@@ -899,6 +1136,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27564,	-- In Defense of the Redoubt
 					["coord"] = { 29.3, 26.0, TWILIGHT_HIGHLANDS },
 					["qg"] = 45528,	-- Calen
+					["groups"] = {
+						objective(1, {	-- 0/12 Twilight invaders slain
+							["providers"] = {
+								{ "n", 45616},	-- Twilight Abductor
+								{ "n", 45618},	-- Twilight Flamequencher
+								{ "n", 45642},	-- Twilight Abductor
+								{ "n", 45648},	-- Twilight Abductor
+								{ "n", 45649},	-- Twilight Abductor
+							},
+						}),
+					},
 				}),
 				q(28712, {	-- Enter the Dragon Queen
 					["coord"] = { 21.8, 57.0, TWILIGHT_HIGHLANDS },
@@ -1019,6 +1267,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27660,	-- Spirit of the Loch
 					["coord"] = { 27.7, 63.8, TWILIGHT_HIGHLANDS },
 					["qg"] = 46413,	-- Countess Verrall
+					["groups"] = {
+						objective(1, {	-- 0/1 Lord Cannon slain
+							["provider"] = { "n", 46785 },	-- Lord Cannon
+						}),
+					},
 				}),
 				q(28176, {	-- Following the Young Home
 					["sourceQuests"] = {
@@ -1037,6 +1290,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Automatically granted.",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Za's Head
+							["provider"] = { "i", 61924 },	-- Za's Head
+							["cr"] = 46017,	-- Za'brox
+						}),
+						objective(2, {	-- 0/1 Phod's Head
+							["provider"] = { "i", 61927 },	-- Phod's Head
+							["cr"] = 46018,	-- Beeble'phod
+						}),
+						objective(3, {	-- 0/1 Beeble's Head
+							["provider"] = { "i", 61926 },	-- Beeble's Head
+							["cr"] = 46018,	-- Beeble'phod
+						}),
+						objective(4, {	-- 0/1 Brox's Head
+							["provider"] = { "i", 61925 },	-- Brox's Head
+							["cr"] = 46017,	-- Za'brox
+						}),
 						i(63747),	-- Spaulders of Gruesome Accomplishment
 						i(63745),	-- Za'brox's Lucky Tooth
 						i(63746),	-- Skull Carrier
@@ -1051,6 +1320,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27588,	-- Signal the Attack (Kurdran Wildhammer)
 					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Za's Head
+							["provider"] = { "i", 61924 },	-- Za's Head
+							["cr"] = 46017,	-- Za'brox
+						}),
+						objective(2, {	-- 0/1 Phod's Head
+							["provider"] = { "i", 61927 },	-- Phod's Head
+							["cr"] = 46018,	-- Beeble'phod
+						}),
+						objective(3, {	-- 0/1 Beeble's Head
+							["provider"] = { "i", 61926 },	-- Beeble's Head
+							["cr"] = 46018,	-- Beeble'phod
+						}),
+						objective(4, {	-- 0/1 Brox's Head
+							["provider"] = { "i", 61925 },	-- Brox's Head
+							["cr"] = 46017,	-- Za'brox
+						}),
 						i(63747),	-- Spaulders of Gruesome Accomplishment
 						i(63745),	-- Za'brox's Lucky Tooth
 						i(63746),	-- Skull Carrier
@@ -1064,6 +1349,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27590,	-- Signal the Attack (Warlord Zaela)
 					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Za's Head
+							["provider"] = { "i", 61924 },	-- Za's Head
+							["cr"] = 46017,	-- Za'brox
+						}),
+						objective(2, {	-- 0/1 Phod's Head
+							["provider"] = { "i", 61927 },	-- Phod's Head
+							["cr"] = 46018,	-- Beeble'phod
+						}),
+						objective(3, {	-- 0/1 Beeble's Head
+							["provider"] = { "i", 61926 },	-- Beeble's Head
+							["cr"] = 46018,	-- Beeble'phod
+						}),
+						objective(4, {	-- 0/1 Brox's Head
+							["provider"] = { "i", 61925 },	-- Brox's Head
+							["cr"] = 46017,	-- Za'brox
+						}),
 						i(63744),	-- Spaulders of Gruesome Glory
 						i(63742),	-- Za'brox's Lucky Tooth
 						i(63743),	-- Skull Carrier
@@ -1078,6 +1379,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27590,	-- Signal the Attack (Warlord Zaela)
 					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Za's Head
+							["provider"] = { "i", 61924 },	-- Za's Head
+							["cr"] = 46017,	-- Za'brox
+						}),
+						objective(2, {	-- 0/1 Phod's Head
+							["provider"] = { "i", 61927 },	-- Phod's Head
+							["cr"] = 46018,	-- Beeble'phod
+						}),
+						objective(3, {	-- 0/1 Beeble's Head
+							["provider"] = { "i", 61926 },	-- Beeble's Head
+							["cr"] = 46018,	-- Beeble'phod
+						}),
+						objective(4, {	-- 0/1 Brox's Head
+							["provider"] = { "i", 61925 },	-- Brox's Head
+							["cr"] = 46017,	-- Za'brox
+						}),
 						i(63744),	-- Spaulders of Gruesome Glory
 						i(63742),	-- Za'brox's Lucky Tooth
 						i(63743),	-- Skull Carrier
@@ -1089,6 +1406,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28123,	-- The Demon Chain
 					["groups"] = {
+						objective(1, {	-- 0/1 Torth slain
+							["provider"] = { "n", 47669 },	-- Torth
+						}),
 						i(63802),	-- Bastion-Clearing Leggings
 						i(63801),	-- Gauntlets of Dragonwrath
 						i(63800),	-- Clear-Eyed Waistguard
@@ -1131,6 +1451,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.5, 80.1, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28591,	-- Off the Wall
+					["groups"] = {
+						objective(1, {	-- 0/10 Highbank Defenders slain
+							["providers"] = {
+								{ "n", 49023},	-- Highbank Guardsman
+								{ "n", 49024},	-- Highbank Marksman
+								{ "n", 49028},	-- Tidebreaker Sailor
+								{ "n", 49029},	-- Highbank Prison Guard
+								{ "n", 49350},	-- Tidebreaker Sailor
+							},
+						}),
+					},
 				}),
 				q(27650, {	-- Home Again
 					["races"] = ALLIANCE_ONLY,
@@ -1166,6 +1497,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 28133,	-- Fury Unbound (TODO: Verify sourcequest)
+					["groups"] = {
+						objective(1, {	-- 0/4 Thundermar Gryphon Rider slain
+							["provider"] = { "n", 46321 },	-- Thundermar Gryphon Rider
+						}),
+					},
 				}),
 				q(28212, {	-- Hot Stuff
 					["sourceQuests"] = {
@@ -1176,6 +1512,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.1, 29.3, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48014,	-- Nivvet Channelock
+					["groups"] = {
+						objective(1, {	-- 0/5 Molten Fury
+							["provider"] = { "i", 63283 },	-- Molten Fury
+							["cr"] = 48016,	-- Unbound Emberfiend
+						}),
+					},
 				}),
 				q(28043, {	-- How to Maim Your Dragon
 					["qg"] = 46313,	-- Narkrall Rakeclaw
@@ -1244,6 +1586,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 28655,	-- Wild, Wild, Wildhammer Wedding
+					["groups"] = {
+						objective(1, {	-- 0/8 Dragonmaw Insignia
+							["provider"] = { "i", 62332 },	-- Dragonmaw Insignia
+							["crs"] = {
+								46310,	-- Dragonmaw Marauder
+								46493,	-- Warlord Halthar
+								46756,	-- Karkrog the Exterminator
+							},
+						}),
+					},
 				}),
 				q(27491, {	-- Kor'kron Drop
 					["qg"] = 45665,	-- Lady Cozwynn
@@ -1285,6 +1637,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45169,	-- Lieutenant Emry
 					["groups"] = {
+						objective(1, {	-- 0/12 Axebite Marine slain
+							["provider"] = { "n", 45175 },	-- Axebite Marine
+						}),
 						i(63893),	-- Signet of Bloody Sands
 						i(63892),	-- Beach-Sweeper Wand
 					},
@@ -1304,6 +1659,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.0, 29.7, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48173,	-- Colin Thundermar
+					["groups"] = {
+						objective(1, {	-- 0/8 Dragonmaw Skyclaw slain
+							["provider"] = { "n", 48194 },	-- Dragonmaw Skyclaw
+						}),
+					},
 				}),
 				q(27506, {	-- Life from Death
 					["sourceQuest"] = 27504,	-- Even Dragons Bleed
@@ -1325,6 +1685,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46591,	-- Colin Thundermar
 					["groups"] = {
+						objective(1, {	-- 0/1 Magmalord Falthazar's Head
+							["provider"] = { "i", 63286 },	-- Magmalord Falthazar's Head
+							["cr"] = 48015,	-- Magmalord Falthazar
+						}),
 						i(63814),	-- Corruption Resistant Gloves
 						i(63813),	-- Flameproof Treads
 						i(63812),	-- Lepglates of Cooled Magma
@@ -1351,6 +1715,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.2, 18.1, TWILIGHT_HIGHLANDS },
 					["qg"] = 45362,	-- Earthcaller Yevaa
 					["groups"] = {
+						objective(1, {	-- 0/5 Fleshburner Heart
+							["provider"] = { "i", 60981 },	-- Fleshburner Heart
+							["cr"] = 45358,	-- Bound Fleshburner
+						}),
 						i(63786),	-- Fleshburned Robes
 						i(63785),	-- Smoking Stride Treads
 						i(63784),	-- Heartsmoke Legplates
@@ -1379,6 +1747,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 43.4, 57.3, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45668,	-- Kurdran Wildhammer
+					["groups"] = {
+						objective(1, {	-- 0/1 Hidden explosives detonated
+							["provider"] = { "o", 205590 },	-- Hidden Explosives
+						}),
+					},
 				}),
 				q(27495, {	-- Move the Mountain (H)
 					["qg"] = 45658,	-- Warlord Zaela
@@ -1388,6 +1761,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						27497,	-- Call in the Artillery
 						27491,	-- Kor'kron Drop
 						27493,	-- Ogres & Ettins
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Hidden explosives detonated
+							["provider"] = { "o", 205590 },	-- Hidden Explosives
+						}),
 					},
 				}),
 				q(27720, {	-- Mr. Goldmine's Wild Ride (A)
@@ -1415,6 +1793,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 73.8, 53.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26786,	-- Securing the Beach Head
+					["groups"] = {
+						objective(1, {	-- 0/5 Whirlpool Core
+							["provider"] = { "i", 60333 },	-- Whirlpool Core
+							["cr"] = 44011,	-- Muddied Water Elemental
+						}),
+					},
 				}),
 				q(28369, {	-- My Sister, Fanny
 					["isBreadcrumb"] = true,	-- for "Never Leave a Dinner Behind"
@@ -1428,6 +1812,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45170,	-- Simon Chandler
 					["groups"] = {
+						objective(1, {	-- 0/10 Blackscale Naga Slain
+							["providers"] = {
+								{ "n", 45179},	-- Blackscale Myrmidon
+								{ "n", 45182},	-- Blackscale Seacaller
+							},
+						}),
 						i(63911),	-- Myrmidon-Slaying Bracers
 						i(63910),	-- Blackscale Wraps
 						i(63909),	-- Chill-Tail Waistguard
@@ -1439,6 +1829,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48173,	-- Colin Thundermar
 					["groups"] = {
+						objective(1, {	-- 0/1 Narkrall Rakeclaw slain
+							["provider"] = { "n", 48257 },	-- Narkrall Rakeclaw
+						}),
 						i(63807),	-- Narkrall's Leggings
 						i(63806),	-- Ale Soaked Grips
 						i(63805),	-- Furybound Waistplate
@@ -1463,6 +1856,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.7, 29.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48013,	-- Fanny Thundermar
+					["groups"] = {
+						objective(1, {	-- 0/10 Wildhammer Food Stores
+							["providers"] = {
+								{ "i", 62324 },	-- Wildhammer Food Stores
+								{ "o", 206289 },	-- Wildhammer Food Stores
+								{ "o", 206290 },	-- Wildhammer Food Stores
+								{ "o", 206291 },	-- Wildhammer Food Stores
+							},
+						}),
+					},
 				}),
 				q(28862, {	-- Never Leave a Dinner Behind
 					["qg"] = 48010,	-- Low Shaman Blundy
@@ -1470,6 +1873,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 28655,	-- Wild, Wild, Wildhammer Wedding
+					["groups"] = {
+						objective(1, {	-- 0/10 Wildhammer Food Stores
+							["providers"] = {
+								{ "i", 62324 },	-- Wildhammer Food Stores
+								{ "o", 206289 },	-- Wildhammer Food Stores
+								{ "o", 206290 },	-- Wildhammer Food Stores
+								{ "o", 206291 },	-- Wildhammer Food Stores
+							},
+						}),
+					},
 				}),
 				q(28170, {	-- Night Terrors
 					["qg"] = 47751,	-- Buunu
@@ -1487,6 +1900,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 48.7, 16.6, TWILIGHT_HIGHLANDS },
 					["qg"] = 48059,	-- Earthcaller Yevaa
 					["groups"] = {
+						objective(1, {	-- 0/1 Kill Iso'rath
+							["provider"] = { "n", 47960 },	-- Brain of Iso'rath
+						}),
 						i(63783),	-- Woundseal Leggings
 						i(63782),	-- Weeping Scar Cover
 						i(63781),	-- Nightmare Choker
@@ -1497,30 +1913,80 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 81.9, 79.7, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28591,	-- Off the Wall
+					["groups"] = {
+						objective(1, {	-- 0/1 Induction Samophlange
+							["providers"] = {
+								{ "i", 64584 },	-- Induction Samophlange
+								{ "o", 207259 },	-- Induction Samophlange
+							},
+						}),
+					},
 				}),
 				q(28591, {	-- Off The Wall
 					["qg"] = 49378,	-- Patch
 					["coord"] = { 77.2, 74.6, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28590,	-- Reprisal
+					["groups"] = {
+						objective(1, {	-- 0/80 Highbank Marksman slain
+							["provider"] = { "n", 49124 },	-- Highbank Marksman
+						}),
+						objective(2, {	-- 0/12 Highbank Cannoneer slain
+							["provider"] = { "n", 49025 },	-- Highbank Cannoneer
+						}),
+						objective(3, {	-- 0/4 Highbank Cannon slain
+							["providers"] = {
+								{ "n", 49060},	-- Highbank Cannon
+								{ "n", 49631},	-- Highbank Cannon Bunny
+							},
+						}),
+					},
 				}),
 				q(28379, {	-- Ogre Bashin'
 					["sourceQuest"] = 28377,	-- Rescue at Glopgut's Hollow
 					["coord"] = { 38.1, 34.4, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48472,	-- Colin Thundermar
+					["groups"] = {
+						objective(1, {	-- 0/10 Glopgut Ogre Slain
+							["providers"] = {
+								{ "n", 48474},	-- Glopgut Pounder
+								{ "n", 48498},	-- Glopgut Basher
+								{ "n", 47768},	-- Glopgut Hurler
+								{ "n", 48475},	-- Glopgut Hurler
+							},
+						}),
+					},
 				}),
 				q(27492, {	-- Ogres & Ettins (A)
 					["sourceQuest"] = 28248,	-- Victors' Point
 					["coord"] = { 43.4, 57.3, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45668,	-- Kurdran Wildhammer
+					["groups"] = {
+						objective(1, {	-- 0/10 Bloodeye Clan ogres & ettins slain
+							["providers"] = {
+								{ "n", 45787},	-- Bloodeye Brute
+								{ "n", 45795},	-- Bloodeye Magelord
+								{ "n", 45838},	-- Twilight Ettin
+							},
+						}),
+					},
 				}),
 				q(27493, {	-- Ogres & Ettins (H)
 					["qg"] = 45658,	-- Warlord Zaela
 					["coord"] = { 45.2, 75.3, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28249,	-- Crushblow
+					["groups"] = {
+						objective(1, {	-- 0/10 Bloodeye Clan ogres & ettins slain
+							["providers"] = {
+								{ "n", 45787},	-- Bloodeye Brute
+								{ "n", 45795},	-- Bloodeye Magelord
+								{ "n", 45838},	-- Twilight Ettin
+							},
+						}),
+					},
 				}),
 				q(27648, {	-- Once More Into The Fire
 					["sourceQuest"] = 27645,	-- Cayden Dunwald
@@ -1545,6 +2011,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.2, 42.7, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/1 Black Diamond Heart
+							["provider"] = { "i", 62796 },	-- Black Diamond Heart
+							["cr"] = 47226,	-- Obsidian Stoneslave
+						}),
 						i(63811),	-- Diamond Clutching Gloves
 						i(63810),	-- Heartstone Treads
 						i(63809),	-- Legplates of Riven Futures
@@ -1577,12 +2047,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.0, 38.9, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 47611,	-- Highbank Lieutenant
+					["groups"] = {
+						objective(1, {	-- 0/30 Wyrms' Bend cultists killed
+							["providers"] = {
+								{ "n", 47406},	-- Twilight Sentinel
+								{ "n", 47394},	-- Twilight Guardsman
+								{ "n", 47401},	-- Twilight Stalker
+								{ "n", 47407},	-- Twilight Earthbinder
+								{ "n", 47408},	-- Twilight Shadowmender
+								{ "n", 47409},	-- Twilight Cryomagus
+								{ "n", 47410},	-- Bound Groundshaker
+							},
+						}),
+					},
 				}),
 				q(28094, {	-- Paving the Way (H)
 					["qg"] = 47374,	-- Patch
 					["coord"] = { 29.6, 40.9, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28097,	-- The Gates of Grim Batol
+					["groups"] = {
+						objective(1, {	-- 0/30 Wyrms' Bend cultists killed
+							["providers"] = {
+								{ "n", 47406},	-- Twilight Sentinel
+								{ "n", 47394},	-- Twilight Guardsman
+								{ "n", 47401},	-- Twilight Stalker
+								{ "n", 47407},	-- Twilight Earthbinder
+								{ "n", 47408},	-- Twilight Shadowmender
+								{ "n", 47409},	-- Twilight Cryomagus
+								{ "n", 47410},	-- Bound Groundshaker
+							},
+						}),
+					},
 				}),
 				q(27816, {	-- Personal Request
 					["sourceQuests"] = {
@@ -1605,6 +2101,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 37.5, 88.6, TWILIGHT_HIGHLANDS },
 					["qg"] = 46242,	-- Earthcaller Yevaa
 					["groups"] = {
+						objective(1, {	-- 0/1 Debilitated Apexar slain
+							["provider"] = { "n", 46273 },	-- Debilitated Apexar
+						}),
+						objective(2, {	-- 0/1 Debilitated Aetharon slain
+							["provider"] = { "n", 46270 },	-- Debilitated Aetharon
+						}),
+						objective(3, {	-- 0/1 Debilitated Edemantus slain
+							["provider"] = { "n", 46272 },	-- Debilitated Edemantus
+						}),
 						i(63734),	-- Portal-Sealer's Breastplate
 						i(63733),	-- Deepdigger Helm
 						i(63735),	-- Darklight Torch
@@ -1619,6 +2124,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.1, 29.3, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48014,	-- Nivvet Channelock
+					["groups"] = {
+						objective(1, {	-- 0/10 Twisted Elementium Loop
+							["provider"] = { "i", 63285 },	-- Twisted Elementium Loop
+							["cr"] = 47226,	-- Obsidian Stoneslave
+						}),
+					},
 				}),
 				q(28104, {	-- Precious Goods (A)
 					["sourceQuest"] = 28101,	-- Mathias' Command
@@ -1626,6 +2137,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 47592,	-- Master Mathias Shaw
 					["groups"] = {
+						objective(1, {	-- 0/1 Twilight Caravan Cargo Key
+							["provider"] = { "i", 62926 },	-- Twilight Caravan Cargo Key
+							["crs"] = {
+								47458,	-- Twilight Spearwarder
+								47490,	-- Twilight Spearwarder
+							},
+						}),
+						objective(2, {	-- 0/1 Twilight's Hammer Gatestone
+							["providers"] = {
+								{ "i", 62927 },	-- Twilight's Hammer Gatestone
+								{ "o", 206674 },	-- Twilight Caravan Chest
+								{ "o", 206675 },	-- Twilight Caravan Chest
+							},
+						}),
 						i(63774),	-- Spear-Impaled Leggings
 						i(63773),	-- Gatekeeper's Helm
 					},
@@ -1636,6 +2161,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27576,	-- Patchwork Command
 					["groups"] = {
+						objective(1, {	-- 0/1 Twilight Caravan Cargo Key
+							["provider"] = { "i", 62926 },	-- Twilight Caravan Cargo Key
+							["crs"] = {
+								47458,	-- Twilight Spearwarder
+								47490,	-- Twilight Spearwarder
+							},
+						}),
+						objective(2, {	-- 0/1 Twilight's Hammer Gatestone
+							["providers"] = {
+								{ "i", 62927 },	-- Twilight's Hammer Gatestone
+								{ "o", 206674 },	-- Twilight Caravan Chest
+								{ "o", 206675 },	-- Twilight Caravan Chest
+							},
+						}),
 						i(63771),	-- Crushchest Leggings
 						i(63770),	-- Helm of Durable Hatred
 					},
@@ -1666,11 +2205,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 47723,	-- Rotgrum
 					["coord"] = { 36.7, 37.9, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Twilight Garment Scrap
+							["provider"] = { "i", 63087 },	-- Twilight Garment Scrap
+							["cr"] = 47724,	-- Twilight Windwarper
+						}),
+					},
 				}),
 				q(27300, {	-- Pushing Back
 					["sourceQuest"] = 27299,	-- Torn Ground
 					["coord"] = { 44.0, 10.5, TWILIGHT_HIGHLANDS },
 					["qg"] = 45332,	-- Earthcaller Torunscar
+					["groups"] = {
+						objective(1, {	-- 0/12 Drakgor cultists slain
+							["providers"] = {
+								{ "n", 45334},	-- Twilight Bonebreaker
+								{ "n", 45359},	-- Twilight Captivator
+								{ "n", 45360},	-- Omak'Tul
+							},
+						}),
+					},
 				}),
 				q(28584, {	-- Quality Construction
 					["qg"] = 49439,	-- Brett the Bomber
@@ -1700,17 +2254,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 67.6, 65.9, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45172,	-- Thordun Hammerblow
+					["groups"] = {
+						objective(1, {	-- 0/8 Thorny Stankroot
+							["providers"] = {
+								{ "i", 61319 },	-- Thorny Stankroot
+								{ "o", 205538 },	-- Thorny Stankroot
+							},
+						}),
+					},
 				}),
 				q(27744, {	-- Rune Ruination
 					["sourceQuests"] = { 27720, 28885 },	-- Mr. Goldmine's Wild Ride (A/H)
 					["coord"] = { 37.4, 93.2, TWILIGHT_HIGHLANDS },
 					["qg"] = 46671,	-- Twilight Rune of Earth
+					["groups"] = {
+						objective(1, {	-- 0/1 Rune of Earth destroyed
+							["provider"] = { "n", 46671 },	-- Twilight Rune of Earth
+						}),
+						objective(2, {	-- 0/1 Rune of Water destroyed
+							["provider"] = { "o", 206314 },	-- Twilight Rune of Water
+						}),
+						objective(3, {	-- 0/1 Rune of Air destroyed
+							["provider"] = { "o", 206312 },	-- Twilight Rune of Air
+						}),
+						objective(4, {	-- 0/1 Rune of Fire destroyed
+							["provider"] = { "o", 206313 },	-- Twilight Rune of Fire
+						}),
+					},
 				}),
 				q(27177, {	-- Salvage Operation
 					["sourceQuest"] = 28599,	-- Kurdran's Waitin'
 					["coord"] = { 79.2, 78.5, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45170,	-- Simon Chandler
+					["groups"] = {
+						objective(1, {	-- 0/8 Recovered Supplies
+							["providers"] = {
+								{ "i", 60857 },	-- Recovered Supplies
+								{ "o", 205250 },	-- Water-Logged Crate
+							},
+						}),
+					},
 				}),
 				q(26798, {	-- Saurfang Will be Pleased
 					["qg"] = 44024,	-- Artesh
@@ -1744,6 +2328,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 70.3, 43.3, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27583,	-- The Northern Flank
+					["groups"] = {
+						objective(1, {	-- 0/8 Unexploded Mortar Shell
+							["providers"] = {
+								{ "i", 61634 },	-- Unexploded Mortar Shell
+								{ "o", 205823 },	-- Unexploded Mortar Shell
+							},
+						}),
+					},
 				}),
 				q(28175, {	-- Shining Through the Dark
 					["sourceQuest"] = 28171,	-- And the Sky Streaked Red
@@ -1755,6 +2347,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 77.0, 69.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45168,	-- Fargo Flintlocke
+					["groups"] = {
+						objective(1, {	-- 0/5 Abused Shredder Parts
+							["provider"] = { "i", 61048 },	-- Abused Shredder Parts
+							["crs"] = {
+								45185,	-- Diamond-Blade Shredder
+								46098,	-- Deathblade Shredder
+							},
+						}),
+					},
 				}),
 				q(27490, {	-- SI:7 Drop
 					["sourceQuest"] = 28248,	-- Victors' Point
@@ -1805,6 +2406,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27299,	-- Torn Ground
 					["coord"] = { 44.4, 11.5, TWILIGHT_HIGHLANDS },
 					["qg"] = 45432,	-- Initiate Goldmine
+					["groups"] = {
+						objective(1, {	-- 0/10 Pyreburn Oil
+							["providers"] = {
+								{ "i", 60982 },	-- Pyreburn Oil
+								{ "o", 205422 },	-- Barrel of Pyreburn Oil
+							},
+						}),
+					},
 				}),
 				q(27200, {	-- Siren's Song
 					["sourceQuest"] = 28599,	-- Kurdran's Waitin'
@@ -1849,6 +2458,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46814,	-- Cailin Longfellow
 					["groups"] = {
+						objective(1, {	-- 0/1 Meara's Dried Roses
+							["providers"] = {
+								{ "i", 62545 },	-- Meara's Dried Roses
+								{ "o", 206408 },	-- Meara's Dried Roses
+							},
+						}),
+						objective(2, {	-- 0/1 Parlan's Ivory Hammer
+							["providers"] = {
+								{ "i", 62546 },	-- Parlan's Ivory Hammer
+								{ "o", 206411 },	-- Parlan's Ivory Hammer
+							},
+						}),
+						objective(3, {	-- 0/1 Aprika's Doll
+							["providers"] = {
+								{ "i", 62543 },	-- Aprika's Doll
+								{ "o", 206410 },	-- Aprika's Lost Doll
+							},
+						}),
 						i(63880),	-- Fire-Dodged Shoulderpads
 						i(63879),	-- Waistguard of Salvaged Happiness
 						i(63878),	-- Legplates of Remnants
@@ -1875,6 +2502,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 54.3, 16.7, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48367,	-- Lachlan MacGraff
+					["groups"] = {
+						objective(1, {	-- 0/12 Pristine Owl Feather
+							["providers"] = {
+								{ "i", 64317 },	-- Pristine Owl Feather
+								{ "o", 207158 },	-- Pristine Owl Feather
+							},
+						}),
+					},
 				}),
 				q(28409, {	-- Something Brewed
 					["sourceQuest"] = 28407,	-- The Bachelorette
@@ -1887,12 +2522,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 54.3, 16.7, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48367,	-- Lachlan MacGraff
+					["groups"] = {
+						objective(1, {	-- 0/8 Fresh Venison
+							["provider"] = { "i", 64319 },	-- Fresh Venison
+							["crs"] = {
+								46970,	-- Highland Elk
+								46971,	-- Highland Doe
+							},
+						}),
+						objective(2, {	-- 0/5 Worg Rib
+							["provider"] = { "i", 64320 },	-- Worg Rib
+							["cr"] = 46153,	-- Highland Worg
+						}),
+					},
 				}),
 				q(28410, {	-- Something Stolen
 					["sourceQuest"] = 28407,	-- The Bachelorette
 					["coord"] = { 54.3, 16.7, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48367,	-- Lachlan MacGraff
+					["groups"] = {
+						objective(1, {	-- 0/1 Fine Dark Cloth
+							["providers"] = {
+								{ "i", 64318 },	-- Fine Dark Cloth
+								{ "o", 207162 },	-- Crate of Fine Cloth
+							},
+						}),
+					},
 				}),
 				q(27660, {	-- Spirit of the Loch
 					["sourceQuests"] = { 27657, 27658 },	-- Help From the Earthcaller (A/H)
@@ -1920,6 +2576,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.1, 29.3, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48174,	-- Nivvet Channelock
+					["groups"] = {
+						objective(1, {	-- 0/8 Dragonmaw Black Drake slain
+							["provider"] = { "n", 48197 },	-- Dragonmaw Black Drake
+						}),
+					},
 				}),
 				q(28211, {	-- Tempered in Elemental Flame
 					["sourceQuests"] = {
@@ -1930,6 +2591,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.1, 29.3, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48014,	-- Nivvet Channelock
+					["groups"] = {
+						objective(1, {	-- 0/8 Tempered Spear
+							["providers"] = {
+								{ "i", 63282 },	-- Tempered Spear
+								{ "o", 206952 },	-- Tempered Spear
+							},
+						}),
+					},
 				}),
 				q(28346, {	-- The Bachelor
 					["sourceQuest"] = 28294,	-- The Kirthaven Summit
@@ -1994,6 +2663,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 54.3, 43.8, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28043,	-- How to Maim Your Dragon
+					["groups"] = {
+						objective(1, {	-- 0/1 The Demon Chain
+							["providers"] = {
+								{ "i", 63036 },	-- The Demon Chain
+								{ "o", 206724 },	-- The Demon Chain
+							},
+						}),
+					},
 				}),
 				q(27695, {	-- The Elementium Axe (A)
 					["sourceQuests"] = {
@@ -2003,6 +2680,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 36.3, 66.0, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45796,	-- Master Mathias Shaw
+					["groups"] = {
+						objective(1, {	-- 0/1 The Elementium Axe
+							["provider"] = { "i", 62230 },	-- The Elementium Axe
+							["cr"] = 46399,	-- Blindeye the Guardian
+						}),
+					},
 				}),
 				q(27696, {	-- The Elementium Axe (H)
 					["qg"] = 45675,	-- Garona Halforcen
@@ -2011,6 +2694,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = {
 						27655,	-- Bring the Hammer Down
 						27653,	-- Dark Assassins
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 The Elementium Axe
+							["provider"] = { "i", 62230 },	-- The Elementium Axe
+							["cr"] = 46399,	-- Blindeye the Guardian
+						}),
 					},
 				}),
 				q(28243, {	-- The Eyes Have It (A)
@@ -2036,6 +2725,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 50.7, 60.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46811,	-- Duglas Mullan
+					["groups"] = {
+						objective(1, {	-- 0/1 Mullan Gryphon Rider defeated
+							["provider"] = { "n", 46813 },	-- Mullan Gryphon Rider
+						}),
+					},
 				}),
 				q(28097, {	-- The Gates of Grim Batol
 					["qg"] = 47492,	-- Patch
@@ -2117,6 +2811,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 79.2, 78.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 45172,	-- Thordun Hammerblow
+					["groups"] = {
+						objective(1, {	-- 0/10 Verrall River Muck
+							["providers"] = {
+								{ "i", 60337 },	-- Verrall River Muck
+								{ "o", 204880 },	-- Verrall River Muck
+							},
+						}),
+					},
 				}),
 				q(27811, {	-- The Scent of Battle
 					["sourceQuest"] = 27807,	-- Clan Mullan
@@ -2158,12 +2860,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 63.1, 47.6, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48053,	-- Bahrum Forgehammer
+					["groups"] = {
+						objective(1, {	-- 0/1 Bahrum's Pants
+							["provider"] = { "i", 63374 },	-- Bahrum's Pants
+							["cr"] = 48102,	-- Gorosh the Pant Stealer
+						}),
+					},
 				}),
 				q(28166, {	-- Thog's Nightlight
 					["qg"] = 47751,	-- Buunu
 					["coord"] = { 36.3, 37.9, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28149,	-- Whispers in the Wind
+					["groups"] = {
+						objective(1, {	-- 0/1 The Light of Souls
+							["providers"] = {
+								{ "i", 63107 },	-- The Light of Souls
+								{ "o", 206839 },	-- The Light of Souls
+							},
+						}),
+					},
 				}),
 				q(27299, {	-- Torn Ground
 					["sourceQuests"] = {
@@ -2172,6 +2888,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["coord"] = { 44.0, 10.5, TWILIGHT_HIGHLANDS },
 					["qg"] = 45332,	-- Earthcaller Torunscar
+					["groups"] = {
+						objective(1, {	-- 0/3 Tentacle of Iso'rath slain
+							["provider"] = { "n", 45394 },	-- Tentacle of Iso'rath
+						}),
+					},
 				}),
 				q(27747, {	-- Total War
 					["qg"] = 46318,	-- Harkkan
@@ -2213,6 +2934,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = { 27657, 27658 },	-- Help From the Earthcaller (A/H)
 					["coord"] = { 37.5, 88.6, TWILIGHT_HIGHLANDS },
 					["qg"] = 46243,	-- Initiate Goldmine
+					["groups"] = {
+						objective(1, {	-- 0/10 Enslaved elementals freed
+							["providers"] = {
+								{ "n", 46327},	-- Enslaved Inferno
+								{ "n", 46328},	-- Enslaved Tempest
+								{ "n", 46329},	-- Enslaved Waterspout
+							},
+						}),
+					},
 				}),
 				q(27301, {	-- Unbroken
 					["sourceQuest"] = 27299,	-- Torn Ground
@@ -2248,6 +2978,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.8, 43.2, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27690,	-- Narkrall, the Drake-Tamer
+					["groups"] = {
+						objective(1, {	-- 0/10 Wildhammer Food Stores
+							["providers"] = {
+								{ "i", 62324 },	-- Wildhammer Food Stores
+								{ "o", 206289 },	-- Wildhammer Food Stores
+								{ "o", 206290 },	-- Wildhammer Food Stores
+								{ "o", 206291 },	-- Wildhammer Food Stores
+							},
+						}),
+					},
 				}),
 				q(28863, {	-- Warlord Halthar is Back
 					["qg"] = 49386,	-- Craw MacGraw
@@ -2255,18 +2995,33 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["sourceQuest"] = 28655,	-- Wild, Wild, Wildhammer Wedding
+					["groups"] = {
+						objective(1, {	-- 0/1 Warlord Halthar slain
+							["provider"] = { "n", 46493 },	-- Warlord Halthar
+						}),
+					},
 				}),
 				q(27485, {	-- Warm Welcome (A)
 					["sourceQuest"] = 27380,	-- Nightmare
 					["coord"] = { 44.0, 10.5, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 48265,	-- Lauriel Trueblade
+					["groups"] = {
+						objective(1, {	-- 0/1 Meet with Lirastrasza
+							["provider"] = { "n", 45708 },	-- Lirastrasza
+						}),
+					},
 				}),
 				q(27486, {	-- Warm Welcome (H)
 					["qg"] = 48264,	-- Golluck Rockfist
 					["coord"] = { 44.0, 10.5, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27380,	-- Nightmare
+					["groups"] = {
+						objective(1, {	-- 0/1 Meet with Lirastrasza
+							["provider"] = { "n", 45708 },	-- Lirastrasza
+						}),
+					},
 				}),
 				q(27719, {	-- Water of Life (A)
 					["sourceQuest"] = 27661,	-- Fire the Cannon
@@ -2295,24 +3050,47 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57.9, 33.5, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 206569 },	-- Eye of Twilight
+					["groups"] = {
+						objective(1, {	-- 0/10 Shaman of the Black slain
+							["provider"] = { "n", 46322 },	-- Shaman of the Black
+						}),
+					},
 				}),
 				q(27951, {	-- We All Must Sacrifice (H)
 					["coord"] = { 57.9, 33.5, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 206569 },	-- Eye of Twilight
 					["sourceQuest"] = 27947,	-- A Vision of Twilight
+					["groups"] = {
+						objective(1, {	-- 0/10 Shaman of the Black slain
+							["provider"] = { "n", 46322 },	-- Shaman of the Black
+						}),
+					},
 				}),
 				q(27803, {	-- Welcome Relief
 					["sourceQuest"] = 27621,	-- Firebeard's Patrol
 					["coord"] = { 60.1, 57.9, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 46804,	-- Keegan Firebeard
+					["groups"] = {
+						objective(1, {	-- 0/8 Subjugated Firestarter slain
+							["provider"] = { "n", 46838 },	-- Subjugated Firestarter
+						}),
+					},
 				}),
 				q(28596, {	-- Welcome to Highbank!
 					["qg"] = 49022,	-- Lieutenant Fawkes
 					["sourceQuest"] = 28832,	-- Twilight Shores (2/2)
 					["coord"] = { 80.9, 79.4, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Horde Attackers slain
+							["providers"] = {
+								{ "n", 49008},	-- Axebite Infantry
+								{ "n", 49009},	-- Bilgewater Gunman
+							},
+						}),
+					},
 				}),
 				q(27641, {	-- While Meeting The Family
 					["sourceQuest"] = 27640,	-- Dunwalds Don't Die
@@ -2324,6 +3102,15 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuests"] = { 27720, 28885 },	-- Mr. Goldmine's Wild Ride (A/H)
 					["coord"] = { 38.2, 93.9, TWILIGHT_HIGHLANDS },
 					["qg"] = 46513,	-- Initiate Goldmine
+					["groups"] = {
+						objective(1, {	-- 0/12 Elementium Depths cultists slain
+							["providers"] = {
+								{ "n", 46579},	-- Depths Overseer
+								{ "n", 46578},	-- Twilight Miner
+								{ "n", 46610},	-- Twilight Miner
+							},
+						}),
+					},
 				}),
 				q(28655, {	-- Wild, Wild, Wildhammer Wedding
 					["sourceQuests"] = {
@@ -2347,6 +3134,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 77.6, 16.6, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28583,	-- Krazzworks
+					["groups"] = {
+						objective(1, {	-- 0/10 Wildhammer Raider slain
+							["providers"] = {
+								{ "n", 49628},	-- Wildhammer Raider
+								{ "n", 49632},	-- Wildhammer Raider
+							},
+						}),
+					},
 				}),
 				q(27516, {	-- Wings Over Highbank
 					["sourceQuest"] = 27515,	-- Roots'll Do 'Er
