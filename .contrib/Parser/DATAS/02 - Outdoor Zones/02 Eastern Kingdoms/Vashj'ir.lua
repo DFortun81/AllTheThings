@@ -262,7 +262,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/5 Ancient Conduits destroyed
 									["provider"] = { "o", 203699 },	-- Ancient Conduit
 								}),
-					},
+							},
 						}),
 						q(26181, {	-- Back to Darkbreak Cove
 							["qg"] = 42197,	-- L'ghorek
@@ -703,9 +703,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["providers"] = {
 										{ "i", 56810 },	-- Scalding Shroom
 										{ "o", 203453 },	-- Scalding Shroom
-							},
+									},
 								}),
-					},
+							},
 						}),
 						q(26124, {	-- Secure Seabrush (Auto-Accept)
 							["qg"] = 42114,	-- Alliance Sea-Scout
@@ -1278,9 +1278,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["providers"] = {
 										{ "i", 54957 },	-- Stormwind S.E.A.L. Equipment
 										{ "o", 203061 },	-- Stormwind Locker
-							},
+									},
 								}),
-					},
+							},
 						}),
 						q(25587, {	-- Gimme Shelter
 							["qg"] = 39667,	-- Adarrah
@@ -1342,7 +1342,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/6 Naga Weapons Destroyed
 									["provider"] = { "o", 203300 },	-- Naga Tridents
 								}),
-					},
+							},
 						}),
 						q(25467, {	-- Kliklak's Craw
 							["provider"] = { "i", 54345 },	-- Crumpled Treasure Map
@@ -1482,9 +1482,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["providers"] = {
 										{ "i", 52504 },	-- Conch Shell
 										{ "o", 202560 },	-- Conch Shell
-							},
+									},
 								}),
-					},
+							},
 						}),
 						q(25929, {	-- Sea Legs (H)
 							["qg"] = 41618,	-- Erunak Stonespeaker
@@ -1502,9 +1502,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["providers"] = {
 										{ "i", 52504 },	-- Conch Shell
 										{ "o", 202560 },	-- Conch Shell
-							},
+									},
 								}),
-					},
+							},
 						}),
 						q(27699, {	-- Shark Weak
 							["description"] = "If you abandon this quest, leave the area and swim back to the boat. You must NOT use a mount.",
@@ -1544,9 +1544,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["providers"] = {
 										{ "i", 54957 },	-- Stormwind S.E.A.L. Equipment
 										{ "o", 203061 },	-- Stormwind Locker
-							},
+									},
 								}),
-					},
+							},
 						}),
 						q(25371, {	-- The Abyssal Ride
 							["qg"] = 41248,	-- Moanah Stormhoof
@@ -1983,7 +1983,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/7 Nespirah Abscess attacked
 									["provider"] = { "o", 203309 },	-- Nespirah Abscess
 								}),
-					},
+							},
 						}),
 						q(25993, {	-- Body Blows (H)
 							["qg"] = 41810,	-- Legionnaire Nazgrim
@@ -1994,7 +1994,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								objective(1, {	-- 0/7 Nespirah Abscess attacked
 									["provider"] = { "o", 203309 },	-- Nespirah Abscess
 								}),
-					},
+							},
 						}),
 						q(25916, {	-- Breaking Through (A)
 							["qg"] = 41531,	-- Earthmender Duarn
@@ -2098,9 +2098,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["providers"] = {
 										{ "i", 54861 },	-- Glimmerdeep Clam
 										{ "o", 203032 },	-- Glimmerdeep Clam
-							},
+									},
 								}),
-					},
+							},
 						}),
 						q(25748, {	-- Clear Goals (A)
 							["qg"] = 40643,	-- Admiral Dvorek
@@ -2612,9 +2612,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["providers"] = {
 										{ "i", 55965 },	-- Bloated Kelp Bulb
 										{ "o", 203209 },	-- Bloated Kelp Bulb
-							},
+									},
 								}),
-					},
+							},
 						}),
 						q(25962, {	-- Properly Inspired (H)
 							["qg"] = 40918,	-- Fiasco Sizzlegrin
@@ -2626,9 +2626,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									["providers"] = {
 										{ "i", 55965 },	-- Bloated Kelp Bulb
 										{ "o", 203209 },	-- Bloated Kelp Bulb
-							},
+									},
 								}),
-					},
+							},
 						}),
 						q(25619, {	-- Reoccupation (this shows up on the map after "Back in One Piece" but isn't actually available yet)
 							["qg"] = 40978,	-- Fathom-Stalker Azjentus
