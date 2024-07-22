@@ -305,6 +305,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 56.7, 9.1, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Ferocious Doomweed
+							["providers"] = {
+								{ "i", 60741 },	-- Ferocious Doomweed
+								{ "o", 205099 },	-- Ferocious Doomweed
+							},
+						}),
+					},
 				}),
 				q(479, {	-- Ambermill Investigations
 					["qg"] = 2121,	-- Shadow Priest Allister
@@ -472,6 +480,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 51.8, 65.0, SILVERPINE_FOREST },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ambermill Codex
+							["providers"] = {
+								{ "i", 61306 },	-- Ambermill Codex
+								{ "o", 205534 },	-- Ambermill Codex
+							},
+						}),
+					},
 				}),
 				q(27601, {	-- Cities in Dust
 					["qg"] = 45617,	-- Lady Sylvanas Windrunner
