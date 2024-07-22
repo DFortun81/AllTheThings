@@ -131,7 +131,6 @@ root(ROOTS.Unsorted, {
 				i(221762),	-- Frenzied Bloodtick (PET!)
 				i(222970),	-- Fuzzy (PET!)
 				i(221195),	-- Illskitter (PET!)
-				i(225934),	-- Lil' Bonechewer (PET!)
 				i(221492),	-- Moss Skipper (PET!)
 				i(225935),	-- Rak-Ush Battleshell (PET!)
 				i(221759),	-- Sceaduthax (PET!)

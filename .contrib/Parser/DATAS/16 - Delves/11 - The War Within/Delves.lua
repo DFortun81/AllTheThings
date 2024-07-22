@@ -22,7 +22,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40451),	-- Buddy System III
 		ach(40450),	-- Buddy System II
 		ach(40455),	-- Buddy System
-		ach(40882),	-- Copious Coffers
+		ach(40882, {	-- Copious Coffers
+			title(575),	-- <Name> the Bountiful
+		}),
 		ach(40437),	-- Delver of the Depths (automated)
 		ach(40447),	-- Delver of the Depths II (automated)
 		ach(40448),	-- Delver of the Depths III (automated)
@@ -69,7 +71,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		ach(40524),	-- Good Deed Delver
 		ach(40732),	-- Heavy-Handed
-		ach(40098),	-- Immortal Spelunker
+		ach(40098, {	-- Immortal Spelunker
+			title(549),	-- Immortal Spelunker <Name>
+		}),
 		ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
 		ach(40446),	-- I TAKE Candle!
 		ach(40459),	-- I've Got a Flying Machine!

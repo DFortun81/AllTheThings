@@ -12,9 +12,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 	n(THE_SEVERED_THREADS, {
 		n(SEVERED_THREADS_PACT, {
 			n(ACHIEVEMENTS, {
-				ach(40876),	-- Vox Arachnid
-				ach(40874),	-- The Grand Tapestry
-				ach(40875),	-- True Strength
+				ach(40876, {	-- Vox Arachnid
+					title(574),	-- <Name>, Hand of the Vizier
+				}),
+				ach(40874, {	-- The Grand Tapestry
+					title(572),	-- Silksinger <Name>
+				}),
+				ach(40875, {	-- True Strength
+					title(573),	-- Anub'<Name>
+				}),
 			}),
 			n(REWARDS, {
 				i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)

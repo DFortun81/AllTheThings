@@ -101,7 +101,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			ach(40828),		-- Treasures of Azj-Kahet (automated)
 			ach(40835),		-- Vizier than Ever
 			-- TODO: Worm Theory looks like it should have criteria but Blizzard didn't add them yet (Wagotools has them though?). Check this later.
-			ach(40869),		-- Worm Theory (automated)
+			ach(40869, {	-- Worm Theory (automated)
+				i(225934),	-- Lil' Bonechewer (PET!)
+			}),
 			ach(40634),		-- You Can't Hang With Us
 		}),
 	}),

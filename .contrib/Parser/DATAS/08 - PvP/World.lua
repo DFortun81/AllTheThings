@@ -233,6 +233,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 					40087,	-- Unbound Battle
 				}},
 				["g"] = {
+					title(562),	-- <Name>, Slayer of the Deeps
 					i(223158),	-- Raging Cinderbee (MOUNT!)
 				},
 			}),
