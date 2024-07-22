@@ -1494,6 +1494,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 61.6, 34.5, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Doom Weed
+							["providers"] = {
+								{ "i", 13702 },	-- Doom Weed
+								{ "o", 176753 },	-- Doom Weed
+							},
+						}),
+					},
 				}),
 				q(25007, {	-- East... Always to the East
 					["qg"] = 1499,	-- Magistrate Sevren
@@ -1547,6 +1555,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.6, 53.7, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Tirisfal Pumpkin
+							["providers"] = {
+								{ "i", 2846 },	-- Tirisfal Pumpkin
+								{ "o", 375 },	-- Tirisfal Pumpkin
+							},
+						}),
+					},
 				}),
 				q(359, {	-- Forsaken Duties
 					["qg"] = 1499,	-- Magistrate Sevren
@@ -1610,6 +1626,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 44.2, 53.7, TIRISFAL_GLADES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/3 Gloom Weed
+							["providers"] = {
+								{ "i", 12737 },	-- Gloom Weed
+								{ "o", 175566 },	-- Gloom Weed
+							},
+						}),
+					},
 				}),
 				q(358, {	-- Graverobbers
 					["qg"] = 1499,	-- Magistrate Sevren
