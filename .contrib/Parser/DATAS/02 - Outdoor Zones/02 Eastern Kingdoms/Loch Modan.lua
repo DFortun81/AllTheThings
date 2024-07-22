@@ -572,6 +572,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 64.1, 26.6, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Nascent Elementium Spike
+							["providers"] = {
+								{ "i", 60738 },	-- Nascent Elementium Spike
+								{ "o", 205092 },	-- Nascent Elementium
+							},
+						}),
+					},
 				}),
 				q(385, {	-- Crocolisk Hunting
 					["qg"] = 1154,	-- Marek Ironheart
@@ -711,6 +719,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Miners' Gear
+							["providers"] = {
+								{ "i", 2640 },	-- Miners' Gear
+								{ "o", 271 },	-- Miners' League Crates
+							},
+						}),
 						i(58978, {	-- Filthy Paw
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1474,6 +1488,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 82.7, 63.4, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Stabthistle Seed
+							["providers"] = {
+								{ "i", 60737 },	-- Stabthistle Seed
+								{ "o", 205089 },	-- Stabthistle Seed
+							},
+						}),
+					},
 				}),
 				q(17, {	-- Uldaman Reagent Run
 					["qg"] = 1470,	-- Ghak Healtouch
