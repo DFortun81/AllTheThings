@@ -1802,6 +1802,7 @@ i(217170);	-- Backup Candles
 i(220290);	-- Barbed Pincers
 i(213254);	-- Big Gold Nugget
 i(220291);	-- Bioluminescent Thorax
+i(225543);	-- Bloodied Idol
 i(225801);	-- Braided Seaweed Bangle
 i(225716);	-- Brax's Favorite Cog
 i(225709);	-- Brax's Left Shoe
@@ -1852,6 +1853,7 @@ i(220224);	-- Iridescent Integument
 i(220380);	-- Immature Spiderling
 i(225830);	-- Irreparably Bent Spoon
 i(225791);	-- Jar of Alchemical Solvent
+i(225785);	-- Jar of Pickled Insects
 i(220264);	-- Jaw with Barbed Teeth
 i(220234);	-- Leaden Vial
 i(225849);	-- Long-Forgotten Glove
@@ -1884,11 +1886,13 @@ i(220228);	-- Quartz Growth
 i(220288);	-- Quivering Tail
 i(220362);	-- Ragged Rope
 i(220242);	-- Razored Tail-Blade
+i(228510);	-- Ripped Swarmite Wing
 i(220297);	-- Rock-Encrusted Plates
 i(217164);	-- Royal Nailpicker
 i(225807);	-- Rune-Carved Bone
 i(228399);	-- Sad Rock
 i(220236);	-- Sanguineous Sac
+i(223899);	-- Shadowed Appendage
 i(220266);	-- Sharpened Digging Claws
 i(220361);	-- Sharpened Steel Implement
 i(220273);	-- Shed Skin
@@ -1904,6 +1908,7 @@ i(213262);	-- Stained Glass Fragment
 i(225800);	-- Stone Singing Bowl
 i(220363);	-- Straw-Stuffed Hat
 i(220292);	-- Stretched Wing
+i(228507);	-- Swarmite Eggsac
 i(225821);	-- Tattered Theater Hood
 i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
 i(225852);	-- The Foolhardy's Guide to Survival

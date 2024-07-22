@@ -7,12 +7,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			{		-- RENOWN 1 --
 			}, {	-- RENOWN 2 --
 			}, {	-- RENOWN 3 --
+				q(82421, {	-- For Your Next Delve
+					--["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					--["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 4 --
 			}, {	-- RENOWN 5 --
 			}, {	-- RENOWN 6 --
+				q(82417, {	-- A Rare Key
+					--["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					--["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 7 --
+				q(82418, {	-- A Cache of Crests and Power
+					--["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					--["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 8 --
 			}, {	-- RENOWN 9 --
+				q(82431, {	-- Unsevered Threads
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["g"] = {
+						i(223951),	-- Earth-Encrusted Gem
+					},
+				}),
 			}, {	-- RENOWN 10 --
 				i(218349),	-- Tabard of the Severed Threads
 			}, {	-- RENOWN 11 --

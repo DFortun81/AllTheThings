@@ -1344,6 +1344,13 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					i(226338),	-- Heavy Spider Crusher
 				},
 			}),
+			o(455954, {	-- Nerubian Mining Supplies
+				["coord"] = { 48.0, 40.6, NERUBAR_LOWER },
+				["questID"] = 83913,
+				["g"] = {
+					i(226339),	-- Nerubian Mining Supplies
+				},
+			}),
 			o(455958, {	-- Regenerating Ore
 				["coord"] = { 66.2, 66.2, THE_RINGING_DEEPS },
 				["questID"] = 83909,

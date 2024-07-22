@@ -112,10 +112,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			o(446101, {	-- Nerubian Offerings
 				["coord"] = { 31.6, 20.7, NERUBAR },
 				["questID"] = 82720,
-				["g"] = {
-					i(225543),	-- Bloodied Idol
-					i(223899),	-- Shadowed Appendage
-				},
 			}),
 			o(446423, {	-- Nest Egg
 				["coord"] = { 50.6, 48.1, AZJ_KAHET },

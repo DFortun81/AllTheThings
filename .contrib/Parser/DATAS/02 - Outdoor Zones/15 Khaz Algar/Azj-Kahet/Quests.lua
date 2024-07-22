@@ -689,12 +689,45 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				},
 			}),
 			-- End of crit 'Subterfuge in Silk'
-			-- missing header! (in quest log)
+			-- missing header! (in quest log), could be some renown locked quest or according to last quest in chain - Weaver rep?)
+			q(84700, {	-- Pacts Below
+				--["sourceQuests"] = { 79030 },	-- The Voice of the Speakers (?)
+				["provider"] = { "n", 230098 },	-- Spindle
+				["coord"] = { 46.1, 50.0, DORNOGAL },
+			}),
 			q(83276, {	-- Saving Private Spindle
-				--["sourceQuests"] = {  },	-- ?
-				--["isBreadcrumb"] = true,
+				["sourceQuests"] = { 84700 },	-- Pacts Below (still unsure)
 				["provider"] = { "n", 207471 },	-- Window Arak'nal
 				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+			}),
+			q(83277, {	-- Personal Pilfering
+				["sourceQuests"] = { 83276 },	-- Saving Private Spindle
+				["provider"] = { "n", 226019 },	-- Spindle
+				["coord"] = { 87.7, 59.3, NERUBAR },
+				["g"] = {
+					i(225341),	-- Incriminating Dagger (QI!)
+					i(225344),	-- Incriminating Evidence (QI!)
+					i(225343),	-- Incriminating Journal Entry (QI!)
+					i(225342),	-- Incriminating Script (QI!)
+				},
+			}),
+			q(79532, {	-- Tinker, Tailor, Soldier, Spider
+				["sourceQuests"] = { 83277 },	-- Personal Pilfering (could be wrong, spawn some time afterwards)
+				["provider"] = { "n", 207471 },	-- Window Arak'nal
+				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+			}),
+			q(79627, {	-- Wine and Die
+				["sourceQuests"] = { 79532 },	-- Tinker, Tailor, Soldier, Spider
+				["provider"] = { "n", 227428 },	-- Window Arak'nal
+				["coord"] = { 62.9, 12.1, NERUBAR_LOWER },
+			}),
+			q(79633, {	-- The Weaver's Legacy
+				["sourceQuests"] = { 79627 },	-- Wine and Die
+				["provider"] = { "n", 216298 },	-- Meesk the Venomtongue
+				["coord"] = { 62.8, 22.9, NERUBAR },
+				["g"] = {
+					i(226103),	-- The Weaver's Trove (TODO: didn't contain anything)
+				},
 			}),
 			--
 			-- ZONE DUNGEON QUESTS (80 only)
@@ -854,6 +887,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(216689),	-- Albert's Head (QI!)
 				},
 			}),
+			-- ZONE DROP QUEST
+			q(79555, {	-- Deep Wax Galactic
+				["provider"] = { "i", 217385 },	-- Clump of Waxy Excretion
+				["coord"] = { 79.4, 76.5, AZJ_KAHET },
+				["g"] = {
+					i(212980),	-- Waxy Excretion (QI!)
+				},
+			}),
 			--	Bonus Objectives
 			q(81670, {	-- Shattered Silk
 				["coord"] = { 72.8, 55.0, AZJ_KAHET },
@@ -978,10 +1019,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				}),
 				q(83719, {	-- Those Are Chitin Words
 					["sourceQuests"] = { 83627 },	-- The Beginning of Something Beautiful
-					--["provider"] = { "n", XXXXX },	-- XXXXX
-					--["coord"] = { X, Y, MAP },
+					["provider"] = { "n", 218171 },	-- Shalba
+					["coord"] = { 45.4, 13.5, NERUBAR },
 					["g"] = {
-						i(225950),	-- Nerubian Chitin
+						i(225950),	-- Nerubian Chitin (QI!)
 					},
 				}),
 				q(83720, {	-- Venom? More Like Get 'Em
@@ -1021,10 +1062,12 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(81602),	-- [DNT] General - Level 2 Unlock (spellID 443679)
 	q(81626),	-- [DNT] General - Level 2 Unlock (spellID 443679)
 	q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
+	q(81606),	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
 	q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
 	q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
 	q(81627),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
 	q(81599),	-- [DNT] Weaver - Level 3 Unlock (spellID 443675)
+	q(81600),	-- [DNT] Weaver - Level 4 Unlock (spellID 443676)
 	--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
 	q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
 	q(82646),	-- pop questIDs: 81492 (General), 81499 (?), 81506 (?)
@@ -1052,6 +1095,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
 	--q(82648),	-- 'Listen to the rumor' from Eirzay (n: 224174 @ 63.8, 26.3, 2216), start questID 81493 (Relics of War: The Salien Gutter Conflict)
 	-- Weaver
+	q(79698),	-- after turn in questID 79627 (Wine and Die)
 	--q(82581),	-- 'Investiage the scene' from Ru'murh (n: 224194 @ 70.3, 31.8, 2213), start questID 81470 (Dropping Eaves: Thieving Weave)
 	--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
 	--q(82645),	-- 'Consider the missive' from Ru'murh (n: 224197 @ 39.8, 26.6, 2213), start questID 81472 (Information Control: Ansurek's Truth)

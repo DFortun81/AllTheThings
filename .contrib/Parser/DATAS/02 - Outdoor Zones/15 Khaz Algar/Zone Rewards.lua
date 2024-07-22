@@ -24,6 +24,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 		}),
 		filter(FINGER_F, {
 			i(224660),	-- Gem-Studded Band
+			i(224662),	-- Gem-Studded Ring
 		}),
 		filter(LEATHER, {
 			i(224681),	-- Lockstitch Bindings
@@ -87,9 +88,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			--On first opening I recieve:
 			i(224172),	-- Restored Coffer Key
 			--i(225653),	-- Siphoning Lightbrand // Isle of Dorn zone reward
-			--hqt - 83280, possibly related to key but dunno (1st cache) / on beta pop before opening 1st cache and it is unflagged with weekly reset
-			--hqt - 83281, possibly related to key but dunno (2nd cache)
+			--hqt - 83280, possibly related to key but dunno (1st cache) (spark/chests limit count?)
+			--hqt - 83281, possibly related to key but dunno (2nd cache (alpha), 1st Seasoned Adventurer's Cache on beta)
 		}),
+		i(228361),	-- Seasoned Adventurer's Cache
 		n(WEEKLY_PROFESSION_KNOWLEDGE, {
 			["description"] = "Rewarded from many different treasures and activities",
 			["g"] = {

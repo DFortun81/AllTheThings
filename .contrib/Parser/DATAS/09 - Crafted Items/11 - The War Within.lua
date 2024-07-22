@@ -2273,11 +2273,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 439716);	-- Crystallized Aqirite
 			--FirstCraft(XXXXX, 439722);	-- EZ-Mine Aqirite
 			--FirstCraft(XXXXX, 439710);	-- Rich Aqirite
-			--FirstCraft(XXXXX, 439728);	-- Webbed Aqirite
-			--FirstCraft(XXXXX, 439719);	-- Weeping Aqirite
+			FirstCraft(80372, 439728);	-- Webbed Aqirite
+			FirstCraft(80363, 439719);	-- Weeping Aqirite
 			-- Bismuth
 			FirstCraft(80350, 439705);	-- Bismuth
-			--FirstCraft(XXXXX, 439712);	-- Bismuth Seam
+			FirstCraft(80356, 439712);	-- Bismuth Seam
 			--FirstCraft(XXXXX, 439724);	-- Camouflaged Bismuth
 			FirstCraft(80359, 439715);	-- Crystallized Bismuth
 			--FirstCraft(XXXXX, 439721);	-- EZ-Mine Bismuth
@@ -2506,6 +2506,12 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(83111),	-- 10/40 Everburning Forge
 			q(83112),	-- 20/40 Everburning Forge
 			q(83131),	-- 30/40 Everburning Forge
+		}),
+		prof(HERBALISM, {
+			q(81415),	-- 40/40 Overloading the Underground
+		}),
+		prof(MINING, {
+			q(82317),	-- 45/45 Mastering the Mysterious
 		}),
 	}),
 });

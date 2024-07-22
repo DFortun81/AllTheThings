@@ -10,8 +10,6 @@ root(ROOTS.Unsorted, {
 				exploration(15552),	-- The Undersea
 			}),
 			filter(MISC, {
-				i(228507),	-- Swarmite Eggsac
-				i(228510),	-- Ripped Swarmite Wing
 				i(228624),	-- Depleted Awakened Flightstone
 				i(228625),	-- Depleted Ruby Flightstone
 				i(228626),	-- Depleted Blackened Flightstone
@@ -63,9 +61,6 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(228765),	-- Gummi (PET!) [Promotion?]
 				i(228758),	-- Parrlok (PET!) [Trading Post?]
-			}),
-			filter(TOYS, {
-				i(228914),	-- Arachnophile Spectacles (TOY!)
 			}),
 			n(PROFESSIONS, {
 				prof(TAILORING, {
@@ -507,7 +502,6 @@ root(ROOTS.Unsorted, {
 					i(219194),	-- Magical Mulch
 					i(219195),	-- Imbued Mulch
 					i(219196),	-- Empowered Mulch
-					i(214561),	-- Verdant Seed
 					i(214595),	-- Sporefused Verdant Seed
 					i(214597),	-- Irradiated Verdant Seed
 					i(214605),	-- Crystallized Verdant Seed
@@ -625,8 +619,6 @@ root(ROOTS.Unsorted, {
 				i(226321),	-- Librarian's Magnifiers
 				i(226322),	-- Ritual Caster's Crystal
 				i(226323),	-- Nerubian Bench Blocks
-
-				i(226339),	-- Nerubian Mining Supplies
 
 				i(226344),	-- Arathi Tanning Agent
 
@@ -861,7 +853,6 @@ root(ROOTS.Unsorted, {
 				i(226116),	-- Coagulating Phlegm Churner
 				i(226160),	-- Hillhelm Farmhand's Hoe
 				i(226161),	-- Hillhelm Farmhand's Watering Can
-				i(226172),	-- Disturbance Detection Device
 				i(226363),	-- Earthen Backpack
 				i(226366),	-- Gloves of the Morning Mist
 				i(226367),	-- Ugly Black Boots
@@ -1308,7 +1299,6 @@ root(ROOTS.Unsorted, {
 				i(224171),	-- Master's Wildercloth Fishing Cap
 				-- Armor
 				i(224661),	-- Gem-Studded Signet
-				i(224662),	-- Gem-Studded Ring
 
 
 				i(225509),	-- [PH] Armor Vestment
@@ -1343,7 +1333,6 @@ root(ROOTS.Unsorted, {
 				i(225638),	-- Spelunker's Waning Candle
 				i(225648),	-- Candle Confidant
 				i(225651),	-- Kaheti Shadeweaver's Emblem
-				i(225653),	-- Siphoning Lightbrand
 				i(225656),	-- Goldenglow Censer
 				i(225657),	-- Detachable Fang
 				i(225661),	-- Burning Binding
@@ -1458,7 +1447,6 @@ root(ROOTS.Unsorted, {
 				i(220156),	-- Bubbling Wax
 				i(220220),	-- Ornate Pipe
 				i(220221),	-- Void Pebble
-				i(220222),	-- Everburning Lump
 				i(220225),	-- Tattered Standard
 				i(220233),	-- Extinguished Icon
 				i(220235),	-- Electrified Teeth
@@ -1583,7 +1571,6 @@ root(ROOTS.Unsorted, {
 				i(225570),	-- Algari Fowlfeather
 				i(225555),	-- Periapt of Pure Flame
 				i(225640),	-- Abyssal Lure
-				i(225785),	-- Jar of Pickled Insects
 				i(225786),	-- Chitin Stress Ball
 				i(225788),	-- Congratulatory Ascension Silk
 				i(225789),	-- Curved Threadripper
@@ -1636,7 +1623,6 @@ root(ROOTS.Unsorted, {
 				i(225996),	-- Clam Digger
 				i(226045),	-- The General's Trove
 				i(226100),	-- The Vizier's Trove
-				i(226103),	-- The Weaver's Trove
 				i(226108),	-- [DNT] Debug Profession Stats
 				i(226120),	-- Deployable Battle Supplies \\ Deployable Charge Station
 				i(226131),	-- Deployable Wind-Wrangling Spire \\ Deployable Wind-Wrangling Station
@@ -1725,7 +1711,6 @@ root(ROOTS.Unsorted, {
 				i(228193),	-- Chipped Demon's Blade
 				i(228194),	-- Fully Scrapped Scrap
 				i(228195),	-- Tattered Goblin Cap
-				i(228361),	-- Seasoned Adventurer's Cache
 				i(228369),	-- Reconstructed Ledger
 				i(228387),	-- Crumbling Bismuth
 				i(228388),	-- Damp Doll
@@ -1927,10 +1912,6 @@ root(ROOTS.Unsorted, {
 				i(225336),	-- A Lost Shoe
 
 				i(225339),	-- Chicken Eggs
-				i(225341),	-- Incriminating Dagger
-				i(225342),	-- Incriminating Script
-				i(225343),	-- Incriminating Journal Entry
-				i(225344),	-- Incriminating Evidence
 				i(225635),	-- Zev'kall's Attrition Log
 				i(225637),	-- Poisoned Dagger
 				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
@@ -2163,8 +2144,6 @@ root(ROOTS.Unsorted, {
 				i(221236),	-- Stormbreaker's Shield
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs
-				i(221239),	-- Spider Blasting Blunderbuss
-				i(221240),	-- Nerubian Stagshell Gouger
 				i(221241),	-- Priestly Agent's Knife
 				i(221242),	-- Forgeborn Helm
 				i(221244),	-- Flamekeeper's Footpads
@@ -2183,8 +2162,6 @@ root(ROOTS.Unsorted, {
 				i(221507),	-- Earth Golem's Wrap
 
 				i(223005),	-- String of Fungal Fruits
-
-				i(223369),	-- Webspeaker's Spiritual Cloak
 
 
 
@@ -2229,7 +2206,6 @@ root(ROOTS.Unsorted, {
 				i(223946),	-- [PH] Storm Bindings
 				i(223947),	-- [PH] Steam-Powered Wristwatch
 				i(223949),	-- Dark Depth Stompers
-				i(223950),	-- Corruption Sifter's Treads
 				i(224467),	-- Forgotten Axe
 			}),
 			n(REWARDS, {
@@ -2328,8 +2304,6 @@ root(ROOTS.Unsorted, {
 
 				i(224629),	-- Arathi Hatchet \\ [PH] Algari Short Axe
 
-
-				i(224635),	-- Expeditionary Bulwark \\ [PH] Algari Shield
 
 				i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
 
@@ -2678,7 +2652,6 @@ root(ROOTS.Unsorted, {
 			i(228496),	-- Cracked Lantern
 			i(228497),	-- Rusted Airship Cog
 			-- Fall out.... Resort
-			i(216664),	-- Threadling Lure \\ Threading Lure
 			i(219013),	-- Superb Beast Fang
 			i(219016),	-- Coated Steel Tips
 			i(219017),	-- Silver Armor Clasps

@@ -20,6 +20,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					-- The Vizier
 					["coord"] = { 71.1, 31.6, NERUBAR },
 				}),
+				q(82364, {	-- Documenting Discordance
+					-- The Vizier
+					["coord"] = { 60.6, 75.7, AZJ_KAHET },
+				}),
 				q(82481, {	-- Enforcer Extermination
 					["coord"] = { 56.1, 58.4, AZJ_KAHET },
 				}),
@@ -41,6 +45,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					},
 				}),
 				q(82468, {	-- Let Them Win
+					-- The Weaver
 					["coord"] = { 30.4, 44.1, AZJ_KAHET },
 				}),
 				q(81825, {	-- Skyrider Racing - Maddening Deep Dip
@@ -49,7 +54,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				}),
 				q(81829, {	-- Skyrider Racing - Pit Plunge
 					-- normal - 80281 / advanced - 80287 / reverse - 80293
-					["coord"] = { 27.0, 52.3, AZJ_KAHET },
+					["coord"] = { 23.8, 48.4, AZJ_KAHET },
 				}),
 				q(81831, {	-- Skyrider Racing - Siegehold Scuttle
 					-- normal - 80282 / advanced - 80288 / reverse - 80294
@@ -59,12 +64,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					-- normal - 80279 / advanced - 80285 / reverse - 80291
 					["coord"] = { 53.7, 41.2, AZJ_KAHET },
 				}),
-				--q(, {	-- Taking It To Go
-				--	["coord"] = { 78.0, 77.7, AZJ_KAHET },
-				--	["g"] = {
-				--		i(216664),	-- Threading Lure (QI!)
-				--	},
-				--}),
+				q(79960, {	-- Taking It To Go
+					-- The General
+					["coord"] = { 75.0, 77.4, AZJ_KAHET },
+					["g"] = {
+						i(216664),	-- Threading Lure (QI!)
+					},
+				}),
 				q(78995, {	-- Truffle Shuffle
 					-- The General
 					["coord"] = { 73.1, 71.4, AZJ_KAHET },
@@ -74,6 +80,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				}),
 				q(79959, {	-- Wormcraft Rumble
 					["coord"] = { 73.0, 83.6, AZJ_KAHET },
+				}),
+				--
+				q(82414, {	-- Special Assignment: A Pound of Cure
+					["coord"] = { 63.9, 17.3, AZJ_KAHET },
 				}),
 			}),
 		}),
