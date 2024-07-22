@@ -284,101 +284,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}
 		}),
 		ach(40762),		-- Khaz Algar Lore Hunter (automated)
-		petbattle(ach(40194, {	-- Khaz Algar Safari
+		petbattle(ach(40194, {	-- Khaz Algar Safari (automated)
 			i(221821),	-- Waxwick (PET!)
-			crit(67292, {	-- Chitin Burrower
-				["crs"] = { 222071 },
-			}),
-			crit(67293, {	-- Arachnoid Hatchling
-				["crs"] = { 222066 },
-			}),
-			crit(67294, {	-- Fallowspark Glowfly
-				["crs"] = { 222613 },
-			}),
-			crit(67295, {	-- Azure Flickerfly
-				["crs"] = { 222614 },
-			}),
-			crit(67296, {	-- Vibrant Glowfly
-				["crs"] = { 222615 },
-			}),
-			crit(67297, {	-- Aubergine Scootlefish
-				["crs"] = { 222325 },
-			}),
-			crit(67298, {	-- Verdant Scootlefish
-				["crs"] = { 222344 },
-			}),
-			crit(67299, {	-- Voidling Ooze
-				["crs"] = { 222354 },
-			}),
-			crit(67300, {	-- Shadowy Oozeling
-				["crs"] = { 222351 },
-			}),
-			crit(67301, {	-- Common Ploughworm
-				["crs"] = { 222584 },
-			}),
-			crit(67302, {	-- Ebon Ploughworm
-				["crs"] = { 222582 },
-			}),
-			crit(67303, {	-- Greenlands Chicken
-				["crs"] = { 222194 },
-			}),
-			crit(67304, {	-- Arathi Chicken
-				["crs"] = { 222195 },
-			}),
-			crit(67305, {	-- Meek Bloodlasher
-				["crs"] = { 222875 },
-			}),
-			crit(67306, {	-- Ghostcap Menace
-				["crs"] = { 222877 },
-			}),
-			crit(67307, {	-- Winged Arachnoid
-				["crs"] = { 222608 },
-			}),
-			crit(67308, {	-- Vile Bloodtick
-				["crs"] = { 222421 },
-			}),
-			crit(67309, {	-- Magmashell Crawler
-				["crs"] = { 222713 },
-			}),
-			crit(67317, {	-- Bedrock Stonecharger
-				["crs"] = { 223090 },
-			}),
-			crit(67310, {	-- Mossy Snail
-				["crs"] = { 222499 },
-			}),
-			crit(67311, {	-- Subterranean Dartswog
-				["crs"] = { 222736 },
-			}),
-			crit(67312, {	-- Troglofrog
-				["crs"] = { 222739 },
-			}),
-			crit(67313, {	-- Fragrant Stonelamb
-				["crs"] = { 222774 },
-			}),
-			crit(67314, {	-- Sandstone Mosswool
-				["crs"] = { 222775 },
-			}),
-			crit(67315, {	-- Shale Mosswool
-				["crs"] = { 222778 },
-			}),
-			crit(67316, {	-- Umbral Amalgam
-				["crs"] = { 223136 },
-			}),
-			crit(67318, {	-- Cobalt Ramolith
-				["crs"] = { 223094 },
-			}),
-			crit(67319, {	-- Granite Ramolith
-				["crs"] = { 223093 },
-			}),
-			crit(67320, {	-- Alabaster Stonecharger
-				["crs"] = { 223092 },
-			}),
-			crit(68269, {	-- Snuffling
-				["crs"] = { 223715 },
-			}),
-			crit(68270, {	-- Cinderhoney Emberstinger
-				["crs"] = { 223698 },
-			}),
 		})),
 		ach(20596, {	-- Loremaster of Khaz Algar
 			-- Meta Achievement
@@ -418,25 +325,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				ZIRIAK
 			),
 		})),
-		ach(20597, {	-- The War Within
-			crit(66989, {	-- Against the Current
-				["sourceQuest"] = 79344,	-- Urban Odyssey
-			}),
-			crit(66990, {	-- Ties That Bind
-				["sourceQuest"] = 79157,	-- Titanic Failsafe
-			}),
-			crit(66991, {	-- News from Below
-				["sourceQuest"] = 79244,	-- News From Below
-			}),
-			crit(66992, {	-- The Machines March to War
-				["sourceQuest"] = 79030,	-- The Voice of the Speakers
-			}),
-			crit(66993, {	-- A Light in the Dark
-				-- Remove when the quest below is uncommented
-				["_noautomation"] = true,
-				--["sourceQuest"] = 83503,	-- TODO: Quest Name
-			}),
-		}),
+		ach(20597),		-- The War Within (automated)
 		ach(40231, {	-- The War Within Pathfinder
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",

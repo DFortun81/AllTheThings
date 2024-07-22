@@ -69,7 +69,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		ach(40524),	-- Good Deed Delver
 		ach(40732),	-- Heavy-Handed
-
 		ach(40098),	-- Immortal Spelunker
 		ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
 		ach(40446),	-- I TAKE Candle!

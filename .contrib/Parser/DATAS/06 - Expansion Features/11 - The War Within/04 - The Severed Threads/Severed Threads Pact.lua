@@ -11,6 +11,11 @@ SEVERED_THREADS_PACT = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(THE_SEVERED_THREADS, {
 		n(SEVERED_THREADS_PACT, {
+			n(ACHIEVEMENTS, {
+				ach(40876),	-- Vox Arachnid
+				ach(40874),	-- The Grand Tapestry
+				ach(40875),	-- True Strength
+			}),
 			n(REWARDS, {
 				i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 				i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
