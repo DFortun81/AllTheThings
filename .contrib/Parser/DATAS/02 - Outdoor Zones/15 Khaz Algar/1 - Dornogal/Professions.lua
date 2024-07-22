@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			prof(ENGINEERING, {
 				n(219099, {	-- Machinist Arhdas <Engineering Trainer>
 					["coord"] = { 49.2, 55.9, DORNOGAL },
-					--["g"] = TWW_ENGINEERING,
+					["g"] = TWW_ENGINEERING,
 				}),
 			}),
 			prof(FISHING, {

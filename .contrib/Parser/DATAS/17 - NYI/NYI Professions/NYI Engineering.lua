@@ -122,6 +122,48 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(203382),	-- Peripheral Vision Projectors
 				})),
 			}),
+			expansion(EXPANSION.TWW, {
+				-- CREATED_11_PH_LAUNCH
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+					i(225984),	-- Assorted Choking Hazards
+					i(225985),	-- Assorted Choking Hazards
+					i(225986),	-- Assorted Choking Hazards
+					i(224831),	-- Cube of Infinite Inventions (PTR Only)
+					i(221476),	-- Engineering - 1H Wrench [DNT]
+					i(221477),	-- Engineering - 2H Wrench [DNT]
+					i(221892),	-- Explosive Mine
+					i(221893),	-- Explosive Mine
+					i(221894),	-- Explosive Mine
+					i(221888),	-- Gravity Mine
+					i(221889),	-- Gravity Mine
+					i(221890),	-- Gravity Mine
+					i(221946),	-- Irresistible Red Button
+					i(221947),	-- Irresistible Red Button
+					i(221929),	-- Overclocked Circuit Board
+					i(221930),	-- Overclocked Circuit Board
+					i(221931),	-- Overclocked Circuit Board
+					i(221950),	-- Pausing Pylon
+					i(221951),	-- Pausing Pylon
+					i(221891),	-- Prototype: Explosive Mine
+					i(221887),	-- Prototype: Gravity Mine
+					i(221883),	-- Prototype: Stasis Mine
+					i(221895),	-- Prototype: Tinker: Lightning Tether
+					i(221899),	-- Prototype: Tinker: Overclocked S.E.L.F.I.E. Camera
+					i(225241),	-- Refurbished Tinker: Alarm-O-Turret
+					i(225242),	-- Refurbished Tinker: Plane Displacer
+					i(225244),	-- Refurbished Tinker: Shadowflame Rockets
+					i(225243),	-- Refurbished Tinker: Supercollide-O-Tron
+					i(221884),	-- Stasis Mine
+					i(221885),	-- Stasis Mine
+					i(221886),	-- Stasis Mine
+					i(221896),	-- Tinker: Lightning Tether
+					i(221897),	-- Tinker: Lightning Tether
+					i(221898),	-- Tinker: Lightning Tether
+					i(221900),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
+					i(221901),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
+					i(221902),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
+				})),
+			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.CLASSIC, {
@@ -345,6 +387,17 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(199258),	-- Schematic: Tinker: Supercollide-O-Tron (RECIPE!)
 					i(199265),	-- Schematic: Wyrmhole Generator (RECIPE!)
 					i(199415),	-- Schematic: Zapthrottle Soul Inhaler (RECIPE!)
+				})),
+			}),
+			expansion(EXPANSION.TWW, {
+				-- CREATED_11_PH_LAUNCH
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+					r(447347),	-- Explosive Mine
+					r(447346),	-- Gravity Mine
+					r(447359),	-- Overclocked Circuit Board
+					r(447345),	-- Stasis Mine
+					r(447348),	-- Tinker: Lightning Tether
+					r(447349),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
 				})),
 			}),
 		}),

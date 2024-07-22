@@ -1,28 +1,12 @@
 1.15.3.55348
 r(461710),	-- Fiery Core Sharpshooter Rifle
 11.0.0.54311
-r(423335),	-- Khaz Algar Engineering
-r(425139),	-- Recraft Equipment
-r(447310),	-- Scour Through Scrap
-r(447311),	-- Pilfer Through Parts
-r(447326),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
-r(447333),	-- Aqirite Fueled Samophlange \\ Engineering Tool T2 [DNT]
 r(447345),	-- Stasis Mine
 r(447346),	-- Gravity Mine
 r(447347),	-- Explosive Mine
 r(447348),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
 r(447349),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-r(447352),	-- P.0.W. x2
 r(447359),	-- Overclocked Circuit Board
-r(447373),	-- Crowd Pummeler 2-30
-11.0.0.54361
-r(447374),	-- Box o' Booms \\ PH Engineering Recipe
-11.0.0.54675
-r(447375),	-- Acolyte's Goggles \\ Cloth Leveling Goggles (DNT) \\ PH Engineering Recipe
-r(447376),	-- Spelunker's Goggles \\ Leather Leveling Goggles (DNT) \\ PH Engineering Recipe
-r(447377),	-- Tracker's Goggles \\ Mail Leveling Goggles (DNT) \\ PH Engineering Recipe
-r(447378),	-- Dredger's Goggles \\ Plate Leveling Goggles (DNT) \\ PH Engineering Recipe
-r(447379),	-- 4UT0-41M3R \\ Leveling Gun (DNT) \\ PH Engineering Recipe
 
 
 
@@ -32,22 +16,9 @@ Missing in Engineering.lua
 1.15.3.55348
 r(461710),	-- Fiery Core Sharpshooter Rifle
 11.0.0.54311
-r(425139),	-- Recraft Equipment
-r(447310),	-- Scour Through Scrap
-r(447322),	-- Spring-Loaded Bismuth Fabric Cutters \\ Tailoring Tool T1 [DNT]
-r(447324),	-- Bismuth Brainwave Projector \\ Engineering Helm T1 [DNT]
-r(447326),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
-r(447328),	-- Lapidary's Bismuth Clamps \\ Jewelcrafting Tool T1 [DNT]
-r(447330),	-- Bismuth Miner's Headgear \\ Mining Helmet T1 [DNT]
-r(447333),	-- Aqirite Fueled Samophlange \\ Engineering Tool T2 [DNT]
-r(447334),	-- Miner's Bismuth Hoard \\ Mining Backpack T1 [DNT]
 r(447345),	-- Stasis Mine
 r(447346),	-- Gravity Mine
 r(447347),	-- Explosive Mine
 r(447348),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
 r(447349),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-r(447352),	-- P.0.W. x2
 r(447359),	-- Overclocked Circuit Board
-r(447373),	-- Crowd Pummeler 2-30
-11.0.0.54361
-r(447374),	-- Box o' Booms \\ PH Engineering Recipe

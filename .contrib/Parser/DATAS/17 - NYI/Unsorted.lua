@@ -470,31 +470,9 @@ root(ROOTS.Unsorted, {
 					r(445481),	-- Tasty Pocket Tart
 				}),
 				prof(ENGINEERING, {
-					i(221895),	-- Prototype: Tinker: Lightning Tether \\ Prototype: Tinker: Lightning  Tether
-					i(221896),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
-					i(221897),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
-					i(221898),	-- Tinker: Lightning Tether \\ Tinker: Lightning  Tether
-					i(221899),	-- Prototype: Tinker: Overclocked S.E.L.F.I.E. Camera
-					i(221900),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-					i(221901),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
-					i(221902),	-- Tinker: Overclocked S.E.L.F.I.E. Camera
 					i(221968),	-- Legibly Scribbled Notes
-					i(225984),	-- Assorted Choking Hazards
-					i(225985),	-- Assorted Choking Hazards
-					i(225986),	-- Assorted Choking Hazards
-					i(221790),	-- Bismuth Fisherfriend \\ Fishing Tool T1 [DNT]
+					-- Crafting material
 					i(219150),	-- Pile of Rusted Scrap
-					i(221476),	-- Engineering - 1H Wrench [DNT]
-					i(221477),	-- Engineering - 2H Wrench [DNT]
-					i(224831),	-- Cube of Infinite Inventions (PTR Only)
-					i(225202),	-- Pilfer Through Parts
-					i(225241),	-- Refurbished Tinker: Alarm-O-Turret
-					i(225242),	-- Refurbished Tinker: Plane Displacer
-					i(225243),	-- Refurbished Tinker: Supercollide-O-Tron
-					i(225244),	-- Refurbished Tinker: Shadowflame Rockets
-					i(225251),	-- Disassemble Invention
-					i(224822),	-- Scour Through Scrap
-					i(224640),	-- Invent
 				}),
 				prof(HERBALISM, {
 					i(217105),	-- Refine Khaz Algar Herbs
@@ -2647,29 +2625,9 @@ root(ROOTS.Unsorted, {
 			i(219013),	-- Superb Beast Fang
 			i(219016),	-- Coated Steel Tips
 			i(219017),	-- Silver Armor Clasps
-			i(221883),	-- Prototype: Stasis Mine
-			i(221884),	-- Stasis Mine
-			i(221885),	-- Stasis Mine
-			i(221886),	-- Stasis Mine
-			i(221887),	-- Prototype: Gravity Mine
-			i(221888),	-- Gravity Mine
-			i(221889),	-- Gravity Mine
-			i(221890),	-- Gravity Mine
-			i(221891),	-- Prototype: Explosive Mine
-			i(221892),	-- Explosive Mine
-			i(221893),	-- Explosive Mine
-			i(221894),	-- Explosive Mine
-			i(221929),	-- Overclocked Circuit Board
-			i(221930),	-- Overclocked Circuit Board
-			i(221931),	-- Overclocked Circuit Board
-			i(221944),	-- Prototype: Irresistible Red Button
-			i(221946),	-- Irresistible Red Button
-			i(221947),	-- Irresistible Red Button
-			i(221950),	-- Pausing Pylon
-			i(221951),	-- Pausing Pylon
-			i(221953),	-- Convincingly Realistic Jumper Cables
-			i(221954),	-- Convincingly Realistic Jumper Cables
-			i(221955),	-- Convincingly Realistic Jumper Cables
+			--
+
+
 			i(223032),	-- Technique: Lexicon of Mysteries
 			i(223033),	-- Technique: Patient Alchemist's Mixing Rod
 			i(223034),	-- Technique: Inscribed Rolling Pin

@@ -883,3 +883,21 @@ DF_ENGINEERING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(382387),	-- P.E.W. x2
 	}),
 }));
+TWW_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	r(423335),	-- Khaz Algar Engineering
+	r(425139),	-- Recraft Equipment
+	r(447311),	-- Pilfer Through Parts
+	r(447310),	-- Scour Through Scrap
+	n(ARMOR, {
+		r(447375),	-- Acolyte's Goggles
+		r(447378),	-- Dredger's Goggles
+		r(447376),	-- Spelunker's Goggles
+		r(447377),	-- Tracker's Goggles
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(447332),	-- Bismuth Fueled Samophlange
+	}),
+	n(WEAPONS, {
+		r(447379),	-- 4UT0-41M3R
+	}),
+});

@@ -1967,3 +1967,5 @@ i(227327);	-- Rocky Road
 i(227325);	-- Stone Soup
 i(227309);	-- Titanshake
 i(228723);	-- Earthen Pet Rock
+i(225202);	-- Pilfer Through Parts
+i(225251);	-- Disassemble Invention

@@ -1447,9 +1447,11 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			["description"] = "These are learned by specialization.",
 			["g"] = sharedData({ ["cost"] = {{ "c", TWW_ENGINEERING_KNOWLEDGE, 1 }} }, {
 				r(447356),	-- Adjustable Cogwheel
-				r(447365),	-- Box o' Booms
+				r(447333),	-- Aqirite Fueled Samophlange
+				r(447374),	-- Box o' Booms
 				r(447355),	-- Impeccable Cogwheel
 				r(447354),	-- Overclocked Cogwheel
+				r(447352),	-- P.0.W. x2
 				r(447353),	-- Serrated Cogwheel
 			}),
 		}),
