@@ -834,6 +834,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24693,	-- Mossy Pile
 					["coord"] = { 43.2, 40.8, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/4 Tarblossom Blossom
+							["providers"] = {
+								{ "i", 50258 },	-- Tarblossom Blossom
+								{ "o", 201975 },	-- Tarblossom
+							},
+						}),
+					},
 				}),
 				q(24702, {	-- Here Lies Dadanga
 					["provider"] = { "o", 202135 },	-- Dadanga's Grave
@@ -1095,6 +1103,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 43.2, 40.9, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
+						objective(1, {	-- 0/10 Discarded Supplies
+							["providers"] = {
+								{ "i", 50443 },	-- Discarded Supplies
+								{ "o", 202158 },	-- Discarded Supplies
+								{ "o", 202159 },	-- Discarded Supplies
+								{ "o", 202160 },	-- Discarded Supplies
+							},
+						}),
 						i(53580, {	-- Doreen's Wand
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1599,6 +1615,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.2, 76.5, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Piece of Threshadon Carcass
+							["providers"] = {
+								{ "i", 11504 },	-- Piece of Threshadon Carcass
+								{ "o", 166863 },	-- Fresh Threshadon Carcass
+							},
+						}),
+					},
 				}),
 				q(4290, {	-- The Fare of Lar'korwi
 					["qg"] = 9619,	-- Torwa Pathfinder
@@ -1640,6 +1664,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 24730,	-- Roll the Bones
 					["coord"] = { 31.8, 50.2, UNGORO_CRATER },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Enormous Dinosaur Talon
+							["providers"] = {
+								{ "i", 50407 },	-- Enormous Dinosaur Talon
+								{ "o", 202165 },	-- Suspicious Mound of Dirt
+							},
+						}),
+					},
 				}),
 				q(24718, {	-- The Mighty U'cha
 					["qg"] = 38275,	-- Gremix <Treasure Hunter>
