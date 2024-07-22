@@ -520,6 +520,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["coord"] = { 30.4, 49.2, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Codemaster's Code
+							["providers"] = {
+								{ "i", 63053 },	-- Codemaster's Code
+								{ "o", 206758 },	-- Codemaster's Code Device
+							},
+						}),
+					},
 				}),
 				q(27312, {	-- Darkcloud Grimtotem [A]
 					["qg"] = 45277,	-- Feralas Sentinel
@@ -682,6 +690,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/10 Rocket Car Parts
+							["providers"] = {
+								{ "i", 54809 },	-- Rocket Car Parts
+								{ "o", 202956 },	-- Rocket Car Parts
+								{ "o", 202957 },	-- Rocket Car Parts
+								{ "o", 202958 },	-- Rocket Car Parts
+								{ "o", 202959 },	-- Rocket Car Parts
+								{ "o", 202960 },	-- Rocket Car Parts
+								{ "o", 202961 },	-- Rocket Car Parts
+							},
+						}),
 						i(63542, {	-- Twizzlefixxit's Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -706,6 +725,17 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/10 Rocket Car Parts
+							["providers"] = {
+								{ "i", 54809 },	-- Rocket Car Parts
+								{ "o", 202956 },	-- Rocket Car Parts
+								{ "o", 202957 },	-- Rocket Car Parts
+								{ "o", 202958 },	-- Rocket Car Parts
+								{ "o", 202959 },	-- Rocket Car Parts
+								{ "o", 202960 },	-- Rocket Car Parts
+								{ "o", 202961 },	-- Rocket Car Parts
+							},
+						}),
 						i(63546, {	-- Razzeric's Vest
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -828,6 +858,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 91.4, 57.6, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Needles Pyrite Ore Chunk
+							["providers"] = {
+								{ "i", 56002 },	-- Needles Pyrite Ore Chunk
+								{ "o", 203228 },	-- Needles Iron Pyrite
+							},
+						}),
+					},
 				}),
 				q(25775, {	-- Fool's Gold [H]
 					["qg"] = 41184,	-- Riznek
@@ -835,12 +873,46 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 88.5, 54.8, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Needles Pyrite Ore Chunk
+							["providers"] = {
+								{ "i", 56002 },	-- Needles Pyrite Ore Chunk
+								{ "o", 203228 },	-- Needles Iron Pyrite
+							},
+						}),
+					},
 				}),
 				q(28157, {	-- Four Twilight Elements
 					["qg"] = 47745,	-- Magatha Grimtotem
 					["sourceQuest"] = 28142,	-- To the Withering
 					["coord"] = { 50.1, 62.5, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
+					["groups"] = {
+						objective(1, {	-- 0/1 Twilight Element of Air
+							["providers"] = {
+								{ "i", 63097 },	-- Twilight Element of Air
+								{ "o", 206832 },	-- Twilight Element of Air
+							},
+						}),
+						objective(2, {	-- 0/1 Twilight Element of Earth
+							["providers"] = {
+								{ "i", 63099 },	-- Twilight Element of Earth
+								{ "o", 206833 },	-- Twilight Element of Earth
+							},
+						}),
+						objective(3, {	-- 0/1 Twilight Element of Fire
+							["providers"] = {
+								{ "i", 63098 },	-- Twilight Element of Fire
+								{ "o", 206834 },	-- Twilight Element of Fire
+							},
+						}),
+						objective(4, {	-- 0/1 Twilight Element of Water
+							["providers"] = {
+								{ "i", 63100 },	-- Twilight Element of Water
+								{ "o", 206835 },	-- Twilight Element of Water
+							},
+						}),
+					},
 				}),
 				q(4904, {	-- Free at Last
 					["qg"] = 10646,	-- Lakota Windsong
@@ -1516,6 +1588,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27275,	-- Together Again
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Weapon racks burned
+							["provider"] = { "o", 205368 },	-- Grimtotem Weapon Rack
+						}),
+					},
 				}),
 				q(27311, {	-- No Weapons For You! [H]
 					["qg"] = 45278,	-- Freewind Brave
@@ -1523,6 +1600,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 42.2, 48.0, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Weapon racks burned
+							["provider"] = { "o", 205368 },	-- Grimtotem Weapon Rack
+						}),
+					},
 				}),
 				q(28124, {	-- On to the Bulwark
 					["qg"] = 47471,	-- Pao'ka Swiftmountain
@@ -1927,6 +2009,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 91.6, 78.6, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Sunken Treasure Chest
+							["providers"] = {
+								{ "i", 55138 },	-- Sunken Treasure Chest
+								{ "o", 203090 },	-- Sunken Treasure Chest
+							},
+						}),
+					},
 				}),
 				q(25610, {	-- Sunken Treasure [H]
 					["qg"] = 40888,	-- Synge
@@ -1934,6 +2024,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 91.6, 79.2, THOUSAND_NEEDLES },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/8 Sunken Treasure Chest
+							["providers"] = {
+								{ "i", 55138 },	-- Sunken Treasure Chest
+								{ "o", 203090 },	-- Sunken Treasure Chest
+							},
+						}),
+					},
 				}),
 				q(1150, {	-- Test of Endurance
 					["qg"] = 2986,	-- Dorn Plainstalker
@@ -2175,12 +2273,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27316,	-- The Rattle of Bones [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Drums of War
+							["providers"] = {
+								{ "i", 60980 },	-- The Drums of War
+								{ "o", 205421 },	-- The Drums of War
+							},
+						}),
+					},
 				}),
 				q(27326, {	-- The Drums of War [H]
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27317,	-- The Rattle of Bones [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Drums of War
+							["providers"] = {
+								{ "i", 60980 },	-- The Drums of War
+								{ "o", 205421 },	-- The Drums of War
+							},
+						}),
+					},
 				}),
 				q(1186, {	-- The Eighteenth Pilot
 					["qg"] = 4630,	-- Pozzik
@@ -2383,12 +2497,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27316,	-- The Rattle of Bones [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Writ of History
+							["providers"] = {
+								{ "i", 60976 },	-- The Writ of History
+								{ "o", 205416 },	-- The Writ of History
+							},
+						}),
+					},
 				}),
 				q(27321, {	-- The Writ of History [H]
 					["qg"] = 45278,	-- Freewind Brave
 					["sourceQuest"] = 27317,	-- The Rattle of Bones [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 The Writ of History
+							["providers"] = {
+								{ "i", 60976 },	-- The Writ of History
+								{ "o", 205416 },	-- The Writ of History
+							},
+						}),
+					},
 				}),
 				q(25479, {	-- To New Thalanaar [Dustwallow Marsh]
 					["qg"] = 40345,	-- Thyssiana
