@@ -69,18 +69,50 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				q(27972, {	-- Boosting Morale [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Barrel of Southsea Rum
+							["providers"] = {
+								{ "i", 62810 },	-- Barrel of Southsea Rum
+								{ "o", 206580 },	-- Barrel of Southsea Rum
+							},
+						}),
+					},
 				}),
 				q(28680, {	-- Boosting Morale [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Barrel of Southsea Rum
+							["providers"] = {
+								{ "i", 62810 },	-- Barrel of Southsea Rum
+								{ "o", 206580 },	-- Barrel of Southsea Rum
+							},
+						}),
+					},
 				}),
 				q(27987, {	-- Cannonball! [A]
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/4 Stack of Cannonballs
+							["providers"] = {
+								{ "i", 62818 },	-- Stack of Cannonballs
+								{ "o", 206586 },	-- Stack of Cannonballs
+							},
+						}),
+					},
 				}),
 				q(28698, {	-- Cannonball! [H]
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/4 Stack of Cannonballs
+							["providers"] = {
+								{ "i", 62818 },	-- Stack of Cannonballs
+								{ "o", 206586 },	-- Stack of Cannonballs
+							},
+						}),
+					},
 				}),
 				q(27970, {	-- Captain P. Harris [A]
 					["timeline"] = { ADDED_4_0_3 },
@@ -203,10 +235,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				q(27992, {	-- Magnets, How Do They Work? [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Siege Engine Scrap
+							["providers"] = {
+								{ "i", 62830 },	-- Siege Engine Scrap
+								{ "o", 206644 },	-- Siege Scrap
+								{ "o", 206651 },	-- Siege Scrap
+								{ "o", 206652 },	-- Siege Scrap
+							},
+						}),
+					},
 				}),
 				q(28692, {	-- Magnets, How Do They Work? [H]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Siege Engine Scrap
+							["providers"] = {
+								{ "i", 62830 },	-- Siege Engine Scrap
+								{ "o", 206644 },	-- Siege Scrap
+								{ "o", 206651 },	-- Siege Scrap
+								{ "o", 206652 },	-- Siege Scrap
+							},
+						}),
+					},
 				}),
 				q(28130, {	-- Not The Friendliest Town [A]
 					["timeline"] = { ADDED_4_0_1 },
@@ -343,10 +395,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				q(27949, {	-- The Forgotten [A]
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Forgotten Soldier's Tombstone
+							["provider"] = { "o", 206570 },	-- Forgotten Soldier's Tombstone
+						}),
+					},
 				}),
 				q(28689, {	-- The Forgotten [H]
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Forgotten Soldier's Tombstone
+							["provider"] = { "o", 206570 },	-- Forgotten Soldier's Tombstone
+						}),
+					},
 				}),
 				q(27944, {	-- Thinning the Brood [A]
 					["timeline"] = { ADDED_4_0_1 },
