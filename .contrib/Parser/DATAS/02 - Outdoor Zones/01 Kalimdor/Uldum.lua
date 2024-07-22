@@ -206,6 +206,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45296,	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, ULDUM },
 					["sourceQuest"] = 27431,	-- Tipping the Balance
+					["groups"] = {
+						objective(1, {	-- 0/1 Orb of the Morning Star
+							["providers"] = {
+								{ "i", 61044 },	-- Orb of the Morning Star
+								{ "o", 205884 },	-- Watcher Head
+							},
+						}),
+						objective(2, {	-- 0/1 Orb of the Evening Star
+							["providers"] = {
+								{ "i", 61975 },	-- Orb of the Evening Star
+								{ "o", 205886 },	-- Watcher Head
+							},
+						}),
+						objective(3, {	-- 0/1 Orb of the North Star
+							["providers"] = {
+								{ "i", 61976 },	-- Orb of the North Star
+								{ "o", 205889 },	-- Watcher Head
+							},
+						}),
+						objective(4, {	-- 0/1 Orb of the Shooting Star
+							["providers"] = {
+								{ "i", 61977 },	-- Orb of the Shooting Star
+								{ "o", 205887 },	-- Watcher Head
+							},
+						}),
+					},
 				}),
 				q(28135, {	-- Al'Akir's Vengeance
 					["qg"] = 47684,	-- King Phaoris
@@ -217,6 +243,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 58.8, 46.1, ULDUM },
 					["sourceQuest"] = 28201,	-- Ploughshares to Swords
 					["groups"] = {
+						objective(1, {	-- 0/1 Ancient Tol'vir Armaments
+							["providers"] = {
+								{ "i", 62533 },	-- Ancient Tol'vir Armaments
+								{ "o", 206393 },	-- Ancient Tol'vir Weapons
+							},
+						}),
 						i(65836),	-- Stolen Neferset Waistguard
 						i(65835),	-- Chestguard of the Bleak Scarab
 						i(65834),	-- Weaponseeker Bracers
@@ -324,6 +356,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuestNumRequired"] = 3,	-- ['Be Prepared' don't cross-complete apparently]
 					["groups"] = {
+						objective(1, {	-- 0/7 Suspended Starlight
+							["providers"] = {
+								{ "i", 61376 },	-- Suspended Starlight
+								{ "o", 205582 },	-- Suspended Starlight
+							},
+						}),
 						i(61509),	-- Sapphire Spectacles
 					},
 				}),
@@ -630,6 +668,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47159,	-- Commander Schnottz
 					["coord"] = { 24.4, 64.0, ULDUM },
 					["sourceQuest"] = 27939,	-- The Desert Fox
+					["groups"] = {
+						objective(1, {	-- 0/8 Well-preserved Idol
+							["providers"] = {
+								{ "i", 62792 },	-- Well-preserved Idol
+								{ "o", 206563 },	-- Well-preserved Idol
+							},
+						}),
+					},
 				}),
 				q(27903, {	-- Ignition
 					["qg"] = 46978,	-- Harrison Jones
@@ -827,6 +873,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48186,	-- Harrison Jones
 					["coord"] = { 27.0, 7.5, ULDUM },
 					["sourceQuest"] = 28350,	-- Master Trapper
+					["groups"] = {
+						objective(1, {	-- 0/7 Ancient Copper Scroll
+							["providers"] = {
+								{ "i", 63685 },	-- Ancient Copper Scroll
+								{ "o", 207124 },	-- Pillaged Loot Sack
+							},
+						}),
+					},
 				}),
 				q(28376, {	-- Myzerian's Head
 					["crs"] = { 48428 },	-- Myzerian
@@ -1008,6 +1062,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 29.6, 21.8, ULDUM },
 					["sourceQuest"] = 28363,	-- Stirred the Hornet's Nest
 					["groups"] = {
+						objective(1, {	-- 0/7 Powder Kegs Sabotaged
+							["provider"] = { "o", 207127 },	-- Schnottz Powder Keg
+						}),
 						i(65876),	-- Leggings of the Vir'naal
 						i(65875),	-- Powderkeg Bracers
 						i(65874),	-- Rediscovered Delta Walkers
@@ -1017,6 +1074,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 46872,	-- Prince Nadun
 					["coord"] = { 59.5, 72.0, ULDUM },
 					["sourceQuest"] = 27922,	-- Traitors!
+					["groups"] = {
+						objective(1, {	-- 0/5 Bale of Hay burnt
+							["provider"] = { "o", 206684 },	-- Bale of Hay
+						}),
+					},
 				}),
 				q(28363, {	-- Stirred the Hornet's Nest
 					["qg"] = 48186,	-- Harrison Jones
@@ -1030,6 +1092,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 46135,	-- High Priest Amet
 					["coord"] = { 54.1, 41.8, ULDUM },
 					["sourceQuest"] = 27630,	-- The High Priest's Vice
+					["groups"] = {
+						objective(1, {	-- 0/6 Slitherer Egg destroyed
+							["provider"] = { "o", 206390 },	-- Slitherer Egg
+						}),
+					},
 				}),
 				q(28482, {	-- Sullah's Gift
 					["qg"] = 48621,	-- Sullah
@@ -1094,6 +1161,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 49248,	-- Brann Bronzebeard
 					["coord"] = { 44.8, 67.3, ULDUM },
 					["sourceQuest"] = 28622,	-- Three if by Air
+					["groups"] = {
+						objective(1, {	-- 0/1 Titan Discs
+							["providers"] = {
+								{ "i", 64667 },	-- Titan Discs
+								{ "o", 207294 },	-- Coffer of Promise
+							},
+						}),
+					},
 				}),
 				q(27755, {	-- The Curse of the Tombs
 					["qg"] = 48501,	-- Sun Prophet Tumet
@@ -1278,6 +1353,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27623,	-- Colossal Guardians
 					["coord"] = { 39.6, 45.4, ULDUM },
 					["groups"] = {
+						objective(1, {	-- 0/1 The Scepter of Orsis
+							["providers"] = {
+								{ "i", 62267 },	-- The Scepter of Orsis
+								{ "o", 205824 },	-- Sacred Receptacle
+							},
+						}),
 						i(65807),	-- Hood of the Scorpion
 						i(65806),	-- Sunwatcher's Legplates
 						i(65808),	-- Orsis Polearm
@@ -1287,6 +1368,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 48761,	-- Salhet
 					["coord"] = { 67.2, 42.8, ULDUM },
 					["sourceQuest"] = 28561,	-- Nahom Must Hold
+					["groups"] = {
+						objective(1, {	-- 0/8 Atulhet's Record Fragment
+							["providers"] = {
+								{ "i", 64642 },	-- Atulhet's Record Fragment
+								{ "o", 207281 },	-- Atulhet's Record Fragment
+							},
+						}),
+					},
 				}),
 				q(27511, {	-- The Thrill of Discovery
 					["qg"] = 45296,	-- Harrison Jones
