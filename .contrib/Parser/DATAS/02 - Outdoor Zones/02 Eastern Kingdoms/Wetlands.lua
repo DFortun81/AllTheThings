@@ -590,6 +590,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57.4, 71.4, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Thelgen Seismic Record
+							["providers"] = {
+								{ "i", 55242 },	-- Thelgen Seismic Record
+								{ "o", 203184 },	-- Thelgen Seismograph
+							},
+						}),
+					},
 				}),
 				q(25727, {	-- Drungeld Glowerglare
 					["qg"] = 41086,	-- Forba Slabchisel
@@ -629,6 +637,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 57.8, 71.4, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/15 Handful of Fenberries
+							["providers"] = {
+								{ "i", 55233 },	-- Handful of Fenberries
+								{ "o", 203182 },	-- Fenberries
+							},
+						}),
+					},
 				}),
 				q(25721, {	-- Fight the Flood
 					["qg"] = 41086,	-- Forba Slabchisel
@@ -712,6 +728,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.8, 25.8, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/7 Swiftgear Gizmo
+							["providers"] = {
+								{ "i", 56085 },	-- Swiftgear Gizmo
+								{ "o", 203285 },	-- Swiftgear Gizmo
+								{ "o", 203286 },	-- Swiftgear Gizmo
+								{ "o", 203287 },	-- Swiftgear Gizmo
+								{ "o", 203288 },	-- Swiftgear Gizmo
+							},
+						}),
+					},
 				}),
 				q(25867, {	-- Gnoll Escape
 					["qg"] = 41415,	-- Shilah Slabchisel
@@ -748,6 +775,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 26.8, 25.8, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/6 Wobbling Raptor Egg
+							["providers"] = {
+								{ "i", 56058 },	-- Wobbling Raptor Egg
+								{ "o", 203264 },	-- Wobbling Raptor Egg
+							},
+						}),
+					},
 				}),
 				q(305, {	-- In Search of The Excavation Team (1/2)
 					["qg"] = 2096,	-- Tarrel Rockweaver
@@ -774,6 +809,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Incendicite Ore
+							["providers"] = {
+								{ "i", 55241 },	-- Incendicite Ore
+								{ "o", 203188 },	-- Incendicite Mineral Vein
+							},
+						}),
 						i(59066, {	-- Stabilized Incendicite Legguards
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1053,6 +1094,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/8 Flood Sediment Sample
+							["providers"] = {
+								{ "i", 55231 },	-- Flood Sediment Sample
+								{ "o", 203179 },	-- Sediment Deposit
+							},
+						}),
 						i(59075, {	-- Drunkard's Belt
 							["timeline"] = { ADDED_4_0_3 },
 						}),
@@ -1431,6 +1478,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Mountaineer's Ale
+							["providers"] = {
+								{ "i", 55209 },	-- Mountaineer's Ale
+								{ "o", 203151 },	-- Mountaineer's Ale
+							},
+						}),
+					},
 				}),
 				q(631, {	-- The Thandol Span (1/3)
 					["qg"] = 1075,	-- Rhag Garmason
@@ -1490,6 +1545,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 10.9, 59.7, WETLANDS },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/1 Fitzsimmons' Mead
+							["providers"] = {
+								{ "i", 56031 },	-- Fitzsimmons' Mead
+								{ "o", 203247 },	-- Fitzsimmon's Mead
+							},
+						}),
+					},
 				}),
 				q(25927, {	-- The Threat of Flame
 					["qg"] = 41503,	-- Rethiel the Greenwarden
@@ -1533,6 +1596,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						objective(1, {	-- 0/6 Archaeologist's Tools
+							["providers"] = {
+								{ "i", 56082 },	-- Archaeologist's Tools
+								{ "o", 203283 },	-- Archaeologist's Tools
+							},
+						}),
 						i(59105, {	-- Antique Breastplate
 							["timeline"] = { ADDED_4_0_3 },
 						}),
