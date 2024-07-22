@@ -6,16 +6,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 		n(ACHIEVEMENTS, {
 			ach(40435),		-- Adventurer of the Isle of Dorn (automated)
 			ach(40831, {	-- Explore the Isle of Dorn
-				crit(69786),	-- Ruptured Lake
-				crit(69787),	-- Lightless Channels
-				crit(69788),	-- Crawling Chasm
-				crit(69789),	-- The Weaver's Lair
-				crit(69790),	-- Untamed Valley
-				crit(69791),	-- Twitching Gorge
-				crit(69792),	-- Rak-Ush
-				crit(69793),	-- The Skeins
-				crit(69794),	-- Umbral Bazaar
-				crit(69795),	-- High Hollows
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(40630),		-- For the Collective
 			ach(40623),		-- I Only Need One Trip
@@ -65,17 +56,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 75.7, 22.2, ISLE_OF_DORN },
 			}),
 			ach(20595),		-- Sojourner of Isle of Dorn (automated)
-			ach(20118, {	-- The Isle of Dorn
-				crit(66214, {	-- Breaking Point
-					["sourceQuest"] = 78536,	-- Impossible Odds
-				}),
-				crit(66215, {	-- Earthen Fissures
-					["sourceQuest"] = 78471,	-- Convergence
-				}),
-				crit(66216, {	-- The First Blow
-					["sourceQuest"] = 78546,	-- Recompense
-				}),
-			}),
+			ach(20118),		-- The Isle of Dorn (automated)
 			pvp(ach(40083)),	-- Tour of Duty: Isle of Dorn
 			ach(40434),		-- Treasures of the Isle of Dorn (automated)
 		}),

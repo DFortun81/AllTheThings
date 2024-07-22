@@ -6,16 +6,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 		n(ACHIEVEMENTS, {
 			ach(40837),		-- Adventurer of The Ringing Deeps (automated)
 			ach(40825, {	-- Explore The Ringing Deeps
-				crit(69766),	-- The Earthenworks
-				crit(69767),	-- Lost Mines
-				crit(69768),	-- Shadowvein Extraction Site
-				crit(69775),	-- Shadowvein Point
-				crit(69769),	-- The Waterworks
-				crit(69770),	-- Taelloch
-				crit(69771),	-- The Living Grotto
-				crit(69772),	-- Opportunity Point
-				crit(69773),	-- The Coreway
-				crit(69774),	-- Gundargaz
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(40507),		-- Hanging Tight
 			ach(40628),		-- Notable Machines (automated)
@@ -84,17 +75,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}),
 			ach(40799),		-- Sojourner of The Ringing Deeps (automated)
 			ach(40585),		-- Super Size Snuffling
-			ach(19560, {	-- The Ringing Deeps
-				crit(64791, {	-- 	By Candlelight
-					["sourceQuest"] = 78642,	-- New Candle, New Hope
-				}),
-				crit(64792, {	-- 	Dark Revelations
-					["sourceQuest"] = 78706,	-- The High Speaker's Secret
-				}),
-				crit(64793, {	-- 	The Monster and the Machine
-					["sourceQuest"] = 81689,	-- Orientation: Gundargaz
-				}),
-			}),
+			ach(19560),		-- The Ringing Deeps (automated)
 			ach(40703, {	-- The Ringing Deeps Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",

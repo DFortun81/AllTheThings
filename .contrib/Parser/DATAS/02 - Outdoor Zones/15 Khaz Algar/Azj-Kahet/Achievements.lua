@@ -5,20 +5,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 	m(AZJ_KAHET, {
 		n(ACHIEVEMENTS, {
 			ach(40840),		-- Adventurer of Azj-Kahet (automated)
-			ach(19559, {	-- Azj-Kahet
-				crit(64786, {	-- Friends in the Dark
-					["sourceQuest"] = 78392,	-- The Tangled Web
-				}),
-				crit(64785, {	-- Friends in the Dark
-					["sourceQuest"] = 78393,	-- A Seeming Respite
-				}),
-				crit(64787, {	-- Unraveling the Trapped
-					["sourceQuest"] = 78256,	-- The General's Consensus
-				}),
-				crit(64788, {	-- Plans Within Plans
-					["sourceQuest"] = 78248,	-- Beginning Anew From Rock Bottom
-				}),
-			}),
+			ach(19559),		-- Azj-Kahet (automated)
 			ach(40705, {	-- Azj-Kahet Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
@@ -38,16 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			ach(40620),		-- Back to the Wall
 			ach(40629),		-- Bookworm (automated)
 			ach(40822, {	-- Explore Azj-Kahet
-				crit(69757),	-- Ruptured Lake
-				crit(69758),	-- Lightless Channels
-				crit(69759),	-- Crawling Chasm
-				crit(69760),	-- The Weaver's Lair
-				crit(69761),	-- Untamed Valley
-				crit(69762),	-- Twitching Gorge
-				crit(69763),	-- Rak-Ush
-				crit(69764),	-- The Skeins
-				crit(69808),	-- Umbral Bazaar
-				crit(69765),	-- High Hollows
+				["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(40614),		-- Gobblin' with Glublurp
 			ach(40624, {	-- Itsy Bitsy Spider

@@ -6550,6 +6550,7 @@ _.ObjectNames = {
 	[455951] = "Artisan's Drawing Knife",
 	[455952] = "Earthen Worker's Beams",
 	[455953] = "Dornogal Carving Knife",
+	[455954] = "Nerubian Mining Cart",
 	[455955] = "Heavy Spider Crusher",
 	[455956] = "Devout Archaeologist's Excavator",
 	[455957] = "Arathi Precision Drill",
