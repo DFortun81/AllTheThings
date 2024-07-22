@@ -778,18 +778,18 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(31369, {	-- The Anglers (A)
+					q(31369, {	-- The Anglers [A]
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 64033 },	-- Master Angler Karu
 						["races"] = ALLIANCE_ONLY,
 						["coord"] = { 86.5, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
-						["u"] = REMOVED_FROM_GAME,	-- Either bugged or removed from the game
+						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
 					}),
-					q(31370, {	-- The Anglers
+					q(31370, {	-- The Anglers [H]
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 64010 },	-- Master Angler Karu
 						["races"] = HORDE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
 					}),
 					q(30225, {	-- The Ashweb Matriarch
 						--["coord"] = { ???, ???, VALE_OF_ETERNAL_BLOSSOMS },	-- TODO
@@ -888,31 +888,31 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(31390, {	-- The Klaxxi (A)
+					q(31390, {	-- The Klaxxi [A]
 						["coord"] = { 84.4, 61.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = ALLIANCE_ONLY,
 						["provider"] = { "n", 64488 },	-- Riki the Shifting Shadow
 						["isBreadcrumb"] = true,
 					}),
-					q(31391, {	-- The Klaxxi (H)
+					q(31391, {	-- The Klaxxi [H]
 						["coord"] = { 63.2, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 64534 },	-- Bowmaster Ku
 						["isBreadcrumb"] = true,
 					}),
-					q(31367, {	-- The Lorewalkers (A)
+					q(31367, {	-- The Lorewalkers [A]
 						["coord"] = { 85.6, 60.2, VALE_OF_ETERNAL_BLOSSOMS },
 						["provider"] = { "n", 64508 },	-- Scrollmaker Resshi
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
 					}),
-					q(31368, {	-- The Lorewalkers (H)
+					q(31368, {	-- The Lorewalkers [H]
 						["coord"] = { 62.4, 21.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["provider"] = { "n", 64531 },	-- Lena Stonebrush
 						["isBreadcrumb"] = true,
 						["races"] = HORDE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
+						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
 					}),
 					q(30645, {	-- The Might of Three
 						["coord"] = { 56.6, 43.6, VALE_OF_ETERNAL_BLOSSOMS },
