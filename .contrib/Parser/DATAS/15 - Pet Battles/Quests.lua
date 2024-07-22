@@ -432,7 +432,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				-- Horde Shared Account-Wide Pet Battle Intro Quests
 				32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
 			},
-			["description"] = "|CFFFF0000Do not|r under any circumstances abandon this quest, you cannot reobtain it.",
+			["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
 		}),
 		q(31878, {	-- Audrey Burnhep
 			["isBreadcrumb"] = true,
@@ -484,7 +484,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 				-- Alliance Shared Account-Wide Pet Battle Intro Quests
 				32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
 			},
-			["description"] = "|CFFFF0000Do not|r under any circumstances abandon this quest, you cannot reobtain it.",
+			["description"] = "|CFFFF0000Do not under any circumstances abandon this quest, you cannot reobtain it.|r",
 		}),
 		q(31882, {	-- Varzok
 			["races"] = HORDE_ONLY,
@@ -1439,18 +1439,18 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 		["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 		["races"] = ALLIANCE_ONLY,
 		-- #if BEFORE 9.0.3
-		["description"] = "Provides the Alliance Batte Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n5. 'Grand Master Payne'\n6. 'Battle Pet Tamers: Cataclysm'\n7. 'Grand Master Obalis'\n8. 'Battle Pet Tamers: Pandaria'\n9. 'Grand Master Aki'\n\nNew quest might not be given until daily reset.",
+		["description"] = "Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quest might not be given until daily reset.",
 		-- #else
-		["description"] = "Provides the Alliance Batte Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n5. 'Grand Master Payne'\n6. 'Battle Pet Tamers: Cataclysm'\n7. 'Grand Master Obalis'\n8. 'Battle Pet Tamers: Pandaria'\n9. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",
+		["description"] = "Provides the Alliance Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring southern Eastern Kingdoms\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",
 		-- #endif
 	}),
 	n(63626, {	-- Varzok <Battle Pet Tamer>
 		["coord"] = { 52.6, 59.3, ORGRIMMAR },
 		["races"] = HORDE_ONLY,
 		-- #if BEFORE 9.0.3
-		["description"] = "Provides the Horde Batte Pet questline, the quests are given in the following order:\n\n1. The inital quests touring middle Kalimdor\n2. 'Battle Pet Tamers: Eastern Kingdoms' + Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n5. 'Grand Master Payne'\n6. 'Battle Pet Tamers: Cataclysm'\n7. 'Grand Master Obalis'\n8. 'Battle Pet Tamers: Pandaria'\n9. 'Grand Master Aki'\n\nNew quest might not be given until daily reset.",
+		["description"] = "Provides the Horde Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring middle Kalimdor\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nNew quest might not be given until daily reset.",
 		-- #else
-		["description"] = "Provides the Horde Batte Pet questline, the quests are given in the following order:\n\n1. The inital quests touring middle Kalimdor\n2. 'Battle Pet Tamers: Eastern Kingdoms' + Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n5. 'Grand Master Payne'\n6. 'Battle Pet Tamers: Cataclysm'\n7. 'Grand Master Obalis'\n8. 'Battle Pet Tamers: Pandaria'\n9. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",
+		["description"] = "Provides the Horde Battle Pet questline, the quests are given in the following order:\n\n1. The inital quests touring middle Kalimdor\n2. 'Battle Pet Tamers: Eastern Kingdoms' + 'Battle Pet Tamers: Kalimdor'\n3. 'Grand Master Lydia Accoste' + 'Grand Master Trixxy'\n4. 'Battle Pet Tamers: Outland'\n5. 'Grand Master Antari'\n6. 'Battle Pet Tamers: Northrend'\n7. 'Grand Master Payne'\n8. 'Battle Pet Tamers: Cataclysm'\n9. 'Grand Master Obalis'\n10. 'Battle Pet Tamers: Pandaria'\n11. 'Grand Master Aki'\n\nYou might have to tinker with Chromie time on low-level character to obtain these account-wide quests, and new quest might not be given until daily reset.",
 		-- #endif
 	}),
 	-- Old World tamers:
@@ -1599,5 +1599,23 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 	n(66557, {	-- Bloodknight Antari <Grand Master Pet Tamer>
 		["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 		["description"] = "Antari's pets are level 24 of the following consecutive pet classes:\n1. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n2. Elemental - use Aquatic (powerful) or Critter (tanky) pet.\n3. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	-- Northrend tamers:
+	-- Lvl 25
+	n(66635, {	-- Beegle Blastfuse <Master Pet Tamer>
+		["coord"] = { 28.6, 33.8, HOWLING_FJORD },
+		["description"] = "Beegle's pets are level 25 of the following consecutive pet classes:\n1. Flying - use Magic (powerful) or Dragonkin (tanky) pet.\n2. Flying - see above.\n3. Aquatic - use Flying (powerful) or Magic (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	n(66636, {	-- Nearly Headless Jacob <Master Pet Tamer>
+		["coord"] = { 50.2, 59.0, CRYSTALSONG_FOREST },
+		["description"] = "Jacob's pets are level 25 of the following consecutive pet classes:\n1. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n2. Undead - see above.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	n(66638, {	-- Okrut Dragonwaste <Master Pet Tamer>
+		["coord"] = { 59.0, 77.0, DRAGONBLIGHT },
+		["description"] = "Okrut's pets are level 25 of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Undead - use Critter (powerful) or Aquatic (tanky) pet.\n3. Undead - see above.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
+	}),
+	n(66639, {	-- Gutretch <Master Pet Tamer>
+		["coord"] = { 13.2, 66.8, ZULDRAK },
+		["description"] = "Gutretch's pets are level 25 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
 	}),
 })));
