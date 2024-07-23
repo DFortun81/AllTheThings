@@ -2813,6 +2813,20 @@ namespace ATT
                 LogDebug($"INFO: Conflicting fields: races & r. Dropping 'r' as pre-caution.", data);
                 data.Remove("r");
             }
+
+            // Sourced BoE Items with requireSkill which are not directly linked to a Profession-based Filter
+            if (data.ContainsKey("requireSkill") &&
+                data.ContainsKey("itemID") &&
+                !data.ContainsKey("_unsorted") &&
+                (!data.TryGetValue("b", out long b) || b == 2) &&
+                data.TryGetValue("f", out long f) && (f == (long)Objects.Filters.Reagent))
+            {
+                if (!data.ContainsAnyKey(new[] { "sourceID", "recipeID", "spellID" }))
+                {
+                    LogDebug($"INFO: Conflicting fields: b/f/requireSkill. Dropping 'requireSkill' as pre-caution.", data);
+                    data.Remove("requireSkill");
+                }
+            }
         }
 
         private static void Consolidate_item(IDictionary<string, object> data)
