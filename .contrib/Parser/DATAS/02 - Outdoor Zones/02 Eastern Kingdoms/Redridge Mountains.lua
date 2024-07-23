@@ -2077,7 +2077,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 69.6, 57.4, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["description"] = "This item drops from both Blackrock Renegades & Blackrock Hunters. Renegades might have a higher droprate, but are unavailable for Alliance characters who have completeted the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
+					["description"] = "This item drops from both Blackrock Renegades & Blackrock Hunters. Renegades might have a higher droprate, but are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
 					["crs"] = {
 						437,	-- Blackrock Renegade
 						4462,	-- Blackrock Hunter
@@ -2109,7 +2109,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 67.0, 59.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["description"] = "This item only drops from Blackrock Scouts, which are unavailable for Alliance characters who have completeted the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
+					["description"] = "This item only drops from Blackrock Scouts, which are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
 					["cr"] = 4064,	-- Blackrock Scout
 					["coords"] = {
 						{ 52.6, 41.2, REDRIDGE_MOUNTAINS },
@@ -2131,7 +2131,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 46.0, 18.4, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["description"] = "This item only drops from Blackrock Renegades, which are unavailable for Alliance characters who have completeted the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
+					["description"] = "This item only drops from Blackrock Renegades, which are unavailable for Alliance characters who have completed the 'First Blood' storyline due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
 					["cr"] = 437,	-- Blackrock Renegade
 					["coords"] = {
 						{ 52.6, 41.4, REDRIDGE_MOUNTAINS },
@@ -2288,7 +2288,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 67.4, 56.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["description"] = "This item only drops from Blackrock Warden, which are unavailable for Alliance characters who have completeted the quest 'Detonation' due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
+					["description"] = "This item only drops from Blackrock Warden, which are unavailable for Alliance characters who have completed the quest 'Detonation' due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
 					["cr"] = 43535,	-- Blackrock Warden
 					["coords"] = {
 						{ 69.3, 62.1, REDRIDGE_MOUNTAINS },
@@ -2305,7 +2305,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 67.4, 56.0, REDRIDGE_MOUNTAINS },
 					},
 					-- #elseif AFTER 10.1.7
-					["description"] = "This item only drops from Blackrock Warden, which are unavailable for Alliance characters who have completeted the quest 'Detonation' due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
+					["description"] = "This item only drops from Blackrock Warden, which are unavailable for Alliance characters who have completed the quest 'Detonation' due to phasing.\nPhasing can be circumvented with Party Sync, using an Alliance alt that haven't reached the quest progress trigger for this phasing, or using a Horde alt.",
 					["crs"] = 43535, -- Blackrock Warden
 					["coords"] = {
 						{ 69.3, 62.1, REDRIDGE_MOUNTAINS },
