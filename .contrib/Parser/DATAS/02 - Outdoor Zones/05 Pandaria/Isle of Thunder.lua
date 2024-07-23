@@ -157,8 +157,12 @@ root(ROOTS.Zones, {
 						}),
 					}),
 					ach(8111, {	-- This Isn't Even My Final Form
-						["description"] = "Kill Drakkari God-Hulk patrolling on foot path near coord, then drink Zandalari Potion as Coord.",
+						["description"] = "Kill Drakkari God-Hulk patrolling on foot path near coord, then drink a Zandalari Potion nearby.",
 						["coord"] = { 36.6, 70.2, ISLE_OF_THUNDER },
+						["providers"] = {
+							{ "n", 69200 },	-- Drakkari God-Hulk
+							{ "o", 218059 },	-- Zandalari Potion
+						}
 					}),
 					ach(8104),	-- Thunder Plunder
 					ach(8108, {	-- When in Ihgaluk, Do as the Skumblade Do
@@ -167,7 +171,9 @@ root(ROOTS.Zones, {
 						crit(22834),	-- Adult Kroshik
 						crit(22835),	-- Sacrificed Kroshik
 					}),
-					ach(8116),	-- You Made Me Bleed My Own Blood
+					ach(8116, {	-- You Made Me Bleed My Own Blood
+						["provider"] = { "n", 69435 },	-- Fleshcrafter Hoku
+					}),
 					ach(8212, {	-- Zandalari Library Card
 						["sym"] = {{ "achievement_criteria" }},
 					}),
