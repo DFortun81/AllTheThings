@@ -444,35 +444,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(221521),	-- Black Tropical Trunks
 				i(221522),	-- Black Tropical Wristwraps
 
-				------ Champion Stormrider Set ------
-				i(220710),	-- Champion Stormrider's Boots
-				i(220709),	-- Champion Stormrider's Breastplate
-				i(220716),	-- Champion Stormrider's Buckle
-				i(220711),	-- Champion Stormrider's Cape
-				i(220715),	-- Champion Stormrider's Epaulets
-				i(220712),	-- Champion Stormrider's Grips
-				i(220713),	-- Champion Stormrider's Helmet
-				i(220714),	-- Champion Stormrider's Pants
-				i(220717),	-- Champion Stormrider's Wristguards
-
-				------ Deep Stormrider Set ------
-				i(220696),	-- Deep Stormrider's Boots
-				i(220695),	-- Deep Stormrider's Breastplate
-				i(220702),	-- Deep Stormrider's Buckle
-				i(220697),	-- Deep Stormrider's Cape
-				i(220701),	-- Deep Stormrider's Epaulets
-				i(220698),	-- Deep Stormrider's Grips
-				i(220699),	-- Deep Stormrider's Helmet
-				i(220700),	-- Deep Stormrider's Pants
-				i(220703),	-- Deep Stormrider's Wristguards
-
-				------ Frenzied Stormrider Set ------
-				i(220708),	-- Frenzied Stormrider's Breastplate
-				i(220706),	-- Frenzied Stormrider's Buckle
-				i(220705),	-- Frenzied Stormrider's Epaulets
-				i(220707),	-- Frenzied Stormrider's Grips
-				i(220704),	-- Frenzied Stormrider's Helmet
-
 				------ Green Diver Set ------
 				i(223245),	-- Ensemble: Green Diver Suit
 				i(223226),	-- Green Diver's Belt
@@ -510,30 +481,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(221012),	-- Purple Snugglefin Murloc Slippers
 				i(221014),	-- Purple Snugglefin Murloc Sweatpants
 
-				------ Shining Stormrider Set ------
-				i(220719),	-- Shining Stormrider's Boots
-				i(220718),	-- Shining Stormrider's Breastplate
-				i(220725),	-- Shining Stormrider's Buckle
-				i(220720),	-- Shining Stormrider's Cape
-				i(220724),	-- Shining Stormrider's Epaulets
-				i(220721),	-- Shining Stormrider's Grips
-				i(220722),	-- Shining Stormrider's Helmet
-				i(220723),	-- Shining Stormrider's Pants
-				i(220726),	-- Shining Stormrider's Wristguards
-
-				------ Shocking Stormrider Set ------
-				i(220736),	-- Shocking Stormrider's Breastplate
-				i(220734),	-- Shocking Stormrider's Buckle
-				i(220733),	-- Shocking Stormrider's Epaulets
-				i(220735),	-- Shocking Stormrider's Grips
-				i(220732),	-- Shocking Stormrider's Helmet
-
-				------ Sparking Stormrider Set ------
-				i(220731),	-- Sparking Stormrider's Breastplate
-				i(220729),	-- Sparking Stormrider's Buckle
-				i(220728),	-- Sparking Stormrider's Epaulets
-				i(220730),	-- Sparking Stormrider's Grips
-				i(220727),	-- Sparking Stormrider's Helmet
 			}),
 			n(WEAPONS, {
 				i(220759),	-- Arsenal: Stormrider's Bronze Stormhammers

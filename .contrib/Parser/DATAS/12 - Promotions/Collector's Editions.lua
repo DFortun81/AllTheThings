@@ -565,6 +565,17 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			["g"] = {
 				mount(417888),	-- Algarian Stormrider (MOUNT!)
 				ach(19027),	-- Heroic Edition: Algarian Stormrider
+				i(209336, {	-- Ensemble: Stormrider's Attire
+					i(209330),	-- Stormrider's Buckle
+					i(209321),	-- Stormrider's Boots
+					i(209320),	-- Stormrider's Breastplate
+					i(209331),	-- Stormrider's Cape
+					i(209329),	-- Stormrider's Epaulettes
+					i(209325),	-- Stormrider's Grips
+					i(209327),	-- Stormrider's Helmet
+					i(209328),	-- Stormrider's Pants
+					i(209332),	-- Stormrider's Wristguards
+				}),
 				n(DRAGONRIDING_RACING, {
 					n(ACHIEVEMENTS, {
 						ach(18928, {	-- Storm Rider: Bronze
@@ -625,6 +636,101 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 								}),
 							},
 						}),
+						q(81993, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {	-- The Stormrider's Bond [Dragon Isle Version]
+							["description"] = "You might Only get one of these version per account?",
+							--["provider"] = { "n", XXXXXX },	-- Kurdran Wildhammer
+							--["coord"] = { X, Y, VALDRAKKEN },
+							["g"] = {
+								i(220737),	-- Storm Spirit (QI!)
+								i(220710),	-- Champion Stormrider's Boots
+								i(220709),	-- Champion Stormrider's Breastplate
+								i(220716),	-- Champion Stormrider's Buckle
+								i(220711),	-- Champion Stormrider's Cape
+								i(220715),	-- Champion Stormrider's Epaulets
+								i(220712),	-- Champion Stormrider's Grips
+								i(220713),	-- Champion Stormrider's Helmet
+								i(220714),	-- Champion Stormrider's Pants
+								i(220717),	-- Champion Stormrider's Wristguards
+								i(220696),	-- Deep Stormrider's Boots
+								i(220695),	-- Deep Stormrider's Breastplate
+								i(220702),	-- Deep Stormrider's Buckle
+								i(220697),	-- Deep Stormrider's Cape
+								i(220701),	-- Deep Stormrider's Epaulets
+								i(220698),	-- Deep Stormrider's Grips
+								i(220699),	-- Deep Stormrider's Helmet
+								i(220700),	-- Deep Stormrider's Pants
+								i(220703),	-- Deep Stormrider's Wristguards
+								i(220719),	-- Shining Stormrider's Boots
+								i(220718),	-- Shining Stormrider's Breastplate
+								i(220725),	-- Shining Stormrider's Buckle
+								i(220720),	-- Shining Stormrider's Cape
+								i(220724),	-- Shining Stormrider's Epaulets
+								i(220721),	-- Shining Stormrider's Grips
+								i(220722),	-- Shining Stormrider's Helmet
+								i(220723),	-- Shining Stormrider's Pants
+								i(220726),	-- Shining Stormrider's Wristguards
+							},
+						})),
+						q(83024, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {	-- The Stormrider's Bond [Khaz Algar Version]
+							["description"] = "You might Only get one of these version per account?",
+							--["provider"] = { "n", XXXXXX },	-- Kurdran Wildhammer
+							--["coord"] = { X, Y, VALDRAKKEN },
+							["g"] = {
+								i(220737),	-- Storm Spirit (QI!)
+								i(220710),	-- Champion Stormrider's Boots
+								i(220709),	-- Champion Stormrider's Breastplate
+								i(220716),	-- Champion Stormrider's Buckle
+								i(220711),	-- Champion Stormrider's Cape
+								i(220715),	-- Champion Stormrider's Epaulets
+								i(220712),	-- Champion Stormrider's Grips
+								i(220713),	-- Champion Stormrider's Helmet
+								i(220714),	-- Champion Stormrider's Pants
+								i(220717),	-- Champion Stormrider's Wristguards
+								i(220696),	-- Deep Stormrider's Boots
+								i(220695),	-- Deep Stormrider's Breastplate
+								i(220702),	-- Deep Stormrider's Buckle
+								i(220697),	-- Deep Stormrider's Cape
+								i(220701),	-- Deep Stormrider's Epaulets
+								i(220698),	-- Deep Stormrider's Grips
+								i(220699),	-- Deep Stormrider's Helmet
+								i(220700),	-- Deep Stormrider's Pants
+								i(220703),	-- Deep Stormrider's Wristguards
+								i(220719),	-- Shining Stormrider's Boots
+								i(220718),	-- Shining Stormrider's Breastplate
+								i(220725),	-- Shining Stormrider's Buckle
+								i(220720),	-- Shining Stormrider's Cape
+								i(220724),	-- Shining Stormrider's Epaulets
+								i(220721),	-- Shining Stormrider's Grips
+								i(220722),	-- Shining Stormrider's Helmet
+								i(220723),	-- Shining Stormrider's Pants
+								i(220726),	-- Shining Stormrider's Wristguards
+							},
+						})),
+						--q(X, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {	-- A Sacred Connection
+							--["sourceQuests"] = {
+								--81993,	-- The Stormrider's Bond [Dragon Isle Version]
+								--83024,	-- The Stormrider's Bond [Khaz Algar Version]
+							--},
+							--["provider"] = { "n", XXXXXX },	-- Kurdran Wildhammer
+							--["coord"] = { X, Y, VALDRAKKEN },
+							--["g"] = {
+								i(220708),	-- Frenzied Stormrider's Breastplate
+								i(220706),	-- Frenzied Stormrider's Buckle
+								i(220705),	-- Frenzied Stormrider's Epaulets
+								i(220707),	-- Frenzied Stormrider's Grips
+								i(220704),	-- Frenzied Stormrider's Helmet
+								i(220736),	-- Shocking Stormrider's Breastplate
+								i(220734),	-- Shocking Stormrider's Buckle
+								i(220733),	-- Shocking Stormrider's Epaulets
+								i(220735),	-- Shocking Stormrider's Grips
+								i(220732),	-- Shocking Stormrider's Helmet
+								i(220731),	-- Sparking Stormrider's Breastplate
+								i(220729),	-- Sparking Stormrider's Buckle
+								i(220728),	-- Sparking Stormrider's Epaulets
+								i(220730),	-- Sparking Stormrider's Grips
+								i(220727),	-- Sparking Stormrider's Helmet
+							--},
+						--})),
 						dragonridingrace(77793, {	-- Crystal Circuit - Storm Gryphon
 							["provider"] = { "n", 202524 },	-- Bronze Timekeeper
 							["coord"] = { 38.6, 60.6, ZARALEK_CAVERN },
@@ -687,17 +793,6 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 			["description"] = "These rewards were made available to anyone who purchased The War Within Epic Edition.",
 			["g"] = {
 				ach(19030),	-- Squally
-				i(209336, {	-- Ensemble: Stormrider's Attire
-					i(209330),	-- Stormrider's Buckle
-					i(209321),	-- Stormrider's Boots
-					i(209320),	-- Stormrider's Breastplate
-					i(209331),	-- Stormrider's Cape
-					i(209329),	-- Stormrider's Epaulettes
-					i(209325),	-- Stormrider's Grips
-					i(209327),	-- Stormrider's Helmet
-					i(209328),	-- Stormrider's Pants
-					i(209332),	-- Stormrider's Wristguards
-				}),
 				i(208704),	-- Deepdwellers Earthen Hearthstone (TOY!)
 				i(208883),	-- Sandbox Storm Gryphon (TOY!)
 				i(208751),	-- Squally (PET!)
