@@ -38,6 +38,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 12.4, 42.4, THE_AZURE_SPAN },
 					["g"] = {
 						i(199704),	-- Artifact Fragment (QI!)
+						i(199692),	-- Artifact Locator (QI!)
 					},
 				}),
 				q(70787, {	-- Caught In a Dusk Storm
