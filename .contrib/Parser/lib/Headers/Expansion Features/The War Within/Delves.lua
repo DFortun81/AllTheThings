@@ -1,6 +1,6 @@
 DELVES = createHeader({
 	readable = "Delves",
-	icon = "Interface\\Icons\\Inv_misc_questionmark",
+	icon = [[~_.asset("Category_Delves")]],
 	constant = "DELVES",
 	-- #if AFTER TWW
 	export = true,
