@@ -486,11 +486,11 @@ ADDED_10_2_7 = "added 10.2.7.54577";					-- Dragonflight 10.2.7 Launch on May 7t
 REMOVED_10_2_7 = "removed 10.2.7.54577";				-- Dragonflight 10.2.7 Launch on May 7th, 2024
 ADDED_MOP_REMIX = "added 10.2.7.54736";				    -- Dragonflight 10.2.7 MoP Remix Launch on May 16th, 2024
 
-REMOVED_MOP_REMIX_END = "removed 11.1.0";				-- PlaceHolder Until we know
+REMOVED_MOP_REMIX_END = "removed 11.0.2";				-- PlaceHolder Until we know
 --- The Three Pillars of wow.. What will be removed in pre-patch? Hmmmm
-REMOVED_SEASON_AWAKENED = "removed 11.0.0";	-- Placeholder
-REMOVED_SEASON_PVP = "removed 11.0.0";	-- Placeholder
-REMOVED_SEASON_MYTHIC = "removed 11.0.0";	-- Placeholder
+REMOVED_SEASON_AWAKENED = "removed 11.0.2";	-- Placeholder
+REMOVED_SEASON_PVP = "removed 11.0.2";	-- Placeholder
+REMOVED_SEASON_MYTHIC = "removed 11.0.2";	-- Placeholder
 
 --------------------
 -- THE WAR WITHIN --
@@ -502,9 +502,9 @@ REMOVED_11_0_0 = "removed 11.0.0";						-- The War Within 11.0.0
 CREATED_11_0_1 = "created 11.0.0";						-- The War Within 11.0.1
 ADDED_11_0_1 = "added 11.0.0";							-- The War Within 11.0.1
 REMOVED_11_0_1 = "removed 11.0.0";						-- The War Within 11.0.1
-CREATED_11_0_2 = "added 11.0.2";						-- The War Within 11.0.2 Launch on
+CREATED_11_0_2 = "created 11.0.2";						-- The War Within 11.0.2 Launch on
 ADDED_11_0_2 = "added 11.0.2";							-- The War Within 11.0.2 Launch on
-REMOVED_11_0_2 = "added 11.0.2";						-- The War Within 11.0.2 Launch on
+REMOVED_11_0_2 = "removed 11.0.2";						-- The War Within 11.0.2 Launch on
 --- So Prepatch 11.0.0 or 11.0.1? Launch is 11.0.2?
 CREATED_11_PH_PREPATCH = "created 11.0.0";				-- The War Within 11.PH/Pre-Patch Launch on July 23rd, 2024
 ADDED_11_PH_PREPATCH = "added 11.0.0";					-- The War Within 11.PH/Pre-Patch Launch on July 23rd, 2024

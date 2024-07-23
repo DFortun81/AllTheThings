@@ -8,7 +8,7 @@ WARBAND = createHeader({
 		en = "Warband",
 	},
 });
-root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {
 	n(ACHIEVEMENTS, {
 		ach(19470),	-- One Warband Mentor: The War Within
 		ach(19460),	-- Two Warband Mentors: The War Within
