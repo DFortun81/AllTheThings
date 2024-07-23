@@ -3527,7 +3527,6 @@ root(ROOTS.Zones, {
 					n(32638, {	-- Hakmud of Argus <Traveling Trader>
 						["providers"] = {
 							{ "i", 44235 },	-- Traveler's Tundra Mammoth (A) (MOUNT!)
-							{ "i", 44234 },	-- Traveler's Tundra Mammoth (H) (MOUNT!)
 						},
 						["description"] = "This vendor can be found on someone's Traveler's Tundra Mammoth.",
 						["groups"] = {
