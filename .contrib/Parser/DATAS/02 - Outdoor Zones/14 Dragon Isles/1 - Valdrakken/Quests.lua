@@ -283,7 +283,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					75408,	-- Calling All Dracthyr!
 					76597,	-- On New Wings
 					73085,	-- Cold Feet
-				},	
+				},
 				["provider"] = { "n", 201764 },	-- Talon Scaralesh
 				["coord"] = { 23.1, 32.1, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
@@ -381,9 +381,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				},
 			}),
 			q(79513, {	-- Dragon Isles Adventuring: Being Yourself
-				["sourceQuests"] = { 
+				["sourceQuests"] = {
 					79514,	-- Don't Threaten Me With a Good Time
 					79515,	-- Gather Your Rosebuds
+					-- Requires quest completions for proper NPC dialogs
+					65920,	-- For the Ward! (unlocks dialog with Zuttiki)
+					-- maybe more?
 				},
 				["provider"] = { "n", 216950 },	-- Scalecommander Viridia
 				["coord"] = { 29.5, 49.5, VALDRAKKEN },

@@ -131,7 +131,7 @@ function(t) return t.type == "AsGenericObjectContainer" end,
 		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
 	end
 	-- Retail: typical object collectibility matches Quest collectibility
-	or app.CollectibleAsQuest,
+	or app.CollectibleAsQuestOrAsLocked,
 	collected = IsQuestFlaggedCompletedForObject,
 	trackable = app.ReturnTrue,
 	saved = function(t)
@@ -152,7 +152,7 @@ function(t) return t.type == "AsSubGenericObject" end,
 		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
 	end
 	-- Retail: typical object collectibility matches Quest collectibility
-	or app.CollectibleAsQuest,
+	or app.CollectibleAsQuestOrAsLocked,
 	collected = IsQuestFlaggedCompletedForObject,
 	trackable = app.ReturnTrue,
 	saved = function(t)
