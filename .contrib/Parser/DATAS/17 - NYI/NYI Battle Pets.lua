@@ -1345,15 +1345,14 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(3573),	-- Swole (PET!)
 			pet(3567),	-- Talons (PET!)
 			pet(3569),	-- Tempe (PET!)
+
+			pet(3525),	-- Abyssal Lurker (PET!)
 			-- With SpeciesID Attached
 			i(205004, {	-- Azure Swoglet (PET!)
 				["displayID"] = 112144,
 			}),
 			i(205054, {	-- Amador (PET!)
 				["displayID"] = 112171,
-			}),
-			i(205032, {	-- Bestial Lurker (PET!)
-				["displayID"] = 112162,
 			}),
 			i(205011, {	-- Bronze Swoglet (PET!)
 				["displayID"] = 112148,
@@ -1408,6 +1407,10 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			}),
 			i(205037, {	-- Void Lurker (PET!)
 				["displayID"] = 112164,
+			}),
+			-- Without SpeciesID Attached
+			i(205032, {	-- Bestial Lurker (PET!)
+				["displayID"] = 112162,
 			}),
 		})),
 
