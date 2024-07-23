@@ -1828,11 +1828,13 @@ i(219391, 446052);	-- Delver's Dirigible
 i(0, 453785);		-- Earthen Ordinant's Ramolith
 i(223274, 447957);	-- Ferocious Jawcrawler
 i(223586, 449466);	-- Forged Gladiator's Fel Bat
+i(223278, 448685);	-- Heritage Undercrawler
 i(224415, 452779);	-- Ivory Goliathus
 i(223286, 448850);	-- Kah, Legend of the Deep
 i(223269, 448188);	-- Machine Defense Unit 1-11
 i(223501, 449258);	-- Ol' Mole Rufus
 i(223158, 447160);	-- Raging Cinderbee
+i(223279, 448689);	-- Royal Court Undercrawler
 i(223314, 448939);	-- Shackled Shadow
 i(223266, 447190);	-- Shadowed Swarmite
 i(223571, 449418);	-- Shale Ramolith
@@ -1846,6 +1848,7 @@ i(223317, 448978);	-- Vermillion Imperial Lynx
 i(223511, 449325);	-- Vicious Skyflayer [A]
 i(221813, 447405);	-- Vicious Skyflayer [H]
 i(225548, 449264);	-- Wick's Lead
+i(223276, 448680);	-- Widow's Undercrawler
 
 ------------------
 -- PATCH 11.0.0 --
@@ -1853,11 +1856,8 @@ i(225548, 449264);	-- Wick's Lead
 --- UNSORTED ---
 i(223570, 449416);	-- Ebonhide Ramolith
 i(226506, 459193);	-- Hand of Reshkigaal
-i(223278, 448685);	-- Heritage Undercrawler
 i(226041, 457654);	-- Keg Leg's Radiant Crocolisk
 i(226040, 457650);	-- Plunderlord's Golden Crocolisk
 i(226042, 457656);	-- Plunderlord's Midnight Crocolisk
 i(226044, 457659);	-- Plunderlord's Weathered Crocolisk
-i(223279, 448689);	-- Royal Court Undercrawler
 i(223572, 449415);	-- Slatestone Ramolith
-i(223276, 448680);	-- Widow's Undercrawler

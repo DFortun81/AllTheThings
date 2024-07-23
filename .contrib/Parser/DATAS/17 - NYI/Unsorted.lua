@@ -154,14 +154,11 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(223570),	-- Ebonhide Ramolith (MOUNT!)
 				i(226506),	-- Hand of Reshkigaal (MOUNT!) [Trading Post?]
-				i(223278),	-- Heritage Undercrawler (MOUNT!)
 				i(226041),	-- Keg Leg's Radiant Crocolisk (MOUNT!) [Trading Post?]
 				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!) [Trading Post?]
 				i(226042),	-- Plunderlord's Midnight Crocolisk (MOUNT!) [Trading Post?]
 				i(226044),	-- Plunderlord's Weathered Crocolisk (MOUNT!) [Trading Post?]
-				i(223279),	-- Royal Court Undercrawler (MOUNT!)
 				i(223572),	-- Slatestone Ramolith (MOUNT!)
-				i(223276),	-- Widow's Undercrawler (MOUNT!)
 				---
 				i(220786),	-- Delver's Dirigible (MOUNT!) (Double Up!?)
 				i(207104),	-- Morsel Sniffer Reins (MOUNT!) (couldnt find)

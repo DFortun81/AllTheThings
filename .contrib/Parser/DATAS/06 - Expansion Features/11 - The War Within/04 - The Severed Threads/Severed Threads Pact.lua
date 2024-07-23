@@ -12,20 +12,47 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 	n(THE_SEVERED_THREADS, {
 		n(SEVERED_THREADS_PACT, {
 			n(ACHIEVEMENTS, {
-				ach(40876, {	-- Vox Arachnid
-					title(574),	-- <Name>, Hand of the Vizier
-				}),
-				ach(40874, {	-- The Grand Tapestry
+				ach(40874, sharedDataSelf({	-- The Grand Tapestry
+					["minReputation"] = { FACTION_THE_WEAVER, 9 },
+				}, {
 					title(572),	-- Silksinger <Name>
-				}),
-				ach(40875, {	-- True Strength
+				})),
+				ach(40875, sharedDataSelf({	-- True Strength
+					["minReputation"] = { FACTION_THE_GENERAL, 9 },
+				}, {
 					title(573),	-- Anub'<Name>
-				}),
+				})),
+				ach(40876, sharedDataSelf({	-- Vox Arachnid
+					["minReputation"] = { FACTION_THE_VIZIER, 9 },
+				}, {
+					title(574),	-- <Name>, Hand of the Vizier
+				})),
+			}),
+			n(FACTIONS, {
+				faction(FACTION_THE_GENERAL),
+				faction(FACTION_THE_VIZIER),
+				faction(FACTION_THE_WEAVER),
 			}),
 			n(REWARDS, {
 				i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 				i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 				i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
+			}),
+			n(VENDORS, {
+				n(223750, {	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 57.3, 42.5, AZJ_KAHET },
+					["g"] = {
+						i(223278, {	-- Heritage Undercrawler (MOUNT!)
+							["minReputation"] = { FACTION_THE_GENERAL, 8 },
+						}),
+						i(223279, {	-- Royal Court Undercrawler (MOUNT!)
+							["minReputation"] = { FACTION_THE_VIZIER, 8 },
+						}),
+						i(223276, {	-- Widow's Undercrawler (MOUNT!)
+							["minReputation"] = { FACTION_THE_WEAVER, 8 },
+						}),
+					}
+				}),
 			}),
 		}),
 	}),

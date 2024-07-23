@@ -3,9 +3,9 @@
 -------------------------------------------------------------------
 WORLDSOUL_MEMORY = createHeader({
 	readable = "Worldsoul Memory",
-	--icon = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",
+	icon = "Interface\\Icons\\spell_azerite_essence08",
 	text = {
-		en = "Worldsoul Memory",
+		en = WOWAPI_GetSpellName(445256),
 	},
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {

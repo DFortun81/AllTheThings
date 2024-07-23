@@ -1,8 +1,8 @@
 BOUNTIFUL = createHeader({
 	readable = "Bountiful",
-	--icon = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",
+	icon = "Interface\\Icons\\inv_10_blacksmithing_consumable_key_color2",
 	text = {
-		en = "Bountiful",
+		en = WOWAPI_GetSpellName(430253),
 	},
 });
 local UNDERCOIN = 2803;

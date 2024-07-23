@@ -1,13 +1,6 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-THE_THEATER_TROUPE = createHeader({
-	readable = "The Theater Troupe",
-	--icon = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",
-	text = {
-		en = "The Theater Troupe",
-	},
-});
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(COUNCIL_OF_DORNOGAL, {
 		header(HEADERS.Quest, 83240, bubbleDownSelf({ ["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 3 } }, {	-- The Theater Troupe

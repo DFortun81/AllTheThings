@@ -4124,6 +4124,7 @@ i(223623, 4576);	-- Guacamole
 i(220771, 4467);	-- Hallowed Glowfly
 i(222968, 4476);	-- Itchbite
 i(222972, 4491);	-- Jump Jump
+i(225934, 4500);	-- Lil' Bonechewer
 i(224450, 4527);	-- Lil' Moss Rosy
 i(222965, 4530);	-- Loamy
 i(225544, 4599);	-- Mind Slurp
@@ -4212,7 +4213,6 @@ i(222979, 4545);	-- Clay Stonecharger
 i(221762, 4484);	-- Frenzied Bloodtick
 i(222970, 4490);	-- Fuzzy
 i(221195, 4458);	-- Illskitter
-i(225934, 4500);	-- Lil' Bonechewer
 i(221492, 4459);	-- Moss Skipper
 i(225935, 4582);	-- Rak-Ush Battleshell
 i(221759, 4512);	-- Sceaduthax
