@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 local RESIDUAL_MEMORIES = 3089;
-root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_PH_PREPATCH, REMOVED_11_PH_LAUNCH } }, {
+root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "added 11.0.0.99999", REMOVED_11_PH_LAUNCH } }, {	-- This hasn't been added yet
 	expansion(EXPANSION.TWW, {
 		n(ACHIEVEMENTS, {
 			ach(40796),	-- This Takes Me Back

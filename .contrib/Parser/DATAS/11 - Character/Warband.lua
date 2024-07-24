@@ -8,8 +8,8 @@ WARBAND = createHeader({
 		en = "Warband",
 	},
 });
-root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {
-	n(ACHIEVEMENTS, {
+root(ROOTS.Character, n(WARBAND, {
+	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 		ach(19470),	-- One Warband Mentor: The War Within
 		ach(19460),	-- Two Warband Mentors: The War Within
 		ach(19475),	-- Three Warband Mentors: The War Within
@@ -36,8 +36,8 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_P
 			crit(67109),	-- First Trinket
 			crit(67103),	-- Legs
 		})),
-	}),
-	n(QUESTS, {
+	})),
+	n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {
 		q(83492, {	-- Warbanding Together
 			-- Auto granted upon login
 		}),
@@ -67,8 +67,9 @@ root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_P
 			["provider"] = { "n", 226658 },	-- Blue
 			["coord"] = { 48.5, 31.6, TANARIS },
 			["g"] = {
-				i(216665),	-- Warband Bank Distance Inhibitor (TOY!)
+				--  TODO: Now a spell? not an item
+				-- i(216665),	-- Warband Bank Distance Inhibitor (TOY!)
 			},
 		}),
-	}),
-})));
+	})),
+}));

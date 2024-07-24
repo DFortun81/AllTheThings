@@ -496,22 +496,22 @@ REMOVED_SEASON_MYTHIC = "removed 11.0.2";	-- Placeholder
 -- THE WAR WITHIN --
 --------------------
 -- These are just here so we have some ground............... Blizzard..
-CREATED_11_0_0 = "created 11.0.0";						-- The War Within 11.0.0
-ADDED_11_0_0 = "added 11.0.0";							-- The War Within 11.0.0
-REMOVED_11_0_0 = "removed 11.0.0";						-- The War Within 11.0.0
-CREATED_11_0_1 = "created 11.0.0";						-- The War Within 11.0.1
-ADDED_11_0_1 = "added 11.0.0";							-- The War Within 11.0.1
-REMOVED_11_0_1 = "removed 11.0.0";						-- The War Within 11.0.1
+CREATED_11_0_0 = "created 11.0.0.55818";						-- The War Within 11.0.0.55818
+ADDED_11_0_0 = "added 11.0.0.55818";							-- The War Within 11.0.0.55818
+REMOVED_11_0_0 = "removed 11.0.0.55818";						-- The War Within 11.0.0.55818
+CREATED_11_0_1 = "created 11.0.1";						-- The War Within 11.0.1
+ADDED_11_0_1 = "added 11.0.1";							-- The War Within 11.0.1
+REMOVED_11_0_1 = "removed 11.0.1";						-- The War Within 11.0.1
 CREATED_11_0_2 = "created 11.0.2";						-- The War Within 11.0.2 Launch on
 ADDED_11_0_2 = "added 11.0.2";							-- The War Within 11.0.2 Launch on
 REMOVED_11_0_2 = "removed 11.0.2";						-- The War Within 11.0.2 Launch on
 --- So Prepatch 11.0.0 or 11.0.1? Launch is 11.0.2?
-CREATED_11_PH_PREPATCH = "created 11.0.0";				-- The War Within 11.PH/Pre-Patch Launch on July 23rd, 2024
-ADDED_11_PH_PREPATCH = "added 11.0.0";					-- The War Within 11.PH/Pre-Patch Launch on July 23rd, 2024
-REMOVED_11_PH_PREPATCH = "removed 11.0.0";				-- The War Within 11.PH/Pre-Patch Launch on July 23rd, 2024
-CREATED_11_PH_LAUNCH = "created 11.0.0";				-- The War Within Launch on August 22nd, 2024
-ADDED_11_PH_LAUNCH = "added 11.0.0";					-- The War Within Launch on August 22nd, 2024
-REMOVED_11_PH_LAUNCH = "removed 11.0.0";				-- The War Within Launch on August 22nd, 2024
+CREATED_11_PH_PREPATCH = "created 11.0.0.55818";				-- The War Within 11.PH/Pre-Patch Launch on July 23rd, 2024
+ADDED_11_PH_PREPATCH = "added 11.0.0.55818";					-- The War Within 11.PH/Pre-Patch Launch on July 23rd, 2024
+REMOVED_11_PH_PREPATCH = "removed 11.0.0.55818";				-- The War Within 11.PH/Pre-Patch Launch on July 23rd, 2024
+CREATED_11_PH_LAUNCH = "created 11.0.0.99999";				-- The War Within Launch on August 22nd, 2024
+ADDED_11_PH_LAUNCH = "added 11.0.0.99999";					-- The War Within Launch on August 22nd, 2024
+REMOVED_11_PH_LAUNCH = "removed 11.0.0.99999";				-- The War Within Launch on August 22nd, 2024
 
 CREATED_11_0_5 = "created 11.0.5";						-- The War Within 11.0.5 Launch on
 ADDED_11_0_5 = "added 11.0.5";							-- The War Within 11.0.5 Launch on
