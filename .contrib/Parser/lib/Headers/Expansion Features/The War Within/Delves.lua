@@ -8,7 +8,4 @@ DELVES = createHeader({
 	text = {
 		en = "Delves",
 	},
-	description = {
-		en = "This is a test description!!!",
-	},
 });
