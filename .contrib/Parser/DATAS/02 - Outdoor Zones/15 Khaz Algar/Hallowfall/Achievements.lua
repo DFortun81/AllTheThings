@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			ach(40622),		-- Biblo Archivist (automated)
 			ach(40150),		-- Children's Entertainer
 			ach(40826, {	-- Explore Hallowfall
-				["sym"] = {{ "achievement_criteria" }},
+				--["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(20594),		-- Flamegard's Hope
 			ach(20598),		-- Hallowfall (automated)
