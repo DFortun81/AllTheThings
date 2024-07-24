@@ -391,7 +391,10 @@ local function CheckIsUpgrade(t)
 	-- queue this group up to try again since we are only running this logic on groups which we *know*
 	-- have upgrades
 	if IsRetrieving(t.link) then
-		-- app.PrintDebug("re-try upgrade",t.link)
+		-- app.PrintDebug("re-try upgrade",t.hash,t.link)
+		t.retries = (t.retries or 0) + 1
+		-- in situations where the upgrade item cannot be loaded/found quickly, we unfortunately will just give up
+		if (t.retries > 10) then return end
 		Runner.Run(UpdateUpgradeGroup, t)
 	end
 end
