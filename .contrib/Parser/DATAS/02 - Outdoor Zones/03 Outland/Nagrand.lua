@@ -391,6 +391,14 @@ root(ROOTS.Zones, {
 							9870,	-- The Throne of the Elements (H)
 						},
 						["coord"] = { 60.8, 22.4, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/8 Digested Caracoli
+								["providers"] = {
+									{ "i", 24419 },	-- Digested Caracoli
+									{ "o", 182128 },	-- Dung
+								},
+							}),
+						},
 					}),
 					q(10102, {	-- A Secret Revealed
 						["qg"] = 17545,	-- K'ure
@@ -427,6 +435,11 @@ root(ROOTS.Zones, {
 							10689,	-- Altruis (Scryer)
 						},
 						["coord"] = { 27.3, 43.0, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/1 Xeleth slain
+								["provider"] = { "n", 21894 },	-- Xeleth
+							}),
+						},
 					}),
 					q(10668, {	-- Against the Illidari
 						["qg"] = 18417,	-- Altruis the Sufferer
@@ -435,6 +448,11 @@ root(ROOTS.Zones, {
 							10689,	-- Altruis (Scryer)
 						},
 						["coord"] = { 27.3, 43.0, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/1 Lothros slain
+								["provider"] = { "n", 21928 },	-- Lothros
+							}),
+						},
 					}),
 					q(10641, {	-- Against the Legion
 						["qg"] = 18417,	-- Altruis the Sufferer
@@ -443,11 +461,21 @@ root(ROOTS.Zones, {
 							10689,	-- Altruis (Scryer)
 						},
 						["coord"] = { 27.3, 43.0, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/1 Avatar of Sathal slain
+								["provider"] = { "n", 21925 },	-- Avatar of Sathal
+							}),
+						},
 					}),
 					q(9804, {	-- Agitated Spirits of Skysong
 						["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 						["sourceQuest"] = 9800,	-- A Rare Bean
 						["coord"] = { 60.8, 22.4, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/8 Lake Spirit slain
+								["provider"] = { "n", 17153 },	-- Lake Spirit
+							}),
+						},
 					}),
 					q(9907, {	-- An Audacious Advance
 						["qg"] = 18106,	-- Jorin Deadeye
@@ -455,6 +483,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/10 Boulderfist Warrior slain
+								["provider"] = { "n", 17136 },	-- Boulderfist Warrior
+							}),
+							objective(2, {	-- 0/10 Boulderfist Mage slain
+								["provider"] = { "n", 17137 },	-- Boulderfist Mage
+							}),
 							i(25623),	-- Bracers of the Battle Cleric
 							i(25624),	-- King's Bulwark
 							i(25622),	-- Staff of the Four Golden Coins
@@ -464,6 +498,14 @@ root(ROOTS.Zones, {
 						["qg"] = 18261,	-- Lantresor of the Blade
 						["sourceQuest"] = 10107,	-- Diplomatic Measures (Horde Version)
 						["coord"] = { 73.8, 62.6, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/10 Kil'sorrow Armaments
+								["providers"] = {
+									{ "i", 25554 },	-- Kil'sorrow Armaments
+									{ "o", 182355 },	-- Kil'sorrow Armaments
+								},
+							}),
+						},
 					}),
 					q(9891, {	-- Because Kilrath is a Coward
 						["qg"] = 18273,	-- Kilrath
@@ -477,6 +519,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/10 Bleeding Hollow Supply Crate
+								["providers"] = {
+									{ "i", 25460 },	-- Bleeding Hollow Supply Crate
+									{ "o", 182265 },	-- Bleeding Hollow Supply Crate
+								},
+							}),
 							i(25630),	-- Ogre Basher's Slippers
 							i(25629),	-- Ogre Handler's Shooter
 							i(25628),	-- Ogre Mauler's Badge
@@ -516,6 +564,17 @@ root(ROOTS.Zones, {
 						["qg"] = 18417,	-- Altruis the Sufferer
 						["sourceQuest"] = 9991,	-- Survey the Land
 						["coord"] = { 27.4, 42.0, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/2 Felguard Legionnaire slain
+								["provider"] = { "n", 17152 },	-- Felguard Legionnaire
+							}),
+							objective(2, {	-- 0/3 Mo'arg Engineer slain
+								["provider"] = { "n", 16945 },	-- Mo'arg Engineer
+							}),
+							objective(3, {	-- 0/8 Gan'arg Tinkerer slain
+								["provider"] = { "n", 17151 },	-- Gan'arg Tinkerer
+							}),
+						},
 					}),
 					q(9955, {	-- Cho'war the Pillager (A)
 						["qg"] = 18445,	-- Corki
@@ -523,6 +582,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.4, 44.0, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Corki Freed
+								["providers"] = {
+									{ "i", 25648 },	-- Cho'war's Key
+									{ "o", 182349 },	-- Corki's Prison
+								},
+								["cr"] = 18423,	-- Cho'war the Pillager
+							}),
 							i(25775),	-- Ogre Slayer's Band
 							i(25776),	-- Ogre Slayer's Pendant
 							i(25777),	-- Ogre Slayer's Cover
@@ -534,6 +600,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.2, 36.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Head of Cho'war
+								["provider"] = { "i", 25590 },	-- Head of Cho'war
+								["cr"] = 18423,	-- Cho'war the Pillager
+							}),
 							i(25775),	-- Ogre Slayer's Band
 							i(25776),	-- Ogre Slayer's Pendant
 							i(25777),	-- Ogre Slayer's Cover
@@ -542,17 +612,31 @@ root(ROOTS.Zones, {
 					q(9789, {	-- Clefthoof Mastery
 						["qg"] = 18180,	-- Hemet Nesingwary
 						["coord"] = { 71.5, 40.8, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/12 Clefthoof slain
+								["provider"] = { "n", 18205 },	-- Clefthoof
+							}),
+						},
 					}),
 					q(9850, {	-- Clefthoof Mastery
 						["qg"] = 18180,	-- Hemet Nesingwary
 						["sourceQuest"] = 9789,	-- Clefthoof Mastery
 						["coord"] = { 71.5, 40.8, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/12 Clefthoof Bull slain
+								["provider"] = { "n", 17132 },	-- Clefthoof Bull
+							}),
+						},
 					}),
 					q(9851, {	-- Clefthoof Mastery
 						["qg"] = 18180,	-- Hemet Nesingwary
 						["sourceQuest"] = 9850,	-- Clefthoof Mastery
 						["coord"] = { 71.5, 40.8, NAGRAND },
 						["groups"] = {
+							objective(1, {	-- 0/1 Horn of Banthar
+								["provider"] = { "i", 24496 },	-- Horn of Banthar
+								["cr"] = 18259,	-- Banthar
+							}),
 							i(25591),	-- Clefthoof Gloves
 							i(25589),	-- Clefthoof Helm
 							i(25592),	-- Clefthoof Wristguards
@@ -564,6 +648,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.4, 68.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Corki Freed Again
+								["providers"] = {
+									{ "i", 25509 },	-- Northwind Cleft Key
+									{ "o", 182350 },	-- Corki's Prison
+								},
+								["crs"] = {
+									17136,	-- Boulderfist Warrior
+									17137,	-- Boulderfist Mage
+								},
+							}),
 							i(25631),	-- Boots of the Specialist
 							i(25633),	-- Uniting Charm
 							i(25632),	-- Wand of Happiness
@@ -579,6 +673,20 @@ root(ROOTS.Zones, {
 						["qg"] = 18584,	-- Sal'salabim
 						["sourceQuest"] = 10004,	-- Patience and Understanding
 						["coord"] = { 77.2, 34.8, SHATTRATH_CITY },
+						["groups"] = {
+							objective(1, {	-- 0/1 Raliq's Debt
+								["provider"] = { "i", 25767 },	-- Raliq's Debt
+								["cr"] = 18585,	-- Raliq the Drunk
+							}),
+							objective(2, {	-- 0/1 Coosh'coosh's Debt
+								["provider"] = { "i", 25768 },	-- Coosh'coosh's Debt
+								["cr"] = 18586,	-- Coosh'coosh
+							}),
+							objective(3, {	-- 0/1 Floon's Debt
+								["provider"] = { "i", 25769 },	-- Floon's Debt
+								["cr"] = 18588,	-- Floon
+							}),
+						},
 					}),
 					q(10108, {	-- Diplomatic Measures (A)
 						["qg"] = 18223,	-- Mo'mor the Breaker
@@ -596,29 +704,81 @@ root(ROOTS.Zones, {
 						["qg"] = 18353,	-- Huntress Bintook
 						["coord"] = { 55.0, 70.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Boulderfist Plans
+								["provider"] = { "i", 25468 },	-- Boulderfist Plans
+								["cr"] = 18352,	-- Boulderfist Hunter
+							}),
+						},
 					}),
 					q(9889, {	-- Don't Kill the Fat One
 						["qg"] = 18273,	-- Kilrath
 						["sourceQuest"] = 9888,	-- The Impotent Leader
 						["coord"] = { 19.6, 60.8, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/10 Boulderfist Invader slain
+								["provider"] = { "n", 18260 },	-- Boulderfist Invader
+							}),
+						},
 					}),
 					q(9821, {	-- Eating Damnation
 						["qg"] = 18099,	-- Gordawg <Fury of Earth>
 						["sourceQuest"] = 9819,	-- The Tortured Earth
 						["coord"] = { 60.0, 22.0, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/10 Enraged Crusher Core
+								["provider"] = { "i", 24473 },	-- Enraged Crusher Core
+								["cr"] = 18062,	-- Enraged Crusher
+							}),
+						},
 					}),
 					q(11503, {	-- Enemies, Old and New
 						["qg"] = 24881,	-- Karrtog
 						["coord"] = { 52.8, 36.0, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/10 Halaa Enemy Combatant slain
+								["provider"] = { "n", 24867 },	-- Halaa Enemy Combatant
+							}),
+						},
 					}),
 					q(9948, {	-- Finding the Survivors
 						["qg"] = 18415,	-- Elder Ungriz
 						["coord"] = { 32.2, 36.2, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/5 Mag'har Prisoner Freed
+								["providers"] = {
+									{ "i", 25604 },	-- Warmaul Prison Key
+									{ "o", 182484 },	-- Warmaul Prison
+									{ "o", 182486 },	-- Warmaul Prison
+									{ "o", 182487 },	-- Warmaul Prison
+									{ "o", 182488 },	-- Warmaul Prison
+									{ "o", 182489 },	-- Warmaul Prison
+									{ "o", 182490 },	-- Warmaul Prison
+									{ "o", 182491 },	-- Warmaul Prison
+									{ "o", 182492 },	-- Warmaul Prison
+									{ "o", 182493 },	-- Warmaul Prison
+									{ "o", 182494 },	-- Warmaul Prison
+									{ "o", 182495 },	-- Warmaul Prison
+									{ "o", 182496 },	-- Warmaul Prison
+									{ "o", 182497 },	-- Warmaul Prison
+									{ "o", 182498 },	-- Warmaul Prison
+									{ "o", 182499 },	-- Warmaul Prison
+									{ "o", 182500 },	-- Warmaul Prison
+									{ "o", 182501 },	-- Warmaul Prison
+									{ "o", 182502 },	-- Warmaul Prison
+									{ "o", 182503 },	-- Warmaul Prison
+									{ "o", 182504 },	-- Warmaul Prison	
+								},
+								["crs"] = {
+									18037,	-- Warmaul Warlock
+									18065,	-- Warmaul Brute
+									18423,	-- Cho'war the Pillager
+								},
+							}),
 							i(25778),	-- Manacles of Remembrance
 							i(25780),	-- Warmaul Defender's Cloak
 							i(25779),	-- Warmaul Slayer's Band
@@ -640,6 +800,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9913,	-- The Consortium Needs You!
 						["coord"] = { 30.8, 58.1, NAGRAND },
 						["groups"] = {
+							objective(1, {	-- 0/1 Gava'xi slain
+								["provider"] = { "n", 18298 },	-- Gava'xi
+							}),
 							i(25637),	-- Ethereal Sash
 							i(25634),	-- Oshu'gun Relic
 							i(25544),	-- Zerid's Vintage Musket
@@ -650,6 +813,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9849,	-- Shattering the Veil
 						["coord"] = { 60.0, 22.0, NAGRAND },
 						["groups"] =	{
+							objective(1, {	-- 0/1 Gurok's Earthen Head
+								["provider"] = { "i", 24503 },	-- Gurok's Earthen Head
+								["cr"] = 18182,	-- Gurok the Usurper
+							}),
 							i(25564),	-- Earthen Mark of Health
 							i(25563),	-- Earthen Mark of Power
 							i(25562),	-- Earthen Mark of Razing
@@ -682,6 +849,18 @@ root(ROOTS.Zones, {
 						["qg"] = 18369,	-- Corki
 						["coord"] = { 72.6,70.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Corki Freed
+								["providers"] = {
+									{ "i", 25490 },	-- Boulderfist Key
+									{ "o", 182521 },	-- Corki's Prison
+								},
+								["crs"] = {
+									17134,	-- Boulderfist Crusher
+									17135,	-- Boulderfist Mystic
+								},
+							}),
+						},
 					}),
 					q(10212, {	-- Hero of the Mag'har
 						["qg"] = 4949,	-- Thrall
@@ -703,6 +882,16 @@ root(ROOTS.Zones, {
 					q(10109, {	-- I Must Have Them!
 						["qg"] = 19035,	-- Wazat
 						["coord"] = { 61.6, 67.0, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/3 Air Elemental Gas
+								["provider"] = { "i", 27807 },	-- Air Elemental Gas
+								["crs"] = {
+									17158,	-- Dust Howler
+									17159,	-- Storm Rager
+									17160,	-- Living Cyclone
+								},
+							}),
+						},
 					}),
 					q(9897, {	-- I'm Saved!
 						["qg"] = 18294,	-- Kristen Dipswitch
@@ -723,6 +912,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.8, 73.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/10 Halaa Enemy Combatant slain
+								["provider"] = { "n", 24867 },	-- Halaa Enemy Combatant
+							}),
+						},
 					}),
 					q(10010, {	-- It's Just That Easy?
 						["qg"] = 18584,	-- Sal'salabim
@@ -735,6 +929,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 51.8, 56.8, NAGRAND },
 						["maps"] = { TEROKKAR_FOREST },
 						["groups"] = {
+							objective(1, {	-- 0/1 The Book of the Dead
+								["provider"] = { "i", 28677 },	-- The Book of the Dead
+								["cr"] = 19847,	-- Levixus
+							}),
 							i(29312),	-- Cover of Righteous Fury
 							i(29313),	-- Earthbreaker's Greaves
 							i(29315),	-- Gloves of Penitence
@@ -746,10 +944,41 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10044,	-- A Visit With the Greatmother
 						["coord"] = { 56.6, 34.2, NAGRAND },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Olemba Root
+								["providers"] = {
+									{ "i", 25863 },	-- Olemba Root
+									{ "o", 182601 },	-- Olemba Root
+								},
+							}),
+							objective(2, {	-- 0/1 Marshberry
+								["providers"] = {
+									{ "i", 25862 },	-- Marshberry
+									{ "o", 182600 },	-- Marshberry
+								},
+							}),
+							objective(3, {	-- 0/1 Telaari Frond
+								["providers"] = {
+									{ "i", 25864 },	-- Telaari Frond
+									{ "o", 182599 },	-- Telaari Frond
+								},
+							}),
+							objective(4, {	-- 0/1 Dragonspine
+								["providers"] = {
+									{ "i", 25865 },	-- Dragonspine
+									{ "o", 182606 },	-- Dragonspine
+								},
+							}),
+						},
 					}),
 					q(9925, {	-- Matters of Security
 						["qg"] = 18276,	-- Zerid
 						["coord"] = { 30.8, 58.1, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/8 Voidspawn slain
+								["provider"] = { "n", 17981 },	-- Voidspawn
+							}),
+						},
 					}),
 					q(9914, {	-- A Head Full of Ivory
 						["qg"] = 18333,	-- Shadrek
@@ -908,6 +1137,14 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9891,	-- Because Kilrath is a Coward
 						["coord"] = { 55.6, 37.6, NAGRAND },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/8 Boulderfist Mystic slain
+								["provider"] = { "n", 17135 },	-- Boulderfist Mystic
+							}),
+							objective(2, {	-- 0/8 Boulderfist Crusher slain
+								["provider"] = { "n", 17134 },	-- Boulderfist Crusher
+							}),
+						},
 					}),
 					q(9934, {	-- Message to Garadar
 						["qg"] = 18261,	-- Lantresor of the Blade
@@ -957,6 +1194,10 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 60.8, 22.4, NAGRAND },
 						["groups"] = {
+							objective(1, {	-- 0/5 Muck-Ridden Core
+								["provider"] = { "i", 24469 },	-- Muck-Ridden Core
+								["cr"] = 17154,	-- Muck Spawn
+							}),
 							i(25560),	-- Lo'ap's Muck Diving Pads
 							i(25559),	-- Lo'ap's Tunic of Muck Diving
 							i(25561),	-- Muck-Ridden Galoshes
@@ -967,6 +1208,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9861,	-- The Howling Wind
 						["coord"] = { 60.6, 22.4, NAGRAND },
 						["groups"] = {
+							objective(1, {	-- 0/5 Murkblood Putrifier slain
+								["provider"] = { "n", 18202 },	-- Murkblood Putrifier
+							}),
 							i(25567),	-- Cord of the Ring
 							i(25566),	-- Judicator's Gauntlets
 							i(25565),	-- Spaulders of the Ring
@@ -997,6 +1241,10 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 941, NEUTRAL },	-- The Mag'har, Neutral
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Head of Ortor of Murkblood
+								["provider"] = { "i", 24543 },	-- Head of Ortor of Murkblood
+								["cr"] = 18204,	-- Ortor of Murkblood
+							}),
 							i(25583),	-- Eighty Silver Links
 							i(25585),	-- Murkblood Avenger's Legplates
 							i(25584),	-- Murkblood Oven Mitts
@@ -1013,6 +1261,14 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9864,	-- The Missing War Party
 						["coord"] = { 32.2, 36.2, NAGRAND },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/20 Murkblood Scavenger slain
+								["provider"] = { "n", 18207 },	-- Murkblood Scavenger
+							}),
+							objective(2, {	-- 0/10 Murkblood Raider slain
+								["provider"] = { "n", 18203 },	-- Murkblood Raider
+							}),
+						},
 					}),
 					q(9873, {	-- Ortor My Old Friend...
 						["qg"] = 18183,	-- Arechron
@@ -1020,6 +1276,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.4, 68.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Ortor of Murkblood slain
+								["provider"] = { "n", 18204 },	-- Ortor of Murkblood
+							}),
 							i(25583),	-- Eighty Silver Links
 							i(25585),	-- Murkblood Avenger's Legplates
 							i(25584),	-- Murkblood Oven Mitts
@@ -1142,6 +1401,11 @@ root(ROOTS.Zones, {
 						["qg"] = 18099,	-- Gordawg <Fury of Earth>
 						["sourceQuest"] = 9821,	-- Eating Damnation
 						["coord"] = { 60.0, 22.0, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/30 Minion of Gurok slain
+								["provider"] = { "n", 18181 },	-- Minion of Gurok
+							}),
+						},
 					}),
 					q(9878, {	-- Solving the Problem
 						["qg"] = 18224,	-- Poli'lukluk the Wiser
@@ -1149,6 +1413,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.4, 72.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/10 Murkblood Scavenger slain
+								["provider"] = { "n", 18207 },	-- Murkblood Scavenger
+							}),
+							objective(2, {	-- 0/5 Murkblood Raider slain
+								["provider"] = { "n", 18203 },	-- Murkblood Raider
+							}),
 							i(25578),	-- Caustic Feeler
 							i(25579),	-- Dark Shaman's Cover
 							i(25577),	-- Greenblood Pantaloons
@@ -1165,6 +1435,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.4, 72.0, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/10 Sunspring Villager Corpse Burned
+								["provider"] = { "i", 24560 },	-- Torch of Liquid Fire
+								["cr"] = 18240,	-- Sunspring Villager
+							}),
 							i(25570),	-- Melia's Lustrous Crown
 							i(25569),	-- Murkblood Avenger's Chestplate
 							i(25568),	-- Warcaster's Scaled Leggings
@@ -1187,17 +1461,31 @@ root(ROOTS.Zones, {
 					q(9857, {	-- Talbuk Mastery
 						["qg"] = 18218,	-- Harold Lane
 						["coord"] = { 71.4, 40.6, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/12 Talbuk Stag slain
+								["provider"] = { "n", 17130 },	-- Talbuk Stag
+							}),
+						},
 					}),
 					q(9858, {	-- Talbuk Mastery
 						["qg"] = 18218,	-- Harold Lane
 						["sourceQuest"] = 9857,	-- Talbuk Mastery
 						["coord"] = { 71.4, 40.6, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/12 Talbuk Thorngrazer slain
+								["provider"] = { "n", 17131 },	-- Talbuk Thorngrazer
+							}),
+						},
 					}),
 					q(9859, {	-- Talbuk Mastery
 						["qg"] = 18218,	-- Harold Lane
 						["sourceQuest"] = 9858,	-- Talbuk Mastery
 						["coord"] = { 71.4, 40.6, NAGRAND },
 						["groups"] = {
+							objective(1, {	-- 0/1 Hoof of Bach'lor
+								["provider"] = { "i", 24523 },	-- Hoof of Bach'lor
+								["cr"] = 18258,	-- Bach'lor
+							}),
 							i(25636),	-- Talbuk Cape
 							i(25545),	-- Talbuk Dirk
 							i(25543),	-- Talbuk Sticker
@@ -1208,6 +1496,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10081,	-- To Meet Mother Kashur
 						["coord"] = { 26.0, 60.6, NAGRAND },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/8 Agitated Orc Spirit slain
+								["provider"] = { "n", 18043 },	-- Agitated Orc Spirit
+							}),
+						},
 					}),
 					q(9913, {	-- The Consortium Needs You!
 						["qg"] = 18335,	-- Consortium Recruiter <The Consortium>
@@ -1259,6 +1552,12 @@ root(ROOTS.Zones, {
 						["qg"] = 18417,	-- Altruis the Sufferer
 						["sourceQuest"] = 9999,	-- Buying Time
 						["coord"] = { 27.4, 42.0, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/1 The Master Planner's Blueprints
+								["provider"] = { "i", 25751 },	-- The Master Planner's Blueprints
+								["cr"] = 18567,	-- Mo'arg Master Planner
+							}),
+						},
 					}),
 					q(9864, {	-- The Missing War Party
 						["qg"] = 18067,	-- Farseer Corhuk <The Lightning Sons>
@@ -1284,6 +1583,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.8, 70.6, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/10 Telaar Supply Crate
+								["providers"] = {
+									{ "i", 25647 },	-- Telaar Supply Crate
+									{ "o", 182520 },	-- Telaar Supply Crate
+								},
+							}),
 							i(25778),	-- Manacles of Remembrance
 							i(25780),	-- Warmaul Defender's Cloak
 							i(25779),	-- Warmaul Slayer's Band
@@ -1344,12 +1649,26 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9920,	-- Mo'mor the Breaker
 						["coord"] = { 54.6, 72.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/8 Boulderfist Crusher slain
+								["provider"] = { "n", 17134 },	-- Boulderfist Crusher
+							}),
+							objective(2, {	-- 0/8 Boulderfist Mystic slain
+								["provider"] = { "n", 17135 },	-- Boulderfist Mystic
+							}),
+						},
 					}),
 					q(9810, {	-- The Spirit Polluted
 						["qg"] = 18073,	-- Elementalist Lo'ap <The Earthen Ring>
 						["sourceQuest"] = 9805,	-- Blessing of Incineratus
 						["coord"] = { 60.8, 22.4, NAGRAND },
 						["groups"] = {
+							objective(1, {	-- 0/1 Watoosun's Polluted Essence slain
+								["provider"] = { "n", 18145 },	-- Watoosun's Polluted Essence
+							}),
+							objective(2, {	-- 0/8 Lake Surger slain
+								["provider"] = { "n", 17155 },	-- Lake Surger
+							}),
 							i(25558),	-- Ango'rosh Souleater's Cowl
 							i(25556),	-- Oversized Ogre Hauberk
 							i(25557),	-- Salvaged Ango'rosh Pauldrons
@@ -1381,6 +1700,11 @@ root(ROOTS.Zones, {
 						["qg"] = 18099,	-- Gordawg <Fury of Earth>
 						["sourceQuest"] = 9818,	-- The Underneath
 						["coord"] = { 60.0, 22.0, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/10 Tortured Earth Spirit slain
+								["provider"] = { "n", 17156 },	-- Tortured Earth Spirit
+							}),
+						},
 					}),
 					q(9922, {	-- The Twin Clefts of Nagrand
 						["qg"] = 18223,	-- Mo'mor the Breaker
@@ -1388,6 +1712,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.6, 72.2, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/10 Boulderfist Warrior slain
+								["provider"] = { "n", 17136 },	-- Boulderfist Warrior
+							}),
+							objective(2, {	-- 0/10 Boulderfist Mage slain
+								["provider"] = { "n", 17137 },	-- Boulderfist Mage
+							}),
 							i(25623),	-- Bracers of the Battle Cleric
 							i(25624),	-- King's Bulwark
 							i(25622),	-- Staff of the Four Golden Coins
@@ -1405,6 +1735,10 @@ root(ROOTS.Zones, {
 							{ "i", 24505, 1 },	-- Heart of Tusker
 						},
 						["groups"] = {
+							objective(1, {	-- 0/1 Heart of Tusker
+								["provider"] = { "i", 24505 },	-- Heart of Tusker
+								["cr"] = 18290,	-- Tusker
+							}),
 							i(24505, {	-- Heart of Tusker
 								["cr"] = 18290,	-- Tusker <Queen of the Elekk>
 								["coord"] = { 44.2, 65.2, NAGRAND },
@@ -1479,6 +1813,17 @@ root(ROOTS.Zones, {
 						["minReputation"] = { 941, NEUTRAL },	-- The Mag'har, Neutral
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/10 Murkblood Idol
+								["provider"] = { "i", 24542 },	-- Murkblood Idol
+								["crs"] = {
+									18202,	-- Murkblood Putrifier
+									18203,	-- Murkblood Raider
+									18204,	-- Ortor of Murkblood
+									18207,	-- Murkblood Scavenger
+									18211,	-- Murkblood Brute
+									18238,	-- Murkblood Invader
+								},
+							}),
 							i(25570),	-- Melia's Lustrous Crown
 							i(25569),	-- Murkblood Avenger's Chestplate
 							i(25568),	-- Warcaster's Scaled Leggings
@@ -1488,6 +1833,20 @@ root(ROOTS.Zones, {
 						["qg"] = 19844,	-- Nitrin the Learned
 						["sourceQuest"] = 10251,	-- The Master's Grand Design?
 						["coord"] = { 51.8, 56.8, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/1 Mountain Gronn Eyeball
+								["provider"] = { "i", 28665 },	-- Mountain Gronn Eyeball
+								["cr"] = 19201,	-- Mountain Gronn
+							}),
+							objective(2, {	-- 0/1 Flawless Greater Windroc Beak
+								["provider"] = { "i", 28667 },	-- Flawless Greater Windroc Beak
+								["cr"] = 17129,	-- Greater Windroc
+							}),
+							objective(3, {	-- 0/1 Aged Clefthoof Blubber
+								["provider"] = { "i", 28668 },	-- Aged Clefthoof Blubber
+								["cr"] = 17133,	-- Aged Clefthoof
+							}),
+						},
 					}),
 					q(9938, {	-- WANTED: Durn the Hungerer (A)
 						["qg"] = 18408,	-- Warden Moi'bff Jill
@@ -1498,6 +1857,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.8, 70.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Durn the Hungerer slain
+								["provider"] = { "n", 18411 },	-- Durn the Hungerer
+							}),
 							i(25774),	-- Azure Lightblade
 							i(25772),	-- Crystalline Kopesh
 							i(25773),	-- Hungering Bone Cudgel
@@ -1512,6 +1874,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.8, 37.8, NAGRAND },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Durn the Hungerer slain
+								["provider"] = { "n", 18411 },	-- Durn the Hungerer
+							}),
 							i(25774),	-- Azure Lightblade
 							i(25772),	-- Crystalline Kopesh
 							i(25773),	-- Hungering Bone Cudgel
@@ -1521,21 +1886,73 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 182393 },	--	Telaar Bulletin Board
 						["coord"] = { 54.7, 70.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Giselda the Crone slain
+								["provider"] = { "n", 18391 },	-- Giselda the Crone
+							}),
+							objective(2, {	-- 0/10 Kil'sorrow Agent slain
+								["providers"] = {
+									{ "n", 21276},	-- Kil'sorrow Agent
+									{ "n", 17146},	-- Kil'sorrow Spellbinder
+									{ "n", 17147},	-- Kil'sorrow Cultist
+									{ "n", 17148},	-- Kil'sorrow Deathsworn
+									{ "n", 18397},	-- Kil'sorrow Invader
+									{ "n", 18658},	-- Kil'sorrow Ritualist
+								},
+							}),
+						},
 					}),
 					q(9935, {	-- WANTED: Giselda the Crone (H)
 						["provider"] = { "o", 182392 },	--	Garadar Bulletin Board
 						["coord"] = { 55.7, 38.0, NAGRAND },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Giselda the Crone slain
+								["provider"] = { "n", 18391 },	-- Giselda the Crone
+							}),
+							objective(2, {	-- 0/10 Kil'sorrow Agent slain
+								["providers"] = {
+									{ "n", 21276},	-- Kil'sorrow Agent
+									{ "n", 17146},	-- Kil'sorrow Spellbinder
+									{ "n", 17147},	-- Kil'sorrow Cultist
+									{ "n", 17148},	-- Kil'sorrow Deathsworn
+									{ "n", 18397},	-- Kil'sorrow Invader
+									{ "n", 18658},	-- Kil'sorrow Ritualist
+								},
+							}),
+						},
 					}),
 					q(9940, {	-- WANTED: Zorbo the Advisor (A)
 						["provider"] = { "o", 182393 },	-- Telaar Bulletin Board
 						["coord"] = { 54.7, 70.8, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Zorbo the Advisor slain
+								["provider"] = { "n", 18413 },	-- Zorbo the Advisor
+							}),
+							objective(2, {	-- 0/5 Warmaul Shaman slain
+								["provider"] = { "n", 18064 },	-- Warmaul Shaman
+							}),
+							objective(3, {	-- 0/5 Warmaul Reaver slain
+								["provider"] = { "n", 17138 },	-- Warmaul Reaver
+							}),
+						},
 					}),
 					q(9939, {	-- WANTED: Zorbo the Advisor (H)
 						["provider"] = { "o", 182392 },	-- Garadar Bulletin Board
 						["coord"] = { 55.7, 38.0, NAGRAND },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Zorbo the Advisor slain
+								["provider"] = { "n", 18413 },	-- Zorbo the Advisor
+							}),
+							objective(2, {	-- 0/5 Warmaul Shaman slain
+								["provider"] = { "n", 18064 },	-- Warmaul Shaman
+							}),
+							objective(3, {	-- 0/5 Warmaul Reaver slain
+								["provider"] = { "n", 17138 },	-- Warmaul Reaver
+							}),
+						},
 					}),
 					q(9945, {	-- War on the Warmaul
 						["qg"] = 18414,	-- Elder Yorley
@@ -1547,6 +1964,14 @@ root(ROOTS.Zones, {
 						["timeline"] = { ADDED_6_2_0 },
 						["races"] = HORDE_ONLY,
 						["isBreadcrumb"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/8 Warmaul Brute slain
+								["provider"] = { "n", 18065 },	-- Warmaul Brute
+							}),
+							objective(2, {	-- 0/8 Warmaul Warlock slain
+								["provider"] = { "n", 18037 },	-- Warmaul Warlock
+							}),
+						},
 					})),
 					q(10101, {	-- When Spirits Speak
 						["qg"] = 18687,	-- Mother Kashur
@@ -1561,17 +1986,31 @@ root(ROOTS.Zones, {
 							10114,	-- The Nesingwary Safari (H)
 						},
 						["coord"] = { 71.6, 40.5, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/12 Windroc slain
+								["provider"] = { "n", 17128 },	-- Windroc
+							}),
+						},
 					}),
 					q(9855, {	-- Windroc Mastery
 						["qg"] = 18200,	-- Shado 'Fitz' Farstrider
 						["sourceQuest"] = 9854,	-- Windroc Mastery
 						["coord"] = { 71.6, 40.5, NAGRAND },
+						["groups"] = {
+							objective(1, {	-- 0/12 Ravenous Windroc slain
+								["provider"] = { "n", 18220 },	-- Ravenous Windroc
+							}),
+						},
 					}),
 					q(9856, {	-- Windroc Mastery
 						["qg"] = 18200,	-- Shado 'Fitz' Farstrider
 						["sourceQuest"] = 9855,	-- Windroc Mastery
 						["coord"] = { 71.6, 40.5, NAGRAND },
 						["groups"] = {
+							objective(1, {	-- 0/1 Eye of Gutripper
+								["provider"] = { "i", 24513 },	-- Eye of Gutripper
+								["cr"] = 18257,	-- Gutripper
+							}),
 							i(25594),	-- Windroc Boots
 							i(25593),	-- Windroc Greaves
 							i(25595),	-- Windroc Shroud
