@@ -14,6 +14,7 @@ local GetRealmName = GetRealmName
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemCount = app.WOWAPI.GetItemCount;
 local GetSpellName = app.WOWAPI.GetSpellName;
+local IsQuestFlaggedCompletedOnAccount = app.WOWAPI.IsQuestFlaggedCompletedOnAccount;
 
 -- Settings: Interface Page
 local child = settings:CreateOptionsPage("Information", L.INTERFACE_PAGE)
@@ -202,7 +203,9 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		if id then
 			-- Account-Wide Quests
 			if app.AccountWideQuestsDB[id] then
-				tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE});
+				if IsQuestFlaggedCompletedOnAccount(id) then
+					tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE});
+				end
 			else
 				for _,character in pairs(ATTCharacterData) do
 					if character.Quests and character.Quests[id] then

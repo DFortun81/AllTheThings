@@ -105,6 +105,15 @@ else
 	--lib.GetSpellLink = GetSpellLink;
 end
 
+-- Quest APIs
+if C_QuestLog and C_QuestLog.IsQuestFlaggedCompletedOnAccount then
+	lib.IsQuestFlaggedCompletedOnAccount = C_QuestLog.IsQuestFlaggedCompletedOnAccount
+else
+	lib.IsQuestFlaggedCompletedOnAccount = function(id)
+		return app.IsAccountCached("Quests",id)
+	end
+end
+
 if not GetSpellLink then
 	lib.GetSpellLink = C_Spell.GetSpellLink;
 else
