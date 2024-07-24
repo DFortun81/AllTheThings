@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 local RESIDUAL_MEMORIES = 3089;
-root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "added 11.0.0.99999", REMOVED_11_PH_LAUNCH } }, {	-- This hasn't been added yet
+root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_PH_PREPATCH, REMOVED_11_PH_LAUNCH } }, {	-- This hasn't been added yet
 	expansion(EXPANSION.TWW, {
 		n(ACHIEVEMENTS, {
 			ach(40796),	-- This Takes Me Back
@@ -21,7 +21,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { "ad
 		n(QUESTS, {
 			q(82539),	-- Radiant Echoes
 			q(82540, {	-- Memories of Adventures Past
-				["sourceQuests"] = { 80500 },	-- The Bronzebeard Family (TODO: could be some additional hqt in future or will be up due to warbound change?)
+				-- ["sourceQuests"] = { 80500 },	-- The Bronzebeard Family (TODO: could be some additional hqt in future or will be up due to warbound change?)
 				["provider"] = { "n", 213627 },	-- Archmage Khadgar
 				["coord"] = { 42.9, 59.7, 629 },	-- Legion Dalaran, Aegwynn's Gallery
 			}),
