@@ -1073,6 +1073,14 @@ root(ROOTS.Zones, {
 						["cost"] = { { "i", 31795, 1 } },	-- Draenei Prayer Beads
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
+						["groups"] = {
+							objective(1, {	-- 0/1 Draenei Prayer Beads
+								["providers"] = {
+									{ "i", 31795 },	-- Draenei Prayer Beads
+									{ "o", 185302 },	-- Fei Fei's Cache
+								},
+							}),
+						},
 					}),
 					q(10144, {	-- Disrupt Their Reinforcements [Alliance]
 						["qg"] = 19310,	-- Forward Commander Kingston
@@ -2437,6 +2445,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
 						["lvl"] = lvlsquish(58, 58, 10),
+						["groups"] = {
+							objective(1, {	-- 0/1 Unyielding Battle Horn
+								["provider"] = { "i", 28562 },	-- Unyielding Battle Horn
+								["cr"] = 16978,	-- Lieutenant Commander Thalvos
+							}),
+						},
 					}),
 					q(9370, {	-- The Cleansing Must Be Stopped
 						["qg"] = 16791,	-- Ryathen the Somber
