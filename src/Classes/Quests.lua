@@ -1342,7 +1342,7 @@ if IsQuestReplayable then
 	end);
 end
 
--- Quest Lib (From Classic)
+-- Quest Lib
 local createQuest = app.CreateClass("Quest", "questID", {
 	text = app.IsClassic and function(t)
 		if t.repeatable then return "|cff0070DD" .. t.name .. "|r"; end
