@@ -22,40 +22,34 @@ local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelative
 local GetDetailedItemLevelInfo, IsArtifactRelicItem = GetDetailedItemLevelInfo, IsArtifactRelicItem;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection and C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
 
-local ATTAccountWideData, ATTAccountWideDataArtifacts
-
 local function GetArtifactModItemID(itemID, artifactID, isOffHand)
 	return itemID + (isOffHand and 0.0001 or 0) + (artifactID / 1000)
 end
 app.GetArtifactModItemID = GetArtifactModItemID
 
+local KEY, CACHE, SETTING = "artifactID", "Artifacts", "Transmog"
 -- Artifact Class
-app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
-	["artifactinfo"] = function(t)
+app.CreateArtifact = app.CreateClass("Artifact", KEY, {
+	artifactinfo = function(t)
 		--[[
 		local setID, appearanceID, appearanceName, displayIndex, appearanceUnlocked, unlockConditionText,
 			uiCameraID, altHandUICameraID, swatchR, swatchG, swatchB,
-			modelAlpha, modelDesaturation, suppressGlobalAnim = C_ArtifactUI.GetAppearanceInfoByID(t.artifactID);
+			modelAlpha, modelDesaturation, suppressGlobalAnim = C_ArtifactUI.GetAppearanceInfoByID(t[KEY]);
 		]]--
-		local info = { C_ArtifactUI.GetAppearanceInfoByID(t.artifactID) };
+		local info = { C_ArtifactUI.GetAppearanceInfoByID(t[KEY]) };
 		t.artifactinfo = info;
 		return info;
 	end,
-	["f"] = function(t)
-		return 11;
+	f = function(t) return 11; end,
+	collectible = function(t) return app.Settings.Collectibles[SETTING]; end,
+	collected = function(t)
+		local id = t[KEY]
+		-- character collected
+		if app.IsCached(CACHE, id) then return 1 end
+		-- account-wide collected
+		if app.IsAccountTracked(CACHE, id, SETTING) then return 2; end
 	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.Transmog;
-	end,
-	["collected"] = function(t)
-		if ATTAccountWideDataArtifacts[t.artifactID] then return 1; end
-		-- This artifact is listed for the current class
-		if not GetRelativeField(t, "nmc", true) and t.artifactinfo[5] then
-			ATTAccountWideDataArtifacts[t.artifactID] = 1;
-			return 1;
-		end
-	end,
-	["name"] = function(t)
+	name = function(t)
 		local id = t.parent;
 		id = id and id.headerID;
 		-- Artifact listing in the Main item sets category just show 'Variant #' but elsewhere show the Item's name
@@ -65,26 +59,26 @@ app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
 		end
 		return t.appearanceText;
 	end,
-	["title"] = function(t)
+	title = function(t)
 		return t.variantText;
 	end,
-	["variantText"] = function(t)
+	variantText = function(t)
 		local info = t.artifactinfo
 		if not info[4] then return UNKNOWN end
 		local text = ColorizeRGB("Variant " .. info[4], info[9], info[10], info[11]);
 		t.variantText = text;
 		return text;
 	end,
-	["appearanceText"] = function(t)
+	appearanceText = function(t)
 		local info = t.artifactinfo
 		local text = "|cffe6cc80" .. (info[3] or UNKNOWN) .. "|r"
 		t.appearanceText = text
 		return text
 	end,
-	["description"] = function(t)
+	description = function(t)
 		return t.artifactinfo[6] or L.ARTIFACT_INTRO_REWARD;
 	end,
-	["atlas"] = function(t)
+	atlas = function(t)
 		return "Forge-ColorSwatchBorder";
 	end,
 	["atlas-background"] = function(t)
@@ -97,16 +91,16 @@ app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
 		local info = t.artifactinfo
 		return { info[9], info[10], info[11], 1.0 };
 	end,
-	["model"] = function(t)
+	model = function(t)
 		return GetRelativeValue(t.parent, "model");
 	end,
-	["modelScale"] = function(t)
+	modelScale = function(t)
 		return GetRelativeValue(t.parent, "modelScale") or 0.95;
 	end,
-	["modelRotation"] = function(t)
+	modelRotation = function(t)
 		return GetRelativeValue(t.parent, "modelRotation") or 45;
 	end,
-	["silentLink"] = function(t)
+	silentLink = function(t)
 		local itemID = t.itemID;
 		if itemID then
 			-- 1 -> Off-Hand Appearance
@@ -121,7 +115,7 @@ app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
 		-- else app.PrintDebug("Artifact with no ItemID?",t.artifactID)
 		end
 	end,
-	["modItemID"] = function(t)
+	modItemID = function(t)
 		-- Artifacts will use a fake modItemID by way of the ArtifactID and IsOffhand
 		local modItemID = GetArtifactModItemID(t.itemID, t.artifactID, t.isOffHand)
 		-- app.PrintDebug("artifact.modItemID",modItemID,t.itemID,t.artifactID,t.isOffHand)
@@ -129,7 +123,7 @@ app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
 		return modItemID;
 	end,
 	-- probably never used ever, but just in case an artifact somehow misses it's appearance...
-	["sourceID"] = function(t)
+	sourceID = function(t)
 		local sourceID = t.silentLink;
 		if sourceID then
 			sourceID = app.GetSourceID(sourceID);
@@ -137,15 +131,39 @@ app.CreateArtifact = app.CreateClass("Artifact", "artifactID", {
 			if sourceID and sourceID > 0 then
 				t.sourceID = sourceID;
 				app.SaveHarvestSource(t)
-				if ATTAccountWideData.Sources[sourceID] ~= 1 and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
+				if app.IsAccountCached("Sources", sourceID) ~= 1 and C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(sourceID) then
 					-- print("Saved Known Source",sourceID)
-					ATTAccountWideData.Sources[sourceID] = 1;
+					app.SetAccountCached("Sources", sourceID, 1)
 				end
 				return sourceID;
 			end
 		end
 	end,
 });
+app.AddEventHandler("OnRefreshCollections", function()
+	local object
+	local saved, none = {}, {}
+	for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
+		object = app.SearchForObject(KEY, id)
+		-- This artifact is listed for the current class
+		if not GetRelativeField(object, "nmc", true) then
+			if object.artifactinfo[5] then
+				saved[id] = true
+			else
+				none[id] = true
+			end
+		end
+	end
+	-- Character Cache
+	app.SetBatchCached(CACHE, saved, 1)
+	app.SetBatchCached(CACHE, none)
+	-- Account Cache (removals handled by Sync)
+	app.SetBatchAccountCached(CACHE, saved, 1)
+end)
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+end);
 
 -- External Functionality
 -- TODO: Eventually I'd like for this to not be externally referenced and to instead use an event handler or to register with the Settings Menu or something (be able to turn it off)
@@ -427,8 +445,8 @@ app.AddEventRegistration("ARTIFACT_UPDATE", function(...)
 			for relicSlotIndex=1,count,1 do
 				local name, relicItemID, relicType, relicLink = C_ArtifactUI.GetRelicInfo(relicSlotIndex);
 				myArtifactData[relicSlotIndex] = {
-					["relicType"] = relicType,
-					["iLvl"] = relicLink and select(1, GetDetailedItemLevelInfo(relicLink)) or 0,
+					relicType = relicType,
+					iLvl = relicLink and select(1, GetDetailedItemLevelInfo(relicLink)) or 0,
 				};
 			end
 		end
@@ -446,14 +464,5 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		CurrentArtifactRelicItemLevels = characterData;
 	else
 		currentCharacter.ArtifactRelicItemLevels = CurrentArtifactRelicItemLevels;
-	end
-
-	ATTAccountWideData = accountWideData
-	local accountWide = accountWideData.Artifacts;
-	if accountWide then
-		ATTAccountWideDataArtifacts = accountWide;
-	else
-		ATTAccountWideDataArtifacts = {}
-		accountWideData.Artifacts = ATTAccountWideDataArtifacts;
 	end
 end);
