@@ -155,7 +155,6 @@ local function CacheAccountWideMiscQuests(accountWideData)
 		-- etc.
 
 		-- Account Unlocks
-		70941,	-- Fishing Holes [DF Iskaaran Fishing]
 		74576,	-- Restored Hakkari Bijou [Zul'Gurub]
 		76390,	-- Inconvenience Fee [Naxxramas]
 
@@ -244,7 +243,7 @@ local function FixNonOneTimeQuests(accountWideData)
 	}) do
 		oneTimeQuests[questID] = nil;
 	end
-	for questID,_ in ipairs(app.AccountWideQuestsDB) do
+	for questID,_ in pairs(app.AccountWideQuestsDB) do
 		oneTimeQuests[questID] = nil;
 	end
 end
