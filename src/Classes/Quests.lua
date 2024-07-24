@@ -1979,8 +1979,9 @@ if app.IsRetail then
 	-- Quest Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
 	local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
 
-	local GetNumQuestLogRewards,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData =
-		  GetNumQuestLogRewards,GetQuestLogRewardCurrencyInfo,HaveQuestRewardData;
+	local GetNumQuestLogRewards,HaveQuestRewardData =
+		  GetNumQuestLogRewards,HaveQuestRewardData;
+	local GetQuestRewardCurrencies = C_QuestLog.GetQuestRewardCurrencies
 	local function TryPopulateQuestRewards(questObject)
 		-- Will attempt to populate the rewards of the quest object into itself or request itself to be loaded
 		if not questObject then return end
@@ -2065,10 +2066,10 @@ if app.IsRetail then
 
 		-- Add info for currency rewards as containers for their respective collectibles
 		---@diagnostic disable-next-line: redundant-parameter
-		local numCurrencies = GetNumQuestLogRewardCurrencies(questID);
+		local questCurrencies = GetQuestRewardCurrencies(questID) or app.EmptyTable
 		local currencyID, cachedCurrency;
-		for j=1,numCurrencies,1 do
-			currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questID));
+		for _,currencyInfo in ipairs(questCurrencies) do
+			currencyID = currencyInfo.currencyID
 			if currencyID then
 				-- app.PrintDebug("TryPopulateQuestRewards_currencies:found",questID,currencyID,questObject.missingCurr)
 
