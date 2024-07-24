@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			ach(40620),		-- Back to the Wall
 			ach(40629),		-- Bookworm (automated)
 			ach(40822, {	-- Explore Azj-Kahet
-				["sym"] = {{ "achievement_criteria" }},
+				--["sym"] = {{ "achievement_criteria" }},
 			}),
 			ach(40614),		-- Gobblin' with Glublurp
 			ach(40624, {	-- Itsy Bitsy Spider
