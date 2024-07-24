@@ -70,9 +70,9 @@ src\Modules\Upgrade.lua
 src\Modules\Vignette.lua
 
 # Expansion specific localization files
-db\Dragonflight\ExplorationDB.lua
-db\Dragonflight\LocalizationDB.lua
-db\Dragonflight\en_auto.lua
+db\Retail\ExplorationDB.lua
+db\Retail\LocalizationDB.lua
+db\Retail\en_auto.lua
 db\Presets.lua
 db\ReagentsDB.lua
 db\AccountWideQuestsDB.lua
@@ -130,7 +130,7 @@ src\UI\Shared Window Logic.lua
 src\UI\Retail Window Logic.lua
 
 # Load expansion specific category database.
-db\Dragonflight\Categories.lua
+db\Retail\Categories.lua
 
 # Window Definitions
 # src\UI\Windows\Windows.xml
