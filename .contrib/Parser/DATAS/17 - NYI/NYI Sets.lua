@@ -4728,24 +4728,32 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			}),
 			m(EXILES_REACH, {
 				filter(CLOTH, {
+					-- #if BEFORE TWW
 					i(175181),	-- Expeditionary Cloth Boots
 					i(175213),	-- Expeditionary Cloth Boots
+					-- #endif
 					i(174795),	-- Expeditionary Cloth Mantle
 				}),
 				filter(LEATHER, {
+					-- #if BEFORE TWW
 					i(175183),	-- Expeditionary Leather Boots
 					i(175215),	-- Expeditionary Leather Boots
+					-- #endif
 					i(174796),	-- Expeditionary Leather Pauldrons
 				}),
 				filter(MAIL, {
+					-- #if BEFORE TWW
 					i(175182),	-- Expeditionary Mail Sabatons
 					i(175214),	-- Expeditionary Mail Sabatons
+					-- #endif
 					i(174797),	-- Expeditionary Mail Shoulders
 				}),
 				filter(PLATE, {
 					i(174798),	-- Expeditionary Plate Shoulderguard
+					-- #if BEFORE TWW
 					i(175180),	-- Expeditionary Plate Warboots
 					i(175212),	-- Expeditionary Plate Warboots
+					-- #endif
 				}),
 			}),
 			n(KYRIAN, {
