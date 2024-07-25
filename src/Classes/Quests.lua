@@ -388,17 +388,15 @@ local function CollectibleAsLocked(t, locked)
 	-- not a repeatable quest
 	and not t.repeatable
 	and
+	-- Not Locked by a OPA/AW Quest
+	not AccountWideLockedQuestsCache[t.questID]
+	and
 	(
-		-- Not Locked by a OPA/AW Quest
-		not AccountWideLockedQuestsCache[t.questID]
-		and
-		(
-			-- debug/account mode
-			app.MODE_DEBUG_OR_ACCOUNT
-			or
-			-- available in party sync
-			not t.DisablePartySync
-		)
+		-- debug/account mode
+		app.MODE_DEBUG_OR_ACCOUNT
+		or
+		-- available in party sync
+		not t.DisablePartySync
 	)
 end
 local function CollectibleAsQuestOrAsLocked(t)
@@ -1149,6 +1147,10 @@ local function IsGroupLocked(t)
 				if critFunc(critVal) then
 					if critKey ~= "questID" then
 						nonQuestLock = true;
+						if critKey == "sourceID" then
+							-- sourceID is account-wide, so any lock via that will lock account-wide
+							AccountWideLockedQuestsCache[t.questID] = true
+						end
 					elseif app.AccountWideQuestsDB[critVal] then
 						-- this quest is locked by a completed AWQ, so we know it can't be completed on another character either
 						AccountWideLockedQuestsCache[t.questID] = true
