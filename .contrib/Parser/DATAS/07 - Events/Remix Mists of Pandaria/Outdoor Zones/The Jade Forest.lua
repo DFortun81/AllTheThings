@@ -352,7 +352,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215780),	-- Hatred's Warmace
 					i(211163),	-- Hidden Pass Knuckles
 					i(216418),	-- Hozen Dagger
-					i(215658),	-- Hozen Effigy
 					i(215487),	-- Hozen Waraxe
 					i(215747),	-- Mace of the Rikkitun
 					i(216001),	-- Mountainsage Rod
