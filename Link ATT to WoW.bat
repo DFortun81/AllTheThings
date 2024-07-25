@@ -57,12 +57,12 @@ if NOT exist "%~1\" (
 	mklink "%~1\db\Presets.lua" "%cd%\db\Presets.lua"
 	mklink "%~1\db\RaceDB.lua" "%cd%\db\RaceDB.lua"
 	mklink "%~1\db\ReagentsDB.lua" "%cd%\db\ReagentsDB.lua"
-	mklink /J "%~1\db\Dragonflight" "%cd%\.beta_db"
+	mklink /J "%~1\db\Retail" "%cd%\.beta_db"
 	mklink /J "%~1\assets" "%cd%\assets"
 	mklink /J "%~1\lib" "%cd%\lib"
 	mklink /J "%~1\locales" "%cd%\locales"
 	mklink /J "%~1\src" "%cd%\src"
-	
+
 	mklink "%~1\AllTheThings.lua" "%cd%\AllTheThings.lua"
 	mklink "%~1\AllTheThings.toc" "%cd%\AllTheThings.toc"
 	mklink "%~1\Bindings.xml" "%cd%\Bindings.xml"
@@ -92,12 +92,12 @@ if NOT exist "%~1\" (
 	mklink "%~1\db\Presets.lua" "%cd%\db\Presets.lua"
 	mklink "%~1\db\RaceDB.lua" "%cd%\db\RaceDB.lua"
 	mklink "%~1\db\ReagentsDB.lua" "%cd%\db\ReagentsDB.lua"
-	mklink /J "%~1\db\Dragonflight" "%cd%\.ptr_db"
+	mklink /J "%~1\db\Retail" "%cd%\.ptr_db"
 	mklink /J "%~1\assets" "%cd%\assets"
 	mklink /J "%~1\lib" "%cd%\lib"
 	mklink /J "%~1\locales" "%cd%\locales"
 	mklink /J "%~1\src" "%cd%\src"
-	
+
 	mklink "%~1\AllTheThings.lua" "%cd%\AllTheThings.lua"
 	mklink "%~1\AllTheThings.toc" "%cd%\AllTheThings.toc"
 	mklink "%~1\Bindings.xml" "%cd%\Bindings.xml"
