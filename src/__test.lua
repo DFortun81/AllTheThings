@@ -456,3 +456,23 @@ function ATTmetatest()
 	app.PrintDebugPrior("---")
 
 end
+
+function ATTcheckawquests()
+
+	local isaw = C_QuestLog.IsAccountQuest
+	local aw, max = {}, 85000
+	AllTheThingsHarvestItems.AccountWideQuestsDB = aw
+	local awdb = app.AccountWideQuestsDB
+	local function scan()
+		for i=1,max,1 do
+			if isaw(i) and not awdb[i] then
+				aw[i] = true
+			end
+			if i % 100 == 0 then
+				coroutine.yield()
+			end
+		end
+	end
+	app.StartCoroutine(scan)
+	app.PrintDebug("done scanning AW quests thru",max)
+end

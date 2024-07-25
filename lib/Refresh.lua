@@ -156,7 +156,6 @@ local function CacheAccountWideMiscQuests(accountWideData)
 
 		-- Account Unlocks
 		74576,	-- Restored Hakkari Bijou [Zul'Gurub]
-		76390,	-- Inconvenience Fee [Naxxramas]
 
 	}) do
 		-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
