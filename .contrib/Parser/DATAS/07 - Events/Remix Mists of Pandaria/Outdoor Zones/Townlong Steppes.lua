@@ -130,7 +130,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215487),	-- Hozen Waraxe (wowhead)
 					i(215621),	-- Imperial Warknife
 					i(216534),	-- Ironwood Deflector (wowhead)
-					i(216533),	-- Ironwood Shield
 					i(215894),	-- Jinyu Conduit
 					i(215987),	-- Jinyu Greatblade
 					i(215540),	-- Jinyu Shortbow (chest)
