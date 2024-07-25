@@ -25,17 +25,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			ach(40620),		-- Back to the Wall
 			ach(40629),		-- Bookworm (automated)
 			ach(40822, {	-- Explore Azj-Kahet
-				-- TODO: Manually adding these currently doesn't load their name. Figure out what to do when things stop being weird.
-				-- crit(69757),	-- Ruptured Lake
-				-- crit(69758),	-- Lightless Channels
-				-- crit(69759),	-- Crawling Chasm
-				-- crit(69760),	-- The Weaver's Lair
-				-- crit(69761),	-- Untamed Valley
-				-- crit(69762),	-- Twitching Gorge
-				-- crit(69763),	-- Rak-Ush
-				-- crit(69764),	-- The Skeins
-				-- crit(69808),	-- Umbral Bazaar
-				-- crit(69765),	-- High Hollows
+				crit(69757),	-- Ruptured Lake
+				crit(69758),	-- Lightless Channels
+				crit(69759),	-- Crawling Chasm
+				crit(69760),	-- The Weaver's Lair
+				crit(69761),	-- Untamed Valley
+				crit(69762),	-- Twitching Gorge
+				crit(69763),	-- Rak-Ush
+				crit(69764),	-- The Skeins
+				crit(69808),	-- Umbral Bazaar
+				crit(69765),	-- High Hollows
 			}),
 			ach(40614),		-- Gobblin' with Glublurp
 			ach(40624, {	-- Itsy Bitsy Spider

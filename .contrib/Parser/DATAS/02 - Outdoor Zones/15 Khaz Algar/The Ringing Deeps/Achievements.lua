@@ -6,17 +6,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 		n(ACHIEVEMENTS, {
 			ach(40837),		-- Adventurer of The Ringing Deeps (automated)
 			ach(40825, {	-- Explore The Ringing Deeps
-				-- TODO: Manually adding these currently doesn't load their name. Figure out what to do when things stop being weird.
-				-- crit(69766),	-- The Earthenworks
-				-- crit(69767),	-- Lost Mines
-				-- crit(69768),	-- Shadowvein Extraction Site
-				-- crit(69775),	-- Shadowvein Point
-				-- crit(69769),	-- The Waterworks
-				-- crit(69770),	-- Taelloch
-				-- crit(69771),	-- The Living Grotto
-				-- crit(69772),	-- Opportunity Point
-				-- crit(69773),	-- The Coreway
-				-- crit(69774),	-- Gundargaz
+				crit(69766),	-- The Earthenworks
+				crit(69767),	-- Lost Mines
+				crit(69768),	-- Shadowvein Extraction Site
+				crit(69775),	-- Shadowvein Point
+				crit(69769),	-- The Waterworks
+				crit(69770),	-- Taelloch
+				crit(69771),	-- The Living Grotto
+				crit(69772),	-- Opportunity Point
+				crit(69773),	-- The Coreway
+				crit(69774),	-- Gundargaz
 			}),
 			ach(40507),		-- Hanging Tight
 			ach(40628),		-- Notable Machines (automated)
