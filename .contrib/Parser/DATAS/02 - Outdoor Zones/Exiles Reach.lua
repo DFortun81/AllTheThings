@@ -517,10 +517,14 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuestNumRequired"] = 1,
 					["g"] = {
-						i(174789),	-- Dented Plate Mitts
-						i(174788),	-- Linked Mail Gloves
-						i(174786),	-- Stitched Cloth Gloves
-						i(174787),	-- Thick Leather Gauntlets
+						i(174789, { ["timeline"] = { ADDED_9_0_1, REMOVED_11_0_0 } }),	-- Dented Plate Mitts
+						i(174788, { ["timeline"] = { ADDED_9_0_1, REMOVED_11_0_0 } }),	-- Linked Mail Gloves
+						i(174786, { ["timeline"] = { ADDED_9_0_1, REMOVED_11_0_0 } }),	-- Stitched Cloth Gloves
+						i(174787, { ["timeline"] = { ADDED_9_0_1, REMOVED_11_0_0 } }),	-- Thick Leather Gauntlets
+						i(175181, { ["timeline"] = { CREATED_9_0_1, ADDED_11_0_0 } }), -- Expeditionary Cloth Boots
+						i(175183, { ["timeline"] = { CREATED_9_0_1, ADDED_11_0_0 } }), -- Expeditionary Leather Boots
+						i(175182, { ["timeline"] = { CREATED_9_0_1, ADDED_11_0_0 } }), -- Expeditionary Mail Sabatons
+						i(175180, { ["timeline"] = { CREATED_9_0_1, ADDED_11_0_0 } }), -- Expeditionary Plate Warboots
 					},
 				}),
 				q(59939, {	-- Forbidden Quilboar Necromancy [H]
@@ -533,10 +537,14 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 					["races"] = HORDE_ONLY,
 					["sourceQuestNumRequired"] = 1,
 					["g"] = {
-						i(174789),	-- Dented Plate Mitts
-						i(174788),	-- Linked Mail Gloves
-						i(174786),	-- Stitched Cloth Gloves
-						i(174787),	-- Thick Leather Gauntlets
+						i(174789, { ["timeline"] = { ADDED_9_0_1, REMOVED_11_0_0 } }),	-- Dented Plate Mitts
+						i(174788, { ["timeline"] = { ADDED_9_0_1, REMOVED_11_0_0 } }),	-- Linked Mail Gloves
+						i(174786, { ["timeline"] = { ADDED_9_0_1, REMOVED_11_0_0 } }),	-- Stitched Cloth Gloves
+						i(174787, { ["timeline"] = { ADDED_9_0_1, REMOVED_11_0_0 } }),	-- Thick Leather Gauntlets
+						i(175213, { ["timeline"] = { CREATED_9_0_1, ADDED_11_0_0 } }), -- Expeditionary Cloth Boots
+						i(175215, { ["timeline"] = { CREATED_9_0_1, ADDED_11_0_0 } }), -- Expeditionary Leather Boots
+						i(175214, { ["timeline"] = { CREATED_9_0_1, ADDED_11_0_0 } }), -- Expeditionary Mail Sabatons
+						i(175212, { ["timeline"] = { CREATED_9_0_1, ADDED_11_0_0 } }), -- Expeditionary Plate Warboots
 					},
 				}),
 				q(55193, {	-- The Scout-o-Matic 5000
