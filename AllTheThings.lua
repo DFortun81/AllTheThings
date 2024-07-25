@@ -9643,6 +9643,9 @@ function app:GetDataCache()
 			-- TODO: doesn't seem to work...
 			-- app.CreateDynamicHeader("garrisonBuildingID", SimpleNPCGroup(app.HeaderConstants.BUILDINGS)),
 
+			-- Heirlooms
+			app.CreateDynamicHeader("heirloomID", SimpleNPCGroup(app.HeaderConstants.HEIRLOOMS)),
+
 			-- Illusions
 			app.CreateDynamicHeader("illusionID", {
 				name = L.FILTER_ID_TYPES[103],
