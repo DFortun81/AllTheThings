@@ -240,45 +240,45 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214780),	-- Steel Sentinel's Warhelm
 				}),
 				n(WEAPONS, {
-					i(215872),	-- Amberweaver's Spire
-					i(215640),	-- Barbs of the Rikkitun
-					i(215484),	-- Boggeo's Ceremonial Axe
-					i(215858),	-- Diviner's Staff
-					i(215742),	-- Faded Forest Crusher
+					i(215872),	-- Amberweaver's Spire (wowhead)
+					i(215640),	-- Barbs of the Rikkitun (wowhead)
+					i(215484),	-- Boggeo's Ceremonial Axe (wowhead)
+					i(215858),	-- Diviner's Staff (wowhead)
+					i(215742),	-- Faded Forest Crusher (wowhead)
 					i(215560),	-- Faded Forest Launcher (wowhead)
-					i(215865),	-- Fogspeaker Conduit
-					i(215680),	-- Hope's Effigy
-					i(215702),	-- Howling Rifle
-					i(216417),	-- Hozen Shanker
-					i(215937),	-- Imperial Wind Blade (drop)
+					i(215865),	-- Fogspeaker Conduit (wowhead)
+					i(215680),	-- Hope's Effigy (wowhead)
+					i(215702),	-- Howling Rifle (wowhead)
+					i(216417),	-- Hozen Shanker (wowhead)
+					i(215937),	-- Imperial Wind Blade (wowhead)
 					i(215947),	-- Inkgill Sword (wowhead)
-					i(215740),	-- Jinyu Bonebreaker
-					i(215677),	-- Jinyu's Light (drop)
-					i(215643),	-- Klaxxi Pincers
-					i(215532),	-- Mogu Warbow
-					i(215868),	-- Monastic Staff
+					i(215740),	-- Jinyu Bonebreaker (wowhead)
+					i(215677),	-- Jinyu's Light (wowhead)
+					i(215643),	-- Klaxxi Pincers (wowhead)
+					i(215532),	-- Mogu Warbow (wowhead)
+					i(215868),	-- Monastic Staff (wowhead)
 					i(215599),	-- Mountainscaler Slicer (wowhead)
-					i(215749),	-- Ordo Basher
-					i(216541),	-- Pandaren Barrier
+					i(215749),	-- Ordo Basher (wowhead)
+					i(216541),	-- Pandaren Barrier (wowhead)
 					i(216439),	-- Pandaren Book (wowhead)
-					i(216481),	-- Pandaren Greatsword
-					i(216023),	-- Pandaren Hacker
-					i(216444),	-- Pandaren Ritual Fan
-					i(216422),	-- Pandaren Smasher
+					i(216481),	-- Pandaren Greatsword (wowhead)
+					i(216023),	-- Pandaren Hacker (wowhead)
+					i(216444),	-- Pandaren Ritual Fan (wowhead)
+					i(216422),	-- Pandaren Smasher (wowhead)
 					i(215981),	-- Red Crane Greatsword (wowhead)
-					i(215951),	-- Sha-Blighted Sword (drop)
-					i(210634),	-- Shield of the Wakener
+					i(215951),	-- Sha-Blighted Sword (wowhead)
 					i(216613),	-- Seawatch Repeater (wowhead)
-					i(215802),	-- Spear of Feral Rage
-					i(215602),	-- Spiritbound Stabber
-					i(216573),	-- Spiritsage's Barrier (drop)
-					i(216474),	-- Temple Trainee's Sword (drop)
-					i(216571),	-- Tian Deflector
-					i(216470),	-- Tian Monastery Spire
+					i(210634),	-- Shield of the Wakener (wowhead)
+					i(215802),	-- Spear of Feral Rage (wowhead)
+					i(215602),	-- Spiritbound Stabber (wowhead)
+					i(216573),	-- Spiritsage's Barrier (wowhead)
+					i(216474),	-- Temple Trainee's Sword (wowhead)
+					i(216571),	-- Tian Deflector (wowhead)
+					i(216470),	-- Tian Monastery Spire (wowhead)
 					i(215594),	-- Warbringer's Blade (wowhead)
-					i(215510),	-- Warbringer's Chopper (drop)
-					i(215489),	-- Wasteland Hacker
-					i(215782),	-- Wasteland Maul
+					i(215510),	-- Warbringer's Chopper (wowhead)
+					i(215489),	-- Wasteland Hacker (wowhead)
+					i(215782),	-- Wasteland Maul (wowhead)
 					i(215943),	-- Wasteland Scimitar (wowhead)
 					i(216003),	-- Waterweaver's Wand (wowhead)
 				}),
