@@ -7212,6 +7212,9 @@ local function SetPortraitIcon(self, data)
 		end
 		return true;
 	end
+	-- anything without an icon ends up with weird spacing in lists
+	self:SetTexture(QUESTION_MARK_ICON);
+	return true
 end
 local function SetIndicatorIcon(self, data)
 	local texture = app.GetIndicatorIcon(data);
