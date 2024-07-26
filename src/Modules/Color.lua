@@ -87,7 +87,7 @@ local function GetProgressTextDefault(progress, total)
 	return tostring(progress) .. " / " .. tostring(total);
 end
 local function GetProgressTextRemaining(progress, total)
-	return tostring((total or 0) - (progress or 0));
+	return tostring(max(0, (total or 0) - (progress or 0)));
 end
 local GetProgressText = GetProgressTextDefault;
 
