@@ -104,48 +104,48 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214774),	-- Sunsoul Warboots
 				}),
 				n(WEAPONS, {
-					i(215870),	-- Amberweaver's Rod
-					i(215980),	-- Binan Falchion (wowhead)
-					i(215945),	-- Binan Scimitar
+					i(215870),	-- Amberweaver's Rod (wowhead)
+					-- i(215980),	-- Binan Falchion (not listed on wowhead for this zone)
+					i(215945),	-- Binan Scimitar (wowhead)
 					i(215509),	-- Bloodseeker's Greataxe (wowhead)
-					i(215744),	-- Cloudfall Scepter
-					i(216575),	-- Darkhide Shield
-					i(215867),	-- Diviner's Spire
-					i(215979),	-- Faded Forest Falchion
-					i(210337),	-- Faded Forest Hatchet
-					i(215941),	-- Faded Forest Sword
-					i(215642),	-- Fangs of Despair
-					i(215748),	-- Fireblaze Mace
+					i(215744),	-- Cloudfall Scepter (wowhead)
+					i(216575),	-- Darkhide Shield (wowhead)
+					i(215867),	-- Diviner's Spire (wowhead)
+					i(215979),	-- Faded Forest Falchion (wowhead)
+					i(210337),	-- Faded Forest Hatchet (wowhead)
+					i(215941),	-- Faded Forest Sword (wowhead)
+					i(215642),	-- Fangs of Despair (wowhead)
+					i(215748),	-- Fireblaze Mace (wowhead)
 					i(216002),	-- Grummle Rod (wowhead)
 					i(215600),	-- Grummle Shortblade (wowhead)
-					i(215676),	-- Hopebringer's Lantern
+					i(215676),	-- Hopebringer's Lantern (wowhead)
 					i(216416),	-- Hozen Blade (wowhead)
-					i(210640),	-- Icon of Hope
+					i(210640),	-- Icon of Hope (wowhead)
 					i(215596),	-- Jadestone Dagger (wowhead)
 					i(215701),	-- Jadewatch Rifle (wowhead)
-					i(215533),	-- Marista Longbow
-					i(215950),	-- Mei's Sword
-					i(215639),	-- Mist Shaman's Knuckles (drop)
+					i(215533),	-- Marista Longbow (wowhead)
+					i(215950),	-- Mei's Sword (wowhead)
+					i(215639),	-- Mist Shaman's Knuckles (wowhead)
 					i(215939),	-- Mogu Aspirant's Blade (wowhead)
-					i(215559),	-- Mountainscaler Speargun
-					i(216424),	-- Pandaren Breaker
-					i(216025),	-- Pandaren Cleaver
-					i(216545),	-- Pandaren Deflector
+					i(215559),	-- Mountainscaler Speargun (wowhead)
+					i(216424),	-- Pandaren Breaker (wowhead)
+					i(216025),	-- Pandaren Cleaver (wowhead)
+					i(216545),	-- Pandaren Deflector (wowhead)
 					i(216480),	-- Pandaren Greatblade (wowhead)
-					i(216441),	-- Pandaren Manual
-					i(216443),	-- Pandaren Ornate Fan (drop)
-					i(215598),	-- Regal Slicer
-					i(216612),	-- Seawatch Launcher
-					i(215485),	-- Shomi's Hatchet
-					i(215739),	-- Shomi's Scepter
-					i(210635),	-- Streamtalker Shield
-					i(215781),	-- Sumprush Maul
-					i(216476),	-- Temple Trainee's Edge
-					i(216472),	-- Tian Monastery Conduit
-					i(215864),	-- Torch of Dawn (drop)
-					i(215804),	-- Wallwatcher's Partisan (scenario daily box opened on this map)
-					i(215860),	-- Wasteland Staff
-					i(216568),	-- Yaungol Bulwark
+					i(216441),	-- Pandaren Manual (wowhead)
+					i(216443),	-- Pandaren Ornate Fan (wowhead)
+					i(215598),	-- Regal Slicer (wowhead)
+					i(216612),	-- Seawatch Launcher (wowhead)
+					i(215485),	-- Shomi's Hatchet (wowhead)
+					i(215739),	-- Shomi's Scepter (wowhead)
+					i(210635),	-- Streamtalker Shield (wowhead)
+					i(215781),	-- Sumprush Maul (wowhead)
+					i(216476),	-- Temple Trainee's Edge (wowhead)
+					i(216472),	-- Tian Monastery Conduit (wowhead)
+					i(215864),	-- Torch of Dawn (wowhead)
+					i(215804),	-- Wallwatcher's Partisan (wowhead)
+					i(215860),	-- Wasteland Staff (wowhead)
+					i(216568),	-- Yaungol Bulwark (wowhead)
 				}),
 			}),
 		},
