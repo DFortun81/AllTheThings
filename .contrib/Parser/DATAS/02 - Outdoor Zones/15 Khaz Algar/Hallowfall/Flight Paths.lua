@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 41.1, 33.7, HALLOWFALL },
 				["cr"] = 218323,	-- Tristan Lyre
 			}),
-			fp(2943, {	-- The Aegis Wall, Hallowfall
+			fp(2950, {	-- The Aegis Wall, Hallowfall
 				["coord"] = { 71.4, 56.5, HALLOWFALL },
 				["cr"] = 218298,	-- Vellas Tearen
 			}),

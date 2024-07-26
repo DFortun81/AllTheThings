@@ -1427,6 +1427,7 @@ namespace ATT
                 case "_encounter":
                 case "_text":
                 case "_type":
+                case "_flightpath":
 
                     return field;
 

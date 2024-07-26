@@ -2056,6 +2056,17 @@ namespace ATT
                     Objects.Merge(data, "_factions", factionID);
                 }
             }
+
+            long flightPathID = criteriaData.GetRequiredFlightPath();
+            if (flightPathID > 0) {
+                if (!TryGetSOURCED("flightPathID", flightPathID, out _)) {
+                    LogWarn($"Flightpath {flightPathID} should be sourced as it is attached to Criteria {achID}:{criteriaID}");
+                }
+                else {
+                    LogDebug($"INFO: Added _flightpath to Criteria {achID}:{criteriaID} with Flightpath: {flightPathID}");
+                    Objects.Merge(data, "_flightpath", flightPathID);
+                }
+            }
         }
 
         /// <summary>
@@ -2539,6 +2550,11 @@ namespace ATT
                     DuplicateDataIntoGroups(data, encounterHash, "_encounterHash");
                     encIndex += 2;
                 }
+                cloned = true;
+            }
+            if (data.TryGetValue("_flightpath", out object flightpath))
+            {
+                DuplicateDataIntoGroups(data, flightpath, "flightPathID");
                 cloned = true;
             }
 
