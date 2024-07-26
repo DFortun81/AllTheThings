@@ -125,53 +125,53 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(215069),	-- Cragchewer Warhelm
 				}),
 				n(WEAPONS, {
-					i(215872),	-- Amberweaver's Spire (drop)
-					i(215640),	-- Barbs of the Rikkitun (drop)
-					i(215484),	-- Boggeo's Ceremonial Axe (drop)
-					i(215858),	-- Diviner's Staff (drop)
-					i(215742),	-- Faded Forest Crusher (drop)
+					i(215872),	-- Amberweaver's Spire (wowhead)
+					i(215640),	-- Barbs of the Rikkitun (wowhead)
+					i(215484),	-- Boggeo's Ceremonial Axe (wowhead)
+					i(215858),	-- Diviner's Staff (wowhead)
+					i(215742),	-- Faded Forest Crusher (wowhead)
 					i(215560),	-- Faded Forest Launcher (wowhead)
-					i(215865),	-- Fogspeaker Conduit
-					i(215680),	-- Hope's Effigy
-					i(215702),	-- Howling Rifle (drop)
-					i(215658),	-- Hozen Effigy
-					i(215764),	-- Hozen Mace
-					i(215620),	-- Imperial Dagger
-					i(215937),	-- Imperial Wind Blade
-					i(215947),	-- Inkgill Sword
-					i(216533),	-- Ironwood Shield (drop)
-					i(215740),	-- Jinyu Bonebreaker (cache)
-					i(215989),	-- Jinyu Flamberge
-					i(215677),	-- Jinyu's Light
-					i(215539),	-- Jinyu Longbow
-					i(215896),	-- Jinyu Spire (drop)
-					i(215643),	-- Klaxxi Pincers (drop)
-					i(216539),	-- Mogu Lord's Barrier
-					i(215532),	-- Mogu Warbow
-					i(215868),	-- Monastic Staff
+					i(215865),	-- Fogspeaker Conduit (wowhead)
+					i(215680),	-- Hope's Effigy (wowhead)
+					i(215702),	-- Howling Rifle (wowhead)
+					i(215658),	-- Hozen Effigy (wowhead)
+					i(215764),	-- Hozen Mace (wowhead)
+					i(215620),	-- Imperial Dagger (wowhead)
+					i(215937),	-- Imperial Wind Blade (wowhead)
+					i(215947),	-- Inkgill Sword (wowhead)
+					i(216533),	-- Ironwood Shield (wowhead)
+					i(215740),	-- Jinyu Bonebreaker (wowhead)
+					i(215989),	-- Jinyu Flamberge (wowhead)
+					i(215677),	-- Jinyu's Light (wowhead)
+					i(215539),	-- Jinyu Longbow (wowhead)
+					i(215896),	-- Jinyu Spire (wowhead)
+					i(215643),	-- Klaxxi Pincers (wowhead)
+					i(216539),	-- Mogu Lord's Barrier (wowhead)
+					i(215532),	-- Mogu Warbow (wowhead)
+					i(215868),	-- Monastic Staff (wowhead)
 					i(215599),	-- Mountainscaler Slicer (wowhead)
-					i(215749),	-- Ordo Basher (drop)
-					i(215651),	-- Pandaren Fist
-					i(215618),	-- Pandaren Triblade
-					i(215981),	-- Red Crane Greatsword
-					i(215760),	-- Saurok Breaker
-					i(215951),	-- Sha-Blighted Sword (drop)
-					i(210634),	-- Shield of the Wakener (drop)
-					i(215802),	-- Spear of Feral Rage
-					i(215602),	-- Spiritbound Stabber
-					i(216573),	-- Spiritsage's Barrier (drop)
-					i(215892),	-- Staff of the Black Ox
-					i(216571),	-- Tian Deflector
-					i(215959),	-- Tian Monastery Sword (drop)
-					i(215514),	-- Wallwatcher's Longaxe
-					--i(215804),	-- Wallwatcher's Partisan (drop, not on wowhead)
-					i(215510),	-- Warbringer's Chopper
-					i(215594),	-- Warbringer's Blade
-					i(215489),	-- Wasteland Hacker
-					i(215782),	-- Wasteland Maul
-					i(215943),	-- Wasteland Scimitar
+					i(215749),	-- Ordo Basher (wowhead)
+					i(215651),	-- Pandaren Fist (wowhead)
+					i(215618),	-- Pandaren Triblade (wowhead)
+					i(215981),	-- Red Crane Greatsword (wowhead)
+					i(215760),	-- Saurok Breaker (wowhead)
+					i(215951),	-- Sha-Blighted Sword (wowhead)
+					i(210634),	-- Shield of the Wakener (wowhead)
+					i(215802),	-- Spear of Feral Rage (wowhead)
+					i(215602),	-- Spiritbound Stabber (wowhead)
+					i(216573),	-- Spiritsage's Barrier (wowhead)
+					i(215892),	-- Staff of the Black Ox (wowhead)
+					i(216571),	-- Tian Deflector (wowhead)
+					i(215959),	-- Tian Monastery Sword (wowhead)
+					i(215514),	-- Wallwatcher's Longaxe (wowhead)
+					-- i(215804),	-- Wallwatcher's Partisan (drop, not on wowhead)
+					i(215594),	-- Warbringer's Blade (wowhead)
+					i(215510),	-- Warbringer's Chopper (wowhead)
+					i(215489),	-- Wasteland Hacker (wowhead)
+					i(215782),	-- Wasteland Maul (wowhead)
+					i(215943),	-- Wasteland Scimitar (wowhead)
 					i(216003),	-- Waterweaver's Wand (wowhead)
-					i(215494),	-- Yaungol Cleaver
+					i(215494),	-- Yaungol Cleaver (wowhead)
 				}),
 			}),
 		},
