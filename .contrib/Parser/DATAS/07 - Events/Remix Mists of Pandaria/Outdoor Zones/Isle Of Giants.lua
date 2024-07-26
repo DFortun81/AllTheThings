@@ -102,39 +102,47 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216004),	-- Blazecaster's Wand (wowhead)
 					i(215741),	-- Bloodseeker's Bonebreaker (wowhead)
 					i(215793),	-- Bo-Ris, Spear of Night (wowhead)
-					i(216595),	-- Bulwark of Twinned Despair
+					i(216595),	-- Bulwark of Twinned Despair (wowhead)
+					i(215681),	-- Crane's Beak Effigy (wowhead)
 					i(215948),	-- Darkhide Sword (wowhead)
-					i(215908),	-- Do-tharak, the Foebreaker
-					i(215862),	-- Engraved Spire
-					i(216601),	-- Eyes of the Doomed
+					i(216569),	-- Deflector of Orbiss (wowhead)
+					i(215908),	-- Do-tharak, the Foebreaker (wowhead)
+					i(215862),	-- Engraved Spire (wowhead)
+					i(216600),	-- Eyes of the Doomed (wowhead)
+					i(216601),	-- Eyes of the Doomed (wowhead)
 					i(215952),	-- Fear's Bite (wowhead)
+					i(211151),	-- Fran's Repeater (wowhead)
+					i(215970),	-- Greatsword of the Iron Legion (wowhead)
+					i(215678),	-- Grummle Lantern (wowhead)
 					i(215940),	-- Halcyon Blade (wowhead)
 					i(215944),	-- Harmonious Scimitar (wowhead)
 					i(215623),	-- Imperial Shortblade (wowhead)
 					i(215861),	-- Instructor's Spire (wowhead)
-					i(216535),	-- Ironwood Bulwark
+					i(216535),	-- Ironwood Bulwark (wowhead)
 					i(215511),	-- Jadestone Greataxe (wowhead)
-					i(215772),	-- Jerthud, Hand of the Savior
+					i(215772),	-- Jerthud, Hand of the Savior (wowhead)
 					i(215897),	-- Jinyu Staff (wowhead)
 					i(215486),	-- Jinyu Waraxe (wowhead)
 					i(215982),	-- Marista Greatsword (wowhead)
 					i(215549),	-- Miracoran, the Dissonant Chord (wowhead)
 					i(215550),	-- Miracoran, the Dissonant Chord (wowhead)
-					i(216540),	-- Mogu Lord's Shield
+					i(216540),	-- Mogu Lord's Shield (wowhead)
 					i(215488),	-- Mountainscaler Hatchet (wowhead)
 					i(215597),	-- Mushan Slicer (wowhead)
-					i(215703),	-- Pandaren Rifle
+					i(215703),	-- Pandaren Rifle (wowhead)
 					i(215619),	-- Pandaren Sai (wowhead)
 					i(215893),	-- Pilgrim's Staff (wowhead)
 					i(216530),	-- Protection of the Emperor (wowhead)
 					i(215761),	-- Saurok Smasher (wowhead)
 					i(215805),	-- Serpentguard Spear (wowhead)
 					i(215603),	-- Sha-Warped Slicer (wowhead)
+					i(210335),	-- Shado-Pan Dagger (wowhead)
 					i(215534),	-- Shado-Pan Longbow (wowhead)
 					i(215889),	-- Soulwood Spire (wowhead)
-					i(215960),	-- Tian Monastery Scimitar
+					i(215960),	-- Tian Monastery Scimitar (wowhead)
 					i(215515),	-- Wallwatcher's Greataxe (wowhead)
 					i(215745),	-- Wasteland Basher (wowhead)
+					i(216576),	-- Wasteland Deflector (wowhead)
 					i(215869),	-- Waterweaver's Staff (wowhead)
 					i(215776),	-- Zeeg's Ancient Kegbreaker (wowhead)
 				}),
