@@ -108,53 +108,53 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214795),	-- Bladesworn Warboots
 				}),
 				n(WEAPONS, {
-					i(215871),	-- Amberweaver's Conduit
-					i(215870),	-- Amberweaver's Rod (drop)
-					i(210342),	-- Bataari Hacker (drop)
-					i(215980),	-- Binan Falchion (not listed on wowhead for this zone)
+					i(215871),	-- Amberweaver's Conduit (wowhead)
+					-- i(215870),	-- Amberweaver's Rod (not listed on wowhead for this zone)
+					i(210342),	-- Bataari Hacker (wowhead)
+					i(215980),	-- Binan Falchion (wowhead)
 					i(215641),	-- Claws of the Wakener (wowhead)
-					i(215558),	-- Cloudbender's Crossbow (chest)
+					i(215558),	-- Cloudbender's Crossbow (wowhead)
 					i(215938),	-- Cloudfall Edge (wowhead)
 					i(215949),	-- Crane Temple Sword (wowhead)
-					i(215803),	-- Dragonguard's Glaive (drop)
-					i(216567),	-- Dreadwood Bulwark
-					i(215859),	-- Faded Forest Staff
+					i(215803),	-- Dragonguard's Glaive (wowhead)
+					i(216567),	-- Dreadwood Bulwark (wowhead)
+					i(215859),	-- Faded Forest Staff (wowhead)
 					i(216574),	-- Flamecaller's Bulwark (wowhead)
-					i(215679),	-- Golden Crane Rod (august celestials cache)
+					i(215679),	-- Golden Crane Rod (wowhead)
 					i(215738),	-- Grummle Mace (wowhead)
-					i(215780),	-- Hatred's Warmace (drop)
-					i(211163),	-- Hidden Pass Knuckles
-					i(215890),	-- Hopespreader's Staff (drop)
-					i(215763),	-- Hozen Basher
-					i(215657),	-- Hozen Conduit
+					i(215780),	-- Hatred's Warmace (wowhead)
+					i(211163),	-- Hidden Pass Knuckles (wowhead)
+					i(215890),	-- Hopespreader's Staff (wowhead)
+					i(215763),	-- Hozen Basher (wowhead)
+					i(215657),	-- Hozen Conduit (wowhead)
 					i(215487),	-- Hozen Waraxe (wowhead)
-					i(215621),	-- Imperial Warknife
+					i(215621),	-- Imperial Warknife (wowhead)
 					i(216534),	-- Ironwood Deflector (wowhead)
-					i(215894),	-- Jinyu Conduit
-					i(215987),	-- Jinyu Greatblade
-					i(215540),	-- Jinyu Shortbow (chest)
-					i(215747),	-- Mace of the Rikkitun
+					i(215894),	-- Jinyu Conduit (wowhead)
+					i(215987),	-- Jinyu Greatblade (wowhead)
+					i(215540),	-- Jinyu Shortbow (wowhead)
+					i(215747),	-- Mace of the Rikkitun (wowhead)
 					i(216537),	-- Mogu Lord's Deflector (wowhead)
 					i(216001),	-- Mountainsage Rod (wowhead)
-					i(210638),	-- Mushan Hewer
-					i(215650),	-- Pandaren Claw (drop)
+					i(210638),	-- Mushan Hewer (wowhead)
+					i(215650),	-- Pandaren Claw (wowhead)
 					i(215616),	-- Pandaren Warknife (wowhead)
-					i(211149),	-- Rikkitun Warbow (drop)
+					i(211149),	-- Rikkitun Warbow (wowhead)
 					i(215595),	-- Saltscale Shanker (wowhead)
-					i(215758),	-- Saurok Scepter
+					i(215758),	-- Saurok Scepter (wowhead)
 					i(216572),	-- Shomi's Barrier (wowhead)
-					i(215590),	-- Shomi's Shanker
+					i(215590),	-- Shomi's Shanker (wowhead)
 					i(215601),	-- Spike of the Rikkitun (wowhead)
-					i(215866),	-- Staff of Focus (drop)
-					i(215743),	-- Sunsoul Smasher
+					i(215866),	-- Staff of Focus (wowhead)
+					i(215743),	-- Sunsoul Smasher (wowhead)
 					i(215942),	-- Swordmistress' Edge (wowhead)
-					i(215957),	-- Tian Monastery Saber
-					i(215863),	-- Torch of Midnight
-					i(215700),	-- Trailseeker Longrifle (chest)
+					i(215957),	-- Tian Monastery Saber (wowhead)
+					i(215863),	-- Torch of Midnight (wowhead)
+					i(215700),	-- Trailseeker Longrifle (wowhead)
 					i(215946),	-- Valiant's Honorblade (wowhead)
-					i(215675),	-- Wakener's Lantern
-					i(215512),	-- Wallwatcher's Poleaxe
-					i(215495),	-- Yaungol Hatchet
+					i(215675),	-- Wakener's Lantern (wowhead)
+					i(215512),	-- Wallwatcher's Poleaxe (wowhead)
+					i(215495),	-- Yaungol Hatchet (wowhead)
 				}),
 			}),
 		},
