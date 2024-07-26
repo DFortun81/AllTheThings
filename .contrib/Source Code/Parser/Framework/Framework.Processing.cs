@@ -1966,8 +1966,8 @@ namespace ATT
             long providerObject = criteriaData.GetProviderObject();
             if (providerObject > 0)
             {
-                LogDebug($"INFO: Added providers to Criteria {achID}:{criteriaID} with Object: {providerObject}");
-                Objects.Merge(data, "providers", new List<object> { new List<object> { "o", providerObject } });
+                LogDebug($"INFO: Added _objects to Criteria {achID}:{criteriaID} with Object: {providerObject}");
+                Objects.Merge(data, "_objects", providerObject);
             }
 
             // Provider NPC for the Criteria
@@ -2066,11 +2066,14 @@ namespace ATT
             }
 
             long flightPathID = criteriaData.GetRequiredFlightPath();
-            if (flightPathID > 0) {
-                if (!TryGetSOURCED("flightPathID", flightPathID, out _)) {
+            if (flightPathID > 0)
+            {
+                if (!TryGetSOURCED("flightPathID", flightPathID, out _))
+                {
                     LogWarn($"Flightpath {flightPathID} should be sourced as it is attached to Criteria {achID}:{criteriaID}");
                 }
-                else {
+                else
+                {
                     LogDebug($"INFO: Added _flightpath to Criteria {achID}:{criteriaID} with Flightpath: {flightPathID}");
                     Objects.Merge(data, "_flightpath", flightPathID);
                 }
@@ -2590,7 +2593,7 @@ namespace ATT
                         cloned = false;
                     }
                 }
-                // if the Criteria attempts to clone into an NPC which isn't Sourced, then don't remove it and add to 'providers'
+                // if the Criteria attempts to clone into an Object which isn't Sourced, then don't remove it and add to 'providers'
                 if (data.TryGetValue("_objects", out List<object> objectObjs))
                 {
                     List<long> objs = new List<long>();
