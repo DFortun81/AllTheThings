@@ -1337,6 +1337,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(66076, {	-- Ancient Hornswog
 					["provider"] = { "n", 187111 },	-- Ancient Hornswog
 					["coord"] = { 77.6, 22.2, THE_WAKING_SHORES },
+					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_0 },
 				}),
 				q(66117, {	-- Clear the Battlefield
 					["sourceQuests"] = { 66116 },	-- The Primary Threat
