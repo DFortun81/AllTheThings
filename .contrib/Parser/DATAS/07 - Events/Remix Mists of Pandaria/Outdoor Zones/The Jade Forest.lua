@@ -336,47 +336,47 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					}),
 				}),
 				n(WEAPONS, {
-					i(215871),	-- Amberweaver's Conduit
-					i(210342),	-- Bataari Hacker
-					i(215980),	-- Binan Falchion (not listed on wowhead for this zone)
-					i(215641),	-- Claws of the Wakener
-					i(215558),	-- Cloudbender's Crossbow
-					i(215938),	-- Cloudfall Edge
-					i(215949),	-- Crane Temple Sword
-					i(215803),	-- Dragonguard's Glaive
-					i(216567),	-- Dreadwood Bulwark
-					i(215859),	-- Faded Forest Staff
+					i(215871),	-- Amberweaver's Conduit (wowhead)
+					i(210342),	-- Bataari Hacker (wowhead)
+					i(215980),	-- Binan Falchion (wowhead)
+					i(215641),	-- Claws of the Wakener (wowhead)
+					i(215558),	-- Cloudbender's Crossbow (wowhead)
+					i(215938),	-- Cloudfall Edge (wowhead)
+					i(215949),	-- Crane Temple Sword (wowhead)
+					i(215803),	-- Dragonguard's Glaive (wowhead)
+					i(216567),	-- Dreadwood Bulwark (wowhead)
+					i(215859),	-- Faded Forest Staff (wowhead)
 					i(216574),	-- Flamecaller's Bulwark (wowhead)
-					i(215679),	-- Golden Crane Rod
-					i(215738),	-- Grummle Mace
-					i(215780),	-- Hatred's Warmace
-					i(211163),	-- Hidden Pass Knuckles
-					i(216418),	-- Hozen Dagger
-					i(215487),	-- Hozen Waraxe
-					i(215747),	-- Mace of the Rikkitun
-					i(216001),	-- Mountainsage Rod
-					i(210638),	-- Mushan Hewer
-					i(216423),	-- Pandaren Basher
-					i(216442),	-- Pandaren Decorative Fan
-					i(216024),	-- Pandaren Hewer
-					i(216438),	-- Pandaren Manuscript
-					i(216542),	-- Pandaren Protector
-					i(216479),	-- Pandaren Waveblade
-					i(211149),	-- Rikkitun Warbow
-					i(215595),	-- Saltscale Shanker
-					i(216611),	-- Seawatch Speargun
+					i(215679),	-- Golden Crane Rod (wowhead)
+					i(215738),	-- Grummle Mace (wowhead)
+					i(215780),	-- Hatred's Warmace (wowhead)
+					i(211163),	-- Hidden Pass Knuckles (wowhead)
+					i(216418),	-- Hozen Dagger (wowhead)
+					i(215487),	-- Hozen Waraxe (wowhead)
+					i(215747),	-- Mace of the Rikkitun (wowhead)
+					i(216001),	-- Mountainsage Rod (wowhead)
+					i(210638),	-- Mushan Hewer (wowhead)
+					i(216423),	-- Pandaren Basher (wowhead)
+					i(216442),	-- Pandaren Decorative Fan (wowhead)
+					i(216024),	-- Pandaren Hewer (wowhead)
+					i(216438),	-- Pandaren Manuscript (wowhead)
+					i(216542),	-- Pandaren Protector (wowhead)
+					i(216479),	-- Pandaren Waveblade (wowhead)
+					i(211149),	-- Rikkitun Warbow (wowhead)
+					i(215595),	-- Saltscale Shanker (wowhead)
+					i(216611),	-- Seawatch Speargun (wowhead)
 					i(216572),	-- Shomi's Barrier (wowhead)
-					i(215590),	-- Shomi's Shanker (August Celestials reward box)
-					i(215601),	-- Spike of the Rikkitun
-					i(215866),	-- Staff of Focus
-					i(215743),	-- Sunsoul Smasher
-					i(215942),	-- Swordmistress' Edge
-					i(216475),	-- Temple Trainee's Blade
-					i(216471),	-- Tian Monastery Channel
-					i(215863),	-- Torch of Midnight
-					i(215700),	-- Trailseeker Longrifle
-					i(215946),	-- Valiant's Honorblade
-					i(215675),	-- Wakener's Lantern (drop)
+					i(215590),	-- Shomi's Shanker (wowhead)
+					i(215601),	-- Spike of the Rikkitun (wowhead)
+					i(215866),	-- Staff of Focus (wowhead)
+					i(215743),	-- Sunsoul Smasher (wowhead)
+					i(215942),	-- Swordmistress' Edge (wowhead)
+					i(216475),	-- Temple Trainee's Blade (wowhead)
+					i(216471),	-- Tian Monastery Channel (wowhead)
+					i(215863),	-- Torch of Midnight (wowhead)
+					i(215700),	-- Trailseeker Longrifle (wowhead)
+					i(215946),	-- Valiant's Honorblade (wowhead)
+					i(215675),	-- Wakener's Lantern (wowhead)
 				}),
 			}),
 		},
