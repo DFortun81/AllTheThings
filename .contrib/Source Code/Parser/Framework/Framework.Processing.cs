@@ -1962,6 +1962,14 @@ namespace ATT
                 Objects.Merge(data, "providers", new List<object> { new List<object> { "i", providerItem } });
             }
 
+            // Provider Object for the Criteria
+            long providerObject = criteriaData.GetProviderObject();
+            if (providerObject > 0)
+            {
+                LogDebug($"INFO: Added providers to Criteria {achID}:{criteriaID} with Object: {providerObject}");
+                Objects.Merge(data, "providers", new List<object> { new List<object> { "o", providerObject } });
+            }
+
             // Provider NPC for the Criteria
             long providerNPC = criteriaData.GetProviderNPC();
             if (providerNPC > 0)

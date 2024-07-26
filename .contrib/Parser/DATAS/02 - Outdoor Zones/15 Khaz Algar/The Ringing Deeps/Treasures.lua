@@ -175,6 +175,71 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 68.9, 38.8, THE_RINGING_DEEPS },
 				["questID"] = 79308,
 			}),
+			-- Achievements
+			o(455269, {	-- Notes On The Machine Speakers: Fragment I
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(455274, {	-- Notes On The Machine Speakers: Fragment II
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(455275, {	-- Notes On The Machine Speakers: Fragment III
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(455276, {	-- Notes On The Machine Speakers: Fragment IV
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(455277, {	-- Notes On The Machine Speakers: Fragment V
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(455278, {	-- Notes On The Machine Speakers: Fragment VI
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(454416, {	-- Alfritha's Plaque
+                -- TODO
+                --["coord"] = { X, Y, THE_RINGING_DEEPS },
+            }),
+            o(454405, {	-- Attwogaz's Plaque
+                -- TODO
+                --["coord"] = { X, Y, THE_RINGING_DEEPS },
+            }),
+            o(454417, {	-- Gundrig's Plaque
+                -- TODO
+                --["coord"] = { X, Y, THE_RINGING_DEEPS },
+            }),
+            o(454404, {	-- Hathlaz's Plaque
+                -- TODO
+                --["coord"] = { X, Y, THE_RINGING_DEEPS },
+            }),
+            o(454406, {	-- Krattdaz's Plaque
+                -- TODO
+                --["coord"] = { X, Y, THE_RINGING_DEEPS },
+            }),
+            o(454412, {	-- Merunth's Plaque
+                -- TODO
+                --["coord"] = { X, Y, THE_RINGING_DEEPS },
+            }),
+            o(454418, {	-- Sathilga's Plaque
+                -- TODO
+                --["coord"] = { X, Y, THE_RINGING_DEEPS },
+            }),
+            o(454407, {	-- Uisgaz's Plaque
+                -- TODO
+                --["coord"] = { X, Y, THE_RINGING_DEEPS },
+            }),
+			o(454414, {	-- Varerko's Plaque
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+            o(454408, {	-- Venedaz's Plaque
+                -- TODO
+                --["coord"] = { X, Y, THE_RINGING_DEEPS },
+            }),
 		}),
 	}),
 })));
