@@ -126,48 +126,48 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(214790),	-- Highpeak Sabatons
 				}),
 				n(WEAPONS, {
-					i(215644),	-- Amber Claw
-					i(215873),	-- Amberweaver's Staff
+					i(215644),	-- Amber Claw (wowhead)
+					i(215873),	-- Amberweaver's Staff (wowhead)
 					i(215746),	-- Bearheart's Basher (wowhead)
 					i(216004),	-- Blazecaster's Wand (wowhead)
 					i(215741),	-- Bloodseeker's Bonebreaker (wowhead)
-					i(215681),	-- Crane's Beak Effigy
-					i(215948),	-- Darkhide Sword
-					i(216569),	-- Deflector of Orbiss
-					i(215862),	-- Engraved Spire
+					i(215681),	-- Crane's Beak Effigy (wowhead)
+					i(215948),	-- Darkhide Sword (wowhead)
+					i(216569),	-- Deflector of Orbiss (wowhead)
+					i(215862),	-- Engraved Spire (wowhead)
 					i(215952),	-- Fear's Bite (wowhead)
-					i(211151),	-- Fran's Repeater
-					i(215678),	-- Grummle Lantern
-					i(215940),	-- Halcyon Blade
+					i(211151),	-- Fran's Repeater (wowhead)
+					i(215678),	-- Grummle Lantern (wowhead)
+					i(215940),	-- Halcyon Blade (wowhead)
 					i(215944),	-- Harmonious Scimitar (wowhead)
-					i(216419),	-- Hozen Knife
-					i(215861),	-- Instructor's Spire (quest reward)
+					i(216419),	-- Hozen Knife (wowhead)
+					i(215861),	-- Instructor's Spire (wowhead)
 					i(215511),	-- Jadestone Greataxe (wowhead)
-					i(215486),	-- Jinyu Waraxe
-					i(215488),	-- Mountainscaler Hatchet
-					i(215982),	-- Marista Greatsword
-					i(215597),	-- Mushan Slicer
-					i(216022),	-- Pandaren Axe
-					--i(216424),	-- Pandaren Breaker (not on wowhead)
-					i(216543),	-- Pandaren Bulwark
-					i(216445),	-- Pandaren Ceremonial Fan
-					i(216021),	-- Pandaren Hatchet
-					i(216421),	-- Pandaren Mace
-					i(215703),	-- Pandaren Rifle
-					i(216544),	-- Pandaren Shield
-					i(216479),	-- Pandaren Waveblade
-					i(216482),	-- Pandaren Windblade
-					i(216440),	-- Pandaren Tome
-					i(216614),	-- Seawatch Crossbow
-					i(215805),	-- Serpentguard Spear
-					i(210335),	-- Shado-Pan Dagger
-					i(215534),	-- Shado-Pan Longbow
-					i(215603),	-- Sha-Warped Slicer
-					i(216473),	-- Tian Monastery Staff
-					i(216477),	-- Temple Trainee's Scimitar
+					i(215486),	-- Jinyu Waraxe (wowhead)
+					i(215982),	-- Marista Greatsword (wowhead)
+					i(215488),	-- Mountainscaler Hatchet (wowhead)
+					i(215597),	-- Mushan Slicer (wowhead)
+					i(216022),	-- Pandaren Axe (wowhead)
+					-- i(216424),	-- Pandaren Breaker (not on wowhead)
+					i(216543),	-- Pandaren Bulwark (wowhead)
+					i(216445),	-- Pandaren Ceremonial Fan (wowhead)
+					i(216021),	-- Pandaren Hatchet (wowhead)
+					i(216421),	-- Pandaren Mace (wowhead)
+					i(215703),	-- Pandaren Rifle (wowhead)
+					i(216544),	-- Pandaren Shield (wowhead)
+					i(216440),	-- Pandaren Tome (wowhead)
+					i(216479),	-- Pandaren Waveblade (wowhead)
+					i(216482),	-- Pandaren Windblade (wowhead)
+					i(216614),	-- Seawatch Crossbow (wowhead)
+					i(215805),	-- Serpentguard Spear (wowhead)
+					i(215603),	-- Sha-Warped Slicer (wowhead)
+					i(210335),	-- Shado-Pan Dagger (wowhead)
+					i(215534),	-- Shado-Pan Longbow (wowhead)
+					i(216477),	-- Temple Trainee's Scimitar (wowhead)
+					i(216473),	-- Tian Monastery Staff (wowhead)
 					i(215745),	-- Wasteland Basher (wowhead)
-					i(216576),	-- Wasteland Deflector
-					i(215869),	-- Waterweaver's Staff
+					i(216576),	-- Wasteland Deflector (wowhead)
+					i(215869),	-- Waterweaver's Staff (wowhead)
 				}),
 			}),
 		},
