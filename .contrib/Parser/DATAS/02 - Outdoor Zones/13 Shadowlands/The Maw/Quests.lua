@@ -472,6 +472,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61075, {	-- A Spark of Light
 				["provider"] = { "n", 162804 },	-- Ve'nari
 				["coord"] = { 46.9, 41.7, THE_MAW },
+				["g"] = {
+					i(180607),	-- Cypher of Blinding (QI!)
+				},
 			}),
 			q(60775, {	-- A Suitable Demise
 				["provider"] = { "n", 162804 },	-- Ve'nari
