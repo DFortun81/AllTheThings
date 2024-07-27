@@ -7,17 +7,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			ach(40851),		-- Adventurer of Hallowfall (automated)
 			ach(40622),		-- Biblo Archivist (automated)
 			ach(40150),		-- Children's Entertainer
-			ach(40826, {	-- Explore Hallowfall
-				crit(69776),	-- Dunelle's Kindness
-				crit(69777),	-- Aegis Wall
-				crit(69778),	-- The Fangs
-				crit(69779),	-- Lorel's Crossing
-				crit(69780),	-- Mereldar
-				crit(69781),	-- Light's Redoubt
-				crit(69782),	-- Light's Blooming
-				crit(69783),	-- Priory of the Sacred Flame
-				crit(69784),	-- The Undersea
-			}),
+			ach(40826),		-- Explore Hallowfall (automated)
 			ach(20594),		-- Flamegard's Hope
 			ach(20598),		-- Hallowfall (automated)
 			ach(40704, {	-- Hallowfall Glyph Hunter

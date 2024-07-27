@@ -2192,6 +2192,10 @@ namespace ATT
                             Objects.Merge(criteriaData, "awp", awp);
                         }
                         Objects.Merge(data, "g", criteriaData);
+
+                        //if (criteria.Type == 43) {
+                        //    LogWarn($"Criteria {achID}:{criteria.ID} is of Type 43 and was added automagically");
+                        //}
                     }
 
                     // Achievements whose criteria is incorporated should no longer use achievement_criteria symlink

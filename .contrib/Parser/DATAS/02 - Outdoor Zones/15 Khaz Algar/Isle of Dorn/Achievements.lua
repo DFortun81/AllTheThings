@@ -5,18 +5,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 	m(ISLE_OF_DORN, {
 		n(ACHIEVEMENTS, {
 			ach(40435),		-- Adventurer of the Isle of Dorn (automated)
-			ach(40831, {	-- Explore the Isle of Dorn
-				crit(69786),	-- Ruptured Lake
-				crit(69787),	-- Lightless Channels
-				crit(69788),	-- Crawling Chasm
-				crit(69789),	-- The Weaver's Lair
-				crit(69790),	-- Untamed Valley
-				crit(69791),	-- Twitching Gorge
-				crit(69792),	-- Rak-Ush
-				crit(69793),	-- The Skeins
-				crit(69794),	-- Umbral Bazaar
-				crit(69795),	-- High Hollows
-			}),
+			ach(40831),		-- Explore the Isle of Dorn (automated)
 			ach(40630),		-- For the Collective
 			ach(40623),		-- I Only Need One Trip
 			ach(40166, {	-- Isle of Dorn Glyph Hunter
