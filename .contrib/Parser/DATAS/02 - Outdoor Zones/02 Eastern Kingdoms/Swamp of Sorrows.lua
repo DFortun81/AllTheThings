@@ -480,8 +480,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1393, {	-- Galen's Escape
-					["qg"] = 5391,	-- Galen Goodward
-					["coord"] = { 65.4, 18.1, SWAMP_OF_SORROWS },
+					["providers"] = {
+						{ "n", 5391 },	-- Galen Goodward
+						{ "o", 32569 },	-- Galen's Strongbox
+					},
+					["coords"] = {
+						{ 65.4, 18.1, SWAMP_OF_SORROWS },
+						{ 47.9, 39.8, SWAMP_OF_SORROWS },
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
 					["groups"] = {
@@ -1230,7 +1236,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(1423, {	-- The Lost Supplies
-					["provider"] = { "i", 6172 },	-- Lost Supplies
+					["providers"] = {
+						{ "i", 6172 },	-- Lost Supplies
+						{ "o", 28604 },	-- Scattered Crate
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
