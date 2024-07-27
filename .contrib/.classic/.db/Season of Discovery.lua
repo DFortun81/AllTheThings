@@ -1890,7 +1890,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 					{ 48.6, 12.4, FERALAS },
 					{ 61.4, 34.6, THE_HINTERLANDS },
 				},
-				["maxReputation"] = { 2641, EXALTED };	-- Emerald Wardens
+				["maxReputation"] = { 2641, EXALTED },	-- Emerald Wardens
 				["isDaily"] = true,
 				["lvl"] = 47,
 			}),
@@ -2177,6 +2177,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			q(81727, {	-- Recover Incursion Field Report: Ashenvale
 				["qg"] = 221477,	-- Field Captain Hannalah
 				["coord"] = { 89.6, 40.6, ASHENVALE },
+				["maxReputation"] = { 2641, EXALTED },	-- Emerald Wardens
+				["repeatable"] = true,
 				["lvl"] = 37,
 				["groups"] = {
 					objective(1, {	-- 0/1 Gemeron's Field Report
@@ -2202,6 +2204,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			q(81716, {	-- Recover Incursion Field Report: Duskwood
 				["qg"] = 221471,	-- Field Captain Palandar
 				["coord"] = { 45.6, 51.2, DUSKWOOD },
+				["maxReputation"] = { 2641, EXALTED },	-- Emerald Wardens
+				["repeatable"] = true,
 				["lvl"] = 23,
 				["groups"] = {
 					objective(1, {	-- 0/1 Charla's Field Report
@@ -2227,6 +2231,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			q(81729, {	-- Recover Incursion Field Report: Feralas
 				["qg"] = 221480,	-- Field Captain Arunnel
 				["coord"] = { 48.6, 12.4, FERALAS },
+				["maxReputation"] = { 2641, EXALTED },	-- Emerald Wardens
+				["repeatable"] = true,
 				["lvl"] = 47,
 				["groups"] = {
 					objective(1, {	-- 0/1 Thandros' Field Report
@@ -2252,6 +2258,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			q(81728, {	-- Recover Incursion Field Report: Hinterlands
 				["qg"] = 221479,	-- Field Captain Korlian
 				["coord"] = { 61.4, 34.6, THE_HINTERLANDS },
+				["maxReputation"] = { 2641, EXALTED },	-- Emerald Wardens
+				["repeatable"] = true,
 				["lvl"] = 47,
 				["groups"] = {
 					objective(1, {	-- 0/1 Fallia's Field Report
