@@ -201,45 +201,45 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				--["coord"] = { X, Y, THE_RINGING_DEEPS },
 			}),
 			o(454416, {	-- Alfritha's Plaque
-                -- TODO
-                --["coord"] = { X, Y, THE_RINGING_DEEPS },
-            }),
-            o(454405, {	-- Attwogaz's Plaque
-                -- TODO
-                --["coord"] = { X, Y, THE_RINGING_DEEPS },
-            }),
-            o(454417, {	-- Gundrig's Plaque
-                -- TODO
-                --["coord"] = { X, Y, THE_RINGING_DEEPS },
-            }),
-            o(454404, {	-- Hathlaz's Plaque
-                -- TODO
-                --["coord"] = { X, Y, THE_RINGING_DEEPS },
-            }),
-            o(454406, {	-- Krattdaz's Plaque
-                -- TODO
-                --["coord"] = { X, Y, THE_RINGING_DEEPS },
-            }),
-            o(454412, {	-- Merunth's Plaque
-                -- TODO
-                --["coord"] = { X, Y, THE_RINGING_DEEPS },
-            }),
-            o(454418, {	-- Sathilga's Plaque
-                -- TODO
-                --["coord"] = { X, Y, THE_RINGING_DEEPS },
-            }),
-            o(454407, {	-- Uisgaz's Plaque
-                -- TODO
-                --["coord"] = { X, Y, THE_RINGING_DEEPS },
-            }),
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(454405, {	-- Attwogaz's Plaque
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(454417, {	-- Gundrig's Plaque
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(454404, {	-- Hathlaz's Plaque
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(454406, {	-- Krattdaz's Plaque
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(454412, {	-- Merunth's Plaque
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(454418, {	-- Sathilga's Plaque
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
+			o(454407, {	-- Uisgaz's Plaque
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
 			o(454414, {	-- Varerko's Plaque
 				-- TODO
 				--["coord"] = { X, Y, THE_RINGING_DEEPS },
 			}),
-            o(454408, {	-- Venedaz's Plaque
-                -- TODO
-                --["coord"] = { X, Y, THE_RINGING_DEEPS },
-            }),
+			o(454408, {	-- Venedaz's Plaque
+				-- TODO
+				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+			}),
 		}),
 	}),
 })));
