@@ -1317,6 +1317,7 @@ if IsQuestReplayable then
 	-- Causes a group to remain visible if it is replayable, regardless of collection status
 	OnUpdateForPartySyncedQuest = function(data)
 		data.visible = IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
+		return true
 	end
 
 	-- Detect state changes
@@ -1859,8 +1860,8 @@ if app.IsRetail then
 			end
 
 			-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
-			if OnUpdateForPartySyncedQuest and IsPartySyncActive and questRef.collected and not questRef.OnUpdate then
-				questRef.OnUpdate = OnUpdateForPartySyncedQuest;
+			if OnUpdateForPartySyncedQuest and questRef.collected then
+				questRef.OnUpdate = OnUpdateForPartySyncedQuest
 			end
 
 			-- If the quest is provided by an Item, then show that Item directly under the quest so it can easily show tooltip/Source information if desired

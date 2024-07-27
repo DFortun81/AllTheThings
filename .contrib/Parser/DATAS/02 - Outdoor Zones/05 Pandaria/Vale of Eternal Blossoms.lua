@@ -786,9 +786,10 @@ root(ROOTS.Zones, {
 						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
 					}),
 					q(31370, {	-- The Anglers [H]
-						["isBreadcrumb"] = true,
+						["isBreadcrumb"] = true,	-- this wasn't available for me until I party synced, but no follow up quest on turn in... not sure what locks
 						["provider"] = { "n", 64010 },	-- Master Angler Karu
 						["races"] = HORDE_ONLY,
+						["coord"] = { 60.8, 23.6, VALE_OF_ETERNAL_BLOSSOMS },
 						["timeline"] = { REMOVED_5_1_0, ADDED_10_2_7 },
 					}),
 					q(30225, {	-- The Ashweb Matriarch
