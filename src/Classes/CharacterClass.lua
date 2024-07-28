@@ -7,8 +7,8 @@ local Colorize = app.Modules.Color.Colorize;
 local C_CreatureInfo = C_CreatureInfo;
 local RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace
 	= RAID_CLASS_COLORS, GetPlayerInfoByGUID, UnitClass, UnitGUID, UnitIsGroupLeader, UnitRace;
-local math_floor, rawget, rawset, setmetatable
-	= math.floor, rawget, rawset, setmetatable;
+local math_floor, rawget, rawset, setmetatable, ipairs
+	= math.floor, rawget, rawset, setmetatable, ipairs
 
 -- Class Info Helpers
 local ClassIcons = {
@@ -54,7 +54,7 @@ if GetSpecializationInfoByID then
 			rawset(t, key, specInfo);
 			return specInfo;
 		end
-		
+
 		local info = {
 			icon = ClassIcons[key] or "Interface\\Icons\\INV_Misc_QuestionMark",
 			file = "WARRIOR",
@@ -124,7 +124,7 @@ local ClassInfoMetatable = { __index = function(t, key)
 			};
 			---@diagnostic disable-next-line: inject-field
 			info.icontext = "|T" .. info.icon .. ":0|t " .. info.text;
-			
+
 			rawset(ClassInfoByID, classID, info);
 			rawset(ClassInfoByClassFile, info.file, info);
 			rawset(ClassInfoByClassName, info.name, info);
@@ -138,6 +138,29 @@ end };
 setmetatable(ClassInfoByID, ClassInfoMetatable);
 setmetatable(ClassInfoByClassFile, ClassInfoMetatable);
 setmetatable(ClassInfoByClassName, ClassInfoMetatable);
+
+-- Returns a string containing the class icons, followed by their respective names if desired
+local function GetClassesString(c, includeNames, trim)
+	local icons = {}
+	local info
+	if includeNames then
+		for i,cl in ipairs(c) do
+			info = ClassInfoByID[cl]
+			icons[i] = info.icontext
+		end
+	else
+		for i,cl in ipairs(c) do
+			icons[i * 3 - 2] = "|T";
+			icons[i * 3 - 1] = ClassIcons[cl];
+			icons[i * 3] = ":0|t ";
+		end
+	end
+	if trim then
+		return app.TableConcat(icons):match('^%s*(.*%S)');
+	end
+	return app.TableConcat(icons);
+end
+app.GetClassesString = GetClassesString
 
 -- Implementation
 app.CreateCharacterClass = app.CreateClassWithInfo("CharacterClass", "classID", ClassInfoByID, {

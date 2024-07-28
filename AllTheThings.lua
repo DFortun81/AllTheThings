@@ -1495,8 +1495,8 @@ app.RecreateObject = function(t)
 	return obj;
 end
 
-local GetFixedItemSpecInfo, GetSpecsString, GetGroupItemIDWithModID, GetItemIDAndModID, GroupMatchesParams
-	= app.GetFixedItemSpecInfo, app.GetSpecsString, app.GetGroupItemIDWithModID, app.GetItemIDAndModID, app.GroupMatchesParams
+local GetFixedItemSpecInfo, GetSpecsString, GetGroupItemIDWithModID, GetItemIDAndModID, GroupMatchesParams, GetClassesString
+	= app.GetFixedItemSpecInfo, app.GetSpecsString, app.GetGroupItemIDWithModID, app.GetItemIDAndModID, app.GroupMatchesParams, app.GetClassesString
 
 -- Symlink Lib
 do
@@ -3122,6 +3122,11 @@ local function GetSearchResults(method, paramA, paramB, ...)
 						local specs = entry.specs;
 						if specs and #specs > 0 then
 							right = GetSpecsString(specs, false, false) .. right;
+						else
+							local c = entry.c;
+							if c and #c > 0 then
+								right = GetClassesString(c, false, false) .. right;
+							end
 						end
 
 						-- If this entry has customCollect requirements, list them for clarity
@@ -7263,6 +7268,12 @@ local function SetRowData(self, row, data)
 		if specs and #specs > 0 then
 			summary = GetSpecsString(specs, false, false) .. summary;
 			-- iconAdjust = iconAdjust - #specs;
+		else
+			local classes = data.c
+			if classes and #classes > 0 then
+				summary = GetClassesString(classes, false, false) .. summary;
+				-- iconAdjust = iconAdjust - #classes;
+			end
 		end
 		local rowSummary = row.Summary;
 		local rowLabel = row.Label;
