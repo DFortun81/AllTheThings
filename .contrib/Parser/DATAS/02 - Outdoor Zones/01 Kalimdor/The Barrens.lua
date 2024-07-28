@@ -2646,6 +2646,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 14,
 					["groups"] = {
 						i(3334),	-- Farmer's Shovel
+						i(221498),	-- Sturdy Lunchbox
 					},
 				})),
 				-- #endif
