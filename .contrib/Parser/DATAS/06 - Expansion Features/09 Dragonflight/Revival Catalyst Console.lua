@@ -1490,7 +1490,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}),
 			})),
-			-- #if BEFORE TWW
+			-- #if BEFORE 11.0.2
 			-- Temporary show in main list too when the season is active
 			header(HEADERS.Achievement, SEASON_DRACONIC_PVE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_MYTHIC } }, {
 				-- There are new IDs only for "Tier Slots" in season 4 - main source in raid from tokens
