@@ -892,7 +892,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 						},
 					}),
-					applyclassicphase(PHASE_FIVE, o(181083, {	-- Sothos and Jarien's Heirlooms
+					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, o(181083, {	-- Sothos and Jarien's Heirlooms
 						["crs"] = {
 							16101,	-- Jarien
 							16102,	-- Sothos

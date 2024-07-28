@@ -1055,7 +1055,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["description"] = "This still drops despite being completely worthless.",
 						-- #endif
 					}),
-					applyclassicphase(PHASE_FIVE, i(21982, {	-- Ogre Warbeads
+					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21982, {	-- Ogre Warbeads
 						["timeline"] = { REMOVED_4_0_3 },
 						-- #if BEFORE 4.0.3
 						["crs"] = {
@@ -1239,7 +1239,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					n(11491, {	-- Old Ironbark
 						["description"] = "Talk to him for him to break down the door.",
 					}),
-					applyclassicphase(PHASE_FIVE, n(16097, -- Isalien
+					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16097, -- Isalien
 					-- #if BEFORE 4.0.3
 					bubbleDown({
 						["timeline"] = { REMOVED_4_0_3 },
@@ -1615,7 +1615,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 								11472,	-- Eldreth Spirit
 							},
 						}),
-						applyclassicphase(PHASE_FIVE, i(22224, {	-- Jeering Spectre's Essence
+						applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(22224, {	-- Jeering Spectre's Essence
 							["crs"] = {
 								11471,	-- Eldreth Apparition
 								11475,	-- Eldreth Phantasm

@@ -2174,7 +2174,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cost"] = {{ "i", 20432, 1 }},	-- Signet of Beckoning: Fire
 							["timeline"] = { REMOVED_4_0_3 },
 							["groups"] = {
-								applyclassicphase(PHASE_FIVE, i(21989, {	-- Cinder of Cynders
+								applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21989, {	-- Cinder of Cynders
 									["timeline"] = { REMOVED_4_0_3 },
 								})),
 								i(20666, {	-- Hardened Steel Warhammer

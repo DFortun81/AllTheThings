@@ -1164,7 +1164,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 		}),
 		n(ZONE_DROPS, {
-			applyclassicphase(PHASE_FIVE, i(22138, {	-- Blackrock Bracer
+			applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(22138, {	-- Blackrock Bracer
 				["timeline"] = { REMOVED_4_0_3 },
 			})),
 			i(16786, {	-- Black Dragonspawn Eye
@@ -1249,7 +1249,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["cr"] = 9216,	-- Spirestone Warlord
 				}),
 				-- #endif
-				applyclassicphase(PHASE_FIVE, i(21982, {	-- Ogre Warbeads
+				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, i(21982, {	-- Ogre Warbeads
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if BEFORE 4.0.3
 					["crs"] = {
@@ -1416,7 +1416,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					-- #endif
 				},
 			}),
-			applyclassicphase(PHASE_FIVE, n(16080,	-- Mor Grayhoof
+			applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16080,	-- Mor Grayhoof
 			-- #if BEFORE 4.0.3
 			bubbleDown({
 				["timeline"] = { REMOVED_4_0_3 },
@@ -1956,7 +1956,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FIVE, n(16042, {	-- Lord Valthalak
+				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16042, {	-- Lord Valthalak
 					-- #if BEFORE 6.0.2
 					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 					["cost"] = {

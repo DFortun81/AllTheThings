@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local TIER_ZERO_POINT_FIVE_RACES = { DRUID, HUNTER, MAGE, PALADIN, PRIEST, ROGUE, SHAMAN, WARLOCK, WARRIOR };
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeline"] = { REMOVED_4_0_3 } }, (function(t) return not t.objectiveID; end), {
-	applyclassicphase(PHASE_FIVE, n(TIER_ZERO_POINT_FIVE_SETS, {
+	applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(TIER_ZERO_POINT_FIVE_SETS, {
 		["classes"] = TIER_ZERO_POINT_FIVE_RACES,
 		["groups"] = {
 			cl(DRUID, {

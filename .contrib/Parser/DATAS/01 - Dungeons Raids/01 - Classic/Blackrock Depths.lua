@@ -2458,7 +2458,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(11623),	-- Spritecaster Cape
 					},
 				}),
-				applyclassicphase(PHASE_FIVE, n(16059, {	-- Theldren
+				applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16059, {	-- Theldren
 					["provider"] = { "o", 181074 },	-- Arena Spoils
 					["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.",
 					["cost"] = { { "i", 21986, 1 } },	-- Banner of Provocation

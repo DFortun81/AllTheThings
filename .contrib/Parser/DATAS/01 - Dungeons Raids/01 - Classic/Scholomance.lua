@@ -979,7 +979,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(14522),	-- Maelstrom Leggings
 		i(18694),	-- Shadowy Mail Greaves
 	}),
-	applyclassicphase(PHASE_FIVE, n(16118, {	-- Kormok
+	applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16118, {	-- Kormok
 		-- #if AFTER 10.1.5
 		["description"] = KORMOK_LEGACY_DESCRIPTION,
 		-- #elseif BEFORE 5.0.4
