@@ -143,41 +143,118 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(18714),	-- Ancient Sinew Wrapped Lamina
 					},
 				})),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84560, {	-- Celebrating Good Times
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["sourceQuest"] = 7495,	-- Victory for the Alliance
+					["coord"] = { 67.2, 85.1, STORMWIND_CITY },
+					["timeline"] = { "added 1.15.3" },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(60, 60, 30),
+					["groups"] = {
+						i(228687),	-- Dragonslayer's Signet
+						i(228685),	-- Onyxia Tooth Pendant
+						i(228686),	-- Onyxia Blood Talisman
+					},
+				})),
+				-- #endif
 				q(7496, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- Celebrating Good Times
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["sourceQuest"] = 7495,	-- Victory for the Alliance
 					["coord"] = { 67.2, 85.1, STORMWIND_CITY },
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
-						i(18403),	-- Dragonslayer's Signet
-						i(18406),	-- Onyxia Blood Talisman
-						i(18404),	-- Onyxia Tooth Pendant
+						i(18403, {	-- Dragonslayer's Signet
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
+						i(18404, {	-- Onyxia Tooth Pendant
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
+						i(18406, {	-- Onyxia Blood Talisman
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 					},
 				})),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84561, {	-- For All To See
+					["qg"] = 4949,	-- Thrall
+					["sourceQuest"] = 7490,	-- Victory for the Horde
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["timeline"] = { "added 1.15.3" },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(60, 60, 30),
+					["groups"] = {
+						i(228687),	-- Dragonslayer's Signet
+						i(228685),	-- Onyxia Tooth Pendant
+						i(228686),	-- Onyxia Blood Talisman
+					},
+				})),
+				-- #endif
 				q(7491, bubbleDownFiltered(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS, ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_FILTER, {	-- For All To See
 					["qg"] = 4949,	-- Thrall
 					["sourceQuest"] = 7490,	-- Victory for the Horde
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
-						i(18403),	-- Dragonslayer's Signet
-						i(18404),	-- Onyxia Tooth Pendant
-						i(18406),	-- Onyxia Blood Talisman
+						i(18403, {	-- Dragonslayer's Signet
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
+						i(18404, {	-- Onyxia Tooth Pendant
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
+						i(18406, {	-- Onyxia Blood Talisman
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 					},
 				})),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84555, {	-- Nostro's Compendium
+					["provider"] = { "i", 228680 },	-- Nostro's Compendium of Dragon Slaying
+					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
+					["classes"] = { WARRIOR, PALADIN, ROGUE },
+					["timeline"] = { "added 1.15.3" },
+					["maps"] = { DIRE_MAUL },
+					["lvl"] = lvlsquish(60, 60, 30),
+					["groups"] = {
+						i(228695),	-- A Dull and Flat Elven Blade
+					},
+				})),
+				-- #endif
 				q(7507, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- Nostro's Compendium
 					["provider"] = { "i", 18401 },	-- Nostro's Compendium of Dragon Slaying
 					["description"] = "You get this quest by looting Nostro's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
 					["classes"] = { WARRIOR, PALADIN },
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["maps"] = { DIRE_MAUL },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						i(18513),	-- A Dull and Flat Elven Blade
 					},
 				})),
-				q(7636, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {		-- Stave of the Ancients
+				-- #if SEASON_OF_DISCOVERY
+				q(84546, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
 					["providers"] = {
 						{ "n", 14524 },	-- Vartrus the Ancient
 						{ "i", 18708 },	-- Petrified Bark
@@ -225,6 +302,76 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								14535,	-- Artorius the Doombringer
 							},
 						}),
+						i(228659, {	-- Ancient Rune Etched Stave
+							["cost"] = {
+								{ "i", 18724, 1 },	-- Enchanted Black Dragon Sinew
+							},
+							["groups"] = {
+								i(228334),	-- Rhok'delar, Longbow of the Ancient Keepers
+							},
+						}),
+						i(228332, {	-- Lok'delar, Stave of the Ancient Keepers
+							["description"] = "Go back to Felwood after having completed all the quests and a chat icon will become available, allowing you to interact with one of the ancients. Speak to him and he will give you the staff.",
+							["classes"] = { HUNTER },
+							["sourceQuests"] = {
+								7634,	-- Ancient Sinew Wrapped Lamina
+								7635,	-- A Proper String
+								84546,	-- Stave of the Ancients
+							},
+						}),
+					},
+				})),
+				-- #endif
+				q(7636, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stave of the Ancients
+					["providers"] = {
+						{ "n", 14524 },	-- Vartrus the Ancient
+						{ "i", 18708 },	-- Petrified Bark
+					},
+					["sourceQuest"] = 7633,	-- An Introduction
+					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
+					["coord"] = { 47, 24.48, FELWOOD },
+					["maps"] = { UNGORO_CRATER, BURNING_STEPPES, SILITHUS, WINTERSPRING },
+					["classes"] = { HUNTER },
+					["lvl"] = lvlsquish(60, 60, 30),
+					["groups"] = {
+						-- #if NOT SEASON_OF_DISCOVERY
+						objective(1, {	-- 0/1 Simone's Head
+							["provider"] = { "i", 18952 },	-- Simone's Head
+							["description"] = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Ungoro Crater.",
+							["coord"] = { 34.5, 41.1, UNGORO_CRATER },
+							["crs"] = {
+								14527,	-- Simone the Inconspicuous
+								14533,	-- Simone the Seductress
+							},
+						}),
+						objective(2, {	-- 0/1 Klinfran's Head
+							["provider"] = { "i", 18953 },	-- Klinfran's Head
+							["description"] = "Use Concussive Shot/Serpent Sting to kite him down the road. You should know how long serpent sting lasts, use only one per trip down the road, more if you think you can risk it. As soon as it's worn off, drop an ice trap, let him stand in it, go to the other side, max range, and start again. If for whatever reason he breaks trap, you can use scatter shot, or use concussive shot to just keep kiting him in a circle until the cooldown finishes.\n\nDo not worry about his enrage, because he won't be touching you at all if you play right.\n\nLocated in the Burning Steppes.",
+							["coord"] = { 25.3, 65.9, BURNING_STEPPES },
+							["crs"] = {
+								14529,	-- Franklin the Friendly
+								14534,	-- Klinfran the Crazed
+							},
+						}),
+						objective(3, {	-- 0/1 Solenor's Head
+							["provider"] = { "i", 18954 },	-- Solenor's Head
+							["description"] = "This is the hardest demon:\n\nStrengths:\n* He does NOT predictably chase you. He frequently stops to fear (disorienting you and causing around 800 damage also) or will stop to shoot homing beetles at you.\n* The homing beetles basically prevent you from bandaging. They move extremely slow but hit extremely hard\n* If you leave melee range (further than 2-3 range or so), he uses an instant cast fear spell that also does 700-800 damage instantly, and he can cast these quickly, almost seemingly chain casting. Shadow protection potions do absorb this damage, however, even with greater potions, he tears through them very fast. It's also likely that the fear will send you into the homing beetles\n* Seemingly unlimited mana bar, so Viper Sting is useless\n* Scorpid sting has very little/no effect on him\n* Melees extremely hard and fast (200+) when in normal form\n\nWeaknesses:\n* If you use Rank 3 Wing Clip on him, it immobilizes him completely with \"Crippling Clip\" for 30 seconds.\n* The homing missiles (creepings) are not fired when you remain in melee range\n* He does NOT cast his fear when you remain in melee range\n* Must be 'chilled' via Frost Trap prior to fully engaging\n\nLocated in Silithus.",
+							["coord"] = { 24.7, 76.0, SILITHUS },
+							["crs"] = {
+								14536,	-- Nelson the Nice
+								14530,	-- Solenor the Slayer
+							},
+						}),
+						objective(4, {	-- 0/1 Artorius's Head
+							["provider"] = { "i", 18955 },	-- Artorius's Head
+							["description"] = "Kite him using Aspect of the Cheetah. Keep Serpent Sting on at all times and use Concussive Shot whenever he gets close. It is important to remain beyond 30 yards of the Demonic Doom, yet within range to use Arcane Shot so that he continues chasing you. If you rely completely on Serpent Sting for damage, he will break aggro and return to where he started. Once you apply Serpent Sting, count to 4, and apply it again before it wears off (the damage does stack). You will be able to see this by a 2nd damage listing \"Stinging Trauma\", which will continue to increase each time the sting is applied.\n\nBe sure to clear the area you plan on fighting so as to not get dazed by another NPC wandering by.\n\nLocated in Winterspring.",
+							["coord"] = { 60.3, 13.2, WINTERSPRING },
+							["crs"] = {
+								14531,	-- Artorius the Amiable
+								14535,	-- Artorius the Doombringer
+							},
+						}),
+						-- #endif
 						i(18707, {	-- Ancient Rune Etched Stave
 							["cost"] = {
 								{ "i", 18724, 1 },	-- Enchanted Black Dragon Sinew
@@ -248,21 +395,39 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84556, {	-- The Forging of Quel'Serrar
+					["providers"] = {
+						{ "n",  14368 },	-- Lorekeeper Lydros
+						{ "i", 228695 },	-- A Dull and Flat Elven Blade
+					},
+					["sourceQuest"] = 84555,	-- Nostro's Compendium
+					["classes"] = { WARRIOR, PALADIN, ROGUE },
+					["timeline"] = { "added 1.15.3" },
+					["maps"] = { DIRE_MAUL },
+					["lvl"] = lvlsquish(60, 60, 30),
+				})),
+				-- #endif
 				q(7508, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- The Forging of Quel'Serrar
 					["providers"] = {
 						{ "n", 14368 },	-- Lorekeeper Lydros
 						{ "i", 18513 },	-- A Dull and Flat Elven Blade
 					},
 					["sourceQuest"] = 7507,	-- Nostro's Compendium
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["maps"] = { DIRE_MAUL },
 					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = lvlsquish(60, 60, 30),
 				})),
-				q(7509, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- The Forging of Quel'Serrar
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84557, {	-- The Forging of Quel'Serrar
 					["qg"] = 14368,	-- Lorekeeper Lydros
-					["sourceQuest"] = 7508,	-- The Forging of Quel'Serrar
+					["sourceQuest"] = 84556,	-- The Forging of Quel'Serrar
+					["classes"] = { WARRIOR, PALADIN, ROGUE },
+					["timeline"] = { "added 1.15.3" },
 					["maps"] = { DIRE_MAUL },
-					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = lvlsquish(60, 60, 30),
 					["groups"] = {
 						objective(1, {	-- 0/1 Treated Ancient Blade
@@ -285,6 +450,42 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["itemID"] = 18489,	-- Unfired Ancient Blade
 							["description"] = "Place this in front of Onyxia's Breath attack during The Forging of Quel'Serrar quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
 						},
+						i(228679),	-- Quel'Serrar
+					},
+				})),
+				-- #endif
+				q(7509, bubbleDown({ ["timeline"] = { REMOVED_3_3_0 } }, {	-- The Forging of Quel'Serrar
+					["qg"] = 14368,	-- Lorekeeper Lydros
+					["sourceQuest"] = 7508,	-- The Forging of Quel'Serrar
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+					["maps"] = { DIRE_MAUL },
+					["classes"] = { WARRIOR, PALADIN },
+					["lvl"] = lvlsquish(60, 60, 30),
+					["groups"] = {
+						-- #if NOT SEASON_OF_DISCOVERY
+						objective(1, {	-- 0/1 Treated Ancient Blade
+							["provider"] = { "i", 18492 },	-- Treated Ancient Blade
+							["description"] = "Drops from Onyxia when you use the Heated Ancient Blade on her corpse.",
+							["cr"] = 10184,	-- Onyxia
+							["cost"] = {
+								{ "i", 18488, 1 },	-- Heated Ancient Blade
+							},
+						}),
+						{
+							["itemID"] = 18488,	-- Heated Ancient Blade
+							["provider"] = { "o", 179562 },	-- Ancient Heated Blade
+							["description"] = "Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",
+							["cost"] = {
+								{ "i", 18489, 1 },	-- Unfired Ancient Blade
+							},
+						},
+						{
+							["itemID"] = 18489,	-- Unfired Ancient Blade
+							["description"] = "Place this in front of Onyxia's Breath attack during The Forging of Quel'Serrar quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
+						},
+						-- #endif
 						i(18348),	-- Quel'Serrar
 					},
 				})),

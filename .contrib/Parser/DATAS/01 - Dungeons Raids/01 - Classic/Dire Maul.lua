@@ -285,12 +285,33 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				q(84550, {	-- Codex of Defense
+					["providers"] = {
+						{ "i", 228692 },	-- Codex of Defense
+						{ "n",  14383 },	-- Lorekeeper Kildrath
+					},
+					["timeline"] = { "added 1.15.3" },
+					["maps"] = CAPITAL_GARDENS_MAPS,
+					["classes"] = { WARRIOR },
+					["lvl"] = 54,
+					["groups"] = {
+						i(228465, {	-- Royal Seal of Eldre'Thalas
+							["timeline"] = { "added 1.15.3" },
+						}),
+					},
+				}),
+				-- #endif
 				q(7499, {	-- Codex of Defense
 					["providers"] = {
 						{ "i", 18357 },	-- Codex of Defense
 						{ "n", 14383 },	-- Lorekeeper Kildrath
 					},
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #else
 					["timeline"] = { REMOVED_4_0_3 },
+					-- #endif
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { WARRIOR },
 					["lvl"] = 54,
@@ -497,12 +518,33 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				q(84548, {	-- Garona: A Study on Stealth and Treachery
+					["providers"] = {
+						{ "i", 228691 },	-- Garona: A Study on Stealth and Treachery
+						{ "n",  14383 },	-- Lorekeeper Kildrath
+					},
+					["timeline"] = { "added 1.15.3" },
+					["maps"] = CAPITAL_GARDENS_MAPS,
+					["classes"] = { ROGUE },
+					["lvl"] = 54,
+					["groups"] = {
+						i(228464, {	-- Royal Seal of Eldre'Thalas
+							["timeline"] = { "added 1.15.3" },
+						}),
+					},
+				}),
+				-- #endif
 				q(7498, {	-- Garona: A Study on Stealth and Treachery
 					["providers"] = {
 						{ "i", 18356 },	-- Garona: A Study on Stealth and Treachery
 						{ "n", 14383 },	-- Lorekeeper Kildrath
 					},
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #else
 					["timeline"] = { REMOVED_4_0_3 },
+					-- #endif
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { ROGUE },
 					["lvl"] = 54,
@@ -746,12 +788,33 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				q(7500, {	-- The Arcanist's Cookbook
+					["providers"] = {
+						{ "i", 228693 },	-- The Arcanist's Cookbook
+						{ "n",  14383 },	-- Lorekeeper Kildrath
+					},
+					["timeline"] = { "added 1.15.3" },
+					["maps"] = CAPITAL_GARDENS_MAPS,
+					["classes"] = { MAGE },
+					["lvl"] = 54,
+					["groups"] = {
+						i(228466, {	-- Royal Seal of Eldre'Thalas
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+					},
+				}),
+				-- #endif
 				q(7500, {	-- The Arcanist's Cookbook
 					["providers"] = {
 						{ "i", 18358 },	-- The Arcanist's Cookbook
 						{ "n", 14383 },	-- Lorekeeper Kildrath
 					},
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #else
 					["timeline"] = { REMOVED_4_0_3 },
+					-- #endif
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { MAGE },
 					["lvl"] = 54,
@@ -917,12 +980,33 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				q(84551, {	-- The Light and How To Swing It
+					["providers"] = {
+						{ "i", 228690 },	-- The Light and How to Swing It
+						{ "n",  14382 },	-- Lorekeeper Mykos
+					},
+					["timeline"] = { "added 1.15.3" },
+					["maps"] = CAPITAL_GARDENS_MAPS,
+					["classes"] = { PALADIN },
+					["lvl"] = 54,
+					["groups"] = {
+						i(228467, {	-- Royal Seal of Eldre'Thalas
+							["timeline"] = { REMOVED_4_0_3 },
+						}),
+					},
+				}),
+				-- #endif
 				q(7501, {	-- The Light and How To Swing It
 					["providers"] = {
 						{ "i", 18359 },	-- The Light and How to Swing It
 						{ "n", 14382 },	-- Lorekeeper Mykos
 					},
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #else
 					["timeline"] = { REMOVED_4_0_3 },
+					-- #endif
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					["classes"] = { PALADIN },
 					["lvl"] = 54,
@@ -1080,8 +1164,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				-- #endif
 				["maps"] = ALL_DIREMAUL_MAPS,
 				["groups"] = {
+					-- #if SEASON_OF_DISCOVERY
+					i(228692, {	-- Codex of Defense
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					i(18357, {	-- Codex of Defense
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #else
 						["timeline"] = { REMOVED_4_0_3 },
+						-- #endif
 					}),
 					i(18360, {	-- Harnessing Shadows
 						["timeline"] = { REMOVED_4_0_3 },
@@ -1089,17 +1182,44 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					i(18363, {	-- Frost Shock and You
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					i(228691, {	-- A Study on Stealth and Treachery
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					i(18356, {	-- Garona: A Study on Stealth and Treachery
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #else
 						["timeline"] = { REMOVED_4_0_3 },
+						-- #endif
 					}),
 					i(18362, {	-- Holy Bologna: What the Light Won't Tell You
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
-					i(18401, {	-- Nostro's Compendium of Dragon Slaying
-						["timeline"] = { REMOVED_3_2_2 },
+					-- #if SEASON_OF_DISCOVERY
+					i(228680, {	-- Nostro's Compendium of Dragon Slaying
+						["timeline"] = { "added 1.15.3" },
 					}),
+					-- #endif
+					i(18401, {	-- Nostro's Compendium of Dragon Slaying
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #else
+						["timeline"] = { REMOVED_3_2_2 },
+						-- #endif
+					}),
+					-- #if SEASON_OF_DISCOVERY
+					i(228693, {	-- The Arcanist's Cookbook
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					i(18358, {	-- The Arcanist's Cookbook
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #else
 						["timeline"] = { REMOVED_4_0_3 },
+						-- #endif
 					}),
 					i(18364, {	-- The Emerald Dream
 						["timeline"] = { REMOVED_4_0_3 },
@@ -1107,8 +1227,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					i(18361, {	-- The Greatest Race of Hunters
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					i(228690, {	-- The Light and How to Swing It
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					i(18359, {	-- The Light and How to Swing It
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #else
 						["timeline"] = { REMOVED_4_0_3 },
+						-- #endif
 					}),
 				},
 			}),
