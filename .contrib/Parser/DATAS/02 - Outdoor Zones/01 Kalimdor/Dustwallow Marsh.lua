@@ -1250,7 +1250,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["sourceQuest"] = 1206,	-- Jarl Needs Eyes
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						REMOVED_1_15_0
+						-- #else
+						REMOVED_4_0_3
+						-- #endif
+					},
 					-- #if BEFORE TBC
 					["cost"] = {{ "i", 3853, 1 }},	-- Moonsteel Broadsword
 					-- #endif
@@ -1266,6 +1272,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(9622),	-- Reedknot Ring
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(81570, {	-- Jarl Needs a Blade
+					["qg"] = 4792,	-- "Swamp Eye" Jarl
+					["sourceQuest"] = 1206,	-- Jarl Needs Eyes
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["cost"] = {{ "i", 217281, 1 }},	-- Moonsteel Broadsword
+					["lvl"] = 30,
+					["groups"] = {
+						i(5016),	-- Artisan's Trousers
+						i(9622),	-- Reedknot Ring
+					},
+				})),
+				-- #endif
 				q(27184, {	-- Jarl Needs Eyes
 					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["sourceQuest"] = 27183,	-- Marsh Frog Legs
