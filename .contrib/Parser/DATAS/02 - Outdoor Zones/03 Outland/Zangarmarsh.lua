@@ -1926,6 +1926,9 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				n(TREASURES, {
+					o(182952),	-- Steam Pump Flotsam
+				}),
 				n(VENDORS, {
 					n(18581, {	-- Alliance Field Scout
 						["coord"] = { 64.6, 46.4, ZANGARMARSH },

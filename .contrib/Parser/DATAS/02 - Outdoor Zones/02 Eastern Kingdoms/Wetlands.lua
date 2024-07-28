@@ -2044,6 +2044,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 			}),
 			-- #endif
+			n(TREASURES, {
+				o(180662),	-- Schooner Wreckage
+			}),
 			n(VENDORS, {
 				n(1441, {	-- Brak Durnad <Weaponsmith>
 					["coord"] = { 11.5, 59.6, WETLANDS },

@@ -10,6 +10,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["coord"] = { 36.7, 48.8, ZARALEK_CAVERN },
 				["questID"] = 73697,
 			}),
+			o(385585, {	-- Binding Oaths
+				["coord"] = { 61.2, 71.8, ZARALEK_CAVERN },
+			}),
 			o(385565, {	-- Blazing Shadowflame Chest
 				["description"] = "You'll need to equip an Onyxia Scale Cloak in order to open this chest.",
 				["coord"] = { 28.6, 47.9, ZARALEK_CAVERN },
@@ -40,6 +43,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					i(205192),	-- Volatile Crystal Shard
 				},
+			}),
+			o(385584, {	-- Demanding Perfection
+				["coord"] = { 43.3, 23.7, ZARALEK_CAVERN },
 			}),
 			o(401839, {	-- Dreamer's Bounty
 				["description"] = "Attack a nearby Preying Dustmoth and wait until it casts Drowsy Dust - don't interrupt! Once you have the debuff, kill the moth and open the chest.",
@@ -129,6 +135,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						},
 					}),
 				},
+			}),
+			o(385586, {	-- Primal Power
+				["coord"] = { 47.4, 48.6, ZARALEK_CAVERN },
 			}),
 			o(386086, {	-- Seething Cache
 				["description"] = "You'll need to pick up 3x stacks of a Insidious Insight debuff from Seething Orbs located in the Zaqali Caldera (Plot coords in Debug).\n\nWarning: While you may click each Seething Orb with multiple players, when the first player clicks the Seething Cache, the debuff will be removed from all nearby players and the cache itself will be gone!",

@@ -7,17 +7,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			ach(17783, {	-- Adventurer of Zaralek Cavern
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17567, {    -- Ancient Stones of Zaralek
-				crit(58826, {    -- Demanding Perfection
-					["coord"] = { 43.3, 23.7, ZARALEK_CAVERN },
-				}),
-				crit(58827, {    -- Binding Oaths
-					["coord"] = { 61.2, 71.8, ZARALEK_CAVERN },
-				}),
-				crit(58828, {    -- Primal Power
-					["coord"] = { 47.4, 48.6, ZARALEK_CAVERN },
-				}),
-			}),
+			ach(17567),    -- Ancient Stones of Zaralek (automated)
 			petbattle(ach(17880, {	-- Battle in Zaralek Cavern
 				crit(59352, {	-- To a Land Down Under
 					["_quests"] = { 75680 },	-- To a Land Down Under
@@ -397,7 +387,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["coord"] = { 44.91, 77.71, ZARALEK_CAVERN },
 					-- #else
 					["description"] = "Can also be found during the quest The Slowest Fan Club from Briggul.",
-					["crs"] = { 
+					["crs"] = {
 						201875,	-- Aimless Snail (World Quest Version)
 						211267,	-- Aimless Snail (Permanent)
 					},

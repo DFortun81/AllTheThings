@@ -5509,6 +5509,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						})
 					},
 				}),
+				o(180751),	-- Floating Wreckage
 			}),
 			n(VENDORS, {
 				n(5594, {	-- Alchemist Pestlezugg <Alchemy Supplies>

@@ -863,6 +863,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 			}),
 			-- #endif
+			-- #if BEFORE CATA
+			n(TREASURES, {
+				o(180685),	-- Waterlogged Wreckage
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(2480, {	-- Bro'kin <Alchemy Supplies>
 					["coord"] = { 38.0, 38.0, ALTERAC_MOUNTAINS },

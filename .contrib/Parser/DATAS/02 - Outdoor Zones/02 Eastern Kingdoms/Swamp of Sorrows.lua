@@ -1767,6 +1767,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			-- #endif
+			-- #if AFTER CATA
+			n(TREASURES, {
+				o(180751),	-- Floating Wreckage
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(989, {	-- Banalash <Trade Supplies>
 					["coords"] = {

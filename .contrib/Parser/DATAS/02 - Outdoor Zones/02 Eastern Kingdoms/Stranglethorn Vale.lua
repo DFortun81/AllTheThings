@@ -2618,6 +2618,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(100, i(221366))),	-- Gold Massacre Coin
 			}))),
 			-- #endif
+			-- #if BEFORE CATA
+			n(TREASURES, {
+				o(180685),	-- Waterlogged Wreckage
+			}),
+			-- #endif
+			n(TREASURES, {
+				o(180901),	-- Bloodsail Wreckage
+			}),
 			n(VENDORS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 					["coords"] = {
@@ -2845,13 +2853,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						bloodcoin_s(1, i(216491)),	-- Shipment of Stranglethorn Lumber
 						bloodcoin_g(1, i(216570)),	-- Reins of the Golden Sabercat
 						bloodcoin_g(1, i(216492)),	-- Whistle of the Mottled Blood Raptor
-						
+
 						-- Phase 2
 						bloodcoin_s(2, i(216621)),	-- Blooddrenched Drape
 						bloodcoin_s(2, i(216620)),	-- Bloodrot Cloak
 						bloodcoin_s(2, i(216623)),	-- Cape of Hemostasis
 						bloodcoin_s(2, i(216622)),	-- Coagulated Cloak
-						
+
 						-- Class Items (Blood Harvest)
 						applyclassicphase(SOD_PHASE_THREE, bloodcoin_s(25, i(220173, {	-- Parasomnia
 							["classes"] = { WARRIOR, PALADIN },
@@ -3030,7 +3038,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cost"] = 100000,	-- 10g
 						})),
 						applyclassicphase(SOD_PHASE_THREE, i(219147, {	-- Rune of Grace
-							--["sourceQuest"] = ,	-- 
+							--["sourceQuest"] = ,	--
 							["description"] = "You need to complete the Frix Xizzix quest first. (Crieve TODO: Document the quest chain!)",
 							["classes"] = { PALADIN },
 							["cost"] = 10000,	-- 1g

@@ -2585,7 +2585,8 @@ namespace ATT
                         if (!SOURCED["npcID"].ContainsKey(npcID))
                         {
                             // remove the creatures which are not sourced from being reported as failed to merge
-                            LogDebugWarn($"Criteria not nested to Unsourced NPC {npcID}. Consider Sourcing NPC");
+                            data.TryGetValue("achID", out long achID);
+                            LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsourced NPC {npcID}. Consider Sourcing NPC");
                             Objects.TrackPostProcessMergeKey("npcID", npcID);
                             crs.Add(npcID);
                         }
@@ -2606,7 +2607,8 @@ namespace ATT
                         if (!SOURCED["objectID"].ContainsKey(objectID))
                         {
                             // remove the creatures which are not sourced from being reported as failed to merge
-                            LogDebugWarn($"Criteria not nested to Unsourced Object {objectID}. Consider Sourcing Object");
+                            data.TryGetValue("achID", out long achID);
+                            LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsourced Object {objectID}. Consider Sourcing Object");
                             Objects.TrackPostProcessMergeKey("objectID", objectID);
                             objs.Add(objectID);
                         }
@@ -2630,7 +2632,8 @@ namespace ATT
                             Objects.TrackPostProcessMergeKey("questID", questID);
                             if (questRefs != null)
                             {
-                                LogDebugWarn($"Criteria not nested to Unsorted Quest {questID}. Consider adjusting Quest listing");
+                                data.TryGetValue("achID", out long achID);
+                                LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsorted Quest {questID}. Consider adjusting Quest listing");
                                 questList.Add(questID);
                             }
                         }
@@ -2662,7 +2665,8 @@ namespace ATT
                             else
                             {
                                 // remove the spells which are not sourced from being reported as failed to merge
-                                LogDebugWarn($"Criteria not nested to Unsourced Spell/Recipe {id}. Consider Sourcing Spell/Recipe");
+                                data.TryGetValue("achID", out long achID);
+                                LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsourced Spell/Recipe {id}. Consider Sourcing Spell/Recipe");
                             }
                             Objects.TrackPostProcessMergeKey("spellID", id);
                             Objects.TrackPostProcessMergeKey("recipeID", id);

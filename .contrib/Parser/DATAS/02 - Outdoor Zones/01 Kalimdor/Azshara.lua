@@ -2582,6 +2582,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
+			-- #if BEFORE CATA
+			n(TREASURES, {
+				o(180751),	-- Floating Wreckage
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
 					["coord"] = { 45.2, 90.8, AZSHARA },

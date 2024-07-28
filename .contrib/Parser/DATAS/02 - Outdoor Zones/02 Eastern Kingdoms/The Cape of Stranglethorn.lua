@@ -2656,6 +2656,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 53.2, 27.6, THE_CAPE_OF_STRANGLETHORN },
 				}),
 			}),
+			n(TREASURES, {
+				o(180901),	-- Bloodsail Wreckage
+			}),
 			n(VENDORS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 					["coord"] = { 42.8, 74.1, THE_CAPE_OF_STRANGLETHORN },

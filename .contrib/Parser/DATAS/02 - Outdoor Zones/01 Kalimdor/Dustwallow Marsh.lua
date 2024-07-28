@@ -230,7 +230,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								922,	-- Silt Crawler
 							},
 							-- #endif
-							
+
 						}),
 						i(57843, {	-- Baroque Shield
 							["timeline"] = { ADDED_4_0_3 },
@@ -3682,6 +3682,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
+			}),
+			n(TREASURES, {
+				o(180685),	-- Waterlogged Wreckage
 			}),
 			n(VENDORS, {
 				-- #if BEFORE CATA
