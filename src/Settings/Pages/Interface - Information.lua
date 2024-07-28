@@ -33,7 +33,7 @@ local function GetCoordString(x, y)
 end
 local function GetPatchString(patch)
 	patch = tonumber(patch)
-	return patch and (math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 10) .. "." .. (patch % 10))
+	return patch and (math_floor(patch / 10000) .. "." .. (math_floor(patch / 100) % 100) .. "." .. (patch % 10))
 end
 local DefaultConversionMethod = function(value)
 	return value;
