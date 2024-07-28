@@ -789,7 +789,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				q(7500, {	-- The Arcanist's Cookbook
+				q(84549, {	-- The Arcanist's Cookbook
 					["providers"] = {
 						{ "i", 228693 },	-- The Arcanist's Cookbook
 						{ "n",  14383 },	-- Lorekeeper Kildrath
