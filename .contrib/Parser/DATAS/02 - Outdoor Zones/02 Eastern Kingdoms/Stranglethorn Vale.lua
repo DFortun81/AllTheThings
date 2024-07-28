@@ -3212,8 +3212,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isLimited"] = true,
 						}),
 						i(12163, {	-- Plans: Moonsteel Broadsword (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.1" },
+							-- #endif
 							["isLimited"] = true,
 						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_TWO, i(217282, {	-- Plans: Moonsteel Broadsword (RECIPE!)
+							["timeline"] = { "added 1.15.1" },
+							["isLimited"] = true,
+						})),
+						-- #endif
 						i(12252, {	-- Staff of Protection
 							["isLimited"] = true,
 						}),

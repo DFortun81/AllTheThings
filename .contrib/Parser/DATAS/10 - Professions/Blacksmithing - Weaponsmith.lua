@@ -3,8 +3,13 @@ profession(BLACKSMITHING, {
 	prof(9787, {	-- Weaponsmith
 		["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
 		["sourceQuests"] = {
+			-- #if SEASON_OF_DISCOVERY
+			82662,	-- The Way of the Weaponsmith [Alliance]
+			82665,	-- The Way of the Weaponsmith [Horde]
+			-- #else
 			5284,	-- The Way of the Weaponsmith [Alliance]
 			5302,	-- The Way of the Weaponsmith [Horde]
+			-- #endif
 		},
 		["timeline"] = { REMOVED_4_0_1 },
 		["groups"] = {

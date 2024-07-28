@@ -1278,6 +1278,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 1206,	-- Jarl Needs Eyes
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["cost"] = {{ "i", 217281, 1 }},	-- Moonsteel Broadsword
+					["timeline"] = { "added 1.15.1" },
 					["lvl"] = 30,
 					["groups"] = {
 						i(5016),	-- Artisan's Trousers

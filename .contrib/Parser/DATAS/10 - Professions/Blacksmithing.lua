@@ -77,39 +77,48 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["timeline"] = { REMOVED_4_0_3 },
 		}, {
 			q(5283, {	-- The Art of the Armorsmith [A]
-				["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 				["qg"] = 5164,	-- Grumnus Steelshaper
 				["altQuests"] = {
 					5301,	-- The Art of the Armorsmith [H]
+					-- #if SEASON_OF_DISCOVERY
+					82662,	-- The Way of the Weaponsmith [A]
+					82665,	-- The Way of the Weaponsmith [H]
+					-- #else
 					5284,	-- The Way of the Weaponsmith [A]
 					5302,	-- The Way of the Weaponsmith [H]
+					-- #endif
 				},
 				["coord"] = { 50.2, 42.6, IRONFORGE },
-				["races"] = ALLIANCE_ONLY,
+				["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 				["cost"] = {
 					{ "i", 7937, 4 },	-- Ornate Mithril Helm
 					{ "i", 7936, 2 },	-- Ornate Mithril Boots
 					{ "i", 7935, 1 },	-- Ornate Mithril Breastplate
 				},
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(5301, {	-- The Art of the Armorsmith [H]
-				["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 				["qg"] = 11177,	-- Okothos Ironrager
 				["altQuests"] = {
 					5283,	-- The Art of the Armorsmith [A]
+					-- #if SEASON_OF_DISCOVERY
+					82662,	-- The Way of the Weaponsmith [A]
+					82665,	-- The Way of the Weaponsmith [H]
+					-- #else
 					5284,	-- The Way of the Weaponsmith [A]
 					5302,	-- The Way of the Weaponsmith [H]
+					-- #endif
 				},
 				["coord"] = { 79.8, 23.8, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
+				["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 				["cost"] = {
 					{ "i", 7937, 4 },	-- Ornate Mithril Helm
 					{ "i", 7936, 2 },	-- Ornate Mithril Boots
 					{ "i", 7935, 1 },	-- Ornate Mithril Breastplate
 				},
+				["races"] = HORDE_ONLY,
 			}),
 			q(5284, {	-- The Way of the Weaponsmith [A]
-				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
 				["qg"] = 11146,	-- Ironus Coldsteel
 				["altQuests"] = {
 					5283,	-- The Art of the Armorsmith [A]
@@ -117,16 +126,19 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					5302,	-- The Way of the Weaponsmith [H]
 				},
 				["coord"] = { 49.8, 45, IRONFORGE },
-				["races"] = ALLIANCE_ONLY,
+				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.2" },
+				-- #endif
 				["cost"] = {
 					{ "i", 3853, 4 },	-- Moonsteel Broadsword
 					{ "i", 3855, 4 },	-- Massive Iron Axe
 					{ "i", 7941, 2 },	-- Heavy Mithril Axe
 					{ "i", 7945, 2 },	-- Big Black Mace
 				},
+				["races"] = ALLIANCE_ONLY,
 			}),
 			q(5302, {	-- The Way of the Weaponsmith [H]
-				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
 				["qg"] = 11178,	-- Borgosh Corebender
 				["altQuests"] = {
 					5283,	-- The Art of the Armorsmith [A]
@@ -134,14 +146,56 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					5284,	-- The Way of the Weaponsmith [A]
 				},
 				["coord"] = { 79.6, 23.6, ORGRIMMAR },
-				["races"] = HORDE_ONLY,
+				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.2" },
+				-- #endif
 				["cost"] = {
 					{ "i", 3853, 4 },	-- Moonsteel Broadsword
 					{ "i", 3855, 4 },	-- Massive Iron Axe
 					{ "i", 7941, 2 },	-- Heavy Mithril Axe
 					{ "i", 7945, 2 },	-- Big Black Mace
 				},
+				["races"] = HORDE_ONLY,
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, q(82662, {	-- The Way of the Weaponsmith [A]
+				["qg"] = 11146,	-- Ironus Coldsteel
+				["altQuests"] = {
+					5283,	-- The Art of the Armorsmith [A]
+					5301,	-- The Art of the Armorsmith [H]
+					82665,	-- The Way of the Weaponsmith [H]
+				},
+				["coord"] = { 49.8, 45, IRONFORGE },
+				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
+				["timeline"] = { "added 1.15.2" },
+				["cost"] = {
+					{ "i", 217281, 4 },	-- Moonsteel Broadsword
+					{ "i", 3855, 4 },	-- Massive Iron Axe
+					{ "i", 7941, 2 },	-- Heavy Mithril Axe
+					{ "i", 7945, 2 },	-- Big Black Mace
+				},
+				["races"] = ALLIANCE_ONLY,
+			})),
+			applyclassicphase(SOD_PHASE_THREE, q(82665, {	-- The Way of the Weaponsmith [H]
+				["qg"] = 11178,	-- Borgosh Corebender
+				["altQuests"] = {
+					5283,	-- The Art of the Armorsmith [A]
+					5301,	-- The Art of the Armorsmith [H]
+					82662,	-- The Way of the Weaponsmith [A]
+				},
+				["coord"] = { 79.6, 23.6, ORGRIMMAR },
+				["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
+				["timeline"] = { "added 1.15.2" },
+				["cost"] = {
+					{ "i", 217281, 4 },	-- Moonsteel Broadsword
+					{ "i", 3855, 4 },	-- Massive Iron Axe
+					{ "i", 7941, 2 },	-- Heavy Mithril Axe
+					{ "i", 7945, 2 },	-- Big Black Mace
+				},
+				["races"] = HORDE_ONLY,
+			})),
+			-- #endif
 		})),
 	}),
 	expansion(EXPANSION.MOP, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
@@ -2514,8 +2568,18 @@ profession(BLACKSMITHING, {
 				},
 				{
 					["name"] = "Moonsteel Broadsword",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.1" },
+					-- #endif
 					["recipeID"] = 3496,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Moonsteel Broadsword",
+					["timeline"] = { "added 1.15.1" },
+					["recipeID"] = 439128,
+				}),
+				-- #endif
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_THREE, {
 					["name"] = "Nightfall",

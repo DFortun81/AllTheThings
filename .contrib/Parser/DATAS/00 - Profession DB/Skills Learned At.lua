@@ -216,6 +216,7 @@ for spellID,learnedAt in pairs({
 	[15972] = 180,	-- Glinting Steel Dagger
 	[3508] = 180,	-- Green Iron Hauberk
 	[3496] = 180,	-- Moonsteel Broadsword
+	[439128] = 180,	-- Moonsteel Broadsword
 	[9820] = 185,	-- Barbaric Iron Gloves
 	[7223] = 185,	-- Golden Scale Bracers
 	[3498] = 185,	-- Massive Iron Axe
