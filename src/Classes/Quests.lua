@@ -1860,7 +1860,7 @@ if app.IsRetail then
 			end
 
 			-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
-			if OnUpdateForPartySyncedQuest and questRef.collected then
+			if OnUpdateForPartySyncedQuest and IsPartySyncActive and questRef.collected then
 				questRef.OnUpdate = OnUpdateForPartySyncedQuest
 			end
 
