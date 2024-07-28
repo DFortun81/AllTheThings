@@ -2250,3 +2250,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		},
 	}),
 }));
+
+root(ROOTS.HiddenQuestTriggers, {
+	m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_3_2_0 } }, {
+		n(UNGORO_CRATER, {
+			q(13917),	-- After completing the first daily to receive a Venomhide Baby Tooth
+		}),
+	})),
+});
