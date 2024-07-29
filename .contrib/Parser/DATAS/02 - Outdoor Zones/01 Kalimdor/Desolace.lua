@@ -1030,13 +1030,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 32,
 					["groups"] = {
 						i(15691, {	-- Sidegunner Shottie
-							["timeline"] = { REMOVED_5_0_4 },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15692, {	-- Kodo Brander
-							["timeline"] = { REMOVED_5_0_4 },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						i(15695, {	-- Studded Ring Shield
-							["timeline"] = { REMOVED_5_0_4 },
+							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
 				}),
