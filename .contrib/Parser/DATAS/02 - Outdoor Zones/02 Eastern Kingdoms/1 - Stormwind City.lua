@@ -3324,6 +3324,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84418, {	-- The Missing Knight
+					["qg"] = 5492,	-- Katherine the Pure <Paladin Trainer>
+					["coord"] = { 37.4, 32, STORMWIND_CITY },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+					["groups"] = {
+						i(228238, {	-- Testament of Divine Steed
+							["spellID"] = 461607,	-- Divine Steed
+							["f"] = RECIPES,
+						}),
+					},
+				})),
+				-- #endif
 				q(46728, {	-- The Nation of Kul Tiras
 					["qg"] = 120756,	-- Anduin Wyrnn
 					["sourceQuest"] = 46727,	-- Battle for Azeroth: Tides of War (BfA version)
