@@ -1021,6 +1021,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 9540,	-- Enohar Thunderbrew
 					["coord"] = { 63.6, 20.6, BLASTED_LANDS },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
