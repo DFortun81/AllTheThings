@@ -1909,6 +1909,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { STRANGLETHORN_VALE },
 					["requireSkill"] = BLACKSMITHING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
