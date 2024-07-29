@@ -921,7 +921,6 @@ q(13428),	-- Call to Arms: Alterac Valley	 WOTLK:Call to Arms: Alterac Valley	 C
 q(13476),	-- For Great Honor	 WOTLK:For Great Honor	 CATA:For Great Honor
 q(13478),	-- Concerted Efforts	 WOTLK:Concerted Efforts	 CATA:Concerted Efforts
 q(13649),	-- Justin's Fun Test	 WOTLK:Justin's Fun Test	 CATA:Justin's Fun Test
-q(13917),	-- Gorishi Grub	 WOTLK:Gorishi Grub	 CATA:Gorishi Grub
 q(13990),	-- Upper Deck Promo - Chicken Mount
 q(13997),	-- If You're Reading This While I'm In Combat...	 WOTLK:If You're Reading This While I'm In Combat...	 CATA:If You're Reading This While I'm In Combat...
 q(14032),	-- Kobold Camp Cleanup [Programming Test]	 WOTLK:Kobold Camp Cleanup	 CATA:Kobold Camp Cleanup
