@@ -1000,6 +1000,91 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79242, {	-- No Honor Among Thieves
+					["qg"] = 215643,	-- Tokal
+					["sourceQuest"] = 79236,	-- Cherry for Your Thoughts?
+					["coord"] = { 27.0, 77.2, STRANGLETHORN_VALE },
+					["timeline"] = { "added 1.15.1" },
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/1 Found Illari Duskfeather
+							["provider"] = { "n", 215655 },	-- Illari Duskfeather
+							["coord"] = { 93.8, 71.6, ARATHI_HIGHLANDS },
+						}),
+						objective(2, {	-- 0/1 Illari's Key
+							["providers"] = {
+								{ "i", 212347 },	-- Illari's Key
+								{ "o", 423569 },	-- Dropped Pouch
+							},
+							["coord"] = { 93.8, 71.6, ARATHI_HIGHLANDS },
+						}),
+						i(212553, {	-- Jewel-Encrusted Box
+							["providers"] = {
+								{ "o", 418855 },	-- Illari's Loot Cache
+								{ "i", 212347 },	-- Illari's Key
+							},
+							["coord"] = { 94.1, 69.3, ARATHI_HIGHLANDS },
+							["groups"] = {
+								i(212552, {	-- Psychosophic Epiphany
+									["classes"] = { PRIEST },
+									["groups"] = {
+										recipe(431663),	-- Engrave Belt - Mind Spike
+									},
+								}),
+								i(212560, {	-- Rune of Ancestral Awakening
+									["classes"] = { SHAMAN },
+									["groups"] = {
+										recipe(425883),	-- Engrave Boots - Ancestral Awakening
+									},
+								}),
+								i(212561, {	-- Rune of Burning Darkness
+									["classes"] = { WARLOCK },
+									["groups"] = {
+										recipe(426452),	-- Engrave Belt - Shadow and Flame
+									},
+								}),
+								i(212548, {	-- Rune of Eclipse
+									["classes"] = { DRUID },
+									["groups"] = {
+										recipe(410029),	-- Engrave Belt - Eclipse
+									},
+								}),
+								i(212562, {	-- Rune of Healing Rage
+									["classes"] = { WARRIOR },
+									["groups"] = {
+										recipe(403467),	-- Engrave Boots - Enraged Regeneration
+									},
+								}),
+								i(212559, {	-- Rune of the Poisoned Blade
+									["classes"] = { ROGUE },
+									["groups"] = {
+										recipe(425102),	-- Engrave Belt - Poisoned Knife
+									},
+								}),
+								i(212549, {	-- Rune of the Trapper
+									["classes"] = { HUNTER },
+									["groups"] = {
+										recipe(410118),	-- Engrave Boots - Trap Launcher
+									},
+								}),
+								i(212551, {	-- Rune of Warfare
+									["classes"] = { PALADIN },
+									["groups"] = {
+										recipe(416031),	-- Engrave Boots - The Art of War
+									},
+								}),
+								i(208853, {	-- Spell Notes: Brain Freeze
+									["classes"] = { MAGE },
+									["groups"] = {
+										recipe(401752),	-- Engrave Boots - Brain Freeze
+									},
+								}),
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(681, {	-- Northfold Manor
 					["qg"] = 2700,	-- Captain Nials
 					["coord"] = { 45.9, 47.5, ARATHI_HIGHLANDS },

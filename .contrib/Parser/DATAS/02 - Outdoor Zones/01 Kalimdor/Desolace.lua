@@ -1115,6 +1115,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = { 29, 33 },
 					-- #endif
 				})),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79229, {	-- Highway Robbery
+					["provider"] = { "o", 417353 },	-- Extinguished Campfire
+					["coord"] = { 47.5, 54.6, DESOLACE },
+					["timeline"] = { "added 1.15.1" },
+					["lvl"] = 30,
+				})),
+				-- #endif
 				q(14378, {	-- Hunting Brendol
 					["qg"] = 36329,	-- Thargad
 					["sourceQuests"] = {
@@ -1439,6 +1447,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 38.7, 26.9, DESOLACE },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79235, {	-- On The Lam
+					["qg"] = 11438,	-- Bibbly F'utzbuckle
+					["sourceQuest"] = 79229,	-- Highway Robbery
+					["coord"] = { 62.2, 38.8, DESOLACE },
+					["timeline"] = { "added 1.15.1" },
+					["lvl"] = 30,
+				})),
+				-- #endif
 				q(1373, {	-- Ongeku
 					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1370,	-- Stealing Supplies

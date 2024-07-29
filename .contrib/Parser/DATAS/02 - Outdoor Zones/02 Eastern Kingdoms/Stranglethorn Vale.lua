@@ -734,6 +734,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79236, {	-- Cherry for Your Thoughts?
+					["qg"] = 215643,	-- Tokal
+					["sourceQuest"] = 79235,	-- On The Lam
+					["coord"] = { 27.0, 77.2, STRANGLETHORN_VALE },
+					["timeline"] = { "added 1.15.1" },
+					["lvl"] = 30,
+					["groups"] = {
+						objective(1, {	-- 0/1 Cherry Grog
+							["provider"] = { "i", 4600 },	-- Cherry Grog
+							["cr"] = 2832,	-- Nixxrax Fillamug <Food and Drink>
+						}),
+					},
+				})),
+				-- #endif
 				q(202, {	-- Colonel Kurzen
 					["qg"] = 469,	-- Lieutenant Doren
 					["sourceQuest"] = 574,	-- Special Forces
@@ -1180,7 +1195,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(206, {	-- Mai'Zoth
 					["qg"] = 739,	-- Brother Nimetz
-					["sourceQuest"] = 205,	-- Troll Witchery
+					["sourceQuests"] = {
+						202,	-- Colonel Kurzen
+						205,	-- Troll Witchery
+					},
 					["coord"] = { 37.8, 3.6, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1948,6 +1966,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["providers"] = {
 								{ "i", 4034 },	-- Stone of the Tides
 								{ "i", 4027 },	-- Catelyn's Blade
+								{ "o", 2576 },	-- Altar of the Tides
 							},
 							["coord"] = { 25, 23.6, STRANGLETHORN_VALE },
 							["cr"] = 2624,	-- Gazban
@@ -2054,6 +2073,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 287 },	-- Bookie Herod's Records
 						{ "i", 2719 },	-- Small Brass Key
 					},
+					["sourceQuest"] = 200,	-- Bookie Herod
 					["coord"] = { 43.7, 9.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

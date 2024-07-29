@@ -1130,7 +1130,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(206, {	-- Mai'Zoth
 					["qg"] = 739,	-- Brother Nimetz
-					["sourceQuest"] = 205,	-- Troll Witchery
+					["sourceQuests"] = {
+						202,	-- Colonel Kurzen
+						205,	-- Troll Witchery
+					},
 					["coord"] = { 37.8, 3.6, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -2459,6 +2462,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "o", 287 },	-- Bookie Herod's Records
 						{ "i", 2719 },	-- Small Brass Key
 					},
+					["sourceQuest"] = 200,	-- Bookie Herod
 					["coord"] = { 43.7, 9.4, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
