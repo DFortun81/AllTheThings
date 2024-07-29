@@ -3363,7 +3363,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 56.0, 16.0, STORMWIND_CITY },
 						-- #endif
 					},
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.1",
+						-- #else
+						REMOVED_4_0_3,
+						-- #endif
+					},
 					["requireSkill"] = BLACKSMITHING,
 					["learnedAt"] = 210,
 					["cost"] = { { "i", 6040, 6 } },	-- Golden Scale Bracers
@@ -3378,6 +3384,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(80241, {	-- The Origins of Smithing
+					["qg"] = 7798,	-- Hank the Hammer
+					["coord"] = { 56.0, 16.0, STORMWIND_CITY },
+					["timeline"] = { "added 1.15.1" },
+					["requireSkill"] = BLACKSMITHING,
+					["learnedAt"] = 210,
+					["cost"] = { { "i", 6040, 6 } },	-- Golden Scale Bracers
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
+					["groups"] = {
+						i(217274, {	-- Plans: Golden Scale Gauntlets (RECIPE!)
+							["timeline"] = { "added 1.15.1" },
+							["description"] = "This item can be sold on the Neutral Auction House to Horde Blacksmiths for a... nominal fee.\n\nOnly naturally accessible to Alliance Blacksmiths.",
+						}),
+					},
+				})),
+				-- #endif
 				q(543, {	-- The Perenolde Tiara
 					["qg"] = 2285,	-- Count Remington Ridgewell
 					["coords"] = {

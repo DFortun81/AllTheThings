@@ -238,6 +238,7 @@ for spellID,learnedAt in pairs({
 	[14380] = 200,	-- Truesilver Rod
 	[19668] = 200,	-- Truesilver Skeleton Key
 	[11643] = 205,	-- Golden Scale Gauntlets
+	[439120] = 205,	-- Golden Scale Gauntlets
 	[9928] = 205,	-- Heavy Mithril Gauntlet
 	[9926] = 205,	-- Heavy Mithril Shoulder
 	[9993] = 210,	-- Heavy Mithril Axe

@@ -1842,9 +1842,22 @@ profession(BLACKSMITHING, {
 					["name"] = "Gloves of the Dawn",
 					["recipeID"] = 23633,
 				}),
+				-- #if SEASON_OF_DISCOVERY
 				{
 					["name"] = "Golden Scale Gauntlets",
-					["timeline"] = { REMOVED_4_0_1 },
+					["timeline"] = { "added 1.15.1" },
+					["recipeID"] = 439120,
+				},
+				-- #endif
+				{
+					["name"] = "Golden Scale Gauntlets",
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.1",
+						-- #else
+						REMOVED_4_0_1,
+						-- #endif
+					},
 					["recipeID"] = 11643,
 				},
 				{
