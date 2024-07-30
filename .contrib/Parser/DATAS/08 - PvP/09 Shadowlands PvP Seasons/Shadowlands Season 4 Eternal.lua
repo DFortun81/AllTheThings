@@ -58,7 +58,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.SL, {
 			n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 				["coord"] = { 36.0, 58.6, ORIBOS },
 				["g"] = bubbleDown({ ["timeline"] = { ADDED_9_2_5, REMOVED_10_0_0 } }, {
-					filter(CLOAKS, {
+					filter(BACK_F, {
 						i(192390, {	-- Eternal Aspirant's Cape
 							["cost"] = { { "c", HONOR, 525}},
 						}),

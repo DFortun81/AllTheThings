@@ -72,6 +72,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 42.2, 40.7, VALDRAKKEN },
 				["isWeekly"] = true,
 				["g"] = {
+					currency(2797, {	-- Trophy of Strife
+						["timeline"] = { ADDED_10_2_0 },
+					}),
 					i(202184, {	-- Trophy of Strife
 						["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
 					}),
@@ -113,1151 +116,116 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				n(199599, {	-- Calderax
 					["coord"] = { 44.3, 36.6, VALDRAKKEN },
 					["g"] = {
-						i(205289, {	-- Crimson Equipment Chest
+						------ Season 1 ------
+						conquest(375, i(205289, {	-- Crimson Equipment Chest
 							["timeline"] = { ADDED_10_0_7, REMOVED_10_1_0 },
-							["cost"] = {{ "c", CONQUEST, 375 }},
-						}),
-						i(206200, {	-- Obsidian Equipment Chest
+						})),
+
+						------ Season 2 ------
+						conquest(375, i(206200, {	-- Obsidian Equipment Chest
 							["timeline"] = { ADDED_10_1_5, REMOVED_10_2_0 },
-							["cost"] = {{ "c", CONQUEST, 375 }},
-						}),
-						i(210572, {	-- Verdant Equipment Chest
+						})),
+						conquest(875, i(204186, {	-- Greater Obsidian Trophy of Conquest
+							["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+						})),
+						conquest(700, i(204187, {	-- Obsidian Trophy of Conquest
+							["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+						})),
+						conquest(525, i(204188, {	-- Lesser Obsidian Trophy of Conquest
+							["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+						})),
+
+						------ Season 3 ------
+						conquest(375, i(210572, {	-- Verdant Equipment Chest
 							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
-							["cost"] = {{ "c", CONQUEST, 375 }},
-						}),
-						i(217018, {	-- Draconic Equipment Chest
+						})),
+						conquest(875, i(212538, {	-- Greater Verdant Trophy of Conquest
+							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						})),
+						conquest(700, i(212537, {	-- Verdant Trophy of Conquest
+							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						})),
+						conquest(525, i(212536, {	-- Lesser Verdant Trophy of Conquest
+							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						})),
+
+						------ Season 4 ------
+						conquest(375, i(217018, {	-- Draconic Equipment Chest
 							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
-							["cost"] = {{ "c", CONQUEST, 375 }},
-						}),
+						})),
+						conquest(875, i(211686, {	-- Greater Draconic Trophy of Conquest
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
+						})),
+						conquest(700, i(211685, {	-- Draconic Trophy of Conquest
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
+						})),
+						conquest(525, i(211684, {	-- Lesser Draconic Trophy of Conquest
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
+						})),
 					},
 				}),
-				n(196191, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Malicia
+				n(196191, {	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
-					["g"] = {
-						filter(MISC, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-							i(206144, {	-- Curious Primordial Fungus
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(206143, {	-- Energized Temporal Spores
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(206142, {	-- Gritty Stone Potion
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(206141, {	-- Prismatic Snail Mucus
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(206140, {	-- Soothing Emerald Tea
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(206139, {	-- Volatile Crimson Embers
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-						})),
-						n(BACK, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-							i(206241, {	-- Scalewarden's Drape
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(206240, {	-- Scalewarden's Cloak
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(206239, {	-- Scalewarden's Shawl
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(206238, {	-- Scalewarden's Cape
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-						})),
-						filter(CLOTH, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-							i(206213, {	-- Scalewarden's Cloth Mantle
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(206212, {	-- Scalewarden's Cloth Bindings
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(206210, {	-- Scalewarden's Cloth Cord
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(206209, {	-- Scalewarden's Cloth Pants
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206208, {	-- Scalewarden's Crown
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206207, {	-- Scalewarden's Cloth Gloves
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(206206, {	-- Scalewarden's Cloth Slippers
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(206205, {	-- Scalewarden's Cloth Garb
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-						})),
-						filter(LEATHER, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-							i(206221, {	-- Scalewarden's Leather Shoulderguard
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(206220, {	-- Scalewarden's Leather Jerkin
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206219, {	-- Scalewarden's Leather Wraps
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(206218, {	-- Scalewarden's Leather Belt
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(206217, {	-- Scalewarden's Leather Breeches
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206216, {	-- Scalewarden's Hood
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206215, {	-- Scalewarden's Leather Handwraps
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(206214, {	-- Scalewarden's Leather Boots
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-						})),
-						filter(MAIL, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-							i(206237, {	-- Scalewarden's Chain Armguards
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(206236, {	-- Scalewarden's Chain Cinch
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(206235, {	-- Scalewarden's Chain Epaulets
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(206234, {	-- Scalewarden's Chain Leggings
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206233, {	-- Scalewarden's Helm
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206232, {	-- Scalewarden's Chain Grips
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(206231, {	-- Scalewarden's Chain Greaves
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(206230, {	-- Scalewarden's Chain Armor
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-						})),
-						filter(PLATE, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-							i(206229, {	-- Scalewarden's Plate Bracers
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(206228, {	-- Scalewarden's Plate Clasp
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(206227, {	-- Scalewarden's Plate Spaulders
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(206226, {	-- Scalewarden's Plate Legguards
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206225, {	-- Scalewarden's Plate Gauntlets
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(206224, {	-- Scalewarden's Plate Sabatons
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(206223, {	-- Scalewarden's Plate Cuirass
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206222, {	-- Scalewarden's Faceplate
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-						})),
-						n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
-							i(206830, {	-- Scalewarden's Dirk
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(206820, {	-- Scalewarden's Dagger
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206265, {	-- Scalewarden's Sabre
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(206263, {	-- Scalewarden's Scepter
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206262, {	-- Scalewarden's Crusher
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(206261, {	-- Scalewarden's Mace
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(206260, {	-- Scalewarden's Wand
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206259, {	-- Scalewarden's Spear
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(206258, {	-- Scalewarden's Impaler
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(206257, {	-- Scalewarden's Aegis
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(206256, {	-- Scalewarden's Cudgel
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(206255, {	-- Scalewarden's Hammer
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(206254, {	-- Scalewarden's Club
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206253, {	-- Scalewarden's Broadsword
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(206252, {	-- Scalewarden's Greatsword
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(206251, {	-- Scalewarden's Battlestaff
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(206250, {	-- Scalewarden's Spire
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(206249, {	-- Scalewarden's Flame
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(206248, {	-- Scalewarden's Shortsword
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(206247, {	-- Scalewarden's Spellblade
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206246, {	-- Scalewarden's Twinblade
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(206245, {	-- Scalewarden's Handcannon
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(206244, {	-- Scalewarden's Carver
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(206243, {	-- Scalewarden's Hatchet
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(206242, {	-- Scalewarden's Battleaxe
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-						})),
-					},
-				})),
+					["g"] = sharedData({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+						bloody(100, i(206144)),	-- Curious Primordial Fungus
+						bloody(100, i(206143)),	-- Energized Temporal Spores
+						bloody(100, i(206142)),	-- Gritty Stone Potion
+						bloody(100, i(206141)),	-- Prismatic Snail Mucus
+						bloody(100, i(206140)),	-- Soothing Emerald Tea
+						bloody(100, i(206139)),	-- Volatile Crimson Embers
+					}),
+				}),
 				n(197553, {	-- Fieldmaster Emberath
 					["coord"] = { 43.1, 42.4, VALDRAKKEN },
-					["g"] = {
-						filter(MISC, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
-							i(201464, {	-- Flesh Parachute
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 750 },
-								},
-							}),
-							i(198076, {	-- Pest Fogger
-								["cost"] = {
-									{ "i", ROUSING_IRE, 10 },
-								},
-							}),
-							i(201414, {	-- Qalashi Wingshredder
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 1000 },
-								},
-							}),
-							i(202064, {	-- Warbanner of Ire
-								["cost"] = {
-									{ "i", ROUSING_IRE, 10 },
-								},
-							}),
-							i(200953, {	-- Wild Dragon Fruit
-								["cost"] = {
-									{ "i", ROUSING_IRE, 10 },
-								},
-							}),
-							i(200966, {	-- Wild Truffle
-								["cost"] = {
-									{ "i", ROUSING_IRE, 10 },
-								},
-							}),
-						})),
-
-						n(BACK, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
-							i(211243, {	-- Hellbloom Cape
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(211245, {	-- Hellbloom Cloak
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(211246, {	-- Hellbloom Drape
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(211244, {	-- Hellbloom Shawl
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-						})),
-						n(BACK, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
-							i(217101, {	-- Draconic Warmonger's Cape
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(217103, {	-- Draconic Warmonger's Cloak
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(217104, {	-- Draconic Warmonger's Drape
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(217102, {	-- Draconic Warmonger's Shawl
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-						})),
-
-						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
-							i(211217, {	-- Hellbloom Bindings
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(211216, {	-- Hellbloom Cord
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(211214, {	-- Hellbloom Crown
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211211, {	-- Hellbloom Garb
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211213, {	-- Hellbloom Gloves
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(211218, {	-- Hellbloom Mantle
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(211215, {	-- Hellbloom Pants
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211212, {	-- Hellbloom Slippers
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-						})),
-						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
-							i(217075, {	-- Draconic Warmonger's Bindings
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(217074, {	-- Draconic Warmonger's Cord
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(217072, {	-- Draconic Warmonger's Crown
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217069, {	-- Draconic Warmonger's Garb
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217071, {	-- Draconic Warmonger's Gloves
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(217076, {	-- Draconic Warmonger's Mantle
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(217073, {	-- Draconic Warmonger's Pants
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217070, {	-- Draconic Warmonger's Slippers
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-						})),
-
-						filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
-							i(211223, {	-- Hellbloom Belt
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(211219, {	-- Hellbloom Boots
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(211222, {	-- Hellbloom Breeches
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211220, {	-- Hellbloom Handwraps
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(211221, {	-- Hellbloom Hood
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211225, {	-- Hellbloom Jerkin
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211226, {	-- Hellbloom Shoulderguard
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(211224, {	-- Hellbloom Wraps
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-						})),
-						filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
-							i(217081, {	-- Draconic Warmonger's Belt
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(217077, {	-- Draconic Warmonger's Boots
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(217080, {	-- Draconic Warmonger's Breeches
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217078, {	-- Draconic Warmonger's Handwraps
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(217079, {	-- Draconic Warmonger's Hood
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217083, {	-- Draconic Warmonger's Jerkin
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217084, {	-- Draconic Warmonger's Shoulderguard
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(217082, {	-- Draconic Warmonger's Wraps
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-						})),
-
-						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
-							i(211242, {	-- Hellbloom Armguards
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(211235, {	-- Hellbloom Chainmail
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211241, {	-- Hellbloom Cinch
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(211240, {	-- Hellbloom Epaulets
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(211236, {	-- Hellbloom Greaves
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(211237, {	-- Hellbloom Grips
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(211238, {	-- Hellbloom Helm
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211239, {	-- Hellbloom Leggings
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-						})),
-						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
-							i(217100, {	-- Draconic Warmonger's Armguards
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(217093, {	-- Draconic Warmonger's Chainmail
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217099, {	-- Draconic Warmonger's Cinch
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(217098, {	-- Draconic Warmonger's Epaulets
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(217094, {	-- Draconic Warmonger's Greaves
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(217095, {	-- Draconic Warmonger's Grips
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(217096, {	-- Draconic Warmonger's Helm
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217097, {	-- Draconic Warmonger's Leggings
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-						})),
-						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
-							i(198588, {	-- Drakebreaker's Armplates
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(198582, {	-- Drakebreaker's Breastplate
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(198584, {	-- Drakebreaker's Gauntlets
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(198587, {	-- Drakebreaker's Girdle
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(198581, {	-- Drakebreaker's Helm
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(198585, {	-- Drakebreaker's Legguards
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(198586, {	-- Drakebreaker's Mantle
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(198583, {	-- Drakebreaker's Sabatons
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-						})),
-						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
-							i(211234, {	-- Hellbloom Bracers
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(211233, {	-- Hellbloom Clasp
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(211228, {	-- Hellbloom Cuirass
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211227, {	-- Hellbloom Faceplate
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211230, {	-- Hellbloom Gauntlets
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(211231, {	-- Hellbloom Legguards
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211229, {	-- Hellbloom Sabatons
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(211232, {	-- Hellbloom Spaulders
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-						})),
-						filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
-							i(217092, {	-- Draconic Warmonger's Bracers
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(217091, {	-- Draconic Warmonger's Clasp
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 120 },
-								},
-							}),
-							i(217086, {	-- Draconic Warmonger's Cuirass
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217085, {	-- Draconic Warmonger's Faceplate
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217088, {	-- Draconic Warmonger's Gauntlets
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(217089, {	-- Draconic Warmonger's Legguards
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217087, {	-- Draconic Warmonger's Sabatons
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(217090, {	-- Draconic Warmonger's Spaulders
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-						})),
-
-						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
-							i(211194, {	-- Hellbloom Aegis
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 150 },
-								},
-							}),
-							i(211179, {	-- Hellbloom Battleaxe
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(211188, {	-- Hellbloom Battlestaff
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(211186, {	-- Hellbloom Branch
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 150 },
-								},
-							}),
-							i(211190, {	-- Hellbloom Broadsword
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(211181, {	-- Hellbloom Carver
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(211191, {	-- Hellbloom Club
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211199, {	-- Hellbloom Crusher
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(211193, {	-- Hellbloom Cudgel
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(211202, {	-- Hellbloom Dagger
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211203, {	-- Hellbloom Dirk
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(211182, {	-- Hellbloom Flameshot
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(211189, {	-- Hellbloom Greatsword
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(211192, {	-- Hellbloom Hammer
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(211180, {	-- Hellbloom Hatchet
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211195, {	-- Hellbloom Impaler
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(211198, {	-- Hellbloom Mace
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(211201, {	-- Hellbloom Sabre
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(211200, {	-- Hellbloom Scepter
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211185, {	-- Hellbloom Shortsword
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(211196, {	-- Hellbloom Spear
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(211184, {	-- Hellbloom Spellblade
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(211187, {	-- Hellbloom Spire
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(211183, {	-- Hellbloom Twinblade
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(211197, {	-- Hellbloom Wand
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-						})),
-						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
-							i(217059, {	-- Draconic Warmonger's Aegis
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 150 },
-								},
-							}),
-							i(217044, {	-- Draconic Warmonger's Battleaxe
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(217053, {	-- Draconic Warmonger's Battlestaff
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(217051, {	-- Draconic Warmonger's Branch
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 150 },
-								},
-							}),
-							i(217055, {	-- Draconic Warmonger's Broadsword
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(217046, {	-- Draconic Warmonger's Carver
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(217056, {	-- Draconic Warmonger's Club
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217064, {	-- Draconic Warmonger's Crusher
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(217058, {	-- Draconic Warmonger's Cudgel
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(217067, {	-- Draconic Warmonger's Dagger
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217068, {	-- Draconic Warmonger's Dirk
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(217047, {	-- Draconic Warmonger's Flameshot
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(217054, {	-- Draconic Warmonger's Greatsword
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(217057, {	-- Draconic Warmonger's Hammer
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(217045, {	-- Draconic Warmonger's Hatchet
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217060, {	-- Draconic Warmonger's Impaler
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(217063, {	-- Draconic Warmonger's Mace
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(217066, {	-- Draconic Warmonger's Sabre
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(217065, {	-- Draconic Warmonger's Scepter
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217050, {	-- Draconic Warmonger's Shortsword
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(217061, {	-- Draconic Warmonger's Spear
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(217049, {	-- Draconic Warmonger's Spellblade
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(217052, {	-- Draconic Warmonger's Spire
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 450 },
-								},
-							}),
-							i(217048, {	-- Draconic Warmonger's Twinblade
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 250 },
-								},
-							}),
-							i(217062, {	-- Draconic Warmonger's Wand
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-						})),
-						filter(TOYS, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
-							i(202021, {	-- Breaker's Flag of Victory (TOY!)
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 1500 },
-								},
-							}),
-						})),
-
-						filter(RECIPES, sharedData({
-							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
-							["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
-						}, {
-							i(204169),	-- Technique: Obsidian Combatant's Emblem (RECIPE!)
-							i(204168),	-- Technique: Obsidian Combatant's Insignia of Alacrity (RECIPE!)
-							i(204167),	-- Technique: Obsidian Combatant's Medallion (RECIPE!)
-						})),
-						filter(RECIPES, sharedData({
-							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
-							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
-						}, {
-							i(208312),	-- Technique: Verdant Combatant's Emblem (RECIPE!)
-							i(208311),	-- Technique: Verdant Combatant's Insignia of Alacrity (RECIPE!)
-							i(208310),	-- Technique: Verdant Combatant's Medallion (RECIPE!)
-						})),
-						filter(RECIPES, sharedData({
-							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
-						}, {
-							i(211611),	-- Technique: Draconic Combatant's Emblem (RECIPE!)
-							i(211610),	-- Technique: Draconic Combatant's Insignia of Alacrity (RECIPE!)
-							i(211609),	-- Technique: Draconic Combatant's Medallion (RECIPE!)
-						})),
-					},
+					["g"] = sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
+						bloody(1500, i(202021)),	-- Breaker's Flag of Victory (TOY!)
+						bloody(750, i(201464)),	-- Flesh Parachute
+						i(198076, {	-- Pest Fogger
+							["cost"] = {
+								{ "i", ROUSING_IRE, 10 },
+							},
+						}),
+						bloody(1000, i(201414)),	-- Qalashi Wingshredder
+						i(202064, {	-- Warbanner of Ire
+							["cost"] = {
+								{ "i", ROUSING_IRE, 10 },
+							},
+						}),
+						i(200953, {	-- Wild Dragon Fruit
+							["cost"] = {
+								{ "i", ROUSING_IRE, 10 },
+							},
+						}),
+						i(200966, {	-- Wild Truffle
+							["cost"] = {
+								{ "i", ROUSING_IRE, 10 },
+							},
+						}),
+					}),
 				}),
 				n(199601, {	-- Seltherex
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
 						i(185834, {	-- Orboreal Distinguishment
-							["cost"] = { { "c", HONOR, 2000 } },
+							["cost"] = {{"c", HONOR, 2000}},
 							["g"] = {
 								i(137642),	-- Mark of Honor
 							},
 						}),
 						i(201250, {	-- Victorious Contender's Strongbox
-							["cost"] = { { "c", HONOR, 5000 }, },
+							["cost"] = {{"c", HONOR, 5000}},
 							["g"] = {
-								i(211690, {	-- Artisan's Consortium Brochure (QI!)
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
-								}),
-								i(205187, {	-- Artisan's Consortium Flier (QI!)
-									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
-								}),
+								------ Season 1 ------
 								i(201254, {	-- Cracked Medal of Honor [A]
 									["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
 								}),
 								i(201255, {	-- Cracked Medal of Honor [H]
 									["timeline"] = { ADDED_10_0_2, REMOVED_10_1_0 },
+								}),
+
+								------ Season 2 ------
+								i(205187, {	-- Artisan's Consortium Flier (QS!)
+									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 								}),
 								i(204179, {	-- Cracked Medal of Honor [A]
 									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
@@ -1265,263 +233,146 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								i(204180, {	-- Cracked Medal of Honor [H]
 									["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
 								}),
-								i(210324, {	-- Medal of Honor [A]
-									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
-								}),
-								i(210325, {	-- Medal of Honor [H]
-									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
-								}),
-								i(211770, {	-- Medal of Honor [A]
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
-								}),
-								i(211771, {	-- Medal of Honor [H]
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
-								}),
-								i(208571, {	-- Artisan's Consortium Leaflet (QI)
+
+								------ Season 3 ------
+								i(208571, {	-- Artisan's Consortium Leaflet (QS!)
 									["timeline"] = { ADDED_10_2_0 },
 								}),
+								i(210324, {	-- Cracked Medal of Honor [A]
+									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+								}),
+								i(210325, {	-- Cracked Medal of Honor [H]
+									["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+								}),
+
+								------ Season 4 ------
+								i(211690, {	-- Artisan's Consortium Brochure (QS!)
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
+								}),
+								i(211770, {	-- Cracked Medal of Honor [A]
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
+								}),
+								i(211771, {	-- Cracked Medal of Honor [H]
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
+								}),
 							},
 						}),
-						i(211126, {	-- Glorious Medal of Honor
-							["cost"] = { { "c", HONOR, 2500 }, },
+						honor(3000, i(210758, {	-- Honorable Satchel of Fabrics
+							["timeline"] = { ADDED_10_2_0, },
+						})),
+						honor(3000, i(210760, {	-- Honorable Satchel of Herbs
+							["timeline"] = { ADDED_10_2_0, },
+						})),
+						honor(3000, i(210759, {	-- Honorable Satchel of Ore
+							["timeline"] = { ADDED_10_2_0, },
+						})),
+						honor(500, i(206144, {	-- Curious Primordial Fungus
+							["timeline"] = { ADDED_11_PH_PREPATCH },
+						})),
+						honor(500, i(206143, {	-- Energized Temporal Spores
+							["timeline"] = { ADDED_11_PH_PREPATCH },
+						})),
+						honor(500, i(206142, {	-- Gritty Stone Potion
+							["timeline"] = { ADDED_11_PH_PREPATCH },
+						})),
+						honor(500, i(206141, {	-- Prismatic Snail Mucus
+							["timeline"] = { ADDED_11_PH_PREPATCH },
+						})),
+						honor(500, i(206140, {	-- Soothing Emerald Tea
+							["timeline"] = { ADDED_11_PH_PREPATCH },
+						})),
+						honor(500, i(206139, {	-- Volatile Crimson Embers
+							["timeline"] = { ADDED_11_PH_PREPATCH },
+						})),
+						honor(500, i(198076, {	-- Pest Fogger
+							["timeline"] = { ADDED_11_PH_PREPATCH },
+						})),
+						honor(500, i(202064, {	-- Warbanner of Ire
+							["timeline"] = { ADDED_11_PH_PREPATCH },
+						})),
+						honor(500, i(200953, {	-- Wild Dragon Fruit
+							["timeline"] = { ADDED_11_PH_PREPATCH },
+						})),
+						honor(500, i(200966, {	-- Wild Truffle
+							["timeline"] = { ADDED_11_PH_PREPATCH },
+						})),
+
+						------ Season 2 ------
+						honor(875, i(204190, {	-- Obsidian Crest of Honor
+							["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+						})),
+						honor(700, i(204189, {	-- Greater Obsidian Crest of Honor
+							["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+						})),
+						honor(525, i(204191, {	-- Lesser Obsidian Crest of Honor
+							["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+						})),
+
+						------ Season 3 ------
+						honor(875, i(212541, {	-- Greater Verdant Crest of Honor
 							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
-						}),
-						i(211772, {	-- Glorious Medal of Honor
-							["cost"] = { { "c", HONOR, 2500 }, },
+						})),
+						honor(700, i(212540, {	-- Verdant Crest of Honor
+							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						})),
+						honor(525, i(212539, {	-- Lesser Verdant Crest of Honor
+							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						})),
+						honor(2500, i(211126, {	-- Cracked Medal of Honor
+							["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+						})),
+
+						------ Season 4 ------
+						honor(875, i(211689, {	-- Greater Draconic Crest of Honor
 							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
-						}),
-						i(210758, {	-- Honorable Satchel of Fabrics
-							["cost"] = { { "c", HONOR, 3000 }, },
-							["timeline"] = { ADDED_10_2_0, },
-						}),
-						i(210759, {	-- Honorable Satchel of Ore
-							["cost"] = { { "c", HONOR, 3000 }, },
-							["timeline"] = { ADDED_10_2_0, },
-						}),
-						i(210760, {	-- Honorable Satchel of Herbs
-							["cost"] = { { "c", HONOR, 3000 }, },
-							["timeline"] = { ADDED_10_2_0, },
-						}),
+						})),
+						honor(700, i(211688, {	-- Draconic Crest of Honor
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
+						})),
+						honor(525, i(211687, {	-- Lesser Draconic Crest of Honor
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
+						})),
+						honor(2500, i(211772, {	-- Cracked Medal of Honor
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP },
+						})),
 					},
 				}),
-				n(213989,  bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Warkeeper Gresh
+				n(213989, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Warkeeper Gresh
 					["coord"] = { 43.1, 42.4, VALDRAKKEN },
 					["g"] = {
-						filter(MISC, {
-							i(206144, {	-- Curious Primordial Fungus
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(206143, {	-- Energized Temporal Spores
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(201464, {	-- Flesh Parachute
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 750 },
-								},
-							}),
-							i(206142, {	-- Gritty Stone Potion
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(198076, {	-- Pest Fogger
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(206141, {	-- Prismatic Snail Mucus
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(201414, {	-- Qalashi Wingshredder
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 1000 },
-								},
-							}),
-							i(206140, {	-- Soothing Emerald Tea
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(206139, {	-- Volatile Crimson Embers
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(202064, {	-- Warbanner of Ire
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(200953, {	-- Wild Dragon Fruit
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-							i(200966, {	-- Wild Truffle
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 100 },
-								},
-							}),
-						}),
-						i(211172, {	-- Arsenal: Scalewarden's Axe
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								--i(206242),	-- Scalewarden's Battleaxe	(currently not awarded)
-								--i(206244),	-- Scalewarden's Carver	(currently not awarded)
-								i(206243),	-- Scalewarden's Hatchet
-							},
-						}),
-						i(211176, {	-- Arsenal: Scalewarden's Club
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								i(206256),	-- Scalewarden's Cudgel
-								--i(206255),	-- Scalewarden's Hammer	(currently not awarded)
-								--i(206263),	-- Scalewarden's Scepter	(currently not awarded)
-							},
-						}),
-						i(211175, {	-- Arsenal: Scalewarden's Mace
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								--i(206254),	-- Scalewarden's Club	(currently not awarded)
-								--i(206262),	-- Scalewarden's Crusher	(currently not awarded)
-								i(206261),	-- Scalewarden's Mace
-							},
-						}),
-						i(211177, {	-- Arsenal: Scalewarden's Shortsword
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								--i(206265),	-- Scalewarden's Sabre	(currently not awarded)
-								i(206248),	-- Scalewarden's Shortsword
-								--i(206247),	-- Scalewarden's Spellblade	(currently not awarded)
-							},
-						}),
-						i(211169, {	-- Arsenal: Scalewarden's Greatsword
-							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
-							["g"] = {
-								--i(206253),	-- Scalewarden's Broadsword	(currently not awarded)
-								i(206252),	-- Scalewarden's Greatsword
-							},
-						}),
-						i(211165, {	-- Arsenal: Scalewarden's Gun
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								i(206245),	-- Scalewarden's Handcannon
-							},
-						}),
-						i(211174, {	-- Arsenal: Scalewarden's Dagger
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								i(206820),	-- Scalewarden's Dagger
-								--i(206830),	-- Scalewarden's Dirk	(currently not awarded)
-							},
-						}),
-						i(211167, {	-- Arsenal: Scalewarden's Offhand
-							["cost"] = {{ "c", BLOODY_TOKENS, 300 }},
-							["g"] = {
-								i(206249),	-- Scalewarden's Flame
-							},
-						}),
-						i(211170, {	-- Arsenal: Scalewarden's Polearm
-							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
-							["g"] = {
-								--i(206258),	-- Scalewarden's Impaler	(currently not awarded)
-								i(206259),	-- Scalewarden's Spear
-							},
-						}),
-						i(211171, {	-- Arsenal: Scalewarden's Shield
-							["cost"] = {{ "c", BLOODY_TOKENS, 300 }},
-							["g"] = {
-								i(206257),	-- Scalewarden's Aegis
-							},
-						}),
-						i(211168, {	-- Arsenal: Scalewarden's Stave
-							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
-							["g"] = {
-								i(206251),	-- Scalewarden's Battlestaff
-								--i(206250),	-- Scalewarden's Spire	(currently not awarded)
-							},
-						}),
-						i(211166, {	-- Arsenal: Scalewarden's Wand
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								i(206260),	-- Scalewarden's Wand
-							},
-						}),
-						i(211173, {	-- Arsenal: Scalewarden's Warglaive
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								i(206246),	-- Scalewarden's Twinblade
-							},
-						}),
-						i(211141, {	-- Ensemble: Scalewarden's Cloth Armor
-							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
-							["g"] = {
-								i(206240),	-- Scalewarden's Cloak
-								i(206212),	-- Scalewarden's Cloth Bindings
-								i(206210),	-- Scalewarden's Cloth Cord
-								i(206205),	-- Scalewarden's Cloth Garb
-								i(206207),	-- Scalewarden's Cloth Gloves
-								i(206213),	-- Scalewarden's Cloth Mantle
-								i(206209),	-- Scalewarden's Cloth Pants
-								i(206206),	-- Scalewarden's Cloth Slippers
-								i(206208),	-- Scalewarden's Crown
-							},
-						}),
-						i(211139, {	-- Ensemble: Scalewarden's Leather Armor
-							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
-							["g"] = {
-								i(206241),	-- Scalewarden's Drape
-								i(206216),	-- Scalewarden's Hood
-								i(206218),	-- Scalewarden's Leather Belt
-								i(206214),	-- Scalewarden's Leather Boots
-								i(206217),	-- Scalewarden's Leather Breeches
-								i(206215),	-- Scalewarden's Leather Handwraps
-								i(206220),	-- Scalewarden's Leather Jerkin
-								i(206221),	-- Scalewarden's Leather Shoulderguard
-								i(206219),	-- Scalewarden's Leather Wraps
-							},
-						}),
-						i(211136, {	-- Ensemble: Scalewarden's Mail Armor
-							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
-							["g"] = {
-								i(206238),	-- Scalewarden's Cape
-								i(206237),	-- Scalewarden's Chain Armguards
-								i(206230),	-- Scalewarden's Chain Armor
-								i(206236),	-- Scalewarden's Chain Cinch
-								i(206235),	-- Scalewarden's Chain Epaulets
-								i(206231),	-- Scalewarden's Chain Greaves
-								i(206232),	-- Scalewarden's Chain Grips
-								i(206234),	-- Scalewarden's Chain Leggings
-								i(206233),	-- Scalewarden's Helm
-							},
-						}),
-						i(211134, {	-- Ensemble: Scalewarden's Plate Armor
-							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
-							["g"] = {
-								i(206222),	-- Scalewarden's Faceplate
-								i(206229),	-- Scalewarden's Plate Bracers
-								i(206228),	-- Scalewarden's Plate Clasp
-								i(206223),	-- Scalewarden's Plate Cuirass
-								i(206225),	-- Scalewarden's Plate Gauntlets
-								i(206226),	-- Scalewarden's Plate Legguards
-								i(206224),	-- Scalewarden's Plate Sabatons
-								i(206227),	-- Scalewarden's Plate Spaulders
-								i(206239),	-- Scalewarden's Shawl
-							},
-						}),
-						filter(TOYS, {
-							i(202021, {	-- Breaker's Flag of Victory (TOY!)
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 1500 },
-								},
-							}),
-						}),
+						bloody(1500, i(202021)),	-- Breaker's Flag of Victory (TOY!)
+						bloody(100, i(206144, {		-- Curious Primordial Fungus
+							["timeline"] = { ADDED_10_2_0, REMOVED_11_PH_PREPATCH },
+						})),
+						bloody(100, i(206143, {		-- Energized Temporal Spores
+							["timeline"] = { ADDED_10_2_0, REMOVED_11_PH_PREPATCH },
+						})),
+						bloody(750, i(201464)),		-- Flesh Parachute
+						bloody(100, i(206142, {		-- Gritty Stone Potion
+							["timeline"] = { ADDED_10_2_0, REMOVED_11_PH_PREPATCH },
+						})),
+						bloody(100, i(198076, {		-- Pest Fogger
+							["timeline"] = { ADDED_10_2_0, REMOVED_11_PH_PREPATCH },
+						})),
+						bloody(100, i(206141, {		-- Prismatic Snail Mucus
+							["timeline"] = { ADDED_10_2_0, REMOVED_11_PH_PREPATCH },
+						})),
+						bloody(1000, i(201414)),	-- Qalashi Wingshredder
+						bloody(100, i(206140, {		-- Soothing Emerald Tea
+							["timeline"] = { ADDED_10_2_0, REMOVED_11_PH_PREPATCH },
+						})),
+						bloody(100, i(206139, {		-- Volatile Crimson Embers
+							["timeline"] = { ADDED_10_2_0, REMOVED_11_PH_PREPATCH },
+						})),
+						bloody(100, i(202064, {		-- Warbanner of Ire
+							["timeline"] = { ADDED_10_2_0, REMOVED_11_PH_PREPATCH },
+						})),
+						bloody(100, i(200953, {		-- Wild Dragon Fruit
+							["timeline"] = { ADDED_10_2_0, REMOVED_11_PH_PREPATCH },
+						})),
+						bloody(100, i(200966, {		-- Wild Truffle
+							["timeline"] = { ADDED_10_2_0, REMOVED_11_PH_PREPATCH },
+						})),
 					},
 				})),
 			}),

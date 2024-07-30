@@ -1328,19 +1328,7 @@ root(ROOTS.Unsorted, {
 				i(220378),	-- Forged Equipment Chest \\ PH War Within Equipment Chest
 
 				i(225873),	-- Forged Gladiator's Sword
-				i(223989),	-- Arsenal: Hellbloom Club
-				i(223990),	-- Arsenal: Hellbloom Hammer
-				i(223991),	-- Arsenal: Hellbloom Knife
-				i(223992),	-- Arsenal: Hellbloom Wand
-				i(223993),	-- Arsenal: Hellbloom Polearm
-				i(223994),	-- Arsenal: Hellbloom Shield
-				i(223995),	-- Arsenal: Hellbloom Staff
-				i(223996),	-- Arsenal: Hellbloom Bow
-				i(223997),	-- Arsenal: Hellbloom Warglaive
-				i(223998),	-- Arsenal: Hellbloom Sword
-				i(223999),	-- Arsenal: Hellbloom Greatsword
-				i(224000),	-- Arsenal: Hellbloom Axe
-				i(224001),	-- Arsenal: Hellbloom Branch
+
 			}),
 			n(MISC, {
 				i(206134),	-- Potion of Healing

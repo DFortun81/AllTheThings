@@ -22,9 +22,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				ill(6786, {["timeline"] = { ADDED_10_0_7 }}),	-- Primal Storm (ILLUSION!)
 				i(202089, {["timeline"] = { ADDED_10_0_5 }}),	-- Crimson Gladiator's Prestigious Cloak
 			}),
-			ach(15984, {	-- Elite: Dragonflight Season 1
-				i(202090, {["timeline"] = { ADDED_10_0_5 }}),	-- Crimson Gladiator's Tabard
-			}),
+			ach(15984),		-- Elite: Dragonflight Season 1
 			ach(15957, {	-- Gladiator: Dragonflight Season 1
 				i(202086),	-- Crimson Gladiator's Drake (MOUNT!)
 				i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
@@ -65,24 +63,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
 				["g"] = sharedData({ ["timeline"] = { ADDED_10_2_0 } }, {
 					-- #if AFTER TWW
-						moh(5, iensemble(211148)),	-- Arsenal: Drakebreaker's Axe
-						moh(5, iensemble(211144)),	-- Arsenal: Drakebreaker's Club
-						moh(5, iensemble(211153)),	-- Arsenal: Drakebreaker's Greatsword
-						moh(5, iensemble(211157)),	-- Arsenal: Drakebreaker's Gun
-						moh(5, iensemble(211146)),	-- Arsenal: Drakebreaker's Knife
-						moh(5, iensemble(211155)),	-- Arsenal: Drakebreaker's Offhand
-						moh(5, iensemble(211152)),	-- Arsenal: Drakebreaker's Polearm
-						moh(5, iensemble(211150)),	-- Arsenal: Drakebreaker's Shield
-						moh(5, iensemble(211143)),	-- Arsenal: Drakebreaker's Spiked Hammer
-						moh(5, iensemble(211154)),	-- Arsenal: Drakebreaker's Stave
-						moh(5, iensemble(211156)),	-- Arsenal: Drakebreaker's Wand
-						moh(5, iensemble(211147)),	-- Arsenal: Drakebreaker's Warglaive
-						moh(12, iensemble(211140)),	-- Ensemble: Drakebreaker's Cloth Armor
-						moh(12, iensemble(211138)),	-- Ensemble: Drakebreaker's Leather Armor
-						moh(12, iensemble(211135)),	-- Ensemble: Drakebreaker's Mail Armor
-						moh(12, iensemble(211100)),	-- Ensemble: Drakebreaker's Plate Armor
+					moh(5, iensemble(211148)),	-- Arsenal: Drakebreaker's Axe
+					moh(5, iensemble(211144)),	-- Arsenal: Drakebreaker's Club
+					moh(5, iensemble(211153)),	-- Arsenal: Drakebreaker's Greatsword
+					moh(5, iensemble(211157)),	-- Arsenal: Drakebreaker's Gun
+					moh(5, iensemble(211146)),	-- Arsenal: Drakebreaker's Knife
+					moh(5, iensemble(211155)),	-- Arsenal: Drakebreaker's Offhand
+					moh(5, iensemble(211152)),	-- Arsenal: Drakebreaker's Polearm
+					moh(5, iensemble(211150)),	-- Arsenal: Drakebreaker's Shield
+					moh(5, iensemble(211143)),	-- Arsenal: Drakebreaker's Spiked Hammer
+					moh(5, iensemble(211154)),	-- Arsenal: Drakebreaker's Stave
+					moh(5, iensemble(211156)),	-- Arsenal: Drakebreaker's Wand
+					moh(5, iensemble(211147)),	-- Arsenal: Drakebreaker's Warglaive
+					moh(12, iensemble(211140)),	-- Ensemble: Drakebreaker's Cloth Armor
+					moh(12, iensemble(211138)),	-- Ensemble: Drakebreaker's Leather Armor
+					moh(12, iensemble(211135)),	-- Ensemble: Drakebreaker's Mail Armor
+					moh(12, iensemble(211100)),	-- Ensemble: Drakebreaker's Plate Armor
 					-- #endif
-					n(BACK, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
+					filter(BACK_F, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 						bloody(200, i(198960)),	-- Drakebreaker's Cape
 						bloody(200, i(198961)),	-- Drakebreaker's Cloak
 						bloody(200, i(198962)),	-- Drakebreaker's Shroud
@@ -117,6 +115,16 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						bloody(350, i(198591)),	-- Drakebreaker's Grips
 						bloody(350, i(198594)),	-- Drakebreaker's Shoulderguards
 						bloody(350, i(198590)),	-- Drakebreaker's Striders
+					})),
+					filter(PLATE, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
+						bloody(200, i(198588)),	-- Drakebreaker's Armplates
+						bloody(500, i(198582)),	-- Drakebreaker's Breastplate
+						bloody(350, i(198584)),	-- Drakebreaker's Gauntlets
+						bloody(200, i(198587)),	-- Drakebreaker's Girdle
+						bloody(500, i(198581)),	-- Drakebreaker's Helm
+						bloody(500, i(198585)),	-- Drakebreaker's Legguards
+						bloody(350, i(198586)),	-- Drakebreaker's Mantle
+						bloody(350, i(198583)),	-- Drakebreaker's Sabatons
 					})),
 					n(WEAPONS, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
 						bloody(800, i(199084)),	-- Drakebreaker's Broadsword
@@ -904,6 +912,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
 				["g"] = {
 					honor(100, i(202090, {	-- Crimson Gladiator's Tabard
+						["sourceAchievements"] = { 15984 },	-- Elite: Dragonflight Season 1
 						["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
 					})),
 					moh(5, i(202129)),	-- Crimson Gladiator's Barrier
@@ -932,7 +941,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(196661, {	-- Korganar Smolderforge
 				["coord"] = { 43.6, 42.7, VALDRAKKEN },
 				["timeline"] = { ADDED_10_1_0 },
-				["g"] = sharedData({ ["cost"] = { { "i", MOH, 3 } } }, {
+				["g"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
 			-- #endif
 					i(194637),	-- Design: Crimson Combatant's Jeweled Amulet (RECIPE!)
 					i(194638),	-- Design: Crimson Combatant's Jeweled Signet (RECIPE!)
@@ -969,12 +978,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					i(194456),	-- Plans: Crimson Combatant's Draconium Pauldrons (RECIPE!)
 					i(194458),	-- Plans: Crimson Combatant's Draconium Sabatons (RECIPE!)
 					i(194460),	-- Plans: Crimson Combatant's Draconium Waistguard (RECIPE!)
-					-- #if AFTER 10.1.0
+			-- #if AFTER 10.1.0
 					i(203380),	-- Technique: Crimson Combatant's Emblem (RECIPE!)
 					i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity (RECIPE!)
 					i(203378),	-- Technique: Crimson Combatant's Medallion (RECIPE!)
-					-- #endif
-			-- #if AFTER 10.1.0
 				}),
 			}),
 			-- #endif
