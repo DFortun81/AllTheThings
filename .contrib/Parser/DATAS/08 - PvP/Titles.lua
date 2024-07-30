@@ -9,12 +9,30 @@ root(ROOTS.PVP, pvp(filter(TITLES, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3
 	title(78 ,{	-- Combatant <Name>
 		["timeline"] = { ADDED_8_0_1_LAUNCH },
 	}),
+	title(310, {	-- <Name> Defender of the Alliance
+		["timeline"] = { ADDED_6_2_0, REMOVED_8_0_1_LAUNCH },
+	}),
+	title(313, {	-- <Name> Defender of the Horde
+		["timeline"] = { ADDED_6_2_0, REMOVED_8_0_1_LAUNCH },
+	}),
 	title(30),	-- Duelist <Name>
 	title(29),	-- Gladiator <Name>
+	title(309, {	-- <Name> Guardian of the Alliance
+		["timeline"] = { ADDED_6_2_0, REMOVED_8_0_1_LAUNCH },
+	}),
+	title(312, {	-- <Name> Guardian of the Horde
+		["timeline"] = { ADDED_6_2_0, REMOVED_8_0_1_LAUNCH },
+	}),
 	title(491, {	-- Legend <Name>
 		["timeline"] = { ADDED_10_0_2_LAUNCH },
 	}),
 	title(31),	-- Rival <Name>
+	title(311, {	-- <Name> Soldier of the Alliance
+		["timeline"] = { ADDED_6_2_0, REMOVED_8_0_1_LAUNCH },
+	}),
+	title(314, {	-- <Name> Soldier of the Horde
+		["timeline"] = { ADDED_6_2_0, REMOVED_8_0_1_LAUNCH },
+	}),
 	title(387, {	-- <Name> the Elite Death Knight
 		["timeline"] = { ADDED_8_1_0 },
 	}),

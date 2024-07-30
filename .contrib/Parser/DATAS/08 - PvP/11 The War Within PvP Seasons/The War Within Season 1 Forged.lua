@@ -21,7 +21,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			ach(40391, {	-- Duelist: The War Within Season 1
 				i(223617),	-- Forged Gladiator's Prestigious Cloak
 			}),
-			ach(40392),	-- Elite: The War Within Season 1
+			ach(40392),		-- Elite: The War Within Season 1
 			ach(40393, {	-- Gladiator: The War Within Season 1
 				i(223586),	-- Forged Gladiator's Fel Bat (MOUNT!)
 			}),
@@ -70,6 +70,84 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			}),
 			i(221813, {	-- Vicious Skyflayer [H]
 				["races"] = HORDE_ONLY,
+			}),
+		})),
+		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {
+			n(219213, {	-- Gilderann <War Mode Quartermaster>
+				["coord"] = { 55.2, 76.8, DORNOGAL },
+				["g"] = {
+					filter(BACK_F, {
+						bloody(525, i(223839)),	-- Forged Warmonger's Cape
+						bloody(525, i(223841)),	-- Forged Warmonger's Cloak
+						bloody(525, i(223842)),	-- Forged Warmonger's Drape
+						bloody(525, i(223840)),	-- Forged Warmonger's Shawl
+					}),
+					filter(CLOTH, {
+						bloody(525, i(223813)),	-- Forged Warmonger's Bindings
+						bloody(700, i(223812)),	-- Forged Warmonger's Cord
+						bloody(875, i(223810)),	-- Forged Warmonger's Crown
+						bloody(875, i(223807)),	-- Forged Warmonger's Garb
+						bloody(700, i(223809)),	-- Forged Warmonger's Gloves
+						bloody(700, i(223814)),	-- Forged Warmonger's Mantle
+						bloody(875, i(223811)),	-- Forged Warmonger's Pants
+						bloody(700, i(223808)),	-- Forged Warmonger's Slippers
+					}),
+					filter(LEATHER, {
+						bloody(700, i(223819)),	-- Forged Warmonger's Belt
+						bloody(700, i(223815)),	-- Forged Warmonger's Boots
+						bloody(875, i(223818)),	-- Forged Warmonger's Breeches
+						bloody(700, i(223816)),	-- Forged Warmonger's Handwraps
+						bloody(875, i(223817)),	-- Forged Warmonger's Hood
+						bloody(875, i(223821)),	-- Forged Warmonger's Jerkin
+						bloody(700, i(223822)),	-- Forged Warmonger's Shoulderguard
+						bloody(525, i(223820)),	-- Forged Warmonger's Wraps
+					}),
+					filter(MAIL, {
+						bloody(525, i(223838)),	-- Forged Warmonger's Armguards
+						bloody(875, i(223831)),	-- Forged Warmonger's Chestguard
+						bloody(700, i(223837)),	-- Forged Warmonger's Cinch
+						bloody(700, i(223836)),	-- Forged Warmonger's Epaulets
+						bloody(700, i(223832)),	-- Forged Warmonger's Greaves
+						bloody(700, i(223833)),	-- Forged Warmonger's Grips
+						bloody(875, i(223834)),	-- Forged Warmonger's Helm
+						bloody(875, i(223835)),	-- Forged Warmonger's Leggings
+					}),
+					filter(PLATE, {
+						bloody(525, i(223830)),	-- Forged Warmonger's Bracers
+						bloody(700, i(223829)),	-- Forged Warmonger's Clasp
+						bloody(875, i(223824)),	-- Forged Warmonger's Cuirass
+						bloody(875, i(223823)),	-- Forged Warmonger's Faceplate
+						bloody(700, i(223826)),	-- Forged Warmonger's Gauntlets
+						bloody(875, i(223827)),	-- Forged Warmonger's Legguards
+						bloody(700, i(223825)),	-- Forged Warmonger's Sabatons
+						bloody(700, i(223828)),	-- Forged Warmonger's Spaulders
+					}),
+					n(WEAPONS, {
+						bloody(525, i(223859)),		-- Forged Warmonger's Aegis
+						bloody(875, i(223844)),		-- Forged Warmonger's Battleaxe
+						bloody(1750, i(223853)),	-- Forged Warmonger's Battlestaff
+						bloody(525, i(223851)),		-- Forged Warmonger's Branch
+						bloody(1750, i(223855)),	-- Forged Warmonger's Broadsword
+						bloody(875, i(223846)),		-- Forged Warmonger's Carver
+						bloody(1225, i(223856)),	-- Forged Warmonger's Club
+						bloody(875, i(223864)),		-- Forged Warmonger's Crusher
+						bloody(875, i(223858)),		-- Forged Warmonger's Cudgel
+						bloody(1225, i(223867)),	-- Forged Warmonger's Dagger
+						bloody(875, i(223868)),		-- Forged Warmonger's Dirk
+						bloody(1750, i(223847)),	-- Forged Warmonger's Flameshot
+						bloody(1750, i(223854)),	-- Forged Warmonger's Greatsword
+						bloody(875, i(223857)),		-- Forged Warmonger's Hammer
+						bloody(1225, i(223845)),	-- Forged Warmonger's Hatchet
+						bloody(1750, i(223860)),	-- Forged Warmonger's Impaler
+						bloody(875, i(223863)),		-- Forged Warmonger's Mace
+						bloody(1225, i(223865)),	-- Forged Warmonger's Scepter
+						bloody(1750, i(223861)),	-- Forged Warmonger's Spear
+						bloody(1750, i(223852)),	-- Forged Warmonger's Spire
+						bloody(875, i(223848)),		-- Forged Warmonger's Twinblade
+						bloody(1225, i(223862)),	-- Forged Warmonger's Wand
+					}),
+
+				},
 			}),
 		})),
 		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {
@@ -792,259 +870,27 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			n(219216, {	-- Rogurn <Elite Conquest Quartermaster>
 				["coord"] = { 59.8, 69.3, DORNOGAL },
 				["g"] = {
-					elitepvp(ig(223616, {	-- Forged Gladiator's Tabard
+					honor(100, i(223616, {	-- Forged Gladiator's Tabard
 						["sourceAchievements"] = { 40392 },	-- Elite: The War Within Season 1
-						["cost"] = {{"c", HONOR, 100 }},
 					})),
-					n(WEAPONS, {
-						elitepvp(i(225856, {	-- Forged Gladiator's Axe
-							["cost"] = {{"i", MOH, 5}},
-						})),
-						elitepvp(i(225863, {	-- Forged Gladiator's Battlestaff
-							["cost"] = {{"i", MOH, 10}},
-						})),
-						elitepvp(i(225870, {	-- Forged Gladiator's Bow
-							["cost"] = {{"i", MOH, 10}},
-						})),
-						elitepvp(i(225868, {	-- Forged Gladiator's Bulwark
-							["cost"] = {{"i", MOH, 5}},
-						})),
-						elitepvp(i(225869, {	-- Forged Gladiator's Claws
-							["cost"] = {{"i", MOH, 5}},
-						})),
-						elitepvp(i(225864, {	-- Forged Gladiator's Crossbow
-							["cost"] = {{"i", MOH, 10}},
-						})),
-						elitepvp(i(225857, {	-- Forged Gladiator's Dagger
-							["cost"] = {{"i", MOH, 5}},
-						})),
-						elitepvp(i(225866, {	-- Forged Gladiator's Focus
-							["cost"] = {{"i", MOH, 5}},
-						})),
-						elitepvp(i(225871, {	-- Forged Gladiator's Greataxe
-							["cost"] = {{"i", MOH, 10}},
-						})),
-						elitepvp(i(225862, {	-- Forged Gladiator's Greatstaff
-							["cost"] = {{"i", MOH, 10}},
-						})),
-						elitepvp(i(225858, {	-- Forged Gladiator's Pincer
-							["cost"] = {{"i", MOH, 5}},
-						})),
-						elitepvp(i(225872, {	-- Forged Gladiator's Pulverizer
-							["cost"] = {{"i", MOH, 10}},
-						})),
-						elitepvp(i(225865, {	-- Forged Gladiator's Scepter
-							["cost"] = {{"i", MOH, 5}},
-						})),
-						elitepvp(i(225867, {	-- Forged Gladiator's Shield
-							["cost"] = {{"i", MOH, 5}},
-						})),
-						elitepvp(i(225860, {	-- Forged Gladiator's Spear
-							["cost"] = {{"i", MOH, 10}},
-						})),
-						elitepvp(i(225861, {	-- Forged Gladiator's Staff
-							["cost"] = {{"i", MOH, 10}},
-						})),
-						elitepvp(i(225859, {	-- Forged Gladiator's Warglaive
-							["cost"] = {{"i", MOH, 5}},
-						})),
-						elitepvp(i(225874, {	-- Forged Gladiator's Wither-Blade
-							["cost"] = {{"i", MOH, 5}},
-						})),
-					}),
-				},
-			}),
-		})),
-		n(PVP_WARMODE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {
-			n(219213, {	-- Gilderann <War Mode Quartermaster>
-				["coord"] = { 55.2, 76.8, DORNOGAL },
-				["g"] = {
-					filter(BACK_F, {
-						i(223839, {	-- Forged Warmonger's Cape
-							["cost"] = {{"c", BLOODY_TOKENS, 525}},
-						}),
-						i(223841, {	-- Forged Warmonger's Cloak
-							["cost"] = {{"c", BLOODY_TOKENS, 525}},
-						}),
-						i(223842, {	-- Forged Warmonger's Drape
-							["cost"] = {{"c", BLOODY_TOKENS, 525}},
-						}),
-						i(223840, {	-- Forged Warmonger's Shawl
-							["cost"] = {{"c", BLOODY_TOKENS, 525}},
-						}),
-					}),
-					filter(CLOTH, {
-						i(223813, {	-- Forged Warmonger's Bindings
-							["cost"] = {{"c", BLOODY_TOKENS, 525}},
-						}),
-						i(223812, {	-- Forged Warmonger's Cord
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223810, {	-- Forged Warmonger's Crown
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223807, {	-- Forged Warmonger's Garb
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223809, {	-- Forged Warmonger's Gloves
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223814, {	-- Forged Warmonger's Mantle
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223811, {	-- Forged Warmonger's Pants
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223808, {	-- Forged Warmonger's Slippers
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-					}),
-					filter(LEATHER, {
-						i(223819, {	-- Forged Warmonger's Belt
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223815, {	-- Forged Warmonger's Boots
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223818, {	-- Forged Warmonger's Breeches
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223816, {	-- Forged Warmonger's Handwraps
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223817, {	-- Forged Warmonger's Hood
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223821, {	-- Forged Warmonger's Jerkin
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223822, {	-- Forged Warmonger's Shoulderguard
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223820, {	-- Forged Warmonger's Wraps
-							["cost"] = {{"c", BLOODY_TOKENS, 525}},
-						}),
-					}),
-					filter(MAIL, {
-						i(223838, {	-- Forged Warmonger's Armguards
-							["cost"] = {{"c", BLOODY_TOKENS, 525}},
-						}),
-						i(223831, {	-- Forged Warmonger's Chestguard
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223837, {	-- Forged Warmonger's Cinch
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223836, {	-- Forged Warmonger's Epaulets
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223832, {	-- Forged Warmonger's Greaves
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223833, {	-- Forged Warmonger's Grips
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223834, {	-- Forged Warmonger's Helm
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223835, {	-- Forged Warmonger's Leggings
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-					}),
-					filter(PLATE, {
-						i(223830, {	-- Forged Warmonger's Bracers
-							["cost"] = {{"c", BLOODY_TOKENS, 525}},
-						}),
-						i(223829, {	-- Forged Warmonger's Clasp
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223824, {	-- Forged Warmonger's Cuirass
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223823, {	-- Forged Warmonger's Faceplate
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223826, {	-- Forged Warmonger's Gauntlets
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223827, {	-- Forged Warmonger's Legguards
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223825, {	-- Forged Warmonger's Sabatons
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-						i(223828, {	-- Forged Warmonger's Spaulders
-							["cost"] = {{"c", BLOODY_TOKENS, 700}},
-						}),
-					}),
-					n(WEAPONS, {
-						i(223859, {	-- Forged Warmonger's Aegis
-							["cost"] = {{"c", BLOODY_TOKENS, 525}},
-						}),
-						i(223844, {	-- Forged Warmonger's Battleaxe
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223853, {	-- Forged Warmonger's Battlestaff
-							["cost"] = {{"c", BLOODY_TOKENS, 1750}},
-						}),
-						i(223851, {	-- Forged Warmonger's Branch
-							["cost"] = {{"c", BLOODY_TOKENS, 525}},
-						}),
-						i(223855, {	-- Forged Warmonger's Broadsword
-							["cost"] = {{"c", BLOODY_TOKENS, 1750}},
-						}),
-						i(223846, {	-- Forged Warmonger's Carver
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223856, {	-- Forged Warmonger's Club
-							["cost"] = {{"c", BLOODY_TOKENS, 1225}},
-						}),
-						i(223864, {	-- Forged Warmonger's Crusher
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223858, {	-- Forged Warmonger's Cudgel
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223867, {	-- Forged Warmonger's Dagger
-							["cost"] = {{"c", BLOODY_TOKENS, 1225}},
-						}),
-						i(223868, {	-- Forged Warmonger's Dirk
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223847, {	-- Forged Warmonger's Flameshot
-							["cost"] = {{"c", BLOODY_TOKENS, 1750}},
-						}),
-						i(223854, {	-- Forged Warmonger's Greatsword
-							["cost"] = {{"c", BLOODY_TOKENS, 1750}},
-						}),
-						i(223857, {	-- Forged Warmonger's Hammer
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223845, {	-- Forged Warmonger's Hatchet
-							["cost"] = {{"c", BLOODY_TOKENS, 1225}},
-						}),
-						i(223860, {	-- Forged Warmonger's Impaler
-							["cost"] = {{"c", BLOODY_TOKENS, 1750}},
-						}),
-						i(223863, {	-- Forged Warmonger's Mace
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223865, {	-- Forged Warmonger's Scepter
-							["cost"] = {{"c", BLOODY_TOKENS, 1225}},
-						}),
-						i(223861, {	-- Forged Warmonger's Spear
-							["cost"] = {{"c", BLOODY_TOKENS, 1750}},
-						}),
-						i(223852, {	-- Forged Warmonger's Spire
-							["cost"] = {{"c", BLOODY_TOKENS, 1750}},
-						}),
-						i(223848, {	-- Forged Warmonger's Twinblade
-							["cost"] = {{"c", BLOODY_TOKENS, 875}},
-						}),
-						i(223862, {	-- Forged Warmonger's Wand
-							["cost"] = {{"c", BLOODY_TOKENS, 1225}},
-						}),
-					}),
+					moh(5, i(225856)),	-- Forged Gladiator's Axe
+					moh(10, i(225863)),	-- Forged Gladiator's Battlestaff
+					moh(10, i(225870)),	-- Forged Gladiator's Bow
+					moh(5, i(225868)),	-- Forged Gladiator's Bulwark
+					moh(5, i(225869)),	-- Forged Gladiator's Claws
+					moh(10, i(225864)),	-- Forged Gladiator's Crossbow
+					moh(5, i(225857)),	-- Forged Gladiator's Dagger
+					moh(5, i(225866)),	-- Forged Gladiator's Focus
+					moh(10, i(225871)),	-- Forged Gladiator's Greataxe
+					moh(10, i(225862)),	-- Forged Gladiator's Greatstaff
+					moh(5, i(225858)),	-- Forged Gladiator's Pincer
+					moh(10, i(225872)),	-- Forged Gladiator's Pulverizer
+					moh(5, i(225865)),	-- Forged Gladiator's Scepter
+					moh(5, i(225867)),	-- Forged Gladiator's Shield
+					moh(10, i(225860)),	-- Forged Gladiator's Spear
+					moh(10, i(225861)),	-- Forged Gladiator's Staff
+					moh(5, i(225859)),	-- Forged Gladiator's Warglaive
+					moh(5, i(225874)),	-- Forged Gladiator's Wither-Blade
 				},
 			}),
 		})),
