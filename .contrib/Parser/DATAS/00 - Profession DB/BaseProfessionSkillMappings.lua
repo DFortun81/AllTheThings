@@ -23,6 +23,7 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2478] = 171,    -- Kul Tiran Alchemy [8.0.1]
 	[2750] = 171,    -- Shadowlands Alchemy [9.0.1]
 	[2823] = 171,    -- Dragon Isles Alchemy [10.0.0]
+	[2871] = 171,    -- Khaz Algar Alchemy [11.0.0]
 
 	-- Archaeology Skills
 	[794] = 794,     -- Archaeology [7.3.5]
@@ -44,6 +45,7 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2437] = 164,    -- Kul Tiran Blacksmithing [8.0.1]
 	[2751] = 164,    -- Shadowlands Blacksmithing [9.0.1]
 	[2822] = 164,    -- Dragon Isles Blacksmithing [10.0.0]
+	[2872] = 164,    -- Khaz Algar Blacksmithing [11.0.0]
 
 	-- Cooking Skills
 	[185] = 185,     -- Cooking [7.3.5]
@@ -69,6 +71,7 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2541] = 185,    -- Kul Tiran Cooking [8.0.1]
 	[2752] = 185,    -- Shadowlands Cooking [9.0.1]
 	[2824] = 185,    -- Dragon Isles Cooking [10.0.0]
+	[2873] = 185,    -- Khaz Algar Cooking [11.0.0]
 
 	-- Enchanting Skills
 	[333] = 333,     -- Enchanting [7.3.5]
@@ -82,6 +85,7 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2486] = 333,    -- Kul Tiran Enchanting [8.0.1]
 	[2753] = 333,    -- Shadowlands Enchanting [9.0.1]
 	[2825] = 333,    -- Dragon Isles Enchanting [10.0.0]
+	[2874] = 333,    -- Khaz Algar Enchanting [11.0.0]
 
 	-- Engineering Skills
 	[202] = 202,     -- Engineering [7.3.5]
@@ -97,6 +101,7 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2499] = 202,    -- Kul Tiran Engineering [8.0.1]
 	[2755] = 202,    -- Shadowlands Engineering [9.0.1]
 	[2827] = 202,    -- Dragon Isles Engineering [10.0.0]
+	[2875] = 202,    -- Khaz Algar Engineering [11.0.0]
 
 	-- First Aid Skills
 	[129] = 129,     -- First Aid [7.3.5] [REMOVED FROM GAME]
@@ -112,6 +117,8 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2586] = 356,    -- Legion Fishing [8.0.1]
 	[2585] = 356,    -- Kul Tiran Fishing [8.0.1]
 	[2754] = 356,    -- Shadowlands Fishing [9.0.1]
+	[2826] = 356,    -- Dragon Isles Fishing [10.0.0]
+	[2876] = 356,    -- Khaz Algar Fishing [11.0.0]
 
 	-- Herbalism Skills
 	[182] = 182,     -- Herbalism [7.3.5]
@@ -125,6 +132,7 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2549] = 182,    -- Kul Tiran Herbalism [8.0.1]
 	[2760] = 182,    -- Shadowlands Herbalism [9.0.1]
 	[2832] = 182,    -- Dragon Isles Herbalism [10.0.0]
+	[2877] = 182,    -- Khaz Algar Herbalism [11.0.0]
 
 	-- Inscription Skills
 	[773] = 773,     -- Inscription [7.3.5]
@@ -137,7 +145,8 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2508] = 773,    -- Legion Inscription [8.0.1]
 	[2507] = 773,    -- Kul Tiran Inscription [8.0.1]
 	[2756] = 773,    -- Shadowlands Inscription [9.0.1]
-	[2828] = 773,    -- Dragon Isles Inscription [9.0.1]
+	[2828] = 773,    -- Dragon Isles Inscription [10.0.0]
+	[2878] = 773,    -- Khaz Algar Inscription [11.0.0]
 
 	-- Jewelcrafting Skills
 	[755] = 755,     -- Jewelcrafting [7.3.5]
@@ -151,6 +160,7 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2517] = 755,    -- Kul Tiran Jewelcrafting [8.0.1]
 	[2757] = 755,    -- Shadowlands Jewelcrafting [9.0.1]
 	[2829] = 755,    -- Dragon Isles Jewelcrafting [10.0.0]
+	[2879] = 755,    -- Khaz Algar Jewelcrafting [11.0.0]
 
 	-- Leatherworking Skills
 	[165] = 165,     -- Leatherworking [7.3.5]
@@ -167,8 +177,9 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2525] = 165,    -- Kul Tiran Leatherworking [8.0.1]
 	[2758] = 165,    -- Shadowlands Leatherworking [9.0.1]
 	[2830] = 165,    -- Dragon Isles Leatherworking [10.0.0]
+	[2880] = 165,    -- Khaz Algar Leatherworking [11.0.0]
 
-	-- Lockpicking Skills
+	-- Lockpicking Skills [Rogue Only]
 	[633] = 633,     -- Lockpicking
 	[181] = 633,     -- Lockpicking
 	[242] = 633,     -- Lockpicking
@@ -185,8 +196,9 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2565] = 186,    -- Kul Tiran Mining [8.0.1]
 	[2761] = 186,    -- Shadowlands Mining [9.0.1]
 	[2833] = 186,    -- Dragon Isles Mining [10.0.0]
+	[2881] = 186,    -- Khaz Algar Mining [11.0.0]
 
-	-- Runeforging [Deathknight only]
+	-- Runeforging [Deathknight Only]
 	[960] = 960,     -- Runeforging
 	[776] = 960,     -- Runeforging
 
@@ -202,6 +214,7 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2557] = 393,    -- Kul Tiran Skinning [8.0.1]
 	[2762] = 393,    -- Shadowlands Skinning [9.0.1]
 	[2834] = 393,    -- Dragon Isles Skinning [10.0.0]
+	[2882] = 393,    -- Khaz Algar Skinning [11.0.0]
 
 	-- Tailoring Skills
 	[197] = 197,     -- Tailoring [7.3.5]
@@ -218,8 +231,9 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2533] = 197,    -- Kul Tiran Tailoring [8.0.1]
 	[2759] = 197,    -- Shadowlands Tailoring [9.0.1]
 	[2831] = 197,    -- Dragon Isles Tailoring [10.0.0]
+	[2883] = 197,    -- Khaz Algar Tailoring [11.0.0]
 
-	-- Junkyard Tinkering [8.2.0]
+	-- Junkyard Tinkering [BFA]
 	[2720] = 2720,   -- Junkyard Tinkering
 
 	-- Abominable Stitching [SL]
@@ -231,10 +245,10 @@ SKILL_ID_CONVERSION_TABLE = {
 	-- Soul Cyphering [SL]
 	[2777] = 2777,   -- Soul Cyphering
 
-	-- Stygia Crafting [9.0.5]
+	-- Stygia Crafting [SL]
 	[2811] = 2811,   -- Stygia Crafting
 
-	-- Protoform Synthesis [9.2.0]
+	-- Protoform Synthesis [SL]
 	[2819] = 2819,   -- Protoform Synthesis
 
 	-- Tuskarr Fishing Gear [DF]
