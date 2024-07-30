@@ -328,6 +328,7 @@ localize(L.HEADER_NAMES, {
 	[-1000971] = "Aeonas: Journey to Felwood",
 	[-1000979] = "Speak to Harold",
 	[-1000980] = "Aura of Paralyzing Dread",
+	[-1000981] = "Emotional Damage",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -497,6 +498,7 @@ localize(L.HEADER_ICONS, {
 	[-1000971] = "Interface/CURSOR/Taxi",
 	[-1000979] = "Interface/CURSOR/Speak",
 	[-1000980] = "136147",
+	[-1000981] = "237552",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,

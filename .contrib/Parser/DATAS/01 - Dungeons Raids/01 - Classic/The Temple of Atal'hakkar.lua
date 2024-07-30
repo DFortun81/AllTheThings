@@ -854,7 +854,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(82017, {	-- An Amalagamation of Nightmares
 							["qg"] = 221477,	-- Field Captain Hannalah
-							["sourceQuest"] = 82014,	-- Aura of Paralyzing Dread
+							["sourceQuest"] = 82015,	-- Emotional Damage HQT
 							["coord"] = { 89.6, 40.6, ASHENVALE },
 							["maps"] = { MOONGLADE },
 							["lvl"] = 40,
@@ -874,7 +874,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							description = {
 								en = "You need to be debuffed from the Nightmare Amalgam to proc this quest. (do not engage it, just run away)",
 							},
-						}), {	-- Aura of Paralyzing Dread
+						}), {
 							["qg"] = 222198,	-- Nightmare Amalgamation
 							["questID"] = 82014,	-- Aura of Paralyzing Dread HQT
 							["coord"] = { 88.6, 68.2, ASHENVALE },
@@ -953,6 +953,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["timeline"] = { REMOVED_4_0_3 },
 								}),
 							},
+						}),
+						n(createHeader({	-- Emotional Damage
+							readable = "SOD - Nightmare Incursions - Emotional Damage",
+							icon = 237552,
+							text = {
+								en = "Emotional Damage",
+							},
+						}), {
+							["qg"] = 221477,	-- Field Captain Hannalah
+							["questID"] = 82015,	-- Emotional Damage HQT
+							["sourceQuest"] = 82014,	-- Aura of Paralyzing Dread HQT
+							["coord"] = { 89.6, 40.6, ASHENVALE },
+							["lvl"] = 40,
 						}),
 						q(82106, {	-- Forging the Mightstone
 							["qg"] = 10838,	-- Commander Ashlam Valorfist

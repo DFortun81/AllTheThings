@@ -344,6 +344,7 @@ HeaderAssignments = {
 	["SOD - Aeonas: Journey to Felwood"] = -1000971,
 	["SOD - Nightmare Incursions"] = -1000969,
 	["SOD - Nightmare Incursions - Aura of Paralyzing Dread"] = -1000980,
+	["SOD - Nightmare Incursions - Emotional Damage"] = -1000981,
 	["SOD - Soul Brokers"] = -1000378,
 	["SOD - Wild Polymorph"] = -1000377,
 	["Soulshape Forms"] = -1000090,
@@ -488,4 +489,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000981;
+NextHeaderID = -1000982;
