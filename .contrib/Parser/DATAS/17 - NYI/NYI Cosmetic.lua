@@ -481,10 +481,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(WEAPONS, {
 
 				------ Single Pieces ------
-				i(220758),	-- Champion Stormhammer
-				i(220753),	-- Deep Stormhammer
-				i(220752),	-- Frenzied Stormhammer
-				i(220757),	-- Sparking Stormhammer
 				i(220655),	-- Water Blaster P.K.
 				i(220690),	-- Water Blaster P.R.
 				i(220691),	-- Water Blaster Y.L.
