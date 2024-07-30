@@ -113,7 +113,7 @@ namespace ATT
             { "BFA", new int[] { 8, 0, 1, 27026 } },
             { "SHADOWLANDS", new int[] { 9, 0, 1, 36216 } },
             { "DF", new int[] { 10, 0, 0, 45335 } },
-            { "TWW", new int[] { 11, 0, 0, 52068 } },   // TODO
+            { "TWW", new int[] { 11, 0, 0, 55793 } },
             { "MID", new int[] { 12, 0, 0, 52068 } },   // TODO
             { "TLT", new int[] { 13, 0, 0, 52068 } },   // TODO
         };
@@ -137,7 +137,7 @@ namespace ATT
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
             { "SHADOWLANDS", new int[] { 9, 2, 7, 45745 } },
-            { "DF", new int[] { 10, 2, 0, 52068 } },
+            { "DF", new int[] { 10, 2, 7, 55664 } },
             { "TWW", new int[] { 11, 0, 0, 52068 } },   // TODO
             { "MID", new int[] { 12, 0, 0, 52068 } },   // TODO
             { "TLT", new int[] { 13, 0, 0, 52068 } },   // TODO
@@ -564,7 +564,7 @@ namespace ATT
         internal static Dictionary<long, object> CustomHeaders { get; private set; }
 
         /// <summary>
-        /// This contains all of the explicitly assigned headerIDs to readable 
+        /// This contains all of the explicitly assigned headerIDs to readable
         /// </summary>
         internal static Dictionary<string, long> CustomHeaderIDsByKey { get; } = new Dictionary<string, long>();
 
