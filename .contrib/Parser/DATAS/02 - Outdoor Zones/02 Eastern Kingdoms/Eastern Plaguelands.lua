@@ -4365,9 +4365,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			n(TREASURES, {
-				-- #if AFTER CATA
-				o(180751),	-- Floating Wreckage
-				-- #endif
 				--o(xxxxx, {	-- Carved Eye
 					--["coord"] = { 28.6, 13.4, EASTERN_PLAGUELANDS },
 					--["timeline"] = { ADDED_10_2_5 },

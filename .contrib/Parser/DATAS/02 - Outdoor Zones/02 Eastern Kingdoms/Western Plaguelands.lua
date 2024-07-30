@@ -2926,11 +2926,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_5_2_0 },
 				}),
 			}),
-			-- #if AFTER CATA
-			n(TREASURES, {
-				o(180685),	-- Waterlogged Wreckage
-			}),
-			-- #endif
 			-- #if AFTER 10.1.5
 			n(TREASURES, {
 				i(206359, {	-- Caer Darrow Fountain Water

@@ -3657,9 +3657,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 			}),
 			-- #endif
-			n(TREASURES, {
-				o(180662),	-- Schooner Wreckage
-			}),
 			-- #if NOT ANYCLASSIC
 			-- CRIEVE NOTE: I'm going to solve this a different way eventually.
 			o(207279, {	-- Warchief's Command Board

@@ -3155,9 +3155,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(TREASURES, {
-				-- #if BEFORE CATA
-				o(180751),	-- Floating Wreckage
-				-- #endif
 				i(212991, {	-- Grimoire of the Dire Observer (CI!)
 					--["provider"] = { "o", xxxxx },	-- Carved Eye
 					["description"] = "Click on the Carved Eye in the room under the Maul Arena in Dire Maul",
@@ -3169,9 +3166,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 57.0, 78.2, FERALAS },
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
-				-- #if AFTER CATA
-				o(180685),	-- Waterlogged Wreckage
-				-- #endif
 			}),
 			n(VENDORS, {
 				n(44381, {	-- Apprentice of Estulan <Enchanting Supplies>

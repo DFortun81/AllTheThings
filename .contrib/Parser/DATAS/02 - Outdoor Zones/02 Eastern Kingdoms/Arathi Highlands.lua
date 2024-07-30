@@ -2402,16 +2402,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 			}),
 			-- #endif
-			-- #if BEFORE CATA
-			n(TREASURES, {
-				o(180685),	-- Waterlogged Wreckage
-			}),
-			-- #endif
-			-- #if AFTER CATA
-			n(TREASURES, {
-				o(180662),	-- Schooner Wreckage
-			}),
-			-- #endif
 			n(VENDORS, {
 				n(2816, {	-- Androd Fadran <Leatherworking Supplies>
 					["coords"] = {

@@ -3031,11 +3031,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			-- #if AFTER CATA
-			n(TREASURES, {
-				o(180751),	-- Floating Wreckage
-			}),
-			-- #endif
 			n(VENDORS, {
 				n(4877, {	-- Jandia <Trade Supplies>
 					["coord"] = { 46.0, 51.6, THOUSAND_NEEDLES },

@@ -3683,9 +3683,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
-			n(TREASURES, {
-				o(180685),	-- Waterlogged Wreckage
-			}),
 			n(VENDORS, {
 				-- #if BEFORE CATA
 				n(13476, {	-- Balai Lok'Wein <Potions, Scrolls and Reagents>

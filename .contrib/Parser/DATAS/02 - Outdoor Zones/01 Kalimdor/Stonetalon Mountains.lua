@@ -2904,9 +2904,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 			}),
 			-- #endif
-			n(TREASURES, {
-				o(180662),	-- Schooner Wreckage
-			}),
 			n(VENDORS, {
 				n(9549, {	-- Borand <Bowyer>
 					-- #if AFTER CATA

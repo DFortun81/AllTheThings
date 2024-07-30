@@ -4209,11 +4209,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { DRUID },
 				})),
 			}),
-			-- #if AFTER CATA
-			n(TREASURES, {
-				o(180662),	-- Schooner Wreckage
-			}),
-			-- #endif
 			-- #endif
 			n(ZONE_DROPS, {
 				i(23777, {	-- Diabolical Plans [Alliance]

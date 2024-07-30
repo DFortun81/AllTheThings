@@ -3092,9 +3092,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_6 },
 				}),
 			}),
-			n(TREASURES, {
-				o(180901),	-- Bloodsail Wreckage
-			}),
 			n(VENDORS, {
 				n(734, {	-- Corporal Bluth <Camp Trader>
 					-- #if AFTER CATA

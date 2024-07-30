@@ -1825,11 +1825,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Reward for turning in an Imperfect Draenethyst Fragment to Kum'isha the Collector.\n\nContains a random green world drop item.",
 				}),
 			}),
-			-- #if AFTER CATA
-			n(TREASURES, {
-				o(180751),	-- Floating Wreckage
-			}),
-			-- #endif
 			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 				--o(xxxxx, {	-- Carved Eye
 					["coord"] = { 55.6, 53.1, BLASTED_LANDS },

@@ -2631,9 +2631,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 			}),
 			-- #endif
-			n(TREASURES, {
-				o(180685),	-- Waterlogged Wreckage
-			}),
 			n(VENDORS, {
 				n(12045, {	-- Hae'Wilani <Axecrafter>
 					-- #if AFTER CATA

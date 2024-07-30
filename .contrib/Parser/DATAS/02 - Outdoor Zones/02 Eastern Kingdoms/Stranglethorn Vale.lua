@@ -2642,14 +2642,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}))),
 			-- #endif
-			-- #if BEFORE CATA
-			n(TREASURES, {
-				o(180685),	-- Waterlogged Wreckage
-			}),
-			-- #endif
-			n(TREASURES, {
-				o(180901),	-- Bloodsail Wreckage
-			}),
 			n(VENDORS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 					["coords"] = {
