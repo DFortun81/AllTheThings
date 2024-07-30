@@ -1032,6 +1032,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					{ "i", 36860, 1 },	-- Eternal Fire
 					{ "i", 35627, 1 },	-- Eternal Shadow
 				},
+				-- #IF BEFORE 11.0.0
 				["OnTooltip"] = [[function(t, tooltipInfo)
 					if _.CurrentCharacter.Spells[55208] then
 						if ]] .. WOWAPI_GetSpellCooldown(55208) .. [[ > 0 then
@@ -1041,6 +1042,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 						end
 					end
 				end]]
+				-- #ENDIF
 			}),
 		}),
 	}),
