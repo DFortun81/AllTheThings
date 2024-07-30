@@ -21940,3 +21940,14 @@
 230259@@@Supplier Wei
 230381@@@Boost
 230388@@@Honor Guard
+11.0.2.55789
+212741@@@Speaker Brinthe
+212744@@@Dagran Thaurissan II
+213152@@@Skitter
+222557@@@Magni Bronzebeard
+222558@@@Anduin Wrynn
+223135@@@Sir Shady Mrrgglton Junior
+230447@@@Ballista
+230455@@@Personal Skiff
+230553@@@Boost
+230868@@@High Speaker's Guard

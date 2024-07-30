@@ -15302,3 +15302,5 @@
 40876@@@Vox Arachni
 40882@@@Copious Coffers
 40885@@@The Key to Madness
+11.0.2.55789
+40433@@@Let Me Solo Him
