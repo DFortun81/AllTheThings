@@ -1608,8 +1608,18 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 16742,
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
 				{
 					["name"] = "Golden Scale Coif",
+					["timeline"] = { "added 1.15.1" },
+					["recipeID"] = 439126,
+				},
+				-- #endif
+				{
+					["name"] = "Golden Scale Coif",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.1" },
+					-- #endif
 					["recipeID"] = 3503,
 				},
 				{
@@ -1701,8 +1711,18 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 20873,
 				},
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
 				{
 					["name"] = "Golden Scale Shoulders",
+					["timeline"] = { "added 1.15.1" },
+					["recipeID"] = 439130,
+				},
+				-- #endif
+				{
+					["name"] = "Golden Scale Shoulders",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.1" },
+					-- #endif
 					["recipeID"] = 3505,
 				},
 				{
@@ -1974,8 +1994,18 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 16745,
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
 				{
 					["name"] = "Golden Scale Cuirass",
+					["timeline"] = { "added 1.15.1" },
+					["recipeID"] = 439124,
+				},
+				-- #endif
+				{
+					["name"] = "Golden Scale Cuirass",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.1" },
+					-- #endif
 					["recipeID"] = 3511,
 				},
 				{
@@ -2161,8 +2191,18 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 16744,
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
 				{
 					["name"] = "Golden Scale Leggings",
+					["timeline"] = { "added 1.15.1" },
+					["recipeID"] = 439132,
+				},
+				-- #endif
+				{
+					["name"] = "Golden Scale Leggings",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.1" },
+					-- #endif
 					["recipeID"] = 3507,
 				},
 				{
@@ -2242,8 +2282,18 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 24399,
 				}),
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
 				{
 					["name"] = "Golden Scale Boots",
+					["timeline"] = { "added 1.15.1" },
+					["recipeID"] = 439122,
+				},
+				-- #endif
+				{
+					["name"] = "Golden Scale Boots",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.1" },
+					-- #endif
 					["recipeID"] = 3515,
 				},
 				{

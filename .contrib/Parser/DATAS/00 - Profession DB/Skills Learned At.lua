@@ -207,9 +207,11 @@ for spellID,learnedAt in pairs({
 	[7222] = 165,	-- Iron Counterweight
 	[3495] = 170,	-- Golden Iron Destroyer
 	[3507] = 170,	-- Golden Scale Leggings
+	[439132] = 170,	-- Golden Scale Leggings
 	[3502] = 170,	-- Green Iron Helm
 	[9814] = 175,	-- Barbaric Iron Helm
 	[3505] = 175,	-- Golden Scale Shoulders
+	[439130] = 175,	-- Golden Scale Shoulders
 	[3493] = 175,	-- Jade Serpentblade
 	[429348] = 175,	-- Shifting Silver Breastplate
 	[9818] = 180,	-- Barbaric Iron Boots
@@ -223,12 +225,15 @@ for spellID,learnedAt in pairs({
 	[3513] = 185,	-- Polished Steel Boots
 	[21913] = 190,	-- Edge of Winter
 	[3503] = 190,	-- Golden Scale Coif
+	[439126] = 190,	-- Golden Scale Coif
 	[15973] = 190,	-- Searing Golden Blade
 	[7224] = 190,	-- Steel Weapon Chain
 	[3511] = 195,	-- Golden Scale Cuirass
+	[439124] = 195,	-- Golden Scale Cuirass
 	[9785] = 200,	-- Blacksmithing
 	[3497] = 200,	-- Frost Tiger Blade
 	[3515] = 200,	-- Golden Scale Boots
+	[439122] = 200,	-- Golden Scale Boots
 	[11454] = 200,	-- Inlaid Mithril Cylinder
 	[3500] = 200,	-- Shadow Crescent Axe
 	[9920] = 200,	-- Solid Grinding Stone

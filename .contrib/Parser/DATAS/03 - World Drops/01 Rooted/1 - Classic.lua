@@ -3533,10 +3533,40 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(3868),	-- Plans: Frost Tiger Blade (RECIPE!)
 			i(3610),	-- Plans: Gemmed Copper Gauntlets (RECIPE!)
 			i(3867),	-- Plans: Golden Iron Destroyer (RECIPE!)
-			i(3875),	-- Plans: Golden Scale Boots (RECIPE!)
-			i(3873),	-- Plans: Golden Scale Cuirass (RECIPE!)
-			i(3872),	-- Plans: Golden Scale Leggings (RECIPE!)
-			i(3871),	-- Plans: Golden Scale Shoulders (RECIPE!)
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217276, {	-- Plans: Golden Scale Boots (RECIPE!)
+				["timeline"] = { "added 1.15.1" },
+			})),
+			applyclassicphase(SOD_PHASE_TWO, i(217278, {	-- Plans: Golden Scale Cuirass (RECIPE!)
+				["timeline"] = { "added 1.15.1" },
+			})),
+			applyclassicphase(SOD_PHASE_TWO, i(217286, {	-- Plans: Golden Scale Leggings (RECIPE!)
+				["timeline"] = { "added 1.15.1" },
+			})),
+			applyclassicphase(SOD_PHASE_TWO, i(217284, {	-- Plans: Golden Scale Shoulders (RECIPE!)
+				["timeline"] = { "added 1.15.1" },
+			})),
+			-- #endif
+			i(3875, {	-- Plans: Golden Scale Boots (RECIPE!)
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.1" },
+				-- #endif
+			}),
+			i(3873, {	-- Plans: Golden Scale Cuirass (RECIPE!)
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.1" },
+				-- #endif
+			}),
+			i(3872, {	-- Plans: Golden Scale Leggings (RECIPE!)
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.1" },
+				-- #endif
+			}),
+			i(3871, {	-- Plans: Golden Scale Shoulders (RECIPE!)
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.1" },
+				-- #endif
+			}),
 			i(3611),	-- Plans: Green Iron Boots (RECIPE!)
 			i(3612),	-- Plans: Green Iron Gauntlets (RECIPE!)
 			i(3870),	-- Plans: Green Iron Shoulders (RECIPE!)
