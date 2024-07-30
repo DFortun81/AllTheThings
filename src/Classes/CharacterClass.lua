@@ -143,16 +143,24 @@ setmetatable(ClassInfoByClassName, ClassInfoMetatable);
 local function GetClassesString(c, includeNames, trim)
 	local icons = {}
 	local info
+	local i = 1
 	if includeNames then
-		for i,cl in ipairs(c) do
+		for _,cl in ipairs(c) do
 			info = ClassInfoByID[cl]
-			icons[i] = info.icontext
+			if info then
+				icons[i] = info.icontext
+				i = i + 1
+			end
 		end
 	else
-		for i,cl in ipairs(c) do
-			icons[i * 3 - 2] = "|T";
-			icons[i * 3 - 1] = ClassIcons[cl];
-			icons[i * 3] = ":0|t ";
+		for _,cl in ipairs(c) do
+			info = ClassIcons[cl]
+			if info then
+				icons[i * 3 - 2] = "|T";
+				icons[i * 3 - 1] = info
+				icons[i * 3] = ":0|t ";
+				i = i + 1
+			end
 		end
 	end
 	if trim then
