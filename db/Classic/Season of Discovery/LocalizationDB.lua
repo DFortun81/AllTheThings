@@ -327,6 +327,7 @@ localize(L.HEADER_NAMES, {
 	[-1000970] = "Tier 3",
 	[-1000971] = "Aeonas: Journey to Felwood",
 	[-1000979] = "Speak to Harold",
+	[-1000980] = "Aura of Paralyzing Dread",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -360,6 +361,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000872] = "Get swept away in the Plunderstorm— a fun, new, limited-time, pirate-themed event of prodigious proportions lasting the next several weeks. Scour the map and try to be the last pirate standing while dashing across the Arathi Highlands to find abilities, upgrades, and loot to plunder just to survive!\n\nTo Play: Login to Retail WoW and select 'Plunderstorm' from the Game Mode on the top left of your Character Select screen.",
 	[-1000968] = "This is a free-for-all PvP event that takes place in Stranglethorn Vale for 30 minutes once every 3 hours starting at midnight server time.\n\nKill players to receive the stacking buff Blood for the Blood Loa. This stacks 255 times.\nYou receive 5 stacks of blood per kill.\nYou can lose blood from dying.\nTravel to blood altars |cffffffff(red flag on map)|r to exchange Blood for the Blood Loa stacks for Copper Blood Coin, Silver Blood Coin, Gold Blood Coin. You simply walk up to the altar and the coins will automatically appear in your bags.\n\nYou can opt out of the event by speaking to a Zandalarian Emissary.",
 	[-1000969] = "This event focuses on the portals found across Azeroth, typically hosting an Emerald Dragon World Boss. These new events are PvE focused, asking players to complete quests around and inside the portals.\n\nThe event is intended to provide both endgame content and variation, with a new faction, the Emerald Wardens as well as new items and sets, but also to supplement the leveling experience. As early as level 25, players will be able to start doing Nightmare Incursions for experience and reputation.\n\nIncursions are also intended to be done in a group, with quests being shareable to up to 4 other players. Some quests will also require killing boss-type enemies, or require you to utilize gathering professions. This doesn't mean that you can't do them solo, it is just unlikely to be very efficient.",
+	[-1000980] = "You need to be debuffed from the Nightmare Amalgam to proc this quest. (do not engage it, just run away)",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -494,6 +496,7 @@ localize(L.HEADER_ICONS, {
 	[-1000970] = "Interface/ICONS/inv_scroll_11",
 	[-1000971] = "Interface/CURSOR/Taxi",
 	[-1000979] = "Interface/CURSOR/Speak",
+	[-1000980] = "136147",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,

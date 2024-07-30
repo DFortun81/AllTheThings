@@ -853,15 +853,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 50,
 						}),
 						q(82017, {	-- An Amalagamation of Nightmares
-							["providers"] = {
-								{ "n", 222198 },	-- Nightmare Amalgamation
-								{ "n", 221477 },	-- Field Captain Hannalah
-							},
-							["coords"] = {
-								{ 88.6, 68.2, ASHENVALE },
-								{ 89.6, 40.6, ASHENVALE },
-							},
-							["description"] = "You need a debuff from the Nightmare Amalgam for the Field Captain to offer this quest. (do not engage it, just run away)",
+							["qg"] = 221477,	-- Field Captain Hannalah
+							["sourceQuest"] = 82014,	-- Aura of Paralyzing Dread
+							["coord"] = { 89.6, 40.6, ASHENVALE },
 							["maps"] = { MOONGLADE },
 							["lvl"] = 40,
 							["groups"] = {
@@ -870,6 +864,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 									["coord"] = { 52.4, 40.4, MOONGLADE },
 								}),
 							},
+						}),
+						n(createHeader({	-- Aura of Paralyzing Dread
+							readable = "SOD - Nightmare Incursions - Aura of Paralyzing Dread",
+							icon = 136147,
+							text = {
+								en = "Aura of Paralyzing Dread",
+							},
+							description = {
+								en = "You need to be debuffed from the Nightmare Amalgam to proc this quest. (do not engage it, just run away)",
+							},
+						}), {	-- Aura of Paralyzing Dread
+							["qg"] = 222198,	-- Nightmare Amalgamation
+							["questID"] = 82014,	-- Aura of Paralyzing Dread HQT
+							["coord"] = { 88.6, 68.2, ASHENVALE },
+							["lvl"] = 40,
 						}),
 						q(82111, {	-- Blood of Morphaz
 							["qg"] = 8405,	-- Ogtinc
