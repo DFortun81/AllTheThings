@@ -2636,6 +2636,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(SOD_PHASE_THREE, massacrecoin_c(100, i(221365))),	-- Silver Massacre Coin
 				applyclassicphase(SOD_PHASE_THREE, massacrecoin_s(100, i(221366))),	-- Gold Massacre Coin
+				i(216884, {	-- Bloodthirst Blade
+					["description"] = "This unwieldable weapon drops from troll boss during the Blood Moon event. It cannot be equipped by any player, but is pretty cool none-the-less.",
+					["cr"] = 218690,	-- Kha'damu <Chosen of the Blood Loa>
+				}),
 			}))),
 			-- #endif
 			-- #if BEFORE CATA
