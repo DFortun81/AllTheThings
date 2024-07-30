@@ -1113,6 +1113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						q(82095, {	-- The God Hakkar
 							["qg"] = 8579,	-- Yeh'kinya
+							["sourceQuest"] = 4787,	-- The Ancient Egg
 							["coord"] = { 66.8, 22.4, TANARIS },
 							["lvl"] = 50,
 							["groups"] = {
