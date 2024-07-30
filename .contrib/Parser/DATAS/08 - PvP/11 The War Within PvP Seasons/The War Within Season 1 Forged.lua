@@ -793,7 +793,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 				["coord"] = { 59.8, 69.3, DORNOGAL },
 				["g"] = {
 					elitepvp(ig(223616, {	-- Forged Gladiator's Tabard
-						["sourceAchievement"] = 40392,	-- Elite: The War Within Season 1
+						["sourceAchievements"] = { 40392 },	-- Elite: The War Within Season 1
 						["cost"] = {{"c", HONOR, 100 }},
 					})),
 					n(WEAPONS, {

@@ -4930,7 +4930,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				}),
 			}),
 			n(SEASON_SINFUL, {
-				filter(CLOAKS, {
+				filter(BACK_F, {
 					i(180425),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 02
 					i(180426),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 03
 					i(180427),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 04

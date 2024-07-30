@@ -1616,7 +1616,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		})),
 	}),
 	-- #if AFTER 4.0.3
-	filter(CLOAKS, {
+	filter(BACK_F, {
 		i(52940, {	-- Candy's Cloak
 			["races"] = { GOBLIN },
 			["description"] = "Former Starter Cloak for Male Goblins",

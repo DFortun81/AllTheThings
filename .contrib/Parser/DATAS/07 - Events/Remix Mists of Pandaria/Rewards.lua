@@ -73,7 +73,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		i(226143),	-- Spool of Eternal Thread
 		i(226142),	-- Greater Spool of Eternal Thread
 
-		filter(CLOAKS, CLOAK_OF_INFINITE_BONUSIDS()),
+		filter(BACK_F, CLOAK_OF_INFINITE_BONUSIDS()),
 		filter(CONSUMABLES, {
 			i(217925),	-- Bottle of Bees
 			i(217926),	-- Bottle of Dead Bees

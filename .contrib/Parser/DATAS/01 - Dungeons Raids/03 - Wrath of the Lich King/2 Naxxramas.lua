@@ -1250,19 +1250,19 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							},
 						}),
 						i(206771, {	-- Pattern: Cursed Cloth (RECIPE!)
-							["description"] = "Requires to have completed achievement: Drop Dead, Gorgeous to buy.",
+							["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
 						}),
 						i(206772, {	-- Pattern: Languished Leather (RECIPE!)
-							["description"] = "Requires to have completed achievement: Drop Dead, Gorgeous to buy.",
+							["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
 						}),
 						i(206773, {	-- Pattern: Scourged Scales (RECIPE!)
-							["description"] = "Requires to have completed achievement: Drop Dead, Gorgeous to buy.",
+							["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
 						}),
 						i(206774, {	-- Plans: Undeath Metal (RECIPE!)
-							["description"] = "Requires to have completed achievement: Drop Dead, Gorgeous to buy.",
+							["sourceAchievements"] = { 11744 },	-- Drop Dead, Gorgeous
 							["cost"] = {{ "i", DEATHS_BARGAINING_CHIP, 20 }},
 						}),
 						i(206579, {	-- Phylacterweave
