@@ -2388,6 +2388,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, n(221828, {	-- Vengeful Spirit
+					["description"] = "Use your Sense Undead after 9PM Server near the Quel'Danil Lodge to spawn this rare.",
+					["timeline"] = { "added 1.15.1" },
+					["classes"] = { PALADIN },
+					["groups"] = {
+						i(220165, {	-- Rune of Wrath
+							["timeline"] = { "added 1.15.1" },
+							["classes"] = { PALADIN },
+							["groups"] = {
+								recipe(429249),	-- Engrave Helm - Wrath
+							},
+						}),
+					},
+				})),
+				-- #endif
 				n(8219, {	-- Zul'arek Hatefowler
 					["coords"] = {
 						-- #if AFTER CATA
