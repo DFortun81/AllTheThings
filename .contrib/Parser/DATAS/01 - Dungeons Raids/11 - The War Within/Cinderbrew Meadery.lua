@@ -40,7 +40,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["g"] = {
 						i(221058),	-- Brewery Toiler's Waistband
 						i(221055),	-- Cinderbrew-Soaked Cowl
-						i(221061),	-- Hops Laden Greatboots
+						i(221061),	-- Hops-Laden Greatboots
 						i(221059),	-- I'pa's Pale Aleguards
 						i(221057),	-- Sticky Stirring Stick
 						i(221060),	-- Strapped Rescue-Keg
@@ -54,8 +54,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(223155),	-- Bop (PET!)
 						i(223102),	-- Pattern: Busy Bee's Buckle (RECIPE!)
 						i(224424),	-- Pattern: Artisan Chef's Hat (RECIPE!)
-						i(221070),	-- "Azeroth's Greatest BEO" Cap
-						i(221198),	-- 85 Years Tenure Ring
+						i(221070),	-- "Azeroth's Greatest BEE.E.O." Cap
+						i(221198),	-- 85-Year Tenure Ring
 						i(221071),	-- Backbreaking Bootstrappers
 						i(221072),	-- Moneymaking Businessmantle
 						i(221068),	-- Profit Divider

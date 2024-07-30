@@ -31,8 +31,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(219305),	-- Carved Blazikon Wax
 						i(221103),	-- Flickering Glowtorc
 						i(221104),	-- Gleamwax Shackles
+						i(221101),	-- Scent-Strong Candlecord
 						i(221102),	-- Shimmering Glimclaws
-						i(221101),	-- Strong-Scented Candlecord
 						i(221100),	-- Waxsteel Greathelm
 					},
 				}),

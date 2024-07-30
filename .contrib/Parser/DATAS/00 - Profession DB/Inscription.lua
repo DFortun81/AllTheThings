@@ -1615,11 +1615,11 @@ i(0, 444228);		-- Recraft Equipment
 i(0, 444221);		-- Shadow Ink
 i(0, 444203);		-- Vantus Rune: Nerub-ar Palace
 --- ITEM ---
-i(225484, 455006);	-- Algari Competitor's Censer
 i(225477, 444338);	-- Algari Competitor's Emblem
 i(225476, 444337);	-- Algari Competitor's Insignia of Alacrity
+i(225484, 455006);	-- Algari Competitor's Lamp
 i(225475, 444336);	-- Algari Competitor's Medallion
-i(225480, 455007);	-- Algari Competitor's Scythe
+i(225480, 455007);	-- Algari Competitor's Pillar
 i(225481, 455008);	-- Algari Competitor's Staff
 i(223068, 444232);	-- Algari Missive of Crafting Speed
 i(223071, 444235);	-- Algari Missive of Deftness

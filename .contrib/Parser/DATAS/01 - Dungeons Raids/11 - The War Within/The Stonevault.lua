@@ -32,7 +32,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221080),	-- Corpseleecher Grips
 						i(221079),	-- Crystal-Fissure Girdle
 						i(221081),	-- Guise of the Construct
-						i(221084),	-- Skaradyn Mercybringer
+						i(221084),	-- Skardyn Mercybringer
 						i(219300),	-- Skarmorak Shard
 						i(221082),	-- Tainted Earthshard Walkers
 						i(221083),	-- Wardbreaker of the Fractured
@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221087),	-- Dorlita's Safety Belt
 						i(221086),	-- Machinist's Searing Handguards
 						i(221085),	-- Melodious Iron Songspire
-						i(219301),	-- Overclocked Gear-A-Rang Launcher
+						i(219301),	-- Overclocked Gear-a-Rang Launcher
 						i(219302),	-- Scrapsinger's Symphony
 					},
 				}),

@@ -4133,7 +4133,7 @@ i(224439, 4470);	-- Oop'lajax
 i(223802, 4581);	-- Purple Stagshell
 i(222978, 4546);	-- Sandstone Ramolith
 i(224579, 3362);	-- Sapphire Crab
-i(222974, 4543);	-- Sir Shady Mrgglton Junior
+i(222974, 4543);	-- Sir Shady Mrrgglton Junior
 i(221494, 4495);	-- Skippy
 i(222980, 4542);	-- Slim
 i(223624, 4575);	-- Sneef

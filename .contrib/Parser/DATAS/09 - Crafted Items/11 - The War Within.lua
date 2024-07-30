@@ -362,12 +362,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- PVP
 			FirstCraft(83296, 455003);	-- Algari Competitor's Greatsword
 			FirstCraft(83297, 455004);	-- Algari Competitor's Sword
-			FirstCraft(83295, 455002);	-- Algari Competitor's Sickle
+			FirstCraft(83295, 455002);	-- Algari Competitor's Skewer
 			FirstCraft(83293, 455000);	-- Algari Competitor's Shield
 			FirstCraft(83292, 454999);	-- Algari Competitor's Scepter
 			FirstCraft(83291, 454998);	-- Algari Competitor's Dagger
 			FirstCraft(83294, 455001);	-- Algari Competitor's Axe
-			FirstCraft(83290, 454997);	-- Algari Competitor's Splitter
+			FirstCraft(83290, 454997);	-- Algari Competitor's Pickaxe
 			FirstCraft(80625, 438914);	-- Algari Competitor's Plate Breastplate
 			FirstCraft(80668, 438920);	-- Algari Competitor's Plate Waistguard
 			FirstCraft(80626, 438915);	-- Algari Competitor's Plate Sabatons
@@ -467,10 +467,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(225374),	-- Algari Competitor's Axe
 			i(225367),	-- Algari Competitor's Dagger
 			i(225376),	-- Algari Competitor's Greatsword
+			i(225366),	-- Algari Competitor's Pickaxe
 			i(225371),	-- Algari Competitor's Scepter
 			i(225373),	-- Algari Competitor's Shield
-			i(225375),	-- Algari Competitor's Sickle
-			i(225366),	-- Algari Competitor's Splitter
+			i(225375),	-- Algari Competitor's Skewer
 			i(225377),	-- Algari Competitor's Sword
 			i(222459),	-- Beledar's Bulwark
 			i(222447),	-- Charged Claymore
@@ -1519,11 +1519,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = INSCRIPTION,
 		},{
 			-- Competitor's Crafts (PvP)
-			FirstCraft(80743, 455006); -- Algari Competitor's Censer
 			FirstCraft(80748, 444338); -- Algari Competitor's Emblem
 			FirstCraft(80747, 444337); -- Algari Competitor's Insignia of Alacrity
+			FirstCraft(80743, 455006); -- Algari Competitor's Lamp
 			FirstCraft(80746, 444336); -- Algari Competitor's Medallion
-			FirstCraft(80744, 455007); -- Algari Competitor's Scythe
+			FirstCraft(80744, 455007); -- Algari Competitor's Pillar
 			FirstCraft(80745, 455008); -- Algari Competitor's Staff
 			-- Combat Stats
 			FirstCraft(80719, 444210); -- Algari Missive of the Aurora
@@ -1737,8 +1737,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222671),	-- Darkmoon Deck: Vivacity
 		}),
 		n(WEAPONS, {
-			i(225372),	-- Algari Competitor's Censer
-			i(225368),	-- Algari Competitor's Scythe
+			i(225372),	-- Algari Competitor's Lamp
+			i(225368),	-- Algari Competitor's Pillar
 			i(225369),	-- Algari Competitor's Staff
 			i(222570),	-- Inquisitor's Baton
 			i(222569),	-- Inquisitor's Crutch

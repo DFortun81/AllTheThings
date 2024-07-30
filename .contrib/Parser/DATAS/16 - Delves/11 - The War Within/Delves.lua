@@ -1062,7 +1062,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			filter(BATTLE_PETS, {
-				i(222974, {	-- Sir Shady Mrgglton Junior (PET!)
+				i(222974, {	-- Sir Shady Mrrgglton Junior (PET!)
 					["cost"] = {{"c", UNDERCOIN, 10000}},
 				}),
 			}),

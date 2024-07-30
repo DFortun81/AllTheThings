@@ -2245,6 +2245,7 @@ i(0, 450218);		-- Sanctified Alloy
 i(225486, 455001);	-- Algari Competitor's Axe
 i(225479, 454998);	-- Algari Competitor's Dagger
 i(225488, 455003);	-- Algari Competitor's Greatsword
+i(225478, 454997);	-- Algari Competitor's Pickaxe
 i(225466, 438921);	-- Algari Competitor's Plate Armguards
 i(225459, 438914);	-- Algari Competitor's Plate Breastplate
 i(225461, 438916);	-- Algari Competitor's Plate Gauntlets
@@ -2255,8 +2256,7 @@ i(225460, 438915);	-- Algari Competitor's Plate Sabatons
 i(225465, 438920);	-- Algari Competitor's Plate Waistguard
 i(225483, 454999);	-- Algari Competitor's Scepter
 i(225485, 455000);	-- Algari Competitor's Shield
-i(225487, 455002);	-- Algari Competitor's Sickle
-i(225478, 454997);	-- Algari Competitor's Splitter
+i(225487, 455002);	-- Algari Competitor's Skewer
 i(225489, 455004);	-- Algari Competitor's Sword
 i(223053, 450279);	-- Artisan Leatherworker's Knife
 i(223054, 450280);	-- Artisan Leatherworker's Toolset

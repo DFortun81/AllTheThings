@@ -89,7 +89,7 @@ local EncounterToLoot = {
 		i(212399),	-- Splintershot Silkbow
 		i(225577),	-- Sureki Zealot's Insignia
 		i(212415),	-- Throne Defender's Bangles
-		i(212427),	-- Visor of the Evolved Captain
+		i(212427),	-- Visor of the Ascended Captain
 	};
 	[RASHANAN] = {
 		i(225630, {	-- Dreadful Obscenity's Idol
@@ -229,7 +229,7 @@ local EncounterToLoot = {
 		i(212435),	-- Liquified Defector's Leggings
 		i(212454),	-- Mad Queen's Mandate
 		i(212433),	-- Omnivore's Venomous Camouflage
-		i(212420),	-- Queenguards's Carapace
+		i(212420),	-- Queensguard Carapace
 		i(225578),	-- Seal of the Poisoned Pact
 		i(212394),	-- Sovereign's Disdain
 		i(212434),	-- Voidspoken Sarong
