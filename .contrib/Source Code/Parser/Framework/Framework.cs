@@ -96,7 +96,7 @@ namespace ATT
 
         /// <summary>
         /// The very first patch used by each content expansion.
-        /// https://wowpedia.fandom.com/wiki/Patch
+        /// https://warcraft.wiki.gg/wiki/Patch
         /// </summary>
         public static readonly Dictionary<string, int[]> FIRST_EXPANSION_PATCH = new Dictionary<string, int[]>
         {
@@ -121,7 +121,7 @@ namespace ATT
         /// <summary>
         /// The very last patch (or current one for Retail) used by each content expansion.
         /// NOTE: Classic usually follows this build number.
-        /// https://wowpedia.fandom.com/wiki/Patch
+        /// https://warcraft.wiki.gg/wiki/Patch
         /// </summary>
         public static readonly Dictionary<string, int[]> LAST_EXPANSION_PATCH = new Dictionary<string, int[]>
         {
