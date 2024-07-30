@@ -3573,7 +3573,16 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7990),	-- Plans: Heavy Mithril Helm (RECIPE!)
 			i(7975),	-- Plans: Heavy Mithril Pants (RECIPE!)
 			i(12716),	-- Plans: Helm of the Great Chief (RECIPE!)
-			i(12728),	-- Plans: Invulnerable Mail (RECIPE!)
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228312, {	-- Plans: Invincible Mail (RECIPE!)
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(12728, {	-- Plans: Invulnerable Mail (RECIPE!)
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(5543),	-- Plans: Iridescent Hammer (RECIPE!)
 			i(6045),	-- Plans: Iron Counterweight (RECIPE!)
 			i(6044),	-- Plans: Iron Shield Spike (RECIPE!)

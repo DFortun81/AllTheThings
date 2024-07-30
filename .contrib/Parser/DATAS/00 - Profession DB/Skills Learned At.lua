@@ -360,6 +360,7 @@ for spellID,learnedAt in pairs({
 	[28243] = 300,	-- Icebane Gauntlets
 	[16663] = 300,	-- Imperial Plate Chest
 	[16730] = 300,	-- Imperial Plate Leggings
+	[461735] = 300,	-- Invincible Mail
 	[16746] = 300,	-- Invulnerable Mail
 	[28463] = 300,	-- Ironvine Belt
 	[28461] = 300,	-- Ironvine Breastplate

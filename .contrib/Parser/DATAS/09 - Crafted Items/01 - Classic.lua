@@ -360,7 +360,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(16989),	-- Fiery Chain Girdle
 				i(16988),	-- Fiery Chain Shoulders
 				i(12636),	-- Helm of the Great Chief
-				i(12641),	-- Invulnerable Mail
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227876, {	-- Invincible Mail
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
+				i(12641, {	-- Invulnerable Mail
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				i(12640),	-- Lionheart Helm
 				i(12632),	-- Storm Gauntlets
 				i(12639),	-- Stronghold Gauntlets

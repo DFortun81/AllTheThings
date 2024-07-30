@@ -256,6 +256,9 @@ i(12699, 16655, nil, ARMORSMITH);	-- Fiery Plate Gauntlets [REMOVED: 4.0.3]
 i(17049, 20872, nil, ARMORSMITH);	-- Fiery Chain Girdle
 i(17053, 20873, nil, ARMORSMITH);	-- Fiery Chain Shoulders
 i(12716, 16728, nil, ARMORSMITH);	-- Helm of the Great Chief
+-- #if SEASON_OF_DISCOVERY
+i(228312, 461735, nil, ARMORSMITH);	-- Invincible Mail
+-- #endif
 i(12728, 16746, nil, ARMORSMITH);	-- Invulnerable Mail
 i(12717, 16729, nil, ARMORSMITH);	-- Lionheart Helm
 i(12703, 16661, nil, ARMORSMITH);	-- Storm Gauntlets

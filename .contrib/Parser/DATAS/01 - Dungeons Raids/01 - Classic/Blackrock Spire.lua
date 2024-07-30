@@ -1807,7 +1807,16 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(12834, {	-- Plans: Arcanite Champion (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
-						i(12728),	-- Plans: Invulnerable Mail (RECIPE!) [Also available as a world drop.]
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228312, {	-- Plans: Invincible Mail (RECIPE!)
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(12728, {	-- Plans: Invulnerable Mail (RECIPE!) [Also available as a world drop.]
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 						i(12837, {	-- Plans: Masterwork Stormhammer (RECIPE!)
 							["timeline"] = { REMOVED_6_0_2 },
 						}),

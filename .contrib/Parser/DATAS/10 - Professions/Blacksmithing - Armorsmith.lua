@@ -208,10 +208,21 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16745,
 						["requireSkill"] = 9788,
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Invincible Mail",
+						["recipeID"] = 461735,
+						["requireSkill"] = 9788,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Invulnerable Mail",
 						["recipeID"] = 16746,
 						["requireSkill"] = 9788,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 					{
 						["name"] = "Truesilver Breastplate",
