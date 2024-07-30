@@ -15276,6 +15276,10 @@
 40845@@@Hallowfall Arathi
 40848@@@Treasures of Hallowfall
 40851@@@Adventurer of Hallowfall
+11.0.0.55818
+40888@@@Heroic: Awakened Storms (DNT) (Character specific hidden copy)
+40892@@@Heroic: Awakened Shadows (DNT) (Character specific copy)
+40893@@@Heroic: Awakened Flames (DNT) (Character specific hidden copy)
 11.0.2.55399
 40764@@@Powers from Strange Disturbances obtained
 40836@@@Assembly of the Deeps
