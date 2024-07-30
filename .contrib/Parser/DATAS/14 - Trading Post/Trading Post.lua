@@ -2164,12 +2164,12 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.0.5" } }, {
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			n(MONTHLY_REWARD, {
-				i(223409),	-- The Cowards Violet Target (COSMETIC!)
+				i(223409),	-- The Coward's Violet Target
 			}),
 			filter(BATTLE_PETS, {
-				i(223474, {	-- Worgli The Apprehensive (PET!)
+				i(223474, {	-- Worgli the Apprehensive (PET!)
 					["cost"] = {{"c", TRADERS_TENDER, 300}},
 				}),
 			}),
@@ -2183,40 +2183,92 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(223469, {	-- Sentinel War Wolf (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 600}},
 				}),
-				i(223449, {	-- Korkron Warsaber (MOUNT!)
+				i(223449, {	-- Kor'kron Warsaber (MOUNT!)
 					["cost"] = {{"c", TRADERS_TENDER, 600}},
 				}),
 			}),
+			filter(TOYS, {
+				i(206268, {	-- Ethereal Transmogrifier
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+			}),
 			filter(COSMETIC, {
-				iensemble(220762, {	-- Arsenal: Stormriders Silver Stormhammers
-					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				i(212627, {	-- Dueler's Azure Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
 				}),
-				i(223430, {	-- Conjurers Sapphire Staff
-					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				i(212617, {	-- Dueler's Crimson Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
 				}),
-				i(223429, {	-- Conjurers Scarlet Staff
-					["cost"] = {{"c", TRADERS_TENDER, 60}},
-				}),
-				i(210999, {	-- Ruby Faced Mobile Timepiece
+				i(210849, {	-- Trader's Azure Sarong
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
-				i(223415, {	-- Sapphire Axe Of Asymmetry
-					["cost"] = {{"c", TRADERS_TENDER, 180}},
+				i(210844, {	-- Trader's Crimson Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(210999, {	-- Ruby-Faced Mobile Timepiece
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(211001, {	-- Sapphire-Faced Mobile Timepiece
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190576, {	-- Ensemble: Vagabond's Azure Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+					},
+				}),
+				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+					},
+				}),
+				i(190851, {	-- Ensemble: Vagabond's Crimson Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+					},
+				}),
+				i(190850, {	-- Ensemble: Wanderer's Crimson Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+					["g"] = {
+					},
+				}),
+				i(210869, {	-- Blademaster's Azure Stones
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(210865, {	-- Blademaster's Crimson Stones
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(212612, {	-- Wings of the Amethyst Monarch
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(212611, {	-- Wings of the Tourmaline Monarch
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(223425, {	-- Simple Scarlet Wand
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(223426, {	-- Simple Sapphire Wand
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(190871, {	-- Grunt's Buckler
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(190870, {	-- City Guard Heater Shield
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(223430, {	-- Conjurer's Sapphire Staff
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(223429, {	-- Conjurer's Scarlet Staff
+					["cost"] = {{"c", TRADERS_TENDER, 60}},
+				}),
+				i(223433, {	-- Sunreaver's Scarlet Tome
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(223434, {	-- The Sapphire Thalassian Tome
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
 				i(223423, {	-- Sapphire Bladed Blunderbuss
 					["cost"] = {{"c", TRADERS_TENDER, 130}},
-				}),
-				i(211001, {	-- Sapphire Faced Mobile Timepiece
-					["cost"] = {{"c", TRADERS_TENDER, 100}},
-				}),
-				i(223411, {	-- Sapphire Shanker
-					["cost"] = {{"c", TRADERS_TENDER, 150}},
-				}),
-				i(223413, {	-- Sapphire Warglaive
-					["cost"] = {{"c", TRADERS_TENDER, 150}},
-				}),
-				i(223414, {	-- Scarlet Axe Of Asymmetry
-					["cost"] = {{"c", TRADERS_TENDER, 180}},
 				}),
 				i(223422, {	-- Scarlet Bladed Blunderbuss
 					["cost"] = {{"c", TRADERS_TENDER, 130}},
@@ -2224,23 +2276,50 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(223410, {	-- Scarlet Shanker
 					["cost"] = {{"c", TRADERS_TENDER, 150}},
 				}),
+				i(223411, {	-- Sapphire Shanker
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(223413, {	-- Sapphire Warglaive
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
 				i(223412, {	-- Scarlet Warglaive
 					["cost"] = {{"c", TRADERS_TENDER, 150}},
 				}),
-				i(223426, {	-- Simple Sapphire Wand
-					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				i(223415, {	-- Sapphire Axe of Asymmetry
+					["cost"] = {{"c", TRADERS_TENDER, 180}},
 				}),
-				i(223425, {	-- Simple Scarlet Wand
-					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				i(223414, {	-- Scarlet Axe of Asymmetry
+					["cost"] = {{"c", TRADERS_TENDER, 180}},
 				}),
-				i(223433, {	-- Sunreavers Scarlet Tome
-					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				i(211257, {	-- Arsenal: Stormrider's Stormhammers
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+					["g"] = {
+					},
 				}),
-				i(223434, {	-- The Sapphire Thalassian Tome
-					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				i(220759, {	-- Arsenal: Stormrider's Bronze Stormhammers
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+					["g"] = {
+					},
 				}),
-				i(212611, {	-- Wings Of The Tourmaline Monarch
-					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				i(220755, {	-- Arsenal: Stormrider's Dark Stormhammers
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+					["g"] = {
+					},
+				}),
+				i(220762, {	-- Arsenal: Stormrider's Silver Stormhammers
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+					["g"] = {
+					},
+				}),
+				i(223421, {	-- Arsenal: Fireborn Blades
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+					["g"] = {
+					},
+				}),
+				i(223418, {	-- Arsenal: Seaborn Blades
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+					["g"] = {
+					},
 				}),
 			}),
 		})),
