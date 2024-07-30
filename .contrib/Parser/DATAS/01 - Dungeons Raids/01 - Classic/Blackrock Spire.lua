@@ -872,7 +872,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			}),
 			q(5065, {	-- The Lost Tablets of Mosh'aru
 				["qg"] = 10460,	-- Prospector Ironboot
-				["sourceQuest"] = 3528,	-- The God Hakkar
+				["sourceQuests"] = {
+					-- #if SEASON_OF_DISCOVERY
+					82095,	-- The God Hakkar
+					-- #else
+					3528,	-- The God Hakkar
+					-- #endif
+				},
 				["coord"] = { 66.8, 24.0, TANARIS },
 				["timeline"] = { REMOVED_4_0_3 },
 				["maps"] = { EASTERN_PLAGUELANDS },
