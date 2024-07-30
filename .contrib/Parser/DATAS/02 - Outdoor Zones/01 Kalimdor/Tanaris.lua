@@ -4603,7 +4603,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(1, {	-- 0/1 Stoley's Shipment
 							["providers"] = {
 								{ "i",   9244 },	-- Stoley's Shipment
-								{ "o", 142181 },	-- Stoley's Shipment
+								{ "o", 142181 },	-- Stolen Cargo
 							},
 							["coord"] = { 72.2, 46.7, TANARIS },
 						}),
