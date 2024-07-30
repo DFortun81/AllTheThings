@@ -5110,6 +5110,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 40,
 					["groups"] = {
+						objective(1, {	-- Lead Tooga to Torta
+							["provider"] = { "n", 6015 },	-- Torta
+							["coord"] = { 66.6, 25.6, TANARIS },
+						}),
 						i(9638, {	-- Chelonian Cuffs
 							["timeline"] = { REMOVED_4_0_3 },
 						}),

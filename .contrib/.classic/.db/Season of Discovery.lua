@@ -105,7 +105,7 @@ local questShortcut = function(qg, coord, brief, lvl, id, t)
 	t.coord = coord;
 	t.maxReputation = { 2641, EXALTED };	-- Emerald Wardens
 	t.isDaily = true;
-	t.lvl = lvl;
+	t.lvl = { lvl, 52 };
 	return q(id, t);
 end
 local ashenvalequest = function(id, t)
