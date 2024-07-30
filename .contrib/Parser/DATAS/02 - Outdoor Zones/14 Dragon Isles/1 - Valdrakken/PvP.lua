@@ -520,28 +520,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						n(BACK, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
-							i(198960, {	-- Drakebreaker's Cape
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(198961, {	-- Drakebreaker's Cloak
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(198962, {	-- Drakebreaker's Shroud
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(198959, {	-- Drakebreaker's Wrap
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-						})),
+
 						n(BACK, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 							i(211243, {	-- Hellbloom Cape
 								["cost"] = {
@@ -586,48 +565,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
-							i(198566, {	-- Drakebreaker's Boots
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(198570, {	-- Drakebreaker's Cord
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(198571, {	-- Drakebreaker's Cuffs
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(198567, {	-- Drakebreaker's Gloves
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(198568, {	-- Drakebreaker's Hood
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(198569, {	-- Drakebreaker's Leggings
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(198572, {	-- Drakebreaker's Shoulderpads
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(198565, {	-- Drakebreaker's Vestment
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-						})),
+
 						filter(CLOTH, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 							i(211217, {	-- Hellbloom Bindings
 								["cost"] = {
@@ -712,48 +650,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
-							i(198578, {	-- Drakebreaker's Bindings
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(198576, {	-- Drakebreaker's Breeches
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(198575, {	-- Drakebreaker's Cowl
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(198580, {	-- Drakebreaker's Epaulets
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(198574, {	-- Drakebreaker's Handguards
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(198577, {	-- Drakebreaker's Sash
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(198579, {	-- Drakebreaker's Vest
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(198573, {	-- Drakebreaker's Waders
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-						})),
+
 						filter(LEATHER, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 							i(211223, {	-- Hellbloom Belt
 								["cost"] = {
@@ -838,48 +735,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
-							i(198596, {	-- Drakebreaker's Bracers
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(198589, {	-- Drakebreaker's Chestguard
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(198595, {	-- Drakebreaker's Cinch
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 200 },
-								},
-							}),
-							i(198592, {	-- Drakebreaker's Coif
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(198593, {	-- Drakebreaker's Greaves
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(198591, {	-- Drakebreaker's Grips
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(198594, {	-- Drakebreaker's Shoulderguards
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-							i(198590, {	-- Drakebreaker's Striders
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 350 },
-								},
-							}),
-						})),
+
 						filter(MAIL, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 							i(211242, {	-- Hellbloom Armguards
 								["cost"] = {
@@ -1090,118 +946,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_2_0 } }, {
-							i(199084, {	-- Drakebreaker's Broadsword
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(199089, {	-- Drakebreaker's Bulwark
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(199070, {	-- Drakebreaker's Cleaver
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(199095, {	-- Drakebreaker's Crusher
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(199088, {	-- Drakebreaker's Cudgel
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(199077, {	-- Drakebreaker's Dagger
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(199076, {	-- Drakebreaker's Glaive
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(199085, {	-- Drakebreaker's Greatsword
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(199072, {	-- Drakebreaker's Hacker
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(199071, {	-- Drakebreaker's Hatchet
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(199075, {	-- Drakebreaker's Heartseeker
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(199079, {	-- Drakebreaker's Horn
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 300 },
-								},
-							}),
-							i(199090, {	-- Drakebreaker's Impaler
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(199091, {	-- Drakebreaker's Javelin
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(199096, {	-- Drakebreaker's Mace
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(199094, {	-- Drakebreaker's Mallet
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(199087, {	-- Drakebreaker's Maul
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(199082, {	-- Drakebreaker's Pole
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-							i(199093, {	-- Drakebreaker's Rod
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(199086, {	-- Drakebreaker's Scepter
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 500 },
-								},
-							}),
-							i(199078, {	-- Drakebreaker's Shiv
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 400 },
-								},
-							}),
-							i(199081, {	-- Drakebreaker's Staff
-								["cost"] = {
-									{ "c", BLOODY_TOKENS, 800 },
-								},
-							}),
-						})),
+
 						n(WEAPONS, sharedData({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
 							i(211194, {	-- Hellbloom Aegis
 								["cost"] = {
@@ -1463,14 +1208,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						})),
-						filter(RECIPES, sharedData({
-							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
-							["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
-						}, {
-							i(203380),	-- Technique: Crimson Combatant's Emblem (RECIPE!)
-							i(203379),	-- Technique: Crimson Combatant's Insignia of Alacrity (RECIPE!)
-							i(203378),	-- Technique: Crimson Combatant's Medallion (RECIPE!)
-						})),
+
 						filter(RECIPES, sharedData({
 							["cost"] = { { "i", 190450, 3 } },	-- 3x Awakened Ire
 							["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
@@ -1630,144 +1368,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", BLOODY_TOKENS, 100 },
 								},
 							}),
-						}),
-						i(211148, {	-- Arsenal: Drakebreaker's Axe
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								i(199070),	-- Drakebreaker's Cleaver
-								--i(199072),	-- Drakebreaker's Hacker	(currently not awarded)
-								--i(199071),	-- Drakebreaker's Hatchet	(currently not awarded)
-							},
-						}),
-						i(211144, {	-- Arsenal: Drakebreaker's Club
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								--i(199088),	-- Drakebreaker's Cudgel	(currently not awarded)
-								--i(199087),	-- Drakebreaker's Maul	(currently not awarded)
-								i(199086),	-- Drakebreaker's Scepter
-							},
-						}),
-						i(211153, {	-- Arsenal: Drakebreaker's Greatsword
-							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
-							["g"] = {
-								--i(199084),	-- Drakebreaker's Broadsword	(currently not awarded)
-								i(199085),	-- Drakebreaker's Greatsword
-							},
-						}),
-						i(211157, {	-- Arsenal: Drakebreaker's Gun
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								i(199075),	-- Drakebreaker's Heartseeker
-							},
-						}),
-						i(211146, {	-- Arsenal: Drakebreaker's Knife
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								--i(199077),	-- Drakebreaker's Dagger	(currently not awarded)
-								i(199078),	-- Drakebreaker's Shiv
-							},
-						}),
-						i(211155, {	-- Arsenal: Drakebreaker's Offhand
-							["cost"] = {{ "c", BLOODY_TOKENS, 300 }},
-							["g"] = {
-								i(199079),	-- Drakebreaker's Horn
-							},
-						}),
-						i(211152, {	-- Arsenal: Drakebreaker's Polearm
-							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
-							["g"] = {
-								--i(199090),	-- Drakebreaker's Impaler	(currently not awarded)
-								i(199091),	-- Drakebreaker's Javelin
-							},
-						}),
-						i(211150, {	-- Arsenal: Drakebreaker's Shield
-							["cost"] = {{ "c", BLOODY_TOKENS, 300 }},
-							["g"] = {
-								i(199089),	-- Drakebreaker's Bulwark
-							},
-						}),
-						i(211143, {	-- Arsenal: Drakebreaker's Spiked Hammer
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								--i(199095),	-- Drakebreaker's Crusher	(currently not awarded)
-								i(199096),	-- Drakebreaker's Mace
-								--i(199094),	-- Drakebreaker's Mallet	(currently not awarded)
-							},
-						}),
-						i(211154, {	-- Arsenal: Drakebreaker's Stave
-							["cost"] = {{ "c", BLOODY_TOKENS, 800 }},
-							["g"] = {
-								--i(199082),	-- Drakebreaker's Pole	(currently not awarded)
-								i(199081),	-- Drakebreaker's Staff
-							},
-						}),
-						i(211156, {	-- Arsenal: Drakebreaker's Wand
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								i(199093),	-- Drakebreaker's Rod
-							},
-						}),
-						i(211147, {	-- Arsenal: Drakebreaker's Warglaive
-							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
-							["g"] = {
-								i(199076),	-- Drakebreaker's Glaive
-							},
-						}),
-						i(211140, {	-- Ensemble: Drakebreaker's Cloth Armor
-							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
-							["g"] = {
-								i(198566),	-- Drakebreaker's Boots
-								i(198961),	-- Drakebreaker's Cloak
-								i(198570),	-- Drakebreaker's Cord
-								i(198571),	-- Drakebreaker's Cuffs
-								i(198567),	-- Drakebreaker's Gloves
-								i(198568),	-- Drakebreaker's Hood
-								i(198569),	-- Drakebreaker's Leggings
-								i(198572),	-- Drakebreaker's Shoulderpads
-								i(198565),	-- Drakebreaker's Vestment
-							},
-						}),
-						i(211138, {	-- Ensemble: Drakebreaker's Leather Armor
-							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
-							["g"] = {
-								i(198578),	-- Drakebreaker's Bindings
-								i(198576),	-- Drakebreaker's Breeches
-								i(198575),	-- Drakebreaker's Cowl
-								i(198580),	-- Drakebreaker's Epaulets
-								i(198574),	-- Drakebreaker's Handguards
-								i(198577),	-- Drakebreaker's Sash
-								i(198962),	-- Drakebreaker's Shroud
-								i(198579),	-- Drakebreaker's Vest
-								i(198573),	-- Drakebreaker's Waders
-							},
-						}),
-						i(211135, {	-- Ensemble: Drakebreaker's Mail Armor
-							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
-							["g"] = {
-								i(198596),	-- Drakebreaker's Bracers
-								i(198589),	-- Drakebreaker's Chestguard
-								i(198595),	-- Drakebreaker's Cinch
-								i(198592),	-- Drakebreaker's Coif
-								i(198593),	-- Drakebreaker's Greaves
-								i(198591),	-- Drakebreaker's Grips
-								i(198594),	-- Drakebreaker's Shoulderguards
-								i(198590),	-- Drakebreaker's Striders
-								i(198959),	-- Drakebreaker's Wrap
-							},
-						}),
-						i(211100, {	-- Ensemble: Drakebreaker's Plate Armor
-							["cost"] = {{ "c", BLOODY_TOKENS, 3000 }},
-							["g"] = {
-								i(198588),	-- Drakebreaker's Armplates
-								i(198582),	-- Drakebreaker's Breastplate
-								i(198960),	-- Drakebreaker's Cape
-								i(198584),	-- Drakebreaker's Gauntlets
-								i(198587),	-- Drakebreaker's Girdle
-								i(198581),	-- Drakebreaker's Helm
-								i(198585),	-- Drakebreaker's Legguards
-								i(198586),	-- Drakebreaker's Mantle
-								i(198583),	-- Drakebreaker's Sabatons
-							},
 						}),
 						i(211172, {	-- Arsenal: Scalewarden's Axe
 							["cost"] = {{ "c", BLOODY_TOKENS, 500 }},
