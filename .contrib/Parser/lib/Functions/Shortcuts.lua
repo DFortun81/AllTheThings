@@ -165,7 +165,7 @@ applyTimelineEvent = function(epoch, t)
 					if epochParts[j] < parts[j] then
 						after = false;
 						break;
-					end					
+					end
 				end
 				if not after then
 					-- We don't want to circumvent the timeline's ability to strip out data that's not supposed to be in the game yet.
@@ -538,6 +538,10 @@ applycost = function(item, ...)
 	for i,o in ipairs({ ... }) do
 		table.insert(cost, o);
 	end
+	return item;
+end
+bloody = function(cost, item)							-- Assign an Bloody Tokens cost to an item.
+	if cost > 0 then applycost(item, { "c", BLOODY_TOKENS, cost }); end
 	return item;
 end
 champ = function(cost, item)							-- Assign a Champion's Seal cost to an item with proper timeline & phase requirements.
@@ -1719,7 +1723,7 @@ createHeader = function(data)
 					hour=0,
 					minute=0,
 				});
-				
+
 				-- Calculate the difference between the first recorded event to now.
 				local currentYear, currentMonth = currentDate.year, currentDate.month;
 				local currentTimeStamp = os.time(currentDate);
@@ -1734,7 +1738,7 @@ createHeader = function(data)
 						break;
 					end
 				end
-				
+
 				-- Now generate a full years worth of events going forward.
 				local veryfirst = true;
 				for week = 0,26,1 do
@@ -1743,7 +1747,7 @@ createHeader = function(data)
 					else
 						schedule = schedule .. ",";
 					end
-					
+
 					-- Determine when the event is supposed to end.
 					local startTime = os.date("*t", startTimeStamp);
 					local endTime = os.date("*t", startTimeStamp + SECONDS_IN_A_WEEK);
