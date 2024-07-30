@@ -349,6 +349,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					iensemble(219109),	-- Taupe Quotidian Wear
 					iensemble(219123),	-- Toiler's Beige Uniform
 					iensemble(219122),	-- Toiler's Burgundy Uniform
+					iensemble(219120),	-- Toiler's Khaki Uniform
 					iensemble(219124),	-- Toiler's Navy Uniform
 					iensemble(219121),	-- Toiler's Ochre Uniform
 					iensemble(219108),	-- Umber Quotidian Wear
