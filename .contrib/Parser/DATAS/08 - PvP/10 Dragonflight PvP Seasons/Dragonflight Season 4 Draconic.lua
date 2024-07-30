@@ -63,124 +63,78 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
 				["g"] = {
-					filter(BACK_F, {
-						honor(525, i(216381)),	-- Draconic Aspirant's Cape
-						honor(525, i(216379)),	-- Draconic Aspirant's Cloak
-						honor(525, i(216380)),	-- Draconic Aspirant's Drape
-						honor(525, i(216382)),	-- Draconic Aspirant's Greatcloak
+					n(BACK, {
+						bloody(120, i(217101)),	-- Draconic Warmonger's Cape
+						bloody(120, i(217103)),	-- Draconic Warmonger's Cloak
+						bloody(120, i(217104)),	-- Draconic Warmonger's Drape
+						bloody(120, i(217102)),	-- Draconic Warmonger's Shawl
 					}),
 					filter(CLOTH, {
-						honor(700, i(216361)),	-- Draconic Aspirant's Silk Belt
-						honor(525, i(216364)),	-- Draconic Aspirant's Silk Bindings
-						honor(700, i(216329)),	-- Draconic Aspirant's Silk Cord
-						honor(875, i(216349)),	-- Draconic Aspirant's Silk Cover
-						honor(700, i(216342)),	-- Draconic Aspirant's Silk Footwraps
-						honor(700, i(216315)),	-- Draconic Aspirant's Silk Gloves
-						honor(700, i(216347)),	-- Draconic Aspirant's Silk Handwraps
-						honor(875, i(216317)),	-- Draconic Aspirant's Silk Hood
-						honor(875, i(216321)),	-- Draconic Aspirant's Silk Leggings
-						honor(875, i(216353)),	-- Draconic Aspirant's Silk Legwraps
-						honor(700, i(216326)),	-- Draconic Aspirant's Silk Mantle
-						honor(875, i(216305)),	-- Draconic Aspirant's Silk Robe
-						honor(700, i(216358)),	-- Draconic Aspirant's Silk Shawl
-						honor(700, i(216310)),	-- Draconic Aspirant's Silk Treads
-						honor(875, i(216337)),	-- Draconic Aspirant's Silk Vestments
-						honor(525, i(216332)),	-- Draconic Aspirant's Silk Wristwraps
-					}),
-					filter(FINGER_F, {
-						honor(525, i(216374)),	-- Draconic Aspirant's Band
-						honor(525, i(216373)),	-- Draconic Aspirant's Ring
-						honor(525, i(216375)),	-- Draconic Aspirant's Signet
+						bloody(120, i(217075)),	-- Draconic Warmonger's Bindings
+						bloody(120, i(217074)),	-- Draconic Warmonger's Cord
+						bloody(300, i(217072)),	-- Draconic Warmonger's Crown
+						bloody(300, i(217069)),	-- Draconic Warmonger's Garb
+						bloody(200, i(217071)),	-- Draconic Warmonger's Gloves
+						bloody(200, i(217076)),	-- Draconic Warmonger's Mantle
+						bloody(300, i(217073)),	-- Draconic Warmonger's Pants
+						bloody(200, i(217070)),	-- Draconic Warmonger's Slippers
 					}),
 					filter(LEATHER, {
-						honor(525, i(216367)),	-- Draconic Aspirant's Leather Armguards
-						honor(700, i(216331)),	-- Draconic Aspirant's Leather Belt
-						honor(700, i(216312)),	-- Draconic Aspirant's Leather Boots
-						honor(875, i(216323)),	-- Draconic Aspirant's Leather Breeches
-						honor(700, i(216363)),	-- Draconic Aspirant's Leather Cord
-						honor(700, i(216344)),	-- Draconic Aspirant's Leather Footpads
-						honor(700, i(216313)),	-- Draconic Aspirant's Leather Gloves
-						honor(700, i(216345)),	-- Draconic Aspirant's Leather Grips
-						honor(875, i(216319)),	-- Draconic Aspirant's Leather Helm
-						honor(875, i(216355)),	-- Draconic Aspirant's Leather Leggings
-						honor(700, i(216356)),	-- Draconic Aspirant's Leather Mantle
-						honor(875, i(216351)),	-- Draconic Aspirant's Leather Mask
-						honor(700, i(216324)),	-- Draconic Aspirant's Leather Spaulders
-						honor(875, i(216340)),	-- Draconic Aspirant's Leather Tunic
-						honor(875, i(216308)),	-- Draconic Aspirant's Leather Vest
-						honor(525, i(216335)),	-- Draconic Aspirant's Leather Wristwraps
+						bloody(120, i(217081)),	-- Draconic Warmonger's Belt
+						bloody(200, i(217077)),	-- Draconic Warmonger's Boots
+						bloody(300, i(217080)),	-- Draconic Warmonger's Breeches
+						bloody(200, i(217078)),	-- Draconic Warmonger's Handwraps
+						bloody(300, i(217079)),	-- Draconic Warmonger's Hood
+						bloody(300, i(217083)),	-- Draconic Warmonger's Jerkin
+						bloody(200, i(217084)),	-- Draconic Warmonger's Shoulderguard
+						bloody(120, i(217082)),	-- Draconic Warmonger's Wraps
 					}),
 					filter(MAIL, {
-						honor(700, i(216330)),	-- Draconic Aspirant's Chain Belt
-						honor(525, i(216366)),	-- Draconic Aspirant's Chain Bracer
-						honor(700, i(216362)),	-- Draconic Aspirant's Chain Clasp
-						honor(700, i(216316)),	-- Draconic Aspirant's Chain Gauntlets
-						honor(700, i(216348)),	-- Draconic Aspirant's Chain Handguards
-						honor(875, i(216350)),	-- Draconic Aspirant's Chain Headguard
-						honor(875, i(216318)),	-- Draconic Aspirant's Chain Helm
-						honor(875, i(216322)),	-- Draconic Aspirant's Chain Leggings
-						honor(700, i(216311)),	-- Draconic Aspirant's Chain Sabatons
-						honor(700, i(216359)),	-- Draconic Aspirant's Chain Shoulderguards
-						honor(700, i(216327)),	-- Draconic Aspirant's Chain Spaulders
-						honor(700, i(216343)),	-- Draconic Aspirant's Chain Stompers
-						honor(875, i(216339)),	-- Draconic Aspirant's Chain Tunic
-						honor(875, i(216307)),	-- Draconic Aspirant's Chain Vest
-						honor(875, i(216354)),	-- Draconic Aspirant's Chain Wargreaves
-						honor(525, i(216334)),	-- Draconic Aspirant's Chain Wristwraps
-					}),
-					filter(NECK_F, {
-						honor(525, i(216377)),	-- Draconic Aspirant's Choker
-						honor(525, i(216376)),	-- Draconic Aspirant's Necklace
-						honor(525, i(216378)),	-- Draconic Aspirant's Pendant
+						bloody(120, i(217100)),	-- Draconic Warmonger's Armguards
+						bloody(300, i(217093)),	-- Draconic Warmonger's Chainmail
+						bloody(120, i(217099)),	-- Draconic Warmonger's Cinch
+						bloody(200, i(217098)),	-- Draconic Warmonger's Epaulets
+						bloody(200, i(217094)),	-- Draconic Warmonger's Greaves
+						bloody(200, i(217095)),	-- Draconic Warmonger's Grips
+						bloody(300, i(217096)),	-- Draconic Warmonger's Helm
+						bloody(300, i(217097)),	-- Draconic Warmonger's Leggings
 					}),
 					filter(PLATE, {
-						honor(525, i(216365)),	-- Draconic Aspirant's Plate Armguards
-						honor(875, i(216338)),	-- Draconic Aspirant's Plate Armor
-						honor(875, i(216306)),	-- Draconic Aspirant's Plate Chestplate
-						honor(525, i(216333)),	-- Draconic Aspirant's Plate Cuffs
-						honor(700, i(216314)),	-- Draconic Aspirant's Plate Gauntlets
-						honor(700, i(216328)),	-- Draconic Aspirant's Plate Girdle
-						honor(700, i(216360)),	-- Draconic Aspirant's Plate Greatbelt
-						honor(700, i(216346)),	-- Draconic Aspirant's Plate Handguards
-						honor(875, i(216336)),	-- Draconic Aspirant's Plate Headguard
-						honor(875, i(216304)),	-- Draconic Aspirant's Plate Helm
-						honor(875, i(216320)),	-- Draconic Aspirant's Plate Legguards
-						honor(700, i(216357)),	-- Draconic Aspirant's Plate Pauldrons
-						honor(700, i(216325)),	-- Draconic Aspirant's Plate Shoulders
-						honor(700, i(216341)),	-- Draconic Aspirant's Plate Stompers
-						honor(700, i(216309)),	-- Draconic Aspirant's Plate Warboots
-						honor(875, i(216352)),	-- Draconic Aspirant's Plate Wargreaves
-					}),
-					filter(REAGENTS, {
-						honor(875, i(211689)),	-- Greater Draconic Crest of Honor
-						honor(700, i(211688)),	-- Draconic Crest of Honor
-						honor(525, i(211687)),	-- Lesser Draconic Crest of Honor
-					}),
-					filter(TRINKET_F, {
-						honor(700, i(216368)),	-- Draconic Aspirant's Badge of Ferocity
-						honor(700, i(216371)),	-- Draconic Aspirant's Emblem
-						honor(700, i(216370)),	-- Draconic Aspirant's Insignia of Alacrity
-						honor(525, i(216369)),	-- Draconic Aspirant's Medallion
-						honor(525, i(216372)),	-- Draconic Aspirant's Sigil of Adaptation
+						bloody(120, i(217092)),	-- Draconic Warmonger's Bracers
+						bloody(120, i(217091)),	-- Draconic Warmonger's Clasp
+						bloody(300, i(217086)),	-- Draconic Warmonger's Cuirass
+						bloody(300, i(217085)),	-- Draconic Warmonger's Faceplate
+						bloody(200, i(217088)),	-- Draconic Warmonger's Gauntlets
+						bloody(300, i(217089)),	-- Draconic Warmonger's Legguards
+						bloody(200, i(217087)),	-- Draconic Warmonger's Sabatons
+						bloody(200, i(217090)),	-- Draconic Warmonger's Spaulders
 					}),
 					n(WEAPONS, {
-						honor(875, i(216383)),	-- Draconic Aspirant's Battleaxe
-						honor(875, i(216398)),	-- Draconic Aspirant's Blade
-						honor(875, i(216384)),	-- Draconic Aspirant's Dagger
-						honor(1750, i(216388)),	-- Draconic Aspirant's Greatsword
-						honor(1750, i(216394)),	-- Draconic Aspirant's Halberd
-						honor(875, i(216395)),	-- Draconic Aspirant's Hammer
-						honor(1325, i(216396)),	-- Draconic Aspirant's Knife
-						honor(875, i(216385)),	-- Draconic Aspirant's Mace
-						honor(1750, i(216386)),	-- Draconic Aspirant's Polearm
-						honor(1750, i(216393)),	-- Draconic Aspirant's Recurve
-						honor(1325, i(216391)),	-- Draconic Aspirant's Scepter
-						honor(425, i(216392)),	-- Draconic Aspirant's Shield
-						honor(1750, i(216387)),	-- Draconic Aspirant's Staff
-						honor(875, i(216397)),	-- Draconic Aspirant's Sword
-						honor(425, i(216389)),	-- Draconic Aspirant's Torch
-						honor(1325, i(216399)),	-- Draconic Aspirant's Wand
-						honor(875, i(216390)),	-- Draconic Aspirant's Warglaive
+						bloody(150, i(217059)),	-- Draconic Warmonger's Aegis
+						bloody(250, i(217044)),	-- Draconic Warmonger's Battleaxe
+						bloody(450, i(217053)),	-- Draconic Warmonger's Battlestaff
+						bloody(150, i(217051)),	-- Draconic Warmonger's Branch
+						bloody(450, i(217055)),	-- Draconic Warmonger's Broadsword
+						bloody(250, i(217046)),	-- Draconic Warmonger's Carver
+						bloody(300, i(217056)),	-- Draconic Warmonger's Club
+						bloody(250, i(217064)),	-- Draconic Warmonger's Crusher
+						bloody(250, i(217058)),	-- Draconic Warmonger's Cudgel
+						bloody(300, i(217067)),	-- Draconic Warmonger's Dagger
+						bloody(250, i(217068)),	-- Draconic Warmonger's Dirk
+						bloody(450, i(217047)),	-- Draconic Warmonger's Flameshot
+						bloody(450, i(217054)),	-- Draconic Warmonger's Greatsword
+						bloody(250, i(217057)),	-- Draconic Warmonger's Hammer
+						bloody(300, i(217045)),	-- Draconic Warmonger's Hatchet
+						bloody(450, i(217060)),	-- Draconic Warmonger's Impaler
+						bloody(250, i(217063)),	-- Draconic Warmonger's Mace
+						bloody(250, i(217066)),	-- Draconic Warmonger's Sabre
+						bloody(300, i(217065)),	-- Draconic Warmonger's Scepter
+						bloody(250, i(217050)),	-- Draconic Warmonger's Shortsword
+						bloody(450, i(217061)),	-- Draconic Warmonger's Spear
+						bloody(300, i(217049)),	-- Draconic Warmonger's Spellblade
+						bloody(450, i(217052)),	-- Draconic Warmonger's Spire
+						bloody(250, i(217048)),	-- Draconic Warmonger's Twinblade
+						bloody(300, i(217062)),	-- Draconic Warmonger's Wand
 					}),
 				},
 			}),

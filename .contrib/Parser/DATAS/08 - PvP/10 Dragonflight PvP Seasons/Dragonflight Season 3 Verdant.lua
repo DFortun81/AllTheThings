@@ -256,11 +256,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						honor(875, i(210166)),	-- Verdant Aspirant's Blade
 						honor(875, i(210150)),	-- Verdant Aspirant's Dagger
 						honor(1750, i(210154)),	-- Verdant Aspirant's Greatsword
+						honor(1750, i(210161)),	-- Verdant Aspirant's Halberd
 						honor(875, i(210162)),	-- Verdant Aspirant's Hammer
 						honor(1325, i(210163)),	-- Verdant Aspirant's Knife
 						honor(875, i(210151)),	-- Verdant Aspirant's Mace
 						honor(1750, i(210152)),	-- Verdant Aspirant's Polearm
 						honor(1750, i(210160)),	-- Verdant Aspirant's Recurve
+						honor(1325, i(210157)),	-- Verdant Aspirant's Scepter
 						honor(425, i(210158)),	-- Verdant Aspirant's Shield
 						honor(1750, i(210153)),	-- Verdant Aspirant's Staff
 						honor(875, i(210164)),	-- Verdant Aspirant's Sword
