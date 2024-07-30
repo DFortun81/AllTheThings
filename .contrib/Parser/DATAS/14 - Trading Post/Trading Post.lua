@@ -2211,25 +2211,17 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(211001, {	-- Sapphire-Faced Mobile Timepiece
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
 				}),
-				i(190576, {	-- Ensemble: Vagabond's Azure Threads
+				iensemble(190576, {	-- Ensemble: Vagabond's Azure Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["g"] = {
-					},
 				}),
-				i(190577, {	-- Ensemble: Wanderer's Azure Trappings
+				iensemble(190577, {	-- Ensemble: Wanderer's Azure Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["g"] = {
-					},
 				}),
-				i(190851, {	-- Ensemble: Vagabond's Crimson Threads
+				iensemble(190851, {	-- Ensemble: Vagabond's Crimson Threads
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["g"] = {
-					},
 				}),
-				i(190850, {	-- Ensemble: Wanderer's Crimson Trappings
+				iensemble(190850, {	-- Ensemble: Wanderer's Crimson Trappings
 					["cost"] = {{"c", TRADERS_TENDER, 100}},
-					["g"] = {
-					},
 				}),
 				i(210869, {	-- Blademaster's Azure Stones
 					["cost"] = {{"c", TRADERS_TENDER, 200}},
@@ -2291,35 +2283,23 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				i(223414, {	-- Scarlet Axe of Asymmetry
 					["cost"] = {{"c", TRADERS_TENDER, 180}},
 				}),
-				i(211257, {	-- Arsenal: Stormrider's Stormhammers
+				iensemble(211257, {	-- Arsenal: Stormrider's Stormhammers
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
-					["g"] = {
-					},
 				}),
-				i(220759, {	-- Arsenal: Stormrider's Bronze Stormhammers
+				iensemble(220759, {	-- Arsenal: Stormrider's Bronze Stormhammers
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
-					["g"] = {
-					},
 				}),
-				i(220755, {	-- Arsenal: Stormrider's Dark Stormhammers
+				iensemble(220755, {	-- Arsenal: Stormrider's Dark Stormhammers
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
-					["g"] = {
-					},
 				}),
-				i(220762, {	-- Arsenal: Stormrider's Silver Stormhammers
+				iensemble(220762, {	-- Arsenal: Stormrider's Silver Stormhammers
 					["cost"] = {{"c", TRADERS_TENDER, 400}},
-					["g"] = {
-					},
 				}),
-				i(223421, {	-- Arsenal: Fireborn Blades
+				iensemble(223421, {	-- Arsenal: Fireborn Blades
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
-					["g"] = {
-					},
 				}),
-				i(223418, {	-- Arsenal: Seaborn Blades
+				iensemble(223418, {	-- Arsenal: Seaborn Blades
 					["cost"] = {{"c", TRADERS_TENDER, 500}},
-					["g"] = {
-					},
 				}),
 			}),
 		})),
