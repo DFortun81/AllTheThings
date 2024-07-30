@@ -124,6 +124,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 244986 },	-- Dirty Pocketwatch
 				["coord"] = { 49.8, 73.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(156577),	-- Battered Toy Sword (QI!)
+				},
 			}),
 			q(49725, {	-- A Risky Ploy
 				["sourceQuests"] = { 51401 },	-- Carry On
@@ -158,6 +161,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136574 },	-- Charles Davenport
 				["coord"] = { 29.8, 67.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(159882),	-- Bug Zapper (QI!)
+				},
 			}),
 			q(49908, {	-- Back to Brennadam
 				["sourceQuests"] = { 49831 },	-- From the Depths
@@ -224,6 +230,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 66.1, 47.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(158211),	-- Abyssal Beacon (QI!)
 					i(155229),	-- Abyssal Beacon
 					i(155228),	-- Tideguard Bulwark
 					i(155231),	-- Purified Tideblood Band
@@ -360,6 +367,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136658 },	-- Marie Davenport
 				["coord"] = { 30.2, 66.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(160302),	-- Box of Cookies (QI!)
+				},
 			}),
 			q(51335, {	-- Cookies and Cream
 				["sourceQuests"] = { 51215 },	-- Milking Goats
@@ -430,6 +440,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132017 },	-- Ancel Mildenhall
 				["coord"] = { 68.5, 67.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(156628),	-- Brewmaster's Treatise Vol. 1 (QI!)
+				},
 			}),
 			q(50064, {	-- Don't Go in the Basement
 				["sourceQuests"] = {
@@ -480,6 +493,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131014 },	-- Rikal
 				["coord"] = { 34.9, 47.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158181),	-- Abyssal Fang (QI!)
+				},
 			}),
 			q(51207, {	-- Ettin It Done
 				["sourceQuests"] = { 51335 },	-- Cookies and Cream
@@ -767,6 +783,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130715 },	-- Taelia
 				["coord"] = { 63.4, 64.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(155829),	-- Drenched Mainspring (QI!)
+				},
 			}),
 			q(49755, {	-- Heavy Artillery
 				["sourceQuests"] = {
@@ -885,6 +904,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130714 },	-- Brother Pike
 				["coord"] = { 63.4, 64.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(155919),	-- Dead Ringer (QI!)
+				},
 			}),
 			q(51582, {	-- Make it Mildenhall
 				["isBreadcrumb"] = true,
@@ -1087,6 +1109,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130714 },	-- Brother Pike
 				["coord"] = { 66.3, 56.6, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(157859),	-- Dead Ringer (QI!)
+				},
 			}),
 			q(52508, {	-- Ritual Effects
 				["sourceQuests"] = { 52453 },	-- A Forlorn Hope
@@ -1336,6 +1361,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 134447 },	-- Lost Farmhand
 				["coord"] = { 72.7, 72.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(157851),	-- Bee Pheromones (QI!)
+				},
 			}),
 			q(51200, {	-- The Black Sheep
 				["provider"] = { "n", 136414 },
@@ -1396,6 +1424,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 280727 },	-- Charred Note
 				["coord"] = { 68.6, 54.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(156629),	-- Architect's Cipher (QI!)
+				},
 			}),
 			q(52132, {	-- The Proof of Piracy
 				["sourceQuests"] = { 50793 },	-- Cave Commotion

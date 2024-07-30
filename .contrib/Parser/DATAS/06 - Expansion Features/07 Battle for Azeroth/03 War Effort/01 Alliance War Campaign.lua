@@ -464,18 +464,27 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 77.1, 55.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51201 },	-- The Troll's Tale
+							["g"] = {
+								i(160249),	-- Bundle of Supplies (QI!)
+							},
 						}),
 						q(51193, {	-- That One's Mine
 							["provider"] = { "n", 136192 },	-- Degdod
 							["coord"] = { 77.1, 55.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51201 },	-- The Troll's Tale
+							["g"] = {
+								i(159779),	-- Degdod's Hammer (QI!)
+							},
 						}),
 						q(51191, {	-- Save Them All
 							["provider"] = { "n", 136195 },	-- Medic Feorea
 							["coord"] = { 77.1, 55.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51201 },	-- The Troll's Tale
+							["g"] = {
+								i(160433),	-- Bandages (QI!)
+							},
 						}),
 						q(51418, {	-- Xibala
 							["provider"] = { "n", 135620 },	-- Kelsey Steelspark

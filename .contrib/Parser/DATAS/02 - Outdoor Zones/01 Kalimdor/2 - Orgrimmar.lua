@@ -570,7 +570,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				
+
 				q(27277, {	-- An Audience with Ureda
 					["qgs"] = {
 						3047,	-- Archmage Shymm <Mage Trainer>
@@ -1797,6 +1797,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1013,	-- The Stockade (Scenario)
 					},
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(160251),	-- Blightcaller's Easy Death (QI!)
+					},
 				}),
 				q(6611, {	-- To Gadgetzan You Go!
 					-- #if BEFORE 4.0.3

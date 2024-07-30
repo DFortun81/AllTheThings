@@ -25,6 +25,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135400 },	-- Jenoh
 				["coord"] = { 29.5, 59.3, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158883),	-- Charming Flute (QI!)
+				},
 			}),
 			q(48322, {	-- A Goldtusk Greeting
 				["sourceQuests"] = {
@@ -117,6 +120,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126085 },	-- Mugjabu
 				["coord"] = { 42.1, 76.2, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152570),	-- Alpaca Whistle (QI!)
+				},
 			}),
 			q(51364, {	-- An Explosive Exit
 				["sourceQuests"] = {
@@ -229,6 +235,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 35.0, 80.4, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(153419),	-- Captain Gulnaku's Key (QI!)
 					i(163633, {	-- Captain Gulnaku's Treasure
 						["description"] = "Contains a small amount of gold and some green gems.",
 					}),
@@ -269,6 +276,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 134128 },	-- Churka
 				["coord"] = { 61.9, 22.1, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(151763),	-- Crab Trap (QI!)
+				},
 			}),
 			q(49261, {	-- Crabby Crew Stew
 				["description"] = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
@@ -379,6 +389,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122723 },	-- Rhan'ka
 				["coord"] = { 43.5, 60.2, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(150923),	-- Caustic Scorpid Blood (QI!)
+				},
 			}),
 			q(50748, {	-- Don't Drop It... Yet
 				["sourceQuests"] = { 50746 },	-- Crater Conquered
@@ -416,6 +429,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135154 },	-- Kiro
 				["coord"] = { 47.0, 75.5, VOLDUN },	-- Zul'Ahjin
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158678),	-- Antivenom (QI!)
+				},
 			}),
 			q(48996, {	-- Ending the Madness
 				["sourceQuests"] = { 48889 },	-- Repairing the Past
@@ -537,6 +553,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133833 },	-- Rikati
 				["coord"] = { 40.4, 55.3, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(157541),	-- Bilewing Stinger (QI!)
+				},
 			}),
 			q(47570, {	-- Hidden Motives
 				["sourceQuests"] = { 51772 },	-- The Tortaka Tribe
@@ -584,6 +603,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 128422 },	-- Keerin
 				["coord"] = { 47.5, 86.0, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(151777),	-- Ashvane Trader Key (QI!)
+				},
 			}),
 			q(49001, {	-- Inconvenient Spirits
 				["sourceQuests"] = { 48840 },	-- Ruins-Level Marketing
@@ -644,6 +666,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135400 },	-- Jenoh
 				["coord"] = { 29.5, 59.3, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159675),	-- Atrivax Gel Sample (QI!)
+				},
 			}),
 			q(50834, {	-- Keep It Down!
 				["sourceQuests"] = { 50980 },	-- My Hungry Neighbor
@@ -792,6 +817,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 48531 },	-- Sezahjin
 				["coord"] = { 43.6, 76.7, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152566),	-- Dung Beetle Innards (QI!)
+					i(163841),	-- Dung Beetle Surprise
+				},
 			}),
 			q(48313, {	-- Nature's Remedy
 				["sourceQuests"] = { 47716 },	-- Searching the Ruins
@@ -823,6 +852,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136779 },	-- First Mate Jamboya
 				["coord"] = { 30.2, 86.4, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152659),	-- Cursed Treasure of Zem'lan (QI!)
+				},
 			}),
 			q(51054, {	-- Overdue Mutiny
 				["sourceQuests"] = { 51053 },	-- The Day the Port Fell
@@ -851,6 +883,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 134148 },	-- Maaz
 				["coord"] = { 47.2, 72.8, VOLDUN },	-- Zul'Ahjin
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(157855),	-- Azerite Shard (QI!)
+				},
 			}),
 			q(52129, {	-- Power Problems
 				["sourceQuests"] = { 50834 },	-- Keep It Down! (breadcrumb)
@@ -906,6 +941,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135111 },	-- Vorrik
 				["coord"] = { 51.9, 28.7, VOLDUN },	-- Skycallers' Spire
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160528),	-- Blood of the Fallen Loa (QI!)
+					i(158722),	-- Rebirth Creed (QI!)
+					i(160527),	-- Sethraliss Sight Stone (QI!)
+					i(160526),	-- Skull of the First Skycaller (QI!)
+				},
 			}),
 			q(48889, {	-- Repairing the Past
 				["sourceQuests"] = {
@@ -1051,6 +1092,14 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126576 },	-- Razgaji
 				["coord"] = { 43.3, 75.4, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158903),	-- Alpaca Butter (QI!)
+					i(158904),	-- Alpaca Hides (QI!)
+					i(158902),	-- Fresh Water (QI!)
+					i(158901),	-- Hyena Jerky (QI!)
+					i(158876),	-- Medicinal Herbs (QI!)
+					i(158905),	-- Sezahjin's Meat Pies (QI!)
+				},
 			}),
 			q(48550, {	-- Stolen Satchels
 				["sourceQuests"] = { 47959 },	-- The Warguard's Trail
@@ -1415,6 +1464,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133833 },	-- Rikati
 				["coord"] = { 40.4, 55.3, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160665),	-- Batch of Bilewing "Honey" (QI!)
+				},
 			}),
 			q(47324, {	-- Unlikely Allies
 				["sourceQuests"] = { 50561 },	-- Sulthis' Stone

@@ -34,7 +34,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51640),	-- Beachhead
-			q(50572),	-- Bloody Intrusion
+			q(50572, {	-- Bloody Intrusion
+				["g"] = {
+					i(154724),	-- Ceremonial Torch (QI!)
+				},
+			}),
 			q(53292, {	-- Blooming Siren's Sting
 				["requireSkill"] = HERBALISM,
 			}),
@@ -55,6 +59,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53323, {	-- Burnished Platinum
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163624),	-- Burnished Platinum (QI!)
+				},
 			}),
 			q(55342, {	-- Calligraphy
 				["races"] = HORDE_ONLY,
@@ -132,7 +139,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50503),	-- Juba the Scarred
 			q(50505),	-- Kal'draxa
 			q(50506),	-- King Kooba
-			q(50497),	-- Krag'wa's Favor
+			q(50497, {	-- Krag'wa's Favor
+				["g"] = {
+					i(151040),	-- Chunky Meat (QI!)
+					i(157841),	-- Prime Raptor Egg (QI!)
+				},
+			}),
 			q(50507),	-- Krubbs
 			q(54697, {	-- Lightforged Warframe (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
@@ -243,8 +255,22 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52385, {	-- Supplies Needed: Slimy Mackerel
 				["races"] = HORDE_ONLY,
 			}),
-			q(50936),	-- Survival Strategy
-			q(50660),	-- Survival Strategy
+			q(50936, {	-- Survival Strategy
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158193),	-- Diremaw Hide (QI!)
+					i(158192),	-- Pterrordax Wingclaw (QI!)
+					i(158191),	-- Saurid Feather (QI!)
+				},
+			}),
+			q(50660, {	-- Survival Strategy
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158193),	-- Diremaw Hide (QI!)
+					i(158192),	-- Pterrordax Wingclaw (QI!)
+					i(158191),	-- Saurid Feather (QI!)
+				},
+			}),
 			q(50513),	-- Tainted Guardian
 			q(54534, {	-- The Blightest Touch (Faction Assault WQ)
 				["races"] = HORDE_ONLY,

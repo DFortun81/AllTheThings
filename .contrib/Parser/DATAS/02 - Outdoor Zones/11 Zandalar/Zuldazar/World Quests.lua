@@ -49,7 +49,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(55344, {	-- Calligraphy
 				["races"] = HORDE_ONLY,
 			}),
-			q(50966),	-- Cleanup Crew
+			q(50966, {	-- Cleanup Crew
+				["g"] = {
+					i(160703),	-- Bundle of Supplies (QI!)
+				},
+			}),
 			q(54524, {	-- Crate n' Barrel (Faction Assault WQ)
 				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
@@ -78,6 +82,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50875),	-- Darkspeaker Jo'la
 			q(53328, {	-- Dense Storm Silver
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163629),	-- Dense Storm Silver (QI!)
+				},
 			}),
 			q(54513, {	-- Dino Time! (Faction Assault WQ)
 				["lvl"] = 45,

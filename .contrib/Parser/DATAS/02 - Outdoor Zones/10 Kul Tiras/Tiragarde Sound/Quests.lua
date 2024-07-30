@@ -25,6 +25,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125922 },	-- Brother Therold
 				["g"] = {
+					i(152401),	-- Bunch of Seaweed (QI!)
 					i(160097),	-- Navigator's Wristwraps
 					i(160098),	-- Freebooter Bands
 					i(160099),	-- Outrigger Bands
@@ -139,6 +140,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.3, 29.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125922 },	-- Brother Therold
+				["g"] = {
+					i(152586),	-- Bundle of Vellum (QI!)
+					i(152585),	-- Seal Blubber (QI!)
+				},
 			}),
 			q(49737, {	-- Air Raid
 				["sourceQuests"] = { 49869 },	-- A Desperate Defense
@@ -155,6 +160,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.2, 29.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125922 },	-- Brother Therold
+				["g"] = {
+					i(153513),	-- Cleansing Tonic (QI!)
+				},
 			}),
 			q(48080, {	-- An Element of Danger
 				["sourceQuests"] = { 48070 },	-- The Norwington Festival
@@ -486,6 +494,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 54.4, 19.4, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127144 },	-- Melissa Kenny
+				["g"] = {
+					i(152109),	-- Boneface's "Key" (QI!)
+				},
 			}),
 			q(49736, {	-- For Kul Tiras!
 				["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
@@ -670,6 +681,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 276488 },	-- Azerite Cannonball
 				["coord"] = { 78.6, 77.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(152628),	-- Azerite Cannonball (QI!)
+				},
 			}),
 			q(49230, {	-- Local Flavor (A)
 				["sourceQuests"] = { 49218 },	-- The Castaways
@@ -844,6 +858,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 80.2, 75.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 126158 },	-- Flynn Fairwind
+				["g"] = {
+					i(152722),	-- Dockmaster's Key (QI!)
+					i(152721),	-- Dockmaster's Records (QI!)
+				},
 			}),
 			q(48874, {	-- Pardon Our Rust
 				["sourceQuests"] = { 50544 },	-- The Hunters of Kennings Lodge
@@ -868,6 +886,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 78.1, 55.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 133552 },	-- Head Chemist Walters
+				["g"] = {
+					i(157778),	-- Azerite Dust (QI!)
+					i(157857),	-- Walters' Chemistry Kit (QI!)
+				},
 			}),
 			q(48356, {	-- Possessive Headgear
 				["sourceQuests"] = {
@@ -899,6 +921,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128927 },	-- Venrik
+				["g"] = {
+					i(153599),	-- Dead Man's Ale (QI!)
+					i(153600),	-- Goat's Milk (QI!)
+					i(153601),	-- Goat's Milk in a Skull Mug (QI!)
+				},
 			}),
 			q(49400, {	-- Recruiting Efforts
 				["sourceQuests"] = {
@@ -948,6 +975,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 79.2, 76.3, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127537 },	-- Geraldine
+				["g"] = {
+					i(152667),	-- "Sea Dog" Grog (QI!)
+				},
 			}),
 			q(50356, {	-- Rock Meet Dynamite
 				["sourceQuests"] = {
@@ -1016,17 +1046,27 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 51.2, 25.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127492 },	-- Majo
+				["g"] = {
+					i(152847),	-- Durable Seashell (QI!)
+				},
 			}),
 			q(49232, {	-- Salvaging a Disaster
 				["coord"] = { 50.8, 69.4, 1171 },	-- Gol Thovas
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128353 },	-- Pendi Cranklefuse
+				["g"] = {
+					i(153349),	-- Drust Relic (QI!)
+				},
 			}),
 			q(53041, {	-- Sampling the Goods
 				["sourceQuests"] = { 50531 },	-- Under Their Noses
 				["coord"] = { 75.85, 49.08, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 121239 },	-- Flynn Fairwind
+				["g"] = {
+					i(163032),	-- Chemist's Notes (QI!)
+					i(163034),	-- Raw Azerite Sample (QI!)
+				},
 			}),
 			q(48597, {	-- Saurolisk Escape
 				["sourceQuests"] = { 48670 },	-- Runaway Rider
@@ -1166,6 +1206,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 77.3, 83.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 126158 },	-- Flynn Fairwind
+				["g"] = {
+					i(153680),	-- Bilge Rat Orders (QI!)
+					i(153682),	-- Blacktooth Bruiser Orders (QI!)
+					i(153681),	-- Cutwater Corsair Orders (QI!)
+				},
 			}),
 			q(49218, {	-- The Castaways (A)
 				["isBreadcrumb"] = true,
@@ -1222,6 +1267,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 126158 },	-- Flynn Fairwind
 					["g"] = {
+						i(152719),	-- Azerite Cutlass (QI!)
+						i(152720),	-- Trickshot's Azerite Powder Horn (QI!)
 						i(155077),	-- Ashvane Captain's Cutlass
 						i(155071),	-- Salty Dog's Harpoon
 						i(155080),	-- Seafury Tamer
@@ -1237,6 +1284,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 140732 },	-- Flynn Fairwind
 				["coord"] = { 76.9, 82.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(161477),	-- Beckett's Strongbox Key (QI!)
+					i(161478),	-- Luna's Strongbox Key (QI!)
+					i(161476),	-- Reed's Strongbox Key (QI!)
+				},
 			}),
 			q(49223, {	-- The Long Con
 				["sourceQuests"] = { 49523 },	-- A Bad Deal
@@ -1291,6 +1343,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 70.8, 61.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127481 },	-- Lord Kennings
+				["g"] = {
+					i(153010),	-- Bloodstained Fur Tuft (QI!)
+				},
 			}),
 			q(48077, {	-- The Stoat Hunt
 				["sourceQuests"] = { 48070 },	-- The Norwington Festival
@@ -1358,6 +1413,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 140732 },	-- Flynn Fairwind
 				["coord"] = { 75.3, 48.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(162008),	-- Ashvane Skeleton Key (QI!)
+				},
 			}),
 			q(48516, {	-- Toxic Community
 				["coord"] = { 82.7, 72.8, TIRAGARDE_SOUND },

@@ -116,6 +116,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51842),	-- Carla Smirk
 			q(53314, {	-- Coarse Storm Silver
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163626),	-- Coarse Storm Silver (QI!)
+				},
 			}),
 			q(51405, {	-- Corruption in the Bay
 				["races"] = ALLIANCE_ONLY,
@@ -125,9 +128,19 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51647, {	-- Crews of Freehold
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(153680),	-- Bilge Rat Orders (QI!)
+					i(153682),	-- Blacktooth Bruiser Orders (QI!)
+					i(153681),	-- Cutwater Corsair Orders (QI!)
+				},
 			}),
 			q(50234, {	-- Crews of Freehold
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(153680),	-- Bilge Rat Orders (QI!)
+					i(153682),	-- Blacktooth Bruiser Orders (QI!)
+					i(153681),	-- Cutwater Corsair Orders (QI!)
+				},
 			}),
 			q(50998, {	-- Work Order: Deep Sea Satin
 				["races"] = ALLIANCE_ONLY,
@@ -206,6 +219,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52145, {	-- Heave-Ho!
 				["description"] = "This WQ doesn't show up on the map when active, plot waypoint to find the location!",
 				["coord"] = { 77.10, 76.25, TIRAGARDE_SOUND },
+				["g"] = {
+					i(152667),	-- "Sea Dog" Grog (QI!)
+				},
 			}),
 			q(51245, {	-- I'm a Lumberjack and I'm Okay
 				["races"] = ALLIANCE_ONLY,
@@ -251,9 +267,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51462),	-- Paratroopers
 			q(50324, {	-- Picturesque Fizzsprings Resort
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(157540),	-- Battered S.E.L.F.I.E. Camera (QI!)
+				},
 			}),
 			q(51090, {	-- Picturesque Norwington Estate
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(157540),	-- Battered S.E.L.F.I.E. Camera (QI!)
+				},
 			}),
 			q(50164, {	-- Polly Want A Cracker?
 				["races"] = ALLIANCE_ONLY,
@@ -295,6 +317,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50977, {	-- Smuggler Shakedown
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(159673),	-- Bootleg Weapon Crate (QI!)
+				},
 			}),
 			q(52756, {	-- Snow Way Out
 				["races"] = HORDE_ONLY,
@@ -375,6 +400,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(52752, {	-- Vigilant Lookouts
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(162448),	-- Daelin's Gate Dossier (QI!)
+					i(162449),	-- Vigil Hill Documents (QI!)
+				},
 			}),
 			q(53713, {	-- Wet Work: Bridgeport (Faction Assault WQ)
 				["races"] = HORDE_ONLY,

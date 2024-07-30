@@ -3373,10 +3373,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(56111),	-- The Usurper
 			q(51708),	-- Warfang Hold Quest Template
 			-- Unsorted
-			q(47246, {
+			q(47246, {	-- Remnants of the Damned
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(150753),	-- Decaying Bloodstone (QI!)
+				},
 			}),
 			q(47506, {
 				["lvl"] = 255,
@@ -3429,10 +3432,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["lvl"] = 20,
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(48604, {
+			q(48604, {	-- Home Again, Home Again
 				["description"] = "Area: |cFFf09f26Drustvar|r",
 				["lvl"] = 20,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(152629),	-- Crate of Non-Tainted Meat Products (QI!)
+				},
 			}),
 			q(48653, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
@@ -3676,10 +3682,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
 			}),
-			q(49661, {
+			q(49661, {	-- Locally Sourced Eggs
 				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
 				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(155660),	-- Coilscale Egg (QI!)
+				},
 			}),
 			q(49875, {
 				["description"] = "Category: |cFFf09f26Inscription|r",
@@ -3759,11 +3768,14 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(50520, {
 				["lvl"] = 30,
 			}),
-			q(50632, {
+			q(50632, {	-- Battlefield Scavenging
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
 				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(158172),	-- Circle of Elements Supplies (QI!)
+					i(163125),	-- High Perch Supplies (QI!)
+					i(163126),	-- Newstead Supplies (QI!)
 					i(158174, {	-- Battleworn Armor Kit
 						["b"] = 1,
 						["filterID"] = CONSUMABLES,
@@ -3821,11 +3833,15 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 					}),
 				},
 			}),
-			q(51068, {
+			q(51068, {	-- Raiding Their Stores
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
 				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(159719),	-- Basket of Eggs (QI!)
+					i(159718),	-- Colossal Cheese Wheel (QI!)
+					i(159720),	-- Keg of Applebrew (QI!)
+					i(159717),	-- Roast Boar (QI!)
 					i(159723, {	-- Chunk of Boar Meat
 						["b"] = 1,
 						["filterID"] = CONSUMABLES,
@@ -3920,11 +3936,14 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(52467, {
+			q(52467, {	-- Battlefield Scavenging
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
 				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(162031),	-- Circle of Elements Supplies (QI!)
+					i(163129),	-- High Perch Supplies (QI!)
+					i(163130),	-- Newstead Supplies (QI!)
 					i(162140, {	-- Battleworn Armor Kit
 						["b"] = 1,
 						["filterID"] = CONSUMABLES,
@@ -3942,11 +3961,15 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 					}),
 				},
 			}),
-			q(52468, {
+			q(52468, {	-- Raiding Their Stores
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
 				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(159719),	-- Basket of Eggs (QI!)
+					i(159718),	-- Colossal Cheese Wheel (QI!)
+					i(159720),	-- Keg of Applebrew (QI!)
+					i(159717),	-- Roast Boar (QI!)
 					i(163988, {	-- Chunk of Boar Meat
 						["b"] = 1,
 						["filterID"] = CONSUMABLES,
@@ -3974,9 +3997,12 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(52991, {
+			q(52991, {	-- [REMOVED]
 				["description"] = "Category: |cFFf09f26Hallow's End|r",
 				["lvl"] = 10,
+				["g"] = {
+					i(162972),	-- Bloody Apple (QI!)
+				},
 			}),
 			q(53080, {
 				["description"] = "Category: |cFFf09f26Warfronts|r",
@@ -5206,7 +5232,11 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				i(169189),	-- Blueprint: TK44[DNT]
 			}),
 			q(55742),	-- Bundle of Corroded Parts
-			q(56071),	-- De-Synced Vibro Blade
+			q(56071, {	-- De-Synced Vibro Blade
+				["g"] = {
+					i(163482),	-- Broken Compass (QI!)
+				},
+			}),
 			q(56072),	-- De-Synced Vibro Blade
 			q(55669, {	-- Encrypted Radio Receiver TBD
 				i(168221),	-- Encrypted Raido Receiver

@@ -699,6 +699,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["coord"] = { 30.6, 49.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(156658),	-- Deathshroom (QI!)
+				},
 			}),
 			q(50117, {	-- A Deathly Draught [H]
 				["sourceQuests"] = { 50116 },	-- A Possible Solution [H]
@@ -706,6 +709,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["coord"] = { 65.2, 36.9, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(156658),	-- Deathshroom (QI!)
+				},
 			}),
 			q(50127, {	-- A Stone's Throw [A]
 				["sourceQuests"] = { 50125 },	-- A Possible Solution [A]
@@ -713,6 +719,10 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["coord"] = { 30.6, 49.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(156665),	-- Bag of Transmutation Stones (QI!)
+					i(156687),	-- Vial of Altered Blood (QI!)
+				},
 			}),
 			q(50118, {	-- A Stone's Throw [H]
 				["sourceQuests"] = { 50116 },	-- A Possible Solution [H]
@@ -720,6 +730,10 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["coord"] = { 65.2, 36.9, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(156831),	-- Bag of Transmutation Stones (QI!)
+					i(156664),	-- Vial of Altered Blood (QI!)
+				},
 			}),
 			q(50128, {	-- Chemically Compounded [A]
 				["sourceQuests"] = {

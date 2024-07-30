@@ -330,6 +330,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 				["coord"] = { 66.7, 42.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(162586),	-- Crown of Torcali (QI!)
+					i(162587),	-- Dustwing Incandescence (QI!)
+				},
 			}),
 			q(55254, {	-- An Unending Sleep
 				["sourceQuests"] = { 52857 },	-- Held For Observation
@@ -342,6 +346,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124063 },	-- Jol the Ancient
 				["coord"] = { 76.4, 16.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156827),	-- Aged Crab Foam (QI!)
+					i(156824),	-- Brutosaur Scale (QI!)
+					i(156809),	-- Envenomed Puffer Spine (QI!)
+				},
 			}),
 			q(50043, {	-- Archaeological Efficiency (H)
 				["sourceQuests"] = { 47329 },	-- The Bloodwatcher Legacy
@@ -377,6 +386,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 125039 },	-- Trader Kro
 				["coord"] = { 79.2, 42.3, ZULDAZAR },
+				["g"] = {
+					i(156539),	-- Chunk of Naga Flesh (QI!)
+				},
 			}),
 			q(55244, {	-- Away From the Herd
 				["sourceQuests"] = { 55507 },	-- Torcali's Blessing [1 back from previous]
@@ -430,6 +442,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130905 },	-- Cala Cruzpot
 				["coord"] = { 64.1, 35.3, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156475),	-- Aggression Formula (QI!)
+				},
 			}),
 			q(47229, {	-- Bulwark of Torcali
 				["sourceQuests"] = {
@@ -478,6 +493,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127815 },	-- Zolani
 				["coord"] = { 47.9, 60.4, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(153529),	-- Condensed Thunder (QI!)
+				},
 			}),
 			q(49785, {	-- Destroy the Weapon
 				["sourceQuests"] = { 49871 },	-- Against the Tide
@@ -533,6 +551,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 70.6, 50.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 159139, 1 } },	-- 1x Lightweight Skyterror Barding
+				["g"] = {
+					i(159138),	-- Berserker Skull (QI!)
+				},
 			}),
 			q(55245, {	-- Eat Like a Direhorn
 				["sourceQuests"] = { 55507 },	-- Torcali's Blessing [1 back from previous]
@@ -641,6 +662,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 				["coord"] = { 66.8, 42.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(147897),	-- Direhorn Growth Hormone (QI!)
+				},
 			}),
 			q(50466, {	-- He's Gone Mad!
 				["sourceQuests"] = { 49768 },	-- Nesingwary's Trek
@@ -711,6 +735,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 				["coord"] = { 66.7, 42.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(162589),	-- Alexxi's Foolproof Remedy
+				},
 			}),
 			q(55796, {	-- Heresy at the Crossroad
 				["sourceQuests"] = { 55795 },	-- Mountain On the Move
@@ -806,6 +833,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 54.4, 87.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(155882),	-- Brig Key (QI!)
 					i(159942),	-- Zul Adherent's Band
 				},
 			}),
@@ -883,6 +911,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124063 },	-- Jol the Ancient
 				["coord"] = { 76.4, 16.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160568),	-- Ancient Tortollan Scroll (QI!)
+					i(160566),	-- Astringent Spices (QI!)
+					i(160569),	-- Clotting Powder (QI!)
+					i(160567),	-- Sea Urchin Brine (QI!)
+				},
 			}),
 			q(47528, {	-- Mistress of Lies
 				["sourceQuests"] = {
@@ -1452,6 +1486,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 121599 },		-- King Rastakhan
 				["coord"] = { 60.39, 22.03, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(147833),	-- Antitoxin (QI!)
+				},
 			}),
 			q(49309, {	-- Thunder's Fall
 				["sourceQuests"] = {
@@ -1475,6 +1512,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 70.2, 65.0, ZULDAZAR },
 				["g"] = {
 					i(156871),	-- Spitzy (TOY!)
+					i(156865),	-- Amphibious Lab Enclosure (QI!)
+					i(156866),	-- Hatchling's First Alchemy Stone (QI!)
+					i(156869),	-- Spitzy (QI!)
 				},
 			}),
 			q(55507, {	-- Torcali's Blessing
@@ -1667,6 +1707,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 44.4, 73.4, ZULDAZAR },
 				["sourceQuests"] = { 49282 },	-- Morgrum's Extended Survey
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(159743),	-- Breath of Xibala (QI!)
+				},
 			}),
 			q(53450, {	-- King Da'ka (A)
 				["provider"] = { "n", 129589 },	-- The Monkey King

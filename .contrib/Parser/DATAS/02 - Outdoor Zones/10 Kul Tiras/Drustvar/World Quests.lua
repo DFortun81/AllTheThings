@@ -125,10 +125,25 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50369, {	-- Bruin Potions (A)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(157545),	-- Bear Heart (QI!)
+					i(160442),	-- Caustic Sap (QI!)
+					i(157546),	-- Hearthbloom Petals (QI!)
+				},
 			}),
-			q(51737),	-- Bruin Potions
+			q(51737, {	-- Bruin Potions (H)
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(157545),	-- Bear Heart (QI!)
+					i(160442),	-- Caustic Sap (QI!)
+					i(157546),	-- Hearthbloom Petals (QI!)
+				},
+			}),
 			q(53312, {	-- Burnished Platinum
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163624),	-- Burnished Platinum (QI!)
+				},
 			}),
 			q(55264, {	-- Calligraphy
 				["races"] = ALLIANCE_ONLY,
@@ -144,6 +159,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51461),	-- Deathcap
 			q(53317, {	-- Dense Storm Silver
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163629),	-- Dense Storm Silver (QI!)
+				},
 			}),
 			q(51754, {	-- Dogged Tenacity
 				["isWorldQuest"] = true,

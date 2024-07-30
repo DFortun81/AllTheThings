@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52935, {	-- A New Era
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(155919),	-- Dead Ringer (QI!)
+				},
 			}),
 			q(52936, {	-- A New Era
 			}),
@@ -134,6 +137,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53318, {	-- Ductile Platinum
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163630),	-- Ductile Platinum (QI!)
+				},
 			}),
 			q(51981, {	-- Earthcaller's Abode
 				["races"] = ALLIANCE_ONLY,
@@ -224,6 +230,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52941, {	-- Light in the Darkness (A)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(162635),	-- Abyssal Beacon (QI!)
+				},
 			}),
 			q(52968, {	-- Light in the Darkness
 			}),
@@ -319,6 +328,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52164, {	-- Rum- Paaaage!
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(161197),	-- Barrel Busting Bomb (QI!)
+				},
 			}),
 			q(51974),	-- Sabertron (COPPER)
 			q(51976),	-- Sabertron (GREEN)
@@ -341,9 +353,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(52271, {	-- Sea Salt Flavored (A)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(161450),	-- Crackling Eel Skin (QI!)
+					i(160055),	-- Seaweed (QI!)
+				},
 			}),
 			q(52280, {	-- Sea Salt Flavored (H)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(161450),	-- Crackling Eel Skin (QI!)
+					i(160055),	-- Seaweed (QI!)
+				},
 			}),
 			q(51759, {	-- Seabreaker Skoloth
 			}),
@@ -424,9 +444,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52054, {	-- Too Much To Bear (A)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(161114),	-- Barbedclaw Flank (QI!)
+				},
 			}),
 			q(52229, {	-- Too Much To Bear (H)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(161114),	-- Barbedclaw Flank (QI!)
+				},
 			}),
 			q(51817, {	-- Trapped Tortollans (A)
 				["races"] = ALLIANCE_ONLY,

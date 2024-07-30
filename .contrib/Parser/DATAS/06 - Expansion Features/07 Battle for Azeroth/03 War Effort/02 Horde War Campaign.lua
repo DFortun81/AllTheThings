@@ -494,12 +494,19 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 138287 },	-- Lilian Voss
 							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(160555),	-- Ashvane Explosives (QI!)
+							},
 						}),
 						q(51597, {	-- Gunpowder Research
 							["sourceQuests"] = { 51595 },	-- Explosivity
 							["provider"] = { "n", 138287 },	-- Lilian Voss
 							["coord"] = { 77.5, 49.9, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(160553),	-- Ashvane Explosives Formula (QI!)
+								i(160552),	-- Gunpowder Manufacturing Guide (QI!)
+							},
 						}),
 						q(51598, {	-- A Bit of Chaos
 							["sourceQuests"] = { 51595 },	-- Explosivity
@@ -612,6 +619,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 139098 },	-- Thomas Zelling
 							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(160745),	-- Book of Forbidden Magics (QI!)
+							},
 						}),
 						q(51819, {	-- Scattering Our Enemies
 							["sourceQuests"] = { 51798 },	-- No Price Too High
@@ -774,6 +784,11 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 140487 },	-- Thomas Zelling
 							["coord"] = { 71.0, 84.8, BORALUS },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(161336),	-- Compass of Clarity (QI!)
+								i(161335),	-- Curio of the Depths (QI!)
+								i(161334),	-- Key of the Sea (QI!)
+							},
 						}),
 						q(52188, {	-- Tidesage Teachings
 							["sourceQuests"] = { 52185 },	-- A Well Placed Portal

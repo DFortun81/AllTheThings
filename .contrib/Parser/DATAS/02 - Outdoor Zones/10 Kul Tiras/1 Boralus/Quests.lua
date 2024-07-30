@@ -490,6 +490,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124289 },	-- "Risky" Liz Seminario <Fur Trader>
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 72.2, 16.2, BORALUS },
+				["g"] = {
+					i(159751),	-- Bundle of Warm Furs (QI!)
+				},
 			}),
 			q(52453, {	-- A Forlorn Hope
 				["sourceQuests"] = { 52449 },	-- The Mysterious Island

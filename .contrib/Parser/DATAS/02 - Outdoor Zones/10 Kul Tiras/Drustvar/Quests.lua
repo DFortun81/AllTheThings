@@ -124,12 +124,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					50151,	-- A Steady Ballast
 					50173,	-- Precious Metals
 				},
+				["g"] = {
+					i(156853),	-- Battered Hand Cannon (QI!)
+				},
 			}),
 			q(50450, {	-- An Offensive Harvest
 				["provider"] = { "n", 133839 },	-- Harris Hocking
 				["coord"] = { 27.0, 25.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50449 },	-- Reeking Refuge
+				["g"] = {
+					i(157807),	-- Aromatic Onion (QI!)
+				},
 			}),
 			q(48113, {	-- A Pungent Solution
 				["provider"] = { "n", 125380 },	-- Lucille Waycrest
@@ -211,6 +217,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 31.7, 29.5, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50446 },	-- Witchrending
+				["g"] = {
+					i(157800),	-- Blasting Powder (QI!)
+				},
 			}),
 			q(47947, {	-- Big Bad Wolves
 				["provider"] = { "n", 124786 },	-- Thomas Staughton
@@ -293,6 +302,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 141894 },	-- Ulfar
 				["coord"] = { 45.2, 45.8, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(162526),	-- Drust Runestone (QI!)
+				},
 			}),
 			q(49803, {	-- Changing of the Guard
 				["provider"] = { "n", 129643 },	-- Marshal Everit Reade
@@ -338,6 +350,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50370 },	-- Deeper Into the Woods
 				["g"] = {
+					i(157821),	-- Control Charm (QI!)
 					i(158557),	-- Heartsbane Charm
 				},
 			}),
@@ -717,12 +730,14 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50172 },	-- Into the Crimsonwood
 				["g"] = {
-					i(158593),	-- Drust-Speaker's Pathfinder
+					i(156951),	-- Bag of Reagents (QI!)
+					i(156950),	-- Organic Matter Sample (QI!)
 					i(158595),	-- Ashenwood Defender
-					i(160193),	-- Wickerwoven Mittens
 					i(160194),	-- Banisher Grasps
 					i(160195),	-- Crone-Seeker's Mitts
+					i(158593),	-- Drust-Speaker's Pathfinder
 					i(160196),	-- Waycrest Militia Grips
+					i(160193),	-- Wickerwoven Mittens
 					-- Horde sourceid's(not actual reward)
 					i(155373),	-- Golden Lilypad
 				},
@@ -814,6 +829,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135673 },	-- Scout McKellis
 				["coord"] = { 34.6, 39.7, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(159076),	-- Azerite Powder (QI!)
+				},
 				--	["sourceQuests"] = {  },	-- UNKNOWN - this quest was bugged/not appearing when I quested through the zone, so not sure if it has a specific prereq or only access to Kul Tiras in general
 				-- Not required for "Drust Do It."
 			}),
@@ -892,6 +910,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48793 },	-- The Adventurer's Society
 				["provider"] = {"o",276251},	-- Excavation Inventory
+				["g"] = {
+					i(152699),	-- "Ancient Potsherds" (QI!)
+					i(152703),	-- "Genuine Titan Disc" (QI!)
+					i(152704),	-- "Relic of the Makers" (QI!)
+				},
 			}),
 			q(50584, {	-- Ruinous Rituals
 				["provider"] = { "n", 131636 },	-- Marshal Everit Reade
@@ -944,6 +967,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 20.6, 57.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50172 },	-- Into the Crimsonwood
+				["g"] = {
+					i(156859),	-- Cage Key (QI!)
+				},
 			}),
 			q(48475, {	-- Seeing Spirits
 				["provider"] = { "n", 126210 },	-- Caretaker Allen
@@ -1113,6 +1139,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					47982,	-- The Final Effigy
 					48948,	-- The North Pass Caverns
 				},
+				["g"] = {
+					i(152677),	-- A Beginner's Guide to Archaeology (QI!)
+					i(152676),	-- Half-eaten Journal (QI!)
+					i(152685),	-- Is it a Rock? How to Identify Relics (QI!)
+				},
 			}),
 			q(48198, {	-- The Burden of Proof
 				["provider"] = { "n", 125380 },	-- Lucille Waycrest
@@ -1193,6 +1224,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 23.2, 12.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50761 },	-- Blood in the Chapel
+				["g"] = {
+					i(158914),	-- Assassin's Orders (QI!)
+				},
 				-- Not required for "Drust Do It."
 			}),
 			q(48523, {	-- The Murderous Matron
@@ -1305,6 +1339,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					135902,	-- Bloodbough Fungalmancer
 					135901,	-- Bloodbough Funggarian
 				},
+				["g"] = {
+					i(159350),	-- Ashenwood Relic (QI!)
+				},
 			}),
 			q(51445, {	-- Thros, the Blighted Lands
 				["sourceQuests"] = { 52488 },	-- Runic Resistance
@@ -1370,6 +1407,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50911 },	-- One Man Against the Horde
+				["g"] = {
+					i(158928),	-- Bilgewater Patented Flamethrower (QI!)
+				},
 				-- May have earlier sourceQuest or no prerequisite; needs confirmation.
 				-- Not required for "Drust Do It."
 			}),

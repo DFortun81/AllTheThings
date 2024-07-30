@@ -94,6 +94,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 				["coord"] = { 75.3, 56.4, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(151040),	-- Chunky Meat (QI!)
+				},
 			}),
 			q(49366, {	-- Aid the Wounded
 				["sourceQuests"] = { 50934 },	-- A Chance Sighting
@@ -197,6 +200,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 126079 },	-- Koj'jun Deathwalker
 				["coord"] = { 38.9, 59.9, NAZMIR },
+				["g"] = {
+					i(153346),	-- Cursed Bone (QI!)
+				},
 			}),
 			q(50079, {	-- Boom goes the Bomb
 				["sourceQuests"] = {
@@ -210,6 +216,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(48468, {	-- Bwonsamdi's Deliverance
 				["provider"] = { "n", 130481 },	-- Shinga Deathwalker
 				["coord"] = { 39.0, 59.9, NAZMIR },
+				["g"] = {
+					i(153178),	-- Cremation Torch (QI!)
+				}
 			}),
 			q(49781, {	-- Catch Me if you Can
 				["sourceQuests"] = {
@@ -321,6 +330,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131231 },	-- Jin'Tiki
 				["coord"] = { 24.1, 53.1, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156519),	-- Camoflauge Kit (QI!)
+				},
 			}),
 			q(49569, {	-- Down by the Riverside
 				["sourceQuests"] = {
@@ -565,6 +577,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(155341, {	-- Nazmani Warplate Vambraces
 						["races"] = HORDE_ONLY,
 					}),
+					i(154136),	-- Ancient Phylactery (QI!)
+					i(154137),	-- Pristine Phylactery (QI!)
+					i(152468),	-- Repaired Phylactery (QI!)
+					i(154130),	-- Spirit Powder (QI!)
 				},
 			}),
 			q(47998, {	-- Killing Cannibals
@@ -663,6 +679,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127958 },	-- Kisha
 				["coord"] = { 56.5, 26.7, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156568),	-- Damaged Scroll of Fate's Hand (QI!)
+					i(160559),	-- Scroll of Purification (QI!)
+				},
 			}),
 			q(47597, {	-- No Goblin Left Behind
 				["sourceQuests"] = { 47631 },	-- Rendezvous with the Libation
@@ -753,6 +773,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 123545 },	-- Newt
 				["coord"] = { 82.2, 27.3, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(151202),	-- Ancient Titan Relics (QI!)
+				},
 			}),
 			q(49078, {	-- Poisoning the Brood
 				["sourceQuests"] = {
@@ -768,6 +791,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127212 },	-- Kal'dran
 				["coord"] = { 30.9, 52.0, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(153482),	-- Blood Fetish (QI!)
+				},
 			}),
 			q(47924, {	-- Profanity Filter
 				["provider"] = { "n", 124666 },	-- Kajosh
@@ -782,6 +808,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
 				["coord"] = { 68.6, 35.0, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156537),	-- Containment Protocol (QI!)
+				},
 			}),
 			q(48574, {	-- Pulling Fangs
 				["sourceQuests"] = { 48669 },	-- Urok, Terror of the Wetlands
@@ -818,6 +847,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122688 },	-- Bwonsamdi
 				["coord"] = { 39.5, 24.7, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(150753),	-- Decaying Bloodstone (QI!)
+				},
 			}),
 			q(47631, {	-- Rendezvous with the Libation
 				["sourceQuests"] = { 47245 },	-- Getting the Message
@@ -932,6 +964,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131978 },	-- Lashk
 				["coord"] = { 67.4, 41.9, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156593),	-- Damaged Core (QI!)
+				},
 			}),
 			q(48699, {	-- Sneaking into Zalamar
 				["sourceQuests"] = { 49440 },	-- Blood Troll on the Outside
@@ -1090,12 +1125,19 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126713 },
 				["coord"] = { 34.0, 78.6, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152611),	-- Coagulated Dreadtick Blood (QI!)
+					i(156618),	-- Sur'jan's Dreadtick Gasser (QI!)
+				},
 			}),
 			q(50083, {	-- The Crawg Ma'da
 				["sourceQuests"] = { 50082 },	-- Target of Opportunity
 				["provider"] = { "n", 133471 },	-- Rokhan
 				["coord"] = { 45.4, 58.6, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156868),	-- Crawg Poison Gland (QI!)
+				},
 			}),
 			q(48480, {	-- The Fall of Kel'vax
 				["sourceQuests"] = {
@@ -1159,6 +1201,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 123548 },	-- Ticker
 				["coord"] = { 82.3, 27.2, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(151209),	-- Broken Elevating Gears (QI!)
+					i(151208),	-- Damaged A.M.O.D. Barrel (QI!)
+					i(151210),	-- Shattered Firing Mechanism (QI!)
+				},
 			}),
 			q(48578, {	-- There's No Eye in Skyterror
 				["sourceQuests"] = {
@@ -1359,6 +1406,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 31.0, 52.0, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["sourceQuests"] = { 48854 },	-- Offer of Power
+				["g"] = {
+					i(152727),	-- Da'jul's Fire Mojo (QI!)
+				},
 			}),
 			q(54145, {	-- The Loa of Death
 				["provider"] = { "n", 146824 },	-- Princess Talanji
@@ -1395,6 +1445,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				q(50080, {	-- Raiding the Raiders
 					["sourceQuests"] = { 50083 },	-- The Crawg Ma'da
 					["description"] = "This Bonus Objective pops up after accepting |cffffff00A Message of Blood and Fire|r.",
+					["g"] = {
+						i(157029),	-- Bag of Zandalari Supplies (QI!)
+					},
 				}),
 				q(48852, {	-- Stopping Zardax
 					["sourceQuests"] = { 48854 },	-- Offer of Power

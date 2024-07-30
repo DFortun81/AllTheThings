@@ -151,6 +151,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 					["requireSkill"] = SKINNING,
 					["g"] = {
 						recipe(257147),	-- Skinning Technique: Leather Gathering (Rank 2)
+						i(161423),	-- Brinepinch's "Head" (QI!)
 					},
 				}),
 				-- Scale Gathering

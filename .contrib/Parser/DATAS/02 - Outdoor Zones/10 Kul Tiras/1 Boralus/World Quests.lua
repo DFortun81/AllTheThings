@@ -22,6 +22,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51333, {	-- Anchors Aweigh!
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["g"] = {
+					i(159926),	-- Cannonball (QI!)
+				},
 			}),
 			q(53808, {	-- Crawl To Victory (Faction Assault WQ)
 				["lvl"] = 110,
@@ -63,6 +66,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["g"] = {
+					i(157540),	-- Battered S.E.L.F.I.E. Camera (QI!)
+				},
 			}),
 			q(51893, {	-- Sawtooth
 				["lvl"] = 120,

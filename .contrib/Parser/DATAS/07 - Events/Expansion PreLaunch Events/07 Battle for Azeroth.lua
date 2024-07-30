@@ -25,6 +25,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				}),
 				q(52058, {	-- A Short-Lived Peace
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(157832),	-- A Royal Summons (QI!)
+					},
 				}),
 				q(52116, {	-- A Soft Glow
 					["qg"] = 134578,	-- Captain Delaryn Summermoon
@@ -84,6 +87,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					["qg"] = 107574,	-- Anduin Wrynn
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 52058,	-- A Short-Lived Pace
+					["g"] = {
+						i(157832),	-- A Royal Summons (QI!)
+					},
 				}),
 				q(53617, {	-- Mercy for the Mad
 					["qg"] = 133693,	-- Malfurion Stormrage
@@ -147,6 +153,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 52977,	-- The Guidance of Our Shan'do
 					["description"] = "You do not have to save all 982 people.  Once timer runs out this quest is removed and next one is auto-accepted.",
+					["g"] = {
+						i(163189),	-- Bucket of Moonwell Water (QI!)
+					},
 				}),
 				q(53310, {	-- From the Ashes… [Note: Final Quest for Part 2]
 					["races"] = ALLIANCE_ONLY,
@@ -268,6 +277,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				}),
 				q(50476, {	-- The Warchief Awaits
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(157832),	-- A Royal Summons (QI!)
+					},
 				}),
 				q(50642, {	-- The Warchief Commands
 					["qg"] = 134554,	-- Lady Sylvanas Windrunner

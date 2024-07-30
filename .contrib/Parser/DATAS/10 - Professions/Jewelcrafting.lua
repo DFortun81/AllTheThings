@@ -244,6 +244,12 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 73.4, 6.3, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(155678),	-- Ancient Journal Transcription (QI!)
+					i(155587),	-- Primordial Races: Runes and Writings (QI!)
+					i(155588),	-- Scrolls of the Stonefather (QI!)
+					i(155589),	-- The Dungard Codex (QI!)
+				},
 			}),
 			q(49586, {	-- Digging Through the Past [H]
 				["sourceQuests"] = { 49585 },	-- A Rocky Start [H]
@@ -251,6 +257,12 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 42.3, 39.7, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(155678),	-- Ancient Journal Transcription (QI!)
+					i(155587),	-- Primordial Races: Runes and Writings (QI!)
+					i(155588),	-- Scrolls of the Stonefather (QI!)
+					i(155589),	-- The Dungard Codex (QI!)
+				},
 			}),
 			q(49574, {	-- The Shrine of Storms
 				["sourceQuests"] = { 49571 },	-- Digging Through the Past [A]

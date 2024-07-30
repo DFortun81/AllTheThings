@@ -97,13 +97,20 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51793, {	-- Bubbling Totem Testing
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(49345),	-- Buried Treasure
+			q(49345, {	-- Buried Treasure
+				["g"] = {
+					i(159828),	-- Ancient Coin (QI!)
+				},
+			}),
 			q(51250),	-- Buzz Off!
 			q(55343, {	-- Calligraphy
 				["races"] = HORDE_ONLY,
 			}),
 			q(53325, {	-- Coarse Storm Silver
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163626),	-- Coarse Storm Silver (QI!)
+				},
 			}),
 			q(51098),	-- Commodore Calhoun
 			q(51562, {	-- Damaged Goods
@@ -121,7 +128,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52878, {	-- Desert Survivors
 				["provider"] = { "n", 142054 },	-- Kusa
 			}),
-			q(51780),	-- Dinner for Dolly and Dot
+			q(51780, {	-- Dinner for Dolly and Dot
+				["g"] = {
+					i(155680),	-- Buzzard Meat (QI!)
+					i(155679),	-- Speckled Egg (QI!)
+				},
+			}),
 			q(51121),	-- Enraged Krolusk
 			q(51792, {	-- Erupting Totem Testing
 				["races"] = HORDE_ONLY,
@@ -177,7 +189,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51108, {	-- Hivemother Kraxi
 				["provider"] = { "n", 130443 },	-- Hivemother Kraxi
 			}),
-			q(51228),	-- Instant Meat, Ready to Eat
+			q(51228, {	-- Instant Meat, Ready to Eat
+				["g"] = {
+					i(159794),	-- Broiled Buzzard Meat (QI!)
+					i(159796),	-- Meatification Potion (QI!)
+					i(159795),	-- Steaming Crab Meat (QI!)
+				},
+			}),
 			q(51239),	-- Instructions Not Included
 			q(51180, {	-- Instructions Not Included
 				["races"] = HORDE_ONLY,	-- very slim chance this isn't Horde only but given that there are 8 versions of the quest with 4 marked Alliance only it's more likely than not (could still use verification though)
@@ -278,7 +296,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 141945 },	-- Sizzik
 			}),
 			q(51106),	-- Songstress Nahjeen
-			q(51836),	-- Sourching Resources
+			q(51836, {	-- Sourching Resources
+				["g"] = {
+					i(160755),	-- Azerite Sack (QI!)
+				},
+			}),
 			q(51558, {	-- Spider Scorching
 				["races"] = HORDE_ONLY,
 			}),
@@ -336,7 +358,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 141969 },	-- Spineleaf
 			}),
 			q(51315),	-- Wild Flutterbies
-			q(51322),	-- Wings and Stingers
+			q(51322, {	-- Wings and Stingers
+				["g"] = {
+					i(159925),	-- Buzzard Wing (QI!)
+					i(159924),	-- Oasis Stinger (QI!)
+				},
+			}),
 			q(54554, {	-- Wolfleader Skraug (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
 			}),

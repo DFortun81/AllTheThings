@@ -386,6 +386,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 135441 },	-- Zolani
 				["g"] = {
+					i(160107),	-- Amani Head (QI!)
+					i(158898),	-- Sandfury Head (QI!)
 					i(155305),	-- Golden City Greatcloak
 					i(155267),	-- Zanchuli Wristwraps
 					i(155268),	-- Rastari Vambraces
@@ -770,6 +772,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126148 },	-- Witch Doctor Jala
 				["coord"] = { 44.3, 82.1, DAZARALOR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152461),	-- Dark Fetishes (QI!)
+				},
 			}),
 			q(48404, {	-- The Scamps
 				["sourceQuests"] = { 52472 },	-- Make Loh Go

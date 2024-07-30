@@ -796,6 +796,9 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 53.9, 50.0, DEEPHOLM },
 				["sourceQuestNumRequired"] = 1,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(156887),	-- Diaminium (QI!)
+				},
 			}),
 			q(50272, {	-- An Ear to the Ground
 				["sourceQuests"] = {
