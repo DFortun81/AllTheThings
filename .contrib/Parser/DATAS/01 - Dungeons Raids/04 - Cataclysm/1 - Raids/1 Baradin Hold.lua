@@ -11,7 +11,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 		["lvl"] = 85,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				applyclassicphase(CATA_PHASE_FOUR, ach(5425, {	-- Baradin Hold Guild Run
+				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, ach(5425, {	-- Baradin Hold Guild Run
 					crit(15480, {	-- Argaloth
 						["_npcs"] = { 47120 },	-- Argaloth
 					}),
@@ -165,7 +165,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					h(i(60807)),	-- Vicious Gladiator's Medallion of Tenacity (Horde)
 				},
 			})),
-			applyclassicphase(CATA_PHASE_FOUR, e(339, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Alizabal, Mistress of Hate
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, e(339, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Alizabal, Mistress of Hate
 				["creatureID"] = 55869,
 				["groups"] = {
 					ach(6108),	-- Alizabal
@@ -322,7 +322,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					h(i(73537)),	-- Cataclysmic Gladiator's Medallion of Tenacity (Horde)
 				},
 			}))),
-			applyclassicphase(CATA_PHASE_THREE, e(140, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 }, }, {	-- Occu'thar
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, e(140, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 }, }, {	-- Occu'thar
 				["creatureID"] = 52363,
 				["groups"] = {
 					ach(6045),	-- Occu'thar

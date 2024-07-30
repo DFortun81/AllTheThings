@@ -398,7 +398,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["collectible"] = false,
 			}),
 			i(60217),	-- Elementium Toolbox
-			applyclassicphase(CATA_PHASE_THREE, i(70139, {["timeline"] = {ADDED_4_2_0}})),	-- Flintlocke's Woodchucker
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(70139, {["timeline"] = {ADDED_4_2_0}})),	-- Flintlocke's Woodchucker
 			i(60858),	-- Goblin Barbecue
 			i(68049),	-- Heat-Treated Spinning Lure
 			i(60223),	-- High-Powered Bolt Gun
@@ -416,7 +416,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(60403),	-- Elementium Dragonling
 		}),
 		n(WEAPONS, {
-			applyclassicphase(CATA_PHASE_THREE, i(71077, {["timeline"] = {ADDED_4_2_0}})),	-- Extreme-Impact Hole Puncher
+			applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(71077, {["timeline"] = {ADDED_4_2_0}})),	-- Extreme-Impact Hole Puncher
 			i(59598),	-- Finely-Tuned Throat Needler
 			i(59367),	-- Kickback 5000
 			i(59364),	-- Overpowered Chicken Splitter

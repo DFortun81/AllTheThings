@@ -65,9 +65,11 @@ WRATH_PHASE_FOUR_ELEMENTAL_INVASION = 3304;
 -- NOTE: Reason for this is to show when stuff is going away eventually.
 -- Cataclysm Classic Phases
 CATA_PHASE_ONE = 40;
-CATA_PHASE_TWO = 41;	-- ZA/ZG
-CATA_PHASE_THREE = 42;	-- Firelands
-CATA_PHASE_FOUR = 43;	-- Dragonsoul
+CATA_PHASE_RISE_OF_THE_ZANDALARI = 4001;	-- ZA/ZG [Per Cata Dev, this phase wasn't a big enough release to justify incrementing the build number]
+CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT = 41;	-- World Boss Loot was originally blue, they got upgraded to Epic later.
+CATA_PHASE_PREFIRELANDS_DAILIES = 41;	-- Not sure when the 5 extra dailies come out, probably Firelands.
+CATA_PHASE_RAGE_OF_THE_FIRELANDS = 41;	-- Firelands
+CATA_PHASE_HOUR_OF_TWILIGHT = 42;	-- Dragonsoul
 
 -- Mists of Pandaria Classic Phases
 MOP_PHASE_ONE = 50;

@@ -354,7 +354,7 @@ root(ROOTS.Zones, {
 							26762,	--  Reactivate the Constructs
 						},
 					}),
-					applyclassicphase(CATA_PHASE_THREE, q(29329, {	-- Elemental Bonds: Patience
+					applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29329, {	-- Elemental Bonds: Patience
 						["qg"] = 53738,	-- Aggra
 						["sourceQuest"] = 29337,	-- Into Constant Earth
 						["coord"] = { 56.5, 12.4, DEEPHOLM },
@@ -557,7 +557,7 @@ root(ROOTS.Zones, {
 						["qg"] = 44010,	-- Stormcaller Mylra
 						["coord"] = { 64.4, 82.2, DEEPHOLM },
 					}),
-					applyclassicphase(CATA_PHASE_THREE, q(29338, {	-- Into Unrelenting Flame
+					applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29338, {	-- Into Unrelenting Flame
 						["qg"] = 53738,	-- Aggra
 						["sourceQuest"] = 29329,	-- Elemental Bonds: Patience
 						["coord"] = { 64.0, 46.0, DEEPHOLM },

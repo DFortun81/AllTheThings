@@ -494,7 +494,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27669,	-- Do the Honors
 					["isBreadcrumb"] = true,
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29327, {	-- Elemental Bonds: Doubt
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29327, {	-- Elemental Bonds: Doubt
 					["qg"] = 53524,	-- Cyclonas
 					["sourceQuest"] = 29335,	-- Into Slashing Winds
 					["coord"] = { 47.7, 88.9, ULDUM },
@@ -693,7 +693,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.9, 32.7, ULDUM },
 					["sourceQuest"] = 28112,	-- Escape From the Lost City
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29336, {	-- Into Coaxing Tides
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29336, {	-- Into Coaxing Tides
 					["qg"] = 53519,	-- Aggra
 					["sourceQuest"] = 29327,	-- Elemental Bonds: Doubt
 					["coord"] = { 34.3, 77.6, ULDUM },

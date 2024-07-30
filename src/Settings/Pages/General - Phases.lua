@@ -136,7 +136,7 @@ CataclysmPhasesLabel:SetText("|CFFAAFFAACataclysm Phases|r");
 CataclysmPhasesLabel:Show();
 
 last, yoffset = CataclysmPhasesLabel, -4;
-for i,o in ipairs({ { 40, 0, 0 }, { 41, 0, -vspacing }, { 42, 0, -vspacing }, { 43, 0, -vspacing }, }) do
+for i,o in ipairs({ { 40, 0, 0 }, {4001, spacing, -vspacing }, { 41, 0, -vspacing }, { 42, 0, -vspacing }, }) do
 	local u = o[1];
 	yoffset = o[3] or 6;
 	local reason = conditions[u];

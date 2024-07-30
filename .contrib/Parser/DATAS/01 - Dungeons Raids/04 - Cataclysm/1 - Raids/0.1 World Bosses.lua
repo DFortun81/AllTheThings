@@ -4,7 +4,7 @@
 -- Blizzard added the original drops for ONLY the first phase of Cataclysm Classic.
 -- #if ANYCLASSIC
 local CATA_CLASSIC_WORLD_BOSS_ONUPDATE = [[function(t)
-	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_TWO .. [[) then
+	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT .. [[) then
 		t.u = ]] .. REMOVED_FROM_GAME .. [[;
 		t.rwp = nil;
 	else
@@ -52,7 +52,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				["coord"] = { 38.0, 60.6, ULDUM },
 				["isRaid"] = true,
 				["groups"] = {
-					applyclassicphase(CATA_PHASE_TWO, i(69877, {	-- Belt of a Thousand Gaping Mouths
+					applyclassicphase(CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT, i(69877, {	-- Belt of a Thousand Gaping Mouths
 						["timeline"] = { ADDED_4_1_0 },
 					})),
 					i(67240, {	-- Belt of A Thousand Mouths
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 				["isRaid"] = true,
 				["groups"] = {
-					applyclassicphase(CATA_PHASE_TWO, i(69842, {	-- Garr's Reinforced Girdle of Memories
+					applyclassicphase(CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT, i(69842, {	-- Garr's Reinforced Girdle of Memories
 						["timeline"] = { ADDED_4_1_0 },
 					})),
 					i(67235, {	-- Garr's Girdle of Memories
@@ -91,7 +91,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 				["isRaid"] = true,
 				["groups"] = {
-					applyclassicphase(CATA_PHASE_TWO, i(69844, {	-- Vitreous Beak of Julak-Doom
+					applyclassicphase(CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT, i(69844, {	-- Vitreous Beak of Julak-Doom
 						["timeline"] = { ADDED_4_1_0 },
 					})),
 					i(67246, {	-- Beak of Julak-Doom
@@ -112,7 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 				["isRaid"] = true,
 				["groups"] = {
-					applyclassicphase(CATA_PHASE_TWO, i(69843, {	-- Mobus's Dripping Halberd
+					applyclassicphase(CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT, i(69843, {	-- Mobus's Dripping Halberd
 						["timeline"] = { ADDED_4_1_0 },
 					})),
 					i(67153, {	-- Mobus's Vile Halberd
@@ -151,7 +151,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				},
 				["isRaid"] = true,
 				["groups"] = {
-					applyclassicphase(CATA_PHASE_TWO, i(69876, {	-- Xariona's Spectral Gauntlets
+					applyclassicphase(CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT, i(69876, {	-- Xariona's Spectral Gauntlets
 						["timeline"] = { ADDED_4_1_0 },
 					})),
 					i(67239, {	-- Xariona's Spectral Claws
