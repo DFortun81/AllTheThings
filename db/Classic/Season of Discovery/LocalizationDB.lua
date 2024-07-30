@@ -326,6 +326,7 @@ localize(L.HEADER_NAMES, {
 	[-1000969] = "Nightmare Incursions",
 	[-1000970] = "Tier 3",
 	[-1000971] = "Aeonas: Journey to Felwood",
+	[-1000979] = "Speak to Harold",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -492,6 +493,7 @@ localize(L.HEADER_ICONS, {
 	[-1000969] = "134108",
 	[-1000970] = "Interface/ICONS/inv_scroll_11",
 	[-1000971] = "Interface/CURSOR/Taxi",
+	[-1000979] = "Interface/CURSOR/Speak",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,

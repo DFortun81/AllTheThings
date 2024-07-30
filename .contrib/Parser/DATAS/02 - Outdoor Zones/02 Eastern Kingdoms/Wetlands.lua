@@ -946,6 +946,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, q(79945, {	-- Orders from the Grand Crusader
+					["providers"] = {
+						{ "i", 215468 },	-- Orders from the Grand Crusader
+						{ "i", 216610 },	-- Orders from the Grand Crusader
+					},
+					["sourceQuest"] = 79972,	-- Speak to Harold HQT
+					["coord"] = { 11.8, 75.7, DUN_MOROGH },
+					["description"] = "Getting to this location is a real pain. From the Wetlands, swim along the coast around Dun Morogh until you reach the dock.",
+					["maps"] = { STORMWIND_CITY },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["cr"] = 218908,	-- Scarlet Crusade Assassin
+					["lvl"] = 26,
+					["groups"] = {
+						objective(1, {	-- Report back to Katherine the Pure
+							["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
+							["coord"] = { 37.8, 31.6, STORMWIND_CITY },
+						}),
+					},
+				})),
+				-- #endif
 				q(294, {	-- Ormer's Revenge (1/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
 					["coord"] = { 38, 51.2, WETLANDS },
@@ -1114,6 +1136,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, n(createHeader({	-- Speak to Harold
+					readable = "SOD - Aeonas Whereabouts",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Speak to Harold",
+					},
+				}), {
+					["qg"] = 3179,	-- Harold Riggs
+					["questID"] = 79972,	-- Aeonas Whereabouts HQT
+					["sourceQuest"] = 79940,	-- A Lost Brother
+					["coord"] = { 8.1, 58.6, WETLANDS },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 26,
+				})),
+				-- #endif
 				q(25850, {	-- Strike the Earth!
 					["qg"] = 41412,	-- Ormer Ironbraid
 					["coord"] = { 38.6, 39.5, WETLANDS },
