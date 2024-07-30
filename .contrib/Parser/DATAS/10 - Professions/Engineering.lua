@@ -3109,7 +3109,7 @@ profession(ENGINEERING, {
 			["name"] = "Weapons",
 			["categoryID"] = 740,
 			["groups"] = {
-				applyclassicphase(CATA_PHASE_THREE, {
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Extreme-Impact Hole Puncher",
 					["recipeID"] = 100687,
 				}),
@@ -3139,7 +3139,7 @@ profession(ENGINEERING, {
 			["name"] = "Scopes",
 			["categoryID"] = 741,
 			["groups"] = {
-				applyclassicphase(CATA_PHASE_THREE, {
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Flintlocke's Woodchucker",
 					["recipeID"] = 100587,
 				}),
@@ -3610,8 +3610,8 @@ itemrecipe("Schematic: Mekgineer's Chopper", 44503, 60867, WRATH_PHASE_ONE);
 
 -- #if AFTER CATA
 -- Cata Recipes
-itemrecipe("Schematic: Extreme-Impact Hole Puncher", 71078, 100687, CATA_PHASE_THREE);
-itemrecipe("Schematic: Flintlocke's Woodchucker", 70177, 100587, CATA_PHASE_THREE);
+itemrecipe("Schematic: Extreme-Impact Hole Puncher", 71078, 100687, CATA_PHASE_RAGE_OF_THE_FIRELANDS);
+itemrecipe("Schematic: Flintlocke's Woodchucker", 70177, 100587, CATA_PHASE_RAGE_OF_THE_FIRELANDS);
 -- #endif
 
 

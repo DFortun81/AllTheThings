@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_1_0 }, {
-	applyclassicphase(CATA_PHASE_TWO, inst(77, {	-- Zul'Aman
+	applyclassicphase(CATA_PHASE_RISE_OF_THE_ZANDALARI, inst(77, {	-- Zul'Aman
 		["mapID"] = ZULAMAN,
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["isRaid"] = false,	-- prevent merging isRaid from BC version

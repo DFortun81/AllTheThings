@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_3_0 }, {
-	applyclassicphase(CATA_PHASE_FOUR, inst(185, {	-- Well of Eternity
+	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(185, {	-- Well of Eternity
 		["mapID"] = 398,
 		["coords"] = {
 			{ 22.9, 64.4, CAVERNS_OF_TIME },	-- dungeon entrance

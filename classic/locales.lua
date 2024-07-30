@@ -710,9 +710,9 @@ for key,value in pairs({
 		
 		-- Cataclysm Classic Phases
 		[40] = {2, "|CFFAAFFAAThis was not available until Phase 1 of Cataclysm Classic.|r", "Phase 1", 40400, 40400, "\n \n|CFFFFAAAAIncluded Bastion of Twilight, Throne of the Four Winds, and Blackwing Descent.|r" },
-		[41] = {2, "|CFFAAFFAAThis was not available until Phase 2 of Cataclysm Classic.|r", "Phase 2", 40400, 40401, "\n \n|CFFFFAAAAIncluded Zul'Aman and Zul'Gurub Heroic Dungeons.|r" },
-		[42] = {2, "|CFFAAFFAAThis was not available until Phase 3 of Cataclysm Classic.|r", "Phase 3", 40400, 40402, "\n \n|CFFFFAAAAIncluded Firelands.|r" },
-		[43] = {2, "|CFFAAFFAAThis was not available until Phase 4 of Cataclysm Classic.|r", "Phase 4", 40400, 40403, "\n \n|CFFFFAAAAIncluded Dragon Soul.|r" },
+		[4001] = {2, "|CFFAAFFAAThis was not available until the Rise of the Zandalari during Cataclysm Classic.|r", "Rise of the Zandalari", 40400, 40400, "\n \n|CFFFFAAAAIncluded Zul'Aman and Zul'Gurub Heroic Dungeons.|r" },
+		[41] = {2, "|CFFAAFFAAThis was not available until the Rage of the Firelands during Cataclysm Classic.|r", "Rage of the Firelands", 40400, 40401, "\n \n|CFFFFAAAAIncluded Firelands.|r" },
+		[42] = {2, "|CFFAAFFAAThis was not available until the Hour of Twilight during Cataclysm Classic.|r", "Hour of Twilight", 40400, 40402, "\n \n|CFFFFAAAAIncluded Dragon Soul.|r" },
 	};
 }) do
 	L[key] = value;

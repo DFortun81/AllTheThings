@@ -4898,7 +4898,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					}),
 				}),
-				applyclassicphase(CATA_PHASE_FOUR, n(57922, {	-- Taryssa Lazuria <Jewelcrafting Supplies>
+				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(57922, {	-- Taryssa Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 72.4, 34.6, ORGRIMMAR },
 					["timeline"] = { ADDED_4_3_0 },
 					["races"] = HORDE_ONLY,

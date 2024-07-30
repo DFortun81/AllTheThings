@@ -675,7 +675,7 @@ TIER_TWELVE_COMMON_GROUPS = {
 	i(70935),	-- Stoneheart Necklace
 	i(71151),	-- Trail of Embers
 };
-TIER_TWELVE_GROUPS = applyclassicphase(CATA_PHASE_THREE,
+TIER_TWELVE_GROUPS = applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS,
 	appendGroups(TIER_TWELVE_COMMON_GROUPS,
 	appendGroups(TIER_TWELVE_HEROIC_GROUPS,
 	appendGroups(TIER_TWELVE_NORMAL_GROUPS, {

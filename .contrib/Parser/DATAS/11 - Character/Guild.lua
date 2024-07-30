@@ -115,7 +115,7 @@ root(ROOTS.Character, n(createHeader({
 		ach(5241),	-- Stick Together Team
 		-- DUNGEONS & RAIDS
 		ach(5009),	-- A Legendary Collection*
-		applyclassicphase(CATA_PHASE_FOUR, ach(6182, {	-- Fangs of the Father - Guild Edition
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, ach(6182, {	-- Fangs of the Father - Guild Edition
 			["timeline"] = { ADDED_4_3_0 },
 		})),
 		ach(4950),	-- Guild Classic Dungeonmaster*
@@ -259,7 +259,7 @@ root(ROOTS.Character, n(createHeader({
 			["timeline"] = { ADDED_6_0_2, REMOVED_7_0_3 },
 		}),
 		ach(5144),	-- Critter Kill Squad
-		applyclassicphase(CATA_PHASE_THREE, ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
+		applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, ach(5840, {	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
 			["timeline"] = { ADDED_4_2_0 },
 		})),
 		ach(5143),	-- Guild Cataclysm Dungeon Hero
@@ -822,7 +822,7 @@ root(ROOTS.Character, n(createHeader({
 					-- #endif
 					["races"] = HORDE_ONLY,
 				}),
-				applyclassicphase(CATA_PHASE_THREE, i(71033, {	-- Lil' Tarecgosa (PET!)
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(71033, {	-- Lil' Tarecgosa (PET!)
 					["sourceAchievement"] = 5840,	-- Dragonwrath, Tarecgosa's Rest - Guild Edition
 					["timeline"] = { ADDED_4_2_0 },
 				})),

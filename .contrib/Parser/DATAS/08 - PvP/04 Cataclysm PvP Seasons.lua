@@ -2136,7 +2136,7 @@ root(ROOTS.PVP, {
 				}),
 			})),
 		}),
-		applyclassicphase(CATA_PHASE_THREE, n(SEASON_RUTHLESS, {
+		applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(SEASON_RUTHLESS, {
 			elitepvp(n(ACHIEVEMENTS, bubbleDown({
 				["timeline"] = { ADDED_4_2_0, REMOVED_4_3_0 },
 			}, {
@@ -3513,7 +3513,7 @@ root(ROOTS.PVP, {
 				}),
 			})),
 		})),
-		applyclassicphase(CATA_PHASE_FOUR, n(SEASON_CATACLYSMIC, {
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(SEASON_CATACLYSMIC, {
 			elitepvp(n(ACHIEVEMENTS, bubbleDown({
 				["timeline"] = { ADDED_5_0_4, REMOVED_5_0_4 },
 			}, {

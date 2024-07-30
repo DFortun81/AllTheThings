@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_3_0 }, {
-	applyclassicphase(CATA_PHASE_FOUR, inst(184, {	-- End Time
+	applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, inst(184, {	-- End Time
 		["mapID"] = 401,
 		["maps"] = { 402, 403, 404, 405, 406 },
 		["coords"] = {

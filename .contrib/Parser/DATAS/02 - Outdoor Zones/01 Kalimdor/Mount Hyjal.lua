@@ -278,7 +278,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25424,	-- Return to Alysra
 					["coord"] = { 48.4, 18.9, MOUNT_HYJAL },
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29195, {	-- A Ritual of Flame
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29195, {	-- A Ritual of Flame
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 29145,	-- Opening the Door
 					["coord"] = { 27.1, 54.4, MOUNT_HYJAL },
@@ -310,7 +310,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25509,	-- Physical Training: Forced Labor
 					["coord"] = { 89.5, 59.0, MOUNT_HYJAL },
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29284, {	-- Aid of the Ancients
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29284, {	-- Aid of the Ancients
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29283,	-- Calling the Ancients
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
@@ -444,14 +444,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29199, {	-- Calling for Reinforcements
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29199, {	-- Calling for Reinforcements
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
 					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
 				})),
-				applyclassicphase(CATA_PHASE_THREE, q(29197, {	-- Caught Unawares
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29197, {	-- Caught Unawares
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29196,	-- To the Sanctuary!
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
@@ -598,7 +598,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(CATA_PHASE_TWO, q(29122, {	-- Echoes of Nemesis
+				applyclassicphase(CATA_PHASE_PREFIRELANDS_DAILIES, q(29122, {	-- Echoes of Nemesis
 					["qg"] = 52671,	-- Mylune
 					["sourceQuest"] = 29101,	-- Punting Season
 					["coord"] = { 27.1, 61.9, MOUNT_HYJAL },
@@ -772,7 +772,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(52716),	-- Twilight Firelance
 					},
 				}),
-				applyclassicphase(CATA_PHASE_TWO, q(29182, {	-- Flight of the Storm Crows
+				applyclassicphase(CATA_PHASE_PREFIRELANDS_DAILIES, q(29182, {	-- Flight of the Storm Crows
 					["providers"] = {
 						{ "n", 50068 },	-- Isara Riverstride
 						{ "n", 52669 },	-- Matoclaw
@@ -932,33 +932,33 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25494,	-- A Champion's Collar
 					["coord"] = { 90.1, 56.3, MOUNT_HYJAL },
 				}),
-				applyclassicphase(CATA_PHASE_THREE, heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
 					["description"] = "Only available to players who have not quested through Mount Hyjal.",
 					["timeline"] = { ADDED_4_2_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 85,
 					["u"] = REMOVED_FROM_GAME,
 				}))),
-				applyclassicphase(CATA_PHASE_THREE, warchiefscommand(q(29390, {	-- Guardians of Hyjal: Call of the Ancients (H)
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, warchiefscommand(q(29390, {	-- Guardians of Hyjal: Call of the Ancients (H)
 					["description"] = "Only available to players who have not quested through Mount Hyjal.",
 					["timeline"] = { ADDED_4_2_0 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 85,
 					["u"] = REMOVED_FROM_GAME,
 				}))),
-				applyclassicphase(CATA_PHASE_THREE, heroscall(q(29387, {	-- Guardians of Hyjal: Firelands Invasion! (A)
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, heroscall(q(29387, {	-- Guardians of Hyjal: Firelands Invasion! (A)
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 85,
 				}))),
-				applyclassicphase(CATA_PHASE_THREE, warchiefscommand(q(29388, {	-- Guardians of Hyjal: Firelands Invasion! (H)
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, warchiefscommand(q(29388, {	-- Guardians of Hyjal: Firelands Invasion! (H)
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 85,
 				}))),
-				applyclassicphase(CATA_PHASE_THREE, q(29389, {	-- Guardians of Hyjal: Firelands Invasion!
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29389, {	-- Guardians of Hyjal: Firelands Invasion!
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuests"] = {
 						25372,	-- Aessina's Miracle
@@ -1068,7 +1068,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40278,	-- Tholo Whitehoof
 					["coord"] = { 64.0, 22.4, MOUNT_HYJAL },
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29335, {	-- Into Slashing Winds
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29335, {	-- Into Slashing Winds
 					["qg"] = 54312,	-- Aggra
 					["sourceQuest"] = 29326,	-- The Nordrassil Summit
 					["coord"] = { 60.2, 30.1, MOUNT_HYJAL },
@@ -1120,7 +1120,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 19.03, 37.01, MOUNT_HYJAL },	-- Matoclaw
 					},
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29200, {	-- Leyara
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29200, {	-- Leyara
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 29199,	-- Calling for Reinforcements
 					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
@@ -1226,7 +1226,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57287),	-- Gauntlets of Guerilla Fury
 					},
 				}),
-				applyclassicphase(CATA_PHASE_TWO, q(29162, {	-- Nature's Blessing
+				applyclassicphase(CATA_PHASE_PREFIRELANDS_DAILIES, q(29162, {	-- Nature's Blessing
 					["qg"] = 52671,	-- Mylune
 					["sourceQuest"] = 29161,	-- Those Bears Up There
 					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
@@ -1247,7 +1247,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				applyclassicphase(CATA_PHASE_THREE, q(29280, {	-- Nourishing Waters
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29280, {	-- Nourishing Waters
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29279,	-- Filling the Moonwell
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
@@ -1263,7 +1263,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57328),	-- Cloak of Cheerful Flowers
 					},
 				}),
-				applyclassicphase(CATA_PHASE_TWO, q(29145, {	-- Opening the Door
+				applyclassicphase(CATA_PHASE_PREFIRELANDS_DAILIES, q(29145, {	-- Opening the Door
 					["qg"] = 52669,	-- Matoclaw
 					-- #if AFTER 4.2.0
 					["sourceQuests"] = {
@@ -1785,14 +1785,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29439, {	-- The Call of the World-Shaman (A)
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29439, {	-- The Call of the World-Shaman (A)
 					["qg"] = 45226,	-- Naraat the Earthspeaker
 					["coord"] = { 74.4, 18.8, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				})),
-				applyclassicphase(CATA_PHASE_THREE, q(29440, {	-- The Call of the World-Shaman (H)
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29440, {	-- The Call of the World-Shaman (H)
 					["qg"] = 45244,	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, ORGRIMMAR },
 					["timeline"] = { ADDED_4_2_0 },
@@ -1831,13 +1831,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25272,	-- Lycanthoth the Corruptor
 					["coord"] = { 28.6, 30.2, MOUNT_HYJAL },
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29437, {	-- The Fallen Guardian
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29437, {	-- The Fallen Guardian
 					["qg"] = 40289,	-- Ysera
 					["sourceQuest"] = 29326,	-- The Nordrassil Summit	-- verify
 					["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_2_0 },
 				})),
-				applyclassicphase(CATA_PHASE_THREE, q(29202, {	-- The Fate of Runetotem
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29202, {	-- The Fate of Runetotem
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
@@ -1922,7 +1922,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25807,	-- An Ancient Reborn
 					["coord"] = { 44.1, 45.9, MOUNT_HYJAL },
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29215, {	-- The Hunt Begins
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29215, {	-- The Hunt Begins
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29214,	-- The Shadow Wardens
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
@@ -1974,7 +1974,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "To get this quest DO NOT accept another version from Subjugated Inferno Lord after \"A New Master\", instead head back to Tyrus Blackhorn.",
 					["coord"] = { 22.2, 44.8, MOUNT_HYJAL },
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29326, {	-- The Nordrassil Summit
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29326, {	-- The Nordrassil Summit
 					["qg"] = 54313,	-- Thrall
 					["sourceQuests"] = {
 						29439,	-- The Call of the World-Shaman (A)
@@ -2043,7 +2043,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 25578,	-- Return to Nordrassil
 					["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29198, {	-- The Sanctuary Must Not Fall
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29198, {	-- The Sanctuary Must Not Fall
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
 					["sourceQuest"] = 29197,	-- Caught Unawares
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
@@ -2167,7 +2167,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57286),	-- Dreamrending Dagger
 					},
 				}),
-				applyclassicphase(CATA_PHASE_THREE, q(29201, {	-- Through the Gates of Hell
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29201, {	-- Through the Gates of Hell
 					["qg"] = 52845,	-- Malfurion Stormrage
 					["sourceQuest"] = 29200,	-- Leyara
 					["coord"] = { 27.0, 62.7, MOUNT_HYJAL },
@@ -2177,7 +2177,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						ach(5866, crit(17814)),	-- The Molten Front Offensive / Gain access to the Molten Front
 					},
 				})),
-				applyclassicphase(CATA_PHASE_THREE, q(29196, {	-- To the Sanctuary!
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29196, {	-- To the Sanctuary!
 					["qg"] = 52845,	-- Malfurion Stormrage
 					["sourceQuest"] = 29195,	-- A Ritual of Flame
 					["coord"] = { 27.3, 55.2, MOUNT_HYJAL },
@@ -2374,7 +2374,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			n(RARES, {
-				applyclassicphase(CATA_PHASE_THREE, n(54318, {	-- Ankha
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(54318, {	-- Ankha
 					["coords"] = {
 						{ 28.0, 52.0, MOUNT_HYJAL },
 						{ 30.0, 51.4, MOUNT_HYJAL },
@@ -2387,7 +2387,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "This spirit beast is a rare tamable cat with a unique silver spectral skin. It is one of the \"challenge\" tames added in 4.2: Spirit Claw will one-shot players wearing armor.",
 					["timeline"] = { ADDED_4_2_0 },
 				})),
-				applyclassicphase(CATA_PHASE_THREE, n(54320, {	-- Ban'thalos
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(54320, {	-- Ban'thalos
 					["coords"] = {
 						{ 27.2, 64.2, MOUNT_HYJAL },
 						{ 28.0, 62.2, MOUNT_HYJAL },
@@ -2408,7 +2408,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(67236),	-- Blazewing's Furious Kilt
 					},
 				}),
-				applyclassicphase(CATA_PHASE_THREE, n(54319, {	-- Magria
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, n(54319, {	-- Magria
 					["coords"] = {
 						{ 28.0, 52.0, MOUNT_HYJAL },
 						{ 30.0, 51.4, MOUNT_HYJAL },
