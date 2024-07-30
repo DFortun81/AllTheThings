@@ -94,6 +94,12 @@ if not GetSpellInfo then
 	end;
 	lib.GetSpellIcon = C_Spell.GetSpellTexture;
 	--lib.GetSpellLink = C_Spell.GetSpellLink;
+	
+	local C_Spell_GetSpellCooldown = C_Spell.GetSpellCooldown;
+	lib.GetSpellCooldown = function(spellID)
+		local t = C_Spell_GetSpellCooldown(spellID);
+		return t and t.startTime or 0;
+	end
 else
 	local GetSpellInfo = GetSpellInfo;
 	if app.GameBuildVersion >= 40000 then
@@ -103,6 +109,7 @@ else
 	end
 	lib.GetSpellIcon = function(spellID) return select(3, GetSpellInfo(spellID)); end;
 	--lib.GetSpellLink = GetSpellLink;
+	lib.GetSpellCooldown = GetSpellCooldown;
 end
 
 -- Quest APIs

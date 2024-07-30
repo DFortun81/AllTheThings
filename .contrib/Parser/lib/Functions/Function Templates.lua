@@ -8,7 +8,7 @@ WOWAPI_GetItemCount = function(itemID)
 end
 WOWAPI_GetSpellCooldown = function(spellID)
 	-- #if AFTER TWW
-	return "C_Spell.GetSpellCooldown(" .. spellID .. ")";
+	return "_.WOWAPI.GetSpellCooldown(" .. spellID .. ")";
 	-- #else
 	return "GetSpellCooldown(" .. spellID .. ")";
 	-- #endif
