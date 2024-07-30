@@ -38,6 +38,8 @@ mount(451488),	-- [PH] NerubianWarbeastMount (Orange)
 mount(452768),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
 mount(452777),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green)
 mount(452780),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
+11.0.2.55789
+mount(463025),	-- Gigantic Grrloc
 
 
 
@@ -84,3 +86,5 @@ mount(451488),	-- [PH] NerubianWarbeastMount (Orange)
 mount(452768),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
 mount(452777),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green)
 mount(452780),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
+11.0.2.55789
+mount(463025),	-- Gigantic Grrloc

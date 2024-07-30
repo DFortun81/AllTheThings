@@ -10,11 +10,8 @@ faction(2580),	-- Test Faction Alpha
 faction(2594),	-- The Assembly of the Deeps
 faction(2595),	-- Order of Night
 faction(2596),	-- The Severed Threads (Paragon)
-faction(2601),	-- The Weaver \\ The Weaver (Notoriety)
 faction(2602),	-- Umbral Bazaar
-faction(2605),	-- The General \\ The General (Notoriety)
 faction(2606),	-- The High Hollows
-faction(2607),	-- The Vizier \\ The Vizier (Notoriety)
 faction(2609),	-- The Burrows
 faction(2610),	-- Azj-Kaheti Nerubian (Always Hostile) (Hidden) \\ Azj-Kahetti Nerubian (Always Hostile) (Hidden)
 faction(2611),	-- Hallowfall Arathi (Paragon)

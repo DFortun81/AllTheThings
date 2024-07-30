@@ -106,7 +106,6 @@ r(461716),	-- Deadly Heartseeker
 r(461718),	-- Tranquility
 r(461730),	-- Hardened Frostguard
 r(461733),	-- Finely-Enchanted Battlehammer
-r(461735),	-- Invincible Mail
 r(461737),	-- Tempest Gauntlets
 r(461739),	-- Warcrest of the Great Chief
 r(461743),	-- Sageblade of the Archmagus

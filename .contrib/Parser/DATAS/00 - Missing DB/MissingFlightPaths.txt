@@ -6,7 +6,6 @@ fp(2935),	-- Terrace of Majesty \\ Barracks, Nerub'ar Palace
 fp(2936),	-- The Swaying Span (One-way) \\ Bridge, Nerub'ar Palace
 fp(2937),	-- The Narthex \\ Sanctum, Nerub'ar Palace
 fp(2938),	-- The Swaying Span \\ Weapon Master, Nerub'ar Palace
-fp(2950),	-- The Aegis Wall, Hallowfall
 fp(2955),	-- Quest Path 9706: 11.0 Z2 - Max Level - CH3 - Q2 - Pipe Ingress 1 Taxi (SMART)
 fp(2964),	-- Quest Path 9786: 11.0 Z2 - Campaign - Ch 3 - Dark Iron From Above - Boss Flyover - (LWB)
 11.0.0.54605
