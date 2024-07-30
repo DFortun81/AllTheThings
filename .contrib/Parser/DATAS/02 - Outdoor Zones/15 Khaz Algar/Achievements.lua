@@ -229,6 +229,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				19559,	-- Azj-Kahet
 				20595,	-- Sojourner of Isle of Dorn
 			}},
+			["g"] = {
+				iensemble(219132),	-- Crimson Cartographer's Orientation
+			},
 		}),
 		petbattle(ach(40163, {	-- Magic Battler of Khaz Algar
 			crit(67166, -- Collector Dyna

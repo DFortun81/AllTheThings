@@ -10,6 +10,9 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				40140,	-- Algari Dungeon Healer
 				40141,	-- Algari Dungeon Tank
 			}},
+			["g"] = {
+				iensemble(219115),	-- Versatile Peddler's Trinkets
+			},
 		}),
 		ach(40139),	-- Algari Dungeon Damage Dealer
 		ach(40140),	-- Algari Dungeon Healer

@@ -12,9 +12,9 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 	ach(19410, sharedDataSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {	-- Algari Master of All
 		["sym"] = {{ "achievement_criteria" }},
 	})),
-	ach(19515, {	-- Algari Master of Many
-		["timeline"] = { ADDED_11_PH_LAUNCH }
-	}),
+	ach(19515, sharedDataSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {	-- Algari Master of Many
+		iensemble(219125),	-- Formed Artisan's Talent
+	})),
 	ach(16630, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Draconic Master of All
 		crit(53500),	-- Dragon Isles Alchemy
 		crit(53501),	-- Dragon Isles Blacksmithing
