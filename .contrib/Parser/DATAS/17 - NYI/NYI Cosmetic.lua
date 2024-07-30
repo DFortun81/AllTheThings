@@ -287,7 +287,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(211069),	-- Azure Treads of the Kalu'ak
 				i(210867),	-- Blademaster's Lively Stones
-				i(210849),	-- Trader's Azure Sarong
 				i(210854),	-- Trader's Camo Sarong
 				i(210856),	-- Trader's Faded Sarong
 				i(210851),	-- Trader's Grassy Sarong
@@ -312,9 +311,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190692),	-- Champion's Battle Standard
 				i(190847),	-- Deathmantle Assassin's Barb
 				i(190090),	-- Dessicated Bouquet
-				i(212627),	-- Dueler's Azure Shoulder Cape
 				i(212622),	-- Dueler's Camo Shoulder Cape
-				i(212617),	-- Dueler's Crimson Shoulder Cape
 				i(212620),	-- Dueler's Faded Shoulder Cape
 				i(212625),	-- Dueler's Grassy Shoulder Cape
 				i(212618),	-- Dueler's Plum Shoulder Cape
@@ -327,7 +324,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(212713),	-- Spring Reveler's Cornsilk Dress
 				i(212987),	-- Spring Reveler's Cornsilk Pants
 				i(212717),	-- Spring Reveler's Cornsilk Sun Hat
-				i(212612),	-- Wings of the Amethyst Monarch
 				i(212610),	-- Wings of the Emerald Monarch
 			}),
 			n(SETS, {
@@ -483,17 +479,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 			}),
 			n(WEAPONS, {
-				i(220759),	-- Arsenal: Stormrider's Bronze Stormhammers
-				i(220755),	-- Arsenal: Stormrider's Dark Stormhammers
-				------ Fireborn Blades ------
-				i(223421),	-- Arsenal: Fireborn Blades
-				i(223419),	-- Fireborn Blade
-				i(223420),	-- Radiant Fireborn Blade
-
-				------ Seaborn Blades ------
-				i(223418),	-- Arsenal: Seaborn Blades
-				i(223417),	-- Radiant Seaborn Blade
-				i(223416),	-- Seaborn Blade
 
 				------ Single Pieces ------
 				i(220758),	-- Champion Stormhammer
