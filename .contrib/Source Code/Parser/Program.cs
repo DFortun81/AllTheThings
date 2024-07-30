@@ -201,10 +201,17 @@ namespace ATT
                     {
                         Framework.AssignCustomHeaders(Framework.ParseAsDictionary<long>(customHeaders));
                     }
+
+                    // Try to grab the skill conversion table
+                    var skillIdTable = lua.GetTable("SKILL_ID_CONVERSION_TABLE");
+                    Framework.Objects.SKILL_ID_CONVERSION_TABLE =
+                        Framework.ParseAsDictionary<long>(skillIdTable ?? throw new InvalidDataException("Missing 'SKILL_ID_CONVERSION_TABLE' Global!"))
+                        .ToDictionary(kvp => kvp.Key, kvp => (long)kvp.Value);
                 }
                 catch (Exception e)
                 {
                     Framework.LogException(e);
+                    Errored = true;
                 }
 
                 do
