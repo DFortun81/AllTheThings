@@ -891,7 +891,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
 				["g"] = {
 					honor(100, i(209610, {	-- Verdant Gladiator's Tabard
-						["sourceAchievements"] = { 19090 },	-- Elite: Dragonflight Season 23
+						["sourceAchievements"] = { 19090 },	-- Elite: Dragonflight Season 3
+						["bonusID"] = 0,
 					})),
 					moh(5, i(210502)),	-- Verdant Gladiator's Axe
 					moh(10, i(210510)),	-- Verdant Gladiator's Axestaff

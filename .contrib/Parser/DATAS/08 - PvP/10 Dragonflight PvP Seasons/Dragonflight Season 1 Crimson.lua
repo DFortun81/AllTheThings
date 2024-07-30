@@ -914,6 +914,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					honor(100, i(202090, {	-- Crimson Gladiator's Tabard
 						["sourceAchievements"] = { 15984 },	-- Elite: Dragonflight Season 1
 						["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 },
+						["bonusID"] = 0,
 					})),
 					moh(5, i(202129)),	-- Crimson Gladiator's Barrier
 					moh(5, i(202133)),	-- Crimson Gladiator's Blade

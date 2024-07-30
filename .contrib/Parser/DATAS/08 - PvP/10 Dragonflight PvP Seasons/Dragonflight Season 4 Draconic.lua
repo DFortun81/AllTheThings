@@ -880,6 +880,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["g"] = {
 					honor(100, i(216667, {	-- Draconic Gladiator's Tabard
 						["sourceAchievements"] = { 19509 },	-- Elite: Dragonflight Season 4
+						["bonusID"] = 0,
 					})),
 					moh(5, i(217353)),	-- Draconic Gladiator's Axe
 					moh(10, i(217360)),	-- Draconic Gladiator's Axestaff
