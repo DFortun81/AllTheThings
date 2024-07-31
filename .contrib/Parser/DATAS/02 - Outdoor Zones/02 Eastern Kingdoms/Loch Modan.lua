@@ -379,7 +379,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/4 Carved Stone Urn
-							["provider"] = { "i", 4610 },	-- Carved Stone Urn
+							["providers"] = {
+								{ "i", 4610 },	-- Carved Stone Urn
+								{ "o", 2743 },	-- Carved Stone Urn
+							},
 							["description"] = "Can be found in the outdoor section of Uldaman.",
 						}),
 						i(4980, {	-- Prospector Gloves
