@@ -519,7 +519,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 4449,	-- Caught!
 					["coord"] = { 65.5, 62.2, SEARING_GORGE },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { DUSTWALLOW_MARSH, SWAMP_OF_SORROWS },
+					["maps"] = { DUSTWALLOW_MARSH, SWAMP_OF_SORROWS, TANARIS },
 					["lvl"] = 43,
 					["groups"] = {
 						objective(1, {	-- 0/1 Goodsteel Ledger
