@@ -1675,9 +1675,7 @@ root(ROOTS.Unsorted, {
 				i(225848),	-- Cracked Etheric Power Core
 				i(225853),	-- Broken Stirrup
 				i(225854),	-- Muddied Amulet
-
 				i(225875),	-- Pitted Armor Plating
-
 				i(225878),	-- The Fifty Rules of Commerce, Fourth Edition
 				i(225879),	-- The Fifty Rules of Commerce, Fourth Edition
 				i(225881),	-- Big Bag of Barter Boulders
@@ -1704,9 +1702,7 @@ root(ROOTS.Unsorted, {
 				i(226202),	-- Echoing Flux
 				i(226204),	-- Fresh Parchment
 				i(226205),	-- Distilled Algari Freshwater
-				i(226256),	-- Token of the Remembrancers
 				i(226257),	-- Delver's Pouch of Valorstones
-
 				i(226260),	-- Delver's Pouch of Gold
 				i(226430),	-- Navigations of The Soul
 				i(226524),	-- Partially-Charged Hologem

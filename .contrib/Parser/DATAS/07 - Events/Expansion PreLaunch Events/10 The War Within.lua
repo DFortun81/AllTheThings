@@ -9,12 +9,18 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		}),
 		n(BOSSES, {
 			m(EASTERN_KINGDOMS, {
+				-- TODO: symlink to all gear that is on vendor, maybe turn into common boss drop?
+				i(226256),	-- Token of the Remembrancers
 				i(223646),	-- Memory of the Eastern Kingdoms
 			}),
 			m(KALIMDOR, {
+				-- TODO: symlink to all gear that is on vendor, maybe turn into common boss drop?
+				i(226256),	-- Token of the Remembrancers
 				i(223644),	-- Memory of Kalimdor
 			}),
 			m(NORTHREND, {
+				-- TODO: symlink to all gear that is on vendor, maybe turn into common boss drop?
+				i(226256),	-- Token of the Remembrancers
 				i(223642),	-- Memory of Northrend
 			}),
 		}),
@@ -369,6 +375,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		n(HIDDEN_QUESTS, {
 			q(82687),	-- triggered after turn in questID 82689 (Only Darkness) // could be any weekly but lockout for first per week?
 			q(82688),	-- triggered after turn in questID 82689 (Only Darkness) // could be any weekly but lockout for first per week?
+			q(84083),	-- After killing Onyxia (all bosses?)
 		}),
 	}),
 })));
