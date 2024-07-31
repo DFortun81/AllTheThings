@@ -245,7 +245,7 @@ local BonusIDNextUnlock = {
 	[10337] = 0,
 	[10338] = 0,
 
-	-- Awakened
+	-- Awakened 12
 	[10407] = 10411,
 	[10408] = 10411,
 	[10409] = 10411,
@@ -255,13 +255,21 @@ local BonusIDNextUnlock = {
 	[10413] = 10416,
 	[10414] = 10416,
 	[10415] = 10416,
-	--[10416] = ,	-- ?
-	--[10417] = ,
-	--[10418] = ,
+
+	-- Awakened 14
+	[10490] = 10494,
+	[10491] = 10494,
+	[10492] = 10494,
+	[10493] = 10494,
+	[10494] = 10498,
+	[10495] = 10498,
+	[10496] = 10498,
+	[10497] = 10498,
 }
 -- Which bonusID nested upgrades are allowed to be nested under an already-upgraded listing
 local NestedUpgradesAllowedByBonusID = {
-	[10416] = true,	-- Awakened 3/3
+	[10416] = true,	-- Awakened 12 3/3
+	[10498] = true,	-- Awakened 14 3/3
 }
 
 local function GetFirstValueAndKey(t, keys)
