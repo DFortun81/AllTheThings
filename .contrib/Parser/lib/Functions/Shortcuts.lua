@@ -651,12 +651,6 @@ tolbaradcommendation = function(cost, item)				-- Assign a Tol Barad Commendatio
 	applycost(item, { "c", 391, cost });	-- Tol Barad Commendation
 	return item;
 end
-vicioussaddle = function(item)							-- Assign a Vicious Saddle cost to an item with proper timeline requirements.
-	-- #if AFTER 5.4.0.17153
-	applycost(item, { "i", 103533, 1 });	-- Vicious Saddle
-	-- #endif
-	return item;
-end
 venture = function(cost, item)							-- Assign a Venture Coin cost to an item with proper timeline requirements.
 	-- #if BEFORE 4.0.1
 	applycost(item, { "c", 201, cost });	-- Venture Coin

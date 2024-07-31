@@ -7,9 +7,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 		["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0, ADDED_9_0_2_LAUNCH },
 	},{
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 } }, {
-			ach(13199),	-- Combatant: Battle for Azeroth Season 1
-			ach(12959),	-- Challenger: Battle for Azeroth Season 1
-			ach(12960),	-- Rival: Battle for Azeroth Season 1
+			ach(13199),		-- Combatant: Battle for Azeroth Season 1
+			ach(12959),		-- Challenger: Battle for Azeroth Season 1
+			ach(12960),		-- Rival: Battle for Azeroth Season 1
 			ach(12962, {	-- Duelist: Battle for Azeroth Season 1
 				ill(6096),	-- Dreadflame (ILLUSION!)
 				i(164575, {	-- Dread Gladiator's Cloak [A]
@@ -61,27 +61,23 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["g"] = {
-						iensemble(184668, {	-- Arsenal: Dread Aspirant's Weapons
+					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+						iensemble(184668, {	-- Arsenal: Dread Aspirant's Weapons [A]
 							["cost"] = {{"i", MOH, 80}},
 						}),
-						iensemble(180178, {	-- Ensemble: Dread Aspirant's Cloth Armor
+						iensemble(180178, {	-- Ensemble: Dread Aspirant's Cloth Armor [A]
 							["classes"] = CLOTH_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(180180, {	-- Ensemble: Dread Aspirant's Leather Armor
+						iensemble(180180, {	-- Ensemble: Dread Aspirant's Leather Armor [A]
 							["classes"] = LEATHER_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(180182, {	-- Ensemble: Dread Aspirant's Mail Armor
+						iensemble(180182, {	-- Ensemble: Dread Aspirant's Mail Armor [A]
 							["classes"] = MAIL_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(180184, {	-- Ensemble: Dread Aspirant's Plate Armor
+						iensemble(180184, {	-- Ensemble: Dread Aspirant's Plate Armor [A]
 							["classes"] = PLATE_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-					},
+					}),
 				}),
 			})),
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, ["races"] = ALLIANCE_ONLY }, {
@@ -154,27 +150,23 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["g"] = {
-						iensemble(184669, {	-- Arsenal: Dread Aspirant's Weapons
+					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+						iensemble(184669, {	-- Arsenal: Dread Aspirant's Weapons [H]
 							["cost"] = {{"i", MOH, 80}},
 						}),
-						iensemble(180179, {	-- Ensemble: Dread Aspirant's Cloth Armor
+						iensemble(180179, {	-- Ensemble: Dread Aspirant's Cloth Armor [H]
 							["classes"] = CLOTH_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(180181, {	-- Ensemble: Dread Aspirant's Leather Armor
+						iensemble(180181, {	-- Ensemble: Dread Aspirant's Leather Armor [H]
 							["classes"] = LEATHER_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(180183, {	-- Ensemble: Dread Aspirant's Mail Armor
+						iensemble(180183, {	-- Ensemble: Dread Aspirant's Mail Armor [H]
 							["classes"] = MAIL_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(180185, {	-- Ensemble: Dread Aspirant's Plate Armor
+						iensemble(180185, {	-- Ensemble: Dread Aspirant's Plate Armor [H]
 							["classes"] = PLATE_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-					},
+					}),
 				}),
 			})),
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, ["races"] = HORDE_ONLY }, {
@@ -263,27 +255,23 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
 				n(143560, {	-- Marshal Gabriel <Second-in-Command>
 					["coord"] = { 56.4, 25.8, BORALUS },
-					["g"] = {
-						iensemble(184666, {	-- Arsenal: Dread Gladiator's Weapons
+					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+						iensemble(184666, {	-- Arsenal: Dread Gladiator's Weapons [A]
 							["cost"] = {{"i", MOH, 80}},
 						}),
-						iensemble(184419, {	-- Ensemble: Dread Gladiator's Cloth Armor
+						iensemble(184419, {	-- Ensemble: Dread Gladiator's Cloth Armor [A]
 							["classes"] = CLOTH_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(184421, {	-- Ensemble: Dread Gladiator's Leather Armor
+						iensemble(184421, {	-- Ensemble: Dread Gladiator's Leather Armor [A]
 							["classes"] = LEATHER_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(184423, {	-- Ensemble: Dread Gladiator's Mail Armor
+						iensemble(184423, {	-- Ensemble: Dread Gladiator's Mail Armor [A]
 							["classes"] = MAIL_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(184425, {	-- Ensemble: Dread Gladiator's Plate Armor
+						iensemble(184425, {	-- Ensemble: Dread Gladiator's Plate Armor [A]
 							["classes"] = PLATE_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-					},
+					}),
 				}),
 			})),
 			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, ["races"] = ALLIANCE_ONLY }, {
@@ -388,27 +376,23 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["races"] = HORDE_ONLY }, {
 				n(143555, {	-- Xander Silberman <War Effort Coordinator>
 					["coord"] = { 51.6, 58.2, ZULDAZAR },
-					["g"] = {
-						iensemble(184667, {	-- Arsenal: Dread Gladiator's Weapons
+					["g"] = sharedData({ ["cost"] = {{"i", MOH, 12}} }, {
+						iensemble(184667, {	-- Arsenal: Dread Gladiator's Weapons [H]
 							["cost"] = {{"i", MOH, 80}},
 						}),
-						iensemble(184420, {	-- Ensemble: Dread Gladiator's Cloth Armor
+						iensemble(184420, {	-- Ensemble: Dread Gladiator's Cloth Armor [H]
 							["classes"] = CLOTH_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(184422, {	-- Ensemble: Dread Gladiator's Leather Armor
+						iensemble(184422, {	-- Ensemble: Dread Gladiator's Leather Armor [H]
 							["classes"] = LEATHER_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(184424, {	-- Ensemble: Dread Gladiator's Mail Armor
+						iensemble(184424, {	-- Ensemble: Dread Gladiator's Mail Armor [H]
 							["classes"] = MAIL_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-						iensemble(184426, {	-- Ensemble: Dread Gladiator's Plate Armor
+						iensemble(184426, {	-- Ensemble: Dread Gladiator's Plate Armor [H]
 							["classes"] = PLATE_CLASSES,
-							["cost"] = {{"i", MOH, 12}},
 						}),
-					},
+					}),
 				}),
 			})),
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 }, ["races"] = HORDE_ONLY }, {
@@ -534,44 +518,44 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(163729),	-- Dread Gladiator's Shawl [A]
 				}),
 				filter(CLOTH, {
-					i(161613),	-- Dread Gladiator's Silk Hood [A]
-					i(161622),	-- Dread Gladiator's Silk Mantle [A]
-					i(161601),	-- Dread Gladiator's Silk Robe [A]
 					i(161625),	-- Dread Gladiator's Silk Cord [A]
-					i(161617),	-- Dread Gladiator's Silk Leggings [A]
-					i(161606),	-- Dread Gladiator's Silk Treads [A]
 					i(161628),	-- Dread Gladiator's Silk Cuffs [A]
 					i(161611),	-- Dread Gladiator's Silk Gloves [A]
+					i(161613),	-- Dread Gladiator's Silk Hood [A]
+					i(161617),	-- Dread Gladiator's Silk Leggings [A]
+					i(161622),	-- Dread Gladiator's Silk Mantle [A]
+					i(161601),	-- Dread Gladiator's Silk Robe [A]
+					i(161606),	-- Dread Gladiator's Silk Treads [A]
 				}),
 				filter(LEATHER, {
+					i(161627),	-- Dread Gladiator's Leather Belt [A]
+					i(161631),	-- Dread Gladiator's Leather Bindings [A]
+					i(161608),	-- Dread Gladiator's Leather Boots [A]
+					i(161609),	-- Dread Gladiator's Leather Gloves [A]
 					i(161615),	-- Dread Gladiator's Leather Helm [A]
+					i(161619),	-- Dread Gladiator's Leather Legguards [A]
 					i(161620),	-- Dread Gladiator's Leather Spaulders [A]
 					i(161604),	-- Dread Gladiator's Leather Tunic [A]
-					i(161627),	-- Dread Gladiator's Leather Belt [A]
-					i(161619),	-- Dread Gladiator's Leather Legguards [A]
-					i(161608),	-- Dread Gladiator's Leather Boots [A]
-					i(161631),	-- Dread Gladiator's Leather Bindings [A]
-					i(161609),	-- Dread Gladiator's Leather Gloves [A]
 				}),
 				filter(MAIL, {
-					i(161614),	-- Dread Gladiator's Chain Helm [A]
-					i(161623),	-- Dread Gladiator's Chain Spaulders [A]
+					i(161630),	-- Dread Gladiator's Chain Armbands [A]
 					i(161603),	-- Dread Gladiator's Chain Armor [A]
-					i(161626),	-- Dread Gladiator's Chain Waistguard [A]
+					i(161612),	-- Dread Gladiator's Chain Gauntlets [A]
+					i(161614),	-- Dread Gladiator's Chain Helm [A]
 					i(161618),	-- Dread Gladiator's Chain Leggings [A]
 					i(161607),	-- Dread Gladiator's Chain Sabatons [A]
-					i(161630),	-- Dread Gladiator's Chain Armbands [A]
-					i(161612),	-- Dread Gladiator's Chain Gauntlets [A]
+					i(161623),	-- Dread Gladiator's Chain Spaulders [A]
+					i(161626),	-- Dread Gladiator's Chain Waistguard [A]
 				}),
 				filter(PLATE, {
-					i(161600),	-- Dread Gladiator's Plate Helm [A]
-					i(161621),	-- Dread Gladiator's Plate Pauldrons [A]
-					i(161602),	-- Dread Gladiator's Plate Chestpiece [A]
-					i(161624),	-- Dread Gladiator's Plate Girdle [A]
-					i(161616),	-- Dread Gladiator's Plate Legguards [A]
-					i(161605),	-- Dread Gladiator's Plate Warboots [A]
 					i(161629),	-- Dread Gladiator's Plate Armguards [A]
+					i(161602),	-- Dread Gladiator's Plate Chestpiece [A]
 					i(161610),	-- Dread Gladiator's Plate Gauntlets [A]
+					i(161624),	-- Dread Gladiator's Plate Girdle [A]
+					i(161600),	-- Dread Gladiator's Plate Helm [A]
+					i(161616),	-- Dread Gladiator's Plate Legguards [A]
+					i(161621),	-- Dread Gladiator's Plate Pauldrons [A]
+					i(161605),	-- Dread Gladiator's Plate Warboots [A]
 				}),
 			})),
 			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["races"] = HORDE_ONLY }, {
@@ -622,20 +606,6 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.BFA, {
 					i(161637),	-- Dread Gladiator's Plate Warboots [H]
 				}),
 			})),
-		})),
-		filter(REAGENTS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH, REMOVED_8_1_0 } }, {
-			i(163827, {	-- Quartermaster's Coin
-				i(159570),	-- Battleborn Sigil Dread Combatant
-				i(164580),	-- Battleborn Sigil Dread Challenger
-				i(164581),	-- Battleborn Sigil Dread Rival
-				i(164582),	-- Battleborn Sigil Dread Duelist
-				i(164583),	-- Battleborn Sigil Dread Elite
-				i(155622),	-- Warlord's Trophy Dread Combatant
-				i(164584),	-- Warlord's Trophy Dread Challenger
-				i(164585),	-- Warlord's Trophy Dread Rival
-				i(164586),	-- Warlord's Trophy Dread Duelist
-				i(164587),	-- Warlord's Trophy Dread Elite
-			}),
 		})),
 	})),
 })));

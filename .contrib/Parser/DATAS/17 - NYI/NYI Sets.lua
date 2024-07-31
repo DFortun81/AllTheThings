@@ -4258,39 +4258,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 		-- 8.3.0
 		expansion(EXPANSION.BFA, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_3_0 } }, {
 			n(SEASON_CORRUPTED, {
-				filter(CLOTH, {
-					i(172718),	-- Corrupted Gladiator's Silk Armor (A)
-					i(172695),	-- Corrupted Gladiator's Silk Cap (A)
-					i(172744),	-- Corrupted Gladiator's Silk Shoulderguards (A)
-					i(172714),	-- Corrupted Gladiator's Silk Armor (H)
-					i(172690),	-- Corrupted Gladiator's Silk Cap (H)
-					i(172738),	-- Corrupted Gladiator's Silk Shoulderguards (H)
-				}),
-				filter(LEATHER, {
-					i(172721),	-- Corrupted Gladiator's Leather Harness (A)
-					i(172697),	-- Corrupted Gladiator's Leather Headpiece (A)
-					i(172742),	-- Corrupted Gladiator's Leather Shoulderpads (A)
-					i(172715),	-- Corrupted Gladiator's Leather Harness (H)
-					i(172691),	-- Corrupted Gladiator's Leather Headpiece (H)
-					i(172739),	-- Corrupted Gladiator's Leather Shoulderpads (H)
-				}),
-				filter(MAIL, {
-					i(172745),	-- Corrupted Gladiator's Chain Epaulets (A)
-					i(172696),	-- Corrupted Gladiator's Chain Skullcover (A)
-					i(172720),	-- Corrupted Gladiator's Chain Vest (A)
-					i(172716),	-- Corrupted Gladiator's Chain Vest (H)
-					i(172692),	-- Corrupted Gladiator's Chain Skullcover (H)
-					i(172740),	-- Corrupted Gladiator's Chain Epaulets (H)
-				}),
-				filter(PLATE, {
-					i(172719),	-- Corrupted Gladiator's Plate Chestplate (A)
-					i(172694),	-- Corrupted Gladiator's Plate Skullguard (A)
-					i(172743),	-- Corrupted Gladiator's Shoulderplates (A)
-					i(172741),	-- Corrupted Gladiator's Shoulderplates (H)
-					i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
-					i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
-				}),
-				n(BACK, {
+				filter(BACK_F, {
 					i(172655, {["sourceID"] = 107001 }),	-- Corrupted Gladiator's Shawl
 					i(172656, {["sourceID"] = 107003 }),	-- Corrupted Gladiator's Greatcloak
 					i(172657, {["sourceID"] = 107005 }),	-- Corrupted Gladiator's Drape
@@ -4301,6 +4269,38 @@ root(ROOTS.NeverImplemented, n(SETS, {
 					i(172662, {["sourceID"] = 107015 }),	-- Corrupted Gladiator's Cape
 					i(172851),	-- Corrupted Aspirant's Greatcloak
 					i(172855),	-- Corrupted Aspirant's Greatcloak
+				}),
+				filter(CLOTH, {
+					i(172718),	-- Corrupted Gladiator's Silk Armor [A]
+					i(172695),	-- Corrupted Gladiator's Silk Cap [A]
+					i(172744),	-- Corrupted Gladiator's Silk Shoulderguards [A]
+					i(172714),	-- Corrupted Gladiator's Silk Armor [H]
+					i(172690),	-- Corrupted Gladiator's Silk Cap [H]
+					i(172738),	-- Corrupted Gladiator's Silk Shoulderguards [H]
+				}),
+				filter(LEATHER, {
+					i(172721),	-- Corrupted Gladiator's Leather Harness [A]
+					i(172697),	-- Corrupted Gladiator's Leather Headpiece [A]
+					i(172742),	-- Corrupted Gladiator's Leather Shoulderpads [A]
+					i(172715),	-- Corrupted Gladiator's Leather Harness [H]
+					i(172691),	-- Corrupted Gladiator's Leather Headpiece [H]
+					i(172739),	-- Corrupted Gladiator's Leather Shoulderpads [H]
+				}),
+				filter(MAIL, {
+					i(172745),	-- Corrupted Gladiator's Chain Epaulets [A]
+					i(172696),	-- Corrupted Gladiator's Chain Skullcover [A]
+					i(172720),	-- Corrupted Gladiator's Chain Vest [A]
+					i(172716),	-- Corrupted Gladiator's Chain Vest [H]
+					i(172692),	-- Corrupted Gladiator's Chain Skullcover [H]
+					i(172740),	-- Corrupted Gladiator's Chain Epaulets [H]
+				}),
+				filter(PLATE, {
+					i(172719),	-- Corrupted Gladiator's Plate Chestplate [A]
+					i(172694),	-- Corrupted Gladiator's Plate Skullguard [A]
+					i(172743),	-- Corrupted Gladiator's Shoulderplates [A]
+					i(172741),	-- Corrupted Gladiator's Shoulderplates [H]
+					i(172693),	-- Corrupted Gladiator's Plate Skullguard [H]
+					i(172717),	-- Corrupted Gladiator's Plate Chestplate [H]
 				}),
 			}),
 		})),
@@ -4895,7 +4895,7 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				}),
 			}),
 			n(SEASON_CORRUPTED, {
-				n(TRINKET, {
+				filter(TRINKET_F, {
 					i(184055),	-- Corrupted Gladiator's Medallion
 					i(184056),	-- Corrupted Gladiator's Relentless Brooch
 					i(184057),	-- Corrupted Gladiator's Sigil of Adaptation

@@ -152,18 +152,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 								i(137642),	-- Mark of Honor
 							},
 						}),
-						i(223639, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {	-- Unburied Aspirant's Cloak Rack
-							["cost"] = { { "i", MOH, 1 } },	-- Placeholder cost?
-							["description"] = "|Cffff0000This ensemble may or may not work.  If it does not work see if you own any of the cloaks in the set.  If the token does not work for you report to ATT discord on how many cloaks you own from this ensemble.|r",
-							["g"] = {
-								i(185128),	-- Unchained Aspirant's Cloak
-								i(185205),	-- Unchained Aspirant's Drape
-								i(185240),	-- Unchained Aspirant's Cape
-								i(192319),	-- Eternal Aspirant's Cloak
-								i(192355),	-- Eternal Aspirant's Drape
-								i(192390),	-- Eternal Aspirant's Cape
-						},
-						})),
 					},
 				}),
 				n(168011, {	-- Zo'sorg <Master of Conflict>
@@ -227,15 +215,3 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.SL, {
-		-- Unburied Aspirant's Cloak Rack (Item 223639)
-		q(82343, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
-		q(82409, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
-		q(82410, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
-		q(82411, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
-		q(82412, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
-		q(82413, {["timeline"] = ADDED_10_2_7}),	-- Ensemble: Unburied Aspirant's Cloak Rack
-	}),
-});
