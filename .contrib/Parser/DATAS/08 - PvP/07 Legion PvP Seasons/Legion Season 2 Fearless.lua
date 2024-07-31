@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_FEARLESS, bubbleDownSelf({
-		["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0, ADDED_8_0_1_LAUNCH },
+		["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0, ADDED_7_2_0 },
 	},{
 		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 } }, {
 			ach(11004, {	-- Fearless Combatant [A]
@@ -206,9 +206,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(142885),	-- Fearless Combatant's Signet [A]
 				}),
 				filter(NECK_F, {
-					i(142884),	-- Fearless Combatant Choker [A]
-					i(142876),	-- Fearless Combatant Necklace [A]
-					i(142880),	-- Fearless Combatant Pendant [A]
+					i(142884),	-- Fearless Combatant's Choker [A]
+					i(142876),	-- Fearless Combatant's Necklace [A]
+					i(142880),	-- Fearless Combatant's Pendant [A]
 				}),
 				filter(TRINKET_F, {
 					i(142887),	-- Fearless Combatant's Accolade of Conquest [A]
@@ -367,9 +367,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(142998),	-- Fearless Combatant's Signet [H]
 				}),
 				filter(NECK_F, {
-					i(142997),	-- Fearless Combatant Choker [H]
-					i(142989),	-- Fearless Combatant Necklace [H]
-					i(142993),	-- Fearless Combatant Pendant [H]
+					i(142997),	-- Fearless Combatant's Choker [H]
+					i(142989),	-- Fearless Combatant's Necklace [H]
+					i(142993),	-- Fearless Combatant's Pendant [H]
 				}),
 				filter(TRINKET_F, {
 					i(143000),	-- Fearless Combatant's Accolade of Conquest [H]
@@ -389,7 +389,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(142648),	-- Fearless Gladiator's Dreadcloak [A]
@@ -550,7 +550,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(142671),	-- Fearless Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 }, ["races"] = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(142761),	-- Fearless Gladiator's Dreadcloak [H]
@@ -713,7 +713,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(143100),	-- Fearless Gladiator's Dreadcloak [A]
@@ -793,15 +793,15 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(143059),	-- Fearless Gladiator's Scaled Wristplates [A]
 					}),
 					cl(PRIEST, {
+						i(143298),	-- Fearless Gladiator's Drape of Piety [A]
+						i(143067),	-- Fearless Gladiator's Satin Bracers [A]
+						i(143066),	-- Fearless Gladiator's Satin Cord [A]
+						i(143061),	-- Fearless Gladiator's Satin Gloves [A]
 						i(143062),	-- Fearless Gladiator's Satin Hood [A]
 						i(143063),	-- Fearless Gladiator's Satin Leggings [A]
 						i(143065),	-- Fearless Gladiator's Satin Mantle [A]
-						i(143061),	-- Fearless Gladiator's Satin Gloves [A]
-						i(143060),	-- Fearless Gladiator's Satin Treads [A]
-						i(143066),	-- Fearless Gladiator's Satin Cord [A]
-						i(143067),	-- Fearless Gladiator's Satin Bracers [A]
-						i(143298),	-- Fearless Gladiator's Drape of Piety [A]
 						i(143064),	-- Fearless Gladiator's Satin Robe [A]
+						i(143060),	-- Fearless Gladiator's Satin Treads [A]
 					}),
 					cl(ROGUE, {
 						i(143074),	-- Fearless Gladiator's Leather Belt [A]
@@ -874,7 +874,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(143123),	-- Fearless Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0, REMOVED_7_2_0 }, ["races"] = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(143213),	-- Fearless Gladiator's Dreadcloak [H]
@@ -954,15 +954,15 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 						i(143172),	-- Fearless Gladiator's Scaled Wristplates [H]
 					}),
 					cl(PRIEST, {
-						i(143178),	-- Fearless Gladiator's Satin Mantle [H]
-						i(143177),	-- Fearless Gladiator's Satin Robe [H]
+						i(143301),	-- Fearless Gladiator's Drape of Piety [H]
+						i(143180),	-- Fearless Gladiator's Satin Bracers [H]
 						i(143179),	-- Fearless Gladiator's Satin Cord [H]
 						i(143174),	-- Fearless Gladiator's Satin Gloves [H]
-						i(143301),	-- Fearless Gladiator's Drape of Piety [H]
 						i(143175),	-- Fearless Gladiator's Satin Hood [H]
-						i(143173),	-- Fearless Gladiator's Satin Treads [H]
-						i(143180),	-- Fearless Gladiator's Satin Bracers [H]
 						i(143176),	-- Fearless Gladiator's Satin Leggings [H]
+						i(143178),	-- Fearless Gladiator's Satin Mantle [H]
+						i(143177),	-- Fearless Gladiator's Satin Robe [H]
+						i(143173),	-- Fearless Gladiator's Satin Treads [H]
 					}),
 					cl(ROGUE, {
 						i(143187),	-- Fearless Gladiator's Leather Belt [H]

@@ -3,9 +3,9 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 	n(SEASON_VINDICTIVE, bubbleDownSelf({
-		["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0, ADDED_8_0_1_LAUNCH },
+		["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0, ADDED_7_2_0 },
 	},{
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 } }, {
 			ach(10998, {	-- Vindictive Combatant [A]
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -108,7 +108,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(135905),	-- Vindictive Combatant's Dreadcloak [A]
@@ -249,9 +249,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(135916),	-- Vindictive Combatant's Signet [A]
 				}),
 				filter(NECK_F, {
-					i(135915),	-- Vindictive Combatant Choker [A]
-					i(135907),	-- Vindictive Combatant Necklace [A]
-					i(135911),	-- Vindictive Combatant Pendant [A]
+					i(135915),	-- Vindictive Combatant's Choker [A]
+					i(135907),	-- Vindictive Combatant's Necklace [A]
+					i(135911),	-- Vindictive Combatant's Pendant [A]
 				}),
 				filter(TRINKET_F, {
 					i(135918),	-- Vindictive Combatant's Accolade of Conquest [A]
@@ -312,7 +312,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, ["races"] = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(136018),	-- Vindictive Combatant's Dreadcloak [H]
@@ -453,9 +453,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(136029),	-- Vindictive Combatant's Signet [H]
 				}),
 				filter(NECK_F, {
-					i(136028),	-- Vindictive Combatant Choker [H]
-					i(136020),	-- Vindictive Combatant Necklace [H]
-					i(136024),	-- Vindictive Combatant Pendant [H]
+					i(136028),	-- Vindictive Combatant's Choker [H]
+					i(136020),	-- Vindictive Combatant's Necklace [H]
+					i(136024),	-- Vindictive Combatant's Pendant [H]
 				}),
 				filter(TRINKET_F, {
 					i(136031),	-- Vindictive Combatant's Accolade of Conquest [H]
@@ -518,7 +518,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(135679),	-- Vindictive Gladiator's Dreadcloak [A]
@@ -722,7 +722,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3, REMOVED_7_1_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH, REMOVED_7_1_0 }, ["races"] = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(135792),	-- Vindictive Gladiator's Dreadcloak [H]
