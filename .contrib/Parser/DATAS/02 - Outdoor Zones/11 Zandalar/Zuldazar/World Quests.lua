@@ -100,6 +100,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53329, {	-- Ductile Platinum
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163630),	-- Ductile Platinum (QI!)
+				},
 			}),
 			q(51373, {	-- Ears Everywhere
 				["races"] = ALLIANCE_ONLY,

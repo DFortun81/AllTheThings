@@ -736,7 +736,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 66.7, 42.7, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(162589),	-- Alexxi's Foolproof Remedy
+					i(162589),	-- Alexxi's Foolproof Remedy (QI!)
 				},
 			}),
 			q(55796, {	-- Heresy at the Crossroad
