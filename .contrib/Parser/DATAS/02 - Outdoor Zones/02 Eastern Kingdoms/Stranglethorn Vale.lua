@@ -118,6 +118,11 @@ local massacrecoin_g = function(cost, item)	-- Assign a Gold Massacre Coin cost 
 	applycost(item, { "i", 221366, cost });
 	return item;
 end
+
+local real = function(cost, item)	-- Assign a Tarnished Undermine Real cost to an item.
+	applycost(item, { "i", 226400, cost });
+	return item;
+end
 -- #endif
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(STRANGLETHORN_VALE, {
@@ -1578,6 +1583,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(83934, {	-- Show Me The Money!
+					["qg"] = 227853,	-- Pix Xizzix
+					["coord"] = { 28.4, 75.8, STRANGLETHORN_VALE },
+					["timeline"] = { "added 1.15.3" },
+					["lvl"] = 55,
+					["groups"] = {
+						objective(1, {	-- 0/1 Tarnished Undermine Real
+							["provider"] = { "i", 226404 },	-- Tarnished Undermine Real
+						}),
+					},
+				})),
+				-- #endif
 				q(3643, {	-- Show Your Work
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
@@ -3028,6 +3046,163 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, n(227853, bubbleDownSelf({ ["timeline"] = { "added 1.15.3" } }, {	-- Pix Xizzix <Undermine Trader>
+					["sourceQuest"] = 83934,	-- Show Me The Money!
+					["coord"] = { 28.4, 75.8, STRANGLETHORN_VALE },
+					["groups"] = {
+						cl(DRUID, {
+							real(50, i(226708)),	-- Wildheart Cowl
+							real(25, i(226710)),	-- Wildheart Spaulders
+							real(50, i(226715)),	-- Wildheart Vest
+							real(15, i(226714)),	-- Wildheart Bracers
+							real(25, i(226711)),	-- Wildheart Gloves
+							real(25, i(226712)),	-- Wildheart Belt
+							real(50, i(226709)),	-- Wildheart Kilt
+							real(25, i(226713)),	-- Wildheart Boots
+						}),
+						cl(HUNTER, {
+							real(50, i(226720)),	-- Beaststalker's Cap
+							real(25, i(226716)),	-- Beaststalker's Mantle
+							real(50, i(226723)),	-- Beaststalker's Tunic
+							real(15, i(226717)),	-- Beaststalker's Bindings
+							real(25, i(226721)),	-- Beaststalker's Gloves
+							real(25, i(226718)),	-- Beaststalker's Belt
+							real(50, i(226719)),	-- Beaststalker's Pants
+							real(25, i(226722)),	-- Beaststalker's Boots
+						}),
+						cl(MAGE, {
+							real(50, i(226728)),	-- Magister's Crown
+							real(25, i(226726)),	-- Magister's Mantle
+							real(50, i(226729)),	-- Magister's Robes
+							real(15, i(226725)),	-- Magister's Bindings
+							real(25, i(226731)),	-- Magister's Gloves
+							real(25, i(226724)),	-- Magister's Belt
+							real(50, i(226727)),	-- Magister's Leggings
+							real(25, i(226730)),	-- Magister's Boots
+						}),
+						cl(PALADIN, {
+							real(50, i(226733)),	-- Lightforge Helm
+							real(25, i(226735)),	-- Lightforge Spaulders
+							real(50, i(226734)),	-- Lightforge Breastplate
+							real(15, i(226739)),	-- Lightforge Bracers
+							real(25, i(226737)),	-- Lightforge Gauntlets
+							real(25, i(226732)),	-- Lightforge Belt
+							real(50, i(226736)),	-- Lightforge Legplates
+							real(25, i(226738)),	-- Lightforge Boots
+						}),
+						cl(PRIEST, {
+							real(50, i(226746)),	-- Devout Crown
+							real(25, i(226741)),	-- Devout Mantle
+							real(50, i(226745)),	-- Devout Robe
+							real(15, i(226742)),	-- Devout Bracers
+							real(25, i(226740)),	-- Devout Gloves
+							real(25, i(226744)),	-- Devout Belt
+							real(50, i(226747)),	-- Devout Skirt
+							real(25, i(226743)),	-- Devout Sandals
+						}),
+						cl(ROGUE, {
+							real(50, i(226707)),	-- Shadowcraft Cap
+							real(25, i(226706)),	-- Shadowcraft Spaulders
+							real(50, i(226700)),	-- Shadowcraft Tunic
+							real(15, i(226704)),	-- Shadowcraft Bracers
+							real(25, i(226702)),	-- Shadowcraft Gloves
+							real(25, i(226701)),	-- Shadowcraft Belt
+							real(50, i(226705)),	-- Shadowcraft Pants
+							real(25, i(226703)),	-- Shadowcraft Boots
+						}),
+						cl(SHAMAN, {
+							real(50, i(226755)),	-- Coif of Elements
+							real(25, i(226753)),	-- Pauldrons of Elements
+							real(50, i(226749)),	-- Vest of Elements
+							real(15, i(226751)),	-- Bindings of Elements
+							real(25, i(226748)),	-- Gauntlets of Elements
+							real(25, i(226754)),	-- Cord of Elements
+							real(50, i(226750)),	-- Kilt of Elements
+							real(25, i(226752)),	-- Boots of Elements
+						}),
+						cl(WARLOCK, {
+							real(50, i(226762)),	-- Dreadmist Mask
+							real(25, i(226756)),	-- Dreadmist Mantle
+							real(50, i(226757)),	-- Dreadmist Robe
+							real(15, i(226759)),	-- Dreadmist Bracers
+							real(25, i(226758)),	-- Dreadmist Wraps
+							real(25, i(226761)),	-- Dreadmist Belt
+							real(50, i(226760)),	-- Dreadmist Leggings
+							real(25, i(226763)),	-- Dreadmist Sandals
+						}),
+						cl(WARRIOR, {
+							real(50, i(226769)),	-- Helm of Valor
+							real(25, i(226768)),	-- Spaulders of Valor
+							real(50, i(226770)),	-- Breastplate of Valor
+							real(15, i(226766)),	-- Bracers of Valor
+							real(25, i(226771)),	-- Gauntlets of Valor
+							real(25, i(226765)),	-- Belt of Valor
+							real(50, i(226767)),	-- Legplates of Valor
+							real(25, i(226764)),	-- Boots of Valor
+						}),
+						
+						-- Toys
+						real(25, i(228189)),	-- Gift of Gob (TOY!)
+						
+						-- Weapons
+						real(50, i(228185)),	-- Broken Bottle of Goblino Noir
+						real(50, i(228168)),	-- Goblin Gear Grinder
+						real(50, i(228170)),	-- Makeshift South Sea Oar
+						real(50, i(228169)),	-- The Attitude Adjustor
+						real(50, i(220599)),	-- Drakestone of the Blood Prophet
+						real(50, i(220597)),	-- Drakestone of the Dream Harbinger
+						real(50, i(220598)),	-- Drakestone of the Nightmare Harbinger
+						real(50, i(228187)),	-- Stick of the South Sea
+						
+						-- Armor
+						real(25, i(228184)),	-- Goblin Clothesline
+						
+						-- Rings
+						real(25, i(228186)),	-- Abandoned Wedding Band
+						real(50, i(227284)),	-- Band of the Beast
+						real(50, i(227280)),	-- Craft of the Shadows
+						real(50, i(227279)),	-- Loop of the Magister
+						real(50, i(227282)),	-- Ring of the Dreaded Mist
+						
+						-- Trinkets
+						real(50, i(227990)),	-- Hand of Injustice
+						real(50, i(228432)),	-- Whistle of the Beast
+						
+						-- Librams
+						real(15, i(228182)),	-- Idol of Exsanguination (Bear)
+						real(15, i(228181)),	-- Idol of Exsanguination (Cat)
+						real(15, i(228183)),	-- Idol of the Grove
+						real(15, i(228180)),	-- Idol of the Swarm
+						real(15, i(228175)),	-- Libram of Holy Alacrity
+						real(15, i(228173)),	-- Libram of the Consecrated
+						real(15, i(228174)),	-- Libram of the Devoted
+						real(15, i(228178)),	-- Totem of Earthen Vitality
+						real(15, i(228177)),	-- Totem of Raging Fire
+						real(15, i(228179)),	-- Totem of the Plains
+						real(15, i(228176)),	-- Totem of Thunder
+						
+						-- Bags
+						real(25, i(228171)),	-- Kezan Cash Carrier
+						
+						-- Recipes
+						real(50, i(228121)),	-- Pattern: Leather-Reinforced Runecloth Bag
+						real(50, i(13522)),	-- Recipe: Flask of Chromatic Resistance
+						real(50, i(13520)),	-- Recipe: Flask of Distilled Wisdom
+						real(50, i(13518)),	-- Recipe: Flask of Petrification
+						real(50, i(13521)),	-- Recipe: Flask of Supreme Power
+						real(50, i(13519)),	-- Recipe: Flask of the Titans
+						
+						-- Reagents
+						real(5, i(226405, {	-- Damaged Undermine Supply Crate
+							["description"] = "Contains random max level crafting materials.",
+						})),
+						real(10, i(17012)),	-- Core Leather
+						real(15, i(17010)),	-- Fiery Core
+						real(15, i(17011)),	-- Lava Core
+					},
+				}))),
+				-- #endif
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["coords"] = {
 						-- #if AFTER CATA

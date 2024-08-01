@@ -40,6 +40,7 @@ i(18660);	-- World Enlarger
 -- #if SEASON_OF_DISCOVERY
 i(221315);	-- Rainbow Generator
 i(215449);	-- World Shrinker
+i(228189);	-- Gift of Gob
 -- #endif
 
 -----------------
