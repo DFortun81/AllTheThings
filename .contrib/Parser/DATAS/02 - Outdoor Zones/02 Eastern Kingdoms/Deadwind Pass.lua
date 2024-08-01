@@ -213,15 +213,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 			}),
 			-- #endif
-			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-				--o(xxxxx, {	-- Carved Eye
+			-- #if AFTER 10.2.5
+			n(TREASURES, {
+				i(212989, {	-- Grimoire of the Mana-Gorged Observer (CI!)
+					--["provider"] = { "o", xxxxx },	-- Carved Eye
 					["coord"] = { 43.9, 72.8, DEADWIND_PASS },
-					["g"] = {
-						i(212989),	-- Grimoire of the Mana-Gorged Observer (CI!)
-					},
-				--}),
-			})),
+					["timeline"] = { ADDED_10_2_5 },
+				}),
+			}),
+			-- #endif
 			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226406, {	-- Rune of Sword Specialization
+					["provider"] = { "o", 457088 },	-- Advanced Swordplay
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 43.1, 74.6, DEADWIND_PASS },
+					["classes"] = { WARRIOR, PALADIN, HUNTER, MAGE, WARLOCK, ROGUE },
+					["groups"] = {
+						recipe(453635, {	-- Engrave Ring - Sword Specialization
+							["classes"] = { WARRIOR, PALADIN, HUNTER, MAGE, WARLOCK, ROGUE },
+						}),
+					},
+				})),
+			}),
 			n(VENDORS, {
 				applyclassicphase(SOD_PHASE_TWO, n(218920, {	-- Dalaran Agent <Violet Eye>
 					["coord"] = { 52, 34.2, DEADWIND_PASS },

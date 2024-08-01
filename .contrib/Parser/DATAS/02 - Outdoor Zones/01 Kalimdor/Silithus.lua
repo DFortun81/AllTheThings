@@ -2750,6 +2750,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226409, {	-- Rune of Dagger Specialization
+					["provider"] = { "o", 457100 },	-- Renzik's Thoughts on "Fair" Fighting
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 20.0, 85.1, SILITHUS },
+					["classes"] = { WARRIOR, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+					["groups"] = {
+						recipe(453690, {	-- Engrave Ring - Dagger Specialization
+							["classes"] = { WARRIOR, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(226411, {	-- Rune of Fist Weapon Specialization
+					["provider"] = { "o", 457096 },	-- Be First: A Brawler's Guide to Boxing
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 38.2, 45.5, SILITHUS },
+					["classes"] = { WARRIOR, HUNTER, SHAMAN, ROGUE, DRUID },
+					["groups"] = {
+						recipe(453691, {	-- Engrave Ring - Fist Weapon Specialization
+							["classes"] = { WARRIOR, HUNTER, SHAMAN, ROGUE, DRUID },
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(15293, {	-- Aendel Windspear
 					-- #if AFTER CATA

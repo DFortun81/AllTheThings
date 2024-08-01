@@ -2363,6 +2363,32 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226419, {	-- Rune of Feral Combat Specialization
+					["provider"] = { "o", 457098 },	-- Finding Your Inner Feline: A Guide to Modern Druidism
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 49.6, 8.8, WINTERSPRING },
+					["classes"] = { DRUID },
+					["groups"] = {
+						recipe(453703, {	-- Engrave Ring - Feral Combat Specialization
+							["classes"] = { DRUID },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(226415, {	-- Rune of Frost Specialization
+					["provider"] = { "o", 457095 },	-- Elements for Dummies Volume I: Frost
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 58.9, 59.9, WINTERSPRING },
+					["classes"] = { HUNTER, SHAMAN, MAGE },
+					["groups"] = {
+						recipe(453697, {	-- Engrave Ring - Frost Specialization
+							["classes"] = { HUNTER, SHAMAN, MAGE },
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(50129, {	-- Daleohm <Blacksmithing Supplies>
 					["coord"] = { 58.0, 63.8, WINTERSPRING },

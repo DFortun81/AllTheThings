@@ -66,6 +66,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226694, {	-- Rune of Defense Specialization
+					["provider"] = { "o", 457099 },	-- Zirene's Guide to Getting Punched
+					["timeline"] = { "added 1.15.3" },
+					["description"] = "1. Head to the South end of Searing Gorge and enter Blackrock Mountain.\n2. As you enter the main chamber, head left down the circular pathway.\n3. When you come to the meeting stone for Lower Blackrock Spire, turn left and head up the hallway.\n4. Watch out for level 54-ish mobs and take the first right in to a small room.\n5. You will see two copies of the book laying on the floor.\n*One is next to a pair of mobs. Another is in a small nook where you may safely loot the book without pulling aggro.",
+					["classes"] = { WARRIOR, PALADIN, ROGUE, SHAMAN, WARLOCK, DRUID },
+					["groups"] = {
+						recipe(459313, {	-- Engrave Ring - Defense Specialization
+							["classes"] = { WARRIOR, PALADIN, ROGUE, SHAMAN, WARLOCK, DRUID },
+						}),
+					},
+				})),
+			}),
+			-- #endif
 		},
 	}),
 }));

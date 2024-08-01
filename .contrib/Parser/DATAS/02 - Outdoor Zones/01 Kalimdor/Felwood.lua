@@ -2895,6 +2895,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226416, {	-- Rune of Nature Specialization
+					["provider"] = { "o", 457092 },	-- The Fury of Stormrage
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 62.8, 7.5, FELWOOD },
+					["classes"] = { HUNTER, ROGUE, SHAMAN, DRUID },
+					["groups"] = {
+						recipe(453698, {	-- Engrave Ring - Nature Specialization
+							["classes"] = { HUNTER, ROGUE, SHAMAN, DRUID },
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(2806, {	-- Bale <General Goods>
 					["coord"] = { 34.8, 53.2, FELWOOD },

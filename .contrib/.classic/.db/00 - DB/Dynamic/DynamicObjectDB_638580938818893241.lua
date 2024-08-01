@@ -1,0 +1,63 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[457094] = {
+		readable = "The True Nature of the Light",
+		model = 198028,
+		text = {
+			en = "The True Nature of the Light",
+			es = "[The True Nature of the Light]",
+			de = "Die wahre Natur des Lichts",
+			fr = "La véritable nature de la Lumière",
+			it = "[The True Nature of the Light]",
+			pt = "[The True Nature of the Light]",
+			ru = "[The True Nature of the Light]",
+			ko = "빛의 진정한 본질",
+			cn = "[The True Nature of the Light]",
+		},
+	},
+	[457095] = {
+		readable = "Elements for Dummies Volume I: Frost",
+		model = 198028,
+		text = {
+			en = "Elements for Dummies Volume I: Frost",
+			es = "Elementos para torpes, volumen I: Escarcha",
+			de = "Elemente für Dummies Band I: Frost",
+			fr = "Les éléments pour les Nuls, vol. 1 : Givre",
+			it = "[Elements for Dummies Volume I: Frost]",
+			pt = "Elementos Para Leigos Volume I: Gelo",
+			ru = "Стихии для чайников, том I: лед",
+			ko = "왕초보도 이해하는 원소 마법 제1권: 냉기",
+			cn = "《元素奥义傻瓜入门第I卷：冰霜》",
+		},
+	},
+	[457096] = {
+		readable = "Be First: A Brawler's Guide to Boxing",
+		model = 198028,
+		text = {
+			en = "Be First: A Brawler's Guide to Boxing",
+			es = "[Be First: A Brawler's Guide to Boxing]",
+			de = "Erster sein: Das Boxhandbuch eines Muskelprotzes",
+			fr = "Arriver premier : la boxe pour les bastonneurs",
+			it = "[Be First: A Brawler's Guide to Boxing]",
+			pt = "Seja o Primeiro: Guia de Boxe do Brigão",
+			ru = "Стань первым: руководство по кулачному бою",
+			ko = "누구보다 먼저: 싸움꾼의 권투 안내서",
+			cn = "《先发制人：拳手搏击指南》",
+		},
+	},
+	[457097] = {
+		readable = "Elements for Dummies Volume II: Fire",
+		model = 198028,
+		text = {
+			en = "Elements for Dummies Volume II: Fire",
+			es = "Elementos para torpes, volumen II: Fuego",
+			de = "Elemente für Dummies Band I: Feuer",
+			fr = "Les éléments pour les Nuls, vol. 2 : Feu",
+			it = "[Elements for Dummies Volume II: Fire]",
+			pt = "Elementos Para Leigos Volume II: Fogo",
+			ru = "Стихии для чайников, том II: огонь",
+			ko = "왕초보도 이해하는 원소 마법 제2권: 화염",
+			cn = "《元素奥义傻瓜入门第II卷：火焰》",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

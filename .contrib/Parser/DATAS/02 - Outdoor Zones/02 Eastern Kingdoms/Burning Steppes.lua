@@ -2308,6 +2308,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226407, {	-- Rune of Axe Specialization
+					["provider"] = { "o", 457101 },	-- The Rites of Mak'Gora
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 40.0, 34.5, BURNING_STEPPES },
+					["classes"] = { WARRIOR, PALADIN, HUNTER, SHAMAN },
+					["groups"] = {
+						recipe(453688, {	-- Engrave Ring - Axe Specialization
+							["classes"] = { WARRIOR, PALADIN, HUNTER, SHAMAN },
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(14437, {	-- Gorzeeki Wildeyes
 					-- #if AFTER 4.0.3

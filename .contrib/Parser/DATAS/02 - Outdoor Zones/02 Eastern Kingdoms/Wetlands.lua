@@ -2069,6 +2069,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["provider"] = { "o", 409717 },	-- Scrolls
 					["coord"] = { 33.6, 47.9, WETLANDS },
 				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(226408, {	-- Rune of Mace Specialization
+					["provider"] = { "o", 457093 },	-- Blunt Justice: A Dwarf's Tale
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 74.0, 69.2, WETLANDS },
+					["classes"] = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID },
+					["groups"] = {
+						recipe(453689, {	-- Engrave Ring - Mace Specialization
+							["classes"] = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID },
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210500, {	-- Rune of the Stars
 					["providers"] = {
 						{ "n", 212209 },	-- Vodyanoi

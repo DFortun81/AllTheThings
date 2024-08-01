@@ -1825,14 +1825,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Reward for turning in an Imperfect Draenethyst Fragment to Kum'isha the Collector.\n\nContains a random green world drop item.",
 				}),
 			}),
-			n(TREASURES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-				--o(xxxxx, {	-- Carved Eye
+			-- #if AFTER 10.2.5
+			n(TREASURES, {
+				i(212983, {	-- Grimoire of the Blasted Observer (CI!)
+					--["provider"] = { "o", xxxxx },	-- Carved Eye
 					["coord"] = { 55.6, 53.1, BLASTED_LANDS },
-					["g"] = {
-						i(212983),	-- Grimoire of the Blasted Observer (CI!)
+					["timeline"] = { ADDED_10_2_5 },
+				}),
+			}),
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226417, {	-- Rune of Shadow Specialization
+					["provider"] = { "o", 457089 },	-- The Shadow Connection
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 33.6, 48.7, BLASTED_LANDS },
+					["classes"] = { PRIEST, WARLOCK },
+					["groups"] = {
+						recipe(453700, {	-- Engrave Ring - Shadow Specialization
+							["classes"] = { PRIEST, WARLOCK },
+						}),
 					},
-				--}),
-			})),
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				-- #if AFTER TBC
 				n(3546, {	-- Bernie Heisten <Food & Drink>

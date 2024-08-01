@@ -2946,6 +2946,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226413, {	-- Rune of Arcane Specialization
+					["provider"] = { "o", 457102 },	-- Elements for Dummies Volume III: Arcane
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 47.3, 13.7, WESTERN_PLAGUELANDS },
+					["classes"] = { HUNTER, MAGE, DRUID },
+					["groups"] = {
+						recipe(453695, {	-- Engrave Ring - Arcane Specialization
+							["classes"] = { HUNTER, MAGE, DRUID },
+						}),
+					},
+				})),
 				applyclassicphase(SOD_PHASE_ONE, i(210322, {	-- Rune of Venom
 					["provider"] = { "o", 410847 },	-- Rusty Safe
 					["coord"] = { 59.4, 84.6, WESTERN_PLAGUELANDS },

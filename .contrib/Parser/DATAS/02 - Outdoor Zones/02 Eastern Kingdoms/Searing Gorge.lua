@@ -1683,6 +1683,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			-- #endif
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226414, {	-- Rune of Fire Specialization
+					["provider"] = { "o", 457097 },	-- Elements for Dummies Volume II: Fire
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 40.5, 35.5, SEARING_GORGE },
+					["classes"] = { HUNTER, SHAMAN, MAGE, WARLOCK },
+					["groups"] = {
+						recipe(453696, {	-- Engrave Ring - Fire Specialization
+							["classes"] = { HUNTER, SHAMAN, MAGE, WARLOCK },
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(ZONE_DROPS, {
 				i(62916, {	-- Dark Iron Bullet
 					["timeline"] = { ADDED_4_0_3 },

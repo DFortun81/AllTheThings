@@ -2840,6 +2840,9 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_FOUR, recipe(439765)),	-- Engrave Cloak - Improved Swipe
 			applyclassicphase(SOD_PHASE_FOUR, recipe(439767)),	-- Engrave Cloak - Tree of Life
 			applyclassicphase(SOD_PHASE_FOUR, recipe(439770)),	-- Engrave Cloak - Starfall
+			applyclassicphase(SOD_PHASE_FOUR, recipe(453703, {	-- Engrave Ring - Feral Combat Specialization
+				["timeline"] = { "added 1.15.3" },
+			})),
 		}),
 		classHeader(HUNTER, {
 			-- Phase 1
@@ -3136,9 +3139,61 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 		}),
 		
 		-- Non-Class Specific Runes
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453695, {	-- Engrave Ring - Arcane Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { HUNTER, MAGE, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453688, {	-- Engrave Ring - Axe Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, PALADIN, HUNTER, SHAMAN },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453690, {	-- Engrave Ring - Dagger Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, HUNTER, ROGUE, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(459313, {	-- Engrave Ring - Defense Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, PALADIN, ROGUE, SHAMAN, WARLOCK, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453696, {	-- Engrave Ring - Fire Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { HUNTER, SHAMAN, MAGE, WARLOCK },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453691, {	-- Engrave Ring - Fist Weapon Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, HUNTER, SHAMAN, ROGUE, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453697, {	-- Engrave Ring - Frost Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { HUNTER, SHAMAN, MAGE },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453702, {	-- Engrave Ring - Holy Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { PALADIN, PRIEST },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453689, {	-- Engrave Ring - Mace Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, PALADIN, PRIEST, SHAMAN, ROGUE, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453698, {	-- Engrave Ring - Nature Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { HUNTER, ROGUE, SHAMAN, DRUID },
+		})),
 		applyclassicphase(SOD_PHASE_FOUR, recipe(453694, {	-- Engrave Ring - Pole Weapon Specialization
 			["timeline"] = { "added 1.15.3" },
 			["classes"] = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453692, {	-- Engrave Ring - Ranged Weapon Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, HUNTER, ROGUE },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453700, {	-- Engrave Ring - Shadow Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { PRIEST, WARLOCK },
+		})),
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453635, {	-- Engrave Ring - Sword Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, PALADIN, HUNTER, MAGE, WARLOCK, ROGUE },
 		})),
 	}),
 	n(createHeader({	-- Soul Brokers

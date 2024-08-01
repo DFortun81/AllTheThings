@@ -4428,6 +4428,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(226418, {	-- Rune of Holy Specialization
+					["provider"] = { "o", 457094 },	-- The True Nature of the Light
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 83.6, 78.1, EASTERN_PLAGUELANDS },
+					["classes"] = { PALADIN, PRIEST },
+					["groups"] = {
+						recipe(453702, {	-- Engrave Ring - Holy Specialization
+							["classes"] = { PALADIN, PRIEST },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(226410, {	-- Rune of Ranged Weapon Specialization
+					["provider"] = { "o", 457090 },	-- Famous (and Infamous) Rangers of Azeroth
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 26.2, 74.8, EASTERN_PLAGUELANDS },
+					["classes"] = { WARRIOR, HUNTER, ROGUE },
+					["groups"] = {
+						recipe(453692, {	-- Engrave Ring - Ranged Weapon Specialization
+							["classes"] = { WARRIOR, HUNTER, ROGUE },
+						}),
+					},
+				})),
+				-- #endif
 				o(403536, {	-- The Road Ahead
 					["description"] = "Located by Corrin's Crossing in the Eastern Plaguelands, by the building that used to be the inn. The painting is on the first floor, by the wall beside the stairs leading to the second floor.",
 					["sourceQuests"] = 76250,	-- Spectral Essence
