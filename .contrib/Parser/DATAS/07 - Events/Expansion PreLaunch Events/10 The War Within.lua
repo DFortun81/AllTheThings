@@ -13,7 +13,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY },{
 					n(ARMOR, {
 						filter(PLATE, {
-							i(218032),	-- Recruit's Sturdy Cape
 							i(218025),	-- Recruit's Sturdy Chestplate
 							i(218027),	-- Recruit's Sturdy Crushers
 							i(218030),	-- Recruit's Sturdy Girdle
@@ -27,7 +26,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218257),	-- Recruit's Sturdy Bracers
 							i(218256),	-- Recruit's Sturdy Cinch
 							i(218253),	-- Recruit's Sturdy Cowl
-							i(218258),	-- Recruit's Sturdy Drape
 							i(218252),	-- Recruit's Sturdy Gauntlets
 							i(218250),	-- Recruit's Sturdy Chainmail
 							i(218254),	-- Recruit's Sturdy Kilt
@@ -36,7 +34,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 						}),
 						filter(LEATHER, {
 							i(218277),	-- Recruit's Sturdy Cincture
-							i(218279),	-- Recruit's Sturdy Cloak
 							i(218276),	-- Recruit's Sturdy Epaulets
 							i(218273),	-- Recruit's Sturdy Gloves
 							i(218275),	-- Recruit's Sturdy Leggings
@@ -54,6 +51,11 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218290),	-- Recruit's Sturdy Slippers
 							i(218295),	-- Recruit's Sturdy Sash
 							i(218289),	-- Recruit's Sturdy Robes
+						}),
+						filter(BACK_F, {
+							i(218032),	-- Recruit's Sturdy Cape
+							i(218279),	-- Recruit's Sturdy Cloak
+							i(218258),	-- Recruit's Sturdy Drape
 							i(218297),	-- Recruit's Sturdy Wrap
 						}),
 						filter(TRINKET_F, {
@@ -79,7 +81,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["races"] = HORDE_ONLY },{
 					n(ARMOR, {
 						filter(PLATE, {
-							i(218041),	-- Recruit's Sturdy Cape
 							i(218034),	-- Recruit's Sturdy Chestplate
 							i(218036),	-- Recruit's Sturdy Crushers
 							i(218039),	-- Recruit's Sturdy Girdle
@@ -93,7 +94,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218266),	-- Recruit's Sturdy Bracers
 							i(218265),	-- Recruit's Sturdy Cinch
 							i(218262),	-- Recruit's Sturdy Cowl
-							i(218267),	-- Recruit's Sturdy Drape
 							i(218261),	-- Recruit's Sturdy Gauntlets
 							i(218259),	-- Recruit's Sturdy Chainmail
 							i(218263),	-- Recruit's Sturdy Kilt
@@ -102,7 +102,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 						}),
 						filter(LEATHER, {
 							i(218286),	-- Recruit's Sturdy Cincture
-							i(218288),	-- Recruit's Sturdy Cloak
 							i(218285),	-- Recruit's Sturdy Epaulets
 							i(218282),	-- Recruit's Sturdy Gloves
 							i(218284),	-- Recruit's Sturdy Leggings
@@ -117,10 +116,15 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218301),	-- Recruit's Sturdy Hood
 							i(218303),	-- Recruit's Sturdy Mantle
 							i(218300),	-- Recruit's Sturdy Mitts
-							i(218306),	-- Recruit's Sturdy Wrap
 							i(218304),	-- Recruit's Sturdy Sash
 							i(218299),	-- Recruit's Sturdy Slippers
 							i(218298),	-- Recruit's Sturdy Robes
+						}),
+						filter(BACK_F, {
+							i(218041),	-- Recruit's Sturdy Cape
+							i(218288),	-- Recruit's Sturdy Cloak
+							i(218267),	-- Recruit's Sturdy Drape
+							i(218306),	-- Recruit's Sturdy Wrap
 						}),
 						filter(TRINKET_F, {
 							i(223517),	-- Recruit's Warhorn
@@ -234,7 +238,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 42.9, 59.7, 629 },	-- Legion Dalaran, Aegwynn's Gallery
 			}),
 			q(82689, {	-- Only Darkness
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["provider"] = { "n", 224373 },	-- Echo of the Silver Hand
 				["coord"] = { 59.5, 52.0, DRAGONBLIGHT },
 				["g"] = {
@@ -242,7 +246,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			q(78938, {	-- Champion of the Waterlords
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["provider"] = { "n", 214399 },	-- Memory of a Duke
 				["coord"] = { 43.6, 67.3, SEARING_GORGE },
 				["g"] = {
@@ -250,7 +254,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				},
 			}),
 			q(82676, {	-- Broken Masquerade
-				["isWeekly"] = true,
+				["isDaily"] = true,
 				["provider"] = { "n", 224367 },	-- Forgotten Hero
 				["coord"] = { 45.5, 57.7, DUSTWALLOW_MARSH },
 				["g"] = {
