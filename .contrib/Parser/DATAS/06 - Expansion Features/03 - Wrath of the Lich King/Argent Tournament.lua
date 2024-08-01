@@ -4858,12 +4858,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 			}),
 			n(ZONE_DROPS, {
 				i(46069, {	-- Alliance Lance
-					["providers"] = {
-						{ "o", 194618 },	-- Lance Rack
-						{ "o", 194622 },	-- Lance Rack
-					},
+
+					["provider"] = { "o", 194618 },	-- Lance Rack
 					["coord"] = { 75.9, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
+					["ignoreSource"] = true,
 				}),
 				i(46106, {	-- Argent Lance
 					["providers"] = {
@@ -4875,11 +4874,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						{ 48.8, 71.3, ICECROWN },
 					},
 					["maps"] = { TRIAL_OF_THE_CHAMPION },
+					["ignoreSource"] = true,
 				}),
 				i(46070, {	-- Horde Lance
 					["provider"] = { "o", 194622 },	-- Lance Rack
 					["coord"] = { 76.0, 23.6, ICECROWN },
 					["races"] = HORDE_ONLY,
+					["ignoreSource"] = true,
 				}),
 			}),
 		},
