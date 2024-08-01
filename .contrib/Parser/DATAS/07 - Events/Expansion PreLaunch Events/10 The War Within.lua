@@ -32,7 +32,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218250),	-- Recruit's Sturdy Chainmail
 							i(218254),	-- Recruit's Sturdy Kilt
 							i(218255),	-- Recruit's Sturdy Spaulders
-							i(218251),	-- Recruit's Sturdy Striders							
+							i(218251),	-- Recruit's Sturdy Striders
 						}),
 						filter(LEATHER, {
 							i(218277),	-- Recruit's Sturdy Cincture
@@ -98,7 +98,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218259),	-- Recruit's Sturdy Chainmail
 							i(218263),	-- Recruit's Sturdy Kilt
 							i(218264),	-- Recruit's Sturdy Spaulders
-							i(218260),	-- Recruit's Sturdy Striders							
+							i(218260),	-- Recruit's Sturdy Striders
 						}),
 						filter(LEATHER, {
 							i(218286),	-- Recruit's Sturdy Cincture
@@ -139,10 +139,16 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 						i(218329),  -- Recruit's Sturdy Shield
 						i(218332),  -- Recruit's Sturdy Shank
 						i(218325),  -- Recruit's Sturdy Greataxe
-						i(218326),  -- Recruit's Sturdy Tome						
-					}),	
+						i(218326),  -- Recruit's Sturdy Tome
+					}),
 				})),
 			}),
+			-- Symlink all armor and weapons from the Vendor
+			["sym"] = {
+				{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
+				{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
+				{"where","headerID",WEAPONS},
+			},
 		}),
 		n(ACHIEVEMENTS, {
 			ach(40796),	-- This Takes Me Back
