@@ -718,20 +718,46 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					ach(429, {	-- Sulfuras, Hand of Ragnaros
-						["provider"] = { "i", 17182 },	-- Sulfuras, Hand of Ragnaros
+						["provider"] = { "i",	-- Sulfuras, Hand of Ragnaros
+							-- #if SEASON_OF_DISCOVERY
+							227683,
+							-- #else
+							17182,
+							-- #endif
+						},
 						-- #if BEFORE WRATH
 						["description"] = "Wielder of Sulfuras, Hand of Ragnaros.",
 						-- #endif
 						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(227683, {	-- Sulfuras, Hand of Ragnaros
+						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
+						["timeline"] = { "added 1.15.3" },
+						["cost"] = {
+							{ "i", 227728, 1 },	-- Eye of Sulfuras
+							{ "i", 227684, 1 },	-- Sulfuron Hammer
+						},
+					})),
+					applyclassicphase(SOD_PHASE_FOUR, i(227728, {	-- Eye of Sulfuras
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
 					i(17182, {	-- Sulfuras, Hand of Ragnaros
 						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 						["cost"] = {
 							{ "i", 17204, 1 },	-- Eye of Sulfuras
 							{ "i", 17193, 1 },	-- Sulfuron Hammer
 						},
 					}),
-					i(17204),	-- Eye of Sulfuras
+					i(17204, {	-- Eye of Sulfuras
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					i(19017, {	-- Essence of the Firelord
 						["b"] = 1,
 						["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",

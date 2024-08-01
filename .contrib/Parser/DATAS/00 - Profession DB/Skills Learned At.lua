@@ -381,6 +381,7 @@ for spellID,learnedAt in pairs({
 	[27832] = 300,	-- Sageblade
 	[16741] = 300,	-- Stronghold Gauntlets
 	[21161] = 300,	-- Sulfuron Hammer
+	[460460] = 300,	-- Sulfuron Hammer
 	[27587] = 300,	-- Thick Obsidian Breastplate
 	[16662] = 300,	-- Thorium Leggings
 	[27829] = 300,	-- Titanic Leggings

@@ -786,7 +786,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(3856),	-- Shadow Crescent Axe
 			i(3851),	-- Solid Iron Maul
 			i(206484, {["timeline"] = {ADDED_10_1_5}}),	-- Strength of Menethil
-			i(17193),	-- Sulfuron Hammer
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227684, {	-- Sulfuron Hammer
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(17193, {	-- Sulfuron Hammer
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(206513, {["timeline"] = {ADDED_10_1_5}}),	-- Stygian Shield
 			i(206502, {["timeline"] = {ADDED_10_1_5}}),	-- The Face of Doom
 			i(206497, {["timeline"] = {ADDED_10_1_5}}),	-- The Final Dream

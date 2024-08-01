@@ -2708,6 +2708,20 @@ profession(BLACKSMITHING, {
 					["name"] = "Sulfuron Hammer",
 					["recipeID"] = 21161,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Sulfuron Hammer",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 460460,
+				}),
+				-- #endif
+				{
+					["name"] = "Sulfuron Hammer",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+					["recipeID"] = 21161,
+				},
 				-- #if AFTER TBC
 				{
 					["name"] = "The Shatterer",

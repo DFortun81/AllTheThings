@@ -72,6 +72,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			n(QUESTS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84338, {	-- A Binding Contract
+					["providers"] = {
+						{ "n",  12944 },	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
+						{ "i", 227730 },	-- Thorium Brotherhood Contract
+					},
+					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
+					["requireSkill"] = BLACKSMITHING,
+					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
+					["timeline"] = { "added 1.15.3" },
+					["lvl"] = 60,
+					["groups"] = {
+						i(227727),	-- Plans: Sulfuron Hammer (RECIPE!)
+					},
+				})),
+				-- #endif
 				q(7604, {	-- A Binding Contract
 					["providers"] = {
 						{ "n", 12944 },	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
@@ -80,9 +96,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
 					["requireSkill"] = BLACKSMITHING,
 					["cost"] = { { "i", 17203, 1 } },	-- Sulfuron Ingot
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["lvl"] = lvlsquish(60, 60, 20),
 					["groups"] = {
-						i(18592),	-- Plans: Sulfuron Hammer (RECIPE!)
+						i(18592, {	-- Plans: Sulfuron Hammer (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 					},
 				}),
 				q(4264, {	-- A Crumpled Up Note
@@ -264,6 +287,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
+					["groups"] = {
+						objective(1, {
+							
+						}),
+					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(82062, {	-- Ever After
