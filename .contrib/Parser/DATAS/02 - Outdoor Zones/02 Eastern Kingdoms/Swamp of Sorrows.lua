@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 				}),
-				applyclassicphase(PHASE_FOUR, q(8417, {	-- A Troubled Spirit
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8417, {	-- A Troubled Spirit
 					["allianceQuestData"] = {
 						["qgs"] = {
 							7315,	-- Darnath Bladesinger <Warrior Trainer> (Darnassus)
@@ -1503,7 +1503,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8424, {	-- War on the Shadowsworn
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8424, {	-- War on the Shadowsworn
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8423,	-- Warrior Kinship
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
@@ -1533,7 +1533,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = { 51, 53 },
 					-- #endif
 				})),
-				applyclassicphase(PHASE_FOUR, q(8423, {	-- Warrior Kinship
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8423, {	-- Warrior Kinship
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8417,	-- A Troubled Spirit
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },

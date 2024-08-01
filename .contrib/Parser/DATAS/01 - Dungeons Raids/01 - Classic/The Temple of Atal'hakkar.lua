@@ -105,7 +105,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			d(DIFFICULTY.DUNGEON.NORMAL, bubbleDownTimelineEventSelf("removed 1.15.1", {
 			-- #endif
 			n(QUESTS, {
-				applyclassicphase(PHASE_FOUR, q(9053, {	-- A Better Ingredient
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9053, {	-- A Better Ingredient
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 9051,  -- Toxic Test
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
@@ -153,7 +153,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8257, {	-- Blood of Morphaz
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8257, {	-- Blood of Morphaz
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8256,	-- The Ichor of Undeath
 					["coord"] = { 42.2, 42.6, AZSHARA },
@@ -176,7 +176,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_FOUR, q(8413, {	-- Da Voodoo
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8413, {	-- Da Voodoo
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 8412,	-- Spirit Totem
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
@@ -207,7 +207,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_FOUR, q(8253, {	-- Destroy Morphaz
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8253, {	-- Destroy Morphaz
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8252,	-- The Siren's Coral
 					["coord"] = { 29.6, 40.6, AZSHARA },
@@ -244,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8418, {	-- Forging the Mightstone
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8418, {	-- Forging the Mightstone
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 8416,	-- Inert Scourgestones
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
@@ -360,7 +360,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8236, {	-- The Azure Key
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8236, {	-- The Azure Key
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8235,	-- Encoded Fragments
 					["coord"] = { 29.6, 40.6, AZSHARA },
@@ -451,7 +451,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8232, {	-- The Green Drake
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8232, {	-- The Green Drake
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8231,	-- Wavethrashing
 					["coord"] = { 42.2, 42.6, AZSHARA },
@@ -490,7 +490,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8422, {	-- Trolls of a Feather
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8422, {	-- Trolls of a Feather
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["sourceQuest"] = 8421,	-- The Wrong Stuff
 					["coord"] = { 41.6, 45.0, FELWOOD },
@@ -518,7 +518,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_FOUR, q(8425, {	-- Voodoo Feathers
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8425, {	-- Voodoo Feathers
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8424,	-- War on the Shadowsworn
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },

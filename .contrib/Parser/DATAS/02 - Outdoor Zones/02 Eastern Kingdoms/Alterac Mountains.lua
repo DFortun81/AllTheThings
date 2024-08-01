@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(QUESTS, {
-				applyclassicphase(PHASE_FOUR, q(8233, {	-- A Simple Request
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8233, {	-- A Simple Request
 					["allianceQuestData"] = {
 						["qgs"] = {
 							4163,	-- Syurna <Rogue Trainer>
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8410, {	-- Elemental Mastery
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8410, {	-- Elemental Mastery
 					-- #if AFTER TBC
 					["allianceQuestData"] = {
 						["qgs"] = {
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["lvl"] = 50,
 				})),
-				applyclassicphase(PHASE_FOUR, q(8235, {	-- Encoded Fragments
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8235, {	-- Encoded Fragments
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8234,	-- Sealed Azure Bag
 					["coord"] = { 29.6, 40.6, AZSHARA },
@@ -471,7 +471,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 				})),
 				-- #endif
-				applyclassicphase(PHASE_FOUR, q(8234, {	-- Sealed Azure Bag
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8234, {	-- Sealed Azure Bag
 					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
 					["sourceQuest"] = 8233,	-- A Simple Request
 					["coord"] = { 86.0, 79.0, ALTERAC_MOUNTAINS },
@@ -487,7 +487,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_FOUR, q(8412, {	-- Spirit Totem
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8412, {	-- Spirit Totem
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 8410,	-- Elemental Mastery
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },

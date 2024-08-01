@@ -321,7 +321,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
-				applyclassicphase(PHASE_FOUR, q(8419, {	-- An Imp's Request
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8419, {	-- An Imp's Request
 					["qgs"] = {
 						3326,	-- Zevrost <Warlock Trainer>
 						5172,	-- Briarthorn <Warlock Trainer>
@@ -2444,7 +2444,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				-- #endif
-				applyclassicphase(PHASE_FOUR, q(8421, {	-- The Wrong Stuff
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8421, {	-- The Wrong Stuff
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["sourceQuests"] = {
 						8419,	-- An Imp's Request

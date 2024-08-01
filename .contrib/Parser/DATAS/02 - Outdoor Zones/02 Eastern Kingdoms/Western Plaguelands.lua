@@ -805,7 +805,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8415, {	-- Chillwind Point [TBC+] / Chillwind Camp
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8415, {	-- Chillwind Point [TBC+] / Chillwind Camp
 					["qgs"] = {
 						5149,	-- Brandur Ironhammer <Paladin Trainer>
 						928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
@@ -1032,7 +1032,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8414, {	-- Dispelling Evil
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8414, {	-- Dispelling Evil
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 8415,	-- Chillwind Point [TBC+] / Chillwind Camp
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
@@ -1259,7 +1259,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(8416, {	-- Inert Scourgestones
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8416, {	-- Inert Scourgestones
 					["providers"] = {
 						{ "n", 1854 },	-- High Priest Thel'danis
 						{ "i", 20612 },	-- Inert Scourgestone

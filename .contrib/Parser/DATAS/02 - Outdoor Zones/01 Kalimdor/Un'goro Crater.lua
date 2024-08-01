@@ -302,7 +302,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(9052, {	-- Bloodpetal Poison
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9052, {	-- Bloodpetal Poison
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 9063,  -- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
@@ -1856,7 +1856,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FOUR, q(9063, {	-- Torwa Pathfinder
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9063, {	-- Torwa Pathfinder
 					["qgs"] = {
 						4218,	-- Denatharion <Druid Trainer>
 						12042,	-- Loganaar <Druid Trainer>
@@ -1871,7 +1871,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["classes"] = { DRUID },
 					["lvl"] = 50,
 				})),
-				applyclassicphase(PHASE_FOUR, q(9051, {	-- Toxic Test
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(9051, {	-- Toxic Test
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["sourceQuest"] = 9052,  -- Bloodpetal Poison
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },

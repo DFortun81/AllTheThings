@@ -303,7 +303,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 				-- #if AFTER CATA
-				applyclassicphase(PHASE_FOUR, q(8233, {	-- A Simple Request (Alterac Mountains)
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8233, {	-- A Simple Request (Alterac Mountains)
 					["allianceQuestData"] = {
 						["qgs"] = {
 							4163,	-- Syurna <Rogue Trainer>
@@ -1092,7 +1092,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 				}),
 				-- #if AFTER CATA
-				applyclassicphase(PHASE_FOUR, q(8410, {	-- Elemental Mastery (Alterac Mountains)
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8410, {	-- Elemental Mastery (Alterac Mountains)
 					-- #if AFTER TBC
 					["allianceQuestData"] = {
 						["qgs"] = {
@@ -1323,7 +1323,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 19,
 				}),
 				-- #if AFTER CATA
-				applyclassicphase(PHASE_FOUR, q(8235, {	-- Encoded Fragments (Alterac Mountains)
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8235, {	-- Encoded Fragments (Alterac Mountains)
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8234,	-- Sealed Azure Bag
 					["coord"] = { 29.6, 40.6, AZSHARA },
@@ -2181,7 +2181,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 13,
 				}),
 				-- #if AFTER CATA
-				applyclassicphase(PHASE_FOUR, q(8234, {	-- Sealed Azure Bag	(Alterac Mountains)
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8234, {	-- Sealed Azure Bag	(Alterac Mountains)
 					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
 					["sourceQuest"] = 8233,	-- A Simple Request
 					["coord"] = { 86.0, 79.0, ALTERAC_MOUNTAINS },
@@ -2303,7 +2303,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if AFTER CATA
-				applyclassicphase(PHASE_FOUR, q(8412, {	-- Spirit Totem (Alterac Mountains)
+				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8412, {	-- Spirit Totem (Alterac Mountains)
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 8410,	-- Elemental Mastery
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
