@@ -120,7 +120,7 @@ local massacrecoin_g = function(cost, item)	-- Assign a Gold Massacre Coin cost 
 end
 
 local real = function(cost, item)	-- Assign a Tarnished Undermine Real cost to an item.
-	applycost(item, { "i", 226400, cost });
+	applycost(item, { "i", 226404, cost });
 	return item;
 end
 -- #endif
