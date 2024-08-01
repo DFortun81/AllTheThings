@@ -764,6 +764,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(SOD_PHASE_FOUR, i(227759, {	-- Scorched Core Gloves
 							["timeline"] = { "added 1.15.3" },
 						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227530, {	-- Incandescent Belt
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227751, {	-- Molten Scaled Belt
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227761, {	-- Scorched Core Belt
+							["timeline"] = { "added 1.15.3" },
+						})),
 						applyclassicphase(SOD_PHASE_FOUR, i(227534, {	-- Incandescent Leggings
 							["timeline"] = { "added 1.15.3" },
 						})),
