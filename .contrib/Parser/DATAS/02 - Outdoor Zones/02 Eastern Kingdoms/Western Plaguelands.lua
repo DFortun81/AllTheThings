@@ -781,10 +781,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ "n", 10667 },	-- Chromie
 						{ "i", 13202 },	-- Extended Annals of Darrowshire
 					},
-					["sourceQuests"] = {
-						5154,	-- The Annals of Darrowshire
-						5168,	-- Heroes of Darrowshire
-					},
+					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
 					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
@@ -821,6 +818,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, n(createHeader({	-- Burn the Fallen Knight
+					readable = "SOD - PALADIN - Burn the Fallen Knight",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Burn the Fallen Knight",
+					},
+				}), {
+					["qg"] = 227519,	-- Fallen Knight
+					["questID"] = 84004,	-- Burn the Fallen Knight HQT
+					["sourceQuest"] = 83935,	-- Clearing the Path
+					["coord"] = { 44.6, 46.6, WESTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+				})),
+				-- #endif
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8415, {	-- Chillwind Point [TBC+] / Chillwind Camp
 					["qgs"] = {
 						5149,	-- Brandur Ironhammer <Paladin Trainer>
@@ -1054,6 +1068,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { "added 1.15.3" },
 					["classes"] = { PALADIN },
 					["lvl"] = 50,
+					["groups"] = {
+						i(226122),	-- Dalton's Horn
+					},
 				})),
 				-- #endif
 				q(9444, {	-- Defiling Uther's Tomb

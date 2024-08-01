@@ -346,6 +346,10 @@ HeaderAssignments = {
 	["SOD - Nightmare Incursions - Aura of Paralyzing Dread"] = -1000980,
 	["SOD - Nightmare Incursions - Emotional Damage"] = -1000981,
 	["SOD - PALADIN - Bless the Fallen"] = -1000982,
+	["SOD - PALADIN - Burn the Fallen Knight"] = -1000983,
+	["SOD - PALADIN - Squire Training"] = -1000984,
+	["SOD - PALADIN - Squire Training - Inspiration Rank One"] = -1000985,
+	["SOD - PALADIN - Squire Training - Inspiration Rank Two"] = -1000986,
 	["SOD - Soul Brokers"] = -1000378,
 	["SOD - Wild Polymorph"] = -1000377,
 	["Soulshape Forms"] = -1000090,
@@ -490,4 +494,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000983;
+NextHeaderID = -1000987;

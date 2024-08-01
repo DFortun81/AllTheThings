@@ -3279,6 +3279,128 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 		},
 	}),
+	applyclassicphase(SOD_PHASE_FOUR, n(createHeader({	-- Squire Training
+		readable = "SOD - PALADIN - Squire Training",
+		icon = 237377,
+		text = {
+			en = "Squire Training",
+		},
+		description = {
+			en = "Starting at level 50, Paladins can complete a quest chain in Western Plaguelands that will give them a Relic that calls forth their own personal Squire. This Squire can level up by fighting in combat as well as by being healed by the Paladin's spells. (Get into combat and just spam rank 1 Flash of Light while he attacks the mobs.)",
+		},
+	}), {
+		["sourceQuest"] = 83936,	-- Dalton's Quest
+		["timeline"] = { "added 1.15.3" },
+		["classes"] = { PALADIN },
+		["lvl"] = 50,
+		["groups"] = {
+			n(createHeader({	-- Inspiration Rank One
+				readable = "SOD - PALADIN - Squire Training - Inspiration Rank One",
+				icon = "Interface\\CURSOR\\Attack",
+				text = {
+					en = "Inspiration Rank One",
+				},
+				description = {
+					en = "After receiving your squire, summon him forth using the Relic and then level him up by getting into combat and keeping him alive.",
+				},
+			}), {
+				["providers"] = {
+					{ "i", 226122 },	-- Dalton's Horn (Rank 1)
+					{ "n", 227673 },	-- <Player>'s Squire (Rank 1)
+				},
+				["questID"] = 84416,	-- Inspiration Rank One HQT
+				["sourceQuest"] = 83936,	-- Dalton's Quest
+			}),
+			q(83936, {	-- A Lesson in Violence
+				["qg"] = 227673,	-- <Player>'s Squire (Rank 1)
+				["sourceQuest"] = 84416,	-- Inspiration Rank One HQT
+				["timeline"] = { "added 1.15.3" },
+				["classes"] = { PALADIN },
+				["lvl"] = 50,
+				["groups"] = {
+					i(226523),	-- Dalton's Horn (Rank 2)
+				},
+			}),
+			n(createHeader({	-- Inspiration Rank Two
+				readable = "SOD - PALADIN - Squire Training - Inspiration Rank Two",
+				icon = "Interface\\CURSOR\\Attack",
+				text = {
+					en = "Inspiration Rank Two",
+				},
+			}), {
+				["providers"] = {
+					{ "i", 226523 },	-- Dalton's Horn (Rank 2)
+					{ "n", 227464 },	-- <Player>'s Squire (Rank 2)
+				},
+				["questID"] = 84417,	-- Inspiration Rank Two HQT
+				["sourceQuest"] = 83936,	-- A Lesson in Violence
+			}),
+			q(84008, {	-- A Lesson in Grace
+				["qg"] = 227464,	-- <Player>'s Squire (Rank 2)
+				["sourceQuest"] = 84417,	-- Inspiration Rank Two HQT
+				["timeline"] = { "added 1.15.3" },
+				["classes"] = { PALADIN },
+				["lvl"] = 50,
+				["groups"] = {
+					i(226545),	-- Dalton's Horn (Rank 3)
+				},
+			}),
+			q(84017, {	-- A Time to Kill
+				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
+				["sourceQuest"] = 84008,	-- A Lesson in Grace
+				["timeline"] = { "added 1.15.3" },
+				["maps"] = { EASTERN_PLAGUELANDS },
+				["classes"] = { PALADIN },
+				["lvl"] = 50,
+				["groups"] = {
+					objective(1, {	-- 0/1 Arkonos Found
+						["provider"] = { "n", 227985 },	-- Arkonos the Cursed
+						["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+					}),
+				},
+			}),
+			q(84125, {	-- Close Enough To Touch
+				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
+				["sourceQuest"] = 84017,	-- A Time to Kill
+				["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+				["timeline"] = { "added 1.15.3" },
+				["classes"] = { PALADIN },
+				["lvl"] = 50,
+				["groups"] = {
+					objective(1, {	-- 0/1 Scourge Shadow Scalpel
+						["provider"] = { "i", 227041 },	-- Scourge Shadow Scalpel
+						["coord"] = { 83.6, 42.0, EASTERN_PLAGUELANDS },
+						["crs"] = {
+							8550,	-- Shadowmage <Cult of the Damned>
+							8528,	-- Dread Weaver
+						},
+					}),
+				},
+			}),
+			q(84126, {	-- Finish the Fight
+				["qg"] = 227674,	-- <Player>'s Squire (Rank 3)
+				["sourceQuest"] = 84125,	-- Close Enough To Touch
+				["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+				["timeline"] = { "added 1.15.3" },
+				["classes"] = { PALADIN },
+				["lvl"] = 50,
+				["groups"] = {
+					objective(1, {	-- 0/1 Arkonos the Cursed slain
+						["providers"] = {
+							{ "n", 227985 },	-- Arkonos the Cursed
+							{ "i", 227685 },	-- Modified Shadow Scalpel
+						},
+						["coord"] = { 86.8, 39.4, EASTERN_PLAGUELANDS },
+					}),
+					recipe(440790),	-- Engrave Cloak - Shock and Awe
+					i(226399, {	-- Testament of Avenging Wrath
+						["spellID"] = 407788,	-- Avenging Wrath
+						["f"] = RECIPES,
+					}),
+				},
+			}),
+		},
+	})),
 	n(createHeader({	-- Waylaid Supplies
 		readable = "Waylaid Supplies",
 		icon = "Interface\\Icons\\inv_crate_03",
@@ -4177,10 +4299,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			})),
 		}),
 		cl(PALADIN, {
-			applyclassicphase(SOD_PHASE_FOUR, i(226399, {	-- Testament of Avenging Wrath
-				["spellID"] = 407788,	-- Avenging Wrath
-				["f"] = RECIPES,
-			})),
 			applyclassicphase(SOD_PHASE_TWO, i(216768, {	-- Testament of Enhanced Blessings
 				["spellID"] = 435984,	-- Enhanced Blessings
 				["f"] = RECIPES,
