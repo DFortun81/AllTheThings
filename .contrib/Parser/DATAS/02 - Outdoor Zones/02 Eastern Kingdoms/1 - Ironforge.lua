@@ -422,29 +422,61 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 45,
 					["groups"] = {
 						objective(1, {	-- 0/1 Rubbing: Rune of Beth'Amara
-							["provider"] = { "i", 10563 },	-- Rubbing: Rune of Beth'Amara
-							["cost"] = { { "i", 10445, 1 } },	-- Drawing Kit
+							["providers"] = {
+								{ "i",  10563 },	-- Rubbing: Rune of Beth'Amara
+								{ "o", 149481 },	-- Rune of Beth'Amara
+								{ "i",  10445 },	-- Drawing Kit
+							},
 							["coord"] = { 36, 53, AZSHARA },
 						}),
 						objective(2, {	-- 0/1 Rubbing: Rune of Jin'yael
-							["provider"] = { "i", 10564 },	-- Rubbing: Rune of Jin'yael
-							["cost"] = { { "i", 10445, 1 } },	-- Drawing Kit
+							["providers"] = {
+								{ "i",  10564 },	-- Rubbing: Rune of Jin'yael
+								{ "o", 149480 },	-- Rune of Jin'yael
+								{ "i",  10445 },	-- Drawing Kit
+							},
 							["coord"] = { 39, 50, AZSHARA },
 						}),
 						objective(3, {	-- 0/1 Rubbing: Rune of Markri
-							["provider"] = { "i", 10565 },	-- Rubbing: Rune of Markri
-							["cost"] = { { "i", 10445, 1 } },	-- Drawing Kit
+							["providers"] = {
+								{ "i",  10565 },	-- Rubbing: Rune of Markri
+								{ "o", 149482 },	-- Rune of Markri
+								{ "i",  10445 },	-- Drawing Kit
+							},
 							["coord"] = { 39, 55, AZSHARA },
 						}),
 						objective(4, {	-- 0/1 Rubbing: Rune of Sael'hai
-							["provider"] = { "i", 10566 },	-- Rubbing: Rune of Sael'hai
-							["cost"] = { { "i", 10445, 1 } },	-- Drawing Kit
+							["providers"] = {
+								{ "i",  10566 },	-- Rubbing: Rune of Sael'hai
+								{ "o", 149483 },	-- Rune of Sael'hai
+								{ "i",  10445 },	-- Drawing Kit
+							},
 							["coord"] = { 42, 64, AZSHARA },
 						}),
-						objective(5, {	-- 0/1 Standard Issue Flare Gun
-							["provider"] = { "i", 10444 },	-- Standard Issue Flare Gun
-							["description"] = "DO NOT LEAVE IRONFORGE WITHOUT THIS.\n - Crieve",
-							["coord"] = { 77, 91, AZSHARA },
+						q(3451, {	-- Signal for Pickup (1/2)
+							["qg"] = 8517,	-- Xiggs Fuselighter
+							["sourceQuest"] = 3450,	-- An Easy Pickup
+							["coord"] = { 71, 94.2, IRONFORGE },
+							["timeline"] = { REMOVED_4_0_3 },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 45,
+							["groups"] = {
+								objective(5, {	-- 0/1 Standard Issue Flare Gun
+									["questID"] = 3449,	-- Arcane Runes
+									["provider"] = { "i", 10444 },	-- Standard Issue Flare Gun
+									["description"] = "DO NOT LEAVE IRONFORGE WITHOUT THIS.\n - Crieve",
+									["coord"] = { 77, 91, AZSHARA },
+								}),
+							},
+						}),
+						q(3483, {	-- Signal for Pickup (2/2)
+							["qg"] = 8517,	-- Xiggs Fuselighter
+							["sourceQuest"] = 3451,	-- Signal for Pickup (1/2)
+							["coord"] = { 71, 94.2, IRONFORGE },
+							["timeline"] = { REMOVED_4_0_3 },
+							["races"] = ALLIANCE_ONLY,
+							["repeatable"] = true,
+							["lvl"] = 45,
 						}),
 					},
 				}),
@@ -990,33 +1022,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(10790),	-- Gnome Engineer Membership Card
 					},
-				}),
-				q(3451, {	-- Signal for Pickup (1/2)
-					["qg"] = 8517,	-- Xiggs Fuselighter
-					["sourceQuest"] = 3450,	-- An Easy Pickup
-					["coord"] = { 71, 94.2, IRONFORGE },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 45,
-					-- #if BEFORE 4.0.3
-					["groups"] = {
-						i(10444),	-- Standard Issue Flare Gun
-					},
-					-- #endif
-				}),
-				q(3483, {	-- Signal for Pickup (2/2)
-					["qg"] = 8517,	-- Xiggs Fuselighter
-					["sourceQuest"] = 3451,	-- Signal for Pickup (1/2)
-					["coord"] = { 71, 94.2, IRONFORGE },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 45,
-					-- #if BEFORE 4.0.3
-					["groups"] = {
-						i(10444),	-- Standard Issue Flare Gun
-					},
-					-- #endif
 				}),
 				q(2238, {	-- Simple Subterfugin'
 					["qg"] = 5165,	-- Hulfdan Blackbeard
