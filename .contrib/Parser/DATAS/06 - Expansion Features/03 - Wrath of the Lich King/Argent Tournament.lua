@@ -4880,7 +4880,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["provider"] = { "o", 194622 },	-- Lance Rack
 					["coord"] = { 76.0, 23.6, ICECROWN },
 					["races"] = HORDE_ONLY,
-					["ignoreSource"] = true,
+					["ignoreSource"] = true, 
 				}),
 			}),
 		},
