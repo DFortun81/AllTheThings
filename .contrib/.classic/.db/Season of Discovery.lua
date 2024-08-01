@@ -3134,6 +3134,12 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440496)),	-- Engrave Cloak - Shockwave
 			applyclassicphase(SOD_PHASE_FOUR, recipe(440494)),	-- Engrave Cloak - Sudden Death
 		}),
+		
+		-- Non-Class Specific Runes
+		applyclassicphase(SOD_PHASE_FOUR, recipe(453694, {	-- Engrave Ring - Pole Weapon Specialization
+			["timeline"] = { "added 1.15.3" },
+			["classes"] = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+		})),
 	}),
 	n(createHeader({	-- Soul Brokers
 		readable = "SOD - Soul Brokers",

@@ -2582,6 +2582,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(TREASURES, {
+				applyclassicphase(SOD_PHASE_FOUR, i(226412, {	-- Rune of Pole Weapon Specialization
+					["provider"] = { "o", 457091 },	-- Chen's Training Manual
+					["timeline"] = { "added 1.15.3" },
+					["coord"] = { 76.9, 44.2, AZSHARA },
+					["classes"] = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+					["groups"] = {
+						recipe(453694, {	-- Engrave Ring - Pole Weapon Specialization
+							["classes"] = { WARRIOR, PALADIN, HUNTER, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID },
+						}),
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(12957, {	-- Blimo Gadgetspring <Trade Supplies>
 					["coord"] = { 45.2, 90.8, AZSHARA },
