@@ -4,6 +4,146 @@
 local RESIDUAL_MEMORIES = 3089;
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_PH_PREPATCH, REMOVED_11_PH_LAUNCH } }, {	-- This hasn't been added yet
 	expansion(EXPANSION.TWW, {
+		n(ZONE_DROPS, {
+			["description"] = "Can drop randomly from bosses and memory events, Recruit drops respect usability but Dalaran Defender drops do not.",
+			["maps"] = { DUSTWALLOW_MARSH, DRAGONBLIGHT, SEARING_GORGE },
+			["g"] = sharedData({
+				["lockCriteria"] = { 1, "lvl", 70 },
+			},{
+				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY },{
+					n(ARMOR, {
+						filter(PLATE, {
+							i(218032),	-- Recruit's Sturdy Cape
+							i(218025),	-- Recruit's Sturdy Chestplate
+							i(218027),	-- Recruit's Sturdy Crushers
+							i(218030),	-- Recruit's Sturdy Girdle
+							i(218028),	-- Recruit's Sturdy Greathelm
+							i(218024),	-- Recruit's Sturdy Greaves
+							i(218029),	-- Recruit's Sturdy Pauldrons
+							i(218026),	-- Recruit's Sturdy Stompers
+							i(218031),	-- Recruit's Sturdy Vambraces
+						}),
+						filter(MAIL, {
+							i(218257),	-- Recruit's Sturdy Bracers
+							i(218256),	-- Recruit's Sturdy Cinch
+							i(218253),	-- Recruit's Sturdy Cowl
+							i(218258),	-- Recruit's Sturdy Drape
+							i(218252),	-- Recruit's Sturdy Gauntlets
+							i(218250),	-- Recruit's Sturdy Chainmail
+							i(218254),	-- Recruit's Sturdy Kilt
+							i(218255),	-- Recruit's Sturdy Spaulders
+							i(218251),	-- Recruit's Sturdy Striders							
+						}),
+						filter(LEATHER, {
+							i(218277),	-- Recruit's Sturdy Cincture
+							i(218279),	-- Recruit's Sturdy Cloak
+							i(218276),	-- Recruit's Sturdy Epaulets
+							i(218273),	-- Recruit's Sturdy Gloves
+							i(218275),	-- Recruit's Sturdy Leggings
+							i(218274),	-- Recruit's Sturdy Mask
+							i(218271),	-- Recruit's Sturdy Raiment
+							i(218272),	-- Recruit's Sturdy Treads
+							i(218278),	-- Recruit's Sturdy Wristbands
+						}),
+						filter(CLOTH, {
+							i(218293),	-- Recruit's Sturdy Breeches
+							i(218296),	-- Recruit's Sturdy Bindings
+							i(218292),	-- Recruit's Sturdy Hood
+							i(218291),	-- Recruit's Sturdy Mitts
+							i(218294),	-- Recruit's Sturdy Mantle
+							i(218290),	-- Recruit's Sturdy Slippers
+							i(218295),	-- Recruit's Sturdy Sash
+							i(218289),	-- Recruit's Sturdy Robes
+							i(218297),	-- Recruit's Sturdy Wrap
+						}),
+						filter(TRINKET_F, {
+							i(223507),	-- Recruit's Pocket Watch
+							i(223516),	-- Recruit's Trumpet
+						}),
+					}),
+					n(WEAPONS, {
+						i(218323),	-- Recruit's Sturdy Crescent
+						i(218315),	-- Recruit's Sturdy Bow
+						i(218319),	-- Recruit's Sturdy Mallet
+						i(218316),	-- Recruit's Sturdy Maul
+						i(218314),	-- Recruit's Sturdy Tome
+						i(218318),	-- Recruit's Sturdy Rod
+						i(218322),	-- Recruit's Sturdy Saber
+						i(218321),	-- Recruit's Sturdy Longblade
+						i(218317),	-- Recruit's Sturdy Shield
+						i(218320),	-- Recruit's Sturdy Shank
+						i(218313),	-- Recruit's Sturdy Greatsword
+						i(218312),	-- Recruit's Sturdy Polearm
+					}),
+				})),
+				n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["races"] = HORDE_ONLY },{
+					n(ARMOR, {
+						filter(PLATE, {
+							i(218041),	-- Recruit's Sturdy Cape
+							i(218034),	-- Recruit's Sturdy Chestplate
+							i(218036),	-- Recruit's Sturdy Crushers
+							i(218039),	-- Recruit's Sturdy Girdle
+							i(218037),	-- Recruit's Sturdy Greathelm
+							i(217991),	-- Recruit's Sturdy Greaves
+							i(218038),	-- Recruit's Sturdy Pauldrons
+							i(218035),	-- Recruit's Sturdy Stompers
+							i(218040),	-- Recruit's Sturdy Vambraces
+						}),
+						filter(MAIL, {
+							i(218266),	-- Recruit's Sturdy Bracers
+							i(218265),	-- Recruit's Sturdy Cinch
+							i(218262),	-- Recruit's Sturdy Cowl
+							i(218267),	-- Recruit's Sturdy Drape
+							i(218261),	-- Recruit's Sturdy Gauntlets
+							i(218259),	-- Recruit's Sturdy Chainmail
+							i(218263),	-- Recruit's Sturdy Kilt
+							i(218264),	-- Recruit's Sturdy Spaulders
+							i(218260),	-- Recruit's Sturdy Striders							
+						}),
+						filter(LEATHER, {
+							i(218286),	-- Recruit's Sturdy Cincture
+							i(218288),	-- Recruit's Sturdy Cloak
+							i(218285),	-- Recruit's Sturdy Epaulets
+							i(218282),	-- Recruit's Sturdy Gloves
+							i(218284),	-- Recruit's Sturdy Leggings
+							i(218283),	-- Recruit's Sturdy Mask
+							i(218280),	-- Recruit's Sturdy Raiment
+							i(218281),	-- Recruit's Sturdy Treads
+							i(218287),	-- Recruit's Sturdy Wristbands
+						}),
+						filter(CLOTH, {
+							i(218305),	-- Recruit's Sturdy Bindings
+							i(218302),	-- Recruit's Sturdy Breeches
+							i(218301),	-- Recruit's Sturdy Hood
+							i(218303),	-- Recruit's Sturdy Mantle
+							i(218300),	-- Recruit's Sturdy Mitts
+							i(218306),	-- Recruit's Sturdy Wrap
+							i(218304),	-- Recruit's Sturdy Sash
+							i(218299),	-- Recruit's Sturdy Slippers
+							i(218298),	-- Recruit's Sturdy Robes
+						}),
+						filter(TRINKET_F, {
+							i(223517),	-- Recruit's Warhorn
+							i(223508),	-- Recruit's Whetstone
+						}),
+					}),
+					n(WEAPONS, {
+						i(218327),	-- Recruit's Sturdy Bow
+						i(218335),  -- Recruit's Sturdy Crescent
+						i(218333),  -- Recruit's Sturdy Longblade
+						i(218331),  -- Recruit's Sturdy Mallet
+						i(218328),  -- Recruit's Sturdy Maul
+						i(218324),  -- Recruit's Sturdy Polearm
+						i(218330),  -- Recruit's Sturdy Rod
+						i(218334),  -- Recruit's Sturdy Saber
+						i(218329),  -- Recruit's Sturdy Shield
+						i(218332),  -- Recruit's Sturdy Shank
+						i(218325),  -- Recruit's Sturdy Greataxe
+						i(218326),  -- Recruit's Sturdy Tome						
+					}),	
+				})),
+			}),
+		}),
 		n(ACHIEVEMENTS, {
 			ach(40796),	-- This Takes Me Back
 		}),
