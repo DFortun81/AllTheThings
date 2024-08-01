@@ -728,6 +728,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 50,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, n(createHeader({	-- Bless the Fallen
+					readable = "SOD - PALADIN - Bless the Fallen",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Bless the Fallen",
+					},
+				}), {
+					["questID"] = 83756,	-- Bless the Fallen HQT
+					["qg"] = 227519,	-- Fallen Knight
+					["coord"] = { 44.6, 46.6, WESTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+				})),
+				-- #endif
 				q(27202, {	-- Brother Against Brother
 					["qg"] = 45165,	-- Thurman Grant
 					["sourceQuest"] = 27205,	-- The Depravity of the Forsaken
@@ -844,6 +860,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(18182),	-- Chromatic Mantle of the Dawn
 					},
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(83935, {	-- Clearing the Path
+					["qg"] = 227672,	-- Squire Cuthbert
+					["sourceQuest"] = 83808,	-- In A Bind
+					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/5 Blighted Zombie slain
+							["provider"] = { "n", 4475 },	-- Blighted Zombie
+							["coord"] = { 47.0, 51.6, WESTERN_PLAGUELANDS },
+						}),
+						objective(2, {	-- 0/10 Skeletal Terror slain
+							["provider"] = { "n", 1785 },	-- Skeletal Terror
+							["coord"] = { 47.8, 49.8, WESTERN_PLAGUELANDS },
+						}),
+						objective(3, {	-- 0/10 Rotting Cadaver slain
+							["provider"] = { "n", 4474 },	-- Rotting Cadaver
+							["coord"] = { 46.4, 50.6, WESTERN_PLAGUELANDS },
+						}),
+					},
+				})),
+				-- #endif
 				q(5092, {	-- Clear the Way
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuests"] = {
@@ -1005,6 +1045,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(83936, {	-- Dalton's Quest
+					["qg"] = 227672,	-- Squire Cuthbert
+					["sourceQuest"] = 83822,	-- The Fallen Knight
+					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
+					["description"] = "Upon completing this quest, you will have a personal Squire.",
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+				})),
+				-- #endif
 				q(9444, {	-- Defiling Uther's Tomb
 					["qg"] = 17099,	-- Mehlar Dawnblade
 					["sourceQuest"] = 9443,	-- The So-Called Mark of the Lightbringer
@@ -1259,6 +1310,25 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(83808, {	-- In A Bind
+					["qg"] = 227672,	-- Squire Cuthbert
+					["sourceQuest"] = 83756,	-- Bless the Fallen HQT
+					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Squire Cuthbert's Blade
+							["providers"] = {
+								{ "i", 226201 },	-- Squire Cuthbert's Blade
+								{ "o", 455812 },	-- Squire Cuthbert's Blade
+							},
+							["coord"] = { 45.7, 53.9, WESTERN_PLAGUELANDS },
+						}),
+					},
+				})),
+				-- #endif
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8416, {	-- Inert Scourgestones
 					["providers"] = {
 						{ "n", 1854 },	-- High Priest Thel'danis
@@ -2130,6 +2200,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(83822, {	-- The Fallen Knight
+					["qg"] = 227672,	-- Squire Cuthbert
+					["sourceQuest"] = 83935,	-- Clearing the Path
+					["coord"] = { 47.8, 50.4, WESTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Fallen Knight Burned
+							["provider"] = { "n", 227519 },	-- Fallen Knight
+							["coord"] = { 44.6, 46.6, WESTERN_PLAGUELANDS },
+						}),
+						recipe(440792),	-- Engrave Cloak - Righteous Vengeance
+					},
+				})),
+				-- #endif
 				q(27084, {	-- The Farmers' Militia
 					["qg"] = 44452,	-- Koltira Deathweaver
 					["sourceQuest"] = 27083,	-- The Battle Resumes!
