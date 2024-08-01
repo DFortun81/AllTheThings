@@ -567,7 +567,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(168210),	-- Gleaming Chest: Azrafael
 			i(168211),	-- Gleaming Chest: Beneficus
 			i(168209),	-- Gleaming Chest: Olberic
-			i(179005),	-- Glinting Gold Fang
 			i(174746),	-- Golden Egg Shells
 			i(180852),	-- Granule of Stygia
 			i(183726),	-- Gratitude of the Liberated

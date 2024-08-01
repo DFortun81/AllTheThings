@@ -160,7 +160,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
-						{"select","npcID",223710},{"pop"},  -- Rememberance Amuul
+						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"where","headerID",WEAPONS},
 					},
 				}),
@@ -171,7 +171,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
-						{"select","npcID",223710},{"pop"},  -- Rememberance Amuul
+						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"where","headerID",WEAPONS},
 					},
 				}),
@@ -182,7 +182,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
-						{"select","npcID",223710},{"pop"},  -- Rememberance Amuul
+						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"where","headerID",WEAPONS},
 					},
 				}),

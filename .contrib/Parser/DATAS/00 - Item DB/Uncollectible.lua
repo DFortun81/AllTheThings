@@ -629,6 +629,7 @@ i(184163);	-- Gilded Slime
 i(180883);	-- Gleaming Crystal
 i(183062);	-- Gleaming Replica of Partannas
 i(179293);	-- Glimmering Facial Cream
+i(179005);	-- Glinting Gold Fang
 i(173360);	-- Glossy Fur
 i(181487);	-- Glowberry Bead String
 i(179006);	-- Glowing Endmire Dust
