@@ -1530,7 +1530,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 			}))),
-			-- #endif	
+			-- #endif
 		},
 	}),
 }));

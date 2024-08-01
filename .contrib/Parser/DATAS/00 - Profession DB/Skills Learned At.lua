@@ -718,6 +718,7 @@ for spellID,learnedAt in pairs({
 	[24356] = 300,	-- Bloodvine Goggles
 	[24357] = 300,	-- Bloodvine Lens
 	[22795] = 300,	-- Core Marksman Rifle
+	[461710] = 300,	-- Fiery Core Sharpshooter Rifle
 	[22704] = 300,	-- Field Repair Bot 74A
 	[19833] = 300,	-- Flawless Arcanite Rifle
 	[22797] = 300,	-- Force Reactive Disk

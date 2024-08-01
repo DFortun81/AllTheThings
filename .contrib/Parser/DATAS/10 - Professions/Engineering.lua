@@ -2077,6 +2077,9 @@ profession(ENGINEERING, {
 			["groups"] = {
 				{
 					["name"] = "Core Marksman Rifle",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["recipeID"] = 22795,
 				},
 				{
@@ -2087,6 +2090,13 @@ profession(ENGINEERING, {
 					["name"] = "Deadly Blunderbuss",
 					["recipeID"] = 3936,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Fiery Core Sharpshooter Rifle",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461710,
+				}),
+				-- #endif
 				{
 					["name"] = "Flawless Arcanite Rifle",
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },

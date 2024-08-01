@@ -306,24 +306,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 					["timeline"] = REMOVED_WITH_CATA,
 				})),
-				i(16802),	-- Arcanist Belt (Mage)
-				i(16799),	-- Arcanist Bindings (Mage)
-				i(16864),	-- Belt of Might (Warrior)
-				i(16861),	-- Bracers of Might (Warrior)
-				i(16828),	-- Cenarion Belt (Druid)
-				i(16830),	-- Cenarion Bracers (Druid)
-				i(16838),	-- Earthfury Belt (Shaman)
-				i(16840),	-- Earthfury Bracers (Shaman)
-				i(16806),	-- Felheart Belt (Warlock)
-				i(16804),	-- Felheart Bracers (Warlock)
-				i(16851),	-- Giantstalker's Belt (Hunter)
-				i(16850),	-- Giantstalker's Bracers (Hunter)
-				i(16817),	-- Girdle of Prophecy (Priest)
-				i(16858),	-- Lawbringer Belt (Paladin)
-				i(16857),	-- Lawbringer Bracers (Paladin)
-				i(16827),	-- Nightslayer Belt (Rogue)
-				i(16825),	-- Nightslayer Bracelets (Rogue)
-				i(16819),	-- Vambraces of Prophecy (Priest)
 				i(17010),	-- Fiery Core
 				i(17011),	-- Lava Core
 			}),
@@ -417,6 +399,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(18292, {	-- Schematic: Core Marksman Rifle (RECIPE!)
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["crs"] = {
 						12118,	-- Lucifron
 						11982,	-- Magmadar
@@ -427,6 +412,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						11988,	-- Golemagg the Incinerator
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(228304, {	-- Schematic: Schematic: Fiery Core Sharpshooter Rifle (RECIPE!)
+					["timeline"] = { "added 1.15.3" },
+					["crs"] = {
+						228429,	-- Lucifron
+						228430,	-- Magmadar
+						228431,	-- Gehennas
+						228432,	-- Garr
+						228434,	-- Shazzrah
+						228433,	-- Baron Geddon
+						228435,	-- Golemagg the Incinerator
+					},
+				})),
+				-- #endif
 				i(18291, {	-- Schematic: Force Reactive Disk (RECIPE!)
 					["crs"] = {
 						12118,	-- Lucifron
@@ -450,10 +449,36 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			-- In Season of Discovery, this version of the instance has been deprecated and removed in favor of the raid.
+			d(DIFFICULTY.LEGACY_RAID.PLAYER40, bubbleDownTimelineEventSelf("removed 1.15.1", {
+			-- #endif
+			n(ZONE_DROPS, {
+				i(16802),	-- Arcanist Belt (Mage)
+				i(16799),	-- Arcanist Bindings (Mage)
+				i(16864),	-- Belt of Might (Warrior)
+				i(16861),	-- Bracers of Might (Warrior)
+				i(16828),	-- Cenarion Belt (Druid)
+				i(16830),	-- Cenarion Bracers (Druid)
+				i(16838),	-- Earthfury Belt (Shaman)
+				i(16840),	-- Earthfury Bracers (Shaman)
+				i(16806),	-- Felheart Belt (Warlock)
+				i(16804),	-- Felheart Bracers (Warlock)
+				i(16851),	-- Giantstalker's Belt (Hunter)
+				i(16850),	-- Giantstalker's Bracers (Hunter)
+				i(16817),	-- Girdle of Prophecy (Priest)
+				i(16858),	-- Lawbringer Belt (Paladin)
+				i(16857),	-- Lawbringer Bracers (Paladin)
+				i(16827),	-- Nightslayer Belt (Rogue)
+				i(16825),	-- Nightslayer Bracelets (Rogue)
+				i(16819),	-- Vambraces of Prophecy (Priest)
+			}),
 			e(1519, {	-- Lucifron
 				["creatureID"] = 12118,
 				["groups"] = {
+					-- #if NOT SEASON_OF_DISCOVERY
 					i(17329),	-- Hand of Lucifron
+					-- #endif
 					i(18878),	-- Sorcerous Dagger
 					i(17077),	-- Crimson Shocker
 					i(18870),	-- Helm of the Lifegiver
@@ -471,6 +496,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(16859),	-- Lawbringer Boots (Paladin)
 					i(18879),	-- Heavy Dark Iron Ring
 					i(19147),	-- Ring of Spell Power
+					-- #if NOT SEASON_OF_DISCOVERY
 					i(16665, {	-- Tome of Tranquilizing Shot
 						["classes"] = { HUNTER },
 						["timeline"] = REMOVED_WITH_WRATH,
@@ -478,6 +504,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["recipeID"] = 19801,	-- Tranquilizing Shot
 						-- #endif
 					}),
+					-- #endif
 				},
 			}),
 			e(1520, {	-- Magmadar
@@ -518,7 +545,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(1521, {	-- Gehennas
 				["creatureID"] = 12259,
 				["groups"] = {
+					-- #if NOT SEASON_OF_DISCOVERY
 					i(17331),	-- Hand of Gehennas
+					-- #endif
 					i(18878),	-- Sorcerous Dagger
 					i(17077),	-- Crimson Shocker
 					i(18870),	-- Helm of the Lifegiver
@@ -540,9 +569,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(1522, {	-- Garr
 				["creatureID"] = 12057,
 				["groups"] = {
+					-- #if NOT SEASON_OF_DISCOVERY
 					i(18564, {	-- Bindings of the Windseeker (Right)
 						["classes"] = ALL_CLASSES,
 					}),
+					-- #endif
 					i(18822),	-- Obsidian Edged Blade
 					i(17105),	-- Aurastone Hammer
 					i(18832),	-- Brutality Blade
@@ -572,7 +603,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(1523, {	-- Shazzrah
 				["creatureID"] = 12264,
 				["groups"] = {
+					-- #if NOT SEASON_OF_DISCOVERY
 					i(17332),	-- Hand of Shazzrah
+					-- #endif
 					i(18878),	-- Sorcerous Dagger
 					i(17077),	-- Crimson Shocker
 					i(18870),	-- Helm of the Lifegiver
@@ -594,9 +627,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(1524, {	-- Baron Geddon
 				["creatureID"] = 12056,
 				["groups"] = {
+					-- #if NOT SEASON_OF_DISCOVERY
 					i(18563, {	-- Bindings of the Windseeker (Left)
 						["classes"] = ALL_CLASSES,
 					}),
+					-- #endif
 					i(18822),	-- Obsidian Edged Blade
 					i(19142),	-- Fire Runed Grimoire
 					i(16797),	-- Arcanist Mantle (Mage)
@@ -623,12 +658,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(1525, {	-- Sulfuron Harbinger
 				["creatureID"] = 12098,
 				["groups"] = {
+					-- #if NOT SEASON_OF_DISCOVERY
 					i(17330),	-- Hand of Sulfuron
+					-- #endif
 					i(93033, {	-- Harbinger of Flame (PET!)
 						["timeline"] = { ADDED_5_1_0 },
 					}),
 					i(17074),	-- Shadowstrike
-					i(17223),	-- Thunderstrike
+					i(17223, {	-- Thunderstrike
+						["provider"] = { "i", 17074 },	-- Shadowstrike
+						["description"] = "Use Shadowstrike to create this item.",
+					}),
 					i(18878),	-- Sorcerous Dagger
 					i(17077),	-- Crimson Shocker
 					i(18870),	-- Helm of the Lifegiver
@@ -651,7 +691,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(93035, {	-- Ashstone Core (PET!)
 						["timeline"] = { ADDED_5_1_0 },
 					}),
+					-- #if NOT SEASON_OF_DISCOVERY
 					i(17203),	-- Sulfuron Ingot
+					-- #endif
 					i(18822),	-- Obsidian Edged Blade
 					i(18842),	-- Staff of Dominance
 					i(17103),	-- Azuresong Mageblade
@@ -681,6 +723,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				["creatureID"] = 12018,
 				["provider"] = { "o", 179703 },	-- Cache of the Firelord
 				["groups"] = {
+					-- #if NOT SEASON_OF_DISCOVERY
 					i(18703, {	-- Ancient Petrified Leaf
 						["classes"] = { HUNTER },
 						["timeline"] = REMOVED_WITH_CATA,
@@ -691,6 +734,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = REMOVED_WITH_CATA,
 						["classes"] = { PRIEST },
 					}),
+					-- #endif
 					i(18803),	-- Hyperthermically Insulated Lava Dredger / Finkle's Lava Dredger
 					i(18805),	-- Core Hound Tooth
 					i(19139),	-- Fireguard Shoulders
@@ -706,6 +750,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			e(1528, {	-- Ragnaros
 				["creatureID"] = 11502,
 				["groups"] = {
+					-- #if NOT SEASON_OF_DISCOVERY
 					ach(686, {	-- Molten Core
 						-- #if BEFORE WRATH
 						["sourceQuests"] = {
@@ -718,30 +763,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["timeline"] = { ADDED_4_0_3 },
 					}),
 					ach(429, {	-- Sulfuras, Hand of Ragnaros
-						["provider"] = { "i",	-- Sulfuras, Hand of Ragnaros
-							-- #if SEASON_OF_DISCOVERY
-							227683,
-							-- #else
-							17182,
-							-- #endif
-						},
+						["provider"] = { "i", 17182 },	-- Sulfuras, Hand of Ragnaros
 						-- #if BEFORE WRATH
 						["description"] = "Wielder of Sulfuras, Hand of Ragnaros.",
 						-- #endif
 						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 					}),
-					-- #if SEASON_OF_DISCOVERY
-					applyclassicphase(SOD_PHASE_FOUR, i(227683, {	-- Sulfuras, Hand of Ragnaros
-						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
-						["timeline"] = { "added 1.15.3" },
-						["cost"] = {
-							{ "i", 227728, 1 },	-- Eye of Sulfuras
-							{ "i", 227684, 1 },	-- Sulfuron Hammer
-						},
-					})),
-					applyclassicphase(SOD_PHASE_FOUR, i(227728, {	-- Eye of Sulfuras
-						["timeline"] = { "added 1.15.3" },
-					})),
 					-- #endif
 					i(17182, {	-- Sulfuras, Hand of Ragnaros
 						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
@@ -797,6 +824,442 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, d(DIFFICULTY.SOD.PLAYER20, bubbleDownSelf({ ["timeline"] = { "added 1.15.3" }, }, {
+				n(228429, {	-- Lucifron
+					i(17329),	-- Hand of Lucifron
+					i(227533),	-- Incandescent Gloves
+					i(227756),	-- Molten Scaled Gloves
+					i(227759),	-- Scorched Core Gloves
+					i(228263),	-- Sorcerous Dagger
+					i(228262),	-- Crimson Shocker
+					i(228285),	-- Helm of the Lifegiver
+					i(228247),	-- Choker of Enlightenment
+					i(228239),	-- Robe of Volatile Power
+					i(228127),	-- Wristguards of Instability
+					i(228246),	-- Wristguards of Stability
+					i(228240),	-- Flamewaker Legplates
+					i(228244),	-- Manastorm Leggings
+					i(228245),	-- Salamander Scale Pants
+					i(228242),	-- Heavy Dark Iron Ring
+					i(228243),	-- Ring of Spell Power
+					i(16665, {	-- Tome of Tranquilizing Shot
+						["classes"] = { HUNTER },
+						["timeline"] = REMOVED_WITH_WRATH,
+						-- #if BEFORE WRATH
+						["recipeID"] = 19801,	-- Tranquilizing Shot
+						-- #endif
+					}),
+				}),
+				n(228430, {	-- Magmadar
+					i(227534),	-- Incandescent Leggings
+					i(227754),	-- Molten Scaled Leggings
+					i(227763),	-- Scorched Core Leggings
+					i(228248),	-- Earthshaker
+					i(228146),	-- Magmadar's Left Claw
+					i(228229),	-- Obsidian Edged Blade
+					i(228252),	-- Striker's Mark
+					i(228259),	-- Fire Runed Grimoire
+					i(228249),	-- Medallion of Steadfast Might
+					i(228258),	-- Deep Earth Spaulders
+					i(228101),	-- Hide of the Behemoth
+					i(228257),	-- Aged Core Leather Gloves
+					i(228260),	-- Flameguard Gauntlets
+					i(228256),	-- Mana Igniting Cord
+					i(228254),	-- Magma Tempered Boots
+					i(228253),	-- Sabatons of the Flamewalker
+					i(228261),	-- Quick Strike Ring
+					i(228255),	-- Talisman of Ephemeral Power
+				}),
+				n(228431, {	-- Gehennas
+					i(17331),	-- Hand of Gehennas
+					i(227536),	-- Incandescent Boots
+					i(227757),	-- Molten Scaled Boots
+					i(227765),	-- Scorched Core Boots
+					i(228350),	-- Eskhandar's Right Claw
+					i(228263),	-- Sorcerous Dagger
+					i(228262),	-- Crimson Shocker
+					i(228285),	-- Helm of the Lifegiver
+					i(228239),	-- Robe of Volatile Power
+					i(228127),	-- Wristguards of Instability
+					i(228246),	-- Wristguards of Stability
+					i(228240),	-- Flamewaker Legplates
+					i(228244),	-- Manastorm Leggings
+					i(228245),	-- Salamander Scale Pants
+					i(228242),	-- Heavy Dark Iron Ring
+					i(228243),	-- Ring of Spell Power
+				}),
+				n(228432, {	-- Garr
+					-- #if NOT SEASON_OF_DISCOVERY
+					i(18564, {	-- Bindings of the Windseeker (Right)
+						["classes"] = ALL_CLASSES,
+					}),
+					-- #endif
+					i(227532),	-- Incandescent Hood
+					i(227755),	-- Molten Scaled Helm
+					i(227764),	-- Scorched Core Helm
+					i(228264),	-- Aurastone Hammer
+					i(228265),	-- Brutality Blade
+					i(228160),	-- Faithbringer
+					i(228139),	-- Fist of the Firesworn
+					i(228267),	-- Gutgore Ripper
+					i(228229),	-- Obsidian Edged Blade
+					i(228266),	-- Drillborer Disk
+					i(228142),	-- Earth and Fire
+					i(228259),	-- Fire Runed Grimoire
+					i(228258),	-- Deep Earth Spaulders
+					i(228257),	-- Aged Core Leather Gloves
+					i(228260),	-- Flameguard Gauntlets
+					i(228256),	-- Mana Igniting Cord
+					i(228240),	-- Flamewaker Legplates
+					i(228254),	-- Magma Tempered Boots
+					i(228261),	-- Quick Strike Ring
+					i(228255),	-- Talisman of Ephemeral Power
+				}),
+				n(228434, {	-- Shazzrah
+					i(17332),	-- Hand of Shazzrah
+					i(227531),	-- Incandescent Bindings
+					i(227750),	-- Molten Scaled Bindings
+					i(227760),	-- Scorched Core Bindings
+					i(228263),	-- Sorcerous Dagger
+					i(228262),	-- Crimson Shocker
+					i(228285),	-- Helm of the Lifegiver
+					i(228239),	-- Robe of Volatile Power
+					i(228127),	-- Wristguards of Instability
+					i(228246),	-- Wristguards of Stability
+					i(228240),	-- Flamewaker Legplates
+					i(228244),	-- Manastorm Leggings
+					i(228245),	-- Salamander Scale Pants
+					i(228253),	-- Sabatons of the Flamewalker
+					i(228242),	-- Heavy Dark Iron Ring
+					i(228243),	-- Ring of Spell Power
+				}),
+				n(228433, {	-- Baron Geddon
+					-- #if NOT SEASON_OF_DISCOVERY
+					i(18563, {	-- Bindings of the Windseeker (Left)
+						["classes"] = ALL_CLASSES,
+					}),
+					-- #endif
+					i(228160),	-- Faithbringer
+					i(228139),	-- Fist of the Firesworn
+					i(228229),	-- Obsidian Edged Blade
+					i(228142),	-- Earth and Fire
+					i(228259),	-- Fire Runed Grimoire
+					i(228258),	-- Deep Earth Spaulders
+					i(228257),	-- Aged Core Leather Gloves
+					i(228260),	-- Flameguard Gauntlets
+					i(228256),	-- Mana Igniting Cord
+					i(228240),	-- Flamewaker Legplates
+					i(228254),	-- Magma Tempered Boots
+					i(228261),	-- Quick Strike Ring
+					i(228268),	-- Seal of the Archmagus
+					i(228255),	-- Talisman of Ephemeral Power
+				}),
+				n(228436, {	-- Sulfuron Harbinger
+					i(17330),	-- Hand of Sulfuron
+					i(17203),	-- Sulfuron Ingot
+					i(227532),	-- Incandescent Hood
+					i(227755),	-- Molten Scaled Helm
+					i(227764),	-- Scorched Core Helm
+					i(227537),	-- Incandescent Shoulderpads
+					i(227752),	-- Molten Scaled Shoulderpads
+					i(227762),	-- Scorched Core Shoulderpads
+					i(227535),	-- Incandescent Robe
+					i(227758),	-- Molten Scaled Chest
+					i(227766),	-- Scorched Core Chest
+					i(227531),	-- Incandescent Bindings
+					i(227750),	-- Molten Scaled Bindings
+					i(227760),	-- Scorched Core Bindings
+					i(227533),	-- Incandescent Gloves
+					i(227756),	-- Molten Scaled Gloves
+					i(227759),	-- Scorched Core Gloves
+					i(227534),	-- Incandescent Leggings
+					i(227754),	-- Molten Scaled Leggings
+					i(227763),	-- Scorched Core Leggings
+					i(227536),	-- Incandescent Boots
+					i(227757),	-- Molten Scaled Boots
+					i(227765),	-- Scorched Core Boots
+					i(228128),	-- Hammer of The Black Anvil
+					i(228272),	-- Shadowstrike
+					i(228273, {	-- Thunderstrike
+						["provider"] = { "i", 228272 },	-- Shadowstrike
+						["description"] = "Use Shadowstrike to create this item.",
+					}),
+					i(228263),	-- Sorcerous Dagger
+					i(228262),	-- Crimson Shocker
+					i(228285),	-- Helm of the Lifegiver
+					i(228239),	-- Robe of Volatile Power
+					i(228127),	-- Wristguards of Instability
+					i(228246),	-- Wristguards of Stability
+					i(228260),	-- Flameguard Gauntlets
+					i(228244),	-- Manastorm Leggings
+					i(228245),	-- Salamander Scale Pants
+					i(228242),	-- Heavy Dark Iron Ring
+					i(228243),	-- Ring of Spell Power
+				}),
+				n(228435, {	-- Golemagg the Incinerator
+					i(17203),	-- Sulfuron Ingot
+					i(227532),	-- Incandescent Hood
+					i(227755),	-- Molten Scaled Helm
+					i(227764),	-- Scorched Core Helm
+					i(227537),	-- Incandescent Shoulderpads
+					i(227752),	-- Molten Scaled Shoulderpads
+					i(227762),	-- Scorched Core Shoulderpads
+					i(227535),	-- Incandescent Robe
+					i(227758),	-- Molten Scaled Chest
+					i(227766),	-- Scorched Core Chest
+					i(227531),	-- Incandescent Bindings
+					i(227750),	-- Molten Scaled Bindings
+					i(227760),	-- Scorched Core Bindings
+					i(227533),	-- Incandescent Gloves
+					i(227756),	-- Molten Scaled Gloves
+					i(227759),	-- Scorched Core Gloves
+					i(227534),	-- Incandescent Leggings
+					i(227754),	-- Molten Scaled Leggings
+					i(227763),	-- Scorched Core Leggings
+					i(227536),	-- Incandescent Boots
+					i(227757),	-- Molten Scaled Boots
+					i(227765),	-- Scorched Core Boots
+					i(228269),	-- Azuresong Mageblade
+					i(228270),	-- Blastershot Launcher
+					i(228229),	-- Obsidian Edged Blade
+					i(228271),	-- Staff of Dominance
+					i(228259),	-- Fire Runed Grimoire
+					i(228137),	-- Heart of Golemagg
+					i(228147),	-- Magmadar's Horn
+					i(228258),	-- Deep Earth Spaulders
+					i(228257),	-- Aged Core Leather Gloves
+					i(228260),	-- Flameguard Gauntlets
+					i(228256),	-- Mana Igniting Cord
+					i(228240),	-- Flamewaker Legplates
+					i(228254),	-- Magma Tempered Boots
+					i(228261),	-- Quick Strike Ring
+					i(228255),	-- Talisman of Ephemeral Power
+				}),
+				n(228437, {	-- Majordomo Executus
+					["provider"] = { "o", 179703 },	-- Cache of the Firelord
+					["groups"] = {
+						i(18703, {	-- Ancient Petrified Leaf
+							["classes"] = { HUNTER },
+							["timeline"] = REMOVED_WITH_CATA,
+							["lvl"] = 60,
+						}),
+						i(18646, {	-- The Eye of Divinity
+							["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
+							["timeline"] = REMOVED_WITH_CATA,
+							["classes"] = { PRIEST },
+						}),
+						i(17203),	-- Sulfuron Ingot
+						i(227532),	-- Incandescent Hood
+						i(227755),	-- Molten Scaled Helm
+						i(227764),	-- Scorched Core Helm
+						i(227537),	-- Incandescent Shoulderpads [NOTE: This might not drop from here, according to WoWHead]
+						i(227752),	-- Molten Scaled Shoulderpads [NOTE: This might not drop from here, according to WoWHead]
+						i(227762),	-- Scorched Core Shoulderpads [NOTE: This might not drop from here, according to WoWHead]
+						i(227535),	-- Incandescent Robe
+						i(227758),	-- Molten Scaled Chest
+						i(227766),	-- Scorched Core Chest
+						i(227531),	-- Incandescent Bindings
+						i(227750),	-- Molten Scaled Bindings
+						i(227760),	-- Scorched Core Bindings
+						i(227533),	-- Incandescent Gloves
+						i(227756),	-- Molten Scaled Gloves
+						i(227759),	-- Scorched Core Gloves
+						i(227534),	-- Incandescent Leggings
+						i(227754),	-- Molten Scaled Leggings
+						i(227763),	-- Scorched Core Leggings
+						i(227536),	-- Incandescent Boots
+						i(227757),	-- Molten Scaled Boots
+						i(227765),	-- Scorched Core Boots
+						i(228277),	-- Core Hound Tooth
+						i(228278),	-- Hyperthermically Insulated Lava Dredger
+						i(228280),	-- Fireproof Cloak
+						i(228102),	-- Majordomo's Drape
+						i(228279),	-- Fireguard Shoulders
+						i(228283),	-- Wild Growth Spaulders
+						i(228284),	-- Wristguards of True Flight
+						i(228281),	-- Gloves of the Hypnotic Flame
+						i(228282),	-- Sash of Whispered Secrets
+						i(228275),	-- Core Forged Greaves
+						i(228274),	-- Cauterizing Band
+					},
+				}),
+				n(228438, {	-- Ragnaros
+					ach(686, {	-- Molten Core
+						-- #if BEFORE WRATH
+						["sourceQuests"] = {
+							7787,	-- Rise, Thunderfury!
+							8620,	-- The Only Prescription
+						},
+						-- #endif
+					}),
+					ach(429, {	-- Sulfuras, Hand of Ragnaros
+						["provider"] = { "i", 227683 },	-- Sulfuras, Hand of Ragnaros
+						-- #if BEFORE WRATH
+						["description"] = "Wielder of Sulfuras, Hand of Ragnaros.",
+						-- #endif
+						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
+					}),
+					i(227683, {	-- Sulfuras, Hand of Ragnaros
+						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
+						["cost"] = {
+							{ "i", 227728, 1 },	-- Eye of Sulfuras
+							{ "i", 227684, 1 },	-- Sulfuron Hammer
+						},
+					}),
+					i(227728),	-- Eye of Sulfuras
+					i(17203),	-- Sulfuron Ingot
+					i(227532),	-- Incandescent Hood
+					i(227755),	-- Molten Scaled Helm
+					i(227764),	-- Scorched Core Helm
+					i(227537),	-- Incandescent Shoulderpads
+					i(227752),	-- Molten Scaled Shoulderpads
+					i(227762),	-- Scorched Core Shoulderpads
+					i(227535),	-- Incandescent Robe
+					i(227758),	-- Molten Scaled Chest
+					i(227766),	-- Scorched Core Chest
+					i(227531),	-- Incandescent Bindings
+					i(227750),	-- Molten Scaled Bindings
+					i(227760),	-- Scorched Core Bindings
+					i(227533),	-- Incandescent Gloves
+					i(227756),	-- Molten Scaled Gloves
+					i(227759),	-- Scorched Core Gloves
+					i(227534),	-- Incandescent Leggings
+					i(227754),	-- Molten Scaled Leggings
+					i(227763),	-- Scorched Core Leggings
+					i(227536),	-- Incandescent Boots
+					i(227757),	-- Molten Scaled Boots
+					i(227765),	-- Scorched Core Boots
+					i(228288),	-- Bonereaver's Edge
+					i(228145),	-- Magmadar's Right Claw
+					i(228296),	-- Perdition's Blade
+					i(228299),	-- Spinal Reaper
+					i(228294),	-- Malistar's Defender
+					i(228291),	-- Crown of Destruction
+					i(228289),	-- Choker of the Firelord
+					i(228290),	-- Cloak of the Shrouded Mists
+					i(228292),	-- Dragon's Blood Cape
+					i(228295),	-- Onslaught Girdle
+					i(228286),	-- Band of Accuria
+					i(228287),	-- Band of Sulfuras
+					i(228293),	-- Essence of the Pure Flame
+					i(228297),	-- Shard of the Flame
+				}),
+				n(227939, {	-- The Molten Core
+					
+				}),
+				spell(458843, {	-- Molten Heat [Heat Level 3]
+					["description"] = "You can opt into Heat Level 3 by speaking to Duke Hydraxis. Doing so will drop 'Molten' varients of the weapons that have a neat molten appearance despite providing no difference in quality. (Cosmetic only!)",
+					["groups"] = {
+						i(228462, {	-- Aurastone Hammer [Molten]
+							["cr"] = 228432,	-- Garr
+						}),
+						i(228517, {	-- Azuresong Mageblade [Molten]
+							["cr"] = 228435,	-- Golemagg the Incinerator
+						}),
+						i(228461, {	-- Bonereaver's Edge [Molten]
+							["providers"] = {
+								{ "n", 228437 },	-- Majordomo Executus
+								{ "o", 179703 },	-- Cache of the Firelord
+								{ "n", 228438 },	-- Ragnaros
+							},
+						}),
+						i(228506, {	-- Brutality Blade [Molten]
+							["cr"] = 228432,	-- Garr
+						}),
+						i(228701, {	-- Core Hound Tooth [Molten]
+							["providers"] = {
+								{ "n", 228437 },	-- Majordomo Executus
+								{ "o", 179703 },	-- Cache of the Firelord
+							},
+						}),
+						i(228702, {	-- Drillborer Disk [Molten]
+							["cr"] = 228432,	-- Garr
+						}),
+						i(228463, {	-- Earthshaker [Molten]
+							["cr"] = 228430,	-- Magmadar
+						}),
+						i(229379, {	-- Eskhandar's Right Claw [Molten]
+							["cr"] = 228431,	-- Gehennas
+						}),
+						i(229373, {	-- Faithbringer [Molten]
+							["crs"] = {
+								228432,	-- Garr
+								228433,	-- Baron Geddon
+							},
+						}),
+						i(229374, {	-- Fist of the Firesworn [Molten]
+							["crs"] = {
+								228432,	-- Garr
+								228433,	-- Baron Geddon
+							},
+						}),
+						i(229372, {	-- Gutgore Ripper [Molten]
+							["cr"] = 228432,	-- Garr
+						}),
+						i(228508, {	-- Hammer of The Black Anvil [Molten]
+							["cr"] = 228436,	-- Sulfuron Harbinger
+						}),
+						i(229377, {	-- Magmadar's Left Claw [Molten]
+							["cr"] = 228430,	-- Magmadar
+						}),
+						i(228459, {	-- Obsidian Edged Blade [Molten]
+							["crs"] = {
+								228430,	-- Magmadar
+								228432,	-- Garr
+								228433,	-- Baron Geddon
+								228435,	-- Golemagg the Incinerator
+							},
+						}),
+						i(228511, {	-- Perdition's Blade [Molten]
+							["cr"] = 228438,	-- Ragnaros
+						}),
+						--[[
+						i(, {	--  [Molten]
+							["crs"] = {
+								,	-- 
+							},
+						}),
+						i(, {	--  [Molten]
+							["crs"] = {
+								,	-- 
+							},
+						}),
+						i(, {	--  [Molten]
+							["crs"] = {
+								,	-- 
+							},
+						}),
+						]]--
+						i(229380, {	-- Shadowstrike [Molten]
+							["cr"] = 228436,	-- Sulfuron Harbinger
+						}),
+						i(229376, {	-- Sorcerous Dagger [Molten]
+							["crs"] = {
+								228429,	-- Lucifron
+								228434,	-- Shazzrah
+								228431,	-- Gehennas
+								228436,	-- Sulfuron Harbinger
+							},
+						}),
+						i(228460, {	-- Spinal Reaper [Molten]
+							["cr"] = 228438,	-- Ragnaros
+						}),
+						i(228922, {	-- Staff of Dominance [Molten]
+							["cr"] = 228435,	-- Golemagg the Incinerator
+						}),
+						i(228519, {	-- Striker's Mark [Molten]
+							["cr"] = 228430,	-- Magmadar
+						}),
+						i(229381, {	-- Thunderstrike [Molten]
+							["provider"] = { "i", 229380 },	-- Shadowstrike [Molten]
+							["description"] = "Use Shadowstrike to create this item.",
+						}),
+					},
+				}),
+			}))),
+			-- #endif
 		},
 	}),
 }));

@@ -718,6 +718,71 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						NEMESIS_SKULLCAP,
 						NETHERWIND_CROWN,
 						STORMRAGE_COVER,
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227532, {	-- Incandescent Hood
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227755, {	-- Molten Scaled Helm
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227764, {	-- Scorched Core Helm
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227537, {	-- Incandescent Shoulderpads
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227752, {	-- Molten Scaled Shoulderpads
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227762, {	-- Scorched Core Shoulderpads
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227535, {	-- Incandescent Robe
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227758, {	-- Molten Scaled Chest
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227766, {	-- Scorched Core Chest
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227531, {	-- Incandescent Bindings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227750, {	-- Molten Scaled Bindings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227760, {	-- Scorched Core Bindings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227533, {	-- Incandescent Gloves
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227756, {	-- Molten Scaled Gloves
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227759, {	-- Scorched Core Gloves
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227534, {	-- Incandescent Leggings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227754, {	-- Molten Scaled Leggings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227763, {	-- Scorched Core Leggings
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227536, {	-- Incandescent Boots
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227757, {	-- Molten Scaled Boots
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227765, {	-- Scorched Core Boots
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(18205),	-- Eskhandar's Collar
 						i(17078),	-- Sapphiron Drape
 						i(18813),	-- Ring of Binding

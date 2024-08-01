@@ -1467,9 +1467,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(10576),	-- Mithril Mechanical Dragonling
 		}),
 		n(WEAPONS, {
-			i(18282),	-- Core Marksman Rifle
+			i(18282, {	-- Core Marksman Rifle
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(16004),	-- Dark Iron Rifle
 			i(4369),	-- Deadly Blunderbuss
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227849, {	-- Fiery Core Sharpshooter Rifle
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(16007, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Flawless Arcanite Rifle
 			i(18168),	-- Force Reactive Disk
 			i(4372, {["timeline"] = {REMOVED_4_0_3, ADDED_4_1_0}}),	-- Lovingly Crafted Boomstick

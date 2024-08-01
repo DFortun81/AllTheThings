@@ -25,6 +25,11 @@ i(215153, 435958);	-- Whirling Truesilver Gearwall
 i(0, 446236);		-- Void-Powered Invoker's Vambraces
 i(0, 446238);		-- Void-Powered Protector's Vambraces
 i(0, 446237);		-- Void-Powered Slayer's Vambraces
+
+------------------
+-- PATCH 1.15.3 --
+------------------
+i(228304, 461710);	-- Fiery Core Sharpshooter Rifle
 -- #endif
 
 -----------------
