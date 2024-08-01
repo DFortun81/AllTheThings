@@ -1666,7 +1666,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		},
 		["cost"] = { { "i", 13704, 1 } },	-- Skeleton Key
 		-- #endif
-		["lvl"] = lvlsquish(58, 33, 33),
+		["lvl"] = lvlsquish(55, 33, 33),
 		["groups"] = SCHOLOMANCE_GROUPS,
 	}),
 }));
