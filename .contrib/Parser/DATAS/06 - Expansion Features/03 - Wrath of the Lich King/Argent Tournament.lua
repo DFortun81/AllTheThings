@@ -4858,7 +4858,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 			}),
 			n(ZONE_DROPS, {
 				i(46069, {	-- Alliance Lance
-					["provider"] = { "o", 194618 },	-- Lance Rack
+					["providers"] = {
+						{ "o", 194618 },	-- Lance Rack
+						{ "o", 194622 },	-- Lance Rack
+					},
 					["coord"] = { 75.9, 19.8, ICECROWN },
 					["races"] = ALLIANCE_ONLY,
 				}),
