@@ -7,6 +7,12 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		n(ZONE_DROPS, {
 			["description"] = "Can drop randomly from bosses and memory events, Recruit drops respect usability but Dalaran Defender drops do not.",
 			["maps"] = { DUSTWALLOW_MARSH, DRAGONBLIGHT, SEARING_GORGE },
+			["sym"] = {	-- Symlink all armor and weapons from the Vendor
+				{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
+				{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
+				{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
+				{"where","headerID",WEAPONS},
+			},
 			["g"] = bubbleDownFiltered({
 				["lockCriteria"] = { 1, "lvl", 70 },
 			},FILTERFUNC_itemID,{
@@ -147,13 +153,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					}),
 				})),
 			}),
-			-- Symlink all armor and weapons from the Vendor
-			["sym"] = {
-				{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
-				{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
-				{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
-				{"where","headerID",WEAPONS},
-			},
 		}),
 		n(ACHIEVEMENTS, {
 			ach(40796),	-- This Takes Me Back
