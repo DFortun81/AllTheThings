@@ -616,6 +616,7 @@ root(ROOTS.Zones, {
 					heroscall(q(49562, {	-- Hero's Call: Shadowmoon Valley! (Draenor)
 						["description"] = "Abandon quest 'Step Three: Prophet!' after the 'Assault on the Dark Portal' scenario and visit a Hero's Call Board to pick this quest up.",
 						["timeline"] = { ADDED_7_3_5 },
+						["DisablePartySync"] = true,
 						["isBreadcrumb"] = true,
 						["lvl"] = 90,
 					})),

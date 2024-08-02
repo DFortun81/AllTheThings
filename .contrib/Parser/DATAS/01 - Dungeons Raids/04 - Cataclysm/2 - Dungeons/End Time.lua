@@ -40,13 +40,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["qg"] = 52382,	-- Ziradormi
 					["coord"] = { 48.8, 70.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
+					-- AlexSoft note: this is could be different for Classic version
+					-- I didn't check Horde version but assumed that it is same
+					["lockCriteria"] = { 1, "factionID", 989.5 },	-- Keepers of Time, Friendly
 				}),
 				q(30095, {	-- The End Time
 					["qg"] = 52408,	-- Coridormi
 					["coord"] = { 49.4, 87.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
+					-- AlexSoft note: this is could be different for Classic version
+					["lockCriteria"] = { 1, "factionID", 989.5 },	-- Keepers of Time, Friendly
 				}),
 				q(30098, {	-- The Well of Eternity
 					["qg"] = 54751,	-- Nozdormu

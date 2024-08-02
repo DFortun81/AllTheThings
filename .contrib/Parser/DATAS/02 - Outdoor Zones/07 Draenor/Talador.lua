@@ -1057,6 +1057,7 @@ root(ROOTS.Zones, {
 					}),
 					heroscall(q(49565, {	-- Hero's Call: Talador!
 						["timeline"] = { ADDED_7_3_5 },
+						["DisablePartySync"] = true,
 						["isBreadcrumb"] = true,
 						["lvl"] = 94,
 					})),
