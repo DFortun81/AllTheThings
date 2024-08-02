@@ -2,7 +2,7 @@
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
 local RESIDUAL_MEMORIES = 3089;
-root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_PH_PREPATCH, REMOVED_11_PH_LAUNCH } }, {	-- This hasn't been added yet
+root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_PH_PREPATCH, REMOVED_11_PH_LAUNCH } }, {
 	expansion(EXPANSION.TWW, {
 		n(ZONE_DROPS, {
 			["description"] = "Can drop randomly from bosses and memory events, Recruit drops respect usability but Dalaran Defender drops do not.",
@@ -43,13 +43,13 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218278),	-- Recruit's Sturdy Wristbands
 						}),
 						filter(CLOTH, {
-							i(218293),	-- Recruit's Sturdy Breeches
 							i(218296),	-- Recruit's Sturdy Bindings
+							i(218293),	-- Recruit's Sturdy Breeches
 							i(218292),	-- Recruit's Sturdy Hood
-							i(218291),	-- Recruit's Sturdy Mitts
 							i(218294),	-- Recruit's Sturdy Mantle
-							i(218290),	-- Recruit's Sturdy Slippers
+							i(218291),	-- Recruit's Sturdy Mitts
 							i(218295),	-- Recruit's Sturdy Sash
+							i(218290),	-- Recruit's Sturdy Slippers
 							i(218289),	-- Recruit's Sturdy Robes
 						}),
 						filter(BACK_F, {
@@ -161,6 +161,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		n(BOSSES, {
 			m(EASTERN_KINGDOMS, {
 				i(226256, { -- Token of the Remembrancers
+					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
@@ -172,6 +173,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 			}),
 			m(KALIMDOR, {
 				i(226256, { -- Token of the Remembrancers
+					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
@@ -183,6 +185,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 			}),
 			m(NORTHREND, {
 				i(226256, { -- Token of the Remembrancers
+					["description"] = "Drops once per week per character.",
 					["sym"] = {
 						{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 						{"whereany","filterID",BACK_F,CLOTH,FINGER_F,LEATHER,MAIL,NECK_F,PLATE,TRINKET_F},{"finalize"},
@@ -206,7 +209,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					i(227669),	-- Teleportation Scroll (QI!)
 				},
 			}),
-			q(78714, {	-- Oh, THAT Sword
+			q(78714, {	-- A Poor Reception
 				["sourceQuests"] = {
 					81930,	-- The War Within [A]
 					78713,	-- The War Within [H]
@@ -217,7 +220,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["sourceQuestNumRequired"] = 1,
 			}),
 			q(78715, {	-- Azeroth's Voice
-				["sourceQuests"] = { 78714 },	-- Oh, THAT Sword
+				["sourceQuests"] = { 78714 },	-- A Poor Reception
 				["provider"] = { "n", 213624 },	-- Magni Bronzebeard
 				["coord"] = { 50.1, 64.4, 2321 },	-- Chamber of Heart
 			}),
