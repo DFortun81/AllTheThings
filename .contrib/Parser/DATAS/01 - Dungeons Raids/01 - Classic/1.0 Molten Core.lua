@@ -1313,6 +1313,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228270),	-- Blastershot Launcher
 					i(228229),	-- Obsidian Edged Blade
 					i(228271),	-- Staff of Dominance
+					i(228294),	-- Malistar's Defender
 					i(228259),	-- Fire Runed Grimoire
 					i(228137),	-- Heart of Golemagg
 					i(228147),	-- Magmadar's Horn
@@ -1429,7 +1430,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228145),	-- Magmadar's Right Claw
 					i(228296),	-- Perdition's Blade
 					i(228299),	-- Spinal Reaper
-					i(228294),	-- Malistar's Defender
+					--i(228294),	-- Malistar's Defender
 					i(228291),	-- Crown of Destruction
 					i(228289),	-- Choker of the Firelord
 					i(228290),	-- Cloak of the Shrouded Mists
