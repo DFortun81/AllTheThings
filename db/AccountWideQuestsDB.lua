@@ -1139,4 +1139,8 @@ select(2, ...).AccountWideQuestsDB = {
 	[81993] = true,
 	[82809] = true,
 	[83492] = true,
+
+	[82689] = true,	-- Only Darkness
+	[78938] = true,	-- Champion of the Waterlords
+	[82676] = true,	-- Broken Masquerade
 }
