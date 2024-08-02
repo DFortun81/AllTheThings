@@ -540,13 +540,10 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		}),
 	}),
 })));
-
-root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {
-	expansion(EXPANSION.TWW, {
-		n(HIDDEN_QUESTS, {
-			q(82687),	-- triggered after turn in questID 82689 (Only Darkness) // could be any weekly but lockout for first per week?
-			q(82688),	-- triggered after turn in questID 82689 (Only Darkness) // could be any weekly but lockout for first per week?
-			q(84083),	-- After killing Onyxia (all bosses?)
-		}),
-	}),
-})));
+root(ROOTS.HiddenQuestTriggers, {
+	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {
+		q(82687),	-- Triggered after 'Only Darkness' (questID 82689)
+		q(82688),	-- Triggered after 'Only Darkness' (questID 82689)
+		q(84083),	-- After killing Onyxia (all bosses?)
+	})),
+});
