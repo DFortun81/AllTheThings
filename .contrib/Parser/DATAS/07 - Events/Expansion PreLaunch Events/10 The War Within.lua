@@ -7,9 +7,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 		n(ZONE_DROPS, {
 			["description"] = "Can drop randomly from bosses and memory events, Recruit drops respect usability but Dalaran Defender drops do not.",
 			["maps"] = { DUSTWALLOW_MARSH, DRAGONBLIGHT, SEARING_GORGE },
-			["g"] = sharedData({
+			["g"] = bubbleDownFiltered({
 				["lockCriteria"] = { 1, "lvl", 70 },
-			},{
+			},FILTERFUNC_itemID,{
 				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY },{
 					n(ARMOR, {
 						filter(BACK_F, {
