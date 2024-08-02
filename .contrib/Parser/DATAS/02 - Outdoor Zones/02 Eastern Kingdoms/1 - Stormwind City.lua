@@ -692,23 +692,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				-- #if SEASON_OF_DISCOVERY
-				applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Aeonas: Journey to Felwood
-					readable = "SOD - Aeonas: Journey to Felwood",
-					icon = "Interface\\CURSOR\\Taxi",
-					text = {
-						en = "Aeonas: Journey to Felwood",
-					},
-				}), {
-					["qg"] = 218160,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
-					["questID"] = 81879,	-- Aeonas: Journey to Felwood HQT
-					["sourceQuest"] = 81764,	-- The Mysterious Merchant
-					["coord"] = { 37.6, 31.6, STORMWIND_CITY },
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 44,
-				})),
-				-- #endif
 				q(11451, {	-- Alicia's Poem
 					["providers"] = {
 						{ "n", 24729 },	-- Alicia
@@ -3872,7 +3855,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(7641, {	-- The Work of Grimand Elmore
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-					["sourceQuest"] = 7640,	-- Exorcising Terrordale
+					["sourceQuests"] = {
+						-- #if SEASON_OF_DISCOVERY
+						7670,	-- Lord Grayson Shadowbreaker [Ironforge]
+						7638,	-- Lord Grayson Shadowbreaker [Stormwind City]
+						-- #else
+						7640,    -- Exorcising Terrordale
+						-- #endif
+					},
 					["coords"] = {
 						-- #if AFTER WRATH
 						{ 48.6, 50.0, STORMWIND_CITY },

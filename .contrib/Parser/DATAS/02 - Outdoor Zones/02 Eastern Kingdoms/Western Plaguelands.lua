@@ -3091,6 +3091,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
 					["sym"] = {{ "select", "itemID", 206584 }},	-- Archived Crafting Techniques
 					["groups"] = {
+						i(13724, {	-- Enriched Manna Biscuit
+							["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
+						}),
 						i(22014, {	-- Hallowed Brazier
 							["timeline"] = { REMOVED_4_0_3 },
 							["minReputation"] = { 529, HONORED },	-- Argent Dawn

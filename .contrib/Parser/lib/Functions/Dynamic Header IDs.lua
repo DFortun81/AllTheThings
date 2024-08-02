@@ -342,6 +342,8 @@ HeaderAssignments = {
 	["Snuffling"] = -1000963,
 	["SOD - Aeonas Whereabouts"] = -1000979,
 	["SOD - Aeonas: Journey to Felwood"] = -1000971,
+	["SOD - Aeonas: Trust in a Friend"] = -1000987,
+	["SOD - Gregory: You Can Trust Me... Probably."] = -1000988,
 	["SOD - Nightmare Incursions"] = -1000969,
 	["SOD - Nightmare Incursions - Aura of Paralyzing Dread"] = -1000980,
 	["SOD - Nightmare Incursions - Emotional Damage"] = -1000981,
@@ -494,4 +496,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000987;
+NextHeaderID = -1000989;

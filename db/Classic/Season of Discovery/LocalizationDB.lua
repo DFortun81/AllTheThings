@@ -333,6 +333,8 @@ localize(L.HEADER_NAMES, {
 	[-1000984] = "Squire Training",
 	[-1000985] = "Inspiration Rank One",
 	[-1000986] = "Inspiration Rank Two",
+	[-1000987] = "Aeonas: Trust in a Friend",
+	[-1000988] = "Gregory: You Can Trust Me... Probably.",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -508,6 +510,8 @@ localize(L.HEADER_ICONS, {
 	[-1000984] = "237377",
 	[-1000985] = "Interface/CURSOR/Attack",
 	[-1000986] = "Interface/CURSOR/Attack",
+	[-1000987] = "Interface/CURSOR/Speak",
+	[-1000988] = "Interface/CURSOR/Speak",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,

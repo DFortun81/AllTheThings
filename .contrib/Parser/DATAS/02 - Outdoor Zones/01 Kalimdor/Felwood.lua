@@ -310,6 +310,38 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 51.4, 80.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Aeonas: Journey to Felwood
+					readable = "SOD - Aeonas: Journey to Felwood",
+					icon = "Interface\\CURSOR\\Taxi",
+					text = {
+						en = "Aeonas: Journey to Felwood",
+					},
+				}), {
+					["qg"] = 218160,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					["questID"] = 81879,	-- Aeonas: Journey to Felwood HQT
+					["sourceQuest"] = 81764,	-- The Mysterious Merchant
+					["coord"] = { 37.6, 31.6, STORMWIND_CITY },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+				})),
+				applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Aeonas: Trust in a Friend
+					readable = "SOD - Aeonas: Trust in a Friend",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Aeonas: Trust in a Friend",
+					},
+				}), {
+					["qg"] = 221587,	-- Aeonas the Vindicated <Former Paladin of the Silver Hand>
+					["questID"] = 81883,	-- Aeonas: Trust in a Friend HQT
+					["sourceQuest"] = 81879,	-- Aeonas: Journey to Felwood HQT
+					["coord"] = { 45, 52, FELWOOD },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+				})),
+				-- #endif
 				q(28150, {	-- An Arcane Ally
 					["qg"] = 10923,	-- Tenell Leafrunner
 					["sourceQuests"] = {
@@ -1252,6 +1284,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, n(createHeader({	-- Gregory: You Can Trust Me... Probably.
+					readable = "SOD - Gregory: You Can Trust Me... Probably.",
+					icon = "Interface\\CURSOR\\Speak",
+					text = {
+						en = "Gregory: You Can Trust Me... Probably.",
+					},
+				}), {
+					["qg"] = 221636,	-- Gregory <Truthbearer>
+					["questID"] = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
+					["sourceQuest"] = 81883,	-- Aeonas: Trust in a Friend HQT
+					["coord"] = { 44.6, 52, FELWOOD },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 44,
+				})),
+				-- #endif
 				q(4883, {	-- Guarding Secrets (2/2)
 					["providers"] = {
 						{ "n", 10306 },	-- Trull Failbane
@@ -1426,8 +1475,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, q(81790, {	-- Materials of Significance
 					["qg"] =  221636,	-- Gregory <Truthbearer>
-					-- TODO: There might be a "Speak to Aeonas" step between the bloody missive and this quest.
-					["sourceQuest"] = 81766,	-- The Bloody Missive
+					["sourceQuest"] = 81884,	-- Gregory: You Can Trust Me... Probably. HQT
 					["coord"] = { 44.6, 52, FELWOOD },
 					["maps"] = { MARAUDON, HILLSBRAD_FOOTHILLS, BLACKROCK_DEPTHS },
 					["classes"] = { PALADIN },
