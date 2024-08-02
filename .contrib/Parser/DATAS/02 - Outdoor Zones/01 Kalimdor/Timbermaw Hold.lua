@@ -349,6 +349,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 45,
 					["groups"] = {
+						objective(1, {	-- 0/6 Deadwood Warrior slain
+							["provider"] = { "n", 7153 },	-- Deadwood Warrior
+						}),
+						objective(2, {	-- 0/6 Deadwood Pathfinder slain
+							["provider"] = { "n", 7155 },	-- Deadwood Pathfinder
+						}),
+						objective(3, {	-- 0/6 Deadwood Gardener slain
+							["provider"] = { "n", 7154 },	-- Deadwood Gardener
+						}),
 						i(21311, {	-- Earth Warder's Vest
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
