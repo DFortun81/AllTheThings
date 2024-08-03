@@ -28,7 +28,7 @@ namespace ATT
         /// <summary>
         /// Adds a post processing function for a given object
         /// </summary>
-        private static void AddPostProcessing(Action<IDictionary<string,object>> act, IDictionary<string, object> obj)
+        private static void AddPostProcessing(Action<IDictionary<string, object>> act, IDictionary<string, object> obj)
         {
             if (!PostProcessFunctions.TryGetValue(act, out var objs))
             {
@@ -1095,7 +1095,6 @@ namespace ATT
             // Or will generate a symlink for the duplicated Items/Appearances
             List<IDictionary<string, object>> symlinkSources = new List<IDictionary<string, object>>();
             List<IDictionary<string, object>> rawSources = new List<IDictionary<string, object>>();
-            Dictionary<long, int> ensembleFilterCount = new Dictionary<long, int>();
             foreach (long sourceID in sourceIDs)
             {
                 if (TryGetSOURCED("sourceID", sourceID, out List<IDictionary<string, object>> sources) && sources.AnyMatchingGroup(IsObtainableData))
@@ -1125,84 +1124,7 @@ namespace ATT
                 }
             }
 
-            // track the known filters for the sources
-            foreach (IDictionary<string, object> source in symlinkSources.Union(rawSources))
-            {
-                if (source.TryGetValue("f", out long filterID))
-                {
-                    if (!ensembleFilterCount.ContainsKey(filterID))
-                    {
-                        ensembleFilterCount[filterID] = 0;
-                    }
-                    ensembleFilterCount[filterID]++;
-                }
-            }
-
-            int filterCount = ensembleFilterCount.Count;
-            if (filterCount > 1)
-            {
-                int totalItems = ensembleFilterCount.Values.Sum();
-                if (totalItems > 5)
-                {
-                    int maxItemsPerFilter = ensembleFilterCount.Values.Max();
-                    // if an ensemble is big enough and grants a majority filterID type of items (i.e. all Plate) then
-                    // any items which do not meet the filter will be excluded automatically
-                    // small ensembles or arsenals should not be affected by this case
-                    if (maxItemsPerFilter > (totalItems / 2))
-                    {
-                        long specificFilter = ensembleFilterCount.First(kvp => kvp.Value == maxItemsPerFilter).Key;
-                        // Cosmetic-granting ensembles grant appearances for other armor types as well
-                        if (!Ensemble_IgnoredFilterIDs.Contains(specificFilter))
-                        {
-                            List<object> removedSymlinked = new List<object>();
-                            List<object> removedSourced = new List<object>();
-                            int removedSymlinks = symlinkSources.RemoveAll(s =>
-                            {
-                                // Some Filter Type Items are still granted when contained in a different-Filtered Ensemble
-                                if (s.TryGetValue("f", out long filterID)
-                                    && filterID != specificFilter
-                                    && !Ensemble_IgnoredFilterIDs.Contains(filterID))
-                                {
-                                    if (s.TryGetValue("itemID", out long itemID))
-                                    {
-                                        removedSymlinked.Add(itemID);
-                                    }
-                                    else
-                                    {
-                                        removedSymlinked.Add("s:" + s["sourceID"]);
-                                    }
-                                    return true;
-                                }
-                                return false;
-                            });
-                            int removedRawSources = rawSources.RemoveAll(s =>
-                            {
-                                // Some Filter Type Items are still granted when contained in a different-Filtered Ensemble
-                                if (s.TryGetValue("f", out long filterID)
-                                    && filterID != specificFilter
-                                    && !Ensemble_IgnoredFilterIDs.Contains(filterID))
-                                {
-                                    if (s.TryGetValue("itemID", out long itemID))
-                                    {
-                                        removedSourced.Add(itemID);
-                                    }
-                                    else
-                                    {
-                                        removedSourced.Add("s:" + s["sourceID"]);
-                                    }
-                                    return true;
-                                }
-                                return false;
-                            });
-
-                            if (removedSymlinks > 0 || removedRawSources > 0)
-                            {
-                                LogDebug($"Removed {removedSymlinks} {ToJSON(removedSymlinked)} symlink items & {removedRawSources} {ToJSON(removedSourced)} sourced items from Ensemble {ensembleID} due to incorrect Filter from expected {(Objects.Filters)specificFilter}", data);
-                            }
-                        }
-                    }
-                }
-            }
+            RemoveWrongFilterSources(data, ensembleID, symlinkSources, rawSources);
 
             // add the raw sources to the ensemble
             foreach (IDictionary<string, object> source in rawSources)
@@ -1218,7 +1140,7 @@ namespace ATT
             // replace any existing symlink with the raw select
             if (data.ContainsKey("sym"))
             {
-                LogDebugWarn($"Manual Ensemble Symlink replaced via automation", data);
+                LogWarn($"Manual Ensemble Symlink replaced via automation", data);
             }
 
             List<object> symlinkCommands = new List<object>
@@ -1235,6 +1157,69 @@ namespace ATT
 
             // Capture the Ensemble for Debug output
             CaptureDebugDBData(data);
+        }
+
+        private static void RemoveWrongFilterSources(IDictionary<string, object> data, long ensembleID, List<IDictionary<string, object>> symlinkSources, List<IDictionary<string, object>> rawSources)
+        {
+            Dictionary<long, int> ensembleFilterCount = new Dictionary<long, int>();
+            // track the known filters for the sources
+            foreach (IDictionary<string, object> source in symlinkSources.Union(rawSources))
+            {
+                if (source.TryGetValue("f", out long filterID))
+                {
+                    if (!ensembleFilterCount.ContainsKey(filterID))
+                    {
+                        ensembleFilterCount[filterID] = 0;
+                    }
+                    ensembleFilterCount[filterID]++;
+                }
+            }
+
+            int filterCount = ensembleFilterCount.Count;
+            if (filterCount <= 1) return;
+
+            int totalItems = ensembleFilterCount.Values.Sum();
+            if (totalItems <= 5) return;
+
+            int maxItemsPerFilter = ensembleFilterCount.Values.Max();
+            // if an ensemble is big enough and grants a majority filterID type of items (i.e. all Plate) then
+            // any items which do not meet the filter will be excluded automatically
+            // small ensembles or arsenals should not be affected by this case
+            if (maxItemsPerFilter <= (totalItems / 2)) return;
+
+            long specificFilter = ensembleFilterCount.First(kvp => kvp.Value == maxItemsPerFilter).Key;
+            // Cosmetic-granting ensembles grant appearances for other armor types as well
+            if (Ensemble_IgnoredFilterIDs.Contains(specificFilter)) return;
+
+            List<object> removedSymlinked = new List<object>();
+            List<object> removedSourced = new List<object>();
+            bool CheckRemoval(IDictionary<string, object> s)
+            {
+                // Some Filter Type Items are still granted when contained in a different-Filtered Ensemble
+                if (s.TryGetValue("f", out long filterID)
+                    && filterID != specificFilter
+                    && !Ensemble_IgnoredFilterIDs.Contains(filterID))
+                {
+                    if (s.TryGetValue("itemID", out long itemID))
+                    {
+                        removedSymlinked.Add(itemID);
+                    }
+                    else
+                    {
+                        removedSymlinked.Add("s:" + s["sourceID"]);
+                    }
+                    return true;
+                }
+                return false;
+            };
+
+            int removedSymlinks = symlinkSources.RemoveAll(s => CheckRemoval(s));
+            int removedRawSources = rawSources.RemoveAll(s => CheckRemoval(s));
+
+            if (removedSymlinks > 0 || removedRawSources > 0)
+            {
+                LogDebug($"Removed {removedSymlinks} {ToJSON(removedSymlinked)} symlink items & {removedRawSources} {ToJSON(removedSourced)} sourced items from Ensemble {ensembleID} due to incorrect Filter from expected {(Objects.Filters)specificFilter}", data);
+            }
         }
 
         /// <summary>

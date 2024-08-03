@@ -1613,9 +1613,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 				iensemble(215220, { -- Ensemble: Guise of the Shado-Pan (Original)
 					["cost"] = {{"c", BRONZE, 2500}},
-					["sym"] = {
-						{"select", "itemID", 90845 },	-- Replica Shado-Pan Helmet
-					},
 					["_g"] = {
 						i(214019), -- Shado-Pan Armbands
 						i(214020), -- Shado-Pan Belt
