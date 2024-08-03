@@ -3193,6 +3193,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1282, {	-- They Call Him Smiling Jim
 					["qg"] = 4921,	-- Guard Byron
+					["altQuests"] = { 1302 },	-- James Hyal (2/2)
 					["coord"] = { 66, 46, DUSTWALLOW_MARSH },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
