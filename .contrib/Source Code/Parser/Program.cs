@@ -202,16 +202,27 @@ namespace ATT
                         Framework.AssignCustomHeaders(Framework.ParseAsDictionary<long>(customHeaders));
                     }
 
-                    // Try to grab the skill conversion table
-                    var skillIdTable = lua.GetTable("SKILL_ID_CONVERSION_TABLE");
                     Framework.Objects.SKILL_ID_CONVERSION_TABLE =
-                        Framework.ParseAsDictionary<long>(skillIdTable ?? throw new InvalidDataException("Missing 'SKILL_ID_CONVERSION_TABLE' Global!"))
+                        Framework.ParseAsDictionary<long>(lua.GetTable("SKILL_ID_CONVERSION_TABLE") ?? throw new InvalidDataException("Missing 'SKILL_ID_CONVERSION_TABLE' Global!"))
                         .ToDictionary(kvp => kvp.Key, kvp => (long)kvp.Value);
+ 
+                    Framework.Objects.MERGE_OBJECT_FIELDS =
+                        Framework.ParseAsStringDictionary(lua.GetTable("MERGE_OBJECT_FIELDS") ?? throw new InvalidDataException("Missing 'MERGE_OBJECT_FIELDS' Global!"))
+                        .ToDictionary(kvp => kvp.Key, kvp => (kvp.Value as List<object>)?.Select(o => o.ToString()).ToArray());
+
+                    Framework.SUPPORTED_LOCALES =
+                        Framework.ParseAsDictionary<long>(lua.GetTable("SUPPORTED_LOCALES") ?? throw new InvalidDataException("Missing 'SUPPORTED_LOCALES' Global!"))
+                        .Select(kvp => kvp.Value?.ToString()).ToArray();
+
+                    Framework.FIRST_EXPANSION_PATCH =
+                        Framework.ParseAsStringDictionary(lua.GetTable("FIRST_EXPANSION_PATCH") ?? throw new InvalidDataException("Missing 'FIRST_EXPANSION_PATCH' Global!"))
+                         .ToDictionary(kvp => kvp.Key, kvp => (kvp.Value as List<object>)?.Select(o => int.Parse(o.ToString())).ToArray());
                 }
                 catch (Exception e)
                 {
                     Framework.LogException(e);
-                    Errored = true;
+                    Console.ReadLine();
+                    return;
                 }
 
                 do

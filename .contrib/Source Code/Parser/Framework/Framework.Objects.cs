@@ -72,15 +72,7 @@ namespace ATT
             /// <summary>
             /// The keys which should be merged based on a given merge object key
             /// </summary>
-            public static IDictionary<string, string[]> MergeObjectFields { get; } = new Dictionary<string, string[]>()
-            {
-                {  "spellID" , new string[] { "type", "learnedAt" } },
-                {  "recipeID" , new string[] { "requireSkill", "learnedAt" } },
-                {  "speciesID" , new string[] { "pb", "crs" } },
-                {  "instanceID" , new string[] { "isRaid" } },
-                {  "mapID" , new string[] { "maps" } },
-                {  "questID" , new string[] { "type", "sourceQuests", "altQuests", "isBreadcrumb" } },
-            };
+            public static IDictionary<string, string[]> MERGE_OBJECT_FIELDS { get; set; }
 
             /// <summary>
             /// Allows capturing various objects which should be merged-into the sub-content of another object
@@ -472,7 +464,7 @@ namespace ATT
             /// <param name="objectData">The data to merge into shared storage.</param>
             internal static void MergeFromObject(IDictionary<string, object> objectData)
             {
-                foreach (var mergeObjectFieldPair in MergeObjectFields)
+                foreach (var mergeObjectFieldPair in MERGE_OBJECT_FIELDS)
                 {
                     // does this data contain the key?
                     if (objectData.TryGetValue(mergeObjectFieldPair.Key, out object keyValue))
@@ -722,7 +714,6 @@ namespace ATT
             internal static bool FindRecipeForData(long requiredSkill, IDictionary<string, object> data, out long recipeID)
             {
                 // Expected data for a Recipe: ItemID & RecipeID
-                data.TryGetValue("itemID", out object itemID);
                 data.TryGetValue("recipeID", out recipeID);
                 // No need to adjust the data
                 if (recipeID > 0)
@@ -741,6 +732,7 @@ namespace ATT
                         {
                             recipeID = spellID;
 
+                            data.TryGetValue("itemID", out object itemID);
                             LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, recipeItemName);
                             return true;
                         }
@@ -779,6 +771,7 @@ namespace ATT
                     data.Remove("spellID");
                     recipeID = spellID;
 
+                    data.TryGetValue("itemID", out object itemID);
                     LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, spellID, recipeItemName);
                     return true;
                 }
@@ -791,6 +784,7 @@ namespace ATT
                     {
                         recipeID = recipeInfo.Key;
 
+                        data.TryGetValue("itemID", out object itemID);
                         LogDebugFormatted(LogFormats["ItemRecipeFormat"], itemID, recipeID, recipeItemName);
                         return true;
                     }
@@ -826,41 +820,6 @@ namespace ATT
             /// Imported from SKILL_ID_CONVERSION_TABLE lua Global during parsing
             /// </summary>
             public static Dictionary<long, long> SKILL_ID_CONVERSION_TABLE;
-
-            /// <summary>
-            /// Provides the proper string constant for LUA source given a Skill ID
-            /// </summary>
-            public static Dictionary<long, string> SKILLID_CONSTANTS = new Dictionary<long, string>()
-            {
-                {2787, "ABOMINABLE_STITCHING"},
-                {171, "ALCHEMY"},
-                {2821, "ARCANA_MANIPULATION"},
-                {794, "ARCHAEOLOGY"},
-                {2791, "ASCENSION_CRAFTING"},
-                {164, "BLACKSMITHING"},
-                {185, "COOKING"},
-                {333, "ENCHANTING"},
-                {202, "ENGINEERING"},
-                {20222, "GOBLIN_ENGINEERING"},
-                {20219, "GNOMISH_ENGINEERING"},
-                {129, "FIRST_AID"},
-                {356, "FISHING"},
-                {182, "HERBALISM"},
-                {773, "INSCRIPTION"},
-                {755, "JEWELCRAFTING"},
-                {2720, "JUNKYARD_TINKERING"},
-                {165, "LEATHERWORKING"},
-                {633, "LOCKPICKING"},
-                {186, "MINING"},
-                {2819, "PROTOFORM SYNTHESIS"},
-                {960, "RUNEFORGING"},
-                {393, "SKINNING"},
-                {2777, "SOUL_CYPHERING"},
-                {2811, "STYGIA_CRAFTING"},
-                {2886, "SUPPLY_SHIPMENTS"},
-                {197, "TAILORING"},
-                {2847, "TUSKARR_FISHING_GEAR"},
-            };
 
             /// <summary>
             /// Assign the Faction ID for this data dictionary if a valid ID hasn't already been assigned.

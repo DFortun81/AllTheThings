@@ -51,10 +51,48 @@ namespace ATT
         /// </summary>
         private const string NOT_FOUND_MESSAGE = "\"database-detail-page-not-found-message\"";
 
+        private static List<string> _gameFlavors;
         /// <summary>
         /// The game flavors of WoWHead to try querying.
         /// </summary>
-        public static List<string> GameFlavors = new List<string> { "" };
+        public static List<string> GameFlavors
+        {
+            get
+            {
+                if (_gameFlavors != null) return _gameFlavors;
+
+                _gameFlavors = new List<string> { string.Empty };
+                if (Framework.CURRENT_RELEASE_VERSION < Framework.FIRST_EXPANSION_PATCH["LEGION"].ConvertVersion())
+                {
+                    if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["CATA"].ConvertVersion())
+                    {
+                        _gameFlavors.Insert(0, "cata");
+                    }
+                    else if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["WRATH"].ConvertVersion())
+                    {
+                        _gameFlavors.Insert(0, "wotlk");
+                    }
+                    else if (Framework.CURRENT_RELEASE_VERSION >= Framework.FIRST_EXPANSION_PATCH["TBC"].ConvertVersion())
+                    {
+                        _gameFlavors.Insert(0, "tbc");
+                    }
+                    else
+                    {
+                        _gameFlavors.Insert(0, "classic");
+                    }
+                }
+                if (Program.PreProcessorTags.ContainsKey("PTR"))
+                {
+                    _gameFlavors.Insert(0, "ptr");
+                }
+                if (Program.PreProcessorTags.ContainsKey("PTR2"))
+                {
+                    _gameFlavors.Insert(0, "ptr-2");
+                }
+
+                return _gameFlavors;
+            }
+        }
 
         /// <summary>
         /// The default text value for an object, in each locale.
@@ -97,8 +135,7 @@ namespace ATT
                 using (WebClient webClient = new WebClient())
                 {
                     string url = $"https://{(locale == "en" ? "www" : locale)}.wowhead.com/{(string.IsNullOrEmpty(flavor) ? "" : $"{flavor}/")}object={objectID}";
-                    Trace.Write("Downloading: ");
-                    Trace.WriteLine(url);
+                    Framework.Log("Downloading: ", url);
                     return Encoding.UTF8.GetString(webClient.DownloadData(url));
                 }
             }

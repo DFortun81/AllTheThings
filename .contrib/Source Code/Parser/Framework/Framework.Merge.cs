@@ -879,7 +879,7 @@ namespace ATT
             return dict;
         }
 
-        static IDictionary<string, object> ParseAsStringDictionary(LuaTable table)
+        public static IDictionary<string, object> ParseAsStringDictionary(LuaTable table)
         {
             var dict = new Dictionary<string, object>();
             foreach (var key in table.Keys) dict[ConvertFieldName(key.ToString())] = ParseObject(table[key], key);
@@ -912,7 +912,7 @@ namespace ATT
                 default:
                     {
                         Log($" ({data.GetType()}): ");
-                        LogWarn(data.GetType().FullName);
+                        LogWarn(data.GetType().FullName, data);
                         Console.ReadLine();
                         break;
                     }

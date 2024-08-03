@@ -1,11 +1,6 @@
-
 -- Profession Skills have multiple 'levels' based on expansion for recipe requirements
 -- but in ATT we represent those by the base profession skill only for simplicity
 -- Those mappings are moved from the Parser to here
-
--- TODO: Parser currently complains about the new 11.0 Profession skills
--- need to map them in here now instead of the Parser directly!
-
 SKILL_ID_CONVERSION_TABLE = {
 
 	-- Alchemy Skills
