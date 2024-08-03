@@ -1432,7 +1432,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							8908,	-- An Earnest Proposition [PALADIN]
 							8909,	-- An Earnest Proposition [PRIEST]
 							8910,	-- An Earnest Proposition [ROGUE]
+							-- #if AFTER TBC
 							10492,	-- An Earnest Proposition [SHAMAN]
+							-- #endif
 							8911,	-- An Earnest Proposition [WARLOCK]
 							8912,	-- An Earnest Proposition [WARRIOR]
 						},
@@ -1447,7 +1449,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							8913,	-- An Earnest Proposition [DRUID]
 							8914,	-- An Earnest Proposition [HUNTER]
 							8915,	-- An Earnest Proposition [MAGE]
+							-- #if AFTER TBC
 							10493,	-- An Earnest Proposition [PALADIN]
+							-- #endif
 							8916,	-- An Earnest Proposition [PRIEST]
 							8917,	-- An Earnest Proposition [ROGUE]
 							8918,	-- An Earnest Proposition [SHAMAN]
@@ -1510,7 +1514,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							8956,	-- Anthion's Parting Words [ALLIANCE]
 							8958,	-- Anthion's Parting Words [ALLIANCE]
 							8959,	-- Anthion's Parting Words [ALLIANCE]
+							-- #if AFTER TBC
 							10496,	-- Anthion's Parting Words [ALLIANCE]
+							-- #endif
 						},
 						["coord"] = { 43.53, 52.64, IRONFORGE },
 					}),
@@ -1525,7 +1531,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							8957,	-- Anthion's Parting Words [HORDE]
 							9021,	-- Anthion's Parting Words [HORDE]
 							9022,	-- Anthion's Parting Words [HORDE]
+							-- #if AFTER TBC
 							10497,	-- Anthion's Parting Words [HORDE]
+							-- #endif
 						},
 						["coord"] = { 34.95, 38.29, ORGRIMMAR },
 					}),
@@ -1764,7 +1772,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							8935,	-- Just Compensation [ALLIANCE]
 							8936,	-- Just Compensation [ALLIANCE]
 							8937,	-- Just Compensation [ALLIANCE]
+							-- #if AFTER TBC
 							10494,	-- Just Compensation [ALLIANCE]
+							-- #endif
 						},
 						["coord"] = { 43.53, 52.64, IRONFORGE },
 					}),
@@ -1779,7 +1789,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, bubbleDownFiltered({ ["timeli
 							8942,	-- Just Compensation [HORDE]
 							8943,	-- Just Compensation [HORDE]
 							8944,	-- Just Compensation [HORDE]
+							-- #if AFTER TBC
 							10495,	-- Just Compensation [HORDE]
+							-- #endif
 						},
 						["coord"] = { 34.95, 38.29, ORGRIMMAR },
 					}),

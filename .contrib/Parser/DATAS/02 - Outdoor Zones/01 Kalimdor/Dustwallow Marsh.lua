@@ -3194,9 +3194,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1282, {	-- They Call Him Smiling Jim
 					["qg"] = 4921,	-- Guard Byron
 					["coord"] = { 66, 46, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
 					["timeline"] = { REMOVED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
+					-- #if AFTER 2.3.0
+					["isBreadcrumb"] = true,
+					-- #endif
 					["lvl"] = 30,
 				}),
 				q(27216, {	-- This Old Lighthouse
