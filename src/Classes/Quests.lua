@@ -1301,13 +1301,13 @@ else
 end
 
 -- Party Sync Support
-local IsQuestReplayable, OnUpdateForPartySyncedQuest = C_QuestLog.IsQuestReplayable, nil;
+local IsQuestReplayable = C_QuestLog.IsQuestReplayable
+local OnUpdateForNestedQuest
 if IsQuestReplayable then
 	-- Provide support for Party Sync'd Quests here
-	local IsPartySynced, IsQuestReplayedRecently =
-		C_QuestSession.Exists, C_QuestLog.IsQuestReplayedRecently;
+	local IsQuestReplayedRecently = C_QuestLog.IsQuestReplayedRecently
 	IsQuestSaved = function(questID)
-		if IsPartySynced() then
+		if IsPartySyncActive then
 			return IsQuestReplayedRecently(questID)
 				or (not IsQuestReplayable(questID) and IsQuestFlaggedCompleted(questID));
 		end
@@ -1315,8 +1315,8 @@ if IsQuestReplayable then
 	end;
 
 	-- Causes a group to remain visible if it is replayable, regardless of collection status
-	OnUpdateForPartySyncedQuest = function(data)
-		data.visible = IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
+	OnUpdateForNestedQuest = function(data)
+		data.visible = not data.saved or IsQuestReplayable(data.questID) or app.CollectedItemVisibilityFilter(data);
 		return true
 	end
 
@@ -1860,9 +1860,7 @@ if app.IsRetail then
 			end
 
 			-- If the user is in a Party Sync session, then force showing pre-req quests which are replayable if they are collected already
-			if OnUpdateForPartySyncedQuest and IsPartySyncActive and questRef.collected then
-				questRef.OnUpdate = OnUpdateForPartySyncedQuest
-			end
+			questRef.OnUpdate = OnUpdateForNestedQuest
 
 			-- If the quest is provided by an Item, then show that Item directly under the quest so it can easily show tooltip/Source information if desired
 			if questRef.providers then
