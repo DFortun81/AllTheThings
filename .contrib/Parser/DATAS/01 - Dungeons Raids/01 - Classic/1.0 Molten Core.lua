@@ -204,7 +204,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				q(7787, {	-- Rise, Thunderfury!
+				applyclassicphase(PHASE_TWO, q(7787, {	-- Rise, Thunderfury!
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
-				}),
+				})),
 				q(6805, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stormers and Rumblers
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
@@ -297,6 +297,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Elementium Bar
 							["provider"] = { "i", 17771 },	-- Elementium Bar
+							-- #if SEASON_OF_DISCOVERY
+							-- #if BEFORE 1.15.4
+							["description"] = "Neither the Elementium Ore nor the recipe for smelting these bars are in the game until BWL... In the mean time, gather the required materials while things are less in demand.",
+							-- #endif
+							-- #endif
+							["cost"] = {
+								{ "i", 18562,  10 },	-- Elementium Ore
+								{ "i", 12360, 100 },	-- Arcanite Bar
+								{ "i", 17010,  10 },	-- Fiery Core
+								{ "i", 18567,  30 },	-- Elemental Flex
+							},
 						}),
 						objective(2, {	-- 0/1 Essence of the Firelord
 							["provider"] = { "i", 19017 },	-- Essence of the Firelord
