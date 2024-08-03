@@ -22,28 +22,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 				}
 			}),
-			ach(13024, {	-- Carved in Stone, Written in Blood
-				crit(41860, {	-- Ancient Nazmani Tablet
-					["provider"] = {"o",298921},	-- Ancient Nazmani Tablet
-					["coord"] = { 56.3, 57.3, NAZMIR },
-					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
-				}),
-				crit(41861, {	-- Weathered Nazmani Tablet
-					["provider"] = {"o",298963},	-- Weathered Nazmani Tablet
-					["coord"] = { 43.4, 48.1, NAZMIR },
-					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
-				}),
-				crit(41862, {	-- Cracked Tablet
-					["provider"] = {"o",298965},	-- Cracked Tablet
-					["coord"] = { 51.2, 85.1, NAZMIR },
-					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
-				}),
-				crit(42116, {	-- Fractured Tablet
-					["provider"] = {"o",299073},	-- Fractured Tablet
-					["coord"] = { 42.6, 57.1, NAZMIR },
-					["icon"] = "Interface\\Icons\\inv_misc_rune_11",
-				}),
-			}),
+			ach(13024),		-- Carved in Stone, Written in Blood (automated)
 			ach(12588, {	-- Eat Your Greens
 				crit(40542, {	-- Saurolisk Tail
 					["provider"] = {"o",291233},	-- Saurolisk Tail

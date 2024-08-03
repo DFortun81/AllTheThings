@@ -16,6 +16,30 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(154476),	-- Honey-Glazed Vambraces
 				},
 			}),
+			o(296854, {	-- Legends of the Tidesages - Part 1
+				["coord"] = { 49.51, 80.90, STORMSONG_VALLEY },
+			}),
+			o(296902, {	-- Legends of the Tidesages - Part 2
+				["coord"] = { 59.02, 59.54, STORMSONG_VALLEY },
+			}),
+			o(296903, {	-- Legends of the Tidesages - Part 3
+				["coord"] = { 31.95, 72.91, STORMSONG_VALLEY },
+			}),
+			o(296904, {	-- Legends of the Tidesages - Part 4
+				["coord"] = { 33.81, 33.23, STORMSONG_VALLEY },
+			}),
+			o(296905, {	-- Legends of the Tidesages - Part 5
+				["coord"] = { 56.02, 38.53, STORMSONG_VALLEY },
+			}),
+			o(296906, {	-- Legends of the Tidesages - Part 6
+				["coord"] = { 44.18, 36.60, STORMSONG_VALLEY },
+			}),
+			o(296907, {	-- Legends of the Tidesages - Part 7
+				["coord"] = { 62.08, 30.22, STORMSONG_VALLEY },
+			}),
+			o(296908, {	-- Legends of the Tidesages - Part 8
+				["coord"] = { 75.07, 31.13, STORMSONG_VALLEY },
+			}),
 			o(291257, {	-- Small Treasure Chest
 				["questID"] = 51939,
 				["isDaily"] = true,

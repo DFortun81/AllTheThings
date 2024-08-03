@@ -19,6 +19,36 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(163603),	-- Lucille's Handkerchief (TOY!)
 				},
 			}),
+			o(296918, {	-- Drust Stele: Breath Into Stone
+				["coord"] = { 59.5, 66.7, DRUSTVAR },
+			}),
+			o(297630, {	-- Drust Stele: Conflict
+				["coord"] = { 46.5, 37.3, DRUSTVAR },
+			}),
+			o(297628, {	-- Drust Stele: Constructs
+				["coord"] = { 50.2, 42.5, DRUSTVAR },
+			}),
+			o(297632, {	-- Drust Stele: Protectors of the Forest
+				["coord"] = { 44.6, 45.7, DRUSTVAR },
+			}),
+			o(297627, {	-- Drust Stele: Sacrifice
+				["coord"] = { 27.6, 57.6, DRUSTVAR },
+			}),
+			o(296915, {	-- Drust Stele: The Circle
+				["coord"] = { 36.8, 64.5, DRUSTVAR },
+			}),
+			o(297629, {	-- Drust Stele: The Cycle
+				["coord"] = { 19.0, 57.9, DRUSTVAR },
+			}),
+			o(297631, {	-- Drust Stele: The Flayed Man
+				["coord"] = { 56.6, 86.0, DRUSTVAR },
+			}),
+			o(296916, {	-- Drust Stele: The Ritual
+				["coord"] = { 50.8, 73.7, DRUSTVAR },
+			}),
+			o(296917, {	-- Drust Stele: The Tree
+				["coord"] = { 27.3, 48.3, DRUSTVAR },
+			}),
 			o(297939, {	-- Order Of Embers Crossbow
 				["coord"] = { 35.53, 51.88, DRUSTVAR },
 				["questID"] = 53430,

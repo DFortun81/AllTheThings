@@ -220,48 +220,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					crit(40177),	-- Stick It To 'Em!
 				},
 			}),
-			ach(13064, {	-- Drust the Facts, Ma'am
-				crit(41436, {	-- Drust Stele: The Circle
-					["coord"] = { 36.8, 64.5, DRUSTVAR },
-					["provider"] = {"o",296915},
-				}),
-				crit(41437, {	-- Drust Stele: The Ritual
-					["coord"] = { 50.8, 73.7, DRUSTVAR },
-					["provider"] = {"o",296916},
-				}),
-				crit(41438, {	-- Drust Stele: The Tree
-					["coord"] = { 27.3, 48.3, DRUSTVAR },
-					["provider"] = {"o",296917},
-				}),
-				crit(41439, {	-- Drust Stele: Breath Into Stone
-					["coord"] = { 59.5, 66.7, DRUSTVAR },
-					["provider"] = {"o",296918},
-				}),
-				crit(41441, {	-- Drust Stele: Sacrifice
-					["coord"] = { 27.6, 57.6, DRUSTVAR },
-					["provider"] = {"o",297627},
-				}),
-				crit(41442, {	-- Drust Stele: Constructs
-					["coord"] = { 50.2, 42.5, DRUSTVAR },
-					["provider"] = {"o",297628},
-				}),
-				crit(41443, {	-- Drust Stele: The Cycle
-					["coord"] = { 19.0, 57.9, DRUSTVAR },
-					["provider"] = {"o",297629},
-				}),
-				crit(41445, {	-- Drust Stele: Conflict
-					["coord"] = { 46.5, 37.3, DRUSTVAR },
-					["provider"] = {"o",297630},
-				}),
-				crit(41446, {	-- Drust Stele: The Flayed Man
-					["coord"] = { 56.6, 86.0, DRUSTVAR },
-					["provider"] = {"o",297631},
-				}),
-				crit(41449, {	-- Drust Stele: Protectors of the Forest
-					["coord"] = { 44.6, 45.7, DRUSTVAR },
-					["provider"] = {"o",297632},
-				}),
-			}),
+			ach(13064),		-- Drust the Facts, Ma'am (automated)
 			explorationAch(12557),	-- Explore Drustvar
 			ach(13082, {	-- Everything Old Is New Again
 				["races"] = ALLIANCE_ONLY,

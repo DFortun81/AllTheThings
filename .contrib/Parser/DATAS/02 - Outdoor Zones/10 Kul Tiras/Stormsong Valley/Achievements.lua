@@ -192,32 +192,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 				},
 			})),
-			ach(13051, {	-- Legends of the Tidesages
-				crit(41425, {	-- Legends of the Tidesages - Part 1
-					["coord"] = { 49.51, 80.90, STORMSONG_VALLEY },
-				}),
-				crit(41426, {	-- Legends of the Tidesages - Part 2
-					["coord"] = { 59.02, 59.54, STORMSONG_VALLEY },
-				}),
-				crit(41427, {	-- Legends of the Tidesages - Part 3
-					["coord"] = { 31.95, 72.91, STORMSONG_VALLEY },
-				}),
-				crit(41428, {	-- Legends of the Tidesages - Part 4
-					["coord"] = { 33.81, 33.23, STORMSONG_VALLEY },
-				}),
-				crit(41429, {	-- Legends of the Tidesages - Part 5
-					["coord"] = { 56.02, 38.53, STORMSONG_VALLEY },
-				}),
-				crit(41430, {	-- Legends of the Tidesages - Part 6
-					["coord"] = { 44.18, 36.60, STORMSONG_VALLEY },
-				}),
-				crit(41431, {	-- Legends of the Tidesages - Part 7
-					["coord"] = { 62.08, 30.22, STORMSONG_VALLEY },
-				}),
-				crit(41432, {	-- Legends of the Tidesages - Part 8
-					["coord"] = { 75.07, 31.13, STORMSONG_VALLEY },
-				}),
-			}),
+			ach(13051),		-- Legends of the Tidesages (automated)
 			ach(13054, {	-- Sabertron Assemble
 				crit(41420, {	-- Red Sabertron slain
 					["_quests"] = { 51947, 51956 },	-- Sabertron (RED) / Default Sabertron
