@@ -381,6 +381,18 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, q(84377, {	-- End of the Dark Horde
+				["providers"] = {
+					{ "i", 227911 },	-- Head of Rend Blackhand
+					{ "n",    466 },	-- General Marcus Jonathon
+				},
+				["coord"] = { 63.8, 75.4, STORMWIND_CITY },
+				["timeline"] = { "added 1.15.3" },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 60,
+			})),
+			-- #endif
 			q(5124, {	-- Fiery Plate Gauntlets
 				["qg"] = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>
 				["sourceQuest"] = 5103,	-- Hot Fiery Death
@@ -1863,6 +1875,13 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				n(10429, {	-- Warchief Rend Blackhand
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227911, {	-- Head of Rend Blackhand
+							["timeline"] = { "added 1.15.3" },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 60,
+						})),
+						-- #endif
 						i(12630, {	-- Head of Rend Blackhand
 							["timeline"] = { REMOVED_4_0_3 },
 						}),

@@ -194,7 +194,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				q(8287, {	-- A Terrible Purpose
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8287, {	-- A Terrible Purpose
 					["providers"] = {
 						{ "n", 15194 },	-- Hermit Ortell
 						{ "i", 20405 },	-- Decoded Tablet Transcription
@@ -215,7 +215,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						}),
 					},
-				}),
+				})),
 				q(8361, {	-- Abyssal Contacts
 					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, SILITHUS },
