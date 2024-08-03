@@ -13,6 +13,7 @@ local REMOVED_WITH_RERELEASE = {
 local REMOVED_WITH_CATA = { ADDED_1_0_1, REMOVED_4_0_3 };
 
 -- Helms were moved to Nefarian with 3.2.2
+-- CRIEVE NOTE: In SOD, these are completely gone.
 local BLOODFANG_HOOD = i(16908);	-- Bloodfang Hood
 local DRAGONSTALKERS_HELM = i(16939);	-- Dragonstalker's Helm
 local HALO_OF_TRANSCENDENCE = i(16921);	-- Halo of Transcendence
@@ -705,19 +706,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["lvl"] = 60,
 						}),
 						-- #endif
-						i(17966),	-- Onyxia Hide Backpack (Bag)
-						i(17068),	-- Deathbringer
-						i(17075),	-- Vis'kag the Bloodletter
-						i(17067),	-- Ancient Cornerstone Grimoire
-						BLOODFANG_HOOD,
-						DRAGONSTALKERS_HELM,
-						HALO_OF_TRANSCENDENCE,
-						HELM_OF_WRATH,
-						HELMET_OF_TEN_STORMS,
-						JUDGMENT_CROWN,
-						NEMESIS_SKULLCAP,
-						NETHERWIND_CROWN,
-						STORMRAGE_COVER,
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(227532, {	-- Incandescent Hood
 							["timeline"] = { "added 1.15.3" },
@@ -792,10 +780,80 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { "added 1.15.3" },
 						})),
 						-- #endif
-						i(18205),	-- Eskhandar's Collar
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228992, {	-- Onyxia Hide Backpack (Bag)
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(17966, {	-- Onyxia Hide Backpack (Bag)
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
+						i(17068),	-- Deathbringer
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228162, {	-- Deceit
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(228166, {	-- Key to the City
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(17075),	-- Vis'kag the Bloodletter
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228955, {	-- Ancient Cornerstone Grimoire
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(17067, {	-- Ancient Cornerstone Grimoire
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228165, {	-- Dragonslayer's Javelin
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						BLOODFANG_HOOD,
+						DRAGONSTALKERS_HELM,
+						HALO_OF_TRANSCENDENCE,
+						HELM_OF_WRATH,
+						HELMET_OF_TEN_STORMS,
+						JUDGMENT_CROWN,
+						NEMESIS_SKULLCAP,
+						NETHERWIND_CROWN,
+						STORMRAGE_COVER,
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228759, {	-- Eskhandar's Collar
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(18205, {	-- Eskhandar's Collar
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 						i(17078),	-- Sapphiron Drape
 						i(18813),	-- Ring of Binding
-						i(17064),	-- Shard of the Scale
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228163, {	-- Broodmother's Brooch
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(228188, {	-- Prestor's Hairpin
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228298, {	-- Shard of the Scale
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(17064, {	-- Shard of the Scale
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 					})),
 			-- #if AFTER WRATH
 				},
@@ -820,4 +878,7 @@ for _,item in pairs({
 	for key,value in pairs(ONYXIAS_LAIR_FORTYMAN_BUBBLE_DOWN_CONTENTS) do
 		item[key] = nil;
 	end
+	-- #if SEASON_OF_DISCOVERY
+	item.timeline = { "removed 1.15.3" };
+	-- #endif
 end
