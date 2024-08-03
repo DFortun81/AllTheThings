@@ -16,9 +16,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				{"select","npcID",223710},{"pop"},	-- Rememberance Amuul
 				{"where","headerID",WEAPONS},
 			},
-			["g"] = sharedData({
-				["description"] = "These items only drop if you are below Level 70 & on the correct armor/weapon type.\nExample: Rogue gets leather and 1 handers, but not bows.",
-			}, {
+			["g"] = bubbleDown({["description"] = "These items only drop if you are below Level 70 and on the correct armor/weapon type.\nExample: A Rogue will receive leather items and 1-handed weapons, but not bows.", }, {
 				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY },{
 					n(ARMOR, {
 						filter(BACK_F, {
