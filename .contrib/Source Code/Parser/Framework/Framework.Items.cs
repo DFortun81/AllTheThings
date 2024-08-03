@@ -556,7 +556,7 @@ namespace ATT
                             // any 0 value should simply be removed for cleanliness
                             if (val == 0)
                             {
-                                LogDebug($"INFO: Removing 0-value {field} from", item);
+                                LogDebug($"INFO: Ignoring 0-value {field} merging to", item);
                                 item.Remove(field);
                             }
                             else
@@ -581,7 +581,7 @@ namespace ATT
                             // any 0 value should simply be removed for cleanliness
                             if (val == 0)
                             {
-                                LogDebug($"INFO: Removing 0-value {field} from", item);
+                                LogDebug($"INFO: Ignoring 0-value {field} merging to", item);
                                 item.Remove(field);
                             }
                             else
@@ -619,7 +619,7 @@ namespace ATT
                             // any 0 value should simply be removed for cleanliness
                             if (val == 0)
                             {
-                                LogDebug($"INFO: Removing 0-value {field} from", item);
+                                LogDebug($"INFO: Ignoring 0-value {field} merging to", item);
                                 item.Remove(field);
                             }
                             else

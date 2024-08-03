@@ -632,11 +632,6 @@ namespace ATT
             // If this item has an "unobtainable" flag on it, meaning for a different phase of content.
             if (data.TryGetValue("u", out long phase))
             {
-                // u <= 0 is irrelevant and can be removed. this allows for assigning a u value in source that we know will be removed later, so as
-                // to not need to delete the u value from a local variable which is wrapped in a bubbleDown function.
-                if (phase <= 0)
-                    data.Remove("u");
-
                 if (phase > MAX_PHASE_ID && !(phase >= 1000 && (phase < (MAX_PHASE_ID + 1) * 100)))
                 {
                     data.Remove("g");
@@ -660,11 +655,6 @@ namespace ATT
                 if (f >= 56)
                 {
                     data.Remove("modID");
-                }
-                // filterID -- should be a positive value, or removed
-                else if (f <= 0)
-                {
-                    data.Remove("f");
                 }
 
                 // special handling for explicitly-defined filterIDs (i.e. not determined by Item data, but rather directly in Source)
@@ -746,31 +736,20 @@ namespace ATT
             // Throw away automatic Spell ID assignments for certain filter types.
             if (data.TryGetValue("spellID", out f))
             {
-                if (f < 1)
+                switch (filter)
                 {
-                    data.Remove("spellID");
-                }
-                else
-                {
-                    switch (filter)
-                    {
-                        case Objects.Filters.Recipe:
-                            data["recipeID"] = f;
-                            break;
-                            //default:
-                            //    data.Remove("spellID");
-                            //    break;
-                    }
+                    case Objects.Filters.Recipe:
+                        data["recipeID"] = f;
+                        break;
+                        //default:
+                        //    data.Remove("spellID");
+                        //    break;
                 }
             }
 
             if (data.TryGetValue("recipeID", out f))
             {
-                if (f < 1)
-                {
-                    data.Remove("recipeID");
-                }
-                else if (DebugMode)
+                if (DebugMode)
                 {
                     var cachedItem = Items.GetNull(data);
                     if (cachedItem != null)
@@ -780,14 +759,6 @@ namespace ATT
                         cachedItem.TryGetValue("name", out string itemName);
                         LogDebugFormatted(LogFormats["ItemRecipeFormat"], cachedItemID, spellID, itemName);
                     }
-                }
-            }
-
-            if (data.TryGetValue("sourceID", out f))
-            {
-                if (f < 1)
-                {
-                    data.Remove("sourceID");
                 }
             }
 

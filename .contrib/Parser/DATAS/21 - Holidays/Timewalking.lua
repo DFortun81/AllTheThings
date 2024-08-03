@@ -1287,7 +1287,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							i(133543),	-- Infinite Timereaver (MOUNT!)
 							i(50818),	-- Invincible (MOUNT!)
 							i(45693),	-- Mimiron's Head (MOUNT!)
-							
+
 							i(224547, {	-- Timewarped Pouch
 								["timeline"] = { ADDED_10_2_7 }, -- Dropping in place of a pet
 							}),
@@ -5113,7 +5113,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					i(141018, {	-- Sargerei Blood Vessel
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 150 }},
 						["g"] = {
-							i(124124, {["u"]=0}),	-- Blood of Sargeras
+							i(124124),	-- Blood of Sargeras
 						},
 					}),
 					i(146943, {	-- Court of Farondis Insignia

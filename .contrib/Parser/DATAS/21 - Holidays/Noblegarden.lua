@@ -147,7 +147,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			}),
 			i(45073, {	-- Spring Flowers
 				["timeline"] = { ADDED_3_1_0 },
-				["f"] = -1,	-- Remove the filterID from being attached to this Item
 			}),
 			i(44794, {	-- Spring Rabbit (PET!)
 				["timeline"] = { ADDED_3_1_0 },
