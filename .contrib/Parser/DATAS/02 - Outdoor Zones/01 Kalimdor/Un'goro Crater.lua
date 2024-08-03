@@ -1809,8 +1809,24 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { FERALAS },
 					["lvl"] = 47,
 					["groups"] = {
-						objective(1, {	-- 0/1 Videre Elixir
-							["provider"] = { "i", 11243 },	-- Videre Elixir
+						q(4041, {	-- The Videre Elixir
+							["providers"] = {
+								{ "n", 7775 },	-- Gregan Brewspewer
+								{ "i",  11242 },	-- Evoroot
+								{ "o", 164798 },	-- Evoroot
+							},
+							["coords"] = {
+								{ 45.1, 25.6, FERALAS },
+								{ 44, 11, FERALAS },
+							},
+							["timeline"] = { REMOVED_4_0_3 },
+							["repeatable"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Videre Elixir
+									["questID"] = 3909,	-- The Videre Elixir
+									["provider"] = { "i", 11243 },	-- Videre Elixir
+								}),
+							},
 						}),
 					},
 				}),

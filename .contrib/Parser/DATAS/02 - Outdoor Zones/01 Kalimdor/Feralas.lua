@@ -2277,21 +2277,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(4041, {	-- The Videre Elixir
-					["qg"] = 7775,	-- Gregan Brewspewer
-					["sourceQuest"] = 3909,	-- The Videre Elixir
-					["coord"] = { 45.1, 25.6, FERALAS },
-					["timeline"] = { REMOVED_4_0_3 },
-					["repeatable"] = true,
-					["lvl"] = 47,
-					["groups"] = {
-						objective(1, {	-- Evoroot
-							["provider"] = { "i", 11242 },	-- Evoroot
-							["coord"] = { 44, 11, FERALAS },
-						}),
-						i(11243),	-- Videre Elixir
-					},
-				}),
 				q(4131, {	-- The Woodpaw Gnolls
 					["qg"] = 7880,	-- Ginro Hearthkindle
 					["sourceQuest"] = 4129,	-- Psychometric Reading
@@ -2462,8 +2447,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 44,
 					["groups"] = {
-						objective(1, {	-- Take Shay Leafrunner to Rockbiter's camp
+						objective(1, {	-- Shay's Bell
+							["providers"] = {
+								{ "i",   9189 },	-- Shay's Bell
+								{ "o", 144054 },	-- Shay's Chest
+							},
+						}),
+						objective(2, {	-- Take Shay Leafrunner to Rockbiter's camp
 							["provider"] = { "i", 9189 },	-- Shay's Bell
+							["coord"] = { 42.4, 22.0, FERALAS },
+							["cr"] = 7765,	-- Rockbiter
 						}),
 						i(9656, {	-- Granite Grips
 							["timeline"] = { REMOVED_4_0_3 },
