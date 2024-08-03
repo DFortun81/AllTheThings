@@ -924,11 +924,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
-						objective(1, {	-- 0/1 Signed Field Duty Papers
-							["providers"] = {
-								{ "i", 20810 },	-- Signed Field Duty Papers
-								{ "i", 23024 },	-- Prepared Field Duty Papers
-								{ "i", 21143 },	-- Unsigned Field Duty Papers
+						q(8508, {	-- Field Duty Papers (A)
+							["qg"] = 15440,	-- Captain Blackanvil <Ironforge Brigade Captain>
+							["coord"] = { 33.2, 52.1, SILITHUS },
+							["timeline"] = { REMOVED_4_0_3 },
+							["races"] = ALLIANCE_ONLY,
+							["repeatable"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Signed Field Duty Papers
+									["questID"] = 8507,	-- Field Duty (A)
+									["providers"] = {
+										{ "i", 20810 },	-- Signed Field Duty Papers
+										{ "i", 23024 },	-- Prepared Field Duty Papers
+										{ "i", 21143 },	-- Unsigned Field Duty Papers
+									},
+								}),
 							},
 						}),
 						i(20808, {	-- Combat Assignment
@@ -946,40 +956,29 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 60,
 					["groups"] = {
-						objective(1, {	-- 0/1 Signed Field Duty Papers
-							["providers"] = {
-								{ "i", 20810 },	-- Signed Field Duty Papers
-								{ "i", 23024 },	-- Prepared Field Duty Papers
-								{ "i", 21143 },	-- Unsigned Field Duty Papers
+						applyclassicphase(PHASE_FIVE, q(8732, {	-- Field Duty Papers (H)
+							["qg"] = 15612,	-- Krug Skullsplit
+							["coord"] = { 52.2, 68.4, SILITHUS },
+							["timeline"] = { REMOVED_4_0_3 },
+							["races"] = HORDE_ONLY,
+							["repeatable"] = true,
+							["lvl"] = 54,
+							["groups"] = {
+								objective(1, {	-- 0/1 Signed Field Duty Papers
+									["questID"] = 8731,	-- Field Duty (H)
+									["providers"] = {
+										{ "i", 20810 },	-- Signed Field Duty Papers
+										{ "i", 23024 },	-- Prepared Field Duty Papers
+										{ "i", 21143 },	-- Unsigned Field Duty Papers
+									},
+								}),
 							},
-						}),
+						})),
 						i(20808, {	-- Combat Assignment
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						LOGISTICS_ASSIGNMENT_H,
 						TACTICAL_ASSIGNMENT,
-					},
-				})),
-				applyclassicphase(PHASE_FIVE, q(8508, {	-- Field Duty Papers (A)
-					["qg"] = 15440,	-- Captain Blackanvil <Ironforge Brigade Captain>
-					["coord"] = { 33.2, 52.1, SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 54,
-					["groups"] = {
-						i(20810),	-- Signed Field Duty Papers
-					},
-				})),
-				applyclassicphase(PHASE_FIVE, q(8732, {	-- Field Duty Papers (H)
-					["qg"] = 15612,	-- Krug Skullsplit
-					["coord"] = { 52.2, 68.4, SILITHUS },
-					["timeline"] = { REMOVED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 54,
-					["groups"] = {
-						i(20810),	-- Signed Field Duty Papers
 					},
 				})),
 				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8309, {	-- Glyph Chasing
