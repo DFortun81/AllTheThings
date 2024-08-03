@@ -191,7 +191,10 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			ach(19783),		-- Dragonflight Keystone Hero: Season Four
 			ach(19785, {	-- Draconic Hero: Dragonflight Season 4
-				title(538),	-- <Name> the Draconic Hero
+				["timeline"] = { REMOVED_11_0_0 }),
+				["groups"] = {
+					title(538),	-- <Name> the Draconic Hero
+				},
 			}),
 			ach(16643, {	-- Keystone Hero: Algeth'ar Academy
 				spell(393273),	-- Path of the Draconic Diploma
