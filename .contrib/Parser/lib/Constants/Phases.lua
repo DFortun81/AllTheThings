@@ -22,6 +22,10 @@ SOD_PHASE_ONE = 1605;
 SOD_PHASE_TWO = 1606;
 SOD_PHASE_THREE = 1607;
 SOD_PHASE_FOUR = 1608;
+SOD_PHASE_FIVE = 1609;
+SOD_PHASE_SIX = 1610;
+SOD_PHASE_SEVEN = 1611;
+SOD_PHASE_EIGHT = 1612;
 -- #if SEASON_OF_DISCOVERY
 PHASE_ONE_DIREMAUL = SOD_PHASE_FOUR;	-- Dire Maul actually came out with Phase 4 of SOD.
 PHASE_TWO = SOD_PHASE_FOUR;	-- Azuregos, Lord Kazzak, and PVP Battlegrounds were immediately available with Phase 4 of SOD.
@@ -30,10 +34,6 @@ PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS = SOD_PHASE_FOUR;	-- T0.5 Sets actually cam
 PHASE_SIX_SILITHYST = SOD_PHASE_FOUR;	-- The Silithyst Quests actually came out with Phase 4 of SOD.
 PHASE_THREE_SILITHUS_EXPEDITION_QUESTS = SOD_PHASE_FIVE;	-- CRIEVE NOTE: On SOD Phase 4, none of these quests were available.
 -- #endif
-SOD_PHASE_FIVE = 1609;
-SOD_PHASE_SIX = 1610;
-SOD_PHASE_SEVEN = 1611;
-SOD_PHASE_EIGHT = 1612;
 
 -- TBC Classic Phases
 TBC_PHASE_ONE = 17;

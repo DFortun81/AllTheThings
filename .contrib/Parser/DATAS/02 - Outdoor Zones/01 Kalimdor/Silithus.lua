@@ -264,7 +264,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(8364, {	-- Abyssal Scepters
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8364, {	-- Abyssal Scepters
 					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8352,	-- Scepter of the Council
 					["coord"] = { 48.6, 37.8, SILITHUS },
@@ -289,7 +289,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
-				}),
+				})),
 				q(8363, {	-- Abyssal Signets
 					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8348,	-- Signet of the Dukes
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 60,
 				})),
-				q(8316, {	-- Armaments of War [WARRIOR]
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8316, {	-- Armaments of War [WARRIOR]
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
@@ -347,8 +347,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
-				}),
-				q(8381, {	-- Armaments of War [MAGE / WARLOCK]
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8381, {	-- Armaments of War [MAGE / WARLOCK]
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
@@ -363,8 +363,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
-				}),
-				q(8379, {	-- Armaments of War [PRIEST]
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8379, {	-- Armaments of War [PRIEST]
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
@@ -379,8 +379,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
-				}),
-				q(8378, {	-- Armaments of War [ROGUE]
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8378, {	-- Armaments of War [ROGUE]
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
@@ -395,8 +395,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
-				}),
-				q(8382, {	-- Armaments of War [DRUID]
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8382, {	-- Armaments of War [DRUID]
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
@@ -411,8 +411,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
-				}),
-				q(8377, {	-- Armaments of War [HUNTER]
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8377, {	-- Armaments of War [HUNTER]
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
@@ -427,8 +427,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
-				}),
-				q(8376, {	-- Armaments of War [PALADIN]
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8376, {	-- Armaments of War [PALADIN]
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
@@ -443,8 +443,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
-				}),
-				q(8380, {	-- Armaments of War [SHAMAN]
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8380, {	-- Armaments of War [SHAMAN]
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
 					["coord"] = { 49.7, 37.5, SILITHUS },
@@ -459,7 +459,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_1_0 },
 						}),
 					},
-				}),
+				})),
 				applyclassicphase(PHASE_FIVE, q(8780, {	-- Armor Kits for the Field (A)
 					["provider"] = { "i", 21263 },	-- Logistics Task Briefing VII (A)
 					["timeline"] = { REMOVED_4_0_3 },
@@ -591,7 +591,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						LOGISTICS_ASSIGNMENT_H,
 					},
 				})),
-				q(8349, {	-- Bor Wildmane
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8349, {	-- Bor Wildmane
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8332,	-- Dukes of the Council
 					["coord"] = { 52.0, 38.2, SILITHUS },
@@ -599,16 +599,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
-				}),
-				q(8351, {	-- Bor Wishes to Speak
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8351, {	-- Bor Wishes to Speak
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8341,	-- Lords of the Council
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 54,
-				}),
-				q(8308, {	-- Brann Bronzebeard's Lost Letter
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8308, {	-- Brann Bronzebeard's Lost Letter
 					["provider"] = { "i", 20461 },	-- Brann Bronzebeard's Lost Letter
 					["crs"] = {
 						13301,	-- Hive'Ashi Ambusher
@@ -633,8 +633,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						i(20723),	-- Brann's Trusty Pick
 					},
-				}),
-				q(8310, {	-- Breaking the Code
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8310, {	-- Breaking the Code
 					["qg"] = 15171,	-- Frankal Stonebridge
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 					-- #if AFTER CATA
@@ -690,7 +690,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #endif
 					},
-				}),
+				})),
 				applyclassicphase(PHASE_FIVE, q(8800, {	-- Cenarion Battlegear
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
@@ -736,7 +736,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						TACTICAL_ASSIGNMENT,
 					},
 				})),
-				q(8277, {	-- Deadly Desert Venom
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8277, {	-- Deadly Desert Venom
 					["qg"] = 15189,	-- Beetix Ficklespragg
 					-- #if AFTER CATA
 					["coord"] = { 55.2, 36.3, SILITHUS },
@@ -754,8 +754,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 11738,	-- Sand Skitterer
 						}),
 					},
-				}),
-				q(8304, {	-- Dearest Natalia
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8304, {	-- Dearest Natalia
 					["qg"] = 15181,	-- Commander Mar'alith
 					-- #if AFTER 4.1.0
 					["sourceQuest"] = 8321,	-- Vyral the Vile
@@ -784,8 +784,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							-- #endif
 						}),
 					},
-				}),
-				q(8307, {	-- Desert Recipe
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8307, {	-- Desert Recipe
 					["qg"] = 15174,	-- Calandrath <Innkeeper>
 					-- #if AFTER CATA
 					["coord"] = { 55.4, 36.6, SILITHUS },
@@ -795,7 +795,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 285,
 					["lvl"] = lvlsquish(54, 54, 15),
-				}),
+				})),
 				applyclassicphase(PHASE_FIVE, q(8497, {	-- Desert Survival Kits (A)
 					["provider"] = { "i", 20807 },	-- Logistics Task Briefing I (A)
 					["timeline"] = { REMOVED_4_0_3 },
@@ -873,7 +873,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_TACTICAL_ASSIGNMENT,
 					},
 				})),
-				q(8319, {	-- Encrypted Twilight Texts
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8319, {	-- Encrypted Twilight Texts
 					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8318,	-- Secret Communication
 					-- #if AFTER CATA
@@ -885,7 +885,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Texts
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(57, 57, 15),
-				}),
+				})),
 				applyclassicphase(PHASE_FIVE, q(8783, {	-- Extraordinary Materials (A)
 					["provider"] = { "i", 21265 },	-- Logistics Task Briefing IX (A)
 					["timeline"] = { REMOVED_4_0_3 },
@@ -982,7 +982,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20810),	-- Signed Field Duty Papers
 					},
 				})),
-				q(8309, {	-- Glyph Chasing
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8309, {	-- Glyph Chasing
 					["qg"] = 15170,	-- Rutgar Glyphshaper
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 					-- #if AFTER CATA
@@ -1028,15 +1028,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						-- #endif
 					},
-				}),
-				q(8343, {	-- Goldleaf's Discovery
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8343, {	-- Goldleaf's Discovery
 					["qg"] = 15270,	-- Huum Wildmane
 					["coord"] = { 48.6, 37.9, SILITHUS },
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
 					["timeline"] = { REMOVED_4_0_3 },
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
-				}),
+				})),
 				applyclassicphase(PHASE_FIVE, q(8541, {	-- Grinding Stones for the Guard (A)
 					["provider"] = { "i", 20940 },	-- Logistics Task Briefing III (A)
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1153,7 +1153,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						TACTICAL_ASSIGNMENT,
 					},
 				})),
-				q(8306, {	-- Into The Maw of Madness
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8306, {	-- Into The Maw of Madness
 					["qg"] = 15181,	-- Commander Mar'alith
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 					-- #if AFTER CATA
@@ -1173,8 +1173,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(20724),	-- Corrupted Blackwood Staff
 					},
-				}),
-				q(8317, {	-- Kitchen Assistance
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8317, {	-- Kitchen Assistance
 					["qg"] = 15174,	-- Calandrath <Innkeeper>
 					["sourceQuest"] = 8313,	-- Sharing the Knowledge
 					-- #if AFTER CATA
@@ -1186,8 +1186,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["learnedAt"] = 285,
 					["lvl"] = lvlsquish(54, 54, 15),
-				}),
-				q(8341, {	-- Lords of the Council
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8341, {	-- Lords of the Council
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8343,	-- Goldleaf's Discovery
 					["coord"] = { 52.0, 38.2, SILITHUS },
@@ -1203,7 +1203,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
-				}),
+				})),
 				q(8333, {	-- Medallion of Station
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8332,	-- Dukes of the Council
@@ -1221,7 +1221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(8278, {	-- Noggle's Last Hope
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8278, {	-- Noggle's Last Hope
 					["qg"] = 15189,	-- Beetix Ficklespragg
 					["sourceQuest"] = 8277,	-- Deadly Desert Venom
 					-- #if AFTER CATA
@@ -1244,8 +1244,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 11739,	-- Rock Stalker
 						}),
 					},
-				}),
-				q(8282, {	-- Noggle's Lost Satchel
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8282, {	-- Noggle's Lost Satchel
 					["qg"] = 15190,	-- Noggle Ficklespragg
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
 					-- #if AFTER CATA
@@ -1265,7 +1265,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(13452),	-- Elixir of the Mongoose
 						i(13447),	-- Elixir of the Sages
 					},
-				}),
+				})),
 				applyclassicphase(PHASE_SIX_SILITHYST, q(9416, {	-- Report to General Kirika
 					["qg"] = 17081,	-- Scout Bloodfist
 					["coords"] = {
@@ -1292,7 +1292,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(53, 53, 15),
 				})),
-				q(8352, {	-- Scepter of the Council
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8352, {	-- Scepter of the Council
 					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8351,	-- Bor Wishes to Speak
 					["coord"] = { 48.6, 37.8, SILITHUS },
@@ -1316,7 +1316,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
-				}),
+				})),
 				applyclassicphase(PHASE_SIX_SILITHYST, q(9419, {	-- Scouring the Desert [ALLIANCE]
 					["qg"] = 17080,	-- Marshal Bluewall
 					["sourceQuest"] = 9415,	-- Report to Marshal Bluewall
@@ -1395,7 +1395,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 					},
 				})),
-				q(8318, {	-- Secret Communication
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8318, {	-- Secret Communication
 					["qg"] = 15306,	-- Bor Wildmane
 					-- #if AFTER CATA
 					["coord"] = { 53.15, 35.12, SILITHUS },
@@ -1404,8 +1404,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Texts
 					["lvl"] = lvlsquish(57, 57, 15),
-				}),
-				q(8280, {	-- Securing the Supply Lines
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8280, {	-- Securing the Supply Lines
 					["qg"] = 15191,	-- Windcaller Proudhorn
 					["sourceQuests"] = {
 						-- #if AFTER CATA
@@ -1429,8 +1429,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 11740 },	-- Dredge Striker
 						}),
 					},
-				}),
-				q(8313, {	-- Sharing the Knowledge
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8313, {	-- Sharing the Knowledge
 					["providers"] = {
 						{ "o", 180503 },	-- Sandy Cookbook
 						{ "i",  20467 },	-- Torn Recipe Page
@@ -1447,7 +1447,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						recipe(24801),	-- Smoked Desert Dumplings
 					},
-				}),
+				})),
 				q(8348, {	-- Signet of the Dukes
 					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8349,	-- Bor Wildmane
@@ -1505,7 +1505,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				q(8281, {	-- Stepping Up Security
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8281, {	-- Stepping Up Security
 					["qg"] = 15191,	-- Windcaller Proudhorn
 					["sourceQuest"] = 8280, -- Securing the Supply Lines
 					-- #if AFTER CATA
@@ -1519,8 +1519,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 11741 },	-- Dredge Crusher
 						}),
 					},
-				}),
-				q(8324, {	-- Still Believing
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8324, {	-- Still Believing
 					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8323,	-- True Believers
 					-- #if AFTER CATA
@@ -1531,23 +1531,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Text
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(54, 54, 15),
-				}),
-				q(8275, {	-- Taking Back Silithus (A)
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8275, {	-- Taking Back Silithus (A)
 					["qg"] = 15187,	-- Cenarion Emissary Jademoon
 					["coord"] = { 58.5, 47.3, IRONFORGE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
-				}),
-				q(8276, {	-- Taking Back Silithus (H)
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8276, {	-- Taking Back Silithus (H)
 					["qg"] = 15188,	-- Cenarion Emissary Blackhoof
 					["coord"] = { 47.6, 65.8, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
-				}),
+				})),
 				applyclassicphase(PHASE_FIVE, q(8770, {	-- Target: Hive'Ashi Defenders
 					["provider"] = { "i", 21749 },	-- Combat Task Briefing I
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1692,7 +1692,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				q(8315, {	-- The Calling
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8315, {	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8314,	-- Unraveling the Mystery
 					["coord"] = { 49.7, 37.5, SILITHUS },
@@ -1708,8 +1708,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 14862,	-- Emissary Roman'khan
 						}),
 					},
-				}),
-				q(8285, {	-- The Deserter
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8285, {	-- The Deserter
 					["providers"] = {
 						{ "n", 15183 },	-- Geologist Larksbane
 						{ "i", 20401 },	-- Restored Twilight Tablet
@@ -1721,7 +1721,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 49.7, 37.5, SILITHUS },
 					-- #endif
 					["lvl"] = lvlsquish(54, 54, 15),
-				}),
+				})),
 				q(28859, {	-- The Dunes of Silithus
 					["qg"] = 38269,	-- Zen'Aliri
 					-- ["sourceQuest"] = 24695,	-- Ever Watching From Above [nothing under this entire quest chain is required... maybe something completely different?]
@@ -1838,7 +1838,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(8279, {	-- The Twilight Lexicon
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8279, {	-- The Twilight Lexicon
 					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8285,	-- The Deserter
 					-- #if AFTER CATA
@@ -1864,8 +1864,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 11804,	-- Twilight Keeper Havunth <Twilight's Hammer>
 						}),
 					},
-				}),
-				q(8284, {	-- The Twilight Mystery
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8284, {	-- The Twilight Mystery
 					["qg"] = 15183,	-- Geologist Larksbane
 					-- #if AFTER CATA
 					["coord"] = { 53.6, 35.3, SILITHUS },
@@ -1883,7 +1883,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["coord"] = { 23.4, 11.8, SILITHUS },
 						}),
 					},
-				}),
+				})),
 				applyclassicphase(PHASE_FIVE, q(8829, {	-- The Ultimate Deception
 					["provider"] = { "i", 21514 },	-- Logistics Task Briefing XI
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1900,7 +1900,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				q(8323, {	-- True Believers
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8323, {	-- True Believers
 					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
 					-- #if AFTER CATA
@@ -1910,7 +1910,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Text
 					["lvl"] = lvlsquish(54, 54, 15),
-				}),
+				})),
 				applyclassicphase(PHASE_FIVE, q(8498, {	-- Twilight Battle Orders
 					["provider"] = { "i", 20943 },	-- Tactical Task Briefing X
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1925,7 +1925,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						TACTICAL_ASSIGNMENT,
 					},
 				})),
-				q(8320, {	-- Twilight Geolords
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8320, {	-- Twilight Geolords
 					["qg"] = 15270,	-- Huum Wildmane
 					-- #if AFTER CATA
 					["coord"] = { 53.2, 35.0, SILITHUS },
@@ -1938,7 +1938,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["provider"] = { "n", 11881 },	-- Twilight Geolord
 						}),
 					},
-				}),
+				})),
 				applyclassicphase(PHASE_FIVE, q(8740, {	-- Twilight Marauders
 					["provider"] = { "i", 20944 },	-- Tactical Task Briefing IX
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1955,7 +1955,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_TACTICAL_ASSIGNMENT,
 					},
 				})),
-				q(8342, {	-- Twilight Ring of Lordship
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8342, {	-- Twilight Ring of Lordship
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8341,	-- Lords of the Council
 					["coord"] = { 52.0, 38.2, SILITHUS },
@@ -1972,7 +1972,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 					},
-				}),
+				})),
 				q(6844, {	-- Umber, Archivist
 					["providers"] = {
 						{ "n", 13220 },	-- Layo Starstrike
@@ -2014,7 +2014,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						LOGISTICS_ASSIGNMENT_H,
 					},
 				})),
-				q(8314, {	-- Unraveling the Mystery
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8314, {	-- Unraveling the Mystery
 					["providers"] = {
 						{ "n", 15170 },	-- Rutgar Glyphshaper
 						{ "i", 20463 },	-- Glyphed Crystal Prism
@@ -2029,7 +2029,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 41.2, 88.4, SILITHUS },
 					-- #endif
 					["lvl"] = lvlsquish(58, 58, 15),
-				}),
+				})),
 				applyclassicphase(PHASE_FIVE, q(8572, {	-- Veteran's Battlegear
 					["qg"] = 15176,	-- Vargus
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
@@ -2080,7 +2080,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				q(8321, {	-- Vyral the Vile
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8321, {	-- Vyral the Vile
 					["qg"] = 15270,	-- Huum Wildmane
 					["sourceQuest"] = 8320,	-- Twilight Geolords
 					-- #if AFTER CATA
@@ -2098,8 +2098,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20650),	-- Desert Wind Gauntlets
 						i(20649),	-- Sunprism Pendant
 					},
-				}),
-				q(8283, {	-- Wanted - Deathclasp, Terror of the Sands
+				})),
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, q(8283, {	-- Wanted - Deathclasp, Terror of the Sands
 					["provider"] = { "o", 180448 },	-- Wanted Poster: Deathclasp
 					-- #if AFTER CATA
 					["coord"] = { 55.0, 35.9, SILITHUS },
@@ -2120,7 +2120,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(20646),	-- Sandstrider's Mark
 						i(20647),	-- Black Crystal Dagger
 					},
-				}),
+				})),
 				warchiefscommand(q(28527, {	-- Warchief's Command: Silithus!
 					["isBreadcrumb"] = true,
 					["timeline"] = { ADDED_4_0_3 },
@@ -2309,7 +2309,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				o(180466, {	-- Greater Wind Stone
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, o(180466, {	-- Greater Wind Stone
 					["description"] = "Summons one of 4 Abyssal High Council bosses. The ritual requires a Twilight Trappings set, a medallion of station, and a ring of lordship. To guarantee that a specific High Council is summoned, a Scepter of Beckoning can be used.",
 					["cost"] = {
 						{ "i", 20451, 1 },	-- Twilight Cultist Ring of Lordship
@@ -2394,7 +2394,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
-				}),
+				})),
 				n(50737, {	-- Acroniss
 					["coord"] = { 73.6, 16.0, SILITHUS },
 					["timeline"] = { ADDED_5_1_0 },
@@ -2584,9 +2584,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					},
 					["groups"] = {
-						i(20451, {	-- Twilight Cultist Ring of Lordship
+						applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20451, {	-- Twilight Cultist Ring of Lordship
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
-						}),
+						})),
 					},
 				}),
 				n(14474, {	-- Zora
@@ -2606,7 +2606,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(REWARDS, {
 				["description"] = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
 				["groups"] = {
-					i(20808, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Combat Assignment
+					applyclassicphase(PHASE_FIVE, i(20808, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Combat Assignment
 						i(22648, {	-- Hive'Ashi Dossier
 							i(21749),	-- Combat Task Briefing I
 							i(21750),	-- Combat Task Briefing II
@@ -2625,92 +2625,92 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21250),	-- Combat Task Briefing VI
 							i(21251),	-- Combat Task Briefing VII
 						}),
-					})),
-					i(20419, {	-- Crest of Beckoning: Earth
+					}))),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20419, {	-- Crest of Beckoning: Earth
 						["cost"] = {
 							{ "i", 20527, 1 },	-- Scroll: Create Crest of Beckoning (Earth)
 							{ "i", 8170, 1 },	-- Rugged Leather
 							{ "i", 12365, 1 },	-- Dense Stone
 						},
-					}),
-					i(20416, {	-- Crest of Beckoning: Fire
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20416, {	-- Crest of Beckoning: Fire
 						["cost"] = {
 							{ "i", 20518, 1 },	-- Scroll: Create Crest of Beckoning (Fire)
 							{ "i", 8170, 1 },	-- Rugged Leather
 							{ "i", 4625, 1 },	-- Firebloom
 						},
-					}),
-					i(20418, {	-- Crest of Beckoning: Thunder
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20418, {	-- Crest of Beckoning: Thunder
 						["cost"] = {
 							{ "i", 20526, 1 },	-- Scroll: Create Crest of Beckoning (Thunder)
 							{ "i", 8170, 1 },	-- Rugged Leather
 							{ "i", 7069, 1 },	-- Elemental Air
 						},
-					}),
-					i(20420, {	-- Crest of Beckoning: Water
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20420, {	-- Crest of Beckoning: Water
 						["cost"] = {
 							{ "i", 20528, 1 },	-- Scroll: Create Crest of Beckoning (Water)
 							{ "i", 8170, 1 },	-- Rugged Leather
 							{ "i", 4791, 1 },	-- Enchanted Water
 						},
-					}),
-					i(20449, {	-- Scepter of Beckoning: Stone
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20449, {	-- Scepter of Beckoning: Stone
 						["cost"] = {
 							{ "i", 20543, 1 },	-- Scroll: Create Scepter of Beckoning (Earth)
 							{ "i", 11144, 1 },	-- Truesilver Rod
 							{ "i", 12365, 20 },	-- Dense Stone
 						},
-					}),
-					i(20447, {	-- Scepter of Beckoning: Fire
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20447, {	-- Scepter of Beckoning: Fire
 						["cost"] = {
 							{ "i", 20540, 1 },	-- Scroll: Create Scepter of Beckoning (Fire)
 							{ "i", 11144, 1 },	-- Truesilver Rod
 							{ "i", 4625, 20 },	-- Firebloom
 						},
-					}),
-					i(20448, {	-- Scepter of Beckoning: Thunder
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20448, {	-- Scepter of Beckoning: Thunder
 						["cost"] = {
 							{ "i", 20542, 1 },	-- Scroll: Create Scepter of Beckoning (Thunder)
 							{ "i", 11144, 1 },	-- Truesilver Rod
 							{ "i", 7069, 20 },	-- Elemental Air
 						},
-					}),
-					i(20450, {	-- Scepter of Beckoning: Water
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20450, {	-- Scepter of Beckoning: Water
 						["cost"] = {
 							{ "i", 20544, 1 },	-- Scroll: Create Scepter of Beckoning (Water)
 							{ "i", 11144, 1 },	-- Truesilver Rod
 							{ "i", 4791, 20 },	-- Enchanted Water
 						},
-					}),
-					i(20435, {	-- Signet of Beckoning: Stone
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20435, {	-- Signet of Beckoning: Stone
 						["cost"] = {
 							{ "i", 20533, 1 },	-- Scroll: Create Signet of Beckoning (Earth)
 							{ "i", 20520, 1 },	-- Dark Rune
 							{ "i", 12365, 5 },	-- Dense Stone
 						},
-					}),
-					i(20432, {	-- Signet of Beckoning: Fire
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20432, {	-- Signet of Beckoning: Fire
 						["cost"] = {
 							{ "i", 20531, 1 },	-- Scroll: Create Signet of Beckoning (Fire)
 							{ "i", 20520, 1 },	-- Dark Rune
 							{ "i", 4625, 5 },	-- Firebloom
 						},
-					}),
-					i(20433, {	-- Signet of Beckoning: Thunder
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20433, {	-- Signet of Beckoning: Thunder
 						["cost"] = {
 							{ "i", 20532, 1 },	-- Scroll: Create Signet of Beckoning (Thunder)
 							{ "i", 20520, 1 },	-- Dark Rune
 							{ "i", 7069, 5 },	-- Elemental Air
 						},
-					}),
-					i(20436, {	-- Signet of Beckoning: Water
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20436, {	-- Signet of Beckoning: Water
 						["cost"] = {
 							{ "i", 20535, 1 },	-- Scroll: Create Signet of Beckoning (Water)
 							{ "i", 20520, 1 },	-- Dark Rune
 							{ "i", 4791, 5 },	-- Enchanted Water
 						},
-					}),
-					i(20469, {	-- Decoded True Believer Clippings
+					})),
+					applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20469, {	-- Decoded True Believer Clippings
 						["description"] = "This will arrive in your mailbox approximately 12-24 hours either of the quests are turned in.",
 						["sourceQuests"] = {
 							8324,	-- Still Believing
@@ -2737,8 +2737,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(20532),	-- Scroll: Create Signet of Beckoning (Thunder)
 							i(20535),	-- Scroll: Create Signet of Beckoning (Water)
 						},
-					}),
-					i(20805, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (A)
+					})),
+					applyclassicphase(PHASE_FIVE, i(20805, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (A)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(20807),	-- Logistics Task Briefing I (A)
@@ -2748,8 +2748,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21265),	-- Logistics Task Briefing IX (A)
 							i(21514),	-- Logistics Task Briefing XI
 						},
-					})),
-					i(21386, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (H)
+					}))),
+					applyclassicphase(PHASE_FIVE, i(21386, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (H)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(21378),	-- Logistics Task Briefing I (H)
@@ -2759,16 +2759,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21381),	-- Logistics Task Briefing IX (H)
 							i(21514),	-- Logistics Task Briefing XI
 						},
-					})),
-					i(21133, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Tactical Assignment
+					}))),
+					applyclassicphase(PHASE_FIVE, i(21133, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Tactical Assignment
 						i(21245),	-- Tactical Task Briefing I
 						i(20945),	-- Tactical Task Briefing II
 						i(20947),	-- Tactical Task Briefing IV
 						i(20948),	-- Tactical Task Briefing V
 						i(21167),	-- Tactical Task Briefing VIII
 						i(20943),	-- Tactical Task Briefing X
-					})),
-					i(21132, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (A)
+					}))),
+					applyclassicphase(PHASE_FIVE, i(21132, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (A)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(21257),	-- Logistics Task Briefing IV (A)
@@ -2777,8 +2777,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21263),	-- Logistics Task Briefing VII (A)
 							i(20806),	-- Logistics Task Briefing X (A)
 						},
-					})),
-					i(21266, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (H)
+					}))),
+					applyclassicphase(PHASE_FIVE, i(21266, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (H)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(21258),	-- Logistics Task Briefing IV (H)
@@ -2787,14 +2787,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21264),	-- Logistics Task Briefing VII (H)
 							i(21385),	-- Logistics Task Briefing X (H)
 						},
-					})),
-					i(20809, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Tactical Assignment
+					}))),
+					applyclassicphase(PHASE_FIVE, i(20809, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Tactical Assignment
 						i(21245),	-- Tactical Task Briefing I
 						i(21751),	-- Tactical Task Briefing III
 						i(20944),	-- Tactical Task Briefing IX
 						i(21165),	-- Tactical Task Briefing VI
 						i(21166),	-- Tactical Task Briefing VII
-					})),
+					}))),
 				},
 			}),
 			-- #if BEFORE 4.3.0

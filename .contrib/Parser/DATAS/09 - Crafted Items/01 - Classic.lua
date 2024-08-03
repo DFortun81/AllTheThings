@@ -940,7 +940,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		i(787),		-- Slitherskin Mackerel
 		applyclassicphase(WRATH_PHASE_ONE, i(44838, {["timeline"] = {ADDED_3_2_2}})),	-- Slow-Roasted Turkey [Pilgrim's Bounty]
 		i(6890),	-- Smoked Bear Meat
-		applyclassicphase(PHASE_FOUR, i(20452)),	-- Smoked Desert Dumplings
+		applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20452)),	-- Smoked Desert Dumplings
 		i(21072),	-- Smoked Sagefish
 		i(3729),	-- Soothing Turtle Bisque
 		applyclassicphase(TBC_PHASE_ONE, i(30816, {["timeline"] = {ADDED_2_0_5}})),	-- Spice Bread
@@ -3140,7 +3140,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			i(7026),	-- Linen Belt
 			i(13856),	-- Runecloth Belt
-			applyclassicphase(PHASE_FOUR, i(20539)),	-- Runed Stygian Belt
+			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20539)),	-- Runed Stygian Belt
 			i(4328),	-- Spider Belt
 			i(4329),	-- Star Belt
 			applyclassicphase(PHASE_THREE, i(19047)),	-- Wisdom of the Timbermaw
@@ -3177,7 +3177,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(10009),	-- Red Mageweave Pants
 			i(203800, {["timeline"] = {ADDED_10_0_7}}),	-- Ritualistic Legwarmers
 			i(13865),	-- Runecloth Pants
-			applyclassicphase(PHASE_FOUR, i(20538)),	-- Runed Stygian Leggings
+			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20538)),	-- Runed Stygian Leggings
 			i(10002),	-- Shadoweave Pants
 			i(10047),	-- Simple Kilt
 			i(10045),	-- Simple Linen Pants
@@ -3211,7 +3211,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(15802),	-- Mooncloth Boots
 			i(4313),	-- Red Woolen Boots
 			i(13864),	-- Runecloth Boots
-			applyclassicphase(PHASE_FOUR, i(20537)),	-- Runed Stygian Boots
+			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20537)),	-- Runed Stygian Boots
 			i(10031),	-- Shadoweave Boots
 			i(10046),	-- Simple Linen Boots
 			i(4312),	-- Soft-Soled Linen Boots

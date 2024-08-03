@@ -1189,7 +1189,7 @@ profession(COOKING, {
 					["name"] = "Smoked Bear Meat",
 					["recipeID"] = 8607
 				},
-				applyclassicphase(PHASE_FOUR, {
+				applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, {
 					["name"] = "Smoked Desert Dumplings",
 					["recipeID"] = 24801,
 				}),
