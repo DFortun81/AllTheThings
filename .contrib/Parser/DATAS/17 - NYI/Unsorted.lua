@@ -1532,21 +1532,6 @@ root(ROOTS.Unsorted, {
 				i(225246),	-- Overflowing Hallowfall Trove
 				i(225247),	-- Overflowing Severed Threads Trove
 				i(225365),	-- PH_3
-				i(225416),	-- Green Hills of Stranglethorn - Page 26
-				i(225417),	-- Green Hills of Stranglethorn - Page 6
-				i(225418),	-- Green Hills of Stranglethorn - Page 8
-				i(225419),	-- Green Hills of Stranglethorn - Page 27
-				i(225420),	-- Green Hills of Stranglethorn - Page 11
-				i(225421),	-- Green Hills of Stranglethorn - Page 16
-				i(225422),	-- Green Hills of Stranglethorn - Page 10
-				i(225423),	-- Green Hills of Stranglethorn - Page 4
-				i(225424),	-- Green Hills of Stranglethorn - Page 21
-				i(225425),	-- Green Hills of Stranglethorn - Page 18
-				i(225426),	-- Green Hills of Stranglethorn - Page 25
-				i(225427),	-- Green Hills of Stranglethorn - Page 20
-				i(225428),	-- Green Hills of Stranglethorn - Page 1
-				i(225429),	-- Green Hills of Stranglethorn - Page 24
-				i(225430),	-- Green Hills of Stranglethorn - Page 14
 				i(225541),	-- PH_4
 				i(225553),	-- PH_5
 
