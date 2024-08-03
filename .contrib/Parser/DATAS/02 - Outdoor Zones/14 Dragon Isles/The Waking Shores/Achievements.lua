@@ -102,28 +102,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["_npcs"] = { 193175 },	-- Slurpo, the Incredible Snail
 				}),
 			}),
-			ach(17561, {    -- Ancient Stones of the Waking Shores
+			ach(17561, {    -- Ancient Stones of the Waking Shores (automated)
 				["timeline"] = { ADDED_10_1_0 },
-				["g"] = {
-					crit(58804, {    -- So Close, So Far
-						["coord"] = { 74.2, 57.2, THE_WAKING_SHORES },
-					}),
-					crit(58805, {    -- One Small Part
-						["coords"] = {
-							{ 27.2, 60.9, THE_WAKING_SHORES },    -- entrance
-							{ 24.2, 53.4, THE_WAKING_SHORES },    -- stone
-						}
-					}),
-					crit(58806, {    -- Neltharus Stands
-						["coord"] = { 26.2, 56.3, THE_WAKING_SHORES },
-					}),
-					crit(58807, {    -- Welcoming the First
-						["coord"] = { 60.7, 67.0, THE_WAKING_SHORES },
-					}),
-					crit(58808, {    -- Learn and Grow
-						["coord"] = { 51.6, 20.0, THE_WAKING_SHORES },
-					}),
-				}
 			}),
 			achraw(16406, {	-- All Sides of the Story
 				crit(55253, {	-- Captain Garrick & Shuja Grimaxe

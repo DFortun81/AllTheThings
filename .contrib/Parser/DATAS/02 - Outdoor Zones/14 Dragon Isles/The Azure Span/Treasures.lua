@@ -4,6 +4,12 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
 		n(TREASURES, {
+			o(381713, {	-- A Solid Foundation
+				["coord"] = { 8.0, 45.6, THE_AZURE_SPAN },
+			}),
+			o(381715, {	-- Attention: Immediate Evacuation
+				["coord"] = { 66.4, 61.1, THE_AZURE_SPAN },
+			}),
 			o(383625, {	-- Case of Fresh Gleamfish
 				["coord"] = { 45.6, 54.8, THE_AZURE_SPAN },
 				["g"] = {
@@ -124,6 +130,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200076),	-- Harpoon Head
 				},
 			}),
+			o(381711, {	-- Im'bunata's Blessing
+				["coord"] = { 56.7, 70.4, THE_AZURE_SPAN },
+			}),
 			o(381160, {	-- Lost Compass
 				["coord"] = { 74.9, 55.0, THE_AZURE_SPAN },
 				["questID"] = 70606,
@@ -183,6 +192,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(199842),	-- Stone Dragontooth
 				},
 			}),
+			o(381718, {	-- The Vow
+				["coord"] = { 60.3, 49.7, THE_AZURE_SPAN },
+			}),
 			o(376582, {	-- Tuskarr Chest
 				["coords"] = {
 					{ 7.2, 45.1, THE_AZURE_SPAN },
@@ -211,6 +223,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(201377),	-- Tuskarr Elder's Staff
 					i(201374),	-- Tuskarr Fishing Pike
 				},
+			}),
+			o(381722, {	-- Vakthros Maintenance
+				["coord"] = { 77.4, 31.1, THE_AZURE_SPAN },
 			}),
 			o(381354, {	-- Wrapped Gold Band
 				["coord"] = { 47.3, 24.6, THE_AZURE_SPAN },

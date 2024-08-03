@@ -7,30 +7,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16678, {	-- Adventurer of The Azure Span
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17563, {    -- Ancient Stones of the Azure Span
+			ach(17563, {    -- Ancient Stones of the Azure Span (automated)
 				["timeline"] = { ADDED_10_1_0 },
-				["g"] = {
-					crit(58814, {    -- Im'bunata's Blessing
-						["coord"] = { 56.7, 70.4, THE_AZURE_SPAN },
-						["provider"] = {"o",381711},
-					}),
-					crit(58815, {    -- A Solid Foundation
-						["coord"] = { 8.0, 45.6, THE_AZURE_SPAN },
-						["provider"] = {"o",381713},
-					}),
-					crit(58816, {    -- Attention: Immediate Evacuation
-						["coord"] = { 66.4, 61.1, THE_AZURE_SPAN },
-						["provider"] = {"o",381715},
-					}),
-					crit(58817, {    -- The Vow
-						["coord"] = { 60.3, 49.7, THE_AZURE_SPAN },
-						["provider"] = {"o",381718},
-					}),
-					crit(58818, {    -- Vakthros Maintenance
-						["coord"] = { 77.4, 31.1, THE_AZURE_SPAN},
-						["provider"] = {"o",381722},
-					}),
-				},
 			}),
 			ach(16577, {	-- Azure Span Glyph Hunter
 				-- Meta Achievement

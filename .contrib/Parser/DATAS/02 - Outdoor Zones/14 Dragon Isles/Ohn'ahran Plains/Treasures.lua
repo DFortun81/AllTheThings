@@ -137,6 +137,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 				},
 			}),
+			o(381707, {	-- Dreams in Emerald
+				["coord"] = { 32.3, 51.3, OHNAHRAN_PLAINS },
+			}),
 			o(381575, {	-- Duck Trap Kit
 				["coord"] = { 70.0, 64.0, OHNAHRAN_PLAINS },
 				["description"] = "Found only when the Aylaag Camp is in this location. Used to summon Quackers the Terrible.",
@@ -195,6 +198,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200861),	-- Stolen Shikaar Warspear
 				},
 			}),
+			o(381708, {	-- The First Kurnal
+				["coord"] = { 67.0, 43.7, OHNAHRAN_PLAINS },
+			}),
+			o(381705, {	-- The Gnoll Wars
+				["coord"] = { 43.5, 56.5, OHNAHRAN_PLAINS },
+			}),
 			o(380859, {	-- Tuskarr Toy Boat
 				["coord"] = { 52.0, 58.3, OHNAHRAN_PLAINS },
 				["questID"] = 70400,
@@ -209,12 +218,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(198696),	-- Wind-Blessed Hide
 				}
 			}),
-			---
-			--TODO: Alex - commented this out since it is seems like outdated data from beta?
-			--n(191861, {	-- Lever Locked Chest
-			--	-- Gave nothing.. Had to do a puzzle
-			--	["coord"] = { 31.5, 71.6, OHNAHRAN_PLAINS },	-- Cave
-			--}),
+			o(381709, {	-- Wind, Wood, Water
+				["coord"] = { 38.6, 66.7, OHNAHRAN_PLAINS },
+			}),
+			o(381706, {	-- Your Dreamer
+				["coord"] = { 24.7, 65.9, OHNAHRAN_PLAINS },
+			}),
 		}),
 	}),
 })));

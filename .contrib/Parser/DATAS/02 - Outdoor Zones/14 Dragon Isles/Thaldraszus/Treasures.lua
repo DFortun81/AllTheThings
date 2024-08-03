@@ -4,6 +4,9 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THALDRASZUS, {
 		n(TREASURES, {
+			o(381731, {	-- A Timely Message
+				["coord"] = { 60.1, 85.0, THALDRASZUS },
+			}),
 			n(196172, {	-- Acorn Harvester
 				["description"] = "Bring nearby Acorn to Tree.",
 				["coord"] = { 49.4, 63.1, THALDRASZUS },
@@ -20,6 +23,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(200863),	-- Glimmering Nozdorite Cluster
 					i(194651),	-- Design: Jeweled Amber Whelpling (RECIPE!)
 				},
+			}),
+			o(381735, {	-- Caretaker's Notes
+				["coord"] = { 62.4, 15.9, THALDRASZUS },
 			}),
 			o(381223, {	-- Cracked Hourglass
 				["description"] = "In a Cave.",
@@ -40,6 +46,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = {
 					i(198540),	-- Golden Claw
 				},
+			}),
+			o(381733, {	-- Guardian Wings
+				["coord"] = { 52.4, 38.8, THALDRASZUS },
+			}),
+			o(381732, {	-- Keeper's Blessing
+				["coord"] = { 58.2, 58.1, THALDRASZUS },
+			}),
+			o(381730, {	-- Mighty Ducks
+				["coord"] = { 42.8, 70.4, THALDRASZUS },
 			}),
 			o(381361, {	-- Precious Stone Fragment
 				["coord"] = { 57.1, 64.6, THALDRASZUS },
@@ -129,6 +144,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(201051),	-- Tyrhold Slippers
 					i(201052),	-- Tyrhold Visage
 				},
+			}),
+			o(381734, {	-- Together Bound
+				["coord"] = { 58.4, 67.8, THALDRASZUS },
+			}),
+			o(381736, {	-- Valdrakken
+				["coord"] = { 57.1, 81.4, VALDRAKKEN },
 			}),
 			o(381108, {	-- Yennu's Map
 				["coord"] = { 54.9, 75.4, THALDRASZUS },

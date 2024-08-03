@@ -7,31 +7,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16679, {	-- Adventurer of Thaldraszus
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17564, {    -- Ancient Stones of Thaldraszus
+			ach(17564, {    -- Ancient Stones of Thaldraszus (automated)
 				["timeline"] = { ADDED_10_1_0 },
-				["g"] = {
-					crit(58819, {    -- Mighty Ducks
-						["coord"] = { 42.8, 70.4, THALDRASZUS },
-					}),
-					crit(58820, {    -- A Timely Message
-						["coord"] = { 60.1, 85.0, THALDRASZUS },
-					}),
-					crit(58821, {    -- Keeper's Blessing
-						["coord"] = { 58.2, 58.1, THALDRASZUS },
-					}),
-					crit(58822, {    -- Guardian Wings
-						["coord"] = { 52.4, 38.8, THALDRASZUS },
-					}),
-					crit(58823, {    -- Together Bound
-						["coord"] = { 58.4, 67.8, THALDRASZUS },
-					}),
-					crit(58824, {    -- Caretaker's Notes
-						["coord"] = { 62.4, 15.9, THALDRASZUS },
-					}),
-					crit(58825, {    -- Valdrakken
-						["coord"] = { 57.1, 81.4, VALDRAKKEN },
-					}),
-				},
 			}),
 			ach(16104, {	-- Dragon Glyphs: Algeth'ar Academy
 				["coord"] = { 62.4, 40.4, THALDRASZUS },

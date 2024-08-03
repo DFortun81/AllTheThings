@@ -170,6 +170,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(202019),	-- Golden Dragon Goblet (TOY!)
 				},
 			}),
+			o(381343, {	-- Learn and Grow
+				["coord"] = { 51.6, 20.0, THE_WAKING_SHORES },
+			}),
 			o(379168, {	-- Lost Cache Key
 				["description"] = "Collect a Sour Apple from the ground around the Blacktalon Pack Goat along the road leading up to Obsidian Bulwark at 43.7, 71.8\n\nThrow an apple at the Blacktalon Shadowclaw in Obsidian Bulwark 43.1, 67.2\n\nYou can now interact with the bird, it will fly you up to the cave where the Cache key will be visible beside the corpse.",
 				["coord"] = { 43.0, 70.0, THE_WAKING_SHORES },
@@ -189,6 +192,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = {
 					i(201933),	-- Black Dragon's Challenge Dummy (TOY!)
 				},
+			}),
+			o(381340, {  -- Neltharus Stands
+				["coord"] = { 26.2, 56.3, THE_WAKING_SHORES },
 			}),
 			o(378820, {	-- Popfizz Punch
 				["coord"] = { 39.30, 38.32, THE_WAKING_SHORES },
@@ -234,6 +240,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(198661),	-- Partially Destroyed Diary
 				},
 			}),
+			o(381336, {	-- One Small Part
+				["coords"] = {
+					{ 27.2, 60.9, THE_WAKING_SHORES },    -- entrance
+					{ 24.2, 53.4, THE_WAKING_SHORES },    -- stone
+				}
+			}),
 			o(382325, {	-- Onyx Gem Cluster
 				["description"] = "Cave Entrance at 29.4, 52.6",
 				["coord"] = { 29.4, 47.0, THE_WAKING_SHORES },
@@ -260,6 +272,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(202082),	-- Petrified Dragon Egg
 				},
 			}),
+			o(376325, {	-- So Close, So Far
+				["coord"] = { 74.2, 57.2, THE_WAKING_SHORES },
+			}),
 			o(380430, {	-- Tail Fragment
 				["coord"] = { 58.2, 68.3, THE_WAKING_SHORES },
 				["description"] = "Underneath the tail of the dragon statue.",
@@ -276,6 +291,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = {
 					i(200066),	-- Well-Preserved Bone
 				},
+			}),
+			o(381341, {	-- Welcoming the First
+				["coord"] = { 60.7, 67.0, THE_WAKING_SHORES },
 			}),
 			o(380653, {	-- Yennu's Kite
 				["coord"] = { 46.8, 31.2, THE_WAKING_SHORES },

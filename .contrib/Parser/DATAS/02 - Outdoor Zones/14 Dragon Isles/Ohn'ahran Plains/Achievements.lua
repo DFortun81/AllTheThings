@@ -7,30 +7,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16677, {	-- Adventurer of the Ohn'ahran Plains
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(17562, {    -- Ancient Stones of the Ohn'ahran Plains
+			ach(17562, {    -- Ancient Stones of the Ohn'ahran Plains (automated)
 				["timeline"] = { ADDED_10_1_0 },
-				["g"] = {
-					crit(58809, {    -- The Gnoll Wars
-						["coord"] = { 43.5, 56.5, OHNAHRAN_PLAINS },
-						["provider"] = {"o",381705},
-					}),
-					crit(58810, {    -- Your Dreamer
-						["coord"] = { 24.7, 65.9, OHNAHRAN_PLAINS },
-						["provider"] = {"o",381706},
-					}),
-					crit(58811, {    -- Dreams in Emerald
-						["coord"] = { 32.3, 51.3, OHNAHRAN_PLAINS },
-						["provider"] = {"o",381707},
-					}),
-					crit(58812, {    -- The First Kurnal
-						["coord"] = { 67.0, 43.7, OHNAHRAN_PLAINS },
-						["provider"] = {"o",381708},
-					}),
-					crit(58813, {    -- Wind, Wood, Water
-						["coord"] = { 38.6, 66.7, OHNAHRAN_PLAINS },
-						["provider"] = {"o",381709},
-					}),
-				},
 			}),
 			ach(16061, {	-- Dragon Glyphs: Dragonsprings Summit
 				["coord"] = { 84.1, 77.4, OHNAHRAN_PLAINS },
