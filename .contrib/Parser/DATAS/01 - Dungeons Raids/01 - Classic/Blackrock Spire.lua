@@ -385,9 +385,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			applyclassicphase(SOD_PHASE_FOUR, q(84377, {	-- End of the Dark Horde
 				["providers"] = {
 					{ "i", 227911 },	-- Head of Rend Blackhand
-					{ "n",    466 },	-- General Marcus Jonathon
+					{ "n",    332 },	-- Master Mathias Shaw <Leader of SI:7>
 				},
-				["coord"] = { 63.8, 75.4, STORMWIND_CITY },
+				["coord"] = { 75.8, 59.8, STORMWIND_CITY },
 				["timeline"] = { "added 1.15.3" },
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 60,
