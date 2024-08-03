@@ -1,6 +1,7 @@
 COMMON_VENDOR_ITEMS = createHeader({
 	readable = "Common Vendor Items",
 	constant = "COMMON_VENDOR_ITEMS",
+	npcfill = true,
 	-- #if NOT ANYCLASSIC
 	export = true,	-- These are referenced in the NPCExpandHeaders / SpecificSources
 	-- #endif

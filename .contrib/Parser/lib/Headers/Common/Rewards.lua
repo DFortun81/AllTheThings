@@ -1,6 +1,7 @@
 REWARDS = createHeader({
 	readable = "Rewards",
 	constant = "REWARDS",
+	npcfill = true,
 	icon = [[~_.asset("Interface_Rewards")]],
 	text = {
 		en = [[~QUEST_REWARDS]],

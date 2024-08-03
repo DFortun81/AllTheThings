@@ -1,6 +1,7 @@
 ZONE_DROPS = createHeader({
 	readable = "Zone Drops",
 	constant = "ZONE_DROPS",
+	npcfill = true,
 	export = true,
 	icon = [[~_.asset("Interface_Zone_drop")]],
 	text = {

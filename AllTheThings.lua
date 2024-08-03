@@ -3473,24 +3473,7 @@ local function DetermineSymlinkGroups(group)
 		return groups;
 	end
 end
--- TODO: this will go away and be controlled by the Custom header definition itself soon
-local NPCExpandHeaders = {
-	[app.HeaderConstants.COMMON_BOSS_DROPS] = true,
-	[app.HeaderConstants.COMMON_VENDOR_ITEMS] = true,
-	[app.HeaderConstants.DROPS] = true,
-	-- [app.HeaderConstants.FACTION_HEADER_ALLIANCE] = true,
-	-- [app.HeaderConstants.FACTION_HEADER_HORDE] = true,
-	-- [app.HeaderConstants.PVP_GLADIATOR] = true,
-	-- [app.HeaderConstants.PVP_ELITE] = true,
-	[app.HeaderConstants.REWARDS] = true,
-	[app.HeaderConstants.ZONE_DROPS] = true,
-	-- Tier slots
-	[app.HeaderConstants.HEAD] = true,
-	[app.HeaderConstants.SHOULDER] = true,
-	[app.HeaderConstants.CHEST] = true,
-	[app.HeaderConstants.HANDS] = true,
-	[app.HeaderConstants.LEGS] = true,
-};
+local NPCExpandHeaders = app.HeaderData.FILLNPCS or app.EmptyTable
 -- Pulls in Common drop content for specific NPCs if any exists
 -- (so we don't need to always symlink every NPC which is included in common boss drops somewhere)
 local function DetermineNPCDrops(group, FillData)
@@ -10561,16 +10544,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			-- [app.HeaderConstants.ZONE_DROPS] = true,
 		};
 		-- Headers possible in a hierarchy that should just be ignored
-		-- TODO: this will go away and be controlled by the Custom header definition itself soon
-		local ignoredHeaders = {
-			[app.HeaderConstants.GARRISONS] = true,
-			[app.HeaderConstants.DUNGEONS] = true,
-			[app.HeaderConstants.RAIDS] = true,
-			[app.HeaderConstants.SCENARIOS] = true,
-			[app.HeaderConstants.SCENARIO_COMPLETION] = true,
-			[app.HeaderConstants.REMIX_MOP] = true,
-			[app.HeaderConstants.TIER_14_RAIDS] = true,
-		};
+		local ignoredHeaders = app.HeaderData.IGNOREINMINILIST or app.EmptyTable;
 		-- self.Rebuild
 		(function()
 		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID, isInInstance;

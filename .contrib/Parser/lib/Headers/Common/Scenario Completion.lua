@@ -1,6 +1,7 @@
 SCENARIO_COMPLETION = createHeader({
 	readable = "Scenario Completion",
 	constant = "SCENARIO_COMPLETION",
+	minilist_ignore = true,
 	icon = [[~_.asset("Interface_Rewards")]],
 	text = {
 		en = "Scenario Completion",

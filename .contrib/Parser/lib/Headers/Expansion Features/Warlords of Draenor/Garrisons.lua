@@ -1,6 +1,7 @@
 GARRISONS = createHeader({
 	readable = "Garrisons",
 	constant = "GARRISONS",
+	minilist_ignore = true,
 	-- #if NOT ANYCLASSIC
 	export = true,	-- This is referenced in ignoredHeaders
 	-- #endif

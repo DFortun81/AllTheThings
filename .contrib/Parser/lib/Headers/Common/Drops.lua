@@ -1,6 +1,7 @@
 DROPS = createHeader({
 	readable = "Drops",
 	constant = "DROPS",
+	npcfill = true,
 	-- #if NOT ANYCLASSIC
 	export = true,	-- These are referenced in the NPCExpandHeaders / SpecificSources
 	-- #endif

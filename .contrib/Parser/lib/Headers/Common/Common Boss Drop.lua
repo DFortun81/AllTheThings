@@ -1,6 +1,7 @@
 COMMON_BOSS_DROPS = createHeader({
 	readable = "Common Boss Drop",
 	constant = "COMMON_BOSS_DROPS",
+	npcfill = true,
 	export = true,
 	icon = [[~_.asset("Category_CommonBossDrop")]],
 	text = {
