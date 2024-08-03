@@ -204,7 +204,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_TWO, q(7787, {	-- Rise, Thunderfury!
+				applyclassicphase(PHASE_THREE, q(7787, {	-- Rise, Thunderfury!
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
