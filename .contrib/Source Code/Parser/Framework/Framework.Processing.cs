@@ -21,6 +21,24 @@ namespace ATT
         };
 
         /// <summary>
+        /// Contains function mappings against Sourced Groups to be executed in parallel following sequential Processing sequence
+        /// </summary>
+        private static readonly Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>> PostProcessFunctions = new Dictionary<Action<IDictionary<string, object>>, List<IDictionary<string, object>>>();
+
+        /// <summary>
+        /// Adds a post processing function for a given object
+        /// </summary>
+        private static void AddPostProcessing(Action<IDictionary<string,object>> act, IDictionary<string, object> obj)
+        {
+            if (!PostProcessFunctions.TryGetValue(act, out var objs))
+            {
+                PostProcessFunctions[act] = objs = new List<IDictionary<string, object>>();
+            }
+
+            objs.Add(obj);
+        }
+
+        /// <summary>
         /// Process all of the data loaded into the database.
         /// </summary>
         public static void Process()
@@ -85,13 +103,12 @@ namespace ATT
                 ProcessContainer(container);
             }
 
-            // Pass to clean up Ensembles (relies on Sourced SourceIDs from DataConsolidation)
-            CurrentParseStage = ParseStage.EnsembleCleanup;
-            Validator.OnlyClean = true;
-            ProcessingFunction = EnsembleCleanup;
-            foreach (var container in Objects.AllContainers)
+            // Post-processing of individual groups in parallel (logic which does not require cross-modification or follow up processing)
+            CurrentParseStage = ParseStage.PostProcessing;
+            foreach (var actionSequence in PostProcessFunctions)
             {
-                ProcessContainer(container);
+                var act = actionSequence.Key;
+                actionSequence.Value.AsParallel().ForAll(act);
             }
 
             // Sort World Drops by Name
@@ -1063,11 +1080,11 @@ namespace ATT
             return true;
         }
 
-        private static bool EnsembleCleanup(IDictionary<string, object> data)
+        private static void EnsembleCleanup(IDictionary<string, object> data)
         {
-            if (!data.TryGetValue("ensembleID", out long ensembleID)) return true;
+            if (!data.TryGetValue("ensembleID", out long ensembleID)) return;
 
-            if (!data.TryGetValue("_sourceIDs", out List<long> sourceIDs)) return true;
+            if (!data.TryGetValue("_sourceIDs", out List<long> sourceIDs)) return;
 
             //if (ensembleID == 215356)
             //{
@@ -1127,7 +1144,7 @@ namespace ATT
                 int totalItems = ensembleFilterCount.Values.Sum();
                 if (totalItems > 5)
                 {
-                    int maxItemsPerFilter = ensembleFilterCount.Max(m => m.Value);
+                    int maxItemsPerFilter = ensembleFilterCount.Values.Max();
                     // if an ensemble is big enough and grants a majority filterID type of items (i.e. all Plate) then
                     // any items which do not meet the filter will be excluded automatically
                     // small ensembles or arsenals should not be affected by this case
@@ -1196,7 +1213,7 @@ namespace ATT
                 CaptureDebugDBData(source);
             }
 
-            if (symlinkSources.Count == 0) return true;
+            if (symlinkSources.Count == 0) return;
 
             // replace any existing symlink with the raw select
             if (data.ContainsKey("sym"))
@@ -1218,8 +1235,6 @@ namespace ATT
 
             // Capture the Ensemble for Debug output
             CaptureDebugDBData(data);
-
-            return true;
         }
 
         /// <summary>
@@ -2461,6 +2476,8 @@ namespace ATT
             {
                 Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
             }
+
+            AddPostProcessing(EnsembleCleanup, data);
         }
 
         private static void Incorporate_EnsembleTransmogSetItems(IDictionary<string, object> data)

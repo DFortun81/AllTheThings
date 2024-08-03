@@ -18,6 +18,8 @@ namespace ATT
     public static partial class Framework
     {
         #region Database
+        private static readonly Stopwatch _timer = Stopwatch.StartNew();
+
         /// <summary>
         /// Whether or not Debug Mode is turned on.
         /// </summary>
@@ -504,7 +506,7 @@ namespace ATT
                     throw new InvalidOperationException($"Do not regress or stagnate in ParseStage tracking: {_stage} => {value}");
 
                 _stage = value;
-                Log(_stage.ToString() + "...");
+                Log(_timer.ElapsedMilliseconds.ToString("000000 ") + _stage.ToString() + "...");
             }
         }
 
