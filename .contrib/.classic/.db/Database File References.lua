@@ -1,4 +1,5 @@
 -- Database
+-- #IMPORT: 00 - DB\\Parser Setup Data\\
 -- #IMPORT: 00 - DB\\AchievementDB - Cataclysm.lua
 -- #IMPORT: 00 - DB\\CategoryDB.lua
 -- #IMPORT: 00 - DB\\ClassInfoDB.lua
