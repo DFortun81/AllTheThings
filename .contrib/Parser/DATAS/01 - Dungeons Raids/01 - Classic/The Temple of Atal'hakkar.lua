@@ -1004,6 +1004,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["coord"] = { 13.6, 71.6, SWAMP_OF_SORROWS },
 							["lvl"] = 40,
 						}),
+						q(82099, {	-- Haze of Evil
+							["qg"] = 7775,	-- Gregan Brewspewer
+							["sourceQuest"] = 4142,	-- A Visit to Gregan
+							["coord"] = { 45.1, 25.6, FERALAS },
+							["maps"] = { UNGORO_CRATER },
+							["races"] = ALLIANCE_ONLY,
+							["lvl"] = 50,
+							["groups"] = {
+								objective(1, {	-- 0/5 Atal'ai Haze
+									["provider"] = { "i", 11318 },	-- Atal'ai Haze
+								}),
+							},
+						}),
 						q(82096, {	-- Into the Depths
 							["providers"] = {
 								{ "n",  7771 },	-- Marvon Rivetseeker

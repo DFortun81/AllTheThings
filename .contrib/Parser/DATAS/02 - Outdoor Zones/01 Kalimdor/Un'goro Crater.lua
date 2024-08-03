@@ -329,7 +329,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				q(4144, {	-- Bloodpetal Sprouts
 					["qg"] = 9119,	-- Muigin
-					["sourceQuest"] = 4143,	-- Haze of Evil
+					["sourceQuests"] = {
+						-- #if SEASON_OF_DISCOVERY
+						82099,	-- Haze of Evil
+						-- #else
+						4143,	-- Haze of Evil
+						-- #endif
+					},
 					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
