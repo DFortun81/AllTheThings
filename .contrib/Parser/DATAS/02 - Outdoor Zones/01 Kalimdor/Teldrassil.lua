@@ -1866,7 +1866,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 4901,	-- Guardians of the Altar
 					["coord"] = { 55.5, 92.1, TELDRASSIL },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maps"] = { WINTERSPRING },
+					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
