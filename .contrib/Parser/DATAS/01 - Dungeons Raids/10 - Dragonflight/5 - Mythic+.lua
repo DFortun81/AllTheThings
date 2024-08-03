@@ -191,7 +191,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 			ach(19783),		-- Dragonflight Keystone Hero: Season Four
 			ach(19785, {	-- Draconic Hero: Dragonflight Season 4
-				["timeline"] = { REMOVED_11_0_0 }),
+				["timeline"] = { REMOVED_11_0_0 },
 				["groups"] = {
 					title(538),	-- <Name> the Draconic Hero
 				},
