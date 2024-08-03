@@ -319,7 +319,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FIVE, q(9338, {	-- Allegiance to Cenarion Circle
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(9338, {	-- Allegiance to Cenarion Circle
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
 					["maxReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
@@ -460,7 +460,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8780, {	-- Armor Kits for the Field (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8780, {	-- Armor Kits for the Field (A)
 					["provider"] = { "i", 21263 },	-- Logistics Task Briefing VII (A)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -475,7 +475,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8787, {	-- Armor Kits for the Field (H)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8787, {	-- Armor Kits for the Field (H)
 					["provider"] = { "i", 21264 },	-- Logistics Task Briefing VII (H)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -490,7 +490,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8781, {	-- Arms for the Field (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8781, {	-- Arms for the Field (A)
 					["provider"] = { "i", 21260 },	-- Logistics Task Briefing VI (A)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 3853, 2 }},	-- Moonsteel Broadsword
@@ -502,7 +502,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8786, {	-- Arms for the Field (H)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8786, {	-- Arms for the Field (H)
 					["provider"] = { "i", 21261 },	-- Logistics Task Briefing VI (H)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 3855, 3 }},	-- Massive Iron Axe
@@ -522,7 +522,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
-				applyclassicphase(PHASE_FIVE, q(8737, {	-- Azure Templar
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8737, {	-- Azure Templar
 					["provider"] = { "i", 21245 },	-- Tactical Task Briefing I
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -535,7 +535,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_TACTICAL_ASSIGNMENT,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8496, {	-- Bandages for the Field (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8496, {	-- Bandages for the Field (A)
 					["provider"] = { "i", 20806 },	-- Logistics Task Briefing X (A)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -551,7 +551,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8810, {	-- Bandages for the Field (H)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8810, {	-- Bandages for the Field (H)
 					["provider"] = { "i", 21385 },	-- Logistics Task Briefing X (H)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -567,7 +567,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_H,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8540, {	-- Boots for the Guard (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8540, {	-- Boots for the Guard (A)
 					["provider"] = { "i", 20939 },	-- Logistics Task Briefing II (A)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 7936, 3 }},	-- Ornate Mithril Boots
@@ -579,7 +579,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						LOGISTICS_ASSIGNMENT_A,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8805, {	-- Boots for the Guard (H)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8805, {	-- Boots for the Guard (H)
 					["provider"] = { "i", 21379 },	-- Logistics Task Briefing II (H)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 7936, 3 }},	-- Ornate Mithril Boots
@@ -723,7 +723,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8537, {	-- Crimson Templar
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8537, {	-- Crimson Templar
 					["provider"] = { "i", 20945 },	-- Tactical Task Briefing II
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -796,7 +796,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["learnedAt"] = 285,
 					["lvl"] = lvlsquish(54, 54, 15),
 				})),
-				applyclassicphase(PHASE_FIVE, q(8497, {	-- Desert Survival Kits (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8497, {	-- Desert Survival Kits (A)
 					["provider"] = { "i", 20807 },	-- Logistics Task Briefing I (A)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -812,7 +812,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						LOGISTICS_ASSIGNMENT_A,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8804, {	-- Desert Survival Kits (H)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8804, {	-- Desert Survival Kits (H)
 					["provider"] = { "i", 21378 },	-- Logistics Task Briefing I (H)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -828,7 +828,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						LOGISTICS_ASSIGNMENT_H,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8856, {	-- Desert Survival Kits (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8856, {	-- Desert Survival Kits (A)
 					["provider"] = { "i", 20807 },	-- Logistics Task Briefing I (A)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -860,7 +860,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FIVE, q(8536, {	-- Earthen Templar
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8536, {	-- Earthen Templar
 					["provider"] = { "i", 21751 },	-- Tactical Task Briefing III
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -886,7 +886,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(57, 57, 15),
 				})),
-				applyclassicphase(PHASE_FIVE, q(8783, {	-- Extraordinary Materials (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8783, {	-- Extraordinary Materials (A)
 					["provider"] = { "i", 21265 },	-- Logistics Task Briefing IX (A)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -901,7 +901,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						LOGISTICS_ASSIGNMENT_A,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8809, {	-- Extraordinary Materials (H)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8809, {	-- Extraordinary Materials (H)
 					["provider"] = { "i", 21381 },	-- Logistics Task Briefing IX (H)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -916,7 +916,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						LOGISTICS_ASSIGNMENT_H,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8507, {	-- Field Duty (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8507, {	-- Field Duty (A)
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -948,7 +948,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						TACTICAL_ASSIGNMENT,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8731, {	-- Field Duty (H)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8731, {	-- Field Duty (H)
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
 					["timeline"] = { REMOVED_4_0_3 },
@@ -1036,7 +1036,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				})),
-				applyclassicphase(PHASE_FIVE, q(8541, {	-- Grinding Stones for the Guard (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8541, {	-- Grinding Stones for the Guard (A)
 					["provider"] = { "i", 20940 },	-- Logistics Task Briefing III (A)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1051,7 +1051,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						LOGISTICS_ASSIGNMENT_A,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8806, {	-- Grinding Stones for the Guard (H)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8806, {	-- Grinding Stones for the Guard (H)
 					["provider"] = { "i", 21380 },	-- Logistics Task Briefing III (H)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1094,7 +1094,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(PHASE_FIVE, q(8739, {	-- Hive'Ashi Scout Report
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8739, {	-- Hive'Ashi Scout Report
 					["provider"] = { "i", 21167 },	-- Tactical Task Briefing VIII
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1109,7 +1109,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						TACTICAL_ASSIGNMENT,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8738, {	-- Hive'Regal Scout Report
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8738, {	-- Hive'Regal Scout Report
 					["provider"] = { "i", 21166 },	-- Tactical Task Briefing VII
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1124,7 +1124,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_TACTICAL_ASSIGNMENT,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8534, {	-- Hive'Zora Scout Report
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8534, {	-- Hive'Zora Scout Report
 					["provider"] = { "i", 21165 },	-- Tactical Task Briefing VI
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1139,7 +1139,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_TACTICAL_ASSIGNMENT,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8535, {	-- Hoary Templar
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8535, {	-- Hoary Templar
 					["provider"] = { "i", 20947 },	-- Tactical Task Briefing IV
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1364,7 +1364,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(13444),	-- Major Mana Potion
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8779, {	-- Scrying Materials (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8779, {	-- Scrying Materials (A)
 					["provider"] = { "i", 21259 },	-- Logistics Task Briefing V (A)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1379,7 +1379,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8807, {	-- Scrying Materials (H)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8807, {	-- Scrying Materials (H)
 					["provider"] = { "i", 21382 },	-- Logistics Task Briefing V (H)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1547,7 +1547,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				})),
-				applyclassicphase(PHASE_FIVE, q(8770, {	-- Target: Hive'Ashi Defenders
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8770, {	-- Target: Hive'Ashi Defenders
 					["provider"] = { "i", 21749 },	-- Combat Task Briefing I
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1559,7 +1559,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8771, {	-- Target: Hive'Ashi Sandstalkers
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8771, {	-- Target: Hive'Ashi Sandstalkers
 					["provider"] = { "i", 21750 },	-- Combat Task Briefing II
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1571,7 +1571,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8501, {	-- Target: Hive'Ashi Stingers
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8501, {	-- Target: Hive'Ashi Stingers
 					["provider"] = { "i", 20941 },	-- Combat Task Briefing XII
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1583,7 +1583,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8502, {	-- Target: Hive'Ashi Workers
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8502, {	-- Target: Hive'Ashi Workers
 					["provider"] = { "i", 20942 },	-- Combat Task Briefing III
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1595,7 +1595,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8774, {	-- Target: Hive'Regal Ambushers
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8774, {	-- Target: Hive'Regal Ambushers
 					["provider"] = { "i", 21252 },	-- Combat Task Briefing VIII
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1607,7 +1607,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8777, {	-- Target: Hive'Regal Burrowers
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8777, {	-- Target: Hive'Regal Burrowers
 					["provider"] = { "i", 21256 },	-- Combat Task Briefing XI
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1619,7 +1619,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8776, {	-- Target: Hive'Regal Slavemakers
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8776, {	-- Target: Hive'Regal Slavemakers
 					["provider"] = { "i", 21255 },	-- Combat Task Briefing X
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1631,7 +1631,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8775, {	-- Target: Hive'Regal Spitfires
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8775, {	-- Target: Hive'Regal Spitfires
 					["provider"] = { "i", 21253 },	-- Combat Task Briefing IX
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1643,7 +1643,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8539, {	-- Target: Hive'Zora Hive Sisters
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8539, {	-- Target: Hive'Zora Hive Sisters
 					["provider"] = { "i", 21249 },	-- Combat Task Briefing V
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1655,7 +1655,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8773, {	-- Target: Hive'Zora Reavers
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8773, {	-- Target: Hive'Zora Reavers
 					["provider"] = { "i", 21248 },	-- Combat Task Briefing IV
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1667,7 +1667,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8687, {	-- Target: Hive'Zora Tunnelers
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8687, {	-- Target: Hive'Zora Tunnelers
 					["provider"] = { "i", 21251 },	-- Combat Task Briefing VII
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1679,7 +1679,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						CENARION_COMBAT_BADGE,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8772, {	-- Target: Hive'Zora Waywatchers
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8772, {	-- Target: Hive'Zora Waywatchers
 					["provider"] = { "i", 21250 },	-- Combat Task Briefing VI
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1728,7 +1728,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
 				}),
-				applyclassicphase(PHASE_FIVE, q(8538, {	-- The Four Dukes
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8538, {	-- The Four Dukes
 					["provider"] = { "i", 20948 },	-- Tactical Task Briefing V
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1751,7 +1751,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8778, {	-- The Ironforge Brigade Needs Explosives!
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8778, {	-- The Ironforge Brigade Needs Explosives!
 					["provider"] = { "i", 21257 },	-- Logistics Task Briefing IV (A)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1767,7 +1767,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						FOLLOWUP_LOGISTICS_ASSIGNMENT_A,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8785, {	-- The Orgrimmar Legion Needs Mojo!
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8785, {	-- The Orgrimmar Legion Needs Mojo!
 					["provider"] = { "i", 21258 },	-- Logistics Task Briefing IV (H)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1883,7 +1883,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8829, {	-- The Ultimate Deception
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8829, {	-- The Ultimate Deception
 					["provider"] = { "i", 21514 },	-- Logistics Task Briefing XI
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1910,7 +1910,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["cost"] = {{ "i", 20404, 10 }},	-- Encrypted Twilight Text
 					["lvl"] = lvlsquish(54, 54, 15),
 				})),
-				applyclassicphase(PHASE_FIVE, q(8498, {	-- Twilight Battle Orders
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8498, {	-- Twilight Battle Orders
 					["provider"] = { "i", 20943 },	-- Tactical Task Briefing X
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1938,7 +1938,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8740, {	-- Twilight Marauders
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8740, {	-- Twilight Marauders
 					["provider"] = { "i", 20944 },	-- Tactical Task Briefing IX
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -1983,7 +1983,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["maps"] = { MOONGLADE },
 					["lvl"] = 54,
 				}),
-				applyclassicphase(PHASE_FIVE, q(8782, {	-- Uniform Supplies (A)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8782, {	-- Uniform Supplies (A)
 					["provider"] = { "i", 21262 },	-- Logistics Task Briefing VIII (A)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -1998,7 +1998,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						LOGISTICS_ASSIGNMENT_A,
 					},
 				})),
-				applyclassicphase(PHASE_FIVE, q(8808, {	-- Uniform Supplies (H)
+				applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, q(8808, {	-- Uniform Supplies (H)
 					["provider"] = { "i", 21384 },	-- Logistics Task Briefing VIII (H)
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
@@ -2605,7 +2605,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(REWARDS, {
 				["description"] = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
 				["groups"] = {
-					applyclassicphase(PHASE_FIVE, i(20808, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Combat Assignment
+					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20808, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Combat Assignment
 						i(22648, {	-- Hive'Ashi Dossier
 							i(21749),	-- Combat Task Briefing I
 							i(21750),	-- Combat Task Briefing II
@@ -2737,7 +2737,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(20535),	-- Scroll: Create Signet of Beckoning (Water)
 						},
 					})),
-					applyclassicphase(PHASE_FIVE, i(20805, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (A)
+					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20805, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (A)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(20807),	-- Logistics Task Briefing I (A)
@@ -2748,7 +2748,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21514),	-- Logistics Task Briefing XI
 						},
 					}))),
-					applyclassicphase(PHASE_FIVE, i(21386, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (H)
+					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21386, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Logistics Assignment (H)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(21378),	-- Logistics Task Briefing I (H)
@@ -2759,7 +2759,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21514),	-- Logistics Task Briefing XI
 						},
 					}))),
-					applyclassicphase(PHASE_FIVE, i(21133, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Tactical Assignment
+					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21133, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Followup Tactical Assignment
 						i(21245),	-- Tactical Task Briefing I
 						i(20945),	-- Tactical Task Briefing II
 						i(20947),	-- Tactical Task Briefing IV
@@ -2767,7 +2767,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(21167),	-- Tactical Task Briefing VIII
 						i(20943),	-- Tactical Task Briefing X
 					}))),
-					applyclassicphase(PHASE_FIVE, i(21132, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (A)
+					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21132, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (A)
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(21257),	-- Logistics Task Briefing IV (A)
@@ -2777,7 +2777,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(20806),	-- Logistics Task Briefing X (A)
 						},
 					}))),
-					applyclassicphase(PHASE_FIVE, i(21266, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (H)
+					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(21266, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Logistics Assignment (H)
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(21258),	-- Logistics Task Briefing IV (H)
@@ -2787,7 +2787,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							i(21385),	-- Logistics Task Briefing X (H)
 						},
 					}))),
-					applyclassicphase(PHASE_FIVE, i(20809, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Tactical Assignment
+					applyclassicphase(PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS, i(20809, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Tactical Assignment
 						i(21245),	-- Tactical Task Briefing I
 						i(21751),	-- Tactical Task Briefing III
 						i(20944),	-- Tactical Task Briefing IX
