@@ -2754,6 +2754,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(44179, { ["name"] = "Treasure", }),	-- Treasure
 			q(43833, { ["name"] = "Treasure 003 - Felsoul Lower", }),	-- Treasure 003 - Felsoul Lower
 			q(43843, { ["name"] = "Treasure 010 - Falanaar Outdoor Ruins", }),	-- Treasure 010 - Falanaar Outdoor Ruins
+			q(43308, { ["name"] = "Treasure 071 - Outskirts", }),	-- Treasure 071 - Outskirts
 			q(40812, { ["name"] = "Trident True", }),	-- Trident True
 			q(40775, { ["name"] = "Trophy Hunting", }),	-- Trophy Hunting
 			q(42448, { ["name"] = "Unholy Destiny", }),	-- Unholy Destiny

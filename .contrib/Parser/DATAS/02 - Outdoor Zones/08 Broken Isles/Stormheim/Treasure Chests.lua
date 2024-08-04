@@ -268,7 +268,9 @@ root(ROOTS.Zones, {
 					["questID"] = 43307,
 					["coord"] = { 78.4, 71.4, STORMHEIM },
 				}),
-				qNYI(43308),	-- Treasure 071 - Outskirts (required for Achievement data)
+				o(255963, {	-- Vrykul Ancestral Chest
+					["description"] = "These repeatable chests spawn all over the map in Stormheim."
+				}),
 			}),
 		}),
 	}),

@@ -2274,6 +2274,7 @@ local keys = {
 [43263]="Growing Power",
 [43274]="reuse me",
 [43295]="Slaughter the Fel Armies",
+[43308]="Treasure 071 - Outskirts",
 [43316]="By Invitation Only",
 [43337]="Met Sylvanas With Windrunner Bow",
 [43340]="Tracking Quest",
