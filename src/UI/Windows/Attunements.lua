@@ -72,6 +72,9 @@ app:CreateWindow("Attunements", {
 				app.CreateMap(234, {	-- Dire Maul
 					attunementKeys = { 18249 },	-- Crescent Key
 				}),
+				app.CreateMap(476, {	-- Scholomance
+					attunementKeys = { 13704 },	-- Skeleton Key
+				}),
 				app.CreateMap(317, {	-- Stratholme
 					attunementKeys = { 12382 },	-- Key to the City
 				}),
@@ -177,6 +180,19 @@ app:CreateWindow("Attunements", {
 				};
 				for i,attunement in ipairs(tbcAttunements) do
 					tinsert(attunements, attunement);
+				end
+			else
+				-- Season of Discovery Attunements
+				if C_Seasons and C_Seasons.GetActiveSeason() == 2 then
+					if app.GameBuildVersion >= 11503 then
+						local dfc = {	-- Demon Fall Canyon
+							icon = 132447,
+							attunementQuestID = 84384,	-- Demonic Deceptions
+							g = false,
+						};
+						setmetatable(dfc, { __index = app.SearchForField("instanceID", 2784)[1] });
+						tinsert(attunements, 6, dfc);
+					end
 				end
 			end
 			local function OnUpdateForAttunement(t)

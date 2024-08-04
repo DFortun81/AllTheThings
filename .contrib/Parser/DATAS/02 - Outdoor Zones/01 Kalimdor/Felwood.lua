@@ -984,6 +984,28 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84384, {	-- Demonic Deceptions
+					["qg"] =  222408,	-- Shadowtooth Emissary
+					["coord"] = { 51.6, 82.0, FELWOOD },
+					["timeline"] = { "added 1.15.3" },
+					["maps"] = { WINTERSPRING },
+					["lvl"] = 55,
+					["groups"] = {
+						objective(1, {	-- 0/6 Owlbeast Pineal Gland
+							["provider"] = { "i", 227914 },	-- Owlbeast Pineal Gland
+							["coord"] = { 65.6, 21.4, WINTERSPRING },
+							["crs"] = {
+								7454,	-- Berserk Owlbeast
+								7452,	-- Crazed Owlbeast
+								7453,	-- Moontouched Owlbeast
+								7450,	-- Ragged Owlbeast
+								7451,	-- Raging Owlbeast
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(28000, {	-- Do the Imp-Possible
 					["qg"] = 47341,	-- Arcanist Delaris
 					["sourceQuests"] = {
