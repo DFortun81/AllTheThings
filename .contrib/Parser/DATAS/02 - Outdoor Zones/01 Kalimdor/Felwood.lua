@@ -381,6 +381,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 4442,	-- Purified!
 					["coord"] = { 49.4, 14.4, FELWOOD },
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 49,
 					["groups"] = {
