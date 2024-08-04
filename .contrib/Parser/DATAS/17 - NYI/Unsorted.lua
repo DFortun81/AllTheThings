@@ -2188,7 +2188,6 @@ root(ROOTS.Unsorted, {
 				i(223584),	-- Algari Scepter
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
-				i(223631),	-- Adventurer's Lucky Ring
 				i(223874),	-- Algari Dagger
 				i(223876),	-- Algari Warglaive
 				i(223877),	-- Algari Hatchet
