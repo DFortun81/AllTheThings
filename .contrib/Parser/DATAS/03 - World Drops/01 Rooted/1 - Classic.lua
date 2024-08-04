@@ -531,23 +531,23 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(3075),	-- Eye of Flame
 		i(9433),	-- Forgotten Wraps
 		i(3363, {	-- Frayed Belt
-		["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-	}),	
+			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+		}),
 		i(3365, {	-- Frayed Bracers
-		["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-	}),	
+			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+		}),
 		i(1377, {	-- Frayed Gloves
 			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-		}),	
+		}),
 		i(1378, {	-- Frayed Pants
-		["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-	}),	
+			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+		}),
 		i(1380, {	-- Frayed Robe
-		["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-	}),	
+			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+		}),
 		i(1374, {	-- Frayed Shoes
-		["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
-	}),	
+			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+		}),
 		i(13100),	-- Furen's Boots
 		i(14273),	-- Gaea's Amice
 		i(14276),	-- Gaea's Belt
@@ -3415,7 +3415,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19234),	-- Six of Beasts
 		i(19235),	-- Seven of Beasts
 		i(19236),	-- Eight of Beasts
-		
+
 		-- #if SEASON_OF_DISCOVERY
 		applyclassicphase(SOD_PHASE_THREE, i(221291)),	-- Two of Dunes
 		applyclassicphase(SOD_PHASE_THREE, i(221292)),	-- Three of Dunes
@@ -3433,7 +3433,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19273),	-- Six of Elementals
 		i(19274),	-- Seven of Elementals
 		i(19275),	-- Eight of Elementals
-		
+
 		-- #if SEASON_OF_DISCOVERY
 		applyclassicphase(SOD_PHASE_THREE, i(221300)),	-- Two of Nightmares
 		applyclassicphase(SOD_PHASE_THREE, i(221301)),	-- Three of Nightmares
@@ -3442,7 +3442,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		applyclassicphase(SOD_PHASE_THREE, i(221304)),	-- Six of Nightmares
 		applyclassicphase(SOD_PHASE_THREE, i(221305)),	-- Seven of Nightmares
 		applyclassicphase(SOD_PHASE_THREE, i(221306)),	-- Eight of Nightmares
-		
+
 		applyclassicphase(SOD_PHASE_THREE, i(221282)),	-- Two of Plagues
 		applyclassicphase(SOD_PHASE_THREE, i(221283)),	-- Three of Plagues
 		applyclassicphase(SOD_PHASE_THREE, i(221284)),	-- Four of Plagues
@@ -3467,7 +3467,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(19263),	-- Six of Warlords
 		i(19264),	-- Seven of Warlords
 		i(19265),	-- Eight of Warlords
-		
+
 		-- #if SEASON_OF_DISCOVERY
 		applyclassicphase(SOD_PHASE_THREE, i(221273)),	-- Two of Wilds
 		applyclassicphase(SOD_PHASE_THREE, i(221274)),	-- Three of Wilds
