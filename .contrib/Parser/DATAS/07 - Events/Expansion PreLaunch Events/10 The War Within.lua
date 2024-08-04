@@ -37,6 +37,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218290),	-- Recruit's Sturdy Slippers [A]
 							i(218289),	-- Recruit's Sturdy Robes [A]
 						}),
+						filter(FINGER_F, {
+							i(223632),	-- Signet of Lion's Favor [A]
+						}),
 						filter(LEATHER, {
 							i(218277),	-- Recruit's Sturdy Cincture [A]
 							i(218276),	-- Recruit's Sturdy Epaulets [A]
@@ -108,6 +111,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218304),	-- Recruit's Sturdy Sash [H]
 							i(218299),	-- Recruit's Sturdy Slippers [H]
 							i(218298),	-- Recruit's Sturdy Robes [H]
+						}),
+						filter(FINGER_F, {
+							i(223633),	-- Signet of Wolf's Favor [H]
 						}),
 						filter(LEATHER, {
 							i(218286),	-- Recruit's Sturdy Cincture [H]
