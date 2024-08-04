@@ -1003,6 +1003,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								7451,	-- Raging Owlbeast
 							},
 						}),
+						i(228172),	-- Shadowtooth Illusion Ward
 					},
 				})),
 				-- #endif

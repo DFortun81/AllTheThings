@@ -187,7 +187,8 @@ app:CreateWindow("Attunements", {
 					if app.GameBuildVersion >= 11503 then
 						local dfc = {	-- Demon Fall Canyon
 							icon = 132447,
-							attunementQuestID = 84384,	-- Demonic Deceptions
+							--attunementQuestID = 84384,	-- Demonic Deceptions
+							attunementKeys = { 228172 },	-- Shadowtooth Illusion Ward
 							g = false,
 						};
 						setmetatable(dfc, { __index = app.SearchForField("instanceID", 2784)[1] });
