@@ -1183,6 +1183,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 		},
 	}),
+	filter(MISC, {
+		i(157787),	-- Large Red Sack
+	}),
 }));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {

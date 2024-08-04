@@ -139,6 +139,10 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218035),	-- Recruit's Sturdy Stompers [H]
 							i(218040),	-- Recruit's Sturdy Vambraces [H]
 						}),
+						filter(NECK_F, {
+							i(223630),	-- Scout's War-Chain [H]
+							i(223629),	-- Marksman's War-Chain [H]
+						}),
 						filter(TRINKET_F, {
 							i(223517),	-- Recruit's Warhorn [H]
 							i(223508),	-- Recruit's Whetstone [H]
