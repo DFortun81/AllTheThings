@@ -544,6 +544,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {
 		q(82687),	-- Triggered after 'Only Darkness' (questID 82689)
 		q(82688),	-- Triggered after 'Only Darkness' (questID 82689)
-		q(84083),	-- After killing Onyxia (all bosses?)
+		q(84083),	-- First Radiant 'boss' (of the week?) rewarding a Champion piece per character
 	})),
 });

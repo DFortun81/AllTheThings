@@ -785,3 +785,78 @@ TIER_ELEVEN_GROUPS = applyclassicphase(CATA_PHASE_ONE,
 	appendGroups(TIER_ELEVEN_NORMAL_GROUPS, {
 }))));
 -- #endif
+-- #IF AFTER 6.0.2
+SYMLINKS.TIER_ELEVEN = {
+	CONQ = {
+		HEAD = {{"select","itemID",
+			60346,	-- Reinforced Sapphirium Helmet
+			60359,	-- Reinforced Sapphirium Headguard
+			60356,	-- Reinforced Sapphirium Faceguard
+			60256,	-- Mercurial Hood
+			60258,	-- Mercurial Cowl
+			60249,	-- Shadowflame Hood
+		}},
+		SHOULDER = {{"select","itemID",
+			60348,	-- Reinforced Sapphirium Pauldrons
+			60362,	-- Reinforced Sapphirium Mantle
+			60358,	-- Reinforced Sapphirium Shoulderguards
+			60253,	-- Mercurial Shoulderwraps
+			60262,	-- Mercurial Mantle
+			60252,	-- Shadowflame Mantle
+		}},
+	},
+	VANQ = {
+		HEAD = {{"select","itemID",
+			60341,	-- Magma Plated Helmet
+			60351,	-- Magma Plated Faceguard
+			60282,	-- Stormrider's Cover
+			60286,	-- Stormrider's Headpiece
+			60277,	-- Stormrider's Helm
+			60243,	-- Firelord's Hood
+			60299,	-- Wind Dancer's Helmet
+		}},
+		SHOULDER = {{"select","itemID",
+			60343,	-- Magma Plated Pauldrons
+			60353,	-- Magma Plated Shoulderguards
+			60284,	-- Stormrider's Shoulderwraps
+			60289,	-- Stormrider's Spaulders
+			60279,	-- Stormrider's Mantle
+			60246,	-- Firelord's Mantle
+			60302,	-- Wind Dancer's Spaulders
+		}},
+	},
+	PROT = {
+		HEAD = {{"select","itemID",
+			60303,	-- Lightning-Charged Headguard
+			60320,	-- Helmet of the Raging Elements
+			60315,	-- Headpiece of the Raging Elements
+			60308,	-- Faceguard of the Raging Elements
+			60325,	-- Earthen Helmet
+			60328,	-- Earthen Faceguard
+		}},
+		SHOULDER = {{"select","itemID",
+			60306,	-- Lightning-Charged Spaulders
+			60322,	-- Spaulders of the Raging Elements
+			60317,	-- Shoulderwraps of the Raging Elements
+			60311,	-- Mantle of the Raging Elements
+			60327,	-- Earthen Pauldrons
+			60331,	-- Earthen Shoulderguards
+		}},
+	}
+}
+-- #ELSE
+SYMLINKS.TIER_ELEVEN = {
+	CONQ = {
+		HEAD = IGNORED_VALUE,
+		SHOULDER = IGNORED_VALUE,
+	},
+	VANQ = {
+		HEAD = IGNORED_VALUE,
+		SHOULDER = IGNORED_VALUE,
+	},
+	PROT = {
+		HEAD = IGNORED_VALUE,
+		SHOULDER = IGNORED_VALUE,
+	}
+}
+-- #ENDIF

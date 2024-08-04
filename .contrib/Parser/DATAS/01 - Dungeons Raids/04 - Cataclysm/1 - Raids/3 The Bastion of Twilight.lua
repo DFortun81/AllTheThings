@@ -159,9 +159,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				e(167, {	-- Cho'gall
 					["creatureID"] = 43324,
 					["groups"] = {
-						i(64315),	-- Mantle of the Forlorn Conqueror
-						i(64316),	-- Mantle of the Forlorn Protector
-						i(64314),	-- Mantle of the Forlorn Vanquisher
+						i(64315, {	-- Mantle of the Forlorn Conqueror
+							["sym"] = SYMLINKS.TIER_ELEVEN.CONQ.SHOULDER,
+						}),
+						i(64316, {	-- Mantle of the Forlorn Protector
+							["sym"] = SYMLINKS.TIER_ELEVEN.PROT.SHOULDER,
+						}),
+						i(64314, {	-- Mantle of the Forlorn Vanquisher
+							["sym"] = SYMLINKS.TIER_ELEVEN.VANQ.SHOULDER,
+						}),
 						i(59330),	-- Shalug'doom, the Axe of Unmaking
 						i(59494),	-- "Uhn'agh Fash, the Darkest Betrayal"
 						i(63680),	-- Twilight's Hammer

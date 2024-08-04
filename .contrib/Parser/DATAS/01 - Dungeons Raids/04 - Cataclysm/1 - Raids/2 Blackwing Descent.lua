@@ -200,9 +200,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				e(174, {	-- Nefarian's End
 					["creatureID"] = 41376,
 					["groups"] = {
-						i(63683),	-- Helm of the Forlorn Conqueror
-						i(63684),	-- Helm of the Forlorn Protector
-						i(63682),	-- Helm of the Forlorn Vanquisher
+						i(63683, {	-- Helm of the Forlorn Conqueror
+							["sym"] = SYMLINKS.TIER_ELEVEN.CONQ.HEAD,
+						}),
+						i(63684, {	-- Helm of the Forlorn Protector
+							["sym"] = SYMLINKS.TIER_ELEVEN.PROT.HEAD,
+						}),
+						i(63682, {	-- Helm of the Forlorn Vanquisher
+							["sym"] = SYMLINKS.TIER_ELEVEN.VANQ.HEAD,
+						}),
 						i(63679),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
 						i(59459),	-- Andoros, Fist of the Dragon King
 						i(59443),	-- Crul'korak, the Lightning's Arc

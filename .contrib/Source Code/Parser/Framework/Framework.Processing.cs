@@ -1456,6 +1456,12 @@ namespace ATT
                     return;
                 }
 
+                if (command.Count == 0)
+                {
+                    LogError($"Empty 'sym' command structure encountered: {ToJSON(cmdObj)}", data);
+                    return;
+                }
+
                 // check various commands
                 if (command.Count > 0 && command[0].TryConvert(out string commandName))
                 {

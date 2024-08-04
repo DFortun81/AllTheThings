@@ -66,12 +66,24 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 				e(155, {	-- Al'Akir
 					["creatureID"] = 46753,
 					["groups"] = {
-						i(63683),	-- Helm of the Forlorn Conqueror
-						i(63684),	-- Helm of the Forlorn Protector
-						i(63682),	-- Helm of the Forlorn Vanquisher
-						i(64315),	-- Mantle of the Forlorn Conqueror
-						i(64316),	-- Mantle of the Forlorn Protector
-						i(64314),	-- Mantle of the Forlorn Vanquisher
+						i(63683, {	-- Helm of the Forlorn Conqueror
+							["sym"] = SYMLINKS.TIER_ELEVEN.CONQ.HEAD,
+						}),
+						i(63684, {	-- Helm of the Forlorn Protector
+							["sym"] = SYMLINKS.TIER_ELEVEN.PROT.HEAD,
+						}),
+						i(63682, {	-- Helm of the Forlorn Vanquisher
+							["sym"] = SYMLINKS.TIER_ELEVEN.VANQ.HEAD,
+						}),
+						i(64315, {	-- Mantle of the Forlorn Conqueror
+							["sym"] = SYMLINKS.TIER_ELEVEN.CONQ.SHOULDER,
+						}),
+						i(64316, {	-- Mantle of the Forlorn Protector
+							["sym"] = SYMLINKS.TIER_ELEVEN.PROT.SHOULDER,
+						}),
+						i(64314, {	-- Mantle of the Forlorn Vanquisher
+							["sym"] = SYMLINKS.TIER_ELEVEN.VANQ.SHOULDER,
+						}),
 						i(68127),	-- Stormwake, the Tempest's Reach
 						i(68128),	-- Stormwake, the Tempest's Reach
 						i(68129),	-- Stormwake, the Tempest's Reach
