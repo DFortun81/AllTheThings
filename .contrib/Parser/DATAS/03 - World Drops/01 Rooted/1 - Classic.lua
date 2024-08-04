@@ -80,7 +80,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(4710),	-- Forest Cloak
 		i(15632),	-- Formidable Cape
 		i(9812),	-- Fortified Cloak
-		i(1376),	-- Frayed Cloak
+		i(1376, {	-- Frayed Cloak
+			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+		}),
 		i(14270),	-- Gaea's Cloak
 		i(14219),	-- Geomancer's Cloak
 		i(15147),	-- Ghostwalker Cloak
@@ -528,12 +530,24 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14336),	-- Eternal Wraps
 		i(3075),	-- Eye of Flame
 		i(9433),	-- Forgotten Wraps
-		i(3363),	-- Frayed Belt
-		i(3365),	-- Frayed Bracers
-		i(1377),	-- Frayed Gloves
-		i(1378),	-- Frayed Pants
-		i(1380),	-- Frayed Robe
-		i(1374),	-- Frayed Shoes
+		i(3363, {	-- Frayed Belt
+		["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+	}),	
+		i(3365, {	-- Frayed Bracers
+		["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+	}),	
+		i(1377, {	-- Frayed Gloves
+			["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+		}),	
+		i(1378, {	-- Frayed Pants
+		["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+	}),	
+		i(1380, {	-- Frayed Robe
+		["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+	}),	
+		i(1374, {	-- Frayed Shoes
+		["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
+	}),	
 		i(13100),	-- Furen's Boots
 		i(14273),	-- Gaea's Amice
 		i(14276),	-- Gaea's Belt
