@@ -67,6 +67,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218026),	-- Recruit's Sturdy Stompers [A]
 							i(218031),	-- Recruit's Sturdy Vambraces [A]
 						}),
+						filter(NECK_F, {
+							i(223627),	-- Scout's Dog Tags [A]
+						}),
 						filter(TRINKET_F, {
 							i(223507),	-- Recruit's Pocket Watch [A]
 							i(223516),	-- Recruit's Trumpet [A]

@@ -2188,7 +2188,6 @@ root(ROOTS.Unsorted, {
 				i(223584),	-- Algari Scepter
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
-				i(223627),	-- Scout's Dog Tags
 				i(223628),	-- Marksman's Dog Tags
 				i(223629),	-- Marksman's War-Chain
 				i(223630),	-- Scout's War-Chain
