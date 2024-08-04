@@ -400,7 +400,7 @@ root(ROOTS.Zones, {
 							},
 							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
 							["provider"] = { "n", 112130 },	-- Archmage Khadgar
-							["coord"] = { 27.5, 35.8, 629 },	-- Aegwynn's Gallery
+							["coord"] = { 27.5, 35.8, AEGWYNNS_GALLERY },
 							["maps"] = { 775, 776 },	-- Scenario: In Defense of the Exodar
 							["g"] = {
 								i(140614),	-- Amice of Steadfast Allies
@@ -596,7 +596,7 @@ root(ROOTS.Zones, {
 				header(HEADERS.Item, 135479, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {	-- Lost Mail
 					o(247797, {	-- Lost Mail
 						["maps"] = {
-							LEGION_DALARAN, LEGION_THE_UNDERBELLY, 629,	-- Dalaran
+							LEGION_DALARAN, LEGION_THE_UNDERBELLY, AEGWYNNS_GALLERY,
 						},
 						["g"] = {
 							i(134859),	-- Lost Mail

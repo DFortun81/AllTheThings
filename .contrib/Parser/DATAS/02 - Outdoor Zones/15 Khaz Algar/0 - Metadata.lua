@@ -1,15 +1,15 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, {
 	["icon"] = 5901550,
-	--["lore"] = "",
-	["timeline"] = { ADDED_11_PH_LAUNCH },
+	["lore"] = "Khaz Algar, a long-forgotten subterranean continent off the western shores of Pandaria, is home to the earthen capital city of Dornogal. This city will now serve as the new meeting ground for the Alliance and Horde.",
+	["timeline"] = { ADDED_11_0_0 },
 	["g"] = {
-		m(DORNOGAL),
-		m(AZJ_KAHET),
-		m(HALLOWFALL),
-		m(ISLE_OF_DORN),
-		m(THE_RINGING_DEEPS),
+		m(DORNOGAL, {["timeline"] = {ADDED_11_PH_LAUNCH}}),
+		m(AZJ_KAHET, {["timeline"] = {ADDED_11_PH_LAUNCH}}),
+		m(HALLOWFALL, {["timeline"] = {ADDED_11_PH_LAUNCH}}),
+		m(ISLE_OF_DORN, {["timeline"] = {ADDED_11_PH_LAUNCH}}),
+		m(THE_RINGING_DEEPS, {["timeline"] = {ADDED_11_PH_LAUNCH}}),
 	},
-})));
+}));

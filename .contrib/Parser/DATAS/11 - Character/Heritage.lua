@@ -1439,11 +1439,11 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 	}));
 	race(VOIDELF, bubbleDown({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = { VOIDELF } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 45 Character|r and completed |cFFFFD700You Are Now Prepared!|r, The Argus Campaign.",
-		["maps"] = { 971 },
+		["maps"] = { TELOGRUS_RIFT },
 		["g"] = {
 			q(49928, {	-- Heritage of the Void
 				["provider"] = { "n", 131345 },	-- Alleria Windrunner
-				["coord"] = { 28.6, 22.3, 971 },
+				["coord"] = { 28.6, 22.3, TELOGRUS_RIFT },
 				["lvl"] = 50,
 				["g"] = {
 					ach(12291),	-- Heritage of the Void

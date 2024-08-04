@@ -4096,7 +4096,7 @@ i(224576, 4595);	-- Lil' Flameo
 i(223499, 4569);	-- Lil' Manny
 
 ------------------
--- PATCH ADDED_11_PH_PREPATCH --
+-- PATCH 11.0.0 --
 ------------------
 i(218245, 4451);	-- Remembered Construct
 i(218086, 4450);	-- Remembered Riverpaw

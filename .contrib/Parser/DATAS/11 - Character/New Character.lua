@@ -6,7 +6,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		------ Epic ------
 		ach(40147, {	-- War Within Epic
 			["sym"] = {{"achievement_criteria"}},
-			["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_12_0_0_LAUNCH },
+			["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_12_PH_LAUNCH },
 		}),
 		ach(18977, {	-- Draconically Epic
 			["sym"] = {{"achievement_criteria"}},
@@ -39,7 +39,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		------ Superior ------
 		ach(40146, {	-- War Within Superior
 			["sym"] = {{"achievement_criteria"}},
-			["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_12_0_0_LAUNCH },
+			["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_12_PH_LAUNCH },
 		}),
 		ach(18976, {	-- Draconically Superior
 			["sym"] = {{"achievement_criteria"}},
@@ -99,7 +99,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_5_0_4 },
 			["g"] = {
 				i(212174, {	-- The Warband Map to Everywhere All At Once (TOY!)
-					["timeline"] = { ADDED_11_PH_PREPATCH },
+					["timeline"] = { ADDED_11_0_0 },
 				}),
 			},
 		}),

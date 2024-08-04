@@ -101,9 +101,12 @@ REMOVED_1_15_1 = "removed 1.15.1.53181";					-- World of Warcraft Classic 1.15.1
 CREATED_1_15_2 = "created 1.15.2.54029";					-- World of Warcraft Classic 1.15.2 Launch on April 2nd, 2024
 ADDED_1_15_2 = "added 1.15.2.54029";						-- World of Warcraft Classic 1.15.2 Launch on April 2nd, 2024
 REMOVED_1_15_2 = "removed 1.15.2.54029";					-- World of Warcraft Classic 1.15.2 Launch on April 2nd, 2024
-CREATED_1_15_3 = "created 1.15.3";
-ADDED_1_15_3 = "added 1.15.3";
-REMOVED_1_15_3 = "removed 1.15.3";
+CREATED_1_15_3 = "created 1.15.3.55515";					-- World of Warcraft Classic 1.15.3 Launch on July 9th, 2024
+ADDED_1_15_3 = "added 1.15.3.55515";						-- World of Warcraft Classic 1.15.3 Launch on July 9th, 2024
+REMOVED_1_15_3 = "removed 1.15.3.55515";					-- World of Warcraft Classic 1.15.3 Launch on July 9th, 2024
+CREATED_1_15_4 = "created 1.15.4";							-- World of Warcraft Classic 1.15.4
+ADDED_1_15_4 = "added 1.15.4";								-- World of Warcraft Classic 1.15.4
+REMOVED_1_15_4 = "removed 1.15.4";							-- World of Warcraft Classic 1.15.4
 
 -------------------------
 -- THE BURNING CRUSADE --
@@ -486,33 +489,28 @@ ADDED_10_2_7 = "added 10.2.7.54577";					-- Dragonflight 10.2.7 Launch on May 7t
 REMOVED_10_2_7 = "removed 10.2.7.54577";				-- Dragonflight 10.2.7 Launch on May 7th, 2024
 ADDED_MOP_REMIX = "added 10.2.7.54736";				    -- Dragonflight 10.2.7 MoP Remix Launch on May 16th, 2024
 
+-- PLACEHOLDERS STATION!
 REMOVED_MOP_REMIX_END = "removed 11.0.2";				-- PlaceHolder Until we know
---- The Three Pillars of wow.. What will be removed in pre-patch? Hmmmm
 REMOVED_SEASON_AWAKENED = "removed 11.0.2";	-- Placeholder
 REMOVED_SEASON_PVP = "removed 11.0.2";	-- Placeholder
 REMOVED_SEASON_MYTHIC = "removed 11.0.2";	-- Placeholder
-
---------------------
--- THE WAR WITHIN --
---------------------
--- These are just here so we have some ground............... Blizzard..
-CREATED_11_0_0 = "created 11.0.0.55818";						-- The War Within 11.0.0.55818
-ADDED_11_0_0 = "added 11.0.0.55818";							-- The War Within 11.0.0.55818
-REMOVED_11_0_0 = "removed 11.0.0.55818";						-- The War Within 11.0.0.55818
+-- Extra Placeholders Until Blizzard knows.............
 CREATED_11_0_1 = "created 11.0.1";						-- The War Within 11.0.1
 ADDED_11_0_1 = "added 11.0.1";							-- The War Within 11.0.1
 REMOVED_11_0_1 = "removed 11.0.1";						-- The War Within 11.0.1
 CREATED_11_0_2 = "created 11.0.2";						-- The War Within 11.0.2 Launch on
 ADDED_11_0_2 = "added 11.0.2";							-- The War Within 11.0.2 Launch on
 REMOVED_11_0_2 = "removed 11.0.2";						-- The War Within 11.0.2 Launch on
---- So Prepatch 11.0.0 or 11.0.1? Launch is 11.0.2?
-CREATED_11_PH_PREPATCH = "created 11.0.0.55818";				-- The War Within 11.PH/Pre-Patch Launch on July 23rd, 2024
-ADDED_11_PH_PREPATCH = "added 11.0.0.55818";					-- The War Within 11.PH/Pre-Patch Launch on July 23rd, 2024
-REMOVED_11_PH_PREPATCH = "removed 11.0.0.55818";				-- The War Within 11.PH/Pre-Patch Launch on July 23rd, 2024
-CREATED_11_PH_LAUNCH = "created 11.0.0.99999";				-- The War Within Launch on August 22nd, 2024
-ADDED_11_PH_LAUNCH = "added 11.0.0.99999";					-- The War Within Launch on August 22nd, 2024
-REMOVED_11_PH_LAUNCH = "removed 11.0.0.99999";				-- The War Within Launch on August 22nd, 2024
 
+--------------------
+-- THE WAR WITHIN --
+--------------------
+CREATED_11_0_0 = "created 11.0.0.55818";				-- The War Within 11.0.0/Pre-Patch Launch on July 23rd, 2024
+ADDED_11_0_0 = "added 11.0.0.55818";					-- The War Within 11.0.0/Pre-Patch Launch on July 23rd, 2024
+REMOVED_11_0_0 = "removed 11.0.0.55818";				-- The War Within 11.0.0/Pre-Patch Launch on July 23rd, 2024
+CREATED_11_PH_LAUNCH = "created 11.0.0.99999";			-- The War Within Launch on August 22nd, 2024
+ADDED_11_PH_LAUNCH = "added 11.0.0.99999";				-- The War Within Launch on August 22nd, 2024
+REMOVED_11_PH_LAUNCH = "removed 11.0.0.99999";			-- The War Within Launch on August 22nd, 2024
 CREATED_11_0_5 = "created 11.0.5";						-- The War Within 11.0.5 Launch on
 ADDED_11_0_5 = "added 11.0.5";							-- The War Within 11.0.5 Launch on
 REMOVED_11_0_5 = "removed 11.0.5";						-- The War Within 11.0.5 Launch on
@@ -526,4 +524,12 @@ REMOVED_11_1_0 = "removed 11.1.0";						-- The War Within 11.1.0 Launch on
 --------------
 -- MIDNIGHT --
 --------------
-REMOVED_12_0_0 = "removed 12.0.0";
+CREATED_12_0_0 = "created 12.0.0";						-- Midnight 12.0.0
+ADDED_12_0_0 = "added 12.0.0";							-- Midnight 12.0.0
+REMOVED_12_0_0 = "removed 12.0.0";						-- Midnight 12.0.0
+CREATED_12_PH_PREPATCH = "created 12.0.0";				-- Midnight 12.PH/Pre-Patch
+ADDED_12_PH_PREPATCH = "added 12.0.0";					-- Midnight 12.PH/Pre-Patch
+REMOVED_12_PH_PREPATCH = "removed 12.0.0";				-- Midnight 12.PH/Pre-Patch
+CREATED_12_PH_LAUNCH = "created 12.0.0";				-- Midnight 12.PH/Launch
+ADDED_12_PH_LAUNCH = "added 12.0.0";					-- Midnight 12.PH/Launch
+REMOVED_12_PH_LAUNCH= "removed 12.0.0";					-- Midnight 12.PH/Launch

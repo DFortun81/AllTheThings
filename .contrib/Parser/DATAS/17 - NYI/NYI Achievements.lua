@@ -640,8 +640,8 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
-		-- CREATED_11_PH_PREPATCH
-		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_PREPATCH } }, {
+		-- CREATED_11_0_0
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			ach(18830),	-- Level 2
 			ach(20512),	-- Herding Cats
 			ach(40099),	-- That Extra Push Over the Cliff

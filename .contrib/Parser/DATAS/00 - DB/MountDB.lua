@@ -1806,11 +1806,10 @@ i(224574, 453255);	-- Savage Ebony Battle Turtle
 i(223284, 448849);	-- Underlight Shorestalker
 
 ------------------
--- PATCH ADDED_11_PH_PREPATCH --
+-- PATCH 11.0.0 --
 ------------------
 i(217985, 441324);	-- Remembered Golden Gryphon
 i(217987, 441325);	-- Remembered Wind Rider
-
 
 ------------------
 -- PATCH ADDED_11_PH_LAUNCH --
