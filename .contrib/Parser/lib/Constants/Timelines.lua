@@ -491,9 +491,9 @@ ADDED_MOP_REMIX = "added 10.2.7.54736";				    -- Dragonflight 10.2.7 MoP Remix 
 
 -- PLACEHOLDERS STATION!
 REMOVED_MOP_REMIX_END = "removed 11.0.2";				-- PlaceHolder Until we know
-REMOVED_SEASON_AWAKENED = "removed 11.0.2";	-- Placeholder
-REMOVED_SEASON_PVP = "removed 11.0.2";	-- Placeholder
-REMOVED_SEASON_MYTHIC = "removed 11.0.2";	-- Placeholder
+REMOVED_SEASON_AWAKENED = "removed 11.0.2";				-- Placeholder
+REMOVED_SEASON_PVP = "removed 11.0.2";					-- Placeholder
+REMOVED_SEASON_MYTHIC = "removed 11.0.2";				-- Placeholder
 -- Extra Placeholders Until Blizzard knows.............
 CREATED_11_0_1 = "created 11.0.1";						-- The War Within 11.0.1
 ADDED_11_0_1 = "added 11.0.1";							-- The War Within 11.0.1
