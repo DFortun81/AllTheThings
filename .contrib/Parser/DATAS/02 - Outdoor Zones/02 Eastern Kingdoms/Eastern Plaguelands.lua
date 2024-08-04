@@ -1029,6 +1029,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
 					["timeline"] = { ADDED_4_0_3 },
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84332, {	-- A Thane's Gratitude
+					["provider"] = { "o", 462236 },	-- Mysterious Chest
+					["sourceQuest"] = 84414,	-- Send Me On Me Way!
+					["coord"] = { 27.4, 85.8, EASTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						recipe(440788),	-- Engrave Cloak - Shield of Righteousness
+						i(227935),	-- Hammer of the Fallen Thane
+					},
+				})),
+				-- #endif
 				q(7621, {	-- A Warning
 					["qg"] = 14494,	-- Eris Havenfire
 					-- #if AFTER WRATH
@@ -1040,6 +1054,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["classes"] = { PRIEST },
 					["lvl"] = 60,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84330, {	-- A Wee Bit O' Necromancy
+					["providers"] = {
+						{ "i", 227687 },	-- Orthas' Favorite Gold Tooth
+						{ "n", 228619 },	-- Orthas <Dwarven Spirit>
+					},
+					["sourceQuest"] = 84319,	-- Oh No Ye Don't!
+					["coord"] = { 33.8, 28.8, EASTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["maps"] = { STRATHOLME },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Necrotic Runestone
+							["provider"] = { "i", 227690 },	-- Necrotic Runestone
+							["cr"] = 10438,	-- Maleki the Pallid
+						}),
+					},
+				})),
+				-- #endif
 				q(27539, {	-- Add'em to the Pile
 					["qg"] = 45831,	-- Crusader Kevin Frost
 					["coord"] = { 27.6, 20.8, EASTERN_PLAGUELANDS },
@@ -2721,6 +2755,49 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84318, {	-- Oi!
+					["providers"] = {
+						{ "n", 228620 },	-- Slack-Jawed Ghoul <Dwarf-Sized Ghoul>
+						{ "i", 227687 },	-- Orthas' Favorite Gold Tooth
+						{ "n", 228619 },	-- Orthas <Dwarven Spirit>
+					},
+					["coord"] = { 34.2, 80.4, EASTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Ornate Warhammer
+							["providers"] = {
+								{ "i", 227686 },	-- Ornate Warhammer
+								{ "o", 461639 },	-- Orthas' Hammer
+							},
+							["coord"] = { 61.3, 69.2, EASTERN_PLAGUELANDS },
+						}),
+					},
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, q(84319, {	-- Oh No Ye Don't!
+					["providers"] = {
+						{ "i", 227687 },	-- Orthas' Favorite Gold Tooth
+						{ "n", 228619 },	-- Orthas <Dwarven Spirit>
+					},
+					["sourceQuest"] = 84318,	-- Oi!
+					["coord"] = { 61.3, 69.2, EASTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Partially-Digested Plate Armor
+							["provider"] = { "i", 227689 },	-- Partially-Digested Plate Armor
+							["coord"] = { 33.8, 28.8, EASTERN_PLAGUELANDS },
+							["crs"] = {
+								8543,	-- Stitched Horror
+								8545,	-- Abomination
+							},
+						}),
+					},
+				})),
+				-- #endif
 				q(27373, {	-- Onward, to Light's Hope Chapel
 					["qg"] = 45417,	-- Fiona
 					["sourceQuests"] = {
@@ -2997,6 +3074,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84414, {	-- Send Me On Me Way!
+					["qg"] = 229018,	-- Rotting Dwarf Corpse
+					["sourceQuest"] = 84330,	-- A Wee Bit O' Necromancy
+					["coord"] = { 27.6, 86.0, EASTERN_PLAGUELANDS },
+					["timeline"] = { "added 1.15.3" },
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- Send Orthas' Spirit On His Way
+							["provider"] = { "o", 462236 },	-- Mysterious Chest
+							["coord"] = { 27.4, 85.8, EASTERN_PLAGUELANDS },
+						}),
+					},
+				})),
+				-- #endif
 				q(27458, {	-- Smokey and the Bandage
 					["qg"] = 11033,	-- Smokey LaRue
 					["coord"] = { 74.9, 53.5, EASTERN_PLAGUELANDS },
