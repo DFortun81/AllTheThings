@@ -73,7 +73,7 @@ root(ROOTS.Character, n(HEIRLOOMS, {
 		n(FINGER, {
 			i(128173),	-- Admiral Taylor's Loyalty Ring
 			i(219325, {	-- Band of Radiant Echoes
-				["timeline"] = { ADDED_11_PH_PREPATCH },
+				["timeline"] = { ADDED_11_0_0 },
 			}),
 			i(128172),	-- Captain Sander's Returned Band
 			un(REMOVED_FROM_GAME, i(50255)),	-- Dread Pirate Ring

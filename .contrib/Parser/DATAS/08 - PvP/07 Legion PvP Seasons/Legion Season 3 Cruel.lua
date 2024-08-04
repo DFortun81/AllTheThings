@@ -901,17 +901,16 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["g"] = bubbleDown({
-						["sourceAchievements"] = {
-							11697,	-- Cruel Elite
-							11698,	-- Ferocious Elite
-						},
-						["cost"] = {{"i", MOH, 12}},
+					["g"] = sharedData({
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
+						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
+							["sourceAchievements"] = { 11038 },	-- Gladiator: Legion Season 3
+							["cost"] = {{"i", MOH, 12}},
+						}),
 						i(147360, {	-- Cruel Gladiator's Cloak [A]
 							["sourceAchievements"] = { 11697 },	-- Cruel Elite
 							["cost"] = {{"i", MOH, 50}},
@@ -920,6 +919,20 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							["sourceAchievements"] = { 11697 },	-- Cruel Elite
 							["cost"] = {{"i", MOH, 50}},
 						}),
+					}),
+				}),
+			})),
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
+					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
+					["g"] = sharedData({
+						["sourceAchievements"] = {
+							11697,	-- Cruel Elite
+							11698,	-- Ferocious Elite
+						},
+						["cost"] = {{"i", MOH, 12}},
+						["u"] = ELITE_PVP_REQUIREMENT,
+					}, {
 						iensemble(147625, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor [A]
 							["classes"] = { DEATHKNIGHT },
 						}),
@@ -1116,17 +1129,16 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(144992),	-- Cruel Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 }, ["races"] = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["g"] = bubbleDown({
-						["sourceAchievements"] = {
-							11697,	-- Cruel Elite
-							11698,	-- Ferocious Elite
-						},
-						["cost"] = {{"i", MOH, 12}},
+					["g"] = sharedData({
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
+						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
+							["sourceAchievements"] = { 11038 },	-- Gladiator: Legion Season 3
+							["cost"] = {{"i", MOH, 12}},
+						}),
 						i(147357, {	-- Cruel Gladiator's Cloak [H]
 							["sourceAchievements"] = { 11697 },	-- Cruel Elite
 							["cost"] = {{"i", MOH, 50}},
@@ -1135,6 +1147,20 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 							["sourceAchievements"] = { 11697 },	-- Cruel Elite
 							["cost"] = {{"i", MOH, 50}},
 						}),
+					}),
+				}),
+			})),
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = HORDE_ONLY }, {
+				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
+					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
+					["g"] = sharedData({
+						["sourceAchievements"] = {
+							11697,	-- Cruel Elite
+							11698,	-- Ferocious Elite
+						},
+						["cost"] = {{"i", MOH, 12}},
+						["u"] = ELITE_PVP_REQUIREMENT,
+					}, {
 						iensemble(147626, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor [H]
 							["classes"] = { DEATHKNIGHT },
 						}),

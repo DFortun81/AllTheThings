@@ -37,7 +37,7 @@ root(ROOTS.Character, n(WARBAND, {
 			crit(67103),	-- Legs
 		})),
 	})),
-	n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {
+	n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 		q(83492, {	-- Warbanding Together
 			-- Auto granted upon login
 		}),

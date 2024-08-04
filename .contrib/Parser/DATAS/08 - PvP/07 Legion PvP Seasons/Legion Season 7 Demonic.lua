@@ -6,7 +6,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 		-- Not the Best Timelining.. /Braghe
 		["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1, ADDED_8_0_1_LAUNCH },
 	},{
-		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 } }, {
 			ach(12200, {	-- Demonic Combatant [A]
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -64,7 +64,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			}),
 		})),
 		n(PVP_COMBATANT, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 }, ["races"] = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(150002),	-- Demonic Combatant's Dreadcloak [A]
@@ -210,18 +210,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(150124),	-- Demonic Combatant's Pendant [A]
 				}),
 				filter(TRINKET_F, {
-					i(150200), -- Demonic Combatant's Accolade of Conquest [A]
-					i(150206), -- Demonic Combatant's Accolade of Dominance [A]
-					i(150212), -- Demonic Combatant's Accolade of Victory [A]
-					i(150198), -- Demonic Combatant's Badge of Conquest [A]
-					i(150204), -- Demonic Combatant's Badge of Dominance [A]
-					i(150210), -- Demonic Combatant's Badge of Victory [A]
-					i(150202), -- Demonic Combatant's Insignia of Conquest [A]
-					i(150208), -- Demonic Combatant's Insignia of Dominance [A]
-					i(150214), -- Demonic Combatant's Insignia of Victory [A]
+					i(150200),	-- Demonic Combatant's Accolade of Conquest [A]
+					i(150206),	-- Demonic Combatant's Accolade of Dominance [A]
+					i(150212),	-- Demonic Combatant's Accolade of Victory [A]
+					i(150198),	-- Demonic Combatant's Badge of Conquest [A]
+					i(150204),	-- Demonic Combatant's Badge of Dominance [A]
+					i(150210),	-- Demonic Combatant's Badge of Victory [A]
+					i(150202),	-- Demonic Combatant's Insignia of Conquest [A]
+					i(150208),	-- Demonic Combatant's Insignia of Dominance [A]
+					i(150214),	-- Demonic Combatant's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 }, ["races"] = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(150003),	-- Demonic Combatant's Dreadcloak [H]
@@ -367,18 +367,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(150125),	-- Demonic Combatant's Pendant [H]
 				}),
 				filter(TRINKET_F, {
-					i(150201), -- Demonic Combatant's Accolade of Conquest [H]
-					i(150207), -- Demonic Combatant's Accolade of Dominance [H]
-					i(150213), -- Demonic Combatant's Accolade of Victory [H]
-					i(150199), -- Demonic Combatant's Badge of Conquest [H]
-					i(150205), -- Demonic Combatant's Badge of Dominance [H]
-					i(150211), -- Demonic Combatant's Badge of Victory [H]
-					i(150203), -- Demonic Combatant's Insignia of Conquest [H]
-					i(150209), -- Demonic Combatant's Insignia of Dominance [H]
-					i(150215), -- Demonic Combatant's Insignia of Victory [H]
+					i(150201),	-- Demonic Combatant's Accolade of Conquest [H]
+					i(150207),	-- Demonic Combatant's Accolade of Dominance [H]
+					i(150213),	-- Demonic Combatant's Accolade of Victory [H]
+					i(150199),	-- Demonic Combatant's Badge of Conquest [H]
+					i(150205),	-- Demonic Combatant's Badge of Dominance [H]
+					i(150211),	-- Demonic Combatant's Badge of Victory [H]
+					i(150203),	-- Demonic Combatant's Insignia of Conquest [H]
+					i(150209),	-- Demonic Combatant's Insignia of Dominance [H]
+					i(150215),	-- Demonic Combatant's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 } }, {
 				filter(RELICS_F, {
 					i(150331),	-- Alliance of Convenience
 					i(150363),	-- Battering Tempest
@@ -414,7 +414,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_GLADIATOR, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 }, ["races"] = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(148894),	-- Demonic Gladiator's Dreadcloak [A]
@@ -550,28 +550,28 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}),
 				}),
 				filter(FINGER_F, {
-					i(149052), -- Demonic Gladiator's Ring [A]
-					i(149054), -- Demonic Gladiator's Band [A]
-					i(149056), -- Demonic Gladiator's Signet [A]
+					i(149054),	-- Demonic Gladiator's Band [A]
+					i(149052),	-- Demonic Gladiator's Ring [A]
+					i(149056),	-- Demonic Gladiator's Signet [A]
 				}),
 				filter(NECK_F, {
-					i(149014), -- Demonic Gladiator's Necklace [A]
-					i(149016), -- Demonic Gladiator's Pendant [A]
-					i(149018), -- Demonic Gladiator's Choker [A]
+					i(149018),	-- Demonic Gladiator's Choker [A]
+					i(149014),	-- Demonic Gladiator's Necklace [A]
+					i(149016),	-- Demonic Gladiator's Pendant [A]
 				}),
 				filter(TRINKET_F, {
-					i(149090), -- Demonic Gladiator's Badge of Conquest [A]
-					i(149092), -- Demonic Gladiator's Accolade of Conquest [A]
-					i(149094), -- Demonic Gladiator's Insignia of Conquest [A]
-					i(149096), -- Demonic Gladiator's Badge of Dominance [A]
-					i(149098), -- Demonic Gladiator's Accolade of Dominance [A]
-					i(149100), -- Demonic Gladiator's Insignia of Dominance [A]
-					i(149102), -- Demonic Gladiator's Badge of Victory [A]
-					i(149104), -- Demonic Gladiator's Accolade of Victory [A]
-					i(149106), -- Demonic Gladiator's Insignia of Victory [A]
+					i(149092),	-- Demonic Gladiator's Accolade of Conquest [A]
+					i(149098),	-- Demonic Gladiator's Accolade of Dominance [A]
+					i(149104),	-- Demonic Gladiator's Accolade of Victory [A]
+					i(149090),	-- Demonic Gladiator's Badge of Conquest [A]
+					i(149096),	-- Demonic Gladiator's Badge of Dominance [A]
+					i(149102),	-- Demonic Gladiator's Badge of Victory [A]
+					i(149094),	-- Demonic Gladiator's Insignia of Conquest [A]
+					i(149100),	-- Demonic Gladiator's Insignia of Dominance [A]
+					i(149106),	-- Demonic Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 }, ["races"] = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(148895),	-- Demonic Gladiator's Dreadcloak [H]
@@ -707,28 +707,28 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}),
 				}),
 				filter(FINGER_F, {
-					i(149053), -- Demonic Gladiator's Ring [H]
-					i(149055), -- Demonic Gladiator's Band [H]
-					i(149057), -- Demonic Gladiator's Signet [H]
+					i(149055),	-- Demonic Gladiator's Band [H]
+					i(149053),	-- Demonic Gladiator's Ring [H]
+					i(149057),	-- Demonic Gladiator's Signet [H]
 				}),
 				filter(NECK_F, {
-					i(149015), -- Demonic Gladiator's Necklace [H]
-					i(149017), -- Demonic Gladiator's Pendant [H]
-					i(149019), -- Demonic Gladiator's Choker [H]
+					i(149019),	-- Demonic Gladiator's Choker [H]
+					i(149015),	-- Demonic Gladiator's Necklace [H]
+					i(149017),	-- Demonic Gladiator's Pendant [H]
 				}),
 				filter(TRINKET_F, {
-					i(149091), -- Demonic Gladiator's Badge of Conquest [H]
-					i(149093), -- Demonic Gladiator's Accolade of Conquest [H]
-					i(149095), -- Demonic Gladiator's Insignia of Conquest [H]
-					i(149097), -- Demonic Gladiator's Badge of Dominance [H]
-					i(149099), -- Demonic Gladiator's Accolade of Dominance [H]
-					i(149101), -- Demonic Gladiator's Insignia of Dominance [H]
-					i(149103), -- Demonic Gladiator's Badge of Victory [H]
-					i(149105), -- Demonic Gladiator's Accolade of Victory [H]
-					i(149107), -- Demonic Gladiator's Insignia of Victory [H]
+					i(149093),	-- Demonic Gladiator's Accolade of Conquest [H]
+					i(149099),	-- Demonic Gladiator's Accolade of Dominance [H]
+					i(149105),	-- Demonic Gladiator's Accolade of Victory [H]
+					i(149091),	-- Demonic Gladiator's Badge of Conquest [H]
+					i(149097),	-- Demonic Gladiator's Badge of Dominance [H]
+					i(149103),	-- Demonic Gladiator's Badge of Victory [H]
+					i(149095),	-- Demonic Gladiator's Insignia of Conquest [H]
+					i(149101),	-- Demonic Gladiator's Insignia of Dominance [H]
+					i(149107),	-- Demonic Gladiator's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 } }, {
 				filter(RELICS_F, {
 					i(154090),	-- Alliance of Convenience
 					i(154109),	-- Battering Tempest
@@ -764,20 +764,24 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 						["sourceAchievements"] = { 12198 },	-- Demonic Elite
 						["cost"] = {{"i", MOH, 50}},
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
+						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
+							["sourceAchievements"] = { 12168 },	-- Gladiator: Legion Season 7
+							["cost"] = {{"i", MOH, 12}},
+						}),
 						i(149453),	-- Demonic Gladiator's Cloak [A]
 						i(149451),	-- Demonic Gladiator's Tabard [A]
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 }, ["races"] = ALLIANCE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(149140),	-- Demonic Gladiator's Dreadcloak [A]
@@ -913,41 +917,45 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}),
 				}),
 				filter(FINGER_F, {
-					i(149298), -- Demonic Gladiator's Ring [A]
-					i(149300), -- Demonic Gladiator's Band [A]
-					i(149302), -- Demonic Gladiator's Signet [A]
+					i(149300),	-- Demonic Gladiator's Band [A]
+					i(149298),	-- Demonic Gladiator's Ring [A]
+					i(149302),	-- Demonic Gladiator's Signet [A]
 				}),
 				filter(NECK_F, {
-					i(149260), -- Demonic Gladiator's Necklace [A]
-					i(149262), -- Demonic Gladiator's Pendant [A]
-					i(149264), -- Demonic Gladiator's Choker [A]
+					i(149264),	-- Demonic Gladiator's Choker [A]
+					i(149260),	-- Demonic Gladiator's Necklace [A]
+					i(149262),	-- Demonic Gladiator's Pendant [A]
 				}),
 				filter(TRINKET_F, {
-					i(149336), -- Demonic Gladiator's Badge of Conquest [A]
-					i(149338), -- Demonic Gladiator's Accolade of Conquest [A]
-					i(149340), -- Demonic Gladiator's Insignia of Conquest [A]
-					i(149342), -- Demonic Gladiator's Badge of Dominance [A]
-					i(149344), -- Demonic Gladiator's Accolade of Dominance [A]
-					i(149346), -- Demonic Gladiator's Insignia of Dominance [A]
-					i(149348), -- Demonic Gladiator's Badge of Victory [A]
-					i(149350), -- Demonic Gladiator's Accolade of Victory [A]
-					i(149352), -- Demonic Gladiator's Insignia of Victory [A]
+					i(149338),	-- Demonic Gladiator's Accolade of Conquest [A]
+					i(149344),	-- Demonic Gladiator's Accolade of Dominance [A]
+					i(149350),	-- Demonic Gladiator's Accolade of Victory [A]
+					i(149336),	-- Demonic Gladiator's Badge of Conquest [A]
+					i(149342),	-- Demonic Gladiator's Badge of Dominance [A]
+					i(149348),	-- Demonic Gladiator's Badge of Victory [A]
+					i(149340),	-- Demonic Gladiator's Insignia of Conquest [A]
+					i(149346),	-- Demonic Gladiator's Insignia of Dominance [A]
+					i(149352),	-- Demonic Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, ["races"] = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 						["sourceAchievements"] = { 12198 },	-- Demonic Elite
 						["cost"] = {{"i", MOH, 50}},
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
+						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
+							["sourceAchievements"] = { 12168 },	-- Gladiator: Legion Season 7
+							["cost"] = {{"i", MOH, 12}},
+						}),
 						i(149452),	-- Demonic Gladiator's Cloak [H]
 						i(149450),	-- Demonic Gladiator's Tabard [H]
 					}),
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 }, ["races"] = HORDE_ONLY }, {
 				n(CLASSES, {
 					cl(DEATHKNIGHT, {
 						i(149141),	-- Demonic Gladiator's Dreadcloak [H]
@@ -1083,28 +1091,28 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					}),
 				}),
 				filter(FINGER_F, {
-					i(149299), -- Demonic Gladiator's Ring [H]
-					i(149301), -- Demonic Gladiator's Band [H]
-					i(149303), -- Demonic Gladiator's Signet [H]
+					i(149301),	-- Demonic Gladiator's Band [H]
+					i(149299),	-- Demonic Gladiator's Ring [H]
+					i(149303),	-- Demonic Gladiator's Signet [H]
 				}),
 				filter(NECK_F, {
-					i(149261), -- Demonic Gladiator's Necklace [H]
-					i(149263), -- Demonic Gladiator's Pendant [H]
-					i(149265), -- Demonic Gladiator's Choker [H]
+					i(149265),	-- Demonic Gladiator's Choker [H]
+					i(149261),	-- Demonic Gladiator's Necklace [H]
+					i(149263),	-- Demonic Gladiator's Pendant [H]
 				}),
 				filter(TRINKET_F, {
-					i(149337), -- Demonic Gladiator's Badge of Conquest [H]
-					i(149339), -- Demonic Gladiator's Accolade of Conquest [H]
-					i(149341), -- Demonic Gladiator's Insignia of Conquest [H]
-					i(149343), -- Demonic Gladiator's Badge of Dominance [H]
-					i(149345), -- Demonic Gladiator's Accolade of Dominance [H]
-					i(149347), -- Demonic Gladiator's Insignia of Dominance [H]
-					i(149349), -- Demonic Gladiator's Badge of Victory [H]
-					i(149351), -- Demonic Gladiator's Accolade of Victory [H]
-					i(149353), -- Demonic Gladiator's Insignia of Victory [H]
+					i(149339),	-- Demonic Gladiator's Accolade of Conquest [H]
+					i(149345),	-- Demonic Gladiator's Accolade of Dominance [H]
+					i(149351),	-- Demonic Gladiator's Accolade of Victory [H]
+					i(149337),	-- Demonic Gladiator's Badge of Conquest [H]
+					i(149343),	-- Demonic Gladiator's Badge of Dominance [H]
+					i(149349),	-- Demonic Gladiator's Badge of Victory [H]
+					i(149341),	-- Demonic Gladiator's Insignia of Conquest [H]
+					i(149347),	-- Demonic Gladiator's Insignia of Dominance [H]
+					i(149353),	-- Demonic Gladiator's Insignia of Victory [H]
 				}),
 			})),
-			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2, REMOVED_7_3_5 } }, {
+			n(FACTION_HEADER_NEUTRAL, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5, REMOVED_8_0_1 } }, {
 				filter(RELICS_F, {
 					i(155733),	-- Alliance of Convenience
 					i(155752),	-- Battering Tempest

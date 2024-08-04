@@ -12,17 +12,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 		q(79010, {	-- Door to the Ren'dorei
 			["sourceQuests"] = { 79009 },	-- The Harbinger
 			["provider"] = { "n", 215013 },	-- Alleria Windrunner
-			["coord"] = { 31.4, 41.8, 629 },	-- Chamber of the Guardian
+			["coord"] = { 31.4, 41.8, AEGWYNNS_GALLERY },
 		}),
 		q(79011, {	-- Riftwalker Reports
 			["sourceQuests"] = { 79010 },	-- Door to the Ren'dorei
 			["provider"] = { "n", 214702 },	-- Magister Umbric
-			["coord"] = { 27.2, 27.8, 971 },	-- Telegrus Rift
+			["coord"] = { 27.2, 27.8, TELOGRUS_RIFT },
 		}),
 		q(79012, {	-- Cracks in the Void
 			["sourceQuests"] = { 79010 },	-- Door to the Ren'dorei
 			["provider"] = { "n", 214702 },	-- Magister Umbric
-			["coord"] = { 27.2, 27.8, 971 },	-- Telegrus Rift
+			["coord"] = { 27.2, 27.8, TELOGRUS_RIFT },
 		}),
 		q(79013, {	-- Galakrond's Unrest
 			["sourceQuests"] = {
@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 				79012,	-- Cracks in the Void
 			},
 			["provider"] = { "n", 214698 },	-- Alleria Windrunner
-			["coord"] = { 40.7, 60.7, 971 },	-- Telegrus Rift
+			["coord"] = { 40.7, 60.7, TELOGRUS_RIFT },
 		}),
 		q(79014, {	-- Walk a Mile in Her Shadows
 			["sourceQuests"] = { 79013 },	-- Galakrond's Unrest
@@ -60,12 +60,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 		q(79019, {	-- Defend Telogrus Rift
 			["sourceQuests"] = { 79018 },	-- And Be One Traveler, Long I Stood
 			["provider"] = { "n", 214660 },	-- Alleria Windrunner
-			["coord"] = { 28.6, 23.8, 971 },	-- Telegrus Rift
+			["coord"] = { 28.6, 23.8, TELOGRUS_RIFT },
 		}),
 		q(79020, {	-- Null and Void
 			["sourceQuests"] = { 79019 },	-- Defend Telogrus Rift
 			["provider"] = { "n", 216264 },	-- Alleria Windrunner
-			["coord"] = { 43.6, 63.8, 971 },	-- Telegrus Rift
+			["coord"] = { 43.6, 63.8, TELOGRUS_RIFT },
 			["groups"] = {
 				i(213269),	-- Bow of the Ranger Captain
 				i(217711),	-- Voidtouched Flail
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 		q(79021, {	-- Radiant Warnings
 			["sourceQuests"] = { 79020 },	-- Null and Void
 			["provider"] = { "n", 214657 },	-- Locus-Walker
-			["coord"] = { 50.2, 75.2, 971 },	-- Telegrus Rift
+			["coord"] = { 50.2, 75.2, TELOGRUS_RIFT },
 			["groups"] = {
 				i(213561),	-- Winding Slitherdrake: Void Scales (DM!)
                 ach(40382), -- Hunt the Harbinger
@@ -97,7 +97,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			["name"] = "Stay awhile and listen: Locus-Walker",
 			["sourceQuests"] = { 79010 },	-- Door to the Ren'dorei
 			["provider"] = { "n", 126773 },	-- Locus-Walker
-			["coord"] = { 29.7, 27.1, 971 },	-- Telegrus Rift
+			["coord"] = { 29.7, 27.1, TELOGRUS_RIFT },
 		}),
 	}),
 });

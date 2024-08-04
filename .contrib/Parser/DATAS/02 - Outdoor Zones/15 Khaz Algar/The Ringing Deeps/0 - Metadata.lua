@@ -4,6 +4,6 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(THE_RINGING_DEEPS, {
 		["icon"] = 5770812,
-		--["lore"] = "",
+		["lore"] = "This gigantic cavern serves as the home of the Machine Speakers, Earthen who maintain the gigantic Titan machines of old.",
 	}),
 })));

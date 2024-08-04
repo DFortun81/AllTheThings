@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {
 	n(SEASON_DRACONIC_PVP, {
-		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
+		n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_11_0_0 } }, {
 			ach(19501, {	-- Draconic Combatant [A]
 				["races"] = ALLIANCE_ONLY,
 				["collectible"] = false,
@@ -49,7 +49,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				title(535),	-- Draconic Legend <Name>
 			}),
 			-- Fashion
-			ach(19276),	-- Verdant Vogue
+			ach(19276, {	-- Verdant Vogue
+				["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
+			}),
 		})),
 		filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_PVP } }, {
 			i(213439, {	-- Vicious Dreamtalon [A] (MOUNT!)
@@ -907,7 +909,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		filter(RECIPES, {
 			-- #if AFTER TWW
 			n(221421, { -- Eraneth <Draconic Combatant Recipes>
-				["timeline"] = { ADDED_11_PH_PREPATCH },
+				["timeline"] = { ADDED_11_0_0 },
 				["coord"] = { 43.6, 42.4, VALDRAKKEN },
 				["g"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
 			-- #endif

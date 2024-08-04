@@ -1661,6 +1661,8 @@ _.ObjectNames = {
 	[457100] = "Renzik's Thoughts on \"Fair\" Fighting",
 	[457101] = "The Rites of Mak'Gora",
 	[457102] = "Elements for Dummies Volume III: Arcane",
+	[461639] = "Orthas' Hammer",
+	[462236] = "Mysterious Chest",
 	[100000000] = "Archaeologist's Cart",
 	[100000001] = "Unlit Torch",
 }
@@ -2768,6 +2770,8 @@ _.ObjectModels = {
 	[457100] = 198028,
 	[457101] = 198028,
 	[457102] = 198028,
+	[461639] = 203177,
+	[462236] = 219372,
 	[100000001] = 201129,
 }
 
@@ -3616,6 +3620,7 @@ localize(_.ObjectNames, {
 	[457100] = "Renziks Gedanken zu \"fairem\" Kämpfen",
 	[457101] = "Die Riten von Mak'Gora",
 	[457102] = "Elemente für Dummies Band I: Arkan",
+	[462236] = "Mysteriöse Truhe",
 	[100000001] = "Nicht angezündete Fackel",
 });
 end
@@ -5261,6 +5266,7 @@ localize(_.ObjectNames, {
 	[457100] = "Réflexions de Renzik sur les combats « à la loyale »",
 	[457101] = "Les rites de Mak’Gora",
 	[457102] = "Les éléments pour les Nuls, vol. 3 : Arcanes",
+	[462236] = "Coffre mystérieux",
 	[100000001] = "Torche éteinte",
 });
 end

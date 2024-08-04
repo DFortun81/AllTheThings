@@ -62,7 +62,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		n(PVP_WARMODE, {
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
-				["g"] = sharedData({ ["timeline"] = { ADDED_11_PH_PREPATCH } }, {
+				["g"] = sharedData({ ["timeline"] = { ADDED_11_0_0 } }, {
 					moh(5, iensemble(224000)),	-- Arsenal: Hellbloom Axe
 					moh(5, iensemble(223996)),	-- Arsenal: Hellbloom Bow
 					moh(5, iensemble(224001)),	-- Arsenal: Hellbloom Branch

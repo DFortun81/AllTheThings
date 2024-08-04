@@ -7,13 +7,13 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 		i(190451),	-- Rousing Ire
 	}),
 	filter(RECIPES, {
-		i(201257, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_PH_PREPATCH }}),	-- Bloodstained Pattern: Infurious Hide (RECIPE!)
-		i(201259, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_PH_PREPATCH }}),	-- Bloodstained Pattern: Infurious Scales (RECIPE!)
-		i(201258, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_PH_PREPATCH }}),	-- Bloodstained Pattern: Infurious Wildercloth Bolt (RECIPE!)
-		i(201256, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_PH_PREPATCH }}),	-- Bloodstained Plans: Infurious Alloy (RECIPE!)
+		i(201257, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_0 }}),	-- Bloodstained Pattern: Infurious Hide (RECIPE!)
+		i(201259, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_0 }}),	-- Bloodstained Pattern: Infurious Scales (RECIPE!)
+		i(201258, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_0 }}),	-- Bloodstained Pattern: Infurious Wildercloth Bolt (RECIPE!)
+		i(201256, {["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_0 }}),	-- Bloodstained Plans: Infurious Alloy (RECIPE!)
 		-- #if AFTER TWW
 		n(221421, { -- Eraneth <Draconic Combatant Recipes>
-			["timeline"] = { ADDED_11_PH_PREPATCH },
+			["timeline"] = { ADDED_11_0_0 },
 			["coord"] = { 43.6, 42.4, VALDRAKKEN },
 			["g"] = sharedData({ ["cost"] = {{"i", MOH, 3}} }, {
 		-- #endif

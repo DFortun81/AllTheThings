@@ -5,6 +5,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	applyclassicphase(SOD_PHASE_FOUR, inst(2784, bubbleDownSelf({["timeline"] = { "added 1.15.3" }}, {	-- Demon Fall Canyon
 		["lore"] = "Demon Fall Canyon is historically the location of the final battle between Grom Hellscream and Mannoroth as featured in Warcraft III.",
+		["provider"] = { "i", 228172 },	-- Shadowtooth Illusion Ward
 		["sourceQuest"] = 84384,	-- Demonic Deceptions
 		["zone-text-areaID"] = 435,	-- Demon Fall Canyon
 		["coord"] = { 84.5, 75.0, ASHENVALE },

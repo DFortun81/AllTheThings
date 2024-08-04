@@ -1340,7 +1340,7 @@ i(223146);	-- Satchel of Stormborn Seeds
 i(220692);	-- X-treme Water Blaster Display
 
 ------------------
--- PATCH ADDED_11_PH_PREPATCH --
+-- PATCH 11.0.0 --
 ------------------
 -- #if AFTER TWW
 i(204405);	-- Stuffed Bear

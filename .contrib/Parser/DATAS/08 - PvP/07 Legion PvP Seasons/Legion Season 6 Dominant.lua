@@ -764,14 +764,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2 }, ["races"] = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 						["sourceAchievements"] = { 12135 },	-- Dominant Elite
 						["cost"] = {{"i", MOH, 50}},
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
+						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
+							["sourceAchievements"] = { 12167 },	-- Gladiator: Legion Season 6
+							["cost"] = {{"i", MOH, 12}},
+						}),
 						i(149449),	-- Dominant Gladiator's Cloak [A]
 						i(149447),	-- Dominant Gladiator's Tabard [A]
 					}),
@@ -934,14 +938,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(148860),	-- Dominant Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2 }, ["races"] = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 						["sourceAchievements"] = { 12135 },	-- Dominant Elite
 						["cost"] = {{"i", MOH, 50}},
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
+						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
+							["sourceAchievements"] = { 12167 },	-- Gladiator: Legion Season 6
+							["cost"] = {{"i", MOH, 12}},
+						}),
 						i(149448),	-- Dominant Gladiator's Cloak [H]
 						i(149446),	-- Dominant Gladiator's Tabard [H]
 					}),

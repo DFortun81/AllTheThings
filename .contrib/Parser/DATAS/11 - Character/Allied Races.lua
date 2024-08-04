@@ -783,7 +783,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 40 Character|r.",
 		-- #endif
 		["races"] = ALLIANCE_ONLY,
-		["maps"] = { 971 },
+		["maps"] = { TELOGRUS_RIFT },
 		["g"] = {
 			q(49787, {	-- The Ghostlands
 				["provider"] = { "n", 126321 },	-- Alleria Windrunner
@@ -805,7 +805,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			-- Void Elf Starter Quests
 			q(49788, {	-- For the Alliance
 				["provider"] = { "n", 131345 },	-- Alleria Windrunner
-				["coord"] = { 28.6, 22.3, 971 },
+				["coord"] = { 28.6, 22.3, TELOGRUS_RIFT },
 				["races"] = { VOIDELF },
 				["lvl"] = 20,
 				["g"] = {
@@ -1182,6 +1182,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["lvl"] = 20,
 			}),
 		},
+	}),
+	filter(MISC, {
+		i(157787),	-- Large Red Sack
 	}),
 }));
 

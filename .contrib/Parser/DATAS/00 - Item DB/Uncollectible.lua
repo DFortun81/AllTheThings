@@ -1792,7 +1792,7 @@ i(212341);	-- Twice-Dead Tusk
 i(211798);	-- Un-Raised Bone Fragments
 
 ------------------
--- PATCH ADDED_11_PH_PREPATCH --
+-- PATCH 11.0.0 --
 ------------------
 i(225428);	-- Green Hills of Stranglethorn - Page 1
 i(225423);	-- Green Hills of Stranglethorn - Page 4

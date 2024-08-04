@@ -465,13 +465,6 @@ root(ROOTS.Zones, {
 						{"sub", "common_vendor", 28951},	-- Breanni <Pet Supplies> (Dalaran Northrend)
 					},
 				}),
-				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
-					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						elitepvp(i(147778)),	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
-					},
-				}),
 				n(97339,  {	-- Cho Ironpalm <Dagger & Fist Weapon Merchant>
 					["coord"] = { 53.1, 62.8, LEGION_DALARAN },
 					["sym"] = {
@@ -896,6 +889,7 @@ root(ROOTS.Zones, {
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 33.4, 74.0, LEGION_DALARAN },
 					["g"] = {
+						--[[
 						currency(1356, {	-- Echoes of Battle
 							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
@@ -1122,6 +1116,7 @@ root(ROOTS.Zones, {
 								}),
 							},
 						}),
+						--]]
 					},
 				}),
 				n(96980,  {	-- Matilda Brightlink <Mail Armor Merchant>
@@ -1271,13 +1266,6 @@ root(ROOTS.Zones, {
 						{"sub", "common_vendor", 29491},	-- Karandonna <Clothier>
 					},
 				}),
-				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
-					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						elitepvp(i(147778)),	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
-					},
-				}),
 				n(93543,  {	-- Sminx Glasseye
 					["coord"] = { 39.6, 35.1, LEGION_DALARAN },
 					["g"] = {
@@ -1419,6 +1407,7 @@ root(ROOTS.Zones, {
 					["races"] = HORDE_ONLY,
 					["coord"] = { 59.6, 25.2, LEGION_DALARAN },
 					["g"] = {
+						--[[
 						currency(1356, {	-- Echoes of Battle
 							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
@@ -1645,6 +1634,7 @@ root(ROOTS.Zones, {
 								}),
 							},
 						}),
+						--]]
 					},
 				}),
 				n(97012,  {	-- Wanda Chanter <Wands>
