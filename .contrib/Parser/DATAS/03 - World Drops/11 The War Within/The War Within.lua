@@ -2,7 +2,7 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
-	n(ARMOR, {
+	n(ARMOR, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 		filter(BACK_F, {
 			i(224624),	-- Spinner's Shawl
 		}),
@@ -78,7 +78,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 			i(224618),	-- Earthforged Sabatons
 			i(224621),	-- Earthforged Shoulder Scales
 		}),
-	}),
+	})),
 	n(WEAPONS, {
 		--TODO: uncomment & remove from unsorted if it drop
 		i(224627),	-- Arathi Arquebus

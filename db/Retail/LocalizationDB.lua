@@ -623,6 +623,7 @@ localize(L.HEADER_NAMES, {
 	[-1000990] = select(2,GetAchievementInfo(11014)),
 	[-1000991] = select(2,GetAchievementInfo(11037)),
 	[-1000992] = select(2,GetAchievementInfo(11062)),
+	[-1000993] = select(2,GetAchievementInfo(12010)),
 	[-1000994] = select(2,GetAchievementInfo(12134)),
 	[-1000995] = select(2,GetAchievementInfo(12185)),
 	[-1000996] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
@@ -1134,6 +1135,7 @@ localize(L.HEADER_ICONS, {
 	[-1000990] = "Interface/Icons/inv_stormdragonmount2blue",
 	[-1000991] = "Interface/Icons/inv_stormdragonmount2dark",
 	[-1000992] = "Interface/Icons/inv_stormdragonmount2green",
+	[-1000993] = "Interface/Icons/inv_stormdragonmount2light",
 	[-1000994] = "Interface/Icons/inv_stormdragonmount2yellow",
 	[-1000995] = "Interface/Icons/inv_stormdragonmount2_fel",
 });
