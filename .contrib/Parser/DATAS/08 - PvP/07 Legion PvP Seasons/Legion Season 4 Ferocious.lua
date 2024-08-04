@@ -763,14 +763,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 			})),
 		}),
 		n(PVP_ELITE, {
-			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = ALLIANCE_ONLY }, {
+			n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 }, ["races"] = ALLIANCE_ONLY }, {
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
 					["coord"] = { 29.6, 74.8, LEGION_DALARAN },
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 						["sourceAchievements"] = { 11698 },	-- Ferocious Elite
 						["cost"] = {{"i", MOH, 50}},
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
+						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
+							["sourceAchievements"] = { 11061 },	-- Gladiator: Legion Season 4
+							["cost"] = {{"i", MOH, 12}},
+						}),
 						i(147364),	-- Ferocious Gladiator's Cloak [A]
 						i(147339),	-- Ferocious Gladiator's Tabard [A]
 					}),
@@ -933,14 +937,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.LEGION, {
 					i(145834),	-- Ferocious Gladiator's Insignia of Victory [A]
 				}),
 			})),
-			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 }, ["races"] = HORDE_ONLY }, {
+			n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 }, ["races"] = HORDE_ONLY }, {
 				n(119272, {	-- Sarah the Savage <Legion Elite Gladiator>
 					["coord"] = { 57.0, 27.8, LEGION_DALARAN },
-					["g"] = bubbleDown({
+					["g"] = sharedData({
 						["sourceAchievements"] = { 11698 },	-- Ferocious Elite
 						["cost"] = {{"i", MOH, 50}},
 						["u"] = ELITE_PVP_REQUIREMENT,
 					}, {
+						i(147778, {	-- Enchanter's Illusion - Demonic Tyranny (ILLUSION!)
+							["sourceAchievements"] = { 11061 },	-- Gladiator: Legion Season 4
+							["cost"] = {{"i", MOH, 12}},
+						}),
 						i(147363),	-- Ferocious Gladiator's Cloak [H]
 						i(147338),	-- Ferocious Gladiator's Tabard [H]
 					}),
