@@ -294,7 +294,7 @@ checkboxProgressIconOnly:SetATTTooltip(L.ICON_ONLY_CHECKBOX_TOOLTIP)
 checkboxProgressIconOnly:AlignBelow(checkboxCollectionProgress, 1)
 
 local checkboxOnlyRelevant;
-if app.GameBuildVersion >= 40000 then
+if C_TransmogCollection then
 local checkboxSharedAppearances = child:CreateCheckBox(L.SHARED_APPEARANCES_CHECKBOX,
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SharedAppearances"))
