@@ -23,6 +23,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["coord"] = { 49,94, THE_BARRENS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 28,
+					["groups"] = {
+						objective(1, {	-- 0/8 Razorfen Battleguard slain
+							["provider"] = { "n", 7873 },	-- Razorfen Battleguard
+						}),
+						objective(2, {	-- 0/8  slain
+							["provider"] = { "n", 7874 },	-- Razorfen Thornweaver
+						}),
+						objective(3, {	-- 0/8 Death's Head Cultist slain
+							["provider"] = { "n", 7872 },	-- Death's Head Cultist
+						}),
+					},
 				}),
 				q(6521, {	-- An Unholy Alliance (2/2) (Before Wrathgate)
 					["providers"] = {
