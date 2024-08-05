@@ -374,6 +374,7 @@ HeaderAssignments = {
 	["Starcraft II: Heart of the Swarm"] = -1000257,
 	["Starcraft II: Legacy of the Void"] = -1000258,
 	["Starcraft II: Wings of Liberty"] = -1000256,
+	["Storm Cliffs"] = -1000996,
 	["Storming the Citadel"] = -1000186,
 	["Stranglethorn Fishing Extravaganza"] = -1000227,
 	["Tanks"] = -1000148,
@@ -503,4 +504,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000996;
+NextHeaderID = -1000997;

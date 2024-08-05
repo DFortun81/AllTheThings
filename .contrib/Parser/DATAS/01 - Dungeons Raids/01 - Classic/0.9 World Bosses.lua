@@ -13,6 +13,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
+			-- #if NOT SEASON_OF_DISCOVERY
 			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, n(6109, {	-- Azuregos
 				["coord"] = { 53.3, 80.4, AZSHARA },
 				["isRaid"] = true,
@@ -29,11 +30,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(19132),	-- Crystal Adorned Crown
 					i(18208),	-- Drape of Benediction
 					i(18541),	-- Puissant Cape
+					i(18547),	-- Unmelting Ice Girdle
 					i(18545),	-- Leggings of Arcane Supremacy
 					i(19131),	-- Snowblind Shoes
-					i(18547),	-- Unmelting Ice Girdle
 				},
 			}))),
+			-- #endif
 			applyclassicphase(PHASE_FOUR, bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, n(DRAGONS_OF_NIGHTMARE, {
 				["coords"] = {
 					{ 51.2, 10.9, FERALAS },

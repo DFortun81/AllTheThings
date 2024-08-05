@@ -40,7 +40,7 @@ app:CreateWindow("Maps", {
 			end
 			
 			-- Go through all of the possible maps, including only maps that have C_Map data.
-			for mapID=1,10000,1 do
+			for mapID=1,20000,1 do
 				if not mapsByID[mapID] then
 					local mapInfo = C_Map_GetMapInfo(mapID);
 					if mapInfo then

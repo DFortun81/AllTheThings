@@ -338,6 +338,7 @@ localize(L.HEADER_NAMES, {
 	[-1000986] = "Inspiration Rank Two",
 	[-1000987] = "Aeonas: Trust in a Friend",
 	[-1000988] = "Gregory: You Can Trust Me... Probably.",
+	[-1000996] = "Storm Cliffs",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -373,6 +374,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000980] = "You need to be debuffed from the Nightmare Amalgam to proc this quest. (do not engage it, just run away)",
 	[-1000984] = "Starting at level 50, Paladins can complete a quest chain in Western Plaguelands that will give them a Relic that calls forth their own personal Squire. This Squire can level up by fighting in combat as well as by being healed by the Paladin's spells. (Get into combat and just spam rank 1 Flash of Light while he attacks the mobs.)",
 	[-1000985] = "After receiving your squire, summon him forth using the Relic and then level him up by getting into combat and keeping him alive.",
+	[-1000996] = "The Storm Cliffs is a place in Azshara known for its weather and acts as the home away from home for the blue dragonflight.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1169,6 +1171,7 @@ _.ObjectNames = {
 	[144066] = "First Witherbark Cage",
 	[144067] = "Second Witherbark Cage",
 	[144068] = "Third Witherbark Cage",
+	[144070] = "Sharpbeak's Cage",
 	[147557] = "Stolen Silver",
 	[148499] = "Felix's Box",
 	[148503] = "Fire Plume Ridge Hot Spot",
@@ -2302,6 +2305,7 @@ _.ObjectModels = {
 	[144066] = 200937,
 	[144067] = 200937,
 	[144068] = 200937,
+	[144070] = 200937,
 	[147557] = 196976,
 	[148499] = 190013,
 	[148504] = 190634,
@@ -2814,6 +2818,7 @@ localize(L.HEADER_NAMES, {
 	[-1000378] = "Seelenvermittler",
 	[-1000380] = "Kopfgeld",
 	[-1000970] = "Stufe 3",
+	[-1000996] = "Sturmklippen",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -3151,6 +3156,7 @@ localize(_.ObjectNames, {
 	[144066] = "Erster Käfig der Bleichborken",
 	[144067] = "Zweiter Käfig der Bleichborken",
 	[144068] = "Dritter Käfig der Bleichborken",
+	[144070] = "Scharfschnabels Käfig",
 	[147557] = "Gestohlenes Silber",
 	[148499] = "Felix' Kasten",
 	[148504] = "Ein verdächtiger Grabstein",
@@ -3654,6 +3660,7 @@ localize(L.HEADER_NAMES, {
 	[-1000378] = "Corredores de Almas",
 	[-1000380] = "Prima",
 	[-1000970] = "Nivel 3",
+	[-1000996] = "Acantilados Tormentosos",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
@@ -3988,6 +3995,7 @@ localize(_.ObjectNames, {
 	[144066] = "Primera jaula Secacorteza",
 	[144067] = "Segunda jaula Secacorteza",
 	[144068] = "Tercera jaula Secacorteza",
+	[144070] = "Jaula de Picoafilado",
 	[147557] = "Plata robada",
 	[148499] = "Caja de Félix",
 	[148504] = "Una lápida llamativa",
@@ -4458,6 +4466,7 @@ localize(L.HEADER_NAMES, {
 	[-1000378] = "Courtiers D'âmes",
 	[-1000380] = "Prime",
 	[-1000970] = "Étage 3",
+	[-1000996] = "Falaises de la Tempête",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -4796,6 +4805,7 @@ localize(_.ObjectNames, {
 	[144066] = "Première cage de Fanécorce",
 	[144067] = "Deuxième cage de Fanécorce",
 	[144068] = "Troisième cage de Fanécorce",
+	[144070] = "Cage de Bec-Tranchant",
 	[147557] = "Argent volé",
 	[148499] = "Boîte de Felix",
 	[148504] = "Une tombe ostentatoire",
@@ -5297,6 +5307,7 @@ localize(L.HEADER_NAMES, {
 	[-1000378] = "Broker Dell'anima",
 	[-1000380] = "Premio",
 	[-1000970] = "Livello 3",
+	[-1000996] = "Storm Cliffs",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000273] = "Questa stagione porta un limite di livello iniziale di 25 e un nuovo gioco finale di livello 25, incluso un raid di Blackfathom Deeps per 10 giocatori con nuove meccaniche, boss nuovi e reinventati per sfidare le tattiche e le strategie dei giocatori e nuove ricompense.",
@@ -5447,6 +5458,7 @@ localize(_.ObjectNames, {
 	[144066] = "Prima Gabbia degli Scorzasecca",
 	[144067] = "Seconda Gabbia degli Scorzasecca",
 	[144068] = "Terza Gabbia degli Scorzasecca",
+	[144070] = "Gabbia di Beccaguzzo",
 	[148499] = "Scatola di Felix",
 	[148504] = "Lapide Notevole",
 	[148506] = "Manufatto Crepuscolare",
@@ -5730,6 +5742,7 @@ localize(L.HEADER_NAMES, {
 	[-1000378] = "소울 브로커",
 	[-1000380] = "하사품",
 	[-1000970] = "층 3",
+	[-1000996] = "폭풍 절벽",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -6054,6 +6067,7 @@ localize(_.ObjectNames, {
 	[144066] = "첫번째 마른나무껍질 우리",
 	[144067] = "두번째 마른나무껍질 우리",
 	[144068] = "세번째 마른나무껍질 우리",
+	[144070] = "뾰족부리의 우리",
 	[147557] = "도둑맞은 은화",
 	[148504] = "눈에 띄는 묘비",
 	[148506] = "황혼의 유물",
@@ -6468,6 +6482,7 @@ localize(L.HEADER_NAMES, {
 	[-1000378] = "Corretores de Almas",
 	[-1000380] = "Recompensa",
 	[-1000970] = "Nível 3",
+	[-1000996] = "Penhascos Tempestuosos",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -6787,6 +6802,7 @@ localize(_.ObjectNames, {
 	[144066] = "Primeira Jaula Cascasseca",
 	[144067] = "Segunda Jaula Cascasseca",
 	[144068] = "Terceira Jaula Cascasseca",
+	[144070] = "Gaiola do Bicoafiado",
 	[147557] = "Prata Roubada",
 	[148499] = "Caixa do Félix",
 	[148504] = "Lápide Evidente",
@@ -7180,6 +7196,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "Премия",
 	[-1000872] = "Пиратская буря",
 	[-1000970] = "Уровень 3",
+	[-1000996] = "Штормовые утесы",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -7519,6 +7536,7 @@ localize(_.ObjectNames, {
 	[144066] = "Первая клетка племени Сухокожих",
 	[144067] = "Вторая клетка племени Сухокожих",
 	[144068] = "Третья клетка племени Сухокожих",
+	[144070] = "Клетка Остроклюва",
 	[147557] = "Украденное серебро",
 	[148499] = "Ящик Феликса",
 	[148504] = "Подозрительное надгробие",
@@ -8008,6 +8026,7 @@ localize(L.HEADER_NAMES, {
 	[-1000378] = "灵魂经纪人",
 	[-1000380] = "赏金任务",
 	[-1000970] = "等级 3",
+	[-1000996] = "风暴悬崖",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
@@ -8315,6 +8334,7 @@ localize(_.ObjectNames, {
 	[144066] = "第一只枯木牢笼",
 	[144067] = "第二只枯木牢笼",
 	[144068] = "第三个枯木牢笼",
+	[144070] = "沙普比克的笼子",
 	[148504] = "明显的墓碑",
 	[148506] = "暮光神器",
 	[148513] = "辛耶尔石板",
