@@ -288,8 +288,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["groups"] = {
-						objective(1, {
-							
+						objective(1, {	-- 0/15 Black Broodling slain
+							["provider"] = { "n", 7047 },	-- Black Broodling
+						}),
+						objective(2, {	-- 0/10 Black Dragonspawn slain
+							["provider"] = { "n", 7040 },	-- Black Dragonspawn
+						}),
+						objective(3, {	-- 0/1 Black Drake slain
+							["provider"] = { "n", 7044 },	-- Black Drake
+						}),
+						objective(4, {	-- 0/4 Black Wyrmkin slain
+							["provider"] = { "n", 7041 },	-- Black Wyrmkin
 						}),
 					},
 				}),
