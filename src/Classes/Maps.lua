@@ -141,6 +141,10 @@ local function GetCurrentMapID()
 		if name and name:len() > 0 then
 			zoneTexts[name] = 1;
 		end
+		local instanceName,instanceType = GetInstanceInfo();
+		if instanceType and instanceType ~= "none" then
+			zoneTexts[instanceName] = 1;
+		end
 		for mapID,remap in pairs(app.MapRemapping) do
 			substitutions = remap.areaIDs;
 			if substitutions then
