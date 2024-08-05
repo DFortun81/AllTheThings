@@ -404,6 +404,10 @@ local function zoneTextNamesRunner(group, value)
 		--print("Invalid MapRemapping (name):", group.hash);
 	end
 end
+local function zoneTextHeaderIDRunner(group, value)
+	value = app.L.HEADER_NAMES[value];
+	if value then zoneTextNamesRunner(group, { value }); end
+end
 local fieldConverters = {
 	-- Simple Converters
 	["achievementID"] = cacheAchievementID,
@@ -617,6 +621,11 @@ local fieldConverters = {
 			zoneTextContinentRunner(group, value);
 		end);
 	end,
+	["zone-text-headerID"] = function(group, value)
+		tinsert(runners, function()
+			zoneTextHeaderIDRunner(group, value);
+		end);
+	end,
 	["zone-text-names"] = function(group, value)
 		tinsert(runners, function()
 			zoneTextNamesRunner(group, value);
@@ -757,6 +766,17 @@ if app.IsRetail then
 	end
 	fieldConverters.up = function(group, up)
 		CacheField(group, "up", up);
+	end
+else
+	-- Classic needs a little help with instances that don't have actual maps... Thanks, SOD.
+	fieldConverters.instanceID = function(group, value)
+		CacheField(group, "instanceID", value);
+		if group.headerID then
+			tinsert(runners, function()
+				print("Encountered Instance With HeaderID", value, group.headerID, group.text);
+				zoneTextHeaderIDRunner(group, group.headerID);
+			end);
+		end
 	end
 end
 

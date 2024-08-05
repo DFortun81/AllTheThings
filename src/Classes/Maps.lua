@@ -842,12 +842,16 @@ app.CreateInstance = app.CreateClass("Instance", "instanceID", instanceFields,
 		return L.HEADER_DESCRIPTIONS[t.headerID];
 	end,
 }, (function(t)
-	local creatureID = t.creatureID;
-	if creatureID and creatureID < 0 then
-		t.headerID = creatureID;
-		t.creatureID = nil;
-		t.npcID = nil;
+	if t.headerID then
 		return true;
+	else
+		local creatureID = t.creatureID or t.npcID;
+		if creatureID and creatureID < 0 then
+			t.headerID = creatureID;
+			t.creatureID = nil;
+			t.npcID = nil;
+			return true;
+		end
 	end
 end));
 

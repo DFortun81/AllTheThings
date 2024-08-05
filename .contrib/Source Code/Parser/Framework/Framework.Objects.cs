@@ -1290,6 +1290,7 @@ end");
                         case "zone-artIDs":
                         case "zone-text-areaID":
                         case "zone-text-areas":
+                        case "zone-text-headerID":
                             npcData[pair.Key] = pair.Value;
                             break;
 
@@ -1667,6 +1668,7 @@ end");
                     case "questIDH":
                     case "sqreq":
                     case "zone-text-areaID":
+                    case "zone-text-headerID":
                     case "savedInstanceID":
                     case "rwp":
                     case "awp":
