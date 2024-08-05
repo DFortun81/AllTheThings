@@ -82,6 +82,7 @@ local GeneralSettingsBase = {
 		["Thing:Transmog"] = app.GameBuildVersion >= 40000,
 		["DeathTracker"] = app.GameBuildVersion < 40000,
 		["Only:RWP"] = app.GameBuildVersion < 40000,
+		["Only:NotTrash"] = app.GameBuildVersion <= 40000,
 		["Skip:AutoRefresh"] = false,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
@@ -1126,6 +1127,7 @@ settings.UpdateMode = function(self, doRefresh)
 			filterSet.Event()
 		end
 		self.OnlyRWP = self:Get("Only:RWP");
+		self.OnlyNotTrash = self:Get("Only:NotTrash");
 	end
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
 

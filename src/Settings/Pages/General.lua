@@ -263,6 +263,24 @@ if app.GameBuildVersion >= 40000 then	-- Transmog officially supported with Cata
 	end)
 	checkboxMainOnlyMode:SetATTTooltip(L.MAIN_ONLY_TOOLTIP)
 	checkboxMainOnlyMode:AlignBelow(checkboxTransmog, 1)
+	
+	local checkboxQualityFilter = child:CreateCheckBox(L.ONLY_NOT_TRASH,
+	function(self)
+		self:SetChecked(settings:Get("Only:NotTrash"))
+		if not settings:Get("Thing:Transmog") and not app.MODE_DEBUG then
+			self:Disable()
+			self:SetAlpha(0.4)
+		else
+			self:Enable()
+			self:SetAlpha(1)
+		end
+	end,
+	function(self)
+		settings:Set("Only:NotTrash", self:GetChecked());
+		settings:UpdateMode(1);
+	end)
+	checkboxQualityFilter:SetATTTooltip(L.ONLY_NOT_TRASH_TOOLTIP)
+	checkboxQualityFilter:AlignAfter(checkboxMainOnlyMode)
 else
 	local checkboxOnlyRWP = child:CreateCheckBox(L.ONLY_RWP,
 	function(self)
