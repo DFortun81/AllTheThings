@@ -580,7 +580,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(24430, {	-- Blacken the Skies
 					["qg"] = 36903,	-- Jr. Bombardier Hackel
 					["sourceQuests"] = {
-						24433,	-- Let Them Feast on Fear
 						14477,	-- Push the Button!
 					},
 					["coord"] = { 14.4, 65.7, AZSHARA },
@@ -1934,6 +1933,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuests"] = {
 						24430,	-- Blacken the Skies
 						24434,	-- Commando Drop
+						24433,	-- Let Them Feast on Fear
 					},
 					["coord"] = { 14.0, 64.8, AZSHARA },
 					["timeline"] = { ADDED_4_0_1 },
