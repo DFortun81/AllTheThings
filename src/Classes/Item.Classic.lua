@@ -195,6 +195,7 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 "AsTransmog", {
 	collectible = app.GameBuildVersion >= 40000 and function(t)
 		if t.collectibleAsCost then return true; end
+		if app.Settings.OnlyNotTrash and (not t.q or t.q < 2) then return false; end
 		return app.Settings.Collectibles.Transmog;
 	end or function(t)
 		if t.collectibleAsCost then return true; end
