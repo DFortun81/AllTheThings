@@ -1467,7 +1467,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 					["groups"] = {
 						objective(1, {	-- Open Sharpbeak's Cage
-							["provider"] = { "i", 9472 },	-- Hexx's Key
+							["providers"] = {
+								{ "i",   9472 },	-- Hexx's Key
+								{ "o", 144070 },	-- Sharpbeak's Cage
+							},
 							["coord"] = { 53.6, 66.8, THE_HINTERLANDS },
 							["cr"] = 8023,	-- Sharpbeak
 						}),
