@@ -201,6 +201,7 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 		if t.collectibleAsCost then return true; end
 		if app.Settings.Collectibles.Transmog then
 			if app.Settings.OnlyRWP and not t.rwp then return false; end
+			if app.Settings.OnlyNotTrash and (not t.q or t.q < 2) then return false; end
 			return true;
 		end
 	end,
