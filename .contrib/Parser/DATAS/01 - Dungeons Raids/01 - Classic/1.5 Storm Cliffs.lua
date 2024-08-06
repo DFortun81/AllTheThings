@@ -3,34 +3,34 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
-	applyclassicphase(SOD_PHASE_FOUR, n(createHeader({
-		readable = "Storm Cliffs",
-		text = {
-			en = "Storm Cliffs",
-			es = "Acantilados Tormentosos",
-			de = "Sturmklippen",
-			fr = "Falaises de la Tempête",
-			it = "Storm Cliffs",
-			pt = "Penhascos Tempestuosos",
-			ru = "Штормовые утесы",
-			ko = "폭풍 절벽",
-			cn = "风暴悬崖",
-		},
-		description = {
-			en = "The Storm Cliffs is a place in Azshara known for its weather and acts as the home away from home for the blue dragonflight.",
-			--[[
-			es = "",
-			de = "",
-			fr = "",
-			it = "",
-			pt = "",
-			ru = "",
-			ko = "",
-			cn = "",
-			]]--
-		},
-	}), bubbleDownSelf({["timeline"] = { "added 1.15.3" }}, {
-		["instanceID"] = 2791,	-- Storm Cliffs
+	applyclassicphase(SOD_PHASE_FOUR, inst(2791, bubbleDownSelf({["timeline"] = { "added 1.15.3" }}, {	-- Storm Cliffs
+		["npcID"] = createHeader({
+			readable = "Storm Cliffs",
+			text = {
+				en = "Storm Cliffs",
+				es = "Acantilados Tormentosos",
+				de = "Sturmklippen",
+				fr = "Falaises de la Tempête",
+				it = "Storm Cliffs",
+				pt = "Penhascos Tempestuosos",
+				ru = "Штормовые утесы",
+				ko = "폭풍 절벽",
+				cn = "风暴悬崖",
+			},
+			description = {
+				en = "The Storm Cliffs is a place in Azshara known for its weather and acts as the home away from home for the blue dragonflight.",
+				--[[
+				es = "",
+				de = "",
+				fr = "",
+				it = "",
+				pt = "",
+				ru = "",
+				ko = "",
+				cn = "",
+				]]--
+			},
+		}),
 		["coord"] = { 43.5, 83.6, AZSHARA },
 		["isRaid"] = true,
 		["lvl"] = 60,

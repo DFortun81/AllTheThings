@@ -7,6 +7,7 @@ end
 
 -- #if SEASON_OF_DISCOVERY
 -- Manually added.
+inst(2791, 2791);	-- Storm Cliffs
 inst(2784, 2784);	-- Demon Fall Canyon
 -- #endif
 
