@@ -4244,6 +4244,8 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	----------------------------
 	-- UNSORTED QUESTS        --
 	----------------------------
+	--[[
+	-- No peaking - Crieve
 	-- Tier 0.5 Quests
 	q(84147),	-- An Earnest Proposition
 	q(84150),	-- An Earnest Proposition
@@ -4368,6 +4370,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	q(84323),	-- The Prize Within
 	q(84407),	-- The Prize Within
 	q(84395),	-- Undead Potatoes
+	]]--
 }))));
 
 -- Dungeon & Raid Phase Requirements
