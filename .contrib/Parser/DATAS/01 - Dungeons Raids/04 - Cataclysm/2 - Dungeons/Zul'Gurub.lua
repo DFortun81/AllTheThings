@@ -832,7 +832,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						}),
 						n(52269, {	-- Renataki
 							i(69638, {
-								["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, WARRIOR },
+								["f"] = FIST_WEAPONS,
 							}), -- Arlokk's Claws
 							i(69639), -- Renataki's Soul Slicer
 						}),

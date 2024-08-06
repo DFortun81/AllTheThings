@@ -776,7 +776,7 @@ TIER_ELEVEN_COMMON_GROUPS = {
 	i(58191),	-- Viewless Wings
 	i(58123),	-- Willow Mask
 	i(57928, {
-		["classes"] = { DEATHKNIGHT, PALADIN, SHAMAN, WARRIOR, HUNTER, ROGUE },
+		["f"] = ONE_HANDED_AXES,
 	}),	-- Windslicer
 	i(58195),	-- Woe Breeder's Boots
 	i(58124),	-- Wrap of the Valley Glades
