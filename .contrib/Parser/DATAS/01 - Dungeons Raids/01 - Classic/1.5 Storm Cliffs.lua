@@ -79,6 +79,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				i(19131, {	-- Snowblind Shoes
 					["timeline"] = { "removed 1.15.3" },
 				}),
+				i(228316),	-- Pattern: Incandescent Mooncloth Vest
+				i(228250),	-- Plans: Stronger-hold Gauntlets
 			}),
 		},
 	}))),
