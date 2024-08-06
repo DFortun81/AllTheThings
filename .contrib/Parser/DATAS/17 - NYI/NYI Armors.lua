@@ -557,11 +557,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(63061),	-- Fallback Armor - Plate Wrist
 			}),
 		}),
-		filter(COSMETIC, {
-			expansion(EXPANSION.CATA, 0.3, {
-				i(52488),	-- Jeweler's Sapphire Monocle
-			}),
-		}),
 		filter(SHIRTS, {
 			expansion(EXPANSION.CATA, 0.3, {
 				i(52548),	-- Initiate's Tunic
@@ -747,11 +742,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(97084),	-- Vaultwalker Sabatons
 			}),
 			-- #endif
-		}),
-		filter(COSMETIC, {
-			expansion(EXPANSION.MOP, 0.1, {
-				i(73240),	-- Sedge Hat of the Enlightened
-			}),
 		}),
 		filter(BACK_F, {
 			expansion(EXPANSION.MOP, 0.1, {
@@ -1177,11 +1167,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(107891),	-- 7.0 PH Plate Wristwraps
 			})
 		}),
-		filter(COSMETIC, {
-			expansion(EXPANSION.WOD, 0.1, {
-				i(116399),	-- Emerald Sunglasses
-			}),
-		}),
 		filter(NECK_F, {
 			expansion(EXPANSION.WOD, 0.1, {
 				-- Does Not Load In Game --
@@ -1339,15 +1324,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			expansion(EXPANSION.LEGION, 2.0, {
 				i(147074),	-- Vambraces of Resoulte Justice
-			}),
-		}),
-		filter(COSMETIC, {
-			expansion(EXPANSION.LEGION, 0.3, {
-				i(92894),	-- Art Template Generic Head - Helm_Misc_StarPartyHat_A_01
-				i(81862),	-- Art Template Robe Dress_B_03 - Blue
-				i(133996),	-- Burgy Blackheart's Handsome Hat
-				i(134013),	-- Chef's Hat [Likely the cosmetic effect from when you use the toy]
-				i(134012),	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
 			}),
 		}),
 		filter(TABARDS, {
@@ -1726,15 +1702,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(167134, {["sourceID"] = 103286 }),	-- QA Combat Test Plate Boots
 			}),
 		}),
-		filter(COSMETIC, {
-			expansion(EXPANSION.BFA, 0.1, {
-				i(163922),	-- Kobold Candle Helm
-				i(163923),	-- Kobold Candle Helm
-			}),
-			expansion(EXPANSION.BFA, 1.5, {
-				i(168004),	-- Gift of N'Zoth
-			}),
-		}),
 		filter(NECK_F, {
 			expansion(EXPANSION.BFA, 0.1, {
 				i(153399),	-- Shaleshell Pendant
@@ -2101,23 +2068,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 					["modID"] = 6,
 				}),
 				--]]
-			}),
-		}),
-		filter(COSMETIC, {
-			expansion(EXPANSION.SL, 0.1, {
-				i(182306),	-- Monster Mantle
-			}),
-			expansion(EXPANSION.SL, 1.0, {
-				iensemble(186500),	-- Ensemble: Garb of the Twilight Grove(quest:63596)
-				iensemble(186518),	-- Ensemble: Forsworn Aspirant's Regalia(quest:63600)
-				iensemble(186505),	-- Ensemble: Rogue Necromancer's Vestments(quest:63629)
-				iensemble(186513),	-- Ensemble: Radiant Court Attire(quest:63632)
-				iensemble(186514),	-- Ensemble: Redeemed Inquisitor's Vestments(quest:63636)
-				i(185774),	-- PH Green Head Candle
-				i(186093),	-- Shaded Spectacles
-			}),
-			expansion(EXPANSION.SL, 1.5, {
-				i(187914),	-- Captain Noteo's Unused Eye Patch
 			}),
 		}),
 		n(LEGENDARIES, {
@@ -3096,14 +3046,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			-- 10.2.7
 			expansion(EXPANSION.DF, 2.7, bubbleDown({ ["timeline"] = { CREATED_10_2_7 } }, {
 				i(219904),	-- Romuul's Controllable Shoulderplate
-			})),
-		}),
-		filter(COSMETIC, {
-			-- 10.0.0
-			expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
-				i(198385),	-- Draconian Garden Pick
-				i(198386),	-- Gardener's Tilling Spork
-				i(198342),	-- Tuskarr Expedition Pack
 			})),
 		}),
 		filter(TABARDS, {

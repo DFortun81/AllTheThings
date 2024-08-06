@@ -8,7 +8,34 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			i(6834),	-- Black Tuxedo
 		}),
 	}),
+	expansion(EXPANSION.CATA, {
+		-- 4.0.3
+		expansion(EXPANSION.CATA, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+			i(52488),	-- Jeweler's Sapphire Monocle
+		})),
+	}),
+	expansion(EXPANSION.MOP, {
+		-- 5.0.1
+		expansion(EXPANSION.MOP, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+			i(73240),	-- Sedge Hat of the Enlightened
+		})),
+	}),
+	expansion(EXPANSION.WOD, {
+		-- 6.0.1
+		expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+			i(116399),	-- Emerald Sunglasses
+		})),
+	}),
 	expansion(EXPANSION.LEGION, {
+		-- 7.0.3
+		expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+			i(92894),	-- Art Template Generic Head - Helm_Misc_StarPartyHat_A_01
+			i(81862),	-- Art Template Robe Dress_B_03 - Blue
+			i(133996),	-- Burgy Blackheart's Handsome Hat
+			i(134013),	-- Chef's Hat [Likely the cosmetic effect from when you use the toy]
+			i(134012),	-- X-52 Rocket Helmet [Might be the transmog it applies when you use the toy itself.]
+		})),
+
 		-- 7.2.0
 		expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
 			i(147379),	-- Wooden Toy Axe [H] used to apply the mog
@@ -24,8 +51,37 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 			i(162641),	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			i(162640),	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+			i(163922),	-- Kobold Candle Helm
+			i(163923),	-- Kobold Candle Helm
 			i(162638),	-- Wooden Toy Helm [H] (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			i(162639),	-- Wooden Toy Helm [A] (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+		})),
+
+		-- 8.1.5
+		expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
+			i(168004),	-- Gift of N'Zoth
+		})),
+	}),
+	expansion(EXPANSION.SL, {
+		-- 9.0.1
+		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+			i(182306),	-- Monster Mantle
+		})),
+
+		-- 9.1.0
+		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+			iensemble(186500),	-- Ensemble: Garb of the Twilight Grove (questID 63596)
+			iensemble(186518),	-- Ensemble: Forsworn Aspirant's Regalia (questID 63600)
+			iensemble(186505),	-- Ensemble: Rogue Necromancer's Vestments (questID 63629)
+			iensemble(186513),	-- Ensemble: Radiant Court Attire (questID 63632)
+			iensemble(186514),	-- Ensemble: Redeemed Inquisitor's Vestments (questID 63636)
+			i(185774),	-- PH Green Head Candle
+			i(186093),	-- Shaded Spectacles
+		})),
+
+		-- 9.1.5
+		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
+			i(187914),	-- Captain Noteo's Unused Eye Patch
 		})),
 	}),
 	expansion(EXPANSION.DF, {
@@ -33,10 +89,13 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			i(194318),	-- Book of Ancient Lore
 			i(193069),	-- Climber's Pack
+			i(198385),	-- Draconian Garden Pick
 			i(194329),	-- Elaborate Reliquary Candelabra
+			i(198386),	-- Gardener's Tilling Spork
 			i(194314),	-- Light of the Enlightened
 			i(194331),	-- Pristine Research Journal
 			i(194316),	-- Tome of Forgotten Legends
+			i(198342),	-- Tuskarr Expedition Pack
 			i(191647),	-- Tuskarr Fishing Pole
 			i(199666),	-- Spiked Azure Spaulders
 			i(199667),	-- Spiked Bronze Spaulders
