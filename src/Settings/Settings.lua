@@ -67,6 +67,7 @@ settings.Collectibles = {
 settings.ForceAccountWide = {
 	BattlePets = true,
 	DrakewatcherManuscripts = true,
+	FlightPaths = app.GameBuildVersion >= 110000,
 	Heirlooms = true,
 	Illusions = true,
 	Mounts = true,

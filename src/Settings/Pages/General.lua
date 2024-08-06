@@ -263,7 +263,7 @@ if app.GameBuildVersion >= 40000 then	-- Transmog officially supported with Cata
 	end)
 	checkboxMainOnlyMode:SetATTTooltip(L.MAIN_ONLY_TOOLTIP)
 	checkboxMainOnlyMode:AlignBelow(checkboxTransmog, 1)
-	
+
 	if app.IsClassic then
 		local checkboxQualityFilter = child:CreateCheckBox(L.ONLY_NOT_TRASH,
 		function(self)
@@ -303,7 +303,7 @@ else
 	checkboxOnlyRWP:SetATTTooltip(L.ONLY_RWP_TOOLTIP)
 	checkboxOnlyRWP:AlignAfter(checkboxTransmog)
 	checkboxOnlyRWP:SetScale(0.8);
-	
+
 	local checkboxQualityFilter = child:CreateCheckBox(L.ONLY_NOT_TRASH,
 	function(self)
 		self:SetChecked(settings:Get("Only:NotTrash"))
@@ -415,7 +415,7 @@ child:CreateTrackingCheckbox("DEATHS", "Deaths", true)
 	:AlignAfter(accwideCheckboxDeaths)
 end
 
-accwideCheckboxExploration =
+local accwideCheckboxExploration =
 child:CreateAccountWideCheckbox("EXPLORATION", "Exploration")
 	:AlignBelow(accwideCheckboxDeaths or accwideCheckboxCharacterUnlocks or accwideCheckboxAchievements)
 local explorationCheckbox = child:CreateTrackingCheckbox("EXPLORATION", "Exploration", true)
