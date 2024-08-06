@@ -64,5 +64,5 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	q(83280),	-- Not Sure if related to the Theater or Because I got a Spark of Omens
+	q(83280),	-- Not Sure if related to the Theater or Because I got a Spark of Omens / Fractured Spark of Omens drop/loot
 }));

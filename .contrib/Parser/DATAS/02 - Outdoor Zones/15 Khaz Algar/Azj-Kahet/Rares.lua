@@ -30,10 +30,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(221212),	-- Death Burrower Handguards
 				},
 			}),
+			n(222624, {	-- Deepcrawler Tx'kesh
+				["coord"] = { 64.5, 6.4, AZJ_KAHET },
+				["questID"] = 82077,
+			}),
 			n(216045, {	-- Enduring Gutterface
 				["coord"] = { 58.0, 62.1, AZJ_KAHET },
 				["questID"] = 81707,
 				["g"] = {
+					i(221248),	-- Deep Terror Carver
 					i(221243),	-- Slippers of Delirium (alpha data)
 				},
 			}),
@@ -82,7 +87,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 68.9, 72.2, AZJ_KAHET },
 				["questID"] = 81705,
 				["g"] = {
-					--
+					i(221250),	-- Creeping Lasher Machete
 				},
 			}),
 			n(216052, {	-- Skrimisher Sa'zryk
@@ -110,13 +115,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					--
 				},
 			}),
-			n(216047, {	-- The Failed // The Disgraced (vignette said - failed, target - disgraced)
-				["questID"] = 82290,
-				["coord"] = { 69.4, 93.6, AZJ_KAHET },
-				["g"] = {
-					-- no loot
-				},
-			}),
+			--n(216047, {	-- The Failed // The Disgraced (vignette said - failed, target - disgraced)
+			--	["questID"] = 82290,
+			--	["coord"] = { 69.4, 93.6, AZJ_KAHET },
+			--	["g"] = {
+			--		-- not here anymore?
+			--	},
+			--}),
 			n(216049, {	-- The Oozekhan
 				["questID"] = 82035,
 				["coord"] = { 61.7, 89.4, AZJ_KAHET_LOWER },
@@ -173,6 +178,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
 		q(84073),	-- Extra HQT: Cha'tak
+		q(84081),	-- Extra HQT: Deepcrawler Tx'kesh
 		q(84076),	-- Extra HQT: Enduring Gutterface
 		q(84079),	-- Extra HQT: Harverster Qixt
 		q(84071),	-- Extra HQT: Kaheti Silk Hauler
