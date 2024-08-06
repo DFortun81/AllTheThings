@@ -10,7 +10,24 @@ local i = function(itemID)
 	return item;
 end
 
--- TODO: move more BoA items here, especially if they are 'cost' items or contain BoP items
+-- TODO: move more BoA items here; especially if they are 'cost' items or contain BoP items
+
+-- Tier 4 Tokens
+i(29760);	-- Helm of the Fallen Champion
+i(29761);	-- Helm of the Fallen Defender
+i(29759);	-- Helm of the Fallen Hero
+i(29763);	-- Pauldrons of the Fallen Champion
+i(29764);	-- Pauldrons of the Fallen Defender
+i(29762);	-- Pauldrons of the Fallen Hero
+i(29754);	-- Chestguard of the Fallen 
+i(29753);	-- Chestguard of the Fallen Defender
+i(29755);	-- Chestguard of the Fallen Hero
+i(29757);	-- Gloves of the Fallen Champion
+i(29758);	-- Gloves of the Fallen Defender
+i(29756);	-- Gloves of the Fallen Hero
+i(29766);	-- Leggings of the Fallen Champion
+i(29767);	-- Leggings of the Fallen Defender
+i(29765);	-- Leggings of the Fallen Hero
 
 -- BoA Cost Items
 i(137642);	-- Mark of Honor

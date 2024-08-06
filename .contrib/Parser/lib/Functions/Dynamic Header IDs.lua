@@ -42,6 +42,7 @@ HeaderAssignments = {
 	["Battlefield: Barrens"] = -1000865,
 	["Battlegrounds"] = -1000137,
 	["Black Market Auction House"] = -1000083,
+	["Blackrock Eruption"] = -1000997,
 	["BlizzCon"] = -1000243,
 	["Bonus Objectives"] = -1000005,
 	["Bonus Roll"] = -1000006,
@@ -504,4 +505,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000997;
+NextHeaderID = -1000998;
