@@ -1637,6 +1637,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { REMOVED_3_0_2 },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
+					["groups"] = {
+						objective(1, {	-- Advice from Lady Prestor
+							["provider"] = { "n", 1749 },	-- Lady Katrana Prestor
+						}),
+					},
 				}),
 				q(4186, {	-- The True Masters (4/6)
 					["providers"] = {
