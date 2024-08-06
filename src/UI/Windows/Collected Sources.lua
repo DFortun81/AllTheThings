@@ -5,6 +5,18 @@ local appName, app = ...;
 if C_TransmogCollection then
 local ipairs, tinsert, C_TransmogCollection_GetSourceInfo
 	= ipairs, tinsert, C_TransmogCollection.GetSourceInfo;
+local function UnmarkNestedCollectible(group)
+	if group then
+		if not group.sourceID then
+			group.collectible = false;
+		end
+		if group.g then
+			for i,o in ipairs(group.g) do
+				UnmarkNestedCollectible(o);
+			end
+		end
+	end
+end
 
 -- Implementation
 app:CreateWindow("Collected Sources", {
@@ -31,6 +43,7 @@ app:CreateWindow("Collected Sources", {
 						end);
 						if results and #results > 0 then
 							for i,result in ipairs(results) do
+								UnmarkNestedCollectible(result);
 								tinsert(g, result);
 							end
 							t.OnUpdate = nil;

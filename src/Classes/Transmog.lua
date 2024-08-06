@@ -646,7 +646,25 @@ do
 			app.SaveHarvestSource(group);
 		end
 	end
-
+	local ITEM_FILTERS_WITH_APPEARANCES = {
+		[2]  = true,	-- Cosmetic
+		[3]  = true,	-- Cloaks
+		[20] = true,	-- Daggers
+		[21] = true,	-- One-Handed Axes
+		[22] = true,	-- Two-Handed Axes
+		[23] = true,	-- One-Handed Maces
+		[24] = true,	-- Two-Handed Maces
+		[25] = true,	-- One-Handed Swords
+		[26] = true,	-- Two-Handed Swords
+		[27] = true,	-- Wands
+		[28] = true,	-- Staves
+		[29] = true,	-- Polearms
+		[31] = true,	-- Guns
+		[32] = true,	-- Bows
+		[33] = true,	-- Crossbows
+		[34] = true,	-- Fist Weapons
+	};
+	
 	-- An appearance must be associated with an item since the Item link is displayed in Transmog UI
 	local createItemWithAppearance = app.ExtendClass("Item", "ItemWithAppearance", "sourceID", {
 		collectible = function(t)
@@ -680,7 +698,15 @@ do
 			return rawget(t, "itemID")
 		end,
 	});
-	app.CreateItemSource = app.GameBuildVersion < 50000 and function(sourceID, itemID, t)
+	app.CreateItemSource = app.GameBuildVersion < 50000 and ((C_Seasons and C_Seasons.GetActiveSeason() == 2 and function(sourceID, itemID, t)
+		if t and ((not t.q or t.q < 2) or not (t.f and ITEM_FILTERS_WITH_APPEARANCES[t.f])) then
+			t.sourceID = sourceID;
+			return app.CreateItem(itemID, t);
+		end
+		t = createItemWithAppearance(sourceID, t);
+		t.itemID = itemID;
+		return t;
+	end) or function(sourceID, itemID, t)
 		if t and (not t.q or t.q < 2) then
 			t.sourceID = sourceID;
 			return app.CreateItem(itemID, t);
@@ -688,7 +714,7 @@ do
 		t = createItemWithAppearance(sourceID, t);
 		t.itemID = itemID;
 		return t;
-	end or function(sourceID, itemID, t)
+	end) or function(sourceID, itemID, t)
 		t = createItemWithAppearance(sourceID, t);
 		t.itemID = itemID;
 		return t;
