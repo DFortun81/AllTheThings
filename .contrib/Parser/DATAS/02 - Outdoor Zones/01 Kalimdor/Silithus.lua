@@ -3006,6 +3006,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				})),
 				i(20408, {	-- Twilight Cultist Cowl
+					["ignoreSource"] = true,
 					["timeline"] = { REMOVED_7_1_5 },
 					["crs"] = {
 						11880,	-- Twilight Avenger
@@ -3020,6 +3021,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(20406, {	-- Twilight Cultist Mantle
+					["ignoreSource"] = true,
 					["timeline"] = { REMOVED_7_1_5 },
 					["crs"] = {
 						11880,	-- Twilight Avenger
@@ -3034,6 +3036,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				i(20407, {	-- Twilight Cultist Robe
+					["ignoreSource"] = true,
 					["timeline"] = { REMOVED_7_1_5 },
 					["crs"] = {
 						11880,	-- Twilight Avenger
