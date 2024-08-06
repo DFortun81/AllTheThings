@@ -831,9 +831,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							i(69636), -- Thekal's Claws
 						}),
 						n(52269, {	-- Renataki
-							i(69638, {
+							i(69638, { -- Arlokk's Claws
 								["f"] = FIST_WEAPONS,
-							}), -- Arlokk's Claws
+							}),
 							i(69639), -- Renataki's Soul Slicer
 						}),
 						n(52286, {	-- Wushoolay

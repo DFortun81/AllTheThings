@@ -6272,9 +6272,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_3_0_2, ADDED_4_0_1, REMOVED_7_0_3 },
 					["groups"] = {
 						i(18664),	-- A Treatise on Military Ranks
-						i(15196, {
+						i(15196, {	-- Private's Tabard
 							["races"] = ALLIANCE_ONLY,
-						}),	-- Private's Tabard
+						}),
 						i(18854, {	-- Insignia of the Alliance
 							["classes"] = { WARRIOR },
 						}),
