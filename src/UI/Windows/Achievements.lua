@@ -92,38 +92,36 @@ app:CreateWindow("Achievements", {
 				local categories = {};
 				categories[-1] = data;
 				cacheAchievementData(data, categories, data.g);
-				for i,_ in pairs(app.SearchForFieldContainer("achievementID")) do
-					if not data.achievements[i] then
-						local achievement = app.CreateAchievement(tonumber(i));
-						if not achievement.isStatistic then
-							local sources = {};
-							for j,o in ipairs(_) do
-								if not GetRelativeValue(o, "_hqt") then
-									MergeClone(sources, o);
-									if o.parent then
-										achievement.sourceParent = o.parent;
-										if not o.sourceQuests then
-											local questID = GetRelativeValue(o, "questID");
-											if questID then
+				for i,matches in pairs(app.SearchForFieldContainer("achievementID")) do
+					if not data.achievements[i] and not matches[1].isStatistic then
+						local achievement = (matches[1].isGuild and app.CreateGuildAchievement or app.CreateAchievement)(tonumber(i));
+						local sources = {};
+						for j,o in ipairs(matches) do
+							if not GetRelativeValue(o, "_hqt") then
+								MergeClone(sources, o);
+								if o.parent then
+									achievement.sourceParent = o.parent;
+									if not o.sourceQuests then
+										local questID = GetRelativeValue(o, "questID");
+										if questID then
+											if not achievement.sourceQuests then
+												achievement.sourceQuests = {};
+											end
+											if not contains(achievement.sourceQuests, questID) then
+												tinsert(achievement.sourceQuests, questID);
+											end
+										else
+											local sourceQuests = GetRelativeValue(o, "sourceQuests");
+											if sourceQuests then
 												if not achievement.sourceQuests then
 													achievement.sourceQuests = {};
-												end
-												if not contains(achievement.sourceQuests, questID) then
-													tinsert(achievement.sourceQuests, questID);
-												end
-											else
-												local sourceQuests = GetRelativeValue(o, "sourceQuests");
-												if sourceQuests then
-													if not achievement.sourceQuests then
-														achievement.sourceQuests = {};
-														for k,questID in ipairs(sourceQuests) do
+													for k,questID in ipairs(sourceQuests) do
+														tinsert(achievement.sourceQuests, questID);
+													end
+												else
+													for k,questID in ipairs(sourceQuests) do
+														if not contains(achievement.sourceQuests, questID) then
 															tinsert(achievement.sourceQuests, questID);
-														end
-													else
-														for k,questID in ipairs(sourceQuests) do
-															if not contains(achievement.sourceQuests, questID) then
-																tinsert(achievement.sourceQuests, questID);
-															end
 														end
 													end
 												end
@@ -132,27 +130,27 @@ app:CreateWindow("Achievements", {
 									end
 								end
 							end
-							local count = #sources;
-							if count > 0 then
-								if count == 1 then
-									for key,value in pairs(sources[1]) do
-										achievement[key] = value;
-									end
-								elseif count > 1 then
-									-- Find the most accessible version of the thing.
-									app.Sort(sources, app.SortDefaults.Accessibility);
-									for key,value in pairs(sources[1]) do
-										achievement[key] = value;
-									end
+						end
+						local count = #sources;
+						if count > 0 then
+							if count == 1 then
+								for key,value in pairs(sources[1]) do
+									achievement[key] = value;
 								end
-								data.achievements[i] = achievement;
-								achievement.progress = nil;
-								achievement.total = nil;
-								achievement.g = nil;
-								achievement.parent = getAchievementCategory(categories, achievement.parentCategoryID);
-								if not achievement.u or achievement.u ~= 1 then
-									tinsert(achievement.parent.g, achievement);
+							elseif count > 1 then
+								-- Find the most accessible version of the thing.
+								app.Sort(sources, app.SortDefaults.Accessibility);
+								for key,value in pairs(sources[1]) do
+									achievement[key] = value;
 								end
+							end
+							data.achievements[i] = achievement;
+							achievement.progress = nil;
+							achievement.total = nil;
+							achievement.g = nil;
+							achievement.parent = getAchievementCategory(categories, achievement.parentCategoryID);
+							if not achievement.u or achievement.u ~= 1 then
+								tinsert(achievement.parent.g, achievement);
 							end
 						end
 					end
@@ -164,8 +162,8 @@ app:CreateWindow("Achievements", {
 						if numAchievements and numAchievements > 0 then
 							for i=1,numAchievements,1 do
 								local achievementID, _, _, _, _, _, _, _, _, _, _, isGuildAch, _, _, isStatistic = GetAchievementInfo(categoryID, i);
-								if achievementID and not (isStatistic or isGuildAch) and not data.achievements[achievementID] then
-									local achievement = app.CreateAchievement(achievementID);
+								if achievementID and not isStatistic and not data.achievements[achievementID] then
+									local achievement = (isGuildAch and app.CreateGuildAchievement or app.CreateAchievement)(achievementID);
 									data.achievements[i] = achievement;
 									achievement.parent = getAchievementCategory(categories, achievement.parentCategoryID);
 									achievement.description = "@CRIEVE: This achievement has not been sourced yet.";
