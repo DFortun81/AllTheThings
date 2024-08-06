@@ -4240,6 +4240,134 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 		},
 	}),
+	
+	----------------------------
+	-- UNSORTED QUESTS        --
+	----------------------------
+	-- Tier 0.5 Quests
+	q(84147),	-- An Earnest Proposition
+	q(84150),	-- An Earnest Proposition
+	q(84155),	-- An Earnest Proposition
+	q(84152),	-- An Earnest Proposition
+	q(84149),	-- An Earnest Proposition
+	q(84151),	-- An Earnest Proposition
+	q(84160),	-- An Earnest Proposition
+	q(84154),	-- An Earnest Proposition
+	q(84157),	-- An Earnest Proposition
+	q(84162),	-- An Earnest Proposition
+	q(84148),	-- An Earnest Proposition
+	q(84153),	-- An Earnest Proposition
+	q(84156),	-- An Earnest Proposition
+	q(84158),	-- An Earnest Proposition
+	q(84159),	-- An Earnest Proposition
+	q(84161),	-- An Earnest Proposition
+	q(84179),	-- Anthion's Parting Words
+	q(84182),	-- Anthion's Parting Words
+	q(84181),	-- Anthion's Parting Words
+	q(84192),	-- Anthion's Parting Words
+	q(84189),	-- Anthion's Parting Words
+	q(84190),	-- Anthion's Parting Words
+	q(84186),	-- Anthion's Parting Words
+	q(84180),	-- Anthion's Parting Words
+	q(84194),	-- Anthion's Parting Words
+	q(84187),	-- Anthion's Parting Words
+	q(84183),	-- Anthion's Parting Words
+	q(84184),	-- Anthion's Parting Words
+	q(84193),	-- Anthion's Parting Words
+	q(84185),	-- Anthion's Parting Words
+	q(84191),	-- Anthion's Parting Words
+	q(84188),	-- Anthion's Parting Words
+	q(84163),	-- Just Compensation
+	q(84170),	-- Just Compensation
+	q(84176),	-- Just Compensation
+	q(84164),	-- Just Compensation
+	q(84178),	-- Just Compensation
+	q(84165),	-- Just Compensation
+	q(84166),	-- Just Compensation
+	q(84171),	-- Just Compensation
+	q(84169),	-- Just Compensation
+	q(84172),	-- Just Compensation
+	q(84168),	-- Just Compensation
+	q(84177),	-- Just Compensation
+	q(84167),	-- Just Compensation
+	q(84173),	-- Just Compensation
+	q(84175),	-- Just Compensation
+	q(84174),	-- Just Compensation
+	q(84205),	-- Saving the Best for Last
+	q(84197),	-- Saving the Best for Last
+	q(84195),	-- Saving the Best for Last
+	q(84198),	-- Saving the Best for Last
+	q(84208),	-- Saving the Best for Last
+	q(84200),	-- Saving the Best for Last
+	q(84203),	-- Saving the Best for Last
+	q(84209),	-- Saving the Best for Last
+	q(84199),	-- Saving the Best for Last
+	q(84204),	-- Saving the Best for Last
+	q(84201),	-- Saving the Best for Last
+	q(84206),	-- Saving the Best for Last
+	q(84207),	-- Saving the Best for Last
+	q(84202),	-- Saving the Best for Last
+	q(84210),	-- Saving the Best for Last
+	q(84196),	-- Saving the Best for Last
+	
+	-- Mage Quests
+	
+	
+	-- Priest Quests
+	
+	
+	q(84412),	-- A Diplomatic Mission
+	q(84327),	-- A Diplomatic Mission
+	q(84398),	-- A Study of the Light
+	q(84135),	-- Beach Bot
+	q(84212),	-- Bookin' it Back
+	q(84326),	-- Diplomat Ring
+	q(84411),	-- Diplomat Ring
+	q(84324),	-- Diplomatic Overtures
+	q(84408),	-- Diplomatic Overtures
+	q(84495),	-- Fiery Plate Gauntlets
+	q(84138),	-- Frosty Favors
+	q(84394),	-- Greater Friend of the Library
+	q(84369),	-- Healing the Healer
+	q(84317),	-- Infinite Midnight
+	q(84399),	-- Ka-Boom!
+	q(84124),	-- Legacy of Valor
+	q(84320),	-- Lost Heirloom
+	q(84405),	-- Lost Heirloom
+	q(84396),	-- Magma or Lava?
+	q(84137),	-- Mechanical Romance
+	q(84015),	-- More Greater Moonstones
+	q(84016),	-- More Moondragon Scales
+	q(84014),	-- More Moonroot
+	q(84011),	-- More Star Lotus
+	q(84013),	-- More Starshells
+	q(84012),	-- More Starsilver Ore
+	q(84402),	-- Necromancy 101
+	q(84397),	-- Northern Kalimdor - A Comprehensive Guide
+	q(83192),	-- Otherworldly Treasure
+	q(83189),	-- Otherworldly Treasure
+	q(83191),	-- Otherworldly Treasure
+	q(83190),	-- Otherworldly Treasure
+	q(84525),	-- Otherworldly Treasure
+	q(83188),	-- Otherworldly Treasure
+	q(84211),	-- Poacher's Den
+	q(84146),	-- Red Bag Blues
+	q(84321),	-- Relic of Light
+	q(84406),	-- Relic of Light
+	q(84328),	-- Repairing the Shard
+	q(84413),	-- Repairing the Shard
+	q(84213),	-- Rift Away
+	q(84322),	-- Scarlet Research
+	q(84401),	-- Scourge: Undead Menace or Misunderstood?
+	q(84410),	-- Shrine of Cooperation
+	q(84325),	-- Shrine of Cooperation
+	q(84496),	-- Sweet Serenity
+	q(84329),	-- The Convocation Assembles
+	q(84400),	-- The Knight and the Lady
+	q(84331),	-- The Miracle
+	q(84323),	-- The Prize Within
+	q(84407),	-- The Prize Within
+	q(84395),	-- Undead Potatoes
 }))));
 
 -- Dungeon & Raid Phase Requirements

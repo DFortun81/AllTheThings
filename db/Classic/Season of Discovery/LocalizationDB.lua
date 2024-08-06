@@ -339,6 +339,7 @@ localize(L.HEADER_NAMES, {
 	[-1000987] = "Aeonas: Trust in a Friend",
 	[-1000988] = "Gregory: You Can Trust Me... Probably.",
 	[-1000996] = "Storm Cliffs",
+	[-1000997] = "Blackrock Eruption",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -375,6 +376,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000984] = "Starting at level 50, Paladins can complete a quest chain in Western Plaguelands that will give them a Relic that calls forth their own personal Squire. This Squire can level up by fighting in combat as well as by being healed by the Paladin's spells. (Get into combat and just spam rank 1 Flash of Light while he attacks the mobs.)",
 	[-1000985] = "After receiving your squire, summon him forth using the Relic and then level him up by getting into combat and keeping him alive.",
 	[-1000996] = "The Storm Cliffs is a place in Azshara known for its weather and acts as the home away from home for the blue dragonflight.",
+	[-1000997] = "This event occurs every 2 hours from Midnight and lasts 60 minutes. While this event is active, Daily Quests will be available in Searing Gorge for the Thorium Brotherhood. Traditionally Thorium Brotherhood can be quite a grind to achieve reputation with so this addition of a Daily Quest Hub will be very welcome.\nWhen the event is active, new NPCs will spawn and some environmental changes will occur to the outside area of Searing Gorge.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -517,6 +519,7 @@ localize(L.HEADER_ICONS, {
 	[-1000986] = "Interface/CURSOR/Attack",
 	[-1000987] = "Interface/CURSOR/Speak",
 	[-1000988] = "Interface/CURSOR/Speak",
+	[-1000997] = "237588",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -1666,6 +1669,7 @@ _.ObjectNames = {
 	[457101] = "The Rites of Mak'Gora",
 	[457102] = "Elements for Dummies Volume III: Arcane",
 	[461639] = "Orthas' Hammer",
+	[462233] = "Shimmering Molten Crag",
 	[462236] = "Mysterious Chest",
 	[100000000] = "Archaeologist's Cart",
 	[100000001] = "Unlit Torch",
@@ -2777,6 +2781,7 @@ _.ObjectModels = {
 	[457101] = 198028,
 	[457102] = 198028,
 	[461639] = 203177,
+	[462233] = 219531,
 	[462236] = 219372,
 	[100000001] = 201129,
 }
@@ -3629,6 +3634,7 @@ localize(_.ObjectNames, {
 	[457100] = "Renziks Gedanken zu \"fairem\" Kämpfen",
 	[457101] = "Die Riten von Mak'Gora",
 	[457102] = "Elemente für Dummies Band I: Arkan",
+	[462233] = "Schimmerndes geschmolzenes Gestein",
 	[462236] = "Mysteriöse Truhe",
 	[100000001] = "Nicht angezündete Fackel",
 });
@@ -4422,6 +4428,7 @@ localize(_.ObjectNames, {
 	[441948] = "Santuario del celador",
 	[457095] = "Elementos para torpes, volumen I: Escarcha",
 	[457097] = "Elementos para torpes, volumen II: Fuego",
+	[462233] = "Escoria fundida resplandeciente",
 	[100000001] = "Antorcha apagada",
 });
 end
@@ -5281,6 +5288,7 @@ localize(_.ObjectNames, {
 	[457100] = "Réflexions de Renzik sur les combats « à la loyale »",
 	[457101] = "Les rites de Mak’Gora",
 	[457102] = "Les éléments pour les Nuls, vol. 3 : Arcanes",
+	[462233] = "Roche en fusion chatoyante",
 	[462236] = "Coffre mystérieux",
 	[100000001] = "Torche éteinte",
 });
@@ -6454,6 +6462,7 @@ localize(_.ObjectNames, {
 	[457100] = "\"공정한\" 싸움에 대한 렌지크의 단상",
 	[457101] = "막고라 의례",
 	[457102] = "왕초보도 이해하는 원소 마법 제3권: 비전",
+	[462233] = "일렁이는 용암 암반",
 	[100000001] = "불을 붙이지 않은 횃불",
 });
 end
@@ -7106,6 +7115,7 @@ localize(_.ObjectNames, {
 	[415106] = "Restos Queimados",
 	[415107] = "Restos Queimados",
 	[417072] = "Tábua com Pregos",
+	[417353] = "Fogueira de Acampamento Extinta",
 	[422911] = "Barril Lacrado",
 	[423695] = "Incunábulo da Libertação",
 	[424005] = "Lixo de Bolso",
@@ -7143,6 +7153,7 @@ localize(_.ObjectNames, {
 	[457100] = "Comentários de Renzik sobre a Luta \"Justa\"",
 	[457101] = "Os Ritos do Mak'Gora",
 	[457102] = "Elementos Para Leigos Volume III: Arcano",
+	[462233] = "Rochedo Derretido Cintilante",
 	[100000001] = "Tocha Apagada",
 });
 end
@@ -7952,6 +7963,7 @@ localize(_.ObjectNames, {
 	[422911] = "Запечатанная бочка",
 	[422919] = "Початый тенегорнский бочонок",
 	[423569] = "Потерянный мешочек",
+	[423695] = "Манускрипт избавления",
 	[423841] = "Обледенелые останки",
 	[424005] = "Карманный мусор",
 	[424006] = "Наскоро завернутая сумка",
@@ -7961,9 +7973,19 @@ localize(_.ObjectNames, {
 	[424075] = "Квадрангуляционный маяк 002",
 	[439627] = "Сон-корень",
 	[439628] = "Жила ложного золота",
+	[439762] = "Звездный лотос",
+	[439778] = "Жила звездного серебра",
+	[439810] = "Лунный корень",
+	[439815] = "Отложение большого лунного камня",
 	[441124] = "Усиленное Сном яйцо дракона",
 	[441128] = "Вибрирующий ящик",
 	[441129] = "Азшарское пророчество",
+	[441133] = "Усиленное звездами яйцо дракона",
+	[441140] = "Гудящая коробка",
+	[441141] = "Жемчужина Сна",
+	[441310] = "Лунное яйцо дракона",
+	[441312] = "Записки безумного хранителя",
+	[441314] = "Бессвязные записи гарпии",
 	[441848] = "Маленькая яма",
 	[441946] = "Святилище луны",
 	[441947] = "Святилище зверя",
@@ -7979,6 +8001,7 @@ localize(_.ObjectNames, {
 	[457098] = "Душа кошки: руководство по современному друидизму",
 	[457099] = "Руководство Зайрина по выдерживанию тумаков",
 	[457100] = "Мысли Рензика о \"справедливых\" поединках",
+	[462233] = "Сверкающая расплавленная скала",
 	[100000001] = "Незажженный факел",
 });
 end
@@ -8656,6 +8679,7 @@ localize(_.ObjectNames, {
 	[441124] = "梦触龙蛋",
 	[441128] = "震动的箱子",
 	[441848] = "小地洞",
+	[441946] = "月亮神龛",
 	[441947] = "野兽神龛",
 	[441948] = "守护神龛",
 	[455812] = "侍从库斯伯特之剑",
@@ -8672,6 +8696,7 @@ localize(_.ObjectNames, {
 	[457100] = "《雷吉克的“公平”对决总结》",
 	[457101] = "《荣耀决斗仪式》",
 	[457102] = "《元素奥义傻瓜入门第III卷：奥术》",
+	[462233] = "闪光的熔火岩块",
 	[100000001] = "未点燃的火把",
 });
 end
