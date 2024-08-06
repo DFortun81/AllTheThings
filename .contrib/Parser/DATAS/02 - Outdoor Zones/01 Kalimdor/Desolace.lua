@@ -1647,6 +1647,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1384, {	-- Raid on the Kolkar
 					["qg"] = 5397,	-- Uthek the Wise
+					["sourceQuest"] = 1368,	-- Gelkis Alliance
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1971,10 +1972,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(1370, {	-- Stealing Supplies
 					["qg"] = 5397,	-- Uthek the Wise
-					["sourceQuests"] = {
-						1368,	-- Gelkis Alliance
-						1384,	-- Raid on the Kolkar
-					},
+					["sourceQuest"] = 1384,	-- Raid on the Kolkar
 					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
