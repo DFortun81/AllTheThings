@@ -1855,6 +1855,7 @@ function app:GetDataCache()
 			tinsert(g, app.CreateNPC(app.HeaderConstants.HOLIDAYS, {
 				description = "These events occur at consistent dates around the year based on and themed around real world holiday events.",
 				g = app.Categories.Holidays,
+				-- SortType = "EventStart", -- why not use this?
 				OnUpdate = function(t)
 					local now = C_DateAndTime_GetServerTimeLocal();
 					app.Sort(t.g, function(a, b)
@@ -1887,7 +1888,7 @@ function app:GetDataCache()
 		
 		-- Character
 		if app.Categories.Character then
-			db = {};
+			local db = {};
 			db.g = app.Categories.Character;
 			db.text = CHARACTER;
 			db.name = db.text;
