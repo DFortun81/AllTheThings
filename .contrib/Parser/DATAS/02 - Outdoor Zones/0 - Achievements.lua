@@ -53,10 +53,10 @@ root(ROOTS.Zones, {
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(32, {		-- 2000 Quests Completed
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_3_0_2 },
 		}),
 		ach(978, {		-- 3000 Quests Completed
-			["timeline"] = { ADDED_4_0_1 },
+			["timeline"] = { ADDED_3_0_2 },
 			["g"] = {
 				title(42),		-- <Name> the Seeker
 			},

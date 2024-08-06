@@ -67,18 +67,12 @@ root("Achievements", {
 			["timeline"] = { ADDED_3_0_2 },
 			["rank"] = 2000,
 		}),
-		applyclassicphase(WRATH_PHASE_ONE, ach(978, {	-- 3000 Quests Completed
+		ach(978, {		-- 3000 Quests Completed
 			["timeline"] = { ADDED_3_0_2 },
-			["rank"] = 3000,
-			["groups"] = {
-				-- #if AFTER CATA
-				title(81),	-- The Seeker
-				-- #else
-				title(42),	-- The Seeker
-				-- #endif
+			["g"] = {
+				title(42),		-- <Name> the Seeker
 			},
-		})),
-
+		}),
 		ach(31, {	-- A Simple Re-Quest
 			["timeline"] = { ADDED_3_0_2 },
 		}),
