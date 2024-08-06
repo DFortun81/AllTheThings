@@ -2939,7 +2939,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(7048),	-- Azure Silk Hood
 			i(10024),	-- Black Mageweave Headband
 			i(10041),	-- Dreamweave Circlet
-			i(4322),	-- Enchanter's Cowl
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_TWO, i(217257, {	-- Enchanter's Cowl
+				["timeline"] = { "added 1.15.1" },
+			})),
+			-- #endif
+			i(4322, {	-- Enchanter's Cowl
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.1" },
+				-- #endif
+			}),
 			i(14111),	-- Felcloth Hood
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(215111, {	-- Gneuro-Linked Arcano-Filament Monocle

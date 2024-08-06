@@ -1101,8 +1101,18 @@ profession(TAILORING, {
 					["name"] = "Dreamweave Circlet",
 					["recipeID"] = 12092
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_TWO, {
+					["name"] = "Enchanter's Cowl",
+					["timeline"] = { "added 1.15.1" },
+					["recipeID"] = 439102
+				}),
+				-- #endif
 				{
 					["name"] = "Enchanter's Cowl",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.1" },
+					-- #endif
 					["recipeID"] = 3857
 				},
 				{

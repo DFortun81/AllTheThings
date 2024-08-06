@@ -120,6 +120,7 @@ i("Robe of the Void", 14514, 18458);
 i("Mooncloth", 14526, 18560);
 i("Bright Yellow Shirt", 14627, 3869);
 i("Enchanter's Cowl", 14630, 3857);
+i("Enchanter's Cowl", 217258, 439102);
 i("Flarecore Mantle", 17017, 20848);
 i("Flarecore Gloves", 17018, 20849);
 i("Flarecore Wraps", 18265, 22759);

@@ -1089,6 +1089,7 @@ for spellID,learnedAt in pairs({
 	[8762] = 160,	-- Silk Headband
 	[8483] = 160,	-- White Swashbuckler's Shirt
 	[3857] = 165,	-- Enchanter's Cowl
+	[439102] = 165,	-- Enchanter's Cowl
 	[8784] = 165,	-- Green Silk Armor
 	[8764] = 170,	-- Earthen Vest
 	[3871] = 170,	-- Formal White Shirt
