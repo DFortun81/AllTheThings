@@ -223,12 +223,15 @@ root(ROOTS.PVP, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CLASSIC, {
 				-- Back
 				i(16342, {	-- Sergeant's Cape
 					["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+					["races"] = ALLIANCE_ONLY,
 				}),
 				i(18440, {	-- Sergeant's Cape
 					["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+					["races"] = ALLIANCE_ONLY,
 				}),
 				i(18441, {	-- Sergeant's Cape
 					["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
+					["races"] = ALLIANCE_ONLY,
 				}),
 				-- Chest
 				i(16466, {	-- Field Marshal's Chain Breastplate
