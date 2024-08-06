@@ -748,6 +748,11 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			}),
 			-- #endif
 		}),
+		filter(COSMETIC, {
+			expansion(EXPANSION.MOP, 0.1, {
+				i(73240),	-- Sedge Hat of the Enlightened
+			}),
+		}),
 		filter(BACK_F, {
 			expansion(EXPANSION.MOP, 0.1, {
 				i(80965),	-- Scavenger's Cape
