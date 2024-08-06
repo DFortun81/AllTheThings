@@ -1203,7 +1203,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = 40,
 				}),
 				q(4451, {	-- The Key to Freedom
-					["provider"] = { "i", 11818 },	-- Grimesilt Outhouse Key
+					["providers"] = {
+						{ "i", 11818 },	-- Grimesilt Outhouse Key
+						{ "o", 173265 },	-- Wooden Outhouse
+					},
 					["timeline"] = { REMOVED_4_0_3 },
 					["crs"] = {
 						15692,	-- Dark Iron Kidnapper

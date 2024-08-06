@@ -1,8 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-local REMOVED_WITH_CATA = { ADDED_1_0_1, REMOVED_4_0_3 };
-local REMOVED_WITH_WRATH = { ADDED_1_0_1, REMOVED_3_0_8 };
 -- #if SEASON_OF_DISCOVERY
 local TOKENS = {
 	INCANDESCENT = {	-- Priest, Mage, Warlock
@@ -69,8 +67,34 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			n(QUESTS, {
-				q(7486, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- A Hero's Reward
-					["qg"] = 13278,	-- Duke Hydraxis
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84545, bubbleDown({ ["timeline"] = { "added 1.15.3" } }, {	-- A Hero's Reward
+					["providers"] = {
+						{ "n",  13278 },	-- Duke Hydraxis
+						{ "o", 179551 },	-- Hydraxis' Coffer
+					},
+					["sourceQuest"] = 6824,	-- Hands of the Enemy
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["lvl"] = 55,
+					["groups"] = {
+						i(227455),	-- Ocean's Breeze
+						i(227454),	-- Tidal Loop
+					},
+				}))),
+				-- #endif
+				q(7486, bubbleDown({	-- A Hero's Reward
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						ADDED_1_0_1, REMOVED_3_0_8,
+						-- #endif
+					},
+				}, {
+					["providers"] = {
+						{ "n",  13278 },	-- Duke Hydraxis
+						{ "o", 179551 },	-- Hydraxis' Coffer
+					},
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["lvl"] = 55,
@@ -79,14 +103,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(18398),	-- Tidal Loop
 					},
 				})),
-				q(6823, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Agent of Hydraxis
+				q(6823, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Agent of Hydraxis
 					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6822,	-- The Molten Core
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
 					["lvl"] = 55,
 				})),
-				q(7633, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- An Introduction
+				q(7633, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- An Introduction
 					["qg"] = 14524,	-- Vartrus the Ancient
 					["sourceQuest"] = 7632,	-- The Ancient Leaf
 					["coord"] = { 47, 24.48, FELWOOD },
@@ -135,7 +159,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 					},
 				}),
-				q(6821, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Eye of the Emberseer
+				q(6821, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Eye of the Emberseer
 					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuests"] = {
 						6804,	-- Poisoned Water
@@ -158,7 +182,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				q(6824, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Hands of the Enemy
+				q(6824, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Hands of the Enemy
 					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6823,	-- Agent of Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
@@ -184,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				q(6804, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- Poisoned Water
+				q(6804, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Poisoned Water
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -226,7 +250,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
 				})),
-				q(6805, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- Stormers and Rumblers
+				q(6805, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- Stormers and Rumblers
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = { SILITHUS },
@@ -240,7 +264,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				q(7632, bubbleDown({ ["timeline"] = REMOVED_WITH_CATA }, {	-- The Ancient Leaf
+				q(7632, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- The Ancient Leaf
 					["qg"] = 14524,	-- Vartrus the Ancient
 					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					["coord"] = { 47, 24.48, FELWOOD },
@@ -250,7 +274,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					["lvl"] = 60,
 				})),
-				q(6822, bubbleDown({ ["timeline"] = REMOVED_WITH_WRATH }, {	-- The Molten Core
+				q(6822, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- The Molten Core
 					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6821,	-- Eye of the Emberseer
 					["coord"] = { 79.2, 73.6, AZSHARA },
@@ -335,13 +359,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
 					["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
-					["timeline"] = REMOVED_WITH_WRATH,
+					["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
 				}),
 				applyclassicphase(PHASE_THREE, i(22754, {	-- Eternal Quintessence
 					["description"] = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
 					["minReputation"] = { 749, REVERED },	-- Hydraxian Waterlords, Revered.
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
-					["timeline"] = REMOVED_WITH_WRATH,
+					["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
 				})),
 			}),
 			n(ZONE_DROPS, {
@@ -349,7 +373,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if BEFORE CATA
 					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
 					-- #endif
-					["timeline"] = REMOVED_WITH_CATA,
+					["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
 				})),
 				i(17010),	-- Fiery Core
 				i(17011),	-- Lava Core
@@ -544,7 +568,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(16665, {	-- Tome of Tranquilizing Shot
 						["classes"] = { HUNTER },
-						["timeline"] = REMOVED_WITH_WRATH,
+						["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
 						-- #if BEFORE WRATH
 						["recipeID"] = 19801,	-- Tranquilizing Shot
 						-- #endif
@@ -771,12 +795,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if NOT SEASON_OF_DISCOVERY
 					i(18703, {	-- Ancient Petrified Leaf
 						["classes"] = { HUNTER },
-						["timeline"] = REMOVED_WITH_CATA,
+						["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
 						["lvl"] = 60,
 					}),
 					i(18646, {	-- The Eye of Divinity
 						["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
-						["timeline"] = REMOVED_WITH_CATA,
+						["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
 						["classes"] = { PRIEST },
 					}),
 					-- #endif
@@ -1136,7 +1160,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228243),	-- Ring of Spell Power
 					i(16665, {	-- Tome of Tranquilizing Shot
 						["classes"] = { HUNTER },
-						["timeline"] = REMOVED_WITH_WRATH,
+						["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
 						-- #if BEFORE WRATH
 						["recipeID"] = 19801,	-- Tranquilizing Shot
 						-- #endif
@@ -1342,12 +1366,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						i(18703, {	-- Ancient Petrified Leaf
 							["classes"] = { HUNTER },
-							["timeline"] = REMOVED_WITH_CATA,
+							["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
 							["lvl"] = 60,
 						}),
 						i(18646, {	-- The Eye of Divinity
 							["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
-							["timeline"] = REMOVED_WITH_CATA,
+							["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 },
 							["classes"] = { PRIEST },
 						}),
 						i(17203),	-- Sulfuron Ingot
