@@ -980,6 +980,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 8436,	-- Zamael Lunthistle
 					["sourceQuest"] = 3377,	-- Prayer to Elune (1/2)
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["groups"] = {
