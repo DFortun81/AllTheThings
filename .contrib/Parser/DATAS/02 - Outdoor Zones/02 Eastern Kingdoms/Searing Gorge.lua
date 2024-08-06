@@ -1069,7 +1069,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(3372, {	-- Release Them
-					["qg"] = 8417,	-- Dying Archaeologist
+					["providers"] = {
+						{ "o", 148498 },	-- Altar of Suntara
+						{ "n",   8417 },	-- Dying Archaeologist
+					},
 					["sourceQuest"] = 3371,	-- Dwarven Justice
 					["coord"] = { 41.2, 25.6, SEARING_GORGE },
 					["timeline"] = { REMOVED_4_0_3 },
