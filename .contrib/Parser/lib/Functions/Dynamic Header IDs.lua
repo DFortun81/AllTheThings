@@ -407,6 +407,7 @@ HeaderAssignments = {
 	["The Sealing of the Halls of Valor"] = -1000322,
 	["The Severed Threads"] = -1000958,
 	["The Silithyst Must Flow"] = -1000238,
+	["The Tainted Scar"] = -1000998,
 	["The Theater Troupe"] = -1000965,
 	["The Troll Incursion"] = -1000870,
 	["The Upper Necropolis"] = -1000053,
@@ -505,4 +506,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000998;
+NextHeaderID = -1000999;

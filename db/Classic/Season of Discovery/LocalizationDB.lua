@@ -340,6 +340,7 @@ localize(L.HEADER_NAMES, {
 	[-1000988] = "Gregory: You Can Trust Me... Probably.",
 	[-1000996] = "Storm Cliffs",
 	[-1000997] = "Blackrock Eruption",
+	[-1000998] = "The Tainted Scar",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -377,6 +378,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000985] = "After receiving your squire, summon him forth using the Relic and then level him up by getting into combat and keeping him alive.",
 	[-1000996] = "The Storm Cliffs is a place in Azshara known for its weather and acts as the home away from home for the blue dragonflight.",
 	[-1000997] = "This event occurs every 2 hours from Midnight and lasts 60 minutes. While this event is active, Daily Quests will be available in Searing Gorge for the Thorium Brotherhood. Traditionally Thorium Brotherhood can be quite a grind to achieve reputation with so this addition of a Daily Quest Hub will be very welcome.\nWhen the event is active, new NPCs will spawn and some environmental changes will occur to the outside area of Searing Gorge.",
+	[-1000998] = "The Tainted Scar is a small region in the western Blasted Lands, corrupted for years by the energies of the Dark Portal. Following the Third War, it became the demonic domain of Lord Kazzak and his army until the Invasion of Outland.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -2828,6 +2830,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "Kopfgeld",
 	[-1000970] = "Stufe 3",
 	[-1000996] = "Sturmklippen",
+	[-1000998] = "Die Faulende Narbe",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -3673,6 +3676,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "Prima",
 	[-1000970] = "Nivel 3",
 	[-1000996] = "Acantilados Tormentosos",
+	[-1000998] = "Escara Impía",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
@@ -4482,6 +4486,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "Prime",
 	[-1000970] = "Étage 3",
 	[-1000996] = "Falaises de la Tempête",
+	[-1000998] = "La Balafre impure",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -5326,6 +5331,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "Premio",
 	[-1000970] = "Livello 3",
 	[-1000996] = "Storm Cliffs",
+	[-1000998] = "The Tainted Scar",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000273] = "Questa stagione porta un limite di livello iniziale di 25 e un nuovo gioco finale di livello 25, incluso un raid di Blackfathom Deeps per 10 giocatori con nuove meccaniche, boss nuovi e reinventati per sfidare le tattiche e le strategie dei giocatori e nuove ricompense.",
@@ -5762,6 +5768,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "하사품",
 	[-1000970] = "층 3",
 	[-1000996] = "폭풍 절벽",
+	[-1000998] = "타락의 흉터",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -6504,6 +6511,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "Recompensa",
 	[-1000970] = "Nível 3",
 	[-1000996] = "Penhascos Tempestuosos",
+	[-1000998] = "Rasgo Infecto",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -7221,6 +7229,7 @@ localize(L.HEADER_NAMES, {
 	[-1000872] = "Пиратская буря",
 	[-1000970] = "Уровень 3",
 	[-1000996] = "Штормовые утесы",
+	[-1000998] = "Гниющий Шрам",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -8065,6 +8074,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "赏金任务",
 	[-1000970] = "等级 3",
 	[-1000996] = "风暴悬崖",
+	[-1000998] = "腐烂之痕",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

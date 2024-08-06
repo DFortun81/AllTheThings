@@ -144,6 +144,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 				},
 			}))),
+			-- #if NOT SEASON_OF_DISCOVERY
 			applyclassicphase(PHASE_TWO, bubbleDown({ ["timeline"] = { REMOVED_2_0_1 } }, n(12397, {	-- Lord Kazzak / Highlord Kruul
 				["coord"] = { 36.6, 75.8, BLASTED_LANDS },
 				["crs"] = { 18338 },	-- Highlord Kruul
@@ -164,6 +165,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(18543),	-- Ring of Entropy
 				},
 			}))),
+			-- #endif
 		},
 	}),
 }));
