@@ -404,7 +404,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(78466),	-- Chef Dinaire - Shadows of Flavor - Activate, after flare up lesser keyflame @ 64.4, 30.9
 	q(78458),	-- Seraphine Seedheart - Harvest Havoc - Activator, after flare up lesser keyflame @ 63.6, 33.6
 	--
-	q(83281),	-- Completed Spreading The Light But I also got a Spark of Omens?!
+	q(83281),	-- Completed Spreading The Light But I also got a Spark of Omens? / Fractured Spark of Omens
 	--
 	q(84052),	-- Extra HQT: Crazed Cabbage Smacker
 

@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					{ 65.5, 81.9, AZJ_KAHET_LOWER},	-- End
 				},
 				["g"] = {
-					-- no loot
+					i(223941),	-- Nerubian Cultivator's Girdle
 				},
 			}),
 			n(216048, {	-- Jix'ak the Crazed
@@ -115,13 +115,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					--
 				},
 			}),
-			--n(216047, {	-- The Failed // The Disgraced (vignette said - failed, target - disgraced)
-			--	["questID"] = 82290,
-			--	["coord"] = { 69.4, 93.6, AZJ_KAHET },
-			--	["g"] = {
-			--		-- not here anymore?
-			--	},
-			--}),
+			n(216047, {	-- The One Left
+				["questID"] = 82290,
+				["coord"] = { 63.5, 95.2, AZJ_KAHET },
+				["g"] = {
+					-- 
+				},
+			}),
 			n(216049, {	-- The Oozekhan
 				["questID"] = 82035,
 				["coord"] = { 61.7, 89.4, AZJ_KAHET_LOWER },
@@ -187,7 +187,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84074),	-- Extra HQT: Monstrous Lasharoth
 		q(84082),	-- Extra HQT: Skrimisher Sa'zryk
 		q(84069),	-- Extra HQT: The Groundskeeper
-		q(84077),	-- Extra HQT: The Oozekhan
+		q(84078),	-- Extra HQT: The Oozekhan
 		q(84080),	-- Extra HQT: Umbraclaw Matra
 		q(84072),	-- Extra HQT: XT-Minecrusher 8700
 	}),

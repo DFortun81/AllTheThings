@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			o(446404, {	-- Memory Cache
 				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 5x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
 				["coord"] = { 62.7, 88.7, AZJ_KAHET_LOWER },
-				["questID"] = 82723,
+				["questID"] = 82520,	-- previous 82723?
 				["g"] = {
 					i(223870),	-- Cache Key
 					--
@@ -154,6 +154,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					{ 78.0, 49.3, NERUBAR },
 					{ 76.3, 43.4, AZJ_KAHET },
 					{ 73.5, 45.2, AZJ_KAHET },
+					--previous coords could be false
+					{ 40.4, 43.5, NERUBAR },
 				},
 				--["questID"] = xx,	-- missing qtID
 				["g"] = {
@@ -180,7 +182,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			o(444797, {	-- Threadspun Cache
 				["coords"] = {
 					{ 36.9, 41.7, AZJ_KAHET },
-					{ 51.1, 54.5, AZJ_KAHET },
+					{ 50.1, 50.7, AZJ_KAHET },
 					{ 64.8, 29.9, AZJ_KAHET },
 				},
 				["g"] = {

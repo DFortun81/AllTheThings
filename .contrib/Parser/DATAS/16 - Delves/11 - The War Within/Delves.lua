@@ -201,6 +201,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 47.4, 44.4, DORNOGAL },
 		["weekly"] = true,
 	}, {
+		q(82746),	-- Delves: Breaking Tough to Loot Stuff
 		q(82707),	-- Delves: Earthen Defense
 		q(82706),	-- Delves: Khaz Algar Research
 		q(82711, {	-- Delves: Lost and Found
@@ -1180,4 +1181,5 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(82772),	-- First Time per day? (Got Unflagged at reset)
+	q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
 });

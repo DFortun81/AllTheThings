@@ -1934,6 +1934,7 @@ i(220268);	-- Spiraled Horn
 i(226692);	-- Splintered Stone
 i(213262);	-- Stained Glass Fragment
 i(225800);	-- Stone Singing Bowl
+i(220294);	-- Strangely Glowing Filament
 i(220363);	-- Straw-Stuffed Hat
 i(220292);	-- Stretched Wing
 i(228507);	-- Swarmite Eggsac

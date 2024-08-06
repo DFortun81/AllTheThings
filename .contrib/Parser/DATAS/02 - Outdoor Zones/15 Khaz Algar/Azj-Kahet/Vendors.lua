@@ -317,6 +317,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					}),
 				},
 			}),
+			n(217253, {	-- Ves'trak <Rak-Ush Operations>
+				-- not sure if he always was here or locked behind some quest in area
+				["coord"] = { 74.7, 81.2, AZJ_KAHET },
+				["g"] = {
+					i(221486, {	-- Baleclaw (PET!)
+						["cost"] = {{"c", KEJ, 2250}},
+					}),
+				},
+			}),
 			n(224337, {	-- Zara'azj the Magnificent <Alchemy Supplies>
 				["coord"] = { 55.6, 47.5, NERUBAR_LOWER },
 				["g"] = {

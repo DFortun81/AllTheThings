@@ -321,6 +321,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 				}),
 			}),
+			n(QUESTS, {
+				q(82296, {	-- The Power of Creation
+					["provider"] = { "n", 223533 },	-- Custodian Khubon
+					["coord"] = { 54.6, 41.3, DORNOGAL },
+					--["timeline"] = { REMOVED_11_1_0 },	-- unsure
+				}),
+				q(82651, {	-- Omens Unified
+					["sourceQuests"] = { 82296 },	-- The Power of Creation
+					["provider"] = { "n", 223533 },	-- Custodian Khubon
+					["coord"] = { 54.6, 41.3, DORNOGAL },
+					["timeline"] = { REMOVED_11_1_0 },
+					["g"] = {
+						i(211297),	-- Fractured Spark of Omens
+					},
+				}),
+			}),
 		},
 	}),
 })));

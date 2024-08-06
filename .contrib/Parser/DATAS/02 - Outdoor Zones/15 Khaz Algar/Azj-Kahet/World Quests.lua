@@ -17,12 +17,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 61.3, 37.0, NERUBAR_LOWER },
 				})),
 				q(82526, {	-- Bug Them
-					-- The Vizier
 					["coord"] = { 71.1, 31.6, NERUBAR },
 				}),
 				q(82364, {	-- Documenting Discordance
-					-- The Vizier
 					["coord"] = { 60.6, 75.7, AZJ_KAHET },
+				}),
+				q(82533, {	-- Dye! Dye Dye!
+					["coord"] = { 73.2, 41.2, AZJ_KAHET },
 				}),
 				q(82481, {	-- Enforcer Extermination
 					["coord"] = { 56.1, 58.4, AZJ_KAHET },
@@ -31,11 +32,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 62.5, 72.0, NERUBAR },
 				}),
 				q(82524, {	-- Exterminate
-					-- The Weaver (TODO: notes for future if Blizzard decide to fix WQs in zone to be only for one that you selected)
 					["coord"] = { 63.1, 19.7, AZJ_KAHET },
 				}),
 				q(79722, {	-- Gutter Work
-					-- The Vizier
 					["coord"] = { 57.5, 71.1, AZJ_KAHET },
 					["g"] = {
 						i(224102),	-- Chunked Kobyss Innards (QI!)
@@ -45,8 +44,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					},
 				}),
 				q(82468, {	-- Let Them Win
-					-- The Weaver
 					["coord"] = { 30.4, 44.1, AZJ_KAHET },
+				}),
+				q(82363, {	-- Opposing Forces
+					["coord"] = { 42.2, 23.4, AZJ_KAHET },
 				}),
 				q(82521, {	-- Pawns of Dark Masters
 					["coord"] = { 61.6, 75.0, AZJ_KAHET },
@@ -57,7 +58,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				}),
 				q(81825, {	-- Skyrider Racing - Maddening Deep Dip
 					-- normal - 80278 / advanced - 80284 / reverse - 80290
-					["coord"] = { 76.6, 81.0, AZJ_KAHET },
+					["coord"] = { 77.9, 79.6, AZJ_KAHET },
 				}),
 				q(81829, {	-- Skyrider Racing - Pit Plunge
 					-- normal - 80281 / advanced - 80287 / reverse - 80293
@@ -72,14 +73,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 53.7, 41.2, AZJ_KAHET },
 				}),
 				q(79960, {	-- Taking It To Go
-					-- The General
 					["coord"] = { 75.0, 77.4, AZJ_KAHET },
 					["g"] = {
 						i(216664),	-- Threading Lure (QI!)
 					},
 				}),
 				q(78995, {	-- Truffle Shuffle
-					-- The General
 					["coord"] = { 73.1, 71.4, AZJ_KAHET },
 				}),
 				q(82332, {	-- Unassuming Delivery Spider
@@ -96,39 +95,3 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	-- figure out stuff, probably gonna need same stuff as for wrathion
-	--move into separate file
-	q(80592, {	-- Pact with Threads Attached (now turn in quest, instead of wq)
-		["provider"] = { "n", 220867 },	-- Y'tekhi
-		["coord"] = { 57.7, 47.0, AZJ_KAHET },
-	}),
-	q(80545),	-- picked up 'The General' 0/2500
-	q(80671, {	-- Blade of the General
-		["isWeekly"] = true,
-		["provider"] = { "n", 220867 },	-- Y'tekhi // also pop up after you choose 1 of 3
-		["coord"] = { 57.7, 46.9, AZJ_KAHET },
-		["g"] = {
-			i(225572),	-- The General's War Chest
-		},
-	}),
-	q(80546),	-- picked up 'The Vizier' 0/2500
-	q(80672, {	-- Hand of the Vizier
-		["isWeekly"] = true,
-		["provider"] = { "n", 220867 },	-- Y'tekhi // also pop up after you choose 1 of 3
-		["coord"] = { 57.7, 46.9, AZJ_KAHET },
-		["g"] = {
-			i(225573),	-- The Vizier's Capital
-		},
-	}),
-	q(80544),	-- picked up 'The Weaver' 0/2500
-	q(80670, {	-- Eyes of the Weaver
-		["isWeekly"] = true,
-		["provider"] = { "n", 220867 },	-- Y'tekhi // also pop up after you choose 1 of 3
-		["coord"] = { 57.7, 46.9, AZJ_KAHET },
-		["g"] = {
-			i(225571),	-- The Weaver's Gratuity
-		},
-	}),
-});

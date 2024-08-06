@@ -1434,7 +1434,6 @@ root(ROOTS.Unsorted, {
 				i(220285),	-- Moldy Rucksack
 				i(220286),	-- Tarnished Medallion
 				i(220293),	-- Very Soft Wool
-				i(220294),	-- Strangely Glowing Filament
 				i(220298),	-- Melted Candle Stump
 				i(220300),	-- Translucent Wing
 				i(220301),	-- Crystallized Honey
@@ -1607,7 +1606,6 @@ root(ROOTS.Unsorted, {
 				i(227328),	-- Wax Fondue
 				i(227329),	-- Still-Twitching Gumbo
 				i(223870),	-- Cache Key
-				i(225654),	-- Imperfect Ascendancy Serum
 				i(227668),	-- Delver's Bounty
 				i(227677),	-- Satchel of Enchanting Surplus
 				i(227678),	-- Satchel of Engineering Surplus
@@ -1719,7 +1717,6 @@ root(ROOTS.Unsorted, {
 				i(213425),	-- Shredded Reins
 				i(213538),	-- Wood-Worm Tonic \\ Wood-Worm Liqueur \\ Necrotic Dart
 				i(213557),	-- Lost Journal Tablet
-				i(215159),	-- Pillaged Trophy
 
 				i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 				i(216682),	-- The Vizier's Invitation
@@ -1727,7 +1724,6 @@ root(ROOTS.Unsorted, {
 				i(216684),	-- Earthen Sword
 				i(216685),	-- Earthen Shield
 				i(216686),	-- Earthen Axe
-				i(216688),	-- High Hollows Key
 				i(216689),	-- Albert's Head
 				i(217142),	-- Earthen Limb
 				i(217310),	-- The Foremans' First Scroll
@@ -1758,7 +1754,6 @@ root(ROOTS.Unsorted, {
 				i(219385),	-- Antiparalytic Serum
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
-				i(219443),	-- Paralytic Draught
 				i(219469),	-- Fog Beast Tracker
 				i(219522),	-- Radiant Fuel Crystal
 				i(219804),	-- [DNT] Antiparalytic Serum
@@ -1831,8 +1826,6 @@ root(ROOTS.Unsorted, {
 				i(225336),	-- A Lost Shoe
 
 				i(225339),	-- Chicken Eggs
-				i(225635),	-- Zev'kall's Attrition Log
-				i(225637),	-- Poisoned Dagger
 				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
 				i(225738),	-- Kaheti Warblade
 				i(225927),	-- Emerald Necklace
@@ -2092,7 +2085,6 @@ root(ROOTS.Unsorted, {
 				i(223938),	-- Marsh Hopper's Spaulders
 				i(223939),	-- Esteemed Nerubian's Mantle
 				i(223940),	-- Deranged Fungarian's Epaulets
-				i(223941),	-- Nerubian Cultivator's Girdle
 				i(223943),	-- Cord of the Earthbreaker
 				i(223944),	-- [PH] Infested Fungal Wristwraps
 				i(223945),	-- [PH] Perchfather's Cuffs
@@ -2160,7 +2152,6 @@ root(ROOTS.Unsorted, {
 				i(228439),	-- Mitts of Menial Tasks
 				i(228440),	-- Chitin-Laced Shoulderguards
 				i(228441),	-- Overseer's Oversized Clasp
-				i(228442),	-- Rak-Ush Rancher's Waders
 				i(228445),	-- Deceased Nerubian's Slippers
 				i(228446),	-- Albert's Last Gloves
 				i(228447),	-- Spider-Fang Epaulets

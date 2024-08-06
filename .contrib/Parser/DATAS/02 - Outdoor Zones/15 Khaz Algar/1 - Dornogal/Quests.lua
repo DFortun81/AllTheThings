@@ -290,6 +290,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 226623 },	-- Biergoth
 					["coord"] = { 46.6, 56.8, DORNOGAL },
 				}),
+				q(83469, {	-- City of Threads
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
 				q(83443, {	-- Darkflame Cleft
 					["provider"] = { "n", 226623 },	-- Biergoth
 					["coord"] = { 46.6, 56.8, DORNOGAL },
@@ -302,12 +306,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 226623 },	-- Biergoth
 					["coord"] = { 46.6, 56.8, DORNOGAL },
 				}),
+				q(83432, {	-- The Rookery
+					["provider"] = { "n", 226623 },	-- Biergoth
+					["coord"] = { 46.6, 56.8, DORNOGAL },
+				}),
 				q(83457, {	-- The Stonevault
 					["provider"] = { "n", 226623 },	-- Biergoth
 					["coord"] = { 46.6, 56.8, DORNOGAL },
 				}),
-
+				--
 				q(82678, {	-- Archives: The First Disk
+					["provider"] = { "n", 226511 },	-- High Speaker Brinthe
+					["coord"] = { 46.3, 49.3, DORNOGAL },
+					["g"] = {
+						i(225741),	-- Titan Disc Fragment (QI!)
+					},
+				}),
+				q(82679, {	-- Archives: Seeking History
+					--["sourceQuests"] = { 82678 },	-- Archives: The First Disk (TODO: or just rng weekly?)
 					["provider"] = { "n", 226511 },	-- High Speaker Brinthe
 					["coord"] = { 46.3, 49.3, DORNOGAL },
 					["g"] = {
@@ -326,8 +342,10 @@ root(ROOTS.HiddenQuestTriggers, {
 
 	q(79573, {["name"] = "The War Within Campaign Completed [Account]"}),	-- triggered after completing 'Surface Bound' (questID 79197)
 
-	q(82039),	-- after turn in questID 82678 (Archives: The First Disk) as all quest below too
-	q(82679),	-- but it is normal quest, Archives: Seeking History, which I never saw on alpha/beta (could be some stupid stuff like with alt skip in df s1)
-	q(83450),	-- SpellID 455916 (Play Scene) (but nothing happen on beta)
+	q(82039),	-- after turn in questID 82678 (Archives: The First Disk) & 82679 (Archives: Seeking History)
+	q(83450),	-- Play Scene (spellID 455916), after turn in after 82678 (Archives: The First Disk) but nothing happen on beta
 	q(84736),	-- last one in this chain after turn in, no idea
+	q(84669),	-- after accept questID 82679 (Archives: Seeking History)
+	q(84671),	-- after accept questID 82679 (Archives: Seeking History) / also after 82746 (Delves: Breaking Tough to Loot Stuff)
+	q(83460),	-- Play Scene (spellID 455918), after turn in questID 82679 (Archives: Seeking History) but nothing happening on beta
 });

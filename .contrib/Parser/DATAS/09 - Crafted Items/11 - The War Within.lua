@@ -1461,7 +1461,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(79915, 435857);	-- Crystallized Luredrop
 			--FirstCraft(XXXXX, 435859);	-- Irradiated Luredrop
 			--FirstCraft(XXXXX, 435829);	-- Lush Luredrop
-			--FirstCraft(XXXXX, 435861);	-- Sporefused Luredrop
+			FirstCraft(79919, 435861);	-- Sporefused Luredrop
 			-- Mycobloom
 			FirstCraft(79906, 435811);	-- Mycobloom
 			FirstCraft(79909, 435840);	-- Altered Mycobloom
@@ -1477,7 +1477,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(79922, 435862);	-- Crystallized Orbinid
 			--FirstCraft(XXXXX, 435865);	-- Irradiated Orbinid
 			FirstCraft(79921, 435830);	-- Lush Orbinid
-			--FirstCraft(XXXXX, 435867);	-- Sporefused Orbinid
+			FirstCraft(79926, 435867);	-- Sporefused Orbinid
 			-- Overload
 			--FirstCraft(XXXXX, 438953);	-- Overload Altered Herb
 			--FirstCraft(XXXXX, 438952);	-- Overload Crystallized Herb
@@ -2290,7 +2290,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 439725);	-- Camouflaged Aqirite
 			FirstCraft(80360, 439716);	-- Crystallized Aqirite
 			--FirstCraft(XXXXX, 439722);	-- EZ-Mine Aqirite
-			--FirstCraft(XXXXX, 439710);	-- Rich Aqirite
+			FirstCraft(80354, 439710);	-- Rich Aqirite
 			FirstCraft(80372, 439728);	-- Webbed Aqirite
 			FirstCraft(80363, 439719);	-- Weeping Aqirite
 			-- Bismuth

@@ -558,9 +558,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				},
 			}),
 			-- End Gutter Work
-			-- Start of some random spider quest #4
+			-- Crit - Rak-Ush Swarmery
+			q(83325, {	-- Bountiful Beetles
+				--["sourceQuests"] = { ? },	-- ?
+				["provider"] = { "n", 224729 },	-- Anub'okki
+				["coord"] = { 55.8, 42.1, AZJ_KAHET },
+				["isBreadcrumb"] = true,	-- TODO: need to confirm
+			}),
 			q(79119, {	-- It's Rough to Be a Bug!
-				--["sourceQuests"] = { xx },	-- ?
+				--["sourceQuests"] = { 83325 },	-- Bountiful Beetles
 				["provider"] = { "n", 214359 },	-- Kish'nal
 				["coord"] = { 74.9, 83.5, AZJ_KAHET },
 			}),
@@ -601,16 +607,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["sourceQuests"] = { 79121 },	-- Bug Test
 				["provider"] = { "n", 214359 },	-- Kish'nal
 				["coord"] = { 74.0, 82.0, AZJ_KAHET },
+				["g"] = {
+					i(228442),	-- Rak-Ush Rancher's Waders
+				},
 			}),
 			q(79123, {	-- Pernament Hire
 				["sourceQuests"] = { 79122 },	-- Scarab Scouting
 				["provider"] = { "n", 214359 },	-- Kish'nal
 				["coord"] = { 74.0, 82.0, AZJ_KAHET },
 				["g"] = {
-					--crit 'Rak-Ush Swarmery'
+					i(225935),	-- Rak-Ush Battleshell (PET!)
 				},
 			}),
-			-- End of some random spider quest #4
+			-- End Rak-Ush Swarmery
 			-- Start of some random spider quest #5
 			q(83177, {	-- Socialized Medicine
 				--["sourceQuests"] = { xx },	-- // somewhere after 78226 (A Most Intriguing Invitation) or 78228 (Into a Skittering City)?
@@ -626,12 +635,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 52.9, 46.2, NERUBAR },
 			}),
 			-- End of some random spider quest #5
-			-- crit 'Subterfuge in Silk'
+			-- Crit - Subterfuge in Silk
 			q(81686, {	-- Subterfuge in Silk
 				--["sourceQuests"] = {  },	-- unsure 78248 or quest before it
-				["isBreadcrumb"] = true,	-- unless it is now required for spawn next quests/npc
 				["provider"] = { "n", 207471 },	-- Window Arak'nal
 				["coord"] = { 56.2, 48.2, AZJ_KAHET },
+				["isBreadcrumb"] = true,	-- unless it is now required for spawn next quests/npc
 			}),
 			q(83616, {	-- The Entrenched
 				["sourceQuests"] = { 81686 },	-- Subterfuge in Silk
@@ -657,7 +666,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			q(81668, {	-- Measure Once, Cut Thrice
 				["sourceQuests"] = { 81667 },	-- The Upstart
 				["provider"] = { "n", 221550 },	-- Ren'khat
-				["coord"] = { 66.2, 45.9, AZJ_KAHET },
+				["coord"] = { 66.6, 41.3, AZJ_KAHET },
 			}),
 			q(81685, {	-- Azj-Kahet's Next Top Dyemaster
 				["sourceQuests"] = {
@@ -665,7 +674,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					81683,	-- Spring Collection
 				},
 				["provider"] = { "n", 222132 },	-- Teth
-				["coord"] = { 72.0, 47.2, AZJ_KAHET },
+				["coord"] = { 72.9, 42.8, AZJ_KAHET },
 				["g"] = {
 					i(226166),	-- Message-Imprinted Silken Square
 				},
@@ -676,7 +685,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					81683,	-- Spring Collection
 				},
 				["provider"] = { "n", 222132 },	-- Teth
-				["coord"] = { 72.0, 47.2, AZJ_KAHET },
+				["coord"] = { 72.9, 42.8, AZJ_KAHET },
 			}),
 			q(81688, {	-- That's All
 				["sourceQuests"] = {
@@ -686,11 +695,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["provider"] = { "n", 222136 },	-- Teth
 				["coord"] = { 69.0, 52.0, AZJ_KAHET },
 				["g"] = {
-					--crit 'Subterfuge in Silk'
 					i(224659),	-- Secret-Woven Silk (QI!)
 				},
 			}),
-			-- End of crit 'Subterfuge in Silk'
+			-- End Subterfuge in Silk
 			-- missing header! (in quest log), could be some renown locked quest or according to last quest in chain - Weaver rep?)
 			q(84700, {	-- Pacts Below
 				--["sourceQuests"] = { 79030 },	-- The Voice of the Speakers (?)
@@ -731,7 +739,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(226103),	-- The Weaver's Trove (TODO: didn't contain anything)
 				},
 			}),
-			--
 			-- ZONE DUNGEON QUESTS (80 only)
 			q(83166, {	-- Ara-Kara, the City of Echoes: Harverst's End
 				--["sourceQuests"] = { xx },	-- ?
@@ -774,7 +781,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 26.3, 56.8, AZJ_KAHET },
 			}),
 			-- End The Wild Camp
-			-- Crit - ?
+			-- Crit - Melody of Madness
 			q(83306, {	-- Where the Wild Things Camp
 				--["sourceQuests"] = { xx },	-- ?
 				["provider"] = { "n", 211409 },	-- Faerin Lothar
@@ -827,7 +834,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			q(80571, {	-- Decipher the Cacophony
 				["sourceQuests"] = { 80568 },	-- Leave No Trace
 				["provider"] = { "n", 220610 },	-- Orweyna
-				["coord"] = { 62.5, 80.6, AZJ_KAHET_LOWER },
+				["coord"] = { 62.5, 79.2, AZJ_KAHET_LOWER },
 				["g"] = {
 					i(221776),	-- Discordant Essence (QI!)
 				},
@@ -835,7 +842,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			q(80570, {	-- Staunch the Flow
 				["sourceQuests"] = { 80568 },	-- Leave No Trace
 				["provider"] = { "n", 220610 },	-- Orweyna
-				["coord"] = { 62.5, 80.6, AZJ_KAHET_LOWER },
+				["coord"] = { 62.5, 79.2, AZJ_KAHET_LOWER },
 			}),
 			q(80572, {	-- Discordant Measure
 				["sourceQuests"] = {
@@ -843,12 +850,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					80570,	-- Decipher the Cacophony
 				},
 				["provider"] = { "n", 220610 },	-- Orweyna
-				["coord"] = { 62.5, 80.6, AZJ_KAHET_LOWER },
+				["coord"] = { 62.5, 79.2, AZJ_KAHET_LOWER },
 				["g"] = {
 					i(225696),	-- Corrupted Heart (QI!)
 					i(225698),	-- Root Sliver (QI!)
 					i(225697),	-- Sightless Eye (QI!)
-					i(226165),	-- Unseemly Agate Choker
+					--i(226165),	-- Unseemly Agate Choker (TODO: removed?)
 				},
 			}),
 			q(80569, {	-- Harmonious Approach
@@ -857,18 +864,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					80570,	-- Decipher the Cacophony
 				},
 				["provider"] = { "n", 227158 },	-- Hannan
-				["coord"] = { 62.5, 80.5, AZJ_KAHET_LOWER },
+				["coord"] = { 62.5, 79.1, AZJ_KAHET_LOWER },
 			}),
-			--Zone Drop quest?
-			q(80378, {	-- A Light of the Dark
-				["provider"] = { "i", 217390 },	-- Coagulated Black Blood Clot
-				["maps"] = { AZJ_KAHET },
-				["g"] = {
-					i(217391),	-- Coagulated Black Blood (QI!)
-					i(220161),	-- [PH] Toy, Black Blood Candle (TOY!) (TODO: but not really)
-				},
-			}),
-			-- End - ?
+			-- End Melody of Madness
 			-- Crit - Pillar-nest of Horrors
 			q(79955, {	-- ...And Now I'm Arachnophobic
 				["provider"] = { "n", 217640 },	-- Albert
@@ -967,7 +965,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["provider"] = { "n", 207471 },	-- Window Arak'nal
 				["coord"] = { 55.6, 43.8, AZJ_KAHET },
 			}),
-			-- Look like some Renown quest or should be after main story in area, should be sourceQuest for weekl with on of 3 dudes?
+			-- Look like some Renown quest or should be after main story in area, should be sourceQuest for weekly with on of 3 dudes?
+			-- probably need to move into pact file
 			q(84682, {	-- Of Pacts and Patrons
 				--["sourceQuests"] = { ? },	-- ?
 				["provider"] = { "n", 207471 },	-- Window Arak'nal
@@ -976,6 +975,116 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					--spell(461898),	-- Forging a Pact
 				},
 			}),
+			q(80592, {	-- Forge a Pact
+				--["sourceQuests"] = { 84682 },	-- Of Pacts and Patrons (TODO: ???)
+				["provider"] = { "n", 223750 },	-- Lady Vinazian
+				["coord"] = { 55.6, 43.8, AZJ_KAHET },
+				["isWeekly"] = true,
+			}),
+			q(80671, {	-- Blade of the General
+				["sourceQuests"] = { 80592 },	-- Forge a Pact
+				--["provider"] = { "n", xx },
+				["coord"] = { 57.7, 46.9, AZJ_KAHET },
+				["isWeekly"] = true,
+				["g"] = {
+					i(225572),	-- The General's War Chest
+				},
+			}),
+			q(80672, {	-- Hand of the Vizier
+				["sourceQuests"] = { 80592 },	-- Forge a Pact
+				--["provider"] = { "n", xx },
+				["coord"] = { 57.7, 46.9, AZJ_KAHET },
+				["isWeekly"] = true,
+				["g"] = {
+					i(225573),	-- The Vizier's Capital
+				},
+			}),
+			q(80670, {	-- Eyes of the Weaver
+				["sourceQuests"] = { 80592 },	-- Forge a Pact
+				--["provider"] = { "n", xx },
+				["coord"] = { 57.7, 46.9, AZJ_KAHET },
+				["isWeekly"] = true,
+				["g"] = {
+					i(225571),	-- The Weaver's Gratuity
+				},
+			}),
+			-- The General quest chain unlocked at 4/9 rep
+			q(82338, {	-- Absent Errand
+				["provider"] = { "n", 224345 },	-- Anub'azal <Lord of Heritage Forces>
+				["coord"] = { 55.0, 41.1, AZJ_KAHET },
+			}),
+			q(82339, {	-- An Honorless Kill
+				["sourceQuests"] = { 82338 },	-- Absent Errand
+				["provider"] = { "n", 224345 },	-- Ukos'via <Historical Spinner>
+				["coord"] = { 40.9, 33.5, NERUBAR },
+				["g"] = {
+					i(225637),	-- Poisoned Dagger (QI!)
+					i(225635),	-- Zev'kall's Attrition Log (QI!)
+				},
+			}),	-- randomly end after 2 quest?
+			-- Nerubar - some spider quest (could be Weaver realted?)
+			-- teaching about rumor-type quests?
+			q(80203, {	-- Social Clues
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 219357 },	-- Orator Tx'itk <The Second Strand>
+				["coord"] = { 71.4, 44.4, NERUBAR },
+			}),
+			q(80204, {	-- Espionage and Ventriloquism
+				["sourceQuests"] = { 80203 },	-- Social Clues
+				["provider"] = { "n", 221092 },	-- Orator Tx'itk <The Second Strand>
+				["coord"] = { 65.7, 40.1, NERUBAR },
+				["g"] = {
+					i(219443),	-- Paralytic Draught (QI!)
+				},
+			}),	-- cannot progress further in this chain due to extra button bug on character
+			-- another nerubar quest, just this one. Could be some that is missing for one of chains.
+			q(79954, {	-- Spiders!
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 217255 },	-- Ag'thax
+				["coord"] = { 77.4, 68.5, NERUBAR },
+				["g"] = {
+					i(216688),	-- High Hollows Key (QI!)
+				},
+			}),
+			-- more nerubar stand alone qeusts
+			q(79717, {	-- Means of Ingress
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
+				["coord"] = { 32.0, 22.4, NERUBAR },
+			}),
+			q(79718, {	-- Skeins Street Irregulars
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
+				["coord"] = { 32.0, 22.4, NERUBAR },
+			}),
+			q(79729, {	-- Educate Yourself
+				["sourceQuests"] = {
+					79717,	-- Means of Ingress
+					79718,	-- Skeins Street Irregulars
+				},
+				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
+				["coord"] = { 32.0, 22.4, NERUBAR },
+			}),
+			q(79723, {	-- Repatriation by Subtraction
+				["sourceQuests"] = {
+					79717,	-- Means of Ingress
+					79718,	-- Skeins Street Irregulars
+				},
+				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
+				["coord"] = { 32.0, 22.4, NERUBAR },
+				["g"] = {
+					i(215159),	-- Pillaged Trophy (QI!)
+				},
+			}),
+			q(79730, {	-- Dogged Pursuit
+				["sourceQuests"] = { 
+					79729,	-- Educate Yourself
+					79723,	-- Repatriation by Subtraction
+				},
+				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
+				["coord"] = { 34.0, 29.8, NERUBAR },
+			}),	-- no crit
+			--
 			-- could be renown quest with kej reward, teaching how to spend kej
 			q(84664, {	-- Making the Underworld Go Round
 				--["sourceQuests"] = { ? },	-- ?
@@ -985,13 +1094,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(228913),	-- Dubious Vial of Vigor (QI!)
 				},
 			}),
-			-- The General quest chain, at 3 rep level?
-			q(83325, {	-- Bountiful Beetles
-				--["sourceQuests"] = { ? },	-- ?
-				["provider"] = { "n", 224729 },	-- Anub'okki
-				["coord"] = { 55.8, 42.1, AZJ_KAHET },
-			}),
 			-- ZONE DROP QUEST
+			q(80378, {	-- A Light of the Dark
+				["provider"] = { "i", 217390 },	-- Coagulated Black Blood Clot
+				["g"] = {
+					i(217391),	-- Coagulated Black Blood (QI!)
+					i(220161),	-- Coagulated Sticks of Blood
+				},
+			}),
 			q(79555, {	-- Deep Wax Galactic
 				["provider"] = { "i", 217385 },	-- Clump of Waxy Excretion
 				["coord"] = { 79.4, 76.5, AZJ_KAHET },
@@ -1164,12 +1274,18 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Dialogs
 	q(81946),	-- 'Stay awhile and listen' - Anduin Wrynn - druing questID 78231 (Like a Spider on the Wall)
 	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (What We Still Have)
+	-- Pact weekly locking hqt
+	q(80545),	-- picked up 'The General'
+	q(80546),	-- picked up 'The Vizier'
+	q(80544),	-- picked up 'The Weaver'
 	-- Reps with zone dudes, probably gonna need to move into expansion feature?
 	q(81601),	-- [DNT] General - Level 1 Unlock (spellID 443677)
 	q(81602),	-- [DNT] General - Level 2 Unlock (spellID 443679)
 	q(81626),	-- [DNT] General - Level 2 Unlock (spellID 443679)
+	q(81603),	-- [DNT] General - Level 3 Unlock (spellID 443680)
 	q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
 	q(81606),	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
+	q(81607),	-- [DNT] Vizier - Level 3 Unlock (spellID 443684)
 	q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
 	q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
 	q(81627),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)

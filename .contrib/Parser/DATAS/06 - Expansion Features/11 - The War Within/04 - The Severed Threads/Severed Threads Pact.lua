@@ -39,6 +39,78 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
 			}),
 			n(VENDORS, {
+				n(228184, {	-- Yamas the Provider <Pact Information & Supplies>
+					["coord"] = { 55.4, 41.8, AZJ_KAHET },
+					["g"] = {
+						i(228944, {	-- Crypt Lord's Severed Thread
+							["cost"] = {{"c", KEJ, 250}},
+						}),
+						i(228945, {	-- Executor's Severed Thread
+							["cost"] = {{"c", KEJ, 250}},
+						}),
+						i(226519, {	-- General's Expertise (TOY!)
+							["cost"] = {{"c", KEJ, 1100}},
+						}),
+						i(226509, {	-- General's Insight
+							["cost"] = {{"c", KEJ, 50}},
+						}),
+						i(223278, {	-- Heritage Undercrawler (MOUNT!)
+							["cost"] = {{"c", KEJ, 2020}},
+						}),
+						i(226511, {	-- Nerubimorph Poultice
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+						i(228940, {	-- Notorious Thread's Hearthstone
+							["cost"] = {{"c", KEJ, 3000}},
+						}),
+						i(226518, {	-- Phero-Escape
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+						i(226520, {	-- Queen's Pheromone (CI!)
+							["cost"] = {{"c", KEJ, 8888888}},
+						}),
+						i(223279, {	-- Royal Court Undercrawler (MOUNT!)
+							["cost"] = {{"c", KEJ, 2020}},
+						}),
+						i(228949, {	-- Rumor Map
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+						i(228950, {	-- Rumor Map Bundle
+							["cost"] = {{"c", KEJ, 125}},
+						}),
+						i(228943, {	-- Spymaster's Severed Thread
+							["cost"] = {{"c", KEJ, 250}},
+						}),
+						i(226512, {	-- Treasure Map: Forgotten Memorial
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+						i(226513, {	-- Treasure Map: Kaheti Excavation
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+						i(226514, {	-- Treasure Map: Weave-Rat Cache
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+						i(228952, {	-- Treasure Map Bundle
+							["cost"] = {{"c", KEJ, 125}},
+						}),
+						i(226507, {	-- Venom Dahn's Webscrub
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+						i(226508, {	-- Vizier's Influence
+							["cost"] = {{"c", KEJ, 50}},
+						}),
+						i(226510, {	-- Weaver's Facade
+							["cost"] = {{"c", KEJ, 50}},
+						}),
+						i(228946, {	-- Weaver's Lair Profession Table
+							--["questID"] = 84693,	-- questID after using it
+							["cost"] = {{"c", KEJ, 500}},
+						}),
+						i(223276, {	-- Widow's Undercrawler (MOUNT!)
+							["cost"] = {{"c", KEJ, 2020}},
+						}),
+					},
+				}),
 			}),
 		}),
 	}),
