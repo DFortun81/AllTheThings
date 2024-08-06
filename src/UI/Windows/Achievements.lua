@@ -163,8 +163,8 @@ app:CreateWindow("Achievements", {
 						local numAchievements = GetCategoryNumAchievements(categoryID, true);
 						if numAchievements and numAchievements > 0 then
 							for i=1,numAchievements,1 do
-								local achievementID, _, _, _, _, _, _, _, _, _, _, _, _, _, isStatistic = GetAchievementInfo(categoryID, i);
-								if achievementID and not isStatistic and not data.achievements[achievementID] then
+								local achievementID, _, _, _, _, _, _, _, _, _, _, isGuildAch, _, _, isStatistic = GetAchievementInfo(categoryID, i);
+								if achievementID and not (isStatistic or isGuildAch) and not data.achievements[achievementID] then
 									local achievement = app.CreateAchievement(achievementID);
 									data.achievements[i] = achievement;
 									achievement.parent = getAchievementCategory(categories, achievement.parentCategoryID);
