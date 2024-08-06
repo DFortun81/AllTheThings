@@ -2288,7 +2288,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 439707);	-- Aqirite
 			--FirstCraft(XXXXX, 439713);	-- Aqirite Seam
 			--FirstCraft(XXXXX, 439725);	-- Camouflaged Aqirite
-			--FirstCraft(XXXXX, 439716);	-- Crystallized Aqirite
+			FirstCraft(80360, 439716);	-- Crystallized Aqirite
 			--FirstCraft(XXXXX, 439722);	-- EZ-Mine Aqirite
 			--FirstCraft(XXXXX, 439710);	-- Rich Aqirite
 			FirstCraft(80372, 439728);	-- Webbed Aqirite
@@ -2301,7 +2301,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 439721);	-- EZ-Mine Bismuth
 			FirstCraft(80353, 439709);	-- Rich Bismuth
 			FirstCraft(80371, 439727);	-- Webbed Bismuth
-			--FirstCraft(XXXXX, 439718);	-- Weeping Bismuth
+			FirstCraft(80362, 439718);	-- Weeping Bismuth
 			-- Ironclaw
 			FirstCraft(80352, 439708);	-- Ironclaw
 			--FirstCraft(XXXXX, 439714);	-- Ironclaw Seam

@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				},
 			}),
 			o(446097, {	-- Disturbed Soil
-				["coord"] = { 54.4, 41.1, AZJ_KAHET },
+				["coord"] = { 67.4, 90.7, AZJ_KAHET },
 				["questID"] = 82718,
 				["g"] = {
 					i(224816),	-- Nerubian Almanac

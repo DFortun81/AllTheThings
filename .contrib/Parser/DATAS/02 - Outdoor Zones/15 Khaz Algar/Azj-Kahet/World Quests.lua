@@ -48,6 +48,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					-- The Weaver
 					["coord"] = { 30.4, 44.1, AZJ_KAHET },
 				}),
+				q(82521, {	-- Pawns of Dark Masters
+					["coord"] = { 61.6, 75.0, AZJ_KAHET },
+				}),
+				q(81824, {	-- Skyrider Racing - City of Threads Twist
+					-- normal - 80277 / advanced - 80283 / reverse - 80289
+					["coord"] = { 26.4, 7.2, NERUBAR },
+				}),
 				q(81825, {	-- Skyrider Racing - Maddening Deep Dip
 					-- normal - 80278 / advanced - 80284 / reverse - 80290
 					["coord"] = { 76.6, 81.0, AZJ_KAHET },

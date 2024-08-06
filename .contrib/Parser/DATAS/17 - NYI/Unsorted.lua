@@ -28,19 +28,11 @@ root(ROOTS.Unsorted, {
 				i(228744),	-- Golbin Twist-Rag
 				i(228745),	-- Aurora Strand
 				i(228756),	-- Bonus Snuffling Experience
-				i(228940),	-- Notorious Thread's Hearthstone
 				i(228942),	-- Bountiful Coffer
 				-- Have QuestID attached
-				i(228943),	-- Spymaster's Severed Thread
-				i(228944),	-- Crypt Lord's Severed Thread
-				i(228945),	-- Executor's Severed Thread
-				i(228946),	-- Weaver's Lair Profession Table
 				i(228947),	-- Weaver's Lair Profession Table
 				---
-				i(228949),	-- Rumor Map
-				i(228950),	-- Rumor Map Bundle
 				i(228951),	-- Pact Treasure Map
-				i(228952),	-- Pact Treasure Map Bundle
 
 			}),
 			filter(QUEST_ITEMS, {
@@ -113,7 +105,6 @@ root(ROOTS.Unsorted, {
 				i(228764),	-- Classic Sunny Tabard
 			}),
 			--
-			i(228956),	-- Junk Bucket
 			i(228958),	-- Radiant Echo
 			i(228959),	-- Pile of Unidentified Meat
 			i(228984),	-- Unbreakable Iron Idol
@@ -123,7 +114,6 @@ root(ROOTS.Unsorted, {
 			--
 			i(225892),	-- Recipe: Rockslide Shake
 			i(228751),	-- Gigantic Grrloc
-			i(228952),	-- Treasure Map Bundle
 			i(229061),	-- Nisa's Spare Belt
 			i(229062),	-- Nisa's Spare Coronet
 			i(229063),	-- Nisa's Spare Wristguards
@@ -403,12 +393,6 @@ root(ROOTS.Unsorted, {
 					i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
 				}),
 				prof(BLACKSMITHING, {
-					--- Attached SpellID Recipes!
-					i(223042),	-- Plans: Charged Slicer (RECIPE!)
-
-
-
-
 					--- Probably mostly NYI...
 					i(217847),	-- Everforged Hands
 					i(217848),	-- Everforged Wrists
@@ -1166,7 +1150,6 @@ root(ROOTS.Unsorted, {
 				i(215175),	-- Belt of Vials
 				i(215178),	-- Shadow-Binding Ritual Knife
 				i(216657),	-- Test Item C
-				i(217894),	-- Nerubian Pheromone Secreter
 
 				i(218132),	-- 11.0 Zone Uncommon Template - Vestment
 				i(218133),	-- 11.0 Zone Uncommon Template - Sandals
@@ -1548,7 +1531,6 @@ root(ROOTS.Unsorted, {
 				i(225789),	-- Curved Threadripper
 				i(225793),	-- Acid-Etched Pendant
 				i(225794),	-- Preserved Gold-Inlaid Chelicera
-				i(225796),	-- Particularly Pungent Herbs
 				i(225797),	-- The Fifty Rules of Commerce, Fourth Edition
 				i(225798),	-- Intricately Carved Barter Boulder
 				i(225799),	-- Dazzling Spanner
@@ -1614,44 +1596,16 @@ root(ROOTS.Unsorted, {
 				i(226430),	-- Navigations of The Soul
 				i(226524),	-- Partially-Charged Hologem
 				i(226681),	-- Sizzling Cinderpollen
-				i(226811),	-- Marinated Maggots
 				i(227274),	-- Candle Rock Candy
 				i(227275),	-- Koboldatouille
-				i(227297),	-- Hallowed Burger
-				i(227298),	-- Humble Pie
-				i(227299),	-- Acid Braised Beetle
-				i(227300),	-- Poison Poached Eggs
 				i(227303),	-- Waxy Cheese Snack
 				i(227304),	-- Mushroom Cake
-				i(227305),	-- Airship Dog on a Bun
-				i(227306),	-- Holy Mackerel
-				i(227307),	-- Insects Bowl Mix
-				i(227308),	-- Butterflied Deepstrider
 				i(227311),	-- Digspresso
 				i(227312),	-- Afterglow
-				i(227313),	-- Starfruit Puree
-				i(227314),	-- Coffee, Light Ice
-				i(227315),	-- Tarragon Soda
-				i(227316),	-- Eggnog
 				i(227319),	-- Koboldchino
 				i(227320),	-- Wicker Wisps
-				i(227321),	-- Blessed Brew
-				i(227322),	-- Sanctified Sasparilla
-				i(227323),	-- Mushroom Tea
-				i(227324),	-- Nerub'ar Nectar
 				i(227328),	-- Wax Fondue
 				i(227329),	-- Still-Twitching Gumbo
-				i(227330),	-- Grottochunk Stew
-				i(227331),	-- Saints' Delight
-				i(227332),	-- Sipping Aether
-				i(227333),	-- Glimmering Delicacy
-				i(227334),	-- Mole Mole
-				i(227335),	-- Borer Blood Pudding
-				i(227336),	-- Sugar Slurry
-				i(227445),	-- Inscrutable Fragrance
-				i(227447),	-- Invigorating Fragrance
-				i(227448),	-- Volatile Fragrance
-				i(227449),	-- Robust Fragrance
 				i(223870),	-- Cache Key
 				i(225654),	-- Imperfect Ascendancy Serum
 				i(227668),	-- Delver's Bounty
@@ -1826,10 +1780,7 @@ root(ROOTS.Unsorted, {
 				i(222963),	-- Lava Globs
 				i(222976),	-- Flame-Tempered Harpoon
 				i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
-				i(223157),	-- Blacksmith's Breastplate
 				i(223220),	-- Kaheti All-Purpose Cleanser
-				i(223247),	-- Ryton Blackholme's Breastplate
-				i(223515),	-- Breastplate and Tinderbox
 				i(223638),	-- Arathi Trade Goods
 				i(223889),	-- Flame Touched Weaponry
 				i(223952),	-- Singed Plush
@@ -2092,8 +2043,6 @@ root(ROOTS.Unsorted, {
 				i(221242),	-- Forgeborn Helm
 				i(221244),	-- Flamekeeper's Footpads
 				i(221246),	-- Fierce Beast Staff
-				i(221248),	-- Deep Terror Carver
-				i(221250),	-- Creeping Lasher Machete
 				i(221251),	-- Bestial Underground Cleaver
 				i(221252),	-- Nerubian Slayer's Claymore
 				i(221253),	-- Cultivator's Plant Puncher
@@ -2163,7 +2112,6 @@ root(ROOTS.Unsorted, {
 				i(223439),	-- Mereldar Scholar's Leggings
 				i(223444),	-- Arathi Defender's Breeches
 				i(223450),	-- Honored Soldier's Chainmail
-				i(223462),	-- Honorable Arathi Breastplate
 				i(223440),	-- Saboteur's Shoulderpads
 				i(223441),	-- Algari Scouting Boots
 				i(223443),	-- Algari Warden's Hood
@@ -2213,12 +2161,9 @@ root(ROOTS.Unsorted, {
 				i(228440),	-- Chitin-Laced Shoulderguards
 				i(228441),	-- Overseer's Oversized Clasp
 				i(228442),	-- Rak-Ush Rancher's Waders
-				i(228443),	-- Liberator's Tarnished Band
-				i(228444),	-- Silken Ward Signet
 				i(228445),	-- Deceased Nerubian's Slippers
 				i(228446),	-- Albert's Last Gloves
 				i(228447),	-- Spider-Fang Epaulets
-				i(228448),	-- Long-Forgotten Girdle
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(223510),	-- Delver's Dirigible Schematic: Template
@@ -2235,7 +2180,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MISC, {
 				i(224592),	-- Spinner's Hoop \\ [PH] The Fallen Queen's Band
-				i(224593),	-- Spinner's Circlet \\ [PH] 11.0 - Signet
 				i(224594),	-- Spinner's Amulet \\ [PH] Element-Attuned Pendant
 
 
@@ -2601,8 +2545,6 @@ root(ROOTS.Unsorted, {
 			i(223034),	-- Technique: Inscribed Rolling Pin
 			i(223056),	-- Plans: Webbed Fishing Line
 			i(223948),	-- Stubborn Wolf's Greathelm
-			i(223979),	-- Whispering Squirmworm
-			i(224240),	-- Nerubian Tombstone
 			i(225256),	-- PH_2
 		})),
 	}),

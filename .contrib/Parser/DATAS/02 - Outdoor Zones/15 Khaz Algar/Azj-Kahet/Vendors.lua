@@ -4,6 +4,17 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	m(AZJ_KAHET, {
 		n(VENDORS, {
+			n(218218, {	-- "Eight-Shaker" Sallow <Apertifologist>
+				["coord"] = { 53.4, 15.3, NERUBAR },
+				["g"] = {
+					i(223957, {	-- Recipe: Protein Slurp (RECIPE)
+						["cost"] = {{"c", KEJ, 1500}},
+					}),
+					i(227449, {	-- Robust Fragrance
+						["cost"] = {{"c", KEJ, 150}},
+					}),
+				},
+			}),
 			n(218179, {	-- Alvus Valavulu <Jewelcrafting Supplies>
 				["coord"] = { 47.8, 18.7, NERUBAR },
 				["g"] = {
@@ -173,6 +184,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					}),
 				},
 			}),
+			n(218172, {	-- Phylieus <Fish & Fishing Supplies>
+				["coord"] = { 51.8, 24.6, NERUBAR },
+				["g"] = {
+					i(223979, {	-- Whispering Squirmworm
+						["cost"] = {{"c", KEJ, 133}},
+						["isLimited"] = true,
+					}),
+				},
+			}),
 			n(218189, {	-- Polo <Cooking Supplies>
 				["coord"] = { 48.1, 25.3, NERUBAR },
 				["g"] = {
@@ -182,9 +202,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(223955, {	-- Recipe: Fine Egg Powder (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
-					--i(223959, {	-- Recipe: Secret Sauce (RECIPE!) TODO: re-check in future to see if itemID typo (should be 223958 or attached wrong recipe ID)
-					--	["cost"] = {{"c", KEJ, 1500}},
-					--}),
 					i(223958, {	-- Recipe: Spongey Scramble (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
 					}),
@@ -198,6 +215,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 						["requireSkill"] = MINING,
 					}),
 					i(224432, {	-- Pattern: Excavator's Haversack (RECIPE!)
+						["cost"] = {
+							{"i", ARTISANS_ACUITY, 150},
+							{"c", KEJ, 1500},
+						},
+					}),
+					i(223042, {	-- Plans: Charged Slicer (RECIPE!)
 						["cost"] = {
 							{"i", ARTISANS_ACUITY, 150},
 							{"c", KEJ, 1500},
@@ -230,6 +253,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					}),
 				},
 			}),
+			n(218214, {	-- Ruukk <Silks & Secrets>>
+				["coord"] = { 51.4, 12.5, NERUBAR },
+				["g"] = {
+					i(226515, {	-- Rumor Map: Bounties
+						["cost"] = {{"c", KEJ, 25}},
+					}),
+					i(226516, {	-- Rumor Map: Disruption
+						["cost"] = {{"c", KEJ, 25}},
+					}),
+					i(226517, {	-- Rumor Map: Espionage
+						["cost"] = {{"c", KEJ, 25}},
+					}),
+				},
+			}),
 			n(218190, {	-- Saaria <Tailoring Supplies>
 				["coord"] = { 50.4, 17.0, NERUBAR },
 				["g"] = {
@@ -245,11 +282,38 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					}),
 				},
 			}),
+			n(218192, {	-- Siesbarg <Alchemy Supplies>
+				["coord"] = { 45.4, 13.0, NERUBAR },
+				["g"] = {
+					i(227445, {	-- Inscrutable Fragrance
+						["cost"] = {{"c", KEJ, 150}},
+					}),
+				},
+			}),
+			n(223176, {	-- Tej the Undying <Dye Removal>
+				["coord"] = { 56.5, 35.5, NERUBAR_LOWER },
+				["g"] = {
+					i(227447, {	-- Invigorating Fragrance
+						["cost"] = {{"c", KEJ, 150}},
+					}),
+				},
+			}),
 			n(218210, {	-- Tyro Whalekk <Organic Pet Food>
 				["coord"] = { 43.4, 17.0, NERUBAR },
 				["g"] = {
 					i(223960, {	-- Recipe: Little Buddy Biscuits (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
+					}),
+				},
+			}),
+			n(223134, {	-- Venom Dahn
+				["coord"] = { 55.2, 36.5, NERUBAR_LOWER },
+				["g"] = {
+					i(227330, {	-- Grottochunk Stew (TODO: move into uncollectible? / food)
+						["cost"] = {{"c", KEJ, 137}},
+					}),
+					i(227448, {	-- Volatile Fragrance
+						["cost"] = {{"c", KEJ, 150}},
 					}),
 				},
 			}),
@@ -268,14 +332,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					}),
 				},
 			}),
-			n(218218, {	-- "Eight-Shaker" Sallow <Apertifologist>
-				["coord"] = { 53.4, 15.3, NERUBAR },
-				["g"] = {
-					i(223957, {	-- Recipe: Protein Slurp (RECIPE)
-						["cost"] = {{"c", KEJ, 1500}},
-					}),
-				},
-			}),
 			-- This Used for anything??
 			n(223177, {	-- Izkrk'tkrzn <Discount Eggs>
 				["coord"] = { 59.9, 31.6, NERUBAR_LOWER },
@@ -283,8 +339,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(223972),	-- Cracked Weavershell
 					i(223973),	-- Sticky Gossamer Sac]
 					i(223974),	-- Jostling Ovoid
-					i(223975),	-- Suspiciously Heavy Egg
+					--i(223975),	-- Suspiciously Heavy Egg (TODO: removed or moved to another vendor?)
 					i(223976),	-- Yesterday's Eggs
+				},
+			}),
+			n(223155, {	-- Old V'k <The Crypt Lord>
+				["coord"] = { 50.6, 37.8, NERUBAR_LOWER },
+				["g"] = {
+					i(224240, {	-- Nerubian Tombstone
+						["cost"] = {{"c", KEJ, 1500}},
+					}),
 				},
 			}),
 			--Raid vendor gear for curio (move it if needed)

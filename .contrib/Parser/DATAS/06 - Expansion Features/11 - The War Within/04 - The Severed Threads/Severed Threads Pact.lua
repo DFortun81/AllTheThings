@@ -39,20 +39,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
 			}),
 			n(VENDORS, {
-				n(223750, {	-- Lady Vinazian <Severed Threads Quartermaster>
-					["coord"] = { 57.3, 42.5, AZJ_KAHET },
-					["g"] = {
-						i(223278, {	-- Heritage Undercrawler (MOUNT!)
-							["minReputation"] = { FACTION_THE_GENERAL, 8 },
-						}),
-						i(223279, {	-- Royal Court Undercrawler (MOUNT!)
-							["minReputation"] = { FACTION_THE_VIZIER, 8 },
-						}),
-						i(223276, {	-- Widow's Undercrawler (MOUNT!)
-							["minReputation"] = { FACTION_THE_WEAVER, 8 },
-						}),
-					}
-				}),
 			}),
 		}),
 	}),

@@ -25,6 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 		filter(FINGER_F, {
 			i(224660),	-- Gem-Studded Band
 			i(224662),	-- Gem-Studded Ring
+			i(224593),	-- Spinner's Circlet
 		}),
 		filter(LEATHER, {
 			i(224681),	-- Lockstitch Bindings
@@ -87,8 +88,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			--I'm currently placing it here since it can be obtained in different zone
 			--On first opening I recieve:
 			i(224172),	-- Restored Coffer Key
-			--i(225653),	-- Siphoning Lightbrand // Isle of Dorn zone reward
-			--hqt - 83280, possibly related to key but dunno (1st cache) (spark/chests limit count?)
+			--hqt - 83280, Fractured Spark of Omens
 			--hqt - 83281, possibly related to key but dunno (2nd cache (alpha), 1st Seasoned Adventurer's Cache on beta)
 		}),
 		i(228361),	-- Seasoned Adventurer's Cache
