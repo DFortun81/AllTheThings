@@ -323,7 +323,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_THREE, n(222573, {	-- Delirious Ancient
-				["description"] = "Clear any 3 bosses to spawn this.",
+				["description"] = "Spawns after clearing any 3 bosses (other than Ghaz'rilla) and will wander around the Ghaz'rilla area.",
 				["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
 				["groups"] = {
 					i(221290),	-- Ace of Dunes

@@ -552,7 +552,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_THREE, n(223264, {	-- Delirious Ancient
-						["description"] = "After killing Princess, this will spawn.",
+						["description"] = "Spawns after killing Princess and the surrounding trash.",
 						["cost"] = {{ "i", 221418, 1 }},	-- Agamaggan's Roar
 						["groups"] = {
 							i(221271),	-- Ace of Wilds
