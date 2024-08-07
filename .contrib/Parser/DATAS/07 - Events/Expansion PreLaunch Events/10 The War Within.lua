@@ -211,9 +211,13 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 			}),
 		}),
 		n(QUESTS, {
-			q(82539),	-- Radiant Echoes
+			q(82539, {	-- Radiant Echoes
+				["maps"] = { LEGION_DALARAN, 629 },
+				["isBreadcrumb"] = true,
+			}),
 			q(82540, {	-- Memories of Adventures Past
 				-- ["sourceQuests"] = { 80500 },	-- The Bronzebeard Family (TODO: could be some additional hqt in future or will be up due to warbound change?)
+				["sourceQuests"] = { 82539 },	-- Radiant Echoes
 				["provider"] = { "n", 213627 },	-- Archmage Khadgar
 				["coord"] = { 42.9, 59.7, 629 },	-- Legion Dalaran, Aegwynn's Gallery
 			}),

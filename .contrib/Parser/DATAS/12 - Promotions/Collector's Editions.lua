@@ -618,6 +618,7 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 					n(QUESTS, {
 						q(77813, {	-- Lightning Strikes
 							["provider"] = { "n", 197478 },	-- Herald Flaps
+							["coord"] = { 45.4, 55.2, VALDRAKKEN },
 						}),
 						q(77815, {	-- The Storm Race Tour
 							["provider"] = { "n", 193359 },	-- Lord Andestrasz
