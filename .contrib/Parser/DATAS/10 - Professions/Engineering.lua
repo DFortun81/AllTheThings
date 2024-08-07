@@ -19,6 +19,114 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				i(208794),	-- White Holo-Gogs
 				i(208797),	-- Yellow Holo-Gogs
 			}),
+			crit(61677, {	-- Gnomish Power Goggles
+				["provider"] = { "i", 23828 },	-- Gnomish Power Goggles
+			}),
+			crit(61678, {	-- Deathblow X11 Goggles
+				["provider"] = { "i", 32478 },	-- Deathblow X11 Goggles
+			}),
+			crit(61679, {	-- Quad Deathblow X44 Goggles
+				["provider"] = { "i", 34353 },	-- Quad Deathblow X44 Goggles
+			}),
+			crit(61680, {	-- Visage Liquification Goggles
+				["provider"] = { "i", 42553 },	-- Visage Liquification Goggles
+			}),
+			crit(61681, {	-- Ultra-Spectropic Detection Goggles
+				["provider"] = { "i", 23762 },	-- Ultra-Spectropic Detection Goggles
+			}),
+			crit(61682, {	-- Cogspinner Goggles
+				["provider"] = { "i", 23758 },	-- Cogspinner Goggles
+			}),
+			crit(61683, {	-- Justicebringer 2000 Specs
+				["provider"] = { "i", 32472 },	-- Justicebringer 2000 Specs
+			}),
+			crit(61684, {	-- Justicebringer 3000 Specs
+				["provider"] = { "i", 35185 },	-- Justicebringer 3000 Specs
+			}),
+			crit(61685, {	-- Living Replicator Specs
+				["provider"] = { "i", 32475 },	-- Living Replicator Specs
+			}),
+			crit(61686, {	-- Primal-Attuned Goggles
+				["provider"] = { "i", 35184 },	-- Primal-Attuned Goggles
+			}),
+			crit(61687, {	-- Greensight Gogs
+				["provider"] = { "i", 42554 },	-- Greensight Gogs
+			}),
+			crit(61688, {	-- Surestrike Goggles v2.0
+				["provider"] = { "i", 32474 },	-- Surestrike Goggles v2.0
+			}),
+			crit(61689, {	-- Surestrike Goggles v3.0
+				["provider"] = { "i", 34356 },	-- Surestrike Goggles v3.0
+			}),
+			crit(61690, {	-- Hyper-Vision Goggles
+				["provider"] = { "i", 23763 },	-- Hyper-Vision Goggles
+			}),
+			crit(61691, {	-- Destruction Holo-Gogs
+				["provider"] = { "i", 32494 },	-- Destruction Holo-Gogs
+			}),
+			crit(61692, {	-- Annihilator Holo-Gogs
+				["provider"] = { "i", 34847 },	-- Annihilator Holo-Gogs
+			}),
+			crit(61693, {	-- Gnomish Battle Goggles
+				["provider"] = { "i", 23829 },	-- Gnomish Battle Goggles
+			}),
+			crit(61694, {	-- Tankatronic Goggles
+				["provider"] = { "i", 32473 },	-- Tankatronic Goggles
+			}),
+			crit(61695, {	-- Magnified Moon Specs
+				["provider"] = { "i", 32480 },	-- Magnified Moon Specs
+			}),
+			crit(61696, {	-- Hyper-Magnified Moon Specs
+				["provider"] = { "i", 35182 },	-- Hyper-Magnified Moon Specs
+			}),
+			crit(61697, {	-- Hard Khorium Goggles
+				["provider"] = { "i", 34357 },	-- Hard Khorium Goggles
+			}),
+			crit(61698, {	-- Armored Titanium Goggles
+				["provider"] = { "i", 42549 },	-- Armored Titanium Goggles
+			}),
+			crit(61699, {	-- Charged Titanium Specs
+				["provider"] = { "i", 42552 },	-- Charged Titanium Specs
+			}),
+			crit(61700, {	-- Wonderheal XT40 Shades
+				["provider"] = { "i", 32479 },	-- Wonderheal XT40 Shades
+			}),
+			crit(61701, {	-- Wonderheal XT68 Shades
+				["provider"] = { "i", 35183 },	-- Wonderheal XT68 Shades
+			}),
+			crit(61706, {	-- Unbreakable Healing Amplifiers
+				["provider"] = { "i", 44949 },	-- Unbreakable Healing Amplifiers
+			}),
+			crit(61702, {	-- Mechanized Snow Goggles
+				["providers"] = {
+					-- TODO: Check This when doing Engi
+					{ "i", 41112 },	-- Mechanized Snow Goggles
+					{ "i", 44740 },	-- Mechanized Snow Goggles
+					{ "i", 44741 },	-- Mechanized Snow Goggles
+					{ "i", 44742 },	-- Mechanized Snow Goggles
+				},
+			}),
+			crit(61707, {	-- Furious Gizmatic Goggles
+				["provider"] = { "i", 32461 },	-- Furious Gizmatic Goggles
+			}),
+			crit(61708, {	-- Mayhem Projection Goggles
+				["provider"] = { "i", 34354 },	-- Mayhem Projection Goggles
+			}),
+			crit(61709, {	-- Weakness Spectralizers
+				["provider"] = { "i", 42550 },	-- Weakness Spectralizers
+			}),
+			crit(61710, {	-- Gadgetstorm Goggles
+				["provider"] = { "i", 32476 },	-- Gadgetstorm Goggles
+			}),
+			crit(61711, {	-- Lightning Etched Specs
+				["provider"] = { "i", 34355 },	-- Lightning Etched Specs
+			}),
+			crit(61712, {	-- Truesight Ice Blinders
+				["provider"] = { "i", 42551 },	-- Truesight Ice Blinders
+			}),
+			crit(61713, {	-- Electroflux Sight Enhancers
+				["provider"] = { "i", 42555 },	-- Electroflux Sight Enhancers
+			}),
 		}),
 		ach(18875),	-- Dangerous Devices IV
 		ach(18874),	-- Dangerous Devices III
