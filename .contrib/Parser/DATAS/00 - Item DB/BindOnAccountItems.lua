@@ -255,6 +255,23 @@ i(48716);	-- Venerable Mass of McGowan
 i(12844);	-- Argent Dawn Valor Token
 
 -----------------
+-- PATCH 6.1.0 --
+-----------------
+i(122625);	-- Shared Turbulent Hood
+i(122630);	-- Shared Turbulent Choker
+i(122627);	-- Shared Turbulent Spaulders
+i(122631);	-- Shared Turbulent Cloak
+i(122622);	-- Shared Turbulent Robes
+i(122621);	-- Shared Turbulent Bracers
+i(122624);	-- Shared Turbulent Gauntlets
+i(122628);	-- Shared Turbulent Girdle
+i(122626);	-- Shared Turbulent Leggings
+i(122623);	-- Shared Turbulent Treads
+i(122629);	-- Shared Turbulent Ring
+i(122632);	-- Shared Turbulent Trinket
+i(122633);	-- Shared Turbulent Armament
+
+-----------------
 -- PATCH 6.2.0 --
 -----------------
 i(127781);	-- Baleful Cloth Hood
