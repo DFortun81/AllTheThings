@@ -2446,6 +2446,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(25476),	-- Green Wind Rider (MOUNT!)
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, n(3144, {	-- Eitrigg
+					["sourceQuest"] = 6602,	-- Blood of the Black Dragon Champion
+					["coord"] = { 34.6, 38.6, ORGRIMMAR },
+					["timeline"] = { "added 1.15.3" },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(226500),	-- Chipped Drakefire Amulet
+						i(228222, {	-- Handbook of Valor of Azeroth
+							["timeline"] = { "added 1.15.3" },
+							["spellID"] = 461475,	-- Valor of Azeroth
+							["f"] = RECIPES,
+						}),
+					},
+				})),
+				-- #endif
 				n(3367, {	-- Felika <Trade Supplies>
 					["description"] = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
 					["coords"] = {

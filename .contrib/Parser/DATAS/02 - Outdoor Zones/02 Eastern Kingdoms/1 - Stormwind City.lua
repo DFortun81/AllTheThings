@@ -3319,6 +3319,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(228238, {	-- Testament of Divine Steed
 							["spellID"] = 461607,	-- Divine Steed
+							["timeline"] = { "added 1.15.3" },
 							["f"] = RECIPES,
 						}),
 					},
@@ -6745,6 +6746,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, n(17804, {	-- Squire Rowe
+					["sourceQuest"] = 6502,	-- Drakefire Amulet
+					["coord"] = { 70.6, 86.0, STORMWIND_CITY },
+					["timeline"] = { "added 1.15.3" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(226500),	-- Chipped Drakefire Amulet
+						i(228222, {	-- Handbook of Valor of Azeroth
+							["timeline"] = { "added 1.15.3" },
+							["spellID"] = 461475,	-- Valor of Azeroth
+							["f"] = RECIPES,
+						}),
+					},
+				})),
+				-- #endif
 				n(30730, {	-- Stanly McCormick <Inscription Supplies>
 					["coord"] = { 49.6, 74.6, STORMWIND_CITY },
 					["timeline"] = { ADDED_3_0_2 },
