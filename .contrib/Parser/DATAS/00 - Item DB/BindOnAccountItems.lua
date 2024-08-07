@@ -628,4 +628,38 @@ i(34856);	-- Boots of the Forgotten Conqueror
 i(34857);	-- Boots of the Forgotten Protector
 i(34858);	-- Boots of the Forgotten Vanquisher
 
+-- Tier 7 10 Man Tokens [Naxx / OS]
+i(40616);	-- Helm of the Lost Conqueror
+i(40617);	-- Helm of the Lost Protector
+i(40618);	-- Helm of the Lost Vanquisher
+i(40622);	-- Spaulders of the Lost Conqueror
+i(40623);	-- Spaulders of the Lost Protector
+i(40624);	-- Spaulders of the Lost Vanquisher
+i(40610);	-- Chestguard of the Lost Conqueror
+i(40611);	-- Chestguard of the Lost Protector
+i(40612);	-- Chestguard of the Lost Vanquisher
+i(40613);	-- Gloves of the Lost Conqueror
+i(40614);	-- Gloves of the Lost Protector
+i(40615);	-- Gloves of the Lost Vanquisher
+i(40619);	-- Leggings of the Lost Conqueror
+i(40620);	-- Leggings of the Lost Protector
+i(40621);	-- Leggings of the Lost Vanquisher
+
+-- Tier 7 25 Man Tokens [Naxx / OS]
+i(40631);	-- Crown of the Lost Conqueror
+i(40632);	-- Crown of the Lost Protector
+i(40633);	-- Crown of the Lost Vanquisher
+i(40637);	-- Mantle of the Lost Conqueror
+i(40638);	-- Mantle of the Lost Protector
+i(40639);	-- Mantle of the Lost Vanquisher
+i(40625);	-- Breastplate of the Lost Conqueror
+i(40626);	-- Breastplate of the Lost Protector
+i(40627);	-- Breastplate of the Lost Vanquisher
+i(40628);	-- Gauntlets of the Lost Conqueror
+i(40629);	-- Gauntlets of the Lost Protector
+i(40630);	-- Gauntlets of the Lost Vanquisher	
+i(40634);	-- Legplates of the Lost Conqueror
+i(40635);	-- Legplates of the Lost Protector
+i(40636);	-- Legplates of the Lost Vanquisher
+
 -- #endif
