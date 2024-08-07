@@ -528,6 +528,14 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(221478),	-- Green Snugglefin Murloc Backpack
 			i(221007),	-- Happy Green Snugglefin Murloc Hood
 		})),
+		i(208943,	-- Arsenal: Cosmic Weapons Cache
+			bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0, REMOVED_11_PH_LAUNCH } }, {
+			i(208939),	-- Gorridar, Darkblade of the Sunderer
+			i(208941),	-- M’thorus, Dagger of the Grand Design
+			i(208962),	-- Seetheras, Broadsword of the Sunderer
+			i(208959),	-- Taesavir, Sword of the Grand Design
+			i(208940),	-- Voidsong, Stave of the Harbinger
+		})),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
