@@ -514,7 +514,7 @@ i(211771);	-- Medal of Honor [H] (Season 4)
 -----------------
 -- #if AFTER TWW
 
--- Tier 4 Tokens
+-- Tier 4 Tokens [Kara / Gruul / Mag]
 i(29760);	-- Helm of the Fallen Champion
 i(29761);	-- Helm of the Fallen Defender
 i(29759);	-- Helm of the Fallen Hero
@@ -530,4 +530,22 @@ i(29756);	-- Gloves of the Fallen Hero
 i(29766);	-- Leggings of the Fallen Champion
 i(29767);	-- Leggings of the Fallen Defender
 i(29765);	-- Leggings of the Fallen Hero
+
+-- Tier 5 Tokens [TK / SSC]
+i(30242);	-- Helm of the Vanquished Champion
+i(30243);	-- Helm of the Vanquished Defender
+i(30244);	-- Helm of the Vanquished Hero
+i(30248);	-- Pauldrons of the Vanquished Champion
+i(30249);	-- Pauldrons of the Vanquished Defender
+i(30250);	-- Pauldrons of the Vanquished Hero
+i(30236);	-- Chestguard of the Vanquished Champion
+i(30237);	-- Chestguard of the Vanquished Defender
+i(30238);	-- Chestguard of the Vanquished Hero
+i(30239);	-- Gloves of the Vanquished Champion
+i(30240);	-- Gloves of the Vanquished Defender
+i(30241);	-- Gloves of the Vanquished Hero
+i(30245);	-- Leggings of the Vanquished Champion
+i(30246);	-- Leggings of the Vanquished Defender
+i(30247);	-- Leggings of the Vanquished Hero
+
 -- #endif
