@@ -296,7 +296,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	end
 end
 local function ProcessForKnownBy(t, reference, tooltipInfo)
-	if reference.illusionID then return; end
+	if reference.illusionID or reference.achievementID then return; end
 
 	-- This is to show which characters have this profession.
 	local id = reference.spellID;
