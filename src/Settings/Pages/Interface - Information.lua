@@ -296,7 +296,11 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	end
 end
 local function ProcessForKnownBy(t, reference, tooltipInfo)
-	if reference.illusionID or reference.achievementID then return; end
+	if reference.illusionID then return; end
+	if app.IsRetail then
+		-- Classic can pre-emptively see 'fake' future achievements which are based on a spell
+		if reference.achievementID then return end
+	end
 
 	-- This is to show which characters have this profession.
 	local id = reference.spellID;
