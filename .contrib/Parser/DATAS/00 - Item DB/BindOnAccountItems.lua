@@ -602,4 +602,30 @@ i(30245);	-- Leggings of the Vanquished Champion
 i(30246);	-- Leggings of the Vanquished Defender
 i(30247);	-- Leggings of the Vanquished Hero
 
+-- Tier 6 Tokens [MH / BT / SWP]
+i(31097);	-- Helm of the Forgotten Conqueror
+i(31095);	-- Helm of the Forgotten Protector
+i(31096);	-- Helm of the Forgotten Vanquisher
+i(31101);	-- Pauldrons of the Forgotten Conqueror
+i(31103);	-- Pauldrons of the Forgotten Protector
+i(31102);	-- Pauldrons of the Forgotten Vanquisher
+i(31089);	-- Chestguard of the Forgotten Conqueror
+i(31091);	-- Chestguard of the Forgotten Protector
+i(31090);	-- Chestguard of the Forgotten Vanquisher
+i(34848);	-- Bracers of the Forgotten Conqueror
+i(34851);	-- Bracers of the Forgotten Protector
+i(34852);	-- Bracers of the Forgotten Vanquisher
+i(31092);	-- Gloves of the Forgotten Conqueror
+i(31094);	-- Gloves of the Forgotten Protector
+i(31093);	-- Gloves of the Forgotten Vanquisher
+i(34853);	-- Belt of the Forgotten Conqueror
+i(34854);	-- Belt of the Forgotten Protector
+i(34855);	-- Belt of the Forgotten Vanquisher
+i(31098);	-- Leggings of the Forgotten Conqueror
+i(31100);	-- Leggings of the Forgotten Protector
+i(31099);	-- Leggings of the Forgotten Vanquisher
+i(34856);	-- Boots of the Forgotten Conqueror
+i(34857);	-- Boots of the Forgotten Protector
+i(34858);	-- Boots of the Forgotten Vanquisher
+
 -- #endif

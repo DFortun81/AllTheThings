@@ -349,9 +349,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							i(122110, {	-- Sister of Temptation (PET!)
 								["timeline"] = { ADDED_6_1_0 },
 							}),
-							i(31101),	-- Pauldrons of the Forgotten Conqueror
-							i(31103),	-- Pauldrons of the Forgotten Protector
-							i(31102),	-- Pauldrons of the Forgotten Vanquisher
+							i(31101, {	-- Pauldrons of the Forgotten Conqueror
+								["classes"] = { PALADIN, PRIEST, WARLOCK },
+							}),
+							i(31103, {	-- Pauldrons of the Forgotten Protector
+								["classes"] = { WARRIOR, HUNTER, SHAMAN },
+							}),
+							i(31102, {	-- Pauldrons of the Forgotten Vanquisher
+								["classes"] = { ROGUE, MAGE, DRUID },
+							}),
 							i(32369),	-- Blade of Savagery
 							i(32370),	-- Nadina's Pendant of Purity
 							i(32365),	-- Heartshatter Breastplate
