@@ -1074,6 +1074,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					-- Misc
 					un(REMOVED_FROM_GAME, i(143478)),	-- Arena Invitation
 					i(143328),	-- Battle Report
+					i(140587),	-- Defiled Augment Rune
 					un(REMOVED_FROM_GAME, i(143329)),	-- Dire Summons
 					i(140362),	-- Dust from the Shadowlands
 					un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
