@@ -1,46 +1,42 @@
 -- WoW API Function Templates
-WOWAPI_GetItemCount = function(itemID)
-	-- #if AFTER TWW
-	return "C_Item.GetItemCount(" .. itemID .. ", true)";
-	-- #else
-	return "GetItemCount(" .. itemID .. ", true)";
-	-- #endif
-end
-WOWAPI_GetSpellCooldown = function(spellID)
-	-- #if AFTER TWW
-	return "_.WOWAPI.GetSpellCooldown(" .. spellID .. ")";
-	-- #else
-	return "GetSpellCooldown(" .. spellID .. ")";
-	-- #endif
-end
-WOWAPI_GetSpellName = function(spellID)
-	-- #if AFTER TWW
-	return "C_Spell.GetSpellName(" .. spellID .. ")";
-	-- #else
-	return "GetSpellInfo(" .. spellID .. ")";
-	-- #endif
-end
-WOWAPI_GetItemClassInfo = function(a,b)
-	-- #if AFTER TWW
-	return "C_Item.GetItemClassInfo(" .. a .. ")";
-	-- #else
-	return "GetItemClassInfo(" .. a .. ")";
-	-- #endif
-end
+
+-- #if AFTER TWW
+WOWAPI_GetItemCount = function(itemID) return "C_Item.GetItemCount(" .. itemID .. ", true)"; end
+-- #else
+WOWAPI_GetItemCount = function(itemID) return "GetItemCount(" .. itemID .. ", true)"; end
+-- #endif
+-- #if AFTER TWW
+WOWAPI_GetSpellCooldown = function(spellID) return "_.WOWAPI.GetSpellCooldown(" .. spellID .. ")"; end
+-- #else
+WOWAPI_GetSpellCooldown = function(spellID) return "GetSpellCooldown(" .. spellID .. ")"; end
+-- #endif
+-- #if AFTER TWW
+WOWAPI_GetSpellName = function(spellID) return "C_Spell.GetSpellName(" .. spellID .. ")"; end
+-- #else
+WOWAPI_GetSpellName = function(spellID) return "GetSpellInfo(" .. spellID .. ")"; end
+-- #endif
+-- #if AFTER TWW
+WOWAPI_GetItemClassInfo = function(a,b) return "C_Item.GetItemClassInfo(" .. a .. ")"; end
+-- #else
+WOWAPI_GetItemClassInfo = function(a,b) return "GetItemClassInfo(" .. a .. ")"; end
+-- #endif
+
 WOWAPI_GetItemSubClassInfo = function(a,b)
+	local ret
 	if a and b then
 		-- #if AFTER TWW
-		return "C_Item.GetItemSubClassInfo(" .. a .. "," .. b .. ")";
+		ret = "C_Item.GetItemSubClassInfo(" .. a .. "," .. b .. ")";
 		-- #else
-		return "GetItemSubClassInfo(" .. a .. "," .. b .. ")";
+		ret = "GetItemSubClassInfo(" .. a .. "," .. b .. ")";
 		-- #endif
 	else
 		-- #if AFTER TWW
-		return "C_Item.GetItemSubClassInfo(" .. a .. ")";
+		ret = "C_Item.GetItemSubClassInfo(" .. a .. ")";
 		-- #else
-		return "GetItemSubClassInfo(" .. a .. ")";
+		ret = "GetItemSubClassInfo(" .. a .. ")";
 		-- #endif
 	end
+	return ret
 end
 WOWAPI_GetAchievementName = function(achievementID)
 	return "select(2,GetAchievementInfo(" .. achievementID .. "))";
