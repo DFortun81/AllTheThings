@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				},
 			}),
 			n(220267, {	-- Charmonger
-				["coord"] = { 61.5, 26.8, THE_RINGING_DEEPS },
+				["coord"] = { 41.3, 16.9, THE_RINGING_DEEPS },	-- old coord: 61.5, 26.8 or more than one spawn now?
 				["questID"] = 81562,
 				["g"] = {
 					i(221249),	-- Kobold Rodent Squasher
@@ -71,13 +71,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					{ 46.3, 17.9, THE_RINGING_DEEPS },
 				},
 				["questID"] = 80536,
+				["g"] = {
+					i(221507),	-- Earth Golem's Wrap
+				},
 			}),
 			n(218393, {	-- Disturbed Earthgorger
 				["coord"] = { 67.1, 52.6, THE_RINGING_DEEPS },
 				["questID"] = 80003,
 			}),
-			n(221199, {	-- Hunger of the Deeps
-				["coord"] = { 65.4, 49.5, THE_RINGING_DEEPS },
+			n(221199, {	-- Hungerer of the Deeps
+				["coord"] = { 66.3, 49.5, THE_RINGING_DEEPS },
 				["questID"] = 81648,
 			}),
 			n(220275, {	-- King Splash
@@ -137,8 +140,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				},
 			}),
 			n(220270, {	-- Zilthara <The Deepflayer Devourer>
-				["coord"] = { 52.7, 27.8, THE_RINGING_DEEPS },
+				["coord"] = { 52.0, 26.4, THE_RINGING_DEEPS },
 				["questID"] = 80506,
+				["g"] = {
+					i(221220),	-- Basilisk Scale Pauldrons
+				},
 			}),
 		})),
 	}),
@@ -146,10 +152,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 
 root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 	m(ISLE_OF_DORN, {
+		q(84046),	-- Extra HQT: Automaxor
 		q(84044),	-- Extra HQT: Charmonger
 		q(84045),	-- Extra HQT: Coalesced Monstrosity
+		q(84042),	-- Extra HQT: Cragmund
 		q(84044),	-- Extra HQT: Deathbound Husk
+		q(84050),	-- Extra HQT: Disturbed Earthgorger
+		q(84048),	-- Extra HQT: Hungerer of the Deeps
 		q(84047),	-- Extra HQT: Kelpmire
+		q(84049),	-- Extra HQT: Spore-Infused Shalewing
+		q(84040),	-- Extra HQT: Terror of Forge
 		q(84043),	-- Extra HQT: Trungal
+		q(84041),	-- Extra HQT: Zilthara
 	}),
 }));

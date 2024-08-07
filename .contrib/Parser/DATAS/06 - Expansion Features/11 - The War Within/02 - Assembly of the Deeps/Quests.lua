@@ -24,7 +24,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}, {	-- RENOWN 5 --
 			}, {	-- RENOWN 6 --
+				q(82369, {	-- A Shining Bundle of Goods
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+					["g"] = {
+						i(226148),	-- Wax-sealed Weathered Crests
+					},
+				}),
 			}, {	-- RENOWN 7 --
+				q(84914, {	-- Valorstones
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+				}),
 			}, {	-- RENOWN 8 --
 			}, {	-- RENOWN 9 --
 			}, {	-- RENOWN 10 --

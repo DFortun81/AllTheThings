@@ -185,8 +185,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				--["coord"] = { X, Y, THE_RINGING_DEEPS },
 			}),
 			o(455275, {	-- Notes On The Machine Speakers: Fragment III
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 51.1, 14.5, THE_RINGING_DEEPS },
 			}),
 			o(455276, {	-- Notes On The Machine Speakers: Fragment IV
 				-- TODO

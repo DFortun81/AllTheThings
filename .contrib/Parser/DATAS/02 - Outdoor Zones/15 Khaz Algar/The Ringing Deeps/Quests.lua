@@ -604,7 +604,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 225583 },	-- Machinist Kilton
 					["coord"] = { 41.1, 21.4, THE_RINGING_DEEPS },
 					["g"] = {
-						i(219456),	-- Earthen Traveler's Scepter
+						-- same loot table as from `New Candle, New Hope` +
+						i(219455),	-- Earthen Traveler's Shield
 					},
 				}),
 			}),
@@ -615,7 +616,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 216164 },	-- Gnawbles
 					["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
 					["g"] = {
-						--c(2902),	-- The Assembly of the Deeps Commendation, this is one-time Warband bonus
+						i(227792),	-- Everyday Cache
 					},
 				}),
 				q(79343, {	-- Everyday I'm Snufflin'

@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 213108 },	-- General Steelstrike
 					["coord"] = { 39.0, 71.6, HALLOWFALL },
 				}),
-				q(78630, {	-- The Reckoning
+				q(78630, {	-- The Rise of the Reckoning
 					["sourceQuests"] = {
 						78629,	-- Running on Reservers
 						78628,	-- Trapdoor Sprung

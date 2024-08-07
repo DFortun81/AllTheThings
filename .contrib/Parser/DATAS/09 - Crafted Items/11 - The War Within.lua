@@ -1382,9 +1382,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210807),	-- Blessing Blossom+++
 			i(224264),	-- Deepgrove Petal
 			i(224265),	-- Deepgrove Rose
+			i(219196),	-- Empowered Mulch
+			i(219195),	-- Imbued Mulch
 			i(210799),	-- Luredrop+
 			i(210800),	-- Luredrop++
 			i(210801),	-- Luredrop+++
+			i(219194),	-- Magical Mulch
 			i(210796),	-- Mycobloom+
 			i(210797),	-- Mycobloom++
 			i(210798),	-- Mycobloom+++
@@ -1453,14 +1456,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(79929, 435870);	-- Crystallized Blessing Blossom
 			FirstCraft(79930, 435871);	-- Irradiated Blessing Blossom
 			FirstCraft(79928, 435834);	-- Lush Blessing Blossom
-			--FirstCraft(XXXXX, 435873);	-- Sporefused Blessing Blossom
+			FirstCraft(79932, 435873);	-- Sporefused Blessing Blossom
 			-- Luredrop
 			FirstCraft(79913, 435821);	-- Luredrop
 			FirstCraft(79916, 435858);	-- Altered Luredrop
 			--FirstCraft(XXXXX, 435860);	-- Camouflaged Luredrop
 			FirstCraft(79915, 435857);	-- Crystallized Luredrop
 			--FirstCraft(XXXXX, 435859);	-- Irradiated Luredrop
-			--FirstCraft(XXXXX, 435829);	-- Lush Luredrop
+			FirstCraft(79914, 435829);	-- Lush Luredrop
 			FirstCraft(79919, 435861);	-- Sporefused Luredrop
 			-- Mycobloom
 			FirstCraft(79906, 435811);	-- Mycobloom
@@ -2286,10 +2289,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		},{
 			-- Aqirite
 			--FirstCraft(XXXXX, 439707);	-- Aqirite
-			--FirstCraft(XXXXX, 439713);	-- Aqirite Seam
+			FirstCraft(80357, 439713);	-- Aqirite Seam
 			--FirstCraft(XXXXX, 439725);	-- Camouflaged Aqirite
 			FirstCraft(80360, 439716);	-- Crystallized Aqirite
-			--FirstCraft(XXXXX, 439722);	-- EZ-Mine Aqirite
+			FirstCraft(80366, 439722);	-- EZ-Mine Aqirite
 			FirstCraft(80354, 439710);	-- Rich Aqirite
 			FirstCraft(80372, 439728);	-- Webbed Aqirite
 			FirstCraft(80363, 439719);	-- Weeping Aqirite
@@ -2298,7 +2301,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80356, 439712);	-- Bismuth Seam
 			--FirstCraft(XXXXX, 439724);	-- Camouflaged Bismuth
 			FirstCraft(80359, 439715);	-- Crystallized Bismuth
-			--FirstCraft(XXXXX, 439721);	-- EZ-Mine Bismuth
+			FirstCraft(80365, 439721);	-- EZ-Mine Bismuth
 			FirstCraft(80353, 439709);	-- Rich Bismuth
 			FirstCraft(80371, 439727);	-- Webbed Bismuth
 			FirstCraft(80362, 439718);	-- Weeping Bismuth
@@ -2307,7 +2310,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 439714);	-- Ironclaw Seam
 			--FirstCraft(XXXXX, 439726);	-- Camouflaged Ironclaw
 			FirstCraft(80361, 439717);	-- Crystallized Ironclaw
-			--FirstCraft(XXXXX, 439723);	-- EZ-Mine Ironclaw
+			FirstCraft(80367, 439723);	-- EZ-Mine Ironclaw
 			FirstCraft(80355, 439711);	-- Rich Ironclaw
 			FirstCraft(80373, 439729);	-- Webbed Ironclaw
 			--FirstCraft(XXXXX, 439720);	-- Weeping Ironclaw

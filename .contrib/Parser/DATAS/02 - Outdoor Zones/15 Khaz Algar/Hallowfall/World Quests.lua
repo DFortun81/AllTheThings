@@ -16,6 +16,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 223409 },	-- Guttergunk
 					["coord"] = { 61.1, 69.0, HALLOWFALL },
 				})),
+				q(82254, {	-- Aquacalypse
+					["coord"] = { 45.3, 23.9, HALLOWFALL },
+				}),
 				q(82041, {	-- Beledar's Blessing
 					["coord"] = { 24.3, 60.9, HALLOWFALL },
 				}),

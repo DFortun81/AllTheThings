@@ -1814,11 +1814,15 @@ i(225419);	-- Green Hills of Stranglethorn - Page 27
 -- PATCH ADDED_11_PH_LAUNCH --
 ------------------
 i(220287);	-- Acid-Filled Sack
+i(228398);	-- Angry Rock
 i(217170);	-- Backup Candles
 i(220290);	-- Barbed Pincers
 i(213254);	-- Big Gold Nugget
 i(220291);	-- Bioluminescent Thorax
 i(225543);	-- Bloodied Idol
+i(228455);	-- Bolt of Bouldercloth
+i(228456);	-- Bouldercloth
+i(228458);	-- Bouldercloth Bag
 i(225801);	-- Braided Seaweed Bangle
 i(225716);	-- Brax's Favorite Cog
 i(225709);	-- Brax's Left Shoe
@@ -1827,6 +1831,7 @@ i(225715);	-- Brax's To-Do List
 i(225718);	-- Brax's Toothpick
 i(217171);	-- CANDLE KING DIARY
 i(220277);	-- Carapace Fragment
+i(228485);	-- Carver's Spare Whittling Knife
 i(220281);	-- Charged Fragments
 i(220249);	-- Chipped Mandible
 i(220254);	-- Chipped Molars
@@ -1835,7 +1840,9 @@ i(217168);	-- Chocolate Coins
 i(217169);	-- Cloak of Beards
 i(220256);	-- Clump of Rotting Detritus
 i(220267);	-- Combustible Gland
+i(228482);	-- Cracked Iridescent Pearl
 i(225827);	-- Cracked Pickaxe
+i(228387);	-- Crumbling Bismuth
 i(225804);	-- Crumpled Patrol Assignment
 i(228494);	-- Crunchy Rock Candy
 i(217167);	-- Crusty Chalice
@@ -1859,6 +1866,7 @@ i(225814);	-- Feather-on-a-Stick
 i(220302);	-- Fractured Casing
 i(225829);	-- Fractured Interface Crystal
 i(228490);	-- Fresh Grazing Rocks
+i(228487);	-- Freshly Fallen Sticks
 i(225677);	-- Gleaming Chaos
 i(220259);	-- Gob of Mucus
 i(220509);	-- Gossamer Web
@@ -1876,8 +1884,10 @@ i(225791);	-- Jar of Alchemical Solvent
 i(225785);	-- Jar of Pickled Insects
 i(220264);	-- Jaw with Barbed Teeth
 i(228956);	-- Junk Bucket
+i(220238);	-- Keen Fang
 i(220234);	-- Leaden Vial
 i(225849);	-- Long-Forgotten Glove
+i(228483);	-- Lovingly Carved Ramolith
 i(225820);	-- Lovingly Worn Chisel
 i(225803);	-- Lynx Tag Collar
 i(220248);	-- Mass of Melted Wax
@@ -1890,6 +1900,7 @@ i(217162);	-- Necklace of Kobold Teeth
 i(210829);	-- Neutralize Concoctions
 i(224153);	-- Nibbled Shroomcap
 i(213258);	-- Odorant Oddity
+i(225845);	-- Old Explorer's Compass
 i(223887);	-- Ominous Herbs
 i(223885);	-- Ominous Transmutation
 i(228608);	-- On the Application of Arathi Technology to Earthen Life
@@ -1942,6 +1953,7 @@ i(225821);	-- Tattered Theater Hood
 i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
 i(225852);	-- The Foolhardy's Guide to Survival
 i(220296);	-- Thickly Webbed Foot
+i(228481);	-- Tiny Fathomclam
 i(220223);	-- Torn Gossamer Scrap
 i(220272);	-- Torn Manuscript Page
 i(220282);	-- Tuft of Whiskers
@@ -1972,6 +1984,7 @@ i(227321);	-- Blessed Brew
 i(227335);	-- Borer Blood Pudding
 i(227308);	-- Butterflied Deepstrider
 i(227326);	-- Chalcocite Lava Cake
+i(217896);	-- Cinderbrew Mead
 i(227314);	-- Coffee, Light Ice
 i(227301);	-- Crystal Tots
 i(227316);	-- Eggnog

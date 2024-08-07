@@ -9,7 +9,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 	m(HALLOWFALL, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(207802, {	-- Beledar's Spawn
-				["coord"] = { 48.9, 32.0, HALLOWFALL },
+				["description"] = "Can spawn only during crystal emit purple light",
+				["coords"] = {
+					{ 48.9, 32.0, HALLOWFALL },
+					{ 58.0, 49.2, HALLOWFALL },
+					{ 58.6, 28.7, HALLOWFALL },
+				},
 				["questID"] = 81763,
 				["g"] = {
 					i(223315),	-- Beledar's Spawn (MOUNT!)
@@ -62,6 +67,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				},
 				["questID"] = 81836,
 				["g"] = {
+					i(221211),	-- Grasp of the Shallows
 					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
@@ -115,8 +121,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
-			n(221690, {	-- Strenght of Beledar
-				["coord"] = { 42.7, 31.3, HALLOWFALL },
+			n(221690, {	-- Rage of Beledar
+				["coord"] = { 43.6, 29.9, HALLOWFALL },
 				["questID"] = 81849,
 				["g"] = {
 					i(221508),	-- Pelt of Beledar's Strength
@@ -125,10 +131,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			n(221648, {	-- The Perchfather
 				["coord"] = { 44.0, 16.4, HALLOWFALL },
 				["questID"] = 81791,
+				["g"] = {
+					i(221229),	-- Perchfather's Cuffs
+				},
 			}),
 			n(218444, {	-- The Taskmaker
 				["coord"] = { 56.4, 69.0, HALLOWFALL },
 				["questID"] = 80009,
+				["g"] = {
+					i(221240),	-- Nerubian Stagshell Gouger
+				},
 			}),
 		})),
 	}),

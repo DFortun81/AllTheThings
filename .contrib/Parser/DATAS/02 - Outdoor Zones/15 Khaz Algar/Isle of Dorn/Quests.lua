@@ -495,10 +495,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				q(79526, {	-- Sedition
 					["sourceQuests"] = {
 						79546,	-- The Machine Speakeasy
-						78630,	-- The Reckoning
+						78630,	-- The Rise of the Reckoning
 					},
 					["provider"] = { "o", 429303 },	-- Angrily-Scrawled Poster
 					["coord"] = { 45.7, 55.5, DORNOGAL },
+					["g"] = {
+						i(223954),	-- Angrily-Scrawled Poster (QI!)
+					},
 				}),
 				q(79527, {	-- Damage Mitigation
 					["sourceQuests"] = { 79526 },	-- Sedition
@@ -843,7 +846,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}),
 			header(HEADERS.AchCriteria, 20595.09, {	-- Brotherhood in the Skolzgal Wood
 				q(80456, {	-- A Sassy Arathi
-					["sourceQuests"] = { 78630 },	-- The Reckoning
+					["sourceQuests"] = { 78630 },	-- The Rise of the Reckoning
 					["provider"] = { "n", 219437 },	-- Dornogal CItizen
 					["coord"] = { 55.3, 55.7, ISLE_OF_DORN },
 					["isBreadcrumb"] = true,

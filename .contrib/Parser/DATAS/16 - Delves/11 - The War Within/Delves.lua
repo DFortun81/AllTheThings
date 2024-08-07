@@ -370,6 +370,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	m(2277, {	-- Nightfall Sanctum
 		["coord"] = { 34.6, 46.8, HALLOWFALL },
 		["g"] = {
+			i(216420),	-- Signal Flare (QI!)
+			i(216433),	-- Stolen Relic (QI!)
 			n(ACHIEVEMENTS, {
 				ach(40809),	-- Nightfall Sanctum Discoveries
 				ach(40530),	-- Nightfall Sanctum Stories (automated)
@@ -670,6 +672,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(225906),	-- Lifeless Necrotic Relic
 		i(225900),	-- Light-Touched Idol
 		i(218129),	-- Porcelain Arrowhead Idol
+		i(225904),	-- Time Lost Relic
 		i(225899),	-- Unbreakable Iron Idol
 		filter(BATTLE_PETS, {
 			i(222971),	-- Bouncer (PET!) [Nerubian?]
@@ -688,6 +691,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		filter(MISC, {
 			i(224181),	-- Companion Experience (Tier 1-2)
 			i(224411),	-- Companion Experience (Tier 3)
+			i(224412),	-- Companion Experience (every tier)
 			i(222922),	-- Expeditionary Spoils (Tier 1)
 			i(222923),	-- Expeditionary Spoils (Tier 2)
 			i(225178),	-- Expeditionary Spoils (Tier 3)
@@ -1182,4 +1186,5 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 root(ROOTS.HiddenQuestTriggers, {
 	q(82772),	-- First Time per day? (Got Unflagged at reset)
 	q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
+	q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
 });

@@ -567,9 +567,6 @@ root(ROOTS.Unsorted, {
 				}),
 				prof(HERBALISM, {
 					i(217105),	-- Refine Khaz Algar Herbs
-					i(219194),	-- Magical Mulch
-					i(219195),	-- Imbued Mulch
-					i(219196),	-- Empowered Mulch
 					i(214595),	-- Sporefused Verdant Seed
 					i(214597),	-- Irradiated Verdant Seed
 					i(214605),	-- Crystallized Verdant Seed
@@ -782,7 +779,6 @@ root(ROOTS.Unsorted, {
 				i(225898),	-- Idol of the Earthmother
 				i(225901),	-- Streamlined Relic \\ Power Idol
 				i(225903),	-- Amorphous Relic \\ Relic Page
-				i(225904),	-- Time Lost Relic
 				i(225905),	-- Olden Seeker Relic
 				i(225907),	-- Relic of Sentience
 				i(225908),	-- Relicblood of Zekvir
@@ -1378,8 +1374,6 @@ root(ROOTS.Unsorted, {
 				i(215360),	-- Personalized Setting
 				i(215448),	-- Darkstem Stew \\ Darkstem Brew
 				i(215466),	-- Sanctified Supplies
-				i(216420),	-- Signal Flare
-				i(216433),	-- Stolen Relic
 				i(216528),	-- Faded Supply Chest Key
 				i(216603),	-- Boots of the Light
 				i(216708),	-- Holy Candle
@@ -1393,7 +1387,6 @@ root(ROOTS.Unsorted, {
 				i(217405),	-- Time-Worn Weapon Charm
 				i(217715),	-- Key Scroll
 				i(217895),	-- Pheromone Bottle
-				i(217896),	-- Cinderbrew Mead
 				i(217897),	-- Volatile Pheromone
 				i(218308),	-- Winter Veil Cracker
 				i(218309),	-- Gently Shaken Gift
@@ -1420,7 +1413,6 @@ root(ROOTS.Unsorted, {
 				i(220225),	-- Tattered Standard
 				i(220233),	-- Extinguished Icon
 				i(220235),	-- Electrified Teeth
-				i(220238),	-- Keen Fang
 				i(220239),	-- Severed Spiraled Tail
 				i(220240),	-- Night's Litany
 				i(220245),	-- Charged Antennae
@@ -1496,7 +1488,6 @@ root(ROOTS.Unsorted, {
 				i(224273),	-- Wooden Figure
 				i(224274),	-- Sturdy Locket
 				i(224292),	-- Radiant Fuel Shard
-				i(224412),	-- Companion Experience
 				i(224464),	-- Demonic Healthstone
 				i(224762),	-- Delver's Waterskin
 				i(224767),	-- Giant Candle Parts
@@ -1557,7 +1548,6 @@ root(ROOTS.Unsorted, {
 				i(225842),	-- Whirling Sphere
 				i(225843),	-- Ancient Bronze Hourglass
 				i(225844),	-- Damaged Radial Cog
-				i(225845),	-- Old Explorer's Compass
 				i(225846),	-- Fractured Command Matrix
 				i(225847),	-- Inoperable Keystone
 				i(225848),	-- Cracked Etheric Power Core
@@ -1578,7 +1568,6 @@ root(ROOTS.Unsorted, {
 				i(226120),	-- Deployable Battle Supplies \\ Deployable Charge Station
 				i(226131),	-- Deployable Wind-Wrangling Spire \\ Deployable Wind-Wrangling Station
 				i(226147),	-- Bunch of Brave Rocks
-				i(226148),	-- Wax-sealed Weathered Crests
 				i(226149),	-- Pile of Humming Shinies
 				i(226150),	-- Gem-Studded Candelabra
 				i(226151),	-- Wax-Coated Coffer Unlocker
@@ -1625,14 +1614,12 @@ root(ROOTS.Unsorted, {
 				i(227782),	-- Delver's Bounty
 				i(227783),	-- Delver's Bounty
 				i(227784),	-- Delver's Bounty
-				i(227792),	-- Everyday Cache
 				i(227890),	-- Unrecognizable Prototype
 				i(228192),	-- Cracked Fel Focus
 				i(228193),	-- Chipped Demon's Blade
 				i(228194),	-- Fully Scrapped Scrap
 				i(228195),	-- Tattered Goblin Cap
 				i(228369),	-- Reconstructed Ledger
-				i(228387),	-- Crumbling Bismuth
 				i(228388),	-- Damp Doll
 				i(228390),	-- Left Boot
 				i(228391),	-- Right Boot
@@ -1641,7 +1628,6 @@ root(ROOTS.Unsorted, {
 				i(228394),	-- Lost Note
 				i(228395),	-- Mud Clump
 				i(228396),	-- Dead Fish
-				i(228398),	-- Angry Rock
 				i(228414),	-- Frayed Wiring
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
@@ -1655,10 +1641,7 @@ root(ROOTS.Unsorted, {
 				i(228452),	-- Deepest, Darkest Black Ink
 				i(228453),	-- Extra Large Bag of Popped Pebbles
 				i(228454),	-- Collector's Commemorative Proscenium Playbill
-				i(228455),	-- Bolt of Bouldercloth
-				i(228456),	-- Bouldercloth
 				i(228457),	-- Lightspark Grade Book
-				i(228458),	-- Bouldercloth Bag
 			}),
 			n(QUEST_ITEMS, {
 				i(206348),	-- Fragmented Flame
@@ -1915,7 +1898,6 @@ root(ROOTS.Unsorted, {
 				i(219439),	-- Earthen Mining Hat
 				i(219440),	-- Earthen Leggings
 				i(219441),	-- Earthen Cord
-				i(219455),	-- Earthen Traveler's Shield
 				i(219458),	-- Earthen Traveler's Dagger
 				i(219460),	-- Earthen Traveler's Handaxe
 				i(219464),	-- Earthen Traveler's Boomstick
@@ -2011,18 +1993,15 @@ root(ROOTS.Unsorted, {
 				i(221208),	-- Unseen Cutthroat's Tunic \\ Fel Assassin Tunic
 				i(221209),	-- Flame Trader's Gloves
 				i(221210),	-- Grips of the Earth
-				i(221211),	-- Grasp of the Shallows
 				i(221214),	-- Chitin Chain Headpiece
 				i(221215),	-- Taskmaster's Mining Cap
 				i(221216),	-- Bruin Strength Legplates
 				i(221218),	-- Reinforced Construct's Greaves
-				i(221220),	-- Basilisk Scale Pauldrons
 				i(221222),	-- Water-Imbued Spaulders
 				i(221223),	-- Bog Beast Mantle
 				i(221224),	-- Bouldershell Waistguard
 				i(221227),	-- Monstrous Fungal Cord
 				i(221228),	-- Infested Fungal Wristwraps
-				i(221229),	-- Perchfather's Cuffs
 				i(221230),	-- Storm Bindings
 				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
@@ -2045,7 +2024,6 @@ root(ROOTS.Unsorted, {
 				i(221265),	-- Charm of the Underground Beast
 				i(221505),	-- [DNT] Rare Cloth - Robe
 				i(221506),	-- Arachnid's Web-Sown Guise
-				i(221507),	-- Earth Golem's Wrap
 
 				i(223005),	-- String of Fungal Fruits
 
@@ -2515,11 +2493,6 @@ root(ROOTS.Unsorted, {
 			}),
 			--------
 			i(228457),	-- Lightspark Grade Book
-			i(228481),	-- Tiny Fathomclam
-			i(228482),	-- Cracked Iridescent Pearl
-			i(228483),	-- Lovingly Carved Ramolith
-			i(228485),	-- Carver's Spare Whittling Knife
-			i(228487),	-- Freshly Fallen Sticks
 			i(228495),	-- Well-Used Potter's Wheel
 			i(228496),	-- Cracked Lantern
 			i(228497),	-- Rusted Airship Cog

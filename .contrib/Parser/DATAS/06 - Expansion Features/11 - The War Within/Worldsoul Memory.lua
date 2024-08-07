@@ -10,10 +10,7 @@ WORLDSOUL_MEMORY = createHeader({
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(WORLDSOUL_MEMORY, {
-		["providers"] = {
-			{ "n", 222165 },	-- Worldsoul Memory
-			{ "i", 220520 },	-- Radiant Echo
-		},
+		["provider"] = { "n", 222165 },	-- Worldsoul Memory
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40252),	-- A Series of Echoes (automated)
@@ -55,7 +52,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(225218),	-- Echoing Fragment: Hallowfall (CI!)
 					},
 				}),
-				q(82263),	-- Worldsoul Memory: Elemental Fury
+				q(82263, {	-- Worldsoul Memory: Elemental Fury
+					["coord"] = { 43.6, 10.7, THE_RINGING_DEEPS },
+					["g"] = {
+						n(222756),	-- Deepwalker Cavelord
+						n(222743),	-- Oremex Flamebreaker
+						n(228141),	-- Treasure Elemental
+						i(225219),	-- Echoing Fragment: The Ringing Deeps (CI!)
+					},
+				}),
 				q(82286, {	-- Worldsoul Memory: Old Gods Forsaken
 					["coord"] = { 21.1, 45.5, NERUBAR },
 					["g"] = {

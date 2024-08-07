@@ -34,6 +34,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				q(82580, {	-- Courier Mission: Ore Recovery
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 				}),
+				q(83930, {	-- Deworming Solution
+					["coord"] = { 57.4, 39.5, THE_RINGING_DEEPS },
+				}),
 				q(83538, {	-- Excavation Liberation (TODO: probably pvp?)
 					["coord"] = { 62.0, 84.9, THE_RINGING_DEEPS },
 				}),
