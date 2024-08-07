@@ -373,9 +373,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							22952,	-- Veras Darkshadow
 						},
 						["groups"] = {
-							i(31098),	-- Leggings of the Forgotten Conqueror
-							i(31100),	-- Leggings of the Forgotten Protector
-							i(31099),	-- Leggings of the Forgotten Vanquisher
+							i(31098, {	-- Leggings of the Forgotten Conqueror
+								["classes"] = { PALADIN, PRIEST, WARLOCK },
+							}),
+							i(31100, {	-- Leggings of the Forgotten Protector
+								["classes"] = { WARRIOR, HUNTER, SHAMAN },
+							}),
+							i(31099, {	-- Leggings of the Forgotten Vanquisher
+								["classes"] = { ROGUE, MAGE, DRUID },
+							}),
 							i(32376),	-- Forest Prowler's Helm
 							i(32373),	-- Helm of the Illidari Shatterer
 							i(32518),	-- Veil of Turning Leaves
@@ -422,9 +428,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							}),
 							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32837)),	-- Warglaive of Azzinoth (LEGENDARY! MH)
 							applyclassicphase(TBC_PHASE_THREE_GLAIVEPRIO, i(32838)),	-- Warglaive of Azzinoth (LEGENDARY! OH)
-							i(31089),	-- Chestguard of the Forgotten Conqueror
-							i(31091),	-- Chestguard of the Forgotten Protector
-							i(31090),	-- Chestguard of the Forgotten Vanquisher
+							i(31089, {	-- Chestguard of the Forgotten Conqueror
+								["classes"] = { PALADIN, PRIEST, WARLOCK },
+							}),
+							i(31091, {	-- Chestguard of the Forgotten Protector
+								["classes"] = { WARRIOR, HUNTER, SHAMAN },
+							}),
+							i(31090, {	-- Chestguard of the Forgotten Vanquisher
+								["classes"] = { ROGUE, MAGE, DRUID },
+							}),
 							i(32374),	-- Zhar'doom, Greatstaff of the Devourer
 							i(32500),	-- Crystal Spire of Karabor
 							i(32471),	-- Shard of Azzinoth
