@@ -255,6 +255,43 @@ i(48716);	-- Venerable Mass of McGowan
 i(12844);	-- Argent Dawn Valor Token
 
 -----------------
+-- PATCH 6.2.0 --
+-----------------
+i(127781);	-- Baleful Cloth Hood
+i(127783);	-- Baleful Cloth Spaulders
+i(127778);	-- Baleful Cloth Robe
+i(127777);	-- Baleful Cloth Bracers
+i(127780);	-- Baleful Cloth Gauntlets
+i(127784);	-- Baleful Cloth Girdle
+i(127782);	-- Baleful Cloth Leggings
+i(127779);	-- Baleful Cloth Treads
+i(127794);	-- Baleful Leather Hood
+i(127796);	-- Baleful Leather Spaulders
+i(127791);	-- Baleful Leather Tunic
+i(127790);	-- Baleful Leather Bracers
+i(127793);	-- Baleful Leather Gauntlets
+i(127797);	-- Baleful Leather Girdle
+i(127795);	-- Baleful Leather Leggings
+i(127792);	-- Baleful Leather Treads
+i(127807);	-- Baleful Mail Hood
+i(127809);	-- Baleful Mail Spaulders
+i(127804);	-- Baleful Mail Robe
+i(127803);	-- Baleful Mail Bracers
+i(127806);	-- Baleful Mail Gauntlets
+i(127810);	-- Baleful Mail Girdle
+i(127808);	-- Baleful Mail Leggings
+i(127805);	-- Baleful Mail Treads
+i(127820);	-- Baleful Plate Hood
+i(127822);	-- Baleful Plate Spaulders
+i(127817);	-- Baleful Plate Chest
+i(127816);	-- Baleful Plate Bracers
+i(127819);	-- Baleful Plate Gauntlets
+i(127823);	-- Baleful Plate Girdle
+i(127821);	-- Baleful Plate Leggings
+i(127818);	-- Baleful Plate Treads
+i(127799);	-- Baleful Pendant
+
+-----------------
 -- PATCH 6.2.2 --
 -----------------
 i(129941);	-- Commendation of the Ebon Blade [BOA]
