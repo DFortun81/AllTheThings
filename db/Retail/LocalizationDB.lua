@@ -628,6 +628,7 @@ localize(L.HEADER_NAMES, {
 	[-1000995] = select(2,GetAchievementInfo(12185)),
 	[-1000999] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-1001000] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1001001] = "The War Within Seasonal Promotions",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -713,6 +714,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000869] = "If you are phased into the Invasion Blasted Lands and need to go to the pre-Invasion Blasted Lands, then you need to speak with Zidormi, who is standing on a small hill near the entrance of the zone from Swamp of Sorrows.",
 	[-1000872] = "Get swept away in the Plunderstorm— a fun, new, limited-time, pirate-themed event of prodigious proportions lasting the next several weeks. Scour the map and try to be the last pirate standing while dashing across the Arathi Highlands to find abilities, upgrades, and loot to plunder just to survive!\n\nTo Play: Login to Retail WoW and select 'Plunderstorm' from the Game Mode on the top left of your Character Select screen.",
 	[-1000875] = "The Infinite Bazaar has multiple locations.",
+	[-1001001] = "These promotions happened during the time The War Within.\n\nThey are listed in the order of their first appearance.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1138,6 +1140,7 @@ localize(L.HEADER_ICONS, {
 	[-1000993] = "Interface/Icons/inv_stormdragonmount2light",
 	[-1000994] = "Interface/Icons/inv_stormdragonmount2yellow",
 	[-1000995] = "Interface/Icons/inv_stormdragonmount2_fel",
+	[-1001001] = _.asset("Expansion_TWW"),
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,

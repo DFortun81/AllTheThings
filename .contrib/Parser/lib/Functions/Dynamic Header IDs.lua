@@ -413,6 +413,7 @@ HeaderAssignments = {
 	["The Upper Necropolis"] = -1000053,
 	["The Wanderer and the Serpent"] = -1000318,
 	["The War Within"] = -1000250,
+	["The War Within Seasonal Promotions"] = -1001001,
 	["The Wicked Grotto"] = -1000178,
 	["Third Chest"] = -1000058,
 	["Thousand Boat Bash"] = -1000229,
@@ -506,4 +507,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1000999;
+NextHeaderID = -1001002;

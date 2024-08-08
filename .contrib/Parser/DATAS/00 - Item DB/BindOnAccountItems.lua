@@ -813,6 +813,57 @@ i(78856);	-- Leggings of the Corrupted Conqueror
 i(78857);	-- Leggings of the Corrupted Protector
 i(78858);	-- Leggings of the Corrupted Vanquisher
 
+-- Tier 14 LFR [HoF/ToES]
+i(89274);	-- Helm of the Shadowy Conqueror
+i(89275);	-- Helm of the Shadowy Protector
+i(89273);	-- Helm of the Shadowy Vanquisher
+i(89277);	-- Shoulders of the Shadowy Conqueror
+i(89278);	-- Shoulders of the Shadowy Protector
+i(89276);	-- Shoulders of the Shadowy Vanquisher
+i(89265);	-- Chest of the Shadowy Conqueror
+i(89266);	-- Chest of the Shadowy Protector
+i(89264);	-- Chest of the Shadowy Vanquisher
+i(89271);	-- Gauntlets of the Shadowy Conqueror
+i(89272);	-- Gauntlets of the Shadowy Protector
+i(89270);	-- Gauntlets of the Shadowy Vanquisher
+i(89268);	-- Leggings of the Shadowy Conqueror
+i(89269);	-- Leggings of the Shadowy Protector
+i(89267);	-- Leggings of the Shadowy Vanquisher
+
+-- Tier 14 N [HoF/ToES]
+i(89235);	-- Helm of the Shadowy Conqueror
+i(89236);	-- Helm of the Shadowy Protector
+i(89234);	-- Helm of the Shadowy Vanquisher
+i(89246);	-- Shoulders of the Shadowy Conqueror
+i(89247);	-- Shoulders of the Shadowy Protector
+i(89248);	-- Shoulders of the Shadowy Vanquisher
+i(89237);	-- Chest of the Shadowy Conqueror
+i(89238);	-- Chest of the Shadowy Protector
+i(89239);	-- Chest of the Shadowy Vanquisher
+i(89240);	-- Gauntlets of the Shadowy Conqueror
+i(89241);	-- Gauntlets of the Shadowy Protector
+i(89242);	-- Gauntlets of the Shadowy Vanquisher
+i(89243);	-- Leggings of the Shadowy Conqueror
+i(89244);	-- Leggings of the Shadowy Protector
+i(89245);	-- Leggings of the Shadowy Vanquisher
+
+-- Tier 14 H [HoF/ToES]
+i(89259);	-- Helm of the Shadowy Conqueror
+i(89260);	-- Helm of the Shadowy Protector
+i(89258);	-- Helm of the Shadowy Vanquisher
+i(89262);	-- Shoulders of the Shadowy Conqueror
+i(89263);	-- Shoulders of the Shadowy Protector
+i(89261);	-- Shoulders of the Shadowy Vanquisher
+i(89250);	-- Chest of the Shadowy Conqueror
+i(89251);	-- Chest of the Shadowy Protector
+i(89249);	-- Chest of the Shadowy Vanquisher
+i(89256);	-- Gauntlets of the Shadowy Conqueror
+i(89257);	-- Gauntlets of the Shadowy Protector
+i(89255);	-- Gauntlets of the Shadowy Vanquisher
+i(89253);	-- Leggings of the Shadowy Conqueror
+i(89254);	-- Leggings of the Shadowy Protector
+i(89252);	-- Leggings of the Shadowy Vanquisher
+
 -- Tier 17 N [BRF]
 i(119310, { ["modID"] = 3, });	-- Essence of the Iron Conqueror
 i(119323, { ["modID"] = 3, });	-- Essence of the Iron Protector
