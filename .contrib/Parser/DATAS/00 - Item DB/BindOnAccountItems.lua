@@ -695,7 +695,6 @@ i(45643);	-- Gauntlets of the Wayward Vanquisher
 i(45654);	-- Legplates of the Wayward Protector
 i(45655);	-- Legplates of the Wayward Vanquisher
 
-
 -- Tier 9 Tier Tokens [ToC]
 
 i(47242);	-- Trophy of the Crusade
@@ -863,6 +862,57 @@ i(89255);	-- Gauntlets of the Shadowy Vanquisher
 i(89253);	-- Leggings of the Shadowy Conqueror
 i(89254);	-- Leggings of the Shadowy Protector
 i(89252);	-- Leggings of the Shadowy Vanquisher
+
+-- Tier 15 LFR [ToT]
+i(95880);	-- Helm of the Crackling Conqueror
+i(95881);	-- Helm of the Crackling Protector
+i(95879);	-- Helm of the Crackling Vanquisher
+i(95956);	-- Shoulders of the Crackling Conqueror
+i(95957);	-- Shoulders of the Crackling Protector
+i(95955);	-- Shoulders of the Crackling Vanquisher
+i(95823);	-- Chest of the Crackling Conqueror
+i(95824);	-- Chest of the Crackling Protector
+i(95822);	-- Chest of the Crackling Vanquisher
+i(95856);	-- Gauntlets of the Crackling Conqueror
+i(95857);	-- Gauntlets of the Crackling Protector
+i(95855);	-- Gauntlets of the Crackling Vanquisher
+i(95888);	-- Leggings of the Crackling Conqueror
+i(95889);	-- Leggings of the Crackling Protector
+i(95887);	-- Leggings of the Crackling Vanquisher
+
+-- Tier 15 N [ToT]
+i(95577);	-- Helm of the Crackling Conqueror
+i(95582);	-- Helm of the Crackling Protector
+i(95571);	-- Helm of the Crackling Vanquisher
+i(95578);	-- Shoulders of the Crackling Conqueror
+i(95583);	-- Shoulders of the Crackling Protector
+i(95573);	-- Shoulders of the Crackling Vanquisher
+i(95574);	-- Chest of the Crackling Conqueror
+i(95579);	-- Chest of the Crackling Protector
+i(95569);	-- Chest of the Crackling Vanquisher
+i(95575);	-- Gauntlets of the Crackling Conqueror
+i(95580);	-- Gauntlets of the Crackling Protector
+i(95570);	-- Gauntlets of the Crackling Vanquisher
+i(95576);	-- Leggings of the Crackling Conqueror
+i(95581);	-- Leggings of the Crackling Protector
+i(95572);	-- Leggings of the Crackling Vanquisher
+
+-- Tier 15 H [ToT]
+i(96624);	-- Helm of the Crackling Conqueror
+i(96625);	-- Helm of the Crackling Protector
+i(96623);	-- Helm of the Crackling Vanquisher
+i(96700);	-- Shoulders of the Crackling Conqueror
+i(96701);	-- Shoulders of the Crackling Protector
+i(96699);	-- Shoulders of the Crackling Vanquisher
+i(96567);	-- Chest of the Crackling Conqueror
+i(96568);	-- Chest of the Crackling Protector
+i(96566);	-- Chest of the Crackling Vanquisher
+i(96600);	-- Gauntlets of the Crackling Conqueror
+i(96601);	-- Gauntlets of the Crackling Protector
+i(96599);	-- Gauntlets of the Crackling Vanquisher
+i(96632);	-- Leggings of the Crackling Conqueror
+i(96633);	-- Leggings of the Crackling Protector
+i(96631);	-- Leggings of the Crackling Vanquisher
 
 -- Tier 17 N [BRF]
 i(119310, { ["modID"] = 3, });	-- Essence of the Iron Conqueror
