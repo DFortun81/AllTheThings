@@ -737,4 +737,29 @@ i(67428);	-- Leggings of the Forlorn Conqueror
 i(67427);	-- Leggings of the Forlorn Protector
 i(67426);	-- Leggings of the Forlorn Vanquisher
 
+-- Tier 12 10/25 Normal [FL]
+i(71675);	-- Helm of the Fiery Conqueror
+i(71682);	-- Helm of the Fiery Protector
+i(71668);	-- Helm of the Fiery Vanquisher
+i(71681);	-- Mantle of the Fiery Conqueror
+i(71688);	-- Mantle of the Fiery Protector
+i(71674);	-- Mantle of the Fiery Vanquisher
+
+-- Tier 12 10/25 Heroic [FL]
+i(71677);	-- Crown of the Fiery Conqueror
+i(71684);	-- Crown of the Fiery Protector
+i(71670);	-- Crown of the Fiery Vanquisher
+i(71680);	-- Shoulders of the Fiery Conqueror
+i(71687);	-- Shoulders of the Fiery Protector
+i(71673);	-- Shoulders of the Fiery Vanquisher
+i(71679);	-- Chest of the Fiery Conqueror
+i(71686);	-- Chest of the Fiery Protector
+i(71672);	-- Chest of the Fiery Vanquisher
+i(71676);	-- Gauntlets of the Fiery Conqueror
+i(71683);	-- Gauntlets of the Fiery Protector
+i(71669);	-- Gauntlets of the Fiery Vanquisher
+i(71678);	-- Leggings of the Fiery Conqueror
+i(71685);	-- Leggings of the Fiery Protector
+i(71671);	-- Leggings of the Fiery Vanquisher
+
 -- #endif
