@@ -41,6 +41,7 @@ i(18660);	-- World Enlarger
 i(221315);	-- Rainbow Generator
 i(215449);	-- World Shrinker
 i(228189);	-- Gift of Gob
+i(228502);	-- Piccolo of the Flaming Fire (Blizzard... Why did you duplicate this... Dumbasses.)
 -- #endif
 
 -----------------

@@ -746,7 +746,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					e(443, {	-- Hearthsinger Forresten
 						["creatureID"] = 10558,	-- Hearthsinger Forresten
 						["groups"] = {
-							i(13379),	-- Piccolo of the Flaming Fire
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228502, {	-- Piccolo of the Flaming Fire
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
+							i(13379, {	-- Piccolo of the Flaming Fire
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { "removed 1.15.3" },
+								-- #endif
+							}),
 							-- #if AFTER 6.0.1
 							-- NOTE: We're not sure which patch this was added to Hearthsinger Forresten.
 							i(12103),	-- Star of Mystaria
