@@ -876,7 +876,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(69625), 	-- Mandokir's Tribute
 						i(69629), 	-- Shield of the Blood God
 						i(69622), 	-- The Hexxer's Mask
-						i(69620), 	-- Twinblade of the Hakkari
+						i(69620, {
+							["f"] = DAGGERS,
+						}), 	-- Twinblade of the Hakkari
 						i(69621), 	-- Twinblade of the Hakkari
 						i(69623), 	-- Vestments of the Soulflayer
 						i(69627), 	-- Zulian Ward
