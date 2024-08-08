@@ -695,4 +695,13 @@ i(45643);	-- Gauntlets of the Wayward Vanquisher
 i(45654);	-- Legplates of the Wayward Protector
 i(45655);	-- Legplates of the Wayward Vanquisher
 
+
+-- Tier 9 Tier Tokens [ToC]
+
+i(47242);	-- Trophy of the Crusade
+i(47557);	-- Regalia of the Grand Conqueror
+i(47558);	-- Regalia of the Grand Protector
+i(47559);	-- Regalia of the Grand Vanquisher
+
+
 -- #endif
