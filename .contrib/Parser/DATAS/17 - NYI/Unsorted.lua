@@ -2492,6 +2492,8 @@ root(ROOTS.Unsorted, {
 			i(223056),	-- Plans: Webbed Fishing Line
 			i(223948),	-- Stubborn Wolf's Greathelm
 			i(225256),	-- PH_2
+			---
+			i(229128),	-- Harmonious Salutations Bear
 		})),
 	}),
 	expansion(EXPANSION.DF, {
