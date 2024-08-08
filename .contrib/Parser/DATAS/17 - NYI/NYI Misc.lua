@@ -1039,7 +1039,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(192078),	-- Bottled Putrescence
 			i(199690),	-- BWU Test Profession Accessory
 			i(200950),	-- Consortium Packaging String
-			i(198541),	-- Depleted Violet Vapors
 			i(191058),	-- Dilapidated Parchment: Bottom Half
 			i(191059),	-- Dilapidated Parchment: Top Half
 			i(200592),	-- Dirty Old Satchel
