@@ -1808,6 +1808,7 @@ i(223284, 448849);	-- Underlight Shorestalker
 ------------------
 -- PATCH 11.0.0 --
 ------------------
+i(229128, 464443);	-- Harmonious Salutations Bear (MOUNT!)
 i(217985, 441324);	-- Remembered Golden Gryphon
 i(217987, 441325);	-- Remembered Wind Rider
 

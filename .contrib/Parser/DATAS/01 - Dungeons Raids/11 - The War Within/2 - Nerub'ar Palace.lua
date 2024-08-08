@@ -150,7 +150,7 @@ local EncounterToLoot = {
 		i(212418),	-- Black Blood Injectors
 		i(212387),	-- Broodtwister's Grim Catalyst
 		i(212452),	-- Gruesome Syringe
-		i(220305),	-- Ovinax's Mercurial Egg
+		i(220305),	-- Ovi'nax's Mercurial Egg
 		i(225588),	-- Sanguine Experiment's Bandages
 		i(212389),	-- Spire of Transfused Horrors
 		i(225576),	-- Writhing Ringworm

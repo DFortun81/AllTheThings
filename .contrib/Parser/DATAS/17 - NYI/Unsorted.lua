@@ -219,7 +219,6 @@ root(ROOTS.Unsorted, {
 			i(229370),	-- Companion Experience
 			i(229371),	-- Companion Experience
 			--
-			i(220305),	-- Ovi'nax's Mercurial Egg
 			i(229899),	-- Coffer Key Shard
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
@@ -2495,8 +2494,6 @@ root(ROOTS.Unsorted, {
 			i(223056),	-- Plans: Webbed Fishing Line
 			i(223948),	-- Stubborn Wolf's Greathelm
 			i(225256),	-- PH_2
-			---
-			i(229128),	-- Harmonious Salutations Bear
 		})),
 	}),
 	expansion(EXPANSION.DF, {
