@@ -699,9 +699,16 @@ i(45655);	-- Legplates of the Wayward Vanquisher
 -- Tier 9 Tier Tokens [ToC]
 
 i(47242);	-- Trophy of the Crusade
-i(47557);	-- Regalia of the Grand Conqueror
-i(47558);	-- Regalia of the Grand Protector
-i(47559);	-- Regalia of the Grand Vanquisher
+i(47557);	-- Regalia of the Grand Conqueror [25H]
+i(47558);	-- Regalia of the Grand Protector [25H]
+i(47559);	-- Regalia of the Grand Vanquisher [25H]
 
+-- Tier 10 Tier Tokens [ICC]
+i(52025);	-- Vanquisher's Mark of Sanctification [10H/25N]
+i(52026);	-- Protector's Mark of Sanctification [10H/25N]
+i(52027);	-- Conqueror's Mark of Sanctification [10H/25N]
+i(52028);	-- Vanquisher's Mark of Sanctification [25H]
+i(52029);	-- Protector's Mark of Sanctification [25H]
+i(52030);	-- Conqueror's Mark of Sanctification [25H]
 
 -- #endif
