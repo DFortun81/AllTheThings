@@ -31,6 +31,9 @@ root(ROOTS.Zones, {
 					["questID"] = 38365,
 					["coord"] = { 55.9, 56.9, AZSUNA },
 				}),
+				o(256790, {	-- Elven Treasure Chest
+					["description"] = "These repeatable chests spawn all over the map in Azsuna and Val'Sharah."
+				}),
 				o(240637, {	-- Glimmering Treasure Chest
 					["questID"] = 38367,
 					["coord"] = { 42.6, 8.1, AZSUNA },

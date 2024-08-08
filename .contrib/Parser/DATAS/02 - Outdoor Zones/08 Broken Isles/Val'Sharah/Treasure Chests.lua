@@ -7,6 +7,9 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			o(243323, {	-- Balance Stone
 				i(123869),	-- Relic of Elune
 			}),
+			o(256790, {	-- Elven Treasure Chest
+					["description"] = "These repeatable chests spawn all over the map in Azsuna and Val'Sharah."
+				}),
 			o(243321, {	-- Feral Stone
 				i(123868),	-- Relic of Shakama
 			}),
