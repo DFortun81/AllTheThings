@@ -169,12 +169,23 @@ profession(LEATHERWORKING, {
 						["name"] = "Black Dragonscale Leggings",
 						["recipeID"] = 19107,
 						["requireSkill"] = 10656,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 					{
 						["name"] = "Blue Dragonscale Leggings",
 						["recipeID"] = 24654,
 						["requireSkill"] = 10656,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Hardened Black Dragonscale Leggings",
+						["recipeID"] = 461657,
+						["requireSkill"] = 10656,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Green Dragonscale Leggings",
 						["recipeID"] = 19060,

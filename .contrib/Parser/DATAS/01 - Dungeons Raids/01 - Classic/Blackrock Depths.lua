@@ -2382,11 +2382,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				}),
 				i(15781, {	-- Pattern: Black Dragonscale Leggings (RECIPE!)
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["cr"] = 8903,	-- Anvilrage Captain
 				}),
 				i(15770, {	-- Pattern: Black Dragonscale Shoulders (RECIPE!)
 					["cr"] = 8898,	-- Anvilrage Marshal
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227903, {	-- Pattern: Hardened Black Dragonscale Leggings (RECIPE!)
+					["timeline"] = { "added 1.15.3" },
+					["cr"] = 8903,	-- Anvilrage Captain
+				})),
+				-- #endif
 				i(11614, {	-- Plans: Dark Iron Mail (RECIPE!)
 					["description"] = "|cFFFFD700Plans: Dark Iron Mail|r can spawn in one of four spots.\n\n|cFFFFFFFFLocation 1:|r Located in the |cFFFFD700West Garrison|r. After going up the ramp from where |cFFFFD700General Angerforge|r is located on your left are some tables.  It will be located in the back corner where the Fireguard Destroyer is and two tables in front of it.  This table is close to the table that has vases on it that is near the keg.\n\n|cFFFFFFFFLocation 2:|r In |cFFFFD700Golem Lord Argelmach's|r room.  When you walk into the room it will be in the back left corner where in between barrels.  There will be two barrels to the left and one barrel to the right of it.\n\n|cFFFFFFFFLocation 3:|r In |cFFFFD700The Manufactory|r, on a bench.\n\n|cFFFFFFFFLocation 4:|r After leaving the room with |cFFFFD700Ambassador Flamelash|r you will cross a bridge that leads into the |cFFFFD700Mold Foundry|r.  Once you enter the room you will continue straight until you see the ramp.  Instead of going down the ramp you will jump off the ledge to the right of the ramp.  After landing on the ground you will see the plans located here.",
 					["provider"] = { "o", 173232 },	-- Blacksmithing Plans

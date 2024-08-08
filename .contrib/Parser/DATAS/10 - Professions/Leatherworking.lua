@@ -2647,6 +2647,9 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Black Dragonscale Leggings",
 					["recipeID"] = 19107,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				-- #endif
 				-- #if AFTER CATA
@@ -2724,6 +2727,16 @@ profession(LEATHERWORKING, {
 					["name"] = "Handstitched Leather Pants",
 					["recipeID"] = 2153,
 				},
+				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Hardened Black Dragonscale Leggings",
+					["recipeID"] = 461657,
+					["requireSkill"] = 10656,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
+				-- #endif
 				{
 					["name"] = "Heavy Scale Pants",
 					["timeline"] = { ADDED_7_0_3 },

@@ -2231,7 +2231,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			["groups"] = {
 				i(16984),	-- Black Dragonscale Boots
 				i(15050),	-- Black Dragonscale Breastplate
-				i(15052),	-- Black Dragonscale Leggings
+				i(15052, {	-- Black Dragonscale Leggings
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				i(15051),	-- Black Dragonscale Shoulders
 				i(15048, {["timeline"] = {REMOVED_4_0_3}}),	-- Blue Dragonscale Breastplate
 				i(20295),	-- Blue Dragonscale Leggings
@@ -2241,6 +2245,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(8367),	-- Dragonscale Breastplate
 				i(8347, {["timeline"] = {REMOVED_4_0_3}}),	-- Dragonscale Gauntlets
 				applyclassicphase(PHASE_FOUR, i(20380, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Dreamscale Breastplate
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227852, {	-- Hardened Black Dragonscale Leggings
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				i(15045, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Green Dragonscale Breastplate
 				i(20296),	-- Green Dragonscale Gauntlets
 				i(15046, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Green Dragonscale Leggings

@@ -931,6 +931,7 @@ for spellID,learnedAt in pairs({
 	[19090] = 295,	-- Stormshroud Shoulders
 	[20855] = 300,	-- Black Dragonscale Boots
 	[19107] = 300,	-- Black Dragonscale Leggings
+	[461657] = 300,	-- Hardened Black Dragonscale Leggings
 	[19094] = 300,	-- Black Dragonscale Shoulders
 	[24124] = 300,	-- Blood Tiger Breastplate
 	[24125] = 300,	-- Blood Tiger Shoulders
