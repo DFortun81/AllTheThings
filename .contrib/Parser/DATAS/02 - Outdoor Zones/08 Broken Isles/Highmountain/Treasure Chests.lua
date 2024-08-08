@@ -48,6 +48,9 @@ root(ROOTS.Zones, {
 					["questID"] = 39606,
 					["coord"] = { 59.6, 40.9, 657 },
 				}),
+				o(257290, {	-- Highmountain Clan Chest
+					["description"] = "These repeatable chests spawn all over the map in Highmountain."
+				}),
 				o(245525, {	-- Small Treasure Chest
 					["questID"] = 40472,
 					["coord"] = { 50.6, 75.4, 750 },

@@ -6,6 +6,27 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(AZSUNA, {
 			n(TREASURES, {
+				o(253452, {	-- Beginner's Guide to Dimensional Rifting Ch. 1 - Navigating Through Time
+					["coord"] = { 68.1, 51.1, AZSUNA },
+				}),
+				o(253453, {	-- Beginner's Guide to Dimensional Rifting Ch. 2 - Holy Places to Many
+					["coord"] = { 55.2, 71.6, AZSUNA },
+				}),
+				o(253454, {	-- Beginner's Guide to Dimensional Rifting Ch. 3 - Water, Just Water
+					["coord"] = { 33.4, 11.2, AZSUNA },
+				}),
+				o(253455, {	-- Beginner's Guide to Dimensional Rifting Ch. 4 - Risks and Rewards
+					["coord"] = { 58.3, 12.3, AZSUNA },
+				}),
+				o(253456, {	-- Beginner's Guide to Dimensional Rifting Ch. 5 - Finding Others Along the Way
+					["coord"] = { 53.1, 22.0, AZSUNA },
+				}),
+				o(253457, {	-- Beginner's Guide to Dimensional Rifting Ch. 6 - Pent up Energy
+					["coord"] = { 61.1, 46.2, AZSUNA },
+				}),
+				o(253458, {	-- Beginner's Guide to Dimensional Rifting Ch. 7 - Our Legacy
+					["coord"] = { 55.7, 48.3, AZSUNA },
+				}),
 				o(240638, {	-- Disputed Treasure
 					["questID"] = 38365,
 					["coord"] = { 55.9, 56.9, AZSUNA },

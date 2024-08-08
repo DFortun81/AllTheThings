@@ -30,6 +30,9 @@ root(ROOTS.Zones, {
 					["questID"] = 43876,
 					["coord"] = { 60.4, 68.5, SURAMAR },
 				}),
+				o(257291, {	-- Nightborne Treasure Chest
+					["description"] = "These repeatable chests spawn all over the map in Suramar."
+				}),
 				o(252447, {	-- Shimmering Ancient Mana Cluster
 					["questID"] = 43744,
 					["coord"] = { 46.6, 26.0, SURAMAR },
