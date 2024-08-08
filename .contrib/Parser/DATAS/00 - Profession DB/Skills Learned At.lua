@@ -304,6 +304,7 @@ for spellID,learnedAt in pairs({
 	[16652] = 280,	-- Thorium Boots
 	[16653] = 280,	-- Thorium Helm
 	[15296] = 285,	-- Dark Iron Plate
+	[461667] = 285,	-- Tempered Dark Iron Plate
 	[16667] = 285,	-- Demon Forged Breastplate
 	[16654] = 285,	-- Radiant Gloves
 	[16983] = 285,	-- Serenity

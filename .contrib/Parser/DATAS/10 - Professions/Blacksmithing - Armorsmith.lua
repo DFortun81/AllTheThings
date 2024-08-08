@@ -195,6 +195,9 @@ profession(BLACKSMITHING, {
 						["name"] = "Dark Iron Plate",
 						["recipeID"] = 15296,
 						["requireSkill"] = 9788,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 					{
 						["name"] = "Demon Forged Breastplate",
@@ -224,6 +227,14 @@ profession(BLACKSMITHING, {
 						["timeline"] = { "removed 1.15.3" },
 						-- #endif
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Tempered Dark Iron Plate",
+						["recipeID"] = 461667,
+						["requireSkill"] = 9788,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Truesilver Breastplate",
 						["timeline"] = { REMOVED_4_0_1 },

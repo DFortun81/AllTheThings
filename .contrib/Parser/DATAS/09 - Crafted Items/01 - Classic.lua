@@ -351,7 +351,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_THREE, i(19164)),	-- Dark Iron Gauntlets
 				applyclassicphase(PHASE_THREE, i(19148)),	-- Dark Iron Helm
 				i(17013),	-- Dark Iron Leggings
-				i(11604),	-- Dark Iron Plate
+				i(11604, {	-- Dark Iron Plate
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				i(12628, {["timeline"] = {REMOVED_4_0_3}}),	-- Demon Forged Breastplate
 				applyclassicphase(PHASE_THREE, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
 				applyclassicphase(PHASE_THREE, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
@@ -373,6 +377,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(12640),	-- Lionheart Helm
 				i(12632),	-- Storm Gauntlets
 				i(12639),	-- Stronghold Gauntlets
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227871, {	-- Tempered Dark Iron Plate
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				applyclassicphase(PHASE_FIVE, i(22385)),	-- Titanic Leggings
 				i(7939, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Breastplate
 				i(7938, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Gauntlets
@@ -623,7 +632,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_THREE, i(19164)),	-- Dark Iron Gauntlets
 			applyclassicphase(PHASE_THREE, i(19148)),	-- Dark Iron Helm
 			i(17013),	-- Dark Iron Leggings
-			i(11604),	-- Dark Iron Plate
+			i(11604, {	-- Dark Iron Plate
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(12628, {["timeline"] = {REMOVED_4_0_3}}),	-- Demon Forged Breastplate
 			applyclassicphase(PHASE_THREE, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
 			applyclassicphase(PHASE_THREE, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
@@ -653,6 +666,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(12639),	-- Stronghold Gauntlets
 			-- #endif
 			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227871, {	-- Tempered Dark Iron Plate
+				["timeline"] = { "added 1.15.3" },
+			})),
 			applyclassicphase(SOD_PHASE_TWO, i(215161, {	-- Tempered Interference-Negating Helmet
 				["timeline"] = { "added 1.15.1" },
 				["requireSkill"] = BLACKSMITHING,

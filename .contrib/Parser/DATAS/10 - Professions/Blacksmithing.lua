@@ -1973,6 +1973,9 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Dark Iron Plate",
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["recipeID"] = 15296,
 				},
 				-- #endif
@@ -2095,6 +2098,13 @@ profession(BLACKSMITHING, {
 					["name"] = "Steel Breastplate",
 					["recipeID"] = 9916,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Tempered Dark Iron Plate",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461667,
+				}),
+				-- #endif
 				applyclassicphase(PHASE_FIVE, {
 					["name"] = "Thick Obsidian Breastplate",
 					["recipeID"] = 27587,

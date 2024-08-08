@@ -2847,7 +2847,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "Speak to him to start the encounter.",
 					["groups"] = {
 						i(11313),	-- Ribbly's Head
-						i(11612),	-- Plans: Dark Iron Plate (RECIPE!)
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227901, {	-- Plans: Tempered Dark Iron Plate (RECIPE!)
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(11612, {	-- Plans: Dark Iron Plate (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 						i(2663, {	-- Ribbly's Bandolier
 							["timeline"] = { REMOVED_4_0_1 },
 						}),

@@ -263,6 +263,9 @@ i(12728, 16746, nil, ARMORSMITH);	-- Invulnerable Mail
 i(12717, 16729, nil, ARMORSMITH);	-- Lionheart Helm
 i(12703, 16661, nil, ARMORSMITH);	-- Storm Gauntlets
 i(12720, 16741, nil, ARMORSMITH);	-- Stronghold Gauntlets
+-- #if SEASON_OF_DISCOVERY
+i(227901, 461667, nil, ARMORSMITH);	-- Tempered Dark Iron Plate
+-- #endif
 i(22388, 27829, nil, ARMORSMITH);	-- Titanic Leggings
 i(12711, 16724, nil, ARMORSMITH);	-- Whitesoul Helm
 i(12691, 16650, nil, ARMORSMITH);	-- Wildthorn Mail
