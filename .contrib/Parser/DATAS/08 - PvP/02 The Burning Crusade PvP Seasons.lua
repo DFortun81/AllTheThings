@@ -936,6 +936,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(28981, {	-- Marshal's Dreadweave Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(31599, {	-- Marshal's Kodohide Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -954,6 +955,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(32977, {	-- Marshal's Mooncloth Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(32986, {	-- Marshal's Ornamented Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -969,6 +971,7 @@ root(ROOTS.PVP, applyclassicphase(TBC_PHASE_ONE, run(MarkOfWHOOOWHATNow, bubbleD
 						}),
 						i(29002, {	-- Marshal's Silk Cuffs
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(29006, {	-- Marshal's Wyrmhide Bracers
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
