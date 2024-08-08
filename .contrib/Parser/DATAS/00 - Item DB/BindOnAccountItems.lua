@@ -662,4 +662,37 @@ i(40634);	-- Legplates of the Lost Conqueror
 i(40635);	-- Legplates of the Lost Protector
 i(40636);	-- Legplates of the Lost Vanquisher
 
+-- Tier 8 10 Man [Ulduar]
+i(45647);	-- Helm of the Wayward Conqueror
+i(45648);	-- Helm of the Wayward Protector
+i(45649);	-- Helm of the Wayward Vanquisher
+i(45659);	-- Spaulders of the Wayward Conqueror
+i(45660);	-- Spaulders of the Wayward Protector
+i(45661);	-- Spaulders of the Wayward Vanquisher
+i(45635);	-- Chestguard of the Wayward Conqueror
+i(45636);	-- Chestguard of the Wayward Protector
+i(45637);	-- Chestguard of the Wayward Vanquisher
+i(45644);	-- Gloves of the Wayward Conqueror
+i(45645);	-- Gloves of the Wayward Protector
+i(45646);	-- Gloves of the Wayward Vanquisher
+i(45650);	-- Leggings of the Wayward Conqueror
+i(45651);	-- Leggings of the Wayward Protector
+i(45652);	-- Leggings of the Wayward Vanquisher
+
+-- Tier 8 25 Man [Ulduar]
+i(45638);	-- Crown of the Wayward Conqueror
+i(45639);	-- Crown of the Wayward Protector
+i(45640);	-- Crown of the Wayward Vanquisher
+i(45656);	-- Mantle of the Wayward Conqueror
+i(45657);	-- Mantle of the Wayward Protector
+i(45658);	-- Mantle of the Wayward Vanquisher
+i(45632);	-- Breastplate of the Wayward Conqueror
+i(45633);	-- Breastplate of the Wayward Protector
+i(45634);	-- Breastplate of the Wayward Vanquisher
+i(45641);	-- Gauntlets of the Wayward Conqueror
+i(45642);	-- Gauntlets of the Wayward Protector
+i(45643);	-- Gauntlets of the Wayward Vanquisher
+i(45654);	-- Legplates of the Wayward Protector
+i(45655);	-- Legplates of the Wayward Vanquisher
+
 -- #endif
