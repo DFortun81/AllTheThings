@@ -711,4 +711,30 @@ i(52028);	-- Vanquisher's Mark of Sanctification [25H]
 i(52029);	-- Protector's Mark of Sanctification [25H]
 i(52030);	-- Conqueror's Mark of Sanctification [25H]
 
+-- Tier 11 10/25 Normal [BWD / TotFW /BoT]
+i(63683);	-- Helm of the Forlorn Conqueror
+i(63684);	-- Helm of the Forlorn Protector
+i(63682);	-- Helm of the Forlorn Vanquisher
+i(64315);	-- Mantle of the Forlorn Conqueror
+i(64316);	-- Mantle of the Forlorn Protector
+i(64314);	-- Mantle of the Forlorn Vanquisher
+
+-- Tier 11 10/25 Heroic [BWD / TotFW /BoT]
+i(66998);	-- Essence of the Forlorn
+i(65001);	-- Crown of the Forlorn Conqueror
+i(65000);	-- Crown of the Forlorn Protector
+i(65002);	-- Crown of the Forlorn Vanquisher
+i(65088);	-- Shoulders of the Forlorn Conqueror
+i(65087);	-- Shoulders of the Forlorn Protector
+i(65089);	-- Shoulders of the Forlorn Vanquisher
+i(67423);	-- Chest of the Forlorn Conqueror
+i(67424);	-- Chest of the Forlorn Protector
+i(67425);	-- Chest of the Forlorn Vanquisher
+i(67429);	-- Gauntlets of the Forlorn Conqueror
+i(67430);	-- Gauntlets of the Forlorn Protector
+i(67431);	-- Gauntlets of the Forlorn Vanquisher
+i(67428);	-- Leggings of the Forlorn Conqueror
+i(67427);	-- Leggings of the Forlorn Protector
+i(67426);	-- Leggings of the Forlorn Vanquisher
+
 -- #endif
