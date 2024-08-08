@@ -1637,6 +1637,9 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Helm of the Great Chief",
 					["recipeID"] = 16728,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				-- #endif
 				{
@@ -1675,6 +1678,14 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 16653,
 				},
 				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Warcrest of the Great Chief",
+					["recipeID"] = 461739,
+					["requireSkill"] = 9788,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				{
 					["name"] = "Whitesoul Helm",
 					["recipeID"] = 16724,
@@ -2098,12 +2109,14 @@ profession(BLACKSMITHING, {
 					["name"] = "Steel Breastplate",
 					["recipeID"] = 9916,
 				},
+				-- #if AFTER TBC
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, {
 					["name"] = "Tempered Dark Iron Plate",
 					["timeline"] = { "added 1.15.3" },
 					["recipeID"] = 461667,
 				}),
+				-- #endif
 				-- #endif
 				applyclassicphase(PHASE_FIVE, {
 					["name"] = "Thick Obsidian Breastplate",

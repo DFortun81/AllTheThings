@@ -356,6 +356,7 @@ for spellID,learnedAt in pairs({
 	[27585] = 300,	-- Heavy Obsidian Belt
 	[23629] = 300,	-- Heavy Timbermaw Boots
 	[16728] = 300,	-- Helm of the Great Chief
+	[461739] = 300,	-- Warcrest of the Great Chief
 	[28244] = 300,	-- Icebane Bracers
 	[28242] = 300,	-- Icebane Breastplate
 	[28243] = 300,	-- Icebane Gauntlets

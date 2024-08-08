@@ -3633,6 +3633,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(12704),	-- Plans: Thorium Leggings (RECIPE!)
 			i(12692),	-- Plans: Thorium Shield Spike (RECIPE!)
 			applyclassicphase(PHASE_FIVE, i(22388)),	-- Plans: Titanic Leggings (RECIPE!)
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228314, {	-- Plans: Warcrest of the Great Chief (RECIPE!)
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(12711),	-- Plans: Whitesoul Helm (RECIPE!)
 			i(8029),	-- Plans: Wicked Mithril Blade (RECIPE!)
 			i(12691),	-- Plans: Wildthorn Mail (RECIPE!)

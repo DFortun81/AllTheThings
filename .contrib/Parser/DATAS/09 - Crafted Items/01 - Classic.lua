@@ -363,7 +363,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(12631, {["timeline"] = {REMOVED_4_0_3}}),	-- Fiery Plate Gauntlets
 				i(16989),	-- Fiery Chain Girdle
 				i(16988),	-- Fiery Chain Shoulders
-				i(12636),	-- Helm of the Great Chief
+				i(12636, {	-- Helm of the Great Chief
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(227876, {	-- Invincible Mail
 					["timeline"] = { "added 1.15.3" },
@@ -385,6 +389,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FIVE, i(22385)),	-- Titanic Leggings
 				i(7939, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Breastplate
 				i(7938, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Gauntlets
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227872, {	-- Warcrest of the Great Chief
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				i(12633),	-- Whitesoul Helm
 				i(12624),	-- Wildthorn Mail
 			},

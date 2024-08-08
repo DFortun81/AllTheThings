@@ -267,6 +267,9 @@ i(12720, 16741, nil, ARMORSMITH);	-- Stronghold Gauntlets
 i(227901, 461667, nil, ARMORSMITH);	-- Tempered Dark Iron Plate
 -- #endif
 i(22388, 27829, nil, ARMORSMITH);	-- Titanic Leggings
+-- #if SEASON_OF_DISCOVERY
+i(228314, 461739, nil, ARMORSMITH);	-- Warcrest of the Great Chief
+-- #endif
 i(12711, 16724, nil, ARMORSMITH);	-- Whitesoul Helm
 i(12691, 16650, nil, ARMORSMITH);	-- Wildthorn Mail
 -- #else
