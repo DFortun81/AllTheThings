@@ -23,7 +23,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.COORDINATES = "坐标";
 	L.AND_MORE = "和 %s 更多...";	--TODO: check
 	L.AND_OTHER_SOURCES = "和 %s 其他来源...";	--TODO: check
-	--TODO: L.PLAYER_COORDINATES = "Player Coordinates";
+	L.PLAYER_COORDINATES = "玩家坐标";
 	L.NO_COORDINATES_FORMAT = "%s 没有已知坐标";
 	L.TOM_TOM_NOT_FOUND = "必须安装 TomTom 才能绘制坐标。";
 	L.FLIGHT_PATHS = "飞行路线";
@@ -34,12 +34,12 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.REPORT_TIP = "\n（"..CTRL_KEY_TEXT.."+C 将多行报告复制到剪贴板）";
 	L.NOT_AVAILABLE_IN_PL = "在个人拾取中不可用。";
 	L.MARKS_OF_HONOR_DESC = "荣耀印记必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 "..SHIFT_KEY_TEXT.."点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
-	--TODO: L.MOP_REMIX_BRONZE_DESC = "Bronze must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the currency)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
+	L.MOP_REMIX_BRONZE_DESC = "青铜必须在弹出窗口中查看才能看到所有正常的'包含'内容。\n(在聊天中输入'/att' 然后 "..SHIFT_KEY_TEXT.."点击链接的物品)\n\n|cFFfe040f之后购买和一起使用，重新登录和强制 ATT 刷新（按此顺序）\n可能需要正确注册所有物品。|r";
 	L.ITEM_GIVES_REP = "提供声望 '";
 	L.COST = "花费";
 	L.COST_DESC = "这里面包含了获得或购买这个物品所需要的物品";
-	--TODO: L.COST_TOTAL = "Total Cost";
-	--TODO: L.COST_TOTAL_DESC = "This contains the visual breakdown of what is required to obtain or purchase all Things within the top-level group.\n\nNote: Does not currently include Reagents/Recipes requirements!";
+	L.COST_TOTAL = "总花费";
+	L.COST_TOTAL_DESC = "其中包含获取或购买顶级分组内所有物品所需的直观分类。\n\n注意：目前不包括药剂/配方需求！";
 	L.SOURCES = "来源";
 	L.SOURCES_DESC = "显示这个东西的来源。\n\n特别是特定商人/NPC，任务，战斗，等等。";
 	L.WRONG_FACTION = "可能需要在另一个阵营中查看此内容。";
@@ -87,13 +87,13 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.MAXIMUM_STANDING_WITH_FACTION = "需要站立低于 %s 和 %s.";
 	L.MIN_MAX_STANDING_WITH_FACTION = "需要站在 %s 和 %s 和 %s.";
 
-	--TODO: L.ADDED_WITH_PATCH = "Added With Patch";
-	--TODO: L.REMOVED_WITH_PATCH = "Removed With Patch";
-	--TODO: L.ALIVE = "Alive";
-	--TODO: L.SPAWNED = "Spawned";
-	--TODO: L.OBJECT_TYPE = "Object Type";
-	--TODO: L.OBJECTIVES = "Objectives";
-	--TODO: L.QUEST_GIVERS = "Quest Givers";
+	L.ADDED_WITH_PATCH = "随补丁添加";
+	L.REMOVED_WITH_PATCH = "随补丁移除";
+	L.ALIVE = "存活";
+	L.SPAWNED = "已生成";
+	L.OBJECT_TYPE = "目标类型";
+	L.OBJECTIVES = "目标";
+	L.QUEST_GIVERS = "任务给予者";
 	L.DURING_WQ_ONLY = "可以在世界任务激活时完成";
 	L.COMPLETED_DAILY = "可以每天完成";
 	L.COMPLETED_WEEKLY = "可以每周完成";
@@ -208,7 +208,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.REFRESHING_COLLECTION = "刷新收藏…";
 	L.DONE_REFRESHING = "刷新收藏完成。";
 	L.ADHOC_UNIQUE_COLLECTED_INFO = "此物品是唯一收藏但由于缺少暴雪 API 信息而未能检测到。\n\n将在下次强制刷新后修复。";
-	--TODO: L.AVAILABILITY = "Availability";
+	L.AVAILABILITY = "可用性";
 	L.REQUIRES_PVP = "|CFF00FFDE需要 PvP 活动或货币|r";
 	L.REQUIRES_PETBATTLES = "|CFF00FFDE需要宠物对战|r";
 	L.REPORT_INACCURATE_QUEST = "错误任务信息！（点击报告）";
@@ -249,20 +249,20 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.SYM_ROW_INFORMATION = "右键单击以查看来自其他位置的其它内容";
 	L.QUEST_ONCE_PER_ACCOUNT = "帐号一次性任务";
 	L.COMPLETED_BY = "完成：%s";
-	--TODO: L.OWNED_BY = "Owned by %s";
+	L.OWNED_BY = "拥有者 %s";
 
 -- Social Module
-	--TODO: L.NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn, %s.";
-	--TODO: L.NEW_VERSION_FLAVORS = {
-	-- 	"or we'll give Sylvanas another lighter",
-	-- 	"Alexstrasza is worried about you",
-	-- 	"and Invincible will drop |cffffaaaafor sure|r next time",
-	-- 	"this was merely a setback",
-	-- 	"time to drop your % down",
-	-- 	"and a turtle will make it to the water",
-	-- 	"CHAMPYUUN, DE AZURIITE",
-	-- };
-	--TODO: L.SOCIAL_PROGRESS = "Social Progress";
+	L.NEW_VERSION_AVAILABLE = "%s 已有更新的版本。请更新插件 %s。";
+	L.NEW_VERSION_FLAVORS = {
+		"要不我们给希尔瓦娜斯另一把火炬",
+		"阿莱克丝塔萨很担心你",
+		"无敌下次|cffffaaaa|肯定|r会掉落",
+		"这只是一个挫折",
+		"是时候降低你的百分比了",
+		"一只海龟成功入水",
+		"艾泽拉斯的勇士",
+	};
+	L.SOCIAL_PROGRESS = "社交进度";
 
 -- Settings.lua
 	L.AFTER_REFRESH = "刷新后";
@@ -288,8 +288,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.EXTRA_THINGS_LABEL = "其他资源";
 		L.MINIMAP_BUTTON_CHECKBOX = "显示小地图按钮";
 		L.MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要查看小地图按钮，请启用此选项。使用此按钮可以快速访问主列表，显示总体收藏进度，并通过右键单击访问设置菜单。\n\n有些人不喜欢混乱。或者，你可以通过在聊天框中键入'/att'来访问主列表。从那里，你可以右键单击标题以进入设置菜单。";
-		--TODO: L.WORLDMAP_BUTTON_CHECKBOX = "Show the World Map Button";
-		--TODO: L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
+		L.WORLDMAP_BUTTON_CHECKBOX = "显示世界地图按钮";
+		L.WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "如果要在世界地图上看到 ATT 按钮，请启用此选项。使用此按钮可以快速访问当前显示区域的迷你列表。通常情况下，你需要亲自前往该区域才能看到迷你列表上的内容，你可以通过在聊天框中键入'/att mini'来访问迷你列表。";
 		L.CLICK_TO_CREATE_FORMAT = "点击创建 %s";
 		L.KEYBINDINGS_TEXT = "可以在游戏选项中设置 ATT 的按键绑定。";
 
@@ -371,20 +371,20 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	-- Tooltip Text
 		L.DROP_RATE = "掉率";
 		L.QUEST_GIVER = "任务发放者";
-		--TODO: L.EVENT_SCHEDULE = "Event Schedule";
-		--TODO: L.EVENT_ACTIVE = "Active:";
-		--TODO: L.EVENT_START = "Start:";
-		--TODO: L.EVENT_END = "End:";
-		--TODO: L.EVENT_WHERE = "Where:";
-		--TODO: L.REQUIRES_EVENT = "Requires Event";
+		L.EVENT_SCHEDULE = "事件时间表";
+		L.EVENT_ACTIVE = "激活:";
+		L.EVENT_START = "开始:";
+		L.EVENT_END = "结束:";
+		L.EVENT_WHERE = "地点:";
+		L.REQUIRES_EVENT = "需要事件";
 		L.LOCKOUT = "锁定";
-		--TODO: L.RESETS = "Resets";
+		L.RESETS = "重置";
 		L.SHARED = "共享";
 		L.SPLIT = "按难度";
 		L.REQUIRES_LEVEL = "需要等级";
 		L.SECRETS_HEADER = "解密";
 		L.LIMITED_QUANTITY = "此物品有数量限制，在商人处并非总是可见。";
-		L.SOURCE_ID_MISSING = "请在 #retail-errors 中向 ATT Discord 报告此物品及其获取地点！";
+		L.SOURCE_ID_MISSING = "请在 ATT Discord 的 #retail-errors 中报告此物品及其获取地点！";
 		--TODO: recheck these patch strings
 		L.ADDED_WITH_PATCH_FORMAT = "补丁 %s 中添加";
 		L.WAS_ADDED_WITH_PATCH_FORMAT = "最新补丁 %s 中添加";
@@ -396,8 +396,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.ARTIFACT_ID = "神器 ID";
 		L.AZERITE_ESSENCE_ID = "艾泽里特精华 ID";
 		L.CREATURE_ID = "生物 ID";
-		--TODO: L.CREATURES_COUNT = "[%s Creatures]";
-		--TODO: L.CREATURES_LIST = "Creatures List";
+		L.CREATURES_COUNT = "[%s 生物]";
+		L.CREATURES_LIST = "生物列表";
 		L.CURRENCY_ID = "货币 ID";
 		L.DIFFICULTY_ID = "难度 ID";
 		L.ENCOUNTER_ID = "首领战斗 ID";
@@ -438,7 +438,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 		L.COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成*|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cffff9333未完成|r";	-- Acquired the colors and icon from CanIMogIt.
-		--TODO: L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Saved|r";	-- Acquired the colors and icon from CanIMogIt.
+		L.SAVED = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已保存|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.COST_TEXT = "|T" .. app.asset("Currency") .. ":0|t |cff0891ff货币|r";
 
 local a = L.ABBREVIATIONS;
@@ -528,14 +528,14 @@ for key,value in pairs({
 		ABOUT_PAGE = "关于";
 		ABOUT_TOP = " |CFFFFFFFF是一个收藏跟踪插件，可以向您展示在游戏中获取所有内容的位置和方式！我们的 Discord 上有大量用户社区（底部链接），您可以在其中提问、提交建议以及报告错误或丢失的物品。如果发现一些收藏品或未记录的任务，可以在 Discord 上告诉我们，或者对于更精通技术的人，我们有一个您可以直接贡献的 Git。\n\n虽然我们努力争取完成，但每个补丁都会添加很多东西，所以如果我们遗漏了什么，请理解我们是一个小团队，试图跟上变化并自己收藏东西。:D\n\n在我直播时随时问我问题，我会尽力回答，即使它与 ATT（一般魔兽插件编程也是如此）没有直接关系。\n\n- |r|Cffff8000Crieve|r";
 		ABOUT_BOTTOM = "活跃贡献者：|CFFFFFFFF（排名不分先后）\n%s！\n|r名人堂：|CFFFFFFFF（排名不分先后）\n%s\n\n特别鸣谢 AmiYuy（CanIMogIt）和 Caerdon（Caerdon Wardrobe）。绝对应该下载他们的插件，以获得包中物品的收藏图标！ %s %s %s\n\n如需在线收集比较，请访问 Shoogen 的 DataForAzeroth.com 和 Freddie 的 WoWthing.org！|r";	--TODO: now in alphabetical order
-		--TODO: CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
-		--TODO: CURSEFORGE_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Curse.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+		CLIPBOARDCOPYPASTE = "Ctrl+A, Ctrl+C 复制到剪贴板。";
+		CURSEFORGE_BUTTON_TOOLTIP = "单击按钮复制 URL 到 Curse 的 ALL THE THINGS 插件地址。\n\n您也可以将此链接发送给您的朋友，让他们也毁掉自己的生活！他们最终会原谅你……也许吧。";
 		DISCORD_BUTTON_TOOLTIP = "点击按钮复制 URL 到All The Things Discord 服务器。\n\n可以与其他收藏家分享进步/挫折！";
 		MERCH_BUTTON_LABEL = "商店";
 		MERCH_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things 商店。\n\n在这里您可以在经济上支持插件并获得一些很酷的商品作为回报！ ";
 		PATREON_BUTTON_TOOLTIP = "点击按钮复制 URL 以进入 All The Things Patreon 页面。\n\n在这里您可以看到如何在经济上支持插件！";
 		TWITCH_BUTTON_TOOLTIP = "点击按钮复制 URL 到我的 Twitch 频道。\n\n可以在我直播的时候问问题，我会尽力回答！";
-		--TODO: WAGO_BUTTON_TOOLTIP = "Click this button to copy the url to get the ALL THE THINGS addon from Wago.io.\n\nYou can give this link to your friends to ruin their lives too! They'll eventually forgive you... maybe.";
+		WAGO_BUTTON_TOOLTIP = "单击按钮复制 URL 到 Wago.io 的 ALL THE THINGS 插件地址。\n\n您也可以将此链接发送给您的朋友，让他们也毁掉自己的生活！他们最终会原谅你……也许吧。";
 
 	-- General Page
 		DEBUG_MODE = app.ccColors.Red.."调试模式|r（显示所有）";
@@ -544,16 +544,16 @@ for key,value in pairs({
 		ACCOUNT_MODE_TOOLTIP = "如果要追踪所有角色的所有内容，而不考虑职业和种族筛选，请启用此设置。\n\n不可获得过滤仍然适用。";
 		FACTION_MODE = "仅当前阵营";
 		FACTION_MODE_TOOLTIP = "如果你想只看到你当前阵营的种族和职业的战网模式数据，请开启此设置。";
-		--TODO: LOOT_MODE = "Loot Mode";
-		--TODO: LOOT_MODE_TOOLTIP = "Enable this option to show loot from all sources.\n\nYou can change which sort of loot displays for you based on the Filters tab.";
+		LOOT_MODE = "拾取模式";
+		LOOT_MODE_TOOLTIP = "启用此选项可以显示来自所有来源的战利品。\n\n您可以根据“过滤器”标签更改显示的战利品类型。";
 		MODE_EXPLAIN_LABEL = "|cffFFFFFF您收藏的内容汇总在这里。启用所有 "..app.ccColors.Insane.."彩色选项|cffFFFFFF 解锁 "..app.ccColors.Insane.."疯狂模式|cffFFFFFF。";
 		COMPLETIONIST_MODE = "+来源";
 		COMPLETIONIST_MODE_TOOLTIP = "启用该模式，只有当特定物品已被解锁为给定外观时才将物品视为已收藏。\n\n这意味着你需要收藏物品的每一个共享外观。\n\n注意：默认情况下一旦你收藏了共享来源，游戏就会停止告诉你未收藏的物品，这将确保未收藏的物品会被追踪。";
 		MAIN_ONLY = "仅主要";
 		MAIN_ONLY_TOOLTIP = "如果你还想让 ATT *假装*你赢得了所有未被其他种族或职业锁定的共享外观，请启用此设置。\n\n例如，如果你从冰冠堡垒收藏了一个仅限猎人使用的物品，并且在没有职业/种族限制的情况下，有一个来自副本的共享外观，那么 ATT 将*假装*你也获得了该外观来源。\n\n注意：以这种方式解锁时，切换到其他种族/职业将错误地报告你已经获得了尚未为新角色收藏的外观来源。";
-		--TODO: ONLY_RWP = "Only RWP";
-		--TODO: ONLY_RWP_TOOLTIP = "Enable this option to only track transmog that get removed from the game in the future. Only Items tagged with 'removed with patch' data count toward this. If you find an item not tagged that should be tagged, please let me know!\n\nYou can change which sort of loot displays for you based on the Filters tab.";
-		--TODO: UNOFFICIAL_SUPPORT_TOOLTIP = "NOTE: At this time, official support is not provided by WoW's API, but ATT can track items or quest completion to make it functional in the addon.";
+		ONLY_RWP = "仅‘随补丁移除’";
+		ONLY_RWP_TOOLTIP = "启用此选项仅跟踪将来会从游戏中删除的幻化。只有标记为“随补丁移除”的数据的物品才会计入此数据。如果您发现未标记但应标记的物品，请告诉我！\n\n您可以根据“过滤器”选项卡更改显示的战利品类型。";
+		UNOFFICIAL_SUPPORT_TOOLTIP = "注意：目前，WoW 的 API 不提供官方支持，但 ATT 可以跟踪物品或任务完成情况，以使其在插件中发挥作用。";
 
 	-- General Content
 		GENERAL_CONTENT = "通用内容";
@@ -566,8 +566,8 @@ for key,value in pairs({
 		FILTER_THINGS_BY_LEVEL_CHECKBOX = "无等级限制";
 		FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "如果只想查看当前级别角色可用的事物，请启用此设置。\n\n注意：这对新战网特别有用。";
 		SHOW_BOE_CHECKBOX = "装备绑定/拾取绑定物品";
-		--TODO: FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "No Skill Level Restrictions";
-		--TODO: FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "Disable this setting if you only want to see content available to the maximum possible skill level available to the game environment.";
+		FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX = "无技能等级限制";
+		FILTER_THINGS_BY_SKILL_LEVEL_CHECKBOX_TOOLTIP = "如果您只想查看游戏环境中可用的最高技能级别可用的内容，请禁用此设置。";
 		SHOW_BOE_CHECKBOX_TOOLTIP = "如果要隐藏装备绑定/拾取绑定物品，请启用此设置。\n\n当你尝试为角色完成经典旧世并且不想专门用于可以在小号或拍卖行上放置的物品时，此设置非常有用。\n\n即：不要因为毁灭之锤而扰乱你的思绪。";
 		IGNORE_FILTERS_FOR_BOES_CHECKBOX = "忽略装备绑定/拾取绑定的筛选";
 		IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略装备绑定/拾取绑定物品的装备、武器、种族、等级或职业要求，请启用此设置。\n\n如果你正试图通过拍卖行扫描收藏你的物品，此模式可能对你有用。";
@@ -575,8 +575,8 @@ for key,value in pairs({
 		SHOW_ALL_SEASONAL_TOOLTIP = "启用此设置可显示所有季节性事件，而不是仅显示当前活动的季节性事件。\n\n注意：季节性活动将提前7天自动显示为活动状态。";
 		SHOW_PET_BATTLES_CHECKBOX_TOOLTIP = "如果您想在游戏中显示需要宠物对战的内容，请启用此设置。";
 		SHOW_PVP_CHECKBOX_TOOLTIP = "如果你想隐藏任何'可能'需要在游戏中进行 PvP 互动的内容，请启用此设置。";
-		--TODO: SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "All Learnable Quest Rewards";
-		--TODO: SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "Disable this option to hide items that are listed as \"Not Available in Personal Loot\" for quests.\n\nThis is useful for tracking items that your class can't use in World Drops, but still marking quests as completed.\n\nSome items can be marked incorrectly: this setting WILL hide items that you can obtain!";
+		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX = "所有可学的任务奖励";
+		SHOW_ALL_LEARNABLE_QUEST_REWARDS_CHECKBOX_TOOLTIP = "禁用此选项可隐藏任务中列为“在个人拾取中不可用”的物品。\n\n这对于追踪您的职业无法在世界掉落中使用的物品很有用，但仍会将任务标记为已完成。\n\n某些物品可能被错误标记：此设置将隐藏您可以获得的物品！";
 
 		-- Collectible Things
 		ACC_WIDE_DEFAULT = "已追踪 ".. app.ccColors.Account .. "账号通用|R 默认。";
@@ -587,14 +587,14 @@ for key,value in pairs({
 
 		--TODO: ACHIEVEMENTS_CHECKBOX = ACHIEVEMENTS;
 		ACHIEVEMENTS_CHECKBOX_TOOLTIP = "启用此选项可追踪成就。";
-		--TODO: APPEARANCES_CHECKBOX = "Appearances";
+		APPEARANCES_CHECKBOX = "外观";
 		APPEARANCES_CHECKBOX_TOOLTIP = "启用此选项可追踪外观获取。\n\n注意: 禁用此选项也会禁用所有采集逻辑，你可以使用此切换来防止在执行重要组内容时出现延迟，请牢记，重新启用后将需要进行计算。";
-		--TODO: BATTLE_PETS_CHECKBOX = "Battle Pets";
+		BATTLE_PETS_CHECKBOX = "战斗宠物";
 		BATTLE_PETS_CHECKBOX_TOOLTIP = "启用此选项可追踪战斗宠物和同伴。这些可以在开放的世界中找到，也可以通过各种地下城和团队中的boss掉落，以及从供应商和声望获取。";
-		--TODO: DEATHS_CHECKBOX = "Deaths";
-		--TODO: DEATHS_CHECKBOX_TOOLTIP = "Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.";
-		--TODO: EXPLORATION_CHECKBOX = "Exploration";
-		--TODO: EXPLORATION_CHECKBOX_TOOLTIP = "Enable this option to track exploration completion for outdoor maps.";
+		DEATHS_CHECKBOX = "死亡";
+		DEATHS_CHECKBOX_TOOLTIP = "启用此选项可跟踪您的角色每次死亡的情况，并将其显示为插件中的收藏品部分。\n\n注意：如果您关闭此选项，我们仍会跟踪它，但除非您处于调试模式，否则我们不会显示统计信息。";
+		EXPLORATION_CHECKBOX = "探索";
+		EXPLORATION_CHECKBOX_TOOLTIP = "启用此选项可以跟踪户外地图的探索完成情况。";
 		FLIGHT_PATHS_CHECKBOX = "飞行路径";
 		FLIGHT_PATHS_CHECKBOX_TOOLTIP = "启用此选项以追踪飞行路径和飞艇。\n\n要收藏这些信息，请与每个大陆的飞行点/飞艇船长对话。\n\n注意：由于分阶段技术，你可能必须分阶段到区域的其他敌方，以获得这些兴趣点的开启。";
 		--TODO: HEIRLOOMS_CHECKBOX = HEIRLOOMS;
@@ -633,17 +633,17 @@ for key,value in pairs({
 		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 导灵器";
 		SOULBINDCONDUITS_CHECKBOX_TOOLTIP = "启用此选项来追踪暗影国度灵魂羁绊的导灵器。";
 
-		--TODO: CHARACTERUNLOCKS_CHECKBOX = "Character Unlocks";
-		--TODO: CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "Enable this option to track Character Unlocks. These are various character-based unlocks which aren't clearly able to be categorized as another type (e.g. Hex variants, Polymorph variants, Hunter species taming unlocks, Pocopoc customizations, etc.)\n\nTracked per character by default.";
+		CHARACTERUNLOCKS_CHECKBOX = "角色解锁";
+		CHARACTERUNLOCKS_CHECKBOX_TOOLTIP = "启用此选项可跟踪角色解锁。这些是基于角色的各种解锁，无法明确归类为其他类型（例如 妖术变体、变形术变体、猎人物种驯服解锁、波可波克自定义等）。\n\n默认情况下按角色跟踪。";
 
 		-- Account-Wide Checkboxes
 		ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP = "成就追踪通常是在整个账号通用内进行的，但有一些特定职业和种族的专属成就，你无法在你的主账号上获得。";
-		--TODO: ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "Transmog should be collected account wide. Certain items cannot be learned by every class, so ATT will do its best to only show you things that you can collect on your current character.";
+		ACCOUNT_WIDE_APPEARANCES_TOOLTIP = "幻化应该在整个账号范围内收集。某些物品并非每个职业都能学会，因此 ATT 将尽力只向您展示你当前角色可以收集的物品。";
 		ACCOUNT_WIDE_AZERITE_ESSENCES_TOOLTIP = "艾泽里特精华在技术上不能在整个战网内收藏和使用，但如果你只关心收藏你的主角色那么你可能更喜欢在整个战网上追踪它们。";
-		--TODO: ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "Companion pets can be collected on multiple characters and realistically would require that you have an insane amount of bag space in order to collect them all on one character.\n\nWe recommend you keep this turned on, but you do you fam.";
-		--TODO: ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "Consider any Character Unlock collected if any character has collected it.";
-		--TODO: ACCOUNT_WIDE_DEATHS_TOOLTIP = "Death tracking really only exists for pre-Wrath Classic where a statistic wasn't available to know this information. Once achievements were implemented, this feature instead acquires data directly from the statistics API. You can use the tooltip on the Death Tracker to se";
-		--TODO: ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "Exploration tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?";
+		ACCOUNT_WIDE_BATTLE_PETS_TOOLTIP = "伙伴宠物可在多个角色上收集，并且实际上需要你拥有大量的背包空间才能将它们全部收集在一个角色上。\n\n我们建议您保持此功能开启，但你可以自己刷。";
+		ACCOUNT_WIDE_CHARACTERUNLOCKS_TOOLTIP = "如果任一角色已经收集了角色解锁的物品，则将其视为已收集。";
+		ACCOUNT_WIDE_DEATHS_TOOLTIP = "死亡追踪实际上只存在于巫妖王之怒怀旧服之前，当时没有统计数据来了解这些信息。成就实现后，此功能将直接从统计 API 获取数据。您可以使用死亡追踪器上的提示来查看";
+		ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "探索追踪仅对每个角色都非常有用，但你真的想在所有50个角色上收藏它们吗？";
 		ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "飞行路径追踪对每个角色都非常有用，但是你真的想要在所有50个角色上收藏它们吗？";
 		ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "随从通常是每个角色的，但是你真的想以每周1个的速度在一个角色上收藏243个随从吗？\n\n我想不行，好好先生。";
 		ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = "在暴雪的数据库中通常不会在账号通用内跟踪“音乐卷轴和自拍过滤器”，但是我们可以做到这一点。\n\n注意：你只能使用自动点唱机玩具播放音乐或使用你在当前角色上收藏的自拍相机玩具自拍。";
@@ -688,12 +688,12 @@ for key,value in pairs({
 		KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中查看所有服务器上已知此配方的完整角色列表，请启用此选项。";
 		COMPLETED_BY_CHECKBOX = "已完成";
 		COMPLETED_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中查看所有服务器上已完成任务的完整角色列表，请启用此选项。";
-		--TODO: SHOW_CRAFTED_ITEMS_CHECKBOX = "Show Crafted Items";
-		--TODO: SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the items that can be crafted by any of your characters for a reagent in its tooltip.";
-		--TODO: SHOW_RECIPES_CHECKBOX = "Show Recipes";
-		--TODO: SHOW_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.";
-		--TODO: SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX = "Only Non-Trivial";
-		--TODO: SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX_TOOLTIP = "Enable this option if you only want to see non-trivial recipes in the recipe list.";
+		SHOW_CRAFTED_ITEMS_CHECKBOX = "展示制作的物品";
+		SHOW_CRAFTED_ITEMS_CHECKBOX_TOOLTIP = "如果您想在鼠标提示中看到任何角色可以使用某种材料制作的所有物品的列表，请启用此选项。";
+		SHOW_RECIPES_CHECKBOX = "显示配方";
+		SHOW_RECIPES_CHECKBOX_TOOLTIP = "如果您想在鼠标提示中看到任何角色可以用某种材料制作的所有配方列表，请启用此选项。";
+		SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX = "仅非低等级";
+		SHOW_ONLY_NON_TRIVIAL_RECIPES_CHECKBOX_TOOLTIP = "如果你只想在食谱列表中看到非低等级的食谱，请启用此选项。";
 		SHOW_CURRENCY_CALCULATIONS_CHECKBOX = "货币计算";
 		SHOW_CURRENCY_CALCULATIONS_CHECKBOX_TOOLTIP = "启用此选项以显示收集物品所需的物品/货币的估计数量。\n\n对于不一次奖励所有可用内容的容器，估计将因此低于实际需要。";
 		SHARED_APPEARANCES_CHECKBOX = "共享外观";
@@ -732,10 +732,10 @@ for key,value in pairs({
 		ADHOC_UPDATES_CHECKBOX_TOOLTIP = "如果你想只更新可见的 ATT 窗口请启用此选项。\n\n这可以大大减少加载时间并防止在某些情况下出现疯狂掉帧。";
 		EXPAND_DIFFICULTY_CHECKBOX = "展开当前难度";
 		EXPAND_DIFFICULTY_CHECKBOX_TOOLTIP = "如果要在进入地下城或团队副本时自动最小化小列表中未激活的难度标题，请启用此选项。\n\n比如：在普通难度地下城中最小化英雄标题。";
-		--TODO: SHOW_ICON_PORTRAIT_CHECKBOX = "Icon Portraits";
-		--TODO: SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for non-quest object types.\n\nIE: When looking at bosses, this option will show the face of the boss instead of the difficulty icon.\n\nDefault: On";
-		--TODO: SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX = "For Quests";
-		--TODO: SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP = "Enable this option if you want to see creature icon portraits instead of the default icons for quest object types.\n\nIE: When looking at quests, this option will show the face of the quest giver instead of the quest type icon.\n\nDefault: On";
+		SHOW_ICON_PORTRAIT_CHECKBOX = "图标头像";
+		SHOW_ICON_PORTRAIT_CHECKBOX_TOOLTIP = "如果你想看到生物图标头像而不是非任务对象类型的默认图标，请启用此选项。\n\n也就是说：当查看 Boss 时，此选项将显示 Boss 的脸而不是难度图标。\n\n默认：开启";
+		SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX = "对任务";
+		SHOW_ICON_PORTRAIT_FOR_QUESTS_CHECKBOX_TOOLTIP = "如果你想看到生物图标头像而不是任务对象类型的默认图标，请启用此选项。\n\n也就是说：查看任务时，此选项将显示任务给予者的脸，而不是任务类型图标。\n\n默认：开启";
 		SHOW_MODELS_CHECKBOX = "模型预览";
 		SHOW_MODELS_CHECKBOX_TOOLTIP = "启用此选项可在预览中显示模型而不是鼠标提示上的图标。\n\n此选项可帮助你识别稀有生物或商人的模样。因为这个原因你可能想保持这个开启。";
 		FILL_DYNAMIC_QUESTS_CHECKBOX = "显示可回收成本组";
@@ -758,13 +758,13 @@ for key,value in pairs({
 		DYNAMIC_CATEGORY_NESTED = "嵌套";
 		DYNAMIC_CATEGORY_NESTED_TOOLTIP = "根据它们的确切来源生成动态类别。这将导致在多个地方也有来源的事物重复。";
 		DYNAMIC_CATEGORY_TOOLTIP_NOTE = "\n\n|cffff0000生成时应用|r";
-		--TODO: MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "Maximum Top Line Length";
+		MAX_TOOLTIP_TOP_LINE_LENGTH_LABEL = "最大顶线长度";
 
 	-- Interface: Accessibility Page
 		--TODO: ACCESSIBILITY_PAGE = ACCESSIBILITY_LABEL;
 		--TODO: ACCESSIBILITY_EXPLAIN = COLORBLIND_MODE_SUBTEXT;
-		--TODO: COLORS_ICONS = "Colors and Icons";
-		--TODO: LOCKED_QUESTS = "Locked quests";
+		COLORS_ICONS = "颜色和图标";
+		LOCKED_QUESTS = "锁定任务";
 		MORE_COLORS_CHECKBOX = "显示颜色";
 		MORE_COLORS_CHECKBOX_TOOLTIP = "如果你想看到使用更多的颜色来帮助区分列表中事物的附加条件，请启用此选项（比如职业颜色，阵营颜色等。）";
 		WINDOW_COLORS = "窗口颜色";
@@ -772,13 +772,13 @@ for key,value in pairs({
 		BACKGROUND_TOOLTIP = "设置所有 ATT 窗口的背景颜色和透明度。";
 		--TODO: BORDER = EMBLEM_BORDER;
 		BORDER_TOOLTIP = "设置所有 ATT 窗口的边框颜色和透明度。";
-		--TODO: RESET_TOOLTIP = "Revert to default settings.";
+		RESET_TOOLTIP = "恢复默认设置。";
 		CLASS_BORDER = "边框使用职业颜色";
 		CLASS_BORDER_TOOLTIP = "使用职业颜色作为边框。当登录到另一个职业时，此信息会更新。";
 
 	-- Interface: Information Page
 		ACHIEVEMENT_ID = "成就 ID";
-		--TODO: ACHIEVEMENT_CATEGORY_ID = "Achievement Category ID";
+		ACHIEVEMENT_CATEGORY_ID = "成就类别 ID";
 
 
 	-- Features Page
@@ -789,8 +789,8 @@ for key,value in pairs({
 		CELEBRATE_COLLECTED_CHECKBOX = "收藏事物触发庆祝音效";
 		CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP = "如果你想在获得新的事物时听到庆祝'fanfare'效果请启用这个选项。\n\n这个功能可以极大地帮助你保持动力。";
 		SOUNDPACK = "声音包";
-		--TODO: PLAY_DEATH_SOUND_CHECKBOX = "Play a Sound Effect when you Die";
-		--TODO: PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "Enable this option if you want to hear a sound effect when you die.";
+		PLAY_DEATH_SOUND_CHECKBOX = "死亡时播放音效";
+		PLAY_DEATH_SOUND_CHECKBOX_TOOLTIP = "如果你想在死亡时听到音效，请启用此选项。";
 		WARN_REMOVED_CHECKBOX = "移除事物触发警告";
 		WARN_REMOVED_CHECKBOX_TOOLTIP = "如果你想在你不小心卖掉或交易一个给予你外观的物品从而导致收藏中失去该外观时听到警告的声音效果，请启用这个选项。\n\n如果你的商品有购买计时这可能非常有用。该插件会告诉你你犯了一个错误。";
 		SCREENSHOT_COLLECTED_CHECKBOX = "收藏物品后触发截图";
@@ -804,24 +804,24 @@ for key,value in pairs({
 		REPORT_COMPLETED_QUESTS_CHECKBOX_TOOLTIP = "如果希望在任务发生后立即看到你完成的任何任务的任务 ID，请启用此选项。（用于报告错误、追踪等）";
 		REPORT_UNSORTED_CHECKBOX = "仅'无来源'";
 		REPORT_UNSORTED_CHECKBOX_TOOLTIP = "如果只想查看任务 ID 且他还没有来源，请启用此选项。";
-		--TODO: REPORT_NEARBY_CONTENT_CHECKBOX = "Report Nearby Content";
-		--TODO: REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content such as vignettes to the chat. This feature provides popouts and waypoints when used.";
-		--TODO: REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX = "Automatically Plot Waypoints";
-		--TODO: REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically plot waypoints for nearby content.";
-		--TODO: REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX = "Automatically Clear";
-		--TODO: REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically clear the waypoint plotted by the nearby content feature when the content itself becomes unavailable or you go out of range.";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX = "Include Creatures";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered creatures. (Rares, World Bosses, NPCs)";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX = "Include Treasures";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications for things that are considered treasures. (Chests, Statues, Satchels in the world)";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX = "Include Completed";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that completed based on your filters in ATT.";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX = "Include Unknown/Unsourced";
-		--TODO: REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX_TOOLTIP = "Enable this option if you want to see nearby content notifications from things that are not sourced in ATT.";
-		--TODO: REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX = "Flash the Taskbar";
-		--TODO: REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to flash the taskbar when nearby content is detected.";
-		--TODO: REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "Play a Sound Effect";
-		--TODO: REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to also play a notification sound effect when nearby content is detected.";
+		REPORT_NEARBY_CONTENT_CHECKBOX = "报告附近的内容";
+		REPORT_NEARBY_CONTENT_CHECKBOX_TOOLTIP = "如果你想在聊天中看到附近的内容（例如小宝箱），请启用此选项。使用此功能时提供弹出窗口和路径点。";
+		REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX = "自动绘制路径点";
+		REPORT_NEARBY_CONTENT_AUTOMATICALLY_PLOT_WAYPOINTS_CHECKBOX_TOOLTIP = "如果你想 ATT 自动为附近内容绘制路径点，请启用此选项。";
+		REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX = "自动清除";
+		REPORT_NEARBY_CONTENT_CLEAR_WAYPOINTS_CHECKBOX_TOOLTIP = "如果你想在内容本身不可用或你超出范围时，ATT 自动清除附近内容功能绘制的路径点，请启用此选项。";
+		REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX = "包含生物";
+		REPORT_NEARBY_CONTENT_INCLUDE_CREATURES_CHECKBOX_TOOLTIP = "如果你想查看附近被视为生物的内容通知，请启用此选项。（稀有怪、世界首领、NPC）";
+		REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX = "包含宝藏";
+		REPORT_NEARBY_CONTENT_INCLUDE_TREASURES_CHECKBOX_TOOLTIP = "如果你想查看附近被视为宝藏的物品的通知，请启用此选项。（箱子、雕像、背包）";
+		REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX = "包含已完成";
+		REPORT_NEARBY_CONTENT_INCLUDE_COMPLETED_CHECKBOX_TOOLTIP = "如果你想要查看根据 ATT 的过滤器中已完成的附近内容通知，请启用此选项。";
+		REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX = "包括未知/无来源";
+		REPORT_NEARBY_CONTENT_INCLUDE_UNKNOWN_CHECKBOX_TOOLTIP = "如果你想查看非 ATT 已知来源的附近内容通知，请启用此选项。";
+		REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX = "闪烁任务栏";
+		REPORT_NEARBY_CONTENT_FLASH_THE_TASKBAR_CHECKBOX_TOOLTIP = "如果你希望 ATT 在检测到附近内容时闪烁任务栏，请启用此选项。";
+		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX = "播放音效";
+		REPORT_NEARBY_CONTENT_PLAY_SOUND_EFFECT_CHECKBOX_TOOLTIP = "如果你希望 ATT 在检测到附近内容时也播放通知音效，请启用此选项。";
 
 	-- Features: Sync Page
 	-- Retail Only, deprecated.
@@ -855,7 +855,7 @@ for key,value in pairs({
 	[1] = {1, "|CFFFF0000此项玩家永远无法获得。|r", "从未实施"}, -- No Hope
 	[2] = {1, "|CFFFF0000此项已从游戏中删除。|r", "从游戏中移除"}, -- No Hope
 	[4] = {3, "|CFFFF0000除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r", "PvP 精良/角斗士"},
-	--[9] = {3, "|CFFFF0000This item is available on the Black Market Auction House. The original source may have been removed.|R", "黑市拍卖行 [BMAH]"},
+	[9] = {3, "|CFFFF0000此物品可在黑市拍卖行购买。原始来源可能已被删除。|r", "黑市拍卖行 [BMAH]"},
 	[10] = {3, "|CFFFF0000最初通过不再印刷的 TCG 卡获得，但仍可通过黑市、游戏内或现实中的拍卖行获得。|r", "集换式卡牌游戏 [TCG]"},
 	[11] = {3, "|CFFFF0000除非您认识可以使用用于召唤首领的物品的人，否则这将不再可用。\n注意：如果过去拥有大多数召唤物品，则可以通过与相应的 NPC 交谈来重新获得它们。|r", "需要召唤物品"},
 	[15] = {1, "|CFFFF0000这不能永久收集、学习或用于幻化。|r", "不可学"},
