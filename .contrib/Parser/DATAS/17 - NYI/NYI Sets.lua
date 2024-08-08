@@ -3644,7 +3644,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				cl(HUNTER, {
 					i(150612),	-- Marksman's Recurve Bow
 					i(150586),	-- Packmasters Rifle
-					i(157650),	-- Tracker's Spear
 				}),
 				cl(MAGE, {
 					i(150587),	-- Frostcore Staff

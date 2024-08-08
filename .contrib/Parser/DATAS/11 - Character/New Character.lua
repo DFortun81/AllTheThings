@@ -471,6 +471,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			i(157675),	-- Heartbonded Greaves
 			i(157649),	-- Goldstring Recurve
 			i(157622),	-- Silverscope Longrifle
+			i(157650),	-- Tracker's Spear
 		})),
 	}),
 	cl(MONK, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 }, }, {
@@ -482,7 +483,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(157691),	-- Ascetic's Footpads
 		i(157625),	-- Mash Tun Mixer
 		i(157627, {	-- Sword of Searing Winds
-			["u"] = REMOVED_FROM_GAME,	-- this appears to have been replaced with the staff in SL prepatch
+			["timeline"] = { REMOVED_9_0_1 },	-- this appears to have been replaced with the staff in SL prepatch
 		}),
 	})),
 	cl(MAGE, {
