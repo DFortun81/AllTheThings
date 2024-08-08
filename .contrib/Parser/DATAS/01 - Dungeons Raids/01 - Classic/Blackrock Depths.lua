@@ -2316,7 +2316,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(VENDORS, {
 				n(12944, bubbleDownClassicRep(59, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 					{	-- Neutral
-						
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(20754, {	-- Lesser Mana Oil
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(20755, {	-- Formula: Wizard Oil
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 					},
 					{	-- Friendly
 						applyclassicphase(PHASE_THREE, i(19444)),	-- Formula: Enchant Weapon - Strength (RECIPE!)
@@ -2329,6 +2336,12 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					{	-- Honored
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(228981, {	-- Formula: Conductive Shield Coating
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(229008, {	-- Formula: Enchant Cloak - Greater Fire Resistance
+							["timeline"] = { "added 1.15.3" },
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(229009, {	-- Formula: Enchant Cloak - Greater Nature Resistance
 							["timeline"] = { "added 1.15.3" },
 						})),
 						-- #endif
