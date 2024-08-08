@@ -2327,6 +2327,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_FIVE, i(20761)),	-- Recipe: Transmute Elemental Fire (RECIPE!)
 					},
 					{	-- Honored
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228981, {	-- Formula: Conductive Shield Coating
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						applyclassicphase(PHASE_THREE, i(19448)),	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
 						i(17025),	-- Pattern: Black Dragonscale Boots (RECIPE!)
 						i(17017),	-- Pattern: Flarecore Mantle

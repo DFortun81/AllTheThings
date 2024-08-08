@@ -1148,6 +1148,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FIVE, i(20749, {["timeline"] = {REMOVED_4_0_3}})),	-- Brilliant Wizard Oil / 10.0.7: Expired Wizard Oil
 			applyclassicphase(PHASE_FIVE, i(203862, {["timeline"] = {ADDED_10_0_7}})),	-- Brilliant Mana Oil
 			applyclassicphase(PHASE_FIVE, i(203865, {["timeline"] = {ADDED_10_0_7}})),	-- Brilliant Wizard Oil
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228980, {	-- Conductive Shield Coating
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(12810),	-- Enchanted Leather
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(217308, {	-- Enchanted Sigil: Innovation

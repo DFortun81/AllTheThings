@@ -508,6 +508,7 @@ for spellID,learnedAt in pairs({
 	[15596] = 265,	-- Smoking Heart of the Mountain
 	[20009] = 270,	-- Enchant Bracer - Superior Spirit
 	[20012] = 270,	-- Enchant Gloves - Greater Agility
+	[463869] = 275,	-- Conductive Shield Coating
 	[20024] = 275,	-- Enchant Boots - Spirit
 	[20026] = 275,	-- Enchant Chest - Major Health
 	[25128] = 275,	-- Wizard Oil

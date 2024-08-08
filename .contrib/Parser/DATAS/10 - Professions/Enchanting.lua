@@ -1081,6 +1081,11 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			-- #endif
 			applyclassicphase(PHASE_FIVE, r(25130, {["timeline"]={REMOVED_4_0_3}})),	-- Brilliant Mana Oil
 			applyclassicphase(PHASE_FIVE, r(25129, {["timeline"]={REMOVED_4_0_3}})),	-- Brilliant Wizard Oil
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(463869, {	-- Conductive Shield Coating
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			applyclassicphase(PHASE_FIVE, r(25127)),	-- Lesser Mana Oil
 			applyclassicphase(PHASE_FIVE, r(25126)),	-- Lesser Wizard Oil
 			applyclassicphase(PHASE_FIVE, r(25125)),	-- Minor Mana Oil
