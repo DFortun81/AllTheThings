@@ -933,6 +933,7 @@ for spellID,learnedAt in pairs({
 	[19107] = 300,	-- Black Dragonscale Leggings
 	[461657] = 300,	-- Hardened Black Dragonscale Leggings
 	[19094] = 300,	-- Black Dragonscale Shoulders
+	[461659] = 300,	-- Hardened Black Dragonscale Shoulders
 	[24124] = 300,	-- Blood Tiger Breastplate
 	[24125] = 300,	-- Blood Tiger Shoulders
 	[24654] = 300,	-- Blue Dragonscale Leggings

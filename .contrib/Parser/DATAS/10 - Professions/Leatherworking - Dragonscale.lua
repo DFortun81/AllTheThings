@@ -92,6 +92,9 @@ profession(LEATHERWORKING, {
 						["name"] = "Black Dragonscale Shoulders",
 						["recipeID"] = 19094,
 						["requireSkill"] = 10656,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 					{
 						["name"] = "Blue Dragonscale Shoulders",
@@ -99,6 +102,14 @@ profession(LEATHERWORKING, {
 						["recipeID"] = 19089,
 						["requireSkill"] = 10656,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Hardened Black Dragonscale Shoulders",
+						["recipeID"] = 461659,
+						["requireSkill"] = 10656,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 				}
 			},
 			{

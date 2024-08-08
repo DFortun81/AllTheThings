@@ -2388,12 +2388,19 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["cr"] = 8903,	-- Anvilrage Captain
 				}),
 				i(15770, {	-- Pattern: Black Dragonscale Shoulders (RECIPE!)
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["cr"] = 8898,	-- Anvilrage Marshal
 				}),
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(227903, {	-- Pattern: Hardened Black Dragonscale Leggings (RECIPE!)
 					["timeline"] = { "added 1.15.3" },
 					["cr"] = 8903,	-- Anvilrage Captain
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227904, {	-- Pattern: Hardened Black Dragonscale Shoulders (RECIPE!)
+					["timeline"] = { "added 1.15.3" },
+					["cr"] = 8898,	-- Anvilrage Marshal
 				})),
 				-- #endif
 				i(11614, {	-- Plans: Dark Iron Mail (RECIPE!)
