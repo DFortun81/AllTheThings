@@ -813,27 +813,65 @@ i(78856);	-- Leggings of the Corrupted Conqueror
 i(78857);	-- Leggings of the Corrupted Protector
 i(78858);	-- Leggings of the Corrupted Vanquisher
 
--- Tier 22 LFR [SotFO]
-i(191005, { ["modID"] = 4, });	-- Dreadful Helm Module
-i(191002, { ["modID"] = 4, });	-- Mystic Helm Module
-i(191003, { ["modID"] = 4, });	-- Venerated Helm Module
-i(191004, { ["modID"] = 4, });	-- Zenith Helm Module
-i(191006, { ["modID"] = 4, });	-- Dreadful Shoulder Module
-i(191007, { ["modID"] = 4, });	-- Mystic Shoulder Module
-i(191008, { ["modID"] = 4, });	-- Venerated Shoulder Module
-i(191009, { ["modID"] = 4, });	-- Zenith Shoulder Module
-i(191010, { ["modID"] = 4, });	-- Dreadful Chest Module
-i(191011, { ["modID"] = 4, });	-- Mystic Chest Module
-i(191012, { ["modID"] = 4, });	-- Venerated Chest Module
-i(191013, { ["modID"] = 4, });	-- Zenith Chest Modulefs
-i(191014, { ["modID"] = 4, });	-- Dreadful Hand Module
-i(191015, { ["modID"] = 4, });	-- Mystic Hand Module
-i(191016, { ["modID"] = 4, });	-- Venerated Hand Module
-i(191017, { ["modID"] = 4, });	-- Zenith Hand Module
-i(191018, { ["modID"] = 4, });	-- Dreadful Leg Module
-i(191019, { ["modID"] = 4, });	-- Mystic Leg Module
-i(191020, { ["modID"] = 4, });	-- Venerated Leg Module
-i(191021, { ["modID"] = 4, });	-- Zenith Leg Module
+-- Tier 17 N [BRF]
+i(119310, { ["modID"] = 3, });	-- Essence of the Iron Conqueror
+i(119323, { ["modID"] = 3, });	-- Essence of the Iron Protector
+i(119316, { ["modID"] = 3, });	-- Essence of the Iron Vanquisher
+i(119308, { ["modID"] = 3, });	-- Helm of the Iron Conqueror
+i(119321, { ["modID"] = 3, });	-- Helm of the Iron Protector
+i(119312, { ["modID"] = 3, });	-- Helm of the Iron Vanquisher
+i(119309, { ["modID"] = 3, });	-- Shoulders of the Iron Conqueror
+i(119322, { ["modID"] = 3, });	-- Shoulders of the Iron Protector
+i(119314, { ["modID"] = 3, });	-- Shoulders of the Iron Vanquisher
+i(119305, { ["modID"] = 3, });	-- Chest of the Iron Conqueror
+i(119318, { ["modID"] = 3, });	-- Chest of the Iron Protector
+i(119315, { ["modID"] = 3, });	-- Chest of the Iron Vanquisher
+i(119306, { ["modID"] = 3, });	-- Gauntlets of the Iron Conqueror
+i(119319, { ["modID"] = 3, });	-- Gauntlets of the Iron Protector
+i(119311, { ["modID"] = 3, });	-- Gauntlets of the Iron Vanquisher
+i(119307, { ["modID"] = 3, });	-- Leggings of the Iron Conqueror
+i(119320, { ["modID"] = 3, });	-- Leggings of the Iron Protector
+i(119313, { ["modID"] = 3, });	-- Leggings of the Iron Vanquisher
+
+-- Tier 17 H [BRF]
+i(119310, { ["modID"] = 5, });	-- Essence of the Iron Conqueror
+i(119323, { ["modID"] = 5, });	-- Essence of the Iron Protector
+i(119316, { ["modID"] = 5, });	-- Essence of the Iron Vanquisher
+i(119308, { ["modID"] = 5, });	-- Helm of the Iron Conqueror
+i(119321, { ["modID"] = 5, });	-- Helm of the Iron Protector
+i(119312, { ["modID"] = 5, });	-- Helm of the Iron Vanquisher
+i(119309, { ["modID"] = 5, });	-- Shoulders of the Iron Conqueror
+i(119322, { ["modID"] = 5, });	-- Shoulders of the Iron Protector
+i(119314, { ["modID"] = 5, });	-- Shoulders of the Iron Vanquisher
+i(119305, { ["modID"] = 5, });	-- Chest of the Iron Conqueror
+i(119318, { ["modID"] = 5, });	-- Chest of the Iron Protector
+i(119315, { ["modID"] = 5, });	-- Chest of the Iron Vanquisher
+i(119306, { ["modID"] = 5, });	-- Gauntlets of the Iron Conqueror
+i(119319, { ["modID"] = 5, });	-- Gauntlets of the Iron Protector
+i(119311, { ["modID"] = 5, });	-- Gauntlets of the Iron Vanquisher
+i(119307, { ["modID"] = 5, });	-- Leggings of the Iron Conqueror
+i(119320, { ["modID"] = 5, });	-- Leggings of the Iron Protector
+i(119313, { ["modID"] = 5, });	-- Leggings of the Iron Vanquisher
+
+-- Tier 17 M [BRF]
+i(119310, { ["modID"] = 6, });	-- Essence of the Iron Conqueror
+i(119323, { ["modID"] = 6, });	-- Essence of the Iron Protector
+i(119316, { ["modID"] = 6, });	-- Essence of the Iron Vanquisher
+i(119308, { ["modID"] = 6, });	-- Helm of the Iron Conqueror
+i(119321, { ["modID"] = 6, });	-- Helm of the Iron Protector
+i(119312, { ["modID"] = 6, });	-- Helm of the Iron Vanquisher
+i(119309, { ["modID"] = 6, });	-- Shoulders of the Iron Conqueror
+i(119322, { ["modID"] = 6, });	-- Shoulders of the Iron Protector
+i(119314, { ["modID"] = 6, });	-- Shoulders of the Iron Vanquisher
+i(119305, { ["modID"] = 6, });	-- Chest of the Iron Conqueror
+i(119318, { ["modID"] = 6, });	-- Chest of the Iron Protector
+i(119315, { ["modID"] = 6, });	-- Chest of the Iron Vanquisher
+i(119306, { ["modID"] = 6, });	-- Gauntlets of the Iron Conqueror
+i(119319, { ["modID"] = 6, });	-- Gauntlets of the Iron Protector
+i(119311, { ["modID"] = 6, });	-- Gauntlets of the Iron Vanquisher
+i(119307, { ["modID"] = 6, });	-- Leggings of the Iron Conqueror
+i(119320, { ["modID"] = 6, });	-- Leggings of the Iron Protector
+i(119313, { ["modID"] = 6, });	-- Leggings of the Iron Vanquisher
 
 -- Castle Nathria LFR Weapon Tokens
 i(183893, { ["modID"] = 4, });	-- Abominable Anima Spherule
@@ -890,6 +928,29 @@ i(183891, { ["modID"] = 6, });	-- Venerated Anima Spherule
 i(183898, { ["modID"] = 6, });	-- Venerated Anima Spherule
 i(183899, { ["modID"] = 6, });	-- Zenith Anima Spherule
 i(183890, { ["modID"] = 6, });	-- Zenith Anima Spherule
+
+-- Tier 22 LFR [SotFO]
+i(191005, { ["modID"] = 4, });	-- Dreadful Helm Module
+i(191002, { ["modID"] = 4, });	-- Mystic Helm Module
+i(191003, { ["modID"] = 4, });	-- Venerated Helm Module
+i(191004, { ["modID"] = 4, });	-- Zenith Helm Module
+i(191006, { ["modID"] = 4, });	-- Dreadful Shoulder Module
+i(191007, { ["modID"] = 4, });	-- Mystic Shoulder Module
+i(191008, { ["modID"] = 4, });	-- Venerated Shoulder Module
+i(191009, { ["modID"] = 4, });	-- Zenith Shoulder Module
+i(191010, { ["modID"] = 4, });	-- Dreadful Chest Module
+i(191011, { ["modID"] = 4, });	-- Mystic Chest Module
+i(191012, { ["modID"] = 4, });	-- Venerated Chest Module
+i(191013, { ["modID"] = 4, });	-- Zenith Chest Modulefs
+i(191014, { ["modID"] = 4, });	-- Dreadful Hand Module
+i(191015, { ["modID"] = 4, });	-- Mystic Hand Module
+i(191016, { ["modID"] = 4, });	-- Venerated Hand Module
+i(191017, { ["modID"] = 4, });	-- Zenith Hand Module
+i(191018, { ["modID"] = 4, });	-- Dreadful Leg Module
+i(191019, { ["modID"] = 4, });	-- Mystic Leg Module
+i(191020, { ["modID"] = 4, });	-- Venerated Leg Module
+i(191021, { ["modID"] = 4, });	-- Zenith Leg Module
+
 
 -- Tier 22 N [SotFO]
 i(191005, { ["modID"] = 3, });	-- Dreadful Helm Module
