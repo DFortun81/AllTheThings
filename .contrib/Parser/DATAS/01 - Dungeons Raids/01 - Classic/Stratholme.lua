@@ -826,8 +826,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(12827, {	-- Plans: Serenity (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
-								["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2 },
+								["timeline"] = {
+									-- #if SEASON_OF_DISCOVERY
+									"removed 1.15.3",
+									-- #else
+									REMOVED_2_0_1, ADDED_3_0_2,
+									-- #endif
+								},
 							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228308, {	-- Plans: Tranquility (RECIPE!)
+								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
 						},
 					}),
 					e(446, {	-- Cannon Master Willey [Classic] / Willey Hopebreaker [CATA+]

@@ -1562,7 +1562,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
 					-- #endif
 					["coord"] = { 61.2, 37.2, WINTERSPRING },
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3,
+						-- #endif
+					},
 					["maps"] = { STRATHOLME },
 					-- #if BEFORE TBC
 					["requireSkill"] = 9787,	-- Weaponsmith

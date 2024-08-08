@@ -308,6 +308,7 @@ for spellID,learnedAt in pairs({
 	[16667] = 285,	-- Demon Forged Breastplate
 	[16654] = 285,	-- Radiant Gloves
 	[16983] = 285,	-- Serenity
+	[461718] = 285,	-- Tranquility
 	[16985] = 290,	-- Corruption
 	[16660] = 290,	-- Dawnbringer Shoulders
 	[16655] = 290,	-- Fiery Plate Gauntlets

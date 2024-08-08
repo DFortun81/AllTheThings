@@ -162,10 +162,24 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Serenity",
-						["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_2_0_1, ADDED_3_0_2,
+							-- #endif
+						},
 						["recipeID"] = 16983,
 						["requireSkill"] = 17040,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Tranquility",
+						["recipeID"] = 461718,
+						["requireSkill"] = 17040,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE,{
 						["name"] = "Deep Thunder",
