@@ -615,7 +615,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
+						-- #if SEASON_OF_DISCOVERY
+						84496,	-- Sweet Serenity [Master Hammersmith]
+						-- #else
 						5305,	-- Sweet Serenity [Master Hammersmith]
+						-- #endif
 					},
 					-- #endif
 					["coord"] = { 61.2, 37.2, WINTERSPRING },
@@ -1439,7 +1443,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #if BEFORE TBC
 					["altQuests"] = {
 						5307,	-- Corruption [Master Swordsmith]
+						-- #if SEASON_OF_DISCOVERY
+						84496,	-- Sweet Serenity [Master Hammersmith]
+						-- #else
 						5305,	-- Sweet Serenity [Master Hammersmith]
+						-- #endif
 					},
 					-- #endif
 					-- #if BEFORE 4.0.3
@@ -1550,6 +1558,37 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				applyclassicphase(SOD_PHASE_FOUR, q(84496, {	-- Sweet Serenity
+					["qg"] = 11191,	-- Lilith the Lithe
+					-- #if BEFORE TBC
+					["altQuests"] = {
+						5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
+						5307,	-- Corruption [Master Swordsmith]
+					},
+					-- #endif
+					-- #if BEFORE 4.0.3
+					["description"] = "Upon finishing this quest, you will become a Master Hammersmith and be locked out of becoming a Master Axesmith and Master Swordsmith.",
+					-- #endif
+					["coord"] = { 61.2, 37.2, WINTERSPRING },
+					["timeline"] = { "added 1.15.3" },
+					["maps"] = { STRATHOLME },
+					-- #if BEFORE TBC
+					["requireSkill"] = 9787,	-- Weaponsmith
+					-- #else
+					["requireSkill"] = BLACKSMITHING,
+					-- #endif
+					["learnedAt"] = 250,
+					["lvl"] = 50,
+					["groups"] = {
+						objective(1, {	-- 0/1 Crimson Hammersmith's Apron
+							["provider"] = { "i", 13351 },	-- Crimson Hammersmith's Apron
+							["cr"] = 11120,	-- Crimson Hammersmith
+						}),
+						i(228311, {	-- Plans: Finely-Enchanted Battlehammer (RECIPE!)
+							["timeline"] = { "added 1.15.3" },
+						}),
+					},
+				})),
 				q(5305, {	-- Sweet Serenity
 					["qg"] = 11191,	-- Lilith the Lithe
 					-- #if BEFORE TBC
@@ -1583,7 +1622,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["cr"] = 11120,	-- Crimson Hammersmith
 						}),
 						i(12824, {	-- Plans: Enchanted Battlehammer (RECIPE!)
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
 					},
 				}),

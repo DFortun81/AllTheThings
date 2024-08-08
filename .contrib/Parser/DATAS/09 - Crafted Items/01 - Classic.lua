@@ -438,7 +438,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 					["groups"] = {
 						applyclassicphase(PHASE_THREE, i(19170)),	-- Ebon Hand
-						i(12776, {["timeline"] = {REMOVED_4_0_3}}),	-- Enchanted Battlehammer
+						i(12776, {	-- Enchanted Battlehammer
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							}
+						}),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227880, {	-- Finely-Enchanted Battlehammer
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12796),	-- Hammer of the Titans
 						i(12794, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_5}}),	-- Masterwork Stormhammer
 						applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader

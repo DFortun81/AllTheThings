@@ -2565,7 +2565,13 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Enchanted Battlehammer",
-					["timeline"] = { REMOVED_4_0_1 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3,
+						-- #endif
+					},
 					["recipeID"] = 16973,
 				},
 				-- #endif
@@ -2576,6 +2582,15 @@ profession(BLACKSMITHING, {
 						DELETED_5_0_4
 					},
 				}),
+				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Finely-Enchanted Battlehammer",
+					["recipeID"] = 461733,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
+				-- #endif
 				{
 					["name"] = "Frost Tiger Blade",
 					["recipeID"] = 3497,

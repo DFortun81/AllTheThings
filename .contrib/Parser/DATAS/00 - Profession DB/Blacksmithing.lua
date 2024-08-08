@@ -341,6 +341,7 @@ i(0, 17040, nil, MASTER_HAMMERSMITH);		-- Master Hammersmith [REMOVED: 4.0.3]
 -- #if BEFORE TBC
 i(19210, 23650, nil, MASTER_HAMMERSMITH);	-- Ebon Hand
 i(12824, 16973, nil, MASTER_HAMMERSMITH);	-- Enchanted Battlehammer [REMOVED: 4.0.3]
+i(228311, 461733, nil, MASTER_HAMMERSMITH);	-- Finely-Enchanted Battlehammer
 i(12833, 16988, nil, MASTER_HAMMERSMITH);	-- Hammer of the Titans
 i(12837, 16993, nil, MASTER_HAMMERSMITH);	-- Masterwork Stormhammer [REMOVED: 6.0.2]
 i(22390, 27830, nil, MASTER_HAMMERSMITH);	-- Persuader

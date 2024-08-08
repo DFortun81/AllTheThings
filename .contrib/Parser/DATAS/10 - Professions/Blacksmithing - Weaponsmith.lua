@@ -14,6 +14,7 @@ profession(BLACKSMITHING, {
 		["timeline"] = { REMOVED_4_0_1 },
 		["groups"] = {
 			prof(17041, {	-- Master Axesmith
+				["sourceQuest"] = 5306,	-- Snakestone of the Shadow Huntress [Master Axesmith]
 				["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
 				["groups"] = {
 					-- #if BEFORE TBC
@@ -130,6 +131,13 @@ profession(BLACKSMITHING, {
 				},
 			}),
 			prof(17040, {	-- Master Hammersmith
+				["sourceQuests"] = {
+					-- #if SEASON_OF_DISCOVERY
+					84496,	-- Sweet Serenity [Master Hammersmith]
+					-- #else
+					5305,	-- Sweet Serenity [Master Hammersmith]
+					-- #endif
+				},
 				["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 				["groups"] = {
 					-- #if BEFORE TBC
@@ -140,10 +148,24 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Enchanted Battlehammer",
-						["timeline"] = { REMOVED_4_0_1 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
 						["recipeID"] = 16973,
 						["requireSkill"] = 17040,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Finely-Enchanted Battlehammer",
+						["recipeID"] = 461733,
+						["requireSkill"] = 17040,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Hammer of the Titans",
 						["recipeID"] = 16988,
@@ -260,6 +282,7 @@ profession(BLACKSMITHING, {
 				},
 			}),
 			prof(17039, {	-- Master Swordsmith
+				["sourceQuest"] = 5307,	-- Corruption [Master Swordsmith]
 				["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
 				["groups"] = {
 					-- #if BEFORE TBC

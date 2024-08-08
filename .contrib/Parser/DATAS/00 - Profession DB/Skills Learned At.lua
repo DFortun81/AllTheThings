@@ -300,6 +300,7 @@ for spellID,learnedAt in pairs({
 	[16978] = 280,	-- Blazing Rapier
 	[15295] = 280,	-- Dark Iron Shoulders
 	[16973] = 280,	-- Enchanted Battlehammer
+	[461733] = 280,	-- Finely-Enchanted Battlehammer
 	[16971] = 280,	-- Huge Thorium Battleaxe
 	[16652] = 280,	-- Thorium Boots
 	[16653] = 280,	-- Thorium Helm
