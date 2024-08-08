@@ -218,6 +218,9 @@ root(ROOTS.Unsorted, {
 			i(229354),	-- Algari Adventurer's Cache
 			i(229370),	-- Companion Experience
 			i(229371),	-- Companion Experience
+			--
+			i(220305),	-- Ovi'nax's Mercurial Egg
+			i(229899),	-- Coffer Key Shard
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(BATTLE_PETS, {

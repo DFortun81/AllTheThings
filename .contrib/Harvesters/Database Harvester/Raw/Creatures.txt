@@ -21953,3 +21953,7 @@
 230455@@@Personal Skiff
 230553@@@Boost
 230868@@@High Speaker's Guard
+11.0.2.55959
+216479@@@Magni Bronzebeard
+216480@@@Dagran Thaurissan II
+231171@@@Sound Stalker - 11.0 Scenario - Theater Troupe - Audience
