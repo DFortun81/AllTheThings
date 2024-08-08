@@ -1885,6 +1885,7 @@ i(225785);	-- Jar of Pickled Insects
 i(220264);	-- Jaw with Barbed Teeth
 i(228956);	-- Junk Bucket
 i(220238);	-- Keen Fang
+i(225812);	-- Kobyss Teeth-Sharpener
 i(220234);	-- Leaden Vial
 i(225849);	-- Long-Forgotten Glove
 i(228483);	-- Lovingly Carved Ramolith
@@ -1928,6 +1929,7 @@ i(217164);	-- Royal Nailpicker
 i(225807);	-- Rune-Carved Bone
 i(228399);	-- Sad Rock
 i(220236);	-- Sanguineous Sac
+i(220239);	-- Severed Spiraled Tail
 i(223899);	-- Shadowed Appendage
 i(220266);	-- Sharpened Digging Claws
 i(220361);	-- Sharpened Steel Implement

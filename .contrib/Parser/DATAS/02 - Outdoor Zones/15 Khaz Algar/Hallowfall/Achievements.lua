@@ -74,25 +74,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			ach(40625, {	-- The Missing Lynx
 				-- TODO: Braghe please add coords for all the kitties :)
 				crit(68975, {	-- Magpie
-					--["coord"] = { 1, 1, HALLOWFALL },
+					["coord"] = { 60.4, 60.2, HALLOWFALL },
 				}),
 				crit(68998, {	-- Evan
-					--["coord"] = { X, Y, HALLOWFALL },
+					["coord"] = { 42.7, 53.8, HALLOWFALL },
 				}),
 				crit(68999, {	-- Emery
-					--["coord"] = { X, Y, HALLOWFALL },
+					["coord"] = { 42.7, 53.9, HALLOWFALL },
 				}),
 				crit(69000, {	-- Jinx
-					--["coord"] = { X, Y, HALLOWFALL },
+					["coord"] = { 42.2, 54.0, HALLOWFALL },
 				}),
 				crit(69001, {	-- Moog
-					--["coord"] = { X, Y, HALLOWFALL },
+					["coord"] = { 69.3, 43.6, HALLOWFALL },
 				}),
 				crit(69002, {	-- Iggy
-					--["coord"] = { X, Y, HALLOWFALL },
+					["coord"] = { 69.3, 43.6, HALLOWFALL },
 				}),
 				crit(69003, {	-- Nightclaw
-					--["coord"] = { X, Y, HALLOWFALL },
+					["coord"] = { 63.2, 29.3, HALLOWFALL },
 				}),
 				crit(69004, {	-- Purrlock
 					--["coord"] = { X, Y, HALLOWFALL },
@@ -101,19 +101,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 63.3, 28.1, HALLOWFALL },
 				}),
 				crit(69006, {	-- Miral Murder-Mittens
-					--["coord"] = { X, Y, HALLOWFALL },
+					-- can be found probably early depending in quest stage
+					["coord"] = { 60.8, 25.1, HALLOWFALL },
 				}),
 				crit(69007, {	-- Fuzzy
-					--["coord"] = { X, Y, HALLOWFALL },
+					["coord"] = { 64.3, 18.9, HALLOWFALL },
 				}),
 				crit(69008, {	-- Furball
-					--["coord"] = { X, Y, HALLOWFALL },
+					["coord"] = { 64.4, 18.6, HALLOWFALL },
 				}),
 				crit(69009, {	-- Dander
-					--["coord"] = { X, Y, HALLOWFALL },
+					["coord"] = { 61.9, 20.8, HALLOWFALL },
 				}),
 				crit(69010, {	-- Gobbo
-					--["coord"] = { X, Y, HALLOWFALL },
+					["coord"] = { 42.1, 53.7, HALLOWFALL },
 				}),
 			}),
 			pvp(ach(40085)),	-- Tour of Duty: Hallowfall

@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
-			n(221690, {	-- Rage of Beledar
+			n(221690, {	-- Strength of Beledar
 				["coord"] = { 43.6, 29.9, HALLOWFALL },
 				["questID"] = 81849,
 				["g"] = {
@@ -147,7 +147,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 })));
 
 root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
-	m(ISLE_OF_DORN, {
+	m(HALLOWFALL, {
 		q(84061),	-- Extra HQT: Murkshade
 		q(84061),	-- Extra HQT: The Taskmaker
 		q(84062),	-- Extra HQT: Sloshmuck

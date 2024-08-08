@@ -95,6 +95,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(216693),	-- Shadowtide Crab (QI!)
 						},
 					}),
+					q(81632, {	-- Lizard Looters
+						["sourceQuests"] = { 78472 },	-- Keyflame: Attica Whiskervale
+						["provider"] = { "n", 212419 },	-- Attica Whiskervale
+						["coord"] = { 64.5, 18.8, HALLOWFALL },
+						["g"] = {
+							i(219346),	-- Camp Supplies (QI!)
+						},
+					}),
 					q(76169, {	-- Glow in the Dark
 						["sourceQuests"] = { 78472 },	-- Keyflame: Attica Whiskervale
 						["provider"] = { "n", 212419 },	-- Attica Whiskervale
@@ -213,7 +221,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 					--[[
-					q(81632),	-- Lizard Looters
 					q(80562),	-- Blossoming Delight
 					]]
 				})),
@@ -226,8 +233,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 					n(214757, {	-- Croakit
+						["description"] = "Bring 10x Shadowblind Grouper (buy or fish up) and feed him",
 						["coord"] = { 67.3, 23.5, HALLOWFALL },
 						["questID"] = 82560,
+						["cost"] = {{ "i", 211474, 10 }},	-- 10x Shadowblind Grouper
 					}),
 					n(206184, {	-- Deathpetal
 						["coord"] = { 63.8, 32.0, HALLOWFALL },
@@ -239,8 +248,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					n(207780, {	-- Finclaw Bloodtide
 						["provider"] = { "n", 220492 },	-- Finclaw Bloodtide
-						--["coord"] = { X, Y, HALLOWFALL },
+						["coord"] = { 61.1, 18.3, HALLOWFALL },
 						["questID"] = 82564,
+						["g"] = {
+							i(223925),	-- Blood Hungerer's Chestplate
+						},
 					}),
 					n(206203, {	-- Moth'ethk
 						["coord"] = { 63.5, 28.5, HALLOWFALL },
@@ -261,6 +273,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(207803, {	-- Toadstomper
 						["coord"] = { 66.7, 24.1, HALLOWFALL },
 						["questID"] = 82561,
+						["g"] = {
+							i(223933),	-- Slime Goliath's Cap
+						},
 					}),
 				}),
 				n(REWARDS, {
@@ -268,6 +283,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(226264),	-- Radiant Cache
 					i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
+					i(228741, {	-- Lamplighter Supply Satchel
+						i(229155),	-- Lamplighter's Greataxe
+						--probably all Lamplighter's stuff from it?
+						i(229085),	-- Aevery's Spare Bracers
+					}),
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
 					i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
 				}),
@@ -407,7 +427,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(83281),	-- Completed Spreading The Light But I also got a Spark of Omens? / Fractured Spark of Omens
 	--
 	q(84052),	-- Extra HQT: Crazed Cabbage Smacker
-
+	q(84054),	-- Extra HQT: Croakit
+	q(84053),	-- Extra HQT: Deathpetal
+	q(84056),	-- Extra HQT: Duskshadow
+	q(84059),	-- Extra HQT: Finclaw Bloodtide
+	q(84051),	-- Extra HQT: Moth'ethk
+	q(84060),	-- Extra HQT: Murkspike
+	q(84058),	-- Extra HQT: Ravageant
+	q(84056),	-- Extra HQT: Toadstomper
 	---
 	q(79177),	-- Snuffling in Hallowfall?
+	--
+	q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
 }));

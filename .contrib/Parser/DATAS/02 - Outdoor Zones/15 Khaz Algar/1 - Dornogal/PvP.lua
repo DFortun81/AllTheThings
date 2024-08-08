@@ -18,6 +18,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					--
 				},
 			}, {
+				q(80184),	-- Preserving in Battle
 				q(80187),	-- Preserving in Skirmishes
 				q(80186),	-- Preserving in War
 				q(80185),	-- Preserving Solo

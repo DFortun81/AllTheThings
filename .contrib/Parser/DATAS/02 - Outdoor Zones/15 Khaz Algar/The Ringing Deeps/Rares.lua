@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 	m(THE_RINGING_DEEPS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(220274, {	-- Aquelion
-				["coord"] = { 55.0, 70.5, THE_RINGING_DEEPS },
+				["coord"] = { 49.5, 66.2, THE_RINGING_DEEPS },	-- old coord: 55.0, 70.5?
 				["questID"] = 80557,
 				["g"] = {
 					i(223340),	-- Footguards of Shallow Waters
@@ -131,6 +131,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["description"] = "Kill roots of trungal on way to him to make him jump out of terrain",
 				["coord"] = { 71.8, 46.3, THE_RINGING_DEEPS },
 				["questID"] = 80574,
+				["g"] = {
+					i(221228),	-- Infested Fungal Wristwraps
+				},
 			}),
 			n(220285, {	-- Lurker of the Deeps <Displaced Sea Horror>
 				--["coord"] = { X, Y, THE_RINGING_DEEPS },

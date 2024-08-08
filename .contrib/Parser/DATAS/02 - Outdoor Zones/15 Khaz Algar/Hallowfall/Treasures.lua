@@ -121,6 +121,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(225206),	-- Light's Gambit Playbook [book]
 				},
 			}),
+			o(455183, {	-- Shadow Curfew Journal
+				["coord"] = { 59.8, 22.1, HALLOWFALL },
+				--["questID"] = ,
+				["g"] = {
+					i(225205),	-- Shadow Curfew Journal [book]
+				},
+			}),
+			o(453937, {	-- 500 Dishes Using Cave Fish and Mushrooms
+				["coord"] = { 43.9, 50.0, HALLOWFALL },
+				--["questID"] = ,
+				["g"] = {
+					i(225217),	-- 500 Dishes Using Cave Fish and Mushrooms [book]
+				},
+			}),
 			o(453749, {	-- Palawltar's Codex of Dimensional Structure
 				["coord"] = { 48.7, 64.7, HALLOWFALL },
 				["questID"] = 83309,

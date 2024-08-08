@@ -486,7 +486,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 55.0, 39.1, NERUBAR_LOWER },
 			}),
 			-- End Mr. Sunflower's Therapy
-			-- Crit - ? (bugged on character, cannot progress due to Extra Action Button bug)// Some spider quest #2
+			-- Crit - Grieve & Weave
 			q(79630, {	-- Searching the Web
 				--["sourceQuests"] = { xx },	-- ? / Unsure when this one pop up, it was out of minimap range :c
 				["provider"] = { "n", 217356 },	-- Arax'ne
@@ -501,8 +501,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["sourceQuests"] = { 79631 },	-- Klaskin's Great Escape
 				["provider"] = { "n", 220690 },	-- Klaskin
 				["coord"] = { 63.9, 16.3, NERUBAR },
+				["g"] = {
+					i(226176),	-- Love's Last Grasp
+				},
 			}),
-			-- End of some random spider quest #2
+			-- End Grieve & Weave
 			-- Crit - Gutter Work
 			q(79710, {	-- A Fin of Every Kind
 				--["sourceQuests"] = { 78244 },	-- probably, but unsure
@@ -958,6 +961,34 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				},
 			}),
 			-- End All Good Things...
+			-- Crit - Pawns and Pupperty
+			q(80203, {	-- Social Clues
+				--["sourceQuests"] = { xx },	-- ?
+				["provider"] = { "n", 219357 },	-- Orator Tx'itk <The Second Strand>
+				["coord"] = { 71.4, 44.4, NERUBAR },
+			}),
+			q(80204, {	-- Espionage and Ventriloquism
+				["sourceQuests"] = { 80203 },	-- Social Clues
+				["provider"] = { "n", 221092 },	-- Orator Tx'itk <The Second Strand>
+				["coord"] = { 65.7, 40.1, NERUBAR },
+				["g"] = {
+					i(219443),	-- Paralytic Draught (QI!)
+				},
+			}),
+			q(80206, {	-- Marionette Mercy
+				["sourceQuests"] = { 80204 },	-- Espionage and Ventriloquism
+				["provider"] = { "n", 221093 },	-- Orator Tx'itk <The Second Strand>
+				["coord"] = { 65.6, 42.3, NERUBAR },
+				["g"] = {
+					i(219385),	-- Antiparalytic Serum (QI!)
+				},
+			}),
+			q(80205, {	-- Pulling Strings
+				["sourceQuests"] = { 80206 },	-- Marionette Mercy
+				["provider"] = { "n", 221093 },	-- Orator Tx'itk <The Second Strand>
+				["coord"] = { 65.6, 42.3, NERUBAR },
+			}),
+			-- End Pawns and Pupperty
 			-- UNSORTED ZONE QUESTS / FACTION QUESTS
 			-- header is campaign
 			q(84022, {	-- Uniting Severed Threads
@@ -1022,21 +1053,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(225635),	-- Zev'kall's Attrition Log (QI!)
 				},
 			}),	-- randomly end after 2 quest?
-			-- Nerubar - some spider quest (could be Weaver realted?)
-			-- teaching about rumor-type quests?
-			q(80203, {	-- Social Clues
-				--["sourceQuests"] = { xx },	-- ?
-				["provider"] = { "n", 219357 },	-- Orator Tx'itk <The Second Strand>
-				["coord"] = { 71.4, 44.4, NERUBAR },
-			}),
-			q(80204, {	-- Espionage and Ventriloquism
-				["sourceQuests"] = { 80203 },	-- Social Clues
-				["provider"] = { "n", 221092 },	-- Orator Tx'itk <The Second Strand>
-				["coord"] = { 65.7, 40.1, NERUBAR },
-				["g"] = {
-					i(219443),	-- Paralytic Draught (QI!)
-				},
-			}),	-- cannot progress further in this chain due to extra button bug on character
 			-- another nerubar quest, just this one. Could be some that is missing for one of chains.
 			q(79954, {	-- Spiders!
 				--["sourceQuests"] = { xx },	-- ?

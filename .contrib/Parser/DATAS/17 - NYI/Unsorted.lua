@@ -22,7 +22,6 @@ root(ROOTS.Unsorted, {
 				i(228633),	-- Large Pouch of Whelpling's Awakened Crests
 				i(228711),	-- Small Candle
 				i(228720),	-- Nascent Gemstone
-				i(228741),	-- Lamplighter Supply Satchel
 				i(228742),	-- Unidentifiable Cloth
 				i(228743),	-- Damp Weavercloth
 				i(228744),	-- Golbin Twist-Rag
@@ -138,7 +137,6 @@ root(ROOTS.Unsorted, {
 			i(229082),	-- Aevery's Spare Chausses
 			i(229083),	-- Aevery's Spare Shoulderguards
 			i(229084),	-- Aevery's Spare Belt
-			i(229085),	-- Aevery's Spare Bracers
 			i(229086),	-- Kyros's Spare Helm
 			i(229087),	-- Kyros's Spare Chestplate
 			i(229088),	-- Kyros's Spare Sabatons
@@ -205,7 +203,6 @@ root(ROOTS.Unsorted, {
 			i(229152),	-- Lamplighter's Battleaxe
 			i(229153),	-- Lamplighter's Cudgel
 			i(229154),	-- Lamplighter's Edge
-			i(229155),	-- Lamplighter's Greataxe
 			i(229156),	-- Lamplighter's Great Mallet
 			i(229157),	-- Lamplighter's Bulwark
 			i(229158),	-- Lamplighter's War Knives
@@ -1326,7 +1323,6 @@ root(ROOTS.Unsorted, {
 				i(226173),	-- Boots of the First Embrace
 				i(226174),	-- Famished Bride's Clasp
 				i(226175),	-- Traditional Nuptial Shoulderpads
-				i(226176),	-- Love's Last Grasp
 				i(226521),	-- Reinforced-Wax Plating
 				i(226539),	-- Scroll of Momentum
 				i(226672),	-- Band of Elemental Chaos
@@ -1413,7 +1409,6 @@ root(ROOTS.Unsorted, {
 				i(220225),	-- Tattered Standard
 				i(220233),	-- Extinguished Icon
 				i(220235),	-- Electrified Teeth
-				i(220239),	-- Severed Spiraled Tail
 				i(220240),	-- Night's Litany
 				i(220245),	-- Charged Antennae
 				i(220250),	-- Filthy Handkerchief
@@ -1528,7 +1523,6 @@ root(ROOTS.Unsorted, {
 				i(225806),	-- Crystal Inkwell
 				i(225809),	-- Oiled Pigment Pouch
 				i(225811),	-- Gleaming Deep-Pearl
-				i(225812),	-- Kobyss Teeth-Sharpener
 				i(225816),	-- Profaned Pendant
 				i(225817),	-- Ominous Ceremonial Robe
 				i(225818),	-- Tainted Incense
@@ -1731,10 +1725,8 @@ root(ROOTS.Unsorted, {
 				i(219322),	-- Malodorous Philter
 				i(219323),	-- Gelatinous Unguent
 				i(219324),	-- Roiling Elixir
-				i(219346),	-- Camp Supplies
 				i(219350),	-- Maddening Manifest
 				i(219384),	-- Tenir and the Order of Night
-				i(219385),	-- Antiparalytic Serum
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
 				i(219469),	-- Fog Beast Tracker
@@ -1797,7 +1789,6 @@ root(ROOTS.Unsorted, {
 				i(224486),	-- Uncle's Eye
 				i(224545),	-- Plowhead
 				i(224548),	-- Nerubian Device
-				i(224659),	-- Secret-Woven Silk
 				i(224773),	-- Knicknack's Red Candle
 				i(224774),	-- Knicknack's Potion Bottle
 				i(224775),	-- Knicknack's Definitely Rubies
@@ -2001,7 +1992,6 @@ root(ROOTS.Unsorted, {
 				i(221223),	-- Bog Beast Mantle
 				i(221224),	-- Bouldershell Waistguard
 				i(221227),	-- Monstrous Fungal Cord
-				i(221228),	-- Infested Fungal Wristwraps
 				i(221230),	-- Storm Bindings
 				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
@@ -2048,14 +2038,12 @@ root(ROOTS.Unsorted, {
 				i(223922),	-- Cinder Pollen Cloak
 				i(223923),	-- Gilded Cryptlord's Sabatons
 				i(223924),	-- Chitin-Inscribed Vest
-				i(223925),	-- Blood Hungerer's Chestplate
 				i(223926),	-- Earthgorger's Chain Bib
 				i(223927),	-- Vinewrapped Leather Tunic
 
 				i(223930),	-- Monstrous Chain Pincers
 				i(223931),	-- Black Blood Cowl
 				i(223932),	-- Scarab's Carapace Cap
-				i(223933),	-- Slime Goliath's Cap
 				i(223934),	-- Makrura's Foreboding Legplates
 				i(223935),	-- Cabbage Harvester's Pantaloons
 				i(223936),	-- Shadow Bog Trousers
@@ -2151,10 +2139,6 @@ root(ROOTS.Unsorted, {
 				i(224592),	-- Spinner's Hoop \\ [PH] The Fallen Queen's Band
 				i(224594),	-- Spinner's Amulet \\ [PH] Element-Attuned Pendant
 
-
-				i(224629),	-- Arathi Hatchet \\ [PH] Algari Short Axe
-
-
 				i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
 
 				-- Snuffling
@@ -2166,7 +2150,6 @@ root(ROOTS.Unsorted, {
 			n(ACHIEVEMENTS, {
 				i(225203),	-- Beledar- The Emperor's Vision \\ Beledar
 				i(225204),	-- Shadow Curfew Guidelines \\ Rules of Survival
-				i(225205),	-- Shadow Curfew Journal \\ Shadow
 				i(225206),	-- Light's Gambit Playbook
 				i(225208),	-- From the Depths They Come \\ Notebook of Kobyss Movements
 				i(225209),	-- Sacred Flame Prayers
@@ -2176,7 +2159,6 @@ root(ROOTS.Unsorted, {
 				i(225213),	-- Sky-Captain Lancekat's Curse
 				i(225214),	-- List of Activities
 				i(225215),	-- The Song of Renilash \\ The Book
-				i(225217),	-- 500 Dishes Using Cave Fish and Mushrooms
 			}),
 			cl(MAGE, {
 				i(227710),	-- Tome of Polymorph: Mosswool

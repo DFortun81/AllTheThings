@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(223972),	-- Cracked Weavershell
 					i(223973),	-- Sticky Gossamer Sac]
 					i(223974),	-- Jostling Ovoid
-					--i(223975),	-- Suspiciously Heavy Egg (TODO: removed or moved to another vendor?)
+					i(223975),	-- Suspiciously Heavy Egg
 					i(223976),	-- Yesterday's Eggs
 				},
 			}),

@@ -1367,6 +1367,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(220146),	-- Regal Dottyback
 		i(220144),	-- Roaring Anglerseeker
 		i(220149),	-- Sanguine Dogfish
+		i(211474),	-- Shadowblind Grouper
 		i(224752),	-- Soaked Journal Entry
 		i(220141),	-- Specular Rainbowfish
 		i(220150),	-- Spiked Sea Raven

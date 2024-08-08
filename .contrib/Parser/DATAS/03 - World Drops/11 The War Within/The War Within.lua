@@ -93,7 +93,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		--TODO: uncomment & remove from unsorted if it drop
 		i(224627),	-- Arathi Arquebus
 		i(224628),	-- Arathi Claymore
-		--i(224629),	-- Arathi Hatchet \\ [PH] Algari Short Axe
+		i(224629),	-- Arathi Hatchet
 		i(224633),	-- Arathi Greataxe
 		i(224634),	-- Arathi Mace
 		i(224630),	-- Deep-Dweller's Battleaxe
