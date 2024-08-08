@@ -813,4 +813,91 @@ i(78856);	-- Leggings of the Corrupted Conqueror
 i(78857);	-- Leggings of the Corrupted Protector
 i(78858);	-- Leggings of the Corrupted Vanquisher
 
+-- Tier 22 LFR [SotFO]
+i(191005, { ["modID"] = 4, });	-- Dreadful Helm Module
+i(191002, { ["modID"] = 4, });	-- Mystic Helm Module
+i(191003, { ["modID"] = 4, });	-- Venerated Helm Module
+i(191004, { ["modID"] = 4, });	-- Zenith Helm Module
+i(191006, { ["modID"] = 4, });	-- Dreadful Shoulder Module
+i(191007, { ["modID"] = 4, });	-- Mystic Shoulder Module
+i(191008, { ["modID"] = 4, });	-- Venerated Shoulder Module
+i(191009, { ["modID"] = 4, });	-- Zenith Shoulder Module
+i(191010, { ["modID"] = 4, });	-- Dreadful Chest Module
+i(191011, { ["modID"] = 4, });	-- Mystic Chest Module
+i(191012, { ["modID"] = 4, });	-- Venerated Chest Module
+i(191013, { ["modID"] = 4, });	-- Zenith Chest Modulefs
+i(191014, { ["modID"] = 4, });	-- Dreadful Hand Module
+i(191015, { ["modID"] = 4, });	-- Mystic Hand Module
+i(191016, { ["modID"] = 4, });	-- Venerated Hand Module
+i(191017, { ["modID"] = 4, });	-- Zenith Hand Module
+i(191018, { ["modID"] = 4, });	-- Dreadful Leg Module
+i(191019, { ["modID"] = 4, });	-- Mystic Leg Module
+i(191020, { ["modID"] = 4, });	-- Venerated Leg Module
+i(191021, { ["modID"] = 4, });	-- Zenith Leg Module
+
+-- Tier 22 N [SotFO]
+i(191005, { ["modID"] = 3, });	-- Dreadful Helm Module
+i(191002, { ["modID"] = 3, });	-- Mystic Helm Module
+i(191003, { ["modID"] = 3, });	-- Venerated Helm Module
+i(191004, { ["modID"] = 3, });	-- Zenith Helm Module
+i(191006, { ["modID"] = 3, });	-- Dreadful Shoulder Module
+i(191007, { ["modID"] = 3, });	-- Mystic Shoulder Module
+i(191008, { ["modID"] = 3, });	-- Venerated Shoulder Module
+i(191009, { ["modID"] = 3, });	-- Zenith Shoulder Module
+i(191010, { ["modID"] = 3, });	-- Dreadful Chest Module
+i(191011, { ["modID"] = 3, });	-- Mystic Chest Module
+i(191012, { ["modID"] = 3, });	-- Venerated Chest Module
+i(191013, { ["modID"] = 3, });	-- Zenith Chest Module
+i(191014, { ["modID"] = 3, });	-- Dreadful Hand Module
+i(191015, { ["modID"] = 3, });	-- Mystic Hand Module
+i(191016, { ["modID"] = 3, });	-- Venerated Hand Module
+i(191017, { ["modID"] = 3, });	-- Zenith Hand Module
+i(191018, { ["modID"] = 3, });	-- Dreadful Leg Module
+i(191019, { ["modID"] = 3, });	-- Mystic Leg Module
+i(191020, { ["modID"] = 3, });	-- Venerated Leg Module
+i(191021, { ["modID"] = 3, });	-- Zenith Leg Module
+
+-- Tier 22 H [SotFO]
+i(191005, { ["modID"] = 5, });	-- Dreadful Helm Module
+i(191002, { ["modID"] = 5, });	-- Mystic Helm Module
+i(191003, { ["modID"] = 5, });	-- Venerated Helm Module
+i(191004, { ["modID"] = 5, });	-- Zenith Helm Module
+i(191006, { ["modID"] = 5, });	-- Dreadful Shoulder Module
+i(191007, { ["modID"] = 5, });	-- Mystic Shoulder Module
+i(191008, { ["modID"] = 5, });	-- Venerated Shoulder Module
+i(191009, { ["modID"] = 5, });	-- Zenith Shoulder Module
+i(191010, { ["modID"] = 5, });	-- Dreadful Chest Module
+i(191011, { ["modID"] = 5, });	-- Mystic Chest Module
+i(191012, { ["modID"] = 5, });	-- Venerated Chest Module
+i(191013, { ["modID"] = 5, });	-- Zenith Chest Module
+i(191014, { ["modID"] = 5, });	-- Dreadful Hand Module
+i(191015, { ["modID"] = 5, });	-- Mystic Hand Module
+i(191016, { ["modID"] = 5, });	-- Venerated Hand Module
+i(191017, { ["modID"] = 5, });	-- Zenith Hand Module
+i(191018, { ["modID"] = 5, });	-- Dreadful Leg Module
+i(191019, { ["modID"] = 5, });	-- Mystic Leg Module
+i(191020, { ["modID"] = 5, });	-- Venerated Leg Module
+i(191021, { ["modID"] = 5, });	-- Zenith Leg Module
+
+-- Tier 22 M [SotFO]
+i(191005, { ["modID"] = 6, });	-- Dreadful Helm Module
+i(191002, { ["modID"] = 6, });	-- Mystic Helm Module
+i(191003, { ["modID"] = 6, });	-- Venerated Helm Module
+i(191004, { ["modID"] = 6, });	-- Zenith Helm Module
+i(191006, { ["modID"] = 6, });	-- Dreadful Shoulder Module
+i(191007, { ["modID"] = 6, });	-- Mystic Shoulder Module
+i(191008, { ["modID"] = 6, });	-- Venerated Shoulder Module
+i(191009, { ["modID"] = 6, });	-- Zenith Shoulder Module
+i(191010, { ["modID"] = 6, });	-- Dreadful Chest Module
+i(191011, { ["modID"] = 6, });	-- Mystic Chest Module
+i(191012, { ["modID"] = 6, });	-- Venerated Chest Module
+i(191013, { ["modID"] = 6, });	-- Zenith Chest Module
+i(191014, { ["modID"] = 6, });	-- Dreadful Hand Module
+i(191015, { ["modID"] = 6, });	-- Mystic Hand Module
+i(191016, { ["modID"] = 6, });	-- Venerated Hand Module
+i(191017, { ["modID"] = 6, });	-- Zenith Hand Module
+i(191018, { ["modID"] = 6, });	-- Dreadful Leg Module
+i(191019, { ["modID"] = 6, });	-- Mystic Leg Module
+i(191020, { ["modID"] = 6, });	-- Venerated Leg Module
+i(191021, { ["modID"] = 6, });	-- Zenith Leg Module
 -- #endif
