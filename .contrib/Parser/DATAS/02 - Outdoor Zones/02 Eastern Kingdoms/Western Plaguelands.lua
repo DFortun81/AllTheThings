@@ -3232,8 +3232,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(8030),	-- Plans: Ebon Shiv (RECIPE!)
 						i(12823),	-- Plans: Huge Thorium Battleaxe (RECIPE!)
 						i(12819),	-- Plans: Ornate Thorium Handaxe (RECIPE!)
-						i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
+						i(12703, {	-- Plans: Storm Gauntlets (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 						i(13501),	-- Recipe: Major Mana Potion (RECIPE!)
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(228313, {	-- Plans: Tempest Gauntlets (RECIPE!)
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(13485),	-- Recipe: Transmute Water to Air (RECIPE!)
 					},
 				}),

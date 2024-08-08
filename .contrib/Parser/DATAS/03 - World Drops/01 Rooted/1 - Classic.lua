@@ -3624,7 +3624,17 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
 			i(6046),	-- Plans: Steel Weapon Chain (RECIPE!)
 			i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
+			i(12703, {	-- Plans: Storm Gauntlets (RECIPE!)
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(12720),	-- Plans: Stronghold Gauntlets (RECIPE!)
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228313, {	-- Plans: Tempest Gauntlets (RECIPE!)
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(12682),	-- Plans: Thorium Armor (RECIPE!)
 			i(12683),	-- Plans: Thorium Belt (RECIPE!)
 			i(12693),	-- Plans: Thorium Boots (RECIPE!)

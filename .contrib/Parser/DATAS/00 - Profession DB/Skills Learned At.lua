@@ -321,6 +321,7 @@ for spellID,learnedAt in pairs({
 	[16658] = 295,	-- Imperial Plate Helm
 	[16659] = 295,	-- Radiant Circlet
 	[16661] = 295,	-- Storm Gauntlets
+	[461737] = 295,	-- Tempest Gauntlets
 	[16991] = 300,	-- Annihilator
 	[16990] = 300,	-- Arcanite Champion
 	[16994] = 300,	-- Arcanite Reaper

@@ -379,10 +379,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				}),
 				i(12640),	-- Lionheart Helm
-				i(12632),	-- Storm Gauntlets
+				i(12632, {	-- Storm Gauntlets
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				i(12639),	-- Stronghold Gauntlets
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, i(227871, {	-- Tempered Dark Iron Plate
+					["timeline"] = { "added 1.15.3" },
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227870, {	-- Tempest Gauntlets
 					["timeline"] = { "added 1.15.3" },
 				})),
 				-- #endif
@@ -671,19 +678,30 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			})),
 			-- #endif
 			-- #if AFTER TBC
-			i(12632),	-- Storm Gauntlets
+			i(12632, {	-- Storm Gauntlets
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(12639),	-- Stronghold Gauntlets
-			-- #endif
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(227871, {	-- Tempered Dark Iron Plate
 				["timeline"] = { "added 1.15.3" },
 			})),
+			-- #endif
+			-- #endif
+			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(215161, {	-- Tempered Interference-Negating Helmet
 				["timeline"] = { "added 1.15.1" },
 				["requireSkill"] = BLACKSMITHING,
 			})),
 			-- #endif
 			-- #if AFTER TBC
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227870, {	-- Tempest Gauntlets
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			applyclassicphase(PHASE_FIVE, i(22385)),	-- Titanic Leggings
 			i(7939, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Breastplate
 			i(7938, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Gauntlets

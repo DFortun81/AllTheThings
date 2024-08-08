@@ -265,6 +265,7 @@ i(12703, 16661, nil, ARMORSMITH);	-- Storm Gauntlets
 i(12720, 16741, nil, ARMORSMITH);	-- Stronghold Gauntlets
 -- #if SEASON_OF_DISCOVERY
 i(227901, 461667, nil, ARMORSMITH);	-- Tempered Dark Iron Plate
+i(228313, 461737, nil, ARMORSMITH);	-- Tempest Gauntlets
 -- #endif
 i(22388, 27829, nil, ARMORSMITH);	-- Titanic Leggings
 -- #if SEASON_OF_DISCOVERY

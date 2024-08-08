@@ -183,12 +183,23 @@ profession(BLACKSMITHING, {
 						["name"] = "Storm Gauntlets",
 						["recipeID"] = 16661,
 						["requireSkill"] = 9788,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 					{
 						["name"] = "Stronghold Gauntlets",
 						["recipeID"] = 16741,
 						["requireSkill"] = 9788,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Tempest Gauntlets",
+						["recipeID"] = 461737,
+						["requireSkill"] = 9788,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Truesilver Gauntlets",
 						["timeline"] = { REMOVED_4_0_1 },
