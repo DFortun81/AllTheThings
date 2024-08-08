@@ -835,6 +835,62 @@ i(191019, { ["modID"] = 4, });	-- Mystic Leg Module
 i(191020, { ["modID"] = 4, });	-- Venerated Leg Module
 i(191021, { ["modID"] = 4, });	-- Zenith Leg Module
 
+-- Castle Nathria LFR Weapon Tokens
+i(183893, { ["modID"] = 4, });	-- Abominable Anima Spherule
+i(183896, { ["modID"] = 4, });	-- Abominable Anima Spherule
+i(183888, { ["modID"] = 4, });	-- Apogee Anima Bead
+i(183895, { ["modID"] = 4, });	-- Apogee Anima Bead
+i(183897, { ["modID"] = 4, });	-- Mystic Anima Spherule
+i(183892, { ["modID"] = 4, });	-- Mystic Anima Spherule
+i(183894, { ["modID"] = 4, });	-- Thaumaturgic Anima Bead
+i(183889, { ["modID"] = 4, });	-- Thaumaturgic Anima Bead
+i(183891, { ["modID"] = 4, });	-- Venerated Anima Spherule
+i(183898, { ["modID"] = 4, });	-- Venerated Anima Spherule
+i(183899, { ["modID"] = 4, });	-- Zenith Anima Spherule
+i(183890, { ["modID"] = 4, });	-- Zenith Anima Spherule
+
+-- Castle Nathria N Weapon Tokens
+i(183893, { ["modID"] = 3, });	-- Abominable Anima Spherule
+i(183896, { ["modID"] = 3, });	-- Abominable Anima Spherule
+i(183888, { ["modID"] = 3, });	-- Apogee Anima Bead
+i(183895, { ["modID"] = 3, });	-- Apogee Anima Bead
+i(183897, { ["modID"] = 3, });	-- Mystic Anima Spherule
+i(183892, { ["modID"] = 3, });	-- Mystic Anima Spherule
+i(183894, { ["modID"] = 3, });	-- Thaumaturgic Anima Bead
+i(183889, { ["modID"] = 3, });	-- Thaumaturgic Anima Bead
+i(183891, { ["modID"] = 3, });	-- Venerated Anima Spherule
+i(183898, { ["modID"] = 3, });	-- Venerated Anima Spherule
+i(183899, { ["modID"] = 3, });	-- Zenith Anima Spherule
+i(183890, { ["modID"] = 3, });	-- Zenith Anima Spherule
+
+-- Castle Nathria H Weapon Tokens
+i(183893, { ["modID"] = 5, });	-- Abominable Anima Spherule
+i(183896, { ["modID"] = 5, });	-- Abominable Anima Spherule
+i(183888, { ["modID"] = 5, });	-- Apogee Anima Bead
+i(183895, { ["modID"] = 5, });	-- Apogee Anima Bead
+i(183897, { ["modID"] = 5, });	-- Mystic Anima Spherule
+i(183892, { ["modID"] = 5, });	-- Mystic Anima Spherule
+i(183894, { ["modID"] = 5, });	-- Thaumaturgic Anima Bead
+i(183889, { ["modID"] = 5, });	-- Thaumaturgic Anima Bead
+i(183891, { ["modID"] = 5, });	-- Venerated Anima Spherule
+i(183898, { ["modID"] = 5, });	-- Venerated Anima Spherule
+i(183899, { ["modID"] = 5, });	-- Zenith Anima Spherule
+i(183890, { ["modID"] = 5, });	-- Zenith Anima Spherule
+
+-- Castle Nathria M Weapon Tokens
+i(183893, { ["modID"] = 6, });	-- Abominable Anima Spherule
+i(183896, { ["modID"] = 6, });	-- Abominable Anima Spherule
+i(183888, { ["modID"] = 6, });	-- Apogee Anima Bead
+i(183895, { ["modID"] = 6, });	-- Apogee Anima Bead
+i(183897, { ["modID"] = 6, });	-- Mystic Anima Spherule
+i(183892, { ["modID"] = 6, });	-- Mystic Anima Spherule
+i(183894, { ["modID"] = 6, });	-- Thaumaturgic Anima Bead
+i(183889, { ["modID"] = 6, });	-- Thaumaturgic Anima Bead
+i(183891, { ["modID"] = 6, });	-- Venerated Anima Spherule
+i(183898, { ["modID"] = 6, });	-- Venerated Anima Spherule
+i(183899, { ["modID"] = 6, });	-- Zenith Anima Spherule
+i(183890, { ["modID"] = 6, });	-- Zenith Anima Spherule
+
 -- Tier 22 N [SotFO]
 i(191005, { ["modID"] = 3, });	-- Dreadful Helm Module
 i(191002, { ["modID"] = 3, });	-- Mystic Helm Module
