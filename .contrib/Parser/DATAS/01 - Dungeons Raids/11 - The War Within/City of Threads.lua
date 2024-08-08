@@ -9,6 +9,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			2344,	-- The Transformatory
 		},
 		["g"] = {
+			n(QUESTS, {
+				q(83164, {	-- City of Threads: Splice the Splicer
+					["provider"] = { "n", 224733 },	-- Tulumun
+					["coord"] = { 56.7, 46.7, AZJ_KAHET },
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2594, {	-- Orator Krix'vizk
 					["crs"] = { 216619 },	-- Orator Krix'vizk <The Fifth Strand>

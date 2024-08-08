@@ -3,9 +3,9 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(ZONE_REWARDS, {
-		i(220693),	-- Coffer Key Shard
+		i(229899),	-- Coffer Key Shard
 		currency(RESTORED_COFFER_KEY, {
-			["cost"] = {{"i", 220693, 100}},	-- 100x Coffer Key Shard
+			["cost"] = {{"i", 229899, 100}},	-- 100x Coffer Key Shard
 		}),
 		i(227450),	-- Sky Racer's Purse
 		filter(BACK_F, {

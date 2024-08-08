@@ -6,6 +6,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 		n(QUESTS, {
 			header(HEADERS.Achievement, 20597, {	-- The War Within
 				------ Chapter 1 ------
+				q(79197, {	-- Surface Bound
+					["sourceQuests"] = { 78248 },	-- What We Still Have
+					["provider"] = { "n", 219252 },	-- Alleria Windrunner
+					["coord"] = { 56.2, 48.5, AZJ_KAHET },
+				}),
 				q(79333, {	-- The Fleet Arrives
 					["sourceQuests"] = { 79197 },	-- Surface Bound
 					["provider"] = { "n", 216149 },	-- Moira Thaurissan

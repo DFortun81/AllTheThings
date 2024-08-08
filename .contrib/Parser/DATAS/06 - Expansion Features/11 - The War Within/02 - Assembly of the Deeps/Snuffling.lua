@@ -11,8 +11,24 @@ SNUFFLING = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(THE_ASSEMBLY_OF_THE_DEEPS, {
 		n(SNUFFLING, {
+			n(QUESTS, {
+				q(80378, {	-- A Light of the Dark
+					["provider"] = { "i", 217390 },	-- Coagulated Black Blood Clot
+					["maps"] = { AZJ_KAHET },
+					["g"] = {
+						i(217391),	-- Coagulated Black Blood (QI!)
+						i(220161),	-- Coagulated Sticks of Blood
+					},
+				}),
+				q(79555, {	-- Deep Wax Galactic
+					["provider"] = { "i", 217385 },	-- Clump of Waxy Excretion
+					["coord"] = { 79.4, 76.5, AZJ_KAHET },
+					["g"] = {
+						i(212980),	-- Waxy Excretion (QI!)
+					},
+				}),
+			}),
 			n(TREASURES, {
-				-- Coffer Key
 				i(223133),	-- Formula: Illusory Adornment: Crystal (RECIPE!)
 			}),
 			n(VENDORS, {

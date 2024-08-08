@@ -50,7 +50,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					--["coord"] = { 1, 1, AZJ_KAHET },
 				}),
 			}),
-			ach(40832),		-- Leave it to Weaver
 			ach(40619),		-- Mine Poppin'
 			ach(40843),		-- Mine Poppin'
 			ach(40632),		-- No Harm Ever Came From Reading A Book

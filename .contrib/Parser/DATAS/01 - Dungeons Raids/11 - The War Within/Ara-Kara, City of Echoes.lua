@@ -9,6 +9,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			2358,	-- 	-- CityOfEchoes_B // The Undercache
 		},
 		["g"] = {
+			n(QUESTS, {
+				q(83166, {	-- Ara-Kara, the City of Echoes: Harverst's End
+					["provider"] = { "n", 224733 },	-- Tulumun
+					["coord"] = { 56.7, 46.7, AZJ_KAHET },
+				}),
+			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2583, {	-- Avanoxx
 					["crs"] = { 213179 },

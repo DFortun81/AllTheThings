@@ -7,9 +7,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			-- Repeatable
 			o(444065, {	-- Elemental Geode
 				["coord"] = { 77.1, 35.7, ISLE_OF_DORN },
-				["g"] = {
-					-- Contains Coffer Key Shard, Profession Knowledge
-				},
 			}),
 			--
 			o(442814, {	-- Boskroot Cap
