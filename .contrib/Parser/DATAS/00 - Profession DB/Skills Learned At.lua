@@ -917,6 +917,7 @@ for spellID,learnedAt in pairs({
 	[19076] = 285,	-- Volcanic Breastplate
 	[19080] = 285,	-- Warbear Woolies
 	[19085] = 290,	-- Black Dragonscale Breastplate
+	[461655] = 290,	-- Hardened Black Dragonscale Breastplate
 	[19081] = 290,	-- Chimeric Vest
 	[23705] = 290,	-- Dawn Treaders
 	[19084] = 290,	-- Devilsaur Gauntlets

@@ -2357,7 +2357,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 				})),
 				n(9499, {	-- Plugger Spazzring
-					i(15759),	-- Pattern: Black Dragonscale Breastplate (RECIPE!)
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(227902, {	-- Pattern: Hardened Black Dragonscale Breastplate (RECIPE!)
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(15759, {	-- Pattern: Black Dragonscale Breastplate (RECIPE!)
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					i(13483),	-- Recipe: Transmute Fire to Earth (RECIPE!)
 					i(11325),	-- Dark Iron Ale Mug
 				}),

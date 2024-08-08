@@ -2230,7 +2230,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			["description"] = "These items can only be crafted by Leatherworkers who have completed the associated quest.",
 			["groups"] = {
 				i(16984),	-- Black Dragonscale Boots
-				i(15050),	-- Black Dragonscale Breastplate
+				i(15050, {	-- Black Dragonscale Breastplate
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				i(15052, {	-- Black Dragonscale Leggings
 					-- #if SEASON_OF_DISCOVERY
 					["timeline"] = { "removed 1.15.3" },
@@ -2250,6 +2254,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(8347, {["timeline"] = {REMOVED_4_0_3}}),	-- Dragonscale Gauntlets
 				applyclassicphase(PHASE_FOUR, i(20380, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Dreamscale Breastplate
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227851, {	-- Hardened Black Dragonscale Breastplate
+					["timeline"] = { "added 1.15.3" },
+				})),
 				applyclassicphase(SOD_PHASE_FOUR, i(227852, {	-- Hardened Black Dragonscale Leggings
 					["timeline"] = { "added 1.15.3" },
 				})),

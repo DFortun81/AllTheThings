@@ -1983,6 +1983,9 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Black Dragonscale Breastplate",
 					["recipeID"] = 19085,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				-- #endif
 				{
@@ -2078,6 +2081,15 @@ profession(LEATHERWORKING, {
 					["name"] = "Handstitched Leather Vest",
 					["recipeID"] = 7126,
 				},
+				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Hardened Black Dragonscale Breastplate",
+					["recipeID"] = 461655,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
+				-- #endif
 				{
 					["name"] = "Heavy Scale Shirt",
 					["timeline"] = { ADDED_7_0_3 },

@@ -120,6 +120,9 @@ profession(LEATHERWORKING, {
 						["name"] = "Black Dragonscale Breastplate",
 						["recipeID"] = 19085,
 						["requireSkill"] = 10656,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 					{
 						["name"] = "Blue Dragonscale Breastplate",
@@ -137,6 +140,14 @@ profession(LEATHERWORKING, {
 						["recipeID"] = 24703,
 						["requireSkill"] = 10656,
 					}),
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Hardened Black Dragonscale Breastplate",
+						["recipeID"] = 461655,
+						["requireSkill"] = 10656,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Green Dragonscale Breastplate",
 						["recipeID"] = 19050,
