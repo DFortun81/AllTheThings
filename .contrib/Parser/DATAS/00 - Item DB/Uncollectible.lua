@@ -525,7 +525,6 @@ i(176872);	-- Dense Stalk
 i(176807);	-- Dented Armorplate
 i(180614);	-- Depleted Nethershard
 i(181551);	-- Depleted Stoneborn Heart
-i(198541);	-- Depleted Violet Vapors
 i(178174);	-- Desiccated Core
 i(176874);	-- Desiccated Humerus
 i(180383);	-- Devil's Dung
@@ -1325,6 +1324,7 @@ i(200848);	-- Decorative Bouquet
 i(200793);	-- Decorative Sail
 i(200451);	-- Deep Sea Star
 i(193420);	-- Depleted Mana Stone
+i(198541);	-- Depleted Violet Vapors
 i(200815);	-- Deposited
 i(192652);	-- Discharged Thunderscale
 i(198440);	-- Discounted Meat
