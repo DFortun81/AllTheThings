@@ -1450,7 +1450,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(79935, 435877);	-- Crystallized Arathor's Spear
 			FirstCraft(79936, 435878);	-- Irradiated Arathor's Spear
 			FirstCraft(79934, 435836);	-- Lush Arathor's Spear
-			--FirstCraft(XXXXX, 435880);	-- Sporefused Arathor's Spear
+			FirstCraft(79938, 435880);	-- Sporefused Arathor's Spear
 			-- Blessing Blossom
 			FirstCraft(79927, 435823);	-- Blessing Blossom
 			--FirstCraft(XXXXX, 435872);	-- Camouflaged Blessing Blossom

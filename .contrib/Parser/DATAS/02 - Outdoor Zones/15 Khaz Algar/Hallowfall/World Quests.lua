@@ -16,6 +16,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 223409 },	-- Guttergunk
 					["coord"] = { 61.1, 69.0, HALLOWFALL },
 				})),
+				pvp(q(81622, {	-- Bells of the Light
+					["coord"] = { 38.2, 36.4, HALLOWFALL },
+				})),
+				pvp(q(80412, {	-- Fending off Darkness
+					["coord"] = { 57.9, 48.9, HALLOWFALL },
+				})),
 				q(82254, {	-- Aquacalypse
 					["coord"] = { 45.3, 23.9, HALLOWFALL },
 				}),

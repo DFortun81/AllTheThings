@@ -111,6 +111,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 35.9, 35.5, HALLOWFALL },
 				["questID"] = 81853,
 				["g"] = {
+					i(221241),	-- Priestly Agent's Knife
 					i(221245),	-- Righteous Path Treads
 				},
 			}),
@@ -118,6 +119,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 73.4, 52.4, HALLOWFALL },
 				["questID"] = 79271,	-- in addition 84062
 				["g"] = {
+					i(221223),	-- Bog Beast Mantle
 					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
@@ -125,6 +127,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 43.6, 29.9, HALLOWFALL },
 				["questID"] = 81849,
 				["g"] = {
+					i(221216),	-- Bruin Strength Legplates
 					i(221508),	-- Pelt of Beledar's Strength
 				},
 			}),

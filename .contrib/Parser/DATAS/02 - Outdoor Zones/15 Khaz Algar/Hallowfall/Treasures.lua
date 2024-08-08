@@ -114,11 +114,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					-- crafting reagents
 				},
 			}),
+			o(454797, {	-- From the Depths They Come
+				["coord"] = { 57.8, 84.2, HALLOWFALL },
+				--["questID"] = ,
+				["g"] = {
+					i(225208),	-- From the Depths They Come [book]
+				},
+			}),
 			o(455038, {	-- Light's Gambit Playbook
 				["coord"] = { 68.7, 41.5, HALLOWFALL },
 				--["questID"] = ,
 				["g"] = {
 					i(225206),	-- Light's Gambit Playbook [book]
+				},
+			}),
+			o(463979, {	-- Lightspark Grade Book
+				["coord"] = { 68.7, 41.5, HALLOWFALL },
+				--["questID"] = 84497,	-- TODO: could be when you loot achievementID 40622 (Biblo Archivist)
+				["g"] = {
+					i(228457),	-- Lightspark Grade Book [book]
 				},
 			}),
 			o(455183, {	-- Shadow Curfew Journal

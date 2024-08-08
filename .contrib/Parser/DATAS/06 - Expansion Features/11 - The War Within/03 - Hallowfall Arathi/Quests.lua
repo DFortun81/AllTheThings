@@ -13,10 +13,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 41.2, 53.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 5 --
+				q(82391, {	-- Precious Stones
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["g"] = {
+						i(223951),	-- Earth-Encrusted Gem
+					},
+				}),
+				--
 				q(81990, {	-- The Light's Call
-					["provider"] = { "o", 441740 },	-- The Light's Call
-					["coord"] = { 42.5, 55.6, HALLOWFALL },
-					["isBreadcrumb"] = true,
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
 				}),
 				q(76588, {	-- Defender of the Flame
 					["sourceQuests"] = { 81990 },	-- The Light's Call
@@ -45,9 +52,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 			}, {	-- RENOWN 6 --
+				q(82390, {	-- Weathered Crests
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+				}),
 			}, {	-- RENOWN 7 --
+				q(84409, {	-- For the Valorous
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+				}),
 			}, {	-- RENOWN 8 --
+				q(82393, {	-- Resonating Crystals
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+				}),
 			}, {	-- RENOWN 9 --
+				q(82394, {	-- A Cache of Crests
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coords"] = {
+						{ 41.2, 53.0, HALLOWFALL },
+						{ 42.4, 55.0, HALLOWFALL },
+					},
+				}),
 			}, {	-- RENOWN 10 --
 				i(218352),	-- Expeditionary Tabard
 			}, {	-- RENOWN 11 --

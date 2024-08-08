@@ -864,12 +864,9 @@ root(ROOTS.Unsorted, {
 				i(225761),	-- Jeweler's Careful Crusher
 
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
-				i(225885),	-- Garlic Knots
-				i(225945),	-- Airship Captain's Cloak
 				i(225946),	-- Slightly Singed Arathi Tabard
 				i(225947),	-- ELIZA's Rake Attachment
 
-				i(225949),	-- Adult-Sized Arathi Epaulets
 				i(225974),	-- Swabbie's Cap \\ Teal Beanie
 				i(225975),	-- Alchemist's Bandolier
 				i(225976),	-- Fine Gloves of the Forest
@@ -970,15 +967,6 @@ root(ROOTS.Unsorted, {
 				i(226800),	-- Earthen Backpack
 				i(227287),	-- Skovald's Resolve
 				i(227294),	-- Ravencrest's Wrath
-				i(227542),	-- Preserved Arathi Sword
-				i(227543),	-- Preserved Arathi Hatchet
-				i(227544),	-- Preserved Deep-Dweller's Staff
-				i(227545),	-- Preserved Deep-Dweller's Cudgel
-				i(227546),	-- Preserved Deep-Dweller's Dirk
-				i(227694),	-- Preserved Begrimed Greathelm
-				i(227695),	-- Preserved Pierced Helm
-				i(227696),	-- Preserved Distressed Visor
-				i(227697),	-- Preserved Moth-Ridden Hood
 				i(227795),	-- Homebrewer's Sampling Mantle
 			}),
 			n(ARMOR, {
@@ -1317,8 +1305,6 @@ root(ROOTS.Unsorted, {
 				i(226134),	-- Mourning Baron's Shoulderpads
 				i(226137),	-- Inquisitive Sister's Cinch
 				i(226138),	-- Vow-Taker's Boots
-				i(226139),	-- Arathi Officer's Gauntlets
-				i(226140),	-- The Flame's Remembrance
 				i(226141),	-- Airship Captain's Lost Pendant
 				i(226173),	-- Boots of the First Embrace
 				i(226174),	-- Famished Bride's Clasp
@@ -1372,7 +1358,6 @@ root(ROOTS.Unsorted, {
 				i(215466),	-- Sanctified Supplies
 				i(216528),	-- Faded Supply Chest Key
 				i(216603),	-- Boots of the Light
-				i(216708),	-- Holy Candle
 				i(216982),	-- Spy List
 				i(217040),	-- Kobold Earwax
 				i(217386),	-- Discarded Memory Gem
@@ -1420,7 +1405,6 @@ root(ROOTS.Unsorted, {
 				i(220284),	-- Darkened Crystal
 				i(220285),	-- Moldy Rucksack
 				i(220286),	-- Tarnished Medallion
-				i(220293),	-- Very Soft Wool
 				i(220298),	-- Melted Candle Stump
 				i(220300),	-- Translucent Wing
 				i(220301),	-- Crystallized Honey
@@ -1657,7 +1641,6 @@ root(ROOTS.Unsorted, {
 				i(211861),	-- Umbral Eggplant
 				i(211929),	-- Ichor Coated Debris
 				i(211930),	-- Damaged Framework
-				i(211959),	-- Lost Belongings
 				i(211960),	-- Game Piece
 				i(211961),	-- Rocket-Powered Impact Wrench
 				i(211963),	-- Ceiling Sweeper
@@ -1760,7 +1743,6 @@ root(ROOTS.Unsorted, {
 				i(224014),	-- Signet of the Skeinspiner
 				i(224015),	-- Signet of the Skeinspiner
 				i(224016),	-- Signet of the Skeinspiner
-				i(224051),	-- Slightly Chewed Harvest Bounty
 				i(224179),	-- Swamplogged Letter
 				i(224180),	-- Worn Journal
 				i(224182),	-- Webbed Ingots
@@ -1777,9 +1759,6 @@ root(ROOTS.Unsorted, {
 				i(224254),	-- Wooden Figure
 				i(224257),	-- Sturdy Locket
 				i(224272),	-- Calcified Journal
-				i(224395),	-- Secret Garlic
-				i(224396),	-- Mangled Taro
-				i(224397),	-- Pristine Taro
 				i(224457),	-- Lil Piggy
 				i(224460),	-- The Lost Diary
 				i(224462),	-- The Ear
@@ -1796,7 +1775,6 @@ root(ROOTS.Unsorted, {
 				i(224778),	-- Knicknack's Enbiggener
 				i(224779),	-- Alhainr's Skull
 				i(224810),	-- Woodworm Elixir
-				i(225180),	-- Stained and Tattered Page
 				i(225336),	-- A Lost Shoe
 
 				i(225339),	-- Chicken Eggs
@@ -1835,10 +1813,8 @@ root(ROOTS.Unsorted, {
 				i(219797),	-- Cured Terracotta Pummeler
 				i(227692),	-- Arathi Sword
 				i(227693),	-- Expeditionary Blade
-				i(228362),	-- Polished Arathi Rifle
 				i(228363),	-- Shinda's Spare Greataxe
 				i(228364),	-- Endiri's Chipped Boot Knife
-				i(228365),	-- Concerned Captain's Cudgel
 				i(228366),	-- Child's Former Fishing Rod
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),
@@ -1986,7 +1962,6 @@ root(ROOTS.Unsorted, {
 				i(221210),	-- Grips of the Earth
 				i(221214),	-- Chitin Chain Headpiece
 				i(221215),	-- Taskmaster's Mining Cap
-				i(221216),	-- Bruin Strength Legplates
 				i(221218),	-- Reinforced Construct's Greaves
 				i(221222),	-- Water-Imbued Spaulders
 				i(221223),	-- Bog Beast Mantle
@@ -2001,7 +1976,6 @@ root(ROOTS.Unsorted, {
 				i(221236),	-- Stormbreaker's Shield
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs
-				i(221241),	-- Priestly Agent's Knife
 				i(221242),	-- Forgeborn Helm
 				i(221244),	-- Flamekeeper's Footpads
 				i(221246),	-- Fierce Beast Staff
@@ -2063,7 +2037,6 @@ root(ROOTS.Unsorted, {
 				i(223424),	-- Algari-Weave Cord
 
 
-				i(223432),	-- Commemorative Light's Gambit Championship Signet \\ [PH] 11.0 - Signet
 				i(223436),	-- Light Boots of the Ringing Deeps
 				i(223437),	-- Handwraps of the Weaver
 				i(223438),	-- Algari Warden's Vestment
@@ -2110,11 +2083,9 @@ root(ROOTS.Unsorted, {
 				i(228376),	-- Boots of Kix'arak's Bane
 				i(228377),	-- Gauntlets of Kix'arak's Bane
 				i(228380),	-- Earthmender's Signet
-				i(228434),	-- Stew-Stained Cape
 				i(228435),	-- Wine-Dyed Leggings
 				i(228436),	-- United Arathi's Jerkin
 				i(228437),	-- Salamanther-Scale Greaves
-				i(228438),	-- Derill's Unused Visor
 				i(228439),	-- Mitts of Menial Tasks
 				i(228440),	-- Chitin-Laced Shoulderguards
 				i(228441),	-- Overseer's Oversized Clasp
@@ -2150,8 +2121,6 @@ root(ROOTS.Unsorted, {
 			n(ACHIEVEMENTS, {
 				i(225203),	-- Beledar- The Emperor's Vision \\ Beledar
 				i(225204),	-- Shadow Curfew Guidelines \\ Rules of Survival
-				i(225206),	-- Light's Gambit Playbook
-				i(225208),	-- From the Depths They Come \\ Notebook of Kobyss Movements
 				i(225209),	-- Sacred Flame Prayers
 				i(225210),	-- Priory Theses
 				i(225211),	-- Airship Operations Manual
@@ -2474,10 +2443,7 @@ root(ROOTS.Unsorted, {
 				exploration(14484),	-- 10.2 Devland
 			}),
 			--------
-			i(228457),	-- Lightspark Grade Book
 			i(228495),	-- Well-Used Potter's Wheel
-			i(228496),	-- Cracked Lantern
-			i(228497),	-- Rusted Airship Cog
 			-- Fall out.... Resort
 			i(219013),	-- Superb Beast Fang
 			i(219016),	-- Coated Steel Tips

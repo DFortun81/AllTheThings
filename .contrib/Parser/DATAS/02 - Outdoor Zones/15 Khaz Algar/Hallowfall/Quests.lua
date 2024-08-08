@@ -415,11 +415,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 217398 },	-- Sister Etna Blayze
 					["coord"] = { 39.6, 37.2, HALLOWFALL },
 				}),
-				q(79649, {	-- Priory of the Sacred Flame: A Brother's Grief
+				q(79650, {	-- Priory of the Sacred Flame: A Brother's Grief
 					["sourceQuests"] = { 79649 },	-- Sacred Flame Inquisition
 					["provider"] = { "n", 217398 },	-- Sister Etna Blayze
 					["coord"] = { 40.3, 34.9, HALLOWFALL },
 					["maps"] = { 2308, 2309 },	-- Priory of the Sacred Flame
+					["g"] = {
+						i(226139),	-- Arathi Officer's Gauntlets
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.03, {	-- Striking Steel
@@ -463,7 +466,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["g"] = {
 						--i(223638),	-- Arathi Trade Goods (QI!)
 						i(223892),	-- Assorted Spices (QI!)
-						--i(223889),	-- Flame Touched Weaponry (QI!)
+						i(223889),	-- Flame Touched Weaponry (QI!)
 						i(223890),	-- Tough Ivy Rope (QI!)
 					},
 				}),
@@ -528,11 +531,37 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.05, {	-- The Sky's the Limit
-				q(79304),	-- Care Package
-				q(79300),	-- The Notebook
-				q(79301),	-- Height Club
-				q(79302),	-- Gone with the Wind
-				q(79303),	-- A Principled Principal
+				q(79304, {	-- 	-- Care Package
+					["isBreadcrumb"] = true,	-- But I didn't find it
+				}),
+				q(79300, {	-- The Notebook
+					["sourceQuests"] = { 79304 },	-- Care Package
+					["provider"] = { "n", 216001 },	-- Sophietta Lynflayme
+					["coord"] = { 52.7, 60.3, HALLOWFALL },
+				}),
+				q(79301, {	-- Height Club
+					["sourceQuests"] = { 79300 },	-- The Notebook
+					["provider"] = { "n", 225925 },	-- Sophietta Lynflayme
+					["coord"] = { 53.4, 59.4, HALLOWFALL },
+				}),
+				q(79302, {	-- Gone with the Wind
+					["sourceQuests"] = { 79301 },	-- Height Club
+					["provider"] = { "n", 225925 },	-- Sophietta Lynflayme
+					["coord"] = { 53.4, 59.4, HALLOWFALL },
+					["g"] = {
+						o(420722, {	-- Lost Page (NOTE: otherwise it will show WotLK > Naxx > Treasure tooltip)
+							i(225180),	-- Stained and Tattered Page (QI!)
+						}),
+					},
+				}),
+				q(79303, {	-- A Principled Principal
+					["sourceQuests"] = { 79302 },	-- Gone with the Wind
+					["provider"] = { "n", 225926 },	-- Sophietta Lynflayme
+					["coord"] = { 53.4, 60.6, HALLOWFALL },
+					["g"] = {
+						i(225945),	-- Airship Captain's Cloak (COSMETIC!)
+					},
+				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.06, {	-- Crushing Depths
 				q(81797),	-- Targeted Recon
@@ -606,13 +635,45 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.08, {	-- The Weight of Duty
-				q(79159),	-- Dereliction of Duty
-				q(79160),	-- Fishing is Good for the Soul
-				q(79162),	-- Burnout
+				q(79159, {	-- Dereliction of Duty
+					--["sourceQuests"] = { xx },	-- ?
+					["provider"] = { "n", 215306 },	-- Endiri Dawnsurge
+					["coord"] = { 41.5, 52.4, HALLOWFALL },
+				}),
+				q(79160, {	-- Fishing is Good for the Soul
+					["sourceQuests"] = { 79159 },	-- Dereliction of Duty
+					["provider"] = { "n", 215301 },	-- Shinda Creedpike
+					["coord"] = { 40.7, 50.6, HALLOWFALL },
+					["g"] = {
+						i(228365),	-- Concerned Captain's Cudgel
+						i(228362),	-- Shinda's Spare Greataxe
+					},
+				}),
+				q(79162, {	-- Burnout
+					["sourceQuests"] = { 79160 },	-- Fishing is Good for the Soul
+					["provider"] = { "n", 215301 },	-- Shinda Creedpike
+					["coord"] = { 39.5, 63.9, HALLOWFALL },
+				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.09, {	-- Apart for Purpose
-				q(82477),	-- A Helping Farmhand
-				q(82478),	-- Regularly Scheduled Maintenance
+				q(82477, {	-- A Helping Farmhand
+					--["sourceQuests"] = { xx },	-- ?
+					["provider"] = { "n", 223920 },	-- Orren Masyn
+					["coord"] = { 49.1, 62.0, HALLOWFALL },
+					["g"] = {
+						i(224051),	-- Slightly Chewed Harvest Bounty (QI!)
+					},
+				}),
+				q(82478, {	-- Regularly Scheduled Maintenance
+					["sourceQuests"] = { 82477 },	-- A Helping Farmhand
+					["provider"] = { "n", 224378 },	-- Orren Masyn
+					["coord"] = { 47.3, 64.8, HALLOWFALL },
+					["g"] = {
+						i(224193),	-- Orren's Message	(QI!)
+						i(224098),	-- Crimson Charmer	(QI!)
+						i(224099),	-- Amber Bloom	(QI!)
+					},
+				}),
 				q(82479),	-- The Sword is Mightier
 				q(82480),	-- Job Killing Robot Or...
 			}),
@@ -629,8 +690,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 40.7, 70.9, HALLOWFALL },
 					["g"] = {
 						i(214615),	-- Broken Trinket (QI!)
-						i(214616),	-- Engraved Dagger (QI!)
+						--i(214616),	-- Engraved Dagger (QI!) TODO: removed?
 						i(214609),	-- Game Piece (QI!)
+						i(211959),	-- Lost Belongings (QI!)
 					},
 				}),
 				q(79167, {	-- Crowdsourcing
@@ -643,7 +705,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 218267 },	-- Faerin Lothar
 					["coord"] = { 43.2, 52.4, HALLOWFALL },
 					["g"] = {
-						i(214615),	-- Broken Trinket (QI!)
+						i(223432),	-- Commemorative Light's Gambit Championship Signet
 					},
 				}),
 			}),
@@ -685,12 +747,51 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				q(79154, {	-- A Final Goodbye
 					["sourceQuests"] = { 79153 },	-- Vae Victis
 					["provider"] = { "n", 215254 },	-- Alyza Bowblaze
+					["g"] = {
+						i(225949),	-- Adult-Sized Arathi Epaulets (COSMETIC!)
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.12, {	-- The Mysterious Chef
-				q(82843),	-- Something Earthy
-				q(82844),	-- Something Not Ruined
-				q(82847),	-- Enough Garlic
+				q(84392, {	-- Hungry in Hollow
+					--["sourceQuests"] = { xx },	-- ?
+					["provider"] = { "n", 222323 },	-- Haelmut Aegisaxe
+					["coord"] = { 48.4, 39.4, HALLOWFALL },
+					["isBreadcrumb"] = true,	-- TODO: need to re-confirm, just in case
+				}),
+				q(82843, {	-- Something Earthy
+					["sourceQuests"] = { 84392 },	-- Hungry in Hollow
+					["provider"] = { "n", 224741 },	-- Dolena
+					["coord"] = { 69.9, 32.6, HALLOWFALL },
+					["g"] = {
+						i(224396),	-- Mangled Taro (QI!)
+					},
+				}),
+				q(82844, {	-- Something Not Ruined
+					["sourceQuests"] = { 82843 },	-- Something Earthy
+					["provider"] = { "n", 224741 },	-- Dolena
+					["coord"] = { 69.9, 32.6, HALLOWFALL },
+					["g"] = {
+						i(224397),	-- Pristine Taro (QI!)
+					},
+				}),
+				q(82847, {	-- Enough Garlic
+					["sourceQuests"] = { 82844 },	-- Something Not Ruined
+					["provider"] = { "n", 224741 },	-- Dolena
+					["coord"] = { 69.9, 32.6, HALLOWFALL },
+					["g"] = {
+						i(224395),	-- Secret Garlic (QI!)
+					},
+				}),
+				q(82848, {	-- Sous
+					["sourceQuests"] = { 82847 },	-- Enough Garlic
+					["provider"] = { "n", 224741 },	-- Dolena
+					["coord"] = { 69.9, 32.6, HALLOWFALL },
+					["g"] = {
+						i(225885),	-- Garlic Knots (COSMETIC!)
+						i(228434),	-- Stew-Stained Cape
+					},
+				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.13, {	-- What Grows in the Dark
 				q(79309, {	-- Status Report
@@ -723,6 +824,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					},
 					["provider"] = { "n", 216063 },	-- Scout Wayshelm
 					["coord"] = { 75.5, 51.8, HALLOWFALL },
+					["g"] = {
+						i(226140),	-- The Flame's Remembrance
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.14, {	-- Suspicious Minds
@@ -740,6 +844,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 68.1, 44.2, HALLOWFALL },
 					["g"] = {
 						i(225179),	-- Salamanther Heart (QI!)
+						--
+						i(228438),	-- Derill's Unused Visor
 					},
 				}),
 				q(83279),	-- Prove One's Mettle
@@ -790,6 +896,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 				["provider"] = { "n", 215335 },	-- General Steelstrike
 				["coord"] = { 40.5, 50.8, HALLOWFALL },
+				["g"] = {
+					i(216687),	-- Cobbled Together Bandage (QI!)
+				},
 			}),
 			q(82025, {	-- Talk with Sky-Captain Aerthin
 				["name"] = "Talk with Sky-Captain Aerthin",
@@ -859,14 +968,21 @@ root(ROOTS.HiddenQuestTriggers, {
 	--q(82538),	-- Stay a while and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
 	q(81636),	-- Stay a while and listen - General Steelstrike, after turn in questID 78626 (Spar Day)
 	q(81631),	-- Stay a while and listen - Faerin Lothar, after pick up questID 80049 (The Flame Still Burns)
+	q(81635),	-- Stay a while and listen - Nalina Ironsong @ 42.7, 55.8, HALLOWFALL (n: 217642) (idk when become available)
+	-- questID 79303 (A Principled Principal) nodes
+	q(83287),	-- should accept work
+	q(83288),	-- system become unfair
+	q(83289),	-- reject work and blame Edwyn in addition
+	--questID 82894 (The Price of Hope)
+	q(79081),	-- after using Cobbled Together Bandage on injured Soldier @ 43.3, 51.7
 	--
 	q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
 	--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
 	--
 	q(82749),	-- triggered after turn in questID 80678 (Time Lost) (spellID 452551 - Flag Timer)
+	q(83748),	-- triggered after turn in questID 79168 (Light's Gambit) (spellID 457904 - [DNT] Have Played Light's Gambit)
 	-- Some dude with question, which require you to loot something in world?
 	--q(80068),	-- [DNT] Infirmary Tracker, fire near Caesper (n: 225948 @ 41.8, 58.3) and Ryfus Sacredpyr (n: 221630  @ 40.0, 51.1)
-
 	-- Radiant Remnants
 	q(80337),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 66.1, 16.6
 	q(80347),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.7, 16.5

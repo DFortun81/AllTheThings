@@ -101,8 +101,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["coord"] = { 63.3, 28.1, HALLOWFALL },
 				}),
 				crit(69006, {	-- Miral Murder-Mittens
-					-- can be found probably early depending in quest stage
-					["coord"] = { 60.8, 25.1, HALLOWFALL },
+					["coord"] = { 61.2, 30.5, HALLOWFALL },
 				}),
 				crit(69007, {	-- Fuzzy
 					["coord"] = { 64.3, 18.9, HALLOWFALL },
