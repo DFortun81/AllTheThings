@@ -2357,6 +2357,242 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_THREE, i(19206)),	-- Plans: Dark Iron Helm (RECIPE!)
 						i(17059),	-- Plans: Dark Iron Reaver (RECIPE!)
 						i(17049),	-- Plans: Fiery Chain Girdle (RECIPE!)
+						
+						-- #if SEASON_OF_DISCOVERY
+						-- EPIC ITEM UPGRADES
+						applyclassicphase(SOD_PHASE_FOUR, i(227826, {	-- Dark Iron Flame Reaver
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   17015, 1 },	-- Dark Iron Reaver
+								{ "i", 227801, 25 },	-- Firelands Ember
+								{ "i",   17010, 2 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227842, {	-- Ebon Fist
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   19170, 1 },	-- Ebon Hand
+								{ "i", 227801, 25 },	-- Firelands Ember
+								{ "i",   17010, 2 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227823, {	-- Fine Flarecore Gloves
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   16979, 1 },	-- Flarecore Gloves
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227839, {	-- Fine Flarecore Leggings
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   19165, 1 },	-- Flarecore Leggings
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227830, {	-- Fine Flarecore Mantle
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   16980, 1 },	-- Flarecore Mantle
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227831, {	-- Fine Flarecore Robe
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   19156, 1 },	-- Flarecore Robe
+								{ "i", 227801, 20 },	-- Firelands Ember
+								{ "i",   17011, 1 },	-- Lava Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227821, {	-- Flamekissed Molten Helm
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   16983, 1 },	-- Molten Helm
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17011, 1 },	-- Lava Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227833, {	-- Glaive of Obsidian Fury
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   19167, 1 },	-- Blackfury
+								{ "i", 227801, 25 },	-- Firelands Ember
+								{ "i",   17011, 2 },	-- Lava Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227829, {	-- Hardened Black Dragonscale Boots
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   16984, 1 },	-- Black Dragonscale Boots
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17011, 1 },	-- Lava Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227840, {	-- Implacable Blackguard
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   19168, 1 },	-- Blackguard
+								{ "i", 227801, 25 },	-- Firelands Ember
+								{ "i",   17011, 2 },	-- Lava Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227828, {	-- Lavawalker Belt
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   19149, 1 },	-- Lava Belt
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17011, 1 },	-- Lava Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227827, {	-- Molten Chain Girdle
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   16989, 1 },	-- Fiery Chain Girdle
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227834, {	-- Molten Chain Shoulders
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   16988, 1 },	-- Fiery Chain Shoulders
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227825, {	-- Molten Dark Iron Destroyer
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   17016, 1 },	-- Dark Iron Destroyer
+								{ "i", 227801, 25 },	-- Firelands Ember
+								{ "i",   17010, 2 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227838, {	-- Shining Chromatic Gauntlets
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   19157, 1 },	-- Chromatic Gauntlets
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227832, {	-- Tempered Black Amnesty
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   19166, 1 },	-- Black Amnesty
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 2 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227841, {	-- Tempered Dark Iron Boots (Str/Stam)
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   20039, 1 },	-- Dark Iron Boots
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(228924, {	-- Tempered Dark Iron Boots (Agi/Stam)
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   20039, 1 },	-- Dark Iron Boots
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(228925, {	-- Tempered Dark Iron Boots (Def/Stam)
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   20039, 1 },	-- Dark Iron Boots
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(228926, {	-- Tempered Dark Iron Boots (Int/Holy)
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   20039, 1 },	-- Dark Iron Boots
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(228927, {	-- Tempered Dark Iron Boots (Str/Holy)
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   20039, 1 },	-- Dark Iron Boots
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(228928, {	-- Tempered Dark Iron Boots (Healing/Stam)
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   20039, 1 },	-- Dark Iron Boots
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(228929, {	-- Tempered Dark Iron Boots (Healing/Int)
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   20039, 1 },	-- Dark Iron Boots
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227820, {	-- Tempered Dark Iron Bracers
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   17014, 1 },	-- Dark Iron Bracers
+								{ "i", 227801, 10 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227835, {	-- Tempered Dark Iron Gauntlets
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   19164, 1 },	-- Dark Iron Gauntlets
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17011, 1 },	-- Lava Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227824, {	-- Tempered Dark Iron Helm
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   19148, 1 },	-- Dark Iron Helm
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17011, 1 },	-- Lava Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227836, {	-- Tempered Dark Iron Leggings
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   17013, 1 },	-- Dark Iron Leggings
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227837, {	-- Thick Corehound Belt
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   19162, 1 },	-- Corehound Belt
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17010, 1 },	-- Fiery Core
+							},
+						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(227822, {	-- Thick Corehound Boots
+							["timeline"] = { "added 1.15.3" },
+							["cost"] = {
+								{ "i",   16982, 1 },	-- Corehound Boots
+								{ "i", 227801, 15 },	-- Firelands Ember
+								{ "i",   17011, 1 },	-- Lava Core
+							},
+						})),
+						-- #endif
 					},
 					{	-- Revered
 						applyclassicphase(PHASE_THREE, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
