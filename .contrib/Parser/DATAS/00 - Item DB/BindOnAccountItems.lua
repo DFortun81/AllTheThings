@@ -762,4 +762,55 @@ i(71678);	-- Leggings of the Fiery Conqueror
 i(71685);	-- Leggings of the Fiery Protector
 i(71671);	-- Leggings of the Fiery Vanquisher
 
+-- Tier 13 LFR [DS]
+i(78869);	-- Crown of the Corrupted Conqueror
+i(78870);	-- Crown of the Corrupted Protector
+i(78868);	-- Crown of the Corrupted Vanquisher
+i(78875);	-- Shoulders of the Corrupted Conqueror
+i(78876);	-- Shoulders of the Corrupted Protector
+i(78874);	-- Shoulders of the Corrupted Vanquisher
+i(78863);	-- Chest of the Corrupted Conqueror
+i(78864);	-- Chest of the Corrupted Protector
+i(78862);	-- Chest of the Corrupted Vanquisher
+i(78866);	-- Gauntlets of the Corrupted Conqueror
+i(78867);	-- Gauntlets of the Corrupted Protector
+i(78865);	-- Gauntlets of the Corrupted Vanquisher
+i(78872);	-- Leggings of the Corrupted Conqueror
+i(78873);	-- Leggings of the Corrupted Protector
+i(78871);	-- Leggings of the Corrupted Vanquisher
+
+-- Tier 13 N [DS]
+i(78182);	-- Crown of the Corrupted Conqueror
+i(78177);	-- Crown of the Corrupted Protector
+i(78172);	-- Crown of the Corrupted Vanquisher
+i(78180);	-- Shoulders of the Corrupted Conqueror
+i(78175);	-- Shoulders of the Corrupted Protector
+i(78170);	-- Shoulders of the Corrupted Vanquisher
+i(78184);	-- Chest of the Corrupted Conqueror
+i(78179);	-- Chest of the Corrupted Protector
+i(78174);	-- Chest of the Corrupted Vanquisher
+i(78183);	-- Gauntlets of the Corrupted Conqueror
+i(78178);	-- Gauntlets of the Corrupted Protector
+i(78173);	-- Gauntlets of the Corrupted Vanquisher
+i(78181);	-- Leggings of the Corrupted Conqueror
+i(78176);	-- Leggings of the Corrupted Protector
+i(78171);	-- Leggings of the Corrupted Vanquisher
+
+-- Tier 13 H [DS]
+i(78850);	-- Crown of the Corrupted Conqueror
+i(78851);	-- Crown of the Corrupted Protector
+i(78852);	-- Crown of the Corrupted Vanquisher
+i(78859);	-- Shoulders of the Corrupted Conqueror
+i(78860);	-- Shoulders of the Corrupted Protector
+i(78861);	-- Shoulders of the Corrupted Vanquisher
+i(78847);	-- Chest of the Corrupted Conqueror
+i(78848);	-- Chest of the Corrupted Protector
+i(78849);	-- Chest of the Corrupted Vanquisher
+i(78853);	-- Gauntlets of the Corrupted Conqueror
+i(78854);	-- Gauntlets of the Corrupted Protector
+i(78855);	-- Gauntlets of the Corrupted Vanquisher
+i(78856);	-- Leggings of the Corrupted Conqueror
+i(78857);	-- Leggings of the Corrupted Protector
+i(78858);	-- Leggings of the Corrupted Vanquisher
+
 -- #endif
