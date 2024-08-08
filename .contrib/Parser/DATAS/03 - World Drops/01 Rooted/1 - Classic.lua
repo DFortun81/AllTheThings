@@ -3594,7 +3594,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			i(12728, {	-- Plans: Invulnerable Mail (RECIPE!)
 				-- #if SEASON_OF_DISCOVERY
-				["timeline"] = { "removed 1.15.3" },
+				-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
+				-- ["timeline"] = { "removed 1.15.3" },
 				-- #endif
 			}),
 			i(5543),	-- Plans: Iridescent Hammer (RECIPE!)

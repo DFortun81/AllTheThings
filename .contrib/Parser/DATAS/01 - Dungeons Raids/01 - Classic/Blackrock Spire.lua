@@ -1826,7 +1826,8 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						-- #endif
 						i(12728, {	-- Plans: Invulnerable Mail (RECIPE!) [Also available as a world drop.]
 							-- #if SEASON_OF_DISCOVERY
-							["timeline"] = { "removed 1.15.3" },
+							-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
+							-- ["timeline"] = { "removed 1.15.3" },
 							-- #endif
 						}),
 						i(12837, {	-- Plans: Masterwork Stormhammer (RECIPE!)

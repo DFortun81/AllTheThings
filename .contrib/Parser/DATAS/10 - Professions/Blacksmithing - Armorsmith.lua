@@ -246,7 +246,8 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16746,
 						["requireSkill"] = 9788,
 						-- #if SEASON_OF_DISCOVERY
-						["timeline"] = { "removed 1.15.3" },
+						-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
+						--["timeline"] = { "removed 1.15.3" },
 						-- #endif
 					},
 					-- #if SEASON_OF_DISCOVERY

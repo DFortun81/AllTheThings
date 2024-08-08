@@ -375,7 +375,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				i(12641, {	-- Invulnerable Mail
 					-- #if SEASON_OF_DISCOVERY
-					["timeline"] = { "removed 1.15.3" },
+					-- CRIEVE NOTE: This item still drops apparently, I got this on my paladin.
+					-- ["timeline"] = { "removed 1.15.3" },
 					-- #endif
 				}),
 				i(12640),	-- Lionheart Helm
