@@ -21,6 +21,10 @@ profession(BLACKSMITHING, {
 						["name"] = "Annihilator",
 						["recipeID"] = 16991,
 						["requireSkill"] = 17041,
+						-- #if SEASON_OF_DISCOVERY
+						["description"] = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
+						["timeline"] = { "removed 1.15.0" },
+						-- #endif
 					},
 					{
 						["name"] = "Arcanite Reaper",
@@ -42,6 +46,9 @@ profession(BLACKSMITHING, {
 						["name"] = "Nightfall",
 						["recipeID"] = 23653,
 						["requireSkill"] = 17041,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.0" },
+						-- #endif
 					}),
 					-- #endif
 					applyclassicphase(TBC_PHASE_ONE,{

@@ -2323,6 +2323,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(SOD_PHASE_FOUR, i(20755, {	-- Formula: Wizard Oil
 							["timeline"] = { "added 1.15.3" },
 						})),
+						applyclassicphase(SOD_PHASE_FOUR, i(22308, {	-- Pattern: Enchanted Runecloth Bag
+							["timeline"] = { "added 1.15.3" },
+						})),
 						-- #endif
 					},
 					{	-- Friendly
@@ -2371,7 +2374,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_THREE, i(19211)),	-- Plans: Blackguard (RECIPE!)
 						applyclassicphase(PHASE_FOUR,  i(20040)),	-- Plans: Dark Iron Boots (RECIPE!)
 						applyclassicphase(PHASE_THREE, i(19210)),	-- Plans: Ebon Hand (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19212)),	-- Plans: Nightfall (RECIPE!)
+						applyclassicphase(PHASE_THREE, i(19212, {	-- Plans: Nightfall (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.0" },
+							-- #endif
+						})),
 					},
 				})),
 				n(9499, {	-- Plugger Spazzring

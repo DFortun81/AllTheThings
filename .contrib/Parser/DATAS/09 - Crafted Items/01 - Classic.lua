@@ -412,11 +412,26 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				prof(17041, {	-- Master Axesmith
 					["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
 					["groups"] = {
-						i(12798),	-- Annihilator
+						i(12798, {	-- Annihilator
+							-- #if SEASON_OF_DISCOVERY
+							["description"] = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
+							["timeline"] = { "removed 1.15.0" },
+							-- #endif
+						}),
 						i(12784),	-- Arcanite Reaper
 						i(17016),	-- Dark Iron Destroyer
 						i(12774, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Dawn's Edge
-						applyclassicphase(PHASE_THREE, i(19169)),	-- Nightfall
+						applyclassicphase(PHASE_THREE, i(19169, {	-- Nightfall
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.0" },
+							-- #endif
+						})),
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227843, {	-- Reaving Nightfall
+							["description"] = "Blizzard stated that Nightfall was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Nightfall or this updated version of it.",
+							["timeline"] = { "created 1.15.3" },
+						})),
+						-- #endif
 					},
 				}),
 				prof(17040, {	-- Master Hammersmith

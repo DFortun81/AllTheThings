@@ -1543,7 +1543,12 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				["creatureID"] = 9736,	-- Quartermaster Zigris
 				["groups"] = {
 					applyclassicphase(TBC_PHASE_ONE, i(21955)),	-- Design: Black Diamond Crab
-					i(12835),	-- Plans: Annihilator (RECIPE!)
+					i(12835, {	-- Plans: Annihilator (RECIPE!)
+						-- #if SEASON_OF_DISCOVERY
+						["description"] = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
+						["timeline"] = { "removed 1.15.0" },
+						-- #endif
+					}),
 					-- #if AFTER 4.0.3
 					i(12264),	-- Worg Pup (PET!)
 					-- #endif

@@ -2397,6 +2397,10 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Annihilator",
 					["recipeID"] = 16991,
+					-- #if SEASON_OF_DISCOVERY
+					["description"] = "Blizzard stated that Annihilator was an item that forced 1 member of the raid into a role that did not fit their design, so they've decided to not include Annihilator.",
+					["timeline"] = { "removed 1.15.0" },
+					-- #endif
 				},
 				{
 					["name"] = "Arcanite Champion",
@@ -2683,6 +2687,9 @@ profession(BLACKSMITHING, {
 				applyclassicphase(PHASE_THREE, {
 					["name"] = "Nightfall",
 					["recipeID"] = 23653,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.0" },
+					-- #endif
 				}),
 				-- #endif
 				{
