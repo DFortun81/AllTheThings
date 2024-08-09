@@ -319,12 +319,14 @@ local function zoneTextAreasRunner(group, value)
 	-- Remap the original mapID to the new mapID when it encounters any of these artIDs.
 	local mapIDs, parentMapID, info = {}, nil, nil;
 	if group.coords then
-		parentMapID = group.coords[1][3];
-		if parentMapID then
-			mapIDs[parentMapID] = 1;
-			info = C_Map_GetMapInfo(parentMapID);
-			if info and info.parentMapID then
-				mapIDs[info.parentMapID] = 1;
+		for index,coord in ipairs(group.coords) do
+			parentMapID = coord[3];
+			if parentMapID and not mapIDs[parentMapID] then
+				mapIDs[parentMapID] = 1;
+				info = C_Map_GetMapInfo(parentMapID);
+				if info and info.parentMapID then
+					mapIDs[info.parentMapID] = 1;
+				end
 			end
 		end
 	else
@@ -339,10 +341,12 @@ local function zoneTextAreasRunner(group, value)
 	end
 	if group.maps then
 		for i,parentMapID in ipairs(group.maps) do
-			mapIDs[parentMapID] = 1;
-			info = C_Map_GetMapInfo(parentMapID);
-			if info and info.parentMapID then
-				mapIDs[info.parentMapID] = 1;
+			if not mapIDs[parentMapID] then
+				mapIDs[parentMapID] = 1;
+				info = C_Map_GetMapInfo(parentMapID);
+				if info and info.parentMapID then
+					mapIDs[info.parentMapID] = 1;
+				end
 			end
 		end
 	end

@@ -7,8 +7,8 @@ local contains = app.contains;
 -- Global locals
 local coroutine, ipairs, pairs, pcall, rawset, tinsert, tremove, tonumber, math_floor, math_sqrt, math_random
 	= coroutine, ipairs, pairs, pcall, rawset, tinsert, tremove, tonumber, math.floor, math.sqrt, math.random;
-local CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown
-	= CreateVector2D, GetRealZoneText, GetSubZoneText, InCombatLockdown;
+local CreateVector2D, GetInstanceInfo, GetRealZoneText, GetSubZoneText, InCombatLockdown
+	= CreateVector2D, GetInstanceInfo, GetRealZoneText, GetSubZoneText, InCombatLockdown;
 local C_Map_GetMapArtID = C_Map.GetMapArtID;
 local C_Map_GetMapLevels = C_Map.GetMapLevels;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
@@ -61,6 +61,10 @@ local function GetCurrentMapID()
 		name = GetZoneText();
 		if name and name:len() > 0 then
 			zoneTexts[name] = 1;
+		end
+		local instanceName,instanceType = GetInstanceInfo();
+		if instanceType and instanceType ~= "none" then
+			zoneTexts[instanceName] = 1;
 		end
 
 		substitutions = remap.areaIDs;
