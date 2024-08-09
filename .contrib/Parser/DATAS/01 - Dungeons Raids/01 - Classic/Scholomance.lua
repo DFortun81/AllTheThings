@@ -1917,10 +1917,12 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				},
 			}),
 			-- #if SEASON_OF_DISCOVERY
+			--[[
 			applyclassicphase(SOD_PHASE_FOUR, i(228043, {	-- Boots of the Shrieker
 				["description"] = "None of these have been found on WoWHead. @Crieve if you get one to drop!",
 				["timeline"] = { "created 1.15.3" },
 			})),
+			]]--
 			-- #endif
 			i(13398, {	-- Boots of the Shrieker
 				-- #if SEASON_OF_DISCOVERY
