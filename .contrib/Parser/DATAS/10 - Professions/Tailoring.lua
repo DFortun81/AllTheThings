@@ -1401,6 +1401,13 @@ profession(TAILORING, {
 					["timeline"] = { ADDED_2_4_2 },
 					["recipeID"] = 50644
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Incandescent Mooncloth Robe",
+					["recipeID"] = 461708,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				{
 					["name"] = "Lesser Wizard's Robe",
 					["recipeID"] = 6690
@@ -1408,6 +1415,9 @@ profession(TAILORING, {
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Mooncloth Robe",
 					["recipeID"] = 22902,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				}),
 				{
 					["name"] = "Mooncloth Vest",

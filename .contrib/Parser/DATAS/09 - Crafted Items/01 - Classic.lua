@@ -3287,8 +3287,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(38277, {	-- Haliscan Jacket
 				["timeline"] = { ADDED_2_4_2 },
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227861, {	-- Incandescent Mooncloth Robe
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(5766),	-- Lesser Wizard's Robe
-			i(18486),	-- Mooncloth Robe
+			i(18486, {	-- Mooncloth Robe
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(14138),	-- Mooncloth Vest
 			i(2572),	-- Red Linen Robe
 			i(6239),	-- Red Linen Vest

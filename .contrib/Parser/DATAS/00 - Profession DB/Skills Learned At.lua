@@ -1240,6 +1240,7 @@ for spellID,learnedAt in pairs({
 	[28207] = 300,	-- Glacial Vest
 	[28209] = 300,	-- Glacial Wrists
 	[18454] = 300,	-- Gloves of Spell Mastery
+	[461708] = 300,	-- Incandescent Mooncloth Robe
 	[22868] = 300,	-- Inferno Gloves
 	[23663] = 300,	-- Mantle of the Timbermaw
 	[18445] = 300,	-- Mooncloth Bag

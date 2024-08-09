@@ -134,6 +134,7 @@ i("Inferno Gloves", 18416, 22868);
 i("Mooncloth Gloves", 18417, 22869);
 i("Cloak of Warding", 18418, 22870);
 i("Mooncloth Robe", 18487, 22902);
+i("Incandescent Mooncloth Robe", 228303, 461708);
 
 i("Wisdom of the Timbermaw", 19215, 23662);
 i("Argent Boots", 19216, 23664);

@@ -1183,7 +1183,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["timeline"] = { REMOVED_4_0_3 },
 					}),
 					-- #if SEASON_OF_DISCOVERY
-					i(228691, {	-- A Study on Stealth and Treachery
+					i(228691, {	-- Garona: A Study on Stealth and Treachery
 						["timeline"] = { "added 1.15.3" },
 					}),
 					-- #endif
@@ -1601,12 +1601,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18417),	-- Pattern: Mooncloth Gloves (RECIPE!)
 							i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
 							i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
-							-- These were added during 8.1.5 to the Time-Lost Trader (BFA Tailor Questline)
-							--i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
-							--i(18418),	-- Pattern: Cloak of Warding (RECIPE!)
-							--i(18415),	-- Pattern: Felcloth Gloves (RECIPE!)
-							--i(18416),	-- Pattern: Inferno Gloves (RECIPE!)
-							--i(18417),	-- Pattern: Mooncloth Gloves (RECIPE!)
 						},
 					})),
 					o(179499, {	-- Ogre Tannin Basket
@@ -1724,7 +1718,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				["groups"] = {
 					n(VENDORS, {
 						n(14371, {	-- Shen'dralar Provisioner
-							i(18487),	-- Pattern: Mooncloth Robe
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228303, {	-- Pattern: Incandescent Mooncloth Robe
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
+							i(18487, {	-- Pattern: Mooncloth Robe
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { "removed 1.15.3" },
+								-- #endif
+							}),
 						}),
 					}),
 					n(ZONE_DROPS, {
