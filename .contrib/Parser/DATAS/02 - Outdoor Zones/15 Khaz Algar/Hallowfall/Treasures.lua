@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 50.1, 13.8, HALLOWFALL },
 				["questID"] = 81978,
 				["g"] = {
-					i(224575),	-- Lightbearer's Pendant (warbound)
+					i(224575),	-- Lightbearer's Pendant
 				},
 			}),
 			o(453283, {	-- Smuggler's Treasure

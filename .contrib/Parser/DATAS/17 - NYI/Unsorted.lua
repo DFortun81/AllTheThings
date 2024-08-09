@@ -864,8 +864,6 @@ root(ROOTS.Unsorted, {
 				i(225761),	-- Jeweler's Careful Crusher
 
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
-				i(225946),	-- Slightly Singed Arathi Tabard
-				i(225947),	-- ELIZA's Rake Attachment
 
 				i(225974),	-- Swabbie's Cap \\ Teal Beanie
 				i(225975),	-- Alchemist's Bandolier
@@ -1619,7 +1617,6 @@ root(ROOTS.Unsorted, {
 				i(228452),	-- Deepest, Darkest Black Ink
 				i(228453),	-- Extra Large Bag of Popped Pebbles
 				i(228454),	-- Collector's Commemorative Proscenium Playbill
-				i(228457),	-- Lightspark Grade Book
 			}),
 			n(QUEST_ITEMS, {
 				i(206348),	-- Fragmented Flame
@@ -1961,7 +1958,6 @@ root(ROOTS.Unsorted, {
 				i(221209),	-- Flame Trader's Gloves
 				i(221210),	-- Grips of the Earth
 				i(221214),	-- Chitin Chain Headpiece
-				i(221215),	-- Taskmaster's Mining Cap
 				i(221218),	-- Reinforced Construct's Greaves
 				i(221222),	-- Water-Imbued Spaulders
 				i(221223),	-- Bog Beast Mantle
@@ -2119,15 +2115,11 @@ root(ROOTS.Unsorted, {
 				i(228220),	-- Waxy Bundle
 			}),
 			n(ACHIEVEMENTS, {
-				i(225203),	-- Beledar- The Emperor's Vision \\ Beledar
-				i(225204),	-- Shadow Curfew Guidelines \\ Rules of Survival
 				i(225209),	-- Sacred Flame Prayers
 				i(225210),	-- Priory Theses
 				i(225211),	-- Airship Operations Manual
-				i(225212),	-- The Big Book of Arathi Idioms \\ Fungal Growths
 				i(225213),	-- Sky-Captain Lancekat's Curse
 				i(225214),	-- List of Activities
-				i(225215),	-- The Song of Renilash \\ The Book
 			}),
 			cl(MAGE, {
 				i(227710),	-- Tome of Polymorph: Mosswool

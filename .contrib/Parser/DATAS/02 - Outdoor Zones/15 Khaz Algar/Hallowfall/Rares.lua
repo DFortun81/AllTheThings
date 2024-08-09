@@ -143,6 +143,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["questID"] = 80009,
 				["g"] = {
 					i(221240),	-- Nerubian Stagshell Gouger
+					i(221215),	-- Taskmaster's Mining Cap
 				},
 			}),
 		})),

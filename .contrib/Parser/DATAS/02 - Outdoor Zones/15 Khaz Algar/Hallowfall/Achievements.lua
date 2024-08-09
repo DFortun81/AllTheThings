@@ -35,30 +35,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			ach(40151),		-- Mereldar Menace
 			ach(40082),		-- Never Enough
 			ach(40685, {	-- Skyriding Glyphs: Bleak Sand
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 62.8, 7.2, HALLOWFALL },
 			}),
 			ach(40684, {	-- Skyriding Glyphs: Dunelle's Kindness
 				["coord"] = { 69.9, 44.2, HALLOWFALL },
 			}),
 			ach(40688, {	-- Skyriding Glyphs: Fortune's Fall
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 30.8, 51.6, HALLOWFALL },
 			}),
 			ach(40686, {	-- Skyriding Glyphs: Mereldar
 				["coord"] = { 43.3, 52.8, HALLOWFALL },
 			}),
 			ach(40687, {	-- Skyriding Glyphs: Priory of the Sacred Flame
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 35.4, 33.9, HALLOWFALL },
 			}),
 			ach(40683, {	-- Skyriding Glyphs: Sanguine Grasps
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 63.6, 65.5, HALLOWFALL },
 			}),
 			ach(40682, {	-- Skyriding Glyphs: Sina's Yearning
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 57.3, 32.8, HALLOWFALL },
 			}),
 			ach(40681, {	-- Skyriding Glyphs: The Fangs
 				["coord"] = { 62.9, 51.8, HALLOWFALL },
@@ -67,8 +62,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 57.6, 64.6, HALLOWFALL },
 			}),
 			ach(40689, {	-- Skyriding Glyphs: Velhan's Claim
-				-- TODO
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 45.7, 12.4, HALLOWFALL },
 			}),
 			ach(40844),		-- Sojourner of Hallowfall (automated)
 			ach(40625, {	-- The Missing Lynx

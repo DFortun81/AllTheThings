@@ -632,6 +632,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["sourceQuests"] = { 80178 },	-- A Murder Most Foul
 					["provider"] = { "n", 219173 },	-- Wenren Althal
 					["coord"] = { 48.7, 64.6, HALLOWFALL },
+					["g"] = {
+						i(225946),	-- Slightly Singed Arathi Tabard (COSMETIC!)
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.08, {	-- The Weight of Duty
@@ -674,8 +677,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 						i(224099),	-- Amber Bloom	(QI!)
 					},
 				}),
-				q(82479),	-- The Sword is Mightier
-				q(82480),	-- Job Killing Robot Or...
+				q(82479, {	-- The Sword is Mightier
+					["sourceQuests"] = { 82478 },	-- Regularly Scheduled Maintenance
+					["provider"] = { "n", 213613 },	-- Aemyra Acton
+					["coord"] = { 46.0, 10.5, HALLOWFALL },
+				}),
+				q(82480, {	-- Job Killing Robot Or...
+					["sourceQuests"] = { 82479 },	-- The Sword is Mightier
+					["provider"] = { "n", 224379 },	-- Orren Masyn
+					["coord"] = { 46.6, 59.8, HALLOWFALL },
+					["g"] = {
+						i(225947),	-- ELIZA's Rake Attachment (COSMETIC!)
+					},
+				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.10, {	-- Rest at Last
 				q(83497),	-- A Concerned Friend
@@ -975,6 +989,16 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83289),	-- reject work and blame Edwyn in addition
 	--questID 82894 (The Price of Hope)
 	q(79081),	-- after using Cobbled Together Bandage on injured Soldier @ 43.3, 51.7
+	-- questID 82479 (The Sword is Mightier)
+	q(82728),	-- 4 page / 1 node (The work...)
+	q(82738),	-- 4 page / 1 node (The work...)
+	q(82729),	-- 4 page / 3 node (Don't get...)
+	q(82730),	-- 4 page / 4 node (Please...)
+	q(82732),	-- 5 page / 1 node (I'm...)
+	q(82736),	-- 5 page / 1 node (I'm...)
+	q(82731),	-- 5 page / 3 node (I want...)
+	q(82733),	-- 5 page / 4 node (If you...)
+	q(82737),	-- 5 page / 4 node (If you...)
 	--
 	q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
 	--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
