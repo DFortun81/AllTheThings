@@ -844,7 +844,6 @@ root(ROOTS.Unsorted, {
 
 				-- Cosmetic
 				i(224165),	-- Dornogal Tabard \\ Gilded Earthen Tabard \\ [PH] Earthen Tabard
-				i(224166),	-- Awakened Tabard \\ Awakening Tabard \\ Copper Earthen Tabard \\ [PH] Earthen Tabard
 				i(224167),	-- Gundargaz Tabard \\ Dark Earthen Tabard \\ [PH] Earthen Tabard
 				i(224168),	-- Stonebound Tabard \\ Silver Earthen Tabard \\ [PH] Earthen Tabard
 				i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
@@ -959,7 +958,6 @@ root(ROOTS.Unsorted, {
 				i(226691),	-- Battered Harvest Golem's Head
 				i(226693),	-- Ragged Harvest Golem's Head
 
-				i(226800),	-- Earthen Backpack
 				i(227287),	-- Skovald's Resolve
 				i(227294),	-- Ravencrest's Wrath
 				i(227795),	-- Homebrewer's Sampling Mantle
@@ -1375,7 +1373,6 @@ root(ROOTS.Unsorted, {
 				i(222955),	-- Player Experience
 				i(222956),	-- Player Experience
 				i(222977),	-- Scorched Junk
-				i(222982),	-- Earthen Satchel
 				i(223316),	-- Trusty Hat
 				i(219390),	-- Set Keystone Map: Grim Batol
 				i(219494),	-- Ritual Flame
@@ -1816,57 +1813,19 @@ root(ROOTS.Unsorted, {
 			}),
 			race(EARTHEN_ALLIANCE, {
 				-- My Guess?? Earthen Starting Gear?
+				-- Alex: NYI / boosted gear?
 				i(219393),	-- Earthen Shoulders
 				i(219394),	-- Earthen Trousers
 				i(219395),	-- Earthen Grips
 				i(219396),	-- Earthen Vest
 				i(219397),	-- Earthen Boots
 				i(219398),	-- Earthen Chain
-				i(219407),	-- Earthen Chestpiece
-				i(219408),	-- Earthen Striders
-				i(219409),	-- Earthen Handguards
-				i(219410),	-- Earthen Coif
-				i(219411),	-- Earthen Greaves
-				i(219412),	-- Earthen Belt
-				i(219416),	-- Earthen Helm
-				i(219417),	-- Earthen Breastplate
-				i(219418),	-- Earthen Sabatons
-				i(219419),	-- Earthen Gauntlets
-				i(219420),	-- Earthen Legguards
-				i(219421),	-- Earthen Mantle
-				i(219422),	-- Earthen Girdle
-				i(219423),	-- Earthen Vestment
-				i(219424),	-- Earthen Sandals
-				i(219425),	-- Earthen Handbraces
-				i(219426),	-- Earthen Hood
-				i(219427),	-- Earthen Kilt
 				i(219428),	-- Earthen Waistguard
-				i(219430),	-- Earthen Collar
-				i(219431),	-- Earthen Slippers
-				i(219432),	-- Earthen Gloves
-				i(219433),	-- Earthen Waistcoat
-				i(219434),	-- Earthen Toolbelt
-				i(219435),	-- Earthen Cogwheel
-				i(219436),	-- Earthen Chestguard
-				i(219437),	-- Earthen Footguards
-				i(219438),	-- Earthen Handwraps
-				i(219439),	-- Earthen Mining Hat
-				i(219440),	-- Earthen Leggings
-				i(219441),	-- Earthen Cord
 				i(219458),	-- Earthen Traveler's Dagger
 				i(219460),	-- Earthen Traveler's Handaxe
 				i(219464),	-- Earthen Traveler's Boomstick
 				i(219465),	-- Earthen Traveler's Crossbow
 				i(219467),	-- Earthen Traveler's Fist \\ Earthen Traveler's Fist Weapon
-				i(222990),	-- Earthen Spire
-				i(222992),	-- Earthen Handaxe \\ Earthen Gavel
-				i(222993),	-- Earthen Shiv
-				i(222994),	-- Earthen Staff
-				i(222995),	-- Earthen Bulwark
-				i(222998),	-- Earthen Blade \\ Earthen Handaxe
-				i(222999),	-- Earthen Cleaver
-				i(223000),	-- Earthen Blunderbuss
-				i(223001),	-- Earthen Shillelagh \\ Earthen Pummel
 				-- Earthen stuff again? Maybe erm.. Heritage?
 				i(224195),	-- Earthen Shoulders
 				i(224196),	-- Earthen Trousers

@@ -125,9 +125,181 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 	}),
 	race(EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH }, ["races"] = ALLIANCE_ONLY, }, {
 		ach(40307),	-- Allied Races: Earthen (automated),
+		-- Starting area questline
+		["g"] = {
+			q(79200, {	-- Who am I?
+				--["sourceQuests"] = { xx },	-- probably some hqt or something like from adventure mode (if they didn't change requirement?)
+				["provider"] = { "n", 221839 },	-- Dawn
+				["coord"] = { 89.4, 48.0, 2322 },
+			}),
+			q(79201, {	-- The Analysis Interface
+				["sourceQuests"] = { 79200 },	-- Who am I?
+				["provider"] = { "n", 221891 },	-- Foreman Uzjax
+				["coord"] = { 62.6, 49.2, 2322 },	-- Hall of Awakening
+				["g"] = {
+					-- bag
+					i(222982),	-- Earthen Satchel
+					-- cloth
+					-- mage (a)
+					i(226800),	-- Earthen Backpack
+					i(219430),	-- Earthen Collar
+					i(219432),	-- Earthen Gloves
+					i(219431),	-- Earthen Slippers
+					i(219434),	-- Earthen Toolbelt
+					i(219433),	-- Earthen Waistcoat
+					-- missing head and shoulder pieces but have back?
+					-- priest (a) / warlock (a)
+					i(219425),	-- Earthen Handbraces
+					i(219426),	-- Earthen Hood
+					i(219427),	-- Earthen Kilt
+					i(219424),	-- Earthen Sandals
+					i(219423),	-- Earthen Vestment
+					i(219428),	-- Earthen Waistguard
+					-- missing shoulder pieces
+					-- leather
+					-- rogue (a) / monk (a)
+					i(219397),	-- Earthen Boots
+					i(219398),	-- Earthen Chain
+					i(219395),	-- Earthen Grips
+					i(219393),	-- Earthen Shoulders
+					i(219394),	-- Earthen Trousers
+					i(219396),	-- Earthen Vest
+					-- mail
+					-- hunter (a)
+					i(219412),	-- Earthen Belt
+					i(219407),	-- Earthen Chestpiece
+					i(219410),	-- Earthen Coif
+					i(219411),	-- Earthen Greaves
+					i(219409),	-- Earthen Handguards
+					i(219408),	-- Earthen Striders
+					-- hunter missing shoulder piece (bug reported)
+					-- shaman (a)
+					i(219436),	-- Earthen Chestguard
+					i(219435),	-- Earthen Cogwheel
+					i(219441),	-- Earthen Cord
+					i(219437),	-- Earthen Footguards
+					i(219438),	-- Earthen Handwraps
+					i(219440),	-- Earthen Leggings
+					i(219439),	-- Earthen Mining Hat
+					-- plate
+					-- warrior (h) / paladin (a)
+					i(219416),	-- Earthen Helm
+					i(219417),	-- Earthen Breastplate
+					i(219418),	-- Earthen Sabatons
+					i(219419),	-- Earthen Gauntlets
+					i(219420),	-- Earthen Legguards
+					i(219421),	-- Earthen Mantle
+					i(219422),	-- Earthen Girdle
+					--weapons
+					i(222998),	-- Earthen Blade
+					i(223000),	-- Earthen Blunderbuss
+					i(222995),	-- Earthen Bulwark
+					i(222999),	-- Earthen Cleaver
+					i(222992),	-- Earthen Handaxe
+					i(223001),	-- Earthen Shillelagh
+					i(222993),	-- Earthen Shiv
+					i(222990),	-- Earthen Spire
+					i(222994),	-- Earthen Staff
+				},
+			}),
+			q(79202, {	-- Rock Beats Rock
+				["sourceQuests"] = { 79201 },	-- The Analysis Interface
+				["provider"] = { "n", 221888 },	-- Dawn
+				["coord"] = { 47.7, 54.7, 2322 },
+			}),
+			q(79203, {	-- Authorization: Negated
+				["sourceQuests"] = { 79202 },	-- Rock Beats Rock
+				["provider"] = { "n", 221898 },	-- Speaker Kuldas
+				["coord"] = { 30.9, 48.5, 2322 },
+			}),
+			q(79204, {	-- Whoever You Want to Be
+				["sourceQuests"] = { 79203 },	-- Authorization: Negated
+				["provider"] = { "n", 221900 },	-- Speaker Kuldas
+				["coord"] = { 16.3, 48.1, 2322 },
+				["g"] = {
+					i(224166),	-- Awakened Tabard
+				},
+			}),
+			-- only this quest is factioned
+			q(81886, {	-- For the Alliance [A]
+				["sourceQuests"] = { 79204 },	-- Whoever You Want to Be
+				["provider"] = { "n", 221890 },	-- Dawn
+				["coord"] = { 8.7, 49.6, 2322 },
+			}),
+			q(81887, {	-- Stranger in a Strange Land [A]
+				["sourceQuests"] = { 81886 },	-- For the Alliance [A]
+				["provider"] = { "n", 133362 },	-- Ambassador Moorgard
+				["coord"] = { 53.0, 15.2, STORMWIND_CITY },
+				["g"] = {
+					--spell(452029),	-- Ensemble: Earthen Copper Regalia
+					--according to in-game report this was added (double up in unsorted)
+					--i(224195),	-- Earthen Shoulders
+					--i(224196),	-- Earthen Trousers
+					--i(224197),	-- Earthen Grips
+					--i(224198),	-- Earthen Vest
+					--i(224199),	-- Earthen Boots
+					--i(224200),	-- Earthen Chain
+					--i(224201),	-- Earthen Chestpiece
+					--i(224202),	-- Earthen Striders
+					--i(224203),	-- Earthen Handguards
+					--i(224204),	-- Earthen Coif
+					--i(224205),	-- Earthen Greaves
+					--i(224206),	-- Earthen Belt
+					--i(224207),	-- Earthen Helm
+					--i(224208),	-- Earthen Breastplate
+					--i(224209),	-- Earthen Sabatons
+					--i(224210),	-- Earthen Gauntlets
+					--i(224211),	-- Earthen Legguards
+					--i(224212),	-- Earthen Mantle
+					--i(224213),	-- Earthen Girdle
+					--i(224214),	-- Earthen Vestment
+					--i(224215),	-- Earthen Sandals
+					--i(224216),	-- Earthen Handbraces
+					--i(224217),	-- Earthen Hood
+					--i(224218),	-- Earthen Kilt
+					--i(224219),	-- Earthen Waistguard
+					--i(224220),	-- Earthen Collar
+					--i(224221),	-- Earthen Slippers
+					--i(224222),	-- Earthen Gloves
+					--i(224223),	-- Earthen Waistcoat
+					--i(224224),	-- Earthen Toolbelt
+					--i(224225),	-- Earthen Cogwheel
+					--i(224226),	-- Earthen Chestguard
+					--i(224227),	-- Earthen Footguards
+					--i(224228),	-- Earthen Handwraps
+					--i(224229),	-- Earthen Mining Hat
+					--i(224230),	-- Earthen Leggings
+					--i(224231),	-- Earthen Cord
+					--i(224241),	-- Earthen Spire
+					--i(224242),	-- Earthen Handaxe
+					--i(224243),	-- Earthen Shiv
+					--i(224244),	-- Earthen Staff
+					--i(224245),	-- Earthen Bulwark
+					--i(224246),	-- Earthen Blade
+					--i(224247),	-- Earthen Cleaver
+					--i(224248),	-- Earthen Blunderbuss
+					--i(224249),	-- Earthen Shillelagh
+					--i(226363),	-- Earthen Backpack
+				},
+			}),
+		},
 	})),
 	race(EARTHEN_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH }, ["races"] = HORDE_ONLY, }, {
 		ach(40307),	-- Allied Races: Earthen (automated),
+		["g"] = {
+			q(81888, {	-- For the Horde [H]
+				["sourceQuests"] = { 79204 },	-- Whoever You Want to Be
+				["provider"] = { "n", 221890 },	-- Dawn
+				["coord"] = { 8.7, 49.6, 2322 },
+			}),
+			q(81889, {	-- Stranger in a Strange Land [H]
+				["sourceQuests"] = { 81888 },	-- For the Horde [H]
+				["provider"] = { "n", 133407 },	-- Ambassador Blackguard
+				["coord"] = { 39.4, 79.5, ORGRIMMAR },
+				-- didn't have Ensemble (spell) as reward here
+				-- and didn't fire 82770, 82788, 82789 (they are already flagged as completed)
+			}),
+		},
 	})),
 	race(HIGHMOUNTAIN_TAUREN, {
 		-- #if BEFORE 10.1.5

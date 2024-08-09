@@ -2368,6 +2368,7 @@ local keys = {
 [44430]="Unused",
 [44482]="Recruiting Ebon Knights",
 [44554]="Mythic Keystone Weekly Tracking Quest",
+[44578]="Honor the Flame",
 [44584]="Short-Supply Reward",
 [44616]="We'll Need Some Obliterum",
 [44697]="Tracking Quest - Prestige UI - Artifact",
