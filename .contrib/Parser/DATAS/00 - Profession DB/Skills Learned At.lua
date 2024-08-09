@@ -546,6 +546,7 @@ for spellID,learnedAt in pairs({
 	[25073] = 300,	-- Enchant Gloves - Shadow Power
 	[25080] = 300,	-- Enchant Gloves - Superior Agility
 	[25072] = 300,	-- Enchant Gloves - Threat
+	[463871] = 300,	-- Enchant Shield - Law of Nature
 	[20034] = 300,	-- Enchant Weapon - Crusader
 	[22750] = 300,	-- Enchant Weapon - Healing Power
 	[20032] = 300,	-- Enchant Weapon - Lifestealing

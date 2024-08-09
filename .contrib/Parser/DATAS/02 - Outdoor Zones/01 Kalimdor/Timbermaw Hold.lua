@@ -490,6 +490,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							applyclassicphase(PHASE_THREE, i(19215)),	-- Pattern: Wisdom of the Timbermaw
 						},
 						{	-- Revered
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228982, {	-- Formula: Enchant Shield - Law of Nature
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
 							applyclassicphase(PHASE_THREE, i(19218)),	-- Pattern: Mantle of the Timbermaw
 							applyclassicphase(PHASE_THREE, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
 							applyclassicphase(PHASE_THREE, i(19327)),	-- Pattern: Timbermaw Brawlers (RECIPE!)

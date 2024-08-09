@@ -1107,10 +1107,15 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(13933, {["timeline"]={REMOVED_5_0_4}}),	-- Frost Resistance
 			r(20017),	-- Greater Stamina
 			r(13905),	-- Greater Versatility / CLASSIC: Greater Spirit
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, r(463871, {	-- Law of Nature
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			r(13689),	-- Lesser Parry / CLASSIC: Lesser Block
 			r(13464),	-- Lesser Protection
 			r(13631),	-- Lesser Stamina
-			r(13485),	-- Lesser Versatility / CLASSIC:Lesser Spirit
+			r(13485),	-- Lesser Versatility / CLASSIC: Lesser Spirit
 			r(13378),	-- Minor Stamina
 			r(13817),	-- Stamina
 			r(13659),	-- Versatility / CLASSIC: Spirit
