@@ -3326,6 +3326,39 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, q(84590, {	-- The Balance of Light and Shadow
+					["providers"] = {
+						{ "n",  14494 },	-- Eris Havenfire
+						{ "i", 228749 },	-- Splinter of Nordrassil
+					},
+					["sourceQuest"] = 7621,	-- A Warning
+					-- #if AFTER WRATH
+					["coord"] = { 17.6, 14.1, EASTERN_PLAGUELANDS },
+					-- #else
+					["coord"] = { 20.8, 18.4, EASTERN_PLAGUELANDS },
+					-- #endif
+					["timeline"] = { "added 1.15.3" },
+					["cost"] = {
+						{ "i", 18646, 1 },	-- The Eye of Divinity
+						{ "i", 18665, 1 },	-- The Eye of Shadow
+					},
+					["classes"] = { PRIEST },
+					["lvl"] = 60,
+					["groups"] = {
+						ach(11297, {	-- The Balance of Light and Shadow
+							["timeline"] = { ADDED_7_0_3, REMOVED_7_0_3_LAUNCH },
+							["classes"] = { PRIEST },
+						}),
+						i(228336, {	-- Anathema
+							["timeline"] = { "added 1.15.3" },
+						}),
+						i(228335, {	-- Benediction
+							["timeline"] = { "added 1.15.3" },
+						}),
+					},
+				})),
+				-- #endif
 				q(7622, {	-- The Balance of Light and Shadow
 					["providers"] = {
 						{ "n", 14494 },	-- Eris Havenfire
@@ -3337,7 +3370,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 20.8, 18.4, EASTERN_PLAGUELANDS },
 					-- #endif
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3,
+						-- #endif
+					},
 					["cost"] = {
 						{ "i", 18646, 1 },	-- The Eye of Divinity
 						{ "i", 18665, 1 },	-- The Eye of Shadow
@@ -3350,10 +3389,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["classes"] = { PRIEST },
 						}),
 						i(18609, {	-- Anathema
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
 						i(18608, {	-- Benediction
-							["timeline"] = { REMOVED_4_0_3 },
+							["timeline"] = {
+								-- #if SEASON_OF_DISCOVERY
+								"removed 1.15.3",
+								-- #else
+								REMOVED_4_0_3,
+								-- #endif
+							},
 						}),
 					},
 				}),
