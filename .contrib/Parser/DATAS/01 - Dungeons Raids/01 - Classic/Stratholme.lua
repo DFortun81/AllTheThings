@@ -1214,7 +1214,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["description"] = "Found the wall near Archivist Galford.",
 								-- #endif
 							}),
-							applyclassicphase(PHASE_SIX, {
+							applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
 								["itemID"] = 22897,	-- Tome of Conjure Food VII
 								["timeline"] = { REMOVED_4_0_1 },
 								["classes"] = { MAGE },

@@ -3305,7 +3305,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(17965, {	-- Yellow Sack of Gems
 		}),
 		-- #if BEFORE 5.0.4
-		applyclassicphase(PHASE_FIVE, i(23197, {	-- Idol of the Moon [Phase 5/6]
+		applyclassicphase(PHASE_FIVE_RECIPES, i(23197, {	-- Idol of the Moon [Phase 5/6]
 			["timeline"] = { REMOVED_5_0_4 },
 		})),
 		-- #endif
@@ -3320,7 +3320,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 		}),
 		-- #if BEFORE 5.0.4
-		applyclassicphase(PHASE_FIVE, i(23203, {	-- Libram of Fervor [Phase 5/6]
+		applyclassicphase(PHASE_FIVE_RECIPES, i(23203, {	-- Libram of Fervor [Phase 5/6]
 			["timeline"] = { REMOVED_5_0_4 },
 		})),
 		-- #endif
@@ -3402,7 +3402,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		})),
 		-- #endif
 		-- #if BEFORE 5.0.4
-		applyclassicphase(PHASE_FIVE, i(23199, {	-- Totem of the Storm [Phase 5/6]
+		applyclassicphase(PHASE_FIVE_RECIPES, i(23199, {	-- Totem of the Storm [Phase 5/6]
 			["timeline"] = { REMOVED_5_0_4 },
 		})),
 		-- #endif
@@ -3607,7 +3607,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7991),	-- Plans: Mithril Scale Shoulders (RECIPE!)
 			i(7976),	-- Plans: Mithril Shield Spike (RECIPE!)
 			i(7989),	-- Plans: Mithril Spurs (RECIPE!)
-			applyclassicphase(PHASE_FIVE, i(22390)),	-- Plans: Persuader (RECIPE!)
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22390)),	-- Plans: Persuader (RECIPE!)
 			i(3874),	-- Plans: Polished Steel Boots (RECIPE!)
 			i(12685),	-- Plans: Radiant Belt (RECIPE!)
 			i(12697),	-- Plans: Radiant Boots (RECIPE!)
@@ -3617,7 +3617,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(12713),	-- Plans: Radiant Leggings (RECIPE!)
 			i(2881),	-- Plans: Runed Copper Breastplate (RECIPE!)
 			i(8028),	-- Plans: Runed Mithril Hammer (RECIPE!)
-			applyclassicphase(PHASE_FIVE, i(22389)),	-- Plans: Sageblade (RECIPE!)
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22389)),	-- Plans: Sageblade (RECIPE!)
 			i(12261),	-- Plans: Searing Golden Blade (RECIPE!)
 			i(3869),	-- Plans: Shadow Crescent Axe (RECIPE!)
 			i(5578),	-- Plans: Silvered Bronze Breastplate (RECIPE!)
@@ -3906,7 +3906,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["spellID"] = 23028,	-- Arcane Brilliance
 				["rank"] = 1,
 			},
-			applyclassicphase(PHASE_SIX, {
+			applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
 				["itemID"] = 22890,		-- Tome of Frost Ward V [Phase 6]
 				["spellID"] = 28609,	-- Frost Ward V
 				["rank"] = 5,
@@ -3923,14 +3923,14 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 				["spellID"] = 21564,	-- Prayer of Fortitude II
 				["rank"] = 2,
 			},
-			applyclassicphase(PHASE_FIVE, {
+			applyclassicphase(PHASE_FIVE_RECIPES, {
 				["itemID"] = 22393,		-- Codex: Prayer of Shadow Protection [Phase 5]
 				["spellID"] = 27683,	-- Prayer of Shadow Protection
 				["rank"] = 1,
 			}),
 		}),
 		cl(WARLOCK, {
-			applyclassicphase(PHASE_SIX, {
+			applyclassicphase(PHASE_SIX_CLASS_BOOKS, {
 				["itemID"] = 22891,		-- Grimoire of Shadow Ward IV [Phase 6]
 				["spellID"] = 28610,	-- Shadow Ward IV
 				["rank"] = 4,

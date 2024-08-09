@@ -1533,7 +1533,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 					["name"] = "Elixir of Greater Defense",
 					["recipeID"] = 11450
 				},
-				applyclassicphase(PHASE_FIVE, {
+				applyclassicphase(PHASE_FIVE_RECIPES, {
 					["name"] = "Elixir of Greater Firepower",
 					["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },
 					["recipeID"] = 26277
@@ -2899,7 +2899,7 @@ itemrecipe("Recipe: Greater Dreamless Sleep Potion", 20012, 24366, PHASE_FOUR, R
 itemrecipe("Recipe: Living Action Potion", 20013, 24367, PHASE_FOUR);
 itemrecipe("Recipe: Major Troll's Blood Potion", 20014, 24368, PHASE_FOUR);
 itemrecipe("Recipe: Transmute Elemental Fire", 20761, 25146, PHASE_FIVE);
-itemrecipe("Recipe: Elixir of Greater Firepower", 21547, 26277, PHASE_FIVE);
+itemrecipe("Recipe: Elixir of Greater Firepower", 21547, 26277, PHASE_FIVE_RECIPES);
 
 -- #if AFTER TBC
 -- TBC Recipes

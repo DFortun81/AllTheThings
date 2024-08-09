@@ -454,7 +454,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 						i(12796),	-- Hammer of the Titans
 						i(12794, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_5}}),	-- Masterwork Stormhammer
-						applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader
+						applyclassicphase(PHASE_FIVE_RECIPES, i(22384)),	-- Persuader
 						i(12781, {	-- Serenity
 							-- #if SEASON_OF_DISCOVERY
 							["timeline"] = { "removed 1.15.3" },
@@ -485,7 +485,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						})),
 						-- #endif
 						i(12797),	-- Frostguard
-						applyclassicphase(PHASE_FIVE, i(22383)),	-- Sageblade
+						applyclassicphase(PHASE_FIVE_RECIPES, i(22383)),	-- Sageblade
 					},
 				}),
 				n(WEAPONS, {
@@ -951,9 +951,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 			i(12794, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_5}}),	-- Masterwork Stormhammer
 			applyclassicphase(PHASE_THREE, i(19169)),	-- Nightfall
-			applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22384)),	-- Persuader
 			i(7961, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Phantom Blade
-			applyclassicphase(PHASE_FIVE, i(22383)),	-- Sageblade
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22383)),	-- Sageblade
 			i(12781),	-- Serenity
 			i(7954, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}}),	-- The Shatterer
 			-- #if SEASON_OF_DISCOVERY
@@ -1239,8 +1239,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			})),
 			-- #endif
 			i(12655),	-- Enchanted Thorium Bar
-			applyclassicphase(PHASE_FIVE, i(20747)),	-- Lesser Mana Oil
-			applyclassicphase(PHASE_FIVE, i(20746)),	-- Lesser Wizard Oil
+			applyclassicphase(PHASE_FIVE_RECIPES, i(20747)),	-- Lesser Mana Oil
+			applyclassicphase(PHASE_FIVE_RECIPES, i(20746)),	-- Lesser Wizard Oil
 			applyclassicphase(PHASE_FIVE, i(20745)),	-- Minor Mana Oil
 			applyclassicphase(PHASE_FIVE, i(20744)),	-- Minor Wizard Oil
 			i(16207, {["timeline"] = {REMOVED_5_0_4}}),	-- Runed Arcanite Rod
@@ -3066,7 +3066,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FIVE, i(22251)),	-- Cenarion Herb Bag
 			i(21342),	-- Core Felcloth Bag
 			i(22246),	-- Enchanted Mageweave Pouch
-			applyclassicphase(PHASE_FIVE, i(22248)),	-- Enchanted Runecloth Bag
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22248)),	-- Enchanted Runecloth Bag
 			i(21341),	-- Felcloth Bag
 			i(5764),	-- Green Silk Pack
 			i(4241),	-- Green Woolen Bag

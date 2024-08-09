@@ -1037,8 +1037,8 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			applyclassicphase(PHASE_FIVE, r(25086)),	-- Dodge
 			r(13657, {["timeline"]={REMOVED_5_0_4}}),	-- Fire Resistance
 			r(13746),	-- Greater Defense
-			applyclassicphase(PHASE_FIVE, r(25081, {["timeline"]={REMOVED_5_0_4}})),	-- Greater Fire Resistance
-			applyclassicphase(PHASE_FIVE, r(25082, {["timeline"]={REMOVED_5_0_4}})),	-- Greater Nature Resistance
+			applyclassicphase(PHASE_FIVE_RECIPES, r(25081, {["timeline"]={REMOVED_5_0_4}})),	-- Greater Fire Resistance
+			applyclassicphase(PHASE_FIVE_RECIPES, r(25082, {["timeline"]={REMOVED_5_0_4}})),	-- Greater Nature Resistance
 			r(20014, {["timeline"]={REMOVED_5_0_4}}),	-- Greater Resistance
 			r(13882),	-- Lesser Agility
 			r(7861, {["timeline"]={REMOVED_5_0_4}}),	-- Lesser Fire Resistance
@@ -1086,8 +1086,8 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 				["timeline"] = { "added 1.15.3" },
 			})),
 			-- #endif
-			applyclassicphase(PHASE_FIVE, r(25127)),	-- Lesser Mana Oil
-			applyclassicphase(PHASE_FIVE, r(25126)),	-- Lesser Wizard Oil
+			applyclassicphase(PHASE_FIVE_RECIPES, r(25127)),	-- Lesser Mana Oil
+			applyclassicphase(PHASE_FIVE_RECIPES, r(25126)),	-- Lesser Wizard Oil
 			applyclassicphase(PHASE_FIVE, r(25125)),	-- Minor Mana Oil
 			applyclassicphase(PHASE_FIVE, r(25124)),	-- Minor Wizard Oil
 			applyclassicphase(PHASE_FIVE, r(25128)),	-- Wizard Oil
@@ -1928,8 +1928,8 @@ itemrecipe("Formula: Enchant Cloak - Stealth", 20734, 25083, PHASE_FIVE);
 itemrecipe("Formula: Enchant Cloak - Subtlety", 20735, 25084, PHASE_FIVE);
 itemrecipe("Formula: Enchant Cloak - Dodge", 20736, 25086, PHASE_FIVE);
 itemrecipe("Formula: Minor Mana Oil", 20752, 25125, PHASE_FIVE);
-itemrecipe("Formula: Lesser Wizard Oil", 20753, 25126, PHASE_FIVE);
-itemrecipe("Formula: Lesser Mana Oil", 20754, 25127, PHASE_FIVE);
+itemrecipe("Formula: Lesser Wizard Oil", 20753, 25126, PHASE_FIVE_RECIPES);
+itemrecipe("Formula: Lesser Mana Oil", 20754, 25127, PHASE_FIVE_RECIPES);
 itemrecipe("Formula: Wizard Oil", 20755, 25128, PHASE_FIVE);
 itemrecipe("Formula: Brilliant Wizard Oil", 20756, 25129, PHASE_FIVE);
 itemrecipe("Formula: Brilliant Mana Oil", 20757, 25130, PHASE_FIVE);

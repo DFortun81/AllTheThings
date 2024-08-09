@@ -2737,7 +2737,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 6517,
 				},
 				-- #if AFTER TBC
-				applyclassicphase(PHASE_FIVE, {
+				applyclassicphase(PHASE_FIVE_RECIPES, {
 					["name"] = "Persuader",
 					["recipeID"] = 27830,
 				}),
@@ -2756,7 +2756,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 10009,
 				},
 				-- #if AFTER TBC
-				applyclassicphase(PHASE_FIVE, {
+				applyclassicphase(PHASE_FIVE_RECIPES, {
 					["name"] = "Sageblade",
 					["recipeID"] = 27832,
 				}),
@@ -4630,8 +4630,8 @@ itemrecipe("Plans: Black Grasp of the Destroyer", 22220, 27589, PHASE_FIVE);
 itemrecipe("Plans: Obsidian Mail Tunic", 22221, 27590, PHASE_FIVE);
 itemrecipe("Plans: Thick Obsidian Breastplate", 22222, 27587, PHASE_FIVE);
 itemrecipe("Plans: Titanic Leggings", 22388, 27829, PHASE_FIVE);
-itemrecipe("Plans: Sageblade", 22389, 27832, PHASE_FIVE);
-itemrecipe("Plans: Persuader", 22390, 27830, PHASE_FIVE);
+itemrecipe("Plans: Sageblade", 22389, 27832, PHASE_FIVE_RECIPES);
+itemrecipe("Plans: Persuader", 22390, 27830, PHASE_FIVE_RECIPES);
 itemrecipe("Plans: Icebane Breastplate", 22703, 28242, PHASE_SIX);
 itemrecipe("Plans: Icebane Gauntlets", 22704, 28243, PHASE_SIX);
 itemrecipe("Plans: Icebane Bracers", 22705, 28244, PHASE_SIX);

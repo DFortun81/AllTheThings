@@ -1819,7 +1819,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["timeline"] = { REMOVED_6_0_2 },
 						["cr"] = 10317,	-- Blackhand Elite <Blackhand Legion>
 					}),
-					applyclassicphase(PHASE_SIX, i(24102, {	-- Manual of Eviscerate IX
+					applyclassicphase(PHASE_SIX_CLASS_BOOKS, i(24102, {	-- Manual of Eviscerate IX
 						["timeline"] = { REMOVED_4_0_1 },
 						["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
 						-- #if BEFORE 4.0.1
@@ -1835,7 +1835,16 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					}),
 					-- #endif
 					-- #if BEFORE 6.0.2
-					i(13260),	-- Wind Dancer Boots
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, i(228593, {	-- Wind Dancer Boots
+						["timeline"] = { "added 1.15.3" },
+					})),
+					-- #endif
+					i(13260, {	-- Wind Dancer Boots
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
+					}),
 					-- #endif
 				}),
 				prof(SKINNING, {
@@ -1872,7 +1881,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						i(12926, {	-- Flaming Band
 							["timeline"] = { REMOVED_6_0_2 },
 						}),
-						applyclassicphase(PHASE_SIX, i(23320, {	-- Tablet of Flame Shock VI
+						applyclassicphase(PHASE_SIX_CLASS_BOOKS, i(23320, {	-- Tablet of Flame Shock VI
 							["timeline"] = { REMOVED_4_0_1 },
 							-- #if BEFORE 4.0.1
 							["spellID"] = 29228,	-- Flame Shock VI
@@ -2073,7 +2082,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				n(10430, {	-- The Beast
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
-						applyclassicphase(PHASE_SIX, i(24101, {	-- Book of Ferocious Bite V
+						applyclassicphase(PHASE_SIX_CLASS_BOOKS, i(24101, {	-- Book of Ferocious Bite V
 							["timeline"] = { REMOVED_4_0_1 },
 							-- #if BEFORE 4.0.1
 							["spellID"] = 31018,	-- Ferocious Bite V

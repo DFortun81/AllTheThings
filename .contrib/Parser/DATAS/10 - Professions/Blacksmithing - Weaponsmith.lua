@@ -177,7 +177,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16993,
 						["requireSkill"] = 17040,
 					},
-					applyclassicphase(PHASE_FIVE, {
+					applyclassicphase(PHASE_FIVE_RECIPES, {
 						["name"] = "Persuader",
 						["recipeID"] = 27830,
 						["requireSkill"] = 17040,
@@ -335,7 +335,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16992,
 						["requireSkill"] = 17039,
 					},
-					applyclassicphase(PHASE_FIVE, {
+					applyclassicphase(PHASE_FIVE_RECIPES, {
 						["name"] = "Sageblade",
 						["recipeID"] = 27832,
 						["requireSkill"] = 17039,

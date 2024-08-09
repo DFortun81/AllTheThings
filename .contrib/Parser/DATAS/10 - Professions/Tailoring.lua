@@ -1018,7 +1018,7 @@ profession(TAILORING, {
 					["name"] = "Enchanted Mageweave Pouch",
 					["recipeID"] = 27658
 				},
-				applyclassicphase(PHASE_FIVE, {
+				applyclassicphase(PHASE_FIVE_RECIPES, {
 					["name"] = "Enchanted Runecloth Bag",
 					["recipeID"] = 27659,
 				}),
@@ -6352,7 +6352,7 @@ itemrecipe("Pattern: Runed Stygian Leggings", 20546, 24901, PHASE_THREE_SILITHUS
 itemrecipe("Pattern: Runed Stygian Boots", 20547, 24903, PHASE_THREE_SILITHUS_EXPEDITION_QUESTS);
 itemrecipe("Pattern: Runed Stygian Belt", 20548, 24902, PHASE_THREE_SILITHUS_EXPEDITION_QUESTS);
 
-itemrecipe("Pattern: Enchanted Runecloth Bag", 22308, 27659, PHASE_FIVE);
+itemrecipe("Pattern: Enchanted Runecloth Bag", 22308, 27659, PHASE_FIVE_RECIPES);
 itemrecipe("Pattern: Big Bag of Enchantment", 22309, 27660, PHASE_FIVE);
 itemrecipe("Pattern: Cenarion Herb Bag", 22310, 27724, PHASE_FIVE);
 itemrecipe("Pattern: Satchel of Cenarius", 22312, 27725, PHASE_FIVE);
