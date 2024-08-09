@@ -1389,6 +1389,10 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["timeline"] = { "added 1.15.3" },
 					["cr"] = 9259,	-- Firebrand Grunt
 				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227907, {	-- Pattern: Masterwork Volcanic Shoulders (RECIPE!)
+					["timeline"] = { "added 1.15.3" },
+					["cr"] = 9260,	-- Firebrand Legionnaire
+				})),
 				-- #endif
 				i(15749, {	-- Pattern: Volcanic Breastplate (RECIPE!)
 					-- #if SEASON_OF_DISCOVERY
@@ -1397,6 +1401,9 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					["cr"] = 9259,	-- Firebrand Grunt
 				}),
 				i(15775, {	-- Pattern: Volcanic Shoulders (RECIPE!)
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["cr"] = 9260,	-- Firebrand Legionnaire
 				}),
 				i(13494, {	-- Recipe: Greater Fire Protection Potion (RECIPE!)

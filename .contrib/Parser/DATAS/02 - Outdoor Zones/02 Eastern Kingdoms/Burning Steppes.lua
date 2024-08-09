@@ -2460,10 +2460,27 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						7029,	-- Blackrock Battlemaster
 					},
 				}),
-				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
-					["cr"] = 7035,	-- Firegut Brute
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227908, {	-- Pattern: Masterwork Volcanic Leggings (RECIPE!)
 					["description"] = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
+					["timeline"] = { "added 1.15.3" },
+					["cr"] = 7035,	-- Firegut Brute
+					["coords"] = {
+						{ 83.6, 40.0, BURNING_STEPPES },
+						{ 80.4, 45.8, BURNING_STEPPES },
+					},
+				})),
+				-- #endif
+				i(15732, {	-- Pattern: Volcanic Leggings (RECIPE!)
+					["description"] = "Drops from Firegut Brutes, which are found around Dreadmaul Rock and inside the Firegut Furnace cavern. The entrance to Firegut Furnace is at the southwestern side of Dreadmaulk Rock. Firegut Ogre Mages very often spawn in place of Firegut Brutes.",
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3, ADDED_10_1_7,	-- ATT Discord 05.09.2023
+						-- #endif
+					},
+					["cr"] = 7035,	-- Firegut Brute
 					["coords"] = {
 						{ 83.6, 40.0, BURNING_STEPPES },
 						{ 80.4, 45.8, BURNING_STEPPES },

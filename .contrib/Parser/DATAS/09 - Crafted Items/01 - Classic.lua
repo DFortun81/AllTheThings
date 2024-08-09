@@ -2363,6 +2363,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(SOD_PHASE_FOUR, i(227868, {	-- Masterwork Volcanic Breastplate
 					["timeline"] = { "added 1.15.3" },
 				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227867, {	-- Masterwork Volcanic Leggings
+					["timeline"] = { "added 1.15.3" },
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227866, {	-- Masterwork Volcanic Shoulders
+					["timeline"] = { "added 1.15.3" },
+				})),
 				-- #endif
 				applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
 				i(16983),	-- Molten Helm
@@ -2376,8 +2382,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { "removed 1.15.3" },
 					-- #endif
 				}),
-				i(15054, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Volcanic Leggings
-				i(15055),	-- Volcanic Shoulders
+				i(15054, {	-- Volcanic Leggings
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3, ADDED_10_1_7,
+						-- #endif
+					},
+				}),
+				i(15055, {	-- Volcanic Shoulders
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 			},
 		}),
 		prof(10660, {	-- Tribal Leatherworking
@@ -2638,6 +2656,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(SOD_PHASE_FOUR, i(227868, {	-- Masterwork Volcanic Breastplate
 					["timeline"] = { "added 1.15.3" },
 				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227867, {	-- Masterwork Volcanic Leggings
+					["timeline"] = { "added 1.15.3" },
+				})),
+				applyclassicphase(SOD_PHASE_FOUR, i(227866, {	-- Masterwork Volcanic Shoulders
+					["timeline"] = { "added 1.15.3" },
+				})),
 				-- #endif
 				applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
 				i(16983),	-- Molten Helm
@@ -2650,8 +2674,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { "removed 1.15.3" },
 					-- #endif
 				}),
-				i(15054, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Volcanic Leggings
-				i(15055),	-- Volcanic Shoulders
+				i(15054, {	-- Volcanic Leggings
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3, ADDED_10_1_7,
+						-- #endif
+					},
+				}),
+				i(15055, {	-- Volcanic Shoulders
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				-- #endif
 
 				-- #if AFTER CATA

@@ -903,6 +903,7 @@ for spellID,learnedAt in pairs({
 	[19061] = 270,	-- Living Shoulders
 	[19055] = 270,	-- Runic Leather Gauntlets
 	[19059] = 270,	-- Volcanic Leggings
+	[461665] = 270,	-- Masterwork Volcanic Leggings
 	[19063] = 275,	-- Chimeric Boots
 	[19066] = 275,	-- Frostsaber Boots
 	[19064] = 275,	-- Heavy Scorpid Gauntlets
@@ -989,6 +990,7 @@ for spellID,learnedAt in pairs({
 	[22923] = 300,	-- Swift Flight Bracers
 	[23704] = 300,	-- Timbermaw Brawlers
 	[19101] = 300,	-- Volcanic Shoulders
+	[461663] = 300,	-- Masterwork Volcanic Shoulders
 	[19098] = 300,	-- Wicked Leather Armor
 	[19092] = 300,	-- Wicked Leather Belt
 }) do recipeDB[spellID].learnedAt = learnedAt; end

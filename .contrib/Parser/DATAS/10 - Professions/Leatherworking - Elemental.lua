@@ -92,6 +92,13 @@ profession(LEATHERWORKING, {
 						["recipeID"] = 19061,
 						["requireSkill"] = 10658,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Masterwork Volcanic Shoulders",
+						["recipeID"] = 461663,
+						["requireSkill"] = 10658,
+					}),
+					-- #endif
 					{
 						["name"] = "Stormshroud Shoulders",
 						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
@@ -102,6 +109,9 @@ profession(LEATHERWORKING, {
 						["name"] = "Volcanic Shoulders",
 						["recipeID"] = 19101,
 						["requireSkill"] = 10658,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 				}
 			},
@@ -177,6 +187,14 @@ profession(LEATHERWORKING, {
 						["recipeID"] = 19078,
 						["requireSkill"] = 10658,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Masterwork Volcanic Leggings",
+						["recipeID"] = 461665,
+						["requireSkill"] = 10658,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Stormshroud Pants",
 						["recipeID"] = 19067,
@@ -184,7 +202,13 @@ profession(LEATHERWORKING, {
 					},
 					{
 						["name"] = "Volcanic Leggings",
-						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3, ADDED_10_1_7,
+							-- #endif
+						},
 						["recipeID"] = 19059,
 						["requireSkill"] = 10658,
 					},
