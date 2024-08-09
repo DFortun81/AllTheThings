@@ -845,7 +845,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					e(446, {	-- Cannon Master Willey [Classic] / Willey Hopebreaker [CATA+]
 						["creatureID"] = 10997,	-- Cannon Master Willey [Classic] / Willey Hopebreaker [CATA+]
 						["groups"] = {
-							i(12839),	-- Plans: Heartseeker (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228307, {	-- Plans: Deadly Heartseeker (RECIPE!)
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
+							i(12839, {	-- Plans: Heartseeker (RECIPE!)
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { "removed 1.15.3" },
+								-- #endif
+							}),
 							applyclassicphase(PHASE_FIVE, i(22406)),	-- Redemption
 							applyclassicphase(PHASE_FIVE, i(22404)),	-- Willey's Back Scratcher
 							i(13380),	-- Willey's Portable Howitzer

@@ -308,6 +308,7 @@ i(19209, 23639, nil, WEAPONSMITH);	-- Blackfury
 i(142337, 10011, nil, WEAPONSMITH);	-- Blight
 i(11610, 15292, nil, WEAPONSMITH);	-- Dark Iron Pulverizer
 i(11611, 15294, nil, WEAPONSMITH);	-- Dark Iron Sunderer
+i(228307, 461716, nil, WEAPONSMITH);	-- Deadly Heartseeker
 i(12839, 16995, nil, WEAPONSMITH);	-- Heartseeker
 i(74274, 10007, nil, WEAPONSMITH);	-- Phantom Blade
 -- #else

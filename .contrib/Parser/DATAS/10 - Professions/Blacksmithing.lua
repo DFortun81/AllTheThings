@@ -2549,6 +2549,14 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 3295,
 				},
 				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Deadly Heartseeker",
+					["recipeID"] = 461716,
+					["requireSkill"] = 9787,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				applyclassicphase(PHASE_THREE, {
 					["name"] = "Ebon Hand",
 					["recipeID"] = 23650,
@@ -2623,6 +2631,9 @@ profession(BLACKSMITHING, {
 				{
 					["name"] = "Heartseeker",
 					["recipeID"] = 16995,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				-- #endif
 				{

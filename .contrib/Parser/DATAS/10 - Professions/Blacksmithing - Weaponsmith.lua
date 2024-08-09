@@ -454,10 +454,21 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16987,
 						["requireSkill"] = 9787,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Deadly Heartseeker",
+						["recipeID"] = 461716,
+						["requireSkill"] = 9787,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Heartseeker",
 						["recipeID"] = 16995,
 						["requireSkill"] = 9787,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 					-- #endif
 					applyclassicphase(WRATH_PHASE_ONE, {

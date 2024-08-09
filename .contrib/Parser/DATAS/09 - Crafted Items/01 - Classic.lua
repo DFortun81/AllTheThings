@@ -487,7 +487,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						i(7959, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blight
 						i(11608),	-- Dark Iron Pulverizer
 						i(11607),	-- Dark Iron Sunderer
-						i(12783),	-- Heartseeker
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227884, {	-- Deadly Heartseeker
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
+						i(12783, {	-- Heartseeker
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 						i(7961, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Phantom Blade
 						i(7954, {["timeline"] = {REMOVED_4_0_3}}),	-- The Shatterer
 						i(7960, {["timeline"] = {REMOVED_4_0_3}}),	-- Truesilver Champion
@@ -910,11 +919,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(17015),	-- Dark Iron Reaver
 			i(11607),	-- Dark Iron Sunderer
 			i(12774, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Dawn's Edge
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227884, {	-- Deadly Heartseeker
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			applyclassicphase(PHASE_THREE, i(19170)),	-- Ebon Hand
 			i(12776, {["timeline"] = {REMOVED_4_0_3}}),	-- Enchanted Battlehammer
 			i(12797),	-- Frostguard
 			i(12796),	-- Hammer of the Titans
-			i(12783),	-- Heartseeker
+			i(12783, {	-- Heartseeker
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(12794, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_5}}),	-- Masterwork Stormhammer
 			applyclassicphase(PHASE_THREE, i(19169)),	-- Nightfall
 			applyclassicphase(PHASE_FIVE, i(22384)),	-- Persuader

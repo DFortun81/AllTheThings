@@ -356,6 +356,7 @@ for spellID,learnedAt in pairs({
 	[23633] = 300,	-- Gloves of the Dawn
 	[16988] = 300,	-- Hammer of the Titans
 	[16995] = 300,	-- Heartseeker
+	[461716] = 300,	-- Deadly Heartseeker
 	[27585] = 300,	-- Heavy Obsidian Belt
 	[23629] = 300,	-- Heavy Timbermaw Boots
 	[16728] = 300,	-- Helm of the Great Chief
