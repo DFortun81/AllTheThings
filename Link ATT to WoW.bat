@@ -6,6 +6,7 @@ pushd %~dp0
 call :link_wowfolder "C:\Program Files\World of Warcraft"
 call :link_wowfolder "C:\Program Files (x86)\World of Warcraft"
 call :link_wowfolder "..\World of Warcraft"
+call :link_wowfolder "..\Blizzard\World of Warcraft"
 call :report_taskcomplete
 EXIT /B 0
 
