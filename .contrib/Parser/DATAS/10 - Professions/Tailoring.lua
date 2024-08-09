@@ -993,7 +993,7 @@ profession(TAILORING, {
 			["name"] = "Bags",
 			["categoryID"] = 233,
 			["groups"] = {
-				applyclassicphase(PHASE_FIVE, {
+				applyclassicphase(PHASE_FIVE_RECIPES, {
 					["name"] = "Big Bag of Enchantment",
 					["recipeID"] = 27660,
 				}),

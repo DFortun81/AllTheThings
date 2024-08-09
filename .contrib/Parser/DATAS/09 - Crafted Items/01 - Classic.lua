@@ -3140,7 +3140,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(14342),	-- Mooncloth
 		}),
 		category(233, {	-- Bags
-			applyclassicphase(PHASE_FIVE, i(22249)),	-- Big Bag of Enchantment
+			applyclassicphase(PHASE_FIVE_RECIPES, i(22249)),	-- Big Bag of Enchantment
 			i(5765, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
 			applyclassicphase(PHASE_FIVE, i(22251)),	-- Cenarion Herb Bag
