@@ -1470,6 +1470,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228289),	-- Choker of the Firelord
 					i(228290),	-- Cloak of the Shrouded Mists
 					i(228292),	-- Dragon's Blood Cape
+					i(228100),	-- Drape of the Fire Lord
 					i(228295),	-- Onslaught Girdle
 					i(228286),	-- Band of Accuria
 					i(228287),	-- Band of Sulfuras
