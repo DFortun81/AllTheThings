@@ -357,7 +357,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["sourceQuest"] = 4146,	-- Zapper Fuel
 					["coord"] = { 45.6, 8.6, UNGORO_CRATER },
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.2",
+						-- #else
+						REMOVED_4_0_3,
+						-- #endif
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 					["groups"] = {
