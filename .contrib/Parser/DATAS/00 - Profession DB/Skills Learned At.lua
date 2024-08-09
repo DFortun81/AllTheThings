@@ -311,6 +311,7 @@ for spellID,learnedAt in pairs({
 	[16983] = 285,	-- Serenity
 	[461718] = 285,	-- Tranquility
 	[16985] = 290,	-- Corruption
+	[461714] = 290,	-- Desecration
 	[16660] = 290,	-- Dawnbringer Shoulders
 	[16655] = 290,	-- Fiery Plate Gauntlets
 	[23632] = 290,	-- Girdle of the Dawn

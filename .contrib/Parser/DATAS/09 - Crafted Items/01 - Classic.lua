@@ -473,8 +473,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						i(12790, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Arcanite Champion
 						applyclassicphase(PHASE_THREE, i(19168)),	-- Blackguard
 						i(12777, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blazing Rapier
-						i(12782),	-- Corruption
+						i(12782, {	-- Corruption
+							-- #if SEASON_OF_DISCOVERY
+							["timeline"] = { "removed 1.15.3" },
+							-- #endif
+						}),
 						i(17015),	-- Dark Iron Reaver
+						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227857, {	-- Desecration
+							["timeline"] = { "added 1.15.3" },
+						})),
+						-- #endif
 						i(12797),	-- Frostguard
 						applyclassicphase(PHASE_FIVE, i(22383)),	-- Sageblade
 					},
@@ -913,7 +922,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_THREE, i(19168)),	-- Blackguard
 			i(12777, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blazing Rapier
 			i(7959, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blight
-			i(12782),	-- Corruption
+			i(12782, {	-- Corruption
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(17016),	-- Dark Iron Destroyer
 			i(11608),	-- Dark Iron Pulverizer
 			i(17015),	-- Dark Iron Reaver
@@ -921,6 +934,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(12774, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Dawn's Edge
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(227884, {	-- Deadly Heartseeker
+				["timeline"] = { "added 1.15.3" },
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, i(227857, {	-- Desecration
 				["timeline"] = { "added 1.15.3" },
 			})),
 			-- #endif

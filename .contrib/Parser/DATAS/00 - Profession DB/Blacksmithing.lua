@@ -364,6 +364,7 @@ i(19211, 23652, nil, MASTER_SWORDSMITH);	-- Blackguard
 i(12825, 16978, nil, MASTER_SWORDSMITH);	-- Blazing Rapier [CLASSIC-CATA]
 i(12830, 16985, nil, MASTER_SWORDSMITH);	-- Corruption
 i(17059, 20890, nil, MASTER_SWORDSMITH);	-- Dark Iron Reaver
+i(228306, 461714, nil, MASTER_SWORDSMITH);	-- Desecration
 i(12836, 16992, nil, MASTER_SWORDSMITH);	-- Frostguard
 i(22389, 27832, nil, MASTER_SWORDSMITH);	-- Sageblade
 -- #else

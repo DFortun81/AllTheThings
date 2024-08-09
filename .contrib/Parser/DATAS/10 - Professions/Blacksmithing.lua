@@ -2510,7 +2510,13 @@ profession(BLACKSMITHING, {
 				-- #if AFTER TBC
 				{
 					["name"] = "Corruption",
-					["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_7_1_5 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_2_0_1, ADDED_3_0_2, REMOVED_4_0_3, ADDED_7_1_5,
+						-- #endif
+					},
 					["recipeID"] = 16985,
 				},
 				{
@@ -2553,8 +2559,12 @@ profession(BLACKSMITHING, {
 				applyclassicphase(SOD_PHASE_FOUR, {
 					["name"] = "Deadly Heartseeker",
 					["recipeID"] = 461716,
-					["requireSkill"] = 9787,
 					["timeline"] = { "added 1.15.3" },
+				}),
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Desecration",
+					["recipeID"] = 461714,
+					["timeline"] = { "removed 1.15.3" },
 				}),
 				-- #endif
 				applyclassicphase(PHASE_THREE, {

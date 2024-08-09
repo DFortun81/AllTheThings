@@ -1280,8 +1280,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							i(12830, {	-- Plans: Corruption (RECIPE!)
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
-								["timeline"] = { REMOVED_2_0_1, ADDED_3_0_2 },
+								["timeline"] = {
+									-- #if SEASON_OF_DISCOVERY
+									"removed 1.15.3",
+									-- #else
+									REMOVED_2_0_1, ADDED_3_0_2,
+									-- #endif
+								},
 							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228306, {	-- Plans: Desecration (RECIPE!)
+								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor. This will despawn once a player interacts with it.",
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
 						},
 					}),
 					e(451, {	-- Baroness Anastari
