@@ -245,7 +245,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				-- #if SEASON_OF_DISCOVERY
-				pvp(applyclassicphase(SOD_PHASE_TWO, faction(2634))),	-- Blood Moon
+				pvp(applyclassicphase(SOD_PHASE_TWO, faction(2634, {	-- Blood Moon
+					["description"] = "This faction is probably not one that you can gain reputation with.",
+					["timeline"] = { "created 1.15.1" },
+				}))),
 				-- #endif
 			}),
 			n(FLIGHT_PATHS, {
