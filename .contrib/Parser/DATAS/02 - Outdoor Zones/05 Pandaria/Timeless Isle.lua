@@ -1894,6 +1894,27 @@ root(ROOTS.Zones, {
 							i(103982),	-- Burden of Eternity
 						},
 					}),
+					o(221725),	-- Charged Crystal
+					o(222796),	-- Cloudstrike Family Helm
+					o(222685),	-- Crane Nest
+					o(222686),	-- Eerie Crystal
+					o(222689),	-- Fiery Altar of Ordos
+					o(221763),	-- Fire Poppy
+					o(222688),	-- Firestorm Egg
+					o(223537),	-- Flameheart Shawl
+					o(223193, { -- Giant Clam
+						["coords"] = {
+							{ 16.8, 62.4, TIMELESS_ISLE },
+							{ 16.8, 62.5, TIMELESS_ISLE },
+							{ 18.4, 53.9, TIMELESS_ISLE },
+							{ 18.5, 53.8, TIMELESS_ISLE },
+							{ 18.7, 20.3, TIMELESS_ISLE },
+							{ 25.5, 14.7, TIMELESS_ISLE },
+							{ 25.6, 14.4, TIMELESS_ISLE },
+							{ 29.7, 21.8, TIMELESS_ISLE },
+							{ 47.8, 87.9, TIMELESS_ISLE },
+						},
+					}),
 					o(220903, {	-- Gleaming Crane Statue
 						["description"] = "Click the statue, and you will be thrown up into the air and given a slow-fall buff.  Land on any of the platforms and loot any of the |cFFFFFFFFMist-Covered Treasure Chests|r to get credit for the achievement criteria.",
 						["isWeekly"] = true,
@@ -1927,6 +1948,8 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					o(222684),	-- Glinting Sand
+					o(221747),	-- Huge Yak Roast
 					n(createHeader({	-- Kukuru's Cache
 						readable = "Kukuru's Cache",
 						icon = "348554",
@@ -1983,6 +2006,11 @@ root(ROOTS.Zones, {
 							i(104202),	-- Bonkers (PET!)
 							i(103982),	-- Burden of Eternity
 						},
+					}),
+					o(220908, {	-- Mist-Covered Treasure Chest
+						["questID"] = 32971,
+						["coord"] = { 59.0, 60.0, TIMELESS_ISLE },
+						["description"] = "Coordinates are for the Gleaming Crane Statue which allows you to fly up to the chests.",
 					}),
 					o(221670, {	-- Moss-Covered Chest
 						["questID"] = 33170,
@@ -2121,6 +2149,10 @@ root(ROOTS.Zones, {
 						["questID"] = 33227,
 						["coord"] = { 61.6, 88.4, TIMELESS_ISLE },
 					}),
+					o(222687),	-- Ordon Supplies
+					o(221689),	-- Ripe Crispfruit
+					o(223538),	-- Riverspeaker's Trident
+					o(221764),	-- Roasted Seed
 					o(220902, {	-- Rope-Bound Treasure Chest
 						["description"] = "Coordinates are for the beginning of the rope pathway.  You need to carefully walk along the ropes, dropping down to the lower ropes, until you've crossed Red Stone Run and can drop down to the treasure.",
 						["isWeekly"] = true,
@@ -2132,6 +2164,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
+					o(221690),	-- Sand-Covered Egg
 					o(221617, {	-- Skull-Covered Chest
 						["description"] = "Inside the Cavern of Lost Spirits.",
 						["questID"] = 33203,
@@ -2148,6 +2181,8 @@ root(ROOTS.Zones, {
 						["questID"] = 33209,
 						["coord"] = { 54.0, 78.1, TIMELESS_ISLE },
 					}),
+					o(223539),	-- Snowdrift Tiger Talons
+					o(223228),	-- Southsea Firebrew
 					o(221671, {	-- Sturdy Chest
 						["description"] = "On top of a plateau.  You can pick up an albatross ride, or approach from outside the island with strategic flying/falling/gliding.",
 						["questID"] = 33204,
