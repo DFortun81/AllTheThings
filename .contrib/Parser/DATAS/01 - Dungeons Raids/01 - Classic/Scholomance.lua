@@ -818,7 +818,18 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["cr"] = 10478,	-- Splintered Skeleton
 		}),
 		ignoreTimeline(i(14536)),	-- Bonebrace Hauberk
-		ignoreTimeline(i(18697)),	-- Coldstone Slippers
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228703, {	-- Coldstone Slippers
+			["description"] = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
+			["timeline"] = { "created 1.15.3" },
+		})),
+		-- #endif
+		ignoreTimeline(i(18697, {	-- Coldstone Slippers
+			-- #if SEASON_OF_DISCOVERY
+			-- CRIEVE NOTE: There is a reitemized version, but it doesn't seem to exist yet.
+			--["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		})),
 		-- #if SEASON_OF_DISCOVERY
 		applyclassicphase(SOD_PHASE_FOUR, i(226761, {	-- Dreadmist Belt
 			["timeline"] = { "added 1.15.3" },
@@ -926,7 +937,18 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				10488,	-- Risen Construct
 			},
 		}),
-		ignoreTimeline(i(18698)),	-- Tattered Leather Hood
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228704, {	-- Tattered Leather Hood
+			["description"] = "None of these have been found on WoWHead or the AH. @Crieve if you get one to drop!",
+			["timeline"] = { "created 1.15.3" },
+		})),
+		-- #endif
+		ignoreTimeline(i(18698, {	-- Tattered Leather Hood
+			-- #if SEASON_OF_DISCOVERY
+			-- CRIEVE NOTE: There is a reitemized version, but it doesn't seem to exist yet.
+			--["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		})),
 		-- #if SEASON_OF_DISCOVERY
 		applyclassicphase(SOD_PHASE_FOUR, i(226712, {	-- Wildheart Belt
 			["timeline"] = { "added 1.15.3" },
