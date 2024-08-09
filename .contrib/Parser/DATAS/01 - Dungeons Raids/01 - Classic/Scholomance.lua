@@ -1239,7 +1239,18 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		["groups"] = {
 			i(18749),	-- Charger's Lost Soul
 			i(18880),	-- Darkreaver's Head
-			i(18759),	-- Malicious Axe
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228030, {	-- Malicious Axe
+				["description"] = "There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",
+				["timeline"] = { "created 1.15.3" },
+			})),
+			-- #endif
+			i(18759, {	-- Malicious Axe
+				-- #if SEASON_OF_DISCOVERY
+				-- CRIEVE NOTE: The reitemized version isn't in the game yet?
+				--["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(18761),	-- Oblivion's Touch
 			i(18758),	-- Specter's Blade
 			-- #if SEASON_OF_DISCOVERY
