@@ -19,7 +19,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					{ 52.5, 65.7, ISLE_OF_DORN },
 					{ 52.8, 65.4, ISLE_OF_DORN },
 					{ 53.7, 66.9, ISLE_OF_DORN },
-
 				},
 				["g"] = {
 					i(221550),	-- Boskroot Cap

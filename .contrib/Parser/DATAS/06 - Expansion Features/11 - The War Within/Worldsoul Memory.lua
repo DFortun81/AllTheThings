@@ -25,7 +25,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}),
 			n(QUESTS, {
 				q(84542, {	-- A Radiant Echo
-					["provider"] = { "i", 220520 },	-- Radiant Echo
+					["provider"] = { "i", 228958 },	-- Radiant Echo
 				}),
 				q(82285, {	-- Worldsoul Memory: A Wounded Soul
 					["coord"] = { 65.2, 56.1, AZJ_KAHET },

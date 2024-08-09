@@ -27,7 +27,6 @@ root(ROOTS.Unsorted, {
 				i(228744),	-- Golbin Twist-Rag
 				i(228745),	-- Aurora Strand
 				i(228756),	-- Bonus Snuffling Experience
-				i(228942),	-- Bountiful Coffer
 				-- Have QuestID attached
 				i(228947),	-- Weaver's Lair Profession Table
 				---
@@ -104,7 +103,6 @@ root(ROOTS.Unsorted, {
 				i(228764),	-- Classic Sunny Tabard
 			}),
 			--
-			i(228958),	-- Radiant Echo
 			i(228959),	-- Pile of Unidentified Meat
 			i(228984),	-- Unbreakable Iron Idol
 			i(229000),	-- Machine-Warden's Cog
@@ -776,7 +774,6 @@ root(ROOTS.Unsorted, {
 				i(225898),	-- Idol of the Earthmother
 				i(225901),	-- Streamlined Relic \\ Power Idol
 				i(225903),	-- Amorphous Relic \\ Relic Page
-				i(225905),	-- Olden Seeker Relic
 				i(225907),	-- Relic of Sentience
 				i(225908),	-- Relicblood of Zekvir
 			}),
@@ -1341,7 +1338,6 @@ root(ROOTS.Unsorted, {
 				i(212527),	-- Spiderforged Emitter Key [REMOVED]
 				i(212601),	-- Second Half of Titan Key NOT USED
 				i(212603),	-- First Half of Titan Key NOT USED
-				i(213000),	-- Holy Flamethrower Torch
 				i(213085),	-- Lost Treasure
 				i(213420),	-- Fungarian Mushroom Cap
 				i(213423),	-- Bygone Weapon Charm
@@ -1405,7 +1401,6 @@ root(ROOTS.Unsorted, {
 				i(220286),	-- Tarnished Medallion
 				i(220298),	-- Melted Candle Stump
 				i(220300),	-- Translucent Wing
-				i(220301),	-- Crystallized Honey
 				i(220303),	-- Decayed Flesh
 
 
@@ -1428,7 +1423,6 @@ root(ROOTS.Unsorted, {
 
 				i(220486),	-- Collection of Shiny Shells
 				i(220491),	-- Wicked Blade Shard
-				i(220520),	-- Radiant Echo \\ Radiant Chord
 				i(220756),	-- Flickering Torch \\ Fading Torch
 				i(220770),	-- Void-Scarred Stormhammer
 				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
@@ -1519,7 +1513,6 @@ root(ROOTS.Unsorted, {
 				i(225833),	-- Weathered Skipping Stone
 				i(225834),	-- Pilfered Matchbook
 				i(225835),	-- Battered Lantern
-				i(225837),	-- Melted Globs of Glass
 				i(225841),	-- Ever-Frozen Ice
 				i(225842),	-- Whirling Sphere
 				i(225843),	-- Ancient Bronze Hourglass
@@ -1712,7 +1705,6 @@ root(ROOTS.Unsorted, {
 				i(219469),	-- Fog Beast Tracker
 				i(219522),	-- Radiant Fuel Crystal
 				i(219804),	-- [DNT] Antiparalytic Serum
-				i(219934),	-- Spark of War
 				i(219939),	-- Alleria's Crystal
 				i(219960),	-- Honey Drone Vac
 				i(220116),	-- Completed Market Audit
@@ -1804,7 +1796,6 @@ root(ROOTS.Unsorted, {
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 				i(226111),	-- Arakkoan Ritual Staff
 				i(226113),	-- Kereke's Flourishing Sabre
-				i(226114),	-- Windslicer's Lance
 				i(226115),	-- Contaminating Cleaver
 				i(219783),	-- Arachnophobic Spelunker's Bow
 				i(219797),	-- Cured Terracotta Pummeler
@@ -1954,7 +1945,6 @@ root(ROOTS.Unsorted, {
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
 
-				i(221208),	-- Unseen Cutthroat's Tunic \\ Fel Assassin Tunic
 				i(221209),	-- Flame Trader's Gloves
 				i(221210),	-- Grips of the Earth
 				i(221214),	-- Chitin Chain Headpiece
@@ -1973,7 +1963,6 @@ root(ROOTS.Unsorted, {
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs
 				i(221242),	-- Forgeborn Helm
-				i(221244),	-- Flamekeeper's Footpads
 				i(221246),	-- Fierce Beast Staff
 				i(221251),	-- Bestial Underground Cleaver
 				i(221252),	-- Nerubian Slayer's Claymore
@@ -2070,10 +2059,6 @@ root(ROOTS.Unsorted, {
 				i(224454),	-- City Guard's Mask \\ Dalaran Hood
 				i(224455),	-- City Guard's Chainmail \\ Dalaran Chestguard
 				i(224456),	-- City Guard's Greaves \\ Dalaran Greaves
-				i(228370),	-- Olbarig's Old Wristwraps
-				i(228371),	-- Olbarig's Old Bracers
-				i(228372),	-- Olbarig's Old Cuffs
-				i(228373),	-- Olbarig's Old Vambraces
 				i(228374),	-- Shoulders of Kix'arak's Bane
 				i(228375),	-- Belt of Kix'arak's Bane
 				i(228376),	-- Boots of Kix'arak's Bane

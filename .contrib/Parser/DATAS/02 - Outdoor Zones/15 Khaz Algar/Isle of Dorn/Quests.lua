@@ -1068,6 +1068,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 				["provider"] = { "n", 224394 },	-- Harmot
 				["coord"] = { 60.2, 28.4, ISLE_OF_DORN },
+				["isBreadcrumb"] = true,
 			}),
 			q(82681, {	-- Cloudrook Down
 				["sourceQuests"] = { 82680 },	-- Birdman of the Three Shields
@@ -1088,6 +1089,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 74.6, 19.7, ISLE_OF_DORN },
 				["g"] = {
 					i(224119),	-- Electric Eel (QI!)
+					i(228371),	-- Olbarig's Old Bracers
+					i(228372),	-- Olbarig's Old Cuffs
+					i(228373),	-- Olbarig's Old Vambraces
+					i(228370),	-- Olbarig's Old Wristwraps
 				},
 			}),
 			------ Miscellaneous ------

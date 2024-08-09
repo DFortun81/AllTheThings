@@ -1848,6 +1848,7 @@ i(228387);	-- Crumbling Bismuth
 i(225804);	-- Crumpled Patrol Assignment
 i(228494);	-- Crunchy Rock Candy
 i(217167);	-- Crusty Chalice
+i(220301);	-- Crystallized Honey
 i(220255);	-- Darkened Residue
 i(225813);	-- Darkened Ritual Stone
 i(220280);	-- Dense Five-Pound Stone
@@ -1894,6 +1895,7 @@ i(228483);	-- Lovingly Carved Ramolith
 i(225820);	-- Lovingly Worn Chisel
 i(225803);	-- Lynx Tag Collar
 i(220248);	-- Mass of Melted Wax
+i(225837);	-- Melted Globs of Glass
 i(223886);	-- Mercurial Herbs
 i(223883);	-- Mercurial Transmutation
 i(225850);	-- Moldy Rations

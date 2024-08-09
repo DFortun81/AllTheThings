@@ -1463,7 +1463,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(79916, 435858);	-- Altered Luredrop
 			--FirstCraft(XXXXX, 435860);	-- Camouflaged Luredrop
 			FirstCraft(79915, 435857);	-- Crystallized Luredrop
-			--FirstCraft(XXXXX, 435859);	-- Irradiated Luredrop
+			FirstCraft(79917, 435859);	-- Irradiated Luredrop
 			FirstCraft(79914, 435829);	-- Lush Luredrop
 			FirstCraft(79919, 435861);	-- Sporefused Luredrop
 			-- Mycobloom

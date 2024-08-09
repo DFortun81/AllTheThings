@@ -18,11 +18,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					--
 				},
 			}, {
+				q(80188),	-- Preserving in Arenas
 				q(80184),	-- Preserving in Battle
 				q(80187),	-- Preserving in Skirmishes
 				q(80186),	-- Preserving in War
 				q(80185),	-- Preserving Solo
 				q(80189),	-- Preserving Teamwork
+				q(81796, {	-- Sparks of War: Azj-Kahet
+					i(219934),	-- Spark of War (QI!)
+				}),
+				q(81795, {	-- Sparks of War: Hallowfall
+					i(219934),	-- Spark of War (QI!)
+				}),
+				q(81793, {	-- Sparks of War: Isle of Dorn
+					i(219934),	-- Spark of War (QI!)
+				}),
+				q(81794, {	-- Sparks of War: The Ringing Deeps
+					i(219934),	-- Spark of War (QI!)
+				}),
 			})),
 			n(VENDORS, {
 				n(219215, {	-- Hotharn <Competitor's Recipes>

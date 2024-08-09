@@ -256,9 +256,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			filter(MISC, {
-				i(226222),	-- Webbed Hookshot
+				i(213000),	-- Holy Flamethrower Torch
 				i(212868),	-- Precious Ore
-			})
+				i(226222),	-- Webbed Hookshot
+			}),
 		},
 	}),
 	m(2249, {	-- Fungal Folly
@@ -560,14 +561,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 36.3, 10.5, 2347 },
 					["questID"] = 83661,
 				}),
-				-- same objectID as other chest
-				--o(413590, {	-- Bountiful Coffer
-				--	["coord"] = { 48.2, 48.2, 2347 },
-				--	["questID"] = 83320,
-				--	["g"] = {
-				--		i(220520),	-- Radiant Echo (TODO: remove when more nice source gonna be found out)
-				--	},
-				--}),
+				o(413590, {	-- Bountiful Coffer
+					["coord"] = { 48.2, 48.2, 2347 },
+					--["questID"] = 83320,
+				}),
 			}),
 		},
 	}),
@@ -632,10 +629,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				o(413590, {	-- Bountiful Coffer
 					["coord"] = { 45.3, 95.3, 2251 },
-					["questID"] = 83319,
-					["g"] = {
-						i(220520),	-- Radiant Echo (TODO: remove when more nice source gonna be found out)
-					},
+					--["questID"] = 83319,
 				}),
 			}),
 		},
@@ -671,6 +665,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(225902),	-- Idol of Final Will
 		i(225906),	-- Lifeless Necrotic Relic
 		i(225900),	-- Light-Touched Idol
+		i(225905),	-- Olden Seeker Relic
 		i(218129),	-- Porcelain Arrowhead Idol
 		i(225904),	-- Time Lost Relic
 		i(225899),	-- Unbreakable Iron Idol
@@ -689,6 +684,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(223060),	-- Technique: Patient Alchemist's Mixing Rod (RECIPE!)
 		}),
 		filter(MISC, {
+			i(228942),	-- Bountiful Coffer
 			i(224181),	-- Companion Experience (Tier 1-2)
 			i(224411),	-- Companion Experience (Tier 3)
 			i(224412),	-- Companion Experience (every tier)
@@ -797,6 +793,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["cost"] = {{"c", RESTORED_COFFER_KEY, 1}},
 		},FILTERFUNC_itemID,{
 			i(220520),	-- Radiant Echo
+			i(228958),	-- Radiant Echo (QS!)
 			filter(BATTLE_PETS, {
 				i(221820),	-- Chester (PET!)
 			}),
@@ -1185,6 +1182,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(82772),	-- First Time per day? (Got Unflagged at reset)
+	q(82944),	-- after Tier 5 run in Earthcrawl Mines / Bountiful Coffer?
 	q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
+	
 	q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
 });

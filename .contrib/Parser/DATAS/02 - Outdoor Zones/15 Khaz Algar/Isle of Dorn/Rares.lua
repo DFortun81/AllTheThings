@@ -34,11 +34,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}),
 			n(221128, {	-- Clawbreaker K'zithix
 				["description"] = "Walking around in the area.",
-				["coords"] = {
-					{ 80.3, 35.1, ISLE_OF_DORN },
-					{ 79.1, 34.2, ISLE_OF_DORN },
-					{ 64.0, 39.2, ISLE_OF_DORN },
-				},
+				["coord"] = { 55.6, 27.0, ISLE_OF_DORN},	-- old coords: 80.3, 35.1 / 79.1, 34.2 / 64.0, 39.2
 				["questID"] = 81920,
 			}),
 			n(219265, {	-- Emperor Pitfang
@@ -55,6 +51,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			n(219266, {	-- Escaped Cutthroat
 				["coord"] = { 25.8, 45.1, ISLE_OF_DORN },
 				["questID"] = 81907,
+				["g"] = {
+					i(221208),	-- Unseen Cutthroat's Tunic
+				},
 			}),
 			n(219279, {	-- Flamekeeper Graz
 				["description"] = "Walking around in the area.",
@@ -64,6 +63,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					{ 64.0, 39.2, ISLE_OF_DORN },	-- initial spawn point
 				},
 				["questID"] = 81905,
+				["g"] = {
+					i(221244),	-- Flamekeeper's Footpads
+				},
 			}),
 			n(219268, {	-- Gar'loc
 				["coord"] = { 53.5, 80.1, ISLE_OF_DORN },
@@ -72,7 +74,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			n(222378, {	-- Kereke
 				--seems like rare in this spot have rotation?
 				["coord"] = { 30.9, 52.3, ISLE_OF_DORN },
-				--["questID"] = x,
+				["questID"] = 82204,
+				["g"] = {
+					i(226114),	-- Windslicer's Lance
+				},
 			}),
 			n(219270, {	-- Kronolith, Might of the Mountain
 				["coord"] = { 48.1, 27.0, ISLE_OF_DORN },
@@ -130,9 +135,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					i(223376),	-- Band of the Relic Bearer
 				},
 			}),
-			n(219278, {	-- Shallowshell the Cracker
+			n(219278, {	-- Shallowshell the Clacker
 				["coord"] = { 74.5, 27.8, ISLE_OF_DORN },
 				["questID"] = 81903,
+				["g"] = {
+					i(221255),	-- Sharpened Scalepiercer
+				},
 			}),
 			n(219262, {	-- Springbubble
 				["coord"] = { 58.7, 60.7, ISLE_OF_DORN },
@@ -206,7 +214,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84031),	-- Extra HQT: Kronolith, Might of the Mountain
 		q(84039),	-- Extra HQT: Matriarch Charfuria
 		q(84026),	-- Extra HQT: Plaguehart
-		q(84032),	-- Extra HQT: Shallowshell the Cracker
+		q(84032),	-- Extra HQT: Shallowshell the Clacker
 		q(84038),	-- Extra HQT: Sweetspark the Oozeful
 		q(84030),	-- Extra HQT: Tempest Lord Incarnus
 		q(84033),	-- Extra HQT: Twice-Stinger the Wretched
