@@ -801,40 +801,125 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
 		ignoreTimeline(i(18702)),	-- Belt of the Ordained
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226751, {	-- Bindings of Elements
+			["timeline"] = { "added 1.15.3" },
+			["cr"] = 10478,	-- Splintered Skeleton
+		})),
+		-- #endif
 		i(16671, {	-- Bindings of Elements
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 			["cr"] = 10478,	-- Splintered Skeleton
 		}),
 		ignoreTimeline(i(14536)),	-- Bonebrace Hauberk
 		ignoreTimeline(i(18697)),	-- Coldstone Slippers
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226761, {	-- Dreadmist Belt
+			["timeline"] = { "added 1.15.3" },
+			["cr"] = 10477,	-- Scholomance Necromancer
+		})),
+		-- #endif
 		i(16702, {	-- Dreadmist Belt
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 			["cr"] = 10477,	-- Scholomance Necromancer
 		}),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226758, {	-- Dreadmist Wraps
+			["timeline"] = { "added 1.15.3" },
+			["cr"] = 10477,	-- Scholomance Necromancer
+		})),
+		-- #endif
 		i(16705, {	-- Dreadmist Wraps
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 			["cr"] = 10477,	-- Scholomance Necromancer
 		}),
 		ignoreTimeline(i(18699)),	-- Icy Tomb Spaulders
 		ignoreTimeline(i(18701)),	-- Innervating Band
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226739, {	-- Lightforge Bracers
+			["timeline"] = { "added 1.15.3" },
+			["crs"] = {
+				10487,	-- Risen Protector
+				10486,	-- Risen Warrior
+			},
+		})),
+		-- #endif
 		i(16722, {	-- Lightforge Bracers
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 			["crs"] = {
 				10487,	-- Risen Protector
 				10486,	-- Risen Warrior
 			},
 		}),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226724, {	-- Magister's Belt
+			["timeline"] = { "added 1.15.3" },
+			["cr"] = 10469,	-- Scholomance Adept
+		})),
+		-- #endif
 		i(16685, {	-- Magister's Belt
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 			["cr"] = 10469,	-- Scholomance Adept
 		}),
 		i(16684, {	-- Magister's Gloves
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 			["cr"] = 10469,	-- Scholomance Adept
 		}),
 		ignoreTimeline(i(18700)),	-- Malefic Bracers
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226704, {	-- Shadowcraft Bracers
+			["timeline"] = { "added 1.15.3" },
+			["crs"] = {
+				11284,	-- Dark Shade
+				10472,	-- Scholomance Occultist
+				10488,	-- Risen Construct
+			},
+		})),
+		-- #endif
 		i(16710, {	-- Shadowcraft Bracers
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 			["crs"] = {
 				11284,	-- Dark Shade
 				10472,	-- Scholomance Occultist
@@ -842,17 +927,45 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			},
 		}),
 		ignoreTimeline(i(18698)),	-- Tattered Leather Hood
-		i(16714, {	-- Wildheart Bracers
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
-			["cr"] = 10495,	-- Diseased Ghoul
-		}),
-		i(16716, {	-- Wildheart Belt
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226712, {	-- Wildheart Belt
+			["timeline"] = { "added 1.15.3" },
 			["crs"] = {
 				11257,	-- Scholomance Handler
 				10500,	-- Spectral Teacher
 				10499,	-- Spectral Researcher
 			},
+		})),
+		-- #endif
+		i(16716, {	-- Wildheart Belt
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
+			["crs"] = {
+				11257,	-- Scholomance Handler
+				10500,	-- Spectral Teacher
+				10499,	-- Spectral Researcher
+			},
+		}),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226714, {	-- Wildheart Bracers
+			["timeline"] = { "added 1.15.3" },
+			["cr"] = 10495,	-- Diseased Ghoul
+		})),
+		-- #endif
+		i(16714, {	-- Wildheart Bracers
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
+			["cr"] = 10495,	-- Diseased Ghoul
 		}),
 	}),
 	n(14861, {	-- Blood Steward of Kirtonos
@@ -1070,14 +1183,36 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(13523, {	-- Blood of Innocents
 			["timeline"] = { REMOVED_5_0_4 },
 		}),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226731, {	-- Magister's Gloves
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
 		i(16684, {	-- Magister's Gloves
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 		}),
 		i(14617),	-- Sawbones Shirt
 	}),
 	n(10901, {	-- Lorekeeper Polkelt
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226758, {	-- Dreadmist Wraps
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
 		i(16705, {	-- Dreadmist Wraps
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 		}),
 	}),
 	n(10507, {	-- The Ravenian
@@ -1086,8 +1221,19 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 	}),
 	n(10504, {	-- Lord Alexei Barov
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226739, {	-- Lightforge Bracers
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
 		i(16722, {	-- Lightforge Bracers
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 		}),
 	}),
 	n(1853, {	-- Darkmaster Gandling

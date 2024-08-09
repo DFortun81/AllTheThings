@@ -1188,48 +1188,182 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			i(16786, {	-- Black Dragonspawn Eye
 				["timeline"] = { REMOVED_4_0_3 },
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226717, {	-- Beaststalker's Bindings
+				["timeline"] = { "added 1.15.3" },
+				["cr"] = 9096,	-- Rage Talon Dragonspawn
+			})),
+			-- #endif
 			i(16681, {	-- Beaststalker's Bindings
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 				["cr"] = 9096,	-- Rage Talon Dragonspawn
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226718, {	-- Beaststalker's Belt
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(16680, {	-- Beaststalker's Belt
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226765, {	-- Belt of Valor
+				["timeline"] = { "added 1.15.3" },
+				["cr"] = 9268,	-- Smolderthorn Berserker
+			})),
+			-- #endif
 			i(16736, {	-- Belt of Valor
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 				["cr"] = 9268,	-- Smolderthorn Berserker
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226766, {	-- Bracers of Valor
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(16735, {	-- Bracers of Valor
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226754, {	-- Cord of Elements
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(16673, {	-- Cord of Elements
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226744, {	-- Devout Belt
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(16696, {	-- Devout Belt
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226759, {	-- Dreadmist Bracers
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(16703, {	-- Dreadmist Bracers
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226724, {	-- Magister's Belt
+				["timeline"] = { "added 1.15.3" },
+				["cr"] = 9239,	-- Smolderthorn Mystic
+			})),
+			-- #endif
 			i(16685, {	-- Magister's Belt
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 				["cr"] = 9239,	-- Smolderthorn Mystic
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226725, {	-- Magister's Bindings
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(16683, {	-- Magister's Bindings
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226701, {	-- Shadowcraft Belt
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(16713, {	-- Shadowcraft Belt
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226712, {	-- Wildheart Belt
+				["timeline"] = { "added 1.15.3" },
+				["crs"] = {
+					9692,	-- Bloodaxe Raider
+					9258,	-- Scarshield Raider
+				},
+			})),
+			-- #endif
 			i(16716, {	-- Wildheart Belt
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 				["crs"] = {
 					9692,	-- Bloodaxe Raider
 					9258,	-- Scarshield Raider
 				},
 			}),
 			i(16717, {	-- Wildheart Gloves
-				["timeline"] = { REMOVED_4_0_3 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
 				["crs"] = {
 					9692,	-- Bloodaxe Raider
 					9262,	-- Firebrand Invoker
