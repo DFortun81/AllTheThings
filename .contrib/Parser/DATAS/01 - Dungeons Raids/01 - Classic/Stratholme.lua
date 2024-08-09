@@ -1483,6 +1483,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						["creatureID"] = 10437,	-- Nerub'enkan
 						["groups"] = {
 							i(13176, {	-- Scourge Data
+								["provider"] = { "o", 176249 },	-- Scourge Data
 								-- #if BEFORE 4.0.3
 								["description"] = "Located in the Ziggurat behind the boss.",
 								-- #endif
