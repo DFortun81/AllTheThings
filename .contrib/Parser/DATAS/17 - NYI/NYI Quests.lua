@@ -2784,6 +2784,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(44916, { ["name"] = "99.0 [reuse me]", }),	-- 99.0 [reuse me]
 			q(40243, { ["name"] = "Break Weapon Racks", }),	-- Break Weapon Racks
 			q(45508, { ["name"] = "Durguth", }),	-- Durguth
+			q(44578, { ["name"] = "Honor the Flame", }),	-- Honor the Flame
 			q(45682, { ["name"] = "Looted Rogue Vault", }),	-- Looted Rogue Vault
 			q(44732, { ["name"] = "Morgalash", }),	-- Morgalash
 			q(42492, { ["name"] = "PH: Withered Scenario", }),	-- PH: Withered Scenario
