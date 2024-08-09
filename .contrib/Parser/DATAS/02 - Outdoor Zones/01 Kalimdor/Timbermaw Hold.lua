@@ -473,24 +473,34 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 65.6, 2.8, FELWOOD },
 						-- #endif
 					},
-					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold, Neutral.
-					["groups"] = {
-						applyclassicphase(PHASE_THREE, i(22392)),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19445)),	-- Formula: Enchant Weapon - Agility (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19218)),	-- Pattern: Mantle of the Timbermaw
-						applyclassicphase(PHASE_THREE, i(19326)),	-- Pattern: Might of the Timbermaw (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19327)),	-- Pattern: Timbermaw Brawlers (RECIPE!)
-						i(20253),	-- Pattern: Warbear Harness (RECIPE!)
-						i(20254),	-- Pattern: Warbear Woolies (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19215)),	-- Pattern: Wisdom of the Timbermaw
-						applyclassicphase(PHASE_THREE, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
-						i(13484),	-- Recipe: Transmute Earth to Water (RECIPE!)
-						i(66888, {	-- Stave of Fur and Claw Toy (TOY!)
-							["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
-							["timeline"] = { ADDED_4_0_1 },
-						}),
-					},
+					["groups"] = bubbleDownClassicRep(576, {
+						{	-- Neutral
+							
+						},
+						{	-- Friendly
+							applyclassicphase(PHASE_THREE, i(22392)),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
+							i(20253),	-- Pattern: Warbear Harness (RECIPE!)
+							i(20254),	-- Pattern: Warbear Woolies (RECIPE!)
+							i(13484),	-- Recipe: Transmute Earth to Water (RECIPE!)
+						},
+						{	-- Honored
+							applyclassicphase(PHASE_THREE, i(19445)),	-- Formula: Enchant Weapon - Agility (RECIPE!)
+							applyclassicphase(PHASE_THREE, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
+							applyclassicphase(PHASE_THREE, i(19326)),	-- Pattern: Might of the Timbermaw (RECIPE!)
+							applyclassicphase(PHASE_THREE, i(19215)),	-- Pattern: Wisdom of the Timbermaw
+						},
+						{	-- Revered
+							applyclassicphase(PHASE_THREE, i(19218)),	-- Pattern: Mantle of the Timbermaw
+							applyclassicphase(PHASE_THREE, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
+							applyclassicphase(PHASE_THREE, i(19327)),	-- Pattern: Timbermaw Brawlers (RECIPE!)
+						},
+						{	-- Exalted
+							i(66888, {	-- Stave of Fur and Claw Toy (TOY!)
+								["timeline"] = { ADDED_4_0_1 },
+							}),
+						},
+						
+					}),
 				}),
 			}),
 		},
