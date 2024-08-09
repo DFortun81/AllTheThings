@@ -1255,7 +1255,18 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		},
 	})),
 	n(10433, {	-- Marduk Blackpool
-		i(14576),	-- Ebon Hilt of Marduk
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(227993, {	-- Ebon Hilt of Marduk
+			["description"] = "There are no recorded drops for this version, if you get it to drop, @Crieve on Discord!",
+			["timeline"] = { "created 1.15.3" },
+		})),
+		-- #endif
+		i(14576, {	-- Ebon Hilt of Marduk
+			-- #if SEASON_OF_DISCOVERY
+			-- CRIEVE NOTE: The reitemized version isn't in the game.
+			--["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
 		i(18692),	-- Death Knight Sabatons
 	}),
 	n(10432, {	-- Vectus
