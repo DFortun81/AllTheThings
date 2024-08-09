@@ -94,6 +94,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 						i(218314),	-- Recruit's Sturdy Tome [A]
 					}),
 				})),
+				filter(FINGER_F, {
+					i(223631),	-- Adventurer's Lucky Ring
+				}),
 				n(FACTION_HEADER_HORDE, bubbleDownSelf({ ["races"] = HORDE_ONLY },{
 					n(ARMOR, {
 						filter(BACK_F, {
@@ -113,7 +116,6 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 							i(218298),	-- Recruit's Sturdy Robes [H]
 						}),
 						filter(FINGER_F, {
-							i(223631),	-- Adventurer's Lucky Ring [H]
 							i(223633),	-- Signet of Wolf's Favor [H]
 						}),
 						filter(LEATHER, {
