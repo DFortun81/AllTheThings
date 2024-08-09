@@ -1490,6 +1490,50 @@ modItemId = function(itemID, modID, bonusID)
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
+-- Region Specific Filters
+regionExclusive = function(region, t)
+	if t.OnInit then
+		error("ERROR: You already have an OnInit assigned for this object.");
+	end
+	t.OnInit = [[function(t)
+	if GetCVar("portal") ~= "]] .. region .. [[" then
+		t.u = 1;
+	end
+	return t;
+end]];
+	return t;
+end
+regionUnavailable = function(region, t)
+	if t.OnInit then
+		error("ERROR: You already have an OnInit assigned for this object.");
+	end
+	t.OnInit = [[function(t)
+	if GetCVar("portal") == "]] .. region .. [[" then
+		t.u = 1;
+	end
+	return t;
+end]];
+	return t;
+end
+chinaONLY = function(t)
+	return regionExclusive("CN", t);
+end
+chinaUnavailable = function(t)
+	return regionUnavailable("CN", t);
+end
+euONLY = function(t)
+	return regionExclusive("EU", t);
+end
+euUnavailable = function(t)
+	return regionUnavailable("EU", t);
+end
+usONLY = function(t)
+	return regionExclusive("US", t);
+end
+usUnavailable = function(t)
+	return regionUnavailable("US", t);
+end
+
 -- Create a Header. Returns a UNIQUE ID, starting at 0.
 (function()
 if not NextHeaderID then
