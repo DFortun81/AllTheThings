@@ -1006,17 +1006,91 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		},
 		["description"] = "Can only be summoned if someone in your group has the Blood of Innocents.",
 		["groups"] = {
-			i(14024),	-- Frightalon
-			i(13983),	-- Gravestone War Axe
-			i(13960),	-- Heart of the Fiend
-			i(13955),	-- Stoneform Shoulders
-			i(13969),	-- Loomguard Armbraces
-			i(13957),	-- Gargoyle Slashers
-			i(13956),	-- Clutch of Andros
-			i(16734, {	-- Boots of Valor
-				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228015, {	-- Frightalon
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14024, {	-- Frightalon
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
 			}),
-			i(13967),	-- Windreaver Greaves
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228029, {	-- Gravestone War Axe
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(13983, {	-- Gravestone War Axe
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228019, {	-- Heart of the Fiend
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(13960, {	-- Heart of the Fiend
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228001, {	-- Stoneform Shoulders
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(13955, {	-- Stoneform Shoulders
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			i(13969),	-- Loomguard Armbraces
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228007, {	-- Gargoyle Slashers
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(13957, {	-- Gargoyle Slashers
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228005, {	-- Clutch of Andros
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(13956, {	-- Clutch of Andros
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226764, {	-- Boots of Valor
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(16734, {	-- Boots of Valor
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228004, {	-- Windreaver Greaves
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(13967, {	-- Windreaver Greaves
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 		},
 	}),
 	n(10503, {	-- Jandice Barov
@@ -1032,22 +1106,71 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				}),
 			},
 		}),
-		i(14541),	-- Barovian Family Sword
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(227997, {	-- Barovian Family Sword
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(14541, {	-- Barovian Family Sword
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
 		applyclassicphase(PHASE_FIVE, i(22394)),	-- Staff of Metanoia
 		i(18689),	-- Phantasmal Cloak
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226756, {	-- Dreadmist Mantle
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
 		i(16701, {	-- Dreadmist Mantle
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 		}),
 		i(14548),	-- Royal Cap Spaulders
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228031, {	-- Darkshade Gloves
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
 		i(14543, {	-- Darkshade Gloves
 			-- #if AFTER 2.0.1
 			["description"] = "This item appears to have been removed with TBC Prepatch. Please @Crieve if you get it to drop.",
 			["isBounty"] = true,
 			-- #endif
-			["timeline"] = { REMOVED_2_0_1 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_2_0_1,
+				-- #endif
+			},
 		}),
-		i(14545),	-- Ghostloom Leggings
-		i(18690),	-- Wraithplate Leggings
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228040, {	-- Ghostloom Leggings
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(14545, {	-- Ghostloom Leggings
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228041, {	-- Wraithplate Leggings
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(18690, {	-- Wraithplate Leggings
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
 	}),
 	n(11622, {	-- Rattlegore
 		i(13873, {	-- Viewing Room Key
@@ -1061,14 +1184,52 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		i(18782, {	-- Top Half of Advanced Armorsmithing: Volume II
 			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
 		}),
-		i(14531),	-- Frightskull Shaft
-		i(14528),	-- Rattlecage Buckler
-		i(14539),	-- Bone Ring Helm
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(227994, {	-- Frightskull Shaft
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(14531, {	-- Frightskull Shaft
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228037, {	-- Rattlecage Buckler
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(14528, {	-- Rattlecage Buckler
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228032, {	-- Bone Ring Helm
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(14539, {	-- Bone Ring Helm
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
 		i(18686),	-- Bone Golem Shoulders
 		i(14538),	-- Deadwalker Mantle
 		i(14537),	-- Corpselight Greaves
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226703, {	-- Shadowcraft Boots
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
 		i(16711, {	-- Shadowcraft Boots
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 		}),
 	}),
 	-- The Re-release of scholomance should allow the summon of this boss once again, however the item required to summon him is one time.
@@ -1081,7 +1242,16 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			i(18759),	-- Malicious Axe
 			i(18761),	-- Oblivion's Touch
 			i(18758),	-- Specter's Blade
-			i(18760),	-- Necromantic Band
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228045, {	-- Necromantic Band
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(18760, {	-- Necromantic Band
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 		},
 	})),
 	n(10433, {	-- Marduk Blackpool
@@ -1090,7 +1260,16 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 	}),
 	n(10432, {	-- Vectus
 		i(18691),	-- Dark Advisor's Pendant
-		i(14577),	-- Skullsmoke Pants
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228017, {	-- Skullsmoke Pants
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(14577, {	-- Skullsmoke Pants
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
 	}),
 	n(10508, {	-- Ras Frostwhisper
 		i(13626, {	-- Human Head of Ras Frostwhisper
@@ -1099,19 +1278,84 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 		i(13521),	-- Recipe: Flask of Supreme Power (RECIPE!)
 		i(14487),	-- Bonechill Hammer
-		i(13952),	-- Iceblade Hacker
-		i(18696),	-- Intricately Runed Shield
-		i(18695),	-- Spellbound Tome
-		i(16689, {	-- Magister's Mantle
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228027, {	-- Iceblade Hacker
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(13952, {	-- Iceblade Hacker
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
 		}),
-		i(13314),	-- Alanna's Embrace
-		i(14503),	-- Death's Clutch
+		i(18696),	-- Intricately Runed Shield
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228039, {	-- Spellbound Tome
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(18695, {	-- Spellbound Tome
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226726, {	-- Magister's Mantle
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(16689, {	-- Magister's Mantle
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
+		}),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228023, {	-- Alanna's Embrace
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(13314, {	-- Alanna's Embrace
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228036, {	-- Death's Clutch
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(14503, {	-- Death's Clutch
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
 		i(14525),	-- Boneclenched Gauntlets
-		i(18693),	-- Shivery Handwraps
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228034, {	-- Shivery Handwraps
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(18693, {	-- Shivery Handwraps
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
 		i(14340),	-- Freezing Lich Robes
 		i(14502),	-- Frostbite Girdle
-		i(14522),	-- Maelstrom Leggings
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(228044, {	-- Maelstrom Leggings
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
+		i(14522, {	-- Maelstrom Leggings
+			-- #if SEASON_OF_DISCOVERY
+			["timeline"] = { "removed 1.15.3" },
+			-- #endif
+		}),
 		i(18694),	-- Shadowy Mail Greaves
 	}),
 	applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16118, {	-- Kormok
@@ -1131,12 +1375,53 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		["OnInit"] = FUNCTION_TEMPLATES.OnInit.BrazierAccess,
 		-- #endif
 		["groups"] = {
-			i(22332),	-- Blade of Necromancy
-			i(22333),	-- Hammer of Divine Might
-			i(22303, {	-- Ironweave Pants
-				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228026, {	-- Blade of Blackwood
+				["timeline"] = { "added 1.15.3" },
+			})),
+			applyclassicphase(SOD_PHASE_FOUR, i(228028, {	-- Blade of Necromancy
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(22332, {	-- Blade of Necromancy
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
 			}),
-			i(22326),	-- Amalgam's Band
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228033, {	-- Hammer of Divine Might
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(22333, {	-- Hammer of Divine Might
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228038, {	-- Ironweave Pants
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(22303, {	-- Ironweave Pants
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228047, {	-- Amalgam's Band
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(22326, {	-- Amalgam's Band
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(22331),	-- Band of the Steadfast Hero
 		},
 	})),
@@ -1151,34 +1436,187 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			10507,	-- The Ravenian
 		},
 		["groups"] = {
-			i(18680),	-- Ancient Bone Bow
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227996, {	-- Ancient Bone Bow
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(18680, {	-- Ancient Bone Bow
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(18683),	-- Hammer of the Vesper
-			i(14611),	-- Bloodmail Hauberk
-			i(14615),	-- Bloodmail Gauntlets
-			i(14614),	-- Bloodmail Belt
-			i(14612),	-- Bloodmail Legguards
-			i(14616),	-- Bloodmail Boots
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228012, {	-- Bloodmail Hauberk
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14611, {	-- Bloodmail Hauberk
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228020, {	-- Bloodmail Gauntlets
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14615, {	-- Bloodmail Gauntlets
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228014, {	-- Bloodmail Belt
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14614, {	-- Bloodmail Belt
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228003, {	-- Bloodmail Legguards
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14612, {	-- Bloodmail Legguards
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227998, {	-- Bloodmail Boots
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14616, {	-- Bloodmail Boots
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(18681),	-- Burial Shawl
 			i(14637),	-- Cadaverous Armor
 			i(14640),	-- Cadaverous Gloves
 			i(14636),	-- Cadaverous Belt
 			i(14638),	-- Cadaverous Leggings
 			i(14641),	-- Cadaverous Walkers
-			i(14624),	-- Deathbone Chestplate
-			i(14622),	-- Deathbone Gauntlets
-			i(14620),	-- Deathbone Girdle
-			i(14623),	-- Deathbone Legguards
-			i(14621),	-- Deathbone Sabatons
-			i(18684),	-- Dimly Opalescent Ring
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228000, {	-- Deathbone Chestplate
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14624, {	-- Deathbone Chestplate
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228006, {	-- Deathbone Gauntlets
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14622, {	-- Deathbone Gauntlets
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228002, {	-- Deathbone Girdle
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14620, {	-- Deathbone Girdle
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228008, {	-- Deathbone Legguards
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14623, {	-- Deathbone Legguards
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227999, {	-- Deathbone Sabatons
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14621, {	-- Deathbone Sabatons
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228016, {	-- Dimly Opalescent Ring
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(18684, {	-- Dimly Opalescent Ring
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(207058, {	-- Fractured Shin
 				["timeline"] = { ADDED_10_1_5 },
 			}),
 			i(18682),	-- Ghoul Skin Leggings
-			i(14633),	-- Necropile Mantle
-			i(14626),	-- Necropile Robe
-			i(14629),	-- Necropile Cuffs
-			i(14632),	-- Necropile Leggings
-			i(14631),	-- Necropile Boots
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228010, {	-- Necropile Mantle
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14633, {	-- Necropile Mantle
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228013, {	-- Necropile Robe
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14626, {	-- Necropile Robe
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228011, {	-- Necropile Cuffs
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14629, {	-- Necropile Cuffs
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228018, {	-- Necropile Leggings
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14632, {	-- Necropile Leggings
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228009, {	-- Necropile Boots
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(14631, {	-- Necropile Boots
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
 			i(207060, {	-- Skeletal Knight's Buckler
 				["timeline"] = { ADDED_10_1_5 },
 			}),
@@ -1194,8 +1632,19 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		},
 	}),
 	n(10505, {	-- Instructor Malicia
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226704, {	-- Shadowcraft Bracers
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
 		i(16710, {	-- Shadowcraft Bracers
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 		}),
 	}),
 	n(11261, {	-- Doctor Theolen Krastinov <The Butcher>
@@ -1238,8 +1687,19 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		}),
 	}),
 	n(10507, {	-- The Ravenian
+		-- #if SEASON_OF_DISCOVERY
+		applyclassicphase(SOD_PHASE_FOUR, i(226712, {	-- Wildheart Belt
+			["timeline"] = { "added 1.15.3" },
+		})),
+		-- #endif
 		i(16716, {	-- Wildheart Belt
-			["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
+			["timeline"] = {
+				-- #if SEASON_OF_DISCOVERY
+				"removed 1.15.3",
+				-- #else
+				REMOVED_4_0_3,
+				-- #endif
+			},
 		}),
 	}),
 	n(10504, {	-- Lord Alexei Barov
@@ -1273,47 +1733,211 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				-- #endif
 			}),
 			i(13501),	-- Recipe: Major Mana Potion (RECIPE!)
-			i(13937),	-- Headmaster's Charge
-			i(13938),	-- Bonecreeper Stylus
-			i(13953),	-- Silent Fang
-			i(13964),	-- Witchblade
-			i(16677, {	-- Beaststalker's Cap
-				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
-			}),
-			i(16667, {	-- Coif of Elements
-				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
-			}),
-			i(16693, {	-- Devout Crown
-				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
-			}),
-			i(16698, {	-- Dreadmist Mask
-				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
-			}),
-			i(16731, {	-- Helm of Valor
-				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
-			}),
-			i(16727, {	-- Lightforge Helm
-				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
-			}),
-			i(16686, {	-- Magister's Crown
-				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
-			}),
-			i(16707, {	-- Shadowcraft Cap
-				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
-			}),
-			i(16720, {	-- Wildheart Cowl
-				["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
-			}),
-			i(13944),	-- Tombstone Breastplate
-			i(13951),	-- Vigorsteel Vambraces
-			i(13950, {	-- Detention Strap [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
-				-- #if ANYCLASSIC
-				["description"] = "This item seems to have disappeared in Classic. If you get this item in Classic Era or Wrath Classic, please screenshot this and send it directly to @crieve on Discord!",
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228022, {	-- Headmaster's Charge
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(13937, {	-- Headmaster's Charge
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
 				-- #endif
-				["timeline"] = { REMOVED_2_0_1 },
 			}),
-			i(13398),	-- Boots of the Shrieker
-			applyclassicphase(PHASE_FIVE, i(22433)),	-- Don Mauricio's Band of Domination
+			i(13938),	-- Bonecreeper Stylus
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228024, {	-- Silent Fang
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(13953, {	-- Silent Fang
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228021, {	-- Witchblade
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(13964, {	-- Witchblade
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226720, {	-- Beaststalker's Cap
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(16677, {	-- Beaststalker's Cap
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226755, {	-- Coif of Elements
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(16667, {	-- Coif of Elements
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226746, {	-- Devout Crown
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(16693, {	-- Devout Crown
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226762, {	-- Dreadmist Mask
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(16698, {	-- Dreadmist Mask
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226769, {	-- Helm of Valor
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(16731, {	-- Helm of Valor
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226733, {	-- Lightforge Helm
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(16727, {	-- Lightforge Helm
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226728, {	-- Magister's Crown
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(16686, {	-- Magister's Crown
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226707, {	-- Shadowcraft Cap
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(16707, {	-- Shadowcraft Cap
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(226708, {	-- Wildheart Cowl
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(16720, {	-- Wildheart Cowl
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228025, {	-- Tombstone Breastplate
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(13944, {	-- Tombstone Breastplate
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			i(13951),	-- Vigorsteel Vambraces
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228042, {	-- Detention Strap
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			i(13950, {	-- Detention Strap [CRIEVE NOTE: This item seems to have disappeared with TBC Classic.]
+				["description"] = "This item seems to have disappeared in Classic. If you get this item in any game flavor, please screenshot this and send it directly to @Crieve on Discord!",
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_2_0_1,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228043, {	-- Boots of the Shrieker
+				["description"] = "None of these have been found on WoWHead. @Crieve if you get one to drop!",
+				["timeline"] = { "created 1.15.3" },
+			})),
+			-- #endif
+			i(13398, {	-- Boots of the Shrieker
+				-- #if SEASON_OF_DISCOVERY
+				-- CRIEVE NOTE: This item is likely still in the game, the reitemized version doesn't appear to be yet.
+				--["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228046, {	-- Don Mauricio's Band of Domination
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
+			applyclassicphase(PHASE_FIVE, i(22433, {	-- Don Mauricio's Band of Domination
+				-- #if SEASON_OF_DISCOVERY
+				["timeline"] = { "removed 1.15.3" },
+				-- #endif
+			})),
 			-- #if BEFORE 5.0.4
 			applyclassicphase(PHASE_THREE, i(19276)),	-- Ace of Portals
 			-- #endif
