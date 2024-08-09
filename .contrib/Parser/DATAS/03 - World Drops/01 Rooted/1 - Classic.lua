@@ -2686,6 +2686,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(9385),	-- Archaic Defender
 			i(8199),	-- Battlefield Destroyer
 			i(15253),	-- Beheading Blade
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227691, {	-- Blade of Hanna
+				["timeline"] = { "created 1.15.3" },
+			})),
+			-- #endif
 			i(2801),	-- Blade of Hanna
 			i(13043),	-- Blade of the Titans
 			i(1811),	-- Blunt Claymore
