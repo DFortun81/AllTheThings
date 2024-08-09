@@ -2127,6 +2127,13 @@ profession(LEATHERWORKING, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },
 					["recipeID"] = 19095,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Masterwork Volcanic Breastplate",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461661,
+				}),
+				-- #endif
 				-- #endif
 				{
 					["name"] = "Moonglow Vest",
@@ -2211,6 +2218,9 @@ profession(LEATHERWORKING, {
 				{
 					["name"] = "Volcanic Breastplate",
 					["recipeID"] = 19076,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				},
 				{
 					["name"] = "Warbear Harness",

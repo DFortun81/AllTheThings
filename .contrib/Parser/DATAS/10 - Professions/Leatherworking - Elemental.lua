@@ -115,6 +115,14 @@ profession(LEATHERWORKING, {
 						["recipeID"] = 19095,
 						["requireSkill"] = 10658,
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Masterwork Volcanic Breastplate",
+						["timeline"] = { "added 1.15.3" },
+						["recipeID"] = 461661,
+						["requireSkill"] = 10658,
+					}),
+					-- #endif
 					{
 						["name"] = "Stormshroud Armor",
 						["timeline"] = { ADDED_1_11_1, REMOVED_4_0_3 },
@@ -125,6 +133,9 @@ profession(LEATHERWORKING, {
 						["name"] = "Volcanic Breastplate",
 						["recipeID"] = 19076,
 						["requireSkill"] = 10658,
+						-- #if SEASON_OF_DISCOVERY
+						["timeline"] = { "removed 1.15.3" },
+						-- #endif
 					},
 				}
 			},

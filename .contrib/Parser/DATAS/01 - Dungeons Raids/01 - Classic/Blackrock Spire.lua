@@ -1384,7 +1384,16 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				i(14513, {	-- Pattern: Robe of the Archmage
 					["cr"] = 9264,	-- Firebrand Pyromancer
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227906, {	-- Pattern: Masterwork Volcanic Breastplate (RECIPE!)
+					["timeline"] = { "added 1.15.3" },
+					["cr"] = 9259,	-- Firebrand Grunt
+				})),
+				-- #endif
 				i(15749, {	-- Pattern: Volcanic Breastplate (RECIPE!)
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 					["cr"] = 9259,	-- Firebrand Grunt
 				}),
 				i(15775, {	-- Pattern: Volcanic Shoulders (RECIPE!)

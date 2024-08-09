@@ -2359,6 +2359,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15059, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Breastplate
 				i(15060, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Leggings
 				i(15061),	-- Living Shoulders
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227868, {	-- Masterwork Volcanic Breastplate
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
 				i(16983),	-- Molten Helm
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18511, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Shifting Cloak
@@ -2366,7 +2371,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(21278, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Gloves
 				i(15057),	-- Stormshroud Pants
 				i(15058, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Shoulders
-				i(15053),	-- Volcanic Breastplate
+				i(15053, {	-- Volcanic Breastplate
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				i(15054, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Volcanic Leggings
 				i(15055),	-- Volcanic Shoulders
 			},
@@ -2625,13 +2634,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15059, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Breastplate
 				i(15060, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Living Leggings
 				i(15061),	-- Living Shoulders
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227868, {	-- Masterwork Volcanic Breastplate
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
 				i(16983),	-- Molten Helm
 				i(15056, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Armor
 				i(21278, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Gloves
 				i(15057),	-- Stormshroud Pants
 				i(15058, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Shoulders
-				i(15053),	-- Volcanic Breastplate
+				i(15053, {	-- Volcanic Breastplate
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
+				}),
 				i(15054, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Volcanic Leggings
 				i(15055),	-- Volcanic Shoulders
 				-- #endif

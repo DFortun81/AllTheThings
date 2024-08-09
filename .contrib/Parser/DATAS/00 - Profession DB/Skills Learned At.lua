@@ -921,6 +921,7 @@ for spellID,learnedAt in pairs({
 	[19078] = 285,	-- Living Leggings
 	[19079] = 285,	-- Stormshroud Armor
 	[19076] = 285,	-- Volcanic Breastplate
+	[461661] = 285,	-- Masterwork Volcanic Breastplate
 	[19080] = 285,	-- Warbear Woolies
 	[19085] = 290,	-- Black Dragonscale Breastplate
 	[461655] = 290,	-- Hardened Black Dragonscale Breastplate
