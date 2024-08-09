@@ -6362,7 +6362,8 @@ local AlternateDataTypes = {
 	["crit"] = function(id)
 		local ach = math_floor(id);
 		local crit = math_floor(100 * (id - ach) + 0.005);
-		return { name = GetAchievementCriteriaInfo(ach, crit) };
+		local icon = select(10, GetAchievementInfo(ach))
+		return { name = GetAchievementCriteriaInfo(ach, crit), icon = icon };
 	end,
 	["d"] = function(id)
 		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
