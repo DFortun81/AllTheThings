@@ -175,10 +175,24 @@ profession(BLACKSMITHING, {
 					}),
 					{
 						["name"] = "Fiery Plate Gauntlets",
-						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 16655,
 						["requireSkill"] = 9788,
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3,
+							-- #endif
+						},
 					},
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Fiery Plate Gauntlets of the Hidden Technique",
+						["recipeID"] = 461651,
+						["requireSkill"] = 9788,
+						["timeline"] = { "removed 1.15.3" },
+					}),
+					-- #endif
 					{
 						["name"] = "Storm Gauntlets",
 						["recipeID"] = 16661,

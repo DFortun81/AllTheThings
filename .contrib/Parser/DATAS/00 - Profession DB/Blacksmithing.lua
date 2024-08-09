@@ -253,6 +253,7 @@ i(12727, 16745, nil, ARMORSMITH);	-- Enchanted Thorium Breastplate [REMOVED: 4.0
 i(12725, 16742, nil, ARMORSMITH);	-- Enchanted Thorium Helm [REMOVED: 4.0.3]
 i(12726, 16744, nil, ARMORSMITH);	-- Enchanted Thorium Leggings [REMOVED: 4.0.3]
 i(12699, 16655, nil, ARMORSMITH);	-- Fiery Plate Gauntlets [REMOVED: 4.0.3]
+i(227909, 461651, nil, ARMORSMITH);	-- Fiery Plate Gauntlets of the Hidden Technique
 i(17049, 20872, nil, ARMORSMITH);	-- Fiery Chain Girdle
 i(17053, 20873, nil, ARMORSMITH);	-- Fiery Chain Shoulders
 i(12716, 16728, nil, ARMORSMITH);	-- Helm of the Great Chief

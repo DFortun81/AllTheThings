@@ -314,6 +314,7 @@ for spellID,learnedAt in pairs({
 	[461714] = 290,	-- Desecration
 	[16660] = 290,	-- Dawnbringer Shoulders
 	[16655] = 290,	-- Fiery Plate Gauntlets
+	[461651] = 290,	-- Fiery Plate Gauntlets of the Hidden Technique
 	[23632] = 290,	-- Girdle of the Dawn
 	[23628] = 290,	-- Heavy Timbermaw Belt
 	[16656] = 290,	-- Radiant Boots

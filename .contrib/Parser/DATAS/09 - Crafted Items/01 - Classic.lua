@@ -360,7 +360,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_THREE, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
 				applyclassicphase(PHASE_THREE, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
 				applyclassicphase(PHASE_THREE, i(12619, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Leggings
-				i(12631, {["timeline"] = {REMOVED_4_0_3}}),	-- Fiery Plate Gauntlets
+				i(12631, {	-- Fiery Plate Gauntlets
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3,
+						-- #endif
+					},
+				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227865, {	-- Fiery Plate Gauntlets of the Hidden Technique
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				i(16989),	-- Fiery Chain Girdle
 				i(16988),	-- Fiery Chain Shoulders
 				i(12636, {	-- Helm of the Great Chief
@@ -713,7 +726,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_THREE, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
 			applyclassicphase(PHASE_THREE, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
 			applyclassicphase(PHASE_THREE, i(12619, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Leggings
-			i(12631, {["timeline"] = {REMOVED_4_0_3}}),	-- Fiery Plate Gauntlets
+			i(12631, {	-- Fiery Plate Gauntlets
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3,
+					-- #endif
+				},
+			}),
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227865, {	-- Fiery Plate Gauntlets of the Hidden Technique
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(16989),	-- Fiery Chain Girdle
 			i(16988),	-- Fiery Chain Shoulders
 			i(12636),	-- Helm of the Great Chief
