@@ -125,7 +125,7 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(211925, {["sourceID"] = 194481 }),	--
 			i(211940, {["sourceID"] = 194485 }),	-- Ecks'av's Tribal Guardian
 			i(211941, {["sourceID"] = 194486 }),	-- Windwalker's Yari
-			i(211944, {["sourceID"] = 194488 }),	-- Tojara's Karma \\ Tojara's Will
+			i(211944, {["sourceID"] = 194488 }),	-- Tojara's Karma
 			i(212580, {["sourceID"] = 194909 }),	-- Lorekeeper's Staff
 			i(212581, {["sourceID"] = 194910 }),	-- Outrunner's Bow
 			i(212582, {["sourceID"] = 194911 }),	-- Protector's Sword
@@ -279,9 +279,9 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(216622, {["sourceID"] = 198597 }),	-- Coagulated Cloak
 			i(216623, {["sourceID"] = 198598 }),	-- Cape of Hemostasis
 			i(216494, {["sourceID"] = 198599 }),	-- Aragriar's Whimsical World Warper
-			i(216675, {["sourceID"] = 198603 }),	-- Pristine Civinad Robes \\ Prestine Civinad Robes
+			i(216675, {["sourceID"] = 198603 }),	-- Pristine Civinad Robes
 			i(216676, {["sourceID"] = 198604 }),	-- Nimble Triprunner Dungarees
-			i(216678, {["sourceID"] = 198605 }),	-- Triple Reinforced Leggings \\ Treble Reinforced Leggings
+			i(216678, {["sourceID"] = 198605 }),	-- Triple Reinforced Leggings
 			i(216679, {["sourceID"] = 198606 }),	-- Shoni's Dismantling Tool
 			i(216680, {["sourceID"] = 198607 }),	-- Shilly Mittens
 			i(216698, {["sourceID"] = 198609 }),	-- Sergeant Major's Dragonhide Armsplints
@@ -460,9 +460,9 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(220653, {["sourceID"] = 218691 }),	-- Wailing Berserker's Chestplate
 			i(220654, {["sourceID"] = 218692 }),	-- Wailing Berserker's Legplates
 			i(220656, {["sourceID"] = 218694 }),	-- Wailing Berserker's Battleboots
-			i(220657, {["sourceID"] = 218695 }),	-- Ostracized Berserker's Hauberk \\ Ostracized Berserk's Hauberk
-			i(220658, {["sourceID"] = 218696 }),	-- Ostracized Berserker's Legplates \\ Ostracized Berserk's Legplates
-			i(220659, {["sourceID"] = 218697 }),	-- Ostracized Berserker's Chain Greaves \\ Ostracized Berserk's Chain Greaves
+			i(220657, {["sourceID"] = 218695 }),	-- Ostracized Berserker's Hauberk
+			i(220658, {["sourceID"] = 218696 }),	-- Ostracized Berserker's Legplates
+			i(220659, {["sourceID"] = 218697 }),	-- Ostracized Berserker's Chain Greaves
 			i(220660, {["sourceID"] = 218698 }),	-- Shunned Devotee's Chainshirt
 			i(220661, {["sourceID"] = 218699 }),	-- Shunned Devotee's Legguards
 			i(220662, {["sourceID"] = 218700 }),	-- Shunned Devotee's Scale Boots
@@ -642,7 +642,7 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(221389, {["sourceID"] = 219223 }),	-- Emerald Scalemail Gauntlets
 			i(221390, {["sourceID"] = 219224 }),	-- Emerald Scalemail Breastplate
 			i(221391, {["sourceID"] = 219225 }),	-- Emerald Scalemail Helmet
-			i(221392, {["sourceID"] = 219226 }),	-- Emerald Scalemail Shoulders \\ Emerald Scalemail Shoudlers
+			i(221392, {["sourceID"] = 219226 }),	-- Emerald Scalemail Shoulders
 			i(221393, {["sourceID"] = 219227 }),	-- Emerald Scalemail Boots
 			i(221394, {["sourceID"] = 219228 }),	-- Emerald Laden Boots
 			i(221395, {["sourceID"] = 219229 }),	-- Emerald Laden Breastplate
@@ -1141,7 +1141,7 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(226887, {["sourceID"] = 223370 }),	-- Beastmaster's Cap
 			i(226888, {["sourceID"] = 223371 }),	-- Beastmaster's Belt
 			i(226889, {["sourceID"] = 223372 }),	-- Beastmaster's Bracers
-			i(226890, {["sourceID"] = 223373 }),	-- Beastmaster's Waistwrap \\ Beastmaster's Bindings
+			i(226890, {["sourceID"] = 223373 }),	-- Beastmaster's Waistwrap
 			i(226891, {["sourceID"] = 223374 }),	-- Beastmaster's Pauldrons
 			i(226892, {["sourceID"] = 223375 }),	-- Beastmaster's Leggings
 			i(226893, {["sourceID"] = 223376 }),	-- Beastmaster's Coif
@@ -1668,9 +1668,9 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(228091, {["sourceID"] = 224289 }),	-- Thorned Boots
 			i(228092, {["sourceID"] = 224290 }),	-- Druidic Mantle
 			i(228094, {["sourceID"] = 224291 }),	-- Dreadlord's Blade
-			i(228100, {["sourceID"] = 224292 }),	-- Drape of the Fire Lord \\ Drape of the Firelord
+			i(228100, {["sourceID"] = 224292 }),	-- Drape of the Fire Lord
 			i(228101, {["sourceID"] = 224293 }),	-- Hide of the Behemoth
-			i(228102, {["sourceID"] = 224294 }),	-- Majordomo's Drape \\ Domo's Drape
+			i(228102, {["sourceID"] = 224294 }),	-- Majordomo's Drape
 			i(228103, {["sourceID"] = 224295 }),	-- Nathrezim's Greaves
 			i(228104, {["sourceID"] = 224296 }),	-- Robes of Elune
 			i(228106, {["sourceID"] = 224297 }),	-- Shield of Life and Death
@@ -1700,7 +1700,7 @@ root(ROOTS.NeverImplemented, n(SOURCEID_NYI, {
 			i(228170, {["sourceID"] = 224477 }),	-- Makeshift South Sea Oar
 			i(228184, {["sourceID"] = 224478 }),	-- Goblin Clothesline
 			i(228185, {["sourceID"] = 224479 }),	-- Broken Bottle of Goblino Noir
-			i(228187, {["sourceID"] = 224480 }),	-- Stick of the South Sea \\ Stick of the Souths Sea
+			i(228187, {["sourceID"] = 224480 }),	-- Stick of the South Sea
 			i(228190, {["sourceID"] = 224481 }),	-- Knowledge of the Timbermaw
 			i(228214, {["sourceID"] = 224482 }),	-- Monster - Mace2H, Unstoppable Force
 			i(228229, {["sourceID"] = 224487 }),	-- Obsidian Edged Blade
