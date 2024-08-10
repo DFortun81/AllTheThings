@@ -489,15 +489,15 @@ local BaseCostItem = app.BaseObjectFields({
 	["total"] = function(t)
 		return t.count or 1;
 	end,
-	-- progress is how many of the cost item your character has anywhere
+	-- progress is how many of the cost item your character has anywhere (bag/bank/reagent bank/warband bank)
 	["progress"] = function(t)
-		return GetItemCount(t.itemID, true, nil, true) or 0;
+		return GetItemCount(t.itemID, true, nil, true, true) or 0;
 	end,
 	["collectible"] = app.ReturnFalse,
 	["trackable"] = app.ReturnTrue,
-	-- show a check when it is has matching quantity in your bags
+	-- show a check when it is has matching quantity in your bags/reagent bank (bank/warband bank don't count at vendors)
 	["saved"] = function(t)
-		return GetItemCount(t.itemID) >= t.total;
+		return GetItemCount(t.itemID, nil, nil, true) >= t.total;
 	end,
 	-- hide any irrelevant wrapped fields of a cost item
 	["g"] = app.EmptyFunction,
