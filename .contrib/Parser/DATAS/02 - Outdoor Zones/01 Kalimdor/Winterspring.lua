@@ -1558,6 +1558,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
+				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, q(84496, {	-- Sweet Serenity
 					["qg"] = 11191,	-- Lilith the Lithe
 					-- #if BEFORE TBC
@@ -1589,6 +1590,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				})),
+				-- #endif
 				q(5305, {	-- Sweet Serenity
 					["qg"] = 11191,	-- Lilith the Lithe
 					-- #if BEFORE TBC
