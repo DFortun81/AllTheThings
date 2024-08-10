@@ -122,6 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["description"] = "This quest becomes available after you defeat Princess Theradras",
 					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
+					["maps"] = { MOONGLADE },
 					["lvl"] = 39,
 				}),
 				q(27698, {	-- Servants of Theradras
